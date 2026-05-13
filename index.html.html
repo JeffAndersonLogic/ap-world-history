@@ -3,10 +3,29 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AP World 1.1 Interactive eBook | Developments in East Asia, 1200-1450</title>
+<title>BeHistorical AP World 1.1 | Student-Facing Interactive eBook</title>
 <style>
-:root{
-  --ink:#172033; --muted:#5c667a; --paper:#fbf7ef; --card:#ffffff; --navy:#0d1b2a; --blue:#1f4e79; --gold:#c7932b; --jade:#1e7f71; --red:#9d2a2a; --line:#e7ddcc; --soft:#f4ead9; --success:#1f7a4d; --warn:#a26200;
+ :root{
+  --bh-orange:#f58220;
+  --bh-orange-dark:#c76512;
+  --bh-orange-soft:#fff2e6;
+  --bh-charcoal:#2b2b2b;
+  --bh-charcoal-2:#3a3a3a;
+  --bh-black:#050505;
+  --bh-white:#ffffff;
+  --ink:#1f1f1f;
+  --muted:#5f5f5f;
+  --paper:#f7f4ef;
+  --card:#ffffff;
+  --navy:#050505;
+  --blue:#2b2b2b;
+  --gold:#f58220;
+  --jade:#f58220;
+  --red:#9d2a2a;
+  --line:#ded7ce;
+  --soft:#fff2e6;
+  --success:#2e7d32;
+  --warn:#f58220;
 }
 *{box-sizing:border-box} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65} a{color:var(--blue)}
 .progress{position:fixed;top:0;left:0;height:5px;background:linear-gradient(90deg,var(--gold),var(--jade));width:0%;z-index:20}.topbar{position:sticky;top:5px;z-index:19;background:rgba(13,27,42,.96);color:white;border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px)}.topbar-inner{max-width:1180px;margin:auto;display:flex;gap:18px;align-items:center;justify-content:space-between;padding:10px 18px}.brand{font-weight:800;letter-spacing:.03em}.nav a{color:#f7e9c6;text-decoration:none;font-size:.9rem;margin-left:14px}.hero{background:radial-gradient(circle at 20% 10%,rgba(199,147,43,.38),transparent 30%),linear-gradient(135deg,#0d1b2a,#17334f 50%,#102a2b);color:white;padding:78px 18px 50px}.hero-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.15em;color:#f8d98c;font-size:.78rem;font-weight:800}.hero h1{font-size:clamp(2.2rem,5vw,4.7rem);line-height:.95;margin:12px 0}.hero p{font-size:1.14rem;color:#e8edf4;max-width:760px}.hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:28px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.25)}.hero-card img{width:100%;display:block;height:330px;object-fit:cover}.caption{font-size:.78rem;color:#f4ead9;padding:11px 14px;background:rgba(0,0,0,.25)}
@@ -21,20 +40,1205 @@ main{max-width:1180px;margin:auto;padding:28px 18px 80px}.standards{display:grid
 .journal .label{display:inline-block;background:#7c4a1d;color:#fff;border-radius:999px;padding:5px 10px;font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;font-weight:900;margin-bottom:10px}.journal h3{margin-top:0;color:#5a3514}.journal p{font-family:Georgia,serif;font-size:1.08rem;line-height:1.75}.journal-question{background:#fffdf8;border-left:5px solid var(--gold);padding:12px 14px;border-radius:14px;margin-top:12px;font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:.96rem}.notes-panel{background:#f8fbff;border:1px solid #dce7f5;border-radius:22px;padding:18px 20px;margin:20px 0}.notes-panel h3{margin-top:0;color:var(--blue)}.notes-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.note-card{background:white;border:1px solid #dce7f5;border-radius:16px;padding:14px}.note-card b{color:var(--red)}.remember-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}.remember-strip div{background:#0d1b2a;color:#fff;border-radius:16px;padding:13px}.remember-strip b{display:block;color:#ffd77c}.turntalk{border:1px dashed var(--jade);background:#f0fbf8;border-radius:18px;padding:14px;margin:16px 0}.annotation-task{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;margin:16px 0}.annotation-task label{display:block;margin:6px 0}
 @media(max-width:950px){.notes-grid,.remember-strip{grid-template-columns:1fr}}
 
+
+
+/* BeHistorical brand + visual upgrades */
+.behistorical-logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:900;letter-spacing:.02em}.bh-mark{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,#ffd77c,#c7932b);color:#102a2b;display:inline-grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25);font-family:Georgia,serif;font-size:1.35rem;font-weight:900}.bh-word{display:flex;flex-direction:column;line-height:1}.bh-word strong{font-size:1rem}.bh-word span{font-size:.68rem;text-transform:uppercase;letter-spacing:.16em;color:#f8d98c}.brand-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:8px 12px;margin:10px 0 12px}.brand-badge .bh-mark{width:34px;height:34px;border-radius:12px}.section-visual{margin:0 0 22px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:#fffdf9;box-shadow:0 12px 28px rgba(84,63,34,.08)}.section-visual svg{width:100%;height:auto;display:block}.visual-caption{padding:12px 16px;font-size:.86rem;color:var(--muted);border-top:1px solid var(--line)}.visual-set{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}.visual-mini{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fffdf9}.visual-mini svg{display:block;width:100%;height:auto}.visual-mini .cap{padding:10px 12px;font-size:.82rem;color:var(--muted)}.funfacts{background:linear-gradient(135deg,#fff7df,#eef8f5);border:2px solid #f1d28b}.fun-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.fun-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 10px 26px rgba(84,63,34,.08)}.fun-card .emoji{font-size:1.7rem}.fun-card h3{margin:.2rem 0 .4rem;color:var(--red)}.section-fact{background:#fff8e8;border:1px solid #efd18a;border-radius:18px;padding:14px;margin:16px 0}.section-fact b{color:#7c4a1d}.footer-brand{display:flex;align-items:center;gap:12px;justify-content:center;padding:24px;color:#fff;background:#0d1b2a;border-radius:24px;margin-top:24px}.footer-brand .bh-mark{width:44px;height:44px}.print-logo-note{font-size:.84rem;color:var(--muted);margin-top:8px}@media(max-width:950px){.visual-set,.fun-grid{grid-template-columns:1fr}.bh-word span{display:none}}
+.real-bh-logo{display:block;width:100%;height:100%;object-fit:contain;border-radius:0;background:#000}.bh-logo-wrap{display:inline-flex;align-items:center;justify-content:center;overflow:hidden;background:#000;border:1px solid rgba(248,217,140,.35);box-shadow:0 10px 24px rgba(0,0,0,.25)}.topbar .bh-logo-wrap{width:68px;height:46px;border-radius:12px}.brand-badge .bh-logo-wrap{width:72px;height:50px;border-radius:14px;flex:0 0 auto}.footer-brand .bh-logo-wrap{width:84px;height:58px;border-radius:16px;flex:0 0 auto}.hero-logo-display{margin-top:16px;max-width:330px;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.18);box-shadow:0 18px 48px rgba(0,0,0,.28);background:#000}.hero-logo-display img{display:block;width:100%;height:auto}@media(max-width:700px){.topbar .bh-logo-wrap{width:54px;height:38px}.brand-badge .bh-logo-wrap{width:58px;height:42px}.hero-logo-display{max-width:250px}}
+
+
 @media(max-width:950px){.hero-grid,.ebook-grid,.twocol{grid-template-columns:1fr}.standards,.cards,.video-grid,.toc,.callout-row{grid-template-columns:1fr}.nav{display:none}.hero-card img{height:240px}}
 @media print{.topbar,.toolbar,.btn,.progress{display:none}.section{box-shadow:none;break-inside:avoid}.hero{color:#000;background:#fff}.standards{margin-top:0}.ebook-grid{grid-template-columns:1fr}.margin{display:none}}
+
+
+/* =========================================================
+   BeHistorical Brand Palette Upgrade
+   Orange | Charcoal Gray | White | Black
+   This override keeps the lesson structure intact while making
+   the full page feel like one consistent BeHistorical product.
+   ========================================================= */
+body{
+  background:
+    radial-gradient(circle at 12% 0%, rgba(245,130,32,.16), transparent 28%),
+    linear-gradient(180deg,#ffffff 0%, #f7f4ef 42%, #ffffff 100%);
+  color:var(--bh-charcoal);
+}
+.topbar{
+  background:rgba(5,5,5,.96)!important;
+  border-bottom:3px solid var(--bh-orange)!important;
+  box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+.brand-badge,.brand-mark,.logo-mark,.wordmark,.brand-title{
+  color:var(--bh-white)!important;
+}
+.brand-badge,.lesson-pill,.tag,.phase-label,.mini-tag{
+  background:var(--bh-orange)!important;
+  color:var(--bh-black)!important;
+  border-color:var(--bh-orange)!important;
+  font-weight:800!important;
+}
+.hero{
+  background:
+    linear-gradient(135deg,rgba(5,5,5,.94),rgba(43,43,43,.92)),
+    radial-gradient(circle at 82% 18%,rgba(245,130,32,.30),transparent 34%)!important;
+  color:var(--bh-white)!important;
+  border-bottom:6px solid var(--bh-orange);
+}
+.hero h1,.hero h2,.hero p,.hero .subtitle,.hero .kicker{color:var(--bh-white)!important;}
+.hero .kicker,.eyebrow,.section-kicker{
+  color:var(--bh-orange)!important;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:900;
+}
+.card,.section-card,.ebook-section,.panel,.note-card,.story-card,.source-card,.question-card,.assessment-card,.visual-card{
+  background:var(--bh-white)!important;
+  border:1px solid rgba(43,43,43,.14)!important;
+  box-shadow:0 14px 32px rgba(0,0,0,.10)!important;
+}
+.card:hover,.section-card:hover,.visual-card:hover{
+  box-shadow:0 18px 42px rgba(0,0,0,.15)!important;
+}
+h1,h2,h3,h4{
+  color:var(--bh-black)!important;
+}
+section h2::after,.section-title::after{
+  content:"";
+  display:block;
+  width:72px;
+  height:5px;
+  border-radius:999px;
+  background:var(--bh-orange);
+  margin-top:10px;
+}
+.story,.historical-journal,.journal-entry,.narrative-box{
+  background:linear-gradient(135deg,#ffffff 0%,#fff3e8 100%)!important;
+  border-left:8px solid var(--bh-orange)!important;
+}
+.notes,.study-notes,.notes-box,.ap-box,.objective-box{
+  background:linear-gradient(135deg,#2b2b2b 0%,#050505 100%)!important;
+  color:var(--bh-white)!important;
+  border-left:8px solid var(--bh-orange)!important;
+}
+.notes h3,.study-notes h3,.notes-box h3,.ap-box h3,.objective-box h3,
+.notes h4,.study-notes h4,.notes-box h4,.ap-box h4,.objective-box h4,
+.notes p,.study-notes p,.notes-box p,.ap-box p,.objective-box p,
+.notes li,.study-notes li,.notes-box li,.ap-box li,.objective-box li{
+  color:var(--bh-white)!important;
+}
+.fun-facts,.funfact,.fun-fact,.fun-fact-card,.weird-history{
+  background:linear-gradient(135deg,var(--bh-orange),#ffb36a)!important;
+  color:var(--bh-black)!important;
+  border:2px solid var(--bh-black)!important;
+  box-shadow:8px 8px 0 rgba(5,5,5,.88)!important;
+}
+.fun-facts h2,.fun-facts h3,.funfact h3,.fun-fact h3,.fun-fact-card h3,
+.fun-facts p,.fun-facts li,.funfact p,.funfact li,.fun-fact p,.fun-fact li{
+  color:var(--bh-black)!important;
+}
+button,.button,.btn,.launch-btn,.source-btn,.check-btn,.tab-button,.nav-link,.video-btn{
+  background:var(--bh-black)!important;
+  color:var(--bh-white)!important;
+  border:2px solid var(--bh-orange)!important;
+  border-radius:999px!important;
+  font-weight:800!important;
+  box-shadow:0 8px 18px rgba(0,0,0,.18)!important;
+}
+button:hover,.button:hover,.btn:hover,.launch-btn:hover,.source-btn:hover,.check-btn:hover,.tab-button:hover,.nav-link:hover,.video-btn:hover{
+  background:var(--bh-orange)!important;
+  color:var(--bh-black)!important;
+  transform:translateY(-1px);
+}
+.tab-button.active,.active,.selected{
+  background:var(--bh-orange)!important;
+  color:var(--bh-black)!important;
+  border-color:var(--bh-black)!important;
+}
+blockquote,.quote-box{
+  border-left:8px solid var(--bh-orange)!important;
+  background:#fff7ef!important;
+}
+.video-card,.media-card{
+  background:linear-gradient(135deg,#111,#2b2b2b)!important;
+  color:#fff!important;
+  border:2px solid var(--bh-orange)!important;
+}
+.video-card h3,.video-card p,.media-card h3,.media-card p{color:#fff!important;}
+.video-thumb,.image-frame,.visual-frame,img{
+  border-color:var(--bh-orange)!important;
+}
+.mc-option,.quiz-option,.choice{
+  border:1.5px solid rgba(43,43,43,.22)!important;
+  background:#fff!important;
+}
+.mc-option:hover,.quiz-option:hover,.choice:hover{
+  border-color:var(--bh-orange)!important;
+  background:#fff4ea!important;
+}
+textarea,input[type="text"]{
+  border:2px solid rgba(43,43,43,.25)!important;
+  background:#fff!important;
+}
+textarea:focus,input[type="text"]:focus{
+  outline:none!important;
+  border-color:var(--bh-orange)!important;
+  box-shadow:0 0 0 4px rgba(245,130,32,.18)!important;
+}
+footer,.footer{
+  background:var(--bh-black)!important;
+  color:var(--bh-white)!important;
+  border-top:6px solid var(--bh-orange)!important;
+}
+footer h2,footer h3,footer p,footer a,.footer h2,.footer h3,.footer p,.footer a{
+  color:var(--bh-white)!important;
+}
+hr{border:0;border-top:1px solid rgba(43,43,43,.16)}
+.table-of-contents,.toc{
+  background:#111!important;
+  color:#fff!important;
+  border:2px solid var(--bh-orange)!important;
+}
+.table-of-contents a,.toc a{color:#fff!important;}
+.table-of-contents a:hover,.toc a:hover{color:var(--bh-orange)!important;}
+
+
+
+/* =========================================================
+   BeHistorical Contrast Fix
+   Ensures all text remains readable after the brand palette update.
+   ========================================================= */
+:root{
+  --bh-readable-black:#050505;
+  --bh-readable-charcoal:#2b2b2b;
+  --bh-readable-white:#ffffff;
+  --bh-readable-cream:#fff7ef;
+}
+
+/* White/light cards need dark text. */
+.standard,
+.card,.section-card,.ebook-section,.panel,.note-card,.story-card,.source-card,.question-card,.assessment-card,.visual-card,
+.margin-card,.image-card,.mini,.quiz,.choice,.mc-option,.quiz-option,
+.sourcebox,.accordion details,.annotation-task,.notes-panel,.journal,.journal-question,
+.fun-card,.visual-mini,.section-fact,.turntalk,
+textarea,input[type="text"],.writebox{
+  color:var(--bh-readable-black)!important;
+}
+.standard *:not(.btn):not(button),
+.card *:not(.btn):not(button),.section-card *:not(.btn):not(button),.ebook-section *:not(.btn):not(button),.panel *:not(.btn):not(button),
+.note-card *:not(.btn):not(button),.story-card *:not(.btn):not(button),.source-card *:not(.btn):not(button),.question-card *:not(.btn):not(button),.assessment-card *:not(.btn):not(button),.visual-card *:not(.btn):not(button),
+.margin-card *:not(.btn):not(button),.image-card *:not(.btn):not(button),.mini *:not(.btn):not(button),.quiz *:not(.btn):not(button),.choice *:not(.btn):not(button),.mc-option *:not(.btn):not(button),.quiz-option *:not(.btn):not(button),
+.sourcebox *:not(.btn):not(button),.accordion details *:not(.btn):not(button),.annotation-task *:not(.btn):not(button),.notes-panel *:not(.btn):not(button),.journal *:not(.btn):not(button),.journal-question *:not(.btn):not(button),
+.fun-card *:not(.btn):not(button),.visual-mini *:not(.btn):not(button),.section-fact *:not(.btn):not(button),.turntalk *:not(.btn):not(button){
+  color:var(--bh-readable-black)!important;
+}
+
+/* Dark/charcoal surfaces need white text. */
+.topbar,.topbar *,
+.hero,.hero *,
+.video,.video *,
+.video-card,.video-card *,
+.media-card,.media-card *,
+.stat,.stat *,
+.remember-strip div,.remember-strip div *,
+.teacher,.teacher *,
+.footer-brand,.footer-brand *,
+footer,footer *,
+.footer,.footer *,
+.table-of-contents,.table-of-contents *,
+.toc,.toc *{
+  color:var(--bh-readable-white)!important;
+}
+
+/* Orange labels/buttons should keep strong black contrast. */
+.brand-badge,.lesson-pill,.tag,.phase-label,.mini-tag,
+.tab.active,.tab-button.active,.active.selected,
+.fun-facts,.funfact,.fun-fact,.fun-fact-card,.weird-history,
+.fun-facts *, .funfact *, .fun-fact *, .fun-fact-card *, .weird-history *,
+button:hover,.button:hover,.btn:hover,.launch-btn:hover,.source-btn:hover,.check-btn:hover,.tab-button:hover,.nav-link:hover,.video-btn:hover{
+  color:var(--bh-readable-black)!important;
+}
+
+/* Buttons and links on dark backgrounds remain legible. */
+button,.button,.btn,.launch-btn,.source-btn,.check-btn,.tab-button,.nav-link,.video-btn{
+  color:var(--bh-readable-white)!important;
+}
+.btn.gold,.btn.alt,.visual-source-link,.tab.active,.tab-button.active{
+  color:var(--bh-readable-black)!important;
+}
+
+/* Form fields must always be readable, even inside dark teacher/assessment panels. */
+textarea,input[type="text"],.writebox{
+  background:#ffffff!important;
+  color:#050505!important;
+  caret-color:#050505!important;
+}
+textarea::placeholder,input[type="text"]::placeholder{
+  color:#6b6b6b!important;
+}
+
+/* Preserve brand accent colors where they are part of the design. */
+.eyebrow,.section-kicker,.hero .kicker,.stat strong,.remember-strip b{
+  color:var(--bh-orange)!important;
+}
+.video .play{
+  background:#ffffff!important;
+  color:#050505!important;
+}
+.teacher .section-head,.teacher .section-head *{
+  color:#ffffff!important;
+}
+.teacher .content .sourcebox,
+.teacher .content .sourcebox *,
+.teacher .content textarea,
+.teacher .content .writebox{
+  color:#050505!important;
+}
+
+
+
+/* =========================================================
+   FINAL HARD CONTRAST FIX - BeHistorical palette preserved
+   Purpose: eliminate disappearing text by assigning every major
+   surface an explicit background + text color, then restoring
+   buttons/links/tabs intentionally.
+   ========================================================= */
+:root{
+  --bh-orange:#f58220;
+  --bh-orange-soft:#fff2e6;
+  --bh-charcoal:#2b2b2b;
+  --bh-black:#050505;
+  --bh-white:#ffffff;
+  --bh-line:#ded7ce;
+}
+
+/* Remove the unsafe rule that treated every .active element like an orange button. */
+.tabpane.active{
+  display:block!important;
+  background:transparent!important;
+  color:inherit!important;
+  border-color:inherit!important;
+  box-shadow:none!important;
+}
+
+/* Main reading surfaces: always dark text on light backgrounds. */
+main,
+.section,
+.content,
+.reading,
+.standard,
+.margin-card,
+.image-card,
+.visual-mini,
+.visual-set,
+.section-visual,
+.journal,
+.journal-question,
+.notes-panel,
+.note-card,
+.note,
+.skill,
+.apbox,
+.sourcebox,
+.quiz,
+.choice,
+.mini,
+.annotation-task,
+.turntalk,
+.accordion details,
+.fun-card,
+.section-fact,
+.timeline,
+.toc a,
+.writebox,
+textarea,
+input,
+select{
+  color:var(--bh-black)!important;
+}
+
+.section,
+.standard,
+.margin-card,
+.image-card,
+.visual-mini,
+.section-visual,
+.journal,
+.notes-panel,
+.note-card,
+.note,
+.skill,
+.apbox,
+.sourcebox,
+.quiz,
+.choice,
+.mini,
+.annotation-task,
+.turntalk,
+.accordion details,
+.fun-card,
+.section-fact,
+.toc a{
+  background-color:var(--bh-white)!important;
+}
+
+/* Descendant text inside light cards must remain visible. */
+.section :where(p,li,span,div,strong,b,em,label,summary,small,h1,h2,h3,h4,h5,h6,blockquote),
+.standard :where(p,li,span,div,strong,b,em,label,small,h1,h2,h3,h4,h5,h6),
+.margin-card :where(p,li,span,div,strong,b,em,label,small,h1,h2,h3,h4,h5,h6),
+.notes-panel :where(p,li,span,div,strong,b,em,label,small,h1,h2,h3,h4,h5,h6),
+.note-card :where(p,li,span,div,strong,b,em,label,small,h1,h2,h3,h4,h5,h6),
+.sourcebox :where(p,li,span,div,strong,b,em,label,small,h1,h2,h3,h4,h5,h6,blockquote),
+.quiz :where(p,li,span,div,strong,b,em,label,small,h1,h2,h3,h4,h5,h6),
+.choice :where(p,li,span,div,strong,b,em,label,small,h1,h2,h3,h4,h5,h6),
+.fun-card :where(p,li,span,div,strong,b,em,label,small,h1,h2,h3,h4,h5,h6),
+.section-fact :where(p,li,span,div,strong,b,em,label,small,h1,h2,h3,h4,h5,h6),
+.annotation-task :where(p,li,span,div,strong,b,em,label,small,h1,h2,h3,h4,h5,h6){
+  color:var(--bh-black)!important;
+}
+
+/* Section headers: orange/cream panels with dark text. */
+.section-head{
+  background:linear-gradient(90deg,#fff2e6,#ffffff)!important;
+  color:var(--bh-black)!important;
+  border-bottom:3px solid var(--bh-orange)!important;
+}
+.section-head *{
+  color:var(--bh-black)!important;
+}
+.phase-tag{
+  background:var(--bh-black)!important;
+  color:var(--bh-white)!important;
+  border:2px solid var(--bh-orange)!important;
+}
+
+/* Historical journal: cream paper, readable dark text. */
+.journal{
+  background:linear-gradient(135deg,#ffffff 0%,#fff2e6 100%)!important;
+  border-left:8px solid var(--bh-orange)!important;
+}
+.journal .label{
+  background:var(--bh-black)!important;
+  color:var(--bh-white)!important;
+}
+.journal *{ color:var(--bh-black)!important; }
+.journal .label{ color:var(--bh-white)!important; }
+
+/* Study notes: keep branded charcoal, but make the nested note cards white/readable. */
+.notes-panel{
+  background:linear-gradient(135deg,#2b2b2b 0%,#050505 100%)!important;
+  border-left:8px solid var(--bh-orange)!important;
+  color:var(--bh-white)!important;
+}
+.notes-panel > h3,
+.notes-panel > p,
+.notes-panel > div:not(.notes-grid){
+  color:var(--bh-white)!important;
+}
+.notes-panel .notes-grid,
+.notes-panel .note-card{
+  color:var(--bh-black)!important;
+}
+.notes-panel .note-card{
+  background:var(--bh-white)!important;
+  border:1px solid rgba(245,130,32,.35)!important;
+}
+.notes-panel .note-card *{
+  color:var(--bh-black)!important;
+}
+
+/* AP / skill / note boxes should be readable and still branded. */
+.apbox{
+  background:#fff2e6!important;
+  border:2px solid var(--bh-orange)!important;
+}
+.note{
+  background:#fff7ef!important;
+  border-left:6px solid var(--bh-orange)!important;
+}
+.skill{
+  background:#f5f5f5!important;
+  border-left:6px solid var(--bh-charcoal)!important;
+}
+
+/* Fun facts: orange cards with black text. */
+.funfacts,
+.funfacts .content,
+.fun-facts,
+.funfact,
+.fun-fact,
+.fun-fact-card,
+.weird-history{
+  background:linear-gradient(135deg,var(--bh-orange),#ffb36a)!important;
+  color:var(--bh-black)!important;
+}
+.funfacts *,
+.fun-facts *,
+.funfact *,
+.fun-fact *,
+.fun-fact-card *,
+.weird-history *{
+  color:var(--bh-black)!important;
+}
+.funfacts .section-head{
+  background:var(--bh-black)!important;
+  color:var(--bh-white)!important;
+}
+.funfacts .section-head *{
+  color:var(--bh-white)!important;
+}
+.fun-card{
+  background:var(--bh-white)!important;
+  color:var(--bh-black)!important;
+}
+
+/* Dark branded surfaces need white text. */
+.topbar,
+.hero,
+.teacher,
+.footer-brand,
+footer,
+.footer,
+.video,
+.video-card,
+.media-card,
+.stat,
+.table-of-contents,
+.remember-strip div{
+  background-color:var(--bh-black)!important;
+  color:var(--bh-white)!important;
+}
+.topbar *,
+.hero *,
+.teacher > .section-head *,
+.teacher .content,
+.teacher .content :where(p,li,span,div,strong,b,em,label,summary,small,h1,h2,h3,h4,h5,h6),
+.footer-brand *,
+footer *,
+.footer *,
+.video *,
+.video-card *,
+.media-card *,
+.stat *,
+.table-of-contents *,
+.remember-strip div *{
+  color:var(--bh-white)!important;
+}
+
+/* Teacher/source boxes nested inside dark teacher area should still be readable. */
+.teacher .sourcebox,
+.teacher .sourcebox *,
+.teacher .quiz,
+.teacher .quiz *,
+.teacher textarea,
+.teacher .writebox{
+  background-color:var(--bh-white)!important;
+  color:var(--bh-black)!important;
+}
+
+/* Buttons/tabs/links. */
+.btn,
+button,
+.button,
+.launch-btn,
+.source-btn,
+.check-btn,
+.video-btn{
+  background:var(--bh-black)!important;
+  color:var(--bh-white)!important;
+  border:2px solid var(--bh-orange)!important;
+}
+.btn *,
+button *,
+.button *,
+.launch-btn *,
+.source-btn *,
+.check-btn *,
+.video-btn *{
+  color:inherit!important;
+}
+.btn.alt,
+.btn.gold,
+.visual-source-link,
+.tab.active,
+.tab-button.active{
+  background:var(--bh-orange)!important;
+  color:var(--bh-black)!important;
+  border:2px solid var(--bh-black)!important;
+}
+.btn.alt *,
+.btn.gold *,
+.visual-source-link *,
+.tab.active *,
+.tab-button.active *{
+  color:var(--bh-black)!important;
+}
+.tab:not(.active),
+.tab-button:not(.active){
+  background:var(--bh-white)!important;
+  color:var(--bh-black)!important;
+  border:1px solid var(--bh-line)!important;
+}
+
+/* Form fields and quiz choices. */
+textarea,
+.writebox,
+input[type="text"]{
+  background:var(--bh-white)!important;
+  color:var(--bh-black)!important;
+  caret-color:var(--bh-black)!important;
+  border:2px solid rgba(43,43,43,.35)!important;
+}
+textarea::placeholder,
+input[type="text"]::placeholder{ color:#666!important; }
+.choice{
+  background:var(--bh-white)!important;
+  color:var(--bh-black)!important;
+  border:2px solid rgba(43,43,43,.20)!important;
+}
+.choice:hover{
+  background:#fff2e6!important;
+  color:var(--bh-black)!important;
+  border-color:var(--bh-orange)!important;
+}
+.feedback{ color:var(--bh-black)!important; }
+
+/* Captions and muted text must still show. */
+.caption,
+.cap,
+.visual-caption,
+.counter,
+.print-note,
+.img-note{
+  color:#4b4b4b!important;
+}
+.hero .caption,
+.video .caption{
+  color:var(--bh-white)!important;
+}
+
+/* Links in the main content. */
+main a:not(.btn):not(.visual-source-link):not(.video){
+  color:#9a4d00!important;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+
+/* Keep orange accents. */
+.eyebrow,
+.section-kicker,
+.stat strong,
+.remember-strip b{
+  color:var(--bh-orange)!important;
+}
+
+
+
+/* =========================================================
+   Content Editor Upgrade: AP Framework Spotlight + Purposeful Visuals
+   Adds clear AP alignment after story/notes sections and keeps every
+   visual/fun fact tied to a learning purpose.
+   ========================================================= */
+.framework-box{
+  margin:22px 0;
+  border:3px solid var(--bh-orange);
+  border-radius:22px;
+  background:#ffffff!important;
+  color:#050505!important;
+  overflow:hidden;
+  box-shadow:0 14px 30px rgba(0,0,0,.10);
+}
+.framework-box *{color:#050505!important;}
+.framework-head{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  background:linear-gradient(90deg,#050505,#2b2b2b)!important;
+  color:#ffffff!important;
+  padding:14px 18px;
+  border-bottom:4px solid var(--bh-orange);
+}
+.framework-head *{color:#ffffff!important;}
+.framework-icon{
+  display:inline-grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:var(--bh-orange);
+  color:#050505!important;
+  font-weight:900;
+  flex:0 0 auto;
+}
+.framework-body{padding:18px;}
+.framework-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px;}
+.framework-card{
+  background:#fff7ef!important;
+  border:1px solid rgba(245,130,32,.35);
+  border-radius:16px;
+  padding:14px;
+}
+.term-cloud{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.term-cloud span{
+  display:inline-flex;
+  align-items:center;
+  border:1px solid rgba(43,43,43,.25);
+  border-radius:999px;
+  background:#ffffff;
+  padding:6px 10px;
+  font-weight:800;
+  font-size:.88rem;
+}
+.editor-note{
+  background:#2b2b2b!important;
+  color:#ffffff!important;
+  border-left:7px solid var(--bh-orange);
+  padding:14px 16px;
+  border-radius:16px;
+  margin:18px 0;
+}
+.editor-note *{color:#ffffff!important;}
+.visual-inquiry{
+  margin-top:8px;
+  padding-top:8px;
+  border-top:1px dashed rgba(43,43,43,.25);
+  color:#050505!important;
+  font-weight:700;
+}
+.fun-purpose{
+  margin-top:10px;
+  padding:10px;
+  border-radius:14px;
+  background:#050505!important;
+  color:#ffffff!important;
+  font-weight:800;
+}
+.fun-purpose *{color:#ffffff!important;}
+@media(max-width:850px){.framework-grid{grid-template-columns:1fr}.framework-head{align-items:flex-start}}
+
+
+
+/* Student-facing polish added in this revision */
+.student-start-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px;}
+.student-start-card{background:#ffffff!important;color:#111111!important;border:2px solid rgba(244,124,32,.35);border-radius:18px;padding:16px;box-shadow:0 8px 22px rgba(0,0,0,.08);}
+.student-start-card b{display:block;color:#050505!important;font-size:1.05rem;margin-bottom:6px;}
+.student-start-card p{color:#2b2b2b!important;margin:.25rem 0 0;}
+.student-mission{background:linear-gradient(135deg,#050505,#2b2b2b)!important;color:#ffffff!important;border-left:8px solid var(--bh-orange);border-radius:20px;padding:18px 20px;margin:18px 0;}
+.student-mission *{color:#ffffff!important;}
+.funfacts .lead{font-size:1.08rem;}
+.fun-card{position:relative;overflow:hidden;}
+.fun-card h3{font-size:1.12rem;}
+.fun-card .why{margin-top:10px;padding:10px;border-radius:12px;background:rgba(244,124,32,.12)!important;color:#111111!important;font-weight:700;}
+.fun-card .why b{color:#050505!important;}
+.fun-purpose{font-size:1.02rem;}
+.section-fact{background:#fff3df!important;color:#111111!important;border:2px solid rgba(244,124,32,.5)!important;border-left:9px solid var(--bh-orange)!important;border-radius:16px!important;padding:14px 16px!important;box-shadow:0 8px 20px rgba(0,0,0,.06);}
+.section-fact b{color:#050505!important;}
+.teacher-language-note{background:#fff!important;color:#111!important;border:2px dashed rgba(244,124,32,.6);border-radius:18px;padding:14px 16px;margin-top:14px;}
+@media(max-width:850px){.student-start-grid{grid-template-columns:1fr;}}
+
+
+
+/* =========================================================
+   Lecture Board Upgrade
+   Adds teacher/presentation-ready bullet sections without
+   removing the student-facing story + notes experience.
+   ========================================================= */
+.lecture-board{
+  margin:22px 0;
+  border:2px solid rgba(244,124,32,.45);
+  border-radius:22px;
+  overflow:hidden;
+  background:#111111;
+  color:#ffffff;
+  box-shadow:0 16px 34px rgba(0,0,0,.12);
+}
+.lecture-board summary{
+  cursor:pointer;
+  list-style:none;
+  padding:18px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  font-weight:900;
+  color:#ffffff!important;
+  background:linear-gradient(90deg,#111111,#2b2b2b);
+}
+.lecture-board summary::-webkit-details-marker{display:none;}
+.lecture-board summary::after{
+  content:"Open";
+  background:#f47c20;
+  color:#111111;
+  border-radius:999px;
+  padding:7px 12px;
+  font-size:.78rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.lecture-board[open] summary::after{content:"Close";}
+.lecture-board .lecture-inner{
+  padding:18px 22px 20px;
+  background:#ffffff;
+  color:#161616!important;
+}
+.lecture-board .lecture-inner *{color:#161616!important;}
+.lecture-board h3{
+  margin:0 0 10px;
+  font-size:1.35rem;
+  color:#111111!important;
+}
+.lecture-board ul{margin:10px 0 0 1.15rem;padding:0;}
+.lecture-board li{margin:8px 0;line-height:1.5;}
+.lecture-board .lecture-ap{
+  margin-top:14px;
+  padding:12px 14px;
+  border-radius:14px;
+  border-left:7px solid #f47c20;
+  background:#fff3e8;
+  font-weight:700;
+}
+.lecture-board .lecture-cue{
+  margin-top:12px;
+  padding:12px 14px;
+  border-radius:14px;
+  background:#f2f2f2;
+  border:1px solid #d8d8d8;
+}
+.lecture-board .lecture-cue b{color:#111111!important;}
+.presentation-tip{
+  background:#fff3e8!important;
+  border:1px solid rgba(244,124,32,.5)!important;
+  border-left:8px solid #f47c20!important;
+  border-radius:16px!important;
+  padding:13px 15px!important;
+  margin:14px 0!important;
+  color:#111111!important;
+}
+.presentation-tip *{color:#111111!important;}
+
+
+
+/* =========================================================
+   First and 10 + Final Contrast Patch
+   Purpose: keep BeHistorical palette while eliminating any
+   remaining dark-on-dark text conflicts and adding bell-ringer
+   reading modules.
+   ========================================================= */
+.first10-section{
+  border:3px solid var(--bh-black)!important;
+  box-shadow:0 18px 42px rgba(0,0,0,.14)!important;
+}
+.first10-section .section-head{
+  background:linear-gradient(135deg,#050505 0%,#2b2b2b 72%,#f58220 100%)!important;
+  color:#ffffff!important;
+  border-bottom:6px solid #f58220!important;
+}
+.first10-section .section-head h2,
+.first10-section .section-head p,
+.first10-section .section-head span,
+.first10-section .section-head *{
+  color:#ffffff!important;
+}
+.first10-section .phase-tag{
+  background:#f58220!important;
+  color:#050505!important;
+  border:2px solid #ffffff!important;
+}
+.first10-intro{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:18px;
+  align-items:stretch;
+  margin-bottom:20px;
+}
+.first10-card,
+.first10-teacher-card{
+  background:#ffffff!important;
+  color:#050505!important;
+  border:2px solid rgba(245,130,32,.38)!important;
+  border-radius:22px;
+  padding:18px 20px;
+  box-shadow:0 10px 26px rgba(0,0,0,.08);
+}
+.first10-card *,
+.first10-teacher-card *{color:#050505!important;}
+.first10-teacher-card{
+  background:#fff2e6!important;
+  border-left:8px solid #f58220!important;
+}
+.first10-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+.first10-reading{
+  background:#ffffff!important;
+  color:#050505!important;
+  border:1px solid rgba(43,43,43,.16)!important;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 12px 30px rgba(0,0,0,.09);
+}
+.first10-reading *,
+.first10-reading p,
+.first10-reading li,
+.first10-reading h3,
+.first10-reading h4,
+.first10-reading b,
+.first10-reading strong,
+.first10-reading span{color:#050505!important;}
+.first10-reading .first10-topline{
+  background:#050505!important;
+  color:#ffffff!important;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 16px;
+  border-bottom:4px solid #f58220;
+}
+.first10-reading .first10-topline *,
+.first10-reading .day-label,
+.first10-reading .time-chip{color:#ffffff!important;}
+.first10-reading .time-chip{
+  display:inline-flex;
+  align-items:center;
+  background:#f58220!important;
+  color:#050505!important;
+  border-radius:999px;
+  padding:5px 10px;
+  font-size:.78rem;
+  font-weight:900;
+  white-space:nowrap;
+}
+.first10-body{padding:18px 18px 20px;background:#ffffff!important;color:#050505!important;}
+.first10-body h3{margin:0 0 8px;font-size:1.25rem;color:#050505!important;}
+.first10-body p{font-family:Georgia,serif;font-size:1.02rem;line-height:1.72;color:#171717!important;}
+.first10-task{
+  margin-top:14px;
+  background:#fff2e6!important;
+  border-left:7px solid #f58220!important;
+  border-radius:14px;
+  padding:12px 14px;
+  color:#050505!important;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;
+}
+.first10-task p{font-family:inherit!important;font-size:.96rem!important;line-height:1.55!important;margin:.35rem 0!important;color:#050505!important;}
+.first10-task b{color:#050505!important;}
+.first10-lines{
+  display:grid;
+  gap:8px;
+  margin-top:10px;
+}
+.first10-line{
+  min-height:34px;
+  background:#ffffff!important;
+  border:1px dashed rgba(43,43,43,.45)!important;
+  border-radius:10px;
+}
+.first10-minirow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px;}
+.first10-mini{
+  background:#2b2b2b!important;
+  color:#ffffff!important;
+  border-radius:18px;
+  padding:14px 15px;
+  border:2px solid #f58220!important;
+}
+.first10-mini *, .first10-mini b, .first10-mini p{color:#ffffff!important;}
+.first10-mini b{color:#f58220!important;display:block;margin-bottom:4px;}
+
+/* Commercial/readability polish: explicit colors for every dark branded surface. */
+.topbar,.topbar *,
+.hero,.hero *,
+.teacher,.teacher .section-head,.teacher .section-head *,
+.footer-brand,.footer-brand *,
+footer,footer *,
+.video,.video *,
+.stat,.stat *,
+.remember-strip div,.remember-strip div *,
+.lecture-board summary,.lecture-board summary *,
+.framework-head,.framework-head *,
+.student-mission,.student-mission *,
+.funfacts .section-head,.funfacts .section-head *{
+  color:#ffffff!important;
+}
+.notes-panel{
+  background:linear-gradient(135deg,#2b2b2b 0%,#050505 100%)!important;
+  color:#ffffff!important;
+}
+.notes-panel > h3,
+.notes-panel > p,
+.notes-panel > ul,
+.notes-panel > ol,
+.notes-panel > div:not(.notes-grid),
+.notes-panel > h3 *,
+.notes-panel > p *,
+.notes-panel > ul *,
+.notes-panel > ol *{
+  color:#ffffff!important;
+}
+.notes-panel .note-card,
+.notes-panel .note-card *,
+.lecture-board .lecture-inner,
+.lecture-board .lecture-inner *,
+.framework-body,
+.framework-body *,
+.sourcebox,
+.sourcebox *,
+.quiz,
+.quiz *,
+.choice,
+.choice *,
+.fun-card,
+.fun-card *,
+.student-start-card,
+.student-start-card *,
+.teacher .sourcebox,
+.teacher .sourcebox *,
+.teacher .quiz,
+.teacher .quiz *,
+.teacher .writebox,
+.teacher textarea{
+  color:#050505!important;
+}
+.lecture-board .lecture-inner,
+.framework-body,
+.sourcebox,
+.quiz,
+.choice,
+.fun-card,
+.student-start-card,
+.teacher .sourcebox,
+.teacher .quiz,
+.teacher .writebox,
+.teacher textarea{
+  background:#ffffff!important;
+}
+.btn,.btn *,button,button *, .tab.active,.tab.active *, .visual-source-link,.visual-source-link *{
+  color:inherit!important;
+}
+.btn,button{background:#050505!important;color:#ffffff!important;border-color:#f58220!important;}
+.btn.gold,.btn.alt,.visual-source-link,.tab.active{background:#f58220!important;color:#050505!important;border-color:#050505!important;}
+textarea,.writebox,input[type="text"]{background:#ffffff!important;color:#050505!important;}
+@media(max-width:900px){.first10-intro,.first10-grid,.first10-minirow{grid-template-columns:1fr;}}
+
+
+
+/* =========================================================
+   BeHistorical Final Contrast + First and 10 v2 Patch
+   ========================================================= */
+body, .content, .reading, .margin-card, .student-start-card, .journal, .framework-body, .quiz, .choice, .sourcebox, .writebox, .fun-card, .first10-card, .first10-reading, .feedback-card, .quality-card, .rubric-card, .magic-card {
+  color:#111111!important;
+}
+.content p, .content li, .content span, .content div, .content label, .reading p, .reading li, .margin-card p, .margin-card li, .journal p, .framework-body p, .framework-body li, .quiz p, .choice, .sourcebox p, .writebox p, .fun-card p, .first10-reading p, .first10-reading li, .feedback-card p, .quality-card p, .rubric-card p, .magic-card p {color:#111111!important;}
+.section-head, .section-head *, .hero, .hero *, .topbar, .topbar *, footer, footer *, .footer-brand, .footer-brand *, .video, .video *, .stat, .stat *, .remember-strip div, .remember-strip div *, .framework-head, .framework-head *, .lecture-board summary, .lecture-board summary * {color:#ffffff!important;}
+.notes-panel, .notes-panel > h3, .notes-panel > p, .notes-panel > ul, .notes-panel > ol {color:#ffffff!important;}
+.notes-panel .note-card, .notes-panel .note-card *, .lecture-board .lecture-inner, .lecture-board .lecture-inner *, .first10-task, .first10-task *, textarea, input, .student-response, .self-check-box, .feedback-toolbox, .feedback-toolbox * {color:#111111!important;background-color:#ffffff;}
+.first10-reading{grid-column:1/-1!important;}
+.first10-longread{max-width:980px;margin:0 auto;background:#ffffff!important;border:3px solid #111;border-radius:24px;overflow:hidden;box-shadow:0 18px 45px rgba(0,0,0,.13)}
+.first10-longread .first10-topline{background:#050505!important;color:#ffffff!important;border-bottom:6px solid #f58220!important;}
+.first10-longread .first10-topline *{color:#ffffff!important;}
+.first10-longread .time-chip{background:#f58220!important;color:#050505!important;}
+.first10-reading-meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px;}
+.first10-reading-meta span{background:#fff2e6;border:1px solid rgba(245,130,32,.5);border-radius:999px;padding:6px 10px;font-weight:800;font-size:.82rem;color:#111!important;}
+.first10-body h4{font-size:1.05rem;margin:18px 0 6px;color:#111!important;}
+.first10-body p{font-family:Georgia,serif;font-size:1.06rem;line-height:1.78;color:#111!important;}
+.annotation-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+.annotation-card{background:#fff2e6!important;border:2px solid rgba(245,130,32,.38);border-radius:16px;padding:12px;color:#111!important;}
+.annotation-card *{color:#111!important;}
+.first10-writing-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px;}
+.first10-writing-grid textarea, .feedback-toolbox textarea{width:100%;min-height:130px;border:2px solid #2b2b2b;border-radius:14px;padding:12px;font-size:1rem;background:#ffffff!important;color:#111111!important;}
+.feedback-section{border:3px solid #050505!important;}
+.feedback-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch;}
+.feedback-card,.quality-card,.rubric-card,.magic-card{background:#ffffff!important;border:2px solid rgba(43,43,43,.18);border-radius:20px;padding:18px;box-shadow:0 10px 26px rgba(0,0,0,.08);}
+.feedback-card h3,.quality-card h3,.rubric-card h3,.magic-card h3{margin-top:0;color:#111!important;}
+.quality-list{display:grid;gap:10px;margin-top:12px;}
+.quality-list div{background:#fff2e6!important;border-left:7px solid #f58220;border-radius:14px;padding:10px 12px;color:#111!important;}
+.quality-list b{color:#111!important;}
+.feedback-toolbox{background:#fff2e6!important;border:2px solid rgba(245,130,32,.6);border-radius:20px;padding:16px;margin-top:18px;color:#111!important;}
+.feedback-output{margin-top:12px;background:#ffffff!important;border:2px solid #111;border-radius:16px;padding:14px;color:#111!important;min-height:48px;}
+.feedback-output *{color:#111!important;}
+.rubric-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.95rem;background:#fff;color:#111!important;}
+.rubric-table th{background:#111!important;color:#fff!important;text-align:left;padding:9px;border:1px solid #111;}
+.rubric-table td{padding:9px;border:1px solid #d5d5d5;color:#111!important;vertical-align:top;}
+.magic-workflow{counter-reset:step;display:grid;gap:10px;margin-top:10px;}
+.magic-workflow li{list-style:none;background:#fff2e6!important;border-left:7px solid #f58220;border-radius:14px;padding:10px 12px;color:#111!important;}
+.copy-prompt-box{background:#111!important;color:#fff!important;border-radius:18px;padding:14px;margin-top:12px;}
+.copy-prompt-box *{color:#fff!important;}
+.copy-prompt-box code{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86rem;}
+@media(max-width:850px){.first10-intro,.first10-writing-grid,.feedback-grid,.annotation-grid{grid-template-columns:1fr!important;}}
+
+
+
+/* =========================================================
+   STUDENT-FACING CONTRAST FIX - final override
+   This block intentionally comes last. It fixes the remaining
+   dark-font-on-dark-background conflicts while preserving the
+   BeHistorical orange / charcoal / white / black palette.
+   ========================================================= */
+:root{
+  --bh-sf-orange:#f58220;
+  --bh-sf-black:#050505;
+  --bh-sf-charcoal:#2b2b2b;
+  --bh-sf-white:#ffffff;
+  --bh-sf-cream:#fff3e8;
+  --bh-sf-ink:#111111;
+}
+
+/* Default readable text for the student page. */
+body, main, .section, .content, .reading, .ebook-grid,
+.standard, .margin-card, .image-card, .visual-mini, .section-visual,
+.journal, .journal-question, .notes-panel .note-card, .note, .skill,
+.apbox, .sourcebox, .quiz, .choice, .mini, .annotation-task, .turntalk,
+.accordion details, .fun-card, .section-fact, .timeline, .toc a,
+.writebox, textarea, input, select, .student-start-card, .student-response,
+.first10-card, .first10-teacher-card, .first10-reading, .first10-body,
+.first10-task, .feedback-card, .quality-card, .rubric-card, .magic-card,
+.self-check-box, .feedback-toolbox, .lecture-board .lecture-inner,
+.framework-box, .framework-body, .framework-card{
+  background-color:var(--bh-sf-white)!important;
+  color:var(--bh-sf-ink)!important;
+}
+
+.standard *, .margin-card *, .image-card *, .visual-mini *, .section-visual *,
+.journal *, .journal-question *, .notes-panel .note-card *, .note *, .skill *,
+.apbox *, .sourcebox *, .quiz *, .choice *, .mini *, .annotation-task *,
+.turntalk *, .accordion details *, .fun-card *, .section-fact *, .timeline *,
+.toc a *, .writebox *, textarea *, input *, select *, .student-start-card *,
+.student-response *, .first10-card *, .first10-teacher-card *,
+.first10-reading .first10-body *, .first10-task *, .feedback-card *,
+.quality-card *, .rubric-card *, .magic-card *, .self-check-box *,
+.feedback-toolbox *, .lecture-board .lecture-inner *, .framework-body *,
+.framework-card *{
+  color:var(--bh-sf-ink)!important;
+}
+
+/* Normal section headers are light; dark specialty headers are handled below. */
+.section:not(.first10-section):not(.funfacts):not(.teacher) > .section-head{
+  background:linear-gradient(90deg,var(--bh-sf-cream),#ffffff)!important;
+  color:var(--bh-sf-ink)!important;
+  border-bottom:3px solid var(--bh-sf-orange)!important;
+}
+.section:not(.first10-section):not(.funfacts):not(.teacher) > .section-head *{
+  color:var(--bh-sf-ink)!important;
+}
+
+/* Dark branded areas must always use white text. */
+.topbar, .topbar *,
+.hero, .hero *,
+.footer-brand, .footer-brand *,
+footer, footer *, .footer, .footer *,
+.video, .video *, .video-card, .video-card *, .media-card, .media-card *,
+.stat, .stat *, .remember-strip div, .remember-strip div *,
+.framework-head, .framework-head *,
+.lecture-board summary, .lecture-board summary *,
+.student-mission, .student-mission *,
+.first10-section > .section-head, .first10-section > .section-head *,
+.first10-reading .first10-topline, .first10-reading .first10-topline *,
+.funfacts > .section-head, .funfacts > .section-head *,
+.table-of-contents, .table-of-contents *,
+.first10-mini, .first10-mini *{
+  color:var(--bh-sf-white)!important;
+}
+
+.topbar, .hero, .footer-brand, footer, .footer,
+.video, .video-card, .media-card, .stat, .remember-strip div,
+.framework-head, .lecture-board summary, .student-mission,
+.first10-reading .first10-topline, .table-of-contents,
+.first10-mini{
+  background-color:var(--bh-sf-black)!important;
+}
+
+.first10-section > .section-head,
+.funfacts > .section-head{
+  background:linear-gradient(135deg,var(--bh-sf-black),var(--bh-sf-charcoal))!important;
+  border-bottom:6px solid var(--bh-sf-orange)!important;
+}
+
+/* Study notes stay branded dark, but nested cards stay light/readable. */
+.notes-panel{
+  background:linear-gradient(135deg,var(--bh-sf-charcoal),var(--bh-sf-black))!important;
+  color:var(--bh-sf-white)!important;
+  border-left:8px solid var(--bh-sf-orange)!important;
+}
+.notes-panel > h1, .notes-panel > h2, .notes-panel > h3, .notes-panel > h4,
+.notes-panel > p, .notes-panel > ul, .notes-panel > ol,
+.notes-panel > h1 *, .notes-panel > h2 *, .notes-panel > h3 *, .notes-panel > h4 *,
+.notes-panel > p *, .notes-panel > ul *, .notes-panel > ol *{
+  color:var(--bh-sf-white)!important;
+}
+.notes-panel .notes-grid, .notes-panel .note-card, .notes-panel .note-card *{
+  background-color:var(--bh-sf-white)!important;
+  color:var(--bh-sf-ink)!important;
+}
+
+/* Orange surfaces: black text for high contrast. */
+.phase-tag, .time-chip, .brand-badge, .lesson-pill, .tag, .mini-tag,
+.btn.gold, .btn.alt, .visual-source-link, .tab.active,
+.funfacts, .fun-facts, .funfact, .fun-fact, .fun-fact-card, .weird-history,
+.funfacts .content, .funfacts .content *, .fun-facts *, .funfact *,
+.fun-fact *, .fun-fact-card *, .weird-history *{
+  color:var(--bh-sf-black)!important;
+}
+.phase-tag, .time-chip, .btn.gold, .btn.alt, .visual-source-link, .tab.active{
+  background:var(--bh-sf-orange)!important;
+  border-color:var(--bh-sf-black)!important;
+}
+
+/* Buttons that sit on dark or mixed backgrounds. */
+.btn, button, .button, .launch-btn, .source-btn, .check-btn, .video-btn{
+  background:var(--bh-sf-black)!important;
+  color:var(--bh-sf-white)!important;
+  border:2px solid var(--bh-sf-orange)!important;
+}
+.btn *, button *, .button *, .launch-btn *, .source-btn *, .check-btn *, .video-btn *{
+  color:inherit!important;
+}
+.btn:hover, button:hover, .button:hover, .launch-btn:hover, .source-btn:hover,
+.check-btn:hover, .video-btn:hover{
+  background:var(--bh-sf-orange)!important;
+  color:var(--bh-sf-black)!important;
+}
+
+/* Forms and quick writing boxes. */
+textarea, .writebox, input[type="text"], .student-response{
+  background:#ffffff!important;
+  color:#050505!important;
+  caret-color:#050505!important;
+  border:2px solid rgba(43,43,43,.35)!important;
+}
+textarea::placeholder, input[type="text"]::placeholder{
+  color:#6b6b6b!important;
+}
+
+/* Captions: readable on light surfaces, white inside hero/video areas. */
+.caption, .cap, .visual-caption, .counter, .print-note, .img-note{
+  color:#4b4b4b!important;
+}
+.hero .caption, .video .caption, .video-card .caption{
+  color:#ffffff!important;
+}
+
+/* Hide teacher-only panel in the student-facing GitHub build. */
+#teacherNotes{display:none!important;}
+
+/* Preserve key BeHistorical accents. */
+.eyebrow, .section-kicker, .stat strong, .remember-strip b,
+.first10-mini b{
+  color:var(--bh-sf-orange)!important;
+}
+
 </style>
 </head>
 <body>
 <div class="progress" id="progress"></div>
-<header class="topbar"><div class="topbar-inner"><div class="brand">AP World Interactive eBook</div><nav class="nav"><a href="#gov">Government</a><a href="#culture">Belief Systems</a><a href="#economy">Economy</a><a href="#japan">Japan</a><a href="#assess">Assess</a></nav></div></header>
+<header class="topbar"><div class="topbar-inner"><a class="beHistorical-logo behistorical-logo" href="#start" aria-label="BeHistorical home"><span class="bh-logo-wrap"><img class="real-bh-logo" src="data:image/webp;base64,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" alt="BeHistorical logo"></span><span class="bh-word"><strong>BeHistorical</strong><span>Interactive History</span></span></a><nav class="nav"><a href="#gov">Government</a><a href="#culture">Belief Systems</a><a href="#economy">Economy</a><a href="#japan">Japan</a><a href="#assess">Assess</a></nav></div></header>
 <section class="hero">
   <div class="hero-grid">
     <div>
-      <div class="eyebrow">Unit 1: The Global Tapestry | Topic 1.1</div>
+      <div class="brand-badge"><span class="bh-logo-wrap"><img class="real-bh-logo" src="data:image/webp;base64,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" alt="BeHistorical logo"></span><span><b>BeHistorical</b><br><small>Commercial-quality interactive AP World resource</small></span></div><div class="eyebrow">Unit 1: The Global Tapestry | Topic 1.1</div>
       <h1>Developments in East Asia, 1200-1450</h1>
       <p>How did Song China use government, culture, and innovation to create one of the most sophisticated societies in the world, and how did Chinese traditions influence Korea, Japan, and Vietnam?</p>
-      <div class="toolbar"><a class="btn gold" href="#start">Begin Reading</a><button class="btn alt" onclick="toggleTeacher()">Teacher Notes</button><button class="btn alt" onclick="window.print()">Print / Save PDF</button></div>
+      <div class="toolbar"><a class="btn gold" href="#start">Begin Reading</a><button class="btn alt" onclick="window.print()">Print / Save PDF</button></div>
     </div>
     <figure class="hero-card">
       <img src="https://images.metmuseum.org/CRDImages/as/original/DP205730.jpg" alt="Detailed riverside city scene inspired by Qingming handscroll tradition" / loading="lazy" decoding="async" data-title="Detailed riverside city scene inspired by Qingming handscroll tradition" data-source="https://www.metmuseum.org/art/collection/search/41428" onerror="imageFallback(this)">
@@ -57,6 +1261,8 @@ main{max-width:1180px;margin:auto;padding:28px 18px 80px}.standards{display:grid
         <a href="#culture">2. Confucianism, Daoism, Buddhism, and Neo-Confucianism</a>
         <a href="#economy">3. Innovation, Trade, and the Song Economy</a>
         <a href="#japan">4. Chinese Influence and Japanese Feudalism</a>
+        <a href="#first10">First and 10</a>
+        <a href="#funfacts">Fun Facts</a>
       </div>
       <div class="callout-row" style="margin-top:18px">
         <div class="stat"><strong>I Do</strong>Read, watch, and annotate core ideas.</div>
@@ -68,18 +1274,207 @@ main{max-width:1180px;margin:auto;padding:28px 18px 80px}.standards{display:grid
     </div>
   </section>
 
+
+
+  
+<section class="section" id="editor-upgrade">
+  <div class="section-head"><span class="phase-tag">Start Here</span><h2>How to Use This Interactive eBook</h2></div>
+  <div class="content">
+    <div class="student-mission"><b>Your mission:</b> Explore how East Asian states and societies built power, organized culture, and transformed economies between 1200 and 1450. This is part story, part study guide, and part AP practice. Read for the world first. Then use the notes to prove what you know.</div>
+    <div class="student-start-grid">
+      <div class="student-start-card"><b>1. Read the Story</b><p>The <i>Historical Journal</i> sections help you picture the people, places, choices, and tensions behind the content.</p></div>
+      <div class="student-start-card"><b>2. Lock in the Notes</b><p>The <i>Study Notes</i> sections organize the exact AP ideas you need for quizzes, discussions, SAQs, and review.</p></div>
+      <div class="student-start-card"><b>3. Practice the Skill</b><p>Use the visual prompts, source analysis, quick checks, and writing boxes to turn facts into historical arguments.</p></div>
+    </div>
+    <div class="teacher-language-note"><b>Student tip:</b> Do not skip the fun facts. They are designed to be memorable, slightly surprising, and useful. Your challenge is to connect each one back to a larger AP theme.</div>
+  </div>
+</section>
+
+
+
+
+<section class="section first10-section" id="first10">
+  <div class="section-head"><span class="phase-tag">First and 10</span><h2>Foundational Reading: 1.1 — Song China and East Asian Developments</h2></div>
+  <div class="content">
+    <div class="first10-intro">
+      <div class="first10-card">
+        <h3>What is First and 10?</h3>
+        <p><b>First and 10</b> is your opening reading routine. Instead of five separate mini-readings, this version gives students one substantial foundation piece for the entire topic. It is designed to take about ten focused minutes to read, annotate, and respond.</p>
+        <p>The purpose is to get students mentally inside the world of East Asia before the main lesson begins: government, belief systems, economic innovation, and cultural influence all appear in one connected reading.</p>
+      </div>
+      <div class="first10-teacher-card">
+        <h3>Suggested Routine</h3>
+        <ul>
+          <li><b>Minutes 1–7:</b> Read silently and annotate with the three symbols below.</li>
+          <li><b>Minutes 8–9:</b> Complete the quick-write response.</li>
+          <li><b>Minute 10:</b> Share one sentence that connects a detail to an AP World theme.</li>
+        </ul>
+      </div>
+    </div>
+
+    <article class="first10-reading first10-longread">
+      <div class="first10-topline"><span class="day-label">Foundational Reading</span><span class="time-chip">10 minutes</span></div>
+      <div class="first10-body">
+        <h3>When China Was the Center of a Connected East Asian World</h3>
+        <div class="first10-reading-meta"><span>Topic 1.1</span><span>State Building</span><span>Belief Systems</span><span>Economic Innovation</span><span>Cultural Transfer</span></div>
+
+        <p>Imagine beginning your morning in a crowded city in Song China around the year 1200. The streets are already awake. Merchants open shopfronts. Porters carry bundles of silk and tea. Boats move along canals carrying grain from the south toward major cities. In a market stall, someone accepts a piece of paper as payment instead of a heavy string of copper coins. Nearby, a printer prepares pages for a text that can now circulate more widely than hand-copied manuscripts ever could. This is not a sleepy medieval world. Song China was one of the most sophisticated and commercially active societies on Earth.</p>
+
+        <p>The power of the Song Dynasty did not rest only on armies or emperors. It rested on systems. Chinese rulers had long claimed legitimacy through the <b>Mandate of Heaven</b>, the belief that a dynasty had the right to rule as long as it governed morally and maintained order. But belief alone could not collect taxes, repair canals, judge disputes, or manage millions of people. For that, the Song relied on an enormous <b>imperial bureaucracy</b>: a government staffed by officials who managed the everyday work of the state.</p>
+
+        <p>One of the most important pathways into that bureaucracy was the <b>civil service examination system</b>. Students studied Confucian texts, practiced writing, and prepared for exams that could open the door to government office. In theory, this system rewarded merit because officials were supposed to earn positions through learning rather than birth alone. In reality, wealthy families had advantages because they could afford tutors, books, and years of study. Still, the examination system mattered because it tied political power to education and created a class of scholar-officials who shared a common Confucian worldview.</p>
+
+        <h4>Belief systems shaped how people understood order.</h4>
+        <p>Confucianism taught that society worked best when people fulfilled their proper roles: children respected parents, subjects obeyed rulers, younger people honored elders, and rulers governed with virtue. These ideas supported hierarchy, family authority, education, and loyalty to the state. Buddhism and Daoism also shaped East Asian life. Buddhism offered teachings about suffering, desire, discipline, and liberation, while Daoism emphasized harmony with the natural order. During the Song period, thinkers developed <b>Neo-Confucianism</b>, a revived and reworked form of Confucian thought that responded to Buddhist and Daoist influence while placing Confucian morality back at the center of society.</p>
+
+        <p>These ideas traveled. Chinese cultural traditions influenced Korea, Vietnam, and Japan through writing systems, Buddhism, Confucian learning, models of government, art, and elite culture. Japan provides a particularly useful example because it borrowed heavily from China but did not simply copy China. During the Heian period, Japanese aristocrats absorbed Chinese influences while developing a distinct court culture of poetry, etiquette, literature, and aesthetics. Later, as the power of the imperial court weakened, warrior elites became more important. Samurai, daimyo, and shoguns shaped a different political order built around land, loyalty, and military service.</p>
+
+        <h4>Economic innovation changed the scale of society.</h4>
+        <p>Song China also experienced major economic growth. One reason was agricultural innovation. The spread of <b>Champa rice</b>, a faster-ripening variety from Vietnam, helped farmers produce more food. More food supported population growth. Population growth helped cities expand. Larger cities created more demand for goods, services, markets, transportation, and administration. In other words, a change in farming helped transform much more than farming.</p>
+
+        <p>The <b>Grand Canal</b> also mattered. It connected major regions of China and allowed grain, taxes, people, and goods to move more efficiently. This strengthened the state because government depends on movement: food has to reach cities, tax grain has to reach officials, and supplies have to move across long distances. The canal was not just a waterway. It was infrastructure that helped hold a large state together.</p>
+
+        <p>Commercialization created new financial needs. Copper coins were useful, but they were heavy and inconvenient when trade expanded. The development of <b>paper money</b> made exchange easier in a growing commercial economy. That does not mean paper money was simple. It depended on trust. People had to believe that the government would back the value of that paper. When used carefully, paper money helped trade. When overissued, it could cause problems. This is why paper money is such a powerful historical example: it shows economic creativity and the challenges that come with innovation.</p>
+
+        <h4>The big picture: continuity and change happened at the same time.</h4>
+        <p>East Asia from 1200 to 1450 was not a story of people abandoning tradition. It was a story of older traditions being used in new ways. Song rulers continued to rely on Confucian ideas, but they expanded bureaucratic government. Chinese culture continued to influence neighboring societies, but those societies adapted what they borrowed. Agriculture remained the foundation of life, but innovations like Champa rice supported urban growth and commercial expansion. The AP move is to see the pattern: <b>tradition and innovation worked together</b>.</p>
+
+        <div class="annotation-grid">
+          <div class="annotation-card"><b>Mark with a ★</b><p>One detail that shows how the Song state maintained power.</p></div>
+          <div class="annotation-card"><b>Mark with a !</b><p>One detail that surprised you or seems memorable.</p></div>
+          <div class="annotation-card"><b>Mark with a →</b><p>One cause-and-effect connection between farming, trade, population, or government.</p></div>
+        </div>
+
+        <div class="first10-writing-grid">
+          <div class="first10-task">
+            <b>Quick Write: Claim + Evidence + Explanation</b>
+            <p>In 4–6 sentences, explain how Song China combined tradition and innovation to strengthen society or the state. Use at least two specific examples from the reading.</p>
+            <textarea class="student-response" placeholder="Write your First and 10 response here..."></textarea>
+          </div>
+          <div class="first10-task">
+            <b>Quality Check Before You Submit</b>
+            <p>Your response should include:</p>
+            <ul>
+              <li>a clear claim that answers the prompt,</li>
+              <li>two accurate pieces of evidence,</li>
+              <li>an explanation of why the evidence matters,</li>
+              <li>at least one AP thinking word: because, therefore, however, continuity, change, or as a result.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section feedback-section" id="feedback-system">
+  <div class="section-head"><span class="phase-tag">Feedback System</span><h2>How Your Writing Will Be Evaluated</h2></div>
+  <div class="content">
+    <div class="feedback-grid">
+      <div class="feedback-card">
+        <h3>What counts as a strong response?</h3>
+        <p>Strong historical writing is not just longer writing. It is accurate, specific, and explanatory. Students should be able to show what happened, name specific evidence, and explain why that evidence matters.</p>
+        <div class="quality-list">
+          <div><b>Accuracy:</b> Does the response correctly explain the historical content?</div>
+          <div><b>Specific Evidence:</b> Does it use precise terms such as civil service exam, Neo-Confucianism, Champa rice, Grand Canal, paper money, Heian Japan, samurai, or shogun?</div>
+          <div><b>Explanation:</b> Does it connect the evidence to a larger AP World idea such as state building, cultural transfer, economic innovation, hierarchy, continuity, or change?</div>
+          <div><b>Clarity:</b> Can a reader easily understand the claim and reasoning?</div>
+        </div>
+      </div>
+
+      <div class="rubric-card">
+        <h3>Student-Friendly 4-Point Rubric</h3>
+        <table class="rubric-table">
+          <tr><th>Score</th><th>Description</th></tr>
+          <tr><td><b>4</b></td><td>Accurate claim, multiple specific examples, clear explanation, and strong AP reasoning.</td></tr>
+          <tr><td><b>3</b></td><td>Mostly accurate claim, at least one strong example, and some explanation of significance.</td></tr>
+          <tr><td><b>2</b></td><td>Partially accurate but too general, under-explained, or missing a clear connection to the prompt.</td></tr>
+          <tr><td><b>1</b></td><td>Limited accuracy, vague evidence, or mostly summary without explanation.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="feedback-toolbox">
+      <h3>Built-In Self-Check Tool</h3>
+      <p>This is not AI grading. It is a quick checklist that helps you improve before submitting your response to the teacher or to an approved feedback tool.</p>
+      <textarea id="feedbackDraft" placeholder="Paste a short response here to run the self-check..."></textarea>
+      <button class="btn" type="button" onclick="runWritingCheck()">Run Self-Check</button>
+      <div class="feedback-output" id="feedbackOutput">Your checklist feedback will appear here.</div>
+    </div>
+
+    <div class="magic-card" style="margin-top:18px">
+      <h3>MagicSchool / Canvas Feedback Workflow</h3>
+      <p><b>Best current setup:</b> keep this GitHub lesson as the interactive reading experience, then use Canvas + MagicSchool for AI-supported writing feedback if your district has that integration enabled.</p>
+      <ol class="magic-workflow">
+        <li>Student writes inside this eBook or in a Canvas response box.</li>
+        <li>Student copies the response into the approved MagicSchool/MagicStudent activity or Canvas assignment.</li>
+        <li>MagicSchool evaluates the response using the learning target, success criteria, and rubric you provide.</li>
+        <li>You review feedback and student submissions in Canvas/SpeedGrader or your normal workflow.</li>
+      </ol>
+      <div class="copy-prompt-box"><b>Suggested MagicSchool feedback prompt:</b><br><code>Evaluate this AP World History student response for quality and accuracy. Learning target: Explain how systems of government, belief systems, and economic innovations shaped East Asia from c. 1200 to c. 1450. Success criteria: The response makes a clear claim, uses accurate evidence, explains the significance of that evidence, and connects to an AP World theme such as state building, cultural transfer, economic innovation, continuity, or change. Give a 1–4 score, identify one strength, identify one historical accuracy issue if present, and provide one specific revision suggestion in student-friendly language.</code></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section funfacts" id="funfacts">
+    <div class="section-head"><span class="phase-tag">Brain Break + Memory Hooks</span><h2>Fun Facts: History Is Weird...and Useful</h2></div>
+    <div class="content"><div class="fun-purpose">These are allowed to be fun. The catch: every strange, funny, or surprising detail still connects to a real AP World theme.</div></div>
+    <div class="content">
+      <p class="lead">Use this section as a quick reset before the deeper reading. Your job is not just to say, “That’s wild.” Your job is to figure out why the detail matters historically.</p>
+      <div class="fun-grid">
+        <div class="fun-card"><div class="emoji">🍚</div><h3>Medieval Life Hack: Faster Rice = More People</h3><p>Champa rice grew quickly and could support more harvests in parts of southern China. That meant more food, more people, bigger cities, and more taxes for the state.</p><div class="why"><b>Why it matters:</b> Agriculture can change population, urban growth, and government power.</div></div>
+        <div class="fun-card"><div class="emoji">💸</div><h3>Wait...Paper Was Money?</h3><p>Imagine someone offering you a piece of paper instead of actual coins and saying, “Trust me, this has value.” Song China helped make that idea work on a large scale.</p><div class="why"><b>Why it matters:</b> Paper money shows commercialization, trust in institutions, and the growth of complex markets.</div></div>
+        <div class="fun-card"><div class="emoji">🛶</div><h3>The Grand Canal Was Basically a Medieval Delivery App</h3><p>Before trucks, trains, and highways, the Grand Canal moved grain, taxes, and goods across huge distances. If the canal failed, the government had a problem.</p><div class="why"><b>Why it matters:</b> Infrastructure helped states govern territory and move resources.</div></div>
+        <div class="fun-card"><div class="emoji">🧱</div><h3>Printing Had a Plot Twist</h3><p>Movable type existed in Song China, but it was not always the easiest choice. With thousands of Chinese characters, woodblock printing often remained more practical.</p><div class="why"><b>Why it matters:</b> Technology spreads and succeeds differently depending on language, cost, and society.</div></div>
+        <div class="fun-card"><div class="emoji">🏙️</div><h3>Song Cities Had Serious Nightlife</h3><p>Major cities had restaurants, teahouses, markets, performers, and entertainment districts. This was not a sleepy farming world; it was an energetic urban economy.</p><div class="why"><b>Why it matters:</b> Urban life is evidence of commercialization and economic specialization.</div></div>
+        <div class="fun-card"><div class="emoji">📚</div><h3>The Civil Service Exam Was the Ultimate Stress Test</h3><p>Some candidates studied for years and still failed. Passing could transform a family’s status, but the system heavily favored families who could afford education.</p><div class="why"><b>Why it matters:</b> The exam system shows both meritocracy and inequality.</div></div>
+        <div class="fun-card"><div class="emoji">✒️</div><h3>Heian Court Drama Was Basically Reputation Management</h3><p>In elite Japanese court life, poetry, handwriting, clothing colors, and manners could affect how people judged you. One awkward poem could damage your image.</p><div class="why"><b>Why it matters:</b> Culture shaped social status and elite identity.</div></div>
+        <div class="fun-card"><div class="emoji">🥷</div><h3>Samurai Were Not Just “Cool Sword Guys”</h3><p>Warrior culture developed because political power became more decentralized and military families gained influence. The armor is memorable, but the politics matter more.</p><div class="why"><b>Why it matters:</b> The rise of warriors shows changes in Japanese political organization.</div></div>
+      </div>
+      <div class="apbox"><b>Student Challenge:</b> Pick one fun fact and complete this sentence: “This is historically significant because it shows...” Then connect it to state building, economic change, cultural diffusion, social hierarchy, or technology.</div>
+    </div>
+  </section>
+
   <section class="section" id="gov">
     <div class="section-head"><span class="phase-tag">I Do: Interactive Reading</span><h2>1. State Power: Mandate, Bureaucracy, and Scholar-Officials</h2></div>
     <div class="content ebook-grid">
       <article class="reading">
+        <div class="section-visual" role="img" aria-label="Illustration of Song dynasty examination halls and scholar officials"><svg viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g1" x1="0" x2="1"><stop stop-color="#102a2b"/><stop offset="1" stop-color="#1f4e79"/></linearGradient></defs><rect width="1200" height="360" fill="url(#g1)"/><circle cx="1050" cy="70" r="42" fill="#ffd77c" opacity=".9"/><rect x="80" y="220" width="1040" height="75" fill="#3b2414" opacity=".55"/><g fill="#f4ead9"><rect x="140" y="130" width="120" height="165" rx="10"/><rect x="300" y="130" width="120" height="165" rx="10"/><rect x="460" y="130" width="120" height="165" rx="10"/><rect x="620" y="130" width="120" height="165" rx="10"/></g><g fill="#c7932b"><path d="M120 130h660l-40-55H160z"/><rect x="170" y="105" width="20" height="190"/><rect x="330" y="105" width="20" height="190"/><rect x="490" y="105" width="20" height="190"/><rect x="650" y="105" width="20" height="190"/></g><g fill="#172033"><circle cx="200" cy="184" r="19"/><rect x="178" y="205" width="44" height="55" rx="12"/><circle cx="360" cy="184" r="19"/><rect x="338" y="205" width="44" height="55" rx="12"/><circle cx="520" cy="184" r="19"/><rect x="498" y="205" width="44" height="55" rx="12"/></g><path d="M840 250c45-80 135-130 235-110" stroke="#f8d98c" stroke-width="12" fill="none" stroke-linecap="round"/><text x="820" y="105" fill="#fff" font-family="Georgia,serif" font-size="42" font-weight="700">Exams turned learning into power.</text><text x="820" y="155" fill="#f4ead9" font-family="Arial" font-size="24">Mandate • bureaucracy • scholar-officials</text></svg><div class="visual-caption"><b>Section visual:</b> Civil service exams helped the Song state turn Confucian learning into administrative power.</div></div>
         <div class="journal"><span class="label">Historical Journal</span><h3>Morning at the Examination Hall</h3><p>The sun has barely lifted over the tiled roofs when the examination compound begins to fill. Young men arrive carrying brushes, ink, food, and the hopes of entire families. Some have studied since childhood. Some have memorized Confucian passages until the words feel carved into their bones. At the gate, guards check identities and supplies. Inside, rows of tiny cells wait like silent rooms of possibility.</p><p>For a student from a wealthy family, the exam is a doorway into honor, office, and influence. For the Song state, it is something even larger: a way to turn learning into government power. If officials can be selected for their command of texts, moral language, and administrative skill, then the emperor can govern through scholar-officials rather than depending only on nobles or generals.</p><div class="journal-question"><b>Pause and think:</b> Why would an emperor prefer educated civilian officials over powerful military families?</div></div>
         <div class="notes-panel"><h3>Study Notes: How Song Government Worked</h3><div class="notes-grid"><div class="note-card"><b>Mandate of Heaven</b><br>A political and moral theory that explained why a dynasty had the right to rule. Good rule suggested Heaven's support; disasters, rebellion, corruption, and disorder could be interpreted as signs that a dynasty had lost the mandate.</div><div class="note-card"><b>Bureaucracy</b><br>A government system organized through specialized offices, departments, and trained officials. This helped the state collect taxes, manage canals, maintain order, and communicate across a large territory.</div><div class="note-card"><b>Civil Service Exams</b><br>Competitive tests based on Confucian learning and literary skill. They expanded under the Song and helped create a scholar-official class.</div><div class="note-card"><b>Merit and Inequality</b><br>The system promoted the ideal of meritocracy, but wealthy families had major advantages because they could afford books, tutors, and years of study.</div></div></div>
+        <details class="lecture-board" open>
+          <summary>Lecture Board: Song China and Bureaucratic Rule</summary>
+          <div class="lecture-inner">
+            <h3>Bulleted Presentation Notes</h3>
+            <ul>
+              <li>By 1200, Song China was one of the most sophisticated states in the world.</li>
+              <li>The emperor claimed legitimacy through the <b>Mandate of Heaven</b>, which linked good rule to moral authority.</li>
+              <li>The Song used a large <b>imperial bureaucracy</b> to collect taxes, enforce laws, manage public works, and govern distant regions.</li>
+              <li>The <b>civil service examination system</b> selected officials based on Confucian learning and writing ability.</li>
+              <li>The exam system helped create a powerful <b>scholar-official class</b>.</li>
+              <li>The system promoted the idea of merit, but wealthy families still had major advantages because they could pay for education and years of study.</li>
+              <li>Confucianism supported hierarchy, filial piety, loyalty, education, and orderly social relationships.</li>
+            </ul>
+            <div class="lecture-ap"><b>AP Connection:</b> This is a strong example of how states used administrative institutions and belief systems to maintain power.</div>
+            <div class="lecture-cue"><b>Ask students:</b> Was this system more fair because it used exams, or more unequal because access to preparation depended on wealth?</div>
+          </div>
+        </details>
+        <div class="framework-box">
+          <div class="framework-head"><span class="framework-icon">AP</span><div><b>AP Framework Spotlight</b><br><span>What College Board wants students to be able to explain</span></div></div>
+          <div class="framework-body">
+            <p><b>Learning target:</b> Explain how Chinese dynasties used systems of government to maintain rule and how those systems developed over time.</p>
+            <div class="framework-grid"><div class="framework-card"><b>Required content focus:</b> The Song Dynasty strengthened imperial rule through bureaucracy, civil service examinations, and Confucian scholar-official culture.</div><div class="framework-card"><b>Writing move:</b> Do not just define bureaucracy. Explain how it helped the state collect taxes, appoint officials, manage infrastructure, and limit the power of rival elites.</div></div>
+            <div class="term-cloud"><span>Song Dynasty</span><span>Mandate of Heaven</span><span>bureaucracy</span><span>civil service exam</span><span>scholar-officials</span><span>Confucianism</span><span>meritocracy</span></div>
+          </div>
+        </div>
         <p class="lead">Around 1200, Song China was not the largest empire in Afro-Eurasia by land, but it was one of the most administratively sophisticated societies in the world. Its strength came from combining older ideas of legitimacy with a highly developed bureaucracy.</p>
         <h3>The Mandate of Heaven</h3><p>The Mandate of Heaven gave Chinese rulers a powerful language of legitimacy. The emperor was supposed to govern morally, protect the people, and preserve harmony between Heaven, Earth, and society. This idea strengthened dynastic rule, but it also created a justification for rebellion when a dynasty appeared corrupt, weak, or unable to protect its people.</p>
         <h3>Bureaucracy and Scholar-Officials</h3><p>Song rulers relied heavily on civilian scholar-officials. These officials staffed a complex bureaucracy that handled taxation, courts, public works, military supply, granaries, and local administration. In AP terms, this is a major example of <b>state building</b>: rulers used institutions, not just armies, to govern.</p>
         <h3>The Civil Service Examination System</h3><p>The examination system rewarded mastery of Confucian texts and helped connect political power to education. It did not create full equality, but it did make scholarship a central pathway to elite status. This helped Song China produce officials who shared a common intellectual culture and a common language of moral governance.</p>
         <div class="remember-strip"><div><b>Legitimacy</b>Mandate of Heaven</div><div><b>Administration</b>Bureaucracy</div><div><b>Elite Pathway</b>Civil service exams</div></div>
         <div class="turntalk"><b>Turn and Talk:</b> Was the civil service exam system more fair or more unequal? Use one piece of evidence from the reading.</div>
+        <div class="section-fact"><b>That’s Actually Kind of Wild:</b> Some exam candidates spent days sealed inside tiny examination cells. The civil service exam was not just a test of knowledge; it was a stress test, endurance challenge, and family-status gamble all at once.</div>
         <div class="skill"><b>Skill Move: Continuity and Change</b><br>Continuity: Confucian values continued to shape politics. Change: the Song expanded the examination system and increased the influence of scholar-officials.</div>
         <div class="quiz" data-answer="B"><b>Knowledge Check 1</b><p>Which statement best explains the relationship between the civil service exam system and Song government?</p><button class="choice">A. It eliminated inequality by allowing every social class equal access to office.</button><button class="choice">B. It strengthened the bureaucracy by selecting educated officials trained in Confucian ideas.</button><button class="choice">C. It replaced Confucianism with Buddhism as the official ideology of the state.</button><button class="choice">D. It gave military leaders direct control over local government offices.</button><div class="feedback"></div></div>
       </article>
@@ -95,13 +1490,40 @@ main{max-width:1180px;margin:auto;padding:28px 18px 80px}.standards{display:grid
     <div class="section-head"><span class="phase-tag">I Do: Culture and Ideas</span><h2>2. Belief Systems: Confucianism, Daoism, Buddhism, and Neo-Confucianism</h2></div>
     <div class="content ebook-grid">
       <article class="reading">
+        <div class="section-visual" role="img" aria-label="Illustration of East Asian belief systems"><svg viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="360" fill="#fff7e4"/><circle cx="205" cy="180" r="105" fill="#1f4e79" opacity=".92"/><circle cx="600" cy="180" r="105" fill="#1e7f71" opacity=".92"/><circle cx="995" cy="180" r="105" fill="#9d2a2a" opacity=".92"/><text x="205" y="172" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="34" font-weight="700">Confucian</text><text x="205" y="210" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20">order + duty</text><text x="600" y="172" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="34" font-weight="700">Daoist</text><text x="600" y="210" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20">balance + nature</text><text x="995" y="172" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="34" font-weight="700">Buddhist</text><text x="995" y="210" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20">suffering + liberation</text><path d="M305 180h190M705 180h185" stroke="#c7932b" stroke-width="10" stroke-linecap="round"/><rect x="430" y="258" width="340" height="56" rx="28" fill="#0d1b2a"/><text x="600" y="294" text-anchor="middle" fill="#ffd77c" font-family="Arial" font-size="24" font-weight="700">Neo-Confucian synthesis</text></svg><div class="visual-caption"><b>Section visual:</b> Neo-Confucianism developed in conversation with Confucian, Buddhist, and Daoist traditions.</div></div>
         <div class="journal"><span class="label">Historical Journal</span><h3>A Conversation in a Scholar's Courtyard</h3><p>Imagine a courtyard in southern China. A student sits before his teacher with a worn copy of the classics open on the table. Nearby, incense curls upward from a small shrine. The teacher asks a deceptively simple question: What makes a person good?</p><p>The answer is not only religious. It is political. If children honor parents, subjects honor rulers, husbands and wives fulfill expected roles, and officials cultivate virtue, then the family and the state can mirror one another. But this world is not shaped by Confucianism alone. Buddhist monasteries offer paths away from suffering. Daoist ideas invite people to live in harmony with the Way. Song thinkers respond by building Neo-Confucianism, a powerful synthesis that places moral cultivation back at the center of family, society, and government.</p><div class="journal-question"><b>Pause and think:</b> How can a belief system help a government maintain order without using force?</div></div>
         <div class="notes-panel"><h3>Study Notes: Major Belief Systems</h3><div class="notes-grid"><div class="note-card"><b>Confucianism</b><br>Emphasized hierarchy, education, ritual, filial piety, and proper behavior in social relationships.</div><div class="note-card"><b>Daoism</b><br>Emphasized harmony with the Dao, natural balance, simplicity, and <i>wuwei</i>, or effortless action.</div><div class="note-card"><b>Buddhism</b><br>Originated in South Asia and spread into China. Focused on suffering, desire, disciplined practice, and liberation.</div><div class="note-card"><b>Neo-Confucianism</b><br>A Song-era revival and reworking of Confucianism that responded to Buddhist and Daoist ideas while reinforcing hierarchy, education, patriarchy, and moral self-cultivation.</div></div></div>
+        <details class="lecture-board">
+          <summary>Lecture Board: Belief Systems and Social Order</summary>
+          <div class="lecture-inner">
+            <h3>Bulleted Presentation Notes</h3>
+            <ul>
+              <li>Belief systems shaped politics, family life, gender expectations, education, and social hierarchy in East Asia.</li>
+              <li><b>Confucianism</b> emphasized hierarchy, duty, filial piety, ritual, and proper behavior.</li>
+              <li><b>Daoism</b> emphasized harmony with nature, balance, simplicity, and the Dao.</li>
+              <li><b>Buddhism</b> spread from South Asia into China and offered teachings about suffering, desire, discipline, and liberation.</li>
+              <li><b>Neo-Confucianism</b> emerged as a Song-era revival of Confucian thought influenced by Buddhist and Daoist ideas.</li>
+              <li>Neo-Confucianism reinforced social hierarchy, patriarchy, moral cultivation, education, and loyalty to authority.</li>
+              <li>Zhu Xi became one of the most important Neo-Confucian thinkers, and his interpretations shaped elite education for centuries.</li>
+            </ul>
+            <div class="lecture-ap"><b>AP Connection:</b> Belief systems were not just ideas; they helped governments and families justify order, authority, and hierarchy.</div>
+            <div class="lecture-cue"><b>Ask students:</b> Which belief system seems most useful for a ruler trying to maintain order? Which might challenge or complicate that order?</div>
+          </div>
+        </details>
+        <div class="framework-box">
+          <div class="framework-head"><span class="framework-icon">AP</span><div><b>AP Framework Spotlight</b><br><span>Belief systems are historical evidence, not just vocabulary</span></div></div>
+          <div class="framework-body">
+            <p><b>Learning target:</b> Explain how Chinese cultural traditions shaped East Asian societies and how belief systems interacted over time.</p>
+            <div class="framework-grid"><div class="framework-card"><b>Required content focus:</b> Confucianism, Buddhism, Daoism, and Neo-Confucianism influenced social hierarchy, education, gender expectations, family structure, and political legitimacy.</div><div class="framework-card"><b>Writing move:</b> Avoid saying “religion affected people.” Name the tradition and explain the specific social or political effect.</div></div>
+            <div class="term-cloud"><span>Confucianism</span><span>filial piety</span><span>patriarchy</span><span>Daoism</span><span>Buddhism</span><span>Neo-Confucianism</span><span>Zhu Xi</span><span>cultural synthesis</span></div>
+          </div>
+        </div>
         <p class="lead">East Asian societies were shaped by a shared cultural vocabulary. Confucianism, Buddhism, Daoism, writing systems, elite education, art, and political models moved across borders through trade, diplomacy, migration, conquest, and imitation.</p>
         <h3>Confucianism: Order Through Relationships</h3><p>Confucianism taught that harmony came when people fulfilled obligations within relationships: ruler and subject, parent and child, husband and wife, older sibling and younger sibling, and friend and friend. These relationships were not equal, but they were supposed to be reciprocal: superiors owed care and moral leadership; inferiors owed respect and obedience.</p>
         <div class="cards"><div class="mini"><b>Ren</b><br>Humaneness, compassion, benevolence.</div><div class="mini"><b>Li</b><br>Ritual propriety and correct behavior.</div><div class="mini"><b>Xiao</b><br>Filial piety: respect and duty toward parents and ancestors.</div></div>
         <h3>Daoism and Buddhism</h3><p>Daoism offered a vision of harmony with nature and the Dao rather than constant social striving. Buddhism offered teachings about suffering, desire, and liberation. Both traditions shaped art, literature, meditation, ritual, and everyday life. Their influence also pushed Confucian scholars to clarify what made Confucianism distinct.</p>
         <h3>Neo-Confucianism</h3><p>Neo-Confucianism became especially influential because it connected personal morality to social and political order. Thinkers such as Zhu Xi argued that study, ritual, self-discipline, and proper relationships could cultivate virtue. In practice, Neo-Confucianism reinforced social hierarchy and patriarchy while shaping education and government across East Asia.</p>
+        <div class="section-fact"><b>Fun Fact:</b> Zhu Xi became so influential that later generations treated his interpretations of the Confucian classics almost like the official study guide for becoming an educated elite.</div>
         <div class="annotation-task"><b>Annotate:</b><label><input type="checkbox"> Underline one sentence showing how Confucianism supported political order.</label><label><input type="checkbox"> Circle one example of cultural blending or synthesis.</label><label><input type="checkbox"> Star one idea that spread beyond China.</label></div>
         <div class="apbox"><b>AP Caution:</b> Do not write that Neo-Confucianism simply rejected Buddhism and Daoism. It often criticized Buddhist influence, but it also developed in conversation with Buddhist and Daoist ideas.</div>
         <div class="quiz" data-answer="C"><b>Knowledge Check 2</b><p>Which claim best describes Neo-Confucianism in Song China?</p><button class="choice">A. It ended the civil service examination system.</button><button class="choice">B. It made Daoism the official state ideology.</button><button class="choice">C. It revived Confucian ethics while responding to Buddhist and Daoist ideas.</button><button class="choice">D. It rejected education as a path to moral improvement.</button><div class="feedback"></div></div>
@@ -118,13 +1540,42 @@ main{max-width:1180px;margin:auto;padding:28px 18px 80px}.standards{display:grid
     <div class="section-head"><span class="phase-tag">I Do: Economy and Innovation</span><h2>3. The Song Economic Revolution</h2></div>
     <div class="content ebook-grid">
       <article class="reading">
+        <div class="visual-set"><div class="visual-mini"><svg viewBox="0 0 360 230" xmlns="http://www.w3.org/2000/svg"><rect width="360" height="230" fill="#eef8f5"/><rect y="155" width="360" height="75" fill="#65a867"/><path d="M20 170c50-25 100-25 150 0s100 25 170 0" stroke="#d9f4c7" stroke-width="10" fill="none"/><g stroke="#fff" stroke-width="5"><path d="M68 154c12-38 21-57 37-88"/><path d="M103 154c9-44 22-72 42-105"/><path d="M142 154c12-34 29-62 56-91"/></g><text x="22" y="44" fill="#102a2b" font-family="Georgia,serif" font-size="30" font-weight="700">Champa Rice</text><text x="22" y="74" fill="#5c667a" font-family="Arial" font-size="17">fast-ripening crop</text></svg><div class="cap"><b>Champa rice:</b> agricultural productivity supported population growth and urbanization.<div class="visual-inquiry">Visual purpose: Connect this crop to a larger cause-and-effect chain, not just to farming.</div></div></div><div class="visual-mini"><svg viewBox="0 0 360 230" xmlns="http://www.w3.org/2000/svg"><rect width="360" height="230" fill="#fff8e8"/><rect x="55" y="55" width="250" height="120" rx="12" fill="#d7b46a" stroke="#7c4a1d" stroke-width="6"/><rect x="80" y="80" width="200" height="70" rx="8" fill="#f5df9c"/><circle cx="180" cy="115" r="30" fill="#9d2a2a" opacity=".8"/><text x="180" y="122" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="24">交子</text><text x="45" y="34" fill="#102a2b" font-family="Georgia,serif" font-size="30" font-weight="700">Paper Money</text></svg><div class="cap"><b>Jiaozi:</b> paper notes helped meet the needs of a growing commercial economy.<div class="visual-inquiry">Visual purpose: Ask why expanding trade created a need for new forms of money.</div></div></div><div class="visual-mini"><svg viewBox="0 0 360 230" xmlns="http://www.w3.org/2000/svg"><rect width="360" height="230" fill="#eaf2fb"/><path d="M35 190C95 150 90 80 155 65s100 55 170 10" stroke="#1f4e79" stroke-width="24" fill="none" stroke-linecap="round"/><path d="M35 190C95 150 90 80 155 65s100 55 170 10" stroke="#8dbde8" stroke-width="12" fill="none" stroke-linecap="round"/><rect x="45" y="148" width="70" height="35" fill="#c7932b"/><path d="M45 148h70l-35-28z" fill="#7c4a1d"/><text x="26" y="40" fill="#102a2b" font-family="Georgia,serif" font-size="30" font-weight="700">Grand Canal</text></svg><div class="cap"><b>Grand Canal:</b> infrastructure moved grain, taxes, goods, and people across regions.<div class="visual-inquiry">Visual purpose: Link infrastructure to state power and regional integration.</div></div></div></div>
         <div class="journal"><span class="label">Historical Journal</span><h3>Crossing the Bridge in Kaifeng</h3><p>The bridge is packed before noon. Porters bend under sacks of grain. Shopkeepers shout prices. Boats slide through the water below, carrying rice, timber, ceramics, and silk. A family stops near a food stall. A merchant checks an account. Somewhere nearby, a printed book changes hands. Somewhere else, a government clerk records taxes that will move through the same networks as goods.</p><p>This is the Song economy in motion. It is not only farms and villages. It is canals, cities, markets, workshops, money, ships, books, tools, and people. The state depends on the economy, and the economy depends on the state. Food feeds cities. Canals move taxes. Paper money solves problems created by expanding trade. Innovation is not just invention; it is a system changing how people live.</p><div class="journal-question"><b>Pause and think:</b> What would a crowded city street reveal about agriculture, government, technology, and trade?</div></div>
         <div class="notes-panel"><h3>Study Notes: The Song Economic Revolution</h3><div class="notes-grid"><div class="note-card"><b>Champa Rice</b><br>Fast-ripening rice from Vietnam increased food production, especially in southern China, and supported population growth.</div><div class="note-card"><b>Grand Canal</b><br>Connected southern rice regions to northern political centers and helped move grain, taxes, goods, and people.</div><div class="note-card"><b>Manufacturing</b><br>Iron, steel, porcelain, textiles, and printing expanded production and trade.</div><div class="note-card"><b>Commercialization</b><br>Markets, cities, merchants, credit, and paper money became more important in daily economic life.</div></div></div>
+        <details class="lecture-board">
+          <summary>Lecture Board: The Song Economic Revolution</summary>
+          <div class="lecture-inner">
+            <h3>Bulleted Presentation Notes</h3>
+            <ul>
+              <li>Song China experienced major economic growth between 1200 and 1450.</li>
+              <li><b>Champa rice</b>, a fast-ripening rice from Vietnam, increased food production in southern China.</li>
+              <li>More food contributed to population growth, urbanization, specialization, and larger markets.</li>
+              <li>The <b>Grand Canal</b> connected southern rice-producing regions to northern political centers.</li>
+              <li>Canals helped move grain, tax revenue, goods, officials, and information across the empire.</li>
+              <li>Song manufacturing expanded in iron, steel, porcelain, textiles, and printed materials.</li>
+              <li>Printing supported education, literacy, bureaucracy, and commercial culture.</li>
+              <li><b>Paper money</b> developed because heavy copper coins were inconvenient in a large commercial economy.</li>
+              <li>Commercialization meant that markets, merchants, credit, money, cities, and long-distance trade became more important.</li>
+            </ul>
+            <div class="lecture-ap"><b>AP Connection:</b> Build the cause-and-effect chain: agricultural innovation → food surplus → population growth → urbanization → commercialization.</div>
+            <div class="lecture-cue"><b>Ask students:</b> Which development was the most important engine of Song economic growth: rice, canals, manufacturing, or paper money?</div>
+          </div>
+        </details>
+        <div class="framework-box">
+          <div class="framework-head"><span class="framework-icon">AP</span><div><b>AP Framework Spotlight</b><br><span>How innovation changes society</span></div></div>
+          <div class="framework-body">
+            <p><b>Learning target:</b> Explain how technological, agricultural, and commercial developments affected East Asia from 1200 to 1450.</p>
+            <div class="framework-grid"><div class="framework-card"><b>Required content focus:</b> Champa rice, the Grand Canal, paper money, printing, gunpowder, the compass, urbanization, and expanding markets all show that Song China was economically dynamic.</div><div class="framework-card"><b>Writing move:</b> Build cause-and-effect chains: agricultural innovation → food surplus → population growth → urbanization → commercialization.</div></div>
+            <div class="term-cloud"><span>Champa rice</span><span>Grand Canal</span><span>paper money</span><span>flying cash</span><span>woodblock printing</span><span>gunpowder</span><span>magnetic compass</span><span>commercialization</span><span>urbanization</span></div>
+          </div>
+        </div>
         <p class="lead">Song China experienced major economic growth because agricultural productivity, urbanization, manufacturing, commercialization, and transportation reinforced one another.</p>
         <h3>Agriculture: Champa Rice and Population Growth</h3><p>Fast-ripening Champa rice allowed farmers in southern China to produce more food and sometimes harvest more than once per year. More food supported population growth, and population growth encouraged urbanization and specialization. Not everyone had to farm, so more people could become artisans, merchants, boatmen, officials, soldiers, or scholars.</p>
         <h3>The Grand Canal: Infrastructure and State Power</h3><p>The Grand Canal linked productive southern regions with northern capitals and administrative centers. It moved grain, tax revenue, and goods over long distances. This made China more governable and helped integrate regional economies into a larger commercial system.</p>
         <h3>Manufacturing, Technology, and Trade</h3><p>Song China produced iron and steel on a massive scale and became famous for porcelain and textiles. Printing increased the circulation of books, which supported education and the examination system. Gunpowder weapons, improved shipbuilding, and the magnetic compass influenced warfare and maritime trade.</p>
         <h3>Paper Money and Expanding Markets</h3><p>As trade expanded, heavy metal coins became inconvenient for large transactions. Paper money developed as a practical response to the needs of a complex market economy. The rise of paper money shows that the Song economy had become more commercial, urban, and interconnected.</p>
+        <div class="section-fact"><b>Fun Fact:</b> Song cities were famous for restaurants, teahouses, entertainment districts, printed books, and commercial advertising. Urban life was much more lively than many students imagine when they hear “medieval.”</div>
         <div class="timeline"><div><b>Cause:</b> Champa rice and irrigation increased food supply.</div><div><b>Effect:</b> Population growth and urbanization expanded markets.</div><div><b>Effect:</b> Commercialization encouraged paper money, credit, and long-distance trade.</div></div>
         <div class="turntalk"><b>Turn and Talk:</b> Which mattered more to Song power: agriculture, canals, or paper money? Defend your answer with evidence.</div>
         <div class="quiz" data-answer="D"><b>Knowledge Check 3</b><p>Which development most directly helped Song China support population growth and urbanization?</p><button class="choice">A. The end of all foreign trade</button><button class="choice">B. The collapse of the examination system</button><button class="choice">C. The replacement of farming with nomadic pastoralism</button><button class="choice">D. Increased agricultural productivity, including fast-ripening rice</button><div class="feedback"></div></div>
@@ -152,7 +1603,22 @@ main{max-width:1180px;margin:auto;padding:28px 18px 80px}.standards{display:grid
   <section class="section">
     <div class="section-head"><span class="phase-tag">We Do: Source Analysis</span><h2>Reading a Song City as a Primary Source</h2></div>
     <div class="content">
+      <div class="section-visual" role="img" aria-label="Illustration of a busy Song market street"><svg viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="320" fill="#f7ead1"/><rect y="230" width="1200" height="90" fill="#80613c"/><path d="M0 248c95-35 170-33 245 0s165 35 265 0 170-33 255 0 175 35 250 0 130-22 185-5" stroke="#1f4e79" stroke-width="38" fill="none" opacity=".85"/><g fill="#9d2a2a"><rect x="70" y="130" width="110" height="90"/><rect x="360" y="110" width="130" height="110"/><rect x="720" y="125" width="120" height="95"/></g><g fill="#c7932b"><path d="M55 130h140l-70-50z"/><path d="M340 110h170l-85-55z"/><path d="M700 125h160l-80-50z"/></g><g fill="#172033"><circle cx="260" cy="210" r="16"/><rect x="248" y="226" width="24" height="42"/><circle cx="560" cy="205" r="16"/><rect x="548" y="221" width="24" height="42"/><circle cx="930" cy="210" r="16"/><rect x="918" y="226" width="24" height="42"/></g><text x="70" y="55" fill="#102a2b" font-family="Georgia,serif" font-size="38" font-weight="700">Read the city like evidence.</text><text x="70" y="90" fill="#5c667a" font-family="Arial" font-size="22">shops • bridges • boats • crowds • labor • taxes</text></svg><div class="visual-caption"><b>Source-analysis visual:</b> Students practice using visual details as evidence for claims about commercialization and urban life.</div></div>
       <div class="twocol">
+        <details class="lecture-board">
+          <summary>Lecture Board: Reading Visual Sources Like Evidence</summary>
+          <div class="lecture-inner">
+            <h3>Bulleted Presentation Notes</h3>
+            <ul>
+              <li>Images, maps, paintings, and artifacts can be used as historical evidence.</li>
+              <li>Students should describe what they notice before jumping to conclusions.</li>
+              <li>For Song China, urban scenes can reveal commercialization, labor specialization, infrastructure, social hierarchy, and state power.</li>
+              <li>Good AP writing turns visual details into evidence for a claim.</li>
+            </ul>
+            <div class="lecture-ap"><b>AP Connection:</b> Source analysis requires students to connect evidence to historical context, not just identify what is shown.</div>
+            <div class="lecture-cue"><b>Ask students:</b> What details in the visual suggest this society had complex markets and organized transportation?</div>
+          </div>
+        </details>
         <div class="sourcebox"><h3>Visual Source: Qingming Handscroll Tradition</h3><img src="https://images.metmuseum.org/CRDImages/as/original/DP205731.jpg" alt="Detail from a Qingming tradition handscroll" style="width:100%;border-radius:14px" loading="lazy" decoding="async" data-title="Detail from a Qingming tradition handscroll" data-source="https://www.metmuseum.org/art/collection/search/41428" onerror="imageFallback(this)"><p>Rather than treating an image as decoration, historians read it as evidence. Look for social hierarchy, transportation, labor, shops, animals, bridges, boats, and crowding.</p></div>
         <div>
           <div class="tabs"><button class="tab active" data-tab="observe">Observe</button><button class="tab" data-tab="infer">Infer</button><button class="tab" data-tab="connect">Connect</button></div>
@@ -169,8 +1635,34 @@ main{max-width:1180px;margin:auto;padding:28px 18px 80px}.standards{display:grid
     <div class="section-head"><span class="phase-tag">I Do + We Do</span><h2>4. Chinese Influence, Heian Japan, and the Rise of Warrior Rule</h2></div>
     <div class="content ebook-grid">
       <article class="reading">
+        <div class="section-visual" role="img" aria-label="Illustration of Heian Japan and warrior rule"><svg viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="360" fill="#f7efe6"/><circle cx="180" cy="92" r="48" fill="#c7932b" opacity=".7"/><path d="M0 265c180-60 300-60 470 0s300 55 500 0 180-52 230-35v130H0z" fill="#d8c5a7"/><g fill="#9d2a2a"><rect x="145" y="142" width="180" height="105"/><path d="M120 142h230l-115-70z"/><rect x="710" y="145" width="150" height="110"/><path d="M690 145h190l-95-72z"/></g><path d="M492 92c85 80 95 160 20 230" stroke="#0d1b2a" stroke-width="10" fill="none"/><path d="M510 92c85 80 95 160 20 230" stroke="#c7932b" stroke-width="5" fill="none"/><text x="120" y="300" fill="#102a2b" font-family="Georgia,serif" font-size="30" font-weight="700">Heian court culture</text><text x="690" y="300" fill="#102a2b" font-family="Georgia,serif" font-size="30" font-weight="700">warrior rule</text><text x="465" y="55" fill="#5c667a" font-family="Arial" font-size="22">borrowed from China, adapted in Japan</text></svg><div class="visual-caption"><b>Section visual:</b> Japan adopted Chinese cultural influences while developing distinct political and social structures.</div></div>
         <div class="journal"><span class="label">Historical Journal</span><h3>At the Heian Court</h3><p>In the capital of Heian-kyo, aristocrats move through a world of poetry, ceremony, layered robes, calligraphy, music, and careful etiquette. Chinese characters appear in official writing. Buddhist temples and Confucian ideas shape elite culture. Yet this is not simply China copied onto Japanese soil. Japanese elites borrow, adapt, and transform.</p><p>At court, a writer such as Murasaki Shikibu observes the ambitions and emotions of aristocratic life. Far from the capital, however, powerful landholding families and warriors are becoming more important. Over time, the elegance of court culture will exist alongside a very different political reality: decentralized warrior rule, samurai loyalty, and the rise of the shogunate.</p><div class="journal-question"><b>Pause and think:</b> Why do societies borrow from powerful neighbors but still change what they borrow?</div></div>
+        <details class="lecture-board">
+          <summary>Lecture Board: Japan, Cultural Borrowing, and Warrior Rule</summary>
+          <div class="lecture-inner">
+            <h3>Bulleted Presentation Notes</h3>
+            <ul>
+              <li>Japan borrowed important cultural and political ideas from China, including Buddhism, Confucian ideas, writing systems, court rituals, and models of centralized government.</li>
+              <li>Japanese elites adapted Chinese influences rather than simply copying them.</li>
+              <li>The <b>Heian period</b> was known for aristocratic court culture, poetry, ceremony, literature, and refined elite life.</li>
+              <li><b>Murasaki Shikibu</b> wrote <i>The Tale of Genji</i>, often considered one of the world’s earliest novels.</li>
+              <li>Over time, aristocratic court power weakened while regional landholding families and warriors became more important.</li>
+              <li><b>Samurai</b> served powerful lords and developed expectations of discipline, loyalty, and martial skill.</li>
+              <li>The rise of the <b>shogunate</b> reflected a shift toward decentralized warrior rule.</li>
+            </ul>
+            <div class="lecture-ap"><b>AP Connection:</b> Japan shows cultural diffusion and adaptation: Chinese influence spread, but local conditions shaped how those ideas developed.</div>
+            <div class="lecture-cue"><b>Ask students:</b> What is the difference between borrowing a cultural idea and transforming it into something new?</div>
+          </div>
+        </details>
         <div class="notes-panel"><h3>Study Notes: China’s Influence and Japanese Adaptation</h3><div class="notes-grid"><div class="note-card"><b>Cultural Diffusion</b><br>Chinese influence spread to Japan through writing, Buddhism, Confucian ideas, court models, architecture, and elite education.</div><div class="note-card"><b>Selective Borrowing</b><br>Japan adapted Chinese traditions to local needs rather than copying them completely.</div><div class="note-card"><b>Heian Period</b><br>Known for court culture, literature, poetry, refined etiquette, and aristocratic life.</div><div class="note-card"><b>Feudalism</b><br>Political power shifted toward regional warrior elites, samurai, and shoguns, creating a more decentralized order.</div></div></div>
+        <div class="framework-box">
+          <div class="framework-head"><span class="framework-icon">AP</span><div><b>AP Framework Spotlight</b><br><span>Diffusion means borrowing, adapting, and transforming</span></div></div>
+          <div class="framework-body">
+            <p><b>Learning target:</b> Explain how Chinese traditions influenced neighboring societies and how those societies adapted outside influences to local conditions.</p>
+            <div class="framework-grid"><div class="framework-card"><b>Required content focus:</b> Japan borrowed writing, Buddhism, Confucian ideas, court models, and art forms from China, but Japanese elites adapted these influences within local political and cultural traditions.</div><div class="framework-card"><b>Writing move:</b> Use comparison language: “Japan adopted ___ from China, but modified it by ___.”</div></div>
+            <div class="term-cloud"><span>cultural diffusion</span><span>selective borrowing</span><span>Heian Period</span><span>kana</span><span>Tale of Genji</span><span>Buddhism</span><span>Confucianism</span><span>samurai</span><span>shogunate</span><span>feudalism</span></div>
+          </div>
+        </div>
         <p class="lead">China influenced neighboring societies, but influence did not mean uniformity. Korea, Japan, and Vietnam adopted and adapted Chinese political, cultural, and religious traditions in different ways.</p>
         <h3>Nara and Heian Japan</h3><p>Japanese elites borrowed Chinese writing, Buddhism, Confucian ideas, city planning, court rituals, and bureaucratic models. During the Heian period, aristocratic culture flourished around the imperial court. Literature, poetry, and aesthetics became markers of elite identity.</p>
         <h3>Women and Literature</h3><p>Elite women played an important role in Heian literary culture. Murasaki Shikibu's <i>The Tale of Genji</i> is often described as one of the world's earliest novels. It reveals courtly values, gender expectations, emotional complexity, and the social world of the aristocracy.</p>
@@ -228,6 +1720,8 @@ main{max-width:1180px;margin:auto;padding:28px 18px 80px}.standards{display:grid
       </ul>
     </div>
   </section>
+
+  <div class="footer-brand"><span class="bh-logo-wrap"><img class="real-bh-logo" src="data:image/webp;base64,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" alt="BeHistorical logo"></span><div><strong>BeHistorical</strong><br><span>Interactive history resources built for inquiry, evidence, and memorable storytelling.</span></div></div>
 </main>
 <script>
 window.addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'});
@@ -260,5 +1754,32 @@ addImageSourceLinks();
 
 function toggleTeacher(){document.getElementById('teacherNotes').classList.toggle('hidden');location.hash='teacherNotes'}
 </script>
+
+<script>
+function runWritingCheck(){
+  const box=document.getElementById('feedbackDraft');
+  const out=document.getElementById('feedbackOutput');
+  if(!box||!out)return;
+  const text=(box.value||'').trim();
+  const lower=text.toLowerCase();
+  const evidence=['civil service','bureaucracy','confucian','neo-confucian','champa','grand canal','paper money','heian','samurai','shogun','mandate of heaven'];
+  const reasoning=['because','therefore','however','as a result','continuity','change','strengthened','led to','caused','supported'];
+  let found=evidence.filter(k=>lower.includes(k));
+  let reason=reasoning.filter(k=>lower.includes(k));
+  let sentences=text.split(/[.!?]+/).filter(s=>s.trim().length>5).length;
+  let notes=[];
+  if(text.length<250){notes.push('Add more development. Aim for 4–6 complete sentences with a claim, evidence, and explanation.');}
+  else{notes.push('Length looks workable for a short AP-style response.');}
+  if(found.length>=2){notes.push('You used multiple specific historical terms: '+found.slice(0,4).join(', ')+'.');}
+  else if(found.length===1){notes.push('You have one specific evidence term. Add at least one more precise example from the reading.');}
+  else{notes.push('Add specific evidence such as civil service exam, Neo-Confucianism, Champa rice, Grand Canal, paper money, Heian Japan, or samurai.');}
+  if(reason.length>=1){notes.push('You included reasoning language. Now make sure you explain why the evidence matters.');}
+  else{notes.push('Add reasoning language such as because, therefore, however, continuity, change, or as a result.');}
+  if(sentences>=4){notes.push('Sentence count fits the target range.');}
+  else{notes.push('Add another sentence that explains significance, not just what happened.');}
+  out.innerHTML='<b>Self-check feedback:</b><ul>'+notes.map(n=>'<li>'+n+'</li>').join('')+'</ul><p><b>Reminder:</b> This tool checks structure and evidence signals. Your teacher or approved AI feedback tool should still evaluate historical accuracy and quality.</p>';
+}
+</script>
+
 </body>
 </html>
