@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BeHistorical | AP World 1.1 Song China</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/behistorical.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand-mini" href="#top"><img src="assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"><span>BeHistorical</span></a>
+        <div class="nav-links">
+          <a href="#first10">First &amp; 10</a><a href="#lecture">Lecture</a><a href="#evidence">Evidence Lab</a><a href="#practice">AP Checkpoint</a>
+        </div>
+      </nav>
+    </header>
+    <section class="hero" id="top">
+      <div class="logo-frame"><img src="assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"></div>
+      <h1 class="logo-title" aria-label="BeHistorical">Be<span class="hero-h">H</span>ist<span class="globe-o" aria-label="o as globe"><span class="lat"></span></span>rical</h1>
+      <p class="subtitle">AP WORLD HISTORY</p>
+      <p class="hero-copy"><strong id="lesson-title">Topic 1.1 — Song China</strong><br><span id="lesson-subtitle">Developments in East Asia, c. 1200 to c. 1450</span></p>
+      <div class="quick-nav"><a class="btn" href="#first10">Start First &amp; 10</a><a class="btn secondary" href="#framework">Framework Anchor</a></div>
+    </section>
+    <main>
+      <section class="section" id="framework"></section>
+      <section class="section" id="first10"></section>
+      <section class="section dark-panel" id="lecture"></section>
+      <section class="section" id="evidence"></section>
+      <section class="section" id="primary-source"></section>
+      <section class="section" id="practice"></section>
+    </main>
+    <footer class="footer"><div class="footer-brand">BeHistorical</div><p>Think Like a Historian.</p></footer>
+  </div>
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog"><button class="btn" onclick="closeLightbox()">Close</button><figure><img id="lightbox-img" alt=""><figcaption id="lightbox-caption"></figcaption></figure></div>
+  <script src="assets/data/lesson-1-1-song-china.js"></script>
+  <script>
+    const L = window.BEHISTORICAL_LESSON;
+    const byId = id => document.getElementById(id);
+    const md = s => s.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    byId('lesson-title').textContent = `${L.meta.topic} — ${L.meta.title}`;
+    byId('lesson-subtitle').textContent = L.meta.subtitle;
+
+    byId('framework').innerHTML = `
+      <details open><summary>College Board Framework Anchor</summary>
+        <div class="framework">${L.framework.map(k => `<div class="kc"><span class="kc-code">${k.code}</span><br>${k.text}</div>`).join('')}</div>
+      </details>`;
+
+    byId('first10').innerHTML = `
+      <div class="section-header"><div class="eyebrow">Start Here</div><h2>${L.first10.title}</h2></div>
+      <div class="card reading">${L.first10.paragraphs.map(p => `<p>${p}</p>`).join('')}</div>
+      <div class="card"><h3>First &amp; 10 Response Questions</h3>${L.first10.questions.map((q,i)=>`<div class="question"><strong>Question ${i+1}</strong><br>${q}</div>`).join('')}</div>`;
+
+    byId('lecture').innerHTML = `
+      <div class="section-header"><div class="eyebrow">Content Delivery</div><h2>${L.lecture.title}</h2><p>${L.lecture.intro}</p></div>
+      <div class="grid">${L.lecture.segments.map(seg => `<article class="card dark-card half"><h3>${seg.title}</h3><ul class="lecture-list">${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul></article>`).join('')}
+      ${L.lecture.videos.map(v => `<article class="card half"><h3>Video Clip</h3><div class="media-card"><div class="thumb">Video Launch Card</div><p><strong>${v.title}</strong></p><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></div></article>`).join('')}</div>`;
+
+    byId('evidence').innerHTML = `
+      <div class="section-header"><div class="eyebrow">Evidence Lab</div><h2>${L.evidenceLab.title}</h2><p>${L.evidenceLab.task}</p></div>
+      <div class="grid">${L.images.map((img,i)=>`<article class="card image-card half"><img src="${img.url}" alt="${img.title}" onclick="openLightbox('${i}')"><div class="image-caption"><strong>${img.title}</strong><br>${img.caption}<br><em>${img.prompt}</em><br><a class="source-link" href="${img.url}" target="_blank" rel="noopener">Open source/image</a></div></article>`).join('')}</div>
+      ${responseBlock('evidence-response', L.evidenceLab.prompt, 'Copy Evidence Lab Response')}`;
+
+    byId('primary-source').innerHTML = `
+      <div class="section-header"><div class="eyebrow">Primary Source</div><h2>${L.primarySource.title}</h2></div>
+      <div class="grid"><article class="card two-third"><p>${L.primarySource.intro}</p><blockquote>${L.primarySource.text}</blockquote></article><aside class="card third"><h3>Discussion Questions</h3>${L.primarySource.questions.map((q,i)=>`<div class="question"><strong>${i+1}</strong><br>${q}</div>`).join('')}</aside></div>`;
+
+    byId('practice').innerHTML = `
+      <div class="section-header"><div class="eyebrow">Skill Practice</div><h2>${L.practice.title}</h2></div>
+      ${responseBlock('practice-response', L.practice.prompt, 'Copy Practice Response', true)}
+      <section class="section dark-panel" style="margin-top:28px"><div class="section-header"><div class="eyebrow">AP Checkpoint</div><h2>${L.checkpoint.title}</h2><p>${L.checkpoint.prompt}</p></div><ul>${L.checkpoint.checklist.map(c=>`<li>${c}</li>`).join('')}</ul>${responseBlock('checkpoint-response', L.checkpoint.prompt, 'Copy AP Checkpoint Response', true)}</section>`;
+
+    function responseBlock(id, prompt, buttonText, includeFeedback=false){
+      return `<div class="prompt-box"><h3>Write Your Response</h3><p>${prompt}</p><textarea class="response-area" id="${id}" placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" onclick="copyResponse('${id}')">${buttonText}</button>${includeFeedback ? `<button class="btn secondary" onclick="selfCheck('${id}')">Run Self-Check</button><a class="btn" href="${L.meta.feedbackToolUrl}" target="_blank" rel="noopener">Open Feedback Tool</a><button class="btn secondary" onclick="toggleFeedbackPrompt('${id}-feedback')">Show Feedback Prompt</button>` : ''}</div><div id="${id}-result" class="check-result"></div><div class="feedback-panel" id="${id}-feedback"><strong>Copy/paste prompt for AI feedback:</strong><p>Evaluate my AP World History response for quality and accuracy. Tell me whether I made a clear claim, used specific historical evidence, explained cause/effect, and avoided inaccurate statements. Give me one strength and two specific revision suggestions. My response is:</p></div></div>`;
+    }
+    function copyResponse(id){const t=byId(id);t.select();navigator.clipboard.writeText(t.value || '').then(()=>{byId(id+'-result').textContent='Response copied.'}).catch(()=>{byId(id+'-result').textContent='Copy failed. Select your text and copy manually.'})}
+    function selfCheck(id){const text=(byId(id).value||'').toLowerCase();const terms=L.practice.terms.filter(term=>text.includes(term.toLowerCase()));const reasoning=['because','therefore','as a result','led to','caused','helped','strengthened'].filter(w=>text.includes(w));byId(id+'-result').textContent=`Self-check: ${text.split(/\s+/).filter(Boolean).length} words; evidence terms found: ${terms.length ? terms.join(', ') : 'none yet'}; reasoning language: ${reasoning.length ? reasoning.join(', ') : 'none yet'}.`;}
+    function toggleFeedbackPrompt(id){byId(id).classList.toggle('show')}
+    function openLightbox(i){const img=L.images[i];byId('lightbox-img').src=img.url;byId('lightbox-img').alt=img.title;byId('lightbox-caption').textContent=`${img.title} — ${img.caption}`;byId('lightbox').classList.add('show')}
+    function closeLightbox(){byId('lightbox').classList.remove('show')}
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+  </script>
+</body>
+</html>
