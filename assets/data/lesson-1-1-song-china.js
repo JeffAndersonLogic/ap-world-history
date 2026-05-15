@@ -71,16 +71,16 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    title: "Map: Song China and Its Neighbors",
-    intro: "Before the lecture begins, locate Song China in East Asia. This BeHistorical instructional map focuses on the geography students need for Topic 1.1: Southern Song territory around c. 1200, the earlier Northern Song core, neighboring states, major capitals, the Grand Canal, and the Champa rice connection.",
-    url: "../assets/images/song-china-instructional-map.svg",
-    sourceUrl: "https://afe.easia.columbia.edu/songdynasty-module/cities-new.html",
-    caption: "BeHistorical instructional map of Song China around c. 1200. The map shows Southern Song territory after the Song retreat south, the earlier Northern Song core, Jin and Western Xia, Kaifeng, Lin'an/Hangzhou, the Grand Canal, and the Champa rice connection from Vietnam/Champa.",
+    title: "Map: Northern Song China and Neighboring States",
+    intro: "Before the First & 10 reading, locate Song China in East Asia. This source-based map shows the Song Dynasty at its greatest territorial extent in 1111, along with neighboring states such as Liao and Western Xia. It is a clearer reference map for understanding where Song power was centered before the later Southern Song retreat.",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/China_-_Song_Dynasty-en.svg",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:China_-_Song_Dynasty-en.svg",
+    caption: "Map of China during the Northern Song Dynasty, showing the Song state at its greatest extent in 1111 and neighboring states including Liao and Western Xia. Source: Wikimedia Commons, based on Tan Qixiang's Historical Atlas of China.",
     notes: [
-      "By c. 1200, the **Southern Song** court ruled from **Lin'an/Hangzhou**, after losing northern territory to the **Jin**.",
-      "**Kaifeng** remained important as the earlier Northern Song capital, which helps explain continuity and change across the dynasty.",
-      "The **Grand Canal** connected key economic regions and helped move grain, taxes, goods, and people.",
-      "The **Champa rice connection** shows that Song prosperity was tied to agricultural diffusion from Southeast Asia as well as internal Chinese systems."
+      "This map shows the **Northern Song** world before the dynasty lost northern territory and later ruled from **Lin'an/Hangzhou** as the Southern Song.",
+      "The presence of **Liao** and **Western Xia** helps explain why the Song state needed organized government, revenue, and defense systems.",
+      "Song power was strongest in China proper, but the dynasty operated in a wider East Asian world of neighboring states, frontiers, diplomacy, and conflict.",
+      "Use this map as a geographic anchor before studying the systems that made Song China wealthy and administratively sophisticated."
     ],
     prompt: "How does this map help explain why Song China needed strong bureaucracy, infrastructure, and economic systems to maintain power?"
   },
