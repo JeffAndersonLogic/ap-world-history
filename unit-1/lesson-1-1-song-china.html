@@ -37,6 +37,23 @@
     <footer class="footer"><div class="footer-brand">BeHistorical</div><p>Think Like a Historian.</p></footer>
   </div>
   <div class="lightbox" id="lightbox" aria-modal="true" role="dialog"><button class="btn" onclick="closeLightbox()">Close</button><figure><img id="lightbox-img" alt=""><figcaption id="lightbox-caption"></figcaption></figure></div>
+  <div class="lecture-modal" id="lecture-modal" aria-modal="true" role="dialog" aria-labelledby="lecture-modal-title">
+    <div class="lecture-modal-panel">
+      <button class="btn lecture-close" onclick="closeLectureModal()">Close</button>
+      <div class="lecture-modal-grid">
+        <div class="lecture-modal-content">
+          <div class="eyebrow">Lecture Focus</div>
+          <h2 id="lecture-modal-title"></h2>
+          <ul class="lecture-list enlarged" id="lecture-modal-bullets"></ul>
+          <p class="lecture-modal-note">Use this enlarged card for projection while discussing the topic.</p>
+        </div>
+        <figure class="lecture-modal-image-wrap">
+          <img id="lecture-modal-img" alt="">
+          <figcaption id="lecture-modal-caption"></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
   <script src="../assets/data/lesson-1-1-song-china.js"></script>
   <script>
     const L = window.BEHISTORICAL_LESSON;
@@ -57,8 +74,8 @@
 
     byId('lecture').innerHTML = `
       <div class="section-header"><div class="eyebrow">Content Delivery</div><h2>${L.lecture.title}</h2><p>${L.lecture.intro}</p></div>
-      <div class="grid">${L.lecture.segments.map(seg => `<article class="card dark-card half"><h3>${seg.title}</h3><ul class="lecture-list">${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul></article>`).join('')}
-      ${L.lecture.videos.map(v => `<article class="card half"><h3>Video Clip</h3><div class="media-card"><div class="thumb">Video Launch Card</div><p><strong>${v.title}</strong></p><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></div></article>`).join('')}</div>`;
+      <div class="lecture-card-grid">${L.lecture.segments.map((seg,i) => `<article class="card dark-card lecture-topic-card" role="button" tabindex="0" onclick="openLectureModal(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLectureModal(${i})}"><div class="lecture-card-topline"><span>Lecture Card</span><span>Open</span></div><h3>${seg.title}</h3><ul class="lecture-list">${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul><div class="open-hint">Click to enlarge for projection</div></article>`).join('')}</div>
+      ${L.lecture.videos.map(v => `<article class="card video-card"><h3>Video Clip</h3><div class="media-card"><div class="thumb">Video Launch Card</div><p><strong>${v.title}</strong></p><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></div></article>`).join('')}`;
 
     byId('evidence').innerHTML = `
       <div class="section-header"><div class="eyebrow">Evidence Lab</div><h2>${L.evidenceLab.title}</h2><p>${L.evidenceLab.task}</p></div>
@@ -82,7 +99,17 @@
     function toggleFeedbackPrompt(id){byId(id).classList.toggle('show')}
     function openLightbox(i){const img=L.images[i];byId('lightbox-img').src=img.url;byId('lightbox-img').alt=img.title;byId('lightbox-caption').textContent=`${img.title} — ${img.caption}`;byId('lightbox').classList.add('show')}
     function closeLightbox(){byId('lightbox').classList.remove('show')}
-    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+    function openLectureModal(i){
+      const seg=L.lecture.segments[i];
+      byId('lecture-modal-title').textContent=seg.title;
+      byId('lecture-modal-bullets').innerHTML=seg.bullets.map(b=>`<li>${md(b)}</li>`).join('');
+      byId('lecture-modal-img').src=seg.image.url;
+      byId('lecture-modal-img').alt=seg.image.title;
+      byId('lecture-modal-caption').innerHTML=`<strong>${seg.image.title}</strong><br>${seg.image.caption}<br><a href="${seg.image.sourceUrl || seg.image.url}" target="_blank" rel="noopener">Open image source</a>`;
+      byId('lecture-modal').classList.add('show');
+    }
+    function closeLectureModal(){byId('lecture-modal').classList.remove('show')}
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLightbox();closeLectureModal()}});
   </script>
 </body>
 </html>

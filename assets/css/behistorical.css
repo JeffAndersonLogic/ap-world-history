@@ -231,3 +231,147 @@ blockquote{margin:0; padding:20px; background:#f6efe3; border-left:6px solid var
 .dark-panel .card:not(.dark-card) .source-link{color:var(--oxidized-brown)}
 
 @media (max-width:820px){.nav{align-items:flex-start; flex-direction:column; padding:14px 0}.nav-links{justify-content:flex-start}.hero{margin-top:18px; padding:32px 18px}.logo-frame{width:108px; height:108px}.half,.third,.two-third{grid-column:1/-1}.section-header{padding:20px}.dark-panel{padding:18px}.image-card img{height:210px}.subtitle{letter-spacing:.22em}.btn{width:100%}.quick-nav .btn{width:auto}}
+
+
+/* =========================================================
+   LOCKED LECTURE CARD MODAL FORMAT
+   Lecture cards stay concise on the page. Images appear only
+   in the enlarged pop-up for projection.
+   ========================================================= */
+.lecture-card-grid{
+  display:grid;
+  grid-template-columns:repeat(5, minmax(160px, 1fr));
+  gap:16px;
+  margin-bottom:18px;
+}
+.lecture-topic-card{
+  cursor:pointer;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  min-height:100%;
+  margin-bottom:0;
+}
+.lecture-topic-card:hover,
+.lecture-topic-card:focus{
+  transform:translateY(-4px);
+  border-color:rgba(201,164,106,.65);
+  box-shadow:0 26px 60px rgba(0,0,0,.25);
+  outline:none;
+}
+.lecture-card-topline{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:12px;
+  font-family:"Montserrat", Inter, Arial, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.68rem;
+  font-weight:900;
+  color:var(--muted-sandstone);
+}
+.open-hint{
+  margin-top:14px;
+  padding-top:12px;
+  border-top:1px solid rgba(210,180,140,.22);
+  font-family:"Montserrat", Inter, Arial, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:.7rem;
+  font-weight:900;
+  color:var(--antique-gold);
+}
+.video-card{margin-top:18px;}
+.lecture-modal{
+  position:fixed;
+  inset:0;
+  z-index:140;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:26px;
+  background:rgba(26,28,29,.92);
+  backdrop-filter:blur(10px);
+}
+.lecture-modal.show{display:flex;}
+.lecture-modal-panel{
+  width:min(1180px,96vw);
+  max-height:92vh;
+  overflow:auto;
+  border-radius:24px;
+  background:linear-gradient(135deg, var(--blackened-steel), var(--charcoal-steel));
+  border:1px solid rgba(201,164,106,.35);
+  box-shadow:0 30px 90px rgba(0,0,0,.45);
+  color:var(--warm-paper);
+  padding:28px;
+  position:relative;
+}
+.lecture-close{position:absolute; top:18px; right:18px; z-index:2;}
+.lecture-modal-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
+  gap:28px;
+  align-items:stretch;
+  padding-top:20px;
+}
+.lecture-modal-content h2{
+  margin:.25rem 0 1.1rem;
+  font-family:"Cinzel", "Trajan Pro", "Times New Roman", Georgia, serif;
+  font-size:clamp(2rem, 5vw, 4.25rem);
+  line-height:1.05;
+  color:var(--antique-gold);
+}
+.lecture-list.enlarged{
+  font-size:clamp(1.1rem, 2.3vw, 1.7rem);
+  line-height:1.55;
+  padding-left:1.35em;
+}
+.lecture-list.enlarged li{margin:.6rem 0; color:var(--warm-paper);}
+.lecture-list.enlarged strong{color:var(--muted-sandstone);}
+.lecture-modal-note{
+  margin-top:18px;
+  color:var(--muted-sandstone);
+  font-family:"Montserrat", Inter, Arial, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-weight:900;
+  font-size:.8rem;
+}
+.lecture-modal-image-wrap{
+  margin:0;
+  border-radius:22px;
+  overflow:hidden;
+  background:#0f1112;
+  border:1px solid rgba(201,164,106,.28);
+  min-height:420px;
+  display:flex;
+  flex-direction:column;
+}
+.lecture-modal-image-wrap img{
+  width:100%;
+  min-height:360px;
+  flex:1;
+  object-fit:cover;
+  background:var(--blackened-steel);
+}
+.lecture-modal-image-wrap figcaption{
+  padding:16px 18px;
+  color:var(--warm-paper);
+  font-size:.92rem;
+  line-height:1.45;
+  background:rgba(0,0,0,.3);
+}
+.lecture-modal-image-wrap figcaption strong{color:var(--antique-gold);}
+.lecture-modal-image-wrap figcaption a{color:var(--muted-sandstone); font-weight:700;}
+@media (max-width:1100px){
+  .lecture-card-grid{grid-template-columns:repeat(2, minmax(0,1fr));}
+  .lecture-modal-grid{grid-template-columns:1fr;}
+}
+@media (max-width:680px){
+  .lecture-card-grid{grid-template-columns:1fr;}
+  .lecture-modal{padding:12px;}
+  .lecture-modal-panel{padding:18px;}
+  .lecture-close{position:static; margin-bottom:12px; width:auto;}
+  .lecture-modal-grid{padding-top:0;}
+  .lecture-modal-image-wrap{min-height:260px;}
+  .lecture-modal-image-wrap img{min-height:240px;}
+}
