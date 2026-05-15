@@ -33,3 +33,7 @@ The lesson page is inside `unit-1/`, so it uses paths like:
 ```text
 Add fixed modular Lesson 1.1 package with stylesheet
 ```
+
+
+## Locked Lecture Card Format
+Lecture cards should remain side by side in a two-column grid on the lesson page. Do not place phrases such as "open," "click to enlarge," or "lecture card" on the cards. The cards themselves act as the trigger. When clicked, each card opens a larger modal with the enlarged bullets and one corresponding historical image. Lecture images should appear only in the modal, not on the standard lecture cards.

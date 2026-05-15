@@ -375,3 +375,37 @@ blockquote{margin:0; padding:20px; background:#f6efe3; border-left:6px solid var
   .lecture-modal-image-wrap{min-height:260px;}
   .lecture-modal-image-wrap img{min-height:240px;}
 }
+
+
+/* =========================================================
+   OFFICIAL LECTURE CARD TRIGGER FORMAT - LOCKED
+   - Lecture cards remain in a clean two-column grid on the page.
+   - No instructional trigger text appears on the cards.
+   - Images appear only inside the enlarged modal window.
+   ========================================================= */
+.lecture-card-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+  gap:18px !important;
+  margin-bottom:18px;
+}
+.lecture-topic-card{
+  cursor:pointer;
+  min-height:100%;
+  margin-bottom:0;
+  padding:22px;
+}
+.lecture-topic-card h3{
+  margin-top:0;
+  margin-bottom:12px;
+}
+.lecture-card-topline,
+.open-hint{
+  display:none !important;
+}
+.lecture-modal-note{
+  display:none !important;
+}
+@media (max-width:680px){
+  .lecture-card-grid{grid-template-columns:1fr !important;}
+}

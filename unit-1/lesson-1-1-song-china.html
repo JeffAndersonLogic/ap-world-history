@@ -45,7 +45,7 @@
           <div class="eyebrow">Lecture Focus</div>
           <h2 id="lecture-modal-title"></h2>
           <ul class="lecture-list enlarged" id="lecture-modal-bullets"></ul>
-          <p class="lecture-modal-note">Use this enlarged card for projection while discussing the topic.</p>
+          
         </div>
         <figure class="lecture-modal-image-wrap">
           <img id="lecture-modal-img" alt="">
@@ -74,7 +74,7 @@
 
     byId('lecture').innerHTML = `
       <div class="section-header"><div class="eyebrow">Content Delivery</div><h2>${L.lecture.title}</h2><p>${L.lecture.intro}</p></div>
-      <div class="lecture-card-grid">${L.lecture.segments.map((seg,i) => `<article class="card dark-card lecture-topic-card" role="button" tabindex="0" onclick="openLectureModal(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLectureModal(${i})}"><div class="lecture-card-topline"><span>Lecture Card</span><span>Open</span></div><h3>${seg.title}</h3><ul class="lecture-list">${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul><div class="open-hint">Click to enlarge for projection</div></article>`).join('')}</div>
+      <div class="lecture-card-grid">${L.lecture.segments.map((seg,i) => `<article class="card dark-card lecture-topic-card" role="button" tabindex="0" aria-label="${seg.title}" onclick="openLectureModal(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLectureModal(${i})}"><h3>${seg.title}</h3><ul class="lecture-list">${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul></article>`).join('')}</div>
       ${L.lecture.videos.map(v => `<article class="card video-card"><h3>Video Clip</h3><div class="media-card"><div class="thumb">Video Launch Card</div><p><strong>${v.title}</strong></p><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></div></article>`).join('')}`;
 
     byId('evidence').innerHTML = `
