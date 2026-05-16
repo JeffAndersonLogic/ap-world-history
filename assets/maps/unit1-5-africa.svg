@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">State Building in Africa, c. 1200 to c. 1450</title>
+<desc id="desc">Instructional locator map showing West Africa, the Sahara, the Swahili Coast, and Great Zimbabwe.</desc>
+<rect width="1200" height="720" fill="#f5f0e7"/>
+<rect x="45" y="45" width="1110" height="630" rx="18" fill="#fffdf7" stroke="#5a5f5c" stroke-width="3"/>
+<text x="600" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#1a1c1d">State Building in Africa, c. 1200–1450</text>
+<text x="600" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5a5f5c">Mali, trans-Saharan trade, Swahili city-states, and Great Zimbabwe</text>
+<path d="M480 150 C630 130 760 210 820 350 C900 535 760 655 575 635 C410 615 310 500 325 355 C335 250 390 180 480 150 Z" fill="#d2b48c" stroke="#8c5a2b" stroke-width="3"/>
+<path d="M350 260 C470 220 590 225 760 270" fill="none" stroke="#6b3e1f" stroke-width="7" stroke-dasharray="14 11" opacity=".75"/>
+<path d="M805 310 C845 405 845 500 800 600" fill="none" stroke="#3e4447" stroke-width="7" stroke-dasharray="10 12" opacity=".75"/>
+<circle cx="430" cy="350" r="12" fill="#1a1c1d"/><text x="430" y="327" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Mali</text>
+<circle cx="442" cy="382" r="9" fill="#1a1c1d"/><text x="442" y="407" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700">Timbuktu</text>
+<circle cx="815" cy="435" r="11" fill="#1a1c1d"/><text x="858" y="440" font-family="Arial" font-size="22" font-weight="700">Swahili Coast</text>
+<circle cx="675" cy="560" r="11" fill="#1a1c1d"/><text x="675" y="587" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Great Zimbabwe</text>
+<text x="365" y="245" font-family="Arial" font-size="22" font-weight="700" fill="#6b3e1f">Sahara</text>
+<text x="775" y="380" font-family="Arial" font-size="20" fill="#1a1c1d">Indian Ocean trade</text>
+<text x="330" y="465" font-family="Arial" font-size="20" fill="#1a1c1d">gold + salt</text>
+<g transform="translate(84 594)"><rect width="505" height="48" rx="8" fill="#1a1c1d"/><text x="18" y="31" font-family="Arial" font-size="18" fill="#f5f0e7">Dashed routes = trans-Saharan and Indian Ocean exchange</text></g>
+</svg>
