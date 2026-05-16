@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Dar al-Islam Across Afro-Eurasia, c. 1200 to c. 1450</title>
+<desc id="desc">Instructional locator map showing the connected Islamic world across North Africa, Southwest Asia, Central Asia, South Asia, and Indian Ocean trade routes.</desc>
+<rect width="1200" height="720" fill="#f5f0e7"/>
+<rect x="45" y="45" width="1110" height="630" rx="18" fill="#fffdf7" stroke="#5a5f5c" stroke-width="3"/>
+<text x="600" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#1a1c1d">Dar al-Islam, c. 1200–1450</text>
+<text x="600" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5a5f5c">Connected Islamic states, trade routes, scholarship, merchants, missionaries, and Sufi networks</text>
+<path d="M80 260 C210 210 320 215 410 250 C490 280 565 285 650 255 C750 220 835 225 930 265 C1045 315 1105 390 1130 470 L1130 560 L75 560 Z" fill="#d2b48c" opacity="0.85" stroke="#8c5a2b" stroke-width="2"/>
+<path d="M110 360 C215 330 320 345 420 380 C515 415 590 420 690 385 C810 345 925 360 1055 425" fill="none" stroke="#6b3e1f" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+<path d="M120 455 C275 430 370 455 490 500 C615 545 750 535 895 500 C1000 475 1080 485 1120 520" fill="none" stroke="#3e4447" stroke-width="5" stroke-dasharray="14 12" opacity="0.65"/>
+<circle cx="255" cy="330" r="11" fill="#1a1c1d"/><text x="255" y="310" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#1a1c1d">Cairo</text>
+<circle cx="515" cy="350" r="11" fill="#1a1c1d"/><text x="515" y="330" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#1a1c1d">Baghdad</text>
+<circle cx="690" cy="300" r="11" fill="#1a1c1d"/><text x="690" y="280" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#1a1c1d">Persia / Central Asia</text>
+<circle cx="855" cy="445" r="11" fill="#1a1c1d"/><text x="855" y="425" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#1a1c1d">Delhi</text>
+<text x="185" y="475" font-family="Arial" font-size="20" font-weight="700" fill="#6b3e1f">North Africa</text>
+<text x="465" y="455" font-family="Arial" font-size="20" font-weight="700" fill="#6b3e1f">Southwest Asia</text>
+<text x="900" y="535" font-family="Arial" font-size="20" font-weight="700" fill="#6b3e1f">Indian Ocean routes</text>
+<g transform="translate(84 594)"><rect width="420" height="48" rx="8" fill="#1a1c1d"/><text x="18" y="31" font-family="Arial" font-size="18" fill="#f5f0e7">Solid line = land routes · Dashed line = maritime routes</text></g>
+</svg>
