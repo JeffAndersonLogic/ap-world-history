@@ -9,15 +9,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/behistorical.css" />
   <style>
-    /* BeHistorical globe O enhancement: same footprint, richer globe detail */
+    /* BeHistorical globe O enhancement: same footprint, cleaner meridian detail */
     .logo-title .globe-o{
       display:inline-block;
       position:relative;
       vertical-align:.005em;
       width:.63em;
       height:.63em;
-      margin:0 .01em 0 .035em;
-      transform:translateX(.035em);
+      margin:0 .01em 0 .035em !important;
+      transform:translateX(.035em) !important;
       border:.075em solid currentColor;
       border-radius:50%;
       overflow:hidden;
@@ -35,8 +35,8 @@
     .logo-title .globe-o .mer-1{width:28%;}
     .logo-title .globe-o .mer-2{width:54%; border-left-width:.025em; border-right-width:.025em; opacity:.72;}
     .logo-title .globe-o .mer-3{width:78%; border-left-width:.02em; border-right-width:.02em; opacity:.55;}
-    .logo-title .globe-o .mer-4{width:88%; border-left-width:.018em; border-right-width:.018em; border-color:rgba(255,253,247,.46); opacity:.52;}
-    .logo-title .globe-o .mer-5{width:96%; border-left-width:.016em; border-right-width:.016em; border-color:rgba(255,253,247,.36); opacity:.42;}
+    .logo-title .globe-o .mer-4{width:41%; border-left-width:.016em; border-right-width:.016em; border-color:rgba(255,253,247,.42) !important; opacity:.44 !important;}
+    .logo-title .globe-o .mer-5{width:66%; border-left-width:.014em; border-right-width:.014em; border-color:rgba(255,253,247,.36) !important; opacity:.38 !important;}
     .logo-title .globe-o .prime{height:106%; border-left:.055em solid rgba(26,28,29,.78); width:0;}
     .logo-title .globe-o .shine{width:42%; height:24%; background:rgba(255,255,255,.42); border-radius:50%; left:32%; top:27%; transform:translate(-50%,-50%) rotate(-22deg); filter:blur(.01em);}
     .checkpoint-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin:18px 0;}
@@ -58,7 +58,7 @@
 
     <section class="hero" id="top">
       <div class="logo-frame"><img src="../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"></div>
-      <h1 class="logo-title" aria-label="BeHistorical">Be<span class="hero-h">H</span>ist<span class="globe-o" aria-label="o as globe"><span class="shine"></span><span class="lat lat-2"></span><span class="lat lat-1"></span><span class="lat lat-3"></span><span class="lat"></span><span class="meridian mer-5"></span><span class="meridian mer-4"></span><span class="meridian mer-3"></span><span class="meridian mer-2"></span><span class="meridian mer-1"></span><span class="prime"></span></span>rical</h1>
+      <h1 class="logo-title" aria-label="BeHistorical">Be<span class="hero-h">H</span>ist<span class="globe-o" aria-label="o as globe"><span class="shine"></span><span class="lat lat-2"></span><span class="lat lat-1"></span><span class="lat lat-3"></span><span class="lat"></span><span class="meridian mer-3"></span><span class="meridian mer-5"></span><span class="meridian mer-2"></span><span class="meridian mer-4"></span><span class="meridian mer-1"></span><span class="prime"></span></span>rical</h1>
       <p class="subtitle">AP WORLD HISTORY</p>
       <p class="hero-copy"><strong id="lesson-title">Topic 1.1 — Song China</strong><br><span id="lesson-subtitle">Developments in East Asia, c. 1200 to c. 1450</span></p>
       <div class="quick-nav"><a class="btn" href="#targets">Learning Targets</a><a class="btn secondary" href="#map">Start with the Map</a><a class="btn secondary" href="#first10">First &amp; 10</a></div>
