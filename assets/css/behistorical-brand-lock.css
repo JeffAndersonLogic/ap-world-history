@@ -1,8 +1,11 @@
 /* Official BeHistorical logo/title lock
    Applies to all BeHistorical pages that include this stylesheet.
    Locked globe O standard: same size, 3D fill/highlight, black grid lines,
-   no light grid lines, centered between the t and r. */
-.logo-title .globe-o{
+   three longitude meridians at different ellipse widths,
+   emphasized equator and prime meridian, no light grid lines,
+   centered between the t and r. */
+.logo-title .globe-o,
+body .logo-title .globe-o{
   display:inline-block !important;
   position:relative !important;
   vertical-align:-.022em !important;
@@ -23,11 +26,14 @@
   box-shadow:inset -.08em -.08em .16em rgba(0,0,0,.35), inset .05em .05em .1em rgba(255,255,255,.35) !important;
 }
 .logo-title .globe-o::before,
-.logo-title .globe-o::after{
+.logo-title .globe-o::after,
+body .logo-title .globe-o::before,
+body .logo-title .globe-o::after{
   content:none !important;
   display:none !important;
 }
-.logo-title .globe-o span{
+.logo-title .globe-o span,
+body .logo-title .globe-o span{
   position:absolute !important;
   left:50% !important;
   top:50% !important;
@@ -35,66 +41,61 @@
   pointer-events:none !important;
 }
 .logo-title .globe-o .lat,
-.logo-title .globe-o .lat-1,
-.logo-title .globe-o .lat-2,
-.logo-title .globe-o .lat-3{
+body .logo-title .globe-o .lat{
   display:block !important;
-  border-color:rgba(26,28,29,.58) !important;
-  background:transparent !important;
-}
-.logo-title .globe-o .lat{
   width:96% !important;
-  height:.045em !important;
-  background:rgba(26,28,29,.72) !important;
+  height:.055em !important;
+  background:rgba(26,28,29,.78) !important;
   border:0 !important;
   border-radius:999px !important;
 }
-.logo-title .globe-o .lat-1{
-  width:84% !important;
-  height:34% !important;
-  border-top:.032em solid rgba(26,28,29,.50) !important;
-  border-bottom:.032em solid rgba(26,28,29,.50) !important;
-  border-left:0 !important;
-  border-right:0 !important;
-  border-radius:50% !important;
-}
+.logo-title .globe-o .lat-1,
 .logo-title .globe-o .lat-2,
-.logo-title .globe-o .lat-3{
+.logo-title .globe-o .lat-3,
+body .logo-title .globe-o .lat-1,
+body .logo-title .globe-o .lat-2,
+body .logo-title .globe-o .lat-3{
   display:none !important;
 }
-.logo-title .globe-o .meridian{
+.logo-title .globe-o .meridian,
+body .logo-title .globe-o .meridian{
   display:block !important;
   height:105% !important;
   border-radius:50% !important;
   background:transparent !important;
 }
-.logo-title .globe-o .mer-1{
+.logo-title .globe-o .mer-1,
+body .logo-title .globe-o .mer-1{
   width:28% !important;
-  border-left:.032em solid rgba(26,28,29,.58) !important;
-  border-right:.032em solid rgba(26,28,29,.58) !important;
+  border-left:.032em solid rgba(26,28,29,.62) !important;
+  border-right:.032em solid rgba(26,28,29,.62) !important;
 }
-.logo-title .globe-o .mer-2{
+.logo-title .globe-o .mer-2,
+body .logo-title .globe-o .mer-2{
   width:54% !important;
-  border-left:.024em solid rgba(26,28,29,.48) !important;
-  border-right:.024em solid rgba(26,28,29,.48) !important;
+  border-left:.025em solid rgba(26,28,29,.50) !important;
+  border-right:.025em solid rgba(26,28,29,.50) !important;
 }
-.logo-title .globe-o .mer-3{
+.logo-title .globe-o .mer-3,
+body .logo-title .globe-o .mer-3{
   width:78% !important;
-  border-left:.019em solid rgba(26,28,29,.38) !important;
-  border-right:.019em solid rgba(26,28,29,.38) !important;
+  border-left:.02em solid rgba(26,28,29,.40) !important;
+  border-right:.02em solid rgba(26,28,29,.40) !important;
 }
-.logo-title .globe-o .prime{
+.logo-title .globe-o .prime,
+body .logo-title .globe-o .prime{
   display:block !important;
   height:106% !important;
   width:.055em !important;
-  background:rgba(26,28,29,.78) !important;
+  background:rgba(26,28,29,.82) !important;
   border:0 !important;
   border-radius:999px !important;
   left:50% !important;
   top:50% !important;
   transform:translate(-50%,-50%) !important;
 }
-.logo-title .globe-o .shine{
+.logo-title .globe-o .shine,
+body .logo-title .globe-o .shine{
   display:block !important;
   width:42% !important;
   height:24% !important;
