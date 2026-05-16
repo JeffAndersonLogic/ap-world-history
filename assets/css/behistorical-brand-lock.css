@@ -1,7 +1,7 @@
 /* Official BeHistorical logo/title lock
    Applies to BeHistorical pages that include this stylesheet.
-   Globe O standard: same size, 3D fill/highlight, exactly three black
-   meridian lines plus one black equator line. No other grid lines. */
+   Globe O standard: preserve the current circle size, border, 3D fill,
+   and highlight, with only a minimal simple black grid. */
 .logo-title .globe-o,
 body .logo-title .globe-o{
   display:inline-block !important;
@@ -36,24 +36,30 @@ body .logo-title .globe-o span{
   pointer-events:none !important;
   box-sizing:border-box !important;
 }
+/* Hide every old grid line first. */
+.logo-title .globe-o .lat,
 .logo-title .globe-o .lat-1,
 .logo-title .globe-o .lat-2,
 .logo-title .globe-o .lat-3,
+.logo-title .globe-o .meridian,
 .logo-title .globe-o .prime,
+body .logo-title .globe-o .lat,
 body .logo-title .globe-o .lat-1,
 body .logo-title .globe-o .lat-2,
 body .logo-title .globe-o .lat-3,
+body .logo-title .globe-o .meridian,
 body .logo-title .globe-o .prime{
   display:none !important;
 }
+/* Minimal simple grid: one equator, one center meridian, two very light side meridians. */
 .logo-title .globe-o .lat,
 body .logo-title .globe-o .lat{
   display:block !important;
   left:50% !important;
   top:50% !important;
-  width:94% !important;
-  height:.055em !important;
-  background:rgba(26,28,29,.84) !important;
+  width:86% !important;
+  height:.026em !important;
+  background:rgba(21,23,24,.62) !important;
   border:0 !important;
   border-radius:999px !important;
   transform:translate(-50%,-50%) !important;
@@ -62,32 +68,20 @@ body .logo-title .globe-o .lat{
 body .logo-title .globe-o .meridian{
   display:block !important;
   top:50% !important;
+  height:82% !important;
   width:0 !important;
   background:transparent !important;
   border:0 !important;
+  border-left:.024em solid rgba(21,23,24,.52) !important;
   border-radius:999px !important;
-}
-.logo-title .globe-o .mer-1,
-body .logo-title .globe-o .mer-1{
-  left:50% !important;
-  height:106% !important;
-  border-left:.055em solid rgba(26,28,29,.84) !important;
   transform:translate(-50%,-50%) !important;
 }
+.logo-title .globe-o .mer-1,
+body .logo-title .globe-o .mer-1{left:50% !important; height:88% !important; border-left-width:.028em !important; opacity:.82 !important;}
 .logo-title .globe-o .mer-2,
-body .logo-title .globe-o .mer-2{
-  left:35% !important;
-  height:88% !important;
-  border-left:.032em solid rgba(26,28,29,.62) !important;
-  transform:translate(-50%,-50%) rotate(-7deg) !important;
-}
+body .logo-title .globe-o .mer-2{left:37% !important; opacity:.54 !important;}
 .logo-title .globe-o .mer-3,
-body .logo-title .globe-o .mer-3{
-  left:65% !important;
-  height:88% !important;
-  border-left:.032em solid rgba(26,28,29,.62) !important;
-  transform:translate(-50%,-50%) rotate(7deg) !important;
-}
+body .logo-title .globe-o .mer-3{left:63% !important; opacity:.54 !important;}
 .logo-title .globe-o .shine,
 body .logo-title .globe-o .shine{
   display:block !important;
