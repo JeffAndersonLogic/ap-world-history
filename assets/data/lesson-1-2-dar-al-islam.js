@@ -72,9 +72,9 @@ window.BEHISTORICAL_LESSON = {
   map: {
     title: "Map: Dar al-Islam Across Afro-Eurasia",
     intro: "Use this map as a geographic anchor. Dar al-Islam was not one empire; it was a broad connected Islamic world stretching across parts of Africa, Southwest Asia, Central Asia, South Asia, and the Mediterranean world.",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Muslim%20expansion%20until%20750.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Muslim_expansion_until_750.png",
-    caption: "Map showing early Islamic expansion. For Topic 1.2, use it as a starting point to understand the wide geographic foundations of Dar al-Islam before later post-Abbasid states developed.",
+    url: "../assets/maps/unit1-2-dar-al-islam.svg",
+    sourceUrl: "../assets/maps/unit1-2-dar-al-islam.svg",
+    caption: "Instructional BeHistorical locator map showing Dar al-Islam across Afro-Eurasia, with major cities and land and maritime routes.",
     notes: [
       "Dar al-Islam stretched across major **trade routes** linking Africa, Southwest Asia, Central Asia, South Asia, and the Mediterranean.",
       "By 1200, the Abbasid Caliphate had fragmented, but **Islamic cultural and commercial networks** remained powerful.",
