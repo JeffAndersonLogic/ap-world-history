@@ -2,6 +2,37 @@ const L = window.BEHISTORICAL_LESSON;
 const byId = id => document.getElementById(id);
 const md = s => String(s || '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 
+const sourcedMapOverrides = {
+  'Topic 1.3': {
+    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map-of-southeast-asia%201400%20CE-es.svg',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map-of-southeast-asia_1400_CE-es.svg',
+    caption: 'Open-source Wikimedia Commons map of mainland Southeast Asia around 1400 CE, showing Champa, Đại Việt, and the Khmer Empire. Use with the lesson notes to connect South and Southeast Asian states to wider Indian Ocean exchange.'
+  },
+  'Topic 1.4': {
+    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Aztec%20and%20Inca%20Empires.svg',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Aztec_and_Inca_Empires.svg',
+    caption: 'Open-source Wikimedia Commons map showing the Aztec/Mexica and Inca Empires in the Americas.'
+  },
+  'Topic 1.5': {
+    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MALI%20empire%20map.PNG',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:MALI_empire_map.PNG',
+    caption: 'Open-source Wikimedia Commons map of the Mali Empire, useful for locating West African power, gold regions, and trans-Saharan connections. Use with the lesson notes for Swahili and Great Zimbabwe comparisons.'
+  },
+  'Topic 1.6': {
+    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Europe%20in%201323.png',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Europe_in_1323.png',
+    caption: 'Open-source Wikimedia Commons map of Europe in 1323, showing the political fragmentation of medieval Europe.'
+  },
+  'Topic 1.7': {
+    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:BlankMap-World.svg',
+    caption: 'Open-source Wikimedia Commons world map used as a neutral reference for Unit 1 comparison across regions.'
+  }
+};
+if (L && L.meta && sourcedMapOverrides[L.meta.topic]) {
+  L.map = { ...L.map, ...sourcedMapOverrides[L.meta.topic] };
+}
+
 function draftBlock(id, prompt, responseType){
   return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button></div><div id="${id}-result" class="check-result"></div></div>`;
 }
