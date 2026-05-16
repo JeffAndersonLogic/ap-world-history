@@ -1,8 +1,8 @@
 /* Official BeHistorical logo/title lock
    Applies to all BeHistorical pages that include this stylesheet.
    Locked globe O standard: same size, 3D fill/highlight,
-   exactly three black longitude meridians and one black equator line,
-   no extra light or secondary grid lines, centered between the t and r. */
+   exactly three black meridian lines and one black equator line.
+   No additional latitude, longitude, or light grid lines. */
 .logo-title .globe-o,
 body .logo-title .globe-o{
   display:inline-block !important;
@@ -34,60 +34,61 @@ body .logo-title .globe-o::after{
 .logo-title .globe-o span,
 body .logo-title .globe-o span{
   position:absolute !important;
-  left:50% !important;
-  top:50% !important;
-  transform:translate(-50%,-50%) !important;
   pointer-events:none !important;
 }
-/* Remove every old or secondary line first. */
 .logo-title .globe-o .lat-1,
 .logo-title .globe-o .lat-2,
 .logo-title .globe-o .lat-3,
+.logo-title .globe-o .prime,
 body .logo-title .globe-o .lat-1,
 body .logo-title .globe-o .lat-2,
-body .logo-title .globe-o .lat-3{
+body .logo-title .globe-o .lat-3,
+body .logo-title .globe-o .prime{
   display:none !important;
 }
 /* One black equator line only. */
 .logo-title .globe-o .lat,
 body .logo-title .globe-o .lat{
   display:block !important;
+  left:50% !important;
+  top:50% !important;
   width:96% !important;
   height:.055em !important;
   background:rgba(26,28,29,.82) !important;
   border:0 !important;
   border-radius:999px !important;
+  transform:translate(-50%,-50%) !important;
 }
-/* Three black longitude meridians at different ellipse widths. */
+/* Exactly three black meridian lines: center, left, right. */
 .logo-title .globe-o .meridian,
 body .logo-title .globe-o .meridian{
   display:block !important;
-  height:105% !important;
-  border-radius:50% !important;
+  top:50% !important;
+  width:0 !important;
   background:transparent !important;
+  border:0 !important;
+  border-radius:999px !important;
 }
 .logo-title .globe-o .mer-1,
 body .logo-title .globe-o .mer-1{
-  width:28% !important;
-  border-left:.034em solid rgba(26,28,29,.64) !important;
-  border-right:.034em solid rgba(26,28,29,.64) !important;
+  left:50% !important;
+  height:106% !important;
+  border-left:.055em solid rgba(26,28,29,.82) !important;
+  transform:translate(-50%,-50%) !important;
 }
 .logo-title .globe-o .mer-2,
 body .logo-title .globe-o .mer-2{
-  width:54% !important;
-  border-left:.027em solid rgba(26,28,29,.54) !important;
-  border-right:.027em solid rgba(26,28,29,.54) !important;
+  left:34% !important;
+  height:88% !important;
+  border-left:.032em solid rgba(26,28,29,.62) !important;
+  transform:translate(-50%,-50%) rotate(-8deg) !important;
 }
 .logo-title .globe-o .mer-3,
 body .logo-title .globe-o .mer-3{
-  width:78% !important;
-  border-left:.022em solid rgba(26,28,29,.44) !important;
-  border-right:.022em solid rgba(26,28,29,.44) !important;
-}
-/* No separate prime-meridian element; the center meridian is mer-1. */
-.logo-title .globe-o .prime,
-body .logo-title .globe-o .prime{
-  display:none !important;
+  left:66% !important;
+  height:88% !important;
+  border-left:.032em solid rgba(26,28,29,.62) !important;
+  transform:translate(-50%,-50%) rotate(8deg) !important;
 }
 .logo-title .globe-o .shine,
 body .logo-title .globe-o .shine{
