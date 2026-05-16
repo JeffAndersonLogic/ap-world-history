@@ -4,63 +4,54 @@ const md = s => String(s || '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
 
 const sourcedMapOverrides = {
   'Topic 1.3': {
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map-of-southeast-asia%201400%20CE-es.svg',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Map-of-southeast-asia_1400_CE-es.svg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map-of-southeast-asia_1400_CE-es.svg',
-    caption: 'Open-source Wikimedia Commons map of mainland Southeast Asia around 1400 CE, showing Champa, Đại Việt, and the Khmer Empire. Use with the lesson notes to connect South and Southeast Asian states to wider Indian Ocean exchange.'
+    fallbackUrl: '../assets/maps/unit1-3-south-southeast-asia.svg',
+    caption: 'Open-source Wikimedia Commons map of mainland Southeast Asia around 1400 CE, showing Champa, Đại Việt, and the Khmer Empire. A second sourced South Asia map appears below this section.'
   },
   'Topic 1.4': {
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Aztec%20and%20Inca%20Empires.svg',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/Aztec_and_Inca_Empires.svg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Aztec_and_Inca_Empires.svg',
+    fallbackUrl: '../assets/maps/unit1-4-americas.svg',
     caption: 'Open-source Wikimedia Commons map showing the Aztec/Mexica and Inca Empires in the Americas.'
   },
   'Topic 1.5': {
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MALI%20empire%20map.PNG',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:MALI_empire_map.PNG',
-    caption: 'Open-source Wikimedia Commons map of the Mali Empire, useful for locating West African power, gold regions, and trans-Saharan connections. Use with the lesson notes for Swahili and Great Zimbabwe comparisons.'
+    url: 'https://upload.wikimedia.org/wikipedia/commons/4/47/Map_of_the_Mali_Empire.png',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_the_Mali_Empire.png',
+    fallbackUrl: '../assets/maps/unit1-5-africa.svg',
+    caption: 'Open-source Wikimedia Commons map of the Mali Empire, useful for locating West African power, gold regions, and trans-Saharan connections. Use with lesson notes for Swahili and Great Zimbabwe comparisons.'
   },
   'Topic 1.6': {
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Europe%20in%201323.png',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/7/71/Europe_in_1323.png',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Europe_in_1323.png',
+    fallbackUrl: '../assets/maps/unit1-6-europe.svg',
     caption: 'Open-source Wikimedia Commons map of Europe in 1323, showing the political fragmentation of medieval Europe.'
   },
   'Topic 1.7': {
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/BlankMap-World.svg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:BlankMap-World.svg',
+    fallbackUrl: '../assets/maps/unit1-7-comparison.svg',
     caption: 'Open-source Wikimedia Commons world map used as a neutral reference for Unit 1 comparison across regions.'
   }
 };
-if (L && L.meta && sourcedMapOverrides[L.meta.topic]) {
-  L.map = { ...L.map, ...sourcedMapOverrides[L.meta.topic] };
-}
+if (L && L.meta && sourcedMapOverrides[L.meta.topic]) L.map = { ...L.map, ...sourcedMapOverrides[L.meta.topic] };
 
-function draftBlock(id, prompt, responseType){
-  return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button></div><div id="${id}-result" class="check-result"></div></div>`;
-}
-
-function responseBlock(id, prompt, responseType, terms=[]){
-  return `<div class="prompt-box"><h3>Submit Your Checkpoint</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" data-terms="${terms.join('|')}" placeholder="Type your checkpoint response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button><button class="btn" type="button" onclick="sendToGoogleForm('${id}')">Send to Response Form</button><button class="btn secondary" type="button" onclick="selfCheck('${id}')">Run Self-Check</button><a class="btn secondary" href="${L.meta.feedbackToolUrl}" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="${id}-result" class="check-result"></div></div>`;
-}
-
-function renderCheckpoint(cp, id){
-  return `<div class="section-header"><div class="eyebrow">AP Checkpoint</div><h2>${cp.title}</h2><p>${cp.subtitle}</p></div><div class="checkpoint-grid"><article class="checkpoint-focus"><h4>Focus Terms</h4><p>${cp.terms.map(t=>`<strong>${t}</strong>`).join(', ')}</p></article><article class="checkpoint-focus"><h4>What this checks</h4><ul>${cp.focus.map(f=>`<li>${f}</li>`).join('')}</ul></article></div>${responseBlock(id, cp.prompt, cp.responseType, cp.terms)}`;
-}
-
+function draftBlock(id, prompt, responseType){return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button></div><div id="${id}-result" class="check-result"></div></div>`;}
+function responseBlock(id,prompt,responseType,terms=[]){return `<div class="prompt-box"><h3>Submit Your Checkpoint</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" data-terms="${terms.join('|')}" placeholder="Type your checkpoint response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button><button class="btn" type="button" onclick="sendToGoogleForm('${id}')">Send to Response Form</button><button class="btn secondary" type="button" onclick="selfCheck('${id}')">Run Self-Check</button><a class="btn secondary" href="${L.meta.feedbackToolUrl}" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="${id}-result" class="check-result"></div></div>`;}
+function renderCheckpoint(cp,id){return `<div class="section-header"><div class="eyebrow">AP Checkpoint</div><h2>${cp.title}</h2><p>${cp.subtitle}</p></div><div class="checkpoint-grid"><article class="checkpoint-focus"><h4>Focus Terms</h4><p>${cp.terms.map(t=>`<strong>${t}</strong>`).join(', ')}</p></article><article class="checkpoint-focus"><h4>What this checks</h4><ul>${cp.focus.map(f=>`<li>${f}</li>`).join('')}</ul></article></div>${responseBlock(id,cp.prompt,cp.responseType,cp.terms)}`;}
+function mapImgHtml(map){const fallback = map.fallbackUrl ? ` onerror="this.onerror=null;this.src='${map.fallbackUrl}';this.classList.add('map-fallback');"` : '';return `<img src="${map.url}" alt="${map.title}" onclick="openMapLightbox()"${fallback}>`;}
 function renderLesson(){
-  byId('lesson-title').textContent = `${L.meta.topic} — ${L.meta.title}`;
-  byId('lesson-subtitle').textContent = L.meta.subtitle;
-  byId('targets').innerHTML = `<div class="section-header"><div class="eyebrow">Learning Focus</div><h2>Learning Targets &amp; Success Criteria</h2><p>Use these to track what you should understand and be able to explain by the end of the topic.</p></div><div class="target-success-grid"><article class="card target-card"><h3>Learning Targets</h3>${L.learningTargets.map((t,i)=>`<div class="target-item"><span class="target-number">${i+1}</span><p>${t.target}</p><span class="target-kc">${t.kc}</span></div>`).join('')}</article><article class="card success-card"><h3>Success Criteria</h3>${L.successCriteria.map((c,i)=>`<div class="target-item"><span class="target-number">${i+1}</span><p>${c.criteria}</p><span class="target-kc">${c.kc}</span></div>`).join('')}</article></div>`;
-  byId('framework').innerHTML = `<details open><summary>College Board Framework Anchor</summary><div class="framework">${L.framework.map(k=>`<div class="kc"><span class="kc-code">${k.code}</span><br>${k.text}</div>`).join('')}</div></details>`;
-  byId('map').innerHTML = `<div class="section-header"><div class="eyebrow">Geography Check</div><h2>${L.map.title}</h2><p>${L.map.intro}</p></div><article class="card map-card"><div class="map-grid"><figure class="map-figure"><img src="${L.map.url}" alt="${L.map.title}" onclick="openMapLightbox()"><figcaption><strong>${L.map.caption}</strong><br><a class="source-link" href="${L.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a></figcaption></figure><div class="map-notes"><h3>Why this map matters</h3><ul>${L.map.notes.map(n=>`<li>${md(n)}</li>`).join('')}</ul><div class="question"><strong>Map Question</strong><br>${L.map.prompt}</div>${draftBlock('map-check-response', L.map.prompt, 'Map Check')}</div></div></article>`;
-  byId('first10').innerHTML = `<div class="section-header"><div class="eyebrow">Start Here</div><h2>${L.first10.title}</h2></div><div class="card reading">${L.first10.paragraphs.map(p=>`<p>${p}</p>`).join('')}</div><div class="card"><h3>First &amp; 10 Response Questions</h3>${L.first10.questions.map((q,i)=>`<div class="question"><strong>Question ${i+1}</strong><br>${q}</div>`).join('')}</div>${draftBlock('first10-response', L.first10.questions.join(' '), 'First and 10')}`;
-  byId('lecture').innerHTML = `<div class="section-header"><div class="eyebrow">Content Delivery</div><h2>${L.lecture.title}</h2><p>${L.lecture.intro}</p></div><div class="lecture-card-grid">${L.lecture.segments.map((seg,i)=>`<article class="card dark-card lecture-topic-card" role="button" tabindex="0" aria-label="${seg.title}" onclick="openLectureModal(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLectureModal(${i})}"><h3>${seg.title}</h3><ul class="lecture-list">${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul></article>`).join('')}</div>`;
-  byId('checkpoint-one').innerHTML = renderCheckpoint(L.checkpointOne, 'checkpoint-one-response');
-  byId('evidence').innerHTML = `<div class="section-header"><div class="eyebrow">Evidence Lab</div><h2>${L.evidenceLab.title}</h2><p>${L.evidenceLab.task}</p></div><div class="grid">${L.images.map((img,i)=>`<article class="card image-card half"><img src="${img.url}" alt="${img.title}" onclick="openLightbox('${i}')"><div class="image-caption"><strong>${img.title}</strong><br>${img.caption}<br><em>${img.prompt}</em><br><a class="source-link" href="${img.url}" target="_blank" rel="noopener">Open source/image</a></div></article>`).join('')}</div>${draftBlock('evidence-response', L.evidenceLab.prompt, 'Evidence Lab')}`;
-  byId('primary-source').innerHTML = `<div class="section-header"><div class="eyebrow">Primary Source</div><h2>${L.primarySource.title}</h2></div><div class="grid"><article class="card two-third"><p>${L.primarySource.intro}</p><blockquote>${L.primarySource.text}</blockquote></article><aside class="card third"><h3>Discussion Questions</h3>${L.primarySource.questions.map((q,i)=>`<div class="question"><strong>${i+1}</strong><br>${q}</div>`).join('')}</aside></div>${draftBlock('primary-source-response', L.primarySource.questions.join(' '), 'Primary Source')}`;
-  byId('checkpoint-two').innerHTML = renderCheckpoint(L.checkpointTwo, 'checkpoint-two-response');
-  loadAllDrafts();
-}
-
-const responseFormConfig = {formBaseUrl:"https://docs.google.com/forms/d/e/1FAIpQLSfBMy2v9tjXnA9aWZLwBjMdl-snJc2RWljKUxgRwUNxYQPq_g/viewform",entries:{studentName:"entry.1203454783",classPeriod:"entry.1732954465",responseType:"entry.1335443862",studentResponse:"entry.1590650308",revisionNotes:"entry.1271515630",confidenceLevel:"entry.1366844489"}};
+ byId('lesson-title').textContent=`${L.meta.topic} — ${L.meta.title}`;byId('lesson-subtitle').textContent=L.meta.subtitle;
+ byId('targets').innerHTML=`<div class="section-header"><div class="eyebrow">Learning Focus</div><h2>Learning Targets &amp; Success Criteria</h2><p>Use these to track what you should understand and be able to explain by the end of the topic.</p></div><div class="target-success-grid"><article class="card target-card"><h3>Learning Targets</h3>${L.learningTargets.map((t,i)=>`<div class="target-item"><span class="target-number">${i+1}</span><p>${t.target}</p><span class="target-kc">${t.kc}</span></div>`).join('')}</article><article class="card success-card"><h3>Success Criteria</h3>${L.successCriteria.map((c,i)=>`<div class="target-item"><span class="target-number">${i+1}</span><p>${c.criteria}</p><span class="target-kc">${c.kc}</span></div>`).join('')}</article></div>`;
+ byId('framework').innerHTML=`<details open><summary>College Board Framework Anchor</summary><div class="framework">${L.framework.map(k=>`<div class="kc"><span class="kc-code">${k.code}</span><br>${k.text}</div>`).join('')}</div></details>`;
+ byId('map').innerHTML=`<div class="section-header"><div class="eyebrow">Geography Check</div><h2>${L.map.title}</h2><p>${L.map.intro}</p></div><article class="card map-card"><div class="map-grid"><figure class="map-figure">${mapImgHtml(L.map)}<figcaption><strong>${L.map.caption}</strong><br><a class="source-link" href="${L.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a></figcaption></figure><div class="map-notes"><h3>Why this map matters</h3><ul>${L.map.notes.map(n=>`<li>${md(n)}</li>`).join('')}</ul><div class="question"><strong>Map Question</strong><br>${L.map.prompt}</div>${draftBlock('map-check-response',L.map.prompt,'Map Check')}</div></div></article>`;
+ byId('first10').innerHTML=`<div class="section-header"><div class="eyebrow">Start Here</div><h2>${L.first10.title}</h2></div><div class="card reading">${L.first10.paragraphs.map(p=>`<p>${p}</p>`).join('')}</div><div class="card"><h3>First &amp; 10 Response Questions</h3>${L.first10.questions.map((q,i)=>`<div class="question"><strong>Question ${i+1}</strong><br>${q}</div>`).join('')}</div>${draftBlock('first10-response',L.first10.questions.join(' '),'First and 10')}`;
+ byId('lecture').innerHTML=`<div class="section-header"><div class="eyebrow">Content Delivery</div><h2>${L.lecture.title}</h2><p>${L.lecture.intro}</p></div><div class="lecture-card-grid">${L.lecture.segments.map((seg,i)=>`<article class="card dark-card lecture-topic-card" role="button" tabindex="0" aria-label="${seg.title}" onclick="openLectureModal(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLectureModal(${i})}"><h3>${seg.title}</h3><ul class="lecture-list">${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul></article>`).join('')}</div>`;
+ byId('checkpoint-one').innerHTML=renderCheckpoint(L.checkpointOne,'checkpoint-one-response');
+ byId('evidence').innerHTML=`<div class="section-header"><div class="eyebrow">Evidence Lab</div><h2>${L.evidenceLab.title}</h2><p>${L.evidenceLab.task}</p></div><div class="grid">${L.images.map((img,i)=>`<article class="card image-card half"><img src="${img.url}" alt="${img.title}" onclick="openLightbox('${i}')"><div class="image-caption"><strong>${img.title}</strong><br>${img.caption}<br><em>${img.prompt}</em><br><a class="source-link" href="${img.url}" target="_blank" rel="noopener">Open source/image</a></div></article>`).join('')}</div>${draftBlock('evidence-response',L.evidenceLab.prompt,'Evidence Lab')}`;
+ byId('primary-source').innerHTML=`<div class="section-header"><div class="eyebrow">Primary Source</div><h2>${L.primarySource.title}</h2></div><div class="grid"><article class="card two-third"><p>${L.primarySource.intro}</p><blockquote>${L.primarySource.text}</blockquote></article><aside class="card third"><h3>Discussion Questions</h3>${L.primarySource.questions.map((q,i)=>`<div class="question"><strong>${i+1}</strong><br>${q}</div>`).join('')}</aside></div>${draftBlock('primary-source-response',L.primarySource.questions.join(' '),'Primary Source')}`;
+ byId('checkpoint-two').innerHTML=renderCheckpoint(L.checkpointTwo,'checkpoint-two-response');loadAllDrafts();}
+const responseFormConfig={formBaseUrl:"https://docs.google.com/forms/d/e/1FAIpQLSfBMy2v9tjXnA9aWZLwBjMdl-snJc2RWljKUxgRwUNxYQPq_g/viewform",entries:{studentName:"entry.1203454783",classPeriod:"entry.1732954465",responseType:"entry.1335443862",studentResponse:"entry.1590650308",revisionNotes:"entry.1271515630",confidenceLevel:"entry.1366844489"}};
 function saveDraft(id){const t=byId(id);if(!t)return;localStorage.setItem(`behistorical-draft-${id}`,t.value||'');byId(id+'-result').textContent='Draft saved on this device.'}
 function loadDraft(id){const t=byId(id);if(!t)return;const saved=localStorage.getItem(`behistorical-draft-${id}`);if(saved)t.value=saved}
 function loadAllDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>loadDraft(t.id))}
@@ -73,5 +64,4 @@ function openMapLightbox(){const img=L.map;byId('lightbox-img').src=img.url;byId
 function closeLightbox(){byId('lightbox').classList.remove('show')}
 function openLectureModal(i){const seg=L.lecture.segments[i];byId('lecture-modal-title').textContent=seg.title;byId('lecture-modal-bullets').innerHTML=seg.bullets.map(b=>`<li>${md(b)}</li>`).join('');byId('lecture-modal-img').src=seg.image.url;byId('lecture-modal-img').alt=seg.image.title;byId('lecture-modal-caption').innerHTML=`<strong>${seg.image.title}</strong><br>${seg.image.caption}<br><a href="${seg.image.sourceUrl||seg.image.url}" target="_blank" rel="noopener">Open image source</a>`;byId('lecture-modal').classList.add('show')}
 function closeLectureModal(){byId('lecture-modal').classList.remove('show')}
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLightbox();closeLectureModal()}});
-renderLesson();
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLightbox();closeLectureModal()}});renderLesson();
