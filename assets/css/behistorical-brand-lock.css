@@ -1,9 +1,15 @@
-/* Official BeHistorical logo/title lock
-   Applies to BeHistorical pages that include this stylesheet.
-   Globe O standard based on the approved reference image:
-   current circle and bronze/gold color scheme, thick black outer ring,
-   one thick black equator, one thick black center meridian,
-   and two simple curved black side meridians. */
+/* =========================================================
+   BEHISTORICAL OFFICIAL GLOBE O LOCK
+   DO NOT redefine .logo-title .globe-o anywhere else.
+
+   Approved reference pattern:
+   - Preserve current circle size and bronze/gold color scheme
+   - Thick black outer ring
+   - One thick horizontal equator
+   - One thick vertical center meridian
+   - Two simple curved side meridians
+   - No extra grid lines, no light grid lines, no span-based lines
+   ========================================================= */
 .logo-title .globe-o,
 body .logo-title .globe-o{
   display:inline-block !important;
@@ -30,7 +36,6 @@ body .logo-title .globe-o{
     inset .05em .05em .10em rgba(255,255,255,.34) !important;
 }
 
-/* Two simple curved side meridians, matching the reference pattern. */
 .logo-title .globe-o::before,
 body .logo-title .globe-o::before{
   content:"" !important;
@@ -55,7 +60,6 @@ body .logo-title .globe-o::after{
   display:none !important;
 }
 
-/* Hide old span-based grid pieces so the pattern is controlled in one place. */
 .logo-title .globe-o span,
 .logo-title .globe-o .shine,
 .logo-title .globe-o .lat,
