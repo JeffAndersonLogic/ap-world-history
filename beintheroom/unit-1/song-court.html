@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeInTheRoom | Advising the Song Court</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/behistorical.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <style>
+    .role-shell{max-width:1180px;margin:0 auto;padding:24px}.role-hero{background:linear-gradient(180deg,rgba(26,28,29,.92),rgba(43,47,49,.92)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Along_the_River_During_the_Qingming_Festival_%28detail_of_original%29.jpg') center/cover;border-radius:28px;padding:42px 28px;color:var(--warm-paper);box-shadow:var(--soft-shadow);border:1px solid rgba(201,164,106,.35)}.role-hero h1{font-family:"Cinzel",Georgia,serif;color:var(--antique-gold);font-size:clamp(2.2rem,6vw,5rem);line-height:1.02;margin:10px 0}.role-hero p{max-width:850px;font-size:1.04rem;line-height:1.65}.role-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin:24px 0}.role-card{grid-column:span 6;background:var(--clean-paper);border:1px solid var(--paper-line);border-radius:20px;padding:22px;box-shadow:var(--soft-shadow)}.role-card.full{grid-column:1/-1}.role-card.third{grid-column:span 4}.role-card h2,.role-card h3{font-family:"Cinzel",Georgia,serif;color:var(--blackened-steel);margin-top:0}.decision-card{cursor:pointer;transition:.18s ease;border-top:6px solid var(--aged-iron)}.decision-card:hover,.decision-card.selected{transform:translateY(-3px);border-top-color:var(--antique-gold);box-shadow:0 20px 54px rgba(0,0,0,.18)}.tag{display:inline-flex;border-radius:999px;background:#f1e6d3;color:var(--oxidized-brown);padding:5px 9px;font-family:"Montserrat",Arial,sans-serif;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin:4px 5px 4px 0}.coach-box{background:#f6efe3;border-left:6px solid var(--burnished-bronze);border-radius:16px;padding:18px;margin:12px 0}.response-area{min-height:170px}.selection-status{font-family:"Montserrat",Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--oxidized-brown);font-size:.78rem}.canvas-box{background:linear-gradient(180deg,var(--blackened-steel),var(--charcoal-steel));color:var(--warm-paper);border-radius:20px;padding:22px;border:1px solid rgba(201,164,106,.35)}.canvas-box h3{color:var(--antique-gold)}@media(max-width:850px){.role-card,.role-card.third{grid-column:1/-1}.role-shell{padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="role-shell">
+    <nav class="topbar"><div class="nav"><a class="brand-mini" href="../../index.html"><img src="../../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"><span>BeHistorical</span></a><div class="nav-links"><a href="../index.html">BeInTheRoom Hub</a><a href="../../unit-1/lesson-1-1-song-china.html">Back to 1.1</a></div></div></nav>
+    <header class="role-hero">
+      <div class="eyebrow">BeInTheRoom · Unit 1 · Topic 1.1</div>
+      <h1>Advising the Song Court</h1>
+      <p>The Song dynasty is wealthy, urban, and highly commercialized. Its scholar-official government is admired, its cities are crowded with merchants and artisans, and its farms feed one of the largest populations in the world. But prosperity creates pressure. The emperor needs advice: where should the state place its energy if Song China is to remain stable, legitimate, and powerful?</p>
+      <div><a class="btn" href="#roles">Choose a Role</a><a class="btn secondary" href="#reflection">Final Reflection</a></div>
+    </header>
+
+    <main>
+      <section class="role-grid">
+        <article class="role-card full"><h2>Historical Situation</h2><p>You are entering a policy debate inside the Song court. The central question is not simply what would make China powerful. The harder question is what different people in Song society would consider wise, moral, profitable, or dangerous.</p><p>Your task is to choose a historical role, recommend a policy, defend your reasoning, respond to coaching questions, and then step out of character to write an AP-aligned reflection.</p></article>
+      </section>
+
+      <section class="role-grid" id="roles">
+        <article class="role-card full"><h2>1. Choose Your Historical Perspective</h2><p>Select one role. You are not pretending to be yourself in the past. You are reasoning from inside a historical position shaped by power, belief, labor, wealth, and social expectations.</p><div id="role-options"></div><div class="selection-status" id="role-status">No role selected yet.</div></article>
+      </section>
+
+      <section class="role-grid" id="dilemma">
+        <article class="role-card full"><h2>2. Central Dilemma</h2><p>The emperor asks: <strong>What should the Song state prioritize to strengthen the dynasty?</strong></p><p>Each option has benefits and consequences. There is no simple correct answer. Your recommendation must fit your role and use historical evidence.</p></article>
+        <article class="role-card third decision-card" onclick="selectDecision('bureaucracy')"><h3>Expand Scholar-Official Government</h3><p>Invest more deeply in civil service exams, Confucian education, and bureaucracy.</p></article>
+        <article class="role-card third decision-card" onclick="selectDecision('commerce')"><h3>Support Trade and Commerce</h3><p>Protect merchants, expand markets, support paper money, and strengthen canals.</p></article>
+        <article class="role-card third decision-card" onclick="selectDecision('agriculture')"><h3>Prioritize Agriculture and Stability</h3><p>Protect farmers, expand rice production, maintain irrigation, and reduce disorder.</p></article>
+        <article class="role-card full"><div class="selection-status" id="decision-status">No policy selected yet.</div></article>
+      </section>
+
+      <section class="role-grid">
+        <article class="role-card full"><h2>3. Defend Your Recommendation</h2><p>Write from your selected role. Explain what you advise the emperor to do and why your role would see that choice as reasonable.</p><textarea class="response-area" id="decision-response" placeholder="From the perspective of my role, I advise the Song emperor to..."></textarea><div class="tool-row"><button class="btn" onclick="saveDraft('decision-response')">Save Draft</button><button class="btn secondary" onclick="generateCoachPrompts()">Generate AI Coach Questions</button></div><div class="check-result" id="decision-response-result"></div></article>
+        <article class="role-card full"><h2>4. AI Historical Coach</h2><p>Use these prompts with your AI feedback tool or as self-coaching questions. The goal is to challenge your reasoning, not simply praise your answer.</p><div id="coach-output" class="coach-box">Select a role and decision, then generate coaching questions.</div></article>
+      </section>
+
+      <section class="role-grid" id="reflection">
+        <article class="role-card full"><h2>5. Step Out of the Room: AP Reflection</h2><p>Now leave the role and write as a historian. Explain what this debate reveals about Song China.</p><div class="coach-box"><strong>AP Reflection Prompt</strong><br>Explain how the role you chose reflects broader political, social, economic, or cultural structures in Song China. Use at least two specific historical details from the lesson.</div><textarea class="response-area" id="reflection-response" placeholder="This roleplay reveals that Song China..."></textarea><div class="tool-row"><button class="btn" onclick="saveDraft('reflection-response')">Save Draft</button><button class="btn secondary" onclick="copyResponse('reflection-response')">Copy Reflection</button><button class="btn secondary" onclick="selfCheckReflection()">Run Self-Check</button></div><div class="check-result" id="reflection-response-result"></div></article>
+        <article class="role-card full canvas-box"><h3>Canvas Submission</h3><p>Submit the final AP Reflection in Canvas. The roleplay is the learning process; the reflection is the assessment artifact.</p><p><strong>Suggested Canvas title:</strong> Topic 1.1 BeInTheRoom Reflection — Song China</p></article>
+      </section>
+    </main>
+  </div>
+<script>
+const roles={scholar:{name:'Confucian Scholar-Official',status:'Educated elite servant of the state',lens:'You value order, hierarchy, moral governance, examinations, and Confucian learning.',challenge:'You may distrust merchants if you believe profit-seeking weakens moral order.'},merchant:{name:'Urban Merchant',status:'Commercial actor in a growing city',lens:'You value trade, transportation, paper money, markets, and urban prosperity.',challenge:'You lack the social prestige of scholar-officials despite your economic importance.'},farmer:{name:'Peasant Rice Farmer',status:'Agricultural producer supporting the population',lens:'You value land, harvest stability, irrigation, tax fairness, and protection from disorder.',challenge:'Elite policies may ignore rural burdens even while depending on your labor.'},monk:{name:'Buddhist Monk',status:'Religious figure within a Confucian-influenced society',lens:'You value spiritual life, monasteries, education, charity, and cultural influence.',challenge:'Neo-Confucian critics may see Buddhist institutions as rivals to family and state obligations.'},advisor:{name:'Imperial Advisor',status:'Policy voice close to the emperor',lens:'You must balance legitimacy, revenue, social order, military needs, and elite expectations.',challenge:'Every policy creates winners, losers, and possible instability.'}};
+const decisions={bureaucracy:'Expand Scholar-Official Government',commerce:'Support Trade and Commerce',agriculture:'Prioritize Agriculture and Stability'};
+let selectedRole='';let selectedDecision='';
+function renderRoles(){document.getElementById('role-options').innerHTML=Object.entries(roles).map(([id,r])=>`<article class="role-card decision-card" onclick="selectRole('${id}')"><h3>${r.name}</h3><span class="tag">${r.status}</span><p>${r.lens}</p><p><strong>Tension:</strong> ${r.challenge}</p></article>`).join('')}
+function selectRole(id){selectedRole=id;document.getElementById('role-status').textContent=`Selected role: ${roles[id].name}`;document.querySelectorAll('#role-options .decision-card').forEach(c=>c.classList.remove('selected'));event.currentTarget.classList.add('selected')}
+function selectDecision(id){selectedDecision=id;document.getElementById('decision-status').textContent=`Selected policy: ${decisions[id]}`;document.querySelectorAll('#dilemma .decision-card').forEach(c=>c.classList.remove('selected'));event.currentTarget.classList.add('selected')}
+function generateCoachPrompts(){const box=document.getElementById('coach-output');if(!selectedRole||!selectedDecision){box.textContent='Choose both a role and a policy before generating coaching questions.';return;}const r=roles[selectedRole];box.innerHTML=`<strong>AI Historical Coach Questions for ${r.name}</strong><ul><li>What specific evidence from Song China supports your recommendation to ${decisions[selectedDecision].toLowerCase()}?</li><li>How does your role's social position shape what you fear, value, or prioritize?</li><li>Which group in Song society would disagree with your recommendation, and why?</li><li>Are you making any modern assumptions that would not fit Song dynasty society?</li><li>How does this decision connect to bureaucracy, Confucianism, commercialization, agriculture, urbanization, or cultural influence?</li></ul>`}
+function saveDraft(id){const t=document.getElementById(id);localStorage.setItem('beintheroom-song-court-'+id,t.value||'');document.getElementById(id+'-result').textContent='Draft saved on this device.'}
+function copyResponse(id){const t=document.getElementById(id);navigator.clipboard.writeText(t.value||'').then(()=>document.getElementById(id+'-result').textContent='Reflection copied.').catch(()=>document.getElementById(id+'-result').textContent='Copy failed. Select and copy manually.')}
+function selfCheckReflection(){const t=document.getElementById('reflection-response');const text=(t.value||'').toLowerCase();const terms=['song','confucian','bureaucracy','civil service','merchant','commerce','paper money','grand canal','rice','urban','buddhist','neo-confucian'];const found=terms.filter(term=>text.includes(term));document.getElementById('reflection-response-result').textContent=`Self-check: ${text.split(/\s+/).filter(Boolean).length} words; historical terms found: ${found.length?found.join(', '):'none yet'}. Aim for at least two specific historical details and one explanation of broader significance.`}
+function loadDrafts(){['decision-response','reflection-response'].forEach(id=>{const saved=localStorage.getItem('beintheroom-song-court-'+id);if(saved)document.getElementById(id).value=saved})}
+renderRoles();loadDrafts();
+</script>
+</body>
+</html>
