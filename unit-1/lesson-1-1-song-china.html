@@ -10,21 +10,7 @@
   <link rel="stylesheet" href="../assets/css/behistorical.css" />
   <link rel="stylesheet" href="../assets/css/behistorical-brand-lock.css" />
   <style>
-    .checkpoint-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin:18px 0;}
-    .checkpoint-focus{background:#f6efe3; color:var(--ink); border-left:5px solid var(--aged-iron); padding:14px 16px; border-radius:12px;}
-    .checkpoint-focus h4{margin:0 0 8px; font-family:"Montserrat", Inter, Arial, sans-serif; text-transform:uppercase; letter-spacing:.08em; color:var(--oxidized-brown)}
-    .checkpoint-align{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin:18px 0;}
-    .alignment-card{background:var(--clean-paper); color:var(--ink); border:1px solid var(--paper-line); border-top:6px solid var(--aged-iron); border-radius:var(--radius); padding:20px; box-shadow:var(--soft-shadow)}
-    .alignment-card h3{margin:0 0 12px; font-family:"Cinzel", "Trajan Pro", "Times New Roman", Georgia, serif; color:var(--blackened-steel)}
-    .alignment-card ul{margin:0; padding-left:1.2rem}.alignment-card li{margin:.55rem 0}
-    .side-quest-card{background:linear-gradient(135deg,#fffdf7,#f2eadc); border-left:8px solid var(--burnished-bronze); position:relative; overflow:hidden}
-    .side-quest-card::after{content:"?"; position:absolute; right:26px; top:10px; font-family:"Cinzel",serif; font-size:7rem; color:rgba(140,90,43,.08); line-height:1}
-    .side-quest-card h3,.skill-builder-card h3{font-size:1.55rem}
-    .skill-builder-card{border-top:6px solid var(--antique-gold)}
-    .skill-steps{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:16px}
-    .skill-step{background:#f6efe3; border-left:5px solid var(--aged-iron); border-radius:12px; padding:14px; color:var(--ink)}
-    .skill-step strong{display:block; color:var(--oxidized-brown); font-family:"Montserrat",Inter,Arial,sans-serif; text-transform:uppercase; letter-spacing:.08em; font-size:.78rem; margin-bottom:6px}
-    @media(max-width:820px){.checkpoint-grid,.checkpoint-align,.skill-steps{grid-template-columns:1fr}}
+    .command-center{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:28px 0 36px}.module-card{min-height:220px;position:relative;overflow:hidden;cursor:pointer;border-radius:22px;background:linear-gradient(180deg,var(--gunmetal-gray),var(--charcoal-steel));color:var(--warm-paper);border:1px solid rgba(201,164,106,.32);box-shadow:var(--soft-shadow);padding:24px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.module-card:hover,.module-card:focus{transform:translateY(-4px);border-color:rgba(201,164,106,.72);box-shadow:0 24px 62px rgba(0,0,0,.22);outline:none}.module-card::before{content:"";position:absolute;inset:0;background:var(--module-img) center/cover;filter:saturate(.72) contrast(1.08);opacity:.38;transform:scale(1.03)}.module-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,28,29,.22),rgba(26,28,29,.9))}.module-card>*{position:relative;z-index:1}.module-label{font-family:"Montserrat",Inter,Arial,sans-serif;text-transform:uppercase;letter-spacing:.18em;color:var(--muted-sandstone);font-size:.72rem;font-weight:900}.module-card h3{font-family:"Cinzel","Trajan Pro","Times New Roman",Georgia,serif;color:var(--antique-gold);font-size:1.45rem;line-height:1.12;margin:10px 0}.module-card p{font-family:"Montserrat",Inter,Arial,sans-serif;font-size:.88rem;line-height:1.45;margin:0;color:var(--warm-paper)}.lesson-roadmap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.roadmap-step{background:#f6efe3;border-left:5px solid var(--aged-iron);border-radius:14px;padding:16px;color:var(--ink)}.roadmap-step strong{display:block;font-family:"Montserrat",Inter,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--oxidized-brown);font-size:.78rem;margin-bottom:6px}.pop-modal{position:fixed;inset:0;z-index:180;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(26,28,29,.92);backdrop-filter:blur(10px)}.pop-modal.show{display:flex}.pop-panel{width:min(1180px,96vw);max-height:92vh;overflow:auto;border-radius:26px;background:var(--clean-paper);color:var(--ink);box-shadow:0 30px 90px rgba(0,0,0,.45);border:1px solid rgba(201,164,106,.42)}.pop-header{position:sticky;top:0;z-index:3;background:linear-gradient(180deg,var(--blackened-steel),var(--charcoal-steel));color:var(--warm-paper);padding:24px 28px;border-bottom:1px solid rgba(201,164,106,.25);display:flex;align-items:flex-start;justify-content:space-between;gap:18px}.pop-header h2{font-family:"Cinzel","Trajan Pro","Times New Roman",Georgia,serif;color:var(--antique-gold);font-size:clamp(1.8rem,4vw,3.4rem);line-height:1.05;margin:4px 0 0}.pop-body{padding:28px}.pop-body .section-header{margin-top:0}.pop-close{flex:0 0 auto}.pop-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.pop-half{grid-column:span 6}.pop-third{grid-column:span 4}.pop-two-third{grid-column:span 8}.mini-tool-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.component-note{background:#f6efe3;border-left:6px solid var(--burnished-bronze);padding:16px 18px;border-radius:14px;margin:16px 0}.checkpoint-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:18px 0}.checkpoint-focus{background:#f6efe3;color:var(--ink);border-left:5px solid var(--aged-iron);padding:14px 16px;border-radius:12px}.checkpoint-focus h4{margin:0 0 8px;font-family:"Montserrat",Inter,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--oxidized-brown)}.skill-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}.skill-step{background:#f6efe3;border-left:5px solid var(--aged-iron);border-radius:12px;padding:14px;color:var(--ink)}.skill-step strong{display:block;color:var(--oxidized-brown);font-family:"Montserrat",Inter,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;margin-bottom:6px}.module-actions{margin-top:34px}.source-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.source-chip{display:inline-flex;padding:8px 11px;border-radius:999px;background:#f1e6d3;color:var(--oxidized-brown);font-family:"Montserrat",Inter,Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:.68rem;text-decoration:none}@media(max-width:920px){.command-center{grid-template-columns:repeat(2,minmax(0,1fr))}.lesson-roadmap,.skill-steps{grid-template-columns:1fr}.pop-half,.pop-third,.pop-two-third{grid-column:1/-1}}@media(max-width:620px){.command-center{grid-template-columns:1fr}.pop-modal{padding:10px}.pop-header{padding:18px;display:block}.pop-close{margin-top:12px}.pop-body{padding:18px}}
   </style>
 </head>
 <body>
@@ -32,9 +18,7 @@
     <header class="topbar">
       <nav class="nav">
         <a class="brand-mini" href="../index.html" aria-label="Return to BeHistorical landing page"><img src="../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"><span>BeHistorical</span></a>
-        <div class="nav-links">
-          <a href="#targets">Targets</a><a href="#map">Map</a><a href="#first10">First &amp; 10</a><a href="#side-quest">Side Quest</a><a href="#lecture">Lecture</a><a href="#skill-builder">Skill Builder</a><a href="#checkpoint-one">Checkpoint 1</a><a href="#evidence">Evidence Lab</a><a href="#checkpoint-two">Checkpoint 2</a>
-        </div>
+        <div class="nav-links"><a href="../index.html">Home</a><a href="../unit-1/index.html">Unit 1</a><a href="#modules">Modules</a></div>
       </nav>
     </header>
 
@@ -43,257 +27,127 @@
       <h1 class="logo-title" aria-label="BeHistorical">Be<span class="hero-h">H</span>ist<span class="globe-o" aria-label="o as globe">o</span>rical</h1>
       <p class="subtitle">AP WORLD HISTORY</p>
       <p class="hero-copy"><strong id="lesson-title">Topic 1.1 — Song China</strong><br><span id="lesson-subtitle">Developments in East Asia, c. 1200 to c. 1450</span></p>
-      <div class="quick-nav"><a class="btn" href="#targets">Learning Targets</a><a class="btn secondary" href="#map">Start with the Map</a><a class="btn secondary" href="#skill-builder">AP Skill Builder</a></div>
+      <div class="quick-nav"><a class="btn" href="#modules">Open Lesson Modules</a><button class="btn secondary" type="button" onclick="openModule('targets')">Learning Targets</button><button class="btn secondary" type="button" onclick="openModule('first10')">First &amp; 10</button></div>
     </section>
 
     <main>
-      <section class="section" id="targets"></section>
-      <section class="section" id="framework"></section>
-      <section class="section" id="map"></section>
-      <section class="section" id="first10"></section>
-      <section class="section" id="side-quest"></section>
-      <section class="section dark-panel" id="lecture"></section>
-      <section class="section" id="skill-builder"></section>
-      <section class="section" id="checkpoint-one"></section>
-      <section class="section" id="evidence"></section>
-      <section class="section" id="primary-source"></section>
-      <section class="section" id="checkpoint-two"></section>
+      <section class="section">
+        <div class="section-header"><div class="eyebrow">Lesson Command Center</div><h2>One topic. Focused pop-out modules.</h2><p>Use this page as the lesson hub. Open one module at a time for reading, lecture, source work, AP skill practice, and checkpoint responses.</p></div>
+        <article class="card">
+          <h3>Classroom Flow</h3>
+          <div class="lesson-roadmap">
+            <div class="roadmap-step"><strong>1. Build Context</strong>Start with Learning Targets, the map, and the First &amp; 10 narrative.</div>
+            <div class="roadmap-step"><strong>2. Learn &amp; Practice</strong>Use lecture cards, the AP skill builder, and evidence lab modules.</div>
+            <div class="roadmap-step"><strong>3. Check Understanding</strong>Complete Checkpoint 1 and Checkpoint 2 with self-check and response tools.</div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="modules">
+        <div class="section-header"><div class="eyebrow">Interactive Modules</div><h2>Choose the component you need.</h2><p>Each card opens a focused pop-out window for projection, student work, or independent review.</p></div>
+        <div class="command-center" id="module-grid"></div>
+      </section>
     </main>
 
-    <footer class="footer"><div class="footer-brand">BeHistorical</div><p>Think Like a Historian.</p></footer>
+    <footer class="footer"><div class="footer-brand">BeHistorical</div><p>Topic 1.1 — Song China · Think Like a Historian.</p></footer>
+  </div>
+
+  <div class="pop-modal" id="pop-modal" aria-modal="true" role="dialog" aria-labelledby="pop-title">
+    <div class="pop-panel">
+      <div class="pop-header"><div><div class="eyebrow" id="pop-eyebrow">Lesson Module</div><h2 id="pop-title">Module</h2></div><button class="btn pop-close" type="button" onclick="closeModule()">Close</button></div>
+      <div class="pop-body" id="pop-body"></div>
+    </div>
   </div>
 
   <div class="lightbox" id="lightbox" aria-modal="true" role="dialog"><button class="btn" onclick="closeLightbox()">Close</button><figure><img id="lightbox-img" alt=""><figcaption id="lightbox-caption"></figcaption></figure></div>
-  <div class="lecture-modal" id="lecture-modal" aria-modal="true" role="dialog" aria-labelledby="lecture-modal-title">
-    <div class="lecture-modal-panel">
-      <button class="btn lecture-close" onclick="closeLectureModal()">Close</button>
-      <div class="lecture-modal-grid">
-        <div class="lecture-modal-content">
-          <div class="eyebrow">Lecture Focus</div>
-          <h2 id="lecture-modal-title"></h2>
-          <ul class="lecture-list enlarged" id="lecture-modal-bullets"></ul>
-        </div>
-        <figure class="lecture-modal-image-wrap">
-          <img id="lecture-modal-img" alt="">
-          <figcaption id="lecture-modal-caption"></figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
 
   <script src="../assets/data/lesson-1-1-song-china.js"></script>
   <script>
     const L = window.BEHISTORICAL_LESSON;
     const byId = id => document.getElementById(id);
     const md = s => String(s || '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-
-    const SIDE_QUEST = {
-      title: 'Obscure History Drop: Printed Menus and Urban Food Culture',
-      text: 'Song cities were so commercialized that some urban restaurants used printed menus and specialized food services. That small detail matters: it shows that printing, urbanization, consumer culture, and commerce were not abstract developments. They shaped everyday life in crowded cities such as Kaifeng and Hangzhou.',
-      prompt: 'What does this obscure detail reveal about Song China beyond emperors and exams?'
+    const stableImgs = {
+      song:'https://commons.wikimedia.org/wiki/Special:FilePath/Along_the_River_During_the_Qingming_Festival_%28detail_of_original%29.jpg',
+      paper:'https://upload.wikimedia.org/wikipedia/commons/d/dc/Powerloom_weaving_in_1835.jpg',
+      bastille:'https://upload.wikimedia.org/wikipedia/commons/6/6d/Siege_of_the_Bastille_%28Claude_Cholat%29.jpg',
+      workers:'https://upload.wikimedia.org/wikipedia/commons/9/97/Pennsylvania_breaker_boys_1911.jpg',
+      exhibition:'https://upload.wikimedia.org/wikipedia/commons/b/bd/The_Opening_of_the_Great_Exhibition_by_Queen_Victoria_on_1_May_1851.jpg',
+      manifesto:'https://upload.wikimedia.org/wikipedia/commons/8/86/Communist-manifesto.png'
     };
 
-    const SKILL_BUILDER = {
-      skill: 'AP Skill Builder: Contextualization',
-      title: 'Place Song China in the Bigger Historical Picture',
-      intro: 'Contextualization means explaining the broader historical setting around a topic. For Song China, that means connecting the dynasty to long-standing Chinese traditions and to wider Afro-Eurasian patterns of trade, technology, urbanization, and state power.',
-      steps: [
-        {label:'Before', text:'Earlier Chinese dynasties had already used Confucian ideas, imperial rule, bureaucracy, and the Mandate of Heaven.'},
-        {label:'During', text:'The Song expanded scholar-official government while agriculture, canals, printing, paper money, and cities strengthened the economy.'},
-        {label:'Beyond China', text:'Song products, technologies, and commercial activity connected East Asia to wider Afro-Eurasian trade networks.'}
-      ],
-      prompt: 'Write two contextualization sentences that explain the broader setting for Song China before making a claim about its power or prosperity.'
-    };
-
-    const CHECKPOINT_ONE = {
-      title: 'Checkpoint 1: Learning Target 1 — Government and Belief Systems',
-      subtitle: 'This checkpoint directly checks Learning Target 1 and Success Criteria 1.',
-      learningTargets: [L.learningTargets[0].target],
-      successCriteria: [L.successCriteria[0].criteria],
-      prompt: 'Explain how Song China used Confucianism, imperial bureaucracy, and/or civil service exams to maintain and justify rule.',
-      responseType: 'Checkpoint 1',
-      terms: ['bureaucracy','civil service exams','scholar-officials','Confucianism','Neo-Confucianism','Mandate of Heaven'],
-      focus: [
-        'Name at least one governing institution: bureaucracy, civil service exams, or scholar-officials.',
-        'Name at least one belief system or political idea: Confucianism, Neo-Confucianism, or Mandate of Heaven.',
-        'Explain how the institution or belief helped rulers maintain order, legitimacy, or control.'
-      ]
-    };
-
-    const CHECKPOINT_TWO = {
-      title: 'Checkpoint 2: Learning Targets 2–3 — Culture, Economy, and Connections',
-      subtitle: 'This checkpoint directly checks Learning Targets 2–3 and Success Criteria 2–3.',
-      learningTargets: [L.learningTargets[1].target, L.learningTargets[2].target],
-      successCriteria: [L.successCriteria[1].criteria, L.successCriteria[2].criteria],
-      prompt: 'Explain how cultural traditions and economic developments helped Song China influence East Asia and become more commercialized.',
-      responseType: 'Checkpoint 2',
-      terms: ['Confucianism','Buddhism','Chinese cultural traditions','Champa rice','Grand Canal','paper money','commercialization','urbanization','printing'],
-      focus: [
-        'Use one cultural example: Confucianism, Buddhism, Neo-Confucianism, or Chinese cultural traditions.',
-        'Use one economic or technological example: Champa rice, Grand Canal, paper money, printing, or urbanization.',
-        'Explain the connection to East Asian influence, population growth, commercial expansion, or trade networks.'
-      ]
-    };
+    const SIDE_QUEST = {title:'Obscure History Drop: Printed Menus and Urban Food Culture',text:'Song cities were so commercialized that some urban restaurants used printed menus and specialized food services. That small detail matters: it shows that printing, urbanization, consumer culture, and commerce were not abstract developments. They shaped everyday life in crowded cities such as Kaifeng and Hangzhou.',prompt:'What does this obscure detail reveal about Song China beyond emperors and exams?'};
+    const SKILL_BUILDER = {skill:'AP Skill Builder: Contextualization',title:'Place Song China in the Bigger Historical Picture',intro:'Contextualization means explaining the broader historical setting around a topic. For Song China, that means connecting the dynasty to long-standing Chinese traditions and to wider Afro-Eurasian patterns of trade, technology, urbanization, and state power.',steps:[{label:'Before',text:'Earlier Chinese dynasties had already used Confucian ideas, imperial rule, bureaucracy, and the Mandate of Heaven.'},{label:'During',text:'The Song expanded scholar-official government while agriculture, canals, printing, paper money, and cities strengthened the economy.'},{label:'Beyond China',text:'Song products, technologies, and commercial activity connected East Asia to wider Afro-Eurasian trade networks.'}],prompt:'Write two contextualization sentences that explain the broader setting for Song China before making a claim about its power or prosperity.'};
+    const CHECKPOINT_ONE = {title:'Checkpoint 1: Government and Belief Systems',subtitle:'Checks Learning Target 1 and Success Criteria 1.',learningTargets:[L.learningTargets[0].target],successCriteria:[L.successCriteria[0].criteria],prompt:'Explain how Song China used Confucianism, imperial bureaucracy, and/or civil service exams to maintain and justify rule.',responseType:'Checkpoint 1',terms:['bureaucracy','civil service exams','scholar-officials','Confucianism','Neo-Confucianism','Mandate of Heaven'],focus:['Name at least one governing institution: bureaucracy, civil service exams, or scholar-officials.','Name at least one belief system or political idea: Confucianism, Neo-Confucianism, or Mandate of Heaven.','Explain how the institution or belief helped rulers maintain order, legitimacy, or control.']};
+    const CHECKPOINT_TWO = {title:'Checkpoint 2: Culture, Economy, and Connections',subtitle:'Checks Learning Targets 2–3 and Success Criteria 2–3.',learningTargets:[L.learningTargets[1].target,L.learningTargets[2].target],successCriteria:[L.successCriteria[1].criteria,L.successCriteria[2].criteria],prompt:'Explain how cultural traditions and economic developments helped Song China influence East Asia and become more commercialized.',responseType:'Checkpoint 2',terms:['Confucianism','Buddhism','Chinese cultural traditions','Champa rice','Grand Canal','paper money','commercialization','urbanization','printing'],focus:['Use one cultural example: Confucianism, Buddhism, Neo-Confucianism, or Chinese cultural traditions.','Use one economic or technological example: Champa rice, Grand Canal, paper money, printing, or urbanization.','Explain the connection to East Asian influence, population growth, commercial expansion, or trade networks.']};
 
     byId('lesson-title').textContent = `${L.meta.topic} — ${L.meta.title}`;
     byId('lesson-subtitle').textContent = L.meta.subtitle;
 
-    byId('targets').innerHTML = `
-      <div class="section-header"><div class="eyebrow">Learning Focus</div><h2>Learning Targets &amp; Success Criteria</h2><p>Use these to track what you should understand and be able to explain by the end of the topic.</p></div>
-      <div class="target-success-grid">
-        <article class="card target-card"><h3>Learning Targets</h3>${L.learningTargets.map((t,i)=>`<div class="target-item"><span class="target-number">${i+1}</span><p>${t.target}</p><span class="target-kc">${t.kc}</span></div>`).join('')}</article>
-        <article class="card success-card"><h3>Success Criteria</h3>${L.successCriteria.map((c,i)=>`<div class="target-item"><span class="target-number">${i+1}</span><p>${c.criteria}</p><span class="target-kc">${c.kc}</span></div>`).join('')}</article>
-      </div>`;
+    const modules = [
+      {id:'targets',label:'Module 01',title:'Targets & Framework',desc:'Learning targets, success criteria, and College Board anchors.',img:stableImgs.song,render:renderTargets},
+      {id:'map',label:'Module 02',title:'Map & Geography Check',desc:'Locate Song China and connect geography to power and prosperity.',img:L.map.url,render:renderMap},
+      {id:'first10',label:'Module 03',title:'First & 10 Reading',desc:'Narrative foundation for Song China and its historical significance.',img:stableImgs.song,render:renderFirst10},
+      {id:'sidequest',label:'Module 04',title:'Side Quest',desc:'A memorable everyday-life detail that deepens the topic.',img:stableImgs.song,render:renderSideQuest},
+      {id:'lecture',label:'Module 05',title:'Lecture Cards',desc:'Projection-friendly lecture segments with visuals and key terms.',img:stableImgs.exhibition,render:renderLecture},
+      {id:'skill',label:'Module 06',title:'AP Skill Builder',desc:'Contextualization practice for AP World writing.',img:stableImgs.manifesto,render:renderSkill},
+      {id:'checkpoint1',label:'Module 07',title:'Checkpoint 1',desc:'Government, Confucianism, bureaucracy, and legitimacy.',img:stableImgs.workers,render:()=>renderCheckpoint(CHECKPOINT_ONE,'checkpoint-one-response')},
+      {id:'evidence',label:'Module 08',title:'Evidence Lab',desc:'Analyze images and source evidence from Song China.',img:stableImgs.song,render:renderEvidence},
+      {id:'source',label:'Module 09',title:'Primary Source',desc:'Read and interpret a source connected to Song society.',img:stableImgs.bastille,render:renderPrimarySource},
+      {id:'checkpoint2',label:'Module 10',title:'Checkpoint 2',desc:'Culture, economy, commercialization, and regional influence.',img:stableImgs.paper,render:()=>renderCheckpoint(CHECKPOINT_TWO,'checkpoint-two-response')}
+    ];
 
-    byId('framework').innerHTML = `
-      <details open><summary>College Board Framework Anchor</summary>
-        <div class="framework">${L.framework.map(k => `<div class="kc"><span class="kc-code">${k.code}</span><br>${k.text}</div>`).join('')}</div>
-      </details>`;
+    byId('module-grid').innerHTML = modules.map(m => `<article class="module-card" role="button" tabindex="0" onclick="openModule('${m.id}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModule('${m.id}') }" style="--module-img:url('${m.img}')"><div class="module-label">${m.label}</div><h3>${m.title}</h3><p>${m.desc}</p></article>`).join('');
 
-    byId('map').innerHTML = `
-      <div class="section-header"><div class="eyebrow">Geography Check</div><h2>${L.map.title}</h2><p>${L.map.intro}</p></div>
-      <article class="card map-card">
-        <div class="map-grid">
-          <figure class="map-figure">
-            <img src="${L.map.url}" alt="${L.map.title}" onclick="openMapLightbox()">
-            <figcaption><strong>${L.map.caption}</strong><br><a class="source-link" href="${L.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a></figcaption>
-          </figure>
-          <div class="map-notes">
-            <h3>Why this map matters</h3>
-            <ul>${L.map.notes.map(n=>`<li>${md(n)}</li>`).join('')}</ul>
-            <div class="question"><strong>Map Question</strong><br>${L.map.prompt}</div>
-            ${draftBlock('map-check-response', L.map.prompt, 'Map Check')}
-          </div>
-        </div>
-      </article>`;
-
-    byId('first10').innerHTML = `
-      <div class="section-header"><div class="eyebrow">Start Here</div><h2>${L.first10.title}</h2></div>
-      <div class="card reading">${L.first10.paragraphs.map(p => `<p>${p}</p>`).join('')}</div>
-      <div class="card"><h3>First &amp; 10 Response Questions</h3>${L.first10.questions.map((q,i)=>`<div class="question"><strong>Question ${i+1}</strong><br>${q}</div>`).join('')}</div>
-      ${draftBlock('first10-response', L.first10.questions.join(' '), 'First and 10')}`;
-
-    byId('side-quest').innerHTML = `
-      <div class="section-header"><div class="eyebrow">Historical Side Quest</div><h2>${SIDE_QUEST.title}</h2><p>A quick, memorable detail that deepens the topic without taking over the lesson.</p></div>
-      <article class="card side-quest-card"><h3>Why this is more than trivia</h3><p>${SIDE_QUEST.text}</p><div class="question"><strong>Side Quest Question</strong><br>${SIDE_QUEST.prompt}</div></article>`;
-
-    byId('lecture').innerHTML = `
-      <div class="section-header"><div class="eyebrow">Content Delivery</div><h2>${L.lecture.title}</h2><p>${L.lecture.intro}</p></div>
-      <div class="lecture-card-grid">${L.lecture.segments.map((seg,i) => `<article class="card dark-card lecture-topic-card" role="button" tabindex="0" aria-label="${seg.title}" onclick="openLectureModal(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLectureModal(${i})}"><h3>${seg.title}</h3><ul class="lecture-list">${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul></article>`).join('')}</div>
-      ${L.lecture.videos.map(v => `<article class="card video-card"><h3>Video Clip</h3><div class="media-card"><div class="thumb video-thumb" style="${v.youtubeId ? `background-image:linear-gradient(rgba(26,28,29,.25),rgba(26,28,29,.55)),url('https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg')` : ''}"><span>Video Clip</span></div><p><strong>${v.title}</strong></p><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></div></article>`).join('')}`;
-
-    byId('skill-builder').innerHTML = `
-      <div class="section-header"><div class="eyebrow">AP Skill Development</div><h2>${SKILL_BUILDER.skill}</h2><p>${SKILL_BUILDER.intro}</p></div>
-      <article class="card skill-builder-card"><h3>${SKILL_BUILDER.title}</h3><div class="skill-steps">${SKILL_BUILDER.steps.map(s=>`<div class="skill-step"><strong>${s.label}</strong>${s.text}</div>`).join('')}</div><div class="question"><strong>Skill Practice</strong><br>${SKILL_BUILDER.prompt}</div></article>
-      ${draftBlock('skill-builder-response', SKILL_BUILDER.prompt, 'AP Skill Builder')}`;
-
-    byId('checkpoint-one').innerHTML = renderCheckpoint(CHECKPOINT_ONE, 'checkpoint-one-response');
-
-    byId('evidence').innerHTML = `
-      <div class="section-header"><div class="eyebrow">Evidence Lab</div><h2>${L.evidenceLab.title}</h2><p>${L.evidenceLab.task}</p></div>
-      <div class="grid">${L.images.map((img,i)=>`<article class="card image-card half"><img src="${img.url}" alt="${img.title}" onclick="openLightbox('${i}')"><div class="image-caption"><strong>${img.title}</strong><br>${img.caption}<br><em>${img.prompt}</em><br><a class="source-link" href="${img.url}" target="_blank" rel="noopener">Open source/image</a></div></article>`).join('')}</div>
-      ${draftBlock('evidence-response', L.evidenceLab.prompt, 'Evidence Lab')}`;
-
-    byId('primary-source').innerHTML = `
-      <div class="section-header"><div class="eyebrow">Primary Source</div><h2>${L.primarySource.title}</h2></div>
-      <div class="grid"><article class="card two-third"><p>${L.primarySource.intro}</p><blockquote>${L.primarySource.text}</blockquote></article><aside class="card third"><h3>Discussion Questions</h3>${L.primarySource.questions.map((q,i)=>`<div class="question"><strong>${i+1}</strong><br>${q}</div>`).join('')}</aside></div>
-      ${draftBlock('primary-source-response', L.primarySource.questions.join(' '), 'Primary Source')}`;
-
-    byId('checkpoint-two').innerHTML = renderCheckpoint(CHECKPOINT_TWO, 'checkpoint-two-response');
-
-    function renderCheckpoint(cp, id){
-      return `<div class="section-header"><div class="eyebrow">AP Checkpoint</div><h2>${cp.title}</h2><p>${cp.subtitle}</p></div>
-      <div class="checkpoint-align"><article class="alignment-card"><h3>Learning Target Checked</h3><ul>${cp.learningTargets.map(t=>`<li>${t}</li>`).join('')}</ul></article><article class="alignment-card"><h3>Success Criteria Checked</h3><ul>${cp.successCriteria.map(c=>`<li>${c}</li>`).join('')}</ul></article></div>
-      <div class="checkpoint-grid"><article class="checkpoint-focus"><h4>Focus Terms</h4><p>${cp.terms.map(t=>`<strong>${t}</strong>`).join(', ')}</p></article><article class="checkpoint-focus"><h4>Strong Answer Checklist</h4><ul>${cp.focus.map(f=>`<li>${f}</li>`).join('')}</ul></article></div>
-      ${responseBlock(id, cp.prompt, cp.responseType, cp.terms)}`;
+    function openModule(id){
+      const mod = modules.find(m=>m.id===id); if(!mod) return;
+      byId('pop-eyebrow').textContent = mod.label;
+      byId('pop-title').textContent = mod.title;
+      byId('pop-body').innerHTML = mod.render();
+      byId('pop-modal').classList.add('show');
+      loadAllDrafts();
     }
+    function closeModule(){byId('pop-modal').classList.remove('show')}
 
-    const responseFormConfig = {
-      formBaseUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfBMy2v9tjXnA9aWZLwBjMdl-snJc2RWljKUxgRwUNxYQPq_g/viewform",
-      entries: {
-        studentName: "entry.1203454783",
-        classPeriod: "entry.1732954465",
-        responseType: "entry.1335443862",
-        studentResponse: "entry.1590650308",
-        revisionNotes: "entry.1271515630",
-        confidenceLevel: "entry.1366844489"
-      }
-    };
+    function renderTargets(){return `<div class="target-success-grid"><article class="card target-card"><h3>Learning Targets</h3>${L.learningTargets.map((t,i)=>`<div class="target-item"><span class="target-number">${i+1}</span><p>${t.target}</p><span class="target-kc">${t.kc}</span></div>`).join('')}</article><article class="card success-card"><h3>Success Criteria</h3>${L.successCriteria.map((c,i)=>`<div class="target-item"><span class="target-number">${i+1}</span><p>${c.criteria}</p><span class="target-kc">${c.kc}</span></div>`).join('')}</article></div><details open><summary>College Board Framework Anchor</summary><div class="framework">${L.framework.map(k=>`<div class="kc"><span class="kc-code">${k.code}</span><br>${k.text}</div>`).join('')}</div></details>`;}
 
-    function draftBlock(id, prompt, responseType){
-      return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button></div><div id="${id}-result" class="check-result"></div></div>`;
-    }
+    function renderMap(){return `<article class="card map-card"><div class="map-grid"><figure class="map-figure"><img src="${L.map.url}" alt="${L.map.title}" onclick="openMapLightbox()"><figcaption><strong>${L.map.caption}</strong><br><a class="source-link" href="${L.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a></figcaption></figure><div class="map-notes"><h3>${L.map.title}</h3><p>${L.map.intro}</p><ul>${L.map.notes.map(n=>`<li>${md(n)}</li>`).join('')}</ul><div class="question"><strong>Map Question</strong><br>${L.map.prompt}</div>${draftBlock('map-check-response',L.map.prompt,'Map Check')}</div></div></article>`;}
 
-    function responseBlock(id, prompt, responseType, terms=[]){
-      return `<div class="prompt-box"><h3>Submit Your Checkpoint</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" data-terms="${terms.join('|')}" placeholder="Type your checkpoint response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button><button class="btn" type="button" onclick="sendToGoogleForm('${id}')">Send to Response Form</button><button class="btn secondary" type="button" onclick="selfCheck('${id}')">Run Self-Check</button><a class="btn secondary" href="${L.meta.feedbackToolUrl}" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="${id}-result" class="check-result"></div></div>`;
-    }
+    function renderFirst10(){return `<div class="card reading"><h3>${L.first10.title}</h3>${L.first10.paragraphs.map(p=>`<p>${p}</p>`).join('')}</div><div class="card"><h3>First &amp; 10 Response Questions</h3>${L.first10.questions.map((q,i)=>`<div class="question"><strong>Question ${i+1}</strong><br>${q}</div>`).join('')}</div>${draftBlock('first10-response',L.first10.questions.join(' '),'First and 10')}`;}
 
-    function saveDraft(id){
-      const t=byId(id); if(!t) return;
-      localStorage.setItem(`behistorical-draft-${id}`, t.value || '');
-      byId(id+'-result').textContent='Draft saved on this device.';
-    }
-    function loadDraft(id){
-      const t=byId(id); if(!t) return;
-      const saved=localStorage.getItem(`behistorical-draft-${id}`); if(saved){ t.value=saved; }
-    }
-    function loadAllDrafts(){ document.querySelectorAll('textarea.response-area').forEach(t=>loadDraft(t.id)); }
-    function copyResponse(id){
-      const t=byId(id); if(!t) return;
-      navigator.clipboard.writeText(t.value || '').then(()=>{byId(id+'-result').textContent='Response copied.'}).catch(()=>{byId(id+'-result').textContent='Copy failed. Select your text and copy manually.'});
-    }
-    function getStudentInfo(){
-      let studentName=localStorage.getItem('behistorical-student-name') || '';
-      let classPeriod=localStorage.getItem('behistorical-class-period') || '';
-      if(!studentName){ studentName=prompt('Enter your name:') || ''; }
-      if(!studentName.trim()) return null;
-      if(!classPeriod){ classPeriod=prompt('Enter your class period exactly as it appears in the form, such as Silver 1:') || ''; }
-      if(!classPeriod.trim()) return null;
-      localStorage.setItem('behistorical-student-name', studentName.trim());
-      localStorage.setItem('behistorical-class-period', classPeriod.trim());
-      return {studentName: studentName.trim(), classPeriod: classPeriod.trim()};
-    }
-    function sendToGoogleForm(id){
-      const t=byId(id); if(!t) return;
-      const studentResponse=(t.value || '').trim();
-      if(!studentResponse){ byId(id+'-result').textContent='Write a response before sending it to the form.'; return; }
-      const info=getStudentInfo(); if(!info) return;
-      const responseType=t.dataset.responseType || 'Checkpoint';
-      const confidenceLevel=prompt('Confidence level? Enter a number from 1 to 5:', '4') || '4';
-      const params=new URLSearchParams();
-      params.set('usp','pp_url');
-      params.set(responseFormConfig.entries.studentName, info.studentName);
-      params.set(responseFormConfig.entries.classPeriod, info.classPeriod);
-      params.set(responseFormConfig.entries.responseType, responseType);
-      params.set(responseFormConfig.entries.studentResponse, studentResponse);
-      params.set(responseFormConfig.entries.revisionNotes, '');
-      params.set(responseFormConfig.entries.confidenceLevel, confidenceLevel);
-      const formUrl=`${responseFormConfig.formBaseUrl}?${params.toString()}`;
-      window.open(formUrl,'_blank');
-      byId(id+'-result').textContent='Response sent to the form preview. Review it and click Submit in Google Forms.';
-    }
-    function selfCheck(id){
-      const t=byId(id); if(!t) return;
-      const text=(t.value||'').toLowerCase();
-      const terms=(t.dataset.terms||'').split('|').filter(Boolean);
-      const found=terms.filter(term=>text.includes(term.toLowerCase()));
-      const reasoning=['because','therefore','as a result','led to','caused','helped','strengthened','maintained','contributed'].filter(w=>text.includes(w));
-      byId(id+'-result').textContent=`Self-check: ${text.split(/\s+/).filter(Boolean).length} words; evidence terms found: ${found.length ? found.join(', ') : 'none yet'}; reasoning language: ${reasoning.length ? reasoning.join(', ') : 'none yet'}.`;
-    }
-    function openLightbox(i){const img=L.images[i];byId('lightbox-img').src=img.url;byId('lightbox-img').alt=img.title;byId('lightbox-caption').textContent=`${img.title} — ${img.caption}`;byId('lightbox').classList.add('show')}
-    function openMapLightbox(){const img=L.map;byId('lightbox-img').src=img.url;byId('lightbox-img').alt=img.title;byId('lightbox-caption').textContent=`${img.title} — ${img.caption}`;byId('lightbox').classList.add('show')}
-    function closeLightbox(){byId('lightbox').classList.remove('show')}
-    function openLectureModal(i){
+    function renderSideQuest(){return `<article class="card"><h3>${SIDE_QUEST.title}</h3><p>${SIDE_QUEST.text}</p><div class="question"><strong>Side Quest Question</strong><br>${SIDE_QUEST.prompt}</div></article>`;}
+
+    function renderLecture(){return `<div class="lecture-card-grid">${L.lecture.segments.map((seg,i)=>`<article class="card dark-card lecture-topic-card" role="button" tabindex="0" onclick="openLectureSegment(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLectureSegment(${i})}"><h3>${seg.title}</h3><ul class="lecture-list">${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul></article>`).join('')}</div><div id="lecture-segment-view"></div>${L.lecture.videos.map(v=>`<article class="card video-card"><h3>Video Clip</h3><div class="media-card"><div class="thumb video-thumb" style="${v.youtubeId?`background-image:linear-gradient(rgba(26,28,29,.25),rgba(26,28,29,.55)),url('https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg')`:''}"><span>Video Clip</span></div><p><strong>${v.title}</strong></p><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></div></article>`).join('')}`;}
+
+    function openLectureSegment(i){
       const seg=L.lecture.segments[i];
-      byId('lecture-modal-title').textContent=seg.title;
-      byId('lecture-modal-bullets').innerHTML=seg.bullets.map(b=>`<li>${md(b)}</li>`).join('');
-      byId('lecture-modal-img').src=seg.image.url;
-      byId('lecture-modal-img').alt=seg.image.title;
-      byId('lecture-modal-caption').innerHTML=`<strong>${seg.image.title}</strong><br>${seg.image.caption}<br><a href="${seg.image.sourceUrl || seg.image.url}" target="_blank" rel="noopener">Open image source</a>`;
-      byId('lecture-modal').classList.add('show');
+      const view=byId('lecture-segment-view'); if(!view) return;
+      view.innerHTML=`<article class="card"><div class="pop-grid"><div class="pop-two-third"><h3>${seg.title}</h3><ul>${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul></div><figure class="image-card pop-third"><img src="${seg.image.url}" alt="${seg.image.title}" onclick="openImageUrl('${seg.image.url}','${seg.image.title.replace(/'/g,'&#39;')}')"><figcaption class="image-caption"><strong>${seg.image.title}</strong><br>${seg.image.caption}<br><a class="source-link" href="${seg.image.sourceUrl||seg.image.url}" target="_blank" rel="noopener">Open image source</a></figcaption></figure></div></article>`;
+      view.scrollIntoView({behavior:'smooth',block:'nearest'});
     }
-    function closeLectureModal(){byId('lecture-modal').classList.remove('show')}
-    document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLightbox();closeLectureModal()}});
+
+    function renderSkill(){return `<article class="card"><h3>${SKILL_BUILDER.title}</h3><p>${SKILL_BUILDER.intro}</p><div class="skill-steps">${SKILL_BUILDER.steps.map(s=>`<div class="skill-step"><strong>${s.label}</strong>${s.text}</div>`).join('')}</div><div class="question"><strong>Skill Practice</strong><br>${SKILL_BUILDER.prompt}</div></article>${draftBlock('skill-builder-response',SKILL_BUILDER.prompt,'AP Skill Builder')}`;}
+
+    function renderCheckpoint(cp,id){return `<div class="component-note"><strong>${cp.subtitle}</strong></div><div class="pop-grid"><article class="card pop-half"><h3>Learning Target Checked</h3><ul>${cp.learningTargets.map(t=>`<li>${t}</li>`).join('')}</ul></article><article class="card pop-half"><h3>Success Criteria Checked</h3><ul>${cp.successCriteria.map(c=>`<li>${c}</li>`).join('')}</ul></article></div><div class="checkpoint-grid"><article class="checkpoint-focus"><h4>Focus Terms</h4><p>${cp.terms.map(t=>`<strong>${t}</strong>`).join(', ')}</p></article><article class="checkpoint-focus"><h4>Strong Answer Checklist</h4><ul>${cp.focus.map(f=>`<li>${f}</li>`).join('')}</ul></article></div>${responseBlock(id,cp.prompt,cp.responseType,cp.terms)}`;}
+
+    function renderEvidence(){return `<div class="component-note"><strong>${L.evidenceLab.title}</strong><br>${L.evidenceLab.task}</div><div class="pop-grid">${L.images.map((img,i)=>`<article class="card image-card pop-half"><img src="${img.url}" alt="${img.title}" onclick="openLightbox(${i})"><div class="image-caption"><strong>${img.title}</strong><br>${img.caption}<br><em>${img.prompt}</em><br><a class="source-link" href="${img.url}" target="_blank" rel="noopener">Open source/image</a></div></article>`).join('')}</div>${draftBlock('evidence-response',L.evidenceLab.prompt,'Evidence Lab')}`;}
+
+    function renderPrimarySource(){return `<div class="pop-grid"><article class="card pop-two-third"><h3>${L.primarySource.title}</h3><p>${L.primarySource.intro}</p><blockquote>${L.primarySource.text}</blockquote></article><aside class="card pop-third"><h3>Discussion Questions</h3>${L.primarySource.questions.map((q,i)=>`<div class="question"><strong>${i+1}</strong><br>${q}</div>`).join('')}</aside></div>${draftBlock('primary-source-response',L.primarySource.questions.join(' '),'Primary Source')}`;}
+
+    const responseFormConfig = {formBaseUrl:'https://docs.google.com/forms/d/e/1FAIpQLSfBMy2v9tjXnA9aWZLwBjMdl-snJc2RWljKUxgRwUNxYQPq_g/viewform',entries:{studentName:'entry.1203454783',classPeriod:'entry.1732954465',responseType:'entry.1335443862',studentResponse:'entry.1590650308',revisionNotes:'entry.1271515630',confidenceLevel:'entry.1366844489'}};
+    function draftBlock(id,prompt,responseType){return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button></div><div id="${id}-result" class="check-result"></div></div>`;}
+    function responseBlock(id,prompt,responseType,terms=[]){return `<div class="prompt-box"><h3>Submit Your Checkpoint</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" data-terms="${terms.join('|')}" placeholder="Type your checkpoint response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button><button class="btn" type="button" onclick="sendToGoogleForm('${id}')">Send to Response Form</button><button class="btn secondary" type="button" onclick="selfCheck('${id}')">Run Self-Check</button><a class="btn secondary" href="${L.meta.feedbackToolUrl}" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="${id}-result" class="check-result"></div></div>`;}
+    function saveDraft(id){const t=byId(id);if(!t)return;localStorage.setItem(`behistorical-draft-${id}`,t.value||'');byId(id+'-result').textContent='Draft saved on this device.';}
+    function loadDraft(id){const t=byId(id);if(!t)return;const saved=localStorage.getItem(`behistorical-draft-${id}`);if(saved){t.value=saved;}}
+    function loadAllDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>loadDraft(t.id));}
+    function copyResponse(id){const t=byId(id);if(!t)return;navigator.clipboard.writeText(t.value||'').then(()=>{byId(id+'-result').textContent='Response copied.'}).catch(()=>{byId(id+'-result').textContent='Copy failed. Select your text and copy manually.'});}
+    function getStudentInfo(){let studentName=localStorage.getItem('behistorical-student-name')||'';let classPeriod=localStorage.getItem('behistorical-class-period')||'';if(!studentName){studentName=prompt('Enter your name:')||'';}if(!studentName.trim())return null;if(!classPeriod){classPeriod=prompt('Enter your class period exactly as it appears in the form, such as Silver 1:')||'';}if(!classPeriod.trim())return null;localStorage.setItem('behistorical-student-name',studentName.trim());localStorage.setItem('behistorical-class-period',classPeriod.trim());return{studentName:studentName.trim(),classPeriod:classPeriod.trim()};}
+    function sendToGoogleForm(id){const t=byId(id);if(!t)return;const studentResponse=(t.value||'').trim();if(!studentResponse){byId(id+'-result').textContent='Write a response before sending it to the form.';return;}const info=getStudentInfo();if(!info)return;const responseType=t.dataset.responseType||'Checkpoint';const confidenceLevel=prompt('Confidence level? Enter a number from 1 to 5:','4')||'4';const params=new URLSearchParams();params.set('usp','pp_url');params.set(responseFormConfig.entries.studentName,info.studentName);params.set(responseFormConfig.entries.classPeriod,info.classPeriod);params.set(responseFormConfig.entries.responseType,responseType);params.set(responseFormConfig.entries.studentResponse,studentResponse);params.set(responseFormConfig.entries.revisionNotes,'');params.set(responseFormConfig.entries.confidenceLevel,confidenceLevel);window.open(`${responseFormConfig.formBaseUrl}?${params.toString()}`,'_blank');byId(id+'-result').textContent='Response sent to the form preview. Review it and click Submit in Google Forms.';}
+    function selfCheck(id){const t=byId(id);if(!t)return;const text=(t.value||'').toLowerCase();const terms=(t.dataset.terms||'').split('|').filter(Boolean);const found=terms.filter(term=>text.includes(term.toLowerCase()));const reasoning=['because','therefore','as a result','led to','caused','helped','strengthened','maintained','contributed'].filter(w=>text.includes(w));byId(id+'-result').textContent=`Self-check: ${text.split(/\s+/).filter(Boolean).length} words; evidence terms found: ${found.length?found.join(', '):'none yet'}; reasoning language: ${reasoning.length?reasoning.join(', '):'none yet'}.`;}
+    function openLightbox(i){const img=L.images[i];openImageUrl(img.url,`${img.title} — ${img.caption}`)}
+    function openMapLightbox(){openImageUrl(L.map.url,`${L.map.title} — ${L.map.caption}`)}
+    function openImageUrl(url,caption){byId('lightbox-img').src=url;byId('lightbox-img').alt=caption;byId('lightbox-caption').textContent=caption;byId('lightbox').classList.add('show')}
+    function closeLightbox(){byId('lightbox').classList.remove('show')}
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModule();closeLightbox();}});
     loadAllDrafts();
   </script>
 </body>
