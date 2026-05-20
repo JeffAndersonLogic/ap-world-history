@@ -102,10 +102,33 @@
     });
   }
 
+  function connectUpgradedFirstAndTen() {
+    const upgradedUrl = 'first-and-10-topic-1-1-song-china.html';
+    const openFirstAndTen = event => {
+      const card = event.target.closest('.module-card');
+      if (!card || !card.textContent.includes('First & 10 Reading')) return;
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      window.open(upgradedUrl, '_blank');
+    };
+    document.addEventListener('click', openFirstAndTen, true);
+    document.addEventListener('keydown', event => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      const card = event.target.closest('.module-card');
+      if (!card || !card.textContent.includes('First & 10 Reading')) return;
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      window.open(upgradedUrl, '_blank');
+    }, true);
+  }
+
   function init() {
     addStyles();
     renderKeyConceptSection();
     observeMapModule();
+    connectUpgradedFirstAndTen();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
