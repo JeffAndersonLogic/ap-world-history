@@ -128,10 +128,27 @@ if(L){
   loadAllDrafts();
 }
 
+function normalizedKeyConcepts(){
+  return (L.collegeBoardKeyConcepts||[]).reduce((cards,kc)=>{
+    const code=String(kc.code||'').trim().toLowerCase();
+    const examples=Array.isArray(kc.illustrativeExamples)?kc.illustrativeExamples:[];
+    if(code==='illustrative examples'){
+      const target=[...cards].reverse().find(card=>String(card.code||'').trim().toLowerCase()!=='illustrative examples');
+      if(target){
+        target.illustrativeExamples=[...(target.illustrativeExamples||[]),...examples];
+        if(!examples.length&&kc.text)target.illustrativeExamples.push(kc.text);
+      }
+      return cards;
+    }
+    cards.push({...kc,illustrativeExamples:[...examples]});
+    return cards;
+  },[]);
+}
+
 function renderCollegeBoardFramework(){
   const section=byId('college-board-key-concepts');
   if(!section)return;
-  const keyConcepts=L.collegeBoardKeyConcepts||[];
+  const keyConcepts=normalizedKeyConcepts();
   section.innerHTML=`<div class="section-header"><div class="eyebrow">College Board Framework</div><h2>Key Concepts &amp; Illustrative Examples</h2><p>These are the AP World framework anchors for this topic. The Key Concept language is included directly below the Learning Targets and Success Criteria so students can connect the lesson work to the College Board framework.</p></div><div class="cb-framework-grid">${keyConcepts.map(kc=>`<article class="cb-card"><span class="cb-code">${kc.code}</span><h3>${kc.code}</h3><p>${kc.text}</p>${kc.illustrativeExamples&&kc.illustrativeExamples.length?`<div class="cb-examples"><strong>Illustrative examples</strong><ul>${kc.illustrativeExamples.map(ex=>`<li>${ex}</li>`).join('')}</ul></div>`:''}</article>`).join('')}</div>`;
 }
 
