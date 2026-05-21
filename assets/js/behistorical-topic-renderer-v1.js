@@ -27,7 +27,7 @@ function applyKeyConceptLabels(){
   const labels={
     'Topic 1.2':{lt:['KC-3.1.III.D.iii','KC-3.2.I.B','KC-3.1.I.D; KC-3.1.III.D.iii'],sc:['KC-3.2.I.B','KC-3.1.III.D.iii','KC-3.1.I.D; KC-3.1.III.D.iii']},
     'Topic 1.3':{lt:['KC-3.1.III.D.ii; KC-3.1.III.D.iii','KC-3.2.I; KC-3.1.I.D','KC-3.1.I.D'],sc:['KC-3.1.III.D.ii; KC-3.1.III.D.iii','KC-3.2.I','KC-3.1.I.D']},
-    'Topic 1.4':{lt:['KC-3.2.I','KC-3.2.I','AP Historical Thinking Skill: Comparison'],sc:['KC-3.2.I — Mexica','KC-3.2.I — Inca','AP Historical Thinking Skill: Comparison']},
+    'Topic 1.4':{lt:['KC-3.2.I.D.i','KC-3.2.I.D.i','Suggested Skill 3.B — Claims and Evidence in Sources'],sc:['KC-3.2.I.D.i — State systems in the Americas','KC-3.2.I.D.i — State systems in the Americas','Suggested Skill 3.B — Evidence used to support an argument']},
     'Topic 1.5':{lt:['KC-3.2.I','KC-3.1.I.D; KC-3.1.III.D.iii','Comparison'],sc:['KC-3.1.I.D','KC-3.1.I.D; KC-3.1.III.D.iii','KC-3.2.I']},
     'Topic 1.6':{lt:['KC-3.2.I','KC-3.1.III.D; KC-3.3','Comparison'],sc:['KC-3.2.I','KC-3.3','Comparison']},
     'Topic 1.7':{lt:['Topic 1.7; Comparison','KC-3.1.III.D; Comparison','AP Historical Thinking Skill: Comparison'],sc:['Comparison','Evidence','Reasoning']}
