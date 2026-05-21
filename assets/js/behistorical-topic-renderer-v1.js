@@ -16,7 +16,7 @@ const UNIT1_MODULE_CARD_IMAGES={
     checkpoint2:'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg'
   },
   'Topic 1.2':{
-    map:'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+    map:'https://commons.wikimedia.org/wiki/Special:FilePath/Muslim_world_map.svg',
     first10:'https://commons.wikimedia.org/wiki/Special:FilePath/Flickr_-_archer10_%28Dennis%29_-_Egypt-13A-061_%28cropped%29.jpg',
     contentdelivery:'https://commons.wikimedia.org/wiki/Special:FilePath/Qutb%20Minar%20in%20the%20Monsoon.jpg',
     besurreal:'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
@@ -28,7 +28,7 @@ const UNIT1_MODULE_CARD_IMAGES={
     checkpoint2:'https://commons.wikimedia.org/wiki/Special:FilePath/Dhow_in_Indian_Ocean.jpg'
   },
   'Topic 1.3':{
-    map:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Khmer_Empire_1203_Map_%28cropped%29.png/500px-Khmer_Empire_1203_Map_%28cropped%29.png',
+    map:'https://commons.wikimedia.org/wiki/Special:FilePath/Khmer_Empire_1203_Map_(cropped).png',
     first10:'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg',
     contentdelivery:'https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur%20ship.JPG',
     besurreal:'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg',
@@ -89,11 +89,21 @@ const UNIT1_MODULE_CARD_IMAGES={
   }
 };
 
+function sanitizeImageUrl(url){
+  const value=String(url||'').trim();
+  if(!value)return '';
+  const replacements={
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Khmer_Empire_1203_Map_%28cropped%29.png/500px-Khmer_Empire_1203_Map_%28cropped%29.png':'https://commons.wikimedia.org/wiki/Special:FilePath/Khmer_Empire_1203_Map_(cropped).png',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Muslim_world_map.svg/1024px-Muslim_world_map.svg.png':'https://commons.wikimedia.org/wiki/Special:FilePath/Muslim_world_map.svg'
+  };
+  return replacements[value]||value;
+}
+
 function moduleCardImg(id,fallback){
   const topicImages=UNIT1_MODULE_CARD_IMAGES[L&&L.meta?L.meta.topic:'']||{};
   const stable=L.stableImages||{};
   const stableKey={contentdelivery:'contentDelivery',checkpoint1:'checkpoint1',checkpoint2:'checkpoint2',beintheroom:'beInTheRoom'}[id]||id;
-  return topicImages[id]||stable[stableKey]||fallback||((L.map&&L.map.url)?L.map.url:'');
+  return sanitizeImageUrl(topicImages[id]||stable[stableKey]||fallback||((L.map&&L.map.url)?L.map.url:''));
 }
 
 function applyKeyConceptLabels(){
@@ -177,28 +187,28 @@ function defaultModules(){
 
 function renderModuleGrid(){
   window.BEHISTORICAL_MODULES=L.modules||defaultModules();
-  byId('module-grid').innerHTML=window.BEHISTORICAL_MODULES.map(m=>`<article class="module-card" role="button" tabindex="0" onclick="${m.link?`openLinkedModule('${m.link}')`:m.jump?`jumpToSection('${m.jump}')`:`openModule('${m.id}')`}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();${m.link?`openLinkedModule('${m.link}')`:m.jump?`jumpToSection('${m.jump}')`:`openModule('${m.id}')`}}" style="--module-img:url('${m.img}')"><div class="module-label">${m.label}</div><h3>${m.title}</h3><p>${m.desc}</p></article>`).join('');
+  byId('module-grid').innerHTML=window.BEHISTORICAL_MODULES.map(m=>`<article class="module-card" role="button" tabindex="0" onclick="${m.link?`openLinkedModule('${m.link}')`:m.jump?`jumpToSection('${m.jump}')`:`openModule('${m.id}')`}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();${m.link?`openLinkedModule('${m.link}')`:m.jump?`jumpToSection('${m.jump}')`:`openModule('${m.id}')`}}" style="--module-img:url('${sanitizeImageUrl(m.img)}')"><div class="module-label">${m.label}</div><h3>${m.title}</h3><p>${m.desc}</p></article>`).join('');
 }
 
 function openLinkedModule(url){window.open(url,'_blank')}
 function jumpToSection(selector){const el=document.querySelector(selector);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
 function openModule(id){const mod=window.BEHISTORICAL_MODULES.find(m=>m.id===id);if(!mod||mod.jump||mod.link)return;byId('pop-eyebrow').textContent=mod.label;byId('pop-title').textContent=mod.title;byId('pop-body').innerHTML=mod.render();byId('pop-modal').classList.add('show');loadAllDrafts();}
 function closeModule(){byId('pop-modal').classList.remove('show')}
-function openLectureModal(i){const seg=L.lecture.segments[i];byId('lecture-modal-title').textContent=seg.title;byId('lecture-modal-bullets').innerHTML=seg.bullets.map(b=>`<li>${md(b)}</li>`).join('');byId('lecture-modal-img').src=seg.image.url;byId('lecture-modal-img').alt=seg.image.title;byId('lecture-modal-caption').innerHTML=`<strong>${seg.image.title}</strong><br>${seg.image.caption}<br><a href="${seg.image.sourceUrl||seg.image.url}" target="_blank" rel="noopener">Open image source</a>`;byId('lecture-modal').classList.add('show')}
+function openLectureModal(i){const seg=L.lecture.segments[i];byId('lecture-modal-title').textContent=seg.title;byId('lecture-modal-bullets').innerHTML=seg.bullets.map(b=>`<li>${md(b)}</li>`).join('');byId('lecture-modal-img').src=sanitizeImageUrl(seg.image.url);byId('lecture-modal-img').alt=seg.image.title;byId('lecture-modal-caption').innerHTML=`<strong>${seg.image.title}</strong><br>${seg.image.caption}<br><a href="${seg.image.sourceUrl||seg.image.url}" target="_blank" rel="noopener">Open image source</a>`;byId('lecture-modal').classList.add('show')}
 function closeLectureModal(){byId('lecture-modal').classList.remove('show')}
 
 function renderMap(){
   if(L.map&&L.map.embedUrl){
     return `<div class="first10-note"><strong>${L.map.title}</strong><br>${L.map.note||'Use the embedded map window below, then close this pop-out to return to the lesson path.'}</div><div class="first10-frame-wrap"><iframe class="first10-frame" src="${L.map.embedUrl}" title="${L.map.title}"></iframe></div>`;
   }
-  return `<article class="card map-card"><div class="map-grid"><figure class="map-figure"><img src="${L.map.url}" alt="${L.map.title}" onclick="openMapLightbox()"><figcaption><strong>${L.map.caption}</strong><br><a class="source-link" href="${L.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a></figcaption></figure><div class="map-notes"><h3>${L.map.title}</h3><p>${L.map.intro}</p><ul>${(L.map.notes||[]).map(n=>`<li>${md(n)}</li>`).join('')}</ul>${renderMapKey()}<div class="question"><strong>Map Question</strong><br>${L.map.prompt}</div>${draftBlock('map-check-response',L.map.prompt,'Map Check')}</div></div></article>`;
+  return `<article class="card map-card"><div class="map-grid"><figure class="map-figure"><img src="${sanitizeImageUrl(L.map.url)}" alt="${L.map.title}" onclick="openMapLightbox()"><figcaption><strong>${L.map.caption}</strong><br><a class="source-link" href="${L.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a></figcaption></figure><div class="map-notes"><h3>${L.map.title}</h3><p>${L.map.intro}</p><ul>${(L.map.notes||[]).map(n=>`<li>${md(n)}</li>`).join('')}</ul>${renderMapKey()}<div class="question"><strong>Map Question</strong><br>${L.map.prompt}</div>${draftBlock('map-check-response',L.map.prompt,'Map Check')}</div></div></article>`;
 }
 function renderMapKey(){return L.map.key&&L.map.key.length?`<div class="map-key"><h4>Map Key</h4>${L.map.key.map(k=>`<div class="map-key-item"><div class="map-key-label">${k.label}</div><div>${k.detail}</div></div>`).join('')}</div>`:''}
 function renderFirst10(){return L.first10.embedUrl?`<div class="first10-note"><strong>${L.first10.title}</strong><br>${L.first10.note||'Use the embedded reading window below, then close this pop-out to return to the lesson path.'}</div><div class="first10-frame-wrap"><iframe class="first10-frame" src="${L.first10.embedUrl}" title="${L.first10.title}"></iframe></div>`:`<div class="card reading"><h3>${L.first10.title}</h3>${L.first10.paragraphs.map(p=>`<p>${p}</p>`).join('')}</div><div class="card"><h3>First &amp; 10 Response Questions</h3>${L.first10.questions.map((q,i)=>`<div class="question"><strong>Question ${i+1}</strong><br>${q}</div>`).join('')}</div>${draftBlock('first10-response',L.first10.questions.join(' '),'First and 10')}`;}
 function renderBeSurreal(){const s=L.beSurreal||{};return `<article class="card"><h3>${s.title}</h3><p>${s.text}</p><div class="question"><strong>BeSurreal Question</strong><br>${s.prompt}</div></article>`;}
 function renderSkill(){const s=L.skillBuilder||{};return `<article class="card"><h3>${s.title}</h3><p>${s.intro}</p><div class="skill-steps">${(s.steps||[]).map(step=>`<div class="skill-step"><strong>${step.label}</strong>${step.text}</div>`).join('')}</div><div class="question"><strong>Skill Practice</strong><br>${s.prompt}</div></article>${draftBlock('skill-builder-response',s.prompt,'AP Skill Builder')}`;}
 function renderCheckpoint(cp,id){return `<div class="component-note"><strong>${cp.subtitle}</strong></div><div class="pop-grid"><article class="card pop-half"><h3>Learning Target Checked</h3><ul>${(cp.learningTargets||[]).map(t=>`<li>${t}</li>`).join('')}</ul></article><article class="card pop-half"><h3>Success Criteria Checked</h3><ul>${(cp.successCriteria||[]).map(c=>`<li>${c}</li>`).join('')}</ul></article></div><div class="checkpoint-grid"><article class="checkpoint-focus"><h4>Focus Terms</h4><p>${(cp.terms||[]).map(t=>`<strong>${t}</strong>`).join(', ')}</p></article><article class="checkpoint-focus"><h4>Strong Answer Checklist</h4><ul>${(cp.focus||[]).map(f=>`<li>${f}</li>`).join('')}</ul></article></div>${responseBlock(id,cp.prompt,cp.responseType,cp.terms||[])}`;}
-function renderEvidence(){return `<div class="component-note"><strong>${L.evidenceLab.title}</strong><br>${L.evidenceLab.task}</div><div class="pop-grid">${(L.images||[]).map((img,i)=>`<article class="card image-card pop-half"><img src="${img.url}" alt="${img.title}" onclick="openLightbox(${i})"><div class="image-caption"><strong>${img.title}</strong><br>${img.caption}<br><em>${img.prompt}</em><br><a class="source-link" href="${img.sourceUrl||img.url}" target="_blank" rel="noopener">Open source/image</a></div></article>`).join('')}</div>${draftBlock('evidence-response',L.evidenceLab.prompt,'Evidence Lab')}`;}
+function renderEvidence(){return `<div class="component-note"><strong>${L.evidenceLab.title}</strong><br>${L.evidenceLab.task}</div><div class="pop-grid">${(L.images||[]).map((img,i)=>`<article class="card image-card pop-half"><img src="${sanitizeImageUrl(img.url)}" alt="${img.title}" onclick="openLightbox(${i})"><div class="image-caption"><strong>${img.title}</strong><br>${img.caption}<br><em>${img.prompt}</em><br><a class="source-link" href="${img.sourceUrl||img.url}" target="_blank" rel="noopener">Open source/image</a></div></article>`).join('')}</div>${draftBlock('evidence-response',L.evidenceLab.prompt,'Evidence Lab')}`;}
 function renderPrimarySource(){return `<div class="pop-grid"><article class="card pop-two-third"><h3>${L.primarySource.title}</h3><p>${L.primarySource.intro}</p><blockquote>${L.primarySource.text}</blockquote></article><aside class="card pop-third"><h3>Discussion Questions</h3>${L.primarySource.questions.map((q,i)=>`<div class="question"><strong>${i+1}</strong><br>${q}</div>`).join('')}</aside></div>${draftBlock('primary-source-response',L.primarySource.questions.join(' '),'Primary Source')}`;}
 function draftBlock(id,prompt,responseType){return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button></div><div id="${id}-result" class="check-result"></div></div>`;}
 function responseBlock(id,prompt,responseType,terms=[]){return `<div class="prompt-box"><h3>Submit Your Checkpoint</h3><p>${prompt}</p><textarea class="response-area" id="${id}" data-response-type="${responseType}" data-terms="${terms.join('|')}" placeholder="Type your checkpoint response here..."></textarea><div class="tool-row"><button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button><button class="btn secondary" type="button" onclick="selfCheck('${id}')">Run Self-Check</button>${L.meta.feedbackToolUrl?`<a class="btn secondary" href="${L.meta.feedbackToolUrl}" target="_blank" rel="noopener">Open MagicSchool</a>`:''}</div><div id="${id}-result" class="check-result"></div></div>`;}
@@ -207,8 +217,8 @@ function loadDraft(id){const t=byId(id);if(!t)return;const saved=localStorage.ge
 function loadAllDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>loadDraft(t.id));}
 function copyResponse(id){const t=byId(id);if(!t)return;navigator.clipboard.writeText(t.value||'').then(()=>byId(id+'-result').textContent='Response copied.').catch(()=>byId(id+'-result').textContent='Copy failed. Select your text and copy manually.');}
 function selfCheck(id){const t=byId(id);if(!t)return;const text=(t.value||'').toLowerCase();const terms=(t.dataset.terms||'').split('|').filter(Boolean);const found=terms.filter(term=>text.includes(term.toLowerCase()));byId(id+'-result').textContent=`Self-check: ${text.split(/\s+/).filter(Boolean).length} words; evidence terms found: ${found.length?found.join(', '):'none yet'}.`;}
-function openLightbox(i){const img=L.images[i];openImageUrl(img.url,`${img.title} — ${img.caption}`)}
-function openMapLightbox(){openImageUrl(L.map.url,`${L.map.title} — ${L.map.caption}`)}
-function openImageUrl(url,caption){byId('lightbox-img').src=url;byId('lightbox-img').alt=caption;byId('lightbox-caption').textContent=caption;byId('lightbox').classList.add('show')}
+function openLightbox(i){const img=L.images[i];openImageUrl(sanitizeImageUrl(img.url),`${img.title} — ${img.caption}`)}
+function openMapLightbox(){openImageUrl(sanitizeImageUrl(L.map.url),`${L.map.title} — ${L.map.caption}`)}
+function openImageUrl(url,caption){byId('lightbox-img').src=sanitizeImageUrl(url);byId('lightbox-img').alt=caption;byId('lightbox-caption').textContent=caption;byId('lightbox').classList.add('show')}
 function closeLightbox(){byId('lightbox').classList.remove('show')}
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModule();closeLightbox();closeLectureModal();}});
