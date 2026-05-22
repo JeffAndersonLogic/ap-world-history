@@ -1,1 +1,339 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>BeHistorical | AP World 1.1</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/css/behistorical.css"/><link rel="stylesheet" href="../assets/css/behistorical-brand-lock.css"/><link rel="stylesheet" href="../assets/css/behistorical-topic-template-v1.css"/></head><body><div class="site-shell"><header class="topbar"><nav class="nav"><a class="brand-mini" href="../index.html"><img src="../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"><span>BeHistorical</span></a><div class="nav-links"><a href="../index.html">Home</a><a href="../unit-1/index.html">Unit 1</a><a href="#lesson-command-center">Command Center</a><a href="#modules">Modules</a><a href="#lecture">Lecture</a></div></nav></header><section class="hero" id="top"><a class="logo-home-link" href="../index.html"><div class="logo-frame"><img src="../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"></div></a><h1 class="logo-title">Be<span class="hero-h">H</span>ist<span class="globe-o">o</span>rical</h1><p class="subtitle">AP WORLD HISTORY</p><p class="hero-copy"><strong id="lesson-title"></strong><br><span id="lesson-subtitle"></span></p><div class="quick-nav"><a class="btn" href="#lesson-command-center">Start Lesson</a><a class="btn secondary" href="#modules">Open Modules</a><a class="btn secondary" href="#lecture">Lecture Cards</a></div></section><main><section class="section" id="lesson-command-center"><div class="section-header"><div class="eyebrow">Lesson Command Center</div><h2>Focused learning path.</h2><p>Start here, review the learning targets, then use the pop-out modules and lecture cards as needed for reading, source work, AP skill practice, and checkpoint responses.</p></div><article class="card"><h3>Classroom Flow</h3><div class="lesson-roadmap"><div class="roadmap-step"><strong>1. Build Context</strong>Review the targets, examine the map, and read the First &amp; 10 narrative.</div><div class="roadmap-step"><strong>2. Learn &amp; Practice</strong>Use the module cards, then move into the main lecture-card section.</div><div class="roadmap-step"><strong>3. Check Understanding</strong>Complete checkpoints with self-check and response tools.</div></div></article></section><section class="section" id="learning-targets"><div class="section-header"><div class="eyebrow">Learning Focus</div><h2>Learning Targets &amp; Success Criteria</h2><p>These stay visible on the main lesson page so students know exactly what they are learning and how success will be measured.</p></div><div id="inline-targets"></div></section><section class="section college-board-framework" id="college-board-key-concepts"></section><section class="section" id="modules"><div class="section-header"><div class="eyebrow">Interactive Modules</div><h2>Choose the component you need.</h2><p>These components open in focused pop-out windows for student work, source analysis, writing practice, and checkpoints.</p></div><div class="command-center" id="module-grid"></div></section><section class="section dark-panel" id="lecture"><div class="section-header"><div class="eyebrow">Content Delivery</div><h2 id="lecture-title"></h2><p id="lecture-intro"></p></div><div class="lecture-card-grid" id="main-lecture-grid"></div><div class="content-videos" id="content-video-clips"></div></section></main><footer class="footer"><div class="footer-brand">BeHistorical</div><p id="footer-topic-label">Think Like a Historian.</p></footer></div><div class="pop-modal" id="pop-modal" aria-modal="true" role="dialog"><div class="pop-panel"><div class="pop-header"><div><div class="eyebrow" id="pop-eyebrow">Lesson Module</div><h2 id="pop-title">Module</h2></div><button class="btn pop-close" onclick="closeModule()">Close</button></div><div class="pop-body" id="pop-body"></div></div></div><div class="lecture-modal" id="lecture-modal" aria-modal="true" role="dialog"><div class="lecture-modal-panel"><button class="btn lecture-close" onclick="closeLectureModal()">Close</button><div class="lecture-modal-grid"><div class="lecture-modal-content"><div class="eyebrow">Lecture Focus</div><h2 id="lecture-modal-title"></h2><ul class="lecture-list enlarged" id="lecture-modal-bullets"></ul></div><figure class="lecture-modal-image-wrap"><img id="lecture-modal-img" alt=""><figcaption id="lecture-modal-caption"></figcaption></figure></div></div></div><div class="lightbox" id="lightbox" aria-modal="true" role="dialog"><button class="btn" onclick="closeLightbox()">Close</button><figure><img id="lightbox-img" alt=""><figcaption id="lightbox-caption"></figcaption></figure></div><script src="../assets/data/lesson-1-1-song-china.js?v=beintheroom-v1"></script><script src="../assets/data/lesson-1-1-renderer-config.js?v=beintheroom-v1"></script><script src="../assets/js/behistorical-topic-renderer-v1.js?v=beintheroom-v1"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeHistorical | AP World Topic 1.1</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Brand CSS -->
+  <link rel="stylesheet" href="../assets/css/behistorical-brand-lock.css" />
+
+  <!-- Inline structural styles scoped to lesson layout only -->
+  <style>
+    /* ── Layout shell ───────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--color-warm-paper, #F5F0E7); color: var(--color-ink, #151718); font-family: 'Libre Baskerville', Georgia, serif; }
+
+    /* ── Nav ────────────────────────────────────── */
+    .lesson-nav { display: flex; align-items: center; justify-content: space-between; padding: .75rem 2rem; background: var(--color-blackened-steel, #1A1C1D); position: sticky; top: 0; z-index: 200; }
+    .brand-mini { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--color-antique-gold, #C9A46A); font-family: 'Cinzel', serif; font-size: .95rem; letter-spacing: .05em; }
+    .nav-globe { width: 28px; height: 28px; flex-shrink: 0; }
+    .nav-links { display: flex; gap: 1.5rem; }
+    .nav-links a { color: var(--color-warm-paper, #F5F0E7); font-family: 'Montserrat', sans-serif; font-size: .8rem; text-decoration: none; opacity: .75; transition: opacity .2s; }
+    .nav-links a:hover { opacity: 1; }
+
+    /* ── Hero ───────────────────────────────────── */
+    .hero { background: var(--color-blackened-steel, #1A1C1D); padding: 4rem 2rem 3.5rem; text-align: center; }
+    .hero-inner { max-width: 800px; margin: 0 auto; }
+    .logo-frame { display: inline-block; margin-bottom: 1.25rem; }
+    .logo-frame svg { width: 72px; height: 72px; }
+    .eyebrow { font-family: 'Montserrat', sans-serif; font-size: .7rem; letter-spacing: .18em; color: var(--color-antique-gold, #C9A46A); text-transform: uppercase; margin-bottom: .75rem; }
+    .hero-title { font-family: 'Cinzel', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); color: var(--color-warm-paper, #F5F0E7); line-height: 1.25; margin-bottom: .75rem; }
+    .hero-subtitle { font-family: 'Libre Baskerville', serif; font-size: 1rem; color: var(--color-antique-gold, #C9A46A); font-style: italic; }
+
+    /* ── Sections ───────────────────────────────── */
+    .section { padding: 4rem 2rem; }
+    .light-section { background: var(--color-warm-paper, #F5F0E7); }
+    .dark-section { background: var(--color-blackened-steel, #1A1C1D); }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 2.5rem; }
+    .section-header h2 { font-family: 'Cinzel', serif; font-size: clamp(1.3rem, 3vw, 2rem); color: var(--color-antique-gold, #C9A46A); margin: .5rem 0 .75rem; }
+    .section-header p { font-size: .95rem; max-width: 640px; margin: 0 auto; opacity: .85; }
+    .dark-section .section-header h2 { color: var(--color-antique-gold, #C9A46A); }
+    .dark-section .section-header p { color: var(--color-warm-paper, #F5F0E7); }
+
+    /* ── Module grid ────────────────────────────── */
+    .module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; }
+    .module-card { background: var(--color-charcoal-steel, #2B2F31); color: var(--color-warm-paper, #F5F0E7); border-radius: 6px; padding: 1.5rem; cursor: pointer; transition: transform .18s, box-shadow .18s; position: relative; overflow: hidden; min-height: 160px; display: flex; flex-direction: column; justify-content: flex-end; }
+    .module-card::before { content: ''; position: absolute; inset: 0; background-image: var(--module-img); background-size: cover; background-position: center; opacity: .18; }
+    .module-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+    .module-label { font-family: 'Montserrat', sans-serif; font-size: .65rem; letter-spacing: .14em; text-transform: uppercase; color: var(--color-antique-gold, #C9A46A); margin-bottom: .4rem; position: relative; }
+    .module-card h3 { font-family: 'Cinzel', serif; font-size: 1rem; margin-bottom: .4rem; position: relative; }
+    .module-card p { font-size: .8rem; opacity: .8; line-height: 1.45; position: relative; }
+
+    /* ── Lecture grid ───────────────────────────── */
+    .lecture-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; }
+    .lecture-topic-card { background: var(--color-charcoal-steel, #2B2F31); color: var(--color-warm-paper, #F5F0E7); border-radius: 6px; padding: 1.5rem; cursor: pointer; transition: transform .18s; }
+    .lecture-topic-card:hover { transform: translateY(-2px); }
+    .lecture-topic-card h3 { font-family: 'Cinzel', serif; font-size: 1rem; color: var(--color-antique-gold, #C9A46A); margin-bottom: .75rem; }
+    .lecture-list { list-style: none; padding: 0; }
+    .lecture-list li { font-size: .85rem; padding: .3rem 0; border-bottom: 1px solid rgba(255,255,255,.07); line-height: 1.5; }
+    .lecture-list li:last-child { border-bottom: none; }
+
+    /* ── Video grid ─────────────────────────────── */
+    .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+    .video-card { background: var(--color-charcoal-steel, #2B2F31); color: var(--color-warm-paper, #F5F0E7); border-radius: 6px; padding: 1.5rem; }
+    .video-card h3 { font-family: 'Cinzel', serif; font-size: .9rem; color: var(--color-antique-gold, #C9A46A); margin-bottom: .75rem; }
+    .video-thumb { height: 140px; border-radius: 4px; background: var(--color-gunmetal-gray, #3E4447); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; margin-bottom: .75rem; }
+    .video-thumb span { font-family: 'Montserrat', sans-serif; font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; opacity: .6; }
+
+    /* ── Inline targets ─────────────────────────── */
+    .inline-targets { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    @media (max-width: 640px) { .inline-targets { grid-template-columns: 1fr; } }
+    .inline-target-card { background: var(--color-clean-paper, #FFFDF7); border: 1px solid rgba(0,0,0,.1); border-radius: 6px; padding: 1.5rem; }
+    .inline-target-card h3 { font-family: 'Cinzel', serif; font-size: 1rem; color: var(--color-blackened-steel, #1A1C1D); margin-bottom: 1rem; }
+    .inline-target-item { display: flex; gap: .75rem; margin-bottom: .85rem; align-items: flex-start; }
+    .inline-target-number { background: var(--color-antique-gold, #C9A46A); color: var(--color-blackened-steel, #1A1C1D); font-family: 'Montserrat', sans-serif; font-size: .75rem; font-weight: 700; min-width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .inline-target-item p { font-size: .88rem; line-height: 1.55; margin: 0; }
+    .inline-target-kc { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: .68rem; background: var(--color-blackened-steel, #1A1C1D); color: var(--color-antique-gold, #C9A46A); padding: .2rem .5rem; border-radius: 3px; margin-top: .35rem; letter-spacing: .04em; }
+
+    /* ── CB Framework ───────────────────────────── */
+    .cb-framework-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; max-width: 1100px; margin: 0 auto; }
+    .cb-card { background: var(--color-charcoal-steel, #2B2F31); border-radius: 6px; padding: 1.5rem; }
+    .cb-code { font-family: 'Montserrat', sans-serif; font-size: .65rem; letter-spacing: .14em; text-transform: uppercase; color: var(--color-antique-gold, #C9A46A); display: block; margin-bottom: .5rem; }
+    .cb-card h3 { display: none; }
+    .cb-card p { font-size: .88rem; color: var(--color-warm-paper, #F5F0E7); line-height: 1.6; margin-bottom: .75rem; }
+    .cb-examples { margin-top: .75rem; padding-top: .75rem; border-top: 1px solid rgba(255,255,255,.1); }
+    .cb-examples strong { font-family: 'Montserrat', sans-serif; font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--color-antique-gold, #C9A46A); display: block; margin-bottom: .4rem; }
+    .cb-examples ul { list-style: none; padding: 0; }
+    .cb-examples li { font-size: .82rem; color: var(--color-warm-paper, #F5F0E7); padding: .25rem 0; opacity: .88; }
+
+    /* ── Modal overlays ─────────────────────────── */
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(21,23,24,.85); z-index: 500; overflow-y: auto; padding: 2rem 1rem; }
+    .modal-overlay.show { display: block; }
+    .modal-panel { background: var(--color-warm-paper, #F5F0E7); border-radius: 8px; max-width: 900px; margin: 0 auto; padding: 2rem; position: relative; }
+    .modal-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.25rem; cursor: pointer; color: var(--color-ink, #151718); opacity: .5; transition: opacity .2s; line-height: 1; }
+    .modal-close:hover { opacity: 1; }
+    .modal-header { margin-bottom: 1.5rem; }
+    .modal-header h2 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--color-blackened-steel, #1A1C1D); margin-top: .3rem; }
+    .pop-body { font-size: .9rem; line-height: 1.65; }
+
+    /* ── Lecture modal ──────────────────────────── */
+    .lecture-modal-overlay .modal-panel { background: var(--color-blackened-steel, #1A1C1D); max-width: 1000px; }
+    .lecture-modal-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    @media (max-width: 680px) { .lecture-modal-layout { grid-template-columns: 1fr; } }
+    .lecture-modal-content h2 { font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--color-antique-gold, #C9A46A); margin-bottom: 1rem; }
+    .lecture-modal-bullets { list-style: none; padding: 0; }
+    .lecture-modal-bullets li { color: var(--color-warm-paper, #F5F0E7); font-size: .88rem; padding: .4rem 0; border-bottom: 1px solid rgba(255,255,255,.08); line-height: 1.55; }
+    .lecture-modal-bullets li:last-child { border-bottom: none; }
+    .lecture-modal-image { width: 100%; border-radius: 4px; object-fit: cover; max-height: 280px; }
+    .lecture-modal-caption { font-family: 'Montserrat', sans-serif; font-size: .72rem; color: rgba(245,240,231,.7); margin-top: .5rem; line-height: 1.5; }
+    .lecture-modal-caption a { color: var(--color-antique-gold, #C9A46A); }
+
+    /* ── Lightbox ───────────────────────────────── */
+    .lightbox-overlay { display: none; position: fixed; inset: 0; background: rgba(21,23,24,.95); z-index: 600; align-items: center; justify-content: center; cursor: zoom-out; }
+    .lightbox-overlay.show { display: flex; }
+    .lightbox-inner { position: relative; max-width: 90vw; max-height: 90vh; }
+    .lightbox-image { max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: 4px; display: block; }
+    .lightbox-caption { color: rgba(245,240,231,.75); font-family: 'Montserrat', sans-serif; font-size: .75rem; text-align: center; margin-top: .75rem; }
+    .lightbox-close { position: absolute; top: -2rem; right: 0; color: var(--color-warm-paper, #F5F0E7); }
+
+    /* ── Cards & utilities ──────────────────────── */
+    .card { background: var(--color-clean-paper, #FFFDF7); border: 1px solid rgba(0,0,0,.09); border-radius: 6px; padding: 1.5rem; }
+    .dark-card { background: var(--color-charcoal-steel, #2B2F31); color: var(--color-warm-paper, #F5F0E7); border: none; }
+    .pop-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .pop-half { flex: 1; }
+    .pop-two-third { flex: 2; }
+    .pop-third { flex: 1; }
+    @media (max-width: 600px) { .pop-grid { grid-template-columns: 1fr; } }
+    .component-note { background: var(--color-blackened-steel, #1A1C1D); color: var(--color-antique-gold, #C9A46A); font-family: 'Montserrat', sans-serif; font-size: .78rem; padding: .6rem 1rem; border-radius: 4px; margin-bottom: 1rem; }
+    .question { background: rgba(201,164,106,.1); border-left: 3px solid var(--color-antique-gold, #C9A46A); padding: .75rem 1rem; margin: .75rem 0; border-radius: 0 4px 4px 0; font-size: .88rem; }
+    .response-area { width: 100%; min-height: 120px; border: 1px solid rgba(0,0,0,.15); border-radius: 4px; padding: .75rem; font-family: 'Libre Baskerville', serif; font-size: .88rem; resize: vertical; margin-top: .5rem; background: var(--color-clean-paper, #FFFDF7); }
+    .tool-row { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .75rem; }
+    .btn { background: var(--color-antique-gold, #C9A46A); color: var(--color-blackened-steel, #1A1C1D); font-family: 'Montserrat', sans-serif; font-size: .78rem; font-weight: 600; padding: .5rem 1.1rem; border: none; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-block; transition: opacity .18s; letter-spacing: .03em; }
+    .btn:hover { opacity: .85; }
+    .btn.secondary { background: transparent; color: var(--color-blackened-steel, #1A1C1D); border: 1.5px solid var(--color-blackened-steel, #1A1C1D); }
+    .check-result { font-family: 'Montserrat', sans-serif; font-size: .75rem; color: var(--color-aged-iron, #5A5F5C); margin-top: .4rem; min-height: 1.2em; }
+    .prompt-box { background: rgba(201,164,106,.08); border: 1px solid rgba(201,164,106,.3); border-radius: 6px; padding: 1.25rem; margin-top: 1rem; }
+    .prompt-box h3 { font-family: 'Cinzel', serif; font-size: 1rem; margin-bottom: .5rem; }
+
+    /* ── MagicSchool bridge ─────────────────────── */
+    .magicschool-bridge { background: var(--color-blackened-steel, #1A1C1D); color: var(--color-warm-paper, #F5F0E7); border-radius: 6px; padding: 1.5rem; margin-top: 1.5rem; }
+    .magicschool-bridge h3 { font-family: 'Cinzel', serif; font-size: 1rem; color: var(--color-antique-gold, #C9A46A); margin-bottom: .5rem; }
+    .magicschool-bridge p { font-size: .88rem; line-height: 1.6; margin-bottom: .75rem; opacity: .9; }
+    .bridge-fields { display: flex; flex-direction: column; gap: .85rem; margin: 1rem 0; }
+    .bridge-label { font-family: 'Montserrat', sans-serif; font-size: .78rem; font-weight: 600; color: var(--color-antique-gold, #C9A46A); display: block; margin-bottom: .35rem; }
+    .bridge-fields .response-area { background: var(--color-charcoal-steel, #2B2F31); color: var(--color-warm-paper, #F5F0E7); border-color: rgba(201,164,106,.3); min-height: 80px; }
+    .copy-template { background: var(--color-charcoal-steel, #2B2F31); border: 1px solid rgba(201,164,106,.25); border-radius: 4px; padding: .85rem 1rem; margin: .75rem 0; }
+    .copy-template-text { font-family: 'Montserrat', sans-serif; font-size: .8rem; color: var(--color-warm-paper, #F5F0E7); line-height: 1.55; font-style: italic; }
+    .magicschool-bridge .btn.secondary { color: var(--color-warm-paper, #F5F0E7); border-color: rgba(201,164,106,.5); }
+    .magicschool-bridge .check-result { color: var(--color-antique-gold, #C9A46A); }
+    .canvas-note { font-family: 'Montserrat', sans-serif; font-size: .75rem; opacity: .7; margin-top: 1rem !important; border-top: 1px solid rgba(255,255,255,.1); padding-top: .75rem; }
+
+    /* ── Checkpoint grid ────────────────────────── */
+    .checkpoint-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+    @media (max-width: 600px) { .checkpoint-grid { grid-template-columns: 1fr; } }
+    .checkpoint-focus { background: var(--color-clean-paper, #FFFDF7); border: 1px solid rgba(0,0,0,.09); border-radius: 6px; padding: 1rem; }
+    .checkpoint-focus h4 { font-family: 'Cinzel', serif; font-size: .9rem; margin-bottom: .5rem; }
+    .checkpoint-focus ul { list-style: disc; padding-left: 1.1rem; font-size: .85rem; }
+    .checkpoint-focus ul li { margin-bottom: .3rem; }
+
+    /* ── First & 10 ─────────────────────────────── */
+    .reading p { font-size: .92rem; line-height: 1.75; margin-bottom: 1rem; }
+    .first10-frame-wrap { width: 100%; height: 600px; border: none; border-radius: 4px; overflow: hidden; margin-top: 1rem; }
+    .first10-frame { width: 100%; height: 100%; border: none; }
+    .first10-note { font-family: 'Montserrat', sans-serif; font-size: .82rem; background: rgba(201,164,106,.1); border-left: 3px solid var(--color-antique-gold, #C9A46A); padding: .6rem 1rem; border-radius: 0 4px 4px 0; margin-bottom: .75rem; }
+
+    /* ── Map / image cards ──────────────────────── */
+    .map-card { padding: 0; overflow: hidden; }
+    .map-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    @media (max-width: 680px) { .map-grid { grid-template-columns: 1fr; } }
+    .map-figure { margin: 0; }
+    .map-figure img { width: 100%; display: block; cursor: zoom-in; }
+    .map-figure figcaption { font-size: .78rem; padding: .75rem; background: rgba(0,0,0,.04); }
+    .map-notes { padding: 1.5rem; }
+    .map-key { margin: .75rem 0; }
+    .map-key h4 { font-family: 'Cinzel', serif; font-size: .85rem; margin-bottom: .5rem; }
+    .map-key-item { display: flex; gap: .75rem; font-size: .82rem; padding: .25rem 0; }
+    .map-key-label { font-weight: 700; min-width: 80px; }
+    .image-card img { width: 100%; border-radius: 4px; cursor: zoom-in; margin-bottom: .5rem; }
+    .image-caption { font-size: .8rem; line-height: 1.5; }
+    .source-link { color: var(--color-burnished-bronze, #8C5A2B); font-size: .75rem; }
+
+    /* ── Skill builder ──────────────────────────── */
+    .skill-steps { margin: 1rem 0; }
+    .skill-step { background: rgba(201,164,106,.08); border-left: 3px solid var(--color-antique-gold, #C9A46A); padding: .6rem 1rem; margin-bottom: .5rem; border-radius: 0 4px 4px 0; font-size: .88rem; }
+    .skill-step strong { display: block; font-family: 'Montserrat', sans-serif; font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; margin-bottom: .2rem; }
+
+    /* ── Primary source ─────────────────────────── */
+    blockquote { font-style: italic; border-left: 3px solid var(--color-antique-gold, #C9A46A); padding: .75rem 1.25rem; margin: 1rem 0; font-size: .9rem; line-height: 1.7; background: rgba(201,164,106,.06); border-radius: 0 4px 4px 0; }
+
+    /* ── Footer ─────────────────────────────────── */
+    .lesson-footer { background: var(--color-ink, #151718); color: rgba(245,240,231,.5); text-align: center; padding: 1.5rem 2rem; }
+    .footer-label { font-family: 'Montserrat', sans-serif; font-size: .72rem; letter-spacing: .08em; margin-bottom: .35rem; }
+    .footer-brand { font-family: 'Cinzel', serif; font-size: .8rem; color: var(--color-antique-gold, #C9A46A); opacity: .7; }
+
+    /* ── Media card ─────────────────────────────── */
+    .media-card { font-size: .88rem; }
+    .media-card p { margin: .4rem 0; }
+    .media-card strong { display: block; margin-bottom: .25rem; }
+  </style>
+</head>
+<body class="lesson-page">
+
+  <!-- ─── NAV ──────────────────────────────────── -->
+  <nav class="lesson-nav">
+    <a class="brand-mini" href="../index.html" aria-label="Return to BeHistorical landing page">
+      <svg class="nav-globe" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="17" stroke="#C9A46A" stroke-width="2"/>
+        <ellipse cx="20" cy="20" rx="8.5" ry="17" stroke="#C9A46A" stroke-width="1.5"/>
+        <line x1="3" y1="20" x2="37" y2="20" stroke="#C9A46A" stroke-width="1.5"/>
+        <line x1="20" y1="3" x2="20" y2="37" stroke="#C9A46A" stroke-width="1.5"/>
+      </svg>
+      <span class="brand-wordmark">BeHistorical</span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../unit-1/">Unit 1</a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────────── -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="logo-frame">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="40" cy="40" r="35" stroke="#C9A46A" stroke-width="2.5"/>
+          <ellipse cx="40" cy="40" rx="17" ry="35" stroke="#C9A46A" stroke-width="2"/>
+          <line x1="5" y1="40" x2="75" y2="40" stroke="#C9A46A" stroke-width="2"/>
+          <line x1="40" y1="5" x2="40" y2="75" stroke="#C9A46A" stroke-width="2"/>
+          <path d="M 10 25 Q 40 18 70 25" stroke="#C9A46A" stroke-width="1.2" fill="none"/>
+          <path d="M 10 55 Q 40 62 70 55" stroke="#C9A46A" stroke-width="1.2" fill="none"/>
+        </svg>
+      </div>
+      <p class="eyebrow">AP WORLD HISTORY &middot; UNIT 1: THE GLOBAL TAPESTRY</p>
+      <h1 id="lesson-title" class="hero-title">Loading&hellip;</h1>
+      <p id="lesson-subtitle" class="hero-subtitle"></p>
+    </div>
+  </header>
+
+  <!-- ─── LEARNING TARGETS ──────────────────────── -->
+  <section class="section light-section targets-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Where We&rsquo;re Headed</div>
+        <h2>Learning Targets &amp; Success Criteria</h2>
+        <p>These are the skills and knowledge you are building in this lesson. Return to these after the lecture and before each checkpoint.</p>
+      </div>
+      <div id="inline-targets"></div>
+    </div>
+  </section>
+
+  <!-- ─── COLLEGE BOARD FRAMEWORK ──────────────── -->
+  <section class="section dark-section" id="college-board-key-concepts">
+    <!-- Renderer injects content here -->
+  </section>
+
+  <!-- ─── MODULE GRID ───────────────────────────── -->
+  <section class="section light-section modules-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Lesson Pathway</div>
+        <h2>Choose Your Module</h2>
+        <p>Work through each module in order. Each one builds toward the AP Checkpoint.</p>
+      </div>
+      <div id="module-grid" class="module-grid"></div>
+    </div>
+  </section>
+
+  <!-- ─── LECTURE ────────────────────────────────── -->
+  <section class="section dark-section lecture-section" id="lecture">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Content Delivery</div>
+        <h2 id="lecture-title"></h2>
+        <p id="lecture-intro"></p>
+      </div>
+      <div id="main-lecture-grid" class="lecture-grid"></div>
+      <div id="content-video-clips" class="video-grid"></div>
+    </div>
+  </section>
+
+  <!-- ─── POP-OUT MODULE MODAL ──────────────────── -->
+  <div id="pop-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="pop-title">
+    <div class="modal-panel pop-panel">
+      <button class="modal-close" onclick="closeModule()" aria-label="Close module">&times;</button>
+      <div class="modal-header">
+        <div class="eyebrow" id="pop-eyebrow"></div>
+        <h2 id="pop-title"></h2>
+      </div>
+      <div id="pop-body" class="pop-body"></div>
+    </div>
+  </div>
+
+  <!-- ─── LECTURE CARD MODAL ────────────────────── -->
+  <div id="lecture-modal" class="modal-overlay lecture-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="lecture-modal-title">
+    <div class="modal-panel lecture-modal-panel">
+      <button class="modal-close" onclick="closeLectureModal()" aria-label="Close lecture card">&times;</button>
+      <div class="lecture-modal-layout">
+        <div class="lecture-modal-content">
+          <h2 id="lecture-modal-title"></h2>
+          <ul id="lecture-modal-bullets" class="lecture-modal-bullets"></ul>
+        </div>
+        <div class="lecture-modal-media">
+          <img id="lecture-modal-img" src="" alt="" class="lecture-modal-image" />
+          <div id="lecture-modal-caption" class="lecture-modal-caption"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── IMAGE LIGHTBOX ────────────────────────── -->
+  <div id="lightbox" class="lightbox-overlay" role="dialog" aria-modal="true" onclick="closeLightbox()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <button class="modal-close lightbox-close" onclick="closeLightbox()" aria-label="Close image">&times;</button>
+      <img id="lightbox-img" src="" alt="" class="lightbox-image" />
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ─── FOOTER ────────────────────────────────── -->
+  <footer class="lesson-footer">
+    <div class="container">
+      <p id="footer-topic-label" class="footer-label"></p>
+      <p class="footer-brand">BeHistorical &middot; Think Like a Historian.</p>
+    </div>
+  </footer>
+
+  <!-- ─── SCRIPTS — cache-busted ────────────────── -->
+  <script src="../assets/data/lesson-1-1-song-china.js?v=magicschool-v1"></script>
+  <script src="../assets/data/lesson-1-1-renderer-config.js?v=magicschool-v1"></script>
+  <script src="../assets/js/behistorical-topic-renderer-v1.js?v=magicschool-v1"></script>
+
+</body>
+</html>
