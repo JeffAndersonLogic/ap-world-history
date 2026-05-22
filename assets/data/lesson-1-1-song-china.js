@@ -24,6 +24,7 @@
 })();
 
 window.BEHISTORICAL_LESSON = {
+
   meta: {
     course: "AP WORLD HISTORY",
     unit: "Unit 1: The Global Tapestry",
@@ -64,12 +65,6 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // KEY CONCEPTS — verbatim from CED MASTER v1.1
-  // Replaces the old `framework` array. The renderer reads `collegeBoardKeyConcepts`.
-  // Illustrative Example category labels are preserved as <strong> strings
-  // so they render as bold headers inside the <ul> the renderer builds.
-  // ─────────────────────────────────────────────────────────────────────────
   collegeBoardKeyConcepts: [
     {
       code: "KC-3.2.I.A",
@@ -114,6 +109,29 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
 
+  stableImages: {
+    contentDelivery: "../assets/images/1-1-lecture.jpg",
+    checkpoint1: "../assets/images/1-1-checkpoint1.jpg",
+    checkpoint2: "../assets/images/1-1-checkpoint2.jpg",
+    beInTheRoom: "../assets/images/1-1-beintheroom.jpg",
+    beSurreal: "../assets/images/1-1-besurreal.jpg"
+  },
+
+  map: {
+    title: "Map: Northern Song China and Neighboring States",
+    intro: "Before the First & 10 reading, locate Song China in East Asia. This source-based map shows the Song Dynasty at its greatest territorial extent in 1111, along with neighboring states such as Liao and Western Xia.",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/China_-_Song_Dynasty-en.svg",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:China_-_Song_Dynasty-en.svg",
+    caption: "Map of China during the Northern Song Dynasty. Source: Wikimedia Commons.",
+    notes: [
+      "This map shows the **Northern Song** world before the dynasty lost northern territory and later ruled from **Lin'an/Hangzhou** as the Southern Song.",
+      "The presence of **Liao** and **Western Xia** helps explain why the Song state needed organized government, revenue, and defense systems.",
+      "Song power was strongest in China proper, but the dynasty operated in a wider East Asian world of neighboring states, frontiers, diplomacy, and conflict.",
+      "Use this map as a geographic anchor before studying the systems that made Song China wealthy and administratively sophisticated."
+    ],
+    prompt: "How does this map help explain why Song China needed strong bureaucracy, infrastructure, and economic systems to maintain power?"
+  },
+
   first10: {
     title: "First & 10: Song China — Power, Prosperity, and the Scholar's World",
     paragraphs: [
@@ -137,22 +155,15 @@ window.BEHISTORICAL_LESSON = {
       "What conditions helped Song China become wealthy, organized, and powerful?",
       "What older Chinese traditions continued under the Song, and what new developments changed Chinese society?",
       "Which development seems most important to Song China's success: civil service exams, Confucianism, Champa rice, the Grand Canal, paper money, or printing? Defend your answer with evidence from the reading."
-    ]
-  },
-
-  map: {
-    title: "Map: Northern Song China and Neighboring States",
-    intro: "Before the First & 10 reading, locate Song China in East Asia. This source-based map shows the Song Dynasty at its greatest territorial extent in 1111, along with neighboring states such as Liao and Western Xia. It is a clearer reference map for understanding where Song power was centered before the later Southern Song retreat.",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/China_-_Song_Dynasty-en.svg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:China_-_Song_Dynasty-en.svg",
-    caption: "Map of China during the Northern Song Dynasty, showing the Song state at its greatest extent in 1111 and neighboring states including Liao and Western Xia. Source: Wikimedia Commons, based on Tan Qixiang's Historical Atlas of China.",
-    notes: [
-      "This map shows the **Northern Song** world before the dynasty lost northern territory and later ruled from **Lin'an/Hangzhou** as the Southern Song.",
-      "The presence of **Liao** and **Western Xia** helps explain why the Song state needed organized government, revenue, and defense systems.",
-      "Song power was strongest in China proper, but the dynasty operated in a wider East Asian world of neighboring states, frontiers, diplomacy, and conflict.",
-      "Use this map as a geographic anchor before studying the systems that made Song China wealthy and administratively sophisticated."
     ],
-    prompt: "How does this map help explain why Song China needed strong bureaucracy, infrastructure, and economic systems to maintain power?"
+    magicSchoolBridge: {
+      title: "Take Your Thinking to the AI Coach",
+      directions: "Before you move to the lecture, complete these two sentences. Then copy your response into the BeHistorical AI Coach in MagicSchool and follow the coaching conversation.",
+      prompt1: "One thing I noticed in this reading was...",
+      prompt2: "One question I still have is...",
+      copyInstructions: "Click Build My Prompt, then copy it into the BeHistorical AI Coach:",
+      magicSchoolUrl: "https://app.magicschool.ai/"
+    }
   },
 
   lecture: {
@@ -172,7 +183,7 @@ window.BEHISTORICAL_LESSON = {
           title: "Emperor Huizong of Song",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Huizong.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Huizong.jpg",
-          caption: "Imperial portraits help students visualize dynastic authority and the political world that surrounded claims to legitimate rule."
+          caption: "Imperial portraits help students visualize dynastic authority and claims to legitimate rule."
         }
       },
       {
@@ -303,20 +314,77 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
-  practice: {
-    title: "Practice: Explain the System",
-    prompt: "Explain how two developments in Song China worked together to strengthen the state or economy.",
-    terms: ["civil service exam", "Confucianism", "bureaucracy", "Champa rice", "Grand Canal", "paper money", "printing", "commerce"]
+  skillBuilder: {
+    label: "Causation — How did Song innovations connect to economic and social change?",
+    title: "AP Skill Builder: Causation",
+    intro: "Causation asks you to explain why things happened and what effects they produced. In Song China, several developments worked together in a chain of cause and effect.",
+    steps: [
+      { label: "Step 1 — Identify a cause", text: "Name a specific Song development (Champa rice, Grand Canal, civil service exam, paper money)." },
+      { label: "Step 2 — Explain the effect", text: "Describe what changed as a result. Be specific: population growth, urbanization, trade expansion, political stability." },
+      { label: "Step 3 — Connect to a bigger pattern", text: "How does this cause-and-effect pair connect to Song China's overall power or prosperity?" }
+    ],
+    prompt: "Choose one Song development and trace its effects. What changed because of it, and how did that change strengthen Song China?"
   },
 
-  checkpoint: {
-    title: "AP Checkpoint: Song China as a System",
-    prompt: "Explain how two developments in Song China helped strengthen the state or economy between c. 1200 and c. 1450.",
-    checklist: [
-      "Make a clear claim.",
-      "Use at least two specific Song developments.",
-      "Explain cause and effect instead of only naming terms.",
-      "Connect the evidence to state power, prosperity, or social order."
-    ]
-  }
+  beSurreal: {
+    title: "BeSurreal: The Paper Money Moment",
+    text: "Imagine holding a piece of paper and being told it was worth a thousand copper coins you would never see. In Song China, this was real life. Paper money called jiaozi was first used in Sichuan province around 1000 CE because merchants were tired of hauling heavy iron coins. The government eventually took it over, backed it with reserves, and issued it across the empire. You did not have gold in your pocket. You had trust in ink and paper.",
+    prompt: "Why would people accept paper as money? What does this tell you about the relationship between trust and government power?"
+  },
+
+  beInTheRoom: {
+    url: '../beintheroom/unit-1/song-court.html',
+    desc: 'Enter the Song court, choose a historical role, advise the emperor, and defend a policy recommendation with evidence.'
+  },
+
+  checkpoints: [
+    {
+      subtitle: "Checkpoint 1 — Mid-Lesson Draft Check",
+      cardDesc: "Build your first draft and take it to the BeHistorical AI Coach before your final response.",
+      learningTargets: [
+        "I can explain how Song China used Confucianism and imperial bureaucracy to maintain rule.",
+        "I can describe how Chinese cultural traditions shaped East Asia.",
+        "I can connect economic innovations to Song China's prosperity."
+      ],
+      successCriteria: [
+        "My response includes at least one piece of specific evidence.",
+        "My response connects that evidence to a historical claim.",
+        "My response addresses government, culture, OR economy."
+      ],
+      terms: ["civil service exam", "Confucianism", "bureaucracy", "Champa rice", "Grand Canal"],
+      focus: [
+        "Make a clear historical claim.",
+        "Use at least one specific piece of evidence.",
+        "Connect evidence to a historical outcome."
+      ],
+      prompt: "Explain how one development in Song China helped strengthen the state or economy. Use specific evidence from the lesson.",
+      responseType: "Checkpoint 1",
+      magicSchoolMode: "Checkpoint 1"
+    },
+    {
+      subtitle: "Checkpoint 2 — Final Response",
+      cardDesc: "Polish your final response with AI coaching before submitting in Canvas.",
+      learningTargets: [
+        "I can explain how Song China used Confucianism and imperial bureaucracy to maintain rule.",
+        "I can describe how Chinese cultural traditions shaped East Asia.",
+        "I can connect economic innovations to Song China's prosperity."
+      ],
+      successCriteria: [
+        "My response makes a clear claim supported by at least two pieces of specific evidence.",
+        "My response connects evidence to state power, prosperity, or social order.",
+        "My response addresses a tradeoff, limitation, or opposing perspective."
+      ],
+      terms: ["civil service exam", "Confucianism", "bureaucracy", "Neo-Confucianism", "Champa rice", "Grand Canal", "paper money", "scholar-official"],
+      focus: [
+        "Make a clear claim.",
+        "Use at least two specific Song developments.",
+        "Explain cause and effect rather than just naming terms.",
+        "Address a tradeoff, limitation, or opposing perspective."
+      ],
+      prompt: "Explain how two developments in Song China helped strengthen the state or economy between c. 1200 and c. 1450. Address at least one tradeoff or limitation.",
+      responseType: "Checkpoint 2",
+      magicSchoolMode: "Checkpoint 2"
+    }
+  ]
+
 };
