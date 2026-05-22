@@ -279,10 +279,21 @@ function renderFirst10() {
     </div>
     <div class="card">
       <h3>First &amp; 10 Response Questions</h3>
-      ${L.first10.questions.map((q, i) => `<div class="question"><strong>Question ${i + 1}</strong><br>${q}</div>`).join('')}
+      <p>Answer these three questions first. Your responses will become the evidence for your AI Coach prompt.</p>
+      ${renderFirst10QuestionFields()}
+      <div class="tool-row">
+        <button class="btn" type="button" onclick="saveFirst10Responses()">Save Responses</button>
+        <button class="btn secondary" type="button" onclick="generateFirst10Prompt()">Build AI Coach Prompt</button>
+      </div>
+      <div id="first10-questions-result" class="check-result"></div>
     </div>
-    ${draftBlock('first10-response', L.first10.questions.join(' '), 'First and 10')}
     ${bridge}`;
+}
+
+function renderFirst10QuestionFields() {
+  return (L.first10.questions || []).map((q, i) => `
+    <div class="question"><strong>Question ${i + 1}</strong><br>${q}</div>
+    <textarea class="response-area" id="first10-q-${i + 1}" data-response-type="First and 10 Question ${i + 1}" placeholder="Type your response to Question ${i + 1} here..."></textarea>`).join('');
 }
 
 function renderFirst10Bridge(bridge) {
@@ -291,23 +302,13 @@ function renderFirst10Bridge(bridge) {
   return `
     <div class="magicschool-bridge first10-bridge">
       <h3>${bridge.title || 'Take Your Thinking to the AI Coach'}</h3>
-      <p>${bridge.directions || 'Before the lecture, complete these two sentences. Then copy your response into the BeHistorical AI Coach.'}</p>
-      <div class="bridge-fields">
-        <div>
-          <label class="bridge-label">${bridge.prompt1 || 'One thing I noticed in this reading was...'}</label>
-          <textarea class="response-area" id="first10-noticed" placeholder="Type your observation here..."></textarea>
-        </div>
-        <div>
-          <label class="bridge-label">${bridge.prompt2 || 'One question I still have is...'}</label>
-          <textarea class="response-area" id="first10-question" placeholder="Type your question here..."></textarea>
-        </div>
-      </div>
-      <p style="font-size:.82rem;opacity:.85;margin-bottom:.5rem;">${bridge.copyInstructions || 'Build your prompt, then copy it into the BeHistorical AI Coach:'}</p>
+      <p>Use your three First &amp; 10 responses above to build a coaching prompt. The AI Coach should help you improve your evidence and reasoning, not write the final answer for you.</p>
+      <p style="font-size:.82rem;opacity:.85;margin-bottom:.5rem;">${bridge.copyInstructions || 'Click Build AI Coach Prompt, then copy it into the BeHistorical AI Coach:'}</p>
       <div class="copy-template">
-        <p class="copy-template-text" id="first10-ms-preview">Your prompt will appear here after you click Build My Prompt.</p>
+        <p class="copy-template-text" id="first10-ms-preview">Your prompt will appear here after you click Build AI Coach Prompt.</p>
       </div>
       <div class="tool-row">
-        <button class="btn" type="button" onclick="generateFirst10Prompt()">Build My Prompt</button>
+        <button class="btn" type="button" onclick="generateFirst10Prompt()">Build AI Coach Prompt</button>
         <button class="btn secondary" type="button" onclick="copyFirst10Prompt()">Copy Prompt</button>
         <a class="btn secondary" href="${msUrl}" target="_blank" rel="noopener">Open AI Coach</a>
       </div>
@@ -318,21 +319,40 @@ function renderFirst10Bridge(bridge) {
 
 // ── First & 10 prompt functions ───────────────────────────────────────────────
 
+function getFirst10Responses() {
+  return (L.first10.questions || []).map((question, i) => {
+    const el = byId(`first10-q-${i + 1}`);
+    return {
+      question,
+      response: el && el.value.trim() ? el.value.trim() : ''
+    };
+  });
+}
+
+function saveFirst10Responses() {
+  getFirst10Responses().forEach((_, i) => saveDraft(`first10-q-${i + 1}`));
+  const resultEl = byId('first10-questions-result');
+  if (resultEl) resultEl.textContent = 'First & 10 responses saved on this device.';
+}
+
 function generateFirst10Prompt() {
-  const noticedEl = byId('first10-noticed');
-  const questionEl = byId('first10-question');
   const previewEl = byId('first10-ms-preview');
-  const resultEl = byId('first10-ms-result');
-  const noticed = (noticedEl && noticedEl.value.trim()) ? noticedEl.value.trim() : '';
-  const question = (questionEl && questionEl.value.trim()) ? questionEl.value.trim() : '';
+  const resultEl = byId('first10-ms-result') || byId('first10-questions-result');
   const topic = (L && L.meta && L.meta.topic) ? L.meta.topic : 'this topic';
-  if (!noticed && !question) {
-    if (resultEl) resultEl.textContent = 'Fill in at least one field above first.';
+  const title = (L && L.meta && L.meta.title) ? L.meta.title : 'this lesson';
+  const responses = getFirst10Responses();
+  const hasResponse = responses.some(item => item.response);
+
+  if (!hasResponse) {
+    if (resultEl) resultEl.textContent = 'Answer at least one First & 10 question above before building your AI Coach prompt.';
     return;
   }
-  const prompt = `${topic}, First & 10 Reflection. One thing I noticed: ${noticed || '[not filled in]'}. One question I have: ${question || '[not filled in]'}.`;
+
+  const responseText = responses.map((item, i) => `Question ${i + 1}: ${item.question}\nMy response: ${item.response || '[not answered yet]'}`).join('\n\n');
+  const prompt = `I just completed the First & 10 reading for ${topic} — ${title}. Here are my responses:\n\n${responseText}\n\nPlease coach me by asking one question at a time. Help me strengthen my evidence, historical reasoning, and explanation. Do not write my final answer for me.`;
+
   if (previewEl) previewEl.textContent = prompt;
-  if (resultEl) resultEl.textContent = 'Prompt ready — click Copy Prompt to copy it.';
+  if (resultEl) resultEl.textContent = 'AI Coach prompt ready — click Copy Prompt to copy it.';
 }
 
 function copyFirst10Prompt() {
@@ -510,7 +530,8 @@ function saveDraft(id) {
   const t = byId(id);
   if (!t) return;
   localStorage.setItem(`behistorical-draft-${id}`, t.value || '');
-  byId(id + '-result').textContent = 'Draft saved on this device.';
+  const result = byId(id + '-result');
+  if (result) result.textContent = 'Draft saved on this device.';
 }
 
 function loadDraft(id) {
