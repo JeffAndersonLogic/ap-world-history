@@ -60,23 +60,23 @@ if (L) {
   byId('lecture-intro').textContent = L.lecture.intro || 'Use these cards from the main page. Each card opens a projection-friendly pop-up with enlarged content and a related visual.';
 
   byId('inline-targets').innerHTML = `
-    <div class="target-success-grid">
-      <article class="card target-card">
+    <div class="inline-targets">
+      <article class="inline-target-card">
         <h3>Learning Targets</h3>
         ${(L.learningTargets || []).map((t, i) => `
-          <div class="target-item">
-            <span class="target-number">${i + 1}</span>
+          <div class="inline-target-item">
+            <span class="inline-target-number">${i + 1}</span>
             <p>${t.target}</p>
-            ${t.kc ? `<span class="target-kc">${t.kc}</span>` : ''}
+            ${t.kc ? `<span class="inline-target-kc">${t.kc}</span>` : ''}
           </div>`).join('')}
       </article>
-      <article class="card success-card">
+      <article class="inline-target-card">
         <h3>Success Criteria</h3>
         ${(L.successCriteria || []).map((c, i) => `
-          <div class="target-item">
-            <span class="target-number">${i + 1}</span>
+          <div class="inline-target-item">
+            <span class="inline-target-number">${i + 1}</span>
             <p>${c.criteria}</p>
-            ${c.kc ? `<span class="target-kc">${c.kc}</span>` : ''}
+            ${c.kc ? `<span class="inline-target-kc">${c.kc}</span>` : ''}
           </div>`).join('')}
       </article>
     </div>`;
