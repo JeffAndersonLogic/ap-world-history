@@ -38,30 +38,36 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how Song China used Confucianism, imperial bureaucracy, and civil service exams to maintain and justify rule.",
-      kc: "KC-3.2.I.A"
+      kc: "KC-3.2.I.A",
+      theme: "Governance"
     },
     {
       target: "I can describe how Chinese cultural traditions and Buddhism continued to shape East Asia and influence neighboring regions.",
-      kc: "KC-3.1.III.D.i · KC-3.1.III.D.ii"
+      kc: "KC-3.1.III.D.i · KC-3.1.III.D.ii",
+      theme: "Culture"
     },
     {
       target: "I can explain how agricultural innovation, infrastructure, and commercialization strengthened Song China's economy and connections to wider trade networks.",
-      kc: "KC-3.3.III.A.i · KC-3.1.I.D"
+      kc: "KC-3.3.III.A.i · KC-3.1.I.D",
+      theme: "Economics"
     }
   ],
 
   successCriteria: [
     {
       criteria: "I can use specific evidence such as bureaucracy, civil service exams, Confucianism, or Neo-Confucianism to explain how Song rulers organized power.",
-      kc: "KC-3.2.I.A"
+      kc: "KC-3.2.I.A",
+      theme: "Governance"
     },
     {
       criteria: "I can explain how Confucianism, Buddhism, and Chinese cultural traditions continued or changed as they shaped societies in East Asia.",
-      kc: "KC-3.1.III.D.i · KC-3.1.III.D.ii"
+      kc: "KC-3.1.III.D.i · KC-3.1.III.D.ii",
+      theme: "Culture"
     },
     {
       criteria: "I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.",
-      kc: "KC-3.3.III.A.i · KC-3.1.I.D"
+      kc: "KC-3.3.III.A.i · KC-3.1.I.D",
+      theme: "Economics"
     }
   ],
 
