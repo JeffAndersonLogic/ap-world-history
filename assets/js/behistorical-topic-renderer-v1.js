@@ -116,6 +116,7 @@ function renderCollegeBoardFramework() {
   const section = byId('college-board-key-concepts');
   if (!section) return;
   const keyConcepts = normalizedKeyConcepts();
+  console.log('KC themes:', keyConcepts.map(k => ({code: k.code, theme: k.theme})));
   section.innerHTML = `
     <div class="section-header">
       <div class="eyebrow">College Board Framework</div>
@@ -126,7 +127,7 @@ function renderCollegeBoardFramework() {
       ${keyConcepts.map(kc => `
         <article class="cb-card">
           <span class="cb-code">${kc.code}</span>
-          <h3>${kc.theme || kc.code}</h3>
+          <h3>${kc.theme ? kc.theme : kc.code}</h3>
           <p>${kc.text}</p>
           ${kc.illustrativeExamples && kc.illustrativeExamples.length ? `
             <div class="cb-examples">
