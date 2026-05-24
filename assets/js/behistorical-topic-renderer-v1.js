@@ -125,8 +125,8 @@ function renderCollegeBoardFramework() {
     <div class="cb-framework-grid">
       ${keyConcepts.map(kc => `
         <article class="cb-card">
-          <span class="cb-code">${kc.code}</span>
-          <h3>${kc.theme || kc.code}</h3>
+          <span class="cb-code">${kc.theme || kc.code}</span>
+          <h3>${kc.code}</h3>
           <p>${kc.text}</p>
           ${kc.illustrativeExamples && kc.illustrativeExamples.length ? `
             <div class="cb-examples">
