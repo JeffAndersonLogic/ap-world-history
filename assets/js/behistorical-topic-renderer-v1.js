@@ -5,7 +5,7 @@
 const L = window.BEHISTORICAL_LESSON;
 const byId = id => document.getElementById(id);
 const md = s => String(s || '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-const kcPills = kc => kc.split(';').map(s => s.trim()).filter(Boolean).map(s => `<span class="inline-target-kc">${s}</span>`).join(' ');
+const kcPills = kc => kc.split('·').map(s => s.trim()).filter(Boolean).map(s => `<span class="inline-target-kc">${s}</span>`).join(' ');
 
 function sanitizeImageUrl(url) {
   const value = String(url || '').trim();

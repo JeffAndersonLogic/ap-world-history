@@ -42,11 +42,11 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       target: "I can describe how Chinese cultural traditions and Buddhism continued to shape East Asia and influence neighboring regions.",
-      kc: "KC-3.1.III.D.i; KC-3.1.III.D.ii"
+      kc: "KC-3.1.III.D.i · KC-3.1.III.D.ii"
     },
     {
       target: "I can explain how agricultural innovation, infrastructure, and commercialization strengthened Song China's economy and connections to wider trade networks.",
-      kc: "KC-3.3.III.A.i; KC-3.1.I.D"
+      kc: "KC-3.3.III.A.i · KC-3.1.I.D"
     }
   ],
 
@@ -57,11 +57,11 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       criteria: "I can explain how Confucianism, Buddhism, and Chinese cultural traditions continued or changed as they shaped societies in East Asia.",
-      kc: "KC-3.1.III.D.i; KC-3.1.III.D.ii"
+      kc: "KC-3.1.III.D.i · KC-3.1.III.D.ii"
     },
     {
       criteria: "I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.",
-      kc: "KC-3.3.III.A.i; KC-3.1.I.D"
+      kc: "KC-3.3.III.A.i · KC-3.1.I.D"
     }
   ],
 
