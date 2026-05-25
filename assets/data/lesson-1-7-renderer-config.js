@@ -1,6 +1,9 @@
 (() => {
+  console.log('1.7 renderer config loaded');
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
+  console.log('stableImages before:',
+    lesson.stableImages && lesson.stableImages.map);
 
   lesson.stableImages = {
     map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat_001.JPG',
@@ -14,4 +17,7 @@
     beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chichen_Itza_52.JPG',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Side-View_of_Notre_Dame_Cathedral.JPG'
   };
+
+  console.log('stableImages after:',
+    lesson.stableImages && lesson.stableImages.map);
 })();
