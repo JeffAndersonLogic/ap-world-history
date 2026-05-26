@@ -132,58 +132,37 @@
   }
 
   (function () {
-    const savedResponses = { q1: '', q2: '', q3: '' };
-
     const fields = [
-      { q: 'Explain how the instability before 960 CE caused Song rulers to build their government around civilian officials, Confucian learning, and bureaucracy. Use at least two specific examples.', id: 'first10-q1', key: 'q1' },
-      { q: 'Confucianism existed long before the Song Dynasty. What continued from earlier Confucian tradition, and what changed during the Song period? Be specific about Neo-Confucianism and the civil service examination system.', id: 'first10-q2', key: 'q2' },
-      { q: 'Evaluate this claim: “The solution to one problem often becomes the source of the next.” Use evidence from Song China to support or challenge the claim.', id: 'first10-q3', key: 'q3' }
+      { q: 'Explain how the instability before 960 CE caused Song rulers to build their government around civilian officials, Confucian learning, and bureaucracy. Use at least two specific examples.', id: 'first10-q1' },
+      { q: 'Confucianism existed long before the Song Dynasty. What continued from earlier Confucian tradition, and what changed during the Song period? Be specific about Neo-Confucianism and the civil service examination system.', id: 'first10-q2' },
+      { q: 'Evaluate this claim: “The solution to one problem often becomes the source of the next.” Use evidence from Song China to support or challenge the claim.', id: 'first10-q3' }
     ];
 
     const preview = document.getElementById('ai-prompt-preview');
     const result = document.getElementById('ai-builder-result');
     const buildBtn = document.getElementById('build-ai-prompt');
     const copyBtn = document.getElementById('copy-ai-prompt');
-    const builderPreview = document.getElementById('response-builder-preview');
-    const builderResult = document.getElementById('response-builder-result');
-    const copyOpenBtn = document.getElementById('copy-open-form');
-
-    function updateBuilder() {
-      builderPreview.textContent =
-        'Question 1: ' + (savedResponses.q1 || '') +
-        '\n\nQuestion 2: ' + (savedResponses.q2 || '') +
-        '\n\nQuestion 3: ' + (savedResponses.q3 || '');
-    }
-
-    window.saveDraft = function (key) {
-      const field = fields.find(function (f) { return f.key === key; });
-      if (!field) return;
-      const el = document.getElementById(field.id);
-      if (el) savedResponses[key] = el.value.trim();
-      updateBuilder();
-    };
 
     function getResponses() {
-      return fields.map(function (item, index) {
+      return fields.map((item, index) => {
+        const el = document.getElementById(item.id);
         return {
           number: index + 1,
           question: item.q,
-          response: savedResponses[item.key] || ''
+          response: el && el.value.trim() ? el.value.trim() : ''
         };
       });
     }
 
     function buildPrompt() {
       const responses = getResponses();
-      const hasAnyResponse = responses.some(function (item) { return item.response.length > 0; });
+      const hasAnyResponse = responses.some(item => item.response.length > 0);
       if (!hasAnyResponse) {
-        result.textContent = 'Save at least one response above, then build your AI Coach prompt.';
+        result.textContent = 'Answer at least one question first, then build your AI Coach prompt.';
         return;
       }
-      const responseBlock = responses.map(function (item) {
-        return 'Question ' + item.number + ': ' + item.question + '\nMy response: ' + (item.response || '[not answered yet]');
-      }).join('\n\n');
-      const prompt = 'I completed the First & 10 reading for AP World History Topic 1.1: Song China. Here are my responses:\n\n' + responseBlock + '\n\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and explanation. Challenge weak or vague parts of my thinking. Do not write my final answer for me. End by helping me prepare a stronger Canvas-ready response in my own words.';
+      const responseBlock = responses.map(item => `Question ${item.number}: ${item.question}\nMy response: ${item.response || '[not answered yet]'}`).join('\n\n');
+      const prompt = `I completed the First & 10 reading for AP World History Topic 1.1: Song China. Here are my responses:\n\n${responseBlock}\n\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and explanation. Challenge weak or vague parts of my thinking. Do not write my final answer for me. End by helping me prepare a stronger Canvas-ready response in my own words.`;
       preview.textContent = prompt;
       result.textContent = 'Prompt built. Copy it, then paste it into MagicSchool.';
     }
@@ -194,17 +173,9 @@
       }
       if (!preview || preview.textContent.includes('will appear here')) return;
       navigator.clipboard.writeText(preview.textContent)
-        .then(function () { result.textContent = 'Prompt copied. Paste it into MagicSchool to begin coaching.'; })
-        .catch(function () { result.textContent = 'Copy failed. Highlight the prompt text and copy it manually.'; });
+        .then(() => { result.textContent = 'Prompt copied. Paste it into MagicSchool to begin coaching.'; })
+        .catch(() => { result.textContent = 'Copy failed. Highlight the prompt text and copy it manually.'; });
     }
-
-    copyOpenBtn.addEventListener('click', function () {
-      const text = builderPreview.textContent;
-      navigator.clipboard.writeText(text)
-        .then(function () { builderResult.textContent = 'Copied! Opening Google Form in a new tab.'; })
-        .catch(function () { builderResult.textContent = 'Copy failed. Highlight the text above and copy manually.'; });
-      window.open('https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=1.1+-+Song+China&entry.2107637366=First+and+10', '_blank', 'noopener');
-    });
 
     buildBtn.addEventListener('click', buildPrompt);
     copyBtn.addEventListener('click', copyPrompt);
