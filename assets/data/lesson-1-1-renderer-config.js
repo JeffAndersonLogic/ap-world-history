@@ -38,7 +38,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: The World That Song Built',
-    embedUrl: 'first-and-10-topic-1-1-song-china-capture.html?v=prefill-v2',
+    embedUrl: 'first-and-10-topic-1-1-song-china-capture.html?v=copy-submit-v1',
     note: 'Use the embedded rich narrative reading window below. Answer the three questions, build your AI Coach prompt, then return to the 1.1 lesson path.'
   };
 
