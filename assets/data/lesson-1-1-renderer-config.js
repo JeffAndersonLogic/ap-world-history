@@ -88,13 +88,16 @@
     prompt: 'Write two contextualization sentences that explain the broader setting for Song China before making a claim about its power or prosperity.'
   };
 
+  const responseFormBase = 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+1+-+The+Global+Tapestry&entry.187055090=1.1+-+Song+China';
+  const responseButton = (promptId, responseType, label = 'SUBMIT TO GOOGLE FORM') => `<a class="btn secondary" href="${responseFormBase}&entry.1549761827=${promptId}&entry.2107637366=${responseType}" target="_blank" rel="noopener">${label}</a>`;
+
   lesson.captureUrls = {
-    first10:       '',
-    skillBuilder:  '<a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=1.1+-+Song+China&entry.2107637366=AP+Skill+Builder" target="_blank" rel="noopener">SUBMIT TO GOOGLE FORM</a>',
-    checkpoint1:   '<a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=1.1+-+Song+China&entry.2107637366=Checkpoint+1" target="_blank" rel="noopener">SUBMIT TO GOOGLE FORM</a>',
-    evidenceLab:   '<a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=1.1+-+Song+China&entry.2107637366=Evidence+Lab" target="_blank" rel="noopener">SUBMIT TO GOOGLE FORM</a>',
-    primarySource: '<a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=1.1+-+Song+China&entry.2107637366=Primary+Source" target="_blank" rel="noopener">SUBMIT TO GOOGLE FORM</a>',
-    checkpoint2:   '<a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=1.1+-+Song+China&entry.2107637366=Checkpoint+2" target="_blank" rel="noopener">SUBMIT TO GOOGLE FORM</a>',
+    first10:       responseButton('1.1-first10', 'First+and+10'),
+    skillBuilder:  responseButton('1.1-ap-skill-builder', 'AP+Skill+Builder'),
+    checkpoint1:   responseButton('1.1-checkpoint-1', 'Checkpoint+1'),
+    evidenceLab:   responseButton('1.1-evidence-lab', 'Evidence+Lab'),
+    primarySource: responseButton('1.1-primary-source', 'Primary+Source'),
+    checkpoint2:   responseButton('1.1-checkpoint-2', 'Checkpoint+2')
   };
 
   lesson.checkpoints = [
