@@ -1,177 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BeHistorical — Module 02 | First & 10 | Topic 1.1 Song China</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--blackened-steel:#1A1C1D;--charcoal-steel:#2B2F31;--gunmetal-gray:#3E4447;--aged-iron:#5A5F5C;--muted-sandstone:#D2B48C;--burnished-bronze:#8C5A2B;--rust-copper:#A8652D;--oxidized-brown:#6B3E1F;--antique-gold:#C9A46A;--warm-paper:#F5F0E7;--clean-paper:#FFFDF7;--ink:#151718;--font-display:'Cinzel','Trajan Pro',Georgia,serif;--font-body:'Libre Baskerville',Georgia,serif;--font-ui:'Montserrat',Arial,sans-serif}
-    body{background:var(--blackened-steel);font-family:var(--font-body);color:var(--clean-paper);padding:1.5rem 1rem}
-    .module{max-width:980px;margin:0 auto;border:1px solid var(--gunmetal-gray);border-radius:4px;overflow:hidden;box-shadow:0 12px 48px rgba(0,0,0,.55)}
-    .module-header{background:var(--charcoal-steel);border-bottom:2px solid var(--antique-gold);padding:1.3rem 2rem}.header-top{display:flex;align-items:center;gap:.85rem;margin-bottom:.5rem}.module-badge{font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--antique-gold);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.35);padding:.28rem .65rem;border-radius:2px}.module-name{font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--clean-paper);letter-spacing:.04em}.module-subtitle{font-family:var(--font-ui);font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-sandstone)}
-    .reading-title-band{background:var(--blackened-steel);border-bottom:1px solid var(--gunmetal-gray);padding:2.4rem 2.4rem 2rem;position:relative;overflow:hidden}.reading-title-band::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--oxidized-brown),var(--antique-gold),var(--muted-sandstone),var(--antique-gold),var(--oxidized-brown))}.reading-eyebrow{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.7rem}.reading-title{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--clean-paper);line-height:1.2;letter-spacing:.02em;margin-bottom:.6rem}.reading-title em{color:var(--antique-gold);font-style:normal}.reading-deck{font-size:.95rem;font-style:italic;color:var(--muted-sandstone);line-height:1.7;max-width:760px;margin-bottom:1.2rem}.skill-tags{display:flex;flex-wrap:wrap;gap:.45rem}.skill-tag{font-family:var(--font-ui);font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-sandstone);border:1px solid rgba(210,180,140,.3);padding:.2rem .55rem;border-radius:2px}
-    .reading-body{background:var(--warm-paper);color:var(--ink)}.support-strip{padding:1.4rem 2.4rem;background:var(--clean-paper);border-bottom:1px solid #e2d9cc;display:grid;grid-template-columns:1fr 1fr;gap:1rem}.support-card{border:1px solid #ddd6ca;border-left:4px solid var(--burnished-bronze);padding:1rem;background:#faf7f2}.support-card h3{font-family:var(--font-display);font-size:.95rem;color:var(--blackened-steel);margin-bottom:.5rem}.support-card p,.support-card li{font-size:.8rem;line-height:1.65;color:#333}.vocab-strip{padding:1.1rem 2.4rem;background:#efe5d6;border-bottom:1px solid #d8cbb9}.vocab-strip h3{font-family:var(--font-ui);font-size:.62rem;text-transform:uppercase;letter-spacing:.16em;color:var(--oxidized-brown);margin-bottom:.7rem}.term-chip{display:inline-flex;font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--oxidized-brown);background:rgba(255,253,247,.85);border:1px solid rgba(140,90,43,.2);border-radius:999px;padding:.28rem .58rem;margin:.16rem}
-    .section{padding:2rem 2.4rem;border-bottom:1px solid #e2d9cc;position:relative}.section-number{font-family:var(--font-display);font-size:3.5rem;font-weight:700;color:rgba(140,90,43,.12);position:absolute;top:1.2rem;right:2rem;line-height:1}.section-label{font-family:var(--font-ui);font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--burnished-bronze);margin-bottom:.4rem}.section-heading{font-family:var(--font-display);font-size:1.15rem;font-weight:600;color:var(--blackened-steel);margin-bottom:1.1rem;line-height:1.3;border-bottom:1px solid rgba(140,90,43,.2);padding-bottom:.6rem}.reading-text{font-size:.93rem;line-height:1.9;color:#1e1e1e;margin-bottom:1rem}.kt{background:rgba(210,180,140,.35);color:var(--oxidized-brown);font-weight:700;padding:0 3px;border-radius:2px}.ap-callout{background:var(--charcoal-steel);border-left:3px solid var(--antique-gold);padding:1rem 1.2rem;margin:1.4rem 0;border-radius:0 3px 3px 0}.ap-callout-label{font-family:var(--font-ui);font-size:.57rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.35rem}.ap-callout p{font-family:var(--font-ui);font-size:.8rem;color:var(--warm-paper);line-height:1.65}.ap-callout p strong{color:var(--muted-sandstone)}.pull-quote{border-left:4px solid var(--antique-gold);margin:1.6rem 0;padding:.8rem 1.4rem;background:rgba(201,164,106,.06)}.pull-quote p{font-family:var(--font-display);font-size:1rem;font-style:italic;color:var(--burnished-bronze);line-height:1.6}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-top:1rem}.mini-card{background:var(--clean-paper);border:1px solid #ddd6ca;border-radius:3px;padding:1rem 1.1rem}.mini-card-title{font-family:var(--font-display);font-size:.82rem;font-weight:600;color:var(--blackened-steel);margin-bottom:.5rem}.mini-card p{font-size:.8rem;line-height:1.7;color:#333}.be-ready{background:#efe5d6;padding:1.5rem 2.4rem;border-top:2px solid var(--burnished-bronze);border-bottom:1px solid #d8cbb9}.be-ready h3{font-family:var(--font-display);font-size:1rem;color:var(--blackened-steel);margin-bottom:.5rem}.be-ready p{font-size:.85rem;line-height:1.7;color:#222}
-    .check-section{background:var(--blackened-steel);padding:2rem 2.4rem;border-top:2px solid var(--antique-gold)}.check-header{display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem}.check-badge{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--antique-gold);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.3);padding:.25rem .6rem;border-radius:2px}.check-title{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--clean-paper)}.question-item{background:#111314;border:1px solid #3a3d3e;border-radius:6px;padding:1rem 1.25rem;margin-bottom:1.25rem}.question-header{display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:nowrap}.q-num{font-family:'Montserrat',sans-serif;font-size:.75rem;font-weight:700;color:#C9A46A;flex-shrink:0}.q-skill{font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:#C9A46A;color:#1A1C1D;border-radius:3px;padding:.2rem .6rem;flex-shrink:0}.q-text{font-family:'Libre Baskerville',serif;font-size:.92rem;color:#F5F0E7;line-height:1.5}.q-textarea{width:100%;min-height:100px;background:#1A1C1D;color:#F5F0E7;border:1px solid #5A5F5C;border-radius:4px;padding:.75rem;font-family:'Libre Baskerville',serif;font-size:.9rem;box-sizing:border-box;resize:vertical}.q-textarea::placeholder{color:#5A5F5C;font-style:italic}    .ai-builder,.gform-builder{background:var(--charcoal-steel);border:1px solid rgba(201,164,106,.35);border-radius:4px;margin-top:1.5rem;padding:1.3rem}.ai-builder h3,.gform-builder h3{font-family:var(--font-display);font-size:1.05rem;color:var(--antique-gold);margin-bottom:.55rem}.ai-builder p,.gform-builder p{font-size:.82rem;line-height:1.65;color:var(--warm-paper);opacity:.9;margin-bottom:.8rem}.prompt-preview{background:#23272a;border:1px solid rgba(201,164,106,.25);border-radius:3px;color:var(--warm-paper);font-family:var(--font-ui);font-size:.78rem;line-height:1.6;min-height:90px;padding:.85rem;white-space:pre-wrap;margin:.8rem 0;width:100%;resize:vertical;outline:none}.tool-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}button,.action-btn{font-family:'Montserrat',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#C9A46A;color:#1A1C1D;border:none;border-radius:3px;padding:.6rem 1.4rem;cursor:pointer;margin-right:.5rem}button:hover,.action-btn:hover{background:#8C5A2B;color:#F5F0E7}.nav-btn{font-family:var(--font-ui);font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--antique-gold);background:transparent;border:1px solid rgba(201,164,106,.4);padding:.45rem .9rem;border-radius:2px;cursor:pointer;transition:all .2s;text-decoration:none}.nav-btn:hover{background:rgba(201,164,106,.1);border-color:var(--antique-gold)}.builder-result{font-family:var(--font-ui);font-size:.72rem;color:var(--antique-gold);min-height:1.2rem;margin-top:.5rem}.canvas-note{font-family:var(--font-ui);font-size:.7rem;color:var(--muted-sandstone);border-top:1px solid rgba(255,255,255,.08);padding-top:.75rem;margin-top:1rem}.module-footer{background:var(--charcoal-steel);border-top:1px solid var(--gunmetal-gray);padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}.footer-note{font-family:var(--font-ui);font-size:.62rem;color:var(--aged-iron)}.nav-btn.prev{color:var(--muted-sandstone);border-color:rgba(210,180,140,.25)}
-    @media(max-width:680px){body{padding:.75rem}.module-header,.reading-title-band,.section,.check-section,.be-ready{padding:1.35rem}.support-strip{grid-template-columns:1fr;padding:1.2rem}.vocab-strip{padding:1.1rem}.two-col{grid-template-columns:1fr}.reading-title{font-size:1.55rem}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First & 10 — Topic 1.1 Song China</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #1A1C1D;
+    color: #F5F0E7;
+    font-family: 'Libre Baskerville', serif;
+    padding: 1.5rem;
+  }
+
+  /* QUESTION ITEMS */
+  .question-item {
+    background: #111314;
+    border: 1px solid #3a3d3e;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .question-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: nowrap;
+  }
+  .q-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #C9A46A;
+    flex-shrink: 0;
+  }
+  .q-skill {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: #C9A46A;
+    color: #1A1C1D;
+    border-radius: 3px;
+    padding: 0.2rem 0.6rem;
+    flex-shrink: 0;
+  }
+  .q-text {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.92rem;
+    color: #F5F0E7;
+    line-height: 1.5;
+  }
+  .q-textarea {
+    width: 100%;
+    min-height: 100px;
+    background: #1A1C1D;
+    color: #F5F0E7;
+    border: 1px solid #5A5F5C;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.9rem;
+    resize: vertical;
+  }
+  .q-textarea::placeholder {
+    color: #5A5F5C;
+    font-style: italic;
+  }
+
+  /* BUILDER SECTIONS */
+  .ai-builder {
+    background: #111314;
+    border: 1px solid #3a3d3e;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .builder-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #C9A46A;
+    margin-bottom: 0.6rem;
+  }
+  .builder-desc {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.88rem;
+    color: #F5F0E7;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .tool-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .prompt-preview {
+    width: 100%;
+    min-height: 120px;
+    background: #1A1C1D;
+    color: #F5F0E7;
+    border: 1px solid #5A5F5C;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.88rem;
+    resize: vertical;
+    margin-bottom: 0.75rem;
+  }
+  .prompt-preview::placeholder {
+    color: #5A5F5C;
+    font-style: italic;
+  }
+
+  /* FOOTER NOTE */
+  .canvas-note {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.82rem;
+    color: #5A5F5C;
+    margin-top: 1rem;
+    font-style: italic;
+  }
+
+  /* ALL BUTTONS */
+  button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: #C9A46A;
+    color: #1A1C1D;
+    border: none;
+    border-radius: 3px;
+    padding: 0.55rem 1.2rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #8C5A2B;
+    color: #F5F0E7;
+  }
+  button.secondary {
+    background: transparent;
+    color: #C9A46A;
+    border: 1px solid #C9A46A;
+  }
+  button.secondary:hover {
+    background: #C9A46A;
+    color: #1A1C1D;
+  }
+</style>
 </head>
 <body>
-<div class="module">
-  <div class="module-header">
-    <div class="header-top"><span class="module-badge">Module 02</span><span class="module-name">First &amp; 10 Reading</span></div>
-    <div class="module-subtitle">Topic 1.1 — Song China &nbsp;|&nbsp; AP World History: Modern</div>
+
+<!-- QUESTION 1 -->
+<div class="question-item">
+  <div class="question-header">
+    <span class="q-num">01</span>
+    <span class="q-skill">Causation</span>
+    <span class="q-text">Explain how the instability before 960 CE caused Song rulers to build their government around civilian officials, Confucian learning, and bureaucracy. Use at least two specific examples.</span>
   </div>
-  <div class="reading-title-band">
-    <p class="reading-eyebrow">First &amp; 10 Reading</p>
-    <h1 class="reading-title">The World That <em>Song</em> Built</h1>
-    <p class="reading-deck">How a dynasty that lost wars became one of the most sophisticated civilizations in human history — and why its institutions, economy, and ideas help explain the world students enter in AP World History.</p>
-    <div class="skill-tags"><span class="skill-tag">Causation</span><span class="skill-tag">Contextualization</span><span class="skill-tag">Continuity &amp; Change</span><span class="skill-tag">Comparison</span><span class="skill-tag">Significance</span></div>
-  </div>
-  <div class="reading-body">
-    <div class="support-strip">
-      <div class="support-card"><h3>Before You Read</h3><p>Track one problem Song rulers faced and one solution they created. Strong historians read for relationships: problem → response → consequence.</p></div>
-      <div class="support-card"><h3>Reading Target</h3><p>By the end, you should be able to explain why Song China became powerful through bureaucracy, Confucian learning, agriculture, commerce, infrastructure, and diplomacy rather than simple military domination.</p></div>
-    </div>
-    <div class="vocab-strip"><h3>Vocabulary to Watch</h3><span class="term-chip">Tang Dynasty</span><span class="term-chip">Five Dynasties</span><span class="term-chip">Zhao Kuangyin</span><span class="term-chip">Civil Service Exam</span><span class="term-chip">Scholar-Official</span><span class="term-chip">Filial Piety</span><span class="term-chip">Neo-Confucianism</span><span class="term-chip">Zhu Xi</span><span class="term-chip">Champa Rice</span><span class="term-chip">Grand Canal</span><span class="term-chip">Flying Cash</span><span class="term-chip">Liao</span><span class="term-chip">Western Xia</span></div>
-
-    <div class="section"><span class="section-number">1</span><p class="section-label">Contextualization</p><h2 class="section-heading">After the Fall: The World Before Song</h2><p class="reading-text">To understand the Song Dynasty, you have to understand the wreckage it was built on. In 907 CE, the <span class="kt">Tang Dynasty</span> — one of the most powerful empires in Chinese history — collapsed. What followed were fifty-three years of chaos known as the <span class="kt">Five Dynasties and Ten Kingdoms</span> period. Military regimes rose and fell. Regional kingdoms divided the south. Generals seized thrones, then lost them to other generals. Tax systems broke down. The educated men who had helped administer earlier dynasties found themselves pushed aside by warlords who valued loyalty and military force over classical learning.</p><p class="reading-text">China was, in the most literal sense, broken.</p><div class="ap-callout"><p class="ap-callout-label">AP Thinking — Causation</p><p>The instability before the Song helps explain why Song rulers made a decisive choice: <strong>reduce military political power and rebuild the state around civilian officials and Confucian bureaucracy.</strong></p></div><p class="reading-text">Then, in 960 CE, a general named <span class="kt">Zhao Kuangyin</span> reunified much of China and declared the Song Dynasty. His next move was the one that made history: he reduced the independent power of military commanders and elevated civilian administrators. It was a calculated act of institutional transformation. Zhao Kuangyin understood something warlords often do not: the hardest thing to build is a system that outlasts you.</p></div>
-
-    <div class="section"><span class="section-number">2</span><p class="section-label">Key Concept</p><h2 class="section-heading">The Exam and the Official: Who Actually Ran China</h2><p class="reading-text">The decision to elevate scholar-officials above military commanders was not simply a political choice. It was rooted in centuries of <span class="kt">Confucian thought</span>. Confucianism taught that society worked best when people understood their roles and fulfilled their responsibilities. Rulers owed justice and order. Subjects owed loyalty. Children owed respect and care to parents, a principle called <span class="kt">filial piety</span>. Officials owed honest service to the state.</p><p class="reading-text">The mechanism Song rulers used to build this Confucian bureaucracy was the <span class="kt">civil service examination system</span>. Candidates who wanted government positions had to pass demanding written examinations based on classical Confucian texts. In theory, a talented male could rise through education and examination rather than simply being born into power.</p><div class="pull-quote"><p>“The examination system turned learning into a path toward authority.”</p></div><p class="reading-text">In practice, wealthy families had enormous advantages because years of education required books, tutors, and time. Still, the system created a governing class defined by education more than bloodline or military loyalty. A successful candidate could become a district magistrate, tax official, judge, or adviser. These <span class="kt">scholar-officials</span> were the operating system of the Song state.</p><div class="ap-callout"><p class="ap-callout-label">AP Thinking — Continuity &amp; Change</p><p>The civil service examination system was <strong>not invented by the Song</strong>; it had roots in earlier dynasties. What changed was its scale, prestige, and central role in government.</p></div></div>
-
-    <div class="section"><span class="section-number">3</span><p class="section-label">Key Concept</p><h2 class="section-heading">Neo-Confucianism: Old Ideas, New World</h2><p class="reading-text">The Song period produced one of the most important intellectual developments in East Asian history: <span class="kt">Neo-Confucianism</span>. Thinkers such as <span class="kt">Zhu Xi</span> took the ethical framework of classical Confucianism and deepened it by responding to ideas from Buddhism and Daoism. Neo-Confucianism explained not only how to govern, but how moral order was built into the universe itself.</p><p class="reading-text">Neo-Confucianism reinforced social hierarchies that Song rulers found useful. Proper relationships — between ruler and subject, parent and child, husband and wife, older and younger, friend and friend — were not merely customs. They were treated as part of a larger moral order. A scholar-official who had internalized Neo-Confucian values was expected to govern honestly, maintain social order, and serve the emperor with discipline.</p><p class="reading-text">At the same time, <span class="kt">Buddhism</span> continued to shape Asian societies. Major branches such as <span class="kt">Theravada</span>, <span class="kt">Mahayana</span>, and <span class="kt">Tibetan Buddhism</span> offered different practices and communities, but all remained connected to questions of suffering, enlightenment, and spiritual discipline. In East Asia, Buddhist institutions and Confucian values coexisted, competed, and influenced one another.</p><div class="ap-callout"><p class="ap-callout-label">AP Thinking — Significance</p><p>Neo-Confucianism spread beyond China to <strong>Korea, Japan, and Vietnam</strong> through cultural exchange, education, trade, and the prestige of Chinese models. One dynasty’s governing ideology became part of a wider East Asian cultural sphere.</p></div></div>
-
-    <div class="section"><span class="section-number">4</span><p class="section-label">Key Concept</p><h2 class="section-heading">The Commercial Revolution: How Song China Got Rich</h2><p class="reading-text">While Confucian officials administered the state from above, an extraordinary economic transformation was happening below. Historians often describe Song China as experiencing a <span class="kt">commercial revolution</span>.</p><p class="reading-text">It began with rice. <span class="kt">Champa rice</span>, a fast-ripening drought-resistant variety from what is now Vietnam, helped farmers produce more food. In some regions, farmers could harvest more than once a year. Agricultural surplus increased. Population grew. Cities expanded. Workers, merchants, artisans, printers, and shopkeepers became part of an increasingly commercial society.</p><div class="two-col"><div class="mini-card"><h4 class="mini-card-title">The Grand Canal</h4><p>The <span class="kt">Grand Canal</span> connected northern and southern China. Rice, taxes, silk, porcelain, tea, and other goods moved through its waters. Control of the canal helped the state move food, collect revenue, and maintain stability.</p></div><div class="mini-card"><h4 class="mini-card-title">Flying Cash</h4><p>Metal coins were heavy and difficult to move across long distances. <span class="kt">Flying cash</span> and later paper money made trade easier by allowing merchants to use paper certificates or government-backed currency instead of hauling coins.</p></div></div><p class="reading-text" style="margin-top:1.2rem">The commercial revolution created a tension. Confucian social ideals often placed merchants below scholars and farmers, because merchants were associated with profit-seeking. Yet Song economic reality depended on commerce. The state taxed trade heavily while officially distrusting the people who generated so much wealth.</p></div>
-
-    <div class="section"><span class="section-number">5</span><p class="section-label">Causation &amp; Comparison</p><h2 class="section-heading">The Problem at the Border: Power Without Military Dominance</h2><p class="reading-text">For all its sophistication, Song China faced a problem it could never fully solve: the northern frontier. The <span class="kt">Liao Dynasty</span>, ruled by the Khitan people, controlled territory north of the Song border. Song armies struggled against steppe-influenced cavalry forces, and the Song state often chose financial diplomacy over military risk.</p><p class="reading-text">The <span class="kt">Western Xia</span>, a Tangut state to the northwest, also pressured the Song frontier and controlled important corridors toward Inner Asia. Song leaders used payments, trade, diplomacy, and defensive strategy to manage these threats. These policies revealed both the empire’s commercial strength and its military limitations.</p><div class="ap-callout"><p class="ap-callout-label">AP Thinking — Comparison</p><p>Wealthy, administratively sophisticated states often find it cheaper to buy peace than to fight for it. This can be practical in the short term, but it creates long-term vulnerability if payments stop working or stronger enemies emerge.</p></div><p class="reading-text">The same decision that produced stable civilian government also produced chronic frontier insecurity. Zhao Kuangyin had weakened the political power of generals to prevent another age of warlordism. That helped create civilian stability, but it also limited Song military dominance. In history, the solution to one problem often becomes the source of the next.</p></div>
-
-    <div class="section"><span class="section-number">6</span><p class="section-label">Significance</p><h2 class="section-heading">Why Song China Matters: The World It Made</h2><p class="reading-text">Song China matters because it shows that power is not only military. The Song held together one of the largest and wealthiest societies in the world through administrative sophistication, commercial productivity, ideological coherence, infrastructure, and diplomacy. It educated its governing class through examinations. It expanded Confucian bureaucracy. It commercialized its economy while officially distrusting commerce. It managed frontier threats through wealth and negotiation as much as force.</p><p class="reading-text">Its influence spread far beyond its borders. Confucian values, Chinese writing, Buddhist practices, porcelain, commercial techniques, and political models moved outward through tribute relationships, trade networks, and cultural prestige. Korea, Japan, and Vietnam were all shaped in important ways by Chinese cultural influence.</p><div class="pull-quote"><p>“The Song did not dominate East Asia only by conquering it. It shaped East Asia by organizing power, learning, trade, and culture.”</p></div><p class="reading-text">The dynasty eventually lost territory and later fell to the Mongols, but its institutions, ideas, and commercial systems endured. That is one measure of historical significance: not simply how long armies held territory, but how long institutions and ideas continued to matter.</p></div>
-
-    <div class="be-ready"><h3>BeReady: 10-Second Takeaway</h3><p>Song China became powerful not because it dominated militarily, but because it built a sophisticated civilian state, expanded Confucian bureaucracy, commercialized its economy, managed agriculture and infrastructure, and turned older traditions into systems that outlasted the dynasty.</p></div>
-  </div>
-
-  <div class="check-section">
-    <div class="check-header"><span class="check-badge">Check Your Thinking</span><span class="check-title">Three Questions → AI Coach Prompt</span></div>
-    <div class=”question-list”>
-      <div class=”question-item”>
-        <div class=”question-header”>
-          <span class=”q-num”>01</span><span class=”q-skill”>CAUSATION</span><span class=”q-text”>Explain how the instability before 960 CE caused Song rulers to build their government around civilian officials, Confucian learning, and bureaucracy. Use at least two specific examples.</span>
-        </div>
-        <textarea class=”q-textarea” id=”first10-q1” placeholder=”The instability before the Song caused rulers to...”></textarea>
-      </div>
-      <div class=”question-item”>
-        <div class=”question-header”>
-          <span class=”q-num”>02</span><span class=”q-skill”>CONTINUITY &amp; CHANGE</span><span class=”q-text”>Confucianism existed long before the Song Dynasty. What continued from earlier Confucian tradition, and what changed during the Song period? Be specific about Neo-Confucianism and the civil service examination system.</span>
-        </div>
-        <textarea class=”q-textarea” id=”first10-q2” placeholder=”While Confucianism had existed before the Song, the Song period changed it by...”></textarea>
-      </div>
-      <div class=”question-item”>
-        <div class=”question-header”>
-          <span class=”q-num”>03</span><span class=”q-skill”>ARGUMENTATION</span><span class=”q-text”>Evaluate this claim: “The solution to one problem often becomes the source of the next.” Use evidence from Song China to support or challenge the claim.</span>
-        </div>
-        <textarea class=”q-textarea” id=”first10-q3” placeholder=”This claim is supported or challenged by the Song example because...”></textarea>
-      </div>
-    </div>
-
-    <div class=”ai-builder” id=”google-builder”>
-      <h3 class=”builder-title”>Build Your Google Form Response</h3>
-      <p class=”builder-desc”>After answering the three questions,
-  click the button to collect your responses. Copy the result,
-  then submit to the Google Form.</p>
-      <div class=”tool-row”>
-        <button onclick=”buildGooglePrompt()”>BUILD GOOGLE PROMPT</button>
-      </div>
-      <textarea id=”google-preview” class=”prompt-preview” readonly
-    placeholder=”Your responses will appear here after you click
-    Build Google Prompt.”></textarea>
-      <div class=”tool-row” style=”margin-top:0.75rem;”>
-        <button onclick=”submitToGoogleForm()”>SUBMIT TO GOOGLE FORM</button>
-      </div>
-    </div>
-
-    <div class=”ai-builder”>
-      <h3>Build Your AI Coach Prompt</h3>
-      <p>After answering the three questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.</p>
-      <div class=”tool-row”>
-        <button type=”button” id=”build-ai-prompt”>Build AI Prompt</button>
-        <button type=”button” id=”copy-ai-prompt”>Copy Prompt</button>
-        <a class=”action-btn” href=”https://app.magicschool.ai/” target=”_blank” rel=”noopener”>Open MagicSchool</a>
-      </div>
-      <div class=”prompt-preview” id=”ai-prompt-preview”>Your prompt will appear here after you click Build AI Prompt.</div>
-      <div class=”builder-result” id=”ai-builder-result”></div>
-      <p class=”canvas-note”>Use this page to organize your thinking and prepare for coaching. Your final response must be submitted in Canvas.</p>
-    </div>
-  </div>
-
-  <div class="module-footer"><span class="footer-note">Topic 1.1 — Song China &nbsp;·&nbsp; AP World History: Modern</span><div style="display:flex;gap:.6rem;"><a class="nav-btn prev" href="map-module-01-topic-1-1-song-china.html">← Map &amp; Geography</a><a class="nav-btn" href="lesson-1-1-song-china.html#lecture">Content Delivery →</a></div></div>
+  <textarea class="q-textarea" id="q1" placeholder="The Song government responded to instability by..."></textarea>
 </div>
 
+<!-- QUESTION 2 -->
+<div class="question-item">
+  <div class="question-header">
+    <span class="q-num">02</span>
+    <span class="q-skill">Continuity & Change</span>
+    <span class="q-text">Confucianism existed long before the Song Dynasty. What continued from earlier Confucian tradition, and what changed during the Song period? Be specific about Neo-Confucianism and the civil service examination system.</span>
+  </div>
+  <textarea class="q-textarea" id="q2" placeholder="While Confucianism continued to..."></textarea>
+</div>
+
+<!-- QUESTION 3 -->
+<div class="question-item">
+  <div class="question-header">
+    <span class="q-num">03</span>
+    <span class="q-skill">Argumentation</span>
+    <span class="q-text">Evaluate this claim: "The solution to one problem often becomes the source of the next." Use evidence from Song China to support or challenge the claim.</span>
+  </div>
+  <textarea class="q-textarea" id="q3" placeholder="This claim is supported or challenged by the Song example because..."></textarea>
+</div>
+
+<!-- BUILD GOOGLE PROMPT SECTION -->
+<div class="ai-builder" id="google-builder">
+  <h3 class="builder-title">Build Your Google Form Response</h3>
+  <p class="builder-desc">After answering the three questions, click the button to collect your responses into one field. Copy the result, then submit to the Google Form.</p>
+  <div class="tool-row">
+    <button onclick="buildGooglePrompt()">Build Google Prompt</button>
+  </div>
+  <textarea id="google-preview" class="prompt-preview" readonly
+    placeholder="Your responses will appear here after you click Build Google Prompt."></textarea>
+  <div class="tool-row">
+    <button onclick="submitToGoogleForm()">Submit to Google Form</button>
+  </div>
+</div>
+
+<!-- BUILD AI COACH PROMPT SECTION -->
+<div class="ai-builder" id="ai-builder">
+  <h3 class="builder-title">Build Your AI Coach Prompt</h3>
+  <p class="builder-desc">After answering the three questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.</p>
+  <div class="tool-row">
+    <button onclick="buildPrompt()">Build AI Prompt</button>
+    <button class="secondary" onclick="copyPrompt()">Copy Prompt</button>
+    <button class="secondary" onclick="window.open('https://app.magicschool.ai','_blank')">Open MagicSchool</button>
+  </div>
+  <textarea id="prompt-preview" class="prompt-preview" readonly
+    placeholder="Your prompt will appear here after you click Build AI Prompt."></textarea>
+</div>
+
+<p class="canvas-note">Use this page to organize your thinking and prepare for coaching. Your final response must be submitted in Canvas.</p>
+
 <script>
-  function buildGooglePrompt() {
-    const q1 = document.querySelectorAll('.q-textarea')[0].value;
-    const q2 = document.querySelectorAll('.q-textarea')[1].value;
-    const q3 = document.querySelectorAll('.q-textarea')[2].value;
-    const out = 'Question 1: ' + q1 + '\n\nQuestion 2: ' + q2
-                + '\n\nQuestion 3: ' + q3;
-    document.getElementById('google-preview').value = out;
-  }
+function buildGooglePrompt() {
+  const q1 = document.getElementById('q1').value || '(no response)';
+  const q2 = document.getElementById('q2').value || '(no response)';
+  const q3 = document.getElementById('q3').value || '(no response)';
+  document.getElementById('google-preview').value =
+    'Question 1: ' + q1 + '\n\nQuestion 2: ' + q2 + '\n\nQuestion 3: ' + q3;
+}
 
-  function submitToGoogleForm() {
-    const content = document.getElementById('google-preview').value;
-    navigator.clipboard.writeText(content).catch(() => {});
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=1.1+-+Song+China&entry.2107637366=First+and+10', '_blank');
-  }
+function submitToGoogleForm() {
+  const content = document.getElementById('google-preview').value;
+  navigator.clipboard.writeText(content).catch(() => {});
+  window.open('https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=1.1+-+Song+China&entry.2107637366=First+and+10', '_blank');
+}
 
-  (function () {
-    const fields = [
-      { q: 'Explain how the instability before 960 CE caused Song rulers to build their government around civilian officials, Confucian learning, and bureaucracy. Use at least two specific examples.', id: 'first10-q1' },
-      { q: 'Confucianism existed long before the Song Dynasty. What continued from earlier Confucian tradition, and what changed during the Song period? Be specific about Neo-Confucianism and the civil service examination system.', id: 'first10-q2' },
-      { q: 'Evaluate this claim: “The solution to one problem often becomes the source of the next.” Use evidence from Song China to support or challenge the claim.', id: 'first10-q3' }
-    ];
+function buildPrompt() {
+  const q1 = document.getElementById('q1').value || '(no response)';
+  const q2 = document.getElementById('q2').value || '(no response)';
+  const q3 = document.getElementById('q3').value || '(no response)';
+  const prompt =
+    'I completed the First & 10 reading for AP World History Topic 1.1: Song China. Here are my responses:\n\n' +
+    'Question 1: Explain how the instability before 960 CE caused Song rulers to build their government around civilian officials, Confucian learning, and bureaucracy. Use at least two specific examples.\n' +
+    'My response: ' + q1 + '\n\n' +
+    'Question 2: Confucianism existed long before the Song Dynasty. What continued from earlier Confucian tradition, and what changed during the Song period? Be specific about Neo-Confucianism and the civil service examination system.\n' +
+    'My response: ' + q2 + '\n\n' +
+    'Question 3: Evaluate this claim: "The solution to one problem often becomes the source of the next." Use evidence from Song China to support or challenge the claim.\n' +
+    'My response: ' + q3 + '\n\n' +
+    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';
+  document.getElementById('prompt-preview').value = prompt;
+}
 
-    /* ── AI Coach Prompt builder (logic unchanged) ── */
-    const preview  = document.getElementById('ai-prompt-preview');
-    const result   = document.getElementById('ai-builder-result');
-    const buildBtn = document.getElementById('build-ai-prompt');
-    const copyBtn  = document.getElementById('copy-ai-prompt');
-
-    function getResponses() {
-      return fields.map((item, index) => {
-        const el = document.getElementById(item.id);
-        return {
-          number: index + 1,
-          question: item.q,
-          response: el && el.value.trim() ? el.value.trim() : ''
-        };
-      });
-    }
-
-    function buildPrompt() {
-      const responses = getResponses();
-      const hasAnyResponse = responses.some(item => item.response.length > 0);
-      if (!hasAnyResponse) {
-        result.textContent = 'Answer at least one question first, then build your AI Coach prompt.';
-        return;
-      }
-      const responseBlock = responses.map(item => `Question ${item.number}: ${item.question}\nMy response: ${item.response || '[not answered yet]'}`).join('\n\n');
-      const prompt = `I completed the First & 10 reading for AP World History Topic 1.1: Song China. Here are my responses:\n\n${responseBlock}\n\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and explanation. Challenge weak or vague parts of my thinking. Do not write my final answer for me. End by helping me prepare a stronger Canvas-ready response in my own words.`;
-      preview.textContent = prompt;
-      result.textContent = 'Prompt built. Copy it, then paste it into MagicSchool.';
-    }
-
-    function copyPrompt() {
-      if (!preview || preview.textContent.includes('will appear here')) { buildPrompt(); }
-      if (!preview || preview.textContent.includes('will appear here')) return;
-      navigator.clipboard.writeText(preview.textContent)
-        .then(() => { result.textContent = 'Prompt copied. Paste it into MagicSchool to begin coaching.'; })
-        .catch(() => { result.textContent = 'Copy failed. Highlight the prompt text and copy it manually.'; });
-    }
-
-    buildBtn.addEventListener('click', buildPrompt);
-    copyBtn.addEventListener('click', copyPrompt);
-  })();
+function copyPrompt() {
+  const content = document.getElementById('prompt-preview').value;
+  navigator.clipboard.writeText(content).catch(() => {});
+}
 </script>
+
 </body>
 </html>
