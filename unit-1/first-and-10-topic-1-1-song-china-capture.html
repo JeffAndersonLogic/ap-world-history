@@ -10,17 +10,55 @@
   </style>
 </head>
 <body>
-  <iframe id="first10-frame" src="first-and-10-topic-1-1-song-china.html?v=response-builder-v10" title="First and 10 Topic 1.1 Song China"></iframe>
+  <iframe id="first10-frame" src="first-and-10-topic-1-1-song-china.html?v=response-builder-v11" title="First and 10 Topic 1.1 Song China"></iframe>
   <script>
     const PREFILLED_FIRST10_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+1+-+The+Global+Tapestry&entry.187055090=1.1+-+Song+China&entry.1549761827=1.1-first10&entry.2107637366=First+and+10';
 
-    function openPrefilledFirst10Form(childWindow, childDocument) {
-      const output = childDocument.getElementById('google-output');
-      const content = output ? output.value : '';
-      if (content && childWindow.navigator && childWindow.navigator.clipboard) {
-        childWindow.navigator.clipboard.writeText(content).catch(() => {});
+    function getGoogleOutput(childWindow, childDocument) {
+      if (typeof childWindow.buildGooglePrompt === 'function') {
+        childWindow.buildGooglePrompt();
       }
-      childWindow.open(PREFILLED_FIRST10_FORM, '_blank');
+      const output = childDocument.getElementById('google-output');
+      return output ? (output.value || '') : '';
+    }
+
+    function openPrefilledFirst10Form(childWindow, childDocument, button) {
+      const content = getGoogleOutput(childWindow, childDocument);
+      const originalText = button ? button.textContent : '';
+      const openForm = () => childWindow.open(PREFILLED_FIRST10_FORM, '_blank');
+
+      if (!content.trim()) {
+        if (button) {
+          button.textContent = 'FORM OPENED - COPY MANUALLY';
+          setTimeout(() => { button.textContent = originalText || 'SUBMIT TO GOOGLE FORM'; }, 2200);
+        }
+        openForm();
+        return;
+      }
+
+      if (childWindow.navigator && childWindow.navigator.clipboard && childWindow.navigator.clipboard.writeText) {
+        childWindow.navigator.clipboard.writeText(content)
+          .then(() => {
+            if (button) {
+              button.textContent = 'COPIED - OPENING FORM';
+              setTimeout(() => { button.textContent = originalText || 'SUBMIT TO GOOGLE FORM'; }, 2200);
+            }
+            openForm();
+          })
+          .catch(() => {
+            if (button) {
+              button.textContent = 'FORM OPENED - COPY MANUALLY';
+              setTimeout(() => { button.textContent = originalText || 'SUBMIT TO GOOGLE FORM'; }, 2200);
+            }
+            openForm();
+          });
+      } else {
+        if (button) {
+          button.textContent = 'FORM OPENED - COPY MANUALLY';
+          setTimeout(() => { button.textContent = originalText || 'SUBMIT TO GOOGLE FORM'; }, 2200);
+        }
+        openForm();
+      }
     }
 
     function wireFirst10Capture() {
@@ -31,21 +69,19 @@
         if (!childWindow || !childDocument) return;
 
         childWindow.submitToGoogleForm = function() {
-          openPrefilledFirst10Form(childWindow, childDocument);
+          openPrefilledFirst10Form(childWindow, childDocument, null);
         };
 
-        const buttons = Array.from(childDocument.querySelectorAll('button'));
-        buttons.forEach(button => {
+        childDocument.addEventListener('click', event => {
+          const button = event.target && event.target.closest ? event.target.closest('button') : null;
+          if (!button) return;
           const label = (button.textContent || '').trim().toLowerCase();
           if (label === 'submit to google form') {
-            button.onclick = null;
-            button.addEventListener('click', event => {
-              event.preventDefault();
-              event.stopPropagation();
-              openPrefilledFirst10Form(childWindow, childDocument);
-            });
+            event.preventDefault();
+            event.stopPropagation();
+            openPrefilledFirst10Form(childWindow, childDocument, button);
           }
-        });
+        }, true);
       } catch (error) {
         console.warn('Unable to wire First & 10 capture link:', error);
       }
