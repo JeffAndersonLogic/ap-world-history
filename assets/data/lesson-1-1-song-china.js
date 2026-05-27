@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 1.1",
     title: "Song China: Power, Prosperity, and the Scholar's World",
     subtitle: "Developments in East Asia, c. 1200 to c. 1450",
-    feedbackToolUrl: "https://app.magicschool.ai/",
+    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
   },
 
@@ -80,322 +80,87 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       code: "KC-3.1.III.D.i",
-      theme: "Culture",
+      theme: "Cultural Developments and Interactions",
       text: "Chinese cultural traditions continued, and they influenced neighboring regions.",
-      illustrativeExamples: []
+      illustrativeExamples: ["Filial piety", "Neo-Confucianism"]
     },
     {
       code: "KC-3.1.III.D.ii",
-      theme: "Culture",
+      theme: "Cultural Developments and Interactions",
       text: "Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices.",
-      illustrativeExamples: [
-        "<strong>Cultural traditions:</strong>",
-        "Filial piety in East Asia",
-        "Influence of Neo-Confucianism and Buddhism in East Asia",
-        "Confucian traditions of both respect for and expected deference from women",
-        "Chinese literary and scholarly traditions and their spread to Heian Japan and Korea",
-        "<strong>Branches of Buddhism:</strong>",
-        "Theravada",
-        "Mahayana",
-        "Tibetan"
-      ]
+      illustrativeExamples: ["Theravada", "Mahayana", "Tibetan"]
     },
     {
       code: "KC-3.3.III.A.i",
-      theme: "Economics",
-      text: "The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisanal labor.",
-      illustrativeExamples: []
+      theme: "Economic Systems",
+      text: "The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisan labor.",
+      illustrativeExamples: ["Champa rice", "Grand Canal", "Flying cash"]
     },
     {
       code: "KC-3.1.I.D",
-      theme: "Economics",
-      text: "The economy of Song China flourished as a result of increased productive capacity, expanding trade networks, and innovations in agriculture and manufacturing.",
-      illustrativeExamples: [
-        "<strong>Technological Innovations:</strong>",
-        "Champa rice",
-        "Transportation innovations, such as the expansion of the Grand Canal",
-        "Steel and iron production",
-        "Textiles and porcelains for export"
-      ]
+      theme: "Economic Systems",
+      text: "The expansion of empires—including the Song Dynasty—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.",
+      illustrativeExamples: []
     }
   ],
 
-  stableImages: {
-    contentDelivery: "../assets/images/1-1-lecture.jpg",
-    checkpoint1: "../assets/images/1-1-checkpoint1.jpg",
-    checkpoint2: "../assets/images/1-1-checkpoint2.jpg",
-    beInTheRoom: "../assets/images/1-1-beintheroom.jpg",
-    beSurreal: "../assets/images/1-1-besurreal.jpg"
+  lecture: {
+    title: "Song China: Governance, Culture, and Economy",
+    intro: "Use these cards to explain how Song China organized political authority, extended Chinese cultural influence, and developed one of the most commercialized economies of the postclassical world.",
+    videos: [
+      { title: "Heimler's History — Topic 1.1 Part 1", url: "https://youtu.be/QO7NHZJ-eE4", youtubeId: "QO7NHZJ-eE4", prompt: "Use this clip to review Song governance, Confucianism, and cultural influence." },
+      { title: "Heimler's History — Topic 1.1 Part 2", url: "https://youtu.be/HfIWZhXt7fY", youtubeId: "HfIWZhXt7fY", prompt: "Use this clip to review Song commercial growth, technology, and economic innovation." }
+    ],
+    segments: [
+      { title: "How Song rulers organized government", bullets: ["Song rulers expanded **imperial bureaucracy** to govern a large, complex state.", "The **civil service exam system** selected scholar-officials trained in Confucian texts.", "Confucianism helped justify hierarchy, obedience, education, and moral government."], image: { title: "Song imperial examination", caption: "Civil service exams became a major path into the scholar-official class.", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG", sourceUrl: "https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG" } },
+      { title: "Chinese traditions and East Asian influence", bullets: ["Chinese cultural traditions influenced Korea, Japan, and Vietnam through elite culture, writing, government models, and belief systems.", "**Neo-Confucianism** blended Confucian social ethics with Buddhist and Daoist ideas.", "Buddhism continued to shape societies across Asia in several branches, including Mahayana, Theravada, and Tibetan Buddhism."], image: { title: "Confucius portrait", caption: "Confucian learning remained central to elite culture and state ideology.", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg", sourceUrl: "https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg" } },
+      { title: "Why the Song economy expanded", bullets: ["Champa rice increased agricultural productivity and supported population growth.", "The **Grand Canal** connected northern and southern China and helped move grain, goods, and tax revenue.", "Paper money, iron and steel production, porcelain, textiles, and urban markets reveal a highly commercialized economy."], image: { title: "Jiaozi paper money", caption: "Paper money reflected the needs of a growing commercial economy.", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg", sourceUrl: "https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg" } }
+    ]
   },
 
   map: {
-    title: "Map: Northern Song China and Neighboring States",
-    intro: "Before the First & 10 reading, locate Song China in East Asia. This source-based map shows the Song Dynasty at its greatest territorial extent in 1111, along with neighboring states such as Liao and Western Xia.",
+    title: "Song China and East Asia",
     url: "https://commons.wikimedia.org/wiki/Special:FilePath/China_-_Song_Dynasty-en.svg",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:China_-_Song_Dynasty-en.svg",
-    caption: "Map of China during the Northern Song Dynasty. Source: Wikimedia Commons.",
-    notes: [
-      "This map shows the **Northern Song** world before the dynasty lost northern territory and later ruled from **Lin'an/Hangzhou** as the Southern Song.",
-      "The presence of **Liao** and **Western Xia** helps explain why the Song state needed organized government, revenue, and defense systems.",
-      "Song power was strongest in China proper, but the dynasty operated in a wider East Asian world of neighboring states, frontiers, diplomacy, and conflict.",
-      "Use this map as a geographic anchor before studying the systems that made Song China wealthy and administratively sophisticated."
-    ],
-    prompt: "How does this map help explain why Song China needed strong bureaucracy, infrastructure, and economic systems to maintain power?"
+    caption: "Song China and neighboring states in East Asia.",
+    intro: "Use the map to connect political borders, neighboring states, and the need for strong government systems.",
+    prompt: "How did geography and neighboring states shape the problems Song rulers needed to solve?",
+    notes: ["Song China governed a dense, productive region with major cities, canals, and farms.", "Neighboring states placed pressure on Song rulers, especially along the northern frontier.", "Economic strength did not remove military vulnerability."
+    ]
   },
 
   first10: {
-    title: "First & 10: Song China — Power, Prosperity, and the Scholar's World",
+    title: "First & 10: The World That Song Built",
     paragraphs: [
-      "Imagine waking before sunrise in a crowded Chinese city sometime around the year 1200. The streets are already beginning to move. Merchants are setting out goods. Boats are unloading grain and rice. Artisans are preparing porcelain, silk, iron tools, paper, and books. Somewhere nearby, a family is awake long before the market opens, not because they are farmers or merchants, but because their son is preparing for one of the most difficult tests in the world.",
-      "This test is not a math quiz or a final exam. It is the civil service examination, and passing it could change the future of an entire family.",
-      "In Song China, government service was one of the highest forms of success. The Song Dynasty ruled a large, wealthy, and complex society, and it needed educated officials to help govern it. These officials collected taxes, kept records, advised rulers, managed public works, and helped maintain order across the empire. The emperor may have stood at the top of the political system, but he could not govern alone. To rule effectively, the Song relied on a large bureaucracy: a system of government departments staffed by trained officials.",
-      "The civil service exam was supposed to identify men who had mastered Confucian learning. Confucianism taught that society worked best when people understood their roles and responsibilities. Children owed respect to parents. Subjects owed loyalty to rulers. Officials were expected to govern with moral discipline. Rulers were expected to care for the people and maintain order. These ideas were not new to China, but under the Song they became deeply connected to government power.",
-      "For a young scholar, this created both opportunity and pressure. In theory, a talented man could rise through education and examination rather than simply being born into power. In reality, wealthy families had an advantage because they could afford books, tutors, and years of study. Still, the exam system mattered because it created a class of scholar-officials whose identity was tied to learning, discipline, and service to the state. In Song China, knowledge was not just personal achievement. It was a path to power.",
-      "But the story of Song China is not only about scholars and exams. It is also about farmers, merchants, engineers, monks, printers, sailors, and city dwellers living through one of the most dynamic periods in world history.",
-      "One major change came from agriculture. The introduction and spread of Champa rice, a fast-ripening variety from Southeast Asia, helped farmers produce more food. In some areas, farmers could harvest rice more than once a year. More food meant a larger population. A larger population meant more workers, bigger cities, and greater demand for goods. Agricultural change helped fuel economic change.",
-      "Transportation also mattered. The Grand Canal connected northern and southern China, allowing grain, taxes, and trade goods to move across long distances more efficiently. This was more than a waterway. It was a lifeline of the empire. It helped the government feed cities, supply armies, collect revenue, and connect regions that might otherwise have remained separate. Geography shaped China, but infrastructure helped the Song state manage it.",
-      "As farming and transportation improved, trade expanded. Song cities grew into centers of commerce and culture. Markets were crowded with goods from across China and beyond. Merchants traded rice, tea, silk, porcelain, iron, and books. The economy became so active that heavy copper coins were not always practical. Imagine trying to carry hundreds or thousands of coins for a major purchase. Paper money helped solve that problem. It made trade easier, but it also required trust. People had to believe that the paper had value because the government supported it.",
-      "This is where Song China becomes especially important for AP World History. The Song Dynasty shows how different parts of society can strengthen one another. Bureaucracy helped the state govern. Confucianism helped justify social and political order. Champa rice helped support population growth. The Grand Canal helped connect the economy. Paper money helped expand commerce. Printing helped spread texts and knowledge. None of these developments worked alone. Together, they made Song China one of the most advanced and prosperous societies in the world.",
-      "At the same time, not everything changed. Chinese rulers still claimed legitimacy through older traditions. Confucian values still emphasized hierarchy and social order. Families remained central to society. Men continued to hold most formal positions of power. The state still expected people to respect authority. Song China was innovative, but it was not a complete break from the past. It combined continuity and change.",
-      "That is the key to understanding this topic. Song China was powerful because it blended old and new. It preserved Confucian traditions while expanding the bureaucracy. It relied on ancient ideas of moral government while using new technologies and economic tools. It built on earlier Chinese achievements while creating one of the most commercialized economies of the medieval world.",
-      "So when we study Song China, we are not just memorizing a dynasty. We are asking a bigger historical question: How does a society become powerful, organized, and influential?",
-      "For the Song, the answer was not just one emperor, one invention, or one belief system. It was the interaction of people, ideas, institutions, agriculture, technology, and trade. Scholars studied because government service could transform their lives. Farmers worked new rice fields that fed growing cities. Merchants adapted to a changing economy. Officials used Confucian ideas to organize society. The state used canals, exams, and bureaucracy to hold a complex empire together.",
-      "Song China reminds us that history is not only about battles and rulers. Sometimes the most important changes happen in exam halls, rice fields, marketplaces, canals, and classrooms. And sometimes, the future of an empire begins with a student sitting quietly over a text, hoping that what they have learned will open the door to power."
+      "The Song dynasty came to power after decades of instability and built a state centered on civilian officials, Confucian learning, and bureaucracy.",
+      "Its rulers strengthened the civil service exam system, helping scholar-officials become central to government and culture.",
+      "At the same time, agricultural and commercial growth made Song China one of the most urbanized and economically dynamic societies in the world."
     ],
     questions: [
-      "What conditions helped Song China become wealthy, organized, and powerful?",
-      "What older Chinese traditions continued under the Song, and what new developments changed Chinese society?",
-      "Which development seems most important to Song China's success: civil service exams, Confucianism, Champa rice, the Grand Canal, paper money, or printing? Defend your answer with evidence from the reading."
+      "Explain how the instability before 960 CE caused Song rulers to build their government around civilian officials, Confucian learning, and bureaucracy. Use at least two specific examples.",
+      "Confucianism existed long before the Song Dynasty. What continued from earlier Confucian tradition, and what changed during the Song period? Be specific about Neo-Confucianism and the civil service examination system.",
+      "Evaluate this claim: 'The solution to one problem often becomes the source of the next.' Use evidence from Song China to support or challenge the claim."
     ],
     magicSchoolBridge: {
-      title: "Take Your Thinking to the AI Coach",
-      directions: "Before you move to the lecture, complete these two sentences. Then copy your response into the BeHistorical AI Coach in MagicSchool and follow the coaching conversation.",
-      prompt1: "One thing I noticed in this reading was...",
-      prompt2: "One question I still have is...",
-      copyInstructions: "Click Build My Prompt, then copy it into the BeHistorical AI Coach:",
-      magicSchoolUrl: "https://app.magicschool.ai/"
+      magicSchoolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q"
     }
   },
-
-  lecture: {
-    title: "Lecture: Song China as a System",
-    intro: "Use these concise notes to follow how government, belief, agriculture, infrastructure, and commerce worked together in Song China.",
-    segments: [
-      {
-        title: "Mandate of Heaven",
-        bullets: [
-          "**Mandate of Heaven** justified dynastic rule.",
-          "The emperor was the **Son of Heaven**.",
-          "Good rule meant **order**, **prosperity**, and **moral responsibility**.",
-          "Disaster, famine, rebellion, or corruption could signal lost legitimacy.",
-          "This was a major **continuity** in Chinese political culture."
-        ],
-        image: {
-          title: "Emperor Huizong of Song",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Huizong.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Huizong.jpg",
-          caption: "Imperial portraits help students visualize dynastic authority and claims to legitimate rule."
-        }
-      },
-      {
-        title: "Bureaucracy",
-        bullets: [
-          "The Song used an **imperial bureaucracy** to govern a large empire.",
-          "Officials managed **taxes**, **records**, **laws**, and **public works**.",
-          "Bureaucracy helped the state govern beyond the capital.",
-          "The system made rule more organized and stable."
-        ],
-        image: {
-          title: "Song Official / Examination Culture",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG",
-          caption: "The examination system and scholar-official culture show how education became connected to government service."
-        }
-      },
-      {
-        title: "Civil Service Exams",
-        bullets: [
-          "The **civil service exam** selected officials through Confucian learning.",
-          "Successful candidates became **scholar-officials**.",
-          "The system promoted **meritocracy** in theory.",
-          "Wealthy families still had advantages because education required time and resources.",
-          "The exams tied education, status, and government power together."
-        ],
-        image: {
-          title: "Civil Service Examination",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Palastexamen-SongDynastie.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Palastexamen-SongDynastie.jpg",
-          caption: "Exam images help students see how the state turned learning and testing into a path toward authority."
-        }
-      },
-      {
-        title: "Confucianism and Neo-Confucianism",
-        bullets: [
-          "**Confucianism** emphasized hierarchy, duty, education, and moral behavior.",
-          "**Filial piety** reinforced family and social order.",
-          "**Neo-Confucianism** revived Confucian thought during the Song.",
-          "Neo-Confucian thinkers responded to the influence of **Buddhism** and **Daoism**.",
-          "**Zhu Xi** became one of the most important Neo-Confucian scholars."
-        ],
-        image: {
-          title: "Zhu Xi",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Zhu%20xi.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Zhu_xi.jpg",
-          caption: "Zhu Xi became central to Neo-Confucian thought and later educational traditions in East Asia."
-        }
-      },
-      {
-        title: "Economy, Agriculture, and Infrastructure",
-        bullets: [
-          "**Champa rice** increased agricultural productivity.",
-          "More food supported **population growth** and larger cities.",
-          "The **Grand Canal** moved grain, taxes, goods, and people.",
-          "**Paper money** supported trade in a commercial economy.",
-          "Song China produced major goods like **silk**, **porcelain**, **iron**, **steel**, and **textiles**."
-        ],
-        image: {
-          title: "Jiaozi Paper Money",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg",
-          caption: "Song paper money shows the sophistication of commercial life and the importance of trust in government-backed exchange."
-        }
-      }
-    ],
-    videos: [
-      {
-        title: "Discovering China: The Song Dynasty",
-        url: "https://youtu.be/QO7NHZJ-eE4",
-        youtubeId: "QO7NHZJ-eE4",
-        prompt: "As you watch, listen for how the Song Dynasty rebuilt order after political chaos and how its innovations changed Chinese society."
-      },
-      {
-        title: "Developments in East Asia — AP World Review Unit 1 Topic 1",
-        url: "https://youtu.be/HfIWZhXt7fY",
-        youtubeId: "HfIWZhXt7fY",
-        prompt: "As you watch, identify which Song developments connect most clearly to AP World themes: government, belief systems, economy, and cultural influence."
-      }
-    ]
-  },
-
-  images: [
-    {
-      title: "Civil Service Examination",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG",
-      source: "Wikimedia Commons",
-      caption: "Civil service examination culture helped create a scholar-official class tied to Confucian learning.",
-      prompt: "What does this image suggest about the relationship between education and government power?"
-    },
-    {
-      title: "Zhu Xi and Neo-Confucianism",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Zhu_Xi.jpg",
-      source: "Wikimedia Commons",
-      caption: "Zhu Xi became one of the most influential Neo-Confucian thinkers of the Song era.",
-      prompt: "Why might a government value a belief system that emphasizes order, duty, and hierarchy?"
-    },
-    {
-      title: "Jiaozi Paper Money",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg",
-      source: "Wikimedia Commons",
-      caption: "Paper money made exchange easier in a commercial economy, but it depended on trust in government authority.",
-      prompt: "How does paper money reveal the sophistication and risk of Song commerce?"
-    },
-    {
-      title: "Qingming Scroll Detail",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Along_the_River_During_the_Qingming_Festival_(detail_of_original).jpg",
-      source: "Wikimedia Commons",
-      caption: "Urban scenes show the density, movement, and commercial life of Song-era China.",
-      prompt: "What evidence of economic complexity can you identify in the image?"
-    }
-  ],
 
   evidenceLab: {
-    title: "Evidence Lab: Reading Song China Through Images",
-    task: "Choose one image and explain what it reveals about Song government, economy, belief systems, or daily life.",
-    prompt: "This image shows... This matters because... It connects to Song China because..."
+    title: "Evidence Lab: Reading Song China Through Evidence",
+    intro: "Use the evidence to connect Song institutions and innovations to broader historical developments.",
+    prompt: "Choose one piece of evidence from Song China and explain how it supports a claim about political order, cultural influence, or economic commercialization.",
+    items: [
+      { title: "Civil service exams", detail: "Evidence of bureaucratic government and Confucian education." },
+      { title: "Champa rice", detail: "Evidence of agricultural innovation, population growth, and productivity." },
+      { title: "Paper money", detail: "Evidence of commercialization and large-scale exchange." }
+    ]
   },
 
   primarySource: {
-    title: "Primary Source: Confucianism and Social Order",
-    intro: "This adapted excerpt is based on ideas from The Analects, a collection of sayings associated with Confucius. Use it to think about why Confucianism remained useful to Chinese states.",
-    text: "A ruler should govern through virtue, not only through punishment. If people are led by laws and controlled by punishments, they may try to avoid punishment but have little sense of shame. If they are led by virtue and guided by proper conduct, they will develop a sense of shame and correct themselves. A young person should be respectful at home, careful in action, trustworthy in speech, and devoted to learning.",
-    questions: [
-      "What kind of ruler does this source seem to value?",
-      "How could these ideas support bureaucracy and civil service exams?",
-      "What limits might exist in a society built around hierarchy and obedience?"
-    ]
-  },
-
-  skillBuilder: {
-    label: "Causation — How did Song innovations connect to economic and social change?",
-    title: "AP Skill Builder: Causation",
-    intro: "Causation asks you to explain why things happened and what effects they produced. In Song China, several developments worked together in a chain of cause and effect.",
-    steps: [
-      { label: "Step 1 — Identify a cause", text: "Name a specific Song development (Champa rice, Grand Canal, civil service exam, paper money)." },
-      { label: "Step 2 — Explain the effect", text: "Describe what changed as a result. Be specific: population growth, urbanization, trade expansion, political stability." },
-      { label: "Step 3 — Connect to a bigger pattern", text: "How does this cause-and-effect pair connect to Song China's overall power or prosperity?" }
-    ],
-    prompt: "Choose one Song development and trace its effects. What changed because of it, and how did that change strengthen Song China?"
-  },
-
-  beSurreal: {
-    title: "BeSurreal: The Paper Money Moment",
-    text: "Imagine holding a piece of paper and being told it was worth a thousand copper coins you would never see. In Song China, this was real life. Paper money called jiaozi was first used in Sichuan province around 1000 CE because merchants were tired of hauling heavy iron coins. The government eventually took it over, backed it with reserves, and issued it across the empire. You did not have gold in your pocket. You had trust in ink and paper.",
-    prompt: "Why would people accept paper as money? What does this tell you about the relationship between trust and government power?"
-  },
-
-  beInTheRoom: {
-    url: '../beintheroom/unit-1/song-court.html',
-    desc: 'Enter the Song court, choose a historical role, advise the emperor, and defend a policy recommendation with evidence.'
-  },
-
-  checkpoints: [
-    {
-      subtitle: "Checkpoint 1 — Mid-Lesson Draft Check",
-      cardDesc: "Build your first draft and take it to the BeHistorical AI Coach before your final response.",
-      learningTargets: [
-        "I can explain how Song China used Confucianism and imperial bureaucracy to maintain rule.",
-        "I can describe how Chinese cultural traditions shaped East Asia.",
-        "I can connect economic innovations to Song China's prosperity."
-      ],
-      successCriteria: [
-        "My response includes at least one piece of specific evidence.",
-        "My response connects that evidence to a historical claim.",
-        "My response addresses government, culture, OR economy."
-      ],
-      terms: ["civil service exam", "Confucianism", "bureaucracy", "Champa rice", "Grand Canal"],
-      focus: [
-        "Make a clear historical claim.",
-        "Use at least one specific piece of evidence.",
-        "Connect evidence to a historical outcome."
-      ],
-      prompt: "Explain how one development in Song China helped strengthen the state or economy. Use specific evidence from the lesson.",
-      responseType: "Checkpoint 1",
-      magicSchoolMode: "Checkpoint 1"
-    },
-    {
-      subtitle: "Checkpoint 2 — Final Response",
-      cardDesc: "Polish your final response with AI coaching before submitting in Canvas.",
-      learningTargets: [
-        "I can explain how Song China used Confucianism and imperial bureaucracy to maintain rule.",
-        "I can describe how Chinese cultural traditions shaped East Asia.",
-        "I can connect economic innovations to Song China's prosperity."
-      ],
-      successCriteria: [
-        "My response makes a clear claim supported by at least two pieces of specific evidence.",
-        "My response connects evidence to state power, prosperity, or social order.",
-        "My response addresses a tradeoff, limitation, or opposing perspective."
-      ],
-      terms: ["civil service exam", "Confucianism", "bureaucracy", "Neo-Confucianism", "Champa rice", "Grand Canal", "paper money", "scholar-official"],
-      focus: [
-        "Make a clear claim.",
-        "Use at least two specific Song developments.",
-        "Explain cause and effect rather than just naming terms.",
-        "Address a tradeoff, limitation, or opposing perspective."
-      ],
-      prompt: "Explain how two developments in Song China helped strengthen the state or economy between c. 1200 and c. 1450. Address at least one tradeoff or limitation.",
-      responseType: "Checkpoint 2",
-      magicSchoolMode: "Checkpoint 2"
-    }
-  ]
-
+    title: "Primary Source: Confucian Governance",
+    intro: "Read the source excerpt as evidence of the ideas that shaped elite government service.",
+    text: "A ruler should cultivate virtue, appoint capable officials, and govern through moral example.",
+    questions: ["What political values does the source emphasize?", "How could these values support bureaucracy or civil service exams?", "What limitation or bias might this elite perspective have?"]
+  }
 };
