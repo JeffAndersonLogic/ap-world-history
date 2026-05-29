@@ -44,6 +44,7 @@ window.BH_FORM = {
     checkpoint1:   'Checkpoint 1',
     evidenceLab:   'Evidence Lab',
     primarySource: 'Primary Source',
+    beInTheRoom:   'BeInTheRoom',
     checkpoint2:   'Checkpoint 2',
   }
 };
