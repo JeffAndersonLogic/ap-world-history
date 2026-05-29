@@ -33,19 +33,20 @@ window.BH_FORM = {
     '1.4': '1.4 - The Americas',
     '1.5': '1.5 - Africa',
     '1.6': '1.6 - Eurasian Connections',
-    '1.7': '1.7 - Cross-Cultural Exchanges',
+    '1.7': '1.7 - Comparison',
   },
 
   // Must match Google Form multiple-choice option text exactly.
   // Always use these keys in lesson pages — never hardcode the string directly.
   responseTypes: {
-    first10:       'First and 10',
-    skillBuilder:  'AP Skill Builder',
-    checkpoint1:   'Checkpoint 1',
-    evidenceLab:   'Evidence Lab',
-    primarySource: 'Primary Source',
-    beInTheRoom:   'BeInTheRoom',
-    checkpoint2:   'Checkpoint 2',
+    first10:          'First and 10',
+    comparisonMatrix: 'Comparison Matrix',
+    skillBuilder:     'AP Skill Builder',
+    checkpoint1:      'Checkpoint 1',
+    evidenceLab:      'Evidence Lab',
+    primarySource:    'Primary Source',
+    beInTheRoom:      'BeInTheRoom',
+    checkpoint2:      'Checkpoint 2',
   }
 };
 
