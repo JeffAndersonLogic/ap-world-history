@@ -564,17 +564,23 @@ function responseBlock(id, prompt, responseType, terms = [], captureKey = '') {
 
 // ── Draft / save / copy / self-check ─────────────────────────────────────────
 
+// Namespace localStorage keys by topic so drafts never bleed across lessons.
+function draftKey(id) {
+  const topic = (L && L.meta && L.meta.topic) ? L.meta.topic.replace(/\s+/g, '-').toLowerCase() : 'shared';
+  return `behistorical-draft-${topic}-${id}`;
+}
+
 function saveDraft(id) {
   const t = byId(id);
   if (!t) return;
-  localStorage.setItem(`behistorical-draft-${id}`, t.value || '');
+  localStorage.setItem(draftKey(id), t.value || '');
   byId(id + '-result').textContent = 'Draft saved on this device.';
 }
 
 function loadDraft(id) {
   const t = byId(id);
   if (!t) return;
-  const saved = localStorage.getItem(`behistorical-draft-${id}`);
+  const saved = localStorage.getItem(draftKey(id));
   if (saved) t.value = saved;
 }
 
