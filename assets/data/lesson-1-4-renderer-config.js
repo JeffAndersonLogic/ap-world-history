@@ -2,8 +2,7 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
-  lesson.beInTheRoom = {
-    url: '../beintheroom/unit-1/inca-court.html',
-    desc: 'Enter the Inca Empire as a provincial governor, choose how to fulfill the state\'s mit\'a labor demand, and defend your decision with historical evidence.'
-  };
+  if (!lesson.meta.canvasSubmissionNote) {
+    lesson.meta.canvasSubmissionNote = 'Use this space to organize your thinking. Your final response must be submitted in Canvas.';
+  }
 })();
