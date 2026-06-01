@@ -207,7 +207,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Magna Carta (England, 1215 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg',
+        url: '../assets/images/module-cards/persepolis-gate-nations.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg',
         caption: 'Magna Carta was not a democratic document — it protected the rights of free men (primarily nobles) from royal arbitrary power. Its historical significance lies in establishing that even kings were subject to law. The barons who forced King John to sign it were demonstrating that every political hierarchy contains powerful enough actors to push back when extraction goes too far.'
       }

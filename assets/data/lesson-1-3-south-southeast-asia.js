@@ -50,7 +50,7 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Khmer_Empire_1203_Map_(cropped).png',
+    map:             '../assets/images/module-cards/angkor-wat-1150ce.jpg',
     first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
     beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Hampi%20virupaksha%20temple.jpg',
@@ -66,7 +66,7 @@ window.BEHISTORICAL_LESSON = {
     embedUrl: 'map-module-01-topic-1-3-south-southeast-asia.html',
     note: 'This Map & Geography Check uses the embedded two-map pop-out window. Use the maps below, then close this pop-out to return to the 1.3 lesson path.',
     intro: 'Topic 1.3 spans three connected geographic zones: South Asia, mainland Southeast Asia, and maritime Southeast Asia. Geography shaped which states thrived — and which belief systems spread.',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Khmer_Empire_1203_Map_(cropped).png',
+    url: '../assets/images/module-cards/angkor-wat-1150ce.jpg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Khmer_Empire_1203_Map_(cropped).png',
     caption: 'The Khmer Empire at Angkor was one of the most powerful land-based states in mainland Southeast Asia.',
     notes: [
