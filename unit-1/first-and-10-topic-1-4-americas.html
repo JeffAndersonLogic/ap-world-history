@@ -7,24 +7,256 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--bs:#1A1C1D;--cs:#2B2F31;--gg:#3E4447;--ai:#5A5F5C;--ms:#D2B48C;--bb:#8C5A2B;--rc:#A8652D;--ob:#6B3E1F;--ag:#C9A46A;--wp:#F5F0E7;--cp:#FFFDF7;--ink:#151718;--fd:'Cinzel','Trajan Pro',Georgia,serif;--fb:'Libre Baskerville',Georgia,serif;--fu:'Montserrat',Arial,sans-serif}
-    body{background:var(--bs);font-family:var(--fb);color:var(--cp);padding:1.5rem 1rem}.mod{max-width:960px;margin:0 auto;border:1px solid var(--gg);border-radius:4px;overflow:hidden;box-shadow:0 12px 48px rgba(0,0,0,.55)}.mh{background:var(--cs);border-bottom:2px solid var(--ag);padding:1.3rem 2rem}.ht{display:flex;align-items:center;gap:.85rem;margin-bottom:.5rem}.badge{font-family:var(--fu);font-size:.62rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ag);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.35);padding:.28rem .65rem;border-radius:2px;white-space:nowrap}.mname{font-family:var(--fd);font-size:1.05rem;font-weight:600;color:var(--cp);letter-spacing:.04em}.msub{font-family:var(--fu);font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ms)}.tb{background:var(--bs);border-bottom:1px solid var(--gg);padding:2.4rem 2.4rem 2rem;position:relative;overflow:hidden}.tb::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--ob),var(--ag),var(--ms),var(--ag),var(--ob))}.eyebrow{font-family:var(--fu);font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ag);margin-bottom:.7rem}.rtitle{font-family:var(--fd);font-size:2rem;font-weight:700;color:var(--cp);line-height:1.2;letter-spacing:.02em;margin-bottom:.6rem}.rtitle em{color:var(--ag);font-style:normal}.deck{font-family:var(--fb);font-size:.95rem;font-style:italic;color:var(--ms);line-height:1.7;max-width:760px;margin-bottom:1.2rem}.tags{display:flex;flex-wrap:wrap;gap:.45rem}.tag{font-family:var(--fu);font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ms);border:1px solid rgba(210,180,140,.3);padding:.2rem .55rem;border-radius:2px}.rb{background:var(--wp);color:var(--ink)}.sec{padding:2rem 2.4rem;border-bottom:1px solid #e2d9cc;position:relative}.sn{font-family:var(--fd);font-size:3.5rem;font-weight:700;color:rgba(140,90,43,.12);position:absolute;top:1.2rem;right:2rem;line-height:1;pointer-events:none;user-select:none}.sl{font-family:var(--fu);font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--bb);margin-bottom:.4rem}.sh{font-family:var(--fd);font-size:1.15rem;font-weight:600;color:var(--bs);margin-bottom:1.1rem;line-height:1.3;border-bottom:1px solid rgba(140,90,43,.2);padding-bottom:.6rem}.rt{font-size:.93rem;line-height:1.9;color:#1e1e1e;margin-bottom:1rem}.kt{background:rgba(210,180,140,.35);color:var(--ob);font-weight:700;padding:0 3px;border-radius:2px}.ac{background:var(--cs);border-left:3px solid var(--ag);padding:1rem 1.2rem;margin:1.4rem 0;border-radius:0 3px 3px 0}.acl{font-family:var(--fu);font-size:.57rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ag);margin-bottom:.35rem}.ac p{font-family:var(--fu);font-size:.8rem;color:var(--wp);line-height:1.65}.ac p strong{color:var(--ms)}.pq{border-left:4px solid var(--ag);margin:1.6rem 0;padding:.8rem 1.4rem;background:rgba(201,164,106,.06)}.pq p{font-family:var(--fd);font-size:1rem;font-style:italic;color:var(--bb);line-height:1.6}.two{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-top:1rem}.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-top:1rem}.mc{background:var(--cp);border:1px solid #ddd6ca;border-radius:3px;padding:1rem 1.1rem}.mct{font-family:var(--fd);font-size:.82rem;font-weight:600;color:var(--bs);margin-bottom:.5rem}.mc p{font-size:.8rem;line-height:1.7;color:#333}.cs{background:var(--bs);padding:2rem 2.4rem;border-top:2px solid var(--ag)}.ch{display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem}.cb{font-family:var(--fu);font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ag);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.3);padding:.25rem .6rem;border-radius:2px}.ct{font-family:var(--fd);font-size:1rem;font-weight:600;color:var(--cp)}.ql{list-style:none;padding:0;display:flex;flex-direction:column;gap:1.2rem}.qi{background:var(--cs);border:1px solid var(--gg);border-radius:3px;overflow:hidden}.qp{padding:.9rem 1.1rem;border-bottom:1px solid var(--gg);display:flex;gap:.8rem;align-items:flex-start}.qn{font-family:var(--fd);font-size:.75rem;font-weight:700;color:var(--ag);min-width:1.4rem;padding-top:1px}.qsk{font-family:var(--fu);font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--bb);border:1px solid rgba(140,90,43,.4);padding:.15rem .4rem;border-radius:2px;white-space:nowrap;margin-top:1px}.qt{font-family:var(--fb);font-size:.85rem;color:var(--cp);line-height:1.65}.qta{width:100%;min-height:80px;background:#23272a;border:none;padding:.8rem 1.1rem;font-family:var(--fb);font-size:.82rem;color:var(--wp);line-height:1.7;resize:vertical;outline:none}.mf{background:var(--cs);border-top:1px solid var(--gg);padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}.fn{font-family:var(--fu);font-size:.62rem;color:var(--ai)}.nb{font-family:var(--fu);font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ag);background:transparent;border:1px solid rgba(201,164,106,.4);padding:.4rem .9rem;border-radius:2px;text-decoration:none}.nb.prev{color:var(--ms);border-color:rgba(210,180,140,.25)}@media(max-width:700px){.three,.two{grid-template-columns:1fr}.qp{display:block}.qsk{display:inline-block;margin:.35rem 0}.rtitle{font-size:1.55rem}.sec,.tb,.mh,.cs{padding:1.35rem}}
-  .builder-section{background:var(--charcoal-steel);padding:1.6rem 2.4rem;border-top:1px solid var(--gunmetal-gray)}.builder-heading{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--clean-paper);margin-bottom:.5rem}.builder-body{font-family:var(--font-ui);font-size:.78rem;color:var(--muted-sandstone);line-height:1.6;margin-bottom:.9rem}.tool-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:.7rem}.builder-output{width:100%;min-height:90px;background:#23272a;border:1px solid var(--gunmetal-gray);padding:.8rem 1.1rem;font-family:var(--font-body);font-size:.82rem;color:var(--warm-paper);line-height:1.7;resize:vertical;border-radius:2px}.page-footer-note{font-family:var(--font-body);font-size:.82rem;font-style:italic;color:var(--aged-iron);padding:1.2rem 2.4rem;background:var(--charcoal-steel);border-top:1px solid var(--gunmetal-gray)}button{font-family:var(--font-ui);font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--burnished-bronze);color:var(--clean-paper);border:none;padding:.5rem 1rem;border-radius:2px;cursor:pointer}button:hover{background:var(--rust-copper)}button.secondary{background:transparent;border:1px solid rgba(201,164,106,.4);color:var(--antique-gold)}button.secondary:hover{background:rgba(201,164,106,.1)}</style>
+    :root{--blackened-steel:#1A1C1D;--charcoal-steel:#2B2F31;--gunmetal-gray:#3E4447;--aged-iron:#5A5F5C;--muted-sandstone:#D2B48C;--burnished-bronze:#8C5A2B;--rust-copper:#A8652D;--oxidized-brown:#6B3E1F;--antique-gold:#C9A46A;--warm-paper:#F5F0E7;--clean-paper:#FFFDF7;--ink:#151718;--font-display:'Cinzel','Trajan Pro',Georgia,serif;--font-body:'Libre Baskerville',Georgia,serif;--font-ui:'Montserrat',Arial,sans-serif}
+    body{background:var(--blackened-steel);font-family:var(--font-body);color:var(--clean-paper);padding:1.5rem 1rem}
+    .module{max-width:980px;margin:0 auto;border:1px solid var(--gunmetal-gray);border-radius:4px;overflow:hidden;box-shadow:0 12px 48px rgba(0,0,0,.55)}
+    .module-header{background:var(--charcoal-steel);border-bottom:2px solid var(--antique-gold);padding:1.3rem 2rem}
+    .header-top{display:flex;align-items:center;gap:.85rem;margin-bottom:.5rem}
+    .module-badge{font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--antique-gold);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.35);padding:.28rem .65rem;border-radius:2px;white-space:nowrap}
+    .module-name{font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--clean-paper);letter-spacing:.04em}
+    .module-subtitle{font-family:var(--font-ui);font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-sandstone)}
+    .reading-title-band{background:var(--blackened-steel);border-bottom:1px solid var(--gunmetal-gray);padding:2.4rem 2.4rem 2rem;position:relative;overflow:hidden}
+    .reading-title-band::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--oxidized-brown),var(--antique-gold),var(--muted-sandstone),var(--antique-gold),var(--oxidized-brown))}
+    .reading-eyebrow{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.7rem}
+    .reading-title{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--clean-paper);line-height:1.2;letter-spacing:.02em;margin-bottom:.6rem}
+    .reading-title em{color:var(--antique-gold);font-style:normal}
+    .reading-deck{font-family:var(--font-body);font-size:.95rem;font-style:italic;color:var(--muted-sandstone);line-height:1.7;max-width:760px;margin-bottom:1.2rem}
+    .skill-tags{display:flex;flex-wrap:wrap;gap:.45rem}
+    .skill-tag{font-family:var(--font-ui);font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-sandstone);border:1px solid rgba(210,180,140,.3);padding:.2rem .55rem;border-radius:2px}
+    .reading-body{background:var(--warm-paper);color:var(--ink)}
+    .support-strip{padding:1.4rem 2.4rem;background:var(--clean-paper);border-bottom:1px solid #e2d9cc;display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    .support-card{border:1px solid #ddd6ca;border-left:4px solid var(--burnished-bronze);padding:1rem;background:#faf7f2}
+    .support-card h3{font-family:var(--font-display);font-size:.95rem;color:var(--blackened-steel);margin-bottom:.5rem}
+    .support-card p{font-size:.8rem;line-height:1.65;color:#333}
+    .vocab-strip{padding:1.1rem 2.4rem;background:#efe5d6;border-bottom:1px solid #d8cbb9}
+    .vocab-strip h3{font-family:var(--font-ui);font-size:.62rem;text-transform:uppercase;letter-spacing:.16em;color:var(--oxidized-brown);margin-bottom:.7rem}
+    .term-chip{display:inline-flex;font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--oxidized-brown);background:rgba(255,253,247,.85);border:1px solid rgba(140,90,43,.2);border-radius:999px;padding:.28rem .58rem;margin:.16rem}
+    .section{padding:2rem 2.4rem;border-bottom:1px solid #e2d9cc;position:relative}
+    .section:last-of-type{border-bottom:none}
+    .section-number{font-family:var(--font-display);font-size:3.5rem;font-weight:700;color:rgba(140,90,43,.12);position:absolute;top:1.2rem;right:2rem;line-height:1;pointer-events:none;user-select:none}
+    .section-label{font-family:var(--font-ui);font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--burnished-bronze);margin-bottom:.4rem}
+    .section-heading{font-family:var(--font-display);font-size:1.15rem;font-weight:600;color:var(--blackened-steel);margin-bottom:1.1rem;line-height:1.3;border-bottom:1px solid rgba(140,90,43,.2);padding-bottom:.6rem}
+    .reading-text{font-size:.93rem;line-height:1.9;color:#1e1e1e;margin-bottom:1rem}
+    .reading-text:last-child{margin-bottom:0}
+    .kt{background:rgba(210,180,140,.35);color:var(--oxidized-brown);font-weight:700;padding:0 3px;border-radius:2px}
+    .ap-callout{background:var(--charcoal-steel);border-left:3px solid var(--antique-gold);padding:1rem 1.2rem;margin:1.4rem 0;border-radius:0 3px 3px 0}
+    .ap-callout-label{font-family:var(--font-ui);font-size:.57rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.35rem}
+    .ap-callout p{font-family:var(--font-ui);font-size:.8rem;color:var(--warm-paper);line-height:1.65}
+    .ap-callout p strong{color:var(--muted-sandstone)}
+    .pull-quote{border-left:4px solid var(--antique-gold);margin:1.6rem 0;padding:.8rem 1.4rem;background:rgba(201,164,106,.06)}
+    .pull-quote p{font-family:var(--font-display);font-size:1rem;font-style:italic;color:var(--burnished-bronze);line-height:1.6}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-top:1rem}
+    .three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-top:1rem}
+    .mini-card{background:var(--clean-paper);border:1px solid #ddd6ca;border-radius:3px;padding:1rem 1.1rem}
+    .mini-card-title{font-family:var(--font-display);font-size:.82rem;font-weight:600;color:var(--blackened-steel);margin-bottom:.5rem}
+    .mini-card p{font-size:.8rem;line-height:1.7;color:#333}
+    .be-ready{background:#efe5d6;padding:1.5rem 2.4rem;border-top:2px solid var(--burnished-bronze);border-bottom:1px solid #d8cbb9}
+    .be-ready h3{font-family:var(--font-display);font-size:1rem;color:var(--blackened-steel);margin-bottom:.5rem}
+    .be-ready p{font-size:.85rem;line-height:1.7;color:#222}
+    .check-section{background:var(--blackened-steel);padding:2rem 2.4rem;border-top:2px solid var(--antique-gold)}
+    .check-header{display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem}
+    .check-badge{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--antique-gold);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.3);padding:.25rem .6rem;border-radius:2px}
+    .check-title{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--clean-paper)}
+    .question-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:1.2rem}
+    .question-item{background:var(--charcoal-steel);border:1px solid var(--gunmetal-gray);border-radius:3px;overflow:hidden}
+    .question-prompt{padding:.9rem 1.1rem;border-bottom:1px solid var(--gunmetal-gray);display:flex;gap:.8rem;align-items:flex-start}
+    .q-num{font-family:var(--font-display);font-size:.75rem;font-weight:700;color:var(--antique-gold);min-width:1.4rem;padding-top:1px}
+    .q-skill{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--burnished-bronze);border:1px solid rgba(140,90,43,.4);padding:.15rem .4rem;border-radius:2px;white-space:nowrap;margin-top:1px}
+    .q-text{font-family:var(--font-body);font-size:.85rem;color:var(--clean-paper);line-height:1.65}
+    .q-textarea{width:100%;min-height:85px;background:#23272a;border:none;padding:.8rem 1.1rem;font-family:var(--font-body);font-size:.82rem;color:var(--warm-paper);line-height:1.7;resize:vertical;outline:none}
+    .q-textarea::placeholder{color:#5a5f5c;font-style:italic}
+    .q-textarea:focus{background:#262b2e}
+    .builder-section{background:var(--blackened-steel);padding:2rem 2.4rem;border-top:1px solid var(--gunmetal-gray)}
+    .builder-heading{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--antique-gold);margin-bottom:.75rem}
+    .builder-body{font-family:var(--font-body);font-size:.88rem;line-height:1.65;color:var(--warm-paper);margin-bottom:1rem}
+    .tool-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem}
+    .builder-output{width:100%;min-height:100px;background:#23272a;border:none;padding:.8rem 1.1rem;font-family:var(--font-body);font-size:.82rem;color:var(--warm-paper);line-height:1.7;resize:vertical;outline:none;border-radius:3px;margin-bottom:.75rem}
+    .builder-output::placeholder{color:#5a5f5c;font-style:italic}
+    .builder-output:focus{background:#262b2e}
+    button{font-family:var(--font-ui);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--antique-gold);color:var(--ink);border:none;border-radius:3px;padding:.55rem 1.2rem;cursor:pointer;transition:all .2s}
+    button:hover{background:var(--burnished-bronze);color:var(--warm-paper)}
+    button.secondary{background:transparent;color:var(--antique-gold);border:1px solid var(--antique-gold)}
+    button.secondary:hover{background:var(--antique-gold);color:var(--ink)}
+    .page-footer-note{font-family:var(--font-body);font-size:.82rem;font-style:italic;color:var(--aged-iron);padding:1.2rem 2.4rem;background:var(--charcoal-steel);border-top:1px solid var(--gunmetal-gray)}
+    .module-footer{background:var(--charcoal-steel);border-top:1px solid var(--gunmetal-gray);padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+    .footer-note{font-family:var(--font-ui);font-size:.62rem;color:var(--aged-iron)}
+    .nav-btn{font-family:var(--font-ui);font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--antique-gold);background:transparent;border:1px solid rgba(201,164,106,.4);padding:.4rem .9rem;border-radius:2px;cursor:pointer;transition:all .2s;text-decoration:none}
+    .nav-btn:hover{background:rgba(201,164,106,.1);border-color:var(--antique-gold)}
+    .nav-btn.prev{color:var(--muted-sandstone);border-color:rgba(210,180,140,.25)}
+    @media(max-width:680px){body{padding:.75rem}.module-header,.reading-title-band,.section,.check-section,.be-ready{padding:1.35rem}.support-strip{grid-template-columns:1fr;padding:1.2rem}.vocab-strip{padding:1.1rem}.two-col,.three-col{grid-template-columns:1fr}.question-prompt{display:block}.q-skill{display:inline-block;margin:.35rem 0}.reading-title{font-size:1.55rem}.builder-section{padding:1.35rem}.tool-row{flex-direction:column}}
+  </style>
 </head>
 <body>
-<div class="mod">
-  <div class="mh"><div class="ht"><span class="badge">Module 02</span><span class="mname">First &amp; 10 Reading</span></div><div class="msub">Topic 1.4 — Developments in the Americas | AP World History: Modern</div></div>
-  <div class="tb"><p class="eyebrow">First &amp; 10 Reading</p><h1 class="rtitle">Worlds Built Without <em>the Old World</em></h1><p class="deck">For thousands of years, the civilizations of the Americas developed largely apart from Europe, Africa, and Asia. They built cities, agricultural systems, trade networks, monumental architecture, and empires with tools and institutions that developed outside Afro-Eurasian models.</p><div class="tags"><span class="tag">Causation</span><span class="tag">Contextualization</span><span class="tag">Continuity &amp; Change</span><span class="tag">Comparison</span><span class="tag">Significance</span></div></div>
-  <div class="rb">
-    <div class="sec"><span class="sn">1</span><p class="sl">Contextualization</p><h2 class="sh">A Separate World: Why the Americas Are Different in AP World</h2><p class="rt">The Americas occupy a unique position in AP World History. Much of the course is built around connection across Afro-Eurasia. The Americas, by contrast, developed largely outside those networks before 1492. The civilizations you will study in Topic 1.4 did not know that Song China or the Mali Empire existed. Those civilizations did not know the Americas existed.</p><p class="rt">This separation is not a mark of backwardness. It is a historical condition. It forces a powerful question: when human beings develop complex civilization independently, what do they build? The answer is cities, hierarchies, agricultural surpluses, religious systems, monumental architecture, and trade networks. The specific forms differ. The underlying problems of human organization are familiar.</p><div class="ac"><p class="acl">AP Thinking — Contextualization</p><p>A strong AP contextualization for Topic 1.4 notes both <strong>the separation of the Americas from Afro-Eurasian networks before 1492</strong> and the sophistication of the civilizations that developed within that separation.</p></div></div>
-    <div class="sec"><span class="sn">2</span><p class="sl">Key Concept</p><h2 class="sh">The Aztec Empire: Tribute, Corn, and a City in a Lake</h2><p class="rt">In the high valley of central Mexico, a people known as the <span class="kt">Mexica</span>, commonly called the Aztecs, built one of the most formidable empires in the pre-Columbian Americas. In 1428 they formed the <span class="kt">Triple Alliance</span> with Texcoco and Tlacopan, then expanded across much of central Mexico.</p><p class="rt">The empire's capital was <span class="kt">Tenochtitlan</span>, an island city in Lake Texcoco connected to the mainland by causeways and canals. The city’s markets, temples, agricultural systems, and tribute shipments made power visible every day.</p><p class="rt">The Aztec empire was a <span class="kt">tribute empire</span>. Conquered peoples kept many local rulers and customs as long as they supplied goods, labor, and resources. The agricultural engine beneath it all was <span class="kt">maize</span>, cultivated in part on raised-field gardens called <span class="kt">chinampas</span> built in shallow lake margins.</p><div class="pq"><p>“The Mexica did not simply control land. They organized the movement of tribute, food, labor, and belief.”</p></div><div class="ac"><p class="acl">AP Thinking — Comparison</p><p>The Aztec tribute empire can be compared with other tribute systems in AP World: it generated wealth for the center, but it could also produce resentment among conquered peoples.</p></div></div>
-    <div class="sec"><span class="sn">3</span><p class="sl">Key Concept</p><h2 class="sh">The Inca Empire: Roads, Labor, and the Art of Governing Without Money</h2><p class="rt">Along the Andes of South America, the <span class="kt">Inca Empire</span>, known to its people as <span class="kt">Tawantinsuyu</span>, built a vast state across some of the most difficult geography on earth. Mountains, valleys, altitude, and distance shaped every part of Inca rule.</p><p class="rt">The infrastructure that made this possible was the <span class="kt">Inca road system</span>: roads, rope bridges, tunnels, stairways, storehouses, and relay stations that linked the empire to the capital at <span class="kt">Cusco</span>. Runners called <span class="kt">chasquis</span> moved messages across the system.</p><p class="rt">Rather than relying primarily on money or tribute payments, the Inca operated through <span class="kt">mit'a</span>, a labor obligation owed to the state. Administrative records were kept on <span class="kt">quipu</span>, knotted cord devices that recorded numerical and possibly other information.</p><div class="ac"><p class="acl">AP Thinking — Causation</p><p>The Inca road system was both a cause and an effect of expansion: roads helped move armies and officials, while expansion supplied labor to build and maintain more infrastructure.</p></div></div>
-    <div class="sec"><span class="sn">4</span><p class="sl">Key Concept</p><h2 class="sh">The Maya World: Writing, Stars, and a Civilization That Did Not Collapse</h2><p class="rt">The <span class="kt">Maya</span> civilization developed achievements in mathematics, astronomy, architecture, and writing unmatched elsewhere in the pre-Columbian Americas. By 1200, many Classic Period southern lowland city-states had declined, but Maya civilization had not disappeared.</p><div class="three"><div class="mc"><h4 class="mct">Maya Writing</h4><p>The Maya developed a sophisticated writing system capable of recording history, ritual, and astronomy.</p></div><div class="mc"><h4 class="mct">Maya Mathematics</h4><p>Maya mathematicians used zero and a base-20 numerical system, allowing precise calendrical and astronomical calculations.</p></div><div class="mc"><h4 class="mct">Maya Cities</h4><p>Maya city-states such as Tikal, Palenque, Copan, Chichen Itza, and Mayapan show political diversity and continuity over time.</p></div></div><div class="ac"><p class="acl">AP Thinking — Continuity &amp; Change</p><p>The Maya “collapse” is best understood as change in political centers, not the disappearance of Maya people, language, culture, or tradition.</p></div></div>
-    <div class="sec"><span class="sn">5</span><p class="sl">Key Concept</p><h2 class="sh">North of the Rio Grande: Cahokia and the Mississippian World</h2><p class="rt">North of Mesoamerica, societies in the Mississippi River valley built cities, trade networks, and monumental architecture. <span class="kt">Cahokia</span>, near the confluence of the Missouri and Mississippi rivers, was the largest pre-Columbian city north of Mexico.</p><p class="rt">At its center stood <span class="kt">Monks Mound</span>, a massive earthen platform that reflected organized labor, political authority, and religious power. Maize agriculture supported population concentration and social hierarchy.</p><div class="ac"><p class="acl">AP Thinking — Significance</p><p>Cahokia demonstrates a causal chain visible across AP World: agricultural surplus can support cities, hierarchy, monumental construction, and political authority.</p></div></div>
-    <div class="sec"><span class="sn">6</span><p class="sl">Significance</p><h2 class="sh">Why the Americas Matter: Isolation, Innovation, and What Comes Next</h2><p class="rt">The civilizations of the Americas between 1200 and 1450 matter because they show that complex societies developed independently from Afro-Eurasian systems. The Aztec, Inca, Maya, and Mississippian worlds solved common problems of food, labor, authority, infrastructure, and meaning in distinctive ways.</p><p class="rt">Their significance also lies in what comes next. After 1492, European contact would dramatically reshape the Americas. Understanding what was built before that contact is essential for understanding the full scale of what was disrupted.</p><div class="pq"><p>“The Americas were not waiting to be discovered. They were already full of cities, history, and people building extraordinary worlds.”</p></div><div class="ac"><p class="acl">AP Thinking — Comparison</p><p>The Americas provide powerful examples of independent invention: societies without direct contact solved similar problems using different crops, technologies, labor systems, and recordkeeping methods.</p></div></div>
+<div class="module">
+
+  <div class="module-header">
+    <div class="header-top">
+      <span class="module-badge">Module 02</span>
+      <span class="module-name">First &amp; 10 Reading</span>
+    </div>
+    <div class="module-subtitle">Topic 1.4 — Developments in the Americas &nbsp;|&nbsp; AP World History: Modern</div>
   </div>
-  <div class="cs"><div class="ch"><span class="cb">Check Your Thinking</span><span class="ct">Three Questions — No Right Answers, Only Supported Ones</span></div><ul class="ql"><li class="qi"><div class="qp"><span class="qn">01</span><span class="qsk">Comparison</span><p class="qt">The Aztec and Inca Empires were both powerful but operated differently. Compare how each extracted resources, administered territory, and held its empire together.</p></div><textarea class="qta" placeholder="The Aztec Empire extracted resources through... while the Inca used..."></textarea></li><li class="qi"><div class="qp"><span class="qn">02</span><span class="qsk">Causation</span><p class="qt">Using at least two examples from Topic 1.4, explain how agricultural surplus helped cause cities, hierarchy, or monumental architecture in the Americas.</p></div><textarea class="qta" placeholder="Agricultural surplus caused political complexity by..."></textarea></li><li class="qi"><div class="qp"><span class="qn">03</span><span class="qsk">Argumentation</span><p class="qt">Evaluate the argument that the Americas demonstrate independent development of complex civilization. Use evidence from Topic 1.4 and at least one other Unit 1 region.</p></div><textarea class="qta" placeholder="The Americas demonstrate independent development because..."></textarea></li></ul></div>
-  
+
+  <div class="reading-title-band">
+    <p class="reading-eyebrow">First &amp; 10 Reading</p>
+    <h1 class="reading-title">Worlds Built Without <em>the Old World</em></h1>
+    <p class="reading-deck">For thousands of years, the civilizations of the Americas developed largely apart from Europe, Africa, and Asia. They built cities, agricultural systems, trade networks, monumental architecture, and empires with tools and institutions that developed outside Afro-Eurasian models.</p>
+    <div class="skill-tags">
+      <span class="skill-tag">Causation</span>
+      <span class="skill-tag">Contextualization</span>
+      <span class="skill-tag">Continuity &amp; Change</span>
+      <span class="skill-tag">Comparison</span>
+      <span class="skill-tag">Significance</span>
+    </div>
+  </div>
+
+  <div class="reading-body">
+    <div class="support-strip">
+      <div class="support-card">
+        <h3>Before You Read</h3>
+        <p>Look for how each civilization adapted to its geographic environment. Notice the connection between agricultural surplus, political complexity, and monumental architecture — that chain appears in every major society you study.</p>
+      </div>
+      <div class="support-card">
+        <h3>Reading Target</h3>
+        <p>By the end, you should be able to compare how the Aztec, Inca, Maya, and Mississippian cultures built complex societies, and explain how geography shaped each civilization's distinctive institutions.</p>
+      </div>
+    </div>
+    <div class="vocab-strip">
+      <h3>Vocabulary to Watch</h3>
+      <span class="term-chip">Triple Alliance</span>
+      <span class="term-chip">Tenochtitlan</span>
+      <span class="term-chip">Tribute Empire</span>
+      <span class="term-chip">Chinampas</span>
+      <span class="term-chip">Maize</span>
+      <span class="term-chip">Tawantinsuyu</span>
+      <span class="term-chip">Mit'a</span>
+      <span class="term-chip">Quipu</span>
+      <span class="term-chip">Chasqui</span>
+      <span class="term-chip">Maya Writing</span>
+      <span class="term-chip">Cahokia</span>
+      <span class="term-chip">Monks Mound</span>
+      <span class="term-chip">Independent Invention</span>
+    </div>
+
+    <div class="section">
+      <span class="section-number">1</span>
+      <p class="section-label">Contextualization</p>
+      <h2 class="section-heading">A Separate World: Why the Americas Are Different in AP World</h2>
+      <p class="reading-text">The Americas occupy a unique position in AP World History. Much of the course is built around connection across Afro-Eurasia. The Americas, by contrast, developed largely outside those networks before 1492. The civilizations you will study in Topic 1.4 did not know that Song China or the Mali Empire existed. Those civilizations did not know the Americas existed.</p>
+      <p class="reading-text">This separation is not a mark of backwardness. It is a historical condition. It forces a powerful question: when human beings develop complex civilization independently, what do they build? The answer is cities, hierarchies, agricultural surpluses, religious systems, monumental architecture, and trade networks. The specific forms differ. The underlying problems of human organization are familiar.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Contextualization</p>
+        <p>A strong AP contextualization for Topic 1.4 notes both <strong>the separation of the Americas from Afro-Eurasian networks before 1492</strong> and the sophistication of the civilizations that developed within that separation.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">2</span>
+      <p class="section-label">Key Concept</p>
+      <h2 class="section-heading">The Aztec Empire: Tribute, Corn, and a City in a Lake</h2>
+      <p class="reading-text">In the high valley of central Mexico, a people known as the <span class="kt">Mexica</span>, commonly called the Aztecs, built one of the most formidable empires in the pre-Columbian Americas. In 1428 they formed the <span class="kt">Triple Alliance</span> with Texcoco and Tlacopan, then expanded across much of central Mexico.</p>
+      <p class="reading-text">The empire's capital was <span class="kt">Tenochtitlan</span>, an island city in Lake Texcoco connected to the mainland by causeways and canals. The city's markets, temples, agricultural systems, and tribute shipments made power visible every day.</p>
+      <p class="reading-text">The Aztec empire was a <span class="kt">tribute empire</span>. Conquered peoples kept many local rulers and customs as long as they supplied goods, labor, and resources. The agricultural engine beneath it all was <span class="kt">maize</span>, cultivated in part on raised-field gardens called <span class="kt">chinampas</span> built in shallow lake margins.</p>
+      <div class="pull-quote"><p>"The Mexica did not simply control land. They organized the movement of tribute, food, labor, and belief."</p></div>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Comparison</p>
+        <p>The Aztec tribute empire can be compared with other tribute systems in AP World: it generated wealth for the center, but it could also produce resentment among conquered peoples.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">3</span>
+      <p class="section-label">Key Concept</p>
+      <h2 class="section-heading">The Inca Empire: Roads, Labor, and the Art of Governing Without Money</h2>
+      <p class="reading-text">Along the Andes of South America, the <span class="kt">Inca Empire</span>, known to its people as <span class="kt">Tawantinsuyu</span>, built a vast state across some of the most difficult geography on earth. Mountains, valleys, altitude, and distance shaped every part of Inca rule.</p>
+      <p class="reading-text">The infrastructure that made this possible was the <span class="kt">Inca road system</span>: roads, rope bridges, tunnels, stairways, storehouses, and relay stations that linked the empire to the capital at <span class="kt">Cusco</span>. Runners called <span class="kt">chasquis</span> moved messages across the system.</p>
+      <p class="reading-text">Rather than relying primarily on money or tribute payments, the Inca operated through <span class="kt">mit'a</span>, a labor obligation owed to the state. Administrative records were kept on <span class="kt">quipu</span>, knotted cord devices that recorded numerical and possibly other information.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Causation</p>
+        <p>The Inca road system was both a cause and an effect of expansion: roads helped move armies and officials, while expansion supplied labor to build and maintain more infrastructure.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">4</span>
+      <p class="section-label">Key Concept</p>
+      <h2 class="section-heading">The Maya World: Writing, Stars, and a Civilization That Did Not Collapse</h2>
+      <p class="reading-text">The <span class="kt">Maya</span> civilization developed achievements in mathematics, astronomy, architecture, and writing unmatched elsewhere in the pre-Columbian Americas. By 1200, many Classic Period southern lowland city-states had declined, but Maya civilization had not disappeared.</p>
+      <div class="three-col">
+        <div class="mini-card"><h4 class="mini-card-title">Maya Writing</h4><p>The Maya developed a sophisticated writing system capable of recording history, ritual, and astronomy.</p></div>
+        <div class="mini-card"><h4 class="mini-card-title">Maya Mathematics</h4><p>Maya mathematicians used zero and a base-20 numerical system, allowing precise calendrical and astronomical calculations.</p></div>
+        <div class="mini-card"><h4 class="mini-card-title">Maya Cities</h4><p>Maya city-states such as Tikal, Palenque, Copan, Chichen Itza, and Mayapan show political diversity and continuity over time.</p></div>
+      </div>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Continuity &amp; Change</p>
+        <p>The Maya "collapse" is best understood as change in political centers, not the disappearance of Maya people, language, culture, or tradition.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">5</span>
+      <p class="section-label">Key Concept</p>
+      <h2 class="section-heading">North of the Rio Grande: Cahokia and the Mississippian World</h2>
+      <p class="reading-text">North of Mesoamerica, societies in the Mississippi River valley built cities, trade networks, and monumental architecture. <span class="kt">Cahokia</span>, near the confluence of the Missouri and Mississippi rivers, was the largest pre-Columbian city north of Mexico.</p>
+      <p class="reading-text">At its center stood <span class="kt">Monks Mound</span>, a massive earthen platform that reflected organized labor, political authority, and religious power. Maize agriculture supported population concentration and social hierarchy.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Significance</p>
+        <p>Cahokia demonstrates a causal chain visible across AP World: agricultural surplus can support cities, hierarchy, monumental construction, and political authority.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">6</span>
+      <p class="section-label">Significance</p>
+      <h2 class="section-heading">Why the Americas Matter: Isolation, Innovation, and What Comes Next</h2>
+      <p class="reading-text">The civilizations of the Americas between 1200 and 1450 matter because they show that complex societies developed independently from Afro-Eurasian systems. The Aztec, Inca, Maya, and Mississippian worlds solved common problems of food, labor, authority, infrastructure, and meaning in distinctive ways.</p>
+      <p class="reading-text">Their significance also lies in what comes next. After 1492, European contact would dramatically reshape the Americas. Understanding what was built before that contact is essential for understanding the full scale of what was disrupted.</p>
+      <div class="pull-quote"><p>"The Americas were not waiting to be discovered. They were already full of cities, history, and people building extraordinary worlds."</p></div>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Comparison</p>
+        <p>The Americas provide powerful examples of independent invention: societies without direct contact solved similar problems using different crops, technologies, labor systems, and recordkeeping methods.</p>
+      </div>
+    </div>
+
+    <div class="be-ready">
+      <h3>BeReady: 10-Second Takeaway</h3>
+      <p>The Americas from 1200–1450 demonstrate that complex civilization emerged independently. The Aztec, Inca, Maya, and Mississippian cultures each built sophisticated societies shaped by their geography — and each solved the universal human problems of food, labor, authority, and meaning in distinctive ways.</p>
+    </div>
+  </div>
+
+  <div class="check-section">
+    <div class="check-header">
+      <span class="check-badge">Check Your Thinking</span>
+      <span class="check-title">Three Questions — No Right Answers, Only Supported Ones</span>
+    </div>
+    <ul class="question-list">
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">01</span>
+          <span class="q-skill">Comparison</span>
+          <p class="q-text">The Aztec and Inca Empires were both powerful but operated differently. Compare how each extracted resources, administered territory, and held its empire together.</p>
+        </div>
+        <textarea class="q-textarea" placeholder="The Aztec Empire extracted resources through... while the Inca used..."></textarea>
+      </li>
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">02</span>
+          <span class="q-skill">Causation</span>
+          <p class="q-text">Using at least two examples from Topic 1.4, explain how agricultural surplus helped cause cities, hierarchy, or monumental architecture in the Americas.</p>
+        </div>
+        <textarea class="q-textarea" placeholder="Agricultural surplus caused political complexity by..."></textarea>
+      </li>
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">03</span>
+          <span class="q-skill">Argumentation</span>
+          <p class="q-text">Evaluate the argument that the Americas demonstrate independent development of complex civilization. Use evidence from Topic 1.4 and at least one other Unit 1 region.</p>
+        </div>
+        <textarea class="q-textarea" placeholder="The Americas demonstrate independent development because..."></textarea>
+      </li>
+    </ul>
+  </div>
+
   <div class="builder-section">
     <h2 class="builder-heading">Build Your Google Form Response</h2>
     <p class="builder-body">After answering the questions, click the button to collect your responses. Copy the result, then submit to the Google Form.</p>
@@ -43,26 +275,34 @@
     <textarea id="ai-output" class="builder-output" readonly placeholder="Your prompt will appear here after you click Build AI Prompt."></textarea>
   </div>
   <p class="page-footer-note">Use this page to organize your thinking and prepare for coaching. Your final response must be submitted in Canvas.</p>
+
+  <div class="module-footer">
+    <span class="footer-note">Topic 1.4 — Developments in the Americas · AP World History: Modern</span>
+    <div style="display:flex;gap:.6rem">
+      <a class="nav-btn prev" href="lesson-1-4-americas.html#modules">← Map &amp; Geography</a>
+      <a class="nav-btn" href="lesson-1-4-americas.html#lecture">Content Delivery →</a>
+    </div>
+  </div>
+
+</div>
 <script>
 var TOPIC_KEY='1.4';var TOPIC_LABEL='1.4 - The Americas';
-document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('textarea.qta').forEach(function(ta,i){if(!ta.id)ta.id='q'+(i+1);});});
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('textarea.q-textarea').forEach(function(ta,i){if(!ta.id)ta.id='q'+(i+1);});});
 function buildGooglePrompt(){
   var q1=document.getElementById('q1').value||'(no response)';
   var q2=document.getElementById('q2').value||'(no response)';
   var q3=document.getElementById('q3').value||'(no response)';
-  document.getElementById('google-output').value=''+'\nQuestion 1:\n'+q1+'\nQuestion 2:\n'+q2+'\nQuestion 3:\n'+q3;
+  document.getElementById('google-output').value='Question 1:\n'+q1+'\n\nQuestion 2:\n'+q2+'\n\nQuestion 3:\n'+q3;
 }
 function submitToGoogleForm(){var c=document.getElementById('google-output').value;navigator.clipboard.writeText(c).catch(function(){});var tl=(window.BH_FORM&&BH_FORM.topics[TOPIC_KEY])||TOPIC_LABEL;var u=window.BH_FORM?BH_FORM.baseURL+'?usp=pp_url&entry.187055090='+encodeURIComponent(tl).replace(/%20/g,'+')+'&entry.2107637366=First+and+10':'';if(u)window.open(u,'_blank','noopener');}
 function buildAiPrompt(){
   var q1=document.getElementById('q1').value||'(no response)';
   var q2=document.getElementById('q2').value||'(no response)';
   var q3=document.getElementById('q3').value||'(no response)';
-  document.getElementById('ai-output').value='I completed the First & 10 reading for AP World History Topic 1.4: The Americas. Here are my responses:'+'\n\nQuestion 1: The Aztec and Inca Empires were both powerful but operated differently. Compare how each extracted resources, administered territory, and held its empire together.\nMy response: '+q1+'\n\nQuestion 2: Using at least two examples from Topic 1.4, explain how agricultural surplus helped cause cities, hierarchy, or monumental architecture in the Americas.\nMy response: '+q2+'\n\nQuestion 3: Evaluate the argument that the Americas demonstrate independent development of complex civilization. Use evidence from Topic 1.4 and at least one other Unit 1 region.\nMy response: '+q3+'\n\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';
+  document.getElementById('ai-output').value='I completed the First & 10 reading for AP World History Topic 1.4: The Americas. Here are my responses:\n\nQuestion 1: The Aztec and Inca Empires were both powerful but operated differently. Compare how each extracted resources, administered territory, and held its empire together.\nMy response: '+q1+'\n\nQuestion 2: Using at least two examples from Topic 1.4, explain how agricultural surplus helped cause cities, hierarchy, or monumental architecture in the Americas.\nMy response: '+q2+'\n\nQuestion 3: Evaluate the argument that the Americas demonstrate independent development of complex civilization. Use evidence from Topic 1.4 and at least one other Unit 1 region.\nMy response: '+q3+'\n\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';
 }
 function copyAiPrompt(){var c=document.getElementById('ai-output').value;navigator.clipboard.writeText(c).catch(function(){});}
 </script>
-<div class="mf"><span class="fn">Topic 1.4 — Developments in the Americas · AP World History: Modern</span><div style="display:flex;gap:.6rem"><a class="nb prev" href="lesson-1-4-americas.html#modules">← Map &amp; Geography</a><a class="nb" href="lesson-1-4-americas.html#lecture">Content Delivery →</a></div></div>
-</div>
 <script src="../assets/js/behistorical-form-config.js?v=unified-v1"></script>
 </body>
 </html>

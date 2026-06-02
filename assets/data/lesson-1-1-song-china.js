@@ -131,19 +131,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: The World That Song Built",
-    paragraphs: [
-      "The Song dynasty came to power after decades of instability and built a state centered on civilian officials, Confucian learning, and bureaucracy.",
-      "Its rulers strengthened the civil service exam system, helping scholar-officials become central to government and culture.",
-      "At the same time, agricultural and commercial growth made Song China one of the most urbanized and economically dynamic societies in the world."
-    ],
-    questions: [
-      "Explain how the instability before 960 CE caused Song rulers to build their government around civilian officials, Confucian learning, and bureaucracy. Use at least two specific examples.",
-      "Confucianism existed long before the Song Dynasty. What continued from earlier Confucian tradition, and what changed during the Song period? Be specific about Neo-Confucianism and the civil service examination system.",
-      "Evaluate this claim: 'The solution to one problem often becomes the source of the next.' Use evidence from Song China to support or challenge the claim."
-    ],
-    magicSchoolBridge: {
-      magicSchoolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q"
-    }
+    embedUrl: 'first-and-10-topic-1-1-song-china-capture.html'
   },
 
   evidenceLab: {

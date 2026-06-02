@@ -1,90 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>BeHistorical — Module 02 | First & 10 | Topic 1.6 Europe</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
-<style>
-body{background:#1A1C1D;color:#FFFDF7;font-family:'Libre Baskerville',serif;padding:1.5rem}.module{max-width:980px;margin:auto;border:1px solid #3E4447;background:#F5F0E7;color:#151718}.header{background:#2B2F31;color:#FFFDF7;padding:2rem;border-bottom:2px solid #C9A46A}.eyebrow{font-family:Montserrat,sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:#C9A46A}.title{font-family:Cinzel,serif;font-size:2rem;margin:.6rem 0}.deck{font-style:italic;color:#D2B48C;line-height:1.8;max-width:760px}.section{padding:2rem;border-bottom:1px solid #ddd}.section h2{font-family:Cinzel,serif;margin-bottom:1rem}.section p{line-height:1.9;margin-bottom:1rem}.callout{background:#2B2F31;color:#F5F0E7;padding:1rem;border-left:4px solid #C9A46A;margin:1.2rem 0}.quote{border-left:4px solid #C9A46A;padding:.8rem 1.2rem;margin:1.5rem 0;font-style:italic;color:#8C5A2B;background:#faf7f2}.cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.card{background:#FFFDF7;border:1px solid #ddd;padding:1rem}.check{background:#1A1C1D;color:#FFFDF7;padding:2rem}.question{background:#2B2F31;padding:1rem;margin-bottom:1rem}
-.qta{width:100%;min-height:80px;background:#23272a;border:none;padding:.8rem 1rem;font-family:'Libre Baskerville',serif;font-size:.82rem;color:#F5F0E7;line-height:1.7;resize:vertical;outline:none;margin-top:.5rem}.builder-section{background:#2B2F31;padding:1.6rem 2rem;border-top:1px solid #3E4447}.builder-heading{font-family:Cinzel,serif;font-size:1rem;font-weight:600;color:#FFFDF7;margin-bottom:.5rem}.builder-body{font-family:Montserrat,sans-serif;font-size:.78rem;color:#D2B48C;line-height:1.6;margin-bottom:.9rem}.tool-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:.7rem}.builder-output{width:100%;min-height:90px;background:#23272a;border:1px solid #3E4447;padding:.8rem 1rem;font-family:'Libre Baskerville',serif;font-size:.82rem;color:#F5F0E7;line-height:1.7;resize:vertical;border-radius:2px}.page-footer-note{font-family:'Libre Baskerville',serif;font-size:.82rem;font-style:italic;color:#5A5F5C;padding:1.2rem 2rem;background:#2B2F31;border-top:1px solid #3E4447}button{font-family:Montserrat,sans-serif;font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:#8C5A2B;color:#FFFDF7;border:none;padding:.5rem 1rem;border-radius:2px;cursor:pointer}button:hover{background:#A8652D}button.secondary{background:transparent;border:1px solid rgba(201,164,106,.4);color:#C9A46A}button.secondary:hover{background:rgba(201,164,106,.1)}</style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BeHistorical — Module 02 | First &amp; 10 | Topic 1.6 Europe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--blackened-steel:#1A1C1D;--charcoal-steel:#2B2F31;--gunmetal-gray:#3E4447;--aged-iron:#5A5F5C;--muted-sandstone:#D2B48C;--burnished-bronze:#8C5A2B;--rust-copper:#A8652D;--oxidized-brown:#6B3E1F;--antique-gold:#C9A46A;--warm-paper:#F5F0E7;--clean-paper:#FFFDF7;--ink:#151718;--font-display:'Cinzel','Trajan Pro',Georgia,serif;--font-body:'Libre Baskerville',Georgia,serif;--font-ui:'Montserrat',Arial,sans-serif}
+    body{background:var(--blackened-steel);font-family:var(--font-body);color:var(--clean-paper);padding:1.5rem 1rem}
+    .module{max-width:980px;margin:0 auto;border:1px solid var(--gunmetal-gray);border-radius:4px;overflow:hidden;box-shadow:0 12px 48px rgba(0,0,0,.55)}
+    .module-header{background:var(--charcoal-steel);border-bottom:2px solid var(--antique-gold);padding:1.3rem 2rem}
+    .header-top{display:flex;align-items:center;gap:.85rem;margin-bottom:.5rem}
+    .module-badge{font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--antique-gold);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.35);padding:.28rem .65rem;border-radius:2px;white-space:nowrap}
+    .module-name{font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--clean-paper);letter-spacing:.04em}
+    .module-subtitle{font-family:var(--font-ui);font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-sandstone)}
+    .reading-title-band{background:var(--blackened-steel);border-bottom:1px solid var(--gunmetal-gray);padding:2.4rem 2.4rem 2rem;position:relative;overflow:hidden}
+    .reading-title-band::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--oxidized-brown),var(--antique-gold),var(--muted-sandstone),var(--antique-gold),var(--oxidized-brown))}
+    .reading-eyebrow{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.7rem}
+    .reading-title{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--clean-paper);line-height:1.2;letter-spacing:.02em;margin-bottom:.6rem}
+    .reading-title em{color:var(--antique-gold);font-style:normal}
+    .reading-deck{font-family:var(--font-body);font-size:.95rem;font-style:italic;color:var(--muted-sandstone);line-height:1.7;max-width:760px;margin-bottom:1.2rem}
+    .skill-tags{display:flex;flex-wrap:wrap;gap:.45rem}
+    .skill-tag{font-family:var(--font-ui);font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-sandstone);border:1px solid rgba(210,180,140,.3);padding:.2rem .55rem;border-radius:2px}
+    .reading-body{background:var(--warm-paper);color:var(--ink)}
+    .support-strip{padding:1.4rem 2.4rem;background:var(--clean-paper);border-bottom:1px solid #e2d9cc;display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    .support-card{border:1px solid #ddd6ca;border-left:4px solid var(--burnished-bronze);padding:1rem;background:#faf7f2}
+    .support-card h3{font-family:var(--font-display);font-size:.95rem;color:var(--blackened-steel);margin-bottom:.5rem}
+    .support-card p{font-size:.8rem;line-height:1.65;color:#333}
+    .vocab-strip{padding:1.1rem 2.4rem;background:#efe5d6;border-bottom:1px solid #d8cbb9}
+    .vocab-strip h3{font-family:var(--font-ui);font-size:.62rem;text-transform:uppercase;letter-spacing:.16em;color:var(--oxidized-brown);margin-bottom:.7rem}
+    .term-chip{display:inline-flex;font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--oxidized-brown);background:rgba(255,253,247,.85);border:1px solid rgba(140,90,43,.2);border-radius:999px;padding:.28rem .58rem;margin:.16rem}
+    .section{padding:2rem 2.4rem;border-bottom:1px solid #e2d9cc;position:relative}
+    .section:last-of-type{border-bottom:none}
+    .section-number{font-family:var(--font-display);font-size:3.5rem;font-weight:700;color:rgba(140,90,43,.12);position:absolute;top:1.2rem;right:2rem;line-height:1;pointer-events:none;user-select:none}
+    .section-label{font-family:var(--font-ui);font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--burnished-bronze);margin-bottom:.4rem}
+    .section-heading{font-family:var(--font-display);font-size:1.15rem;font-weight:600;color:var(--blackened-steel);margin-bottom:1.1rem;line-height:1.3;border-bottom:1px solid rgba(140,90,43,.2);padding-bottom:.6rem}
+    .reading-text{font-size:.93rem;line-height:1.9;color:#1e1e1e;margin-bottom:1rem}
+    .reading-text:last-child{margin-bottom:0}
+    .kt{background:rgba(210,180,140,.35);color:var(--oxidized-brown);font-weight:700;padding:0 3px;border-radius:2px}
+    .ap-callout{background:var(--charcoal-steel);border-left:3px solid var(--antique-gold);padding:1rem 1.2rem;margin:1.4rem 0;border-radius:0 3px 3px 0}
+    .ap-callout-label{font-family:var(--font-ui);font-size:.57rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.35rem}
+    .ap-callout p{font-family:var(--font-ui);font-size:.8rem;color:var(--warm-paper);line-height:1.65}
+    .ap-callout p strong{color:var(--muted-sandstone)}
+    .pull-quote{border-left:4px solid var(--antique-gold);margin:1.6rem 0;padding:.8rem 1.4rem;background:rgba(201,164,106,.06)}
+    .pull-quote p{font-family:var(--font-display);font-size:1rem;font-style:italic;color:var(--burnished-bronze);line-height:1.6}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-top:1rem}
+    .three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-top:1rem}
+    .mini-card{background:var(--clean-paper);border:1px solid #ddd6ca;border-radius:3px;padding:1rem 1.1rem}
+    .mini-card-title{font-family:var(--font-display);font-size:.82rem;font-weight:600;color:var(--blackened-steel);margin-bottom:.5rem}
+    .mini-card p{font-size:.8rem;line-height:1.7;color:#333}
+    .be-ready{background:#efe5d6;padding:1.5rem 2.4rem;border-top:2px solid var(--burnished-bronze);border-bottom:1px solid #d8cbb9}
+    .be-ready h3{font-family:var(--font-display);font-size:1rem;color:var(--blackened-steel);margin-bottom:.5rem}
+    .be-ready p{font-size:.85rem;line-height:1.7;color:#222}
+    .check-section{background:var(--blackened-steel);padding:2rem 2.4rem;border-top:2px solid var(--antique-gold)}
+    .check-header{display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem}
+    .check-badge{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--antique-gold);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.3);padding:.25rem .6rem;border-radius:2px}
+    .check-title{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--clean-paper)}
+    .question-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:1.2rem}
+    .question-item{background:var(--charcoal-steel);border:1px solid var(--gunmetal-gray);border-radius:3px;overflow:hidden}
+    .question-prompt{padding:.9rem 1.1rem;border-bottom:1px solid var(--gunmetal-gray);display:flex;gap:.8rem;align-items:flex-start}
+    .q-num{font-family:var(--font-display);font-size:.75rem;font-weight:700;color:var(--antique-gold);min-width:1.4rem;padding-top:1px}
+    .q-skill{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--burnished-bronze);border:1px solid rgba(140,90,43,.4);padding:.15rem .4rem;border-radius:2px;white-space:nowrap;margin-top:1px}
+    .q-text{font-family:var(--font-body);font-size:.85rem;color:var(--clean-paper);line-height:1.65}
+    .q-textarea{width:100%;min-height:85px;background:#23272a;border:none;padding:.8rem 1.1rem;font-family:var(--font-body);font-size:.82rem;color:var(--warm-paper);line-height:1.7;resize:vertical;outline:none}
+    .q-textarea::placeholder{color:#5a5f5c;font-style:italic}
+    .q-textarea:focus{background:#262b2e}
+    .builder-section{background:var(--blackened-steel);padding:2rem 2.4rem;border-top:1px solid var(--gunmetal-gray)}
+    .builder-heading{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--antique-gold);margin-bottom:.75rem}
+    .builder-body{font-family:var(--font-body);font-size:.88rem;line-height:1.65;color:var(--warm-paper);margin-bottom:1rem}
+    .tool-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem}
+    .builder-output{width:100%;min-height:100px;background:#23272a;border:none;padding:.8rem 1.1rem;font-family:var(--font-body);font-size:.82rem;color:var(--warm-paper);line-height:1.7;resize:vertical;outline:none;border-radius:3px;margin-bottom:.75rem}
+    .builder-output::placeholder{color:#5a5f5c;font-style:italic}
+    .builder-output:focus{background:#262b2e}
+    button{font-family:var(--font-ui);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--antique-gold);color:var(--ink);border:none;border-radius:3px;padding:.55rem 1.2rem;cursor:pointer;transition:all .2s}
+    button:hover{background:var(--burnished-bronze);color:var(--warm-paper)}
+    button.secondary{background:transparent;color:var(--antique-gold);border:1px solid var(--antique-gold)}
+    button.secondary:hover{background:var(--antique-gold);color:var(--ink)}
+    .page-footer-note{font-family:var(--font-body);font-size:.82rem;font-style:italic;color:var(--aged-iron);padding:1.2rem 2.4rem;background:var(--charcoal-steel);border-top:1px solid var(--gunmetal-gray)}
+    .module-footer{background:var(--charcoal-steel);border-top:1px solid var(--gunmetal-gray);padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+    .footer-note{font-family:var(--font-ui);font-size:.62rem;color:var(--aged-iron)}
+    .nav-btn{font-family:var(--font-ui);font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--antique-gold);background:transparent;border:1px solid rgba(201,164,106,.4);padding:.4rem .9rem;border-radius:2px;cursor:pointer;transition:all .2s;text-decoration:none}
+    .nav-btn:hover{background:rgba(201,164,106,.1);border-color:var(--antique-gold)}
+    .nav-btn.prev{color:var(--muted-sandstone);border-color:rgba(210,180,140,.25)}
+    @media(max-width:680px){body{padding:.75rem}.module-header,.reading-title-band,.section,.check-section,.be-ready{padding:1.35rem}.support-strip{grid-template-columns:1fr;padding:1.2rem}.vocab-strip{padding:1.1rem}.two-col,.three-col{grid-template-columns:1fr}.question-prompt{display:block}.q-skill{display:inline-block;margin:.35rem 0}.reading-title{font-size:1.55rem}.builder-section{padding:1.35rem}.tool-row{flex-direction:column}}
+  </style>
 </head>
 <body>
 <div class="module">
-<div class="header">
-<div class="eyebrow">First &amp; 10 Reading</div>
-<h1 class="title">The Edge of the World</h1>
-<p class="deck">Europe between 1200 and 1450 was politically fragmented, economically growing, religiously unified by the Catholic Church, and increasingly connected to wider Afro-Eurasian networks through trade, crusading, plague, and war.</p>
-</div>
-<div class="section">
-<h2>Europe Before Dominance</h2>
-<p>In 1200, Europe was not the center of the world. Song China was wealthier, the Islamic world was more connected commercially, and Indian Ocean trade networks carried goods farther than most Europeans could imagine. Europe was a developing region on the western edge of Afro-Eurasia.</p>
-<p>Yet Europe possessed institutions that mattered deeply: feudal relationships, the Catholic Church, expanding towns, and a growing commercial economy. These structures would shape the transformations of the next several centuries.</p>
-<div class="callout"><strong>AP Contextualization:</strong> Medieval Europe should be understood comparatively, not as an inevitable future global power.</div>
-</div>
-<div class="section">
-<h2>The Church and Feudal Society</h2>
-<p>The <strong>Catholic Church</strong> linked Europe together through religion, education, and Latin literacy. At the same time, the <strong>feudal system</strong> organized political life around land, loyalty, and military obligation.</p>
-<p>Lords, vassals, knights, and serfs formed a decentralized hierarchy. The Church operated across these political divisions, often competing with kings for authority.</p>
-<div class="quote">“In medieval Europe, the Church and the castle competed for the same thing: loyalty.”</div>
-<div class="cards"><div class="card"><strong>Feudalism</strong><br>Land for service<br>Local authority<br>Military obligation</div><div class="card"><strong>Catholic Church</strong><br>Shared religion<br>Education and literacy<br>Transnational authority</div></div>
-</div>
-<div class="section">
-<h2>The Crusades and Commercial Growth</h2>
-<p>The Crusades intensified European contact with the eastern Mediterranean and the Islamic world. Crusaders encountered trade goods, scholarship, mathematics, medicine, and philosophy preserved and expanded by Muslim scholars.</p>
-<p>Italian city-states such as Venice and Genoa benefited commercially from Crusader transport and trade. Europe became more connected to wider Afro-Eurasian exchange networks.</p>
-<div class="callout"><strong>AP Causation:</strong> The Crusades failed militarily but helped increase commercial exchange and cultural transmission.</div>
-</div>
-<div class="section">
-<h2>The Black Death</h2>
-<p>In the mid-fourteenth century, the <strong>Black Death</strong> spread into Europe through Afro-Eurasian trade routes. Millions died. Labor shortages weakened serfdom and increased pressure on feudal institutions.</p>
-<p>The plague also damaged confidence in traditional authorities, including the Church. Social and economic relationships shifted in ways that reshaped Europe for generations.</p>
-<div class="quote">“The same trade routes that carried silk and spice also carried disease.”</div>
-</div>
-<div class="section">
-<h2>War and Centralization</h2>
-<p>The <strong>Hundred Years’ War</strong> between England and France encouraged rulers to develop stronger systems of taxation, administration, and military organization. Over time, centralized monarchies became more powerful.</p>
-<p>Europe after 1450 would build upon these institutions. Commercial growth, stronger monarchies, and expanding intellectual life all emerged from the disruptions of the medieval period.</p>
-<div class="callout"><strong>AP Continuity &amp; Change:</strong> Medieval Europe remained deeply religious and hierarchical, but political and economic structures gradually changed between 1200 and 1450.</div>
-</div>
-<div class="section">
-<h2>Why This Matters</h2>
-<p>Europe between 1200 and 1450 matters because it laid institutional foundations for later transformation. Universities, commercial finance, stronger monarchies, and wider exchange networks would shape Europe’s role after 1450.</p>
-<div class="quote">“Europe in 1200 stood at the edge of Afro-Eurasia. By 1450, it was preparing to push beyond it.”</div>
-</div>
-<div class="check">
-<h2>Check Your Thinking</h2>
-<div class="question"><strong>1.</strong> How did the Catholic Church help unify Europe politically and culturally?<br><textarea class="qta" placeholder="The Catholic Church helped unify Europe by..."></textarea></div>
-<div class="question"><strong>2.</strong> Explain one way the Black Death changed European society.<br><textarea class="qta" placeholder="One way the Black Death changed European society was..."></textarea></div>
-<div class="question"><strong>3.</strong> Why were the Crusades historically important beyond warfare?<br><textarea class="qta" placeholder="The Crusades were historically important beyond warfare because..."></textarea></div>
-</div>
-<div class="builder-section">
-  <h2 class="builder-heading">Build Your Google Form Response</h2>
-  <p class="builder-body">After answering the three questions, click the button to collect your responses. Copy the result, then submit to the Google Form.</p>
-  <div class="tool-row"><button onclick="buildGooglePrompt()">Build Google Prompt</button></div>
-  <textarea id="google-output" class="builder-output" readonly placeholder="Your responses will appear here..."></textarea>
-  <div class="tool-row"><button onclick="submitToGoogleForm()">Submit to Google Form</button></div>
-</div>
-<div class="builder-section">
-  <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
-  <p class="builder-body">Build one prompt for the BeHistorical AI Coach to question, challenge, and improve your thinking without writing the final answer for you.</p>
-  <div class="tool-row">
-    <button onclick="buildAiPrompt()">Build AI Prompt</button>
-    <button class="secondary" onclick="copyAiPrompt()">Copy Prompt</button>
-    <button class="secondary" onclick="window.open('https://app.magicschool.ai/','_blank','noopener')">Open MagicSchool</button>
+
+  <div class="module-header">
+    <div class="header-top">
+      <span class="module-badge">Module 02</span>
+      <span class="module-name">First &amp; 10 Reading</span>
+    </div>
+    <div class="module-subtitle">Topic 1.6 — Developments in Europe &nbsp;|&nbsp; AP World History: Modern</div>
   </div>
-  <textarea id="ai-output" class="builder-output" readonly placeholder="Your prompt will appear here after you click Build AI Prompt."></textarea>
+
+  <div class="reading-title-band">
+    <p class="reading-eyebrow">First &amp; 10 Reading</p>
+    <h1 class="reading-title">The <em>Edge</em> of the World</h1>
+    <p class="reading-deck">Europe between 1200 and 1450 was politically fragmented, economically growing, religiously unified by the Catholic Church, and increasingly connected to wider Afro-Eurasian networks through trade, crusading, plague, and war.</p>
+    <div class="skill-tags">
+      <span class="skill-tag">Causation</span>
+      <span class="skill-tag">Contextualization</span>
+      <span class="skill-tag">Continuity &amp; Change</span>
+      <span class="skill-tag">Comparison</span>
+      <span class="skill-tag">Argumentation</span>
+    </div>
+  </div>
+
+  <div class="reading-body">
+    <div class="support-strip">
+      <div class="support-card">
+        <h3>Before You Read</h3>
+        <p>Europe in 1200 was not powerful — it was a developing region on the western fringe of Afro-Eurasia. Track how fragmentation, the Church, and growing commercial connections shaped what Europe would eventually become.</p>
+      </div>
+      <div class="support-card">
+        <h3>Reading Target</h3>
+        <p>By the end, you should be able to explain how feudalism, the Catholic Church, the Crusades, the Black Death, and emerging monarchies shaped European society between 1200 and 1450.</p>
+      </div>
+    </div>
+    <div class="vocab-strip">
+      <h3>Vocabulary to Watch</h3>
+      <span class="term-chip">Feudalism</span>
+      <span class="term-chip">Manorialism</span>
+      <span class="term-chip">Vassal</span>
+      <span class="term-chip">Catholic Church</span>
+      <span class="term-chip">Pope</span>
+      <span class="term-chip">Crusades</span>
+      <span class="term-chip">Italian City-States</span>
+      <span class="term-chip">Black Death</span>
+      <span class="term-chip">Hundred Years' War</span>
+      <span class="term-chip">Centralized Monarchy</span>
+      <span class="term-chip">Serfdom</span>
+      <span class="term-chip">Universities</span>
+    </div>
+
+    <div class="section">
+      <span class="section-number">1</span>
+      <p class="section-label">Contextualization</p>
+      <h2 class="section-heading">Europe Before Dominance: The World in 1200</h2>
+      <p class="reading-text">In 1200, Europe was not the center of the world. Song China was wealthier and more urbanized. The Islamic world stretched from Iberia to Central Asia and was more commercially connected. Indian Ocean trade networks carried goods farther than most Europeans could imagine. By any measure of wealth, population, or administrative sophistication, medieval Europe was a developing region on the western edge of Afro-Eurasia.</p>
+      <p class="reading-text">Yet Europe possessed institutions that mattered deeply: feudal relationships, the Catholic Church, expanding towns, and a slowly growing commercial economy. These structures did not make Europe powerful in 1200 — but they would shape the transformations of the next several centuries.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Contextualization</p>
+        <p>Medieval Europe must be understood comparatively, not as an inevitable future global power. In 1200, Europe trailed Afro-Eurasian rivals in most measures of wealth and state complexity. <strong>What Europe had were institutions — feudalism, the Church, towns — that would later enable transformation.</strong></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">2</span>
+      <p class="section-label">Key Concept</p>
+      <h2 class="section-heading">The Church and Feudal Society: Two Pillars of Order</h2>
+      <p class="reading-text">The <span class="kt">Catholic Church</span> linked Europe together through religion, education, and Latin literacy in ways that crossed political boundaries. Bishops, monks, and priests formed a network of institutional authority that extended from the Pope in Rome to the smallest rural parish. The Church operated hospitals, schools, and universities. It mediated disputes, collected tithes, and wielded excommunication as a political weapon.</p>
+      <p class="reading-text">At the same time, the <span class="kt">feudal system</span> organized political life around land, loyalty, and military obligation. Lords granted land to vassals in exchange for military service. Serfs were bound to manors, providing agricultural labor for lords in exchange for protection. This decentralized hierarchy created political fragmentation: no single king controlled Europe, and local lords often held more power than distant monarchs.</p>
+      <div class="two-col">
+        <div class="mini-card">
+          <h4 class="mini-card-title">Feudalism</h4>
+          <p>Land exchanged for military service. Local lords held authority. Political power was fragmented across nobles, kings, and the Church.</p>
+        </div>
+        <div class="mini-card">
+          <h4 class="mini-card-title">Catholic Church</h4>
+          <p>Shared faith across political divisions. Education, literacy, and moral authority. The Pope claimed spiritual superiority over kings.</p>
+        </div>
+      </div>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Comparison</p>
+        <p>Compare Europe's decentralized feudal structure with Song China's centralized bureaucracy. <strong>Where Song rulers used civil service exams to build loyal administrators, European rulers relied on personal feudal bonds, local lords, and religious authority — producing a fundamentally different kind of political order.</strong></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">3</span>
+      <p class="section-label">Key Concept</p>
+      <h2 class="section-heading">The Crusades and Commercial Growth</h2>
+      <p class="reading-text">Beginning in 1096, the Crusades sent European armies into the eastern Mediterranean to reclaim Jerusalem and the Holy Land from Muslim control. The military results were mixed and ultimately unsuccessful. But the historical consequences extended far beyond the battlefield.</p>
+      <p class="reading-text">Crusaders and merchants encountered trade goods, mathematics, medicine, and scholarship that had been preserved and expanded by Islamic scholars. Italian city-states such as <span class="kt">Venice</span> and <span class="kt">Genoa</span> profited enormously from providing transport, supplies, and credit to crusading armies. These commercial relationships drew Europe further into Afro-Eurasian trade networks and helped expand European access to goods, credit, and ideas from further east.</p>
+      <div class="pull-quote"><p>"The Crusades failed militarily — and succeeded commercially. Europe came home changed."</p></div>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Causation</p>
+        <p>The Crusades are one of the clearest examples in AP World of unintended consequences: <strong>military failure accelerated commercial exchange, expanded access to Islamic scholarship, and strengthened Italian city-states — outcomes far more durable than any battlefield victory.</strong></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">4</span>
+      <p class="section-label">Key Concept</p>
+      <h2 class="section-heading">The Black Death: Catastrophe and Transformation</h2>
+      <p class="reading-text">In the mid-fourteenth century, the <span class="kt">Black Death</span> swept into Europe through Afro-Eurasian trade routes. It killed an estimated one-third to one-half of Europe's population. The scale of death disrupted every institution in European society — families, towns, guilds, the Church, and the feudal order.</p>
+      <p class="reading-text">Labor shortages created by mass death gave surviving workers greater bargaining power. Serfs demanded and sometimes won better conditions or freedom. Wages rose. The social order that had bound peasants to manors for generations weakened under the pressure of demographic collapse. The Church's inability to explain or prevent the plague damaged confidence in traditional religious authority.</p>
+      <div class="pull-quote"><p>"The same trade routes that carried silk and spice also carried disease."</p></div>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Causation</p>
+        <p>The Black Death illustrates how biological events can reshape social and economic structures. <strong>Population collapse caused labor shortages, which shifted bargaining power, which weakened serfdom — a chain of historical causation driven by disease moving through trade networks.</strong></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">5</span>
+      <p class="section-label">Key Concept</p>
+      <h2 class="section-heading">War and Centralization: Toward Stronger Monarchies</h2>
+      <p class="reading-text">The <span class="kt">Hundred Years' War</span> between England and France (1337–1453) disrupted much of western Europe for over a century. It was expensive, destructive, and politically transformative. To fund long campaigns, rulers needed more reliable systems of taxation and administration. The demands of sustained warfare pushed monarchs toward stronger centralized governments.</p>
+      <p class="reading-text">Over time, the accumulation of military and administrative power in the hands of monarchs began to shift the balance between kings and lords. Nobles' local autonomy shrank. Royal courts, bureaucracies, and standing armies gradually replaced the ad hoc feudal arrangements of earlier centuries.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Continuity &amp; Change</p>
+        <p>Europe's political transformation between 1200 and 1450 was gradual, not sudden. <strong>Feudalism persisted, the Church remained powerful, and lords retained significant local authority — but the trend toward stronger monarchies and more centralized administration had begun.</strong></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">6</span>
+      <p class="section-label">Significance</p>
+      <h2 class="section-heading">Why This Matters: The Foundations of Later Change</h2>
+      <p class="reading-text">Europe between 1200 and 1450 matters because it laid institutional foundations for later transformation. Universities, commercial finance, stronger monarchies, and wider exchange networks would shape Europe's role after 1450. The disruptions of the medieval period — plague, war, commerce, religious challenge — created the pressure that drove change.</p>
+      <p class="reading-text">In AP World context, Europe in 1200–1450 is a region in transition: still marginal compared to Afro-Eurasian rivals, but developing the political, commercial, and intellectual infrastructure that would enable later expansion. Understanding medieval Europe is not about studying inevitable European dominance — it is about understanding the specific conditions and disruptions that made transformation possible.</p>
+      <div class="pull-quote"><p>"Europe in 1200 stood at the edge of Afro-Eurasia. By 1450, it was preparing to push beyond it."</p></div>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking — Significance</p>
+        <p>The significance of medieval Europe lies in what it made possible — not in what it already was. <strong>Fragmentation, plague, war, and commercial growth created a region in transformation. The institutional foundations mattered more than the achievements of the period itself.</strong></p>
+      </div>
+    </div>
+
+    <div class="be-ready">
+      <h3>BeReady: 10-Second Takeaway</h3>
+      <p>Medieval Europe (1200–1450) was politically fragmented but institutionally active: feudalism organized local power, the Catholic Church provided unity across political divisions, the Crusades connected Europe to wider trade networks, and the Black Death disrupted labor and authority. By 1450, stronger monarchies and commercial growth were reshaping a region that had once stood at the margins of the medieval world.</p>
+    </div>
+  </div>
+
+  <div class="check-section">
+    <div class="check-header">
+      <span class="check-badge">Check Your Thinking</span>
+      <span class="check-title">Three Questions — No Right Answers, Only Supported Ones</span>
+    </div>
+    <ul class="question-list">
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">01</span>
+          <span class="q-skill">Causation</span>
+          <p class="q-text">How did the Catholic Church help unify Europe politically and culturally despite political fragmentation? Use at least two specific examples.</p>
+        </div>
+        <textarea class="q-textarea" placeholder="The Catholic Church helped unify Europe by..."></textarea>
+      </li>
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">02</span>
+          <span class="q-skill">Causation</span>
+          <p class="q-text">Explain how the Black Death changed European society. Trace a specific causal chain: how did population collapse produce social or economic changes?</p>
+        </div>
+        <textarea class="q-textarea" placeholder="The Black Death changed European society because..."></textarea>
+      </li>
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">03</span>
+          <span class="q-skill">Comparison</span>
+          <p class="q-text">Compare how Europe and one other Unit 1 region organized political authority. What did each society rely on to hold itself together?</p>
+        </div>
+        <textarea class="q-textarea" placeholder="Europe organized political authority through... while [other region] used..."></textarea>
+      </li>
+    </ul>
+  </div>
+
+  <div class="builder-section">
+    <h2 class="builder-heading">Build Your Google Form Response</h2>
+    <p class="builder-body">After answering the questions, click the button to collect your responses. Copy the result, then submit to the Google Form.</p>
+    <div class="tool-row"><button onclick="buildGooglePrompt()">Build Google Prompt</button></div>
+    <textarea id="google-output" class="builder-output" readonly placeholder="Your responses will appear here..."></textarea>
+    <div class="tool-row"><button onclick="submitToGoogleForm()">Submit to Google Form</button></div>
+  </div>
+  <div class="builder-section">
+    <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
+    <p class="builder-body">Build one prompt for the BeHistorical AI Coach to question, challenge, and improve your thinking without writing the final answer for you.</p>
+    <div class="tool-row">
+      <button onclick="buildAiPrompt()">Build AI Prompt</button>
+      <button class="secondary" onclick="copyAiPrompt()">Copy Prompt</button>
+      <button class="secondary" onclick="window.open('https://app.magicschool.ai/','_blank','noopener')">Open MagicSchool</button>
+    </div>
+    <textarea id="ai-output" class="builder-output" readonly placeholder="Your prompt will appear here after you click Build AI Prompt."></textarea>
+  </div>
+  <p class="page-footer-note">Use this page to organize your thinking and prepare for coaching. Your final response must be submitted in Canvas.</p>
+
+  <div class="module-footer">
+    <span class="footer-note">Topic 1.6 — Developments in Europe · AP World History: Modern</span>
+    <div style="display:flex;gap:.6rem">
+      <a class="nav-btn prev" href="lesson-1-6-europe.html#modules">← Map &amp; Geography</a>
+      <a class="nav-btn" href="lesson-1-6-europe.html#lecture">Content Delivery →</a>
+    </div>
+  </div>
+
 </div>
-<p class="page-footer-note">Use this page to organize your thinking and prepare for coaching. Your final response must be submitted in Canvas.</p>
-</div>
-<script src="../assets/js/behistorical-form-config.js?v=unified-v1"></script>
 <script>
-var TOPIC_KEY='1.6';var TOPIC_LABEL='1.6 - Eurasian Connections';
-document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('textarea.qta').forEach(function(ta,i){if(!ta.id)ta.id='q'+(i+1);});});
-function buildGooglePrompt(){var q1=document.getElementById('q1').value||'(no response)';var q2=document.getElementById('q2').value||'(no response)';var q3=document.getElementById('q3').value||'(no response)';document.getElementById('google-output').value='Question 1:\n'+q1+'\n\nQuestion 2:\n'+q2+'\n\nQuestion 3:\n'+q3;}
+var TOPIC_KEY='1.6';var TOPIC_LABEL='1.6 - Developments in Europe';
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('textarea.q-textarea').forEach(function(ta,i){if(!ta.id)ta.id='q'+(i+1);});});
+function buildGooglePrompt(){
+  var q1=document.getElementById('q1').value||'(no response)';
+  var q2=document.getElementById('q2').value||'(no response)';
+  var q3=document.getElementById('q3').value||'(no response)';
+  document.getElementById('google-output').value='Question 1:\n'+q1+'\n\nQuestion 2:\n'+q2+'\n\nQuestion 3:\n'+q3;
+}
 function submitToGoogleForm(){var c=document.getElementById('google-output').value;navigator.clipboard.writeText(c).catch(function(){});var tl=(window.BH_FORM&&BH_FORM.topics[TOPIC_KEY])||TOPIC_LABEL;var u=window.BH_FORM?BH_FORM.baseURL+'?usp=pp_url&entry.187055090='+encodeURIComponent(tl).replace(/%20/g,'+')+'&entry.2107637366=First+and+10':'';if(u)window.open(u,'_blank','noopener');}
-function buildAiPrompt(){var q1=document.getElementById('q1').value||'(no response)';var q2=document.getElementById('q2').value||'(no response)';var q3=document.getElementById('q3').value||'(no response)';document.getElementById('ai-output').value='I completed the First & 10 reading for AP World History Topic 1.6: Eurasian Connections. Here are my responses:\n\nQuestion 1: How did the Catholic Church help unify Europe politically and culturally?\nMy response: '+q1+'\n\nQuestion 2: Explain one way the Black Death changed European society.\nMy response: '+q2+'\n\nQuestion 3: Why were the Crusades historically important beyond warfare?\nMy response: '+q3+'\n\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';}
+function buildAiPrompt(){
+  var q1=document.getElementById('q1').value||'(no response)';
+  var q2=document.getElementById('q2').value||'(no response)';
+  var q3=document.getElementById('q3').value||'(no response)';
+  document.getElementById('ai-output').value='I completed the First & 10 reading for AP World History Topic 1.6: Developments in Europe. Here are my responses:\n\nQuestion 1: How did the Catholic Church help unify Europe politically and culturally despite political fragmentation? Use at least two specific examples.\nMy response: '+q1+'\n\nQuestion 2: Explain how the Black Death changed European society. Trace a specific causal chain: how did population collapse produce social or economic changes?\nMy response: '+q2+'\n\nQuestion 3: Compare how Europe and one other Unit 1 region organized political authority. What did each society rely on to hold itself together?\nMy response: '+q3+'\n\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';
+}
 function copyAiPrompt(){var c=document.getElementById('ai-output').value;navigator.clipboard.writeText(c).catch(function(){});}
 </script>
+<script src="../assets/js/behistorical-form-config.js?v=unified-v1"></script>
 </body>
 </html>
