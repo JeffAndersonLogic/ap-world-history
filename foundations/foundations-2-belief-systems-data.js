@@ -78,6 +78,14 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Using evidence from the reading, explain one way Islam functioned as a social institution for Mansa Musa\'s Mali AND one way Malian Islam shows evidence of syncretism.'
   },
 
+  beSurreal: {
+    title: 'You Are a Merchant Funding a Cave Painting, 800 CE',
+    desc: 'A memorable everyday-life detail from the intersection of trade and belief.',
+    intro: 'You are a Sogdian merchant stopped at Dunhuang on the Silk Road. You will not survive this journey.',
+    detail: 'You don\'t know that yet. What you know is that the mountain pass ahead has killed three men from your caravan this season. You have already paid a Zoroastrian priest to pray for your safe passage. On the advice of a Buddhist monk at the oasis monastery, you have also donated enough silver to commission a small cave painting — the Bodhisattva Guanyin watching over travelers. It costs roughly what one bolt of silk would earn you in Samarkand. You consider it a reasonable insurance premium. The monk assures you the bodhisattva will help. The Zoroastrian priest assured you the same thing. You figure the odds are better if you cover both.',
+    prompt: 'What does this merchant\'s spiritual hedging reveal about how belief systems actually worked along the Silk Road? How does this everyday moment connect to the concept of syncretism?'
+  },
+
   terms: [
     'belief system', 'cultural diffusion', 'syncretism', 'institution', 'legitimacy',
     'civil service examination', 'filial piety', 'Five Pillars', 'hajj', 'sharia',

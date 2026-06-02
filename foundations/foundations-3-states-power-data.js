@@ -76,6 +76,14 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Using evidence from the reading, explain one way the Han Dynasty maintained power AND one structural limit on that power that the Yellow Turban Rebellion revealed.'
   },
 
+  beSurreal: {
+    title: 'You Are Preparing for the Civil Service Exam, Song Dynasty',
+    desc: 'A memorable everyday-life detail from the inside of state power.',
+    intro: 'You have been studying for twelve years. The exam begins at dawn.',
+    detail: 'You enter the examination hall before sunrise. Each candidate has their own sealed cell — just wide enough to sit, with a narrow desk. You will stay here for three days and two nights. Twice a day, a guard pushes food through a slot in the door. You write from memory: the Four Books, the Five Classics, the commentaries of Zhu Xi, the poetry forms, the model essay format. Around you, 50,000 men are doing the same thing in examination halls across Song China. Fewer than 400 will receive the jinshi degree that opens the path to official life. Your father failed four times. He sold half of his farmland to fund your education. He has told you that you carry the family\'s future on this desk.',
+    prompt: 'What does this scene reveal about how the civil service examination functioned as a tool of state power? Who benefited from the system, and who was excluded by the financial barriers to exam preparation?'
+  },
+
   terms: [
     'state', 'bureaucracy', 'tribute system', 'labor tax', 'legitimacy',
     'Mandate of Heaven', 'caliphate', 'diwan', 'iqta', 'social hierarchy',

@@ -76,6 +76,14 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Using evidence from the reading, explain one way geography created an opportunity AND one way it created a challenge for a society before c.1200.'
   },
 
+  beSurreal: {
+    title: 'You Are a Yangtze Delta Farmer, c.1127 CE',
+    desc: 'A memorable everyday-life detail from the geography that built the world.',
+    intro: 'The Jurchen Jin have just driven the Song court south. Your village is in the Yangtze Delta.',
+    detail: 'Your grandfather farmed dryland millet on the Yellow River plain. You farm wet rice in flooded paddies that must be transplanted seedling by seedling in standing water up to your knees. But while your grandfather harvested once per year, you harvest twice — and when the emperor\'s agents distribute those fast-maturing Champa rice varieties from Vietnam, maybe three times. The surplus you produce will fund a dynasty\'s commercial revolution. None of that is in your mind. What is in your mind is that your back hurts.',
+    prompt: 'How does this farmer\'s daily reality connect to Song China\'s Commercial Revolution at c.1200? What is the relationship between individual labor and large-scale historical change?'
+  },
+
   terms: [
     'contextualization', 'river valley', 'irrigation', 'agricultural surplus', 'pastoral nomadism',
     'steppe', 'monsoon', 'maritime trade', 'chokepoint', 'geographic barrier', 'loess', 'alluvial plain'

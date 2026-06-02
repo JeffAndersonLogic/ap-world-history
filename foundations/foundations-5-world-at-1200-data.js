@@ -79,6 +79,14 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Choose any two regions from the six snapshots above. For each region, identify one Foundations theme (geography, belief systems, states and power, or trade networks) that best explains its condition at c.1200. Support each choice with specific evidence from the reading.'
   },
 
+  beSurreal: {
+    title: 'You Are a Merchant on the Quanzhou Docks, c.1200 CE',
+    desc: 'A memorable everyday-life detail from the world at the moment AP History begins.',
+    intro: 'You stand on the docks of Quanzhou. The year is c.1200. The world is large, and it is moving.',
+    detail: 'The harbor is loud. Arabic merchants argue prices with Chinese factors in a patois that is not quite either language. Persian dhows ride at anchor next to Chinese flat-bottomed junks built for the South China Sea. On the dock beside you, porcelain is being crated in sawdust for the voyage to the Persian Gulf — pieces that will end up, broken, in archaeological digs on the East African coast in 800 years. A customs official is recording your cargo in a ledger — payment to the Song government, which funds its army partly on what passes through this dock. Somewhere in the crowd is a Muslim merchant whose great-grandfather converted in Malacca. Somewhere is a monk who traveled here from Sri Lanka. This is not the edge of the world. This is the center of it.',
+    prompt: 'What does this scene at Quanzhou reveal about how the AP World starting point at c.1200 was already a deeply connected world? Which Foundations themes — geography, belief systems, states and power, trade networks — can you identify in this single moment?'
+  },
+
   terms: [
     'contextualization', 'causation', 'continuity and change over time (CCOT)',
     'comparison', 'argumentation', 'claim', 'evidence', 'reasoning',

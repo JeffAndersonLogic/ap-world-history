@@ -5,6 +5,30 @@
 - Always commit and push directly to `main`.
 - Do not create feature branches or pull requests.
 
+## 10-Module Structure Standard
+
+Every lesson page — Unit and Foundations — must display exactly **10 modules** in this fixed order:
+
+| # | ID | Title | Unit Page | Foundations Page |
+|---|---|---|---|---|
+| 01 | `map` | Map & Geography Check | `renderMap()` | `renderMap()` |
+| 02 | `first10` | First & 10 Reading | `renderFirst10()` | `renderFirst10()` |
+| 03 | `contentdelivery` | Content Delivery | jump `#lecture` | jump `#content` |
+| 04 | `besurreal` | BeSurreal | `renderBeSurreal()` | `renderBeSurreal()` |
+| 05 | `skill` | AP Skill Builder | `renderSkill()` | `renderSkill()` |
+| 06 | `checkpoint1` | Checkpoint 1 | `renderCheckpoint1()` | `renderCheckpoint1()` |
+| 07 | `evidence` | Evidence Lab | `renderEvidence()` | `renderEvidence()` |
+| 08 | `source` / `coach` | Primary Source (Unit) / Socrates AI Coach (Foundations) | `renderSource()` | `renderCoach()` |
+| 09 | `beintheroom` | BeInTheRoom | link to external URL | link to external URL (or placeholder if none) |
+| 10 | `checkpoint2` | Checkpoint 2 | `renderCheckpoint2()` | `renderCheckpoint2()` |
+
+**Rules:**
+- Module 03 is always a jump link, never a pop-out modal.
+- Module 09 is always an external link (`window.open`) when a URL exists; otherwise shows a "coming soon" placeholder.
+- Module count must be exactly 10 — no more, no fewer.
+- The `beSurreal` field is required in every data file (Unit and Foundations). It must have `title`, `desc`, `intro`, `detail`, and `prompt`.
+- When a Foundations data file has no `beInTheRoom.url`, the renderer renders the "coming soon" placeholder automatically.
+
 ## Classroom Flow Standard
 
 Every lesson page (Unit and Foundations) **must** display the same three-card Classroom Flow inside a `.lesson-roadmap` container. The three steps are fixed — never customized per lesson:

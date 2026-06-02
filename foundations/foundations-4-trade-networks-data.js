@@ -76,6 +76,14 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Using evidence from the reading, explain one specific way the Battle of Talas (751 CE) illustrates the argument that trade networks moved more than goods. Then identify one other non-good that moved through Afro-Eurasian trade networks and explain how it traveled.'
   },
 
+  beSurreal: {
+    title: 'You Are a Papermaker Captured at Talas, 751 CE',
+    desc: 'A memorable everyday-life detail from the moment technology transferred worlds.',
+    intro: 'The battle is over. You are a prisoner. The soldiers speak Arabic.',
+    detail: 'You make paper. That is your trade. In Chang\'an, paper is ordinary — cheap enough to wipe tables, used for tax records and poetry drafts and love letters. You have been making paper since your father taught you: soaking mulberry bark and hemp rags, beating the pulp into a slurry, lifting the screen through the vat, hanging the sheets to dry. It is not a prestigious trade. It is not dangerous. You never expected to be important. But the Abbasid officer who separated you from the other prisoners is asking very specific questions about your work. He wants to understand the vat. The screen. The drying process. You are not sure what you are about to change.',
+    prompt: 'What does this ordinary craftsman\'s story reveal about how technology transfers through trade networks and conflict? What does it mean that one captured papermaker\'s knowledge changed the intellectual culture of the Islamic world for centuries?'
+  },
+
   terms: [
     'trade network', 'Silk Roads', 'Indian Ocean trade', 'trans-Saharan trade',
     'monsoon winds', 'chokepoint', 'entrepôt', 'relay trade', 'Sogdian merchants',
