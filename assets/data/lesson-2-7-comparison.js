@@ -172,21 +172,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'Three Roads, One World',
-    paragraphs: [
-      'In 1324, the ruler of the Mali Empire, Mansa Musa, made the pilgrimage to Mecca. He traveled with an entourage of 60,000 people and 80 camels each carrying 300 pounds of gold dust. When he passed through Cairo, he distributed so much gold that he crashed the Egyptian gold market for a decade. Mansa Musa\'s wealth came from the trans-Saharan trade network — gold from West Africa moving north across the Sahara to North Africa and the Mediterranean, while salt, cloth, and copper moved south in return.',
-      'Twelve years later, the Moroccan traveler Ibn Battuta set out on a journey that would eventually take him from the Atlantic coast of Morocco to the South China Sea. He traveled the trans-Saharan routes south to Mali, then crossed to East Africa and the Swahili Coast, then sailed the Indian Ocean to South Asia and Southeast Asia, and eventually made his way to the great port cities of China. He was moving, almost without noticing it, from one trade network to another — and yet the world felt continuous. Everywhere he went, he found Muslim merchants, familiar prayer times, Arabic as a language of commerce and scholarship, and caravanserais or their maritime equivalents offering the same hospitality.',
-      'This is the key insight of Topic 2.7: the three Afro-Eurasian trade networks — the Silk Roads, the Indian Ocean, and the trans-Saharan routes — were different in their technologies, their geographies, and many of their goods. But they were not three separate worlds. They were three parts of a single, integrated Afro-Eurasian system of exchange, linked through connector cities, shared religions, and overlapping merchant communities.',
-      'The differences between the networks matter for AP writing — you need to be able to explain why camels dominated one system and monsoon winds dominated another, why the trans-Saharan routes produced different state structures than the Indian Ocean ports, why Buddhism traveled the Silk Roads while Islam traveled the Indian Ocean. But so do the similarities: in all three systems, long-distance merchants built diaspora communities, religions spread through commerce, and states grew wealthy by taxing the traffic. Learning both sides of the comparison is the skill this topic is designed to build.'
-    ],
-    questions: [
-      'According to the passage, what specific evidence suggests that the three trade networks were connected to each other rather than truly separate systems? Use at least two details from the text.',
-      'The passage argues that "differences between the networks matter for AP writing." Choose one difference the passage mentions and explain why it matters — what does that difference reveal about the historical forces shaping each network?',
-      'Ibn Battuta moved between three different trade systems and found remarkable continuities. What does this suggest about the role of Islam and merchant diaspora communities in creating a unified Afro-Eurasian commercial culture by c. 1350?'
-    ],
-    magicSchoolBridge: {
-      magicSchoolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q'
-    }
+    title: 'First & 10: Comparing the Networks',
+    embedUrl: 'first-and-10-topic-2-7-comparison-capture.html'
   },
 
   evidenceLab: {

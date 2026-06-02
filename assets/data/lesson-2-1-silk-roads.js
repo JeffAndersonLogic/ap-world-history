@@ -170,20 +170,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: "First & 10: The Roads That Connected the World",
-    paragraphs: [
-      "The Silk Roads were not paved highways — they were a loose network of overland routes connecting China to the Mediterranean through Central Asia, sustained by merchants, nomads, and states willing to profit from moving goods across difficult terrain.",
-      "What made long-distance trade possible was infrastructure: caravanserais provided rest and resupply, pastoral nomads offered protection and guidance, and empires taxed the traffic while keeping routes secure.",
-      "The results were transformative — luxury goods, technologies, religions, and eventually plague all traveled these same paths, making the Silk Roads one of the most consequential networks in world history."
-    ],
-    questions: [
-      "Explain how infrastructure — caravanserais, relay stations, and pastoral nomad intermediaries — made long-distance Silk Road trade possible. Use at least two specific examples.",
-      "The Silk Roads carried goods, ideas, technologies, AND disease. Choose two of these categories and explain what moved, why it moved, and what effect it had on societies along the routes.",
-      "Evaluate this claim: 'The Silk Roads were as destructive as they were beneficial.' Use evidence from c. 1200–1450 to support or challenge the claim."
-    ],
-    magicSchoolBridge: {
-      magicSchoolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q"
-    }
+    title: 'First & 10: Roads of Silk and Exchange',
+    embedUrl: 'first-and-10-topic-2-1-silk-roads-capture.html'
   },
 
   evidenceLab: {

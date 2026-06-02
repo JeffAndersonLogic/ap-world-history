@@ -171,21 +171,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'The Merchant Who Changed Everything',
-    paragraphs: [
-      'In 1280, a Muslim merchant named Ahmad set out from Aden on the southwestern tip of Arabia, bound for Calicut on India\'s Malabar Coast. His dhow was loaded with copper ingots, glass beads, and fine cotton cloth. He would return with pepper, cinnamon, and a handful of young coconut saplings wrapped carefully in damp cloth. The saplings were not cargo in the usual sense. No one had ordered them. Ahmad simply thought they might grow well in the soil near his warehouse in Aden.',
-      'Ahmad was not unusual. Every merchant crossing the Indian Ocean carried something beyond their listed cargo — a prayer, a habit, a plant, a word. The Arabic he spoke when he prayed five times a day was heard in port cities from Kilwa on the East African coast to Quanzhou in southern China. The mathematics he used to calculate his profit margins had traveled westward from India through the Islamic world, carried in scholarly texts copied by hand in Baghdad and Cairo. The compass in his navigator\'s hands had been invented in China centuries earlier.',
-      'The trade networks of the period from c. 1200 to c. 1450 were not simply economic systems. They were the largest cultural exchange mechanism the world had ever seen. Islam became the world\'s most widely distributed religion not through armies alone, but through merchants like Ahmad who prayed in the same direction no matter which port they were in. Buddhism spread from India into Central Asia, China, and Southeast Asia carried by pilgrims and monks who walked the same roads that caravans traveled. Technologies invented in one place — paper, printing, gunpowder, the stirrup — became common across a continent within two or three centuries.',
-      'The coconut saplings Ahmad carried to Aden eventually took root. Their descendants grew along coastlines from East Africa to the Arabian Peninsula. They were part of a vast, quiet agricultural revolution happening all across Afro-Eurasia as trade routes moved sugar, citrus, cotton, and rice into new soils. No single person planned this transformation. It happened merchant by merchant, voyage by voyage, across generations.'
-    ],
-    questions: [
-      'According to the passage, what kinds of things did merchants carry beyond their official cargo? Give at least two specific examples from the text.',
-      'The passage claims that trade networks were "the largest cultural exchange mechanism the world had ever seen." Using evidence from the passage and your prior knowledge, do you agree? Explain your reasoning.',
-      'How does Ahmad\'s story illustrate the concept of cultural diffusion? What does his example reveal about how religion, technology, and agricultural practices spread along trade routes?'
-    ],
-    magicSchoolBridge: {
-      magicSchoolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q'
-    }
+    title: 'First & 10: Ideas on the Move',
+    embedUrl: 'first-and-10-topic-2-5-cultural-consequences-capture.html'
   },
 
   evidenceLab: {

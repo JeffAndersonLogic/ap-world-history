@@ -172,21 +172,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'The Ship That Carried Death',
-    paragraphs: [
-      'In October 1347, twelve Genoese merchant ships docked at the port of Messina in Sicily. The harbor master ordered the ships immediately back out to sea. By the time the order was given, it was too late. The sailors aboard were already dying — covered in black boils the size of eggs, oozing blood and pus. Those few who were still alive described a fever that consumed the body within days. The disease had a name now: la moria grandissima. The Great Dying.',
-      'The ships had come from Caffa, a Genoese trading post on the Black Sea, where they had witnessed something they could barely describe. A Mongol army besieging the city had begun dying in enormous numbers from a mysterious illness. Before withdrawing, the Mongols had catapulted their dead over the city walls. The survivors of the siege fled to their ships. They brought the disease with them.',
-      'The bacterium Yersinia pestis had existed for centuries in the rodent populations of the Central Asian steppe. It had caused local outbreaks before. But the Pax Mongolica — the relative peace and commercial integration of Eurasia under Mongol rule — had transformed the steppe from a barrier into a highway. Caravans moved from China to the Black Sea in weeks. Fleas riding on rats riding on camels and carts carried the disease westward faster than any previous epidemic in recorded history.',
-      'What followed was the most devastating demographic catastrophe in Eurasian history. In five years, between 30 and 60 percent of Europe\'s population was dead. Egypt lost a third of its people. The Middle East was devastated. Entire villages were abandoned. In some cities, the living could not bury the dead. The Black Death did not simply kill people — it killed the world those people had built. The labor shortages it created would reshape European feudalism. The crisis of faith it triggered would shake the Church. The trade networks that carried it would never be quite the same.'
-    ],
-    questions: [
-      'According to the passage, how did the bubonic plague travel from Central Asia to Sicily? Trace the specific path using details from the text.',
-      'The passage argues that the Pax Mongolica transformed the steppe "from a barrier into a highway." What does this mean, and how did it contribute to the spread of the Black Death?',
-      'What were at least two consequences of the Black Death described in the final paragraph? For each consequence, explain what it reveals about how epidemic disease can reshape human societies.'
-    ],
-    magicSchoolBridge: {
-      magicSchoolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q'
-    }
+    title: 'First & 10: The World the Plague Remade',
+    embedUrl: 'first-and-10-topic-2-6-environmental-consequences-capture.html'
   },
 
   evidenceLab: {

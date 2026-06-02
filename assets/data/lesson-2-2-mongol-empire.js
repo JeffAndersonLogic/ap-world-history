@@ -170,20 +170,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: "First & 10: The World the Mongols Made",
-    paragraphs: [
-      "In the early 13th century, the Mongolian steppe was home to dozens of competing tribes with no unified political identity. Within a generation, Genghis Khan had transformed those tribes into a war machine that would conquer the largest contiguous land empire in history.",
-      "The Mongol conquests were among the most destructive events in the premodern world — Baghdad fell, cities burned, and populations collapsed. But the Mongol Empire also created something new: a single, connected zone across Eurasia where merchants, diplomats, and ideas could move with relative safety.",
-      "That zone — the Pax Mongolica — lasted less than a century, but its effects were permanent. The Black Death traveled its routes. Marco Polo walked its roads. And the collapse of the Mongol order set off a new wave of political reorganization across Afro-Eurasia."
-    ],
-    questions: [
-      "Explain how Genghis Khan built the Mongol Empire. Use at least two specific pieces of evidence about his military strategy or political organization.",
-      "The Pax Mongolica is often described as a time of both opportunity and catastrophe. Using specific evidence, explain one way Mongol rule expanded connection and one way it caused destruction.",
-      "Evaluate this claim: 'The Mongols did more to connect the world than any other force in history — and more to destroy it.' Use evidence from c. 1200–1450 to support or challenge the claim."
-    ],
-    magicSchoolBridge: {
-      magicSchoolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q"
-    }
+    title: 'First & 10: The World the Mongols Made',
+    embedUrl: 'first-and-10-topic-2-2-mongol-empire-capture.html'
   },
 
   evidenceLab: {

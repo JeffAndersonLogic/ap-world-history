@@ -170,20 +170,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: "First & 10: The Desert That Linked Two Worlds",
-    paragraphs: [
-      "For centuries, the Sahara Desert — the world's largest hot desert, stretching nearly 3.5 million square miles — looked like an impenetrable barrier. Then came the camel. With its extraordinary capacity to carry heavy loads across waterless terrain, the camel transformed the Sahara from a wall into a road.",
-      "On one side of that road sat West Africa, home to the world's most productive goldfields. On the other side sat North Africa and the Mediterranean world, with salt mines in the Saharan interior and an insatiable demand for gold. The Sahara, which had separated these worlds, now connected them — and the people who controlled the crossing grew fabulously wealthy.",
-      "The most famous of them was Mansa Musa of Mali, whose 1324 pilgrimage to Mecca was so lavish — thousands of attendants, camels loaded with gold dust — that it flooded Mediterranean markets and caused inflation for years. His journey announced West Africa to the Islamic world, and the Islamic world to West Africa. Trade routes had become cultural corridors."
-    ],
-    questions: [
-      "Explain how the camel made trans-Saharan trade possible. Use at least two specific pieces of evidence about the camel's characteristics or the organization of caravans.",
-      "Gold and salt drove the trans-Saharan trade. Explain why each side of the exchange needed what the other had, using specific evidence about the Wangara goldfields, the Taghaza salt mines, and Mali's role in the system.",
-      "Evaluate this claim: 'Mansa Musa's hajj was more important than any military conquest in connecting West Africa to the wider world.' Use evidence from c. 1200–1450 to support or challenge the claim."
-    ],
-    magicSchoolBridge: {
-      magicSchoolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q"
-    }
+    title: 'First & 10: Gold, Salt, and the Desert Road',
+    embedUrl: 'first-and-10-topic-2-4-trans-saharan-capture.html'
   },
 
   evidenceLab: {

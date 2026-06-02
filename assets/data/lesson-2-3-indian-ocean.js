@@ -170,20 +170,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: "First & 10: The Ocean That Connected the World",
-    paragraphs: [
-      "Long before European sailors entered the Indian Ocean in the late 15th century, Arab, Indian, Chinese, Persian, and Swahili merchants had turned it into the most active maritime trade zone in the world. The key was knowledge — specifically, knowledge of the monsoon winds.",
-      "Twice a year, the winds over the Indian Ocean reversed direction, carrying ships reliably from Arabia to India, from India to Southeast Asia, and back again. This environmental pattern made the Indian Ocean predictable in a way that the Atlantic and Pacific were not, and it allowed merchants to plan round-trip voyages with confidence.",
-      "The results transformed the societies around the ocean's rim: port cities grew wealthy, diasporic communities of merchants settled across the coastlines, and Islam spread along maritime routes to become a major presence from East Africa to the Indonesian archipelago."
-    ],
-    questions: [
-      "Explain how monsoon winds and ship technology — especially the dhow and the magnetic compass — made Indian Ocean trade possible. Use at least two specific pieces of evidence.",
-      "Indian Ocean trade involved multiple merchant communities — Arab, Indian, Chinese, Swahili, and Persian. Choose two and explain what they contributed to the network and what they gained from it.",
-      "Evaluate this claim: 'Indian Ocean trade did more to spread Islam than any military conquest.' Use evidence from c. 1200–1450 to support or challenge the claim."
-    ],
-    magicSchoolBridge: {
-      magicSchoolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q"
-    }
+    title: 'First & 10: The Ocean That Connected the World',
+    embedUrl: 'first-and-10-topic-2-3-indian-ocean-capture.html'
   },
 
   evidenceLab: {
