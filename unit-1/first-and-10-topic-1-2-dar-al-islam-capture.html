@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First &amp; 10 Capture Wrapper | Topic 1.2: Dar al-Islam</title>
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: #1A1C1D; overflow: hidden; }
+    iframe { width: 100%; height: 100vh; border: 0; display: block; }
+  </style>
+</head>
+<body>
+  <iframe id="first10-frame" src="first-and-10-topic-1-2-dar-al-islam.html" title="First and 10 Topic 1.2: Dar al-Islam"></iframe>
+  <script>
+    const PREFILLED_FIRST10_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+1+-+The+Global+Tapestry&entry.187055090=1.2+-+Dar+al-Islam&entry.1549761827=1.2-first10&entry.2107637366=First+and+10&entry.1963461515=Causation&entry.1963461515=Continuity+and+Change+Over+Time+(CCOT)&entry.1963461515=Comparison';
+    const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+
+    function getGoogleOutput(childWindow, childDocument) {
+      if (typeof childWindow.buildGooglePrompt === 'function') {
+        childWindow.buildGooglePrompt();
+      }
+      const output = childDocument.getElementById('google-output');
+      return output ? (output.value || '') : '';
+    }
+
+    function openPrefilledFirst10Form(childWindow, childDocument, button) {
+      const content = getGoogleOutput(childWindow, childDocument);
+      const originalText = button ? button.textContent : '';
+      const openForm = () => childWindow.open(PREFILLED_FIRST10_FORM, '_blank');
+      if (!content.trim()) {
+        if (button) {
+          button.textContent = 'FORM OPENED - COPY MANUALLY';
+          setTimeout(() => { button.textContent = originalText || 'SUBMIT TO GOOGLE FORM'; }, 2200);
+        }
+        openForm(); return;
+      }
+      if (childWindow.navigator && childWindow.navigator.clipboard && childWindow.navigator.clipboard.writeText) {
+        childWindow.navigator.clipboard.writeText(content)
+          .then(() => {
+            if (button) {
+              button.textContent = 'COPIED - OPENING FORM';
+              setTimeout(() => { button.textContent = originalText || 'SUBMIT TO GOOGLE FORM'; }, 2200);
+            }
+            openForm();
+          })
+          .catch(() => {
+            if (button) {
+              button.textContent = 'FORM OPENED - COPY MANUALLY';
+              setTimeout(() => { button.textContent = originalText || 'SUBMIT TO GOOGLE FORM'; }, 2200);
+            }
+            openForm();
+          });
+      } else {
+        if (button) {
+          button.textContent = 'FORM OPENED - COPY MANUALLY';
+          setTimeout(() => { button.textContent = originalText || 'SUBMIT TO GOOGLE FORM'; }, 2200);
+        }
+        openForm();
+      }
+    }
+
+    function wireFirst10Capture() {
+      const frame = document.getElementById('first10-frame');
+      try {
+        const childWindow = frame.contentWindow;
+        const childDocument = frame.contentDocument || childWindow.document;
+        if (!childWindow || !childDocument) return;
+        childWindow.submitToGoogleForm = function() {
+          openPrefilledFirst10Form(childWindow, childDocument, null);
+        };
+        childDocument.addEventListener('click', event => {
+          const button = event.target && event.target.closest ? event.target.closest('button') : null;
+          if (!button) return;
+          const label = (button.textContent || '').trim().toLowerCase();
+          if (label === 'submit to google form') {
+            event.preventDefault(); event.stopPropagation();
+            openPrefilledFirst10Form(childWindow, childDocument, button);
+          }
+          if (label === 'open magicschool' || label === 'open ai coach') {
+            event.preventDefault(); event.stopPropagation();
+            childWindow.open(MAGICSCHOOL_URL, '_blank');
+          }
+        }, true);
+      } catch (error) {
+        console.warn('Unable to wire First & 10 capture link:', error);
+      }
+    }
+
+    document.getElementById('first10-frame').addEventListener('load', wireFirst10Capture);
+  </script>
+</body>
+</html>
