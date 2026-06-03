@@ -50,6 +50,9 @@ window.BH_FORM = {
     '3.2': '3.2 - Empires Administration',
     '3.3': '3.3 - Empires and Belief Systems',
     '3.4': '3.4 - Comparison in Land-Based Empires',
+    '4.1': '4.1 - Technological Innovations',
+    '4.2': '4.2 - Exploration: Causes and Events',
+    '4.3': '4.3 - Columbian Exchange',
   },
 
   // Must match Google Form multiple-choice option text exactly.
