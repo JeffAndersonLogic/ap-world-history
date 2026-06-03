@@ -58,6 +58,8 @@ window.BH_FORM = {
     '4.6': '4.6 - Internal and External Challenges',
     '4.7': '4.7 - Changing Social Hierarchies',
     '4.8': '4.8 - Continuity and Change',
+    '5.1': '5.1 - The Enlightenment',
+    '5.2': '5.2 - Nationalism and Revolutions',
   },
 
   // Must match Google Form multiple-choice option text exactly.
