@@ -57,6 +57,7 @@ window.BH_FORM = {
     '4.5': '4.5 - Maritime Empires Maintained',
     '4.6': '4.6 - Internal and External Challenges',
     '4.7': '4.7 - Changing Social Hierarchies',
+    '4.8': '4.8 - Continuity and Change',
   },
 
   // Must match Google Form multiple-choice option text exactly.
