@@ -62,6 +62,8 @@ window.BH_FORM = {
     '5.2': '5.2 - Nationalism and Revolutions',
     '5.3': '5.3 - Industrial Revolution Begins',
     '5.4': '5.4 - Industrialization Spreads',
+    '5.5': '5.5 - Technology of Industrialization',
+    '5.6': '5.6 - Industrialization: Government and Society',
   },
 
   // Must match Google Form multiple-choice option text exactly.
