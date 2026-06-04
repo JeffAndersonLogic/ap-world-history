@@ -64,6 +64,8 @@ window.BH_FORM = {
     '5.4': '5.4 - Industrialization Spreads',
     '5.5': '5.5 - Technology of Industrialization',
     '5.6': '5.6 - Industrialization: Government and Society',
+    '5.7': '5.7 - Economic Developments and Innovations',
+    '5.8': '5.8 - Reactions to the Industrial Economy',
   },
 
   // Must match Google Form multiple-choice option text exactly.
