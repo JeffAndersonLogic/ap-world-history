@@ -60,6 +60,8 @@ window.BH_FORM = {
     '4.8': '4.8 - Continuity and Change',
     '5.1': '5.1 - The Enlightenment',
     '5.2': '5.2 - Nationalism and Revolutions',
+    '5.3': '5.3 - Industrial Revolution Begins',
+    '5.4': '5.4 - Industrialization Spreads',
   },
 
   // Must match Google Form multiple-choice option text exactly.
