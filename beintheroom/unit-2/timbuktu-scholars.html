@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeInTheRoom | The Scholars of Timbuktu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/behistorical.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <style>
+    :root{--focus-ring:0 0 0 4px rgba(201,164,106,.35)}
+    .role-shell{max-width:1180px;margin:0 auto;padding:24px}
+    .role-hero{background:linear-gradient(160deg,rgba(26,28,29,.96) 0%,rgba(43,47,49,.98) 100%);border-radius:28px;padding:48px 36px 42px;color:var(--warm-paper);box-shadow:var(--soft-shadow);border:1px solid rgba(201,164,106,.35)}
+    .role-hero .eyebrow{font-family:"Montserrat",Arial,sans-serif;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.18em;color:var(--antique-gold);margin-bottom:10px}
+    .role-hero h1{font-family:"Cinzel",Georgia,serif;color:var(--antique-gold);font-size:clamp(2.4rem,6vw,5.2rem);line-height:1;margin:6px 0 4px}
+    .role-hero .subtitle{font-family:"Cinzel",Georgia,serif;color:rgba(245,240,231,.7);font-size:clamp(1rem,2.4vw,1.45rem);font-style:italic;margin:0 0 18px}
+    .role-hero p{max-width:880px;font-size:1.04rem;line-height:1.65;margin:0 0 24px;color:rgba(245,240,231,.88)}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+    .hero-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(201,164,106,.14);border:1px solid rgba(201,164,106,.3);border-radius:999px;padding:5px 12px;font-family:"Montserrat",Arial,sans-serif;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--antique-gold)}
+    .role-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin:24px 0}
+    .role-card{grid-column:span 6;background:var(--clean-paper);border:1px solid var(--paper-line);border-radius:20px;padding:26px;box-shadow:var(--soft-shadow)}
+    .role-card.full{grid-column:1/-1}
+    .role-card.half{grid-column:span 6}
+    .role-card.third{grid-column:span 4}
+    .role-card.two-thirds{grid-column:span 8}
+    .role-card h2,.role-card h3{font-family:"Cinzel",Georgia,serif;color:var(--blackened-steel);margin-top:0}
+    .role-card h3{font-size:1.08rem}
+    .stage-label{font-family:"Montserrat",Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.14em;color:var(--burnished-bronze);font-size:.7rem;margin-bottom:8px}
+    .tag{display:inline-flex;border-radius:999px;background:#f1e6d3;color:var(--oxidized-brown);padding:5px 10px;font-family:"Montserrat",Arial,sans-serif;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin:3px 4px 3px 0}
+
+    /* Scene narrative */
+    .narrative-text{font-size:1.04rem;line-height:1.75;color:var(--ink)}
+    .narrative-text p{margin:0 0 1.1em}
+    .narrative-text p:last-child{margin:0}
+
+    /* Role context box */
+    .role-context-box{background:#faf5ec;border-left:6px solid var(--antique-gold);border-radius:0 16px 16px 0;padding:18px 20px;margin:14px 0 0;line-height:1.65;font-size:1rem}
+    .constraint-list{margin:10px 0 0;padding-left:0;list-style:none}
+    .constraint-list li{position:relative;padding:8px 0 8px 22px;border-bottom:1px solid rgba(26,28,29,.08);font-size:.97rem;line-height:1.55}
+    .constraint-list li:last-child{border-bottom:none}
+    .constraint-list li::before{content:"▸";position:absolute;left:0;color:var(--antique-gold);font-size:.9rem;top:9px}
+
+    /* Decision cards */
+    .decision-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+    .decision-card{background:var(--clean-paper);border:2px solid var(--paper-line);border-top:6px solid var(--aged-iron);border-radius:18px;padding:22px;cursor:pointer;transition:.2s ease}
+    .decision-card:hover{border-top-color:var(--antique-gold);box-shadow:0 12px 40px rgba(0,0,0,.12);transform:translateY(-2px)}
+    .decision-card.selected{border-color:var(--antique-gold);border-top-color:var(--antique-gold);background:#fffdf5;box-shadow:0 12px 40px rgba(0,0,0,.15);transform:translateY(-2px)}
+    .decision-card h3{font-family:"Cinzel",Georgia,serif;font-size:1rem;margin:0 0 8px;color:var(--blackened-steel)}
+    .decision-card p{font-size:.94rem;line-height:1.55;margin:0 0 10px;color:#444}
+    .decision-card .evidence-anchor{font-family:"Montserrat",Arial,sans-serif;font-size:.7rem;font-weight:700;color:var(--burnished-bronze);text-transform:uppercase;letter-spacing:.08em}
+    .selection-status{font-family:"Montserrat",Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--oxidized-brown);font-size:.78rem;margin-top:14px;padding:10px 14px;background:#f7efe3;border-radius:10px}
+    .selection-status.has-selection{background:#f0f7ec;color:#1a7340}
+
+    /* Evidence documents */
+    .doc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+    .doc-card{background:#faf5ec;border:1px solid rgba(107,62,31,.16);border-radius:16px;padding:20px}
+    .doc-num{font-family:"Montserrat",Arial,sans-serif;font-size:.65rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:var(--burnished-bronze);margin-bottom:5px}
+    .doc-card h4{font-family:"Cinzel",Georgia,serif;font-size:.97rem;margin:0 0 10px;color:var(--blackened-steel)}
+    .doc-card blockquote{font-style:italic;font-size:.93rem;line-height:1.65;margin:0 0 10px;padding:0 0 0 14px;border-left:3px solid var(--antique-gold);color:#333}
+    .doc-ap{font-family:"Montserrat",Arial,sans-serif;font-size:.7rem;font-weight:700;color:var(--burnished-bronze);margin-top:8px;line-height:1.45}
+
+    /* Writing task */
+    .task-requirements{background:#f7efe3;border-radius:14px;padding:16px 18px;margin:14px 0;font-size:.96rem;line-height:1.65}
+    .task-requirements ol{margin:8px 0 0;padding-left:20px}
+    .task-requirements li{margin-bottom:6px}
+    .task-requirements li:last-child{margin:0}
+    .task-note{font-family:"Montserrat",Arial,sans-serif;font-size:.78rem;font-weight:700;color:var(--oxidized-brown);text-transform:uppercase;letter-spacing:.08em;margin-top:10px}
+    .response-area{min-height:200px;width:100%;border:1px solid rgba(26,28,29,.18);border-radius:14px;padding:16px;font-family:"Libre Baskerville",Georgia,serif;font-size:.98rem;line-height:1.7;background:#fffdf7;resize:vertical}
+    .response-area:focus{outline:none;box-shadow:var(--focus-ring);border-color:var(--antique-gold)}
+    .word-count{font-family:"Montserrat",Arial,sans-serif;font-size:.75rem;font-weight:700;color:var(--aged-iron);margin-top:6px}
+    .word-count.in-range{color:#1a7340}
+    .word-count.over-range{color:#c0392b}
+    .tool-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;align-items:center}
+    .check-result{font-family:"Montserrat",Arial,sans-serif;font-size:.76rem;font-weight:700;color:var(--burnished-bronze);margin-top:8px;min-height:1.2em}
+
+    /* Coach section */
+    .coach-prompt-box{white-space:pre-wrap;background:#151718;color:#f5f0e7;border-radius:16px;border:1px solid rgba(201,164,106,.35);padding:18px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.84rem;line-height:1.55;max-height:400px;overflow:auto;margin-top:12px}
+    .coach-instructions{background:#f6efe3;border-left:6px solid var(--burnished-bronze);border-radius:0 14px 14px 0;padding:14px 18px;font-size:.96rem;line-height:1.6;margin-bottom:14px}
+
+    /* Submission / AP section */
+    .canvas-box{background:linear-gradient(160deg,var(--blackened-steel),var(--charcoal-steel));color:var(--warm-paper);border-radius:20px;padding:24px;border:1px solid rgba(201,164,106,.35)}
+    .canvas-box h3{font-family:"Cinzel",Georgia,serif;color:var(--antique-gold);margin-top:0}
+    .ap-skill-box{background:#f7efe3;border-radius:14px;padding:16px 18px;margin-top:12px;font-size:.95rem;line-height:1.6}
+    .ap-skill-box strong{color:var(--oxidized-brown)}
+    .kc-list{margin:8px 0 0;padding-left:18px;font-size:.9rem}
+    .kc-list li{margin-bottom:4px}
+
+    /* Scoring guide — teacher only, hidden from print */
+    .scoring-guide{background:linear-gradient(180deg,#1A1C1D,#2B2F31);border:1px solid rgba(201,164,106,.25);border-radius:20px;padding:24px;color:var(--warm-paper)}
+    .scoring-guide h2{font-family:"Cinzel",Georgia,serif;color:var(--antique-gold);margin-top:0;font-size:1.2rem}
+    .scoring-table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:14px}
+    .scoring-table th{text-align:left;font-family:"Montserrat",Arial,sans-serif;font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--antique-gold);padding:8px 10px;border-bottom:1px solid rgba(201,164,106,.3)}
+    .scoring-table td{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.07);vertical-align:top;line-height:1.45;color:rgba(245,240,231,.9)}
+    .scoring-table tr:last-child td{border-bottom:none}
+    .scoring-table td:first-child{font-family:"Montserrat",Arial,sans-serif;font-weight:700;font-size:.78rem;color:var(--antique-gold)}
+    .terms-box{background:rgba(255,253,247,.06);border:1px solid rgba(201,164,106,.2);border-radius:12px;padding:14px 16px;margin-top:14px;font-size:.88rem;line-height:1.6}
+    .terms-box h4{font-family:"Montserrat",Arial,sans-serif;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--antique-gold);margin:0 0 8px}
+    .terms-box p{margin:4px 0;color:rgba(245,240,231,.8)}
+    .terms-box strong{color:rgba(245,240,231,.95)}
+
+    @media(max-width:900px){
+      .role-card,.role-card.half,.role-card.third,.role-card.two-thirds{grid-column:1/-1}
+      .role-shell{padding:12px}
+      .decision-pair,.doc-grid{grid-template-columns:1fr}
+      .role-hero{padding:32px 20px 28px}
+    }
+    @media print{.scoring-guide{display:none}}
+  </style>
+</head>
+<body>
+  <div class="role-shell">
+
+    <nav class="topbar">
+      <div class="nav">
+        <a class="brand-mini" href="../../index.html">
+          <img src="../../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo">
+          <span>BeHistorical</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html">BeInTheRoom Hub</a>
+          <a href="../../unit-2/lesson-2-5-cultural-consequences.html">Back to 2.5</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="role-hero">
+      <div class="eyebrow">BeInTheRoom &middot; Unit 2 &middot; Topic 2.5</div>
+      <h1>The Scholars of Timbuktu</h1>
+      <p class="subtitle">What the Routes Carry Besides Gold</p>
+      <div class="hero-meta">
+        <span class="hero-tag">Timbuktu, Mali Empire, c. 1355 CE</span>
+        <span class="hero-tag">AP Skill: CCOT</span>
+        <span class="hero-tag">LO-J &middot; LO-K</span>
+        <span class="hero-tag">KC-3.1.III.D &middot; KC-3.1.III.C &middot; KC-3.3.II &middot; KC-3.1.IV</span>
+      </div>
+      <p>You are Fatima al-Wazzani, senior scribe and intellectual advisor to the chief qadi of Sankore mosque-university. A delegation of scholars from Fez wants access to manuscripts that exist nowhere else in the world. Reports of a deadly plague moving along the trade routes have just reached the city. The qadi needs your counsel.</p>
+      <div><a class="btn" href="#scene">Enter the Room</a><a class="btn secondary" href="#decision">The Decision</a><a class="btn secondary" href="#evidence">Evidence</a><a class="btn secondary" href="#writing-task">Write Your Report</a></div>
+    </header>
+
+    <main>
+
+      <!-- STEP 1: SCENE -->
+      <section class="role-grid" id="scene">
+        <article class="role-card full">
+          <div class="stage-label">Step 1 &mdash; Enter the Room</div>
+          <h2>Historical Situation</h2>
+          <div class="narrative-text">
+            <p>The library holds more than 700,000 manuscripts. You know this because you catalogued a third of them yourself.</p>
+            <p>They arrived the way everything arrives in Timbuktu: along the routes. A scholar fleeing Baghdad with a cartload of texts after the Mongol sack. A merchant from Morocco who traded a crate of astronomical treatises for a season's lodging. A pilgrim who carried a copy of Ibn Battuta's travel account — still being circulated in handwritten copies from Tangier to Cairo — and left it at the Sankore mosque because he had no room for it on the return journey.</p>
+            <p>Timbuktu became a city of books the same way it became a city of gold: because it sits at the intersection of routes that carry things from everywhere to everywhere else.</p>
+            <p>You are Fatima al-Wazzani, senior scribe and intellectual advisor to the chief qadi of Sankore. The qadi has asked you to prepare a recommendation for a question that has become urgent: a delegation of scholars has arrived from Fez, in Morocco, with a specific request. They want access to the library's collection of Greek scientific texts — works on astronomy, medicine, and mathematics that were translated into Arabic centuries ago and exist in Timbuktu in copies found nowhere else in the Islamic world. The Fez scholars want to copy them, take them north, and incorporate them into the curriculum of Morocco's own universities.</p>
+            <p>The case for sharing is obvious: this is what scholars do. Knowledge travels.</p>
+            <p>But the chief qadi has concerns you understand. Three of those manuscripts are the only known copies. If they leave Timbuktu — even as copies — what stops the originals from becoming irrelevant? And there is something else, something darker: word has reached Timbuktu from the north that a new sickness is moving along the trade routes from Central Asia toward the Mediterranean. Travelers who arrived last month from Egypt reported that entire cities are falling silent. The Fez delegation has been on the road for two months.</p>
+            <p>The routes bring books. The routes also bring what the books cannot cure.</p>
+            <p><strong>What do you recommend to the qadi?</strong></p>
+          </div>
+        </article>
+      </section>
+
+      <!-- STEP 2: YOUR ROLE -->
+      <section class="role-grid" id="your-role">
+        <article class="role-card full">
+          <div class="stage-label">Step 2 &mdash; Your Role</div>
+          <h2>Fatima al-Wazzani, Senior Scribe and Intellectual Advisor to the Chief Qadi of Sankore</h2>
+          <div class="hero-meta" style="margin-bottom:14px">
+            <span class="tag">Twenty years in the library</span>
+            <span class="tag">Advisor to the qadi</span>
+            <span class="tag">Cataloguer of the collection</span>
+          </div>
+          <div class="role-context-box">
+            <p style="margin:0 0 10px">You have spent twenty years in this library. You know which manuscripts are irreplaceable and which exist in dozens of copies elsewhere. You know the names of the scholars who brought each collection to Timbuktu and what they traded to get here. You have read Ibn Battuta's account of his travels — the man himself passed through Timbuktu — and you understand, perhaps better than anyone, what the intensification of exchange networks across Afro-Eurasia has produced: a world where ideas can travel from Baghdad to Fez to Timbuktu in a single generation.</p>
+            <p style="margin:0"><strong>You also know what else travels.</strong></p>
+          </div>
+          <p style="margin:16px 0 6px">The qadi trusts your judgment on both the scholarly and the practical dimensions of this question. Your recommendation will shape Sankore's relationship with the Moroccan scholarly world for decades.</p>
+          <p style="margin:0 0 6px"><strong>Your constraints:</strong></p>
+          <ul class="constraint-list">
+            <li>The Fez scholars are legitimate — distinguished faculty from one of the great Islamic universities of North Africa. Insulting them has real diplomatic cost.</li>
+            <li>Three of the manuscripts in question are unique. If those originals are destroyed — fire, flood, theft — the copies going to Fez will be the only record of what they contained.</li>
+            <li>The plague reports are secondhand. You do not know with certainty how close it is. But the routes are faster than rumors.</li>
+            <li>Timbuktu's rise as an intellectual center was built on openness. The library has never turned away a legitimate scholar before.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- STEP 3: THE DECISION -->
+      <section class="role-grid" id="decision">
+        <article class="role-card full">
+          <div class="stage-label">Step 3 &mdash; The Decision</div>
+          <h2>What Does Fatima Recommend to the Qadi?</h2>
+          <p><strong>Should the Sankore library share its unique manuscript collection with the Fez scholars — or restrict access to protect Timbuktu's intellectual standing and, perhaps, its physical safety?</strong></p>
+          <p>A conditional middle path is acceptable — for example, allow copying but not access to the unique originals — but must be justified with evidence. Choose the position you can best defend.</p>
+          <div class="decision-pair">
+            <div class="decision-card" id="card-a" onclick="selectDecision('a')">
+              <h3>Position A — Share the Manuscripts</h3>
+              <p>The entire history of Timbuktu's rise as an intellectual center depends on the free movement of knowledge along trade routes. The Greek scientific texts arrived in Timbuktu because scholars carried them across borders. To refuse to share them is to deny the principle that made Sankore great.</p>
+              <p>Knowledge is not diminished by being copied — it multiplies. Sharing strengthens the Islamic scholarly world and confirms Timbuktu's role as its western anchor. The risk of plague is real but speculative; the opportunity to disseminate irreplaceable scholarship is concrete and present.</p>
+              <div class="evidence-anchor">Evidence: KC-3.1.III.D &middot; KC-3.1.III.C &middot; KC-3.3.II</div>
+            </div>
+            <div class="decision-card" id="card-b" onclick="selectDecision('b')">
+              <h3>Position B — Restrict Access</h3>
+              <p>The plague changes the calculation. The same routes that brought these manuscripts to Timbuktu are now carrying a pathogen that is reportedly emptying cities. The Fez scholars have been on the road for two months — they passed through regions where the sickness has been reported.</p>
+              <p>Admitting them to the library's inner collection, where scribes and scholars work in close quarters for weeks at a time, is a risk that Timbuktu cannot absorb. The manuscripts can be shared when the routes are safe again. The library's mission is to preserve knowledge <em>for</em> the Islamic world, not to endanger the city that houses it.</p>
+              <div class="evidence-anchor">Evidence: KC-3.1.IV &middot; KC-3.3.II &middot; KC-3.1.III.D</div>
+            </div>
+          </div>
+          <div class="selection-status" id="decision-status">No position selected yet. Click a card above to choose.</div>
+        </article>
+      </section>
+
+      <!-- STEP 4: EVIDENCE DOCUMENTS -->
+      <section class="role-grid" id="evidence">
+        <article class="role-card full">
+          <div class="stage-label">Step 4 &mdash; Read the Evidence</div>
+          <h2>Primary Source Documents</h2>
+          <p>Read all four documents. Your written report must cite evidence from <strong>at least two</strong>. Strong arguments name the source and explain why it supports your position — not just what it says.</p>
+          <div class="doc-grid">
+
+            <div class="doc-card">
+              <div class="doc-num">Document 1</div>
+              <h4>Ibn Battuta's Account of Timbuktu, c. 1352</h4>
+              <blockquote>
+                "I arrived in Timbuktu and found it a city of considerable size, the seat of a great qadi and scholars of distinction. The markets are excellent and the merchants numerous. The inhabitants are of an easy disposition and skilled in trade. Books are sold here at good prices — more profitable than any other goods. The city draws scholars from Morocco, Egypt, and the lands beyond the eastern sea. I have not seen a place in all my travels where learning and commerce are so entirely one thing."
+                <footer style="margin-top:8px;font-style:normal;font-size:.84rem;color:#666">— From Ibn Battuta's <em>Rihla</em> (Travels), circulated in manuscript form across the Islamic world</footer>
+              </blockquote>
+              <div class="doc-ap"><strong>AP Connection:</strong> KC-3.1.III.C — Ibn Battuta as an example of the increased travel writing that intensified exchange networks produced; KC-3.3.II — Timbuktu as an urban center buoyed by trade and knowledge exchange.</div>
+            </div>
+
+            <div class="doc-card">
+              <div class="doc-num">Document 2</div>
+              <h4>Letter from the Fez Delegation, Chief Scholar Ahmad ibn Khaldun al-Fassi</h4>
+              <blockquote>
+                "Honored Qadi, we arrive from the Qarawiyyin University in Fez with a single purpose. We have learned through our own scholars that Sankore holds three texts of Ptolemy and one of Galen translated into Arabic by scholars of Baghdad — texts that were thought lost when the Mongols burned the House of Wisdom in 1258. If these texts exist in Timbuktu, they must be shared with the Islamic world. We ask only for the right to copy them. We will work in whatever space you designate, for as long as you require. The knowledge belongs to all of us."
+                <footer style="margin-top:8px;font-style:normal;font-size:.84rem;color:#666">— Delivered to the Sankore qadi's office upon the delegation's arrival, c. 1355</footer>
+              </blockquote>
+              <div class="doc-ap"><strong>AP Connection:</strong> KC-3.1.III.D — diffusion of scientific and intellectual traditions across exchange networks; KC-3.1.III.C — scholars as a category of Afro-Eurasian traveler who intensified cultural exchange.</div>
+            </div>
+
+            <div class="doc-card">
+              <div class="doc-num">Document 3</div>
+              <h4>Report from a Timbuktu Merchant Returning from Egypt, c. 1354</h4>
+              <blockquote>
+                "I returned from Cairo three weeks ago by the northern route. In Egypt, the markets of Alexandria are quieter than I have ever seen them. Merchants from the Genoese quarter told me of a sickness spreading from the east — they call it the Black Death. It travels with the caravans. The rats, they say. I saw three trading vessels quarantined in the harbor at Tunis. I do not know how close it is to the Moroccan routes, but the Fez road passes through regions I would not travel today."
+                <footer style="margin-top:8px;font-style:normal;font-size:.84rem;color:#666">— Testimony recorded in the Sankore administrative files</footer>
+              </blockquote>
+              <div class="doc-ap"><strong>AP Connection:</strong> KC-3.1.IV — diffusion of pathogens along trade routes; bubonic plague as a consequence of the same connectivity that spread culture and knowledge.</div>
+            </div>
+
+            <div class="doc-card">
+              <div class="doc-num">Document 4</div>
+              <h4>Sankore Library Catalogue Entry, c. 1340</h4>
+              <blockquote>
+                "Current holdings include: 14,000 volumes in Arabic on law, theology, and Quranic interpretation; 3,200 volumes on history and geography; 890 volumes on mathematics, astronomy, and medicine, including three texts of Greek origin translated in Baghdad and not known to exist in any other library west of Cairo. These Greek texts were acquired through the estate of a scholar who fled Baghdad following the Mongol conquest of 1258 and died in Timbuktu in 1271. No copies exist outside this library."
+                <footer style="margin-top:8px;font-style:normal;font-size:.84rem;color:#666">— From the administrative records of the Sankore manuscript collection</footer>
+              </blockquote>
+              <div class="doc-ap"><strong>AP Connection:</strong> KC-3.1.III.D — knowledge diffusion as both a product of connectivity and a thing connectivity can threaten; KC-3.3.II — Timbuktu's rise as an intellectual urban center tied to the expansion of trade networks.</div>
+            </div>
+
+          </div>
+        </article>
+      </section>
+
+      <!-- STEP 5: WRITING TASK -->
+      <section class="role-grid" id="writing-task">
+        <article class="role-card full">
+          <div class="stage-label">Step 5 &mdash; Write Your Report</div>
+          <h2>Your Task: Advise the Qadi</h2>
+          <p>The qadi needs your recommendation before the Fez scholars grow impatient. Write your advisory response.</p>
+          <div class="task-requirements">
+            <p style="margin:0 0 6px"><strong>Your response should:</strong></p>
+            <ol>
+              <li><strong>State your position clearly</strong> — share the manuscripts, or restrict access? (A conditional middle path is acceptable but must be justified with evidence.)</li>
+              <li><strong>Explain what changed</strong> as Afro-Eurasian trade networks intensified after 1200. What is <em>new</em> about the intellectual and cultural world Timbuktu inhabits?</li>
+              <li><strong>Explain what stayed the same</strong> — what continuities remain even as the routes changed everything?</li>
+              <li><strong>Use specific evidence</strong> from at least two documents.</li>
+              <li><strong>Acknowledge the tension</strong> — the same routes that built Timbuktu's library may now threaten it. How does that tension shape your recommendation?</li>
+            </ol>
+            <div class="task-note">Target length: 150–250 words &bull; You have read Ibn Battuta. You understand the world these routes have built. Write like someone who knows both what was gained and what can be lost.</div>
+          </div>
+          <textarea class="response-area" id="report-response" placeholder="Honored Qadi, I write with my recommendation on the matter of the Fez delegation..." oninput="updateWordCount()"></textarea>
+          <div class="word-count" id="word-count">0 words &mdash; target: 150–250</div>
+          <div class="tool-row">
+            <button class="btn" onclick="saveDraft()">Save Draft</button>
+            <button class="btn secondary" onclick="buildCoachBlock()">Build MagicSchool Block</button>
+            <button class="btn secondary" onclick="openGoogleForm()">Submit to Google Form</button>
+          </div>
+          <div class="check-result" id="report-result"></div>
+        </article>
+      </section>
+
+      <!-- STEP 6: MAGICSCHOOL COACH -->
+      <section class="role-grid" id="ai-coach">
+        <article class="role-card full">
+          <div class="stage-label">Step 6 &mdash; AI Coach</div>
+          <h2>MagicSchool Coaching Prompt</h2>
+          <div class="coach-instructions">
+            <strong>How to use this tool:</strong> Click <em>Build MagicSchool Block</em> above to insert your response into the prompt below. Then click <em>Copy Prompt</em> and paste it into the MagicSchool BeInTheRoom Historical Thinking Coach. The coach will ask you one question at a time — it will not write your response for you.
+          </div>
+          <div class="tool-row" style="margin-top:0;margin-bottom:12px">
+            <button class="btn" onclick="buildCoachBlock()">Build MagicSchool Block</button>
+            <button class="btn secondary" onclick="copyCoachBlock()">Copy Prompt</button>
+            <a class="btn secondary" href="#" target="_blank" rel="noopener" id="magicschool-link">Open MagicSchool</a>
+          </div>
+          <div class="coach-prompt-box" id="coach-output">Click "Build MagicSchool Block" after writing your response — your text will be inserted into the coaching prompt automatically.</div>
+          <div class="check-result" id="coach-result"></div>
+        </article>
+      </section>
+
+      <!-- STEP 7: SUBMIT & AP SKILL -->
+      <section class="role-grid" id="submit">
+        <article class="role-card two-thirds canvas-box">
+          <h3>Submit Your Report</h3>
+          <p>After revising with the AI coach, submit your final response in the Google Form and in Canvas.</p>
+          <div class="tool-row">
+            <button class="btn" onclick="openGoogleForm()">Open Google Form</button>
+          </div>
+          <p style="margin-top:14px;font-size:.9rem;color:rgba(245,240,231,.75)"><strong>Canvas title:</strong> Topic 2.5 BeInTheRoom — The Scholars of Timbuktu</p>
+        </article>
+        <article class="role-card third">
+          <div class="stage-label">AP Alignment</div>
+          <h3>Continuity &amp; Change Over Time</h3>
+          <div class="ap-skill-box">
+            <p style="margin:0 0 8px"><strong>AP Skill Prompt:</strong></p>
+            <p style="margin:0 0 10px;font-size:.93rem">Using evidence from Timbuktu and the broader Afro-Eurasian network, explain what <strong>changed</strong> and what <strong>stayed the same</strong> as networks of exchange intensified after 1200. Then take a position on the decision before you.</p>
+            <p style="margin:0 0 6px"><strong>Key Concepts:</strong></p>
+            <ul class="kc-list">
+              <li>KC-3.1.III.D</li>
+              <li>KC-3.1.III.C</li>
+              <li>KC-3.3.II</li>
+              <li>KC-3.1.IV</li>
+            </ul>
+            <p style="margin:10px 0 4px"><strong>Learning Objectives:</strong> J, K</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- SCORING GUIDE (teacher-facing, hidden in print) -->
+      <section class="role-grid">
+        <article class="role-card full scoring-guide">
+          <h2>Scoring Guide — Instructor Reference Only</h2>
+          <p style="color:rgba(245,240,231,.7);font-size:.9rem;margin:0 0 4px">Not visible to students in print. Hidden from print via CSS.</p>
+          <table class="scoring-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Strong</th>
+                <th>Developing</th>
+                <th>Missing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Position</td>
+                <td>Clear recommendation with rationale</td>
+                <td>Position stated but underdeveloped</td>
+                <td>No position taken</td>
+              </tr>
+              <tr>
+                <td>Change</td>
+                <td>Specific change in intellectual/cultural landscape named and explained with evidence</td>
+                <td>Change mentioned but undeveloped</td>
+                <td>No change analysis</td>
+              </tr>
+              <tr>
+                <td>Continuity</td>
+                <td>Specific continuity identified and linked to evidence</td>
+                <td>Continuity mentioned but undeveloped</td>
+                <td>No continuity analysis</td>
+              </tr>
+              <tr>
+                <td>Evidence</td>
+                <td>Specific evidence from two or more documents, named and applied</td>
+                <td>One document referenced; vague or paraphrase only</td>
+                <td>No document evidence</td>
+              </tr>
+              <tr>
+                <td>Tension Acknowledged</td>
+                <td>Student engages explicitly with the double-edged nature of connectivity</td>
+                <td>Tension mentioned but not analyzed</td>
+                <td>No tension acknowledged</td>
+              </tr>
+              <tr>
+                <td>Role Perspective</td>
+                <td>Response framed from Fatima's perspective with awareness of scholarly stakes</td>
+                <td>Some role awareness</td>
+                <td>No role engagement</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="terms-box">
+            <h4>Evidence Terms for Response Analyzer</h4>
+            <p><strong>Cultural diffusion:</strong> manuscript, text, scholar, knowledge, library, Islam, Greek, translation, spread, diffusion</p>
+            <p><strong>Travel writing:</strong> Ibn Battuta, traveler, account, rihla, observation, record</p>
+            <p><strong>Urban:</strong> Timbuktu, Sankore, city, mosque, university, market, urbanization</p>
+            <p><strong>Plague/pathogen:</strong> plague, sickness, Black Death, pathogen, disease, contagion, route, caravan</p>
+            <p><strong>CCOT markers:</strong> changed, remained, continued, persisted, new, transformed, same, while, however, still</p>
+            <p><strong>Trade network:</strong> routes, exchange, connectivity, network, Afro-Eurasian, Mediterranean, Morocco, Egypt</p>
+          </div>
+        </article>
+      </section>
+
+    </main>
+  </div>
+
+<script>
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+2&entry.187055090=Topic+2.5&entry.1549761827=2.5-beintheroom&entry.2107637366=BeInTheRoom&entry.1963461515=CCOT';
+const STORAGE_KEY = 'beintheroom-timbuktu-scholars';
+
+const BASE_COACH_PROMPT = `I am working on a BeInTheRoom scenario set in Timbuktu, Mali, around 1355 CE. I am playing Fatima al-Wazzani, a senior scribe and advisor to the chief qadi of Sankore mosque-university. A delegation of scholars from Fez, Morocco has arrived asking to copy rare Greek scientific manuscripts that exist nowhere else in the world. At the same time, reports of a deadly plague spreading along the trade routes from the east have just reached the city. I need to advise the qadi on whether to grant access to the manuscripts.
+
+Here is my response so far:
+
+[STUDENT RESPONSE]
+
+Please help me strengthen my historical thinking. Ask me one question at a time. Do not write my response for me.`;
+
+let selectedPosition = '';
+
+function selectDecision(pos) {
+  selectedPosition = pos;
+  document.getElementById('card-a').classList.toggle('selected', pos === 'a');
+  document.getElementById('card-b').classList.toggle('selected', pos === 'b');
+  const label = pos === 'a'
+    ? 'Position A selected: Share the Manuscripts'
+    : 'Position B selected: Restrict Access';
+  const statusEl = document.getElementById('decision-status');
+  statusEl.textContent = label;
+  statusEl.classList.add('has-selection');
+  saveState();
+}
+
+function updateWordCount() {
+  const text = (document.getElementById('report-response').value || '').trim();
+  const words = text ? text.split(/\s+/).filter(Boolean).length : 0;
+  const el = document.getElementById('word-count');
+  el.textContent = `${words} word${words !== 1 ? 's' : ''} — target: 150–250`;
+  el.className = 'word-count' + (words >= 150 && words <= 250 ? ' in-range' : words > 250 ? ' over-range' : '');
+  saveState();
+}
+
+function buildCoachBlock() {
+  const response = (document.getElementById('report-response').value || '').trim();
+  const inserted = response || '[No response written yet — write your report first, then build this block.]';
+  const prompt = BASE_COACH_PROMPT.replace('[STUDENT RESPONSE]', inserted);
+  document.getElementById('coach-output').textContent = prompt;
+  document.getElementById('coach-result').textContent = response
+    ? 'Coach block built. Click "Copy Prompt" and paste into MagicSchool.'
+    : 'Write your response first for the best coaching experience.';
+}
+
+function copyCoachBlock() {
+  const text = document.getElementById('coach-output').textContent;
+  if (!text || text.startsWith('Click')) { document.getElementById('coach-result').textContent = 'Build the block first.'; return; }
+  navigator.clipboard.writeText(text)
+    .then(() => document.getElementById('coach-result').textContent = 'Prompt copied! Paste it into MagicSchool.')
+    .catch(() => document.getElementById('coach-result').textContent = 'Copy failed. Select the text above and copy manually.');
+}
+
+function saveDraft() {
+  const val = document.getElementById('report-response').value || '';
+  localStorage.setItem(STORAGE_KEY + '-draft', val);
+  document.getElementById('report-result').textContent = 'Draft saved on this device.';
+  saveState();
+}
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY + '-state', JSON.stringify({
+      selectedPosition,
+      response: document.getElementById('report-response').value || ''
+    }));
+  } catch(e) {}
+}
+
+function loadState() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY + '-state') || '{}');
+    if (saved.selectedPosition) selectDecision(saved.selectedPosition);
+    const draft = localStorage.getItem(STORAGE_KEY + '-draft') || saved.response || '';
+    if (draft) {
+      document.getElementById('report-response').value = draft;
+      updateWordCount();
+    }
+  } catch(e) {}
+}
+
+function openGoogleForm() {
+  window.open(GOOGLE_FORM_URL, '_blank', 'noopener');
+}
+
+document.addEventListener('input', e => {
+  if (e.target && e.target.id === 'report-response') updateWordCount();
+});
+
+loadState();
+</script>
+</body>
+</html>
