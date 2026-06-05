@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeInTheRoom | The Salt Road at Taghaza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/behistorical.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <style>
+    :root{--focus-ring:0 0 0 4px rgba(201,164,106,.35)}
+    .role-shell{max-width:1180px;margin:0 auto;padding:24px}
+    .role-hero{background:linear-gradient(160deg,rgba(26,28,29,.96) 0%,rgba(43,47,49,.98) 100%);border-radius:28px;padding:48px 36px 42px;color:var(--warm-paper);box-shadow:var(--soft-shadow);border:1px solid rgba(201,164,106,.35)}
+    .role-hero .eyebrow{font-family:"Montserrat",Arial,sans-serif;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.18em;color:var(--antique-gold);margin-bottom:10px}
+    .role-hero h1{font-family:"Cinzel",Georgia,serif;color:var(--antique-gold);font-size:clamp(2.4rem,6vw,5.2rem);line-height:1;margin:6px 0 4px}
+    .role-hero .subtitle{font-family:"Cinzel",Georgia,serif;color:rgba(245,240,231,.7);font-size:clamp(1rem,2.4vw,1.45rem);font-style:italic;margin:0 0 18px}
+    .role-hero p{max-width:880px;font-size:1.04rem;line-height:1.65;margin:0 0 24px;color:rgba(245,240,231,.88)}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+    .hero-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(201,164,106,.14);border:1px solid rgba(201,164,106,.3);border-radius:999px;padding:5px 12px;font-family:"Montserrat",Arial,sans-serif;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--antique-gold)}
+    .role-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin:24px 0}
+    .role-card{grid-column:span 6;background:var(--clean-paper);border:1px solid var(--paper-line);border-radius:20px;padding:26px;box-shadow:var(--soft-shadow)}
+    .role-card.full{grid-column:1/-1}
+    .role-card.half{grid-column:span 6}
+    .role-card.third{grid-column:span 4}
+    .role-card.two-thirds{grid-column:span 8}
+    .role-card h2,.role-card h3{font-family:"Cinzel",Georgia,serif;color:var(--blackened-steel);margin-top:0}
+    .role-card h3{font-size:1.08rem}
+    .stage-label{font-family:"Montserrat",Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.14em;color:var(--burnished-bronze);font-size:.7rem;margin-bottom:8px}
+    .tag{display:inline-flex;border-radius:999px;background:#f1e6d3;color:var(--oxidized-brown);padding:5px 10px;font-family:"Montserrat",Arial,sans-serif;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin:3px 4px 3px 0}
+    .tag.blue{background:#e8f0fe;color:#1a56db}
+    .tag.green{background:#e6f4ea;color:#1a7340}
+
+    /* Scene narrative */
+    .narrative-text{font-size:1.04rem;line-height:1.75;color:var(--ink)}
+    .narrative-text p{margin:0 0 1.1em}
+    .narrative-text p:last-child{margin:0}
+
+    /* Role context box */
+    .role-context-box{background:#faf5ec;border-left:6px solid var(--antique-gold);border-radius:0 16px 16px 0;padding:18px 20px;margin:14px 0 0;line-height:1.65;font-size:1rem}
+    .constraint-list{margin:10px 0 0;padding-left:0;list-style:none}
+    .constraint-list li{position:relative;padding:8px 0 8px 22px;border-bottom:1px solid rgba(26,28,29,.08);font-size:.97rem;line-height:1.55}
+    .constraint-list li:last-child{border-bottom:none}
+    .constraint-list li::before{content:"▸";position:absolute;left:0;color:var(--antique-gold);font-size:.9rem;top:9px}
+
+    /* Decision cards */
+    .decision-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+    .decision-card{background:var(--clean-paper);border:2px solid var(--paper-line);border-top:6px solid var(--aged-iron);border-radius:18px;padding:22px;cursor:pointer;transition:.2s ease}
+    .decision-card:hover{border-top-color:var(--antique-gold);box-shadow:0 12px 40px rgba(0,0,0,.12);transform:translateY(-2px)}
+    .decision-card.selected{border-color:var(--antique-gold);border-top-color:var(--antique-gold);background:#fffdf5;box-shadow:0 12px 40px rgba(0,0,0,.15);transform:translateY(-2px)}
+    .decision-card h3{font-family:"Cinzel",Georgia,serif;font-size:1rem;margin:0 0 8px;color:var(--blackened-steel)}
+    .decision-card p{font-size:.94rem;line-height:1.55;margin:0 0 10px;color:#444}
+    .decision-card .evidence-anchor{font-family:"Montserrat",Arial,sans-serif;font-size:.7rem;font-weight:700;color:var(--burnished-bronze);text-transform:uppercase;letter-spacing:.08em}
+    .selection-status{font-family:"Montserrat",Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--oxidized-brown);font-size:.78rem;margin-top:14px;padding:10px 14px;background:#f7efe3;border-radius:10px}
+    .selection-status.has-selection{background:#f0f7ec;color:#1a7340}
+
+    /* Evidence documents */
+    .doc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+    .doc-card{background:#faf5ec;border:1px solid rgba(107,62,31,.16);border-radius:16px;padding:20px;position:relative}
+    .doc-card::before{position:absolute;top:14px;right:16px;font-family:"Montserrat",Arial,sans-serif;font-size:.64rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:rgba(140,90,43,.5)}
+    .doc-num{font-family:"Montserrat",Arial,sans-serif;font-size:.65rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:var(--burnished-bronze);margin-bottom:5px}
+    .doc-card h4{font-family:"Cinzel",Georgia,serif;font-size:.97rem;margin:0 0 10px;color:var(--blackened-steel)}
+    .doc-card blockquote{font-style:italic;font-size:.93rem;line-height:1.65;margin:0 0 10px;padding:0 0 0 14px;border-left:3px solid var(--antique-gold);color:#333}
+    .doc-ap{font-family:"Montserrat",Arial,sans-serif;font-size:.7rem;font-weight:700;color:var(--burnished-bronze);margin-top:8px;line-height:1.45}
+
+    /* Writing task */
+    .task-requirements{background:#f7efe3;border-radius:14px;padding:16px 18px;margin:14px 0;font-size:.96rem;line-height:1.65}
+    .task-requirements ol{margin:8px 0 0;padding-left:20px}
+    .task-requirements li{margin-bottom:6px}
+    .task-requirements li:last-child{margin:0}
+    .task-note{font-family:"Montserrat",Arial,sans-serif;font-size:.78rem;font-weight:700;color:var(--oxidized-brown);text-transform:uppercase;letter-spacing:.08em;margin-top:10px}
+    .response-area{min-height:200px;width:100%;border:1px solid rgba(26,28,29,.18);border-radius:14px;padding:16px;font-family:"Libre Baskerville",Georgia,serif;font-size:.98rem;line-height:1.7;background:#fffdf7;resize:vertical}
+    .response-area:focus{outline:none;box-shadow:var(--focus-ring);border-color:var(--antique-gold)}
+    .word-count{font-family:"Montserrat",Arial,sans-serif;font-size:.75rem;font-weight:700;color:var(--aged-iron);margin-top:6px}
+    .word-count.in-range{color:#1a7340}
+    .word-count.over-range{color:#c0392b}
+    .tool-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;align-items:center}
+    .check-result{font-family:"Montserrat",Arial,sans-serif;font-size:.76rem;font-weight:700;color:var(--burnished-bronze);margin-top:8px;min-height:1.2em}
+
+    /* Coach section */
+    .coach-prompt-box{white-space:pre-wrap;background:#151718;color:#f5f0e7;border-radius:16px;border:1px solid rgba(201,164,106,.35);padding:18px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.84rem;line-height:1.55;max-height:400px;overflow:auto;margin-top:12px}
+    .coach-instructions{background:#f6efe3;border-left:6px solid var(--burnished-bronze);border-radius:0 14px 14px 0;padding:14px 18px;font-size:.96rem;line-height:1.6;margin-bottom:14px}
+
+    /* Submission / AP section */
+    .canvas-box{background:linear-gradient(160deg,var(--blackened-steel),var(--charcoal-steel));color:var(--warm-paper);border-radius:20px;padding:24px;border:1px solid rgba(201,164,106,.35)}
+    .canvas-box h3{font-family:"Cinzel",Georgia,serif;color:var(--antique-gold);margin-top:0}
+    .ap-skill-box{background:#f7efe3;border-radius:14px;padding:16px 18px;margin-top:12px;font-size:.95rem;line-height:1.6}
+    .ap-skill-box strong{color:var(--oxidized-brown)}
+    .kc-list{margin:8px 0 0;padding-left:18px;font-size:.9rem}
+    .kc-list li{margin-bottom:4px}
+
+    /* Scoring guide — teacher only, hidden from print */
+    .scoring-guide{background:linear-gradient(180deg,#1A1C1D,#2B2F31);border:1px solid rgba(201,164,106,.25);border-radius:20px;padding:24px;color:var(--warm-paper)}
+    .scoring-guide h2{font-family:"Cinzel",Georgia,serif;color:var(--antique-gold);margin-top:0;font-size:1.2rem}
+    .scoring-table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:14px}
+    .scoring-table th{text-align:left;font-family:"Montserrat",Arial,sans-serif;font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--antique-gold);padding:8px 10px;border-bottom:1px solid rgba(201,164,106,.3)}
+    .scoring-table td{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.07);vertical-align:top;line-height:1.45;color:rgba(245,240,231,.9)}
+    .scoring-table tr:last-child td{border-bottom:none}
+    .scoring-table td:first-child{font-family:"Montserrat",Arial,sans-serif;font-weight:700;font-size:.78rem;color:var(--antique-gold)}
+    .terms-box{background:rgba(255,253,247,.06);border:1px solid rgba(201,164,106,.2);border-radius:12px;padding:14px 16px;margin-top:14px;font-size:.88rem;line-height:1.6}
+    .terms-box h4{font-family:"Montserrat",Arial,sans-serif;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--antique-gold);margin:0 0 8px}
+    .terms-box p{margin:4px 0;color:rgba(245,240,231,.8)}
+    .terms-box strong{color:rgba(245,240,231,.95)}
+
+    @media(max-width:900px){
+      .role-card,.role-card.half,.role-card.third,.role-card.two-thirds{grid-column:1/-1}
+      .role-shell{padding:12px}
+      .decision-pair,.doc-grid{grid-template-columns:1fr}
+      .role-hero{padding:32px 20px 28px}
+    }
+    @media print{.scoring-guide{display:none}}
+  </style>
+</head>
+<body>
+  <div class="role-shell">
+
+    <nav class="topbar">
+      <div class="nav">
+        <a class="brand-mini" href="../../index.html">
+          <img src="../../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo">
+          <span>BeHistorical</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html">BeInTheRoom Hub</a>
+          <a href="../../unit-2/lesson-2-4-trans-saharan-trade.html">Back to 2.4</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="role-hero">
+      <div class="eyebrow">BeInTheRoom &middot; Unit 2 &middot; Topic 2.4</div>
+      <h1>The Salt Road at Taghaza</h1>
+      <p class="subtitle">Nothing Crosses the Sahara Without Permission</p>
+      <div class="hero-meta">
+        <span class="hero-tag">Mali Empire, c. 1330 CE</span>
+        <span class="hero-tag">AP Skill: Causation</span>
+        <span class="hero-tag">LO-H &middot; LO-I</span>
+        <span class="hero-tag">KC-3.1.II.A.ii &middot; KC-3.1.I.A.iv &middot; KC-3.1.I.E.ii</span>
+      </div>
+      <p>You are Kofi Diabaté, Regional Governor of Mali's northern trade routes, riding into Taghaza to advise the emperor. Mansa Musa is waiting. The salt is waiting. The decision cannot wait much longer.</p>
+      <div><a class="btn" href="#scene">Enter the Room</a><a class="btn secondary" href="#decision">The Decision</a><a class="btn secondary" href="#evidence">Evidence</a><a class="btn secondary" href="#writing-task">Write Your Report</a></div>
+    </header>
+
+    <main>
+
+      <!-- STEP 1: SCENE -->
+      <section class="role-grid" id="scene">
+        <article class="role-card full">
+          <div class="stage-label">Step 1 &mdash; Enter the Room</div>
+          <h2>Historical Situation</h2>
+          <div class="narrative-text">
+            <p>The salt blocks are cut in slabs the size of a door and stacked in the shade of the mine walls while men who have never seen a river pour water rationed from goatskins and wait for the caravan to form.</p>
+            <p>Taghaza is not a pleasant place. The houses are built of salt. The mosque is built of salt. The bread comes from a thousand miles away. But the salt itself — white, crystalline, dense — is worth its weight in gold in the markets of the south. Literally. In Timbuktu, the exchange rate is one slab of Taghaza salt for one measure of gold dust. The empire runs on this transaction.</p>
+            <p>You are Kofi Diabaté, regional governor of Mali's northern trade routes, and you have ridden three days from Timbuktu to be here. Mansa Musa sent you — the emperor who has made Mali the envy of the known world, whose pilgrimage to Mecca two years ago reportedly distributed so much gold in Cairo that the Egyptian gold market is still recovering. He wants a report and a recommendation.</p>
+            <p>The problem is a proposal that has been sitting on your desk since last month. A Tuareg caravan master named Ag Amayas controls three of the largest camel trains operating between Taghaza and the Niger River. He has come to you with a petition: Mali should fund the construction of two new caravanserai stations — rest stops with water, shade, and guards — on the stretches of the route that currently have none. The investment would reduce caravan losses by an estimated third and bring more caravans through the Malian-controlled corridor.</p>
+            <p>But the treasurer in Timbuktu has raised a counterargument: the existing waypoints are already profitable and the marginal return on deep-desert infrastructure is uncertain. That money could be spent expanding the markets at Timbuktu itself — deepening the city's role as a hub rather than extending the tentacles of the route.</p>
+            <p>Mansa Musa is watching. The trade is watching. The Tuareg caravan masters, who could choose routes that bypass Malian waypoints entirely, are watching.</p>
+            <p><strong>What do you recommend?</strong></p>
+          </div>
+        </article>
+      </section>
+
+      <!-- STEP 2: YOUR ROLE -->
+      <section class="role-grid" id="your-role">
+        <article class="role-card full">
+          <div class="stage-label">Step 2 &mdash; Your Role</div>
+          <h2>Kofi Diabaté, Regional Governor of Mali's Northern Trade Routes</h2>
+          <div class="hero-meta" style="margin-bottom:14px">
+            <span class="tag">Appointed by Mansa Musa</span>
+            <span class="tag">Authority over northern corridors</span>
+            <span class="tag">Reports directly to the Emperor</span>
+          </div>
+          <div class="role-context-box">
+            <p style="margin:0 0 10px">You were appointed by Mansa Musa himself — the man whose pilgrimage to Mecca in 1324–25 reportedly caused inflation in Egypt's gold markets by flooding Cairo with gold gifts. You have traveled the route between Taghaza and Timbuktu more times than you can count. You know the desert's rhythms: where the wells are reliable, where the sands shift, which Tuareg clans are trustworthy and which are not.</p>
+            <p style="margin:0 0 10px"><strong>Your job is to keep the gold and salt flowing.</strong> Mali's treasury, its military, and its reputation all depend on the Trans-Saharan routes remaining in Malian hands.</p>
+          </div>
+          <p style="margin:16px 0 6px"><strong>Your constraints:</strong></p>
+          <ul class="constraint-list">
+            <li>Mansa Musa needs a recommendation, not a delay. He is building his legacy and he wants infrastructure that matches his reputation.</li>
+            <li>The Tuareg caravan masters are not subjects of Mali — they are contractors. If the route through Malian waypoints becomes more dangerous or less profitable than alternatives, they will find another path.</li>
+            <li>The Timbuktu treasurer's objection is not wrong: the city's scholars, markets, and banking infrastructure generate enormous soft power. Timbuktu is already changing the culture of West Africa.</li>
+            <li>The camel saddle innovation that made long-distance desert trade viable is less than a century old in its improved form. The infrastructure of the routes is still being built. You are in the middle of creating something that does not yet have a final shape.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- STEP 3: THE DECISION -->
+      <section class="role-grid" id="decision">
+        <article class="role-card full">
+          <div class="stage-label">Step 3 &mdash; The Decision</div>
+          <h2>What Does Governor Diabaté Recommend?</h2>
+          <p><strong>Should you recommend that Mali invest in extending caravanserai infrastructure into the deep desert — or concentrate resources on developing Timbuktu as a deeper trade hub?</strong></p>
+          <p>Each position has real historical logic. Choose the one you can best defend with evidence from the documents below.</p>
+          <div class="decision-pair">
+            <div class="decision-card" id="card-a" onclick="selectDecision('a')">
+              <h3>Position A — Extend the Caravanserai Infrastructure</h3>
+              <p>The Trans-Saharan routes only work because of infrastructure — caravanserai, water sources, guards, and reliable waypoints. Every stretch of desert that lacks a caravanserai is a risk that drives merchants toward alternative routes. Mali's power depends on being <em>indispensable</em> to the physical movement of goods.</p>
+              <p>Ag Amayas estimates caravan losses could drop by a third. Fewer losses means more goods arriving, more gold flowing north, more volume at Timbuktu. The investment extends the empire's reach and draws new merchants into Mali's economic orbit.</p>
+              <div class="evidence-anchor">Evidence: KC-3.1.II.A.ii &middot; KC-3.1.I.A.iv &middot; KC-3.1.I.E.ii</div>
+            </div>
+            <div class="decision-card" id="card-b" onclick="selectDecision('b')">
+              <h3>Position B — Concentrate Investment at Timbuktu</h3>
+              <p>Timbuktu is already the greatest city on the Trans-Saharan routes. It functions as a market, a religious center, and a banking hub. The value of Timbuktu is not just in moving goods through it — it is in what happens when goods <em>arrive</em>.</p>
+              <p>Deep-desert caravanserai is expensive to build, expensive to maintain, and always vulnerable to raids and sandstorms. Concentrate the empire's wealth where it is already compounding: in the city.</p>
+              <div class="evidence-anchor">Evidence: KC-3.1.I.E.ii &middot; KC-3.1.I.A.iv</div>
+            </div>
+          </div>
+          <div class="selection-status" id="decision-status">No position selected yet. Click a card above to choose.</div>
+        </article>
+      </section>
+
+      <!-- STEP 4: EVIDENCE DOCUMENTS -->
+      <section class="role-grid" id="evidence">
+        <article class="role-card full">
+          <div class="stage-label">Step 4 &mdash; Read the Evidence</div>
+          <h2>Primary Source Documents</h2>
+          <p>Read all four documents. Your written report must cite evidence from <strong>at least two</strong>. Strong arguments name the source and explain why it supports your position — not just what it says.</p>
+          <div class="doc-grid">
+
+            <div class="doc-card">
+              <div class="doc-num">Document 1</div>
+              <h4>Report from Ag Amayas, Tuareg Caravan Master</h4>
+              <blockquote>
+                "Honored Governor. I speak for the caravan masters who move salt, gold, ivory, and cloth across the northern routes. In the past two seasons, we have lost eleven camels and four men on the stretch between the third waypoint and Taghaza — a distance of nine days with no water or shelter. The new camel saddle design allows for heavier loads, but heavier loads require more reliable staging points. If Mali builds two stations on this stretch, I estimate losses will fall by a third and volume will increase accordingly. Without them, I cannot guarantee my caravans will continue to use this corridor."
+                <footer style="margin-top:8px;font-style:normal;font-size:.84rem;color:#666">— Delivered to the governor's office, Timbuktu, c. 1330</footer>
+              </blockquote>
+              <div class="doc-ap"><strong>AP Connection:</strong> KC-3.1.II.A.ii — innovation in transportation technology (improved camel saddle) requiring complementary infrastructure; KC-3.1.I.A.iv — improved commercial practices expanding trade route range.</div>
+            </div>
+
+            <div class="doc-card">
+              <div class="doc-num">Document 2</div>
+              <h4>Letter from the Timbuktu Treasury</h4>
+              <blockquote>
+                "Governor, the proposed caravanserai investment is estimated at 4,000 gold mithqals for construction and 800 per year for maintenance and guards. We note that the same investment, directed at expanding Timbuktu's western market district, would accommodate forty additional merchant stalls, two additional caravanserai lodges within the city, and a new warehouse block. Timbuktu's position as the terminus of the northern route is the source of our advantage — not the desert itself. We recommend prioritizing depth over extension."
+                <footer style="margin-top:8px;font-style:normal;font-size:.84rem;color:#666">— Sent to Governor Diabaté in advance of the Taghaza inspection</footer>
+              </blockquote>
+              <div class="doc-ap"><strong>AP Connection:</strong> KC-3.1.I.E.ii — Mali's urban centers as the mechanism by which imperial expansion draws new merchants into trade networks.</div>
+            </div>
+
+            <div class="doc-card">
+              <div class="doc-num">Document 3</div>
+              <h4>Account of a Moroccan Traveler, c. 1320</h4>
+              <blockquote>
+                "The people of Mali have made the road from the north more reliable than it was even thirty years ago. There are stations now where a caravan may rest, water its animals, and trade small goods. The governor's agents collect a toll at each station — modest, but consistent. I met merchants from Morocco, Egypt, and even one man who claimed to have come from a land beyond the eastern sea. All of them passed through Timbuktu. The city feeds on the route as a river feeds on its tributaries."
+                <footer style="margin-top:8px;font-style:normal;font-size:.84rem;color:#666">— Excerpt from a travel narrative, cited in later Timbuktu scholarship</footer>
+              </blockquote>
+              <div class="doc-ap"><strong>AP Connection:</strong> KC-3.1.I.E.ii — Mali's imperial expansion drawing new people into Afro-Eurasian trade networks; KC-3.1.I.A.iv — expanded commercial practices increasing trade volume.</div>
+            </div>
+
+            <div class="doc-card">
+              <div class="doc-num">Document 4</div>
+              <h4>Imperial Decree on Trade Route Security, Mansa Musa, c. 1325</h4>
+              <blockquote>
+                "Let it be known that the trade routes of Mali are the veins of the empire. Any caravan operating within Mali's territory travels under the emperor's protection. Any raid upon a caravan is a raid upon the emperor himself. The routes shall be extended, maintained, and defended at the emperor's expense, that all merchants — Malian, Moroccan, Egyptian, and beyond — shall know that Mali's roads are safe."
+                <footer style="margin-top:8px;font-style:normal;font-size:.84rem;color:#666">— Referenced in court records, Timbuktu, following the emperor's return from pilgrimage</footer>
+              </blockquote>
+              <div class="doc-ap"><strong>AP Connection:</strong> KC-3.1.I.E.ii — explicit statement of imperial investment in trade infrastructure as a mechanism of Afro-Eurasian connectivity; KC-3.1.I.A.iv — imperial commercial practices expanding trade network reach.</div>
+            </div>
+
+          </div>
+        </article>
+      </section>
+
+      <!-- STEP 5: WRITING TASK -->
+      <section class="role-grid" id="writing-task">
+        <article class="role-card full">
+          <div class="stage-label">Step 5 &mdash; Write Your Report</div>
+          <h2>Your Task: Report to the Emperor</h2>
+          <p>Mansa Musa is waiting for your recommendation. Write your report to the emperor.</p>
+          <div class="task-requirements">
+            <p style="margin:0 0 6px"><strong>Your response should:</strong></p>
+            <ol>
+              <li><strong>State your position clearly</strong> — extend the deep-desert caravanserai infrastructure, or concentrate investment at Timbuktu?</li>
+              <li><strong>Explain at least two causes</strong> of Trans-Saharan trade growth that make this decision significant. What forces made the desert crossable — and what forces keep it profitable?</li>
+              <li><strong>Identify at least one effect</strong> of Trans-Saharan trade growth on Mali or on Afro-Eurasian connections. What has this network already produced?</li>
+              <li><strong>Use specific evidence</strong> from at least two documents.</li>
+              <li><strong>Acknowledge the tradeoff</strong> — what does Mali give up with your recommendation?</li>
+            </ol>
+            <div class="task-note">Target length: 150–250 words &bull; Remember: you are a Malian governor writing to the most powerful ruler in West Africa. Be direct. Be specific. The emperor has already seen the world — he does not need to be flattered.</div>
+          </div>
+          <textarea class="response-area" id="report-response" placeholder="Your Excellency, Mansa Musa, Emperor of Mali — I write from Taghaza with my recommendation..." oninput="updateWordCount()"></textarea>
+          <div class="word-count" id="word-count">0 words &mdash; target: 150–250</div>
+          <div class="tool-row">
+            <button class="btn" onclick="saveDraft()">Save Draft</button>
+            <button class="btn secondary" onclick="buildCoachBlock()">Build MagicSchool Block</button>
+            <button class="btn secondary" onclick="openGoogleForm()">Submit to Google Form</button>
+          </div>
+          <div class="check-result" id="report-result"></div>
+        </article>
+      </section>
+
+      <!-- STEP 6: MAGICSCHOOL COACH -->
+      <section class="role-grid" id="ai-coach">
+        <article class="role-card full">
+          <div class="stage-label">Step 6 &mdash; AI Coach</div>
+          <h2>MagicSchool Coaching Prompt</h2>
+          <div class="coach-instructions">
+            <strong>How to use this tool:</strong> Click <em>Build MagicSchool Block</em> above to insert your response into the prompt below. Then click <em>Copy Prompt</em> and paste it into the MagicSchool BeInTheRoom Historical Thinking Coach. The coach will ask you one question at a time — it will not write your response for you.
+          </div>
+          <div class="tool-row" style="margin-top:0;margin-bottom:12px">
+            <button class="btn" onclick="buildCoachBlock()">Build MagicSchool Block</button>
+            <button class="btn secondary" onclick="copyCoachBlock()">Copy Prompt</button>
+            <a class="btn secondary" href="#" target="_blank" rel="noopener" id="magicschool-link">Open MagicSchool</a>
+          </div>
+          <div class="coach-prompt-box" id="coach-output">Click "Build MagicSchool Block" after writing your response — your text will be inserted into the coaching prompt automatically.</div>
+          <div class="check-result" id="coach-result"></div>
+        </article>
+      </section>
+
+      <!-- STEP 7: SUBMIT & AP SKILL -->
+      <section class="role-grid" id="submit">
+        <article class="role-card two-thirds canvas-box">
+          <h3>Submit Your Report</h3>
+          <p>After revising with the AI coach, submit your final response in the Google Form and in Canvas.</p>
+          <div class="tool-row">
+            <button class="btn" onclick="openGoogleForm()">Open Google Form</button>
+          </div>
+          <p style="margin-top:14px;font-size:.9rem;color:rgba(245,240,231,.75)"><strong>Canvas title:</strong> Topic 2.4 BeInTheRoom — The Salt Road at Taghaza</p>
+        </article>
+        <article class="role-card third">
+          <div class="stage-label">AP Alignment</div>
+          <h3>Causation</h3>
+          <div class="ap-skill-box">
+            <p style="margin:0 0 8px"><strong>AP Skill Prompt:</strong></p>
+            <p style="margin:0 0 10px;font-size:.93rem">Using evidence from the Trans-Saharan trade network, explain <strong>at least two causes</strong> of the growth of trans-Saharan trade and <strong>at least one effect</strong>. Then take a position on the decision before you.</p>
+            <p style="margin:0 0 6px"><strong>Key Concepts:</strong></p>
+            <ul class="kc-list">
+              <li>KC-3.1.II.A.ii</li>
+              <li>KC-3.1.I.A.iv</li>
+              <li>KC-3.1.I.E.ii</li>
+            </ul>
+            <p style="margin:10px 0 4px"><strong>Learning Objectives:</strong> H, I</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- SCORING GUIDE (teacher-facing, hidden in print) -->
+      <section class="role-grid">
+        <article class="role-card full scoring-guide">
+          <h2>Scoring Guide — Instructor Reference Only</h2>
+          <p style="color:rgba(245,240,231,.7);font-size:.9rem;margin:0 0 4px">Not visible to students in print. Hidden from print via CSS.</p>
+          <table class="scoring-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Strong</th>
+                <th>Developing</th>
+                <th>Missing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Position</td>
+                <td>Clear recommendation with rationale</td>
+                <td>Position stated but underdeveloped</td>
+                <td>No position taken</td>
+              </tr>
+              <tr>
+                <td>Causation — Causes</td>
+                <td>Two or more causes of Trans-Saharan trade growth identified and explained</td>
+                <td>One cause identified</td>
+                <td>No causal reasoning</td>
+              </tr>
+              <tr>
+                <td>Causation — Effects</td>
+                <td>At least one effect of trade growth named and linked to evidence</td>
+                <td>Effect mentioned but undeveloped</td>
+                <td>No effects discussed</td>
+              </tr>
+              <tr>
+                <td>Evidence</td>
+                <td>Specific evidence from two or more documents, named and applied</td>
+                <td>One document referenced; vague or paraphrase only</td>
+                <td>No document evidence</td>
+              </tr>
+              <tr>
+                <td>Tradeoff</td>
+                <td>Risk or opposing view acknowledged with specificity</td>
+                <td>Tradeoff mentioned but underdeveloped</td>
+                <td>No tradeoff acknowledged</td>
+              </tr>
+              <tr>
+                <td>Role Perspective</td>
+                <td>Response framed from the governor's perspective with awareness of imperial stakes</td>
+                <td>Some role awareness</td>
+                <td>No role engagement</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="terms-box">
+            <h4>Evidence Terms for Response Analyzer</h4>
+            <p><strong>Transport:</strong> camel, saddle, caravan, waypoint, caravanserai, route, infrastructure</p>
+            <p><strong>Economic:</strong> gold, salt, trade, toll, volume, profit, market, merchant, exchange</p>
+            <p><strong>Imperial:</strong> Mali, Mansa Musa, Timbuktu, empire, governor, decree, expansion</p>
+            <p><strong>Causation markers:</strong> caused by, led to, resulted from, because, enabled, drove, extended, expanded</p>
+            <p><strong>Geographic:</strong> Sahara, desert, Taghaza, Tuareg, Morocco, Egypt, sub-Saharan, North Africa</p>
+          </div>
+        </article>
+      </section>
+
+    </main>
+  </div>
+
+<script>
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+2&entry.187055090=Topic+2.4&entry.1549761827=2.4-beintheroom&entry.2107637366=BeInTheRoom&entry.1963461515=Causation';
+const STORAGE_KEY = 'beintheroom-taghaza-salt-road';
+
+const BASE_COACH_PROMPT = `I am working on a BeInTheRoom scenario set in the Mali Empire, around 1330 CE. I am playing Kofi Diabaté, a regional governor appointed by Mansa Musa to oversee the northern trade routes. A Tuareg caravan master is asking me to recommend that Mali invest in building new caravanserai rest stops in the deep desert. The Timbuktu treasury thinks the money should be spent on the city instead. I need to advise the emperor.
+
+Here is my response so far:
+
+[STUDENT RESPONSE]
+
+Please help me strengthen my historical thinking. Ask me one question at a time. Do not write my response for me.`;
+
+let selectedPosition = '';
+
+function selectDecision(pos) {
+  selectedPosition = pos;
+  document.getElementById('card-a').classList.toggle('selected', pos === 'a');
+  document.getElementById('card-b').classList.toggle('selected', pos === 'b');
+  const label = pos === 'a'
+    ? 'Position A selected: Extend the Caravanserai Infrastructure'
+    : 'Position B selected: Concentrate Investment at Timbuktu';
+  const statusEl = document.getElementById('decision-status');
+  statusEl.textContent = label;
+  statusEl.classList.add('has-selection');
+  saveState();
+}
+
+function updateWordCount() {
+  const text = (document.getElementById('report-response').value || '').trim();
+  const words = text ? text.split(/\s+/).filter(Boolean).length : 0;
+  const el = document.getElementById('word-count');
+  el.textContent = `${words} word${words !== 1 ? 's' : ''} — target: 150–250`;
+  el.className = 'word-count' + (words >= 150 && words <= 250 ? ' in-range' : words > 250 ? ' over-range' : '');
+  saveState();
+}
+
+function buildCoachBlock() {
+  const response = (document.getElementById('report-response').value || '').trim();
+  const inserted = response || '[No response written yet — write your report first, then build this block.]';
+  const prompt = BASE_COACH_PROMPT.replace('[STUDENT RESPONSE]', inserted);
+  document.getElementById('coach-output').textContent = prompt;
+  document.getElementById('coach-result').textContent = response
+    ? 'Coach block built. Click "Copy Prompt" and paste into MagicSchool.'
+    : 'Write your response first for the best coaching experience.';
+}
+
+function copyCoachBlock() {
+  const text = document.getElementById('coach-output').textContent;
+  if (!text || text.startsWith('Click')) { document.getElementById('coach-result').textContent = 'Build the block first.'; return; }
+  navigator.clipboard.writeText(text)
+    .then(() => document.getElementById('coach-result').textContent = 'Prompt copied! Paste it into MagicSchool.')
+    .catch(() => document.getElementById('coach-result').textContent = 'Copy failed. Select the text above and copy manually.');
+}
+
+function saveDraft() {
+  const val = document.getElementById('report-response').value || '';
+  localStorage.setItem(STORAGE_KEY + '-draft', val);
+  document.getElementById('report-result').textContent = 'Draft saved on this device.';
+  saveState();
+}
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY + '-state', JSON.stringify({
+      selectedPosition,
+      response: document.getElementById('report-response').value || ''
+    }));
+  } catch(e) {}
+}
+
+function loadState() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY + '-state') || '{}');
+    if (saved.selectedPosition) selectDecision(saved.selectedPosition);
+    const draft = localStorage.getItem(STORAGE_KEY + '-draft') || saved.response || '';
+    if (draft) {
+      document.getElementById('report-response').value = draft;
+      updateWordCount();
+    }
+  } catch(e) {}
+}
+
+function openGoogleForm() {
+  window.open(GOOGLE_FORM_URL, '_blank', 'noopener');
+}
+
+document.addEventListener('input', e => {
+  if (e.target && e.target.id === 'report-response') updateWordCount();
+});
+
+loadState();
+</script>
+</body>
+</html>
