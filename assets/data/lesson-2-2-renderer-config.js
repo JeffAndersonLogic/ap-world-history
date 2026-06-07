@@ -41,16 +41,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg'
+    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
+    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_43_Abu_Zayd_and_al-Harith_travelling.jpg',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Along_the_River_During_the_Qingming_Festival_%28detail_of_original%29.jpg',
+    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
+    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg',
+    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Hereford-Karte.jpg',
+    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg'
   };
 
   lesson.beInTheRoom = {

@@ -41,16 +41,16 @@
   };
 
   lesson.stableImages = {
-    map: '../assets/images/module-cards/sahara-caravan-1300ce.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    contentDelivery: '../assets/images/module-cards/sahara-caravan-1300ce.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    skill: '../assets/images/module-cards/sahara-caravan-1300ce.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    source: '../assets/images/module-cards/sahara-caravan-1300ce.jpg',
-    beInTheRoom: '../assets/images/module-cards/sahara-caravan-1300ce.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg'
+    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Mansa_Musa.jpg',
+    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wall_of_the_great_enclosure%2C_Great_Zimbabwe.JPG',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
+    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Mali_Empire.png',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Interior_of_great_enclosure%2CG.Zimbabwe.JPG',
+    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Biet_Giorgis%2C_Lalibela%2C_Ethiopia_(24076354516).jpg'
   };
 
   lesson.beInTheRoom = {

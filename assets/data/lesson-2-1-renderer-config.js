@@ -41,16 +41,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png'
+    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Along_the_River_During_the_Qingming_Festival_%28detail_of_original%29.jpg',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_43_Abu_Zayd_and_al-Harith_travelling.jpg',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_06_the_Governor_of_Maraghah.jpg',
+    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Hereford-Karte.jpg',
+    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Sultan_Ahmed_Mosque_Istanbul_Turkey_retouched.jpg',
+    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg'
   };
 
   lesson.beInTheRoom = {

@@ -41,16 +41,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg'
+    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat_001.JPG',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur%20ship.JPG',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Hampi%20virupaksha%20temple.jpg',
+    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_43_Abu_Zayd_and_al-Harith_travelling.jpg',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Al-Aqsa_mosque_(8682155875).jpg',
+    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Qutb_Minar_2022.jpg',
+    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg'
   };
 
   lesson.beInTheRoom = {
