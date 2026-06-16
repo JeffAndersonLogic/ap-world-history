@@ -4,22 +4,10 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-2.3.VI.A',
-      theme: 'Networks of Exchange',
-      text: 'The transmission of epidemic disease along trade routes, most notably the Bubonic Plague, caused massive demographic collapse across Afro-Eurasia in the 14th century.',
-      illustrativeExamples: ['Bubonic plague', 'Yersinia pestis', 'Black Death', 'Demographic collapse']
-    },
-    {
-      code: 'KC-2.3.VI.B',
-      theme: 'Networks of Exchange',
-      text: 'The Black Death caused social and political upheaval across Eurasia and North Africa, weakening existing institutions and prompting long-term social change.',
-      illustrativeExamples: ['Labor shortages', 'Weakening of feudalism', 'Challenge to Church authority']
-    },
-    {
-      code: 'KC-2.3.VI.C',
-      theme: 'Networks of Exchange',
-      text: 'Trade networks also caused ecological changes including deforestation, agricultural intensification, and the movement of plants and animals into new environments.',
-      illustrativeExamples: ['Deforestation', 'New crops', 'Invasive species', 'Agricultural expansion']
+      code: 'KC-3.1.IV',
+      theme: 'Humans and the Environment',
+      text: 'There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes.',
+      illustrativeExamples: ['Bananas in Africa', 'New rice varieties in East Asia', 'Spread of citrus in the Mediterranean']
     }
   ];
 

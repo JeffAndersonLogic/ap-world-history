@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how technology — especially the camel and caravan organization — made trans-Saharan trade possible across one of the world's most hostile environments.",
-      kc: "KC-2.3.IV.A",
+      kc: 'KC-3.1.II.A.ii',
       theme: "Technology"
     },
     {
       target: "I can describe the goods exchanged across the Sahara — especially gold from West Africa and salt from Saharan mines — and explain why this exchange was mutually necessary.",
-      kc: "KC-2.3.IV.B",
+      kc: 'KC-3.1.I.A.iv',
       theme: "Economics"
     },
     {
       target: "I can explain the effects of trans-Saharan trade: the growth of the Mali Empire, the wealth and fame of Mansa Musa, and the spread of Islam across West Africa.",
-      kc: "KC-2.3.IV.C",
+      kc: 'KC-3.1.I.E.ii',
       theme: "Cultural Developments and Interactions"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can use specific evidence — the camel's physiological advantages, the redesigned saddle, caravan organization, and oases — to explain what made crossing the Sahara commercially viable.",
-      kc: "KC-2.3.IV.A",
+      kc: 'KC-3.1.II.A.ii',
       theme: "Technology"
     },
     {
       criteria: "I can explain the gold-salt exchange: where each commodity came from, why each side needed what the other had, and how this complementary demand drove the trans-Saharan trade system.",
-      kc: "KC-2.3.IV.B",
+      kc: 'KC-3.1.I.A.iv',
       theme: "Economics"
     },
     {
       criteria: "I can connect trans-Saharan trade to the rise of Mali, Mansa Musa's 1324 hajj and its global significance, the growth of Timbuktu as a center of Islamic learning, and the spread of Islam through merchant and scholarly networks across West Africa.",
-      kc: "KC-2.3.IV.C",
+      kc: 'KC-3.1.I.E.ii',
       theme: "Cultural Developments and Interactions"
     }
   ],

@@ -4,22 +4,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-2.3.I.B',
-      theme: 'Networks of Exchange',
-      text: 'Goods being traded along the Silk Roads in the postclassical era included luxury products of the East—silk, porcelain, and spices—as well as horses from Central Asia going east.',
-      illustrativeExamples: ['Silk', 'Porcelain', 'Spices', 'Horses']
+      code: 'KC-3.1.I.A.i',
+      theme: 'Economic Systems',
+      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.',
+      illustrativeExamples: ['Kashgar', 'Samarkand']
     },
     {
-      code: 'KC-2.3.I.C',
-      theme: 'Networks of Exchange',
-      text: 'The trade on the Silk Roads had several consequences, including the spread of disease, most notably the Bubonic Plague.',
-      illustrativeExamples: ['Bubonic Plague', 'Black Death']
+      code: 'KC-3.1.I.C.i',
+      theme: 'Economic Systems',
+      text: 'The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.',
+      illustrativeExamples: ['Bills of exchange', 'Banking houses', 'Use of paper money']
     },
     {
-      code: 'KC-2.3.I.D',
-      theme: 'Networks of Exchange',
-      text: 'The trade on the Silk Roads also contributed to the spread of ideas and technologies, including paper, printing, and gunpowder.',
-      illustrativeExamples: ['Paper', 'Printing', 'Gunpowder', 'Compass']
+      code: 'KC-3.3.I.B',
+      theme: 'Economic Systems',
+      text: 'Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.',
+      illustrativeExamples: []
     }
   ];
 

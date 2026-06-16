@@ -4,22 +4,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-3.2.I.A',
+      code: 'KC-4.3.I.C',
       theme: 'Governance',
-      text: 'Empires used bureaucracies, military forces, and legal systems to govern their territories and maintain control over diverse populations.',
-      illustrativeExamples: ['Ottoman timar system', 'Qing civil service examination', 'Tax farming', 'Tribute networks']
+      text: 'Recruitment and use of bureaucratic elites, as well as the development of military professionals, became more common among rulers who wanted to maintain centralized control over their populations and resources.',
+      illustrativeExamples: ['Ottoman devshirme', 'Salaried samurai']
     },
     {
-      code: 'KC-3.2.I.B',
+      code: 'KC-4.3.I.A',
       theme: 'Governance',
-      text: 'Rulers recruited and appointed administrators from outside traditional noble classes to build loyal bureaucracies and limit the independent power of hereditary elites.',
-      illustrativeExamples: ['Devshirme system', 'Janissaries', 'Mansabdar system', 'Jagir assignments']
+      text: 'Rulers continued to use religious ideas, art, and monumental architecture to legitimize their rule.',
+      illustrativeExamples: ['Mexica practice of human sacrifice', 'European notions of divine right', 'Songhai promotion of Islam', 'Qing imperial portraits', 'Incan sun temple of Cuzco', 'Mughal mausolea and mosques', 'European palaces, such as Versailles']
     },
     {
-      code: 'KC-3.2.I.C',
+      code: 'KC-4.3.I.D',
       theme: 'Governance',
-      text: 'To maintain stability, empires incorporated local elites into administrative systems and accommodated existing cultural and religious practices rather than imposing uniform control.',
-      illustrativeExamples: ['Akbar and Rajput nobles', 'Ottoman millet system', 'Qing accommodation of Chinese bureaucratic tradition', 'Russian expansion of serfdom to bind nobles']
+      text: 'Rulers used tribute collection, tax farming, and innovative tax-collection systems to generate revenue in order to forward state power and expansion.',
+      illustrativeExamples: ['Mughal zamindar tax collection', 'Ottoman tax farming', 'Mexica tribute lists', 'Ming practice of collecting taxes in hard currency']
     }
   ];
 

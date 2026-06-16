@@ -39,17 +39,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: 'I can explain how trade routes spread epidemic disease across Afro-Eurasia, with a focus on the bubonic plague and the role of the Mongol trade network.',
-      kc: 'KC-2.3.VI.A',
+      kc: 'KC-3.1.IV',
       theme: 'Environment and Geography'
     },
     {
       target: 'I can describe the demographic and social consequences of the Black Death in Eurasia and North Africa, including population loss, labor shortages, and challenges to traditional authority.',
-      kc: 'KC-2.3.VI.B',
+      kc: 'KC-3.1.IV',
       theme: 'Social Structures'
     },
     {
       target: 'I can explain the ecological consequences of increased connectivity, including deforestation, agricultural intensification, and the movement of invasive species along trade routes.',
-      kc: 'KC-2.3.VI.C',
+      kc: 'KC-3.1.IV',
       theme: 'Environment and Geography'
     }
   ],
@@ -57,17 +57,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: 'I can trace the path of the bubonic plague from its origins in Central Asia to its spread across Eurasia and North Africa, naming at least one specific mechanism of transmission.',
-      kc: 'KC-2.3.VI.A',
+      kc: 'KC-3.1.IV',
       theme: 'Environment and Geography'
     },
     {
       criteria: 'I can use specific evidence — population statistics, labor shortages, or social upheaval — to explain how the Black Death transformed societies across Eurasia.',
-      kc: 'KC-2.3.VI.B',
+      kc: 'KC-3.1.IV',
       theme: 'Social Structures'
     },
     {
       criteria: 'I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.',
-      kc: 'KC-2.3.VI.C',
+      kc: 'KC-3.1.IV',
       theme: 'Environment and Geography'
     }
   ],

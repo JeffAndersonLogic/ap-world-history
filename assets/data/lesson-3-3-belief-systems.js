@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how rulers of land-based empires used religion to legitimize their authority and consolidate power.",
-      kc: "KC-3.3.I.A",
+      kc: 'KC-4.1.VI.ii',
       theme: "Governance"
     },
     {
       target: "I can describe the Sunni-Shia divide between the Ottoman and Safavid empires and explain how religious difference drove political conflict.",
-      kc: "KC-3.3.I.B",
+      kc: 'KC-4.1.VI.ii',
       theme: "Governance"
     },
     {
       target: "I can analyze how the Mughal emperors (especially Akbar) approached religious diversity, and explain why different rulers chose accommodation or enforcement.",
-      kc: "KC-3.3.I.C",
+      kc: 'KC-4.1.VI.iii',
       theme: "Governance"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can give specific examples of rulers claiming religious authority (e.g., Ottoman Sultan as Caliph, Shah Ismail making Shiism the official religion of Persia).",
-      kc: "KC-3.3.I.A",
+      kc: 'KC-4.1.VI.ii',
       theme: "Governance"
     },
     {
       criteria: "I can explain the Battle of Chaldiran (1514) as both a religious and political conflict between rival empires.",
-      kc: "KC-3.3.I.B",
+      kc: 'KC-4.1.VI.ii',
       theme: "Governance"
     },
     {
       criteria: "I can compare Akbar's policy of religious tolerance (Din-i-Ilahi) to Aurangzeb's return to strict Islamic enforcement, explaining what each approach reveals about imperial power.",
-      kc: "KC-3.3.I.C",
+      kc: 'KC-4.1.VI.iii',
       theme: "Governance"
     }
   ],

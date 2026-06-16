@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how gunpowder technology enabled land-based empires to expand their territories between c. 1450 and c. 1750.",
-      kc: "KC-3.1.I.A",
+      kc: 'KC-4.3.II',
       theme: "Governance"
     },
     {
       target: "I can identify the major land-based empires and describe the geography and methods of their expansion.",
-      kc: "KC-3.1.I.B",
+      kc: 'KC-4.3.II.B',
       theme: "Governance"
     },
     {
       target: "I can explain the historical significance of the Ottoman conquest of Constantinople (1453) and its effects on Eurasian trade and politics.",
-      kc: "KC-3.1.I.B",
+      kc: 'KC-4.3.II',
       theme: "Governance"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can name specific gunpowder weapons (cannons, firearms) and explain how they gave empires military advantages over rivals and fortified opponents.",
-      kc: "KC-3.1.I.A",
+      kc: 'KC-4.3.II',
       theme: "Governance"
     },
     {
       criteria: "I can describe the expansion of at least two empires with specific geographic and chronological evidence (e.g., Ottomans into Anatolia, Balkans, North Africa; Mughals across the Indian subcontinent).",
-      kc: "KC-3.1.I.B",
+      kc: 'KC-4.3.II.B',
       theme: "Governance"
     },
     {
       criteria: "I can explain why 1453 mattered — for trade routes, for Christian Europe, for Ottoman legitimacy, and for the post-Mongol reorganization of Eurasian power.",
-      kc: "KC-3.1.I.B",
+      kc: 'KC-4.3.II',
       theme: "Governance"
     }
   ],

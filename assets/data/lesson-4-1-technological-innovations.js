@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can identify and explain the maritime technologies that enabled European oceanic exploration after c. 1450.",
-      kc: "KC-4.1.I.A",
+      kc: 'KC-4.1.II.A',
       theme: "Interaction"
     },
     {
       target: "I can explain how cartographic innovations and the printing press contributed to the spread of geographic knowledge that made further exploration possible.",
-      kc: "KC-4.1.I.B",
+      kc: 'KC-4.1.II',
       theme: "Interaction"
     },
     {
       target: "I can analyze how maritime technologies were connected to state-sponsored exploration, especially by Portugal and Spain.",
-      kc: "KC-4.1.I",
+      kc: 'KC-4.1.II',
       theme: "Interaction"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can name at least three specific maritime technologies and explain what navigation problem each one solved for sailors attempting extended oceanic voyages.",
-      kc: "KC-4.1.I.A",
+      kc: 'KC-4.1.II.A',
       theme: "Interaction"
     },
     {
       criteria: "I can explain how the printing press changed the distribution of geographic knowledge, and give one specific example of a printed map or geographic text that spread exploration knowledge.",
-      kc: "KC-4.1.I.B",
+      kc: 'KC-4.1.II',
       theme: "Interaction"
     },
     {
       criteria: "I can connect specific maritime technologies to the Portuguese model of systematic exploration and explain why state sponsorship was necessary for these voyages.",
-      kc: "KC-4.1.I",
+      kc: 'KC-4.1.II',
       theme: "Interaction"
     }
   ],

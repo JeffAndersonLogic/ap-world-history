@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: 'I can explain how major religions — Buddhism, Islam, Christianity, and Hinduism — spread along trade routes from c. 1200 to c. 1450.',
-      kc: 'KC-2.3.V.A',
+      kc: 'KC-3.1.III.D',
       theme: 'Culture and Society'
     },
     {
       target: 'I can describe how key technologies — paper, printing, gunpowder, the compass, and the stirrup — diffused across Afro-Eurasia through trade networks.',
-      kc: 'KC-2.3.V.B',
+      kc: 'KC-3.1.III.D',
       theme: 'Science and Technology'
     },
     {
       target: 'I can explain how crops, architectural styles, artistic motifs, and literary traditions diffused across Afro-Eurasia as a consequence of trade connectivity.',
-      kc: 'KC-2.3.V.C',
+      kc: 'KC-3.1.III.D',
       theme: 'Culture and Society'
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: 'I can identify at least two specific religions and explain how each spread along a named trade route — Silk Roads, Indian Ocean, or trans-Saharan.',
-      kc: 'KC-2.3.V.A',
+      kc: 'KC-3.1.III.D',
       theme: 'Culture and Society'
     },
     {
       criteria: 'I can name at least two technologies that diffused through trade networks and explain where they originated and where they spread.',
-      kc: 'KC-2.3.V.B',
+      kc: 'KC-3.1.III.D',
       theme: 'Science and Technology'
     },
     {
       criteria: 'I can use specific evidence — a crop, an architectural style, or a cultural tradition — to explain how trade produced cultural exchange and transformation.',
-      kc: 'KC-2.3.V.C',
+      kc: 'KC-3.1.III.D',
       theme: 'Culture and Society'
     }
   ],

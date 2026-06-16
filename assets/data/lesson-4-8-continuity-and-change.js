@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain the major economic changes in global trade networks from c. 1450 to c. 1750, including how American silver created the first genuinely global trade circuit and caused the global price revolution.",
-      kc: "KC-4.8.I.A",
+      kc: 'KC-4.1',
       theme: "Economic Systems"
     },
     {
       target: "I can analyze the major demographic and environmental changes caused by the Columbian Exchange, including the population collapse in the Americas and the spread of new crops globally.",
-      kc: "KC-4.8.I.B",
+      kc: 'KC-4.2.II',
       theme: "Demography and Environment"
     },
     {
       target: "I can evaluate what continued from c. 1450 — including the Indian Ocean trade, Asian manufacturing dominance, and Islamic commercial networks — and explain why these continuities persisted alongside dramatic change.",
-      kc: "KC-4.8.I.C",
+      kc: 'KC-4.3',
       theme: "Economic Systems"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can explain how the Manila Galleon trade and Atlantic silver routes created the first genuinely global trade network, and describe the global price revolution as an economic effect of the silver influx.",
-      kc: "KC-4.8.I.A",
+      kc: 'KC-4.1',
       theme: "Economic Systems"
     },
     {
       criteria: "I can describe the demographic catastrophe in the Americas (50–90% population loss) and explain how it drove the Atlantic slave trade; I can also identify at least two crops from the Columbian Exchange and explain their global impact.",
-      kc: "KC-4.8.I.B",
+      kc: 'KC-4.2.II',
       theme: "Demography and Environment"
     },
     {
       criteria: "I can identify at least two specific continuities (Indian Ocean trade, Chinese economic dominance, Islamic commercial networks) and explain the structural factors that sustained them despite European maritime expansion.",
-      kc: "KC-4.8.I.C",
+      kc: 'KC-4.3',
       theme: "Economic Systems"
     }
   ],

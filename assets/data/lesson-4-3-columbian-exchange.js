@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how the Columbian Exchange transferred new crops and animals between hemispheres and assess how these transfers changed diets, economies, and population patterns.",
-      kc: "KC-4.3.I.A",
+      kc: 'KC-4.1.V.B; KC-4.1.V.C',
       theme: "Interaction"
     },
     {
       target: "I can describe the catastrophic impact of Old World diseases on indigenous American populations and explain why those populations were so vulnerable to European pathogens.",
-      kc: "KC-4.3.I.B",
+      kc: 'KC-4.1.V.A',
       theme: "Interaction"
     },
     {
       target: "I can analyze the economic, social, and environmental consequences of the Columbian Exchange — including the origins of the Atlantic slave trade and global silver flows — and connect them to the demographic collapse of indigenous American peoples.",
-      kc: "KC-4.3.I.C",
+      kc: 'KC-4.1.V.B',
       theme: "Interaction"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can name at least two crops transferred from the New World to the Old World and two transferred from the Old World to the New, and explain the long-term consequences of each transfer.",
-      kc: "KC-4.3.I.A",
+      kc: 'KC-4.1.V.B; KC-4.1.V.C',
       theme: "Interaction"
     },
     {
       criteria: "I can explain the concept of a 'virgin soil epidemic' and explain why indigenous American populations lacked immunity to Old World diseases — and connect this to population collapse estimates.",
-      kc: "KC-4.3.I.B",
+      kc: 'KC-4.1.V.A',
       theme: "Interaction"
     },
     {
       criteria: "I can connect the demographic collapse of indigenous American populations to the origins of the Atlantic slave trade, and explain how American silver affected global trade patterns.",
-      kc: "KC-4.3.I.C",
+      kc: 'KC-4.1.V.B',
       theme: "Interaction"
     }
   ],

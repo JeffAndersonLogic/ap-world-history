@@ -4,22 +4,16 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.6.I.A',
-      theme: 'Resistance',
-      text: 'Indigenous peoples challenged European colonial rule through organized revolts. The Pueblo Revolt of 1680 — organized by Popé — expelled the Spanish from New Mexico for twelve years and forced changes in colonial policy after reconquest.',
-      illustrativeExamples: ['Pueblo Revolt (1680)', 'Popé', 'Tewa peoples', 'New Mexico', 'Religious suppression as cause of revolt']
+      code: 'KC-4.3.III.iii',
+      theme: 'Governance',
+      text: 'State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level.',
+      illustrativeExamples: ['Pueblo Revolts', 'Fronde', 'Cossack revolts', 'Maratha conflict with Mughals', 'Ana Nzinga’s resistance (as ruler of Ndongo and Matamba)', 'Metacom’s War (King Philip’s War)']
     },
     {
-      code: 'KC-4.6.I.B',
-      theme: 'Resistance',
-      text: 'Enslaved Africans resisted colonial rule through maroon communities — autonomous settlements of escaped enslaved people — as well as through cultural preservation and organized revolts.',
-      illustrativeExamples: ['Palmares (Brazil, c. 1605–1694)', 'Zumbi', 'Quilombo', 'Maroons of Jamaica', 'Saramaka (Suriname)']
-    },
-    {
-      code: 'KC-4.6.I.C',
-      theme: 'State Building',
-      text: 'European maritime empires faced external challenges from rival powers. The Dutch VOC displaced the Portuguese Estado da India in the Indian Ocean; piracy, privateering, and the Seven Years War reflected the intensity of European colonial competition.',
-      illustrativeExamples: ['Dutch displacement of the Portuguese (c. 1600–1650)', 'Sir Francis Drake and privateering', 'Seven Years War (1756–1763)', 'French and British competition in North America']
+      code: 'KC-5.3.III.C',
+      theme: 'Governance',
+      text: 'Enslaved persons challenged existing authorities in the Americas through organized resistance.',
+      illustrativeExamples: ['Establishment of Maroon societies in the Caribbean and Brazil', 'Resistance of enslaved persons in North America']
     }
   ];
 

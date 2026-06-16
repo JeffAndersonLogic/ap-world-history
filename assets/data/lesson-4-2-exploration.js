@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain the multiple motivations — religious, economic, and political — that drove European maritime exploration after c. 1450.",
-      kc: "KC-4.2.I.A",
+      kc: 'KC-4.1.III',
       theme: "Interaction"
     },
     {
       target: "I can describe the key European voyages: Portuguese exploration of the African coast and route to India, Columbus's Caribbean voyage, and Magellan's circumnavigation.",
-      kc: "KC-4.2.I.B",
+      kc: 'KC-4.1.III.A; KC-4.1.III.B',
       theme: "Interaction"
     },
     {
       target: "I can analyze how the Treaty of Tordesillas (1494) reflects European assumptions about power, and explain how different peoples experienced the era of European exploration differently.",
-      kc: "KC-4.2.I.C",
+      kc: 'KC-4.1.III.B',
       theme: "Interaction"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can explain at least two specific motivations for European exploration — including economic incentives (spice trade profits) and religious motivations (conversion, crusading) — and connect each to specific state actions.",
-      kc: "KC-4.2.I.A",
+      kc: 'KC-4.1.III',
       theme: "Interaction"
     },
     {
       criteria: "I can trace the key routes: Portuguese south along Africa and around the Cape to India (Dias 1488, da Gama 1498), Columbus to the Caribbean (1492), Magellan's circumnavigation (1519–1522).",
-      kc: "KC-4.2.I.B",
+      kc: 'KC-4.1.III.A; KC-4.1.III.B',
       theme: "Interaction"
     },
     {
       criteria: "I can explain the Treaty of Tordesillas (1494) and what it reveals about European assumptions regarding non-European peoples, and identify at least one perspective from an indigenous or non-European group affected by European exploration.",
-      kc: "KC-4.2.I.C",
+      kc: 'KC-4.1.III.B',
       theme: "Interaction"
     }
   ],

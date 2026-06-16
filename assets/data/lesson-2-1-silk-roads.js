@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain the causes of Silk Road growth, including state-building, pastoral nomads, and merchant networks that created and maintained overland routes.",
-      kc: "KC-2.3.I.B",
+      kc: 'KC-3.1.I.A.i',
       theme: "Economics"
     },
     {
       target: "I can describe the goods and ideas exchanged along the Silk Roads, including silk, spices, paper, gunpowder, Buddhism, Islam, and plague.",
-      kc: "KC-2.3.I.C",
+      kc: 'KC-3.3.I.B',
       theme: "Economics"
     },
     {
       target: "I can explain the effects of Silk Road trade on societies along the routes, including wealth accumulation, urbanization, and the spread of disease.",
-      kc: "KC-2.3.I.D",
+      kc: 'KC-3.1.I.C.i',
       theme: "Economics"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can use specific evidence — relay stations, pastoral nomads, caravanserais, or state protection — to explain what made overland trade across Afro-Eurasia possible.",
-      kc: "KC-2.3.I.B",
+      kc: 'KC-3.1.I.A.i',
       theme: "Economics"
     },
     {
       criteria: "I can identify both goods (silk, spices, porcelain, paper, gunpowder) and ideas (Buddhism, Islam, Christianity, plague) that moved along the Silk Roads and explain their significance.",
-      kc: "KC-2.3.I.C",
+      kc: 'KC-3.3.I.B',
       theme: "Economics"
     },
     {
       criteria: "I can connect Silk Road exchange to specific effects on societies — including wealth, urban growth along routes, and the devastating spread of the Black Death.",
-      kc: "KC-2.3.I.D",
+      kc: 'KC-3.1.I.C.i',
       theme: "Economics"
     }
   ],

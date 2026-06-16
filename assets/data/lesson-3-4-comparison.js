@@ -39,17 +39,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: 'I can compare how at least two land-based empires expanded, identifying one key similarity and one key difference in their methods or contexts.',
-      kc: 'KC-3.4.I.A',
+      kc: 'KC-4.3.II',
       theme: 'Governance'
     },
     {
       target: 'I can compare how at least two land-based empires administered their territories, explaining what their different approaches reveal about the challenges of governing diverse populations.',
-      kc: 'KC-3.4.I.B',
+      kc: 'KC-4.3.II.B',
       theme: 'Governance'
     },
     {
       target: 'I can construct a supported historical argument that compares land-based empires, using specific evidence to explain both similarities and differences.',
-      kc: 'KC-3.4.I.C',
+      kc: 'KC-4.1.VI',
       theme: 'Argumentation'
     }
   ],
@@ -57,39 +57,57 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: 'I can identify a specific similarity across two empires (e.g., both used conquered or foreign peoples as administrators) and explain why this similarity existed.',
-      kc: 'KC-3.4.I.A',
+      kc: 'KC-4.3.II',
       theme: 'Governance'
     },
     {
       criteria: 'I can identify a specific difference (e.g., Mughal accommodation vs. Ottoman enforcement of Sunni orthodoxy on conquered populations) and explain what accounts for it.',
-      kc: 'KC-3.4.I.B',
+      kc: 'KC-4.3.II.B',
       theme: 'Governance'
     },
     {
       criteria: 'I can write a comparison argument that includes: a claim, at least two pieces of evidence from different empires, and a statement that explains the significance of the comparison.',
-      kc: 'KC-3.4.I.C',
+      kc: 'KC-4.1.VI',
       theme: 'Argumentation'
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: 'KC-3.4.I.A',
-      theme: 'Governance',
-      text: 'Despite different origins, cultures, and locations, land-based empires shared common patterns: use of gunpowder technology for military expansion, recruitment of administrators from outside the traditional nobility, and use of religion to legitimize imperial authority.',
-      illustrativeExamples: ['Ottoman devshirme system', 'Mughal mansabdar system', 'Qing Banner system', 'Gunpowder weapons and cannon technology across all empires']
+      code: 'KC-4.1',
+      theme: 'Land-Based Empires',
+      text: 'The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging transformed trade and had a significant social impact on the world.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-3.4.I.B',
-      theme: 'Governance',
-      text: 'Land-based empires differed in their approaches to religious diversity — some enforced a single state religion, others practiced systematic tolerance of subject populations\' faiths, and others developed syncretic frameworks that blended traditions.',
-      illustrativeExamples: ['Ottoman millet system', 'Akbar\'s Din-i-Ilahi and religious tolerance', 'Safavid imposition of Shia Islam', 'Aurangzeb\'s reversal of Mughal tolerance']
+      code: 'KC-4.1.VI',
+      theme: 'Land-Based Empires',
+      text: 'In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-3.4.I.C',
-      theme: 'Governance',
-      text: 'Comparing empires reveals that context shaped policy: geographic diversity, the size of conquered populations, and the existing religious landscape all influenced how rulers governed. The most successful empires developed administrative systems suited to governing diverse, multi-ethnic subjects.',
-      illustrativeExamples: ['Mughal administration of Hindu-majority population', 'Qing governance of Han Chinese majority', 'Russian expansion across ethnically diverse Siberia and Central Asia']
+      code: 'KC-4.3',
+      theme: 'Land-Based Empires',
+      text: 'Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.3.II',
+      theme: 'Land-Based Empires',
+      text: 'Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.3.II.B',
+      theme: 'Land-Based Empires',
+      text: 'Land empires included the Manchu in Central and East Asia; the Mughal in South and Central Asia; the Ottoman in Southern Europe, the Middle East, and North Africa; and the Safavids in the Middle East.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.3.III.i',
+      theme: 'Land-Based Empires',
+      text: 'Political and religious disputes led to rivalries and conflict between states.',
+      illustrativeExamples: []
     }
   ],
 

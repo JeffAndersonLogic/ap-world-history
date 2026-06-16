@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how European maritime empires used labor systems — encomienda, mita, and chattel slavery — to extract resources from their colonies.",
-      kc: "KC-4.5.I.A",
+      kc: 'KC-4.1.IV.D.i',
       theme: "Economic Systems"
     },
     {
       target: "I can analyze how colonial administration — viceroyalties, audiencias, and the Catholic Church — maintained imperial control in the Americas.",
-      kc: "KC-4.5.I.B",
+      kc: 'KC-4.1.IV.C',
       theme: "Governance"
     },
     {
       target: "I can evaluate how the extraction of American silver from Potosí transformed global trade networks through the Manila Galleon trade and the global price revolution.",
-      kc: "KC-4.5.I.C",
+      kc: 'KC-4.1.IV',
       theme: "Economic Systems"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can describe at least two labor systems used in Spanish colonial America (encomienda, mita) and explain how each served colonial economic goals, including the role of disease in driving the shift from encomienda to mita and chattel slavery.",
-      kc: "KC-4.5.I.A",
+      kc: 'KC-4.1.IV.D.i',
       theme: "Economic Systems"
     },
     {
       criteria: "I can explain the role of the viceregal system, audiencias, and the Catholic Church in administering Spanish colonial territories, and describe how these institutions maintained order across vast distances.",
-      kc: "KC-4.5.I.B",
+      kc: 'KC-4.1.IV.C',
       theme: "Governance"
     },
     {
       criteria: "I can trace how silver from Potosí flowed through the Manila Galleon trade and Seville's Casa de Contratación to connect the Americas, Europe, and Asia, and explain the global price revolution as an effect of silver influx.",
-      kc: "KC-4.5.I.C",
+      kc: 'KC-4.1.IV',
       theme: "Economic Systems"
     }
   ],

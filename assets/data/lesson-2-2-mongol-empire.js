@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how the Mongols conquered and administered a vast empire spanning from China to Eastern Europe.",
-      kc: "KC-2.3.II.A",
+      kc: 'KC-3.2.I.B.iii',
       theme: "Governance"
     },
     {
       target: "I can explain how the Pax Mongolica facilitated trade, travel, and exchange across Eurasia.",
-      kc: "KC-2.3.II.B",
+      kc: 'KC-3.1.I.E.i',
       theme: "Economics"
     },
     {
       target: "I can describe the effects of Mongol rule — both destructive consequences and the connective networks it created.",
-      kc: "KC-2.3.II.C",
+      kc: 'KC-3.2.II.A.ii',
       theme: "Governance"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can use specific evidence — cavalry tactics, siege warfare, Genghis Khan's unification of the steppe, or the khanate system — to explain how the Mongols built and governed their empire.",
-      kc: "KC-2.3.II.A",
+      kc: 'KC-3.2.I.B.iii',
       theme: "Governance"
     },
     {
       criteria: "I can explain how the Pax Mongolica created conditions for expanded trade and cultural exchange, using evidence such as the Yam postal system, protection of merchants, and the travels of Marco Polo or Ibn Battuta.",
-      kc: "KC-2.3.II.B",
+      kc: 'KC-3.1.I.E.i',
       theme: "Economics"
     },
     {
       criteria: "I can identify both destructive effects (massacre, depopulation, destruction of Baghdad) and connective effects (trade, plague transmission, cultural exchange) of Mongol conquest and rule.",
-      kc: "KC-2.3.II.C",
+      kc: 'KC-3.2.II.A.ii',
       theme: "Governance"
     }
   ],

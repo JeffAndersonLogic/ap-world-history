@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how technology and environmental knowledge — including dhow ships, the magnetic compass, and monsoon wind patterns — enabled Indian Ocean trade.",
-      kc: "KC-2.3.III.A",
+      kc: 'KC-3.1.I.C.ii; KC-3.1.II.A.i',
       theme: "Technology"
     },
     {
       target: "I can describe the goods and peoples exchanged across the Indian Ocean, including spices, textiles, gold, ivory, and merchants from Arabia, India, China, and the Swahili coast.",
-      kc: "KC-2.3.III.B",
+      kc: 'KC-3.1.III.B',
       theme: "Economics"
     },
     {
       target: "I can explain the effects of Indian Ocean trade — including the growth of port cities, the formation of diasporic merchant communities, and the spread of Islam.",
-      kc: "KC-2.3.III.C",
+      kc: 'KC-3.1.I.A.ii; KC-3.1.I.A.iii',
       theme: "Cultural Developments and Interactions"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can use specific evidence — monsoon winds, dhow construction, or the magnetic compass — to explain how environmental knowledge and technology made Indian Ocean maritime trade possible.",
-      kc: "KC-2.3.III.A",
+      kc: 'KC-3.1.I.C.ii; KC-3.1.II.A.i',
       theme: "Technology"
     },
     {
       criteria: "I can identify the major goods (spices, textiles, gold, ivory) and merchant communities (Arab, Indian, Chinese, Swahili, Persian) that participated in Indian Ocean exchange and explain what made their participation significant.",
-      kc: "KC-2.3.III.B",
+      kc: 'KC-3.1.III.B',
       theme: "Economics"
     },
     {
       criteria: "I can connect Indian Ocean trade to specific effects: cosmopolitan port cities like Kilwa, Calicut, Quanzhou, and Malacca; diasporic merchant communities; and the spread of Islam along maritime routes.",
-      kc: "KC-2.3.III.C",
+      kc: 'KC-3.1.I.A.ii; KC-3.1.I.A.iii',
       theme: "Cultural Developments and Interactions"
     }
   ],

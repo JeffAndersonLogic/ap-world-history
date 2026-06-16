@@ -39,17 +39,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: 'I can identify similarities across all three Afro-Eurasian trade networks — Silk Roads, Indian Ocean, and trans-Saharan — including long-distance exchange, the movement of goods and ideas, and cultural diffusion.',
-      kc: 'KC-2.3.I.B',
+      kc: 'KC-3.1',
       theme: 'Economics'
     },
     {
       target: 'I can identify key differences between the three trade networks in geography, transportation technology, dominant goods, and cultural effects.',
-      kc: 'KC-2.3.III.A',
+      kc: 'KC-3.1.I.C.i',
       theme: 'Economics'
     },
     {
       target: 'I can explain how comparing the three networks reveals broader patterns of Afro-Eurasian connectivity and supports AP-style comparison arguments with evidence.',
-      kc: 'KC-2.3.IV.A',
+      kc: 'KC-3.3',
       theme: 'Economics'
     }
   ],
@@ -57,17 +57,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: 'I can state at least two specific similarities shared by all three trade networks and support each with a concrete historical example.',
-      kc: 'KC-2.3.I.B',
+      kc: 'KC-3.1',
       theme: 'Economics'
     },
     {
       criteria: 'I can explain at least two meaningful differences between any two of the three networks, using specific evidence about geography, technology, or goods exchanged.',
-      kc: 'KC-2.3.III.A',
+      kc: 'KC-3.1.I.C.i',
       theme: 'Economics'
     },
     {
       criteria: 'I can use a comparison of trade networks to build a historical argument that includes a claim, evidence, and reasoning connecting to a broader pattern of Afro-Eurasian exchange.',
-      kc: 'KC-2.3.IV.A',
+      kc: 'KC-3.3',
       theme: 'Economics'
     }
   ],

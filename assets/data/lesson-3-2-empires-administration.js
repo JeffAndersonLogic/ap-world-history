@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how land-based empires used bureaucracies, taxation systems, and military recruitment to consolidate power over diverse populations.",
-      kc: "KC-3.2.I.A",
+      kc: 'KC-4.3.I.C; KC-4.3.I.D',
       theme: "Governance"
     },
     {
       target: "I can describe at least two specific administrative systems (e.g., devshirme, mansabdar, civil service examination) and explain how they served imperial control.",
-      kc: "KC-3.2.I.B",
+      kc: 'KC-4.3.I.C',
       theme: "Governance"
     },
     {
       target: "I can explain how rulers accommodated local elites and existing power structures to maintain stability in their empires.",
-      kc: "KC-3.2.I.C",
+      kc: 'KC-4.3.I.C',
       theme: "Governance"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can describe how tribute systems, tax collection, and military conscription connected the imperial center to the periphery.",
-      kc: "KC-3.2.I.A",
+      kc: 'KC-4.3.I.C; KC-4.3.I.D',
       theme: "Governance"
     },
     {
       criteria: "I can identify specific administrative innovations in at least two empires and explain how they maintained loyalty and extracted resources.",
-      kc: "KC-3.2.I.B",
+      kc: 'KC-4.3.I.C',
       theme: "Governance"
     },
     {
       criteria: "I can explain the trade-off between centralization and accommodation — why rulers sometimes gave local elites autonomy rather than imposing direct control.",
-      kc: "KC-3.2.I.C",
+      kc: 'KC-4.3.I.C',
       theme: "Governance"
     }
   ],

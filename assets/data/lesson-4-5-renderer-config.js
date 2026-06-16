@@ -4,22 +4,52 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.5.I.A',
-      theme: 'Economic Systems',
-      text: 'European colonial empires relied on forced and coerced labor systems — including encomienda, mita, and chattel slavery — to extract resources and generate wealth from their colonies.',
-      illustrativeExamples: ['Encomienda', 'Mita', 'Potosí silver mines', 'Chattel slavery in Brazil and the Caribbean', 'Bartolomé de las Casas and the New Laws of 1542']
-    },
-    {
-      code: 'KC-4.5.I.B',
+      code: 'KC-4.1.IV.C',
       theme: 'Governance',
-      text: 'Colonial administration was organized through viceroyalties, audiencias, and the Catholic Church — each serving administrative, judicial, and cultural conversion roles across vast colonial territories.',
-      illustrativeExamples: ['Viceroyalty of New Spain', 'Viceroyalty of Peru', 'Audiencias', 'Jesuit and Franciscan missions', 'Casa de Contratación']
+      text: 'Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories. Joint-stock companies, influenced by these mercantilist principles, were used by rulers and merchants to finance exploration and were used by rulers to compete against one another in global trade.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.5.I.C',
+      code: 'KC-4.3.III.ii',
+      theme: 'Governance',
+      text: 'Economic disputes led to rivalries and conflict between states.',
+      illustrativeExamples: ['Muslim–European rivalry in the Indian Ocean', 'Moroccan conflict with the Songhai Empire']
+    },
+    {
+      code: 'KC-4.1.IV.D.i',
       theme: 'Economic Systems',
-      text: 'American silver — especially from Potosí — connected the Americas, Europe, and Asia into a single global trade network through the Manila Galleon trade and the Seville trading monopoly, causing a global price revolution.',
-      illustrativeExamples: ['Potosí', 'Manila Galleon trade (1565–1815)', 'Casa de Contratación (Seville)', 'Global price revolution', 'Chinese demand for silver']
+      text: 'The Atlantic trading system involved the movement of goods, wealth, and labor, including enslaved persons.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.IV',
+      theme: 'Economic Systems',
+      text: 'The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver. Regional markets continued to flourish in Afro-Eurasia by using established commercial practices, and new transoceanic and regional shipping services developed by European merchants.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.2.II.A',
+      theme: 'Economic Systems',
+      text: 'Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased.',
+      illustrativeExamples: ['Western Europe — wool and linen', 'India — cotton', 'China — silk']
+    },
+    {
+      code: 'KC-4.2.III.C',
+      theme: 'Social Interactions and Organization',
+      text: 'Some notable gender and family restructuring occurred, including demographic changes in Africa that resulted from the trade of enslaved persons.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.IV.D.ii',
+      theme: 'Social Interactions and Organization',
+      text: 'The Atlantic trading system involved the movement of labor—including enslaved persons—and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.VI',
+      theme: 'Cultural Developments and Interactions',
+      text: 'In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.',
+      illustrativeExamples: []
     }
   ];
 

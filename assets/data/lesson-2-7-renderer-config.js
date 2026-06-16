@@ -4,22 +4,34 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-2.3.I.B',
+      code: 'KC-3.1',
       theme: 'Networks of Exchange',
-      text: 'The Silk Roads, Indian Ocean network, and trans-Saharan routes all shared the function of connecting distant societies through long-distance exchange of goods, ideas, and people.',
-      illustrativeExamples: ['Luxury goods', 'Religious diffusion', 'Diasporic communities']
+      text: 'A deepening and widening of networks of human interaction within and across regions contributed to cultural, technological, and biological diffusion within and between various societies.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-2.3.III.A',
+      code: 'KC-3.1.I.A.i',
       theme: 'Networks of Exchange',
-      text: 'Despite shared functions, the Silk Roads, Indian Ocean, and trans-Saharan networks differed in geography, dominant technology, the goods they carried, and the cultures most shaped by them.',
-      illustrativeExamples: ['Overland vs. maritime vs. desert routes', 'Camel vs. dhow vs. relay horse', 'Silk vs. spice vs. gold']
+      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-2.3.IV.A',
+      code: 'KC-3.1.I.C.i',
       theme: 'Networks of Exchange',
-      text: 'Comparing trade networks reveals a broader pattern of Afro-Eurasian connectivity — overlapping systems that together linked societies from East Asia to West Africa between c. 1200 and c. 1450.',
-      illustrativeExamples: ['Afro-Eurasian connectivity', 'Overlapping trade systems', 'Shared patterns of exchange']
+      text: 'The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-3.3',
+      theme: 'Networks of Exchange',
+      text: 'Changes in trade networks resulted from and stimulated increasing productive capacity, with important implications for social and gender structures and environmental processes.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-3.3.I.B',
+      theme: 'Networks of Exchange',
+      text: 'Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.',
+      illustrativeExamples: []
     }
   ];
 

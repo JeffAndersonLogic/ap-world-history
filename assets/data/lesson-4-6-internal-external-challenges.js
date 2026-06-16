@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how indigenous peoples challenged European colonial rule — including the causes, methods, and outcomes of the Pueblo Revolt of 1680.",
-      kc: "KC-4.6.I.A",
+      kc: 'KC-4.3.III.iii',
       theme: "Resistance"
     },
     {
       target: "I can analyze how enslaved Africans resisted colonial rule through maroon communities, cultural preservation, and organized revolts.",
-      kc: "KC-4.6.I.B",
+      kc: 'KC-5.3.III.C',
       theme: "Resistance"
     },
     {
       target: "I can evaluate how competition between European powers — including commercial rivalry and military conflict — created external challenges to maritime empires.",
-      kc: "KC-4.6.I.C",
+      kc: 'KC-4.3.III.ii',
       theme: "State Building"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can explain the specific grievances that caused the Pueblo Revolt (religious suppression, labor demands, drought), describe how Popé organized the revolt, and explain the short-term outcome — including how the revolt forced changes in Spanish colonial policy.",
-      kc: "KC-4.6.I.A",
+      kc: 'KC-4.3.III.iii',
       theme: "Resistance"
     },
     {
       criteria: "I can describe maroon communities as a form of African resistance, give one specific example (Palmares in Brazil), and explain how maroon communities represented both successful resistance and its limits.",
-      kc: "KC-4.6.I.B",
+      kc: 'KC-5.3.III.C',
       theme: "Resistance"
     },
     {
       criteria: "I can explain how Dutch commercial competition displaced the Portuguese Estado da India and describe how piracy and privateering served as tools of European state competition, connecting both to the fragility of maritime empires.",
-      kc: "KC-4.6.I.C",
+      kc: 'KC-4.3.III.ii',
       theme: "State Building"
     }
   ],

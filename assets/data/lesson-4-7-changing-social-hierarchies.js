@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how European colonization created new racial and social hierarchies in colonial societies — and describe the specific legal and social consequences of those hierarchies.",
-      kc: "KC-4.7.I.A",
+      kc: 'KC-4.3.I.B',
       theme: "Social Structures"
     },
     {
       target: "I can analyze how the casta system organized colonial society in Spanish America, including its major categories (peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans) and their legal implications.",
-      kc: "KC-4.7.I.B",
+      kc: 'KC-4.2.III.A',
       theme: "Social Structures"
     },
     {
       target: "I can evaluate continuities and changes in social structures in areas affected by European expansion, including the role of gender in colonial hierarchies.",
-      kc: "KC-4.7.I.C",
+      kc: 'KC-4.2.III.B',
       theme: "Social Structures"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can explain why European colonialism created new racial hierarchies — connecting the need for labor coercion to the legal construction of race — and describe at least one specific legal consequence of racial classification in colonial societies.",
-      kc: "KC-4.7.I.A",
+      kc: 'KC-4.3.I.B',
       theme: "Social Structures"
     },
     {
       criteria: "I can name and describe the major casta categories in Spanish colonial America, explain how casta status was determined, and give one specific example of how casta affected a person's legal rights or opportunities.",
-      kc: "KC-4.7.I.B",
+      kc: 'KC-4.2.III.A',
       theme: "Social Structures"
     },
     {
       criteria: "I can identify one continuity from pre-colonial social structures (indigenous nobility, existing slavery) and one genuine change (racialization of status, new mixed-race categories), and explain how gender intersected with racial hierarchy in colonial societies.",
-      kc: "KC-4.7.I.C",
+      kc: 'KC-4.2.III.B',
       theme: "Social Structures"
     }
   ],

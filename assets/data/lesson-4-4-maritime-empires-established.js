@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how Portugal established a trading post empire (Estado da India) and describe how control of fortified ports and sea lanes differed from territorial colonialism.",
-      kc: "KC-4.4.I.A",
+      kc: 'KC-4.3.II.A.i; KC-4.3.II.C',
       theme: "Interaction"
     },
     {
       target: "I can describe how Spain established colonial empires in the Americas through conquest, and explain the administrative systems — encomienda, viceroyalties — used to control them.",
-      kc: "KC-4.4.I.B",
+      kc: 'KC-4.3.II.C',
       theme: "Interaction"
     },
     {
       target: "I can analyze how the Dutch, British, and French used joint-stock companies to build maritime empires, and compare this model to the Portuguese and Spanish approaches.",
-      kc: "KC-4.4.I.C",
+      kc: 'KC-4.3.II.C',
       theme: "Interaction"
     }
   ],
@@ -56,17 +56,17 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can explain the Estado da India model: fortified ports at key straits (Goa, Malacca, Hormuz), naval control of sea lanes, and why the Portuguese chose commercial dominance over territorial conquest in Asia.",
-      kc: "KC-4.4.I.A",
+      kc: 'KC-4.3.II.A.i; KC-4.3.II.C',
       theme: "Interaction"
     },
     {
       criteria: "I can describe the Spanish conquest of the Aztec and Inca empires, explain how disease enabled conquest, and describe how the encomienda system and viceroyalties organized colonial rule.",
-      kc: "KC-4.4.I.B",
+      kc: 'KC-4.3.II.C',
       theme: "Interaction"
     },
     {
       criteria: "I can explain the joint-stock company model (VOC, British EIC) and explain what made it a different approach to empire — spreading risk through private investment — compared to state-controlled Portuguese or Spanish empire.",
-      kc: "KC-4.4.I.C",
+      kc: 'KC-4.3.II.C',
       theme: "Interaction"
     }
   ],
