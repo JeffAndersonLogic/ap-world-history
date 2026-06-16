@@ -4,22 +4,46 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.4.I.A',
-      theme: 'Interaction',
-      text: 'Portuguese established a trading post empire in South and Southeast Asia, and on the coasts of Africa and Brazil — based on fortified ports (feitorias) at strategic locations rather than territorial conquest.',
-      illustrativeExamples: ['Estado da India', 'Goa (1510)', 'Malacca (1511)', 'Strait of Hormuz', 'Mozambique', 'Afonso de Albuquerque']
+      code: 'KC-4.3.II.A.i',
+      theme: 'Governance',
+      text: 'Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved in new global trade networks. Some Asian states sought to limit the disruptive economic and cultural effects of European-dominated long-distance trade by adopting restrictive or isolationist trade policies.',
+      illustrativeExamples: ['Ming China', 'Tokugawa Japan']
     },
     {
-      code: 'KC-4.4.I.B',
-      theme: 'Interaction',
-      text: 'The Spanish established colonial settlements and conquests throughout the Americas, using encomienda labor and viceregal administration to build a territorial empire based on resource extraction and conversion.',
-      illustrativeExamples: ['Hernán Cortés and the Aztec Empire (1521)', 'Francisco Pizarro and the Inca Empire (1532)', 'Encomienda system', 'Viceroyalties of New Spain and Peru', 'Catholic missionaries']
+      code: 'KC-4.3.II.C',
+      theme: 'Governance',
+      text: 'Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.4.I.C',
-      theme: 'Interaction',
-      text: 'The Dutch, British, and French established maritime empires using joint-stock trading companies that spread financial risk among private investors and allowed commercial expansion without full state control.',
-      illustrativeExamples: ['Dutch East India Company (VOC, 1602)', 'British East India Company (EIC, 1600)', 'Batavia (Jakarta)', 'French East India Company (1664)', 'Joint-stock company model']
+      code: 'KC-4.3.II.A.ii',
+      theme: 'Governance',
+      text: 'The expansion of maritime trading networks fostered the growth of states in Africa, including the Asante and the Kingdom of the Kongo, whose participation in trading networks led to an increase in their influence.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.3.II.A.iii',
+      theme: 'Economic Systems',
+      text: 'Despite some disruption and restructuring due to the arrival of Portuguese, Spanish, and Dutch merchants, existing trade networks in the Indian Ocean continued to flourish and included intra-Asian trade and Asian merchants.',
+      illustrativeExamples: ['Swahili Arabs', 'Omanis', 'Gujaratis', 'Javanese']
+    },
+    {
+      code: 'KC-4.2.II.D',
+      theme: 'Economic Systems',
+      text: 'Newly developed colonial economies in the Americas largely depended on agriculture, utilized existing labor systems, including the Incan mit’a, and introduced new labor systems including chattel slavery, indentured servitude, and encomienda and hacienda systems.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.2.II.B',
+      theme: 'Social Interactions and Organization',
+      text: 'Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.2.II.C',
+      theme: 'Social Interactions and Organization',
+      text: 'The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes.',
+      illustrativeExamples: []
     }
   ];
 

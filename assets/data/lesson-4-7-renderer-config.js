@@ -4,22 +4,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.7.I.A',
-      theme: 'Social Structures',
-      text: 'European colonialism created new racial and social hierarchies in colonial societies, reorganizing existing social orders and introducing new categories based on racial ancestry and colonial origin.',
-      illustrativeExamples: ['Casta system', 'Racialization of slavery in the Atlantic world', 'Limpieza de sangre (purity of blood)', 'Legal consequences of racial classification']
+      code: 'KC-4.3.I.B',
+      theme: 'Social Interactions and Organization',
+      text: 'Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups’ roles in society, politics, or the economy.',
+      illustrativeExamples: ['Expulsion of Jews from Spain and Portugal; acceptance of Jews in the Ottoman Empire', 'Restrictive policies against Han Chinese in Qing China', 'Varying status of different classes of women within the Ottoman Empire']
     },
     {
-      code: 'KC-4.7.I.B',
-      theme: 'Social Structures',
-      text: 'The casta system in Spanish colonial America organized legal and social status into categories based on ancestry — from Spanish-born peninsulares at the top to enslaved Africans at the bottom — with real consequences for legal rights, tribute obligations, and social mobility.',
-      illustrativeExamples: ['Peninsulares', 'Creoles (criollos)', 'Mestizos', 'Mulattos', 'Indigenous peoples', 'Casta paintings', 'Gracia al sacar']
+      code: 'KC-4.2.III.A',
+      theme: 'Social Interactions and Organization',
+      text: 'Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.7.I.C',
-      theme: 'Social Structures',
-      text: 'Colonial social hierarchies built on and modified pre-colonial structures. New mixed-race categories emerged that had no pre-colonial equivalent. Gender intersected with racial hierarchy, with indigenous and African women often experiencing the most acute intersection of racial and gender exploitation.',
-      illustrativeExamples: ['Indigenous nobility under Spanish law', 'Mestizo social mobility', 'Role of women in colonial economies', 'Manumission rates in Portuguese Brazil vs. British colonies']
+      code: 'KC-4.2.III.B',
+      theme: 'Social Interactions and Organization',
+      text: 'The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders.',
+      illustrativeExamples: ['Ottoman timars', 'Russian boyars', 'European nobility']
     }
   ];
 

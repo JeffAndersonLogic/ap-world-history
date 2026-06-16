@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: 'I can explain how major religions — Buddhism, Islam, Christianity, and Hinduism — spread along trade routes from c. 1200 to c. 1450.',
-      kc: 'KC-2.3.V.A',
+      kc: 'KC-3.1.III.D',
       theme: 'Culture and Society'
     },
     {
       target: 'I can describe how key technologies — paper, printing, gunpowder, the compass, and the stirrup — diffused across Afro-Eurasia through trade networks.',
-      kc: 'KC-2.3.V.B',
+      kc: 'KC-3.1.III.D',
       theme: 'Science and Technology'
     },
     {
       target: 'I can explain how crops, architectural styles, artistic motifs, and literary traditions diffused across Afro-Eurasia as a consequence of trade connectivity.',
-      kc: 'KC-2.3.V.C',
+      kc: 'KC-3.1.III.D',
       theme: 'Culture and Society'
     }
   ],
@@ -56,39 +56,39 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: 'I can identify at least two specific religions and explain how each spread along a named trade route — Silk Roads, Indian Ocean, or trans-Saharan.',
-      kc: 'KC-2.3.V.A',
+      kc: 'KC-3.1.III.D',
       theme: 'Culture and Society'
     },
     {
       criteria: 'I can name at least two technologies that diffused through trade networks and explain where they originated and where they spread.',
-      kc: 'KC-2.3.V.B',
+      kc: 'KC-3.1.III.D',
       theme: 'Science and Technology'
     },
     {
       criteria: 'I can use specific evidence — a crop, an architectural style, or a cultural tradition — to explain how trade produced cultural exchange and transformation.',
-      kc: 'KC-2.3.V.C',
+      kc: 'KC-3.1.III.D',
       theme: 'Culture and Society'
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: 'KC-2.3.V.A',
-      theme: 'Culture and Society',
-      text: 'The expansion of Islam, Christianity, Buddhism, and other belief systems spread along trade routes and were adopted and adapted by local populations.',
-      illustrativeExamples: ['Islam spread by Muslim merchants along Indian Ocean routes', 'Buddhism spread along Silk Roads into East and Southeast Asia', 'Christianity expanded into Central Asia and along European trade routes']
+      code: 'KC-3.1.III.D',
+      theme: 'Cultural Developments and Interactions',
+      text: 'Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations.',
+      illustrativeExamples: ['Influence of Buddhism in East Asia', 'Spread of Hinduism and Buddhism into Southeast Asia', 'Spread of Islam in sub-Saharan Africa and Asia', 'Gunpowder from China', 'Paper from China']
     },
     {
-      code: 'KC-2.3.V.B',
-      theme: 'Science and Technology',
-      text: 'Innovations in transportation and communication, including the spread of paper and printing technologies, spread through trade networks and transformed societies.',
-      illustrativeExamples: ['Chinese paper and printing technology diffused westward through the Islamic world', 'Gunpowder and the magnetic compass spread from China through trade contacts', 'The stirrup facilitated cavalry-based military power across Eurasia']
+      code: 'KC-3.3.II',
+      theme: 'Cultural Developments and Interactions',
+      text: 'The fate of cities varied greatly, with periods of significant decline and periods of increased urbanization, buoyed by rising productivity and expanding trade networks.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-2.3.V.C',
-      theme: 'Culture and Society',
-      text: 'Agricultural and biological diffusion occurred along trade routes, including new crops, domesticated animals, and disease vectors.',
-      illustrativeExamples: ['Sugar, citrus, and cotton diffused across Afro-Eurasia', 'Architectural and artistic traditions blended at trade port cities', 'Mathematical and scientific knowledge moved from the Islamic world into Europe']
+      code: 'KC-3.1.III.C',
+      theme: 'Cultural Developments and Interactions',
+      text: 'As exchange networks intensified, an increasing number of travelers within Afro-Eurasia wrote about their travels.',
+      illustrativeExamples: ['Ibn Battuta', 'Margery Kempe', 'Marco Polo']
     }
   ],
 

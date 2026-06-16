@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain the causes of Silk Road growth, including state-building, pastoral nomads, and merchant networks that created and maintained overland routes.",
-      kc: "KC-2.3.I.B",
+      kc: 'KC-3.1.I.A.i',
       theme: "Economics"
     },
     {
       target: "I can describe the goods and ideas exchanged along the Silk Roads, including silk, spices, paper, gunpowder, Buddhism, Islam, and plague.",
-      kc: "KC-2.3.I.C",
+      kc: 'KC-3.3.I.B',
       theme: "Economics"
     },
     {
       target: "I can explain the effects of Silk Road trade on societies along the routes, including wealth accumulation, urbanization, and the spread of disease.",
-      kc: "KC-2.3.I.D",
+      kc: 'KC-3.1.I.C.i',
       theme: "Economics"
     }
   ],
@@ -56,39 +56,39 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can use specific evidence — relay stations, pastoral nomads, caravanserais, or state protection — to explain what made overland trade across Afro-Eurasia possible.",
-      kc: "KC-2.3.I.B",
+      kc: 'KC-3.1.I.A.i',
       theme: "Economics"
     },
     {
       criteria: "I can identify both goods (silk, spices, porcelain, paper, gunpowder) and ideas (Buddhism, Islam, Christianity, plague) that moved along the Silk Roads and explain their significance.",
-      kc: "KC-2.3.I.C",
+      kc: 'KC-3.3.I.B',
       theme: "Economics"
     },
     {
       criteria: "I can connect Silk Road exchange to specific effects on societies — including wealth, urban growth along routes, and the devastating spread of the Black Death.",
-      kc: "KC-2.3.I.D",
+      kc: 'KC-3.1.I.C.i',
       theme: "Economics"
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: "KC-2.3.I.B",
-      theme: "Economic Systems",
-      text: "The Silk Roads facilitated the exchange of goods, ideas, and people across Afro-Eurasia. State-building, pastoral nomads acting as intermediaries, and networks of merchants and caravanserais made this overland exchange system possible.",
-      illustrativeExamples: ["Caravanserais", "Pastoral nomads as intermediaries", "Chinese silk and porcelain"]
+      code: 'KC-3.1.I.A.i',
+      theme: 'Economic Systems',
+      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.',
+      illustrativeExamples: ['Kashgar', 'Samarkand']
     },
     {
-      code: "KC-2.3.I.C",
-      theme: "Economic Systems",
-      text: "Goods, ideas, and technologies moved across the Silk Roads, including luxury goods, agricultural products, and technologies such as paper, printing, and gunpowder.",
-      illustrativeExamples: ["Silk", "Spices", "Paper", "Gunpowder", "Compass", "Buddhism", "Islam"]
+      code: 'KC-3.1.I.C.i',
+      theme: 'Economic Systems',
+      text: 'The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.',
+      illustrativeExamples: ['Bills of exchange', 'Banking houses', 'Use of paper money']
     },
     {
-      code: "KC-2.3.I.D",
-      theme: "Economic Systems",
-      text: "The Silk Roads had significant effects on the societies they connected, including the accumulation of wealth, urbanization along the routes, and the spread of epidemic disease.",
-      illustrativeExamples: ["Black Death", "Urban growth at trade hubs", "Wealth of Central Asian oasis cities"]
+      code: 'KC-3.3.I.B',
+      theme: 'Economic Systems',
+      text: 'Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.',
+      illustrativeExamples: []
     }
   ],
 

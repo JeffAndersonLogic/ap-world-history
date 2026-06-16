@@ -4,22 +4,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-2.3.IV.A',
-      theme: 'Networks of Exchange',
-      text: 'The introduction of the camel saddle and improved caravan organization made it possible to cross the Sahara, creating a trans-Saharan trade network linking West Africa to the Mediterranean and Islamic world.',
-      illustrativeExamples: ['Camel', 'Camel saddle', 'Caravans', 'Oases']
+      code: 'KC-3.1.II.A.ii',
+      theme: 'Technology and Innovation',
+      text: 'The growth of interregional trade was encouraged by innovations in existing transportation technologies.',
+      illustrativeExamples: ['Camel saddle', 'Caravans']
     },
     {
-      code: 'KC-2.3.IV.B',
-      theme: 'Networks of Exchange',
-      text: 'The trans-Saharan trade network carried gold from West Africa and salt from Saharan mines, creating the wealth that funded states like Mali and Ghana.',
-      illustrativeExamples: ['Wangara gold', 'Taghaza salt', 'Mali Empire', 'Mansa Musa']
+      code: 'KC-3.1.I.A.iv',
+      theme: 'Technology and Innovation',
+      text: 'Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the trans-Saharan trade network.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-2.3.IV.C',
-      theme: 'Networks of Exchange',
-      text: 'Islam spread southward across the Sahara through trade contacts, establishing mosques, Islamic scholarship, and Muslim merchant communities in West African cities.',
-      illustrativeExamples: ['Timbuktu', 'Mansa Musa\'s hajj', 'Islamic scholarship', 'Sankore mosque']
+      code: 'KC-3.1.I.E.ii',
+      theme: 'Governance',
+      text: 'The expansion of empires—including Mali in West Africa—facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.',
+      illustrativeExamples: []
     }
   ];
 

@@ -37,58 +37,58 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how rulers of land-based empires used religion to legitimize their authority and consolidate power.",
-      kc: "KC-3.3.I.A",
-      theme: "Governance"
+      target: "I can explain how the Protestant Reformation marked a break with existing Christian traditions, and how both the Protestant and Catholic reformations contributed to the growth of Christianity.",
+      kc: 'KC-4.1.VI.i',
+      theme: "Cultural Developments and Interactions"
     },
     {
       target: "I can describe the Sunni-Shia divide between the Ottoman and Safavid empires and explain how religious difference drove political conflict.",
-      kc: "KC-3.3.I.B",
-      theme: "Governance"
+      kc: 'KC-4.1.VI.ii',
+      theme: "Cultural Developments and Interactions"
     },
     {
-      target: "I can analyze how the Mughal emperors (especially Akbar) approached religious diversity, and explain why different rulers chose accommodation or enforcement.",
-      kc: "KC-3.3.I.C",
-      theme: "Governance"
+      target: "I can explain how Sikhism developed in South Asia in a context of interactions between Hinduism and Islam.",
+      kc: 'KC-4.1.VI.iii',
+      theme: "Cultural Developments and Interactions"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can give specific examples of rulers claiming religious authority (e.g., Ottoman Sultan as Caliph, Shah Ismail making Shiism the official religion of Persia).",
-      kc: "KC-3.3.I.A",
-      theme: "Governance"
+      criteria: "I can describe a major change introduced by the Protestant Reformation (e.g., Luther's challenge to Church authority and the rise of new Protestant denominations) and explain how the Protestant and Catholic reformations both expanded Christianity.",
+      kc: 'KC-4.1.VI.i',
+      theme: "Cultural Developments and Interactions"
     },
     {
       criteria: "I can explain the Battle of Chaldiran (1514) as both a religious and political conflict between rival empires.",
-      kc: "KC-3.3.I.B",
-      theme: "Governance"
+      kc: 'KC-4.1.VI.ii',
+      theme: "Cultural Developments and Interactions"
     },
     {
-      criteria: "I can compare Akbar's policy of religious tolerance (Din-i-Ilahi) to Aurangzeb's return to strict Islamic enforcement, explaining what each approach reveals about imperial power.",
-      kc: "KC-3.3.I.C",
-      theme: "Governance"
+      criteria: "I can explain how Sikhism, founded by Guru Nanak, emerged from interactions between Hindu and Islamic traditions in South Asia.",
+      kc: 'KC-4.1.VI.iii',
+      theme: "Cultural Developments and Interactions"
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: "KC-3.3.I.A",
-      theme: "Governance",
-      text: "Rulers used religious ideas, symbols, and institutions to legitimize their power. When rulers conquered or unified diverse populations, religion could both unify and divide.",
-      illustrativeExamples: ["Ottoman Sultan as Caliph", "Shah Ismail and Shia Islam", "Akbar's Din-i-Ilahi", "Qing patronage of Tibetan Buddhism"]
+      code: 'KC-4.1.VI.i',
+      theme: 'Cultural Developments and Interactions',
+      text: 'The Protestant Reformation marked a break with existing Christian traditions, and both the Protestant and Catholic reformations contributed to the growth of Christianity.',
+      illustrativeExamples: []
     },
     {
-      code: "KC-3.3.I.B",
-      theme: "Governance",
-      text: "The Ottoman-Safavid conflict shows how sectarian religious difference (Sunni vs. Shia) drove imperial rivalry and warfare. The Battle of Chaldiran (1514) was both a military and religious confrontation.",
-      illustrativeExamples: ["Battle of Chaldiran (1514)", "Sunni vs. Shia divide", "Ottoman-Safavid Wars", "Shah Ismail I"]
+      code: 'KC-4.1.VI.ii',
+      theme: 'Cultural Developments and Interactions',
+      text: 'Political rivalries between the Ottoman and Safavid empires intensified the split within Islam between Sunni and Shi’a.',
+      illustrativeExamples: []
     },
     {
-      code: "KC-3.3.I.C",
-      theme: "Governance",
-      text: "Some rulers adopted syncretic or tolerant religious policies to maintain loyalty among diverse populations; others used religious enforcement to consolidate an identity-based empire.",
-      illustrativeExamples: ["Akbar's Din-i-Ilahi", "Aurangzeb's reimposition of jizya", "Cuius regio, eius religio (Peace of Augsburg)", "Qing tolerance of multiple faiths"]
+      code: 'KC-4.1.VI.iii',
+      theme: 'Cultural Developments and Interactions',
+      text: 'Sikhism developed in South Asia in a context of interactions between Hinduism and Islam.',
+      illustrativeExamples: []
     }
   ],
 

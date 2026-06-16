@@ -38,57 +38,69 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how the Columbian Exchange transferred new crops and animals between hemispheres and assess how these transfers changed diets, economies, and population patterns.",
-      kc: "KC-4.3.I.A",
-      theme: "Interaction"
+      kc: 'KC-4.1.V.B; KC-4.1.V.C',
+      theme: "Humans and the Environment"
     },
     {
       target: "I can describe the catastrophic impact of Old World diseases on indigenous American populations and explain why those populations were so vulnerable to European pathogens.",
-      kc: "KC-4.3.I.B",
-      theme: "Interaction"
+      kc: 'KC-4.1.V.A',
+      theme: "Humans and the Environment"
     },
     {
       target: "I can analyze the economic, social, and environmental consequences of the Columbian Exchange — including the origins of the Atlantic slave trade and global silver flows — and connect them to the demographic collapse of indigenous American peoples.",
-      kc: "KC-4.3.I.C",
-      theme: "Interaction"
+      kc: 'KC-4.1.V',
+      theme: "Humans and the Environment"
     }
   ],
 
   successCriteria: [
     {
       criteria: "I can name at least two crops transferred from the New World to the Old World and two transferred from the Old World to the New, and explain the long-term consequences of each transfer.",
-      kc: "KC-4.3.I.A",
-      theme: "Interaction"
+      kc: 'KC-4.1.V.B; KC-4.1.V.C',
+      theme: "Humans and the Environment"
     },
     {
       criteria: "I can explain the concept of a 'virgin soil epidemic' and explain why indigenous American populations lacked immunity to Old World diseases — and connect this to population collapse estimates.",
-      kc: "KC-4.3.I.B",
-      theme: "Interaction"
+      kc: 'KC-4.1.V.A',
+      theme: "Humans and the Environment"
     },
     {
       criteria: "I can connect the demographic collapse of indigenous American populations to the origins of the Atlantic slave trade, and explain how American silver affected global trade patterns.",
-      kc: "KC-4.3.I.C",
-      theme: "Interaction"
+      kc: 'KC-4.1.V',
+      theme: "Humans and the Environment"
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: 'KC-4.3.I.A',
-      theme: 'Interaction',
-      text: 'The transfer of new crops and animals created new food sources and affected population growth. New World crops (maize, potatoes, cassava) transformed agriculture and diets in the Eastern Hemisphere; Old World animals (horses, cattle) transformed economies and cultures in the Americas.',
-      illustrativeExamples: ['Potato in Europe', 'Maize in Africa and China', 'Horse in the Americas', 'Sugarcane in the Caribbean', 'Tomatoes in the Mediterranean']
+      code: 'KC-4.1.V',
+      theme: 'Humans and the Environment',
+      text: 'The new connections between the Eastern and Western Hemispheres resulted in the exchange of new plants, animals, and diseases, known as the Columbian Exchange.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.3.I.B',
-      theme: 'Interaction',
-      text: 'The spread of disease from Afro-Eurasia to the Americas caused a massive demographic catastrophe. Old World diseases (especially smallpox) killed an estimated 50–90% of indigenous American populations who had no prior immunity.',
-      illustrativeExamples: ['Smallpox in Tenochtitlan (1520)', 'Virgin soil epidemics', 'Death of Cuitláhuac', 'Demographic collapse of indigenous Caribbean peoples']
+      code: 'KC-4.1.V.A',
+      theme: 'Humans and the Environment',
+      text: 'European colonization of the Americas led to the unintentional transfer of disease vectors, including mosquitoes and rats, and the spread of diseases that were endemic in the Eastern Hemisphere, including smallpox, measles, and malaria. Some of these diseases substantially reduced the indigenous populations, with catastrophic effects in many areas.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.3.I.C',
-      theme: 'Interaction',
-      text: 'The Columbian Exchange also resulted in environmental changes and created new economic systems. American silver flowed into global trade; demographic collapse created labor shortages that drove demand for enslaved African workers.',
-      illustrativeExamples: ['Potosí silver mines', 'Atlantic slave trade origins', 'Encomienda system', 'Deforestation of Americas', 'Silver disrupting Asian trade systems']
+      code: 'KC-4.1.V.B',
+      theme: 'Humans and the Environment',
+      text: 'American foods became staple crops in various parts of Europe, Asia, and Africa. Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.V.C',
+      theme: 'Humans and the Environment',
+      text: 'Afro-Eurasian fruit trees, grains, sugar, and domesticated animals were brought by Europeans to the Americas, while other foods were brought by African enslaved persons.',
+      illustrativeExamples: ['Horses', 'Pigs', 'Cattle', 'Okra', 'Rice']
+    },
+    {
+      code: 'KC-4.1.V.D',
+      theme: 'Humans and the Environment',
+      text: 'Populations in Afro-Eurasia benefited nutritionally from the increased diversity of American food crops.',
+      illustrativeExamples: []
     }
   ],
 

@@ -37,58 +37,64 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain the multiple motivations — religious, economic, and political — that drove European maritime exploration after c. 1450.",
-      kc: "KC-4.2.I.A",
-      theme: "Interaction"
+      target: "I can describe the role of states in sponsoring new transoceanic maritime exploration, and explain the religious, economic, and political motivations behind it.",
+      kc: 'KC-4.1.III',
+      theme: "Governance"
     },
     {
       target: "I can describe the key European voyages: Portuguese exploration of the African coast and route to India, Columbus's Caribbean voyage, and Magellan's circumnavigation.",
-      kc: "KC-4.2.I.B",
-      theme: "Interaction"
+      kc: 'KC-4.1.III.A; KC-4.1.III.B',
+      theme: "Economic Systems"
     },
     {
-      target: "I can analyze how the Treaty of Tordesillas (1494) reflects European assumptions about power, and explain how different peoples experienced the era of European exploration differently.",
-      kc: "KC-4.2.I.C",
-      theme: "Interaction"
+      target: "I can explain how English, French, and Dutch states sponsored northern Atlantic crossings in search of alternative routes to Asia, and how the Treaty of Tordesillas (1494) shaped that competition.",
+      kc: 'KC-4.1.III.C',
+      theme: "Economic Systems"
     }
   ],
 
   successCriteria: [
     {
       criteria: "I can explain at least two specific motivations for European exploration — including economic incentives (spice trade profits) and religious motivations (conversion, crusading) — and connect each to specific state actions.",
-      kc: "KC-4.2.I.A",
-      theme: "Interaction"
+      kc: 'KC-4.1.III',
+      theme: "Governance"
     },
     {
       criteria: "I can trace the key routes: Portuguese south along Africa and around the Cape to India (Dias 1488, da Gama 1498), Columbus to the Caribbean (1492), Magellan's circumnavigation (1519–1522).",
-      kc: "KC-4.2.I.B",
-      theme: "Interaction"
+      kc: 'KC-4.1.III.A; KC-4.1.III.B',
+      theme: "Economic Systems"
     },
     {
-      criteria: "I can explain the Treaty of Tordesillas (1494) and what it reveals about European assumptions regarding non-European peoples, and identify at least one perspective from an indigenous or non-European group affected by European exploration.",
-      kc: "KC-4.2.I.C",
-      theme: "Interaction"
+      criteria: "I can explain how the Treaty of Tordesillas (1494) divided the non-European world between Spain and Portugal, and how English, French, and Dutch states responded by seeking alternative northern routes to Asia.",
+      kc: 'KC-4.1.III.C',
+      theme: "Economic Systems"
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: 'KC-4.2.I.A',
-      theme: 'Interaction',
-      text: 'European states competed for trade routes, colonial territories, and commercial profit. Religious motivations — conversion and crusading — combined with economic and political factors to drive state-sponsored exploration.',
-      illustrativeExamples: ['Portuguese spice trade', 'Spanish silver extraction', 'God, Glory, and Gold', 'Royal patronage of exploration']
+      code: 'KC-4.1.III',
+      theme: 'Governance',
+      text: 'New state-supported transoceanic maritime exploration occurred in this period.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.2.I.B',
-      theme: 'Interaction',
-      text: 'European exploration of the Atlantic and Pacific was led by Portuguese and Spanish sailors — including Vasco da Gama, Christopher Columbus, and Ferdinand Magellan — who established new transoceanic routes.',
-      illustrativeExamples: ['Vasco da Gama reaching India (1498)', 'Columbus reaching the Caribbean (1492)', 'Magellan-Elcano circumnavigation (1519–1522)', 'Bartolomeu Dias rounding the Cape (1488)']
+      code: 'KC-4.1.III.A',
+      theme: 'Economic Systems',
+      text: 'Portuguese development of maritime technology and navigational skills led to increased travel to and trade with Africa and Asia and resulted in the construction of a global trading-post empire.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.2.I.C',
-      theme: 'Interaction',
-      text: 'The Treaty of Tordesillas (1494) divided the non-European world between Spain and Portugal, reflecting European assumptions about power. Indigenous peoples encountered by European explorers had their own responses to this contact.',
-      illustrativeExamples: ['Treaty of Tordesillas (1494)', 'Taíno encounter with Columbus', 'Portuguese contact with West African kingdoms', 'Aztec and Inca responses to Spanish arrival']
+      code: 'KC-4.1.III.B',
+      theme: 'Economic Systems',
+      text: 'Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.III.C',
+      theme: 'Economic Systems',
+      text: 'Northern Atlantic crossings were undertaken under English, French, and Dutch sponsorship, often with the goal of finding alternative sailing routes to Asia.',
+      illustrativeExamples: []
     }
   ],
 

@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how technology and environmental knowledge — including dhow ships, the magnetic compass, and monsoon wind patterns — enabled Indian Ocean trade.",
-      kc: "KC-2.3.III.A",
+      kc: 'KC-3.1.I.C.ii; KC-3.1.II.A.i',
       theme: "Technology"
     },
     {
       target: "I can describe the goods and peoples exchanged across the Indian Ocean, including spices, textiles, gold, ivory, and merchants from Arabia, India, China, and the Swahili coast.",
-      kc: "KC-2.3.III.B",
+      kc: 'KC-3.1.III.B',
       theme: "Economics"
     },
     {
       target: "I can explain the effects of Indian Ocean trade — including the growth of port cities, the formation of diasporic merchant communities, and the spread of Islam.",
-      kc: "KC-2.3.III.C",
+      kc: 'KC-3.1.I.A.ii; KC-3.1.I.A.iii',
       theme: "Cultural Developments and Interactions"
     }
   ],
@@ -56,39 +56,57 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can use specific evidence — monsoon winds, dhow construction, or the magnetic compass — to explain how environmental knowledge and technology made Indian Ocean maritime trade possible.",
-      kc: "KC-2.3.III.A",
+      kc: 'KC-3.1.I.C.ii; KC-3.1.II.A.i',
       theme: "Technology"
     },
     {
       criteria: "I can identify the major goods (spices, textiles, gold, ivory) and merchant communities (Arab, Indian, Chinese, Swahili, Persian) that participated in Indian Ocean exchange and explain what made their participation significant.",
-      kc: "KC-2.3.III.B",
+      kc: 'KC-3.1.III.B',
       theme: "Economics"
     },
     {
       criteria: "I can connect Indian Ocean trade to specific effects: cosmopolitan port cities like Kilwa, Calicut, Quanzhou, and Malacca; diasporic merchant communities; and the spread of Islam along maritime routes.",
-      kc: "KC-2.3.III.C",
+      kc: 'KC-3.1.I.A.ii; KC-3.1.I.A.iii',
       theme: "Cultural Developments and Interactions"
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: "KC-2.3.III.A",
-      theme: "Technology",
-      text: "Indian Ocean trade was made possible by knowledge of monsoon wind patterns, advances in ship design such as the dhow, and navigational technology including the magnetic compass. These tools allowed merchants to make predictable seasonal voyages across the ocean.",
-      illustrativeExamples: ["Monsoon winds", "Dhow ships", "Magnetic compass", "Lateen sails"]
+      code: 'KC-3.1.I.A.ii',
+      theme: 'Economic Systems',
+      text: 'Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Indian Ocean, promoting the growth of powerful new trading cities.',
+      illustrativeExamples: []
     },
     {
-      code: "KC-2.3.III.B",
-      theme: "Economic Systems",
-      text: "The Indian Ocean trade network connected East Africa, the Arabian Peninsula, the Indian subcontinent, Southeast Asia, and China. Merchants exchanged spices, textiles, gold, ivory, and enslaved people. Arab, Indian, Persian, Swahili, and Chinese merchants all participated in this system.",
-      illustrativeExamples: ["Spices from Southeast Asia", "Gold from East Africa", "Textiles from India", "Chinese porcelain", "Arab and Indian merchant networks"]
+      code: 'KC-3.1.I.C.ii',
+      theme: 'Economic Systems',
+      text: 'The growth of interregional trade in luxury goods was encouraged by significant innovations in previously existing transportation and commercial technologies, including the use of the compass, the astrolabe, and larger ship designs.',
+      illustrativeExamples: []
     },
     {
-      code: "KC-2.3.III.C",
-      theme: "Cultural Developments and Interactions",
-      text: "Indian Ocean trade produced lasting cultural effects: cosmopolitan port cities developed at major nodes of exchange, diasporic merchant communities settled far from their homelands, and Islam spread along maritime routes through the activities of Muslim merchants.",
-      illustrativeExamples: ["Kilwa", "Calicut", "Quanzhou", "Malacca", "Swahili culture", "Spread of Islam to Southeast Asia and East Africa"]
+      code: 'KC-3.1.I.A.iii',
+      theme: 'Economic Systems',
+      text: 'The Indian Ocean trading network fostered the growth of states.',
+      illustrativeExamples: ['City-states of the Swahili Coast', 'Gujarat', 'Sultanate of Malacca']
+    },
+    {
+      code: 'KC-3.1.III.B',
+      theme: 'Cultural Developments and Interactions',
+      text: 'In key places along important trade routes, merchants set up diasporic communities where they introduced their own cultural traditions into the indigenous cultures and, in turn, indigenous cultures influenced merchant cultures.',
+      illustrativeExamples: ['Arab and Persian communities in East Africa', 'Chinese merchant communities in Southeast Asia', 'Malay communities in the Indian Ocean basin']
+    },
+    {
+      code: 'KC-3.2.II.A.iii',
+      theme: 'Cultural Developments and Interactions',
+      text: 'Interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers, including during Chinese maritime activity led by Ming admiral Zheng He.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-3.1.II.A.i',
+      theme: 'Humans and the Environment',
+      text: 'The expansion and intensification of long-distance trade routes often depended on environmental knowledge, including advanced knowledge of the monsoon winds.',
+      illustrativeExamples: []
     }
   ],
 

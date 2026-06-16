@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain the major economic changes in global trade networks from c. 1450 to c. 1750, including how American silver created the first genuinely global trade circuit and caused the global price revolution.",
-      kc: "KC-4.8.I.A",
+      kc: 'KC-4.1',
       theme: "Economic Systems"
     },
     {
       target: "I can analyze the major demographic and environmental changes caused by the Columbian Exchange, including the population collapse in the Americas and the spread of new crops globally.",
-      kc: "KC-4.8.I.B",
-      theme: "Demography and Environment"
+      kc: 'KC-4.2.II',
+      theme: "Humans and the Environment"
     },
     {
       target: "I can evaluate what continued from c. 1450 — including the Indian Ocean trade, Asian manufacturing dominance, and Islamic commercial networks — and explain why these continuities persisted alongside dramatic change.",
-      kc: "KC-4.8.I.C",
+      kc: 'KC-4.3',
       theme: "Economic Systems"
     }
   ],
@@ -56,39 +56,63 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can explain how the Manila Galleon trade and Atlantic silver routes created the first genuinely global trade network, and describe the global price revolution as an economic effect of the silver influx.",
-      kc: "KC-4.8.I.A",
+      kc: 'KC-4.1',
       theme: "Economic Systems"
     },
     {
       criteria: "I can describe the demographic catastrophe in the Americas (50–90% population loss) and explain how it drove the Atlantic slave trade; I can also identify at least two crops from the Columbian Exchange and explain their global impact.",
-      kc: "KC-4.8.I.B",
-      theme: "Demography and Environment"
+      kc: 'KC-4.2.II',
+      theme: "Humans and the Environment"
     },
     {
       criteria: "I can identify at least two specific continuities (Indian Ocean trade, Chinese economic dominance, Islamic commercial networks) and explain the structural factors that sustained them despite European maritime expansion.",
-      kc: "KC-4.8.I.C",
+      kc: 'KC-4.3',
       theme: "Economic Systems"
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: 'KC-4.8.I.A',
-      theme: 'Economic Systems',
-      text: 'American silver — especially from Potosí — created the first genuinely global trade network, connecting the Americas to Europe and Asia through the Manila Galleon trade and the Atlantic system. The resulting silver influx caused a global price revolution across Europe and Asia.',
-      illustrativeExamples: ['Manila Galleon trade (1565–1815)', 'Potosí silver', 'Global price revolution', 'Chinese demand for silver', 'Casa de Contratación (Seville)']
+      code: 'KC-4.1',
+      theme: 'Transoceanic Interconnections',
+      text: 'The interconnection of the Eastern and Western Hemispheres, made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.8.I.B',
-      theme: 'Demography and Environment',
-      text: 'The Columbian Exchange caused the largest demographic catastrophe in human history in the Americas, while spreading new crops globally that eventually contributed to population growth in the Eastern Hemisphere.',
-      illustrativeExamples: ['Population collapse in the Americas (50–90%)', 'Smallpox and epidemic disease', 'Potato, maize, cassava, tomato', 'Atlantic slave trade as demographic response', 'Ecological transformation of the Americas']
+      code: 'KC-4.1.II',
+      theme: 'Transoceanic Interconnections',
+      text: 'Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.8.I.C',
-      theme: 'Economic Systems',
-      text: 'Despite European maritime expansion, the Indian Ocean trade continued and grew; Chinese manufacturing dominance persisted; and Islamic commercial networks remained important intermediaries. Asian demand — not European initiative — drove much of the global trade transformation.',
-      illustrativeExamples: ['Indian Ocean trade (continuity)', 'Chinese manufacturing dominance', 'Islamic commercial networks', 'Single Whip Tax Reform (China, 1581)', 'Asian role in driving silver demand']
+      code: 'KC-4.1.II.A',
+      theme: 'Transoceanic Interconnections',
+      text: 'The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.2',
+      theme: 'Transoceanic Interconnections',
+      text: 'Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.2.II',
+      theme: 'Transoceanic Interconnections',
+      text: 'The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.3',
+      theme: 'Transoceanic Interconnections',
+      text: 'Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.3.III.ii',
+      theme: 'Transoceanic Interconnections',
+      text: 'Economic disputes led to rivalries and conflict between states.',
+      illustrativeExamples: []
     }
   ],
 

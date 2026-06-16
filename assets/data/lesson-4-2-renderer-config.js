@@ -4,22 +4,28 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.2.I.A',
-      theme: 'Interaction',
-      text: 'European states competed for trade routes, colonial territories, and commercial profit. Religious motivations — conversion and crusading — combined with economic and political factors to drive state-sponsored exploration.',
-      illustrativeExamples: ['Portuguese spice trade', 'Spanish silver extraction', 'God, Glory, and Gold', 'Royal patronage of exploration']
+      code: 'KC-4.1.III',
+      theme: 'Governance',
+      text: 'New state-supported transoceanic maritime exploration occurred in this period.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.2.I.B',
-      theme: 'Interaction',
-      text: 'European exploration was led by Portuguese and Spanish sailors — including Vasco da Gama, Christopher Columbus, and Ferdinand Magellan — who established new transoceanic routes connecting previously isolated hemispheres.',
-      illustrativeExamples: ['Vasco da Gama reaching India (1498)', 'Columbus reaching the Caribbean (1492)', 'Magellan-Elcano circumnavigation (1519–1522)', 'Bartolomeu Dias rounding the Cape of Good Hope (1488)']
+      code: 'KC-4.1.III.A',
+      theme: 'Economic Systems',
+      text: 'Portuguese development of maritime technology and navigational skills led to increased travel to and trade with Africa and Asia and resulted in the construction of a global trading-post empire.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.2.I.C',
-      theme: 'Interaction',
-      text: 'The Treaty of Tordesillas (1494) divided the non-European world between Spain and Portugal, reflecting European assumptions about power and the right to claim non-European territories without consent of their inhabitants.',
-      illustrativeExamples: ['Treaty of Tordesillas (1494)', 'Taíno encounter with Columbus', 'Portuguese contact with West African kingdoms', 'Encomienda system']
+      code: 'KC-4.1.III.B',
+      theme: 'Economic Systems',
+      text: 'Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.III.C',
+      theme: 'Economic Systems',
+      text: 'Northern Atlantic crossings were undertaken under English, French, and Dutch sponsorship, often with the goal of finding alternative sailing routes to Asia.',
+      illustrativeExamples: []
     }
   ];
 

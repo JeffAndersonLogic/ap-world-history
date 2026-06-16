@@ -4,16 +4,16 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.1.I.A',
-      theme: 'Interaction',
-      text: 'Improved maritime technologies, including the magnetic compass, astrolabe, lateen sail, and the caravel, allowed Europeans to explore the Atlantic and then expand their reach around the world.',
-      illustrativeExamples: ['Magnetic compass', 'Astrolabe', 'Lateen sail', 'Caravel', 'Portolan charts']
+      code: 'KC-4.1.II',
+      theme: 'Technology and Innovation',
+      text: 'Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.1.I.B',
-      theme: 'Interaction',
-      text: 'Mapmaking and the printing press contributed to European exploration and knowledge of the wider world by enabling geographic discoveries to be recorded, reproduced, and widely distributed.',
-      illustrativeExamples: ['Portolan charts', 'Waldseemüller map (1507)', 'Printing press', 'Geographic treatises and sailing guides']
+      code: 'KC-4.1.II.A',
+      theme: 'Technology and Innovation',
+      text: 'The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible.',
+      illustrativeExamples: ['Caravel', 'Carrack', 'Fluyt', 'Lateen sail', 'Compass', 'Astronomical charts']
     }
   ];
 

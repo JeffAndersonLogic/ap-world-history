@@ -39,17 +39,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: 'I can identify similarities across all three Afro-Eurasian trade networks — Silk Roads, Indian Ocean, and trans-Saharan — including long-distance exchange, the movement of goods and ideas, and cultural diffusion.',
-      kc: 'KC-2.3.I.B',
+      kc: 'KC-3.1',
       theme: 'Economics'
     },
     {
       target: 'I can identify key differences between the three trade networks in geography, transportation technology, dominant goods, and cultural effects.',
-      kc: 'KC-2.3.III.A',
+      kc: 'KC-3.1.I.C.i',
       theme: 'Economics'
     },
     {
       target: 'I can explain how comparing the three networks reveals broader patterns of Afro-Eurasian connectivity and supports AP-style comparison arguments with evidence.',
-      kc: 'KC-2.3.IV.A',
+      kc: 'KC-3.3',
       theme: 'Economics'
     }
   ],
@@ -57,39 +57,51 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: 'I can state at least two specific similarities shared by all three trade networks and support each with a concrete historical example.',
-      kc: 'KC-2.3.I.B',
+      kc: 'KC-3.1',
       theme: 'Economics'
     },
     {
       criteria: 'I can explain at least two meaningful differences between any two of the three networks, using specific evidence about geography, technology, or goods exchanged.',
-      kc: 'KC-2.3.III.A',
+      kc: 'KC-3.1.I.C.i',
       theme: 'Economics'
     },
     {
       criteria: 'I can use a comparison of trade networks to build a historical argument that includes a claim, evidence, and reasoning connecting to a broader pattern of Afro-Eurasian exchange.',
-      kc: 'KC-2.3.IV.A',
+      kc: 'KC-3.3',
       theme: 'Economics'
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: 'KC-2.3.I.B',
-      theme: 'Economic Systems',
-      text: 'All three major Afro-Eurasian trade networks — Silk Roads, Indian Ocean, and trans-Saharan — shared core features: long-distance exchange of luxury goods, the movement of ideas and technologies, the formation of merchant diaspora communities, and the enrichment of intermediary states.',
-      illustrativeExamples: ['Merchant diaspora communities across all three networks', 'Luxury goods moving across vast distances', 'Islam and other religions spreading through commerce']
+      code: 'KC-3.1',
+      theme: 'Networks of Exchange',
+      text: 'A deepening and widening of networks of human interaction within and across regions contributed to cultural, technological, and biological diffusion within and between various societies.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-2.3.III.A',
-      theme: 'Economic Systems',
-      text: 'The three trade networks differed significantly in their geographic settings, transportation technologies, dominant trade goods, and the religions and cultural traditions they carried.',
-      illustrativeExamples: ['Silk Roads: overland camel caravans and relay stations', 'Indian Ocean: monsoon-driven maritime trade with dhows and junks', 'Trans-Saharan: specialized camel technology and oasis towns']
+      code: 'KC-3.1.I.A.i',
+      theme: 'Networks of Exchange',
+      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-2.3.IV.A',
-      theme: 'Economic Systems',
-      text: 'Comparing the three Afro-Eurasian trade networks reveals that despite different technologies and geographies, they together formed a single interconnected system of exchange that shaped the cultures, economies, and political structures of c. 1200–1450.',
-      illustrativeExamples: ['Mali Empire wealth from trans-Saharan gold trade', 'Swahili Coast city-states on the Indian Ocean network', 'Central Asian oasis cities on the Silk Roads']
+      code: 'KC-3.1.I.C.i',
+      theme: 'Networks of Exchange',
+      text: 'The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-3.3',
+      theme: 'Networks of Exchange',
+      text: 'Changes in trade networks resulted from and stimulated increasing productive capacity, with important implications for social and gender structures and environmental processes.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-3.3.I.B',
+      theme: 'Networks of Exchange',
+      text: 'Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.',
+      illustrativeExamples: []
     }
   ],
 

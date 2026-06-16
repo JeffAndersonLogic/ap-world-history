@@ -38,17 +38,17 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can explain how gunpowder technology enabled land-based empires to expand their territories between c. 1450 and c. 1750.",
-      kc: "KC-3.1.I.A",
+      kc: 'KC-4.3.II',
       theme: "Governance"
     },
     {
       target: "I can identify the major land-based empires and describe the geography and methods of their expansion.",
-      kc: "KC-3.1.I.B",
+      kc: 'KC-4.3.II.B',
       theme: "Governance"
     },
     {
-      target: "I can explain the historical significance of the Ottoman conquest of Constantinople (1453) and its effects on Eurasian trade and politics.",
-      kc: "KC-3.1.I.B",
+      target: "I can explain how political and religious disputes led to rivalries and conflict between land-based empires, such as the Safavid–Mughal conflict and the Songhai Empire's conflict with Morocco.",
+      kc: 'KC-4.3.III.i',
       theme: "Governance"
     }
   ],
@@ -56,39 +56,39 @@ window.BEHISTORICAL_LESSON = {
   successCriteria: [
     {
       criteria: "I can name specific gunpowder weapons (cannons, firearms) and explain how they gave empires military advantages over rivals and fortified opponents.",
-      kc: "KC-3.1.I.A",
+      kc: 'KC-4.3.II',
       theme: "Governance"
     },
     {
       criteria: "I can describe the expansion of at least two empires with specific geographic and chronological evidence (e.g., Ottomans into Anatolia, Balkans, North Africa; Mughals across the Indian subcontinent).",
-      kc: "KC-3.1.I.B",
+      kc: 'KC-4.3.II.B',
       theme: "Governance"
     },
     {
-      criteria: "I can explain why 1453 mattered — for trade routes, for Christian Europe, for Ottoman legitimacy, and for the post-Mongol reorganization of Eurasian power.",
-      kc: "KC-3.1.I.B",
+      criteria: "I can identify a specific imperial rivalry (e.g., the Safavid–Mughal conflict or the Songhai Empire's conflict with Morocco) and explain how political and religious disputes fueled conflict between states.",
+      kc: 'KC-4.3.III.i',
       theme: "Governance"
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: "KC-3.1.I.A",
-      theme: "Governance",
-      text: "Empires gained and consolidated power by using new military technologies including gunpowder weapons such as cannons and matchlock firearms. Land-based empires — the Ottoman, Safavid, Mughal, Qing, and Russian — used these tools to conquer territory and suppress internal opposition.",
-      illustrativeExamples: ["Ottoman Empire", "Safavid Empire", "Mughal Empire", "Qing Dynasty", "Cannon", "Janissaries"]
+      code: 'KC-4.3.II',
+      theme: 'Governance',
+      text: 'Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.',
+      illustrativeExamples: []
     },
     {
-      code: "KC-3.1.I.B",
-      theme: "Governance",
-      text: "The Ottoman conquest of Constantinople in 1453 ended the Byzantine Empire and dramatically reshaped Eurasian trade and political power. Ottoman expansion continued into the Balkans, North Africa, and Southwest Asia, making the empire one of the most powerful states in the world by c. 1500.",
-      illustrativeExamples: ["Conquest of Constantinople 1453", "Fall of Byzantine Empire", "Ottoman expansion into Balkans and North Africa"]
+      code: 'KC-4.3.II.B',
+      theme: 'Governance',
+      text: 'Land empires included the Manchu in Central and East Asia; the Mughal in South and Central Asia; the Ottoman in Southern Europe, the Middle East, and North Africa; and the Safavids in the Middle East.',
+      illustrativeExamples: []
     },
     {
-      code: "KC-3.1.I.C",
-      theme: "Governance",
-      text: "Empires recruited military forces from conquered or enslaved populations, incorporating diverse peoples into their armies. The Ottoman devshirme system conscripted Christian boys from the Balkans and trained them as elite soldiers (Janissaries) and administrators, creating loyalty to the sultan rather than to ethnic or regional identities.",
-      illustrativeExamples: ["Devshirme system", "Janissaries", "Enslaved soldiers", "Military recruitment from conquered peoples"]
+      code: 'KC-4.3.III.i',
+      theme: 'Governance',
+      text: 'Political and religious disputes led to rivalries and conflict between states.',
+      illustrativeExamples: ['Safavid–Mughal conflict', 'Songhai Empire’s conflict with Morocco']
     }
   ],
 

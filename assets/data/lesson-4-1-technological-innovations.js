@@ -38,51 +38,51 @@ window.BEHISTORICAL_LESSON = {
   learningTargets: [
     {
       target: "I can identify and explain the maritime technologies that enabled European oceanic exploration after c. 1450.",
-      kc: "KC-4.1.I.A",
-      theme: "Interaction"
+      kc: 'KC-4.1.II.A',
+      theme: "Technology and Innovation"
     },
     {
-      target: "I can explain how cartographic innovations and the printing press contributed to the spread of geographic knowledge that made further exploration possible.",
-      kc: "KC-4.1.I.B",
-      theme: "Interaction"
+      target: "I can explain how knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread and facilitated European technological developments and innovation.",
+      kc: 'KC-4.1.II',
+      theme: "Technology and Innovation"
     },
     {
-      target: "I can analyze how maritime technologies were connected to state-sponsored exploration, especially by Portugal and Spain.",
-      kc: "KC-4.1.I",
-      theme: "Interaction"
+      target: "I can explain how new tools, innovations in ship design, and an improved understanding of regional wind and current patterns made transoceanic travel and trade possible.",
+      kc: 'KC-4.1.II.A',
+      theme: "Technology and Innovation"
     }
   ],
 
   successCriteria: [
     {
       criteria: "I can name at least three specific maritime technologies and explain what navigation problem each one solved for sailors attempting extended oceanic voyages.",
-      kc: "KC-4.1.I.A",
-      theme: "Interaction"
+      kc: 'KC-4.1.II.A',
+      theme: "Technology and Innovation"
     },
     {
-      criteria: "I can explain how the printing press changed the distribution of geographic knowledge, and give one specific example of a printed map or geographic text that spread exploration knowledge.",
-      kc: "KC-4.1.I.B",
-      theme: "Interaction"
+      criteria: "I can give a specific example of knowledge or technology from the Classical, Islamic, or Asian world (e.g., the compass, the lateen sail, or Arabic astronomical and mathematical learning) that European navigators adopted.",
+      kc: 'KC-4.1.II',
+      theme: "Technology and Innovation"
     },
     {
-      criteria: "I can connect specific maritime technologies to the Portuguese model of systematic exploration and explain why state sponsorship was necessary for these voyages.",
-      kc: "KC-4.1.I",
-      theme: "Interaction"
+      criteria: "I can name specific ship designs (caravel, carrack, fluyt) and navigational tools (lateen sail, compass, astronomical charts) and explain what each contributed to oceanic travel.",
+      kc: 'KC-4.1.II.A',
+      theme: "Technology and Innovation"
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: 'KC-4.1.I.A',
-      theme: 'Interaction',
-      text: 'Improved maritime technologies, including the magnetic compass, astrolabe, lateen sail, and the caravel, allowed Europeans to explore the Atlantic and then expand their reach around the world.',
-      illustrativeExamples: ['Magnetic compass', 'Astrolabe', 'Lateen sail', 'Caravel', 'Portolan charts']
+      code: 'KC-4.1.II',
+      theme: 'Technology and Innovation',
+      text: 'Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.1.I.B',
-      theme: 'Interaction',
-      text: 'Mapmaking and the printing press contributed to European exploration and knowledge of the wider world by enabling geographic discoveries to be recorded, reproduced, and widely distributed.',
-      illustrativeExamples: ['Portolan charts', 'Waldseemüller map (1507)', 'Printing press', 'Geographic treatises and sailing guides']
+      code: 'KC-4.1.II.A',
+      theme: 'Technology and Innovation',
+      text: 'The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible.',
+      illustrativeExamples: ['Caravel', 'Carrack', 'Fluyt', 'Lateen sail', 'Compass', 'Astronomical charts']
     }
   ],
 

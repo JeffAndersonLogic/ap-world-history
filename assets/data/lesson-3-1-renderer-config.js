@@ -4,22 +4,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-3.1.I.A',
+      code: 'KC-4.3.II',
       theme: 'Governance',
-      text: 'Empires gained and consolidated power by using new military technologies, including gunpowder weapons such as cannons and matchlock firearms. The Ottoman, Safavid, Mughal, Qing, and Russian empires all relied on gunpowder armies to conquer and hold territory.',
-      illustrativeExamples: ['Cannons', 'Matchlock firearms', 'Janissaries', 'Ottoman bombards']
+      text: 'Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-3.1.I.B',
+      code: 'KC-4.3.II.B',
       theme: 'Governance',
-      text: 'The Ottoman conquest of Constantinople in 1453 ended the Byzantine Empire and reshaped Eurasian trade routes and political power. Ottoman expansion continued across three continents, making the empire one of the most powerful states in the early modern world.',
-      illustrativeExamples: ['Fall of Constantinople 1453', 'Mehmed II', 'Byzantine Empire', 'Ottoman expansion into Balkans and North Africa']
+      text: 'Land empires included the Manchu in Central and East Asia; the Mughal in South and Central Asia; the Ottoman in Southern Europe, the Middle East, and North Africa; and the Safavids in the Middle East.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-3.1.I.C',
+      code: 'KC-4.3.III.i',
       theme: 'Governance',
-      text: 'Empires recruited military forces from conquered or enslaved populations. The Ottoman devshirme system conscripted Christian boys from the Balkans, converting them to Islam and training them as elite soldiers (Janissaries) and administrators loyal to the sultan.',
-      illustrativeExamples: ['Devshirme system', 'Janissaries', 'Military slavery', 'Enslaved soldiers']
+      text: 'Political and religious disputes led to rivalries and conflict between states.',
+      illustrativeExamples: ['Safavid–Mughal conflict', 'Songhai Empire’s conflict with Morocco']
     }
   ];
 

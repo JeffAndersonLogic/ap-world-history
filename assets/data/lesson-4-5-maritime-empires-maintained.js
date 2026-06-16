@@ -37,58 +37,88 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how European maritime empires used labor systems — encomienda, mita, and chattel slavery — to extract resources from their colonies.",
-      kc: "KC-4.5.I.A",
-      theme: "Economic Systems"
-    },
-    {
-      target: "I can analyze how colonial administration — viceroyalties, audiencias, and the Catholic Church — maintained imperial control in the Americas.",
-      kc: "KC-4.5.I.B",
+      target: "I can explain how European rulers used mercantilist policies and joint-stock companies to expand and control their economies and claim overseas territories.",
+      kc: 'KC-4.1.IV.C',
       theme: "Governance"
     },
     {
-      target: "I can evaluate how the extraction of American silver from Potosí transformed global trade networks through the Manila Galleon trade and the global price revolution.",
-      kc: "KC-4.5.I.C",
+      target: "I can explain how the global circulation of goods — driven by chartered European monopoly companies and the global flow of silver from the Americas — reshaped networks of exchange across Afro-Eurasia.",
+      kc: 'KC-4.1.IV',
       theme: "Economic Systems"
+    },
+    {
+      target: "I can explain how the Atlantic trading system moved goods, wealth, and enslaved laborers, and produced a mixing of African, American, and European cultures and peoples.",
+      kc: 'KC-4.1.IV.D.i; KC-4.1.IV.D.ii',
+      theme: "Social Interactions and Organization"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can describe at least two labor systems used in Spanish colonial America (encomienda, mita) and explain how each served colonial economic goals, including the role of disease in driving the shift from encomienda to mita and chattel slavery.",
-      kc: "KC-4.5.I.A",
-      theme: "Economic Systems"
-    },
-    {
-      criteria: "I can explain the role of the viceregal system, audiencias, and the Catholic Church in administering Spanish colonial territories, and describe how these institutions maintained order across vast distances.",
-      kc: "KC-4.5.I.B",
+      criteria: "I can describe mercantilism and the joint-stock company (e.g., the Dutch VOC) and explain how European rulers used them to compete for wealth and overseas territory.",
+      kc: 'KC-4.1.IV.C',
       theme: "Governance"
     },
     {
-      criteria: "I can trace how silver from Potosí flowed through the Manila Galleon trade and Seville's Casa de Contratación to connect the Americas, Europe, and Asia, and explain the global price revolution as an effect of silver influx.",
-      kc: "KC-4.5.I.C",
+      criteria: "I can trace how the global flow of silver — especially from Spanish America — and chartered monopoly companies linked the Americas, Europe, and Asia, while regional Afro-Eurasian markets continued to flourish.",
+      kc: 'KC-4.1.IV',
       theme: "Economic Systems"
+    },
+    {
+      criteria: "I can explain how the Atlantic trading system moved enslaved laborers and goods and produced a cultural synthesis among African, American, and European peoples.",
+      kc: 'KC-4.1.IV.D.i; KC-4.1.IV.D.ii',
+      theme: "Social Interactions and Organization"
     }
   ],
 
   collegeBoardKeyConcepts: [
     {
-      code: 'KC-4.5.I.A',
-      theme: 'Economic Systems',
-      text: 'European colonial empires relied on forced and coerced labor systems — including encomienda, mita, and chattel slavery — to extract resources and generate wealth from their colonies.',
-      illustrativeExamples: ['Encomienda', 'Mita', 'Potosí silver mines', 'Chattel slavery in Brazil and the Caribbean', 'Bartolomé de las Casas and the New Laws of 1542']
-    },
-    {
-      code: 'KC-4.5.I.B',
+      code: 'KC-4.1.IV.C',
       theme: 'Governance',
-      text: 'Colonial administration was organized through viceroyalties, audiencias, and the Catholic Church — each of which served administrative, judicial, and cultural conversion roles across vast colonial territories.',
-      illustrativeExamples: ['Viceroyalty of New Spain', 'Viceroyalty of Peru', 'Audiencias', 'Jesuit and Franciscan missions', 'Casa de Contratación']
+      text: 'Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories. Joint-stock companies, influenced by these mercantilist principles, were used by rulers and merchants to finance exploration and were used by rulers to compete against one another in global trade.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-4.5.I.C',
+      code: 'KC-4.3.III.ii',
+      theme: 'Governance',
+      text: 'Economic disputes led to rivalries and conflict between states.',
+      illustrativeExamples: ['Muslim–European rivalry in the Indian Ocean', 'Moroccan conflict with the Songhai Empire']
+    },
+    {
+      code: 'KC-4.1.IV.D.i',
       theme: 'Economic Systems',
-      text: 'American silver — especially from Potosí — connected the Americas, Europe, and Asia into a single global trade network through the Manila Galleon trade and the Seville trading monopoly, causing a global price revolution.',
-      illustrativeExamples: ['Potosí', 'Manila Galleon trade (1565–1815)', 'Casa de Contratación (Seville)', 'Global price revolution', 'Chinese demand for silver']
+      text: 'The Atlantic trading system involved the movement of goods, wealth, and labor, including enslaved persons.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.IV',
+      theme: 'Economic Systems',
+      text: 'The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver. Regional markets continued to flourish in Afro-Eurasia by using established commercial practices, and new transoceanic and regional shipping services developed by European merchants.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.2.II.A',
+      theme: 'Economic Systems',
+      text: 'Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased.',
+      illustrativeExamples: ['Western Europe — wool and linen', 'India — cotton', 'China — silk']
+    },
+    {
+      code: 'KC-4.2.III.C',
+      theme: 'Social Interactions and Organization',
+      text: 'Some notable gender and family restructuring occurred, including demographic changes in Africa that resulted from the trade of enslaved persons.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.IV.D.ii',
+      theme: 'Social Interactions and Organization',
+      text: 'The Atlantic trading system involved the movement of labor—including enslaved persons—and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.VI',
+      theme: 'Cultural Developments and Interactions',
+      text: 'In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.',
+      illustrativeExamples: []
     }
   ],
 

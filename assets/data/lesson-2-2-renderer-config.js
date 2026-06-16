@@ -4,22 +4,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-2.3.II.A',
-      theme: 'Networks of Exchange',
-      text: 'The Mongols\' conquest of much of Eurasia and their subsequent tolerance of local cultures helped facilitate trade and communication across that area.',
-      illustrativeExamples: ['Pax Mongolica', 'Yam postal system', 'Khanates']
+      code: 'KC-3.2.I.B.iii',
+      theme: 'Governance',
+      text: 'Empires collapsed in different regions of the world and in some areas were replaced by new imperial states, including the Mongol khanates.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-2.3.II.B',
-      theme: 'Networks of Exchange',
-      text: 'The Mongol Empire\'s expansion devastated many settled societies but created the conditions for intensified Afro-Eurasian exchange.',
-      illustrativeExamples: ['Siege warfare', 'Conquest of Persia', 'Conquest of China']
+      code: 'KC-3.1.I.E.i',
+      theme: 'Economic Systems',
+      text: 'The expansion of empires—including the Mongols—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.',
+      illustrativeExamples: []
     },
     {
-      code: 'KC-2.3.II.C',
-      theme: 'Networks of Exchange',
-      text: 'The transmission of the bubonic plague across the Mongol Empire led to the devastating loss of life known as the Black Death.',
-      illustrativeExamples: ['Bubonic plague', 'Black Death', 'Demographic collapse']
+      code: 'KC-3.2.II.A.ii',
+      theme: 'Cultural Developments and Interactions',
+      text: 'Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers.',
+      illustrativeExamples: ['Transfer of Greco-Islamic medical knowledge to western Europe', 'Transfer of numbering systems to Europe', 'Adoption of Uyghur script']
     }
   ];
 
