@@ -33,7 +33,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Environmental Consequences of Connectivity: Disease, Death, and Ecological Change',
     subtitle: 'How trade routes spread the Black Death and transformed ecosystems c. 1200–1450',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Use this space to organize your thinking. Your final response must be submitted in Canvas.'
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [

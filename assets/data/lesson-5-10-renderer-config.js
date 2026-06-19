@@ -3,6 +3,6 @@
   if (!lesson) return;
 
   if (!lesson.meta.canvasSubmissionNote) {
-    lesson.meta.canvasSubmissionNote = 'Use this space to organize your thinking. Your final response must be submitted in Canvas.';
+    lesson.meta.canvasSubmissionNote = 'Organize your thinking here — submit your final work in Canvas.';
   }
 })();

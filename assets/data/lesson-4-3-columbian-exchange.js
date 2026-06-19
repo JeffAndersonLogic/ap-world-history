@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Columbian Exchange",
     subtitle: "How contact between Eastern and Western Hemispheres after 1492 transferred plants, animals, diseases, and people — and produced the largest demographic catastrophe in human history",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [

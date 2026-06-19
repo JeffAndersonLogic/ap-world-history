@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Empires: Administration",
     subtitle: "How land-based empires organized power, collected revenue, and governed diverse peoples, c. 1450–c. 1750",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [

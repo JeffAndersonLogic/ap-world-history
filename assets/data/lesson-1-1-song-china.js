@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Song China: Power, Prosperity, and the Scholar's World",
     subtitle: "Developments in East Asia, c. 1200 to c. 1450",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [

@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "The Mongol Empire: Conquest, Connection, and the Pax Mongolica",
     subtitle: "Expansion, administration, and transregional exchange c. 1200–1450",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [

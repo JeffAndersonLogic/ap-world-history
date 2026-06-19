@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Society and the Industrial Age",
     subtitle: "How industrialization created a new middle class and a new industrial working class, reshaped the household and economic roles of women and children differently across classes, and produced the challenges of rapid urbanization in the period c. 1750–1900",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [
