@@ -24,6 +24,26 @@ Full report: [`docs/beintheroom-theme-audit.md`](docs/beintheroom-theme-audit.md
 | `beintheroom/unit-1/great-zimbabwe-court.html` | 1.5 Africa | PASS |
 | `beintheroom/unit-1/feudal-manor.html` | 1.6 Europe | PASS |
 
+## Unit 8 — Cold War and Decolonization
+
+### Topic 8.1 — Setting the Stage for the Cold War and Decolonization (built 2026-06-24)
+
+| Deliverable | File | Status |
+|---|---|---|
+| Lesson shell | `unit-8/lesson-8-1-cold-war-stage.html` | DONE |
+| Topic data | `assets/data/lesson-8-1-cold-war-stage.js` | DONE |
+| Renderer config | `assets/data/lesson-8-1-renderer-config.js` | DONE |
+| First & 10 reading | `unit-8/first-and-10-topic-8-1-cold-war-stage.html` | DONE |
+| First & 10 capture wrapper | `unit-8/first-and-10-topic-8-1-cold-war-stage-capture.html` | DONE |
+| BeInTheRoom scenario | `beintheroom/unit-8/empire-accounts.html` | DONE |
+| Unit 8 index link | `unit-8/index.html` (Topic 8.1 card href updated) | DONE |
+
+**BeInTheRoom scenario frame:** "caught between superpowers" — London, February 1947, PM Attlee's cabinet facing simultaneous crises in India, Greece/Turkey, and Palestine. Decision points require reasoning from 1947 knowledge (no hindsight framing). Continuity hooks to Topics 8.5–8.6 (Nehru, Nkrumah).
+
+**Step 0 gate:** PASS — premise directly enacts KC-6.2.II (imperial exhaustion → dissolution of empires) and KC-6.2.IV.C.i (superpower balance of power shift). All four decision options exercise Governance/state-formation pairs from the CED thematic focus.
+
+---
+
 ### Open Revision Tasks (from the audit)
 
 - **DRIFT — `beintheroom/unit-1/khmer-court.html` (Topic 1.3):** Its central dilemma is a generic state-priorities allocation (temples / military / agriculture / trade) that is structurally identical to `song-court.html` and fails the transplant test; Topic 1.3's listed CDI-G / GOV-H pairing (belief systems shaping state power) drives only one of four options, and its reflection prompt is generic. Recommended: retire it as superseded by `angkor-council.html` (which the lesson actually links), or redesign its decision points and reflection around religion-as-state-power per LO G/H.
