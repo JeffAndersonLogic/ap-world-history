@@ -4,7 +4,7 @@
  *
  * Centralised Google Form prefill configuration.
  * Load BEFORE any renderer or lesson script that needs form URLs:
- *   <script src="../assets/js/behistorical-form-config.js?v=3"></script>
+ *   <script src="../assets/js/behistorical-form-config.js?v=unified-v2"></script>
  *
  * Entry IDs (from the Google Form — do not modify):
  *   entry.125385659  = Unit             (pre-filled per lesson)
@@ -51,9 +51,9 @@ window.BH_FORM = {
     '1.2': '1.2 - Dar al-Islam',
     '1.3': '1.3 - South and Southeast Asia',
     '1.4': '1.4 - The Americas',
-    '1.5': '1.5 - Africa',
-    '1.6': '1.6 - Eurasian Connections',
-    '1.7': '1.7 - Cross-Cultural Exchanges',
+    '1.5': '1.5 - State Building in Africa',
+    '1.6': '1.6 - Europe',
+    '1.7': '1.7 - Comparison',
     '2.1': '2.1 - The Silk Roads',
     '2.2': '2.2 - The Mongol Empire',
     '2.3': '2.3 - Exchange in the Indian Ocean',
@@ -138,6 +138,30 @@ window.BH_FORM = {
     primarySource: 'primary-source',
     beInTheRoom:   'beintheroom',
     checkpoint2:   'checkpoint-2',
+  },
+
+  skills: {
+    '1.1': {
+      first10: ['Causation', 'Comparison', 'Continuity and Change Over Time (CCOT)', 'Contextualization', 'Argumentation', 'Claims & Thesis']
+    },
+    '1.2': {
+      first10: ['Causation', 'Continuity and Change Over Time (CCOT)', 'Comparison']
+    },
+    '1.3': {
+      first10: ['Causation', 'Continuity and Change Over Time (CCOT)', 'Comparison']
+    },
+    '1.4': {
+      first10: ['Causation', 'Comparison', 'Argumentation', 'Contextualization']
+    },
+    '1.5': {
+      first10: ['Causation', 'Continuity and Change Over Time (CCOT)', 'Argumentation']
+    },
+    '1.6': {
+      first10: ['Causation', 'Continuity and Change Over Time (CCOT)', 'Comparison', 'Contextualization']
+    },
+    '1.7': {
+      first10: ['Comparison', 'Causation', 'Continuity and Change Over Time (CCOT)', 'Argumentation']
+    }
   },
 };
 
