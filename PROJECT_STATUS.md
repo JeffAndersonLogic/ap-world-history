@@ -58,6 +58,22 @@ Full report: [`docs/beintheroom-theme-audit.md`](docs/beintheroom-theme-audit.md
 
 **Step 0 gate:** PASS — premise directly enacts KC-6.2.V.B (groups and individuals, including the Non-Aligned Movement, opposing and promoting alternatives to existing orders). The Bandung setting cannot be transplanted without changing the CDI theme it exercises.
 
+### Topic 8.3 — Effects of the Cold War (built 2026-06-25)
+
+| Deliverable | File | Status |
+|---|---|---|
+| Lesson shell | `unit-8/lesson-8-3-effects-cold-war.html` | DONE |
+| Topic data | `assets/data/lesson-8-3-effects-cold-war.js` | DONE |
+| Renderer config | `assets/data/lesson-8-3-renderer-config.js` | DONE |
+| First & 10 reading | `unit-8/first-and-10-topic-8-3-effects-cold-war.html` | DONE |
+| First & 10 capture wrapper | `unit-8/first-and-10-topic-8-3-effects-cold-war-capture.html` | DONE |
+| BeInTheRoom scenario | `beintheroom/unit-8/luanda-decision.html` | DONE |
+| Unit 8 index link | `unit-8/index.html` (Topic 8.3 card href updated) | DONE |
+
+**BeInTheRoom scenario frame:** "The Luanda Decision" — Luanda, Angola, November 1975, as a senior advisor within the MPLA leadership circle with independence day approaching and South African forces advancing from the south, FNLA from the north. Three decisions: accept Cuban troops and Soviet arms; pursue quiet U.S. recognition talks; appeal to the OAU and Bandung-era principles. Four roles: MPLA Political Commissar, Angolan Nationalist Intellectual, Cuban Liaison Officer, OAU Secretary-General Liaison.
+
+**Step 0 gate:** PASS — premise directly enacts KC-6.2.IV.D (proxy wars between and within postcolonial states in Africa) and LO C (compare how U.S. and Soviet Union sought to maintain influence). The Angolan Independence Day setting is the moment where both superpowers' methods are simultaneously visible and the student must reason through the comparison from the inside. Continuity hook to Bandung 1955 (Topic 8.2): the reflection prompt explicitly asks whether the non-alignment promise survives contact with a real war.
+
 ---
 
 ### Open Revision Tasks (from the audit)
