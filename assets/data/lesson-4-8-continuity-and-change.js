@@ -215,7 +215,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   beInTheRoom: {
-    url: '../beintheroom/unit-4/continuity-and-change.html',
+    url: '',
     desc: "Trade silk for silver as a Chinese Sangleys merchant in Manila, debate the global price revolution with a Spanish royal treasurer in Seville, or analyze the long-term effects of the Columbian Exchange as an AP World History student with a time machine."
   }
 

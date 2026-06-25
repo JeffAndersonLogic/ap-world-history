@@ -78,7 +78,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-4/continuity-and-change.html',
+    url: '',
     desc: "Trade silk for silver as a Chinese Sangleys merchant in Manila, debate the global price revolution with a Spanish royal treasurer in Seville, or trace the long-term effects of the Columbian Exchange across three continents."
   };
 

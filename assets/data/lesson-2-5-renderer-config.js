@@ -54,7 +54,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-2/silk-road-scholar.html',
+    url: '',
     desc: 'You are a scholar traveling between Baghdad and Chang\'an. What knowledge do you carry? What will you bring back? Navigate the intellectual exchange of the Abbasid and Tang/Song worlds.'
   };
 

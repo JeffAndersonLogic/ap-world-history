@@ -72,7 +72,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-2/indian-ocean-port.html',
+    url: '',
     desc: 'You arrive in Kilwa, the great Swahili port city, as a merchant from Arabia. Navigate the market, negotiate with local rulers, and decide which goods to load for the return voyage.'
   };
 

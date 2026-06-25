@@ -62,7 +62,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-7/munich-1938.html',
+    url: '',
     desc: 'Munich, September 1938. Britain and France are deciding whether to hand Hitler the Sudetenland to keep the peace. Take a seat in the room — as Chamberlain weighing appeasement, a French minister fearing another total war, a Czech delegate watching your country be bargained away, or a German envoy pressing the demand — and argue what the price of "peace in our time" really is.'
   };
 

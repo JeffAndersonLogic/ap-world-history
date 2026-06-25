@@ -48,7 +48,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-4/internal-external-challenges.html',
+    url: '',
     desc: "Plan the Pueblo Revolt with Popé, negotiate a treaty with Portuguese authorities as Zumbi of Palmares, or outmaneuver a Portuguese carrack for Indian Ocean trade routes as a Dutch VOC captain."
   };
 

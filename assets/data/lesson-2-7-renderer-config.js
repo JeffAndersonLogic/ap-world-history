@@ -66,7 +66,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-2/comparison-workshop.html',
+    url: '',
     desc: 'You are a historian writing a comparative analysis of trade networks for a sultan\'s library. Use primary sources from three networks to build your argument about similarities and differences.'
   };
 

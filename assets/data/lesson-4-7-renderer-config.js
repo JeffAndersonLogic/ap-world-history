@@ -54,7 +54,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-4/changing-social-hierarchies.html',
+    url: '',
     desc: "Navigate the casta as a mestizo merchant seeking legal recognition in New Spain, argue your community's tribute exemption before an audiencia judge, or manage the racial politics of a Portuguese Brazilian plantation as a free Black overseer."
   };
 

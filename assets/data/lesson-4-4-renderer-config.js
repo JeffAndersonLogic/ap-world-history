@@ -78,7 +78,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-4/maritime-empires-established.html',
+    url: '',
     desc: "Navigate the Estado da India from a Portuguese factor's perspective at Goa, argue the ethics of the encomienda system with Bartolomé de las Casas, or manage the VOC's Spice Islands trade network from Batavia."
   };
 

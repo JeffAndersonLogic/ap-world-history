@@ -58,7 +58,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-7/july-crisis.html',
+    url: '',
     desc: 'Enter the July Crisis of 1914. Choose a chancellery — Vienna, Berlin, St. Petersburg, Paris, or London — and decide, telegram by telegram, whether your government mobilizes or backs down as the alliance system tightens around you.'
   };
 

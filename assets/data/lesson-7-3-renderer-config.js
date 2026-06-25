@@ -66,7 +66,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-7/ministry-of-information.html',
+    url: '',
     desc: 'Join the Ministry of Information, 1917. You sit on the propaganda board: choose what the public sees — design the poster campaign, approve or censor the front-line footage, and decide how much truth the home front can bear.'
   };
 

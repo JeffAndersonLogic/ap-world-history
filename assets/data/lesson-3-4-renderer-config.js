@@ -34,7 +34,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-3/comparison.html',
+    url: '',
     desc: 'Travel across three empires and compare how rulers solved the same problems of expansion, administration, and religious diversity — then build a comparison argument from your observations.'
   };
 

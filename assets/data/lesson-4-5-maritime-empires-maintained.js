@@ -221,7 +221,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   beInTheRoom: {
-    url: '../beintheroom/unit-4/maritime-empires-maintained.html',
+    url: '',
     desc: "Debate the mita system with Viceroy Toledo at the court of Philip II, manage silver production as a Potosí mine foreman navigating between colonial quotas and worker survival, or trace a single shipment of silver from Potosí to Manila as a Dutch merchant."
   }
 

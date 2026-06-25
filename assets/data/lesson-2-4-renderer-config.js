@@ -54,7 +54,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-2/mali-court.html',
+    url: '',
     desc: 'You are a merchant arriving in Mali\'s capital. Negotiate with royal officials, observe the court of Mansa Musa, and decide how to present your goods and intentions.'
   };
 

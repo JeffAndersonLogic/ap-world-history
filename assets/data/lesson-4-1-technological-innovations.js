@@ -185,7 +185,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   beInTheRoom: {
-    url: '../beintheroom/unit-4/technological-innovations.html',
+    url: '',
     desc: "Step into Prince Henry's court at Sagres and experience how Portuguese navigators combined instruments, ship design, and state sponsorship to systematically extend the known world southward along the African coast."
   }
 

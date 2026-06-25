@@ -54,7 +54,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-3/empires-administration.html',
+    url: '',
     desc: 'Step into the imperial court and negotiate your place in the system. Will you accept a mansabdar rank from the Mughal emperor, serve as a devshirme official in the Ottoman court, or press for local autonomy as a Rajput noble?'
   };
 

@@ -84,7 +84,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-7/war-production-1942.html',
+    url: '',
     desc: 'A war-production board meeting, 1942. The order has come down: convert the civilian economy to total war output, and fast. Take a seat in the room — as a government planner setting quotas, a factory owner retooling the assembly line, a union leader bargaining over hours and wages, or a propaganda officer selling the sacrifice to the public — and argue how a free society mobilizes everything without becoming the thing it is fighting.'
   };
 

@@ -66,7 +66,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-4/columbian-exchange.html',
+    url: '',
     desc: 'Step into Tenochtitlan during the smallpox epidemic of 1520, navigate the economic logic of the Atlantic slave trade, or examine the transformation of European diets as New World crops spread across the globe.'
   };
 

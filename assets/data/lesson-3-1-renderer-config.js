@@ -54,7 +54,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-3/empires-expand.html',
+    url: '',
     desc: 'Step inside the Ottoman siege camp outside Constantinople in April 1453. You are an advisor to Sultan Mehmed II — recommend how to deploy the bombard cannons for maximum effect against the Theodosian Walls.'
   };
 

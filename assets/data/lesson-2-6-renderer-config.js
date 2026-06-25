@@ -42,7 +42,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-2/plague-europe.html',
+    url: '',
     desc: 'It is 1347. You are a city official in an Italian port city as the first plague ships arrive. What do you know? What decisions do you face? What will you do?'
   };
 

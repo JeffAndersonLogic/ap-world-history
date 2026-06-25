@@ -195,7 +195,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   beInTheRoom: {
-    url: '../beintheroom/unit-3/belief-systems.html',
+    url: '',
     desc: 'Step into the world of early modern religious conflict and accommodation — navigate the courts of Akbar, Selim I, or Shah Ismail and experience how religious identity shaped imperial power.'
   }
 

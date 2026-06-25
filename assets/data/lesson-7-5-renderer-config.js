@@ -71,7 +71,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-7/paris-1919.html',
+    url: '',
     desc: 'Paris, 1919. The victors are dividing the defeated empires\' colonies into League of Nations mandates. Take a seat in the room — as a British or French statesman, an Arab delegate from the former Ottoman lands, a Japanese envoy pressing for recognition, or a colonial subject petitioning for self-determination — and argue what the map should become, and who gets to decide.'
   };
 

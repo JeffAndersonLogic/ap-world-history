@@ -197,7 +197,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   beInTheRoom: {
-    url: '../beintheroom/unit-4/exploration.html',
+    url: '',
     desc: "Step into the Spanish court to argue for Columbus's Atlantic voyage, navigate the Portuguese route around Africa with Vasco da Gama, or encounter the Treaty of Tordesillas from the perspective of an indigenous leader hearing of European claims to your land."
   }
 
