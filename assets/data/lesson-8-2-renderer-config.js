@@ -101,10 +101,7 @@
   // capture wrapper, and nothing renders below the First & 10 iframe.
   lesson.captureUrls = {
     first10: '',
-    skillBuilder: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.2+-+The+Cold+War&entry.2107637366=AP+Skill+Builder" target="_blank" rel="noopener">Submit to Form</a>',
     checkpoint1: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.2+-+The+Cold+War&entry.2107637366=Checkpoint+1" target="_blank" rel="noopener">Submit to Form</a>',
-    evidenceLab: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.2+-+The+Cold+War&entry.2107637366=Evidence+Lab" target="_blank" rel="noopener">Submit to Form</a>',
-    primarySource: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.2+-+The+Cold+War&entry.2107637366=Primary+Source" target="_blank" rel="noopener">Submit to Form</a>',
     checkpoint2: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.2+-+The+Cold+War&entry.2107637366=Checkpoint+2" target="_blank" rel="noopener">Submit to Form</a>'
   };
 })();
