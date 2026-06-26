@@ -210,6 +210,41 @@ Full report: [`docs/beintheroom-theme-audit.md`](docs/beintheroom-theme-audit.md
 
 ---
 
+## Unit 8 CED Compliance Audit (2026-06-26)
+
+**Scope:** All nine `assets/data/lesson-8-X-renderer-config.js` files (runtime-authoritative only). Base topic data files and the shared renderer were not audited or edited.
+
+**Result: 9/9 PASS — zero verbatim violations found.**
+
+| Topic | Issues Found | Issues Fixed | Issues Deferred |
+|---|---|---|---|
+| 8.1 | 0 | 0 | 0 |
+| 8.2 | 0 | 0 | 0 |
+| 8.3 | 0 | 0 | 0 |
+| 8.4 | 0 | 0 | 0 |
+| 8.5 | 0 | 0 | 1 |
+| 8.6 | 0 | 0 | 0 |
+| 8.7 | 0 | 0 | 0 |
+| 8.8 | 0 | 0 | 0 |
+| 8.9 | 0 | 0 | 0 |
+
+**Verified character-level traps:**
+- 8.3 "Sandinista–Contras": EN DASH (U+2013) present ✓
+- 8.7 "military–industrial complex": EN DASH (U+2013) present ✓
+- 8.7 KC-6.2.V "groups—including states—": EM DASH (U+2014) present ✓
+- 8.5 "Québécois": both accents present ✓
+- 8.5 "Kwame Nkrumah in British Gold Coast (Ghana)": no spurious "the" ✓
+- 8.4 "Land reform in Kerala and other states within India": full phrase present ✓
+- 8.8 KC-6.2.IV.E "Soviet Union's": apostrophe present ✓
+- 8.9 thematic focus: ABSENT (correct — CED lists none for Topic 8.9) ✓
+- 8.9 BeInTheRoom: ABSENT from modules array and no `lesson.beInTheRoom` set ✓
+
+**Deferred (8.5 only):** The third KC in `lesson-8-5-renderer-config.js` is labeled `KC-6.2.I.C`, matching the project CED working copy. If the published CED reads `KC-6.2.II.C`, this is a discrepancy. Teacher should verify against the physical CED PDF. No change made per audit protocol.
+
+**No fixes were applied.** All nine renderer configs are CED-compliant as written. Cache-busting bumps are not required (no config files were edited).
+
+---
+
 ### Open Revision Tasks (from the audit)
 
 - **DRIFT — `beintheroom/unit-1/khmer-court.html` (Topic 1.3):** Its central dilemma is a generic state-priorities allocation (temples / military / agriculture / trade) that is structurally identical to `song-court.html` and fails the transplant test; Topic 1.3's listed CDI-G / GOV-H pairing (belief systems shaping state power) drives only one of four options, and its reflection prompt is generic. Recommended: retire it as superseded by `angkor-council.html` (which the lesson actually links), or redesign its decision points and reflection around religion-as-state-power per LO G/H.
