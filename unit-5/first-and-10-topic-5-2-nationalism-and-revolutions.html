@@ -203,7 +203,9 @@
 
 </div>
 
+<script src="../assets/js/behistorical-form-config.js?v=unified-v2"></script>
 <script>
+var TOPIC_KEY='5.2';var TOPIC_LABEL='5.2 - Nationalism and Revolutions';
   function collectAnswers() {
     const items = document.querySelectorAll('.question-item');
     return Array.from(items).map((item, i) => {
@@ -219,9 +221,12 @@
   }
 
   function submitToGoogleForm() {
-    buildGooglePrompt();
-    // intercepted by capture wrapper
-  }
+  buildGooglePrompt();
+  var content = document.getElementById('google-output') ? document.getElementById('google-output').value : '';
+  if (content) { try { navigator.clipboard.writeText(content); } catch(e) {} }
+  var u = (window.BH_FORM && typeof buildFormURL === 'function') ? buildFormURL(TOPIC_KEY, 'first10') : '';
+  if (u) window.open(u, '_blank', 'noopener');
+}
 
   function buildAiPrompt() {
     const answers = collectAnswers();

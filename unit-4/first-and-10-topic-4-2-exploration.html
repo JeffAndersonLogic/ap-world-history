@@ -204,7 +204,9 @@
 
 </div>
 
+<script src="../assets/js/behistorical-form-config.js?v=unified-v2"></script>
 <script>
+var TOPIC_KEY='4.2';var TOPIC_LABEL='4.2 - Exploration: Causes and Events';
 function collectAnswers() {
   const items = document.querySelectorAll('.question-item');
   return Array.from(items).map((item, i) => {
@@ -221,7 +223,10 @@ function buildGooglePrompt() {
 
 function submitToGoogleForm() {
   buildGooglePrompt();
-  // intercepted by capture wrapper
+  var content = document.getElementById('google-output') ? document.getElementById('google-output').value : '';
+  if (content) { try { navigator.clipboard.writeText(content); } catch(e) {} }
+  var u = (window.BH_FORM && typeof buildFormURL === 'function') ? buildFormURL(TOPIC_KEY, 'first10') : '';
+  if (u) window.open(u, '_blank', 'noopener');
 }
 
 function buildAiPrompt() {
