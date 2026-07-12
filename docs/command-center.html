@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Command Center | BeHistorical</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/behistorical-command-center.css">
+</head>
+<body>
+  <div class="cc-banner">Internal Build Tool — Not Linked From Student or Teacher Pages</div>
+  <nav class="top-nav" aria-label="Command Center navigation">
+    <a class="brand-mini" href="../index.html"><img src="../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"><span>BeHistorical</span></a>
+    <div class="nav-links"><a href="../index.html">Site Home</a><a href="../PROJECT_STATUS.md">Build Log</a></div>
+  </nav>
+
+  <header class="site-header">
+    <div class="header-wrap">
+      <div class="site-eyebrow">BeHistorical &middot; Repository Command Center</div>
+      <h1 class="site-title">Where the Build Stands</h1>
+      <p class="site-subtitle">Every unit topic and Foundations topic, audited against what's actually on disk — lesson shell, data file, renderer config, First &amp; 10 reading + capture wrapper, and BeInTheRoom scenario link.</p>
+      <p class="gen-stamp" id="gen-stamp">Generated —</p>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="stat-strip" id="stat-strip"></div>
+
+    <section>
+      <h2 class="section-title">Units</h2>
+      <p class="section-note">Click a unit to see its topic-by-topic deliverable grid. The bar tracks lesson-page completion; BeInTheRoom coverage is shown separately since it consistently lags behind.</p>
+      <div class="unit-acc" id="unit-acc"></div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Foundations</h2>
+      <p class="section-note">The five standalone Foundations topics (pre-1200 background, taught outside the main unit sequence).</p>
+      <div class="tbl-wrap">
+        <table class="topics" id="foundations-table">
+          <thead><tr><th>Topic</th><th>Title</th><th>Shell</th><th>Data</th><th>F&amp;10</th><th>Capture</th><th>BeInTheRoom</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Known issues</h2>
+      <p class="section-note">Content-quality and cross-file problems that a file-existence scan can't catch — hand-tracked in <code>scripts/generate-status-manifest.js</code>. Update that list as issues are found or resolved.</p>
+      <div class="tbl-wrap issues">
+        <table class="issues-tbl">
+          <thead><tr><th style="width:90px">Severity</th><th style="width:260px">Where</th><th>What's wrong</th></tr></thead>
+          <tbody id="issues-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="regen-note">This page reads <code>assets/data/project-status-manifest.js</code>, a generated file. After adding or building topics, run <code>node scripts/generate-status-manifest.js</code> from the repo root and refresh this page — nothing here is edited by hand except the known-issues list in the script itself.</div>
+  </main>
+
+  <footer class="cc-footer">BeHistorical Command Center &middot; reads the repo, not a copy of it</footer>
+
+  <script src="../assets/data/project-status-manifest.js"></script>
+  <script>
+    const M = window.PROJECT_STATUS_MANIFEST;
+    if (!M) {
+      document.querySelector('.main-content').innerHTML =
+        '<p style="font-family:var(--ui);color:#ff9d9d">project-status-manifest.js failed to load. Run <code>node scripts/generate-status-manifest.js</code> from the repo root, then reopen this page.</p>';
+      throw new Error('manifest missing');
+    }
+
+    document.getElementById('gen-stamp').textContent =
+      'Generated ' + new Date(M.generatedAt).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
+
+    const DELIV_COLS = [
+      ['shell', 'Shell'], ['data', 'Data'], ['rendererConfig', 'Renderer'],
+      ['first10', 'F&10'], ['capture', 'Capture'], ['beInTheRoom', 'BeInTheRoom'],
+    ];
+
+    function dot(state) {
+      if (state === true || state === 'built') return '<span class="dot yes" title="Present">&#10003;</span>';
+      if (state === false || state === 'missing' || state === 'broken-link') return '<span class="dot no" title="' + (state === 'broken-link' ? 'Link points to a missing file' : 'Missing') + '">&#10007;</span>';
+      if (state === 'coming-soon-by-design') return '<span class="dot na" title="No scenario yet — renderer shows the coming-soon placeholder by design">&ndash;</span>';
+      return '<span class="dot na" title="Not applicable">&ndash;</span>';
+    }
+
+    // ── stat strip ──
+    let totalTopics = 0, builtTopics = 0, bitrNeeded = 0, bitrBuilt = 0, unitsComplete = 0;
+    for (const u of M.units) {
+      totalTopics += u.topics.length;
+      const shellsBuilt = u.topics.filter(t => t.deliverables.shell).length;
+      builtTopics += shellsBuilt;
+      if (shellsBuilt === u.topics.length) unitsComplete++;
+      for (const t of u.topics) {
+        if (!t.capstone) {
+          bitrNeeded++;
+          if (t.deliverables.beInTheRoom === 'built') bitrBuilt++;
+        }
+      }
+    }
+    const stats = [
+      [`${builtTopics} / ${totalTopics}`, 'Topic lessons built'],
+      [`${unitsComplete} / 9`, 'Units fully built'],
+      [`${bitrBuilt} / ${bitrNeeded}`, 'BeInTheRoom scenarios live'],
+      [`${M.foundations.filter(f => f.deliverables.shell).length} / ${M.foundations.length}`, 'Foundations topics built'],
+    ];
+    const stripEl = document.getElementById('stat-strip');
+    for (const [value, label] of stats) {
+      const d = document.createElement('div');
+      d.className = 'stat';
+      d.innerHTML = `<div class="stat-value">${value}</div><div class="stat-label">${label}</div>`;
+      stripEl.appendChild(d);
+    }
+
+    // ── unit accordion ──
+    const accEl = document.getElementById('unit-acc');
+    for (const u of M.units) {
+      const shellsBuilt = u.topics.filter(t => t.deliverables.shell).length;
+      const total = u.topics.length;
+      const pct = total ? Math.round((shellsBuilt / total) * 100) : 0;
+
+      let status, statusLabel;
+      if (shellsBuilt === 0) { status = 'idle'; statusLabel = 'Not started'; }
+      else if (shellsBuilt === total) {
+        const bitrGaps = u.topics.filter(t => !t.capstone && t.deliverables.beInTheRoom !== 'built').length;
+        if (bitrGaps === 0) { status = 'good'; statusLabel = 'Complete'; }
+        else { status = 'bad'; statusLabel = 'BeInTheRoom gap'; }
+      } else { status = 'warn'; statusLabel = 'In progress'; }
+
+      const details = document.createElement('details');
+      details.className = 'unit';
+      const rows = u.topics.map(t => {
+        const cells = DELIV_COLS.map(([key]) => `<td>${dot(t.deliverables[key])}</td>`).join('');
+        return `<tr><td class="topic-num">${t.num}${t.capstone ? ' <span class="chip idle" style="padding:1px 6px;font-size:8.5px">capstone</span>' : ''}</td><td class="topic-title">${t.title}</td>${cells}</tr>`;
+      }).join('');
+
+      details.innerHTML = `
+        <summary class="unit-summary">
+          <span class="unit-caret">&#9656;</span>
+          <div class="unit-heading">
+            <div class="unit-num">Unit ${u.num}</div>
+            <div class="unit-title">${u.title}</div>
+          </div>
+          <div class="unit-bar-wrap">
+            <div class="unit-bar-track"><div class="unit-bar-fill" style="width:${pct}%"></div></div>
+            <div class="unit-bar-fig">${shellsBuilt}/${total}</div>
+          </div>
+          <span class="chip ${status}">${statusLabel}</span>
+        </summary>
+        <div class="unit-body">
+          <div class="tbl-wrap">
+            <table class="topics">
+              <thead><tr><th>Topic</th><th>Title</th>${DELIV_COLS.map(([, l]) => `<th>${l}</th>`).join('')}</tr></thead>
+              <tbody>${rows}</tbody>
+            </table>
+          </div>
+        </div>
+      `;
+      accEl.appendChild(details);
+    }
+
+    // ── foundations table ──
+    const fBody = document.querySelector('#foundations-table tbody');
+    for (const f of M.foundations) {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td class="topic-num">${f.num}</td><td class="topic-title">${f.title}</td>
+        <td>${dot(f.deliverables.shell)}</td><td>${dot(f.deliverables.data)}</td>
+        <td>${dot(f.deliverables.first10)}</td><td>${dot(f.deliverables.capture)}</td>
+        <td>${dot(f.deliverables.beInTheRoom)}</td>`;
+      fBody.appendChild(tr);
+    }
+
+    // ── known issues ──
+    const sevMeta = { bad: ['Drift', 'bad'], warn: ['Gap', 'warn'], note: ['Note', 'idle'] };
+    const issuesBody = document.getElementById('issues-body');
+    for (const i of (M.knownIssues || [])) {
+      const [label, cls] = sevMeta[i.severity] || ['Note', 'idle'];
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td><span class="chip ${cls}">${label}</span></td><td><code>${i.where}</code></td><td>${i.what}</td>`;
+      issuesBody.appendChild(tr);
+    }
+  </script>
+</body>
+</html>
