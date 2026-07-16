@@ -389,3 +389,90 @@ Full report: [`docs/beintheroom-theme-audit.md`](docs/beintheroom-theme-audit.md
 
 - The AP topic shell inventory is complete. The next work is content-quality review, classroom testing, and remaining optional BeInTheRoom coverage in earlier units—not missing core lesson stacks.
 - Validator warnings remain legacy quality debt (placeholder video IDs, older First & 10 DOM conventions, and a small number of missing inline submission-note fields); none were introduced by the Unit 9 build.
+
+---
+
+## BeInTheRoom Build — Unit 3 Topics 3.1–3.3 (2026-07-16)
+
+### Completed
+
+- Built and linked three evidence-driven simulations: **Breaking Constantinople’s Walls** (3.1), **Rewriting the Imperial Rank Roll** (3.2), and **After Chaldiran** (3.3).
+- Introduced a reusable BeInTheRoom v2 renderer with role constraints, evidence selection, three tradeoff decisions, a position builder, local progress saving, an AI Coach prompt, AP reflection, and cited historical references.
+- Added dedicated Unit 3 module artwork and exposed all three simulations from both their lesson command centers and the central BeInTheRoom hub.
+- Extended the validator with a BeInTheRoom v2 quality contract covering AP alignment, role/evidence/decision counts, tradeoff content, sources, shared assets, and lesson linkage.
+
+### Verification snapshot
+
+- `node scripts/validate.js`: **495 files checked; all checks passed**.
+- BeInTheRoom: **38 linked scenarios**, including **3 v2 scenarios**; **0 broken local scenario links**.
+- Media audit: **76 / 76 complete lessons**, **0 blank slots**, **0 missing local files**, and **100% project-wide module-image uniqueness**.
+- Browser workflow: full Topic 3.1 completion and prompt generation pass; all Unit 3 scenarios render with 4 roles, 12 evidence cards, and 3 decision points; 390 × 844 responsive layout has no horizontal overflow.
+
+### Current frontier
+
+- **24 optional BeInTheRoom scenarios** remain across the earlier-unit topic inventory; the core 71-topic lesson shell inventory remains complete.
+
+---
+
+## BeInTheRoom Build — Unit 4 Topics 4.1–4.7 (2026-07-16)
+
+### Completed
+
+- Built and linked seven BeInTheRoom v2 simulations covering maritime technology, state-sponsored exploration, the Columbian Exchange, trading-post empire, global silver and labor, resistance to colonial power, and changing social hierarchy.
+- Reframed Topic 4.1 around João II’s 1487 expedition planning rather than the overstated “school at Sagres” tradition.
+- Framed Topic 4.7 around evidence that casta labels were powerful representations and social classifications but did not operate as one fixed, comprehensive legal code.
+- Added historically transparent composite framing where a classroom decision council represents groups that did not hold equal power, especially in Topics 4.3 and 4.7.
+- Added seven dedicated module artworks and exposed all scenarios from lesson command centers and the central BeInTheRoom hub.
+
+### Verification snapshot
+
+- `node scripts/validate.js`: **509 files checked; all checks passed**.
+- BeInTheRoom: **45 linked scenarios**, including **10 v2 scenarios**; **0 broken local scenario links**.
+- Unit 4 Topics 4.1–4.7: **7 / 7** simulations built, sourced, linked, and covered by the v2 quality contract.
+
+### Current frontier
+
+- **17 optional BeInTheRoom scenarios** remain: Unit 5 Topics 5.1–5.9 and Unit 7 Topics 7.1–7.8.
+
+---
+
+## BeInTheRoom Build — Unit 5 Topics 5.1–5.9 (2026-07-16)
+
+### Completed
+
+- Built nine source-backed BeInTheRoom v2 simulations covering Enlightenment universalism, the Haitian Revolution, Britain’s factory system, Meiji industrialization, colonial railways, industrial ideologies, economic imperialism, labor organizing, and urban public health.
+- Linked all nine simulations from their lesson command centers and added dedicated local module artwork plus hub cards.
+- Kept each room historically bounded and topic-specific, with four roles, eight evidence cards, three tradeoff decisions, a position builder, AI Coach prompt, AP reflection, and references.
+
+### Verification snapshot
+
+- Unit 5 Topics 5.1–5.9: **9 / 9** simulations built and linked.
+- BeInTheRoom validator contract: **54 linked scenarios**, including **19 v2 scenarios**, with **0 broken local links**.
+- The full project remains **71 / 71 lesson shells** and the media audit remains the final project-wide gate.
+
+### Current frontier
+
+- **7 optional BeInTheRoom scenarios** remain in Unit 7 Topics 7.1–7.7. Topic 7.8 uses a historian-facing Causes & Consequences Matrix by design and is not a role-play assignment.
+
+---
+
+## BeInTheRoom Build — Unit 7 Topics 7.1–7.7 (2026-07-16)
+
+### Completed
+
+- Built seven source-backed BeInTheRoom v2 simulations covering Russian imperial collapse, the July Crisis, World War I information mobilization, Mexican oil nationalization, the League mandate system, the Munich Agreement, and World War II industrial mobilization.
+- Linked every scenario from its lesson command center, added dedicated local module artwork, and exposed all seven from the central BeInTheRoom hub.
+- Preserved Topic 7.8’s Causes & Consequences Matrix as a historian-facing analysis tool. Students do not role-play perpetrators or victims of mass atrocities; the generated status manifest now records this module as not applicable for BeInTheRoom.
+
+### Verification snapshot
+
+- Unit 7 Topics 7.1–7.7: **7 / 7** simulations built and linked.
+- Topic 7.8: **custom matrix preserved** and correctly classified as **not applicable** for role-play.
+- Generated inventory: **61 built**, **0 missing**, and **0 broken** BeInTheRoom links.
+- `node scripts/validate.js`: **542 files checked; all checks passed**; **61 linked scenarios**, including **26 v2 scenarios**.
+- Media audit: **76 / 76 complete lessons**, **0 blank slots**, **0 missing local files**, and **100% project-wide module-image uniqueness**.
+- Browser QA: all seven Unit 7 rooms render cleanly; full workflow and persistence reach **100%**; 390 × 844 layout has no horizontal overflow; Topic 7.8 exposes the matrix and no role-play card.
+
+### Current frontier
+
+- No planned BeInTheRoom scenarios remain missing. Future work is classroom feedback, refinement, and maintenance rather than inventory completion.

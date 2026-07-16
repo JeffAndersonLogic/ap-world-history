@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The July Crisis Telegram | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "7.2",
+  "unit": "7",
+  "topicTitle": "Causes of World War I",
+  "file": "the-july-crisis-telegram.html",
+  "title": "The *July Crisis Telegram*",
+  "location": "European chancelleries",
+  "date": "23–30 July 1914",
+  "lessonUrl": "../../unit-7/lesson-7-2-causes-wwi.html",
+  "alignment": {
+    "theme": "Governance (GOV)",
+    "objective": "Explain the causes and consequences of World War I.",
+    "skill": "Causation and argumentation",
+    "keyConcepts": [
+      "KC-6.2.IV.A",
+      "Militarism, alliances, imperialism, nationalism",
+      "July Crisis escalation"
+    ]
+  },
+  "premise": [
+    "Austria-Hungary has delivered an ultimatum to Serbia after Archduke Franz Ferdinand’s assassination. Russia considers support for Serbia; Germany supports Austria-Hungary; France is tied to Russia; Britain has commitments and interests but no automatic obligation to enter every continental war.",
+    "Mobilization plans are rigid and public credibility matters. Each government fears that delay will strengthen its rival, yet each decision narrows the next government’s room to compromise. Imperial rivalry, Balkan nationalism, and military planning make one assassination dangerous rather than sufficient by itself.",
+    "You are a multinational crisis group drafting the final telegrams before mobilization becomes war."
+  ],
+  "centralQuestion": "How should European governments respond to the July Crisis when alliance credibility and mobilization plans make restraint look dangerous but escalation could produce general war?",
+  "roles": [
+    {
+      "id": "vienna",
+      "name": "Austro-Hungarian Foreign Minister",
+      "position": "You seek a decisive response to Serbian nationalism and imperial weakness.",
+      "power": "You can set demands and military action, but depend on German backing and a multiethnic empire’s army.",
+      "goals": "Punish the networks threatening the monarchy without inviting Russian war.",
+      "fears": "Another compromise will advertise imperial decline.",
+      "lens": "Regional nationalism becomes global when empires use force to preserve prestige.",
+      "preference": "Demand verifiable Serbian concessions with a short deadline.",
+      "blindSpot": "You may treat Serbia as fully responsible for actions the government did not directly command."
+    },
+    {
+      "id": "berlin",
+      "name": "German Chancellor",
+      "position": "You decide how firmly to support Austria-Hungary while facing Russia and France.",
+      "power": "Germany can deter rivals and mobilize quickly, but its war plan risks invading neutral Belgium.",
+      "goals": "Preserve the alliance and avoid strategic encirclement.",
+      "fears": "A delayed decision may leave Germany fighting stronger enemies later.",
+      "lens": "Security dilemmas make defensive planning appear offensive to others.",
+      "preference": "Back Vienna but press for mediation after Serbia replies.",
+      "blindSpot": "You may believe escalation can be controlled once mobilization begins."
+    },
+    {
+      "id": "petersburg",
+      "name": "Russian Foreign Minister",
+      "position": "You weigh Serbian support, Slavic prestige, and fear of Austro-German expansion.",
+      "power": "Russia can mobilize vast forces, but transport and command are slow and mobilization alarms Germany.",
+      "goals": "Prevent Austria-Hungary from dominating the Balkans.",
+      "fears": "Backing down damages influence; mobilizing may trigger Germany’s timetable.",
+      "lens": "Nationalism and alliance status convert a regional dispute into a great-power test.",
+      "preference": "Use partial mobilization and demand an international conference.",
+      "blindSpot": "You may assume rivals will distinguish partial preparation from an attack."
+    },
+    {
+      "id": "london",
+      "name": "British Foreign Secretary",
+      "position": "You can propose mediation and clarify Britain’s response to a continental war.",
+      "power": "British finance and naval power matter, but cabinet and public opinion are divided.",
+      "goals": "Deter aggression without giving any ally a blank check.",
+      "fears": "Ambiguity may encourage Germany while commitment may accelerate war.",
+      "lens": "Diplomatic signals shape calculations under uncertainty.",
+      "preference": "State clearly that Belgian neutrality and a general war will bring British action.",
+      "blindSpot": "You may overestimate the power of one warning to override existing war plans."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "assassination",
+      "label": "Sarajevo Assassination",
+      "text": "A Bosnian Serb nationalist killed Franz Ferdinand and his wife on 28 June 1914.",
+      "why": "Identifies the spark without mistaking it for the full cause."
+    },
+    {
+      "id": "ultimatum",
+      "label": "Austrian Ultimatum",
+      "text": "Austria-Hungary demanded sweeping Serbian compliance under a short deadline.",
+      "why": "Shows a deliberate choice to risk escalation."
+    },
+    {
+      "id": "blankcheck",
+      "label": "German “Blank Check”",
+      "text": "Germany assured Austria-Hungary of support before the ultimatum.",
+      "why": "Encouraged a harder Austrian policy."
+    },
+    {
+      "id": "alliances",
+      "label": "Alliance Commitments",
+      "text": "The Triple Alliance and Triple Entente created expectations of support without making every decision automatic.",
+      "why": "Prevents alliances from being treated as mechanical causes."
+    },
+    {
+      "id": "mobilization",
+      "label": "Mobilization Timetables",
+      "text": "Military plans rewarded early action and made partial mobilization difficult to separate from war preparation.",
+      "why": "Explains the mechanism of escalation."
+    },
+    {
+      "id": "balkans",
+      "label": "Balkan Nationalism",
+      "text": "Serbian ambitions and South Slav nationalism challenged Habsburg control in the Balkans.",
+      "why": "Adds territorial and nationalist conflict."
+    },
+    {
+      "id": "imperial",
+      "label": "Imperial Competition",
+      "text": "Earlier crises in Morocco and the Balkans had deepened mistrust among the powers.",
+      "why": "Shows long-term context beyond July."
+    },
+    {
+      "id": "belgium",
+      "label": "Belgian Neutrality",
+      "text": "Germany’s western war plan required movement through neutral Belgium, increasing the likelihood of British entry.",
+      "why": "Connects military planning to expansion of the war."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "serbia",
+      "title": "Answer the Serbian reply",
+      "prompt": "How should Austria-Hungary respond to Serbia’s partial acceptance?",
+      "options": [
+        {
+          "id": "accept",
+          "title": "Accept with international verification",
+          "action": "Treat the reply as a basis for inspectors and mediation.",
+          "benefits": "The monarchy gains concessions without immediate war.",
+          "worries": "Nationalists and military leaders call the result humiliating.",
+          "tradeoff": "Compromise protects peace at a prestige cost."
+        },
+        {
+          "id": "limited",
+          "title": "Occupy limited border objectives",
+          "action": "Use a brief military action while leaving room for negotiation.",
+          "benefits": "Vienna demonstrates resolve and limits initial scope.",
+          "worries": "Russia may mobilize and “limited” war may not stay limited.",
+          "tradeoff": "Coercive bargaining sacrifices control once troops move."
+        },
+        {
+          "id": "war",
+          "title": "Declare war on Serbia",
+          "action": "Reject the reply as inadequate and launch the prepared campaign.",
+          "benefits": "Austria-Hungary attempts a decisive solution.",
+          "worries": "Alliance and mobilization dynamics risk continental war.",
+          "tradeoff": "Prestige and security are pursued through maximal escalation."
+        }
+      ]
+    },
+    {
+      "id": "mobilize",
+      "title": "Set mobilization policy",
+      "prompt": "How should Russia and Germany treat military preparation?",
+      "options": [
+        {
+          "id": "freeze",
+          "title": "Mutual 48-hour freeze",
+          "action": "Pause new mobilization while Britain hosts an emergency conference.",
+          "benefits": "Diplomats gain time and armies avoid irreversible steps.",
+          "worries": "Each state fears the other will gain a hidden advantage.",
+          "tradeoff": "Trust is required precisely when mistrust is highest."
+        },
+        {
+          "id": "partial",
+          "title": "Use partial mobilization",
+          "action": "Prepare forces only against Austria-Hungary and keep Germany informed.",
+          "benefits": "Russia signals support while trying to limit the threat.",
+          "worries": "Rail and command plans may not support a clean partial option.",
+          "tradeoff": "A diplomatic signal can look like operational preparation."
+        },
+        {
+          "id": "general",
+          "title": "Order general mobilization",
+          "action": "Prepare for the worst before rivals complete their plans.",
+          "benefits": "Military readiness and alliance credibility increase.",
+          "worries": "Rivals interpret the move as war and activate their own plans.",
+          "tradeoff": "Defensive preparation produces the feared offensive spiral."
+        }
+      ]
+    },
+    {
+      "id": "britain",
+      "title": "Clarify Britain’s position",
+      "prompt": "What message should London send?",
+      "options": [
+        {
+          "id": "neutral",
+          "title": "Remain publicly uncommitted",
+          "action": "Preserve mediation and cabinet unity.",
+          "benefits": "Britain can talk to all parties and avoid an automatic war.",
+          "worries": "Germany may assume Britain will stay out.",
+          "tradeoff": "Diplomatic flexibility creates deterrence ambiguity."
+        },
+        {
+          "id": "conditional",
+          "title": "Issue a conditional warning",
+          "action": "State that violation of Belgian neutrality or attack on France risks British entry.",
+          "benefits": "The warning may deter the western war plan.",
+          "worries": "It ties policy to events Britain may not control.",
+          "tradeoff": "Clarity improves deterrence while narrowing future choice."
+        },
+        {
+          "id": "entente",
+          "title": "Promise France and Russia support",
+          "action": "Make the Entente militarily credible before war begins.",
+          "benefits": "Germany may reconsider a two-front conflict.",
+          "worries": "The promise hardens blocs and reduces incentives to compromise.",
+          "tradeoff": "Deterrence and escalation arise from the same commitment."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Rank the four major causes of World War I—alliances, militarism, imperialism, and nationalism—and explain how the July Crisis connected your top two causes.",
+  "sources": [
+    {
+      "label": "International Encyclopedia of the First World War — July Crisis",
+      "url": "https://encyclopedia.1914-1918-online.net/article/july_crisis_1914"
+    },
+    {
+      "label": "Encyclopaedia Britannica — World War I",
+      "url": "https://www.britannica.com/event/World-War-I"
+    },
+    {
+      "label": "UK National Archives — The road to war",
+      "url": "https://www.nationalarchives.gov.uk/education/resources/great-war-1914/"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

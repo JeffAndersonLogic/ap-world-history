@@ -72,8 +72,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Advise Toussaint Louverture on whether to negotiate with Napoleon or fight to the end, join Simón Bolívar's planning session before the battle that will determine the fate of South American independence, or debate a French revolutionary in 1794 about whether the abolition of slavery in the colonies is a genuine application of the Declaration of Rights or a tactical maneuver."
+    url: '../beintheroom/unit-5/the-saint-domingue-constitution.html',
+    desc: "Join Saint-Domingue’s 1801 constitutional council and balance emancipation, plantation production, citizenship, and survival under French pressure."
   };
 
   lesson.skillBuilder = {

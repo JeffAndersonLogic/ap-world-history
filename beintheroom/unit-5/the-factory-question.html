@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Factory Question | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.6",
+  "unit": "5",
+  "topicTitle": "Industrialization: Government and Society",
+  "file": "the-factory-question.html",
+  "title": "The *Factory Question*",
+  "location": "Reichstag committee, Berlin",
+  "date": "1883–1889",
+  "lessonUrl": "../../unit-5/lesson-5-6-industrialization-government-and-society.html",
+  "alignment": {
+    "theme": "Governance (GOV) and Social Interactions (SIO)",
+    "objective": "Explain how industrialization created new social classes, ideologies, and political responses.",
+    "skill": "Comparison and argumentation",
+    "keyConcepts": [
+      "KC-5.6.I–II",
+      "KC-5.6.II.A–D",
+      "Liberalism, socialism, conservatism, and reform"
+    ]
+  },
+  "premise": [
+    "German industrial cities are filling with factory workers, entrepreneurs, clerks, and political organizers. The government must decide whether to regulate factories, insure workers, restrict socialist parties, or expand political participation.",
+    "Liberals fear state overreach, conservatives fear revolution, socialists demand collective power, and women reformers point out that industrial law treats households and workers unevenly. Bismarck’s social insurance proposals promise protection while also binding workers to the state.",
+    "You sit on a Reichstag committee where each ideology must defend a policy rather than merely recite a label."
+  ],
+  "centralQuestion": "How should a government respond to industrial class conflict when reform may reduce suffering but also strengthen state control and leave political inequality intact?",
+  "roles": [
+    {
+      "id": "liberal",
+      "name": "Liberal Parliamentarian",
+      "position": "You defend civil liberties, contracts, and representative government.",
+      "power": "You can shape legislation but depend on property-holding voters and industrial donors.",
+      "goals": "Limit arbitrary government while preventing social breakdown.",
+      "fears": "State welfare may become paternalism or suppress voluntary association.",
+      "lens": "Liberalism protects individual choice but can understate unequal bargaining power.",
+      "preference": "Regulate clear harms and expand education and representation.",
+      "blindSpot": "You may treat a formal contract as free even when workers have few alternatives."
+    },
+    {
+      "id": "minister",
+      "name": "Conservative Interior Minister",
+      "position": "You want order, national loyalty, and a stronger state.",
+      "power": "You control police and administration, but socialist parties are gaining workers’ support.",
+      "goals": "Prevent revolution and keep industry productive.",
+      "fears": "Concessions may encourage demands; repression may radicalize workers.",
+      "lens": "Conservatism can use reform to preserve hierarchy and state authority.",
+      "preference": "Combine insurance with surveillance and limits on socialist organizing.",
+      "blindSpot": "You may call obedience social peace and dismiss workers’ political agency."
+    },
+    {
+      "id": "organizer",
+      "name": "Socialist Trade Organizer",
+      "position": "You organize workers around wages, hours, and collective ownership.",
+      "power": "Workers can strike and vote, but employers and police can retaliate.",
+      "goals": "Build durable class power and end dependence on owners’ goodwill.",
+      "fears": "Insurance without representation may divide workers and stabilize exploitation.",
+      "lens": "Class position shapes political conflict as much as legal status.",
+      "preference": "Protect unions, universal insurance, and worker representation.",
+      "blindSpot": "You may underestimate the immediate security workers gain from partial reform."
+    },
+    {
+      "id": "reformer",
+      "name": "Women’s Social Reformer",
+      "position": "You address factory safety, household poverty, education, and women’s exclusion.",
+      "power": "You have networks and expertise but limited formal voting rights.",
+      "goals": "Make social policy account for gendered labor and family survival.",
+      "fears": "Male parties may use “family protection” to restrict women’s autonomy.",
+      "lens": "Industrialization changes households differently by class and gender.",
+      "preference": "Pair labor safeguards with education, civic rights, and public health.",
+      "blindSpot": "You may assume reform institutions will include women without political pressure."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "classes",
+      "label": "Bourgeoisie and Proletariat",
+      "text": "Industrial capitalism produced owners, managers, professionals, and wage workers with conflicting interests.",
+      "why": "Defines the new class structure."
+    },
+    {
+      "id": "marx",
+      "label": "Class Struggle",
+      "text": "Marx and Engels argued that industrial society simplified antagonism between bourgeoisie and proletariat.",
+      "why": "Provides a socialist explanation of conflict."
+    },
+    {
+      "id": "liberty",
+      "label": "Liberal Individualism",
+      "text": "Liberal thinkers emphasized individual rights, contracts, property, and limits on state power.",
+      "why": "Provides a competing ideological framework."
+    },
+    {
+      "id": "conserve",
+      "label": "Conservative Order",
+      "text": "Conservatives sought stability and could support paternal reform to protect hierarchy.",
+      "why": "Shows why reform was not only socialist."
+    },
+    {
+      "id": "insurance",
+      "label": "Bismarckian Insurance",
+      "text": "Germany created sickness, accident, and old-age insurance in the 1880s.",
+      "why": "Demonstrates state reform as a response to class politics."
+    },
+    {
+      "id": "women",
+      "label": "Gendered Reform",
+      "text": "Factory laws and reform debates often treated women as dependents while women organized for education and rights.",
+      "why": "Connects class policy to gender."
+    },
+    {
+      "id": "unions",
+      "label": "Collective Organization",
+      "text": "Workers built unions, parties, and strikes despite legal restrictions and employer resistance.",
+      "why": "Shows political agency outside elections."
+    },
+    {
+      "id": "suffrage",
+      "label": "Unequal Representation",
+      "text": "Industrial workers and women could be affected by law without equal political power.",
+      "why": "Explains why policy and citizenship remained contested."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "reform",
+      "title": "Choose the reform package",
+      "prompt": "What should the committee enact first?",
+      "options": [
+        {
+          "id": "insurance",
+          "title": "State social insurance",
+          "action": "Create compulsory sickness, accident, and old-age funds administered through the state.",
+          "benefits": "Workers gain material protection and the state reduces revolutionary pressure.",
+          "worries": "Workers may become dependent on official systems and employers retain control.",
+          "tradeoff": "Security expands while political power remains centralized."
+        },
+        {
+          "id": "labor",
+          "title": "Workplace regulation",
+          "action": "Set hours, safety rules, and inspection before building broad insurance.",
+          "benefits": "Immediate workplace harms are addressed and enforcement is visible.",
+          "worries": "Benefits are uneven and employers resist costs.",
+          "tradeoff": "Protection targets production conditions but not income insecurity."
+        },
+        {
+          "id": "rights",
+          "title": "Political and associational rights",
+          "action": "Protect unions, parties, speech, and broader suffrage as the primary reform.",
+          "benefits": "Workers can organize to shape future policy.",
+          "worries": "Conflict may intensify and material relief arrives slowly.",
+          "tradeoff": "Democratic power is prioritized over administrative paternalism."
+        }
+      ]
+    },
+    {
+      "id": "socialists",
+      "title": "Treat the socialist movement",
+      "prompt": "How should the state respond to socialist organizing?",
+      "options": [
+        {
+          "id": "ban",
+          "title": "Restrict socialist parties",
+          "action": "Use police and law to suppress parties deemed revolutionary.",
+          "benefits": "The government may prevent violent plots and reassure elites.",
+          "worries": "Workers lose legal channels and repression may radicalize them.",
+          "tradeoff": "Order is purchased by weakening representation."
+        },
+        {
+          "id": "legal",
+          "title": "Legalize and regulate parties",
+          "action": "Allow organizing, strikes, and elections under clear public-order rules.",
+          "benefits": "Conflict can move into institutions and workers gain accountability.",
+          "worries": "Employers and officials fear instability and disruption.",
+          "tradeoff": "Participation accepts class conflict rather than denying it."
+        },
+        {
+          "id": "coopt",
+          "title": "Invite controlled representation",
+          "action": "Offer seats on advisory boards while keeping executive limits on parties.",
+          "benefits": "The state hears grievances without surrendering authority.",
+          "worries": "Workers may see cooptation as a substitute for rights.",
+          "tradeoff": "Consultation can stabilize hierarchy without transforming it."
+        }
+      ]
+    },
+    {
+      "id": "gender",
+      "title": "Define household protection",
+      "prompt": "How should the law address women’s work and family life?",
+      "options": [
+        {
+          "id": "protect",
+          "title": "Protect women as dependents",
+          "action": "Limit women’s hours and reserve certain occupations for men and mothers.",
+          "benefits": "Reformers can reduce some dangers and employers face clearer rules.",
+          "worries": "Protective law may restrict wages, careers, and civic autonomy.",
+          "tradeoff": "Safety is gained through paternal assumptions."
+        },
+        {
+          "id": "equal",
+          "title": "Apply standards equally",
+          "action": "Set hours, safety, and wages by occupation rather than sex, with childcare and education support.",
+          "benefits": "Women retain economic and civic options while workplaces improve.",
+          "worries": "Employers may discriminate or shift work elsewhere.",
+          "tradeoff": "Formal equality requires costly public supports."
+        },
+        {
+          "id": "household",
+          "title": "Fund family services",
+          "action": "Pair workplace standards with public health, schools, and household relief.",
+          "benefits": "Families gain capacity without relying only on employer discipline.",
+          "worries": "Tax burdens rise and women’s political voice may remain limited.",
+          "tradeoff": "Social reproduction becomes a public responsibility without full equality."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Compare liberal, conservative, and socialist responses to industrialization. Explain how one reform both reduced a problem and preserved or expanded state power.",
+  "sources": [
+    {
+      "label": "German History in Documents — Bismarck’s social insurance",
+      "url": "https://ghdi.ghi-dc.org/sub_document.cfm?document_id=1803"
+    },
+    {
+      "label": "Marxists Internet Archive — Communist Manifesto",
+      "url": "https://www.marxists.org/archive/marx/works/1848/communist-manifesto/"
+    },
+    {
+      "label": "Encyclopaedia Britannica — Socialism",
+      "url": "https://www.britannica.com/topic/socialism"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

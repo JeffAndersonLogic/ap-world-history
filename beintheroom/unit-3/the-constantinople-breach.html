@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | Breaking Constantinople’s Walls | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "3.1",
+  "unit": "3",
+  "topicTitle": "Empires Expand",
+  "file": "the-constantinople-breach.html",
+  "title": "Breaking *Constantinople’s Walls*",
+  "location": "Ottoman siege camp outside Constantinople",
+  "date": "April–May 1453",
+  "lessonUrl": "../../unit-3/lesson-3-1-empires-expand.html",
+  "alignment": {
+    "theme": "Governance (GOV)",
+    "objective": "Explain how and why various land-based empires developed and expanded from 1450 to 1750.",
+    "skill": "Causation and contextualization",
+    "keyConcepts": [
+      "KC-4.3.II",
+      "KC-4.3.II.B",
+      "Gunpowder and armed expansion"
+    ]
+  },
+  "premise": [
+    "Sultan Mehmed II has surrounded Constantinople, the last major center of the Byzantine Empire. The city’s layered Theodosian Walls have defeated armies for centuries, but Ottoman founders have cast bombards large enough to damage masonry that once seemed unbreakable.",
+    "The weapons are powerful but slow. Large guns require long loading and cooling cycles, damaged walls are repaired at night, and repeated infantry attacks consume men and supplies. At sea, a defensive chain blocks Ottoman ships from entering the Golden Horn and forces the city’s small garrison to defend fewer approaches.",
+    "You sit on Mehmed’s war council. Your recommendation must turn gunpowder, manpower, naval pressure, and logistics into conquest without exhausting the army or provoking a wider Christian relief effort. You know only what the council could know before the city falls."
+  ],
+  "centralQuestion": "How should the Ottoman war council combine artillery, infantry, naval power, and negotiation to breach Constantinople while controlling the costs and risks of imperial expansion?",
+  "roles": [
+    {
+      "id": "artillery",
+      "name": "Chief Artillery Officer",
+      "position": "You coordinate the great bombards and the many smaller cannon.",
+      "power": "You choose firing sectors and repair schedules, but powder, shot, cooling time, and damaged barrels limit you.",
+      "goals": "Create a breach wide enough for a sustained assault and prove that state-funded gunpowder can defeat old fortifications.",
+      "fears": "A burst bombard, exhausted crews, or nightly Byzantine repairs could make the artillery look impressive but strategically useless.",
+      "lens": "Technology changes outcomes only when logistics and repeated fire convert force into a usable breach.",
+      "preference": "Concentrated, methodical bombardment supported by engineers and smaller guns.",
+      "blindSpot": "You may undervalue naval maneuver, diplomacy, and the human cost of sending infantry through rubble."
+    },
+    {
+      "id": "janissary",
+      "name": "Janissary Commander",
+      "position": "You lead the sultan’s disciplined infantry reserve.",
+      "power": "Your troops can exploit a breach and hold captured ground, but they cannot remain fresh through endless failed assaults.",
+      "goals": "Preserve the elite corps for a decisive moment and maintain loyalty and discipline across the army.",
+      "fears": "Premature attacks will waste trained soldiers; waiting too long may sap morale or invite relief forces.",
+      "lens": "Cannons do not conquer cities by themselves—organized infantry must convert damage into control.",
+      "preference": "A carefully timed multi-wave final assault after sustained preparation.",
+      "blindSpot": "You may treat irregular troops as expendable and underestimate the political value of a negotiated surrender."
+    },
+    {
+      "id": "naval",
+      "name": "Ottoman Naval Commander",
+      "position": "You command the fleet facing the chain across the Golden Horn.",
+      "power": "You can blockade, transport troops, and threaten sea walls, but the chain and skilled Christian crews restrict direct entry.",
+      "goals": "Cut supply, divide the defenders, and make the fleet essential to the conquest.",
+      "fears": "Another enemy supply convoy could break the blockade and humiliate the navy before the sultan.",
+      "lens": "The city survives because it can concentrate defenders behind walls and still look to the sea for aid.",
+      "preference": "Bypass the chain and force Constantinople to defend the Golden Horn.",
+      "blindSpot": "You may discount the engineering difficulty, Galata’s neutrality, and the army’s need for immediate progress at the land walls."
+    },
+    {
+      "id": "logistics",
+      "name": "Imperial Logistics and Diplomacy Officer",
+      "position": "You track food, powder, draft animals, pay, intelligence, and foreign reactions.",
+      "power": "You can redirect supplies and propose terms, but commanders may see caution as weakness.",
+      "goals": "Win the city intact enough to govern and prevent the siege from becoming a costly, open-ended gamble.",
+      "fears": "Disease, shortages, indiscipline, or a Venetian and Genoese relief effort could reverse the campaign.",
+      "lens": "Expansion succeeds when military victory produces a governable territory rather than an exhausted army and ruined prize.",
+      "preference": "Combine pressure with surrender terms and a firm timetable for escalation.",
+      "blindSpot": "You may overestimate the chance that Byzantine leaders will surrender a sacred imperial capital."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "walls",
+      "label": "Theodosian Walls",
+      "text": "A moat and layered outer and inner walls had protected the landward side of Constantinople for roughly a millennium.",
+      "why": "Explains why ordinary assault tactics were insufficient."
+    },
+    {
+      "id": "bombard",
+      "label": "The Great Bombard",
+      "text": "The largest Ottoman cannon could smash masonry but required extensive crews, powder, transport, loading, and cooling time.",
+      "why": "Shows both the power and logistical limits of gunpowder."
+    },
+    {
+      "id": "smallguns",
+      "label": "Smaller Ottoman Cannon",
+      "text": "Numerous smaller guns could fire more often than the largest bombard and sustain pressure on repair crews.",
+      "why": "Supports a combined artillery system rather than dependence on one weapon."
+    },
+    {
+      "id": "repairs",
+      "label": "Nightly Wall Repairs",
+      "text": "Defenders filled damaged sections with earth, timber, stone, and other materials after daytime bombardment.",
+      "why": "Demonstrates that damage had to be maintained and exploited."
+    },
+    {
+      "id": "rumeli",
+      "label": "Rumeli Hisarı",
+      "text": "Mehmed completed a fortress on the Bosporus in 1452 to control traffic and tighten pressure on the city.",
+      "why": "Connects preparation, state capacity, and control of strategic geography."
+    },
+    {
+      "id": "chain",
+      "label": "Golden Horn Chain",
+      "text": "A heavy defensive barrier blocked Ottoman ships from entering the protected harbor.",
+      "why": "Explains why naval superiority did not automatically create access."
+    },
+    {
+      "id": "ships",
+      "label": "Ships Hauled Overland",
+      "text": "Ottoman crews moved vessels over a prepared route into the Golden Horn, bypassing the harbor chain.",
+      "why": "Shows logistical innovation forcing defenders to divide attention."
+    },
+    {
+      "id": "convoy",
+      "label": "Relief Ships Break Through",
+      "text": "A small Christian supply convoy fought through the Ottoman blockade on April 20 and entered the city.",
+      "why": "Reveals the blockade’s weakness and the political cost of delay."
+    },
+    {
+      "id": "garrison",
+      "label": "Limited Defending Garrison",
+      "text": "The defenders were badly outnumbered but protected by walls and could concentrate on narrow attack points.",
+      "why": "Explains why Ottoman numbers mattered only if the defense was stretched."
+    },
+    {
+      "id": "giustiniani",
+      "label": "Giovanni Giustiniani",
+      "text": "The experienced Genoese commander organized defense of the land walls and became central to Byzantine resistance.",
+      "why": "Shows the importance of leadership and specialized military knowledge."
+    },
+    {
+      "id": "janissaries",
+      "label": "Janissary Reserve",
+      "text": "The sultan’s disciplined infantry could spearhead a decisive assault after other waves tired the defenders.",
+      "why": "Connects military professionals to expansion."
+    },
+    {
+      "id": "surrender",
+      "label": "Terms Before Assault",
+      "text": "Mehmed demanded surrender and could offer protection in exchange for submission before ordering a final attack.",
+      "why": "Adds diplomacy and governability to the conquest calculation."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "breach",
+      "title": "Create the breach",
+      "prompt": "The walls absorb punishment and defenders repair them after dark. Where should effort be concentrated?",
+      "options": [
+        {
+          "id": "concentrate",
+          "title": "Concentrate fire at one sector",
+          "action": "Mass large and small cannon against a selected weak point, with engineers suppressing repairs.",
+          "benefits": "Artillery crews and assault planners gain a clear objective.",
+          "worries": "Defenders can concentrate their best troops at the same point.",
+          "tradeoff": "A deep breach may be predictable and heavily defended."
+        },
+        {
+          "id": "distributed",
+          "title": "Bombard several sectors",
+          "action": "Spread cannon along the land walls to create uncertainty and multiple damaged zones.",
+          "benefits": "The small garrison must divide repair crews and reserves.",
+          "worries": "No single sector may receive enough fire to collapse.",
+          "tradeoff": "Dispersal stretches defenders but also dilutes Ottoman force."
+        },
+        {
+          "id": "mines",
+          "title": "Pair cannon with mines and towers",
+          "action": "Use artillery as cover while engineers tunnel and move siege works toward the walls.",
+          "benefits": "Multiple technologies could overcome repairs and defensive adaptation.",
+          "worries": "Countermines and fire can destroy slow engineering projects.",
+          "tradeoff": "More approaches increase possibility but consume time and specialists."
+        },
+        {
+          "id": "terms",
+          "title": "Pressure with surrender terms",
+          "action": "Continue selective bombardment while promising protection if the city submits before a final assault.",
+          "benefits": "A negotiated city is less damaged and easier to govern.",
+          "worries": "Commanders may read delay as hesitation and defenders may use talks to repair walls.",
+          "tradeoff": "Lower destruction risks giving the enemy time."
+        }
+      ]
+    },
+    {
+      "id": "harbor",
+      "title": "Break the harbor advantage",
+      "prompt": "The Golden Horn chain blocks the fleet and a relief convoy has reached the city. What should the council do?",
+      "options": [
+        {
+          "id": "overland",
+          "title": "Move ships overland",
+          "action": "Prepare a greased timber road and haul light vessels around the chain into the Golden Horn.",
+          "benefits": "The fleet opens a new front and forces defenders off the land walls.",
+          "worries": "Engineers, crews, draft animals, and Galata’s neutrality are put at risk.",
+          "tradeoff": "A daring logistical maneuver may fail publicly and waste critical time."
+        },
+        {
+          "id": "chainattack",
+          "title": "Attack the chain directly",
+          "action": "Mass ships and artillery at the harbor entrance to break or burn the barrier.",
+          "benefits": "Success gives the whole fleet direct access.",
+          "worries": "Defenders hold the narrow approach and can use ships, missiles, and fire.",
+          "tradeoff": "The shortest route is also the most predictable and exposed."
+        },
+        {
+          "id": "blockade",
+          "title": "Tighten the outer blockade",
+          "action": "Keep the fleet outside, improve patrols, and focus on preventing another relief convoy.",
+          "benefits": "Protects ships and preserves pressure without an engineering gamble.",
+          "worries": "The Golden Horn remains safe and defenders stay concentrated on land walls.",
+          "tradeoff": "A safer navy contributes less to the decisive breach."
+        },
+        {
+          "id": "galata",
+          "title": "Coerce Galata",
+          "action": "Demand that the Genoese colony open access or accept Ottoman occupation.",
+          "benefits": "Could solve the harbor problem and remove an uncertain neighbor.",
+          "worries": "It may unite neutral Genoese merchants with Constantinople and provoke wider intervention.",
+          "tradeoff": "Immediate access could create a larger diplomatic war."
+        }
+      ]
+    },
+    {
+      "id": "assault",
+      "title": "Order the decisive assault",
+      "prompt": "A usable breach is forming, but the army is tired. How should the final attack be organized?",
+      "options": [
+        {
+          "id": "waves",
+          "title": "Three coordinated waves",
+          "action": "Send irregulars first, regular infantry second, and rested Janissaries last to exploit the breach.",
+          "benefits": "Each wave drains defenders while preserving elite troops for the decisive push.",
+          "worries": "Earlier troops bear extreme losses and may break discipline.",
+          "tradeoff": "Efficiency depends on treating parts of the army as expendable."
+        },
+        {
+          "id": "elite",
+          "title": "Lead with Janissaries",
+          "action": "Commit the best infantry immediately before defenders can repair the breach.",
+          "benefits": "Maximizes shock, discipline, and the chance of holding captured ground.",
+          "worries": "A repulse could destroy the army’s most valuable professional force.",
+          "tradeoff": "Speed and quality are purchased with concentrated institutional risk."
+        },
+        {
+          "id": "encirclement",
+          "title": "Delay for full encirclement",
+          "action": "Strengthen harbor pressure, mines, and artillery before risking another mass assault.",
+          "benefits": "Defenders face more fronts and fewer opportunities to rest.",
+          "worries": "Ottoman supplies, morale, and foreign diplomatic risks worsen with time.",
+          "tradeoff": "Better preparation may close the strategic window."
+        },
+        {
+          "id": "lastterms",
+          "title": "Offer final capitulation terms",
+          "action": "Use the visible breach to demand surrender before authorizing a general assault.",
+          "benefits": "May preserve the city, army, and future tax base.",
+          "worries": "Defenders may refuse and interpret another offer as uncertainty.",
+          "tradeoff": "Restraint could save lives or squander momentum."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how the siege demonstrates causation in Topic 3.1: why did gunpowder matter, and why were administration, logistics, military professionals, geography, and political choices still necessary to turn the technology into imperial expansion?",
+  "sources": [
+    {
+      "label": "World History Encyclopedia — 1453: The Fall of Constantinople",
+      "url": "https://www.worldhistory.org/article/1180/1453-the-fall-of-constantinople/"
+    },
+    {
+      "label": "World History Encyclopedia — Mehmed II",
+      "url": "https://www.worldhistory.org/Mehmed_II/"
+    },
+    {
+      "label": "Encyclopaedia Britannica — Fall of Constantinople",
+      "url": "https://www.britannica.com/event/Fall-of-Constantinople-1453"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

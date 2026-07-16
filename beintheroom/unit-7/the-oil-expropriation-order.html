@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Oil Expropriation Order | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "7.4",
+  "unit": "7",
+  "topicTitle": "Economy in the Interwar Period",
+  "file": "the-oil-expropriation-order.html",
+  "title": "The *Oil Expropriation Order*",
+  "location": "Presidential council, Mexico City",
+  "date": "18 March 1938",
+  "lessonUrl": "../../unit-7/lesson-7-4-interwar-economy.html",
+  "alignment": {
+    "theme": "Economic Systems (ECN) and Governance (GOV)",
+    "objective": "Explain how governments responded to economic crisis and took a greater role in economic life during the interwar period.",
+    "skill": "Comparison and causation",
+    "keyConcepts": [
+      "KC-6.2.III",
+      "State intervention in interwar economies",
+      "Mexican oil nationalization"
+    ]
+  },
+  "premise": [
+    "Foreign-owned oil companies have rejected a labor ruling requiring higher wages and improved conditions. President Lázaro Cárdenas is considering expropriation under Mexico’s constitutional claim to subsoil resources and the revolutionary promise of national sovereignty.",
+    "Nationalization could fund development and strengthen labor, but Mexico must compensate owners, find technical expertise, sell oil abroad, and withstand diplomatic or commercial retaliation. The decision is neither a fascist command economy nor a Soviet collectivization program; it is a popular-nationalist state intervention rooted in the Mexican Revolution.",
+    "You must recommend ownership, compensation, labor governance, and international strategy hours before the announcement."
+  ],
+  "centralQuestion": "How should Mexico nationalize oil to strengthen sovereignty and labor rights without isolating the economy or replacing foreign corporate control with unaccountable state control?",
+  "roles": [
+    {
+      "id": "advisor",
+      "name": "Cárdenas Economic Adviser",
+      "position": "You design the decree, compensation, and new national oil administration.",
+      "power": "The president has constitutional authority and public support, but Mexico needs capital, expertise, and buyers.",
+      "goals": "Turn resource sovereignty into durable development.",
+      "fears": "Retaliation or mismanagement could make nationalization symbolic but economically damaging.",
+      "lens": "Interwar governments used state power in distinct ideological and national contexts.",
+      "preference": "Expropriate with compensation and a public corporation under audit.",
+      "blindSpot": "You may assume administrative capacity will appear once ownership changes."
+    },
+    {
+      "id": "union",
+      "name": "Oil Workers’ Union Leader",
+      "position": "You represent workers whose wage and contract dispute triggered the crisis.",
+      "power": "Workers can strike and keep facilities operating, but technical and managerial gaps remain.",
+      "goals": "Secure wages, safety, and a role in the industry’s governance.",
+      "fears": "A national company may demand sacrifice while reproducing hierarchy.",
+      "lens": "Economic nationalism is credible only if workers share its benefits and power.",
+      "preference": "Support expropriation with union representation and binding labor standards.",
+      "blindSpot": "You may underestimate the financial discipline needed to maintain production."
+    },
+    {
+      "id": "oilman",
+      "name": "Foreign Oil Company Executive",
+      "position": "You defend investments, contracts, and technical operations built by foreign firms.",
+      "power": "Companies control capital, expertise, and marketing networks, but Mexican law and public opinion have turned against them.",
+      "goals": "Protect property and avoid a precedent for uncompensated seizure.",
+      "fears": "A boycott or confrontation may destroy long-term access to Mexican resources.",
+      "lens": "Private investment can develop resources while creating external control.",
+      "preference": "Accept a negotiated joint venture with compensation and stable contracts.",
+      "blindSpot": "You may call legal concessions permanent rights regardless of revolutionary constitutional change."
+    },
+    {
+      "id": "diplomat",
+      "name": "United States Diplomatic Envoy",
+      "position": "You balance company claims, hemispheric stability, and the Good Neighbor policy.",
+      "power": "Washington can exert financial pressure but wants cooperation as war approaches.",
+      "goals": "Prevent a rupture while protecting lawful compensation.",
+      "fears": "Heavy-handed intervention could revive anti-American nationalism and push Mexico toward rival buyers.",
+      "lens": "International economic power operates through markets, credit, and diplomacy.",
+      "preference": "Recognize expropriation if compensation negotiations remain credible.",
+      "blindSpot": "You may define stability around U.S. strategic interests more than Mexican sovereignty."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "constitution",
+      "label": "Constitution of 1917",
+      "text": "Mexico’s constitution asserted national ownership of subsoil resources and expanded labor rights.",
+      "why": "Provides the legal and revolutionary foundation."
+    },
+    {
+      "id": "labor",
+      "label": "Labor Dispute",
+      "text": "Oil workers won a wage ruling that foreign firms resisted despite the Mexican Supreme Court decision.",
+      "why": "Explains the immediate trigger."
+    },
+    {
+      "id": "foreign",
+      "label": "Foreign Ownership",
+      "text": "British and American firms controlled much of oil production, capital, and export marketing.",
+      "why": "Defines the sovereignty problem."
+    },
+    {
+      "id": "decree",
+      "label": "18 March Decree",
+      "text": "Cárdenas expropriated company assets and presented the action as defense of law and national dignity.",
+      "why": "Shows state intervention through popular nationalism."
+    },
+    {
+      "id": "compensation",
+      "label": "Compensation Obligation",
+      "text": "Mexico accepted a duty to compensate owners while disputing valuation and timing.",
+      "why": "Prevents treating nationalization as costless seizure."
+    },
+    {
+      "id": "boycott",
+      "label": "Commercial Retaliation",
+      "text": "Companies and foreign interests could restrict equipment, credit, and markets.",
+      "why": "Makes international dependence part of the decision."
+    },
+    {
+      "id": "pemex",
+      "label": "National Oil Company",
+      "text": "A state enterprise required Mexican technical training, administration, and long-term investment.",
+      "why": "Shows ownership and capacity are different questions."
+    },
+    {
+      "id": "support",
+      "label": "Popular Support",
+      "text": "Workers and citizens raised funds and goods to support compensation and nationalization.",
+      "why": "Shows legitimacy as an economic and political resource."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "ownership",
+      "title": "Choose the ownership model",
+      "prompt": "What institution should replace the foreign companies?",
+      "options": [
+        {
+          "id": "state",
+          "title": "Create a state oil company",
+          "action": "Place production, refining, and marketing under a national public enterprise.",
+          "benefits": "Mexico gains strategic control and can direct revenue toward development.",
+          "worries": "Political appointments and weak capacity may reduce efficiency.",
+          "tradeoff": "Sovereignty expands alongside bureaucratic risk."
+        },
+        {
+          "id": "joint",
+          "title": "Create majority-Mexican joint ventures",
+          "action": "Keep technical partners under national majority ownership and law.",
+          "benefits": "Expertise and market access remain available.",
+          "worries": "Foreign firms may retain leverage over technology and contracts.",
+          "tradeoff": "Capacity is gained by accepting limited external dependence."
+        },
+        {
+          "id": "cooperative",
+          "title": "Use worker-state management",
+          "action": "Give the union and government shared operating authority.",
+          "benefits": "Labor legitimacy and practical knowledge shape the enterprise.",
+          "worries": "Conflicts over wages, investment, and political loyalty may paralyze decisions.",
+          "tradeoff": "Democratic participation complicates centralized planning."
+        }
+      ]
+    },
+    {
+      "id": "payment",
+      "title": "Set compensation",
+      "prompt": "How should Mexico compensate former owners?",
+      "options": [
+        {
+          "id": "bonds",
+          "title": "Long-term government bonds",
+          "action": "Pay verified asset value over time from oil revenue.",
+          "benefits": "Mexico preserves immediate cash and acknowledges legal obligation.",
+          "worries": "Creditors may reject valuation and bonds may strain future budgets.",
+          "tradeoff": "Sovereignty is financed through long-term debt."
+        },
+        {
+          "id": "cash",
+          "title": "Rapid negotiated payment",
+          "action": "Use reserves and foreign borrowing for a quicker settlement.",
+          "benefits": "Diplomatic pressure and boycotts may ease.",
+          "worries": "Mexico assumes costly debt and reduces development funds.",
+          "tradeoff": "External access is purchased by limiting domestic investment."
+        },
+        {
+          "id": "profits",
+          "title": "Revenue-sharing settlement",
+          "action": "Pay compensation as a fixed share of future exports.",
+          "benefits": "Payment tracks actual performance and avoids immediate borrowing.",
+          "worries": "Former owners retain a claim on national resources for years.",
+          "tradeoff": "Financial independence is delayed to gain flexibility."
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Make nationalization accountable",
+      "prompt": "How should the new enterprise be governed?",
+      "options": [
+        {
+          "id": "presidential",
+          "title": "Strong presidential control",
+          "action": "Let the executive appoint managers and set national priorities.",
+          "benefits": "Coordination is fast and policy aligns with the reform program.",
+          "worries": "Future presidents may use the company for patronage or secrecy.",
+          "tradeoff": "Decisive state capacity weakens institutional checks."
+        },
+        {
+          "id": "audit",
+          "title": "Independent public board",
+          "action": "Require professional managers, published accounts, labor seats, and legislative audits.",
+          "benefits": "Public ownership gains transparency and technical standards.",
+          "worries": "Multiple veto points slow urgent decisions.",
+          "tradeoff": "Accountability trades speed for durable legitimacy."
+        },
+        {
+          "id": "regional",
+          "title": "Share revenue with producing regions",
+          "action": "Guarantee local infrastructure, environmental safeguards, and municipal funds.",
+          "benefits": "Communities see material benefits and cooperate with production.",
+          "worries": "National planners lose revenue and regional inequality may persist.",
+          "tradeoff": "Resource nationalism becomes credible through local distribution."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Compare Mexico’s oil nationalization with one other interwar government response—the New Deal, fascist corporatism, or Soviet planning. Explain one shared increase in state power and one ideological difference.",
+  "sources": [
+    {
+      "label": "U.S. Office of the Historian — Mexican oil expropriation",
+      "url": "https://history.state.gov/milestones/1937-1945/mexican-oil"
+    },
+    {
+      "label": "Encyclopaedia Britannica — Lázaro Cárdenas",
+      "url": "https://www.britannica.com/biography/Lazaro-Cardenas"
+    },
+    {
+      "label": "PEMEX — Historical overview",
+      "url": "https://www.pemex.com/en/about-pemex/history/Paginas/default.aspx"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

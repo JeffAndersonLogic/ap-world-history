@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Pullman Strike Hearing | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.8",
+  "unit": "5",
+  "topicTitle": "Reactions to the Industrial Economy",
+  "file": "the-pullman-strike-hearing.html",
+  "title": "The *Pullman Strike Hearing*",
+  "location": "Federal mediation room, Chicago",
+  "date": "July 1894",
+  "lessonUrl": "../../unit-5/lesson-5-8-reactions-to-industrial-economy.html",
+  "alignment": {
+    "theme": "Social Interactions and Organization (SIO) and Governance (GOV)",
+    "objective": "Explain how workers, abolitionists, and reformers responded to industrial capitalism.",
+    "skill": "Argumentation and causation",
+    "keyConcepts": [
+      "KC-5.8.I–II",
+      "KC-5.8.II.A–C",
+      "Unions, strikes, abolition, and reform"
+    ]
+  },
+  "premise": [
+    "Workers at the Pullman Company live in a company town where wages have fallen during the depression but rents have not. The American Railway Union has called a boycott of trains carrying Pullman cars. Federal officials warn that the strike threatens interstate mail and commerce.",
+    "The hearing must decide whether the conflict is a private wage dispute, a constitutional test of collective action, or evidence that industrial capitalism gives employers and the state unequal power. Eugene Debs and the federal government offer competing accounts of order.",
+    "You must recommend a settlement while considering what it teaches about labor organization, reform, and state power."
+  ],
+  "centralQuestion": "How should a government respond to a nationwide industrial strike when workers claim collective rights and employers claim property and interstate commerce rights?",
+  "roles": [
+    {
+      "id": "worker",
+      "name": "Pullman Worker",
+      "position": "You live in the company town and face reduced wages, rents, and limited bargaining power.",
+      "power": "Workers can withhold labor and join a national boycott, but courts and employers can blacklist or arrest them.",
+      "goals": "Restore a livable wage and independent representation.",
+      "fears": "A failed strike may destroy families and the union.",
+      "lens": "Industrial capitalism links workplace power to housing, transport, and law.",
+      "preference": "Demand bargaining and rent relief through a collective action.",
+      "blindSpot": "You may underestimate how quickly public sympathy can turn when trains stop."
+    },
+    {
+      "id": "debss",
+      "name": "Railway Union Organizer",
+      "position": "You coordinate workers across rail lines and defend industrial unionism.",
+      "power": "A national union can amplify a local dispute, but the government can issue injunctions and use troops.",
+      "goals": "Prove that collective action can challenge corporate power.",
+      "fears": "A narrow settlement may divide workers and leave the structure unchanged.",
+      "lens": "Labor movements grow by connecting local grievances to class-wide power.",
+      "preference": "Call a disciplined boycott and seek arbitration backed by public pressure.",
+      "blindSpot": "You may mistake escalation for solidarity and invite legal repression."
+    },
+    {
+      "id": "company",
+      "name": "Pullman Company Director",
+      "position": "You own the town, set wages, and defend the company’s investment.",
+      "power": "You control employment and housing, but production and reputation depend on a functioning rail system.",
+      "goals": "Preserve managerial authority and financial stability.",
+      "fears": "Recognition of the union may spread to every company operation.",
+      "lens": "Paternal company systems combine welfare, surveillance, and labor control.",
+      "preference": "Offer individual relief while refusing collective recognition.",
+      "blindSpot": "You may call company housing benevolence while ignoring the power it creates."
+    },
+    {
+      "id": "federal",
+      "name": "Federal Mediator and Attorney",
+      "position": "You must keep mail and interstate rail service operating under federal law.",
+      "power": "You can seek injunctions and deploy marshals or troops, but legitimacy depends on public trust.",
+      "goals": "End violence and preserve constitutional order.",
+      "fears": "Using force for commerce may make the state appear to serve corporations.",
+      "lens": "Government responses reveal which rights industrial society protects most strongly.",
+      "preference": "Require a cooling-off period and independent investigation before force.",
+      "blindSpot": "You may treat uninterrupted commerce as neutral while workers experience it as coercion."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "wages",
+      "label": "Wage Cuts",
+      "text": "Pullman reduced wages during the depression while rents in the company town remained comparatively high.",
+      "why": "Creates the immediate grievance."
+    },
+    {
+      "id": "companytown",
+      "label": "Company Town",
+      "text": "The company controlled housing, employment, and local services, limiting workers’ independence.",
+      "why": "Shows why the dispute exceeded a simple wage contract."
+    },
+    {
+      "id": "aru",
+      "label": "Industrial Unionism",
+      "text": "The American Railway Union organized across crafts and connected Pullman workers to a national network.",
+      "why": "Explains the strike’s scale."
+    },
+    {
+      "id": "boycott",
+      "label": "Railway Boycott",
+      "text": "Workers refused to handle Pullman cars, disrupting rail operations across much of the United States.",
+      "why": "Shows collective leverage and public costs."
+    },
+    {
+      "id": "injunction",
+      "label": "Federal Injunction",
+      "text": "The federal government used an injunction against the boycott and argued that mail and interstate commerce were threatened.",
+      "why": "Places courts at the center of labor conflict."
+    },
+    {
+      "id": "troops",
+      "label": "Federal Troops",
+      "text": "Federal troops entered Chicago amid unrest, violence, and contested claims about public order.",
+      "why": "Shows the coercive capacity of the state."
+    },
+    {
+      "id": "debs",
+      "label": "Debs’s Conversion",
+      "text": "Eugene Debs later described the government response as evidence that class power shaped law.",
+      "why": "Connects experience to socialist politics."
+    },
+    {
+      "id": "reform",
+      "label": "Labor Reform",
+      "text": "The strike helped stimulate debate over arbitration, union recognition, and the limits of corporate paternalism.",
+      "why": "Shows how conflict can produce institutional change even after defeat."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "action",
+      "title": "Choose the workers’ action",
+      "prompt": "How should the union proceed?",
+      "options": [
+        {
+          "id": "boycott",
+          "title": "Continue the boycott",
+          "action": "Maintain a disciplined national action until Pullman bargains collectively.",
+          "benefits": "Workers keep leverage and make the company-town problem visible.",
+          "worries": "Courts, troops, and public disruption may destroy the union.",
+          "tradeoff": "Pressure can win recognition only by risking repression."
+        },
+        {
+          "id": "arbitrate",
+          "title": "Accept arbitration",
+          "action": "Suspend the boycott in exchange for a formal investigation and binding mediation.",
+          "benefits": "Workers avoid immediate force and gain a legal record.",
+          "worries": "The company may delay or use arbitration to divide workers.",
+          "tradeoff": "Institutional access trades urgency for procedural legitimacy."
+        },
+        {
+          "id": "local",
+          "title": "Limit the dispute to Pullman",
+          "action": "End the national boycott and negotiate wages, rents, and recognition locally.",
+          "benefits": "Rail service resumes and local families may receive relief.",
+          "worries": "The company and government can isolate workers and preserve the broader system.",
+          "tradeoff": "Short-term relief narrows collective power."
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "title": "Set the federal response",
+      "prompt": "What should the government authorize?",
+      "options": [
+        {
+          "id": "force",
+          "title": "Enforce the injunction",
+          "action": "Use marshals and troops to restore rail service and arrest defiant leaders.",
+          "benefits": "Commerce resumes and the injunction gains force.",
+          "worries": "Violence and distrust deepen; the state appears corporate-aligned.",
+          "tradeoff": "Order is restored by expanding coercive precedent."
+        },
+        {
+          "id": "cooling",
+          "title": "Require a cooling-off period",
+          "action": "Pause the injunction, protect essential mail, and convene mediation.",
+          "benefits": "The state protects public services without immediately criminalizing organizing.",
+          "worries": "The strike may continue and employers may refuse the process.",
+          "tradeoff": "Neutral procedure requires tolerating disruption."
+        },
+        {
+          "id": "rights",
+          "title": "Protect collective bargaining",
+          "action": "Recognize workers’ right to organize while limiting violence and secondary coercion.",
+          "benefits": "Labor gains a lawful channel and future conflict may be less explosive.",
+          "worries": "Courts and employers may resist a broad new interpretation.",
+          "tradeoff": "Industrial citizenship expands by redefining property and contract rights."
+        }
+      ]
+    },
+    {
+      "id": "settlement",
+      "title": "Write the settlement",
+      "prompt": "What should change after the hearing?",
+      "options": [
+        {
+          "id": "wages",
+          "title": "Set wages and rents",
+          "action": "Require transparent wage and rent rules with independent review.",
+          "benefits": "Workers gain material protection in company towns.",
+          "worries": "Managers lose flexibility and enforcement may be weak.",
+          "tradeoff": "Economic regulation addresses symptoms without ending paternal ownership."
+        },
+        {
+          "id": "union",
+          "title": "Recognize the union",
+          "action": "Require collective bargaining and prohibit retaliation for membership.",
+          "benefits": "Workers gain durable collective power.",
+          "worries": "Employers may relocate or automate and political opposition grows.",
+          "tradeoff": "Recognition changes the balance of industrial authority."
+        },
+        {
+          "id": "public",
+          "title": "Build public services",
+          "action": "Separate housing, utilities, and transport from company control through municipal oversight.",
+          "benefits": "Workers become less dependent on one employer.",
+          "worries": "Public costs rise and local governments may lack capacity.",
+          "tradeoff": "Social reform reduces the power of the company town."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how the Pullman Strike shows workers responding to industrial capitalism through collective organization. Evaluate whether the government response expanded or limited worker power.",
+  "sources": [
+    {
+      "label": "National Park Service — Pullman National Historical Park",
+      "url": "https://www.nps.gov/pull/learn/historyculture/the-pullman-strike.htm"
+    },
+    {
+      "label": "Library of Congress — Eugene V. Debs",
+      "url": "https://www.loc.gov/item/today-in-history/may-09/"
+    },
+    {
+      "label": "Encyclopaedia Britannica — Pullman Strike",
+      "url": "https://www.britannica.com/event/Pullman-Strike"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Ministry of Information | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "7.3",
+  "unit": "7",
+  "topicTitle": "Conducting World War I",
+  "file": "the-ministry-of-information.html",
+  "title": "The *Ministry of Information*",
+  "location": "London propaganda board",
+  "date": "1917",
+  "lessonUrl": "../../unit-7/lesson-7-3-conducting-wwi.html",
+  "alignment": {
+    "theme": "Governance (GOV) and Culture and Developments (CDI)",
+    "objective": "Explain how governments mobilized populations and resources to conduct World War I.",
+    "skill": "Causation and sourcing",
+    "keyConcepts": [
+      "KC-6.2.IV.B–C",
+      "Total war and mass mobilization",
+      "Propaganda and military technology"
+    ]
+  },
+  "premise": [
+    "After years of trench warfare, casualties and shortages are eroding morale. Britain needs soldiers, loans, food conservation, industrial labor, and support across its empire. Newspapers and film can mobilize the public, but censorship and atrocity claims can damage trust when they are false or incomplete.",
+    "The board receives front-line photographs, casualty figures, recruitment targets, and requests from colonial offices. It must decide what citizens and colonial subjects see and how openly propaganda acknowledges sacrifice.",
+    "Your campaign will reveal how total war draws civilians, media, industry, and empire into military conduct."
+  ],
+  "centralQuestion": "How should a wartime information ministry mobilize a diverse population without destroying public trust through censorship, manipulation, or unequal appeals to sacrifice?",
+  "roles": [
+    {
+      "id": "director",
+      "name": "Information Ministry Director",
+      "position": "You coordinate posters, press guidance, film, and official statements.",
+      "power": "You control access and messaging but cannot erase lived experience or soldiers’ letters.",
+      "goals": "Sustain recruitment, production, and public confidence.",
+      "fears": "Visible contradiction between propaganda and reality may collapse trust.",
+      "lens": "Total war depends on information management as much as battlefield command.",
+      "preference": "Use truthful selective messaging tied to specific public actions.",
+      "blindSpot": "You may define public confidence as agreement rather than informed consent."
+    },
+    {
+      "id": "correspondent",
+      "name": "Accredited War Correspondent",
+      "position": "You report the front under censorship rules and know what soldiers experience.",
+      "power": "You can shape narratives, but access and publication depend on military approval.",
+      "goals": "Tell enough truth to make sacrifice meaningful and policy accountable.",
+      "fears": "Unrestricted detail may aid the enemy or deepen despair.",
+      "lens": "Sources must be evaluated for purpose, audience, and constraint.",
+      "preference": "Publish verified conditions with delayed operational details.",
+      "blindSpot": "You may underestimate the cumulative effect of bad news during crisis."
+    },
+    {
+      "id": "union",
+      "name": "Munitions Worker and Union Delegate",
+      "position": "You represent workers facing long hours, danger, inflation, and restrictions on strikes.",
+      "power": "Industrial labor can slow production, but wartime law limits bargaining.",
+      "goals": "Connect patriotic service to wages, safety, and recognition.",
+      "fears": "Posters may glorify sacrifice while employers and government shift costs onto labor.",
+      "lens": "Home-front mobilization is a negotiated social relationship.",
+      "preference": "Support production appeals only with visible worker protections.",
+      "blindSpot": "You may treat every labor compromise as propaganda rather than a real concession."
+    },
+    {
+      "id": "colonial",
+      "name": "Colonial Troops Liaison",
+      "position": "You represent soldiers and laborers recruited from India, Africa, and the Caribbean.",
+      "power": "Imperial manpower is essential, but colonial subjects lack equal political rights.",
+      "goals": "Demand recognition, fair treatment, and credible postwar commitments.",
+      "fears": "The empire may use loyalty imagery without changing colonial rule.",
+      "lens": "Wartime mobilization intensifies nationalism and exposes imperial contradictions.",
+      "preference": "Include colonial service and concrete commitments in the campaign.",
+      "blindSpot": "You may expect wartime promises to overcome entrenched imperial interests."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "trench",
+      "label": "Trench Warfare",
+      "text": "Machine guns, artillery, barbed wire, and trenches produced prolonged stalemate and mass casualties.",
+      "why": "Explains why morale and replacement became strategic resources."
+    },
+    {
+      "id": "posters",
+      "label": "Recruitment Posters",
+      "text": "Governments used personal appeals, gender expectations, and national symbols to encourage enlistment.",
+      "why": "Shows media converting identity into action."
+    },
+    {
+      "id": "censorship",
+      "label": "Press Censorship",
+      "text": "States restricted operational information and influenced reporting from the front.",
+      "why": "Creates the trust-versus-security dilemma."
+    },
+    {
+      "id": "film",
+      "label": "Wartime Film",
+      "text": "Official films brought selected battlefield images to mass audiences.",
+      "why": "Shows new media expanding state reach."
+    },
+    {
+      "id": "women",
+      "label": "Women’s War Work",
+      "text": "Women entered munitions, transport, agriculture, and nursing in large numbers.",
+      "why": "Connects total war to changing gender roles."
+    },
+    {
+      "id": "colonies",
+      "label": "Colonial Mobilization",
+      "text": "European empires recruited millions of colonial soldiers, laborers, and resources.",
+      "why": "Makes the war global and reveals unequal citizenship."
+    },
+    {
+      "id": "rationing",
+      "label": "Rationing and Bonds",
+      "text": "Governments regulated consumption and borrowed from citizens to sustain the war economy.",
+      "why": "Shows civilian households becoming part of strategy."
+    },
+    {
+      "id": "letters",
+      "label": "Soldiers’ Letters",
+      "text": "Private correspondence carried front-line experience around official narratives despite censorship.",
+      "why": "Limits the ministry’s ability to control information completely."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "truth",
+      "title": "Set the truth standard",
+      "prompt": "What should the ministry release about casualties and conditions?",
+      "options": [
+        {
+          "id": "full",
+          "title": "Publish verified totals and conditions",
+          "action": "Release accurate national figures and contextualized front reports.",
+          "benefits": "Citizens can judge sacrifice with credible information.",
+          "worries": "Morale may fall and enemies gain insight.",
+          "tradeoff": "Trust is prioritized over short-term message control."
+        },
+        {
+          "id": "delay",
+          "title": "Delay operational detail",
+          "action": "Publish verified information after a fixed security delay.",
+          "benefits": "The public receives truth without immediate military exposure.",
+          "worries": "Delay can become indefinite and casualties feel concealed.",
+          "tradeoff": "Security and accountability depend on enforceable limits."
+        },
+        {
+          "id": "optimistic",
+          "title": "Release only morale-supporting news",
+          "action": "Suppress setbacks and emphasize heroism, progress, and enemy weakness.",
+          "benefits": "Recruitment and production may improve briefly.",
+          "worries": "Contradictory experience can destroy long-term trust.",
+          "tradeoff": "Mobilization gains speed by borrowing credibility from the future."
+        }
+      ]
+    },
+    {
+      "id": "campaign",
+      "title": "Choose the central appeal",
+      "prompt": "What should the public campaign emphasize?",
+      "options": [
+        {
+          "id": "duty",
+          "title": "National duty and defense",
+          "action": "Use shared symbols, family protection, and national survival.",
+          "benefits": "A broad message can unify different classes.",
+          "worries": "Dissent and minorities may be labeled disloyal.",
+          "tradeoff": "Unity is created by narrowing acceptable identity."
+        },
+        {
+          "id": "contract",
+          "title": "A social contract of sacrifice",
+          "action": "Tie service to fair wages, veterans’ care, ration equity, and postwar reform.",
+          "benefits": "Mobilization gains material legitimacy.",
+          "worries": "Promises create obligations governments may not fulfill.",
+          "tradeoff": "Consent is strengthened by expanding the state’s future duties."
+        },
+        {
+          "id": "empire",
+          "title": "Imperial unity",
+          "action": "Feature colonial troops and resources as partners in a common cause.",
+          "benefits": "The campaign reflects the war’s global manpower.",
+          "worries": "Partnership imagery masks unequal rule and may intensify anticolonial demands.",
+          "tradeoff": "Recognition mobilizes empire while undermining imperial hierarchy."
+        }
+      ]
+    },
+    {
+      "id": "dissent",
+      "title": "Handle dissent and strikes",
+      "prompt": "How should the ministry treat critics?",
+      "options": [
+        {
+          "id": "suppress",
+          "title": "Suppress disruptive speech",
+          "action": "Ban material and actions judged harmful to recruitment or production.",
+          "benefits": "Officials gain short-term control over the home front.",
+          "worries": "Legitimate grievance moves underground and coercion expands.",
+          "tradeoff": "Total war erodes civil liberty in the name of survival."
+        },
+        {
+          "id": "debate",
+          "title": "Protect debate within security rules",
+          "action": "Permit criticism that does not reveal operations or organize violence.",
+          "benefits": "Citizens retain voice and false rumors can be challenged publicly.",
+          "worries": "Officials cannot fully control morale or industrial conflict.",
+          "tradeoff": "Open debate treats trust as a strategic resource."
+        },
+        {
+          "id": "bargain",
+          "title": "Negotiate with organized groups",
+          "action": "Create labor and colonial advisory councils tied to production commitments.",
+          "benefits": "Grievances become actionable and mobilization more inclusive.",
+          "worries": "Councils may slow policy and expose unequal power.",
+          "tradeoff": "Participation increases capacity by sharing authority."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how propaganda, censorship, colonial manpower, and industrial labor made World War I a total war. Source one campaign choice by purpose, audience, and limitation.",
+  "sources": [
+    {
+      "label": "Imperial War Museums — How propaganda was used in World War I",
+      "url": "https://www.iwm.org.uk/history/how-was-propaganda-used-in-world-war-one"
+    },
+    {
+      "label": "British Library — World War One propaganda",
+      "url": "https://www.bl.uk/world-war-one/articles/propaganda-as-a-weapon"
+    },
+    {
+      "label": "Library of Congress — World War I posters",
+      "url": "https://www.loc.gov/pictures/collection/wwipos/"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

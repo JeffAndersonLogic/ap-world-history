@@ -60,8 +60,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Testify before Parliament on behalf of the Lancashire workers who supported the Union cause during the Cotton Famine at personal cost; defend or prosecute the Haymarket defendants in 1886; or advise the American Federation of Labor on whether 'pure and simple unionism' or political socialism is the right path for the American working class."
+    url: '../beintheroom/unit-5/the-pullman-strike-hearing.html',
+    desc: "Join the 1894 Pullman Strike hearing and weigh collective action, company-town power, federal injunctions, and labor reform."
   };
 
   lesson.skillBuilder = {

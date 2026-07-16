@@ -66,8 +66,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Debate whether Rousseau or Locke better explains the relationship between the individual and the state, advise Diderot on which articles to include in the Encyclopédie despite royal censorship, or challenge a salon philosophe on why his natural rights theory does not extend to enslaved Africans."
+    url: '../beintheroom/unit-5/the-natural-rights-test.html',
+    desc: "Join a Paris publisher’s salon in 1788–1789 and decide whether natural-rights language will confront its exclusions of women, enslaved people, and the poor."
   };
 
   lesson.skillBuilder = {

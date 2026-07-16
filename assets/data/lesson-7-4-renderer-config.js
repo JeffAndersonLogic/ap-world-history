@@ -73,8 +73,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: 'Mexico City, March 1938. President Cárdenas is hours from announcing the expropriation of foreign oil companies. Take a seat in the room — as an adviser, a union leader, an American oilman, or a British diplomat — and argue what nationalization will cost, and what it will buy.'
+    url: '../beintheroom/unit-7/the-oil-expropriation-order.html',
+    desc: 'Join Cárdenas’s March 1938 council and decide how Mexican oil nationalization should balance sovereignty, labor rights, compensation, technical capacity, and foreign pressure.'
   };
 
   lesson.beSurreal = {

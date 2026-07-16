@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Natural Rights Test | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.1",
+  "unit": "5",
+  "topicTitle": "The Enlightenment",
+  "file": "the-natural-rights-test.html",
+  "title": "The *Natural Rights Test*",
+  "location": "Paris salon and printing office",
+  "date": "1788–1789",
+  "lessonUrl": "../../unit-5/lesson-5-1-enlightenment.html",
+  "alignment": {
+    "theme": "Culture and Developments (CDI)",
+    "objective": "Explain how Enlightenment ideas challenged traditional authority and shaped political debate.",
+    "skill": "Causation and argumentation",
+    "keyConcepts": [
+      "KC-5.1.I",
+      "KC-5.1.I.A–C",
+      "Natural rights and the public sphere"
+    ]
+  },
+  "premise": [
+    "A Paris publisher is preparing a short collection of arguments about reason, consent, religious toleration, and natural rights. Readers want a clear challenge to hereditary authority, but the commercial world that funds the press is tied to empire, slavery, and unequal access to education.",
+    "The salon includes people who use Enlightenment language differently: some seek constitutional reform, some demand abolition, and some want the language limited to property-holding men. Mary Wollstonecraft’s arguments about women’s education make the contradiction visible inside the movement itself.",
+    "You must decide what the pamphlet will claim, whose testimony it will print, and how directly it will expose the gap between universal principles and selective practice."
+  ],
+  "centralQuestion": "How should an Enlightenment publisher use reason and natural-rights language when the movement’s own authors and sponsors exclude women, enslaved people, and the poor?",
+  "roles": [
+    {
+      "id": "philosophe",
+      "name": "Constitutional Philosophe",
+      "position": "You draft arguments against arbitrary monarchy and inherited privilege.",
+      "power": "You control the language of the pamphlet and have access to educated readers, but not to state power.",
+      "goals": "Secure toleration, consent, and limits on government.",
+      "fears": "A blunt attack may bring censorship or make reformers look socially dangerous.",
+      "lens": "Ideas gain force when they move through print, correspondence, and debate.",
+      "preference": "Publish a rights claim tied to constitutional limits and public reason.",
+      "blindSpot": "You may treat educated European men as the natural public and mistake abstraction for inclusion."
+    },
+    {
+      "id": "abolitionist",
+      "name": "Free Person of Color and Abolitionist",
+      "position": "You bring evidence of colonial slavery and demand that rights apply across the Atlantic.",
+      "power": "You have testimony, networks, and moral authority, but colonial law can silence or punish you.",
+      "goals": "Force the pamphlet to connect universal rights to emancipation.",
+      "fears": "A cautious text may legitimize the system it claims to criticize.",
+      "lens": "Enlightenment principles become politically explosive when excluded people appropriate them.",
+      "preference": "Print testimony and a direct antislavery claim.",
+      "blindSpot": "You may underestimate the publisher’s financial and legal risks."
+    },
+    {
+      "id": "investor",
+      "name": "Plantation Investor and Merchant",
+      "position": "You finance paper, shipping, and colonial commerce.",
+      "power": "Your money can keep the press operating, but your wealth depends on coercive labor and imperial trade.",
+      "goals": "Protect property and commercial stability while appearing reform-minded.",
+      "fears": "Abolition language could threaten your assets and provoke state repression.",
+      "lens": "Economic interests shape which “universal” ideas circulate.",
+      "preference": "Support civil equality for property holders while postponing colonial reform.",
+      "blindSpot": "You may call property neutral even when it rests on violence."
+    },
+    {
+      "id": "educator",
+      "name": "Women’s Rights Educator",
+      "position": "You argue that reason and education must include women.",
+      "power": "You can expose the logic of exclusion, but male editors may treat your work as a side issue.",
+      "goals": "Make women’s rational capacity part of the main rights argument.",
+      "fears": "A token paragraph may leave domestic and political subordination untouched.",
+      "lens": "Universal language creates internal tools for challenging gender hierarchy.",
+      "preference": "Publish an argument for equal education and civic voice.",
+      "blindSpot": "You may assume formal education alone can overcome class and racial barriers."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "locke",
+      "label": "Consent and Natural Rights",
+      "text": "Locke’s political theory described people as naturally free and government as dependent on consent.",
+      "why": "Shows the core language used to challenge inherited authority."
+    },
+    {
+      "id": "montesquieu",
+      "label": "Separated Powers",
+      "text": "Montesquieu linked liberty to institutional checks that prevent concentrated power.",
+      "why": "Connects ideas to constitutional design rather than abstract freedom alone."
+    },
+    {
+      "id": "salon",
+      "label": "The Republic of Letters",
+      "text": "Salons, correspondence, academies, and print networks spread arguments among educated readers.",
+      "why": "Explains how ideas moved beyond one court or university."
+    },
+    {
+      "id": "encyclopedie",
+      "label": "Knowledge as Critique",
+      "text": "The Encyclopédie organized practical and intellectual knowledge while questioning inherited authority.",
+      "why": "Shows how information could challenge hierarchy."
+    },
+    {
+      "id": "wollstonecraft",
+      "label": "Rights of Woman",
+      "text": "Wollstonecraft applied reason and education arguments to women’s subordination.",
+      "why": "Reveals an internal critique of selective universalism."
+    },
+    {
+      "id": "slavery",
+      "label": "Colonial Wealth",
+      "text": "European commerce and plantation wealth depended on enslaved labor even as authors discussed liberty.",
+      "why": "Prevents treating Enlightenment ideas as detached from empire."
+    },
+    {
+      "id": "toleration",
+      "label": "Religious Toleration",
+      "text": "Arguments for toleration challenged confessional coercion and state-enforced orthodoxy.",
+      "why": "Shows a concrete target of anti-authoritarian thought."
+    },
+    {
+      "id": "public",
+      "label": "Expanding Public Debate",
+      "text": "Pamphlets and newspapers widened debate but remained shaped by literacy, price, censorship, and gender.",
+      "why": "Keeps the public sphere both innovative and unequal."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "claim",
+      "title": "Define the rights claim",
+      "prompt": "What should the pamphlet say rights belong to?",
+      "options": [
+        {
+          "id": "property",
+          "title": "Limit rights to property-holding citizens",
+          "action": "Tie political participation to education, property, and civic independence.",
+          "benefits": "The text may survive censorship and attract elite reformers.",
+          "worries": "The claim preserves exclusions the pamphlet says are natural.",
+          "tradeoff": "Practical reach comes at the cost of universal consistency."
+        },
+        {
+          "id": "universal",
+          "title": "Declare rights universal",
+          "action": "State that reason, liberty, and protection from arbitrary power belong to all people.",
+          "benefits": "The argument gives excluded groups language to challenge hierarchy.",
+          "worries": "Sponsors may withdraw and authorities may suppress the text.",
+          "tradeoff": "Moral clarity increases political risk."
+        },
+        {
+          "id": "staged",
+          "title": "Publish a staged program",
+          "action": "Call for immediate constitutional limits and a timetable for broader inclusion.",
+          "benefits": "Reformers gain a coalition and a path to implementation.",
+          "worries": "Delay can become a permanent excuse for exclusion.",
+          "tradeoff": "Sequencing may make change possible while normalizing postponement."
+        }
+      ]
+    },
+    {
+      "id": "testimony",
+      "title": "Choose the evidence",
+      "prompt": "Whose experience should be placed at the center of the pamphlet?",
+      "options": [
+        {
+          "id": "theorists",
+          "title": "Lead with canonical theorists",
+          "action": "Use Locke, Montesquieu, and other authors as the main authorities.",
+          "benefits": "Readers recognize the language and the argument looks intellectually serious.",
+          "worries": "The text can reproduce elite voices while claiming universality.",
+          "tradeoff": "Familiar authority increases legitimacy but narrows perspective."
+        },
+        {
+          "id": "excluded",
+          "title": "Lead with excluded testimony",
+          "action": "Place women’s, colonial, and enslaved people’s arguments beside the theories.",
+          "benefits": "The contradiction becomes concrete and harder to evade.",
+          "worries": "The publisher faces greater censorship and hostile readers.",
+          "tradeoff": "Evidence expands the public while increasing exposure."
+        },
+        {
+          "id": "hybrid",
+          "title": "Pair theory with lived evidence",
+          "action": "Make each principle answerable to a testimony from an excluded group.",
+          "benefits": "The pamphlet links abstraction to causation and accountability.",
+          "worries": "The structure may satisfy neither cautious elites nor radical activists.",
+          "tradeoff": "Breadth requires more complexity and less rhetorical simplicity."
+        }
+      ]
+    },
+    {
+      "id": "circulation",
+      "title": "Manage circulation",
+      "prompt": "How should the publisher distribute the text?",
+      "options": [
+        {
+          "id": "salon",
+          "title": "Target salons and subscribers",
+          "action": "Use private networks and a polished edition for educated readers.",
+          "benefits": "The text is less likely to be seized immediately.",
+          "worries": "The audience remains socially narrow.",
+          "tradeoff": "Safety protects circulation while limiting reach."
+        },
+        {
+          "id": "cheap",
+          "title": "Print a cheap broad edition",
+          "action": "Use inexpensive paper and short pamphlets for artisans, clubs, and readers beyond salons.",
+          "benefits": "More people can debate and adapt the ideas.",
+          "worries": "Financial loss and censorship become more likely.",
+          "tradeoff": "Democratic reach depends on commercial risk."
+        },
+        {
+          "id": "atlantic",
+          "title": "Build an Atlantic network",
+          "action": "Send copies to reformers in Britain, the Caribbean, and North America.",
+          "benefits": "Arguments can cross borders and connect movements.",
+          "worries": "Imperial authorities may treat the network as sedition.",
+          "tradeoff": "Transnational influence increases both solidarity and surveillance."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how Enlightenment ideas challenged traditional authority and how their selective application limited that challenge. Use one example involving gender, slavery, or property.",
+  "sources": [
+    {
+      "label": "Stanford Encyclopedia of Philosophy — Enlightenment",
+      "url": "https://plato.stanford.edu/entries/enlightenment/"
+    },
+    {
+      "label": "Library of Congress — Mary Wollstonecraft",
+      "url": "https://www.loc.gov/exhibits/womens-suffrage/mary-wollstonecraft.html"
+    },
+    {
+      "label": "National Archives — The Enlightenment and the Atlantic world",
+      "url": "https://www.archives.gov/research/african-americans/slavery-records"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Debt Conversion Table | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.7",
+  "unit": "5",
+  "topicTitle": "Economic Developments and Innovations",
+  "file": "the-debt-conversion-table.html",
+  "title": "The *Debt Conversion Table*",
+  "location": "Ottoman finance council, Constantinople",
+  "date": "1881",
+  "lessonUrl": "../../unit-5/lesson-5-7-economic-developments-and-innovations.html",
+  "alignment": {
+    "theme": "Economic Systems (ECN) and Governance (GOV)",
+    "objective": "Explain how industrial capitalism produced new financial institutions and extended economic power globally.",
+    "skill": "Causation and argumentation",
+    "keyConcepts": [
+      "KC-5.7.I–II",
+      "KC-5.7.II.A–D",
+      "Debt, finance, free trade, and economic imperialism"
+    ]
+  },
+  "premise": [
+    "The Ottoman treasury has borrowed repeatedly for military reform, infrastructure, and administration. After default, European bondholders demand a formal authority to collect selected revenues directly. The proposed Ottoman Public Debt Administration could restore credit while limiting fiscal sovereignty.",
+    "The council must distinguish a loan, a concession, and a loss of control. Tobacco, salt, stamps, customs, and fishing taxes are not abstract numbers: they affect farmers, merchants, and the state’s ability to fund reform.",
+    "You must negotiate terms that show how industrial-era economic power could operate without formal annexation."
+  ],
+  "centralQuestion": "How should an indebted sovereign respond when foreign creditors offer financial stability in exchange for direct control over tax revenues?",
+  "roles": [
+    {
+      "id": "minister",
+      "name": "Ottoman Finance Minister",
+      "position": "You negotiate debt relief while preserving the state’s ability to govern and reform.",
+      "power": "You control the budget and diplomatic terms, but creditors can refuse new loans and great powers can threaten intervention.",
+      "goals": "Restore credit and protect sovereignty.",
+      "fears": "Default, inflation, or foreign control may weaken the empire further.",
+      "lens": "Economic imperialism works through contracts, revenue, and dependency as well as armies.",
+      "preference": "Accept limited oversight with a sunset clause and Ottoman representation.",
+      "blindSpot": "You may promise reforms that the treasury cannot finance."
+    },
+    {
+      "id": "bondholder",
+      "name": "European Bondholder Representative",
+      "position": "You protect investors who bought Ottoman debt after repeated defaults.",
+      "power": "You control access to capital and can coordinate creditor pressure.",
+      "goals": "Recover payments and prevent other states from copying a default.",
+      "fears": "A generous settlement may reward mismanagement and reduce future discipline.",
+      "lens": "Financial institutions turn private investment into political leverage.",
+      "preference": "Demand direct revenue collection and transparent accounting.",
+      "blindSpot": "You may treat creditor rights as neutral while shifting burdens onto Ottoman subjects."
+    },
+    {
+      "id": "tobacco",
+      "name": "Tobacco Farmer and Provincial Taxpayer",
+      "position": "You produce goods whose taxes may be assigned to the debt authority.",
+      "power": "Local networks can evade or resist collection, but officials and firms can impose enforcement.",
+      "goals": "Keep a viable livelihood and predictable local government.",
+      "fears": "Foreign agents may extract revenue without returning services.",
+      "lens": "Debt restructuring changes everyday relationships between state, market, and producer.",
+      "preference": "Require local councils and published tax rules.",
+      "blindSpot": "You may underestimate the fiscal crisis that made external supervision possible."
+    },
+    {
+      "id": "reformer",
+      "name": "Ottoman Constitutional Reformer",
+      "position": "You want accountable budgets, infrastructure, and representative institutions.",
+      "power": "You have newspapers and political networks, but emergency finance can bypass the legislature.",
+      "goals": "Use the crisis to build transparent state capacity.",
+      "fears": "Foreign control may combine with autocracy to close political space.",
+      "lens": "Finance can either modernize sovereignty or hollow it out.",
+      "preference": "Tie any debt authority to public audits and parliamentary review.",
+      "blindSpot": "You may assume transparency alone can overcome unequal international bargaining power."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "borrowing",
+      "label": "Borrowed Modernization",
+      "text": "The Ottoman government borrowed for war, reform, infrastructure, and administration in European financial markets.",
+      "why": "Explains how development and dependency became linked."
+    },
+    {
+      "id": "default",
+      "label": "1875 Default",
+      "text": "The Ottoman state suspended payments after fiscal strain and falling revenue.",
+      "why": "Creates the immediate bargaining crisis."
+    },
+    {
+      "id": "debtadmin",
+      "label": "Public Debt Administration",
+      "text": "The 1881 settlement assigned selected revenues to an institution dominated by creditor representatives.",
+      "why": "Shows economic sovereignty being transferred through finance."
+    },
+    {
+      "id": "monopoly",
+      "label": "Tobacco and Salt Revenue",
+      "text": "Monopolies and indirect taxes generated predictable revenue but burdened producers and consumers.",
+      "why": "Connects global finance to local life."
+    },
+    {
+      "id": "capitulations",
+      "label": "Foreign Privileges",
+      "text": "European merchants already held legal and commercial privileges inside the empire.",
+      "why": "Shows debt control layered onto earlier unequal arrangements."
+    },
+    {
+      "id": "railway",
+      "label": "Infrastructure Concessions",
+      "text": "Railways and other concessions could bring capital while granting foreign firms long-term control.",
+      "why": "Demonstrates mixed benefits and risks of investment."
+    },
+    {
+      "id": "sovereignty",
+      "label": "Fiscal Sovereignty",
+      "text": "A state that cannot collect or allocate taxes independently has reduced capacity even if its borders remain intact.",
+      "why": "Defines economic imperialism analytically."
+    },
+    {
+      "id": "reform",
+      "label": "Constitutional Debate",
+      "text": "Ottoman reformers linked accountable taxation and representation to stronger sovereignty.",
+      "why": "Connects financial policy to political change."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "revenues",
+      "title": "Assign revenue streams",
+      "prompt": "Which revenues should secure the settlement?",
+      "options": [
+        {
+          "id": "luxury",
+          "title": "Assign selected monopolies",
+          "action": "Give creditors tobacco and salt receipts while protecting customs and land taxes.",
+          "benefits": "Payments become predictable and the state retains core revenue.",
+          "worries": "Farmers and consumers face concentrated foreign extraction.",
+          "tradeoff": "Fiscal relief narrows the tax base’s social burden."
+        },
+        {
+          "id": "customs",
+          "title": "Assign customs duties",
+          "action": "Use trade revenue rather than domestic monopolies to service the debt.",
+          "benefits": "Local producers face less direct supervision.",
+          "worries": "Foreign control of customs deepens commercial dependence and limits tariff policy.",
+          "tradeoff": "Domestic autonomy is preserved by surrendering trade autonomy."
+        },
+        {
+          "id": "general",
+          "title": "Create a broad shared fund",
+          "action": "Pool several taxes under an Ottoman-led board with creditor audits.",
+          "benefits": "Risk is spread and Ottoman administration remains visible.",
+          "worries": "Creditors may reject the plan as insufficiently secure.",
+          "tradeoff": "Sovereignty depends on persuading investors to accept uncertainty."
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Design oversight",
+      "prompt": "Who should control collection and reporting?",
+      "options": [
+        {
+          "id": "creditors",
+          "title": "Creditor-controlled authority",
+          "action": "Give bondholder representatives final authority over assigned revenues.",
+          "benefits": "Investors gain confidence and new credit may return.",
+          "worries": "A foreign institution governs Ottoman taxes without popular accountability.",
+          "tradeoff": "Financial credibility comes at the highest sovereignty cost."
+        },
+        {
+          "id": "mixed",
+          "title": "Mixed Ottoman-creditor board",
+          "action": "Require equal Ottoman and foreign representation, public accounts, and a fixed review date.",
+          "benefits": "The state gains a voice while creditors receive transparency.",
+          "worries": "Deadlock and enforcement disputes may undermine the settlement.",
+          "tradeoff": "Shared control is legitimate only if power is genuinely balanced."
+        },
+        {
+          "id": "parliament",
+          "title": "Parliamentary audit",
+          "action": "Keep collection Ottoman and allow foreign auditors to inspect accounts through the legislature.",
+          "benefits": "Domestic institutions develop fiscal capacity.",
+          "worries": "Creditors may see the arrangement as too weak to prevent another default.",
+          "tradeoff": "Political legitimacy is prioritized over immediate market confidence."
+        }
+      ]
+    },
+    {
+      "id": "reform",
+      "title": "Use the crisis",
+      "prompt": "What should the government do with the breathing room?",
+      "options": [
+        {
+          "id": "military",
+          "title": "Prioritize military recovery",
+          "action": "Use restored credit to rebuild the army and defend imperial territory.",
+          "benefits": "The state can resist coercive diplomacy and rebellion.",
+          "worries": "Military spending may recreate the debt cycle.",
+          "tradeoff": "Security addresses the cause of borrowing while risking repetition."
+        },
+        {
+          "id": "infrastructure",
+          "title": "Invest in productive infrastructure",
+          "action": "Fund schools, railways, ports, and tax administration that can broaden future revenue.",
+          "benefits": "Long-term capacity and commerce may improve.",
+          "worries": "Projects can become new foreign concessions and debts.",
+          "tradeoff": "Development promises autonomy but may deepen dependence first."
+        },
+        {
+          "id": "constitutional",
+          "title": "Pair finance with representation",
+          "action": "Publish budgets, empower a representative chamber, and make taxation reviewable.",
+          "benefits": "Citizens gain trust and reform becomes accountable.",
+          "worries": "Slow decisions may disappoint creditors and officials.",
+          "tradeoff": "Legitimacy is treated as an economic resource."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how industrial-era finance extended power without formal colonial rule. Compare the Ottoman debt authority with one case of direct colonial control.",
+  "sources": [
+    {
+      "label": "Encyclopaedia Britannica — Ottoman Empire: finance and reform",
+      "url": "https://www.britannica.com/place/Ottoman-Empire/The-Tanzimat-reforms"
+    },
+    {
+      "label": "Encyclopaedia Iranica — Ottoman Public Debt Administration",
+      "url": "https://www.iranicaonline.org/articles/ottoman-empire"
+    },
+    {
+      "label": "Cambridge University Press — Ottoman economic history overview",
+      "url": "https://www.cambridge.org/core/books/cambridge-history-of-turkey/"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

@@ -48,6 +48,9 @@ function parseUnitTopics(unitNum) {
 }
 
 const CAPSTONE_RE = /comparison|continuity and change|causation|capstone/i;
+// Topic 7.8 uses a historian-facing Causes & Consequences Matrix by design.
+// Students analyze mass atrocities; they do not role-play perpetrators or victims.
+const NON_ROLEPLAY_TOPICS = new Set(['7.8']);
 
 // ── 2. For a given topic, resolve every deliverable against disk ────────────
 function auditTopic(unitNum, topicNum, title) {
@@ -79,14 +82,19 @@ function auditTopic(unitNum, topicNum, title) {
   // pattern) and the bare object-literal key `beInTheRoom: { url: '...' }`
   // (Unit 1-7 data-file pattern). Requires the `{` so the unrelated
   // stableImages.beInTheRoom string (a plain image URL) never matches.
-  const bitrMatch = combinedSrc.match(/beInTheRoom\s*[:=]\s*\{\s*url:\s*'([^']*)'/);
+  // A few legacy data files define an empty blueprint URL before the renderer
+  // config assigns the built scenario. Match every assignment and use the last
+  // one, mirroring browser execution order. Accept either JavaScript quote style.
+  const bitrMatches = [...combinedSrc.matchAll(/beInTheRoom\s*[:=]\s*\{\s*url:\s*(['"])(.*?)\1/g)];
+  const bitrUrl = bitrMatches.length ? bitrMatches[bitrMatches.length - 1][2] : '';
   const isCapstone = CAPSTONE_RE.test(title);
+  const isNonRoleplay = NON_ROLEPLAY_TOPICS.has(topicNum);
   let beInTheRoom = 'not-applicable';
-  if (!isCapstone) {
-    if (!bitrMatch || !bitrMatch[1]) {
+  if (!isCapstone && !isNonRoleplay) {
+    if (!bitrUrl) {
       beInTheRoom = 'missing';
     } else {
-      const target = path.resolve(unitDir, bitrMatch[1]);
+      const target = path.resolve(unitDir, bitrUrl);
       beInTheRoom = exists(target) ? 'built' : 'broken-link';
     }
   }

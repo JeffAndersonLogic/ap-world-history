@@ -60,8 +60,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: 'Step into the Spanish court to argue for Columbus\'s Atlantic voyage, navigate the Portuguese route around Africa with Vasco da Gama, or encounter the Treaty of Tordesillas from the perspective of an indigenous leader hearing of European claims to your land.'
+    url: '../beintheroom/unit-4/the-santa-fe-bargain.html',
+    desc: 'Negotiate the 1492 Santa Fe bargain: decide whether to sponsor Columbus, limit his contractual authority, and define Spanish conduct toward rival claims and inhabited lands.'
   };
 
   lesson.skillBuilder = {

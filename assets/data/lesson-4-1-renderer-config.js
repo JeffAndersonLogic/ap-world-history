@@ -48,8 +48,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Step into Prince Henry's court at Sagres and experience how Portuguese navigators combined instruments, ship design, and state sponsorship to systematically extend the known world southward along the African coast."
+    url: '../beintheroom/unit-4/the-cape-route-brief.html',
+    desc: 'Advise João II before the Dias expedition: combine instruments, ship design, Atlantic wind knowledge, African intelligence, and state finance to find and return from a route around southern Africa.'
   };
 
   lesson.skillBuilder = {

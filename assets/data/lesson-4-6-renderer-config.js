@@ -48,8 +48,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Plan the Pueblo Revolt with Popé, negotiate a treaty with Portuguese authorities as Zumbi of Palmares, or outmaneuver a Portuguese carrack for Indian Ocean trade routes as a Dutch VOC captain."
+    url: '../beintheroom/unit-4/the-knotted-cord.html',
+    desc: 'Coordinate the Pueblo Revolt of 1680: balance secrecy, alliance, military sequence, community survival, and the political order that should follow colonial expulsion.'
   };
 
   lesson.skillBuilder = {

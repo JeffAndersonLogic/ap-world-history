@@ -62,8 +62,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: 'Munich, September 1938. Britain and France are deciding whether to hand Hitler the Sudetenland to keep the peace. Take a seat in the room — as Chamberlain weighing appeasement, a French minister fearing another total war, a Czech delegate watching your country be bargained away, or a German envoy pressing the demand — and argue what the price of "peace in our time" really is.'
+    url: '../beintheroom/unit-7/the-munich-table.html',
+    desc: 'Enter the Munich Conference and weigh immediate peace, Czech sovereignty, Western military readiness, collective security, and the risk that concession will reward fascist expansion.'
   };
 
   lesson.beSurreal = {
