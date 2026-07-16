@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Topic 2.3 — First &amp; 10 Reading</title><desc id="desc">Local BeHistorical artwork for Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection. Historical anchor: First &amp; 10: The Ocean That Connected the World.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1c1d"/><stop offset=".58" stop-color="#2b2f31"/><stop offset="1" stop-color="#3e4447"/></linearGradient><radialGradient id="glow"><stop stop-color="#a8652d" stop-opacity=".34"/><stop offset="1" stop-color="#a8652d" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><circle cx="747" cy="112" r="420" fill="url(#glow)"/><circle cx="951" cy="610" r="330" fill="url(#glow)" opacity=".7"/>
+  <g fill="none" stroke="#a8652d" opacity=".18"><path d="M0 655 1200 145M0 735 1200 225" stroke-width="3"/><circle cx="850" cy="400" r="255" stroke-width="4"/><circle cx="850" cy="400" r="285" stroke-width="2"/></g>
+  <g color="#a8652d" opacity=".82"><path d="M655 245c78-28 145-18 190 28v300c-45-46-112-56-190-28V245Zm360 0c-78-28-145-18-190 28v300c45-46 112-56 190-28V245Z" fill="none" stroke="currentColor" stroke-width="18"/></g>
+  <rect x="72" y="96" width="180" height="7" rx="3.5" fill="#a8652d" opacity=".72"/><rect x="72" y="122" width="110" height="3" rx="1.5" fill="#d2b48c" opacity=".4"/>
+  <path d="M72 650h360M72 678h220" stroke="#a8652d" stroke-width="5" stroke-linecap="round" opacity=".32"/>
+</svg>

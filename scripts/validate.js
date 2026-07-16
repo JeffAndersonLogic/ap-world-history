@@ -223,6 +223,19 @@ function checkFirst10(filePath, topicKeys) {
   const src = read(filePath);
   if (!src) return err(filePath, 'file not readable');
 
+  // Visual contract: every First & 10 must use the established charcoal,
+  // bronze, paper, and serif reading system. Generated pages use the shared
+  // stylesheet; legacy hand-authored pages carry the same tokens inline.
+  const hasCanonicalStyles = src.includes('behistorical-first10.css') || src.includes('--blackened-steel');
+  const visualMarkers = ['class="module"', 'class="reading-title-band"', 'class="vocab-strip"', 'class="check-header"', 'class="builder-section"'];
+  if (!hasCanonicalStyles) err(filePath, 'does not use the canonical BeHistorical First & 10 visual system');
+  for (const marker of visualMarkers) {
+    if (!src.includes(marker)) err(filePath, `missing canonical First & 10 structure: ${marker}`);
+  }
+  if (src.includes('background:#17243b') && !src.includes('--blackened-steel')) {
+    err(filePath, 'uses the retired blue First & 10 template');
+  }
+
   // TOPIC_KEY + TOPIC_LABEL
   const keyMatch = src.match(/var\s+TOPIC_KEY\s*=\s*['"]([^'"]+)['"]/);
   if (!keyMatch) {
