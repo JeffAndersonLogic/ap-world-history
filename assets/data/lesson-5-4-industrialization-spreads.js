@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Industrialization Spreads",
     subtitle: "How industrialization spread to Europe, North America, and Japan — and why colonial relationships ensured it did NOT spread to most of Asia, Africa, and Latin America",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [

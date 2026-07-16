@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "The Mongol Empire: Conquest, Connection, and the Pax Mongolica",
     subtitle: "Expansion, administration, and transregional exchange c. 1200–1450",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [
@@ -97,16 +97,10 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain how the Mongols built the largest contiguous land empire in world history, how they governed it, and how Mongol rule transformed Eurasian networks of trade and exchange from c. 1200 to c. 1450.",
     videos: [
       {
-        title: "Heimler's History — Topic 2.2 Part 1",
-        url: "https://youtu.be/YT_22_1",
-        youtubeId: "YT_22_1",
-        prompt: "Use this clip to review Mongol military power, conquest, and the expansion under Genghis Khan and his successors."
-      },
-      {
-        title: "Heimler's History — Topic 2.2 Part 2",
-        url: "https://youtu.be/YT_22_2",
-        youtubeId: "YT_22_2",
-        prompt: "Use this clip to review the Pax Mongolica, the khanate system, and the effects of Mongol rule on Eurasian trade and exchange."
+        title: 'The MONGOL Empire, Explained [AP World History Review—Unit 2 Topic 2]',
+        url: 'https://youtu.be/KHJLZBXUyzo',
+        youtubeId: 'KHJLZBXUyzo',
+        prompt: 'Track how Mongol rule changed economic exchange and accelerated cultural transfers across Eurasia.'
       }
     ],
     segments: [

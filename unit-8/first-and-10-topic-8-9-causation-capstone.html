@@ -189,16 +189,7 @@
 <script src="../assets/js/behistorical-form-config.js?v=20260610"></script>
 <script>
   var TOPIC_KEY = '8.9';
-  var TOPIC_LABEL = 'Causation in the Age of the Cold War and Decolonization';
-
-  var GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url' +
-    '&entry.125385659=Unit+8+-+Cold+War+and+Decolonization' +
-    '&entry.187055090=8.9+-+Causation+in+the+Cold+War+and+Decolonization' +
-    '&entry.1549761827=8.9-first10' +
-    '&entry.2107637366=First+and+10' +
-    '&entry.1963461515=Causation' +
-    '&entry.1963461515=Comparison' +
-    '&entry.1963461515=Argumentation';
+  var TOPIC_LABEL = '8.9 - Causation in the Cold War and Decolonization';
 
   function getAnswer(id) {
     var el = document.getElementById(id);
@@ -216,7 +207,9 @@
   function submitToGoogleForm() {
     buildGooglePrompt();
     var text = document.getElementById('google-output').value;
-    var url = GOOGLE_FORM_URL + (text ? '&entry.1845180246=' + encodeURIComponent(text) : '');
+    var baseUrl = typeof buildFormURL === 'function' ? buildFormURL(TOPIC_KEY, 'first10') : '';
+    if (!baseUrl) return;
+    var url = baseUrl + (text ? '&entry.1845180246=' + encodeURIComponent(text) : '');
     window.open(url, '_blank', 'noopener');
   }
 

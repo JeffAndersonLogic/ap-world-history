@@ -54,7 +54,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
+    url: '../beintheroom/unit-2/silk-road-merchant.html',
     desc: 'Become a Silk Road merchant in the 13th century, negotiate with caravanserai owners, and decide which goods to carry across Central Asia.'
   };
 

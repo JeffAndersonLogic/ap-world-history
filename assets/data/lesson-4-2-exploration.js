@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Exploration: Causes and Events",
     subtitle: "Why European states sponsored maritime exploration after c. 1450, and what the key voyages of the Portuguese and Spanish found and created",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [

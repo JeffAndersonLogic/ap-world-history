@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Economic Developments and Innovations",
     subtitle: "How industrial capitalism invented new financial institutions — corporations, investment banking, stock markets — promoted free trade ideology, and extended economic power through debt and investment rather than armies",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [

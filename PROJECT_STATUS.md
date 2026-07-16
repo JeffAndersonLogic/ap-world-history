@@ -331,3 +331,61 @@ Full report: [`docs/beintheroom-theme-audit.md`](docs/beintheroom-theme-audit.md
   - D2: `assets/data/lesson-1-6-europe.js` mislabels its Europe LO as "Unit 1 Learning Objective H" (H belongs to Topic 1.3).
   - D4: Three orphaned scenario files (`abbasid-fragmentation`, `khmer-court`, `cahokia-council`) are linked from no lesson; the BeInTheRoom hub page lists only `song-court`.
   - D5: 23 BeInTheRoom scenario files referenced by Unit 2–7 lesson data/configs do not exist yet (broken Module 09 links); each must clear Step 0 when built.
+
+---
+
+## Build Session — Unit 6 and Branch Recovery (2026-07-15)
+
+### Completed
+
+- Recovered and integrated the complete Topic 6.1 lesson stack from `origin/claude/topic-6-1-imperialism-ttftw8`.
+- Built Topics 6.2–6.8: lesson shells, topic data, renderer configs, First & 10 readings, and capture wrappers.
+- Aligned Unit 6 learning objectives and key concepts to the AP World History: Modern CED effective Fall 2026.
+- Built and linked seven Unit 6 BeInTheRoom simulations; Topic 6.8 remains a synthesis capstone by design.
+- Recovered six Unit 2 BeInTheRoom simulations, cleared their Step 0 theme gate, linked Topics 2.1–2.6, and retained Topic 2.7 as a comparison capstone.
+- Expanded the BeInTheRoom hub to expose Unit 2 and Unit 6 simulations.
+- Added Unit 6 Google Form skill mappings and repaired the Foundations topic-key validator mismatch.
+- Restored Topic 8.9 to the shared ten-module contract while preserving its custom Unit Review and Hemispheric Effects Matrix tools.
+- Normalized student-facing Canvas guidance and the MagicSchool classroom link across 82 files.
+- Replaced the obsolete Lesson 1.1 README with a repository-level project guide and added reproducible build and normalization scripts.
+
+### Verification snapshot
+
+- `node scripts/validate.js`: **0 errors**, 63 inherited warnings across 347 checked files.
+- Generated manifest: **65 / 71** unit topics have lesson shells.
+- BeInTheRoom: **30** linked non-capstone scenarios; **0 broken scenario links**.
+- Unit 6: **8 / 8** lesson stacks built and linked.
+
+### Remaining build frontier
+
+- Unit 9 Topics 9.4–9.9 are the six missing core lesson stacks.
+- BeInTheRoom scenarios are still absent by design or pending build for most of Units 3–5, portions of Unit 7, and unbuilt Unit 9 topics.
+- Validator warnings are legacy quality debt (placeholder video IDs, older First & 10 DOM conventions, and a small number of missing inline submission-note fields); none were introduced by the Unit 6 stack.
+
+---
+
+## Core Build — Unit 9 Topics 9.4–9.9 (2026-07-15)
+
+### Completed
+
+- Built all six remaining Unit 9 lesson stacks: thin lesson shells, topic data, renderer configs, canonical First & 10 readings, and capture wrappers.
+- Aligned Topics 9.4–9.9 to the AP World History: Modern CED effective Fall 2026: global economics (ECN), reform movements (SIO), globalized culture and resistance (CDI), international institutions (GOV), and the Unit 9 science-and-technology synthesis.
+- Built and linked five BeInTheRoom simulations for Topics 9.4–9.8; Topic 9.9 remains a synthesis capstone by design.
+- Cleared the five scenarios through the Step 0 theme gate and transplant test.
+- Added complete Unit 9 Google Form skill mappings and hardcoded, prefilled First & 10 wrapper URLs.
+- Wired all six Unit 9 hub cards and expanded the BeInTheRoom hub with the complete Unit 9 scenario set.
+- Repaired the inherited Topic 6.1 hub placeholder found during the global deployment audit.
+- Added `scripts/build-unit9.js` for deterministic regeneration of the complete build.
+
+### Verification snapshot
+
+- Generated manifest: **71 / 71** AP unit topics have lesson shells.
+- BeInTheRoom: **35** linked non-capstone scenarios; **0 broken local scenario links**.
+- Unit 9 Topics 9.4–9.9: **6 / 6** complete lesson stacks and **5 / 5** planned simulations.
+- `node scripts/validate.js`: **0 errors**, 63 inherited warnings across 377 checked files.
+- Unit 9 JavaScript syntax, local links, capture-wrapper prefills, form skill values, and lesson-hub destinations all pass their dedicated audits.
+
+### Current frontier
+
+- The AP topic shell inventory is complete. The next work is content-quality review, classroom testing, and remaining optional BeInTheRoom coverage in earlier units—not missing core lesson stacks.
+- Validator warnings remain legacy quality debt (placeholder video IDs, older First & 10 DOM conventions, and a small number of missing inline submission-note fields); none were introduced by the Unit 9 build.

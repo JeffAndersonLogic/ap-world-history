@@ -9,6 +9,39 @@
 
 The audit request anticipated scenarios in `beintheroom/unit-2/` and `beintheroom/unit-3/` (samarkand-caravanserai, ilkhan-court, indian-ocean-port, mali-court, silk-road-scholar, plague-europe, constantinople-siege). **None of those files exist in the repository.** The only scenarios that exist are the nine files in `beintheroom/unit-1/`, and all nine are audited below. Lesson data/config files for Units 2–7 reference 23 BeInTheRoom scenario files that do not exist yet (see Discrepancies, item D5).
 
+> **2026-07-15 update:** The scope statement above is retained as historical audit evidence. Six Unit 2 scenarios have since been recovered and linked, and seven Unit 6 scenarios have been built and linked. Their Step 0 audit appears below and supersedes the corresponding availability findings.
+
+## Recovery and Build Audit — Units 2 and 6 (2026-07-15)
+
+All thirteen scenarios below pass the transplant test: changing the assigned topic would require changing the central dilemma, evidence, and AP reflection—not merely renaming people or places.
+
+### Unit 2 recovery
+
+| Topic | Scenario | Theme-alignment reason | Verdict |
+|---|---|---|---|
+| 2.1 | `silk-road-merchant.html` | Merchant cargo, credit, security, and caravan infrastructure require reasoning about Silk Road expansion. | PASS |
+| 2.2 | `mongol-court.html` | The choices turn on Mongol conquest, administration, religious tolerance, and exchange across an empire. | PASS |
+| 2.3 | `indian-ocean-port.html` | Monsoon timing, port policy, merchant diasporas, and maritime technology drive every decision. | PASS |
+| 2.4 | `mali-court.html` | Gold, taxation, Islam, and trans-Saharan connections structure Mali's governing dilemma. | PASS |
+| 2.5 | `silk-road-scholar.html` | Students must explain how ideas, belief systems, and technologies change through cross-cultural transmission. | PASS |
+| 2.6 | `plague-europe.html` | Trade connectivity, disease diffusion, and demographic disruption are the crisis mechanism. | PASS |
+
+Topic 2.7 remains a comparison capstone and intentionally has no separate simulation.
+
+### Unit 6 build
+
+| Topic | Scenario | Theme-alignment reason | Verdict |
+|---|---|---|---|
+| 6.1 | `the-mission-memorandum.html` | Students interrogate Social Darwinism, nationalism, the civilizing mission, and conversion as imperial justifications. | PASS |
+| 6.2 | `the-flag-over-the-congo.html` | The dilemma compares personal rule, company power, direct state administration, and international oversight. | PASS |
+| 6.3 | `the-golden-stool-council.html` | Asante sovereignty, sacred legitimacy, coalition, and armed resistance bind the decisions to anticolonial state building. | PASS |
+| 6.4 | `the-rubber-quota.html` | Rubber ecology, export specialization, subsistence labor, and concession power make the commodity economy unavoidable. | PASS |
+| 6.5 | `the-customs-house-loan.html` | Foreign credit, customs guarantees, infrastructure ownership, and tariff sovereignty enact economic imperialism without annexation. | PASS |
+| 6.6 | `the-passage-contract.html` | Transport, labor demand, land pressure, contract constraint, and return passage structure a migration-causation problem. | PASS |
+| 6.7 | `the-exclusion-hearing.html` | Ethnic enclaves, labor politics, racial prejudice, family separation, and exclusion policy enact migration's social effects. | PASS |
+
+Topic 6.8 is a causation capstone and intentionally synthesizes the full evidence set rather than adding another scenario. All recovered and new links resolve on disk; the generated manifest reports no broken scenario links.
+
 ## Rubric
 
 | Check | Question |
@@ -216,3 +249,20 @@ The audit request anticipated scenarios in `beintheroom/unit-2/` and `beintheroo
 - **D3 — The audit request's CED reference table maps scenarios that do not exist.** Of the files the request expected, only `song-court.html` exists. No `beintheroom/unit-2/` or `beintheroom/unit-3/` directory exists, and several expected filenames (e.g., `samarkand-caravanserai.html`, `ilkhan-court.html`, `constantinople-siege.html`) are not referenced anywhere in the repo — the Unit 2 configs reference different names (`silk-road-merchant.html`, `mongol-court.html`).
 - **D4 — Three orphaned scenario files.** `abbasid-fragmentation.html`, `khmer-court.html`, and `cahokia-council.html` are not linked from any lesson data/config file; their topics' lessons link `dar-al-islam-council.html`, `angkor-council.html`, and `inca-court.html` respectively. The BeInTheRoom hub (`beintheroom/index.html`) lists only `song-court.html` of the nine existing scenarios.
 - **D5 — 23 broken BeInTheRoom links in Units 2–7.** Lesson data/config files reference scenario files that do not exist: unit-2 (`comparison-workshop`, `indian-ocean-port`, `mali-court`, `mongol-court`, `plague-europe`, `silk-road-merchant`, `silk-road-scholar`), unit-3 (`belief-systems`, `comparison`, `empires-administration`, `empires-expand`), unit-4 (`changing-social-hierarchies`, `columbian-exchange`, `continuity-and-change`, `exploration`, `internal-external-challenges`, `maritime-empires-established`, `maritime-empires-maintained`, `technological-innovations`), unit-7 (`july-crisis`, `mexico-city-1938`, `ministry-of-information`, `petrograd-1917`). Each of these Module 09 links will 404 until the scenario is built; every future build must clear the Step 0 gate first.
+
+---
+
+## Unit 9 Topics 9.4–9.9 Step 0 Gate (2026-07-15)
+
+| Topic | Scenario | CED theme and dilemma | Verdict |
+|---|---|---|---|
+| 9.4 Economics in the Global Age | `unit-9/structural-adjustment-cabinet.html` | ECN: an Accra cabinet weighs liberalization and conditional lending against public services, employment, and sovereignty. | PASS |
+| 9.5 Calls for Reform and Responses | `unit-9/green-belt-petition.html` | SIO: a Nairobi coalition uses environmental reform, women's organizing, and public accountability to challenge entrenched power. | PASS |
+| 9.6 Globalized Culture | `unit-9/global-broadcast-board.html` | CDI: a Mumbai broadcast board chooses among imported formats, local cultural production, hybrid media, and consumer-market pressures. | PASS |
+| 9.7 Resistance to Globalization | `unit-9/seattle-wto-coalition.html` | CDI: a Seattle coalition must reconcile labor, environmental, development, and sovereignty critiques of global economic integration. | PASS |
+| 9.8 Institutions in a Globalized World | `unit-9/peacekeeping-mandate.html` | GOV: a United Nations council balances cooperation, sovereignty, veto politics, resources, and civilian protection in a peacekeeping mandate. | PASS |
+| 9.9 Continuity and Change in a Globalized World | No scenario by design | Synthesis capstone: Module 09 directs students back across the period rather than adding a new historical role-play. | N/A |
+
+**Transplant test:** Each built scenario depends on the topic's named historical mechanism and thematic reasoning. Moving any dilemma to a different Unit 9 topic would require changing its institutions, evidence bank, roles, and decision criteria; all five therefore clear the Step 0 gate.
+
+**Current link status:** The earlier D5 list is an audit snapshot from before the recovery/build sessions. The current repository-wide scan finds 35 unique lesson-linked scenarios and zero missing local scenario targets; three additional Unit 1 scenario files remain documented orphans.

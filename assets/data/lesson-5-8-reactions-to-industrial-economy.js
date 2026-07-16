@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Reactions to the Industrial Economy",
     subtitle: "How workers built collective power through trade unions and strikes, abolitionists challenged slavery's structural connection to industrial capitalism, and reformers transformed education, public health, and social life in response to industrialization's dislocations",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [

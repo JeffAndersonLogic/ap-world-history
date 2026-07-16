@@ -5,6 +5,20 @@
 - Always commit and push directly to `main`.
 - Do not create feature branches or pull requests.
 
+## Repository Commands
+
+- `node scripts/validate.js` — run the full structural and form-wiring audit.
+- `node scripts/generate-status-manifest.js` — refresh the teacher command-center inventory after adding or removing deliverables.
+- `node scripts/build-unit6.js` — deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios.
+- `node scripts/build-unit9.js` — deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios.
+- `node scripts/normalize-student-facing-language.js` — normalize Canvas guidance and the classroom MagicSchool URL.
+
+The student entry point is `index.html`. The project inventory is `teacher/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file.
+
+## Core Architecture
+
+Standard unit lessons are thin HTML shells plus a topic data file, a renderer-config file, and `assets/js/behistorical-topic-renderer-v1.js`. Foundations uses `foundations/foundations-topic-renderer.js`. First & 10 readings are standalone pages embedded through capture wrappers. BeInTheRoom simulations live under `beintheroom/unit-N/` and must pass the theme-alignment gate in `docs/beintheroom-scenario-blueprint.md` before they are linked.
+
 ## 10-Module Structure Standard
 
 Every lesson page — Unit and Foundations — must display exactly **10 modules** in this fixed order:
