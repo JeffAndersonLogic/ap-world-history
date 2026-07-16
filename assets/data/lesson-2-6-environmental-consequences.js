@@ -33,7 +33,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Environmental Consequences of Connectivity: Disease, Death, and Ecological Change',
     subtitle: 'How trade routes spread the Black Death and transformed ecosystems c. 1200–1450',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Use this space to organize your thinking. Your final response must be submitted in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
   },
 
   learningTargets: [
@@ -86,16 +86,10 @@ window.BEHISTORICAL_LESSON = {
     intro: 'Connectivity had a dark side. The same networks that moved silk and spices also moved rats, fleas, and bacteria. Use these segments to understand how the Black Death traveled, what it destroyed, and how expanding trade permanently altered the ecology of Afro-Eurasia.',
     videos: [
       {
-        title: 'The Black Death and the Trade Networks (AP World History)',
-        url: 'https://youtu.be/YT_26_1',
-        youtubeId: 'YT_26_1',
-        prompt: 'As you watch, note how the plague traveled along specific trade routes. What role did the Mongol empire play in accelerating its spread?'
-      },
-      {
-        title: 'Environmental Consequences of Medieval Trade',
-        url: 'https://youtu.be/YT_26_2',
-        youtubeId: 'YT_26_2',
-        prompt: 'Focus on ecological changes along trade routes — deforestation, farming intensification, and species movement. How did human commercial activity reshape the natural world?'
+        title: 'ENVIRONMENTAL Effects of Connectivity [AP World History Review—Unit 2 Topic 6]',
+        url: 'https://youtu.be/PKQzXPAAFBA',
+        youtubeId: 'PKQzXPAAFBA',
+        prompt: 'Track how crops and disease pathogens moved through exchange networks and transformed environments and populations.'
       }
     ],
     segments: [

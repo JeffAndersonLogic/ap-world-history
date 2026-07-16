@@ -33,7 +33,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Comparison in Land-Based Empires',
     subtitle: 'Using the AP Comparison skill to analyze similarities and differences across the Ottoman, Safavid, Mughal, Qing, and Russian empires, c. 1450–c. 1750',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Use this space to organize your thinking. Your final response must be submitted in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
   },
 
   learningTargets: [
@@ -116,16 +116,10 @@ window.BEHISTORICAL_LESSON = {
     intro: 'Topic 3.4 is the comparison topic for Unit 3 — and comparison is one of the most AP-tested historical thinking skills. You must be able to identify meaningful similarities AND differences across empires with specific evidence, and connect those comparisons to a broader historical argument about the nature of imperial rule.',
     videos: [
       {
-        title: 'AP World History: Comparing Land-Based Empires (Overview)',
-        url: 'https://youtu.be/YT_34_1',
-        youtubeId: 'YT_34_1',
-        prompt: 'As you watch, build a mental comparison chart. For each empire, note: What religion legitimized rule? What administrative system recruited loyal officials? How did the empire treat non-dominant religious groups? Which of these patterns were shared, and which were unique?'
-      },
-      {
-        title: 'AP World History: How to Write a Comparison Argument',
-        url: 'https://youtu.be/YT_34_2',
-        youtubeId: 'YT_34_2',
-        prompt: 'Focus on the structure of a strong AP comparison: claim → evidence from Empire A → evidence from Empire B → explanation of significance. What makes a comparison argument more than just listing similarities and differences?'
+        title: 'AP World UNIT 3 REVIEW [Everything You NEED to Know!]',
+        url: 'https://youtu.be/dOdU3J39mFk',
+        youtubeId: 'dOdU3J39mFk',
+        prompt: 'Use the review to build a precise comparison of expansion, administration, and legitimation across land-based empires.'
       }
     ],
     segments: [

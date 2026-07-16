@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "The Silk Roads: Exchange Across Afro-Eurasia",
     subtitle: "Overland trade, luxury goods, and the spread of goods, ideas, and disease c. 1200–1450",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [
@@ -97,16 +97,10 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain what made the Silk Roads function, what moved along them, and how overland trade transformed the societies it connected from c. 1200 to c. 1450.",
     videos: [
       {
-        title: "Heimler's History — Topic 2.1 Part 1",
-        url: "https://youtu.be/YT_21_1",
-        youtubeId: "YT_21_1",
-        prompt: "Use this clip to review the infrastructure and agents that made the Silk Roads possible."
-      },
-      {
-        title: "Heimler's History — Topic 2.1 Part 2",
-        url: "https://youtu.be/YT_21_2",
-        youtubeId: "YT_21_2",
-        prompt: "Use this clip to review what moved along the Silk Roads and the effects of that exchange on Afro-Eurasian societies."
+        title: 'The SILK ROADS [AP World Review—Unit 2 Topic 1]',
+        url: 'https://youtu.be/daiQ6aChKfk',
+        youtubeId: 'daiQ6aChKfk',
+        prompt: 'Track the commercial innovations, trading cities, and cultural diffusion that expanded Silk Road exchange.'
       }
     ],
     segments: [

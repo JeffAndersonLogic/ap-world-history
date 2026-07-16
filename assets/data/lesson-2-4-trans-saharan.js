@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam",
     subtitle: "West African states, camel caravans, and cultural exchange across the Sahara c. 1200–1450",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [
@@ -97,16 +97,10 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain what made the Sahara crossable, what drove the gold-salt exchange, and how trans-Saharan trade transformed West African states and spread Islam across the region from c. 1200 to c. 1450.",
     videos: [
       {
-        title: "Heimler's History — Topic 2.4 Part 1",
-        url: "https://youtu.be/YT_24_1",
-        youtubeId: "YT_24_1",
-        prompt: "Use this clip to review camel technology, caravan organization, and the infrastructure that made Saharan crossing possible."
-      },
-      {
-        title: "Heimler's History — Topic 2.4 Part 2",
-        url: "https://youtu.be/YT_24_2",
-        youtubeId: "YT_24_2",
-        prompt: "Use this clip to review the gold-salt trade, the Mali Empire, Mansa Musa's hajj, and the spread of Islam across West Africa."
+        title: 'The TRANS-SAHARAN TRADE Network, Explained [AP World History Review—Unit 2 Topic 4]',
+        url: 'https://youtu.be/fUYUx-0ISW4',
+        youtubeId: 'fUYUx-0ISW4',
+        prompt: 'Track transportation technologies, traded goods, and the relationship between commerce and Mali’s power.'
       }
     ],
     segments: [

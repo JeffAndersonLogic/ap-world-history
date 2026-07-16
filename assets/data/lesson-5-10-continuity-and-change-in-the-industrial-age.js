@@ -31,7 +31,8 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 5.10",
     title: "Continuity and Change in the Industrial Age",
     subtitle: "Arguing the extent to which industrialization transformed economic, technological, and political life between 1750 and 1900 — and what stayed the same",
-    feedbackToolUrl: "https://app.magicschool.ai/"
+    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
   },
 
   learningTargets: [

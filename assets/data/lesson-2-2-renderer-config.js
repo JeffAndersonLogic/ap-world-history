@@ -54,7 +54,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
+    url: '../beintheroom/unit-2/mongol-court.html',
     desc: 'Enter the Mongol court of Kublai Khan. You are a foreign diplomat or merchant — navigate the court, negotiate trade access, and report back to your home ruler.'
   };
 

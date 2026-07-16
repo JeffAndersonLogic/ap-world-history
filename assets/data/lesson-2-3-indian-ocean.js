@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection",
     subtitle: "Monsoon winds, merchant communities, and Afro-Eurasian maritime exchange c. 1200–1450",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [
@@ -115,16 +115,10 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain how technology and environmental knowledge made Indian Ocean maritime trade possible, who participated and what they exchanged, and how this network transformed the port cities and cultures it connected from c. 1200 to c. 1450.",
     videos: [
       {
-        title: "Heimler's History — Topic 2.3 Part 1",
-        url: "https://youtu.be/YT_23_1",
-        youtubeId: "YT_23_1",
-        prompt: "Use this clip to review the technology and wind knowledge that enabled Indian Ocean maritime trade."
-      },
-      {
-        title: "Heimler's History — Topic 2.3 Part 2",
-        url: "https://youtu.be/YT_23_2",
-        youtubeId: "YT_23_2",
-        prompt: "Use this clip to review the goods, peoples, and cultural effects of Indian Ocean exchange on port cities and merchant communities."
+        title: 'The INDIAN OCEAN TRADE Network, Explained [AP World History Review—Unit 2 Topic 3]',
+        url: 'https://youtu.be/r-D9F2TiirY',
+        youtubeId: 'r-D9F2TiirY',
+        prompt: 'Track the causes of expansion, diaspora communities, and cultural and technological transfers around the Indian Ocean.'
       }
     ],
     segments: [

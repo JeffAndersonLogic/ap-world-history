@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move',
     subtitle: 'How trade networks spread religion, technology, crops, and artistic traditions c. 1200–1450',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Use this space to organize your thinking. Your final response must be submitted in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
   },
 
   learningTargets: [
@@ -97,16 +97,10 @@ window.BEHISTORICAL_LESSON = {
     intro: 'Trade routes did not only move goods — they moved ideas, beliefs, technologies, and agricultural practices. Use these segments to understand what diffused, where it went, and why it mattered for AP World History.',
     videos: [
       {
-        title: 'Trade Networks and Cultural Diffusion (AP World History)',
-        url: 'https://youtu.be/YT_25_1',
-        youtubeId: 'YT_25_1',
-        prompt: 'Watch for specific examples of religion, technology, and cultural practices that spread along trade routes. Note which route carried which type of exchange.'
-      },
-      {
-        title: 'The Spread of Islam and Buddhism Along Trade Routes',
-        url: 'https://youtu.be/YT_25_2',
-        youtubeId: 'YT_25_2',
-        prompt: 'Focus on how merchants and missionaries carried religion. What role did diaspora communities play in spreading new beliefs?'
+        title: 'CULTURAL Effects of Connectivity [AP World Review—Unit 2 Topic 5]',
+        url: 'https://youtu.be/buccc2fFw4U',
+        youtubeId: 'buccc2fFw4U',
+        prompt: 'Track how long-distance exchange spread belief systems, technologies, languages, and cultural practices.'
       }
     ],
     segments: [

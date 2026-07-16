@@ -117,11 +117,17 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   stableImages: {
+    map:             "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
     contentDelivery: "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG",
     first10:         "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
     unitreview:      "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
     matrix:          "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG",
     skill:           "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg",
+    beSurreal:       "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG",
+    checkpoint1:     "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
+    evidence:        "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg",
+    source:          "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG",
+    beInTheRoom:     "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
     checkpoint2:     "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png"
   },
 
@@ -130,6 +136,63 @@ window.BEHISTORICAL_LESSON = {
     embedUrl: "first-and-10-topic-8-9-causation-capstone-capture.html?v=20260610",
     note: "Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 8.9 lesson path."
   },
+
+  map: {
+    title: "Mapping Cold War Effects Across Hemispheres",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_map_blank_without_borders.png",
+    caption: "Use geography to test whether economic, political, social, and cultural effects followed similar patterns in the Eastern and Western Hemispheres.",
+    intro: "Place every example from Topics 8.1–8.8 before evaluating similarity. A hemispheric argument fails if its evidence is not geographically accurate.",
+    prompt: "Which Cold War effect appears most geographically widespread, and which is most regionally uneven? Defend both judgments with evidence.",
+    key: [
+      { label: "Eastern Hemisphere", detail: "Korea, Vietnam, Angola, Afghanistan, India, China, Eastern Europe, and African decolonization." },
+      { label: "Western Hemisphere", detail: "The United States, Cuba, Guatemala, Chile, Nicaragua, and transatlantic alliance relationships." }
+    ]
+  },
+
+  beSurreal: {
+    title: "BeSurreal: A World Pulled by Two Magnets",
+    desc: "Model how bipolar competition produced similar pressures but unequal outcomes.",
+    intro: "An analogy is useful only when its limits are explained.",
+    detail: "Imagine two magnets pulling on a map whose regions are made from different materials. Some align, some resist, and some try to remain nonaligned.",
+    text: "Imagine two magnets pulling on a map whose regions are made from different materials. Some align, some resist, and some try to remain nonaligned.",
+    prompt: "Explain what the magnets represent, why regions respond differently, and where the analogy breaks down historically."
+  },
+
+  evidenceLab: {
+    title: "Evidence Lab: Hemispheric Cold War Effects",
+    intro: "Sort evidence by hemisphere and effect category before deciding how similar the outcomes were.",
+    task: "Select one evidence category, compare examples from both hemispheres, and explain what the comparison proves.",
+    prompt: "Choose two examples from different hemispheres. Explain one structural similarity and one consequential difference.",
+    items: [
+      { title: "Proxy war", detail: "Compare Korea, Vietnam, or Angola with U.S. intervention in Guatemala, Chile, or Nicaragua." },
+      { title: "State economic policy", detail: "Compare socialist planning, military spending, development projects, and aid leverage across the two hemispheres." },
+      { title: "Social and cultural conflict", detail: "Compare censorship, propaganda, civil-rights activism, antiwar movements, and national cultural projects." }
+    ]
+  },
+
+  primarySource: {
+    title: "Primary-Source Workshop: Competing Cold War Claims",
+    intro: "These short classroom adaptations capture recurring claims in superpower speeches and nonaligned critiques.",
+    text: "Adapted U.S. claim: economic aid and collective security protected free peoples from coercion.<br><br>Adapted Soviet claim: socialist solidarity protected revolutionary states from imperial aggression.<br><br>Adapted nonaligned critique: both blocs treated newly independent states as arenas for competition rather than equal partners.",
+    questions: [
+      "What audience and purpose shaped each claim?",
+      "Which historical example corroborates and which complicates each position?",
+      "How can the three perspectives support an evaluate-the-extent thesis?"
+    ],
+    prompt: "Use two source claims and two specific events to evaluate the similarity of Cold War effects across hemispheres."
+  },
+
+  beInTheRoom: {
+    url: "",
+    desc: "The capstone synthesizes Unit 8 evidence instead of adding a separate simulation."
+  },
+
+  images: [
+    { title: "Proxy-war geography", url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png", sourceUrl: "https://commons.wikimedia.org/wiki/File:World_map_blank_without_borders.png", caption: "Map Korea, Vietnam, Angola, Afghanistan, Guatemala, Chile, and Nicaragua before comparing intervention patterns.", prompt: "Which geographic pattern best supports a hemispheric comparison?" },
+    { title: "Superpower diplomacy", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg", sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_1985.jpg", caption: "Superpower meetings shaped relationships and consequences far beyond the two states represented.", prompt: "How can diplomacy be both a bilateral event and evidence of global effects?" },
+    { title: "The Berlin Wall falls", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG", sourceUrl: "https://commons.wikimedia.org/wiki/File:Thefalloftheberlinwall1989.JPG", caption: "The fall of the Berlin Wall carried political, social, and cultural meaning across hemispheres.", prompt: "Which effect category does this image support most strongly, and why?" }
+  ],
 
   lecture: {
     title: "Unit 8 Synthesis: Cold War Effects Across Two Hemispheres",
@@ -233,6 +296,17 @@ window.BEHISTORICAL_LESSON = {
   },
 
   checkpoints: [
+    {
+      title: "Checkpoint 1: Sort and Explain the Evidence",
+      subtitle: "Checks evidence selection before the full LEQ.",
+      cardDesc: "Classify Cold War effects by hemisphere and explain one comparison.",
+      learningTargets: ["I can categorize economic, political, social, and cultural effects by hemisphere."],
+      successCriteria: ["I use accurate examples from both hemispheres and explain a similarity or difference."],
+      prompt: "Select one Cold War effect category. Compare one Eastern Hemisphere example with one Western Hemisphere example, explaining the mechanism that makes them similar or different.",
+      responseType: "Checkpoint 1",
+      terms: ["Eastern Hemisphere", "Western Hemisphere", "economic", "political", "social", "cultural"],
+      focus: ["Geographic accuracy", "Specific evidence", "Explained comparison"]
+    },
     {
       title: "Checkpoint 2: Evaluate the Extent — Full LEQ",
       subtitle: "Checks all three Learning Targets (LO K — full 'evaluate the extent' synthesis).",

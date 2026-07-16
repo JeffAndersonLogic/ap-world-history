@@ -33,7 +33,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks',
     subtitle: 'Analyzing continuities and differences across Afro-Eurasian trade networks c. 1200–1450',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Use this space to organize your thinking. Your final response must be submitted in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
   },
 
   learningTargets: [
@@ -110,16 +110,10 @@ window.BEHISTORICAL_LESSON = {
     intro: 'Topic 2.7 is the comparison topic for Unit 2 — and it is one of the most AP-tested skills in the course. You must be able to state specific similarities AND specific differences across the three networks with evidence. Use these segments to build both sides of that comparison.',
     videos: [
       {
-        title: 'Comparing Afro-Eurasian Trade Networks (AP World History)',
-        url: 'https://youtu.be/YT_27_1',
-        youtubeId: 'YT_27_1',
-        prompt: 'As you watch, build a mental two-column chart: what is the same across all three networks? What is different? Note specific goods, technologies, and cultural effects for each network.'
-      },
-      {
-        title: 'AP World History: How to Write Comparison Arguments',
-        url: 'https://youtu.be/YT_27_2',
-        youtubeId: 'YT_27_2',
-        prompt: 'Focus on how to structure a comparison argument: claim → similarity/difference → evidence → reasoning. How does the AP exam expect you to connect evidence to a broader historical pattern?'
+        title: 'AP World UNIT 2 REVIEW (Everything You NEED to KNOW!)',
+        url: 'https://youtu.be/TPQQnXFsUmU',
+        youtubeId: 'TPQQnXFsUmU',
+        prompt: 'Use the review to compare the causes, technologies, goods, participants, and consequences of the major exchange networks.'
       }
     ],
     segments: [

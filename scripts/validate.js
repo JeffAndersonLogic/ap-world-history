@@ -21,6 +21,7 @@
 
 const fs   = require('fs');
 const path = require('path');
+const vm   = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 
@@ -87,10 +88,46 @@ function loadTopicKeys() {
   const src = read(path.join(ROOT, 'assets/js/behistorical-form-config.js'));
   if (!src) return new Set();
   const keys = new Set();
-  const re = /'([\d.]+|foundations-\d+)'\s*:/g;
+  const re = /'([\d.]+|f\d+|foundations-\d+)'\s*:/g;
   let m;
   while ((m = re.exec(src)) !== null) keys.add(m[1]);
   return keys;
+}
+
+function loadFormContext() {
+  const filePath = path.join(ROOT, 'assets/js/behistorical-form-config.js');
+  const src = read(filePath);
+  if (!src) return null;
+  const context = { URLSearchParams };
+  context.window = context;
+  try {
+    vm.runInNewContext(src, context, { filename: filePath });
+    return context;
+  } catch (error) {
+    err(filePath, `could not evaluate form configuration: ${error.message}`);
+    return null;
+  }
+}
+
+function primaryReasoningSkill(topicKey, topicLabel) {
+  const foundations = { f1: 'Causation', f2: 'Comparison', f3: 'Comparison', f4: 'Causation', f5: 'Comparison' };
+  if (foundations[topicKey]) return foundations[topicKey];
+  const label = topicLabel.toLowerCase();
+  if (label.includes('comparison')) return 'Comparison';
+  if (label.includes('continuity and change')) return 'Continuity and Change Over Time (CCOT)';
+  return 'Causation';
+}
+
+function normalizeDisplayedSkill(label, topicKey, topicLabel) {
+  const normalized = label.replace(/&amp;/g, '&').trim();
+  if (normalized === 'Causation / Comparison') return ['Causation', 'Comparison'];
+  if (normalized === 'CCOT' || /^Continuity (?:&|and) Change(?: Over Time)?$/.test(normalized)) {
+    return ['Continuity and Change Over Time (CCOT)'];
+  }
+  if (normalized === 'Developments and Processes') return ['Evidence Usage'];
+  if (normalized === 'Evaluation') return ['Argumentation'];
+  if (normalized === 'Historical Thinking') return [primaryReasoningSkill(topicKey, topicLabel)];
+  return [normalized];
 }
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -178,9 +215,8 @@ function checkRendererConfig(rcPath, unitDir) {
 // ════════════════════════════════════════════════════════════════════════════
 function checkFirst10(filePath, topicKeys) {
   totalChecks++;
-  // Skip legacy capture files
+  // Capture wrappers are audited separately against the central form config.
   if (path.basename(filePath).includes('-capture')) {
-    console.log(`  ${B}–${X} ${path.relative(ROOT, filePath)}: skipped (legacy -capture variant)`);
     return;
   }
 
@@ -212,15 +248,27 @@ function checkFirst10(filePath, topicKeys) {
   // BH_FORM script loaded
   if (!src.includes('behistorical-form-config.js')) err(filePath, 'behistorical-form-config.js not loaded');
 
-  // Textarea count — accept both class names used across Unit 1 and Unit 2+
-  const qtaCount = (src.match(/class=["']qta["']|class=["']q-textarea["']/g) || []).length;
+  // Textarea count — treat qta and q-textarea as class tokens so multi-class
+  // attributes such as class="q-textarea qta" are recognized correctly.
+  const responseTextareas = [...src.matchAll(/<textarea\b[^>]*class=["'][^"']*\b(?:qta|q-textarea)\b[^"']*["'][^>]*>/g)];
+  const qtaCount = responseTextareas.length;
   if (qtaCount < 3) warn(filePath, `${qtaCount} response textarea(s) found — expected at least 3`);
 
-  // DOMContentLoaded id handler
-  if (!src.includes('DOMContentLoaded')) warn(filePath, 'missing DOMContentLoaded handler for textarea id assignment');
+  // Dynamic ID assignment is required only when the builder references fixed
+  // q1-q3 IDs and the textareas do not already provide those IDs. Class-based
+  // collectors do not need textarea IDs.
+  const textareaIds = new Set(responseTextareas.map((match) => {
+    const idMatch = match[0].match(/\bid=["']([^"']+)["']/);
+    return idMatch ? idMatch[1] : '';
+  }).filter(Boolean));
+  const usesFixedQuestionIds = /getElementById\(\s*["']q[1-3]["']\s*\)/.test(src);
+  const hasAllQuestionIds = ['q1', 'q2', 'q3'].every((id) => textareaIds.has(id));
+  if (usesFixedQuestionIds && !hasAllQuestionIds && !src.includes('DOMContentLoaded')) {
+    warn(filePath, 'builder references q1-q3 but response textarea IDs are not assigned');
+  }
 
   // BH_FORM URL pattern
-  if (!src.includes('BH_FORM') && !src.includes('BH_FORM?.baseURL')) {
+  if (!src.includes('BH_FORM') && !src.includes('buildFormURL')) {
     warn(filePath, 'submitToGoogleForm may not use BH_FORM.baseURL — check for hardcoded form URL');
   }
 }
@@ -379,7 +427,7 @@ for (let u = 1; u <= 9; u++) {
     .forEach(f => unitFirst10.push(f));
 }
 for (const f of unitFirst10) checkFirst10(f, topicKeys);
-sectionDone(`${unitFirst10.length} F&10 files checked`);
+sectionDone(`${unitFirst10.filter(f => !path.basename(f).includes('-capture')).length} standalone F&10 files`);
 
 // 4. Lesson shells
 section('Lesson HTML shells (unit-N/lesson-N-N-*.html)');
@@ -434,7 +482,7 @@ sectionDone(`${fHtmlFiles.length} foundations HTML pages`);
 section('Foundations F&10 files (foundations/first-and-10-foundations-*.html)');
 const fFirst10 = glob(foundationsDir, /^first-and-10-foundations.*\.html$/);
 for (const f of fFirst10) checkFirst10(f, topicKeys);
-sectionDone(`${fFirst10.length} foundations F&10 files`);
+sectionDone(`${fFirst10.filter(f => !path.basename(f).includes('-capture')).length} standalone foundations F&10 files`);
 
 // 8. Topic key audit
 section('behistorical-form-config.js topic key audit');
@@ -453,6 +501,106 @@ section('behistorical-form-config.js topic key audit');
     }
   }
   if (mismatches === 0) console.log(`  ${G}✓${X} All F&10 TOPIC_KEYs matched to BH_FORM.topics`);
+}
+
+// 9. Complete form-skill mapping audit
+section('Google Form skill mappings');
+{
+  totalChecks++;
+  const formContext = loadFormContext();
+  if (formContext) {
+    const form = formContext.BH_FORM;
+    const requiredResponseTypes = [
+      'first10', 'skillBuilder', 'checkpoint1', 'evidenceLab',
+      'primarySource', 'beInTheRoom', 'checkpoint2'
+    ];
+    const validSkills = new Set([
+      'Causation', 'Comparison', 'Continuity and Change Over Time (CCOT)',
+      'Contextualization', 'Argumentation', 'Evidence Usage', 'Sourcing',
+      'Complexity', 'Claims & Thesis'
+    ]);
+    const lessonTopics = Object.keys(form.topics)
+      .filter((topicKey) => /^\d+\.\d+$/.test(topicKey) || /^f\d+$/.test(topicKey))
+      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+    const standaloneFirst10 = [...unitFirst10, ...fFirst10]
+      .filter((filePath) => !path.basename(filePath).includes('-capture'));
+
+    for (const topicKey of lessonTopics) {
+      const mapping = form.skills && form.skills[topicKey];
+      if (!mapping) {
+        err(path.join(ROOT, 'assets/js/behistorical-form-config.js'), `missing skill mapping for Topic ${topicKey}`);
+        continue;
+      }
+      for (const responseType of requiredResponseTypes) {
+        const skills = mapping[responseType];
+        if (!Array.isArray(skills) || skills.length === 0) {
+          err(path.join(ROOT, 'assets/js/behistorical-form-config.js'), `Topic ${topicKey} missing non-empty ${responseType} skill mapping`);
+          continue;
+        }
+        for (const skill of skills) {
+          if (!validSkills.has(skill)) {
+            err(path.join(ROOT, 'assets/js/behistorical-form-config.js'), `Topic ${topicKey} ${responseType} uses invalid skill '${skill}'`);
+          }
+        }
+      }
+
+      const topicPrefix = /^f\d+$/.test(topicKey)
+        ? `first-and-10-foundations-${topicKey.slice(1)}-`
+        : `first-and-10-topic-${topicKey.replace('.', '-')}-`;
+      const first10File = standaloneFirst10.find((filePath) => path.basename(filePath).startsWith(topicPrefix));
+      const first10Source = first10File && read(first10File);
+      if (!first10Source) {
+        err(path.join(ROOT, 'assets/js/behistorical-form-config.js'), `could not locate First & 10 page for Topic ${topicKey}`);
+      } else {
+        const displayedSkills = [];
+        for (const match of first10Source.matchAll(/<span class="q-skill">([^<]+)<\/span>/g)) {
+          for (const skill of normalizeDisplayedSkill(match[1], topicKey, form.topics[topicKey])) {
+            if (validSkills.has(skill) && !displayedSkills.includes(skill)) displayedSkills.push(skill);
+          }
+        }
+        if (JSON.stringify(mapping.first10) !== JSON.stringify(displayedSkills)) {
+          err(first10File, `First & 10 form skills ${JSON.stringify(mapping.first10)} do not match displayed skills ${JSON.stringify(displayedSkills)}`);
+        }
+      }
+    }
+    sectionDone(`${lessonTopics.length} topic mappings`);
+  }
+}
+
+// 10. Capture wrappers must carry the exact centrally generated First & 10 URL
+section('First & 10 capture-wrapper form wiring');
+{
+  const formContext = loadFormContext();
+  const captureFiles = [...unitFirst10, ...fFirst10]
+    .filter((filePath) => path.basename(filePath).includes('-capture'));
+  for (const filePath of captureFiles) {
+    totalChecks++;
+    const source = read(filePath);
+    const fileName = path.basename(filePath);
+    const topicMatch = fileName.match(/^first-and-10-topic-(\d+)-(\d+)-.*-capture\.html$/);
+    const foundationMatch = fileName.match(/^first-and-10-foundations-(\d+)-.*-capture\.html$/);
+    if (!source || (!topicMatch && !foundationMatch)) {
+      err(filePath, 'capture wrapper is unreadable or has an invalid topic filename');
+      continue;
+    }
+    const topicKey = topicMatch ? `${topicMatch[1]}.${topicMatch[2]}` : `f${foundationMatch[1]}`;
+    const constantMatch = source.match(/const\s+PREFILLED_FIRST10_FORM\s*=\s*['"]([^'"]+)['"]/);
+    if (!constantMatch) {
+      err(filePath, 'missing PREFILLED_FIRST10_FORM constant');
+      continue;
+    }
+    if (formContext) {
+      const expected = formContext.buildFormURL(topicKey, 'first10');
+      if (constantMatch[1] !== expected) {
+        err(filePath, `prefilled URL does not match central form configuration for Topic ${topicKey}`);
+      }
+    }
+    const prefilledReferences = source.match(/PREFILLED_FIRST10_FORM/g) || [];
+    if (prefilledReferences.length < 2) {
+      err(filePath, 'capture wiring does not use PREFILLED_FIRST10_FORM');
+    }
+  }
+  sectionDone(`${captureFiles.length} capture wrappers`);
 }
 
 // ── Summary ───────────────────────────────────────────────────────────────────

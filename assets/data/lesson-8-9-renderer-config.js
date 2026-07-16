@@ -287,7 +287,7 @@
       '<section style="margin:1.5rem 0;border:2px solid #C9A46A;border-radius:3px;padding:1.25rem;">' +
         '<div style="font-family:\'Cinzel\',serif;font-size:1rem;font-weight:700;color:#C9A46A;margin-bottom:.7rem;">Synthesis: Evaluate the Extent</div>' +
         '<p style="font-family:\'Montserrat\',sans-serif;font-size:.78rem;line-height:1.6;color:#D2B48C;margin-bottom:.8rem;">Using your four row ratings, draft a thesis that answers LO K: "Evaluate the extent to which the effects of the Cold War were similar in the Eastern and Western Hemispheres." Your thesis must make a degree claim — to a great, moderate, or limited extent — and name the specific patterns that support it.</p>' +
-        '<textarea id="matrix-synthesis" class="response-area" placeholder="Draft your extent thesis: \'To a [great/moderate/limited] extent, the effects of the Cold War were [similar/different] in the Eastern and Western Hemispheres because...'" style="' + synTaStyle + '"></textarea>' +
+        '<textarea id="matrix-synthesis" class="response-area" placeholder="Draft your extent thesis: To a [great/moderate/limited] extent, the effects of the Cold War were [similar/different] in the Eastern and Western Hemispheres because..." style="' + synTaStyle + '"></textarea>' +
         '<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.75rem;">' +
           '<button class="btn secondary" type="button" onclick="saveMatrixSynthesis89()">Save Synthesis</button>' +
           (cu.matrixSynthesis || '') +
@@ -354,4 +354,7 @@
       render: function () { return renderCheckpoint(lesson.checkpoints[0], 'checkpoint-two-response'); }
     }
   ];
+  // Retain the topic-specific review and matrix renderers, but let the shared
+  // renderer provide the standard ten-module path used across BeHistorical.
+  delete lesson.modules;
 })();

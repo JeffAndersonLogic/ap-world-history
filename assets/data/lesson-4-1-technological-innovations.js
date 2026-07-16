@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Technological Innovations",
     subtitle: "How maritime technologies — compass, astrolabe, lateen sail, caravel, and printed maps — made sustained oceanic exploration possible after c. 1400",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Use this space to organize your thinking. Your final response must be submitted in Canvas."
+    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
   },
 
   learningTargets: [
