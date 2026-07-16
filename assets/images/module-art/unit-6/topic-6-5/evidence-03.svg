@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Topic 6.5 — Cotton exports from South Asia and Egypt</title><desc id="desc">Local BeHistorical artwork for Economic Imperialism. Historical anchor: Cotton exports from South Asia and Egypt helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim..</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1c1d"/><stop offset=".58" stop-color="#2b2f31"/><stop offset="1" stop-color="#3e4447"/></linearGradient><radialGradient id="glow"><stop stop-color="#b98b54" stop-opacity=".34"/><stop offset="1" stop-color="#b98b54" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><circle cx="603" cy="136" r="420" fill="url(#glow)"/><circle cx="1021" cy="610" r="330" fill="url(#glow)" opacity=".7"/>
+  <g fill="none" stroke="#b98b54" opacity=".18"><path d="M0 655 1200 145M0 735 1200 225" stroke-width="3"/><circle cx="850" cy="400" r="255" stroke-width="4"/><circle cx="850" cy="400" r="285" stroke-width="2"/></g>
+  <g color="#b98b54" opacity=".82"><circle cx="850" cy="400" r="185" fill="none" stroke="currentColor" stroke-width="20"/><path d="m750 405 70 70 145-165" fill="none" stroke="currentColor" stroke-width="26"/></g>
+  <rect x="72" y="96" width="180" height="7" rx="3.5" fill="#b98b54" opacity=".72"/><rect x="72" y="122" width="110" height="3" rx="1.5" fill="#d2b48c" opacity=".4"/>
+  <path d="M72 650h360M72 678h220" stroke="#b98b54" stroke-width="5" stroke-linecap="round" opacity=".32"/>
+</svg>

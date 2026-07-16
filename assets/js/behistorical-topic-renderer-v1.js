@@ -14,6 +14,51 @@ function sanitizeImageUrl(url) {
   return value;
 }
 
+function topicArtworkPath(id) {
+  const topic = String((L && L.meta && L.meta.topic) || '');
+  const match = topic.match(/(\d+)\.(\d+)/);
+  if (!match) return '../assets/images/media-fallback.svg';
+  return `../assets/images/module-art/unit-${match[1]}/topic-${match[1]}-${match[2]}/${id}.svg`;
+}
+
+function topicArtworkCssPath(id) {
+  const topic = String((L && L.meta && L.meta.topic) || '');
+  const match = topic.match(/(\d+)\.(\d+)/);
+  if (!match) return '../images/media-fallback.svg';
+  return `../images/module-art/unit-${match[1]}/topic-${match[1]}-${match[2]}/${id}.svg`;
+}
+
+function useMediaFallback(image, fallback) {
+  const replacement = sanitizeImageUrl(fallback || image.dataset.fallback || '../assets/images/media-fallback.svg');
+  if (!replacement || image.src.endsWith(replacement)) return;
+  image.onerror = null;
+  image.src = replacement;
+  image.classList.add('media-fallback');
+}
+
+function mediaImageUrl(url, fallbackId) {
+  return sanitizeImageUrl(url) || topicArtworkPath(fallbackId);
+}
+
+function mediaFallbackAttrs(fallbackId) {
+  const fallback = topicArtworkPath(fallbackId);
+  return `data-fallback="${fallback}" onerror="useMediaFallback(this,'${fallback}')"`;
+}
+
+function lectureImageUrl(index) {
+  const segments = (L.lecture && L.lecture.segments) || [];
+  const current = sanitizeImageUrl(segments[index] && segments[index].image && segments[index].image.url);
+  const repeated = current && segments.slice(0, index).some(seg => sanitizeImageUrl(seg.image && seg.image.url) === current);
+  return current && !repeated ? current : topicArtworkPath(`lecture-${String(index + 1).padStart(2, '0')}`);
+}
+
+function evidenceImageUrl(index) {
+  const images = L.images || [];
+  const current = sanitizeImageUrl(images[index] && images[index].url);
+  const repeated = current && images.slice(0, index).some(image => sanitizeImageUrl(image.url) === current);
+  return current && !repeated ? current : topicArtworkPath(`evidence-${String(index + 1).padStart(2, '0')}`);
+}
+
 function stableImageKey(id) {
   return {
     contentdelivery: 'contentDelivery',
@@ -25,13 +70,12 @@ function stableImageKey(id) {
 }
 
 function moduleCardImg(id, fallback) {
-  const stable = L.stableImages || {};
-  return sanitizeImageUrl(stable[stableImageKey(id)] || fallback || ((L.map && L.map.url) ? L.map.url : ''));
+  return topicArtworkCssPath(id) || sanitizeImageUrl(fallback || ((L.map && L.map.url) ? L.map.url : ''));
 }
 
 function videoPreviewImg(video) {
   if (video && video.youtubeId) return `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`;
-  return sanitizeImageUrl((video && video.previewImage) || ((L.stableImages && L.stableImages.contentDelivery) || ((L.map && L.map.url) || '')));
+  return sanitizeImageUrl((video && video.previewImage) || topicArtworkPath('contentdelivery'));
 }
 
 function applyKeyConceptLabels() {
@@ -244,7 +288,7 @@ function renderModuleGrid() {
     <article class="module-card" role="button" tabindex="0"
       onclick="${m.link ? `openLinkedModule('${m.link}')` : m.jump ? `jumpToSection('${m.jump}')` : `openModule('${m.id}')`}"
       onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();${m.link ? `openLinkedModule('${m.link}')` : m.jump ? `jumpToSection('${m.jump}')` : `openModule('${m.id}')`}}"
-      style="--module-img:url('${sanitizeImageUrl(m.img)}')">
+      style="--module-img:url('${moduleCardImg(m.id, m.img)}')">
       <div class="module-label">${m.label}</div>
       <h3>${m.title}</h3>
       <p>${m.desc}</p>
@@ -272,9 +316,15 @@ function openLectureModal(i) {
   const seg = L.lecture.segments[i];
   byId('lecture-modal-title').textContent = seg.title;
   byId('lecture-modal-bullets').innerHTML = seg.bullets.map(b => `<li>${md(b)}</li>`).join('');
-  byId('lecture-modal-img').src = sanitizeImageUrl(seg.image.url);
-  byId('lecture-modal-img').alt = seg.image.title;
-  byId('lecture-modal-caption').innerHTML = `<strong>${seg.image.title}</strong><br>${seg.image.caption}<br><a href="${seg.image.sourceUrl || seg.image.url}" target="_blank" rel="noopener">Open image source</a>`;
+  const image = byId('lecture-modal-img');
+  const fallbackId = `lecture-${String(i + 1).padStart(2, '0')}`;
+  const fallback = topicArtworkPath(fallbackId);
+  image.onerror = function() { useMediaFallback(this, fallback); };
+  image.dataset.fallback = fallback;
+  image.src = lectureImageUrl(i);
+  image.alt = (seg.image && seg.image.title) || `${seg.title} visual`;
+  const sourceLink = seg.image && (seg.image.sourceUrl || seg.image.url);
+  byId('lecture-modal-caption').innerHTML = `<strong>${(seg.image && seg.image.title) || seg.title}</strong><br>${(seg.image && seg.image.caption) || 'Topic-specific instructional artwork.'}${sourceLink ? `<br><a href="${sourceLink}" target="_blank" rel="noopener">Open image source</a>` : ''}`;
   byId('lecture-modal').classList.add('show');
 }
 
@@ -290,7 +340,7 @@ function renderMap() {
     <article class="card map-card">
       <div class="map-grid">
         <figure class="map-figure">
-          <img src="${sanitizeImageUrl(L.map.url)}" alt="${L.map.title}" onclick="openMapLightbox()">
+          <img src="${mediaImageUrl(L.map.url, 'map')}" alt="${L.map.title}" onclick="openMapLightbox()" ${mediaFallbackAttrs('map')}>
           <figcaption><strong>${L.map.caption}</strong><br><a class="source-link" href="${L.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a></figcaption>
         </figure>
         <div class="map-notes">
@@ -552,7 +602,7 @@ function renderEvidence() {
     <div class="pop-grid">
       ${(L.images || []).map((img, i) => `
         <article class="card image-card pop-half">
-          <img src="${sanitizeImageUrl(img.url)}" alt="${img.title}" onclick="openLightbox(${i})">
+          <img src="${evidenceImageUrl(i)}" alt="${img.title}" onclick="openLightbox(${i})" ${mediaFallbackAttrs(`evidence-${String(i + 1).padStart(2, '0')}`)}>
           <div class="image-caption">
             <strong>${img.title}</strong><br>${img.caption}<br><em>${img.prompt}</em><br>
             <a class="source-link" href="${img.sourceUrl || img.url}" target="_blank" rel="noopener">Open source/image</a>
@@ -658,11 +708,15 @@ function selfCheck(id) {
 
 // ── Lightbox ──────────────────────────────────────────────────────────────────
 
-function openLightbox(i) { const img = L.images[i]; openImageUrl(sanitizeImageUrl(img.url), `${img.title} — ${img.caption}`); }
-function openMapLightbox() { openImageUrl(sanitizeImageUrl(L.map.url), `${L.map.title} — ${L.map.caption}`); }
-function openImageUrl(url, caption) {
-  byId('lightbox-img').src = sanitizeImageUrl(url);
-  byId('lightbox-img').alt = caption;
+function openLightbox(i) { const img = L.images[i]; openImageUrl(evidenceImageUrl(i), `${img.title} — ${img.caption}`, `evidence-${String(i + 1).padStart(2, '0')}`); }
+function openMapLightbox() { openImageUrl(mediaImageUrl(L.map.url, 'map'), `${L.map.title} — ${L.map.caption}`, 'map'); }
+function openImageUrl(url, caption, fallbackId) {
+  const image = byId('lightbox-img');
+  const fallback = topicArtworkPath(fallbackId || 'map');
+  image.onerror = function() { useMediaFallback(this, fallback); };
+  image.dataset.fallback = fallback;
+  image.src = sanitizeImageUrl(url) || fallback;
+  image.alt = caption;
   byId('lightbox-caption').textContent = caption;
   byId('lightbox').classList.add('show');
 }

@@ -10,6 +10,7 @@ const fs = require('fs');
 const path = require('path');
 const { inspect } = require('util');
 const vm = require('vm');
+const { renderFirst10Page } = require('./lib/first10-page');
 
 const ROOT = path.resolve(__dirname, '..');
 const UNIT = path.join(ROOT, 'unit-9');
@@ -348,6 +349,37 @@ function lessonShell(topic) {
 }
 
 function first10Page(topic) {
+  const skills = topic.id === '9.9'
+    ? ['Developments and Processes', 'Continuity and Change', 'Argumentation']
+    : ['Developments and Processes', 'Causation', 'Argumentation'];
+  const questions = [
+    'What historical process is introduced, and which specific example best illustrates it?',
+    'Explain one cause, effect, continuity, or change using because, therefore, while, or although.',
+    'What claim can you defend about the topic, and what evidence would qualify it?'
+  ];
+  return renderFirst10Page({
+    unit: 9,
+    topicId: topic.id,
+    title: topic.title,
+    subtitle: 'Read for historical mechanism, specific evidence, continuity and change, and a defensible qualification.',
+    learningObjective: topic.lo,
+    vocabulary: topic.cases,
+    sections: topic.reading.map((section, index) => ({
+      label: `Part ${index + 1}`,
+      heading: section[0],
+      text: section[1],
+      skill: skills[index]
+    })),
+    skills,
+    questions,
+    takeaway: topic.reading[2][1],
+    lessonHref: `lesson-${topic.id.replace('.', '-')}-${topic.slug}.html`,
+    coachUrl: COACH_URL,
+    submitNote: SUBMIT_NOTE
+  });
+}
+
+function legacyFirst10Page(topic) {
   const skills = topic.id === '9.9' ? ['Developments and Processes', 'Continuity and Change', 'Argumentation'] : ['Developments and Processes', 'Causation', 'Argumentation'];
   const sections = topic.reading.map((section, i) => `<div class="section"><div class="section-number">0${i + 1}</div><div class="section-label">Part ${i + 1}</div><h2 class="section-heading">${esc(section[0])}</h2><p class="reading-text">${esc(section[1])}</p><div class="ap-callout"><p class="ap-callout-label">AP Thinking — ${skills[i]}</p><p>Connect this section to the Topic ${topic.id} learning objective with a specific example and an explained relationship.</p></div></div>`).join('\n');
   const questions = [

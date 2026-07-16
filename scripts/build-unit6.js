@@ -11,6 +11,7 @@ const fs = require('fs');
 const path = require('path');
 const { inspect } = require('util');
 const vm = require('vm');
+const { renderFirst10Page } = require('./lib/first10-page');
 
 const ROOT = path.resolve(__dirname, '..');
 const UNIT = path.join(ROOT, 'unit-6');
@@ -311,6 +312,35 @@ function rendererConfig(topic) {
 }
 
 function first10Page(topic) {
+  const skills = ['Developments and Processes', 'Causation', 'Argumentation'];
+  const questions = [
+    'What historical process is introduced here, and what specific detail matters most?',
+    'Explain one causal relationship in the reading using because, therefore, or although.',
+    'How does the reading complicate or strengthen a defensible claim about the topic?'
+  ];
+  return renderFirst10Page({
+    unit: 6,
+    topicId: topic.id,
+    title: topic.title,
+    subtitle: 'Read closely for the historical mechanism, then test each claim with specific evidence and a meaningful qualification.',
+    learningObjective: topic.lo,
+    vocabulary: topic.cases,
+    sections: topic.first10.map((text, index) => ({
+      label: `Part ${index + 1}`,
+      heading: topic.cases[index] || topic.title,
+      text,
+      skill: skills[index]
+    })),
+    skills,
+    questions,
+    takeaway: topic.first10[2],
+    lessonHref: `lesson-${topic.id.replace('.', '-')}-${topic.slug}.html`,
+    coachUrl: COACH_URL,
+    submitNote: SUBMIT_NOTE
+  });
+}
+
+function legacyFirst10Page(topic) {
   const skills = ['Developments and Processes', 'Causation', 'Argumentation'];
   const questions = [
     'What historical process is introduced here, and what specific detail matters most?',

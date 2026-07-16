@@ -127,3 +127,24 @@
   color: #F5F0E7;
   transform: translateY(-1px);
 }
+
+/* A designed gradient remains visible beneath local artwork, so a delayed or
+   unavailable image can never leave an empty black module card. */
+.module-card::before {
+  background-color: var(--gunmetal-gray);
+  background-image: linear-gradient(135deg, rgba(201,164,106,.16), rgba(43,47,49,.12) 45%, rgba(140,90,43,.2)), var(--module-img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(.88) contrast(1.06) brightness(1.08);
+  opacity: .64;
+}
+
+.module-card::after {
+  background: linear-gradient(180deg, rgba(26,28,29,.12), rgba(26,28,29,.8));
+}
+
+.media-fallback {
+  object-fit: cover;
+  background: var(--charcoal-steel);
+}
