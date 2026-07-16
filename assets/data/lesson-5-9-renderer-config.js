@@ -56,8 +56,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Sit on a sanitary inquiry into an industrial city's overcrowded, disease-ridden districts and recommend who must pay to fix the water and housing; or testify before a factory committee on the wages and hours of women and children in the mills; or play a middle-class household navigating the expectations of 'separate spheres.' [Scenario blueprint — HTML build pending; not assigned in this build.]"
+    url: '../beintheroom/unit-5/the-sanitary-board.html',
+    desc: "Join Manchester’s 1842 sanitary board and decide how public infrastructure, housing protections, taxes, and industrial interests should respond to urban disease."
   };
 
   lesson.skillBuilder = {

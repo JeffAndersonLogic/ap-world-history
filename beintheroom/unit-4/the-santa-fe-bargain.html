@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Santa Fe Bargain | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "4.2",
+  "unit": "4",
+  "topicTitle": "Exploration: Causes and Events",
+  "file": "the-santa-fe-bargain.html",
+  "title": "The *Santa Fe Bargain*",
+  "location": "Royal camp at Santa Fe, outside Granada",
+  "date": "April 1492",
+  "lessonUrl": "../../unit-4/lesson-4-2-exploration.html",
+  "alignment": {
+    "theme": "Governance (GOV) and Economic Systems (ECN)",
+    "objective": "Explain the causes and effects of the state-sponsored expansion of maritime exploration.",
+    "skill": "Causation and comparison",
+    "keyConcepts": [
+      "KC-4.1.III",
+      "KC-4.1.III.A–C",
+      "State sponsorship and rivalry"
+    ]
+  },
+  "premise": [
+    "Granada has surrendered to Isabella of Castile and Ferdinand of Aragon. Christopher Columbus has returned to court with a proposal to sail west to Asia. Portugal is already pushing around Africa, and the Spanish monarchs must decide whether a small Atlantic gamble can open a competing route.",
+    "Columbus underestimates the distance to Asia and asks for titles, authority, and a share of profits if he succeeds. His plan draws on Atlantic island experience and prevailing winds, but no one in the room knows that two continents stand between Europe and East Asia.",
+    "You negotiate before departure. Judge only the evidence available in 1492, while recognizing that the contract will shape who receives wealth, authority, and religious power if the voyage reaches inhabited lands."
+  ],
+  "centralQuestion": "Should the Spanish Crown sponsor Columbus’s westward voyage, and what limits should it place on the explorer’s profit, authority, religious mission, and future claims?",
+  "roles": [
+    {
+      "id": "columbus",
+      "name": "Christopher Columbus",
+      "position": "You propose the westward voyage and demand reward if it succeeds.",
+      "power": "You offer experience and persistence but need royal ships, legal authority, and money.",
+      "goals": "Secure the voyage, hereditary titles, and a share of future trade.",
+      "fears": "The Crown may reject you again or reduce you to a salaried pilot.",
+      "lens": "A short western route can outflank Portugal and reach Asian wealth.",
+      "preference": "Broad titles and control over lands and trade you discover.",
+      "blindSpot": "Your distance calculation is badly wrong and your language of possession ignores the sovereignty of people you may encounter."
+    },
+    {
+      "id": "treasurer",
+      "name": "Royal Finance Secretary",
+      "position": "You calculate cost, credit, expected revenue, and contractual exposure.",
+      "power": "You can assemble financing and shape the Capitulations, but cannot guarantee a return.",
+      "goals": "Buy a strategic opportunity without granting away the Crown’s future authority.",
+      "fears": "A cheap voyage can still create expensive rescue, war, or legal obligations.",
+      "lens": "State sponsorship should exchange limited present risk for controlled future benefit.",
+      "preference": "Fund a small fleet with conditional rewards and strong royal oversight.",
+      "blindSpot": "Financial terms can make conquest and extraction look like neutral accounting."
+    },
+    {
+      "id": "confessor",
+      "name": "Royal Confessor and Church Adviser",
+      "position": "You evaluate conversion, papal legitimacy, and moral obligation.",
+      "power": "Your counsel influences the monarchs, but sailors and financiers control operations.",
+      "goals": "Expand Christianity without creating scandal or uncontrolled violence.",
+      "fears": "Commercial motives may hide coercion behind religious language.",
+      "lens": "Spiritual aims and royal sovereignty are inseparable in Iberian expansion.",
+      "preference": "Authorize mission under explicit Crown and Church rules.",
+      "blindSpot": "You may assume conversion justifies entering societies that did not invite Spanish rule."
+    },
+    {
+      "id": "diplomat",
+      "name": "Iberian Diplomatic Adviser",
+      "position": "You track Portuguese claims, Atlantic islands, papal politics, and rival courts.",
+      "power": "You can anticipate conflict and negotiate boundaries, but cannot erase competing ambitions.",
+      "goals": "Prevent the voyage from triggering an unwinnable war with Portugal.",
+      "fears": "Unclear claims may turn one expedition into a lasting imperial rivalry.",
+      "lens": "Exploration is a contest among states as much as a sailor’s achievement.",
+      "preference": "Sponsor cautiously and prepare a negotiated line of demarcation.",
+      "blindSpot": "A treaty between European monarchs cannot legitimately divide lands owned by others."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "portugal",
+      "label": "Portuguese African Route",
+      "text": "Portugal had spent decades building coastal knowledge and trade while seeking a route around Africa.",
+      "why": "Creates interstate pressure on Spain."
+    },
+    {
+      "id": "granada",
+      "label": "Granada Captured",
+      "text": "The final Nasrid kingdom surrendered in January 1492, freeing attention while leaving the Crown with military expenses.",
+      "why": "Connects religious politics and state capacity."
+    },
+    {
+      "id": "canaries",
+      "label": "Canary Island Experience",
+      "text": "Castilian possession of the Canaries offered a staging point near favorable Atlantic winds.",
+      "why": "Shows geography and prior colonization enabling the plan."
+    },
+    {
+      "id": "distance",
+      "label": "A Miscalculated Earth",
+      "text": "Columbus argued Asia lay much closer to the west than it actually did.",
+      "why": "Reveals that sponsorship rested partly on error."
+    },
+    {
+      "id": "capitulations",
+      "label": "Capitulations of Santa Fe",
+      "text": "The proposed contract tied success to offices, status, jurisdiction, and a share of profits.",
+      "why": "Shows how states delegated exploration through incentives."
+    },
+    {
+      "id": "crew",
+      "label": "Small Initial Fleet",
+      "text": "Three vessels limited direct royal cost but also limited supplies, security, and communication.",
+      "why": "Creates a risk-versus-cost calculation."
+    },
+    {
+      "id": "religion",
+      "label": "Religious Motivation",
+      "text": "The monarchs and Columbus linked travel to conversion and the wider struggle against non-Christian powers.",
+      "why": "Adds a motive beyond profit."
+    },
+    {
+      "id": "trade",
+      "label": "Asian Luxury Trade",
+      "text": "Spices and other Asian goods reached Europe through expensive, established networks.",
+      "why": "Explains the economic attraction of an alternative route."
+    },
+    {
+      "id": "rivalclaims",
+      "label": "Competing Atlantic Claims",
+      "text": "Castile and Portugal had already disputed islands, coasts, and navigation rights.",
+      "why": "Makes diplomacy a precondition of exploration."
+    },
+    {
+      "id": "sovereignty",
+      "label": "Unknown Peoples, Existing Polities",
+      "text": "Any inhabited land encountered would already contain communities with their own authority and claims.",
+      "why": "Challenges the assumption that discovery creates ownership."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "sponsor",
+      "title": "Decide the sponsorship",
+      "prompt": "What commitment should the Crown make before the route is proven?",
+      "options": [
+        {
+          "id": "limited",
+          "title": "Fund one limited voyage",
+          "action": "Provide three ships and supplies with a clear return deadline and reporting duty.",
+          "benefits": "The Crown tests the route at manageable cost.",
+          "worries": "The expedition may fail because it is too small or undersupplied.",
+          "tradeoff": "Low investment limits both loss and capability."
+        },
+        {
+          "id": "major",
+          "title": "Launch a large royal expedition",
+          "action": "Send more ships, soldiers, clergy, and trade goods from the start.",
+          "benefits": "A larger force can survive, trade, and defend claims.",
+          "worries": "The cost is high and a military posture raises the chance of violence.",
+          "tradeoff": "Capacity and coercive power arrive together."
+        },
+        {
+          "id": "reject",
+          "title": "Reject the western route",
+          "action": "Concentrate Spanish resources on the Mediterranean, Canaries, and intelligence about Portugal.",
+          "benefits": "The Crown avoids a poorly calculated gamble.",
+          "worries": "Portugal or another state may secure a decisive route first.",
+          "tradeoff": "Fiscal caution risks strategic exclusion."
+        }
+      ]
+    },
+    {
+      "id": "contract",
+      "title": "Set Columbus’s reward",
+      "prompt": "What should the Crown promise if the voyage succeeds?",
+      "options": [
+        {
+          "id": "broad",
+          "title": "Grant broad hereditary titles",
+          "action": "Accept extensive offices, jurisdiction, and profit shares to motivate the explorer.",
+          "benefits": "Columbus receives the status he demands and bears personal risk.",
+          "worries": "The Crown may create an autonomous dynasty over vast territories.",
+          "tradeoff": "Strong incentives weaken future royal control."
+        },
+        {
+          "id": "conditional",
+          "title": "Make offices conditional and reviewable",
+          "action": "Reward discovery but require audits, fixed terms, and confirmation after each voyage.",
+          "benefits": "The Crown preserves leverage and can correct abuse.",
+          "worries": "Columbus may refuse or lack incentive to recruit investors and crew.",
+          "tradeoff": "Accountability reduces the private reward for risk."
+        },
+        {
+          "id": "salary",
+          "title": "Hire him as a royal pilot",
+          "action": "Pay salary and bonus while reserving all jurisdiction and trade rights to the monarchs.",
+          "benefits": "Future authority remains unmistakably royal.",
+          "worries": "The proposer gains little reason to accept danger after years of lobbying.",
+          "tradeoff": "Central control may prevent the voyage from happening."
+        }
+      ]
+    },
+    {
+      "id": "claims",
+      "title": "Define conduct beyond the ocean",
+      "prompt": "What instructions should govern encounters and territorial claims?",
+      "options": [
+        {
+          "id": "tradefirst",
+          "title": "Require trade and diplomacy first",
+          "action": "Permit exchange and mission but forbid territorial seizure without later royal review.",
+          "benefits": "Encounter begins with lower coercion and better information.",
+          "worries": "A small crew may ignore orders or rivals may claim strategic sites.",
+          "tradeoff": "Restraint protects legitimacy but slows empire."
+        },
+        {
+          "id": "claim",
+          "title": "Authorize immediate claims",
+          "action": "Allow Columbus to claim lands for the Crown and establish forts where useful.",
+          "benefits": "Spain can move quickly before Portugal or other rivals.",
+          "worries": "European ceremony replaces consent and invites violent resistance.",
+          "tradeoff": "Strategic speed rests on denying existing sovereignty."
+        },
+        {
+          "id": "papal",
+          "title": "Seek papal and Portuguese settlement",
+          "action": "Delay broad claims until the Crown obtains religious sanction and negotiates a boundary.",
+          "benefits": "Spain reduces war risk and strengthens European legal recognition.",
+          "worries": "People outside Europe remain excluded from the decision.",
+          "tradeoff": "Diplomatic legitimacy among rivals does not equal legitimate ownership."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how political rivalry, economic ambition, religion, technology, and contractual incentives combined to cause state-sponsored exploration. Identify one way Spanish motives resembled Portuguese motives and one important difference in route or imperial outcome.",
+  "sources": [
+    {
+      "label": "Library of Congress — Christopher Columbus: Man and Myth",
+      "url": "https://www.loc.gov/exhibits/1492/columbus.html"
+    },
+    {
+      "label": "Library of Congress — 1492: An Ongoing Voyage",
+      "url": "https://www.loc.gov/exhibits/1492/"
+    },
+    {
+      "label": "Encyclopaedia Britannica — Treaty of Tordesillas",
+      "url": "https://www.britannica.com/event/Treaty-of-Tordesillas"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

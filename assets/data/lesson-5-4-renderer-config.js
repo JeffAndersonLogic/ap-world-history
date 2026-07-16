@@ -48,8 +48,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Advise the Meiji government on whether to build state-owned factories or create private zaibatsu, debate with a Lancashire manufacturer whether British tariff policy toward India is free trade or imperialism, or testify before the Meiji reform commission on which Western institutions Japan should borrow — and which it should refuse."
+    url: '../beintheroom/unit-5/the-meiji-investment-ledger.html',
+    desc: "Join Meiji Japan’s 1872 investment council and sequence railways, schools, strategic industry, taxation, and labor policy without surrendering sovereignty."
   };
 
   lesson.skillBuilder = {

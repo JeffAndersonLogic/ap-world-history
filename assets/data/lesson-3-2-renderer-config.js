@@ -54,8 +54,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: 'Step into the imperial court and negotiate your place in the system. Will you accept a mansabdar rank from the Mughal emperor, serve as a devshirme official in the Ottoman court, or press for local autonomy as a Rajput noble?'
+    url: '../beintheroom/unit-3/the-imperial-rank-roll.html',
+    desc: 'Serve on Akbar’s administrative commission at Fatehpur Sikri. Balance mansab rank, revenue assessment, jagir assignments, and local elite cooperation without creating independent provincial powers.'
   };
 
   lesson.beSurreal = {

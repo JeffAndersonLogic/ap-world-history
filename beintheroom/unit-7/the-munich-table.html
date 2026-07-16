@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Munich Table | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "7.6",
+  "unit": "7",
+  "topicTitle": "Causes of World War II",
+  "file": "the-munich-table.html",
+  "title": "The *Munich Table*",
+  "location": "Munich Conference",
+  "date": "29 September 1938",
+  "lessonUrl": "../../unit-7/lesson-7-6-causes-wwii.html",
+  "alignment": {
+    "theme": "Governance (GOV)",
+    "objective": "Explain the causes and consequences of World War II.",
+    "skill": "Causation and argumentation",
+    "keyConcepts": [
+      "KC-6.2.IV.D",
+      "Fascism, appeasement, and imperial expansion",
+      "Failed collective security"
+    ]
+  },
+  "premise": [
+    "Hitler demands the Sudetenland, a fortified border region of Czechoslovakia with a large German-speaking population. Britain and France fear another total war; Czechoslovakia is allied to France and has not been given an equal seat at the negotiating table.",
+    "The crisis follows the Versailles settlement, the Great Depression, fascist expansion, Japanese aggression, and the League’s failure to stop earlier conquests. Concession may buy time or teach aggressors that threats work.",
+    "You must decide whether to accept territorial transfer, create a supervised settlement, or risk war in 1938."
+  ],
+  "centralQuestion": "Should Britain and France concede the Sudetenland to avoid immediate war when doing so sacrifices Czechoslovak sovereignty and may strengthen further fascist expansion?",
+  "roles": [
+    {
+      "id": "britain",
+      "name": "British Prime Minister",
+      "position": "You seek a settlement after memories of World War I and doubts about military readiness.",
+      "power": "Britain has diplomatic weight and growing air power but limited public appetite for war.",
+      "goals": "Avoid catastrophic conflict while protecting the European balance.",
+      "fears": "A failed threat could start war before rearmament is complete.",
+      "lens": "Appeasement can be a strategy of time, fear, and miscalculation rather than simple cowardice.",
+      "preference": "Accept transfer only with international guarantees and supervision.",
+      "blindSpot": "You may value British time more than Czech security."
+    },
+    {
+      "id": "france",
+      "name": "French Cabinet Minister",
+      "position": "You weigh the Czech alliance against domestic division and dependence on British cooperation.",
+      "power": "France has a large army and treaty obligations, but defensive strategy and political instability constrain action.",
+      "goals": "Preserve alliances without fighting Germany alone.",
+      "fears": "Abandoning Czechoslovakia destroys French credibility; war risks another national catastrophe.",
+      "lens": "Alliance systems fail when commitments are not politically credible.",
+      "preference": "Demand a joint British-French guarantee before any concession.",
+      "blindSpot": "You may hide indecision behind the need for allied unity."
+    },
+    {
+      "id": "czech",
+      "name": "Czechoslovak Delegate",
+      "position": "You defend a democratic state, fortified border, industry, and multiethnic population.",
+      "power": "Your army and defenses are significant, but the major powers are bargaining without you.",
+      "goals": "Preserve sovereignty and prevent strategic dismemberment.",
+      "fears": "Territorial loss exposes the state and abandons citizens to Nazi rule.",
+      "lens": "Self-determination claims can be weaponized by expansionist states.",
+      "preference": "Reject transfer without a monitored vote and enforceable defense guarantee.",
+      "blindSpot": "You may assume allies will fight despite their visible reluctance."
+    },
+    {
+      "id": "german",
+      "name": "German Foreign Policy Envoy",
+      "position": "You present the demand as self-determination for Sudeten Germans while supporting Hitler’s expansion.",
+      "power": "Germany can threaten force and exploit Western fear, but a coalition war remains risky.",
+      "goals": "Secure territory, defenses, and industrial advantage without immediate general war.",
+      "fears": "A compromise that stops expansion weakens the regime’s momentum.",
+      "lens": "Fascist regimes combined nationalist grievance with strategic conquest.",
+      "preference": "Demand immediate transfer and no outside military guarantee.",
+      "blindSpot": "You conceal aims extending beyond ethnic self-determination."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "versailles",
+      "label": "Versailles Grievances",
+      "text": "Nazi propaganda exploited anger over the postwar settlement and territorial losses.",
+      "why": "Provides background without excusing expansion."
+    },
+    {
+      "id": "depression",
+      "label": "Great Depression",
+      "text": "Economic collapse weakened democracies and strengthened extremist parties and state intervention.",
+      "why": "Shows a structural cause of fascist power."
+    },
+    {
+      "id": "rhineland",
+      "label": "Remilitarized Rhineland",
+      "text": "Germany remilitarized the Rhineland in 1936 without effective military opposition.",
+      "why": "Shows earlier risks rewarded."
+    },
+    {
+      "id": "anschluss",
+      "label": "Anschluss",
+      "text": "Germany annexed Austria in March 1938, expanding power before Munich.",
+      "why": "Places the demand in a pattern of expansion."
+    },
+    {
+      "id": "forts",
+      "label": "Czech Fortifications",
+      "text": "The Sudeten border contained major defenses and industrial assets vital to Czechoslovakia.",
+      "why": "Shows why the transfer was strategically decisive."
+    },
+    {
+      "id": "excluded",
+      "label": "Czechoslovakia Excluded",
+      "text": "Czech representatives did not negotiate as equal decision-makers at Munich.",
+      "why": "Reveals the sovereignty problem."
+    },
+    {
+      "id": "readiness",
+      "label": "Western Rearmament",
+      "text": "British and French leaders questioned military readiness, especially air defense.",
+      "why": "Explains why buying time seemed valuable."
+    },
+    {
+      "id": "occupation",
+      "label": "March 1939 Occupation",
+      "text": "Germany later occupied the Czech lands beyond the Sudetenland.",
+      "why": "Tests the assumption that the demand was limited."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "territory",
+      "title": "Decide the Sudetenland",
+      "prompt": "What settlement should the conference impose or reject?",
+      "options": [
+        {
+          "id": "transfer",
+          "title": "Accept rapid transfer",
+          "action": "Cede the designated districts to Germany in exchange for a pledge of no further claims.",
+          "benefits": "Immediate war may be avoided and Western rearmament continues.",
+          "worries": "Czechoslovakia loses defenses and the pledge may be unreliable.",
+          "tradeoff": "Peace is purchased with another state’s security."
+        },
+        {
+          "id": "plebiscite",
+          "title": "Require supervised plebiscites",
+          "action": "Use international observers, minority protections, and staged votes.",
+          "benefits": "Self-determination receives a legal process rather than armed coercion.",
+          "worries": "Germany may reject delay or manipulate local intimidation.",
+          "tradeoff": "Procedure creates legitimacy but cannot neutralize force alone."
+        },
+        {
+          "id": "reject",
+          "title": "Reject territorial coercion",
+          "action": "Demand negotiation within Czech sovereignty and prepare collective defense.",
+          "benefits": "Aggression meets a credible boundary and alliances retain meaning.",
+          "worries": "War may begin immediately under unfavorable conditions.",
+          "tradeoff": "Deterrence requires accepting the risk it seeks to prevent."
+        }
+      ]
+    },
+    {
+      "id": "guarantee",
+      "title": "Back the agreement",
+      "prompt": "What enforcement should accompany any settlement?",
+      "options": [
+        {
+          "id": "paper",
+          "title": "Rely on mutual declarations",
+          "action": "Use signed promises and continued diplomacy without automatic military terms.",
+          "benefits": "Governments retain flexibility and avoid a new alliance trap.",
+          "worries": "The aggressor faces little material consequence for violation.",
+          "tradeoff": "Diplomatic freedom weakens deterrence."
+        },
+        {
+          "id": "military",
+          "title": "Guarantee remaining Czechoslovakia",
+          "action": "Promise joint British-French military action against further invasion.",
+          "benefits": "The settlement draws an enforceable line.",
+          "worries": "The public and armed forces may not support the commitment.",
+          "tradeoff": "Credibility requires resources and political will."
+        },
+        {
+          "id": "league",
+          "title": "Create international monitoring",
+          "action": "Deploy neutral observers and automatic sanctions through a multilateral commission.",
+          "benefits": "Violations become visible and coordinated response is easier.",
+          "worries": "Earlier League sanctions had failed against determined powers.",
+          "tradeoff": "Institutions work only when states will enforce them."
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "title": "Prepare for the next crisis",
+      "prompt": "What broader policy should follow Munich?",
+      "options": [
+        {
+          "id": "rearm",
+          "title": "Rearm while continuing diplomacy",
+          "action": "Accelerate aircraft, radar, alliances, and civil defense while talking to Germany.",
+          "benefits": "Britain and France gain time and bargaining capacity.",
+          "worries": "Further concessions may still strengthen Germany faster.",
+          "tradeoff": "Time is useful only if relative readiness improves."
+        },
+        {
+          "id": "collective",
+          "title": "Build a broad anti-aggression coalition",
+          "action": "Coordinate Britain, France, the Soviet Union, and smaller states.",
+          "benefits": "Germany faces the risk of a multi-front response.",
+          "worries": "Ideological mistrust and incompatible aims may fracture the coalition.",
+          "tradeoff": "Collective security requires cooperation among rivals."
+        },
+        {
+          "id": "isolate",
+          "title": "Limit continental commitments",
+          "action": "Protect national and imperial defenses without guaranteeing Eastern Europe.",
+          "benefits": "Governments reduce immediate exposure to distant conflicts.",
+          "worries": "Expansion continues until the balance becomes more dangerous.",
+          "tradeoff": "Isolation delays costs while weakening potential partners."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how the failed peace settlement, Great Depression, fascist regimes, and imperial expansion combined to cause World War II. Evaluate appeasement as both a cause and a constrained policy choice.",
+  "sources": [
+    {
+      "label": "UK National Archives — The Munich Agreement",
+      "url": "https://www.nationalarchives.gov.uk/education/resources/chamberlain-and-hitler/"
+    },
+    {
+      "label": "United States Holocaust Memorial Museum — Munich Agreement",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/munich-agreement"
+    },
+    {
+      "label": "Encyclopaedia Britannica — Munich Agreement",
+      "url": "https://www.britannica.com/event/Munich-Agreement"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

@@ -54,8 +54,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Advise the Ottoman government on whether to accept the Public Debt Administration's terms or risk default; negotiate with Richard Cobden about whether India deserves the same free trade treatment as Britain; or testify before Parliament about whether J.P. Morgan's railroad consolidations serve the public interest."
+    url: '../beintheroom/unit-5/the-debt-conversion-table.html',
+    desc: "Negotiate the Ottoman Public Debt settlement in 1881 and decide how foreign creditors can gain confidence without taking control of domestic sovereignty."
   };
 
   lesson.skillBuilder = {

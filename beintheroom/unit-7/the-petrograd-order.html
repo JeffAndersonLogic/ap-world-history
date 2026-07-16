@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Petrograd Order | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "7.1",
+  "unit": "7",
+  "topicTitle": "Shifting Power After 1900",
+  "file": "the-petrograd-order.html",
+  "title": "The *Petrograd Order*",
+  "location": "Petrograd Soviet meeting hall",
+  "date": "March 1917",
+  "lessonUrl": "../../unit-7/lesson-7-1-shifting-power.html",
+  "alignment": {
+    "theme": "Governance (GOV)",
+    "objective": "Explain how internal and external factors contributed to political change and the collapse of empires after 1900.",
+    "skill": "Causation and comparison",
+    "keyConcepts": [
+      "KC-6.2.I",
+      "KC-6.2.I.A–C",
+      "Imperial collapse and revolution"
+    ]
+  },
+  "premise": [
+    "The tsar has abdicated after military defeats, food shortages, strikes, and mutiny. A Provisional Government claims legal authority, while the Petrograd Soviet represents workers and soldiers and can influence the capital’s armed forces.",
+    "Russia remains at war. Peasants demand land, urban workers demand food and control, and soldiers question whether officers can order them against civilians. The state is not replaced by one clear successor; power is divided between institutions with different sources of legitimacy.",
+    "You must decide how the Soviet will handle military obedience, participation in government, and demands for peace and land without knowing whether cooperation will stabilize Russia or postpone another revolution."
+  ],
+  "centralQuestion": "How should the Petrograd Soviet use its power after the tsar’s fall when continuing war, land inequality, food shortages, and divided authority threaten the new order?",
+  "roles": [
+    {
+      "id": "soldier",
+      "name": "Soldier Delegate",
+      "position": "You represent troops exhausted by casualties and uncertain command.",
+      "power": "Armed soldiers can determine order in the capital, but desertion or disunity could collapse the front.",
+      "goals": "Protect soldiers from arbitrary officers and secure a credible path to peace.",
+      "fears": "The government may send troops back into a war they no longer trust.",
+      "lens": "External war can destroy imperial legitimacy from within.",
+      "preference": "Condition military obedience on civilian oversight and defensive operations.",
+      "blindSpot": "You may underestimate how army breakdown could expose civilians and territories."
+    },
+    {
+      "id": "worker",
+      "name": "Factory Worker Delegate",
+      "position": "You represent strikers facing hunger, inflation, and employer control.",
+      "power": "Factories and streets give workers leverage, but work stoppages deepen shortages.",
+      "goals": "Win food security, labor rights, and a meaningful voice in production.",
+      "fears": "Elite ministers may use the revolution to preserve property and hierarchy.",
+      "lens": "Economic crisis turns political legitimacy into a daily material question.",
+      "preference": "Demand elected factory committees and immediate relief.",
+      "blindSpot": "You may treat continued production as surrender even when cities need supplies."
+    },
+    {
+      "id": "minister",
+      "name": "Provisional Government Minister",
+      "position": "You claim authority through the Duma and promise a future constituent assembly.",
+      "power": "You can issue laws and negotiate with allies, but officials and soldiers may obey the Soviet instead.",
+      "goals": "Preserve state continuity, elections, and Russia’s international commitments.",
+      "fears": "Immediate radical changes may trigger military collapse or civil war.",
+      "lens": "Political transitions need institutions and legal continuity.",
+      "preference": "Cooperate with the Soviet while postponing permanent land decisions to elections.",
+      "blindSpot": "You may mistake procedural delay for stability while public confidence disappears."
+    },
+    {
+      "id": "bolshevik",
+      "name": "Bolshevik Organizer",
+      "position": "You argue that workers and soldiers should take power rather than support liberal ministers.",
+      "power": "Your party has disciplined organizers but is still a minority in many soviets.",
+      "goals": "Turn dual power into rule by soviets and withdraw from the war.",
+      "fears": "Compromise may demobilize revolutionary energy and restore elite control.",
+      "lens": "Class conflict makes coalition government temporary and unstable.",
+      "preference": "Oppose ministerial participation and campaign for peace, land, and soviet power.",
+      "blindSpot": "You may assume a party program can govern a vast, divided empire without coercion."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "war",
+      "label": "Military Defeat",
+      "text": "Mass casualties, supply failures, and battlefield reverses discredited the tsarist state.",
+      "why": "Shows the external pressure accelerating internal collapse."
+    },
+    {
+      "id": "food",
+      "label": "Food and Inflation",
+      "text": "Transport disruption and inflation produced severe urban shortages and bread protests.",
+      "why": "Connects economic crisis to political revolt."
+    },
+    {
+      "id": "abdication",
+      "label": "Tsar’s Abdication",
+      "text": "Nicholas II abdicated after commanders and political elites withdrew support.",
+      "why": "Shows collapse inside the ruling coalition."
+    },
+    {
+      "id": "dual",
+      "label": "Dual Power",
+      "text": "The Provisional Government held formal authority while the Petrograd Soviet held popular and military influence.",
+      "why": "Defines the central institutional dilemma."
+    },
+    {
+      "id": "order1",
+      "label": "Soviet Order No. 1",
+      "text": "The Soviet asserted soldier committees and limited obedience to orders conflicting with Soviet directives.",
+      "why": "Shows authority moving into representative military structures."
+    },
+    {
+      "id": "land",
+      "label": "Peasant Land Demands",
+      "text": "Peasants expected redistribution of noble and church land and often acted before national legislation.",
+      "why": "Adds the rural majority to the crisis."
+    },
+    {
+      "id": "nationalities",
+      "label": "Imperial Nationalities",
+      "text": "Poles, Finns, Ukrainians, and others pressed claims as the Russian imperial center weakened.",
+      "why": "Shows imperial collapse beyond Petrograd."
+    },
+    {
+      "id": "assembly",
+      "label": "Constituent Assembly Promise",
+      "text": "The Provisional Government promised elections but delayed major structural decisions.",
+      "why": "Explains both its legal claim and its vulnerability."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "army",
+      "title": "Set military authority",
+      "prompt": "How should soldiers respond to officers and government orders?",
+      "options": [
+        {
+          "id": "conditional",
+          "title": "Conditional obedience",
+          "action": "Obey defensive orders that do not conflict with elected soldier committees and Soviet directives.",
+          "benefits": "The front retains some coordination while arbitrary authority is checked.",
+          "worries": "Conflicting chains of command can paralyze the army.",
+          "tradeoff": "Democratic control weakens military unity."
+        },
+        {
+          "id": "traditional",
+          "title": "Restore the officer chain",
+          "action": "Return operational command to officers while keeping committees for grievances.",
+          "benefits": "The government gains a clearer army during wartime.",
+          "worries": "Soldiers may see restoration as betrayal and mutiny again.",
+          "tradeoff": "Military effectiveness is prioritized over revolutionary control."
+        },
+        {
+          "id": "demobilize",
+          "title": "Begin controlled demobilization",
+          "action": "Withdraw unreliable units, defend essential fronts, and negotiate for peace.",
+          "benefits": "Casualties and mutiny may fall.",
+          "worries": "Allies and enemies exploit the retreat and the state loses territory.",
+          "tradeoff": "Peace reduces one crisis while creating strategic vulnerability."
+        }
+      ]
+    },
+    {
+      "id": "government",
+      "title": "Choose the Soviet’s relationship to government",
+      "prompt": "Should Soviet leaders enter the cabinet?",
+      "options": [
+        {
+          "id": "coalition",
+          "title": "Join a coalition cabinet",
+          "action": "Take ministries and make food, labor, and elections joint responsibilities.",
+          "benefits": "Popular representatives gain direct administrative power.",
+          "worries": "The Soviet shares blame for policies it cannot fully control.",
+          "tradeoff": "Participation increases capacity while weakening independence."
+        },
+        {
+          "id": "oversight",
+          "title": "Support with strict oversight",
+          "action": "Keep separate institutions and condition support on published commitments.",
+          "benefits": "The Soviet preserves leverage and can expose broken promises.",
+          "worries": "Dual power and unclear responsibility continue.",
+          "tradeoff": "Autonomy protects legitimacy but prolongs instability."
+        },
+        {
+          "id": "replace",
+          "title": "Demand an all-soviet government",
+          "action": "Transfer executive authority to elected worker and soldier councils.",
+          "benefits": "Formal and popular power may align.",
+          "worries": "Rural representation and opposition parties may reject the move.",
+          "tradeoff": "Revolutionary clarity risks civil conflict and one-party dominance."
+        }
+      ]
+    },
+    {
+      "id": "program",
+      "title": "Set the immediate program",
+      "prompt": "What should happen before national elections?",
+      "options": [
+        {
+          "id": "peace",
+          "title": "Peace first",
+          "action": "Open negotiations and redirect transport and industry toward civilian supply.",
+          "benefits": "War pressure and shortages may ease.",
+          "worries": "Russia could accept severe terms and lose allied support.",
+          "tradeoff": "Ending external war may deepen territorial collapse."
+        },
+        {
+          "id": "land",
+          "title": "Land and food first",
+          "action": "Authorize local land committees and emergency grain distribution.",
+          "benefits": "Peasant and urban demands receive tangible answers.",
+          "worries": "Uncoordinated seizures and requisitions may reduce production.",
+          "tradeoff": "Immediate legitimacy competes with administrative control."
+        },
+        {
+          "id": "elections",
+          "title": "Elections first",
+          "action": "Protect civil liberties and schedule the constituent assembly before structural decrees.",
+          "benefits": "A nationally elected body gains authority to settle major questions.",
+          "worries": "Delay leaves war, land, and hunger unresolved.",
+          "tradeoff": "Procedure builds legitimacy only if people can survive the wait."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how one external and two internal factors caused the Russian imperial collapse. Compare Russia’s collapse with the fall of the Ottoman or Qing Empire.",
+  "sources": [
+    {
+      "label": "Encyclopaedia Britannica — Russian Revolution",
+      "url": "https://www.britannica.com/event/Russian-Revolution"
+    },
+    {
+      "label": "Library of Congress — Russian Revolution collections",
+      "url": "https://www.loc.gov/collections/russian-revolutionary-posters/"
+    },
+    {
+      "label": "Marxists Internet Archive — Order No. 1 of the Petrograd Soviet",
+      "url": "https://www.marxists.org/history/ussr/revolution/1917/march/01.htm"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

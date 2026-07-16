@@ -195,8 +195,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   beInTheRoom: {
-    url: '',
-    desc: 'Step into the world of early modern religious conflict and accommodation — navigate the courts of Akbar, Selim I, or Shah Ismail and experience how religious identity shaped imperial power.'
+    url: '../beintheroom/unit-3/after-chaldiran.html',
+    desc: 'Enter Shah Ismail’s council after Chaldiran. Rebuild Safavid authority while institutionalizing Twelver Shiism, managing religious diversity, and responding to Ottoman Sunni rivalry.'
   }
 
 };

@@ -54,8 +54,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Navigate the casta as a mestizo merchant seeking legal recognition in New Spain, argue your community's tribute exemption before an audiencia judge, or manage the racial politics of a Portuguese Brazilian plantation as a free Black overseer."
+    url: '../beintheroom/unit-4/the-identity-dossier.html',
+    desc: 'Hear a Mexico City status petition and distinguish elite casta representations from the fluid but unequal interaction of ancestry, wealth, gender, reputation, service, and corporate privilege.'
   };
 
   lesson.skillBuilder = {

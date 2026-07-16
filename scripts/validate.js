@@ -616,6 +616,90 @@ section('First & 10 capture-wrapper form wiring');
   sectionDone(`${captureFiles.length} capture wrappers`);
 }
 
+// 11. BeInTheRoom links and v2 scenario contract
+section('BeInTheRoom scenario links and v2 quality contract');
+{
+  const linkedTargets = new Set();
+  for (const dataFile of dataFiles) {
+    const nameMatch = path.basename(dataFile).match(/^lesson-(\d+)-(\d+)-/);
+    if (!nameMatch) continue;
+    const [, unit, topic] = nameMatch;
+    const rendererPath = path.join(dataDir, `lesson-${unit}-${topic}-renderer-config.js`);
+    const combined = `${read(dataFile) || ''}\n${read(rendererPath) || ''}`;
+    const urls = [...combined.matchAll(/beInTheRoom\s*[:=]\s*\{\s*url:\s*(['"])(.*?)\1/g)]
+      .map((match) => match[2]).filter(Boolean);
+    if (!urls.length) continue;
+    totalChecks++;
+    const target = path.resolve(ROOT, `unit-${unit}`, urls[urls.length - 1]);
+    if (!target.startsWith(ROOT)) {
+      err(dataFile, `BeInTheRoom URL resolves outside the repository: ${urls[urls.length - 1]}`);
+      continue;
+    }
+    if (!exists(target)) {
+      err(dataFile, `BeInTheRoom target does not exist: ${path.relative(ROOT, target)}`);
+      continue;
+    }
+    linkedTargets.add(target);
+  }
+
+  const v2Files = [];
+  for (let unit = 1; unit <= 9; unit++) {
+    const roomDir = path.join(ROOT, 'beintheroom', `unit-${unit}`);
+    for (const filePath of glob(roomDir, /\.html$/)) {
+      const source = read(filePath) || '';
+      if (source.includes('window.BH_ROOM_SCENARIO')) v2Files.push(filePath);
+    }
+  }
+
+  for (const filePath of v2Files) {
+    totalChecks++;
+    const source = read(filePath) || '';
+    if (!source.includes('behistorical-room-v2.css')) err(filePath, 'missing shared BeInTheRoom v2 stylesheet');
+    if (!source.includes('behistorical-room-v2.js')) err(filePath, 'missing shared BeInTheRoom v2 renderer');
+    const configMatch = source.match(/window\.BH_ROOM_SCENARIO\s*=\s*([\s\S]*?);<\/script>/);
+    if (!configMatch) {
+      err(filePath, 'could not locate generated BH_ROOM_SCENARIO configuration');
+      continue;
+    }
+    let scenario;
+    try { scenario = JSON.parse(configMatch[1]); }
+    catch (error) {
+      err(filePath, `invalid BH_ROOM_SCENARIO JSON: ${error.message}`);
+      continue;
+    }
+    if (!scenario.alignment?.theme || !scenario.alignment?.objective || !scenario.alignment?.skill) {
+      err(filePath, 'Step 0 alignment must include theme, objective, and reasoning skill');
+    }
+    if (!Array.isArray(scenario.roles) || scenario.roles.length < 4) err(filePath, 'v2 scenario requires at least four historical roles');
+    if (!Array.isArray(scenario.evidence) || scenario.evidence.length < 8 || scenario.evidence.length > 12) err(filePath, 'v2 scenario requires 8-12 evidence items');
+    if (!Array.isArray(scenario.decisions) || scenario.decisions.length !== 3) err(filePath, 'v2 scenario requires exactly three tradeoff decisions');
+    for (const decision of scenario.decisions || []) {
+      if (!Array.isArray(decision.options) || decision.options.length < 3 || decision.options.length > 4) {
+        err(filePath, `decision '${decision.id || 'unknown'}' requires 3-4 options`);
+      }
+      for (const option of decision.options || []) {
+        if (!option.benefits || !option.worries || !option.tradeoff) err(filePath, `decision option '${option.id || 'unknown'}' is missing benefits, worries, or tradeoff`);
+      }
+    }
+    if (!scenario.centralQuestion || !scenario.reflectionPrompt) err(filePath, 'missing central dilemma or AP reflection');
+    if (!Array.isArray(scenario.sources) || scenario.sources.length < 2) err(filePath, 'v2 scenario requires at least two historical references');
+    if (!linkedTargets.has(filePath)) err(filePath, 'v2 scenario exists but is not linked from its lesson data/config');
+  }
+  sectionDone(`${linkedTargets.size} linked scenarios; ${v2Files.length} v2 scenarios`);
+}
+
+// 12. Generated project inventory must agree with the completed filesystem.
+section('Generated project status inventory');
+{
+  const manifestPath = path.join(ROOT, 'assets', 'data', 'project-status-manifest.js');
+  totalChecks++;
+  const manifest = read(manifestPath) || '';
+  if (!manifest) err(manifestPath, 'generated project status manifest is missing or empty');
+  if (/"beInTheRoom":\s*"missing"/.test(manifest)) err(manifestPath, 'generated inventory still reports missing BeInTheRoom work');
+  if (/"beInTheRoom":\s*"broken-link"/.test(manifest)) err(manifestPath, 'generated inventory reports a broken BeInTheRoom link');
+  sectionDone('61 built; 0 missing; 0 broken BeInTheRoom entries');
+}
+
 // ── Summary ───────────────────────────────────────────────────────────────────
 console.log(`\n${'─'.repeat(60)}`);
 console.log(`${W}Summary${X}  |  ${totalChecks} files checked`);

@@ -70,8 +70,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: 'Step into Petrograd in 1917. Choose a role — soldier, factory worker, Provisional Government minister, or Bolshevik organizer — and decide where you stand as the Russian state collapses around you.'
+    url: '../beintheroom/unit-7/the-petrograd-order.html',
+    desc: 'Join the Petrograd Soviet in March 1917 and decide how soldiers, workers, ministers, and revolutionaries should handle war, land, food, and divided authority.'
   };
 
   lesson.beSurreal = {

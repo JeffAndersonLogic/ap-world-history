@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Mandate Map | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "7.5",
+  "unit": "7",
+  "topicTitle": "Unresolved Tensions After World War I",
+  "file": "the-mandate-map.html",
+  "title": "The *Mandate Map*",
+  "location": "Paris Peace Conference",
+  "date": "1919",
+  "lessonUrl": "../../unit-7/lesson-7-5-unresolved-tensions.html",
+  "alignment": {
+    "theme": "Governance (GOV)",
+    "objective": "Explain how territorial gains and continued imperial control after World War I produced unresolved tensions and resistance.",
+    "skill": "Continuity and change over time",
+    "keyConcepts": [
+      "KC-6.2.II.C",
+      "Mandate system and imperial continuity",
+      "Self-determination and resistance"
+    ]
+  },
+  "premise": [
+    "The victorious powers are assigning former German and Ottoman territories to League of Nations mandates. Officials call the system international supervision toward self-government; delegates from colonized societies see imperial control continuing under new language.",
+    "Arab wartime expectations, Zionist commitments, Japanese territorial gains, and anti-colonial petitions do not fit one principle of self-determination. The people whose lands are being mapped hold little formal authority in the room.",
+    "You must define the mandate categories, representation, borders, and review process while distinguishing legal change from imperial continuity."
+  ],
+  "centralQuestion": "How should the peace conference apply self-determination when victorious empires intend to preserve strategic control over former German and Ottoman territories?",
+  "roles": [
+    {
+      "id": "british",
+      "name": "British Imperial Delegate",
+      "position": "You defend strategic routes, wartime commitments, and Britain’s claim to administrative experience.",
+      "power": "Britain has military leverage, but the League and anti-colonial opinion demand a reformist justification.",
+      "goals": "Secure routes and influence without appearing to annex territory.",
+      "fears": "Open self-rule may threaten imperial communications and rival commitments.",
+      "lens": "Mandates can reorganize empire without ending it.",
+      "preference": "Accept supervised administration with gradual institutions and strategic safeguards.",
+      "blindSpot": "You may call imperial interests tutelage and treat local sovereignty as premature."
+    },
+    {
+      "id": "arab",
+      "name": "Arab Independence Delegate",
+      "position": "You represent wartime allies who expected independent Arab government after Ottoman rule.",
+      "power": "You have petitions, local networks, and wartime service, but little coercive power at Paris.",
+      "goals": "Win recognized sovereignty and prevent externally drawn rule.",
+      "fears": "European mandates may turn promises of liberation into partition.",
+      "lens": "National self-determination is unequal when victors decide who is “ready.”",
+      "preference": "Demand elected assemblies, fixed independence dates, and border consultation.",
+      "blindSpot": "You may treat diverse local communities as one unified national constituency."
+    },
+    {
+      "id": "japanese",
+      "name": "Japanese Diplomatic Envoy",
+      "position": "You seek recognition of wartime gains and equal status among great powers.",
+      "power": "Japan is a victorious power with military control in parts of the Pacific and China, but Western powers can block proposals.",
+      "goals": "Secure strategic islands and racial equality recognition.",
+      "fears": "Selective self-determination may expose racial hierarchy inside the new order.",
+      "lens": "Imperialism after 1918 was maintained by Western and Japanese states alike.",
+      "preference": "Accept League mandates only under equal rules for all powers.",
+      "blindSpot": "You may invoke equality among empires while denying it to subject peoples."
+    },
+    {
+      "id": "petitioner",
+      "name": "Colonial Petition Delegate",
+      "position": "You present demands from people governed without representation.",
+      "power": "Petitions and publicity can embarrass the conference, but the victors control recognition and enforcement.",
+      "goals": "Make consent, rights, and a route to independence binding.",
+      "fears": "The League may record your words while leaving power unchanged.",
+      "lens": "International institutions create new language and forums but not automatically decolonization.",
+      "preference": "Require elected councils and direct petition rights to the League.",
+      "blindSpot": "You may overestimate how much moral argument can shift strategic bargaining."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "article22",
+      "label": "League Covenant Article 22",
+      "text": "The covenant described mandates as a “sacred trust” for peoples allegedly not yet able to govern themselves.",
+      "why": "Shows paternal language and international supervision."
+    },
+    {
+      "id": "classes",
+      "label": "Mandate Categories",
+      "text": "A, B, and C mandates implied different paths and levels of control.",
+      "why": "Shows hierarchy built into the legal system."
+    },
+    {
+      "id": "arab",
+      "label": "Arab Wartime Expectations",
+      "text": "Arab leaders expected independence after cooperation against Ottoman rule.",
+      "why": "Creates a conflict between wartime promises and postwar settlement."
+    },
+    {
+      "id": "balfour",
+      "label": "Balfour Declaration",
+      "text": "Britain supported a Jewish national home in Palestine while also making other commitments in the region.",
+      "why": "Shows overlapping promises and future tension."
+    },
+    {
+      "id": "japan",
+      "label": "Japanese Expansion",
+      "text": "Japan received former German islands north of the equator and expanded influence in China.",
+      "why": "Prevents imperialism from being treated as exclusively Western."
+    },
+    {
+      "id": "petitions",
+      "label": "Anti-Colonial Petitions",
+      "text": "Delegates from colonized peoples invoked self-determination and wartime service at Paris.",
+      "why": "Shows political agency despite exclusion."
+    },
+    {
+      "id": "borders",
+      "label": "Externally Drawn Borders",
+      "text": "Mandate boundaries often served strategic bargaining more than local political consultation.",
+      "why": "Connects mapping to future conflict."
+    },
+    {
+      "id": "continuity",
+      "label": "Imperial Administration",
+      "text": "Mandatory powers controlled defense, finance, and foreign affairs in many territories.",
+      "why": "Shows continuity beneath changed legal language."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "status",
+      "title": "Define mandate status",
+      "prompt": "What legal status should former territories receive?",
+      "options": [
+        {
+          "id": "trust",
+          "title": "Temporary international trust",
+          "action": "Recognize sovereignty in principle and give the League enforceable supervision.",
+          "benefits": "The system creates a formal route away from annexation.",
+          "worries": "Great powers still administer territory and control the League.",
+          "tradeoff": "Legal innovation can legitimize continued domination."
+        },
+        {
+          "id": "independence",
+          "title": "Conditional immediate independence",
+          "action": "Recognize governments now with technical assistance and treaty safeguards.",
+          "benefits": "Self-determination becomes concrete rather than deferred.",
+          "worries": "New states may face weak institutions and foreign pressure.",
+          "tradeoff": "Sovereignty arrives before capacity is evenly distributed."
+        },
+        {
+          "id": "administration",
+          "title": "Long-term mandatory rule",
+          "action": "Let experienced powers govern until security and administration meet League standards.",
+          "benefits": "Officials promise order and investment.",
+          "worries": "The ruling power defines readiness and gains strategic control.",
+          "tradeoff": "Stability becomes an open-ended argument for empire."
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "title": "Create local representation",
+      "prompt": "How should inhabitants influence governance?",
+      "options": [
+        {
+          "id": "advisory",
+          "title": "Appointed advisory councils",
+          "action": "Let mandatory officials select local leaders to advise policy.",
+          "benefits": "Administration gains knowledge without losing control.",
+          "worries": "Appointed elites may not represent the population.",
+          "tradeoff": "Consultation substitutes for consent."
+        },
+        {
+          "id": "elected",
+          "title": "Elected territorial assemblies",
+          "action": "Require broad elections with budget and legislative authority.",
+          "benefits": "Local political capacity and accountability develop.",
+          "worries": "Mandatory powers may manipulate franchise rules or veto decisions.",
+          "tradeoff": "Representation expands within an unequal sovereignty structure."
+        },
+        {
+          "id": "plebiscite",
+          "title": "Hold boundary plebiscites",
+          "action": "Let residents vote on borders, political association, and mandate status.",
+          "benefits": "Territorial choices gain direct legitimacy.",
+          "worries": "Mixed populations and displacement make one vote difficult and divisive.",
+          "tradeoff": "Popular sovereignty can clarify preference while hardening identity conflict."
+        }
+      ]
+    },
+    {
+      "id": "exit",
+      "title": "Set the path to independence",
+      "prompt": "What review mechanism should the League adopt?",
+      "options": [
+        {
+          "id": "date",
+          "title": "Fixed independence dates",
+          "action": "Set public deadlines with measurable administrative steps.",
+          "benefits": "Mandatory powers cannot delay indefinitely.",
+          "worries": "Rigid dates may ignore changing conditions and provoke rushed institutions.",
+          "tradeoff": "Time limits discipline empire while compressing state-building."
+        },
+        {
+          "id": "benchmarks",
+          "title": "Independent benchmarks",
+          "action": "Use League commissions, petitions, rights reports, and fiscal standards.",
+          "benefits": "Review becomes evidence-based and publicly contestable.",
+          "worries": "The League remains dominated by imperial powers.",
+          "tradeoff": "Oversight gains detail without escaping unequal governance."
+        },
+        {
+          "id": "power",
+          "title": "Leave timing to mandatory powers",
+          "action": "Let each administrator recommend independence when conditions permit.",
+          "benefits": "Policy can adapt to local circumstances.",
+          "worries": "The power benefiting from control decides when control ends.",
+          "tradeoff": "Flexibility becomes a mechanism of imperial continuity."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain one change and two continuities in imperial control after World War I. Use the mandate system and one anti-colonial response as evidence.",
+  "sources": [
+    {
+      "label": "Avalon Project — Covenant of the League of Nations, Article 22",
+      "url": "https://avalon.law.yale.edu/20th_century/leagcov.asp"
+    },
+    {
+      "label": "U.S. Office of the Historian — Paris Peace Conference",
+      "url": "https://history.state.gov/milestones/1914-1920/paris-peace"
+    },
+    {
+      "label": "Encyclopaedia Britannica — Mandate",
+      "url": "https://www.britannica.com/topic/mandate-League-of-Nations"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

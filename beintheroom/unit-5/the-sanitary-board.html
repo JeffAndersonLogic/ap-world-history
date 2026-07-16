@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Sanitary Board | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.9",
+  "unit": "5",
+  "topicTitle": "Society and the Industrial Age",
+  "file": "the-sanitary-board.html",
+  "title": "The *Sanitary Board*",
+  "location": "Manchester civic chamber",
+  "date": "1842",
+  "lessonUrl": "../../unit-5/lesson-5-9-society-and-the-industrial-age.html",
+  "alignment": {
+    "theme": "Social Interactions and Organization (SIO) and Humans and the Environment (ENV)",
+    "objective": "Explain how industrialization changed social hierarchies, household roles, standards of living, and urban environments.",
+    "skill": "Causation and continuity/change",
+    "keyConcepts": [
+      "KC-5.9.I–II",
+      "KC-5.9.II.A–D",
+      "Class, gender, household, and urbanization"
+    ]
+  },
+  "premise": [
+    "Manchester’s population has expanded rapidly around mills, canals, and coal-fired industry. Edwin Chadwick’s sanitary report describes contaminated water, overcrowded housing, and disease among laboring people. Factory owners fear taxes and regulation; workers fear that “improvement” will mean rent increases or displacement.",
+    "The city must decide whether public health is a private household responsibility, a municipal duty, or a condition of industrial productivity. The same industrial city contains middle-class reformers, working-class neighborhoods, and households whose gender and income shape exposure differently.",
+    "You sit on a sanitary board asked to turn evidence about urban disease into a practical program."
+  ],
+  "centralQuestion": "How should an industrial city respond to disease and overcrowding when public health requires collective infrastructure but the costs and benefits are distributed unequally?",
+  "roles": [
+    {
+      "id": "inspector",
+      "name": "Public Health Inspector",
+      "position": "You map disease, water, drains, housing, and mortality across the city.",
+      "power": "You possess evidence and administrative expertise, but the board controls money and enforcement.",
+      "goals": "Build infrastructure that reduces preventable disease.",
+      "fears": "A report without implementation will leave conditions unchanged.",
+      "lens": "Urbanization creates environmental risks that require collective systems.",
+      "preference": "Tax for sewers, clean water, inspections, and transparent reporting.",
+      "blindSpot": "You may assume technical evidence will overcome class conflict."
+    },
+    {
+      "id": "worker",
+      "name": "Working-Class Tenant",
+      "position": "You live near a mill and pay rent from irregular wages while sharing water and privies.",
+      "power": "Residents can petition and organize, but landlords and employers control housing access.",
+      "goals": "Protect family health without losing affordable housing or wages.",
+      "fears": "Improvement taxes and demolition may displace the neighborhood.",
+      "lens": "Standards of living are shaped by wages, housing, gender, and public infrastructure together.",
+      "preference": "Demand safe services, rent safeguards, and worker representation.",
+      "blindSpot": "You may see all municipal authority as a threat after repeated neglect."
+    },
+    {
+      "id": "owner",
+      "name": "Factory Owner and Ratepayer",
+      "position": "You employ workers and pay local taxes while competing in textile markets.",
+      "power": "You can lobby and threaten relocation, but disease also disrupts labor and reputation.",
+      "goals": "Keep taxes predictable and mills operating.",
+      "fears": "Municipal spending will become open-ended regulation of private property.",
+      "lens": "Industrial productivity and urban welfare can conflict but are materially connected.",
+      "preference": "Support targeted sanitation around industrial districts with shared cost.",
+      "blindSpot": "You may ignore how low wages and crowded housing are part of the production system."
+    },
+    {
+      "id": "alderman",
+      "name": "Municipal Alderman",
+      "position": "You balance public pressure, ratepayers, landlords, and the city’s borrowing capacity.",
+      "power": "You can pass bylaws and raise rates, but elections and class interests constrain action.",
+      "goals": "Make a program that voters can see and the treasury can sustain.",
+      "fears": "A costly plan may fail politically while a cheap plan fails medically.",
+      "lens": "Urban reform is a negotiation over who counts as a civic responsibility.",
+      "preference": "Use phased infrastructure with public oversight and neighborhood input.",
+      "blindSpot": "You may compromise so extensively that the most dangerous conditions remain."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "growth",
+      "label": "Rapid Urban Growth",
+      "text": "Industrial towns grew quickly as people moved toward wage work, often faster than housing and services.",
+      "why": "Explains why older municipal systems failed."
+    },
+    {
+      "id": "water",
+      "label": "Contaminated Water",
+      "text": "Shared wells, privies, sewage, and industrial waste allowed disease to spread through urban environments.",
+      "why": "Shows an environmental mechanism rather than blaming individual behavior."
+    },
+    {
+      "id": "chadwick",
+      "label": "Sanitary Report",
+      "text": "Chadwick linked disease and mortality to drainage, cleanliness, and living conditions among laboring populations.",
+      "why": "Provides contemporary reform evidence."
+    },
+    {
+      "id": "class",
+      "label": "Class Geography",
+      "text": "Middle-class districts often had better space, ventilation, and services than working-class neighborhoods.",
+      "why": "Shows unequal standards of living inside one city."
+    },
+    {
+      "id": "women",
+      "label": "Gendered Household Labor",
+      "text": "Women and children carried much of the work of water, illness care, and household survival.",
+      "why": "Connects urban conditions to gender roles."
+    },
+    {
+      "id": "wages",
+      "label": "Wage Constraint",
+      "text": "Low and irregular wages limited tenants’ ability to move, buy fuel, or pay for private sanitation.",
+      "why": "Explains why individual responsibility was insufficient."
+    },
+    {
+      "id": "tax",
+      "label": "Municipal Rates",
+      "text": "Sewers and clean water required taxes, loans, and administrative capacity.",
+      "why": "Makes public health a fiscal and political decision."
+    },
+    {
+      "id": "housing",
+      "label": "Overcrowding",
+      "text": "Rapid population growth produced dense housing and shared facilities that intensified disease risk.",
+      "why": "Links urbanization to social and environmental change."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "infrastructure",
+      "title": "Build the system",
+      "prompt": "Which intervention should lead?",
+      "options": [
+        {
+          "id": "sewer",
+          "title": "Build sewers and clean water",
+          "action": "Borrow for a citywide network with public inspection and maintenance.",
+          "benefits": "Disease risk falls and services become less dependent on private landlords.",
+          "worries": "Debt and construction disrupt neighborhoods and rates rise.",
+          "tradeoff": "Long-term public health requires collective capital."
+        },
+        {
+          "id": "housing",
+          "title": "Improve housing first",
+          "action": "Set occupancy, ventilation, and landlord standards before major infrastructure.",
+          "benefits": "Tenants gain immediate protections and buildings become safer.",
+          "worries": "Disease continues through contaminated water and drainage.",
+          "tradeoff": "Regulation reaches homes but cannot replace city systems."
+        },
+        {
+          "id": "targeted",
+          "title": "Target the worst districts",
+          "action": "Concentrate funds on the highest mortality neighborhoods and industrial zones.",
+          "benefits": "Limited money produces visible gains quickly.",
+          "worries": "Other districts remain vulnerable and political favoritism is likely.",
+          "tradeoff": "Efficiency may undermine equal civic provision."
+        }
+      ]
+    },
+    {
+      "id": "cost",
+      "title": "Assign the cost",
+      "prompt": "Who should finance public health?",
+      "options": [
+        {
+          "id": "rates",
+          "title": "Use municipal rates",
+          "action": "Tax property and businesses through local rates and public borrowing.",
+          "benefits": "The city gains durable infrastructure and accountability.",
+          "worries": "Owners may pass costs into rents or leave the city.",
+          "tradeoff": "Public goods require property holders to accept collective obligation."
+        },
+        {
+          "id": "owner",
+          "title": "Charge industry and landlords",
+          "action": "Place larger fees on mills, landlords, and properties creating concentrated risks.",
+          "benefits": "Those with greater capacity and exposure pay more.",
+          "worries": "Owners challenge the rule and may reduce employment or housing supply.",
+          "tradeoff": "Environmental responsibility is assigned by contribution and power."
+        },
+        {
+          "id": "relief",
+          "title": "Seek central relief",
+          "action": "Ask Parliament for grants and national standards.",
+          "benefits": "Poor cities gain resources and rules become more consistent.",
+          "worries": "Local control weakens and national funds may be delayed.",
+          "tradeoff": "Scale solves fiscal inequality but creates political dependence."
+        }
+      ]
+    },
+    {
+      "id": "displacement",
+      "title": "Protect residents",
+      "prompt": "How should the board handle demolition and relocation?",
+      "options": [
+        {
+          "id": "compensation",
+          "title": "Require compensation and replacement housing",
+          "action": "Pair clearance with rent limits, relocation support, and new affordable units.",
+          "benefits": "Health improvements do not automatically become displacement.",
+          "worries": "Costs rise and construction takes longer.",
+          "tradeoff": "Public health is tied to housing rights and social stability."
+        },
+        {
+          "id": "inspect",
+          "title": "Inspect without clearance",
+          "action": "Keep existing buildings but require ventilation, occupancy, and sanitation fixes.",
+          "benefits": "Residents stay and the city avoids mass displacement.",
+          "worries": "Some structures cannot be made safe without rebuilding.",
+          "tradeoff": "Incremental reform protects continuity but may leave deep defects."
+        },
+        {
+          "id": "clear",
+          "title": "Clear the worst courts quickly",
+          "action": "Demolish the most dangerous housing and let the market rebuild.",
+          "benefits": "Hazards are removed and new investment may arrive.",
+          "worries": "Tenants may lose homes and rents may become unaffordable.",
+          "tradeoff": "Urban improvement can raise aggregate health while worsening inequality."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how industrialization changed social hierarchies, household roles, and standards of living. Use urban public health to show why causes and effects operated at more than one scale.",
+  "sources": [
+    {
+      "label": "Wellcome Collection — Chadwick and the sanitary movement",
+      "url": "https://wellcomecollection.org/articles/WX6l2RAAACQAFc2g"
+    },
+    {
+      "label": "UK Parliament — Public health and the Industrial Revolution",
+      "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/towncountry/towns/overview/publichealth/"
+    },
+    {
+      "label": "British Library — Victorian cities and public health",
+      "url": "https://www.bl.uk/learning/timeline/item126874.html"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

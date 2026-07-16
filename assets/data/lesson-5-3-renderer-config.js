@@ -48,8 +48,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Advise James Watt and Matthew Boulton on the risks of commercializing the steam engine, testify before the Factory Commission as a mill owner defending your labor practices, or join a Luddite cell planning a frame-breaking raid and argue about whether violence or politics is the right response to the power loom."
+    url: '../beintheroom/unit-5/the-factory-commission.html',
+    desc: "Testify at Manchester’s 1833 Factory Commission and decide how Britain can regulate child labor without ignoring wages, industrial competition, or enforcement."
   };
 
   lesson.skillBuilder = {

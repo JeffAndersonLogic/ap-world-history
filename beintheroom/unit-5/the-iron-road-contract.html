@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Iron Road Contract | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.5",
+  "unit": "5",
+  "topicTitle": "Technology of Industrialization",
+  "file": "the-iron-road-contract.html",
+  "title": "The *Iron Road Contract*",
+  "location": "East India Company railway boardroom",
+  "date": "1853",
+  "lessonUrl": "../../unit-5/lesson-5-5-technology-of-industrialization.html",
+  "alignment": {
+    "theme": "Technology and Innovation (TEC) and Economic Systems (ECN)",
+    "objective": "Explain how industrial technologies transformed economic life and affected environments and societies.",
+    "skill": "Causation and contextualization",
+    "keyConcepts": [
+      "KC-5.5.I–II",
+      "KC-5.5.II.A–D",
+      "Railroads, telegraphs, steel, and resource extraction"
+    ]
+  },
+  "premise": [
+    "A railway from Bombay is being planned as steam technology, iron rails, and telegraphy reshape movement. Company officials promise trade, troop mobility, and famine relief; Indian merchants and village leaders ask who will own the land, pay for construction, and control the routes.",
+    "The railway is not only a machine. Its gauge, financing, labor system, and destination will determine whether it integrates Indian markets or mainly moves cotton, troops, and minerals toward ports.",
+    "You must approve a contract that connects technology to power, environmental change, and colonial economic priorities."
+  ],
+  "centralQuestion": "How should a colonial railway be designed and financed when the same technology can integrate markets and provide public benefits while deepening extraction and military control?",
+  "roles": [
+    {
+      "id": "engineer",
+      "name": "Railway Engineer",
+      "position": "You choose gauge, route, bridges, stations, and maintenance standards.",
+      "power": "You control technical plans but depend on colonial budgets, imported steel, and local labor.",
+      "goals": "Build a safe network that can operate across varied terrain.",
+      "fears": "A cheap route may fail, while a strategic route may serve empire more than passengers.",
+      "lens": "Technology works through design choices and institutions, not invention alone.",
+      "preference": "Standardize maintenance and connect major markets with reliable spurs.",
+      "blindSpot": "You may treat land and labor as technical inputs rather than communities with rights."
+    },
+    {
+      "id": "company",
+      "name": "Company Finance Official",
+      "position": "You defend guaranteed returns to British investors and the colonial treasury.",
+      "power": "You control contracts and accounting, but political criticism can threaten the guarantee.",
+      "goals": "Keep capital flowing and make the railway pay.",
+      "fears": "Public costs rise while local benefits remain hard to measure.",
+      "lens": "Infrastructure can become a financial mechanism for imperial power.",
+      "preference": "Use port-to-interior routes with guaranteed returns and freight priority.",
+      "blindSpot": "You may define “efficiency” by investor revenue rather than social welfare."
+    },
+    {
+      "id": "merchant",
+      "name": "Indian Cotton Merchant",
+      "position": "You want cheaper, faster movement between inland producers, mills, and ports.",
+      "power": "You know regional markets and can shift trade, but company rules and tariffs constrain you.",
+      "goals": "Expand Indian commercial autonomy and reduce transport bottlenecks.",
+      "fears": "The railway may export raw cotton while imported cloth destroys local industry.",
+      "lens": "Market integration can be unequal when colonial trade policy sets the terms.",
+      "preference": "Demand freight access, fair rates, and routes serving Indian markets.",
+      "blindSpot": "You may assume market access alone can overcome imperial tariff power."
+    },
+    {
+      "id": "village",
+      "name": "Village Head and Landholder",
+      "position": "You negotiate land, labor, water, and compensation along the proposed line.",
+      "power": "Local cooperation can delay construction, but colonial officials can use law and police.",
+      "goals": "Protect fields, wells, homes, and community authority.",
+      "fears": "Acquisition and labor recruitment may dispossess families.",
+      "lens": "Industrial technology remakes landscapes and social power.",
+      "preference": "Require consent, compensation, and local stations before construction.",
+      "blindSpot": "You may not be able to stop a project backed by the colonial state and army."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "rail",
+      "label": "Bombay–Thane Railway",
+      "text": "The first passenger railway in India opened in 1853 under colonial sponsorship.",
+      "why": "Places the decision in the technology’s early colonial setting."
+    },
+    {
+      "id": "guarantee",
+      "label": "Guaranteed Returns",
+      "text": "British railway companies often received state-backed guarantees that shifted risk to colonial revenue.",
+      "why": "Shows finance shaping infrastructure."
+    },
+    {
+      "id": "cotton",
+      "label": "Raw Cotton Export",
+      "text": "Railways connected cotton-growing regions to ports and British mills during industrial expansion.",
+      "why": "Links transport to global commodity chains."
+    },
+    {
+      "id": "troops",
+      "label": "Military Mobility",
+      "text": "Railways and telegraphs allowed colonial armies to move troops and information more rapidly.",
+      "why": "Shows a political and coercive function beyond trade."
+    },
+    {
+      "id": "gauge",
+      "label": "Gauge Choice",
+      "text": "Different gauges reflected cost, terrain, speed, and military priorities and created compatibility problems.",
+      "why": "Demonstrates that technical standards are political choices."
+    },
+    {
+      "id": "labor",
+      "label": "Construction Labor",
+      "text": "Railways required large labor forces and exposed workers to dangerous conditions, disease, and unequal wages.",
+      "why": "Connects technology to social relations."
+    },
+    {
+      "id": "famine",
+      "label": "Famine Debate",
+      "text": "Railways could move grain and relief but did not automatically end scarcity when markets and policy failed.",
+      "why": "Prevents technological determinism."
+    },
+    {
+      "id": "telegraph",
+      "label": "Telegraph Network",
+      "text": "Telegraph lines made imperial administration and commercial information faster across distance.",
+      "why": "Shows a second technology reinforcing the railway."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "route",
+      "title": "Choose the route",
+      "prompt": "What should the first line prioritize?",
+      "options": [
+        {
+          "id": "port",
+          "title": "Port-to-cotton corridor",
+          "action": "Connect inland cotton to Bombay with the shortest freight route.",
+          "benefits": "Investors and exporters receive rapid returns.",
+          "worries": "Indian manufacturing and local markets remain secondary.",
+          "tradeoff": "Commercial speed reinforces colonial extraction."
+        },
+        {
+          "id": "market",
+          "title": "Interregional market network",
+          "action": "Connect producing regions, cities, and food markets before extending to ports.",
+          "benefits": "Indian merchants and consumers gain wider access.",
+          "worries": "Costs rise and investor returns arrive more slowly.",
+          "tradeoff": "Public integration competes with colonial export priorities."
+        },
+        {
+          "id": "relief",
+          "title": "Relief and strategic corridor",
+          "action": "Build routes that can move grain and troops to vulnerable regions.",
+          "benefits": "The state gains crisis capacity and administrative reach.",
+          "worries": "Military control may dominate the public-relief justification.",
+          "tradeoff": "Security and welfare share infrastructure but not necessarily power."
+        }
+      ]
+    },
+    {
+      "id": "contract",
+      "title": "Write the contract",
+      "prompt": "How should the railway’s financial risk be allocated?",
+      "options": [
+        {
+          "id": "guarantee",
+          "title": "Keep the investor guarantee",
+          "action": "Promise returns from colonial revenue to attract British capital.",
+          "benefits": "Construction starts quickly and firms can borrow.",
+          "worries": "Indian taxpayers carry losses and firms have weak cost discipline.",
+          "tradeoff": "Speed and capital come at the price of fiscal sovereignty."
+        },
+        {
+          "id": "public",
+          "title": "Use public ownership",
+          "action": "Finance construction through colonial revenue and retain control of fares and freight.",
+          "benefits": "The state can set broader social priorities.",
+          "worries": "Debt and administrative capacity constrain the network.",
+          "tradeoff": "Public control may serve empire as effectively as private firms."
+        },
+        {
+          "id": "share",
+          "title": "Create a shared board",
+          "action": "Give Indian merchants and local authorities formal seats and revenue shares.",
+          "benefits": "Local knowledge and accountability improve the project.",
+          "worries": "The company and colonial state may block meaningful power sharing.",
+          "tradeoff": "Inclusion increases legitimacy but slows decisions."
+        }
+      ]
+    },
+    {
+      "id": "land",
+      "title": "Protect affected communities",
+      "prompt": "What safeguards should the board require?",
+      "options": [
+        {
+          "id": "compensation",
+          "title": "Compensate land and labor",
+          "action": "Pay transparent rates, protect water access, and publish work conditions.",
+          "benefits": "Communities gain material protection and information.",
+          "worries": "Costs increase and officials may evade enforcement.",
+          "tradeoff": "Rights make infrastructure more expensive but more legitimate."
+        },
+        {
+          "id": "consult",
+          "title": "Require local consent",
+          "action": "Let village councils approve routes and stations before acquisition.",
+          "benefits": "Local authority and environmental knowledge shape design.",
+          "worries": "Projects can stall and colonial officials may override councils.",
+          "tradeoff": "Participation limits speed while reducing dispossession."
+        },
+        {
+          "id": "minimal",
+          "title": "Use existing colonial law",
+          "action": "Apply the acquisition and labor rules already on the books.",
+          "benefits": "The project remains administratively simple.",
+          "worries": "Existing rules may protect investors more than communities.",
+          "tradeoff": "Predictability preserves an unequal legal baseline."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how one industrial technology caused both economic integration and unequal power. Use the railway’s route, finance, or labor system as your mechanism.",
+  "sources": [
+    {
+      "label": "Encyclopaedia Britannica — Indian railway history",
+      "url": "https://www.britannica.com/technology/railroad/India"
+    },
+    {
+      "label": "British Library — Railways and colonial India",
+      "url": "https://www.bl.uk/learning/timeline/item126876.html"
+    },
+    {
+      "label": "Library of Congress — India and the British Empire",
+      "url": "https://www.loc.gov/item/2021668726/"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

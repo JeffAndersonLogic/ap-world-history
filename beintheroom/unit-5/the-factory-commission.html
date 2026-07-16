@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Factory Commission | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.3",
+  "unit": "5",
+  "topicTitle": "The Industrial Revolution Begins",
+  "file": "the-factory-commission.html",
+  "title": "The *Factory Commission*",
+  "location": "Parliamentary hearing, Manchester",
+  "date": "1833",
+  "lessonUrl": "../../unit-5/lesson-5-3-industrial-revolution-begins.html",
+  "alignment": {
+    "theme": "Economic Systems (ECN) and Social Interactions (SIO)",
+    "objective": "Explain the causes and effects of the Industrial Revolution in Britain.",
+    "skill": "Causation and argumentation",
+    "keyConcepts": [
+      "KC-5.3.I–II",
+      "KC-5.3.II.A–C",
+      "Coal, steam, factories, and urban labor"
+    ]
+  },
+  "premise": [
+    "Parliament is deciding whether to regulate textile factories after testimony describes children working long hours around dangerous machinery. Mill owners argue that cheap production supports Britain’s global trade and that families depend on wages.",
+    "The hearing sits at the intersection of coal, steam power, factory discipline, urban migration, household poverty, and emerging reform politics. A law can reduce immediate harm but may push production elsewhere or cut the income of families with few alternatives.",
+    "You must recommend the scope of inspection, age limits, and hours without pretending industrialization has one cause or one social effect."
+  ],
+  "centralQuestion": "How should Britain regulate factory labor when industrial production creates wealth and employment but also concentrates risk, long hours, and child exploitation?",
+  "roles": [
+    {
+      "id": "owner",
+      "name": "Cotton Mill Owner",
+      "position": "You run a steam-powered mill competing in national and export markets.",
+      "power": "You control machinery, hiring, and schedules, but Parliament can regulate the factory and customers can shift orders.",
+      "goals": "Keep production efficient and avoid collapse or relocation.",
+      "fears": "Strict rules may raise costs while competitors ignore them.",
+      "lens": "Industrialization rewards capital investment and turns time discipline into profit.",
+      "preference": "Support basic inspection and gradual limits tied to productivity.",
+      "blindSpot": "You may describe family dependence on wages without sharing the risks your system imposes."
+    },
+    {
+      "id": "worker",
+      "name": "Young Mill Worker",
+      "position": "You work around machinery and contribute wages to a household.",
+      "power": "Your testimony can influence reform, but dismissal or retaliation remains possible.",
+      "goals": "Reduce hours and injury while preserving a viable income.",
+      "fears": "A law may remove your job without providing food, schooling, or land.",
+      "lens": "Working-class experience reveals the human mechanism behind industrial growth.",
+      "preference": "Demand enforceable hours, safety, and schooling without wage loss.",
+      "blindSpot": "You may not know which enforcement design can work across thousands of mills."
+    },
+    {
+      "id": "inspector",
+      "name": "Factory Commission Inspector",
+      "position": "You collect testimony and translate parliamentary rules into inspections.",
+      "power": "You can document violations, but the state has few inspectors for a rapidly expanding industry.",
+      "goals": "Create a rule that can actually be enforced.",
+      "fears": "A weak law will legitimate abuse; an impossible law will be ignored.",
+      "lens": "Reform depends on institutions, records, and enforcement—not sympathy alone.",
+      "preference": "Require age records, machine safeguards, and independent inspections.",
+      "blindSpot": "You may underestimate how employers and families can evade paperwork."
+    },
+    {
+      "id": "merchant",
+      "name": "Manchester Export Merchant",
+      "position": "You finance cotton purchases and sell cloth in global markets.",
+      "power": "You can redirect orders and credit, but you depend on low prices and reliable supply.",
+      "goals": "Protect Britain’s competitive position while avoiding scandals that threaten trade.",
+      "fears": "Costs rise or foreign manufacturers gain an advantage.",
+      "lens": "Industrial capitalism links local labor conditions to global markets and empire.",
+      "preference": "Support common standards among major mills and predictable transition costs.",
+      "blindSpot": "You may treat global demand as an unavoidable force rather than a political choice."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "coal",
+      "label": "Coal and Steam",
+      "text": "Coal deposits, steam engines, and transport networks made concentrated factory production possible.",
+      "why": "Explains why Britain could power large-scale industry."
+    },
+    {
+      "id": "capital",
+      "label": "Commercial Capital",
+      "text": "Atlantic trade, finance, and markets supplied investment for machinery and mills.",
+      "why": "Connects industrialization to earlier commercial expansion."
+    },
+    {
+      "id": "factory",
+      "label": "Factory Discipline",
+      "text": "Factories synchronized labor to machines, clocks, supervisors, and production schedules.",
+      "why": "Shows the mechanism transforming work and time."
+    },
+    {
+      "id": "child",
+      "label": "Child Labor Testimony",
+      "text": "Parliamentary testimony described very young workers laboring long hours in dangerous mills.",
+      "why": "Provides direct evidence of social cost."
+    },
+    {
+      "id": "urban",
+      "label": "Urban Migration",
+      "text": "People moved toward industrial towns for wage work, producing rapid population growth.",
+      "why": "Links factories to urbanization and housing pressure."
+    },
+    {
+      "id": "wages",
+      "label": "Household Wages",
+      "text": "Families often combined women’s and children’s wages to survive in industrial towns.",
+      "why": "Explains why reform could threaten as well as protect households."
+    },
+    {
+      "id": "patent",
+      "label": "Patent Incentives",
+      "text": "Patent protection and investment rewards encouraged inventors and owners to improve machinery.",
+      "why": "Shows political institutions shaping technology."
+    },
+    {
+      "id": "reform",
+      "label": "Factory Act Debate",
+      "text": "Reformers increasingly argued that the state could regulate working time and childhood without ending industry.",
+      "why": "Places regulation inside the period’s political choices."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "hours",
+      "title": "Set the workday",
+      "prompt": "What limits should Parliament impose?",
+      "options": [
+        {
+          "id": "minimal",
+          "title": "Keep regulation minimal",
+          "action": "Require only a low age threshold and voluntary employer standards.",
+          "benefits": "Mills retain flexibility and families keep access to wage work.",
+          "worries": "The most vulnerable workers remain exposed.",
+          "tradeoff": "Competitive production is protected by leaving harm largely private."
+        },
+        {
+          "id": "tenhour",
+          "title": "Adopt a ten-hour limit",
+          "action": "Cap hours for young workers and create a transition period for mills.",
+          "benefits": "Children gain time for rest and schooling while factories remain open.",
+          "worries": "Enforcement and household income become difficult problems.",
+          "tradeoff": "Reform reduces exploitation without replacing the wage system."
+        },
+        {
+          "id": "eight",
+          "title": "Set an eight-hour youth limit",
+          "action": "Limit children’s hours sharply and require a school component.",
+          "benefits": "The state draws a clear boundary around childhood labor.",
+          "worries": "Families and owners may evade the law or lose income.",
+          "tradeoff": "Long-term human development is prioritized over immediate output."
+        }
+      ]
+    },
+    {
+      "id": "inspection",
+      "title": "Design enforcement",
+      "prompt": "Who should make the law credible?",
+      "options": [
+        {
+          "id": "owners",
+          "title": "Leave enforcement to owners",
+          "action": "Require mills to certify compliance and punish only repeated public violations.",
+          "benefits": "Costs stay low and employers retain autonomy.",
+          "worries": "The people profiting from labor judge their own conduct.",
+          "tradeoff": "Efficiency and privacy undermine accountability."
+        },
+        {
+          "id": "inspectors",
+          "title": "Create independent inspectors",
+          "action": "Fund inspectors with power to enter mills, check ages, and record injuries.",
+          "benefits": "Evidence can make standards real across competing factories.",
+          "worries": "The state must pay and employers may resist intrusion.",
+          "tradeoff": "Effective oversight requires new government capacity."
+        },
+        {
+          "id": "local",
+          "title": "Use local committees",
+          "action": "Give towns committees of workers, owners, doctors, and magistrates authority to inspect.",
+          "benefits": "Local knowledge may reveal conditions quickly.",
+          "worries": "Class conflict and uneven towns produce inconsistent rules.",
+          "tradeoff": "Participation expands legitimacy but sacrifices uniformity."
+        }
+      ]
+    },
+    {
+      "id": "income",
+      "title": "Protect household income",
+      "prompt": "How should reform address wages and family survival?",
+      "options": [
+        {
+          "id": "wage",
+          "title": "Require wage guarantees",
+          "action": "Tie reduced hours to minimum family wages or employer compensation.",
+          "benefits": "Families are less likely to lose food when hours fall.",
+          "worries": "Employers may raise prices or replace workers with machines.",
+          "tradeoff": "Protection shifts costs toward owners and consumers."
+        },
+        {
+          "id": "school",
+          "title": "Fund working-class schooling",
+          "action": "Use public funds and employer contributions for schools and relief.",
+          "benefits": "Children gain alternatives to mill work over time.",
+          "worries": "Taxpayers and owners dispute the cost.",
+          "tradeoff": "Long-term mobility requires collective investment."
+        },
+        {
+          "id": "none",
+          "title": "Separate labor law from poverty relief",
+          "action": "Regulate the workplace but leave household income to wages and charity.",
+          "benefits": "The law remains simpler and cheaper.",
+          "worries": "Families bear the adjustment and may evade protections.",
+          "tradeoff": "Administrative clarity leaves structural poverty unresolved."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain two interacting causes of Britain’s Industrial Revolution and one effect on workers or urban society. Use the factory dilemma to show why industrialization created both wealth and inequality.",
+  "sources": [
+    {
+      "label": "UK Parliament — Factory Act 1833",
+      "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/"
+    },
+    {
+      "label": "British Library — The Industrial Revolution",
+      "url": "https://www.bl.uk/learning/timeline/item126878.html"
+    },
+    {
+      "label": "UK Parliament — Child labour and the factory system",
+      "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/childlabour/"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

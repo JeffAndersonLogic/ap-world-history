@@ -84,8 +84,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Debate the mita system with Viceroy Toledo at the court of Philip II, manage silver production as a Potosí mine foreman, or trace a single silver shipment from Potosí to Manila as a Dutch merchant."
+    url: '../beintheroom/unit-4/the-potosi-production-order.html',
+    desc: 'Reorganize Potosí in 1573: connect labor, mercury, royal taxation, and Atlantic-Pacific silver flows while confronting the community and environmental costs of imperial extraction.'
   };
 
   lesson.skillBuilder = {

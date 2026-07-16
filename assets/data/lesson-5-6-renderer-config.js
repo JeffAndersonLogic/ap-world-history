@@ -66,8 +66,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Testify before a Parliamentary committee investigating factory conditions, debate Karl Marx about whether reform or revolution is the path to workers' justice, or advise Bismarck on which social insurance program to introduce first — and which working-class grievances are most dangerous to ignore."
+    url: '../beintheroom/unit-5/the-factory-question.html',
+    desc: "Join an 1880s Reichstag committee and compare liberal, conservative, socialist, and women’s reform responses to industrial class conflict."
   };
 
   lesson.skillBuilder = {

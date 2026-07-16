@@ -78,8 +78,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Navigate the Estado da India from a Portuguese factor's perspective at Goa, argue the ethics of the encomienda system with Bartolomé de las Casas, or manage the VOC's Spice Islands trade network from Batavia."
+    url: '../beintheroom/unit-4/the-goa-fort-council.html',
+    desc: 'Shape the Estado da Índia after Albuquerque: choose between forts, territory, treaties, sea passes, and local accommodation in an Indian Ocean whose established merchants remain indispensable.'
   };
 
   lesson.skillBuilder = {

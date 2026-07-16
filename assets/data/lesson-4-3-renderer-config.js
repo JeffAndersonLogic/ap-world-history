@@ -66,8 +66,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: 'Step into Tenochtitlan during the smallpox epidemic of 1520, navigate the economic logic of the Atlantic slave trade, or examine the transformation of European diets as New World crops spread across the globe.'
+    url: '../beintheroom/unit-4/the-replanting-council.html',
+    desc: 'Rebuild the Valley of Mexico after war and smallpox while weighing food security, introduced animals, land claims, labor coercion, and the unequal effects of biological exchange.'
   };
 
   lesson.skillBuilder = {

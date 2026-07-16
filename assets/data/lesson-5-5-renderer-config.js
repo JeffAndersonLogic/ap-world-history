@@ -54,8 +54,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: "Testify before a Parliamentary committee investigating child labor in coal mines, negotiate as a rubber baron with a Force Publique officer in the Congo, or advise the Central Pacific Railroad on whether to break the Chinese workers' strike — or meet their demands."
+    url: '../beintheroom/unit-5/the-iron-road-contract.html',
+    desc: "Approve an 1853 colonial railway contract in India and weigh market integration, extraction, military mobility, finance, land, and labor."
   };
 
   lesson.skillBuilder = {

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Meiji Investment Ledger | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.4",
+  "unit": "5",
+  "topicTitle": "Industrialization Spreads",
+  "file": "the-meiji-investment-ledger.html",
+  "title": "The *Meiji Investment Ledger*",
+  "location": "Tokyo, Imperial Japan",
+  "date": "1872",
+  "lessonUrl": "../../unit-5/lesson-5-4-industrialization-spreads.html",
+  "alignment": {
+    "theme": "Economic Systems (ECN) and Governance (GOV)",
+    "objective": "Explain how and why industrialization spread to Europe, North America, and Japan and remained limited elsewhere.",
+    "skill": "Comparison and causation",
+    "keyConcepts": [
+      "KC-5.4.I–II",
+      "KC-5.4.II.A–C",
+      "State-led industrialization and uneven development"
+    ]
+  },
+  "premise": [
+    "Meiji leaders have overthrown the Tokugawa shogunate and fear unequal treaties, military vulnerability, and foreign economic domination. They must decide how quickly to build railways, factories, schools, and a modern army while taxing a mostly rural population.",
+    "Japan can borrow foreign technology without simply becoming a colony, but the state’s choices will redistribute land, labor, and status. Former samurai, merchants, farmers, and factory workers do not experience “modernization” in the same way.",
+    "You sit on an investment council in 1872. Your ledger must show how a state can select, finance, and adapt industrial technologies rather than merely import machines."
+  ],
+  "centralQuestion": "How should Meiji Japan sequence state investment, foreign knowledge, taxation, and labor reform to industrialize while preserving sovereignty?",
+  "roles": [
+    {
+      "id": "official",
+      "name": "Meiji Finance Official",
+      "position": "You allocate scarce taxes and foreign loans among railways, factories, schools, and defense.",
+      "power": "You control budgets and appointments, but rural taxpayers and rival ministries can resist.",
+      "goals": "Build state capacity fast enough to avoid subordination.",
+      "fears": "Debt, inflation, or rural revolt may destroy legitimacy.",
+      "lens": "Industrialization spreads through institutions, finance, and policy choices as well as machines.",
+      "preference": "Prioritize transport, education, and strategic industry in a staged plan.",
+      "blindSpot": "You may treat social disruption as a temporary cost that the state can simply command away."
+    },
+    {
+      "id": "samurai",
+      "name": "Former Samurai Officer",
+      "position": "You seek a place in the new army and bureaucracy after hereditary status declines.",
+      "power": "You have literacy, networks, and military experience, but stipends and privileges are being removed.",
+      "goals": "Preserve honor and national strength.",
+      "fears": "Rapid commercialization may erase your class without creating meaningful public voice.",
+      "lens": "Political revolution changes who can claim status and service.",
+      "preference": "Tie national service to education and professional advancement.",
+      "blindSpot": "You may mistake former privilege for merit and overlook peasants’ burden."
+    },
+    {
+      "id": "merchant",
+      "name": "Osaka Merchant Investor",
+      "position": "You finance mills, shipping, and imported machinery as old restrictions loosen.",
+      "power": "You possess capital and commercial knowledge, but the state can favor selected firms.",
+      "goals": "Gain predictable law and profitable infrastructure.",
+      "fears": "State monopolies or foreign firms may crowd out independent enterprise.",
+      "lens": "Industrial capitalism depends on private capital working with state power.",
+      "preference": "Use public infrastructure with competitive private investment.",
+      "blindSpot": "You may treat wage labor and land taxes as neutral market adjustments."
+    },
+    {
+      "id": "farmer",
+      "name": "Rural Taxpayer and Village Head",
+      "position": "You represent villages paying the new land tax and supplying labor to cities.",
+      "power": "You can organize petitions and local resistance, but the central state has police and conscription.",
+      "goals": "Keep land, food security, and community autonomy.",
+      "fears": "Tax burdens and military service may force debt and migration.",
+      "lens": "Industrialization can be financed by rural extraction before its benefits return.",
+      "preference": "Slow the program and protect village credit and grain reserves.",
+      "blindSpot": "You may understate the external military threat that drives state urgency."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "charter",
+      "label": "Charter Oath",
+      "text": "The Meiji government promised to seek knowledge throughout the world while strengthening imperial rule.",
+      "why": "Shows selective borrowing tied to sovereignty."
+    },
+    {
+      "id": "treaties",
+      "label": "Unequal Treaties",
+      "text": "Foreign powers held treaty privileges and constrained Japan’s tariff and diplomatic autonomy.",
+      "why": "Explains why modernization became a security project."
+    },
+    {
+      "id": "iwakura",
+      "label": "Foreign Mission",
+      "text": "Japanese officials studied institutions, education, military systems, and industry abroad.",
+      "why": "Shows knowledge transfer through deliberate state observation."
+    },
+    {
+      "id": "rail",
+      "label": "Railway Construction",
+      "text": "The first railway linked Tokyo and Yokohama in 1872 with foreign engineering and Japanese state sponsorship.",
+      "why": "Demonstrates infrastructure as a strategic investment."
+    },
+    {
+      "id": "tax",
+      "label": "Land Tax Reform",
+      "text": "A monetized land tax supplied state revenue but placed new burdens on rural producers.",
+      "why": "Connects industrialization to agrarian extraction."
+    },
+    {
+      "id": "factories",
+      "label": "Model Factories",
+      "text": "The state established model enterprises and later sold or transferred many to private firms.",
+      "why": "Shows state-led industrial takeoff and privatization."
+    },
+    {
+      "id": "education",
+      "label": "Compulsory Schooling",
+      "text": "Mass schooling created literate workers, officials, and soldiers while reshaping local life.",
+      "why": "Explains why human capital mattered alongside machines."
+    },
+    {
+      "id": "zaibatsu",
+      "label": "Concentrated Capital",
+      "text": "Selected merchant families and firms became major industrial partners of the state.",
+      "why": "Shows uneven distribution of industrial gains."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "sequence",
+      "title": "Choose the first investment",
+      "prompt": "Which investment should anchor the program?",
+      "options": [
+        {
+          "id": "rail",
+          "title": "Railways and ports first",
+          "action": "Connect mines, farms, factories, and military sites before expanding consumer industry.",
+          "benefits": "Transport lowers costs and lets later investments scale.",
+          "worries": "Rural communities lose land and the network may serve extraction.",
+          "tradeoff": "Infrastructure creates capacity while redistributing power."
+        },
+        {
+          "id": "education",
+          "title": "Schools and technical training first",
+          "action": "Build a broad education system before committing to heavy industry.",
+          "benefits": "Japan develops adaptable workers and officials.",
+          "worries": "Foreign threats and military vulnerability remain immediate.",
+          "tradeoff": "Human capital promises autonomy but takes time."
+        },
+        {
+          "id": "military",
+          "title": "Army and strategic industry first",
+          "action": "Prioritize weapons, arsenals, and shipyards to deter foreign coercion.",
+          "benefits": "The state can protect sovereignty and bargain from strength.",
+          "worries": "Civilian needs and rural welfare may be sacrificed.",
+          "tradeoff": "Security accelerates industrialization through command and demand."
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "title": "Fund modernization",
+      "prompt": "How should the state pay for the program?",
+      "options": [
+        {
+          "id": "tax",
+          "title": "Raise the land tax",
+          "action": "Use predictable rural taxation to finance public investment.",
+          "benefits": "The state gains domestic revenue and avoids foreign dependence.",
+          "worries": "Farmers face debt, protest, and unequal burdens.",
+          "tradeoff": "Sovereignty is funded through agrarian extraction."
+        },
+        {
+          "id": "loan",
+          "title": "Borrow abroad selectively",
+          "action": "Take foreign loans for railways and equipment while protecting policy autonomy.",
+          "benefits": "Investment arrives faster and expertise becomes available.",
+          "worries": "Debt and foreign leverage may reproduce dependency.",
+          "tradeoff": "Speed increases financial vulnerability."
+        },
+        {
+          "id": "firms",
+          "title": "Partner with merchant firms",
+          "action": "Give private investors concessions in exchange for capital and infrastructure.",
+          "benefits": "Commercial knowledge and risk are shared.",
+          "worries": "Concentrated firms gain political power and public resources.",
+          "tradeoff": "Growth depends on a state-business alliance."
+        }
+      ]
+    },
+    {
+      "id": "labor",
+      "title": "Manage social change",
+      "prompt": "What should happen to displaced workers and former status groups?",
+      "options": [
+        {
+          "id": "service",
+          "title": "Channel them into national service",
+          "action": "Use schools, army, and bureaucracy to absorb former samurai and rural youth.",
+          "benefits": "The state gains skilled personnel and social discipline.",
+          "worries": "Military-bureaucratic identity can suppress dissent.",
+          "tradeoff": "Integration strengthens the state while narrowing pluralism."
+        },
+        {
+          "id": "rights",
+          "title": "Protect labor and land rights",
+          "action": "Recognize unions, village petitions, and safeguards as industry expands.",
+          "benefits": "Workers and taxpayers gain a lawful channel for conflict.",
+          "worries": "Investors may slow expansion and officials fear disorder.",
+          "tradeoff": "Legitimacy may cost speed and centralized control."
+        },
+        {
+          "id": "market",
+          "title": "Let markets reallocate labor",
+          "action": "Allow migration, wage competition, and firm decisions to determine adjustment.",
+          "benefits": "Industry can expand rapidly and reward productive enterprise.",
+          "worries": "The poorest bear displacement and regional inequality.",
+          "tradeoff": "Efficiency increases while social protection remains thin."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Compare Japan’s state-led industrialization with Britain’s earlier path. Explain one similarity, one difference, and how sovereignty or colonial status shaped each path.",
+  "sources": [
+    {
+      "label": "Encyclopaedia Britannica — Meiji Restoration",
+      "url": "https://www.britannica.com/event/Meiji-Restoration"
+    },
+    {
+      "label": "National Diet Library — Meiji Constitution and modernization resources",
+      "url": "https://www.ndl.go.jp/constitution/e/index.html"
+    },
+    {
+      "label": "Library of Congress — Japan: Meiji period",
+      "url": "https://www.loc.gov/item/2021668703/"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

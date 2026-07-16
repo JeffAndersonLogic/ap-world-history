@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The War Production Board | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "7.7",
+  "unit": "7",
+  "topicTitle": "Conducting World War II",
+  "file": "the-war-production-board.html",
+  "title": "The *War Production Board*",
+  "location": "Washington, D.C.",
+  "date": "1942",
+  "lessonUrl": "../../unit-7/lesson-7-7-conducting-wwii.html",
+  "alignment": {
+    "theme": "Governance (GOV), Economic Systems (ECN), and Technology and Innovation (TEC)",
+    "objective": "Explain how governments mobilized populations and resources and how technology shaped the conduct of World War II.",
+    "skill": "Causation and comparison",
+    "keyConcepts": [
+      "KC-6.2.IV.E–F",
+      "Total war and state mobilization",
+      "Industrial production and civilian sacrifice"
+    ]
+  },
+  "premise": [
+    "After Pearl Harbor, the United States must convert civilian industry to aircraft, ships, vehicles, weapons, and supplies. The federal government can allocate materials and contracts, but production depends on private factories, organized labor, women and minority workers, rationing, and public consent.",
+    "Mobilization creates jobs and expands state power while also preserving discrimination, enabling internment, limiting strikes, and redirecting household consumption. Democratic institutions are conducting total war with methods that can resemble command economies in scale even when ownership remains private.",
+    "You must set quotas, labor rules, civilian rationing, and accountability for a mobilization measured in both output and rights."
+  ],
+  "centralQuestion": "How should a democratic government mobilize industry and civilians for total war while controlling inflation, protecting labor, and preventing emergency power from erasing civil rights?",
+  "roles": [
+    {
+      "id": "planner",
+      "name": "Federal Production Planner",
+      "position": "You allocate steel, rubber, fuel, machine tools, and contracts across military priorities.",
+      "power": "You can set quotas and prohibit civilian products, but agencies, services, and firms compete for resources.",
+      "goals": "Reach decisive output rapidly without losing coordination or public trust.",
+      "fears": "Bottlenecks, inflation, or corruption could waste the industrial advantage.",
+      "lens": "Total war expands government direction even in market economies.",
+      "preference": "Use centralized priorities, transparent metrics, and flexible regional conversion.",
+      "blindSpot": "You may reduce people and communities to production inputs."
+    },
+    {
+      "id": "owner",
+      "name": "Automobile Factory Executive",
+      "position": "You must retool assembly lines from cars to tanks, engines, and aircraft components.",
+      "power": "You control facilities and managers, but contracts, materials, and labor policy are federal.",
+      "goals": "Meet quotas while preserving the firm’s workforce and postwar future.",
+      "fears": "Cost-plus contracts may invite waste; rigid quotas may ignore technical reality.",
+      "lens": "Private ownership and public planning can become deeply interdependent.",
+      "preference": "Accept conversion with negotiated schedules and audited costs.",
+      "blindSpot": "You may treat public risk as a reason to protect private profit."
+    },
+    {
+      "id": "labor",
+      "name": "Industrial Union Representative",
+      "position": "You bargain for workers facing long hours, hazards, inflation, and no-strike pressure.",
+      "power": "Labor is indispensable and organized, but wartime patriotism and law constrain strikes.",
+      "goals": "Win safety, fair wages, grievance procedures, and equal access to skilled jobs.",
+      "fears": "Workers may be asked to sacrifice rights while corporations receive guaranteed contracts.",
+      "lens": "Mobilization is a social bargain, not only an output target.",
+      "preference": "Support a no-strike pledge only with binding arbitration and wage review.",
+      "blindSpot": "You may underestimate the operational cost of work stoppages during crisis."
+    },
+    {
+      "id": "civilrights",
+      "name": "Civil Rights and Community Advocate",
+      "position": "You represent Black workers, women workers, Japanese Americans, and communities affected by emergency policy.",
+      "power": "Public campaigns can expose contradiction, but security claims and discrimination limit access.",
+      "goals": "Make the fight against fascism credible through equal treatment at home.",
+      "fears": "Mobilization may widen employment while entrenching segregation and internment.",
+      "lens": "Total war can accelerate social change and state coercion at the same time.",
+      "preference": "Tie contracts to nondiscrimination and independent civil-rights review.",
+      "blindSpot": "You may not fully resolve conflicts among groups with different immediate harms."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "conversion",
+      "label": "Industrial Conversion",
+      "text": "Automobile and consumer factories shifted toward aircraft, vehicles, ships, weapons, and military supplies.",
+      "why": "Shows industrial capacity becoming strategic power."
+    },
+    {
+      "id": "wpb",
+      "label": "War Production Board",
+      "text": "Federal agencies allocated materials, set priorities, and coordinated private production.",
+      "why": "Demonstrates expanded state economic direction."
+    },
+    {
+      "id": "ration",
+      "label": "Rationing",
+      "text": "Households faced controls on gasoline, rubber, sugar, meat, and other goods.",
+      "why": "Connects civilians directly to total war."
+    },
+    {
+      "id": "women",
+      "label": "Women in War Work",
+      "text": "Millions of women entered industrial and military-support roles during mobilization.",
+      "why": "Shows changing gender roles under wartime demand."
+    },
+    {
+      "id": "doublev",
+      "label": "Double V Campaign",
+      "text": "Black Americans linked victory against fascism abroad to victory against racism at home.",
+      "why": "Exposes the democratic contradiction."
+    },
+    {
+      "id": "internment",
+      "label": "Japanese American Internment",
+      "text": "The government incarcerated people of Japanese ancestry without individualized evidence of disloyalty.",
+      "why": "Shows emergency power violating civil rights."
+    },
+    {
+      "id": "labor",
+      "label": "No-Strike Pledge",
+      "text": "Major unions limited strikes while using boards and bargaining to address wages and conditions.",
+      "why": "Shows labor participation and constraint."
+    },
+    {
+      "id": "technology",
+      "label": "Strategic Technology",
+      "text": "Radar, codebreaking, aircraft, naval production, and ultimately atomic weapons changed military conduct.",
+      "why": "Connects industrial mobilization to battlefield capability."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "production",
+      "title": "Set production control",
+      "prompt": "How should the board allocate contracts and materials?",
+      "options": [
+        {
+          "id": "central",
+          "title": "Central quotas and allocation",
+          "action": "Set national priorities, prohibit low-priority civilian output, and direct scarce materials.",
+          "benefits": "Resources move rapidly toward strategic needs.",
+          "worries": "Local knowledge and innovation may be ignored.",
+          "tradeoff": "Coordination increases output through concentrated authority."
+        },
+        {
+          "id": "competitive",
+          "title": "Competitive contracts",
+          "action": "Let firms bid on goals while the board audits cost, quality, and deadlines.",
+          "benefits": "Competition may improve innovation and price discipline.",
+          "worries": "Emergency speed and unequal firm capacity limit real competition.",
+          "tradeoff": "Market mechanisms survive inside heavy public direction."
+        },
+        {
+          "id": "regional",
+          "title": "Regional conversion boards",
+          "action": "Give federal targets to mixed local boards of firms, labor, and government.",
+          "benefits": "Local bottlenecks and workforce needs receive attention.",
+          "worries": "Standards vary and services compete across regions.",
+          "tradeoff": "Participation improves adaptation but complicates command."
+        }
+      ]
+    },
+    {
+      "id": "labor",
+      "title": "Write the labor compact",
+      "prompt": "What should workers receive for wartime restraint?",
+      "options": [
+        {
+          "id": "pledge",
+          "title": "No-strike pledge with arbitration",
+          "action": "Exchange labor peace for binding grievance procedures, safety rules, and wage review.",
+          "benefits": "Production becomes predictable and workers retain an institutional channel.",
+          "worries": "Boards may favor government targets over workers.",
+          "tradeoff": "Collective power is redirected into administration."
+        },
+        {
+          "id": "rights",
+          "title": "Preserve normal strike rights",
+          "action": "Allow unions to act under existing labor law except at directly critical facilities.",
+          "benefits": "Civil and labor rights remain meaningful during war.",
+          "worries": "Disruptions can delay essential production.",
+          "tradeoff": "Democracy accepts operational risk to preserve freedom."
+        },
+        {
+          "id": "command",
+          "title": "Impose compulsory labor rules",
+          "action": "Authorize wage controls, plant assignments, and penalties for disruption.",
+          "benefits": "The state gains maximum control over labor supply.",
+          "worries": "Coercion undermines consent and falls unequally on vulnerable workers.",
+          "tradeoff": "Total war output is purchased with reduced industrial citizenship."
+        }
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "Set the civil-rights standard",
+      "prompt": "How should emergency policy address discrimination and security?",
+      "options": [
+        {
+          "id": "contracts",
+          "title": "Condition contracts on equal opportunity",
+          "action": "Require nondiscrimination, transparent hiring, and enforcement for federal contractors.",
+          "benefits": "Mobilization opens skilled jobs and aligns policy with democratic aims.",
+          "worries": "Firms and local officials resist implementation.",
+          "tradeoff": "State purchasing power becomes an engine of social change."
+        },
+        {
+          "id": "security",
+          "title": "Prioritize broad security measures",
+          "action": "Allow exclusion and detention policies where military authorities claim necessity.",
+          "benefits": "Officials gain speed and reassurance after attack.",
+          "worries": "Collective punishment violates rights and wastes loyal citizens’ capacity.",
+          "tradeoff": "Security is defined by group identity rather than evidence."
+        },
+        {
+          "id": "review",
+          "title": "Require individualized review",
+          "action": "Use due process, evidence, and independent oversight for restrictions on liberty.",
+          "benefits": "Security action becomes more accurate and rights remain enforceable.",
+          "worries": "Review takes time and officials may fear hidden risks.",
+          "tradeoff": "Democratic restraint treats law as part of national defense."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how World War II mobilization expanded state power, changed labor and gender roles, and created civil-rights contradictions. Compare one democratic mobilization method with one totalitarian method.",
+  "sources": [
+    {
+      "label": "National Archives — Powers of Persuasion: World War II posters",
+      "url": "https://www.archives.gov/exhibits/powers-of-persuasion"
+    },
+    {
+      "label": "Library of Congress — World War II home front",
+      "url": "https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/great-depression-and-world-war-ii-1929-1945/world-war-ii/"
+    },
+    {
+      "label": "National Park Service — World War II Home Front",
+      "url": "https://www.nps.gov/subjects/worldwarii/homefront.htm"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

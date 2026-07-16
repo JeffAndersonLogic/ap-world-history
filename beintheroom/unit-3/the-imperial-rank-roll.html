@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | Rewriting the Imperial Rank Roll | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "3.2",
+  "unit": "3",
+  "topicTitle": "Empires: Administration",
+  "file": "the-imperial-rank-roll.html",
+  "title": "Rewriting the *Imperial Rank Roll*",
+  "location": "Fatehpur Sikri, Mughal Empire",
+  "date": "c. 1580",
+  "lessonUrl": "../../unit-3/lesson-3-2-empires-administration.html",
+  "alignment": {
+    "theme": "Governance (GOV)",
+    "objective": "Explain how rulers employed economic strategies to consolidate and maintain power from 1450 to 1750.",
+    "skill": "Comparison and causation",
+    "keyConcepts": [
+      "KC-4.3.I.C",
+      "KC-4.3.I.A",
+      "KC-4.3.I.D"
+    ]
+  },
+  "premise": [
+    "Emperor Akbar’s conquests have brought Gujarat, Bengal, Rajput kingdoms, and many local revenue systems under Mughal authority. Military victory created an empire; it did not create reliable administration.",
+    "The court must now rank officers, verify cavalry obligations, assign revenue without creating hereditary provincial dynasties, and collect taxes from cultivators whose conditions differ across the subcontinent. Central Asian nobles expect privilege, Rajput rulers expect honor and room to govern, zamindars control local knowledge, and the imperial treasury needs predictable cash.",
+    "You serve on a commission at Fatehpur Sikri. Your policies must make officials dependent on the emperor while keeping the people who actually collect revenue and raise troops willing to cooperate."
+  ],
+  "centralQuestion": "How should Akbar’s government combine ranked service, revenue assessment, jagir assignments, and accommodation of local elites to centralize Mughal power without provoking rebellion or destroying the tax base?",
+  "roles": [
+    {
+      "id": "diwan",
+      "name": "Imperial Revenue Commissioner",
+      "position": "You work in Raja Todar Mal’s finance administration.",
+      "power": "You can recommend surveys, rates, audits, and record systems, but you depend on provincial officials for implementation.",
+      "goals": "Create predictable revenue, reduce arbitrary assessments, and keep jagir holders from treating assignments as personal kingdoms.",
+      "fears": "False records, corrupt collectors, crop failure, and inflexible demands could empty villages and the treasury alike.",
+      "lens": "The empire is only as strong as the information and revenue that reach the center.",
+      "preference": "Measured land, standardized records, cash assessments, and regular audits.",
+      "blindSpot": "Uniform rules can ignore regional agriculture, custom, and the burden placed on cultivators."
+    },
+    {
+      "id": "rajput",
+      "name": "Rajput Mansabdar",
+      "position": "You are a Hindu ruler incorporated into Mughal service with rank and cavalry obligations.",
+      "power": "You bring forts, kin networks, soldiers, and local legitimacy, but your mansab and jagir depend on imperial favor.",
+      "goals": "Protect clan honor and religious practice while gaining influence in a larger empire.",
+      "fears": "Frequent transfers or intrusive revenue officials could reduce your house from ally to salaried servant.",
+      "lens": "Accommodation works when the emperor recognizes local dignity rather than demanding submission alone.",
+      "preference": "High mansab rank, negotiated obligations, and continued authority in ancestral territory.",
+      "blindSpot": "You may mistake elite privilege for the welfare of cultivators and other local groups."
+    },
+    {
+      "id": "turani",
+      "name": "Turani Cavalry Noble",
+      "position": "Your Central Asian family served the dynasty before many newer Indian recruits.",
+      "power": "You have court connections and military experience, but the emperor can alter your rank and assignment.",
+      "goals": "Preserve status, dependable revenue, and the martial character of imperial service.",
+      "fears": "Rajput recruitment and bureaucratic audits may weaken the old nobility’s position.",
+      "lens": "The empire was won by loyal mounted commanders and must not be buried under accountants and compromise.",
+      "preference": "Reward proven military households with substantial jagirs and fewer civilian restrictions.",
+      "blindSpot": "Hereditary privilege is exactly what the emperor’s ranked service system is designed to prevent."
+    },
+    {
+      "id": "zamindar",
+      "name": "Provincial Zamindar",
+      "position": "Your family mediates between villages and the imperial revenue administration.",
+      "power": "You know fields, harvests, customary claims, and local leaders, but imperial troops can replace or punish you.",
+      "goals": "Preserve a recognized share of revenue and enough flexibility to keep villages productive.",
+      "fears": "Cash demands based on distant calculations will ignore drought, crop mix, and local obligations.",
+      "lens": "No central decree works without people who understand and influence the countryside.",
+      "preference": "Negotiated assessment and a formal place for zamindars inside the imperial system.",
+      "blindSpot": "Local knowledge can also conceal extraction, favoritism, and resistance to oversight."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "mansab",
+      "label": "Mansab Ranking",
+      "text": "Imperial officers received numerical rank defining status, pay, and service obligations.",
+      "why": "Shows how the emperor organized a diverse service elite."
+    },
+    {
+      "id": "zatsawar",
+      "label": "Zat and Sawar",
+      "text": "Rank distinguished personal standing from the cavalry force an officer was expected to maintain.",
+      "why": "Connects bureaucratic classification to military capacity."
+    },
+    {
+      "id": "jagir",
+      "label": "Jagir Assignment",
+      "text": "Many officers were paid through temporary rights to collect revenue from designated lands rather than through hereditary ownership.",
+      "why": "Shows how revenue tied officials to service."
+    },
+    {
+      "id": "transfer",
+      "label": "Transfer and Audit",
+      "text": "Reassignment and inspection limited an officer’s ability to build an independent territorial base.",
+      "why": "Explains the centralizing mechanism and its friction."
+    },
+    {
+      "id": "zabt",
+      "label": "Zabt Measurement",
+      "text": "Revenue officials measured cultivated land and assessed crops using recorded rates in regions suited to the system.",
+      "why": "Supports standardized fiscal information."
+    },
+    {
+      "id": "dahsala",
+      "label": "Ten-Year Averages",
+      "text": "Todar Mal’s reforms used multi-year averages of yields and prices to make cash assessments more predictable.",
+      "why": "Shows an innovative approach to revenue volatility."
+    },
+    {
+      "id": "regional",
+      "label": "Regional Variation",
+      "text": "Crop sharing and negotiated assessment continued where measurement and stable markets were impractical.",
+      "why": "Warns against treating the empire as administratively uniform."
+    },
+    {
+      "id": "zamindars",
+      "label": "Zamindar Mediation",
+      "text": "Local intermediaries possessed information, coercive influence, and customary claims the state could use or confront.",
+      "why": "Explains why centralization still depended on local elites."
+    },
+    {
+      "id": "rajput",
+      "label": "Rajput Incorporation",
+      "text": "Akbar brought several Rajput houses into imperial service through alliance, marriage, rank, and military command.",
+      "why": "Shows accommodation as a strategy of consolidation."
+    },
+    {
+      "id": "jizya",
+      "label": "Jizya Abolished",
+      "text": "Akbar abolished the jizya on non-Muslims in 1564 as part of a wider policy of inclusion.",
+      "why": "Connects legitimacy and religious policy to administration."
+    },
+    {
+      "id": "rebellion",
+      "label": "Noble Rebellions",
+      "text": "Revolts by powerful nobles in the 1560s reminded Akbar that commanders with independent followings could threaten the center.",
+      "why": "Explains the need for rank, rotation, and mixed recruitment."
+    },
+    {
+      "id": "gujarat",
+      "label": "Gujarat and Bengal",
+      "text": "Rapid conquest added wealthy but distant provinces with distinct commercial and agrarian systems.",
+      "why": "Shows why expansion created an administrative problem."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "service",
+      "title": "Structure imperial service",
+      "prompt": "How should the emperor recruit and control military and civil officers?",
+      "options": [
+        {
+          "id": "mixedmansab",
+          "title": "Expand a mixed mansabdari elite",
+          "action": "Rank Turani, Iranian, Rajput, and Indian Muslim officers in one nonhereditary service system.",
+          "benefits": "The emperor gains talent and prevents one faction from monopolizing power.",
+          "worries": "Established nobles fear lost privilege and rivals distrust one another.",
+          "tradeoff": "Diversity reduces factional dominance but increases court competition."
+        },
+        {
+          "id": "oldguard",
+          "title": "Privilege the old military households",
+          "action": "Reserve the highest ranks and largest assignments for families with long dynastic service.",
+          "benefits": "Experienced commanders receive dependable rewards.",
+          "worries": "Newly incorporated groups see the empire as a foreign family enterprise.",
+          "tradeoff": "Loyalty to tradition may create hereditary power outside the emperor’s control."
+        },
+        {
+          "id": "rajputbloc",
+          "title": "Build around Rajput alliances",
+          "action": "Expand high Rajput appointments and allow allied houses broad local authority.",
+          "benefits": "Powerful regional elites defend the empire rather than resist it.",
+          "worries": "Other nobles fear displacement and the center depends on semi-autonomous allies.",
+          "tradeoff": "Accommodation buys stability by sharing power."
+        },
+        {
+          "id": "bureaucrats",
+          "title": "Separate civil and military careers",
+          "action": "Strengthen salaried record-keeping officials independent of cavalry commanders.",
+          "benefits": "The center receives better information and checks military nobles.",
+          "worries": "A larger bureaucracy is costly and may lack local coercive power.",
+          "tradeoff": "Professional oversight improves control but adds institutional rivalry."
+        }
+      ]
+    },
+    {
+      "id": "revenue",
+      "title": "Assess and collect land revenue",
+      "prompt": "What fiscal system should apply across a vast and varied empire?",
+      "options": [
+        {
+          "id": "zabt",
+          "title": "Use measured zabt where possible",
+          "action": "Measure fields, classify crops, and calculate cash demand from multi-year yields and prices.",
+          "benefits": "The treasury, cultivators, and honest officials gain clearer expectations.",
+          "worries": "Bad records, price change, drought, and regional differences can make the rate unjust.",
+          "tradeoff": "Predictability can become rigidity."
+        },
+        {
+          "id": "sharing",
+          "title": "Prefer crop sharing",
+          "action": "Take an agreed portion of actual harvest rather than a fixed cash demand.",
+          "benefits": "Tax burden changes with production and reduces risk in bad years.",
+          "worries": "Measurement at harvest invites conflict, delay, and concealment.",
+          "tradeoff": "Flexibility reduces predictability and increases administrative contact."
+        },
+        {
+          "id": "zamindar",
+          "title": "Negotiate through zamindars",
+          "action": "Recognize local intermediaries and bargain for a provincial revenue total.",
+          "benefits": "The state uses existing knowledge and coercive networks.",
+          "worries": "Zamindars can underreport, overtax cultivators, or turn revenue authority into political autonomy.",
+          "tradeoff": "Low administrative cost produces less direct central control."
+        },
+        {
+          "id": "taxfarm",
+          "title": "Auction collection rights",
+          "action": "Assign revenue collection to the bidder promising the largest payment to the treasury.",
+          "benefits": "The court receives fast, predictable commitments.",
+          "worries": "Collectors may extract aggressively to recover bids and profit.",
+          "tradeoff": "Short-term certainty can damage long-term production and legitimacy."
+        }
+      ]
+    },
+    {
+      "id": "jagirpolicy",
+      "title": "Control jagir assignments",
+      "prompt": "How should the emperor reward officers without creating independent provincial dynasties?",
+      "options": [
+        {
+          "id": "rotate",
+          "title": "Rotate and audit assignments",
+          "action": "Move jagir holders regularly and verify troops, revenue, and arrears.",
+          "benefits": "Officials remain dependent on the emperor and have less time to entrench locally.",
+          "worries": "Short tenures encourage quick extraction and weak investment.",
+          "tradeoff": "Central control may reward short-term behavior."
+        },
+        {
+          "id": "stable",
+          "title": "Grant longer assignments",
+          "action": "Keep effective officers in one region long enough to build knowledge and improve production.",
+          "benefits": "Administrators can form working relationships and plan beyond one harvest.",
+          "worries": "Long tenure creates local followings and quasi-hereditary power.",
+          "tradeoff": "Administrative competence increases the risk of political independence."
+        },
+        {
+          "id": "ancestral",
+          "title": "Let allies retain ancestral lands",
+          "action": "Treat selected Rajput and local rulers as imperial officers governing their traditional territories.",
+          "benefits": "Local legitimacy and alliance reduce the cost of occupation.",
+          "worries": "Imperial orders may lose to clan interests when the two conflict.",
+          "tradeoff": "The empire expands by recognizing authority it cannot fully centralize."
+        },
+        {
+          "id": "cash",
+          "title": "Pay more salaries in cash",
+          "action": "Expand direct treasury salaries and shrink officers’ rights over provincial revenue.",
+          "benefits": "Separates military command from extraction and clarifies accountability.",
+          "worries": "The treasury must move enormous sums reliably and officers lose incentives to manage revenue lands.",
+          "tradeoff": "Cleaner central finance requires greater administrative capacity."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Compare at least two of the administrative methods in your choices. Explain how each helped Akbar consolidate power and why the same method could also create resistance, corruption, or new limits on central authority.",
+  "sources": [
+    {
+      "label": "Metropolitan Museum of Art — The Art of the Mughals before 1600",
+      "url": "https://www.metmuseum.org/essays/the-art-of-the-mughals-before-1600"
+    },
+    {
+      "label": "Encyclopaedia Britannica — Akbar",
+      "url": "https://www.britannica.com/biography/Akbar"
+    },
+    {
+      "label": "Encyclopaedia Britannica — Mughal dynasty",
+      "url": "https://www.britannica.com/topic/Mughal-dynasty"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

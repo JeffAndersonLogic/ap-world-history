@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Cape Route Brief | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "4.1",
+  "unit": "4",
+  "topicTitle": "Technological Innovations",
+  "file": "the-cape-route-brief.html",
+  "title": "The *Cape Route Brief*",
+  "location": "Royal council, Lisbon",
+  "date": "1487",
+  "lessonUrl": "../../unit-4/lesson-4-1-technological-innovations.html",
+  "alignment": {
+    "theme": "Technology and Innovation (TEC)",
+    "objective": "Explain how cross-cultural interactions resulted in the diffusion of technology and facilitated changes in patterns of trade and travel from 1450 to 1750.",
+    "skill": "Causation and contextualization",
+    "keyConcepts": [
+      "KC-4.1.II",
+      "KC-4.1.II.A",
+      "Maritime technology and wind systems"
+    ]
+  },
+  "premise": [
+    "King João II is preparing a new Portuguese expedition beyond the farthest mapped point on the west coast of Africa. The Crown wants a sea route into the Indian Ocean, but no Portuguese captain has yet rounded Africa’s southern end and returned with proof.",
+    "The council does not possess one miraculous invention. Mariners combine a compass with latitude observations, Mediterranean and Atlantic sail plans, stronger hulls, portolan knowledge, African coastal intelligence, and growing experience with Atlantic wind and current systems.",
+    "You must design Bartolomeu Dias’s expedition without relying on the later myth of a single navigation school at Sagres. Your recommendation must show how borrowed knowledge, ship design, state finance, and accumulated voyage data work together."
+  ],
+  "centralQuestion": "How should the Portuguese Crown combine navigational instruments, ship design, wind knowledge, and state-sponsored information to find and return from a route around southern Africa?",
+  "roles": [
+    {
+      "id": "pilot",
+      "name": "Royal Pilot",
+      "position": "You turn compass headings, latitude observations, soundings, and experience into a working route.",
+      "power": "You direct navigation at sea, but longitude remains unsolved and observations fail in bad weather.",
+      "goals": "Bring the expedition home with reliable route knowledge.",
+      "fears": "Dead reckoning errors or an unfamiliar current could carry every ship beyond recovery.",
+      "lens": "Instruments are useful only when an experienced pilot interprets them together.",
+      "preference": "Redundant observations, careful logs, and conservative course changes.",
+      "blindSpot": "You may undervalue experimental ship design and the political pressure for a dramatic discovery."
+    },
+    {
+      "id": "shipwright",
+      "name": "Lisbon Shipwright",
+      "position": "You advise on hull, rig, cargo capacity, repair materials, and handling.",
+      "power": "You can alter the vessels before departure, but every added capability costs space, money, or speed.",
+      "goals": "Build ships able to survive Atlantic seas and still maneuver near unknown coasts.",
+      "fears": "A large cargo ship may be too slow; a small caravel may lack provisions for a long southern sweep.",
+      "lens": "Ocean travel depends on balancing maneuverability, endurance, and load.",
+      "preference": "A mixed fleet with complementary vessels and spare rigging.",
+      "blindSpot": "You may treat human endurance and navigational knowledge as secondary to hardware."
+    },
+    {
+      "id": "cosmographer",
+      "name": "Royal Cosmographer and Chart Keeper",
+      "position": "You compare charts, latitude tables, travelers’ reports, and astronomical knowledge.",
+      "power": "You control official copies and recommendations, but much of the coast remains conjecture.",
+      "goals": "Turn discoveries into cumulative state knowledge rather than isolated sailor memory.",
+      "fears": "Bad assumptions copied onto official charts could mislead multiple expeditions.",
+      "lens": "Diffused Chinese, Islamic, Mediterranean, and Atlantic knowledge becomes powerful when recorded and tested.",
+      "preference": "Standardized logs and a controlled archive that updates after every voyage.",
+      "blindSpot": "Secrecy can slow correction and prevent useful knowledge from reaching working mariners."
+    },
+    {
+      "id": "factor",
+      "name": "Crown Trade and Finance Factor",
+      "position": "You connect the voyage to gold trade, Elmina, supplies, and royal revenue.",
+      "power": "You can fund ships and coastal contacts, but the treasury expects measurable returns.",
+      "goals": "Find a route that expands trade without consuming years of revenue.",
+      "fears": "A prestige expedition may wreck valuable ships and disrupt profitable West African commerce.",
+      "lens": "Technology spreads when states and merchants can finance repeated use.",
+      "preference": "Stage supplies and intelligence through existing Atlantic and African networks.",
+      "blindSpot": "You may judge scientific and geographic knowledge only by immediate profit."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "compass",
+      "label": "Magnetic Compass",
+      "text": "A compass supplied direction when clouds or open water removed visible landmarks.",
+      "why": "Shows Chinese-origin knowledge adapted through wider exchange."
+    },
+    {
+      "id": "astrolabe",
+      "label": "Mariner’s Astrolabe",
+      "text": "By the late fifteenth century, a simplified sea astrolabe helped pilots estimate latitude from celestial altitude.",
+      "why": "Connects Islamic astronomical knowledge to navigation."
+    },
+    {
+      "id": "caravel",
+      "label": "Caravel",
+      "text": "A relatively small, maneuverable vessel could explore coasts and use lateen rigging to work across changing winds.",
+      "why": "Shows what ship design contributed—and what it could not carry."
+    },
+    {
+      "id": "supplyship",
+      "label": "Stores Ship",
+      "text": "A larger supply vessel could extend range but moved less easily near unknown shores.",
+      "why": "Creates a design tradeoff between endurance and maneuver."
+    },
+    {
+      "id": "volta",
+      "label": "Volta do Mar",
+      "text": "Portuguese experience showed that returning north could require sailing west into the Atlantic to catch favorable winds.",
+      "why": "Makes wind systems a form of technology and learned geography."
+    },
+    {
+      "id": "charts",
+      "label": "Portolan and Coastal Logs",
+      "text": "Bearings, harbors, soundings, and hazards accumulated from one voyage to the next.",
+      "why": "Explains cumulative information infrastructure."
+    },
+    {
+      "id": "elmina",
+      "label": "Elmina, 1482",
+      "text": "The Crown’s fortified trading post on the Gold Coast supplied profit, experience, and a southern base of knowledge.",
+      "why": "Links technology to state-sponsored trade."
+    },
+    {
+      "id": "african",
+      "label": "African Coastal Knowledge",
+      "text": "Interpreters, pilots, merchants, and communities along the coast possessed geographic and commercial information Europeans needed.",
+      "why": "Prevents a one-sided invention narrative."
+    },
+    {
+      "id": "secrecy",
+      "label": "Royal Information Control",
+      "text": "The Portuguese Crown treated route and chart knowledge as strategic assets in competition with other states.",
+      "why": "Shows why diffusion and secrecy existed together."
+    },
+    {
+      "id": "longitude",
+      "label": "No Reliable Longitude",
+      "text": "Pilots could estimate latitude more reliably than east-west position.",
+      "why": "Keeps the technological limits visible."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "fleet",
+      "title": "Design the expedition fleet",
+      "prompt": "Which combination of vessels best balances exploration, survival, and supply?",
+      "options": [
+        {
+          "id": "mixed",
+          "title": "Send two caravels and a stores ship",
+          "action": "Use maneuverable exploration vessels supported by a larger supply carrier.",
+          "benefits": "Pilots gain range and redundancy.",
+          "worries": "The slower supply ship may become a liability in storms or close coasts.",
+          "tradeoff": "Endurance improves at the cost of speed and coordination."
+        },
+        {
+          "id": "caravels",
+          "title": "Send only light caravels",
+          "action": "Prioritize maneuver, shallow draft, and the ability to explore uncertain coastlines.",
+          "benefits": "Ship crews can probe bays and react quickly.",
+          "worries": "Food, water, repair stores, and trade goods are limited.",
+          "tradeoff": "Mobility increases the risk of running out of necessities."
+        },
+        {
+          "id": "carracks",
+          "title": "Send large cargo vessels",
+          "action": "Build the mission around strong, capacious ships prepared for a direct trade route.",
+          "benefits": "The Crown can carry provisions and valuable return cargo.",
+          "worries": "Large ships are harder to handle near an unmapped coast.",
+          "tradeoff": "Commercial capacity arrives before the route is understood."
+        }
+      ]
+    },
+    {
+      "id": "route",
+      "title": "Choose the southern search pattern",
+      "prompt": "How should pilots respond when coastal winds and currents block progress?",
+      "options": [
+        {
+          "id": "offshore",
+          "title": "Sweep far into the South Atlantic",
+          "action": "Use accumulated wind knowledge to sail away from the coast and search for westerlies farther south.",
+          "benefits": "The fleet may bypass hostile coastal winds and round the cape.",
+          "worries": "Land disappears and dead-reckoning errors compound.",
+          "tradeoff": "The best wind route sacrifices geographic certainty."
+        },
+        {
+          "id": "coastal",
+          "title": "Remain close to the African coast",
+          "action": "Map every inlet and advance only while land and soundings remain available.",
+          "benefits": "Charts become detailed and resupply contacts remain possible.",
+          "worries": "Contrary winds and dangerous lee shores can halt or wreck the fleet.",
+          "tradeoff": "Better mapping slows the strategic search."
+        },
+        {
+          "id": "staged",
+          "title": "Establish a new forward base first",
+          "action": "Spend the voyage extending secure supply and intelligence networks before attempting the final rounding.",
+          "benefits": "Later expeditions inherit better support.",
+          "worries": "The Crown delays the hoped-for breakthrough and pays for another voyage.",
+          "tradeoff": "Lower risk produces slower discovery."
+        }
+      ]
+    },
+    {
+      "id": "knowledge",
+      "title": "Control the new knowledge",
+      "prompt": "If the ships return with a workable route, how should the Crown use the information?",
+      "options": [
+        {
+          "id": "archive",
+          "title": "Keep a controlled royal archive",
+          "action": "Standardize logs and charts but restrict copies to licensed pilots and Crown expeditions.",
+          "benefits": "Portugal protects a competitive advantage.",
+          "worries": "Secrecy narrows review and may preserve errors.",
+          "tradeoff": "Strategic control slows useful diffusion."
+        },
+        {
+          "id": "pilots",
+          "title": "Circulate among trained pilots",
+          "action": "Share corrected charts and tables broadly inside the Portuguese maritime community.",
+          "benefits": "More mariners can test and improve the route.",
+          "worries": "Commercial rivals may obtain the material through ports and crews.",
+          "tradeoff": "Rapid learning weakens exclusivity."
+        },
+        {
+          "id": "publish",
+          "title": "Print and sell the findings",
+          "action": "Use print to spread geographic knowledge and attract investors and specialists.",
+          "benefits": "Knowledge, finance, and recruitment expand quickly.",
+          "worries": "Portugal gives competitors the route it financed.",
+          "tradeoff": "Innovation accelerates by surrendering monopoly."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain why no single invention caused Portuguese oceanic expansion. Build a causal chain connecting at least two borrowed technologies, one environmental knowledge system, and state sponsorship to the ability to travel and trade across oceans.",
+  "sources": [
+    {
+      "label": "Royal Museums Greenwich — What is a mariner’s astrolabe?",
+      "url": "https://www.rmg.co.uk/stories/space-astronomy/what-mariners-astrolabe"
+    },
+    {
+      "label": "Encyclopaedia Britannica — Bartolomeu Dias",
+      "url": "https://www.britannica.com/biography/Bartolomeu-Dias"
+    },
+    {
+      "label": "Encyclopaedia Britannica — European exploration: The Age of Discovery",
+      "url": "https://www.britannica.com/topic/European-exploration/The-Age-of-Discovery"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>
