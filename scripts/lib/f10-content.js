@@ -12,440 +12,6 @@
  */
 
 module.exports = {
-  "9.5": {
-    "deck": "How activists after 1900 turned a new language of universal rights into pressure on states — opening doors of education, politics, and law — while inherited categories of race, class, gender, and global inequality proved stubbornly durable.",
-    "skillTags": [
-      "Continuity and Change",
-      "Causation",
-      "Argumentation"
-    ],
-    "support": {
-      "beforeYouRead": "As you read, track three kinds of reform and their limits. (1) <strong>New rights-based language</strong> — the vocabulary activists used to attack old assumptions about race, class, gender, and religion. (2) <strong>Expanding access</strong> — how education, political participation, and professional roles became more inclusive, and where they did not. (3) <strong>Protest against global inequality</strong> — movements that linked local harm to worldwide systems. For every case, ask what was challenged and what survived unchanged.",
-      "readingTarget": "By the end you should be able to explain how social categories, roles, and practices were both maintained and challenged after 1900; use specific evidence — the Universal Declaration of Human Rights, Negritude, liberation theology, global feminism, the end of apartheid, caste reservation, and the Green Belt Movement — to support a claim; and connect these developments to the SIO thematic focus, which holds that how a society groups its members and governs their interactions shapes its political, economic, and cultural institutions."
-    },
-    "vocab": [
-      "Universal Declaration of Human Rights",
-      "Rights-Based Discourse",
-      "Negritude",
-      "Liberation Theology",
-      "Global Feminism",
-      "CEDAW",
-      "Women's Suffrage",
-      "Female Literacy",
-      "Voting Rights Act",
-      "Apartheid",
-      "Caste Reservation",
-      "Green Belt Movement",
-      "Greenpeace",
-      "Fair Trade"
-    ],
-    "sections": [
-      {
-        "label": "Continuity and Change — KC-6.3.III.i",
-        "heading": "Rights Become a Global Language",
-        "paragraphs": [
-          "In December 1948, in the shadow of the Second World War and the Holocaust, the newly formed United Nations adopted the <span class=\"kt\">Universal Declaration of Human Rights</span>. Drafted by a committee chaired by Eleanor Roosevelt, it proclaimed that all people are \"born free and equal in dignity and rights\" and entitled to those rights \"without distinction of any kind\" — race, sex, religion, or class. That claim was radical. For centuries, most societies had organized themselves around the opposite assumption: that people belonged to fixed and unequal categories. The Declaration did not overturn those hierarchies by itself, but it planted a <strong>rights-based discourse</strong> that activists everywhere could pick up and turn against their own governments.",
-          "The power of the Declaration lay in what it made sayable. A colonized subject, a disenfranchised woman, or a member of a persecuted minority could now frame a local grievance in a language the wider world claimed to accept. Yet the document carried a built-in limit that students must grasp: a declaration does not enforce itself. It named rights without creating any court or army to guarantee them. This gap — between rights proclaimed and rights delivered — became the central drama of the century. Activists used the Declaration less as a finished achievement than as a lever, a moral standard against which they could measure, and shame, states that fell short of their own stated ideals.",
-          "Rights language also fused with older cultural and religious identities to sharpen its edge. The <span class=\"kt\">Negritude</span> movement, launched in 1930s Paris by writers such as Aimé Césaire of Martinique and Léopold Sédar Senghor of Senegal, rejected the colonial insistence that African culture was inferior and instead affirmed Black identity as a source of pride and political claim. Senghor would go on to become the first president of independent Senegal, carrying that cultural pride into the politics of decolonization. Decades later in Latin America, <span class=\"kt\">liberation theology</span> — articulated by the Peruvian priest Gustavo Gutiérrez in his 1971 book of that name — read Christianity as a demand for a \"preferential option for the poor,\" turning the Catholic Church, in some regions, into a defender of the landless and oppressed rather than of established elites. Figures such as Archbishop Óscar Romero of El Salvador, assassinated in 1980 for denouncing state violence, showed how dangerous that reinterpretation of religion could be.",
-          "Meanwhile <span class=\"kt\">global feminism</span> carried rights language into the most intimate corners of social organization. Feminists across many societies challenged legal and customary restrictions on women's education, work, property, political voice, and control over their own bodies. The United Nations declared a Decade for Women beginning in 1975, adopted the convention known as <span class=\"kt\">CEDAW</span> in 1979 — often called an international bill of rights for women — and hosted a landmark world conference in Beijing in 1995, where delegates from across the globe insisted that \"women's rights are human rights.\" What made this movement genuinely global was that activists in very different societies could invoke the same standard while adapting it to their own legal and cultural battles. Taken together, Negritude, liberation theology, and global feminism show a single pattern: <em>the abstract vocabulary of universal rights was translated into distinct struggles</em>, each aimed at an old assumption about who counted as fully human and fully equal."
-        ],
-        "callout": {
-          "label": "AP Skill — Continuity and Change",
-          "html": "The CED states that <strong>rights-based discourses \"challenged old assumptions about race, class, gender, and religion.\"</strong> On the exam, do not simply list movements — show the assumption each one attacked. Negritude challenged racial hierarchy, feminism challenged gender roles, liberation theology reread religion as a claim for the poor. Naming the <em>specific</em> assumption a movement targeted is what turns a description into an analysis of change over time."
-        }
-      },
-      {
-        "label": "Causation — KC-6.3.III.ii",
-        "heading": "Doors Open — But the Road Stays Rough",
-        "paragraphs": [
-          "The most visible result of a century of reform was a genuine widening of access to public life. Political participation expanded first: New Zealand had granted <span class=\"kt\">women's suffrage</span> as early as 1893, the United States followed with the Nineteenth Amendment in 1920, and across the twentieth century women in most states won the vote and, eventually, the right to hold office. This was a real change in the norms governing who could belong to the political community. Where women had once been defined as dependents represented by men, they increasingly stood as citizens in their own right — a shift that slowly reshaped legislatures, courts, and the assumptions behind them.",
-          "Access to knowledge widened alongside access to the ballot. Rising <span class=\"kt\">female literacy</span> and expanding university enrollment opened professional roles — in medicine, law, science, and government — that had once been closed to women and to the poor. Yet the pattern was uneven, and that unevenness is itself the point. In many regions girls' literacy still lagged behind boys', the highest professional ranks remained disproportionately male, and access often tracked wealth: families with money could seize new opportunities that families without it could not. A woman might now earn a university degree and still find the top of her profession blocked by hiring practices, unequal pay, and the assumption that public leadership was a man's domain. Formal inclusion, in other words, expanded faster than lived equality — a distinction the exam expects you to hold firmly in view.",
-          "Law also moved against entrenched racial hierarchy, though social practice trailed behind. In the United States, landmark civil-rights legislation — the Civil Rights Act of 1964 and the <span class=\"kt\">Voting Rights Act</span> of 1965 — dismantled the legal architecture of segregation and Black disenfranchisement, yet economic inequality and everyday discrimination persisted long after the statutes passed. In South Africa, the system of <span class=\"kt\">apartheid</span> that had organized society by race since 1948 finally collapsed with Nelson Mandela's release in 1990 and the first fully democratic elections in 1994. Mandela, imprisoned for twenty-seven years, became the country's first democratically elected president. Formal racial rule ended; the deep gap in wealth, land, and opportunity that decades of segregation had created did not vanish with it.",
-          "India offers a striking case of the state itself engineering inclusion. Under a constitution shaped by the Dalit leader B. R. Ambedkar, India adopted <span class=\"kt\">caste reservation</span> — reserving seats in legislatures, government jobs, and universities for groups historically excluded by the caste order — and later extended these quotas to additional disadvantaged castes. Reservation used public policy deliberately to widen access for the oppressed. Across all these cases the lesson is consistent and testable: <em>reform frequently changed the law faster than it changed social practice.</em> Because inclusion on paper outran equality in life, continuity and change coexisted — which is exactly why continuity must be part of the historical explanation, not treated as its failure."
-        ],
-        "callout": {
-          "label": "AP Skill — Causation",
-          "html": "The CED says that <strong>\"access to education and participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion.\"</strong> A strong causal answer explains <em>why</em> legal inclusion did not automatically produce equality: statutes can be changed by a vote, but inherited wealth, custom, prejudice, and institutional practice change slowly. Distinguish the cause of formal change from the causes of persistent inequality — naming both is what earns the point."
-        }
-      },
-      {
-        "label": "Argumentation — KC-6.3.II.C",
-        "heading": "When Reform Confronts the Global System",
-        "paragraphs": [
-          "Reform after 1900 was not only about who could vote or attend school; it was also about who paid the costs of a tightly integrated world economy. As trade, industry, and consumption knit the globe together, the environmental and economic damage they produced fell unevenly — often heaviest on the poor, on colonized and formerly colonized peoples, and on regions far from where the profits were counted. A wave of movements arose to protest exactly this <strong>inequality of the environmental and economic consequences of global integration</strong>, and their signature move was to connect a local harm to the worldwide system that produced it. Where earlier reformers had fought discrimination within a nation, these campaigns increasingly organized across borders, because the systems they opposed — trade, industry, resource extraction — were themselves global.",
-          "<span class=\"kt\">Greenpeace</span>, founded in 1971 in Vancouver, pioneered the transnational environmental campaign. It sailed into nuclear test zones, confronted whaling fleets on the open ocean, and used dramatic, media-ready protest to make distant environmental harm visible to publics that would never otherwise see it. When French agents sank its flagship, the Rainbow Warrior, in Auckland harbor in 1985, the incident only confirmed the group's argument that powerful states and industries would go to great lengths to protect the profits behind environmental destruction. Greenpeace showed that a private movement could operate across borders to pressure governments and corporations that answered to no single electorate, building a global constituency for the environment where none had existed before.",
-          "In Kenya, <span class=\"kt\">Wangari Maathai</span> tied environmental repair directly to social justice. The <span class=\"kt\">Green Belt Movement</span> she founded in 1977 paid rural women to plant trees, restoring degraded land while giving them income and standing in their communities. Maathai's work steadily broadened into a challenge to the ruling regime's seizure of public land for the benefit of political elites, linking ecology, women's economic roles, and democratic accountability in a single struggle. Her arrests and confrontations over sites like Nairobi's Uhuru Park dramatized how environmental questions were really questions about power. In 2004 she became the first African woman to win the Nobel Peace Prize.",
-          "Economic reformers pressed the same logic onto trade itself. The <span class=\"kt\">fair trade</span> movement — organized internationally through bodies such as the World Fair Trade Organization — argued that farmers and artisans in poorer countries received far too small a share of the value of coffee, cocoa, and other commodities they produced. By guaranteeing better prices and standards, fair trade tried to rewrite the rules of exchange in favor of producers rather than distant buyers. Across Greenpeace, the Green Belt Movement, and fair trade, one argument recurs, and it ties the whole topic to the SIO theme: <em>the way a global society organizes production and distributes power shapes who benefits and who bears the harm</em> — and reform movements insisted those arrangements could be challenged and remade."
-        ],
-        "callout": {
-          "label": "AP Skill — Argumentation",
-          "html": "The CED states that <strong>\"movements throughout the world protested the inequality of the environmental and economic consequences of global integration.\"</strong> A top-scoring argument does more than name a movement — it explains the <em>connection</em> the movement drew between a local harm and the global system, as Maathai linked tree planting to land power and democracy. To show complexity, pair a genuine challenge with a persisting continuity: reformers reshaped the debate, yet global inequality endured."
-        }
-      }
-    ],
-    "takeaway": "Topic 9.5 is one argument in three acts. First, activists forged a new language: the Universal Declaration of Human Rights, Negritude, liberation theology, and global feminism turned universal rights into weapons against old assumptions about race, class, gender, and religion. Second, doors opened — suffrage, rising female literacy, U.S. civil-rights law, the end of apartheid, and caste reservation widened access — yet inclusion on paper outran equality in life. Third, movements like Greenpeace, the Green Belt Movement, and fair trade attacked the uneven costs of global integration. Categories were challenged everywhere; many were also maintained. How a society groups its members and governs their interactions still shaped its institutions — the heart of Social Interactions and Organization.",
-    "questions": [
-      {
-        "skill": "Evidence Usage",
-        "text": "Choose ONE rights-based discourse — the Universal Declaration of Human Rights, Negritude, liberation theology, or global feminism — and describe specifically how it challenged an old assumption about race, class, gender, or religion. What does your example reveal about how activists used the language of universal rights?"
-      },
-      {
-        "skill": "Causation",
-        "text": "The Civil Rights Act of 1964, the end of apartheid, and caste reservation all changed the law, yet inequality persisted afterward in each case. Explain why formal or legal inclusion did not automatically produce lived equality. What causes made social practice change more slowly than the law?"
-      },
-      {
-        "skill": "Argumentation",
-        "text": "Make a defensible claim about how social categories, roles, and practices were BOTH challenged AND maintained in the world after 1900. Support it with specific evidence from the reading, then identify one example that complicates or qualifies your argument."
-      }
-    ]
-  },
-  "9.6": {
-    "deck": "How new media, global spectacles, and worldwide brands after 1900 spread culture across borders — producing not one identical world culture, but a web of shared forms that audiences everywhere made their own.",
-    "skillTags": [
-      "Causation",
-      "Comparison",
-      "Continuity and Change"
-    ],
-    "support": {
-      "beforeYouRead": "As you read, track three things. (1) <strong>Technology</strong> — the media and platforms (radio, film, satellite, the internet) that made culture move faster and farther. (2) <strong>Circulation</strong> — the artists, institutions, and corporations that carried cultural forms across borders. (3) <strong>Reinterpretation</strong> — the ways audiences translated global forms through their own language, religion, class, and national memory. For every example, ask: is this evidence of a single global culture, or of many connected cultures?",
-      "readingTarget": "By the end you should be able to explain how and why globalization changed culture over time; use specific evidence — reggae, Bollywood, the BBC, the World Cup, the Olympics, social media, Coca-Cola, Toyota, and Alibaba — to prove a claim; and connect these developments to the CDI thematic focus that ideas and beliefs shape how groups see themselves, and that interactions among societies carry cultural consequences."
-    },
-    "vocab": [
-      "Globalization",
-      "Reggae",
-      "Bob Marley",
-      "Rastafari",
-      "Bollywood",
-      "BBC",
-      "Satellite Television",
-      "World Cup",
-      "Olympic Games",
-      "Social Media",
-      "Cultural Hybridity",
-      "Coca-Cola",
-      "Toyota",
-      "Alibaba"
-    ],
-    "sections": [
-      {
-        "label": "Causation — KC-6.3.IV.i",
-        "heading": "Signals Across Borders",
-        "paragraphs": [
-          "For most of human history, culture traveled only as fast as the fastest ship or the slowest caravan. A song, a story, or a style could take years to cross an ocean, and often never made the trip at all. The twentieth century shattered that limit. Radio, film, sound recordings, television, communication satellites, and finally the internet collapsed the cost and the time of moving culture across the planet, turning what had been a trickle into a flood. The <strong>political and social changes of the twentieth century led to changes in the arts</strong> — decolonization, mass migration, civil-rights struggles, and the Cold War all gave artists new subjects and new audiences. In the second half of the century <span class=\"kt\">globalization</span> pushed popular and consumer culture onto a genuinely worldwide stage. Technology did not create the ideas people wanted to share, but it made sharing them across borders cheap, fast, and constant — and that acceleration is the engine behind everything else in this topic.",
-          "Consider <span class=\"kt\">reggae</span>. It emerged in Jamaica in the late 1960s, growing out of the earlier ska and rocksteady styles and carrying the island's history of slavery, poverty, and racial injustice in its lyrics. Through the <span class=\"kt\">Rastafari</span> movement — a religion born in Jamaica in the 1930s — it fused music with faith and political protest, giving voice to the descendants of enslaved Africans in a former British colony. Then it went global: records, radio play, the migration of Caribbean people to Britain and North America, and relentless touring carried it far beyond the island. <span class=\"kt\">Bob Marley</span>, who died in 1981, became its most famous voice, and songs like \"Get Up, Stand Up\" and \"Redemption Song\" turned a specifically Jamaican sound into an international language of resistance. Anti-apartheid activists in South Africa, Indigenous rights movements, and disaffected youth across Europe all adopted it — listeners heard their own struggles inside music born from someone else's history.",
-          "Film followed the same path. <span class=\"kt\">Bollywood</span> — the Hindi-language film industry centered in Mumbai — grew into the most prolific film industry on earth, releasing more titles each year than Hollywood and selling billions of tickets. Its signature blend of melodrama, spectacle, and elaborate song-and-dance numbers reached far beyond India, serving huge diaspora audiences in the Persian Gulf, Britain, East Africa, and Southeast Asia who used the films to stay connected to a homeland many had left behind. Its style influenced filmmakers well outside South Asia, and its stars became celebrities in countries where Hindi was not spoken. A cultural form rooted in one national tradition became a shared reference point for millions of viewers who had never set foot in India — proof that the flow of global culture was never a simple one-way current running out of the United States.",
-          "Behind these flows stood powerful broadcasting institutions. The <span class=\"kt\">BBC</span>, founded in 1922, circulated news and entertainment across Britain's former imperial networks and, through its overseas service, to listeners on every continent, often becoming the most trusted source of information in places where local media were censored. Institutions like it did not merely transmit signals; they made editorial choices about which voices reached global audiences and which did not, giving a handful of broadcasters, studios, and record labels enormous power to shape what the world saw and heard. The result was a media system in which a Jamaican rhythm, an Indian film, and a British news bulletin could all become part of daily life thousands of miles from where they were made — the first act in the making of a global culture, and a reminder that cultural globalization always had gatekeepers."
-        ],
-        "callout": {
-          "label": "AP Skill — Causation",
-          "html": "The CED states that in the twentieth century <strong>\"popular and consumer culture became more global.\"</strong> On the exam, explain the mechanism, not just the outcome: new media technologies — recordings, satellite broadcasting, the internet — collapsed the cost and time of moving culture, while migration and touring carried it in person. Technology is the <em>enabling</em> cause; human networks are the <em>carrying</em> cause. A strong causal answer names both, rather than simply asserting that culture \"spread.\""
-        }
-      },
-      {
-        "label": "Comparison — KC-6.3.IV.ii",
-        "heading": "Shared Spectacles, Different Meanings",
-        "paragraphs": [
-          "If media let culture cross borders, global spectacles let the whole world watch the same thing at the same moment. International sport became the clearest example. The <span class=\"kt\">World Cup</span>, first held in Uruguay in 1930, and the modern <span class=\"kt\">Olympic Games</span>, revived by Pierre de Coubertin in Athens in 1896, grew from modest gatherings into planetary events. <span class=\"kt\">Satellite television</span> was the turning point: a single match or opening ceremony could now be watched simultaneously by billions of people in hundreds of languages. <strong>Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society</strong>, and nothing reflected it more vividly than a stadium event carried live into living rooms on every continent.",
-          "Yet these spectacles never erased national identity — they intensified it. Fans watched as members of a global audience and as citizens rooting for their own flag, and the events became stages for political meaning. The 1936 Berlin Olympics were a showcase for Nazi propaganda; at the 1968 Mexico City Games, American sprinters Tommie Smith and John Carlos raised gloved fists for civil rights; and the 1980 Moscow Games were hollowed out by a Western boycott. Global competition, in other words, ran on national feeling. The spectacle was shared, but the loyalties and grievances people brought to it were anything but uniform.",
-          "The twenty-first century added a new layer with <span class=\"kt\">social media</span>. Earlier media let audiences receive culture; platforms that emerged in the 2000s let ordinary users produce and distribute it too. A fan in Lagos or Lima could now upload a clip, remix a song, or launch a trend that reached millions without ever passing through a studio, a network, or a record label. This was a genuine shift in who got to make global culture, and it fed the rise of styles — from Korean pop to viral dance crazes — that spread bottom-up rather than top-down. Yet corporations and states still shaped what spread: platform algorithms decided what was promoted, governments censored or blocked access, and the gap between those online and those offline created a new dividing line. Distribution widened dramatically, but it was never fully free or equal.",
-          "The deepest lesson of these shared spectacles is that <em>participation did not make culture identical.</em> Viewers translated the same match, the same broadcast, and the same viral clip through their own language, religion, class, race, and national memory, giving common forms very different meanings. A World Cup final might be a source of postcolonial pride in one country and a commercial entertainment in another; a hit song could be a protest anthem in one place and a dance track in the next. What emerged was therefore not a single flattened world culture but <span class=\"kt\">cultural hybridity</span> — global forms constantly reworked, blended, and repurposed into local ones. This is why the fear of total cultural homogenization has proven too simple: everyone was watching together, but no two audiences were seeing quite the same thing."
-        ],
-        "callout": {
-          "label": "AP Skill — Comparison",
-          "html": "The CED says popular culture <strong>\"increasingly reflected the influence of a globalized society.\"</strong> The exam rewards comparison that holds two truths at once: a spectacle like the Olympics created a <em>shared</em> global audience <em>and</em> reinforced <em>distinct</em> national identities. Avoid the trap of arguing that globalization simply produced one homogeneous culture — the sophisticated move is to show similarity (everyone watching) and difference (everyone interpreting differently) in the same argument."
-        }
-      },
-      {
-        "label": "Continuity and Change — KC-6.3.IV.iii",
-        "heading": "Culture for Sale",
-        "paragraphs": [
-          "Culture did not only travel as music, film, and sport — it traveled as products. In the second half of the twentieth century, <strong>consumer culture became globalized and transcended national borders</strong>, so that the same goods, logos, and shopping habits appeared in wildly different societies. <span class=\"kt\">Coca-Cola</span>, an American soft drink first sold in 1886, became one of the most recognized symbols on earth, so ubiquitous that critics coined the term \"Coca-colonization\" to describe the worry that American products were overwriting local ways of life. To buy and display certain brands was, increasingly, to take part in a shared global consumer identity.",
-          "The Japanese automaker <span class=\"kt\">Toyota</span>, founded in 1937, shows the same pattern from a different direction. Through global production and marketing networks it sold cars on every continent, proving that the flow of consumer culture was never simply from West to rest — Japanese firms, and later Korean and Chinese ones, shaped global tastes just as powerfully. Multinational brands standardized their core identity worldwide while quietly adapting products, flavors, and advertising to local markets. That balance of a uniform global image and tailored local versions is exactly the convergence-plus-hybridity dynamic seen in music and film.",
-          "The internet then rebuilt the marketplace itself. <span class=\"kt\">Alibaba</span>, founded in China in 1999 by Jack Ma, and eBay, launched in the United States in 1995, created online platforms where buyers and sellers separated by oceans could find one another and transact directly. Consumer exchange no longer required a physical store, a middleman, or even a shared country; a small manufacturer in one nation could reach households in dozens of others through a single website, and a shopper could buy goods made half a world away without leaving home. That Alibaba rose in China and rivaled American platforms is itself telling — the digital consumer economy was global from the start, not merely an export of the West. These platforms turned globalized consumption from something people watched into something they could do with a few clicks, accelerating the worldwide spread of shared products and symbols.",
-          "But access was never evenly distributed. Global consumer culture multiplied the number of shared brands and images, yet who could actually participate remained shaped by income, infrastructure, and political control over the internet. A teenager in Seoul and a farmer in rural Malawi might both recognize the same logos, but only one could readily buy the products or log on to the platform selling them. This is the continuity beneath the change: the <em>tools</em> of consumption transformed completely, but the <em>inequality</em> of who could consume, and who mostly produced for others, echoed far older divisions in the world economy that stretched back to the age of empire. Globalized culture, in the end, connected the planet without making it equal — and that tension, between genuine connection and enduring hierarchy, sits at the heart of Cultural Developments and Interactions after 1900."
-        ],
-        "callout": {
-          "label": "AP Skill — Argumentation",
-          "html": "The learning objective asks you to explain <strong>how and why globalization changed culture over time.</strong> A top-scoring argument names a clear change — worldwide brands and online platforms like Coca-Cola, Toyota, and Alibaba creating a shared consumer culture — <em>and</em> a clear continuity — persistent inequality in who could actually participate. Use a specific case as evidence, then push further: explain <em>why</em> convergence and hybridity happened together. Holding change and continuity in one argument is the complexity the exam rewards."
-        }
-      }
-    ],
-    "takeaway": "Topic 9.6 is one argument in three acts. First, new media carried culture across borders: reggae, Bollywood, and the BBC turned local traditions into shared global forms. Second, global spectacles let the world watch together while seeing differently — the World Cup, the Olympics, and social media created simultaneous audiences whose loyalties and meanings stayed distinct. Third, culture went on sale: Coca-Cola, Toyota, Alibaba, and eBay spread shared products and symbols worldwide, even as access stayed shaped by wealth and power. The through-line is convergence and hybridity at once — a connected planet, not an identical one. That is Cultural Developments and Interactions after 1900.",
-    "questions": [
-      {
-        "skill": "Evidence Usage",
-        "text": "Choose ONE cultural form from the reading — reggae, Bollywood, the World Cup, or a global brand such as Coca-Cola. Describe its specific origins and how it spread, and use that example to prove the claim that a cultural form can be both deeply local and genuinely global at the same time."
-      },
-      {
-        "skill": "Causation",
-        "text": "Explain how developments in media and communication technology after 1900 caused popular and consumer culture to become more global. Identify both the technologies that made cultural circulation possible and the human networks — artists, corporations, migrants — that actually carried it across borders."
-      },
-      {
-        "skill": "Argumentation",
-        "text": "Make a defensible claim about whether globalization after 1900 produced a single world culture or many connected cultures. Support your claim with specific evidence from the reading, then identify one example — such as audience reinterpretation or unequal access — that complicates or qualifies your argument."
-      }
-    ]
-  },
-  "9.7": {
-    "deck": "Why so many people fought back against globalization after 1900 — not by walling themselves off, but by attacking specific institutions, joining unlikely coalitions, and building homegrown tools to defend local culture inside a connected world.",
-    "skillTags": [
-      "Causation",
-      "Comparison",
-      "Argumentation"
-    ],
-    "support": {
-      "beforeYouRead": "As you read, sort every act of resistance into one of three buckets. (1) <strong>Economic critiques</strong> — anti-IMF and anti-World Bank campaigns that targeted debt, austerity, and their human and environmental costs. (2) <strong>Coalition protest</strong> — the Seattle WTO demonstrations, where labor, environmental, and global-justice groups joined forces without sharing identical goals. (3) <strong>Cultural and technological responses</strong> — homegrown platforms like Weibo and movements defending local values against a globalized culture. For each case, ask: what exactly is being resisted, and what alternative is being proposed?",
-      "readingTarget": "By the end you should be able to explain the various responses to increasing globalization from 1900 to the present; use specific evidence — the IMF and World Bank, structural adjustment, the 1999 Seattle WTO protests, and China's Weibo — to prove that resistance took many forms; and connect these responses to the CDI thematic focus that ideas and beliefs shape how groups view themselves and their interactions with other societies."
-    },
-    "vocab": [
-      "Globalization",
-      "International Monetary Fund",
-      "World Bank",
-      "Structural Adjustment",
-      "Austerity",
-      "Conditionality",
-      "World Trade Organization",
-      "Battle of Seattle",
-      "Global Justice Movement",
-      "Direct Action",
-      "Great Firewall",
-      "Weibo",
-      "Cultural Hybridity",
-      "Localization"
-    ],
-    "sections": [
-      {
-        "label": "Causation — KC-6.3.IV.iv",
-        "heading": "Not Against the World, But Against the Rules",
-        "paragraphs": [
-          "It is tempting to picture opponents of <span class=\"kt\">globalization</span> as people who simply wanted to shut the borders and turn back the clock. Most did not. The central insight of this topic is that <strong>responses to rising cultural and economic globalization took a variety of forms</strong>, and the loudest critics usually opposed <em>particular rules, institutions, or distributions of power</em> — not cross-border exchange itself. They wanted trade and finance to operate on different terms, terms that protected workers, farmers, ecosystems, and poor households rather than treating them as costs to be minimized. Many of these activists were themselves deeply international, coordinating across continents by phone, fax, and email. Resistance, in other words, was rarely a retreat into isolation. It was an argument about who globalization was supposed to serve — and about who got to write the rules that governed the flow of money, goods, and jobs across the planet.",
-          "Much of that argument fixed on two institutions born at the 1944 Bretton Woods conference: the <span class=\"kt\">International Monetary Fund</span> and the <span class=\"kt\">World Bank</span>. Designed to stabilize the postwar economy, both grew into powerful shapers of policy in the developing world. When newly independent and debt-burdened nations fell into repeated financial crises in the 1980s and 1990s, these lenders offered emergency loans — but attached <span class=\"kt\">conditionality</span>. To qualify, governments had to accept <span class=\"kt\">structural adjustment</span> programs: cut public spending, devalue currencies, privatize state enterprises, remove tariffs, and open their markets to foreign competition and investment. Supporters called this necessary discipline that would restore growth and lure capital. Critics called it a system that let creditors in Washington rewrite the budgets of distant countries and shifted the pain of debt onto the people least responsible for creating it.",
-          "The human costs made the critique concrete. <span class=\"kt\">Austerity</span> measures often meant slashing subsidies on food and fuel, freezing public-sector wages, laying off workers, and charging new fees for schooling and health care — burdens that landed hardest on the urban and rural poor. Anti-IMF activists pointed to episodes like Venezuela's 1989 Caracazo, when days of rioting erupted after an IMF-backed package suddenly raised transport and fuel prices; the government's crackdown left hundreds dead. Across Latin America, Africa, and Asia, so-called \"IMF riots\" became a recurring feature of the debt era, evidence that policies negotiated in boardrooms could ignite streets thousands of miles away. By the late 1990s, the transnational Jubilee 2000 campaign — backed by churches, unions, and celebrities — gathered millions of signatures demanding cancellation of the crushing debts owed by the world's poorest countries.",
-          "The World Bank drew fire of a different kind. Its large development projects — dams, highways, mines, and power plants meant to modernize economies — sometimes displaced whole communities and flooded farmland and forest in the name of progress. India's Sardar Sarovar dam on the Narmada River became a global symbol of this conflict: the Narmada Bachao Andolan movement organized villagers, activists, and scholars who argued that development planned from distant offices erased local livelihoods, submerged sacred land, and ignored the people it claimed to help. Labor activists added their own charge — that global supply chains rewarded relocating factories to wherever wages were lowest and protections weakest, pitting workers in different countries against one another. Environmentalists warned that the same rules externalized ecological damage onto communities with the least power to refuse. What united these critics was not a hatred of trade but a shared demand that the rules answer to people, not only to markets."
-        ],
-        "callout": {
-          "label": "AP Skill — Evidence Usage",
-          "html": "The CED says responses to globalization included <strong>\"anti-IMF and anti-World Bank activism.\"</strong> On the exam, do not stop at naming the institutions — show what critics actually opposed. A strong answer explains that <strong>structural adjustment</strong> loans came with conditions like austerity and privatization, and cites a concrete effect (subsidy cuts, displacement from a World Bank project). Specific evidence earns the point; a vague reference to \"people who disliked globalization\" does not."
-        }
-      },
-      {
-        "label": "Comparison — KC-6.3.IV.iv",
-        "heading": "Teamsters and Turtles: The Battle of Seattle",
-        "paragraphs": [
-          "In late November 1999, the <span class=\"kt\">World Trade Organization</span> convened its ministerial conference in Seattle to launch a new round of global trade negotiations. It never got the chance. Tens of thousands of demonstrators — by some estimates more than forty thousand — filled the streets, blockaded intersections, and shut the opening ceremonies down. Police responded with tear gas, pepper spray, and mass arrests; the mayor declared a state of emergency and imposed a downtown curfew; and the talks ultimately collapsed. The event became known as the <span class=\"kt\">Battle of Seattle</span>, and it announced to the world that a broad-based <span class=\"kt\">global justice movement</span> had arrived. For a public that had come to treat expanding trade as inevitable, the images from Seattle were a shock: globalization now had organized, visible, and disruptive opposition.",
-          "What made Seattle remarkable was the sheer variety of people who marched together. Labor unions like the Teamsters, worried about manufacturing jobs lost to relocation abroad, joined environmentalists dressed as sea turtles, who protested a WTO ruling that struck down U.S. protections for endangered turtles caught in shrimp nets. The slogan \"Teamsters and Turtles, together at last\" captured the improbable alliance between blue-collar workers and green activists who had long distrusted each other. Human-rights campaigners, small-farmer networks, students, and anti-corporate activists added their voices. Many embraced <span class=\"kt\">direct action</span> — nonviolent blockades and lockdowns organized by networks like the Direct Action Network to physically halt the meeting rather than merely petition it, while others marched peacefully in permitted parades.",
-          "Yet the coalition's unity was partly an illusion of the moment. Its members shared opposition to the WTO but often disagreed sharply about what should replace it. Some wanted enforceable labor and environmental standards written directly into trade rules; others, especially voices from the Global South, feared such standards were rich-world protectionism in disguise, a way to keep poorer nations' cheaper exports out of wealthy markets. Still others rejected the WTO's authority altogether rather than seeking to reform it. This tension mirrored the conference itself, where delegations from developing countries resisted an agenda they felt was dictated by the United States and Europe — a reminder that <em>resistance to globalization came from inside the negotiating room as well as from the streets outside it</em>, and that the divisions among reformers were real.",
-          "There was also a deep irony at the heart of the protest. Activists condemned corporate-driven globalization, yet they organized through the very global media and communications networks that globalization had built. Cheap air travel brought demonstrators from around the world; email lists and websites coordinated the logistics; and television and the early internet carried images of Seattle around the planet within hours, turning a local demonstration into a worldwide event and inspiring later mobilizations from Washington to Genoa to Cancún. <strong>The media coverage made the protest itself part of the global information system activists criticized.</strong> Dependence on those tools did not weaken the movement so much as reveal how completely globalization now structured even the resistance to it — a paradox that would resurface everywhere people fought the connected world using the connected world's own instruments."
-        ],
-        "callout": {
-          "label": "AP Skill — Causation",
-          "html": "The CED treats the anti-globalization coalitions as groups that <strong>\"joined groups with distinct interests.\"</strong> The exam rewards explaining <em>why</em> such different groups converged and <em>why</em> they still disagreed. Say the mechanism: shared opposition to the WTO's power pulled labor, environmental, and justice groups together, while conflicting goals — protections versus market access — pulled them apart. Naming both the cause of unity and the cause of friction shows genuine analysis, not just narration."
-        }
-      },
-      {
-        "label": "Argumentation — KC-6.3.IV.iv",
-        "heading": "The Great Firewall and the Homegrown Web",
-        "paragraphs": [
-          "Not all resistance took to the streets. As a globalized consumer culture spread through film, music, brands, fast food, and social media, many societies pushed back by defending or rebuilding their own. Governments promoted local content and language quotas, imposed censorship, and cultivated national platforms as alternatives to the American media and technology giants that dominated the global internet. China offers the clearest case. Behind what observers call the <span class=\"kt\">Great Firewall</span> — an elaborate system of filtering and blocking — the state shut out global services such as Google, Facebook, YouTube, and Twitter. This walling-off was partly about political control, but it also created space, and enormous commercial demand, for homegrown platforms to fill the gap left by the absent foreign brands.",
-          "The result was a vast parallel digital ecosystem. <span class=\"kt\">Weibo</span>, a microblogging service launched by the company Sina in 2009, grew into one of China's dominant platforms, later joined by Tencent's messaging-and-payment app WeChat and the search engine Baidu. These were not simply copies of Western apps dropped into a new market. They operated in Chinese, answered to Chinese regulators, tailored their features to local habits, and kept both their users and their advertising revenue inside the national economy. In this sense Weibo represents a form of <span class=\"kt\">localization</span>: a locally developed response to a global technology that preserved language, culture, and state control while still connecting hundreds of millions of people to one another and, selectively, to the wider world.",
-          "But the story is double-edged, and that is exactly what makes it a good argument rather than a slogan. The same platforms that expressed national independence also enabled dense state surveillance, commercial harvesting of personal data, and the swift censorship of dissent through keyword filtering and deleted posts. At the same time, Weibo occasionally opened room for genuine public criticism: after the 2011 Wenzhou high-speed rail collision, users flooded the platform with grief and outrage that embarrassed officials and forced a response. A tool built partly to resist foreign cultural and technological power thus became a contested arena of struggle within China itself — capable of both muffling and amplifying ordinary voices, sometimes in the same week.",
-          "Cultural resistance elsewhere ran along similar lines. Religious and nationalist movements around the world sometimes framed global consumer culture — its advertising, its sexual openness, its worship of the market — as a threat to community values, faith, and moral tradition, calling for a return to local identity. Yet the response was rarely pure rejection. Far more often it produced <span class=\"kt\">cultural hybridity</span> — new blends of the global and the local, from regional pop music built on international styles, to global fast-food chains reengineering their menus for local tastes, to religious broadcasters using satellite television to spread traditional messages. <strong>States promoted local content, language, censorship, or national platforms in response to outside media power,</strong> and ordinary communities remixed global culture into something recognizably their own. Resistance, adaptation, and creativity, it turns out, were not opposites but different faces of the same global encounter."
-        ],
-        "callout": {
-          "label": "AP Skill — Argumentation",
-          "html": "The learning objective asks you to explain the <strong>various responses to increasing globalization.</strong> A top-scoring answer does not treat resistance as one thing. It classifies responses — economic critique (anti-IMF), coalition protest (Seattle), and cultural or technological <strong>localization</strong> (Weibo, the Great Firewall) — and supports each with specific evidence. Adding complexity, such as noting that Weibo both resisted foreign platforms <em>and</em> enabled surveillance, is what pushes an argument from solid to excellent."
-        }
-      }
-    ],
-    "takeaway": "Topic 9.7 is one argument in three acts. First, critics attacked the rules: anti-IMF and anti-World Bank activists targeted debt, austerity, and structural adjustment, insisting the economy should serve people, not the reverse. Second, they built coalitions: at the 1999 Battle of Seattle, labor, environmental, and global-justice groups shut down the WTO together — even as they disagreed about what should replace it. Third, they defended and remade culture: behind China's Great Firewall, homegrown platforms like Weibo localized a global technology, while religious and nationalist movements answered global consumer culture with rejection and hybridity alike. Resistance was rarely isolation. It was a fight over whose values globalization would carry — the heart of Cultural Developments and Interactions.",
-    "questions": [
-      {
-        "skill": "Evidence Usage",
-        "text": "Using a specific example from the reading, explain what anti-IMF or anti-World Bank activists were actually opposing. How does your example show that resistance targeted particular rules and institutions rather than all global exchange?"
-      },
-      {
-        "skill": "Causation",
-        "text": "The 1999 Seattle WTO protests brought together groups with very different interests. Explain what caused labor unions, environmentalists, and global-justice activists to unite — and why those same groups also disagreed with one another."
-      },
-      {
-        "skill": "Argumentation",
-        "text": "Make a defensible claim about the variety of responses to globalization after 1900, drawing on at least two different types of resistance from the reading. Then identify one piece of evidence — such as Weibo's double-edged role — that complicates or qualifies your claim."
-      }
-    ]
-  },
-  "9.8": {
-    "deck": "How and why states built a web of international institutions after 1945 — the United Nations, its agencies, humanitarian NGOs, and global economic bodies — and why sovereignty survived even as cooperation deepened.",
-    "skillTags": [
-      "Causation",
-      "Continuity and Change",
-      "Governance"
-    ],
-    "support": {
-      "beforeYouRead": "As you read, track two forces at once. (1) <strong>Cooperation</strong> — the new institutions states built to keep the peace and solve shared problems: the United Nations, its specialized agencies, humanitarian NGOs, and global economic bodies. (2) <strong>Sovereignty</strong> — the power states refused to surrender, expressed through the veto, reliance on member consent, and the absence of any world army. For every institution, ask which force it advances — and where the two collide.",
-      "readingTarget": "By the end you should be able to explain how and why globalization changed interactions among states; use specific evidence — the failure of the League of Nations, the 1945 Charter, the Security Council veto, decolonization, the WHO, and humanitarian NGOs — to support a claim; and connect these developments to the GOV thematic focus that governments obtain, retain, and exercise power in different ways."
-    },
-    "vocab": [
-      "United Nations",
-      "League of Nations",
-      "Collective Security",
-      "UN Charter",
-      "General Assembly",
-      "Security Council",
-      "Veto Power",
-      "Permanent Members",
-      "Sovereignty",
-      "Peacekeeping",
-      "Decolonization",
-      "World Health Organization",
-      "Nongovernmental Organizations",
-      "Multinational Corporation"
-    ],
-    "sections": [
-      {
-        "label": "Causation — KC-6.3.II.A",
-        "heading": "From the Ashes of Two Wars: Why States Built the UN",
-        "paragraphs": [
-          "The <span class=\"kt\">League of Nations</span>, created in 1920 after the First World War, was history's first attempt to prevent war through a permanent international body. Its architects believed in <span class=\"kt\">collective security</span> — the idea that aggression against one state was the concern of all, and that the combined weight of nations could deter any aggressor. But the League was crippled from the start. The United States, whose president Woodrow Wilson had championed the idea, never joined after the Senate refused to ratify the treaty. The League commanded no army, and its decisions required near-unanimity. When aggression came, it could do little: it failed to stop the Japanese seizure of Manchuria in 1931, the Italian invasion of Ethiopia in 1935, or German rearmament through the decade. By 1939 the League was effectively dead, and a second, even deadlier world war followed. That failure became the founding lesson of the institution that would replace it.",
-          "As the Second World War drew to a close, the victorious Allies resolved not to repeat the League's mistakes. Delegates from fifty nations gathered at the 1945 <span class=\"kt\">San Francisco Conference</span> to draft a charter for a new organization. The <span class=\"kt\">United Nations</span> Charter was signed in June 1945 and took effect that October, binding fifty-one founding members. Its preamble announced a sweeping purpose: to <strong>save succeeding generations from the scourge of war</strong>, to reaffirm fundamental human rights, and to promote social progress through cooperation among states. Here was the CED's claim in the founders' own words — a new organization built with the <strong>stated goal of maintaining world peace and facilitating international cooperation</strong>.",
-          "Yet the UN was never designed to be a world government. It had no power to tax, no standing army, and no authority to override a member's laws. It depended entirely on member states for money, personnel, and enforcement — a deliberate choice, because sovereign states would never have joined a body that could command them. <span class=\"kt\">Sovereignty</span>, the principle that each state is the final authority within its own borders, remained the bedrock of the system. This is the paradox students must grasp: an organization created to constrain the behavior of states was itself built and controlled by those same states. Its power would rest not on force but on persuasion, legitimacy, moral pressure, and the willingness of governments to cooperate voluntarily — a foundation strong enough to convene the world, but too weak to command it.",
-          "The founders drew a subtler lesson as well. The League had failed partly because the most powerful states stood outside it or ignored it. To keep the great powers inside the new system, the UN's designers gave them permanent privileges — a bargain examined in the next section. The organization thus emerged from a specific historical moment: the wreckage of two world wars, the opening of the Cold War between the United States and the Soviet Union, and a hard-won conviction that repeated negotiation, however imperfect, was safer than the alternative. Context shaped every feature of its design."
-        ],
-        "callout": {
-          "label": "AP Skill — Causation",
-          "html": "The CED states that <strong>new international organizations, including the United Nations, formed with the stated goal of maintaining world peace and facilitating international cooperation</strong>. On the exam, explain the <em>cause</em>, not just the founding date: the League of Nations had failed and a second world war had killed tens of millions, so states built a stronger body. An answer that names the League's collapse as the driving cause earns more than one that simply reports the UN was created in 1945."
-        }
-      },
-      {
-        "label": "Continuity and Change — KC-6.3.II.A",
-        "heading": "Equality in One Room, Power in Another",
-        "paragraphs": [
-          "The UN's structure carried a deep contradiction — a promise of equality bolted onto a hierarchy of power. In the <span class=\"kt\">General Assembly</span>, every member state holds a single vote, from the smallest Pacific island to the largest superpower. This principle of <em>sovereign equality</em> made the Assembly a genuine forum where any nation could be heard, set agendas, and confer legitimacy on ideas that governments alone would never advance. But that equality came with a catch. The Assembly's resolutions are recommendations, not binding law; it can debate, condemn, and pressure, yet it cannot compel a single government to act against its will. The framers had granted symbolic equality precisely because it cost the great powers nothing — the votes that truly bound states were reserved for a smaller, more selective chamber.",
-          "Real enforcement power lived in the <span class=\"kt\">Security Council</span>, charged with the primary responsibility for international peace and security. Unlike the Assembly, the Council can issue binding resolutions, impose sanctions, and authorize the use of force. But it is not a body of equals. Five <span class=\"kt\">permanent members</span> — the United States, the Soviet Union (now Russia), the United Kingdom, France, and China — each hold a <span class=\"kt\">veto</span>, the power to block any substantive decision single-handedly. The remaining seats rotate among elected members who wield no such privilege. The veto froze the power realities of 1945 into the permanent architecture of the institution.",
-          "During the Cold War, the veto turned the Council into a battleground. The United States and the Soviet Union repeatedly canceled each other's initiatives, and the Council was often paralyzed on the era's gravest crises. In one revealing case, the UN authorized the defense of South Korea in 1950 only because the Soviet delegate was boycotting the Council and could not cast a veto. The feature meant to keep great powers inside the system also handed each of them the ability to shield itself and its allies from collective action — a limit built into the institution by intention rather than by accident.",
-          "The one feature that changed dramatically was membership. The UN began with fifty-one states; today it has roughly 193. That growth came from <span class=\"kt\">decolonization</span> — as dozens of Asian and African territories won independence in the decades after 1945, a body once dominated by a handful of Western and allied great powers became a nearly universal forum. Newly independent nations used the General Assembly to press anti-colonial and economic-justice agendas, to condemn apartheid in South Africa, and to give the <strong>Universal Declaration of Human Rights</strong> of 1948 lasting moral weight. The organization the great powers designed for themselves became, over time, a megaphone for the Global South. Here is the topic's core tension: the veto and the great-power hierarchy showed striking <em>continuity</em>, while the membership and its voice underwent profound <em>change</em> — proof that an institution's rules and its realities can drift apart."
-        ],
-        "callout": {
-          "label": "AP Skill — Continuity and Change",
-          "html": "The learning objective asks you to <strong>explain how and why globalization changed international interactions among states</strong>. A top answer holds continuity and change together: the Security Council <em>veto</em> preserved 1945's power hierarchy (continuity), while <em>decolonization</em> transformed the General Assembly into a near-universal forum (change). Naming a specific continuity and a specific change in the same argument is the complexity the exam rewards — do not settle for only one."
-        }
-      },
-      {
-        "label": "Comparison — KC-6.3.II.A",
-        "heading": "Beyond Peacekeeping: Agencies, NGOs, and the Limits of Sovereignty",
-        "paragraphs": [
-          "The UN's most visible work is <span class=\"kt\">peacekeeping</span>. Beginning with the first armed force deployed during the Suez Crisis in 1956, lightly armed \"blue helmets\" — soldiers loaned by member states and wearing the UN's colors rather than their own — have monitored ceasefires, separated combatants, and sometimes protected civilians. But peacekeeping exposes the institution's limits with unusual clarity. Missions require both Security Council authorization and the consent of the host state, and they depend on troops and funding that members choose whether to provide. A peacekeeping force can enter only where a government agrees to let it in, and it can accomplish only what its mandate and its budget allow. When those mandates outran their resources, as in several tragic operations of the 1990s, peacekeepers could not halt the violence they had been sent to witness — a failure that flowed directly from the sovereignty-first design of the whole system.",
-          "Beyond soldiers, a web of specialized agencies made international cooperation routine. The <span class=\"kt\">World Health Organization</span> coordinated the campaign that eradicated smallpox by 1980 — one of the great achievements in the history of medicine, and a disease that had killed hundreds of millions over the centuries. The UN High Commissioner for Refugees shelters people displaced by war; UNICEF works for children; the World Food Programme fights hunger across crises that no single state could manage alone. Each agency addresses a problem that spills across borders and answers to no one government. These bodies rarely make headlines, but they normalized the habit of states solving shared problems together, meeting year after year to negotiate standards, share data, and pool resources — the quiet, cumulative substance of <strong>facilitating international cooperation</strong> that the CED places at the heart of this topic.",
-          "International cooperation was never confined to the UN alone. <span class=\"kt\">Nongovernmental organizations</span> — the International Committee of the Red Cross, Amnesty International, Doctors Without Borders — operate across borders to deliver aid and defend human rights independent of any single government, sometimes shaming the very states that host them. Powerful economic and political institutions took shape alongside them: the International Monetary Fund and World Bank managed global finance and development, the World Trade Organization set common trade rules and settled disputes, and regional bodies such as the European Union pooled sovereignty so deeply that members share a currency and open borders. Even <span class=\"kt\">multinational corporations</span>, some with revenues larger than entire national economies, became global actors that states had to reckon with. The map of world affairs, once drawn almost entirely between governments, now teemed with institutions that governments neither fully owned nor fully controlled.",
-          "Together these institutions reveal what globalization did to relations among states. Denser trade, faster communication, and shared dangers made cooperation more necessary than ever — yet states still refused to surrender their <span class=\"kt\">sovereignty</span>. The UN commands no army of its own; the veto can still freeze the Security Council; agencies and peacekeepers act only where governments allow them. The result is a paradox that defines our era: a thickening network of global institutions layered over a world still organized into sovereign states, each guarding its own authority. That unresolved tension between cooperation and control is the essence of governance in a globalized world."
-        ],
-        "callout": {
-          "label": "AP Skill — Comparison",
-          "html": "The CED groups the UN with <strong>new international organizations that formed to facilitate international cooperation</strong>. A comparison prompt may ask you to weigh the UN against NGOs or multinational corporations. Note the distinction the exam wants: the UN is built <em>from states</em> and bound by their sovereignty, while NGOs and corporations operate across borders <em>independent</em> of any single government. Explaining that difference earns more than merely listing organizations side by side."
-        }
-      }
-    ],
-    "takeaway": "Topic 9.8 is one story in three acts. First, cause: the League of Nations had failed and two world wars had shattered the globe, so in 1945 states built the United Nations to keep the peace. Second, design: the General Assembly promised sovereign equality while the Security Council veto preserved great-power dominance — equality and hierarchy in one building. Third, the wider web: peacekeepers, agencies like the WHO, humanitarian NGOs, and economic bodies such as the IMF and WTO thickened cooperation, even as sovereignty endured. Globalization made states more connected but never less jealous of their own power. That is Governance in the world we live in today.",
-    "questions": [
-      {
-        "skill": "Evidence Usage",
-        "text": "Using specific evidence from the reading — the failure of the League of Nations, the 1945 UN Charter, or the founding purposes in its preamble — explain why states created the United Nations after the Second World War. What does your evidence reveal about what the founders wanted the organization to do?"
-      },
-      {
-        "skill": "Causation",
-        "text": "Explain how the Security Council veto both caused the paralysis of the Council during the Cold War and reflected the power realities of 1945. Why did the founders build this feature into the institution despite its obvious drawbacks?"
-      },
-      {
-        "skill": "Argumentation",
-        "text": "Make a defensible claim about how globalization changed interactions among states through international institutions. Then identify one piece of evidence — the veto, the persistence of sovereignty, or a peacekeeping failure — that complicates or qualifies your claim."
-      }
-    ]
-  },
-  "9.9": {
-    "deck": "How to weigh a century of dazzling scientific and technological change against the stubborn continuities — state power, inequality, and cultural difference — that never fully gave way, and how to turn that tension into an argument about the extent of transformation since 1900.",
-    "skillTags": [
-      "Continuity and Change",
-      "Argumentation"
-    ],
-    "support": {
-      "beforeYouRead": "Read this synthesis reading with two questions in your hand at all times. (1) <strong>What changed?</strong> Track three threads of transformation — <strong>technology &amp; environment</strong> (communication, transport, energy), <strong>life &amp; population</strong> (agriculture, medicine, fertility), and <strong>culture, rights &amp; structures</strong> (identity, inclusion, consumer culture). (2) <strong>What endured?</strong> For every dazzling change, name the continuity that qualifies it — a border, a price, an unequal access, a persistent state. An extent argument lives in the space between those two questions.",
-      "readingTarget": "By the end you should be able to <strong>explain the extent to which science and technology brought change from 1900 to the present</strong>; marshal specific evidence from across Unit 9 — the internet, shipping containers, the Green Revolution, antibiotics, birth control, and global consumer culture — to prove a claim; define a criterion for significance before you rank effects; and connect the whole argument to the SYN synthesis focus of evaluating change, continuity, significance, and complexity."
-    },
-    "vocab": [
-      "Shipping Containers",
-      "Internet",
-      "Cellular Communication",
-      "Air Travel",
-      "Petroleum",
-      "Nuclear Energy",
-      "Green Revolution",
-      "Norman Borlaug",
-      "Vaccines and Antibiotics",
-      "Birth Control",
-      "Digital Divide",
-      "Consumer Culture",
-      "Antimicrobial Resistance",
-      "Extent of Change"
-    ],
-    "sections": [
-      {
-        "label": "Continuity and Change — KC-6.1.I.A",
-        "heading": "The World Shrinks — But Not for Everyone",
-        "paragraphs": [
-          "The defining sensation of the century after 1900 was that distance was dissolving. The CED states that <strong>new communication and transportation modes reduced the problem of geographic distance</strong>, and the evidence is overwhelming. Radio broadcast a single voice to millions in the 1920s and 1930s; the telephone and then <span class=\"kt\">cellular communication</span> put conversation in the pocket; and the <span class=\"kt\">internet</span> — born as the U.S. military's ARPANET in 1969 and opened to the world after Tim Berners-Lee published the World Wide Web in 1991 — made near-instant contact across continents ordinary. A message that once traveled by ship for weeks now crossed the planet in the time it takes to press send.",
-          "Transportation compressed the map just as radically. <span class=\"kt\">Air travel</span> — accelerated by the jet age and the wide-body Boeing 747 after 1970 — turned intercontinental journeys from weeks into hours, reorganizing labor migration, mass tourism, and the global reach of militaries that could now project force across oceans in a day. Even more quietly transformative was Malcom McLean's <span class=\"kt\">shipping containers</span>, first sailed on the Ideal X in 1956. Before the container, loading a ship meant armies of dockworkers hauling crates by hand; the standardized steel box let cranes move cargo in a fraction of the time and cost. That single innovation made it economical to manufacture goods on one side of the world and sell them on the other, knitting national economies into a single circulatory system of supply chains — the physical backbone of everything we now call globalization.",
-          "Underneath the movement of people and information ran a revolution in energy. The CED notes that <strong>petroleum and nuclear energy technologies raised productivity and increased material production</strong>. Cheap <span class=\"kt\">petroleum</span> was the master resource of the twentieth century: it powered the cars, planes, and factories, fed the chemical fertilizers behind modern farming, and became the raw material for plastics and synthetics that filled everyday life. So central was oil that the 1973 OPEC embargo, launched by petroleum-exporting states, could throw the entire industrial world into recession overnight. <span class=\"kt\">Nuclear energy</span> promised near-limitless power from tiny amounts of fuel — and delivered new categories of danger, from the 1986 Chernobyl disaster to the 2011 Fukushima meltdown, alongside the long environmental bill of a fossil-fueled civilization now measured in a warming atmosphere. Energy technology raised output enormously, but it also bound human prosperity to escalating environmental risk.",
-          "Yet distance collapsed <em>unevenly</em>, and this is where the continuity lives. The same decades that produced the internet also produced the <span class=\"kt\">digital divide</span>: billions of people gained connection while billions more lacked reliable electricity, affordable bandwidth, or the money to buy a device, so a technology in principle available everywhere remained in practice concentrated among the wealthy. Borders often hardened even as bandwidth widened. Passports, visas, tariffs, and checkpoints still decided who could physically move, and governments learned to police the new networks — states erected national firewalls and surveillance systems to filter and monitor the very internet that was supposed to be borderless. The lesson for the synthesis argument is sharp: technology dramatically shrank the world for the connected and the mobile, while leaving the underlying geography of power, infrastructure, and inequality remarkably intact."
-        ],
-        "callout": {
-          "label": "AP Skill — Continuity and Change",
-          "html": "The CED says technology <strong>\"reduced the problem of geographic distance.\"</strong> Note the careful word: <em>reduced</em>, not erased. A top answer pairs a genuine change — container shipping making global manufacturing cheap — with the continuity that qualifies it — borders, cost, and unequal infrastructure still controlling access. Holding both at once, rather than declaring the world simply \"borderless,\" is exactly the complexity the exam rewards."
-        }
-      },
-      {
-        "label": "Causation — KC-6.1.I.C",
-        "heading": "Feeding, Curing, and Reshaping Humanity",
-        "paragraphs": [
-          "If the first thread reshaped space, the second reshaped life itself — and it may be the deepest change of the century. The CED states that <strong>the Green Revolution and commercial agriculture increased productivity and helped sustain a growing population</strong>. Beginning in Mexico and India in the mid-twentieth century, the agronomist <span class=\"kt\">Norman Borlaug</span> and the institutes behind the <span class=\"kt\">Green Revolution</span> bred high-yield, disease-resistant wheat and rice — such as the celebrated IR8 rice from the Philippines — that multiplied harvests. India, facing predictions of mass famine in the 1960s, instead approached self-sufficiency in grain, and the Green Revolution is credited with feeding perhaps a billion people who might otherwise have starved.",
-          "Medicine transformed survival on the same scale. The CED notes that <strong>vaccines and antibiotics increased human survival and longevity</strong>. Alexander Fleming's 1928 discovery of penicillin, developed into a mass-produced treatment during World War II, made once-lethal bacterial infections routinely curable, and a whole family of antibiotics followed. Jonas Salk's polio vaccine (1955) tamed a disease that had paralyzed children by the thousands, and a coordinated global vaccination campaign let the World Health Organization declare smallpox — a killer for millennia — eradicated in 1980, the first disease ever deliberately wiped from the earth. Combined with better sanitation, these <span class=\"kt\">vaccines and antibiotics</span> slashed infant and childhood mortality, the single biggest driver of longer average lives. In many regions life expectancy climbed from the forties into the seventies within one lifetime — a change so vast it reshaped every calculation a family made about work, children, and old age.",
-          "Technology even reached into the family. The CED observes that <strong>more effective birth control increased women's control over fertility and contributed to declining fertility rates in much of the world</strong>. The oral contraceptive pill, approved in the United States in 1960 and spreading across much of the world thereafter, let women separate sexuality from childbearing and time their pregnancies with a reliability no earlier method offered. Fertility rates fell sharply, average family sizes shrank, and — freed in part from continuous childbearing — women entered schools, professions, and public life in unprecedented numbers. The demographic consequences ran in two directions at once: rapid population growth as death rates fell, then, in the wealthiest societies, aging and even shrinking populations as birth rates dropped below replacement. That divergence between still-growing and now-graying societies is one of the defining human patterns of the twenty-first century, and it began in part with a pill.",
-          "But each gain carried a shadow that qualifies any triumphant story. The Green Revolution deepened dependence on irrigation, chemical fertilizers, pesticides, and purchased commercial seed, draining water tables and squeezing out small farmers who could not afford the new inputs, so that higher yields sometimes came with heavier debt and environmental damage. Overuse of antibiotics — in clinics and in livestock alike — bred <span class=\"kt\">antimicrobial resistance</span>, so that old infections began outrunning the very drugs that had once beaten them, a reminder that a technological victory can decay over time. And access remained brutally unequal: effective HIV/AIDS treatments existed in wealthy countries for years before they reached the hardest-hit regions of sub-Saharan Africa, where the epidemic killed millions who could not obtain the drugs. The transformation of survival was real, foundational, and genuinely demographic — but it was also uneven, costly, and, in places, reversible."
-        ],
-        "callout": {
-          "label": "AP Skill — Causation",
-          "html": "The CED credits the Green Revolution and medicine with helping to <strong>\"sustain a growing population\"</strong> and <strong>\"increase human survival and longevity.\"</strong> A strong answer explains the mechanism — higher yields plus antibiotics and vaccines lowered death rates faster than birth rates fell, driving explosive population growth — rather than just listing inventions. Then name a consequence, such as antimicrobial resistance or unequal access, to show you can trace an effect to its second-order cost."
-        }
-      },
-      {
-        "label": "Argumentation — KC-6.3.III–IV",
-        "heading": "Measuring the Revolution: What Actually Changed?",
-        "paragraphs": [
-          "The third thread is human self-understanding — rights, identity, and culture. The CED holds that <strong>rights-based discourse challenged old assumptions, while education and political and professional participation became more inclusive</strong>. The Universal Declaration of Human Rights (1948) established a global vocabulary of dignity that movements everywhere could invoke against their own governments. Decolonization dismantled European empires and multiplied sovereign nations across Asia and Africa; civil-rights and anti-apartheid struggles attacked legal racial hierarchy; feminist movements won the vote, property rights, and access to work; and later campaigns pressed for the rights of workers, indigenous peoples, and LGBTQ people. Mass education expanded on every continent, literacy climbed, and groups once shut out — women, colonized peoples, ethnic and religious minorities — moved into universities, professions, and legislatures. The <em>idea</em> of who counted as a full human being with claims on the state widened dramatically over the century.",
-          "Culture, too, went global. The CED notes that <strong>arts, entertainment, popular culture, and consumer culture increasingly reflected a globalized society and crossed national borders</strong>. Hollywood and Bollywood films, televised events like the World Cup and the Olympics, and later K-pop and streaming platforms reached audiences on every continent, while brands like Coca-Cola and McDonald's turned <span class=\"kt\">consumer culture</span> into a shared global language of logos and tastes. Yet this was never simple homogenization. Local societies adapted, remixed, and sometimes fiercely resisted imported culture — dubbing and reworking foreign media, blending global styles with regional traditions, and mounting nationalist or religious backlashes against what they saw as cultural invasion. The result was a genuinely globalized cultural marketplace in which local and global identities negotiated with each other rather than one simply erasing the other.",
-          "Against all this genuine change stands the continuity that any honest synthesis must weigh. States did not wither away. They responded to the economic challenges of the century in a variety of ways — through planning, welfare, liberalization, or authoritarian control — but through all of it, borders, nationalism, standing militaries, and vast economic inequality between and within nations persisted through every technological revolution. Rights were proclaimed in grand declarations yet unevenly enforced, and the gap between promise and reality remained wide for the world's poor, colonized, and marginalized. The wealth generated by new technology concentrated in some regions and classes while the risks — dangerous factory work, environmental damage, financial shocks — fell disproportionately on workers and poorer nations, echoing patterns of unequal exchange that reach back to the age of empire. The structures of power proved far more durable than the tools that operated within them.",
-          "This is why the learning objective asks you to judge the <span class=\"kt\">extent of change</span>, not merely to catalog inventions. An extent argument must first define its criterion — was change broad, deep, rapid, durable, or foundational? — because the answer genuinely shifts with the standard you choose. Measured by demography and daily life, the transformation since 1900 was arguably the most profound in human history: more people lived longer, ate better, moved farther, and communicated faster than any generation before them. Measured instead by the persistence of the sovereign state, of inequality, and of cultural and national difference, the deeper structures endured beneath the gleaming new machinery. The most sophisticated answer refuses to pick one and ignore the other; it names both the decisive change and the durable continuity, states the criterion by which it is judging, and then argues which weighs more. That deliberate weighing of change against continuity is precisely the synthesis this unit demands."
-        ],
-        "callout": {
-          "label": "AP Skill — Argumentation",
-          "html": "The learning objective asks you to <strong>\"explain the extent to which science and technology brought change from 1900 to the present.\"</strong> The word <em>extent</em> is the whole assignment: you cannot answer it without first defining a criterion for significance — breadth, depth, or durability — and defending that choice. A top-scoring thesis names a decisive change (medicine and agriculture reshaping survival) <em>and</em> a decisive continuity (enduring state power and inequality), then argues which outweighs the other. Nuance that qualifies your own claim is the mark of complexity."
-        }
-      }
-    ],
-    "takeaway": "Topic 9.9 is not a new story — it is the whole of Unit 9 turned into one argument along three threads. First, technology &amp; environment: the internet, containers, air travel, petroleum, and nuclear power shrank the world, but only for the connected. Second, life &amp; population: the Green Revolution, vaccines, antibiotics, and birth control remade survival itself, at real cost. Third, culture, rights &amp; structures: identity and consumer culture went global while states, borders, and inequality endured. Change in the machinery of daily life; continuity in the structures of power. To evaluate the extent of change, define your criterion, weigh both, and decide which matters more — the essence of historical synthesis.",
-    "questions": [
-      {
-        "skill": "Evidence Usage",
-        "text": "Choose ONE technology from the reading — the internet, shipping containers, the Green Revolution, antibiotics, or birth control — and describe its specific development with concrete evidence (names, dates, or places). Then explain both a change it produced and a limit or unequal effect that qualifies that change."
-      },
-      {
-        "skill": "Continuity and Change",
-        "text": "Across the period from 1900 to the present, identify ONE thing that genuinely changed because of science and technology AND ONE structure or pattern that endured despite it. Explain how both can be true at the same time, using evidence from at least two of the reading's three threads."
-      },
-      {
-        "skill": "Argumentation",
-        "text": "The reading argues that an \"extent\" claim depends on the criterion you choose. Make a defensible thesis about the extent to which science and technology transformed the world since 1900, state the criterion for significance you are using, and identify one piece of evidence that complicates your own argument."
-      }
-    ]
-  },
   "6.2": {
     "deck": "How states between 1750 and 1900 turned influence into rule — replacing chartered companies with direct control, carving up Africa through warfare and diplomacy, planting settler colonies, and expanding across neighboring lands — and why the same expansion took such different forms.",
     "skillTags": [
@@ -1048,6 +614,526 @@ module.exports = {
       {
         "skill": "Argumentation",
         "text": "Make a defensible claim about the relative significance of imperialism's effects: which effect mattered most from 1750 to 1900, and why? State your criteria, defend the claim with evidence from across Unit 6, and identify one continuity that complicates the story."
+      }
+    ]
+  },
+  "9.4": {
+    "deck": "How the world economy was rewritten after 1900 — the turn to free markets, the new global division of labor, and the institutions and corporations that spread free-market rules while old patterns of inequality endured.",
+    "skillTags": [
+      "Continuity and Change",
+      "Causation"
+    ],
+    "support": {
+      "beforeYouRead": "As you read, track two forces at once. (1) <strong>Change</strong> — the turn to economic liberalization, the new geography that split knowledge economies from manufacturing zones, and the rise of global institutions and multinational corporations. (2) <strong>Continuity</strong> — the unequal, profit-driven structure of the world economy and the enduring power of the state. For every example, ask which force it illustrates — and whether it illustrates both at once.",
+      "readingTarget": "By the end you should be able to explain the continuities and changes in the global economy from 1900 to the present; deploy specific evidence — Reagan, Thatcher, Deng Xiaoping, Pinochet, the shipping container, the WTO, NAFTA, ASEAN, and named multinationals — to prove a claim; and connect these developments to the ECN thematic focus that societies are shaped by how they produce, exchange, and consume."
+    },
+    "vocab": [
+      "Economic Liberalization",
+      "Free-Market Economics",
+      "Privatization",
+      "Deng Xiaoping",
+      "Special Economic Zones",
+      "Knowledge Economy",
+      "Global Division of Labor",
+      "Global Supply Chains",
+      "Shipping Container",
+      "Multinational Corporation",
+      "WTO",
+      "NAFTA",
+      "ASEAN",
+      "Structural Adjustment"
+    ],
+    "sections": [
+      {
+        "label": "Continuity and Change — KC-6.3.I.D",
+        "heading": "A New Rulebook: The Turn to Free Markets",
+        "paragraphs": [
+          "For most of the twentieth century, governments across the political spectrum assumed the state should actively steer the economy — owning strategic industries, protecting home markets behind tariffs, and managing employment through public spending. The Great Depression and two world wars had made state planning look like common sense. In the late twentieth century that consensus cracked. In a trend <strong>accelerated by the end of the Cold War</strong>, many governments turned toward <span class=\"kt\">economic liberalization</span>: they cut regulation, sold off state-owned enterprises, welcomed foreign investment, and insisted that <span class=\"kt\">free-market economics</span> would allocate resources more efficiently than any planner could. The change was not merely technical — it reflected a new conviction that markets, not ministries, should decide what an economy produced and for whom.",
+          "The shift found its loudest champions in the English-speaking world. In the United States, <span class=\"kt\">Ronald Reagan</span>, elected in 1980, cut income taxes, rolled back federal regulation, and signaled a harder line toward organized labor when he fired striking air-traffic controllers in 1981. In Britain, <span class=\"kt\">Margaret Thatcher</span> pursued sweeping <span class=\"kt\">privatization</span>, selling state-owned telephone, gas, water, and steel companies to private shareholders and defeating a year-long coal miners' strike in 1984–85. Both leaders preached that shrinking the state would free enterprise, reward risk-takers, and cure the stagnation and inflation of the 1970s. Their partnership made the vocabulary of deregulation and supply-side economics the dominant economic language of the West — and a model international lenders would soon press on the rest of the world.",
+          "The most surprising convert was communist China. Under <span class=\"kt\">Deng Xiaoping</span>, who consolidated power in 1978, China dismantled collective farms, let peasants sell surplus crops, and opened coastal <span class=\"kt\">Special Economic Zones</span> such as Shenzhen — a fishing town that swelled into a skyscraper metropolis within a generation. Foreign firms were invited in to build factories and transfer technology, and private enterprise was allowed to flourish. Yet the Communist Party surrendered none of its political monopoly: the 1989 crackdown at Tiananmen Square showed that economic opening would not be matched by political opening. Deng called the formula <em>socialism with Chinese characteristics</em>. Its lesson reverberated worldwide — a one-party state could master the tools of the global market without loosening its grip on power at home.",
+          "Chile drove the point home from the opposite direction. After seizing power in a 1973 coup, the military dictatorship of Augusto Pinochet handed economic policy to the \"Chicago Boys,\" Chilean economists trained in free-market theory, who slashed public spending, privatized industries, and threw the country open to trade — reforms imposed by a regime that jailed and killed its opponents. Placed side by side, Reagan's democracy, Thatcher's parliament, Deng's one-party state, and Pinochet's dictatorship reveal a striking pattern: <em>economic liberalization did not require — and did not necessarily produce — political liberalization.</em> The same economic direction traveled through four utterly different political systems. For historians, that variety is the point: it marks liberalization as a genuinely global wave, not the property of any single ideology."
+        ],
+        "callout": {
+          "label": "AP Skill — Continuity and Change",
+          "html": "The CED says liberalization was <strong>\"accelerated by the end of the Cold War.\"</strong> The exam rewards explaining the mechanism, not just naming the date: the collapse of the Soviet model discredited central planning and removed the strongest alternative to capitalism, so governments raced to adopt market policies. Grouping <strong>Reagan, Thatcher, Deng, and Pinochet</strong> in one argument is powerful because it shows the <em>same</em> economic change moving through <em>different</em> political systems — democratic, communist, and authoritarian alike."
+        }
+      },
+      {
+        "label": "Causation — KC-6.3.I.E",
+        "heading": "A New Geography of Work",
+        "paragraphs": [
+          "While the rules were changing, so was the map of who did which work. A revolution in information and communications technology — communication satellites, undersea fiber-optic cables, the personal computer, and, by the 1990s, the internet — collapsed the cost of moving information across the planet. The humble <span class=\"kt\">shipping container</span>, standardized after the 1950s, did the same for physical goods, letting dockside cranes load a vessel in hours rather than days. Together these technologies made distance almost irrelevant to coordination. For the first time a single firm could design a product in one country, raise capital in a second, manufacture it in a third, and sell it in a fourth — running the whole operation in near-real time from a headquarters an ocean away.",
+          "This produced a new division within the world economy. Some regions specialized in <span class=\"kt\">knowledge economies</span> built on research, design, software, finance, and branding — sectors that rewarded advanced education and paid high wages. Finland's Nokia transformed a paper-and-rubber conglomerate into a mobile-phone giant; Japan led in precision electronics; and California's Silicon Valley became shorthand for the information age itself. What these economies shared was that their most valuable work — writing code, engineering chips, managing global finance — was difficult to relocate and commanded a premium. Increasingly, the wealth generated by ideas and expertise concentrated in a handful of high-income hubs.",
+          "At the same time, <strong>industrial production and manufacturing were increasingly situated in Asia and Latin America.</strong> Labor-intensive factory work migrated to lower-wage production zones: garment plants in Bangladesh and Vietnam, electronics assembly across coastal China, and Mexican <em>maquiladoras</em> lined up along the U.S. border. Governments courted these factories with tax breaks and export-processing zones, and workers — often young women leaving the countryside — gained wages and a foothold in the cash economy. But the bargain was harsh: long hours, low pay, weak unions, and dangerous conditions. The <span class=\"kt\">Rana Plaza</span> garment-factory collapse in Bangladesh in 2013, which killed more than 1,100 workers, exposed to the world the human cost stitched into cheap clothing — and the thin leverage of the people who made it.",
+          "The result was a <span class=\"kt\">global division of labor</span> knit together by <span class=\"kt\">global supply chains</span>. A single smartphone might combine minerals from Central Africa, chips from Taiwan, a screen from South Korea, and final assembly in China before shipping to a consumer in Europe. This geography was genuinely new in its speed and complexity. Yet its underlying shape — high-value design and profit accumulating in wealthy regions while low-wage extraction and assembly clustered in poorer ones — echoed the core-and-periphery patterns that reached back to the age of empire. The technology was revolutionary; the distribution of who benefited most looked unsettlingly familiar."
+        ],
+        "callout": {
+          "label": "AP Skill — Causation",
+          "html": "The CED states that <strong>\"industrial production and manufacturing were increasingly situated in Asia and Latin America.\"</strong> A strong answer explains <em>why</em>, not just <em>that</em>: information technology made it possible to coordinate production across oceans, and large wage differences made it profitable to do so. Technology is the enabling cause; cost is the driving cause. Name both — and reach for complexity by weighing the trade-off workers accepted: new income against low pay and real danger."
+        }
+      },
+      {
+        "label": "Continuity and Change — KC-6.3.II.B",
+        "heading": "New Rules, Old Patterns",
+        "paragraphs": [
+          "As free-market ideas spread, new institutions arose to write and enforce them on a global scale. The <span class=\"kt\">World Trade Organization</span> (WTO), founded in 1995 to succeed the older GATT, set common rules for trade and created a forum to settle disputes between nations. Regional agreements multiplied the pattern: <span class=\"kt\">NAFTA</span> knit together the economies of Canada, Mexico, and the United States in 1994, while <span class=\"kt\">ASEAN</span> deepened economic cooperation across Southeast Asia. These bodies lowered barriers and expanded trade dramatically — but they also exposed communities to sudden foreign competition and handed distant negotiators real power over local livelihoods, fueling sharp debate about who actually wrote the rules of globalization.",
+          "Alongside these institutions rose the <span class=\"kt\">multinational corporation</span> as a central actor in world affairs. Firms such as the Swiss food giant Nestlé, the Japanese automaker Nissan, and India's Mahindra and Mahindra ran production and sold goods across dozens of countries at once, organizing supply chains that no single government fully controlled. The largest multinationals commanded annual revenues greater than the entire economies of many of the nations that hosted their factories. That scale gave private corporations genuine leverage over public policy — the ability to bargain over taxes, shape labor rules, and threaten to relocate if a government's demands grew inconvenient.",
+          "Yet the state did not disappear, as some enthusiasts of globalization had predicted. Governments still controlled currencies, wrote labor and environmental law, levied tariffs, and policed investment. When heavily indebted nations sought emergency loans, lenders such as the International Monetary Fund attached strict conditions — <span class=\"kt\">structural adjustment</span> programs that demanded currency devaluation, subsidy cuts, and privatization in exchange for credit. Far from erasing government, globalization often turned the state into the arena where citizens, corporations, and foreign lenders fought over who would gain from integration and who would shoulder its risks. Power was redistributed, not dissolved.",
+          "This is where the topic's central tension lives. The <em>machinery</em> of the world economy changed dramatically after 1900 — new technologies, new institutions, and a wholly new geography of work. But the <em>deep pattern</em> displayed a stubborn <span class=\"kt\">continuity</span>: the global economy remained profoundly unequal and driven by the pursuit of profit, with wealth concentrating in some regions while economic risk fell hardest on workers and poorer nations. The strongest AP argument refuses to pick just one story. It weighs the genuine transformations against that durable continuity — recognizing that a smartphone assembled by a low-wage worker for a distant corporation is, at once, something brand-new and something very old."
+        ],
+        "callout": {
+          "label": "AP Skill — Argumentation",
+          "html": "The learning objective asks you to explain <strong>continuity AND change</strong> in the global economy from 1900 to the present. A top-scoring response names a specific change — the WTO setting global trade rules where none existed — <em>and</em> a specific continuity — unequal exchange inherited from the imperial era — and explains how both are true at the same time. Holding both in a single argument, rather than listing one and forgetting the other, is the mark of the complexity the exam rewards."
+        }
+      }
+    ],
+    "takeaway": "Topic 9.4 is one argument in three moves. First, the rulebook changed: after the Cold War, Reagan, Thatcher, Deng Xiaoping, and Pinochet drove free-market liberalization across four very different political systems. Second, the map of work changed: information technology and the shipping container split the globe into high-wage knowledge economies and low-wage manufacturing zones. Third, the rules went global — the WTO, NAFTA, ASEAN, and multinational corporations — even as states kept real power and the old pattern of unequal exchange survived. Change in the machinery; continuity in who wins. That is Economic Systems, from 1900 to today.",
+    "questions": [
+      {
+        "skill": "Evidence Usage",
+        "text": "Choose ONE leader — Reagan, Thatcher, Deng Xiaoping, or Pinochet — and describe the specific free-market policies they pursued. What does your example reveal about the claim that economic liberalization could take hold under very different political systems?"
+      },
+      {
+        "skill": "Causation",
+        "text": "Explain how the revolution in information and communications technology reshaped the global division of labor after 1970. Why did knowledge-intensive work and labor-intensive manufacturing end up concentrated in different regions of the world?"
+      },
+      {
+        "skill": "Argumentation",
+        "text": "Make a defensible claim about what changed AND what stayed the same in the global economy from 1900 to the present. Then identify one piece of evidence that complicates or qualifies your argument."
+      }
+    ]
+  },
+  "9.5": {
+    "deck": "How activists after 1900 turned a new language of universal rights into pressure on states — opening doors of education, politics, and law — while inherited categories of race, class, gender, and global inequality proved stubbornly durable.",
+    "skillTags": [
+      "Continuity and Change",
+      "Causation",
+      "Argumentation"
+    ],
+    "support": {
+      "beforeYouRead": "As you read, track three kinds of reform and their limits. (1) <strong>New rights-based language</strong> — the vocabulary activists used to attack old assumptions about race, class, gender, and religion. (2) <strong>Expanding access</strong> — how education, political participation, and professional roles became more inclusive, and where they did not. (3) <strong>Protest against global inequality</strong> — movements that linked local harm to worldwide systems. For every case, ask what was challenged and what survived unchanged.",
+      "readingTarget": "By the end you should be able to explain how social categories, roles, and practices were both maintained and challenged after 1900; use specific evidence — the Universal Declaration of Human Rights, Negritude, liberation theology, global feminism, the end of apartheid, caste reservation, and the Green Belt Movement — to support a claim; and connect these developments to the SIO thematic focus, which holds that how a society groups its members and governs their interactions shapes its political, economic, and cultural institutions."
+    },
+    "vocab": [
+      "Universal Declaration of Human Rights",
+      "Rights-Based Discourse",
+      "Negritude",
+      "Liberation Theology",
+      "Global Feminism",
+      "CEDAW",
+      "Women's Suffrage",
+      "Female Literacy",
+      "Voting Rights Act",
+      "Apartheid",
+      "Caste Reservation",
+      "Green Belt Movement",
+      "Greenpeace",
+      "Fair Trade"
+    ],
+    "sections": [
+      {
+        "label": "Continuity and Change — KC-6.3.III.i",
+        "heading": "Rights Become a Global Language",
+        "paragraphs": [
+          "In December 1948, in the shadow of the Second World War and the Holocaust, the newly formed United Nations adopted the <span class=\"kt\">Universal Declaration of Human Rights</span>. Drafted by a committee chaired by Eleanor Roosevelt, it proclaimed that all people are \"born free and equal in dignity and rights\" and entitled to those rights \"without distinction of any kind\" — race, sex, religion, or class. That claim was radical. For centuries, most societies had organized themselves around the opposite assumption: that people belonged to fixed and unequal categories. The Declaration did not overturn those hierarchies by itself, but it planted a <strong>rights-based discourse</strong> that activists everywhere could pick up and turn against their own governments.",
+          "The power of the Declaration lay in what it made sayable. A colonized subject, a disenfranchised woman, or a member of a persecuted minority could now frame a local grievance in a language the wider world claimed to accept. Yet the document carried a built-in limit that students must grasp: a declaration does not enforce itself. It named rights without creating any court or army to guarantee them. This gap — between rights proclaimed and rights delivered — became the central drama of the century. Activists used the Declaration less as a finished achievement than as a lever, a moral standard against which they could measure, and shame, states that fell short of their own stated ideals.",
+          "Rights language also fused with older cultural and religious identities to sharpen its edge. The <span class=\"kt\">Negritude</span> movement, launched in 1930s Paris by writers such as Aimé Césaire of Martinique and Léopold Sédar Senghor of Senegal, rejected the colonial insistence that African culture was inferior and instead affirmed Black identity as a source of pride and political claim. Senghor would go on to become the first president of independent Senegal, carrying that cultural pride into the politics of decolonization. Decades later in Latin America, <span class=\"kt\">liberation theology</span> — articulated by the Peruvian priest Gustavo Gutiérrez in his 1971 book of that name — read Christianity as a demand for a \"preferential option for the poor,\" turning the Catholic Church, in some regions, into a defender of the landless and oppressed rather than of established elites. Figures such as Archbishop Óscar Romero of El Salvador, assassinated in 1980 for denouncing state violence, showed how dangerous that reinterpretation of religion could be.",
+          "Meanwhile <span class=\"kt\">global feminism</span> carried rights language into the most intimate corners of social organization. Feminists across many societies challenged legal and customary restrictions on women's education, work, property, political voice, and control over their own bodies. The United Nations declared a Decade for Women beginning in 1975, adopted the convention known as <span class=\"kt\">CEDAW</span> in 1979 — often called an international bill of rights for women — and hosted a landmark world conference in Beijing in 1995, where delegates from across the globe insisted that \"women's rights are human rights.\" What made this movement genuinely global was that activists in very different societies could invoke the same standard while adapting it to their own legal and cultural battles. Taken together, Negritude, liberation theology, and global feminism show a single pattern: <em>the abstract vocabulary of universal rights was translated into distinct struggles</em>, each aimed at an old assumption about who counted as fully human and fully equal."
+        ],
+        "callout": {
+          "label": "AP Skill — Continuity and Change",
+          "html": "The CED states that <strong>rights-based discourses \"challenged old assumptions about race, class, gender, and religion.\"</strong> On the exam, do not simply list movements — show the assumption each one attacked. Negritude challenged racial hierarchy, feminism challenged gender roles, liberation theology reread religion as a claim for the poor. Naming the <em>specific</em> assumption a movement targeted is what turns a description into an analysis of change over time."
+        }
+      },
+      {
+        "label": "Causation — KC-6.3.III.ii",
+        "heading": "Doors Open — But the Road Stays Rough",
+        "paragraphs": [
+          "The most visible result of a century of reform was a genuine widening of access to public life. Political participation expanded first: New Zealand had granted <span class=\"kt\">women's suffrage</span> as early as 1893, the United States followed with the Nineteenth Amendment in 1920, and across the twentieth century women in most states won the vote and, eventually, the right to hold office. This was a real change in the norms governing who could belong to the political community. Where women had once been defined as dependents represented by men, they increasingly stood as citizens in their own right — a shift that slowly reshaped legislatures, courts, and the assumptions behind them.",
+          "Access to knowledge widened alongside access to the ballot. Rising <span class=\"kt\">female literacy</span> and expanding university enrollment opened professional roles — in medicine, law, science, and government — that had once been closed to women and to the poor. Yet the pattern was uneven, and that unevenness is itself the point. In many regions girls' literacy still lagged behind boys', the highest professional ranks remained disproportionately male, and access often tracked wealth: families with money could seize new opportunities that families without it could not. A woman might now earn a university degree and still find the top of her profession blocked by hiring practices, unequal pay, and the assumption that public leadership was a man's domain. Formal inclusion, in other words, expanded faster than lived equality — a distinction the exam expects you to hold firmly in view.",
+          "Law also moved against entrenched racial hierarchy, though social practice trailed behind. In the United States, landmark civil-rights legislation — the Civil Rights Act of 1964 and the <span class=\"kt\">Voting Rights Act</span> of 1965 — dismantled the legal architecture of segregation and Black disenfranchisement, yet economic inequality and everyday discrimination persisted long after the statutes passed. In South Africa, the system of <span class=\"kt\">apartheid</span> that had organized society by race since 1948 finally collapsed with Nelson Mandela's release in 1990 and the first fully democratic elections in 1994. Mandela, imprisoned for twenty-seven years, became the country's first democratically elected president. Formal racial rule ended; the deep gap in wealth, land, and opportunity that decades of segregation had created did not vanish with it.",
+          "India offers a striking case of the state itself engineering inclusion. Under a constitution shaped by the Dalit leader B. R. Ambedkar, India adopted <span class=\"kt\">caste reservation</span> — reserving seats in legislatures, government jobs, and universities for groups historically excluded by the caste order — and later extended these quotas to additional disadvantaged castes. Reservation used public policy deliberately to widen access for the oppressed. Across all these cases the lesson is consistent and testable: <em>reform frequently changed the law faster than it changed social practice.</em> Because inclusion on paper outran equality in life, continuity and change coexisted — which is exactly why continuity must be part of the historical explanation, not treated as its failure."
+        ],
+        "callout": {
+          "label": "AP Skill — Causation",
+          "html": "The CED says that <strong>\"access to education and participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion.\"</strong> A strong causal answer explains <em>why</em> legal inclusion did not automatically produce equality: statutes can be changed by a vote, but inherited wealth, custom, prejudice, and institutional practice change slowly. Distinguish the cause of formal change from the causes of persistent inequality — naming both is what earns the point."
+        }
+      },
+      {
+        "label": "Argumentation — KC-6.3.II.C",
+        "heading": "When Reform Confronts the Global System",
+        "paragraphs": [
+          "Reform after 1900 was not only about who could vote or attend school; it was also about who paid the costs of a tightly integrated world economy. As trade, industry, and consumption knit the globe together, the environmental and economic damage they produced fell unevenly — often heaviest on the poor, on colonized and formerly colonized peoples, and on regions far from where the profits were counted. A wave of movements arose to protest exactly this <strong>inequality of the environmental and economic consequences of global integration</strong>, and their signature move was to connect a local harm to the worldwide system that produced it. Where earlier reformers had fought discrimination within a nation, these campaigns increasingly organized across borders, because the systems they opposed — trade, industry, resource extraction — were themselves global.",
+          "<span class=\"kt\">Greenpeace</span>, founded in 1971 in Vancouver, pioneered the transnational environmental campaign. It sailed into nuclear test zones, confronted whaling fleets on the open ocean, and used dramatic, media-ready protest to make distant environmental harm visible to publics that would never otherwise see it. When French agents sank its flagship, the Rainbow Warrior, in Auckland harbor in 1985, the incident only confirmed the group's argument that powerful states and industries would go to great lengths to protect the profits behind environmental destruction. Greenpeace showed that a private movement could operate across borders to pressure governments and corporations that answered to no single electorate, building a global constituency for the environment where none had existed before.",
+          "In Kenya, <span class=\"kt\">Wangari Maathai</span> tied environmental repair directly to social justice. The <span class=\"kt\">Green Belt Movement</span> she founded in 1977 paid rural women to plant trees, restoring degraded land while giving them income and standing in their communities. Maathai's work steadily broadened into a challenge to the ruling regime's seizure of public land for the benefit of political elites, linking ecology, women's economic roles, and democratic accountability in a single struggle. Her arrests and confrontations over sites like Nairobi's Uhuru Park dramatized how environmental questions were really questions about power. In 2004 she became the first African woman to win the Nobel Peace Prize.",
+          "Economic reformers pressed the same logic onto trade itself. The <span class=\"kt\">fair trade</span> movement — organized internationally through bodies such as the World Fair Trade Organization — argued that farmers and artisans in poorer countries received far too small a share of the value of coffee, cocoa, and other commodities they produced. By guaranteeing better prices and standards, fair trade tried to rewrite the rules of exchange in favor of producers rather than distant buyers. Across Greenpeace, the Green Belt Movement, and fair trade, one argument recurs, and it ties the whole topic to the SIO theme: <em>the way a global society organizes production and distributes power shapes who benefits and who bears the harm</em> — and reform movements insisted those arrangements could be challenged and remade."
+        ],
+        "callout": {
+          "label": "AP Skill — Argumentation",
+          "html": "The CED states that <strong>\"movements throughout the world protested the inequality of the environmental and economic consequences of global integration.\"</strong> A top-scoring argument does more than name a movement — it explains the <em>connection</em> the movement drew between a local harm and the global system, as Maathai linked tree planting to land power and democracy. To show complexity, pair a genuine challenge with a persisting continuity: reformers reshaped the debate, yet global inequality endured."
+        }
+      }
+    ],
+    "takeaway": "Topic 9.5 is one argument in three acts. First, activists forged a new language: the Universal Declaration of Human Rights, Negritude, liberation theology, and global feminism turned universal rights into weapons against old assumptions about race, class, gender, and religion. Second, doors opened — suffrage, rising female literacy, U.S. civil-rights law, the end of apartheid, and caste reservation widened access — yet inclusion on paper outran equality in life. Third, movements like Greenpeace, the Green Belt Movement, and fair trade attacked the uneven costs of global integration. Categories were challenged everywhere; many were also maintained. How a society groups its members and governs their interactions still shaped its institutions — the heart of Social Interactions and Organization.",
+    "questions": [
+      {
+        "skill": "Evidence Usage",
+        "text": "Choose ONE rights-based discourse — the Universal Declaration of Human Rights, Negritude, liberation theology, or global feminism — and describe specifically how it challenged an old assumption about race, class, gender, or religion. What does your example reveal about how activists used the language of universal rights?"
+      },
+      {
+        "skill": "Causation",
+        "text": "The Civil Rights Act of 1964, the end of apartheid, and caste reservation all changed the law, yet inequality persisted afterward in each case. Explain why formal or legal inclusion did not automatically produce lived equality. What causes made social practice change more slowly than the law?"
+      },
+      {
+        "skill": "Argumentation",
+        "text": "Make a defensible claim about how social categories, roles, and practices were BOTH challenged AND maintained in the world after 1900. Support it with specific evidence from the reading, then identify one example that complicates or qualifies your argument."
+      }
+    ]
+  },
+  "9.6": {
+    "deck": "How new media, global spectacles, and worldwide brands after 1900 spread culture across borders — producing not one identical world culture, but a web of shared forms that audiences everywhere made their own.",
+    "skillTags": [
+      "Causation",
+      "Comparison",
+      "Continuity and Change"
+    ],
+    "support": {
+      "beforeYouRead": "As you read, track three things. (1) <strong>Technology</strong> — the media and platforms (radio, film, satellite, the internet) that made culture move faster and farther. (2) <strong>Circulation</strong> — the artists, institutions, and corporations that carried cultural forms across borders. (3) <strong>Reinterpretation</strong> — the ways audiences translated global forms through their own language, religion, class, and national memory. For every example, ask: is this evidence of a single global culture, or of many connected cultures?",
+      "readingTarget": "By the end you should be able to explain how and why globalization changed culture over time; use specific evidence — reggae, Bollywood, the BBC, the World Cup, the Olympics, social media, Coca-Cola, Toyota, and Alibaba — to prove a claim; and connect these developments to the CDI thematic focus that ideas and beliefs shape how groups see themselves, and that interactions among societies carry cultural consequences."
+    },
+    "vocab": [
+      "Globalization",
+      "Reggae",
+      "Bob Marley",
+      "Rastafari",
+      "Bollywood",
+      "BBC",
+      "Satellite Television",
+      "World Cup",
+      "Olympic Games",
+      "Social Media",
+      "Cultural Hybridity",
+      "Coca-Cola",
+      "Toyota",
+      "Alibaba"
+    ],
+    "sections": [
+      {
+        "label": "Causation — KC-6.3.IV.i",
+        "heading": "Signals Across Borders",
+        "paragraphs": [
+          "For most of human history, culture traveled only as fast as the fastest ship or the slowest caravan. A song, a story, or a style could take years to cross an ocean, and often never made the trip at all. The twentieth century shattered that limit. Radio, film, sound recordings, television, communication satellites, and finally the internet collapsed the cost and the time of moving culture across the planet, turning what had been a trickle into a flood. The <strong>political and social changes of the twentieth century led to changes in the arts</strong> — decolonization, mass migration, civil-rights struggles, and the Cold War all gave artists new subjects and new audiences. In the second half of the century <span class=\"kt\">globalization</span> pushed popular and consumer culture onto a genuinely worldwide stage. Technology did not create the ideas people wanted to share, but it made sharing them across borders cheap, fast, and constant — and that acceleration is the engine behind everything else in this topic.",
+          "Consider <span class=\"kt\">reggae</span>. It emerged in Jamaica in the late 1960s, growing out of the earlier ska and rocksteady styles and carrying the island's history of slavery, poverty, and racial injustice in its lyrics. Through the <span class=\"kt\">Rastafari</span> movement — a religion born in Jamaica in the 1930s — it fused music with faith and political protest, giving voice to the descendants of enslaved Africans in a former British colony. Then it went global: records, radio play, the migration of Caribbean people to Britain and North America, and relentless touring carried it far beyond the island. <span class=\"kt\">Bob Marley</span>, who died in 1981, became its most famous voice, and songs like \"Get Up, Stand Up\" and \"Redemption Song\" turned a specifically Jamaican sound into an international language of resistance. Anti-apartheid activists in South Africa, Indigenous rights movements, and disaffected youth across Europe all adopted it — listeners heard their own struggles inside music born from someone else's history.",
+          "Film followed the same path. <span class=\"kt\">Bollywood</span> — the Hindi-language film industry centered in Mumbai — grew into the most prolific film industry on earth, releasing more titles each year than Hollywood and selling billions of tickets. Its signature blend of melodrama, spectacle, and elaborate song-and-dance numbers reached far beyond India, serving huge diaspora audiences in the Persian Gulf, Britain, East Africa, and Southeast Asia who used the films to stay connected to a homeland many had left behind. Its style influenced filmmakers well outside South Asia, and its stars became celebrities in countries where Hindi was not spoken. A cultural form rooted in one national tradition became a shared reference point for millions of viewers who had never set foot in India — proof that the flow of global culture was never a simple one-way current running out of the United States.",
+          "Behind these flows stood powerful broadcasting institutions. The <span class=\"kt\">BBC</span>, founded in 1922, circulated news and entertainment across Britain's former imperial networks and, through its overseas service, to listeners on every continent, often becoming the most trusted source of information in places where local media were censored. Institutions like it did not merely transmit signals; they made editorial choices about which voices reached global audiences and which did not, giving a handful of broadcasters, studios, and record labels enormous power to shape what the world saw and heard. The result was a media system in which a Jamaican rhythm, an Indian film, and a British news bulletin could all become part of daily life thousands of miles from where they were made — the first act in the making of a global culture, and a reminder that cultural globalization always had gatekeepers."
+        ],
+        "callout": {
+          "label": "AP Skill — Causation",
+          "html": "The CED states that in the twentieth century <strong>\"popular and consumer culture became more global.\"</strong> On the exam, explain the mechanism, not just the outcome: new media technologies — recordings, satellite broadcasting, the internet — collapsed the cost and time of moving culture, while migration and touring carried it in person. Technology is the <em>enabling</em> cause; human networks are the <em>carrying</em> cause. A strong causal answer names both, rather than simply asserting that culture \"spread.\""
+        }
+      },
+      {
+        "label": "Comparison — KC-6.3.IV.ii",
+        "heading": "Shared Spectacles, Different Meanings",
+        "paragraphs": [
+          "If media let culture cross borders, global spectacles let the whole world watch the same thing at the same moment. International sport became the clearest example. The <span class=\"kt\">World Cup</span>, first held in Uruguay in 1930, and the modern <span class=\"kt\">Olympic Games</span>, revived by Pierre de Coubertin in Athens in 1896, grew from modest gatherings into planetary events. <span class=\"kt\">Satellite television</span> was the turning point: a single match or opening ceremony could now be watched simultaneously by billions of people in hundreds of languages. <strong>Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society</strong>, and nothing reflected it more vividly than a stadium event carried live into living rooms on every continent.",
+          "Yet these spectacles never erased national identity — they intensified it. Fans watched as members of a global audience and as citizens rooting for their own flag, and the events became stages for political meaning. The 1936 Berlin Olympics were a showcase for Nazi propaganda; at the 1968 Mexico City Games, American sprinters Tommie Smith and John Carlos raised gloved fists for civil rights; and the 1980 Moscow Games were hollowed out by a Western boycott. Global competition, in other words, ran on national feeling. The spectacle was shared, but the loyalties and grievances people brought to it were anything but uniform.",
+          "The twenty-first century added a new layer with <span class=\"kt\">social media</span>. Earlier media let audiences receive culture; platforms that emerged in the 2000s let ordinary users produce and distribute it too. A fan in Lagos or Lima could now upload a clip, remix a song, or launch a trend that reached millions without ever passing through a studio, a network, or a record label. This was a genuine shift in who got to make global culture, and it fed the rise of styles — from Korean pop to viral dance crazes — that spread bottom-up rather than top-down. Yet corporations and states still shaped what spread: platform algorithms decided what was promoted, governments censored or blocked access, and the gap between those online and those offline created a new dividing line. Distribution widened dramatically, but it was never fully free or equal.",
+          "The deepest lesson of these shared spectacles is that <em>participation did not make culture identical.</em> Viewers translated the same match, the same broadcast, and the same viral clip through their own language, religion, class, race, and national memory, giving common forms very different meanings. A World Cup final might be a source of postcolonial pride in one country and a commercial entertainment in another; a hit song could be a protest anthem in one place and a dance track in the next. What emerged was therefore not a single flattened world culture but <span class=\"kt\">cultural hybridity</span> — global forms constantly reworked, blended, and repurposed into local ones. This is why the fear of total cultural homogenization has proven too simple: everyone was watching together, but no two audiences were seeing quite the same thing."
+        ],
+        "callout": {
+          "label": "AP Skill — Comparison",
+          "html": "The CED says popular culture <strong>\"increasingly reflected the influence of a globalized society.\"</strong> The exam rewards comparison that holds two truths at once: a spectacle like the Olympics created a <em>shared</em> global audience <em>and</em> reinforced <em>distinct</em> national identities. Avoid the trap of arguing that globalization simply produced one homogeneous culture — the sophisticated move is to show similarity (everyone watching) and difference (everyone interpreting differently) in the same argument."
+        }
+      },
+      {
+        "label": "Continuity and Change — KC-6.3.IV.iii",
+        "heading": "Culture for Sale",
+        "paragraphs": [
+          "Culture did not only travel as music, film, and sport — it traveled as products. In the second half of the twentieth century, <strong>consumer culture became globalized and transcended national borders</strong>, so that the same goods, logos, and shopping habits appeared in wildly different societies. <span class=\"kt\">Coca-Cola</span>, an American soft drink first sold in 1886, became one of the most recognized symbols on earth, so ubiquitous that critics coined the term \"Coca-colonization\" to describe the worry that American products were overwriting local ways of life. To buy and display certain brands was, increasingly, to take part in a shared global consumer identity.",
+          "The Japanese automaker <span class=\"kt\">Toyota</span>, founded in 1937, shows the same pattern from a different direction. Through global production and marketing networks it sold cars on every continent, proving that the flow of consumer culture was never simply from West to rest — Japanese firms, and later Korean and Chinese ones, shaped global tastes just as powerfully. Multinational brands standardized their core identity worldwide while quietly adapting products, flavors, and advertising to local markets. That balance of a uniform global image and tailored local versions is exactly the convergence-plus-hybridity dynamic seen in music and film.",
+          "The internet then rebuilt the marketplace itself. <span class=\"kt\">Alibaba</span>, founded in China in 1999 by Jack Ma, and eBay, launched in the United States in 1995, created online platforms where buyers and sellers separated by oceans could find one another and transact directly. Consumer exchange no longer required a physical store, a middleman, or even a shared country; a small manufacturer in one nation could reach households in dozens of others through a single website, and a shopper could buy goods made half a world away without leaving home. That Alibaba rose in China and rivaled American platforms is itself telling — the digital consumer economy was global from the start, not merely an export of the West. These platforms turned globalized consumption from something people watched into something they could do with a few clicks, accelerating the worldwide spread of shared products and symbols.",
+          "But access was never evenly distributed. Global consumer culture multiplied the number of shared brands and images, yet who could actually participate remained shaped by income, infrastructure, and political control over the internet. A teenager in Seoul and a farmer in rural Malawi might both recognize the same logos, but only one could readily buy the products or log on to the platform selling them. This is the continuity beneath the change: the <em>tools</em> of consumption transformed completely, but the <em>inequality</em> of who could consume, and who mostly produced for others, echoed far older divisions in the world economy that stretched back to the age of empire. Globalized culture, in the end, connected the planet without making it equal — and that tension, between genuine connection and enduring hierarchy, sits at the heart of Cultural Developments and Interactions after 1900."
+        ],
+        "callout": {
+          "label": "AP Skill — Argumentation",
+          "html": "The learning objective asks you to explain <strong>how and why globalization changed culture over time.</strong> A top-scoring argument names a clear change — worldwide brands and online platforms like Coca-Cola, Toyota, and Alibaba creating a shared consumer culture — <em>and</em> a clear continuity — persistent inequality in who could actually participate. Use a specific case as evidence, then push further: explain <em>why</em> convergence and hybridity happened together. Holding change and continuity in one argument is the complexity the exam rewards."
+        }
+      }
+    ],
+    "takeaway": "Topic 9.6 is one argument in three acts. First, new media carried culture across borders: reggae, Bollywood, and the BBC turned local traditions into shared global forms. Second, global spectacles let the world watch together while seeing differently — the World Cup, the Olympics, and social media created simultaneous audiences whose loyalties and meanings stayed distinct. Third, culture went on sale: Coca-Cola, Toyota, Alibaba, and eBay spread shared products and symbols worldwide, even as access stayed shaped by wealth and power. The through-line is convergence and hybridity at once — a connected planet, not an identical one. That is Cultural Developments and Interactions after 1900.",
+    "questions": [
+      {
+        "skill": "Evidence Usage",
+        "text": "Choose ONE cultural form from the reading — reggae, Bollywood, the World Cup, or a global brand such as Coca-Cola. Describe its specific origins and how it spread, and use that example to prove the claim that a cultural form can be both deeply local and genuinely global at the same time."
+      },
+      {
+        "skill": "Causation",
+        "text": "Explain how developments in media and communication technology after 1900 caused popular and consumer culture to become more global. Identify both the technologies that made cultural circulation possible and the human networks — artists, corporations, migrants — that actually carried it across borders."
+      },
+      {
+        "skill": "Argumentation",
+        "text": "Make a defensible claim about whether globalization after 1900 produced a single world culture or many connected cultures. Support your claim with specific evidence from the reading, then identify one example — such as audience reinterpretation or unequal access — that complicates or qualifies your argument."
+      }
+    ]
+  },
+  "9.7": {
+    "deck": "Why so many people fought back against globalization after 1900 — not by walling themselves off, but by attacking specific institutions, joining unlikely coalitions, and building homegrown tools to defend local culture inside a connected world.",
+    "skillTags": [
+      "Causation",
+      "Comparison",
+      "Argumentation"
+    ],
+    "support": {
+      "beforeYouRead": "As you read, sort every act of resistance into one of three buckets. (1) <strong>Economic critiques</strong> — anti-IMF and anti-World Bank campaigns that targeted debt, austerity, and their human and environmental costs. (2) <strong>Coalition protest</strong> — the Seattle WTO demonstrations, where labor, environmental, and global-justice groups joined forces without sharing identical goals. (3) <strong>Cultural and technological responses</strong> — homegrown platforms like Weibo and movements defending local values against a globalized culture. For each case, ask: what exactly is being resisted, and what alternative is being proposed?",
+      "readingTarget": "By the end you should be able to explain the various responses to increasing globalization from 1900 to the present; use specific evidence — the IMF and World Bank, structural adjustment, the 1999 Seattle WTO protests, and China's Weibo — to prove that resistance took many forms; and connect these responses to the CDI thematic focus that ideas and beliefs shape how groups view themselves and their interactions with other societies."
+    },
+    "vocab": [
+      "Globalization",
+      "International Monetary Fund",
+      "World Bank",
+      "Structural Adjustment",
+      "Austerity",
+      "Conditionality",
+      "World Trade Organization",
+      "Battle of Seattle",
+      "Global Justice Movement",
+      "Direct Action",
+      "Great Firewall",
+      "Weibo",
+      "Cultural Hybridity",
+      "Localization"
+    ],
+    "sections": [
+      {
+        "label": "Causation — KC-6.3.IV.iv",
+        "heading": "Not Against the World, But Against the Rules",
+        "paragraphs": [
+          "It is tempting to picture opponents of <span class=\"kt\">globalization</span> as people who simply wanted to shut the borders and turn back the clock. Most did not. The central insight of this topic is that <strong>responses to rising cultural and economic globalization took a variety of forms</strong>, and the loudest critics usually opposed <em>particular rules, institutions, or distributions of power</em> — not cross-border exchange itself. They wanted trade and finance to operate on different terms, terms that protected workers, farmers, ecosystems, and poor households rather than treating them as costs to be minimized. Many of these activists were themselves deeply international, coordinating across continents by phone, fax, and email. Resistance, in other words, was rarely a retreat into isolation. It was an argument about who globalization was supposed to serve — and about who got to write the rules that governed the flow of money, goods, and jobs across the planet.",
+          "Much of that argument fixed on two institutions born at the 1944 Bretton Woods conference: the <span class=\"kt\">International Monetary Fund</span> and the <span class=\"kt\">World Bank</span>. Designed to stabilize the postwar economy, both grew into powerful shapers of policy in the developing world. When newly independent and debt-burdened nations fell into repeated financial crises in the 1980s and 1990s, these lenders offered emergency loans — but attached <span class=\"kt\">conditionality</span>. To qualify, governments had to accept <span class=\"kt\">structural adjustment</span> programs: cut public spending, devalue currencies, privatize state enterprises, remove tariffs, and open their markets to foreign competition and investment. Supporters called this necessary discipline that would restore growth and lure capital. Critics called it a system that let creditors in Washington rewrite the budgets of distant countries and shifted the pain of debt onto the people least responsible for creating it.",
+          "The human costs made the critique concrete. <span class=\"kt\">Austerity</span> measures often meant slashing subsidies on food and fuel, freezing public-sector wages, laying off workers, and charging new fees for schooling and health care — burdens that landed hardest on the urban and rural poor. Anti-IMF activists pointed to episodes like Venezuela's 1989 Caracazo, when days of rioting erupted after an IMF-backed package suddenly raised transport and fuel prices; the government's crackdown left hundreds dead. Across Latin America, Africa, and Asia, so-called \"IMF riots\" became a recurring feature of the debt era, evidence that policies negotiated in boardrooms could ignite streets thousands of miles away. By the late 1990s, the transnational Jubilee 2000 campaign — backed by churches, unions, and celebrities — gathered millions of signatures demanding cancellation of the crushing debts owed by the world's poorest countries.",
+          "The World Bank drew fire of a different kind. Its large development projects — dams, highways, mines, and power plants meant to modernize economies — sometimes displaced whole communities and flooded farmland and forest in the name of progress. India's Sardar Sarovar dam on the Narmada River became a global symbol of this conflict: the Narmada Bachao Andolan movement organized villagers, activists, and scholars who argued that development planned from distant offices erased local livelihoods, submerged sacred land, and ignored the people it claimed to help. Labor activists added their own charge — that global supply chains rewarded relocating factories to wherever wages were lowest and protections weakest, pitting workers in different countries against one another. Environmentalists warned that the same rules externalized ecological damage onto communities with the least power to refuse. What united these critics was not a hatred of trade but a shared demand that the rules answer to people, not only to markets."
+        ],
+        "callout": {
+          "label": "AP Skill — Evidence Usage",
+          "html": "The CED says responses to globalization included <strong>\"anti-IMF and anti-World Bank activism.\"</strong> On the exam, do not stop at naming the institutions — show what critics actually opposed. A strong answer explains that <strong>structural adjustment</strong> loans came with conditions like austerity and privatization, and cites a concrete effect (subsidy cuts, displacement from a World Bank project). Specific evidence earns the point; a vague reference to \"people who disliked globalization\" does not."
+        }
+      },
+      {
+        "label": "Comparison — KC-6.3.IV.iv",
+        "heading": "Teamsters and Turtles: The Battle of Seattle",
+        "paragraphs": [
+          "In late November 1999, the <span class=\"kt\">World Trade Organization</span> convened its ministerial conference in Seattle to launch a new round of global trade negotiations. It never got the chance. Tens of thousands of demonstrators — by some estimates more than forty thousand — filled the streets, blockaded intersections, and shut the opening ceremonies down. Police responded with tear gas, pepper spray, and mass arrests; the mayor declared a state of emergency and imposed a downtown curfew; and the talks ultimately collapsed. The event became known as the <span class=\"kt\">Battle of Seattle</span>, and it announced to the world that a broad-based <span class=\"kt\">global justice movement</span> had arrived. For a public that had come to treat expanding trade as inevitable, the images from Seattle were a shock: globalization now had organized, visible, and disruptive opposition.",
+          "What made Seattle remarkable was the sheer variety of people who marched together. Labor unions like the Teamsters, worried about manufacturing jobs lost to relocation abroad, joined environmentalists dressed as sea turtles, who protested a WTO ruling that struck down U.S. protections for endangered turtles caught in shrimp nets. The slogan \"Teamsters and Turtles, together at last\" captured the improbable alliance between blue-collar workers and green activists who had long distrusted each other. Human-rights campaigners, small-farmer networks, students, and anti-corporate activists added their voices. Many embraced <span class=\"kt\">direct action</span> — nonviolent blockades and lockdowns organized by networks like the Direct Action Network to physically halt the meeting rather than merely petition it, while others marched peacefully in permitted parades.",
+          "Yet the coalition's unity was partly an illusion of the moment. Its members shared opposition to the WTO but often disagreed sharply about what should replace it. Some wanted enforceable labor and environmental standards written directly into trade rules; others, especially voices from the Global South, feared such standards were rich-world protectionism in disguise, a way to keep poorer nations' cheaper exports out of wealthy markets. Still others rejected the WTO's authority altogether rather than seeking to reform it. This tension mirrored the conference itself, where delegations from developing countries resisted an agenda they felt was dictated by the United States and Europe — a reminder that <em>resistance to globalization came from inside the negotiating room as well as from the streets outside it</em>, and that the divisions among reformers were real.",
+          "There was also a deep irony at the heart of the protest. Activists condemned corporate-driven globalization, yet they organized through the very global media and communications networks that globalization had built. Cheap air travel brought demonstrators from around the world; email lists and websites coordinated the logistics; and television and the early internet carried images of Seattle around the planet within hours, turning a local demonstration into a worldwide event and inspiring later mobilizations from Washington to Genoa to Cancún. <strong>The media coverage made the protest itself part of the global information system activists criticized.</strong> Dependence on those tools did not weaken the movement so much as reveal how completely globalization now structured even the resistance to it — a paradox that would resurface everywhere people fought the connected world using the connected world's own instruments."
+        ],
+        "callout": {
+          "label": "AP Skill — Causation",
+          "html": "The CED treats the anti-globalization coalitions as groups that <strong>\"joined groups with distinct interests.\"</strong> The exam rewards explaining <em>why</em> such different groups converged and <em>why</em> they still disagreed. Say the mechanism: shared opposition to the WTO's power pulled labor, environmental, and justice groups together, while conflicting goals — protections versus market access — pulled them apart. Naming both the cause of unity and the cause of friction shows genuine analysis, not just narration."
+        }
+      },
+      {
+        "label": "Argumentation — KC-6.3.IV.iv",
+        "heading": "The Great Firewall and the Homegrown Web",
+        "paragraphs": [
+          "Not all resistance took to the streets. As a globalized consumer culture spread through film, music, brands, fast food, and social media, many societies pushed back by defending or rebuilding their own. Governments promoted local content and language quotas, imposed censorship, and cultivated national platforms as alternatives to the American media and technology giants that dominated the global internet. China offers the clearest case. Behind what observers call the <span class=\"kt\">Great Firewall</span> — an elaborate system of filtering and blocking — the state shut out global services such as Google, Facebook, YouTube, and Twitter. This walling-off was partly about political control, but it also created space, and enormous commercial demand, for homegrown platforms to fill the gap left by the absent foreign brands.",
+          "The result was a vast parallel digital ecosystem. <span class=\"kt\">Weibo</span>, a microblogging service launched by the company Sina in 2009, grew into one of China's dominant platforms, later joined by Tencent's messaging-and-payment app WeChat and the search engine Baidu. These were not simply copies of Western apps dropped into a new market. They operated in Chinese, answered to Chinese regulators, tailored their features to local habits, and kept both their users and their advertising revenue inside the national economy. In this sense Weibo represents a form of <span class=\"kt\">localization</span>: a locally developed response to a global technology that preserved language, culture, and state control while still connecting hundreds of millions of people to one another and, selectively, to the wider world.",
+          "But the story is double-edged, and that is exactly what makes it a good argument rather than a slogan. The same platforms that expressed national independence also enabled dense state surveillance, commercial harvesting of personal data, and the swift censorship of dissent through keyword filtering and deleted posts. At the same time, Weibo occasionally opened room for genuine public criticism: after the 2011 Wenzhou high-speed rail collision, users flooded the platform with grief and outrage that embarrassed officials and forced a response. A tool built partly to resist foreign cultural and technological power thus became a contested arena of struggle within China itself — capable of both muffling and amplifying ordinary voices, sometimes in the same week.",
+          "Cultural resistance elsewhere ran along similar lines. Religious and nationalist movements around the world sometimes framed global consumer culture — its advertising, its sexual openness, its worship of the market — as a threat to community values, faith, and moral tradition, calling for a return to local identity. Yet the response was rarely pure rejection. Far more often it produced <span class=\"kt\">cultural hybridity</span> — new blends of the global and the local, from regional pop music built on international styles, to global fast-food chains reengineering their menus for local tastes, to religious broadcasters using satellite television to spread traditional messages. <strong>States promoted local content, language, censorship, or national platforms in response to outside media power,</strong> and ordinary communities remixed global culture into something recognizably their own. Resistance, adaptation, and creativity, it turns out, were not opposites but different faces of the same global encounter."
+        ],
+        "callout": {
+          "label": "AP Skill — Argumentation",
+          "html": "The learning objective asks you to explain the <strong>various responses to increasing globalization.</strong> A top-scoring answer does not treat resistance as one thing. It classifies responses — economic critique (anti-IMF), coalition protest (Seattle), and cultural or technological <strong>localization</strong> (Weibo, the Great Firewall) — and supports each with specific evidence. Adding complexity, such as noting that Weibo both resisted foreign platforms <em>and</em> enabled surveillance, is what pushes an argument from solid to excellent."
+        }
+      }
+    ],
+    "takeaway": "Topic 9.7 is one argument in three acts. First, critics attacked the rules: anti-IMF and anti-World Bank activists targeted debt, austerity, and structural adjustment, insisting the economy should serve people, not the reverse. Second, they built coalitions: at the 1999 Battle of Seattle, labor, environmental, and global-justice groups shut down the WTO together — even as they disagreed about what should replace it. Third, they defended and remade culture: behind China's Great Firewall, homegrown platforms like Weibo localized a global technology, while religious and nationalist movements answered global consumer culture with rejection and hybridity alike. Resistance was rarely isolation. It was a fight over whose values globalization would carry — the heart of Cultural Developments and Interactions.",
+    "questions": [
+      {
+        "skill": "Evidence Usage",
+        "text": "Using a specific example from the reading, explain what anti-IMF or anti-World Bank activists were actually opposing. How does your example show that resistance targeted particular rules and institutions rather than all global exchange?"
+      },
+      {
+        "skill": "Causation",
+        "text": "The 1999 Seattle WTO protests brought together groups with very different interests. Explain what caused labor unions, environmentalists, and global-justice activists to unite — and why those same groups also disagreed with one another."
+      },
+      {
+        "skill": "Argumentation",
+        "text": "Make a defensible claim about the variety of responses to globalization after 1900, drawing on at least two different types of resistance from the reading. Then identify one piece of evidence — such as Weibo's double-edged role — that complicates or qualifies your claim."
+      }
+    ]
+  },
+  "9.8": {
+    "deck": "How and why states built a web of international institutions after 1945 — the United Nations, its agencies, humanitarian NGOs, and global economic bodies — and why sovereignty survived even as cooperation deepened.",
+    "skillTags": [
+      "Causation",
+      "Continuity and Change",
+      "Governance"
+    ],
+    "support": {
+      "beforeYouRead": "As you read, track two forces at once. (1) <strong>Cooperation</strong> — the new institutions states built to keep the peace and solve shared problems: the United Nations, its specialized agencies, humanitarian NGOs, and global economic bodies. (2) <strong>Sovereignty</strong> — the power states refused to surrender, expressed through the veto, reliance on member consent, and the absence of any world army. For every institution, ask which force it advances — and where the two collide.",
+      "readingTarget": "By the end you should be able to explain how and why globalization changed interactions among states; use specific evidence — the failure of the League of Nations, the 1945 Charter, the Security Council veto, decolonization, the WHO, and humanitarian NGOs — to support a claim; and connect these developments to the GOV thematic focus that governments obtain, retain, and exercise power in different ways."
+    },
+    "vocab": [
+      "United Nations",
+      "League of Nations",
+      "Collective Security",
+      "UN Charter",
+      "General Assembly",
+      "Security Council",
+      "Veto Power",
+      "Permanent Members",
+      "Sovereignty",
+      "Peacekeeping",
+      "Decolonization",
+      "World Health Organization",
+      "Nongovernmental Organizations",
+      "Multinational Corporation"
+    ],
+    "sections": [
+      {
+        "label": "Causation — KC-6.3.II.A",
+        "heading": "From the Ashes of Two Wars: Why States Built the UN",
+        "paragraphs": [
+          "The <span class=\"kt\">League of Nations</span>, created in 1920 after the First World War, was history's first attempt to prevent war through a permanent international body. Its architects believed in <span class=\"kt\">collective security</span> — the idea that aggression against one state was the concern of all, and that the combined weight of nations could deter any aggressor. But the League was crippled from the start. The United States, whose president Woodrow Wilson had championed the idea, never joined after the Senate refused to ratify the treaty. The League commanded no army, and its decisions required near-unanimity. When aggression came, it could do little: it failed to stop the Japanese seizure of Manchuria in 1931, the Italian invasion of Ethiopia in 1935, or German rearmament through the decade. By 1939 the League was effectively dead, and a second, even deadlier world war followed. That failure became the founding lesson of the institution that would replace it.",
+          "As the Second World War drew to a close, the victorious Allies resolved not to repeat the League's mistakes. Delegates from fifty nations gathered at the 1945 <span class=\"kt\">San Francisco Conference</span> to draft a charter for a new organization. The <span class=\"kt\">United Nations</span> Charter was signed in June 1945 and took effect that October, binding fifty-one founding members. Its preamble announced a sweeping purpose: to <strong>save succeeding generations from the scourge of war</strong>, to reaffirm fundamental human rights, and to promote social progress through cooperation among states. Here was the CED's claim in the founders' own words — a new organization built with the <strong>stated goal of maintaining world peace and facilitating international cooperation</strong>.",
+          "Yet the UN was never designed to be a world government. It had no power to tax, no standing army, and no authority to override a member's laws. It depended entirely on member states for money, personnel, and enforcement — a deliberate choice, because sovereign states would never have joined a body that could command them. <span class=\"kt\">Sovereignty</span>, the principle that each state is the final authority within its own borders, remained the bedrock of the system. This is the paradox students must grasp: an organization created to constrain the behavior of states was itself built and controlled by those same states. Its power would rest not on force but on persuasion, legitimacy, moral pressure, and the willingness of governments to cooperate voluntarily — a foundation strong enough to convene the world, but too weak to command it.",
+          "The founders drew a subtler lesson as well. The League had failed partly because the most powerful states stood outside it or ignored it. To keep the great powers inside the new system, the UN's designers gave them permanent privileges — a bargain examined in the next section. The organization thus emerged from a specific historical moment: the wreckage of two world wars, the opening of the Cold War between the United States and the Soviet Union, and a hard-won conviction that repeated negotiation, however imperfect, was safer than the alternative. Context shaped every feature of its design."
+        ],
+        "callout": {
+          "label": "AP Skill — Causation",
+          "html": "The CED states that <strong>new international organizations, including the United Nations, formed with the stated goal of maintaining world peace and facilitating international cooperation</strong>. On the exam, explain the <em>cause</em>, not just the founding date: the League of Nations had failed and a second world war had killed tens of millions, so states built a stronger body. An answer that names the League's collapse as the driving cause earns more than one that simply reports the UN was created in 1945."
+        }
+      },
+      {
+        "label": "Continuity and Change — KC-6.3.II.A",
+        "heading": "Equality in One Room, Power in Another",
+        "paragraphs": [
+          "The UN's structure carried a deep contradiction — a promise of equality bolted onto a hierarchy of power. In the <span class=\"kt\">General Assembly</span>, every member state holds a single vote, from the smallest Pacific island to the largest superpower. This principle of <em>sovereign equality</em> made the Assembly a genuine forum where any nation could be heard, set agendas, and confer legitimacy on ideas that governments alone would never advance. But that equality came with a catch. The Assembly's resolutions are recommendations, not binding law; it can debate, condemn, and pressure, yet it cannot compel a single government to act against its will. The framers had granted symbolic equality precisely because it cost the great powers nothing — the votes that truly bound states were reserved for a smaller, more selective chamber.",
+          "Real enforcement power lived in the <span class=\"kt\">Security Council</span>, charged with the primary responsibility for international peace and security. Unlike the Assembly, the Council can issue binding resolutions, impose sanctions, and authorize the use of force. But it is not a body of equals. Five <span class=\"kt\">permanent members</span> — the United States, the Soviet Union (now Russia), the United Kingdom, France, and China — each hold a <span class=\"kt\">veto</span>, the power to block any substantive decision single-handedly. The remaining seats rotate among elected members who wield no such privilege. The veto froze the power realities of 1945 into the permanent architecture of the institution.",
+          "During the Cold War, the veto turned the Council into a battleground. The United States and the Soviet Union repeatedly canceled each other's initiatives, and the Council was often paralyzed on the era's gravest crises. In one revealing case, the UN authorized the defense of South Korea in 1950 only because the Soviet delegate was boycotting the Council and could not cast a veto. The feature meant to keep great powers inside the system also handed each of them the ability to shield itself and its allies from collective action — a limit built into the institution by intention rather than by accident.",
+          "The one feature that changed dramatically was membership. The UN began with fifty-one states; today it has roughly 193. That growth came from <span class=\"kt\">decolonization</span> — as dozens of Asian and African territories won independence in the decades after 1945, a body once dominated by a handful of Western and allied great powers became a nearly universal forum. Newly independent nations used the General Assembly to press anti-colonial and economic-justice agendas, to condemn apartheid in South Africa, and to give the <strong>Universal Declaration of Human Rights</strong> of 1948 lasting moral weight. The organization the great powers designed for themselves became, over time, a megaphone for the Global South. Here is the topic's core tension: the veto and the great-power hierarchy showed striking <em>continuity</em>, while the membership and its voice underwent profound <em>change</em> — proof that an institution's rules and its realities can drift apart."
+        ],
+        "callout": {
+          "label": "AP Skill — Continuity and Change",
+          "html": "The learning objective asks you to <strong>explain how and why globalization changed international interactions among states</strong>. A top answer holds continuity and change together: the Security Council <em>veto</em> preserved 1945's power hierarchy (continuity), while <em>decolonization</em> transformed the General Assembly into a near-universal forum (change). Naming a specific continuity and a specific change in the same argument is the complexity the exam rewards — do not settle for only one."
+        }
+      },
+      {
+        "label": "Comparison — KC-6.3.II.A",
+        "heading": "Beyond Peacekeeping: Agencies, NGOs, and the Limits of Sovereignty",
+        "paragraphs": [
+          "The UN's most visible work is <span class=\"kt\">peacekeeping</span>. Beginning with the first armed force deployed during the Suez Crisis in 1956, lightly armed \"blue helmets\" — soldiers loaned by member states and wearing the UN's colors rather than their own — have monitored ceasefires, separated combatants, and sometimes protected civilians. But peacekeeping exposes the institution's limits with unusual clarity. Missions require both Security Council authorization and the consent of the host state, and they depend on troops and funding that members choose whether to provide. A peacekeeping force can enter only where a government agrees to let it in, and it can accomplish only what its mandate and its budget allow. When those mandates outran their resources, as in several tragic operations of the 1990s, peacekeepers could not halt the violence they had been sent to witness — a failure that flowed directly from the sovereignty-first design of the whole system.",
+          "Beyond soldiers, a web of specialized agencies made international cooperation routine. The <span class=\"kt\">World Health Organization</span> coordinated the campaign that eradicated smallpox by 1980 — one of the great achievements in the history of medicine, and a disease that had killed hundreds of millions over the centuries. The UN High Commissioner for Refugees shelters people displaced by war; UNICEF works for children; the World Food Programme fights hunger across crises that no single state could manage alone. Each agency addresses a problem that spills across borders and answers to no one government. These bodies rarely make headlines, but they normalized the habit of states solving shared problems together, meeting year after year to negotiate standards, share data, and pool resources — the quiet, cumulative substance of <strong>facilitating international cooperation</strong> that the CED places at the heart of this topic.",
+          "International cooperation was never confined to the UN alone. <span class=\"kt\">Nongovernmental organizations</span> — the International Committee of the Red Cross, Amnesty International, Doctors Without Borders — operate across borders to deliver aid and defend human rights independent of any single government, sometimes shaming the very states that host them. Powerful economic and political institutions took shape alongside them: the International Monetary Fund and World Bank managed global finance and development, the World Trade Organization set common trade rules and settled disputes, and regional bodies such as the European Union pooled sovereignty so deeply that members share a currency and open borders. Even <span class=\"kt\">multinational corporations</span>, some with revenues larger than entire national economies, became global actors that states had to reckon with. The map of world affairs, once drawn almost entirely between governments, now teemed with institutions that governments neither fully owned nor fully controlled.",
+          "Together these institutions reveal what globalization did to relations among states. Denser trade, faster communication, and shared dangers made cooperation more necessary than ever — yet states still refused to surrender their <span class=\"kt\">sovereignty</span>. The UN commands no army of its own; the veto can still freeze the Security Council; agencies and peacekeepers act only where governments allow them. The result is a paradox that defines our era: a thickening network of global institutions layered over a world still organized into sovereign states, each guarding its own authority. That unresolved tension between cooperation and control is the essence of governance in a globalized world."
+        ],
+        "callout": {
+          "label": "AP Skill — Comparison",
+          "html": "The CED groups the UN with <strong>new international organizations that formed to facilitate international cooperation</strong>. A comparison prompt may ask you to weigh the UN against NGOs or multinational corporations. Note the distinction the exam wants: the UN is built <em>from states</em> and bound by their sovereignty, while NGOs and corporations operate across borders <em>independent</em> of any single government. Explaining that difference earns more than merely listing organizations side by side."
+        }
+      }
+    ],
+    "takeaway": "Topic 9.8 is one story in three acts. First, cause: the League of Nations had failed and two world wars had shattered the globe, so in 1945 states built the United Nations to keep the peace. Second, design: the General Assembly promised sovereign equality while the Security Council veto preserved great-power dominance — equality and hierarchy in one building. Third, the wider web: peacekeepers, agencies like the WHO, humanitarian NGOs, and economic bodies such as the IMF and WTO thickened cooperation, even as sovereignty endured. Globalization made states more connected but never less jealous of their own power. That is Governance in the world we live in today.",
+    "questions": [
+      {
+        "skill": "Evidence Usage",
+        "text": "Using specific evidence from the reading — the failure of the League of Nations, the 1945 UN Charter, or the founding purposes in its preamble — explain why states created the United Nations after the Second World War. What does your evidence reveal about what the founders wanted the organization to do?"
+      },
+      {
+        "skill": "Causation",
+        "text": "Explain how the Security Council veto both caused the paralysis of the Council during the Cold War and reflected the power realities of 1945. Why did the founders build this feature into the institution despite its obvious drawbacks?"
+      },
+      {
+        "skill": "Argumentation",
+        "text": "Make a defensible claim about how globalization changed interactions among states through international institutions. Then identify one piece of evidence — the veto, the persistence of sovereignty, or a peacekeeping failure — that complicates or qualifies your claim."
+      }
+    ]
+  },
+  "9.9": {
+    "deck": "How to weigh a century of dazzling scientific and technological change against the stubborn continuities — state power, inequality, and cultural difference — that never fully gave way, and how to turn that tension into an argument about the extent of transformation since 1900.",
+    "skillTags": [
+      "Continuity and Change",
+      "Argumentation"
+    ],
+    "support": {
+      "beforeYouRead": "Read this synthesis reading with two questions in your hand at all times. (1) <strong>What changed?</strong> Track three threads of transformation — <strong>technology &amp; environment</strong> (communication, transport, energy), <strong>life &amp; population</strong> (agriculture, medicine, fertility), and <strong>culture, rights &amp; structures</strong> (identity, inclusion, consumer culture). (2) <strong>What endured?</strong> For every dazzling change, name the continuity that qualifies it — a border, a price, an unequal access, a persistent state. An extent argument lives in the space between those two questions.",
+      "readingTarget": "By the end you should be able to <strong>explain the extent to which science and technology brought change from 1900 to the present</strong>; marshal specific evidence from across Unit 9 — the internet, shipping containers, the Green Revolution, antibiotics, birth control, and global consumer culture — to prove a claim; define a criterion for significance before you rank effects; and connect the whole argument to the SYN synthesis focus of evaluating change, continuity, significance, and complexity."
+    },
+    "vocab": [
+      "Shipping Containers",
+      "Internet",
+      "Cellular Communication",
+      "Air Travel",
+      "Petroleum",
+      "Nuclear Energy",
+      "Green Revolution",
+      "Norman Borlaug",
+      "Vaccines and Antibiotics",
+      "Birth Control",
+      "Digital Divide",
+      "Consumer Culture",
+      "Antimicrobial Resistance",
+      "Extent of Change"
+    ],
+    "sections": [
+      {
+        "label": "Continuity and Change — KC-6.1.I.A",
+        "heading": "The World Shrinks — But Not for Everyone",
+        "paragraphs": [
+          "The defining sensation of the century after 1900 was that distance was dissolving. The CED states that <strong>new communication and transportation modes reduced the problem of geographic distance</strong>, and the evidence is overwhelming. Radio broadcast a single voice to millions in the 1920s and 1930s; the telephone and then <span class=\"kt\">cellular communication</span> put conversation in the pocket; and the <span class=\"kt\">internet</span> — born as the U.S. military's ARPANET in 1969 and opened to the world after Tim Berners-Lee published the World Wide Web in 1991 — made near-instant contact across continents ordinary. A message that once traveled by ship for weeks now crossed the planet in the time it takes to press send.",
+          "Transportation compressed the map just as radically. <span class=\"kt\">Air travel</span> — accelerated by the jet age and the wide-body Boeing 747 after 1970 — turned intercontinental journeys from weeks into hours, reorganizing labor migration, mass tourism, and the global reach of militaries that could now project force across oceans in a day. Even more quietly transformative was Malcom McLean's <span class=\"kt\">shipping containers</span>, first sailed on the Ideal X in 1956. Before the container, loading a ship meant armies of dockworkers hauling crates by hand; the standardized steel box let cranes move cargo in a fraction of the time and cost. That single innovation made it economical to manufacture goods on one side of the world and sell them on the other, knitting national economies into a single circulatory system of supply chains — the physical backbone of everything we now call globalization.",
+          "Underneath the movement of people and information ran a revolution in energy. The CED notes that <strong>petroleum and nuclear energy technologies raised productivity and increased material production</strong>. Cheap <span class=\"kt\">petroleum</span> was the master resource of the twentieth century: it powered the cars, planes, and factories, fed the chemical fertilizers behind modern farming, and became the raw material for plastics and synthetics that filled everyday life. So central was oil that the 1973 OPEC embargo, launched by petroleum-exporting states, could throw the entire industrial world into recession overnight. <span class=\"kt\">Nuclear energy</span> promised near-limitless power from tiny amounts of fuel — and delivered new categories of danger, from the 1986 Chernobyl disaster to the 2011 Fukushima meltdown, alongside the long environmental bill of a fossil-fueled civilization now measured in a warming atmosphere. Energy technology raised output enormously, but it also bound human prosperity to escalating environmental risk.",
+          "Yet distance collapsed <em>unevenly</em>, and this is where the continuity lives. The same decades that produced the internet also produced the <span class=\"kt\">digital divide</span>: billions of people gained connection while billions more lacked reliable electricity, affordable bandwidth, or the money to buy a device, so a technology in principle available everywhere remained in practice concentrated among the wealthy. Borders often hardened even as bandwidth widened. Passports, visas, tariffs, and checkpoints still decided who could physically move, and governments learned to police the new networks — states erected national firewalls and surveillance systems to filter and monitor the very internet that was supposed to be borderless. The lesson for the synthesis argument is sharp: technology dramatically shrank the world for the connected and the mobile, while leaving the underlying geography of power, infrastructure, and inequality remarkably intact."
+        ],
+        "callout": {
+          "label": "AP Skill — Continuity and Change",
+          "html": "The CED says technology <strong>\"reduced the problem of geographic distance.\"</strong> Note the careful word: <em>reduced</em>, not erased. A top answer pairs a genuine change — container shipping making global manufacturing cheap — with the continuity that qualifies it — borders, cost, and unequal infrastructure still controlling access. Holding both at once, rather than declaring the world simply \"borderless,\" is exactly the complexity the exam rewards."
+        }
+      },
+      {
+        "label": "Causation — KC-6.1.I.C",
+        "heading": "Feeding, Curing, and Reshaping Humanity",
+        "paragraphs": [
+          "If the first thread reshaped space, the second reshaped life itself — and it may be the deepest change of the century. The CED states that <strong>the Green Revolution and commercial agriculture increased productivity and helped sustain a growing population</strong>. Beginning in Mexico and India in the mid-twentieth century, the agronomist <span class=\"kt\">Norman Borlaug</span> and the institutes behind the <span class=\"kt\">Green Revolution</span> bred high-yield, disease-resistant wheat and rice — such as the celebrated IR8 rice from the Philippines — that multiplied harvests. India, facing predictions of mass famine in the 1960s, instead approached self-sufficiency in grain, and the Green Revolution is credited with feeding perhaps a billion people who might otherwise have starved.",
+          "Medicine transformed survival on the same scale. The CED notes that <strong>vaccines and antibiotics increased human survival and longevity</strong>. Alexander Fleming's 1928 discovery of penicillin, developed into a mass-produced treatment during World War II, made once-lethal bacterial infections routinely curable, and a whole family of antibiotics followed. Jonas Salk's polio vaccine (1955) tamed a disease that had paralyzed children by the thousands, and a coordinated global vaccination campaign let the World Health Organization declare smallpox — a killer for millennia — eradicated in 1980, the first disease ever deliberately wiped from the earth. Combined with better sanitation, these <span class=\"kt\">vaccines and antibiotics</span> slashed infant and childhood mortality, the single biggest driver of longer average lives. In many regions life expectancy climbed from the forties into the seventies within one lifetime — a change so vast it reshaped every calculation a family made about work, children, and old age.",
+          "Technology even reached into the family. The CED observes that <strong>more effective birth control increased women's control over fertility and contributed to declining fertility rates in much of the world</strong>. The oral contraceptive pill, approved in the United States in 1960 and spreading across much of the world thereafter, let women separate sexuality from childbearing and time their pregnancies with a reliability no earlier method offered. Fertility rates fell sharply, average family sizes shrank, and — freed in part from continuous childbearing — women entered schools, professions, and public life in unprecedented numbers. The demographic consequences ran in two directions at once: rapid population growth as death rates fell, then, in the wealthiest societies, aging and even shrinking populations as birth rates dropped below replacement. That divergence between still-growing and now-graying societies is one of the defining human patterns of the twenty-first century, and it began in part with a pill.",
+          "But each gain carried a shadow that qualifies any triumphant story. The Green Revolution deepened dependence on irrigation, chemical fertilizers, pesticides, and purchased commercial seed, draining water tables and squeezing out small farmers who could not afford the new inputs, so that higher yields sometimes came with heavier debt and environmental damage. Overuse of antibiotics — in clinics and in livestock alike — bred <span class=\"kt\">antimicrobial resistance</span>, so that old infections began outrunning the very drugs that had once beaten them, a reminder that a technological victory can decay over time. And access remained brutally unequal: effective HIV/AIDS treatments existed in wealthy countries for years before they reached the hardest-hit regions of sub-Saharan Africa, where the epidemic killed millions who could not obtain the drugs. The transformation of survival was real, foundational, and genuinely demographic — but it was also uneven, costly, and, in places, reversible."
+        ],
+        "callout": {
+          "label": "AP Skill — Causation",
+          "html": "The CED credits the Green Revolution and medicine with helping to <strong>\"sustain a growing population\"</strong> and <strong>\"increase human survival and longevity.\"</strong> A strong answer explains the mechanism — higher yields plus antibiotics and vaccines lowered death rates faster than birth rates fell, driving explosive population growth — rather than just listing inventions. Then name a consequence, such as antimicrobial resistance or unequal access, to show you can trace an effect to its second-order cost."
+        }
+      },
+      {
+        "label": "Argumentation — KC-6.3.III–IV",
+        "heading": "Measuring the Revolution: What Actually Changed?",
+        "paragraphs": [
+          "The third thread is human self-understanding — rights, identity, and culture. The CED holds that <strong>rights-based discourse challenged old assumptions, while education and political and professional participation became more inclusive</strong>. The Universal Declaration of Human Rights (1948) established a global vocabulary of dignity that movements everywhere could invoke against their own governments. Decolonization dismantled European empires and multiplied sovereign nations across Asia and Africa; civil-rights and anti-apartheid struggles attacked legal racial hierarchy; feminist movements won the vote, property rights, and access to work; and later campaigns pressed for the rights of workers, indigenous peoples, and LGBTQ people. Mass education expanded on every continent, literacy climbed, and groups once shut out — women, colonized peoples, ethnic and religious minorities — moved into universities, professions, and legislatures. The <em>idea</em> of who counted as a full human being with claims on the state widened dramatically over the century.",
+          "Culture, too, went global. The CED notes that <strong>arts, entertainment, popular culture, and consumer culture increasingly reflected a globalized society and crossed national borders</strong>. Hollywood and Bollywood films, televised events like the World Cup and the Olympics, and later K-pop and streaming platforms reached audiences on every continent, while brands like Coca-Cola and McDonald's turned <span class=\"kt\">consumer culture</span> into a shared global language of logos and tastes. Yet this was never simple homogenization. Local societies adapted, remixed, and sometimes fiercely resisted imported culture — dubbing and reworking foreign media, blending global styles with regional traditions, and mounting nationalist or religious backlashes against what they saw as cultural invasion. The result was a genuinely globalized cultural marketplace in which local and global identities negotiated with each other rather than one simply erasing the other.",
+          "Against all this genuine change stands the continuity that any honest synthesis must weigh. States did not wither away. They responded to the economic challenges of the century in a variety of ways — through planning, welfare, liberalization, or authoritarian control — but through all of it, borders, nationalism, standing militaries, and vast economic inequality between and within nations persisted through every technological revolution. Rights were proclaimed in grand declarations yet unevenly enforced, and the gap between promise and reality remained wide for the world's poor, colonized, and marginalized. The wealth generated by new technology concentrated in some regions and classes while the risks — dangerous factory work, environmental damage, financial shocks — fell disproportionately on workers and poorer nations, echoing patterns of unequal exchange that reach back to the age of empire. The structures of power proved far more durable than the tools that operated within them.",
+          "This is why the learning objective asks you to judge the <span class=\"kt\">extent of change</span>, not merely to catalog inventions. An extent argument must first define its criterion — was change broad, deep, rapid, durable, or foundational? — because the answer genuinely shifts with the standard you choose. Measured by demography and daily life, the transformation since 1900 was arguably the most profound in human history: more people lived longer, ate better, moved farther, and communicated faster than any generation before them. Measured instead by the persistence of the sovereign state, of inequality, and of cultural and national difference, the deeper structures endured beneath the gleaming new machinery. The most sophisticated answer refuses to pick one and ignore the other; it names both the decisive change and the durable continuity, states the criterion by which it is judging, and then argues which weighs more. That deliberate weighing of change against continuity is precisely the synthesis this unit demands."
+        ],
+        "callout": {
+          "label": "AP Skill — Argumentation",
+          "html": "The learning objective asks you to <strong>\"explain the extent to which science and technology brought change from 1900 to the present.\"</strong> The word <em>extent</em> is the whole assignment: you cannot answer it without first defining a criterion for significance — breadth, depth, or durability — and defending that choice. A top-scoring thesis names a decisive change (medicine and agriculture reshaping survival) <em>and</em> a decisive continuity (enduring state power and inequality), then argues which outweighs the other. Nuance that qualifies your own claim is the mark of complexity."
+        }
+      }
+    ],
+    "takeaway": "Topic 9.9 is not a new story — it is the whole of Unit 9 turned into one argument along three threads. First, technology &amp; environment: the internet, containers, air travel, petroleum, and nuclear power shrank the world, but only for the connected. Second, life &amp; population: the Green Revolution, vaccines, antibiotics, and birth control remade survival itself, at real cost. Third, culture, rights &amp; structures: identity and consumer culture went global while states, borders, and inequality endured. Change in the machinery of daily life; continuity in the structures of power. To evaluate the extent of change, define your criterion, weigh both, and decide which matters more — the essence of historical synthesis.",
+    "questions": [
+      {
+        "skill": "Evidence Usage",
+        "text": "Choose ONE technology from the reading — the internet, shipping containers, the Green Revolution, antibiotics, or birth control — and describe its specific development with concrete evidence (names, dates, or places). Then explain both a change it produced and a limit or unequal effect that qualifies that change."
+      },
+      {
+        "skill": "Continuity and Change",
+        "text": "Across the period from 1900 to the present, identify ONE thing that genuinely changed because of science and technology AND ONE structure or pattern that endured despite it. Explain how both can be true at the same time, using evidence from at least two of the reading's three threads."
+      },
+      {
+        "skill": "Argumentation",
+        "text": "The reading argues that an \"extent\" claim depends on the criterion you choose. Make a defensible thesis about the extent to which science and technology transformed the world since 1900, state the criterion for significance you are using, and identify one piece of evidence that complicates your own argument."
       }
     ]
   }
