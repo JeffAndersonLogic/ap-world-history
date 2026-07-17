@@ -11,6 +11,7 @@ const path = require('path');
 const { inspect } = require('util');
 const vm = require('vm');
 const { renderFirst10Page } = require('./lib/first10-page');
+const F10_CONTENT = require('./lib/f10-content');
 
 const ROOT = path.resolve(__dirname, '..');
 const UNIT = path.join(ROOT, 'unit-9');
@@ -408,8 +409,8 @@ function lessonShell(topic) {
 }
 
 function first10Page(topic) {
-  if (topic.f10) {
-    const f = topic.f10;
+  const f = F10_CONTENT[topic.id] || topic.f10;
+  if (f) {
     return renderFirst10Page({
       unit: 9,
       topicId: topic.id,

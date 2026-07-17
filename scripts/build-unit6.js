@@ -12,6 +12,7 @@ const path = require('path');
 const { inspect } = require('util');
 const vm = require('vm');
 const { renderFirst10Page } = require('./lib/first10-page');
+const F10_CONTENT = require('./lib/f10-content');
 
 const ROOT = path.resolve(__dirname, '..');
 const UNIT = path.join(ROOT, 'unit-6');
@@ -312,6 +313,26 @@ function rendererConfig(topic) {
 }
 
 function first10Page(topic) {
+  const f = F10_CONTENT[topic.id] || topic.f10;
+  if (f) {
+    return renderFirst10Page({
+      unit: 6,
+      topicId: topic.id,
+      title: topic.title,
+      subtitle: f.deck,
+      learningObjective: topic.lo,
+      skillTags: f.skillTags,
+      supportCards: f.support,
+      vocabulary: f.vocab,
+      sections: f.sections,
+      skills: f.questions.map((q) => q.skill),
+      questions: f.questions,
+      takeaway: f.takeaway,
+      lessonHref: `lesson-${topic.id.replace('.', '-')}-${topic.slug}.html`,
+      coachUrl: COACH_URL,
+      submitNote: SUBMIT_NOTE
+    });
+  }
   const skills = ['Developments and Processes', 'Causation', 'Argumentation'];
   const questions = [
     'What historical process is introduced here, and what specific detail matters most?',
