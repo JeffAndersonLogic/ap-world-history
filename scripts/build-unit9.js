@@ -53,6 +53,65 @@ const topics = [
     ],
     source: ['Structural Adjustment Agreement, classroom adaptation', 'A debtor government agrees to devalue its currency, reduce subsidies, sell selected state enterprises, and open markets in exchange for emergency credit. Supporters predict efficiency and export growth; critics warn that immediate costs will fall on workers and consumers.', ['What conditions shaped the government’s bargaining power?', 'Who would likely support and oppose these terms?', 'How can this source demonstrate both change and continuity in the global economy?']],
     surreal: ['The Shirt with Twelve Passports', 'Imagine tracing one shirt through cotton, design, finance, dyeing, assembly, shipping, advertising, and sale—each in a different country.', 'What does the shirt reveal about the changed geography of production and the continuity of unequal bargaining power?'],
+    f10: {
+      deck: 'How the world economy was rewritten after 1900 — the turn to free markets, the new global division of labor, and the institutions and corporations that spread free-market rules while old patterns of inequality endured.',
+      skillTags: ['Continuity and Change', 'Causation'],
+      support: {
+        beforeYouRead: 'As you read, track two forces at once. (1) <strong>Change</strong> — the spread of economic liberalization, the new geography that split knowledge economies from manufacturing zones, and the rise of global institutions and multinational corporations. (2) <strong>Continuity</strong> — the unequal, profit-driven structure of the world economy and the enduring power of the state. For every example, ask which force it illustrates — and whether it illustrates both at once.',
+        readingTarget: 'By the end you should be able to explain the continuities and changes in the global economy from 1900 to the present; use specific evidence — Reagan, Thatcher, Deng Xiaoping, Pinochet, the WTO, NAFTA, ASEAN, and named multinationals — to prove a claim; and connect these developments to the ECN thematic focus that societies are shaped by how they produce, exchange, and consume.'
+      },
+      vocab: ['Economic Liberalization', 'Free-Market Economics', 'Privatization', 'Deng Xiaoping', 'Special Economic Zones', 'Knowledge Economy', 'Global Division of Labor', 'Global Supply Chains', 'Multinational Corporation', 'WTO', 'NAFTA', 'ASEAN', 'Structural Adjustment'],
+      sections: [
+        {
+          label: 'Continuity and Change — KC-6.3.I.D',
+          heading: 'A New Rulebook: The Turn to Free Markets',
+          paragraphs: [
+            'For most of the twentieth century, governments across the political spectrum assumed that the state should actively steer the economy — owning key industries, protecting home markets, and managing employment. In the late twentieth century that assumption broke down. In a trend <strong>accelerated by the end of the Cold War</strong>, many governments turned toward <span class="kt">economic liberalization</span>: they reduced regulation, privatized state-owned enterprises, welcomed foreign investment, and argued that <span class="kt">free-market economics</span> would allocate resources more efficiently than government planning ever could.',
+            'In the United States, <span class="kt">Ronald Reagan</span> cut taxes, loosened regulation, and weakened organized labor. In Britain, <span class="kt">Margaret Thatcher</span> pursued aggressive <span class="kt">privatization</span> — selling off state-owned telephone, gas, and steel industries — and broke the power of the coal miners’ unions. Reagan and Thatcher shared a conviction that shrinking the state would unleash private enterprise, and their partnership helped make "free markets" the dominant economic language of the Western world.',
+            'The most striking convert was communist China. Under <span class="kt">Deng Xiaoping</span>, China opened <span class="kt">Special Economic Zones</span> such as Shenzhen, invited in foreign capital, and let market activity flourish — all while the Communist Party kept an absolute monopoly on political power. Deng called it "socialism with Chinese characteristics." The lesson was unmistakable: a one-party state could adopt the tools of the market without surrendering political control.',
+            'Chile made the same point from the opposite direction. Under the military dictatorship of Augusto Pinochet, U.S.-trained economists known as the "Chicago Boys" imposed sweeping free-market reforms — by force. Taken together, Reagan’s democracy, Thatcher’s parliament, Deng’s one-party state, and Pinochet’s dictatorship show that <em>economic liberalization did not require — and did not necessarily produce — political liberalization.</em> The same economic direction traveled through four very different political systems.'
+          ],
+          callout: {
+            label: 'AP Skill — Continuity and Change',
+            html: 'The CED says liberalization was <strong>"accelerated by the end of the Cold War."</strong> The exam rewards explaining the mechanism, not just naming the date: the collapse of the Soviet model removed the strongest alternative to capitalism, and governments raced to adopt market policies. Grouping <strong>Reagan, Thatcher, Deng, and Pinochet</strong> in one argument is powerful because it shows the <em>same</em> economic change moving through <em>different</em> political systems.'
+          }
+        },
+        {
+          label: 'Causation — KC-6.3.I.E',
+          heading: 'A New Geography of Work',
+          paragraphs: [
+            'While the rules were changing, so was the map of who did which work. A revolution in information and communications technology — satellites, fiber-optic cables, the internet, and the standardized shipping container — collapsed the cost of moving information and goods across the planet. For the first time, a firm could design a product in one country, finance it in a second, assemble it in a third, and sell it in a fourth, coordinating all of it in near-real time.',
+            'This produced a new split in the world economy. Some regions specialized in <span class="kt">knowledge economies</span> built on research, design, software, and finance — Finland, Japan, and the United States among them. These economies rewarded advanced education and paid high wages for work that was difficult to relocate.',
+            'At the same time, <strong>industrial production and manufacturing were increasingly situated in Asia and Latin America.</strong> Labor-intensive factory work moved to lower-wage production zones in Vietnam, Bangladesh, Mexico, and Honduras. Bangladesh became one of the world’s largest garment exporters; Mexican <em>maquiladoras</em> assembled goods for the U.S. market. Workers in these zones gained jobs and export income, but they often faced low wages, unsafe conditions, and little bargaining power — a reality made brutally visible when Bangladesh’s Rana Plaza garment complex collapsed in 2013, killing more than a thousand workers.',
+            'The result was a <span class="kt">global division of labor</span> stitched together by <span class="kt">global supply chains</span>. A single smartphone or pair of shoes might cross a dozen borders before reaching a consumer. The geography was genuinely new — but the split between high-value, high-wage regions and low-wage production zones echoed older patterns of unequal exchange that stretched back to the age of empire.'
+          ],
+          callout: {
+            label: 'AP Skill — Causation',
+            html: 'The CED states that <strong>"industrial production and manufacturing were increasingly situated in Asia and Latin America."</strong> A strong answer explains <em>why</em>, not just <em>that</em>: information technology made it possible to coordinate production across oceans, and large wage differences made it profitable to do so. Technology is the enabling cause; cost is the driving cause. Name both.'
+          }
+        },
+        {
+          label: 'Continuity and Change — KC-6.3.II.B',
+          heading: 'New Rules, Old Patterns',
+          paragraphs: [
+            'As free-market ideas spread, new institutions arose to enforce them on a global scale. The <span class="kt">World Trade Organization</span> (WTO), founded in 1995, set common trade rules and settled disputes worldwide. Regional agreements deepened the pattern: <span class="kt">NAFTA</span> linked the economies of Canada, Mexico, and the United States in 1994, while <span class="kt">ASEAN</span> expanded economic cooperation across Southeast Asia. Trade grew — but so did exposure to foreign competition and the sudden relocation of factories.',
+            'Alongside these institutions rose the <span class="kt">multinational corporation</span>. Firms such as Nestlé, Nissan, and Mahindra and Mahindra ran production and sold goods across many states at once. The largest multinationals commanded revenues greater than the entire economies of some countries that hosted their factories, giving private corporations real leverage over public policy.',
+            'Yet the state did not disappear. Governments still controlled currencies, labor law, tariffs, and investment rules. When indebted nations sought emergency loans, lenders such as the International Monetary Fund attached conditions — <span class="kt">structural adjustment</span> programs demanding devaluation, subsidy cuts, and privatization. Globalization redistributed economic power, but states remained the arenas where citizens fought over who would gain and who would absorb the risk.',
+            'This is where the topic’s central tension lives. The <em>machinery</em> of the world economy changed dramatically — new technology, new institutions, a new geography of work. But the <em>deep pattern</em> showed remarkable <span class="kt">continuity</span>: the global economy remained unequal and driven by profit, with wealth concentrating in some regions while risk fell on workers and poorer nations. The strongest AP argument weighs the genuine changes against that durable continuity.'
+          ],
+          callout: {
+            label: 'AP Skill — Argumentation',
+            html: 'The learning objective asks you to explain <strong>continuity AND change</strong> in the global economy from 1900 to the present. A top-scoring response names a specific change — the WTO setting global trade rules — <em>and</em> a specific continuity — unequal exchange inherited from the imperial era — and explains how both are true at the same time. Holding both in a single argument is the mark of complexity the exam rewards.'
+          }
+        }
+      ],
+      takeaway: 'Topic 9.4 is one argument in three moves. First, the rulebook changed: after the Cold War, Reagan, Thatcher, Deng Xiaoping, and Pinochet drove free-market liberalization across four very different political systems. Second, the map of work changed: information technology split the globe into high-wage knowledge economies and low-wage manufacturing zones. Third, the rules went global — the WTO, NAFTA, ASEAN, and multinational corporations — even as states kept real power and the old pattern of unequal exchange survived. Change in the machinery; continuity in who wins. That is Economic Systems from 1900 to today.',
+      questions: [
+        { skill: 'Evidence Usage', text: 'Choose ONE leader — Reagan, Thatcher, Deng Xiaoping, or Pinochet — and describe the specific free-market policies they pursued. What does your example reveal about the claim that economic liberalization could take hold under very different political systems?' },
+        { skill: 'Causation', text: 'Explain how the revolution in information and communications technology reshaped the global division of labor after 1970. Why did knowledge-intensive work and labor-intensive manufacturing end up concentrated in different regions of the world?' },
+        { skill: 'Argumentation', text: 'Make a defensible claim about what changed AND what stayed the same in the global economy from 1900 to the present. Then identify one piece of evidence that complicates or qualifies your argument.' }
+      ]
+    },
     scenario: {
       file: 'structural-adjustment-cabinet.html', title: 'The Structural Adjustment Cabinet', date: 'Accra, 1983',
       dilemma: 'A debt and currency crisis has emptied foreign-exchange reserves. International lenders offer emergency credit if the government devalues, cuts subsidies, and restructures state enterprises.',
@@ -349,6 +408,26 @@ function lessonShell(topic) {
 }
 
 function first10Page(topic) {
+  if (topic.f10) {
+    const f = topic.f10;
+    return renderFirst10Page({
+      unit: 9,
+      topicId: topic.id,
+      title: topic.title,
+      subtitle: f.deck,
+      learningObjective: topic.lo,
+      skillTags: f.skillTags,
+      supportCards: f.support,
+      vocabulary: f.vocab,
+      sections: f.sections,
+      skills: f.questions.map((q) => q.skill),
+      questions: f.questions,
+      takeaway: f.takeaway,
+      lessonHref: `lesson-${topic.id.replace('.', '-')}-${topic.slug}.html`,
+      coachUrl: COACH_URL,
+      submitNote: SUBMIT_NOTE
+    });
+  }
   const skills = topic.id === '9.9'
     ? ['Developments and Processes', 'Continuity and Change', 'Argumentation']
     : ['Developments and Processes', 'Causation', 'Argumentation'];
