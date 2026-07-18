@@ -110,22 +110,22 @@ window.FOUNDATION_TOPIC = {
     items: [
       {
         title: 'Artifact 1 (September): An Early Checkpoint Response',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/A_writing_workshop_%2814957175869%29.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:A_writing_workshop_(14957175869).jpg',
-        caption: 'Sample: "Song China had a lot of trade because they had a big navy and good boats. Also they invented paper money.", A first-week response. Correct, but flat. The student names two facts. They have not yet learned to place Song China in context or connect those facts to causation. This is where every historian starts.',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG',
+        caption: 'Sample: "Song China had a lot of trade because they had a big navy and good boats. Also they invented paper money." A first-week response. Correct, but flat. The student names two facts. They have not yet learned to place Song China in context or connect those facts to causation. This is where every historian starts.',
         prompt: 'What is this response missing that a stronger version of you, in April, would add?'
       },
       {
         title: 'Artifact 2 (January): A BeInTheRoom Decision',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Meeting_room_at_the_ONS.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Meeting_room_at_the_ONS.jpg',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
         caption: 'Sample: "As Mansa Musa\'s advisor, I would spend the gold more slowly on the hajj to Mecca, because sudden inflows of West African gold into Egyptian markets crashed local prices, damaging Mali\'s reputation as a trade partner. Long-term influence matters more than one dramatic gesture.", A mid-year BeInTheRoom response. The student is making a decision as a historical actor, weighing evidence, and using causation naturally.',
         prompt: 'What has this student learned to do by January that they were not doing in September?'
       },
       {
         title: 'Artifact 3 (April): A DBQ Opening',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Old_book_bindings.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Old_book_bindings.jpg',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqamat_al-Hariri,_folio_86r_(detail).jpg',
         caption: 'Sample: "Industrialization did not liberate workers so much as it re-legitimized coercion. From Manchester\'s cotton mills to Belgian rubber camps in the Congo, the surplus that industrial capitalism produced depended on forms of unfree labor that its own political rhetoric claimed to have abolished, a contradiction that shaped both nineteenth-century imperialism and the labor movements that resisted it.", A late-year DBQ thesis. The student has a voice, a position, and a plan.',
         prompt: 'What is different about this student\'s writing that is not just about learning more content?'
       }
@@ -199,9 +199,9 @@ window.FOUNDATION_TOPIC = {
         '**Sourcing.** Read a document like a lawyer reads a witness: who made it, when, why, for whom, and what that tells you about what it says. The **source of a claim** matters as much as the claim itself.'
       ],
       image: {
-        title: 'Six Skills at Work',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/A_writing_workshop_%2814957175869%29.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:A_writing_workshop_(14957175869).jpg',
+        title: 'Confucius, Tang Dynasty depiction',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg',
         caption: 'The six skills are habits of mind, practiced in writing every week until they become automatic.'
       }
     },
@@ -215,9 +215,9 @@ window.FOUNDATION_TOPIC = {
         '**10 Checkpoint 2** is a synthesis, pulling threads across the modules into a single argument. This is the reflex the AP exam rewards.'
       ],
       image: {
-        title: 'Meeting Room at ONS',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Meeting_room_at_the_ONS.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Meeting_room_at_the_ONS.jpg',
+        title: 'A Library in the Golden Islamic Age',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:A_Library_in_Golden_Islamic_Age.jpg',
         caption: 'The 10-module rhythm is the room you enter every class period. The furniture doesn\'t change, the work you do inside it does.'
       }
     },
@@ -231,10 +231,10 @@ window.FOUNDATION_TOPIC = {
         'This is the receipt for what happened to your mind this year. It is not a grade. It is a portable, permanent artifact of who you became.'
       ],
       image: {
-        title: 'Old Book Bindings',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Old_book_bindings.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Old_book_bindings.jpg',
-        caption: 'The portfolio is a bound record of your development as a historical thinker, your own writing, curated into a letter you own.'
+        title: 'Maqamat al-Hariri manuscript',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqamat_al-Hariri,_folio_86r_(detail).jpg',
+        caption: 'A medieval manuscript, a body of writing preserved as a single document. Your portfolio is a version of the same idea, your own writing curated into a letter you own.'
       }
     },
     {
