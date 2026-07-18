@@ -43,6 +43,7 @@ window.BH_FORM = {
   },
 
   topics: {
+    'f0': 'Foundations 0 - Intro to BeHistorical',
     'f1': 'Foundations 1 - Geography',
     'f2': 'Foundations 2 - Belief Systems',
     'f3': 'Foundations 3 - States & Power',
@@ -213,6 +214,7 @@ window.BH_FORM = {
     '9.7': { first10: ["Evidence Usage","Causation","Argumentation"], skillBuilder: ["Sourcing","Argumentation"], checkpoint1: ["Evidence Usage","Sourcing"], evidenceLab: ["Evidence Usage","Sourcing"], primarySource: ["Sourcing","Evidence Usage"], beInTheRoom: ["Contextualization","Argumentation"], checkpoint2: ["Causation","Argumentation"] },
     '9.8': { first10: ["Evidence Usage","Causation","Argumentation"], skillBuilder: ["Causation","Claims & Thesis"], checkpoint1: ["Evidence Usage","Causation"], evidenceLab: ["Evidence Usage","Comparison"], primarySource: ["Sourcing","Evidence Usage"], beInTheRoom: ["Contextualization","Argumentation"], checkpoint2: ["Causation","Argumentation"] },
     '9.9': { first10: ["Evidence Usage","Continuity and Change Over Time (CCOT)","Argumentation"], skillBuilder: ["Continuity and Change Over Time (CCOT)","Claims & Thesis"], checkpoint1: ["Evidence Usage","Causation"], evidenceLab: ["Evidence Usage","Argumentation"], primarySource: ["Sourcing","Evidence Usage"], beInTheRoom: ["Contextualization","Argumentation"], checkpoint2: ["Continuity and Change Over Time (CCOT)","Argumentation","Claims & Thesis"] },
+    'f0': { first10: ["Contextualization","Argumentation","Sourcing"], skillBuilder: ["Contextualization","Comparison","Causation","Continuity and Change Over Time (CCOT)","Argumentation","Sourcing"], checkpoint1: ["Argumentation","Claims & Thesis"], evidenceLab: ["Evidence Usage","Contextualization"], primarySource: ["Sourcing","Evidence Usage"], beInTheRoom: ["Contextualization","Argumentation"], checkpoint2: ["Argumentation","Claims & Thesis"] },
     'f1': { first10: ["Causation","Contextualization","Argumentation"], skillBuilder: ["Causation","Argumentation"], checkpoint1: ["Evidence Usage","Causation"], evidenceLab: ["Evidence Usage","Causation"], primarySource: ["Sourcing","Evidence Usage"], beInTheRoom: ["Contextualization","Argumentation"], checkpoint2: ["Causation","Argumentation","Claims & Thesis"] },
     'f2': { first10: ["Causation","Continuity and Change Over Time (CCOT)","Argumentation"], skillBuilder: ["Comparison","Argumentation"], checkpoint1: ["Evidence Usage","Comparison"], evidenceLab: ["Evidence Usage","Comparison"], primarySource: ["Sourcing","Evidence Usage"], beInTheRoom: ["Contextualization","Argumentation"], checkpoint2: ["Comparison","Argumentation","Claims & Thesis"] },
     'f3': { first10: ["Causation","Continuity and Change Over Time (CCOT)","Argumentation"], skillBuilder: ["Comparison","Argumentation"], checkpoint1: ["Evidence Usage","Comparison"], evidenceLab: ["Evidence Usage","Comparison"], primarySource: ["Sourcing","Evidence Usage"], beInTheRoom: ["Contextualization","Argumentation"], checkpoint2: ["Comparison","Argumentation","Claims & Thesis"] },
