@@ -4,7 +4,7 @@ window.FOUNDATION_TOPIC = {
   code: 'FOUNDATIONS 2',
   title: 'Belief Systems & Cultural Exchange',
   subtitle: 'How did six major belief systems — Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam — shape societies and spread across the world?',
-  heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buddha_statue_at_Borobudur_Temple.jpg',
+  heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Stupa_Borobudur.jpg',
 
   commandCopy: 'The central move of Day 2 is getting students to understand the six major belief systems — Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam — not as private spiritual matters but as public institutional systems that organize labor, legitimate authority, structure family life, fund education, and connect communities across enormous distances. Students learn the core idea of each system, how each spread, and how each adapted through syncretism. When students see these belief systems as institutions rather than just theologies, they can analyze them on AP exams with real historical depth.',
 
@@ -109,8 +109,8 @@ window.FOUNDATION_TOPIC = {
     items: [
       {
         title: 'Angkor Wat, Khmer Empire (completed c.1150 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat_temple.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat_temple.jpg',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
         caption: 'Angkor Wat was built by Suryavarman II as a Hindu temple identifying the Khmer king with the god Vishnu. At 402 acres it is the largest religious structure ever built, and its construction mobilized hundreds of thousands of workers — Hinduism functioning as a political institution far from India.',
         prompt: 'What does Angkor Wat reveal about how Hindu kingship ideology functioned as a political institution in the Khmer Empire? Why would a Southeast Asian ruler adopt Hindu cosmology?'
       },
@@ -202,10 +202,10 @@ window.FOUNDATION_TOPIC = {
         '**Hindu kingship** and temple economies made it a political and economic institution: the *devaraja* (god-king) concept let rulers claim cosmic authority, which is why Southeast Asian kings adopted it — as at Angkor Wat.'
       ],
       image: {
-        title: 'Angkor Wat, Khmer Empire (completed c.1150 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat_temple.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat_temple.jpg',
-        caption: 'Angkor Wat — the largest religious structure ever built — was a Hindu temple to Vishnu, a royal monument, and a map of the Hindu cosmos. It shows Hinduism functioning as political ideology far beyond India.'
+        title: 'Brihadisvara Temple, Thanjavur, India (completed c.1010 CE)',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Brihadeeswara_Temple_-_Thanjavur.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Brihadeeswara_Temple_-_Thanjavur.jpg',
+        caption: 'The Brihadisvara Temple at Thanjavur, built by the Chola dynasty and dedicated to Shiva, is one of the great temples of South Asia. Major Hindu temples like it owned land, employed hundreds, and anchored the local economy — Hinduism as an economic and political institution in its South Asian heartland.'
       }
     },
     {
@@ -217,10 +217,10 @@ window.FOUNDATION_TOPIC = {
         'Buddhism adapted dramatically as it spread — **Chan (Zen) Buddhism** blended Buddhist meditation with Daoist aesthetics in China, and **Pure Land** Buddhism opened the tradition to ordinary people. Rulers adopted it for cosmic legitimacy, as at Borobudur in Java.'
       ],
       image: {
-        title: 'Buddha Statue at Borobudur, Java (c.9th century CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buddha_statue_at_Borobudur_Temple.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Buddha_statue_at_Borobudur_Temple.jpg',
-        caption: 'Borobudur in Java is the largest Buddhist monument in the world, built by the Sailendra dynasty. Its location far from India shows how Buddhism spread by sea and was adopted by rulers seeking legitimacy.'
+        title: 'Borobudur, Java (c.9th century CE)',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Stupa_Borobudur.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Stupa_Borobudur.jpg',
+        caption: 'Borobudur in Java — the largest Buddhist monument in the world, built by the Sailendra dynasty — is ringed by bell-shaped stupas, each once sheltering a Buddha. Its location far from India shows how Buddhism spread by sea and was adopted by rulers seeking legitimacy.'
       }
     },
     {
@@ -248,9 +248,9 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Great Mosque of Kairouan (Tunisia, founded 670 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Kairouan_panoramic_view.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Kairouan_panoramic_view.jpg',
-        caption: 'The Great Mosque of Kairouan is one of the oldest in the Islamic world. Mosques served as prayer hall, court, school, and community center — a single institution performing many civic functions.'
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Kairouan,_prayer_hall.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Kairouan,_prayer_hall.jpg',
+        caption: 'The prayer hall of the Great Mosque of Kairouan — one of the oldest mosques in the world — rests on rows of ancient columns. Mosques served as prayer hall, court, school, and community center: a single institution performing many civic functions.'
       }
     }
   ],
