@@ -64,16 +64,16 @@ window.FOUNDATION_TOPIC = {
   },
 
   first10: {
-    title: 'First & 10: A Defeat That Changed What People Read',
+    title: 'First & 10: Three Networks That Moved the World',
     embedUrl: 'first-and-10-foundations-4-trade-networks-capture.html',
     paragraphs: [
-      'In 751 CE, two empires collided in a river valley in Central Asia near the Talas River, in modern Kyrgyzstan, far from either of their capitals. On one side: Tang Dynasty forces, allied with local Central Asian rulers, pushing to maintain Chinese influence over the Silk Road oasis cities. On the other: Abbasid Caliphate forces under Ziyad ibn Salih, expanding Islamic political control eastward. It was not the largest battle in either empire\'s history. But among the prisoners the Abbasid forces captured were Chinese papermakers.',
-      'Paper had been invented in China, credited to Cai Lun around 105 CE. For six centuries it had remained a Chinese technology. Within years of Talas, paper mills appeared in Samarkand. Within decades, they spread across the Islamic world, Baghdad had mills by 794 CE, Egypt by 900 CE, Morocco by 1100 CE, and Spain by 1150 CE. Paper was cheaper than parchment and more durable than papyrus. It enabled the mass production of books. The Islamic world\'s extraordinary intellectual flowering between 800 and 1200 CE, the translations at the House of Wisdom, al-Khwarizmi\'s algebra, Ibn Sina\'s medical encyclopedias, the works of Averroes, all of it was written on paper that reached the Islamic world because of a military defeat in a Central Asian river valley.',
-      'This is what historians mean when they say trade networks, and the conflict and contact that accompanied them, moved more than goods. No one planned the paper technology transfer. It was an accident of war. But the Silk Road had created the conditions that made the accident possible: Chinese craftsmen were present in Central Asia because the trade routes brought them there. Their knowledge traveled with them. When the political situation changed, the knowledge stayed.',
-      'The same logic applies to the other transformations that moved along Afro-Eurasian networks before 1200. Buddhism did not spread to China because Chinese emperors ordered it imported. It spread because Buddhist monks traveled alongside Silk Road merchants, because merchants patronized monasteries at oasis stops as religious insurance for their journeys, because Chinese rulers found Buddhist concepts of divine kingship politically useful. The Plague of Justinian (541 CE) did not spread from Egypt to Constantinople because anyone wanted it to, it spread because the same grain ships that fed Constantinople also carried rats from the Egyptian Nile Delta.',
-      'Trade networks are systems. Everything that moves through them, goods, people, animals, ideas, pathogens, moves together. The Silk Roads, the Indian Ocean monsoon system, and the trans-Saharan caravan routes were not three separate phenomena. They were the circulatory system of the Afro-Eurasian world, and by c.1200 CE, that world\'s pulse was strong enough to sustain the most commercially sophisticated economies on earth.'
+      'A trade network is a system of routes and relationships that carries goods between distant societies, but the goods are only the most visible layer. Along with silk and salt travel merchants and missionaries, seeds and livestock, tools and techniques, and, invisibly, the germs those travelers carry. Before c.1200, three great networks did most of this work across Afro-Eurasia: the overland Silk Roads, the maritime Indian Ocean system, and the trans-Saharan caravan routes.',
+      'The Silk Roads were not a single road but a branching relay network running from the Chinese capital of Chang\'an, through the oasis cities of Central Asia, on to Samarkand, Persia, and the Mediterranean. No single merchant traveled the whole way; goods changed hands again and again, passing from Chinese to Sogdian to Persian to Arab middlemen. The relay carried silk, porcelain, and paper west and horses, glassware, and spices east, and it also carried Buddhist monks who traveled with the caravans and the monasteries the merchants funded along the way.',
+      'The Indian Ocean network ran on the monsoon winds, which reverse with the seasons: the southwest monsoon (June to September) pushed ships toward India and Southeast Asia, and the northeast monsoon (November to March) carried them home. This reliable reversal created a natural round-trip schedule and made the Indian Ocean the world\'s first sustained maritime trade network. Wealthy port cities such as Aden, Calicut, Malacca, Quanzhou, and Kilwa grew at its junctions, and Chinese porcelain found at Kilwa in East Africa proves the network reached across four continents.',
+      'For most of history the Sahara was a barrier. What changed it was a technology, the camel saddle, adopted around 300 CE, which let camels carry heavy loads for days without water. The desert became a highway linking West African gold to North African salt and Mediterranean markets, and the empires of Ghana and then Mali grew rich taxing the trade. After Islam spread across the region, it supplied the commercial glue: a shared body of contract law, a credit system that moved value without moving gold, and caravanserais that sheltered merchants across thousands of kilometers of desert.',
+      'The most consequential cargo was often invisible. Chinese papermakers captured at the Battle of Talas (751 CE) carried papermaking into the Islamic world, where cheap paper fueled an extraordinary flowering of scholarship. Buddhism spread into China with Silk Road merchants, and Islam reached Southeast Asia through Indian Ocean traders rather than armies. Fast-maturing Champa rice traveled from Vietnam to Song China, enabling two harvests a year, and the Plague of Justinian (541 CE) rode grain ships to Constantinople. The three networks were one circulatory system: goods, people, ideas, crops, and germs all moved together, and by c.1200 that system sustained the most commercially sophisticated economies on earth.'
     ],
-    prompt: 'Using evidence from the reading, explain one specific way the Battle of Talas (751 CE) illustrates the argument that trade networks moved more than goods. Then identify one other non-good that moved through Afro-Eurasian trade networks and explain how it traveled.'
+    prompt: 'Choose two of the three trade networks (Silk Roads, Indian Ocean, trans-Saharan). For each, explain what made it work and name one thing besides goods that moved along it. Then explain one consequence of that movement for a specific society.'
   },
 
   beSurreal: {
@@ -107,15 +107,15 @@ window.FOUNDATION_TOPIC = {
     items: [
       {
         title: 'Song Dynasty Celadon Found at Kilwa, East Africa',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinese_export_porcelain_bowl.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chinese_export_porcelain_bowl.jpg',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song_dynasty_bowl,_stoneware_with_celadon_glaze,_Honolulu_Museum_of_Art_3752.1.JPG',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song_dynasty_bowl,_stoneware_with_celadon_glaze,_Honolulu_Museum_of_Art_3752.1.JPG',
         caption: 'Chinese celadon pottery from the Song Dynasty (960–1279 CE) has been excavated at Kilwa on the East African coast, more than 7,000 km from its origin. Chinese porcelain sherds are among the most reliable markers of Indian Ocean trade connections: they are durable, identifiable by kiln and period, and found at virtually every Indian Ocean port city that participated in the network. Their presence at Kilwa proves not just that goods traveled but that the Song Dynasty\'s merchant fleet was actively participating in Indian Ocean commerce.',
         prompt: 'What does the presence of Song Dynasty celadon at Kilwa prove about the Indian Ocean trade system? What else, beyond porcelain, was likely moving along the same routes that carried this pottery from China to East Africa?'
       },
       {
         title: 'Dunhuang Mogao Cave Buddhist Art (Silk Road, c.4th–14th centuries CE)',
-        url: '../assets/images/module-cards/mogao-caves-dunhuang.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mogao_Caves_Buddha_Statue.jpg',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mural_of_Buddha_in_Mogao_Caves,_Dunhuang.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mural_of_Buddha_in_Mogao_Caves,_Dunhuang.jpg',
         caption: 'The Mogao Caves at Dunhuang, an oasis city on the Silk Road in northwestern China, contain 492 temple caves decorated with Buddhist murals and sculptures commissioned by Silk Road merchants between the 4th and 14th centuries CE. Merchants funded the caves as acts of religious patronage, seeking divine protection for their dangerous journeys. The caves document 1,000 years of Silk Road cultural exchange: artistic styles from India, Central Asia, Persia, and China blend in a single location. The caves were sealed around 1000 CE and rediscovered in 1900, preserving the world\'s largest repository of early printed books and manuscripts.',
         prompt: 'The Dunhuang caves were funded by merchants, not monks or emperors. What does this reveal about the relationship between trade and the spread of Buddhism? How does this evidence challenge the assumption that religious diffusion and commercial exchange were separate processes?'
       }
@@ -200,10 +200,10 @@ window.FOUNDATION_TOPIC = {
         'The **Ghana Empire** (c.700–1100 CE) and **Mali Empire** (c.1235–1400 CE) built power by controlling the southern termini of trans-Saharan routes, taxing every load of gold and salt that passed through their territory. Mansa Musa\'s 1324 hajj (covered in Foundations 2) was only possible because generations of trans-Saharan trade had made Mali one of the wealthiest states on earth.'
       ],
       image: {
-        title: 'Camel Caravan near the Pyramids',
-        url: '../assets/images/module-cards/sahara-caravan-1300ce.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravan_near_Sphinx.jpg',
-        caption: 'The camel caravan is the human-scale image of trans-Saharan trade: a typical large caravan numbered 1,000–12,000 camels, traveled in organized columns with armed escorts, and carried not just gold and salt but enslaved people, kola nuts, copper, and textiles. The camel\'s physiology made this possible, no other animal could sustain the load and the water deficit of a Saharan crossing.'
+        title: 'Mansa Musa on the Catalan Atlas (1375 CE)',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
+        caption: 'The 1375 Catalan Atlas shows Mali\'s Mansa Musa enthroned with a gold nugget while a camel-mounted Saharan trader approaches, the trans-Saharan gold trade as medieval Europe pictured it. A typical caravan numbered thousands of camels and carried gold, salt, enslaved people, kola nuts, and copper; the camel\'s physiology, and the wealth this trade generated, made West African empires legendary.'
       }
     },
     {
@@ -215,9 +215,9 @@ window.FOUNDATION_TOPIC = {
         '**Religion, Islam via Indian Ocean merchants**: Islam spread to Southeast Asia primarily through Muslim merchants operating Indian Ocean routes, not through conquest. Malay and Javanese port rulers converted because Muslim merchant networks offered commercial advantages, shared legal frameworks, access to the *hajj* network, Arabic literacy. The Malay sultanate of Samudra-Pasai (c.1267 CE, in modern Aceh, Sumatra) is the earliest documented Islamic polity in Southeast Asia, a trading state converted by traders, not armies.'
       ],
       image: {
-        title: 'Dunhuang Mogao Caves Buddhist Art',
-        url: '../assets/images/module-cards/mogao-caves-dunhuang.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mogao_Caves_Buddha_Statue.jpg',
+        title: 'Great Buddha, Cave 96, Mogao Caves at Dunhuang',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha,_Cave_96,_Mogao_Caves.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Buddha,_Cave_96,_Mogao_Caves.jpg',
         caption: 'The Mogao Caves at Dunhuang, funded by Silk Road merchants seeking divine protection, are the most powerful visual proof that trade networks moved religion. A merchant who funded a cave painting was simultaneously investing in spiritual insurance, participating in Buddhist community networks, and leaving evidence that will survive 1,600 years for historians to read.'
       }
     },
@@ -231,8 +231,8 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Kilwa Kisiwani ruins, Tanzania (Swahili coast, c.9th–16th centuries CE)',
-        url: '../assets/images/module-cards/kilwa-kisiwani-mosque.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Kilwa_Kisiwani_great_mosque.jpg',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg',
         caption: 'The ruins of the Great Mosque at Kilwa Kisiwani, the largest mosque in sub-Saharan Africa before the 16th century, were built with the wealth of Indian Ocean trade. Chinese celadon, Persian glass, and Indian textiles found in Kilwa\'s archaeological sites prove that this East African city was a genuine node of a world-scale commercial system, not a peripheral backwater.'
       }
     }
