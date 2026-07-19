@@ -1,6 +1,6 @@
 // behistorical-topic-renderer-v1.js
-// BeHistorical AP World History — Shared Topic Renderer
-// Updated: Capture reduced to 4 touchpoints (First & 10, Checkpoint 1, BeInTheRoom, Checkpoint 2) — June 2026
+// BeHistorical AP World History, Shared Topic Renderer
+// Updated: Capture reduced to 4 touchpoints (First & 10, Checkpoint 1, BeInTheRoom, Checkpoint 2), June 2026
 
 const L = window.BEHISTORICAL_LESSON;
 const byId = id => document.getElementById(id);
@@ -83,7 +83,7 @@ function applyKeyConceptLabels() {
   const labels = {
     'Topic 1.2': { lt: ['KC-3.1.III.D.iii', 'KC-3.2.I.B', 'KC-3.1.I.D; KC-3.1.III.D.iii'], sc: ['KC-3.2.I.B', 'KC-3.1.III.D.iii', 'KC-3.1.I.D; KC-3.1.III.D.iii'] },
     'Topic 1.3': { lt: ['KC-3.1.III.D.ii; KC-3.1.III.D.iii', 'KC-3.2.I; KC-3.1.I.D', 'KC-3.1.I.D'], sc: ['KC-3.1.III.D.ii; KC-3.1.III.D.iii', 'KC-3.2.I', 'KC-3.1.I.D'] },
-    'Topic 1.4': { lt: ['KC-3.2.I.D.i', 'KC-3.2.I.D.i', 'Suggested Skill 3.B — Claims and Evidence in Sources'], sc: ['KC-3.2.I.D.i — State systems in the Americas', 'KC-3.2.I.D.i — State systems in the Americas', 'Suggested Skill 3.B — Evidence used to support an argument'] },
+    'Topic 1.4': { lt: ['KC-3.2.I.D.i', 'KC-3.2.I.D.i', 'Suggested Skill 3.B, Claims and Evidence in Sources'], sc: ['KC-3.2.I.D.i, State systems in the Americas', 'KC-3.2.I.D.i, State systems in the Americas', 'Suggested Skill 3.B, Evidence used to support an argument'] },
     'Topic 1.5': { lt: ['KC-3.2.I', 'KC-3.1.I.D; KC-3.1.III.D.iii', 'Comparison'], sc: ['KC-3.1.I.D', 'KC-3.1.I.D; KC-3.1.III.D.iii', 'KC-3.2.I'] },
     'Topic 1.6': { lt: ['KC-3.2.I', 'KC-3.1.III.D; KC-3.3', 'Comparison'], sc: ['KC-3.2.I', 'KC-3.3', 'Comparison'] },
     'Topic 1.7': { lt: ['Topic 1.7; Comparison', 'KC-3.1.III.D; Comparison', 'AP Historical Thinking Skill: Comparison'], sc: ['Comparison', 'Evidence', 'Reasoning'] }
@@ -111,7 +111,7 @@ window.submitResponseToGoogleForm = function(responseId, formUrl) {
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(text)
       .then(() => {
-        if (resultEl) resultEl.textContent = 'Response copied — paste it into the Student Response field on the form.';
+        if (resultEl) resultEl.textContent = 'Response copied, paste it into the Student Response field on the form.';
         openForm();
       })
       .catch(() => {
@@ -150,9 +150,9 @@ if (L) {
   autoBuildCaptureUrls();
   applyKeyConceptLabels();
   document.title = `BeHistorical | AP World ${L.meta.topic} ${L.meta.title}`;
-  byId('lesson-title').textContent = `${L.meta.topic} — ${L.meta.title}`;
+  byId('lesson-title').textContent = `${L.meta.topic}, ${L.meta.title}`;
   byId('lesson-subtitle').textContent = L.meta.subtitle;
-  byId('footer-topic-label').textContent = `${L.meta.topic} — ${L.meta.title} · Think Like a Historian.`;
+  byId('footer-topic-label').textContent = `${L.meta.topic}, ${L.meta.title} · Think Like a Historian.`;
   byId('lecture-title').textContent = L.lecture.title || 'Lecture Cards';
   byId('lecture-intro').textContent = L.lecture.intro || 'Use these cards from the main page. Each card opens a projection-friendly pop-up with enlarged content and a related visual.';
 
@@ -216,7 +216,7 @@ function renderCollegeBoardFramework() {
     <div class="section-header">
       <div class="eyebrow">College Board Framework</div>
       <h2>Key Concepts &amp; Illustrative Examples</h2>
-      <p>These are the AP World framework anchors for this topic — verbatim from the College Board CED. Connect your lesson work directly to these key concepts.</p>
+      <p>These are the AP World framework anchors for this topic, verbatim from the College Board CED. Connect your lesson work directly to these key concepts.</p>
     </div>
     <div class="cb-framework-grid">
       ${keyConcepts.map(kc => `
@@ -363,12 +363,12 @@ function renderMapKey() {
     </div>` : '';
 }
 
-// ── First & 10 — questions feed the MagicSchool bridge ───────────────────────
+// ── First & 10, questions feed the MagicSchool bridge ───────────────────────
 //
 // Student flow:
 //   1. Read the First & 10 narrative
 //   2. Answer the three historical thinking questions (each gets its own textarea)
-//   3. Click "Build My AI Coach Prompt" — answers package into one MagicSchool prompt
+//   3. Click "Build My AI Coach Prompt", answers package into one MagicSchool prompt
 //   4. Copy prompt → Open AI Coach → coaching conversation → move to lecture
 //
 // The old "one thing I noticed / one question I still have" fields are removed.
@@ -379,12 +379,12 @@ function renderFirst10() {
     || (L.meta && L.meta.feedbackToolUrl)
     || 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
   const canvasNote = (L.meta && L.meta.canvasSubmissionNote)
-    || 'Organize your thinking here — submit your final work in Canvas.';
+    || 'Organize your thinking here, submit your final work in Canvas.';
   const topic = (L.meta && L.meta.topic) ? L.meta.topic : 'this topic';
   const topicTitle = (L.meta && L.meta.title) ? L.meta.title : '';
   const questions = (L.first10 && L.first10.questions) ? L.first10.questions : [];
 
-  // Build question blocks — each question gets label + textarea
+  // Build question blocks, each question gets label + textarea
   const questionBlocks = questions.map((q, i) => `
     <div class="first10-q-block">
       <div class="question">
@@ -402,7 +402,7 @@ function renderFirst10() {
       <div id="first10-q${i + 1}-result" class="check-result"></div>
     </div>`).join('');
 
-  // Embedded reading path — questions and AI coaching live inside the iframe page
+  // Embedded reading path, questions and AI coaching live inside the iframe page
   if (L.first10.embedUrl) {
     return `
       <div class="first10-note">
@@ -464,7 +464,7 @@ function generateFirst10Prompt() {
   const topicTitle= (L && L.meta && L.meta.title)  ? L.meta.title  : '';
   const questions = (L && L.first10 && L.first10.questions) ? L.first10.questions : [];
 
-  // Gather answers — fall back to placeholder if blank
+  // Gather answers, fall back to placeholder if blank
   const answers = questions.map((q, i) => {
     const el  = byId(`first10-q${i + 1}`);
     const val = (el && el.value && el.value.trim()) ? el.value.trim() : '[no answer yet]';
@@ -480,7 +480,7 @@ function generateFirst10Prompt() {
 
   // Build the structured MagicSchool prompt
   const prompt = [
-    `${topic}, First & 10 Reflection${topicTitle ? ` — ${topicTitle}` : ''}.`,
+    `${topic}, First & 10 Reflection${topicTitle ? `, ${topicTitle}` : ''}.`,
     `I just read the First & 10 reading. Here are my responses:`,
     ``,
     ...answers,
@@ -489,7 +489,7 @@ function generateFirst10Prompt() {
   ].join('\n');
 
   if (previewEl) previewEl.textContent = prompt;
-  if (resultEl)  resultEl.textContent  = 'Prompt ready — click Copy Prompt, then paste it into the BeHistorical AI Coach.';
+  if (resultEl)  resultEl.textContent  = 'Prompt ready, click Copy Prompt, then paste it into the BeHistorical AI Coach.';
 }
 
 function copyFirst10Prompt() {
@@ -500,7 +500,7 @@ function copyFirst10Prompt() {
     return;
   }
   navigator.clipboard.writeText(previewEl.textContent)
-    .then(()  => { if (resultEl) resultEl.textContent = 'Prompt copied — paste it into the BeHistorical AI Coach.'; })
+    .then(()  => { if (resultEl) resultEl.textContent = 'Prompt copied, paste it into the BeHistorical AI Coach.'; })
     .catch(()  => { if (resultEl) resultEl.textContent = 'Copy failed. Select the prompt text above and copy it manually.'; });
 }
 
@@ -532,14 +532,14 @@ function renderSkill() {
     ${draftBlock('skill-builder-response', s.prompt, 'AP Skill Builder', 'skillBuilder')}`;
 }
 
-// ── Checkpoints — with MagicSchool bridge ────────────────────────────────────
+// ── Checkpoints, with MagicSchool bridge ────────────────────────────────────
 
 function renderCheckpoint(cp, id) {
   if (!cp) return '<p>Checkpoint data not found.</p>';
   const msMode = cp.magicSchoolMode || (id === 'checkpoint-one-response' ? 'Checkpoint 1' : 'Checkpoint 2');
   const topic = (L && L.meta && L.meta.topic) ? L.meta.topic : 'Topic';
   const msUrl = (L && L.meta && L.meta.feedbackToolUrl) || 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
-  const canvasNote = (L && L.meta && L.meta.canvasSubmissionNote) || 'Organize your thinking here — submit your final work in Canvas.';
+  const canvasNote = (L && L.meta && L.meta.canvasSubmissionNote) || 'Organize your thinking here, submit your final work in Canvas.';
 
   return `
     <div class="component-note"><strong>${cp.subtitle}</strong></div>
@@ -590,7 +590,7 @@ function copyCheckpointPrompt(responseId, msMode) {
     : '[paste your response here]';
   const prompt = `${topic}, ${msMode}. My response: ${responseText}`;
   navigator.clipboard.writeText(prompt)
-    .then(() => { if (resultEl) resultEl.textContent = 'Prompt copied — paste it into the BeHistorical AI Coach.'; })
+    .then(() => { if (resultEl) resultEl.textContent = 'Prompt copied, paste it into the BeHistorical AI Coach.'; })
     .catch(() => { if (resultEl) resultEl.textContent = 'Copy failed. Select and copy the prompt text manually.'; });
 }
 
@@ -708,8 +708,8 @@ function selfCheck(id) {
 
 // ── Lightbox ──────────────────────────────────────────────────────────────────
 
-function openLightbox(i) { const img = L.images[i]; openImageUrl(evidenceImageUrl(i), `${img.title} — ${img.caption}`, `evidence-${String(i + 1).padStart(2, '0')}`); }
-function openMapLightbox() { openImageUrl(mediaImageUrl(L.map.url, 'map'), `${L.map.title} — ${L.map.caption}`, 'map'); }
+function openLightbox(i) { const img = L.images[i]; openImageUrl(evidenceImageUrl(i), `${img.title}, ${img.caption}`, `evidence-${String(i + 1).padStart(2, '0')}`); }
+function openMapLightbox() { openImageUrl(mediaImageUrl(L.map.url, 'map'), `${L.map.title}, ${L.map.caption}`, 'map'); }
 function openImageUrl(url, caption, fallbackId) {
   const image = byId('lightbox-img');
   const fallback = topicArtworkPath(fallbackId || 'map');

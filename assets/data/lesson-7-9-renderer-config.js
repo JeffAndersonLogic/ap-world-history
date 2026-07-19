@@ -1,11 +1,11 @@
 // lesson-7-9-renderer-config.js
-// Topic 7.9 — Causation in Global Conflict
+// Topic 7.9, Causation in Global Conflict
 // RUNTIME-AUTHORITATIVE: all College Board CED text below is verbatim from the
 // AP World History: Modern CED and must not be paraphrased or truncated.
 //
 // THEMATIC FOCUS: The CED provides NO thematic focus for Topic 7.9. The
 // collegeBoardKeyConcepts array below opens directly with the Learning
-// Objective, with no Thematic Focus entry — do not add one.
+// Objective, with no Thematic Focus entry, do not add one.
 //
 // MODULE STRUCTURE: Topic 7.9 is the Unit 7 capstone. Module 09 is the
 // Causation Matrix, a synthesis module providing the sixth capture point.
@@ -16,12 +16,12 @@
 // No illustrative examples block for this topic.
 //
 // HIGH-RISK VERBATIM FLAGS (verified against CED working copy):
-//   KC-6.1.III.C.ii — quotation marks around "total war" are verbatim CED.
-//   KC-6.2.IV.B.ii — "especially" and "engendered by" are verbatim CED.
-//   KC-6.2.IV.A.ii — "colonies or former colonies" and second sentence on
+//   KC-6.1.III.C.ii, quotation marks around "total war" are verbatim CED.
+//   KC-6.2.IV.B.ii, "especially" and "engendered by" are verbatim CED.
+//   KC-6.2.IV.A.ii, "colonies or former colonies" and second sentence on
 //     ideologies/totalitarian repression are verbatim CED.
-//   KC-6.2.I.A — "eventually led to communist revolution" is verbatim CED.
-//   KC-6.2.II.D — "political crisis" end phrase is verbatim CED.
+//   KC-6.2.I.A, "eventually led to communist revolution" is verbatim CED.
+//   KC-6.2.II.D, "political crisis" end phrase is verbatim CED.
 // ─────────────────────────────────────────────────────────────────────────────
 
 // renderCausationMatrix is defined in global scope so it is accessible
@@ -38,7 +38,7 @@ window.renderCausationMatrix = function () {
     'Rise of fascist and totalitarian regimes',
     'New military technology'
   ];
-  var canvasNote = (L && L.meta && L.meta.canvasSubmissionNote) || 'Organize your thinking here — submit your final work in Canvas.';
+  var canvasNote = (L && L.meta && L.meta.canvasSubmissionNote) || 'Organize your thinking here, submit your final work in Canvas.';
   var captureBtn = (L && L.captureUrls && L.captureUrls.matrixAnalysis) || '';
 
   var tableRows = rows.map(function (row, i) {
@@ -62,7 +62,7 @@ window.renderCausationMatrix = function () {
     + '.matrix-synthesis-label{font-family:var(--font-ui,"Montserrat",sans-serif);font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--antique-gold,#C9A46A);margin-bottom:.4rem}'
     + '.matrix-synthesis p{font-family:var(--font-body,"Libre Baskerville",Georgia,serif);font-size:.88rem;color:var(--warm-paper,#F5F0E7);line-height:1.7;font-style:italic}'
     + '</style>'
-    + '<div class="component-note"><strong>Causation Matrix: Unit 7 Synthesis</strong> — Fill in evidence for each cause across both world wars, then rank the causes by relative significance with justification. Use your completed matrix to build the synthesis argument below.</div>'
+    + '<div class="component-note"><strong>Causation Matrix: Unit 7 Synthesis</strong>, Fill in evidence for each cause across both world wars, then rank the causes by relative significance with justification. Use your completed matrix to build the synthesis argument below.</div>'
     + '<div style="overflow-x:auto;margin:1rem 0">'
     + '<table class="matrix-table">'
     + '<thead><tr>'
@@ -80,7 +80,7 @@ window.renderCausationMatrix = function () {
     + '</div>'
     + '<div class="prompt-box">'
     + '<h3>Draft Your Argument</h3>'
-    + '<p>Organize your thinking here — submit your final work in Canvas.</p>'
+    + '<p>Organize your thinking here, submit your final work in Canvas.</p>'
     + '<textarea class="response-area" id="matrix-synthesis-response" data-response-type="Matrix Analysis" placeholder="My claim about relative significance: [state your ranking and the most significant cause]. Evidence from Topic [X]: ... Evidence from Topic [Y]: ... Evidence from Topic [Z]: ... I rank [cause] as most significant because..."></textarea>'
     + '<div class="tool-row">'
     + '<button class="btn" type="button" onclick="saveDraft(\'matrix-synthesis-response\')">Save Draft</button>'
@@ -196,10 +196,10 @@ window.renderCausationMatrix = function () {
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Underlying causes', detail: 'Empire collapse (Topics 7.1–7.2), imperial competition, intense nationalism, and alliance systems are all underlying causes — long-term structural factors that created the conditions for global conflict. They appear on this map as borders, imperial territories, and the power vacuums left by fallen empires.' },
-      { label: 'Immediate triggers', detail: 'The Sarajevo assassination (1914) and the German invasion of Poland (1939) are immediate triggers — specific events that set conflicts in motion. They matter, but historians generally give more weight to underlying causes in significance arguments.' },
+      { label: 'Underlying causes', detail: 'Empire collapse (Topics 7.1–7.2), imperial competition, intense nationalism, and alliance systems are all underlying causes, long-term structural factors that created the conditions for global conflict. They appear on this map as borders, imperial territories, and the power vacuums left by fallen empires.' },
+      { label: 'Immediate triggers', detail: 'The Sarajevo assassination (1914) and the German invasion of Poland (1939) are immediate triggers, specific events that set conflicts in motion. They matter, but historians generally give more weight to underlying causes in significance arguments.' },
       { label: 'The CED\'s causal ranking', detail: 'The WWII Key Concept names four causes and ranks one with the word "especially": the rise of fascist and totalitarian regimes. That ranking is embedded in the Key Concept itself. Your job in the Causation Matrix is to evaluate that claim using evidence from across Unit 7.' },
-      { label: 'Braided causes', detail: 'The Depression (Topic 7.4) fueled fascist rise (Topic 7.6); the failed peace (Topic 7.5) fed nationalist resentment; imperial competition (Topics 7.2, 7.5) continued even after WWI. Causes braid together. A strong argument traces which strand carried the most weight — and why.' }
+      { label: 'Braided causes', detail: 'The Depression (Topic 7.4) fueled fascist rise (Topic 7.6); the failed peace (Topic 7.5) fed nationalist resentment; imperial competition (Topics 7.2, 7.5) continued even after WWI. Causes braid together. A strong argument traces which strand carried the most weight, and why.' }
     ]
   };
 
@@ -224,11 +224,11 @@ window.renderCausationMatrix = function () {
   lesson.skillBuilder = {
     label: 'Causation practice',
     title: 'Building the Significance Argument: Claim, Evidence, Weighing',
-    intro: 'Topic 7.9 is the causation capstone. The skill here is not identifying causes — you can list those from six prior lessons. The skill is RANKING them and DEFENDING the ranking with specific evidence and weighing language. A weak argument says "all causes were important." A strong one says "X was more significant than Y because..." and explains the criterion behind the judgment.',
+    intro: 'Topic 7.9 is the causation capstone. The skill here is not identifying causes, you can list those from six prior lessons. The skill is RANKING them and DEFENDING the ranking with specific evidence and weighing language. A weak argument says "all causes were important." A strong one says "X was more significant than Y because..." and explains the criterion behind the judgment.',
     steps: [
-      { label: 'Make a defensible claim', text: 'State a single most-significant cause and a reason. Example: "The rise of fascist and totalitarian regimes was the most significant cause of global conflict in the period 1900 to the present because it converted the underlying conditions created by the Versailles settlement and the Great Depression into active, militaristic aggression." The claim is arguable — another historian could rank empire collapse or economic crisis first. That is what makes it defensible rather than obvious.' },
-      { label: 'Support with specific evidence from at least three topics', text: 'Pull evidence across Unit 7, not just from the topic that introduced each cause. Example: Topic 7.6 (Nazi rise to power), Topic 7.4 (Depression as enabling condition), Topic 7.2 (WWI alliance system as parallel cause). Each piece of evidence should directly support the significance claim — not just name the cause, but explain how the cause operated.' },
-      { label: 'Weigh and explain the ranking', text: 'Use weighing language and explain your criterion. Example: "The rise of fascist regimes was more significant than the Versailles settlement because the settlement was a necessary condition — it created grievance and instability — but did not by itself cause war. The Nazi regime supplied the militarized will to act on those conditions. Without the regime, the grievances of Versailles need not have produced a second world war." That is a weighing argument: it names both causes, explains the relationship between them, and defends the ranking.' }
+      { label: 'Make a defensible claim', text: 'State a single most-significant cause and a reason. Example: "The rise of fascist and totalitarian regimes was the most significant cause of global conflict in the period 1900 to the present because it converted the underlying conditions created by the Versailles settlement and the Great Depression into active, militaristic aggression." The claim is arguable, another historian could rank empire collapse or economic crisis first. That is what makes it defensible rather than obvious.' },
+      { label: 'Support with specific evidence from at least three topics', text: 'Pull evidence across Unit 7, not just from the topic that introduced each cause. Example: Topic 7.6 (Nazi rise to power), Topic 7.4 (Depression as enabling condition), Topic 7.2 (WWI alliance system as parallel cause). Each piece of evidence should directly support the significance claim, not just name the cause, but explain how the cause operated.' },
+      { label: 'Weigh and explain the ranking', text: 'Use weighing language and explain your criterion. Example: "The rise of fascist regimes was more significant than the Versailles settlement because the settlement was a necessary condition, it created grievance and instability, but did not by itself cause war. The Nazi regime supplied the militarized will to act on those conditions. Without the regime, the grievances of Versailles need not have produced a second world war." That is a weighing argument: it names both causes, explains the relationship between them, and defends the ranking.' }
     ],
     prompt: 'In three to four sentences, make a defensible claim about the most significant cause of global conflict in the period 1900 to the present. Use evidence from at least two Unit 7 topics, and use at least one piece of weighing language (most significant because, more significant than, underlying cause, immediate trigger, necessary condition, enabling condition, without which).'
   };
@@ -241,10 +241,10 @@ window.renderCausationMatrix = function () {
       cardDesc: 'Identify and compare the major causes of WWI and WWII across Unit 7.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain two causes of global conflict in the period 1900 to the present — one that was significant for World War I and one that was significant for World War II. For each cause, use at least one specific piece of evidence and explain how the cause contributed to the conflict. Then evaluate: which of the two causes you described was more significant in producing global conflict overall, and why?',
+      prompt: 'Explain two causes of global conflict in the period 1900 to the present, one that was significant for World War I and one that was significant for World War II. For each cause, use at least one specific piece of evidence and explain how the cause contributed to the conflict. Then evaluate: which of the two causes you described was more significant in producing global conflict overall, and why?',
       responseType: 'Checkpoint 1',
       terms: ['imperialist expansion', 'nationalism', 'alliance system', 'empire collapse', 'Great Depression', 'Versailles settlement', 'fascist regimes', 'totalitarian', 'new military technology', 'relative significance'],
-      focus: ['Name a distinct cause for WWI and a distinct cause for WWII with specific evidence for each.', 'Use at least one piece of evidence — a specific event, policy, or actor — not just the cause category.', 'Take a position on relative significance and explain the criterion behind your ranking.']
+      focus: ['Name a distinct cause for WWI and a distinct cause for WWII with specific evidence for each.', 'Use at least one piece of evidence, a specific event, policy, or actor, not just the cause category.', 'Take a position on relative significance and explain the criterion behind your ranking.']
     },
     {
       title: 'Checkpoint 2: Construct and Defend the Argument',
@@ -259,7 +259,7 @@ window.renderCausationMatrix = function () {
     }
   ];
 
-  // ── Capture points — static hardcoded anchors (never JS-generated) ───────────
+  // ── Capture points, static hardcoded anchors (never JS-generated) ───────────
   // first10 is intentionally empty: the First & 10 capture lives inside the
   // capture wrapper, and nothing renders below the First & 10 iframe.
   // matrixAnalysis is the sixth capture point (Response Type: Matrix Analysis).
@@ -295,7 +295,7 @@ window.renderCausationMatrix = function () {
       id: 'contentdelivery',
       label: 'Module 03',
       title: 'Content Delivery',
-      desc: 'Jump to the lecture cards — six synthesis and skill cards for Unit 7.',
+      desc: 'Jump to the lecture cards, six synthesis and skill cards for Unit 7.',
       img: si.contentDelivery,
       jump: '#lecture'
     },
@@ -303,7 +303,7 @@ window.renderCausationMatrix = function () {
       id: 'besurreal',
       label: 'Module 04',
       title: 'BeSurreal',
-      desc: 'The wrong turn that started a world war — underlying causes versus immediate triggers.',
+      desc: 'The wrong turn that started a world war, underlying causes versus immediate triggers.',
       img: si.beSurreal,
       render: function () { return renderBeSurreal(); }
     },
@@ -335,7 +335,7 @@ window.renderCausationMatrix = function () {
       id: 'source',
       label: 'Module 08',
       title: 'Primary Source',
-      desc: 'Article 231, Treaty of Versailles — the War Guilt Clause as a causal argument.',
+      desc: 'Article 231, Treaty of Versailles, the War Guilt Clause as a causal argument.',
       img: si.source,
       render: function () { return renderPrimarySource(); }
     },
@@ -343,7 +343,7 @@ window.renderCausationMatrix = function () {
       id: 'causationmatrix',
       label: 'Module 09',
       title: 'Causation Matrix',
-      desc: 'Rank seven causes of global conflict across WWI and WWII — the unit capstone.',
+      desc: 'Rank seven causes of global conflict across WWI and WWII, the unit capstone.',
       img: si.causationMatrix,
       render: function () { return window.renderCausationMatrix(); }
     },

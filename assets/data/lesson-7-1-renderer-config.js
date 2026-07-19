@@ -1,5 +1,5 @@
 // lesson-7-1-renderer-config.js
-// Topic 7.1 — Shifting Power After 1900
+// Topic 7.1, Shifting Power After 1900
 // RUNTIME-AUTHORITATIVE: all College Board CED text below is verbatim from the
 // AP World History: Modern CED and must not be paraphrased or truncated.
 (() => {
@@ -8,7 +8,7 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus — Governance (GOV)',
+      code: 'Thematic Focus, Governance (GOV)',
       theme: 'Governance',
       text: 'A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.',
       illustrativeExamples: []
@@ -49,10 +49,10 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Western dominance of the global political order', detail: 'In 1900 the industrialized West — Britain, France, Germany, the United States, and their rivals — controlled colonies, sea lanes, and capital across the globe. This is KC-6.2.I made visible: the century opens with Western power at its height.' },
+      { label: 'Western dominance of the global political order', detail: 'In 1900 the industrialized West, Britain, France, Germany, the United States, and their rivals, controlled colonies, sea lanes, and capital across the globe. This is KC-6.2.I made visible: the century opens with Western power at its height.' },
       { label: 'Three land-based empires under strain', detail: 'The Ottoman, Russian, and Qing empires were enormous, multiethnic, land-based states. Each was struggling to industrialize and reform while holding restless nationalities together along immense, exposed borders.' },
       { label: 'External pressure points', detail: 'Foreign spheres of influence in Qing China, Russian defeat by Japan in 1904–1905, and Great Power rivalry over Ottoman territory show how external factors compounded each empire’s internal weaknesses.' },
-      { label: 'Geographic takeaway', detail: 'Size was not strength. The empires that collapsed between 1911 and 1923 were the large land-based ones caught between internal crisis and external attack — and revolutionary Mexico shows the same pattern of challenge to the existing order in the Americas.' }
+      { label: 'Geographic takeaway', detail: 'Size was not strength. The empires that collapsed between 1911 and 1923 were the large land-based ones caught between internal crisis and external attack, and revolutionary Mexico shows the same pattern of challenge to the existing order in the Americas.' }
     ]
   };
 
@@ -76,20 +76,20 @@
 
   lesson.beSurreal = {
     title: 'BeSurreal: The Revolution That Started in a Bread Line',
-    text: 'The revolution that ended three hundred years of Romanov rule did not begin with a battle plan. It began with bread. In late February 1917 (early March by the Western calendar), women textile workers in Petrograd walked out of their factories on International Women’s Day to protest bread shortages and freezing queues. Within days, hundreds of thousands were in the streets; the soldiers sent to disperse them joined them instead. Within a week, Tsar Nicholas II — commander of the largest army in the world — had abdicated.',
-    prompt: 'What does it reveal about the condition of the Russian state that bread lines — not enemy armies — set off the revolution that destroyed it?'
+    text: 'The revolution that ended three hundred years of Romanov rule did not begin with a battle plan. It began with bread. In late February 1917 (early March by the Western calendar), women textile workers in Petrograd walked out of their factories on International Women’s Day to protest bread shortages and freezing queues. Within days, hundreds of thousands were in the streets; the soldiers sent to disperse them joined them instead. Within a week, Tsar Nicholas II, commander of the largest army in the world, had abdicated.',
+    prompt: 'What does it reveal about the condition of the Russian state that bread lines, not enemy armies, set off the revolution that destroyed it?'
   };
 
   lesson.skillBuilder = {
     label: 'Causation practice',
     title: 'Internal vs. External: Building the Causation Frame',
-    intro: 'Topic 7.1 is a causation topic. The CED frames every collapse the same way: empires fell "due to a combination of internal and external factors." Strong AP causation writing does not just list causes — it sorts them, weighs them, and explains how they interact. Build that habit now: it returns in Topic 7.9, the causation capstone for all of Unit 7.',
+    intro: 'Topic 7.1 is a causation topic. The CED frames every collapse the same way: empires fell "due to a combination of internal and external factors." Strong AP causation writing does not just list causes, it sorts them, weighs them, and explains how they interact. Build that habit now: it returns in Topic 7.9, the causation capstone for all of Unit 7.',
     steps: [
       { label: 'Internal factors', text: 'Pressures from inside the state: ethnic and nationalist tension (Ottoman Balkans), autocratic misrule and failed reform (Romanov Russia), peasant land hunger (Mexico under Díaz, Russia), and governments that lost legitimacy with their own people.' },
       { label: 'External factors', text: 'Pressures from outside the state: foreign imperialism and spheres of influence (Qing China), military defeat (Russia by Japan in 1905, the Ottomans in World War I), and the strain of total war after 1914.' },
-      { label: 'Interaction', text: 'The strongest analysis shows how the two reinforce each other: external defeat exposes internal weakness, and internal weakness invites external pressure. Russia in 1917 is the model case — war (external) broke a regime already hollowed out by autocracy and peasant misery (internal).' }
+      { label: 'Interaction', text: 'The strongest analysis shows how the two reinforce each other: external defeat exposes internal weakness, and internal weakness invites external pressure. Russia in 1917 is the model case, war (external) broke a regime already hollowed out by autocracy and peasant misery (internal).' }
     ],
-    prompt: 'Choose ONE empire — Ottoman, Russian, or Qing. In two to three sentences, identify one internal factor and one external factor in its collapse, and explain how the two factors reinforced each other rather than acting separately.'
+    prompt: 'Choose ONE empire, Ottoman, Russian, or Qing. In two to three sentences, identify one internal factor and one external factor in its collapse, and explain how the two factors reinforced each other rather than acting separately.'
   };
 
   lesson.checkpoints = [
@@ -102,7 +102,7 @@
       prompt: 'Choose TWO of the three collapsing land-based empires (Ottoman, Russian, Qing). For each, identify one internal factor and one external factor that contributed to its collapse, and explain how those factors worked together to bring the empire down.',
       responseType: 'Checkpoint 1',
       terms: ['internal factors', 'external factors', 'ethnic tensions', 'Young Turks', 'World War I', 'Atatürk', 'Revolution of 1905', 'Nicholas II', 'foreign imperialism', 'Boxer Rebellion', 'Xinhai Revolution'],
-      focus: ['Name one internal AND one external factor for each empire you choose.', 'Use specific evidence — names, events, dates — not general labels.', 'Explain the interaction: how did external pressure expose or worsen internal weakness?']
+      focus: ['Name one internal AND one external factor for each empire you choose.', 'Use specific evidence, names, events, dates, not general labels.', 'Explain the interaction: how did external pressure expose or worsen internal weakness?']
     },
     {
       title: 'Checkpoint 2: Revolution in Russia and Mexico',
@@ -117,7 +117,7 @@
     }
   ];
 
-  // Capture points — static hardcoded anchors (never JS-generated).
+  // Capture points, static hardcoded anchors (never JS-generated).
   // first10 is intentionally empty: the First & 10 capture lives inside the
   // capture wrapper, and nothing renders below the First & 10 iframe.
   lesson.captureUrls = {

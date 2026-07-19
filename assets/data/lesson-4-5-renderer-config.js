@@ -31,7 +31,7 @@
       code: 'KC-4.2.II.A',
       theme: 'Economic Systems',
       text: 'Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased.',
-      illustrativeExamples: ['Western Europe — wool and linen', 'India — cotton', 'China — silk']
+      illustrativeExamples: ['Western Europe, wool and linen', 'India, cotton', 'China, silk']
     },
     {
       code: 'KC-4.2.III.C',
@@ -42,7 +42,7 @@
     {
       code: 'KC-4.1.IV.D.ii',
       theme: 'Social Interactions and Organization',
-      text: 'The Atlantic trading system involved the movement of labor—including enslaved persons—and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis.',
+      text: 'The Atlantic trading system involved the movement of labor, including enslaved persons, and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis.',
       illustrativeExamples: []
     },
     {
@@ -64,9 +64,9 @@
     ...lesson.map,
     key: [
       { label: 'Potosí and the mita zone', detail: 'Potosí (modern Bolivia) produced roughly 60% of the world\'s silver in the 16th–17th centuries. The mita system conscripted indigenous workers from a radius of hundreds of miles. By 1600, Potosí was the largest city in the Western Hemisphere, sustained entirely by silver extraction.' },
-      { label: 'Manila Galleon route (Acapulco → Manila)', detail: 'The Manila Galleon trade (1565–1815) was the world\'s first regularly scheduled transoceanic route. Mexican silver crossed the Pacific to Manila, where it was exchanged for Chinese silk, porcelain, and spices. Chinese demand for silver — driven by the Single Whip Tax Reform (1581) — pulled the entire circuit.' },
+      { label: 'Manila Galleon route (Acapulco → Manila)', detail: 'The Manila Galleon trade (1565–1815) was the world\'s first regularly scheduled transoceanic route. Mexican silver crossed the Pacific to Manila, where it was exchanged for Chinese silk, porcelain, and spices. Chinese demand for silver, driven by the Single Whip Tax Reform (1581), pulled the entire circuit.' },
       { label: 'Atlantic silver route (Potosí → Seville)', detail: 'Silver traveled from Potosí overland to the Pacific coast, by ship to Portobelo or Veracruz, and then across the Atlantic to Seville\'s Casa de Contratación. The Casa held a monopoly on all colonial trade and channeled silver into European money markets, funding Spanish military campaigns and triggering the global price revolution.' },
-      { label: 'Geographic takeaway', detail: 'By c. 1580, a single commodity — silver — connected three continents into a global economy. The direction of flow reflects where demand was highest: China needed silver for its tax system, creating an enormous pull across the Pacific that drove the entire network. Understanding this geography is essential for AP arguments about global trade in c. 1450–1750.' }
+      { label: 'Geographic takeaway', detail: 'By c. 1580, a single commodity, silver, connected three continents into a global economy. The direction of flow reflects where demand was highest: China needed silver for its tax system, creating an enormous pull across the Pacific that drove the entire network. Understanding this geography is essential for AP arguments about global trade in c. 1450–1750.' }
     ]
   };
 
@@ -91,30 +91,30 @@
   lesson.skillBuilder = {
     label: 'Causation practice',
     title: 'Tracing the Silver Economy: From Mine to Market',
-    intro: 'Causation practice for Topic 4.5 requires tracing how one factor — silver extraction at Potosí — caused changes across multiple systems: labor, administration, and global trade. A strong causation argument identifies specific causes and effects, uses specific evidence, and explains the mechanism by which cause produced effect. Avoid vague claims like "silver caused change" — explain HOW the silver flowed, WHO it affected, and WHAT specifically changed.',
+    intro: 'Causation practice for Topic 4.5 requires tracing how one factor, silver extraction at Potosí, caused changes across multiple systems: labor, administration, and global trade. A strong causation argument identifies specific causes and effects, uses specific evidence, and explains the mechanism by which cause produced effect. Avoid vague claims like "silver caused change", explain HOW the silver flowed, WHO it affected, and WHAT specifically changed.',
     steps: [
       { label: 'Identify the cause', text: 'The mita system at Potosí forced indigenous labor to extract silver at industrial scale. The cause is specific: the combination of Spanish colonial demand for revenue, Chinese fiscal demand for silver (Single Whip Tax Reform, 1581), and the forced labor of mita workers who had no alternative because tribute obligations required silver payment.' },
-      { label: 'Trace the effects', text: 'Silver flowing from Potosí through Acapulco to Manila (Manila Galleon) and through Veracruz to Seville (Atlantic route) created the first genuinely global trade circuit. Chinese merchants in Manila received silver in exchange for silk and porcelain; European merchants received silver that funded expansion; and the enormous silver influx caused the global price revolution — inflation across Europe and Asia.' },
-      { label: 'Explain the mechanism', text: 'The mechanism connecting cause and effect was demand. Chinese demand for silver created the pull that made the Manila Galleon profitable; Spanish crown demand for revenue created the push that forced the mita; indigenous workers had no choice because their tribute obligations required silver they could only earn by mining it. Understanding the mechanism — not just the fact of silver flow — is what makes a causation argument strong.' }
+      { label: 'Trace the effects', text: 'Silver flowing from Potosí through Acapulco to Manila (Manila Galleon) and through Veracruz to Seville (Atlantic route) created the first genuinely global trade circuit. Chinese merchants in Manila received silver in exchange for silk and porcelain; European merchants received silver that funded expansion; and the enormous silver influx caused the global price revolution, inflation across Europe and Asia.' },
+      { label: 'Explain the mechanism', text: 'The mechanism connecting cause and effect was demand. Chinese demand for silver created the pull that made the Manila Galleon profitable; Spanish crown demand for revenue created the push that forced the mita; indigenous workers had no choice because their tribute obligations required silver they could only earn by mining it. Understanding the mechanism, not just the fact of silver flow, is what makes a causation argument strong.' }
     ],
-    prompt: 'In 3–4 sentences, write a causation argument: explain how the extraction of silver at Potosí — using the mita labor system — caused changes in global trade networks. Use specific evidence (Potosí, Manila Galleon, Seville, Chinese demand for silver) and explain the mechanism by which silver extraction transformed global commerce.'
+    prompt: 'In 3–4 sentences, write a causation argument: explain how the extraction of silver at Potosí, using the mita labor system, caused changes in global trade networks. Use specific evidence (Potosí, Manila Galleon, Seville, Chinese demand for silver) and explain the mechanism by which silver extraction transformed global commerce.'
   };
 
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: Labor Systems and Colonial Administration',
-      subtitle: 'Checks Learning Targets 1 and 2 — labor systems and colonial administration.',
+      subtitle: 'Checks Learning Targets 1 and 2, labor systems and colonial administration.',
       cardDesc: 'Encomienda, mita, chattel slavery, viceroyalties, audiencias, and the Catholic Church.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
       prompt: 'Explain how the mita system worked at Potosí and describe the conditions it created for indigenous workers. Then explain how the viceregal system and Catholic Church maintained colonial administration across vast distances. Use specific evidence for each and explain ONE key similarity between the encomienda and mita systems.',
       responseType: 'Checkpoint 1',
       terms: ['encomienda', 'mita', 'Potosí', 'chattel slavery', 'viceroyalty', 'audiencia', 'Jesuit missions', 'las Casas', 'New Spain', 'Peru'],
-      focus: ['Explain the mita system: origins, conscription zone, conditions at Potosí, and why death rates were so high.', 'Describe how the viceregal system and Church maintained colonial order — use specific institutional names.', 'Identify one key similarity between the encomienda and mita (e.g., both used coercion; both served colonial extraction goals).']
+      focus: ['Explain the mita system: origins, conscription zone, conditions at Potosí, and why death rates were so high.', 'Describe how the viceregal system and Church maintained colonial order, use specific institutional names.', 'Identify one key similarity between the encomienda and mita (e.g., both used coercion; both served colonial extraction goals).']
     },
     {
       title: 'Checkpoint 2: Silver and Global Trade',
-      subtitle: 'Checks Learning Target 3 — the silver economy and global price revolution.',
+      subtitle: 'Checks Learning Target 3, the silver economy and global price revolution.',
       cardDesc: 'Potosí, Manila Galleon, Seville, Chinese demand for silver, and the global price revolution.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],

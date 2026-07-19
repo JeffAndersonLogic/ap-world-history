@@ -1,12 +1,12 @@
-// Topic 9.5 — runtime-authoritative CED alignment, effective Fall 2026.
+// Topic 9.5, runtime-authoritative CED alignment, effective Fall 2026.
 (() => {
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
-  lesson.meta.canvasSubmissionNote = 'Organize your thinking here — submit your final work in Canvas.';
+  lesson.meta.canvasSubmissionNote = 'Organize your thinking here, submit your final work in Canvas.';
   lesson.meta.feedbackToolUrl = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
   lesson.collegeBoardKeyConcepts = [
   {
-    code: 'Thematic Focus — Social Interactions and Organization (SIO)',
+    code: 'Thematic Focus, Social Interactions and Organization (SIO)',
     theme: 'Social Interactions and Organization',
     text: 'The process by which societies group their members and the norms governing interactions among groups and individuals influence political, economic, and cultural institutions.',
     illustrativeExamples: []

@@ -12,7 +12,7 @@
     {
       code: 'KC-3.1.I.E.i',
       theme: 'Economic Systems',
-      text: 'The expansion of empires—including the Mongols—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.',
+      text: 'The expansion of empires, including the Mongols, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.',
       illustrativeExamples: []
     },
     {
@@ -34,7 +34,7 @@
     ...lesson.map,
     key: [
       { label: 'Extent of the Mongol Empire', detail: 'At its height the Mongol Empire stretched from the Pacific coast of China to Eastern Europe.' },
-      { label: 'The four khanates', detail: 'The empire was eventually divided into four khanates — Yuan, Ilkhanate, Golden Horde, and Chagatai — each governing a vast region.' },
+      { label: 'The four khanates', detail: 'The empire was eventually divided into four khanates, Yuan, Ilkhanate, Golden Horde, and Chagatai, each governing a vast region.' },
       { label: 'Trade corridors', detail: 'The Pax Mongolica made Silk Road travel safer, enabling merchants, diplomats, and missionaries to cross Eurasia.' },
       { label: 'Geographic takeaway', detail: 'Mongol control of overland routes from China to Persia and beyond created an unprecedented transregional network.' }
     ]
@@ -55,7 +55,7 @@
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-2/mongol-court.html',
-    desc: 'Enter the Mongol court of Kublai Khan. You are a foreign diplomat or merchant — navigate the court, negotiate trade access, and report back to your home ruler.'
+    desc: 'Enter the Mongol court of Kublai Khan. You are a foreign diplomat or merchant, navigate the court, negotiate trade access, and report back to your home ruler.'
   };
 
   lesson.beSurreal = {
@@ -66,7 +66,7 @@
 
   lesson.skillBuilder = {
     label: 'Continuity and Change practice',
-    title: 'What Did the Mongols Change — and What Stayed the Same?',
+    title: 'What Did the Mongols Change, and What Stayed the Same?',
     intro: 'Continuity and Change Over Time (CCOT) asks what transformed and what persisted. The Mongol conquests disrupted many societies while also continuing and intensifying existing patterns of exchange.',
     steps: [
       { label: 'Before the Mongols', text: 'The Silk Roads already existed, but political fragmentation made long-distance travel dangerous and expensive.' },

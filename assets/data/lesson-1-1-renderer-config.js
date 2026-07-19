@@ -30,7 +30,7 @@
     {
       code: 'KC-3.1.I.D',
       theme: 'Economics',
-      text: "The expansion of empires—including the Song Dynasty—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.",
+      text: "The expansion of empires, including the Song Dynasty, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.",
       illustrativeExamples: []
     }
   ];
@@ -106,7 +106,7 @@
       cardDesc: 'Culture, economy, commercialization, and influence.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'How did Song China\'s economic innovations — including new agricultural techniques, manufacturing advances, and the commercialization of its economy — affect not only Chinese society but also trade across the wider Afro-Eurasian world? In your response, connect at least one Song development to the Indian Ocean trade networks or Silk Road exchange routes that linked China to South Asia, Southeast Asia, the Islamic world, and beyond.',
+      prompt: 'How did Song China\'s economic innovations, including new agricultural techniques, manufacturing advances, and the commercialization of its economy, affect not only Chinese society but also trade across the wider Afro-Eurasian world? In your response, connect at least one Song development to the Indian Ocean trade networks or Silk Road exchange routes that linked China to South Asia, Southeast Asia, the Islamic world, and beyond.',
       responseType: 'Checkpoint 2',
       terms: ['Confucianism', 'Buddhism', 'Champa rice', 'Grand Canal', 'paper money', 'commercialization', 'urbanization', 'printing', 'Indian Ocean trade networks', 'Silk Road connections'],
       focus: ['Use one cultural example.', 'Use one economic or technological example.', 'Explain the connection to East Asian influence, population growth, commercial expansion, or trade networks.']

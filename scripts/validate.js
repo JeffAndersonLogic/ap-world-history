@@ -7,11 +7,11 @@
  * the structural and content requirements documented in CLAUDE.md.
  *
  * Architecture notes:
- *   Unit 1 — data file is self-contained (has checkpoints, stableImages, etc. inline).
+ *   Unit 1, data file is self-contained (has checkpoints, stableImages, etc. inline).
  *             Renderer config is thin (stableImages only or minimal amendments).
- *   Unit 2+ — data file has base content; renderer config amends with checkpoints,
+ *   Unit 2+, data file has base content; renderer config amends with checkpoints,
  *             skillBuilder, stableImages, beSurreal, beInTheRoom, embedUrl.
- *   Foundations — uses window.FOUNDATION_TOPIC, not window.BEHISTORICAL_LESSON.
+ *   Foundations, uses window.FOUNDATION_TOPIC, not window.BEHISTORICAL_LESSON.
  *
  * The validator checks the DATA FILE + RENDERER CONFIG *together* so that a key
  * present in either file satisfies the requirement.
@@ -56,7 +56,7 @@ function section(title) {
   console.log(`\n${C}${W}── ${title} ${X}`);
 }
 function sectionDone(label) {
-  if (sectionErrors === 0) console.log(`  ${G}✓${X} ${label} — all clear`);
+  if (sectionErrors === 0) console.log(`  ${G}✓${X} ${label}, all clear`);
 }
 function read(filePath) {
   try { return fs.readFileSync(filePath, 'utf8'); }
@@ -73,7 +73,7 @@ function glob(dir, re) {
 // Also matches CSS url('...(...)')
 function findParenUrls(src) {
   const results = [];
-  // JS `url: '...(...)...'` — use \b so sourceUrl: is excluded
+  // JS `url: '...(...)...'`, use \b so sourceUrl: is excluded
   const re1 = /\burl\s*:\s*['"]([^'"]*\([^'"]*)['"]/g;
   let m;
   while ((m = re1.exec(src)) !== null) results.push(m[0].slice(0, 100));
@@ -151,7 +151,7 @@ function checkDataFile(filePath) {
   if (!src.includes('canvasSubmissionNote')) warn(filePath, 'meta missing canvasSubmissionNote');
 
   if (/youtubeId\s*:\s*['"]YT_/.test(src)) {
-    warn(filePath, 'placeholder YouTube ID(s) — replace with real Heimler\'s History video IDs');
+    warn(filePath, 'placeholder YouTube ID(s), replace with real Heimler\'s History video IDs');
   }
 
   for (const hit of findParenUrls(src)) {
@@ -161,12 +161,12 @@ function checkDataFile(filePath) {
   // Segment count sanity check
   if (src.includes('segments:')) {
     const count = (src.match(/bullets\s*:/g) || []).length;
-    if (count < 3) warn(filePath, `lecture.segments may have only ${count} bullet array(s) — expected 3`);
+    if (count < 3) warn(filePath, `lecture.segments may have only ${count} bullet array(s), expected 3`);
   }
 }
 
 // ════════════════════════════════════════════════════════════════════════════
-//  2. RENDERER CONFIGS — checked together with their data file
+//  2. RENDERER CONFIGS, checked together with their data file
 // ════════════════════════════════════════════════════════════════════════════
 function checkRendererConfig(rcPath, unitDir) {
   totalChecks++;
@@ -185,10 +185,10 @@ function checkRendererConfig(rcPath, unitDir) {
   }
   const combined = rcSrc + dataSrc;
 
-  // embedUrl — check combined; error if genuinely missing
+  // embedUrl, check combined; error if genuinely missing
   const embedMatch = combined.match(/embedUrl\s*:\s*['"]([^'"?]+)/);
   if (!embedMatch) {
-    err(rcPath, 'embedUrl not found in renderer-config or data file — First & 10 module will be blank');
+    err(rcPath, 'embedUrl not found in renderer-config or data file, First & 10 module will be blank');
   } else {
     const target = path.join(unitDir, embedMatch[1]);
     if (!exists(target)) {
@@ -241,7 +241,7 @@ function checkFirst10(filePath, topicKeys) {
   if (!keyMatch) {
     err(filePath, 'missing var TOPIC_KEY');
   } else if (!topicKeys.has(keyMatch[1])) {
-    err(filePath, `TOPIC_KEY '${keyMatch[1]}' not in BH_FORM.topics — Google Form prefill will break`);
+    err(filePath, `TOPIC_KEY '${keyMatch[1]}' not in BH_FORM.topics, Google Form prefill will break`);
   }
   if (!src.match(/var\s+TOPIC_LABEL\s*=/)) err(filePath, 'missing var TOPIC_LABEL');
 
@@ -261,11 +261,11 @@ function checkFirst10(filePath, topicKeys) {
   // BH_FORM script loaded
   if (!src.includes('behistorical-form-config.js')) err(filePath, 'behistorical-form-config.js not loaded');
 
-  // Textarea count — treat qta and q-textarea as class tokens so multi-class
+  // Textarea count, treat qta and q-textarea as class tokens so multi-class
   // attributes such as class="q-textarea qta" are recognized correctly.
   const responseTextareas = [...src.matchAll(/<textarea\b[^>]*class=["'][^"']*\b(?:qta|q-textarea)\b[^"']*["'][^>]*>/g)];
   const qtaCount = responseTextareas.length;
-  if (qtaCount < 3) warn(filePath, `${qtaCount} response textarea(s) found — expected at least 3`);
+  if (qtaCount < 3) warn(filePath, `${qtaCount} response textarea(s) found, expected at least 3`);
 
   // Dynamic ID assignment is required only when the builder references fixed
   // q1-q3 IDs and the textareas do not already provide those IDs. Class-based
@@ -282,7 +282,7 @@ function checkFirst10(filePath, topicKeys) {
 
   // BH_FORM URL pattern
   if (!src.includes('BH_FORM') && !src.includes('buildFormURL')) {
-    warn(filePath, 'submitToGoogleForm may not use BH_FORM.baseURL — check for hardcoded form URL');
+    warn(filePath, 'submitToGoogleForm may not use BH_FORM.baseURL, check for hardcoded form URL');
   }
 }
 
@@ -316,7 +316,7 @@ function checkLessonShell(filePath) {
   }
   for (const { bad, good } of WRONG_IDS) {
     if (src.includes(`id=${bad}`) || src.includes(`id='${bad.slice(1, -1)}'`)) {
-      err(filePath, `wrong id=${bad} — use id=${good}`);
+      err(filePath, `wrong id=${bad}, use id=${good}`);
     }
   }
 
@@ -347,9 +347,9 @@ function checkFoundationsData(filePath) {
     if (!src.includes(k)) err(filePath, `missing required key: ${k}`);
   }
 
-  // beSurreal — required per 10-module standard
+  // beSurreal, required per 10-module standard
   if (!src.includes('beSurreal:')) {
-    err(filePath, "missing 'beSurreal' field — required by 10-module standard (needs title/desc/intro/detail/prompt)");
+    err(filePath, "missing 'beSurreal' field, required by 10-module standard (needs title/desc/intro/detail/prompt)");
   }
 
   // first10.embedUrl must point to a capture wrapper, not a standalone file
@@ -363,7 +363,7 @@ function checkFoundationsData(filePath) {
       err(filePath, `embedUrl target not found on disk: ${embedMatch[1]}`);
     }
   } else if (src.includes("paragraphs:")) {
-    err(filePath, "first10 uses inline paragraphs array — must use embedUrl pointing to a capture wrapper");
+    err(filePath, "first10 uses inline paragraphs array, must use embedUrl pointing to a capture wrapper");
   }
 
   if (/youtubeId\s*:\s*['"]YT_/.test(src)) warn(filePath, 'placeholder YouTube ID(s) present');
@@ -391,7 +391,7 @@ function checkFoundationsHtml(filePath) {
     }
   }
   for (const { bad, good } of WRONG_IDS) {
-    if (src.includes(`id=${bad}`)) err(filePath, `wrong id=${bad} — use id=${good}`);
+    if (src.includes(`id=${bad}`)) err(filePath, `wrong id=${bad}, use id=${good}`);
   }
 
   const fi = src.indexOf('behistorical-form-config.js');
@@ -459,7 +459,7 @@ for (const f of fDataFiles) checkFoundationsData(f);
 sectionDone(`${fDataFiles.length} foundations data files`);
 
 // 5b. Foundations 10-module structure
-section('Foundations renderer — 10-module standard');
+section('Foundations renderer, 10-module standard');
 {
   totalChecks++;
   const CANONICAL_IDS = ['map','first10','contentdelivery','besurreal','skill','checkpoint1','evidence','coach','beintheroom','checkpoint2'];
@@ -469,7 +469,7 @@ section('Foundations renderer — 10-module standard');
   } else {
     const found = [...rendSrc.matchAll(/\{id:'([^']+)'/g)].map(m => m[1]).filter(id => CANONICAL_IDS.includes(id));
     if (found.length !== 10) {
-      err(path.join(foundationsDir, 'foundations-topic-renderer.js'), `module count: expected 10, found ${found.length} canonical IDs — ${JSON.stringify(found)}`);
+      err(path.join(foundationsDir, 'foundations-topic-renderer.js'), `module count: expected 10, found ${found.length} canonical IDs, ${JSON.stringify(found)}`);
     }
     for (const id of CANONICAL_IDS) {
       if (!found.includes(id)) {
@@ -509,7 +509,7 @@ section('behistorical-form-config.js topic key audit');
     if (!src) continue;
     const m = src.match(/var\s+TOPIC_KEY\s*=\s*['"]([^'"]+)['"]/);
     if (m && !topicKeys.has(m[1])) {
-      err(f, `TOPIC_KEY '${m[1]}' has no BH_FORM.topics entry — Google Form prefill will break`);
+      err(f, `TOPIC_KEY '${m[1]}' has no BH_FORM.topics entry, Google Form prefill will break`);
       mismatches++;
     }
   }
@@ -706,8 +706,8 @@ console.log(`${W}Summary${X}  |  ${totalChecks} files checked`);
 if (totalErrors === 0 && totalWarnings === 0) {
   console.log(`${G}${W}All checks passed.${X}`);
 } else {
-  if (totalErrors > 0)   console.log(`  ${R}${W}${totalErrors} error(s)${X}  — must fix before deploying`);
-  if (totalWarnings > 0) console.log(`  ${Y}${totalWarnings} warning(s)${X} — should fix before class`);
+  if (totalErrors > 0)   console.log(`  ${R}${W}${totalErrors} error(s)${X} , must fix before deploying`);
+  if (totalWarnings > 0) console.log(`  ${Y}${totalWarnings} warning(s)${X}, should fix before class`);
 }
 console.log('');
 process.exit(totalErrors > 0 ? 1 : 0);

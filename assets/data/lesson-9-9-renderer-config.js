@@ -1,12 +1,12 @@
-// Topic 9.9 — runtime-authoritative CED alignment, effective Fall 2026.
+// Topic 9.9, runtime-authoritative CED alignment, effective Fall 2026.
 (() => {
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
-  lesson.meta.canvasSubmissionNote = 'Organize your thinking here — submit your final work in Canvas.';
+  lesson.meta.canvasSubmissionNote = 'Organize your thinking here, submit your final work in Canvas.';
   lesson.meta.feedbackToolUrl = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
   lesson.collegeBoardKeyConcepts = [
   {
-    code: 'Thematic Focus — Unit 9 Synthesis (SYN)',
+    code: 'Thematic Focus, Unit 9 Synthesis (SYN)',
     theme: 'Unit 9 Synthesis',
     text: 'Use Unit 9 evidence to evaluate change, continuity, significance, and complexity.',
     illustrativeExamples: []

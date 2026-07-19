@@ -6,12 +6,12 @@
  * Load BEFORE any renderer or lesson script that needs form URLs:
  *   <script src="../assets/js/behistorical-form-config.js?v=unified-v2"></script>
  *
- * Entry IDs (from the Google Form — do not modify):
+ * Entry IDs (from the Google Form, do not modify):
  *   entry.125385659  = Unit             (pre-filled per lesson)
  *   entry.187055090  = Topic            (pre-filled per lesson)
  *   entry.1549761827 = Prompt ID        (pre-filled per capture point)
  *   entry.2107637366 = Response Type    (pre-filled per capture point)
- *   entry.1963461515 = Skill Focus      (checkbox — repeat per skill)
+ *   entry.1963461515 = Skill Focus      (checkbox, repeat per skill)
  *   entry.1794755975 = Class Period     (student selects)
  * ─────────────────────────────────────────────────────────────────────────────
  */
@@ -228,13 +228,13 @@ window.BH_FORM = {
  *
  * Returns a fully-prefilled Google Form URL.
  *
- *   topicKey       — key into BH_FORM.topics, e.g. '1.1', 'f3'
- *   responseTypeKey — key into BH_FORM.responseTypes, e.g. 'first10', 'checkpoint1'
+ *   topicKey      , key into BH_FORM.topics, e.g. '1.1', 'f3'
+ *   responseTypeKey, key into BH_FORM.responseTypes, e.g. 'first10', 'checkpoint1'
  *
  * Derived automatically:
- *   Unit       — from the numeric prefix of topicKey
- *   Prompt ID  — {topicKey}-{slug}
- *   Skill Focus — from BH_FORM.skills[topicKey][responseTypeKey] (if defined)
+ *   Unit      , from the numeric prefix of topicKey
+ *   Prompt ID , {topicKey}-{slug}
+ *   Skill Focus, from BH_FORM.skills[topicKey][responseTypeKey] (if defined)
  */
 function buildFormURL(topicKey, responseTypeKey) {
   var topic = BH_FORM.topics[topicKey] || topicKey;

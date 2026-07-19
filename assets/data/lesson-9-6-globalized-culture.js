@@ -13,7 +13,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Globalized Culture After 1900',
     subtitle: 'Explain how and why globalization changed culture over time.',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [
     {
@@ -48,7 +48,7 @@ window.BEHISTORICAL_LESSON = {
   ],
   collegeBoardKeyConcepts: [
     {
-      code: 'Thematic Focus — Cultural Developments and Interactions (CDI)',
+      code: 'Thematic Focus, Cultural Developments and Interactions (CDI)',
       theme: 'Cultural Developments and Interactions',
       text: 'Ideas, beliefs, and religions shape how groups view themselves, and interactions among societies have political, social, and cultural implications.',
       illustrativeExamples: []

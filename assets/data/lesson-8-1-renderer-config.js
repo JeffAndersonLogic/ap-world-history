@@ -1,5 +1,5 @@
 // lesson-8-1-renderer-config.js
-// Topic 8.1 — Setting the Stage for the Cold War and Decolonization
+// Topic 8.1, Setting the Stage for the Cold War and Decolonization
 // RUNTIME-AUTHORITATIVE: all College Board CED text below is verbatim from the
 // AP World History: Modern CED and must not be paraphrased or truncated.
 (() => {
@@ -8,7 +8,7 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus — Governance (GOV)',
+      code: 'Thematic Focus, Governance (GOV)',
       theme: 'Governance',
       text: 'A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.',
       illustrativeExamples: []
@@ -43,10 +43,10 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Colonial empires still intact in 1945', detail: 'Britain and France still held vast territories across Africa, Asia, and the Pacific — but WWII had exhausted their ability to maintain them.' },
+      { label: 'Colonial empires still intact in 1945', detail: 'Britain and France still held vast territories across Africa, Asia, and the Pacific, but WWII had exhausted their ability to maintain them.' },
       { label: 'The two superpowers', detail: 'The United States and Soviet Union emerged from WWII with the industrial capacity, military strength, and ideological ambition to reshape the global order.' },
       { label: 'Where nationalist movements were organized', detail: 'India, Southeast Asia, and parts of West Africa already had organized independence movements by 1945. The question was not if, but when.' },
-      { label: 'Geographic takeaway', detail: 'The map shows a world whose political structure was about to change fundamentally — and understanding why requires connecting unfulfilled WWI promises, WWII exhaustion, and superpower rivalry.' }
+      { label: 'Geographic takeaway', detail: 'The map shows a world whose political structure was about to change fundamentally, and understanding why requires connecting unfulfilled WWI promises, WWII exhaustion, and superpower rivalry.' }
     ]
   };
 
@@ -73,8 +73,8 @@
     desc: 'Five weeks to partition a subcontinent, by someone who had never visited India.',
     intro: 'When Britain announced Indian independence in June 1947, the boundary commission was given just five weeks to divide the subcontinent.',
     detail: 'Cyril Radcliffe, an English barrister who had never visited India, drew the line separating India and Pakistan. He delivered his maps two days after independence was declared.',
-    text: 'When Britain announced Indian independence in June 1947, the boundary commission that would divide the subcontinent into India and Pakistan was given just five weeks to draw a new national border through territories that had never been divided. Cyril Radcliffe, an English barrister who had never visited India, drew the line. He delivered his maps on August 17, 1947 — two days after independence. Within months, an estimated 10–14 million people had crossed the boundary, making the Partition of India one of the largest forced migrations in human history.',
-    prompt: 'What does it reveal about the nature of British power in 1947 that the empire which had governed India for nearly two centuries entrusted its partition to a lawyer who had never visited the country — with five weeks to finish the job?'
+    text: 'When Britain announced Indian independence in June 1947, the boundary commission that would divide the subcontinent into India and Pakistan was given just five weeks to draw a new national border through territories that had never been divided. Cyril Radcliffe, an English barrister who had never visited India, drew the line. He delivered his maps on August 17, 1947, two days after independence. Within months, an estimated 10–14 million people had crossed the boundary, making the Partition of India one of the largest forced migrations in human history.',
+    prompt: 'What does it reveal about the nature of British power in 1947 that the empire which had governed India for nearly two centuries entrusted its partition to a lawyer who had never visited the country, with five weeks to finish the job?'
   };
 
   lesson.skillBuilder = {
@@ -114,7 +114,7 @@
     }
   ];
 
-  // Capture points — static hardcoded anchor tags only. Never JS-generated.
+  // Capture points, static hardcoded anchor tags only. Never JS-generated.
   // first10 is intentionally empty: the First & 10 capture lives inside the
   // capture wrapper, and nothing renders below the First & 10 iframe.
   lesson.captureUrls = {

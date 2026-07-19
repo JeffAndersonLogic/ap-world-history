@@ -1,5 +1,5 @@
 (() => {
-  // brand lock IIFE — copy this block exactly:
+  // brand lock IIFE, copy this block exactly:
   const brandCss = '../assets/css/behistorical-brand-lock.css';
   if (!document.querySelector(`link[href="${brandCss}"]`)) {
     const link = document.createElement('link');
@@ -33,7 +33,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Environmental Consequences of Connectivity: Disease, Death, and Ecological Change',
     subtitle: 'How trade routes spread the Black Death and transformed ecosystems c. 1200–1450',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
 
   learningTargets: [
@@ -61,7 +61,7 @@ window.BEHISTORICAL_LESSON = {
       theme: 'Environment and Geography'
     },
     {
-      criteria: 'I can use specific evidence — population statistics, labor shortages, or social upheaval — to explain how the Black Death transformed societies across Eurasia.',
+      criteria: 'I can use specific evidence, population statistics, labor shortages, or social upheaval, to explain how the Black Death transformed societies across Eurasia.',
       kc: 'KC-3.1.IV',
       theme: 'Social Structures'
     },
@@ -86,7 +86,7 @@ window.BEHISTORICAL_LESSON = {
     intro: 'Connectivity had a dark side. The same networks that moved silk and spices also moved rats, fleas, and bacteria. Use these segments to understand how the Black Death traveled, what it destroyed, and how expanding trade permanently altered the ecology of Afro-Eurasia.',
     videos: [
       {
-        title: 'ENVIRONMENTAL Effects of Connectivity [AP World History Review—Unit 2 Topic 6]',
+        title: 'ENVIRONMENTAL Effects of Connectivity [AP World History Review, Unit 2 Topic 6]',
         url: 'https://youtu.be/PKQzXPAAFBA',
         youtubeId: 'PKQzXPAAFBA',
         prompt: 'Track how crops and disease pathogens moved through exchange networks and transformed environments and populations.'
@@ -96,13 +96,13 @@ window.BEHISTORICAL_LESSON = {
       {
         title: 'How Disease Traveled Trade Routes',
         bullets: [
-          '**Yersinia pestis**, the bacterium causing bubonic plague, was endemic in the rodent populations of the Central Asian steppe; the expansion of Mongol trade networks — the **Pax Mongolica** — brought human populations into closer contact with these disease reservoirs than ever before.',
+          '**Yersinia pestis**, the bacterium causing bubonic plague, was endemic in the rodent populations of the Central Asian steppe; the expansion of Mongol trade networks, the **Pax Mongolica**, brought human populations into closer contact with these disease reservoirs than ever before.',
           'Plague spread westward along overland routes by the 1340s, transmitted primarily by **fleas living on rats** that traveled with caravans and aboard merchant ships; once the disease reached the Black Sea ports of Caffa and Tana, Genoese trading ships carried it into the Mediterranean world.',
-          'The speed of spread directly reflected the density of trade connections — regions most deeply integrated into the **Mongol trade network** were struck earliest and hardest, demonstrating that the same infrastructure enabling commercial prosperity could rapidly transmit catastrophe.'
+          'The speed of spread directly reflected the density of trade connections, regions most deeply integrated into the **Mongol trade network** were struck earliest and hardest, demonstrating that the same infrastructure enabling commercial prosperity could rapidly transmit catastrophe.'
         ],
         image: {
-          title: 'Nile River from Space — NASA Composite',
-          caption: 'Rivers and coastlines were the highways of medieval trade — and the corridors along which epidemic disease spread with terrifying speed into densely populated agricultural zones.',
+          title: 'Nile River from Space, NASA Composite',
+          caption: 'Rivers and coastlines were the highways of medieval trade, and the corridors along which epidemic disease spread with terrifying speed into densely populated agricultural zones.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nile_composite_NASA.jpg'
         }
@@ -110,8 +110,8 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "The Black Death's Devastating Impact",
         bullets: [
-          'The **Black Death** (c. 1347–1353) killed an estimated **30–60% of the European population** and caused similar catastrophic mortality across the Middle East and parts of Central and East Asia — in some cities, more than half the population died within months.',
-          '**Labor shortages** following the plague empowered surviving peasants and workers to demand higher wages and greater freedoms, accelerating the decline of serfdom in Western Europe and contributing to social upheaval — including the English Peasants\' Revolt of 1381.',
+          'The **Black Death** (c. 1347–1353) killed an estimated **30–60% of the European population** and caused similar catastrophic mortality across the Middle East and parts of Central and East Asia, in some cities, more than half the population died within months.',
+          '**Labor shortages** following the plague empowered surviving peasants and workers to demand higher wages and greater freedoms, accelerating the decline of serfdom in Western Europe and contributing to social upheaval, including the English Peasants\' Revolt of 1381.',
           'The plague **challenged traditional religious and political authority**: when the Church could neither explain nor stop the dying, popular faith in clerical institutions eroded; flagellant movements, anti-Jewish pogroms, and millennialist religious movements proliferated across a traumatized Europe.'
         ],
         image: {
@@ -125,11 +125,11 @@ window.BEHISTORICAL_LESSON = {
         title: 'Ecological Changes Along Trade Routes',
         bullets: [
           '**Deforestation** accelerated along trade routes as growing populations and expanding commerce demanded agricultural land and ship-building timber; coastlines from the Mediterranean to the Bay of Bengal were stripped of forest cover over the 12th–14th centuries.',
-          'Agricultural **intensification** near trade hubs — especially in river valleys and coastal plains — depleted soils, altered local water cycles, and made agricultural communities more vulnerable to drought, flooding, and crop failure.',
-          'Trade routes served as corridors for the movement of **invasive species**: plants, animals, and pathogens crossed ecological boundaries they could never have crossed naturally, permanently altering the biodiversity of regions from sub-Saharan Africa to East Asia — a process that would accelerate dramatically after 1492.'
+          'Agricultural **intensification** near trade hubs, especially in river valleys and coastal plains, depleted soils, altered local water cycles, and made agricultural communities more vulnerable to drought, flooding, and crop failure.',
+          'Trade routes served as corridors for the movement of **invasive species**: plants, animals, and pathogens crossed ecological boundaries they could never have crossed naturally, permanently altering the biodiversity of regions from sub-Saharan Africa to East Asia, a process that would accelerate dramatically after 1492.'
         ],
         image: {
-          title: 'World Map — Blue Sea Edition',
+          title: 'World Map, Blue Sea Edition',
           caption: 'By c. 1350, the ecological footprint of Afro-Eurasian trade networks extended from the Atlantic coast of Morocco to the South China Sea, reshaping landscapes and species distributions across the entire connected world.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg'
@@ -143,13 +143,13 @@ window.BEHISTORICAL_LESSON = {
     url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nile_composite_NASA.jpg',
     caption: 'River valleys, coastlines, and overland trade corridors served as the pathways along which the Black Death spread from its Central Asian origins across Eurasia and into North Africa.',
-    intro: 'The Black Death did not spread randomly — it followed the trade routes. Plague traveled from the steppes of Central Asia westward along Mongol roads, then jumped onto ships at Black Sea ports and moved through the Mediterranean with terrifying speed. Use this map to trace how geography shaped both the path and the pace of the epidemic.',
+    intro: 'The Black Death did not spread randomly, it followed the trade routes. Plague traveled from the steppes of Central Asia westward along Mongol roads, then jumped onto ships at Black Sea ports and moved through the Mediterranean with terrifying speed. Use this map to trace how geography shaped both the path and the pace of the epidemic.',
     prompt: 'Looking at the geography of river valleys and coastlines, where would you expect the Black Death to spread most quickly? What geographic features would have slowed or stopped its spread? How does the map evidence support the claim that trade routes were the primary mechanism of plague transmission?',
     notes: [
       'Plague originated in the **Central Asian steppe**, where Yersinia pestis was endemic in wild rodent populations; Mongol trade routes brought human travelers into sustained contact with these reservoirs.',
       'The disease reached the **Black Sea** ports of Caffa and Tana by c. 1346, likely transmitted during Mongol siege warfare; Genoese merchants then carried it into Sicily and the Mediterranean by 1347.',
-      'The plague spread rapidly through **densely populated river valleys** — the Nile Delta, the Po Plain, the Rhine Valley — where urban populations had little prior exposure and no immunity.',
-      'Sub-Saharan Africa and the Americas were largely spared in this outbreak, reflecting the limits of connectivity in c. 1350 — a stark contrast to the post-1492 world.'
+      'The plague spread rapidly through **densely populated river valleys**, the Nile Delta, the Po Plain, the Rhine Valley, where urban populations had little prior exposure and no immunity.',
+      'Sub-Saharan Africa and the Americas were largely spared in this outbreak, reflecting the limits of connectivity in c. 1350, a stark contrast to the post-1492 world.'
     ]
   },
 
@@ -169,7 +169,7 @@ window.BEHISTORICAL_LESSON = {
       },
       {
         title: 'European Population Loss, 1347–1353',
-        detail: 'Modern demographic estimates suggest that Europe\'s population fell from approximately 75 million in 1340 to roughly 50 million by 1400 — a loss of one-third or more. Some regions fared worse: Florence lost perhaps half its population; some rural areas of southern France lost 60–70%. The plague\'s demographic impact created acute labor shortages that empowered surviving workers and accelerated the decline of feudal obligations across Western Europe.'
+        detail: 'Modern demographic estimates suggest that Europe\'s population fell from approximately 75 million in 1340 to roughly 50 million by 1400, a loss of one-third or more. Some regions fared worse: Florence lost perhaps half its population; some rural areas of southern France lost 60–70%. The plague\'s demographic impact created acute labor shortages that empowered surviving workers and accelerated the decline of feudal obligations across Western Europe.'
       },
       {
         title: 'Ibn Khaldun on the Plague in North Africa and the Middle East',
@@ -185,7 +185,7 @@ window.BEHISTORICAL_LESSON = {
   primarySource: {
     title: 'Primary Source: Giovanni Boccaccio Describes the Black Death in Florence, 1348',
     intro: 'Giovanni Boccaccio (1313–1375) was an Italian writer who survived the Black Death in Florence and described its effects in the preface to his famous work the Decameron. This adapted passage is one of the most vivid eyewitness accounts of the plague\'s social and demographic impact.',
-    text: 'In the year of Our Lord 1348, there came to the noble city of Florence — the fairest of all the cities of Italy — a mortal pestilence. Whether it descended from the heavens or arose from our own actions, I cannot say. It began in the East and moved westward through every land it touched, sparing no city and no class of people. The signs of the disease were strange swellings, the size of an apple or an egg, which appeared under the armpits or in the groin. These were called gavocciolos. From these, the illness spread through the body and within three days the afflicted were dead. The mortality was so great in the city that the living could not bury the dead. Men who had been healthy in the morning were dead before nightfall. Neighbor fled from neighbor. Fathers abandoned their own children. The gravediggers, paid enormous sums, could barely keep pace. In the surrounding countryside, the poor and the peasants died like animals with no physician and no aid. Many villages stood entirely empty. I estimate that more than a hundred thousand souls died in the city of Florence alone from the month of March to the month of July in that terrible year.',
+    text: 'In the year of Our Lord 1348, there came to the noble city of Florence, the fairest of all the cities of Italy, a mortal pestilence. Whether it descended from the heavens or arose from our own actions, I cannot say. It began in the East and moved westward through every land it touched, sparing no city and no class of people. The signs of the disease were strange swellings, the size of an apple or an egg, which appeared under the armpits or in the groin. These were called gavocciolos. From these, the illness spread through the body and within three days the afflicted were dead. The mortality was so great in the city that the living could not bury the dead. Men who had been healthy in the morning were dead before nightfall. Neighbor fled from neighbor. Fathers abandoned their own children. The gravediggers, paid enormous sums, could barely keep pace. In the surrounding countryside, the poor and the peasants died like animals with no physician and no aid. Many villages stood entirely empty. I estimate that more than a hundred thousand souls died in the city of Florence alone from the month of March to the month of July in that terrible year.',
     questions: [
       'What specific details does Boccaccio provide about the physical symptoms of the plague and its speed of death? How do these details help explain why the disease caused such rapid social breakdown?',
       'What social behaviors does Boccaccio describe that suggest the plague challenged community bonds and traditional obligations? What does this reveal about the social consequences of the Black Death?',

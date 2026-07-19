@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Song China: Power, Prosperity, and the Scholar's World",
     subtitle: "Developments in East Asia, c. 1200 to c. 1450",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
+    canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
@@ -99,7 +99,7 @@ window.BEHISTORICAL_LESSON = {
     {
       code: "KC-3.1.I.D",
       theme: "Economic Systems",
-      text: "The expansion of empires—including the Song Dynasty—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.",
+      text: "The expansion of empires, including the Song Dynasty, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.",
       illustrativeExamples: []
     }
   ],
@@ -108,8 +108,8 @@ window.BEHISTORICAL_LESSON = {
     title: "Song China: Governance, Culture, and Economy",
     intro: "Use these cards to explain how Song China organized political authority, extended Chinese cultural influence, and developed one of the most commercialized economies of the postclassical world.",
     videos: [
-      { title: "Heimler's History — Topic 1.1 Part 1", url: "https://youtu.be/QO7NHZJ-eE4", youtubeId: "QO7NHZJ-eE4", prompt: "Use this clip to review Song governance, Confucianism, and cultural influence." },
-      { title: "Heimler's History — Topic 1.1 Part 2", url: "https://youtu.be/HfIWZhXt7fY", youtubeId: "HfIWZhXt7fY", prompt: "Use this clip to review Song commercial growth, technology, and economic innovation." }
+      { title: "Heimler's History, Topic 1.1 Part 1", url: "https://youtu.be/QO7NHZJ-eE4", youtubeId: "QO7NHZJ-eE4", prompt: "Use this clip to review Song governance, Confucianism, and cultural influence." },
+      { title: "Heimler's History, Topic 1.1 Part 2", url: "https://youtu.be/HfIWZhXt7fY", youtubeId: "HfIWZhXt7fY", prompt: "Use this clip to review Song commercial growth, technology, and economic innovation." }
     ],
     segments: [
       { title: "How Song rulers organized government", bullets: ["Song rulers expanded **imperial bureaucracy** to govern a large, complex state.", "The **civil service exam system** selected scholar-officials trained in Confucian texts.", "Confucianism helped justify hierarchy, obedience, education, and moral government."], image: { title: "Song imperial examination", caption: "Civil service exams became a major path into the scholar-official class.", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG", sourceUrl: "https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG" } },
@@ -147,7 +147,7 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Fan Zhongyan's Memorial on Reform (1043 CE)",
-    intro: "Political memorial — a formal written proposal from a high-ranking official to the emperor recommending policy changes. Fan Zhongyan was a Song scholar-official who rose through the civil service examination system and submitted this memorial to Emperor Renzong in 1043 CE.",
+    intro: "Political memorial, a formal written proposal from a high-ranking official to the emperor recommending policy changes. Fan Zhongyan was a Song scholar-official who rose through the civil service examination system and submitted this memorial to Emperor Renzong in 1043 CE.",
     text: "\"I humbly suggest that the court should order the prefectures and districts to recommend scholars of talent and virtue, and that the examination system should be restored to its proper rigor. Officials who gained their posts through purchase or hereditary privilege lack the learning to distinguish between the worthy and the unworthy. How then can they be expected to govern the people or select subordinates with care?\"",
     attribution: "Adapted from Fan Zhongyan, 'Memorial to the Throne on Ten Matters of Reform' (Shitiao Shu), presented to Emperor Renzong, 1043 CE",
     questions: ["Use HIPP analysis (Historical situation, Intended audience, Purpose, Point of view) to explain what this document reveals about how Song officials justified the civil service examination system. What problem is Fan Zhongyan trying to solve, and what does his solution tell you about Song values?"]

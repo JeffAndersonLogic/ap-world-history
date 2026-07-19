@@ -141,7 +141,7 @@
     const summary = analysis.summary || {};
     return `<div class="metric-grid">
       <div class="metric"><strong>${escapeHtml(summary.totalResponses || 0)}</strong><span>Total responses</span></div>
-      <div class="metric"><strong>${escapeHtml(summary.averageConfidence == null ? '—' : summary.averageConfidence + '/5')}</strong><span>Avg confidence</span></div>
+      <div class="metric"><strong>${escapeHtml(summary.averageConfidence == null ? ', ' : summary.averageConfidence + '/5')}</strong><span>Avg confidence</span></div>
       <div class="metric"><strong>${escapeHtml(summary.lowConfidenceCount || 0)}</strong><span>Low confidence</span></div>
       <div class="metric"><strong>${escapeHtml((summary.shortResponseCount || 0) + (summary.blankResponseCount || 0))}</strong><span>Need support</span></div>
     </div>`;
@@ -172,14 +172,14 @@
           <p>${escapeHtml(analysis.classSummary || 'Live analysis loaded from the Google Sheet.')}</p>
           ${renderLiveMetricGrid(analysis)}
           <div class="pulse-list">
-            <div class="pulse-card warning"><div class="small-label">Suggested reteach priority</div><p>${reteach[0] ? `<strong>${escapeHtml(reteach[0].focus)}</strong> — ${escapeHtml(reteach[0].action)}` : 'No reteach priority detected yet.'}</p></div>
+            <div class="pulse-card warning"><div class="small-label">Suggested reteach priority</div><p>${reteach[0] ? `<strong>${escapeHtml(reteach[0].focus)}</strong>, ${escapeHtml(reteach[0].action)}` : 'No reteach priority detected yet.'}</p></div>
             <div class="pulse-card"><div class="small-label">Common evidence</div><p>${evidence.length ? evidence.map(escapeHtml).join(' · ') : 'No common evidence detected yet.'}</p></div>
             <div class="pulse-card warning"><div class="small-label">Common misconceptions</div><p>${misconceptions.length ? misconceptions.map(escapeHtml).join(' · ') : 'No misconception pattern detected yet.'}</p></div>
           </div>
         </section>
         <section class="panel">
           <h3>Students Needing Follow-Up</h3>
-          <div class="card-list">${flags.length ? flags.map(s => `<div class="data-card"><div class="student-row"><div><div class="student-name">${escapeHtml(s.student)}</div><p>${escapeHtml(s.task)} — ${escapeHtml(s.issue)}</p><p><strong>Next:</strong> ${escapeHtml(s.next)}</p></div><span class="risk ${riskClass(s.status)}">${escapeHtml(s.status)}</span></div></div>`).join('') : '<div class="data-card"><p>No student flags generated for the current filter.</p></div>'}</div>
+          <div class="card-list">${flags.length ? flags.map(s => `<div class="data-card"><div class="student-row"><div><div class="student-name">${escapeHtml(s.student)}</div><p>${escapeHtml(s.task)}, ${escapeHtml(s.issue)}</p><p><strong>Next:</strong> ${escapeHtml(s.next)}</p></div><span class="risk ${riskClass(s.status)}">${escapeHtml(s.status)}</span></div></div>`).join('') : '<div class="data-card"><p>No student flags generated for the current filter.</p></div>'}</div>
         </section>
         <section class="panel">
           <h3>Reteach Recommendations</h3>
@@ -214,7 +214,7 @@
 
     const pulse = topic.classPulse;
     const pacingHtml = `<table class="table"><thead><tr><th>Module</th><th>Time</th><th>Watch-for</th></tr></thead><tbody>${topic.pacing.map(row => `<tr><td><strong>${escapeHtml(row.module)}</strong></td><td><span class="badge">${escapeHtml(row.time)}</span></td><td>${escapeHtml(row.note)}</td></tr>`).join('')}</tbody></table>`;
-    const objectivesHtml = `<div class="card-list">${topic.objectives.map(obj => `<div class="data-card"><div class="small-label">${escapeHtml(obj.lo)} · ${escapeHtml(obj.theme)}</div><p><strong>${escapeHtml(obj.text)}</strong></p><ul>${obj.concepts.map(kc => `<li><strong>${escapeHtml(kc.code)}</strong> — ${escapeHtml(kc.text)}</li>`).join('')}</ul></div>`).join('')}</div><div class="tag-row">${topic.examples.map(ex => `<span class="tag">${escapeHtml(ex)}</span>`).join('')}</div>`;
+    const objectivesHtml = `<div class="card-list">${topic.objectives.map(obj => `<div class="data-card"><div class="small-label">${escapeHtml(obj.lo)} · ${escapeHtml(obj.theme)}</div><p><strong>${escapeHtml(obj.text)}</strong></p><ul>${obj.concepts.map(kc => `<li><strong>${escapeHtml(kc.code)}</strong>, ${escapeHtml(kc.text)}</li>`).join('')}</ul></div>`).join('')}</div><div class="tag-row">${topic.examples.map(ex => `<span class="tag">${escapeHtml(ex)}</span>`).join('')}</div>`;
     const misconceptionsHtml = `<div class="card-list">${topic.misconceptions.map(m => `<div class="data-card"><div class="small-label">Misconception</div><p>${escapeHtml(m.misconception)}</p><div class="small-label" style="margin-top:8px;color:#9fe0ad">Correction</div><p>${escapeHtml(m.correction)}</p></div>`).join('')}</div>`;
     const answerHtml = `<div class="card-list">${topic.answerKeys.map(k => `<div class="data-card"><div class="small-label">${escapeHtml(k.part)}</div><p><em>${escapeHtml(k.prompt)}</em></p><p style="margin-top:8px">${escapeHtml(k.answer)}</p></div>`).join('')}</div>`;
     const promptHtml = `<div class="card-list">${topic.prompts.map(p => `<div class="data-card"><div class="small-label">${escapeHtml(p.purpose)}</div><h3>${escapeHtml(p.title)}</h3><div class="copy-box" id="${escapeHtml(p.id)}">${escapeHtml(p.text)}</div><button class="btn secondary" style="margin-top:10px" onclick="TeacherHub.copyText(this,'${escapeHtml(p.id)}')">Copy prompt</button></div>`).join('')}</div>`;
@@ -228,14 +228,14 @@
           <p>This prototype shows the intended Teacher Hub behavior using sample response data. Paste and save the Apps Script endpoint above to load live Google Sheet data.</p>
           ${renderMetricGrid(pulse.summary)}
           <div class="pulse-list">
-            <div class="pulse-card warning"><div class="small-label">Suggested reteach priority</div><p><strong>${escapeHtml(pulse.reteach[0].focus)}</strong> — ${escapeHtml(pulse.reteach[0].action)}</p></div>
+            <div class="pulse-card warning"><div class="small-label">Suggested reteach priority</div><p><strong>${escapeHtml(pulse.reteach[0].focus)}</strong>, ${escapeHtml(pulse.reteach[0].action)}</p></div>
             <div class="pulse-card"><div class="small-label">Common evidence</div><p>${pulse.commonEvidence.map(escapeHtml).join(' · ')}</p></div>
             <div class="pulse-card warning"><div class="small-label">Common misconceptions</div><p>${pulse.topMisconceptions.map(escapeHtml).join(' · ')}</p></div>
           </div>
         </section>
         <section class="panel">
           <h3>Students Needing Follow-Up</h3>
-          <div class="card-list">${topic.students.map(s => `<div class="data-card"><div class="student-row"><div><div class="student-name">${escapeHtml(s.name)}</div><p>${escapeHtml(s.task)} — ${escapeHtml(s.issue)}</p><p><strong>Next:</strong> ${escapeHtml(s.next)}</p></div><span class="risk ${riskClass(s.status)}">${escapeHtml(s.status)}</span></div></div>`).join('')}</div>
+          <div class="card-list">${topic.students.map(s => `<div class="data-card"><div class="student-row"><div><div class="student-name">${escapeHtml(s.name)}</div><p>${escapeHtml(s.task)}, ${escapeHtml(s.issue)}</p><p><strong>Next:</strong> ${escapeHtml(s.next)}</p></div><span class="risk ${riskClass(s.status)}">${escapeHtml(s.status)}</span></div></div>`).join('')}</div>
         </section>
         <section class="panel">
           <h3>Reteach Recommendations</h3>

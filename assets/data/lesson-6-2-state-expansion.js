@@ -13,7 +13,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'State Expansion',
     subtitle: 'Compare processes by which state power shifted in various parts of the world from 1750 to 1900.',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [
     {
@@ -124,7 +124,7 @@ window.BEHISTORICAL_LESSON = {
         title: 'The historical mechanism',
         bullets: [
           '**Start with the process:** States strengthened existing colonies and established direct control over territories previously held by non-state entities.',
-          '**Track power:** Ask who could make rules, mobilize labor, control land, or redirect trade—and how that power changed from 1750 to 1900.',
+          '**Track power:** Ask who could make rules, mobilize labor, control land, or redirect trade, and how that power changed from 1750 to 1900.',
           '**Anchor the pattern:** King Leopold II and the Belgian Congo and British and French rule in West Africa show how a global development took different institutional forms.'
         ],
         image: {
@@ -310,7 +310,7 @@ window.BEHISTORICAL_LESSON = {
   ],
   beInTheRoom: {
     url: '../beintheroom/unit-6/the-flag-over-the-congo.html',
-    desc: 'Leopold II’s private Congo regime has become an international scandal. Advise how sovereignty should change—and what meaningful control would require.'
+    desc: 'Leopold II’s private Congo regime has become an international scandal. Advise how sovereignty should change, and what meaningful control would require.'
   },
   images: [
     {

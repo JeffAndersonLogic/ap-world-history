@@ -54,7 +54,7 @@
       { label: 'Monsoon wind patterns', detail: 'Seasonal winds enabled predictable round-trip voyages between East Africa, Arabia, India, and Southeast Asia.' },
       { label: 'Major port cities', detail: 'Kilwa, Aden, Calicut, Quanzhou, and Malacca served as commercial hubs and centers of cultural exchange.' },
       { label: 'Trade goods and routes', detail: 'Spices from Southeast Asia, textiles from India, gold from East Africa, and porcelain from China all circulated across the network.' },
-      { label: 'Geographic takeaway', detail: 'The Indian Ocean was not a barrier but a highway — predictable winds and maritime technology made it the world\'s busiest sea-based trade network.' }
+      { label: 'Geographic takeaway', detail: 'The Indian Ocean was not a barrier but a highway, predictable winds and maritime technology made it the world\'s busiest sea-based trade network.' }
     ]
   };
 
@@ -78,7 +78,7 @@
 
   lesson.beSurreal = {
     title: 'BeSurreal: Ibn Battuta\'s 75,000-Mile Journey',
-    text: 'Ibn Battuta of Morocco traveled approximately 75,000 miles across the Indian Ocean world between 1325 and 1354 — more than any other person before the age of motorized transport. He visited Kilwa, Calicut, the Maldives, and dozens of other port cities. His journeys were possible because of the Indian Ocean\'s merchant networks, Arabic as a common language of commerce, and Islam as a shared cultural framework.',
+    text: 'Ibn Battuta of Morocco traveled approximately 75,000 miles across the Indian Ocean world between 1325 and 1354, more than any other person before the age of motorized transport. He visited Kilwa, Calicut, the Maldives, and dozens of other port cities. His journeys were possible because of the Indian Ocean\'s merchant networks, Arabic as a common language of commerce, and Islam as a shared cultural framework.',
     prompt: 'What made it possible for one man to travel 75,000 miles in the 14th century? What does that reveal about Indian Ocean connectivity?'
   };
 

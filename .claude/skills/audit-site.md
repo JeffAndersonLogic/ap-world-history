@@ -1,6 +1,6 @@
 ---
 name: audit-site
-description: Validate structural integrity of the BeHistorical site — form config, lesson wiring, hub links, module counts, and meta.topic consistency.
+description: Validate structural integrity of the BeHistorical site, form config, lesson wiring, hub links, module counts, and meta.topic consistency.
 ---
 
 # BeHistorical Site Audit
@@ -21,7 +21,7 @@ Run a comprehensive validation sweep across the entire BeHistorical project. Rep
 
 ### 3. Hub Link Integrity
 - For each `unit-*/index.html`, extract all `href` values from unit-card links.
-- Any `href="#"` is an error — it means a topic card has no lesson page.
+- Any `href="#"` is an error, it means a topic card has no lesson page.
 - Any `href` pointing to a file that doesn't exist on disk is an error.
 - Report per-unit: how many cards, how many linked, how many broken.
 
@@ -66,4 +66,4 @@ Warnings: Y
 Info:     Z
 ```
 
-Use Bash with `grep` / `ls` / file reads to perform all checks. Do NOT modify any files — this is read-only.
+Use Bash with `grep` / `ls` / file reads to perform all checks. Do NOT modify any files, this is read-only.

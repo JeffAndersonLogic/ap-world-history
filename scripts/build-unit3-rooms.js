@@ -28,7 +28,7 @@ const scenarios = [
     centralQuestion: 'How should the Ottoman war council combine artillery, infantry, naval power, and negotiation to breach Constantinople while controlling the costs and risks of imperial expansion?',
     roles: [
       { id: 'artillery', name: 'Chief Artillery Officer', position: 'You coordinate the great bombards and the many smaller cannon.', power: 'You choose firing sectors and repair schedules, but powder, shot, cooling time, and damaged barrels limit you.', goals: 'Create a breach wide enough for a sustained assault and prove that state-funded gunpowder can defeat old fortifications.', fears: 'A burst bombard, exhausted crews, or nightly Byzantine repairs could make the artillery look impressive but strategically useless.', lens: 'Technology changes outcomes only when logistics and repeated fire convert force into a usable breach.', preference: 'Concentrated, methodical bombardment supported by engineers and smaller guns.', blindSpot: 'You may undervalue naval maneuver, diplomacy, and the human cost of sending infantry through rubble.' },
-      { id: 'janissary', name: 'Janissary Commander', position: 'You lead the sultan’s disciplined infantry reserve.', power: 'Your troops can exploit a breach and hold captured ground, but they cannot remain fresh through endless failed assaults.', goals: 'Preserve the elite corps for a decisive moment and maintain loyalty and discipline across the army.', fears: 'Premature attacks will waste trained soldiers; waiting too long may sap morale or invite relief forces.', lens: 'Cannons do not conquer cities by themselves—organized infantry must convert damage into control.', preference: 'A carefully timed multi-wave final assault after sustained preparation.', blindSpot: 'You may treat irregular troops as expendable and underestimate the political value of a negotiated surrender.' },
+      { id: 'janissary', name: 'Janissary Commander', position: 'You lead the sultan’s disciplined infantry reserve.', power: 'Your troops can exploit a breach and hold captured ground, but they cannot remain fresh through endless failed assaults.', goals: 'Preserve the elite corps for a decisive moment and maintain loyalty and discipline across the army.', fears: 'Premature attacks will waste trained soldiers; waiting too long may sap morale or invite relief forces.', lens: 'Cannons do not conquer cities by themselves, organized infantry must convert damage into control.', preference: 'A carefully timed multi-wave final assault after sustained preparation.', blindSpot: 'You may treat irregular troops as expendable and underestimate the political value of a negotiated surrender.' },
       { id: 'naval', name: 'Ottoman Naval Commander', position: 'You command the fleet facing the chain across the Golden Horn.', power: 'You can blockade, transport troops, and threaten sea walls, but the chain and skilled Christian crews restrict direct entry.', goals: 'Cut supply, divide the defenders, and make the fleet essential to the conquest.', fears: 'Another enemy supply convoy could break the blockade and humiliate the navy before the sultan.', lens: 'The city survives because it can concentrate defenders behind walls and still look to the sea for aid.', preference: 'Bypass the chain and force Constantinople to defend the Golden Horn.', blindSpot: 'You may discount the engineering difficulty, Galata’s neutrality, and the army’s need for immediate progress at the land walls.' },
       { id: 'logistics', name: 'Imperial Logistics and Diplomacy Officer', position: 'You track food, powder, draft animals, pay, intelligence, and foreign reactions.', power: 'You can redirect supplies and propose terms, but commanders may see caution as weakness.', goals: 'Win the city intact enough to govern and prevent the siege from becoming a costly, open-ended gamble.', fears: 'Disease, shortages, indiscipline, or a Venetian and Genoese relief effort could reverse the campaign.', lens: 'Expansion succeeds when military victory produces a governable territory rather than an exhausted army and ruined prize.', preference: 'Combine pressure with surrender terms and a firm timetable for escalation.', blindSpot: 'You may overestimate the chance that Byzantine leaders will surrender a sacred imperial capital.' }
     ],
@@ -68,9 +68,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how the siege demonstrates causation in Topic 3.1: why did gunpowder matter, and why were administration, logistics, military professionals, geography, and political choices still necessary to turn the technology into imperial expansion?',
     sources: [
-      { label: 'World History Encyclopedia — 1453: The Fall of Constantinople', url: 'https://www.worldhistory.org/article/1180/1453-the-fall-of-constantinople/' },
-      { label: 'World History Encyclopedia — Mehmed II', url: 'https://www.worldhistory.org/Mehmed_II/' },
-      { label: 'Encyclopaedia Britannica — Fall of Constantinople', url: 'https://www.britannica.com/event/Fall-of-Constantinople-1453' }
+      { label: 'World History Encyclopedia, 1453: The Fall of Constantinople', url: 'https://www.worldhistory.org/article/1180/1453-the-fall-of-constantinople/' },
+      { label: 'World History Encyclopedia, Mehmed II', url: 'https://www.worldhistory.org/Mehmed_II/' },
+      { label: 'Encyclopaedia Britannica, Fall of Constantinople', url: 'https://www.britannica.com/event/Fall-of-Constantinople-1453' }
     ]
   },
   {
@@ -132,9 +132,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Compare at least two of the administrative methods in your choices. Explain how each helped Akbar consolidate power and why the same method could also create resistance, corruption, or new limits on central authority.',
     sources: [
-      { label: 'Metropolitan Museum of Art — The Art of the Mughals before 1600', url: 'https://www.metmuseum.org/essays/the-art-of-the-mughals-before-1600' },
-      { label: 'Encyclopaedia Britannica — Akbar', url: 'https://www.britannica.com/biography/Akbar' },
-      { label: 'Encyclopaedia Britannica — Mughal dynasty', url: 'https://www.britannica.com/topic/Mughal-dynasty' }
+      { label: 'Metropolitan Museum of Art, The Art of the Mughals before 1600', url: 'https://www.metmuseum.org/essays/the-art-of-the-mughals-before-1600' },
+      { label: 'Encyclopaedia Britannica, Akbar', url: 'https://www.britannica.com/biography/Akbar' },
+      { label: 'Encyclopaedia Britannica, Mughal dynasty', url: 'https://www.britannica.com/topic/Mughal-dynasty' }
     ]
   },
   {
@@ -149,7 +149,7 @@ const scenarios = [
       keyConcepts: ['KC-4.1.VI.ii', 'Ottoman–Safavid rivalry', 'Sunni–Shi’a division']
     },
     premise: [
-      'Shah Ismail I has returned to Tabriz after the Safavid defeat at Chaldiran. Ottoman artillery and Janissary firearms broke the charge of the Qizilbash cavalry, Sultan Selim briefly occupied the capital, and winter and supply problems—not a Safavid battlefield victory—forced the Ottoman withdrawal.',
+      'Shah Ismail I has returned to Tabriz after the Safavid defeat at Chaldiran. Ottoman artillery and Janissary firearms broke the charge of the Qizilbash cavalry, Sultan Selim briefly occupied the capital, and winter and supply problems, not a Safavid battlefield victory, forced the Ottoman withdrawal.',
       'The defeat is also a crisis of belief. Ismail founded the Safavid state in 1501, declared Twelver Shiism its official faith, and drew power from Qizilbash followers who viewed him as a divinely guided spiritual leader. Chaldiran has damaged the aura of invincibility supporting that relationship.',
       'The council must rebuild legitimacy, define an official religious system for a population still containing many Sunnis, and respond to an Ottoman rival that presents itself as defender of Sunni Islam. Every decision about doctrine, clerics, ritual, and toleration is also a decision about state power.'
     ],
@@ -196,10 +196,10 @@ const scenarios = [
     ],
     reflectionPrompt: 'Use continuity and change over time to explain how Safavid belief and authority could move from Qizilbash charismatic devotion toward institutional Twelver Shiism. What continued, what changed, and how did rivalry with the Ottoman Empire intensify that process?',
     sources: [
-      { label: 'Encyclopaedia Iranica — Safavid Dynasty', url: 'https://www.iranicaonline.org/articles/safavids/' },
-      { label: 'Encyclopaedia Iranica — Ottoman-Persian Relations under Selim I and Ismail I', url: 'https://www.iranicaonline.org/articles/ottoman-persian-relations-i-under-sultan-selim-i-and-shah-esmail-i/' },
-      { label: 'Encyclopaedia Iranica — Battle of Chaldiran', url: 'https://www.iranicaonline.org/articles/calderan-battle/' },
-      { label: 'Cambridge University Press — The Safavid Synthesis', url: 'https://www.cambridge.org/core/journals/iranian-studies/article/abs/safavid-synthesis-from-qizilbash-islam-to-imamite-shiism/115023951C322B584B1E0E23703DD86E' }
+      { label: 'Encyclopaedia Iranica, Safavid Dynasty', url: 'https://www.iranicaonline.org/articles/safavids/' },
+      { label: 'Encyclopaedia Iranica, Ottoman-Persian Relations under Selim I and Ismail I', url: 'https://www.iranicaonline.org/articles/ottoman-persian-relations-i-under-sultan-selim-i-and-shah-esmail-i/' },
+      { label: 'Encyclopaedia Iranica, Battle of Chaldiran', url: 'https://www.iranicaonline.org/articles/calderan-battle/' },
+      { label: 'Cambridge University Press, The Safavid Synthesis', url: 'https://www.cambridge.org/core/journals/iranian-studies/article/abs/safavid-synthesis-from-qizilbash-islam-to-imamite-shiism/115023951C322B584B1E0E23703DD86E' }
     ]
   }
 ];

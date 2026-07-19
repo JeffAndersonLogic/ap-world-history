@@ -13,7 +13,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Causes of Migration',
     subtitle: 'Explain how environmental and economic factors contributed to varied patterns of migration from 1750 to 1900.',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [
     {
@@ -113,7 +113,7 @@ window.BEHISTORICAL_LESSON = {
         title: 'The historical mechanism',
         bullets: [
           '**Start with the process:** Demographic changes challenged established living patterns.',
-          '**Track power:** Ask who could make rules, mobilize labor, control land, or redirect trade—and how that power changed from 1750 to 1900.',
+          '**Track power:** Ask who could make rules, mobilize labor, control land, or redirect trade, and how that power changed from 1750 to 1900.',
           '**Anchor the pattern:** Irish and Italian migration to the Americas and Chinese and Indian indentured labor show how a global development took different institutional forms.'
         ],
         image: {

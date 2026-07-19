@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "The Silk Roads: Exchange Across Afro-Eurasia",
     subtitle: "Overland trade, luxury goods, and the spread of goods, ideas, and disease c. 1200–1450",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
+    canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can use specific evidence — relay stations, pastoral nomads, caravanserais, or state protection — to explain what made overland trade across Afro-Eurasia possible.",
+      criteria: "I can use specific evidence, relay stations, pastoral nomads, caravanserais, or state protection, to explain what made overland trade across Afro-Eurasia possible.",
       kc: 'KC-3.1.I.A.i',
       theme: "Economics"
     },
@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Economics"
     },
     {
-      criteria: "I can connect Silk Road exchange to specific effects on societies — including wealth, urban growth along routes, and the devastating spread of the Black Death.",
+      criteria: "I can connect Silk Road exchange to specific effects on societies, including wealth, urban growth along routes, and the devastating spread of the Black Death.",
       kc: 'KC-3.1.I.C.i',
       theme: "Economics"
     }
@@ -75,7 +75,7 @@ window.BEHISTORICAL_LESSON = {
     {
       code: 'KC-3.1.I.A.i',
       theme: 'Economic Systems',
-      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.',
+      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Silk Roads, promoting the growth of powerful new trading cities.',
       illustrativeExamples: ['Kashgar', 'Samarkand']
     },
     {
@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain what made the Silk Roads function, what moved along them, and how overland trade transformed the societies it connected from c. 1200 to c. 1450.",
     videos: [
       {
-        title: 'The SILK ROADS [AP World Review—Unit 2 Topic 1]',
+        title: 'The SILK ROADS [AP World Review, Unit 2 Topic 1]',
         url: 'https://youtu.be/daiQ6aChKfk',
         youtubeId: 'daiQ6aChKfk',
         prompt: 'Track the commercial innovations, trading cities, and cultural diffusion that expanded Silk Road exchange.'
@@ -107,7 +107,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "What made the Silk Roads possible",
         bullets: [
-          "**Caravanserais** — government-sponsored rest stops spaced roughly a day's travel apart — provided water, food, lodging, and security for merchants and their animals.",
+          "**Caravanserais**, government-sponsored rest stops spaced roughly a day's travel apart, provided water, food, lodging, and security for merchants and their animals.",
           "**Pastoral nomads**, especially Turkic and Mongol peoples of Central Asia, served as intermediaries and guides, profiting from fees and tolls while connecting settled civilizations.",
           "State protection and political stability were essential: when empires like the Mongol khanates guaranteed safe passage, trade volumes surged along the routes."
         ],
@@ -121,9 +121,9 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "What moved along the Silk Roads",
         bullets: [
-          "Luxury goods such as **silk**, spices, porcelain, and glassware moved from East to West, while horses, wool, gold, and silver moved in return — trade was rarely balanced but always mutually beneficial.",
+          "Luxury goods such as **silk**, spices, porcelain, and glassware moved from East to West, while horses, wool, gold, and silver moved in return, trade was rarely balanced but always mutually beneficial.",
           "Technologies including **paper**, printing, gunpowder, and the magnetic compass spread westward from China, reshaping warfare, communication, and navigation across Afro-Eurasia.",
-          "Religions and ideas also traveled: **Buddhism** spread from India into Central and East Asia, **Islam** reached Central Asian merchants and communities, and epidemic disease — including the **Black Death** — moved along the same routes as goods."
+          "Religions and ideas also traveled: **Buddhism** spread from India into Central and East Asia, **Islam** reached Central Asian merchants and communities, and epidemic disease, including the **Black Death**, moved along the same routes as goods."
         ],
         image: {
           title: "Silk Road routes in the 7th century",
@@ -135,12 +135,12 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "How the Silk Roads changed societies",
         bullets: [
-          "Oasis cities along the routes — Samarkand, Kashgar, Dunhuang — grew wealthy and cosmopolitan as **trade hubs**, attracting merchants, scholars, and craftspeople from across Afro-Eurasia.",
+          "Oasis cities along the routes, Samarkand, Kashgar, Dunhuang, grew wealthy and cosmopolitan as **trade hubs**, attracting merchants, scholars, and craftspeople from across Afro-Eurasia.",
           "Societies that controlled key nodes accumulated enormous **wealth** through taxes, tolls, and direct commerce, fueling state power and cultural patronage.",
-          "The **Black Death** (bubonic plague), carried by fleas on rodents transported along trade routes, devastated populations across Eurasia in the mid-14th century — demonstrating that connectivity accelerated both prosperity and catastrophe."
+          "The **Black Death** (bubonic plague), carried by fleas on rodents transported along trade routes, devastated populations across Eurasia in the mid-14th century, demonstrating that connectivity accelerated both prosperity and catastrophe."
         ],
         image: {
-          title: "Jiaozi paper money — Song China",
+          title: "Jiaozi paper money, Song China",
           caption: "Paper money reflects the commercialized economy that powered demand for Silk Road luxury goods.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg"
@@ -155,11 +155,11 @@ window.BEHISTORICAL_LESSON = {
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Silk_route.jpg",
     caption: "The overland Silk Roads connected China to the Mediterranean through Central Asia and Southwest Asia.",
     intro: "Use the map to trace how goods, people, and ideas moved across thousands of miles of steppe, desert, and mountain terrain.",
-    prompt: "How did geography — deserts, mountains, and steppe — shape which routes merchants used and which communities became wealthy trade hubs?",
+    prompt: "How did geography, deserts, mountains, and steppe, shape which routes merchants used and which communities became wealthy trade hubs?",
     notes: [
       "The routes were not a single road but a network of paths across multiple environments, requiring local knowledge and intermediaries.",
       "Central Asian pastoral peoples occupied the geographic middle of the system and profited as guides, guards, and traders.",
-      "Cities on the routes — Samarkand, Kashgar, Dunhuang — reflected the cosmopolitan wealth generated by centuries of exchange."
+      "Cities on the routes, Samarkand, Kashgar, Dunhuang, reflected the cosmopolitan wealth generated by centuries of exchange."
     ]
   },
 

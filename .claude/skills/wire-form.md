@@ -1,6 +1,6 @@
 ---
 name: wire-form
-description: Validate and fix the Google Form prefill pipeline — verify every lesson generates correct prefilled URLs, check topic label matches, flag missing skill mappings, and audit capture wrappers.
+description: Validate and fix the Google Form prefill pipeline, verify every lesson generates correct prefilled URLs, check topic label matches, flag missing skill mappings, and audit capture wrappers.
 ---
 
 # BeHistorical Form Wiring Audit & Fix
@@ -10,9 +10,9 @@ Validate the end-to-end pipeline from lesson submit buttons → Google Form pref
 ## Reference: Form Architecture
 
 The prefill pipeline has three layers:
-1. **`behistorical-form-config.js`** — Central config with `BH_FORM` object and `buildFormURL(topicKey, responseTypeKey)`
-2. **`behistorical-topic-renderer-v1.js`** — `autoBuildCaptureUrls()` generates submit buttons in module modals using `buildFormURL`
-3. **Capture wrappers** — `first-and-10-*-capture.html` files with hardcoded `PREFILLED_FIRST10_FORM` URLs
+1. **`behistorical-form-config.js`**, Central config with `BH_FORM` object and `buildFormURL(topicKey, responseTypeKey)`
+2. **`behistorical-topic-renderer-v1.js`**, `autoBuildCaptureUrls()` generates submit buttons in module modals using `buildFormURL`
+3. **Capture wrappers**, `first-and-10-*-capture.html` files with hardcoded `PREFILLED_FIRST10_FORM` URLs
 
 ### Form entry IDs
 - `entry.125385659` = Unit (dropdown)

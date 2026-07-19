@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "The Mongol Empire: Conquest, Connection, and the Pax Mongolica",
     subtitle: "Expansion, administration, and transregional exchange c. 1200–1450",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
+    canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
@@ -47,7 +47,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Economics"
     },
     {
-      target: "I can describe the effects of Mongol rule — both destructive consequences and the connective networks it created.",
+      target: "I can describe the effects of Mongol rule, both destructive consequences and the connective networks it created.",
       kc: 'KC-3.2.II.A.ii',
       theme: "Governance"
     }
@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can use specific evidence — cavalry tactics, siege warfare, Genghis Khan's unification of the steppe, or the khanate system — to explain how the Mongols built and governed their empire.",
+      criteria: "I can use specific evidence, cavalry tactics, siege warfare, Genghis Khan's unification of the steppe, or the khanate system, to explain how the Mongols built and governed their empire.",
       kc: 'KC-3.2.I.B.iii',
       theme: "Governance"
     },
@@ -81,7 +81,7 @@ window.BEHISTORICAL_LESSON = {
     {
       code: 'KC-3.1.I.E.i',
       theme: 'Economic Systems',
-      text: 'The expansion of empires—including the Mongols—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.',
+      text: 'The expansion of empires, including the Mongols, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.',
       illustrativeExamples: []
     },
     {
@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain how the Mongols built the largest contiguous land empire in world history, how they governed it, and how Mongol rule transformed Eurasian networks of trade and exchange from c. 1200 to c. 1450.",
     videos: [
       {
-        title: 'The MONGOL Empire, Explained [AP World History Review—Unit 2 Topic 2]',
+        title: 'The MONGOL Empire, Explained [AP World History Review, Unit 2 Topic 2]',
         url: 'https://youtu.be/KHJLZBXUyzo',
         youtubeId: 'KHJLZBXUyzo',
         prompt: 'Track how Mongol rule changed economic exchange and accelerated cultural transfers across Eurasia.'
@@ -108,7 +108,7 @@ window.BEHISTORICAL_LESSON = {
         title: "How the Mongols built their empire",
         bullets: [
           "**Genghis Khan** (Temüjin) unified the fractured Mongolian steppe tribes by 1206 through a combination of military victories, strategic marriages, and a new merit-based army structure that broke traditional clan loyalties.",
-          "Mongol armies combined devastating **cavalry tactics** — speed, feigned retreats, and mounted archery — with advanced **siege warfare** techniques learned from conquered peoples, making them effective against both nomadic and settled opponents.",
+          "Mongol armies combined devastating **cavalry tactics**, speed, feigned retreats, and mounted archery, with advanced **siege warfare** techniques learned from conquered peoples, making them effective against both nomadic and settled opponents.",
           "Expansion under Genghis Khan and his successors swept across Central Asia, northern China, Persia, and into Eastern Europe, creating the largest **contiguous land empire** in world history by the mid-13th century."
         ],
         image: {
@@ -121,9 +121,9 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Governing a vast empire",
         bullets: [
-          "After Genghis Khan's death, the empire was divided among his sons into four regional **khanates** — the Yuan (China), Ilkhanate (Persia), Chagatai (Central Asia), and Golden Horde (Russia/Eastern Europe) — each with distinct character but shared Mongol identity.",
+          "After Genghis Khan's death, the empire was divided among his sons into four regional **khanates**, the Yuan (China), Ilkhanate (Persia), Chagatai (Central Asia), and Golden Horde (Russia/Eastern Europe), each with distinct character but shared Mongol identity.",
           "The Mongols practiced **religious tolerance**, allowing Islam, Buddhism, Christianity, and other faiths to coexist within their domains, which helped them govern diverse conquered populations and attract skilled administrators from many backgrounds.",
-          "The **Yam postal relay system** — a network of horse stations spaced a day's ride apart — allowed rapid communication across thousands of miles, enabling the Khan to administer distant territories and supporting the movement of merchants and diplomats."
+          "The **Yam postal relay system**, a network of horse stations spaced a day's ride apart, allowed rapid communication across thousands of miles, enabling the Khan to administer distant territories and supporting the movement of merchants and diplomats."
         ],
         image: {
           title: "Silk Road routes across Afro-Eurasia",
@@ -135,13 +135,13 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "The Pax Mongolica and its effects",
         bullets: [
-          "The **Pax Mongolica** (Mongol Peace) — roughly 1250–1350 — created conditions for unprecedented long-distance travel: merchants, missionaries, and diplomats like Marco Polo crossed Eurasia under Mongol protection, generating new records of cross-cultural encounter.",
+          "The **Pax Mongolica** (Mongol Peace), roughly 1250–1350, created conditions for unprecedented long-distance travel: merchants, missionaries, and diplomats like Marco Polo crossed Eurasia under Mongol protection, generating new records of cross-cultural encounter.",
           "Mongol rule had **devastating consequences** as well: the sack of Baghdad in 1258 ended the Abbasid Caliphate and killed hundreds of thousands, while the destruction of Central Asian cities like Merv and Samarkand reduced some populations by a majority.",
-          "The same trade routes that enabled the Pax Mongolica also transmitted the **Black Death** — bubonic plague spread westward along Silk Road routes from Central Asia in the 1340s, killing an estimated one-third of Europe's population and millions more across Afro-Eurasia."
+          "The same trade routes that enabled the Pax Mongolica also transmitted the **Black Death**, bubonic plague spread westward along Silk Road routes from Central Asia in the 1340s, killing an estimated one-third of Europe's population and millions more across Afro-Eurasia."
         ],
         image: {
           title: "Geographic overview",
-          caption: "The vast geographic reach of the Mongol Empire connected previously separated regions of Eurasia into a single — if contested — exchange network.",
+          caption: "The vast geographic reach of the Mongol Empire connected previously separated regions of Eurasia into a single, if contested, exchange network.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Nile_composite_NASA.jpg"
         }
@@ -153,13 +153,13 @@ window.BEHISTORICAL_LESSON = {
     title: "The Mongol Empire and Its Khanates",
     url: "https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg",
-    caption: "The Mongol Empire at its height spanned from the Pacific coast of China to Eastern Europe — the largest contiguous land empire in history.",
+    caption: "The Mongol Empire at its height spanned from the Pacific coast of China to Eastern Europe, the largest contiguous land empire in history.",
     intro: "Use the map context to trace the geographic scope of Mongol expansion and identify the four khanates that governed different regions after Genghis Khan's death.",
     prompt: "How did the geography of the Eurasian steppe make Mongol expansion possible, and how did the sheer size of the empire create challenges for unified governance?",
     notes: [
-      "The Mongol Empire stretched across steppe, desert, forest, and farmland — a diversity of environments that required flexible strategies for conquest and administration.",
+      "The Mongol Empire stretched across steppe, desert, forest, and farmland, a diversity of environments that required flexible strategies for conquest and administration.",
       "The four khanates that emerged after 1260 maintained Mongol identity while adapting to local conditions: the Yuan adopted Chinese administrative traditions, while the Ilkhanate eventually converted to Islam.",
-      "Key trade cities — Samarkand, Beijing, Tabriz, and Caffa on the Black Sea — became nodes in the Pax Mongolica exchange network and later transmission points for the Black Death."
+      "Key trade cities, Samarkand, Beijing, Tabriz, and Caffa on the Black Sea, became nodes in the Pax Mongolica exchange network and later transmission points for the Black Death."
     ]
   },
 
@@ -173,9 +173,9 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use the evidence below to connect Mongol conquest and administration to broader historical arguments about power, exchange, and the consequences of empire.",
     prompt: "Choose one piece of evidence and explain how it supports a claim about how the Mongols built their empire, governed it, or shaped the world through the Pax Mongolica.",
     items: [
-      { title: "The Yam postal system", detail: "Evidence of sophisticated imperial administration — the relay network enabled both military communication and the commercial travel that defined the Pax Mongolica." },
-      { title: "The sack of Baghdad, 1258", detail: "Evidence of the destructive power of Mongol conquest — the end of the Abbasid Caliphate reshaped the Islamic world and demonstrated the costs of resistance." },
-      { title: "Marco Polo's travels, 1271–1295", detail: "Evidence of the connectivity the Pax Mongolica enabled — a Venetian merchant could cross Eurasia under Mongol protection and produce the most detailed European account of Asia to that point." }
+      { title: "The Yam postal system", detail: "Evidence of sophisticated imperial administration, the relay network enabled both military communication and the commercial travel that defined the Pax Mongolica." },
+      { title: "The sack of Baghdad, 1258", detail: "Evidence of the destructive power of Mongol conquest, the end of the Abbasid Caliphate reshaped the Islamic world and demonstrated the costs of resistance." },
+      { title: "Marco Polo's travels, 1271–1295", detail: "Evidence of the connectivity the Pax Mongolica enabled, a Venetian merchant could cross Eurasia under Mongol protection and produce the most detailed European account of Asia to that point." }
     ]
   },
 

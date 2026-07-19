@@ -21,7 +21,7 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Plague origin region', detail: 'Bubonic plague was endemic in rodent populations in Central Asia — the Mongol trade routes gave it a highway westward.' },
+      { label: 'Plague origin region', detail: 'Bubonic plague was endemic in rodent populations in Central Asia, the Mongol trade routes gave it a highway westward.' },
       { label: 'Spread through trade routes', detail: 'The plague followed overland Silk Road routes into Southwest Asia, then maritime routes into the Mediterranean and northern Europe.' },
       { label: 'Areas of devastation', detail: 'Europe lost 30–60% of its population; similar demographic collapse struck the Middle East and parts of Central Asia.' },
       { label: 'Geographic takeaway', detail: 'The same connectivity that enriched Afro-Eurasian societies also accelerated the most catastrophic pandemic in premodern history.' }
@@ -48,7 +48,7 @@
 
   lesson.beSurreal = {
     title: 'BeSurreal: The Plague Doctor\'s Mask',
-    text: 'The iconic plague doctor\'s beak mask — filled with herbs and spices — was a 17th-century invention, not a medieval one. But it captures something real: medieval Europeans had no idea what caused the plague. Some blamed bad air (miasma theory). Some blamed Jews. Some blamed the alignment of planets. The Black Death killed roughly 25 million people in Europe — and societies struggled for decades to explain why their world had fallen apart.',
+    text: 'The iconic plague doctor\'s beak mask, filled with herbs and spices, was a 17th-century invention, not a medieval one. But it captures something real: medieval Europeans had no idea what caused the plague. Some blamed bad air (miasma theory). Some blamed Jews. Some blamed the alignment of planets. The Black Death killed roughly 25 million people in Europe, and societies struggled for decades to explain why their world had fallen apart.',
     prompt: 'What does the confusion and fear around the Black Death reveal about the limits of medieval knowledge and the social consequences of epidemic disease?'
   };
 
@@ -57,7 +57,7 @@
     title: 'How Did Trade Routes Cause Environmental and Demographic Catastrophe?',
     intro: 'Causation means tracing WHY something happened through a chain of causes. The Black Death had an environmental cause (rodent reservoir), a structural cause (trade route connectivity), and cascading social and demographic effects.',
     steps: [
-      { label: 'Environmental cause', text: 'Bubonic plague was endemic in Central Asian rodent populations — it was a pre-existing ecological reality waiting for a new pathway.' },
+      { label: 'Environmental cause', text: 'Bubonic plague was endemic in Central Asian rodent populations, it was a pre-existing ecological reality waiting for a new pathway.' },
       { label: 'Structural cause', text: 'Mongol trade routes and Indian Ocean maritime networks created the connectivity that allowed plague to travel faster and farther than ever before.' },
       { label: 'Social effects', text: 'Demographic collapse caused labor shortages, weakened feudal and Church institutions, and prompted long-term social and economic reorganization.' }
     ],

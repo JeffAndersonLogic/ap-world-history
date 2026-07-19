@@ -13,7 +13,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Economic Imperialism',
     subtitle: 'Explain how economic factors contributed to the development of the global economy from 1750 to 1900.',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [
     {
@@ -91,7 +91,7 @@ window.BEHISTORICAL_LESSON = {
         title: 'The historical mechanism',
         bullets: [
           '**Start with the process:** Industrialized states and businesses practiced economic imperialism in Asia and Latin America.',
-          '**Track power:** Ask who could make rules, mobilize labor, control land, or redirect trade—and how that power changed from 1750 to 1900.',
+          '**Track power:** Ask who could make rules, mobilize labor, control land, or redirect trade, and how that power changed from 1750 to 1900.',
           '**Anchor the pattern:** British and French pressure on China through the Opium Wars and British investment in the port of Buenos Aires show how a global development took different institutional forms.'
         ],
         image: {

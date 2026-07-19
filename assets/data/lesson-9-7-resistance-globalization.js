@@ -13,7 +13,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Resistance to Globalization After 1900',
     subtitle: 'Explain the various responses to increasing globalization from 1900 to present.',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [
     {
@@ -48,7 +48,7 @@ window.BEHISTORICAL_LESSON = {
   ],
   collegeBoardKeyConcepts: [
     {
-      code: 'Thematic Focus — Cultural Developments and Interactions (CDI)',
+      code: 'Thematic Focus, Cultural Developments and Interactions (CDI)',
       theme: 'Cultural Developments and Interactions',
       text: 'Ideas, beliefs, and religions shape how groups view themselves, and interactions among societies have political, social, and cultural implications.',
       illustrativeExamples: []
@@ -170,7 +170,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           'A protest flyer, government statement, corporate report, and worker testimony reflect different purposes and audiences.',
           'Point of view matters because groups define globalization’s benefits and harms differently.',
-          'A strong explanation classifies responses—reform, rejection, localization, regulation, or alternative networks—then supports each with evidence.'
+          'A strong explanation classifies responses, reform, rejection, localization, regulation, or alternative networks, then supports each with evidence.'
         ],
         image: {
           title: 'Sourcing Resistance',

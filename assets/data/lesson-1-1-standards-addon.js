@@ -32,7 +32,7 @@
     },
     {
       code: 'KC-3.1.I.D',
-      text: "The expansion of empires—including the Song Dynasty—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.",
+      text: "The expansion of empires, including the Song Dynasty, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.",
       illustrativeExamples: []
     }
   ];

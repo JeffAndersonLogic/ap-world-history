@@ -34,7 +34,7 @@ const scenarios = [
     evidence: [
       E('compass', 'Magnetic Compass', 'A compass supplied direction when clouds or open water removed visible landmarks.', 'Shows Chinese-origin knowledge adapted through wider exchange.'),
       E('astrolabe', 'Mariner’s Astrolabe', 'By the late fifteenth century, a simplified sea astrolabe helped pilots estimate latitude from celestial altitude.', 'Connects Islamic astronomical knowledge to navigation.'),
-      E('caravel', 'Caravel', 'A relatively small, maneuverable vessel could explore coasts and use lateen rigging to work across changing winds.', 'Shows what ship design contributed—and what it could not carry.'),
+      E('caravel', 'Caravel', 'A relatively small, maneuverable vessel could explore coasts and use lateen rigging to work across changing winds.', 'Shows what ship design contributed, and what it could not carry.'),
       E('supplyship', 'Stores Ship', 'A larger supply vessel could extend range but moved less easily near unknown shores.', 'Creates a design tradeoff between endurance and maneuver.'),
       E('volta', 'Volta do Mar', 'Portuguese experience showed that returning north could require sailing west into the Atlantic to catch favorable winds.', 'Makes wind systems a form of technology and learned geography.'),
       E('charts', 'Portolan and Coastal Logs', 'Bearings, harbors, soundings, and hazards accumulated from one voyage to the next.', 'Explains cumulative information infrastructure.'),
@@ -62,9 +62,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain why no single invention caused Portuguese oceanic expansion. Build a causal chain connecting at least two borrowed technologies, one environmental knowledge system, and state sponsorship to the ability to travel and trade across oceans.',
     sources: [
-      { label: 'Royal Museums Greenwich — What is a mariner’s astrolabe?', url: 'https://www.rmg.co.uk/stories/space-astronomy/what-mariners-astrolabe' },
-      { label: 'Encyclopaedia Britannica — Bartolomeu Dias', url: 'https://www.britannica.com/biography/Bartolomeu-Dias' },
-      { label: 'Encyclopaedia Britannica — European exploration: The Age of Discovery', url: 'https://www.britannica.com/topic/European-exploration/The-Age-of-Discovery' }
+      { label: 'Royal Museums Greenwich, What is a mariner’s astrolabe?', url: 'https://www.rmg.co.uk/stories/space-astronomy/what-mariners-astrolabe' },
+      { label: 'Encyclopaedia Britannica, Bartolomeu Dias', url: 'https://www.britannica.com/biography/Bartolomeu-Dias' },
+      { label: 'Encyclopaedia Britannica, European exploration: The Age of Discovery', url: 'https://www.britannica.com/topic/European-exploration/The-Age-of-Discovery' }
     ]
   },
   {
@@ -113,11 +113,11 @@ const scenarios = [
         O('merchantcity', 'Empower resident merchant households', 'Give Portuguese casados and approved local brokers broad commercial and civic privileges.', 'Permanent families invest in the city and mediate trade.', 'A new oligarchy may evade Crown control and exploit other residents.', 'Local durability creates an elite with interests distinct from Lisbon.')
       ])
     ],
-    reflectionPrompt: 'Compare the Portuguese trading-post model with a territorial colonial model. Explain how forts, cannon, passes, and state rivalry established maritime power—and why continued Asian trade and local intermediaries limited European control.',
+    reflectionPrompt: 'Compare the Portuguese trading-post model with a territorial colonial model. Explain how forts, cannon, passes, and state rivalry established maritime power, and why continued Asian trade and local intermediaries limited European control.',
     sources: [
-      { label: 'Metropolitan Museum of Art — Sultans of Deccan India, 1500–1700', url: 'https://resources.metmuseum.org/resources/metpublications/pdf/Sultans_of_Deccan_India_1500_1700.pdf' },
-      { label: 'Encyclopaedia Britannica — Afonso de Albuquerque', url: 'https://www.britannica.com/biography/Afonso-de-Albuquerque' },
-      { label: 'Encyclopaedia Britannica — India: The Portuguese', url: 'https://www.britannica.com/place/India/The-Portuguese' }
+      { label: 'Metropolitan Museum of Art, Sultans of Deccan India, 1500–1700', url: 'https://resources.metmuseum.org/resources/metpublications/pdf/Sultans_of_Deccan_India_1500_1700.pdf' },
+      { label: 'Encyclopaedia Britannica, Afonso de Albuquerque', url: 'https://www.britannica.com/biography/Afonso-de-Albuquerque' },
+      { label: 'Encyclopaedia Britannica, India: The Portuguese', url: 'https://www.britannica.com/place/India/The-Portuguese' }
     ]
   },
   {
@@ -130,7 +130,7 @@ const scenarios = [
       'Toledo is adapting the Inca mit’a into a colonial draft that compels designated Indigenous communities to send workers to Potosí. The system is not simply the old institution continued: Spanish mine owners, royal taxes, cash markets, and long-distance silver flows redirect it toward imperial extraction.',
       'Your production order will connect an Andean mountain to Atlantic fleets, European finance, Manila, Asian goods, and Chinese demand for silver. It will also redistribute danger, migration, family disruption, and environmental contamination.'
     ],
-    centralQuestion: 'How should the Viceroyalty reorganize labor, technology, taxation, and silver routes to maintain Potosí’s output—and who will bear the costs of making the mine a center of global trade?',
+    centralQuestion: 'How should the Viceroyalty reorganize labor, technology, taxation, and silver routes to maintain Potosí’s output, and who will bear the costs of making the mine a center of global trade?',
     roles: [
       R('official', 'Viceregal Revenue Official', 'You turn Toledo’s reforms into quotas, taxes, records, and enforcement.', 'You can assign districts and audit output, but distant officials and mine owners manipulate information.', 'Increase dependable silver revenue and strengthen royal administration.', 'Production may collapse if communities flee, mercury fails, or owners conceal output.', 'A maintained empire requires standardized institutions linking labor and tax to the Crown.', 'Combine the mita, mercury investment, and strict assay records.', 'Administrative success can hide the human violence behind compliant totals.'),
       R('owner', 'Potosí Mine and Mill Owner', 'You invest in shafts, mills, mercury, animals, and skilled labor.', 'You control production sites but depend on state labor allocations, credit, and ore quality.', 'Process lower-grade ore profitably and protect your claim.', 'Without cheap regular labor and mercury, debts may consume the enterprise.', 'Technology creates output only when capital and workers are organized at scale.', 'Secure a mixed workforce and guaranteed mercury supply.', 'You may label coercion and danger as unavoidable production costs.'),
@@ -168,10 +168,10 @@ const scenarios = [
     ],
     reflectionPrompt: 'Trace one unit of Potosí silver from labor recruitment through processing, taxation, and either the Atlantic or Pacific route. Explain how this chain maintained maritime empire while transforming Andean communities and global markets.',
     sources: [
-      { label: 'Library of Congress — A short story about Potosí, Part 2', url: 'https://blogs.loc.gov/international-collections/2022/08/a-short-story-about-potosi-the-largest-south-american-silver-mine-in-the-librarys-collections-part-2-loclr-blogint/' },
-      { label: 'Cambridge Core — Free and Unfree Labour in the Colonial Andes', url: 'https://www.cambridge.org/core/journals/international-review-of-social-history/article/free-and-unfree-labour-in-the-colonial-andes-in-the-sixteenth-and-seventeenth-centuries/B00B9D39F97F968E9F6655462D8FB723' },
-      { label: 'Library of Congress — Negotiating Empire: Founding Manila', url: 'https://blogs.loc.gov/international-collections/2021/10/negotiating-empire-part-i-from-magellan-to-the-founding-of-manila-16th-18th-centuries/' },
-      { label: 'Metropolitan Museum of Art — Interwoven Globe', url: 'https://www.metmuseum.org/exhibitions/listings/2013/interwoven-globe' }
+      { label: 'Library of Congress, A short story about Potosí, Part 2', url: 'https://blogs.loc.gov/international-collections/2022/08/a-short-story-about-potosi-the-largest-south-american-silver-mine-in-the-librarys-collections-part-2-loclr-blogint/' },
+      { label: 'Cambridge Core, Free and Unfree Labour in the Colonial Andes', url: 'https://www.cambridge.org/core/journals/international-review-of-social-history/article/free-and-unfree-labour-in-the-colonial-andes-in-the-sixteenth-and-seventeenth-centuries/B00B9D39F97F968E9F6655462D8FB723' },
+      { label: 'Library of Congress, Negotiating Empire: Founding Manila', url: 'https://blogs.loc.gov/international-collections/2021/10/negotiating-empire-part-i-from-magellan-to-the-founding-of-manila-16th-18th-centuries/' },
+      { label: 'Metropolitan Museum of Art, Interwoven Globe', url: 'https://www.metmuseum.org/exhibitions/listings/2013/interwoven-globe' }
     ]
   },
   {
@@ -222,9 +222,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how political rivalry, economic ambition, religion, technology, and contractual incentives combined to cause state-sponsored exploration. Identify one way Spanish motives resembled Portuguese motives and one important difference in route or imperial outcome.',
     sources: [
-      { label: 'Library of Congress — Christopher Columbus: Man and Myth', url: 'https://www.loc.gov/exhibits/1492/columbus.html' },
-      { label: 'Library of Congress — 1492: An Ongoing Voyage', url: 'https://www.loc.gov/exhibits/1492/' },
-      { label: 'Encyclopaedia Britannica — Treaty of Tordesillas', url: 'https://www.britannica.com/event/Treaty-of-Tordesillas' }
+      { label: 'Library of Congress, Christopher Columbus: Man and Myth', url: 'https://www.loc.gov/exhibits/1492/columbus.html' },
+      { label: 'Library of Congress, 1492: An Ongoing Voyage', url: 'https://www.loc.gov/exhibits/1492/' },
+      { label: 'Encyclopaedia Britannica, Treaty of Tordesillas', url: 'https://www.britannica.com/event/Treaty-of-Tordesillas' }
     ]
   },
   {
@@ -275,9 +275,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain two different causal chains produced by the Columbian Exchange: one beginning with disease and one beginning with a crop or animal transfer. For each, identify a benefit or adaptation and a human or environmental cost.',
     sources: [
-      { label: 'Smithsonian National Museum of Natural History — Seeds of Change', url: 'https://www.si.edu/exhibitions/seeds-change%3Aevent-exhib-2294' },
-      { label: 'Smithsonian Learning Lab — The Columbian Exchange and Global Trade', url: 'https://learninglab.si.edu/collections/the-columbian-exchange-and-global-trade/2BGhYXYGc8PPoWKT' },
-      { label: 'Encyclopaedia Britannica — Columbian Exchange', url: 'https://www.britannica.com/event/Columbian-exchange' }
+      { label: 'Smithsonian National Museum of Natural History, Seeds of Change', url: 'https://www.si.edu/exhibitions/seeds-change%3Aevent-exhib-2294' },
+      { label: 'Smithsonian Learning Lab, The Columbian Exchange and Global Trade', url: 'https://learninglab.si.edu/collections/the-columbian-exchange-and-global-trade/2BGhYXYGc8PPoWKT' },
+      { label: 'Encyclopaedia Britannica, Columbian Exchange', url: 'https://www.britannica.com/event/Columbian-exchange' }
     ]
   },
   {
@@ -328,9 +328,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how religious repression, labor demands, environmental crisis, and political coordination combined to cause the Pueblo Revolt. Then explain one way the revolt changed colonial power and one limitation on that change.',
     sources: [
-      { label: 'National Park Service — San José de los Jémez and the Pueblo Revolt', url: 'https://www.nps.gov/subjects/travelspanishmissions/san-jose-de-los-jemez-mission-and-giusewa-pueblo-site.htm' },
-      { label: 'National Park Service — Spanish Encounters at Pecos', url: 'https://home.nps.gov/peco/learn/historyculture/spanish-encounters.htm' },
-      { label: 'National Park Service — El Camino Real archival study', url: 'https://home.nps.gov/elca/learn/historyculture/upload/ELCA-Archival-Study-12-2020.pdf' }
+      { label: 'National Park Service, San José de los Jémez and the Pueblo Revolt', url: 'https://www.nps.gov/subjects/travelspanishmissions/san-jose-de-los-jemez-mission-and-giusewa-pueblo-site.htm' },
+      { label: 'National Park Service, Spanish Encounters at Pecos', url: 'https://home.nps.gov/peco/learn/historyculture/spanish-encounters.htm' },
+      { label: 'National Park Service, El Camino Real archival study', url: 'https://home.nps.gov/elca/learn/historyculture/upload/ELCA-Archival-Study-12-2020.pdf' }
     ]
   },
   {
@@ -345,7 +345,7 @@ const scenarios = [
     ],
     centralQuestion: 'How should colonial officials judge identity and access to economic privilege when elite racial hierarchies are powerful but actual status depends on fluid combinations of ancestry, birthplace, wealth, gender, reputation, and community membership?',
     roles: [
-      R('petitioner', 'Mixed-Ancestry Widow and Merchant', 'You petition to expand a profitable textile shop and protect your children’s status.', 'Property, customers, parish standing, and legal documents support you, but ancestry and gender restrict formal access.', 'Secure a license, guild connections, and a durable family reputation.', 'Officials may use a racial label to deny rights or expose your property to competitors.', 'Status is made through work, family, reputation, and law—not ancestry alone.', 'Have the court weigh property, Christian standing, and civic service over casta label.', 'Your own upward claim may depend on distancing yourself from poorer or darker communities.'),
+      R('petitioner', 'Mixed-Ancestry Widow and Merchant', 'You petition to expand a profitable textile shop and protect your children’s status.', 'Property, customers, parish standing, and legal documents support you, but ancestry and gender restrict formal access.', 'Secure a license, guild connections, and a durable family reputation.', 'Officials may use a racial label to deny rights or expose your property to competitors.', 'Status is made through work, family, reputation, and law, not ancestry alone.', 'Have the court weigh property, Christian standing, and civic service over casta label.', 'Your own upward claim may depend on distancing yourself from poorer or darker communities.'),
       R('clerk', 'Audiencia Clerk and Lineage Examiner', 'You compare petitions, parish records, witness statements, and legal precedents.', 'Your classification shapes the case, but records conflict and policy is inconsistent.', 'Produce a ruling that looks orderly, defensible, and loyal to the Crown.', 'A flexible decision invites accusations of favoritism; a rigid one may ignore evidence and local reality.', 'Colonial government turns social difference into administrative categories.', 'Use documentary lineage plus reputation and legal status.', 'Bureaucratic categories can make constructed hierarchy appear natural.'),
       R('guild', 'Creole Guild Officer', 'You defend a corporate privilege claimed by established Spanish American masters and merchants.', 'The guild can admit, train, and exclude, but courts and markets can challenge its monopoly.', 'Protect quality, family status, and members’ economic advantage.', 'Successful outsiders may erode privilege and reveal that ancestry rules mainly protect competition.', 'Existing elites preserve power through institutions as well as wealth.', 'Admit only under a narrow exception with sponsorship and fees.', 'You may call self-interest tradition and treat social mobility as disorder.'),
       R('militia', 'Free Black Militia Captain and Community Advocate', 'You represent free people of African descent who serve the city but face racial restrictions.', 'Military service and networks bring recognition, yet legal and social prejudice remains.', 'Use service, freedom, property, and reputation to challenge blanket exclusion.', 'An exception for one wealthy petitioner may leave broader inequality untouched.', 'Colonial states both restrict groups and depend on their economic and military contributions.', 'Adopt clear status rights based on freedom and service rather than color labels.', 'Military usefulness is an incomplete foundation for equal civic rights.')
@@ -379,11 +379,11 @@ const scenarios = [
         O('civil', 'Use a common free-citizen record', 'List parentage factually but bar casta labels from determining ordinary civic and commercial rights.', 'Children face fewer official ancestry barriers.', 'Corporate and imperial elites may refuse to recognize the reform.', 'Formal inclusion can outpace enforcement and social attitudes.')
       ])
     ],
-    reflectionPrompt: 'Explain one continuity and two changes in social hierarchy caused by maritime expansion. Your response must distinguish elite representations such as casta paintings from the more fluid—but still unequal—ways identity operated in colonial life.',
+    reflectionPrompt: 'Explain one continuity and two changes in social hierarchy caused by maritime expansion. Your response must distinguish elite representations such as casta paintings from the more fluid, but still unequal, ways identity operated in colonial life.',
     sources: [
-      { label: 'Smarthistory — Teaching guide: Sixteen casta paintings', url: 'https://smarthistory.org/seeing-america-2/social-structures/teaching-guide-constructing-identity-in-the-spanish-colonies-in-america/' },
-      { label: 'Smarthistory — The art of the viceroyalty of New Spain', url: 'https://smarthistory.org/reframing-art-history/art-viceroyalty-new-spain/' },
-      { label: 'Smarthistory — Miguel Cabrera casta painting', url: 'https://smarthistory.org/cabrera-casta-painting/' }
+      { label: 'Smarthistory, Teaching guide: Sixteen casta paintings', url: 'https://smarthistory.org/seeing-america-2/social-structures/teaching-guide-constructing-identity-in-the-spanish-colonies-in-america/' },
+      { label: 'Smarthistory, The art of the viceroyalty of New Spain', url: 'https://smarthistory.org/reframing-art-history/art-viceroyalty-new-spain/' },
+      { label: 'Smarthistory, Miguel Cabrera casta painting', url: 'https://smarthistory.org/cabrera-casta-painting/' }
     ]
   }
 ];

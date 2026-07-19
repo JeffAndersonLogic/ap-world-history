@@ -28,9 +28,9 @@
     ...lesson.map,
     key: [
       { label: 'Pueblo Revolt zone (New Mexico, 1680)', detail: 'Forty-six Pueblo communities in the Rio Grande valley rose simultaneously under Popé\'s leadership, killing 400 colonists and 21 missionaries and expelling the Spanish for twelve years. The geographic key: Pueblo communities were concentrated in a frontier zone far from the centers of Spanish colonial power in Mexico City and Lima, giving them both the grievances and the relative isolation to organize.' },
-      { label: 'Palmares (Brazilian interior, c. 1605–1694)', detail: 'Palmares — the largest and most durable maroon community in the Americas — thrived in the remote interior of Portuguese Brazil for nearly a century, with a population of up to 30,000. Its survival demonstrates both the capacity of escaped enslaved people to build autonomous institutions and the difficulty colonial powers had projecting military force into interior terrain.' },
-      { label: 'Indian Ocean — Dutch displacement of Portuguese (c. 1600–1650)', detail: 'The Dutch VOC systematically displaced the Portuguese Estado da India from the Indian Ocean by offering lower toll rates, maintaining better-capitalized fleets, and seizing key ports (Batavia, 1619; Malacca, 1641). The geographic lesson: the chokepoint-based Estado da India model was vulnerable to a rival that could out-compete it at every chokepoint simultaneously.' },
-      { label: 'Geographic takeaway', detail: 'Resistance was most effective in frontier or interior regions — where colonial authority was weakest and terrain was most favorable to defenders. The Pueblo Revolt succeeded in a frontier zone; Palmares survived in the Brazilian interior. The Dutch challenge succeeded because it operated at the same geographic level as the Portuguese — controlling the same Indian Ocean chokepoints with superior resources.' }
+      { label: 'Palmares (Brazilian interior, c. 1605–1694)', detail: 'Palmares, the largest and most durable maroon community in the Americas, thrived in the remote interior of Portuguese Brazil for nearly a century, with a population of up to 30,000. Its survival demonstrates both the capacity of escaped enslaved people to build autonomous institutions and the difficulty colonial powers had projecting military force into interior terrain.' },
+      { label: 'Indian Ocean, Dutch displacement of Portuguese (c. 1600–1650)', detail: 'The Dutch VOC systematically displaced the Portuguese Estado da India from the Indian Ocean by offering lower toll rates, maintaining better-capitalized fleets, and seizing key ports (Batavia, 1619; Malacca, 1641). The geographic lesson: the chokepoint-based Estado da India model was vulnerable to a rival that could out-compete it at every chokepoint simultaneously.' },
+      { label: 'Geographic takeaway', detail: 'Resistance was most effective in frontier or interior regions, where colonial authority was weakest and terrain was most favorable to defenders. The Pueblo Revolt succeeded in a frontier zone; Palmares survived in the Brazilian interior. The Dutch challenge succeeded because it operated at the same geographic level as the Portuguese, controlling the same Indian Ocean chokepoints with superior resources.' }
     ]
   };
 
@@ -55,10 +55,10 @@
   lesson.skillBuilder = {
     label: 'Causation practice',
     title: 'Why Did Colonized Peoples Resist? Analyzing Root Causes',
-    intro: 'Causation practice for Topic 4.6 requires explaining why colonized and enslaved peoples resisted European rule at specific times and in specific ways. A strong causation argument moves beyond "they were oppressed" to identify specific grievances, specific organizational factors, and specific moments that triggered action. The Pueblo Revolt and maroon communities offer two different causal stories — both are worth understanding in detail.',
+    intro: 'Causation practice for Topic 4.6 requires explaining why colonized and enslaved peoples resisted European rule at specific times and in specific ways. A strong causation argument moves beyond "they were oppressed" to identify specific grievances, specific organizational factors, and specific moments that triggered action. The Pueblo Revolt and maroon communities offer two different causal stories, both are worth understanding in detail.',
     steps: [
-      { label: 'Identify specific grievances', text: 'The Pueblo Revolt was caused by a specific combination of factors: decades of religious suppression (Spanish missionaries destroyed kivas, confiscated sacred objects, publicly flogged religious leaders including Popé in 1675); increasing labor and tribute demands; a prolonged drought that worsened food insecurity; and broken colonial promises. Any one of these alone might not have triggered revolt — the combination, accumulated over nearly a century, did.' },
-      { label: 'Identify the organizational factor', text: 'Grievances alone do not cause revolts — organization does. Popé\'s achievement was building a coordinated multi-community network across peoples who spoke different languages and had different political traditions. The kiva system — which gave religious leaders a communication network across Pueblo communities — provided the organizational infrastructure. Understanding why 1680 specifically (not 1650 or 1700) requires explaining Popé\'s organizational success.' },
+      { label: 'Identify specific grievances', text: 'The Pueblo Revolt was caused by a specific combination of factors: decades of religious suppression (Spanish missionaries destroyed kivas, confiscated sacred objects, publicly flogged religious leaders including Popé in 1675); increasing labor and tribute demands; a prolonged drought that worsened food insecurity; and broken colonial promises. Any one of these alone might not have triggered revolt, the combination, accumulated over nearly a century, did.' },
+      { label: 'Identify the organizational factor', text: 'Grievances alone do not cause revolts, organization does. Popé\'s achievement was building a coordinated multi-community network across peoples who spoke different languages and had different political traditions. The kiva system, which gave religious leaders a communication network across Pueblo communities, provided the organizational infrastructure. Understanding why 1680 specifically (not 1650 or 1700) requires explaining Popé\'s organizational success.' },
       { label: 'Explain the outcome and its limits', text: 'The Pueblo Revolt succeeded in the short term (twelve years of self-governance) and forced genuine concessions (no reimposition of the encomienda, reduced religious suppression after reconquest). Its limits: the Spanish did eventually reconquer New Mexico in 1692. The revolt demonstrates both the capacity of indigenous resistance to force change AND the structural limits on how far that change could go.' }
     ],
     prompt: 'In 3–4 sentences, write a causation argument: explain what caused the Pueblo Revolt of 1680. Identify at least two specific grievances (religious suppression, labor demands, drought), explain how Popé built the organizational capacity for a coordinated revolt, and describe the short-term outcome. Use specific evidence: Popé, Tewa, kiva, 1675 flogging, August 10, 1680.'
@@ -67,7 +67,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: Indigenous and African Resistance',
-      subtitle: 'Checks Learning Targets 1 and 2 — Pueblo Revolt and maroon communities.',
+      subtitle: 'Checks Learning Targets 1 and 2, Pueblo Revolt and maroon communities.',
       cardDesc: 'Pueblo Revolt, Popé, maroon communities, Palmares, and forms of African resistance.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
@@ -78,7 +78,7 @@
     },
     {
       title: 'Checkpoint 2: European Rivalries and External Challenges',
-      subtitle: 'Checks Learning Target 3 — European competition and external challenges.',
+      subtitle: 'Checks Learning Target 3, European competition and external challenges.',
       cardDesc: 'Dutch displacement of the Portuguese, piracy, privateering, and the Seven Years War.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],

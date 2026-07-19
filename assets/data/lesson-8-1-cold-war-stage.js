@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Setting the Stage for the Cold War and Decolonization",
     subtitle: "How unfulfilled promises, exhausted empires, and two rising superpowers set the terms for the world after 1945",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
+    canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
@@ -73,7 +73,7 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
-      code: "Thematic Focus — Governance (GOV)",
+      code: "Thematic Focus, Governance (GOV)",
       theme: "Governance",
       text: "A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.",
       illustrativeExamples: []
@@ -103,19 +103,19 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace how unfulfilled post-WWI promises, WWII's devastating cost for European empires, and the rise of the United States and Soviet Union created the conditions for both decolonization and Cold War rivalry after 1945.",
     videos: [
       {
-        title: "Heimler's History — Topic 8.1: Setting the Stage",
+        title: "Heimler's History, Topic 8.1: Setting the Stage",
         url: "https://youtu.be/XfEK_BsTf0E",
         youtubeId: "XfEK_BsTf0E",
-        prompt: "Use this clip to review how WWII set the stage for both the Cold War and decolonization — listen for what changed in the global balance of power."
+        prompt: "Use this clip to review how WWII set the stage for both the Cold War and decolonization, listen for what changed in the global balance of power."
       }
     ],
     segments: [
       {
         title: "Promises Deferred: Self-Determination After WWI",
         bullets: [
-          "Wilson's **Fourteen Points** (1918) raised hopes for national self-determination — the idea that peoples should govern themselves.",
+          "Wilson's **Fourteen Points** (1918) raised hopes for national self-determination, the idea that peoples should govern themselves.",
           "The **Paris Peace Conference (1919)** instead created the League of Nations **Mandate System**, placing Germany's former colonies under British and French administration.",
-          "Interwar nationalist movements — the **Indian National Congress**, pan-African congresses, Vietnamese independence movements — were suppressed or co-opted.",
+          "Interwar nationalist movements, the **Indian National Congress**, pan-African congresses, Vietnamese independence movements, were suppressed or co-opted.",
           "By 1945 the grievances had not disappeared. They had intensified: colonial subjects who had fought for the Allies expected their sacrifices to be rewarded with self-government."
         ],
         image: {
@@ -131,7 +131,7 @@ window.BEHISTORICAL_LESSON = {
           "World War II left Britain and France economically devastated. Britain ended the war with **massive debt to the United States** and a treasury that could not sustain global imperial commitments.",
           "The United States **terminated Lend-Lease** aid in September 1945, forcing Britain to negotiate a painful loan that came with conditions undermining imperial trade preferences.",
           "**India (1947)**: The Indian National Congress, led by Gandhi and Nehru, combined mass civil disobedience with political pressure that the exhausted British state could no longer resist.",
-          "**Ghana (1957)**: Kwame Nkrumah's pan-Africanist movement achieved independence for the Gold Coast — the first sub-Saharan African colony to win independence — inspiring liberation movements across the continent.",
+          "**Ghana (1957)**: Kwame Nkrumah's pan-Africanist movement achieved independence for the Gold Coast, the first sub-Saharan African colony to win independence, inspiring liberation movements across the continent.",
           "The dissolution of European empires and the restructuring of states across Asia and Africa accelerated through the 1950s and 1960s."
         ],
         image: {
@@ -147,12 +147,12 @@ window.BEHISTORICAL_LESSON = {
           "The United States emerged from WWII with its industrial capacity intact and dramatically expanded: U.S. GDP **nearly doubled** during the war, and the country held roughly half the world's industrial output by 1945.",
           "The **Soviet Union**, despite suffering 27 million deaths, had industrialized rapidly and emerged with the largest land army in the world and nuclear capability by 1949.",
           "The two powers held **rival ideologies**: American liberal capitalism and democracy versus Soviet Marxism-Leninism and one-party communist rule.",
-          "The **Marshall Plan (1948)** committed $13 billion in U.S. economic aid to rebuild Western Europe — and to keep it within the American sphere of influence.",
+          "The **Marshall Plan (1948)** committed $13 billion in U.S. economic aid to rebuild Western Europe, and to keep it within the American sphere of influence.",
           "Soviet **sphere-building in Eastern Europe** and the formation of **NATO (1949)** and the **Warsaw Pact (1955)** formalized the division of the world into rival blocs, setting the structural conditions for the Cold War."
         ],
         image: {
           title: "The Yalta Conference, February 1945",
-          caption: "Churchill, Roosevelt, and Stalin at Yalta — the moment when the post-war division of Europe began to take shape.",
+          caption: "Churchill, Roosevelt, and Stalin at Yalta, the moment when the post-war division of Europe began to take shape.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_1945_CC.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Yalta_Conference_1945_CC.jpg"
         }
@@ -164,8 +164,8 @@ window.BEHISTORICAL_LESSON = {
     title: "The World in 1945: Colonial Empires and Rising Superpowers",
     url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1945_empires_colonies_territory.png",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1945_empires_colonies_territory.png",
-    caption: "The global political order in 1945 — colonial empires at their peak extent, with two new superpowers emerging.",
-    intro: "Use the map to identify where colonial empires still extended — and where the U.S. and Soviet Union held power. The map shows the world at a turning point: the old imperial order intact on the map, but already under pressure from exhaustion, nationalist movements, and superpower rivalry.",
+    caption: "The global political order in 1945, colonial empires at their peak extent, with two new superpowers emerging.",
+    intro: "Use the map to identify where colonial empires still extended, and where the U.S. and Soviet Union held power. The map shows the world at a turning point: the old imperial order intact on the map, but already under pressure from exhaustion, nationalist movements, and superpower rivalry.",
     prompt: "What does the map suggest about the tension between the old colonial order and the new superpower world? Identify two areas where you would predict major change in the next two decades.",
     notes: [
       "Britain and France still controlled vast colonial territories across Africa, Asia, and the Pacific in 1945.",
@@ -185,7 +185,7 @@ window.BEHISTORICAL_LESSON = {
       title: "League of Nations Mandate Map",
       url: "https://commons.wikimedia.org/wiki/Special:FilePath/League_of_Nations_Mandates.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:League_of_Nations_Mandates.png",
-      caption: "The League of Nations Mandate System divided Germany's former colonies among the victorious Allied powers — principally Britain and France.",
+      caption: "The League of Nations Mandate System divided Germany's former colonies among the victorious Allied powers, principally Britain and France.",
       prompt: "How does this map challenge Wilson's promise of self-determination? What does it reveal about the difference between the rhetoric of 1918 and the reality of 1919?"
     },
     {
@@ -199,7 +199,7 @@ window.BEHISTORICAL_LESSON = {
       title: "The Marshall Plan, 1948",
       url: "https://commons.wikimedia.org/wiki/Special:FilePath/Marshall_Plan.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Marshall_Plan.png",
-      caption: "The Marshall Plan (1948) committed $13 billion in U.S. aid to rebuild Western Europe — and to anchor it within the American sphere of influence.",
+      caption: "The Marshall Plan (1948) committed $13 billion in U.S. aid to rebuild Western Europe, and to anchor it within the American sphere of influence.",
       prompt: "Is the Marshall Plan better evidence of American generosity or American strategic interest? Can it be both?"
     }
   ],
@@ -212,10 +212,10 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: The Atlantic Charter (1941)",
-    intro: "In August 1941, Franklin Roosevelt and Winston Churchill signed a joint declaration of Allied war aims — before the United States had officially entered the war. Point Three declared that 'all peoples' had the right to choose their own form of government. Colonial subjects across Asia and Africa read this statement carefully. Churchill later insisted it applied only to European nations under Nazi occupation, not to British colonies. The gap between the text and that interpretation became a weapon in the hands of independence movements.",
+    intro: "In August 1941, Franklin Roosevelt and Winston Churchill signed a joint declaration of Allied war aims, before the United States had officially entered the war. Point Three declared that 'all peoples' had the right to choose their own form of government. Colonial subjects across Asia and Africa read this statement carefully. Churchill later insisted it applied only to European nations under Nazi occupation, not to British colonies. The gap between the text and that interpretation became a weapon in the hands of independence movements.",
     text: "Their countries seek no aggrandizement, territorial or other; They desire to see no territorial changes that do not accord with the freely expressed wishes of the peoples concerned; They respect the right of all peoples to choose the form of government under which they will live; and they wish to see sovereign rights and self-government restored to those who have been forcibly deprived of them.",
     questions: [
-      "Which phrase in this document would colonial subjects in India, West Africa, or Southeast Asia find most relevant to their own situation — and why?",
+      "Which phrase in this document would colonial subjects in India, West Africa, or Southeast Asia find most relevant to their own situation, and why?",
       "Churchill later argued this applied only to people under Nazi occupation. What does that contradiction reveal about how Allied leaders understood the term 'all peoples'?",
       "How does this source help explain why anti-imperialist sentiment intensified after WWII rather than subsiding with Allied victory?"
     ]
@@ -225,15 +225,15 @@ window.BEHISTORICAL_LESSON = {
     title: "BeSurreal: Five Weeks to Draw a Border",
     desc: "Five weeks to partition a subcontinent, by someone who had never visited India.",
     intro: "When Britain announced Indian independence in June 1947, the boundary commission was given just five weeks to divide the subcontinent.",
-    detail: "Cyril Radcliffe, an English barrister who had never visited India, drew the line separating India and Pakistan. He delivered his maps on August 17, 1947 — two days after independence was declared. The new border cut through farms, villages, and railway lines. Within months, roughly 14 million people had crossed the boundary as refugees.",
-    text: "When Britain announced Indian independence in June 1947, the boundary commission that would divide the subcontinent into India and Pakistan was given just five weeks to draw a new national border through territories that had never been divided. Cyril Radcliffe, an English barrister who had never visited India, drew the line. He delivered his maps on August 17, 1947 — two days after independence. Within months, an estimated 10–14 million people had crossed the boundary, making the Partition of India one of the largest forced migrations in human history.",
-    prompt: "What does it reveal about the nature of British power in 1947 that the empire which had governed India for nearly two centuries entrusted its partition to a lawyer who had never visited the country — with five weeks to finish the job?"
+    detail: "Cyril Radcliffe, an English barrister who had never visited India, drew the line separating India and Pakistan. He delivered his maps on August 17, 1947, two days after independence was declared. The new border cut through farms, villages, and railway lines. Within months, roughly 14 million people had crossed the boundary as refugees.",
+    text: "When Britain announced Indian independence in June 1947, the boundary commission that would divide the subcontinent into India and Pakistan was given just five weeks to draw a new national border through territories that had never been divided. Cyril Radcliffe, an English barrister who had never visited India, drew the line. He delivered his maps on August 17, 1947, two days after independence. Within months, an estimated 10–14 million people had crossed the boundary, making the Partition of India one of the largest forced migrations in human history.",
+    prompt: "What does it reveal about the nature of British power in 1947 that the empire which had governed India for nearly two centuries entrusted its partition to a lawyer who had never visited the country, with five weeks to finish the job?"
   },
 
   skillBuilder: {
     label: "Contextualization practice",
     title: "Place the Cold War in Its Historical Context",
-    intro: "Contextualization means explaining the broader historical setting that made an event or development possible. For the Cold War, that means connecting the rivalry to what came before: the unfulfilled promises of WWI self-determination, the exhaustion of European empires after WWII, and the technological and economic gains that made the U.S. and Soviet Union into superpowers. The Cold War did not emerge from nothing — it emerged from a specific historical context.",
+    intro: "Contextualization means explaining the broader historical setting that made an event or development possible. For the Cold War, that means connecting the rivalry to what came before: the unfulfilled promises of WWI self-determination, the exhaustion of European empires after WWII, and the technological and economic gains that made the U.S. and Soviet Union into superpowers. The Cold War did not emerge from nothing, it emerged from a specific historical context.",
     steps: [
       { label: "Before", text: "Wilson's Fourteen Points (1918) promised self-determination; the Mandate System (1919) instead extended British and French colonial control. Interwar nationalist movements were suppressed but not destroyed." },
       { label: "During WWII", text: "Britain and France were economically devastated. The U.S. expanded its industrial and technological capacity. The Soviet Union industrialized rapidly and built the world's largest land army. Colonial subjects who fought for the Allies expected self-government as a reward." },

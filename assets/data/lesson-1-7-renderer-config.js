@@ -3,6 +3,6 @@
   if (!lesson) return;
 
   if (!lesson.meta.canvasSubmissionNote) {
-    lesson.meta.canvasSubmissionNote = 'Organize your thinking here — submit your final work in Canvas.';
+    lesson.meta.canvasSubmissionNote = 'Organize your thinking here, submit your final work in Canvas.';
   }
 })();

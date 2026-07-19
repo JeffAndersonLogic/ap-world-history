@@ -1,12 +1,12 @@
-// Topic 9.4 — runtime-authoritative CED alignment, effective Fall 2026.
+// Topic 9.4, runtime-authoritative CED alignment, effective Fall 2026.
 (() => {
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
-  lesson.meta.canvasSubmissionNote = 'Organize your thinking here — submit your final work in Canvas.';
+  lesson.meta.canvasSubmissionNote = 'Organize your thinking here, submit your final work in Canvas.';
   lesson.meta.feedbackToolUrl = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
   lesson.collegeBoardKeyConcepts = [
   {
-    code: 'Thematic Focus — Economic Systems (ECN)',
+    code: 'Thematic Focus, Economic Systems (ECN)',
     theme: 'Economic Systems',
     text: 'As societies develop, they affect and are affected by the ways that they produce, exchange, and consume goods and services.',
     illustrativeExamples: []

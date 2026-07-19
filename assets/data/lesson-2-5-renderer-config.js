@@ -36,7 +36,7 @@
       { label: 'Silk Roads cultural corridor', detail: 'The overland routes carried not only goods but Buddhism, Islam, paper, printing, and gunpowder across Afro-Eurasia.' },
       { label: 'Islam\'s spread via trade', detail: 'Muslim merchants carried their faith along Indian Ocean and trans-Saharan routes into Southeast Asia, East Africa, and West Africa.' },
       { label: 'Technology diffusion direction', detail: 'Many technologies moved from east to west: Chinese paper and printing reached the Islamic world, then Europe.' },
-      { label: 'Geographic takeaway', detail: 'Cultural diffusion followed the same routes as goods — trade networks were also highways for religion, technology, and ideas.' }
+      { label: 'Geographic takeaway', detail: 'Cultural diffusion followed the same routes as goods, trade networks were also highways for religion, technology, and ideas.' }
     ]
   };
 
@@ -60,13 +60,13 @@
 
   lesson.beSurreal = {
     title: 'BeSurreal: How Paper Changed Everything',
-    text: 'Paper was invented in China roughly 2,000 years ago. It reached the Islamic world through the Silk Roads by the 8th century, where scholars in Baghdad\'s House of Wisdom used it to preserve and translate Greek, Indian, and Persian texts. By the 11th century paper reached Europe. Without the Silk Roads, the Islamic Golden Age — and later the European Renaissance — would have been slower, harder, and very different.',
+    text: 'Paper was invented in China roughly 2,000 years ago. It reached the Islamic world through the Silk Roads by the 8th century, where scholars in Baghdad\'s House of Wisdom used it to preserve and translate Greek, Indian, and Persian texts. By the 11th century paper reached Europe. Without the Silk Roads, the Islamic Golden Age, and later the European Renaissance, would have been slower, harder, and very different.',
     prompt: 'How did a single material traveling across trade routes change the history of human knowledge? What does this reveal about how cultural diffusion works?'
   };
 
   lesson.skillBuilder = {
     label: 'Continuity and Change practice',
-    title: 'What Changed — and What Stayed the Same — As Ideas Spread?',
+    title: 'What Changed, and What Stayed the Same, As Ideas Spread?',
     intro: 'Cultural diffusion along trade routes rarely produced exact copies of originals. Religions, technologies, and ideas adapted as they moved. CCOT helps you track what changed and what remained recognizable.',
     steps: [
       { label: 'What stayed the same', text: 'Core doctrines of Buddhism and Islam remained recognizable across regions even as they adapted to local contexts.' },
@@ -86,7 +86,7 @@
       prompt: 'Explain how one religion spread along trade networks between c. 1200 and c. 1450. Use specific evidence about where, how, and through whom it spread.',
       responseType: 'Checkpoint 1',
       terms: ['Islam', 'Buddhism', 'Christianity', 'merchant', 'diaspora', 'mosque', 'diffusion', 'trade route'],
-      focus: ['Name a specific religion.', 'Explain the mechanism of spread — who carried it and along which routes.', 'Describe where it spread and what effect it had on receiving societies.']
+      focus: ['Name a specific religion.', 'Explain the mechanism of spread, who carried it and along which routes.', 'Describe where it spread and what effect it had on receiving societies.']
     },
     {
       title: 'Checkpoint 2: Technology and Agricultural Diffusion',

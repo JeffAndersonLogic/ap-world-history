@@ -1,4 +1,4 @@
-# BeHistorical — Claude Code Rules
+# BeHistorical, Claude Code Rules
 
 ## Git
 
@@ -7,11 +7,11 @@
 
 ## Repository Commands
 
-- `node scripts/validate.js` — run the full structural and form-wiring audit.
-- `node scripts/generate-status-manifest.js` — refresh the teacher command-center inventory after adding or removing deliverables.
-- `node scripts/build-unit6.js` — deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios.
-- `node scripts/build-unit9.js` — deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios.
-- `node scripts/normalize-student-facing-language.js` — normalize Canvas guidance and the classroom MagicSchool URL.
+- `node scripts/validate.js`, run the full structural and form-wiring audit.
+- `node scripts/generate-status-manifest.js`, refresh the teacher command-center inventory after adding or removing deliverables.
+- `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios.
+- `node scripts/build-unit9.js`, deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios.
+- `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
 
 The student entry point is `index.html`. The project inventory is `teacher/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file.
 
@@ -21,7 +21,7 @@ Standard unit lessons are thin HTML shells plus a topic data file, a renderer-co
 
 ## 10-Module Structure Standard
 
-Every lesson page — Unit and Foundations — must display exactly **10 modules** in this fixed order:
+Every lesson page, Unit and Foundations, must display exactly **10 modules** in this fixed order:
 
 | # | ID | Title | Unit Page | Foundations Page |
 |---|---|---|---|---|
@@ -39,13 +39,13 @@ Every lesson page — Unit and Foundations — must display exactly **10 modules
 **Rules:**
 - Module 03 is always a jump link, never a pop-out modal.
 - Module 09 is always an external link (`window.open`) when a URL exists; otherwise shows a "coming soon" placeholder.
-- Module count must be exactly 10 — no more, no fewer.
+- Module count must be exactly 10, no more, no fewer.
 - The `beSurreal` field is required in every data file (Unit and Foundations). It must have `title`, `desc`, `intro`, `detail`, and `prompt`.
 - When a Foundations data file has no `beInTheRoom.url`, the renderer renders the "coming soon" placeholder automatically.
 
 ## Classroom Flow Standard
 
-Every lesson page (Unit and Foundations) **must** display the same three-card Classroom Flow inside a `.lesson-roadmap` container. The three steps are fixed — never customized per lesson:
+Every lesson page (Unit and Foundations) **must** display the same three-card Classroom Flow inside a `.lesson-roadmap` container. The three steps are fixed, never customized per lesson:
 
 ```html
 <div class="lesson-roadmap">
@@ -56,7 +56,7 @@ Every lesson page (Unit and Foundations) **must** display the same three-card Cl
 ```
 
 - Unit lesson pages: the `.lesson-roadmap` div is hardcoded in the HTML.
-- Foundations pages: the renderer populates `id="block-plan-roadmap"` (which has `class="lesson-roadmap"`) with the same three `.roadmap-step` divs. The Foundations `blockPlan` data array is ignored for display — it exists only as instructor reference material.
+- Foundations pages: the renderer populates `id="block-plan-roadmap"` (which has `class="lesson-roadmap"`) with the same three `.roadmap-step` divs. The Foundations `blockPlan` data array is ignored for display, it exists only as instructor reference material.
 
 ## First & 10 Reading Standard
 
@@ -64,25 +64,25 @@ Every First & 10 reading **must** follow the Topic 1.1 structure exactly. This r
 
 ### Required structure (in order)
 
-1. **`module-header`** — badge (`Module XX`), module name (`First & 10 Reading`), module subtitle (topic + course)
-2. **`reading-title-band`** — eyebrow text, `h1.reading-title` (one word wrapped in `<em>` for gold highlight), `p.reading-deck` (italic subtitle), `.skill-tags` row
+1. **`module-header`**, badge (`Module XX`), module name (`First & 10 Reading`), module subtitle (topic + course)
+2. **`reading-title-band`**, eyebrow text, `h1.reading-title` (one word wrapped in `<em>` for gold highlight), `p.reading-deck` (italic subtitle), `.skill-tags` row
 3. **`reading-body`** (warm-paper background, ink text)
-   - `.support-strip` — two `.support-card` elements ("Before You Read" + "Reading Target")
-   - `.vocab-strip` — key terms as `.term-chip` pills
+   - `.support-strip`, two `.support-card` elements ("Before You Read" + "Reading Target")
+   - `.vocab-strip`, key terms as `.term-chip` pills
    - Multiple `.section` divs, each with: `.section-number` watermark, `.section-label` eyebrow, `h2.section-heading`, `.reading-text` paragraphs, at least one `.ap-callout` with an AP skill label
-   - `.be-ready` strip — "BeReady: 10-Second Takeaway"
-4. **`.check-section`** — exactly three `.question-item` elements, each with `.q-num`, `.q-skill` badge, `.q-text`, and `textarea.q-textarea`
-5. **Builder section 1 — "Build Your Google Form Response"** — `.builder-section` with `buildGooglePrompt()` button, `#google-output` textarea, `submitToGoogleForm()` button
-6. **Builder section 2 — "Build Your AI Coach Prompt"** — `.builder-section` with `buildAiPrompt()`, `copyAiPrompt()`, and Open MagicSchool buttons, `#ai-output` textarea
-7. **`.page-footer-note`** — submission note
-8. **`.module-footer`** — nav links back to lesson path (← Map & Geography | Content Delivery →)
+   - `.be-ready` strip, "BeReady: 10-Second Takeaway"
+4. **`.check-section`**, exactly three `.question-item` elements, each with `.q-num`, `.q-skill` badge, `.q-text`, and `textarea.q-textarea`
+5. **Builder section 1, "Build Your Google Form Response"**, `.builder-section` with `buildGooglePrompt()` button, `#google-output` textarea, `submitToGoogleForm()` button
+6. **Builder section 2, "Build Your AI Coach Prompt"**, `.builder-section` with `buildAiPrompt()`, `copyAiPrompt()`, and Open MagicSchool buttons, `#ai-output` textarea
+7. **`.page-footer-note`**, submission note
+8. **`.module-footer`**, nav links back to lesson path (← Map & Geography | Content Delivery →)
 
 ### Delivery pattern
 
 Every First & 10 must use the **embedded iframe** pattern:
-- **Standalone reading file** (`first-and-10-topic-X-X-SLUG.html`) — contains all reading content, check section, and builder sections
-- **Capture wrapper** (`first-and-10-topic-X-X-SLUG-capture.html`) — thin iframe wrapper that intercepts "Submit to Google Form" and "Open MagicSchool" button clicks
-- **Lesson data file** — `first10.embedUrl` must point to the capture wrapper (e.g., `'first-and-10-topic-1-1-song-china-capture.html'`)
+- **Standalone reading file** (`first-and-10-topic-X-X-SLUG.html`), contains all reading content, check section, and builder sections
+- **Capture wrapper** (`first-and-10-topic-X-X-SLUG-capture.html`), thin iframe wrapper that intercepts "Submit to Google Form" and "Open MagicSchool" button clicks
+- **Lesson data file**, `first10.embedUrl` must point to the capture wrapper (e.g., `'first-and-10-topic-1-1-song-china-capture.html'`)
 
 ### CSS class names (canonical)
 

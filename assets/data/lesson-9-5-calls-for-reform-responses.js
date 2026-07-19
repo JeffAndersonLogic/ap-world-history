@@ -13,7 +13,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Calls for Reform and Responses After 1900',
     subtitle: 'Explain how social categories, roles, and practices have been maintained and challenged over time.',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [
     {
@@ -48,7 +48,7 @@ window.BEHISTORICAL_LESSON = {
   ],
   collegeBoardKeyConcepts: [
     {
-      code: 'Thematic Focus — Social Interactions and Organization (SIO)',
+      code: 'Thematic Focus, Social Interactions and Organization (SIO)',
       theme: 'Social Interactions and Organization',
       text: 'The process by which societies group their members and the norms governing interactions among groups and individuals influence political, economic, and cultural institutions.',
       illustrativeExamples: []

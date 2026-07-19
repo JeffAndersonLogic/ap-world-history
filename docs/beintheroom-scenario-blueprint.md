@@ -20,9 +20,9 @@ Recommended classroom flow:
 
 Each scenario should include the following components.
 
-### Step 0 — Theme Alignment Gate
+### Step 0, Theme Alignment Gate
 
-**Step 0 — Theme Alignment Gate.** Before drafting anything, state the topic's CED thematic focus(es) and learning objective(s). The scenario premise AND its decision points must directly enact at least one of the topic's listed thematic focus / learning objective pairs. The scenario must not center a theme the topic does not list. If the central dilemma students decide on could be transplanted to a different topic without changing the theme it exercises, the scenario fails this gate and must be redesigned before proceeding to Step 1.
+**Step 0, Theme Alignment Gate.** Before drafting anything, state the topic's CED thematic focus(es) and learning objective(s). The scenario premise AND its decision points must directly enact at least one of the topic's listed thematic focus / learning objective pairs. The scenario must not center a theme the topic does not list. If the central dilemma students decide on could be transplanted to a different topic without changing the theme it exercises, the scenario fails this gate and must be redesigned before proceeding to Step 1.
 
 Operational standard for multi-LO topics: enacting **one** of the topic's listed pairs is sufficient; centering an **unlisted** theme is a failure even if the setting is historically correct.
 

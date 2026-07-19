@@ -1,5 +1,5 @@
 // lesson-8-3-renderer-config.js
-// Topic 8.3 — Effects of the Cold War
+// Topic 8.3, Effects of the Cold War
 // RUNTIME-AUTHORITATIVE: all College Board CED text below is verbatim from the
 // AP World History: Modern CED and must not be paraphrased or truncated.
 (() => {
@@ -8,7 +8,7 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus — Governance (GOV)',
+      code: 'Thematic Focus, Governance (GOV)',
       theme: 'Governance',
       text: 'Governance',
       illustrativeExamples: []
@@ -43,8 +43,8 @@
     key: [
       { label: 'U.S.-aligned / NATO zone', detail: 'Western Europe and North America committed to collective defense under American leadership; U.S. nuclear weapons and bases extended deterrence across the alliance.' },
       { label: 'Soviet-aligned / Warsaw Pact zone', detail: 'Eastern Europe under Soviet domination, with communist governments enforced by Soviet military presence and the Brezhnev Doctrine.' },
-      { label: 'Korean Peninsula', detail: 'Divided at the 38th parallel after the 1950–1953 war — the first major Cold War proxy conflict, fought between Soviet/Chinese-backed North Korea and U.S.-led coalition supporting South Korea.' },
-      { label: 'Angola / Sub-Saharan Africa', detail: 'Site of the Angolan Civil War (1975–2002): Soviet/Cuban support for the MPLA vs. U.S./South African support for UNITA — Cold War competition in postcolonial Africa.' }
+      { label: 'Korean Peninsula', detail: 'Divided at the 38th parallel after the 1950–1953 war, the first major Cold War proxy conflict, fought between Soviet/Chinese-backed North Korea and U.S.-led coalition supporting South Korea.' },
+      { label: 'Angola / Sub-Saharan Africa', detail: 'Site of the Angolan Civil War (1975–2002): Soviet/Cuban support for the MPLA vs. U.S./South African support for UNITA, Cold War competition in postcolonial Africa.' }
     ]
   };
 
@@ -73,10 +73,10 @@
       cardDesc: 'Military alliances as instruments of influence, nuclear proliferation, and Mutually Assured Destruction.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain how the United States and the Soviet Union used new military alliances to maintain influence during the Cold War. In your response, explain the function of NATO and the Warsaw Pact as instruments of influence — not just defense — and explain how nuclear proliferation and the doctrine of Mutually Assured Destruction shaped superpower behavior.',
+      prompt: 'Explain how the United States and the Soviet Union used new military alliances to maintain influence during the Cold War. In your response, explain the function of NATO and the Warsaw Pact as instruments of influence, not just defense, and explain how nuclear proliferation and the doctrine of Mutually Assured Destruction shaped superpower behavior.',
       responseType: 'Checkpoint 1',
       terms: ['NATO', 'Warsaw Pact', 'collective defense', 'Brezhnev Doctrine', 'nuclear proliferation', 'Mutually Assured Destruction', 'MAD', 'deterrence', 'nuclear umbrella', 'military-industrial complex', 'arms race', 'thermonuclear', 'Cold War', 'superpower', 'influence'],
-      focus: ['Explain NATO as a U.S. instrument of influence — not just a defensive alliance.', 'Explain the Warsaw Pact as a Soviet instrument of control over Eastern Europe.', 'Explain how MAD shaped superpower behavior: deterring direct conflict while redirecting competition into proxy wars.']
+      focus: ['Explain NATO as a U.S. instrument of influence, not just a defensive alliance.', 'Explain the Warsaw Pact as a Soviet instrument of control over Eastern Europe.', 'Explain how MAD shaped superpower behavior: deterring direct conflict while redirecting competition into proxy wars.']
     },
     {
       title: 'Checkpoint 2: Comparing Superpower Methods',
@@ -84,14 +84,14 @@
       cardDesc: 'AP-style comparison: similarities and differences in how the U.S. and Soviet Union used proxy wars to maintain influence.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Compare the ways in which the United States and the Soviet Union sought to maintain influence over the course of the Cold War. In your response: (1) identify at least one similarity in their methods; (2) explain at least one difference in their methods; and (3) use specific historical evidence from at least two of the three CED proxy-war examples — the Korean War, the Angolan Civil War, and the Sandinista–Contras conflict in Nicaragua.',
+      prompt: 'Compare the ways in which the United States and the Soviet Union sought to maintain influence over the course of the Cold War. In your response: (1) identify at least one similarity in their methods; (2) explain at least one difference in their methods; and (3) use specific historical evidence from at least two of the three CED proxy-war examples, the Korean War, the Angolan Civil War, and the Sandinista–Contras conflict in Nicaragua.',
       responseType: 'Checkpoint 2',
       terms: ['proxy war', 'Korean War', 'Angolan Civil War', 'Sandinista', 'Contras', 'Nicaragua', 'MPLA', 'UNITA', 'Cuba', 'arms transfer', 'military advisor', 'client state', 'comparison', 'similarity', 'difference', 'influence', 'postcolonial'],
-      focus: ['Open with a similarity: both superpowers used arms, advisors, and local clients — explain this with evidence from at least two proxy wars.', 'Explain at least one difference: framing (anti-communist vs. anti-imperialist) or structural method (multilateral alliance vs. direct coercion).', 'Use the names of specific proxy conflicts from the CED — including the en dash in Sandinista–Contras — as evidence.']
+      focus: ['Open with a similarity: both superpowers used arms, advisors, and local clients, explain this with evidence from at least two proxy wars.', 'Explain at least one difference: framing (anti-communist vs. anti-imperialist) or structural method (multilateral alliance vs. direct coercion).', 'Use the names of specific proxy conflicts from the CED, including the en dash in Sandinista–Contras, as evidence.']
     }
   ];
 
-  // Capture points — static hardcoded anchor tags only. Never JS-generated.
+  // Capture points, static hardcoded anchor tags only. Never JS-generated.
   // first10 is intentionally empty: the First & 10 capture lives inside the
   // capture wrapper, and nothing renders below the First & 10 iframe.
   lesson.captureUrls = {

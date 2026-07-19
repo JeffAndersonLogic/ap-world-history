@@ -13,7 +13,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Continuity and Change in a Globalized World',
     subtitle: 'Explain the extent to which science and technology brought change in the period from 1900 to the present.',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [
     {
@@ -48,7 +48,7 @@ window.BEHISTORICAL_LESSON = {
   ],
   collegeBoardKeyConcepts: [
     {
-      code: 'Thematic Focus — Unit 9 Synthesis (SYN)',
+      code: 'Thematic Focus, Unit 9 Synthesis (SYN)',
       theme: 'Unit 9 Synthesis',
       text: 'Use Unit 9 evidence to evaluate change, continuity, significance, and complexity.',
       illustrativeExamples: []

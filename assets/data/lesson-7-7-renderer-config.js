@@ -1,9 +1,9 @@
 // lesson-7-7-renderer-config.js
-// Topic 7.7 — Conducting World War II
+// Topic 7.7, Conducting World War II
 // RUNTIME-AUTHORITATIVE: all College Board CED text below is verbatim from the
 // AP World History: Modern CED and must not be paraphrased or truncated.
 // NOTE: the thematic focus is GOV (Governance), unchanged from Topic 7.6. This
-// differs from Topic 7.3 (TEC) — do NOT copy 7.3's thematic focus even though
+// differs from Topic 7.3 (TEC), do NOT copy 7.3's thematic focus even though
 // the topics are parallel. KC-6.2.IV.A.ii closely parallels the WWI mobilization
 // KC in the 7.3 config but is NOT identical: it says "colonies or former
 // colonies" and includes the full second sentence on ideologies and
@@ -21,7 +21,7 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus — Governance (GOV)',
+      code: 'Thematic Focus, Governance (GOV)',
       theme: 'Governance',
       text: 'A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.',
       illustrativeExamples: []
@@ -63,10 +63,10 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'A total war', detail: 'World War II was a total war. Every major power mobilized propaganda, art, media, and intensified forms of nationalism to wage it — and turned its entire economy to military production. The Learning Objective asks for the similarities AND differences in how governments conducted that war.' },
-      { label: 'Democracies mobilizing', detail: 'Great Britain under Winston Churchill and the United States under Franklin Roosevelt mobilized as democracies — Churchill\'s speeches and the BBC, Roosevelt\'s Fireside Chats, Lend-Lease, war bonds, rationing, and the War Production Board. Total in their demands, but persuading a free public rather than silencing it.' },
-      { label: 'Totalitarian states mobilizing', detail: 'Germany under Adolf Hitler and the USSR under Joseph Stalin mobilized as totalitarian states — Goebbels\'s Ministry of Propaganda and Stalin\'s Great Patriotic War narrative, using ideology (fascism and communism) to repress basic freedoms and dominate daily life. Same methods, but pushed into total control.' },
-      { label: 'Home and colonies; new casualties', detail: 'Mobilization reached both the home countries and the colonies or former colonies, drawing troops and resources from global empires. And new military technology and tactics — the atomic bomb, fire-bombing, and the waging of total war — put civilians inside the target zone and drove wartime casualties beyond even World War I.' }
+      { label: 'A total war', detail: 'World War II was a total war. Every major power mobilized propaganda, art, media, and intensified forms of nationalism to wage it, and turned its entire economy to military production. The Learning Objective asks for the similarities AND differences in how governments conducted that war.' },
+      { label: 'Democracies mobilizing', detail: 'Great Britain under Winston Churchill and the United States under Franklin Roosevelt mobilized as democracies, Churchill\'s speeches and the BBC, Roosevelt\'s Fireside Chats, Lend-Lease, war bonds, rationing, and the War Production Board. Total in their demands, but persuading a free public rather than silencing it.' },
+      { label: 'Totalitarian states mobilizing', detail: 'Germany under Adolf Hitler and the USSR under Joseph Stalin mobilized as totalitarian states, Goebbels\'s Ministry of Propaganda and Stalin\'s Great Patriotic War narrative, using ideology (fascism and communism) to repress basic freedoms and dominate daily life. Same methods, but pushed into total control.' },
+      { label: 'Home and colonies; new casualties', detail: 'Mobilization reached both the home countries and the colonies or former colonies, drawing troops and resources from global empires. And new military technology and tactics, the atomic bomb, fire-bombing, and the waging of total war, put civilians inside the target zone and drove wartime casualties beyond even World War I.' }
     ]
   };
 
@@ -90,8 +90,8 @@
 
   lesson.beSurreal = {
     title: 'BeSurreal: The Army Made of Rubber and Sound',
-    text: 'One of the strangest units of World War II carried almost no real weapons. The U.S. 23rd Headquarters Special Troops — nicknamed the "Ghost Army" — was a secret outfit of artists, designers, sound engineers, and actors whose job was to deceive the enemy with illusion. Their arsenal included inflatable rubber tanks, trucks, jeeps, and aircraft that could be set up overnight to fake an entire armored division; giant speakers that broadcast prerecorded sound effects of marching troops and rumbling tank columns, audible for miles; and phony radio traffic impersonating real units. Many of its soldiers went on to famous careers in fashion, painting, and design. They staged more than twenty battlefield "performances," conjuring whole armies out of rubber and noise to draw German attention away from where the real forces actually were.',
-    prompt: 'The Ghost Army weaponized exactly what the Key Concept names — art, media, and staged illusion — but aimed it at the enemy instead of the home front. What does this unit reveal about how thoroughly World War II turned art, media, and information into instruments of total war?'
+    text: 'One of the strangest units of World War II carried almost no real weapons. The U.S. 23rd Headquarters Special Troops, nicknamed the "Ghost Army", was a secret outfit of artists, designers, sound engineers, and actors whose job was to deceive the enemy with illusion. Their arsenal included inflatable rubber tanks, trucks, jeeps, and aircraft that could be set up overnight to fake an entire armored division; giant speakers that broadcast prerecorded sound effects of marching troops and rumbling tank columns, audible for miles; and phony radio traffic impersonating real units. Many of its soldiers went on to famous careers in fashion, painting, and design. They staged more than twenty battlefield "performances," conjuring whole armies out of rubber and noise to draw German attention away from where the real forces actually were.',
+    prompt: 'The Ghost Army weaponized exactly what the Key Concept names, art, media, and staged illusion, but aimed it at the enemy instead of the home front. What does this unit reveal about how thoroughly World War II turned art, media, and information into instruments of total war?'
   };
 
   lesson.skillBuilder = {
@@ -100,20 +100,20 @@
     intro: 'Topic 7.7 is built for the comparison skill: the Learning Objective asks for the similarities AND differences in how governments conducted total war. A weak answer describes four countries in turn; a strong one names a precise shared method, a precise difference, and explains what the difference reveals about democratic versus totalitarian power. Build the frame below.',
     steps: [
       { label: 'Name the similarity (with evidence)', text: 'All four states fit the Key Concept: they mobilized populations and resources for total war using propaganda, art, media, and intensified nationalism. Evidence: Churchill\'s speeches and the BBC; Roosevelt\'s Fireside Chats, Lend-Lease, and the War Production Board; Goebbels\'s Ministry of Propaganda; Stalin\'s Great Patriotic War narrative. Every government turned its whole society toward the front.' },
-      { label: 'Name the difference (with evidence)', text: 'The difference is what mobilization was allowed to cost the population. Britain and the United States mobilized within democracy — persuading a free public, with elections, a free press, and independent unions intact. Germany and the USSR mobilized as totalitarian states — using fascism and communism to repress basic freedoms and dominate daily life, through Goebbels\'s media monopoly, forced labor, and Stalin\'s political repression.' },
-      { label: 'Say what the difference reveals', text: 'Finish with the analytical payoff: same methods, different limits. The democracies show that total mobilization did not require totalitarian control — persuasion and consent could move a whole society. The dictatorships show what happens when mobilization is fused with ideology and unchecked power: the state dominates every aspect of life. That contrast is the bridge to Topic 7.8, where total power over populations reaches its atrocity-producing extreme.' }
+      { label: 'Name the difference (with evidence)', text: 'The difference is what mobilization was allowed to cost the population. Britain and the United States mobilized within democracy, persuading a free public, with elections, a free press, and independent unions intact. Germany and the USSR mobilized as totalitarian states, using fascism and communism to repress basic freedoms and dominate daily life, through Goebbels\'s media monopoly, forced labor, and Stalin\'s political repression.' },
+      { label: 'Say what the difference reveals', text: 'Finish with the analytical payoff: same methods, different limits. The democracies show that total mobilization did not require totalitarian control, persuasion and consent could move a whole society. The dictatorships show what happens when mobilization is fused with ideology and unchecked power: the state dominates every aspect of life. That contrast is the bridge to Topic 7.8, where total power over populations reaches its atrocity-producing extreme.' }
     ],
     prompt: 'In three to four sentences, compare how a Western democracy (Britain or the United States) and a totalitarian state (Germany or the USSR) conducted total war. Name one specific shared method of mobilization, one specific difference, and explain what the difference reveals about democratic versus totalitarian power.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Mobilizing Society — Democracies and Dictatorships',
+      title: 'Checkpoint 1: Mobilizing Society, Democracies and Dictatorships',
       subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
       cardDesc: 'Propaganda, media, and nationalism across Britain, the U.S., Germany, and the USSR.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain how governments used propaganda, media, and intensified nationalism to mobilize populations for total war, then compare a Western democracy and a totalitarian state. Use specific evidence (Churchill, Roosevelt, Goebbels/Hitler, or Stalin), name one shared method, and explain the key difference — totalitarian states repressing basic freedoms and dominating daily life.',
+      prompt: 'Explain how governments used propaganda, media, and intensified nationalism to mobilize populations for total war, then compare a Western democracy and a totalitarian state. Use specific evidence (Churchill, Roosevelt, Goebbels/Hitler, or Stalin), name one shared method, and explain the key difference, totalitarian states repressing basic freedoms and dominating daily life.',
       responseType: 'Checkpoint 1',
       terms: ['total war', 'political propaganda', 'media', 'intensified nationalism', 'Winston Churchill', 'Franklin Roosevelt', 'Lend-Lease', 'Joseph Goebbels', 'Great Patriotic War', 'repress basic freedoms'],
       focus: ['Use specific mobilization evidence for at least one democracy and one totalitarian state.', 'Name a shared method: propaganda, media, art, intensified nationalism, full resource mobilization.', 'State the key difference: totalitarian states repressed basic freedoms and dominated daily life.']
@@ -124,14 +124,14 @@
       cardDesc: 'The atomic bomb, fire-bombing, and the waging of total war drive casualties higher.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Explain how new military technology and tactics — including the atomic bomb, fire-bombing, and the waging of total war — led to increased levels of wartime casualties. Use specific evidence and explain how these methods put civilians inside the target zone, escalating beyond even World War I (callback to Topic 7.3).',
+      prompt: 'Explain how new military technology and tactics, including the atomic bomb, fire-bombing, and the waging of total war, led to increased levels of wartime casualties. Use specific evidence and explain how these methods put civilians inside the target zone, escalating beyond even World War I (callback to Topic 7.3).',
       responseType: 'Checkpoint 2',
       terms: ['atomic bomb', 'fire-bombing', 'total war', 'wartime casualties', 'Hiroshima', 'Nagasaki', 'Dresden', 'Tokyo', 'civilian targets', 'military technology'],
       focus: ['Name specific new technology and tactics: the atomic bomb and fire-bombing.', 'Explain how total war put civilians inside the target zone.', 'Connect to Topic 7.3: each war\'s technology made the next deadlier.']
     }
   ];
 
-  // Capture points — static hardcoded anchors (never JS-generated).
+  // Capture points, static hardcoded anchors (never JS-generated).
   // first10 is intentionally empty: the First & 10 capture lives inside the
   // capture wrapper, and nothing renders below the First & 10 iframe.
   lesson.captureUrls = {

@@ -1,12 +1,12 @@
 // lesson-8-9-renderer-config.js
-// Topic 8.9 — Causation in the Age of the Cold War and Decolonization
+// Topic 8.9, Causation in the Age of the Cold War and Decolonization
 // RUNTIME-AUTHORITATIVE: all College Board CED text below is verbatim from the
 // AP World History: Modern CED and must not be paraphrased or truncated.
 //
-// Capstone topic: LO K only. NO thematic focus block — the CED lists none for 8.9.
+// Capstone topic: LO K only. NO thematic focus block, the CED lists none for 8.9.
 // Five unit key concepts (KC-6.2, KC-6.2.II, KC-6.2.IV.C, KC-6.3, KC-6.3.I).
 // The CED lists NO illustrative examples for Topic 8.9.
-// NO BeInTheRoom module or scenario — capstone topics per CLAUDE.md capstone rule.
+// NO BeInTheRoom module or scenario, capstone topics per CLAUDE.md capstone rule.
 // 6-module capstone variant: First & 10, Content Delivery, Unit Review, Matrix,
 // Skill Builder, Checkpoint 2. Deviation from 10-module standard noted here and
 // in PROJECT_STATUS.md per GOAL instruction.
@@ -15,7 +15,7 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
-  lesson.meta.canvasSubmissionNote = 'Organize your thinking here — submit your final work in Canvas.';
+  lesson.meta.canvasSubmissionNote = 'Organize your thinking here, submit your final work in Canvas.';
 
   // ── RUNTIME-AUTHORITATIVE: verbatim CED text ─────────────────────────────────
   lesson.collegeBoardKeyConcepts = [
@@ -64,7 +64,7 @@
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 8.9 lesson path.'
   };
 
-  // ── Capture URLs — static hardcoded anchor tags only. Never JS-generated. ─────
+  // ── Capture URLs, static hardcoded anchor tags only. Never JS-generated. ─────
   lesson.captureUrls = {
     first10: '',
     matrixEconomic: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.9+-+Causation+in+the+Cold+War+and+Decolonization&entry.1549761827=8.9-matrix-economic&entry.2107637366=Hemispheric+Matrix+Economic+Effects" target="_blank" rel="noopener">Submit to Form</a>',
@@ -85,33 +85,33 @@
       },
       {
         topic: '8.2', title: 'The Cold War',
-        body: 'Superpower rivalry produced competing alliance systems — NATO (1949) in the West, Warsaw Pact (1955) in Eastern Europe — and a nuclear arms race that shaped global politics for four decades. The Non-Aligned Movement (Bandung, 1955) offered newly independent states a third path, though most were still pressured to choose sides.',
+        body: 'Superpower rivalry produced competing alliance systems, NATO (1949) in the West, Warsaw Pact (1955) in Eastern Europe, and a nuclear arms race that shaped global politics for four decades. The Non-Aligned Movement (Bandung, 1955) offered newly independent states a third path, though most were still pressured to choose sides.',
         evidence: 'NATO / U.S. influence in Western Europe and Latin America (Western); Warsaw Pact / Soviet influence in Eastern Europe and Asia (Eastern); Bandung non-alignment primarily Eastern Hemisphere'
       },
       {
         topic: '8.3', title: 'Effects of the Cold War',
-        body: 'Superpower competition moved the Cold War into the Global South through proxy wars — Korea (1950–53), Vietnam (1955–75), Angola (1975). CIA and KGB operations sponsored coups and counterinsurgencies. Nuclear deterrence (MAD) prevented direct superpower conflict while multiplying indirect conflicts worldwide.',
+        body: 'Superpower competition moved the Cold War into the Global South through proxy wars, Korea (1950–53), Vietnam (1955–75), Angola (1975). CIA and KGB operations sponsored coups and counterinsurgencies. Nuclear deterrence (MAD) prevented direct superpower conflict while multiplying indirect conflicts worldwide.',
         evidence: 'Proxy wars in Korea, Vietnam, Angola (Eastern Hemisphere); CIA-backed coups in Guatemala (1954), Chile (1973) (Western Hemisphere)'
       },
       {
         topic: '8.4', title: 'Spread of Communism',
-        body: "The Chinese Communist Revolution (1949) created a second communist power. Mao's Great Leap Forward (1958–62) killed an estimated 15–55 million through famine — the deadliest peacetime catastrophe of the 20th century. In the Western Hemisphere, Cuba's 1959 revolution brought communism 90 miles from Florida, triggering the Bay of Pigs and the Cuban Missile Crisis.",
+        body: "The Chinese Communist Revolution (1949) created a second communist power. Mao's Great Leap Forward (1958–62) killed an estimated 15–55 million through famine, the deadliest peacetime catastrophe of the 20th century. In the Western Hemisphere, Cuba's 1959 revolution brought communism 90 miles from Florida, triggering the Bay of Pigs and the Cuban Missile Crisis.",
         evidence: "Great Leap Forward / communist China (Eastern Hemisphere); Cuban Revolution / Castro's government (Western Hemisphere); redistribution movements (India, Egypt, Chile) span both"
       },
       {
         topic: '8.5', title: 'Decolonization After 1900',
         body: 'Anti-imperial movements accelerated after 1945, as Cold War competition gave newly independent states leverage: both superpowers courted them. The British Gold Coast became Ghana (1957) through nonviolent Positive Action; Algeria (1962) won independence through armed struggle after 130 years of French colonial rule.',
-        evidence: 'Ghana, Algeria, India, Pakistan — all Eastern Hemisphere; Cold War leverage allowed new states to extract aid from both superpowers'
+        evidence: 'Ghana, Algeria, India, Pakistan, all Eastern Hemisphere; Cold War leverage allowed new states to extract aid from both superpowers'
       },
       {
         topic: '8.6', title: 'Newly Independent States',
-        body: 'Boundary redrawing produced massive displacement: the Partition of India (1947) created 10–15 million refugees; the creation of Israel (1948) displaced 700,000 Palestinians. New states adopted state-led development (India\'s five-year plans, Egypt\'s Aswan Dam). Former colonial subjects migrated to metropoles — Britain, France — reversing the colonial flow.',
+        body: 'Boundary redrawing produced massive displacement: the Partition of India (1947) created 10–15 million refugees; the creation of Israel (1948) displaced 700,000 Palestinians. New states adopted state-led development (India\'s five-year plans, Egypt\'s Aswan Dam). Former colonial subjects migrated to metropoles, Britain, France, reversing the colonial flow.',
         evidence: 'Indian Partition, Israeli independence (Eastern Hemisphere); state-led development in Africa and Asia (Eastern); migration to Western European metropoles (Eastern → Western movement)'
       },
       {
         topic: '8.7', title: 'Global Resistance to Power',
         body: 'KC-6.2.V identified three patterns: nonviolent resistance (Gandhi, MLK, Mandela), militarized states intensifying control (Pinochet\'s Chile, Franco\'s Spain, Amin\'s Uganda), and movements using violence against civilians. Cold War context shaped which resistance movements received superpower support and which were labeled communist threats.',
-        evidence: 'MLK civil rights / anti-war movement (Western Hemisphere); ANC / apartheid resistance (Eastern Hemisphere); Pinochet\'s Chile — Cold War-backed coup (Western Hemisphere)'
+        evidence: 'MLK civil rights / anti-war movement (Western Hemisphere); ANC / apartheid resistance (Eastern Hemisphere); Pinochet\'s Chile, Cold War-backed coup (Western Hemisphere)'
       },
       {
         topic: '8.8', title: 'End of the Cold War',
@@ -246,7 +246,7 @@
     }
 
     var html =
-      '<div class="component-note"><strong>Hemispheric Effects Matrix — LO K</strong><br>Complete each row using evidence from Topics 8.1–8.8. Record specific examples for each hemisphere, rate the row, and justify in one sentence. After all four rows, draft your extent thesis in the Synthesis field. Use the Save Row button to preserve your work.</div>' +
+      '<div class="component-note"><strong>Hemispheric Effects Matrix, LO K</strong><br>Complete each row using evidence from Topics 8.1–8.8. Record specific examples for each hemisphere, rate the row, and justify in one sentence. After all four rows, draft your extent thesis in the Synthesis field. Use the Save Row button to preserve your work.</div>' +
 
       '<div style="background:#2B2F31;border-left:3px solid #C9A46A;padding:.9rem 1.1rem;margin:1rem 0;font-family:\'Montserrat\',sans-serif;font-size:.78rem;color:#D2B48C;line-height:1.65;">' +
         '<strong style="color:#C9A46A;">Row ratings:</strong> <em>Largely Similar</em> = effects in both hemispheres share the same mechanism or pattern. <em>Mixed</em> = some overlap but with meaningful differences. <em>Largely Different</em> = the effect category operated distinctly across hemispheres. Your row ratings build toward your thesis degree claim.' +
@@ -286,7 +286,7 @@
 
       '<section style="margin:1.5rem 0;border:2px solid #C9A46A;border-radius:3px;padding:1.25rem;">' +
         '<div style="font-family:\'Cinzel\',serif;font-size:1rem;font-weight:700;color:#C9A46A;margin-bottom:.7rem;">Synthesis: Evaluate the Extent</div>' +
-        '<p style="font-family:\'Montserrat\',sans-serif;font-size:.78rem;line-height:1.6;color:#D2B48C;margin-bottom:.8rem;">Using your four row ratings, draft a thesis that answers LO K: "Evaluate the extent to which the effects of the Cold War were similar in the Eastern and Western Hemispheres." Your thesis must make a degree claim — to a great, moderate, or limited extent — and name the specific patterns that support it.</p>' +
+        '<p style="font-family:\'Montserrat\',sans-serif;font-size:.78rem;line-height:1.6;color:#D2B48C;margin-bottom:.8rem;">Using your four row ratings, draft a thesis that answers LO K: "Evaluate the extent to which the effects of the Cold War were similar in the Eastern and Western Hemispheres." Your thesis must make a degree claim, to a great, moderate, or limited extent, and name the specific patterns that support it.</p>' +
         '<textarea id="matrix-synthesis" class="response-area" placeholder="Draft your extent thesis: To a [great/moderate/limited] extent, the effects of the Cold War were [similar/different] in the Eastern and Western Hemispheres because..." style="' + synTaStyle + '"></textarea>' +
         '<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.75rem;">' +
           '<button class="btn secondary" type="button" onclick="saveMatrixSynthesis89()">Save Synthesis</button>' +
@@ -309,7 +309,7 @@
       id: 'first10',
       label: 'Module 01',
       title: 'First & 10 Reading',
-      desc: "The Cold War's global reach — why superpower rivalry had economic, political, social, and cultural effects across both hemispheres.",
+      desc: "The Cold War's global reach, why superpower rivalry had economic, political, social, and cultural effects across both hemispheres.",
       img: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
       render: function () { return renderFirst10(); }
     },
@@ -325,7 +325,7 @@
       id: 'unitreview',
       label: 'Module 03',
       title: 'Unit Review: Topics 8.1–8.8',
-      desc: 'Eight retrieval anchor cards — one per topic — naming the core development and the hemisphere-relevant evidence for the matrix.',
+      desc: 'Eight retrieval anchor cards, one per topic, naming the core development and the hemisphere-relevant evidence for the matrix.',
       img: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
       render: function () { return renderUnitReview89(); }
     },

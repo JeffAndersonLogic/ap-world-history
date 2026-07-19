@@ -59,9 +59,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how Enlightenment ideas challenged traditional authority and how their selective application limited that challenge. Use one example involving gender, slavery, or property.',
     sources: [
-      { label: 'Stanford Encyclopedia of Philosophy — Enlightenment', url: 'https://plato.stanford.edu/entries/enlightenment/' },
-      { label: 'Library of Congress — Mary Wollstonecraft', url: 'https://www.loc.gov/exhibits/womens-suffrage/mary-wollstonecraft.html' },
-      { label: 'National Archives — The Enlightenment and the Atlantic world', url: 'https://www.archives.gov/research/african-americans/slavery-records' }
+      { label: 'Stanford Encyclopedia of Philosophy, Enlightenment', url: 'https://plato.stanford.edu/entries/enlightenment/' },
+      { label: 'Library of Congress, Mary Wollstonecraft', url: 'https://www.loc.gov/exhibits/womens-suffrage/mary-wollstonecraft.html' },
+      { label: 'National Archives, The Enlightenment and the Atlantic world', url: 'https://www.archives.gov/research/african-americans/slavery-records' }
     ]
   },
   {
@@ -110,9 +110,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Compare the Haitian Revolution with one other Atlantic Revolution. Explain one shared cause and one major difference in how each addressed slavery, citizenship, or national sovereignty.',
     sources: [
-      { label: 'Encyclopaedia Britannica — Haitian Revolution', url: 'https://www.britannica.com/event/Haitian-Revolution' },
-      { label: 'Library of Congress — Haiti and the Haitian Revolution', url: 'https://guides.loc.gov/haitian-revolution' },
-      { label: 'Yale Avalon Project — Haitian Constitution of 1801', url: 'https://avalon.law.yale.edu/19th_century/ha01.asp' }
+      { label: 'Encyclopaedia Britannica, Haitian Revolution', url: 'https://www.britannica.com/event/Haitian-Revolution' },
+      { label: 'Library of Congress, Haiti and the Haitian Revolution', url: 'https://guides.loc.gov/haitian-revolution' },
+      { label: 'Yale Avalon Project, Haitian Constitution of 1801', url: 'https://avalon.law.yale.edu/19th_century/ha01.asp' }
     ]
   },
   {
@@ -129,7 +129,7 @@ const scenarios = [
     roles: [
       R('owner', 'Cotton Mill Owner', 'You run a steam-powered mill competing in national and export markets.', 'You control machinery, hiring, and schedules, but Parliament can regulate the factory and customers can shift orders.', 'Keep production efficient and avoid collapse or relocation.', 'Strict rules may raise costs while competitors ignore them.', 'Industrialization rewards capital investment and turns time discipline into profit.', 'Support basic inspection and gradual limits tied to productivity.', 'You may describe family dependence on wages without sharing the risks your system imposes.'),
       R('worker', 'Young Mill Worker', 'You work around machinery and contribute wages to a household.', 'Your testimony can influence reform, but dismissal or retaliation remains possible.', 'Reduce hours and injury while preserving a viable income.', 'A law may remove your job without providing food, schooling, or land.', 'Working-class experience reveals the human mechanism behind industrial growth.', 'Demand enforceable hours, safety, and schooling without wage loss.', 'You may not know which enforcement design can work across thousands of mills.'),
-      R('inspector', 'Factory Commission Inspector', 'You collect testimony and translate parliamentary rules into inspections.', 'You can document violations, but the state has few inspectors for a rapidly expanding industry.', 'Create a rule that can actually be enforced.', 'A weak law will legitimate abuse; an impossible law will be ignored.', 'Reform depends on institutions, records, and enforcement—not sympathy alone.', 'Require age records, machine safeguards, and independent inspections.', 'You may underestimate how employers and families can evade paperwork.'),
+      R('inspector', 'Factory Commission Inspector', 'You collect testimony and translate parliamentary rules into inspections.', 'You can document violations, but the state has few inspectors for a rapidly expanding industry.', 'Create a rule that can actually be enforced.', 'A weak law will legitimate abuse; an impossible law will be ignored.', 'Reform depends on institutions, records, and enforcement, not sympathy alone.', 'Require age records, machine safeguards, and independent inspections.', 'You may underestimate how employers and families can evade paperwork.'),
       R('merchant', 'Manchester Export Merchant', 'You finance cotton purchases and sell cloth in global markets.', 'You can redirect orders and credit, but you depend on low prices and reliable supply.', 'Protect Britain’s competitive position while avoiding scandals that threaten trade.', 'Costs rise or foreign manufacturers gain an advantage.', 'Industrial capitalism links local labor conditions to global markets and empire.', 'Support common standards among major mills and predictable transition costs.', 'You may treat global demand as an unavoidable force rather than a political choice.')
     ],
     evidence: [
@@ -161,9 +161,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain two interacting causes of Britain’s Industrial Revolution and one effect on workers or urban society. Use the factory dilemma to show why industrialization created both wealth and inequality.',
     sources: [
-      { label: 'UK Parliament — Factory Act 1833', url: 'https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/' },
-      { label: 'British Library — The Industrial Revolution', url: 'https://www.bl.uk/learning/timeline/item126878.html' },
-      { label: 'UK Parliament — Child labour and the factory system', url: 'https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/childlabour/' }
+      { label: 'UK Parliament, Factory Act 1833', url: 'https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/' },
+      { label: 'British Library, The Industrial Revolution', url: 'https://www.bl.uk/learning/timeline/item126878.html' },
+      { label: 'UK Parliament, Child labour and the factory system', url: 'https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/childlabour/' }
     ]
   },
   {
@@ -212,9 +212,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Compare Japan’s state-led industrialization with Britain’s earlier path. Explain one similarity, one difference, and how sovereignty or colonial status shaped each path.',
     sources: [
-      { label: 'Encyclopaedia Britannica — Meiji Restoration', url: 'https://www.britannica.com/event/Meiji-Restoration' },
-      { label: 'National Diet Library — Meiji Constitution and modernization resources', url: 'https://www.ndl.go.jp/constitution/e/index.html' },
-      { label: 'Library of Congress — Japan: Meiji period', url: 'https://www.loc.gov/item/2021668703/' }
+      { label: 'Encyclopaedia Britannica, Meiji Restoration', url: 'https://www.britannica.com/event/Meiji-Restoration' },
+      { label: 'National Diet Library, Meiji Constitution and modernization resources', url: 'https://www.ndl.go.jp/constitution/e/index.html' },
+      { label: 'Library of Congress, Japan: Meiji period', url: 'https://www.loc.gov/item/2021668703/' }
     ]
   },
   {
@@ -263,9 +263,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how one industrial technology caused both economic integration and unequal power. Use the railway’s route, finance, or labor system as your mechanism.',
     sources: [
-      { label: 'Encyclopaedia Britannica — Indian railway history', url: 'https://www.britannica.com/technology/railroad/India' },
-      { label: 'British Library — Railways and colonial India', url: 'https://www.bl.uk/learning/timeline/item126876.html' },
-      { label: 'Library of Congress — India and the British Empire', url: 'https://www.loc.gov/item/2021668726/' }
+      { label: 'Encyclopaedia Britannica, Indian railway history', url: 'https://www.britannica.com/technology/railroad/India' },
+      { label: 'British Library, Railways and colonial India', url: 'https://www.bl.uk/learning/timeline/item126876.html' },
+      { label: 'Library of Congress, India and the British Empire', url: 'https://www.loc.gov/item/2021668726/' }
     ]
   },
   {
@@ -314,9 +314,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Compare liberal, conservative, and socialist responses to industrialization. Explain how one reform both reduced a problem and preserved or expanded state power.',
     sources: [
-      { label: 'German History in Documents — Bismarck’s social insurance', url: 'https://ghdi.ghi-dc.org/sub_document.cfm?document_id=1803' },
-      { label: 'Marxists Internet Archive — Communist Manifesto', url: 'https://www.marxists.org/archive/marx/works/1848/communist-manifesto/' },
-      { label: 'Encyclopaedia Britannica — Socialism', url: 'https://www.britannica.com/topic/socialism' }
+      { label: 'German History in Documents, Bismarck’s social insurance', url: 'https://ghdi.ghi-dc.org/sub_document.cfm?document_id=1803' },
+      { label: 'Marxists Internet Archive, Communist Manifesto', url: 'https://www.marxists.org/archive/marx/works/1848/communist-manifesto/' },
+      { label: 'Encyclopaedia Britannica, Socialism', url: 'https://www.britannica.com/topic/socialism' }
     ]
   },
   {
@@ -365,9 +365,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how industrial-era finance extended power without formal colonial rule. Compare the Ottoman debt authority with one case of direct colonial control.',
     sources: [
-      { label: 'Encyclopaedia Britannica — Ottoman Empire: finance and reform', url: 'https://www.britannica.com/place/Ottoman-Empire/The-Tanzimat-reforms' },
-      { label: 'Encyclopaedia Iranica — Ottoman Public Debt Administration', url: 'https://www.iranicaonline.org/articles/ottoman-empire' },
-      { label: 'Cambridge University Press — Ottoman economic history overview', url: 'https://www.cambridge.org/core/books/cambridge-history-of-turkey/' }
+      { label: 'Encyclopaedia Britannica, Ottoman Empire: finance and reform', url: 'https://www.britannica.com/place/Ottoman-Empire/The-Tanzimat-reforms' },
+      { label: 'Encyclopaedia Iranica, Ottoman Public Debt Administration', url: 'https://www.iranicaonline.org/articles/ottoman-empire' },
+      { label: 'Cambridge University Press, Ottoman economic history overview', url: 'https://www.cambridge.org/core/books/cambridge-history-of-turkey/' }
     ]
   },
   {
@@ -416,9 +416,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how the Pullman Strike shows workers responding to industrial capitalism through collective organization. Evaluate whether the government response expanded or limited worker power.',
     sources: [
-      { label: 'National Park Service — Pullman National Historical Park', url: 'https://www.nps.gov/pull/learn/historyculture/the-pullman-strike.htm' },
-      { label: 'Library of Congress — Eugene V. Debs', url: 'https://www.loc.gov/item/today-in-history/may-09/' },
-      { label: 'Encyclopaedia Britannica — Pullman Strike', url: 'https://www.britannica.com/event/Pullman-Strike' }
+      { label: 'National Park Service, Pullman National Historical Park', url: 'https://www.nps.gov/pull/learn/historyculture/the-pullman-strike.htm' },
+      { label: 'Library of Congress, Eugene V. Debs', url: 'https://www.loc.gov/item/today-in-history/may-09/' },
+      { label: 'Encyclopaedia Britannica, Pullman Strike', url: 'https://www.britannica.com/event/Pullman-Strike' }
     ]
   },
   {
@@ -467,9 +467,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how industrialization changed social hierarchies, household roles, and standards of living. Use urban public health to show why causes and effects operated at more than one scale.',
     sources: [
-      { label: 'Wellcome Collection — Chadwick and the sanitary movement', url: 'https://wellcomecollection.org/articles/WX6l2RAAACQAFc2g' },
-      { label: 'UK Parliament — Public health and the Industrial Revolution', url: 'https://www.parliament.uk/about/living-heritage/transformingsociety/towncountry/towns/overview/publichealth/' },
-      { label: 'British Library — Victorian cities and public health', url: 'https://www.bl.uk/learning/timeline/item126874.html' }
+      { label: 'Wellcome Collection, Chadwick and the sanitary movement', url: 'https://wellcomecollection.org/articles/WX6l2RAAACQAFc2g' },
+      { label: 'UK Parliament, Public health and the Industrial Revolution', url: 'https://www.parliament.uk/about/living-heritage/transformingsociety/towncountry/towns/overview/publichealth/' },
+      { label: 'British Library, Victorian cities and public health', url: 'https://www.bl.uk/learning/timeline/item126874.html' }
     ]
   }
 ];

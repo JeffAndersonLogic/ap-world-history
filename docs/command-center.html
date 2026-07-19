@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../assets/css/behistorical-command-center.css">
 </head>
 <body>
-  <div class="cc-banner">Internal Build Tool — Not Linked From Student or Teacher Pages</div>
+  <div class="cc-banner">Internal Build Tool, Not Linked From Student or Teacher Pages</div>
   <nav class="top-nav" aria-label="Command Center navigation">
     <a class="brand-mini" href="../index.html"><img src="../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"><span>BeHistorical</span></a>
     <div class="nav-links"><a href="../index.html">Site Home</a><a href="../PROJECT_STATUS.md">Build Log</a></div>
@@ -20,8 +20,8 @@
     <div class="header-wrap">
       <div class="site-eyebrow">BeHistorical &middot; Repository Command Center</div>
       <h1 class="site-title">Where the Build Stands</h1>
-      <p class="site-subtitle">Every unit topic and Foundations topic, audited against what's actually on disk — lesson shell, data file, renderer config, First &amp; 10 reading + capture wrapper, and BeInTheRoom scenario link.</p>
-      <p class="gen-stamp" id="gen-stamp">Generated —</p>
+      <p class="site-subtitle">Every unit topic and Foundations topic, audited against what's actually on disk, lesson shell, data file, renderer config, First &amp; 10 reading + capture wrapper, and BeInTheRoom scenario link.</p>
+      <p class="gen-stamp" id="gen-stamp">Generated , </p>
     </div>
   </header>
 
@@ -47,7 +47,7 @@
 
     <section>
       <h2 class="section-title">Known issues</h2>
-      <p class="section-note">Content-quality and cross-file problems that a file-existence scan can't catch — hand-tracked in <code>scripts/generate-status-manifest.js</code>. Update that list as issues are found or resolved.</p>
+      <p class="section-note">Content-quality and cross-file problems that a file-existence scan can't catch, hand-tracked in <code>scripts/generate-status-manifest.js</code>. Update that list as issues are found or resolved.</p>
       <div class="tbl-wrap issues">
         <table class="issues-tbl">
           <thead><tr><th style="width:90px">Severity</th><th style="width:260px">Where</th><th>What's wrong</th></tr></thead>
@@ -56,7 +56,7 @@
       </div>
     </section>
 
-    <div class="regen-note">This page reads <code>assets/data/project-status-manifest.js</code>, a generated file. After adding or building topics, run <code>node scripts/generate-status-manifest.js</code> from the repo root and refresh this page — nothing here is edited by hand except the known-issues list in the script itself.</div>
+    <div class="regen-note">This page reads <code>assets/data/project-status-manifest.js</code>, a generated file. After adding or building topics, run <code>node scripts/generate-status-manifest.js</code> from the repo root and refresh this page, nothing here is edited by hand except the known-issues list in the script itself.</div>
   </main>
 
   <footer class="cc-footer">BeHistorical Command Center &middot; reads the repo, not a copy of it</footer>
@@ -81,7 +81,7 @@
     function dot(state) {
       if (state === true || state === 'built') return '<span class="dot yes" title="Present">&#10003;</span>';
       if (state === false || state === 'missing' || state === 'broken-link') return '<span class="dot no" title="' + (state === 'broken-link' ? 'Link points to a missing file' : 'Missing') + '">&#10007;</span>';
-      if (state === 'coming-soon-by-design') return '<span class="dot na" title="No scenario yet — renderer shows the coming-soon placeholder by design">&ndash;</span>';
+      if (state === 'coming-soon-by-design') return '<span class="dot na" title="No scenario yet, renderer shows the coming-soon placeholder by design">&ndash;</span>';
       return '<span class="dot na" title="Not applicable">&ndash;</span>';
     }
 

@@ -1,12 +1,12 @@
-// Topic 9.8 — runtime-authoritative CED alignment, effective Fall 2026.
+// Topic 9.8, runtime-authoritative CED alignment, effective Fall 2026.
 (() => {
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
-  lesson.meta.canvasSubmissionNote = 'Organize your thinking here — submit your final work in Canvas.';
+  lesson.meta.canvasSubmissionNote = 'Organize your thinking here, submit your final work in Canvas.';
   lesson.meta.feedbackToolUrl = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
   lesson.collegeBoardKeyConcepts = [
   {
-    code: 'Thematic Focus — Governance (GOV)',
+    code: 'Thematic Focus, Governance (GOV)',
     theme: 'Governance',
     text: 'Governments obtain, retain, and exercise power in different ways, while internal and external factors shape state formation, expansion, and decline.',
     illustrativeExamples: []

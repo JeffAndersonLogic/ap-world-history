@@ -13,7 +13,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Effects of Migration',
     subtitle: 'Explain how and why new patterns of migration affected society from 1750 to 1900.',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [
     {
@@ -102,7 +102,7 @@ window.BEHISTORICAL_LESSON = {
         title: 'The historical mechanism',
         bullets: [
           '**Start with the process:** Because many migrants were male, women often took on new roles in home societies.',
-          '**Track power:** Ask who could make rules, mobilize labor, control land, or redirect trade—and how that power changed from 1750 to 1900.',
+          '**Track power:** Ask who could make rules, mobilize labor, control land, or redirect trade, and how that power changed from 1750 to 1900.',
           '**Anchor the pattern:** Chinese communities across the Pacific and Americas and Indian communities in Africa, the Caribbean, and Southeast Asia show how a global development took different institutional forms.'
         ],
         image: {

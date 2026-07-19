@@ -13,7 +13,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Institutions Developing in a Globalized World',
     subtitle: 'Explain how and why globalization changed international interactions among states.',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [
     {
@@ -48,7 +48,7 @@ window.BEHISTORICAL_LESSON = {
   ],
   collegeBoardKeyConcepts: [
     {
-      code: 'Thematic Focus — Governance (GOV)',
+      code: 'Thematic Focus, Governance (GOV)',
       theme: 'Governance',
       text: 'Governments obtain, retain, and exercise power in different ways, while internal and external factors shape state formation, expansion, and decline.',
       illustrativeExamples: []
@@ -186,7 +186,7 @@ window.BEHISTORICAL_LESSON = {
     intro: 'Every household funds the fire department, but five households can prevent the trucks from leaving the station.',
     detail: 'Every household funds the fire department, but five households can prevent the trucks from leaving the station.',
     text: 'Every household funds the fire department, but five households can prevent the trucks from leaving the station.',
-    prompt: 'What does the analogy reveal about the Security Council veto—and where does it oversimplify state sovereignty?'
+    prompt: 'What does the analogy reveal about the Security Council veto, and where does it oversimplify state sovereignty?'
   },
   skillBuilder: {
     title: 'AP Skill Builder: Institutions Developing in a Globalized World',

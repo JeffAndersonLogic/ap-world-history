@@ -6,7 +6,7 @@
     {
       code: 'KC-3.1.I.A.i',
       theme: 'Economic Systems',
-      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.',
+      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Silk Roads, promoting the growth of powerful new trading cities.',
       illustrativeExamples: ['Kashgar', 'Samarkand']
     },
     {
@@ -97,7 +97,7 @@
       prompt: 'Explain two effects of Silk Road exchange on societies along the routes. Use specific evidence such as trade goods, religions, technology, or plague.',
       responseType: 'Checkpoint 2',
       terms: ['silk', 'porcelain', 'spices', 'paper', 'gunpowder', 'Buddhism', 'Islam', 'plague', 'Black Death', 'diffusion'],
-      focus: ['Identify at least two distinct effects.', 'Use specific evidence — name a good, technology, religion, or disease.', 'Explain how the effect changed a society or region along the routes.']
+      focus: ['Identify at least two distinct effects.', 'Use specific evidence, name a good, technology, religion, or disease.', 'Explain how the effect changed a society or region along the routes.']
     }
   ];
 })();

@@ -202,7 +202,7 @@ if (troubled.length) {
     if (lesson.blank.length) details.push(`blank: ${lesson.blank.map((slot) => `${slot.kind}.${slot.label}`).join(', ')}`);
     if (lesson.missingLocal.length) details.push(`missing: ${lesson.missingLocal.map((slot) => slot.url).join(', ')}`);
     if (lesson.moduleUniqueRatio < 0.8) details.push(`module uniqueness: ${lesson.moduleUniqueCount}/${lesson.moduleCount}`);
-    console.log(`- ${rel} — ${details.join('; ')}`);
+    console.log(`- ${rel}, ${details.join('; ')}`);
   }
 }
 

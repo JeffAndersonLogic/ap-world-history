@@ -13,7 +13,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Economics in the Global Age',
     subtitle: 'Explain the continuities and changes in the global economy from 1900 to present.',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
-    canvasSubmissionNote: 'Organize your thinking here — submit your final work in Canvas.'
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [
     {
@@ -48,7 +48,7 @@ window.BEHISTORICAL_LESSON = {
   ],
   collegeBoardKeyConcepts: [
     {
-      code: 'Thematic Focus — Economic Systems (ECN)',
+      code: 'Thematic Focus, Economic Systems (ECN)',
       theme: 'Economic Systems',
       text: 'As societies develop, they affect and are affected by the ways that they produce, exchange, and consume goods and services.',
       illustrativeExamples: []
@@ -207,10 +207,10 @@ window.BEHISTORICAL_LESSON = {
   },
   beSurreal: {
     title: 'BeSurreal: The Shirt with Twelve Passports',
-    desc: 'Imagine tracing one shirt through cotton, design, finance, dyeing, assembly, shipping, advertising, and sale—each in a different country.',
-    intro: 'Imagine tracing one shirt through cotton, design, finance, dyeing, assembly, shipping, advertising, and sale—each in a different country.',
-    detail: 'Imagine tracing one shirt through cotton, design, finance, dyeing, assembly, shipping, advertising, and sale—each in a different country.',
-    text: 'Imagine tracing one shirt through cotton, design, finance, dyeing, assembly, shipping, advertising, and sale—each in a different country.',
+    desc: 'Imagine tracing one shirt through cotton, design, finance, dyeing, assembly, shipping, advertising, and sale, each in a different country.',
+    intro: 'Imagine tracing one shirt through cotton, design, finance, dyeing, assembly, shipping, advertising, and sale, each in a different country.',
+    detail: 'Imagine tracing one shirt through cotton, design, finance, dyeing, assembly, shipping, advertising, and sale, each in a different country.',
+    text: 'Imagine tracing one shirt through cotton, design, finance, dyeing, assembly, shipping, advertising, and sale, each in a different country.',
     prompt: 'What does the shirt reveal about the changed geography of production and the continuity of unequal bargaining power?'
   },
   skillBuilder: {

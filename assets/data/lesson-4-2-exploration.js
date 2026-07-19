@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Exploration: Causes and Events",
     subtitle: "Why European states sponsored maritime exploration after c. 1450, and what the key voyages of the Portuguese and Spanish found and created",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
+    canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can explain at least two specific motivations for European exploration — including economic incentives (spice trade profits) and religious motivations (conversion, crusading) — and connect each to specific state actions.",
+      criteria: "I can explain at least two specific motivations for European exploration, including economic incentives (spice trade profits) and religious motivations (conversion, crusading), and connect each to specific state actions.",
       kc: 'KC-4.1.III',
       theme: "Governance"
     },
@@ -100,15 +100,15 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "Why They Sailed: European Exploration, 1415–1522",
-    intro: "Use these cards to explain why European states sponsored maritime exploration after c. 1450 — what motivated rulers and merchants to fund dangerous and expensive voyages — and what the key expeditions of the Portuguese and Spanish found, created, and destroyed.",
+    intro: "Use these cards to explain why European states sponsored maritime exploration after c. 1450, what motivated rulers and merchants to fund dangerous and expensive voyages, and what the key expeditions of the Portuguese and Spanish found, created, and destroyed.",
     videos: [],
     segments: [
       {
         title: "Why Europe? Motives, the Reconquista, and the Disrupted Trade Routes",
         bullets: [
-          "By c. 1450, the **Ottoman conquest of Constantinople** (1453) had disrupted overland trade routes through which Asian spices, silk, and luxury goods reached Europe through Arab and Byzantine middlemen. Spices — pepper, cloves, nutmeg, cinnamon — were enormously valuable in Europe for food preservation, medicine, and luxury consumption. But every spice bought in Europe had passed through layers of middlemen, each taking a share. Finding a direct sea route to Asian spice markets would allow European merchants to bypass the entire system.",
-          "**Portugal and Spain** had both just completed the **Reconquista** — the centuries-long campaign to expel Muslims from the Iberian Peninsula (completed 1492 in Spain). That campaign had produced military institutions, a warrior nobility, and a crusading religious ideology that could be redirected toward Atlantic expansion. Exploring and 'discovering' new lands offered the Spanish and Portuguese crowns a way to convert souls, claim territory, and project power without the constraints of established European politics.",
-          "**Prince Henry the Navigator** (1394–1460) organized Portuguese exploration of the African coast from his court at Sagres — not sailing himself but systematically sponsoring voyages year by year, gathering geographic and commercial intelligence. His motives combined the commercial (find gold and spice routes), the religious (find the legendary Christian kingdom of Prester John as an ally against Islam), and the political (establish Portuguese maritime dominance). The Portuguese model was state-sponsored, systematic, and cumulative.",
+          "By c. 1450, the **Ottoman conquest of Constantinople** (1453) had disrupted overland trade routes through which Asian spices, silk, and luxury goods reached Europe through Arab and Byzantine middlemen. Spices, pepper, cloves, nutmeg, cinnamon, were enormously valuable in Europe for food preservation, medicine, and luxury consumption. But every spice bought in Europe had passed through layers of middlemen, each taking a share. Finding a direct sea route to Asian spice markets would allow European merchants to bypass the entire system.",
+          "**Portugal and Spain** had both just completed the **Reconquista**, the centuries-long campaign to expel Muslims from the Iberian Peninsula (completed 1492 in Spain). That campaign had produced military institutions, a warrior nobility, and a crusading religious ideology that could be redirected toward Atlantic expansion. Exploring and 'discovering' new lands offered the Spanish and Portuguese crowns a way to convert souls, claim territory, and project power without the constraints of established European politics.",
+          "**Prince Henry the Navigator** (1394–1460) organized Portuguese exploration of the African coast from his court at Sagres, not sailing himself but systematically sponsoring voyages year by year, gathering geographic and commercial intelligence. His motives combined the commercial (find gold and spice routes), the religious (find the legendary Christian kingdom of Prester John as an ally against Islam), and the political (establish Portuguese maritime dominance). The Portuguese model was state-sponsored, systematic, and cumulative.",
           "The shorthand **'God, Glory, and Gold'** captures the three overlapping European motivations: religious conversion and crusading ideology, national prestige and competition between states, and commercial profit from trade and extraction. In practice, these motivations reinforced each other: conquering territory could bring both souls to convert and wealth to extract."
         ],
         image: {
@@ -119,16 +119,16 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "The Portuguese Model — Down Africa and Around to India",
+        title: "The Portuguese Model, Down Africa and Around to India",
         bullets: [
           "The Portuguese systematically explored the African coast southward from 1415, establishing a series of trading posts (**feitorias**) along the West African coast. Each voyage extended the known coastline by a few hundred miles, with the geographic knowledge recorded in portolan charts and brought back to Lisbon. By 1471, the Portuguese had reached the equator; by 1482, they had established a major fort at Elmina (modern Ghana), trading for gold and enslaved Africans.",
-          "**Bartolomeu Dias** rounded the **Cape of Good Hope** in 1488 — the southern tip of Africa — proving that a sea route to the Indian Ocean was possible from the Atlantic. Dias's crew forced him to turn back before he could continue to India, but the critical geographic fact was established: Africa had a southern end, and the ocean beyond it connected to Asia.",
-          "**Vasco da Gama** completed the voyage in 1498, reaching **Calicut** (Kozhikode) on the southwestern coast of India. He returned with enough spices to cover his entire voyage cost sixty times over — a commercial return that electrified European investors and confirmed the viability of the eastern sea route. Portugal subsequently established a network of fortified trading posts across the Indian Ocean, using naval power to control key straits and ports.",
+          "**Bartolomeu Dias** rounded the **Cape of Good Hope** in 1488, the southern tip of Africa, proving that a sea route to the Indian Ocean was possible from the Atlantic. Dias's crew forced him to turn back before he could continue to India, but the critical geographic fact was established: Africa had a southern end, and the ocean beyond it connected to Asia.",
+          "**Vasco da Gama** completed the voyage in 1498, reaching **Calicut** (Kozhikode) on the southwestern coast of India. He returned with enough spices to cover his entire voyage cost sixty times over, a commercial return that electrified European investors and confirmed the viability of the eastern sea route. Portugal subsequently established a network of fortified trading posts across the Indian Ocean, using naval power to control key straits and ports.",
           "The Portuguese model was extractive and militaristic: they did not primarily colonize territory but seized control of existing trade routes by force, threatening established Arab, Indian, and Swahili traders. This created enormous wealth for Portugal but also provoked resistance across the Indian Ocean world."
         ],
         image: {
           title: "Pillar of Vasco da Gama",
-          caption: "The Padrão commemorating Vasco da Gama's arrival in India in 1498 — one of several stone pillars erected by Portuguese explorers to claim territorial presence along new routes.",
+          caption: "The Padrão commemorating Vasco da Gama's arrival in India in 1498, one of several stone pillars erected by Portuguese explorers to claim territorial presence along new routes.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg"
         }
@@ -136,14 +136,14 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Columbus, the Caribbean, and Magellan's Circumnavigation",
         bullets: [
-          "**Christopher Columbus** (sailing for Spain, 1492) proposed reaching Asia by sailing *west* across the Atlantic — a gamble based on a significant underestimate of the earth's circumference. On October 12, 1492, he landed in the **Bahamas**, where he encountered the **Taíno people**. Columbus never accepted that he had found unknown continents; he died in 1506 still believing he had reached islands off the Asian coast. The **Treaty of Tordesillas** (1494) divided the non-European world between Spain and Portugal: everything west of a line in the Atlantic went to Spain, everything east went to Portugal.",
-          "Spanish **conquistadors** followed Columbus with remarkable speed: within 30 years, Hernán Cortés had destroyed the **Aztec Empire** (1521) and Francisco Pizarro the **Inca Empire** (1532). The Spanish conquest was enabled by military technology, alliances with indigenous peoples who were enemies of these empires, and — crucially — by disease. Smallpox arrived in Mesoamerica with Cortés's army in 1519 and killed an estimated 30–50% of the Aztec population before the military conquest was complete.",
-          "**Ferdinand Magellan** (sailing for Spain, 1519–1522) led the first circumnavigation of the globe — proving that the Pacific Ocean was vastly larger than Columbus had imagined and that the Americas were entirely separate from Asia. Magellan was killed in the Philippines in 1521; only one ship and 18 of 270 crew members completed the voyage. The circumnavigation established the global scale of the world and created the conditions for sustained Spanish competition with Portugal for Pacific trade routes.",
-          "From the **Taíno perspective**, Columbus's arrival was the beginning of catastrophe. Within 50 years of first contact, the Taíno population of Hispaniola had been reduced from an estimated 250,000 to near extinction — killed by disease, violence, and forced labor. The **encomienda system** enslaved indigenous peoples for Spanish labor needs. The Treaty of Tordesillas — drawn without any consultation of non-European peoples — reflected a European assumption that the world existed to be divided by European powers."
+          "**Christopher Columbus** (sailing for Spain, 1492) proposed reaching Asia by sailing *west* across the Atlantic, a gamble based on a significant underestimate of the earth's circumference. On October 12, 1492, he landed in the **Bahamas**, where he encountered the **Taíno people**. Columbus never accepted that he had found unknown continents; he died in 1506 still believing he had reached islands off the Asian coast. The **Treaty of Tordesillas** (1494) divided the non-European world between Spain and Portugal: everything west of a line in the Atlantic went to Spain, everything east went to Portugal.",
+          "Spanish **conquistadors** followed Columbus with remarkable speed: within 30 years, Hernán Cortés had destroyed the **Aztec Empire** (1521) and Francisco Pizarro the **Inca Empire** (1532). The Spanish conquest was enabled by military technology, alliances with indigenous peoples who were enemies of these empires, and, crucially, by disease. Smallpox arrived in Mesoamerica with Cortés's army in 1519 and killed an estimated 30–50% of the Aztec population before the military conquest was complete.",
+          "**Ferdinand Magellan** (sailing for Spain, 1519–1522) led the first circumnavigation of the globe, proving that the Pacific Ocean was vastly larger than Columbus had imagined and that the Americas were entirely separate from Asia. Magellan was killed in the Philippines in 1521; only one ship and 18 of 270 crew members completed the voyage. The circumnavigation established the global scale of the world and created the conditions for sustained Spanish competition with Portugal for Pacific trade routes.",
+          "From the **Taíno perspective**, Columbus's arrival was the beginning of catastrophe. Within 50 years of first contact, the Taíno population of Hispaniola had been reduced from an estimated 250,000 to near extinction, killed by disease, violence, and forced labor. The **encomienda system** enslaved indigenous peoples for Spanish labor needs. The Treaty of Tordesillas, drawn without any consultation of non-European peoples, reflected a European assumption that the world existed to be divided by European powers."
         ],
         image: {
           title: "Waldseemüller Map, 1507",
-          caption: "The Waldseemüller map of 1507 shows the Americas as separate continents for the first time — the direct result of Spanish and Portuguese voyages from 1492 onward. Notice the vast unknown Pacific Ocean to the west of America.",
+          caption: "The Waldseemüller map of 1507 shows the Americas as separate continents for the first time, the direct result of Spanish and Portuguese voyages from 1492 onward. Notice the vast unknown Pacific Ocean to the west of America.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
         }
@@ -155,9 +155,9 @@ window.BEHISTORICAL_LESSON = {
     title: "European Exploration Routes, 1415–1522",
     url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
     sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-    caption: "The 1507 Waldseemüller map captures European geographic knowledge just 15 years after Columbus. Notice the Americas appear on the left, Africa at bottom right, and Asia to the far right — and notice how much of the world is still unknown or imprecisely mapped.",
+    caption: "The 1507 Waldseemüller map captures European geographic knowledge just 15 years after Columbus. Notice the Americas appear on the left, Africa at bottom right, and Asia to the far right, and notice how much of the world is still unknown or imprecisely mapped.",
     intro: "Use the map to trace the major exploration routes: Portuguese southward along the African coast, around the Cape of Good Hope, and east to India; Spanish westward across the Atlantic to the Caribbean; and the Magellan-Elcano circumnavigation route. Consider what each route was designed to reach and what it actually found.",
-    prompt: "Using the map, identify the geographic barriers that European explorers had to overcome. Which route — Portuguese or Spanish — represented a greater geographic challenge? What does the shape of the Americas on this early map suggest about how quickly European knowledge of new discoveries circulated?"
+    prompt: "Using the map, identify the geographic barriers that European explorers had to overcome. Which route, Portuguese or Spanish, represented a greater geographic challenge? What does the shape of the Americas on this early map suggest about how quickly European knowledge of new discoveries circulated?"
   },
 
   first10: {
@@ -168,12 +168,12 @@ window.BEHISTORICAL_LESSON = {
 
   evidenceLab: {
     title: "Evidence Lab: Motives, Encounters, and Multiple Perspectives",
-    intro: "Use the evidence below to analyze the motives behind European exploration and the experiences of different peoples during the era of contact. Strong historical thinking requires evaluating evidence from multiple perspectives — not just the perspective of the explorers.",
+    intro: "Use the evidence below to analyze the motives behind European exploration and the experiences of different peoples during the era of contact. Strong historical thinking requires evaluating evidence from multiple perspectives, not just the perspective of the explorers.",
     prompt: "Choose one piece of evidence and explain what it reveals about the causes, nature, or consequences of European exploration. Consider: whose perspective does this evidence represent, and what perspective does it leave out?",
     items: [
-      { title: "Columbus's journal entry — 'These people are very unskilled in arms'", detail: "Evidence of Columbus's immediate calculation that the Taíno could be conquered and enslaved — written on the first day of contact. Evaluate this source for what it reveals about the motivations behind exploration and for the perspective it systematically excludes." },
-      { title: "Treaty of Tordesillas (1494) — dividing the world between Spain and Portugal", detail: "Evidence of European assumptions about the right to divide and control non-European territories without the consent of those territories' inhabitants. The treaty was drawn with papal authority and treated the entire non-European world as available for European claim." },
-      { title: "Da Gama's cargo return — voyage costs covered 60 times over", detail: "Evidence of the commercial logic driving state sponsorship of exploration. The profit from da Gama's first voyage to India demonstrates how economic incentives made the risk of expensive and dangerous voyages rational for state sponsors — and explains why Portugal and Spain invested so heavily in exploration." }
+      { title: "Columbus's journal entry, 'These people are very unskilled in arms'", detail: "Evidence of Columbus's immediate calculation that the Taíno could be conquered and enslaved, written on the first day of contact. Evaluate this source for what it reveals about the motivations behind exploration and for the perspective it systematically excludes." },
+      { title: "Treaty of Tordesillas (1494), dividing the world between Spain and Portugal", detail: "Evidence of European assumptions about the right to divide and control non-European territories without the consent of those territories' inhabitants. The treaty was drawn with papal authority and treated the entire non-European world as available for European claim." },
+      { title: "Da Gama's cargo return, voyage costs covered 60 times over", detail: "Evidence of the commercial logic driving state sponsorship of exploration. The profit from da Gama's first voyage to India demonstrates how economic incentives made the risk of expensive and dangerous voyages rational for state sponsors, and explains why Portugal and Spain invested so heavily in exploration." }
     ]
   },
 
@@ -191,9 +191,9 @@ window.BEHISTORICAL_LESSON = {
   beSurreal: {
     title: "BeSurreal: You Are a Sailor on Columbus's Fleet, October 11, 1492",
     desc: "It is the night of October 11, 1492. You are a sailor aboard the Pinta, one of three ships in Columbus's fleet. You have been at sea for 33 days since leaving the Canary Islands. Tonight, the crew saw a light on the horizon. Columbus believes it is land. You believe it, too.",
-    intro: "You are standing on the deck of the Pinta in the middle of the night, watching a faint light on the horizon that might be a fire — or might be wishful thinking. The captain has ordered the fleet to slow and hold position until dawn. Around you, men who have been growing mutinous for weeks are suddenly very quiet. You can feel the tension differently now — not the dangerous restlessness of the past week, but something almost like prayer.",
-    detail: "You signed on for this voyage in Palos three months ago for reasons you can barely remember clearly: the promise of reward, the pressure of debt, the sense that nothing was keeping you home. You have been at sea before, always within sight of the European coast. This has been nothing like that. For 33 days, no land. The compass has behaved strangely. The winds carried you west so steadily that men began to whisper that they might never carry you back east. You have eaten dried meat and biscuit until you cannot taste anything. You have dreamed about water that doesn't move. Columbus has been wrong about the distance before — he told the crew the crossing would be short, and it has been anything but. But the light on the horizon is real. Tomorrow morning, whatever that light is, your life will have changed permanently in ways you cannot yet imagine.",
-    prompt: "Write your journal entry for tonight — October 11, 1492 — and for the morning after. What are you feeling now, watching that light? And what do you see and feel on the morning of October 12, when you first step onto this island and first see the people who live there?"
+    intro: "You are standing on the deck of the Pinta in the middle of the night, watching a faint light on the horizon that might be a fire, or might be wishful thinking. The captain has ordered the fleet to slow and hold position until dawn. Around you, men who have been growing mutinous for weeks are suddenly very quiet. You can feel the tension differently now, not the dangerous restlessness of the past week, but something almost like prayer.",
+    detail: "You signed on for this voyage in Palos three months ago for reasons you can barely remember clearly: the promise of reward, the pressure of debt, the sense that nothing was keeping you home. You have been at sea before, always within sight of the European coast. This has been nothing like that. For 33 days, no land. The compass has behaved strangely. The winds carried you west so steadily that men began to whisper that they might never carry you back east. You have eaten dried meat and biscuit until you cannot taste anything. You have dreamed about water that doesn't move. Columbus has been wrong about the distance before, he told the crew the crossing would be short, and it has been anything but. But the light on the horizon is real. Tomorrow morning, whatever that light is, your life will have changed permanently in ways you cannot yet imagine.",
+    prompt: "Write your journal entry for tonight, October 11, 1492, and for the morning after. What are you feeling now, watching that light? And what do you see and feel on the morning of October 12, when you first step onto this island and first see the people who live there?"
   },
 
   beInTheRoom: {

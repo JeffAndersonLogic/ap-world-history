@@ -59,9 +59,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how one external and two internal factors caused the Russian imperial collapse. Compare Russia’s collapse with the fall of the Ottoman or Qing Empire.',
     sources: [
-      { label: 'Encyclopaedia Britannica — Russian Revolution', url: 'https://www.britannica.com/event/Russian-Revolution' },
-      { label: 'Library of Congress — Russian Revolution collections', url: 'https://www.loc.gov/collections/russian-revolutionary-posters/' },
-      { label: 'Marxists Internet Archive — Order No. 1 of the Petrograd Soviet', url: 'https://www.marxists.org/history/ussr/revolution/1917/march/01.htm' }
+      { label: 'Encyclopaedia Britannica, Russian Revolution', url: 'https://www.britannica.com/event/Russian-Revolution' },
+      { label: 'Library of Congress, Russian Revolution collections', url: 'https://www.loc.gov/collections/russian-revolutionary-posters/' },
+      { label: 'Marxists Internet Archive, Order No. 1 of the Petrograd Soviet', url: 'https://www.marxists.org/history/ussr/revolution/1917/march/01.htm' }
     ]
   },
   {
@@ -108,11 +108,11 @@ const scenarios = [
         O('entente', 'Promise France and Russia support', 'Make the Entente militarily credible before war begins.', 'Germany may reconsider a two-front conflict.', 'The promise hardens blocs and reduces incentives to compromise.', 'Deterrence and escalation arise from the same commitment.')
       ])
     ],
-    reflectionPrompt: 'Rank the four major causes of World War I—alliances, militarism, imperialism, and nationalism—and explain how the July Crisis connected your top two causes.',
+    reflectionPrompt: 'Rank the four major causes of World War I, alliances, militarism, imperialism, and nationalism, and explain how the July Crisis connected your top two causes.',
     sources: [
-      { label: 'International Encyclopedia of the First World War — July Crisis', url: 'https://encyclopedia.1914-1918-online.net/article/july_crisis_1914' },
-      { label: 'Encyclopaedia Britannica — World War I', url: 'https://www.britannica.com/event/World-War-I' },
-      { label: 'UK National Archives — The road to war', url: 'https://www.nationalarchives.gov.uk/education/resources/great-war-1914/' }
+      { label: 'International Encyclopedia of the First World War, July Crisis', url: 'https://encyclopedia.1914-1918-online.net/article/july_crisis_1914' },
+      { label: 'Encyclopaedia Britannica, World War I', url: 'https://www.britannica.com/event/World-War-I' },
+      { label: 'UK National Archives, The road to war', url: 'https://www.nationalarchives.gov.uk/education/resources/great-war-1914/' }
     ]
   },
   {
@@ -161,9 +161,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how propaganda, censorship, colonial manpower, and industrial labor made World War I a total war. Source one campaign choice by purpose, audience, and limitation.',
     sources: [
-      { label: 'Imperial War Museums — How propaganda was used in World War I', url: 'https://www.iwm.org.uk/history/how-was-propaganda-used-in-world-war-one' },
-      { label: 'British Library — World War One propaganda', url: 'https://www.bl.uk/world-war-one/articles/propaganda-as-a-weapon' },
-      { label: 'Library of Congress — World War I posters', url: 'https://www.loc.gov/pictures/collection/wwipos/' }
+      { label: 'Imperial War Museums, How propaganda was used in World War I', url: 'https://www.iwm.org.uk/history/how-was-propaganda-used-in-world-war-one' },
+      { label: 'British Library, World War One propaganda', url: 'https://www.bl.uk/world-war-one/articles/propaganda-as-a-weapon' },
+      { label: 'Library of Congress, World War I posters', url: 'https://www.loc.gov/pictures/collection/wwipos/' }
     ]
   },
   {
@@ -210,11 +210,11 @@ const scenarios = [
         O('regional', 'Share revenue with producing regions', 'Guarantee local infrastructure, environmental safeguards, and municipal funds.', 'Communities see material benefits and cooperate with production.', 'National planners lose revenue and regional inequality may persist.', 'Resource nationalism becomes credible through local distribution.')
       ])
     ],
-    reflectionPrompt: 'Compare Mexico’s oil nationalization with one other interwar government response—the New Deal, fascist corporatism, or Soviet planning. Explain one shared increase in state power and one ideological difference.',
+    reflectionPrompt: 'Compare Mexico’s oil nationalization with one other interwar government response, the New Deal, fascist corporatism, or Soviet planning. Explain one shared increase in state power and one ideological difference.',
     sources: [
-      { label: 'U.S. Office of the Historian — Mexican oil expropriation', url: 'https://history.state.gov/milestones/1937-1945/mexican-oil' },
-      { label: 'Encyclopaedia Britannica — Lázaro Cárdenas', url: 'https://www.britannica.com/biography/Lazaro-Cardenas' },
-      { label: 'PEMEX — Historical overview', url: 'https://www.pemex.com/en/about-pemex/history/Paginas/default.aspx' }
+      { label: 'U.S. Office of the Historian, Mexican oil expropriation', url: 'https://history.state.gov/milestones/1937-1945/mexican-oil' },
+      { label: 'Encyclopaedia Britannica, Lázaro Cárdenas', url: 'https://www.britannica.com/biography/Lazaro-Cardenas' },
+      { label: 'PEMEX, Historical overview', url: 'https://www.pemex.com/en/about-pemex/history/Paginas/default.aspx' }
     ]
   },
   {
@@ -263,9 +263,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain one change and two continuities in imperial control after World War I. Use the mandate system and one anti-colonial response as evidence.',
     sources: [
-      { label: 'Avalon Project — Covenant of the League of Nations, Article 22', url: 'https://avalon.law.yale.edu/20th_century/leagcov.asp' },
-      { label: 'U.S. Office of the Historian — Paris Peace Conference', url: 'https://history.state.gov/milestones/1914-1920/paris-peace' },
-      { label: 'Encyclopaedia Britannica — Mandate', url: 'https://www.britannica.com/topic/mandate-League-of-Nations' }
+      { label: 'Avalon Project, Covenant of the League of Nations, Article 22', url: 'https://avalon.law.yale.edu/20th_century/leagcov.asp' },
+      { label: 'U.S. Office of the Historian, Paris Peace Conference', url: 'https://history.state.gov/milestones/1914-1920/paris-peace' },
+      { label: 'Encyclopaedia Britannica, Mandate', url: 'https://www.britannica.com/topic/mandate-League-of-Nations' }
     ]
   },
   {
@@ -314,9 +314,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how the failed peace settlement, Great Depression, fascist regimes, and imperial expansion combined to cause World War II. Evaluate appeasement as both a cause and a constrained policy choice.',
     sources: [
-      { label: 'UK National Archives — The Munich Agreement', url: 'https://www.nationalarchives.gov.uk/education/resources/chamberlain-and-hitler/' },
-      { label: 'United States Holocaust Memorial Museum — Munich Agreement', url: 'https://encyclopedia.ushmm.org/content/en/article/munich-agreement' },
-      { label: 'Encyclopaedia Britannica — Munich Agreement', url: 'https://www.britannica.com/event/Munich-Agreement' }
+      { label: 'UK National Archives, The Munich Agreement', url: 'https://www.nationalarchives.gov.uk/education/resources/chamberlain-and-hitler/' },
+      { label: 'United States Holocaust Memorial Museum, Munich Agreement', url: 'https://encyclopedia.ushmm.org/content/en/article/munich-agreement' },
+      { label: 'Encyclopaedia Britannica, Munich Agreement', url: 'https://www.britannica.com/event/Munich-Agreement' }
     ]
   },
   {
@@ -365,9 +365,9 @@ const scenarios = [
     ],
     reflectionPrompt: 'Explain how World War II mobilization expanded state power, changed labor and gender roles, and created civil-rights contradictions. Compare one democratic mobilization method with one totalitarian method.',
     sources: [
-      { label: 'National Archives — Powers of Persuasion: World War II posters', url: 'https://www.archives.gov/exhibits/powers-of-persuasion' },
-      { label: 'Library of Congress — World War II home front', url: 'https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/great-depression-and-world-war-ii-1929-1945/world-war-ii/' },
-      { label: 'National Park Service — World War II Home Front', url: 'https://www.nps.gov/subjects/worldwarii/homefront.htm' }
+      { label: 'National Archives, Powers of Persuasion: World War II posters', url: 'https://www.archives.gov/exhibits/powers-of-persuasion' },
+      { label: 'Library of Congress, World War II home front', url: 'https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/great-depression-and-world-war-ii-1929-1945/world-war-ii/' },
+      { label: 'National Park Service, World War II Home Front', url: 'https://www.nps.gov/subjects/worldwarii/homefront.htm' }
     ]
   }
 ];

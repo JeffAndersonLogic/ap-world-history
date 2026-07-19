@@ -1,6 +1,6 @@
 ---
 name: build-lesson
-description: Scaffold a complete BeHistorical lesson for a given AP World topic — HTML shell, data JS, renderer config, First & 10, capture wrapper, hub wiring, and form config registration.
+description: Scaffold a complete BeHistorical lesson for a given AP World topic, HTML shell, data JS, renderer config, First & 10, capture wrapper, hub wiring, and form config registration.
 ---
 
 # BeHistorical Lesson Builder
@@ -29,7 +29,7 @@ From the topic number, derive:
 Copy the template from `assets/templates/behistorical-topic-template-v1.html` and replace:
 - `TOPIC_CODE` → `Topic {topicKey}`
 - `TOPIC_TITLE` → title
-- `TOPIC_SUBTITLE` → `"c. [period] — AP World History"`  (ask user for period if ambiguous, otherwise derive from unit: Units 1-2 = "1200–1450", Unit 3 = "1450–1750", Unit 4 = "1450–1750", Unit 5 = "1750–1900", Unit 6 = "1750–1900", Unit 7 = "1900–present", Unit 8 = "1900–present", Unit 9 = "1900–present")
+- `TOPIC_SUBTITLE` → `"c. [period], AP World History"`  (ask user for period if ambiguous, otherwise derive from unit: Units 1-2 = "1200–1450", Unit 3 = "1450–1750", Unit 4 = "1450–1750", Unit 5 = "1750–1900", Unit 6 = "1750–1900", Unit 7 = "1900–present", Unit 8 = "1900–present", Unit 9 = "1900–present")
 - `UNIT_FOLDER` → `unit-{N}`
 - `UNIT_LABEL` → `"Unit {N}"`
 - `TOPIC_DATA_FILE` → `lesson-{unitNum}-{topicSeq}-{slug}`
@@ -47,10 +47,10 @@ Copy the template from `assets/templates/behistorical-topic-template-v1.html` an
 
 Generate a scaffold `window.BEHISTORICAL_LESSON = { ... }` with:
 - `meta`: course, unit, topic (`"Topic {topicKey}"`), title, subtitle, feedbackToolUrl
-- `learningTargets`: 2-3 targets (use CED learning objectives for the topic — research if needed)
+- `learningTargets`: 2-3 targets (use CED learning objectives for the topic, research if needed)
 - `successCriteria`: 2-3 criteria
 - `collegeBoardKeyConcepts`: at least 2 entries with `code`, `theme`, `text`, `illustrativeExamples`
-- `stableImages`: object with keys `map`, `first10`, `contentDelivery`, `beSurreal`, `skill`, `checkpoint1`, `evidence`, `source`, `beInTheRoom`, `checkpoint2` — use placeholder Wikimedia Commons URLs relevant to the topic
+- `stableImages`: object with keys `map`, `first10`, `contentDelivery`, `beSurreal`, `skill`, `checkpoint1`, `evidence`, `source`, `beInTheRoom`, `checkpoint2`, use placeholder Wikimedia Commons URLs relevant to the topic
 - `map`: title, intro, url, sourceUrl, caption, notes array, key array, prompt
 - `first10`: title, embedUrl (pointing to the capture wrapper filename), note
 - `lecture`: title, intro, segments array (4 segments each with title, bullets, image)
@@ -59,9 +59,9 @@ Generate a scaffold `window.BEHISTORICAL_LESSON = { ... }` with:
 - `checkpoints`: array of exactly 2 checkpoint objects (Checkpoint 1 and Checkpoint 2) each with title, subtitle, prompt, responseType, learningTargets, successCriteria, terms, focus, cardDesc
 - `evidenceLab`: title, task, prompt
 - `primarySource`: title, intro, text, questions array
-- `beInTheRoom`: url (empty string — placeholder for future build)
+- `beInTheRoom`: url (empty string, placeholder for future build)
 
-Use real AP World History content from the CED for this topic. Do NOT leave placeholder text like "TODO" — generate historically accurate content.
+Use real AP World History content from the CED for this topic. Do NOT leave placeholder text like "TODO", generate historically accurate content.
 
 ### 3. Renderer config
 **Path:** `assets/data/lesson-{unitNum}-{topicSeq}-renderer-config.js`
@@ -101,7 +101,7 @@ Use the same CSS from an existing First & 10 page (e.g., `unit-7/first-and-10-to
 
 Use the exact pattern from `unit-7/first-and-10-topic-7-2-causes-wwi-capture.html`:
 - iframe src pointing to the standalone First & 10 page
-- `PREFILLED_FIRST10_FORM` URL generated using the same logic as `buildFormURL(topicKey, 'first10')` — must include Unit, Topic, Prompt ID (`{topicKey}-first10`), Response Type (`First and 10`)
+- `PREFILLED_FIRST10_FORM` URL generated using the same logic as `buildFormURL(topicKey, 'first10')`, must include Unit, Topic, Prompt ID (`{topicKey}-first10`), Response Type (`First and 10`)
 - `MAGICSCHOOL_URL` = `'https://student.magicschool.ai/s/login?joinCode=czwb9Q'`
 - Full `wireFirst10Capture()` function (copy from existing capture wrapper)
 

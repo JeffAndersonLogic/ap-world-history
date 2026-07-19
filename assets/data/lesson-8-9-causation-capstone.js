@@ -1,5 +1,5 @@
 // lesson-8-9-causation-capstone.js
-// Topic 8.9 — Causation in the Age of the Cold War and Decolonization
+// Topic 8.9, Causation in the Age of the Cold War and Decolonization
 // Base lesson data. Runtime-authoritative overrides in lesson-8-9-renderer-config.js.
 // Capstone topic: NO BeInTheRoom, NO Map module, NO BeSurreal, NO Evidence Lab,
 // NO Primary Source, NO Checkpoint 1. Custom 6-module variant per capstone rule.
@@ -38,7 +38,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Causation in the Age of the Cold War and Decolonization",
     subtitle: "Evaluating the Extent to Which the Effects of the Cold War Were Similar in the Eastern and Western Hemispheres",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Organize your thinking here — submit your final work in Canvas."
+    canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
@@ -66,7 +66,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Historical Developments"
     },
     {
-      criteria: "I can use specific evidence from at least two regions — one per hemisphere — to support or complicate a claim about the similarity of Cold War effects.",
+      criteria: "I can use specific evidence from at least two regions, one per hemisphere, to support or complicate a claim about the similarity of Cold War effects.",
       kc: "Evidence; Comparison",
       theme: "Historical Developments"
     },
@@ -201,7 +201,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "The Four Effect Categories: Economic, Political, Social, Cultural",
         bullets: [
-          "KC-6.2.IV.C identifies four categories of Cold War effect — economic, political, social, and cultural. These are not separate causes; they are dimensions of one rivalry's global impact.",
+          "KC-6.2.IV.C identifies four categories of Cold War effect, economic, political, social, and cultural. These are not separate causes; they are dimensions of one rivalry's global impact.",
           "Economic: arms spending diverted resources from civilian economies; superpowers used aid as leverage over client states.",
           "Political: competing alliance systems (NATO vs. Warsaw Pact), sponsored governments, and decolonization accelerated by Cold War pressure on European empires.",
           "Social: refugee crises from proxy wars, propaganda and censorship, gender mobilization for war production, and anti-war movements.",
@@ -211,7 +211,7 @@ window.BEHISTORICAL_LESSON = {
           title: "Fall of the Berlin Wall, 1989",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Thefalloftheberlinwall1989.JPG",
-          caption: "The fall of the Berlin Wall was a political AND cultural effect of the Cold War — and it occurred in the Eastern Hemisphere. A strong LEQ uses specific moments like this to anchor hemisphere comparisons."
+          caption: "The fall of the Berlin Wall was a political AND cultural effect of the Cold War, and it occurred in the Eastern Hemisphere. A strong LEQ uses specific moments like this to anchor hemisphere comparisons."
         }
       },
       {
@@ -219,7 +219,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "Decolonization (8.5): anti-imperialism in Asia and Africa accelerated by Cold War pressure on British and French empires.",
           "New states (8.6): boundary redrawing created displacement, state-led development (India's five-year plans, Egypt's Aswan Dam), and migration to metropoles.",
-          "Proxy wars (8.3): Korea (1950–53), Vietnam (1955–75), Angola (1975) — all Eastern Hemisphere theaters.",
+          "Proxy wars (8.3): Korea (1950–53), Vietnam (1955–75), Angola (1975), all Eastern Hemisphere theaters.",
           "Communism (8.4): Great Leap Forward in China; socialist redistribution in India, Egypt, and newly independent Africa.",
           "Soviet sphere (8.2, 8.8): Warsaw Pact states under Brezhnev Doctrine; Eastern European public discontent and 1989 revolutions leading to Soviet dissolution."
         ],
@@ -227,7 +227,7 @@ window.BEHISTORICAL_LESSON = {
           title: "Soviet withdrawal from Afghanistan, 1989",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Soviet_withdrawal_Afghanistan_1989.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Soviet_withdrawal_Afghanistan_1989.jpg",
-          caption: "The Soviet withdrawal from Afghanistan was an Eastern Hemisphere event with global Cold War significance — one of three causal strands in KC-6.2.IV.E that ended the superpower rivalry."
+          caption: "The Soviet withdrawal from Afghanistan was an Eastern Hemisphere event with global Cold War significance, one of three causal strands in KC-6.2.IV.E that ended the superpower rivalry."
         }
       },
       {
@@ -235,31 +235,31 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "Marshall Plan (8.1): U.S. economic reconstruction embedded American influence in Western Europe.",
           "NATO and U.S.-backed governments (8.2, 8.7): Chile (Pinochet coup, 1973), Guatemala (CIA coup, 1954), Nicaragua (Contra funding).",
-          "Cuba (8.4): Cuban Revolution (1959), Bay of Pigs, Cuban Missile Crisis — the Cold War in the Western Hemisphere at its most acute.",
-          "Social movements (8.7): civil rights and anti-war movements in the U.S. — the Cold War's social effects on the Western superpower itself.",
+          "Cuba (8.4): Cuban Revolution (1959), Bay of Pigs, Cuban Missile Crisis, the Cold War in the Western Hemisphere at its most acute.",
+          "Social movements (8.7): civil rights and anti-war movements in the U.S., the Cold War's social effects on the Western superpower itself.",
           "Non-alignment (8.2): some Latin American states sought Bandung-era alternatives; the Western Hemisphere was not monolithically pro-U.S."
         ],
         image: {
           title: "Reagan and Gorbachev, Geneva, 1985",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_1985.jpg",
-          caption: "Reagan-Gorbachev summits — Western and Eastern Hemisphere superpowers in direct diplomatic engagement — are also evidence of new global institutions (KC-6.3) emerging from Cold War competition."
+          caption: "Reagan-Gorbachev summits, Western and Eastern Hemisphere superpowers in direct diplomatic engagement, are also evidence of new global institutions (KC-6.3) emerging from Cold War competition."
         }
       },
       {
         title: "Evaluating the Extent: Writing the LEQ Thesis",
         bullets: [
           "'Evaluate the extent' requires a degree claim: to a great extent, a moderate extent, a limited extent. A degree claim IS your thesis.",
-          "Do NOT say 'partly similar and partly different' — that is a non-claim. Name the dominant pattern and acknowledge where it breaks.",
+          "Do NOT say 'partly similar and partly different', that is a non-claim. Name the dominant pattern and acknowledge where it breaks.",
           "Your thesis should name the categories or patterns that most strongly support your degree claim.",
           "Complexity move: acknowledge the strongest counterargument. If you argued 'largely similar,' what evidence would a historian who argued 'largely different' cite? Why does your claim still hold?",
-          "Contextualization: ground your argument in the postwar order (c. 1945) that made Cold War effects global — imperial exhaustion, superpower rivalry, nuclear deterrence, and the vacuum decolonization created."
+          "Contextualization: ground your argument in the postwar order (c. 1945) that made Cold War effects global, imperial exhaustion, superpower rivalry, nuclear deterrence, and the vacuum decolonization created."
         ],
         image: {
           title: "World map (geographic reference)",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:World_map_blank_without_borders.png",
-          caption: "A world map anchors hemisphere claims. Before writing your thesis, place your evidence geographically — Eastern or Western? Does the pattern hold in both?"
+          caption: "A world map anchors hemisphere claims. Before writing your thesis, place your evidence geographically, Eastern or Western? Does the pattern hold in both?"
         }
       }
     ],
@@ -267,32 +267,32 @@ window.BEHISTORICAL_LESSON = {
   },
 
   skillBuilder: {
-    title: "AP Skill Builder: Build the LEQ — Evaluate the Extent",
-    label: "LEQ construction — evaluate the extent (LO K)",
+    title: "AP Skill Builder: Build the LEQ, Evaluate the Extent",
+    label: "LEQ construction, evaluate the extent (LO K)",
     intro: "Use your completed Hemispheric Effects Matrix to plan each component of the AP 'evaluate the extent' LEQ before writing your full response in Checkpoint 2.",
     steps: [
       {
         label: "Contextualization",
-        text: " — Describe the postwar world order (c. 1945) that explains WHY Cold War competition had effects beyond Europe: imperial exhaustion, superpower rivalry, nuclear deterrence, and the vacuum that decolonization created. Contextualization must precede your argument, not repeat it."
+        text: ", Describe the postwar world order (c. 1945) that explains WHY Cold War competition had effects beyond Europe: imperial exhaustion, superpower rivalry, nuclear deterrence, and the vacuum that decolonization created. Contextualization must precede your argument, not repeat it."
       },
       {
-        label: "Thesis — degree claim",
-        text: " — 'To a [great/moderate/limited] extent, the effects of the Cold War were [similar/different] in the Eastern and Western Hemispheres because [name the dominant patterns].' A vague 'partly similar, partly different' earns no AP credit. Your thesis must commit to a degree."
+        label: "Thesis, degree claim",
+        text: ", 'To a [great/moderate/limited] extent, the effects of the Cold War were [similar/different] in the Eastern and Western Hemispheres because [name the dominant patterns].' A vague 'partly similar, partly different' earns no AP credit. Your thesis must commit to a degree."
       },
       {
-        label: "Evidence Paragraph 1 — Eastern Hemisphere",
-        text: " — Use at least two specific pieces of evidence from Topics 8.2–8.8 (proxy wars, decolonization, new states, communism, Soviet dissolution). Explain HOW each piece supports your thesis — mechanism, not just naming."
+        label: "Evidence Paragraph 1, Eastern Hemisphere",
+        text: ", Use at least two specific pieces of evidence from Topics 8.2–8.8 (proxy wars, decolonization, new states, communism, Soviet dissolution). Explain HOW each piece supports your thesis, mechanism, not just naming."
       },
       {
-        label: "Evidence Paragraph 2 — Western Hemisphere",
-        text: " — Use at least two specific pieces of evidence from Topics 8.1–8.8 (Marshall Plan, NATO, CIA-backed regimes, Cuba, civil rights/anti-war movements). Explain HOW each piece supports your thesis."
+        label: "Evidence Paragraph 2, Western Hemisphere",
+        text: ", Use at least two specific pieces of evidence from Topics 8.1–8.8 (Marshall Plan, NATO, CIA-backed regimes, Cuba, civil rights/anti-war movements). Explain HOW each piece supports your thesis."
       },
       {
         label: "Complexity move",
-        text: " — Acknowledge the strongest counterargument: if you argued 'largely similar,' what would a 'largely different' historian cite? Explain why your original claim still holds more explanatory power despite that evidence."
+        text: ", Acknowledge the strongest counterargument: if you argued 'largely similar,' what would a 'largely different' historian cite? Explain why your original claim still holds more explanatory power despite that evidence."
       }
     ],
-    prompt: "Using your Hemispheric Effects Matrix, plan each of the five LEQ components above. You do not need to write full paragraphs yet — name your specific evidence for each paragraph, draft your thesis sentence, and identify your complexity move before writing the full response in Checkpoint 2."
+    prompt: "Using your Hemispheric Effects Matrix, plan each of the five LEQ components above. You do not need to write full paragraphs yet, name your specific evidence for each paragraph, draft your thesis sentence, and identify your complexity move before writing the full response in Checkpoint 2."
   },
 
   checkpoints: [
@@ -308,8 +308,8 @@ window.BEHISTORICAL_LESSON = {
       focus: ["Geographic accuracy", "Specific evidence", "Explained comparison"]
     },
     {
-      title: "Checkpoint 2: Evaluate the Extent — Full LEQ",
-      subtitle: "Checks all three Learning Targets (LO K — full 'evaluate the extent' synthesis).",
+      title: "Checkpoint 2: Evaluate the Extent, Full LEQ",
+      subtitle: "Checks all three Learning Targets (LO K, full 'evaluate the extent' synthesis).",
       cardDesc: "AP-style LEQ: evaluate the extent to which Cold War effects were similar in the Eastern and Western Hemispheres, using evidence from at least two effect categories and both hemispheres.",
       learningTargets: [
         "I can explain how the Cold War extended beyond ideology to have economic, political, social, and cultural effects globally.",
@@ -318,16 +318,16 @@ window.BEHISTORICAL_LESSON = {
       ],
       successCriteria: [
         "I can categorize Cold War effects by hemisphere and effect type (economic, political, social, cultural).",
-        "I can use specific evidence from at least two regions — one per hemisphere — to support my thesis.",
+        "I can use specific evidence from at least two regions, one per hemisphere, to support my thesis.",
         "I can write an 'evaluate the extent' thesis with a defensible degree claim and acknowledge a counterargument."
       ],
-      prompt: "Evaluate the extent to which the effects of the Cold War were similar in the Eastern and Western Hemispheres. In your response: (1) provide meaningful contextualization that explains why Cold War competition produced global effects beyond its origins in postwar Europe; (2) state a defensible thesis with a degree qualifier — whether the effects were largely similar, largely different, or mixed — and name the specific patterns that support your claim; (3) use specific historical evidence from at least two of the four effect categories in KC-6.2.IV.C (economic, political, social, cultural) and from both hemispheres; (4) explain the mechanism for each piece of evidence — not just what happened but HOW it demonstrates similarity or difference; (5) acknowledge the strongest counterargument to your thesis and explain why your degree claim remains more persuasive despite that evidence.",
+      prompt: "Evaluate the extent to which the effects of the Cold War were similar in the Eastern and Western Hemispheres. In your response: (1) provide meaningful contextualization that explains why Cold War competition produced global effects beyond its origins in postwar Europe; (2) state a defensible thesis with a degree qualifier, whether the effects were largely similar, largely different, or mixed, and name the specific patterns that support your claim; (3) use specific historical evidence from at least two of the four effect categories in KC-6.2.IV.C (economic, political, social, cultural) and from both hemispheres; (4) explain the mechanism for each piece of evidence, not just what happened but HOW it demonstrates similarity or difference; (5) acknowledge the strongest counterargument to your thesis and explain why your degree claim remains more persuasive despite that evidence.",
       responseType: "Checkpoint 2",
       terms: ["economic", "political", "social", "cultural", "eastern hemisphere", "western hemisphere", "extent", "similar", "different", "marshall plan", "nato", "warsaw pact", "decolonization", "proxy war", "korea", "vietnam", "cuba", "angola", "chile", "great leap forward", "nonalignment", "civil rights", "gorbachev", "contextualization", "thesis", "mechanism", "because", "caused", "degree", "to a"],
       focus: [
-        "Contextualization must describe a condition that PRECEDED Cold War effects — the postwar order, not World War II itself. Explain why the postwar configuration (superpower rivalry, imperial exhaustion, nuclear deterrence) made Cold War competition global.",
-        "Thesis degree claim: 'To a great/moderate/limited extent' must be explicit. Avoid 'partly similar and partly different' — that is not a defensible historical claim.",
-        "Evidence mechanism: A Warsaw Pact state and a NATO state both had political sovereignty constrained by a superpower — that structural parallel IS the similarity you are arguing. Naming evidence is not enough; explain what it proves.",
+        "Contextualization must describe a condition that PRECEDED Cold War effects, the postwar order, not World War II itself. Explain why the postwar configuration (superpower rivalry, imperial exhaustion, nuclear deterrence) made Cold War competition global.",
+        "Thesis degree claim: 'To a great/moderate/limited extent' must be explicit. Avoid 'partly similar and partly different', that is not a defensible historical claim.",
+        "Evidence mechanism: A Warsaw Pact state and a NATO state both had political sovereignty constrained by a superpower, that structural parallel IS the similarity you are arguing. Naming evidence is not enough; explain what it proves.",
         "Counterargument: if you argue similarity, what evidence points toward difference (e.g., decolonization was an Eastern Hemisphere phenomenon with no Western Hemisphere parallel)? Engage it directly, then explain why your claim still holds."
       ]
     }

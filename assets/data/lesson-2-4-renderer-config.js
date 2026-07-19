@@ -18,7 +18,7 @@
     {
       code: 'KC-3.1.I.E.ii',
       theme: 'Governance',
-      text: 'The expansion of empires—including Mali in West Africa—facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.',
+      text: 'The expansion of empires, including Mali in West Africa, facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.',
       illustrativeExamples: []
     }
   ];
@@ -36,7 +36,7 @@
       { label: 'Trans-Saharan routes', detail: 'Major caravan routes crossed the Sahara connecting the Mediterranean coast to the Sahel and West African states.' },
       { label: 'West African goldfields', detail: 'The Wangara gold-producing region in West Africa supplied gold that was essential to Mediterranean and Islamic economies.' },
       { label: 'Salt mines', detail: 'Saharan salt deposits at Taghaza were as valuable as gold to West African societies that lacked dietary salt.' },
-      { label: 'Geographic takeaway', detail: 'The Sahara was not a barrier but a connector — camel technology made the desert crossable and created mutual dependency between north and south.' }
+      { label: 'Geographic takeaway', detail: 'The Sahara was not a barrier but a connector, camel technology made the desert crossable and created mutual dependency between north and south.' }
     ]
   };
 
@@ -97,7 +97,7 @@
       prompt: 'Explain two effects of trans-Saharan trade on West African societies. Use specific evidence such as the Mali Empire, Mansa Musa, or the spread of Islam.',
       responseType: 'Checkpoint 2',
       terms: ['Mali Empire', 'Mansa Musa', 'Timbuktu', 'Islam', 'hajj', 'mosque', 'scholarship', 'gold'],
-      focus: ['Name at least two effects of trans-Saharan trade on West Africa.', 'Use specific evidence — a ruler, city, religion, or institution.', 'Explain how each effect changed West African society or its connections to the wider world.']
+      focus: ['Name at least two effects of trans-Saharan trade on West Africa.', 'Use specific evidence, a ruler, city, religion, or institution.', 'Explain how each effect changed West African society or its connections to the wider world.']
     }
   ];
 })();

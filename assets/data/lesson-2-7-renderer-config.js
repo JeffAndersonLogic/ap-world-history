@@ -12,7 +12,7 @@
     {
       code: 'KC-3.1.I.A.i',
       theme: 'Networks of Exchange',
-      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.',
+      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Silk Roads, promoting the growth of powerful new trading cities.',
       illustrativeExamples: []
     },
     {
@@ -72,7 +72,7 @@
 
   lesson.beSurreal = {
     title: 'BeSurreal: Ibn Battuta Compared All Three',
-    text: 'Ibn Battuta of Morocco traveled on all three trade networks — he crossed the Sahara to Mali, sailed the Indian Ocean from East Africa to India and Southeast Asia, and traveled overland through Persia and Central Asia. No one in the 14th century had a better comparative view of Afro-Eurasian trade. His accounts reveal that the three networks were connected nodes in a single interlocking system, not isolated routes.',
+    text: 'Ibn Battuta of Morocco traveled on all three trade networks, he crossed the Sahara to Mali, sailed the Indian Ocean from East Africa to India and Southeast Asia, and traveled overland through Persia and Central Asia. No one in the 14th century had a better comparative view of Afro-Eurasian trade. His accounts reveal that the three networks were connected nodes in a single interlocking system, not isolated routes.',
     prompt: 'If you could travel all three networks as Ibn Battuta did, what single most important similarity and one most important difference would you report?'
   };
 
@@ -109,7 +109,7 @@
       prompt: 'Identify two differences between any two of the three trade networks. Use specific evidence and explain why each difference mattered historically.',
       responseType: 'Checkpoint 2',
       terms: ['difference', 'technology', 'geography', 'goods', 'camel', 'dhow', 'monsoon', 'silk', 'gold', 'spices'],
-      focus: ['State each difference directly and clearly.', 'Use specific evidence — technology, goods, or cultural effects.', 'Explain the historical significance of each difference.']
+      focus: ['State each difference directly and clearly.', 'Use specific evidence, technology, goods, or cultural effects.', 'Explain the historical significance of each difference.']
     }
   ];
 })();

@@ -1,4 +1,4 @@
-# BeHistorical Teacher Hub — Google Apps Script Analysis Layer
+# BeHistorical Teacher Hub, Google Apps Script Analysis Layer
 
 This folder contains the first functional prototype for connecting BeHistorical Google Form responses to the Teacher Hub.
 
@@ -47,7 +47,7 @@ AI Coaching Reflection
 
 The script also recognizes some alternate header names, but the exact names above are strongly recommended.
 
-## Prompt Registry — Expected Values by Topic
+## Prompt Registry, Expected Values by Topic
 
 Unit:
 
@@ -55,7 +55,7 @@ Unit:
 Unit 1 - The Global Tapestry
 ```
 
-### Topic 1.1 — Song China
+### Topic 1.1, Song China
 
 Topic:
 
@@ -74,7 +74,7 @@ Prompt IDs:
 1.1-checkpoint-2
 ```
 
-### Topic 1.4 — State Building in the Americas
+### Topic 1.4, State Building in the Americas
 
 Topic:
 

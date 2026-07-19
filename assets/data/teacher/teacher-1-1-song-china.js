@@ -2,7 +2,7 @@ window.BEHISTORICAL_TEACHER_TOPICS = window.BEHISTORICAL_TEACHER_TOPICS || {};
 
 window.BEHISTORICAL_TEACHER_TOPICS['1.1'] = {
   meta: {
-    unit: 'Unit 1 — The Global Tapestry',
+    unit: 'Unit 1, The Global Tapestry',
     topic: '1.1',
     title: 'Developments in East Asia',
     subtitle: 'Song China, c. 1200–1450',
@@ -81,8 +81,8 @@ window.BEHISTORICAL_TEACHER_TOPICS['1.1'] = {
     { name: 'Checkpoint 2', description: 'Topic 1.1 · Checkpoint 2 / Exit Ticket · Prompt ID: 1.1-checkpoint-2', url: 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+1+-+The+Global+Tapestry&entry.187055090=1.1+-+Song+China&entry.1549761827=1.1-checkpoint-2&entry.2107637366=Checkpoint+2' }
   ],
   canvas: {
-    title: 'Topic 1.1 — Song China: BeHistorical Practice + Reflection',
-    workflow: ['BeHistorical — interactive lesson engine and thinking space.', 'MagicSchool — coaching layer that asks questions and strengthens student reasoning.', 'Canvas — official graded submission home base.'],
+    title: 'Topic 1.1, Song China: BeHistorical Practice + Reflection',
+    workflow: ['BeHistorical, interactive lesson engine and thinking space.', 'MagicSchool, coaching layer that asks questions and strengthens student reasoning.', 'Canvas, official graded submission home base.'],
     reminder: 'All response areas should tell students: Organize your thinking here. Your final submission goes in Canvas.'
   }
 };
