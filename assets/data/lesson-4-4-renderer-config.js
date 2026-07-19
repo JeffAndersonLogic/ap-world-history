@@ -97,7 +97,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: The Estado da India and Spanish Conquest',
-      subtitle: 'Checks Learning Targets 1 and 2, Portuguese and Spanish models of empire.',
+      subtitle: 'Checks Learning Targets 1 and 2 — Portuguese and Spanish models of empire.',
       cardDesc: 'Fortified ports, sea lane control, conquest, encomienda, and viceroyalties.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
@@ -108,7 +108,7 @@
     },
     {
       title: 'Checkpoint 2: The Joint-Stock Company and Comparing Models',
-      subtitle: 'Checks Learning Target 3, Dutch/British model and comparison across all three.',
+      subtitle: 'Checks Learning Target 3 — Dutch/British model and comparison across all three.',
       cardDesc: 'VOC, British EIC, joint-stock companies, and comparing three models of maritime empire.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],

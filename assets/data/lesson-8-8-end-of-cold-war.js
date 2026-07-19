@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "KC-6.2.IV.E identifies three causal strands that led to the end of the Cold War. The AP skill is not to list them but to explain how each one operated, what it produced, why it mattered, and how the three strands compounded each other. Use these lecture cards to build a causal argument, not just a chronology.",
     videos: [
       {
-        title: "Heimler's History, Topic 8.8: End of the Cold War",
+        title: "Heimler's History — Topic 8.8: End of the Cold War",
         url: "https://youtu.be/placeholder-8-8",
         youtubeId: "placeholder-8-8",
         prompt: "As you watch, track the three causal strands from KC-6.2.IV.E: (1) U.S. military and technological development, what specific pressures did this create for the Soviet system? (2) The Soviet invasion of Afghanistan, what were the costs and what did the withdrawal signal? (3) Public discontent and economic weakness, how did Gorbachev's reforms have unintended consequences, and what produced the 1989 revolutions?"

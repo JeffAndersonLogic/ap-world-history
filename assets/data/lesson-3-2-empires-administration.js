@@ -105,7 +105,7 @@ window.BEHISTORICAL_LESSON = {
           "**Loyalty** was the second problem. Every emperor needed administrators and soldiers who were loyal to him personally, not to local lords, tribal leaders, or rival nobles who might challenge imperial authority. Administrative innovation was largely about solving the loyalty problem."
         ],
         image: {
-          title: "Topkapi Palace, Istanbul, seat of Ottoman power",
+          title: "Topkapi Palace, Istanbul — seat of Ottoman power",
           caption: "The Ottoman imperial court at Topkapi was the administrative heart of an empire spanning three continents. The palace trained and housed the devshirme recruits who staffed the imperial bureaucracy.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Istanbul.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Istanbul.jpg"

@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 8: Cold War and Decolonization",
     topic: "Topic 8.5",
     title: "Decolonization After 1900",
-    subtitle: "How nationalist leaders, mass movements, and the legacies of inherited imperial boundaries drove the end of formal empire across Asia and Africa, through negotiation, armed struggle, and the unresolved conflicts that followed",
+    subtitle: "How nationalist leaders, mass movements, and the legacies of inherited imperial boundaries drove the end of formal empire across Asia and Africa — through negotiation, armed struggle, and the unresolved conflicts that followed",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -125,7 +125,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace how nationalist leaders built independence movements, why some colonies negotiated independence while others fought for it, and how the boundaries drawn by colonial empires became fault lines for new conflicts after independence.",
     videos: [
       {
-        title: "Heimler's History, Topic 8.5: Decolonization After 1900",
+        title: "Heimler's History — Topic 8.5: Decolonization After 1900",
         url: "https://youtu.be/1l8_KGvzrFQ",
         youtubeId: "1l8_KGvzrFQ",
         prompt: "Use this clip to review the key nationalist leaders, the negotiated vs. armed-struggle distinction, and the regional/ethnic movements that challenged post-independence boundaries. Listen especially for how the CED comparison question works: what conditions pushed a colony toward negotiation vs. armed resistance?"
@@ -171,7 +171,7 @@ window.BEHISTORICAL_LESSON = {
           "The **Biafra secessionist movement** demonstrated the violence possible when post-independence states refused to accept challenges to colonial-era boundaries. **Nigeria** gained independence from Britain in 1960 as a federation of three major ethnic groups: Hausa-Fulani (north), Yoruba (southwest), and Igbo (southeast). The boundaries were British, the federation was artificial, and political and economic competition between groups was intense. After a 1966 military coup, anti-Igbo pogroms drove Igbo people back to the southeast, and the Igbo-majority southeastern region declared independence as the **Republic of Biafra** in 1967. The **Biafran War (1967–1970)** killed an estimated 1–3 million people, many from the famine blockade imposed by the Nigerian government. Nigeria's reunification preserved the colonial-era boundary, but at catastrophic human cost."
         ],
         image: {
-          title: "Partition of India, August 1947, refugees crossing the border",
+          title: "Partition of India, August 1947 — refugees crossing the border",
           caption: "Millions of people displaced during the 1947 Partition of India and Pakistan, one of the largest forced migrations in history, produced by the redrawing of colonial-era boundaries along religious lines when Britain withdrew.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Partition_of_India_1947_mass_migration.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Partition_of_India_1947_mass_migration.jpg"

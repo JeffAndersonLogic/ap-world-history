@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 7: Global Conflict",
     topic: "Topic 7.3",
     title: "Conducting World War I",
-    subtitle: "The first total war: how governments mobilized whole societies, home countries and colonies, and how new military technology drove casualties to unprecedented levels",
+    subtitle: "The first total war: how governments mobilized whole societies — home countries and colonies — and how new military technology drove casualties to unprecedented levels",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -103,7 +103,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to track how governments waged the first total war, mobilizing civilians, industries, art, media, and colonial empires, and how new military technology drove casualties to levels no one had imagined.",
     videos: [
       {
-        title: "Heimler's History, AP World Topic 7.3",
+        title: "Heimler's History — AP World Topic 7.3",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.3+Conducting+World+War+I",
         previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg",
         prompt: "Watch for the meaning of total war, the strategies governments used to mobilize home and colonial populations, and how new technology raised casualty levels."
@@ -160,7 +160,7 @@ window.BEHISTORICAL_LESSON = {
           "Intensified nationalism made compromise politically impossible: after so much sacrifice in a war for survival, no government could settle for less than victory."
         ],
         image: {
-          title: "Uncle Sam, 'I Want You'",
+          title: "Uncle Sam — 'I Want You'",
           caption: "James Montgomery Flagg's Uncle Sam (1917), the nation personified, recruiting its citizens for a war of national destiny.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Unclesamwantyou.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Unclesamwantyou.jpg"

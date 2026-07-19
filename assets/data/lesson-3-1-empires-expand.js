@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain how gunpowder transformed military conquest after c. 1450, identify the major land-based empires and their geographic reach, and analyze why the Ottoman conquest of Constantinople in 1453 mattered for Eurasian history.",
     videos: [
       {
-        title: "Heimler's History, Topic 3.1",
+        title: "Heimler's History — Topic 3.1",
         url: "https://youtu.be/placeholder-3-1",
         youtubeId: "placeholder-3-1",
         prompt: "Use this clip to review how gunpowder technology enabled imperial expansion and why the Ottoman Empire's growth matters for AP World History."

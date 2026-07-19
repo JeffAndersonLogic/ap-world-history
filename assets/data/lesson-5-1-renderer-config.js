@@ -85,7 +85,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: The Philosophes and Their Core Ideas',
-      subtitle: 'Checks Learning Target 1, Enlightenment ideas and their challenge to traditional authority.',
+      subtitle: 'Checks Learning Target 1 — Enlightenment ideas and their challenge to traditional authority.',
       cardDesc: 'Natural rights, social contract, popular sovereignty, separation of powers, and the philosophes who articulated them.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
@@ -96,7 +96,7 @@
     },
     {
       title: 'Checkpoint 2: The Spread and Limits of Enlightenment Universalism',
-      subtitle: 'Checks Learning Target 2, how Enlightenment ideas spread and why their universalism was limited.',
+      subtitle: 'Checks Learning Target 2 — how Enlightenment ideas spread and why their universalism was limited.',
       cardDesc: 'Print culture, salons, the Encyclopédie, and the exclusion of women, enslaved people, and colonial subjects.',
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],

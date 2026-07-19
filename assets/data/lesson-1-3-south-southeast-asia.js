@@ -168,7 +168,7 @@ window.BEHISTORICAL_LESSON = {
     ],
     videos: [
       {
-        title: 'Heimler AP World 1.3, South and Southeast Asia',
+        title: 'Heimler AP World 1.3 — South and Southeast Asia',
         url: 'https://www.youtube.com/results?search_query=Heimler+AP+World+1.3+South+and+Southeast+Asia',
         previewImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
         prompt: 'Watch for states, religions, and Indian Ocean trade connections. Pause and note examples of the Bhakti movement, Sufism, and Buddhist monasticism.'
@@ -194,7 +194,7 @@ window.BEHISTORICAL_LESSON = {
   checkpoints: [
     {
       title: 'Checkpoint 1: Belief and State Power',
-      subtitle: 'Checks religious and cultural developments, LO G.',
+      subtitle: 'Checks religious and cultural developments — LO G.',
       prompt: 'Explain how rulers in South or Southeast Asia used religion or monumental architecture to strengthen political authority between c. 1200 and c. 1450.',
       responseType: 'Checkpoint 1',
       learningTargets: ['I can explain how belief systems shaped society and state power in South and Southeast Asia.'],
@@ -209,7 +209,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'Checkpoint 2: Trade, Geography, and Cultural Exchange',
-      subtitle: 'Checks trade, geography, and political power, LO H.',
+      subtitle: 'Checks trade, geography, and political power — LO H.',
       prompt: 'Explain how Indian Ocean trade helped spread goods, religions, and cultural practices in South and Southeast Asia between c. 1200 and c. 1450.',
       responseType: 'Checkpoint 2',
       learningTargets: ['I can explain how trade shaped regional states and cultural exchange in South and Southeast Asia.'],

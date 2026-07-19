@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain how the Mongols built the largest contiguous land empire in world history, how they governed it, and how Mongol rule transformed Eurasian networks of trade and exchange from c. 1200 to c. 1450.",
     videos: [
       {
-        title: 'The MONGOL Empire, Explained [AP World History Review, Unit 2 Topic 2]',
+        title: 'The MONGOL Empire, Explained [AP World History Review—Unit 2 Topic 2]',
         url: 'https://youtu.be/KHJLZBXUyzo',
         youtubeId: 'KHJLZBXUyzo',
         prompt: 'Track how Mongol rule changed economic exchange and accelerated cultural transfers across Eurasia.'

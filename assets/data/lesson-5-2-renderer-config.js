@@ -78,7 +78,7 @@
 
   lesson.skillBuilder = {
     label: 'Comparison practice',
-    title: 'Comparing the Atlantic Revolutions: Who Applied Enlightenment Ideals, and Who Did Not?',
+    title: 'Comparing the Atlantic Revolutions: Who Applied Enlightenment Ideals — and Who Did Not?',
     intro: 'Comparison for Topic 5.2 requires identifying both similarities and differences among the Atlantic Revolutions, and explaining what those comparisons reveal. The most common AP error is describing each revolution separately without identifying the specific similarity or difference being compared. A strong comparison argument uses the structure: "Both X and Y did [similarity], but X differed from Y in [difference], which reveals [broader point]."',
     steps: [
       { label: 'Identify a meaningful similarity (with evidence)', text: 'Similarity: All four Atlantic Revolutions drew on Enlightenment natural rights theory to justify the overthrow of existing authority. Evidence: The American Declaration of Independence (1776) cited Locke\'s natural rights language almost verbatim; the French Declaration of the Rights of Man (1789) declared universal natural rights; Toussaint Louverture\'s writings explicitly invoked French revolutionary principles; Bolívar\'s proclamations cited both Locke and Rousseau. The similarity is not superficial, the same vocabulary appeared in all four because all four revolutionaries were reading the same Enlightenment texts.' },
@@ -91,7 +91,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: The Atlantic Revolutions and the Haitian Revolution',
-      subtitle: 'Checks Learning Targets 1 and 2, Atlantic Revolutions and the most radical application of Enlightenment ideas.',
+      subtitle: 'Checks Learning Targets 1 and 2 — Atlantic Revolutions and the most radical application of Enlightenment ideas.',
       cardDesc: 'American, French, Haitian, and Latin American revolutions, causes, outcomes, and the question of who was included.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
@@ -102,7 +102,7 @@
     },
     {
       title: 'Checkpoint 2: Nationalism and Its Impact on Multiethnic Empires',
-      subtitle: 'Checks Learning Target 3, nationalism as a destabilizing force in 19th-century politics.',
+      subtitle: 'Checks Learning Target 3 — nationalism as a destabilizing force in 19th-century politics.',
       cardDesc: 'Nationalism, self-determination, and the challenge to Ottoman, Habsburg, and Russian empires.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],

@@ -169,9 +169,9 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use the evidence below to connect rulers' religious policies to broader historical arguments about how land-based empires maintained power, managed diversity, and came into conflict.",
     prompt: "Choose one piece of evidence and explain how it supports a claim about how rulers used religion to legitimize authority, manage diverse populations, or wage political conflict.",
     items: [
-      { title: "Din-i-Ilahi, Akbar's syncretic religious movement", detail: "Evidence of a ruler deliberately constructing a new religious synthesis to signal tolerance and draw diverse subjects into a shared imperial identity, and of the limits of that strategy when it attracted few genuine adherents." },
-      { title: "Ottoman Sultan as Caliph, using Sunni leadership for legitimacy", detail: "Evidence that religious titles and roles were political tools: controlling Mecca and Medina and claiming the caliphate gave Ottoman rulers authority that extended beyond military power alone, projecting influence across the Muslim world." },
-      { title: "Battle of Chaldiran (1514), Sunni-Shia conflict as imperial warfare", detail: "Evidence that religious difference was not merely a backdrop to political rivalry but could be the direct cause of military conflict, with the Ottoman sultan framing the invasion of Safavid Persia explicitly as a war against heresy." }
+      { title: "Din-i-Ilahi — Akbar's syncretic religious movement", detail: "Evidence of a ruler deliberately constructing a new religious synthesis to signal tolerance and draw diverse subjects into a shared imperial identity, and of the limits of that strategy when it attracted few genuine adherents." },
+      { title: "Ottoman Sultan as Caliph — using Sunni leadership for legitimacy", detail: "Evidence that religious titles and roles were political tools: controlling Mecca and Medina and claiming the caliphate gave Ottoman rulers authority that extended beyond military power alone, projecting influence across the Muslim world." },
+      { title: "Battle of Chaldiran (1514) — Sunni-Shia conflict as imperial warfare", detail: "Evidence that religious difference was not merely a backdrop to political rivalry but could be the direct cause of military conflict, with the Ottoman sultan framing the invasion of Safavid Persia explicitly as a war against heresy." }
     ]
   },
 

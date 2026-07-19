@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 4: Transoceanic Interconnections",
     topic: "Topic 4.3",
     title: "Columbian Exchange",
-    subtitle: "How contact between Eastern and Western Hemispheres after 1492 transferred plants, animals, diseases, and people, and produced the largest demographic catastrophe in human history",
+    subtitle: "How contact between Eastern and Western Hemispheres after 1492 transferred plants, animals, diseases, and people — and produced the largest demographic catastrophe in human history",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -118,7 +118,7 @@ window.BEHISTORICAL_LESSON = {
           "The crop exchange was not symmetric in its effects: New World crops generally increased populations in regions where they spread, while Old World introductions (especially animals and pathogens) decimated populations in the Americas. The net demographic effect of the Columbian Exchange was to dramatically increase Afro-Eurasian populations over the long term while devastating the Americas in the short and medium term."
         ],
         image: {
-          title: "Waldseemüller Map, the world before and after contact",
+          title: "Waldseemüller Map — the world before and after contact",
           caption: "The 1507 Waldseemüller map represents the moment just before the full consequences of transoceanic contact became apparent. Within decades of this map, the biological exchanges it set in motion would transform every ecosystem on earth.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
@@ -133,7 +133,7 @@ window.BEHISTORICAL_LESSON = {
           "The scale of the catastrophe defies easy comprehension: historians estimate that **50–90% of indigenous American populations died within the century following European contact**, from a pre-contact population that may have been 50–70 million people. This demographic collapse was not primarily caused by European military violence; it was caused by pathogens that traveled invisibly ahead of any army, killing populations that had no defense against them."
         ],
         image: {
-          title: "Florentine Codex, Smallpox in Tenochtitlan",
+          title: "Florentine Codex — Smallpox in Tenochtitlan",
           caption: "An illustration from the Florentine Codex (compiled c. 1550–1580), depicting the smallpox epidemic in Tenochtitlan. This indigenous Nahuatl source, compiled by Aztec informants under the direction of Friar Sahagún, provides one of the most direct accounts of the epidemic's devastation.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
@@ -148,7 +148,7 @@ window.BEHISTORICAL_LESSON = {
           "**Environmental transformation** accompanied human demographic change: introduced livestock overgrazed native vegetation; introduced Old World weeds and plants replaced native species; the depopulation of previously farmed land allowed forest regrowth across vast areas of the Americas. European observers in the 17th and 18th centuries who described 'virgin wilderness' were often looking at land that had been actively farmed and managed for centuries before epidemic disease had removed its human inhabitants."
         ],
         image: {
-          title: "Casta Painting, Colonial Social Hierarchy",
+          title: "Casta Painting — Colonial Social Hierarchy",
           caption: "A casta painting from colonial Mexico, depicting the elaborate racial hierarchy that developed from the mixture of European, indigenous, and African peoples in colonial Spanish America, itself a direct consequence of the demographic and social transformations set in motion by the Columbian Exchange.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
@@ -177,14 +177,14 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use the evidence below to analyze specific consequences of the Columbian Exchange. Strong historical analysis connects individual pieces of evidence to broader patterns, disease to demographic collapse, demographic collapse to labor shortage, labor shortage to the slave trade.",
     prompt: "Choose one piece of evidence and explain how it illustrates a specific consequence of the Columbian Exchange. Connect your evidence to a broader historical argument about how the exchange transformed global demographics, economics, or social structures.",
     items: [
-      { title: "Florentine Codex, indigenous account of smallpox in Tenochtitlan", detail: "Evidence of the disease catastrophe from an indigenous Nahuatl perspective, compiled by Aztec informants under Friar Sahagún. This source describes the physical symptoms and the social chaos of epidemic, bodies too numerous to bury, healers unable to treat what they had never seen before. Evaluate both what this source reveals and what it represents as an act of indigenous historical documentation." },
-      { title: "Potosí silver production records, 8 million enslaved and coerced workers", detail: "Evidence that the extraction of American silver required an enormous forced labor system, at Potosí, the mita system coerced indigenous workers into mining under conditions that killed tens of thousands. Connect this to the broader pattern: American resource extraction required labor; demographic collapse eliminated the original labor pool; that gap was filled by coerced labor." },
-      { title: "The Irish potato famine (1845–1852), 1 million dead, 2 million emigrated", detail: "Evidence of the long-term consequences of the Columbian Exchange: the potato, a New World crop, had become so essential to Irish agricultural survival by the 19th century that a single pathogen (potato blight) caused the deaths of 1 million people and the emigration of 2 million more. This demonstrates how thoroughly the crop transfers of the Exchange had restructured the economies and food security of receiving regions." }
+      { title: "Florentine Codex — indigenous account of smallpox in Tenochtitlan", detail: "Evidence of the disease catastrophe from an indigenous Nahuatl perspective, compiled by Aztec informants under Friar Sahagún. This source describes the physical symptoms and the social chaos of epidemic, bodies too numerous to bury, healers unable to treat what they had never seen before. Evaluate both what this source reveals and what it represents as an act of indigenous historical documentation." },
+      { title: "Potosí silver production records — 8 million enslaved and coerced workers", detail: "Evidence that the extraction of American silver required an enormous forced labor system, at Potosí, the mita system coerced indigenous workers into mining under conditions that killed tens of thousands. Connect this to the broader pattern: American resource extraction required labor; demographic collapse eliminated the original labor pool; that gap was filled by coerced labor." },
+      { title: "The Irish potato famine (1845–1852) — 1 million dead, 2 million emigrated", detail: "Evidence of the long-term consequences of the Columbian Exchange: the potato, a New World crop, had become so essential to Irish agricultural survival by the 19th century that a single pathogen (potato blight) caused the deaths of 1 million people and the emigration of 2 million more. This demonstrates how thoroughly the crop transfers of the Exchange had restructured the economies and food security of receiving regions." }
     ]
   },
 
   primarySource: {
-    title: "Primary Source: Florentine Codex, The Smallpox Epidemic in Tenochtitlan, c. 1520",
+    title: "Primary Source: Florentine Codex — The Smallpox Epidemic in Tenochtitlan, c. 1520",
     intro: "The Florentine Codex was compiled by Friar Bernardino de Sahagún between c. 1550 and 1580, working with Aztec informants who described events from their own perspective in Nahuatl. Book 12 describes the Spanish conquest of Tenochtitlan, including the smallpox epidemic of 1520. This adapted passage reflects the Nahuatl account of the epidemic.",
     text: "Before the Spanish appeared to us, first there came to be prevalent a great sickness, a plague. It was in Tepeilhuitl that it originated, that it spread over the people, and it greatly afflicted them. It covered many people; it spread over them everywhere. It caused great havoc among them; many people died of it. They could not walk; they only lay in their resting places and beds. They could not move; they could not stir; they could not change position, nor lie on one side, nor face down, nor on their backs. And if they stirred, much did they cry out. Great was its destruction. Covered, mantled with pustules, very many people died of them. And very many starved; there was death from hunger, for none could take care of the sick; nothing could be done for them. And on some the pustules were widely separated; they suffered not greatly, neither did many of them die. Yet many people's faces were spoiled; some lost an eye, others were blinded.",
     questions: [

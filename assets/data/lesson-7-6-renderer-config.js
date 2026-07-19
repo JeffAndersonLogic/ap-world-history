@@ -86,7 +86,7 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Conditions, Peace, Depression, and Empire',
+      title: 'Checkpoint 1: The Conditions — Peace, Depression, and Empire',
       subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
       cardDesc: 'The unsustainable peace, the Great Depression, and continued imperialist aspirations.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
@@ -97,7 +97,7 @@
       focus: ['Tie the Treaty of Versailles to humiliation, economic burden, and fertile ground for radical movements.', 'Explain how the Great Depression discredited democracies and made extremism attractive.', 'Connect continued imperialist aspirations to aggressive militarism in Europe, Africa, and Asia.']
     },
     {
-      title: 'Checkpoint 2: "Especially", The Rise of the Regimes',
+      title: 'Checkpoint 2: "Especially" — The Rise of the Regimes',
       subtitle: 'Checks Learning Target 3 and Success Criteria 3.',
       cardDesc: 'Hitler, the Nazi regime, and evaluating the CED\'s causal weighting.',
       learningTargets: [lesson.learningTargets[2].target],

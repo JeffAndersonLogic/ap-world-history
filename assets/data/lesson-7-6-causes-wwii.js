@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 7: Global Conflict",
     topic: "Topic 7.6",
     title: "Causes of World War II",
-    subtitle: "The unresolved tensions of Topic 7.5 resolve violently: how a failed peace, a global economic collapse, continued imperialist ambition, and, especially, the rise of fascist and totalitarian regimes drove the world into a second total war",
+    subtitle: "The unresolved tensions of Topic 7.5 resolve violently: how a failed peace, a global economic collapse, continued imperialist ambition, and — especially — the rise of fascist and totalitarian regimes drove the world into a second total war",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -94,7 +94,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to follow the Key Concept's own four-cause structure, a failed peace, a global economic collapse, continued imperialist ambition, and the rise of fascist and totalitarian regimes, and to weigh the CED's verdict that the last of these was 'especially' to blame.",
     videos: [
       {
-        title: "Heimler's History, AP World Topic 7.6",
+        title: "Heimler's History — AP World Topic 7.6",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.6+Causes+of+World+War+II",
         previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
         prompt: "Watch for the four causes the CED names, the unsustainable peace after WWI, the Great Depression, continued imperialist aspirations, and especially the rise of fascist and totalitarian regimes, and how aggressive militarism, above all Nazi Germany under Hitler, turned those tensions into war."
@@ -110,7 +110,7 @@ window.BEHISTORICAL_LESSON = {
           "Core claim: World War II had **many causes**, but the CED weights one above the rest. Hold that weighting as a question to test, not a fact to memorize."
         ],
         image: {
-          title: "World War II, montage of the global conflict",
+          title: "World War II — montage of the global conflict",
           caption: "The war the interwar tensions produced, the CED asks you to explain its causes, and names four of them in a single sentence.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png"
@@ -231,7 +231,7 @@ window.BEHISTORICAL_LESSON = {
 
   images: [
     {
-      title: "World War II, montage of the global conflict",
+      title: "World War II — montage of the global conflict",
       url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png",
       caption: "The second total war, the conflict the CED asks you to explain the causes of.",
@@ -267,7 +267,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   primarySource: {
-    title: "Primary Source: Treaty of Versailles, Article 231, the War Guilt Clause (1919)",
+    title: "Primary Source: Treaty of Versailles, Article 231 — the War Guilt Clause (1919)",
     intro: "Article 231 is one sentence, but it did enormous political work. By forcing Germany to accept sole responsibility for the war, it became the legal basis for reparations and the emotional core of German resentment, the single clause radical movements pointed to as proof the peace was a humiliation to be overturned. Read it as the seed of the CED's first cause.",
     text: "The Allied and Associated Governments affirm and Germany accepts the responsibility of Germany and her allies for causing all the loss and damage to which the Allied and Associated Governments and their nationals have been subjected as a consequence of the war imposed upon them by the aggression of Germany and her allies.",
     questions: [

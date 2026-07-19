@@ -99,7 +99,7 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Redistribution Movements, Causes and Effects',
+      title: 'Checkpoint 1: Redistribution Movements — Causes and Effects',
       subtitle: 'Checks Learning Target 3 and Success Criterion 3.',
       cardDesc: 'Causes and effects of land and resource redistribution movements across Africa, Asia, and Latin America.',
       learningTargets: [lesson.learningTargets[2].target],
@@ -110,7 +110,7 @@
       focus: ['Identify the specific cause(s) for each redistribution movement you discuss, colonial occupation, military coup, electoral mobilization, or fear of communist organizing.', 'Explain at least one concrete effect each movement produced, independence, famine, political stability, or social disruption.', 'Compare: note whether the movements you chose were similar or different in their causes or effects.']
     },
     {
-      title: "Checkpoint 2: China's Adoption of Communism, Causes and Consequences",
+      title: "Checkpoint 2: China's Adoption of Communism — Causes and Consequences",
       subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
       cardDesc: "AP-style causation: causes of China's communist revolution and consequences of Great Leap Forward economic control.",
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],

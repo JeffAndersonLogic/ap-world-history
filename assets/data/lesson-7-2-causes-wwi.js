@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to answer the question that drives this topic: why did one assassination in Sarajevo become a world war? Track the four causes the CED names, imperialist competition, territorial and regional conflicts, a flawed alliance system, and intense nationalism, and how they combined.",
     videos: [
       {
-        title: "Heimler's History, AP World Topic 7.2",
+        title: "Heimler's History — AP World Topic 7.2",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.2+Causes+of+World+War+I",
         previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg",
         prompt: "Watch for how imperialist competition, regional conflicts, the alliance system, and nationalism combined to escalate a regional crisis into global war."

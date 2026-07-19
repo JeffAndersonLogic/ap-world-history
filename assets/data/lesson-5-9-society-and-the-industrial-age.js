@@ -194,7 +194,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   beSurreal: {
-    title: "BeSurreal: You Live in Two Cities at Once, An Industrial City, 1851",
+    title: "BeSurreal: You Live in Two Cities at Once — An Industrial City, 1851",
     desc: "You are fifteen. You wake before sunrise in a single rented room you share with your parents and three younger siblings; the air already tastes of coal. By six you are at the textile mill, where the machines are so loud you read the foreman's lips. Your wages, smaller than the men's, even at the same machine, go straight to your mother for rent and bread.",
     intro: "At midday you run an errand that takes you across town, into a neighborhood you rarely see: wide streets, a park, brick houses with curtains and gardens. Through one window you glimpse a girl about your own age. She is not going to a mill. She is at a piano, and a woman, her mother, you guess, is teaching her how to manage a household someday. You are both living through the same revolution. It has handed her a parlor and handed you a machine.",
     detail: "As you write, reason through these questions inside your account (don't just list answers): (1) What does your family's need for your wages reveal about the working-class experience of industrialization? (2) Why might the girl at the piano never take a paying job, and is that freedom, limitation, or both? (3) Walking between these two neighborhoods, what do you notice about the city itself, its air, its housing, its streets, that shows how unevenly industrialization touched people's lives?",

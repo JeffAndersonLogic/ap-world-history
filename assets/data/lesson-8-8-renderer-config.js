@@ -86,7 +86,7 @@
     },
     {
       title: 'Checkpoint 2: Explaining the Causes of the End of the Cold War',
-      subtitle: 'Checks all three Learning Targets (LO J, full causation).',
+      subtitle: 'Checks all three Learning Targets (LO J — full causation).',
       cardDesc: 'AP-style causation: explain the causes of the end of the Cold War, using evidence from at least two of the three causal strands of KC-6.2.IV.E, and include an explicit claim about which cause was most significant.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],

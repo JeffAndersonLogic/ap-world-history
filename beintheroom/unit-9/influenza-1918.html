@@ -100,7 +100,7 @@
           <p>Cases are appearing. Nearby army camps are crowded and troops move through the city by rail. The pattern from other cities suggests early action saves lives, but acting now means economic disruption, public anger, and the political risk of overreacting if the outbreak proves mild.</p>
         </article>
         <article class="role-card third decision-card" data-decision="1" onclick="selectDecision('closenow',event)">
-          <h3>Close Now, Act Before the Curve</h3>
+          <h3>Close Now — Act Before the Curve</h3>
           <p>Issue immediate closure orders: close schools, theaters, churches, and all indoor public gatherings. Ban large outdoor assemblies. The evidence from other cities shows that early intervention reduces per-capita mortality. Acting on density and crowding before the curve climbs is the strongest tool available.</p>
         </article>
         <article class="role-card third decision-card" data-decision="1" onclick="selectDecision('waitconfirm',event)">
@@ -131,7 +131,7 @@
           <p>The war effort cannot pause for an illness that may prove no worse than ordinary influenza. Canceling the parade signals weakness to the enemy and disloyalty at home. Millions of soldiers are fighting overseas, the home front must hold. Advise attendees to cover their coughs, but let the parade proceed.</p>
         </article>
         <article class="role-card third decision-card" data-decision="2" onclick="selectDecision2('modifyparade',event)">
-          <h3>Modify, Reduce Scale and Duration</h3>
+          <h3>Modify — Reduce Scale and Duration</h3>
           <p>Shorten the parade route, limit the number of marching units, discourage spectators from lingering, and distribute public health guidance. This preserves the patriotic event while reducing (but not eliminating) the density risk.</p>
         </article>
         <article class="role-card full">
@@ -146,11 +146,11 @@
           <p>After weeks of closures, case counts are declining. Economic and social pressure to reopen is intense. Businesses are losing revenue. Families are isolated. Churches and schools have been closed for weeks. The city's political leadership is demanding a reopening date. But public health officers warn that lifting restrictions too early, while the virus is still circulating, risks a second wave as people re-crowd into the spaces that were closed.</p>
         </article>
         <article class="role-card quarter decision-card" data-decision="3" onclick="selectDecision3('liftnow',event)">
-          <h3>Lift Now, Relieve the Strain</h3>
+          <h3>Lift Now — Relieve the Strain</h3>
           <p>Cases are declining. The worst appears to be over. Reopen schools, churches, and businesses immediately. The economic and social cost of continued closure now outweighs the public health benefit.</p>
         </article>
         <article class="role-card quarter decision-card" data-decision="3" onclick="selectDecision3('holdlonger',event)">
-          <h3>Hold Longer, Guard Against a Second Wave</h3>
+          <h3>Hold Longer — Guard Against a Second Wave</h3>
           <p>Declining cases do not mean the virus is gone. Premature reopening will re-crowd the exact spaces that closures were designed to empty. Hold restrictions for at least two additional weeks beyond the peak decline to ensure the virus has fully receded.</p>
         </article>
         <article class="role-card quarter decision-card" data-decision="3" onclick="selectDecision3('phased',event)">
@@ -158,7 +158,7 @@
           <p>Reopen outdoor spaces and low-density businesses first. Keep schools, theaters, and churches closed for another week. Monitor case counts daily. If numbers spike, re-close immediately.</p>
         </article>
         <article class="role-card quarter decision-card" data-decision="3" onclick="selectDecision3('conditional',event)">
-          <h3>Conditional, Tie Reopening to Data</h3>
+          <h3>Conditional — Tie Reopening to Data</h3>
           <p>Announce specific thresholds: reopen when hospital admissions fall below a stated number for a stated number of consecutive days. Remove the decision from political pressure by anchoring it to measurable data.</p>
         </article>
         <article class="role-card full">
@@ -314,7 +314,7 @@ const roles = {
 };
 
 const decisions1 = {
-  closenow: { name: 'Close Now, Act Before the Curve', detail: 'Issue immediate closure orders for schools, theaters, churches, and all public gatherings. Act on density before transmission accelerates.' },
+  closenow: { name: 'Close Now — Act Before the Curve', detail: 'Issue immediate closure orders for schools, theaters, churches, and all public gatherings. Act on density before transmission accelerates.' },
   waitconfirm: { name: 'Wait for More Confirmed Cases', detail: 'Hold off on city-wide closures until hospitals report a clear surge. Avoid premature disruption.' },
   targeted: { name: 'Targeted Measures Only', detail: 'Close the most crowded venues, barracks, hospitals, schools, but keep businesses and churches open.' }
 };
@@ -322,14 +322,14 @@ const decisions1 = {
 const decisions2 = {
   cancelparade: { name: 'Cancel the Parade', detail: 'Dense crowds in a respiratory pandemic are a transmission accelerator. Cancel and redirect war-bond sales.' },
   allowparade: { name: 'Allow the Parade', detail: 'The war effort cannot pause. Let the parade proceed with public health advisories.' },
-  modifyparade: { name: 'Modify, Reduce Scale and Duration', detail: 'Shorten the route, limit units, discourage lingering. Reduce but do not eliminate the density risk.' }
+  modifyparade: { name: 'Modify — Reduce Scale and Duration', detail: 'Shorten the route, limit units, discourage lingering. Reduce but do not eliminate the density risk.' }
 };
 
 const decisions3 = {
-  liftnow: { name: 'Lift Now, Relieve the Strain', detail: 'Cases are declining. Reopen immediately to relieve economic and social pressure.' },
-  holdlonger: { name: 'Hold Longer, Guard Against a Second Wave', detail: 'Maintain restrictions at least two weeks beyond peak decline to ensure the virus has fully receded.' },
+  liftnow: { name: 'Lift Now — Relieve the Strain', detail: 'Cases are declining. Reopen immediately to relieve economic and social pressure.' },
+  holdlonger: { name: 'Hold Longer — Guard Against a Second Wave', detail: 'Maintain restrictions at least two weeks beyond peak decline to ensure the virus has fully receded.' },
   phased: { name: 'Phased Reopening', detail: 'Reopen outdoor and low-density spaces first. Monitor daily. Re-close if numbers spike.' },
-  conditional: { name: 'Conditional, Tie Reopening to Data', detail: 'Announce specific hospital-admission thresholds. Reopen only when data confirms sustained decline.' }
+  conditional: { name: 'Conditional — Tie Reopening to Data', detail: 'Announce specific hospital-admission thresholds. Reopen only when data confirms sustained decline.' }
 };
 
 const evidenceBank = {

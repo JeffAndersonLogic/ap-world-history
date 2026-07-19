@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.3",
     title: "The Industrial Revolution Begins",
-    subtitle: "Why industrialization started in Britain, and how the steam engine, factory system, and urbanization transformed labor and society from c. 1750 to c. 1900",
+    subtitle: "Why industrialization started in Britain — and how the steam engine, factory system, and urbanization transformed labor and society from c. 1750 to c. 1900",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -92,7 +92,7 @@ window.BEHISTORICAL_LESSON = {
           "**Scientific culture**: The Royal Society (founded 1660), the Lunar Society of Birmingham (Watt, Boulton, Erasmus Darwin, Josiah Wedgwood), and dozens of mechanics' institutes connected scientific curiosity with practical application. Watt improved the steam engine through years of systematic experimentation. Britain's culture of 'useful knowledge', the belief that science should improve industry and commerce, distinguished it from more theoretically oriented continental scientific cultures."
         ],
         image: {
-          title: "Casta Painting, Social Order Before and After Industrialization",
+          title: "Casta Painting — Social Order Before and After Industrialization",
           caption: "Before industrialization, social order in most of the world was based on birth, land, and hereditary status. The Industrial Revolution created new forms of social stratification, the factory owner, the industrial worker, the urban proletariat, that cut across traditional categories.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
@@ -108,7 +108,7 @@ window.BEHISTORICAL_LESSON = {
           "**Working conditions** in early factories were genuinely dangerous. Unguarded machinery caused frequent injuries, children cleaning under moving looms lost fingers, hands, and lives. Cotton dust caused chronic lung disease (byssinosis). Mines filled with explosive gases and collapsed without warning. Working hours were typically 12–16 hours per day, six days a week. Workers were fined for tardiness, talking, or singing. Wages were paid partly in company scrip redeemable only at company stores (truck system). The legal doctrine of 'master and servant' meant workers had few legal remedies."
         ],
         image: {
-          title: "Florentine Codex, Transformation and Dislocation",
+          title: "Florentine Codex — Transformation and Dislocation",
           caption: "Like the demographic catastrophe documented in sources such as the Florentine Codex, the Industrial Revolution represented a sudden, traumatic disruption of existing social and economic systems, with winners and losers determined largely by position, not merit.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
@@ -124,7 +124,7 @@ window.BEHISTORICAL_LESSON = {
           "**The standard of living debate**: Historians continue to argue about whether real wages and living standards rose or fell during the Industrial Revolution's first generation. The evidence suggests that aggregate wealth increased dramatically, but that the distribution was highly unequal. The first generation of factory workers generally experienced worse conditions than the artisans and rural workers they replaced. Improvements in real wages, life expectancy, and consumer access accelerated in the second half of the 19th century, but the costs of the transition were borne disproportionately by the poor."
         ],
         image: {
-          title: "VOC, Commercial Networks and Industrial Capital",
+          title: "VOC — Commercial Networks and Industrial Capital",
           caption: "The commercial networks built by European trading companies like the VOC created the capital and global commodity flows that funded and fueled British industrialization. Cotton from the Americas, markets in Asia, and profits from colonial trade were all inputs to the Industrial Revolution.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"

@@ -66,7 +66,7 @@
 
   lesson.skillBuilder = {
     label: 'Continuity and Change practice',
-    title: 'What Changed, and What Stayed the Same, As Ideas Spread?',
+    title: 'What Changed — and What Stayed the Same — As Ideas Spread?',
     intro: 'Cultural diffusion along trade routes rarely produced exact copies of originals. Religions, technologies, and ideas adapted as they moved. CCOT helps you track what changed and what remained recognizable.',
     steps: [
       { label: 'What stayed the same', text: 'Core doctrines of Buddhism and Islam remained recognizable across regions even as they adapted to local contexts.' },

@@ -110,7 +110,7 @@
     },
     {
       title: 'Checkpoint 2: Various Reactions to Existing Power Structures After 1900',
-      subtitle: 'Checks all three Learning Targets (LO I, full synthesis).',
+      subtitle: 'Checks all three Learning Targets (LO I — full synthesis).',
       cardDesc: 'AP-style synthesis: explain the range of reactions to existing power structures after 1900, using evidence from at least two of the three CED categories.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],

@@ -68,7 +68,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: Religion, Legitimacy, and Conflict',
-      subtitle: 'Checks Learning Targets 1 and 2, religion as legitimacy tool and Ottoman-Safavid conflict.',
+      subtitle: 'Checks Learning Targets 1 and 2 — religion as legitimacy tool and Ottoman-Safavid conflict.',
       cardDesc: 'Divine authority, caliphate, Sunni-Shia divide, Chaldiran.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
@@ -78,8 +78,8 @@
       focus: ['Explain at least one specific religious claim or role used by Ottoman or Safavid rulers.', 'Explain how the Sunni-Shia divide made the Ottoman-Safavid rivalry both religious and political.', 'Connect the Battle of Chaldiran (1514) to the broader pattern of religion driving imperial conflict.']
     },
     {
-      title: 'Checkpoint 2: Accommodation vs. Enforcement, Mughal Approaches',
-      subtitle: 'Checks Learning Target 3, Mughal religious approaches and their consequences.',
+      title: 'Checkpoint 2: Accommodation vs. Enforcement — Mughal Approaches',
+      subtitle: 'Checks Learning Target 3 — Mughal religious approaches and their consequences.',
       cardDesc: 'Akbar, Aurangzeb, Din-i-Ilahi, jizya, tolerance vs. enforcement.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],

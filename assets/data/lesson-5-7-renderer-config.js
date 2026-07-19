@@ -73,7 +73,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: Financial Institutions and Industrial Capitalism',
-      subtitle: 'Checks Learning Target 1, corporations, investment banking, stock markets, and how they enabled industrial investment.',
+      subtitle: 'Checks Learning Target 1 — corporations, investment banking, stock markets, and how they enabled industrial investment.',
       cardDesc: 'Joint-stock companies, limited liability, stock exchanges, and investment banking.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
@@ -84,7 +84,7 @@
     },
     {
       title: 'Checkpoint 2: Free Trade and Economic Imperialism',
-      subtitle: 'Checks Learning Target 2, Corn Laws, gold standard, and how economic relationships extended industrial power.',
+      subtitle: 'Checks Learning Target 2 — Corn Laws, gold standard, and how economic relationships extended industrial power.',
       cardDesc: 'Free trade ideology, the 1846 Corn Laws repeal, gold standard, and economic imperialism in Latin America and the Ottoman Empire.',
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],

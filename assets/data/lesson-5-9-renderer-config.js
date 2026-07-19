@@ -74,8 +74,8 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: New Social Classes, Causes',
-      subtitle: 'Checks Learning Target 1, the development of the middle class and the industrial working class.',
+      title: 'Checkpoint 1: New Social Classes — Causes',
+      subtitle: 'Checks Learning Target 1 — the development of the middle class and the industrial working class.',
       cardDesc: 'How industrialization created a new middle class and a new industrial working class, and what made each new.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
@@ -85,8 +85,8 @@
       focus: ['Explain how industrialization created two new classes, and what made them new vs. the old land-and-birth order.', 'Identify a defining characteristic of the middle class and of the industrial working class.', 'Be specific about where each class\'s status or income came from.']
     },
     {
-      title: 'Checkpoint 2: Urban Challenges and Gender Roles, Effects',
-      subtitle: 'Checks Learning Targets 2 & 3, gender/family roles and the challenges of rapid urbanization.',
+      title: 'Checkpoint 2: Urban Challenges and Gender Roles — Effects',
+      subtitle: 'Checks Learning Targets 2 & 3 — gender/family roles and the challenges of rapid urbanization.',
       cardDesc: 'How industrialization changed women\'s roles across classes and produced the challenges of the industrial city.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],

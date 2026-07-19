@@ -115,7 +115,7 @@
       focus: ['Name at least one disease of poverty and explain the environmental condition that sustained it.', 'Name at least one emergent epidemic and explain how population density or travel networks shaped its spread.', 'Use specific evidence, dates, places, measurable effects, for each disease.']
     },
     {
-      title: 'Checkpoint 2: Environment, Disease, and Population, A Causation Argument',
+      title: 'Checkpoint 2: Environment, Disease, and Population — A Causation Argument',
       subtitle: 'Checks all three Learning Targets and all three Success Criteria.',
       cardDesc: 'Argue how environmental factors affected human populations through disease from 1900 to the present.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target, lesson.learningTargets[2].target],

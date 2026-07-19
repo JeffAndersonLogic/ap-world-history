@@ -125,7 +125,7 @@ window.BEHISTORICAL_LESSON = {
           '**Religion and ideas spread through commerce** in all three systems, Islam was the most striking case, spreading along all three networks simultaneously carried by merchants, scholars, and Sufi missionaries, making it the most widely distributed religion in the Afro-Eurasian world by c. 1450.'
         ],
         image: {
-          title: 'World Map, Blue Sea Edition',
+          title: 'World Map — Blue Sea Edition',
           caption: 'By c. 1300, the Silk Roads, Indian Ocean network, and trans-Saharan routes together formed a single interconnected Afro-Eurasian exchange system spanning from West Africa to East Asia.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg'
@@ -200,7 +200,7 @@ window.BEHISTORICAL_LESSON = {
         detail: 'Cities like Samarkand, Kashgar, and Dunhuang sat at the nodes of the overland Silk Roads, growing wealthy by taxing and supplying caravans. Their populations reflected the cosmopolitan character of the routes: merchants, scholars, and pilgrims from China, Persia, India, and the Mediterranean all passed through. The destruction of many oasis cities during the Mongol conquests of the 13th century, followed by the relative stability of the Pax Mongolica, demonstrates how political conditions shaped trade volumes on overland routes in ways that monsoon-driven maritime trade was less vulnerable to.'
       },
       {
-        title: 'Abu-Abdullah Ibn Battuta, Traveler Across All Three Networks',
+        title: 'Abu-Abdullah Ibn Battuta — Traveler Across All Three Networks',
         detail: 'Ibn Battuta (1304–c.1368) traveled approximately 75,000 miles over three decades, crossing the trans-Saharan routes, the Indian Ocean network, and parts of the overland Silk Roads. His account, the Rihla, reveals both the unity and the diversity of the Afro-Eurasian world: everywhere he found Muslim merchants and scholars, but the goods traded, the ships and animals used, and the political structures he encountered differed dramatically between West Africa, the Indian Ocean rim, and Central Asia. The Rihla is itself evidence that a single individual could navigate all three networks using Islam and Arabic as common cultural tools.'
       }
     ]

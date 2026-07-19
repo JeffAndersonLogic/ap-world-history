@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.7",
     title: "Economic Developments and Innovations",
-    subtitle: "How industrial capitalism invented new financial institutions, corporations, investment banking, stock markets, promoted free trade ideology, and extended economic power through debt and investment rather than armies",
+    subtitle: "How industrial capitalism invented new financial institutions — corporations, investment banking, stock markets — promoted free trade ideology, and extended economic power through debt and investment rather than armies",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
           "**Investment banks** were the connective tissue of industrial capitalism: they underwrote new securities issues (guaranteeing a price to corporations while selling shares to investors), organized mergers and acquisitions, and provided long-term financing for infrastructure. The **House of Morgan** (J.P. Morgan & Co.) financed American railroad consolidation in the 1870s–1890s, eventually controlling one-sixth of American railroad mileage. **Deutsche Bank** (founded 1870) specifically to finance German foreign trade and industrial development, the model of German-style bank-industry partnership that produced Germany's rapid industrialization. The **Rothschild family** network, banking houses in London, Paris, Frankfurt, Vienna, and Naples, financed European governments and railroads across the continent. By 1900, a handful of investment banks exerted more influence over industrial economies than many governments."
         ],
         image: {
-          title: "Voc, Joint-Stock Capitalism's Origins",
+          title: "Voc — Joint-Stock Capitalism's Origins",
           caption: "The Dutch East India Company (VOC) pioneered joint-stock financing in 1602, issuing the first publicly traded shares on the Amsterdam stock exchange. The 19th century's financial innovations, limited liability, regulated stock exchanges, investment banking, built on this 17th-century foundation to create capital markets at industrial scale.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"
@@ -112,7 +112,7 @@ window.BEHISTORICAL_LESSON = {
           "**The gold standard**: The gold standard, linking a currency to a fixed weight of gold, solved the exchange rate problem of international trade. When multiple currencies existed with floating exchange rates, international trade involved currency risk: prices agreed today might be paid in a different effective value tomorrow. The gold standard made exchange rates fixed and predictable. Britain adopted the gold standard in 1821; the United States adopted it effectively after the Civil War (officially 1900); most major European economies joined in the 1870s–1880s. By 1890, the international gold standard had created the first genuinely integrated global financial system. Its costs: governments could not print money to stimulate the economy without gold reserves to back it, which meant economic downturns produced deflation and unemployment rather than inflation. The burden fell on workers (through wage cuts) rather than creditors (through inflation). The gold standard was a system that systematically protected financial assets over labor."
         ],
         image: {
-          title: "Waldseemuller Map, The Pre-Industrial Trade World",
+          title: "Waldseemuller Map — The Pre-Industrial Trade World",
           caption: "The 16th-century world of mercantilism and protected trade gave way in the 19th century to Britain's free trade vision: an integrated global economy where comparative advantage determined specialization. The Waldseemuller map represents the world that mercantilist trade policy was built to navigate; the repeal of the Corn Laws in 1846 represented the decisive rejection of that mercantilist logic.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
@@ -128,7 +128,7 @@ window.BEHISTORICAL_LESSON = {
           "**The key argument**: Economic imperialism reveals that the line between 'free trade' and 'coercion' is less clear than free trade ideology suggests. When Britain demanded that China open its ports under threat of naval bombardment, or when Latin American governments accepted British creditor control over their customs revenue as the price of continued access to capital markets, these were not voluntary agreements between equals. Economic relationships can be as coercive as military relationships, and in many cases, the economic relationship was enforced by the implicit or explicit threat of military force."
         ],
         image: {
-          title: "Casta Painting, Hierarchy and Exchange",
+          title: "Casta Painting — Hierarchy and Exchange",
           caption: "Colonial-era casta paintings documented racial and social hierarchy in Spanish America. The economic imperialism of the 19th century reorganized these hierarchies without necessarily transforming them: formally independent Latin American states remained structured as raw material exporters supplying industrial Europe, with British and European financial interests controlling the infrastructure that made that export economy function.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
@@ -164,7 +164,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   primarySource: {
-    title: "Primary Source: The Anti-Corn Law League, Free Trade as Moral Mission (1843)",
+    title: "Primary Source: The Anti-Corn Law League — Free Trade as Moral Mission (1843)",
     intro: "The Anti-Corn Law League, founded in Manchester in 1838, became one of the most effective political lobbying campaigns in British history. By combining economic argument (the Corn Laws raised food prices and depressed industrial wages) with moral argument (the Corn Laws were a corrupt aristocratic subsidy at the expense of the poor) and strategic use of the new railroad network and postal system to distribute pamphlets and organize meetings, the League achieved repeal of the Corn Laws in 1846, the decisive victory of the free trade movement. This adapted excerpt from League publications captures the movement's self-presentation.",
     text: [
       "The Corn Laws are not merely bad economics, they are a moral abomination. They exist for one purpose: to maintain the rental income of the English landowning class by restricting the import of foreign grain and thereby keeping bread prices artificially high. The landowners are perhaps five percent of the population. The remaining ninety-five percent, the manufacturers, the merchants, the shopkeepers, and above all the working people of England, pay higher prices for their daily bread so that the Squirearchy may draw higher rents.",

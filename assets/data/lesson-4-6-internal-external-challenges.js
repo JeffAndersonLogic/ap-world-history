@@ -100,7 +100,7 @@ window.BEHISTORICAL_LESSON = {
           "The Spanish reconquered New Mexico in 1692, but the terms of rule changed significantly: the **encomienda system was not reimposed**; Spanish authorities largely stopped suppressing Pueblo religious practices; and the colonial government became more cautious about pushing Pueblo communities to the breaking point. The Pueblo Revolt demonstrated that indigenous resistance could force real concessions from colonial powers."
         ],
         image: {
-          title: "Pueblo Revolt Mural, Loren Mozley, 1936",
+          title: "Pueblo Revolt Mural — Loren Mozley, 1936",
           caption: "A 1936 mural depicting the Pueblo Revolt of 1680 installed in Albuquerque, New Mexico. The revolt expelled Spanish colonizers from the Rio Grande valley for twelve years and forced significant changes in Spanish colonial policy after reconquest.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg"
@@ -115,7 +115,7 @@ window.BEHISTORICAL_LESSON = {
           "Beyond maroon communities, enslaved Africans preserved African cultures in colonial settings, adapting religions, languages, and musical traditions to new environments. **Candomblé** in Brazil, **Vodou** in Haiti, and **Santería** in Cuba all developed as syncretic blends of African religious practices with Catholic forms, representing cultural resistance that outlasted the formal institution of slavery."
         ],
         image: {
-          title: "Colonial America, Resistance and Control",
+          title: "Colonial America — Resistance and Control",
           caption: "The casta painting tradition documented the racial hierarchy of colonial America. Maroon communities represented a fundamental challenge to that hierarchy, creating spaces where people who were legally property could live as free people.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
@@ -159,9 +159,9 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use the evidence below to analyze internal and external challenges to European maritime empires. Strong AP arguments about resistance require moving beyond 'they resisted oppression' to specific causes, specific methods, and specific outcomes.",
     prompt: "Choose one piece of evidence and explain what it reveals about challenges to European maritime empires. Then identify what this evidence tells us about the LIMITS of European colonial power.",
     items: [
-      { title: "Pueblo Revolt account, Spanish colonial report, 1680", detail: "Spanish officials' reports of the Pueblo Revolt describe their shock at the scale and coordination of the uprising, they had not anticipated that Pueblo communities, who had appeared compliant, had maintained covert religious practices and built a cross-community network capable of coordinated military action. Use this evidence to argue about the structural conditions that made the Pueblo Revolt possible, what does Spanish officials' surprise reveal about the nature of colonial knowledge and control?" },
-      { title: "Palmares military expedition records, Portuguese Brazil, 1690s", detail: "Portuguese colonial records from the final campaigns against Palmares document the difficulty of military operations in the Brazilian interior, multiple failed expeditions over decades, the need for a large professional force finally supplied by Domingos Jorge Velho in 1694. Use this evidence to argue about what Palmares demonstrates regarding the capacity of enslaved Africans to build autonomous institutions and defend them against colonial power." },
-      { title: "VOC vs. Estado da India, Dutch commercial records, c. 1620", detail: "Dutch East India Company records from c. 1620 document the VOC's systematic strategy for displacing the Portuguese: offering lower toll rates, establishing rival trading posts, and using superior capital to sustain losses until Portuguese merchants withdrew. Use this evidence to argue about what the Dutch success against the Portuguese reveals about the structural weaknesses of the Estado da India model." }
+      { title: "Pueblo Revolt account — Spanish colonial report, 1680", detail: "Spanish officials' reports of the Pueblo Revolt describe their shock at the scale and coordination of the uprising, they had not anticipated that Pueblo communities, who had appeared compliant, had maintained covert religious practices and built a cross-community network capable of coordinated military action. Use this evidence to argue about the structural conditions that made the Pueblo Revolt possible, what does Spanish officials' surprise reveal about the nature of colonial knowledge and control?" },
+      { title: "Palmares military expedition records — Portuguese Brazil, 1690s", detail: "Portuguese colonial records from the final campaigns against Palmares document the difficulty of military operations in the Brazilian interior, multiple failed expeditions over decades, the need for a large professional force finally supplied by Domingos Jorge Velho in 1694. Use this evidence to argue about what Palmares demonstrates regarding the capacity of enslaved Africans to build autonomous institutions and defend them against colonial power." },
+      { title: "VOC vs. Estado da India — Dutch commercial records, c. 1620", detail: "Dutch East India Company records from c. 1620 document the VOC's systematic strategy for displacing the Portuguese: offering lower toll rates, establishing rival trading posts, and using superior capital to sustain losses until Portuguese merchants withdrew. Use this evidence to argue about what the Dutch success against the Portuguese reveals about the structural weaknesses of the Estado da India model." }
     ]
   },
 

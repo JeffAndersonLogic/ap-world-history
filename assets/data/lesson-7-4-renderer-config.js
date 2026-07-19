@@ -97,7 +97,7 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Crisis and Command, Why Governments Stepped In',
+      title: 'Checkpoint 1: Crisis and Command — Why Governments Stepped In',
       subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
       cardDesc: 'The Depression ends laissez-faire; the Soviet Five-Year Plans and their human cost.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],

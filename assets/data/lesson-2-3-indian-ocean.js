@@ -115,7 +115,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain how technology and environmental knowledge made Indian Ocean maritime trade possible, who participated and what they exchanged, and how this network transformed the port cities and cultures it connected from c. 1200 to c. 1450.",
     videos: [
       {
-        title: 'The INDIAN OCEAN TRADE Network, Explained [AP World History Review, Unit 2 Topic 3]',
+        title: 'The INDIAN OCEAN TRADE Network, Explained [AP World History Review—Unit 2 Topic 3]',
         url: 'https://youtu.be/r-D9F2TiirY',
         youtubeId: 'r-D9F2TiirY',
         prompt: 'Track the causes of expansion, diaspora communities, and cultural and technological transfers around the Indian Ocean.'
@@ -130,7 +130,7 @@ window.BEHISTORICAL_LESSON = {
           "The **magnetic compass**, diffused from China, gave navigators the ability to maintain course far from land, while accumulated knowledge of stars, currents, and coastlines, passed down through generations of Arab, Indian, and Malay sailors, made the ocean a navigable highway rather than a barrier."
         ],
         image: {
-          title: "Indian Ocean, CIA World Factbook map",
+          title: "Indian Ocean — CIA World Factbook map",
           caption: "The Indian Ocean basin connected East Africa, Arabia, India, Southeast Asia, and China through seasonal monsoon wind patterns.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png"

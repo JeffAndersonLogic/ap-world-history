@@ -73,7 +73,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: The Casta System in Spanish America',
-      subtitle: 'Checks Learning Targets 1 and 2, racial hierarchy and the casta system.',
+      subtitle: 'Checks Learning Targets 1 and 2 — racial hierarchy and the casta system.',
       cardDesc: 'Peninsulares, creoles, mestizos, mulattos, indigenous peoples, enslaved Africans, and casta paintings.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
@@ -84,7 +84,7 @@
     },
     {
       title: 'Checkpoint 2: Continuity, Change, and Comparison',
-      subtitle: 'Checks Learning Target 3, continuity, change, and gender in colonial hierarchies.',
+      subtitle: 'Checks Learning Target 3 — continuity, change, and gender in colonial hierarchies.',
       cardDesc: 'Pre-colonial structures, social mobility, gender roles, and comparing colonial hierarchies.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],

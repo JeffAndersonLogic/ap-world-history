@@ -67,7 +67,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: Why Britain? The Causes of Industrialization',
-      subtitle: 'Checks Learning Target 1, multi-factor causation for why industrialization began in Britain.',
+      subtitle: 'Checks Learning Target 1 — multi-factor causation for why industrialization began in Britain.',
       cardDesc: 'Coal, geography, capital, enclosure, political stability, and scientific culture as interacting causes of British industrialization.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
@@ -78,7 +78,7 @@
     },
     {
       title: 'Checkpoint 2: The Human Cost of Industrialization',
-      subtitle: 'Checks Learning Target 2, social effects of industrialization on workers.',
+      subtitle: 'Checks Learning Target 2 — social effects of industrialization on workers.',
       cardDesc: 'Factory system, urbanization, child labor, Luddites, and working-class resistance.',
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],

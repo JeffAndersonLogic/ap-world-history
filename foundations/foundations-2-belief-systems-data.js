@@ -3,7 +3,7 @@ window.FOUNDATION_TOPIC = {
   id: 'foundations-2',
   code: 'FOUNDATIONS 2',
   title: 'Belief Systems & Cultural Exchange',
-  subtitle: 'How did six major belief systems, Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam, shape societies and spread across the world?',
+  subtitle: 'How did six major belief systems — Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam — shape societies and spread across the world?',
   heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Stupa_Borobudur.jpg',
 
   commandCopy: 'The central move of Day 2 is getting students to understand the six major belief systems, Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam, not as private spiritual matters but as public institutional systems that organize labor, legitimate authority, structure family life, fund education, and connect communities across enormous distances. Students learn the core idea of each system, how each spread, and how each adapted through syncretism. When students see these belief systems as institutions rather than just theologies, they can analyze them on AP exams with real historical depth.',

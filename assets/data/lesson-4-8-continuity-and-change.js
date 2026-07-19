@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 4: Transoceanic Interconnections",
     topic: "Topic 4.8",
     title: "Continuity and Change in the Period from c. 1450 to c. 1750",
-    subtitle: "What changed, and what stayed the same, in global trade, demography, and social organization across three centuries of European maritime expansion",
+    subtitle: "What changed — and what stayed the same — in global trade, demography, and social organization across three centuries of European maritime expansion",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -145,7 +145,7 @@ window.BEHISTORICAL_LESSON = {
           "From the Eastern Hemisphere to the Americas: **horses** (which transformed indigenous cultures of the Great Plains within a generation of the Pueblo Revolt); **cattle and pigs** (which damaged indigenous agricultural systems); **wheat and rice** (which European colonists cultivated on lands cleared of indigenous agriculture). The ecological transformation of the Americas was comprehensive and largely irreversible."
         ],
         image: {
-          title: "Florentine Codex, Smallpox",
+          title: "Florentine Codex — Smallpox",
           caption: "The Florentine Codex (compiled by Franciscan friar Sahagún with Nahua informants) documented the smallpox epidemic that preceded and accompanied the Spanish conquest of the Aztec Empire. Disease was the decisive demographic factor in the period c. 1450–1750.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
@@ -160,7 +160,7 @@ window.BEHISTORICAL_LESSON = {
           "**Social hierarchies adapted** without disappearing. Indigenous elites in Spanish America retained some status under colonial law; existing Javanese hierarchies were incorporated into the VOC commercial system; Ottoman and Mughal administrative hierarchies continued to function. The period produced enormous change at the top of social orders while many underlying structures of daily life, family organization, and local governance continued."
         ],
         image: {
-          title: "VOC, Global Trade Networks",
+          title: "VOC — Global Trade Networks",
           caption: "The VOC competed within the Indian Ocean trade system but did not replace it. By c. 1650, Dutch commercial networks coexisted with Arab, Chinese, Indian, and Malay merchant networks across the Indian Ocean, each occupying different niches in a larger system that had been operating for centuries.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"
@@ -189,9 +189,9 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use the evidence below to construct CCOT arguments about global trade from c. 1450 to c. 1750. Strong CCOT arguments require specific evidence on BOTH sides, change AND continuity, and an explanation of why each occurred.",
     prompt: "Choose one piece of evidence and explain what it reveals about either a change or a continuity in global trade from c. 1450 to c. 1750. Then identify a counterpoint: what evidence would complicate or qualify your argument?",
     items: [
-      { title: "Manila Galleon cargo manifest, c. 1600", detail: "Manila Galleon records document the exchange of Mexican silver for Chinese silk, porcelain, and spices. The regularity and scale of this trade, one or two galleons per year, each carrying hundreds of tons of silver, demonstrates the genuinely new connection between the Americas and Asia. Use this evidence to argue for the significance of the silver economy as a change in global trade. Then identify the continuity: what pre-existing trade networks made the Manila trade possible?" },
-      { title: "Indian Ocean trade records, VOC vs. Arab merchants, c. 1640", detail: "Dutch VOC records from the 1640s document ongoing competition between VOC trading posts and Arab, Indian, and Malay merchants in the same ports. Despite VOC dominance at certain chokepoints, Muslim merchants continued to operate throughout the Indian Ocean. Use this evidence to argue for the continuity of Islamic commercial networks, and explain what structural factors (local knowledge, credit networks, established relationships) allowed non-European merchants to persist." },
-      { title: "Columbian Exchange crop diffusion, potato in Europe, c. 1600–1700", detail: "European agricultural records show slow initial adoption of the potato (first brought to Spain c. 1570) followed by rapid spread across northern Europe in the 17th century, especially in Ireland, Germany, and the Low Countries. The potato's ability to grow in poor soils and yield more calories per acre than grain eventually enabled population growth. Use this evidence to argue for the Columbian Exchange as a long-term demographic change, and explain why the effects were slow to materialize." }
+      { title: "Manila Galleon cargo manifest — c. 1600", detail: "Manila Galleon records document the exchange of Mexican silver for Chinese silk, porcelain, and spices. The regularity and scale of this trade, one or two galleons per year, each carrying hundreds of tons of silver, demonstrates the genuinely new connection between the Americas and Asia. Use this evidence to argue for the significance of the silver economy as a change in global trade. Then identify the continuity: what pre-existing trade networks made the Manila trade possible?" },
+      { title: "Indian Ocean trade records — VOC vs. Arab merchants, c. 1640", detail: "Dutch VOC records from the 1640s document ongoing competition between VOC trading posts and Arab, Indian, and Malay merchants in the same ports. Despite VOC dominance at certain chokepoints, Muslim merchants continued to operate throughout the Indian Ocean. Use this evidence to argue for the continuity of Islamic commercial networks, and explain what structural factors (local knowledge, credit networks, established relationships) allowed non-European merchants to persist." },
+      { title: "Columbian Exchange crop diffusion — potato in Europe, c. 1600–1700", detail: "European agricultural records show slow initial adoption of the potato (first brought to Spain c. 1570) followed by rapid spread across northern Europe in the 17th century, especially in Ireland, Germany, and the Low Countries. The potato's ability to grow in poor soils and yield more calories per acre than grain eventually enabled population growth. Use this evidence to argue for the Columbian Exchange as a long-term demographic change, and explain why the effects were slow to materialize." }
     ]
   },
 

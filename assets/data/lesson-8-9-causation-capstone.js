@@ -267,7 +267,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   skillBuilder: {
-    title: "AP Skill Builder: Build the LEQ, Evaluate the Extent",
+    title: "AP Skill Builder: Build the LEQ — Evaluate the Extent",
     label: "LEQ construction, evaluate the extent (LO K)",
     intro: "Use your completed Hemispheric Effects Matrix to plan each component of the AP 'evaluate the extent' LEQ before writing your full response in Checkpoint 2.",
     steps: [
@@ -308,8 +308,8 @@ window.BEHISTORICAL_LESSON = {
       focus: ["Geographic accuracy", "Specific evidence", "Explained comparison"]
     },
     {
-      title: "Checkpoint 2: Evaluate the Extent, Full LEQ",
-      subtitle: "Checks all three Learning Targets (LO K, full 'evaluate the extent' synthesis).",
+      title: "Checkpoint 2: Evaluate the Extent — Full LEQ",
+      subtitle: "Checks all three Learning Targets (LO K — full 'evaluate the extent' synthesis).",
       cardDesc: "AP-style LEQ: evaluate the extent to which Cold War effects were similar in the Eastern and Western Hemispheres, using evidence from at least two effect categories and both hemispheres.",
       learningTargets: [
         "I can explain how the Cold War extended beyond ideology to have economic, political, social, and cultural effects globally.",

@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 9: Globalization",
     topic: "Topic 9.2",
     title: "Technological Advances and Limitations After 1900: Disease",
-    subtitle: "How environmental factors, sanitation, density, climate, and urbanization, shaped disease patterns and affected human populations from 1900 to the present",
+    subtitle: "How environmental factors — sanitation, density, climate, and urbanization — shaped disease patterns and affected human populations from 1900 to the present",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -103,7 +103,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace how environmental factors, sanitation, density, climate, urbanization, and travel networks, shaped disease patterns and affected human populations from 1900 to the present.",
     videos: [
       {
-        title: "Heimler's History, Topic 9.2: Technological Advances and Limitations, Disease",
+        title: "Heimler's History — Topic 9.2: Technological Advances and Limitations — Disease",
         url: "https://youtu.be/pGbqiCi_GaQ",
         youtubeId: "pGbqiCi_GaQ",
         prompt: "Use this clip to review how diseases affected human populations after 1900, listen for the three categories of disease and how environmental factors shaped each."
@@ -120,7 +120,7 @@ window.BEHISTORICAL_LESSON = {
           "The persistence of these diseases illustrates the ENV thematic focus: environmental conditions, sanitation, housing, water access, vector ecology, shaped which populations remained vulnerable."
         ],
         image: {
-          title: "Mosquito, malaria vector",
+          title: "Mosquito — malaria vector",
           caption: "Malaria persisted wherever tropical climates, standing water, and poverty intersected, environmental conditions that sustained the mosquito vectors carrying the disease.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Anopheles_albimanus_mosquito.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Anopheles_albimanus_mosquito.jpg"
@@ -189,7 +189,7 @@ window.BEHISTORICAL_LESSON = {
       prompt: "What environmental and population factors visible in this image help explain why the 1918 influenza spread so rapidly among military populations?"
     },
     {
-      title: "Malaria Prevention, Insecticide-Treated Net",
+      title: "Malaria Prevention — Insecticide-Treated Net",
       url: "https://commons.wikimedia.org/wiki/Special:FilePath/Anopheles_albimanus_mosquito.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Anopheles_albimanus_mosquito.jpg",
       caption: "Malaria persisted wherever tropical climates, standing water, and poverty intersected, environmental conditions that sustained the mosquito vectors carrying the disease.",

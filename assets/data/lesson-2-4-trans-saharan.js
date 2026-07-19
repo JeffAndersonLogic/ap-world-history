@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain what made the Sahara crossable, what drove the gold-salt exchange, and how trans-Saharan trade transformed West African states and spread Islam across the region from c. 1200 to c. 1450.",
     videos: [
       {
-        title: 'The TRANS-SAHARAN TRADE Network, Explained [AP World History Review, Unit 2 Topic 4]',
+        title: 'The TRANS-SAHARAN TRADE Network, Explained [AP World History Review—Unit 2 Topic 4]',
         url: 'https://youtu.be/fUYUx-0ISW4',
         youtubeId: 'fUYUx-0ISW4',
         prompt: 'Track transportation technologies, traded goods, and the relationship between commerce and Mali’s power.'

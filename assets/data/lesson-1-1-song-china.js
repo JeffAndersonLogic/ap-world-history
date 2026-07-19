@@ -108,8 +108,8 @@ window.BEHISTORICAL_LESSON = {
     title: "Song China: Governance, Culture, and Economy",
     intro: "Use these cards to explain how Song China organized political authority, extended Chinese cultural influence, and developed one of the most commercialized economies of the postclassical world.",
     videos: [
-      { title: "Heimler's History, Topic 1.1 Part 1", url: "https://youtu.be/QO7NHZJ-eE4", youtubeId: "QO7NHZJ-eE4", prompt: "Use this clip to review Song governance, Confucianism, and cultural influence." },
-      { title: "Heimler's History, Topic 1.1 Part 2", url: "https://youtu.be/HfIWZhXt7fY", youtubeId: "HfIWZhXt7fY", prompt: "Use this clip to review Song commercial growth, technology, and economic innovation." }
+      { title: "Heimler's History — Topic 1.1 Part 1", url: "https://youtu.be/QO7NHZJ-eE4", youtubeId: "QO7NHZJ-eE4", prompt: "Use this clip to review Song governance, Confucianism, and cultural influence." },
+      { title: "Heimler's History — Topic 1.1 Part 2", url: "https://youtu.be/HfIWZhXt7fY", youtubeId: "HfIWZhXt7fY", prompt: "Use this clip to review Song commercial growth, technology, and economic innovation." }
     ],
     segments: [
       { title: "How Song rulers organized government", bullets: ["Song rulers expanded **imperial bureaucracy** to govern a large, complex state.", "The **civil service exam system** selected scholar-officials trained in Confucian texts.", "Confucianism helped justify hierarchy, obedience, education, and moral government."], image: { title: "Song imperial examination", caption: "Civil service exams became a major path into the scholar-official class.", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG", sourceUrl: "https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG" } },

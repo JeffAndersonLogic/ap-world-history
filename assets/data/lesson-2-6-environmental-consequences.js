@@ -86,7 +86,7 @@ window.BEHISTORICAL_LESSON = {
     intro: 'Connectivity had a dark side. The same networks that moved silk and spices also moved rats, fleas, and bacteria. Use these segments to understand how the Black Death traveled, what it destroyed, and how expanding trade permanently altered the ecology of Afro-Eurasia.',
     videos: [
       {
-        title: 'ENVIRONMENTAL Effects of Connectivity [AP World History Review, Unit 2 Topic 6]',
+        title: 'ENVIRONMENTAL Effects of Connectivity [AP World History Review—Unit 2 Topic 6]',
         url: 'https://youtu.be/PKQzXPAAFBA',
         youtubeId: 'PKQzXPAAFBA',
         prompt: 'Track how crops and disease pathogens moved through exchange networks and transformed environments and populations.'
@@ -101,7 +101,7 @@ window.BEHISTORICAL_LESSON = {
           'The speed of spread directly reflected the density of trade connections, regions most deeply integrated into the **Mongol trade network** were struck earliest and hardest, demonstrating that the same infrastructure enabling commercial prosperity could rapidly transmit catastrophe.'
         ],
         image: {
-          title: 'Nile River from Space, NASA Composite',
+          title: 'Nile River from Space — NASA Composite',
           caption: 'Rivers and coastlines were the highways of medieval trade, and the corridors along which epidemic disease spread with terrifying speed into densely populated agricultural zones.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nile_composite_NASA.jpg'
@@ -129,7 +129,7 @@ window.BEHISTORICAL_LESSON = {
           'Trade routes served as corridors for the movement of **invasive species**: plants, animals, and pathogens crossed ecological boundaries they could never have crossed naturally, permanently altering the biodiversity of regions from sub-Saharan Africa to East Asia, a process that would accelerate dramatically after 1492.'
         ],
         image: {
-          title: 'World Map, Blue Sea Edition',
+          title: 'World Map — Blue Sea Edition',
           caption: 'By c. 1350, the ecological footprint of Afro-Eurasian trade networks extended from the Atlantic coast of Morocco to the South China Sea, reshaping landscapes and species distributions across the entire connected world.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg'

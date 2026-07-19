@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 7: Global Conflict",
     topic: "Topic 7.8",
     title: "Mass Atrocities After 1900",
-    subtitle: "How the rise of extremist groups in power led to genocide, ethnic violence, and the attempted destruction of specific populations, and how the world responded with new legal frameworks, from the Genocide Convention to the International Criminal Court",
+    subtitle: "How the rise of extremist groups in power led to genocide, ethnic violence, and the attempted destruction of specific populations — and how the world responded with new legal frameworks, from the Genocide Convention to the International Criminal Court",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -85,7 +85,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace the causes and consequences of mass atrocities after 1900. The Key Concept names the pattern: extremist groups in power led to the attempted destruction of specific populations. The illustrative examples span the century, from the Armenian Genocide during World War I through the Rwandan Genocide in the 1990s. Study the causes, study the consequences, and look for the structure that repeats.",
     videos: [
       {
-        title: "Heimler's History, AP World Topic 7.8",
+        title: "Heimler's History — AP World Topic 7.8",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.8+Mass+Atrocities",
         prompt: "Watch for how extremist groups in power led to the attempted destruction of specific populations, the causes specific to each case, and the consequences, including international legal frameworks like the Genocide Convention and the ICC."
       }

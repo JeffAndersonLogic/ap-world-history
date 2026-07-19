@@ -108,7 +108,7 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Mobilizing Society, Democracies and Dictatorships',
+      title: 'Checkpoint 1: Mobilizing Society — Democracies and Dictatorships',
       subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
       cardDesc: 'Propaganda, media, and nationalism across Britain, the U.S., Germany, and the USSR.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],

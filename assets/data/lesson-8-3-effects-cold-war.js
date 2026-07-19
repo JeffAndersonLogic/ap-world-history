@@ -101,7 +101,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace how the Cold War's ideological struggle produced new military alliances and nuclear proliferation, then turned violent through proxy wars across Latin America, Africa, and Asia, and to compare how each superpower used these instruments to maintain influence.",
     videos: [
       {
-        title: "Heimler's History, Topic 8.3: Effects of the Cold War",
+        title: "Heimler's History — Topic 8.3: Effects of the Cold War",
         url: "https://youtu.be/FO-CXJL5EWI",
         youtubeId: "FO-CXJL5EWI",
         prompt: "Use this clip to review the effects of the Cold War, listen especially for how NATO and the Warsaw Pact functioned as instruments of influence and how proxy wars spread the superpower competition across the postcolonial world."
@@ -134,7 +134,7 @@ window.BEHISTORICAL_LESSON = {
           "The arms race consumed enormous resources on both sides, reshaping domestic priorities. In the United States, President Eisenhower warned in 1961 of a **military-industrial complex**, the institutional network of defense contractors, military planners, and government agencies whose interests drove continued weapons development regardless of strategic need."
         ],
         image: {
-          title: "Nuclear arms race, U.S. and Soviet warhead counts",
+          title: "Nuclear arms race — U.S. and Soviet warhead counts",
           caption: "The nuclear arms race produced tens of thousands of warheads on each side by the 1980s, enough to destroy civilization many times over under the doctrine of Mutually Assured Destruction.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/US_and_USSR_nuclear_stockpiles.svg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:US_and_USSR_nuclear_stockpiles.svg"
@@ -150,7 +150,7 @@ window.BEHISTORICAL_LESSON = {
           "**Comparison:** In all three cases, both superpowers used arms transfers, financial aid, military advisors, and local clients to wage competition without direct confrontation. The U.S. tended to frame its involvement in anti-communist terms; the USSR framed its involvement in anti-imperialist and socialist solidarity terms. But the structural method was identical: fight the Cold War through other people's wars, in other people's countries."
         ],
         image: {
-          title: "Angolan Civil War, MPLA fighters, 1975",
+          title: "Angolan Civil War — MPLA fighters, 1975",
           caption: "Angola's independence in November 1975 immediately became a Cold War battleground: Soviet- and Cuban-backed MPLA forces fought U.S.- and South African-backed UNITA and FNLA fighters in a civil war that lasted until 2002.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/MPLA_fighters.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:MPLA_fighters.jpg"

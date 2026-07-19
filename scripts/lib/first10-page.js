@@ -49,7 +49,7 @@ function renderFirst10Page(options) {
   }).join('');
 
   return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BeHistorical, Module 02 | First &amp; 10 | Topic ${esc(topicId)} ${esc(title)}</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BeHistorical — Module 02 | First &amp; 10 | Topic ${esc(topicId)} ${esc(title)}</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&amp;family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/behistorical-first10.css?v=20260717"></head><body><div class="module">
   <header class="module-header"><div class="header-top"><span class="module-badge">Module 02</span><span class="module-name">First &amp; 10 Reading</span></div><div class="module-subtitle">Topic ${esc(topicId)}, ${esc(title)} &nbsp;|&nbsp; AP World History: Modern</div></header>

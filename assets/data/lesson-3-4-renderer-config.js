@@ -53,7 +53,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: Similarities Across Land-Based Empires',
-      subtitle: 'Checks Learning Target 1, identifying and explaining shared patterns across empires.',
+      subtitle: 'Checks Learning Target 1 — identifying and explaining shared patterns across empires.',
       cardDesc: 'Gunpowder, loyalty systems, religious legitimation, shared patterns across five empires.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
@@ -64,7 +64,7 @@
     },
     {
       title: 'Checkpoint 2: Writing a Full Comparison Argument',
-      subtitle: 'Checks Learning Targets 2–3, differences and constructing a supported argument.',
+      subtitle: 'Checks Learning Targets 2–3 — differences and constructing a supported argument.',
       cardDesc: 'Religious policy, administration, and the skill of writing a full comparison argument.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],

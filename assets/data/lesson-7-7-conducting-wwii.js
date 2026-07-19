@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 7: Global Conflict",
     topic: "Topic 7.7",
     title: "Conducting World War II",
-    subtitle: "Total war, round two: how Western democracies and totalitarian states alike mobilized propaganda, art, media, nationalism, and every resource for war, and how new technology and tactics, including the atomic bomb and fire-bombing, drove wartime casualties to new heights",
+    subtitle: "Total war, round two: how Western democracies and totalitarian states alike mobilized propaganda, art, media, nationalism, and every resource for war — and how new technology and tactics, including the atomic bomb and fire-bombing, drove wartime casualties to new heights",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -110,7 +110,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to compare how four great powers, two democracies and two totalitarian states, mobilized propaganda, media, nationalism, and every resource for total war, then trace how new technology and tactics drove casualties to new heights. The Learning Objective is comparative: not just that they mobilized, but how mobilization differed by ideology.",
     videos: [
       {
-        title: "Heimler's History, AP World Topic 7.7",
+        title: "Heimler's History — AP World Topic 7.7",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.7+Conducting+World+War+II",
         previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
         prompt: "Watch for how Britain, the United States, Germany, and the USSR each used propaganda, media, and nationalism to mobilize populations and resources, the difference between democratic and totalitarian mobilization, and how the atomic bomb and fire-bombing increased wartime casualties."
@@ -126,7 +126,7 @@ window.BEHISTORICAL_LESSON = {
           "Core claim: democracies and totalitarian states used **many of the same tools**, but totalitarian states pushed mobilization into **repressing basic freedoms and dominating daily life.**"
         ],
         image: {
-          title: "World War II, montage of the global conflict",
+          title: "World War II — montage of the global conflict",
           caption: "The second total war, every major power mobilized propaganda, media, nationalism, and its whole economy, but democracies and dictatorships mobilized differently.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png"
@@ -216,7 +216,7 @@ window.BEHISTORICAL_LESSON = {
           "Bridge to Topic 7.8: when total state power over populations reaches its **extreme**, the result is the **mass atrocity** that the next topic examines. Keep the thread for the **7.9 causation capstone.**"
         ],
         image: {
-          title: "World War II, montage of the global conflict",
+          title: "World War II — montage of the global conflict",
           caption: "Same toolkit, different limits, all four powers mobilized propaganda, media, and nationalism, but only the totalitarian states repressed basic freedoms to do it.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png"
@@ -247,7 +247,7 @@ window.BEHISTORICAL_LESSON = {
 
   images: [
     {
-      title: "World War II, montage of the global conflict",
+      title: "World War II — montage of the global conflict",
       url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png",
       caption: "The second total war, fought by societies fully mobilized for the front.",

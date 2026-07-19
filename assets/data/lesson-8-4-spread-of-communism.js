@@ -126,7 +126,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace why China turned communist, what consequences followed from the state's control of its national economy, and how redistribution movements in Vietnam, Ethiopia, India, and Iran show the range of paths through which communism and socialism reshaped the post-1900 world.",
     videos: [
       {
-        title: "Heimler's History, Topic 8.4: Spread of Communism After 1900",
+        title: "Heimler's History — Topic 8.4: Spread of Communism After 1900",
         url: "https://youtu.be/FmI-Zfsk7ok",
         youtubeId: "FmI-Zfsk7ok",
         prompt: "Use this clip to review the causes of China's communist revolution and the consequences of the Great Leap Forward. Listen especially for how ideology-driven economic control produced repressive policies and negative repercussions for the Chinese population."
@@ -159,7 +159,7 @@ window.BEHISTORICAL_LESSON = {
           "Inflated reporting drove inflated **grain procurement quotas**: the state extracted grain based on reported harvests, not actual ones. Villages that had surrendered their real surplus, and their seed grain, starved. The resulting **Great Chinese Famine (1959–1961)** killed an estimated 15–55 million people in what remains the deadliest famine in recorded history. The Great Leap Forward is the CED's 'negative repercussions for the population' operating at catastrophic scale."
         ],
         image: {
-          title: "Great Leap Forward, backyard steel furnace, 1958",
+          title: "Great Leap Forward — backyard steel furnace, 1958",
           caption: "During the Great Leap Forward, Chinese communes operated thousands of backyard steel furnaces, melting down household implements to meet centrally mandated production targets. The resulting steel was largely unusable while agricultural production collapsed.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Leap_Forward_backyard_steel.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Great_Leap_Forward_backyard_steel.jpg"

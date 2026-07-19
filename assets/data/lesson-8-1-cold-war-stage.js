@@ -103,7 +103,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace how unfulfilled post-WWI promises, WWII's devastating cost for European empires, and the rise of the United States and Soviet Union created the conditions for both decolonization and Cold War rivalry after 1945.",
     videos: [
       {
-        title: "Heimler's History, Topic 8.1: Setting the Stage",
+        title: "Heimler's History — Topic 8.1: Setting the Stage",
         url: "https://youtu.be/XfEK_BsTf0E",
         youtubeId: "XfEK_BsTf0E",
         prompt: "Use this clip to review how WWII set the stage for both the Cold War and decolonization, listen for what changed in the global balance of power."

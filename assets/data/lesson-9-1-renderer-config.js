@@ -121,7 +121,7 @@
       focus: ['Name at least two specific technologies and explain what each was designed to do.', 'Explain how each technology changed the world, use evidence (dates, places, measurable effects).', 'Identify at least one unintended consequence and explain why it was unintended.']
     },
     {
-      title: 'Checkpoint 2: Change Over Time, Technology’s Intended and Unintended Consequences',
+      title: 'Checkpoint 2: Change Over Time — Technology’s Intended and Unintended Consequences',
       subtitle: 'Checks all three Learning Targets and all three Success Criteria.',
       cardDesc: 'Argue change-over-time using intended and unintended consequences as evidence.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target, lesson.learningTargets[2].target],

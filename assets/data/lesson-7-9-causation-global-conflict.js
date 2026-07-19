@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 7: Global Conflict",
     topic: "Topic 7.9",
     title: "Causation in Global Conflict",
-    subtitle: "The unit's synthesis and skill capstone: historians don't just list causes of global conflict, they weigh them, and 'relative significance' means arguing that some causes mattered more than others. Build, rank, and defend your own causal argument across all of Unit 7.",
+    subtitle: "The unit's synthesis and skill capstone: historians don't just list causes of global conflict, they weigh them — and 'relative significance' means arguing that some causes mattered more than others. Build, rank, and defend your own causal argument across all of Unit 7.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -78,7 +78,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "These cards are a synthesis of Unit 7, not new content. Each card names the topics it draws from, recaps the key evidence, and frames the causation question you will argue in the Causation Matrix. The goal is not to decide what caused global conflict, the CED already gave you thirteen Key Concepts for that. The goal is to argue which causes mattered most.",
     videos: [
       {
-        title: "Heimler's History, AP World Topic 7.9 / Unit 7 Causation",
+        title: "Heimler's History — AP World Topic 7.9 / Unit 7 Causation",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.9+causation+global+conflict",
         previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
         prompt: "Watch for how Heimler frames 'relative significance', the AP skill that asks you to rank causes, not just list them. Look for how he distinguishes underlying causes (long-term structural factors) from immediate triggers, and how he connects evidence from different topics into a single causal argument."
@@ -94,7 +94,7 @@ window.BEHISTORICAL_LESSON = {
           "Two vocabulary moves: **underlying causes**, long-term structural factors that created conditions for conflict, versus **immediate triggers**, the specific events that set conflict in motion. Both appear in the evidence, but they don't carry equal weight in a strong argument."
         ],
         image: {
-          title: "World War II, montage of the global conflict",
+          title: "World War II — montage of the global conflict",
           caption: "Unit 7 synthesis: from empire collapse to total war, six topics of evidence now become the raw material for a single causal argument about relative significance.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png"
@@ -169,7 +169,7 @@ window.BEHISTORICAL_LESSON = {
           "You will disagree with each other here, and that is the point. The **Causation Matrix** in Module 09 will ask you to rank and justify. There is no single correct ranking, **argument quality** is what is assessed, not the ranking itself. Support your claim with specific evidence from at least three topics in this unit."
         ],
         image: {
-          title: "World War II, montage of the global conflict",
+          title: "World War II — montage of the global conflict",
           caption: "Six topics of evidence, one capstone argument, relative significance asks which causes mattered most and why, not which ones existed.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png"

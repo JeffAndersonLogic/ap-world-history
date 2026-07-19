@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 9: Globalization",
     topic: "Topic 9.1",
     title: "Advances in Technology and Exchange After 1900",
-    subtitle: "How new technologies in communication, transportation, energy, agriculture, and medicine transformed the world, with both intended and unintended consequences",
+    subtitle: "How new technologies in communication, transportation, energy, agriculture, and medicine transformed the world — with both intended and unintended consequences",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -121,7 +121,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace how technologies in communication, transportation, energy, agriculture, and medicine reshaped the world after 1900, and how each carried both intended and unintended consequences.",
     videos: [
       {
-        title: "Heimler's History, Topic 9.1: Advances in Technology and Exchange",
+        title: "Heimler's History — Topic 9.1: Advances in Technology and Exchange",
         url: "https://youtu.be/KNgRCS9LUDY",
         youtubeId: "KNgRCS9LUDY",
         prompt: "Use this clip to review how new technologies changed global connections after 1900, listen for examples of both intended benefits and unintended consequences."

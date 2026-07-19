@@ -66,8 +66,8 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Spread of Industrialization, Europe, America, and Japan',
-      subtitle: 'Checks Learning Target 1, how and why industrialization spread to specific regions.',
+      title: 'Checkpoint 1: The Spread of Industrialization — Europe, America, and Japan',
+      subtitle: 'Checks Learning Target 1 — how and why industrialization spread to specific regions.',
       cardDesc: 'Belgium, Germany, the United States, and Japan as case studies in different paths to industrialization.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
@@ -78,7 +78,7 @@
     },
     {
       title: 'Checkpoint 2: Colonialism and the Failure to Industrialize',
-      subtitle: 'Checks Learning Target 2, why colonialism blocked industrialization in most of Asia, Africa, and Latin America.',
+      subtitle: 'Checks Learning Target 2 — why colonialism blocked industrialization in most of Asia, Africa, and Latin America.',
       cardDesc: 'India\'s deindustrialization, Egypt\'s blocked industrialization, Latin American dependency, and the sovereignty argument.',
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],

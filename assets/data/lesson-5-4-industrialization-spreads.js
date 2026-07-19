@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.4",
     title: "Industrialization Spreads",
-    subtitle: "How industrialization spread to Europe, North America, and Japan, and why colonial relationships ensured it did NOT spread to most of Asia, Africa, and Latin America",
+    subtitle: "How industrialization spread to Europe, North America, and Japan — and why colonial relationships ensured it did NOT spread to most of Asia, Africa, and Latin America",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -91,7 +91,7 @@ window.BEHISTORICAL_LESSON = {
           "**The critical pattern**: Germany, the United States, and Japan all used **protective tariffs** during their industrialization to shield domestic industries from foreign (primarily British) competition. Britain argued for free trade, which made sense for Britain as the most advanced industrial power, since free trade allowed British goods to undercut domestic producers everywhere. The countries that industrialized successfully rejected this advice and protected their home markets. This is the most important lesson in comparative industrialization for the AP exam."
         ],
         image: {
-          title: "Ferdinand Magellan, Global Connections",
+          title: "Ferdinand Magellan — Global Connections",
           caption: "The global trade routes established in the Age of Exploration created the commercial and commodity networks that fed industrialization's demand for raw materials and markets. Cotton from India and the American South, iron ore from Sweden, and markets across Asia and Africa were all part of the industrial economy.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg"
@@ -107,7 +107,7 @@ window.BEHISTORICAL_LESSON = {
           "**Results**: Japan was the only non-Western country to industrialize successfully in the 19th century. By 1895, Japan defeated China in the First Sino-Japanese War, the first time an Asian power had defeated a major power in modern warfare. By 1905, Japan defeated **Russia** in the Russo-Japanese War, the first time a non-Western country had defeated a European great power. Both victories depended on industrial military capacity. Japan succeeded because it had political sovereignty and used that sovereignty to deliberately adopt Western technology while maintaining Japanese political control."
         ],
         image: {
-          title: "Pillar of Vasco da Gama, European Power and Asian Sovereignty",
+          title: "Pillar of Vasco da Gama — European Power and Asian Sovereignty",
           caption: "Japan's Meiji leaders understood the lesson of the Age of Exploration: European military and economic power flowed from industrial capacity. The countries of Asia, Africa, and Latin America that had been unable to resist European expansion lacked that capacity. Japan's response was to acquire it deliberately.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg"
@@ -123,7 +123,7 @@ window.BEHISTORICAL_LESSON = {
           "**The structural argument**: The difference between industrializing countries (Germany, US, Japan) and non-industrializing countries (India, Egypt, Latin America) was not natural endowment, it was political sovereignty. Sovereign countries could impose **protective tariffs** to block foreign competition and use **state investment** to build domestic industry. Colonized territories could not impose tariffs (or were forced to abolish them by unequal treaties). This structural difference, not any natural or cultural deficit, explains why industrialization spread where it did and didn't spread where it didn't."
         ],
         image: {
-          title: "World 1700 CE, The Pre-Industrial Global Economy",
+          title: "World 1700 CE — The Pre-Industrial Global Economy",
           caption: "In c. 1700, Asia, especially China and India, dominated global manufacturing. India produced the finest textiles in the world; China produced the most silk, porcelain, and cotton cloth. Within 150 years, British colonial policy had deindustrialized India and opened China by force. The industrial revolution did not simply grow out of existing strengths, it also systematically eliminated competitors.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png"

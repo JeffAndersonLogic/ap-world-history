@@ -85,7 +85,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: New Social Classes and Competing Ideologies',
-      subtitle: 'Checks Learning Target 1, new classes, ideological conflict, and Marxist analysis.',
+      subtitle: 'Checks Learning Target 1 — new classes, ideological conflict, and Marxist analysis.',
       cardDesc: 'Bourgeoisie, proletariat, liberalism, conservatism, utopian socialism, and Marxism.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
@@ -96,7 +96,7 @@
     },
     {
       title: 'Checkpoint 2: Government Response and Women',
-      subtitle: "Checks Learning Target 2, government reform, Bismarck's social insurance, and the suffrage movement.",
+      subtitle: "Checks Learning Target 2 — government reform, Bismarck's social insurance, and the suffrage movement.",
       cardDesc: "British Reform Acts, Factory Acts, Bismarck's social insurance, and women's experience of industrialization.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],

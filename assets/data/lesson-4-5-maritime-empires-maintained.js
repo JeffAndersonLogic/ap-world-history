@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 4: Transoceanic Interconnections",
     topic: "Topic 4.5",
     title: "Maritime Empires Maintained and Developed",
-    subtitle: "How European maritime empires used forced labor, colonial administration, and silver extraction to sustain themselves, and how American silver transformed global trade networks",
+    subtitle: "How European maritime empires used forced labor, colonial administration, and silver extraction to sustain themselves — and how American silver transformed global trade networks",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -136,7 +136,7 @@ window.BEHISTORICAL_LESSON = {
           "The three systems coexisted and complemented each other geographically: the mita dominated the highland mining zones of the Andes; the encomienda persisted in agricultural regions; chattel slavery dominated coastal plantations. Each was matched to the economic function of the region it served."
         ],
         image: {
-          title: "Florentine Codex, Disease and Labor",
+          title: "Florentine Codex — Disease and Labor",
           caption: "The demographic collapse caused by disease, documented in sources like the Florentine Codex, was the fundamental cause of the shift from encomienda to mita and chattel slavery. When the indigenous labor supply collapsed, colonial labor systems evolved to find replacements.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
@@ -151,7 +151,7 @@ window.BEHISTORICAL_LESSON = {
           "The **Casa de Contratación** in Seville controlled all trade between Spain and its colonies, functioning as the commercial backbone of the empire. It registered ships, trained pilots, administered the trading monopoly, and regulated the flow of silver from the Americas to Spain. This commercial monopoly channeled wealth through Seville and gave the Spanish crown direct revenue from colonial trade."
         ],
         image: {
-          title: "Casta Painting, Colonial Social Order",
+          title: "Casta Painting — Colonial Social Order",
           caption: "Casta paintings documented the elaborate racial classification system of Spanish colonial America. The hierarchy, peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans, was maintained and enforced by the administrative institutions of the viceregal system.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
@@ -166,7 +166,7 @@ window.BEHISTORICAL_LESSON = {
           "The Manila Galleon trade illustrates a key theme for AP World History: **existing trade networks adapted to incorporate new commodities and routes rather than being replaced by them**. Chinese merchants, Portuguese intermediaries, and indigenous traders all participated in the silver economy. The Indian Ocean trade continued; Arab and Chinese merchants continued to dominate their sectors; the new global network built on and through the old."
         ],
         image: {
-          title: "VOC, Global Trade Networks",
+          title: "VOC — Global Trade Networks",
           caption: "By the early 17th century, the global trade networks created by American silver connected European colonial powers, Asian manufacturers, and African labor into a single economic system, one in which the Dutch VOC, British EIC, and Portuguese Estado da India all competed for position.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"
@@ -195,8 +195,8 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use the evidence below to analyze how labor systems and silver extraction sustained European maritime empires. Strong AP causation and CCOT arguments require specific evidence and a clear explanation of how one event or condition caused or continued another.",
     prompt: "Choose one piece of evidence and explain what it reveals about how European maritime empires maintained themselves. Then identify a continuity: what aspects of this system persisted from earlier periods, and what changed?",
     items: [
-      { title: "Mita labor decree, Potosí, 1575", detail: "Viceroy Toledo's formalization of the mita system conscripted one-seventh of all adult indigenous males in a designated zone for annual labor at Potosí. The mita was justified as an adaptation of the Inca mit'a, a continuity argument that masked the much more brutal conditions of colonial silver mining. Evaluate what this source reveals about how the Spanish used the language of pre-colonial institutions to justify new forms of coercion." },
-      { title: "Manila Galleon trade records, late 16th century", detail: "Cargo manifests from Manila Galleon voyages show enormous quantities of Chinese silk, porcelain, and spices exchanged for Mexican silver. The regularity and scale of the trade, one or two galleons per year, each carrying 300–500 tons of silver, demonstrates how American silver had become the engine of trans-Pacific commerce. Use this evidence to argue for the significance of silver in connecting global economies." },
+      { title: "Mita labor decree — Potosí, 1575", detail: "Viceroy Toledo's formalization of the mita system conscripted one-seventh of all adult indigenous males in a designated zone for annual labor at Potosí. The mita was justified as an adaptation of the Inca mit'a, a continuity argument that masked the much more brutal conditions of colonial silver mining. Evaluate what this source reveals about how the Spanish used the language of pre-colonial institutions to justify new forms of coercion." },
+      { title: "Manila Galleon trade records — late 16th century", detail: "Cargo manifests from Manila Galleon voyages show enormous quantities of Chinese silk, porcelain, and spices exchanged for Mexican silver. The regularity and scale of the trade, one or two galleons per year, each carrying 300–500 tons of silver, demonstrates how American silver had become the engine of trans-Pacific commerce. Use this evidence to argue for the significance of silver in connecting global economies." },
       { title: "Las Casas, New Laws petitions, 1542", detail: "Bartolomé de las Casas's campaigns resulted in the New Laws of 1542, which formally abolished the hereditary encomienda. In practice, colonists in Peru revolted against enforcement; in New Spain, the laws were softened before implementation. Use this evidence to argue about the limits of imperial reform and the tensions between colonial administrators and colonists over labor policy." }
     ]
   },

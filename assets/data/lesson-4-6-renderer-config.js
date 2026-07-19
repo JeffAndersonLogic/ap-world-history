@@ -67,7 +67,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: Indigenous and African Resistance',
-      subtitle: 'Checks Learning Targets 1 and 2, Pueblo Revolt and maroon communities.',
+      subtitle: 'Checks Learning Targets 1 and 2 — Pueblo Revolt and maroon communities.',
       cardDesc: 'Pueblo Revolt, Popé, maroon communities, Palmares, and forms of African resistance.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
@@ -78,7 +78,7 @@
     },
     {
       title: 'Checkpoint 2: European Rivalries and External Challenges',
-      subtitle: 'Checks Learning Target 3, European competition and external challenges.',
+      subtitle: 'Checks Learning Target 3 — European competition and external challenges.',
       cardDesc: 'Dutch displacement of the Portuguese, piracy, privateering, and the Seven Years War.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],

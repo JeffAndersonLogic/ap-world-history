@@ -103,7 +103,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: Labor Systems and Colonial Administration',
-      subtitle: 'Checks Learning Targets 1 and 2, labor systems and colonial administration.',
+      subtitle: 'Checks Learning Targets 1 and 2 — labor systems and colonial administration.',
       cardDesc: 'Encomienda, mita, chattel slavery, viceroyalties, audiencias, and the Catholic Church.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
@@ -114,7 +114,7 @@
     },
     {
       title: 'Checkpoint 2: Silver and Global Trade',
-      subtitle: 'Checks Learning Target 3, the silver economy and global price revolution.',
+      subtitle: 'Checks Learning Target 3 — the silver economy and global price revolution.',
       cardDesc: 'Potosí, Manila Galleon, Seville, Chinese demand for silver, and the global price revolution.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],

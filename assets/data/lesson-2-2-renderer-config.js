@@ -66,7 +66,7 @@
 
   lesson.skillBuilder = {
     label: 'Continuity and Change practice',
-    title: 'What Did the Mongols Change, and What Stayed the Same?',
+    title: 'What Did the Mongols Change — and What Stayed the Same?',
     intro: 'Continuity and Change Over Time (CCOT) asks what transformed and what persisted. The Mongol conquests disrupted many societies while also continuing and intensifying existing patterns of exchange.',
     steps: [
       { label: 'Before the Mongols', text: 'The Silk Roads already existed, but political fragmentation made long-distance travel dangerous and expensive.' },

@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 8: Cold War and Decolonization",
     topic: "Topic 8.2",
     title: "The Cold War",
-    subtitle: "How rival ideologies, military alliances, and superpower competition divided the world, and why some nations refused to choose a side",
+    subtitle: "How rival ideologies, military alliances, and superpower competition divided the world — and why some nations refused to choose a side",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -103,7 +103,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace how WWII's shift in global power produced ideological conflict between the U.S. and Soviet Union, how that conflict shaped international relations through alliances and proxy wars, and why newly independent nations sought a third way.",
     videos: [
       {
-        title: "Heimler's History, Topic 8.2: The Cold War",
+        title: "Heimler's History — Topic 8.2: The Cold War",
         url: "https://youtu.be/wE18YnW6mME",
         youtubeId: "wE18YnW6mME",
         prompt: "Use this clip to review the causes and effects of the Cold War ideological struggle, listen especially for how the conflict spread globally through alliances and proxy wars."

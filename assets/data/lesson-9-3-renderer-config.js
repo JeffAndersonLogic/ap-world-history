@@ -103,7 +103,7 @@
       focus: ['Name at least one form of environmental degradation and identify the human activity that caused it.', 'Explain how that degradation intensified competition over resources.', 'Use specific evidence, places, dates, measurable effects, for each claim.']
     },
     {
-      title: 'Checkpoint 2: Causes and Effects of Environmental Change, A Causation Argument',
+      title: 'Checkpoint 2: Causes and Effects of Environmental Change — A Causation Argument',
       subtitle: 'Checks all three Learning Targets and all three Success Criteria.',
       cardDesc: 'Argue the causes and effects of environmental changes from 1900 to the present.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target, lesson.learningTargets[2].target],

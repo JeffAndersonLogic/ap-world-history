@@ -246,7 +246,7 @@ window.FOUNDATION_TOPIC = {
       prompt: 'Watch for: how did geography shape where agriculture developed first, and what did surplus food production make possible?'
     },
     {
-      title: 'Heimler\'s History: AP World History, Period 1 Context',
+      title: 'Heimler\'s History: AP World History — Period 1 Context',
       url: 'https://www.youtube.com/watch?v=QO7NHZJ-eE4',
       youtubeId: 'QO7NHZJ-eE4',
       prompt: 'Watch for: what geographic and historical conditions shaped the AP World starting point at c.1200?'

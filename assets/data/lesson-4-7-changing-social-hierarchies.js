@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 4: Transoceanic Interconnections",
     topic: "Topic 4.7",
     title: "Changing Social Hierarchies",
-    subtitle: "How European colonialism reorganized social order, creating the casta system in Spanish America, racializing slavery in the Atlantic world, and producing new hierarchies wherever it reached",
+    subtitle: "How European colonialism reorganized social order — creating the casta system in Spanish America, racializing slavery in the Atlantic world, and producing new hierarchies wherever it reached",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -106,7 +106,7 @@ window.BEHISTORICAL_LESSON = {
           "The AP key point: colonial social hierarchies were **constructed**, not natural. They emerged from specific historical conditions (labor demand, demographic collapse, racial mixing) and were maintained by specific legal and institutional mechanisms (the casta, the slave code, the audiencia). They were also contested, as the Pueblo Revolt and maroon communities demonstrate."
         ],
         image: {
-          title: "Casta Painting, New Spain, 18th Century",
+          title: "Casta Painting — New Spain, 18th Century",
           caption: "Casta paintings documented the elaborate racial classification system of Spanish colonial America. Each combination of ancestry was assigned a name and a legal status. The paintings reflect colonial anxiety about managing a society that was mixing faster than the law could classify.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
@@ -121,7 +121,7 @@ window.BEHISTORICAL_LESSON = {
           "**Social mobility** within the casta was limited but real. Wealthy mestizos could sometimes 'pass' as creoles through social recognition and economic resources. The Church offered another pathway, education through missions provided some social mobility. The concept of **gracia al sacar** allowed people of mixed ancestry to purchase legal whiteness from the crown, a mechanism that reveals both the rigor and the commercialism of the casta system."
         ],
         image: {
-          title: "Columbus Taking Possession, Colonial Origins",
+          title: "Columbus Taking Possession — Colonial Origins",
           caption: "The social hierarchies of colonial America were rooted in the moment of conquest. The legal framework that classified people by ancestry was built to manage the consequences of a society created by conquest, disease, and forced labor.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg"
@@ -165,9 +165,9 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use the evidence below to analyze how colonial social hierarchies were built, maintained, and contested. Strong AP comparison and CCOT arguments require specific evidence from multiple colonial contexts.",
     prompt: "Choose one piece of evidence and explain what it reveals about colonial social hierarchies. Then identify one similarity to AND one difference from social hierarchies in a different colonial context.",
     items: [
-      { title: "Casta painting inscription, New Spain, c. 1770", detail: "'De español e india: mestizo. De mestizo y española: castizo. De castizo y español: español.' These inscriptions from 18th-century casta paintings show the logic of the casta system: racial categories were defined by the combination of parental categories. Use this evidence to argue about what the casta system reveals about Spanish colonial anxieties, and about the limits of the system's ability to manage racial mixing in practice." },
+      { title: "Casta painting inscription — New Spain, c. 1770", detail: "'De español e india: mestizo. De mestizo y española: castizo. De castizo y español: español.' These inscriptions from 18th-century casta paintings show the logic of the casta system: racial categories were defined by the combination of parental categories. Use this evidence to argue about what the casta system reveals about Spanish colonial anxieties, and about the limits of the system's ability to manage racial mixing in practice." },
       { title: "Virginia Slave Code of 1705 (adapted)", detail: "Virginia's Slave Code of 1705 declared that 'all servants imported and brought into this country by sea or land, who were not Christians in their native country, shall be accounted and be slaves.' The code made enslaved status hereditary through the mother, 'the condition of the child follows the condition of the mother.' Use this evidence to compare the British colonial approach to racial classification with the Spanish casta system. What is similar? What is different?" },
-      { title: "Manumission records, Portuguese Brazil, c. 1700", detail: "Portuguese Brazilian colonial records document significantly higher rates of formal manumission (freeing of enslaved people) than British or French colonial societies, perhaps 5–10% of the enslaved population was freed per generation, creating a substantial free Black and mixed-race population. Use this evidence to analyze how Portuguese Brazil's racial hierarchy differed from Spanish America's casta or British colonial slavery." }
+      { title: "Manumission records — Portuguese Brazil, c. 1700", detail: "Portuguese Brazilian colonial records document significantly higher rates of formal manumission (freeing of enslaved people) than British or French colonial societies, perhaps 5–10% of the enslaved population was freed per generation, creating a substantial free Black and mixed-race population. Use this evidence to analyze how Portuguese Brazil's racial hierarchy differed from Spanish America's casta or British colonial slavery." }
     ]
   },
 

@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain what made the Silk Roads function, what moved along them, and how overland trade transformed the societies it connected from c. 1200 to c. 1450.",
     videos: [
       {
-        title: 'The SILK ROADS [AP World Review, Unit 2 Topic 1]',
+        title: 'The SILK ROADS [AP World Review—Unit 2 Topic 1]',
         url: 'https://youtu.be/daiQ6aChKfk',
         youtubeId: 'daiQ6aChKfk',
         prompt: 'Track the commercial innovations, trading cities, and cultural diffusion that expanded Silk Road exchange.'
@@ -140,7 +140,7 @@ window.BEHISTORICAL_LESSON = {
           "The **Black Death** (bubonic plague), carried by fleas on rodents transported along trade routes, devastated populations across Eurasia in the mid-14th century, demonstrating that connectivity accelerated both prosperity and catastrophe."
         ],
         image: {
-          title: "Jiaozi paper money, Song China",
+          title: "Jiaozi paper money — Song China",
           caption: "Paper money reflects the commercialized economy that powered demand for Silk Road luxury goods.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg"

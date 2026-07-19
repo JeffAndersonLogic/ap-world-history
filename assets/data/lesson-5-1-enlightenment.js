@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.1",
     title: "The Enlightenment",
-    subtitle: "How Enlightenment thinkers used reason to challenge traditional authority, and why their universalism had profound limits that the next century would struggle to resolve",
+    subtitle: "How Enlightenment thinkers used reason to challenge traditional authority — and why their universalism had profound limits that the next century would struggle to resolve",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -108,7 +108,7 @@ window.BEHISTORICAL_LESSON = {
           "The Enlightenment also produced **economic ideas** (Adam Smith's free market theory) and **scientific advances** (systematic botany, chemistry, physics), but for the AP exam, the political and social ideas are the most heavily tested. The primary skill being assessed is causation: how did Enlightenment ideas cause the Atlantic Revolutions?"
         ],
         image: {
-          title: "Waldseemüller Map, The World the Enlightenment Inherited",
+          title: "Waldseemüller Map — The World the Enlightenment Inherited",
           caption: "The Enlightenment thinkers inherited a world already transformed by European expansion. The global networks created by the Age of Exploration provided both the material conditions (print culture, global trade, Atlantic plantation economy) and the moral contradictions (slavery, colonialism) that shaped Enlightenment thought.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
@@ -125,14 +125,14 @@ window.BEHISTORICAL_LESSON = {
           "**Adam Smith** (1723–1790): In *The Wealth of Nations* (1776), argued that the **free market**, the 'invisible hand' of supply and demand, allocates resources more efficiently than government intervention or mercantilist monopolies. Smith challenged the mercantilist assumptions of European colonial empires (that trade should be tightly controlled for national advantage) and provided intellectual foundations for industrial capitalism. For the AP exam, Smith is primarily important as background to the economic transformations of Topics 5.3–5.7."
         ],
         image: {
-          title: "Astrolabe, Scientific Instrument of the Age of Reason",
+          title: "Astrolabe — Scientific Instrument of the Age of Reason",
           caption: "The Enlightenment drew its authority from the success of the Scientific Revolution. If Newton could discover natural laws governing the physical universe through reason and observation, Enlightenment thinkers argued, surely reason could discover natural laws governing human society and government.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg"
         }
       },
       {
-        title: "How the Enlightenment Spread, and Its Limits",
+        title: "How the Enlightenment Spread — and Its Limits",
         bullets: [
           "**Print culture**: By the 18th century, expanded literacy and cheap printing made it possible for ideas to circulate rapidly across Europe and the Atlantic world. The **Encyclopédie** (1751–1772), edited by Denis Diderot and Jean le Rond d'Alembert, was the Enlightenment's most ambitious project, a systematic account of all human knowledge organized by reason rather than theology. It was banned by the French Crown and the Catholic Church (its existence proving the very point it was making about censorship), but 25,000 copies circulated across Europe.",
           "**Salons**: Intellectual gatherings hosted primarily by women in Paris provided spaces for philosophes to debate, refine, and publicize their ideas. Women like **Marie-Thérèse Rodet Geoffrin**, **Julie de Lespinasse**, and **Suzanne Necker** were central organizers and patrons of the Enlightenment network, they were, in effect, the institutional infrastructure of the movement. The deep irony: the same philosophes they hosted and financed generally excluded women from the political rights they were arguing for.",
@@ -140,7 +140,7 @@ window.BEHISTORICAL_LESSON = {
           "**The limits of universalism**: Enlightenment universalism was deeply contradictory in practice. **Rousseau** explicitly argued that women's natural sphere was domestic, not political, his *Emile* (1762) described the ideal education for girls as preparation for obedience and charm, not citizenship. **Locke** invested in the Royal African Company, which transported enslaved Africans across the Atlantic, his natural rights theory had no mechanism to explain why enslaved people were excluded. **Voltaire** wrote explicitly racist descriptions of Africans and Asians. These limits are not peripheral to the Enlightenment, they reveal that 'universal' rights were conceived primarily by European men for European men, and that the struggle to actually universalize them would define the next two centuries of Atlantic history."
         ],
         image: {
-          title: "VOC, Enlightenment in a Commercial World",
+          title: "VOC — Enlightenment in a Commercial World",
           caption: "The Enlightenment developed alongside the Atlantic commercial economy, the same global trade networks that enriched European merchants and funded the printing presses that spread Enlightenment ideas also sustained the plantation slavery that contradicted Enlightenment universalism.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"

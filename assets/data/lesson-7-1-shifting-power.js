@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 7: Global Conflict",
     topic: "Topic 7.1",
     title: "Shifting Power After 1900",
-    subtitle: "How internal and external factors brought down the Ottoman, Russian, and Qing empires, and how Mexico's revolution challenged the existing political and social order",
+    subtitle: "How internal and external factors brought down the Ottoman, Russian, and Qing empires — and how Mexico's revolution challenged the existing political and social order",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -109,7 +109,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to track how the Western-dominated world order of 1900 began to crack, three land-based empires collapsing under combined internal and external pressure, and a revolution in Mexico challenging the existing political and social order.",
     videos: [
       {
-        title: "Heimler's History, AP World Topic 7.1",
+        title: "Heimler's History — AP World Topic 7.1",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.1+Shifting+Power+After+1900",
         previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png",
         prompt: "Watch for the internal and external factors behind the Ottoman, Russian, and Qing collapses, and for how the Mexican Revolution challenged the existing order."

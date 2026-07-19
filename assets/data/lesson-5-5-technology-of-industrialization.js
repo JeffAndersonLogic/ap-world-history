@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.5",
     title: "Technology of Industrialization",
-    subtitle: "How the railroad, telegraph, Bessemer process, and other technologies transformed economic life, and how industrial demand reshaped environments and extracted resources from colonized regions",
+    subtitle: "How the railroad, telegraph, Bessemer process, and other technologies transformed economic life — and how industrial demand reshaped environments and extracted resources from colonized regions",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -98,7 +98,7 @@ window.BEHISTORICAL_LESSON = {
           "**Railroads drove industrial demand.** The railroad industry itself was the largest consumer of iron and steel in the 19th century. In the 1840s–1860s, building 10,000 miles of railroad required millions of tons of iron rails, which required more iron foundries, more coal mines, more blast furnaces. The railroad was the flywheel of the industrial economy: it required iron, coal, and engineering on a scale that pushed every related industry to expand. Then cheap transportation made it economical to ship those industrial products to distant markets, which justified further investment in production capacity."
         ],
         image: {
-          title: "Waldseemuller Map, The Globe Before Industrial Time",
+          title: "Waldseemuller Map — The Globe Before Industrial Time",
           caption: "The early 16th-century Waldseemuller map represents the pre-industrial world of slow communication and local markets. Railroads and the telegraph compressed this world into something unrecognizable: news that once took weeks to cross the Atlantic arrived in minutes after 1866.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
@@ -113,7 +113,7 @@ window.BEHISTORICAL_LESSON = {
           "**Technological interdependence** is the key analytical concept for Topic 5.5. These technologies did not develop independently, they required each other. Steam engines enabled railroads; railroads required iron and then steel; cheap steel (Bessemer) enabled railroad expansion at continental scale; railroads moved coal cheaply, making coal power economical; coal powered the factories producing steel and the locomotives running on steel rails. Electricity depended on copper wire (extracted from mines, many in colonized regions), steam turbines to generate it, and steel infrastructure to transmit it. The industrial system was a web of interdependent technologies, each enabling others, and all of them depending on raw materials extracted from mines and fields across the globe."
         ],
         image: {
-          title: "Astrolabe, Precision and Navigation",
+          title: "Astrolabe — Precision and Navigation",
           caption: "The astrolabe represents an older tradition of precision instrument-making that laid groundwork for the engineering culture of the Industrial Revolution. The same drive for mechanical precision that produced navigational tools in the Islamic world and early modern Europe produced steam gauges, Bessemer converters, and electrical generators in the 19th century.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg"
@@ -129,7 +129,7 @@ window.BEHISTORICAL_LESSON = {
           "**The key analytical argument for Topic 5.5**: Industrial technologies transformed both producing regions (by reorganizing factory labor, creating pollution, building cities) and resource-supplying regions (by driving extraction of rubber, guano, cotton, coal, and copper through labor systems ranging from wage labor to debt peonage to forced labor). Understanding industrialization requires understanding both halves of this system: the industrial core and the resource periphery are one system, not two separate stories."
         ],
         image: {
-          title: "Voc, Dutch East India Company",
+          title: "Voc — Dutch East India Company",
           caption: "The VOC represents the first large-scale corporate extraction system connecting European markets to global resources. The industrial-era rubber and guano booms operated on a similar logic at far greater scale: European and American industrial demand organized global labor to extract resources that European and American factories and farms required.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"
@@ -165,7 +165,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   primarySource: {
-    title: "Primary Source: The Human Cost of Railroad Construction, Chinese Labor on the Transcontinental Railroad, 1865–1869",
+    title: "Primary Source: The Human Cost of Railroad Construction — Chinese Labor on the Transcontinental Railroad, 1865–1869",
     intro: "The Central Pacific Railroad was built eastward from Sacramento through the Sierra Nevada by approximately 10,000 Chinese immigrant laborers, the largest single workforce on the project. They were paid $26–35 per month compared to $35 for white workers doing the same work, were given the most dangerous assignments (blasting tunnels through granite using nitroglycerin), and were excluded from the commemorative 'golden spike' photograph when the two railroads met in 1869. This adapted account draws on testimony from surviving workers, railroad company records, and contemporary newspaper accounts.",
     text: [
       "The Chinamen, as they were called by the press, came to the Sierra Nevada in the winter of 1865–1866 to do what others had refused: blast a path through solid granite at elevation. The Central Pacific's chief engineer, Charles Crocker, had resisted hiring Chinese workers, 'they didn't built the Great Wall of China,' he was told; 'who built it?' the reply came. Crocker hired Chinese workers in large numbers and was satisfied: they were reliable, cost less, and complained less than white workers.",

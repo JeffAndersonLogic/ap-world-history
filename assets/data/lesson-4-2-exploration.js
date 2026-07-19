@@ -119,7 +119,7 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "The Portuguese Model, Down Africa and Around to India",
+        title: "The Portuguese Model — Down Africa and Around to India",
         bullets: [
           "The Portuguese systematically explored the African coast southward from 1415, establishing a series of trading posts (**feitorias**) along the West African coast. Each voyage extended the known coastline by a few hundred miles, with the geographic knowledge recorded in portolan charts and brought back to Lisbon. By 1471, the Portuguese had reached the equator; by 1482, they had established a major fort at Elmina (modern Ghana), trading for gold and enslaved Africans.",
           "**Bartolomeu Dias** rounded the **Cape of Good Hope** in 1488, the southern tip of Africa, proving that a sea route to the Indian Ocean was possible from the Atlantic. Dias's crew forced him to turn back before he could continue to India, but the critical geographic fact was established: Africa had a southern end, and the ocean beyond it connected to Asia.",
@@ -171,9 +171,9 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use the evidence below to analyze the motives behind European exploration and the experiences of different peoples during the era of contact. Strong historical thinking requires evaluating evidence from multiple perspectives, not just the perspective of the explorers.",
     prompt: "Choose one piece of evidence and explain what it reveals about the causes, nature, or consequences of European exploration. Consider: whose perspective does this evidence represent, and what perspective does it leave out?",
     items: [
-      { title: "Columbus's journal entry, 'These people are very unskilled in arms'", detail: "Evidence of Columbus's immediate calculation that the Taíno could be conquered and enslaved, written on the first day of contact. Evaluate this source for what it reveals about the motivations behind exploration and for the perspective it systematically excludes." },
-      { title: "Treaty of Tordesillas (1494), dividing the world between Spain and Portugal", detail: "Evidence of European assumptions about the right to divide and control non-European territories without the consent of those territories' inhabitants. The treaty was drawn with papal authority and treated the entire non-European world as available for European claim." },
-      { title: "Da Gama's cargo return, voyage costs covered 60 times over", detail: "Evidence of the commercial logic driving state sponsorship of exploration. The profit from da Gama's first voyage to India demonstrates how economic incentives made the risk of expensive and dangerous voyages rational for state sponsors, and explains why Portugal and Spain invested so heavily in exploration." }
+      { title: "Columbus's journal entry — 'These people are very unskilled in arms'", detail: "Evidence of Columbus's immediate calculation that the Taíno could be conquered and enslaved, written on the first day of contact. Evaluate this source for what it reveals about the motivations behind exploration and for the perspective it systematically excludes." },
+      { title: "Treaty of Tordesillas (1494) — dividing the world between Spain and Portugal", detail: "Evidence of European assumptions about the right to divide and control non-European territories without the consent of those territories' inhabitants. The treaty was drawn with papal authority and treated the entire non-European world as available for European claim." },
+      { title: "Da Gama's cargo return — voyage costs covered 60 times over", detail: "Evidence of the commercial logic driving state sponsorship of exploration. The profit from da Gama's first voyage to India demonstrates how economic incentives made the risk of expensive and dangerous voyages rational for state sponsors, and explains why Portugal and Spain invested so heavily in exploration." }
     ]
   },
 

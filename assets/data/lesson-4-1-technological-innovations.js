@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 4: Transoceanic Interconnections",
     topic: "Topic 4.1",
     title: "Technological Innovations",
-    subtitle: "How maritime technologies, compass, astrolabe, lateen sail, caravel, and printed maps, made sustained oceanic exploration possible after c. 1400",
+    subtitle: "How maritime technologies — compass, astrolabe, lateen sail, caravel, and printed maps — made sustained oceanic exploration possible after c. 1400",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -159,8 +159,8 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use the evidence below to connect specific technological innovations to the broader historical argument about how European oceanic exploration became possible after c. 1450. For each piece of evidence, consider: what specific change did this technology make possible, and what would have been impossible without it?",
     prompt: "Choose one piece of evidence and explain how it supports a specific argument about the role of technology in enabling European exploration. Use causation: identify the technology, explain the mechanism, and connect it to a specific exploratory outcome.",
     items: [
-      { title: "The caravel's lateen sails, solving the return voyage problem", detail: "Evidence that the key technological innovation was not just going south, but being able to come back. The lateen sail's ability to work against prevailing winds made the Portuguese model of systematic coastal exploration viable. Without it, every southward voyage would have been a one-way trip." },
-      { title: "Waldseemüller map (1507), 1,000 printed copies", detail: "Evidence that the printing press transformed geographic knowledge from rare manuscript to widely circulated commodity. The Waldseemüller map was printed in 1,000 copies, more than any previous geographic work. This scale of distribution created the knowledge infrastructure that made subsequent voyages more informed and state investment in exploration more rational." },
+      { title: "The caravel's lateen sails — solving the return voyage problem", detail: "Evidence that the key technological innovation was not just going south, but being able to come back. The lateen sail's ability to work against prevailing winds made the Portuguese model of systematic coastal exploration viable. Without it, every southward voyage would have been a one-way trip." },
+      { title: "Waldseemüller map (1507) — 1,000 printed copies", detail: "Evidence that the printing press transformed geographic knowledge from rare manuscript to widely circulated commodity. The Waldseemüller map was printed in 1,000 copies, more than any previous geographic work. This scale of distribution created the knowledge infrastructure that made subsequent voyages more informed and state investment in exploration more rational." },
       { title: "Arab astrolabe tradition reaching European sailors", detail: "Evidence that European maritime technology was not purely European, it synthesized Arab, Chinese, and Mediterranean traditions. The astrolabe reached Europe through Arab trade networks; the lateen sail came from the Indian Ocean world. Evaluating this evidence requires acknowledging that 'European exploration' built on centuries of prior non-European navigational knowledge." }
     ]
   },

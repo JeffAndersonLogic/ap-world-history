@@ -29,7 +29,7 @@ window.BEHISTORICAL_LESSON = {
     course: "AP WORLD HISTORY",
     unit: "Unit 9: Globalization",
     topic: "Topic 9.3",
-    title: "Technological Advances, Debates About the Environment After 1900",
+    title: "Technological Advances—Debates About the Environment After 1900",
     subtitle: "How human activity degraded the environment, intensified resource competition, and sparked debates about the nature and causes of climate change",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
@@ -103,7 +103,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace how human activity, industrialization, urbanization, agriculture, and energy use, degraded the environment, intensified resource competition, and sparked debates about the causes and effects of climate change from 1900 to the present.",
     videos: [
       {
-        title: "Heimler’s History, Topic 9.3: Debates About the Environment",
+        title: "Heimler’s History — Topic 9.3: Debates About the Environment",
         url: "https://youtu.be/T0pDvAn2dKQ",
         youtubeId: "T0pDvAn2dKQ",
         prompt: "Use this clip to review how human activity shaped the environment after 1900, listen for examples of degradation, resource competition, and the climate debate."

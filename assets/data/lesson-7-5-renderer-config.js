@@ -95,7 +95,7 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Maintained and Gained, Empire Reorganized',
+      title: 'Checkpoint 1: Maintained and Gained — Empire Reorganized',
       subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
       cardDesc: 'Imperial control maintained; mandates and Japanese conquest redraw the map.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],

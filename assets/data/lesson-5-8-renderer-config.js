@@ -78,8 +78,8 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Labor Movement, Organizing, Strikes, and Suppression',
-      subtitle: 'Checks Learning Target 1, trade unions, major strikes, and labor movement development.',
+      title: 'Checkpoint 1: The Labor Movement — Organizing, Strikes, and Suppression',
+      subtitle: 'Checks Learning Target 1 — trade unions, major strikes, and labor movement development.',
       cardDesc: 'Legal framework, Great Railroad Strike 1877, Haymarket 1886, Pullman Strike 1894, AFL.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
@@ -90,7 +90,7 @@
     },
     {
       title: 'Checkpoint 2: Abolition and Reform Movements',
-      subtitle: 'Checks Learning Target 2, abolitionism, education, public health, and temperance.',
+      subtitle: 'Checks Learning Target 2 — abolitionism, education, public health, and temperance.',
       cardDesc: 'British abolition 1833, Frederick Douglass, Cotton Famine, Forster Act, Chadwick, Bazalgette, WCTU.',
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],

@@ -123,7 +123,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace the full spectrum of reactions to power structures in the 20th century, from principled nonviolence to militarized state repression to movements that targeted civilians. The AP skill is not to equate these reactions but to explain each one's logic, context, and consequences.",
     videos: [
       {
-        title: "Heimler's History, Topic 8.7: Global Resistance to Power",
+        title: "Heimler's History — Topic 8.7: Global Resistance to Power",
         url: "https://youtu.be/placeholder-8-7",
         youtubeId: "placeholder-8-7",
         prompt: "Use this clip to review the three CED categories of reaction to power structures: nonviolent challenge (Gandhi, MLK, Mandela), militarized-state response (Pinochet, Franco, Amin, military-industrial complex), and movements using violence against civilians (Shining Path, Al-Qaeda). Focus on what distinguishes the three categories, not just who did what, but how the method connects to the goal."

@@ -96,8 +96,8 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: What Changed, Silver, Demography, and Environment',
-      subtitle: 'Checks Learning Targets 1 and 2, economic and demographic changes.',
+      title: 'Checkpoint 1: What Changed — Silver, Demography, and Environment',
+      subtitle: 'Checks Learning Targets 1 and 2 — economic and demographic changes.',
       cardDesc: 'Silver economy, global price revolution, Columbian Exchange, and demographic collapse.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
@@ -107,8 +107,8 @@
       focus: ['Explain the Manila Galleon trade: route, commodities, and why Chinese demand drove it.', 'Explain the global price revolution: cause (silver influx), effects (inflation, economic disruption).', 'Choose one demographic or environmental change: explain what changed, what caused it, and its long-term consequences.']
     },
     {
-      title: 'Checkpoint 2: What Continued, and the Overall Takeaway',
-      subtitle: 'Checks Learning Target 3, continuities and CCOT synthesis.',
+      title: 'Checkpoint 2: What Continued — and the Overall Takeaway',
+      subtitle: 'Checks Learning Target 3 — continuities and CCOT synthesis.',
       cardDesc: 'Indian Ocean trade, Chinese economic dominance, Islamic networks, and CCOT synthesis.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],

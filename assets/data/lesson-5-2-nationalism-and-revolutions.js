@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.2",
     title: "Nationalism and Revolutions",
-    subtitle: "How Enlightenment ideas fueled the Atlantic Revolutions, and why the Haitian Revolution was the most radical test of whether universal rights were actually universal",
+    subtitle: "How Enlightenment ideas fueled the Atlantic Revolutions — and why the Haitian Revolution was the most radical test of whether universal rights were actually universal",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -124,7 +124,7 @@ window.BEHISTORICAL_LESSON = {
           "Structural causes of the French Revolution: France was nearly bankrupt after supporting the American Revolution. The tax system exempted the aristocracy and the Church, placing the burden entirely on commoners. Food shortages in 1788–1789 pushed ordinary people to desperation. The financial crisis created the conditions; Enlightenment ideas provided the vocabulary for what came next."
         ],
         image: {
-          title: "Columbus Taking Possession, Atlantic World Context",
+          title: "Columbus Taking Possession — Atlantic World Context",
           caption: "The Atlantic Revolutions took place in a world shaped by European colonialism, the Atlantic slave trade, and global commercial networks. The same Atlantic world that produced enormous wealth for European colonial powers also produced the contradictions, between proclaimed universal rights and the reality of slavery and colonial rule, that the Haitian Revolution would expose most sharply.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg"
@@ -139,7 +139,7 @@ window.BEHISTORICAL_LESSON = {
           "The aftermath: Haiti's independence terrified slaveholders across the Atlantic world. France demanded **150 million francs** (later reduced to 90 million) as the price of diplomatic recognition, an enormous debt that Haiti did not finish paying until 1947. This 'independence debt' structurally impoverished Haiti for a century and a half. The United States refused to recognize Haiti until 1862, during the Civil War, because Southern slaveholders feared the implications. The Haitian Revolution is the clearest test of whether Enlightenment universalism was real: it was real enough to inspire a revolution, but the existing Atlantic world punished Haiti for taking it seriously."
         ],
         image: {
-          title: "Florentine Codex, Demographic Catastrophe as Context",
+          title: "Florentine Codex — Demographic Catastrophe as Context",
           caption: "The demographic catastrophe of the Columbian Exchange, which reduced indigenous populations by 50–90%, created the labor vacuum that the Atlantic slave trade filled. The millions of enslaved Africans brought to Saint-Domingue as replacements were the same people who, in 1791, would claim the universal rights that European and American revolutionaries had proclaimed.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
@@ -154,7 +154,7 @@ window.BEHISTORICAL_LESSON = {
           "**Nationalism**, the ideology that emerged from Atlantic Revolutionary movements, held that people sharing a common culture, language, history, or ethnicity should have their own self-governing state. Initially linked to liberal and democratic ideals ('the right of peoples to self-determination'), nationalism became the most powerful destabilizing force in 19th-century politics. The **Ottoman Empire** faced Greek independence (1821–1829), Serbian autonomy, and Bulgarian nationalism. The **Habsburg Empire** faced Hungarian, Czech, Italian, and German nationalist movements. The **Russian Empire** faced Polish nationalist uprisings. For the AP exam, nationalism matters primarily as a **cause** of the instability and eventual collapse of multiethnic empires in the 19th and early 20th centuries."
         ],
         image: {
-          title: "Ferdinand Magellan, Atlantic World Connected",
+          title: "Ferdinand Magellan — Atlantic World Connected",
           caption: "The Atlantic world that produced the Age of Revolutions had been built over three centuries of European exploration, colonialism, and forced migration. The same global connections that made European empires wealthy also created the contradictions, between proclaimed universal rights and the reality of slavery and colonial rule, that the Atlantic Revolutions would expose.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg"

@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 6: Consequences of Industrialization",
     topic: "Topic 6.1",
     title: "Rationales for Imperialism",
-    subtitle: "How cultural, religious, and racial ideologies, Social Darwinism, nationalism, the civilizing mission, and missionary conversion, were used to justify imperial expansion from 1750 to 1900",
+    subtitle: "How cultural, religious, and racial ideologies — Social Darwinism, nationalism, the civilizing mission, and missionary conversion — were used to justify imperial expansion from 1750 to 1900",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -164,7 +164,7 @@ window.BEHISTORICAL_LESSON = {
     ],
     videos: [
       {
-        title: "Heimler's History, AP World Unit 6 imperialism rationales (search)",
+        title: "Heimler's History — AP World Unit 6 imperialism rationales (search)",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+6.1+rationales+for+imperialism",
         prompt: "Watch for how a single ideology (e.g., Social Darwinism or the civilizing mission) gets turned into a justification for conquest."
       }
@@ -201,7 +201,7 @@ window.BEHISTORICAL_LESSON = {
   checkpoints: [
     {
       title: "Checkpoint 1: How the Ideologies Justified Empire",
-      subtitle: "Checks Learning Targets 1 & 2, explaining how the rationales worked and reinforced each other.",
+      subtitle: "Checks Learning Targets 1 & 2 — explaining how the rationales worked and reinforced each other.",
       cardDesc: "Pick two ideologies, explain how each justified expansion, then show how they reinforced each other.",
       learningTargets: [
         "I can explain how racial ideologies like Social Darwinism were used to justify imperial expansion.",
@@ -218,7 +218,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "Checkpoint 2: Ideology and the Morality of Conquest",
-      subtitle: "Checks Learning Target 3 and the unit's argumentation focus, AP Writing Touchpoint.",
+      subtitle: "Checks Learning Target 3 and the unit's argumentation focus — AP Writing Touchpoint.",
       cardDesc: "Evaluate a claim about ideology and conquest, building an argument with evidence.",
       learningTargets: [
         "I can explain how the desire to religiously convert indigenous populations contributed to imperial ideology.",

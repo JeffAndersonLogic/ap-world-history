@@ -108,7 +108,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to track how the Great Depression ended the era of hands-off government, and how democratic, fascist, communist, and popular-nationalist states each answered the same collapse with a different kind of intervention.",
     videos: [
       {
-        title: "Heimler's History, AP World Topic 7.4",
+        title: "Heimler's History — AP World Topic 7.4",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.4+Economy+in+the+Interwar+Period",
         previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg",
         prompt: "Watch for why governments took a more active economic role after WWI and the Depression, the Soviet Five-Year Plans and their human cost, and the New Deal, fascist corporatist, and Brazilian/Mexican responses."

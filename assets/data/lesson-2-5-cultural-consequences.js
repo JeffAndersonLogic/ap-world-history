@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
     intro: 'Trade routes did not only move goods, they moved ideas, beliefs, technologies, and agricultural practices. Use these segments to understand what diffused, where it went, and why it mattered for AP World History.',
     videos: [
       {
-        title: 'CULTURAL Effects of Connectivity [AP World Review, Unit 2 Topic 5]',
+        title: 'CULTURAL Effects of Connectivity [AP World Review—Unit 2 Topic 5]',
         url: 'https://youtu.be/buccc2fFw4U',
         youtubeId: 'buccc2fFw4U',
         prompt: 'Track how long-distance exchange spread belief systems, technologies, languages, and cultural practices.'

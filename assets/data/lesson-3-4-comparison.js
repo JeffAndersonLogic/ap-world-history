@@ -152,7 +152,7 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: 'Meaningful Differences, What Set Each Empire Apart',
+        title: 'Meaningful Differences — What Set Each Empire Apart',
         bullets: [
           '**Religious policy** was the sharpest line of difference. The Safavids forcibly converted their predominantly Sunni population to Shia Islam, creating permanent conflict with the Sunni Ottomans. The Mughals governed a Hindu-majority subcontinent: Akbar\'s tolerance (including the Din-i-Ilahi) reflected the reality that you cannot oppress 80% of your population. Aurangzeb\'s later reversal, imposing jizya on Hindus, produced exactly the revolts Akbar\'s tolerance avoided. The Ottoman millet system offered a middle path: recognized religious communities governed themselves internally while remaining loyal to the empire.',
           '**The composition of conquered populations** shaped administrative strategy more than ideology. The Qing Manchu rulers governed a Han Chinese majority that outnumbered them perhaps 50 to 1. The solution: maintain Manchu ethnic identity through the Banner system while adopting Confucian bureaucratic traditions the Han recognized as legitimate. Russian expansion across Siberia encountered sparsely populated indigenous peoples, producing a colonial extraction model (furs, tribute) very different from the systems the Mughals or Ottomans developed for governing dense urban populations.',

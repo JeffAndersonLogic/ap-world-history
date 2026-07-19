@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 7: Global Conflict",
     topic: "Topic 7.5",
     title: "Unresolved Tensions After World War I",
-    subtitle: "Empires did not end in 1918, they reorganized: how Western and Japanese imperial states maintained and expanded territorial control between the wars while anti-imperial resistance built the pressure that would reshape the map",
+    subtitle: "Empires did not end in 1918 — they reorganized: how Western and Japanese imperial states maintained and expanded territorial control between the wars while anti-imperial resistance built the pressure that would reshape the map",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -104,7 +104,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to follow the Learning Objective question directly: between the wars, what CHANGED in territorial holdings, and what stayed the same? Empires did not end in 1918. They reorganized, and the tensions they left unresolved became the fuse for the next war.",
     videos: [
       {
-        title: "Heimler's History, AP World Topic 7.5",
+        title: "Heimler's History — AP World Topic 7.5",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.5+Unresolved+Tensions+After+World+War+I",
         previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Big_four.jpg",
         prompt: "Watch for how the League of Nations mandate system transferred former German and Ottoman territories to Britain and France, how Japan expanded through Manchukuo and the Greater East Asia Co-Prosperity Sphere, and how the Indian National Congress and West African resistance challenged imperial rule."

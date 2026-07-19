@@ -73,7 +73,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: The Technologies of Industrialization',
-      subtitle: 'Checks Learning Target 1, how industrial technologies transformed economic life.',
+      subtitle: 'Checks Learning Target 1 — how industrial technologies transformed economic life.',
       cardDesc: 'Railroads, telegraph, Bessemer steel, electricity, and their interdependence.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
@@ -84,7 +84,7 @@
     },
     {
       title: 'Checkpoint 2: Environmental and Social Costs of Industrialization',
-      subtitle: 'Checks Learning Target 2, how industrial demand transformed environments and labor in colonized regions.',
+      subtitle: 'Checks Learning Target 2 — how industrial demand transformed environments and labor in colonized regions.',
       cardDesc: 'Coal pollution, rubber extraction, guano, deforestation, and the global reach of industrial demand.',
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],

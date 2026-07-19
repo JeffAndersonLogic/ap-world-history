@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.10",
     title: "Continuity and Change in the Industrial Age",
-    subtitle: "Arguing the extent to which industrialization transformed economic, technological, and political life between 1750 and 1900, and what stayed the same",
+    subtitle: "Arguing the extent to which industrialization transformed economic, technological, and political life between 1750 and 1900 — and what stayed the same",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
@@ -150,7 +150,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "Topic 5.10 is not new content, it is the unit's argument. The Learning Objective asks you to explain the extent to which industrialization brought change from 1750 to 1900. That word, extent, means you must weigh two things against each other: what genuinely transformed, and what carried on. These cards organize the evidence into change, continuity, and the argument that ties them together.",
     segments: [
       {
-        title: "Change, A New Economic Order",
+        title: "Change — A New Economic Order",
         bullets: [
           "The biggest economic change was the rise of **industrial capitalism**: wealth now came from factories, machines, and invested capital, not only from land (KC-5.1).",
           "Mass production made goods cheaper and more plentiful. The textile industry, driven by inventions like the spinning jenny and the power loom, put manufactured cloth within reach of ordinary people for the first time.",
@@ -164,7 +164,7 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "Change, Shrinking the Globe",
+        title: "Change — Shrinking the Globe",
         bullets: [
           "**Railroads, steamships, and the telegraph** collapsed distance, opening interior regions and accelerating trade and migration worldwide (KC-5.1.IV).",
           "Rail projects such as the Transcontinental Railroad moved people and goods across continents at speeds impossible a generation earlier.",
@@ -178,7 +178,7 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "Continuity, Old Hierarchies, New Names",
+        title: "Continuity — Old Hierarchies, New Names",
         bullets: [
           "Industrialization created new classes, but **steep hierarchy itself persisted**: a small group held the wealth and power while the majority labored, the long-standing pattern, in industrial clothing.",
           "The **struggle for rights and representation continued**, not started. Labor unions organized workers to demand better wages and hours, extending older fights over who counts politically.",
@@ -192,7 +192,7 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "Continuity, Ideas That Outlasted the 18th Century",
+        title: "Continuity — Ideas That Outlasted the 18th Century",
         bullets: [
           "The **Enlightenment** did not end with the 1700s. Its ideas about reason, natural rights, and the social contract kept circulating and kept preceding revolutions across the period (KC-5.3.I, KC-5.3.I.A).",
           "The era of **revolution and the building of new nation-states** that began in the 18th century continued throughout the 1800s (KC-5.3).",
@@ -223,7 +223,7 @@ window.BEHISTORICAL_LESSON = {
     ],
     videos: [
       {
-        title: "Heimler's History, AP World Unit 5 review (search)",
+        title: "Heimler's History — AP World Unit 5 review (search)",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+Unit+5+continuity+and+change+industrialization",
         prompt: "Watch for how to weigh change against continuity when arguing the extent of transformation."
       }
@@ -264,7 +264,7 @@ window.BEHISTORICAL_LESSON = {
   checkpoints: [
     {
       title: "Checkpoint 1: Marshal the Evidence",
-      subtitle: "Checks Learning Targets 1 & 2, gathering evidence of change and of continuity.",
+      subtitle: "Checks Learning Targets 1 & 2 — gathering evidence of change and of continuity.",
       cardDesc: "Build two evidence lists, what changed and what stayed the same, before you argue.",
       learningTargets: [
         "I can use specific developments from across Unit 5 as evidence of the changes industrialization brought between 1750 and 1900, in economic life, technology, and global connectivity.",
@@ -281,7 +281,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "Checkpoint 2: Write the Argument",
-      subtitle: "Checks Learning Target 3, the full 'extent to which' argument.",
+      subtitle: "Checks Learning Target 3 — the full 'extent to which' argument.",
       cardDesc: "Turn your evidence into a defensible argument about the extent of change.",
       learningTargets: [
         "I can write a defensible 'extent to which' argument that weighs change against continuity and supports a clear thesis with specific evidence."
