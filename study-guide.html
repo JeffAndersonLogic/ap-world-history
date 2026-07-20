@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personalized Study Guide | BeHistorical AP World History</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/behistorical-unit-hub.css">
+  <link rel="stylesheet" href="assets/css/behistorical-brand-lock.css">
+  <style>
+    .sg-hero{padding:44px min(8vw,88px) 20px}
+    .sg-eyebrow{font-family:var(--ui);text-transform:uppercase;letter-spacing:.27em;color:var(--burnished-bronze);font-size:.82rem;font-weight:800;margin-bottom:12px}
+    .sg-hero h1{font-family:var(--serif-title);font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.04;margin:0 0 14px;color:var(--blackened-steel);letter-spacing:-.03em}
+    .sg-hero p.sg-lead{max-width:760px;font-size:1.06rem;color:#3f4141;margin:0}
+    .sg-unitbar{display:flex;flex-wrap:wrap;gap:8px;padding:8px min(8vw,88px) 4px}
+    .sg-unitbar .sg-ulabel{width:100%;font-family:var(--ui);text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:800;color:var(--aged-iron);margin-bottom:4px}
+    .sg-uchip{font-family:var(--ui);font-weight:700;font-size:.8rem;padding:8px 13px;border:1px solid var(--soft-line);background:var(--clean-paper);color:var(--gunmetal-gray);text-decoration:none;border-radius:2px;min-height:38px;display:inline-flex;align-items:center}
+    .sg-uchip:hover{border-color:var(--aged-iron);color:var(--blackened-steel)}
+    .sg-uchip.active{background:var(--blackened-steel);color:var(--warm-paper);border-color:var(--blackened-steel)}
+    .sg-body{padding:26px min(8vw,88px) 40px}
+    .sg-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 30px}
+    .sg-step{background:#ece8df;border:1px solid var(--soft-line);padding:16px 18px;font-family:var(--ui);font-size:.9rem;line-height:1.4;color:#3f4141}
+    .sg-step strong{display:block;font-weight:800;color:var(--blackened-steel);margin-bottom:5px;font-size:.86rem;text-transform:uppercase;letter-spacing:.08em}
+    .sg-step .n{color:var(--burnished-bronze)}
+    .sg-topic{border:1px solid var(--soft-line);background:var(--clean-paper);margin-bottom:16px;box-shadow:0 8px 20px rgba(26,28,29,.06)}
+    .sg-topic-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap;padding:16px 20px;background:var(--blackened-steel);color:var(--warm-paper)}
+    .sg-topic-head .sg-tnum{font-family:var(--ui);letter-spacing:.22em;font-weight:800;font-size:.72rem;color:var(--muted-sandstone)}
+    .sg-topic-head h2{font-family:var(--serif-title);font-size:1.24rem;line-height:1.15;margin:4px 0 0;color:var(--warm-paper);letter-spacing:0}
+    .sg-topic-head a.sg-revisit{font-family:var(--ui);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--antique-gold);text-decoration:none;white-space:nowrap;border-bottom:1px solid transparent}
+    .sg-topic-head a.sg-revisit:hover{border-color:var(--antique-gold)}
+    .sg-crit-intro{font-family:var(--ui);font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:var(--aged-iron);padding:14px 20px 4px}
+    .sg-crit{display:flex;gap:12px;align-items:flex-start;padding:9px 20px;cursor:pointer;border-top:1px solid #f0ece2}
+    .sg-crit:hover{background:#faf7f0}
+    .sg-crit input{margin-top:4px;width:18px;height:18px;flex:0 0 auto;accent-color:var(--burnished-bronze);cursor:pointer}
+    .sg-crit .sg-ctext{font-size:.98rem;line-height:1.45;color:var(--ink)}
+    .sg-crit .sg-theme{display:inline-block;font-family:var(--ui);font-size:.64rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--burnished-bronze);border:1px solid var(--muted-sandstone);border-radius:2px;padding:1px 6px;margin-left:8px;vertical-align:middle}
+    .sg-topic-foot{padding:8px 20px 14px}
+    .sg-alllink{background:none;border:none;font-family:var(--ui);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gunmetal-gray);cursor:pointer;padding:4px 0;text-decoration:underline}
+    .sg-alllink:hover{color:var(--blackened-steel)}
+    .sg-actions{position:sticky;bottom:0;margin-top:26px;background:var(--warm-paper);border:2px solid var(--blackened-steel);padding:18px 20px;box-shadow:0 -10px 26px rgba(26,28,29,.12)}
+    .sg-actions h3{font-family:var(--serif-title);font-size:1.2rem;margin:0 0 4px;color:var(--blackened-steel)}
+    .sg-count{font-family:var(--ui);font-size:.84rem;color:var(--aged-iron);margin:0 0 12px}
+    .sg-count b{color:var(--burnished-bronze)}
+    .sg-btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+    .sg-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 18px;font-family:var(--ui);text-transform:uppercase;letter-spacing:.1em;font-weight:800;font-size:.74rem;border:1px solid var(--blackened-steel);background:var(--blackened-steel);color:var(--warm-paper);cursor:pointer}
+    .sg-btn.secondary{background:transparent;color:var(--blackened-steel)}
+    .sg-btn.gold{background:var(--burnished-bronze);border-color:var(--burnished-bronze)}
+    .sg-btn:disabled{opacity:.4;cursor:not-allowed}
+    #sg-output{width:100%;min-height:150px;font-family:var(--ui);font-size:.86rem;line-height:1.5;padding:12px;border:1px solid var(--aged-iron);background:var(--clean-paper);color:var(--ink);resize:vertical;display:none}
+    .sg-hint{font-family:var(--ui);font-size:.78rem;color:var(--aged-iron);margin:8px 0 0}
+    .sg-note{font-family:var(--body);font-size:.92rem;color:#3f4141;background:#ece8df;border-left:4px solid var(--burnished-bronze);padding:12px 16px;margin:0 0 24px}
+    @media(max-width:760px){.sg-steps{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="page-shell"><div class="inner">
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#units">Units</a>
+      <a href="teacher/index.html">Teacher Hub</a>
+    </nav>
+
+    <header class="sg-hero">
+      <div class="sg-eyebrow">BeHistorical · AP World History</div>
+      <h1 id="sg-title">Personalized Study Guide</h1>
+      <p class="sg-lead">Tell your AI coach exactly where you still feel shaky, and it will build you a study plan around it, in your own words, using this unit's must-know evidence and AP skills.</p>
+    </header>
+
+    <nav class="sg-unitbar" id="sg-unitbar" aria-label="Choose a unit"></nav>
+
+    <main class="sg-body">
+      <div class="sg-steps">
+        <div class="sg-step"><strong><span class="n">1.</span> Self-check</strong>Read each "I can..." statement below. Tick the ones you're still shaky on. Your choices save on this device.</div>
+        <div class="sg-step"><strong><span class="n">2.</span> Build the prompt</strong>Press "Build my study-guide prompt." BeHistorical assembles your weak spots, key terms, and AP skills into a coach prompt.</div>
+        <div class="sg-step"><strong><span class="n">3.</span> Coach yourself</strong>Copy it, open the MagicSchool AI Coach, and paste. It will re-teach and quiz you on exactly those items.</div>
+      </div>
+
+      <div id="sg-topics"></div>
+
+      <section class="sg-actions" aria-label="Build your study guide">
+        <h3>Your study-guide prompt</h3>
+        <p class="sg-count" id="sg-count">Nothing selected yet, tick the statements you want to review.</p>
+        <div class="sg-btnrow">
+          <button class="sg-btn" id="sg-build" type="button">Build my study-guide prompt</button>
+          <button class="sg-btn secondary" id="sg-copy" type="button" style="display:none">Copy prompt</button>
+          <button class="sg-btn gold" id="sg-open" type="button" style="display:none">Open AI Coach ↗</button>
+        </div>
+        <textarea id="sg-output" readonly aria-label="Generated study-guide prompt"></textarea>
+        <p class="sg-hint" id="sg-hint"></p>
+      </section>
+
+      <p class="sg-note" style="margin-top:26px">Prototype note: this guide is powered by what you tell it plus your class's AP taxonomy. Your selections never leave this browser, they only shape the prompt you copy into the coach.</p>
+    </main>
+
+    <footer><div class="footer-brand">BeHistorical</div><p>AP World History interactive eBook · Think like a historian · Read evidence, interpret change, explain significance.</p></footer>
+  </div></div>
+
+  <script src="assets/data/study-guide-manifest.js"></script>
+  <script>
+  (function () {
+    var M = window.STUDY_GUIDE_MANIFEST;
+    var topicsEl = document.getElementById('sg-topics');
+
+    if (!M || !Array.isArray(M.units) || !M.units.length) {
+      topicsEl.innerHTML = '<p class="sg-note">Study-guide data has not been generated yet. Run <code>node scripts/generate-study-guide-manifest.js</code>.</p>';
+      return;
+    }
+
+    // ── Which unit? ?unit=N, default 1 ──────────────────────────────────────
+    var params = new URLSearchParams(window.location.search);
+    var wanted = parseInt(params.get('unit'), 10);
+    var unit = M.units.find(function (u) { return u.num === wanted; }) || M.units[0];
+    var storeKey = 'bh-studyguide-u' + unit.num;
+
+    document.getElementById('sg-title').textContent = 'Unit ' + unit.num + ' Study Guide';
+    document.title = 'Unit ' + unit.num + ' Study Guide | BeHistorical';
+
+    // ── Unit picker ─────────────────────────────────────────────────────────
+    var bar = document.getElementById('sg-unitbar');
+    var label = document.createElement('span');
+    label.className = 'sg-ulabel';
+    label.textContent = 'Choose a unit';
+    bar.appendChild(label);
+    M.units.forEach(function (u) {
+      var a = document.createElement('a');
+      a.className = 'sg-uchip' + (u.num === unit.num ? ' active' : '');
+      a.href = 'study-guide.html?unit=' + u.num;
+      a.textContent = 'Unit ' + u.num;
+      a.title = u.title;
+      bar.appendChild(a);
+    });
+
+    // ── Restore saved selections ────────────────────────────────────────────
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem(storeKey) || '{}') || {}; } catch (e) { saved = {}; }
+
+    function critId(topicIdx, critIdx) { return topicIdx + ':' + critIdx; }
+
+    function save() {
+      try { localStorage.setItem(storeKey, JSON.stringify(saved)); } catch (e) {}
+    }
+
+    // ── Render topics ───────────────────────────────────────────────────────
+    unit.topics.forEach(function (t, ti) {
+      var card = document.createElement('div');
+      card.className = 'sg-topic';
+
+      var head = document.createElement('div');
+      head.className = 'sg-topic-head';
+      var htxt = document.createElement('div');
+      var num = document.createElement('div');
+      num.className = 'sg-tnum';
+      num.textContent = 'TOPIC ' + t.num;
+      var h2 = document.createElement('h2');
+      h2.textContent = t.title;
+      htxt.appendChild(num); htxt.appendChild(h2);
+      head.appendChild(htxt);
+      if (t.lessonUrl) {
+        var revisit = document.createElement('a');
+        revisit.className = 'sg-revisit';
+        revisit.href = t.lessonUrl;
+        revisit.textContent = 'Revisit lesson →';
+        head.appendChild(revisit);
+      }
+      card.appendChild(head);
+
+      var intro = document.createElement('div');
+      intro.className = 'sg-crit-intro';
+      intro.textContent = "Tick anything you can't confidently do yet";
+      card.appendChild(intro);
+
+      t.criteria.forEach(function (c, ci) {
+        var id = critId(ti, ci);
+        var row = document.createElement('label');
+        row.className = 'sg-crit';
+        var box = document.createElement('input');
+        box.type = 'checkbox';
+        box.checked = !!saved[id];
+        box.addEventListener('change', function () {
+          if (box.checked) { saved[id] = true; } else { delete saved[id]; }
+          save();
+          updateCount();
+        });
+        var span = document.createElement('span');
+        span.className = 'sg-ctext';
+        span.textContent = c.text;
+        if (c.theme) {
+          var th = document.createElement('span');
+          th.className = 'sg-theme';
+          th.textContent = c.theme;
+          span.appendChild(th);
+        }
+        row.appendChild(box);
+        row.appendChild(span);
+        card.appendChild(row);
+      });
+
+      var foot = document.createElement('div');
+      foot.className = 'sg-topic-foot';
+      var all = document.createElement('button');
+      all.type = 'button';
+      all.className = 'sg-alllink';
+      all.textContent = 'Select all in this topic';
+      all.addEventListener('click', function () {
+        var boxes = card.querySelectorAll('input[type=checkbox]');
+        boxes.forEach(function (b, ci) {
+          if (!b.checked) { b.checked = true; saved[critId(ti, ci)] = true; }
+        });
+        save();
+        updateCount();
+      });
+      foot.appendChild(all);
+      card.appendChild(foot);
+
+      topicsEl.appendChild(card);
+    });
+
+    // ── Count + gating ──────────────────────────────────────────────────────
+    var countEl = document.getElementById('sg-count');
+    var buildBtn = document.getElementById('sg-build');
+    function selectedCount() { return Object.keys(saved).length; }
+    function updateCount() {
+      var n = selectedCount();
+      if (n === 0) {
+        countEl.innerHTML = 'Nothing selected yet, tick the statements you want to review.';
+        buildBtn.disabled = true;
+      } else {
+        countEl.innerHTML = 'You have flagged <b>' + n + '</b> item' + (n === 1 ? '' : 's') + ' to review.';
+        buildBtn.disabled = false;
+      }
+    }
+    updateCount();
+
+    // ── Build the coach prompt ──────────────────────────────────────────────
+    function uniq(arr) {
+      var seen = {}, out = [];
+      arr.forEach(function (x) { if (x && !seen[x]) { seen[x] = 1; out.push(x); } });
+      return out;
+    }
+
+    function buildPrompt() {
+      var sections = [];
+      var allSkills = [];
+
+      unit.topics.forEach(function (t, ti) {
+        var picked = t.criteria.filter(function (c, ci) { return saved[critId(ti, ci)]; });
+        if (!picked.length) return;
+
+        var themes = uniq(picked.map(function (c) { return c.theme; }));
+        var lines = [];
+        lines.push('Topic ' + t.num + ' — ' + t.title);
+        picked.forEach(function (c) { lines.push('  • ' + c.text); });
+
+        if (t.terms && t.terms.length) {
+          lines.push('  Must-know terms: ' + t.terms.join(', ') + '.');
+        }
+        var examples = uniq((t.keyConcepts || [])
+          .filter(function (k) { return !themes.length || themes.indexOf(k.theme) !== -1; })
+          .reduce(function (acc, k) { return acc.concat(k.examples || []); }, []));
+        if (!examples.length) {
+          examples = uniq((t.keyConcepts || []).reduce(function (acc, k) { return acc.concat(k.examples || []); }, []));
+        }
+        if (examples.length) {
+          lines.push('  Evidence to know: ' + examples.join(', ') + '.');
+        }
+        allSkills = allSkills.concat(t.skills || []);
+        sections.push(lines.join('\n'));
+      });
+
+      var skills = uniq(allSkills);
+      var out = [];
+      out.push('You are my AP World History study coach. I just finished Unit ' + unit.num + ': ' + unit.title + ', and I want a personalized study guide.');
+      out.push('');
+      out.push('Here is where I still feel shaky:');
+      out.push('');
+      out.push(sections.join('\n\n'));
+      out.push('');
+      if (skills.length) {
+        out.push('The AP reasoning skills this unit practices are: ' + skills.join(', ') + '.');
+        out.push('');
+      }
+      out.push('Please coach me. For each item above:');
+      out.push('1. Re-explain the idea in plain language with one concrete historical example.');
+      out.push('2. Quiz me with two AP-style questions, at least one that uses a reasoning skill listed above.');
+      out.push('3. Give me a one-sentence "BeReady" takeaway I can memorize.');
+      out.push('');
+      out.push('Go one item at a time and wait for my answer before moving on. Start by asking me which item I want to begin with.');
+      return out.join('\n');
+    }
+
+    // ── Wire the buttons (mirrors the First & 10 builder pattern) ────────────
+    var outputEl = document.getElementById('sg-output');
+    var copyBtn = document.getElementById('sg-copy');
+    var openBtn = document.getElementById('sg-open');
+    var hint = document.getElementById('sg-hint');
+
+    buildBtn.addEventListener('click', function () {
+      if (selectedCount() === 0) return;
+      outputEl.value = buildPrompt();
+      outputEl.style.display = 'block';
+      copyBtn.style.display = 'inline-flex';
+      openBtn.style.display = 'inline-flex';
+      hint.textContent = 'Copy this, then open the AI Coach and paste it as your first message.';
+      outputEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+
+    copyBtn.addEventListener('click', function () {
+      outputEl.style.display = 'block';
+      outputEl.select();
+      var done = function () { copyBtn.textContent = 'Copied ✓'; setTimeout(function () { copyBtn.textContent = 'Copy prompt'; }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(outputEl.value).then(done, function () { document.execCommand('copy'); done(); });
+      } else {
+        document.execCommand('copy'); done();
+      }
+    });
+
+    openBtn.addEventListener('click', function () {
+      window.open(M.magicSchoolUrl, '_blank', 'noopener');
+    });
+  })();
+  </script>
+</body>
+</html>

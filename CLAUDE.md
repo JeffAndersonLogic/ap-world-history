@@ -12,6 +12,7 @@
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios.
 - `node scripts/build-unit9.js`, deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
+- `node scripts/generate-study-guide-manifest.js`, refresh `assets/data/study-guide-manifest.js` (the per-unit AP taxonomy) after editing any lesson's success criteria, key concepts, checkpoint terms, or skill mappings. Consumed by `study-guide.html`.
 
 The student entry point is `index.html`. The project inventory is `teacher/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file.
 
