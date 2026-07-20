@@ -1,0 +1,453 @@
+<title>BeHistorical — AndersonLogic AI</title>
+<style>
+  :root{
+    --ink:#16181A; --ink-2:#1E2124; --ink-3:#282C31;
+    --paper:#F1EADB; --paper-2:#FBF6EC; --card:#FCF8F0;
+    --gold:#C9A24B; --gold-2:#E6CB84; --gold-deep:#9C7A2C;
+    --teal:#4FA9B0;
+    --ink-text:#26221C; --mute-d:#9BA1A7; --mute-l:#6E6656;
+    --line-d:rgba(255,255,255,.10); --line-l:rgba(38,34,28,.14);
+    --serif:'Iowan Old Style','Palatino Linotype','Book Antiqua',Georgia,'Times New Roman',serif;
+    --sans:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    background:#0C0D0E;
+    font-family:var(--sans);
+    color:#fff;
+    overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* ambient background */
+  body::before{
+    content:"";position:fixed;inset:0;
+    background:
+      radial-gradient(120% 90% at 15% 0%, #202327 0%, #0C0D0E 60%),
+      radial-gradient(80% 80% at 100% 100%, rgba(201,162,75,.08), transparent 55%);
+    z-index:0;
+  }
+
+  /* ---- scaling stage: design size 1280x720 ---- */
+  #viewport{position:fixed;inset:0;z-index:1;display:flex;align-items:center;justify-content:center}
+  #stage{
+    width:1280px;height:720px;position:relative;
+    transform-origin:center center;
+    border-radius:14px;overflow:hidden;
+    box-shadow:0 40px 120px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.05);
+  }
+  .slide{
+    position:absolute;inset:0;
+    padding:64px 72px;
+    display:none;
+    flex-direction:column;
+  }
+  .slide.active{display:flex}
+  .s-dark{background:var(--ink);color:#fff}
+  .s-paper{background:linear-gradient(180deg,var(--paper-2),var(--paper));color:var(--ink-text)}
+
+  /* faint manuscript baseline on paper slides */
+  .s-paper::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:linear-gradient(var(--line-l) 1px, transparent 1px);
+    background-size:100% 44px;background-position:0 64px;opacity:.35;
+  }
+  .slide > *{position:relative;z-index:2}
+
+  /* ---- reveal animation ---- */
+  .slide.active .reveal{animation:rise .62s cubic-bezier(.2,.7,.2,1) both}
+  .slide.active .reveal:nth-child(1){animation-delay:.02s}
+  .r1{animation-delay:.08s!important}.r2{animation-delay:.16s!important}
+  .r3{animation-delay:.24s!important}.r4{animation-delay:.32s!important}
+  .r5{animation-delay:.40s!important}.r6{animation-delay:.48s!important}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.slide.active .reveal{animation:none}}
+
+  /* ---- shared type ---- */
+  .eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.32em;text-transform:uppercase;font-weight:600}
+  .s-dark .eyebrow{color:var(--gold)}
+  .s-paper .eyebrow{color:var(--gold-deep)}
+  h1,h2{font-family:var(--serif);font-weight:700;margin:0;text-wrap:balance;line-height:1.05}
+  .kicker{font-size:52px;letter-spacing:-.5px}
+  .title{font-size:40px;letter-spacing:-.3px;margin-top:14px}
+  .s-paper .title{color:var(--ink-text)}
+  .lede{font-size:18px;line-height:1.5;max-width:60ch;margin-top:16px}
+  .s-dark .lede{color:#E9E2D2}
+  .s-paper .lede{color:var(--mute-l)}
+  .muted-d{color:var(--mute-d)} .muted-l{color:var(--mute-l)}
+
+  /* gold numbered disc */
+  .disc{
+    flex:0 0 auto;display:grid;place-items:center;border-radius:50%;
+    background:linear-gradient(150deg,var(--gold-2),var(--gold));
+    color:var(--ink);font-family:var(--serif);font-weight:700;
+    box-shadow:0 6px 18px rgba(201,162,75,.28);
+  }
+
+  .foot{position:absolute;left:72px;bottom:34px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;z-index:3}
+  .foot b{color:var(--gold);font-weight:700}
+  .s-dark .foot span{color:var(--mute-d)} .s-paper .foot span{color:var(--mute-l)}
+  .pnum{position:absolute;right:72px;bottom:32px;font-family:var(--mono);font-size:13px;font-weight:600;z-index:3}
+  .s-dark .pnum{color:var(--mute-d)} .s-paper .pnum{color:var(--mute-l)}
+
+  /* ===== slide 1 title ===== */
+  .watermark{position:absolute;right:56px;top:96px;text-align:right;font-family:var(--serif);font-style:italic;line-height:1.9;font-size:26px;color:#24282D;z-index:1;user-select:none}
+  .brandline{display:flex;align-items:center;gap:12px;margin-top:22px}
+  .brandline .dot{width:9px;height:9px;border-radius:50%;background:var(--gold)}
+  .brandline span{font-family:var(--mono);font-size:13px;letter-spacing:.05em;color:#E9E2D2}
+  #stage .hero-title{font-size:104px;line-height:.98;letter-spacing:-1.5px;margin:6px 0 0}
+  .hero-title em{font-style:normal;color:var(--gold)}
+
+  /* ===== rows (problems / steps) ===== */
+  .rows{display:flex;flex-direction:column;gap:20px;margin-top:30px}
+  .row{display:flex;gap:22px;align-items:flex-start}
+  .row .disc{width:58px;height:58px;font-size:24px}
+  .row h3{font-family:var(--serif);font-size:22px;margin:2px 0 4px}
+  .s-paper .row h3{color:var(--ink-text)}
+  .row p{margin:0;font-size:15.5px;line-height:1.5;max-width:82ch}
+
+  /* ===== stat grid ===== */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:34px}
+  .stat{background:var(--ink-2);border:1px solid var(--line-d);border-radius:14px;padding:26px 22px;text-align:center}
+  .stat .big{font-family:var(--serif);font-weight:700;font-size:66px;line-height:1;color:var(--gold);letter-spacing:-1px}
+  .stat .lab{font-size:15px;font-weight:700;margin-top:12px}
+  .stat .sub{font-size:12.5px;color:var(--mute-d);margin-top:6px;line-height:1.35}
+  .band{margin-top:26px;text-align:center;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--gold-2)}
+
+  /* ===== module path grid ===== */
+  .mods{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:26px}
+  .mod{background:var(--card);border:1px solid var(--line-l);border-radius:12px;padding:16px 16px 18px;min-height:118px}
+  .mod .disc{width:40px;height:40px;font-size:14px;font-family:var(--mono);font-weight:700}
+  .mod .mname{font-size:14px;font-weight:700;margin-top:14px;line-height:1.25;color:var(--ink-text)}
+
+  /* ===== feature cards ===== */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+  .fcard{background:var(--card);border:1px solid var(--line-l);border-radius:14px;padding:22px 22px 24px}
+  .fcard h3{font-family:var(--serif);font-size:21px;margin:0 0 8px;color:var(--gold-deep)}
+  .fcard p{margin:0;font-size:14px;line-height:1.5;color:var(--mute-l)}
+
+  /* ===== two-panel (BeInTheRoom / AI) ===== */
+  .split{display:grid;grid-template-columns:1.35fr 1fr;gap:26px;margin-top:24px;align-items:start}
+  .panel{border-radius:16px;padding:26px 26px 28px}
+  .panel-dark{background:var(--ink-2);border:1px solid var(--line-d)}
+  .panel-paper{background:var(--card);border:1px solid var(--line-l)}
+  .panel-ink{background:var(--ink);border:1px solid var(--line-d)}
+  .panel h4{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 16px;color:var(--gold)}
+  .qbar{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px}
+  .qbar li{position:relative;padding-left:24px;font-size:15px;line-height:1.4;color:#EFE8D8}
+  .qbar li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+  .qbar .tot{margin-top:20px;padding-top:16px;border-top:1px solid var(--line-d);padding-left:0}
+  .qbar .tot::before{display:none}
+  .qbar .tot b{font-family:var(--serif);font-size:26px;color:var(--gold)}
+
+  .steps{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+  .step{display:flex;gap:16px;align-items:center}
+  .step .disc{width:44px;height:44px;font-size:17px}
+  .step b{font-size:17px}
+  .s-dark .step b{color:#fff}
+  .step span{color:var(--mute-d);font-size:14.5px}
+
+  .stageflow{display:flex;flex-direction:column;gap:16px}
+  .flowitem b{display:block;font-size:15.5px}
+  .flowitem span{font-size:13px;color:var(--mute-d);line-height:1.4}
+  .flowitem .n{font-family:var(--serif);color:var(--gold);font-weight:700;margin-right:6px}
+
+  .socratic{display:flex;flex-direction:column;gap:0}
+  .socratic .srow{display:flex;align-items:center;gap:14px;padding:9px 0}
+  .socratic .disc{width:34px;height:34px;font-size:13px;font-family:var(--mono)}
+  .socratic .srow span{font-size:15.5px;font-weight:700;color:var(--ink-text)}
+
+  /* ===== teacher 2x2 ===== */
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:24px}
+  .tcard{display:flex;gap:18px;background:var(--card);border:1px solid var(--line-l);border-radius:14px;padding:22px}
+  .tcard .disc{width:46px;height:46px;font-size:18px;font-family:var(--serif)}
+  .tcard h3{font-family:var(--serif);font-size:19px;margin:0 0 6px;color:var(--ink-text)}
+  .tcard p{margin:0;font-size:13.5px;line-height:1.45;color:var(--mute-l)}
+
+  /* ===== scale (dark 3 cards with check) ===== */
+  .scards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px}
+  .scard{background:var(--ink-2);border:1px solid var(--line-d);border-radius:14px;padding:24px}
+  .scard .chk{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(150deg,var(--gold-2),var(--gold));color:var(--ink);font-size:24px;font-weight:800}
+  .scard h3{font-family:var(--serif);font-size:20px;margin:16px 0 8px;color:var(--gold-2)}
+  .scard p{margin:0;font-size:14px;line-height:1.5;color:#E9E2D2}
+  .pull{margin-top:26px;font-family:var(--serif);font-style:italic;font-size:19px;color:var(--gold)}
+
+  /* ===== closing ===== */
+  .closing .pts{display:flex;flex-direction:column;gap:22px;margin-top:26px;max-width:66ch}
+  .closing .pt{display:flex;gap:16px;align-items:flex-start}
+  .closing .pt .dot{margin-top:7px;width:10px;height:10px;border-radius:50%;background:var(--gold);flex:0 0 auto}
+  .closing .pt h3{font-family:var(--serif);font-size:21px;margin:0 0 4px;color:var(--gold-2)}
+  .closing .pt p{margin:0;font-size:15px;color:var(--mute-d);line-height:1.45;max-width:60ch}
+  .signoff{position:absolute;left:72px;bottom:60px;font-family:var(--mono);font-size:14px}
+  .signoff b{color:var(--gold)} .signoff span{color:#E9E2D2}
+
+  /* ---- controls ---- */
+  #nav{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:10;display:flex;align-items:center;gap:16px;
+       background:rgba(20,22,24,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.09);
+       border-radius:999px;padding:8px 14px}
+  .navbtn{appearance:none;border:0;background:transparent;color:#cfcabf;width:34px;height:34px;border-radius:50%;
+          cursor:pointer;font-size:17px;display:grid;place-items:center;transition:.18s}
+  .navbtn:hover{background:rgba(255,255,255,.10);color:#fff}
+  .navbtn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .dots{display:flex;gap:8px;align-items:center}
+  .dot-nav{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.24);border:0;padding:0;cursor:pointer;transition:.2s}
+  .dot-nav:hover{background:rgba(255,255,255,.5)}
+  .dot-nav.on{background:var(--gold);width:22px;border-radius:999px}
+  .dot-nav:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  #counter{font-family:var(--mono);font-size:12px;color:#cfcabf;min-width:44px;text-align:center;letter-spacing:.05em}
+  .hint{position:fixed;bottom:24px;right:26px;z-index:10;font-family:var(--mono);font-size:11px;color:rgba(255,255,255,.34);letter-spacing:.06em}
+  @media (max-width:520px){.hint{display:none}}
+</style>
+
+<div id="viewport">
+  <div id="stage">
+
+    <!-- 1 TITLE -->
+    <section class="slide s-dark active" data-name="Title">
+      <div class="watermark reveal">BeReady<br>BeSurreal<br>BeInTheRoom<br>BeHistorical</div>
+      <div style="margin-top:34px">
+        <div class="eyebrow reveal r1">AndersonLogic AI &nbsp;·&nbsp; Presents</div>
+        <h1 class="hero-title reveal r2">Be<em>Historical</em></h1>
+      </div>
+      <p class="lede reveal r3" style="font-size:23px;max-width:52ch;margin-top:26px">A complete, AI-integrated platform for teaching AP World History.</p>
+      <p class="reveal r4" style="font-size:16px;font-style:italic;color:var(--mute-d);max-width:56ch;margin:10px 0 0">One consistent learning path. Ten modules. Every topic. Powered by AI that coaches — never completes.</p>
+      <div class="brandline reveal r5"><span class="dot"></span><span>Created by Jeff Anderson &nbsp;·&nbsp; A product of AndersonLogic AI</span></div>
+      <div class="pnum">01 / 10</div>
+    </section>
+
+    <!-- 2 WHY -->
+    <section class="slide s-paper" data-name="Why it exists">
+      <div class="eyebrow reveal">Why BeHistorical exists</div>
+      <h2 class="title reveal r1">Three problems every AP classroom faces right now</h2>
+      <div class="rows">
+        <div class="row reveal r2"><div class="disc">1</div><div><h3>Rigor is uneven</h3><p>AP World demands document analysis, contextualization, and evidence-based argument — but delivery varies teacher to teacher, topic to topic, and day to day.</p></div></div>
+        <div class="row reveal r3"><div class="disc">2</div><div><h3>AI arrived without a plan</h3><p>Students already use AI. Most classrooms have no structure for it — so it becomes an answer machine instead of a thinking partner.</p></div></div>
+        <div class="row reveal r4"><div class="disc">3</div><div><h3>Teachers fly blind</h3><p>By the time a unit test reveals a gap, it's too late to reteach. There's rarely a fast, honest read on what students actually understand.</p></div></div>
+      </div>
+      <p class="reveal r5" style="margin-top:26px;font-family:var(--serif);font-style:italic;font-size:18px;color:var(--gold-deep)">BeHistorical answers all three — with one repeatable system.</p>
+      <div class="foot"><b>AndersonLogic AI</b> <span>· BeHistorical</span></div>
+      <div class="pnum">02 / 10</div>
+    </section>
+
+    <!-- 3 SCOPE -->
+    <section class="slide s-dark" data-name="Scope">
+      <div class="eyebrow reveal">Scope at a glance</div>
+      <h2 class="title reveal r1">A finished course — not a demo</h2>
+      <p class="lede reveal r2">The full College Board AP World framework, plus a pre-1200 Foundations bridge — built, wired, and automatically validated.</p>
+      <div class="stats">
+        <div class="stat reveal r3"><div class="big">9</div><div class="lab">units + Foundations</div><div class="sub">the complete AP World scope</div></div>
+        <div class="stat reveal r3"><div class="big">77</div><div class="lab">complete lessons</div><div class="sub">71 topics + 6 Foundations</div></div>
+        <div class="stat reveal r4"><div class="big">61</div><div class="lab">BeInTheRoom sims</div><div class="sub">26 built to the full quality bar</div></div>
+        <div class="stat reveal r4"><div class="big">547</div><div class="lab">files auto-validated</div><div class="sub">every deploy, zero errors</div></div>
+      </div>
+      <div class="band reveal r5">~770 module instances&nbsp;&nbsp;·&nbsp;&nbsp;~231 reading questions&nbsp;&nbsp;·&nbsp;&nbsp;154 First&nbsp;&amp;&nbsp;10 files&nbsp;&nbsp;·&nbsp;&nbsp;1,700+ files in the repository</div>
+      <div class="foot"><b>AndersonLogic AI</b> <span>· BeHistorical</span></div>
+      <div class="pnum">03 / 10</div>
+    </section>
+
+    <!-- 4 MODULE PATH -->
+    <section class="slide s-paper" data-name="The 10-module path">
+      <div class="eyebrow reveal">The signature system</div>
+      <h2 class="title reveal r1">One learning path. Ten modules. Every single lesson.</h2>
+      <p class="lede reveal r2" style="max-width:none">The same pedagogical spine runs through all 77 lessons — Build Context → Learn &amp; Practice → Check Understanding — enforced automatically, so quality never drifts.</p>
+      <div class="mods">
+        <div class="mod reveal r3"><div class="disc">01</div><div class="mname">Map &amp; Geography Check</div></div>
+        <div class="mod reveal r3"><div class="disc">02</div><div class="mname">First &amp; 10 Reading</div></div>
+        <div class="mod reveal r3"><div class="disc">03</div><div class="mname">Content Delivery</div></div>
+        <div class="mod reveal r3"><div class="disc">04</div><div class="mname">BeSurreal</div></div>
+        <div class="mod reveal r3"><div class="disc">05</div><div class="mname">AP Skill Builder</div></div>
+        <div class="mod reveal r4"><div class="disc">06</div><div class="mname">Checkpoint 1</div></div>
+        <div class="mod reveal r4"><div class="disc">07</div><div class="mname">Evidence Lab</div></div>
+        <div class="mod reveal r4"><div class="disc">08</div><div class="mname">Primary Source / AI Coach</div></div>
+        <div class="mod reveal r4"><div class="disc">09</div><div class="mname">BeInTheRoom</div></div>
+        <div class="mod reveal r4"><div class="disc">10</div><div class="mname">Checkpoint 2</div></div>
+      </div>
+      <p class="reveal r5" style="margin-top:24px;font-family:var(--serif);font-style:italic;font-size:16px;color:var(--gold-deep)">Modules 04, 07, 08 &amp; 09 carry the features that make BeHistorical distinctive.</p>
+      <div class="foot"><b>AndersonLogic AI</b> <span>· BeHistorical</span></div>
+      <div class="pnum">04 / 10</div>
+    </section>
+
+    <!-- 5 SIGNATURE MODULES -->
+    <section class="slide s-paper" data-name="Signature modules">
+      <div class="eyebrow reveal">What makes it different</div>
+      <h2 class="title reveal r1">Named modules students remember</h2>
+      <div class="grid3">
+        <div class="fcard reveal r2"><h3>First &amp; 10</h3><p>A designed, textbook-quality narrative reading with vocab chips, AP-skill callouts, and three open-response questions — every topic.</p></div>
+        <div class="fcard reveal r2"><h3>BeSurreal</h3><p>A surprising, human detail that makes history concrete — printed restaurant menus in Song China — with a "what does this reveal?" prompt.</p></div>
+        <div class="fcard reveal r2"><h3>Evidence Lab</h3><p>Students select real historical evidence and connect it to a larger political, cultural, or economic claim.</p></div>
+        <div class="fcard reveal r3"><h3>Primary Source</h3><p>An authentic excerpt with full attribution and a HIPP prompt — Historical situation, Intended audience, Purpose, Point of view.</p></div>
+        <div class="fcard reveal r3"><h3>AP Skill Builder</h3><p>Focused practice on one AP reasoning skill per topic — contextualization, causation, comparison — with a scaffolded writing prompt.</p></div>
+        <div class="fcard reveal r3"><h3>BeReady</h3><p>A ten-second "takeaway" that ties institutions, beliefs, and economy into one big-picture synthesis to close each reading.</p></div>
+      </div>
+      <div class="foot"><b>AndersonLogic AI</b> <span>· BeHistorical</span></div>
+      <div class="pnum">05 / 10</div>
+    </section>
+
+    <!-- 6 BEINTHEROOM -->
+    <section class="slide s-dark" data-name="BeInTheRoom">
+      <div class="eyebrow reveal">The flagship module</div>
+      <h2 class="title reveal r1" style="font-size:46px">BeInTheRoom</h2>
+      <p class="reveal r2" style="font-style:italic;color:var(--gold-2);font-size:17px;margin:8px 0 0">Historically grounded decision simulations — not costume roleplay.</p>
+      <div class="split">
+        <div class="steps reveal r3">
+          <div class="step"><div class="disc">1</div><div><b>Enter</b> &nbsp;<span>the student steps into a real historical decision point</span></div></div>
+          <div class="step"><div class="disc">2</div><div><b>Adopt</b> &nbsp;<span>a role with genuine goals, fears, and constraints</span></div></div>
+          <div class="step"><div class="disc">3</div><div><b>Decide</b> &nbsp;<span>make a defensible recommendation under pressure</span></div></div>
+          <div class="step"><div class="disc">4</div><div><b>Defend</b> &nbsp;<span>marshal evidence; AI coaching probes the reasoning</span></div></div>
+          <div class="step"><div class="disc">5</div><div><b>Reflect</b> &nbsp;<span>step out of character and write an AP-style analysis</span></div></div>
+        </div>
+        <div class="panel panel-dark reveal r4">
+          <h4>The Quality Bar</h4>
+          <ul class="qbar">
+            <li>4+ historical roles per scenario</li>
+            <li>8–12 curated evidence chips</li>
+            <li>3 trade-off decisions, no perfect answer</li>
+            <li>2+ real historical sources</li>
+            <li>An out-of-character AP reflection</li>
+            <li class="tot"><b>61</b> &nbsp;live &amp; linked</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot"><b>AndersonLogic AI</b> <span>· BeHistorical</span></div>
+      <div class="pnum">06 / 10</div>
+    </section>
+
+    <!-- 7 AI GUARDRAILS -->
+    <section class="slide s-paper" data-name="AI guardrails">
+      <div class="eyebrow reveal">AI, with guardrails</div>
+      <h2 class="title reveal r1">AI that coaches — never completes</h2>
+      <p class="lede reveal r2" style="max-width:none">Every reading and simulation builds a ready-to-paste coaching prompt and hands it to the class MagicSchool bot. The AI asks one question at a time — and is explicitly forbidden from writing the answer.</p>
+      <div class="split" style="grid-template-columns:1fr 1fr">
+        <div class="panel panel-paper reveal r3">
+          <h4 style="color:var(--gold-deep)">The 6-Stage Socratic Dialogue</h4>
+          <div class="socratic">
+            <div class="srow"><div class="disc">1</div><span>Role understanding</span></div>
+            <div class="srow"><div class="disc">2</div><span>Evidence check</span></div>
+            <div class="srow"><div class="disc">3</div><span>Trade-off</span></div>
+            <div class="srow"><div class="disc">4</div><span>Opposing perspective</span></div>
+            <div class="srow"><div class="disc">5</div><span>Historical thinking</span></div>
+            <div class="srow"><div class="disc">6</div><span>Revision</span></div>
+          </div>
+        </div>
+        <div class="panel panel-ink reveal r4">
+          <h4>How Work Flows</h4>
+          <div class="stageflow">
+            <div class="flowitem"><b style="color:#fff"><span class="n">1</span>Think in BeHistorical</b><span>students draft and reason inside the platform</span></div>
+            <div class="flowitem"><b style="color:#fff"><span class="n">2</span>Coach in MagicSchool</b><span>the built prompt drives one-question-at-a-time dialogue</span></div>
+            <div class="flowitem"><b style="color:#fff"><span class="n">3</span>Capture to Google Forms</b><span>responses auto-fill a prefilled form — unit, topic, skills tagged</span></div>
+            <div class="flowitem"><b style="color:#fff"><span class="n">4</span>Submit in Canvas</b><span>assessed work lands where teachers already grade</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="foot"><b>AndersonLogic AI</b> <span>· BeHistorical</span></div>
+      <div class="pnum">07 / 10</div>
+    </section>
+
+    <!-- 8 TEACHER -->
+    <section class="slide s-paper" data-name="Teacher analytics">
+      <div class="eyebrow reveal">For the teacher</div>
+      <h2 class="title reveal r1">A live read on what students understand</h2>
+      <p class="lede reveal r2" style="max-width:none">Student responses flow into an analytics layer that turns raw answers into teaching decisions — before the unit test, not after.</p>
+      <div class="grid2">
+        <div class="tcard reveal r3"><div class="disc">1</div><div><h3>Command Center</h3><p>A build dashboard that reads the live repository — every deliverable, unit by unit, tracked in real time.</p></div></div>
+        <div class="tcard reveal r3"><div class="disc">2</div><div><h3>Response analytics</h3><p>Counts responses, averages confidence, and flags blank, short, or low-confidence answers automatically.</p></div></div>
+        <div class="tcard reveal r4"><div class="disc">3</div><div><h3>Misconception detection</h3><p>Surfaces recurring error patterns and gaps in AP writing — missing reasoning, weak evidence use.</p></div></div>
+        <div class="tcard reveal r4"><div class="disc">4</div><div><h3>Reteach suggestions</h3><p>Turns those patterns into concrete, targeted reteach recommendations, filterable by class period.</p></div></div>
+      </div>
+      <div class="foot"><b>AndersonLogic AI</b> <span>· BeHistorical</span></div>
+      <div class="pnum">08 / 10</div>
+    </section>
+
+    <!-- 9 BUILT LIKE SOFTWARE -->
+    <section class="slide s-dark" data-name="Why it scales">
+      <div class="eyebrow reveal">Why it scales</div>
+      <h2 class="title reveal r1">Built like software, not a slide folder</h2>
+      <p class="lede reveal r2" style="max-width:none">The reason quality holds across 77 lessons — and the reason this method transfers to any course — is engineering discipline underneath.</p>
+      <div class="scards">
+        <div class="scard reveal r3"><div class="chk">✓</div><h3>Automated validation</h3><p>A 547-file audit runs on every change — module order, form wiring, and simulation quality gates. Zero-error deploys.</p></div>
+        <div class="scard reveal r3"><div class="chk">✓</div><h3>Deterministic builders</h3><p>Whole units are generated from data by scripts — so a fix or upgrade rolls out everywhere, consistently, at once.</p></div>
+        <div class="scard reveal r4"><div class="chk">✓</div><h3>Codified quality gates</h3><p>Design rules live in written blueprints and are enforced by machine — a scenario can't ship until it passes the theme-alignment gate.</p></div>
+      </div>
+      <p class="pull reveal r5">This is the difference between a great teacher's materials and a product a district can adopt.</p>
+      <div class="foot"><b>AndersonLogic AI</b> <span>· BeHistorical</span></div>
+      <div class="pnum">09 / 10</div>
+    </section>
+
+    <!-- 10 CLOSING -->
+    <section class="slide s-dark closing" data-name="Where this goes">
+      <div class="watermark reveal">BeReady<br>BeSurreal<br>BeInTheRoom<br>BeHistorical</div>
+      <div class="eyebrow reveal">Where this goes</div>
+      <h2 class="reveal r1" style="font-family:var(--serif);font-weight:700;font-size:56px;letter-spacing:-.5px;margin-top:12px">A method — not just a course</h2>
+      <div class="pts">
+        <div class="pt reveal r2"><div class="dot"></div><div><h3>A repeatable framework</h3><p>The 10-module path, the AI guardrails, and the build system are subject-agnostic — ready to lift into any AP or core course.</p></div></div>
+        <div class="pt reveal r3"><div class="dot"></div><div><h3>Professional development</h3><p>The system itself is the curriculum: a concrete model for teaching with AI responsibly, backed by working proof.</p></div></div>
+        <div class="pt reveal r4"><div class="dot"></div><div><h3>A platform to grow on</h3><p>BeHistorical is the first product under AndersonLogic AI — a foundation for a family of AI-integrated learning tools.</p></div></div>
+      </div>
+      <div class="signoff reveal r5"><b>AndersonLogic AI</b> <span>&nbsp;·&nbsp; BeHistorical &nbsp;·&nbsp; Created by Jeff Anderson</span></div>
+      <div class="pnum">10 / 10</div>
+    </section>
+
+  </div>
+</div>
+
+<nav id="nav" aria-label="Slide navigation">
+  <button class="navbtn" id="prev" aria-label="Previous slide">‹</button>
+  <div class="dots" id="dots"></div>
+  <span id="counter">01 / 10</span>
+  <button class="navbtn" id="next" aria-label="Next slide">›</button>
+</nav>
+<div class="hint">← → to navigate</div>
+
+<script>
+  const slides=[...document.querySelectorAll('.slide')];
+  const total=slides.length;
+  let cur=0;
+  const stage=document.getElementById('stage');
+  const dotsWrap=document.getElementById('dots');
+  const counter=document.getElementById('counter');
+
+  slides.forEach((s,i)=>{
+    const b=document.createElement('button');
+    b.className='dot-nav'+(i===0?' on':'');
+    b.setAttribute('aria-label','Go to slide '+(i+1)+': '+(s.dataset.name||''));
+    b.addEventListener('click',()=>go(i));
+    dotsWrap.appendChild(b);
+  });
+  const dotEls=[...dotsWrap.children];
+
+  function go(i){
+    if(i<0||i>=total||i===cur) { if(i===cur) return; }
+    i=Math.max(0,Math.min(total-1,i));
+    slides[cur].classList.remove('active');
+    dotEls[cur].classList.remove('on');
+    cur=i;
+    slides[cur].classList.add('active');
+    dotEls[cur].classList.add('on');
+    counter.textContent=String(i+1).padStart(2,'0')+' / '+String(total).padStart(2,'0');
+  }
+  const next=()=>go(cur+1), prev=()=>go(cur-1);
+  document.getElementById('next').addEventListener('click',next);
+  document.getElementById('prev').addEventListener('click',prev);
+  window.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();next();}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev();}
+    else if(e.key==='Home'){go(0);} else if(e.key==='End'){go(total-1);}
+  });
+  // click right/left half of stage to advance (ignore control clicks)
+  stage.addEventListener('click',e=>{
+    if(e.target.closest('a,button')) return;
+    const r=stage.getBoundingClientRect();
+    (e.clientX-r.left > r.width/2) ? next() : prev();
+  });
+
+  // fit-to-viewport scaling
+  function fit(){
+    const pad=48, navH=90;
+    const sw=(window.innerWidth-pad)/1280;
+    const sh=(window.innerHeight-navH-pad)/720;
+    stage.style.transform='scale('+Math.min(sw,sh,1.15)+')';
+  }
+  window.addEventListener('resize',fit); fit();
+</script>
