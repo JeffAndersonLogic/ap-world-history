@@ -4,16 +4,23 @@ A 10-slide pitch deck presenting BeHistorical and its features, framed for a
 school-administration audience and positioned for professional development and
 future consulting.
 
+Slides 1, 4, 5, 6, and 9 embed real screenshots of the live student pages
+(the bronze emblem, the 10-module lesson grid, a First & 10 reading, an
+"Advising the Song Court" BeInTheRoom scenario, and the Command Center).
+
 ## Files
 
-- **`behistorical-pitch-deck.html`** — self-contained, interactive web deck.
-  Open in any browser. Navigate with ← / → arrow keys, on-screen controls, the
-  dot indicators, or by clicking the left/right half of a slide. No build step,
-  no external dependencies.
+- **`behistorical-pitch-deck.html`** — self-contained, interactive web deck
+  (screenshots embedded as data URIs). Open in any browser. Navigate with
+  ← / → arrow keys, on-screen controls, the dot indicators, or by clicking the
+  left/right half of a slide. No build step, no external dependencies.
 - **`BeHistorical-AndersonLogic-AI.pptx`** — editable PowerPoint version with the
-  same 10 slides and content, for presenting live or handing off.
+  same 10 slides, content, and screenshots, for presenting live or handing off.
 - **`build-deck.js`** — the `pptxgenjs` generator that produces the `.pptx`.
-  Rebuild with `node build-deck.js` (requires `pptxgenjs`).
+  Rebuild with `node build-deck.js` (requires `pptxgenjs`; reads the screenshot
+  data from `img-datauris.json` / `img-dims.json` in this folder).
+- **`img-datauris.json`, `img-dims.json`** — the embedded screenshots (base64)
+  and their pixel dimensions, so the `.pptx` is reproducible.
 
 ## Slides
 
