@@ -29,7 +29,7 @@ function footer(s,dark){
     {x:0.55,y:H-0.5,w:8,h:0.3,fontFace:SANS,fontSize:10,align:"left",margin:0});
 }
 function pageNum(s,n,dark){
-  s.addText(String(n).padStart(2,"0")+" / 17",{x:W-1.7,y:H-0.55,w:1.2,h:0.35,align:"right",fontFace:MONO,fontSize:11,bold:true,color:dark?MUTE_D:MUTE_L,margin:0});
+  s.addText(String(n).padStart(2,"0")+" / 18",{x:W-1.7,y:H-0.55,w:1.2,h:0.35,align:"right",fontFace:MONO,fontSize:11,bold:true,color:dark?MUTE_D:MUTE_L,margin:0});
 }
 function eyebrow(s,txt,x,y,color){
   s.addText(txt.toUpperCase(),{x,y,w:9,h:0.3,fontFace:MONO,fontSize:12,bold:true,color:color||GOLD,charSpacing:3,align:"left",margin:0});
@@ -351,10 +351,30 @@ function featList(s,items,x,y,w,dark){
     items.forEach(([t,note])=>{
       s.addText([{text:"› ",options:{color:GOLD_DEEP,bold:true}},{text:t,options:{color:INKTEXT}},...(note?[{text:"  "+note,options:{color:MUTE_L,fontSize:11.5,italic:true}}]:[])],{x:x+0.3,y:iy,w:cw-0.55,h:0.5,fontFace:SANS,fontSize:13.5,margin:0,valign:"top"}); iy+=0.56; });
   });
+  footer(s,false); pageNum(s,17,false);
+})();
+
+// ============ 16 MEASURING IMPACT ============
+(()=>{ const s=p.addSlide(); bg(s,PAPER);
+  eyebrow(s,"Measuring impact",0.7,0.6,GOLD_DEEP);
+  s.addText("How we'll know it's working",{x:0.66,y:0.95,w:12,h:0.8,fontFace:SERIF,fontSize:32,bold:true,color:INKTEXT,margin:0});
+  s.addText("Year one is the baseline. Here's what BeHistorical already lets us see — and the outcomes we'll measure against it.",{x:0.7,y:1.85,w:12,h:0.6,fontFace:SANS,fontSize:15,color:MUTE_L,margin:0});
+  const cw=5.9,cy=2.6,ch=3.15;
+  const now=["Participation & completion, per lesson and module","Confidence trends across a unit (1–5 self-ratings)","AI-coaching engagement — coaching rounds per student","Response-quality signals — evidence use & reasoning language"];
+  const target=["AP exam 3+ rate vs. prior years","SAQ / DBQ rubric growth, pre → post","MCQ mastery by Key Concept","Family engagement — Dispatch open & click rates"];
+  // left card
+  s.addShape(p.ShapeType.roundRect,{x:0.7,y:cy,w:cw,h:ch,rectRadius:0.12,fill:{color:CARD},line:{color:CARD_BORD,width:1}});
+  s.addText("✓ WHAT WE CAN ALREADY SEE",{x:1.05,y:cy+0.3,w:cw-0.7,h:0.3,fontFace:MONO,fontSize:11,bold:true,color:GREEN_D,charSpacing:1,margin:0});
+  s.addText(now.map((t,i)=>({text:t,options:{bullet:{code:"2022",indent:14},color:MUTE_L,breakLine:i!==now.length-1,paraSpaceAfter:10}})),{x:1.05,y:cy+0.78,w:cw-0.75,h:2.2,fontFace:SANS,fontSize:13.5,margin:0,valign:"top"});
+  // right card
+  s.addShape(p.ShapeType.roundRect,{x:6.7,y:cy,w:cw,h:ch,rectRadius:0.12,fill:{color:CARD},line:{color:CARD_BORD,width:1}});
+  s.addText("◎ WHAT WE'LL PROVE",{x:7.05,y:cy+0.3,w:cw-0.7,h:0.3,fontFace:MONO,fontSize:11,bold:true,color:GOLD_DEEP,charSpacing:1,margin:0});
+  s.addText(target.map((t,i)=>({text:t,options:{bullet:{code:"2022",indent:14},color:MUTE_L,breakLine:i!==target.length-1,paraSpaceAfter:10}})),{x:7.05,y:cy+0.78,w:cw-0.75,h:2.2,fontFace:SANS,fontSize:13.5,margin:0,valign:"top"});
+  s.addText("Method: pre/post on CED-aligned items · section-to-section comparison · tracked in the Teacher Hub · baseline year 2026–27",{x:0.7,y:6.0,w:12,h:0.4,fontFace:MONO,fontSize:11,color:MUTE_L,margin:0});
   footer(s,false); pageNum(s,16,false);
 })();
 
-// ============ 17 CLOSING ============
+// ============ 18 CLOSING ============
 (()=>{ const s=p.addSlide(); bg(s,INK);
   ["BeReady","BeSurreal","BeInTheRoom","BeHistorical"].forEach((m,i)=>{
     s.addText(m,{x:8.9,y:1.1+i*1.3,w:4.2,h:0.9,align:"right",fontFace:SERIF,fontSize:20,italic:true,color:PANEL2,margin:0}); });
@@ -368,7 +388,7 @@ function featList(s,items,x,y,w,dark){
     s.addText(h,{x:1.05,y:y-0.08,w:7.4,h:0.4,fontFace:SERIF,fontSize:19,bold:true,color:GOLD_SOFT,margin:0});
     s.addText(d,{x:1.05,y:y+0.36,w:7.4,h:0.7,fontFace:SANS,fontSize:14,color:MUTE_D,margin:0}); y+=1.2; });
   s.addText([{text:"AndersonLogic AI",options:{bold:true,color:GOLD,fontSize:18}},{text:"   ·   BeHistorical   ·   Created by Jeff Anderson",options:{color:PAPER,fontSize:14}}],{x:0.7,y:6.8,w:12,h:0.4,fontFace:SANS,align:"left",margin:0});
-  pageNum(s,17,true);
+  pageNum(s,18,true);
 })();
 
 p.writeFile({fileName:"/home/user/ap-world-history/scratchpad-deck/BeHistorical-AndersonLogic-AI.pptx"}).then((f)=>console.log("wrote",f));

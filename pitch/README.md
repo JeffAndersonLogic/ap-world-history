@@ -1,8 +1,15 @@
-# BeHistorical — Pitch Deck (AndersonLogic AI)
+# BeHistorical — Pitch Decks (AndersonLogic AI)
 
-A 17-slide pitch deck presenting BeHistorical and its features, framed for a
-school-administration audience and positioned for professional development and
-future consulting.
+Two decks:
+
+1. **The admin deck** (`behistorical-pitch-deck.html` / `.pptx`) — an 18-slide
+   product deck for a school-administration audience, presenting BeHistorical
+   and its features, its privacy posture, and a measurement plan.
+2. **The PD / consulting variant** (`andersonlogic-pd-consulting.html` / the
+   `AndersonLogic-AI-PD-Consulting.pptx`) — a 10-slide, business-forward deck
+   that positions Jeff / AndersonLogic AI to be booked for paid PD and
+   consulting: a named portable method, "what your teachers will be able to
+   do," a transferability example, credibility, and an offer + call-to-action.
 
 Screenshots and mockups embedded throughout. Real, shipping features use live
 screenshots; features that are still being built are shown as clearly-labeled
@@ -40,8 +47,35 @@ design mockups (an **In Development** / **Live Prototype** badge on the slide).
 13. Data governance — student data stays inside district-approved systems
 14. Built like software — the Command Center *(live screenshot)*
 15. How it all connects — one platform, one data layer, three audiences
-16. Where the build stands — live vs. in development vs. exploring
-17. Where this goes — a repeatable method, PD, and a platform to grow on
+16. Measuring impact — how we'll know it's working (signals + outcome targets)
+17. Where the build stands — live vs. in development vs. exploring
+18. Where this goes — a repeatable method, PD, and a platform to grow on
+
+## The PD / consulting variant (10 slides)
+
+`andersonlogic-pd-consulting.html` · `AndersonLogic-AI-PD-Consulting.pptx` ·
+`build-pd-deck.js`
+
+1. Title — AndersonLogic AI: "AI-integrated instruction that augments, never replaces"
+2. The problem every school shares (universal, not AP-specific)
+3. Why this is different — "I built a working system, not a talk"
+4. The proof — BeHistorical *(screenshot montage)*
+5. The Augment Method — the transferable, subject-agnostic framework
+6. What your teachers will be able to do
+7. It's not just history — the method mapped to another subject
+8. Why work with me — the builder-teacher credibility case
+9. How we'd work together — four engagement tiers
+10. Call to action — book a discovery call
+
+### Fill in before sending (placeholders are marked in the deck)
+
+- **Framework name** — "The Augment Method" is a working name; rename if you prefer.
+- **Credentials** (slide 8) — years teaching, AP experience, any results/recognition.
+- **Offer** (slide 9) — add pricing/packages when ready.
+- **Contact** (slide 10) — business email + website. Do **not** use your school
+  (k12) email on the consulting deck — keep the business and the school separate.
+- **Transferability** (slide 7) — the AP Biology column is illustrative; swap in
+  a subject you want to target.
 
 ### Verify before presenting
 
