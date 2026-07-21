@@ -182,10 +182,10 @@ window.FOUNDATION_TOPIC = {
         'You will still learn a lot of history. But the history is the **material you practice on**, not the point of the class. The point is who you become.'
       ],
       image: {
-        title: 'World Physical Map',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg',
-        caption: 'This map has no borders and no names yet. By May, you will read it as a document, full of arguments about causation, comparison, and change over time.'
+        title: 'Prehistoric Cave Paintings, Lascaux',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lascaux_painting.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lascaux_painting.jpg',
+        caption: 'Long before writing, humans recorded their world on cave walls. History begins not with memorized dates but with people making meaning from what they saw, the same habit of mind you are about to build.'
       }
     },
     {
@@ -231,10 +231,10 @@ window.FOUNDATION_TOPIC = {
         'This is the receipt for what happened to your mind this year. It is not a grade. It is a portable, permanent artifact of who you became.'
       ],
       image: {
-        title: 'Maqamat al-Hariri manuscript',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqamat_al-Hariri,_folio_86r_(detail).jpg',
-        caption: 'A medieval manuscript, a body of writing preserved as a single document. Your portfolio is a version of the same idea, your own writing curated into a letter you own.'
+        title: 'The Great Isaiah Scroll, Dead Sea Scrolls',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Isaiah_Scroll_MS_A_%281QIsa%29_-_Google_Art_Project.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:The_Great_Isaiah_Scroll_MS_A_(1QIsa)_-_Google_Art_Project.jpg',
+        caption: 'Ancient scrolls preserved a community\'s words across millennia, a body of writing kept as a single document. Your portfolio is a version of the same idea, your own writing curated into a letter you own.'
       }
     },
     {
