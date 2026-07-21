@@ -29,7 +29,7 @@ function footer(s,dark){
     {x:0.55,y:H-0.5,w:8,h:0.3,fontFace:SANS,fontSize:10,align:"left",margin:0});
 }
 function pageNum(s,n,dark){
-  s.addText(String(n).padStart(2,"0")+" / 15",{x:W-1.7,y:H-0.55,w:1.2,h:0.35,align:"right",fontFace:MONO,fontSize:11,bold:true,color:dark?MUTE_D:MUTE_L,margin:0});
+  s.addText(String(n).padStart(2,"0")+" / 17",{x:W-1.7,y:H-0.55,w:1.2,h:0.35,align:"right",fontFace:MONO,fontSize:11,bold:true,color:dark?MUTE_D:MUTE_L,margin:0});
 }
 function eyebrow(s,txt,x,y,color){
   s.addText(txt.toUpperCase(),{x,y,w:9,h:0.3,fontFace:MONO,fontSize:12,bold:true,color:color||GOLD,charSpacing:3,align:"left",margin:0});
@@ -249,7 +249,46 @@ function featList(s,items,x,y,w,dark){
   footer(s,false); pageNum(s,11,false);
 })();
 
-// ============ 12 BUILT LIKE SOFTWARE ============
+// ============ 12 FERPA-SAFE AI ============
+(()=>{ const s=p.addSlide(); bg(s,INK);
+  eyebrow(s,"Student privacy, built in",0.7,0.55);
+  s.addText("The AI students use is FERPA-safe — and already district-approved",{x:0.66,y:0.9,w:12.4,h:0.8,fontFace:SERIF,fontSize:26,bold:true,color:WHITE,margin:0});
+  const cards=[["STUDENT-FACING · DISTRICT-APPROVED","MagicSchool AI","Student coaching runs inside MagicSchool — adopted by our district as a FERPA-safe AI tool. Not a personal chatbot, not a consumer account.","District-vetted · FERPA-safe"],
+    ["TEACHER-FACING · FERPA-ALIGNED","Claude for Teachers","Teacher-side analysis uses Claude, Anthropic's education AI — built to support FERPA compliance, with student inputs not used to train models.","Education-grade · Not trained on student work"]];
+  const cw=5.9,cy=2.1,ch=3.4;
+  cards.forEach((c,i)=>{ const x=0.7+i*(cw+0.3);
+    s.addShape(p.ShapeType.roundRect,{x,y:cy,w:cw,h:ch,rectRadius:0.12,fill:{color:PANEL},line:{color:PANEL2,width:1}});
+    s.addText(c[0],{x:x+0.35,y:cy+0.32,w:cw-0.7,h:0.3,fontFace:MONO,fontSize:10.5,bold:true,color:GOLD,charSpacing:1,margin:0});
+    s.addText(c[1],{x:x+0.35,y:cy+0.66,w:cw-0.7,h:0.5,fontFace:SERIF,fontSize:22,bold:true,color:WHITE,margin:0});
+    s.addText(c[2],{x:x+0.35,y:cy+1.3,w:cw-0.7,h:1.2,fontFace:SANS,fontSize:14,color:"E9E2D2",margin:0,valign:"top"});
+    const bw=0.45+c[3].length*0.076;
+    s.addShape(p.ShapeType.roundRect,{x:x+0.35,y:cy+2.68,w:bw,h:0.36,rectRadius:0.18,fill:{color:"21301F"},line:{color:"5AA668",width:1}});
+    s.addText("✓ "+c[3],{x:x+0.35,y:cy+2.68,w:bw,h:0.36,align:"center",valign:"middle",fontFace:MONO,fontSize:9.5,bold:true,color:"7CC98A",margin:0});
+  });
+  s.addText("Coaches, never completes — and never trains on a student's thinking.",{x:0.7,y:5.85,w:12,h:0.5,fontFace:SERIF,fontSize:17,italic:true,bold:true,color:GOLD,margin:0});
+  footer(s,true); pageNum(s,12,true);
+})();
+
+// ============ 13 DATA GOVERNANCE ============
+(()=>{ const s=p.addSlide(); bg(s,PAPER);
+  eyebrow(s,"How student data is protected",0.7,0.6,GOLD_DEEP);
+  s.addText("Student data stays inside district-approved systems",{x:0.66,y:0.95,w:12.4,h:0.8,fontFace:SERIF,fontSize:30,bold:true,color:INKTEXT,margin:0});
+  const cards=[["WHERE IT RUNS","Tools the district already governs","Students draft in BeHistorical, are coached in district-approved MagicSchool, and submit in Canvas — no new data destinations to vet."],
+    ["NO TRAINING","Never used to train an AI","Both AI tools are education-grade and vetted; a student's work is never used to train or improve an AI model."],
+    ["PATTERNS, NOT EXPOSURE","Aggregate by default","The Teacher Hub summarizes class-level trends; identifiable student data is never published to the public site."],
+    ["SECURE BY ROADMAP","Authenticated access next","A secure teacher sign-in replaces the prototype access code before any live student data flows through the Hub."]];
+  const cw=5.85,ch=1.72,gx=0.3,gy=0.22,sx=0.7,sy=2.3;
+  cards.forEach((c,i)=>{ const r=Math.floor(i/2),cc=i%2; const x=sx+cc*(cw+gx),y=sy+r*(ch+gy);
+    s.addShape(p.ShapeType.roundRect,{x,y,w:cw,h:ch,rectRadius:0.11,fill:{color:CARD},line:{color:CARD_BORD,width:1}});
+    s.addText(c[0],{x:x+0.3,y:y+0.22,w:cw-0.6,h:0.28,fontFace:MONO,fontSize:10,bold:true,color:GOLD_DEEP,charSpacing:1,margin:0});
+    s.addText(c[1],{x:x+0.3,y:y+0.5,w:cw-0.6,h:0.4,fontFace:SERIF,fontSize:18,bold:true,color:INKTEXT,margin:0});
+    s.addText(c[2],{x:x+0.3,y:y+0.95,w:cw-0.6,h:0.66,fontFace:SANS,fontSize:12.5,color:MUTE_L,margin:0,valign:"top"});
+  });
+  s.addText("Privacy isn't bolted on — it's the boundary the whole system is built around.",{x:0.7,y:6.08,w:12,h:0.5,fontFace:SERIF,fontSize:16,italic:true,bold:true,color:GOLD_DEEP,margin:0});
+  footer(s,false); pageNum(s,13,false);
+})();
+
+// ============ 14 BUILT LIKE SOFTWARE ============
 (()=>{ const s=p.addSlide(); bg(s,INK);
   eyebrow(s,"Why it scales",0.7,0.5);
   s.addText("Built like software, not a slide folder",{x:0.66,y:0.85,w:12,h:0.7,fontFace:SERIF,fontSize:28,bold:true,color:WHITE,margin:0});
@@ -262,7 +301,7 @@ function featList(s,items,x,y,w,dark){
     s.addText(t,{x:rx,y,w:rw,h:0.34,fontFace:SERIF,fontSize:17,bold:true,color:GOLD_SOFT,margin:0});
     s.addText(d,{x:rx,y:y+0.34,w:rw,h:0.75,fontFace:SANS,fontSize:13,color:PAPER,margin:0,valign:"top"}); y+=1.2; });
   s.addText("The difference between a teacher's materials and a product a district can adopt.",{x:rx,y:y+0.05,w:rw,h:0.6,fontFace:SERIF,fontSize:15,italic:true,bold:true,color:GOLD,margin:0});
-  footer(s,true); pageNum(s,12,true);
+  footer(s,true); pageNum(s,14,true);
 })();
 
 // ============ 13 ECOSYSTEM ============
@@ -291,7 +330,7 @@ function featList(s,items,x,y,w,dark){
     s.addText(t,{x:rsx+0.24,y:oy+0.14,w:rsw-0.4,h:0.32,fontFace:SERIF,fontSize:16,bold:true,color:GOLD_SOFT,margin:0});
     s.addText(d,{x:rsx+0.24,y:oy+0.45,w:rsw-0.4,h:0.28,fontFace:SANS,fontSize:12,color:MUTE_D,margin:0}); oy+=oh+og; });
   s.addText("Build the lesson once — and everyone around the student is served automatically.",{x:0.7,y:5.7,w:12,h:0.5,fontFace:SERIF,fontSize:16,italic:true,bold:true,color:GOLD,margin:0});
-  footer(s,true); pageNum(s,13,true);
+  footer(s,true); pageNum(s,15,true);
 })();
 
 // ============ 14 ROADMAP ============
@@ -312,10 +351,10 @@ function featList(s,items,x,y,w,dark){
     items.forEach(([t,note])=>{
       s.addText([{text:"› ",options:{color:GOLD_DEEP,bold:true}},{text:t,options:{color:INKTEXT}},...(note?[{text:"  "+note,options:{color:MUTE_L,fontSize:11.5,italic:true}}]:[])],{x:x+0.3,y:iy,w:cw-0.55,h:0.5,fontFace:SANS,fontSize:13.5,margin:0,valign:"top"}); iy+=0.56; });
   });
-  footer(s,false); pageNum(s,14,false);
+  footer(s,false); pageNum(s,16,false);
 })();
 
-// ============ 15 CLOSING ============
+// ============ 17 CLOSING ============
 (()=>{ const s=p.addSlide(); bg(s,INK);
   ["BeReady","BeSurreal","BeInTheRoom","BeHistorical"].forEach((m,i)=>{
     s.addText(m,{x:8.9,y:1.1+i*1.3,w:4.2,h:0.9,align:"right",fontFace:SERIF,fontSize:20,italic:true,color:PANEL2,margin:0}); });
@@ -329,7 +368,7 @@ function featList(s,items,x,y,w,dark){
     s.addText(h,{x:1.05,y:y-0.08,w:7.4,h:0.4,fontFace:SERIF,fontSize:19,bold:true,color:GOLD_SOFT,margin:0});
     s.addText(d,{x:1.05,y:y+0.36,w:7.4,h:0.7,fontFace:SANS,fontSize:14,color:MUTE_D,margin:0}); y+=1.2; });
   s.addText([{text:"AndersonLogic AI",options:{bold:true,color:GOLD,fontSize:18}},{text:"   ·   BeHistorical   ·   Created by Jeff Anderson",options:{color:PAPER,fontSize:14}}],{x:0.7,y:6.8,w:12,h:0.4,fontFace:SANS,align:"left",margin:0});
-  pageNum(s,15,true);
+  pageNum(s,17,true);
 })();
 
 p.writeFile({fileName:"/home/user/ap-world-history/scratchpad-deck/BeHistorical-AndersonLogic-AI.pptx"}).then((f)=>console.log("wrote",f));

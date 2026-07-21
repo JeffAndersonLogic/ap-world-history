@@ -1,6 +1,6 @@
 # BeHistorical — Pitch Deck (AndersonLogic AI)
 
-A 15-slide pitch deck presenting BeHistorical and its features, framed for a
+A 17-slide pitch deck presenting BeHistorical and its features, framed for a
 school-administration audience and positioned for professional development and
 future consulting.
 
@@ -36,10 +36,19 @@ design mockups (an **In Development** / **Live Prototype** badge on the slide).
 9. The Dispatch — biweekly family newsletter — *In Development* mockup (Issue 01)
 10. The Teacher Hub — *Live Prototype* screenshot
 11. From raw answers to teaching decisions — the analytics engine
-12. Built like software — the Command Center *(live screenshot)*
-13. How it all connects — one platform, one data layer, three audiences
-14. Where the build stands — live vs. in development vs. exploring
-15. Where this goes — a repeatable method, PD, and a platform to grow on
+12. FERPA-safe AI — MagicSchool (district-approved) + Claude for Teachers
+13. Data governance — student data stays inside district-approved systems
+14. Built like software — the Command Center *(live screenshot)*
+15. How it all connects — one platform, one data layer, three audiences
+16. Where the build stands — live vs. in development vs. exploring
+17. Where this goes — a repeatable method, PD, and a platform to grow on
+
+### Verify before presenting
+
+Slides 12–13 make compliance claims — confirm the exact wording with your
+district before presenting: the precise MagicSchool adoption/DPA language, the
+exact Claude education product name and its FERPA/data-use terms, and which
+Google/Canvas agreements cover data capture and submission.
 
 ## Status honesty
 
