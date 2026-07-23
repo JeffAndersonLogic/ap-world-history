@@ -208,7 +208,7 @@
 
   <div class="builder-section">
     <h2 class="builder-heading">Submit Your First &amp; 10 Response</h2>
-    <p class="builder-body">Click <strong>Build Response</strong> to compile your three answers, add your name and class period, then click <strong>Submit</strong>. Your response is recorded without leaving this page.</p>
+    <p class="builder-body">Click <strong>Build Response</strong> to compile your three answers, add your name and class period, then click <strong>Submit</strong>. Your response is sent to your teacher without leaving this page &mdash; your graded work still goes in Canvas.</p>
     <div class="identity-row">
       <div class="identity-field">
         <label for="student-name">Your Name</label>
@@ -351,21 +351,36 @@ function submitToGoogleForm() {
 
   var action = BH_FORM.baseURL.replace(/\/viewform.*$/, '/formResponse');
   var btn = document.getElementById('submit-btn');
-  if (btn) { btn.disabled = true; btn.textContent = 'Submitting…'; }
-  setSubmitStatus('info', 'Submitting…');
 
+  // Offline: the request can't leave the device, so skip straight to the
+  // fallback that opens the form in a new tab.
+  if (navigator && navigator.onLine === false) {
+    openFormFallback(content, 'You appear to be offline — opened the form in a new tab to try there.');
+    return;
+  }
+
+  if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+  setSubmitStatus('info', 'Sending…');
+
+  // A cross-origin form POST must use mode:'no-cors', which returns an OPAQUE
+  // response: the browser will not let us read the HTTP status. So we can only
+  // confirm the request was SENT, not that Google accepted and stored it. We
+  // deliberately say "sent" (not "submitted/received") and point students to
+  // Canvas, which is the graded record. .catch() fires only on a true network
+  // failure (e.g. the connection drops mid-request).
   fetch(action, {
     method: 'POST',
     mode: 'no-cors',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: params.toString()
   }).then(function () {
-    if (btn) { btn.textContent = 'Submitted ✓'; }
-    setSubmitStatus('ok', '✓ Submitted. Now use the AI Coach below to strengthen your answer.');
+    var t = '';
+    try { t = ' at ' + new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }); } catch (e) {}
+    if (btn) { btn.textContent = 'Response sent'; }
+    setSubmitStatus('ok', 'Response sent' + t + '. Your graded work still goes in Canvas — submit it there too.');
   }).catch(function () {
-    // Network error (no-cors resolves on success): fall back to the form tab.
     if (btn) { btn.disabled = false; btn.textContent = 'Submit'; }
-    openFormFallback(content, 'Could not submit in-page — opened the form in a new tab instead.');
+    openFormFallback(content, 'Could not send in-page — opened the form in a new tab instead.');
   });
 }
 function buildAiPrompt() {
@@ -386,6 +401,31 @@ function buildAiPrompt() {
 function copyAiPrompt() {
   var content = document.getElementById('ai-output').value;
   navigator.clipboard.writeText(content).catch(function() {});
+}
+
+/* Guard: on the in-page submit path, keep Submit disabled until the student
+   has entered a name AND picked a class period, so a response can never be
+   sent unnamed or unassigned. (Inert until BH_SUBMIT is configured; in the
+   fallback path the Google Form collects these fields itself.) */
+function bhInitSubmitGuard() {
+  if (!bhSubmitReady()) return;
+  var btn = document.getElementById('submit-btn');
+  var name = document.getElementById('student-name');
+  var period = document.getElementById('class-period');
+  if (!btn || !name || !period) return;
+  function refresh() {
+    var ok = name.value.trim() && period.value;
+    btn.disabled = !ok;
+    btn.title = ok ? '' : 'Enter your name and class period first';
+  }
+  name.addEventListener('input', refresh);
+  period.addEventListener('change', refresh);
+  refresh();
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', bhInitSubmitGuard);
+} else {
+  bhInitSubmitGuard();
 }
 </script>
 
