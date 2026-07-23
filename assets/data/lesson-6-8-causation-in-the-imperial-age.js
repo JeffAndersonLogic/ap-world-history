@@ -249,16 +249,6 @@ window.BEHISTORICAL_LESSON = {
   },
   checkpoints: [
     {
-      title: 'Checkpoint 1: Explain the Process',
-      subtitle: 'Check core content and causal mechanism.',
-      cardDesc: 'Use Economic extraction and infrastructure and State expansion and resistance.',
-      learningTargets: [
-        'Explain the process behind causation in the imperial age.'
-      ],
-      successCriteria: [
-        'Use two accurate examples and connect each to the claim.'
-      ],
-      prompt: 'Explain how Economic extraction and infrastructure and State expansion and resistance illustrate the learning objective.',
       responseType: 'Checkpoint 1',
       terms: [
         'Economic extraction and infrastructure',
@@ -266,10 +256,20 @@ window.BEHISTORICAL_LESSON = {
         'Migration and diaspora',
         'Cultural justification and racial hierarchy'
       ],
+      title: 'Checkpoint 1: Trace the Causes',
+      subtitle: 'Connect cause and effect, then weigh significance.',
+      cardDesc: 'Link Economic extraction and infrastructure and State expansion and resistance as cause and effect.',
+      learningTargets: [
+        'Explain how Economic extraction and infrastructure and State expansion and resistance are connected as cause and effect.'
+      ],
+      successCriteria: [
+        'Explain each example as a cause or an effect, then judge which mattered more.'
+      ],
+      prompt: 'Explain how Economic extraction and infrastructure and State expansion and resistance function as causes or effects in this topic, then judge which had the greater significance and why, in answering this objective: Explain the relative significance of the effects of imperialism from 1750 to 1900.',
       focus: [
-        'Answer the objective',
+        'Establish cause and effect',
         'Use specific evidence',
-        'Explain the relationship'
+        'Weigh relative significance'
       ]
     },
     {

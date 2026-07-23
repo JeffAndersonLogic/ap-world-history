@@ -239,7 +239,7 @@ window.BEHISTORICAL_LESSON = {
     prompt: 'Describe the machine, then explain in historically precise language what your analogy reveals about state expansion.'
   },
   skillBuilder: {
-    label: 'Comparison and causation practice',
+    label: 'Comparison practice',
     title: 'Building an AP claim about State Expansion',
     intro: 'Move from evidence to reasoning in three deliberate steps.',
     steps: [
@@ -260,16 +260,6 @@ window.BEHISTORICAL_LESSON = {
   },
   checkpoints: [
     {
-      title: 'Checkpoint 1: Explain the Process',
-      subtitle: 'Check core content and causal mechanism.',
-      cardDesc: 'Use King Leopold II and the Belgian Congo and British and French rule in West Africa.',
-      learningTargets: [
-        'Explain the process behind state expansion.'
-      ],
-      successCriteria: [
-        'Use two accurate examples and connect each to the claim.'
-      ],
-      prompt: 'Explain how King Leopold II and the Belgian Congo and British and French rule in West Africa illustrate the learning objective.',
       responseType: 'Checkpoint 1',
       terms: [
         'King Leopold II and the Belgian Congo',
@@ -277,10 +267,20 @@ window.BEHISTORICAL_LESSON = {
         'Japanese expansion into East Asia',
         'Russian and United States continental expansion'
       ],
+      title: 'Checkpoint 1: Compare the Cases',
+      subtitle: 'Reason across two cases instead of describing each alone.',
+      cardDesc: 'Compare King Leopold II and the Belgian Congo and British and French rule in West Africa.',
+      learningTargets: [
+        'Compare King Leopold II and the Belgian Congo and British and French rule in West Africa rather than describing each in isolation.'
+      ],
+      successCriteria: [
+        'Name one similarity and one difference, then explain what accounts for the difference.'
+      ],
+      prompt: 'Compare King Leopold II and the Belgian Congo and British and French rule in West Africa. Identify at least one similarity and one difference, then explain what accounts for the difference, in service of this objective: Compare processes by which state power shifted in various parts of the world from 1750 to 1900.',
       focus: [
-        'Answer the objective',
-        'Use specific evidence',
-        'Explain the relationship'
+        'Reason across both cases',
+        'One similarity and one difference',
+        'Explain the difference'
       ]
     },
     {

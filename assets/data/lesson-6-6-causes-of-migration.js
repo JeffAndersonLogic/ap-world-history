@@ -228,7 +228,7 @@ window.BEHISTORICAL_LESSON = {
     prompt: 'Describe the machine, then explain in historically precise language what your analogy reveals about causes of migration.'
   },
   skillBuilder: {
-    label: 'Comparison and causation practice',
+    label: 'Causation practice',
     title: 'Building an AP claim about Causes of Migration',
     intro: 'Move from evidence to reasoning in three deliberate steps.',
     steps: [
@@ -249,16 +249,6 @@ window.BEHISTORICAL_LESSON = {
   },
   checkpoints: [
     {
-      title: 'Checkpoint 1: Explain the Process',
-      subtitle: 'Check core content and causal mechanism.',
-      cardDesc: 'Use Irish and Italian migration to the Americas and Chinese and Indian indentured labor.',
-      learningTargets: [
-        'Explain the process behind causes of migration.'
-      ],
-      successCriteria: [
-        'Use two accurate examples and connect each to the claim.'
-      ],
-      prompt: 'Explain how Irish and Italian migration to the Americas and Chinese and Indian indentured labor illustrate the learning objective.',
       responseType: 'Checkpoint 1',
       terms: [
         'Irish and Italian migration to the Americas',
@@ -266,10 +256,20 @@ window.BEHISTORICAL_LESSON = {
         'Convict labor',
         'Japanese agricultural workers and Lebanese merchant networks'
       ],
+      title: 'Checkpoint 1: Trace the Causes',
+      subtitle: 'Connect cause and effect, then weigh significance.',
+      cardDesc: 'Link Irish and Italian migration to the Americas and Chinese and Indian indentured labor as cause and effect.',
+      learningTargets: [
+        'Explain how Irish and Italian migration to the Americas and Chinese and Indian indentured labor are connected as cause and effect.'
+      ],
+      successCriteria: [
+        'Explain each example as a cause or an effect, then judge which mattered more.'
+      ],
+      prompt: 'Explain how Irish and Italian migration to the Americas and Chinese and Indian indentured labor function as causes or effects in this topic, then judge which had the greater significance and why, in answering this objective: Explain how environmental and economic factors contributed to varied patterns of migration from 1750 to 1900.',
       focus: [
-        'Answer the objective',
+        'Establish cause and effect',
         'Use specific evidence',
-        'Explain the relationship'
+        'Weigh relative significance'
       ]
     },
     {

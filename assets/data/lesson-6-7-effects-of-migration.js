@@ -217,7 +217,7 @@ window.BEHISTORICAL_LESSON = {
     prompt: 'Describe the machine, then explain in historically precise language what your analogy reveals about effects of migration.'
   },
   skillBuilder: {
-    label: 'Comparison and causation practice',
+    label: 'Causation practice',
     title: 'Building an AP claim about Effects of Migration',
     intro: 'Move from evidence to reasoning in three deliberate steps.',
     steps: [
@@ -238,16 +238,6 @@ window.BEHISTORICAL_LESSON = {
   },
   checkpoints: [
     {
-      title: 'Checkpoint 1: Explain the Process',
-      subtitle: 'Check core content and causal mechanism.',
-      cardDesc: 'Use Chinese communities across the Pacific and Americas and Indian communities in Africa, the Caribbean, and Southeast Asia.',
-      learningTargets: [
-        'Explain the process behind effects of migration.'
-      ],
-      successCriteria: [
-        'Use two accurate examples and connect each to the claim.'
-      ],
-      prompt: 'Explain how Chinese communities across the Pacific and Americas and Indian communities in Africa, the Caribbean, and Southeast Asia illustrate the learning objective.',
       responseType: 'Checkpoint 1',
       terms: [
         'Chinese communities across the Pacific and Americas',
@@ -255,10 +245,20 @@ window.BEHISTORICAL_LESSON = {
         'Irish and Italian migration',
         'The Chinese Exclusion Act and White Australia policy'
       ],
+      title: 'Checkpoint 1: Trace the Causes',
+      subtitle: 'Connect cause and effect, then weigh significance.',
+      cardDesc: 'Link Chinese communities across the Pacific and Americas and Indian communities in Africa, the Caribbean, and Southeast Asia as cause and effect.',
+      learningTargets: [
+        'Explain how Chinese communities across the Pacific and Americas and Indian communities in Africa, the Caribbean, and Southeast Asia are connected as cause and effect.'
+      ],
+      successCriteria: [
+        'Explain each example as a cause or an effect, then judge which mattered more.'
+      ],
+      prompt: 'Explain how Chinese communities across the Pacific and Americas and Indian communities in Africa, the Caribbean, and Southeast Asia function as causes or effects in this topic, then judge which had the greater significance and why, in answering this objective: Explain how and why new patterns of migration affected society from 1750 to 1900.',
       focus: [
-        'Answer the objective',
+        'Establish cause and effect',
         'Use specific evidence',
-        'Explain the relationship'
+        'Weigh relative significance'
       ]
     },
     {

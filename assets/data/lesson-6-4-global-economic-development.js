@@ -195,7 +195,7 @@ window.BEHISTORICAL_LESSON = {
     prompt: 'Describe the machine, then explain in historically precise language what your analogy reveals about global economic development.'
   },
   skillBuilder: {
-    label: 'Comparison and causation practice',
+    label: 'Causation practice',
     title: 'Building an AP claim about Global Economic Development',
     intro: 'Move from evidence to reasoning in three deliberate steps.',
     steps: [
@@ -216,16 +216,6 @@ window.BEHISTORICAL_LESSON = {
   },
   checkpoints: [
     {
-      title: 'Checkpoint 1: Explain the Process',
-      subtitle: 'Check core content and causal mechanism.',
-      cardDesc: 'Use Cotton production in Egypt and Rubber extraction in the Amazon and Congo.',
-      learningTargets: [
-        'Explain the process behind global economic development.'
-      ],
-      successCriteria: [
-        'Use two accurate examples and connect each to the claim.'
-      ],
-      prompt: 'Explain how Cotton production in Egypt and Rubber extraction in the Amazon and Congo illustrate the learning objective.',
       responseType: 'Checkpoint 1',
       terms: [
         'Cotton production in Egypt',
@@ -233,10 +223,20 @@ window.BEHISTORICAL_LESSON = {
         'Palm oil in West Africa',
         'Guano, meat, and diamond export economies'
       ],
+      title: 'Checkpoint 1: Trace the Causes',
+      subtitle: 'Connect cause and effect, then weigh significance.',
+      cardDesc: 'Link Cotton production in Egypt and Rubber extraction in the Amazon and Congo as cause and effect.',
+      learningTargets: [
+        'Explain how Cotton production in Egypt and Rubber extraction in the Amazon and Congo are connected as cause and effect.'
+      ],
+      successCriteria: [
+        'Explain each example as a cause or an effect, then judge which mattered more.'
+      ],
+      prompt: 'Explain how Cotton production in Egypt and Rubber extraction in the Amazon and Congo function as causes or effects in this topic, then judge which had the greater significance and why, in answering this objective: Explain how environmental factors contributed to the development of the global economy from 1750 to 1900.',
       focus: [
-        'Answer the objective',
+        'Establish cause and effect',
         'Use specific evidence',
-        'Explain the relationship'
+        'Weigh relative significance'
       ]
     },
     {

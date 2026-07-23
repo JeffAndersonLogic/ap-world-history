@@ -217,7 +217,7 @@ window.BEHISTORICAL_LESSON = {
     prompt: 'Describe the machine, then explain in historically precise language what your analogy reveals about indigenous responses to state expansion.'
   },
   skillBuilder: {
-    label: 'Comparison and causation practice',
+    label: 'Causation practice',
     title: 'Building an AP claim about Indigenous Responses to State Expansion',
     intro: 'Move from evidence to reasoning in three deliberate steps.',
     steps: [
@@ -238,16 +238,6 @@ window.BEHISTORICAL_LESSON = {
   },
   checkpoints: [
     {
-      title: 'Checkpoint 1: Explain the Process',
-      subtitle: 'Check core content and causal mechanism.',
-      cardDesc: 'Use Yaa Asantewaa and the War of the Golden Stool and The Indian Rebellion of 1857.',
-      learningTargets: [
-        'Explain the process behind indigenous responses to state expansion.'
-      ],
-      successCriteria: [
-        'Use two accurate examples and connect each to the claim.'
-      ],
-      prompt: 'Explain how Yaa Asantewaa and the War of the Golden Stool and The Indian Rebellion of 1857 illustrate the learning objective.',
       responseType: 'Checkpoint 1',
       terms: [
         'Yaa Asantewaa and the War of the Golden Stool',
@@ -255,10 +245,20 @@ window.BEHISTORICAL_LESSON = {
         'Samory Touré in West Africa',
         'The Mahdist state and the Xhosa Cattle-Killing movement'
       ],
+      title: 'Checkpoint 1: Trace the Causes',
+      subtitle: 'Connect cause and effect, then weigh significance.',
+      cardDesc: 'Link Yaa Asantewaa and the War of the Golden Stool and The Indian Rebellion of 1857 as cause and effect.',
+      learningTargets: [
+        'Explain how Yaa Asantewaa and the War of the Golden Stool and The Indian Rebellion of 1857 are connected as cause and effect.'
+      ],
+      successCriteria: [
+        'Explain each example as a cause or an effect, then judge which mattered more.'
+      ],
+      prompt: 'Explain how Yaa Asantewaa and the War of the Golden Stool and The Indian Rebellion of 1857 function as causes or effects in this topic, then judge which had the greater significance and why, in answering this objective: Explain how and why internal and external factors influenced state building from 1750 to 1900.',
       focus: [
-        'Answer the objective',
+        'Establish cause and effect',
         'Use specific evidence',
-        'Explain the relationship'
+        'Weigh relative significance'
       ]
     },
     {

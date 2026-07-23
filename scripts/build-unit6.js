@@ -13,6 +13,7 @@ const { inspect } = require('util');
 const vm = require('vm');
 const { renderFirst10Page } = require('./lib/first10-page');
 const F10_CONTENT = require('./lib/f10-content');
+const { checkpoint1, skillBuilderLabel } = require('./lib/ap-skill');
 
 const ROOT = path.resolve(__dirname, '..');
 const UNIT = path.join(ROOT, 'unit-6');
@@ -266,7 +267,7 @@ function buildLesson(topic) {
       prompt: `Describe the machine, then explain in historically precise language what your analogy reveals about ${topic.title.toLowerCase()}.`
     },
     skillBuilder: {
-      label: topic.id === '6.8' ? 'Causation practice' : 'Comparison and causation practice',
+      label: skillBuilderLabel(topic),
       title: `Building an AP claim about ${topic.title}`,
       intro: 'Move from evidence to reasoning in three deliberate steps.',
       steps: [
@@ -277,12 +278,7 @@ function buildLesson(topic) {
       prompt: `Write a defensible thesis that answers: ${topic.lo} Include a clear line of reasoning and a qualification.`
     },
     checkpoints: [
-      {
-        title: 'Checkpoint 1: Explain the Process', subtitle: 'Check core content and causal mechanism.', cardDesc: `Use ${topic.cases[0]} and ${topic.cases[1]}.`,
-        learningTargets: [`Explain the process behind ${topic.title.toLowerCase()}.`], successCriteria: ['Use two accurate examples and connect each to the claim.'],
-        prompt: `Explain how ${topic.cases[0]} and ${topic.cases[1]} illustrate the learning objective.`, responseType: 'Checkpoint 1',
-        terms: topic.cases, focus: ['Answer the objective', 'Use specific evidence', 'Explain the relationship']
-      },
+      checkpoint1(topic),
       {
         title: 'Checkpoint 2: Defend the Argument', subtitle: 'Check comparison, qualification, and significance.', cardDesc: 'Turn the full lesson into an AP-ready argument.',
         learningTargets: ['Defend a claim with evidence and reasoning.'], successCriteria: ['State criteria, weigh evidence, and qualify the conclusion.'],
