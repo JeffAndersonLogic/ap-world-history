@@ -20,6 +20,15 @@
     button.secondary{background:transparent;color:var(--antique-gold);border:1px solid var(--antique-gold)}
     button.secondary:hover{background:var(--antique-gold);color:var(--ink)}
     .page-footer-note{font-family:var(--font-body);font-size:.82rem;font-style:italic;color:var(--aged-iron);padding:1.2rem 2.4rem;background:var(--charcoal-steel);border-top:1px solid var(--gunmetal-gray)}
+    .identity-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:.75rem}
+    .identity-field{display:flex;flex-direction:column;gap:.25rem;flex:1;min-width:150px}
+    .identity-field label{font-family:var(--font-ui);font-size:.58rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-sandstone)}
+    .identity-field input,.identity-field select{font-family:var(--font-body);font-size:.82rem;color:var(--warm-paper);background:#23272a;border:1px solid var(--gunmetal-gray);border-radius:3px;padding:.5rem .6rem;outline:none}
+    .identity-field input:focus,.identity-field select:focus{border-color:var(--antique-gold)}
+    .submit-status{font-family:var(--font-ui);font-size:.78rem;font-weight:600;letter-spacing:.02em;margin-top:.2rem;min-height:1.1rem}
+    .submit-status.ok{color:#8fce8f}
+    .submit-status.err{color:#e0a3a3}
+    .submit-status.info{color:var(--muted-sandstone)}
     @media(max-width:680px){.builder-section{padding:1.35rem}.tool-row{flex-direction:column}}
   </style>
 </head>
@@ -198,20 +207,49 @@
   </div>
 
   <div class="builder-section">
-    <h2 class="builder-heading">Build Your Google Form Response</h2>
-    <p class="builder-body">Click the button to compile your three answers into a single response. Then submit to the Google Form.</p>
+    <h2 class="builder-heading">Submit Your First &amp; 10 Response</h2>
+    <p class="builder-body">Click <strong>Build Response</strong> to compile your three answers, add your name and class period, then click <strong>Submit</strong>. Your response is recorded without leaving this page.</p>
+    <div class="identity-row">
+      <div class="identity-field">
+        <label for="student-name">Your Name</label>
+        <input id="student-name" type="text" autocomplete="name" placeholder="First and last name">
+      </div>
+      <div class="identity-field">
+        <label for="class-period">Class Period</label>
+        <select id="class-period">
+          <option value="">Select&hellip;</option>
+          <option>Silver 1</option>
+          <option>Silver 2</option>
+          <option>Silver 3</option>
+          <option>Silver 4</option>
+          <option>Green 4</option>
+        </select>
+      </div>
+      <div class="identity-field">
+        <label for="confidence-level">Confidence (1&ndash;5)</label>
+        <select id="confidence-level">
+          <option value="">Select&hellip;</option>
+          <option value="1">1 &ndash; Still shaky</option>
+          <option value="2">2</option>
+          <option value="3">3 &ndash; Getting there</option>
+          <option value="4">4</option>
+          <option value="5">5 &ndash; Confident</option>
+        </select>
+      </div>
+    </div>
     <div class="tool-row">
       <button onclick="buildGooglePrompt()">Build Response</button>
     </div>
     <textarea id="google-output" class="builder-output" readonly placeholder="Your compiled response will appear here after you click Build Response."></textarea>
     <div class="tool-row">
-      <button onclick="submitToGoogleForm()">Submit to Google Form</button>
+      <button id="submit-btn" onclick="submitToGoogleForm()">Submit</button>
     </div>
+    <div id="submit-status" class="submit-status" role="status" aria-live="polite"></div>
   </div>
 
   <div class="builder-section">
     <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
-    <p class="builder-body">After answering the three questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.</p>
+    <p class="builder-body">After answering the three questions, build one prompt for the BeHistorical AI Coach. It is <strong>copied to your clipboard automatically</strong> — open MagicSchool and paste. The prompt includes your responses and asks the coach to question, challenge, and improve your thinking without writing the final answer for you.</p>
     <div class="tool-row">
       <button onclick="buildAiPrompt()">Build AI Prompt</button>
       <button class="secondary" onclick="copyAiPrompt()">Copy Prompt</button>
@@ -235,6 +273,32 @@
 <script src="../assets/js/behistorical-form-config.js?v=20260610"></script>
 <script>
 var TOPIC_KEY='9.1';var TOPIC_LABEL='Advances in Technology and Exchange After 1900';
+
+/* ── BeHistorical in-page background-submit (Topic 9.1 pilot) ──────────────
+   Records the First & 10 response straight to the existing Google Form
+   without leaving this page — no new tab, no second submit click.
+
+   To turn it on, replace the two PASTE_… ids below with the real Google Form
+   field ids, and confirm the Class Period / Confidence choice text matches
+   the form's options exactly. Until both ids are real entry.NNN values,
+   Submit falls back to opening the prefilled form in a new tab (today's
+   behavior) so no response is ever lost.
+
+   How to find a field id: open the Student Response Form → ⋮ menu →
+   "Get pre-filled link" → put a sample answer in each question → "Get link"
+   → the copied URL lists entry.NNN=… for every question. Match them here. */
+var BH_SUBMIT = {
+  responseField:   'entry.1845180246',      // Student Response  (known)
+  periodField:     'entry.1794755975',       // Class Period      (known)
+  nameField:       'entry.PASTE_NAME_ID',    // Student Name      ← paste id
+  confidenceField: 'entry.PASTE_CONFIDENCE_ID' // Confidence Level ← paste id
+};
+function bhSubmitReady() {
+  return /^entry\.\d+$/.test(BH_SUBMIT.nameField) && /^entry\.\d+$/.test(BH_SUBMIT.confidenceField);
+}
+/* Signals to the capture wrapper that this page owns the Submit action, so
+   the wrapper does not also open the form in a new tab. */
+window.BH_INPAGE_SUBMIT = true;
 function buildGooglePrompt() {
   var q1 = document.getElementById('q1').value || '(no response)';
   var q2 = document.getElementById('q2').value || '(no response)';
@@ -242,11 +306,67 @@ function buildGooglePrompt() {
   document.getElementById('google-output').value =
     'Question 1: ' + q1 + '\n\nQuestion 2: ' + q2 + '\n\nQuestion 3: ' + q3;
 }
-function submitToGoogleForm() {
-  var content = document.getElementById('google-output') ? document.getElementById('google-output').value : '';
-  if (content) { try { navigator.clipboard.writeText(content); } catch(e) {} }
+function setSubmitStatus(kind, message) {
+  var el = document.getElementById('submit-status');
+  if (!el) return;
+  el.className = 'submit-status ' + kind;
+  el.textContent = message;
+}
+function openFormFallback(content, message) {
   var u = (window.BH_FORM && typeof buildFormURL === 'function') ? buildFormURL(TOPIC_KEY, 'first10') : '';
-  if (u) window.open(u, '_blank', 'noopener');
+  if (!u) { setSubmitStatus('err', 'Form is not available right now. Please tell your teacher.'); return; }
+  if (content) u += '&' + BH_SUBMIT.responseField + '=' + encodeURIComponent(content);
+  window.open(u, '_blank', 'noopener');
+  setSubmitStatus('info', message || 'Opened the Google Form in a new tab — finish your submission there.');
+}
+function submitToGoogleForm() {
+  var out = document.getElementById('google-output');
+  var content = out ? out.value : '';
+  if (!content) { buildGooglePrompt(); content = out ? out.value : ''; }
+  if (content) { try { navigator.clipboard.writeText(content); } catch(e) {} }
+
+  // Not configured for in-page submit yet → keep today's behavior (open form).
+  if (!bhSubmitReady() || !window.BH_FORM || typeof buildFormURL !== 'function') {
+    openFormFallback(content);
+    return;
+  }
+
+  var name = ((document.getElementById('student-name') || {}).value || '').trim();
+  var period = (document.getElementById('class-period') || {}).value || '';
+  var confidence = (document.getElementById('confidence-level') || {}).value || '';
+  if (!name || !period) {
+    setSubmitStatus('err', 'Add your name and class period before submitting.');
+    return;
+  }
+
+  // Reuse the fields buildFormURL already prefills (unit, topic, prompt id,
+  // response type, skill focus), then add the response and identity fields
+  // and POST them straight to the form's response endpoint.
+  var params = new URLSearchParams((buildFormURL(TOPIC_KEY, 'first10').split('?')[1]) || '');
+  params.delete('usp');
+  params.set(BH_SUBMIT.responseField, content);
+  params.set(BH_SUBMIT.nameField, name);
+  params.set(BH_SUBMIT.periodField, period);
+  if (confidence) params.set(BH_SUBMIT.confidenceField, confidence);
+
+  var action = BH_FORM.baseURL.replace(/\/viewform.*$/, '/formResponse');
+  var btn = document.getElementById('submit-btn');
+  if (btn) { btn.disabled = true; btn.textContent = 'Submitting…'; }
+  setSubmitStatus('info', 'Submitting…');
+
+  fetch(action, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: params.toString()
+  }).then(function () {
+    if (btn) { btn.textContent = 'Submitted ✓'; }
+    setSubmitStatus('ok', '✓ Submitted. Now use the AI Coach below to strengthen your answer.');
+  }).catch(function () {
+    // Network error (no-cors resolves on success): fall back to the form tab.
+    if (btn) { btn.disabled = false; btn.textContent = 'Submit'; }
+    openFormFallback(content, 'Could not submit in-page — opened the form in a new tab instead.');
+  });
 }
 function buildAiPrompt() {
   var q1 = document.getElementById('q1').value || '(no response)';
@@ -261,6 +381,7 @@ function buildAiPrompt() {
     'Question 3 (CCOT): Explain how medical innovations and birth control together changed global population patterns, what changed and what continued.\n' +
     'My response: ' + q3 + '\n\n' +
     'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and causation and change-over-time arguments. Do not write the final answer for me.';
+  copyAiPrompt();
 }
 function copyAiPrompt() {
   var content = document.getElementById('ai-output').value;

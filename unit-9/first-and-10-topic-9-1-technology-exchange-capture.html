@@ -10,7 +10,7 @@
   </style>
 </head>
 <body>
-  <iframe id="first10-frame" src="first-and-10-topic-9-1-technology-exchange.html?v=20260628" title="First and 10 Topic 9.1"></iframe>
+  <iframe id="first10-frame" src="first-and-10-topic-9-1-technology-exchange.html?v=20260723" title="First and 10 Topic 9.1"></iframe>
   <script>
     const PREFILLED_FIRST10_FORM='https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+9+-+Globalization&entry.187055090=9.1+-+Advances+in+Technology+and+Exchange&entry.1549761827=9.1-first10&entry.2107637366=First+and+10&entry.1963461515=Causation&entry.1963461515=Continuity+and+Change+Over+Time+%28CCOT%29';
     const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
@@ -22,9 +22,16 @@
         try {
           const doc = frame.contentDocument || frame.contentWindow.document;
 
+          // When the embedded page handles submission in-page (background POST),
+          // it sets BH_INPAGE_SUBMIT and the wrapper stays out of the way. The
+          // PREFILLED_FIRST10_FORM open is kept only as a fallback for older /
+          // cached pages that have not adopted in-page submit.
+          const inPageSubmit = !!(frame.contentWindow && frame.contentWindow.BH_INPAGE_SUBMIT);
+
           const submitBtns = doc.querySelectorAll('.btn-submit-google, [data-action="submit-google"]');
           submitBtns.forEach(function (btn) {
             btn.addEventListener('click', function (e) {
+              if (inPageSubmit) return;
               e.preventDefault();
               const responseText = (doc.getElementById('google-output') || {}).value || '';
               const url = PREFILLED_FIRST10_FORM + (responseText ? '&entry.1845180246=' + encodeURIComponent(responseText) : '');
@@ -45,6 +52,7 @@
             const text = (btn.textContent || '').toLowerCase().trim();
             if (text.includes('submit to google') || text.includes('submit to form')) {
               btn.addEventListener('click', function (e) {
+                if (inPageSubmit) return;
                 e.preventDefault();
                 const responseText = (doc.getElementById('google-output') || {}).value || '';
                 const url = PREFILLED_FIRST10_FORM + (responseText ? '&entry.1845180246=' + encodeURIComponent(responseText) : '');
