@@ -7,13 +7,48 @@
 
 ## Repository Commands
 
-- `node scripts/validate.js`, run the full structural and form-wiring audit.
+- `node scripts/validate.js`, run the full structural, form-wiring, and image-integrity audit.
+- `node scripts/check-image-urls.js`, verify every remote Commons image URL actually resolves. Needs internet access to `commons.wikimedia.org`; `validate.js` stays offline on purpose and cannot do this.
+- `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
+- `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
 - `node scripts/generate-status-manifest.js`, refresh the teacher command-center inventory after adding or removing deliverables.
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios.
 - `node scripts/build-unit9.js`, deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
 
 The student entry point is `index.html`. The project inventory is `teacher/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file.
+
+## Image Contract
+
+Every picture a student can see must be on-topic and must be impossible to break:
+
+- **Local artwork is the floor.** `assets/images/module-art/` holds generated
+  artwork for every module card and every lecture, evidence, and map slot. Both
+  renderers wire `onerror` to it, so a dead remote URL degrades to on-topic local
+  art instead of an empty frame.
+- **An empty `url` is a valid choice.** Leave `url` and `sourceUrl` empty and the
+  renderer draws that slot's local artwork. Prefer this to a picture that does not
+  match its caption.
+- **Map & Geography needs an actual map.** Most map slots point at a generated
+  local map in `assets/images/instructional-maps/`. Never put a portrait, a
+  painting, a photograph, or a blank world outline in a map slot.
+- **Hub topic cards carry two `<img>` layers**, local art underneath and the
+  photograph on top with `onerror="this.remove()"`:
+
+  ```html
+  <a class="unit-card" href="...">
+    <img class="card-art" src="../assets/images/module-art/unit-5/topic-5-3/map.svg" alt="" aria-hidden="true">
+    <img class="card-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/..." alt="" aria-hidden="true" onerror="this.remove()">
+  ```
+
+  Do **not** put card artwork in a CSS custom property. A relative `url()` inside
+  one resolves against the stylesheet's folder, not the page, so local paths
+  silently 404. `validate.js` enforces the `<img>` structure.
+- **Generated SVGs must carry `width` and `height`.** A `viewBox` alone leaves the
+  intrinsic size undefined, and an `<img>` holding one gets stretched by its
+  container until the picture is letterboxed off-screen.
+- **Never commit a placeholder image file.** `validate.js` checks magic bytes;
+  a text file named `.jpg` fails the build.
 
 ## Core Architecture
 

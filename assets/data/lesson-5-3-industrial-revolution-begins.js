@@ -92,10 +92,10 @@ window.BEHISTORICAL_LESSON = {
           "**Scientific culture**: The Royal Society (founded 1660), the Lunar Society of Birmingham (Watt, Boulton, Erasmus Darwin, Josiah Wedgwood), and dozens of mechanics' institutes connected scientific curiosity with practical application. Watt improved the steam engine through years of systematic experimentation. Britain's culture of 'useful knowledge', the belief that science should improve industry and commerce, distinguished it from more theoretically oriented continental scientific cultures."
         ],
         image: {
-          title: "Casta Painting — Social Order Before and After Industrialization",
-          caption: "Before industrialization, social order in most of the world was based on birth, land, and hereditary status. The Industrial Revolution created new forms of social stratification, the factory owner, the industrial worker, the urban proletariat, that cut across traditional categories.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
+          title: "Why Britain first?",
+          caption: "BeHistorical topic artwork for this card. Coal, iron, waterways, agricultural surplus, capital from Atlantic commerce, and access to colonial markets arrived together.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -108,10 +108,10 @@ window.BEHISTORICAL_LESSON = {
           "**Working conditions** in early factories were genuinely dangerous. Unguarded machinery caused frequent injuries, children cleaning under moving looms lost fingers, hands, and lives. Cotton dust caused chronic lung disease (byssinosis). Mines filled with explosive gases and collapsed without warning. Working hours were typically 12–16 hours per day, six days a week. Workers were fined for tardiness, talking, or singing. Wages were paid partly in company scrip redeemable only at company stores (truck system). The legal doctrine of 'master and servant' meant workers had few legal remedies."
         ],
         image: {
-          title: "Florentine Codex — Transformation and Dislocation",
-          caption: "Like the demographic catastrophe documented in sources such as the Florentine Codex, the Industrial Revolution represented a sudden, traumatic disruption of existing social and economic systems, with winners and losers determined largely by position, not merit.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
+          title: "Power-loom weaving, 1835",
+          caption: "Steam-driven looms moved textile work out of homes and into factories, and put the pace of work under the machine's control.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg"
         }
       },
       {
@@ -124,10 +124,10 @@ window.BEHISTORICAL_LESSON = {
           "**The standard of living debate**: Historians continue to argue about whether real wages and living standards rose or fell during the Industrial Revolution's first generation. The evidence suggests that aggregate wealth increased dramatically, but that the distribution was highly unequal. The first generation of factory workers generally experienced worse conditions than the artisans and rural workers they replaced. Improvements in real wages, life expectancy, and consumer access accelerated in the second half of the 19th century, but the costs of the transition were borne disproportionately by the poor."
         ],
         image: {
-          title: "VOC — Commercial Networks and Industrial Capital",
-          caption: "The commercial networks built by European trading companies like the VOC created the capital and global commodity flows that funded and fueled British industrialization. Cotton from the Americas, markets in Asia, and profits from colonial trade were all inputs to the Industrial Revolution.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"
+          title: "A Court for King Cholera, Punch, 1852",
+          caption: "Industrial cities grew faster than sanitation. Overcrowding and contaminated water made epidemics a predictable feature of factory towns.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Court_for_King_Cholera.png"
         }
       }
     ]
@@ -135,8 +135,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Britain's Industrial Geography, c. 1800",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
+    url: "../assets/images/instructional-maps/topic-5-3.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-5-3.svg",
     caption: "Britain's coal and iron deposits, river systems, and canal networks created the geographic infrastructure for industrialization. The clustering of industrial cities in the Midlands and the North reflects the location of coal fields and the water power of Pennine rivers.",
     intro: "Examine the distribution of Britain's coal deposits, iron ore, rivers, and early industrial cities. Notice how coal fields, navigable rivers, and port cities cluster together, this geographic coincidence is not accidental. Trace how coal from the Midlands could reach Manchester via canal, how finished cloth from Manchester could reach Liverpool's docks, and how Liverpool connected to the Atlantic trade that supplied raw cotton and consumed finished goods.",
     prompt: "Using the map, explain the relationship between geography and industrialization. Which features of Britain's geography were most important for enabling industrialization? What would have been different if Britain's coal deposits had been in the interior, far from navigable water?"

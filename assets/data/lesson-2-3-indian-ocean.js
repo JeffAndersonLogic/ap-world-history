@@ -158,10 +158,10 @@ window.BEHISTORICAL_LESSON = {
           "Islam spread powerfully along Indian Ocean routes: **Muslim merchants** from Arabia and the Persian Gulf carried their faith to port cities across East Africa and Southeast Asia, where rulers often converted to gain commercial advantages and access to Islamic legal and scholarly networks, the Swahili coast and the sultanates of Southeast Asia reflect this maritime spread of Islam."
         ],
         image: {
-          title: "Geographic overview of Afro-Eurasian connections",
-          caption: "Port cities at the nodes of Indian Ocean exchange grew into some of the most cosmopolitan and culturally diverse urban centers of the medieval world.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Nile_composite_NASA.jpg"
+          title: "Monsoon winds and maritime commerce",
+          caption: "BeHistorical topic artwork for this card. The Indian Ocean ran on a predictable wind cycle, which made long-distance trade plannable rather than lucky.",
+          url: "",
+          sourceUrl: ""
         }
       }
     ]

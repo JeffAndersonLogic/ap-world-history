@@ -144,8 +144,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Geography of the Industrial City, c. 1750–1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg",
+    url: "../assets/images/instructional-maps/topic-5-9.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-5-9.svg",
     caption: "Industrial cities clustered where coal, water power, and transport made factory production possible, first in Britain, then across continental Europe and the United States. Within those cities, the new class structure was written into the map: factory districts and crowded workers' housing on one side, middle-class neighborhoods and suburbs on the other.",
     intro: "Examine where industrial cities grew most rapidly. Notice how the geography of the city reflected the new social order, working-class districts packed near the factories and mills, middle-class families increasingly in cleaner neighborhoods at the edges. Consider how the speed of urban growth, more than its mere existence, produced the cluster of challenges the CED identifies.",
     prompt: "Using the map and your knowledge, explain how the geography of the industrial city reflected BOTH the new class structure (KC-5.1.VI.A) AND the challenges of rapid urbanization (KC-5.1.VI.C). Where did each class live, and why did rapid, concentrated growth produce problems that slower-growing towns avoided?"

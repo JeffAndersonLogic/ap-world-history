@@ -141,8 +141,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Resistance and Rivalry in the Colonial World, c. 1680",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
+    url: "../assets/images/instructional-maps/topic-4-6.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-4-6.svg",
     caption: "The global colonial map by c. 1680–1700 showed both the reach of European maritime empires and the zones where they faced resistance. The Pueblo Revolt expelled Spanish settlers from New Mexico; Palmares controlled a large interior zone in Brazil; the Dutch had displaced the Portuguese across the Indian Ocean.",
     intro: "Locate the key sites of resistance and rivalry: New Mexico (Pueblo Revolt, 1680), the Brazilian interior (Palmares, c. 1605–1694), the Indian Ocean (Dutch displacement of Portuguese, c. 1600–1650), and the Atlantic Caribbean (piracy and privateering throughout). Notice the geographic logic: resistance was most successful in frontier regions distant from colonial centers of power.",
     prompt: "Using the map, explain why resistance was most effective in frontier or interior regions. What geographic factors made Palmares and the Pueblo communities harder for colonial powers to control than coastal or urban settlements?"

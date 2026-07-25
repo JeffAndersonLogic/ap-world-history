@@ -101,10 +101,10 @@ window.BEHISTORICAL_LESSON = {
           'The speed of spread directly reflected the density of trade connections, regions most deeply integrated into the **Mongol trade network** were struck earliest and hardest, demonstrating that the same infrastructure enabling commercial prosperity could rapidly transmit catastrophe.'
         ],
         image: {
-          title: 'Nile River from Space — NASA Composite',
-          caption: 'Rivers and coastlines were the highways of medieval trade, and the corridors along which epidemic disease spread with terrifying speed into densely populated agricultural zones.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nile_composite_NASA.jpg'
+          title: 'Disease travels the trade routes',
+          caption: 'BeHistorical topic artwork for this card. The plague moved along exactly the caravan and sea lanes that carried silk, spices, and silver.',
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -129,10 +129,10 @@ window.BEHISTORICAL_LESSON = {
           'Trade routes served as corridors for the movement of **invasive species**: plants, animals, and pathogens crossed ecological boundaries they could never have crossed naturally, permanently altering the biodiversity of regions from sub-Saharan Africa to East Asia, a process that would accelerate dramatically after 1492.'
         ],
         image: {
-          title: 'World Map — Blue Sea Edition',
-          caption: 'By c. 1350, the ecological footprint of Afro-Eurasian trade networks extended from the Atlantic coast of Morocco to the South China Sea, reshaping landscapes and species distributions across the entire connected world.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg'
+          title: 'Ecological exchange across Afro-Eurasia',
+          caption: 'BeHistorical topic artwork for this card. Crops, animals, and pathogens all moved on the same networks, and the consequences were not distributed evenly.',
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
@@ -140,8 +140,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: 'Map: The Spread of the Black Death from Central Asia, c. 1340–1353',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nile_composite_NASA.jpg',
+    url: '../assets/images/instructional-maps/topic-2-6.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-2-6.svg',
     caption: 'River valleys, coastlines, and overland trade corridors served as the pathways along which the Black Death spread from its Central Asian origins across Eurasia and into North Africa.',
     intro: 'The Black Death did not spread randomly, it followed the trade routes. Plague traveled from the steppes of Central Asia westward along Mongol roads, then jumped onto ships at Black Sea ports and moved through the Mediterranean with terrifying speed. Use this map to trace how geography shaped both the path and the pace of the epidemic.',
     prompt: 'Looking at the geography of river valleys and coastlines, where would you expect the Black Death to spread most quickly? What geographic features would have slowed or stopped its spread? How does the map evidence support the claim that trade routes were the primary mechanism of plague transmission?',

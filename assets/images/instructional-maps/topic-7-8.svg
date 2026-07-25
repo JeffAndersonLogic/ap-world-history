@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
+  <title id="map-title">Mass Atrocities After 1900</title>
+  <desc id="map-desc">Topic 7.8 instructional map for AP World History: Mass Atrocities After 1900. Topic 7.8 · Where, and under what conditions</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="20" markerHeight="16" refX="17" refY="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L20,8 L0,16 Z" fill="#8C5A2B"/>
+    </marker>
+    <style>
+      .title{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:44px;fill:#1A1C1D}
+      .subtitle{font-family:Arial,Helvetica,sans-serif;font-size:19px;fill:#3E4447;letter-spacing:1.2px;text-transform:uppercase}
+      .region{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:21px;letter-spacing:.5px}
+      .place{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:18px;fill:#1A1C1D}
+      .placenote{font-family:Arial,Helvetica,sans-serif;font-size:15px;fill:#3E4447}
+      .small{font-family:Arial,Helvetica,sans-serif;font-size:17px;fill:#1A1C1D}
+      .tiny{font-family:Arial,Helvetica,sans-serif;font-size:14px;fill:#3E4447}
+      .badgenum{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:19px;fill:#FFFDF7}
+      .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
+      .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
+      .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
+      #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
+      #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#D7E2E1"/>
+  <g id="graticule">
+    <line x1="133.3" y1="0" x2="133.3" y2="1000"/>
+    <line x1="266.7" y1="0" x2="266.7" y2="1000"/>
+    <line x1="400.0" y1="0" x2="400.0" y2="1000"/>
+    <line x1="533.3" y1="0" x2="533.3" y2="1000"/>
+    <line x1="666.7" y1="0" x2="666.7" y2="1000"/>
+    <line x1="800.0" y1="0" x2="800.0" y2="1000"/>
+    <line x1="933.3" y1="0" x2="933.3" y2="1000"/>
+    <line x1="1066.7" y1="0" x2="1066.7" y2="1000"/>
+    <line x1="1200.0" y1="0" x2="1200.0" y2="1000"/>
+    <line x1="1333.3" y1="0" x2="1333.3" y2="1000"/>
+    <line x1="1466.7" y1="0" x2="1466.7" y2="1000"/>
+    <line x1="0" y1="833.3" x2="1600" y2="833.3"/>
+    <line x1="0" y1="666.7" x2="1600" y2="666.7"/>
+    <line x1="0" y1="500.0" x2="1600" y2="500.0"/>
+    <line x1="0" y1="333.3" x2="1600" y2="333.3"/>
+    <line x1="0" y1="166.7" x2="1600" y2="166.7"/>
+  </g>
+  <line x1="0" y1="500.0" x2="1600" y2="500.0" stroke="#4E6B72" stroke-width="2.5" stroke-dasharray="14 10" opacity=".5"/>
+  <g id="land">
+    <path id="land-greenland" d="M600.0,166.7 L666.7,122.2 L688.9,100.0 L666.7,55.6 L600.0,38.9 L542.2,44.4 L533.3,77.8 L568.9,122.2 L600.0,166.7 Z"/>
+    <path id="land-northAmerica" d="M53.3,133.3 L88.9,105.6 L124.4,105.6 L177.8,111.1 L231.1,111.1 L288.9,116.7 L355.6,116.7 L400.0,111.1 L444.4,94.4 L488.9,111.1 L524.4,166.7 L555.6,211.1 L533.3,238.9 L502.2,250.0 L488.9,272.2 L466.7,300.0 L440.0,355.6 L444.4,361.1 L426.7,333.3 L404.4,338.9 L382.2,338.9 L368.9,355.6 L364.4,388.9 L377.8,411.1 L391.1,422.2 L413.3,427.8 L431.1,450.0 L453.3,455.6 L435.6,422.2 L408.9,411.1 L377.8,405.6 L333.3,383.3 L311.1,366.7 L293.3,333.3 L275.6,316.7 L257.8,294.4 L248.9,266.7 L248.9,233.3 L217.8,205.6 L177.8,172.2 L142.2,166.7 L111.1,177.8 L75.6,177.8 L62.2,155.6 L53.3,133.3 Z"/>
+    <path id="land-southAmerica" d="M453.3,455.6 L480.0,438.9 L524.4,444.4 L568.9,472.2 L577.8,500.0 L604.4,511.1 L644.4,533.3 L631.1,572.2 L622.2,611.1 L586.7,638.9 L564.4,683.3 L542.2,711.1 L524.4,722.2 L511.1,750.0 L497.8,783.3 L488.9,805.6 L466.7,788.9 L471.1,750.0 L475.6,705.6 L484.4,666.7 L488.9,622.2 L484.4,588.9 L457.8,533.3 L444.4,516.7 L453.3,488.9 L453.3,455.6 Z"/>
+    <path id="land-africa" d="M724.4,416.7 L728.9,383.3 L755.6,355.6 L791.1,327.8 L835.6,316.7 L848.9,311.1 L888.9,322.2 L924.4,327.8 L946.7,327.8 L955.6,366.7 L968.9,400.0 L991.1,433.3 L1013.3,438.9 L1026.7,438.9 L1000.0,472.2 L982.2,511.1 L977.8,544.4 L955.6,600.0 L946.7,644.4 L928.9,672.2 L911.1,688.9 L884.4,694.4 L875.6,666.7 L862.2,622.2 L853.3,588.9 L840.0,533.3 L840.0,488.9 L822.2,472.2 L791.1,472.2 L764.4,477.8 L742.2,450.0 L724.4,416.7 Z"/>
+    <path id="land-eurasia" d="M755.6,300.0 L760.0,261.1 L791.1,238.9 L813.3,216.7 L831.1,205.6 L822.2,177.8 L840.0,183.3 L848.9,177.8 L857.8,194.4 L884.4,200.0 L893.3,188.9 L906.7,183.3 L924.4,172.2 L933.3,166.7 L920.0,138.9 L897.8,133.3 L906.7,111.1 L937.8,111.1 L977.8,122.2 L1022.2,116.7 L1066.7,105.6 L1111.1,94.4 L1155.6,88.9 L1222.2,66.7 L1266.7,72.2 L1302.2,88.9 L1355.6,94.4 L1400.0,100.0 L1444.4,100.0 L1511.1,111.1 L1555.6,116.7 L1600.0,122.2 L1600.0,155.6 L1555.6,166.7 L1524.4,177.8 L1497.8,211.1 L1466.7,244.4 L1435.6,255.6 L1422.2,266.7 L1408.9,300.0 L1377.8,305.6 L1355.6,322.2 L1342.2,333.3 L1324.4,366.7 L1288.9,383.3 L1275.6,405.6 L1266.7,444.4 L1253.3,477.8 L1244.4,461.1 L1235.6,427.8 L1222.2,411.1 L1204.4,377.8 L1186.7,383.3 L1160.0,411.1 L1146.7,450.0 L1142.2,416.7 L1124.4,388.9 L1111.1,372.2 L1088.9,366.7 L1066.7,361.1 L1053.3,377.8 L1031.1,411.1 L991.1,433.3 L968.9,400.0 L955.6,366.7 L955.6,327.8 L960.0,300.0 L933.3,294.4 L920.0,272.2 L902.2,288.9 L888.9,277.8 L871.1,288.9 L857.8,250.0 L835.6,255.6 L813.3,266.7 L791.1,283.3 L773.3,300.0 L755.6,300.0 Z"/>
+    <path id="land-britain" d="M773.3,222.2 L786.7,216.7 L804.4,211.1 L795.6,194.4 L791.1,177.8 L777.8,177.8 L777.8,194.4 L773.3,205.6 L773.3,222.2 Z"/>
+    <path id="land-ireland" d="M755.6,211.1 L773.3,211.1 L773.3,194.4 L764.4,194.4 L755.6,200.0 L755.6,211.1 Z"/>
+    <path id="land-japan" d="M1377.8,322.2 L1400.0,311.1 L1417.8,305.6 L1426.7,283.3 L1431.1,261.1 L1444.4,255.6 L1426.7,250.0 L1413.3,294.4 L1395.6,311.1 L1377.8,322.2 Z"/>
+    <path id="land-indonesia" d="M1222.2,472.2 L1262.2,505.6 L1271.1,533.3 L1306.7,544.4 L1328.9,550.0 L1320.0,516.7 L1288.9,488.9 L1257.8,488.9 L1222.2,472.2 Z"/>
+    <path id="land-philippines" d="M1328.9,400.0 L1342.2,405.6 L1351.1,427.8 L1360.0,450.0 L1355.6,466.7 L1337.8,450.0 L1333.3,422.2 L1328.9,400.0 Z"/>
+    <path id="land-australia" d="M1302.2,622.2 L1306.7,650.0 L1315.6,677.8 L1337.8,688.9 L1373.3,677.8 L1400.0,694.4 L1422.2,711.1 L1453.3,711.1 L1466.7,694.4 L1480.0,655.6 L1480.0,638.9 L1457.8,611.1 L1435.6,572.2 L1400.0,566.7 L1377.8,566.7 L1355.6,577.8 L1324.4,600.0 L1302.2,622.2 Z"/>
+    <path id="land-newZealand" d="M1568.9,694.4 L1582.2,711.1 L1591.1,711.1 L1573.3,733.3 L1560.0,744.4 L1542.2,755.6 L1537.8,750.0 L1555.6,733.3 L1564.4,711.1 L1568.9,694.4 Z"/>
+    <path id="land-madagascar" d="M995.6,566.7 L1022.2,583.3 L1022.2,611.1 L1008.9,638.9 L1000.0,638.9 L991.1,616.7 L991.1,588.9 L995.6,566.7 Z"/>
+    <path id="land-cuba" d="M426.7,377.8 L457.8,388.9 L471.1,400.0 L453.3,394.4 L426.7,377.8 Z"/>
+    <path id="land-hispaniola" d="M475.6,394.4 L493.3,394.4 L497.8,400.0 L480.0,400.0 L475.6,394.4 Z"/>
+    <path id="land-sriLanka" d="M1155.6,450.0 L1164.4,455.6 L1160.0,466.7 L1155.6,461.1 L1155.6,450.0 Z"/>
+  </g>
+
+  <g id="highlights">
+    <ellipse cx="946.7" cy="283.3" rx="48.9" ry="27.8" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
+    <text class="region halo" x="946.7" y="337.1" text-anchor="middle" fill="#1A1C1D"><tspan x="946.7" dy="0">ARMENIANS, 1915</tspan></text>
+    <ellipse cx="871.1" cy="222.2" rx="115.6" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
+    <text class="region halo" x="871.1" y="285.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">THE HOLOCAUST</tspan></text>
+    <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">NANJING, 1937</tspan></text>
+    <ellipse cx="888.9" cy="500.0" rx="57.8" ry="44.4" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
+    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">RWANDA, 1994</tspan></text>
+    <ellipse cx="915.6" cy="216.7" rx="66.7" ry="44.4" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
+    <text class="region halo" x="915.6" y="239.1" text-anchor="middle" fill="#1A1C1D"><tspan x="915.6" dy="0">BOSNIA, 1992-95</tspan></text>
+    <ellipse cx="1266.7" cy="455.6" rx="57.8" ry="55.6" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
+    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">CAMBODIA,</tspan><tspan x="1266.7" dy="25">1975-79</tspan></text>
+  </g>
+  <g id="flows">
+    
+  </g>
+  <g id="places">
+    
+  </g>
+
+  <g id="titleband">
+    <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
+    <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
+    <text class="title" x="46" y="62">Mass Atrocities After 1900</text>
+    <text class="subtitle" x="48" y="97">Topic 7.8 · Where, and under what conditions</text>
+  </g>
+
+  <g id="legend" transform="translate(46,688)">
+    <rect x="0" y="0" width="640" height="244" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
+    <text class="small" x="18" y="28" font-weight="700">Map Key</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="56">Armenian genocide under the Ottoman Empire, 1915</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="89">The Holocaust: European Jews, Roma, and others, 1941-1945</text>
+      <rect x="18" y="104" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="122">Japanese atrocities in China, from 1937</text>
+      <rect x="18" y="137" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="155">Rwandan genocide, 1994</text>
+      <rect x="18" y="170" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="188">Ethnic cleansing in the former Yugoslavia</text>
+      <rect x="18" y="203" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="221">Khmer Rouge mass killing in Cambodia</text>
+  </g>
+
+  <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
+  <text class="tiny" x="46" y="980">BeHistorical instructional map. Locations are marked so students can analyze the political conditions that made mass violence possible, and the international responses that did or did not follow.</text>
+</svg>

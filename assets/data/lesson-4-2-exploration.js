@@ -153,8 +153,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "European Exploration Routes, 1415–1522",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
+    url: "../assets/images/instructional-maps/topic-4-2.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-4-2.svg",
     caption: "The 1507 Waldseemüller map captures European geographic knowledge just 15 years after Columbus. Notice the Americas appear on the left, Africa at bottom right, and Asia to the far right, and notice how much of the world is still unknown or imprecisely mapped.",
     intro: "Use the map to trace the major exploration routes: Portuguese southward along the African coast, around the Cape of Good Hope, and east to India; Spanish westward across the Atlantic to the Caribbean; and the Magellan-Elcano circumnavigation route. Consider what each route was designed to reach and what it actually found.",
     prompt: "Using the map, identify the geographic barriers that European explorers had to overcome. Which route, Portuguese or Spanish, represented a greater geographic challenge? What does the shape of the Americas on this early map suggest about how quickly European knowledge of new discoveries circulated?"

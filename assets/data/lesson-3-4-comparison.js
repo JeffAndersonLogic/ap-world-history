@@ -145,10 +145,10 @@ window.BEHISTORICAL_LESSON = {
           '**Religion legitimized all five empires**, though in different ways. The Ottoman Sultan claimed the Caliphate, leader of all Sunni Muslims. The Safavid Shah claimed descent from a Shia imam. Akbar\'s Mughal court embodied a universal religious authority. The Qing emperor performed Confucian rituals and patronized Tibetan Buddhism. Russia\'s tsar ruled as protector of Orthodox Christianity. The specific religion differed; the function of religion as legitimation was universal.'
         ],
         image: {
-          title: 'World Map 1700 CE',
-          caption: 'The geographic spread of the five major land-based empires by c. 1700 reflects their shared achievement: using gunpowder military technology and innovative administrative systems to govern vast, diverse, and conquered populations.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1700_CE.png'
+          title: 'Ottoman expansion, 1359-1839',
+          caption: 'Ottoman growth over five centuries. Compare its pace and direction with the Mughal and Safavid cases.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ottoman_empire_1359_to_1839.gif',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Ottoman_empire_1359_to_1839.gif'
         }
       },
       {
@@ -159,10 +159,10 @@ window.BEHISTORICAL_LESSON = {
           '**Why differences matter for AP writing**: Identifying a difference is not enough. You must explain what it reveals. The difference between Ottoman and Mughal religious policy reveals that coercion is only viable when the minority is small. The difference between Qing and Mughal administrative strategy reveals that the ethnic ratio between rulers and ruled shaped governance structures. These explanations transform a list of differences into a historical argument.'
         ],
         image: {
-          title: 'World Map 1700 CE',
-          caption: 'The differences in religious policy, administrative innovation, and treatment of subject populations across the five major land-based empires reflect the different challenges each faced, and the different solutions each developed in response.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1700_CE.png'
+          title: 'The Mughal Empire, c. 1700',
+          caption: 'A land-based empire built on tax revenue from agriculture, the shared foundation of every empire in this unit.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_1700_map.png',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_1700_map.png'
         }
       }
     ]

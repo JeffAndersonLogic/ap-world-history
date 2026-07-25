@@ -140,10 +140,10 @@ window.BEHISTORICAL_LESSON = {
           "The same trade routes that enabled the Pax Mongolica also transmitted the **Black Death**, bubonic plague spread westward along Silk Road routes from Central Asia in the 1340s, killing an estimated one-third of Europe's population and millions more across Afro-Eurasia."
         ],
         image: {
-          title: "Geographic overview",
-          caption: "The vast geographic reach of the Mongol Empire connected previously separated regions of Eurasia into a single, if contested, exchange network.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Nile_composite_NASA.jpg"
+          title: "The Pax Mongolica as a system",
+          caption: "BeHistorical topic artwork for this card. Mongol rule lowered the cost of moving goods, people, and ideas across Eurasia, and raised the cost of resisting.",
+          url: "",
+          sourceUrl: ""
         }
       }
     ]
@@ -151,8 +151,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Mongol Empire and Its Khanates",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg",
+    url: "../assets/images/instructional-maps/topic-2-2.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-2-2.svg",
     caption: "The Mongol Empire at its height spanned from the Pacific coast of China to Eastern Europe, the largest contiguous land empire in history.",
     intro: "Use the map context to trace the geographic scope of Mongol expansion and identify the four khanates that governed different regions after Genghis Khan's death.",
     prompt: "How did the geography of the Eurasian steppe make Mongol expansion possible, and how did the sheer size of the empire create challenges for unified governance?",

@@ -91,10 +91,10 @@ window.BEHISTORICAL_LESSON = {
           "**The critical pattern**: Germany, the United States, and Japan all used **protective tariffs** during their industrialization to shield domestic industries from foreign (primarily British) competition. Britain argued for free trade, which made sense for Britain as the most advanced industrial power, since free trade allowed British goods to undercut domestic producers everywhere. The countries that industrialized successfully rejected this advice and protected their home markets. This is the most important lesson in comparative industrialization for the AP exam."
         ],
         image: {
-          title: "Ferdinand Magellan — Global Connections",
-          caption: "The global trade routes established in the Age of Exploration created the commercial and commodity networks that fed industrialization's demand for raw materials and markets. Cotton from India and the American South, iron ore from Sweden, and markets across Asia and Africa were all part of the industrial economy.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg"
+          title: "From Britain to Europe and North America",
+          caption: "BeHistorical topic artwork for this card. Belgium, northern France, the Ruhr, and the northeastern United States industrialized by borrowing British technology and adding state support.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -107,10 +107,10 @@ window.BEHISTORICAL_LESSON = {
           "**Results**: Japan was the only non-Western country to industrialize successfully in the 19th century. By 1895, Japan defeated China in the First Sino-Japanese War, the first time an Asian power had defeated a major power in modern warfare. By 1905, Japan defeated **Russia** in the Russo-Japanese War, the first time a non-Western country had defeated a European great power. Both victories depended on industrial military capacity. Japan succeeded because it had political sovereignty and used that sovereignty to deliberately adopt Western technology while maintaining Japanese political control."
         ],
         image: {
-          title: "Pillar of Vasco da Gama — European Power and Asian Sovereignty",
-          caption: "Japan's Meiji leaders understood the lesson of the Age of Exploration: European military and economic power flowed from industrial capacity. The countries of Asia, Africa, and Latin America that had been unable to resist European expansion lacked that capacity. Japan's response was to acquire it deliberately.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg"
+          title: "Japan's deliberate industrialization",
+          caption: "BeHistorical topic artwork for this card. After 1868 the Meiji state treated industrialization as a security policy: it built railways, mills, and schools on purpose.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -123,10 +123,10 @@ window.BEHISTORICAL_LESSON = {
           "**The structural argument**: The difference between industrializing countries (Germany, US, Japan) and non-industrializing countries (India, Egypt, Latin America) was not natural endowment, it was political sovereignty. Sovereign countries could impose **protective tariffs** to block foreign competition and use **state investment** to build domestic industry. Colonized territories could not impose tariffs (or were forced to abolish them by unequal treaties). This structural difference, not any natural or cultural deficit, explains why industrialization spread where it did and didn't spread where it didn't."
         ],
         image: {
-          title: "World 1700 CE — The Pre-Industrial Global Economy",
-          caption: "In c. 1700, Asia, especially China and India, dominated global manufacturing. India produced the finest textiles in the world; China produced the most silk, porcelain, and cotton cloth. Within 150 years, British colonial policy had deindustrialized India and opened China by force. The industrial revolution did not simply grow out of existing strengths, it also systematically eliminated competitors.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png"
+          title: "Where colonial rule blocked industry",
+          caption: "BeHistorical topic artwork for this card. India and Egypt had skilled textile production and lost it, because colonial policy favoured raw exports and imported cloth.",
+          url: "",
+          sourceUrl: ""
         }
       }
     ]
@@ -134,8 +134,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Uneven Geography of Industrialization, c. 1850–1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg",
+    url: "../assets/images/instructional-maps/topic-5-4.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-5-4.svg",
     caption: "By c. 1850–1900, industrial production was concentrated in a narrow band: Britain, Belgium, northern France, the Ruhr valley in Germany, and the northeastern United States. Japan would join this group by 1900. The rest of the world, including India, China, Egypt, and Latin America, remained structured as raw material suppliers.",
     intro: "Examine the geographic pattern of industrialization by 1900. Notice the clustering of industrial regions: the British Midlands and North, the Ruhr valley in Germany, the northeastern US, and Japan. Then notice what is absent: no industrial zones in India, sub-Saharan Africa, Southeast Asia, or most of Latin America despite many of these regions having raw materials, labor, and (in India's case) sophisticated pre-existing textile production.",
     prompt: "Using the map, explain the geographic pattern of industrialization. What do the regions that industrialized have in common? What do the regions that did not industrialize have in common? How does the concept of 'political sovereignty' help explain this geographic pattern?"

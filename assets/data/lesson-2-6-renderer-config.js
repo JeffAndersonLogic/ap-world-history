@@ -31,13 +31,13 @@
   lesson.stableImages = {
     map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
     first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    contentDelivery: '../assets/images/module-cards/steppe-eurasian-1200ce.jpg',
+    contentDelivery: '../assets/images/module-art/unit-2/topic-2-6/contentdelivery.svg',
     beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    skill:           '../assets/images/module-cards/mogao-caves-dunhuang.jpg',
-    checkpoint1:     '../assets/images/module-cards/persepolis-gate-nations.jpg',
-    evidence:        '../assets/images/module-cards/abbasid-baghdad-9thc.jpg',
-    source:          '../assets/images/module-cards/song-dynasty-kaifeng.jpg',
-    beInTheRoom:     '../assets/images/module-cards/sahara-caravan-1300ce.jpg',
+    skill: '../assets/images/module-art/unit-2/topic-2-6/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-2/topic-2-6/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-2/topic-2-6/evidence.svg',
+    source: '../assets/images/module-art/unit-2/topic-2-6/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-2/topic-2-6/beintheroom.svg',
     checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png'
   };
 

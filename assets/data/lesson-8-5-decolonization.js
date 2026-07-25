@@ -182,8 +182,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Decolonization, 1945–1975",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Decolonization_of_the_Americas.png",
+    url: "../assets/images/instructional-maps/topic-8-5.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-8-5.svg",
     caption: "The wave of decolonization from the end of World War II through the mid-1970s, showing the geographic range of independence movements in Asia, Africa, and the Caribbean.",
     intro: "Use the map to trace the geography of decolonization. Note where independence came earliest (India, 1947), where it clustered (sub-Saharan Africa in 1960, the 'Year of Africa'), and where it was most delayed (Angola and other Portuguese colonies, 1975). The geographic pattern reflects the political and military conditions that shaped each colony's path.",
     prompt: "What patterns do you notice in when and where independence came? What does the timing and geography of decolonization suggest about the conditions that produced negotiated versus armed-struggle paths to independence?",

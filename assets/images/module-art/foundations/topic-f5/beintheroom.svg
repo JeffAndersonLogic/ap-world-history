@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
   <title id="title">FOUNDATIONS 5 — BeInTheRoom</title><desc id="desc">Local BeHistorical artwork for The World at c.1200 / Thinking Like a Historian. Historical anchor: What does the world look like at c.1200, and how do….</desc>
   <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1c1d"/><stop offset=".58" stop-color="#2b2f31"/><stop offset="1" stop-color="#3e4447"/></linearGradient><radialGradient id="glow"><stop stop-color="#a8652d" stop-opacity=".34"/><stop offset="1" stop-color="#a8652d" stop-opacity="0"/></radialGradient></defs>
   <rect width="1200" height="800" fill="url(#bg)"/><circle cx="727" cy="151" r="420" fill="url(#glow)"/><circle cx="958" cy="610" r="330" fill="url(#glow)" opacity=".7"/>

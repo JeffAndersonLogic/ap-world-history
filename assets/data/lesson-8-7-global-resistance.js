@@ -182,8 +182,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Global Resistance to Power Structures, 1900–Present",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_map_blank_without_borders.png",
+    url: "../assets/images/instructional-maps/topic-8-7.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-8-7.svg",
     caption: "Map the locations of the CED examples across three categories: nonviolent resistance (India, United States, South Africa), militarized state repression (Chile, Spain, Uganda; global military-industrial complex), and movements using violence against civilians (Peru, global Al-Qaeda network).",
     intro: "Use the map to place the CED examples geographically. As you examine each location, consider: what existing power structure was being challenged, and how did geography and context shape which method of resistance emerged?",
     prompt: "Why do you think the three CED categories of reaction, nonviolent challenge, militarized state response, and violence against civilians, appear in different regions and contexts? What factors in each case help explain why that particular method emerged rather than others?",

@@ -42,15 +42,15 @@
 
   lesson.stableImages = {
     map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    first10:         '../assets/images/module-cards/mogao-caves-dunhuang.jpg',
-    contentDelivery: '../assets/images/module-cards/steppe-eurasian-1200ce.jpg',
-    beSurreal:       '../assets/images/module-cards/persepolis-gate-nations.jpg',
+    first10: '../assets/images/module-art/unit-2/topic-2-1/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-2/topic-2-1/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-2/topic-2-1/besurreal.svg',
     skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
-    checkpoint1:     '../assets/images/module-cards/abbasid-baghdad-9thc.jpg',
-    evidence:        '../assets/images/module-cards/song-dynasty-kaifeng.jpg',
+    checkpoint1: '../assets/images/module-art/unit-2/topic-2-1/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-2/topic-2-1/evidence.svg',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
-    beInTheRoom:     '../assets/images/module-cards/mosque-kairouan-800ce.jpg',
-    checkpoint2:     '../assets/images/module-cards/sahara-caravan-1300ce.jpg'
+    beInTheRoom: '../assets/images/module-art/unit-2/topic-2-1/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-2/topic-2-1/checkpoint2.svg'
   };
 
   lesson.beInTheRoom = {

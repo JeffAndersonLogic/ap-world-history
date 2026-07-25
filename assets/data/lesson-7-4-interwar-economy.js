@@ -182,10 +182,10 @@ window.BEHISTORICAL_LESSON = {
           "Both governments tied economic intervention to **national pride and popular legitimacy**, a third path that was neither Washington's, Rome's, nor Moscow's."
         ],
         image: {
-          title: "Emiliano Zapata, 1914",
-          caption: "Zapata's demand, land to those who work it, from Topic 7.1's revolution, finally delivered at scale by Mexico's interventionist state in the 1930s.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Emiliano_Zapata,_1914.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Emiliano_Zapata,_1914.jpg"
+          title: "Economic crisis and political opportunity",
+          caption: "BeHistorical topic artwork for this card. Collapse in trade and employment made radical political answers plausible in places where they had been marginal.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {

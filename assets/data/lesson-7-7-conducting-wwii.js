@@ -156,10 +156,10 @@ window.BEHISTORICAL_LESSON = {
           "Like Britain, the U.S. mobilized totally **within a democracy**, leaning on consent, advertising, and voluntary participation rather than coercion."
         ],
         image: {
-          title: "Franklin D. Roosevelt signs the Social Security Act (1935)",
-          caption: "Roosevelt, Lend-Lease, Fireside Chats, war bonds, and the War Production Board mobilized the United States as the 'arsenal of democracy.'",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Signing_Of_The_Social_Security_Act.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Signing_Of_The_Social_Security_Act.jpg"
+          title: "Total war and the home front",
+          caption: "BeHistorical topic artwork for this card. Conducting the war meant mobilizing economies and civilians, not only armies.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -227,8 +227,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: The World at War, c. 1942",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG",
+    url: "../assets/images/instructional-maps/topic-7-7.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-7-7.svg",
     caption: "A truly global war, Allied democracies and the Soviet Union against the Axis, each state mobilizing its home population and its colonies for total war.",
     intro: "Use the map to see why mobilization reached the colonies, not just the home countries: Britain, France, and Japan drew troops, labor, and resources from empires that spanned the globe. The Key Concept's phrase 'both in the home countries and the colonies or former colonies' is written across this map.",
     prompt: "Locate Britain, the United States, Germany, and the USSR, and trace the empires the Allied powers could draw on. How did the global reach of empire let governments mobilize 'both in the home countries and the colonies or former colonies'? Where would you mark the cities that fire-bombing and the atomic bomb turned into battlefields?",

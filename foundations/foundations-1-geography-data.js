@@ -44,8 +44,8 @@ window.FOUNDATION_TOPIC = {
 
   map: {
     title: 'Map: World Physical Geography',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg',
+    url: '../assets/images/instructional-maps/foundations-1.svg',
+    sourceUrl: '../assets/images/instructional-maps/foundations-1.svg',
     caption: 'Use this map as a historian: predict where farming and the first civilizations would begin, and explain why the physical features made it possible.',
     desc: 'Mark the four great river valleys (the Nile, the Tigris-Euphrates, the Indus, and the Huang He), the Fertile Crescent, the Eurasian steppe belt, and the Sahara Desert. These are the geographic conditions that decided where the Neolithic Revolution took hold.',
     key: [
@@ -170,10 +170,10 @@ window.FOUNDATION_TOPIC = {
         'The result: **populations grew**, family bands gave way to **villages** and then to **cities**, and human society became far more complex than foraging had ever allowed.'
       ],
       image: {
-        title: 'World Physical Map',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg',
-        caption: 'Agriculture arose independently in several regions as the Ice Age ended, a physical map becomes historical evidence when students use it to explain where and why.'
+        title: 'River valleys, steppe, and highlands',
+        url: '',
+        sourceUrl: '',
+        caption: 'BeHistorical topic artwork for this card. The physical features that made farming, herding, and state building possible sat in specific places, and those places shaped what grew there.'
       }
     },
     {
@@ -230,10 +230,10 @@ window.FOUNDATION_TOPIC = {
         'From Day 1, treat the map as an **argument**: a physical feature is evidence about why some societies could grow large, trade far, and build cities, and why others followed a different path.'
       ],
       image: {
-        title: 'World Physical Map',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg',
-        caption: 'The map is already making an argument about where farming and civilization could begin. Historians learn to read it.'
+        title: 'Reading geography as a historian',
+        url: '',
+        sourceUrl: '',
+        caption: 'BeHistorical topic artwork for this card. Ask what a landscape made easy, what it made hard, and what it made necessary.'
       }
     }
   ],

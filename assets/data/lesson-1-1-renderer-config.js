@@ -62,7 +62,7 @@
     evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Zhu%20xi.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg',
     beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emperor_Huizong.jpg',
-    checkpoint2: '../assets/images/module-cards/song-dynasty-kaifeng.jpg'
+    checkpoint2: '../assets/images/module-art/unit-1/topic-1-1/checkpoint2.svg'
   };
 
   lesson.beInTheRoom = {

@@ -93,16 +93,16 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png'
+    map: '../assets/images/module-art/unit-6/topic-6-8/map.svg',
+    first10: '../assets/images/module-art/unit-6/topic-6-8/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-6/topic-6-8/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-6/topic-6-8/besurreal.svg',
+    skill: '../assets/images/module-art/unit-6/topic-6-8/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-6/topic-6-8/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-6/topic-6-8/evidence.svg',
+    source: '../assets/images/module-art/unit-6/topic-6-8/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-6/topic-6-8/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-6/topic-6-8/checkpoint2.svg'
   },
   lecture: {
     title: 'Causation in the Imperial Age: Power, Process, and Consequence',
@@ -118,9 +118,9 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Causation in the Imperial Age',
-          caption: 'A visual anchor for Topic 6.8.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png'
+          caption: 'The mechanism behind Topic 6.8, drawn as BeHistorical topic artwork.',
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -133,8 +133,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Regional comparison',
           caption: 'Compare Economic extraction and infrastructure with State expansion and resistance.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -147,8 +147,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Argumentation',
           caption: 'Evidence becomes analysis when its relationship to a claim is explained.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
@@ -156,7 +156,7 @@ window.BEHISTORICAL_LESSON = {
   map: {
     title: 'Mapping Causation in the Imperial Age',
     url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png',
     caption: 'Locate the regions connected to Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.',
     intro: 'Geography shaped access to resources, markets, transport routes, and state power. Use the map to connect location to historical process.',
     prompt: 'Which geographic relationship best helps explain causation in the imperial age, and what evidence supports your answer?',
@@ -304,22 +304,22 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Economic extraction and infrastructure',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+      url: '',
+      sourceUrl: '',
       caption: 'Economic extraction and infrastructure helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Economic extraction and infrastructure support or complicate a claim about causation in the imperial age?'
     },
     {
       title: 'State expansion and resistance',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+      url: '',
+      sourceUrl: '',
       caption: 'State expansion and resistance helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does State expansion and resistance support or complicate a claim about causation in the imperial age?'
     },
     {
       title: 'Migration and diaspora',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+      url: '',
+      sourceUrl: '',
       caption: 'Migration and diaspora helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Migration and diaspora support or complicate a claim about causation in the imperial age?'
     }

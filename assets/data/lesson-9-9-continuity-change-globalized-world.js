@@ -121,21 +121,21 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+    map: '../assets/images/module-art/unit-9/topic-9-9/map.svg',
+    first10: '../assets/images/module-art/unit-9/topic-9-9/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-9/topic-9-9/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-9/topic-9-9/besurreal.svg',
+    skill: '../assets/images/module-art/unit-9/topic-9-9/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-9/topic-9-9/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-9/topic-9-9/evidence.svg',
+    source: '../assets/images/module-art/unit-9/topic-9-9/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-9/topic-9-9/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-9/topic-9-9/checkpoint2.svg'
   },
   map: {
     title: 'Mapping Continuity and Change in a Globalized World',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+    url: '../assets/images/instructional-maps/topic-9-9.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-9-9.svg',
     caption: 'Locate the regions tied to Internet and cellular communication, Container shipping and air travel, Green Revolution and medicine, Birth control and global consumer culture.',
     intro: 'Global patterns are produced through specific places, routes, institutions, and unequal relationships. Use geography to test the scale of your claim.',
     prompt: 'Which geographic pattern best helps explain continuity and change in a globalized world, and what evidence supports that conclusion?',
@@ -198,8 +198,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Energy, Agriculture, and Medicine',
           caption: 'Evidence anchor 2 for Topic 9.9.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -212,8 +212,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Society, Rights, and Culture',
           caption: 'Evidence anchor 3 for Topic 9.9.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -226,8 +226,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Building the Extent Argument',
           caption: 'Evidence anchor 4 for Topic 9.9.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
@@ -326,15 +326,15 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'Energy, Agriculture, and Medicine',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'Petroleum and nuclear technologies raised productivity and material output while creating strategic and environmental risks.',
       prompt: 'How does this evidence support or qualify a claim about continuity and change in a globalized world?'
     },
     {
       title: 'Society, Rights, and Culture',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'Birth control expanded women’s control over fertility and contributed to lower fertility rates in many regions.',
       prompt: 'How does this evidence support or qualify a claim about continuity and change in a globalized world?'
     }

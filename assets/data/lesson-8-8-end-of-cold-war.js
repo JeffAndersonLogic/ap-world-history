@@ -157,8 +157,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The End of the Cold War: Geography of Collapse",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_map_blank_without_borders.png",
+    url: "../assets/images/instructional-maps/topic-8-8.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-8-8.svg",
     caption: "Map the three causal strands of KC-6.2.IV.E geographically: the U.S.-Soviet arms race (Washington and Moscow as strategic capitals); the Afghan theater (Central Asia, Pakistan's role as Mujahideen supply route, CIA operations); and the Eastern European revolutions of 1989 (Poland, Hungary, East Germany, Czechoslovakia, Romania) and the Soviet republics' declarations of independence (Baltic states, Ukraine, others).",
     intro: "KC-6.2.IV.E connects three geographic scales: the bilateral U.S.-Soviet competition, the regional conflict in Afghanistan, and the internal collapse within the Soviet bloc. As you examine the map, consider how events at each scale interacted with the others.",
     prompt: "Looking at the geography of the Cold War's end: why do you think Eastern Europe moved first (1989) rather than the Soviet republics themselves? What role did geography, specifically, the distance between Moscow and the Eastern European capitals, play in the dynamics of the collapse?",

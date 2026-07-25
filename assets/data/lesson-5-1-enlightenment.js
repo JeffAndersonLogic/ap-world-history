@@ -108,10 +108,10 @@ window.BEHISTORICAL_LESSON = {
           "The Enlightenment also produced **economic ideas** (Adam Smith's free market theory) and **scientific advances** (systematic botany, chemistry, physics), but for the AP exam, the political and social ideas are the most heavily tested. The primary skill being assessed is causation: how did Enlightenment ideas cause the Atlantic Revolutions?"
         ],
         image: {
-          title: "Waldseemüller Map — The World the Enlightenment Inherited",
-          caption: "The Enlightenment thinkers inherited a world already transformed by European expansion. The global networks created by the Age of Exploration provided both the material conditions (print culture, global trade, Atlantic plantation economy) and the moral contradictions (slavery, colonialism) that shaped Enlightenment thought.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
+          title: "Reason applied to human society",
+          caption: "BeHistorical topic artwork for this card. The Enlightenment took the method of the Scientific Revolution and turned it on government, religion, and law.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -125,10 +125,10 @@ window.BEHISTORICAL_LESSON = {
           "**Adam Smith** (1723–1790): In *The Wealth of Nations* (1776), argued that the **free market**, the 'invisible hand' of supply and demand, allocates resources more efficiently than government intervention or mercantilist monopolies. Smith challenged the mercantilist assumptions of European colonial empires (that trade should be tightly controlled for national advantage) and provided intellectual foundations for industrial capitalism. For the AP exam, Smith is primarily important as background to the economic transformations of Topics 5.3–5.7."
         ],
         image: {
-          title: "Astrolabe — Scientific Instrument of the Age of Reason",
-          caption: "The Enlightenment drew its authority from the success of the Scientific Revolution. If Newton could discover natural laws governing the physical universe through reason and observation, Enlightenment thinkers argued, surely reason could discover natural laws governing human society and government.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg"
+          title: "The philosophes and their core claims",
+          caption: "BeHistorical topic artwork for this card. Natural rights, the social contract, separation of powers, and religious toleration: ideas with obvious political consequences.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -140,10 +140,10 @@ window.BEHISTORICAL_LESSON = {
           "**The limits of universalism**: Enlightenment universalism was deeply contradictory in practice. **Rousseau** explicitly argued that women's natural sphere was domestic, not political, his *Emile* (1762) described the ideal education for girls as preparation for obedience and charm, not citizenship. **Locke** invested in the Royal African Company, which transported enslaved Africans across the Atlantic, his natural rights theory had no mechanism to explain why enslaved people were excluded. **Voltaire** wrote explicitly racist descriptions of Africans and Asians. These limits are not peripheral to the Enlightenment, they reveal that 'universal' rights were conceived primarily by European men for European men, and that the struggle to actually universalize them would define the next two centuries of Atlantic history."
         ],
         image: {
-          title: "VOC — Enlightenment in a Commercial World",
-          caption: "The Enlightenment developed alongside the Atlantic commercial economy, the same global trade networks that enriched European merchants and funded the printing presses that spread Enlightenment ideas also sustained the plantation slavery that contradicted Enlightenment universalism.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"
+          title: "How far the ideas travelled, and how far they did not",
+          caption: "BeHistorical topic artwork for this card. Print culture and salons spread these claims quickly, while the same writers often exempted women, the enslaved, and the colonized.",
+          url: "",
+          sourceUrl: ""
         }
       }
     ]
@@ -151,8 +151,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Republic of Letters: Enlightenment Ideas Across the Atlantic World, c. 1750",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
+    url: "../assets/images/instructional-maps/topic-5-1.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-5-1.svg",
     caption: "By c. 1750, Enlightenment ideas circulated across Europe and the Atlantic world through print culture, correspondence networks, salons, and universities. The same trade routes that carried silver and enslaved people also carried books, pamphlets, and letters among philosophes.",
     intro: "Examine the Atlantic world in c. 1750. Notice the concentration of Enlightenment intellectual centers in Western Europe (Paris, London, Edinburgh, Amsterdam) and the Atlantic trade routes that connected them to the Americas. Consider: how did the same infrastructure that sustained the plantation economy also spread the Enlightenment ideas that would eventually be used to challenge that economy?",
     prompt: "Using the map, explain how geography shaped both the spread of Enlightenment ideas and their limits. Why were Enlightenment ideas most accessible to educated Europeans, and hardest to access for enslaved Africans in the Americas? What does this geographic pattern reveal about the relationship between Enlightenment universalism and Enlightenment practice?"

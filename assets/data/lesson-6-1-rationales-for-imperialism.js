@@ -90,9 +90,9 @@ window.BEHISTORICAL_LESSON = {
   map: {
     title: "Map: Where the Ideologies of Empire Landed, c. 1750–1900",
     intro: "This topic is about ideas, but those ideas produced a map. Use this sourced world map to ground the four rationales in the geographic scale of what they actually justified: by 1900, European powers controlled roughly 80% of the world's land surface.",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
-    caption: "Wikimedia Commons blank world map, used as a sourced geographic reference for locating the regions reshaped by imperial ideology.",
+    url: "../assets/images/instructional-maps/topic-6-1.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-6-1.svg",
+    caption: "Imperial ideology was written in a handful of European capitals and applied to most of the world. Locate the metropoles, then the territory they claimed.",
     notes: [
       "Locate the major targets of late-19th-century imperialism: Sub-Saharan Africa, South Asia (India), Southeast Asia, and the Pacific islands.",
       "Locate the originating states whose citizens debated these rationales: Britain, France, Germany, and Belgium.",

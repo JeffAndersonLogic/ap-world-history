@@ -43,9 +43,9 @@ window.FOUNDATION_TOPIC = {
 
   map: {
     title: 'Map: The Six AP World Regions at c.1200',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/China_-_Song_Dynasty-en.svg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:China_-_Song_Dynasty-en.svg',
-    caption: 'Song China at c.1200: the Southern Song Dynasty, reduced to the Yangtze Delta and south after the Jurchen Jin conquest of the north in 1127. The map shows both the geographic constraint (loss of the Yellow River plain) and the commercial opportunity (access to maritime trade through southern ports like Quanzhou and Hangzhou).',
+    url: '../assets/images/instructional-maps/foundations-5.svg',
+    sourceUrl: '../assets/images/instructional-maps/foundations-5.svg',
+    caption: 'The six AP World regions at c.1200. Each region had its own political and economic centre of gravity, and the year begins by learning to read them side by side.',
     desc: 'Use this map as the first specific evidence for Unit 1. Song China at c.1200 is a civilization shaped by every Foundations theme: geography (Yangtze Delta rice surplus, loss of the north), belief systems (Neo-Confucianism, Buddhist commerce patronage), state power (civil service exam, maritime customs revenue), and trade networks (Indian Ocean participation, paper money, world\'s largest merchant fleet).',
     key: [
       { label: 'Southern Song territory', detail: 'After 1127, the Song controlled the Yangtze Delta and south, the most agriculturally productive and commercially active zone in China, if not the world.' },
@@ -108,23 +108,23 @@ window.FOUNDATION_TOPIC = {
     items: [
       {
         title: 'Along the River During the Qingming Festival (Song China, c.1085–1145 CE)',
-        url: '../assets/images/module-cards/song-dynasty-kaifeng.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Along_the_River_During_the_Qingming_Festival_(detail_of_original).jpg',
-        caption: 'This section of Zhang Zeduan\'s famous scroll painting depicts commercial life in the Northern Song capital Kaifeng around c.1085–1145 CE, boats, markets, bridges, crowds, and specialized craftspeople filling the riverbanks. It is one of the most reproduced paintings in Chinese history and one of the most powerful pieces of visual evidence for Song China\'s Commercial Revolution.',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song_Imperial_Examination.JPG',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG',
+        caption: 'Candidates sitting the imperial examinations. Song China recruited officials by tested merit, an unusual answer to the problem of staffing a state.',
         prompt: 'Using this image as visual evidence and at least one specific fact from Foundations Days 1–4, write a claim about what made Song China commercially distinctive at c.1200. Explain the reasoning that connects your evidence to your claim.'
       },
       {
-        title: 'Great Mosque of Kairouan, North Africa (founded 670 CE)',
-        url: '../assets/images/module-cards/mosque-kairouan-800ce.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Kairouan_panoramic_view.jpg',
-        caption: 'The Great Mosque of Kairouan in modern Tunisia, one of the oldest mosques in the Islamic world, served simultaneously as prayer hall, legal court, school, and community center. Its architectural scale and permanence communicated Islamic political and religious authority across North Africa. By c.1200, mosques like this one anchored *madrasa* networks, *waqf*-funded institutions, and *qadi* courts across the entire Dar al-Islam.',
+        title: 'The Song imperial examinations',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Kairouan,_prayer_hall.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Kairouan,_prayer_hall.jpg',
+        caption: 'The prayer hall at Kairouan, founded 670 CE, anchors North Africa inside the wider Islamic world by c.1200.',
         prompt: 'Using this image as visual evidence and at least one specific fact from Foundations Day 2 (Belief Systems), write a claim about how Islam functioned as a social institution in Dar al-Islam at c.1200. Explain the reasoning that connects your evidence to your claim.'
       }
     ]
   },
 
   aiCoach: {
-    title: 'Socrates Coach: Building the Argument',
+    title: 'Great Mosque of Kairouan, North Africa',
     intro: 'Use one of these prompts to strengthen your SAQ response before the final checkpoint. The goal is not to add more facts, it is to make sure your claim is clear, your evidence is specific, and your reasoning explicitly connects the two.',
     prompts: [
       'Read your claim sentence. Does it directly answer the prompt, or does it just introduce the topic? Revise it to take a position in the first sentence.',
@@ -190,10 +190,10 @@ window.FOUNDATION_TOPIC = {
         '**Argumentation**: You practiced this every day. A defensible claim in the first sentence. Specific named evidence. Explicit reasoning connecting the two. These three moves, claim, evidence, reasoning, are the architecture of every AP writing response.'
       ],
       image: {
-        title: 'Along the River During the Qingming Festival (detail)',
-        url: '../assets/images/module-cards/song-dynasty-kaifeng.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Along_the_River_During_the_Qingming_Festival_(detail_of_original).jpg',
-        caption: 'This image can be used to practice all five skills simultaneously: contextualize the commercial scene geographically and institutionally, identify causes of Song commercialization, note what changed from earlier Chinese dynasties, compare Song commerce to Islamic trade infrastructure, and argue a specific claim about what this image proves.'
+        title: 'Jiaozi paper money, Song China',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao_zi.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg',
+        caption: 'Song China issued the world\'s first government paper money. It is the fastest evidence that this was a commercialized economy, not just a large one.'
       }
     },
     {
@@ -205,10 +205,10 @@ window.FOUNDATION_TOPIC = {
         'The rule: **contextualization must explain a connection, not just name a background condition**. "Song China existed during a time of Confucian tradition" is not contextualization. "Zhu Xi\'s Neo-Confucian synthesis embedded Confucian ethics into the civil service examination curriculum, ensuring that every official who administered Song China shared an ideological framework that defined loyalty to the emperor as a cosmic obligation" is contextualization.'
       ],
       image: {
-        title: 'Kilwa Kisiwani Great Mosque ruins, Tanzania',
-        url: '../assets/images/module-cards/kilwa-kisiwani-mosque.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Kilwa_Kisiwani_great_mosque.jpg',
-        caption: 'Kilwa at c.1200 provides a different contextualization opportunity: explain the Indian Ocean monsoon system, the role of East African gold in the network, and the Swahili city-states\' position as junction nodes, before arguing anything specific about Kilwa\'s wealth or political organization.'
+        title: 'Kilwa Kisiwani, Swahili coast',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg',
+        caption: 'The coral-stone mosque at Kilwa shows an African port city grown wealthy on Indian Ocean trade by c.1200.'
       }
     },
     {
@@ -220,10 +220,10 @@ window.FOUNDATION_TOPIC = {
         '**The misconception to correct**: "Things always get better over time." By c.1200, the most sophisticated economy was in China, the most advanced mathematics in the Islamic world, the most extensive trade network in the Indian Ocean, and the most populous city north of Mexico on the Mississippi River. Progress is not a European project heading toward a Western destination. CCOT is neutral about direction, it describes change without implying improvement.'
       ],
       image: {
-        title: 'Angkor Wat, Khmer Empire (completed c.1150 CE)',
-        url: '../assets/images/module-cards/angkor-wat-1150ce.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat_temple.jpg',
-        caption: 'Angkor Wat at c.1150–1200 CE provides both a causation and CCOT opportunity: explain what caused the Khmer rulers to adopt Hindu divine kingship ideology (political legitimacy, Indian Ocean commercial connections), and explain what changed in the Khmer Empire when Theravada Buddhism replaced Hinduism as the state religion in the 13th century.'
+        title: 'Angkor Wat, Khmer Empire',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
+        caption: 'Angkor Wat, completed c.1150, shows a Southeast Asian state organizing enormous labor around water control and religious authority.'
       }
     },
     {
@@ -235,10 +235,10 @@ window.FOUNDATION_TOPIC = {
         'The **non-goods principle** from Day 4 applies to every Unit 1 question about cultural exchange: Islam spreads to Southeast Asia via merchant networks, not conquest. Buddhism spreads to Korea and Japan via Tang Chinese court connections. Neo-Confucianism spreads to Korea and Vietnam via the civil service examination model. Ideas travel with people, and people travel along trade routes.'
       ],
       image: {
-        title: 'Song Dynasty Along the River painting detail',
-        url: '../assets/images/module-cards/song-dynasty-kaifeng.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Along_the_River_During_the_Qingming_Festival_(detail_of_original).jpg',
-        caption: 'Zhang Zeduan\'s scroll of commercial Song China life is the first primary source students will likely encounter in Topic 1.1. After Foundations, they can read it with geographic, institutional, and commercial context already in place, using it as evidence for specific historical claims rather than just describing what they see.'
+        title: 'Comparing the regions at c.1200',
+        url: '',
+        sourceUrl: '',
+        caption: 'BeHistorical topic artwork for this card. Comparison starts by naming a shared process, then explaining why its form differed by region.'
       }
     }
   ],

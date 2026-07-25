@@ -139,8 +139,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Mapping Cold War Effects Across Hemispheres",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_map_blank_without_borders.png",
+    url: "../assets/images/instructional-maps/topic-8-9.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-8-9.svg",
     caption: "Use geography to test whether economic, political, social, and cultural effects followed similar patterns in the Eastern and Western Hemispheres.",
     intro: "Place every example from Topics 8.1–8.8 before evaluating similarity. A hemispheric argument fails if its evidence is not geographically accurate.",
     prompt: "Which Cold War effect appears most geographically widespread, and which is most regionally uneven? Defend both judgments with evidence.",
@@ -189,8 +189,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   images: [
-    { title: "Proxy-war geography", url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png", sourceUrl: "https://commons.wikimedia.org/wiki/File:World_map_blank_without_borders.png", caption: "Map Korea, Vietnam, Angola, Afghanistan, Guatemala, Chile, and Nicaragua before comparing intervention patterns.", prompt: "Which geographic pattern best supports a hemispheric comparison?" },
-    { title: "Superpower diplomacy", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg", sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_1985.jpg", caption: "Superpower meetings shaped relationships and consequences far beyond the two states represented.", prompt: "How can diplomacy be both a bilateral event and evidence of global effects?" },
+    { title: "Proxy-war geography", url: "", sourceUrl: "", caption: "BeHistorical topic artwork for this card. Superpower rivalry was fought out mostly in places far from Washington and Moscow.", prompt: "Which geographic pattern best supports a hemispheric comparison?" },
+    { title: "Proxy-war geography", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg", sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_1985.jpg", caption: "Superpower meetings shaped relationships and consequences far beyond the two states represented.", prompt: "How can diplomacy be both a bilateral event and evidence of global effects?" },
     { title: "The Berlin Wall falls", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG", sourceUrl: "https://commons.wikimedia.org/wiki/File:Thefalloftheberlinwall1989.JPG", caption: "The fall of the Berlin Wall carried political, social, and cultural meaning across hemispheres.", prompt: "Which effect category does this image support most strongly, and why?" }
   ],
 
@@ -256,10 +256,10 @@ window.BEHISTORICAL_LESSON = {
           "Contextualization: ground your argument in the postwar order (c. 1945) that made Cold War effects global, imperial exhaustion, superpower rivalry, nuclear deterrence, and the vacuum decolonization created."
         ],
         image: {
-          title: "World map (geographic reference)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:World_map_blank_without_borders.png",
-          caption: "A world map anchors hemisphere claims. Before writing your thesis, place your evidence geographically, Eastern or Western? Does the pattern hold in both?"
+          title: "Testing causation across hemispheres",
+          url: "",
+          sourceUrl: "",
+          caption: "BeHistorical topic artwork for this card. Ask whether the same cause produced the same effect in Europe, Asia, Africa, and the Americas."
         }
       }
     ],

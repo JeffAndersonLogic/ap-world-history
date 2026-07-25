@@ -71,16 +71,16 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg'
+    map: '../assets/images/module-art/unit-6/topic-6-5/map.svg',
+    first10: '../assets/images/module-art/unit-6/topic-6-5/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-6/topic-6-5/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-6/topic-6-5/besurreal.svg',
+    skill: '../assets/images/module-art/unit-6/topic-6-5/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-6/topic-6-5/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-6/topic-6-5/evidence.svg',
+    source: '../assets/images/module-art/unit-6/topic-6-5/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-6/topic-6-5/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-6/topic-6-5/checkpoint2.svg'
   },
   lecture: {
     title: 'Economic Imperialism: Power, Process, and Consequence',
@@ -95,10 +95,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** British and French pressure on China through the Opium Wars and British investment in the port of Buenos Aires show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'Economic Imperialism',
-          caption: 'A visual anchor for Topic 6.5.',
+          title: 'The port of Buenos Aires',
+          caption: "British capital financed Argentina's docks and railways. Economic imperialism could direct an economy without formal colonial rule.",
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg'
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Buenos_Aires_Port.jpg'
         }
       },
       {
@@ -111,8 +111,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Regional comparison',
           caption: 'Compare British and French pressure on China through the Opium Wars with British investment in the port of Buenos Aires.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -125,16 +125,16 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Argumentation',
           caption: 'Evidence becomes analysis when its relationship to a claim is explained.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
   },
   map: {
     title: 'Mapping Economic Imperialism',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
+    url: '../assets/images/instructional-maps/topic-6-5.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-6-5.svg',
     caption: 'Locate the regions connected to British and French pressure on China through the Opium Wars, British investment in the port of Buenos Aires, Cotton exports from South Asia and Egypt, Palm oil and copper commodity chains.',
     intro: 'Geography shaped access to resources, markets, transport routes, and state power. Use the map to connect location to historical process.',
     prompt: 'Which geographic relationship best helps explain economic imperialism, and what evidence supports your answer?',
@@ -282,22 +282,22 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'British and French pressure on China through the Opium Wars',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'British and French pressure on China through the Opium Wars helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does British and French pressure on China through the Opium Wars support or complicate a claim about economic imperialism?'
     },
     {
       title: 'British investment in the port of Buenos Aires',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Buenos_Aires_Port.jpg',
       caption: 'British investment in the port of Buenos Aires helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does British investment in the port of Buenos Aires support or complicate a claim about economic imperialism?'
     },
     {
       title: 'Cotton exports from South Asia and Egypt',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Cotton exports from South Asia and Egypt helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Cotton exports from South Asia and Egypt support or complicate a claim about economic imperialism?'
     }

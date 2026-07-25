@@ -70,21 +70,21 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+    map: '../assets/images/module-art/unit-9/topic-9-7/map.svg',
+    first10: '../assets/images/module-art/unit-9/topic-9-7/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-9/topic-9-7/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-9/topic-9-7/besurreal.svg',
+    skill: '../assets/images/module-art/unit-9/topic-9-7/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-9/topic-9-7/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-9/topic-9-7/evidence.svg',
+    source: '../assets/images/module-art/unit-9/topic-9-7/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-9/topic-9-7/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-9/topic-9-7/checkpoint2.svg'
   },
   map: {
     title: 'Mapping Resistance to Globalization After 1900',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+    url: '../assets/images/instructional-maps/topic-9-7.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-9-7.svg',
     caption: 'Locate the regions tied to Anti-IMF activism, Anti-World Bank campaigns, Seattle WTO protests, Weibo and locally developed platforms.',
     intro: 'Global patterns are produced through specific places, routes, institutions, and unequal relationships. Use geography to test the scale of your claim.',
     prompt: 'Which geographic pattern best helps explain resistance to globalization after 1900, and what evidence supports that conclusion?',
@@ -147,8 +147,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'The Seattle Coalition',
           caption: 'Evidence anchor 2 for Topic 9.7.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -161,8 +161,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Cultural and Political Responses',
           caption: 'Evidence anchor 3 for Topic 9.7.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -175,8 +175,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Sourcing Resistance',
           caption: 'Evidence anchor 4 for Topic 9.7.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
@@ -275,15 +275,15 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'The Seattle Coalition',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'The 1999 WTO protests brought labor, environmental, human-rights, and anti-corporate groups together.',
       prompt: 'How does this evidence support or qualify a claim about resistance to globalization after 1900?'
     },
     {
       title: 'Cultural and Political Responses',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'States promoted local content, language, censorship, or national platforms in response to outside media power.',
       prompt: 'How does this evidence support or qualify a claim about resistance to globalization after 1900?'
     }

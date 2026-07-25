@@ -159,8 +159,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Columbian Exchange: Flows Between Hemispheres",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
+    url: "../assets/images/instructional-maps/topic-4-3.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-4-3.svg",
     caption: "A world map showing the major regions involved in the Columbian Exchange. Use this to trace the flows of crops (New World to Old), animals (Old World to New), diseases (Old World to New), and people (Africa to Americas via forced migration).",
     intro: "Use the world map to visualize the geographic scope of the Columbian Exchange. Consider how the Atlantic Ocean, once a barrier that had separated the hemispheres for 10,000 years, became a highway for the transfer of plants, animals, diseases, and people after 1492. Notice that the flows were not symmetric: crops generally moved in both directions, but disease moved overwhelmingly from east to west, and enslaved people moved overwhelmingly from Africa to the Americas.",
     prompt: "Using the map, trace the three most consequential transfers of the Columbian Exchange: New World crops moving east, Old World diseases moving west, and enslaved Africans moving west. For each, identify the source region, the destination region, and the major consequence."

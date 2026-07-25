@@ -700,6 +700,157 @@ section('Generated project status inventory');
   sectionDone('61 built; 0 missing; 0 broken BeInTheRoom entries');
 }
 
+// 13. Every picture a student can see must exist and must be a real image.
+//
+// This section exists because the course once shipped eleven 21-byte text files
+// named *.jpg. They passed a file-exists check and rendered as nothing.
+section('Image integrity');
+{
+  const IMAGE_MAGIC = [
+    { ext: 'jpg', bytes: [0xff, 0xd8, 0xff] },
+    { ext: 'png', bytes: [0x89, 0x50, 0x4e, 0x47] },
+    { ext: 'gif', bytes: [0x47, 0x49, 0x46, 0x38] },
+    { ext: 'webp', bytes: [0x52, 0x49, 0x46, 0x46] }
+  ];
+
+  function isRealImage(file) {
+    const buffer = fs.readFileSync(file);
+    if (/\.svg$/i.test(file)) {
+      return buffer.length > 80 && buffer.toString('utf8', 0, 400).includes('<svg');
+    }
+    return IMAGE_MAGIC.some((kind) => kind.bytes.every((byte, index) => buffer[index] === byte));
+  }
+
+  // Collect every local image reference the browser will actually request.
+  const references = [];
+  const IMAGE_EXT = /\.(svg|jpe?g|png|gif|webp)$/i;
+  const addRef = (from, url) => {
+    const raw = String(url || '').trim();
+    if (!raw || /^https?:/i.test(raw) || raw.startsWith('data:')) return;
+    if (raw.includes('${') || raw.includes('{{')) return;   // runtime-built src
+    if (!IMAGE_EXT.test(raw.split(/[?#]/)[0])) return;      // not an image slot
+    references.push({ from, url: raw, target: path.resolve(path.dirname(from), raw.split(/[?#]/)[0]) });
+  };
+
+  const htmlFiles = [];
+  const walkHtml = (dir) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (entry.name === '.git' || entry.name === 'node_modules') continue;
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walkHtml(full);
+      else if (/\.html$/i.test(entry.name)) htmlFiles.push(full);
+    }
+  };
+  walkHtml(ROOT);
+  // assets/templates holds an uncopied page skeleton: its relative paths only
+  // resolve once it has been copied into a unit-N folder.
+  const scannedHtml = htmlFiles.filter((file) => !file.includes(`${path.sep}templates${path.sep}`));
+
+  for (const file of scannedHtml) {
+    const src = read(file) || '';
+    for (const match of src.matchAll(/<img[^>]*?\ssrc=["']([^"']+)["']/gi)) addRef(file, match[1]);
+    for (const match of src.matchAll(/--img:([^;"]+)/g)) {
+      for (const layer of match[1].matchAll(/url\((['"]?)([^'")]+)\1\)/g)) addRef(file, layer[2]);
+    }
+  }
+
+  // Lesson and Foundations data: map, lecture, and evidence pictures.
+  const dataFiles = [
+    ...glob(path.join(ROOT, 'assets', 'data'), /^lesson-\d+-\d+-.*\.js$/),
+    ...glob(path.join(ROOT, 'foundations'), /-data\.js$/)
+  ];
+  for (const file of dataFiles) {
+    const src = read(file) || '';
+    for (const match of src.matchAll(/\b(?:url|sourceUrl)\s*:\s*(['"])((?:\\.|(?!\1).)*)\1/g)) {
+      // Data-file paths are written relative to the lesson page, one level down.
+      const url = match[2];
+      if (!url || /^https?:/i.test(url)) continue;
+      if (!IMAGE_EXT.test(url.split(/[?#]/)[0])) continue;  // beInTheRoom urls point at pages
+      references.push({ from: file, url, target: path.resolve(ROOT, 'unit-1', url.split(/[?#]/)[0]) });
+    }
+  }
+
+  const seen = new Set();
+  let checked = 0;
+  for (const ref of references) {
+    const key = `${ref.from}|${ref.url}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    if (/module-cards\//.test(ref.url)) {
+      err(ref.from, `references the retired stub image directory: ${ref.url}`);
+      continue;
+    }
+    if (!exists(ref.target)) {
+      err(ref.from, `image file does not exist: ${ref.url}`);
+      continue;
+    }
+    if (!isRealImage(ref.target)) {
+      err(ref.from, `not a real image file, it will render as nothing: ${ref.url}`);
+      continue;
+    }
+    checked++;
+  }
+
+  // Hub topic cards carry their artwork as two <img> layers: local art
+  // underneath, the photograph on top with an onerror that removes itself. A
+  // photograph on its own would leave an empty tile when the URL dies, and a
+  // CSS custom property cannot be used here at all, because a relative url()
+  // inside one resolves against the stylesheet's folder rather than the page.
+  for (const file of scannedHtml.filter((f) => /(^|[\\/])index\.html$/i.test(f))) {
+    const src = read(file) || '';
+    if (src.includes('--img')) {
+      err(file, 'hub card still uses --img; relative paths inside a custom property resolve against the stylesheet and 404');
+    }
+    for (const card of src.matchAll(/<a class="unit-card"[^>]*>([\s\S]*?)<div class="unit-content">/g)) {
+      const layers = card[1];
+      const art = layers.match(/class="card-art"\s+src="([^"]+)"/);
+      const photo = layers.match(/class="card-photo"\s+src="([^"]+)"/);
+      const label = (src.slice(card.index).match(/<div class="unit-num">([^<]*)</) || [, '?'])[1];
+      if (!art) {
+        err(file, `hub card ${label} has no local card-art layer`);
+        continue;
+      }
+      if (/^https?:/i.test(art[1])) err(file, `hub card ${label} card-art layer must be local, got ${art[1]}`);
+      if (photo && !/onerror=/.test(layers)) {
+        err(file, `hub card ${label} has a photograph with no onerror fallback`);
+      }
+    }
+  }
+
+  // Generated local maps must be present for every slot that points at one.
+  const mapDir = path.join(ROOT, 'assets', 'images', 'instructional-maps');
+  totalChecks++;
+  if (!exists(mapDir)) {
+    err(mapDir, 'generated instructional maps are missing, run node scripts/build-instructional-maps.js');
+  }
+
+  // Every local SVG needs intrinsic dimensions. With only a viewBox, an <img>
+  // holding it can be stretched by its container until object-fit letterboxes
+  // the picture out of view, which is how a working image reads as a blank box.
+  const svgFiles = [path.join(ROOT, 'assets', 'images', 'media-fallback.svg')];
+  const walkSvg = (dir) => {
+    if (!exists(dir)) return;
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walkSvg(full);
+      else if (/\.svg$/.test(entry.name)) svgFiles.push(full);
+    }
+  };
+  walkSvg(mapDir);
+  walkSvg(path.join(ROOT, 'assets', 'images', 'module-art'));
+  walkSvg(path.join(ROOT, 'assets', 'images', 'unit-1'));
+  const unsized = svgFiles.filter(exists).filter((file) => {
+    const tag = (fs.readFileSync(file, 'utf8').slice(0, 500).match(/<svg[^>]*>/) || [''])[0];
+    return !/\swidth=/.test(tag) || !/\sheight=/.test(tag);
+  });
+  for (const file of unsized.slice(0, 5)) {
+    err(file, 'SVG has no intrinsic width/height, so an <img> using it can be stretched off-screen');
+  }
+  if (unsized.length > 5) err(mapDir, `${unsized.length - 5} more SVGs are missing intrinsic width/height`);
+
+  sectionDone(`${checked} local image references resolve to real image files`);
+}
+
 // ── Summary ───────────────────────────────────────────────────────────────────
 console.log(`\n${'─'.repeat(60)}`);
 console.log(`${W}Summary${X}  |  ${totalChecks} files checked`);

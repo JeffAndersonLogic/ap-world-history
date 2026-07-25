@@ -163,8 +163,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Environmental Change and Resource Competition After 1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rondonia_Deforestation.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Rondonia_Deforestation.jpg",
+    url: "../assets/images/instructional-maps/topic-9-3.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-9-3.svg",
     caption: "Human activity, industrialization, agriculture, urbanization, degraded environments across the globe, from deforested rainforests to shrinking water supplies to polluted cities.",
     intro: "Use this image to consider how human activity shaped and degraded environments in different regions after 1900. Think about the causes (what human activities drove the change) and the effects (what environmental and social consequences followed).",
     prompt: "Identify one form of environmental degradation visible or implied in this image and explain both its cause (what human activity produced it) and its effect (what environmental or social consequence followed).",

@@ -125,10 +125,10 @@ window.BEHISTORICAL_LESSON = {
           '**Religion and ideas spread through commerce** in all three systems, Islam was the most striking case, spreading along all three networks simultaneously carried by merchants, scholars, and Sufi missionaries, making it the most widely distributed religion in the Afro-Eurasian world by c. 1450.'
         ],
         image: {
-          title: 'World Map — Blue Sea Edition',
-          caption: 'By c. 1300, the Silk Roads, Indian Ocean network, and trans-Saharan routes together formed a single interconnected Afro-Eurasian exchange system spanning from West Africa to East Asia.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg'
+          title: 'Comparing three networks',
+          caption: 'BeHistorical topic artwork for this card. Compare the three networks on what they carried, who organized them, and what technology made them possible.',
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -164,8 +164,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: 'Map: All Three Afro-Eurasian Trade Networks, c. 1200–1450',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg',
+    url: '../assets/images/instructional-maps/topic-2-7.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-2-7.svg',
     caption: 'The world map shows the geographic scope of all three Afro-Eurasian trade networks, overland Silk Roads, Indian Ocean maritime routes, and trans-Saharan caravan routes, that together linked the known world from West Africa to China.',
     intro: 'This topic asks you to compare three separate trade systems, but looking at a world map reveals that they were not truly separate. The Indian Ocean network connected to the Silk Roads through Persian Gulf and Red Sea ports. The trans-Saharan routes connected to the Mediterranean world and, through it, to both the Silk Roads and the Indian Ocean network. Together, they formed a single integrated Afro-Eurasian exchange system.',
     prompt: 'Using the world map, identify where you think the three networks overlapped or connected. What cities or regions served as nodes connecting more than one network? How does this geographic overlap challenge the idea that these were three separate systems rather than one integrated one?',

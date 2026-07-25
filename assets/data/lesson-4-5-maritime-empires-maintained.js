@@ -177,8 +177,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Silver Routes and Colonial Administration, c. 1580",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
+    url: "../assets/images/instructional-maps/topic-4-5.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-4-5.svg",
     caption: "By c. 1580, American silver connected the Americas, Europe, and Asia in a single global trade network. Silver from Potosí flowed east to Seville and west to Manila, where it was exchanged for Chinese goods and pulled toward Asia by Chinese demand.",
     intro: "Trace the two silver routes from Potosí: east across the Atlantic through Seville, and west through Acapulco and Manila to China. Notice how these routes connected colonial labor systems (mita at Potosí) to global trade networks (Manila Galleon, Atlantic system) and to Asian economies (Chinese demand for silver).",
     prompt: "Using the map, explain how the silver economy connected three continents. What role did Chinese demand for silver play in driving the entire system? What does this reveal about Asia's role in the global economy during this period?"

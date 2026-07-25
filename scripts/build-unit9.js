@@ -19,7 +19,12 @@ const DATA = path.join(ROOT, 'assets', 'data');
 const ROOM = path.join(ROOT, 'beintheroom', 'unit-9');
 const COACH_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
 const SUBMIT_NOTE = 'Organize your thinking here, submit your final work in Canvas.';
-const WORLD_MAP = 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png';
+// Each topic gets a purpose-built local map instead of a blank world outline,
+// and slots without a topic-specific photograph fall back to the generated
+// per-slot artwork rather than repeating one filler image.
+const instructionalMap = (id) => `../assets/images/instructional-maps/topic-${id.replace('.', '-')}.svg`;
+const moduleArt = (id, slot) => `../assets/images/module-art/unit-9/topic-${id.replace('.', '-')}/${slot}.svg`;
+const TOPIC_ART = '';
 
 const formContext = { URLSearchParams };
 formContext.window = formContext;
@@ -239,7 +244,7 @@ function conceptArray(topic) {
 
 function buildLesson(topic) {
   const evidenceImages = topic.lectures.slice(0, 3).map((segment, i) => ({
-    title: segment[0], url: i === 0 ? topic.image : WORLD_MAP, sourceUrl: i === 0 ? topic.image : WORLD_MAP,
+    title: segment[0], url: i === 0 ? topic.image : TOPIC_ART, sourceUrl: i === 0 ? topic.image : TOPIC_ART,
     caption: segment[1][0], prompt: `How does this evidence support or qualify a claim about ${topic.title.toLowerCase()}?`
   }));
   return {
@@ -259,11 +264,14 @@ function buildLesson(topic) {
     ],
     collegeBoardKeyConcepts: conceptArray(topic),
     stableImages: {
-      map: WORLD_MAP, first10: topic.image, contentDelivery: topic.image, beSurreal: topic.image, skill: WORLD_MAP,
-      checkpoint1: topic.image, evidence: WORLD_MAP, source: topic.image, beInTheRoom: topic.image, checkpoint2: WORLD_MAP
+      map: moduleArt(topic.id, 'map'), first10: moduleArt(topic.id, 'first10'),
+      contentDelivery: moduleArt(topic.id, 'contentdelivery'), beSurreal: moduleArt(topic.id, 'besurreal'),
+      skill: moduleArt(topic.id, 'skill'), checkpoint1: moduleArt(topic.id, 'checkpoint1'),
+      evidence: moduleArt(topic.id, 'evidence'), source: moduleArt(topic.id, 'source'),
+      beInTheRoom: moduleArt(topic.id, 'beintheroom'), checkpoint2: moduleArt(topic.id, 'checkpoint2')
     },
     map: {
-      title: `Mapping ${topic.title}`, url: WORLD_MAP, sourceUrl: WORLD_MAP,
+      title: `Mapping ${topic.title}`, url: instructionalMap(topic.id), sourceUrl: instructionalMap(topic.id),
       caption: `Locate the regions tied to ${topic.cases.join(', ')}.`,
       intro: 'Global patterns are produced through specific places, routes, institutions, and unequal relationships. Use geography to test the scale of your claim.',
       prompt: `Which geographic pattern best helps explain ${topic.title.toLowerCase()}, and what evidence supports that conclusion?`,
@@ -280,7 +288,7 @@ function buildLesson(topic) {
       videos: [],
       segments: topic.lectures.map((segment, i) => ({
         title: segment[0], bullets: segment[1],
-        image: { title: segment[0], caption: `Evidence anchor ${i + 1} for Topic ${topic.id}.`, url: i % 2 === 0 ? topic.image : WORLD_MAP, sourceUrl: i % 2 === 0 ? topic.image : WORLD_MAP }
+        image: { title: segment[0], caption: `Evidence anchor ${i + 1} for Topic ${topic.id}.`, url: i === 0 ? topic.image : TOPIC_ART, sourceUrl: i === 0 ? topic.image : TOPIC_ART }
       }))
     },
     beSurreal: {
@@ -435,12 +443,25 @@ function updateHub() {
     const start = html.indexOf('href="', anchor) + 6;
     const end = html.indexOf('"', start);
     html = html.slice(0, start) + `lesson-${topic.id.replace('.', '-')}-${topic.slug}.html` + html.slice(end);
+    // Hub card artwork is two <img> layers: the local map underneath, the
+    // photograph on top with an onerror that removes itself. Rewrite the
+    // photograph's src, and add the pair if this card has not been converted.
     const refreshedPos = html.indexOf(marker);
     const refreshedAnchor = html.lastIndexOf('<a class="unit-card" href="', refreshedPos);
-    const styleStart = html.indexOf('style="--img:url(\'', refreshedAnchor) + 18;
-    const styleEnd = html.indexOf('\')"', styleStart);
-    if (styleStart < 18 || styleEnd < 0) throw new Error(`Unit hub image slot not found: ${topic.id}`);
-    html = html.slice(0, styleStart) + topic.image + html.slice(styleEnd);
+    const cardOpenEnd = html.indexOf('>', refreshedAnchor) + 1;
+    const photoAt = html.indexOf('class="card-photo" src="', refreshedAnchor);
+    const artAt = html.indexOf('class="card-art"', refreshedAnchor);
+    if (photoAt > 0 && photoAt < refreshedPos) {
+      const srcStart = photoAt + 'class="card-photo" src="'.length;
+      const srcEnd = html.indexOf('"', srcStart);
+      html = html.slice(0, srcStart) + topic.image + html.slice(srcEnd);
+    } else if (artAt < 0 || artAt > refreshedPos) {
+      const attrs = 'alt="" aria-hidden="true" loading="lazy" decoding="async"';
+      const art = `../assets/images/instructional-maps/topic-${topic.id.replace('.', '-')}.svg`;
+      const layers = `<img class="card-art" src="${art}" ${attrs}>`
+        + `<img class="card-photo" src="${topic.image}" ${attrs} onerror="this.remove()">`;
+      html = html.slice(0, cardOpenEnd) + layers + html.slice(cardOpenEnd);
+    }
   }
   write(file, html);
 }

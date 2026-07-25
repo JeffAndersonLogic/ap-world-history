@@ -112,10 +112,10 @@ window.BEHISTORICAL_LESSON = {
           "**Caravans**, organized convoys of hundreds or thousands of camels led by experienced guides, pooled resources and reduced individual risk; **oases** spaced across the desert provided the water, food, and shelter that made journeys of up to 1,700 miles commercially viable."
         ],
         image: {
-          title: "Sahara caravan, c. 1300 CE",
-          caption: "Camel caravans organized into large convoys crossed the Sahara carrying gold north and salt south, sustained by oases and experienced desert guides.",
-          url: "../assets/images/module-cards/sahara-caravan-1300ce.jpg",
-          sourceUrl: "../assets/images/module-cards/sahara-caravan-1300ce.jpg"
+          title: "Mansa Musa on the Catalan Atlas, 1375",
+          caption: "A European mapmaker drew Mali's ruler holding a gold nugget. The trans-Saharan gold trade made West Africa famous in places its traders never visited.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg"
         }
       },
       {
@@ -140,10 +140,10 @@ window.BEHISTORICAL_LESSON = {
           "Trans-Saharan exchange diffused not only religion but also **writing, architecture, and scholarly culture** into West Africa, the Arabic script spread with Islam, mosques rose in major cities, and Muslim scholars served as administrators and advisors to West African rulers, transforming the cultural landscape of the region."
         ],
         image: {
-          title: "Blank world map",
-          caption: "Trans-Saharan trade routes integrated West Africa into a broader Afro-Eurasian network of exchange, spreading Islam and Islamic culture across the region.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg"
+          title: "What crossing the Sahara required",
+          caption: "BeHistorical topic artwork for this card. Camels, oases, and local guides were the infrastructure; without them the gold and salt trade could not function.",
+          url: "",
+          sourceUrl: ""
         }
       }
     ]
@@ -151,8 +151,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Trans-Saharan Routes and West African States",
-    url: "../assets/images/module-cards/sahara-caravan-1300ce.jpg",
-    sourceUrl: "../assets/images/module-cards/sahara-caravan-1300ce.jpg",
+    url: "../assets/images/instructional-maps/topic-2-4.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-2-4.svg",
     caption: "Trans-Saharan trade routes connected the West African Sudan to North Africa and the Mediterranean, carrying gold northward and salt southward across the world's largest desert.",
     intro: "Use the map context to trace the major trans-Saharan routes, identify the key commodities moving in each direction, and locate the major cities that grew wealthy from controlling this exchange.",
     prompt: "How did the geography of the Sahara, its size, its oases, and its position between gold-producing West Africa and salt-rich interior desert, shape who became wealthy and which cities became powerful?",

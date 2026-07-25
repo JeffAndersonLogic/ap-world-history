@@ -141,8 +141,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Waldseemüller Map, 1507: What Europe Knew",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
+    url: "../assets/images/instructional-maps/topic-4-1.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-4-1.svg",
     caption: "The 1507 Waldseemüller map, the first printed world map to show the Americas as separate continents and use the name 'America.' This map was only possible because of the cartographic knowledge accumulated through decades of Portuguese and Spanish voyages, combined with the printing press that made its wide distribution possible.",
     intro: "Examine this map and consider what it reveals: European cartographers in 1507 knew the shape of Africa, had a rough outline of the Americas, and knew that a vast ocean lay between America and Asia. All of this knowledge was less than 20 years old, accumulated through exploration voyages that were themselves only possible because of the maritime technologies you're studying.",
     prompt: "What does the Waldseemüller map reveal about the geographic knowledge European navigators had accumulated by 1507? What does it still get wrong, and what does that suggest about the limits of early modern cartography?"

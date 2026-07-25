@@ -82,16 +82,16 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg'
+    map: '../assets/images/module-art/unit-6/topic-6-7/map.svg',
+    first10: '../assets/images/module-art/unit-6/topic-6-7/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-6/topic-6-7/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-6/topic-6-7/besurreal.svg',
+    skill: '../assets/images/module-art/unit-6/topic-6-7/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-6/topic-6-7/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-6/topic-6-7/evidence.svg',
+    source: '../assets/images/module-art/unit-6/topic-6-7/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-6/topic-6-7/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-6/topic-6-7/checkpoint2.svg'
   },
   lecture: {
     title: 'Effects of Migration: Power, Process, and Consequence',
@@ -106,10 +106,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** Chinese communities across the Pacific and Americas and Indian communities in Africa, the Caribbean, and Southeast Asia show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'Effects of Migration',
-          caption: 'A visual anchor for Topic 6.7.',
+          title: 'Chinatown, San Francisco, 1880',
+          caption: 'Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg'
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chinatown_San_Francisco_1880.jpg'
         }
       },
       {
@@ -122,8 +122,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Regional comparison',
           caption: 'Compare Chinese communities across the Pacific and Americas with Indian communities in Africa, the Caribbean, and Southeast Asia.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -136,16 +136,16 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Argumentation',
           caption: 'Evidence becomes analysis when its relationship to a claim is explained.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
   },
   map: {
     title: 'Mapping Effects of Migration',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
+    url: '../assets/images/instructional-maps/topic-6-7.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-6-7.svg',
     caption: 'Locate the regions connected to Chinese communities across the Pacific and Americas, Indian communities in Africa, the Caribbean, and Southeast Asia, Irish and Italian migration, The Chinese Exclusion Act and White Australia policy.',
     intro: 'Geography shaped access to resources, markets, transport routes, and state power. Use the map to connect location to historical process.',
     prompt: 'Which geographic relationship best helps explain effects of migration, and what evidence supports your answer?',
@@ -294,21 +294,21 @@ window.BEHISTORICAL_LESSON = {
     {
       title: 'Chinese communities across the Pacific and Americas',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chinatown_San_Francisco_1880.jpg',
       caption: 'Chinese communities across the Pacific and Americas helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Chinese communities across the Pacific and Americas support or complicate a claim about effects of migration?'
     },
     {
       title: 'Indian communities in Africa, the Caribbean, and Southeast Asia',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Indian communities in Africa, the Caribbean, and Southeast Asia helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Indian communities in Africa, the Caribbean, and Southeast Asia support or complicate a claim about effects of migration?'
     },
     {
       title: 'Irish and Italian migration',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Irish and Italian migration helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Irish and Italian migration support or complicate a claim about effects of migration?'
     }

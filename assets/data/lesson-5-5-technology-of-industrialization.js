@@ -98,10 +98,10 @@ window.BEHISTORICAL_LESSON = {
           "**Railroads drove industrial demand.** The railroad industry itself was the largest consumer of iron and steel in the 19th century. In the 1840s–1860s, building 10,000 miles of railroad required millions of tons of iron rails, which required more iron foundries, more coal mines, more blast furnaces. The railroad was the flywheel of the industrial economy: it required iron, coal, and engineering on a scale that pushed every related industry to expand. Then cheap transportation made it economical to ship those industrial products to distant markets, which justified further investment in production capacity."
         ],
         image: {
-          title: "Waldseemuller Map — The Globe Before Industrial Time",
-          caption: "The early 16th-century Waldseemuller map represents the pre-industrial world of slow communication and local markets. Railroads and the telegraph compressed this world into something unrecognizable: news that once took weeks to cross the Atlantic arrived in minutes after 1866.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
+          title: "Railroads and market integration",
+          caption: "BeHistorical topic artwork for this card. Rail collapsed the cost of moving heavy goods overland, which changed what was worth producing and where.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -113,10 +113,10 @@ window.BEHISTORICAL_LESSON = {
           "**Technological interdependence** is the key analytical concept for Topic 5.5. These technologies did not develop independently, they required each other. Steam engines enabled railroads; railroads required iron and then steel; cheap steel (Bessemer) enabled railroad expansion at continental scale; railroads moved coal cheaply, making coal power economical; coal powered the factories producing steel and the locomotives running on steel rails. Electricity depended on copper wire (extracted from mines, many in colonized regions), steam turbines to generate it, and steel infrastructure to transmit it. The industrial system was a web of interdependent technologies, each enabling others, and all of them depending on raw materials extracted from mines and fields across the globe."
         ],
         image: {
-          title: "Astrolabe — Precision and Navigation",
-          caption: "The astrolabe represents an older tradition of precision instrument-making that laid groundwork for the engineering culture of the Industrial Revolution. The same drive for mechanical precision that produced navigational tools in the Islamic world and early modern Europe produced steam gauges, Bessemer converters, and electrical generators in the 19th century.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg"
+          title: "Telegraph, steel, and electricity",
+          caption: "BeHistorical topic artwork for this card. The second industrial revolution ran on cheap steel, instant communication, and electrical power.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -129,10 +129,10 @@ window.BEHISTORICAL_LESSON = {
           "**The key analytical argument for Topic 5.5**: Industrial technologies transformed both producing regions (by reorganizing factory labor, creating pollution, building cities) and resource-supplying regions (by driving extraction of rubber, guano, cotton, coal, and copper through labor systems ranging from wage labor to debt peonage to forced labor). Understanding industrialization requires understanding both halves of this system: the industrial core and the resource periphery are one system, not two separate stories."
         ],
         image: {
-          title: "Voc — Dutch East India Company",
-          caption: "The VOC represents the first large-scale corporate extraction system connecting European markets to global resources. The industrial-era rubber and guano booms operated on a similar logic at far greater scale: European and American industrial demand organized global labor to extract resources that European and American factories and farms required.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"
+          title: "Rubber tapping",
+          caption: "Industrial demand reached deep into tropical forests. Rubber, guano, and coal show the environmental and human costs of industrial supply chains.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg"
         }
       }
     ]
@@ -140,8 +140,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Industrial World's Resource Network, c. 1850–1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
+    url: "../assets/images/instructional-maps/topic-5-5.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-5-5.svg",
     caption: "By c. 1850–1900, global trade networks were reorganized around industrial demand. Steam-powered ocean liners and submarine telegraph cables connected industrial centers in Britain, Europe, and North America to resource-extraction zones in Asia, Africa, and Latin America. Raw materials flowed toward industrial centers; manufactured goods and capital flowed outward.",
     intro: "Examine the global geography of industrial-era resource extraction. Identify the locations of major industrial resource flows: cotton from India, the American South, and Egypt; rubber from the Congo and Amazon; guano from Peru; coal from British, German, and American mines; copper from Chile and American Southwest. Notice how these flows connect colonized or semi-colonized peripheries to industrial cores.",
     prompt: "Using the map and your knowledge, explain the relationship between industrial technology in Europe and North America and resource extraction in Asia, Africa, and Latin America. What specific technologies drove demand for specific resources? What labor systems were used to extract these resources? What does this pattern reveal about who benefited from industrialization and who bore its costs?"

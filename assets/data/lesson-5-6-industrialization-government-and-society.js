@@ -109,10 +109,10 @@ window.BEHISTORICAL_LESSON = {
           "**Children in industrial labor**: factory commissioners' reports documented children working from age five in textile mills, from age six in coal mines (hauling coal cars in tunnels too narrow for adults). The Factory Act of 1833 prohibited children under nine from working in textile factories and required two hours of education per day for children aged nine to thirteen. The coal mine report of 1842, which included testimony from children describing their work, shocked Parliament sufficiently to pass the Mines Act prohibiting underground work for women and for boys under ten. These regulations were opposed by factory owners who argued that child labor was economically necessary and that regulating it violated free-market principles."
         ],
         image: {
-          title: "Vasco da Gama — European Power and Global Reach",
-          caption: "The same European states that built oceanic empires in the 15th–17th centuries built industrial empires in the 19th. The class conflicts of industrial Britain occurred simultaneously with Britain's global expansion, and the profits of colonial resource extraction funded the capital that built Britain's factories.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg"
+          title: "Manchester from Kersal Moor, William Wyld",
+          caption: "A pastoral foreground and a forest of factory chimneys behind it. The industrial city created both the bourgeoisie and the proletariat.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Manchester_from_Kersal_Moor_William_Wyld.jpg"
         }
       },
       {
@@ -125,10 +125,10 @@ window.BEHISTORICAL_LESSON = {
           "**Comparing the ideologies**: For the AP exam, the most important comparison is: **what is the cause of industrial poverty, and what is the solution?** Liberal answer: poverty is the result of individual failure; free markets will eventually raise all boats; government interference makes it worse. Conservative answer: poverty is the result of rapid, unplanned social change that destroyed community; solution is guided reform from above, maintaining social hierarchy and obligation. Utopian socialist answer: poverty is the result of a competitive, individualistic economic system; solution is voluntary cooperative communities. Marxist answer: poverty is the structural result of capitalist class relations, workers are necessarily exploited because profit requires paying workers less than they produce; solution is abolition of private property and proletarian revolution."
         ],
         image: {
-          title: "Florentine Codex — Social Order in Transformation",
-          caption: "The Florentine Codex documented a society's transformation under colonial contact. The ideological debates of 19th-century industrialization similarly tried to make sense of a world transformed beyond recognition, new classes, new technologies, new cities, and proposed competing visions of what the transformed world should look like.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
+          title: "Liberalism, conservatism, socialism, Marxism",
+          caption: "BeHistorical topic artwork for this card. Each ideology is an answer to the same question: who should control industrial wealth, and on what authority?",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -141,10 +141,10 @@ window.BEHISTORICAL_LESSON = {
           "**The suffrage movement's roots**: The first major articulation of women's rights in modern Europe was Mary Wollstonecraft's **Vindication of the Rights of Woman** (1792), written in response to the French Revolution and to Rousseau's exclusion of women from civic life. Wollstonecraft argued that if reason was the basis of rights (as Enlightenment thinkers claimed), and if women were rational beings (which almost no one denied), then women had the same claim to rights as men. The **Seneca Falls Convention** (1848, New York) was the first women's rights convention in the United States; its Declaration of Sentiments modeled on the Declaration of Independence: 'We hold these truths to be self-evident: that all men and women are created equal.' Organized women's suffrage movements developed in Britain, the United States, and other countries through the second half of the 19th century, achieving their first major successes in New Zealand (1893) and Australia (1902), before most European countries."
         ],
         image: {
-          title: "Columbus Taking Possession — Authority and Exclusion",
-          caption: "The act of 'taking possession' represented in this image excluded indigenous peoples from political agency, the same logic that 19th-century governments used to exclude workers and women from political participation. The suffrage and labor movements challenged both forms of exclusion using the same natural-rights language that had justified the exclusions in the first place.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg"
+          title: "Reform, social insurance, and suffrage",
+          caption: "BeHistorical topic artwork for this card. States that felt threatened by labor unrest often answered with regulation and insurance rather than repression alone.",
+          url: "",
+          sourceUrl: ""
         }
       }
     ]
@@ -152,8 +152,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Industrial Society and Political Change, c. 1830–1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg",
+    url: "../assets/images/instructional-maps/topic-5-6.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-5-6.svg",
     caption: "By c. 1830–1900, industrial cities in Britain, Belgium, France, Germany, and the northeastern United States became the centers of class conflict and political reform. The ideological debates about liberalism, conservatism, and socialism were fought out in these industrial cities, through strikes, elections, parliamentary debates, and revolutionary movements.",
     intro: "Examine the geography of industrialization and social response. Notice that the industrial regions, Britain, Belgium, Germany, northeastern US, are also the regions where class conflict, labor movements, and political reform were most intense. Consider: why did these industrial regions generate such intense ideological conflict? What were workers fighting for? How did governments respond differently, Britain through parliamentary reform; Germany through social insurance; France through periodic revolution?",
     prompt: "Using the map and your knowledge, compare the political responses to industrialization in at least two regions. What specific reforms did governments enact, and why did they enact them? Were government reforms driven primarily by moral concern for workers, fear of revolution, or political calculation? What does the pattern of reform suggest about the relationship between industrial class conflict and political change?"

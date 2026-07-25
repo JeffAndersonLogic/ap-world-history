@@ -171,8 +171,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The World at c. 1700: Change and Continuity",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
+    url: "../assets/images/instructional-maps/topic-4-8.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-4-8.svg",
     caption: "The world at c. 1700 showed both the transformations and the continuities of c. 1450–1750. New Atlantic and Pacific trade routes connected all inhabited continents; but the Indian Ocean trade, Chinese manufacturing centers, and Islamic commercial networks all continued to operate.",
     intro: "Look at this map with two questions in mind: (1) What is new by c. 1700 that did not exist in c. 1450? (2) What was already present in c. 1450 and continued through 1700? Trace the silver routes from the Americas; then identify the Indian Ocean trade nodes that had existed for centuries before European ships arrived.",
     prompt: "Using the map, identify one specific change and one specific continuity in global trade networks from c. 1450 to c. 1700. For each, explain the mechanism: what drove the change, and what sustained the continuity? Your argument should be specific, name the trade network, the commodity, or the institution you are describing."

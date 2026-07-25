@@ -60,16 +60,16 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg'
+    map: '../assets/images/module-art/unit-6/topic-6-4/map.svg',
+    first10: '../assets/images/module-art/unit-6/topic-6-4/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-6/topic-6-4/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-6/topic-6-4/besurreal.svg',
+    skill: '../assets/images/module-art/unit-6/topic-6-4/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-6/topic-6-4/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-6/topic-6-4/evidence.svg',
+    source: '../assets/images/module-art/unit-6/topic-6-4/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-6/topic-6-4/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-6/topic-6-4/checkpoint2.svg'
   },
   lecture: {
     title: 'Global Economic Development: Power, Process, and Consequence',
@@ -84,10 +84,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** Cotton production in Egypt and Rubber extraction in the Amazon and Congo show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'Global Economic Development',
-          caption: 'A visual anchor for Topic 6.4.',
+          title: 'Tapping rubber',
+          caption: 'Industrial demand for rubber reorganized whole regions around a single export crop, in the Amazon and in the Congo.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg'
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg'
         }
       },
       {
@@ -100,8 +100,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Regional comparison',
           caption: 'Compare Cotton production in Egypt with Rubber extraction in the Amazon and Congo.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -114,16 +114,16 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Argumentation',
           caption: 'Evidence becomes analysis when its relationship to a claim is explained.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
   },
   map: {
     title: 'Mapping Global Economic Development',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
+    url: '../assets/images/instructional-maps/topic-6-4.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-6-4.svg',
     caption: 'Locate the regions connected to Cotton production in Egypt, Rubber extraction in the Amazon and Congo, Palm oil in West Africa, Guano, meat, and diamond export economies.',
     intro: 'Geography shaped access to resources, markets, transport routes, and state power. Use the map to connect location to historical process.',
     prompt: 'Which geographic relationship best helps explain global economic development, and what evidence supports your answer?',
@@ -271,22 +271,22 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Cotton production in Egypt',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Cotton production in Egypt helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Cotton production in Egypt support or complicate a claim about global economic development?'
     },
     {
       title: 'Rubber extraction in the Amazon and Congo',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg',
       caption: 'Rubber extraction in the Amazon and Congo helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Rubber extraction in the Amazon and Congo support or complicate a claim about global economic development?'
     },
     {
       title: 'Palm oil in West Africa',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Palm oil in West Africa helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Palm oil in West Africa support or complicate a claim about global economic development?'
     }

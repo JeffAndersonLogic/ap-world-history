@@ -97,10 +97,10 @@ window.BEHISTORICAL_LESSON = {
           "**Investment banks** were the connective tissue of industrial capitalism: they underwrote new securities issues (guaranteeing a price to corporations while selling shares to investors), organized mergers and acquisitions, and provided long-term financing for infrastructure. The **House of Morgan** (J.P. Morgan & Co.) financed American railroad consolidation in the 1870s–1890s, eventually controlling one-sixth of American railroad mileage. **Deutsche Bank** (founded 1870) specifically to finance German foreign trade and industrial development, the model of German-style bank-industry partnership that produced Germany's rapid industrialization. The **Rothschild family** network, banking houses in London, Paris, Frankfurt, Vienna, and Naples, financed European governments and railroads across the continent. By 1900, a handful of investment banks exerted more influence over industrial economies than many governments."
         ],
         image: {
-          title: "Voc — Joint-Stock Capitalism's Origins",
-          caption: "The Dutch East India Company (VOC) pioneered joint-stock financing in 1602, issuing the first publicly traded shares on the Amsterdam stock exchange. The 19th century's financial innovations, limited liability, regulated stock exchanges, investment banking, built on this 17th-century foundation to create capital markets at industrial scale.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"
+          title: "Corporations, banks, and stock markets",
+          caption: "BeHistorical topic artwork for this card. Limited liability and joint-stock ownership let firms raise sums no family fortune could match.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -112,10 +112,10 @@ window.BEHISTORICAL_LESSON = {
           "**The gold standard**: The gold standard, linking a currency to a fixed weight of gold, solved the exchange rate problem of international trade. When multiple currencies existed with floating exchange rates, international trade involved currency risk: prices agreed today might be paid in a different effective value tomorrow. The gold standard made exchange rates fixed and predictable. Britain adopted the gold standard in 1821; the United States adopted it effectively after the Civil War (officially 1900); most major European economies joined in the 1870s–1880s. By 1890, the international gold standard had created the first genuinely integrated global financial system. Its costs: governments could not print money to stimulate the economy without gold reserves to back it, which meant economic downturns produced deflation and unemployment rather than inflation. The burden fell on workers (through wage cuts) rather than creditors (through inflation). The gold standard was a system that systematically protected financial assets over labor."
         ],
         image: {
-          title: "Waldseemuller Map — The Pre-Industrial Trade World",
-          caption: "The 16th-century world of mercantilism and protected trade gave way in the 19th century to Britain's free trade vision: an integrated global economy where comparative advantage determined specialization. The Waldseemuller map represents the world that mercantilist trade policy was built to navigate; the repeal of the Corn Laws in 1846 represented the decisive rejection of that mercantilist logic.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
+          title: "Free trade and the gold standard",
+          caption: "BeHistorical topic artwork for this card. A shared monetary standard and falling tariffs knitted distant economies into one price system.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -128,10 +128,10 @@ window.BEHISTORICAL_LESSON = {
           "**The key argument**: Economic imperialism reveals that the line between 'free trade' and 'coercion' is less clear than free trade ideology suggests. When Britain demanded that China open its ports under threat of naval bombardment, or when Latin American governments accepted British creditor control over their customs revenue as the price of continued access to capital markets, these were not voluntary agreements between equals. Economic relationships can be as coercive as military relationships, and in many cases, the economic relationship was enforced by the implicit or explicit threat of military force."
         ],
         image: {
-          title: "Casta Painting — Hierarchy and Exchange",
-          caption: "Colonial-era casta paintings documented racial and social hierarchy in Spanish America. The economic imperialism of the 19th century reorganized these hierarchies without necessarily transforming them: formally independent Latin American states remained structured as raw material exporters supplying industrial Europe, with British and European financial interests controlling the infrastructure that made that export economy function.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
+          title: "The port of Buenos Aires",
+          caption: "British capital built Argentina's railways and docks. Economic imperialism could control an economy without ever raising a flag.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Buenos_Aires_Port.jpg"
         }
       }
     ]
@@ -139,8 +139,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Global Financial System, c. 1850–1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
+    url: "../assets/images/instructional-maps/topic-5-7.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-5-7.svg",
     caption: "By c. 1850–1900, British financial institutions, banks, insurance companies, stock exchanges, had made London the center of the global financial system. British capital flowed outward to finance railroads in Argentina, mines in Chile, government bonds in the Ottoman Empire, and plantation agriculture in Southeast Asia. The returns flowed back to London.",
     intro: "Examine the pattern of British overseas investment by 1900. Note that British capital flowed primarily to: (1) formal British colonies (India, Australia, Canada, South Africa); (2) formally independent but economically dependent Latin American countries; (3) the Ottoman Empire and China, where unequal treaties had opened markets to British goods and investment. Notice which regions are NOT major recipients of British investment, continental Europe and the United States were increasingly competitors, not dependencies.",
     prompt: "Using the map and your knowledge, explain how British financial investment created economic dependencies in Latin America and the Ottoman Empire without formal colonialism. What specific financial mechanisms produced these dependencies? How does the geographic pattern of British investment by 1900 reveal the structure of the global economy that industrial capitalism created?"

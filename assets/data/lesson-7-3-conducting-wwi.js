@@ -216,8 +216,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: A European War Fought by the World",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_Europe_alliances_1914-en.svg",
+    url: "../assets/images/instructional-maps/topic-7-3.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-7-3.svg",
     caption: "The alliance blocs of 1914, where they collided, the fronts froze into trench lines; behind each bloc stood a global empire mobilized for total war.",
     intro: "Use the map to connect geography to total war: the Western and Eastern fronts formed where the alliance blocs met, and behind every European belligerent stood colonies whose troops, labor, and resources were pulled into the war.",
     prompt: "Where the rival blocs collided, fronts formed and froze into trench stalemate. Using the map, explain why the war's geography pushed governments toward total mobilization at home, and toward drawing troops and resources from their colonies overseas.",

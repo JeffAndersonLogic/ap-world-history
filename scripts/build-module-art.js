@@ -60,7 +60,7 @@ function svg({ topicCode, topicTitle, id, moduleTitle, anchor }) {
   const x1 = 600 + (seed % 160);
   const y1 = 80 + ((seed >>> 8) % 180);
   const x2 = 920 + ((seed >>> 16) % 150);
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
   <title id="title">${esc(topicCode)} — ${esc(moduleTitle)}</title><desc id="desc">Local BeHistorical artwork for ${esc(topicTitle)}. Historical anchor: ${esc(anchor)}.</desc>
   <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1c1d"/><stop offset=".58" stop-color="#2b2f31"/><stop offset="1" stop-color="#3e4447"/></linearGradient><radialGradient id="glow"><stop stop-color="${accent}" stop-opacity=".34"/><stop offset="1" stop-color="${accent}" stop-opacity="0"/></radialGradient></defs>
   <rect width="1200" height="800" fill="url(#bg)"/><circle cx="${x1}" cy="${y1}" r="420" fill="url(#glow)"/><circle cx="${x2}" cy="610" r="330" fill="url(#glow)" opacity=".7"/>
@@ -92,7 +92,10 @@ function defaultModules(L) {
     ['besurreal', 'BeSurreal'], ['skill', 'AP Skill Builder'], ['checkpoint1', 'Checkpoint 1'],
     ['evidence', 'Evidence Lab'], ['source', 'Primary Source']
   ];
-  if (L.beInTheRoom && L.beInTheRoom.url) items.push(['beintheroom', 'BeInTheRoom']);
+  // Always emit BeInTheRoom artwork, even when the topic has no scenario linked
+  // yet. Otherwise a topic that gains a scenario later renders a module card
+  // with no artwork behind it until someone remembers to rebuild.
+  items.push(['beintheroom', 'BeInTheRoom']);
   items.push(['checkpoint2', 'Checkpoint 2']);
   return items.map(([id, title]) => ({ id, title }));
 }
@@ -142,7 +145,8 @@ for (let unit = 1; unit <= 9; unit++) {
   }
 }
 
-for (let index = 1; index <= 5; index++) {
+// Foundations 0 is a real topic page with its own module cards, so start at 0.
+for (let index = 0; index <= 5; index++) {
   const dataPath = fs.readdirSync(path.join(ROOT, 'foundations')).map((name) => path.join(ROOT, 'foundations', name))
     .find((file) => new RegExp(`foundations-${index}-.*-data\\.js$`).test(file));
   const context = {}; context.window = context; vm.createContext(context);

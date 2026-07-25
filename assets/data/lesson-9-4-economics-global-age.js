@@ -94,21 +94,21 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+    map: '../assets/images/module-art/unit-9/topic-9-4/map.svg',
+    first10: '../assets/images/module-art/unit-9/topic-9-4/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-9/topic-9-4/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-9/topic-9-4/besurreal.svg',
+    skill: '../assets/images/module-art/unit-9/topic-9-4/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-9/topic-9-4/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-9/topic-9-4/evidence.svg',
+    source: '../assets/images/module-art/unit-9/topic-9-4/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-9/topic-9-4/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-9/topic-9-4/checkpoint2.svg'
   },
   map: {
     title: 'Mapping Economics in the Global Age',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+    url: '../assets/images/instructional-maps/topic-9-4.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-9-4.svg',
     caption: 'Locate the regions tied to Deng-era economic reforms, Bangladesh garment manufacturing, NAFTA and regional trade, Multinational corporations.',
     intro: 'Global patterns are produced through specific places, routes, institutions, and unequal relationships. Use geography to test the scale of your claim.',
     prompt: 'Which geographic pattern best helps explain economics in the global age, and what evidence supports that conclusion?',
@@ -171,8 +171,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'The Global Division of Labor',
           caption: 'Evidence anchor 2 for Topic 9.4.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -185,8 +185,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Institutions and Trade Agreements',
           caption: 'Evidence anchor 3 for Topic 9.4.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -199,8 +199,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Multinational Power and Continuity',
           caption: 'Evidence anchor 4 for Topic 9.4.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
@@ -299,15 +299,15 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'The Global Division of Labor',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'Digital communication let firms coordinate production across many countries.',
       prompt: 'How does this evidence support or qualify a claim about economics in the global age?'
     },
     {
       title: 'Institutions and Trade Agreements',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'The WTO promoted common trade rules and dispute settlement on a global scale.',
       prompt: 'How does this evidence support or qualify a claim about economics in the global age?'
     }

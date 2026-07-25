@@ -172,17 +172,93 @@ function jsObject(value) {
   return inspect(value, { depth: null, compact: false, breakLength: 110, maxArrayLength: null });
 }
 
-function imageFor(topic) {
-  const files = {
-    '6.2': 'Africa_map_1910.jpg', '6.3': 'Yaa_Asantewaa.jpg', '6.4': 'Rubber_tapping.jpg',
-    '6.5': 'Buenos_Aires_Port.jpg', '6.6': 'Indian_indenture_ship.jpg',
-    '6.7': 'Chinatown_San_Francisco_1880.jpg', '6.8': 'World_1898_empires_colonies_territory.png'
-  };
-  return `https://commons.wikimedia.org/wiki/Special:FilePath/${files[topic.id]}`;
+// Media contract for Unit 6.
+//
+// Every topic used to point all ten module slots, all three lecture cards, and
+// all three evidence cards at one picture, which meant a photograph of a rubber
+// tapper captioned as a map of Egyptian cotton. Now each topic declares:
+//   map      the Map & Geography image (a local instructional map, or a real map)
+//   photo    the one period photograph the topic legitimately owns
+//   onCard   which lecture card the photograph belongs on (0 = none)
+//   onEvidence  which Evidence Lab item the photograph actually depicts (0 = none)
+// Any slot the photograph does not belong in renders the generated per-slot
+// artwork for that topic, which is always on-topic and can never 404.
+const commons = (file) => `https://commons.wikimedia.org/wiki/Special:FilePath/${file}`;
+const commonsSource = (file) => `https://commons.wikimedia.org/wiki/File:${file}`;
+const instructionalMap = (id) => `../assets/images/instructional-maps/topic-${id.replace('.', '-')}.svg`;
+const moduleArt = (id, slot) => `../assets/images/module-art/unit-6/topic-${id.replace('.', '-')}/${slot}.svg`;
+const TOPIC_ART = '';
+
+const MEDIA = {
+  '6.2': {
+    // A 1910 map of Africa cannot answer a map question about state expansion in
+    // Japan, Russia, and the United States, so this topic gets its own map.
+    map: instructionalMap('6.2'),
+    photo: 'Africa_map_1910.jpg', onCard: 1, onEvidence: 0,
+    photoTitle: 'Africa after the partition, 1910',
+    photoCaption: 'Twenty-five years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.'
+  },
+  '6.3': {
+    map: instructionalMap('6.3'),
+    photo: 'Yaa_Asantewaa.jpg', onCard: 1, onEvidence: 1,
+    photoTitle: 'Yaa Asantewaa, c. 1900',
+    photoCaption: 'Yaa Asantewaa led Asante resistance in the War of the Golden Stool. Indigenous responses to expansion included organized armed defence, not only accommodation.'
+  },
+  '6.4': {
+    map: instructionalMap('6.4'),
+    photo: 'Rubber_tapping.jpg', onCard: 1, onEvidence: 2,
+    photoTitle: 'Tapping rubber',
+    photoCaption: 'Industrial demand for rubber reorganized whole regions around a single export crop, in the Amazon and in the Congo.'
+  },
+  '6.5': {
+    map: instructionalMap('6.5'),
+    photo: 'Buenos_Aires_Port.jpg', onCard: 1, onEvidence: 2,
+    photoTitle: 'The port of Buenos Aires',
+    photoCaption: 'British capital financed Argentina\'s docks and railways. Economic imperialism could direct an economy without formal colonial rule.'
+  },
+  '6.6': {
+    map: instructionalMap('6.6'),
+    photo: 'Indian_indenture_ship.jpg', onCard: 1, onEvidence: 2,
+    photoTitle: 'An indenture ship carrying Indian laborers',
+    photoCaption: 'After abolition, plantations recruited indentured workers from India and China under contracts that limited pay, movement, and return.'
+  },
+  '6.7': {
+    map: instructionalMap('6.7'),
+    photo: 'Chinatown_San_Francisco_1880.jpg', onCard: 1, onEvidence: 1,
+    photoTitle: 'Chinatown, San Francisco, 1880',
+    photoCaption: 'Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.'
+  },
+  '6.8': {
+    map: commons('World_1898_empires_colonies_territory.png'),
+    mapSource: commonsSource('World_1898_empires_colonies_territory.png'),
+    photo: null, onCard: 0, onEvidence: 0
+  }
+};
+
+function mediaFor(topic) {
+  const media = MEDIA[topic.id];
+  if (!media) throw new Error(`no media contract for Topic ${topic.id}`);
+  return media;
+}
+
+function cardImage(topic, index) {
+  const media = mediaFor(topic);
+  if (media.photo && media.onCard === index) {
+    return { url: commons(media.photo), sourceUrl: commonsSource(media.photo), title: media.photoTitle, caption: media.photoCaption };
+  }
+  return { url: TOPIC_ART, sourceUrl: TOPIC_ART, title: null, caption: null };
+}
+
+function evidenceImage(topic, index) {
+  const media = mediaFor(topic);
+  if (media.photo && media.onEvidence === index) {
+    return { url: commons(media.photo), sourceUrl: commonsSource(media.photo) };
+  }
+  return { url: TOPIC_ART, sourceUrl: TOPIC_ART };
 }
 
 function buildLesson(topic) {
-  const image = imageFor(topic);
+  const media = mediaFor(topic);
   const concepts = topic.kc.map(([code, text]) => ({ code, theme: topic.theme, text, illustrativeExamples: topic.cases }));
   const evidenceItems = topic.cases.map((name, i) => ({
     title: name,
@@ -205,8 +281,11 @@ function buildLesson(topic) {
     ],
     collegeBoardKeyConcepts: concepts,
     stableImages: {
-      map: image, first10: image, contentDelivery: image, beSurreal: image, skill: image,
-      checkpoint1: image, evidence: image, source: image, beInTheRoom: image, checkpoint2: image
+      map: moduleArt(topic.id, 'map'), first10: moduleArt(topic.id, 'first10'),
+      contentDelivery: moduleArt(topic.id, 'contentdelivery'), beSurreal: moduleArt(topic.id, 'besurreal'),
+      skill: moduleArt(topic.id, 'skill'), checkpoint1: moduleArt(topic.id, 'checkpoint1'),
+      evidence: moduleArt(topic.id, 'evidence'), source: moduleArt(topic.id, 'source'),
+      beInTheRoom: moduleArt(topic.id, 'beintheroom'), checkpoint2: moduleArt(topic.id, 'checkpoint2')
     },
     lecture: {
       title: `${topic.title}: Power, Process, and Consequence`,
@@ -217,21 +296,21 @@ function buildLesson(topic) {
           `**Start with the process:** ${topic.kc[0][1]}`,
           `**Track power:** Ask who could make rules, mobilize labor, control land, or redirect trade, and how that power changed from 1750 to 1900.`,
           `**Anchor the pattern:** ${topic.cases[0]} and ${topic.cases[1]} show how a global development took different institutional forms.`
-        ], image: { title: topic.title, caption: `A visual anchor for Topic ${topic.id}.`, url: image, sourceUrl: image } },
+        ], image: { title: cardImage(topic, 1).title || topic.title, caption: cardImage(topic, 1).caption || `The mechanism behind Topic ${topic.id}, drawn as BeHistorical topic artwork.`, url: cardImage(topic, 1).url, sourceUrl: cardImage(topic, 1).sourceUrl } },
         { title: 'Comparison across regions', bullets: [
           `**Case one:** ${topic.cases[0]} reveals the role of policy, bargaining, and coercion.`,
           `**Case two:** ${topic.cases[1]} shows that similar pressures could produce a different balance of state, company, and community power.`,
           `**Comparison rule:** A meaningful comparison identifies a shared process and then explains why its form or result differed.`
-        ], image: { title: 'Regional comparison', caption: `Compare ${topic.cases[0]} with ${topic.cases[1]}.`, url: image, sourceUrl: image } },
+        ], image: { title: cardImage(topic, 2).title || 'Regional comparison', caption: cardImage(topic, 2).caption || `Compare ${topic.cases[0]} with ${topic.cases[1]}.`, url: cardImage(topic, 2).url, sourceUrl: cardImage(topic, 2).sourceUrl } },
         { title: 'From evidence to AP argument', bullets: [
           `**Use a third case:** ${topic.cases[2]} can confirm, complicate, or limit your emerging claim.`,
           `**Name the mechanism:** Link evidence with because, therefore, while, or although; do not leave the relationship implied.`,
           `**Qualify the result:** ${topic.cases[3]} reminds us that global patterns were uneven and changed over time.`
-        ], image: { title: 'Argumentation', caption: 'Evidence becomes analysis when its relationship to a claim is explained.', url: image, sourceUrl: image } }
+        ], image: { title: cardImage(topic, 3).title || 'Argumentation', caption: cardImage(topic, 3).caption || 'Evidence becomes analysis when its relationship to a claim is explained.', url: cardImage(topic, 3).url, sourceUrl: cardImage(topic, 3).sourceUrl } }
       ]
     },
     map: {
-      title: `Mapping ${topic.title}`, url: image, sourceUrl: image,
+      title: `Mapping ${topic.title}`, url: media.map, sourceUrl: media.mapSource || media.map,
       caption: `Locate the regions connected to ${topic.cases.join(', ')}.`,
       intro: 'Geography shaped access to resources, markets, transport routes, and state power. Use the map to connect location to historical process.',
       prompt: `Which geographic relationship best helps explain ${topic.title.toLowerCase()}, and what evidence supports your answer?`,
@@ -296,8 +375,8 @@ function buildLesson(topic) {
     } : {
       url: '', desc: 'Unit synthesis uses the full lesson evidence set instead of a separate simulation.'
     },
-    images: evidenceItems.slice(0, 3).map((item) => ({
-      title: item.title, url: image, sourceUrl: image, caption: item.detail,
+    images: evidenceItems.slice(0, 3).map((item, i) => ({
+      title: item.title, url: evidenceImage(topic, i + 1).url, sourceUrl: evidenceImage(topic, i + 1).sourceUrl, caption: item.detail,
       prompt: `How does ${item.title} support or complicate a claim about ${topic.title.toLowerCase()}?`
     }))
   };

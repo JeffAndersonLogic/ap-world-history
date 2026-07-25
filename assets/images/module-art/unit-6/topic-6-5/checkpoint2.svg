@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
   <title id="title">Topic 6.5 — Checkpoint 2</title><desc id="desc">Local BeHistorical artwork for Economic Imperialism. Historical anchor: Checkpoint 2: Defend the Argument.</desc>
   <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1c1d"/><stop offset=".58" stop-color="#2b2f31"/><stop offset="1" stop-color="#3e4447"/></linearGradient><radialGradient id="glow"><stop stop-color="#d2b48c" stop-opacity=".34"/><stop offset="1" stop-color="#d2b48c" stop-opacity="0"/></radialGradient></defs>
   <rect width="1200" height="800" fill="url(#bg)"/><circle cx="631" cy="218" r="420" fill="url(#glow)"/><circle cx="938" cy="610" r="330" fill="url(#glow)" opacity=".7"/>

@@ -124,10 +124,10 @@ window.BEHISTORICAL_LESSON = {
           "Structural causes of the French Revolution: France was nearly bankrupt after supporting the American Revolution. The tax system exempted the aristocracy and the Church, placing the burden entirely on commoners. Food shortages in 1788–1789 pushed ordinary people to desperation. The financial crisis created the conditions; Enlightenment ideas provided the vocabulary for what came next."
         ],
         image: {
-          title: "Columbus Taking Possession — Atlantic World Context",
-          caption: "The Atlantic Revolutions took place in a world shaped by European colonialism, the Atlantic slave trade, and global commercial networks. The same Atlantic world that produced enormous wealth for European colonial powers also produced the contradictions, between proclaimed universal rights and the reality of slavery and colonial rule, that the Haitian Revolution would expose most sharply.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg"
+          title: "Enlightenment claims become revolutions",
+          caption: "BeHistorical topic artwork for this card. In America and France, arguments about consent and representation turned into constitutions and wars.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -139,10 +139,10 @@ window.BEHISTORICAL_LESSON = {
           "The aftermath: Haiti's independence terrified slaveholders across the Atlantic world. France demanded **150 million francs** (later reduced to 90 million) as the price of diplomatic recognition, an enormous debt that Haiti did not finish paying until 1947. This 'independence debt' structurally impoverished Haiti for a century and a half. The United States refused to recognize Haiti until 1862, during the Civil War, because Southern slaveholders feared the implications. The Haitian Revolution is the clearest test of whether Enlightenment universalism was real: it was real enough to inspire a revolution, but the existing Atlantic world punished Haiti for taking it seriously."
         ],
         image: {
-          title: "Florentine Codex — Demographic Catastrophe as Context",
-          caption: "The demographic catastrophe of the Columbian Exchange, which reduced indigenous populations by 50–90%, created the labor vacuum that the Atlantic slave trade filled. The millions of enslaved Africans brought to Saint-Domingue as replacements were the same people who, in 1791, would claim the universal rights that European and American revolutionaries had proclaimed.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
+          title: "Haiti: the most radical Atlantic revolution",
+          caption: "BeHistorical topic artwork for this card. Enslaved people took the language of universal rights literally and destroyed the richest slave colony in the Americas.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -154,10 +154,10 @@ window.BEHISTORICAL_LESSON = {
           "**Nationalism**, the ideology that emerged from Atlantic Revolutionary movements, held that people sharing a common culture, language, history, or ethnicity should have their own self-governing state. Initially linked to liberal and democratic ideals ('the right of peoples to self-determination'), nationalism became the most powerful destabilizing force in 19th-century politics. The **Ottoman Empire** faced Greek independence (1821–1829), Serbian autonomy, and Bulgarian nationalism. The **Habsburg Empire** faced Hungarian, Czech, Italian, and German nationalist movements. The **Russian Empire** faced Polish nationalist uprisings. For the AP exam, nationalism matters primarily as a **cause** of the instability and eventual collapse of multiethnic empires in the 19th and early 20th centuries."
         ],
         image: {
-          title: "Ferdinand Magellan — Atlantic World Connected",
-          caption: "The Atlantic world that produced the Age of Revolutions had been built over three centuries of European exploration, colonialism, and forced migration. The same global connections that made European empires wealthy also created the contradictions, between proclaimed universal rights and the reality of slavery and colonial rule, that the Atlantic Revolutions would expose.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg"
+          title: "Latin American independence and new nationalisms",
+          caption: "BeHistorical topic artwork for this card. Creole elites led independence movements that changed who governed far more than they changed the social order.",
+          url: "",
+          sourceUrl: ""
         }
       }
     ]
@@ -165,8 +165,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Atlantic Revolutionary World, c. 1776–1825",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg",
+    url: "../assets/images/instructional-maps/topic-5-2.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-5-2.svg",
     caption: "Between 1776 and 1825, a wave of revolutions swept the Atlantic world, from the thirteen British colonies in North America to the Caribbean to the Spanish and Portuguese colonies of Latin America. Each revolution drew on Enlightenment ideas while producing very different outcomes.",
     intro: "Trace the Atlantic Revolutionary wave from north to south: American Revolution (1776), French Revolution (1789), Haitian Revolution (1791–1804), Latin American independence (1810–1825). Notice how these revolutions spread across the Atlantic world and how each was shaped by its local context, who held power, who was enslaved, who was colonized.",
     prompt: "Using the map, explain why the Haitian Revolution happened in Saint-Domingue rather than somewhere else. What specific features of Saint-Domingue's situation, its population, its wealth, its relationship to the French Revolution, made it uniquely explosive? What does this geographic and demographic specificity reveal about the causes of the Haitian Revolution?"

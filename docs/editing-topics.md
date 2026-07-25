@@ -112,11 +112,42 @@ lesson.stableImages = {
 };
 ```
 
-### ⚠️ Always eyeball an image swap in the browser
-A wrong file name doesn't throw an error — it just shows nothing. The validator
-can't check whether a Commons file actually exists, so open the page and look
-after you swap. (Avoid `../assets/images/module-cards/*.jpg` — those local
-files are broken placeholder stubs; use Commons URLs instead.)
+### ⚠️ Check an image swap before class
+
+A wrong Commons file name throws no error, it just shows nothing. Two tools
+cover this between them:
+
+```
+node scripts/validate.js          # offline: local files exist and are real images
+node scripts/check-image-urls.js  # online: every Commons URL actually resolves
+```
+
+`check-image-urls.js` needs internet access to `commons.wikimedia.org`. It
+lists every picture that would come up blank, names the file that references
+it, and tells you what to put in its place. If it reports that nothing was
+verified, you are on a network that blocks Wikimedia; run it from home.
+
+### Leaving an image out on purpose
+
+Set `url` and `sourceUrl` to empty strings and the renderer draws the
+generated local artwork built for that exact slot. That artwork is labeled
+with the topic and module, is always on-topic, and can never fail to load. It
+is the right answer whenever you do not have a picture you trust.
+
+### Map & Geography images
+
+Many map modules point at a generated local map in
+`assets/images/instructional-maps/`. Those are built from a spec in
+`scripts/lib/instructional-map-specs.js`:
+
+```
+node scripts/build-instructional-maps.js
+```
+
+Edit the spec (regions to highlight, routes to draw, cities to mark, legend
+wording), re-run the script, and reload the page. The regions and routes come
+from named zones in `scripts/lib/map-frame.js`, so the geography stays
+consistent from Unit 1 to Unit 9.
 
 ---
 

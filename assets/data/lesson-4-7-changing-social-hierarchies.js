@@ -147,9 +147,9 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Colonial Social Hierarchies Across the Atlantic World, c. 1700",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
-    caption: "Casta paintings from 18th-century New Spain documented the elaborate racial classification system of Spanish colonial America. Each named category carried specific legal consequences for tribute, office-holding, and legal rights.",
+    url: "../assets/images/instructional-maps/topic-4-7.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-4-7.svg",
+    caption: "Coerced labor and the hierarchies built on it, placed geographically: the mita in the Andes, plantation slavery in Brazil and the Caribbean, and the West African societies drained to supply them.",
     intro: "Study the casta painting carefully. Notice the range of named racial categories, how many are there? What does the existence of so many categories tell us about the social reality of colonial Spanish America? What does the need to visually document and label these categories suggest about colonial anxieties?",
     prompt: "Using the casta painting as evidence, explain what the casta system reveals about Spanish colonial society. Why did colonizers feel the need to create such an elaborate classification system? What does the existence of categories like 'mestizo' and 'mulatto', which had no pre-colonial equivalent, reveal about the demographic consequences of colonialism?"
   },

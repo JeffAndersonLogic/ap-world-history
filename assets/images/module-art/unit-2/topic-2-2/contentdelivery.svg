@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
   <title id="title">Topic 2.2 — Content Delivery</title><desc id="desc">Local BeHistorical artwork for The Mongol Empire: Conquest, Connection, and the Pax Mongolica. Historical anchor: The Mongol Empire: Conquest, Administration, and th….</desc>
   <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1c1d"/><stop offset=".58" stop-color="#2b2f31"/><stop offset="1" stop-color="#3e4447"/></linearGradient><radialGradient id="glow"><stop stop-color="#b98b54" stop-opacity=".34"/><stop offset="1" stop-color="#b98b54" stop-opacity="0"/></radialGradient></defs>
   <rect width="1200" height="800" fill="url(#bg)"/><circle cx="673" cy="198" r="420" fill="url(#glow)"/><circle cx="1030" cy="610" r="330" fill="url(#glow)" opacity=".7"/>

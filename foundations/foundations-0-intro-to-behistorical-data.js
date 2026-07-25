@@ -44,8 +44,8 @@ window.FOUNDATION_TOPIC = {
 
   map: {
     title: 'The Historian\'s Map: The World at c.1200',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_Map_Blank_-_with_blue_sea.svg',
+    url: '../assets/images/instructional-maps/foundations-0.svg',
+    sourceUrl: '../assets/images/instructional-maps/foundations-0.svg',
     caption: 'AP World History begins at c.1200. This is the world you are about to learn to read, not memorize. Every unit this year will pull you back to this map, then push it forward.',
     desc: 'AP World starts at c.1200, a world already full of empires, trade routes, and belief systems. This map is your baseline. You will return to it after every unit and see it differently each time.',
     key: [

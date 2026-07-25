@@ -120,9 +120,9 @@ window.BEHISTORICAL_LESSON = {
   map: {
     title: "Map: Where and How Industrialization Reshaped the World, c. 1750–1900",
     intro: "Use this sourced world map as a clean geographic reference while you build your argument. The work of 5.10 is not learning a new place, it is deciding, across the whole world of Unit 5, how much industrialization changed and how much stayed the same.",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
-    caption: "Wikimedia Commons blank world map, used as a sourced geographic reference for arguing the extent of change in the industrial age.",
+    url: "../assets/images/instructional-maps/topic-5-10.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-5-10.svg",
+    caption: "Where industrial production concentrated and where economies were reorganized to supply it. The extent of change looks different depending on which zone you stand in.",
     notes: [
       "Start by separating change from continuity, they are the two halves of your argument.",
       "Change is easiest to see in economy and technology: industrial capitalism, factories, railroads, steamships, the telegraph.",
@@ -214,10 +214,10 @@ window.BEHISTORICAL_LESSON = {
           "End with a thesis a reasonable person could disagree with, that is what makes it defensible."
         ],
         image: {
-          title: "Blank world map",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
-          caption: "A world-scale prompt: your job is to judge the extent of change, not just describe it."
+          title: "Writing the extent argument",
+          url: "",
+          sourceUrl: "",
+          caption: "BeHistorical topic artwork for this card. An extent argument names what changed, names what held, and then says which mattered more, and for whom."
         }
       }
     ],

@@ -201,8 +201,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Newly Independent States, 1947–1965",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Decolonization_of_the_Americas.png",
+    url: "../assets/images/instructional-maps/topic-8-6.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-8-6.svg",
     caption: "The wave of new state creation following colonial withdrawal, showing the geographic range of new states and the boundaries drawn at independence.",
     intro: "Use the map to trace where new states were created through boundary redrawing. Note the geographic clustering: South Asia (1947), the Middle East (1948), Southeast Asia (early 1950s), and sub-Saharan Africa (1957–1965). What patterns do you see in how colonial withdrawal created new states?",
     prompt: "Compare the three CED new-state examples, Pakistan, Israel, Cambodia. What do they share? How do their creation processes differ? What does each reveal about the relationship between colonial withdrawal, boundary redrawing, and new state formation?",

@@ -162,8 +162,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Disease, Environment, and Population After 1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Emergency_hospital_during_Influenza_epidemic,_Camp_Funston,_Kansas_-_NCP_1603.jpg",
+    url: "../assets/images/instructional-maps/topic-9-2.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-9-2.svg",
     caption: "Environmental factors, sanitation, density, climate, urbanization, and travel networks, shaped which populations were most vulnerable to disease after 1900.",
     intro: "Use the map to identify how environmental conditions shaped disease patterns across different regions. Consider how poverty, climate, urbanization, and travel networks created different disease burdens in different parts of the world.",
     prompt: "Identify two regions on the map and explain how a specific environmental factor shaped the disease burden in each region differently after 1900.",

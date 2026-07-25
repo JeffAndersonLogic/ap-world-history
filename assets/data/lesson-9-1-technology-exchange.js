@@ -210,8 +210,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Global Technology and Exchange After 1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Container_ship_Hanjin_Taipei.jpg",
+    url: "../assets/images/instructional-maps/topic-9-1.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-9-1.svg",
     caption: "Technologies in communication, transportation, energy, agriculture, and medicine connected and transformed the world after 1900.",
     intro: "Use the map to identify how new technologies reduced the problem of geographic distance and reshaped global connections. Consider which regions were connected first, which were connected last, and what technologies made each connection possible.",
     prompt: "Identify two regions on the map and explain how a specific technology from this topic changed the relationship between them after 1900.",

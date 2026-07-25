@@ -82,16 +82,16 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg'
+    map: '../assets/images/module-art/unit-6/topic-6-3/map.svg',
+    first10: '../assets/images/module-art/unit-6/topic-6-3/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-6/topic-6-3/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-6/topic-6-3/besurreal.svg',
+    skill: '../assets/images/module-art/unit-6/topic-6-3/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-6/topic-6-3/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-6/topic-6-3/evidence.svg',
+    source: '../assets/images/module-art/unit-6/topic-6-3/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-6/topic-6-3/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-6/topic-6-3/checkpoint2.svg'
   },
   lecture: {
     title: 'Indigenous Responses to State Expansion: Power, Process, and Consequence',
@@ -106,10 +106,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** Yaa Asantewaa and the War of the Golden Stool and The Indian Rebellion of 1857 show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'Indigenous Responses to State Expansion',
-          caption: 'A visual anchor for Topic 6.3.',
+          title: 'Yaa Asantewaa, c. 1900',
+          caption: 'Yaa Asantewaa led Asante resistance in the War of the Golden Stool. Indigenous responses to expansion included organized armed defence, not only accommodation.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg'
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Yaa_Asantewaa.jpg'
         }
       },
       {
@@ -122,8 +122,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Regional comparison',
           caption: 'Compare Yaa Asantewaa and the War of the Golden Stool with The Indian Rebellion of 1857.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -136,16 +136,16 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Argumentation',
           caption: 'Evidence becomes analysis when its relationship to a claim is explained.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
   },
   map: {
     title: 'Mapping Indigenous Responses to State Expansion',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
+    url: '../assets/images/instructional-maps/topic-6-3.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-6-3.svg',
     caption: 'Locate the regions connected to Yaa Asantewaa and the War of the Golden Stool, The Indian Rebellion of 1857, Samory Touré in West Africa, The Mahdist state and the Xhosa Cattle-Killing movement.',
     intro: 'Geography shaped access to resources, markets, transport routes, and state power. Use the map to connect location to historical process.',
     prompt: 'Which geographic relationship best helps explain indigenous responses to state expansion, and what evidence supports your answer?',
@@ -294,21 +294,21 @@ window.BEHISTORICAL_LESSON = {
     {
       title: 'Yaa Asantewaa and the War of the Golden Stool',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Yaa_Asantewaa.jpg',
       caption: 'Yaa Asantewaa and the War of the Golden Stool helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Yaa Asantewaa and the War of the Golden Stool support or complicate a claim about indigenous responses to state expansion?'
     },
     {
       title: 'The Indian Rebellion of 1857',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'The Indian Rebellion of 1857 helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does The Indian Rebellion of 1857 support or complicate a claim about indigenous responses to state expansion?'
     },
     {
       title: 'Samory Touré in West Africa',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Samory Touré in West Africa helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Samory Touré in West Africa support or complicate a claim about indigenous responses to state expansion?'
     }

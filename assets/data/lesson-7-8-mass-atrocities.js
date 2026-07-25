@@ -176,8 +176,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: Mass Atrocities After 1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG",
+    url: "../assets/images/instructional-maps/topic-7-8.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-7-8.svg",
     caption: "Five cases, four continents, the geography of mass atrocities after 1900 spans the Ottoman Empire, Nazi-occupied Europe, Soviet Ukraine, Cambodia, and Rwanda.",
     intro: "Use the map to locate the five cases named in the CED's illustrative examples. Geography matters: each atrocity occurred in a specific political and territorial context, imperial collapse, wartime occupation, Cold War instability, post-colonial division. Connecting place to cause strengthens your causal argument.",
     prompt: "Locate the Ottoman Empire (Armenia), Nazi Germany and occupied Europe, Soviet Ukraine, Cambodia, and Rwanda on the map. For each location, identify one geographic or political factor that contributed to the conditions enabling mass atrocity. How does the geographic spread of these cases support the argument that mass atrocities are not limited to one region or one ideology?",

@@ -121,10 +121,10 @@ window.BEHISTORICAL_LESSON = {
           "The **cuius regio, eius religio** principle, whose realm, his religion, applied not only to European states after the **Peace of Augsburg (1555)** but reflected the same logic used by both Ottoman and Safavid rulers: the ruler's faith defined the state's identity and the loyalty demanded of its subjects."
         ],
         image: {
-          title: "Safavid Empire Map",
-          caption: "The Safavid Empire at its greatest extent, bordered by the Ottoman Empire to the west and the Mughal Empire to the east, a Shia state surrounded by Sunni powers.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Safavid_Empire_Map.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Safavid_Empire_Map.png"
+          title: "Sultan Ahmed Mosque, Istanbul",
+          caption: "Ottoman rulers built Sunni legitimacy into the skyline of their capital, one answer to the question of how a state uses religion.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sultan_Ahmed_Mosque_Istanbul_Turkey_retouched.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Sultan_Ahmed_Mosque_Istanbul_Turkey_retouched.jpg"
         }
       },
       {
@@ -136,10 +136,10 @@ window.BEHISTORICAL_LESSON = {
           "The comparison of Akbar and Aurangzeb is one of the most productive in AP World History: both were capable rulers of the same empire, a century apart. **Akbar's tolerance expanded the empire by drawing diverse elites into a shared imperial project. Aurangzeb's enforcement narrowed the empire's base of loyalty and fueled the rebellions that accelerated Mughal decline.**"
         ],
         image: {
-          title: "Mughal Empire and Akbar's court",
-          caption: "Akbar's court at Fatehpur Sikri drew scholars from every religious tradition in the empire. The Din-i-Ilahi represented an ambitious attempt to synthesize those traditions into a single imperial identity.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Safavid_Empire_Map.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Safavid_Empire_Map.png"
+          title: "Akbar receiving nobles at the Mughal court",
+          caption: "Akbar governed a mostly Hindu population as a Muslim ruler, and experimented with religious toleration as a tool of empire.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Akbar_receiving_nobles.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Akbar_receiving_nobles.jpg"
         }
       }
     ]

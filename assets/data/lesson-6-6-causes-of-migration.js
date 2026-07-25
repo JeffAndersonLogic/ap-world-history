@@ -93,16 +93,16 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg'
+    map: '../assets/images/module-art/unit-6/topic-6-6/map.svg',
+    first10: '../assets/images/module-art/unit-6/topic-6-6/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-6/topic-6-6/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-6/topic-6-6/besurreal.svg',
+    skill: '../assets/images/module-art/unit-6/topic-6-6/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-6/topic-6-6/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-6/topic-6-6/evidence.svg',
+    source: '../assets/images/module-art/unit-6/topic-6-6/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-6/topic-6-6/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-6/topic-6-6/checkpoint2.svg'
   },
   lecture: {
     title: 'Causes of Migration: Power, Process, and Consequence',
@@ -117,10 +117,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** Irish and Italian migration to the Americas and Chinese and Indian indentured labor show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'Causes of Migration',
-          caption: 'A visual anchor for Topic 6.6.',
+          title: 'An indenture ship carrying Indian laborers',
+          caption: 'After abolition, plantations recruited indentured workers from India and China under contracts that limited pay, movement, and return.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg'
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_indenture_ship.jpg'
         }
       },
       {
@@ -133,8 +133,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Regional comparison',
           caption: 'Compare Irish and Italian migration to the Americas with Chinese and Indian indentured labor.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -147,16 +147,16 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Argumentation',
           caption: 'Evidence becomes analysis when its relationship to a claim is explained.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
   },
   map: {
     title: 'Mapping Causes of Migration',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
+    url: '../assets/images/instructional-maps/topic-6-6.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-6-6.svg',
     caption: 'Locate the regions connected to Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.',
     intro: 'Geography shaped access to resources, markets, transport routes, and state power. Use the map to connect location to historical process.',
     prompt: 'Which geographic relationship best helps explain causes of migration, and what evidence supports your answer?',
@@ -304,22 +304,22 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Irish and Italian migration to the Americas',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Irish and Italian migration to the Americas helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Irish and Italian migration to the Americas support or complicate a claim about causes of migration?'
     },
     {
       title: 'Chinese and Indian indentured labor',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_indenture_ship.jpg',
       caption: 'Chinese and Indian indentured labor helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Chinese and Indian indentured labor support or complicate a claim about causes of migration?'
     },
     {
       title: 'Convict labor',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Convict labor helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Convict labor support or complicate a claim about causes of migration?'
     }

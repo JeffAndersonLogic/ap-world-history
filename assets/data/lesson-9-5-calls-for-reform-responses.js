@@ -94,21 +94,21 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+    map: '../assets/images/module-art/unit-9/topic-9-5/map.svg',
+    first10: '../assets/images/module-art/unit-9/topic-9-5/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-9/topic-9-5/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-9/topic-9-5/besurreal.svg',
+    skill: '../assets/images/module-art/unit-9/topic-9-5/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-9/topic-9-5/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-9/topic-9-5/evidence.svg',
+    source: '../assets/images/module-art/unit-9/topic-9-5/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-9/topic-9-5/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-9/topic-9-5/checkpoint2.svg'
   },
   map: {
     title: 'Mapping Calls for Reform and Responses After 1900',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+    url: '../assets/images/instructional-maps/topic-9-5.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-9-5.svg',
     caption: 'Locate the regions tied to Universal Declaration of Human Rights, Global feminism and expanded education, End of apartheid and civil-rights law, Green Belt and fair-trade movements.',
     intro: 'Global patterns are produced through specific places, routes, institutions, and unequal relationships. Use geography to test the scale of your claim.',
     prompt: 'Which geographic pattern best helps explain calls for reform and responses after 1900, and what evidence supports that conclusion?',
@@ -171,8 +171,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Education and Political Participation',
           caption: 'Evidence anchor 2 for Topic 9.5.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -185,8 +185,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Race, Law, and Institutional Change',
           caption: 'Evidence anchor 3 for Topic 9.5.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -199,8 +199,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Environmental and Economic Justice',
           caption: 'Evidence anchor 4 for Topic 9.5.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
@@ -299,15 +299,15 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'Education and Political Participation',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'Women gained voting or office-holding rights across states at different moments in the 20th century.',
       prompt: 'How does this evidence support or qualify a claim about calls for reform and responses after 1900?'
     },
     {
       title: 'Race, Law, and Institutional Change',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'The U.S. Civil Rights Act of 1965 attacked legal discrimination, though racial inequality persisted.',
       prompt: 'How does this evidence support or qualify a claim about calls for reform and responses after 1900?'
     }

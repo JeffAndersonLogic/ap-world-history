@@ -211,8 +211,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: Aggression in the 1930s",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG",
+    url: "../assets/images/instructional-maps/topic-7-6.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-7-6.svg",
     caption: "The world of the 1930s, a humiliated Germany, a depression-struck globe, and three expansionist powers whose continued imperialist aspirations the League could not contain.",
     intro: "Use the map to locate the four causes in space: the territory Versailles stripped from Germany, the global reach of the Depression, and the three regions where fascist and totalitarian regimes pursued aggressive militarism, Germany in Europe, Italy in the Mediterranean and Africa, and Japan in Asia.",
     prompt: "Locate Germany, Italy, and Japan, and trace their expansion in the 1930s. Which causes named in the Key Concept are geographic (territorial losses, imperialist aspirations) and which are not (the Depression, the rise of regimes)? Where on this map would you mark the League of Nations' failures to respond?",

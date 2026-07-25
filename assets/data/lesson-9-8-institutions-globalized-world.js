@@ -69,21 +69,21 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+    map: '../assets/images/module-art/unit-9/topic-9-8/map.svg',
+    first10: '../assets/images/module-art/unit-9/topic-9-8/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-9/topic-9-8/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-9/topic-9-8/besurreal.svg',
+    skill: '../assets/images/module-art/unit-9/topic-9-8/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-9/topic-9-8/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-9/topic-9-8/evidence.svg',
+    source: '../assets/images/module-art/unit-9/topic-9-8/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-9/topic-9-8/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-9/topic-9-8/checkpoint2.svg'
   },
   map: {
     title: 'Mapping Institutions Developing in a Globalized World',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+    url: '../assets/images/instructional-maps/topic-9-8.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-9-8.svg',
     caption: 'Locate the regions tied to United Nations General Assembly, Security Council and veto power, Peacekeeping operations, Humanitarian and development agencies.',
     intro: 'Global patterns are produced through specific places, routes, institutions, and unequal relationships. Use geography to test the scale of your claim.',
     prompt: 'Which geographic pattern best helps explain institutions developing in a globalized world, and what evidence supports that conclusion?',
@@ -146,8 +146,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Institutional Design',
           caption: 'Evidence anchor 2 for Topic 9.8.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -160,8 +160,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Peacekeeping and Cooperation',
           caption: 'Evidence anchor 3 for Topic 9.8.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -174,8 +174,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Power, Sovereignty, and Limits',
           caption: 'Evidence anchor 4 for Topic 9.8.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
@@ -274,15 +274,15 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'Institutional Design',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'The General Assembly expressed sovereign equality through one-state, one-vote representation.',
       prompt: 'How does this evidence support or qualify a claim about institutions developing in a globalized world?'
     },
     {
       title: 'Peacekeeping and Cooperation',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'Peacekeeping forces monitored agreements and sometimes protected civilians, but mandates depended on state consent and Security Council authorization.',
       prompt: 'How does this evidence support or qualify a claim about institutions developing in a globalized world?'
     }

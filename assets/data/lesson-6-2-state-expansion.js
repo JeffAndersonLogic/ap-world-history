@@ -104,16 +104,16 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg'
+    map: '../assets/images/module-art/unit-6/topic-6-2/map.svg',
+    first10: '../assets/images/module-art/unit-6/topic-6-2/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-6/topic-6-2/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-6/topic-6-2/besurreal.svg',
+    skill: '../assets/images/module-art/unit-6/topic-6-2/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-6/topic-6-2/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-6/topic-6-2/evidence.svg',
+    source: '../assets/images/module-art/unit-6/topic-6-2/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-6/topic-6-2/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-6/topic-6-2/checkpoint2.svg'
   },
   lecture: {
     title: 'State Expansion: Power, Process, and Consequence',
@@ -128,10 +128,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** King Leopold II and the Belgian Congo and British and French rule in West Africa show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'State Expansion',
-          caption: 'A visual anchor for Topic 6.2.',
+          title: 'Africa after the partition, 1910',
+          caption: 'Twenty-five years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg'
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Africa_map_1910.jpg'
         }
       },
       {
@@ -144,8 +144,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Regional comparison',
           caption: 'Compare King Leopold II and the Belgian Congo with British and French rule in West Africa.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -158,16 +158,16 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Argumentation',
           caption: 'Evidence becomes analysis when its relationship to a claim is explained.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
   },
   map: {
     title: 'Mapping State Expansion',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
+    url: '../assets/images/instructional-maps/topic-6-2.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-6-2.svg',
     caption: 'Locate the regions connected to King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.',
     intro: 'Geography shaped access to resources, markets, transport routes, and state power. Use the map to connect location to historical process.',
     prompt: 'Which geographic relationship best helps explain state expansion, and what evidence supports your answer?',
@@ -315,22 +315,22 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'King Leopold II and the Belgian Congo',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'King Leopold II and the Belgian Congo helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does King Leopold II and the Belgian Congo support or complicate a claim about state expansion?'
     },
     {
       title: 'British and French rule in West Africa',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'British and French rule in West Africa helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does British and French rule in West Africa support or complicate a claim about state expansion?'
     },
     {
       title: 'Japanese expansion into East Asia',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Japanese expansion into East Asia helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Japanese expansion into East Asia support or complicate a claim about state expansion?'
     }

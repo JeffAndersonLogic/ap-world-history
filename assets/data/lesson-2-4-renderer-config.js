@@ -41,15 +41,15 @@
   };
 
   lesson.stableImages = {
-    map:             '../assets/images/module-cards/sahara-caravan-1300ce.jpg',
-    first10:         '../assets/images/module-cards/mosque-kairouan-800ce.jpg',
+    map: '../assets/images/module-art/unit-2/topic-2-4/map.svg',
+    first10: '../assets/images/module-art/unit-2/topic-2-4/first10.svg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wall_of_the_great_enclosure%2C_Great_Zimbabwe.JPG',
     beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
-    skill:           '../assets/images/module-cards/kilwa-kisiwani-mosque.jpg',
-    checkpoint1:     '../assets/images/module-cards/persepolis-gate-nations.jpg',
+    skill: '../assets/images/module-art/unit-2/topic-2-4/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-2/topic-2-4/checkpoint1.svg',
     evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Interior_of_great_enclosure%2CG.Zimbabwe.JPG',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
-    beInTheRoom:     '../assets/images/module-cards/abbasid-baghdad-9thc.jpg',
+    beInTheRoom: '../assets/images/module-art/unit-2/topic-2-4/beintheroom.svg',
     checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Biet_Giorgis%2C_Lalibela%2C_Ethiopia_(24076354516).jpg'
   };
 

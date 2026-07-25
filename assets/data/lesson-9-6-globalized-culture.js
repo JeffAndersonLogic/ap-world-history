@@ -94,21 +94,21 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+    map: '../assets/images/module-art/unit-9/topic-9-6/map.svg',
+    first10: '../assets/images/module-art/unit-9/topic-9-6/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-9/topic-9-6/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-9/topic-9-6/besurreal.svg',
+    skill: '../assets/images/module-art/unit-9/topic-9-6/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-9/topic-9-6/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-9/topic-9-6/evidence.svg',
+    source: '../assets/images/module-art/unit-9/topic-9-6/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-9/topic-9-6/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-9/topic-9-6/checkpoint2.svg'
   },
   map: {
     title: 'Mapping Globalized Culture After 1900',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+    url: '../assets/images/instructional-maps/topic-9-6.svg',
+    sourceUrl: '../assets/images/instructional-maps/topic-9-6.svg',
     caption: 'Locate the regions tied to Reggae as global music, Bollywood and transnational film audiences, World Cup and Olympic spectacle, Alibaba, Toyota, and Coca-Cola.',
     intro: 'Global patterns are produced through specific places, routes, institutions, and unequal relationships. Use geography to test the scale of your claim.',
     prompt: 'Which geographic pattern best helps explain globalized culture after 1900, and what evidence supports that conclusion?',
@@ -171,8 +171,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Music and Film',
           caption: 'Evidence anchor 2 for Topic 9.6.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -185,8 +185,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Sports and Global Belonging',
           caption: 'Evidence anchor 3 for Topic 9.6.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg'
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -199,8 +199,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Global Consumer Culture',
           caption: 'Evidence anchor 4 for Topic 9.6.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png'
+          url: '',
+          sourceUrl: ''
         }
       }
     ]
@@ -299,15 +299,15 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'Music and Film',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'Reggae carried Jamaican experiences of race, inequality, religion, and resistance into global popular culture.',
       prompt: 'How does this evidence support or qualify a claim about globalized culture after 1900?'
     },
     {
       title: 'Sports and Global Belonging',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
+      url: '',
+      sourceUrl: '',
       caption: 'World Cup soccer and the Olympics turned national competition into shared global spectacle.',
       prompt: 'How does this evidence support or qualify a claim about globalized culture after 1900?'
     }

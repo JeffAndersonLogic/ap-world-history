@@ -60,15 +60,15 @@
 
   lesson.stableImages = {
     map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    first10:         '../assets/images/module-cards/kilwa-kisiwani-mosque.jpg',
-    contentDelivery: '../assets/images/module-cards/angkor-wat-1150ce.jpg',
-    beSurreal:       '../assets/images/module-cards/borobudur-temple-9thc.jpg',
-    skill:           '../assets/images/module-cards/mosque-kairouan-800ce.jpg',
-    checkpoint1:     '../assets/images/module-cards/abbasid-baghdad-9thc.jpg',
+    first10: '../assets/images/module-art/unit-2/topic-2-3/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-2/topic-2-3/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-2/topic-2-3/besurreal.svg',
+    skill: '../assets/images/module-art/unit-2/topic-2-3/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-2/topic-2-3/checkpoint1.svg',
     evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
-    source:          '../assets/images/module-cards/persepolis-gate-nations.jpg',
-    beInTheRoom:     '../assets/images/module-cards/lalibela-bete-giyorgis.jpg',
-    checkpoint2:     '../assets/images/module-cards/sahara-caravan-1300ce.jpg'
+    source: '../assets/images/module-art/unit-2/topic-2-3/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-2/topic-2-3/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-2/topic-2-3/checkpoint2.svg'
   };
 
   lesson.beInTheRoom = {

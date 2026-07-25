@@ -171,8 +171,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Maritime Empire Routes and Trading Posts, c. 1550",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
+    url: "../assets/images/instructional-maps/topic-4-4.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-4-4.svg",
     caption: "European maritime empires by c. 1550 extended across three oceans, the Portuguese Estado da India controlled the Indian Ocean's key chokepoints; Spanish colonial empire covered most of the Americas; the Dutch and British were beginning to challenge both.",
     intro: "Use the map to trace the geographic logic of the Estado da India: Goa on India's west coast, Malacca at the strait between the Indian Ocean and South China Sea, Hormuz at the entrance to the Persian Gulf. Notice how controlling these three points gave Portugal leverage over the entire Indian Ocean trade system without needing to control the interior of any continent.",
     prompt: "Looking at the map, explain why the Portuguese focused on fortified coastal ports rather than inland conquest. What does the geography of the Indian Ocean, with its key straits and chokepoints, reveal about why the trading post model was viable for a small state like Portugal?"

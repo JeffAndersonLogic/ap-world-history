@@ -126,10 +126,10 @@ window.BEHISTORICAL_LESSON = {
           "The **Russian Empire** expanded eastward across Siberia and southward toward Central Asia during the same period, a land-based imperial expansion as significant as those of the more commonly studied 'Gunpowder Empires.' All of these states used gunpowder weapons and recruited military forces from conquered or enslaved populations."
         ],
         image: {
-          title: "Ottoman Empire territorial expansion",
-          caption: "The Ottoman Empire at its height controlled territory across three continents, from Hungary to Yemen and from Morocco to Mesopotamia.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ottoman_empire_1359_to_1839.gif",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Ottoman_empire_1359_to_1839.gif"
+          title: "Topkapi Palace, Istanbul",
+          caption: "The Ottoman palace complex was a seat of government as much as a residence: expansion had to be administered from somewhere.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Istanbul.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Istanbul.jpg"
         }
       },
       {
@@ -140,10 +140,10 @@ window.BEHISTORICAL_LESSON = {
           "Sultan Mehmed II claimed the title of **Caesar (Kayser-i Rum)**, Emperor of Rome, asserting Ottoman legitimacy as the successors of both the Roman Empire and the Islamic caliphate. The conquest demonstrated what gunpowder artillery could accomplish and announced that a new era of imperial power had arrived in Eurasia."
         ],
         image: {
-          title: "Ottoman Empire expansion",
-          caption: "The conquest of Constantinople in 1453 was the pivotal moment that transformed the Ottomans from a regional power into a world empire.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ottoman_empire_1359_to_1839.gif",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Ottoman_empire_1359_to_1839.gif"
+          title: "The Mughal Empire at its height, c. 1700",
+          caption: "Gunpowder, cavalry, and revenue systems let the Mughals expand across South Asia, the same combination the Ottomans and Safavids used.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_1700_map.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_1700_map.png"
         }
       }
     ]

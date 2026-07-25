@@ -103,10 +103,10 @@ window.BEHISTORICAL_LESSON = {
           "**The Pullman Strike (1894)**: After the Pullman Palace Car Company cut wages during the depression of 1893 without reducing rents in its company-owned town, workers went on strike. Eugene Debs's American Railway Union organized a nationwide boycott: members refused to handle any train with Pullman cars. Railroad traffic across the Midwest stopped. President Cleveland, over the objection of the Illinois governor, sent federal troops; a federal judge issued an injunction against the boycott. Debs was imprisoned for contempt of court. After his release, he read widely in socialist literature and concluded that reform within capitalism was insufficient, he became the Socialist Party of America's presidential candidate in 1900, 1904, 1908, 1912, and 1920. The Pullman Strike demonstrated that 'pure and simple unionism' within capitalism was vulnerable to federal power, a lesson that pushed some labor activists toward political radicalism."
         ],
         image: {
-          title: "Loren Mozley Pueblo Revolt — Collective Resistance",
-          caption: "The Pueblo Revolt of 1680 represents organized collective resistance against colonial authority, the same dynamic that animated the labor movement. Workers in the industrial era, like the Pueblo people in 1680, had little individual power against the institutions that controlled their lives; collective action was the only mechanism that could change their situation.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg"
+          title: "Power-loom weaving, 1835",
+          caption: "The factory floor is where the labor movement began: shared hours, shared grievances, and enough workers in one room to organize.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg"
         }
       },
       {
@@ -118,10 +118,10 @@ window.BEHISTORICAL_LESSON = {
           "**The Cotton Famine (1861–1865)**: The Union naval blockade of Confederate ports during the Civil War cut off American cotton to British mills. The **Lancashire Cotton Famine**, as British workers experienced it, put approximately 500,000 textile workers out of work, with millions more affected. In a remarkable political moment, Lancashire workers held public meetings declaring their support for the Union cause and opposing Confederate recognition, even at the cost of their own employment. Their calculation: recognizing the Confederacy would mean prolonging slavery; they would not do it. Abraham Lincoln wrote a letter of thanks to the workers of Manchester in 1863, calling their stand 'an instance of sublime Christian heroism which has not been surpassed in any age or in any country.' The Cotton Famine forced British mills to diversify cotton sources, turning to Egypt, India, and eventually other regions, which restructured global cotton supply chains and transformed the agricultural economies of Egypt and India in ways that shaped those countries for decades."
         ],
         image: {
-          title: "Florentine Codex — Documenting Social Transformation",
-          caption: "The Florentine Codex documented the transformation of Aztec society under colonial contact. The abolitionist movement similarly produced documents, slave narratives, petition campaigns, parliamentary testimony, that forced the public record to include the experience of enslaved people, not just the interests of slaveholders.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
+          title: "Abolition and the industrial cotton connection",
+          caption: "BeHistorical topic artwork for this card. Britain abolished the slave trade while its mills ran on cotton grown by enslaved people in the American South.",
+          url: "",
+          sourceUrl: ""
         }
       },
       {
@@ -133,10 +133,10 @@ window.BEHISTORICAL_LESSON = {
           "**The temperance movement** was one of the largest mass movements of the industrial era, especially in the United States, where the **Women's Christian Temperance Union** (WCTU, founded 1874) became the largest women's organization in 19th-century America. Temperance advocates argued that alcohol consumption destroyed working-class family life: wages spent on drink rather than food; husbands returning home violent; children neglected. The argument had force in an era when industrial wages were low, working hours long, and alcohol cheap, and when legal protections for women and children in the household were minimal. The WCTU, under Frances Willard's leadership, expanded its mission beyond temperance to women's suffrage, labor reform, and social welfare, making 'Do Everything' its motto. The temperance movement ultimately achieved prohibition in the United States (Eighteenth Amendment, 1919), a significant policy win that also proved deeply problematic in practice, fueling organized crime and eventually being repealed (Twenty-First Amendment, 1933)."
         ],
         image: {
-          title: "World 1700 CE — The Pre-Reform Social Order",
-          caption: "The social order of c. 1700, hierarchical, agrarian, without public education systems or sanitation infrastructure, was what industrialization disrupted and what industrial-era reform movements sought to reconstruct on new foundations. Public education, public health, and labor rights were not pre-existing institutions that industrialization threatened; they were new institutions that reformers built in response to industrialization.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png"
+          title: "A Court for King Cholera, Punch, 1852",
+          caption: "Public-health reform grew directly out of scenes like this one: reformers argued that epidemics were a policy failure, not fate.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Court_for_King_Cholera.png"
         }
       }
     ]
@@ -144,8 +144,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Geography of Industrial-Era Reform, c. 1830–1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
+    url: "../assets/images/instructional-maps/topic-5-8.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-5-8.svg",
     caption: "Reform movements in the industrial era were concentrated in the same industrial regions where industrialization's social dislocations were most intense. British abolition (1833), American abolition (1865), labor organizing in Lancashire and the American Northeast, public health reform in London and Manchester, and temperance campaigns across the United States, all were responses to specific features of the industrial economy.",
     intro: "Examine the geography of abolition and labor organizing. Notice that abolitionist movements were strongest in the industrial North (Britain, American Northeast) rather than the agrarian South, despite the fact that slavery's most direct victims were in the American South and the Caribbean. Consider: what does the geographic pattern of abolitionist organizing reveal about the relationship between industrial capitalism and anti-slavery politics? Is abolitionism in the industrial North a moral achievement, or is it easier to oppose slavery when you are far from it?",
     prompt: "Using the map and your knowledge, compare the geographic patterns of two reform movements, labor organizing and abolitionism. Where was each movement strongest? What explains the geographic concentration? What does comparing these two reform movements reveal about the relationship between political power, economic interest, and moral commitment in the industrial era?"
