@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How BeHistorical Works | Instruction Manual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/behistorical-unit-hub.css">
+  <link rel="stylesheet" href="assets/css/behistorical-brand-lock.css">
+  <style>
+    .manual-hero{text-align:center;padding:34px 24px 10px}
+    .manual-hero .eyebrow{font-family:var(--ui);text-transform:uppercase;letter-spacing:.3em;font-weight:800;font-size:.8rem;color:var(--burnished-bronze)}
+    .manual-hero h1{font-family:var(--serif-title);font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.02;margin:14px 0 10px;color:var(--blackened-steel);letter-spacing:-.035em}
+    .manual-hero h1 em{font-style:normal;color:var(--burnished-bronze)}
+    .manual-hero .deck{max-width:760px;margin:0 auto;font-size:1.06rem;color:#3f4141}
+    .manual-toc{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}
+    .manual-toc a{font-family:var(--ui);font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;text-decoration:none;padding:10px 14px;border:1px solid var(--aged-iron);color:var(--blackened-steel);background:rgba(255,253,247,.7)}
+    .manual-toc a:hover{background:var(--blackened-steel);color:var(--warm-paper)}
+
+    .flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+    .flow-card{background:var(--blackened-steel);color:var(--warm-paper);padding:26px 22px;border:1px solid rgba(201,164,106,.3)}
+    .flow-card .num{font-family:var(--ui);letter-spacing:.2em;font-size:.72rem;color:var(--muted-sandstone);font-weight:800}
+    .flow-card h3{font-family:var(--serif-title);font-size:1.5rem;margin:10px 0 10px}
+    .flow-card p{font-family:var(--ui);font-size:.9rem;line-height:1.5;margin:0;color:#ece5da}
+
+    .module-list{margin-top:34px;border-top:1px solid var(--soft-line)}
+    .module-row{display:grid;grid-template-columns:74px 1.1fr 2fr;gap:20px;align-items:start;padding:22px 4px;border-bottom:1px solid var(--soft-line)}
+    .module-row .mod-num{font-family:var(--serif-title);font-size:1.9rem;font-weight:900;color:var(--antique-gold);line-height:1}
+    .module-row h3{font-family:var(--ui);font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;color:var(--blackened-steel)}
+    .module-row .mod-kind{font-family:var(--ui);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--burnished-bronze)}
+    .module-row p{grid-column:3;margin:0;font-size:.96rem;color:#3f4141}
+    .module-row p + p{margin-top:8px}
+    .module-row strong{color:var(--blackened-steel)}
+
+    .where-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}
+    .where-card{background:var(--clean-paper);border:1px solid var(--soft-line);border-left:5px solid var(--burnished-bronze);padding:24px 22px}
+    .where-card h3{font-family:var(--ui);font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.88rem;margin:0 0 10px;color:var(--blackened-steel)}
+    .where-card p{margin:0;font-size:.96rem;color:#3f4141}
+    .where-card p + p{margin-top:9px}
+    .where-card .flag{display:inline-block;margin-top:12px;font-family:var(--ui);font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;background:var(--blackened-steel);color:var(--muted-sandstone);padding:6px 10px}
+
+    .steps{counter-reset:step;margin-top:34px;max-width:900px}
+    .step{counter-increment:step;position:relative;padding:0 0 22px 62px;border-left:2px solid var(--soft-line);margin-left:16px}
+    .step:last-child{border-left-color:transparent}
+    .step::before{content:counter(step);position:absolute;left:-19px;top:-2px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--blackened-steel);color:var(--muted-sandstone);font-family:var(--ui);font-weight:800;font-size:.9rem;border:1px solid var(--aged-iron)}
+    .step h3{font-family:var(--ui);font-weight:800;font-size:.98rem;text-transform:uppercase;letter-spacing:.07em;margin:4px 0 8px;color:var(--blackened-steel)}
+    .step p{margin:0;font-size:.98rem;color:#3f4141}
+
+    .rules-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+    .rule-col{padding:24px 22px;border:1px solid var(--soft-line);background:var(--clean-paper)}
+    .rule-col.yes{border-top:5px solid #4f6d4a}
+    .rule-col.no{border-top:5px solid #8c3b2b}
+    .rule-col h3{font-family:var(--ui);font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.86rem;margin:0 0 12px}
+    .rule-col ul{margin:0;padding-left:20px;font-size:.95rem;color:#3f4141}
+    .rule-col li{margin-bottom:8px}
+
+    .colleague-panel{background:var(--blackened-steel);color:var(--warm-paper)}
+    .colleague-panel h2{color:var(--warm-paper)}
+    .colleague-panel .lead{color:#d8d1c4}
+    .colleague-panel .section-label{color:var(--muted-sandstone)}
+    .col-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px;text-align:left}
+    .col-card{border:1px solid rgba(201,164,106,.28);padding:24px 22px;background:rgba(245,240,231,.05)}
+    .col-card h3{font-family:var(--ui);font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.86rem;margin:0 0 10px;color:var(--muted-sandstone)}
+    .col-card p{margin:0;font-family:var(--ui);font-size:.9rem;line-height:1.55;color:#ece5da}
+    .col-card p + p{margin-top:9px}
+    .col-card code{font-family:'SFMono-Regular',Consolas,monospace;font-size:.82rem;background:rgba(0,0,0,.35);padding:2px 6px;color:var(--antique-gold)}
+    .col-card a{color:var(--antique-gold)}
+
+    .callout{margin-top:30px;padding:22px 24px;background:#ece8df;border:1px solid var(--soft-line);border-left:5px solid var(--antique-gold);max-width:900px}
+    .callout strong{font-family:var(--ui);text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;color:var(--burnished-bronze);display:block;margin-bottom:8px}
+    .callout p{margin:0;font-size:.97rem;color:#3f4141}
+    .left{text-align:left}
+
+    @media(max-width:900px){
+      .flow-grid,.where-grid,.rules-grid,.col-grid{grid-template-columns:1fr}
+      .module-row{grid-template-columns:52px 1fr;row-gap:10px}
+      .module-row p{grid-column:1 / -1}
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell"><div class="inner">
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="#rhythm">How It Works</a>
+      <a href="index.html#units">Units</a>
+      <a href="teacher/index.html">Teacher Hub</a>
+    </nav>
+
+    <header class="manual-hero" id="top">
+      <div class="eyebrow">BeHistorical Instruction Manual</div>
+      <h1>How a <em>BeHistorical</em> lesson works</h1>
+      <p class="deck">Every topic in this course, Foundations through Unit 9, is built the same way: ten modules in a fixed order that move you from context, to content, to evidence, to an AP-style written response. Learn the pattern once and you know how to run any day of the year.</p>
+      <div class="manual-toc">
+        <a href="#rhythm">The daily rhythm</a>
+        <a href="#modules">The ten modules</a>
+        <a href="#work">Where your work goes</a>
+        <a href="#walkthrough">Student walkthrough</a>
+        <a href="#coach">AI Coach rules</a>
+        <a href="#colleagues">For colleagues</a>
+      </div>
+    </header>
+
+    <section id="rhythm" class="center">
+      <div class="section-label">Part 1</div>
+      <h2>Three steps, every single lesson.</h2>
+      <p class="lead">Every lesson page opens with the same Classroom Flow strip. The ten modules underneath it are just a more detailed version of these three moves, so you always know where you are in the period.</p>
+      <div class="flow-grid">
+        <div class="flow-card">
+          <span class="num">STEP 01</span>
+          <h3>Build Context</h3>
+          <p>Review the learning targets, examine the map, and read the First &amp; 10 narrative. You are answering one question here: where and when are we, and what problem did people face?</p>
+        </div>
+        <div class="flow-card">
+          <span class="num">STEP 02</span>
+          <h3>Learn &amp; Practice</h3>
+          <p>Work the module cards, then move into the lecture-card section for the content itself, the video clips, the skill builder, the evidence, and the source.</p>
+        </div>
+        <div class="flow-card">
+          <span class="num">STEP 03</span>
+          <h3>Check Understanding</h3>
+          <p>Complete the two checkpoints. Draft in the response box, run the self-check, take your draft to the AI Coach, then submit the final version where your teacher asks for it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="modules" style="background:var(--clean-paper)">
+      <div class="center">
+        <div class="section-label">Part 2</div>
+        <h2>The ten modules, in order.</h2>
+        <p class="lead">The module grid sits in the middle of every lesson page. Cards 01, 02, 04 through 08, and 10 open in a pop-out window over the page. Card 03 scrolls you down to the lecture section. Card 09 opens a simulation in a new tab.</p>
+      </div>
+
+      <div class="module-list">
+        <div class="module-row">
+          <div class="mod-num">01</div>
+          <div><h3>Map &amp; Geography Check</h3><span class="mod-kind">Pop-out</span></div>
+          <p>A map of the region with an intro, two or three notes, and one geography question. Click the map to enlarge it. Ask yourself what the land, the coastlines, and the neighbors made easy or hard for the people in charge.</p>
+        </div>
+        <div class="module-row">
+          <div class="mod-num">02</div>
+          <div><h3>First &amp; 10 Reading</h3><span class="mod-kind">Pop-out, embedded reading</span></div>
+          <p>The narrative foundation for the topic, a full reading page loaded inside the lesson. It has a "Before You Read" card, a reading target, key terms, numbered sections with AP callouts, and a ten-second takeaway.</p>
+          <p>At the bottom are <strong>exactly three questions</strong> with response boxes, then two builder buttons: one packages your three answers into a Google Form response, the other packages them into an AI Coach prompt.</p>
+        </div>
+        <div class="module-row">
+          <div class="mod-num">03</div>
+          <div><h3>Content Delivery</h3><span class="mod-kind">Jump link</span></div>
+          <p>Not a pop-out. Clicking it scrolls you to the lecture section further down the page: the lecture cards, each with bullets and an image, plus the topic's video clips with a "watch for" prompt. Click any lecture card to open it full size.</p>
+        </div>
+        <div class="module-row">
+          <div class="mod-num">04</div>
+          <div><h3>BeSurreal</h3><span class="mod-kind">Pop-out</span></div>
+          <p>One strange, human, everyday detail from the period, plus a question about it. This is the memory hook. If you can retell the BeSurreal detail a month from now, the rest of the topic tends to come back with it.</p>
+        </div>
+        <div class="module-row">
+          <div class="mod-num">05</div>
+          <div><h3>AP Skill Builder</h3><span class="mod-kind">Pop-out, draft box</span></div>
+          <p>Targeted practice on one historical thinking skill: causation, comparison, continuity and change, contextualization, or sourcing. Steps are modeled first, then you practice in the draft box.</p>
+        </div>
+        <div class="module-row">
+          <div class="mod-num">06</div>
+          <div><h3>Checkpoint 1</h3><span class="mod-kind">Pop-out, graded-style response</span></div>
+          <p>The first real write. The pop-out shows which learning target and success criteria are being checked, the focus terms you should be using, and a strong-answer checklist.</p>
+          <p>Write in the response box, then use <strong>Save Draft</strong>, <strong>Run Self-Check</strong>, <strong>Copy Response</strong>, and the submit button.</p>
+        </div>
+        <div class="module-row">
+          <div class="mod-num">07</div>
+          <div><h3>Evidence Lab</h3><span class="mod-kind">Pop-out</span></div>
+          <p>Two or three pieces of evidence with captions and a single prompt: pick one and explain what claim it supports. Click any image to enlarge it. Every image has a source link so you can see where it came from.</p>
+        </div>
+        <div class="module-row">
+          <div class="mod-num">08</div>
+          <div><h3>Primary Source, or Socrates AI Coach in Foundations</h3><span class="mod-kind">Pop-out</span></div>
+          <p>In unit topics: a short adapted source with its type, author, and date, plus a HIPP question (Historical situation, Intended audience, Purpose, Point of view). In Foundations topics this slot holds the Socrates AI Coach instead, a set of questioning prompts that push your reasoning.</p>
+        </div>
+        <div class="module-row">
+          <div class="mod-num">09</div>
+          <div><h3>BeInTheRoom</h3><span class="mod-kind">Opens in a new tab</span></div>
+          <p>A roleplay simulation built on a real decision point. You enter the room, pick a historical perspective, choose a policy, select the evidence behind it, build a position, take it to the AI Coach, then step out of character for an AP reflection.</p>
+          <p>There is no "correct" button. Every option has costs, supporters, and critics. You are graded on whether your recommendation is defended with evidence.</p>
+        </div>
+        <div class="module-row">
+          <div class="mod-num">10</div>
+          <div><h3>Checkpoint 2</h3><span class="mod-kind">Pop-out, graded-style response</span></div>
+          <p>The exit write, and the same structure as Checkpoint 1 against the rest of the topic's learning targets. This is the response most likely to be collected for a grade, so it is the one worth taking to the AI Coach before submitting.</p>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-left:auto;margin-right:auto">
+        <strong>If a card looks empty</strong>
+        <p>Pictures in this course have a backup layer. If an outside image fails to load, the page draws its own labeled artwork for that slot instead, so you should never see a blank frame. If you do, tell your teacher the topic number and the module number.</p>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="center">
+        <div class="section-label">Part 3</div>
+        <h2>Where your work actually goes.</h2>
+        <p class="lead">BeHistorical is the thinking and drafting space. It is not the gradebook. Four different things happen to what you type, and mixing them up is the most common way to lose work.</p>
+      </div>
+      <div class="where-grid">
+        <div class="where-card">
+          <h3>1. The response box</h3>
+          <p>Every draft box on the site is a plain text area. Nothing is sent anywhere while you type. Closing the pop-out does not submit anything.</p>
+        </div>
+        <div class="where-card">
+          <h3>2. Save Draft</h3>
+          <p>Saves your text in this browser, on this device, filed under this topic. Reopen the same lesson on the same computer and your draft is still there.</p>
+          <p>It does not travel. A draft saved on a school Chromebook is not on your phone or your laptop, and clearing your browser data erases it.</p>
+          <span class="flag">This device only</span>
+        </div>
+        <div class="where-card">
+          <h3>3. Submit to Google Form</h3>
+          <p>The submit buttons copy your response to the clipboard and open the class Google Form in a new tab. The unit, the topic, the specific prompt, and the AP skills are already filled in for you.</p>
+          <p>You do two things on the form: choose your class period, and paste your response into the student response field. Then submit.</p>
+          <span class="flag">Paste, pick period, submit</span>
+        </div>
+        <div class="where-card">
+          <h3>4. Canvas</h3>
+          <p>Assessed work is submitted in Canvas. Organize your thinking here, then submit your final version there. When in doubt, the note at the bottom of the pop-out tells you.</p>
+          <span class="flag">Graded work lives here</span>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-left:auto;margin-right:auto">
+        <strong>What Run Self-Check actually does</strong>
+        <p>It is not a grade and it is not an AI. It counts your words and tells you which of the checkpoint's focus terms appear in your writing. "Evidence terms found: none yet" means you have written about the topic without naming the specific evidence, which is the single most common reason an AP response loses points.</p>
+      </div>
+    </section>
+
+    <section id="walkthrough" style="background:var(--clean-paper)">
+      <div class="center">
+        <div class="section-label">Part 4</div>
+        <h2>A full lesson, start to finish.</h2>
+        <p class="lead">This is the student walkthrough. Follow it the first few times and the order becomes automatic.</p>
+      </div>
+      <div class="steps" style="margin-left:auto;margin-right:auto">
+        <div class="step">
+          <h3>Open your topic</h3>
+          <p>Start at the home page, choose your unit card, then choose the topic. Foundations 0 through 5 come before Unit 1 and teach the platform itself along with the pre-1200 background.</p>
+        </div>
+        <div class="step">
+          <h3>Read the learning targets first</h3>
+          <p>They are written as "I can" statements with the College Board key concept beside them. These are the exact claims your checkpoint responses have to prove, so read them before anything else.</p>
+        </div>
+        <div class="step">
+          <h3>Module 01, then Module 02</h3>
+          <p>Map first, reading second. Answer all three First &amp; 10 questions in the reading window, then click the build buttons to package them.</p>
+        </div>
+        <div class="step">
+          <h3>Module 03, the content</h3>
+          <p>Work the lecture cards and watch the video clips with the "watch for" prompt in front of you. Take notes on the specific evidence, names, dates, technologies, institutions, not the general story.</p>
+        </div>
+        <div class="step">
+          <h3>Modules 04 and 05</h3>
+          <p>BeSurreal for the memory hook, Skill Builder for the reasoning move the topic is teaching.</p>
+        </div>
+        <div class="step">
+          <h3>Checkpoint 1</h3>
+          <p>Write, Save Draft, Run Self-Check, fix what the self-check exposes, then submit as directed.</p>
+        </div>
+        <div class="step">
+          <h3>Modules 07, 08, and 09</h3>
+          <p>Evidence Lab, primary source with HIPP, then the BeInTheRoom simulation if your teacher has assigned it. The simulation is where the topic's tradeoffs stop being abstract.</p>
+        </div>
+        <div class="step">
+          <h3>Checkpoint 2, then the AI Coach, then submit</h3>
+          <p>Draft your exit response, copy the prompt, take it to the coach and revise, then submit the improved version. Coach first, submit second, never the other way around.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="coach">
+      <div class="center">
+        <div class="section-label">Part 5</div>
+        <h2>Using the AI Coach honestly.</h2>
+        <p class="lead">The coach is set up to ask you one question at a time and to refuse to write your answer for you. That is deliberate. The prompts the site builds for you always end with an instruction telling the coach not to write your final answer.</p>
+      </div>
+      <div class="rules-grid" style="max-width:980px;margin-left:auto;margin-right:auto">
+        <div class="rule-col yes">
+          <h3>Use it to</h3>
+          <ul>
+            <li>Pressure-test a claim you already wrote.</li>
+            <li>Find the weakest sentence in your response.</li>
+            <li>Check whether your evidence actually supports your claim.</li>
+            <li>Practice defending a position from the simulation.</li>
+            <li>Ask what a historian would say against you.</li>
+          </ul>
+        </div>
+        <div class="rule-col no">
+          <h3>Do not use it to</h3>
+          <ul>
+            <li>Generate a response you then submit as your own.</li>
+            <li>Skip the reading or the lecture cards.</li>
+            <li>Supply facts you have not verified against the lesson.</li>
+            <li>Replace the self-check or the checklist.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout" style="margin-left:auto;margin-right:auto">
+        <strong>The workflow that makes it work</strong>
+        <p>Draft in your own words, build the prompt, paste it into the coach, answer the coach's questions one at a time, then rewrite your response yourself. Every prompt the site builds carries your own writing into the coach, which is what makes the questions useful.</p>
+      </div>
+    </section>
+
+    <section id="colleagues" class="colleague-panel">
+      <div class="center">
+        <div class="section-label">Part 6</div>
+        <h2>For colleagues.</h2>
+        <p class="lead">What you need in order to teach from this, or to pick it up and edit it, in about five minutes of reading.</p>
+      </div>
+      <div class="col-grid">
+        <div class="col-card">
+          <h3>What is on disk</h3>
+          <p>A static site, no server, no build step to run a lesson. 71 AP topic lessons, 6 Foundations topics, and 61 BeInTheRoom simulations linked into their lesson pages.</p>
+          <p>Student entry point: <code>index.html</code>. Teacher entry point: <a href="teacher/index.html">teacher/index.html</a>. Project inventory: <code>docs/command-center.html</code>.</p>
+        </div>
+        <div class="col-card">
+          <h3>The one contract that matters</h3>
+          <p>Every lesson page, unit or Foundations, shows exactly ten modules in the fixed order above, plus the same three-card Classroom Flow. That is enforced by a validator, not by convention, so a lesson cannot quietly drift into a different shape.</p>
+        </div>
+        <div class="col-card">
+          <h3>Data capture</h3>
+          <p>One Google Form serves the whole course. Unit, topic, prompt ID, response type, and AP skill focus are prefilled per capture point from <code>assets/js/behistorical-form-config.js</code>. Students select their class period and paste their response.</p>
+          <p>The form is the participation and formative record. Assessed work is submitted in Canvas.</p>
+        </div>
+        <div class="col-card">
+          <h3>AI Coach</h3>
+          <p>The coach is a MagicSchool student room reached by class join code. The link is centralized, so it is changed in one place per school year rather than page by page.</p>
+        </div>
+        <div class="col-card">
+          <h3>Editing a topic</h3>
+          <p>Text, images, and videos are plain strings in one data file per topic. Swapping a video is one line. Swapping an image is one file name. The step-by-step reference is <code>docs/editing-topics.md</code>.</p>
+          <p>Two exceptions worth knowing: Units 6 and 9 are generated by build scripts, so edit the build source, not the generated file.</p>
+        </div>
+        <div class="col-card">
+          <h3>Before you push a change</h3>
+          <p>Run <code>node scripts/validate.js</code>. It checks every data file, module count, First &amp; 10 structure, skill-tag wiring, form URL, and image reference. "All checks passed" means it is safe to ship.</p>
+          <p>To also confirm that outside image links still resolve, run <code>node scripts/check-image-urls.js</code> from a network that allows Wikimedia.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:34px">
+        <a class="btn" href="index.html">Student Home</a>
+        <a class="btn" href="teacher/index.html" style="margin-left:8px">Teacher Hub</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-brand">BeHistorical</div>
+      <p>AP World History interactive eBook · Think like a historian · Read evidence, interpret change, explain significance.</p>
+    </footer>
+  </div></div>
+</body>
+</html>
