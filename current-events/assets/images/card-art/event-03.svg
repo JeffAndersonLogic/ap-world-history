@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-event-03" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A4855"/>
+      <stop offset="1" stop-color="#1F2A34"/>
+    </linearGradient>
+    <linearGradient id="v-event-03" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.45" stop-color="#14171A" stop-opacity="0"/>
+      <stop offset="1" stop-color="#14171A" stop-opacity="0.72"/>
+    </linearGradient>
+    <pattern id="grid-event-03" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#5E6D79" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g-event-03)"/>
+  <rect width="1600" height="900" fill="url(#grid-event-03)"/><g><path d="M0 270 L1600 144 L1600 558 L0 666 Z" fill="#5E6D79" fill-opacity="0.42"/><path d="M0 414 L1600 306 L1600 810 L0 900" fill="#6B7758" fill-opacity="0.46"/><path d="M832 0 L960 900" stroke="#8A9A73" stroke-width="4" stroke-dasharray="18 14" fill="none" stroke-opacity="0.9"/><path d="M0 315 Q 800 225 1600 297" stroke="#5E6D79" stroke-opacity="0.28" stroke-width="1.5" fill="none"/><path d="M0 432 Q 800 342 1600 414" stroke="#5E6D79" stroke-opacity="0.28" stroke-width="1.5" fill="none"/><path d="M0 549 Q 800 459 1600 531.0000000000001" stroke="#5E6D79" stroke-opacity="0.28" stroke-width="1.5" fill="none"/><path d="M0 666 Q 800 576 1600 648" stroke="#5E6D79" stroke-opacity="0.28" stroke-width="1.5" fill="none"/><path d="M0 783 Q 800 693 1600 765.0000000000001" stroke="#5E6D79" stroke-opacity="0.28" stroke-width="1.5" fill="none"/></g><rect width="1600" height="900" fill="url(#v-event-03)"/></svg>

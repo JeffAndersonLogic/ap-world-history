@@ -2,59 +2,206 @@
    BEHISTORICAL CURRENT EVENTS, LANDING HUB
    File: assets/css/behistorical-ce-hub.css
    Loads after behistorical-newsroom.css. Front-page layout only.
+
+   Editorial magazine layout: a full-bleed hero with a dark scrim, a split
+   feature strip, and an asymmetric card mosaic that mixes text-over-image
+   cards with plain text cards.
+
+   IMAGE CONTRACT (carried from AP World): every image slot has TWO layers,
+   generated local art underneath and an optional photograph on top with
+   onerror="this.remove()". Never style a card so it collapses without the
+   photo, and never put card artwork in a CSS custom property, because a
+   relative url() inside one resolves against this stylesheet's folder.
    ========================================================================== */
 
-/* ── Lead story ──────────────────────────────────────────────────────────── */
-.lead-story{
-  border-bottom:2px solid var(--rule-hard);
-  padding:44px 0 40px;
+/* ── Shared: the two-layer image frame ───────────────────────────────────── */
+.frame{position:relative;overflow:hidden;background:var(--archive)}
+.frame > .art,
+.frame > .photo{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;display:block;
 }
-.lead-grid{
-  display:grid;grid-template-columns:1.55fr 1fr;gap:40px;align-items:start;
+.frame > .photo{z-index:1}
+.frame > .scrim{
+  position:absolute;inset:0;z-index:2;
+  background:linear-gradient(180deg,
+    rgba(20,23,26,.20) 0%,
+    rgba(20,23,26,.42) 45%,
+    rgba(20,23,26,.86) 100%);
 }
-.lead-story h1{margin-bottom:.18em}
-.lead-story h1 em{font-style:normal;color:var(--signal)}
-.lead-meta{
-  display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:18px;
-}
-.lead-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.frame > .frame-body{position:relative;z-index:3}
 
-/* The method, drawn as the reverse ladder it actually is. */
-.lead-aside{
-  border:1px solid var(--rule);border-top:3px solid var(--signal);
-  background:#fff;padding:22px;box-shadow:var(--shadow-sm);
+/* ── Hero ────────────────────────────────────────────────────────────────── */
+.hero{
+  position:relative;
+  min-height:min(86vh,760px);
+  display:flex;align-items:flex-end;
+  padding:calc(var(--chrome-h) + 56px) 0 60px;
+  background:var(--archive);
+  overflow:hidden;
 }
-.lead-aside h2{font-size:1.15rem;margin-bottom:.5em}
-.ladder{list-style:none;margin:0;padding:0}
-.ladder li{
-  position:relative;padding:0 0 16px 30px;
-  font-size:.92rem;line-height:1.45;color:var(--charcoal);
+.hero .art,.hero .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .photo{z-index:1}
+.hero .scrim{
+  position:absolute;inset:0;z-index:2;
+  background:
+    linear-gradient(90deg, rgba(20,23,26,.86) 0%, rgba(20,23,26,.60) 52%, rgba(20,23,26,.30) 100%),
+    linear-gradient(180deg, rgba(20,23,26,.55) 0%, rgba(20,23,26,.10) 30%, rgba(20,23,26,.55) 100%);
 }
-.ladder li::before{
-  content:"";position:absolute;left:6px;top:6px;
-  width:11px;height:11px;border-radius:50%;
-  background:var(--rung);box-shadow:0 0 0 2px rgba(255,255,255,1);
+.hero-inner{position:relative;z-index:3;width:var(--measure);margin:0 auto}
+.hero-grid{
+  display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:end;
 }
-.ladder li::after{
-  content:"";position:absolute;left:11px;top:17px;bottom:0;width:2px;
-  background:linear-gradient(180deg,var(--rung),var(--rung-next,var(--archive)));
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:11px;
+  font-family:var(--mono);font-size:.66rem;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(255,255,255,.86);margin-bottom:20px;
 }
-.ladder li:last-child{padding-bottom:0}
-.ladder li:last-child::after{display:none}
-.ladder li strong{display:block;color:var(--ink);font-family:var(--display);font-size:1.02rem}
-.ladder-foot{
-  font-family:var(--mono);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--charcoal);border-top:1px solid var(--rule);margin-top:16px;padding-top:12px;
+.hero-eyebrow::before{content:"";width:32px;height:2px;background:var(--sage-lt)}
+.hero h1{
+  color:#fff;font-size:clamp(2.5rem,5.4vw,4.1rem);
+  margin:0 0 .3em;max-width:16ch;
 }
+.hero h1 em{
+  font-style:normal;
+  background-image:linear-gradient(var(--sage-lt),var(--sage-lt));
+  background-repeat:no-repeat;background-size:100% .09em;background-position:0 92%;
+}
+.hero-dek{
+  color:rgba(255,255,255,.82);font-size:clamp(1rem,1.6vw,1.16rem);
+  max-width:48ch;margin:0;
+}
+.hero-aside p{
+  color:rgba(255,255,255,.78);font-size:.96rem;line-height:1.6;
+  max-width:40ch;margin:0 0 22px;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn-quiet{color:#fff;border-color:rgba(255,255,255,.55)}
+.hero .btn-quiet:hover{background:#fff;color:var(--ink);border-color:#fff}
 
 @media (max-width:900px){
-  .lead-grid{grid-template-columns:1fr;gap:26px}
+  .hero{min-height:0;padding:calc(var(--chrome-h) + 40px) 0 44px}
+  .hero-grid{grid-template-columns:1fr;gap:30px;align-items:start}
+  .hero h1{max-width:none}
 }
 
-/* ── How a unit works ────────────────────────────────────────────────────── */
-.rhythm-grid{
-  display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:30px;
+/* ── Feature strip: sage panel + two feature cards ───────────────────────── */
+.feature-strip{
+  display:grid;grid-template-columns:1fr 1.15fr 1.15fr;
+  background:#fff;border:1px solid var(--rule);
+  margin-top:-46px;position:relative;z-index:5;
+  box-shadow:var(--shadow);
 }
+.feature-panel{
+  background:var(--sage);color:#fff;padding:30px 28px;
+  display:flex;flex-direction:column;justify-content:center;gap:12px;
+}
+.feature-panel .kicker{color:rgba(255,255,255,.8)}
+.feature-panel .kicker::before{background:rgba(255,255,255,.7)}
+.feature-panel p{margin:0;font-size:1.02rem;line-height:1.5}
+.feature-panel strong{
+  display:block;font-family:var(--display);font-weight:800;
+  font-size:1.28rem;line-height:1.2;
+}
+.feature-card{
+  padding:26px 24px;border-left:1px solid var(--rule);
+  display:flex;gap:18px;align-items:stretch;
+}
+.feature-card > div{display:flex;flex-direction:column;flex:1 1 auto}
+.feature-card .more-link{margin-top:auto;align-self:flex-start}
+.feature-thumb{
+  flex:0 0 84px;height:84px;border:1px solid var(--rule);
+}
+.feature-card .label{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--charcoal);display:block;margin-bottom:6px;
+}
+.feature-card h3{font-size:1.08rem;margin:0 0 6px;line-height:1.25}
+.feature-card p{font-size:.86rem;color:var(--charcoal);margin:0 0 12px}
+
+@media (max-width:980px){
+  .feature-strip{grid-template-columns:1fr;margin-top:-30px}
+  .feature-card{border-left:0;border-top:1px solid var(--rule)}
+}
+
+/* ── The mosaic: event cards + interleaved text cards ────────────────────── */
+.mosaic{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;margin-top:34px;
+}
+.mosaic > .span-2{grid-column:span 2}
+
+/* A card whose content sits on the artwork. */
+.photo-card{
+  position:relative;overflow:hidden;
+  min-height:290px;display:flex;align-items:flex-end;
+  text-decoration:none;color:inherit;
+  background:var(--archive);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.photo-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.photo-card .frame-body{padding:24px 22px;width:100%}
+.photo-card .eyebrow{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sage-lt);
+  display:block;margin-bottom:9px;
+}
+.photo-card h3{color:#fff;font-size:1.3rem;margin:0 0 8px;line-height:1.18}
+.photo-card p{
+  color:rgba(255,255,255,.78);font-size:.88rem;line-height:1.5;
+  margin:0 0 14px;max-width:40ch;
+}
+.photo-card.span-2{min-height:330px}
+.photo-card.span-2 h3{font-size:1.6rem;max-width:20ch}
+
+/* The trace preview, NOW to ORIGIN in one line. Lit to dark, same rule as the spine. */
+.trace-preview{
+  display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-bottom:14px;
+}
+/* On a dark card the lit-to-dark ramp would run the late chips into the
+   background and they would disappear. So on dark the chips are outlined and
+   fade by OPACITY instead of by fill: same "receding into the past" reading,
+   still legible at the origin end. */
+.trace-chip{
+  font-family:var(--mono);font-size:.55rem;letter-spacing:.09em;text-transform:uppercase;
+  padding:3px 7px;white-space:nowrap;
+  color:#fff;background:transparent;
+  border:1px solid rgba(255,255,255,.45);
+}
+.trace-arrow{font-family:var(--mono);font-size:.66rem;color:rgba(255,255,255,.55)}
+
+/* A plain text card, the light beat between the dark ones. */
+.text-card{
+  background:#fff;border:1px solid var(--rule);
+  padding:28px 24px;display:flex;flex-direction:column;gap:10px;
+  min-height:290px;
+}
+.text-card .eyebrow{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sage-ink);
+}
+.text-card h3{font-size:1.42rem;margin:0;line-height:1.16}
+.text-card p{font-size:.9rem;color:var(--charcoal);margin:0}
+.text-card .more-link{margin-top:auto;align-self:flex-start}
+
+/* Cards for events that are not open yet. */
+.photo-card[data-status="soon"]{opacity:.82}
+.photo-card[data-status="soon"] .eyebrow{color:rgba(255,255,255,.6)}
+
+@media (max-width:980px){
+  .mosaic{grid-template-columns:repeat(2,1fr)}
+  .mosaic > .span-2{grid-column:span 2}
+}
+@media (max-width:640px){
+  .mosaic{grid-template-columns:1fr}
+  .mosaic > .span-2{grid-column:span 1}
+  .photo-card,.text-card{min-height:250px}
+}
+
+/* ── How a unit works: the five-step rhythm ──────────────────────────────── */
+.rhythm-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:30px}
 .rhythm-card{
   background:#fff;border:1px solid var(--rule);margin-left:-1px;
   border-top:4px solid var(--step,var(--signal));
@@ -79,68 +226,29 @@
 }
 @media (max-width:560px){.rhythm-grid{grid-template-columns:1fr}}
 
-/* ── Event cards ─────────────────────────────────────────────────────────── */
-.events-head{
-  display:flex;justify-content:space-between;align-items:flex-end;
-  gap:20px;flex-wrap:wrap;margin-bottom:8px;
+/* ── Closing band: title left, copy and CTA right ────────────────────────── */
+.closer{
+  display:grid;grid-template-columns:1fr 1.4fr;gap:44px;align-items:center;
+  padding:8px 0;
 }
-.strand-filter{display:flex;gap:0;flex-wrap:wrap}
-
-.event-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px;
+.closer .eyebrow{
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--sage-ink);display:block;margin-bottom:10px;
 }
-.event-card{
-  display:flex;flex-direction:column;
-  background:#fff;border:1px solid var(--rule);border-top:4px solid var(--signal);
-  padding:0;text-decoration:none;color:inherit;
-  box-shadow:var(--shadow-sm);
-  transition:transform .16s ease,box-shadow .16s ease;
-}
-.event-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-.event-card:hover h3{color:var(--signal-ink)}
-.event-card-top{
-  display:flex;justify-content:space-between;align-items:center;gap:10px;
-  padding:13px 18px;border-bottom:1px solid var(--rule);background:var(--paper-2);
-}
-.event-num{
-  font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.16em;
-  color:var(--ink);
-}
-.event-strand{
-  font-family:var(--mono);font-size:.6rem;letter-spacing:.11em;text-transform:uppercase;
-  color:var(--charcoal);
-}
-.event-card-body{padding:20px 18px 22px;display:flex;flex-direction:column;flex:1 1 auto;gap:10px}
-.event-card h3{font-size:1.32rem;margin:0}
-.event-card p{font-size:.92rem;color:var(--charcoal);margin:0}
-
-/* The trace preview, NOW to ORIGIN in one line. Warm to cool, same rule as the spine. */
-.trace-preview{
-  display:flex;align-items:center;gap:6px;flex-wrap:wrap;
-  margin-top:auto;padding-top:14px;border-top:1px solid var(--rule);
-}
-.trace-chip{
-  font-family:var(--mono);font-size:.58rem;letter-spacing:.09em;text-transform:uppercase;
-  padding:3px 7px;color:#fff;background:var(--chip,var(--signal));white-space:nowrap;
-}
-.trace-arrow{font-family:var(--mono);font-size:.7rem;color:var(--charcoal)}
-
-.event-card[data-status="soon"]{border-top-color:var(--charcoal);opacity:.9}
-.event-card[data-status="soon"] .event-card-top{background:#fff}
-.event-card[data-status="soon"] .pill{border-style:dashed}
-
-@media (max-width:980px){.event-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:620px){.event-grid{grid-template-columns:1fr}}
+.closer h2{margin:0;font-size:clamp(1.9rem,3.4vw,2.7rem)}
+.closer-body{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.closer-body p{margin:0;color:var(--charcoal);font-size:.98rem;max-width:52ch;flex:1 1 320px}
+@media (max-width:860px){.closer{grid-template-columns:1fr;gap:22px}}
 
 /* ── Rails to the recurring sections ─────────────────────────────────────── */
 .rail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px}
 .rail-card{
-  background:#fff;border:1px solid var(--rule);border-left:5px solid var(--signal);
+  background:#fff;border:1px solid var(--rule);border-left:5px solid var(--sage);
   padding:22px;text-decoration:none;color:inherit;box-shadow:var(--shadow-sm);
   transition:transform .16s ease;
 }
 .rail-card:hover{transform:translateY(-3px)}
-.rail-card:hover h3{color:var(--signal-ink)}
+.rail-card:hover h3{color:var(--sage-ink)}
 .rail-card h3{font-size:1.18rem;margin:10px 0 .35em}
 .rail-card p{font-size:.9rem;color:var(--charcoal);margin:0}
 .rail-card-cool{border-left-color:var(--archive)}

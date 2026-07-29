@@ -17,9 +17,10 @@ there for review.
 | Step | Status | Where |
 |---|---|---|
 | 1. Design system | Built | `assets/css/behistorical-newsroom.css` |
-| 2. Landing Hub | Built | `index.html` |
+| 2. Landing Hub | Built, editorial photo-led layout | `index.html` |
 | 3. Event 01, the template | Built | `event-01/index.html` + `assets/data/ce-event-01-social-media.js` |
 | 4. Replicate events 02 to 06 | **Not started, awaiting review** | — |
+| Event 01 restyled to match the hub | **Not started, awaiting review** | — |
 | 5. Your Beat | Built, brief + formats + rubric + submission | `your-beat/index.html` |
 | 6. Culture Beat + Teacher Hub | Lean versions built | `culture/`, `teacher/` |
 | 7. Data hooks | Built | `assets/js/behistorical-ce-form-config.js` |
@@ -41,6 +42,8 @@ current-events/
 ├── culture/index.html        The Culture Beat rail
 ├── teacher/index.html        Pacing, data links, coach link
 ├── BUILD-SPEC.md             The brief this was built from
+├── scripts/
+│   └── build-hub-art.js      Regenerates the hub card artwork (deterministic)
 └── assets/
     ├── css/
     │   ├── behistorical-newsroom.css     Design system: tokens, type, ticker,
@@ -56,6 +59,12 @@ current-events/
     └── logos/behistorical-logo.jpeg      Shared with AP World
 ```
 
+### Commands
+
+- `node scripts/build-hub-art.js`, rebuild the hub card and hero artwork from
+  `scripts/build-hub-art.js`. Deterministic: same seed in, byte-identical SVGs
+  out, so rerunning it never churns the diff.
+
 An event page is three things: a shell, a data file, and the renderer. The shell
 holds the ticker, masthead, and empty `data-slot` containers. Everything a
 student reads comes out of the data file.
@@ -68,17 +77,56 @@ The Reverse Timeline spine, in `behistorical-newsroom.css` §10 and painted by
 `CE.paintSpine()`.
 
 One continuous vertical line carries steps 02 through 05. NOW sits at the top in
-Signal Orange and the palette cools as you scroll down toward ORIGIN. The trace
-cards get the full warm-to-cool range to themselves, because they are the part
-that is actually about time; the framing steps above and below pin to the nearest
-end. Without that, the trace would only ever use the muddy middle of the range.
+bright gunmetal and the palette darkens as you scroll down toward ORIGIN. The
+trace cards get the full range to themselves, because they are the part that is
+actually about time; the framing steps above and below pin to the nearest end.
+Without that, the trace would only ever use the muddy middle of the range.
 
 Two rules worth keeping:
 
-- **NOW is warm, THEN is cool.** The gradient carries meaning, so do not use
-  `--signal` for anything historical or `--archive` for anything current.
+- **NOW is lit, THEN is dark.** The palette is gunmetal grey throughout, so the
+  gradient carries its meaning through value rather than temperature: the present
+  is bright steel and the past darkens into the archive. Do not use `--signal`
+  for anything historical or `--archive` for anything current.
+- **`--signal` is a fill, not a text colour.** It carries white text at 5.3:1.
+  For accent text on paper use `--signal-ink`. Lightening `--signal` breaks the
+  era tags.
+- **Sage is the accent, gunmetal is the structure.** `--sage` carries feature
+  panels, primary buttons, and eyebrow rules. It never touches the spine
+  gradient, which stays pure steel-to-archive so the lit-to-dark reading of time
+  is not muddied by a second hue.
 - **`trace[]` runs newest first.** The array order is the pedagogy. The gradient
   re-spaces itself for any number of cards.
+
+---
+
+## The hub layout, and the Image Contract
+
+The front page is an editorial magazine layout: a full-bleed hero with a dark
+scrim, a split feature strip that overlaps the hero, and an asymmetric mosaic
+mixing text-over-artwork cards with plain text cards.
+
+It is photography-led by design, but **it currently ships with zero
+photographs**, and it still looks finished. That is the Image Contract, carried
+over from AP World:
+
+- **Local artwork is the floor.** `assets/images/card-art/` holds a generated,
+  on-topic SVG for the hero and for all six event cards. No empty frames, ever.
+- **Every image slot has two layers.** The generated `.art` underneath, and an
+  optional `.photo` on top carrying `onerror="this.remove()"`. To add real
+  photography, uncomment the `.photo` line in a card and point it at a URL. If
+  that URL ever dies, the photo layer removes itself and the artwork underneath
+  carries the card. Nothing collapses.
+- **Generated SVGs carry `width` and `height`.** A `viewBox` alone leaves the
+  intrinsic size undefined and the `<img>` gets stretched by its container.
+- **Never put card artwork in a CSS custom property.** A relative `url()` inside
+  one resolves against the stylesheet's folder, not the page, so local paths
+  silently 404.
+
+The masthead floats transparently over the hero and turns solid once you scroll
+past it. That is driven by `class="has-hero"` on `<body>` plus `wireMasthead()`.
+With JS blocked the masthead simply stays in overlay mode, which still reads
+because the hero behind it is always dark.
 
 ---
 

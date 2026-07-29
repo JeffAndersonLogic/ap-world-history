@@ -26,29 +26,57 @@
 
 /* ── 1. Tokens ───────────────────────────────────────────────────────────── */
 :root{
-  /* The five named values. NOW is warm, THEN is cool. */
-  --ink:       #1A1A1A;   /* masthead, headlines, primary text */
-  --newsprint: #FAFAF7;   /* page background, clean off-white */
-  --signal:    #FF6A13;   /* THE accent: ticker, NOW, live markers, spine top */
-  --charcoal:  #3D4451;   /* secondary text, hairline rules, datelines */
-  --archive:   #2C3E50;   /* the past/origin cool tone, spine bottom, THEN */
+  /*
+     The five named values. Gunmetal grey desk.
+
+     THE GRADIENT STILL CARRIES THE MEANING, it just runs on value instead of
+     temperature. NOW is bright steel at the top of the spine and the past
+     darkens as you descend, until the ORIGIN is nearly black. Present is lit,
+     history fades into the archive. Same pedagogy, no orange.
+
+     Every value below clears WCAG AA against the surface it is used on:
+     --signal carries white text at 5.3:1, --charcoal sits on --newsprint at
+     5.4:1, and --signal-ink is the darkened variant for accent text on paper.
+     Do not lighten --signal without rechecking the era tags.
+  */
+  --ink:       #14171A;   /* masthead, headlines, primary text */
+  --newsprint: #F2F2EE;   /* page background, warm off-white */
+  --signal:    #5E6D79;   /* THE accent: ticker, NOW, live markers, spine top */
+  --charcoal:  #5A6169;   /* secondary text, hairline rules, datelines */
+  --archive:   #1F2A34;   /* the past/origin deep tone, spine bottom, THEN */
+
+  /*
+     Sage, the editorial accent. Gunmetal is the structure; sage is the warmth,
+     used for feature panels, primary buttons, and eyebrow rules. It never
+     carries the spine gradient, which stays pure steel-to-archive so the
+     lit-to-dark reading of time is not muddied by a second hue.
+     --sage holds white text at 4.7:1. --sage-ink is the on-paper text variant.
+  */
+  --sage:      #6B7758;
+  --sage-deep: #4C5540;
+  --sage-lt:   #8A9A73;
+  --sage-ink:  #4F5A3E;
+  --sage-wash: rgba(107,119,88,.14);
 
   /* Derived surfaces. Nothing new, just the five values at other strengths. */
-  --paper-2:    #F2F1EC;
-  --rule:       rgba(61,68,81,.20);
-  --rule-hard:  rgba(26,26,26,.88);
-  --signal-ink: #B8430A;                  /* signal, darkened for text on paper (AA) */
-  --signal-wash:rgba(255,106,19,.10);
-  --archive-wash:rgba(44,62,80,.07);
-  --shadow:     0 18px 44px rgba(26,26,26,.13);
-  --shadow-sm:  0 6px 18px rgba(26,26,26,.10);
+  --paper-2:    #E8E8E2;
+  --rule:       rgba(90,97,105,.22);
+  --rule-hard:  rgba(20,23,26,.88);
+  --signal-ink: #4A5762;                  /* signal, darkened for text on paper (AA) */
+  --signal-wash:rgba(94,109,121,.12);
+  --archive-wash:rgba(31,42,52,.07);
+  --shadow:     0 18px 44px rgba(20,23,26,.13);
+  --shadow-sm:  0 6px 18px rgba(20,23,26,.10);
 
-  /* Type roles */
-  --display: "Archivo", "Saira Condensed", "Libre Franklin", "Arial Narrow",
-             Helvetica, Arial, sans-serif;
-  --body:    "Inter", "Source Sans 3", -apple-system, BlinkMacSystemFont,
+  /* Type roles.
+     Display is Newsreader, a serif drawn for news: editorial weight without
+     the shoutiness of a condensed grotesque, which is what steel grey wants.
+     Body is Source Sans 3, easier over long paragraphs than Inter.
+     Utility stays mono for the wire-feed texture. */
+  --display: "Newsreader", "Source Serif 4", Georgia, "Times New Roman", serif;
+  --body:    "Source Sans 3", "Inter", -apple-system, BlinkMacSystemFont,
              "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --read:    "Source Serif 4", Georgia, "Times New Roman", serif;
+  --read:    "Newsreader", Georgia, "Times New Roman", serif;
   --mono:    "IBM Plex Mono", "Space Mono", ui-monospace, SFMono-Regular,
              Menlo, Consolas, monospace;
 
@@ -81,12 +109,12 @@ img{max-width:100%;display:block}
 a{color:var(--signal-ink)}
 a:hover{color:var(--signal)}
 
-/* Display, the condensed news grotesque. Loud, tight, sentence case. */
+/* Display, the news serif. Editorial weight, tight, sentence case. */
 h1,h2,h3,h4,.display{
   font-family:var(--display);
   font-weight:800;
-  line-height:1.04;
-  letter-spacing:-.015em;
+  line-height:1.08;          /* a serif needs a little more air than a grotesque */
+  letter-spacing:-.01em;
   margin:0 0 .4em;
   text-wrap:balance;
 }
@@ -194,6 +222,44 @@ p{margin:0 0 1.05em}
   height:var(--masthead-h);
   background:var(--newsprint);
   border-bottom:2px solid var(--rule-hard);
+  transition:background .25s ease,border-color .25s ease,color .25s ease;
+}
+
+/*
+   Overlay mode. On a page with a full-bleed photo hero the masthead sits ON the
+   image, transparent with light type, and turns solid once you scroll past it.
+   The JS adds .is-solid; with JS blocked the masthead simply stays transparent
+   over the hero, which still reads correctly because the hero is always dark.
+*/
+body.has-hero{padding-top:0}
+body.has-hero .masthead{
+  background:transparent;border-bottom-color:transparent;
+}
+body.has-hero .masthead .masthead-wordmark,
+body.has-hero .masthead .masthead-brand{color:#fff}
+body.has-hero .masthead .masthead-wordmark > span:first-of-type{color:var(--sage-lt)}
+body.has-hero .masthead .masthead-sub,
+body.has-hero .masthead .masthead-dateline,
+body.has-hero .masthead-nav a{color:rgba(255,255,255,.82)}
+body.has-hero .masthead-dateline{border-left-color:rgba(255,255,255,.28)}
+body.has-hero .masthead-brand img{border-color:rgba(255,255,255,.35)}
+body.has-hero .masthead-nav a:hover,
+body.has-hero .masthead-nav a[aria-current="page"]{
+  color:#fff;border-bottom-color:var(--sage-lt);
+}
+
+body.has-hero .masthead.is-solid{
+  background:var(--newsprint);border-bottom-color:var(--rule-hard);
+}
+body.has-hero .masthead.is-solid .masthead-wordmark,
+body.has-hero .masthead.is-solid .masthead-brand{color:var(--ink)}
+body.has-hero .masthead.is-solid .masthead-sub,
+body.has-hero .masthead.is-solid .masthead-dateline,
+body.has-hero .masthead.is-solid .masthead-nav a{color:var(--charcoal)}
+body.has-hero .masthead.is-solid .masthead-dateline{border-left-color:var(--rule)}
+body.has-hero .masthead.is-solid .masthead-nav a:hover,
+body.has-hero .masthead.is-solid .masthead-nav a[aria-current="page"]{
+  color:var(--ink);border-bottom-color:var(--sage);
 }
 .masthead-inner{
   width:var(--measure);margin:0 auto;height:100%;
@@ -260,6 +326,22 @@ p{margin:0 0 1.05em}
 .btn-quiet{background:transparent;color:var(--ink)}
 .btn-quiet:hover{background:var(--ink);border-color:var(--ink);color:var(--newsprint)}
 .btn-sm{font-size:.86rem;padding:9px 15px}
+.btn-sage{background:var(--sage);border-color:var(--sage);color:#fff}
+.btn-sage:hover{background:var(--sage-deep);border-color:var(--sage-deep);color:#fff}
+
+/* The tiny letterspaced affordance the editorial layout runs on: READ MORE + */
+.more-link{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:var(--mono);font-size:.62rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--sage-ink);text-decoration:none;
+  padding-bottom:3px;border-bottom:1px solid currentColor;
+}
+.more-link::after{content:"+";font-size:.9rem;line-height:0;transition:transform .16s ease}
+.more-link:hover{color:var(--ink)}
+.more-link:hover::after{transform:translateX(3px)}
+.more-link-light{color:rgba(255,255,255,.88)}
+.more-link-light:hover{color:#fff}
 
 /* ── 7. Section furniture ────────────────────────────────────────────────── */
 .wrap{width:var(--measure);margin:0 auto}
@@ -347,8 +429,8 @@ p{margin:0 0 1.05em}
 
 /* ── 10. THE REVERSE TIMELINE SPINE ──────────────────────────────────────── */
 /*
-   NOW at the top in Signal Orange. Scroll down to walk backward in time; the
-   palette cools toward ORIGIN. The structure is the pedagogy, so the line is
+   NOW at the top in bright gunmetal. Scroll down to walk backward in time; the
+   palette darkens toward ORIGIN. The structure is the pedagogy, so the line is
    one continuous element that every step and every trace card hangs from.
 */
 .spine{
@@ -362,10 +444,12 @@ p{margin:0 0 1.05em}
 }
 .spine::before{
   content:"";position:absolute;left:29px;top:0;bottom:0;width:4px;
+  /* Interpolated from --signal to --archive. If you change either token, these
+     two middle stops have to move with them. */
   background:linear-gradient(180deg,
     var(--signal)  0%,
-    #E0632B       26%,
-    #8E5A56       58%,
+    #4E5C67       26%,
+    #394651       58%,
     var(--archive) 88%,
     var(--archive)100%);
 }
@@ -395,7 +479,7 @@ p{margin:0 0 1.05em}
   color:var(--charcoal);display:block;margin-top:2px;font-weight:400;
 }
 
-/* Anything hanging off the spine. --node carries this item's interpolated color. */
+/* Anything hanging off the spine. --node carries this item's interpolated value. */
 .spine-item{
   --node:var(--signal);
   position:relative;

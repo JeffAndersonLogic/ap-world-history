@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-event-04" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A4855"/>
+      <stop offset="1" stop-color="#1F2A34"/>
+    </linearGradient>
+    <linearGradient id="v-event-04" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.45" stop-color="#14171A" stop-opacity="0"/>
+      <stop offset="1" stop-color="#14171A" stop-opacity="0.72"/>
+    </linearGradient>
+    <pattern id="grid-event-04" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#5E6D79" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g-event-04)"/>
+  <rect width="1600" height="900" fill="url(#grid-event-04)"/><g fill="none"><circle cx="480" cy="504.00000000000006" r="128" stroke="#6B7758" stroke-opacity="0.55" stroke-width="2.5"/><circle cx="480" cy="504.00000000000006" r="248" stroke="#6B7758" stroke-opacity="0.49" stroke-width="2.5"/><circle cx="480" cy="504.00000000000006" r="368" stroke="#6B7758" stroke-opacity="0.43" stroke-width="2.5"/><circle cx="480" cy="504.00000000000006" r="488" stroke="#5E6D79" stroke-opacity="0.37" stroke-width="2.5"/><circle cx="480" cy="504.00000000000006" r="608" stroke="#5E6D79" stroke-opacity="0.31" stroke-width="2.5"/><circle cx="480" cy="504.00000000000006" r="728" stroke="#5E6D79" stroke-opacity="0.25" stroke-width="2.5"/><path d="M0 720 L544 720 L736 522 L1248 522 L1408 324 L1600 324" stroke="#8A9A73" stroke-width="7" stroke-opacity="0.85"/><circle cx="480" cy="504.00000000000006" r="11" fill="#8A9A73"/></g><rect width="1600" height="900" fill="url(#v-event-04)"/></svg>

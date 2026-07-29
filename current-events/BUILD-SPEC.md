@@ -89,24 +89,32 @@ Every event page runs the same five steps, so students learn one repeatable meth
 **Concept:** a wire-service newsroom. Where AP World is the archive, Current Events is the **live desk**.
 
 ### Signature element
-**The Reverse Timeline spine.** A vertical spine that anchors every event page. **NOW sits at the top in Signal Orange; scrolling down walks *backward* through time toward the ORIGIN, and the palette cools as you descend** (warm = present, cool = past). The structure *is* the pedagogy.
+**The Reverse Timeline spine.** A vertical spine that anchors every event page. **NOW sits at the top in bright gunmetal; scrolling down walks *backward* through time toward the ORIGIN, and the palette darkens as you descend** (lit = present, dark = past). The structure *is* the pedagogy.
 
 ### Color tokens
 
+> **Revised 2026-07-29.** The original brief called for a bright wire-service
+> orange. Jeff asked for gunmetal grey instead, so the accent changed and the
+> gradient was re-cut to run on **value** rather than temperature. The pedagogy
+> is unchanged: the top of the spine is still the present, the bottom is still
+> the origin.
+
 ```
---ink:        #1A1A1A   /* masthead, headlines, primary text */
---newsprint:  #FAFAF7   /* page background — clean off-white, not cream */
---signal:     #FF6A13   /* THE accent: ticker, "NOW", live markers, spine top */
---charcoal:   #3D4451   /* secondary text, hairline rules, datelines */
---archive:    #2C3E50   /* the "past/origin" cool tone — spine bottom, THEN markers */
+--ink:        #14171A   /* masthead, headlines, primary text */
+--newsprint:  #F6F7F7   /* page background — cool off-white, not cream */
+--signal:     #5E6D79   /* THE accent: ticker, "NOW", live markers, spine top */
+--charcoal:   #5A6169   /* secondary text, hairline rules, datelines */
+--archive:    #1F2A34   /* the "past/origin" deep tone — spine bottom, THEN markers */
 ```
 
-Rule of thumb: **NOW is warm (`--signal`), THEN is cool (`--archive`).**
+Rule of thumb: **NOW is lit (`--signal`), THEN is dark (`--archive`).**
 
 ### Typography (3 roles)
-- **Display (headlines):** a condensed news grotesque — *Archivo* / *Saira Condensed* / *Libre Franklin*.
-- **Body (reading):** *Inter* or *Source Sans*. Optional serif (*Source Serif*) for long reads.
-- **Utility (datelines, ticker, timestamps):** *IBM Plex Mono* or *Space Mono*.
+- **Display (headlines):** *Newsreader*, a serif drawn for news. Revised
+  2026-07-29 from the original condensed-grotesque direction: steel grey wants
+  editorial weight rather than shoutiness.
+- **Body (reading):** *Source Sans 3*, easier over long paragraphs than Inter.
+- **Utility (datelines, ticker, timestamps):** *IBM Plex Mono*.
 
 Provide web-safe fallbacks for all three.
 
@@ -140,7 +148,7 @@ Newsroom-plain, active voice, sentence case. Buttons say exactly what they do. E
 │     [ CNN 10 clip ]   [ The Week read → ]                       │
 │     Prompt: what's the argument *today*?                        │
 │                                                                 │
-│  ══ REVERSE TIMELINE SPINE (NOW ▲ orange … cool ▼ ORIGIN) ══    │
+│  ══ REVERSE TIMELINE SPINE (NOW ▲ steel … dark ▼ ORIGIN) ══     │
 │                                                                 │
 │  02 · WHERE IN THE WORLD   (locator + scale)                    │
 │  03 · THE TRACE            (reverse cards: NOW → … → ORIGIN)     │

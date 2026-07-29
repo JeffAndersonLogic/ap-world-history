@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-event-01" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A4855"/>
+      <stop offset="1" stop-color="#1F2A34"/>
+    </linearGradient>
+    <linearGradient id="v-event-01" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.45" stop-color="#14171A" stop-opacity="0"/>
+      <stop offset="1" stop-color="#14171A" stop-opacity="0.72"/>
+    </linearGradient>
+    <pattern id="grid-event-01" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#5E6D79" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g-event-01)"/>
+  <rect width="1600" height="900" fill="url(#grid-event-01)"/><g stroke="#5E6D79" stroke-opacity="0.5" stroke-width="2" fill="none"><line x1="256.0" y1="198.0" x2="480.0" y2="126.0"/><line x1="256.0" y1="198.0" x2="384.0" y2="396.0"/><line x1="480.0" y1="126.0" x2="704.0" y2="234.0"/><line x1="480.0" y1="126.0" x2="384.0" y2="396.0"/><line x1="704.0" y1="234.0" x2="928.0" y2="144.0"/><line x1="704.0" y1="234.0" x2="640.0" y2="468.0"/><line x1="704.0" y1="234.0" x2="896.0" y2="396.0"/><line x1="928.0" y1="144.0" x2="1152.0" y2="252.0"/><line x1="928.0" y1="144.0" x2="896.0" y2="396.0"/><line x1="1152.0" y1="252.0" x2="1376.0" y2="180.0"/><line x1="1152.0" y1="252.0" x2="896.0" y2="396.0"/><line x1="1152.0" y1="252.0" x2="1184.0" y2="486.0"/><line x1="384.0" y1="396.0" x2="640.0" y2="468.0"/><line x1="384.0" y1="396.0" x2="544.0" y2="648.0"/><line x1="640.0" y1="468.0" x2="896.0" y2="396.0"/><line x1="640.0" y1="468.0" x2="544.0" y2="648.0"/><line x1="896.0" y1="396.0" x2="1184.0" y2="486.0"/><line x1="896.0" y1="396.0" x2="992.0" y2="630.0"/><line x1="1184.0" y1="486.0" x2="992.0" y2="630.0"/><line x1="544.0" y1="648.0" x2="768.0" y2="774.0"/><line x1="992.0" y1="630.0" x2="768.0" y2="774.0"/></g><g><circle cx="256.0" cy="198.0" r="13" fill="#8A9A73" fill-opacity="0.95"/><circle cx="480.0" cy="126.0" r="8" fill="#8A9A73" fill-opacity="0.95"/><circle cx="704.0" cy="234.0" r="8" fill="#8A9A73" fill-opacity="0.95"/><circle cx="928.0" cy="144.0" r="13" fill="#8A9A73" fill-opacity="0.95"/><circle cx="1152.0" cy="252.0" r="8" fill="#8A9A73" fill-opacity="0.95"/><circle cx="1376.0" cy="180.0" r="8" fill="#8A9A73" fill-opacity="0.95"/><circle cx="384.0" cy="396.0" r="13" fill="#6B7758" fill-opacity="0.7"/><circle cx="640.0" cy="468.0" r="8" fill="#6B7758" fill-opacity="0.7"/><circle cx="896.0" cy="396.0" r="8" fill="#6B7758" fill-opacity="0.7"/><circle cx="1184.0" cy="486.0" r="13" fill="#6B7758" fill-opacity="0.7"/><circle cx="544.0" cy="648.0" r="8" fill="#6B7758" fill-opacity="0.7"/><circle cx="992.0" cy="630.0" r="8" fill="#6B7758" fill-opacity="0.7"/><circle cx="768.0" cy="774.0" r="13" fill="#6B7758" fill-opacity="0.7"/></g><rect width="1600" height="900" fill="url(#v-event-01)"/></svg>

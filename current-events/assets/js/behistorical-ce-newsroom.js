@@ -33,12 +33,12 @@
   }
 
   /**
-   * The gradient that carries the meaning: warm present, cool past.
+   * The gradient that carries the meaning: lit present, dark past.
    * i = 0 is NOW (--signal), i = total - 1 is ORIGIN (--archive).
    */
   function spineColor(i, total) {
-    var a = hexToRgb(token('--signal', '#FF6A13'));
-    var b = hexToRgb(token('--archive', '#2C3E50'));
+    var a = hexToRgb(token('--signal', '#5E6D79'));
+    var b = hexToRgb(token('--archive', '#1F2A34'));
     var t = total > 1 ? i / (total - 1) : 0;
     var mix = a.map(function (c, k) { return Math.round(c + (b[k] - c) * t); });
     return 'rgb(' + mix.join(',') + ')';
@@ -49,8 +49,8 @@
    *
    * The trace cards get the whole gradient to themselves, NOW to ORIGIN, because
    * they are the part that is actually about time. The framing steps around them
-   * pin to the nearest end: everything above the trace stays warm, everything
-   * below it stays cool. Without this the trace would only ever use the middle
+   * pin to the nearest end: everything above the trace stays bright, everything
+   * below it stays dark. Without this the trace would only ever use the middle
    * of the range and the signature element would read as muddy.
    */
   function paintSpine(root) {
@@ -73,13 +73,13 @@
 
     var first = traceIdx[0];
     var last  = traceIdx[traceIdx.length - 1];
-    var warm  = spineColor(0, 2);          // pure --signal
-    var cool  = spineColor(1, 2);          // pure --archive
+    var lit  = spineColor(0, 2);           // pure --signal
+    var dark = spineColor(1, 2);           // pure --archive
 
     items.forEach(function (el, i) {
       var c;
-      if (i < first)      c = warm;
-      else if (i > last)  c = cool;
+      if (i < first)      c = lit;
+      else if (i > last)  c = dark;
       else                c = spineColor(traceIdx.indexOf(i), traceIdx.length);
       el.style.setProperty('--node', c);
     });
@@ -181,6 +181,34 @@
            allBtns[0].getAttribute('data-scale'));
   }
 
+  /* ── masthead over a full-bleed hero ───────────────────────────────────── */
+  /*
+     On a page with class="has-hero" the masthead floats transparently over the
+     hero image and turns solid once the hero has scrolled past. Purely visual:
+     without this the masthead stays in overlay mode, which still reads fine
+     because the hero behind it is always dark.
+  */
+  function wireMasthead() {
+    if (!document.body.classList.contains('has-hero')) return;
+    var bar  = document.querySelector('.masthead');
+    var hero = document.querySelector('.hero');
+    if (!bar || !hero) return;
+
+    var ticking = false;
+    function update() {
+      ticking = false;
+      var trigger = hero.offsetHeight - bar.offsetHeight - 40;
+      bar.classList.toggle('is-solid', window.scrollY > trigger);
+    }
+    window.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(update);
+    }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
   /* ── dateline ──────────────────────────────────────────────────────────── */
   function wireDateline() {
     var el = document.querySelector('[data-dateline]');
@@ -208,6 +236,7 @@
 
   function boot() {
     wireTicker();
+    wireMasthead();
     wireDateline();
     wireScaleRail(document);
     paintSpine(document);
