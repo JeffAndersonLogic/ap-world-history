@@ -1,0 +1,15 @@
+# BeHistorical Current Events deploys as its own Netlify project from this
+# subdirectory. No build step: the site is static HTML, CSS, and vanilla JS.
+#
+# In the Netlify UI set the project's base directory to "current-events".
+# These paths are then relative to that base.
+
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
