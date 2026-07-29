@@ -42,6 +42,7 @@ current-events/
 ├── culture/index.html        The Culture Beat rail
 ├── teacher/index.html        Pacing, data links, coach link
 ├── BUILD-SPEC.md             The brief this was built from
+├── DESIGN-HANDOFF.md         The settled look, as a paste-in prompt for a new session
 ├── scripts/
 │   └── build-hub-art.js      Regenerates the hub card artwork (deterministic)
 └── assets/
@@ -61,9 +62,13 @@ current-events/
 
 ### Commands
 
-- `node scripts/build-hub-art.js`, rebuild the hub card and hero artwork from
-  `scripts/build-hub-art.js`. Deterministic: same seed in, byte-identical SVGs
-  out, so rerunning it never churns the diff.
+- `node scripts/check-design.js`, drive real Chromium and audit what actually
+  renders: the fold budget, the colour ramps, the orange rule, contrast on every
+  text run, reduced motion, focus order and internal links. Add `--shots DIR` for
+  screenshots. Skips cleanly if Playwright is absent. **Run this before pushing
+  anything visual.**
+- `node scripts/build-hub-art.js`, rebuild the hub card artwork. Deterministic:
+  same seed in, byte-identical SVGs out, so rerunning never churns the diff.
 
 An event page is three things: a shell, a data file, and the renderer. The shell
 holds the ticker, masthead, and empty `data-slot` containers. Everything a
@@ -72,6 +77,10 @@ student reads comes out of the data file.
 ---
 
 ## Design direction
+
+The settled look is written up as a paste-in prompt in **`DESIGN-HANDOFF.md`**.
+Start a new session with that file rather than re-deriving the system from here.
+
 
 Set 2026-07-29 after a five-persona design council reviewed three candidate
 layouts. The council scored the spine-led broadsheet at 7.4/10 and the
