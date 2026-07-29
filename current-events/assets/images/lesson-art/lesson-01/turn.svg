@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-turn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2EEE4"/>
+      <stop offset="1" stop-color="#E4DFD3"/>
+    </linearGradient>
+    <pattern id="grid-turn" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#4A555D" stroke-opacity="0.13" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatch-turn" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#4A555D" stroke-opacity="0.10" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g-turn)"/>
+  <rect width="1600" height="900" fill="url(#hatch-turn)"/>
+  <rect width="1600" height="900" fill="url(#grid-turn)"/><g fill="none"><circle cx="208.0" cy="450" r="30" stroke="#4A555D" stroke-width="6" stroke-opacity="0.55" /><line x1="242.0" y1="450" x2="410.8" y2="450" stroke="#4A555D" stroke-width="5" stroke-opacity="0.4"/><circle cx="444.8" cy="450" r="40" stroke="#FF6A13" stroke-width="9" stroke-opacity="1" stroke-dasharray="16 12"/><line x1="478.8" y1="450" x2="647.6" y2="450" stroke="#4A555D" stroke-width="5" stroke-opacity="0.4"/><circle cx="681.6" cy="450" r="30" stroke="#4A555D" stroke-width="6" stroke-opacity="0.55" /><line x1="715.6" y1="450" x2="884.4" y2="450" stroke="#4A555D" stroke-width="5" stroke-opacity="0.4"/><circle cx="918.4" cy="450" r="30" stroke="#4A555D" stroke-width="6" stroke-opacity="0.55" /><line x1="952.4" y1="450" x2="1121.2" y2="450" stroke="#4A555D" stroke-width="5" stroke-opacity="0.4"/><circle cx="1155.2" cy="450" r="40" stroke="#FF6A13" stroke-width="9" stroke-opacity="1" stroke-dasharray="16 12"/><line x1="1189.2" y1="450" x2="1358.0" y2="450" stroke="#4A555D" stroke-width="5" stroke-opacity="0.4"/><circle cx="1392.0" cy="450" r="30" stroke="#4A555D" stroke-width="6" stroke-opacity="0.55" /><path d="M1408 270 Q 800 126.00000000000001 208 270" stroke="#FF6A13" stroke-width="8"/><path d="M208 270 l 46 -30 M208 270 l 46 32" stroke="#FF6A13" stroke-width="8"/></g></svg>

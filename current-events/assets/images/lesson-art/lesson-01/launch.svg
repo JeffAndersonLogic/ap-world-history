@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-launch" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2EEE4"/>
+      <stop offset="1" stop-color="#E4DFD3"/>
+    </linearGradient>
+    <pattern id="grid-launch" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#4A555D" stroke-opacity="0.13" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatch-launch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#4A555D" stroke-opacity="0.10" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g-launch)"/>
+  <rect width="1600" height="900" fill="url(#hatch-launch)"/>
+  <rect width="1600" height="900" fill="url(#grid-launch)"/><g fill="none"><rect x="500" y="258" width="600" height="420" rx="10" stroke="#232C33" stroke-width="9"/><rect x="708" y="236" width="184" height="46" rx="8" stroke="#FF6A13" stroke-width="9" fill="#FF6A13" fill-opacity="0.16"/><rect x="704" y="352" width="192" height="330" rx="20" stroke="#4A555D" stroke-width="7" stroke-opacity="0.85"/><line x1="760" y1="376" x2="840" y2="376" stroke="#4A555D" stroke-width="6" stroke-opacity="0.5"/><line x1="500" y1="682" x2="1100" y2="682" stroke="#4A555D" stroke-opacity="0.30" stroke-width="4"/><line x1="454" y1="716" x2="1146" y2="716" stroke="#4A555D" stroke-opacity="0.24" stroke-width="4"/><line x1="408" y1="750" x2="1192" y2="750" stroke="#4A555D" stroke-opacity="0.18" stroke-width="4"/><line x1="362" y1="784" x2="1238" y2="784" stroke="#4A555D" stroke-opacity="0.12" stroke-width="4"/></g></svg>

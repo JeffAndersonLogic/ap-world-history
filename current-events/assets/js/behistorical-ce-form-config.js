@@ -45,7 +45,7 @@ window.CE_FORM = {
   },
 
   events: {
-    '01': 'Event 01 - The Rise of Social Media',
+    'lesson-01': 'Lesson 01 - The Ban in Your Locker',
     '02': 'Event 02 - The White-Collar Shock',
     '03': 'Event 03 - Israel and Palestine',
     '04': 'Event 04 - Iran',
@@ -55,21 +55,24 @@ window.CE_FORM = {
   },
 
   steps: {
-    '01': '01 - The Brief',
-    '02': '02 - Where in the World',
-    '03': '03 - The Trace',
-    '04': '04 - Evidence Lab',
-    '05': '05 - Your Beat Checkpoint'
+    '1': '01 - Launch',
+    '2': '02 - The Rule That Did Not Work',
+    '3': '03 - National Momentum',
+    '4': '04 - Evidence Anchor',
+    '5': '05 - The 2012 Inflection',
+    '6': '06 - The Origin',
+    '7': '07 - The Turn',
+    '8': '08 - You Do'
   },
 
   /**
    * Build a pre-filled Google Form URL.
    *
    *   CE_FORM.prefill({
-   *     event: '01',
-   *     step: '05',
-   *     promptId: 'event-01-step-05',
-   *     responseType: 'Your Beat Checkpoint',
+   *     event: 'lesson-01',
+   *     step: '7',
+   *     promptId: 'lesson-01-step-7',
+   *     responseType: 'The Turn',
    *     skillFocus: ['Causation', 'Sourcing']
    *   })
    *
@@ -101,7 +104,7 @@ window.CE_FORM = {
    *
    *   <button class="btn" data-ce-form
    *           data-event="01" data-step="05"
-   *           data-prompt-id="event-01-step-05"
+   *           data-prompt-id="lesson-01-step-7"
    *           data-response-type="Your Beat Checkpoint"
    *           data-skills="Causation|Sourcing">Submit your beat</button>
    */

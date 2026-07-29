@@ -11,63 +11,76 @@ Static HTML, CSS, and vanilla JS. No build step, no dependencies. Open
 
 ## What is built
 
-Per `BUILD-SPEC.md` §10, steps 1 through 3 are complete and the build pauses
-there for review.
+Lesson 1 is complete and is the model every later lesson copies.
 
-| Step | Status | Where |
+| Piece | Status | Where |
 |---|---|---|
-| 1. Design system | Built | `assets/css/behistorical-newsroom.css` |
-| 2. Landing Hub | Built, spine-led newsprint broadsheet | `index.html` |
-| 3. Event 01, the template | Built | `event-01/index.html` + `assets/data/ce-event-01-social-media.js` |
-| 4. Replicate events 02 to 06 | **Not started, awaiting review** | — |
+| Design system | Built | `assets/css/behistorical-newsroom.css` |
+| Lesson page furniture | Built | `assets/css/behistorical-ce-lesson.css` |
+| Landing hub | Built, spine-led newsprint broadsheet | `index.html` |
+| **Lesson 1, the copy-me model** | **Built** | `lesson-01/` + `assets/data/ce-lesson-01-*.js` |
+| Teacher orientation, flags, coach sets | Built | `teacher/lesson-01-orientation.html` |
+| Your Beat | Built, brief + formats + rubric + submission | `your-beat/index.html` |
+| Culture Beat + Teacher Hub | Lean versions built | `culture/`, `teacher/` |
+| Data hooks | Built, 7 capture points | `assets/js/behistorical-ce-form-config.js` |
+| Events 02 to 06 | Not started | hub cards are inert, each states its week |
 
-| 5. Your Beat | Built, brief + formats + rubric + submission | `your-beat/index.html` |
-| 6. Culture Beat + Teacher Hub | Lean versions built | `culture/`, `teacher/` |
-| 7. Data hooks | Built | `assets/js/behistorical-ce-form-config.js` |
-| 8. Quality pass | Partial, see Open items | — |
+Lesson pages follow the **AP World lesson architecture**, not the five-step
+event rhythm that shipped first. A lesson page is a thin shell plus a data file
+plus a renderer-config file plus `assets/js/behistorical-ce-lesson-renderer.js`,
+exactly like `unit-1/lesson-1-1-song-china.html` in the parent repo. The
+superseded five-step event and its renderer are in `archive/`.
 
-Steps 5 and 6 shipped ahead of order only far enough to keep every link on the
-hub and on Event 01 live. They are real pages, not placeholders, but they are
-lean and expected to grow.
-
----
+Three items in Lesson 1 are deliberately unresolved and render as visibly marked
+teacher blocks: the verbatim ZCS handbook language (Step 1), the primary-source
+excerpt (Step 4, copyright), and the Pew ownership figures (Step 5). See
+`teacher/lesson-01-orientation.html`.
 
 ## Layout
 
 ```
 current-events/
 ├── index.html                Landing hub, the front page
-├── event-01/index.html       Event 01, the copy-me template
+├── lesson-01/index.html      Lesson 1, the copy-me model
 ├── your-beat/index.html      Independent project: brief, formats, rubric, submission
 ├── culture/index.html        The Culture Beat rail
-├── teacher/index.html        Pacing, data links, coach link
-├── BUILD-SPEC.md             The brief this was built from
+├── teacher/
+│   ├── index.html            Pacing, data links, coach link
+│   └── lesson-01-orientation.html   Flags + coach sets, NOT student-facing
+├── archive/                  Superseded Event 01 and its five-step renderer
+├── BUILD-SPEC.md             The original brief
 ├── scripts/
-│   └── build-hub-art.js      Regenerates the hub card artwork (deterministic)
+│   ├── build-hub-art.js      Hub card artwork (deterministic)
+│   └── build-lesson-art.js   Lesson module-card artwork (deterministic)
 └── assets/
     ├── css/
     │   ├── behistorical-newsroom.css     Design system: tokens, type, ticker,
     │   │                                 masthead, THE SPINE, cards, footer
     │   ├── behistorical-ce-hub.css       Front-page layout
-    │   └── behistorical-ce-event.css     Event-page furniture
+    │   ├── behistorical-ce-lesson.css    Lesson page furniture
+    │   └── behistorical-ce-event.css     Legacy event furniture, still used by
+    │                                     your-beat/, culture/, teacher/
     ├── js/
-    │   ├── behistorical-ce-form-config.js    Google Form prefill + coach links
-    │   ├── behistorical-ce-event-renderer.js Reads CE_EVENT, writes steps 01 to 05
-    │   └── behistorical-ce-newsroom.js       Ticker, spine painting, scale rail, reveals
+    │   ├── behistorical-ce-form-config.js      Google Form prefill + coach links
+    │   ├── behistorical-ce-lesson-renderer.js  Reads CE_LESSON, writes the page
+    │   └── behistorical-ce-newsroom.js         Ticker, spine, scale rail, reveals
     ├── data/
-    │   └── ce-event-01-social-media.js   All Event 01 content
+    │   ├── ce-lesson-01-locker-ban.js          All Lesson 1 content
+    │   └── ce-lesson-01-renderer-config.js     Per-deployment overrides
     └── logos/behistorical-logo.jpeg      Shared with AP World
 ```
 
 ### Commands
 
-- `node scripts/build-hub-art.js`, rebuild the hub card and hero artwork from
-  `scripts/build-hub-art.js`. Deterministic: same seed in, byte-identical SVGs
-  out, so rerunning it never churns the diff.
+- `node scripts/build-hub-art.js`, rebuild the hub card and hero artwork.
+- `node scripts/build-lesson-art.js`, rebuild the ten lesson module-card motifs.
 
-An event page is three things: a shell, a data file, and the renderer. The shell
-holds the ticker, masthead, and empty `data-slot` containers. Everything a
-student reads comes out of the data file.
+Both are deterministic: same seed in, byte-identical SVGs out, so rerunning them
+never churns the diff.
+
+A lesson page is four things: a shell, a data file, a renderer-config file, and
+the renderer. The shell holds the ticker, masthead, and the empty containers the
+renderer fills. Everything a student reads comes out of the data file.
 
 ---
 
@@ -148,16 +161,17 @@ Two rules worth keeping:
 
 ## The hub layout, and the Image Contract
 
-The front page is an editorial magazine layout: a full-bleed hero with a dark
-scrim, a split feature strip that overlaps the hero, and an asymmetric mosaic
-mixing text-over-artwork cards with plain text cards.
+The front page is the spine-led newsprint broadsheet the design council chose:
+a short lede capped so the cards clear the fold on a 1366x768 Chromebook, the
+reverse-ladder method aside, the four-movement rhythm explainer, and six cards.
 
-It is photography-led by design, but **it currently ships with zero
-photographs**, and it still looks finished. That is the Image Contract, carried
+It **currently ships with zero photographs** and still looks finished. That is the Image Contract, carried
 over from AP World:
 
 - **Local artwork is the floor.** `assets/images/card-art/` holds a generated,
-  on-topic SVG for the hero and for all six event cards. No empty frames, ever.
+  on-topic SVG for the hero and the event cards, and
+  `assets/images/lesson-art/lesson-01/` holds one per lesson module card. No
+  empty frames, ever.
 - **Every image slot has two layers.** The generated `.art` underneath, and an
   optional `.photo` on top carrying `onerror="this.remove()"`. To add real
   photography, uncomment the `.photo` line in a card and point it at a URL. If
@@ -169,26 +183,34 @@ over from AP World:
   one resolves against the stylesheet's folder, not the page, so local paths
   silently 404.
 
-The masthead floats transparently over the hero and turns solid once you scroll
-past it. That is driven by `class="has-hero"` on `<body>` plus `wireMasthead()`.
-With JS blocked the masthead simply stays in overlay mode, which still reads
-because the hero behind it is always dark.
+The masthead is a solid fixed bar under the ticker. `wireMasthead()` still
+exists for the overlay behaviour a `class="has-hero"` page would want, but no
+page currently uses it: the broadsheet has no full-bleed hero to float over.
 
 ---
 
-## Adding Event 02
+## Adding Lesson 2
 
-1. Copy `assets/data/ce-event-01-social-media.js` to
-   `assets/data/ce-event-02-white-collar.js` and rewrite the strings. Keep the
-   key names.
-2. Copy `event-01/index.html` to `event-02/index.html`. Change the `<title>`, the
-   ticker items, the masthead dateline, and the one `<script src>` line that
-   points at the data file.
-3. On the hub, change that event card's `href` and `data-status` from `soon` to
+1. Copy `assets/data/ce-lesson-01-locker-ban.js` to
+   `assets/data/ce-lesson-02-SLUG.js` and rewrite the strings. Keep the key
+   names. The `steps` array can be any length: the module grid, the capture
+   numbering, and the spine all size themselves to it.
+2. Copy `assets/data/ce-lesson-01-renderer-config.js` alongside it and point the
+   clip URLs and `captureEvent` at the new lesson.
+3. Copy `lesson-01/index.html` to `lesson-02/index.html`. Change the `<title>`,
+   the ticker items, the masthead dateline, and the two `<script src>` lines
+   that point at the data and renderer-config files.
+4. Add ten motifs to `scripts/build-lesson-art.js` under a new output folder and
+   run it, or set `art` to `''` on a step to get the plain gunmetal card.
+5. On the hub, change that card's `href` and `data-status` from `soon` to
    `live`, and give it a real trace preview.
-4. Add the event to `CE_FORM.events` in `assets/js/behistorical-ce-form-config.js`.
+6. Add the lesson to `CE_FORM.events` and its steps to `CE_FORM.steps` in
+   `assets/js/behistorical-ce-form-config.js`.
+7. Copy `teacher/lesson-01-orientation.html` and rewrite the flags. Every
+   unverified claim in the new lesson gets a `type: 'todo'` block in the data
+   file so it renders as marked rather than shipping quietly.
 
-Nothing in the renderer is specific to social media.
+Nothing in the renderer is specific to phone bans.
 
 ---
 

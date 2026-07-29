@@ -1,0 +1,580 @@
+/* =============================================================================
+   BEHISTORICAL CURRENT EVENTS, LESSON PAGE FURNITURE
+   File: assets/css/behistorical-ce-lesson.css
+
+   The AP World lesson flow (hero, Lesson Command Center, learning targets,
+   module grid with pop-outs, content-delivery lecture cards) rebuilt on the
+   Current Events tokens. Same components, same class names, same student path.
+   Load AFTER behistorical-newsroom.css, which owns the tokens and the site
+   chrome (ticker, masthead, buttons, sections, footer).
+
+   THE ORANGE RULE STILL HOLDS. --signal is fills, bars, rules and dots only.
+   Text that needs to read orange uses --signal-ink. Never colour a run of text
+   --signal: on this paper it is 2.6:1 and fails at every size.
+
+   Contains, in order:
+     1. Lesson hero + quick nav
+     2. Classroom Flow roadmap
+     3. Learning targets + skills framework
+     4. Module grid (the student path)
+     5. Pop-out modal
+     6. Step content: narrative, assessments, capture
+     7. Content delivery: lecture cards + modal + lightbox
+     8. Teacher-only blocks
+     9. Responsive
+   ========================================================================== */
+
+/* ── 1. Lesson hero + quick nav ──────────────────────────────────────────── */
+.lesson-hero{
+  padding:38px 0 30px;
+  border-bottom:1px solid var(--line);
+  background-image:var(--laid);
+}
+.lesson-hero .wrap{display:flex;flex-direction:column;gap:14px}
+.lesson-eyebrow{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:.68rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--steel-2);
+}
+.lesson-hero h1{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(2rem,5vw,3.5rem);line-height:1.04;
+  margin:0;color:var(--ink);text-wrap:balance;
+}
+.lesson-hero h1 em{
+  font-style:normal;
+  border-bottom:5px solid var(--signal);
+  padding-bottom:2px;
+}
+.lesson-subtitle{
+  font-family:var(--display);font-size:1.12rem;font-style:italic;
+  color:var(--steel);margin:0;max-width:64ch;
+}
+.lesson-standfirst{
+  margin:4px 0 0;padding-left:16px;
+  border-left:4px solid var(--signal);
+  font-family:var(--read);font-size:1.02rem;line-height:1.62;
+  color:var(--ink);max-width:70ch;
+}
+.quick-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+
+/* ── 2. Classroom Flow roadmap ───────────────────────────────────────────── */
+/* Three fixed steps, identical on every lesson page in both courses. */
+.lesson-roadmap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.roadmap-step{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-left:5px solid var(--signal);
+  padding:15px 17px;color:var(--ink);
+  font-size:.92rem;line-height:1.5;
+}
+.roadmap-step strong{
+  display:block;margin-bottom:6px;
+  font-family:var(--mono);font-size:.7rem;font-weight:600;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--signal-ink);
+}
+
+/* ── 3. Learning targets + skills framework ──────────────────────────────── */
+.inline-targets{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;margin:18px 0 8px;
+}
+.inline-target-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-top:5px solid var(--archive);
+  padding:22px;box-shadow:var(--shadow-sm);
+}
+.inline-target-card h3{
+  margin:0 0 14px;font-family:var(--display);font-weight:700;
+  font-size:1.16rem;color:var(--ink);
+}
+.inline-target-item{
+  display:flex;gap:11px;padding:11px 0;
+  border-top:1px solid var(--line);align-items:flex-start;
+}
+.inline-target-item:first-of-type{border-top:0}
+.inline-target-number{
+  flex:0 0 auto;width:27px;height:27px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--archive);color:var(--paper);
+  font-family:var(--mono);font-weight:600;font-size:.74rem;
+}
+.inline-target-text{display:flex;flex-direction:column;flex:1;min-width:0;gap:5px}
+.inline-target-text p{margin:0;font-size:.94rem;line-height:1.5;color:var(--ink)}
+.inline-target-kc-row{display:flex;flex-wrap:wrap;gap:5px}
+.inline-target-kc{
+  display:inline-block;padding:3px 8px;
+  border:1px solid var(--signal);
+  font-family:var(--mono);font-size:.62rem;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:var(--signal-ink);white-space:nowrap;
+}
+
+/* The skills framework sits where AP World puts College Board key concepts.
+   This is a standalone elective, so it carries the historical thinking skills
+   the lesson actually assesses rather than a CED code. */
+.skills-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.skill-frame-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-left:6px solid var(--archive);
+  padding:20px;box-shadow:var(--shadow-sm);
+}
+.skill-frame-card h3{
+  margin:0 0 10px;font-family:var(--display);font-weight:700;
+  font-size:1.14rem;color:var(--ink);
+}
+.skill-code{
+  display:inline-flex;margin-bottom:11px;padding:5px 10px;
+  border:1px solid var(--signal);
+  font-family:var(--mono);font-size:.66rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--signal-ink);
+}
+.skill-frame-card p{margin:0 0 10px;line-height:1.58}
+.skill-frame-card p:last-child{margin-bottom:0}
+.skill-where{
+  margin-top:11px;padding-top:11px;border-top:1px solid var(--line);
+}
+.skill-where strong{
+  font-family:var(--mono);font-size:.68rem;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--signal-ink);
+}
+.skill-where ul{margin:8px 0 0;padding-left:20px}
+.skill-where li{margin:3px 0;font-size:.92rem;line-height:1.5}
+
+/* ── 4. Module grid, the student path ────────────────────────────────────── */
+.command-center{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;margin:26px 0 8px;
+}
+/* Two <img> layers, per the repo image contract: generated art underneath,
+   an optional photograph on top that removes itself if the URL is dead. Never
+   a background-image custom property, whose relative URLs resolve against the
+   stylesheet folder instead of the page. */
+.module-card{
+  position:relative;overflow:hidden;cursor:pointer;
+  min-height:214px;padding:0;
+  background:var(--archive);color:var(--paper);
+  border:1px solid var(--line-hard);
+  box-shadow:var(--shadow-sm);
+  display:flex;flex-direction:column;justify-content:flex-end;
+  transition:transform .18s ease,box-shadow .18s ease;
+  text-align:left;width:100%;font:inherit;
+}
+.module-card:hover,.module-card:focus-visible{
+  transform:translateY(-3px);
+  box-shadow:0 22px 50px rgba(20,24,27,.26);
+}
+.module-card .card-art,
+.module-card .card-photo{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;opacity:.5;
+}
+.module-card::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(20,24,27,.28),rgba(20,24,27,.93));
+}
+.module-card-body{position:relative;z-index:1;padding:22px}
+.module-label{
+  font-family:var(--mono);font-size:.66rem;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:rgba(244,242,236,.72);
+}
+.module-card h3{
+  margin:9px 0 8px;font-family:var(--display);font-weight:700;
+  font-size:1.34rem;line-height:1.14;color:var(--paper);
+}
+.module-card p{
+  margin:0;font-size:.87rem;line-height:1.46;color:rgba(244,242,236,.84);
+}
+/* The live step is the only orange-edged card, same rule as the hub. */
+.module-card[data-open="true"]{border-color:var(--signal);border-left-width:4px}
+.module-step-tag{
+  position:absolute;top:0;right:0;z-index:2;
+  background:var(--signal);color:var(--ink);
+  font-family:var(--mono);font-size:.62rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;padding:5px 9px;
+}
+
+/* ── 5. Pop-out modal ────────────────────────────────────────────────────── */
+.pop-modal{
+  position:fixed;inset:0;z-index:180;display:none;
+  align-items:center;justify-content:center;padding:24px;
+  background:rgba(20,24,27,.93);
+}
+.pop-modal.show{display:flex}
+.pop-panel{
+  width:min(1080px,96vw);max-height:92vh;overflow:auto;
+  background:var(--paper);color:var(--ink);
+  border:1px solid var(--line-hard);
+  box-shadow:0 30px 90px rgba(0,0,0,.5);
+}
+.pop-header{
+  position:sticky;top:0;z-index:3;
+  background:var(--archive);color:var(--paper);
+  padding:22px 26px;border-bottom:3px solid var(--signal);
+  display:flex;align-items:flex-start;justify-content:space-between;gap:18px;
+}
+.pop-header .eyebrow{
+  font-family:var(--mono);font-size:.66rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:rgba(244,242,236,.7);
+}
+.pop-header h2{
+  margin:5px 0 0;font-family:var(--display);font-weight:800;
+  font-size:clamp(1.5rem,3.4vw,2.5rem);line-height:1.07;color:var(--paper);
+}
+.pop-body{padding:26px}
+.pop-close{flex:0 0 auto}
+.pop-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.pop-half{grid-column:span 6}
+.pop-third{grid-column:span 4}
+.pop-two-third{grid-column:span 8}
+
+/* ── 6. Step content ─────────────────────────────────────────────────────── */
+/* The backward question that opens every trace step. */
+.trace-question{
+  margin:0 0 18px;padding:14px 18px;
+  background:var(--archive);color:var(--paper);
+  border-left:5px solid var(--signal);
+  font-family:var(--display);font-weight:700;font-size:1.16rem;
+}
+.step-narrative{max-width:68ch}
+.step-narrative p{
+  margin:0 0 15px;font-family:var(--read);
+  font-size:1.04rem;line-height:1.72;color:var(--ink);
+}
+.step-narrative p:last-child{margin-bottom:0}
+.step-narrative strong{font-weight:700}
+.step-narrative blockquote{
+  margin:18px 0;padding:14px 18px;
+  background:var(--surface);border-left:5px solid var(--signal);
+  font-family:var(--display);font-size:1.1rem;font-weight:600;color:var(--ink);
+}
+.step-narrative ul{margin:0 0 15px;padding-left:22px}
+.step-narrative li{
+  margin:7px 0;font-family:var(--read);font-size:1.02rem;line-height:1.66;
+}
+.step-narrative h4{
+  margin:24px 0 10px;font-family:var(--display);font-weight:700;
+  font-size:1.2rem;color:var(--ink);
+}
+
+.component-note{
+  background:var(--surface);border:1px solid var(--line);
+  border-left:5px solid var(--archive);
+  padding:15px 17px;margin:18px 0;
+}
+.component-note h4{
+  margin:0 0 7px;font-family:var(--mono);font-size:.7rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--signal-ink);
+}
+.component-note p{margin:0;font-size:.95rem;line-height:1.58}
+
+/* Video launch card */
+.launch-video{
+  background:var(--archive);color:var(--paper);
+  padding:18px 20px;margin-bottom:20px;
+  border-left:5px solid var(--signal);
+}
+.launch-video .bridge-label{color:var(--signal);}
+.launch-video p{margin:0 0 12px;font-size:.92rem;line-height:1.6;opacity:.9}
+
+/* Multiple choice */
+.mcq{margin:18px 0}
+.mcq-stem{
+  margin:0 0 12px;font-weight:600;font-size:1rem;line-height:1.55;color:var(--ink);
+}
+.mcq-stimulus{
+  margin:0 0 14px;padding:14px 17px;
+  background:var(--surface);border:1px solid var(--line);
+  border-left:5px solid var(--archive);
+  font-family:var(--read);font-style:italic;font-size:1rem;line-height:1.65;
+}
+.mcq-option{
+  display:flex;gap:10px;align-items:flex-start;
+  padding:10px 12px;margin:6px 0;
+  background:var(--surface);border:1px solid var(--line);
+  cursor:pointer;font-size:.95rem;line-height:1.5;
+}
+.mcq-option:hover{border-color:var(--signal)}
+.mcq-option input{margin-top:3px;flex:0 0 auto}
+.mcq-option[data-state="right"]{border-left:5px solid var(--signal);background:var(--signal-wash)}
+.mcq-option[data-state="wrong"]{border-left:5px solid var(--steel-2);opacity:.72}
+.mcq-result{
+  margin-top:10px;font-family:var(--mono);font-size:.76rem;color:var(--signal-ink);
+}
+
+/* Step 4's two-column sort: what a source shows against what it assumes. */
+.showassume{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;margin:18px 0;
+}
+.showassume-col{
+  background:var(--surface);border:1px solid var(--line);
+  border-top:5px solid var(--archive);padding:17px;
+}
+.showassume-col:last-child{border-top-color:var(--signal)}
+.showassume-col h4{
+  margin:0 0 6px;font-family:var(--display);font-weight:700;font-size:1.06rem;
+}
+.showassume-col p{
+  margin:0 0 12px;font-family:var(--mono);font-size:.72rem;
+  line-height:1.5;color:var(--steel);
+}
+.showassume-col textarea{margin:0}
+
+/* Step 6 fun facts */
+.funfacts{
+  margin:22px 0 0;padding:19px 21px;
+  background:var(--paper-2);border:1px solid var(--line);
+  background-image:var(--laid);
+}
+.funfacts h4{
+  margin:0 0 11px;font-family:var(--mono);font-size:.72rem;font-weight:600;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--signal-ink);
+}
+.funfacts ul{margin:0;padding-left:20px}
+.funfacts li{margin:9px 0;font-size:.96rem;line-height:1.62}
+
+/* Step 7 break points */
+.breakpoint{
+  margin:22px 0;padding:0 0 0 18px;border-left:5px solid var(--signal);
+}
+.breakpoint h4{
+  margin:0 0 5px;font-family:var(--display);font-weight:700;
+  font-size:1.22rem;color:var(--ink);
+}
+.breakpoint-tag{
+  display:inline-block;margin-bottom:9px;
+  font-family:var(--mono);font-size:.65rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--steel-2);
+}
+
+/* Step 8 requirements */
+.requirements{margin:18px 0;counter-reset:req}
+.requirement{
+  display:flex;gap:13px;align-items:flex-start;
+  padding:12px 0;border-top:1px solid var(--line);
+}
+.requirement:first-child{border-top:0}
+.requirement-num{
+  flex:0 0 auto;width:26px;height:26px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--signal);color:var(--ink);
+  font-family:var(--mono);font-weight:600;font-size:.74rem;
+}
+.requirement div{font-size:.97rem;line-height:1.56}
+.requirement strong{display:block;margin-bottom:2px}
+.top-band{
+  margin:18px 0 0;padding:17px 19px;
+  background:var(--archive);color:var(--paper);
+}
+.top-band h4{
+  margin:0 0 10px;font-family:var(--mono);font-size:.7rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--signal);
+}
+.top-band ul{margin:0;padding-left:20px}
+.top-band li{margin:7px 0;font-size:.93rem;line-height:1.56;opacity:.92}
+
+/* Source library */
+.source-list{display:grid;gap:12px;margin:16px 0}
+.source-item{
+  background:var(--surface);border:1px solid var(--line);
+  border-left:5px solid var(--archive);padding:14px 16px;
+}
+.source-item[data-stance="counter"]{border-left-color:var(--signal)}
+.source-item h4{margin:0 0 4px;font-family:var(--display);font-weight:700;font-size:1.04rem}
+.source-meta{
+  margin:0 0 7px;font-family:var(--mono);font-size:.7rem;
+  letter-spacing:.04em;color:var(--steel-2);
+}
+.source-item p{margin:0;font-size:.93rem;line-height:1.55}
+.source-item a{color:var(--signal-ink);font-weight:600}
+
+/* Draft / response tooling */
+.prompt-box{
+  margin:20px 0 0;padding:19px 21px;
+  background:var(--surface);border:1px solid var(--line);
+  border-top:5px solid var(--signal);
+}
+.prompt-box h3{
+  margin:0 0 9px;font-family:var(--display);font-weight:700;
+  font-size:1.16rem;color:var(--ink);
+}
+.prompt-box>p{margin:0 0 13px;font-size:.97rem;line-height:1.58}
+.response-area{
+  width:100%;min-height:132px;padding:12px 14px;
+  background:var(--paper);color:var(--ink);
+  border:1px solid var(--line);
+  font-family:var(--body);font-size:.97rem;line-height:1.6;resize:vertical;
+}
+.response-area:focus-visible{outline:3px solid var(--signal);outline-offset:1px}
+.response-short{min-height:64px}
+.tool-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}
+.check-result{
+  margin-top:11px;font-family:var(--mono);font-size:.76rem;
+  line-height:1.5;color:var(--signal-ink);
+}
+.likert{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.likert label{
+  display:flex;align-items:center;gap:6px;
+  padding:8px 13px;background:var(--paper);
+  border:1px solid var(--line);cursor:pointer;
+  font-family:var(--mono);font-size:.78rem;
+}
+.likert label:hover{border-color:var(--signal)}
+.likert input:checked+span{color:var(--signal-ink);font-weight:600}
+.btn-capture{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 20px;border:none;cursor:pointer;text-decoration:none;
+  background:var(--signal);color:var(--ink);
+  font-family:var(--mono);font-size:.76rem;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;
+  box-shadow:var(--shadow-sm);
+  transition:transform .12s ease,background .18s ease;
+}
+.btn-capture:hover{background:var(--signal-ink);color:var(--paper);transform:translateY(-1px)}
+
+/* Coach bridge. Same shape as AP World's MagicSchool bridge. */
+.magicschool-bridge{
+  margin-top:22px;padding:21px;
+  background:var(--archive);color:var(--paper);
+  border-left:5px solid var(--signal);
+}
+.magicschool-bridge h3{
+  margin:0 0 10px;font-family:var(--display);font-weight:700;
+  font-size:1.16rem;color:var(--paper);
+}
+.magicschool-bridge p{margin:0 0 12px;font-size:.9rem;line-height:1.6;opacity:.9}
+.bridge-label{
+  display:block;margin-bottom:6px;
+  font-family:var(--mono);font-size:.68rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--signal);
+}
+.copy-template{
+  margin:11px 0;padding:14px 16px;
+  background:rgba(244,242,236,.07);
+  border:1px solid rgba(244,242,236,.16);
+}
+.copy-template-text{
+  font-family:var(--mono);font-size:.79rem;line-height:1.6;
+  color:var(--paper);font-style:italic;
+}
+.canvas-note{
+  margin-top:13px;padding-top:12px;
+  border-top:1px solid rgba(244,242,236,.16);
+  font-family:var(--mono);font-size:.72rem;line-height:1.5;opacity:.78;
+}
+.magicschool-bridge .check-result{color:var(--signal)}
+
+/* ── 7. Content delivery ─────────────────────────────────────────────────── */
+.dark-panel{background:var(--archive);color:var(--paper);background-image:none}
+.dark-panel .kicker{color:var(--signal)}
+.dark-panel h2{color:var(--paper)}
+.dark-panel .dek{color:rgba(244,242,236,.82)}
+.lecture-card-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;margin:26px 0 0;
+}
+.lecture-card{
+  background:rgba(244,242,236,.06);
+  border:1px solid rgba(244,242,236,.18);
+  border-top:4px solid var(--signal);
+  padding:19px;cursor:pointer;text-align:left;
+  color:var(--paper);font:inherit;
+  transition:transform .18s ease,border-color .18s ease;
+}
+.lecture-card:hover,.lecture-card:focus-visible{
+  transform:translateY(-3px);border-color:var(--signal);
+}
+.lecture-card .module-label{color:var(--signal)}
+.lecture-card h3{
+  margin:9px 0 10px;font-family:var(--display);font-weight:700;
+  font-size:1.2rem;line-height:1.16;color:var(--paper);
+}
+.lecture-list{margin:0;padding-left:19px}
+.lecture-list li{
+  margin:7px 0;font-size:.9rem;line-height:1.52;color:rgba(244,242,236,.88);
+}
+.lecture-list.enlarged li{font-size:1.14rem;line-height:1.6}
+.content-videos{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;margin-top:26px;
+}
+.video-card{
+  background:rgba(244,242,236,.06);
+  border:1px solid rgba(244,242,236,.18);padding:17px;
+}
+.video-card h3{
+  margin:0 0 8px;font-family:var(--display);font-weight:700;
+  font-size:1.06rem;color:var(--paper);
+}
+.video-card p{margin:0 0 12px;font-size:.88rem;line-height:1.54;opacity:.86}
+
+.lecture-modal,.lightbox{
+  position:fixed;inset:0;z-index:200;display:none;
+  align-items:center;justify-content:center;padding:26px;
+  background:rgba(20,24,27,.95);
+}
+.lecture-modal.show,.lightbox.show{display:flex}
+.lecture-modal-panel{
+  width:min(1180px,96vw);max-height:92vh;overflow:auto;
+  background:var(--archive);color:var(--paper);
+  border:1px solid var(--line-hard);border-top:4px solid var(--signal);
+  padding:30px;
+}
+.lecture-close,.lightbox .btn{position:absolute;top:22px;right:22px;z-index:2}
+.lecture-modal-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:start;
+}
+.lecture-modal-content h2{
+  margin:6px 0 16px;font-family:var(--display);font-weight:800;
+  font-size:clamp(1.6rem,3.6vw,2.7rem);line-height:1.07;color:var(--paper);
+}
+.lecture-modal-image-wrap{margin:0}
+.lecture-modal-image-wrap img{width:100%;height:auto;display:block;border:1px solid rgba(244,242,236,.2)}
+.lecture-modal-image-wrap figcaption,
+.lightbox figcaption{
+  margin-top:9px;font-family:var(--mono);font-size:.72rem;
+  line-height:1.5;color:rgba(244,242,236,.74);
+}
+.lightbox figure{margin:0;max-width:min(1100px,94vw)}
+.lightbox img{width:100%;height:auto;display:block}
+.media-fallback{object-fit:cover;background:var(--paper-2)}
+
+/* ── 8. Teacher-only blocks ──────────────────────────────────────────────── */
+/* Every unresolved verification flag renders as one of these, so nothing
+   unverified can reach a student without being visibly marked. */
+.teacher-todo{
+  margin:16px 0;padding:15px 17px;
+  background:repeating-linear-gradient(
+    135deg,rgba(255,106,19,.09) 0 9px,transparent 9px 18px);
+  border:2px dashed var(--signal);
+}
+.teacher-todo h4{
+  margin:0 0 6px;font-family:var(--mono);font-size:.7rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--signal-ink);
+}
+.teacher-todo p{margin:0 0 8px;font-size:.93rem;line-height:1.56}
+.teacher-todo p:last-child{margin-bottom:0}
+.teacher-todo code{
+  font-family:var(--mono);font-size:.84em;
+  background:var(--surface);padding:1px 5px;border:1px solid var(--line);
+}
+
+/* ── 9. Responsive ───────────────────────────────────────────────────────── */
+@media(max-width:980px){
+  .command-center,.lecture-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lecture-modal-grid{grid-template-columns:1fr}
+  .pop-half,.pop-third,.pop-two-third{grid-column:1/-1}
+}
+@media(max-width:760px){
+  .lesson-roadmap,.inline-targets,.showassume,.content-videos{grid-template-columns:1fr}
+  .command-center,.lecture-card-grid{grid-template-columns:1fr}
+  .pop-modal{padding:0}
+  .pop-panel{max-height:100vh;width:100vw}
+  .pop-header{padding:18px;flex-direction:column}
+  .pop-body{padding:18px}
+  .lecture-modal,.lightbox{padding:14px}
+  .lecture-modal-panel{padding:20px}
+}
