@@ -5,6 +5,29 @@
    The sister brand to BeHistorical AP World. AP World is the archive; this is
    the live desk. Same bones, different skin.
 
+   DIRECTION (set 2026-07-29, after the design council):
+   Layout B, the spine-led broadsheet. Light newsprint page, DARK gunmetal for
+   structure and type, Signal Orange used occasionally, and real paper texture.
+
+   ── THE ORANGE RULE ─────────────────────────────────────────────────────────
+   ORANGE MARKS NOW. It is the hot end of the Reverse Timeline spine, the live
+   tag, the current step, the open event, the primary action. It never marks
+   anything historical and it is never a decorative wash.
+
+   And a hard constraint that governs HOW it is used: #FF6A13 on this paper is
+   only 2.6:1, so it CANNOT carry small text. Therefore:
+     - --signal      fills, bars, rules, dots, underlines. Any text sitting ON
+                     an orange fill must be --ink, which is 6.5:1. Good.
+     - --signal-ink  the deeper burnt orange, and the ONLY orange allowed for
+                     text on paper. It clears AA on the band as well as the page.
+   Never set colour:var(--signal) on a run of text. That is the one way to
+   break this system.
+
+   ── TEXTURE ─────────────────────────────────────────────────────────────────
+   Two layers, both free: a fine fractal grain tiled across the page, and a laid
+   hairline pattern on the alternating bands. Both are inline SVG data URIs, so
+   they cost zero extra requests and nothing to load on a school connection.
+
    Contains, in order:
      1. Tokens
      2. Base + typography roles
@@ -12,67 +35,54 @@
      4. Ticker (fixed)
      5. Masthead (fixed)
      6. Buttons
-     7. Section furniture (kicker, headline, dek, dateline, rules)
+     7. Section furniture
      8. Cards
      9. Local to Global scale rail
     10. THE REVERSE TIMELINE SPINE (signature element)
     11. Culture Beat callout
     12. Footer
-    13. Utilities
-
-   Page-specific layout lives in behistorical-ce-hub.css and
-   behistorical-ce-event.css. Keep this file about the system.
+    13. Tables
+    14. Utilities
    ========================================================================== */
 
 /* ── 1. Tokens ───────────────────────────────────────────────────────────── */
 :root{
-  /*
-     The five named values. Gunmetal grey desk.
+  /* Surfaces, light to dark */
+  --paper:    #F4F2EC;   /* page background, warm newsprint */
+  --paper-2:  #E9E6DE;   /* alternating section bands */
+  --surface:  #FFFFFF;   /* cards and reading panels */
 
-     THE GRADIENT STILL CARRIES THE MEANING, it just runs on value instead of
-     temperature. NOW is bright steel at the top of the spine and the past
-     darkens as you descend, until the ORIGIN is nearly black. Present is lit,
-     history fades into the archive. Same pedagogy, no orange.
+  /* Ink, dark gunmetal throughout */
+  --ink:      #14181B;   /* headlines and primary text, 15.9:1 on paper */
+  --steel:    #4A555D;   /* secondary text and structure, 6.6:1 on paper */
+  --steel-2:  #5C666F;   /* tertiary: datelines, strands. 5.2:1 on paper */
+  --archive:  #232C33;   /* deep gunmetal, the ORIGIN end of the spine */
 
-     Every value below clears WCAG AA against the surface it is used on:
-     --signal carries white text at 5.3:1, --charcoal sits on --newsprint at
-     5.4:1, and --signal-ink is the darkened variant for accent text on paper.
-     Do not lighten --signal without rechecking the era tags.
-  */
-  --ink:       #14171A;   /* masthead, headlines, primary text */
-  --newsprint: #F2F2EE;   /* page background, warm off-white */
-  --signal:    #5E6D79;   /* THE accent: ticker, NOW, live markers, spine top */
-  --charcoal:  #5A6169;   /* secondary text, hairline rules, datelines */
-  --archive:   #1F2A34;   /* the past/origin deep tone, spine bottom, THEN */
+  /* The accent. Read the orange rule at the top of this file before using. */
+  --signal:     #FF6A13;   /* fills, bars, rules, marks. NOT for text. */
+  --signal-ink: #A63C08;   /* the only orange for text. 5.7:1 on paper,
+                             5.3:1 on the --paper-2 band, which is the one
+                             that actually constrains it. */
+  --signal-wash:rgba(255,106,19,.10);
 
-  /*
-     Sage, the editorial accent. Gunmetal is the structure; sage is the warmth,
-     used for feature panels, primary buttons, and eyebrow rules. It never
-     carries the spine gradient, which stays pure steel-to-archive so the
-     lit-to-dark reading of time is not muddied by a second hue.
-     --sage holds white text at 4.7:1. --sage-ink is the on-paper text variant.
-  */
-  --sage:      #6B7758;
-  --sage-deep: #4C5540;
-  --sage-lt:   #8A9A73;
-  --sage-ink:  #4F5A3E;
-  --sage-wash: rgba(107,119,88,.14);
+  --line:      rgba(35,44,51,.16);
+  --line-hard: rgba(20,24,27,.82);
+  --shadow:    0 18px 40px rgba(20,24,27,.13);
+  --shadow-sm: 0 5px 16px rgba(20,24,27,.09);
 
-  /* Derived surfaces. Nothing new, just the five values at other strengths. */
-  --paper-2:    #E8E8E2;
-  --rule:       rgba(90,97,105,.22);
-  --rule-hard:  rgba(20,23,26,.88);
-  --signal-ink: #4A5762;                  /* signal, darkened for text on paper (AA) */
-  --signal-wash:rgba(94,109,121,.12);
-  --archive-wash:rgba(31,42,52,.07);
-  --shadow:     0 18px 44px rgba(20,23,26,.13);
-  --shadow-sm:  0 6px 18px rgba(20,23,26,.10);
+  /* Texture. A 140px fractal-noise tile and a 6px laid-line tile, both inline
+     so they cost no requests. Keep the opacities low: at these sizes the grain
+     should be felt rather than seen. */
+  --grain: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.075'/%3E%3C/svg%3E");
+  --laid: repeating-linear-gradient(
+            180deg,
+            rgba(35,44,51,.05) 0 1px,
+            transparent 1px 6px);
 
   /* Type roles.
      Display is Newsreader, a serif drawn for news: editorial weight without
-     the shoutiness of a condensed grotesque, which is what steel grey wants.
-     Body is Source Sans 3, easier over long paragraphs than Inter.
-     Utility stays mono for the wire-feed texture. */
+     the shoutiness of a condensed grotesque. Body is Source Sans 3, which
+     holds up over long paragraphs. Utility stays mono for wire-feed texture. */
   --display: "Newsreader", "Source Serif 4", Georgia, "Times New Roman", serif;
   --body:    "Source Sans 3", "Inter", -apple-system, BlinkMacSystemFont,
              "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -80,13 +90,12 @@
   --mono:    "IBM Plex Mono", "Space Mono", ui-monospace, SFMono-Regular,
              Menlo, Consolas, monospace;
 
-  /* Fixed chrome heights, used to offset page content */
-  --ticker-h:   34px;
-  --masthead-h: 64px;
-  --chrome-h:   98px;   /* ticker + masthead */
+  --ticker-h:   32px;
+  --masthead-h: 62px;
+  --chrome-h:   94px;
 
   --measure: min(1180px, 92vw);
-  --radius: 4px;        /* newsprint is square. Barely any rounding. */
+  --radius: 3px;        /* newsprint is square. Barely any rounding. */
 }
 
 /* ── 2. Base + typography roles ──────────────────────────────────────────── */
@@ -96,57 +105,57 @@ html{ scroll-behavior:smooth; scroll-padding-top:calc(var(--chrome-h) + 16px); }
 
 body{
   margin:0;
-  background:var(--newsprint);
+  background-color:var(--paper);
+  background-image:var(--grain);      /* the page grain */
   color:var(--ink);
   font-family:var(--body);
   font-size:17px;
-  line-height:1.65;
+  line-height:1.68;
   -webkit-font-smoothing:antialiased;
   padding-top:var(--chrome-h);
 }
 
 img{max-width:100%;display:block}
 a{color:var(--signal-ink)}
-a:hover{color:var(--signal)}
+a:hover{color:var(--ink)}
 
 /* Display, the news serif. Editorial weight, tight, sentence case. */
 h1,h2,h3,h4,.display{
   font-family:var(--display);
   font-weight:800;
-  line-height:1.08;          /* a serif needs a little more air than a grotesque */
+  line-height:1.08;
   letter-spacing:-.01em;
   margin:0 0 .4em;
+  color:var(--ink);
   text-wrap:balance;
 }
-h1{font-size:clamp(2.6rem,6.2vw,4.6rem)}
-h2{font-size:clamp(1.8rem,3.6vw,2.8rem)}
-h3{font-size:clamp(1.15rem,2vw,1.45rem)}
+h1{font-size:clamp(2.5rem,5.6vw,4.2rem)}
+h2{font-size:clamp(1.75rem,3.4vw,2.6rem)}
+h3{font-size:clamp(1.12rem,2vw,1.4rem)}
 
 p{margin:0 0 1.05em}
 
 /* Utility role, the wire-feed texture. */
-.mono,.dateline,.kicker,.step-num,.era-tag,.ticker,.rail-btn,.pill{
+.mono,.dateline,.kicker,.step-num,.era-tag,.ticker,.rail-btn,.pill,.eyebrow{
   font-family:var(--mono);
 }
 
-/* Optional magazine reading face for long The Week style passages. */
-.longread{font-family:var(--read);font-size:1.06rem;line-height:1.72}
+.longread{font-family:var(--read);font-size:1.06rem;line-height:1.74}
 
 /* ── 3. Focus, motion, skip link ─────────────────────────────────────────── */
 :focus-visible{
-  outline:3px solid var(--signal);
+  outline:3px solid var(--signal-ink);
   outline-offset:3px;
   border-radius:2px;
 }
 
 .skip-link{
   position:absolute;left:-9999px;top:0;z-index:120;
-  background:var(--ink);color:var(--newsprint);
+  background:var(--ink);color:var(--paper);
   padding:12px 18px;font-family:var(--mono);font-size:.8rem;
 }
 .skip-link:focus{left:8px;top:8px}
 
-/* Scroll reveal. The JS only adds .reveal when motion is allowed. */
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
 .reveal.is-in{opacity:1;transform:none}
 
@@ -161,26 +170,27 @@ p{margin:0 0 1.05em}
 }
 
 /* ── 4. Ticker ───────────────────────────────────────────────────────────── */
+/* Dark gunmetal bar. Only the LIVE tag is orange, so the accent reads as a
+   status light rather than a decorative stripe across every page. */
 .ticker{
   position:fixed;top:0;left:0;right:0;z-index:100;
   height:var(--ticker-h);
-  background:var(--signal);
-  color:#fff;
+  background:var(--ink);
+  color:rgba(244,242,236,.86);
   display:flex;align-items:stretch;
   overflow:hidden;
-  border-bottom:1px solid rgba(26,26,26,.22);
 }
 .ticker-label{
   flex:0 0 auto;display:flex;align-items:center;gap:7px;
   padding:0 12px;
-  background:var(--ink);
-  font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  background:var(--signal);color:var(--ink);
+  font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
 }
 .ticker-dot{
-  width:7px;height:7px;border-radius:50%;background:var(--signal);
+  width:6px;height:6px;border-radius:50%;background:var(--ink);
   animation:ce-pulse 2s ease-in-out infinite;
 }
-@keyframes ce-pulse{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes ce-pulse{0%,100%{opacity:1}50%{opacity:.2}}
 
 .ticker-viewport{flex:1 1 auto;overflow:hidden;position:relative}
 .ticker-track{
@@ -195,22 +205,23 @@ p{margin:0 0 1.05em}
 
 .ticker-item{
   display:inline-flex;align-items:center;
-  padding:0 22px;font-size:.74rem;letter-spacing:.03em;
+  padding:0 20px;font-size:.72rem;letter-spacing:.03em;
 }
 .ticker-item::after{
-  content:"";width:4px;height:4px;border-radius:50%;
-  background:rgba(255,255,255,.7);margin-left:22px;
+  content:"";width:3px;height:3px;border-radius:50%;
+  background:var(--signal);margin-left:20px;
 }
 
+/* Findable pause control: a teacher needs to kill the crawl during work time. */
 .ticker-pause{
   flex:0 0 auto;
-  background:var(--ink);color:#fff;border:0;
-  padding:0 12px;cursor:pointer;
-  font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
+  background:rgba(244,242,236,.12);color:#fff;border:0;
+  padding:0 16px;cursor:pointer;
+  font-family:var(--mono);font-size:.66rem;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;
 }
-.ticker-pause:hover{color:var(--signal)}
+.ticker-pause:hover{background:var(--signal);color:var(--ink)}
 
-/* No crawl when the reader asked for no motion. It becomes a scrollable strip. */
 @media (prefers-reduced-motion: reduce){
   .ticker-track{animation:none;width:auto}
   .ticker-viewport{overflow-x:auto}
@@ -220,46 +231,9 @@ p{margin:0 0 1.05em}
 .masthead{
   position:fixed;top:var(--ticker-h);left:0;right:0;z-index:99;
   height:var(--masthead-h);
-  background:var(--newsprint);
-  border-bottom:2px solid var(--rule-hard);
-  transition:background .25s ease,border-color .25s ease,color .25s ease;
-}
-
-/*
-   Overlay mode. On a page with a full-bleed photo hero the masthead sits ON the
-   image, transparent with light type, and turns solid once you scroll past it.
-   The JS adds .is-solid; with JS blocked the masthead simply stays transparent
-   over the hero, which still reads correctly because the hero is always dark.
-*/
-body.has-hero{padding-top:0}
-body.has-hero .masthead{
-  background:transparent;border-bottom-color:transparent;
-}
-body.has-hero .masthead .masthead-wordmark,
-body.has-hero .masthead .masthead-brand{color:#fff}
-body.has-hero .masthead .masthead-wordmark > span:first-of-type{color:var(--sage-lt)}
-body.has-hero .masthead .masthead-sub,
-body.has-hero .masthead .masthead-dateline,
-body.has-hero .masthead-nav a{color:rgba(255,255,255,.82)}
-body.has-hero .masthead-dateline{border-left-color:rgba(255,255,255,.28)}
-body.has-hero .masthead-brand img{border-color:rgba(255,255,255,.35)}
-body.has-hero .masthead-nav a:hover,
-body.has-hero .masthead-nav a[aria-current="page"]{
-  color:#fff;border-bottom-color:var(--sage-lt);
-}
-
-body.has-hero .masthead.is-solid{
-  background:var(--newsprint);border-bottom-color:var(--rule-hard);
-}
-body.has-hero .masthead.is-solid .masthead-wordmark,
-body.has-hero .masthead.is-solid .masthead-brand{color:var(--ink)}
-body.has-hero .masthead.is-solid .masthead-sub,
-body.has-hero .masthead.is-solid .masthead-dateline,
-body.has-hero .masthead.is-solid .masthead-nav a{color:var(--charcoal)}
-body.has-hero .masthead.is-solid .masthead-dateline{border-left-color:var(--rule)}
-body.has-hero .masthead.is-solid .masthead-nav a:hover,
-body.has-hero .masthead.is-solid .masthead-nav a[aria-current="page"]{
-  color:var(--ink);border-bottom-color:var(--sage);
+  background:var(--paper);
+  background-image:var(--grain);
+  border-bottom:2px solid var(--line-hard);
 }
 .masthead-inner{
   width:var(--measure);margin:0 auto;height:100%;
@@ -270,29 +244,29 @@ body.has-hero .masthead.is-solid .masthead-nav a[aria-current="page"]{
   flex:0 0 auto;
 }
 .masthead-brand img{
-  width:36px;height:36px;object-fit:cover;
-  border:1px solid var(--rule);
+  width:34px;height:34px;object-fit:cover;
+  border:1px solid var(--line);
 }
 .masthead-wordmark{
   font-family:var(--display);font-weight:800;
-  font-size:1.22rem;letter-spacing:-.02em;line-height:1;
+  font-size:1.2rem;letter-spacing:-.02em;line-height:1;color:var(--ink);
 }
-.masthead-wordmark span{color:var(--signal)}
+.masthead-wordmark > span:first-of-type{color:var(--signal-ink)}
 .masthead-sub{
   display:block;font-family:var(--mono);font-weight:400;
-  font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--charcoal);margin-top:3px;
+  font-size:.57rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--steel-2);margin-top:3px;
 }
 .masthead-dateline{
   flex:1 1 auto;
-  font-family:var(--mono);font-size:.68rem;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--charcoal);
-  border-left:1px solid var(--rule);padding-left:18px;
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--steel-2);
+  border-left:1px solid var(--line);padding-left:18px;
 }
 .masthead-nav{display:flex;gap:20px;flex:0 0 auto}
 .masthead-nav a{
-  font-family:var(--mono);font-size:.68rem;letter-spacing:.11em;
-  text-transform:uppercase;text-decoration:none;color:var(--charcoal);
+  font-family:var(--mono);font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;text-decoration:none;color:var(--steel);
   padding:4px 0;border-bottom:2px solid transparent;
 }
 .masthead-nav a:hover,.masthead-nav a[aria-current="page"]{
@@ -305,80 +279,81 @@ body.has-hero .masthead.is-solid .masthead-nav a[aria-current="page"]{
   .masthead-nav a{font-size:.6rem;letter-spacing:.07em}
 }
 @media (max-width:560px){
-  :root{--masthead-h:58px;--chrome-h:92px}
+  :root{--masthead-h:56px;--chrome-h:88px}
   .masthead-nav a:not(.nav-key){display:none}
-  .masthead-wordmark{font-size:1.02rem}
+  .masthead-wordmark{font-size:1rem}
 }
 
 /* ── 6. Buttons ──────────────────────────────────────────────────────────── */
+/* Orange fill carries --ink text at 6.5:1, which is how the accent gets to be
+   full strength without failing contrast. */
 .btn{
   display:inline-flex;align-items:center;gap:9px;
   font-family:var(--display);font-weight:700;font-size:1rem;
-  letter-spacing:.01em;
-  padding:13px 22px;border:2px solid var(--ink);border-radius:var(--radius);
-  background:var(--ink);color:var(--newsprint);
+  padding:13px 22px;border:2px solid var(--signal);border-radius:var(--radius);
+  background:var(--signal);color:var(--ink);
   text-decoration:none;cursor:pointer;
   transition:background .16s ease,color .16s ease,transform .16s ease;
 }
-.btn:hover{background:var(--signal);border-color:var(--signal);color:#fff;transform:translateY(-1px)}
-.btn-signal{background:var(--signal);border-color:var(--signal);color:#fff}
-.btn-signal:hover{background:var(--ink);border-color:var(--ink)}
-.btn-quiet{background:transparent;color:var(--ink)}
-.btn-quiet:hover{background:var(--ink);border-color:var(--ink);color:var(--newsprint)}
+.btn:hover{background:var(--ink);border-color:var(--ink);color:var(--paper);transform:translateY(-1px)}
+.btn-quiet{background:transparent;color:var(--ink);border-color:var(--line-hard)}
+.btn-quiet:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .btn-sm{font-size:.86rem;padding:9px 15px}
-.btn-sage{background:var(--sage);border-color:var(--sage);color:#fff}
-.btn-sage:hover{background:var(--sage-deep);border-color:var(--sage-deep);color:#fff}
 
-/* The tiny letterspaced affordance the editorial layout runs on: READ MORE + */
+/* The tiny letterspaced affordance: READ MORE + */
 .more-link{
   display:inline-flex;align-items:center;gap:7px;
-  font-family:var(--mono);font-size:.62rem;font-weight:600;
+  font-family:var(--mono);font-size:.63rem;font-weight:600;
   letter-spacing:.18em;text-transform:uppercase;
-  color:var(--sage-ink);text-decoration:none;
+  color:var(--signal-ink);text-decoration:none;
   padding-bottom:3px;border-bottom:1px solid currentColor;
 }
 .more-link::after{content:"+";font-size:.9rem;line-height:0;transition:transform .16s ease}
 .more-link:hover{color:var(--ink)}
 .more-link:hover::after{transform:translateX(3px)}
-.more-link-light{color:rgba(255,255,255,.88)}
-.more-link-light:hover{color:#fff}
 
 /* ── 7. Section furniture ────────────────────────────────────────────────── */
 .wrap{width:var(--measure);margin:0 auto}
 
 .kicker{
   display:inline-flex;align-items:center;gap:9px;
-  font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--signal-ink);font-weight:700;
+  font-family:var(--mono);
+  font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--signal-ink);font-weight:600;
   margin-bottom:12px;
 }
-.kicker::before{content:"";width:22px;height:2px;background:var(--signal)}
-.kicker-cool{color:var(--archive)}
-.kicker-cool::before{background:var(--archive)}
+.kicker::before{content:"";width:22px;height:3px;background:var(--signal)}
+.kicker-cool{color:var(--steel)}
+.kicker-cool::before{background:var(--steel)}
 
 .dek{
-  font-size:clamp(1.05rem,1.9vw,1.32rem);
-  line-height:1.5;color:var(--charcoal);max-width:62ch;
+  font-size:clamp(1.02rem,1.8vw,1.24rem);
+  line-height:1.56;color:var(--steel);max-width:64ch;
   margin:0 0 26px;
 }
 .dateline{
-  font-size:.7rem;letter-spacing:.11em;text-transform:uppercase;color:var(--charcoal);
+  font-family:var(--mono);
+  font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;color:var(--steel-2);
 }
-.rule{height:2px;background:var(--rule-hard);border:0;margin:0}
-.rule-thin{height:1px;background:var(--rule);border:0;margin:0}
+.eyebrow{
+  font-size:.62rem;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--signal-ink);display:block;
+}
+.rule{height:2px;background:var(--line-hard);border:0;margin:0}
+.rule-thin{height:1px;background:var(--line);border:0;margin:0}
 
 .pill{
   display:inline-block;padding:4px 10px;
-  font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600;
-  border:1px solid var(--rule);color:var(--charcoal);background:#fff;
+  font-family:var(--mono);
+  font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600;
+  border:1px solid var(--line);color:var(--steel);background:var(--surface);
 }
-.pill-live{background:var(--signal);border-color:var(--signal);color:#fff}
+.pill-live{background:var(--signal);border-color:var(--signal);color:var(--ink);font-weight:700}
 
 /* ── 8. Cards ────────────────────────────────────────────────────────────── */
 .card{
-  background:#fff;
-  border:1px solid var(--rule);
-  border-top:3px solid var(--ink);
+  background:var(--surface);
+  border:1px solid var(--line);
   padding:22px;
   box-shadow:var(--shadow-sm);
 }
@@ -387,40 +362,40 @@ body.has-hero .masthead.is-solid .masthead-nav a[aria-current="page"]{
 
 /* ── 9. Local to Global scale rail ───────────────────────────────────────── */
 .scale-rail{
-  border-top:2px solid var(--rule-hard);
-  border-bottom:2px solid var(--rule-hard);
+  border-top:2px solid var(--line-hard);
+  border-bottom:1px solid var(--line);
   background:var(--paper-2);
-  padding:16px 0;
+  background-image:var(--laid);
+  padding:14px 0;
 }
 .scale-rail-inner{
   width:var(--measure);margin:0 auto;
   display:flex;align-items:center;gap:14px;flex-wrap:wrap;
 }
 .scale-rail-label{
-  font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--charcoal);flex:0 0 auto;
+  font-family:var(--mono);font-size:.63rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--steel-2);flex:0 0 auto;
 }
-/* Four equal segments. A 2px gap instead of collapsed borders, so the row can
-   wrap to 2x2 on a narrow column without any of the negative-margin bookkeeping
-   that a segmented control normally needs. */
 .scale-btns{
   display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;
   flex:1 1 320px;
 }
 .rail-btn{
-  background:#fff;border:1px solid var(--rule);
+  background:var(--surface);border:1px solid var(--line);
   padding:9px 12px;cursor:pointer;
-  font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--charcoal);
+  font-size:.69rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--steel);
   transition:background .15s ease,color .15s ease;
 }
 .rail-btn:hover{background:var(--signal-wash);color:var(--ink)}
+/* Selected scale is orange: it is the one you are looking at NOW. */
 .rail-btn[aria-selected="true"]{
-  background:var(--ink);border-color:var(--ink);color:var(--newsprint);
+  background:var(--signal);border-color:var(--signal);color:var(--ink);font-weight:700;
 }
 .scale-panel{
   width:var(--measure);margin:16px auto 0;
-  background:#fff;border:1px solid var(--rule);border-left:4px solid var(--signal);
+  background:var(--surface);border:1px solid var(--line);
+  border-left:3px solid var(--signal);
   padding:18px 20px;
 }
 .scale-panel[hidden]{display:none}
@@ -429,9 +404,10 @@ body.has-hero .masthead.is-solid .masthead-nav a[aria-current="page"]{
 
 /* ── 10. THE REVERSE TIMELINE SPINE ──────────────────────────────────────── */
 /*
-   NOW at the top in bright gunmetal. Scroll down to walk backward in time; the
-   palette darkens toward ORIGIN. The structure is the pedagogy, so the line is
-   one continuous element that every step and every trace card hangs from.
+   NOW at the top in Signal Orange. Scroll down to walk backward in time; the
+   line cools into deep gunmetal toward the ORIGIN. The structure is the
+   pedagogy, so the line is one continuous element that every step and every
+   trace card hangs from.
 */
 .spine{
   position:relative;
@@ -443,131 +419,140 @@ body.has-hero .masthead.is-solid .masthead-nav a[aria-current="page"]{
   max-width:820px;
 }
 .spine::before{
-  content:"";position:absolute;left:29px;top:0;bottom:0;width:4px;
-  /* Interpolated from --signal to --archive. If you change either token, these
-     two middle stops have to move with them. */
+  content:"";position:absolute;left:29px;top:0;bottom:0;width:3px;
+  /* Interpolated --signal to --archive. If you change either token, these two
+     middle stops have to move with them. */
   background:linear-gradient(180deg,
     var(--signal)  0%,
-    #4E5C67       26%,
-    #394651       58%,
+    #C65A1B       26%,
+    #7F4626       58%,
     var(--archive) 88%,
     var(--archive)100%);
 }
 
-/* End caps, NOW at the top and ORIGIN at the bottom. */
 .spine-cap{
   position:relative;margin-left:-76px;
   display:flex;align-items:center;gap:16px;
   padding:10px 0;
 }
-.spine-cap .cap-mark{
-  flex:0 0 auto;width:62px;display:flex;justify-content:center;
-}
+.spine-cap .cap-mark{flex:0 0 auto;width:62px;display:flex;justify-content:center}
 .spine-cap .cap-dot{
-  width:19px;height:19px;border-radius:50%;
-  background:var(--signal);border:4px solid var(--newsprint);
+  width:17px;height:17px;border-radius:50%;
+  background:var(--signal);border:4px solid var(--paper);
   box-shadow:0 0 0 3px var(--signal);
 }
+/* The NOW/ORIGIN labels are text, so they use --signal-ink, not --signal. */
 .spine-cap .cap-text{
   font-family:var(--mono);font-size:.74rem;font-weight:700;
   letter-spacing:.22em;text-transform:uppercase;color:var(--signal-ink);
 }
 .spine-cap-origin .cap-dot{background:var(--archive);box-shadow:0 0 0 3px var(--archive)}
-.spine-cap-origin .cap-text{color:var(--archive)}
+.spine-cap-origin .cap-text{color:var(--steel)}
 .spine-cap .cap-note{
   font-family:var(--body);font-size:.78rem;letter-spacing:0;text-transform:none;
-  color:var(--charcoal);display:block;margin-top:2px;font-weight:400;
+  color:var(--steel-2);display:block;margin-top:2px;font-weight:400;
 }
 
-/* Anything hanging off the spine. --node carries this item's interpolated value. */
+/* Anything hanging off the spine. --node carries this item's interpolated hue. */
 .spine-item{
   --node:var(--signal);
   position:relative;
   padding:26px 0 34px;
 }
-.spine-item::before{               /* the node dot, sitting on the line */
+.spine-item::before{
   content:"";position:absolute;left:-53px;top:34px;
-  width:15px;height:15px;border-radius:50%;
+  width:13px;height:13px;border-radius:50%;
   background:var(--node);
-  border:3px solid var(--newsprint);
+  border:3px solid var(--paper);
   box-shadow:0 0 0 2px var(--node);
 }
-.spine-item::after{                /* the tick connecting dot to content */
-  content:"";position:absolute;left:-36px;top:41px;
-  width:26px;height:2px;background:var(--node);opacity:.45;
+.spine-item::after{
+  content:"";position:absolute;left:-36px;top:40px;
+  width:26px;height:1px;background:var(--node);opacity:.55;
 }
 
-/* Numbered step heading, used by steps 02 to 05 on an event page. */
 .step-head{display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
-.step-num{
-  font-size:.82rem;font-weight:700;letter-spacing:.16em;
-  color:var(--node);
+/* Step numbers are text on paper, so they take the darker orange. */
+.step-num{font-size:.82rem;font-weight:700;letter-spacing:.16em;color:var(--signal-ink)}
+.step-title{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.06;margin:0;color:var(--ink);
 }
-.step-title{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.06;margin:0}
-.step-note{color:var(--charcoal);font-size:.94rem;margin:8px 0 20px;max-width:64ch}
+.step-note{color:var(--steel);font-size:.95rem;margin:8px 0 20px;max-width:64ch}
 
 /* Trace cards, the reverse-chronological stack inside step 03. */
 .trace-card{
-  background:#fff;
-  border:1px solid var(--rule);
-  border-left:5px solid var(--node);
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-left:4px solid var(--node);
   padding:20px 22px;
   box-shadow:var(--shadow-sm);
 }
-.trace-head{
-  display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px;
-}
+.trace-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+/*
+   Era tags are OUTLINED, not filled, and this is a contrast decision rather
+   than a stylistic one. The node colour sweeps orange to deep gunmetal, and in
+   the middle of that sweep the fill lands on a mid-tone where NEITHER dark nor
+   light text reaches 4.5:1: the best available foreground peaks around 4.05:1.
+   No choice of text colour rescues a filled mid-ramp chip at 10px.
+   So the ramp moves to the border, and the text is always --ink at 15.9:1.
+   The "receding into the past" reading survives intact.
+*/
 .era-tag{
-  font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
-  color:#fff;background:var(--node);padding:4px 10px;
+  font-size:.63rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink);background:transparent;
+  border:1.5px solid var(--node);padding:3px 9px;
 }
 .trace-years{
-  font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--charcoal);
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--steel-2);
 }
-.trace-card h3{font-size:1.28rem;margin-bottom:.4em}
-.trace-summary{margin-bottom:14px}
+.trace-card h3{font-size:1.26rem;margin-bottom:.4em}
+.trace-summary{margin-bottom:14px;color:var(--ink)}
 .trace-source{
-  font-family:var(--mono);font-size:.71rem;line-height:1.55;color:var(--charcoal);
-  border-top:1px solid var(--rule);padding-top:11px;
+  font-family:var(--mono);font-size:.7rem;line-height:1.6;color:var(--steel);
+  border-top:1px solid var(--line);padding-top:11px;
 }
-.trace-source strong{color:var(--ink);letter-spacing:.08em;text-transform:uppercase;font-size:.64rem}
+.trace-source strong{
+  color:var(--ink);letter-spacing:.08em;text-transform:uppercase;font-size:.63rem;
+}
 
 @media (max-width:640px){
   .spine{padding-left:44px}
   .spine::before{left:13px}
   .spine-cap{margin-left:-44px}
   .spine-cap .cap-mark{width:30px}
-  .spine-item::before{left:-38px;width:13px;height:13px}
+  .spine-item::before{left:-38px;width:12px;height:12px}
   .spine-item::after{display:none}
   .trace-card{padding:17px 16px}
 }
 
 /* ── 11. Culture Beat callout ────────────────────────────────────────────── */
+/* The one deliberately dark band on the page: it is the change of pace. */
 .culture-beat{
-  background:var(--archive);color:#fff;
-  border-top:5px solid var(--signal);
+  background:var(--archive);color:rgba(244,242,236,.85);
+  border-top:3px solid var(--signal);
   padding:34px 0;
 }
 .culture-beat .wrap{display:grid;grid-template-columns:1fr;gap:22px}
-.culture-beat h2{color:#fff}
+.culture-beat h2,.culture-beat h3{color:#fff}
 .culture-beat .kicker{color:var(--signal)}
-.culture-beat .dek{color:rgba(255,255,255,.82)}
+.culture-beat .kicker::before{background:var(--signal)}
+.culture-beat .dek{color:rgba(244,242,236,.78)}
 .culture-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .culture-card{
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.18);
-  border-top:3px solid var(--signal);
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.16);
   padding:18px;
 }
-.culture-card .pill{background:transparent;border-color:rgba(255,255,255,.34);color:rgba(255,255,255,.8)}
-.culture-card h3{color:#fff;font-size:1.1rem;margin:12px 0 .3em}
-.culture-card p{color:rgba(255,255,255,.78);font-size:.92rem;margin-bottom:0}
+.culture-card .pill{background:transparent;border-color:rgba(255,255,255,.3);color:rgba(244,242,236,.82)}
+.culture-card h3{font-size:1.08rem;margin:12px 0 .3em}
+.culture-card p{color:rgba(244,242,236,.76);font-size:.92rem;margin-bottom:0}
 @media (max-width:760px){.culture-grid{grid-template-columns:1fr}}
 
 /* ── 12. Footer ──────────────────────────────────────────────────────────── */
 .site-footer{
-  background:var(--ink);color:rgba(250,250,247,.72);
-  padding:40px 0 32px;margin-top:0;
+  background:var(--ink);color:rgba(244,242,236,.72);
+  padding:40px 0 32px;
 }
 .site-footer .wrap{display:flex;gap:26px;flex-wrap:wrap;justify-content:space-between;align-items:flex-start}
 .footer-brand{
@@ -577,37 +562,44 @@ body.has-hero .masthead.is-solid .masthead-nav a[aria-current="page"]{
 .site-footer p{font-size:.85rem;max-width:46ch;margin:8px 0 0}
 .footer-links{display:flex;flex-direction:column;gap:7px}
 .footer-links a{
-  font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
-  color:rgba(250,250,247,.72);text-decoration:none;
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(244,242,236,.72);text-decoration:none;
 }
 .footer-links a:hover{color:var(--signal)}
 
 /* ── 13. Tables ──────────────────────────────────────────────────────────── */
-/* Wide tables scroll inside their own box so the page never scrolls sideways. */
 .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
 .table{
-  width:100%;min-width:640px;border-collapse:collapse;background:#fff;
-  border:1px solid var(--rule);
+  width:100%;min-width:640px;border-collapse:collapse;background:var(--surface);
+  border:1px solid var(--line);
 }
 .table th,.table td{
   text-align:left;vertical-align:top;padding:13px 15px;
-  border-bottom:1px solid var(--rule);font-size:.9rem;
+  border-bottom:1px solid var(--line);font-size:.9rem;color:var(--steel);
 }
 .table thead th{
-  background:var(--ink);color:var(--newsprint);
-  font-family:var(--mono);font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;
+  background:var(--ink);color:var(--paper);
+  font-family:var(--mono);font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;
   font-weight:600;border-bottom:0;
 }
 .table tbody th{
-  font-family:var(--display);font-weight:700;font-size:1rem;
-  border-left:4px solid var(--signal);width:24%;
+  font-family:var(--display);font-weight:700;font-size:1rem;color:var(--ink);
+  border-left:3px solid var(--signal);width:24%;
 }
+.table tbody tr:nth-child(even) td,
+.table tbody tr:nth-child(even) th{background:rgba(35,44,51,.025)}
 .table tbody tr:last-child th,.table tbody tr:last-child td{border-bottom:0}
 
 /* ── 14. Utilities ───────────────────────────────────────────────────────── */
-.section{padding:56px 0}
-.section-tight{padding:36px 0}
-.section-paper{background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.section{padding:44px 0}
+.section-tight{padding:32px 0}
+/* The alternating band carries the laid-paper hairlines, which is where most of
+   the page's texture actually reads. */
+.section-paper{
+  background-color:var(--paper-2);
+  background-image:var(--laid),var(--grain);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
 .sr-only{
   position:absolute;width:1px;height:1px;padding:0;margin:-1px;
   overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;

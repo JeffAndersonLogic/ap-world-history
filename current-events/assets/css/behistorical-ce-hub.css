@@ -3,253 +3,206 @@
    File: assets/css/behistorical-ce-hub.css
    Loads after behistorical-newsroom.css. Front-page layout only.
 
-   Editorial magazine layout: a full-bleed hero with a dark scrim, a split
-   feature strip, and an asymmetric card mosaic that mixes text-over-image
-   cards with plain text cards.
+   Layout B on light newsprint: a compact text-first masthead block, then the event bank
+   immediately. No full-bleed hero. The design council measured the previous
+   magazine hero pushing the actual event cards to y=1087, which is 319px below
+   the fold on a 1366x768 Chromebook, so a student's whole first screen was a
+   headline and two buttons. The lede here is deliberately short so the cards
+   start above the fold.
 
-   IMAGE CONTRACT (carried from AP World): every image slot has TWO layers,
-   generated local art underneath and an optional photograph on top with
-   onerror="this.remove()". Never style a card so it collapses without the
-   photo, and never put card artwork in a CSS custom property, because a
-   relative url() inside one resolves against this stylesheet's folder.
+   Orange marks NOW, nothing else. On this page that means: the live event, the
+   current step in the rhythm ladder, and the primary action.
    ========================================================================== */
 
-/* ── Shared: the two-layer image frame ───────────────────────────────────── */
-.frame{position:relative;overflow:hidden;background:var(--archive)}
-.frame > .art,
-.frame > .photo{
-  position:absolute;inset:0;width:100%;height:100%;
-  object-fit:cover;display:block;
+/* ── Lede ────────────────────────────────────────────────────────────────── */
+.lede{
+  padding:30px 0 24px;
+  border-bottom:1px solid var(--line-hard);
 }
-.frame > .photo{z-index:1}
-.frame > .scrim{
-  position:absolute;inset:0;z-index:2;
-  background:linear-gradient(180deg,
-    rgba(20,23,26,.20) 0%,
-    rgba(20,23,26,.42) 45%,
-    rgba(20,23,26,.86) 100%);
+.lede-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:end}
+.lede h1{margin:0 0 .22em;font-size:clamp(2.2rem,4.6vw,3.4rem);max-width:18ch}
+/* Emphasis by rule, not by colour swap: a tinted word inside a white headline
+   reads as faded, an underline reads as stressed. */
+.lede h1 em{
+  font-style:normal;color:inherit;
+  background-image:linear-gradient(var(--signal),var(--signal));
+  background-repeat:no-repeat;background-size:100% .08em;background-position:0 92%;
 }
-.frame > .frame-body{position:relative;z-index:3}
+.lede-meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.lede .dek{margin-bottom:0;max-width:52ch}
+.lede-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
 
-/* ── Hero ────────────────────────────────────────────────────────────────── */
-.hero{
-  position:relative;
-  min-height:min(86vh,760px);
-  display:flex;align-items:flex-end;
-  padding:calc(var(--chrome-h) + 56px) 0 60px;
-  background:var(--archive);
-  overflow:hidden;
+/* The method, drawn as the reverse ladder it actually is. */
+.ladder-box{
+  background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-sm);
+  border-top:3px solid var(--signal);
+  padding:20px 22px;
 }
-.hero .art,.hero .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero .photo{z-index:1}
-.hero .scrim{
-  position:absolute;inset:0;z-index:2;
-  background:
-    linear-gradient(90deg, rgba(20,23,26,.86) 0%, rgba(20,23,26,.60) 52%, rgba(20,23,26,.30) 100%),
-    linear-gradient(180deg, rgba(20,23,26,.55) 0%, rgba(20,23,26,.10) 30%, rgba(20,23,26,.55) 100%);
+.ladder-box h2{font-size:1.08rem;margin-bottom:.55em}
+.ladder{list-style:none;margin:0;padding:0}
+.ladder li{
+  position:relative;padding:0 0 14px 28px;
+  font-size:.88rem;line-height:1.45;color:var(--steel);
 }
-.hero-inner{position:relative;z-index:3;width:var(--measure);margin:0 auto}
-.hero-grid{
-  display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:end;
+.ladder li::before{
+  content:"";position:absolute;left:5px;top:6px;
+  width:10px;height:10px;border-radius:50%;
+  background:var(--rung);box-shadow:0 0 0 3px var(--surface);
 }
-.hero-eyebrow{
-  display:inline-flex;align-items:center;gap:11px;
-  font-family:var(--mono);font-size:.66rem;font-weight:600;
-  letter-spacing:.2em;text-transform:uppercase;
-  color:rgba(255,255,255,.86);margin-bottom:20px;
+.ladder li::after{
+  content:"";position:absolute;left:9px;top:16px;bottom:0;width:2px;
+  background:var(--rung);opacity:.5;
 }
-.hero-eyebrow::before{content:"";width:32px;height:2px;background:var(--sage-lt)}
-.hero h1{
-  color:#fff;font-size:clamp(2.5rem,5.4vw,4.1rem);
-  margin:0 0 .3em;max-width:16ch;
+.ladder li:last-child{padding-bottom:0}
+.ladder li:last-child::after{display:none}
+.ladder li strong{display:block;color:var(--ink);font-family:var(--display);font-size:.98rem}
+.ladder-foot{
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--steel-2);border-top:1px solid var(--line);margin-top:14px;padding-top:11px;
 }
-.hero h1 em{
-  font-style:normal;
-  background-image:linear-gradient(var(--sage-lt),var(--sage-lt));
-  background-repeat:no-repeat;background-size:100% .09em;background-position:0 92%;
-}
-.hero-dek{
-  color:rgba(255,255,255,.82);font-size:clamp(1rem,1.6vw,1.16rem);
-  max-width:48ch;margin:0;
-}
-.hero-aside p{
-  color:rgba(255,255,255,.78);font-size:.96rem;line-height:1.6;
-  max-width:40ch;margin:0 0 22px;
-}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.hero .btn-quiet{color:#fff;border-color:rgba(255,255,255,.55)}
-.hero .btn-quiet:hover{background:#fff;color:var(--ink);border-color:#fff}
 
 @media (max-width:900px){
-  .hero{min-height:0;padding:calc(var(--chrome-h) + 40px) 0 44px}
-  .hero-grid{grid-template-columns:1fr;gap:30px;align-items:start}
-  .hero h1{max-width:none}
+  .lede-grid{grid-template-columns:1fr;gap:26px;align-items:start}
+  .lede h1{max-width:none}
 }
 
-/* ── Feature strip: sage panel + two feature cards ───────────────────────── */
-.feature-strip{
-  display:grid;grid-template-columns:1fr 1.15fr 1.15fr;
-  background:#fff;border:1px solid var(--rule);
-  margin-top:-46px;position:relative;z-index:5;
-  box-shadow:var(--shadow);
+/* ── Event bank ──────────────────────────────────────────────────────────── */
+.event-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px;
 }
-.feature-panel{
-  background:var(--sage);color:#fff;padding:30px 28px;
-  display:flex;flex-direction:column;justify-content:center;gap:12px;
-}
-.feature-panel .kicker{color:rgba(255,255,255,.8)}
-.feature-panel .kicker::before{background:rgba(255,255,255,.7)}
-.feature-panel p{margin:0;font-size:1.02rem;line-height:1.5}
-.feature-panel strong{
-  display:block;font-family:var(--display);font-weight:800;
-  font-size:1.28rem;line-height:1.2;
-}
-.feature-card{
-  padding:26px 24px;border-left:1px solid var(--rule);
-  display:flex;gap:18px;align-items:stretch;
-}
-.feature-card > div{display:flex;flex-direction:column;flex:1 1 auto}
-.feature-card .more-link{margin-top:auto;align-self:flex-start}
-.feature-thumb{
-  flex:0 0 84px;height:84px;border:1px solid var(--rule);
-}
-.feature-card .label{
-  font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--charcoal);display:block;margin-bottom:6px;
-}
-.feature-card h3{font-size:1.08rem;margin:0 0 6px;line-height:1.25}
-.feature-card p{font-size:.86rem;color:var(--charcoal);margin:0 0 12px}
-
-@media (max-width:980px){
-  .feature-strip{grid-template-columns:1fr;margin-top:-30px}
-  .feature-card{border-left:0;border-top:1px solid var(--rule)}
-}
-
-/* ── The mosaic: event cards + interleaved text cards ────────────────────── */
-.mosaic{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;margin-top:34px;
-}
-.mosaic > .span-2{grid-column:span 2}
-
-/* A card whose content sits on the artwork. */
-.photo-card{
-  position:relative;overflow:hidden;
-  min-height:290px;display:flex;align-items:flex-end;
+/* The event bank runs tight to the fold on purpose: on a 1366x768 Chromebook
+   the first card has to be visible without scrolling. Do not add copy above
+   this grid without re-measuring. */
+#events .dek{margin-bottom:14px}
+.event-card{
+  display:flex;flex-direction:column;
+  background:var(--surface);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow-sm);
   text-decoration:none;color:inherit;
-  background:var(--archive);
-  transition:transform .2s ease,box-shadow .2s ease;
+  transition:transform .16s ease,border-color .16s ease;
 }
-.photo-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-.photo-card .frame-body{padding:24px 22px;width:100%}
-.photo-card .eyebrow{
-  font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--sage-lt);
-  display:block;margin-bottom:9px;
-}
-.photo-card h3{color:#fff;font-size:1.3rem;margin:0 0 8px;line-height:1.18}
-.photo-card p{
-  color:rgba(255,255,255,.78);font-size:.88rem;line-height:1.5;
-  margin:0 0 14px;max-width:40ch;
-}
-.photo-card.span-2{min-height:330px}
-.photo-card.span-2 h3{font-size:1.6rem;max-width:20ch}
+.event-card:hover{transform:translateY(-3px);border-color:var(--line-hard)}
+.event-card:hover h3{color:var(--signal-ink)}
 
-/* The trace preview, NOW to ORIGIN in one line. Lit to dark, same rule as the spine. */
+/* The council's compromise on imagery: keep the generated artwork, but at
+   thumbnail scale as a card header rather than full-bleed under a scrim. Small
+   abstract art reads as intentional; large abstract art reads as a missing
+   photograph. Two layers per the Image Contract: generated art underneath, an
+   optional photo on top with onerror="this.remove()". */
+.event-art{
+  position:relative;height:96px;overflow:hidden;background:var(--paper-2);
+  border-bottom:1px solid var(--line);
+}
+.event-art .art,.event-art .photo{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+}
+.event-art .photo{z-index:1}
+
+.event-card-top{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:12px 18px 0;
+}
+.event-num{
+  font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.16em;
+  color:var(--steel);
+}
+.event-strand{
+  font-family:var(--mono);font-size:.58rem;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--steel-2);
+}
+.event-card-body{padding:12px 18px 20px;display:flex;flex-direction:column;flex:1 1 auto;gap:9px}
+.event-card h3{font-size:1.24rem;margin:0;transition:color .16s ease}
+.event-card p{font-size:.89rem;color:var(--steel);margin:0}
+
+/* The live event is the only orange card on the page. */
+.event-card[data-status="live"]{border-color:var(--signal)}
+.event-card[data-status="live"] .event-num{color:var(--signal-ink)}
+
+/*
+   Unbuilt events are NOT links. The council flagged 5 of 6 tiles pointing at
+   a dead anchor: in a uniform grid every tile reads as equally clickable, so a
+   student clicking "Iran" got silence. These are <div>s now, visibly inert,
+   with a real explanation instead of a 0.6rem label.
+*/
+.event-card[data-status="soon"]{
+  border-style:dashed;background:transparent;box-shadow:none;
+}
+.event-card[data-status="soon"]:hover{transform:none;border-color:var(--line)}
+.event-card[data-status="soon"] .event-art{opacity:.4}
+.event-card[data-status="soon"] h3{color:var(--steel)}
+.event-card[data-status="soon"] p{color:var(--steel-2)}
+.event-opens{
+  margin-top:auto;padding-top:12px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--steel-2);
+}
+
+/* The trace preview, NOW to ORIGIN in one line. Hot to dim, same rule as the spine. */
 .trace-preview{
-  display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-bottom:14px;
+  display:flex;align-items:center;gap:5px;flex-wrap:wrap;
+  margin-top:auto;padding-top:13px;border-top:1px solid var(--line);
 }
-/* On a dark card the lit-to-dark ramp would run the late chips into the
-   background and they would disappear. So on dark the chips are outlined and
-   fade by OPACITY instead of by fill: same "receding into the past" reading,
-   still legible at the origin end. */
+/* Outlined, not filled, for the same contrast reason as the era tags in the
+   design system: a filled mid-ramp chip cannot carry 10px text at AA under any
+   foreground. The ramp lives in the border; the text stays --ink. */
 .trace-chip{
-  font-family:var(--mono);font-size:.55rem;letter-spacing:.09em;text-transform:uppercase;
+  font-family:var(--mono);font-size:.57rem;letter-spacing:.09em;text-transform:uppercase;
   padding:3px 7px;white-space:nowrap;
-  color:#fff;background:transparent;
-  border:1px solid rgba(255,255,255,.45);
+  background:transparent;color:var(--ink);font-weight:600;
+  border:1.5px solid var(--chip,var(--signal));
 }
-.trace-arrow{font-family:var(--mono);font-size:.66rem;color:rgba(255,255,255,.55)}
+.trace-arrow{font-family:var(--mono);font-size:.68rem;color:var(--steel-2)}
 
-/* A plain text card, the light beat between the dark ones. */
-.text-card{
-  background:#fff;border:1px solid var(--rule);
-  padding:28px 24px;display:flex;flex-direction:column;gap:10px;
-  min-height:290px;
-}
-.text-card .eyebrow{
-  font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--sage-ink);
-}
-.text-card h3{font-size:1.42rem;margin:0;line-height:1.16}
-.text-card p{font-size:.9rem;color:var(--charcoal);margin:0}
-.text-card .more-link{margin-top:auto;align-self:flex-start}
+@media (max-width:980px){.event-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.event-grid{grid-template-columns:1fr}}
 
-/* Cards for events that are not open yet. */
-.photo-card[data-status="soon"]{opacity:.82}
-.photo-card[data-status="soon"] .eyebrow{color:rgba(255,255,255,.6)}
-
-@media (max-width:980px){
-  .mosaic{grid-template-columns:repeat(2,1fr)}
-  .mosaic > .span-2{grid-column:span 2}
-}
-@media (max-width:640px){
-  .mosaic{grid-template-columns:1fr}
-  .mosaic > .span-2{grid-column:span 1}
-  .photo-card,.text-card{min-height:250px}
-}
-
-/* ── How a unit works: the five-step rhythm ──────────────────────────────── */
-.rhythm-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:30px}
+/* ── How a unit works ────────────────────────────────────────────────────── */
+.rhythm-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:28px}
 .rhythm-card{
-  background:#fff;border:1px solid var(--rule);margin-left:-1px;
-  border-top:4px solid var(--step,var(--signal));
-  padding:22px 18px 24px;
-  display:flex;flex-direction:column;gap:9px;
+  background:var(--surface);border:1px solid var(--line);margin-left:-1px;
+  border-top:3px solid var(--step,var(--signal));
+  padding:20px 17px 22px;
+  display:flex;flex-direction:column;gap:8px;
 }
 .rhythm-card:first-child{margin-left:0}
+/* The border-top takes the bright ramp (--step); the numeral takes the darker
+   ramp (--step-ink). Full-strength orange is 2.6:1 on paper and cannot carry
+   text, so these two cannot be the same value. */
 .rhythm-num{
-  font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.16em;
-  color:var(--step,var(--signal));
+  font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.16em;
+  color:var(--step-ink,var(--signal-ink));
 }
-.rhythm-card h3{font-size:1.06rem;margin:0}
-.rhythm-card p{font-size:.88rem;color:var(--charcoal);margin:0}
+.rhythm-card h3{font-size:1.02rem;margin:0}
+.rhythm-card p{font-size:.85rem;color:var(--steel);margin:0}
 .rhythm-card .from{
-  margin-top:auto;padding-top:12px;border-top:1px solid var(--rule);
-  font-family:var(--mono);font-size:.62rem;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--charcoal);
+  margin-top:auto;padding-top:11px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--steel-2);
 }
 @media (max-width:1000px){
   .rhythm-grid{grid-template-columns:repeat(2,1fr)}
-  .rhythm-card{margin-left:0;margin-top:-1px;border-left:1px solid var(--rule)}
+  .rhythm-card{margin-left:0;margin-top:-1px;border-left:1px solid var(--line)}
 }
 @media (max-width:560px){.rhythm-grid{grid-template-columns:1fr}}
 
-/* ── Closing band: title left, copy and CTA right ────────────────────────── */
-.closer{
-  display:grid;grid-template-columns:1fr 1.4fr;gap:44px;align-items:center;
-  padding:8px 0;
-}
-.closer .eyebrow{
-  font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--sage-ink);display:block;margin-bottom:10px;
-}
-.closer h2{margin:0;font-size:clamp(1.9rem,3.4vw,2.7rem)}
-.closer-body{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
-.closer-body p{margin:0;color:var(--charcoal);font-size:.98rem;max-width:52ch;flex:1 1 320px}
-@media (max-width:860px){.closer{grid-template-columns:1fr;gap:22px}}
+/* ── Closing band ────────────────────────────────────────────────────────── */
+.closer{display:grid;grid-template-columns:1fr 1.4fr;gap:44px;align-items:center;padding:8px 0}
+.closer h2{margin:0;font-size:clamp(1.8rem,3.2vw,2.5rem)}
+.closer .eyebrow{margin-bottom:10px}
+.closer-body{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.closer-body p{margin:0;color:var(--steel);font-size:.97rem;max-width:52ch;flex:1 1 320px}
+@media (max-width:860px){.closer{grid-template-columns:1fr;gap:20px}}
 
 /* ── Rails to the recurring sections ─────────────────────────────────────── */
-.rail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px}
+.rail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
 .rail-card{
-  background:#fff;border:1px solid var(--rule);border-left:5px solid var(--sage);
+  background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--steel);
   padding:22px;text-decoration:none;color:inherit;box-shadow:var(--shadow-sm);
-  transition:transform .16s ease;
+  transition:transform .16s ease,border-color .16s ease;
 }
-.rail-card:hover{transform:translateY(-3px)}
-.rail-card:hover h3{color:var(--sage-ink)}
-.rail-card h3{font-size:1.18rem;margin:10px 0 .35em}
-.rail-card p{font-size:.9rem;color:var(--charcoal);margin:0}
-.rail-card-cool{border-left-color:var(--archive)}
+.rail-card:hover{transform:translateY(-3px);border-left-color:var(--signal)}
+.rail-card:hover h3{color:var(--signal-ink)}
+.rail-card h3{font-size:1.14rem;margin:10px 0 .35em;transition:color .16s ease}
+.rail-card p{font-size:.89rem;color:var(--steel);margin:0}
 @media (max-width:860px){.rail-grid{grid-template-columns:1fr}}

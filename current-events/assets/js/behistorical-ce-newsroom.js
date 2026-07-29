@@ -33,12 +33,13 @@
   }
 
   /**
-   * The gradient that carries the meaning: lit present, dark past.
+   * The gradient that carries the meaning: hot present, dim past.
+   * Orange at NOW, gunmetal at the ORIGIN.
    * i = 0 is NOW (--signal), i = total - 1 is ORIGIN (--archive).
    */
   function spineColor(i, total) {
-    var a = hexToRgb(token('--signal', '#5E6D79'));
-    var b = hexToRgb(token('--archive', '#1F2A34'));
+    var a = hexToRgb(token('--signal', '#FF6A13'));
+    var b = hexToRgb(token('--archive', '#232C33'));
     var t = total > 1 ? i / (total - 1) : 0;
     var mix = a.map(function (c, k) { return Math.round(c + (b[k] - c) * t); });
     return 'rgb(' + mix.join(',') + ')';
@@ -49,7 +50,7 @@
    *
    * The trace cards get the whole gradient to themselves, NOW to ORIGIN, because
    * they are the part that is actually about time. The framing steps around them
-   * pin to the nearest end: everything above the trace stays bright, everything
+   * pin to the nearest end: everything above the trace stays hot, everything
    * below it stays dark. Without this the trace would only ever use the middle
    * of the range and the signature element would read as muddy.
    */
@@ -73,13 +74,13 @@
 
     var first = traceIdx[0];
     var last  = traceIdx[traceIdx.length - 1];
-    var lit  = spineColor(0, 2);           // pure --signal
-    var dark = spineColor(1, 2);           // pure --archive
+    var hot = spineColor(0, 2);            // pure --signal
+    var dim = spineColor(1, 2);            // pure --archive
 
     items.forEach(function (el, i) {
       var c;
-      if (i < first)      c = lit;
-      else if (i > last)  c = dark;
+      if (i < first)      c = hot;
+      else if (i > last)  c = dim;
       else                c = spineColor(traceIdx.indexOf(i), traceIdx.length);
       el.style.setProperty('--node', c);
     });

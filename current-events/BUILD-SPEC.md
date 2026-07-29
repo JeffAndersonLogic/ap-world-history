@@ -89,25 +89,31 @@ Every event page runs the same five steps, so students learn one repeatable meth
 **Concept:** a wire-service newsroom. Where AP World is the archive, Current Events is the **live desk**.
 
 ### Signature element
-**The Reverse Timeline spine.** A vertical spine that anchors every event page. **NOW sits at the top in bright gunmetal; scrolling down walks *backward* through time toward the ORIGIN, and the palette darkens as you descend** (lit = present, dark = past). The structure *is* the pedagogy.
+**The Reverse Timeline spine.** A vertical spine that anchors every event page. **NOW sits at the top in Signal Orange; scrolling down walks *backward* through time toward the ORIGIN, and the line cools into deep gunmetal as you descend** (hot = present, dim = past). The structure *is* the pedagogy.
 
 ### Color tokens
 
-> **Revised 2026-07-29.** The original brief called for a bright wire-service
-> orange. Jeff asked for gunmetal grey instead, so the accent changed and the
-> gradient was re-cut to run on **value** rather than temperature. The pedagogy
-> is unchanged: the top of the spine is still the present, the bottom is still
-> the origin.
+> **Revised 2026-07-29.** The wire-service orange was first swapped for gunmetal
+> grey, then the design council picked the spine-led broadsheet, and the final
+> direction is a light newsprint page with dark gunmetal type, occasional orange,
+> and paper texture. The pedagogy never changed: the top of the spine is the
+> present, the bottom is the origin.
 
 ```
---ink:        #14171A   /* masthead, headlines, primary text */
---newsprint:  #F6F7F7   /* page background — cool off-white, not cream */
---signal:     #5E6D79   /* THE accent: ticker, "NOW", live markers, spine top */
---charcoal:   #5A6169   /* secondary text, hairline rules, datelines */
---archive:    #1F2A34   /* the "past/origin" deep tone — spine bottom, THEN markers */
+--paper:      #F4F2EC   /* page background, warm newsprint */
+--paper-2:    #E9E6DE   /* alternating bands, carries the laid texture */
+--surface:    #FFFFFF   /* cards and reading panels */
+--ink:        #14181B   /* headlines and primary text, 15.9:1 */
+--steel:      #4A555D   /* secondary text and structure, 6.8:1 */
+--steel-2:    #5C666F   /* tertiary: datelines, strands, 5.2:1 */
+--archive:    #232C33   /* deep gunmetal, the ORIGIN end of the spine */
+--signal:     #FF6A13   /* SIGNAL ORANGE. Fills and rules only, NOT text. */
+--signal-ink: #A63C08   /* the only orange permitted for text, 5.7:1 */
 ```
 
-Rule of thumb: **NOW is lit (`--signal`), THEN is dark (`--archive`).**
+Rule of thumb: **ORANGE MARKS NOW**, and it marks it with a fill, a rule or a
+dot, never with the colour of a word. #FF6A13 is 2.6:1 on this paper and cannot
+carry text; `--signal-ink` is what type uses.
 
 ### Typography (3 roles)
 - **Display (headlines):** *Newsreader*, a serif drawn for news. Revised

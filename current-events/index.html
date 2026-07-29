@@ -11,14 +11,14 @@
 <link rel="stylesheet" href="assets/css/behistorical-newsroom.css">
 <link rel="stylesheet" href="assets/css/behistorical-ce-hub.css">
 </head>
-<!-- has-hero: the masthead overlays the photo hero and turns solid on scroll. -->
-<body class="has-hero">
+<body>
 
 <a class="skip-link" href="#main">Skip to the front page</a>
 
 <!-- ─── TICKER ───────────────────────────────────────────────────────────────
      Teacher: edit these .ticker-item spans. Anything you can say in eight
-     words belongs here. The script duplicates the run for a seamless crawl.
+     words belongs here. The script duplicates the run for a seamless crawl,
+     and the Pause button kills it for the whole block.
 ─────────────────────────────────────────────────────────────────────────── -->
 <div class="ticker" data-paused="false">
   <div class="ticker-label"><span class="ticker-dot" aria-hidden="true"></span>Live</div>
@@ -39,7 +39,7 @@
 <header class="masthead">
   <div class="masthead-inner">
     <a class="masthead-brand" href="index.html">
-      <img src="assets/logos/behistorical-logo.jpeg" alt="">
+      <img src="assets/logos/behistorical-logo.jpeg" alt="" width="34" height="34">
       <span class="masthead-wordmark">Be<span>Historical</span>
         <span class="masthead-sub">Current Events</span>
       </span>
@@ -56,97 +56,65 @@
 
 <main id="main">
 
-  <!-- ─── HERO ───────────────────────────────────────────────────────────────
-       Two image layers, per the Image Contract. The generated .art is the floor;
-       drop a photograph into .photo and it layers on top. If that URL ever dies,
-       onerror removes it and the art underneath carries the hero.
+  <!-- ─── LEDE ───────────────────────────────────────────────────────────────
+       Deliberately short. The event cards have to clear the fold on a 1366x768
+       Chromebook, so this block is capped at roughly 300px tall.
   ──────────────────────────────────────────────────────────────────────────── -->
-  <section class="hero">
-    <img class="art" src="assets/images/card-art/hero.svg" alt="" aria-hidden="true">
-    <!-- <img class="photo" src="PHOTO_URL_HERE" alt="" aria-hidden="true" onerror="this.remove()"> -->
-    <div class="scrim" aria-hidden="true"></div>
-
-    <div class="hero-inner">
-      <div class="hero-grid">
-        <div>
-          <span class="hero-eyebrow">Reverse history &middot; Semester elective</span>
-          <h1>Every headline has a <em>history</em>. We run it backward.</h1>
-          <p class="hero-dek">
-            Most history classes start at the beginning and walk forward to now.
-            This one starts with a story that is happening today and traces it
-            back, step by step, to the moment it actually began.
-          </p>
+  <section class="lede">
+    <div class="wrap lede-grid">
+      <div>
+        <div class="lede-meta">
+          <span class="pill pill-live">Now enrolling</span>
+          <span class="dateline">Semester elective &middot; Grades 9 to 12 &middot; 20 weeks</span>
         </div>
-
-        <div class="hero-aside">
-          <p>
-            Six events, one repeatable method, and a story of your own that you
-            follow all semester. Grades 9 to 12, twenty weeks, no prior history
-            course required.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-sage" href="event-01/index.html">Start with Event 01 &rarr;</a>
-            <a class="btn btn-quiet" href="#rhythm">How a unit works</a>
-          </div>
+        <h1>Every headline has a <em>history</em>. We run it backward.</h1>
+        <p class="dek">
+          This course starts with a story that is happening today and traces it
+          back, step by step, to the moment it actually began.
+        </p>
+        <div class="lede-actions">
+          <a class="btn" href="event-01/index.html">Start with Event 01 &rarr;</a>
+          <a class="btn btn-quiet" href="#rhythm">How a unit works</a>
         </div>
       </div>
+
+      <aside class="ladder-box" aria-labelledby="method-h">
+        <div class="kicker">The method</div>
+        <h2 id="method-h">Reverse history, in four moves</h2>
+        <ol class="ladder">
+          <li style="--rung:#FF6A13"><strong>Start at NOW</strong>Name one real event that is in the news this week.</li>
+          <li style="--rung:#BD5E27"><strong>Ask what caused it</strong>Not what it resembles. What actually produced it.</li>
+          <li style="--rung:#7C523A"><strong>Keep going back</strong>Follow the causes until the trail leaves living memory.</li>
+          <li style="--rung:#3A464E"><strong>Land on the origin</strong>Find the decision, invention, or accident that started it.</li>
+        </ol>
+        <p class="ladder-foot">Orange is now &middot; Gunmetal is the past</p>
+      </aside>
     </div>
   </section>
 
-  <!-- ─── FEATURE STRIP ──────────────────────────────────────────────────── -->
-  <div class="wrap">
-    <div class="feature-strip">
-      <div class="feature-panel">
-        <div class="kicker">The method</div>
-        <strong>Start at NOW. Prove your way back to the origin.</strong>
-        <p>Not what today resembles in the past. What actually caused it.</p>
-      </div>
-
-      <article class="feature-card">
-        <div class="frame feature-thumb">
-          <img class="art" src="assets/images/card-art/event-01.svg" alt="" aria-hidden="true">
-        </div>
-        <div>
-          <span class="label">Featured this block</span>
-          <h3>The Brief</h3>
-          <p>One CNN 10 clip and one read from The Week, every block, before we go near the history.</p>
-          <a class="more-link" href="event-01/index.html">Read the brief</a>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <div class="frame feature-thumb">
-          <img class="art" src="assets/images/card-art/event-05.svg" alt="" aria-hidden="true">
-        </div>
-        <div>
-          <span class="label">Featured rail</span>
-          <h3>The Culture Beat</h3>
-          <p>A song, a book, and the bestseller list. Pop culture traces backward just as richly.</p>
-          <a class="more-link" href="culture/index.html">See this week</a>
-        </div>
-      </article>
-    </div>
-  </div>
-
-  <!-- ─── THE MOSAIC: the event bank ─────────────────────────────────────── -->
+  <!-- ─── THE EVENT BANK ─────────────────────────────────────────────────── -->
   <section class="section" id="events">
     <div class="wrap">
       <div class="kicker">The event bank</div>
       <h2>Six events. One method.</h2>
       <p class="dek">
-        Each card opens one event and one full trace. Cards marked
-        <em>in production</em> are built on the same template and open as the
-        semester moves.
+        One event is open now. The other five are built on the same template and
+        unlock as the semester moves, so you can see what is coming.
       </p>
 
-      <div class="mosaic" data-trace-chips>
+      <div class="event-grid" data-trace-chips>
 
-        <!-- Every photo-card is two image layers: generated art, optional photo. -->
-        <a class="photo-card frame span-2" href="event-01/index.html" data-status="live">
-          <img class="art" src="assets/images/card-art/event-01.svg" alt="" aria-hidden="true">
-          <div class="scrim" aria-hidden="true"></div>
-          <div class="frame-body">
-            <span class="eyebrow">Event 01 &middot; Technology &amp; Society</span>
+        <!-- The one live event. The only orange-bordered card on the page. -->
+        <a class="event-card" href="event-01/index.html" data-status="live">
+          <div class="event-art">
+            <img class="art" src="assets/images/card-art/event-01.svg" alt="" aria-hidden="true">
+            <!-- <img class="photo" src="PHOTO_URL" alt="" aria-hidden="true" onerror="this.remove()"> -->
+          </div>
+          <div class="event-card-top">
+            <span class="event-num">Event 01</span>
+            <span class="event-strand">Technology &amp; Society</span>
+          </div>
+          <div class="event-card-body">
             <h3>The Rise of Social Media</h3>
             <p>Start with the fight over phones in your own school, and end up in a New York print shop in 1833.</p>
             <div class="trace-preview">
@@ -156,66 +124,87 @@
               <span class="trace-chip">1978</span><span class="trace-arrow">&larr;</span>
               <span class="trace-chip">1833</span>
             </div>
-            <span class="more-link more-link-light">Start the trace</span>
           </div>
         </a>
 
-        <article class="text-card">
-          <span class="eyebrow">How a unit works</span>
-          <h3>Five steps, the same five every time.</h3>
-          <p>The Brief, Where in the World, The Trace, Evidence Lab, and a checkpoint on your own story. Learn it once, run it on anything.</p>
-          <a class="more-link" href="#rhythm">See the rhythm</a>
-        </article>
-
-        <a class="photo-card frame" href="#events" data-status="soon">
-          <img class="art" src="assets/images/card-art/event-02.svg" alt="" aria-hidden="true">
-          <div class="scrim" aria-hidden="true"></div>
-          <div class="frame-body">
-            <span class="eyebrow">Event 02 &middot; In production</span>
+        <!--
+          Unbuilt events are divs, not links. They are visibly inert and say when
+          they open, so nobody clicks into silence.
+        -->
+        <div class="event-card" data-status="soon">
+          <div class="event-art">
+            <img class="art" src="assets/images/card-art/event-02.svg" alt="" aria-hidden="true">
+          </div>
+          <div class="event-card-top">
+            <span class="event-num">Event 02</span>
+            <span class="event-strand">Technology &amp; Society</span>
+          </div>
+          <div class="event-card-body">
             <h3>The White-Collar Shock</h3>
             <p>AI is doing work that used to require a degree. Trace it back through every earlier machine that did the same to somebody else.</p>
+            <p class="event-opens">Opens week 4</p>
           </div>
-        </a>
+        </div>
 
-        <a class="photo-card frame" href="#events" data-status="soon">
-          <img class="art" src="assets/images/card-art/event-03.svg" alt="" aria-hidden="true">
-          <div class="scrim" aria-hidden="true"></div>
-          <div class="frame-body">
-            <span class="eyebrow">Event 03 &middot; In production</span>
+        <div class="event-card" data-status="soon">
+          <div class="event-art">
+            <img class="art" src="assets/images/card-art/event-03.svg" alt="" aria-hidden="true">
+          </div>
+          <div class="event-card-top">
+            <span class="event-num">Event 03</span>
+            <span class="event-strand">Conflict &amp; Power</span>
+          </div>
+          <div class="event-card-body">
             <h3>Israel &amp; Palestine</h3>
             <p>One current flashpoint, traced back through the wars, the partition, the mandate, and the promises that produced it.</p>
+            <p class="event-opens">Opens week 7</p>
           </div>
-        </a>
+        </div>
 
-        <a class="photo-card frame" href="#events" data-status="soon">
-          <img class="art" src="assets/images/card-art/event-04.svg" alt="" aria-hidden="true">
-          <div class="scrim" aria-hidden="true"></div>
-          <div class="frame-body">
-            <span class="eyebrow">Event 04 &middot; In production</span>
+        <div class="event-card" data-status="soon">
+          <div class="event-art">
+            <img class="art" src="assets/images/card-art/event-04.svg" alt="" aria-hidden="true">
+          </div>
+          <div class="event-card-top">
+            <span class="event-num">Event 04</span>
+            <span class="event-strand">Conflict &amp; Power</span>
+          </div>
+          <div class="event-card-body">
             <h3>Iran</h3>
             <p>Why the standoff exists at all. Back through the revolution, the coup, and the oil concession that set the terms.</p>
+            <p class="event-opens">Opens week 10</p>
           </div>
-        </a>
+        </div>
 
-        <a class="photo-card frame span-2" href="#events" data-status="soon">
-          <img class="art" src="assets/images/card-art/event-05.svg" alt="" aria-hidden="true">
-          <div class="scrim" aria-hidden="true"></div>
-          <div class="frame-body">
-            <span class="eyebrow">Event 05 &middot; In production</span>
+        <div class="event-card" data-status="soon">
+          <div class="event-art">
+            <img class="art" src="assets/images/card-art/event-05.svg" alt="" aria-hidden="true">
+          </div>
+          <div class="event-card-top">
+            <span class="event-num">Event 05</span>
+            <span class="event-strand">People &amp; Movement</span>
+          </div>
+          <div class="event-card-body">
             <h3>Climate Change</h3>
             <p>A headline about this year's weather, walked back to the first engine that burned coal for profit.</p>
+            <p class="event-opens">Opens week 13</p>
           </div>
-        </a>
+        </div>
 
-        <a class="photo-card frame" href="#events" data-status="soon">
-          <img class="art" src="assets/images/card-art/event-06.svg" alt="" aria-hidden="true">
-          <div class="scrim" aria-hidden="true"></div>
-          <div class="frame-body">
-            <span class="eyebrow">Event 06 &middot; In production</span>
+        <div class="event-card" data-status="soon">
+          <div class="event-art">
+            <img class="art" src="assets/images/card-art/event-06.svg" alt="" aria-hidden="true">
+          </div>
+          <div class="event-card-top">
+            <span class="event-num">Event 06</span>
+            <span class="event-strand">People &amp; Movement</span>
+          </div>
+          <div class="event-card-body">
             <h3>Immigration</h3>
             <p>Today's argument about the border, traced back through the laws, the quotas, and the labor demands that wrote them.</p>
+            <p class="event-opens">Opens week 16</p>
           </div>
-        </a>
+        </div>
 
       </div>
     </div>
@@ -233,31 +222,31 @@
       </p>
 
       <div class="rhythm-grid">
-        <article class="rhythm-card" style="--step:#5E6D79" data-reveal>
+        <article class="rhythm-card" style="--step:#FF6A13;--step-ink:#B8430A" data-reveal>
           <span class="rhythm-num">01</span>
           <h3>The Brief</h3>
           <p>A CNN 10 clip and a short read from The Week. Today's pulse on the event, in the first ten minutes of the block.</p>
-          <span class="from">Lit &middot; present</span>
+          <span class="from">Now</span>
         </article>
-        <article class="rhythm-card" style="--step:#4E5C68" data-reveal>
+        <article class="rhythm-card" style="--step:#CE6122" data-reveal>
           <span class="rhythm-num">02</span>
           <h3>Where in the World</h3>
           <p>Locate it, then change the scale: Zionsville, Indiana, the country, the world. Scale changes the story.</p>
           <span class="from">Zooming out</span>
         </article>
-        <article class="rhythm-card" style="--step:#3E4B56" data-reveal>
+        <article class="rhythm-card" style="--step:#9D5831" data-reveal>
           <span class="rhythm-num">03</span>
           <h3>The Trace</h3>
           <p>The spine of the course. Reverse-timeline cards that walk from today's fight back to the origin.</p>
           <span class="from">Going backward</span>
         </article>
-        <article class="rhythm-card" style="--step:#2F3B45" data-reveal>
+        <article class="rhythm-card" style="--step:#6C4F3F" data-reveal>
           <span class="rhythm-num">04</span>
           <h3>Evidence Lab</h3>
           <p>Primary sources from the roots, not the retellings. Read them, interpret them, weigh what they can and cannot prove.</p>
-          <span class="from">Dark &middot; past</span>
+          <span class="from">The roots</span>
         </article>
-        <article class="rhythm-card" style="--step:#1F2A34" data-reveal>
+        <article class="rhythm-card" style="--step:#3A464E" data-reveal>
           <span class="rhythm-num">05</span>
           <h3>Your Beat Checkpoint</h3>
           <p>A milestone on your own story, submitted to the class form. Your beat grows one link at a time all semester.</p>
@@ -281,7 +270,7 @@
           BeHistorical-style mini-site. One rubric under all three, because you
           are graded on the tracing, not the medium.
         </p>
-        <a class="btn btn-sage" href="your-beat/index.html">Explore Your Beat &rarr;</a>
+        <a class="btn" href="your-beat/index.html">Explore Your Beat &rarr;</a>
       </div>
     </div>
   </section>
@@ -289,7 +278,7 @@
   <!-- ─── THE RECURRING RAILS ────────────────────────────────────────────── -->
   <section class="section section-paper">
     <div class="wrap">
-      <div class="kicker">Running all semester</div>
+      <div class="kicker kicker-cool">Running all semester</div>
       <h2>Three things that never stop.</h2>
       <div class="rail-grid">
         <a class="rail-card" href="your-beat/index.html">
@@ -297,12 +286,12 @@
           <h3>Your Beat</h3>
           <p>Pick your own story and run the same method on it all semester. Portfolio, video, or your own mini-site. One rubric under all three.</p>
         </a>
-        <a class="rail-card rail-card-cool" href="culture/index.html">
+        <a class="rail-card" href="culture/index.html">
           <span class="pill">Every Monday</span>
           <h3>The Culture Beat</h3>
           <p>A song, a book, and whatever sits on the bestseller list. Pop culture traces backward just as richly as politics does.</p>
         </a>
-        <a class="rail-card rail-card-cool" href="teacher/index.html">
+        <a class="rail-card" href="teacher/index.html">
           <span class="pill">For instructors</span>
           <h3>Teacher Hub</h3>
           <p>Pacing across the 20 weeks, the live response data, and the link to the Reverse History Coach.</p>
@@ -333,16 +322,15 @@
 <script src="assets/js/behistorical-ce-form-config.js"></script>
 <script src="assets/js/behistorical-ce-newsroom.js"></script>
 <script>
-  /* Card trace previews recede into the past the way the spine does, but by
-     opacity, because these chips sit on a dark card. Without JS every chip
-     stays fully opaque, which is legible and merely undramatic. */
+  /* Card trace previews run hot to dim exactly like the spine, so a card reads
+     as a miniature of the page it opens. Without JS every chip stays orange,
+     which is legible and merely undramatic. */
   (function () {
     if (!window.CE) return;
     document.querySelectorAll('.trace-preview').forEach(function (row) {
       var chips = row.querySelectorAll('.trace-chip');
       chips.forEach(function (chip, i) {
-        var t = chips.length > 1 ? i / (chips.length - 1) : 0;
-        chip.style.opacity = (1 - t * 0.45).toFixed(2);
+        chip.style.setProperty('--chip', CE.spineColor(i, chips.length));
       });
     });
   })();
