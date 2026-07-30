@@ -1,31 +1,59 @@
-# BeHistorical Teacher Hub, Google Apps Script Analysis Layer
+# BeHistorical Teacher Hub, Google Sheets Analysis Layer
 
-This folder contains the first functional prototype for connecting BeHistorical Google Form responses to the Teacher Hub.
+This folder holds the Apps Script that turns your Google Form response Sheet into the live
+data source for the Teacher Hub.
 
-The Teacher Hub itself is hosted on GitHub Pages, which is a static front end. It should not store private API keys or sensitive student data directly. The missing middle layer is Google Apps Script attached to the Google Sheet that receives BeHistorical Student Response Form submissions.
+The Teacher Hub is hosted on GitHub Pages, which is a static front end with no server. It
+stores no student data and holds no credentials beyond what you paste into your own browser.
+Everything private stays in your Google Sheet, and this script is the layer in between.
 
-## What this prototype does
+```text
+Google Form → Google Sheet → Apps Script (this file) → Teacher Hub
+```
 
-The included `Code.gs` script can:
+## What it does
 
-- Read the Google Form response Sheet.
-- Filter responses by Unit, Topic, Response Type, and Class Period.
-- Count total responses.
-- Calculate average confidence.
-- Flag blank, short, or low-confidence responses.
-- Detect common Topic 1.1 evidence patterns.
-- Detect common Topic 1.1 misconception patterns.
-- Detect basic AP writing gaps such as missing reasoning language.
-- Generate reteach suggestions.
-- Write structured analysis to `TeacherHub_Analysis`.
-- Write student follow-up flags to `TeacherHub_StudentFlags`.
-- Serve a JSON payload through a web-app endpoint for the Teacher Hub to fetch.
+- Reads the form response Sheet and filters by Unit, Topic, Response Type, and Class Period.
+- Counts responses, distinct students, blank and short answers, and average confidence.
+- Detects the specific terms students actually cited, for **any** topic, with no per-topic
+  setup required.
+- Flags students needing follow-up and suggests reteach priorities.
+- Writes the full, named analysis into your Sheet on the `TeacherHub_Analysis` and
+  `TeacherHub_StudentFlags` tabs.
+- Serves a **de-identified** version of that analysis to the Teacher Hub through `doGet()`.
 
-This is intentionally a rule-based prototype first. It makes the Hub functional before adding external AI APIs.
+## Privacy model, read this before deploying
 
-## Required Google Sheet columns
+The Teacher Hub's browser request cannot carry your Google login, because it comes from a
+static page on a different domain. That forces the web app to be deployed as **Anyone**.
+Any other setting makes the endpoint unreachable and shows up as an opaque network error.
 
-The Sheet connected to the BeHistorical Student Response Form should include these headers:
+Because the endpoint has to be public, the script is built so that being public is safe:
+
+| Data | Web app (`doGet`) | Your Sheet |
+|---|---|---|
+| Counts, averages, patterns, reteach suggestions | Yes | Yes |
+| Student names | **Never** | Yes, `TeacherHub_StudentFlags` |
+| Raw response text | Off by default, opt-in | Yes, `TeacherHub_Analysis` |
+| Follow-up flags | Yes, as `Student 1`, `Student 2`, … | Yes, with real names |
+
+The numbered labels sent to the Hub are in the same order as the rows on the
+`TeacherHub_StudentFlags` tab, so you match a label to a name by looking at that tab.
+
+Two further protections:
+
+- **An access token is required.** Requests without a valid token get an error, not data.
+- **Response text is withheld by default.** Anonymous student writing can still identify its
+  author. The full anonymized prompt is always written to your Sheet, so nothing is lost.
+  If you decide the risk is acceptable, turn it on with
+  **BeHistorical → Response Text Over Web App (On/Off)**.
+
+Rotating the token from the menu immediately invalidates the old one.
+
+## Required Sheet columns
+
+The response tab must be named `Form Responses 1`, or change `responseSheetName` at the top
+of `Code.gs`. These headers are recognized:
 
 ```text
 Timestamp
@@ -39,159 +67,96 @@ Student Response
 Confidence Level
 ```
 
-Optional but supported:
+`Topic`, `Response Type`, and `Student Response` are required; the script reports a clear
+error naming any that are missing. `AI Coaching Reflection` is optional. Some alternate
+header spellings are accepted (see `HEADER_ALIASES`), but the names above are recommended.
 
-```text
-AI Coaching Reflection
-```
+Topic values should match the registry labels in `assets/js/behistorical-form-config.js`,
+for example `1.1 - Song China`. The script also matches a bare topic number, and `1.1` will
+not accidentally match `1.10`.
 
-The script also recognizes some alternate header names, but the exact names above are strongly recommended.
+## Setup
 
-## Prompt Registry, Expected Values by Topic
+1. Open the Google Sheet connected to your response form.
+2. **Extensions → Apps Script**. This matters: the script must be *bound* to the Sheet.
+   A standalone script cannot see your data and its menu will never appear.
+3. Paste in the contents of `Code.gs`, then save.
+4. Reload the Sheet. A **BeHistorical** menu appears in the menu bar.
+   Do not press Run on `onOpen` in the editor; it needs a Sheet in front of it and will
+   throw `Cannot call SpreadsheetApp.getUi() from this context`. Reloading the Sheet is what
+   installs the menu.
+5. **BeHistorical → Create/Repair Teacher Hub Tabs**. This creates the three tabs and seeds
+   `TeacherHub_Settings` with Topic 1.1 defaults.
+6. **BeHistorical → Create Teacher Hub Access Token**. Copy the token.
 
-Unit:
+## Deploying the web app
 
-```text
-Unit 1 - The Global Tapestry
-```
+1. **Deploy → New deployment**, then click the gear next to "Select type" and pick
+   **Web app**.
+2. Description: anything that identifies the version, for example
+   `Teacher Hub analysis v1`.
+3. **Execute as: Me**. **Who has access: Anyone.**
+4. **Deploy**, approve the authorization prompts, and copy the **Web app URL**. It ends in
+   `/exec`.
 
-### Topic 1.1, Song China
+Then open `teacher/index.html` in the Teacher Hub, paste the URL and token, and click
+Connect.
 
-Topic:
+**When you edit `Code.gs`, the live endpoint does not change until you publish a new
+version:** **Deploy → Manage deployments → pencil → Version: New version → Deploy**. The URL
+stays the same. Skip this and the endpoint keeps serving the old code.
 
-```text
-1.1 - Song China
-```
+Use the `/exec` URL, never the `/dev` one. The `/dev` URL only resolves for you while signed
+in, and the Hub rejects it up front for that reason.
 
-Prompt IDs:
+## Tuning the analysis per topic
 
-```text
-1.1-first10
-1.1-ap-skill-builder
-1.1-checkpoint-1
-1.1-evidence-lab
-1.1-primary-source
-1.1-checkpoint-2
-```
+`TeacherHub_Settings` is the teacher-editable knob. One row per misconception; repeat the
+topic across rows.
 
-### Topic 1.4, State Building in the Americas
+| Topic | Evidence Terms | Misconception Label | Misconception Triggers |
+|---|---|---|---|
+| `1.1 - Song China` | `civil service exam, Champa rice, Grand Canal` | `Exam treated as pure meritocracy` | `anyone could take, pure meritocracy` |
 
-Topic:
+- **Evidence Terms** and **Misconception Triggers** are comma separated and matched
+  case-insensitively.
+- **Evidence Terms are optional.** With none configured, the script still finds the specific
+  terms students used by ranking repeated proper nouns in the responses. A term must appear
+  in at least two responses, and in at least 15 percent of them, to count as a class pattern.
+- **Misconceptions cannot be inferred from text**, so they only appear for topics you have
+  configured. Topics with no rows report that plainly rather than showing nothing.
 
-```text
-1.4 - The Americas
-```
+## Web app parameters
 
-Prompt IDs:
+| Parameter | Purpose |
+|---|---|
+| `token` | Required. From the BeHistorical menu. |
+| `mode=index` | Returns the topics, units, class periods, and response types present in the Sheet. Used to populate the Hub's dropdowns. |
+| `topic` | Full label (`1.1 - Song China`), bare number (`1.1`), or `All Topics`. |
+| `responseType` | One of the response types, or `All Response Types`. |
+| `classPeriod` | A period value, or `All Periods`. |
+| `unit` | Optional. The Hub only sends it when no specific topic is selected. |
+| `write=true` | Also refresh the `TeacherHub_Analysis` and `TeacherHub_StudentFlags` tabs. The Hub sends this so the named flags stay current. |
 
-```text
-1.4-first10
-1.4-ap-skill-builder
-1.4-checkpoint-1
-1.4-evidence-lab
-1.4-primary-source
-1.4-beintheroom
-1.4-checkpoint-2
-```
+Errors come back as `{"ok": false, "error": "..."}` with a message describing the cause, and
+the Hub displays it directly.
 
-Response Types (shared across all topics):
+## Using it from the Sheet alone
 
-```text
-First and 10
-AP Skill Builder
-Checkpoint 1
-Evidence Lab
-Primary Source
-BeInTheRoom
-Checkpoint 2
-```
+You do not have to deploy anything to get the analysis. From the Sheet:
 
-## Setup steps
+- **BeHistorical → Analyze Selected Filters...** opens a sidebar whose dropdowns are built
+  from your real data.
+- **BeHistorical → Analyze Everything** analyzes every response on file.
 
-1. Open the Google Sheet connected to the BeHistorical Student Response Form.
-2. Go to **Extensions → Apps Script**.
-3. Paste the contents of `Code.gs` into the Apps Script editor.
-4. Save the project as something like `BeHistorical Teacher Hub Analysis`.
-5. Reload the Google Sheet.
-6. Use the new menu:
+Both write the full named analysis to your tabs. Deploying the web app only adds the browser
+dashboard on top.
 
-```text
-BeHistorical → Create/Repair Teacher Hub Tabs
-```
+## Extending the reference panels
 
-7. Submit a few test responses from the live Topic 1.1 lesson.
-8. Use:
-
-```text
-BeHistorical → Analyze Topic 1.1
-```
-
-9. Check the generated tabs:
-
-```text
-TeacherHub_Analysis
-TeacherHub_StudentFlags
-TeacherHub_Settings
-```
-
-## Deploying as a web app
-
-Only deploy this when you are ready to connect the GitHub Pages Teacher Hub to the Sheet output.
-
-1. In Apps Script, click **Deploy → New deployment**.
-2. Choose **Web app**.
-3. Suggested prototype settings:
-
-```text
-Execute as: Me
-Who has access: Anyone with the link
-```
-
-For student-identifiable data, review school privacy expectations before using a public-link deployment. A safer first version is to expose only aggregate summaries or anonymized flags.
-
-After deployment, Apps Script gives you a Web App URL. You can test it with query parameters like:
-
-```text
-?topic=1.1%20-%20Song%20China&responseType=Checkpoint%201&classPeriod=Silver%201
-```
-
-Example fields:
-
-```text
-topic=1.1 - Song China
-responseType=All Response Types
-classPeriod=All Periods
-write=true
-```
-
-`write=true` tells the script to update the `TeacherHub_Analysis` and `TeacherHub_StudentFlags` tabs while also returning JSON.
-
-## Teacher Hub connection plan
-
-The GitHub Teacher Hub should eventually fetch the Apps Script Web App URL and replace mock data with the returned JSON.
-
-Recommended flow:
-
-```text
-Teacher Hub dropdowns
-↓
-Apps Script URL with topic/responseType/classPeriod
-↓
-JSON response
-↓
-Class Pulse panel updates
-```
-
-## Why the first version is rule-based
-
-External AI APIs require API keys and stronger privacy review. This prototype gives you a functioning Teacher Hub data pipeline first:
-
-```text
-Google Form → Google Sheet → Apps Script → Teacher Hub JSON
-```
-
-After that is stable, the Apps Script can be extended to send anonymized response batches to ChatGPT, Claude, or Gemini and ask for richer analysis.
-
-## Privacy note
-
-Do not publish identifiable student names/responses into static GitHub files. Keep raw response data in Google Sheets or a protected backend layer. For the public GitHub Pages Teacher Hub, prefer aggregate summaries and carefully controlled student flags.
+The Hub's live analysis works for all 77 topics with no extra work. The deeper reference
+panels (pacing guide, College Board alignment, answer keys, saved prompts, Canvas workflow)
+are authored content and currently exist for Topic 1.1 only, in
+`assets/data/teacher/teacher-1-1-song-china.js`. Copy that file, key it to another topic, and
+those panels appear for that topic too. Topics without a file still show live analysis and
+their AP skill focus, and say plainly that the reference has not been authored yet.

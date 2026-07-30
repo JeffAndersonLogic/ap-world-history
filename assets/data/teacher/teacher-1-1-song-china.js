@@ -1,3 +1,13 @@
+/**
+ * Authored teaching reference for Topic 1.1.
+ *
+ * This file holds only material a teacher wrote: pacing, College Board alignment, known
+ * misconceptions, answer keys, saved prompts, and the Canvas workflow. It contains no
+ * response data. Every number and student flag on the Teacher Hub comes from the live
+ * Google Sheet through the Apps Script endpoint.
+ *
+ * Add a sibling file keyed to another topic to give that topic the same reference panels.
+ */
 window.BEHISTORICAL_TEACHER_TOPICS = window.BEHISTORICAL_TEACHER_TOPICS || {};
 
 window.BEHISTORICAL_TEACHER_TOPICS['1.1'] = {
@@ -6,16 +16,8 @@ window.BEHISTORICAL_TEACHER_TOPICS['1.1'] = {
     topic: '1.1',
     title: 'Developments in East Asia',
     subtitle: 'Song China, c. 1200–1450',
-    status: 'Prototype',
     studentLessonUrl: '../unit-1/lesson-1-1-song-china.html',
     beInTheRoomUrl: '../beintheroom/unit-1/song-court.html'
-  },
-  stats: {
-    learningObjectives: 3,
-    keyConcepts: 5,
-    classPeriods: '2–3',
-    themes: 'GOV · CDI · ECN',
-    studentResponses: 28
   },
   pacing: [
     { module: 'Geography / Map Check', time: '5–8 min', note: 'Locate Song China, the Grand Canal, Korea, and Japan before content delivery.' },
@@ -45,40 +47,10 @@ window.BEHISTORICAL_TEACHER_TOPICS['1.1'] = {
     { part: 'SAQ Part B', prompt: 'Explain ONE way Chinese cultural traditions affected a society outside of China in the period c. 1200–1450.', answer: 'Neo-Confucianism spread from China to Korea, where the Joseon Dynasty adopted Confucian values such as filial piety, hierarchy, and merit-based education. These ideas shaped Korean governance and social structure.' },
     { part: 'SAQ Part C', prompt: 'Explain ONE way technological or agricultural innovation affected the economy of Song China.', answer: 'The adoption of Champa rice increased agricultural productivity, supported population growth and urbanization, and helped commercialize the Song economy by creating larger markets and more surplus production.' }
   ],
-  classPulse: {
-    summary: {
-      totalResponses: 28,
-      completionRate: '82%',
-      strongResponses: 9,
-      developingResponses: 13,
-      needsSupport: 6
-    },
-    commonEvidence: ['Civil service exam', 'Champa rice', 'Paper money', 'Grand Canal'],
-    topMisconceptions: ['Civil service exam as pure meritocracy', 'Champa rice as Chinese invention', 'Economic strength confused with military strength'],
-    reteach: [
-      { priority: 'High', focus: 'Civil service exam: meritocracy with limits', action: 'Use a two-column compare: hereditary aristocracy vs. exam bureaucracy.' },
-      { priority: 'Medium', focus: 'Commercialization vs. invention list', action: 'Have students connect each innovation to economic effect.' },
-      { priority: 'Medium', focus: 'SAQ reasoning', action: 'Model claim + evidence + because sentence.' }
-    ]
-  },
-  students: [
-    { name: 'Student A', task: 'AP Checkpoint', status: 'High', issue: 'Has evidence but does not explain how it maintained imperial power.', next: 'Ask: Why would exam-selected officials be more loyal to the emperor?' },
-    { name: 'Student B', task: 'Evidence Lab', status: 'Medium', issue: 'Lists inventions without connecting them to commercialization.', next: 'Prompt student to explain effect on trade, cities, or markets.' },
-    { name: 'Student C', task: 'BeInTheRoom', status: 'Low', issue: 'Strong historical context and clear tradeoff.', next: 'Use as anonymized model if appropriate.' },
-    { name: 'Student D', task: 'AP Checkpoint', status: 'High', issue: 'Confuses Neo-Confucianism with Buddhism.', next: 'Small-group reteach on belief systems and cultural influence.' }
-  ],
   prompts: [
     { id: 'prompt-class-analysis', title: 'Class Pattern Analysis', purpose: 'Identify trends, errors, and reteach targets.', text: 'You are an AP World History instructional coach helping a teacher analyze student responses for Topic 1.1: Song China. Analyze the class set for: 1) common accurate evidence, 2) common misconceptions, 3) missing AP skill components, 4) suggested reteach focus, and 5) 2-3 anonymized model responses. Keep the response concise and teacher-facing. STUDENT RESPONSES: [PASTE RESPONSES HERE]' },
     { id: 'prompt-saq-diagnostic', title: 'SAQ Diagnostic', purpose: 'Sort responses by claim, evidence, and reasoning.', text: 'You are an AP World History instructional coach. For each student SAQ response, identify whether it includes a historically defensible claim, specific evidence, and reasoning that connects evidence to the claim. Then summarize classwide patterns and recommend one reteach activity. Do not identify students by name. STUDENT RESPONSES: [PASTE RESPONSES HERE]' },
     { id: 'prompt-struggling-students', title: 'Struggling Student Finder', purpose: 'Identify students needing follow-up without overgrading.', text: 'You are helping a teacher identify students who may need follow-up support in AP World History Topic 1.1. Review the responses and flag students by need category only: missing claim, missing evidence, missing reasoning, misconception, or incomplete. Suggest a brief follow-up question for each category. STUDENT RESPONSES: [PASTE RESPONSES HERE]' }
-  ],
-  forms: [
-    { name: 'First and 10', description: 'Topic 1.1 · First and 10 · Prompt ID: 1.1-first10', url: 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+1+-+The+Global+Tapestry&entry.187055090=1.1+-+Song+China&entry.1549761827=1.1-first10&entry.2107637366=First+and+10' },
-    { name: 'AP Skill Builder', description: 'Topic 1.1 · AP Skill Builder · Prompt ID: 1.1-ap-skill-builder', url: 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+1+-+The+Global+Tapestry&entry.187055090=1.1+-+Song+China&entry.1549761827=1.1-ap-skill-builder&entry.2107637366=AP+Skill+Builder' },
-    { name: 'Checkpoint 1', description: 'Topic 1.1 · Checkpoint 1 / Exit Ticket · Prompt ID: 1.1-checkpoint-1', url: 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+1+-+The+Global+Tapestry&entry.187055090=1.1+-+Song+China&entry.1549761827=1.1-checkpoint-1&entry.2107637366=Checkpoint+1' },
-    { name: 'Evidence Lab', description: 'Topic 1.1 · Evidence Lab · Prompt ID: 1.1-evidence-lab', url: 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+1+-+The+Global+Tapestry&entry.187055090=1.1+-+Song+China&entry.1549761827=1.1-evidence-lab&entry.2107637366=Evidence+Lab' },
-    { name: 'Primary Source', description: 'Topic 1.1 · Primary Source · Prompt ID: 1.1-primary-source', url: 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+1+-+The+Global+Tapestry&entry.187055090=1.1+-+Song+China&entry.1549761827=1.1-primary-source&entry.2107637366=Primary+Source' },
-    { name: 'Checkpoint 2', description: 'Topic 1.1 · Checkpoint 2 / Exit Ticket · Prompt ID: 1.1-checkpoint-2', url: 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+1+-+The+Global+Tapestry&entry.187055090=1.1+-+Song+China&entry.1549761827=1.1-checkpoint-2&entry.2107637366=Checkpoint+2' }
   ],
   canvas: {
     title: 'Topic 1.1 — Song China: BeHistorical Practice + Reflection',
