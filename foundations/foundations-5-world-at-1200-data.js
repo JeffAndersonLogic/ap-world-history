@@ -18,17 +18,15 @@ window.FOUNDATION_TOPIC = {
   ],
 
   learningTargets: [
-    'I can describe the world at c.1200 CE across six AP World regions, identifying key features of each.',
+    'I can describe the world at c.1200 CE across six AP World regions and explain how the Foundations themes, geography, belief systems, states and power, trade networks, built the world we study beginning at c.1200.',
     'I can name and explain the five AP historical thinking skills: contextualization, causation, continuity and change over time (CCOT), comparison, and argumentation.',
-    'I can write a complete AP-style SAQ paragraph using a claim, specific evidence, and explicit reasoning.',
-    'I can explain how the Foundations unit themes, geography, belief systems, states and power, trade networks, built the world students will study beginning at c.1200.'
+    'I can write a complete AP-style SAQ paragraph using a claim, specific evidence, and explicit reasoning.'
   ],
 
   successCriteria: [
-    'I can write one specific sentence about each of the six AP World regions at c.1200 that goes beyond "they had a civilization", naming a specific feature, institution, trade connection, or belief system.',
+    'I can write one specific sentence about each of the six AP World regions at c.1200 that names a specific feature, institution, trade connection, or belief system, and explain which Foundations theme mattered most, using evidence from at least two days.',
     'I can explain each AP historical thinking skill in my own words and identify where it appeared in Foundations Days 1–4.',
-    'I can write an SAQ paragraph with a defensible claim in the first sentence, at least two specific pieces of historical evidence, and a reasoning sentence that explains the connection.',
-    'I can explain which Foundations theme was most important for understanding the world at c.1200, and support my choice with specific evidence from at least two days.'
+    'I can write an SAQ paragraph with a defensible claim in the first sentence, at least two specific pieces of historical evidence, and a reasoning sentence that explains the connection.'
   ],
 
   timeline: [

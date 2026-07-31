@@ -18,15 +18,13 @@ window.FOUNDATION_TOPIC = {
   ],
 
   learningTargets: [
-    'I can explain the Neolithic Agricultural Revolution, the shift from hunting and gathering to settled agriculture, and why it happened when it did.',
-    'I can explain how geography made farming possible in certain river valleys and not in other environments.',
+    'I can explain the Neolithic Agricultural Revolution, the shift from hunting and gathering to settled agriculture, and how geography made farming possible in certain river valleys and not in other environments.',
     'I can explain how an agricultural surplus produced the characteristics of civilization: cities, specialized labor, government, writing, social classes, and organized religion.',
     'I can write a short contextualization statement connecting a geographic condition to the rise of farming or civilization.'
   ],
 
   successCriteria: [
-    'I can describe how hunter-forager life differed from settled agricultural life, and what each made possible.',
-    'I can name a specific geographic feature, a river, fertile soil, a domesticable species, and connect it to the beginning of agriculture.',
+    'I can describe how hunter-forager life differed from settled agricultural life, and name a specific geographic feature, a river, fertile soil, a domesticable species, that made the beginning of agriculture possible.',
     'I can trace the causal chain from agricultural surplus to at least three characteristics of civilization.',
     'I can write a contextualization sentence that identifies a geographic condition and explains how it shaped the shift to farming or the rise of a civilization.'
   ],

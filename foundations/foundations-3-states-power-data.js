@@ -18,17 +18,15 @@ window.FOUNDATION_TOPIC = {
   ],
 
   learningTargets: [
-    'I can explain how Persia, Han China, Greece, and Rome each solved the core problems of extraction, defense, administration, and legitimacy.',
-    'I can identify specific tools of rule, satrapies, bureaucracy, the Mandate of Heaven, citizen democracy, Roman law and citizenship, and the problem each solved.',
+    'I can explain how Persia, Han China, Greece, and Rome each solved the core problems of extraction, defense, administration, and legitimacy, and name the specific tools of rule they used, satrapies, bureaucracy, the Mandate of Heaven, citizen democracy, Roman law and citizenship.',
     'I can analyze how social hierarchies were constructed and who was excluded in at least two of these classical societies.',
     'I can compare two classical states and explain a meaningful similarity or difference in how they organized power.'
   ],
 
   successCriteria: [
     'I can name a specific tool of rule from one of the four classical civilizations, give an example, and explain the governance problem it solved.',
-    'I can compare two of the four states by identifying how each answered the same problem differently.',
     'I can explain one example of resistance or exclusion (the Yellow Turbans, Spartacus, Greek or Roman exclusion of non-citizens) and connect it to a limit of state power.',
-    'I can write a comparison or causation statement with a specific mechanism, not just "it helped the ruler" but how and why.'
+    'I can compare two of the four states by explaining how each answered the same problem differently, using a specific mechanism, not just "it helped the ruler" but how and why.'
   ],
 
   timeline: [

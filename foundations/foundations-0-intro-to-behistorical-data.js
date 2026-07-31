@@ -20,15 +20,13 @@ window.FOUNDATION_TOPIC = {
   learningTargets: [
     'I can name the six AP historical thinking skills and give a one-sentence explanation of each in my own words.',
     'I can describe the 10-module structure I will see in every BeHistorical lesson and explain what each module trains.',
-    'I can explain what my Historian\'s Portfolio is, what goes into it, and how I control what happens to it.',
-    'I can write a baseline self-portrait as a historian, where I am today and where I want to be by May.'
+    'I can explain what my Historian\'s Portfolio is and write a baseline self-portrait as a historian, where I am today and where I want to be by May.'
   ],
 
   successCriteria: [
     'I can list the six skills (contextualization, comparison, causation, continuity/change, argumentation, sourcing) and give a plain-language definition of each.',
     'I can walk a family member through the 10 modules we use every class and say why each one exists.',
-    'I can describe in one sentence what my end-of-year portfolio will contain and who sees it (me, my family, and, if I choose, my next teacher).',
-    'I can write one paragraph that captures who I am as a historical thinker on Day 1, in my own voice.'
+    'I can describe in one sentence what my end-of-year portfolio will contain and who sees it, and write one paragraph in my own voice that captures who I am as a historical thinker on Day 1.'
   ],
 
   timeline: [

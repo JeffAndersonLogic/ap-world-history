@@ -19,14 +19,12 @@ window.FOUNDATION_TOPIC = {
 
   learningTargets: [
     'I can explain how the Silk Roads, Indian Ocean trade system, and Trans-Saharan network each operated, their geographic basis, merchant communities, and key goods.',
-    'I can identify specific non-goods that traveled through trade networks: disease, technology, crops, religious practices, and people.',
-    'I can explain the Battle of Talas (751 CE) as a specific example of technology transfer through conflict.',
+    'I can identify specific non-goods that traveled through trade networks, disease, technology, crops, religious practices, and people, including the Battle of Talas (751 CE) as an example of technology transfer through conflict.',
     'I can write a complexity argument explaining how trade networks caused multiple simultaneous changes across different regions.'
   ],
 
   successCriteria: [
-    'I can name at least three specific port cities or oasis towns on Afro-Eurasian trade routes and explain their geographic function.',
-    'I can explain the Indian Ocean monsoon system, which months, which directions, which sailing routes, with enough specificity to show I understand how it worked mechanically.',
+    'I can name at least three specific port cities or oasis towns on Afro-Eurasian trade routes, explain their geographic function, and describe how the Indian Ocean monsoon system worked, which months, which directions, which sailing routes.',
     'I can give at least two specific examples of non-goods traveling through trade networks, with dates and locations.',
     'I can write a complexity paragraph that identifies multiple effects of a single trade network and explains how they connected across regions.'
   ],

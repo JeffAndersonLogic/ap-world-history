@@ -20,15 +20,13 @@ window.FOUNDATION_TOPIC = {
   learningTargets: [
     'I can identify the core beliefs and origins of the six major belief systems: Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam.',
     'I can explain how belief systems functioned as institutions that organized society, not just private faith.',
-    'I can trace how a belief system spread through trade networks, state adoption, or missionary activity.',
-    'I can compare two of the six belief systems and explain how each adapted when it entered a new region (syncretism).'
+    'I can trace how a belief system spread through trade networks, state adoption, or missionary activity, and compare how two of them adapted when they entered a new region (syncretism).'
   ],
 
   successCriteria: [
     'I can state the central idea of each of the six belief systems and where it originated.',
     'I can identify a specific institutional function of a belief system, education, law, welfare, legitimacy, social order, and give a concrete historical example.',
-    'I can explain at least one mechanism by which a belief system spread: trade route, state adoption, missionary, civil service exam, or monastic network.',
-    'I can give a specific example of syncretism, a belief system blending with local culture, and explain what it reveals about how belief systems travel.'
+    'I can explain at least one mechanism by which a belief system spread, trade route, state adoption, missionary, civil service exam, or monastic network, and give a specific example of syncretism that shows how belief systems change as they travel.'
   ],
 
   timeline: [
