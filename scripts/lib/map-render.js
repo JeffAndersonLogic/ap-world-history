@@ -184,26 +184,6 @@ function renderMap(spec) {
   const legendTop = HEIGHT - legendBoxHeight - 68;
   placer.claim({ x1: 46, x2: 46 + legendBoxWidth, y1: legendTop, y2: legendTop + legendBoxHeight });
 
-  // `labelsAvoidShapes` keeps region names off every region ellipse, not just off
-  // other names. That is what a reference map of many discrete regions needs: a
-  // name resting on a neighbour's ellipse reads as if it belongs to that
-  // neighbour. It is the wrong default for a map whose regions deliberately
-  // overlap (the Mongol khanates, say), where it pushes names far out to sea in
-  // search of clear space, so specs opt in.
-  // The claim is the ellipse's inscribed rectangle rather than its bounding box:
-  // an ellipse leaves its bbox corners empty, and claiming those too walls off
-  // gaps a crowded map needs.
-  if (spec.labelsAvoidShapes) {
-    const INSCRIBED = 0.72;
-    for (const h of highlights) {
-      if (!h.label) continue;
-      const [lon, lat, rLon, rLat] = zone(h.zone);
-      const [x1, y1] = project(lon - rLon * INSCRIBED, lat + rLat * INSCRIBED);
-      const [x2, y2] = project(lon + rLon * INSCRIBED, lat - rLat * INSCRIBED);
-      placer.claim({ x1, x2, y1, y2 });
-    }
-  }
-
   const pointLayer = points.map((p) => {
     const [x, y] = project(p.at[0], p.at[1]);
     const anchor = p.side === 'left' ? 'end' : 'start';
@@ -215,58 +195,21 @@ function renderMap(spec) {
     ${p.note ? `<text class="placenote halo" x="${(x + offset).toFixed(1)}" y="${(baseline + 22).toFixed(1)}" text-anchor="${anchor}">${esc(p.note)}</text>` : ''}`;
   }).join('\n    ');
 
-  // A region label sits below its ellipse by default, but a map with many
-  // neighbouring regions (Africa's five, for one) crowds that band until the
-  // placer pushes labels so far they read as belonging to a different region.
-  // `labelSide` moves the anchor to a free edge, and any label the placer still
-  // has to shift gets a leader line back to its own ellipse.
   const highlightLayer = highlights.map((h) => {
-    const [lon, lat, rLon, rLat] = zone(h.zone);
-    const [cx, cy] = project(lon, lat);
-    const [, top] = project(lon, lat + rLat);
-    const [, bottom] = project(lon, lat - rLat);
-    const [left] = project(lon - rLon, lat);
-    const [right] = project(lon + rLon, lat);
+    const [lon, lat, , rLat] = zone(h.zone);
+    const [cx] = project(lon, lat);
+    const [, edge] = project(lon, lat - rLat);
     const palette = tone(h.tone);
     const shape = ellipse(h.zone, h.tone, h.opacity == null ? 0.5 : h.opacity);
     if (!h.label) return shape;
-
     const labelLines = wrap(h.label, 16);
     const width = Math.max(...labelLines.map((line) => line.length)) * 13 + 12;
-    const height = labelLines.length * 25;
-
-    let anchorX = cx;
-    let anchorY = Math.min(bottom + 26, HEIGHT - 150);
-    let textAnchor = 'middle';
-    if (h.labelSide === 'above') {
-      anchorY = Math.max(top - 12, 150);
-    } else if (h.labelSide === 'left') {
-      anchorX = left - 16;
-      anchorY = cy + 8;
-      textAnchor = 'end';
-    } else if (h.labelSide === 'right') {
-      anchorX = right + 16;
-      anchorY = cy + 8;
-      textAnchor = 'start';
-    }
-
-    const baseline = placer.place(anchorX, anchorY, width, height, textAnchor);
+    const baseline = placer.place(cx, Math.min(edge + 26, HEIGHT - 150), width, labelLines.length * 25);
     const label = labelLines
-      .map((line, index) => `<tspan x="${anchorX.toFixed(1)}" dy="${index === 0 ? 0 : 25}">${esc(line)}</tspan>`)
+      .map((line, index) => `<tspan x="${cx.toFixed(1)}" dy="${index === 0 ? 0 : 25}">${esc(line)}</tspan>`)
       .join('');
-
-    // Leaders ride along with `labelsAvoidShapes`: that mode is what sends a label
-    // far enough from its ellipse to need one, and keeping them behind the same
-    // flag leaves every other map's output byte-for-byte as it was. Only a shifted
-    // label gets one, since a label still on its anchor is already unambiguous.
-    const shift = baseline - anchorY;
-    let leader = '';
-    if (spec.labelsAvoidShapes && Math.abs(shift) > 26) {
-      const fromY = shift > 0 ? baseline - height - 2 : baseline + 8;
-      leader = `<line class="leader" x1="${anchorX.toFixed(1)}" y1="${fromY.toFixed(1)}" x2="${cx.toFixed(1)}" y2="${cy.toFixed(1)}"/>`;
-    }
-    const text = `<text class="region halo" x="${anchorX.toFixed(1)}" y="${baseline.toFixed(1)}" text-anchor="${textAnchor}" fill="${palette.text}">${label}</text>`;
-    return [shape, leader, text].filter(Boolean).join('\n    ');
+    return `${shape}
+    <text class="region halo" x="${cx.toFixed(1)}" y="${baseline.toFixed(1)}" text-anchor="middle" fill="${palette.text}">${label}</text>`;
   }).join('\n    ');
 
   const flowLayer = flows.map((f, index) => {
@@ -325,8 +268,7 @@ function renderMap(spec) {
       .badgenum{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:19px;fill:${PAPER}}
       .badge{fill:${BRONZE};stroke:${PAPER};stroke-width:3}
       .halo{paint-order:stroke;stroke:${PAPER};stroke-width:5;stroke-linejoin:round}
-      .city{fill:${INK};stroke:${PAPER};stroke-width:4}${spec.labelsAvoidShapes ? `
-      .leader{stroke:${SLATE};stroke-width:2;opacity:.55}` : ''}
+      .city{fill:${INK};stroke:${PAPER};stroke-width:4}
       .flow{fill:none;stroke:${BRONZE};stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:${LAND_FILL};stroke:${LAND_STROKE};stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}

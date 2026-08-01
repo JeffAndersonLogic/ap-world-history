@@ -15,26 +15,17 @@ module.exports = [
   {
     id: 'foundations-0',
     code: 'FOUNDATIONS 0',
-    title: 'World Regions: A Closer Look',
-    subtitle: 'Foundations 0 · The AP World regional vocabulary',
-    labelsAvoidShapes: true,
+    title: 'The Historian\'s World at c. 1200',
+    subtitle: 'Foundations 0 · The six AP World regions',
     highlights: [
-      { zone: 'northAmerica', label: 'NORTH AMERICA', tone: 'slate', legend: 'North America', labelSide: 'above' },
-      { zone: 'mexico', label: 'MEXICO', tone: 'plum', legend: 'Mexico', labelSide: 'left' },
-      { zone: 'caribbean', label: 'CARIBBEAN', tone: 'gold', legend: 'Caribbean', labelSide: 'right' },
-      { zone: 'southAmerica', label: 'LATIN AMERICA', tone: 'bronze', legend: 'Latin America, including Mesoamerica and the Caribbean', labelSide: 'left' },
-      { zone: 'northAfrica', label: 'NORTH AFRICA', tone: 'sand', legend: 'North Africa', labelSide: 'above' },
-      { zone: 'westAfrica', label: 'WEST AFRICA', tone: 'sage', legend: 'West Africa', labelSide: 'left' },
-      { zone: 'centralAfrica', label: 'CENTRAL AFRICA', tone: 'gold', legend: 'Central Africa', labelSide: 'left' },
-      { zone: 'eastAfrica', label: 'EAST AFRICA', tone: 'bronze', legend: 'East Africa', labelSide: 'right' },
-      { zone: 'southernAfrica', label: 'SOUTHERN AFRICA', tone: 'sage', legend: 'Southern Africa' },
-      { zone: 'swAsia', label: 'MIDDLE EAST', tone: 'plum', legend: 'Middle East' },
-      { zone: 'centralAsia', label: 'CENTRAL ASIA', tone: 'slate', legend: 'Central Asia', labelSide: 'above' },
-      { zone: 'southAsia', label: 'SOUTH ASIA', tone: 'gold', legend: 'South Asia' },
-      { zone: 'eastAsia', label: 'EAST ASIA', tone: 'sand', legend: 'East Asia', labelSide: 'right' },
-      { zone: 'seAsia', label: 'SOUTHEAST ASIA', tone: 'bronze', legend: 'Southeast Asia' }
+      { zone: 'eastAsia', label: 'EAST ASIA', tone: 'gold' },
+      { zone: 'southAsia', label: 'SOUTH & SE ASIA', tone: 'bronze' },
+      { zone: 'swAsia', label: 'SOUTHWEST ASIA', tone: 'sand' },
+      { zone: 'westAfrica', label: 'AFRICA', tone: 'sage' },
+      { zone: 'europe', label: 'EUROPE', tone: 'slate' },
+      { zone: 'andes', label: 'AMERICAS', tone: 'plum' }
     ],
-    note: 'BeHistorical instructional map. The AP World regions are analytic categories, not fixed borders; several of them overlap, and coastlines are simplified for classroom projection.'
+    note: 'BeHistorical instructional map. The AP World regions are analytic categories, not fixed borders; coastlines are simplified for classroom projection.'
   },
   {
     id: 'foundations-1',

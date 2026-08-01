@@ -41,19 +41,18 @@ window.FOUNDATION_TOPIC = {
   timelinePrompt: 'Which moment of this year do you think will change you the most as a thinker, and why?',
 
   map: {
-    title: 'World Regions: A Closer Look',
+    title: 'The Historian\'s Map: The World at c.1200',
     url: '../assets/images/instructional-maps/foundations-0.svg',
     sourceUrl: '../assets/images/instructional-maps/foundations-0.svg',
-    caption: 'These are the region names AP World uses all year. Learn them now and every prompt, every stimulus, and every essay question gets easier to read. Note that the regions overlap on purpose: they are categories historians argue with, not borders.',
-    desc: 'The AP World regional vocabulary. Every unit, every document, and every exam question locates itself somewhere on this map, so these fourteen names are the course\'s working shorthand. They are analytic categories, not fixed borders, which is why several of them overlap.',
+    caption: 'AP World History begins at c.1200. This is the world you are about to learn to read, not memorize. Every unit this year will pull you back to this map, then push it forward.',
+    desc: 'AP World starts at c.1200, a world already full of empires, trade routes, and belief systems. This map is your baseline. You will return to it after every unit and see it differently each time.',
     key: [
-      { label: 'North America', detail: 'The continent north of Mexico. AP treats it separately from Latin America because its colonial and post-colonial paths diverged.' },
-      { label: 'Mexico, the Caribbean, and Latin America', detail: 'Three named regions that overlap. Latin America is the broad category, and it includes Mesoamerica and the Caribbean inside it.' },
-      { label: 'Africa\'s five regions', detail: 'North, West, Central, East, and Southern Africa. AP almost never says just "Africa," because the Sahara, the Swahili coast, and the southern plateau belong to different stories.' },
-      { label: 'Middle East', detail: 'Southwest Asia plus the eastern edge of North Africa. Watch the overlap with North Africa: that shared zone is exactly where Dar al-Islam forms.' },
-      { label: 'Central Asia', detail: 'The steppe corridor between the Middle East, South Asia, and East Asia. It is the hinge that Silk Road questions almost always turn on.' },
-      { label: 'South Asia and Southeast Asia', detail: 'The Indian subcontinent and the islands and peninsulas beyond it. Both sit on the monsoon routes linking China to Africa.' },
-      { label: 'East Asia', detail: 'China, Korea, and Japan. You will start Unit 1 here, with Song China.' }
+      { label: 'East Asia', detail: 'Song China, the most sophisticated economy on Earth in 1200. You will start Unit 1 here.' },
+      { label: 'Dar al-Islam', detail: 'The Islamic world stretches from West Africa to South Asia, the trade and knowledge hub of the medieval world.' },
+      { label: 'South & Southeast Asia', detail: 'Indian Ocean crossroads. Hindu, Buddhist, and Muslim kingdoms trade monsoon-driven routes between China and Africa.' },
+      { label: 'The Americas', detail: 'Aztec, Inca, and Mississippian societies build states without contact with Afro-Eurasia, a parallel story that will collide with it after 1492.' },
+      { label: 'Africa', detail: 'Mali, Great Zimbabwe, Ethiopia. Gold, salt, and Islam move along trans-Saharan and Indian Ocean routes.' },
+      { label: 'Europe', detail: 'The quietest corner in 1200, but the one that will reshape global connections after 1450. Watch how AP World frames Europe: not as the center, but as one region among many.' }
     ],
     questions: [
       'Which region on this map do you already know something about, and how did you learn it?',

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
-  <title id="map-title">World Regions: A Closer Look</title>
-  <desc id="map-desc">FOUNDATIONS 0 instructional map for AP World History: World Regions: A Closer Look. Foundations 0 · The AP World regional vocabulary</desc>
+  <title id="map-title">The Historian&apos;s World at c. 1200</title>
+  <desc id="map-desc">FOUNDATIONS 0 instructional map for AP World History: The Historian&apos;s World at c. 1200. Foundations 0 · The six AP World regions</desc>
   <defs>
     <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
@@ -20,7 +20,6 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
-      .leader{stroke:#3E4447;stroke-width:2;opacity:.55}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -67,35 +66,18 @@
   </g>
 
   <g id="highlights">
-    <ellipse cx="355.6" cy="250.0" rx="133.3" ry="72.2" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="355.6" y="165.8" text-anchor="middle" fill="#1A1C1D"><tspan x="355.6" dy="0">NORTH AMERICA</tspan></text>
-    <ellipse cx="346.7" cy="372.2" rx="44.4" ry="33.3" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="286.2" y="380.2" text-anchor="end" fill="#1A1C1D"><tspan x="286.2" dy="0">MEXICO</tspan></text>
-    <ellipse cx="471.1" cy="400.0" rx="48.9" ry="22.2" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="536.0" y="408.0" text-anchor="start" fill="#1A1C1D"><tspan x="536.0" dy="0">CARIBBEAN</tspan></text>
-    <ellipse cx="533.3" cy="583.3" rx="80.0" ry="122.2" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="437.3" y="591.3" text-anchor="end" fill="#1A1C1D"><tspan x="437.3" dy="0">LATIN AMERICA</tspan></text>
-    <ellipse cx="862.2" cy="350.0" rx="106.7" ry="33.3" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="862.2" y="280.7" text-anchor="middle" fill="#1A1C1D"><tspan x="862.2" dy="0">NORTH AFRICA</tspan></text>
+    <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">EAST ASIA</tspan></text>
+    <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
+    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">SOUTH &amp; SE ASIA</tspan></text>
+    <ellipse cx="1000.0" cy="327.8" rx="75.6" ry="50.0" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
+    <text class="region halo" x="1000.0" y="403.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">SOUTHWEST ASIA</tspan></text>
     <ellipse cx="782.2" cy="433.3" rx="66.7" ry="38.9" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="699.6" y="465.3" text-anchor="end" fill="#1A1C1D"><tspan x="699.6" dy="0">WEST AFRICA</tspan></text>
-    <ellipse cx="888.9" cy="500.0" rx="57.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="815.1" y="508.0" text-anchor="end" fill="#1A1C1D"><tspan x="815.1" dy="0">CENTRAL AFRICA</tspan></text>
-    <ellipse cx="968.9" cy="488.9" rx="35.6" ry="55.6" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1020.4" y="496.9" text-anchor="start" fill="#1A1C1D"><tspan x="1020.4" dy="0">EAST AFRICA</tspan></text>
-    <ellipse cx="911.1" cy="638.9" rx="53.3" ry="44.4" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <line class="leader" x1="911.1" y1="597.3" x2="911.1" y2="638.9"/>
-    <text class="region halo" x="911.1" y="589.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">SOUTHERN AFRICA</tspan></text>
-    <ellipse cx="1000.0" cy="327.8" rx="75.6" ry="50.0" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1000.0" y="403.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">MIDDLE EAST</tspan></text>
-    <ellipse cx="1097.8" cy="255.6" rx="66.7" ry="44.4" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="1097.8" y="199.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1097.8" dy="0">CENTRAL ASIA</tspan></text>
-    <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">SOUTH ASIA</tspan></text>
-    <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1380.4" y="319.1" text-anchor="start" fill="#1A1C1D"><tspan x="1380.4" dy="0">EAST ASIA</tspan></text>
-    <ellipse cx="1266.7" cy="455.6" rx="57.8" ry="55.6" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">SOUTHEAST ASIA</tspan></text>
+    <text class="region halo" x="782.2" y="498.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">AFRICA</tspan></text>
+    <ellipse cx="871.1" cy="222.2" rx="115.6" ry="61.1" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
+    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">EUROPE</tspan></text>
+    <ellipse cx="480.0" cy="577.8" rx="26.7" ry="100.0" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
+    <text class="region halo" x="480.0" y="679.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">AMERICAS</tspan></text>
   </g>
   <g id="flows">
     
@@ -107,29 +89,21 @@
   <g id="titleband">
     <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
     <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
-    <text class="title" x="46" y="62">World Regions: A Closer Look</text>
-    <text class="subtitle" x="48" y="97">Foundations 0 · The AP World regional vocabulary</text>
+    <text class="title" x="46" y="62">The Historian&apos;s World at c. 1200</text>
+    <text class="subtitle" x="48" y="97">Foundations 0 · The six AP World regions</text>
   </g>
 
-  <g id="legend" transform="translate(46,655)">
-    <rect x="0" y="0" width="1030" height="277" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
+  <g id="legend" transform="translate(46,688)">
+    <rect x="0" y="0" width="640" height="244" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="56">North America</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="89">Mexico</text>
-      <rect x="18" y="104" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="122">Caribbean</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="155">Latin America, including Mesoamerica and the Caribbean</text>
-      <rect x="18" y="170" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="188">North Africa</text>
-      <rect x="18" y="203" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="221">West Africa</text>
-      <rect x="18" y="236" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="254">Central Africa</text>
-      <rect x="518" y="38" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="574" y="56">East Africa</text>
-      <rect x="518" y="71" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="574" y="89">Southern Africa</text>
-      <rect x="518" y="104" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="574" y="122">Middle East</text>
-      <rect x="518" y="137" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="574" y="155">Central Asia</text>
-      <rect x="518" y="170" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="574" y="188">South Asia</text>
-      <rect x="518" y="203" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="574" y="221">East Asia</text>
-      <rect x="518" y="236" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="574" y="254">Southeast Asia</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">EAST ASIA</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="89">SOUTH &amp; SE ASIA</text>
+      <rect x="18" y="104" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="122">SOUTHWEST ASIA</text>
+      <rect x="18" y="137" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="155">AFRICA</text>
+      <rect x="18" y="170" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="188">EUROPE</text>
+      <rect x="18" y="203" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="221">AMERICAS</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">BeHistorical instructional map. The AP World regions are analytic categories, not fixed borders; several of them overlap, and coastlines are simplified for classroom projection.</text>
+  <text class="tiny" x="46" y="980">BeHistorical instructional map. The AP World regions are analytic categories, not fixed borders; coastlines are simplified for classroom projection.</text>
 </svg>
