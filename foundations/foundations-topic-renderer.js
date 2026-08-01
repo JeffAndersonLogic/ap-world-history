@@ -12,6 +12,9 @@ function sanitizeImageUrl(url){
 }
 function bg(url){return `url('${sanitizeImageUrl(url)}')`;}
 const T=window.FOUNDATION_TOPIC;
+// Foundations data files use id 'foundations-N'; BH_FORM.topics is keyed 'fN'.
+// Passing the raw id would fail buildFormURL's /^f(\d+)$/ test and silently drop the Unit parameter.
+const FOUNDATION_TOPIC_KEY=String(T.id||'').replace(/^foundations-(\d+)$/,'f$1');
 function foundationArtworkPath(id){const match=String(T.id||'').match(/(\d+)$/);return `../assets/images/module-art/foundations/topic-f${match?match[1]:'1'}/${id}.svg`;}
 function useFoundationFallback(image,fallback){if(!fallback||image.src.endsWith(fallback))return;image.onerror=null;image.src=fallback;image.classList.add('media-fallback');}
 function foundationImageUrl(url,fallbackId){return sanitizeImageUrl(url)||foundationArtworkPath(fallbackId);}
@@ -73,10 +76,31 @@ function renderBeSurreal(){if(!beSurreal)return `<article class="foundation-card
 function renderEvidence(){return `<article class="foundation-card"><h3>${evidence.title}</h3><p>${evidence.task}</p></article><div class="pop-grid">${evidence.items.map((item,i)=>{const fallbackId=`evidence-${String(i+1).padStart(2,'0')}`;return `<article class="foundation-card map-figure pop-half"><img src="${foundationEvidenceImageUrl(i)}" alt="${item.title}" ${foundationFallbackAttrs(fallbackId)}><figcaption><strong>${item.title}</strong><br>${item.caption}<br><em>${item.prompt}</em><br><a class="source-link" href="${item.sourceUrl||item.url}" target="_blank" rel="noopener">Open source</a></figcaption></article>`}).join('')}</div>${draft(`${T.id}-evidence`,evidence.prompt)}`}
 function renderCoach(){return `<article class="foundation-card"><h3>${aiCoach.title}</h3><p>${aiCoach.intro}</p><div class="coach-list">${aiCoach.prompts.map((p,i)=>`<div class="coach-prompt"><strong>Prompt ${i+1}</strong><span>${p}</span></div>`).join('')}</div></article>${draft(`${T.id}-coach`,aiCoach.responsePrompt||'Use one AI coach prompt to improve your historical explanation.')}`}
 function renderSkill(){return `<article class="foundation-card"><h3>${T.skill.title}</h3><p>${T.skill.intro}</p><table class="mini-table"><tr><th>Step</th><th>What to Do</th></tr>${T.skill.steps.map((s,i)=>`<tr><td>${i+1}</td><td>${s}</td></tr>`).join('')}</table></article>${draft(`${T.id}-skill`,T.skill.prompt)}`}
-function renderCheckpoint1(){return `<article class="dark-callout"><h3>${T.checkpoint.title}</h3><p>${T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Exit Ticket</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Strong Response Checklist</h3><ul>${T.checkpoint.checklist.map(x=>`<li>${x}</li>`).join('')}</ul></article>${draft(`${T.id}-checkpoint`,T.checkpoint.prompt)}`}
-function renderCheckpoint2(){return `<article class="dark-callout"><h3>Synthesis Checkpoint</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Build Your Synthesis</h3><p>Use evidence from at least two modules to answer the synthesis prompt above. Connect the themes you studied today to the bigger picture of AP World History.</p></article>${draft(`${T.id}-checkpoint2`,T.exitTicket||T.checkpoint.prompt)}`}
+function renderCheckpoint1(){return `<article class="dark-callout"><h3>${T.checkpoint.title}</h3><p>${T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Exit Ticket</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Strong Response Checklist</h3><ul>${T.checkpoint.checklist.map(x=>`<li>${x}</li>`).join('')}</ul></article>${draft(`${T.id}-checkpoint`,T.checkpoint.prompt,foundationSubmitBtn(`${T.id}-checkpoint`,'checkpoint1'))}`}
+function renderCheckpoint2(){return `<article class="dark-callout"><h3>Synthesis Checkpoint</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Build Your Synthesis</h3><p>Use evidence from at least two modules to answer the synthesis prompt above. Connect the themes you studied today to the bigger picture of AP World History.</p></article>${draft(`${T.id}-checkpoint2`,T.exitTicket||T.checkpoint.prompt,foundationSubmitBtn(`${T.id}-checkpoint2`,'checkpoint2'))}`}
 function renderBeInTheRoomPlaceholder(){return `<article class="foundation-card"><h3>BeInTheRoom</h3><p>This immersive experience for ${T.title} is coming soon.</p></article>`;}
-function draft(id,prompt){return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" onclick="copyResponse('${id}')">Copy Response</button></div><div id="${id}-result" class="check-result"></div></div>`}
+function draft(id,prompt,extraTools){return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" onclick="copyResponse('${id}')">Copy Response</button>${extraTools||''}</div><div id="${id}-result" class="check-result"></div></div>`}
+// Mirrors submitResponseToGoogleForm in assets/js/behistorical-topic-renderer-v1.js.
+// A clipboard failure never blocks the form from opening; locked-down school devices deny clipboard access.
+window.submitResponseToGoogleForm=function(responseId,formUrl){
+  const responseEl=byId(responseId),resultEl=byId(responseId+'-result'),text=responseEl?(responseEl.value||'').trim():'';
+  const openForm=()=>window.open(formUrl,'_blank','noopener');
+  if(!text){if(resultEl)resultEl.textContent='Form opened. Add your response before submitting.';openForm();return;}
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text)
+      .then(()=>{if(resultEl)resultEl.textContent='Response copied, paste it into the Student Response field on the form.';openForm();})
+      .catch(()=>{if(resultEl)resultEl.textContent='Form opened. Copy your response manually before submitting.';openForm();});
+  }else{
+    if(resultEl)resultEl.textContent='Form opened. Copy your response manually before submitting.';openForm();
+  }
+};
+// Returns '' when capture is unavailable. A button that opens a bare form is worse than no button.
+function foundationSubmitBtn(elemId,responseTypeKey){
+  if(!window.BH_FORM||typeof buildFormURL!=='function')return '';
+  if(!FOUNDATION_TOPIC_KEY||!BH_FORM.topics[FOUNDATION_TOPIC_KEY])return '';
+  const url=buildFormURL(FOUNDATION_TOPIC_KEY,responseTypeKey);
+  return `<button class="btn secondary" type="button" onclick="submitResponseToGoogleForm('${elemId}','${url}')">Submit to Form</button>`;
+}
 function saveDraft(id){const t=byId(id);localStorage.setItem(`foundations-topic-${id}`,t.value||'');byId(id+'-result').textContent='Draft saved on this device.'}
 function copyResponse(id){const t=byId(id);navigator.clipboard.writeText(t.value||'').then(()=>byId(id+'-result').textContent='Response copied.').catch(()=>byId(id+'-result').textContent='Copy failed. Select and copy manually.')}
 function loadDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>{const saved=localStorage.getItem(`foundations-topic-${t.id}`);if(saved)t.value=saved})}

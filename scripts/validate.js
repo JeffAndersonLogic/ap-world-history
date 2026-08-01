@@ -355,10 +355,12 @@ function checkFoundationsData(filePath) {
   // first10.embedUrl must point to a capture wrapper, not a standalone file
   const embedMatch = src.match(/embedUrl\s*:\s*['"]([^'"]+)['"]/);
   if (embedMatch) {
-    if (!embedMatch[1].endsWith('-capture.html')) {
+    // Strip any cache-busting query string before checking the suffix and the path on disk.
+    const embedPath = embedMatch[1].split('?')[0];
+    if (!embedPath.endsWith('-capture.html')) {
       err(filePath, `embedUrl '${embedMatch[1]}' must end with -capture.html (not a standalone HTML file)`);
     }
-    const captureTarget = path.join(path.dirname(filePath), embedMatch[1]);
+    const captureTarget = path.join(path.dirname(filePath), embedPath);
     if (!exists(captureTarget)) {
       err(filePath, `embedUrl target not found on disk: ${embedMatch[1]}`);
     }

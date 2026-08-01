@@ -63,7 +63,7 @@ window.FOUNDATION_TOPIC = {
 
   first10: {
     title: 'First & 10: Three Networks That Moved the World',
-    embedUrl: 'first-and-10-foundations-4-trade-networks-capture.html',
+    embedUrl: 'first-and-10-foundations-4-trade-networks-capture.html?v=2',
     paragraphs: [
       'A trade network is a system of routes and relationships that carries goods between distant societies, but the goods are only the most visible layer. Along with silk and salt travel merchants and missionaries, seeds and livestock, tools and techniques, and, invisibly, the germs those travelers carry. Before c.1200, three great networks did most of this work across Afro-Eurasia: the overland Silk Roads, the maritime Indian Ocean system, and the trans-Saharan caravan routes.',
       'The Silk Roads were not a single road but a branching relay network running from the Chinese capital of Chang\'an, through the oasis cities of Central Asia, on to Samarkand, Persia, and the Mediterranean. No single merchant traveled the whole way; goods changed hands again and again, passing from Chinese to Sogdian to Persian to Arab middlemen. The relay carried silk, porcelain, and paper west and horses, glassware, and spices east, and it also carried Buddhist monks who traveled with the caravans and the monasteries the merchants funded along the way.',
