@@ -52,6 +52,12 @@ Every picture a student can see must be on-topic and must be impossible to break
 
 ## Core Architecture
 
+> **Before touching any form-capture code, read `docs/FORM-CONTRACT.md`.**
+> It records the live Google Form's dropdown contents, which are not stored in
+> this repository and cannot be inferred from code. The form conforms to the
+> site, never the reverse. Prefill matching is character-exact and fails
+> silently.
+
 Standard unit lessons are thin HTML shells plus a topic data file, a renderer-config file, and `assets/js/behistorical-topic-renderer-v1.js`. Foundations uses `foundations/foundations-topic-renderer.js`. First & 10 readings are standalone pages embedded through capture wrappers. BeInTheRoom simulations live under `beintheroom/unit-N/` and must pass the theme-alignment gate in `docs/beintheroom-scenario-blueprint.md` before they are linked.
 
 ## 10-Module Structure Standard
