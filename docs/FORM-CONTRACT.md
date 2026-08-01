@@ -143,21 +143,29 @@ Units 2 through 9 topic names were already correct.
 
 **Prompt ID dropdown** — `foundations-0-first10` through
 `foundations-5-first10`, plus `foundations-N-checkpoint-1` and
-`foundations-N-checkpoint-2` for N = 0..5. Legacy `f1-*` through `f5-*` options
+`foundations-N-checkpoint-2` for N = 0..5. All 12 Foundations checkpoint
+options are confirmed present on the live form as of 2026-08-01, and an
+end-to-end submission test passed. Legacy `f1-*` through `f5-*` options
 remain in the list, unused and harmless.
 
-**Skill Focus** — checkbox question. Foundations checkpoints send:
-`Argumentation`, `Causation`, `Claims & Thesis`, `Comparison`, `Evidence Usage`.
+**Skill Focus** — checkbox question. Verified 2026-08-01: every value the
+site can send across all topics and response types is present on the form.
+The complete set the site sends is `Argumentation`, `Causation`,
+`Claims & Thesis`, `Comparison`, `Contextualization`,
+`Continuity and Change Over Time (CCOT)`, `Evidence Usage`, `Sourcing`.
+`Complexity` exists on the form but is never sent — harmless. This field
+cannot silently drop.
 
 ---
 
 ## KNOWN GAPS
 
-**Foundations touchpoints.** Foundations lessons capture First & 10,
-Checkpoint 1, and Checkpoint 2. That is the full three-touchpoint allocation.
-Map, BeSurreal, AP Skill Builder, Evidence Lab, Socrates AI Coach, and
-BeInTheRoom are localStorage-only **by design**. Do not add capture to them.
-Three touchpoints is the architectural ceiling, not a starting point.
+**Foundations touchpoints — BUILT AND VERIFIED 2026-08-01.** All six
+Foundations lessons capture First & 10, Checkpoint 1, and Checkpoint 2.
+That is the full three-touchpoint allocation. Map, BeSurreal, AP Skill
+Builder, Evidence Lab, Socrates AI Coach, and BeInTheRoom are
+localStorage-only **by design**. Do not add capture to them. Three
+touchpoints is the architectural ceiling, not a starting point.
 
 **BeInTheRoom.** `BeInTheRoom` is a valid Response Type and `beintheroom` is a
 valid slug, but no `*-beintheroom` prompt IDs exist on the form and
@@ -207,3 +215,14 @@ A stale cached copy of a capture wrapper produced a bare, parameter-free form UR
 that could not be explained by reading current source, and burned a full
 debugging session. `scripts/validate.js` strips query strings before resolving
 `embedUrl` paths, so versioning will not trip the build gate.
+
+---
+
+## VERIFICATION HISTORY
+
+**2026-08-01** — Full pipeline verified end-to-end. Foundations checkpoint
+capture built (`0007ab2`), contract documented (`5cd7e3c`), 12 checkpoint
+Prompt IDs added to the live form, Skill Focus cross-checked against the
+complete site-side skills map, live submission test passed. Note that
+`scripts/validate.js` passing does NOT indicate correct behavior — every
+defect repaired in this sequence passed validation.
