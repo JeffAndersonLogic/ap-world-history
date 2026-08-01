@@ -1,6 +1,6 @@
 # Google Form Capture Contract
 
-**Last verified: 2026-08-01**
+**Last verified: 2026-08-01** — pipeline tested end-to-end, live submission confirmed.
 
 This file records state that lives in Google, not in this repository. Nothing
 here can be verified by reading code. If you are an agent working on capture,
@@ -141,31 +141,74 @@ Foundations 5 - World at 1200
 Unit 1 topics 1.5 / 1.6 / 1.7 corrected to the CED-aligned site names.
 Units 2 through 9 topic names were already correct.
 
-**Prompt ID dropdown** — `foundations-0-first10` through
-`foundations-5-first10`, plus `foundations-N-checkpoint-1` and
-`foundations-N-checkpoint-2` for N = 0..5. All 12 Foundations checkpoint
-options are confirmed present on the live form as of 2026-08-01, and an
-end-to-end submission test passed. Legacy `f1-*` through `f5-*` options
-remain in the list, unused and harmless.
+**Prompt ID dropdown** — 474 options total as of 2026-08-01.
 
-**Skill Focus** — checkbox question. Verified 2026-08-01: every value the
-site can send across all topics and response types is present on the form.
-The complete set the site sends is `Argumentation`, `Causation`,
-`Claims & Thesis`, `Comparison`, `Contextualization`,
-`Continuity and Change Over Time (CCOT)`, `Evidence Usage`, `Sourcing`.
-`Complexity` exists on the form but is never sent — harmless. This field
-cannot silently drop.
+Foundations First & 10 (six options): `foundations-0-first10` through
+`foundations-5-first10`.
+
+Foundations checkpoints — twelve options, verified present at positions
+463–474:
+
+| # | Option |
+|---|---|
+| 463 | `foundations-0-checkpoint-1` |
+| 464 | `foundations-0-checkpoint-2` |
+| 465 | `foundations-1-checkpoint-1` |
+| 466 | `foundations-1-checkpoint-2` |
+| 467 | `foundations-2-checkpoint-1` |
+| 468 | `foundations-2-checkpoint-2` |
+| 469 | `foundations-3-checkpoint-1` |
+| 470 | `foundations-3-checkpoint-2` |
+| 471 | `foundations-4-checkpoint-1` |
+| 472 | `foundations-4-checkpoint-2` |
+| 473 | `foundations-5-checkpoint-1` |
+| 474 | `foundations-5-checkpoint-2` |
+
+Option order is irrelevant to matching — Google matches prefill by exact string
+value, not position. Position numbers are recorded only to make future audits
+faster.
+
+Legacy `f1-*` through `f5-*` options remain in the list, unused and harmless.
+
+**Skill Focus** — checkbox question, marked required. Nine options, in this
+order on the form:
+
+1. `Causation`
+2. `Comparison`
+3. `Continuity and Change Over Time (CCOT)`
+4. `Contextualization`
+5. `Argumentation`
+6. `Evidence Usage`
+7. `Sourcing`
+8. `Complexity`
+9. `Claims & Thesis`
+
+Verified 2026-08-01 against the complete `BH_FORM.skills` map — every topic,
+every response type. The site sends exactly eight distinct values across the
+entire course: `Argumentation`, `Causation`, `Claims & Thesis`, `Comparison`,
+`Contextualization`, `Continuity and Change Over Time (CCOT)`, `Evidence Usage`,
+`Sourcing`. All eight are present on the form. `Complexity` exists on the form
+but is never sent by any capture button — harmless.
+
+**This field cannot silently drop.** Extra options on the form are harmless;
+only missing ones cause failures.
+
+Note that Foundations checkpoints use a five-value subset. Five is not the
+ceiling — the unit topics use all eight.
 
 ---
 
 ## KNOWN GAPS
 
-**Foundations touchpoints — BUILT AND VERIFIED 2026-08-01.** All six
-Foundations lessons capture First & 10, Checkpoint 1, and Checkpoint 2.
-That is the full three-touchpoint allocation. Map, BeSurreal, AP Skill
-Builder, Evidence Lab, Socrates AI Coach, and BeInTheRoom are
-localStorage-only **by design**. Do not add capture to them. Three
-touchpoints is the architectural ceiling, not a starting point.
+**Foundations touchpoints — BUILT AND VERIFIED 2026-08-01.** All six Foundations
+lessons capture First & 10, Checkpoint 1, and Checkpoint 2 — eighteen capture
+points total. Live submission test passed with Unit, Topic, Prompt ID, and Skill
+Focus all prefilling correctly.
+
+That is the full three-touchpoint allocation. Map, BeSurreal, AP Skill Builder,
+Evidence Lab, Socrates AI Coach, and BeInTheRoom are localStorage-only **by
+design**. Do not add capture to them. Three touchpoints is the architectural
+ceiling, not a starting point.
 
 **BeInTheRoom.** `BeInTheRoom` is a valid Response Type and `beintheroom` is a
 valid slug, but no `*-beintheroom` prompt IDs exist on the form and
@@ -220,9 +263,30 @@ debugging session. `scripts/validate.js` strips query strings before resolving
 
 ## VERIFICATION HISTORY
 
-**2026-08-01** — Full pipeline verified end-to-end. Foundations checkpoint
-capture built (`0007ab2`), contract documented (`5cd7e3c`), 12 checkpoint
-Prompt IDs added to the live form, Skill Focus cross-checked against the
-complete site-side skills map, live submission test passed. Note that
-`scripts/validate.js` passing does NOT indicate correct behavior — every
-defect repaired in this sequence passed validation.
+**2026-08-01 — Full pipeline verified end-to-end.**
+
+Repo commits:
+- `0007ab2` — Foundations capture parity, 20 files. Checkpoint 1 and Checkpoint 2
+  wired into `foundations/foundations-topic-renderer.js`. Renderer cache-bust
+  `?v=6` → `?v=7` across six shells. Malformed `?v=2?replaced` corrected to
+  `?v=3` in foundations-1 through foundations-4. `scripts/validate.js` line ~356
+  fixed to strip query strings before path resolution.
+- `5cd7e3c` — this contract document plus the `CLAUDE.md` pointer.
+
+Form-side changes (manual, outside the repo):
+- Unit dropdown: added `Foundations - How World History Works`
+- Topic dropdown: all six Foundations topics added with plain hyphens
+- Unit 1 topics 1.5 / 1.6 / 1.7 corrected to CED-aligned site names
+- Prompt ID: 12 checkpoint options added (see table above)
+- Skill Focus: confirmed complete, no edits needed
+
+Four defects repaired, none of which threw an error:
+1. Unit parameter silently dropping on the `foundations-N` → `fN` key mismatch
+2. Checkpoint 1 and Checkpoint 2 had no capture path at all
+3. Stale browser cache serving a parameter-free form URL absent from all source
+4. Form drift off CED naming on three Unit 1 topics
+
+**`scripts/validate.js` passing does NOT indicate correct behavior.** Every
+defect listed above passed validation. The validator checks structural
+well-formedness, not runtime behavior. Do not treat a green validate run as
+evidence that capture works.
