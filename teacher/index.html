@@ -7,13 +7,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/behistorical-teacher-hub.css">
+  <link rel="stylesheet" href="../assets/css/behistorical-teacher-hub.css?v=live-v1">
 </head>
 <body>
-  <div class="teacher-banner">Teacher View Prototype, Not for Student Distribution</div>
+  <div class="teacher-banner">Teacher View, Not for Student Distribution</div>
   <nav class="top-nav" aria-label="Teacher Hub navigation">
     <a class="brand-mini" href="../index.html"><img src="../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"><span>BeHistorical</span></a>
-    <div class="nav-links"><a href="../index.html">Home</a><a href="dashboard.html">Teacher Dashboard</a></div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="../tools/teacher-hub/google-apps-script/README.md" target="_blank" rel="noopener">Setup Guide</a></div>
   </nav>
   <header class="site-header">
     <div class="header-wrap">
@@ -21,41 +21,99 @@
         <div class="globe-logo">B</div>
         <div>
           <div class="site-eyebrow">BeHistorical Teacher Hub</div>
-          <h1 class="site-title">Teacher Control Panel Access</h1>
-          <div class="site-subtitle">Prototype login gate for Topic 1.1 dashboard development</div>
+          <h1 class="site-title">Connect to Your Response Sheet</h1>
+          <div class="site-subtitle">Live class analysis from Google Forms, all units and topics</div>
         </div>
       </div>
     </div>
   </header>
   <main class="main-content">
-    <section class="panel" style="max-width:760px;margin:0 auto;">
-      <div class="section-label" style="margin-top:0">Prototype Access</div>
-      <h2>Enter the Teacher Hub</h2>
-      <p>This page is a static prototype gate. It keeps students from casually entering the Teacher Hub, but it is not a secure authentication system for private student data.</p>
-      <div class="notice"><strong>Security note:</strong> true student-response protection should happen through a protected Google Apps Script, authenticated Google account access, or another secure backend layer. Do not store private student data directly in GitHub Pages files.</div>
-      <form id="login-form" class="control-panel" style="grid-template-columns:1fr auto;margin-top:18px;">
-        <div class="field"><label for="teacher-code">Teacher access code</label><input id="teacher-code" type="password" autocomplete="off" placeholder="Enter prototype code"></div>
-        <button class="btn teacher" type="submit">Enter</button>
+    <section class="panel" style="max-width:820px;margin:0 auto;">
+      <div class="section-label" style="margin-top:0">Connection</div>
+      <h2>Enter your Web App URL and access token</h2>
+      <p>The Teacher Hub reads your Google Sheet through the BeHistorical Apps Script web app. Paste its URL and the access token you generated from the Sheet's <strong>BeHistorical</strong> menu. Both are stored in this browser only, so you enter them once per device.</p>
+
+      <form id="connect-form" class="control-panel" style="grid-template-columns:1fr;margin-top:18px;">
+        <div class="field">
+          <label for="endpoint">Apps Script Web App URL</label>
+          <input id="endpoint" type="url" autocomplete="off" spellcheck="false" placeholder="https://script.google.com/macros/s/.../exec">
+        </div>
+        <div class="field">
+          <label for="token">Teacher Hub access token</label>
+          <input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="Paste the token from BeHistorical &gt; Show Teacher Hub Access Token">
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button class="btn teacher" type="submit" id="connect-btn">Connect</button>
+          <button class="btn secondary" type="button" id="forget-btn">Forget saved connection</button>
+        </div>
       </form>
-      <p id="login-message" style="font-family:var(--ui);font-size:12px;color:var(--muted-sandstone);"></p>
-      <hr style="border:0;border-top:1px solid var(--gunmetal-gray);margin:20px 0;">
-      <h3>Rollback-safe build approach</h3>
-      <p>The Teacher Hub is isolated inside <code>/teacher/</code> and separate <code>assets/css</code>, <code>assets/js</code>, and <code>assets/data/teacher</code> files. This keeps the student-facing BeHistorical lesson renderer untouched during prototype development.</p>
+      <p id="connect-message" style="font-family:var(--ui);font-size:12px;color:var(--muted-sandstone);margin-top:10px;"></p>
+
+      <hr style="border:0;border-top:1px solid var(--gunmetal-gray);margin:22px 0;">
+
+      <h3>Don't have these yet?</h3>
+      <p>Open your Google Form response Sheet, then:</p>
+      <ol style="color:#e8e0d0;padding-left:22px;line-height:1.8;">
+        <li><strong>Extensions &rarr; Apps Script</strong>, and paste in <code>tools/teacher-hub/google-apps-script/Code.gs</code>.</li>
+        <li>Reload the Sheet, then run <strong>BeHistorical &rarr; Create/Repair Teacher Hub Tabs</strong>.</li>
+        <li>Run <strong>BeHistorical &rarr; Create Teacher Hub Access Token</strong> and copy the token.</li>
+        <li>In Apps Script, <strong>Deploy &rarr; New deployment &rarr; Web app</strong>, with <em>Execute as: Me</em> and <em>Who has access: Anyone</em>. Copy the <code>/exec</code> URL.</li>
+      </ol>
+      <div class="notice">
+        <strong>Why "Anyone" is required:</strong> this page is static, so its request cannot carry your Google login.
+        Any other access setting makes the endpoint unreachable from here. That is also why the endpoint never returns
+        student names or response text. It sends counts, patterns, and numbered labels; the names stay in your Sheet on the
+        <code>TeacherHub_StudentFlags</code> tab, matched to the same numbers.
+      </div>
     </section>
   </main>
-  <footer class="footer">BeHistorical Teacher Hub · Prototype</footer>
+  <footer class="footer">BeHistorical Teacher Hub · Live class analysis</footer>
+  <script src="../assets/js/teacher-hub-connection.js?v=live-v1"></script>
   <script>
-    const PROTOTYPE_CODE = 'song11';
-    document.getElementById('login-form').addEventListener('submit', function(event){
-      event.preventDefault();
-      const entered = document.getElementById('teacher-code').value.trim();
-      if(entered === PROTOTYPE_CODE){
-        sessionStorage.setItem('behistoricalTeacherAccess','prototype-topic-1-1');
-        window.location.href = 'dashboard.html';
-      } else {
-        document.getElementById('login-message').textContent = 'Access code not recognized. Prototype code can be changed before sharing.';
-      }
-    });
+    (function () {
+      const form = document.getElementById('connect-form');
+      const endpointInput = document.getElementById('endpoint');
+      const tokenInput = document.getElementById('token');
+      const message = document.getElementById('connect-message');
+      const connectBtn = document.getElementById('connect-btn');
+
+      endpointInput.value = TeacherHubConnection.getEndpoint();
+      tokenInput.value = TeacherHubConnection.getToken();
+
+      function say(text) { message.textContent = text; }
+
+      document.getElementById('forget-btn').addEventListener('click', function () {
+        TeacherHubConnection.clear();
+        endpointInput.value = '';
+        tokenInput.value = '';
+        say('Saved endpoint and token removed from this browser.');
+      });
+
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        const endpoint = endpointInput.value.trim();
+        const token = tokenInput.value.trim();
+
+        const shapeError = TeacherHubConnection.validateEndpointShape(endpoint);
+        if (shapeError) { say(shapeError); return; }
+        if (!token) { say('Paste the access token from the Sheet\'s BeHistorical menu.'); return; }
+
+        connectBtn.disabled = true;
+        say('Checking the connection...');
+        TeacherHubConnection.save(endpoint, token);
+
+        try {
+          const index = await TeacherHubConnection.fetchIndex();
+          TeacherHubConnection.markConnected();
+          say('Connected. ' + (index.totalResponses || 0) + ' responses found. Opening the dashboard...');
+          window.location.href = 'dashboard.html';
+        } catch (error) {
+          say(error.message || String(error));
+        } finally {
+          connectBtn.disabled = false;
+        }
+      });
+    })();
   </script>
 </body>
 </html>
