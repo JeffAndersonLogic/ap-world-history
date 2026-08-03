@@ -71,6 +71,13 @@ prompt-ID slugs, and skill tags all live there. Read it before assuming anything
 | Response Type | `entry.2107637366` | `BH_FORM.responseTypes` |
 | Skill Focus | `entry.1963461515` | `BH_FORM.skills`, checkbox, repeats |
 | Class Period | `entry.1794755975` | student selects, not prefilled |
+| Student Response | `entry.1845180246` | pre-filled from the card's textarea at click time |
+
+`entry.1845180246` was recovered on 2026-08-03 from the Unit 8 and Unit 9 First & 10
+capture wrappers, which had been prefilling it since they were written. It was
+missing from this table, so every other capture point copied the response to the
+clipboard and asked the student to paste. It no longer does; the response rides
+in the URL.
 
 Do not hardcode these anywhere. Read them from `BH_FORM.fields`.
 
@@ -141,6 +148,27 @@ Foundations 5 - World at 1200
 Unit 1 topics 1.5 / 1.6 / 1.7 corrected to the CED-aligned site names.
 Units 2 through 9 topic names were already correct.
 
+> ### TWO FORM EDITS ARE OUTSTANDING AS OF 2026-08-03
+>
+> The branch `claude/behistorical-form-buttons-lr4nzy` wires every module card
+> that has a textarea. The code is complete and verified in a browser, but two
+> **manual form edits** are required before the new capture points record
+> correctly. Until they are made, the new buttons still open a working form and
+> still carry the Student Response; the two fields below arrive blank.
+>
+> **1. Change Prompt ID from a dropdown to a short-answer question.** Full
+> wiring produces 8 response types across 77 topics. A dropdown cannot keep up,
+> and a Prompt ID absent from the option list is dropped silently. Short answer
+> accepts any value and never needs maintenance again, including for lessons
+> added later. This is the governing rule applied as written: the form conforms
+> to the site.
+>
+> **2. Add three Response Type options:** `Map Check`, `BeSurreal`,
+> `Socrates AI Coach`. Character-exact, no other punctuation.
+>
+> No Skill Focus edits are needed. The three new types send `Contextualization`
+> or `Argumentation`, both already present.
+
 **Prompt ID dropdown** — 474 options total as of 2026-08-01.
 
 Foundations First & 10 (six options): `foundations-0-first10` through
@@ -200,20 +228,35 @@ ceiling — the unit topics use all eight.
 
 ## KNOWN GAPS
 
-**Foundations touchpoints — BUILT AND VERIFIED 2026-08-01.** All six Foundations
-lessons capture First & 10, Checkpoint 1, and Checkpoint 2 — eighteen capture
-points total. Live submission test passed with Unit, Topic, Prompt ID, and Skill
-Focus all prefilling correctly.
+**The three-touchpoint ceiling was lifted on 2026-08-03**, by the teacher's
+explicit instruction, after students had no way to submit an AP Skill Builder,
+Evidence Lab, Primary Source, Map Check, BeSurreal, or Socrates Coach response.
+The rule this section used to state, that Foundations capture is capped at three
+touchpoints and the other modules are localStorage-only by design, no longer
+holds. Do not restore it without asking.
 
-That is the full three-touchpoint allocation. Map, BeSurreal, AP Skill Builder,
-Evidence Lab, Socrates AI Coach, and BeInTheRoom are localStorage-only **by
-design**. Do not add capture to them. Three touchpoints is the architectural
-ceiling, not a starting point.
+**Every module card with a textarea now captures.** Both renderers build their
+Submit to Form buttons from `buildCaptureButton()` in
+`assets/js/behistorical-form-config.js`, inside the same `.tool-row` as Save
+Draft and Copy Response. `autoBuildCaptureUrls()` in the unit renderer builds
+Map Check, AP Skill Builder, Checkpoint 1, Evidence Lab, Primary Source, and
+Checkpoint 2. Foundations adds BeSurreal and Socrates AI Coach in place of
+Primary Source.
+
+It **merges** into `L.captureUrls` rather than replacing it, because topics 7.9
+and 8.9 define bespoke `matrix*` capture keys that their own module renderers
+read. Replacing the object outright deletes those buttons silently.
+
+**First & 10 is deliberately not in that list.** Its capture lives in the capture
+wrapper, which already prefills the response. A second button on the lesson page
+would open a form with nothing in it, because the reading is inside an iframe.
 
 **BeInTheRoom.** `BeInTheRoom` is a valid Response Type and `beintheroom` is a
-valid slug, but no `*-beintheroom` prompt IDs exist on the form and
-`autoBuildCaptureUrls()` in the unit renderer does not build a button for it.
-The unit renderer's header comment claims otherwise. The comment is wrong.
+valid slug, but no `*-beintheroom` prompt IDs exist on the form, module 09 is an
+external link with no textarea, and neither renderer builds a button for it.
+Deferred on 2026-08-03 by the teacher's decision. Wiring it means either adding a
+debrief textarea to the 61 scenario pages under `beintheroom/`, or breaking the
+exactly-10-modules rule in `CLAUDE.md`.
 
 **Unit 9 wrappers.** Topics 9.1 and 9.9 use two different non-standard capture
 wrapper patterns. The 9.1 pattern attaches duplicate click handlers and can open

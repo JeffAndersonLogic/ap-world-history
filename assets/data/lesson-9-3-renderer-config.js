@@ -114,10 +114,4 @@
       focus: ['Open with a clear claim about how human activity caused environmental change after 1900.', 'Address at least one form of environmental degradation with its cause and effect.', 'Address the climate debate, explain how greenhouse gas emissions contributed to debates about climate change.', 'Explain the causal mechanism, how and why the human activity produced the environmental change, not just that it did.']
     }
   ];
-
-  lesson.captureUrls = {
-    first10: '',
-    checkpoint1: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+9+-+Globalization&entry.187055090=9.3+-+Debates+About+the+Environment&entry.2107637366=Checkpoint+1" target="_blank" rel="noopener">Submit to Form</a>',
-    checkpoint2: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+9+-+Globalization&entry.187055090=9.3+-+Debates+About+the+Environment&entry.2107637366=Checkpoint+2" target="_blank" rel="noopener">Submit to Form</a>'
-  };
 })();

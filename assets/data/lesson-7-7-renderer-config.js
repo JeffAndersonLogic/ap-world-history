@@ -131,12 +131,4 @@
     }
   ];
 
-  // Capture points, static hardcoded anchors (never JS-generated).
-  // first10 is intentionally empty: the First & 10 capture lives inside the
-  // capture wrapper, and nothing renders below the First & 10 iframe.
-  lesson.captureUrls = {
-    first10: '',
-    checkpoint1: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=7.7+-+Conducting+World+War+II&entry.2107637366=Checkpoint+1" target="_blank" rel="noopener">Submit to Form</a>',
-    checkpoint2: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=7.7+-+Conducting+World+War+II&entry.2107637366=Checkpoint+2" target="_blank" rel="noopener">Submit to Form</a>'
-  };
 })();

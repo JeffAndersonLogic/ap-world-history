@@ -126,10 +126,4 @@
       focus: ['Open with a clear claim about how environmental factors affected human populations through disease.', 'Draw from at least two of the three disease categories.', 'For each disease, explain the specific environmental or population factor that shaped its impact.', 'Explain the causal mechanism, how and why the environmental factor shaped the disease outcome, not just that it did.']
     }
   ];
-
-  lesson.captureUrls = {
-    first10: '',
-    checkpoint1: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+9+-+Globalization&entry.187055090=9.2+-+Technology+and+Disease&entry.2107637366=Checkpoint+1" target="_blank" rel="noopener">Submit to Form</a>',
-    checkpoint2: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+9+-+Globalization&entry.187055090=9.2+-+Technology+and+Disease&entry.2107637366=Checkpoint+2" target="_blank" rel="noopener">Submit to Form</a>'
-  };
 })();

@@ -13,6 +13,7 @@
  *   entry.2107637366 = Response Type    (pre-filled per capture point)
  *   entry.1963461515 = Skill Focus      (checkbox, repeat per skill)
  *   entry.1794755975 = Class Period     (student selects)
+ *   entry.1845180246 = Student Response (pre-filled from the card's textarea)
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
@@ -21,12 +22,13 @@ window.BH_FORM = {
   baseURL: 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform',
 
   fields: {
-    unit:         'entry.125385659',
-    topic:        'entry.187055090',
-    promptId:     'entry.1549761827',
-    responseType: 'entry.2107637366',
-    skillFocus:   'entry.1963461515',
-    classPeriod:  'entry.1794755975',
+    unit:            'entry.125385659',
+    topic:           'entry.187055090',
+    promptId:        'entry.1549761827',
+    responseType:    'entry.2107637366',
+    skillFocus:      'entry.1963461515',
+    classPeriod:     'entry.1794755975',
+    studentResponse: 'entry.1845180246',
   },
 
   units: {
@@ -122,6 +124,8 @@ window.BH_FORM = {
     '9.9': '9.9 - Continuity and Change in a Globalized World',
   },
 
+  // The last three were added when every module card with a textarea gained a
+  // submit path. They must exist as Response Type options on the live form.
   responseTypes: {
     first10:       'First and 10',
     skillBuilder:  'AP Skill Builder',
@@ -130,6 +134,9 @@ window.BH_FORM = {
     primarySource: 'Primary Source',
     beInTheRoom:   'BeInTheRoom',
     checkpoint2:   'Checkpoint 2',
+    mapCheck:      'Map Check',
+    beSurreal:     'BeSurreal',
+    socratesCoach: 'Socrates AI Coach',
   },
 
   slugs: {
@@ -140,6 +147,19 @@ window.BH_FORM = {
     primarySource: 'primary-source',
     beInTheRoom:   'beintheroom',
     checkpoint2:   'checkpoint-2',
+    mapCheck:      'map-check',
+    beSurreal:     'besurreal',
+    socratesCoach: 'socrates-coach',
+  },
+
+  // Skill Focus for the three response types added above. The per-topic skills
+  // map below covers the original seven for all 77 topics; rather than add
+  // three more entries to every one of those rows, these three resolve here.
+  // Every value must exist in the form's Skill Focus options.
+  fallbackSkills: {
+    mapCheck:      ['Contextualization'],
+    beSurreal:     ['Contextualization'],
+    socratesCoach: ['Argumentation'],
   },
 
   skills: {
@@ -224,6 +244,19 @@ window.BH_FORM = {
 };
 
 /**
+ * resolveSkills(topicKey, responseTypeKey)
+ *
+ * Per-topic mapping wins; the per-response-type fallback covers the three
+ * module types added after the per-topic map was written. Returns [] when
+ * neither has an entry, which leaves Skill Focus for the student to tick.
+ */
+function resolveSkills(topicKey, responseTypeKey) {
+  var perTopic = BH_FORM.skills && BH_FORM.skills[topicKey] && BH_FORM.skills[topicKey][responseTypeKey];
+  if (perTopic && perTopic.length) return perTopic;
+  return (BH_FORM.fallbackSkills && BH_FORM.fallbackSkills[responseTypeKey]) || [];
+}
+
+/**
  * buildFormURL(topicKey, responseTypeKey)
  *
  * Returns a fully-prefilled Google Form URL.
@@ -247,7 +280,7 @@ function buildFormURL(topicKey, responseTypeKey) {
   var unitNum = topicKey.match(/^(\d+)\./);
   var unit = unitNum ? (BH_FORM.units[unitNum[1]] || '') : (foundationNum ? (BH_FORM.units.foundations || '') : '');
 
-  var skills = (BH_FORM.skills && BH_FORM.skills[topicKey] && BH_FORM.skills[topicKey][responseTypeKey]) || [];
+  var skills = resolveSkills(topicKey, responseTypeKey);
 
   var params = new URLSearchParams();
   params.set('usp', 'pp_url');
@@ -259,3 +292,100 @@ function buildFormURL(topicKey, responseTypeKey) {
 
   return BH_FORM.baseURL + '?' + params.toString();
 }
+
+/**
+ * captureMeta(topicKey, responseTypeKey)
+ *
+ * The metadata a single module card needs to describe itself. Both renderers
+ * stamp these onto the card's textarea as data-* attributes, so the submit
+ * path reads its values off the element instead of re-deriving them.
+ * Returns null when the topic key is unknown, see buildCaptureButton.
+ */
+function captureMeta(topicKey, responseTypeKey) {
+  if (!BH_FORM.topics[topicKey]) return null;
+  var slug = BH_FORM.slugs[responseTypeKey];
+  var responseType = BH_FORM.responseTypes[responseTypeKey];
+  if (!slug || !responseType) return null;
+
+  var foundationNum = String(topicKey).match(/^f(\d+)$/);
+  var unitNum = String(topicKey).match(/^(\d+)\./);
+  var promptKey = foundationNum ? ('foundations-' + foundationNum[1]) : topicKey;
+
+  return {
+    unit: unitNum ? (BH_FORM.units[unitNum[1]] || '') : (foundationNum ? (BH_FORM.units.foundations || '') : ''),
+    topic: BH_FORM.topics[topicKey],
+    promptId: promptKey + '-' + slug,
+    responseType: responseType,
+    skillFocus: resolveSkills(topicKey, responseTypeKey),
+  };
+}
+
+/**
+ * captureDataAttrs(topicKey, responseTypeKey)
+ *
+ * Renders captureMeta as an attribute string for a textarea. Empty string when
+ * the topic is unknown, which keeps the markup valid either way.
+ */
+function captureDataAttrs(topicKey, responseTypeKey) {
+  var meta = captureMeta(topicKey, responseTypeKey);
+  if (!meta) return '';
+  return [
+    'data-unit="' + escapeAttr(meta.unit) + '"',
+    'data-topic="' + escapeAttr(meta.topic) + '"',
+    'data-prompt-id="' + escapeAttr(meta.promptId) + '"',
+    'data-response-type="' + escapeAttr(meta.responseType) + '"',
+    'data-skill-focus="' + escapeAttr(meta.skillFocus.join('|')) + '"',
+  ].join(' ');
+}
+
+function escapeAttr(value) {
+  return String(value == null ? '' : value).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
+/**
+ * buildCaptureButton(elemId, topicKey, responseTypeKey)
+ *
+ * The single source of every "Submit to Form" button on the site. Returns ''
+ * when the topic key is not in BH_FORM.topics, because a button that opens a
+ * bare form is worse than no button (see docs/FORM-CONTRACT.md).
+ */
+function buildCaptureButton(elemId, topicKey, responseTypeKey) {
+  if (!BH_FORM.topics[topicKey] || !BH_FORM.responseTypes[responseTypeKey]) return '';
+  var url = buildFormURL(topicKey, responseTypeKey);
+  return '<button class="btn secondary" type="button" onclick="submitResponseToGoogleForm(\'' + elemId + '\',\'' + url + '\')">Submit to Form</button>';
+}
+
+/**
+ * submitResponseToGoogleForm(responseId, formUrl)
+ *
+ * Appends the student's typed response to the prefilled URL and opens it in a
+ * new tab so the student confirms and submits on Google's own screen. No
+ * background POST, prefill only, so there is no CORS surface.
+ *
+ * The window opens synchronously inside the click handler. Opening it from a
+ * promise callback lets pop-up blockers swallow it. The clipboard copy is a
+ * best-effort fallback for a URL that a browser truncates; it never gates the
+ * form opening, because locked-down school devices deny clipboard access.
+ */
+window.submitResponseToGoogleForm = function (responseId, formUrl) {
+  var responseEl = document.getElementById(responseId);
+  var resultEl = document.getElementById(responseId + '-result');
+  var text = responseEl ? (responseEl.value || '').trim() : '';
+
+  var url = formUrl;
+  if (text && BH_FORM.fields.studentResponse) {
+    url += '&' + BH_FORM.fields.studentResponse + '=' + encodeURIComponent(text);
+  }
+
+  window.open(url, '_blank', 'noopener');
+
+  if (!text) {
+    if (resultEl) resultEl.textContent = 'Form opened. Type your response, then submit again to carry it over.';
+    return;
+  }
+  if (resultEl) resultEl.textContent = 'Form opened with your response filled in. Check it, add your name and period, then submit.';
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).catch(function () { /* backup copy only */ });
+  }
+};

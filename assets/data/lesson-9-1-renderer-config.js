@@ -132,10 +132,4 @@
       focus: ['Open with a clear claim about how technology changed the world after 1900.', 'Use at least one intended consequence and one unintended consequence as evidence.', 'Draw from at least two categories of technology (communication/transport, energy/agriculture, medicine/birth control).', 'Explain the causal mechanism, how and why the change happened, not just what changed.']
     }
   ];
-
-  lesson.captureUrls = {
-    first10: '',
-    checkpoint1: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+9+-+Globalization&entry.187055090=9.1+-+Advances+in+Technology+and+Exchange&entry.2107637366=Checkpoint+1" target="_blank" rel="noopener">Submit to Form</a>',
-    checkpoint2: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+9+-+Globalization&entry.187055090=9.1+-+Advances+in+Technology+and+Exchange&entry.2107637366=Checkpoint+2" target="_blank" rel="noopener">Submit to Form</a>'
-  };
 })();

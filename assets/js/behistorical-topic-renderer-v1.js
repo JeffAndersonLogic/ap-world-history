@@ -95,53 +95,66 @@ function applyKeyConceptLabels() {
 }
 
 // ── Form submission (unified, all topics) ────────────────────────────────────
+//
+// submitResponseToGoogleForm lives in assets/js/behistorical-form-config.js so
+// this renderer and foundations/foundations-topic-renderer.js share one
+// implementation. Do not redefine it here, the config file loads first and a
+// local copy would shadow it.
 
-window.submitResponseToGoogleForm = function(responseId, formUrl) {
-  const responseEl = byId(responseId);
-  const resultEl   = byId(responseId + '-result');
-  const text       = responseEl ? (responseEl.value || '').trim() : '';
-  const openForm   = () => window.open(formUrl, '_blank', 'noopener');
+// The topic key this lesson reports to the form, e.g. '1.3'. Empty when the
+// lesson's topic label is not a key in BH_FORM.topics.
+function captureTopicKey() {
+  if (!window.BH_FORM) return '';
+  const key = ((L.meta && L.meta.topic) || '').replace('Topic ', '').trim();
+  return (key && BH_FORM.topics[key]) ? key : '';
+}
 
-  if (!text) {
-    if (resultEl) resultEl.textContent = 'Form opened. Add your response before submitting.';
-    openForm();
-    return;
-  }
+// Attribute string stamping a card's own metadata onto its textarea.
+function captureAttrs(responseTypeKey) {
+  const topicKey = captureTopicKey();
+  if (!topicKey || typeof captureDataAttrs !== 'function') return '';
+  return captureDataAttrs(topicKey, responseTypeKey);
+}
 
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text)
-      .then(() => {
-        if (resultEl) resultEl.textContent = 'Response copied, paste it into the Student Response field on the form.';
-        openForm();
-      })
-      .catch(() => {
-        if (resultEl) resultEl.textContent = 'Form opened. Copy your response manually before submitting.';
-        openForm();
-      });
-  } else {
-    if (resultEl) resultEl.textContent = 'Form opened. Manually copy your response before submitting.';
-    openForm();
-  }
-};
+// One metadata block per textarea. A card with a capture key reports the exact
+// strings BH_FORM sends to the form; a card without one (Map Check, BeSurreal)
+// keeps the human label it passes in. Never emit both, data-response-type would
+// appear twice and the browser would silently keep only the first.
+function textareaMeta(responseType, captureKey) {
+  return (captureKey ? captureAttrs(captureKey) : '') || `data-response-type="${responseType}"`;
+}
 
-// Auto-generate captureUrls for any topic that has BH_FORM loaded
-// and hasn't already defined captureUrls in its renderer-config.
+// Auto-generate captureUrls for every response type that has a textarea in a
+// module card. This always overwrites whatever a data file set: hand-written
+// captureUrls in assets/data/ dropped Prompt ID and Skill Focus, and a silently
+// blank Prompt ID is the exact failure docs/FORM-CONTRACT.md warns about.
+//
+// Two response types are deliberately absent:
+//   first10     , captured inside the First & 10 capture wrapper, which already
+//                 prefills the response. A second button here would open a form
+//                 with nothing in it, the reading lives in an iframe.
+//   beInTheRoom , module 09 is an external link with no textarea, and no
+//                 *-beintheroom Prompt IDs exist on the form yet.
 function autoBuildCaptureUrls() {
-  if (!window.BH_FORM || typeof buildFormURL !== 'function' || L.captureUrls) return;
+  if (!window.BH_FORM || typeof buildCaptureButton !== 'function') return;
 
-  const topicKey = (L.meta.topic || '').replace('Topic ', '').trim();
-  if (!topicKey || !BH_FORM.topics[topicKey]) return;
+  const topicKey = captureTopicKey();
+  if (!topicKey) return;
 
-  function submitBtn(elemId, responseTypeKey) {
-    var url = buildFormURL(topicKey, responseTypeKey);
-    return `<button class="btn secondary" type="button" onclick="submitResponseToGoogleForm('${elemId}','${url}')">Submit to Form</button>`;
-  }
+  const btn = (elemId, responseTypeKey) => buildCaptureButton(elemId, topicKey, responseTypeKey);
 
-  L.captureUrls = {
+  // Merge, do not replace. Topics 7.9 and 8.9 define bespoke matrix capture
+  // keys that their own module renderers read; overwriting the object outright
+  // would silently delete those buttons.
+  L.captureUrls = Object.assign({}, L.captureUrls, {
     first10:       '',
-    checkpoint1:   submitBtn('checkpoint-one-response', 'checkpoint1'),
-    checkpoint2:   submitBtn('checkpoint-two-response', 'checkpoint2')
-  };
+    mapCheck:      btn('map-check-response',      'mapCheck'),
+    skillBuilder:  btn('skill-builder-response',  'skillBuilder'),
+    checkpoint1:   btn('checkpoint-one-response', 'checkpoint1'),
+    evidenceLab:   btn('evidence-response',       'evidenceLab'),
+    primarySource: btn('primary-source-response', 'primarySource'),
+    checkpoint2:   btn('checkpoint-two-response', 'checkpoint2')
+  });
 }
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
@@ -333,8 +346,13 @@ function closeLectureModal() { byId('lecture-modal').classList.remove('show'); }
 // ── Module render functions ───────────────────────────────────────────────────
 
 function renderMap() {
+  // Embedded map path (topic 1.3 only). The embedded page has its own scratch
+  // textareas but no capture path, so the standard Map Check draft box goes
+  // below the frame; without it this one topic would be the only lesson whose
+  // Map module cannot submit.
   if (L.map && L.map.embedUrl) {
-    return `<div class="first10-note"><strong>${L.map.title}</strong><br>${L.map.note || 'Use the embedded map window below, then close this pop-out to return to the lesson path.'}</div><div class="first10-frame-wrap"><iframe class="first10-frame" src="${L.map.embedUrl}" title="${L.map.title}"></iframe></div>`;
+    return `<div class="first10-note"><strong>${L.map.title}</strong><br>${L.map.note || 'Use the embedded map window below, then close this pop-out to return to the lesson path.'}</div><div class="first10-frame-wrap"><iframe class="first10-frame" src="${L.map.embedUrl}" title="${L.map.title}"></iframe></div>
+    ${draftBlock('map-check-response', L.map.prompt || 'Summarize what the map shows about this topic.', 'Map Check', 'mapCheck')}`;
   }
   return `
     <article class="card map-card">
@@ -349,7 +367,7 @@ function renderMap() {
           <ul>${(L.map.notes || []).map(n => `<li>${md(n)}</li>`).join('')}</ul>
           ${renderMapKey()}
           <div class="question"><strong>Map Question</strong><br>${L.map.prompt}</div>
-          ${draftBlock('map-check-response', L.map.prompt, 'Map Check')}
+          ${draftBlock('map-check-response', L.map.prompt, 'Map Check', 'mapCheck')}
         </div>
       </div>
     </article>`;
@@ -637,7 +655,7 @@ function draftBlock(id, prompt, responseType, captureKey = '') {
     <div class="prompt-box">
       <h3>Draft Your Thinking</h3>
       <p>${prompt}</p>
-      <textarea class="response-area" id="${id}" data-response-type="${responseType}" placeholder="Type your response here..."></textarea>
+      <textarea class="response-area" id="${id}" ${textareaMeta(responseType, captureKey)} placeholder="Type your response here..."></textarea>
       <div class="tool-row">
         <button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button>
         <button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button>
@@ -652,7 +670,7 @@ function responseBlock(id, prompt, responseType, terms = [], captureKey = '') {
     <div class="prompt-box">
       <h3>Write Your Response</h3>
       <p>${prompt}</p>
-      <textarea class="response-area" id="${id}" data-response-type="${responseType}" data-terms="${terms.join('|')}" placeholder="Type your checkpoint response here..."></textarea>
+      <textarea class="response-area" id="${id}" ${textareaMeta(responseType, captureKey)} data-terms="${terms.join('|')}" placeholder="Type your checkpoint response here..."></textarea>
       <div class="tool-row">
         <button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button>
         <button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button>
