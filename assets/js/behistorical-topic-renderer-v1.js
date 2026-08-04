@@ -9,6 +9,10 @@ const L = window.BEHISTORICAL_LESSON;
 const byId = id => document.getElementById(id);
 const md = s => String(s || '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 const kcPills = kc => kc.split(';').map(s => s.trim()).filter(Boolean).map(s => `<span class="inline-target-kc">${s}</span>`).join(' ');
+// Id of the Copy All My Work textarea. Declared up here because the boot block
+// calls loadAllDrafts(), which must skip it, and a const declared further down
+// would still be in its temporal dead zone at that point.
+const WORK_EXPORT_ID = 'all-work-output';
 
 
 function sanitizeImageUrl(url) {
@@ -701,7 +705,7 @@ function saveDraft(id) {
   const t = byId(id);
   if (!t) return;
   localStorage.setItem(draftKey(id), t.value || '');
-  byId(id + '-result').textContent = 'Draft saved on this device.';
+  byId(id + '-result').textContent = 'Draft saved in this browser on this device.';
 }
 
 function loadDraft(id) {
@@ -712,7 +716,141 @@ function loadDraft(id) {
 }
 
 function loadAllDrafts() {
-  document.querySelectorAll('textarea.response-area').forEach(t => loadDraft(t.id));
+  document.querySelectorAll('textarea.response-area').forEach(t => {
+    if (t.id !== WORK_EXPORT_ID) loadDraft(t.id);
+  });
+}
+
+// ── Autosave and Copy All My Work ─────────────────────────────────────────────
+//
+// Draft boxes are localStorage-only by design, which is right for scratch
+// thinking. What was wrong is that persistence depended on the student pressing
+// Save Draft, so closing a tab lost everything typed since the last press.
+//
+// Autosave removes that failure. Copy All My Work assembles the whole lesson
+// into one block for the Canvas assignment, which is where graded work actually
+// goes; nothing in this repository sends work to Canvas automatically.
+
+// Module order for the assembled output. Ids not listed here still get exported,
+// appended alphabetically with a prettified label, so a topic with a bespoke
+// textarea (7.9 and 8.9 have matrix boxes) never silently loses work.
+const WORK_LABELS = [
+  ['map-check-response',      'Module 01, Map & Geography Check'],
+  ['first10-q1',              'Module 02, First & 10, Question 1'],
+  ['first10-q2',              'Module 02, First & 10, Question 2'],
+  ['first10-q3',              'Module 02, First & 10, Question 3'],
+  ['skill-builder-response',  'Module 05, AP Skill Builder'],
+  ['checkpoint-one-response', 'Module 06, Checkpoint 1'],
+  ['evidence-response',       'Module 07, Evidence Lab'],
+  ['primary-source-response', 'Module 08, Primary Source'],
+  ['checkpoint-two-response', 'Module 10, Checkpoint 2']
+];
+
+function prettyWorkLabel(id) {
+  const words = id.replace(/-response$/, '').replace(/-/g, ' ').trim();
+  return words.charAt(0).toUpperCase() + words.slice(1);
+}
+
+// Reads from localStorage, not the DOM, because openModule() replaces the modal
+// body: a textarea for a module the student is not currently looking at does not
+// exist on the page. Anything on screen right now overrides the stored copy.
+function collectLessonWork() {
+  const prefix = draftKey('');
+  const stored = {};
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (!key || key.indexOf(prefix) !== 0) continue;
+    const value = (localStorage.getItem(key) || '').trim();
+    if (value) stored[key.slice(prefix.length)] = value;
+  }
+
+  document.querySelectorAll('textarea.response-area').forEach(t => {
+    if (!t.id || t.id === WORK_EXPORT_ID) return;
+    const value = (t.value || '').trim();
+    if (value) stored[t.id] = value;
+  });
+
+  const ordered = [];
+  const listed = new Set();
+  WORK_LABELS.forEach(([id, label]) => {
+    listed.add(id);
+    if (stored[id]) ordered.push({ label, text: stored[id] });
+  });
+  Object.keys(stored).sort().forEach(id => {
+    if (!listed.has(id)) ordered.push({ label: prettyWorkLabel(id), text: stored[id] });
+  });
+  return ordered;
+}
+
+function gatherAllWork() {
+  const out = byId(WORK_EXPORT_ID);
+  const result = byId('all-work-result');
+  if (!out) return;
+
+  const work = collectLessonWork();
+  if (!work.length) {
+    out.value = '';
+    if (result) result.textContent = 'Nothing typed yet. Work through the module cards, then gather your work.';
+    return;
+  }
+
+  const topic = (L.meta && L.meta.topic) || '';
+  const title = (L.meta && L.meta.title) || '';
+  out.value = [
+    `BeHistorical, ${topic}${title ? ', ' + title : ''}`,
+    `My work, copied ${new Date().toLocaleString()}`,
+    ''
+  ].concat(work.map(w => `=== ${w.label} ===\n${w.text}\n`)).join('\n');
+
+  if (result) result.textContent = `Gathered ${work.length} response${work.length === 1 ? '' : 's'}. Copy this, then paste it into Canvas.`;
+}
+
+function copyAllWork() {
+  const out = byId(WORK_EXPORT_ID);
+  const result = byId('all-work-result');
+  if (!out) return;
+  if (!(out.value || '').trim()) gatherAllWork();
+  if (!(out.value || '').trim()) return;
+
+  out.select();
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(out.value)
+      .then(() => { if (result) result.textContent = 'Copied. Paste it into the Canvas assignment.'; })
+      .catch(() => { if (result) result.textContent = 'Copy is blocked on this device. The text is selected, press Ctrl-C or Cmd-C.'; });
+  } else if (result) {
+    result.textContent = 'The text is selected, press Ctrl-C or Cmd-C to copy.';
+  }
+}
+
+// One timer per textarea, so switching boxes quickly cannot cancel a pending
+// save for the box just left.
+document.addEventListener('input', function (event) {
+  const t = event.target;
+  if (!t || !t.id || t.id === WORK_EXPORT_ID) return;
+  if (!t.classList || !t.classList.contains('response-area')) return;
+  clearTimeout(t._draftTimer);
+  t._draftTimer = setTimeout(function () {
+    localStorage.setItem(draftKey(t.id), t.value || '');
+    const r = byId(t.id + '-result');
+    if (r) r.textContent = 'Saved automatically in this browser on this device.';
+  }, 600);
+});
+
+function renderWorkExportPanel() {
+  const grid = byId('module-grid');
+  if (!grid || byId(WORK_EXPORT_ID)) return;
+  grid.insertAdjacentHTML('afterend', `
+    <article class="card work-export">
+      <h3>Save Your Work</h3>
+      <p>Your typing saves automatically, but only in this browser on this device. Before you leave class, gather everything here and paste it into the Canvas assignment. Canvas is where your graded work goes.</p>
+      <div class="tool-row">
+        <button class="btn" type="button" onclick="gatherAllWork()">Gather All My Work</button>
+        <button class="btn secondary" type="button" onclick="copyAllWork()">Copy to Clipboard</button>
+      </div>
+      <textarea class="response-area" id="${WORK_EXPORT_ID}" placeholder="Click Gather All My Work, then copy this and paste it into Canvas."></textarea>
+      <div id="all-work-result" class="check-result"></div>
+    </article>`);
 }
 
 function copyResponse(id) {
@@ -753,3 +891,9 @@ function closeLightbox() { byId('lightbox').classList.remove('show'); }
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { closeModule(); closeLightbox(); closeLectureModal(); }
 });
+
+// ── Save Your Work panel ──────────────────────────────────────────────────────
+// Injected after the module grid so all 77 lesson shells get it without editing
+// any of them. Runs last, once every function above is defined.
+
+if (L) renderWorkExportPanel();

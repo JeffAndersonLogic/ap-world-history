@@ -12,6 +12,7 @@ function sanitizeImageUrl(url){
 }
 function bg(url){return `url('${sanitizeImageUrl(url)}')`;}
 const T=window.FOUNDATION_TOPIC;
+const WORK_EXPORT_ID='all-work-output';
 // Foundations data files use id 'foundations-N'; BH_FORM.topics is keyed 'fN'.
 // Passing the raw id would fail buildFormURL's /^f(\d+)$/ test and silently drop the Unit parameter.
 const FOUNDATION_TOPIC_KEY=String(T.id||'').replace(/^foundations-(\d+)$/,'f$1');
@@ -100,7 +101,102 @@ function foundationCaptureAttrs(responseTypeKey){
   if(!window.BH_FORM||typeof captureDataAttrs!=='function'||!FOUNDATION_TOPIC_KEY)return '';
   return captureDataAttrs(FOUNDATION_TOPIC_KEY,responseTypeKey);
 }
-function saveDraft(id){const t=byId(id);localStorage.setItem(`foundations-topic-${id}`,t.value||'');byId(id+'-result').textContent='Draft saved on this device.'}
+function saveDraft(id){const t=byId(id);localStorage.setItem(`foundations-topic-${id}`,t.value||'');byId(id+'-result').textContent='Draft saved in this browser on this device.'}
 function copyResponse(id){const t=byId(id);navigator.clipboard.writeText(t.value||'').then(()=>byId(id+'-result').textContent='Response copied.').catch(()=>byId(id+'-result').textContent='Copy failed. Select and copy manually.')}
-function loadDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>{const saved=localStorage.getItem(`foundations-topic-${t.id}`);if(saved)t.value=saved})}
+function loadDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>{if(t.id===WORK_EXPORT_ID)return;const saved=localStorage.getItem(`foundations-topic-${t.id}`);if(saved)t.value=saved})}
+
+// ── Autosave and Copy All My Work ─────────────────────────────────────────────
+//
+// Mirrors the same block in assets/js/behistorical-topic-renderer-v1.js. The two
+// renderers cannot share it without adding a script tag to every shell, and the
+// localStorage key schemes differ: unit lessons use
+// behistorical-draft-{topic}-{id}, Foundations uses foundations-topic-{id}.
+//
+// Draft boxes are localStorage-only by design. Autosave removes the old failure
+// where closing a tab lost everything typed since the last Save Draft press.
+// Copy All My Work assembles the lesson for the Canvas assignment, which is
+// where graded work goes; nothing here sends work to Canvas automatically.
+
+// Module order for the assembled output, keyed by the draft() id suffix.
+// Anything not listed still exports, appended with a prettified label.
+const FOUNDATION_WORK_LABELS=[
+  ['map','Module 01, Map & Geography Check'],
+  ['first10','Module 02, First & 10 Reading'],
+  ['besurreal','Module 04, BeSurreal'],
+  ['skill','Module 05, AP Skill Builder'],
+  ['checkpoint','Module 06, Checkpoint 1'],
+  ['evidence','Module 07, Evidence Lab'],
+  ['coach','Module 08, Socrates AI Coach'],
+  ['checkpoint2','Module 10, Checkpoint 2']
+];
+
+function prettyWorkLabel(slot){const w=String(slot).replace(/-/g,' ').trim();return w.charAt(0).toUpperCase()+w.slice(1);}
+
+// Reads localStorage, not the DOM: openModule() replaces the modal body, so a
+// textarea for a module the student is not looking at does not exist. Anything
+// on screen right now overrides the stored copy.
+function collectLessonWork(){
+  const prefix=`foundations-topic-${T.id}-`;
+  const stored={};
+  for(let i=0;i<localStorage.length;i++){
+    const key=localStorage.key(i);
+    if(!key||key.indexOf(prefix)!==0)continue;
+    const value=(localStorage.getItem(key)||'').trim();
+    if(value)stored[key.slice(prefix.length)]=value;
+  }
+  document.querySelectorAll('textarea.response-area').forEach(t=>{
+    if(!t.id||t.id===WORK_EXPORT_ID)return;
+    const value=(t.value||'').trim();
+    if(!value)return;
+    stored[t.id.indexOf(`${T.id}-`)===0?t.id.slice(`${T.id}-`.length):t.id]=value;
+  });
+  const ordered=[],listed=new Set();
+  FOUNDATION_WORK_LABELS.forEach(([slot,label])=>{listed.add(slot);if(stored[slot])ordered.push({label,text:stored[slot]});});
+  Object.keys(stored).sort().forEach(slot=>{if(!listed.has(slot))ordered.push({label:prettyWorkLabel(slot),text:stored[slot]});});
+  return ordered;
+}
+
+function gatherAllWork(){
+  const out=byId(WORK_EXPORT_ID),result=byId('all-work-result');
+  if(!out)return;
+  const work=collectLessonWork();
+  if(!work.length){out.value='';if(result)result.textContent='Nothing typed yet. Work through the module cards, then gather your work.';return;}
+  out.value=[`BeHistorical, ${T.code||''} ${T.title||''}`.trim(),`My work, copied ${new Date().toLocaleString()}`,'']
+    .concat(work.map(w=>`=== ${w.label} ===\n${w.text}\n`)).join('\n');
+  if(result)result.textContent=`Gathered ${work.length} response${work.length===1?'':'s'}. Copy this, then paste it into Canvas.`;
+}
+
+function copyAllWork(){
+  const out=byId(WORK_EXPORT_ID),result=byId('all-work-result');
+  if(!out)return;
+  if(!(out.value||'').trim())gatherAllWork();
+  if(!(out.value||'').trim())return;
+  out.select();
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(out.value)
+      .then(()=>{if(result)result.textContent='Copied. Paste it into the Canvas assignment.';})
+      .catch(()=>{if(result)result.textContent='Copy is blocked on this device. The text is selected, press Ctrl-C or Cmd-C.';});
+  }else if(result){result.textContent='The text is selected, press Ctrl-C or Cmd-C to copy.';}
+}
+
+// One timer per textarea, so switching boxes quickly cannot cancel a pending
+// save for the box just left.
+document.addEventListener('input',function(event){
+  const t=event.target;
+  if(!t||!t.id||t.id===WORK_EXPORT_ID)return;
+  if(!t.classList||!t.classList.contains('response-area'))return;
+  clearTimeout(t._draftTimer);
+  t._draftTimer=setTimeout(function(){
+    localStorage.setItem(`foundations-topic-${t.id}`,t.value||'');
+    const r=byId(t.id+'-result');
+    if(r)r.textContent='Saved automatically in this browser on this device.';
+  },600);
+});
+
+function renderWorkExportPanel(){
+  const grid=byId('module-grid');
+  if(!grid||byId(WORK_EXPORT_ID))return;
+  grid.insertAdjacentHTML('afterend',`<article class="foundation-card work-export"><h3>Save Your Work</h3><p>Your typing saves automatically, but only in this browser on this device. Before you leave class, gather everything here and paste it into the Canvas assignment. Canvas is where your graded work goes.</p><div class="tool-row"><button class="btn" type="button" onclick="gatherAllWork()">Gather All My Work</button><button class="btn secondary" type="button" onclick="copyAllWork()">Copy to Clipboard</button></div><textarea class="response-area" id="${WORK_EXPORT_ID}" placeholder="Click Gather All My Work, then copy this and paste it into Canvas."></textarea><div id="all-work-result" class="check-result"></div></article>`);
+}
+renderWorkExportPanel();
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModule();closeLectureModal();}if(byId('lecture-modal').classList.contains('show')){if(e.key==='ArrowRight'){e.preventDefault();lectureStep(1);}else if(e.key==='ArrowLeft'){e.preventDefault();lectureStep(-1);}}});
