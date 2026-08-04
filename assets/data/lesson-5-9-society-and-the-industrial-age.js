@@ -153,7 +153,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: A New Kind of Society',
-    embedUrl: 'first-and-10-topic-5-9-society-and-the-industrial-age-capture.html?v=first10-prefill-v1',
+    embedUrl: 'first-and-10-topic-5-9-society-and-the-industrial-age-capture.html?v=response-id-fix-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.9 lesson path.'
   },
 

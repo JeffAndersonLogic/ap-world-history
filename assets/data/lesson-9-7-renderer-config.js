@@ -27,7 +27,7 @@
     ]
   }
 ];
-  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-9-7-resistance-globalization-capture.html?v=first10-prefill-v1' };
+  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-9-7-resistance-globalization-capture.html?v=response-id-fix-v1' };
   lesson.beInTheRoom = {
   url: '../beintheroom/unit-9/seattle-wto-coalition.html',
   desc: 'The WTO ministerial is opening. A coalition of labor, environmental, and global-justice groups must agree on a message and tactics without pretending its members have identical goals.'

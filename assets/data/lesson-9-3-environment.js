@@ -178,7 +178,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: Human Activity, Environmental Change, and the Climate Debate",
-    embedUrl: "first-and-10-topic-9-3-environment-capture.html?v=first10-prefill-v1"
+    embedUrl: "first-and-10-topic-9-3-environment-capture.html?v=response-id-fix-v1"
   },
 
   images: [

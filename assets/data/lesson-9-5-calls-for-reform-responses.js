@@ -139,7 +139,7 @@ window.BEHISTORICAL_LESSON = {
   },
   first10: {
     title: 'First & 10: Calls for Reform and Responses After 1900',
-    embedUrl: 'first-and-10-topic-9-5-calls-for-reform-responses-capture.html?v=first10-prefill-v1',
+    embedUrl: 'first-and-10-topic-9-5-calls-for-reform-responses-capture.html?v=response-id-fix-v1',
     note: 'Read the narrative, answer three AP-thinking questions, build your coach prompt, and return to Topic 9.5.'
   },
   lecture: {

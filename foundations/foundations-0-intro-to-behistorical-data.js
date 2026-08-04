@@ -65,7 +65,7 @@ window.FOUNDATION_TOPIC = {
 
   first10: {
     title: 'First & 10: The Historian You Are About to Become',
-    embedUrl: 'first-and-10-foundations-0-intro-to-behistorical-capture.html?v=first10-prefill-v1',
+    embedUrl: 'first-and-10-foundations-0-intro-to-behistorical-capture.html?v=response-id-fix-v1',
     paragraphs: [
       'Every year on Day 1, you walk into a room and become someone. This year, in this room, you become a historian. Not in the sense that you memorize kings and dates, that is not what historians do. A historian is someone who reads the past the way a detective reads a crime scene: closely, skeptically, evidence in hand, ready to make an argument and defend it.',
       'AP World History is built around six specific habits of mind, the six things historians actually do when they think. Contextualization: placing something inside the world that surrounded it, before you try to explain it. Comparison: reading two things side by side to see what\'s the same, what\'s different, and why the difference matters. Causation: following the chain of cause and effect, and knowing how you know. Continuity and change over time: watching what stayed the same and what changed as history moved forward, and refusing the easy story that everything changed or nothing did. Argumentation: making a claim about the past and defending it with evidence, in your own voice. Sourcing: reading a document the way a lawyer reads a witness, who made it, when, why, and what that tells you about what it says.',

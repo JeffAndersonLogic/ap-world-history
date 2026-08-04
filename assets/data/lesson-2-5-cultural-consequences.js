@@ -166,7 +166,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: Ideas on the Move',
-    embedUrl: 'first-and-10-topic-2-5-cultural-consequences-capture.html?v=first10-prefill-v1'
+    embedUrl: 'first-and-10-topic-2-5-cultural-consequences-capture.html?v=response-id-fix-v1'
   },
 
   evidenceLab: {

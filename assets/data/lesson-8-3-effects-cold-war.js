@@ -176,7 +176,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: Effects of the Cold War",
-    embedUrl: "first-and-10-topic-8-3-effects-cold-war-capture.html?v=first10-prefill-v1"
+    embedUrl: "first-and-10-topic-8-3-effects-cold-war-capture.html?v=response-id-fix-v1"
   },
 
   images: [

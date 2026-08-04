@@ -20,7 +20,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: Beyond Britain',
-    embedUrl: 'first-and-10-topic-5-4-industrialization-spreads-capture.html?v=first10-prefill-v1',
+    embedUrl: 'first-and-10-topic-5-4-industrialization-spreads-capture.html?v=response-id-fix-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.4 lesson path.'
   };
 

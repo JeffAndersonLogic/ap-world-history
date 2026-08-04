@@ -22,7 +22,7 @@
     function openPrefilledFirst10Form(childWindow, childDocument, button) {
       const content = getGoogleOutput(childWindow, childDocument);
       const originalText = button ? button.textContent : '';
-      const openForm = () => childWindow.open(PREFILLED_FIRST10_FORM + (content.trim() ? '&entry.1845180246=' + encodeURIComponent(content) : ''), '_blank');
+      const openForm = () => childWindow.open(PREFILLED_FIRST10_FORM + (content.trim() ? '&entry.1818136905=' + encodeURIComponent(content) : ''), '_blank');
       if (!content.trim()) {
         if (button) { button.textContent = 'FORM OPENED - COPY MANUALLY'; setTimeout(() => { button.textContent = originalText || 'SUBMIT TO GOOGLE FORM'; }, 2200); }
         openForm(); return;

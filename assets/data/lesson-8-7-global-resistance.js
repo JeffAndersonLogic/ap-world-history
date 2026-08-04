@@ -201,7 +201,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: Global Resistance to Established Power Structures After 1900",
-    embedUrl: "first-and-10-topic-8-7-global-resistance-capture.html?v=first10-prefill-v1"
+    embedUrl: "first-and-10-topic-8-7-global-resistance-capture.html?v=response-id-fix-v1"
   },
 
   images: [

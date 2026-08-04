@@ -26,7 +26,7 @@
     ]
   }
 ];
-  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-9-8-institutions-globalized-world-capture.html?v=first10-prefill-v1' };
+  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-9-8-institutions-globalized-world-capture.html?v=response-id-fix-v1' };
   lesson.beInTheRoom = {
   url: '../beintheroom/unit-9/peacekeeping-mandate.html',
   desc: 'Reports of attacks on civilians are increasing in a conflict zone where a lightly armed UN mission was sent to monitor a ceasefire. The Security Council must decide whether to expand the mandate and commit resources.'

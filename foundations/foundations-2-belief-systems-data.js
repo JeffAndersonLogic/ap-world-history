@@ -65,7 +65,7 @@ window.FOUNDATION_TOPIC = {
 
   first10: {
     title: 'First & 10: Six Ways to Order a World',
-    embedUrl: 'first-and-10-foundations-2-belief-systems-capture.html?v=first10-prefill-v1',
+    embedUrl: 'first-and-10-foundations-2-belief-systems-capture.html?v=response-id-fix-v1',
     paragraphs: [
       'A belief system is a shared framework of ideas about the world, what is sacred, how people should behave, who deserves authority, and what happens after death. But in the world before c.1200, belief systems were never only private. They were institutions: they ran schools, settled disputes, funded charity, justified who ruled, and linked strangers across thousands of miles into a single community. Six belief systems shaped most of Afro-Eurasia.',
       'China produced two. Confucianism, based on the teachings of Confucius (551–479 BCE), was a this-worldly ethic of social order built on filial piety and five key relationships; because it prized education and merit, it became the foundation of China\'s civil service examinations. Daoism, traced to Laozi, pointed inward and toward nature, teaching harmony with the Dao, balance (the yin-yang), and wu wei, effortless action. Most Chinese drew on both, along with Buddhism, as the "Three Teachings."',

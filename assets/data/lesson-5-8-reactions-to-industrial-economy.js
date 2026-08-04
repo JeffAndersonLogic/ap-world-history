@@ -153,7 +153,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: The Rising',
-    embedUrl: 'first-and-10-topic-5-8-reactions-to-industrial-economy-capture.html?v=first10-prefill-v1',
+    embedUrl: 'first-and-10-topic-5-8-reactions-to-industrial-economy-capture.html?v=response-id-fix-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.8 lesson path.'
   },
 

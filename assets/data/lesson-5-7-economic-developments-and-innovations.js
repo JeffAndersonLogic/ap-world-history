@@ -148,7 +148,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: The Free Market',
-    embedUrl: 'first-and-10-topic-5-7-economic-developments-and-innovations-capture.html?v=first10-prefill-v1',
+    embedUrl: 'first-and-10-topic-5-7-economic-developments-and-innovations-capture.html?v=response-id-fix-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.7 lesson path.'
   },
 

@@ -161,7 +161,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: God, Power, and Empire',
-    embedUrl: 'first-and-10-topic-3-3-belief-systems-capture.html?v=first10-prefill-v1'
+    embedUrl: 'first-and-10-topic-3-3-belief-systems-capture.html?v=response-id-fix-v1'
   },
 
   evidenceLab: {

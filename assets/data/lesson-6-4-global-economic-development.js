@@ -148,7 +148,7 @@ window.BEHISTORICAL_LESSON = {
   },
   first10: {
     title: 'First & 10: Global Economic Development',
-    embedUrl: 'first-and-10-topic-6-4-global-economic-development-capture.html?v=first10-prefill-v1',
+    embedUrl: 'first-and-10-topic-6-4-global-economic-development-capture.html?v=response-id-fix-v1',
     note: 'Read the narrative, answer all three questions, build your feedback prompt, and return to the lesson path.'
   },
   evidenceLab: {

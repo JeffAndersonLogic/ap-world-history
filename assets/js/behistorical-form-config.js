@@ -13,7 +13,7 @@
  *   entry.2107637366 = Response Type    (pre-filled per capture point)
  *   entry.1963461515 = Skill Focus      (checkbox, repeat per skill)
  *   entry.1794755975 = Class Period     (student selects)
- *   entry.1845180246 = Student Response (pre-filled from the card's textarea)
+ *   entry.1818136905 = Student Response (pre-filled from the card's textarea)
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
@@ -28,7 +28,7 @@ window.BH_FORM = {
     responseType:    'entry.2107637366',
     skillFocus:      'entry.1963461515',
     classPeriod:     'entry.1794755975',
-    studentResponse: 'entry.1845180246',
+    studentResponse: 'entry.1818136905',
   },
 
   units: {

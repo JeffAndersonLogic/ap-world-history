@@ -225,7 +225,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: Advances in Technology and Exchange",
-    embedUrl: "first-and-10-topic-9-1-technology-exchange-capture.html?v=first10-prefill-v1"
+    embedUrl: "first-and-10-topic-9-1-technology-exchange-capture.html?v=response-id-fix-v1"
   },
 
   images: [

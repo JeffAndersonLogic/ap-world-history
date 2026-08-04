@@ -177,7 +177,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: Disease, Environment, and Population",
-    embedUrl: "first-and-10-topic-9-2-disease-capture.html?v=first10-prefill-v1"
+    embedUrl: "first-and-10-topic-9-2-disease-capture.html?v=response-id-fix-v1"
   },
 
   images: [

@@ -175,7 +175,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: End of the Cold War",
-    embedUrl: "first-and-10-topic-8-8-end-of-cold-war-capture.html?v=first10-prefill-v1"
+    embedUrl: "first-and-10-topic-8-8-end-of-cold-war-capture.html?v=response-id-fix-v1"
   },
 
   images: [
