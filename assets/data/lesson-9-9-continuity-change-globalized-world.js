@@ -166,7 +166,7 @@ window.BEHISTORICAL_LESSON = {
   },
   first10: {
     title: 'First & 10: Continuity and Change in a Globalized World',
-    embedUrl: 'first-and-10-topic-9-9-continuity-change-globalized-world-capture.html',
+    embedUrl: 'first-and-10-topic-9-9-continuity-change-globalized-world-capture.html?v=first10-prefill-v1',
     note: 'Read the narrative, answer three AP-thinking questions, build your coach prompt, and return to Topic 9.9.'
   },
   lecture: {

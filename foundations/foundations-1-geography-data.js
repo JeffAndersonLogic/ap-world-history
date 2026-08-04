@@ -64,7 +64,7 @@ window.FOUNDATION_TOPIC = {
 
   first10: {
     title: 'First & 10: The First Harvest',
-    embedUrl: 'first-and-10-foundations-1-geography-capture.html?v=2',
+    embedUrl: 'first-and-10-foundations-1-geography-capture.html?v=first10-prefill-v1',
     paragraphs: [
       'For roughly 200,000 years, humans lived as hunter-foragers, small, mobile bands that hunted animals and gathered wild plants, moving with the seasons and the herds. This was not a primitive failure to think of farming. It was a flexible, knowledge-rich way of life, and often an easier one: foragers frequently worked fewer hours and ate a more varied diet than the farmers who came after them. But foraging set hard limits. A band could only grow as large as the wild food around it could feed.',
       'About 10,000 years ago, as the last Ice Age ended and the climate warmed, that changed. In several parts of the world, independently, with no contact between them, some human groups began to domesticate plants and animals: saving seeds and planting them, breeding animals for meat, milk, and muscle. Historians call this slow, world-changing shift the Neolithic Agricultural Revolution. Farming produced a more reliable food supply, though not necessarily a more diverse or healthier one, and it reshaped the land through cleared fields, irrigation, and domesticated animals.',

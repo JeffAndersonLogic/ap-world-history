@@ -51,7 +51,7 @@
     ]
   }
 ];
-  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-9-4-economics-global-age-capture.html' };
+  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-9-4-economics-global-age-capture.html?v=first10-prefill-v1' };
   lesson.beInTheRoom = {
   url: '../beintheroom/unit-9/structural-adjustment-cabinet.html',
   desc: 'A debt and currency crisis has emptied foreign-exchange reserves. International lenders offer emergency credit if the government devalues, cuts subsidies, and restructures state enterprises.'

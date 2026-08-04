@@ -63,7 +63,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: Global Resistance to Established Power Structures After 1900',
-    embedUrl: 'first-and-10-topic-8-7-global-resistance-capture.html?v=20260610',
+    embedUrl: 'first-and-10-topic-8-7-global-resistance-capture.html?v=first10-prefill-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 8.7 lesson path.'
   };
 

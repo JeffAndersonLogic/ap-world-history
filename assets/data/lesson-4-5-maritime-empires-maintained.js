@@ -186,7 +186,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: The Labor of Empire',
-    embedUrl: 'first-and-10-topic-4-5-maritime-empires-maintained-capture.html',
+    embedUrl: 'first-and-10-topic-4-5-maritime-empires-maintained-capture.html?v=first10-prefill-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.5 lesson path.'
   },
 

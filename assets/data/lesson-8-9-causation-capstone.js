@@ -133,7 +133,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: The Cold War's Global Reach",
-    embedUrl: "first-and-10-topic-8-9-causation-capstone-capture.html?v=20260610",
+    embedUrl: "first-and-10-topic-8-9-causation-capstone-capture.html?v=first10-prefill-v1",
     note: "Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 8.9 lesson path."
   },
 

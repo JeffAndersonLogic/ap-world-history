@@ -88,7 +88,7 @@ window.BEHISTORICAL_LESSON = {
   },
   first10: {
     title: 'Where the Monsoon Rules',
-    embedUrl: 'first-and-10-topic-1-3-south-southeast-asia-capture.html',
+    embedUrl: 'first-and-10-topic-1-3-south-southeast-asia-capture.html?v=first10-prefill-v1',
     note: 'This First & 10 reading uses an embedded pop-out window. Read the narrative below, then close this pop-out to return to the 1.3 lesson path.'
   },
   lecture: {

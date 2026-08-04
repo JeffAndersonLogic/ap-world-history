@@ -131,7 +131,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: The World That Song Built",
-    embedUrl: 'first-and-10-topic-1-1-song-china-capture.html'
+    embedUrl: 'first-and-10-topic-1-1-song-china-capture.html?v=first10-prefill-v1'
   },
 
   evidenceLab: {

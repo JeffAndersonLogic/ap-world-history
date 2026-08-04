@@ -165,7 +165,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: Roads of Silk and Exchange',
-    embedUrl: 'first-and-10-topic-2-1-silk-roads-capture.html'
+    embedUrl: 'first-and-10-topic-2-1-silk-roads-capture.html?v=first10-prefill-v1'
   },
 
   evidenceLab: {

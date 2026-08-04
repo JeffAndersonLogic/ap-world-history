@@ -165,7 +165,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: The Gunpowder Empires',
-    embedUrl: 'first-and-10-topic-3-1-empires-expand-capture.html'
+    embedUrl: 'first-and-10-topic-3-1-empires-expand-capture.html?v=first10-prefill-v1'
   },
 
   evidenceLab: {

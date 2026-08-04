@@ -34,7 +34,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: Effects of the Cold War',
-    embedUrl: 'first-and-10-topic-8-3-effects-cold-war-capture.html?v=20260610',
+    embedUrl: 'first-and-10-topic-8-3-effects-cold-war-capture.html?v=first10-prefill-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 8.3 lesson path.'
   };
 

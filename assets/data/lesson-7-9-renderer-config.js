@@ -188,7 +188,7 @@ window.renderCausationMatrix = function () {
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: Weighing What Mattered Most',
-    embedUrl: 'first-and-10-topic-7-9-causation-global-conflict-capture.html?v=unit7-v1',
+    embedUrl: 'first-and-10-topic-7-9-causation-global-conflict-capture.html?v=first10-prefill-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 7.9 lesson path.'
   };
 

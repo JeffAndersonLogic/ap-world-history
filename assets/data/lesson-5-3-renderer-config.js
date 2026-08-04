@@ -20,7 +20,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: The Age of Steam',
-    embedUrl: 'first-and-10-topic-5-3-industrial-revolution-begins-capture.html',
+    embedUrl: 'first-and-10-topic-5-3-industrial-revolution-begins-capture.html?v=first10-prefill-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.3 lesson path.'
   };
 

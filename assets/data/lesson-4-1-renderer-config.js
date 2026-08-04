@@ -20,7 +20,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: The Navigational Revolution',
-    embedUrl: 'first-and-10-topic-4-1-technological-innovations-capture.html',
+    embedUrl: 'first-and-10-topic-4-1-technological-innovations-capture.html?v=first10-prefill-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.1 lesson path.'
   };
 

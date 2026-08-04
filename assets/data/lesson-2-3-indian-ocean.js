@@ -183,7 +183,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: The Ocean That Connected the World',
-    embedUrl: 'first-and-10-topic-2-3-indian-ocean-capture.html'
+    embedUrl: 'first-and-10-topic-2-3-indian-ocean-capture.html?v=first10-prefill-v1'
   },
 
   evidenceLab: {

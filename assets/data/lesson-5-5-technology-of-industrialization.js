@@ -149,7 +149,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: The Iron Road',
-    embedUrl: 'first-and-10-topic-5-5-technology-of-industrialization-capture.html',
+    embedUrl: 'first-and-10-topic-5-5-technology-of-industrialization-capture.html?v=first10-prefill-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.5 lesson path.'
   },
 

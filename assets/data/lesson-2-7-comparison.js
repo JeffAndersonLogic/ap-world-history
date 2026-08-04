@@ -179,7 +179,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: Comparing the Networks',
-    embedUrl: 'first-and-10-topic-2-7-comparison-capture.html'
+    embedUrl: 'first-and-10-topic-2-7-comparison-capture.html?v=first10-prefill-v1'
   },
 
   evidenceLab: {

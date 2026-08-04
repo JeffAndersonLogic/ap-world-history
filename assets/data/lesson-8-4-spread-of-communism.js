@@ -202,7 +202,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: Spread of Communism After 1900",
-    embedUrl: "first-and-10-topic-8-4-spread-of-communism-capture.html?v=20260610"
+    embedUrl: "first-and-10-topic-8-4-spread-of-communism-capture.html?v=first10-prefill-v1"
   },
 
   images: [

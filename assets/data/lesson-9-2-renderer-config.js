@@ -49,7 +49,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: Disease, Environment, and Population',
-    embedUrl: 'first-and-10-topic-9-2-disease-capture.html?v=20260628',
+    embedUrl: 'first-and-10-topic-9-2-disease-capture.html?v=first10-prefill-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 9.2 lesson path.'
   };
 

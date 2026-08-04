@@ -294,12 +294,32 @@ aspirational, not a description of the code. Wiring it means either adding a
 debrief textarea to the 61 scenario pages under `beintheroom/`, or breaking the
 exactly-10-modules rule in `CLAUDE.md`.
 
-**Unit 9 wrappers.** Topics 9.1 and 9.9 use two different non-standard capture
-wrapper patterns. The 9.1 pattern attaches duplicate click handlers and can open
-two form tabs per click. The 9.9 pattern overwrites the child page's
-`submitToGoogleForm`, discarding the clipboard copy, so the student lands on a
-form with an empty required Student Response field and nothing to paste. Both
-should be regenerated to match the Units 1–8 wrapper pattern.
+**Wrapper patterns, FIXED 2026-08-03.** All 77 First & 10 capture wrappers now
+prefill Student Response via `entry.1845180246` and open exactly one tab. Three
+divergent patterns were reconciled, and two were actively broken:
+
+- **57 files** (Units 1 to 5, 7, parts of 8, all Foundations) copied to the
+  clipboard and opened a bare form. The student had to paste. Now the response
+  rides in the URL; the clipboard copy stays as a fallback.
+- **13 files** (mostly Unit 6, plus Unit 9 topics 9.4 to 9.9) overwrote
+  `submitToGoogleForm` with a plain form open: **no clipboard copy and no
+  prefill**, so the student landed on a form with a required Student Response
+  field and nothing to paste. This was worse than the note this paragraph
+  replaces described, and it affected 13 topics rather than one.
+- **7 files** (Unit 8 topics 8.6 to 8.9, Unit 9 topics 9.1 to 9.3) already
+  prefilled, but **opened two tabs per click and the first one had no response**.
+  The reading's button uses an inline `onclick="submitToGoogleForm()"`, and
+  `preventDefault()` on an added listener does not stop an inline handler, so the
+  child's own bare-form submit fired alongside the wrapper's prefilled one. A
+  student who used the first tab submitted an empty response.
+
+**The lesson: overwrite `w.submitToGoogleForm`, never add a listener beside it.**
+The reading calls it from an inline `onclick`, which no added listener can
+suppress. Every wrapper now follows that one shape.
+
+Verified by driving all 77 wrappers in Chromium: questions filled, submit
+clicked, exactly one tab per click, response and all five metadata fields present
+in every URL.
 
 **Teacher Hub.** PR #7 is unmerged. Deployed Apps Script is a Topic-1.1
 prototype. `onOpen` fails, which removes the custom spreadsheet menu but does not

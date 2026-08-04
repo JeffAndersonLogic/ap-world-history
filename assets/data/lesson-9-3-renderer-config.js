@@ -37,7 +37,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: Human Activity, Environmental Change, and the Climate Debate',
-    embedUrl: 'first-and-10-topic-9-3-environment-capture.html?v=20260628',
+    embedUrl: 'first-and-10-topic-9-3-environment-capture.html?v=first10-prefill-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 9.3 lesson path.'
   };
 

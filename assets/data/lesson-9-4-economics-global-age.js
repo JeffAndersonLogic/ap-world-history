@@ -139,7 +139,7 @@ window.BEHISTORICAL_LESSON = {
   },
   first10: {
     title: 'First & 10: Economics in the Global Age',
-    embedUrl: 'first-and-10-topic-9-4-economics-global-age-capture.html',
+    embedUrl: 'first-and-10-topic-9-4-economics-global-age-capture.html?v=first10-prefill-v1',
     note: 'Read the narrative, answer three AP-thinking questions, build your coach prompt, and return to Topic 9.4.'
   },
   lecture: {

@@ -165,7 +165,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: Gold, Salt, and the Desert Road',
-    embedUrl: 'first-and-10-topic-2-4-trans-saharan-capture.html'
+    embedUrl: 'first-and-10-topic-2-4-trans-saharan-capture.html?v=first10-prefill-v1'
   },
 
   evidenceLab: {

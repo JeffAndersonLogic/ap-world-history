@@ -217,7 +217,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: Newly Independent States",
-    embedUrl: "first-and-10-topic-8-6-newly-independent-states-capture.html?v=20260610"
+    embedUrl: "first-and-10-topic-8-6-newly-independent-states-capture.html?v=first10-prefill-v1"
   },
 
   images: [

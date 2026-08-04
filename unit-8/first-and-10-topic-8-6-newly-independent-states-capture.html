@@ -13,62 +13,32 @@
   <iframe id="first10-frame" src="first-and-10-topic-8-6-newly-independent-states.html?v=20260610" title="First and 10 Topic 8.6"></iframe>
   <script>
     const PREFILLED_FIRST10_FORM='https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.6+-+Newly+Independent+States&entry.1549761827=8.6-first10&entry.2107637366=First+and+10&entry.1963461515=Causation&entry.1963461515=Continuity+and+Change+Over+Time+%28CCOT%29';
-    const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
-
+    const MAGICSCHOOL_URL='https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+    // Overwrite the reading's own submitToGoogleForm. The reading's button uses an
+    // inline onclick, and preventDefault on an added listener does NOT stop an inline
+    // handler, so adding listeners alongside it opened two tabs: the child's bare form
+    // and the wrapper's prefilled one. Overwriting routes the single click through here.
     function wireFirst10Capture() {
       const frame = document.getElementById('first10-frame');
-      if (!frame) return;
-      frame.addEventListener('load', function () {
-        try {
-          const doc = frame.contentDocument || frame.contentWindow.document;
-
-          // Intercept Google Form submission button
-          const submitBtns = doc.querySelectorAll('.btn-submit-google, [data-action="submit-google"]');
-          submitBtns.forEach(function (btn) {
-            btn.addEventListener('click', function (e) {
-              e.preventDefault();
-              const responseText = (doc.getElementById('google-output') || {}).value || '';
-              const url = PREFILLED_FIRST10_FORM + (responseText ? '&entry.1845180246=' + encodeURIComponent(responseText) : '');
-              window.open(url, '_blank', 'noopener');
-            });
-          });
-
-          // Intercept MagicSchool button
-          const msBtns = doc.querySelectorAll('.btn-magicschool, [data-action="open-magicschool"]');
-          msBtns.forEach(function (btn) {
-            btn.addEventListener('click', function (e) {
-              e.preventDefault();
-              window.open(MAGICSCHOOL_URL, '_blank', 'noopener');
-            });
-          });
-
-          // Intercept generic submit buttons by text content
-          const allBtns = doc.querySelectorAll('button, a.btn');
-          allBtns.forEach(function (btn) {
-            const text = (btn.textContent || '').toLowerCase().trim();
-            if (text.includes('submit to google') || text.includes('submit to form')) {
-              btn.addEventListener('click', function (e) {
-                e.preventDefault();
-                const responseText = (doc.getElementById('google-output') || {}).value || '';
-                const url = PREFILLED_FIRST10_FORM + (responseText ? '&entry.1845180246=' + encodeURIComponent(responseText) : '');
-                window.open(url, '_blank', 'noopener');
-              });
-            }
-            if (text.includes('open magicschool') || text.includes('magicschool')) {
-              btn.addEventListener('click', function (e) {
-                e.preventDefault();
-                window.open(MAGICSCHOOL_URL, '_blank', 'noopener');
-              });
-            }
-          });
-
-        } catch (err) {
-          // Cross-origin guard, no action needed
-        }
-      });
+      try {
+        const w = frame.contentWindow, d = frame.contentDocument || w.document;
+        w.submitToGoogleForm = function () {
+          if (typeof w.buildGooglePrompt === 'function') w.buildGooglePrompt();
+          const o = d.getElementById('google-output'), t = o ? (o.value || '').trim() : '';
+          w.open(PREFILLED_FIRST10_FORM + (t ? '&entry.1845180246=' + encodeURIComponent(t) : ''), '_blank', 'noopener');
+        };
+        d.addEventListener('click', function (event) {
+          const target = event.target && event.target.closest ? event.target.closest('a,button') : null;
+          if (!target) return;
+          const label = (target.textContent || '').trim().toLowerCase();
+          if (label === 'open magicschool' || label === 'open ai coach') {
+            event.preventDefault();
+            w.open(MAGICSCHOOL_URL, '_blank', 'noopener');
+          }
+        }, true);
+      } catch (error) { console.warn('Unable to wire First & 10 capture:', error); }
     }
-
-    wireFirst10Capture();
+    document.getElementById('first10-frame').addEventListener('load', wireFirst10Capture);
   </script>
 </body>
 </html>

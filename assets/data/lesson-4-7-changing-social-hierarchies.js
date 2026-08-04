@@ -156,7 +156,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: 'First & 10: New Hierarchies',
-    embedUrl: 'first-and-10-topic-4-7-changing-social-hierarchies-capture.html',
+    embedUrl: 'first-and-10-topic-4-7-changing-social-hierarchies-capture.html?v=first10-prefill-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.7 lesson path.'
   },
 

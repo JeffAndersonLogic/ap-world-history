@@ -63,7 +63,7 @@ window.FOUNDATION_TOPIC = {
 
   first10: {
     title: 'First & 10: Four Ways to Hold Power',
-    embedUrl: 'first-and-10-foundations-3-states-power-capture.html?v=2',
+    embedUrl: 'first-and-10-foundations-3-states-power-capture.html?v=first10-prefill-v1',
     paragraphs: [
       'A state is an organized political community with authority over a territory and the people in it. Every state, ancient or modern, must solve the same four problems: it must extract resources (taxes, labor, and soldiers), defend its territory, administer people spread across distance, and make its rule feel legitimate rather than merely forced. Between about 550 BCE and 220 CE, four classical civilizations became famous for how they answered these problems: Persia, Han China, Greece, and Rome.',
       'Founded by Cyrus the Great around 550 BCE, the Persian (Achaemenid) Empire ruled from the Indus to the Aegean. Rather than crush the peoples it conquered, Persia ruled through tolerance and delegation. It divided the empire into provinces called satrapies, each run by a governor who collected tribute and kept order while local languages, customs, and religions were left alone. The Royal Road and a relay courier system moved orders and armies quickly; standardized coinage tied the provinces to the "King of Kings." Tolerance was a strategy: by letting conquered peoples keep their ways, Persia reduced the reasons to rebel.',

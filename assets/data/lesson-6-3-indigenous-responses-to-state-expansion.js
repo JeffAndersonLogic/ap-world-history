@@ -170,7 +170,7 @@ window.BEHISTORICAL_LESSON = {
   },
   first10: {
     title: 'First & 10: Indigenous Responses to State Expansion',
-    embedUrl: 'first-and-10-topic-6-3-indigenous-responses-to-state-expansion-capture.html',
+    embedUrl: 'first-and-10-topic-6-3-indigenous-responses-to-state-expansion-capture.html?v=first10-prefill-v1',
     note: 'Read the narrative, answer all three questions, build your feedback prompt, and return to the lesson path.'
   },
   evidenceLab: {

@@ -63,7 +63,7 @@ window.FOUNDATION_TOPIC = {
 
   first10: {
     title: 'First & 10: Six Windows on c.1200',
-    embedUrl: 'first-and-10-foundations-5-world-at-1200-capture.html?v=2',
+    embedUrl: 'first-and-10-foundations-5-world-at-1200-capture.html?v=first10-prefill-v1',
     paragraphs: [
       'The year is c.1200. AP World History is about to begin. Before it does, take six snapshots, one for each region students will study.',
       'In **Song China**, the Southern Song capital Lin\'an (Hangzhou) is approaching 1.5 million people, among the largest cities on earth. The dynasty has been pushed south of the Huai River by Jurchen Jin conquest, but geographically it has landed in the most productive agricultural zone in the world. The Yangtze Delta\'s wet-rice cultivation, the introduction of Champa rice from Vietnam, and the development of paper money and credit instruments have produced what historians call a Commercial Revolution. Maritime customs revenue at Quanzhou funds a significant share of the state budget. Zhu Xi (1130–1200 CE) is right now synthesizing the Neo-Confucian philosophy that will dominate Chinese intellectual and political life until 1905. On the northern steppe, a man named Temujin is consolidating the Mongolian tribes. He will take the title Genghis Khan in 1206.',

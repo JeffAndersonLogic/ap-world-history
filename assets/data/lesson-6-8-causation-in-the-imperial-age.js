@@ -181,7 +181,7 @@ window.BEHISTORICAL_LESSON = {
   },
   first10: {
     title: 'First & 10: Causation in the Imperial Age',
-    embedUrl: 'first-and-10-topic-6-8-causation-in-the-imperial-age-capture.html',
+    embedUrl: 'first-and-10-topic-6-8-causation-in-the-imperial-age-capture.html?v=first10-prefill-v1',
     note: 'Read the narrative, answer all three questions, build your feedback prompt, and return to the lesson path.'
   },
   evidenceLab: {
