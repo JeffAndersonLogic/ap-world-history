@@ -355,6 +355,41 @@ Step 3 is the one people skip. It is the one that costs days.
 Lesson shells load the renderer with `?v=N`. Data files and capture wrappers are
 also versioned. **Bump the version on every capture-related edit.**
 
+### THE TWO-LEVEL TRAP, hit on 2026-08-03
+
+A wrapper's URL lives **inside** the data file, as `first10.embedUrl`. So bumping
+the wrapper's `?v=` alone changes nothing a browser can see:
+
+```
+shell:      data-file.js?v=3                      <- unchanged, so CACHE HIT
+data file:      embedUrl '...capture.html?v=NEW'   <- the new value never arrives
+browser:    loads the OLD wrapper from cache
+```
+
+The wrapper fix was correct, the tests passed, and the live site still served the
+old wrapper with no prefill, because the browser never re-read the data file that
+points at it.
+
+**The rule: when you change a capture wrapper, bump the DATA FILE's own `?v=` in
+the shell too.** Changing `embedUrl` without that is a no-op in a warm browser.
+Safest is to give every `.js` reference in the shell one shared tag, so the whole
+chain revalidates together:
+
+```
+shell -> form-config.js -> data.js -> renderer-config.js -> renderer.js
+```
+
+### TESTING THAT WOULD HAVE CAUGHT IT
+
+Loading a capture wrapper **directly** by URL tests the wrapper and nothing else.
+It cannot catch a stale chain, because it skips the shell and the data file
+entirely. That is exactly how this defect passed a 77-wrapper sweep.
+
+Test from the **lesson page**: open the First & 10 module, let the wrapper load
+inside the modal, then read the iframe's `src` and confirm it carries the version
+you expect. `scratchpad/verify-chain.js` in the 2026-08-03 session did this and
+found it immediately.
+
 A stale cached copy of a capture wrapper produced a bare, parameter-free form URL
 that could not be explained by reading current source, and burned a full
 debugging session. `scripts/validate.js` strips query strings before resolving
