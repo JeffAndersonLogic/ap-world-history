@@ -1,6 +1,8 @@
 # Google Form Capture Contract
 
-**Last verified: 2026-08-01** — pipeline tested end-to-end, live submission confirmed.
+**Last verified: 2026-08-03** — Prompt ID converted to short answer on the live
+form and entry IDs re-confirmed against a prefilled link. Capture scope restored
+to three touchpoints after a same-day expansion and revert.
 
 This file records state that lives in Google, not in this repository. Nothing
 here can be verified by reading code. If you are an agent working on capture,
@@ -129,7 +131,7 @@ Note `First and 10` is spelled out. It is **not** `First & 10`.
 
 ## WHAT THE FORM CURRENTLY CONTAINS
 
-Verified by hand on 2026-08-01.
+Verified by hand on 2026-08-01, amended 2026-08-03 (see the boxed note below).
 
 **Unit dropdown** — includes `Foundations - How World History Works` plus
 Units 1 through 9.
@@ -148,45 +150,68 @@ Foundations 5 - World at 1200
 Unit 1 topics 1.5 / 1.6 / 1.7 corrected to the CED-aligned site names.
 Units 2 through 9 topic names were already correct.
 
-> ### NO FORM EDITS ARE OUTSTANDING AS OF 2026-08-03
+> ### FORM CHANGED 2026-08-03. PROMPT ID IS NO LONGER A DROPDOWN.
 >
-> An expansion to eight capture points was built and then reverted the same day,
-> before it ever reached students. It would have required changing Prompt ID to
-> a short-answer question and adding three Response Type options. **Neither was
-> made, and neither is needed.** The site is back to the three built touchpoints,
-> whose Prompt IDs and Response Types are all already on the form.
+> Two edits were made by hand on the live form and **verified against a prefilled
+> link with the entry IDs unchanged**:
+>
+> **1. Prompt ID converted from a dropdown to a short-answer question.** The 474
+> options are gone. This is the single most useful change ever made to this form:
+> short answer accepts any value, so **the silent-drop failure mode for Prompt ID
+> no longer exists** and the option list never needs maintaining again, including
+> for lessons added later. Do not convert it back.
+>
+> **2. Three Response Type options added:** `Map Check`, `BeSurreal`,
+> `Socrates AI Coach`. These are currently **unused**. They were added for an
+> expansion that was reverted the same day. Harmless per the rule above, extra
+> options never cause failures, and they are ready if one of those touchpoints is
+> ever turned on. `Code.gs` would need them added to `BEHISTORICAL_CONFIG.responseTypes`
+> at that point.
+>
+> **The conversion preserved the entry ID.** Verified by loading a prefilled link
+> for `foundations-0-checkpoint-1`: Topic, Prompt ID and Response Type all
+> populated, so `entry.1549761827` and `entry.2107637366` are unchanged. This
+> mattered because Google assigns a **new** entry ID to a question that is deleted
+> and recreated rather than converted, and the site would then have written to a
+> field that no longer existed, silently, on every submission.
+>
+> **Prompt ID appears to have lost its Required flag** in the conversion; it no
+> longer shows an asterisk while Topic and Response Type do. Harmless while every
+> capture link prefills it. Re-checking Required is a cheap safeguard against a
+> hand-typed submission arriving with no Prompt ID.
 >
 > If a future change adds a capture point, the checklist at the bottom of this
-> file applies, and step 3 is the one people skip.
+> file still applies, but step 3 is now free: any Prompt ID string works.
 
-**Prompt ID dropdown** — 474 options total as of 2026-08-01.
+**Prompt ID** — **short-answer question as of 2026-08-03.** No option list, so
+there is nothing to audit and nothing to maintain. Any value the site sends is
+accepted verbatim.
 
-Foundations First & 10 (six options): `foundations-0-first10` through
-`foundations-5-first10`.
+The 474 dropdown options it used to carry are gone, along with the legacy `f1-*`
+through `f5-*` entries and the position table that used to live here. None of it
+is needed: a short-answer field cannot silently drop a value for not being on a
+list, which was the only reason that inventory existed.
 
-Foundations checkpoints — twelve options, verified present at positions
-463–474:
+What the site actually sends is derived, never hand-maintained. See PROMPT ID
+CONVENTION above; `buildFormURL()` composes `{promptKey}-{slug}` from
+`BH_FORM.slugs`. Currently three slugs are in use: `first10`, `checkpoint-1`,
+`checkpoint-2`.
 
-| # | Option |
-|---|---|
-| 463 | `foundations-0-checkpoint-1` |
-| 464 | `foundations-0-checkpoint-2` |
-| 465 | `foundations-1-checkpoint-1` |
-| 466 | `foundations-1-checkpoint-2` |
-| 467 | `foundations-2-checkpoint-1` |
-| 468 | `foundations-2-checkpoint-2` |
-| 469 | `foundations-3-checkpoint-1` |
-| 470 | `foundations-3-checkpoint-2` |
-| 471 | `foundations-4-checkpoint-1` |
-| 472 | `foundations-4-checkpoint-2` |
-| 473 | `foundations-5-checkpoint-1` |
-| 474 | `foundations-5-checkpoint-2` |
+**Response Type** — multiple choice, required, ten options. Seven are sent by the
+site; the last three are unused, added 2026-08-03 for the reverted expansion:
 
-Option order is irrelevant to matching — Google matches prefill by exact string
-value, not position. Position numbers are recorded only to make future audits
-faster.
-
-Legacy `f1-*` through `f5-*` options remain in the list, unused and harmless.
+```
+First and 10          <- sent (capture wrapper)
+AP Skill Builder         unused, no button built
+Checkpoint 1          <- sent
+Evidence Lab             unused, no button built
+Primary Source           unused, no button built
+BeInTheRoom              unused, never built
+Checkpoint 2          <- sent
+Map Check                unused, added 2026-08-03
+BeSurreal                unused, added 2026-08-03
+Socrates AI Coach        unused, added 2026-08-03
+```
 
 **Skill Focus** — checkbox question, marked required. Nine options, in this
 order on the form:
@@ -293,8 +318,10 @@ write to the Teacher Hub output tabs.
 1. Confirm the response type key exists in `BH_FORM.responseTypes` and
    `BH_FORM.slugs`.
 2. Compute the resulting Prompt ID string and write it down.
-3. **Add that Prompt ID to the live Google Form dropdown before shipping.**
-   A button whose Prompt ID is missing from the form fails silently.
+3. ~~Add that Prompt ID to the live Google Form dropdown before shipping.~~
+   **No longer required.** Prompt ID became a short-answer question on
+   2026-08-03, so any value is accepted. This step used to be the one people
+   skipped and the one that cost days. It is now free.
 4. Confirm any Skill Focus values you introduce exist in the form's Skill Focus
    options.
 5. Update the "WHAT THE FORM CURRENTLY CONTAINS" section above.
@@ -316,6 +343,47 @@ debugging session. `scripts/validate.js` strips query strings before resolving
 ---
 
 ## VERIFICATION HISTORY
+
+**2026-08-03 — Capture scope expanded, reverted, and the form simplified.**
+
+Sequence, because the order is the lesson:
+
+1. Modules with draft boxes but no Submit button were read as a wiring bug.
+   Capture was expanded to eight touchpoints across both renderers.
+2. The teacher recognised it as the decision already made and reversed in June,
+   and asked for a revert. Nothing had reached students.
+3. Reverted to three touchpoints. The real problem was durability and the Canvas
+   hand-off, addressed instead by autosave and a "Copy All My Work" panel.
+
+**The reasoning error worth remembering:** a Submit to Form button was treated as
+the fix for "the response goes nowhere". It is not. It adds a click the student
+must remember, and it sends work to a Sheet, which is neither durable storage for
+the student nor Canvas. Durability is autosave. Canvas is Copy All My Work.
+
+Repo commits on `claude/behistorical-form-buttons-lr4nzy`:
+- `f368b53` — capture bug fixes, 103 files. Stray `#form-capture` sections removed
+  from 1.2 / 1.3 / 1.5; hand-written `captureUrls` removed from 22 data files,
+  which had been dropping Prompt ID; `entry.1845180246` recovered so Student
+  Response prefills; `submitResponseToGoogleForm` deduplicated into the config.
+- `4f2b2bc` — expansion reverted, three bug fixes kept.
+- `4930475` — autosave on typing, plus the Copy All My Work panel injected after
+  the module grid on all 77 lessons.
+
+Form-side changes (manual, outside the repo), verified against a prefilled link:
+- Prompt ID: **Dropdown converted to Short answer.** Entry ID preserved.
+- Response Type: three options added, currently unused.
+
+Three defects fixed, none of which threw an error:
+1. Prompt ID silently blank on 22 topics, because a hand-written `captureUrls`
+   short-circuited the auto-builder.
+2. Student Response never prefilled outside seven capture wrappers, so students
+   had to paste into a required field.
+3. Drafts lost on tab close, because persistence depended on pressing Save Draft.
+
+Verified in Chromium, not just `validate.js`: 77 lessons, 624 module cards, 154
+submit buttons, all Checkpoint 1 or Checkpoint 2, all inside a card, all six
+fields present. Autosave survived a reload for all 19 test responses across three
+lessons.
 
 **2026-08-01 — Full pipeline verified end-to-end.**
 
