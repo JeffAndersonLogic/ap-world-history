@@ -13,6 +13,9 @@ function sanitizeImageUrl(url){
 function bg(url){return `url('${sanitizeImageUrl(url)}')`;}
 const T=window.FOUNDATION_TOPIC;
 const WORK_EXPORT_ID='all-work-output';
+// Prompt text as each card actually displayed it, keyed by the draft() slot.
+const WORK_PROMPTS={};
+function rememberPrompt(id,prompt){if(!id||!prompt)return;const slot=String(id).indexOf(`${T.id}-`)===0?String(id).slice(String(T.id).length+1):String(id);WORK_PROMPTS[slot]=String(prompt);}
 // Foundations data files use id 'foundations-N'; BH_FORM.topics is keyed 'fN'.
 // Passing the raw id would fail buildFormURL's /^f(\d+)$/ test and silently drop the Unit parameter.
 const FOUNDATION_TOPIC_KEY=String(T.id||'').replace(/^foundations-(\d+)$/,'f$1');
@@ -84,7 +87,7 @@ function renderBeInTheRoomPlaceholder(){return `<article class="foundation-card"
 // captureKey is a key into BH_FORM.responseTypes. When present the card stamps
 // its own metadata onto the textarea and grows a Submit to Form button inside
 // the same .tool-row as Save Draft and Copy Response, never outside it.
-function draft(id,prompt,captureKey){return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" ${captureKey?foundationCaptureAttrs(captureKey):''} placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" onclick="copyResponse('${id}')">Copy Response</button>${captureKey?foundationSubmitBtn(id,captureKey):''}</div><div id="${id}-result" class="check-result"></div></div>`}
+function draft(id,prompt,captureKey){rememberPrompt(id,prompt);return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" ${captureKey?foundationCaptureAttrs(captureKey):''} placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" onclick="copyResponse('${id}')">Copy Response</button>${captureKey?foundationSubmitBtn(id,captureKey):''}</div><div id="${id}-result" class="check-result"></div></div>`}
 // submitResponseToGoogleForm lives in assets/js/behistorical-form-config.js so
 // this renderer and assets/js/behistorical-topic-renderer-v1.js share one
 // implementation. Do not redefine it here, the config file loads first and a
@@ -117,20 +120,32 @@ function loadDrafts(){document.querySelectorAll('textarea.response-area').forEac
 // Copy All My Work assembles the lesson for the Canvas assignment, which is
 // where graded work goes; nothing here sends work to Canvas automatically.
 
-// Module order for the assembled output, keyed by the draft() id suffix.
-// Anything not listed still exports, appended with a prettified label.
-const FOUNDATION_WORK_LABELS=[
-  ['map','Module 01, Map & Geography Check'],
-  ['first10','Module 02, First & 10 Reading'],
-  ['besurreal','Module 04, BeSurreal'],
-  ['skill','Module 05, AP Skill Builder'],
-  ['checkpoint','Module 06, Checkpoint 1'],
-  ['evidence','Module 07, Evidence Lab'],
-  ['coach','Module 08, Socrates AI Coach'],
-  ['checkpoint2','Module 10, Checkpoint 2']
+// Module order for the assembled output, keyed by the draft() id suffix, with
+// where each prompt lives. Anything not listed still exports, appended with a
+// prettified label. prompt() is wrapped in a try: a missing field must degrade
+// to "no prompt", never throw and lose the student's work.
+const FOUNDATION_WORK_ITEMS=[
+  {slot:'map',        label:'Module 01, Map & Geography Check', prompt:()=>T.map.prompt},
+  {slot:'first10',    label:'Module 02, First & 10 Reading',    prompt:()=>first10.prompt},
+  {slot:'besurreal',  label:'Module 04, BeSurreal',             prompt:()=>beSurreal.prompt},
+  {slot:'skill',      label:'Module 05, AP Skill Builder',      prompt:()=>T.skill.prompt},
+  {slot:'checkpoint', label:'Module 06, Checkpoint 1',          prompt:()=>T.checkpoint.prompt},
+  {slot:'evidence',   label:'Module 07, Evidence Lab',          prompt:()=>evidence.prompt},
+  {slot:'coach',      label:'Module 08, Socrates AI Coach',     prompt:()=>aiCoach.responsePrompt},
+  {slot:'checkpoint2',label:'Module 10, Checkpoint 2',          prompt:()=>T.exitTicket||T.checkpoint.prompt}
 ];
 
+function promptForSlot(slot){
+  if(WORK_PROMPTS[slot])return WORK_PROMPTS[slot];
+  const item=FOUNDATION_WORK_ITEMS.find(w=>w.slot===slot);
+  if(!item)return '';
+  try{return String(item.prompt()||'').trim();}catch(e){return '';}
+}
 function prettyWorkLabel(slot){const w=String(slot).replace(/-/g,' ').trim();return w.charAt(0).toUpperCase()+w.slice(1);}
+function escapeWorkHtml(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+// Strips the bold markers the data files use, so "**Compare** the two" reads plain.
+function plainPrompt(v){return String(v||'').replace(/\*\*(.*?)\*\*/g,'$1').trim();}
+function paragraphsHtml(t){return String(t).split(/\n{2,}/).map(b=>'<p>'+escapeWorkHtml(b.trim()).replace(/\n/g,'<br>')+'</p>').join('');}
 
 // Reads localStorage, not the DOM: openModule() replaces the modal body, so a
 // textarea for a module the student is not looking at does not exist. Anything
@@ -151,32 +166,99 @@ function collectLessonWork(){
     stored[t.id.indexOf(`${T.id}-`)===0?t.id.slice(`${T.id}-`.length):t.id]=value;
   });
   const ordered=[],listed=new Set();
-  FOUNDATION_WORK_LABELS.forEach(([slot,label])=>{listed.add(slot);if(stored[slot])ordered.push({label,text:stored[slot]});});
-  Object.keys(stored).sort().forEach(slot=>{if(!listed.has(slot))ordered.push({label:prettyWorkLabel(slot),text:stored[slot]});});
+  FOUNDATION_WORK_ITEMS.forEach(item=>{
+    listed.add(item.slot);
+    if(stored[item.slot])ordered.push({label:item.label,prompt:promptForSlot(item.slot),text:stored[item.slot]});
+  });
+  Object.keys(stored).sort().forEach(slot=>{
+    if(!listed.has(slot))ordered.push({label:prettyWorkLabel(slot),prompt:promptForSlot(slot),text:stored[slot]});
+  });
   return ordered;
+}
+
+// Builds both clipboard flavours. text/html is what Canvas keeps the bolding
+// from; text/plain is the fallback for anywhere that refuses HTML.
+function buildWorkDocument(){
+  const work=collectLessonWork();
+  if(!work.length)return null;
+  const line1='AP World History'+(T.code?', '+T.code:'');
+  const line2=T.title||'';
+  const stamp=new Date().toLocaleString();
+
+  const head='<div><p><strong>'+escapeWorkHtml(line1)+'</strong>'
+    +(line2?'<br><strong>'+escapeWorkHtml(line2)+'</strong>':'')+'</p>'
+    +'<p><em>Student work, copied '+escapeWorkHtml(stamp)+'</em></p><hr>';
+
+  const body=work.map(w=>{
+    const prompt=plainPrompt(w.prompt);
+    return '<p><strong>'+escapeWorkHtml(w.label)+'</strong></p>'
+      +(prompt?'<p><strong>Question:</strong> <em>'+escapeWorkHtml(prompt)+'</em></p>':'')
+      +'<p><strong>My response:</strong></p>'+paragraphsHtml(w.text);
+  }).join('<hr>');
+
+  const plain=[line1.toUpperCase(),line2,'Student work, copied '+stamp,''].filter(Boolean)
+    .concat(work.map(w=>{
+      const prompt=plainPrompt(w.prompt);
+      return [w.label.toUpperCase(),prompt?'Question: '+prompt:'','My response:',w.text,''].filter(Boolean).join('\n');
+    })).join('\n');
+
+  return {html:head+body+'</div>',plain:plain,count:work.length};
 }
 
 function gatherAllWork(){
   const out=byId(WORK_EXPORT_ID),result=byId('all-work-result');
-  if(!out)return;
-  const work=collectLessonWork();
-  if(!work.length){out.value='';if(result)result.textContent='Nothing typed yet. Work through the module cards, then gather your work.';return;}
-  out.value=[`BeHistorical, ${T.code||''} ${T.title||''}`.trim(),`My work, copied ${new Date().toLocaleString()}`,'']
-    .concat(work.map(w=>`=== ${w.label} ===\n${w.text}\n`)).join('\n');
-  if(result)result.textContent=`Gathered ${work.length} response${work.length===1?'':'s'}. Copy this, then paste it into Canvas.`;
+  if(!out)return null;
+  const doc=buildWorkDocument();
+  if(!doc){
+    out.innerHTML='';out.dataset.plain='';
+    if(result)result.textContent='Nothing typed yet. Work through the module cards, then gather your work.';
+    return null;
+  }
+  out.innerHTML=doc.html;
+  out.dataset.plain=doc.plain;
+  if(result)result.textContent=`Gathered ${doc.count} response${doc.count===1?'':'s'}. Copy this, then paste it into Canvas.`;
+  return doc;
+}
+
+// Selecting the rendered block first means a manual Ctrl-C still copies the
+// formatted version when the clipboard API is blocked.
+function selectWorkOutput(out){
+  try{
+    const range=document.createRange();range.selectNodeContents(out);
+    const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);
+    return true;
+  }catch(e){return false;}
 }
 
 function copyAllWork(){
   const out=byId(WORK_EXPORT_ID),result=byId('all-work-result');
   if(!out)return;
-  if(!(out.value||'').trim())gatherAllWork();
-  if(!(out.value||'').trim())return;
-  out.select();
-  if(navigator.clipboard&&navigator.clipboard.writeText){
-    navigator.clipboard.writeText(out.value)
-      .then(()=>{if(result)result.textContent='Copied. Paste it into the Canvas assignment.';})
-      .catch(()=>{if(result)result.textContent='Copy is blocked on this device. The text is selected, press Ctrl-C or Cmd-C.';});
-  }else if(result){result.textContent='The text is selected, press Ctrl-C or Cmd-C to copy.';}
+  let doc=(out.innerHTML||'').trim()?{html:out.innerHTML,plain:out.dataset.plain||''}:null;
+  if(!doc)doc=gatherAllWork();
+  if(!doc)return;
+  const say=m=>{if(result)result.textContent=m;};
+  selectWorkOutput(out);
+  if(window.ClipboardItem&&navigator.clipboard&&navigator.clipboard.write){
+    navigator.clipboard.write([new ClipboardItem({
+      'text/html':new Blob([doc.html],{type:'text/html'}),
+      'text/plain':new Blob([doc.plain],{type:'text/plain'})
+    })]).then(()=>say('Copied with formatting. Paste it into the Canvas assignment.'))
+        .catch(()=>copyWorkFallback(say));
+  }else{copyWorkFallback(say);}
+}
+
+// execCommand is deprecated but still the only way to put formatted text on the
+// clipboard without ClipboardItem, and it copies the live selection.
+function copyWorkFallback(say){
+  let copied=false;
+  try{copied=document.execCommand('copy');}catch(e){copied=false;}
+  if(copied){say('Copied with formatting. Paste it into the Canvas assignment.');return;}
+  const out=byId(WORK_EXPORT_ID);
+  if(navigator.clipboard&&navigator.clipboard.writeText&&out){
+    navigator.clipboard.writeText(out.dataset.plain||out.textContent||'')
+      .then(()=>say('Copied as plain text. Paste it into the Canvas assignment.'))
+      .catch(()=>say('Copy is blocked on this device. Your work is selected, press Ctrl-C or Cmd-C.'));
+  }else{say('Your work is selected, press Ctrl-C or Cmd-C to copy.');}
 }
 
 // One timer per textarea, so switching boxes quickly cannot cancel a pending
@@ -196,7 +278,7 @@ document.addEventListener('input',function(event){
 function renderWorkExportPanel(){
   const grid=byId('module-grid');
   if(!grid||byId(WORK_EXPORT_ID))return;
-  grid.insertAdjacentHTML('afterend',`<article class="foundation-card work-export"><h3>Save Your Work</h3><p>Your typing saves automatically, but only in this browser on this device. Before you leave class, gather everything here and paste it into the Canvas assignment. Canvas is where your graded work goes.</p><div class="tool-row"><button class="btn" type="button" onclick="gatherAllWork()">Gather All My Work</button><button class="btn secondary" type="button" onclick="copyAllWork()">Copy to Clipboard</button></div><textarea class="response-area" id="${WORK_EXPORT_ID}" placeholder="Click Gather All My Work, then copy this and paste it into Canvas."></textarea><div id="all-work-result" class="check-result"></div></article>`);
+  grid.insertAdjacentHTML('afterend',`<article class="foundation-card work-export"><h3>Save Your Work</h3><p>Your typing saves automatically, but only in this browser on this device. Before you leave class, gather everything here and paste it into the Canvas assignment. Canvas is where your graded work goes.</p><div class="tool-row"><button class="btn" type="button" onclick="gatherAllWork()">Gather All My Work</button><button class="btn secondary" type="button" onclick="copyAllWork()">Copy to Clipboard</button></div><div id="${WORK_EXPORT_ID}" class="work-output" tabindex="0" style="background:#F5F0E7;color:#1A1C1D;border:1px solid #C9A46A;border-radius:3px;padding:1rem 1.15rem;margin-top:.75rem;max-height:22rem;overflow-y:auto;font-family:'Libre Baskerville',Georgia,serif;font-size:.9rem;line-height:1.55;"><p style="opacity:.7;margin:0;">Click <strong>Gather All My Work</strong>, then Copy to Clipboard and paste into Canvas.</p></div><div id="all-work-result" class="check-result"></div></article>`);
 }
 renderWorkExportPanel();
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModule();closeLectureModal();}if(byId('lecture-modal').classList.contains('show')){if(e.key==='ArrowRight'){e.preventDefault();lectureStep(1);}else if(e.key==='ArrowLeft'){e.preventDefault();lectureStep(-1);}}});

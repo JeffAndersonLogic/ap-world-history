@@ -13,6 +13,8 @@ const kcPills = kc => kc.split(';').map(s => s.trim()).filter(Boolean).map(s => 
 // calls loadAllDrafts(), which must skip it, and a const declared further down
 // would still be in its temporal dead zone at that point.
 const WORK_EXPORT_ID = 'all-work-output';
+// Prompt text as each module card actually displayed it, keyed by textarea id.
+const WORK_PROMPTS = {};
 
 
 function sanitizeImageUrl(url) {
@@ -663,6 +665,7 @@ function renderPrimarySource() {
 // ── Shared response/draft blocks ──────────────────────────────────────────────
 
 function draftBlock(id, prompt, responseType, captureKey = '') {
+  rememberPrompt(id, prompt);
   return `
     <div class="prompt-box">
       <h3>Draft Your Thinking</h3>
@@ -678,6 +681,7 @@ function draftBlock(id, prompt, responseType, captureKey = '') {
 }
 
 function responseBlock(id, prompt, responseType, terms = [], captureKey = '') {
+  rememberPrompt(id, prompt);
   return `
     <div class="prompt-box">
       <h3>Write Your Response</h3>
@@ -731,24 +735,71 @@ function loadAllDrafts() {
 // into one block for the Canvas assignment, which is where graded work actually
 // goes; nothing in this repository sends work to Canvas automatically.
 
-// Module order for the assembled output. Ids not listed here still get exported,
-// appended alphabetically with a prettified label, so a topic with a bespoke
-// textarea (7.9 and 8.9 have matrix boxes) never silently loses work.
-const WORK_LABELS = [
-  ['map-check-response',      'Module 01, Map & Geography Check'],
-  ['first10-q1',              'Module 02, First & 10, Question 1'],
-  ['first10-q2',              'Module 02, First & 10, Question 2'],
-  ['first10-q3',              'Module 02, First & 10, Question 3'],
-  ['skill-builder-response',  'Module 05, AP Skill Builder'],
-  ['checkpoint-one-response', 'Module 06, Checkpoint 1'],
-  ['evidence-response',       'Module 07, Evidence Lab'],
-  ['primary-source-response', 'Module 08, Primary Source'],
-  ['checkpoint-two-response', 'Module 10, Checkpoint 2']
+// Module order for the assembled output, with where each prompt lives in L.
+// Ids not listed here still get exported, appended alphabetically with a
+// prettified label, so a topic with a bespoke textarea (7.9 and 8.9 have matrix
+// boxes) never silently loses work.
+//
+// prompt() is wrapped in a try at call time: data shapes vary across 71 topics
+// and a missing field must degrade to "no prompt", never throw and lose the work.
+const WORK_ITEMS = [
+  { id: 'map-check-response',      label: 'Module 01, Map & Geography Check',
+    prompt: () => L.map.prompt },
+  { id: 'first10-q1',              label: 'Module 02, First & 10, Question 1',
+    prompt: () => L.first10.questions[0] },
+  { id: 'first10-q2',              label: 'Module 02, First & 10, Question 2',
+    prompt: () => L.first10.questions[1] },
+  { id: 'first10-q3',              label: 'Module 02, First & 10, Question 3',
+    prompt: () => L.first10.questions[2] },
+  { id: 'skill-builder-response',  label: 'Module 05, AP Skill Builder',
+    prompt: () => L.skillBuilder.prompt },
+  { id: 'checkpoint-one-response', label: 'Module 06, Checkpoint 1',
+    prompt: () => L.checkpoints[0].prompt },
+  { id: 'evidence-response',       label: 'Module 07, Evidence Lab',
+    prompt: () => L.evidenceLab.prompt },
+  { id: 'primary-source-response', label: 'Module 08, Primary Source',
+    prompt: () => L.primarySource.questions.join(' ') },
+  { id: 'checkpoint-two-response', label: 'Module 10, Checkpoint 2',
+    prompt: () => L.checkpoints[1].prompt }
 ];
+
+// Prompts seen at render time win over the table above. draftBlock and
+// responseBlock record what they actually displayed, which covers bespoke
+// textareas the table does not know about. WORK_PROMPTS is declared at the top
+// of the file: draftBlock is defined above this point and a const declared here
+// would be in its temporal dead zone if anything ever rendered during boot.
+function rememberPrompt(id, prompt) {
+  if (id && prompt) WORK_PROMPTS[id] = String(prompt);
+}
+
+function promptForId(id) {
+  if (WORK_PROMPTS[id]) return WORK_PROMPTS[id];
+  const item = WORK_ITEMS.find(w => w.id === id);
+  if (!item) return '';
+  try { return String(item.prompt() || '').trim(); } catch (e) { return ''; }
+}
 
 function prettyWorkLabel(id) {
   const words = id.replace(/-response$/, '').replace(/-/g, ' ').trim();
   return words.charAt(0).toUpperCase() + words.slice(1);
+}
+
+function escapeWorkHtml(value) {
+  return String(value == null ? '' : value)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// Strips the bold markers the data files use, so a prompt written as
+// "**Compare** the two" reads as plain text in the worksheet.
+function plainPrompt(value) {
+  return String(value || '').replace(/\*\*(.*?)\*\*/g, '$1').trim();
+}
+
+// Turns a response into paragraphs, so a student's line breaks survive the paste.
+function paragraphsHtml(text) {
+  return String(text).split(/\n{2,}/).map(block =>
+    '<p>' + escapeWorkHtml(block.trim()).replace(/\n/g, '<br>') + '</p>'
+  ).join('');
 }
 
 // Reads from localStorage, not the DOM, because openModule() replaces the modal
@@ -773,53 +824,143 @@ function collectLessonWork() {
 
   const ordered = [];
   const listed = new Set();
-  WORK_LABELS.forEach(([id, label]) => {
-    listed.add(id);
-    if (stored[id]) ordered.push({ label, text: stored[id] });
+  WORK_ITEMS.forEach(item => {
+    listed.add(item.id);
+    if (stored[item.id]) ordered.push({ label: item.label, prompt: promptForId(item.id), text: stored[item.id] });
   });
   Object.keys(stored).sort().forEach(id => {
-    if (!listed.has(id)) ordered.push({ label: prettyWorkLabel(id), text: stored[id] });
+    if (!listed.has(id)) ordered.push({ label: prettyWorkLabel(id), prompt: promptForId(id), text: stored[id] });
   });
   return ordered;
+}
+
+// Topic ID on its own, e.g. '1.1'. L.meta.topic reads 'Topic 1.1'.
+function workTopicId() {
+  return String((L.meta && L.meta.topic) || '').replace(/^Topic\s+/i, '').trim();
+}
+
+// The heading a student sees at the top of the paste, and the teacher sees first
+// in Canvas: topic number, then topic title.
+function workHeading() {
+  const id = workTopicId();
+  const title = (L.meta && L.meta.title) || '';
+  return {
+    line1: 'AP World History' + (id ? ', Topic ' + id : ''),
+    line2: title
+  };
+}
+
+// Builds both clipboard flavours at once. text/html is what Canvas keeps the
+// bolding from; text/plain is the fallback for anywhere that refuses HTML.
+function buildWorkDocument() {
+  const work = collectLessonWork();
+  if (!work.length) return null;
+
+  const head = workHeading();
+  const stamp = new Date().toLocaleString();
+
+  const html = ['<div>',
+    '<p><strong>' + escapeWorkHtml(head.line1) + '</strong>',
+    head.line2 ? '<br><strong>' + escapeWorkHtml(head.line2) + '</strong>' : '',
+    '</p>',
+    '<p><em>Student work, copied ' + escapeWorkHtml(stamp) + '</em></p>',
+    '<hr>'
+  ].join('');
+
+  const body = work.map(w => {
+    const prompt = plainPrompt(w.prompt);
+    return '<p><strong>' + escapeWorkHtml(w.label) + '</strong></p>'
+      + (prompt ? '<p><strong>Question:</strong> <em>' + escapeWorkHtml(prompt) + '</em></p>' : '')
+      + '<p><strong>My response:</strong></p>'
+      + paragraphsHtml(w.text);
+  }).join('<hr>');
+
+  const plain = [head.line1.toUpperCase(), head.line2, 'Student work, copied ' + stamp, '']
+    .filter(Boolean)
+    .concat(work.map(w => {
+      const prompt = plainPrompt(w.prompt);
+      return [w.label.toUpperCase(),
+              prompt ? 'Question: ' + prompt : '',
+              'My response:',
+              w.text, ''].filter(Boolean).join('\n');
+    }))
+    .join('\n');
+
+  return { html: html + body + '</div>', plain: plain, count: work.length };
 }
 
 function gatherAllWork() {
   const out = byId(WORK_EXPORT_ID);
   const result = byId('all-work-result');
-  if (!out) return;
+  if (!out) return null;
 
-  const work = collectLessonWork();
-  if (!work.length) {
-    out.value = '';
+  const doc = buildWorkDocument();
+  if (!doc) {
+    out.innerHTML = '';
+    out.dataset.plain = '';
     if (result) result.textContent = 'Nothing typed yet. Work through the module cards, then gather your work.';
-    return;
+    return null;
   }
 
-  const topic = (L.meta && L.meta.topic) || '';
-  const title = (L.meta && L.meta.title) || '';
-  out.value = [
-    `BeHistorical, ${topic}${title ? ', ' + title : ''}`,
-    `My work, copied ${new Date().toLocaleString()}`,
-    ''
-  ].concat(work.map(w => `=== ${w.label} ===\n${w.text}\n`)).join('\n');
+  out.innerHTML = doc.html;
+  out.dataset.plain = doc.plain;
+  if (result) result.textContent = `Gathered ${doc.count} response${doc.count === 1 ? '' : 's'}. Copy this, then paste it into Canvas.`;
+  return doc;
+}
 
-  if (result) result.textContent = `Gathered ${work.length} response${work.length === 1 ? '' : 's'}. Copy this, then paste it into Canvas.`;
+// Selecting the rendered block first means that even when the clipboard API is
+// blocked, a manual Ctrl-C copies the formatted version rather than nothing.
+function selectWorkOutput(out) {
+  try {
+    const range = document.createRange();
+    range.selectNodeContents(out);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    return true;
+  } catch (e) { return false; }
 }
 
 function copyAllWork() {
   const out = byId(WORK_EXPORT_ID);
   const result = byId('all-work-result');
   if (!out) return;
-  if (!(out.value || '').trim()) gatherAllWork();
-  if (!(out.value || '').trim()) return;
 
-  out.select();
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(out.value)
-      .then(() => { if (result) result.textContent = 'Copied. Paste it into the Canvas assignment.'; })
-      .catch(() => { if (result) result.textContent = 'Copy is blocked on this device. The text is selected, press Ctrl-C or Cmd-C.'; });
-  } else if (result) {
-    result.textContent = 'The text is selected, press Ctrl-C or Cmd-C to copy.';
+  let doc = (out.innerHTML || '').trim() ? { html: out.innerHTML, plain: out.dataset.plain || '' } : null;
+  if (!doc) doc = gatherAllWork();
+  if (!doc) return;
+
+  const say = m => { if (result) result.textContent = m; };
+  selectWorkOutput(out);
+
+  // Write both flavours so Canvas keeps the bold and plain-text targets still work.
+  if (window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) {
+    navigator.clipboard.write([new ClipboardItem({
+      'text/html': new Blob([doc.html], { type: 'text/html' }),
+      'text/plain': new Blob([doc.plain], { type: 'text/plain' })
+    })])
+      .then(() => say('Copied with formatting. Paste it into the Canvas assignment.'))
+      .catch(() => copyWorkFallback(say));
+  } else {
+    copyWorkFallback(say);
+  }
+}
+
+// execCommand is deprecated but still the only way to put formatted text on the
+// clipboard when ClipboardItem is unavailable, and it copies the live selection,
+// which is the rendered block, so the bolding survives.
+function copyWorkFallback(say) {
+  let copied = false;
+  try { copied = document.execCommand('copy'); } catch (e) { copied = false; }
+  if (copied) { say('Copied with formatting. Paste it into the Canvas assignment.'); return; }
+
+  const out = byId(WORK_EXPORT_ID);
+  if (navigator.clipboard && navigator.clipboard.writeText && out) {
+    navigator.clipboard.writeText(out.dataset.plain || out.textContent || '')
+      .then(() => say('Copied as plain text. Paste it into the Canvas assignment.'))
+      .catch(() => say('Copy is blocked on this device. Your work is selected, press Ctrl-C or Cmd-C.'));
+  } else {
+    say('Your work is selected, press Ctrl-C or Cmd-C to copy.');
   }
 }
 
@@ -837,6 +978,8 @@ document.addEventListener('input', function (event) {
   }, 600);
 });
 
+// The output is a div, not a textarea, so the student sees the same bolding the
+// clipboard carries. A textarea can only ever show plain text.
 function renderWorkExportPanel() {
   const grid = byId('module-grid');
   if (!grid || byId(WORK_EXPORT_ID)) return;
@@ -848,7 +991,10 @@ function renderWorkExportPanel() {
         <button class="btn" type="button" onclick="gatherAllWork()">Gather All My Work</button>
         <button class="btn secondary" type="button" onclick="copyAllWork()">Copy to Clipboard</button>
       </div>
-      <textarea class="response-area" id="${WORK_EXPORT_ID}" placeholder="Click Gather All My Work, then copy this and paste it into Canvas."></textarea>
+      <div id="${WORK_EXPORT_ID}" class="work-output" tabindex="0"
+           style="background:#F5F0E7;color:#1A1C1D;border:1px solid #C9A46A;border-radius:3px;padding:1rem 1.15rem;margin-top:.75rem;max-height:22rem;overflow-y:auto;font-family:'Libre Baskerville',Georgia,serif;font-size:.9rem;line-height:1.55;">
+        <p style="opacity:.7;margin:0;">Click <strong>Gather All My Work</strong>, then Copy to Clipboard and paste into Canvas.</p>
+      </div>
       <div id="all-work-result" class="check-result"></div>
     </article>`);
 }
