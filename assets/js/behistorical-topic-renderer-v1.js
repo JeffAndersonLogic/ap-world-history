@@ -1,6 +1,9 @@
 // behistorical-topic-renderer-v1.js
 // BeHistorical AP World History, Shared Topic Renderer
-// Updated: Capture reduced to 4 touchpoints (First & 10, Checkpoint 1, BeInTheRoom, Checkpoint 2), June 2026
+// Updated: Capture reduced to 3 built touchpoints (First & 10, Checkpoint 1, Checkpoint 2), June 2026,
+//          restored August 2026 after a brief expansion. BeInTheRoom was in the original note but was
+//          never built: module 09 has no textarea and no *-beintheroom Prompt IDs exist on the form.
+//          Every other module card keeps a draft box; "Copy All My Work" carries those to Canvas.
 
 const L = window.BEHISTORICAL_LESSON;
 const byId = id => document.getElementById(id);
@@ -124,17 +127,26 @@ function textareaMeta(responseType, captureKey) {
   return (captureKey ? captureAttrs(captureKey) : '') || `data-response-type="${responseType}"`;
 }
 
-// Auto-generate captureUrls for every response type that has a textarea in a
-// module card. This always overwrites whatever a data file set: hand-written
-// captureUrls in assets/data/ dropped Prompt ID and Skill Focus, and a silently
-// blank Prompt ID is the exact failure docs/FORM-CONTRACT.md warns about.
+// Capture is deliberately limited to Checkpoint 1 and Checkpoint 2 here, plus
+// First & 10 inside its own capture wrapper. That is the pared-down design from
+// June 2026 and it is the design on purpose, not an unfinished job.
 //
-// Two response types are deliberately absent:
+// The reasoning, so nobody "fixes" this again: BeHistorical is the thinking
+// space, Canvas is where graded work is submitted, and the Google Form is a
+// narrow teacher-visibility channel. A Submit to Form button does not make a
+// draft durable, it only asks the student to remember one more click. Every
+// module card keeps its own draft box; "Copy All My Work" is how that reaches
+// Canvas. See docs/FORM-CONTRACT.md.
+//
 //   first10     , captured inside the First & 10 capture wrapper, which already
 //                 prefills the response. A second button here would open a form
 //                 with nothing in it, the reading lives in an iframe.
 //   beInTheRoom , module 09 is an external link with no textarea, and no
-//                 *-beintheroom Prompt IDs exist on the form yet.
+//                 *-beintheroom Prompt IDs exist on the form.
+//
+// This still overwrites the standard keys a data file may have set, because
+// hand-written captureUrls in assets/data/ dropped Prompt ID and Skill Focus,
+// and a silently blank Prompt ID is the exact failure the contract warns about.
 function autoBuildCaptureUrls() {
   if (!window.BH_FORM || typeof buildCaptureButton !== 'function') return;
 
@@ -147,13 +159,9 @@ function autoBuildCaptureUrls() {
   // keys that their own module renderers read; overwriting the object outright
   // would silently delete those buttons.
   L.captureUrls = Object.assign({}, L.captureUrls, {
-    first10:       '',
-    mapCheck:      btn('map-check-response',      'mapCheck'),
-    skillBuilder:  btn('skill-builder-response',  'skillBuilder'),
-    checkpoint1:   btn('checkpoint-one-response', 'checkpoint1'),
-    evidenceLab:   btn('evidence-response',       'evidenceLab'),
-    primarySource: btn('primary-source-response', 'primarySource'),
-    checkpoint2:   btn('checkpoint-two-response', 'checkpoint2')
+    first10:     '',
+    checkpoint1: btn('checkpoint-one-response', 'checkpoint1'),
+    checkpoint2: btn('checkpoint-two-response', 'checkpoint2')
   });
 }
 
@@ -352,7 +360,7 @@ function renderMap() {
   // Map module cannot submit.
   if (L.map && L.map.embedUrl) {
     return `<div class="first10-note"><strong>${L.map.title}</strong><br>${L.map.note || 'Use the embedded map window below, then close this pop-out to return to the lesson path.'}</div><div class="first10-frame-wrap"><iframe class="first10-frame" src="${L.map.embedUrl}" title="${L.map.title}"></iframe></div>
-    ${draftBlock('map-check-response', L.map.prompt || 'Summarize what the map shows about this topic.', 'Map Check', 'mapCheck')}`;
+    ${draftBlock('map-check-response', L.map.prompt || 'Summarize what the map shows about this topic.', 'Map Check')}`;
   }
   return `
     <article class="card map-card">
@@ -367,7 +375,7 @@ function renderMap() {
           <ul>${(L.map.notes || []).map(n => `<li>${md(n)}</li>`).join('')}</ul>
           ${renderMapKey()}
           <div class="question"><strong>Map Question</strong><br>${L.map.prompt}</div>
-          ${draftBlock('map-check-response', L.map.prompt, 'Map Check', 'mapCheck')}
+          ${draftBlock('map-check-response', L.map.prompt, 'Map Check')}
         </div>
       </div>
     </article>`;
@@ -547,7 +555,7 @@ function renderSkill() {
       </div>
       <div class="question"><strong>Skill Practice</strong><br>${s.prompt}</div>
     </article>
-    ${draftBlock('skill-builder-response', s.prompt, 'AP Skill Builder', 'skillBuilder')}`;
+    ${draftBlock('skill-builder-response', s.prompt, 'AP Skill Builder')}`;
 }
 
 // ── Checkpoints, with MagicSchool bridge ────────────────────────────────────
@@ -627,7 +635,7 @@ function renderEvidence() {
           </div>
         </article>`).join('')}
     </div>
-    ${draftBlock('evidence-response', L.evidenceLab.prompt, 'Evidence Lab', 'evidenceLab')}`;
+    ${draftBlock('evidence-response', L.evidenceLab.prompt, 'Evidence Lab')}`;
 }
 
 // ── Primary Source ────────────────────────────────────────────────────────────
@@ -645,7 +653,7 @@ function renderPrimarySource() {
         ${L.primarySource.questions.map((q, i) => `<div class="question"><strong>${i + 1}</strong><br>${q}</div>`).join('')}
       </aside>
     </div>
-    ${draftBlock('primary-source-response', L.primarySource.questions.join(' '), 'Primary Source', 'primarySource')}`;
+    ${draftBlock('primary-source-response', L.primarySource.questions.join(' '), 'Primary Source')}`;
 }
 
 // ── Shared response/draft blocks ──────────────────────────────────────────────

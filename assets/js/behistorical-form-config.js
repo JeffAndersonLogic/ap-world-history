@@ -124,8 +124,10 @@ window.BH_FORM = {
     '9.9': '9.9 - Continuity and Change in a Globalized World',
   },
 
-  // The last three were added when every module card with a textarea gained a
-  // submit path. They must exist as Response Type options on the live form.
+  // These are the response types the form understands. Listing one here does NOT
+  // create a capture point; the renderers decide which ones get a button, and
+  // they deliberately build only First & 10, Checkpoint 1 and Checkpoint 2.
+  // See docs/FORM-CONTRACT.md before adding a button for any of the others.
   responseTypes: {
     first10:       'First and 10',
     skillBuilder:  'AP Skill Builder',
@@ -134,9 +136,6 @@ window.BH_FORM = {
     primarySource: 'Primary Source',
     beInTheRoom:   'BeInTheRoom',
     checkpoint2:   'Checkpoint 2',
-    mapCheck:      'Map Check',
-    beSurreal:     'BeSurreal',
-    socratesCoach: 'Socrates AI Coach',
   },
 
   slugs: {
@@ -147,19 +146,6 @@ window.BH_FORM = {
     primarySource: 'primary-source',
     beInTheRoom:   'beintheroom',
     checkpoint2:   'checkpoint-2',
-    mapCheck:      'map-check',
-    beSurreal:     'besurreal',
-    socratesCoach: 'socrates-coach',
-  },
-
-  // Skill Focus for the three response types added above. The per-topic skills
-  // map below covers the original seven for all 77 topics; rather than add
-  // three more entries to every one of those rows, these three resolve here.
-  // Every value must exist in the form's Skill Focus options.
-  fallbackSkills: {
-    mapCheck:      ['Contextualization'],
-    beSurreal:     ['Contextualization'],
-    socratesCoach: ['Argumentation'],
   },
 
   skills: {
@@ -246,14 +232,11 @@ window.BH_FORM = {
 /**
  * resolveSkills(topicKey, responseTypeKey)
  *
- * Per-topic mapping wins; the per-response-type fallback covers the three
- * module types added after the per-topic map was written. Returns [] when
- * neither has an entry, which leaves Skill Focus for the student to tick.
+ * Returns [] when the topic has no entry, which leaves Skill Focus for the
+ * student to tick rather than sending a value the form would reject.
  */
 function resolveSkills(topicKey, responseTypeKey) {
-  var perTopic = BH_FORM.skills && BH_FORM.skills[topicKey] && BH_FORM.skills[topicKey][responseTypeKey];
-  if (perTopic && perTopic.length) return perTopic;
-  return (BH_FORM.fallbackSkills && BH_FORM.fallbackSkills[responseTypeKey]) || [];
+  return (BH_FORM.skills && BH_FORM.skills[topicKey] && BH_FORM.skills[topicKey][responseTypeKey]) || [];
 }
 
 /**
