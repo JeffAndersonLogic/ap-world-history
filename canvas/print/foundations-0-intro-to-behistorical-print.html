@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BeHistorical | FOUNDATIONS 0 Intro to BeHistorical | Student Packet</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#1a1c1d;--soft:#4a4f52;--rule:#c9beac;--gold:#8a6a2f;--bronze:#6B3E1F;--paper:#fff;--tint:#f7f3ec}
+@page{size:letter;margin:0.6in 0.65in 0.7in}
+body{background:var(--paper);color:var(--ink);font-family:'Libre Baskerville',Georgia,serif;font-size:10pt;line-height:1.6}
+h1,h2,h3,.p-badge,.p-eyebrow,.p-step strong,.p-table th{font-family:'Trebuchet MS','Segoe UI',Arial,sans-serif}
+a{color:var(--bronze);text-decoration:none}
+.p-cover{border:2px solid var(--gold);border-radius:4px;padding:18pt 20pt;margin-bottom:16pt}
+.p-eyebrow{font-size:8pt;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:6pt}
+.p-cover h1{font-size:20pt;line-height:1.2;margin-bottom:6pt}
+.p-cover .p-sub{font-style:italic;color:var(--soft);line-height:1.55;margin-bottom:12pt}
+.p-idline{display:flex;gap:18pt;border-top:1px solid var(--rule);padding-top:10pt;font-size:9pt;color:var(--soft)}
+.p-idline span{flex:1;border-bottom:1px solid var(--ink);padding-bottom:2pt}
+.p-howto{background:var(--tint);border-left:3px solid var(--gold);padding:10pt 12pt;margin-bottom:14pt;font-size:9pt;line-height:1.65}
+.p-module{margin-bottom:16pt;page-break-inside:auto}
+.p-module-head{display:flex;align-items:baseline;gap:8pt;border-bottom:1.5pt solid var(--gold);padding-bottom:4pt;margin-bottom:9pt;page-break-after:avoid}
+.p-badge{font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:var(--bronze);padding:2pt 6pt;border-radius:2px;white-space:nowrap}
+.p-module-head h2{font-size:13pt;font-weight:700}
+.p-lead{font-size:9.5pt;line-height:1.7;margin-bottom:8pt;color:var(--soft)}
+.p-two{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin-bottom:9pt}
+.p-card{background:var(--tint);border-left:3px solid var(--bronze);padding:9pt 11pt;margin-bottom:9pt;page-break-inside:avoid}
+.p-card h3{font-size:10.5pt;color:var(--bronze);margin-bottom:5pt}
+.p-card ol,.p-card ul{margin-left:14pt}
+.p-card li{font-size:9.5pt;line-height:1.65;margin-bottom:4pt}
+.p-checklist{list-style:none;margin-left:0}
+.p-checklist li{padding-left:16pt;position:relative}
+.p-checklist li::before{content:'';position:absolute;left:0;top:3pt;width:9pt;height:9pt;border:1pt solid var(--ink)}
+.p-key div{border-top:1px solid var(--rule);padding:4pt 0}
+.p-key div:first-child{border-top:none;padding-top:0}
+.p-key dt{font-size:8.5pt;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--bronze)}
+.p-key dd{font-size:9.5pt;line-height:1.6}
+.p-roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:8pt}
+.p-step{border:1px solid var(--rule);border-top:2pt solid var(--gold);padding:7pt 8pt;font-size:8.5pt;line-height:1.55}
+.p-step strong{display:block;font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);margin-bottom:3pt}
+.p-callout{border:1pt solid var(--gold);background:var(--tint);padding:10pt 12pt;margin-bottom:9pt;page-break-inside:avoid}
+.p-callout h3{font-size:11pt;color:var(--bronze);margin-bottom:5pt}
+.p-callout p{font-size:9.5pt;line-height:1.7}
+.p-callout blockquote{border-left:2pt solid var(--gold);margin-top:7pt;padding-left:9pt;font-style:italic;font-size:9.5pt;line-height:1.75}
+.p-figure{margin-bottom:10pt;page-break-inside:avoid}
+.p-figure img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.p-figure figcaption{font-size:8.5pt;line-height:1.55;color:var(--soft);padding-top:4pt}
+.p-figure figcaption strong{color:var(--ink)}
+.p-lecture{border-top:1px solid var(--rule);padding-top:9pt;margin-bottom:10pt;page-break-inside:avoid}
+.p-lecture h3{font-size:11pt;margin-bottom:6pt}
+.p-lecture h3 span{font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:2pt}
+.p-lecture ul{margin-left:14pt;margin-bottom:8pt}
+.p-lecture li{font-size:9.5pt;line-height:1.7;margin-bottom:5pt}
+.p-lecture-fig{display:grid;grid-template-columns:1.6in 1fr;gap:9pt;align-items:start}
+.p-lecture-fig img{width:100%;height:auto;border:1px solid var(--rule)}
+.p-lecture-fig figcaption{font-size:8.5pt;line-height:1.55;color:var(--soft)}
+/* Figures whose only local asset is brand motif print as a reference note. */
+.p-noimg{display:block;border-left:2pt solid var(--rule);padding-left:9pt;margin-bottom:9pt}
+.p-noimg figcaption{padding-top:0}
+.p-imglabel{font-size:7.5pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-family:'Trebuchet MS',Arial,sans-serif}
+.p-prompt{border:1pt solid var(--gold);padding:10pt 12pt;margin:9pt 0 12pt;page-break-inside:avoid}
+.p-prompt-label{font-size:8pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4pt}
+.p-prompt-text{font-size:9.5pt;line-height:1.65;margin-bottom:8pt}
+.p-lines span{display:block;border-bottom:1px solid var(--rule);height:20pt}
+.p-table{width:100%;border-collapse:collapse;font-size:9pt}
+.p-table th{font-size:8pt;letter-spacing:.12em;text-transform:uppercase;text-align:left;padding:5pt 6pt;border-bottom:1.5pt solid var(--gold);color:var(--bronze)}
+.p-table td{padding:5pt 6pt;border-bottom:1px solid var(--rule);line-height:1.6;vertical-align:top}
+.p-url{font-size:8pt;color:var(--soft);word-break:break-all}
+.p-footer{border-top:1px solid var(--rule);margin-top:14pt;padding-top:7pt;font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);text-align:center}
+
+/* First & 10 reading, re-themed for paper */
+.p-reading .reading-title-band{border:none;padding:0 0 8pt;background:none}
+.p-reading .reading-title-band::before{display:none}
+.p-reading .reading-eyebrow{font-size:8pt;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:4pt}
+.p-reading .reading-title{font-size:15pt;line-height:1.2;color:var(--ink);margin-bottom:5pt;font-family:'Trebuchet MS','Segoe UI',Arial,sans-serif}
+.p-reading .reading-title em{color:var(--bronze);font-style:normal}
+.p-reading .reading-deck{font-style:italic;font-size:9.5pt;line-height:1.6;color:var(--soft);margin-bottom:7pt}
+.p-reading .skill-tags{display:flex;flex-wrap:wrap;gap:4pt;margin-bottom:8pt}
+.p-reading .skill-tag{font-size:7.5pt;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--bronze);border:1px solid var(--rule);padding:1.5pt 5pt;border-radius:2px;font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .reading-body{background:none;color:var(--ink)}
+.p-reading .support-strip{display:grid;grid-template-columns:1fr 1fr;gap:9pt;padding:0 0 9pt;background:none;border:none}
+.p-reading .support-card{background:var(--tint);border:none;border-left:3px solid var(--bronze);padding:8pt 10pt}
+.p-reading .support-card h3{font-size:10pt;color:var(--bronze);margin-bottom:4pt;font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .support-card p{font-size:9pt;line-height:1.6;color:var(--ink)}
+.p-reading .vocab-strip{background:none;border:none;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:7pt 0;margin-bottom:9pt}
+.p-reading .vocab-strip h3{font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:5pt;font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .term-chip{display:inline-block;font-size:7.5pt;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--bronze);border:1px solid var(--rule);border-radius:8pt;padding:1.5pt 5pt;margin:1.5pt;font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .section{padding:0 0 10pt;border:none;position:relative}
+.p-reading .section-number{display:none}
+.p-reading .section-label{font-size:8pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:2pt;font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .section-heading{font-size:11.5pt;color:var(--ink);border-bottom:1px solid var(--rule);padding-bottom:4pt;margin-bottom:7pt;font-family:'Trebuchet MS',Arial,sans-serif;page-break-after:avoid}
+.p-reading .reading-text{font-size:9.5pt;line-height:1.75;margin-bottom:7pt;color:var(--ink)}
+.p-reading .kt{background:none;color:var(--bronze);font-weight:700;padding:0}
+.p-reading .ap-callout{background:var(--tint);border:none;border-left:3px solid var(--gold);padding:8pt 10pt;margin:9pt 0;page-break-inside:avoid}
+.p-reading .ap-callout-label{font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:3pt;font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .ap-callout p{font-size:9pt;line-height:1.6;color:var(--ink);font-family:'Libre Baskerville',Georgia,serif}
+.p-reading .ap-callout p strong{color:var(--bronze)}
+.p-reading .be-ready,.p-reading .family-strip{background:var(--tint);border:1px solid var(--rule);border-top:2pt solid var(--bronze);padding:9pt 11pt;margin-bottom:9pt;page-break-inside:avoid}
+.p-reading .be-ready h3,.p-reading .family-strip h3{font-size:10.5pt;color:var(--bronze);margin-bottom:4pt;font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .be-ready p,.p-reading .family-strip p,.p-reading .family-strip li{font-size:9pt;line-height:1.65;color:var(--ink);margin-bottom:5pt}
+.p-reading .family-eyebrow{font-size:7.5pt;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:3pt;font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .family-strip ul{margin:4pt 0 6pt 14pt}
+.p-reading .check-section{background:none;border:none;border-top:1.5pt solid var(--gold);padding:9pt 0 0}
+.p-reading .check-header{display:flex;gap:7pt;align-items:baseline;margin-bottom:8pt}
+.p-reading .check-badge{font-size:7.5pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--bronze);border:none;padding:2pt 6pt;border-radius:2px;font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .check-title{font-size:11pt;color:var(--ink);font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .question-list{list-style:none;display:block}
+.p-reading .question-item{background:none;border:1px solid var(--rule);border-radius:0;padding:8pt 10pt;margin-bottom:9pt;page-break-inside:avoid}
+.p-reading .question-prompt{display:flex;gap:7pt;align-items:baseline;border:none;padding:0 0 6pt}
+.p-reading .q-num{font-size:9.5pt;font-weight:700;color:var(--gold);min-width:14pt}
+.p-reading .q-skill{font-size:7.5pt;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);border:1px solid var(--rule);padding:1pt 4pt;white-space:nowrap;font-family:'Trebuchet MS',Arial,sans-serif}
+.p-reading .q-text{font-size:9.5pt;line-height:1.6;color:var(--ink)}
+.p-reading .pull-quote{border-left:3px solid var(--gold);margin:9pt 0;padding:5pt 10pt;background:var(--tint)}
+.p-reading .pull-quote p{font-size:10pt;font-style:italic;color:var(--bronze);line-height:1.55}
+</style>
+</head>
+<body>
+
+<header class="p-cover">
+  <p class="p-eyebrow">FOUNDATIONS 0 &nbsp;&middot;&nbsp; AP World History: Modern</p>
+  <h1>Intro to BeHistorical</h1>
+  <p class="p-sub">You are not learning history. You are becoming a historian.</p>
+  <div class="p-idline"><span>Name</span><span>Period</span><span>Date</span></div>
+</header>
+
+<div class="p-howto">
+  <strong>How to use this packet.</strong> Work through the ten modules in order. Write your answers on the ruled lines under each prompt. If your teacher assigned this in Canvas, you may type your answers into the Canvas assignment instead, label each answer with its module number so your work is easy to follow.
+</div>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Start Here</span><h2>Learning Targets &amp; Success Criteria</h2></div>
+  <div class="p-two">
+    <article class="p-card"><h3>Learning Targets</h3><ol><li>I can name the six AP historical thinking skills and give a one-sentence explanation of each in my own words.</li><li>I can describe the 10-module structure I will see in every BeHistorical lesson and explain what each module trains.</li><li>I can explain what my Historian's Portfolio is and write a baseline self-portrait as a historian, where I am today and where I want to be by May.</li></ol></article>
+    <article class="p-card"><h3>Success Criteria</h3><ol><li>I can list the six skills (contextualization, comparison, causation, continuity/change, argumentation, sourcing) and give a plain-language definition of each.</li><li>I can walk a family member through the 10 modules we use every class and say why each one exists.</li><li>I can describe in one sentence what my end-of-year portfolio will contain and who sees it, and write one paragraph in my own voice that captures who I am as a historical thinker on Day 1.</li></ol></article>
+  </div>
+  <div class="p-roadmap">
+    <div class="p-step"><strong>1. Build Context</strong>Review the targets, examine the map, and read the First &amp; 10 narrative.</div>
+    <div class="p-step"><strong>2. Learn &amp; Practice</strong>Use the module cards, then move into the main lecture-card section.</div>
+    <div class="p-step"><strong>3. Check Understanding</strong>Complete checkpoints with self-check and response tools.</div>
+  </div>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Module 01</span><h2>Map &amp; Geography Check</h2></div>
+  <p class="p-lead">AP World starts at c.1200, a world already full of empires, trade routes, and belief systems. This map is your baseline. You will return to it after every unit and see it differently each time.</p><figure class="p-figure"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjEwMDAiIHZpZXdCb3g9IjAgMCAxNjAwIDEwMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiIHJvbGU9ImltZyIgYXJpYS1sYWJlbGxlZGJ5PSJtYXAtdGl0bGUgbWFwLWRlc2MiPgogIDx0aXRsZSBpZD0ibWFwLXRpdGxlIj5UaGUgSGlzdG9yaWFuJmFwb3M7cyBXb3JsZCBhdCBjLiAxMjAwPC90aXRsZT4KICA8ZGVzYyBpZD0ibWFwLWRlc2MiPkZPVU5EQVRJT05TIDAgaW5zdHJ1Y3Rpb25hbCBtYXAgZm9yIEFQIFdvcmxkIEhpc3Rvcnk6IFRoZSBIaXN0b3JpYW4mYXBvcztzIFdvcmxkIGF0IGMuIDEyMDAuIEZvdW5kYXRpb25zIDAgwrcgVGhlIHNpeCBBUCBXb3JsZCByZWdpb25zPC9kZXNjPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJwYXBlciIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRkZERjciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGMUU3RDUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjIwIiBtYXJrZXJIZWlnaHQ9IjE2IiByZWZYPSIxNyIgcmVmWT0iOCIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8cGF0aCBkPSJNMCwwIEwyMCw4IEwwLDE2IFoiIGZpbGw9IiM4QzVBMkIiLz4KICAgIDwvbWFya2VyPgogICAgPHN0eWxlPgogICAgICAudGl0bGV7Zm9udC1mYW1pbHk6R2VvcmdpYSwnVGltZXMgTmV3IFJvbWFuJyxzZXJpZjtmb250LXdlaWdodDo3MDA7Zm9udC1zaXplOjQ0cHg7ZmlsbDojMUExQzFEfQogICAgICAuc3VidGl0bGV7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE5cHg7ZmlsbDojM0U0NDQ3O2xldHRlci1zcGFjaW5nOjEuMnB4O3RleHQtdHJhbnNmb3JtOnVwcGVyY2FzZX0KICAgICAgLnJlZ2lvbntmb250LWZhbWlseTpHZW9yZ2lhLCdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmO2ZvbnQtd2VpZ2h0OjcwMDtmb250LXNpemU6MjFweDtsZXR0ZXItc3BhY2luZzouNXB4fQogICAgICAucGxhY2V7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7Zm9udC13ZWlnaHQ6NzAwO2ZvbnQtc2l6ZToxOHB4O2ZpbGw6IzFBMUMxRH0KICAgICAgLnBsYWNlbm90ZXtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmb250LXNpemU6MTVweDtmaWxsOiMzRTQ0NDd9CiAgICAgIC5zbWFsbHtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmb250LXNpemU6MTdweDtmaWxsOiMxQTFDMUR9CiAgICAgIC50aW55e2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNHB4O2ZpbGw6IzNFNDQ0N30KICAgICAgLmJhZGdlbnVte2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2ZvbnQtd2VpZ2h0OjcwMDtmb250LXNpemU6MTlweDtmaWxsOiNGRkZERjd9CiAgICAgIC5iYWRnZXtmaWxsOiM4QzVBMkI7c3Ryb2tlOiNGRkZERjc7c3Ryb2tlLXdpZHRoOjN9CiAgICAgIC5oYWxve3BhaW50LW9yZGVyOnN0cm9rZTtzdHJva2U6I0ZGRkRGNztzdHJva2Utd2lkdGg6NTtzdHJva2UtbGluZWpvaW46cm91bmR9CiAgICAgIC5jaXR5e2ZpbGw6IzFBMUMxRDtzdHJva2U6I0ZGRkRGNztzdHJva2Utd2lkdGg6NH0KICAgICAgLmZsb3d7ZmlsbDpub25lO3N0cm9rZTojOEM1QTJCO3N0cm9rZS13aWR0aDo2O3N0cm9rZS1saW5lY2FwOnJvdW5kO29wYWNpdHk6Ljl9CiAgICAgICNsYW5kIHBhdGh7ZmlsbDojRTREQUM0O3N0cm9rZTojQTk5QjdGO3N0cm9rZS13aWR0aDozfQogICAgICAjZ3JhdGljdWxlIGxpbmV7c3Ryb2tlOiM5RkIwQUU7c3Ryb2tlLXdpZHRoOjEuNTtvcGFjaXR5Oi4zNX0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgoKICA8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIxMDAwIiBmaWxsPSIjRDdFMkUxIi8+CiAgPGcgaWQ9ImdyYXRpY3VsZSI+CiAgICA8bGluZSB4MT0iMTMzLjMiIHkxPSIwIiB4Mj0iMTMzLjMiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iMjY2LjciIHkxPSIwIiB4Mj0iMjY2LjciIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iNDAwLjAiIHkxPSIwIiB4Mj0iNDAwLjAiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iNTMzLjMiIHkxPSIwIiB4Mj0iNTMzLjMiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iNjY2LjciIHkxPSIwIiB4Mj0iNjY2LjciIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iODAwLjAiIHkxPSIwIiB4Mj0iODAwLjAiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iOTMzLjMiIHkxPSIwIiB4Mj0iOTMzLjMiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iMTA2Ni43IiB5MT0iMCIgeDI9IjEwNjYuNyIgeTI9IjEwMDAiLz4KICAgIDxsaW5lIHgxPSIxMjAwLjAiIHkxPSIwIiB4Mj0iMTIwMC4wIiB5Mj0iMTAwMCIvPgogICAgPGxpbmUgeDE9IjEzMzMuMyIgeTE9IjAiIHgyPSIxMzMzLjMiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iMTQ2Ni43IiB5MT0iMCIgeDI9IjE0NjYuNyIgeTI9IjEwMDAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iODMzLjMiIHgyPSIxNjAwIiB5Mj0iODMzLjMiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iNjY2LjciIHgyPSIxNjAwIiB5Mj0iNjY2LjciLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iNTAwLjAiIHgyPSIxNjAwIiB5Mj0iNTAwLjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMzMzLjMiIHgyPSIxNjAwIiB5Mj0iMzMzLjMiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMTY2LjciIHgyPSIxNjAwIiB5Mj0iMTY2LjciLz4KICA8L2c+CiAgPGxpbmUgeDE9IjAiIHkxPSI1MDAuMCIgeDI9IjE2MDAiIHkyPSI1MDAuMCIgc3Ryb2tlPSIjNEU2QjcyIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTAiIG9wYWNpdHk9Ii41Ii8+CiAgPGcgaWQ9ImxhbmQiPgogICAgPHBhdGggaWQ9ImxhbmQtZ3JlZW5sYW5kIiBkPSJNNjAwLjAsMTY2LjcgTDY2Ni43LDEyMi4yIEw2ODguOSwxMDAuMCBMNjY2LjcsNTUuNiBMNjAwLjAsMzguOSBMNTQyLjIsNDQuNCBMNTMzLjMsNzcuOCBMNTY4LjksMTIyLjIgTDYwMC4wLDE2Ni43IFoiLz4KICAgIDxwYXRoIGlkPSJsYW5kLW5vcnRoQW1lcmljYSIgZD0iTTUzLjMsMTMzLjMgTDg4LjksMTA1LjYgTDEyNC40LDEwNS42IEwxNzcuOCwxMTEuMSBMMjMxLjEsMTExLjEgTDI4OC45LDExNi43IEwzNTUuNiwxMTYuNyBMNDAwLjAsMTExLjEgTDQ0NC40LDk0LjQgTDQ4OC45LDExMS4xIEw1MjQuNCwxNjYuNyBMNTU1LjYsMjExLjEgTDUzMy4zLDIzOC45IEw1MDIuMiwyNTAuMCBMNDg4LjksMjcyLjIgTDQ2Ni43LDMwMC4wIEw0NDAuMCwzNTUuNiBMNDQ0LjQsMzYxLjEgTDQyNi43LDMzMy4zIEw0MDQuNCwzMzguOSBMMzgyLjIsMzM4LjkgTDM2OC45LDM1NS42IEwzNjQuNCwzODguOSBMMzc3LjgsNDExLjEgTDM5MS4xLDQyMi4yIEw0MTMuMyw0MjcuOCBMNDMxLjEsNDUwLjAgTDQ1My4zLDQ1NS42IEw0MzUuNiw0MjIuMiBMNDA4LjksNDExLjEgTDM3Ny44LDQwNS42IEwzMzMuMywzODMuMyBMMzExLjEsMzY2LjcgTDI5My4zLDMzMy4zIEwyNzUuNiwzMTYuNyBMMjU3LjgsMjk0LjQgTDI0OC45LDI2Ni43IEwyNDguOSwyMzMuMyBMMjE3LjgsMjA1LjYgTDE3Ny44LDE3Mi4yIEwxNDIuMiwxNjYuNyBMMTExLjEsMTc3LjggTDc1LjYsMTc3LjggTDYyLjIsMTU1LjYgTDUzLjMsMTMzLjMgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtc291dGhBbWVyaWNhIiBkPSJNNDUzLjMsNDU1LjYgTDQ4MC4wLDQzOC45IEw1MjQuNCw0NDQuNCBMNTY4LjksNDcyLjIgTDU3Ny44LDUwMC4wIEw2MDQuNCw1MTEuMSBMNjQ0LjQsNTMzLjMgTDYzMS4xLDU3Mi4yIEw2MjIuMiw2MTEuMSBMNTg2LjcsNjM4LjkgTDU2NC40LDY4My4zIEw1NDIuMiw3MTEuMSBMNTI0LjQsNzIyLjIgTDUxMS4xLDc1MC4wIEw0OTcuOCw3ODMuMyBMNDg4LjksODA1LjYgTDQ2Ni43LDc4OC45IEw0NzEuMSw3NTAuMCBMNDc1LjYsNzA1LjYgTDQ4NC40LDY2Ni43IEw0ODguOSw2MjIuMiBMNDg0LjQsNTg4LjkgTDQ1Ny44LDUzMy4zIEw0NDQuNCw1MTYuNyBMNDUzLjMsNDg4LjkgTDQ1My4zLDQ1NS42IFoiLz4KICAgIDxwYXRoIGlkPSJsYW5kLWFmcmljYSIgZD0iTTcyNC40LDQxNi43IEw3MjguOSwzODMuMyBMNzU1LjYsMzU1LjYgTDc5MS4xLDMyNy44IEw4MzUuNiwzMTYuNyBMODQ4LjksMzExLjEgTDg4OC45LDMyMi4yIEw5MjQuNCwzMjcuOCBMOTQ2LjcsMzI3LjggTDk1NS42LDM2Ni43IEw5NjguOSw0MDAuMCBMOTkxLjEsNDMzLjMgTDEwMTMuMyw0MzguOSBMMTAyNi43LDQzOC45IEwxMDAwLjAsNDcyLjIgTDk4Mi4yLDUxMS4xIEw5NzcuOCw1NDQuNCBMOTU1LjYsNjAwLjAgTDk0Ni43LDY0NC40IEw5MjguOSw2NzIuMiBMOTExLjEsNjg4LjkgTDg4NC40LDY5NC40IEw4NzUuNiw2NjYuNyBMODYyLjIsNjIyLjIgTDg1My4zLDU4OC45IEw4NDAuMCw1MzMuMyBMODQwLjAsNDg4LjkgTDgyMi4yLDQ3Mi4yIEw3OTEuMSw0NzIuMiBMNzY0LjQsNDc3LjggTDc0Mi4yLDQ1MC4wIEw3MjQuNCw0MTYuNyBaIi8+CiAgICA8cGF0aCBpZD0ibGFuZC1ldXJhc2lhIiBkPSJNNzU1LjYsMzAwLjAgTDc2MC4wLDI2MS4xIEw3OTEuMSwyMzguOSBMODEzLjMsMjE2LjcgTDgzMS4xLDIwNS42IEw4MjIuMiwxNzcuOCBMODQwLjAsMTgzLjMgTDg0OC45LDE3Ny44IEw4NTcuOCwxOTQuNCBMODg0LjQsMjAwLjAgTDg5My4zLDE4OC45IEw5MDYuNywxODMuMyBMOTI0LjQsMTcyLjIgTDkzMy4zLDE2Ni43IEw5MjAuMCwxMzguOSBMODk3LjgsMTMzLjMgTDkwNi43LDExMS4xIEw5MzcuOCwxMTEuMSBMOTc3LjgsMTIyLjIgTDEwMjIuMiwxMTYuNyBMMTA2Ni43LDEwNS42IEwxMTExLjEsOTQuNCBMMTE1NS42LDg4LjkgTDEyMjIuMiw2Ni43IEwxMjY2LjcsNzIuMiBMMTMwMi4yLDg4LjkgTDEzNTUuNiw5NC40IEwxNDAwLjAsMTAwLjAgTDE0NDQuNCwxMDAuMCBMMTUxMS4xLDExMS4xIEwxNTU1LjYsMTE2LjcgTDE2MDAuMCwxMjIuMiBMMTYwMC4wLDE1NS42IEwxNTU1LjYsMTY2LjcgTDE1MjQuNCwxNzcuOCBMMTQ5Ny44LDIxMS4xIEwxNDY2LjcsMjQ0LjQgTDE0MzUuNiwyNTUuNiBMMTQyMi4yLDI2Ni43IEwxNDA4LjksMzAwLjAgTDEzNzcuOCwzMDUuNiBMMTM1NS42LDMyMi4yIEwxMzQyLjIsMzMzLjMgTDEzMjQuNCwzNjYuNyBMMTI4OC45LDM4My4zIEwxMjc1LjYsNDA1LjYgTDEyNjYuNyw0NDQuNCBMMTI1My4zLDQ3Ny44IEwxMjQ0LjQsNDYxLjEgTDEyMzUuNiw0MjcuOCBMMTIyMi4yLDQxMS4xIEwxMjA0LjQsMzc3LjggTDExODYuNywzODMuMyBMMTE2MC4wLDQxMS4xIEwxMTQ2LjcsNDUwLjAgTDExNDIuMiw0MTYuNyBMMTEyNC40LDM4OC45IEwxMTExLjEsMzcyLjIgTDEwODguOSwzNjYuNyBMMTA2Ni43LDM2MS4xIEwxMDUzLjMsMzc3LjggTDEwMzEuMSw0MTEuMSBMOTkxLjEsNDMzLjMgTDk2OC45LDQwMC4wIEw5NTUuNiwzNjYuNyBMOTU1LjYsMzI3LjggTDk2MC4wLDMwMC4wIEw5MzMuMywyOTQuNCBMOTIwLjAsMjcyLjIgTDkwMi4yLDI4OC45IEw4ODguOSwyNzcuOCBMODcxLjEsMjg4LjkgTDg1Ny44LDI1MC4wIEw4MzUuNiwyNTUuNiBMODEzLjMsMjY2LjcgTDc5MS4xLDI4My4zIEw3NzMuMywzMDAuMCBMNzU1LjYsMzAwLjAgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtYnJpdGFpbiIgZD0iTTc3My4zLDIyMi4yIEw3ODYuNywyMTYuNyBMODA0LjQsMjExLjEgTDc5NS42LDE5NC40IEw3OTEuMSwxNzcuOCBMNzc3LjgsMTc3LjggTDc3Ny44LDE5NC40IEw3NzMuMywyMDUuNiBMNzczLjMsMjIyLjIgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtaXJlbGFuZCIgZD0iTTc1NS42LDIxMS4xIEw3NzMuMywyMTEuMSBMNzczLjMsMTk0LjQgTDc2NC40LDE5NC40IEw3NTUuNiwyMDAuMCBMNzU1LjYsMjExLjEgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtamFwYW4iIGQ9Ik0xMzc3LjgsMzIyLjIgTDE0MDAuMCwzMTEuMSBMMTQxNy44LDMwNS42IEwxNDI2LjcsMjgzLjMgTDE0MzEuMSwyNjEuMSBMMTQ0NC40LDI1NS42IEwxNDI2LjcsMjUwLjAgTDE0MTMuMywyOTQuNCBMMTM5NS42LDMxMS4xIEwxMzc3LjgsMzIyLjIgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtaW5kb25lc2lhIiBkPSJNMTIyMi4yLDQ3Mi4yIEwxMjYyLjIsNTA1LjYgTDEyNzEuMSw1MzMuMyBMMTMwNi43LDU0NC40IEwxMzI4LjksNTUwLjAgTDEzMjAuMCw1MTYuNyBMMTI4OC45LDQ4OC45IEwxMjU3LjgsNDg4LjkgTDEyMjIuMiw0NzIuMiBaIi8+CiAgICA8cGF0aCBpZD0ibGFuZC1waGlsaXBwaW5lcyIgZD0iTTEzMjguOSw0MDAuMCBMMTM0Mi4yLDQwNS42IEwxMzUxLjEsNDI3LjggTDEzNjAuMCw0NTAuMCBMMTM1NS42LDQ2Ni43IEwxMzM3LjgsNDUwLjAgTDEzMzMuMyw0MjIuMiBMMTMyOC45LDQwMC4wIFoiLz4KICAgIDxwYXRoIGlkPSJsYW5kLWF1c3RyYWxpYSIgZD0iTTEzMDIuMiw2MjIuMiBMMTMwNi43LDY1MC4wIEwxMzE1LjYsNjc3LjggTDEzMzcuOCw2ODguOSBMMTM3My4zLDY3Ny44IEwxNDAwLjAsNjk0LjQgTDE0MjIuMiw3MTEuMSBMMTQ1My4zLDcxMS4xIEwxNDY2LjcsNjk0LjQgTDE0ODAuMCw2NTUuNiBMMTQ4MC4wLDYzOC45IEwxNDU3LjgsNjExLjEgTDE0MzUuNiw1NzIuMiBMMTQwMC4wLDU2Ni43IEwxMzc3LjgsNTY2LjcgTDEzNTUuNiw1NzcuOCBMMTMyNC40LDYwMC4wIEwxMzAyLjIsNjIyLjIgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtbmV3WmVhbGFuZCIgZD0iTTE1NjguOSw2OTQuNCBMMTU4Mi4yLDcxMS4xIEwxNTkxLjEsNzExLjEgTDE1NzMuMyw3MzMuMyBMMTU2MC4wLDc0NC40IEwxNTQyLjIsNzU1LjYgTDE1MzcuOCw3NTAuMCBMMTU1NS42LDczMy4zIEwxNTY0LjQsNzExLjEgTDE1NjguOSw2OTQuNCBaIi8+CiAgICA8cGF0aCBpZD0ibGFuZC1tYWRhZ2FzY2FyIiBkPSJNOTk1LjYsNTY2LjcgTDEwMjIuMiw1ODMuMyBMMTAyMi4yLDYxMS4xIEwxMDA4LjksNjM4LjkgTDEwMDAuMCw2MzguOSBMOTkxLjEsNjE2LjcgTDk5MS4xLDU4OC45IEw5OTUuNiw1NjYuNyBaIi8+CiAgICA8cGF0aCBpZD0ibGFuZC1jdWJhIiBkPSJNNDI2LjcsMzc3LjggTDQ1Ny44LDM4OC45IEw0NzEuMSw0MDAuMCBMNDUzLjMsMzk0LjQgTDQyNi43LDM3Ny44IFoiLz4KICAgIDxwYXRoIGlkPSJsYW5kLWhpc3BhbmlvbGEiIGQ9Ik00NzUuNiwzOTQuNCBMNDkzLjMsMzk0LjQgTDQ5Ny44LDQwMC4wIEw0ODAuMCw0MDAuMCBMNDc1LjYsMzk0LjQgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtc3JpTGFua2EiIGQ9Ik0xMTU1LjYsNDUwLjAgTDExNjQuNCw0NTUuNiBMMTE2MC4wLDQ2Ni43IEwxMTU1LjYsNDYxLjEgTDExNTUuNiw0NTAuMCBaIi8+CiAgPC9nPgoKICA8ZyBpZD0iaGlnaGxpZ2h0cyI+CiAgICA8ZWxsaXBzZSBjeD0iMTI5Ny44IiBjeT0iMzExLjEiIHJ4PSI2Ni43IiByeT0iNjEuMSIgZmlsbD0iI0M5QTQ2QSIgZmlsbC1vcGFjaXR5PSIwLjUiIHN0cm9rZT0iIzZCM0UxRiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgICA8dGV4dCBjbGFzcz0icmVnaW9uIGhhbG8iIHg9IjEyOTcuOCIgeT0iMzk4LjIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMxQTFDMUQiPjx0c3BhbiB4PSIxMjk3LjgiIGR5PSIwIj5FQVNUIEFTSUE8L3RzcGFuPjwvdGV4dD4KICAgIDxlbGxpcHNlIGN4PSIxMTQ2LjciIGN5PSIzNzcuOCIgcng9IjUzLjMiIHJ5PSI1NS42IiBmaWxsPSIjQzA4NTUyIiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSIjOEM1QTJCIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDx0ZXh0IGNsYXNzPSJyZWdpb24gaGFsbyIgeD0iMTE0Ni43IiB5PSI0NTkuMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzFBMUMxRCI+PHRzcGFuIHg9IjExNDYuNyIgZHk9IjAiPlNPVVRIICZhbXA7IFNFIEFTSUE8L3RzcGFuPjwvdGV4dD4KICAgIDxlbGxpcHNlIGN4PSIxMDAwLjAiIGN5PSIzMjcuOCIgcng9Ijc1LjYiIHJ5PSI1MC4wIiBmaWxsPSIjRDJCNDhDIiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSIjOEU3QTU1IiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDx0ZXh0IGNsYXNzPSJyZWdpb24gaGFsbyIgeD0iMTAwMC4wIiB5PSI0MDMuOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzFBMUMxRCI+PHRzcGFuIHg9IjEwMDAuMCIgZHk9IjAiPlNPVVRIV0VTVCBBU0lBPC90c3Bhbj48L3RleHQ+CiAgICA8ZWxsaXBzZSBjeD0iNzgyLjIiIGN5PSI0MzMuMyIgcng9IjY2LjciIHJ5PSIzOC45IiBmaWxsPSIjQjZDMkEyIiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSIjNUU2QjRDIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDx0ZXh0IGNsYXNzPSJyZWdpb24gaGFsbyIgeD0iNzgyLjIiIHk9IjQ5OC4yIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMUExQzFEIj48dHNwYW4geD0iNzgyLjIiIGR5PSIwIj5BRlJJQ0E8L3RzcGFuPjwvdGV4dD4KICAgIDxlbGxpcHNlIGN4PSI4NzEuMSIgY3k9IjIyMi4yIiByeD0iMTE1LjYiIHJ5PSI2MS4xIiBmaWxsPSIjOUZCMEFFIiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSIjNEU2MjYwIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDx0ZXh0IGNsYXNzPSJyZWdpb24gaGFsbyIgeD0iODcxLjEiIHk9IjMwOS4zIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMUExQzFEIj48dHNwYW4geD0iODcxLjEiIGR5PSIwIj5FVVJPUEU8L3RzcGFuPjwvdGV4dD4KICAgIDxlbGxpcHNlIGN4PSI0ODAuMCIgY3k9IjU3Ny44IiByeD0iMjYuNyIgcnk9IjEwMC4wIiBmaWxsPSIjQjQ5QUE4IiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSIjNkI0QTVBIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDx0ZXh0IGNsYXNzPSJyZWdpb24gaGFsbyIgeD0iNDgwLjAiIHk9IjY3OS44IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMUExQzFEIj48dHNwYW4geD0iNDgwLjAiIGR5PSIwIj5BTUVSSUNBUzwvdHNwYW4+PC90ZXh0PgogIDwvZz4KICA8ZyBpZD0iZmxvd3MiPgogICAgCiAgPC9nPgogIDxnIGlkPSJwbGFjZXMiPgogICAgCiAgPC9nPgoKICA8ZyBpZD0idGl0bGViYW5kIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjExOCIgZmlsbD0idXJsKCNwYXBlcikiIG9wYWNpdHk9Ii45MyIvPgogICAgPHJlY3QgeD0iMCIgeT0iMTE4IiB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI1IiBmaWxsPSIjQzlBNDZBIi8+CiAgICA8dGV4dCBjbGFzcz0idGl0bGUiIHg9IjQ2IiB5PSI2MiI+VGhlIEhpc3RvcmlhbiZhcG9zO3MgV29ybGQgYXQgYy4gMTIwMDwvdGV4dD4KICAgIDx0ZXh0IGNsYXNzPSJzdWJ0aXRsZSIgeD0iNDgiIHk9Ijk3Ij5Gb3VuZGF0aW9ucyAwIMK3IFRoZSBzaXggQVAgV29ybGQgcmVnaW9uczwvdGV4dD4KICA8L2c+CgogIDxnIGlkPSJsZWdlbmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ2LDY4OCkiPgogICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjY0MCIgaGVpZ2h0PSIyNDQiIHJ4PSIxNCIgZmlsbD0idXJsKCNwYXBlcikiIHN0cm9rZT0iIzNFNDQ0NyIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuOTciLz4KICAgIDx0ZXh0IGNsYXNzPSJzbWFsbCIgeD0iMTgiIHk9IjI4IiBmb250LXdlaWdodD0iNzAwIj5NYXAgS2V5PC90ZXh0PgogICAgICA8cmVjdCB4PSIxOCIgeT0iMzgiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMyIgcng9IjQiIGZpbGw9IiNDOUE0NkEiIGZpbGwtb3BhY2l0eT0iLjYiIHN0cm9rZT0iIzZCM0UxRiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI3NCIgeT0iNTYiPkVBU1QgQVNJQTwvdGV4dD4KICAgICAgPHJlY3QgeD0iMTgiIHk9IjcxIiB3aWR0aD0iNDAiIGhlaWdodD0iMjMiIHJ4PSI0IiBmaWxsPSIjQzA4NTUyIiBmaWxsLW9wYWNpdHk9Ii42IiBzdHJva2U9IiM4QzVBMkIiIHN0cm9rZS13aWR0aD0iMyIvPjx0ZXh0IGNsYXNzPSJzbWFsbCIgeD0iNzQiIHk9Ijg5Ij5TT1VUSCAmYW1wOyBTRSBBU0lBPC90ZXh0PgogICAgICA8cmVjdCB4PSIxOCIgeT0iMTA0IiB3aWR0aD0iNDAiIGhlaWdodD0iMjMiIHJ4PSI0IiBmaWxsPSIjRDJCNDhDIiBmaWxsLW9wYWNpdHk9Ii42IiBzdHJva2U9IiM4RTdBNTUiIHN0cm9rZS13aWR0aD0iMyIvPjx0ZXh0IGNsYXNzPSJzbWFsbCIgeD0iNzQiIHk9IjEyMiI+U09VVEhXRVNUIEFTSUE8L3RleHQ+CiAgICAgIDxyZWN0IHg9IjE4IiB5PSIxMzciIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMyIgcng9IjQiIGZpbGw9IiNCNkMyQTIiIGZpbGwtb3BhY2l0eT0iLjYiIHN0cm9rZT0iIzVFNkI0QyIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI3NCIgeT0iMTU1Ij5BRlJJQ0E8L3RleHQ+CiAgICAgIDxyZWN0IHg9IjE4IiB5PSIxNzAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMyIgcng9IjQiIGZpbGw9IiM5RkIwQUUiIGZpbGwtb3BhY2l0eT0iLjYiIHN0cm9rZT0iIzRFNjI2MCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI3NCIgeT0iMTg4Ij5FVVJPUEU8L3RleHQ+CiAgICAgIDxyZWN0IHg9IjE4IiB5PSIyMDMiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMyIgcng9IjQiIGZpbGw9IiNCNDlBQTgiIGZpbGwtb3BhY2l0eT0iLjYiIHN0cm9rZT0iIzZCNEE1QSIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI3NCIgeT0iMjIxIj5BTUVSSUNBUzwvdGV4dD4KICA8L2c+CgogIDxyZWN0IHg9IjAiIHk9Ijk0OCIgd2lkdGg9IjE2MDAiIGhlaWdodD0iNTIiIGZpbGw9InVybCgjcGFwZXIpIiBvcGFjaXR5PSIuOTMiLz4KICA8dGV4dCBjbGFzcz0idGlueSIgeD0iNDYiIHk9Ijk4MCI+QmVIaXN0b3JpY2FsIGluc3RydWN0aW9uYWwgbWFwLiBUaGUgQVAgV29ybGQgcmVnaW9ucyBhcmUgYW5hbHl0aWMgY2F0ZWdvcmllcywgbm90IGZpeGVkIGJvcmRlcnM7IGNvYXN0bGluZXMgYXJlIHNpbXBsaWZpZWQgZm9yIGNsYXNzcm9vbSBwcm9qZWN0aW9uLjwvdGV4dD4KPC9zdmc+Cg==" alt="The Historian's Map: The World at c.1200"><figcaption><strong>The Historian's Map: The World at c.1200</strong> AP World History begins at c.1200. This is the world you are about to learn to read, not memorize. Every unit this year will pull you back to this map, then push it forward.</figcaption></figure><article class="p-card"><h3>Map Questions</h3><ul class=""><li>Which region on this map do you already know something about, and how did you learn it?</li><li>Which region do you know nothing about, and what does that gap tell you about the version of world history you've been taught before?</li><li>If you had to guess in one sentence, where in the world was the most powerful economy in 1200?</li><li>Why do you think AP World starts at 1200, and not at Ancient Rome, or the American Revolution, or 1500?</li></ul></article><article class="p-card"><h3>Map Key</h3><dl class="p-key"><div><dt>East Asia</dt><dd>Song China, the most sophisticated economy on Earth in 1200. You will start Unit 1 here.</dd></div><div><dt>Dar al-Islam</dt><dd>The Islamic world stretches from West Africa to South Asia, the trade and knowledge hub of the medieval world.</dd></div><div><dt>South &amp; Southeast Asia</dt><dd>Indian Ocean crossroads. Hindu, Buddhist, and Muslim kingdoms trade monsoon-driven routes between China and Africa.</dd></div><div><dt>The Americas</dt><dd>Aztec, Inca, and Mississippian societies build states without contact with Afro-Eurasia, a parallel story that will collide with it after 1492.</dd></div><div><dt>Africa</dt><dd>Mali, Great Zimbabwe, Ethiopia. Gold, salt, and Islam move along trans-Saharan and Indian Ocean routes.</dd></div><div><dt>Europe</dt><dd>The quietest corner in 1200, but the one that will reshape global connections after 1450. Watch how AP World frames Europe: not as the center, but as one region among many.</dd></div></dl></article><div class="p-prompt">
+  <p class="p-prompt-label">Your Response</p>
+  <p class="p-prompt-text">Choose one region on the map. Write one sentence about what you already think you know, and one sentence about what you are curious to learn about it this year.</p>
+  <div class="p-lines"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Module 02</span><h2>First &amp; 10 Reading</h2></div>
+  <div class="p-reading"><div class="reading-title-band">
+    <p class="reading-eyebrow">First &amp; 10 Reading</p>
+    <h1 class="reading-title">The Historian You Are About to <em>Become</em></h1>
+    <p class="reading-deck">Every year on Day 1, you walk into a room and become someone. This year you become a historian, someone who reads the world through six specific habits of mind, and leaves behind a year of thinking that belongs to you.</p>
+    <div class="skill-tags"><span class="skill-tag">Contextualization</span> <span class="skill-tag">Argumentation</span> <span class="skill-tag">Sourcing</span></div>
+  </div>
+
+  <div class="reading-body">
+    <div class="support-strip">
+      <div class="support-card">
+        <h3>Before You Read</h3>
+        <p>Read this like a manifesto, not a syllabus. It is a description of who you are being asked to become this year, a historian, with six specific habits of mind, and what you are building along the way. Notice what changes about the way this class asks you to think.</p>
+      </div>
+      <div class="support-card">
+        <h3>Reading Target</h3>
+        <p>By the end, you should be able to name the six AP historical thinking skills, describe the 10-module rhythm of a BeHistorical class, and explain what your Historian&rsquo;s Portfolio is and who controls it.</p>
+      </div>
+    </div>
+    <div class="vocab-strip">
+      <h3>Vocabulary to Watch</h3>
+      <span class="term-chip">Historian</span> <span class="term-chip">Contextualization</span> <span class="term-chip">Comparison</span> <span class="term-chip">Causation</span> <span class="term-chip">Continuity &amp; Change</span> <span class="term-chip">Argumentation</span> <span class="term-chip">Sourcing</span> <span class="term-chip">First &amp; 10</span> <span class="term-chip">BeSurreal</span> <span class="term-chip">BeInTheRoom</span> <span class="term-chip">Checkpoint</span> <span class="term-chip">Portfolio</span>
+    </div>
+
+    <div class="section">
+      <span class="section-number">1</span>
+      <p class="section-label">Frame</p>
+      <h2 class="section-heading">You Are Not Here to Memorize</h2>
+      <p class="reading-text">Every year on Day 1, you walk into a room and become someone. This year, in this room, you become a <span class="kt">historian</span>. Not in the sense that you memorize kings and dates, that is not what historians do. A historian is someone who reads the past the way a detective reads a crime scene: closely, skeptically, evidence in hand, ready to make an argument and defend it.</p>
+      <p class="reading-text">You will still learn a lot of history in this class. But the history is the material you practice on, not the point of the class. The point is who you become while practicing on it. AP World History does not test your ability to recall dates in May. It tests your ability to think like a historian. That is a very specific set of habits, and this course exists to build them into you.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking:Argumentation</p>
+        <p>The AP exam does not reward memorization. It rewards the ability to make an <strong>argument</strong> about the past, a claim in your voice, supported by evidence, that another intelligent person could reasonably disagree with. Every module in this course is a rep for that skill.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">2</span>
+      <p class="section-label">The Six Habits</p>
+      <h2 class="section-heading">The Six AP Historical Thinking Skills</h2>
+      <p class="reading-text">AP World History is built around six specific habits of mind, the six things historians actually do when they think. Learn them by name, because you will see them in every module of every lesson this year.</p>
+      <p class="reading-text"><span class="kt">Contextualization</span> is placing something inside the world that surrounded it, <em>before</em> you try to explain it. Set the stage first. <span class="kt">Comparison</span> is reading two things side by side to see what is the same, what is different, and, the AP kicker,<em>why the difference matters</em>. Never just list similarities.</p>
+      <p class="reading-text"><span class="kt">Causation</span> is following the chain of cause and effect, and being able to show how you know. Historians distinguish between triggers (the spark) and underlying causes (the fuel). Both matter. Neither alone explains. <span class="kt">Continuity and change over time</span> is watching what stayed the same and what changed as history moved forward, and refusing the easy story that everything changed or nothing did. Both are almost always wrong.</p>
+      <p class="reading-text"><span class="kt">Argumentation</span> is making a claim about the past in your own voice and backing it with specific evidence. A thesis is a position, not a summary. If someone cannot disagree with your thesis, it is not one. And <span class="kt">sourcing</span> is reading a document the way a lawyer reads a witness, who made it, when, why, for whom, and letting that shape how you weigh what it says.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking:Contextualization</p>
+        <p>These six skills are the whole game. Every unit, every lesson, every module in BeHistorical is a rep for one of these six habits. You will do them so many times that by May they become <strong>the way you think</strong>, not just tasks you finish. That is what &ldquo;becoming a historian&rdquo; means. It is not a metaphor.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">3</span>
+      <p class="section-label">The Rhythm</p>
+      <h2 class="section-heading">The Ten Modules of Every Class Period</h2>
+      <p class="reading-text">The rhythm of every class period is the same 10-module pattern, and it is deliberate. <span class="kt">Map</span> builds geographic context. <span class="kt">First &amp; 10</span> is the day&rsquo;s narrative reading, the historian&rsquo;s warm-up, which is what you are doing right now. <span class="kt">Content Delivery</span> is direct instruction. <span class="kt">BeSurreal</span> is a memorable everyday-life detail from the historical moment, the sensory anchor that makes the concept stick.</p>
+      <p class="reading-text">Then the practice work. <span class="kt">Skill Builder</span> practices one AP skill on today&rsquo;s content. <span class="kt">Checkpoint 1</span> captures your thinking early. <span class="kt">Evidence Lab</span> treats visuals as evidence, not decoration. <span class="kt">Primary Source</span> (or the <span class="kt">Socrates AI Coach</span> in Foundations) trains the sourcing skill. <span class="kt">BeInTheRoom</span> puts you inside the moment as a decision-maker, a general, an emperor, a merchant, a scholar, and asks what you would do and why. And <span class="kt">Checkpoint 2</span> is a synthesis, pulling threads across the modules into a single argument.</p>
+      <p class="reading-text">The modules repeat because the skills repeat. You are building muscle memory. The room does not change every class. The work you do inside it does.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking:Continuity &amp; Change Over Time</p>
+        <p>The 10-module pattern is the <strong>continuity</strong> across the year. What changes is <em>your ability to move through it</em>. By January, the checkpoints get faster and sharper. By April, the BeInTheRoom decisions sound like they were made by someone who lives inside the moment. That change is the record of who you became.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">4</span>
+      <p class="section-label">The Promise</p>
+      <h2 class="section-heading">What You Are Building: Your Historian&rsquo;s Portfolio</h2>
+      <p class="reading-text">Here is what makes BeHistorical different from most classes: everything you write this year <em>accumulates</em>. Every First &amp; 10 response. Every checkpoint. Every BeInTheRoom decision. Every DBQ draft. Your writing is the raw material for what comes next.</p>
+      <p class="reading-text">In May, after the AP exam, you receive your <span class="kt">Historian&rsquo;s Portfolio</span>: a one-page letter about the historian you became, drawn from your own writing at three moments across the year, September, January, April. The letter will name what you got specifically better at. It will flag one growth edge to keep working on. And it will quote actual sentences you wrote at different points in the year, so the story is grounded in evidence you can see with your own eyes.</p>
+      <p class="reading-text">The portfolio is yours. You see the draft before it is final. You can edit it. You choose who sees it, you, your family, your next AP teacher if you want, your college applications in senior year. It contains only your thinking. Never behavior notes, never personality labels, never anything you did not write. If it is not in your words on the page, it is not in the letter.</p>
+      <p class="reading-text">This is the receipt for what happened to your mind this year. It is not a grade. It is a portable, permanent artifact of who you became, and it starts today, with whatever you write in Checkpoint 2 of this lesson.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking:Sourcing</p>
+        <p>You are being asked, on Day 1, to become the source of the most important document about this year of your life. <strong>Write like someone will read it in May.</strong> Because someone will. You.</p>
+      </div>
+    </div>
+
+    <div class="be-ready">
+      <h3>BeReady: 10-Second Takeaway</h3>
+      <p>You are not here to memorize. You are here to become a historian, someone who does six specific habits of mind, in a room that runs on a 10-module rhythm, and to leave a year of thinking behind that you own, in a portfolio drawn from your own words. The record starts today.</p>
+    </div>
+
+    <div class="family-strip">
+      <p class="family-eyebrow">For Families</p>
+      <h3>A Note to Parents &amp; Guardians</h3>
+      <p>Welcome to BeHistorical. This year your student is not just enrolled in AP World History, they are being asked to become a historian. That means practicing six specific habits of mind (contextualization, comparison, causation, continuity and change over time, argumentation, and sourcing) across every unit of the course, and producing a body of writing along the way that captures how they think.</p>
+      <p>In May, after the AP exam, your student will receive a <strong>Historian&rsquo;s Portfolio</strong>, a one-page letter about the historian they became this year, drawn from their own writing at three moments across the year. You will receive a family copy. Here is what you should know about how it works:</p>
+      <ul>
+        <li><strong>Nothing without evidence.</strong> Every claim in the portfolio quotes something your student actually wrote. If it is not in their words, it is not in the letter.</li>
+        <li><strong>Academic voice only.</strong> The portfolio contains only your student&rsquo;s historical thinking, never behavior notes, never discipline history, never personality labels.</li>
+        <li><strong>Your student reviews the draft.</strong> They see it before it is final. They can edit or remove anything. Their voice is their own.</li>
+        <li><strong>Consent-based sharing.</strong> The portfolio does not go anywhere without your student&rsquo;s permission. Next-year teacher, college application, personal archive, your student decides.</li>
+      </ul>
+      <p>Ask your student about their portfolio through the year. Ask what they wrote in September. Ask what they would write about the same topic now. That is how you will hear this course working.</p>
+    </div>
+  </div>
+
+  <div class="check-section">
+    <div class="check-header">
+      <span class="check-badge">Check</span>
+      <span class="check-title">Three Questions to Anchor Day 1</span>
+    </div>
+    <ul class="question-list">
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">01</span>
+          <span class="q-skill">Contextualization</span>
+          <p class="q-text">In your own words, define one of the six AP historical thinking skills and give a specific example, from anywhere in your life, not from history, of a time you already used it without calling it that.</p>
+        </div>
+        <div class="p-lines"><span></span><span></span><span></span><span></span><span></span></div>
+      </li>
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">02</span>
+          <span class="q-skill">Argumentation</span>
+          <p class="q-text">Take a position: which of the six historical thinking skills do you predict will be hardest for you this year, and why? Be honest and be specific, the answer is a baseline, not a grade.</p>
+        </div>
+        <div class="p-lines"><span></span><span></span><span></span><span></span><span></span></div>
+      </li>
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">03</span>
+          <span class="q-skill">Sourcing</span>
+          <p class="q-text">Your Historian&rsquo;s Portfolio in May will be sourced from your own words this year, the way historians build claims from documents. Write one sentence you would like your portfolio to be able to say honestly about you, and identify one thing you will have to write this year for that sentence to be sourceable from the record.</p>
+        </div>
+        <div class="p-lines"><span></span><span></span><span></span><span></span><span></span></div>
+      </li>
+    </ul>
+  </div></div><div class="p-prompt">
+  <p class="p-prompt-label">Your Response</p>
+  <p class="p-prompt-text">Write a one-paragraph baseline: who are you as a historical thinker on Day 1, and who do you want to be by May? Be specific. This becomes the first line of your portfolio.</p>
+  <div class="p-lines"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Module 03</span><h2>Content Delivery</h2></div>
+  <p class="p-lead">Direct instruction. Work through the cards in order, they build on each other.</p><article class="p-lecture">
+  <h3><span>Card 1</span> Welcome to BeHistorical: You Are Not Here to Memorize</h3>
+  <ul><li>AP World History is <strong>not a memorization course</strong>. You will not be tested in May on your ability to recall dates. You will be tested on your ability to <strong>think like a historian</strong>, to contextualize, compare, argue, and reason from evidence.</li><li>This is a course about <strong>becoming a person</strong>, a historian, not about consuming content. Everything you do in this room is a rep for that person.</li><li>BeHistorical is built around <strong>six habits of mind</strong> that repeat every unit, every lesson, every module. By May, these habits are how you think. Not tasks you finish.</li><li>You will still learn a lot of history. But the history is the <strong>material you practice on</strong>, not the point of the class. The point is who you become.</li></ul>
+  <figure class="p-lecture-fig p-noimg"><figcaption><span class="p-imglabel">Image</span> <strong>Prehistoric Cave Paintings, Lascaux</strong> Long before writing, humans recorded their world on cave walls. History begins not with memorized dates but with people making meaning from what they saw, the same habit of mind you are about to build.<br><span class="p-url">https://commons.wikimedia.org/wiki/Special:FilePath/Lascaux_painting.jpg</span></figcaption></figure>
+</article><article class="p-lecture">
+  <h3><span>Card 2</span> The Six AP Historical Thinking Skills</h3>
+  <ul><li><strong>Contextualization.</strong> Place a person, event, or idea inside the world that surrounded it *before* explaining it. "Set the stage first." Geography, prior events, and simultaneous forces all count as context.</li><li><strong>Comparison.</strong> Read two things side by side. What is the same? What is different? And, the AP kicker,*why does the difference matter?* Never just list similarities.</li><li><strong>Causation.</strong> Follow the chain of cause and effect. Historians distinguish between <strong>triggers</strong> (the spark) and <strong>underlying causes</strong> (the fuel). Both matter. Neither alone explains.</li><li><strong>Continuity & change over time.</strong> Watch what stayed the same and what changed as history moved. Reject the easy story that "everything changed" or "nothing changed." Both are almost always wrong.</li><li><strong>Argumentation.</strong> Make a claim about the past *in your voice* and back it with specific evidence. A thesis is a <strong>position</strong>, not a summary. If someone can't disagree with your thesis, it isn't one.</li><li><strong>Sourcing.</strong> Read a document like a lawyer reads a witness: who made it, when, why, for whom, and what that tells you about what it says. The <strong>source of a claim</strong> matters as much as the claim itself.</li></ul>
+  <figure class="p-lecture-fig p-noimg"><figcaption><span class="p-imglabel">Image</span> <strong>Confucius, Tang Dynasty depiction</strong> The six skills are habits of mind, practiced in writing every week until they become automatic.<br><span class="p-url">https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg</span></figcaption></figure>
+</article><article class="p-lecture">
+  <h3><span>Card 3</span> The Rhythm of Every Class Period: The 10 Modules</h3>
+  <ul><li>Every lesson in BeHistorical uses the <strong>same 10 modules</strong>, in the same order, on purpose. The rhythm is the pedagogy: repetition trains the skills into you.</li><li><strong>01 Map</strong> builds geographic context. <strong>02 First & 10</strong> is the day's narrative reading, the historian's warm-up. <strong>03 Content Delivery</strong> is direct instruction on the lecture cards.</li><li><strong>04 BeSurreal</strong> is a memorable everyday-life detail from the historical moment, the sensory anchor that makes the concept stick. <strong>05 Skill Builder</strong> practices one AP skill on today's content. <strong>06 Checkpoint 1</strong> captures your thinking early.</li><li><strong>07 Evidence Lab</strong> treats visuals as evidence, not decoration. <strong>08 Primary Source</strong> (or AI Coach in Foundations) trains sourcing. <strong>09 BeInTheRoom</strong> puts you in the moment as a decision-maker.</li><li><strong>10 Checkpoint 2</strong> is a synthesis, pulling threads across the modules into a single argument. This is the reflex the AP exam rewards.</li></ul>
+  <figure class="p-lecture-fig p-noimg"><figcaption><span class="p-imglabel">Image</span> <strong>A Library in the Golden Islamic Age</strong> The 10-module rhythm is the room you enter every class period. The furniture doesn't change, the work you do inside it does.<br><span class="p-url">https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg</span></figcaption></figure>
+</article><article class="p-lecture">
+  <h3><span>Card 4</span> What You Are Building: Your Historian's Portfolio</h3>
+  <ul><li>Everything you write this year, every First & 10 response, every checkpoint, every BeInTheRoom decision, every DBQ draft, is preserved. Your writing is the raw material for what comes next.</li><li>In <strong>May, after the AP exam,</strong> you receive your <strong>Historian's Portfolio</strong>: a one-page letter about the historian you became, drawn from your own writing at three moments across the year, September, January, April.</li><li>The letter names <strong>what you got specifically better at,</strong> flags <strong>one growth edge</strong> to keep working on, and includes <strong>excerpts from your own writing</strong> so the story is grounded in evidence.</li><li>The portfolio is <strong>yours.</strong> You see the draft before it is final. You can edit it. <strong>You choose</strong> who sees it, you, your family, your next AP teacher, your college applications in senior year.</li><li>This is the receipt for what happened to your mind this year. It is not a grade. It is a portable, permanent artifact of who you became.</li></ul>
+  <figure class="p-lecture-fig p-noimg"><figcaption><span class="p-imglabel">Image</span> <strong>The Great Isaiah Scroll, Dead Sea Scrolls</strong> Ancient scrolls preserved a community's words across millennia, a body of writing kept as a single document. Your portfolio is a version of the same idea, your own writing curated into a letter you own.<br><span class="p-url">https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Isaiah_Scroll_MS_A_(1QIsa)_-_Google_Art_Project.jpg</span></figcaption></figure>
+</article><article class="p-lecture">
+  <h3><span>Card 5</span> The Compact: Student, Family, Teacher</h3>
+  <ul><li><strong>To the student:</strong> Take the checkpoints seriously. They are not busywork. They are the raw material of your portfolio. Write in your voice. Write like a historian, not like a kid finishing a worksheet.</li><li><strong>To the family:</strong> Your student is producing a <strong>portable body of work.</strong> In May you will receive a family copy of the portfolio. It is grounded in your student's own writing, and it captures growth, not just performance.</li><li><strong>On trust and consent:</strong> The portfolio contains only <strong>your student's thinking</strong>, never behavior notes, discipline history, or personality labels. Only academic voice. Your student reviews and edits before it is finalized. Nothing goes to a next teacher without your student's permission.</li><li><strong>Nothing gets in without evidence.</strong> Every claim in the portfolio quotes something your student actually wrote. If it is not on the page in their voice, it is not in the letter.</li><li><strong>On sharing:</strong> Your student decides where the portfolio goes. It is a piece of writing about them, owned by them, forwarded only with their consent. That principle is non-negotiable.</li></ul>
+  <figure class="p-lecture-fig p-noimg"><figcaption><span class="p-imglabel">Image</span> <strong>Song Dynasty Palace Examinations</strong> The Song civil-service exam was a compact between a state and its citizens about what counted as a serious mind. The BeHistorical compact is smaller and more honest, but it is a compact, and it starts today.<br><span class="p-url">https://commons.wikimedia.org/wiki/Special:FilePath/Palastexamen-SongDynastie.jpg</span></figcaption></figure>
+</article>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Module 04</span><h2>BeSurreal</h2></div>
+  <p class="p-lead">A vignette of the moment you meet the historian you spent the year becoming.</p><article class="p-callout"><h3>It's Late May. You Open a Letter About Yourself.</h3><p>The AP exam was three weeks ago. School is almost over. Your teacher hands you a printed one-page letter with your name at the top and the BeHistorical mark at the bottom.</p><blockquote>You start reading. The letter is not a grade. It is a description of you, as a historian, written from your own words. Three checkpoint responses from September, when you barely knew what contextualization meant. Three from January, when you were writing DBQ introductions in your sleep. Three from April, when you had a voice, an actual historical voice, dry and skeptical and comfortable making claims. The letter names the specific move you got best at. It flags one thing to keep working on. It quotes a sentence you wrote in October that you had completely forgotten writing, and reading it now makes you smile because it sounds like you but younger. You send a copy to your U.S. History teacher for next year. You keep one for yourself. Your parents get one too. It is not a report card. It is a receipt for what happened to your mind this year.</blockquote></article><div class="p-prompt">
+  <p class="p-prompt-label">Your Response</p>
+  <p class="p-prompt-text">One sentence: what do you want that letter, the one that will be written from your own writing in May, to say about you?</p>
+  <div class="p-lines"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Module 05</span><h2>AP Skill Builder: Meet the Six Skills</h2></div>
+  <p class="p-lead">You are not expected to be good at any of these yet. The point is to hear each skill's question in your head so you can recognize it later. For each of the six, jot one sentence. Speed over polish, this is a warm-up.</p><article class="p-card"><h3>Steps</h3><ol><li>CONTEXTUALIZATION. In one sentence, describe the wider world of 2026 that a historian in 2100 would need to know to understand your school.</li><li>COMPARISON. In one sentence, name one similarity and one difference between how you learn today and how a student learned 100 years ago.</li><li>CAUSATION. In one sentence, explain one thing that caused your school to look the way it does, and how you know.</li><li>CONTINUITY & CHANGE OVER TIME. In one sentence, name one thing about American teenagers that has stayed the same for 50 years, and one thing that has changed.</li><li>ARGUMENTATION. In one sentence, take a position on this claim: "Social media has made students worse at reading." Use one piece of evidence.</li><li>SOURCING. In one sentence, describe how you would decide whether a TikTok video about historical events is a trustworthy source.</li></ol></article><div class="p-prompt">
+  <p class="p-prompt-label">Your Response</p>
+  <p class="p-prompt-text">Pick the one of the six warm-ups above that felt hardest to write. In two sentences, explain why, and what you think the skill is really asking you to do.</p>
+  <div class="p-lines"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Module 06</span><h2>Checkpoint 1</h2></div>
+  <article class="p-callout"><h3>Baseline Checkpoint: Your Historian's Pledge</h3><p>Write your Historian's Pledge, one paragraph, in your own voice, that captures who you are as a historical thinker on Day 1 and who you are trying to become by May. This becomes the opening entry in your portfolio.</p></article><article class="p-card"><h3>Strong Response Checklist</h3><ul class="p-checklist"><li>I described where I am today as a thinker, honestly, without overclaiming or underselling.</li><li>I named at least one of the six AP skills I want to get stronger at this year, and why.</li><li>I said something specific about the kind of historical voice I want to have by May.</li><li>It sounds like me. If someone read it out loud, my classmates could tell it was mine.</li></ul></article><div class="p-prompt">
+  <p class="p-prompt-label">Your Response</p>
+  <p class="p-prompt-text">Answer the prompt stated directly above.</p>
+  <div class="p-lines"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Module 07</span><h2>Evidence Lab</h2></div>
+  <p class="p-lead">Every module you complete this year produces a piece of evidence about how you think. Look at these three examples, an early checkpoint response, a middle-of-year BeInTheRoom decision, and a late-year DBQ opening, and notice how one student's historical voice develops over nine months. That is what the portfolio captures.</p><figure class="p-figure p-noimg"><figcaption><span class="p-imglabel">Image</span> <strong>Artifact 1 (September): An Early Checkpoint Response</strong> Sample: &quot;Song China had a lot of trade because they had a big navy and good boats. Also they invented paper money.&quot; A first-week response. Correct, but flat. The student names two facts. They have not yet learned to place Song China in context or connect those facts to causation. This is where every historian starts.<br><em>What is this response missing that a stronger version of you, in April, would add?</em><br><span class="p-url">https://commons.wikimedia.org/wiki/Special:FilePath/Song_Imperial_Examination.JPG</span></figcaption></figure><figure class="p-figure p-noimg"><figcaption><span class="p-imglabel">Image</span> <strong>Artifact 2 (January): A BeInTheRoom Decision</strong> Sample: &quot;As Mansa Musa's advisor, I would spend the gold more slowly on the hajj to Mecca, because sudden inflows of West African gold into Egyptian markets crashed local prices, damaging Mali's reputation as a trade partner. Long-term influence matters more than one dramatic gesture.&quot;, A mid-year BeInTheRoom response. The student is making a decision as a historical actor, weighing evidence, and using causation naturally.<br><em>What has this student learned to do by January that they were not doing in September?</em><br><span class="p-url">https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg</span></figcaption></figure><figure class="p-figure p-noimg"><figcaption><span class="p-imglabel">Image</span> <strong>Artifact 3 (April): A DBQ Opening</strong> Sample: &quot;Industrialization did not liberate workers so much as it re-legitimized coercion. From Manchester's cotton mills to Belgian rubber camps in the Congo, the surplus that industrial capitalism produced depended on forms of unfree labor that its own political rhetoric claimed to have abolished, a contradiction that shaped both nineteenth-century imperialism and the labor movements that resisted it.&quot;, A late-year DBQ thesis. The student has a voice, a position, and a plan.<br><em>What is different about this student's writing that is not just about learning more content?</em><br><span class="p-url">https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri,_folio_86r_(detail).jpg</span></figcaption></figure><div class="p-prompt">
+  <p class="p-prompt-label">Your Response</p>
+  <p class="p-prompt-text">Choose one of the three artifacts below. In 2–3 sentences, describe the skill the student is practicing and one specific thing you would like your own version of this artifact to do by the end of the year.</p>
+  <div class="p-lines"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Module 08</span><h2>Socrates AI Coach</h2></div>
+  <p class="p-lead">Before you can watch yourself grow as a historical thinker, you need to know where you are today. These prompts help you take an honest self-portrait. There are no wrong answers on Day 1. The point is a real baseline.</p><article class="p-card"><h3>Socrates Coach: Meet Yourself as a Historian</h3><ol><li>When you read something about the past, a textbook, a documentary, a museum sign, what do you usually notice first? What do you usually skip?</li><li>Which of the six AP skills do you already do naturally without calling it a skill (contextualization, comparison, causation, continuity/change, argumentation, sourcing)? Which one sounds hardest?</li><li>When you write about history, do you tend to summarize what happened, or do you tend to argue about what it meant? Which one feels safer, and why?</li><li>If your April AP teacher were reading a letter about you as a historian right now, based only on your work today, what would it honestly say?</li></ol></article><div class="p-prompt">
+  <p class="p-prompt-label">Your Response</p>
+  <p class="p-prompt-text">Choose one prompt. Write a paragraph that captures where you are as a historical thinker on Day 1. This becomes part of your baseline for the year.</p>
+  <div class="p-lines"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Module 09</span><h2>BeInTheRoom</h2></div>
+  <p class="p-lead">An immersive experience for this topic is coming soon. Your teacher will run this module in class when it is ready.</p>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Module 10</span><h2>Checkpoint 2</h2></div>
+  <p class="p-lead">Use evidence from at least two modules above. Connect what you studied today to the bigger picture of AP World History.</p><article class="p-callout"><h3>Synthesis Checkpoint</h3><p>What is one specific thing you want your Historian's Portfolio to say about you in May, and what will you have to do this year to earn it?</p></article><div class="p-prompt">
+  <p class="p-prompt-label">Your Response</p>
+  <p class="p-prompt-text">Answer the prompt stated directly above.</p>
+  <div class="p-lines"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Extra</span><h2>Video Clips</h2></div>
+  <ul class="p-card"><li><strong>Crash Course World History: What Is History?</strong><br>Watch for: what does John Green say historians actually do, and how is it different from what you thought &quot;learning history&quot; meant?<br><span class="p-url">https://www.youtube.com/watch?v=Yocja_N5s1I</span></li><li><strong>Heimler's History on AP World: The Big Picture</strong><br>Watch for: how does Heimler frame the AP historical thinking skills, and which one sounds most like a habit you already have?<br><span class="p-url">https://www.youtube.com/watch?v=QO7NHZJ-eE4</span></li></ul>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Reference</span><h2>Key Terms</h2></div>
+  <table class="p-table"><thead><tr><th>Term</th><th>What It Means</th></tr></thead><tbody><tr><td><strong>Historian</strong></td><td>A person who reads the past like a detective, closely, skeptically, evidence in hand, and makes arguments they can defend.</td></tr><tr><td><strong>Contextualization</strong></td><td>Placing a person, event, or idea inside the wider world that surrounded it before trying to explain it. The AP way of saying &quot;set the stage first.&quot;</td></tr><tr><td><strong>Causation</strong></td><td>Explaining what caused what, and being able to show how you know. Historians follow chains, not just list events.</td></tr><tr><td><strong>Argumentation</strong></td><td>Making a claim about the past in your own voice and backing it with specific evidence. Not a summary. A position.</td></tr><tr><td><strong>Sourcing</strong></td><td>Reading a document like a lawyer reads a witness: who made it, when, why, and what that tells you about what it says.</td></tr><tr><td><strong>Portfolio</strong></td><td>The one-page Historian's Letter you will receive in May, drawn from your own writing across the year. Yours. Editable. You choose who sees it.</td></tr></tbody></table>
+</section>
+
+<section class="p-module">
+  <div class="p-module-head"><span class="p-badge">Reference</span><h2>Timeline</h2></div>
+  <table class="p-table"><thead><tr><th>When</th><th>What Happened</th></tr></thead><tbody><tr><td><strong>Week 1 (August)</strong></td><td>Baseline. You write your first Historian's Pledge. Everything you write from here becomes raw material for your portfolio.</td></tr><tr><td><strong>Foundations 1–5 (Weeks 1–3)</strong></td><td>The world before c.1200. Geography, belief systems, states, trade, the operating system underneath everything AP World studies.</td></tr><tr><td><strong>Units 1–4 (September–December)</strong></td><td>c.1200–1750. Networks, empires, land-based expansions, and the transoceanic revolutions that connect the world.</td></tr><tr><td><strong>Units 5–7 (January–March)</strong></td><td>Revolutions, industry, and imperialism. The modern world is built, and its costs come due.</td></tr><tr><td><strong>Units 8–9 (March–April)</strong></td><td>Cold War, decolonization, and globalization. Your six skills applied to the recent past.</td></tr><tr><td><strong>May: AP Exam &amp; Portfolio</strong></td><td>You take the exam. You receive your Historian's Portfolio, a one-page letter about the historian you became, drawn from your own writing.</td></tr></tbody></table>
+</section>
+
+<p class="p-footer">BeHistorical &nbsp;&middot;&nbsp; FOUNDATIONS 0 &nbsp;&middot;&nbsp; Intro to BeHistorical</p>
+</body>
+</html>

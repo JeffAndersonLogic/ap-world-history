@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BeHistorical | FOUNDATIONS 0 Intro to BeHistorical</title>
+<style>
+
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--blackened-steel:#1A1C1D;--charcoal-steel:#2B2F31;--gunmetal-gray:#3E4447;--aged-iron:#5A5F5C;--muted-sandstone:#D2B48C;--burnished-bronze:#8C5A2B;--rust-copper:#A8652D;--oxidized-brown:#6B3E1F;--antique-gold:#C9A46A;--warm-paper:#F5F0E7;--clean-paper:#FFFDF7;--ink:#151718;--font-display:'Cinzel','Trajan Pro', Georgia, serif;--font-body:'Libre Baskerville', Georgia, serif;--font-ui:'Montserrat', Arial, sans-serif}.module{max-width:980px;margin:0 auto;border:1px solid var(--gunmetal-gray);border-radius:4px;overflow:hidden;box-shadow:0 12px 48px rgba(0,0,0,.55)}.module-header{background:var(--charcoal-steel);border-bottom:2px solid var(--antique-gold);padding:1.3rem 2rem}.header-top{display:flex;align-items:center;gap:.85rem;margin-bottom:.5rem}.module-badge{font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--antique-gold);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.35);padding:.28rem .65rem;border-radius:2px;white-space:nowrap}.module-name{font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--clean-paper);letter-spacing:.04em}.module-subtitle{font-family:var(--font-ui);font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-sandstone)}.reading-title-band{background:var(--blackened-steel);border-bottom:1px solid var(--gunmetal-gray);padding:2.4rem 2.4rem 2rem;position:relative;overflow:hidden}.reading-title-band::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg, var(--oxidized-brown), var(--antique-gold), var(--muted-sandstone), var(--antique-gold), var(--oxidized-brown))}.reading-eyebrow{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.7rem}.reading-title{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--clean-paper);line-height:1.2;letter-spacing:.02em;margin-bottom:.6rem}.reading-title em{color:var(--antique-gold);font-style:normal}.reading-deck{font-family:var(--font-body);font-size:.95rem;font-style:italic;color:var(--muted-sandstone);line-height:1.7;max-width:760px;margin-bottom:1.2rem}.skill-tags{display:flex;flex-wrap:wrap;gap:.45rem}.skill-tag{font-family:var(--font-ui);font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-sandstone);border:1px solid rgba(210,180,140,.3);padding:.2rem .55rem;border-radius:2px}.reading-body{background:var(--warm-paper);color:var(--ink)}.support-strip{padding:1.4rem 2.4rem;background:var(--clean-paper);border-bottom:1px solid #e2d9cc;display:grid;grid-template-columns:1fr 1fr;gap:1rem}.support-card{border:1px solid #ddd6ca;border-left:4px solid var(--burnished-bronze);padding:1rem;background:#faf7f2}.support-card h3{font-family:var(--font-display);font-size:.95rem;color:var(--blackened-steel);margin-bottom:.5rem}.support-card p{font-size:.8rem;line-height:1.65;color:#333}.vocab-strip{padding:1.1rem 2.4rem;background:#efe5d6;border-bottom:1px solid #d8cbb9}.vocab-strip h3{font-family:var(--font-ui);font-size:.62rem;text-transform:uppercase;letter-spacing:.16em;color:var(--oxidized-brown);margin-bottom:.7rem}.term-chip{display:inline-flex;font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--oxidized-brown);background:rgba(255,253,247,.85);border:1px solid rgba(140,90,43,.2);border-radius:999px;padding:.28rem .58rem;margin:.16rem}.section{padding:2rem 2.4rem;border-bottom:1px solid #e2d9cc;position:relative}.section:last-of-type{border-bottom:none}.section-number{font-family:var(--font-display);font-size:3.5rem;font-weight:700;color:rgba(140,90,43,.12);position:absolute;top:1.2rem;right:2rem;line-height:1;pointer-events:none;user-select:none}.section-label{font-family:var(--font-ui);font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--burnished-bronze);margin-bottom:.4rem}.section-heading{font-family:var(--font-display);font-size:1.15rem;font-weight:600;color:var(--blackened-steel);margin-bottom:1.1rem;line-height:1.3;border-bottom:1px solid rgba(140,90,43,.2);padding-bottom:.6rem}.reading-text{font-size:.93rem;line-height:1.9;color:#1e1e1e;margin-bottom:1rem}.reading-text:last-child{margin-bottom:0}.kt{background:rgba(210,180,140,.35);color:var(--oxidized-brown);font-weight:700;padding:0 3px;border-radius:2px}.ap-callout{background:var(--charcoal-steel);border-left:3px solid var(--antique-gold);padding:1rem 1.2rem;margin:1.4rem 0;border-radius:0 3px 3px 0}.ap-callout-label{font-family:var(--font-ui);font-size:.57rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.35rem}.ap-callout p{font-family:var(--font-ui);font-size:.8rem;color:var(--warm-paper);line-height:1.65}.ap-callout p strong{color:var(--muted-sandstone)}.pull-quote{border-left:4px solid var(--antique-gold);margin:1.6rem 0;padding:.8rem 1.4rem;background:rgba(201,164,106,.06)}.pull-quote p{font-family:var(--font-display);font-size:1rem;font-style:italic;color:var(--burnished-bronze);line-height:1.6}.be-ready{background:#efe5d6;padding:1.5rem 2.4rem;border-top:2px solid var(--burnished-bronze);border-bottom:1px solid #d8cbb9}.be-ready h3{font-family:var(--font-display);font-size:1rem;color:var(--blackened-steel);margin-bottom:.5rem}.be-ready p{font-size:.85rem;line-height:1.7;color:#222}.family-strip{background:#faf7f2;padding:1.8rem 2.4rem;border-top:2px solid var(--burnished-bronze);border-bottom:1px solid #d8cbb9}.family-strip .family-eyebrow{font-family:var(--font-ui);font-size:.58rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--burnished-bronze);margin-bottom:.6rem}.family-strip h3{font-family:var(--font-display);font-size:1.15rem;color:var(--blackened-steel);margin-bottom:.8rem}.family-strip p{font-size:.86rem;line-height:1.8;color:#222;margin-bottom:.8rem}.family-strip p:last-child{margin-bottom:0}.family-strip ul{margin:.6rem 0 .8rem 1.4rem}.family-strip li{font-size:.84rem;line-height:1.75;color:#222;margin-bottom:.35rem}.check-section{background:var(--blackened-steel);padding:2rem 2.4rem;border-top:2px solid var(--antique-gold)}.check-header{display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem}.check-badge{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--antique-gold);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.3);padding:.25rem .6rem;border-radius:2px}.check-title{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--clean-paper)}.question-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:1.2rem}.question-item{background:var(--charcoal-steel);border:1px solid var(--gunmetal-gray);border-radius:3px;overflow:hidden}.question-prompt{padding:.9rem 1.1rem;border-bottom:1px solid var(--gunmetal-gray);display:flex;gap:.8rem;align-items:flex-start}.q-num{font-family:var(--font-display);font-size:.75rem;font-weight:700;color:var(--antique-gold);min-width:1.4rem;padding-top:1px}.q-skill{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--burnished-bronze);border:1px solid rgba(140,90,43,.4);padding:.15rem .4rem;border-radius:2px;white-space:nowrap;margin-top:1px}.q-text{font-family:var(--font-body);font-size:.85rem;color:var(--clean-paper);line-height:1.65}.q-textarea{width:100%;min-height:85px;background:#23272a;border:none;padding:.8rem 1.1rem;font-family:var(--font-body);font-size:.82rem;color:var(--warm-paper);line-height:1.7;resize:vertical;outline:none}.q-textarea::placeholder{color:#5a5f5c;font-style:italic}.q-textarea:focus{background:#262b2e}.module-footer{background:var(--charcoal-steel);border-top:1px solid var(--gunmetal-gray);padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}.footer-note{font-family:var(--font-ui);font-size:.62rem;color:var(--aged-iron)}.nav-btn{font-family:var(--font-ui);font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--antique-gold);background:transparent;border:1px solid rgba(201,164,106,.4);padding:.4rem .9rem;border-radius:2px;cursor:pointer;transition:all .2s;text-decoration:none}.nav-btn:hover{background:rgba(201,164,106,.1);border-color:var(--antique-gold)}.nav-btn.prev{color:var(--muted-sandstone);border-color:rgba(210,180,140,.25)}
+    .builder-section{background:#1A1C1D;padding:2rem 2.4rem;border-top:1px solid #3E4447}
+    .builder-heading{font-family:'Cinzel','Trajan Pro', Georgia, serif;font-size:1.1rem;font-weight:700;color:#C9A46A;margin-bottom:.75rem}
+    .builder-body{font-family:'Libre Baskerville', Georgia, serif;font-size:.88rem;line-height:1.65;color:#F5F0E7;margin-bottom:1rem}
+    .tool-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem}
+    .builder-output{width:100%;min-height:100px;background:#23272a;border:none;padding:.8rem 1.1rem;font-family:'Libre Baskerville', Georgia, serif;font-size:.82rem;color:#F5F0E7;line-height:1.7;resize:vertical;outline:none;border-radius:3px;margin-bottom:.75rem}
+    .builder-output::placeholder{color:#5a5f5c;font-style:italic}
+    .builder-output:focus{background:#262b2e}
+    button{font-family:'Montserrat', Arial, sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#C9A46A;color:#151718;border:none;border-radius:3px;padding:.55rem 1.2rem;cursor:pointer;transition:all .2s}
+    button:hover{background:#8C5A2B;color:#F5F0E7}
+    button.secondary{background:transparent;color:#C9A46A;border:1px solid #C9A46A}
+    button.secondary:hover{background:#C9A46A;color:#151718}
+    .page-footer-note{font-family:'Libre Baskerville', Georgia, serif;font-size:.82rem;font-style:italic;color:#5A5F5C;padding:1.2rem 2.4rem;background:#2B2F31;border-top:1px solid #3E4447}
+    @media(max-width:680px){body{padding:.75rem}.module-header,.reading-title-band,.section,.check-section,.be-ready,.family-strip{padding:1.35rem}.support-strip{grid-template-columns:1fr;padding:1.2rem}.vocab-strip{padding:1.1rem}.question-prompt{display:block}.q-skill{display:inline-block;margin:.35rem 0}.reading-title{font-size:1.55rem}.builder-section{padding:1.35rem}.tool-row{flex-direction:column}}
+  
+body{background:#1A1C1D;font-family:var(--font-body);color:var(--clean-paper);padding:1.25rem 1rem 4rem;-webkit-text-size-adjust:100%}
+.bh-wrap{max-width:980px;margin:0 auto}
+.bh-hero{background:var(--charcoal-steel);border:1px solid var(--gunmetal-gray);border-top:3px solid var(--antique-gold);border-radius:4px;padding:1.8rem 2rem;margin-bottom:1.25rem}
+.bh-hero .bh-eyebrow{font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.55rem}
+.bh-hero h1{font-family:var(--font-display);font-size:1.8rem;line-height:1.2;color:var(--clean-paper);margin-bottom:.5rem}
+.bh-hero p{font-family:var(--font-body);font-style:italic;color:var(--muted-sandstone);line-height:1.7;font-size:.92rem}
+.bh-hero .bh-course{font-family:var(--font-ui);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--aged-iron);font-style:normal;margin-top:.8rem}
+.bh-toc{background:rgba(201,164,106,.06);border:1px solid rgba(201,164,106,.25);border-radius:4px;padding:1rem 1.2rem;margin-bottom:1.25rem}
+.bh-toc h2{font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.6rem}
+.bh-toc ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem}
+.bh-toc a{font-family:var(--font-ui);font-size:.68rem;font-weight:600;color:var(--muted-sandstone);text-decoration:none;border:1px solid rgba(210,180,140,.28);border-radius:2px;padding:.28rem .6rem;display:inline-block}
+.bh-toc a:hover{background:rgba(201,164,106,.12);color:var(--antique-gold)}
+.bh-module{background:var(--charcoal-steel);border:1px solid var(--gunmetal-gray);border-radius:4px;padding:1.5rem 1.8rem;margin-bottom:1.25rem;scroll-margin-top:1rem}
+.bh-module-head{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;border-bottom:1px solid var(--gunmetal-gray);padding-bottom:.8rem;margin-bottom:1.1rem}
+.bh-badge{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--antique-gold);background:rgba(201,164,106,.12);border:1px solid rgba(201,164,106,.35);padding:.26rem .6rem;border-radius:2px;white-space:nowrap}
+.bh-module-head h2{font-family:var(--font-display);font-size:1.18rem;font-weight:600;color:var(--clean-paper)}
+.bh-lead{font-size:.88rem;line-height:1.8;color:var(--warm-paper);margin-bottom:1rem}
+.bh-two{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.bh-card{background:var(--blackened-steel);border:1px solid var(--gunmetal-gray);border-left:3px solid var(--burnished-bronze);border-radius:3px;padding:1rem 1.15rem;margin-bottom:1rem}
+.bh-card h3{font-family:var(--font-display);font-size:.98rem;color:var(--antique-gold);margin-bottom:.6rem}
+.bh-card ol,.bh-card ul{margin-left:1.1rem}
+.bh-card li,.bh-card p{font-size:.85rem;line-height:1.75;color:var(--warm-paper);margin-bottom:.45rem}
+.bh-checklist{list-style:none;margin-left:0}
+.bh-checklist li{padding-left:1.6rem;position:relative}
+.bh-checklist li::before{content:'\25A1';position:absolute;left:0;color:var(--antique-gold);font-size:1rem;line-height:1.5}
+.bh-steps li{margin-bottom:.6rem}
+.bh-key div{border-top:1px solid var(--gunmetal-gray);padding:.55rem 0}
+.bh-key div:first-child{border-top:none;padding-top:0}
+.bh-key dt{font-family:var(--font-ui);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.2rem}
+.bh-key dd{font-size:.83rem;line-height:1.7;color:var(--warm-paper)}
+.bh-roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+.bh-step{background:var(--blackened-steel);border:1px solid var(--gunmetal-gray);border-top:2px solid var(--antique-gold);border-radius:3px;padding:.9rem 1rem;font-size:.8rem;line-height:1.65;color:var(--warm-paper)}
+.bh-step strong{display:block;font-family:var(--font-ui);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.35rem}
+.bh-callout{background:var(--blackened-steel);border:1px solid var(--antique-gold);border-radius:3px;padding:1.1rem 1.25rem;margin-bottom:1rem}
+.bh-callout h3{font-family:var(--font-display);font-size:1.05rem;color:var(--antique-gold);margin-bottom:.55rem}
+.bh-callout p{font-size:.88rem;line-height:1.8;color:var(--warm-paper)}
+.bh-callout blockquote{border-left:3px solid var(--burnished-bronze);margin-top:.9rem;padding:.5rem 0 .5rem 1rem;font-size:.87rem;line-height:1.85;color:var(--muted-sandstone);font-style:italic}
+.bh-figure{background:var(--blackened-steel);border:1px solid var(--gunmetal-gray);border-radius:3px;overflow:hidden;margin-bottom:1rem}
+.bh-figure img{width:100%;height:auto;display:block;background:var(--warm-paper)}
+/* The generated artwork is a stand-in, not the lesson's evidence. Cap it so a
+   blocked photograph host cannot turn a page into a wall of brand motif. */
+img.bh-art{max-height:11rem;object-fit:cover;object-position:center}
+.bh-lecture-fig img.bh-art{max-height:7rem}
+.bh-figure figcaption{padding:.85rem 1rem;font-size:.8rem;line-height:1.7;color:var(--warm-paper)}
+.bh-figure figcaption strong{color:var(--antique-gold)}
+.bh-figure a,.bh-btn-link{color:var(--antique-gold)}
+.bh-lecture{display:grid;grid-template-columns:1.35fr 1fr;gap:1.1rem;background:var(--blackened-steel);border:1px solid var(--gunmetal-gray);border-radius:3px;padding:1.2rem 1.3rem;margin-bottom:1rem}
+.bh-lecture-num{font-family:var(--font-ui);font-size:.58rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-sandstone);display:block;margin-bottom:.4rem}
+.bh-lecture h3{font-family:var(--font-display);font-size:1.05rem;color:var(--antique-gold);margin-bottom:.7rem;line-height:1.3}
+.bh-lecture ul{margin-left:1.05rem}
+.bh-lecture li{font-size:.85rem;line-height:1.8;color:var(--warm-paper);margin-bottom:.6rem}
+.bh-lecture li strong{color:var(--muted-sandstone)}
+.bh-lecture-fig img{width:100%;height:auto;display:block;border-radius:2px;background:var(--warm-paper)}
+.bh-lecture-fig figcaption{font-size:.74rem;line-height:1.6;color:var(--muted-sandstone);margin-top:.5rem}
+.bh-lecture-fig figcaption strong{color:var(--antique-gold)}
+.bh-coach-item{border-top:1px solid var(--gunmetal-gray);padding:.6rem 0;display:grid;grid-template-columns:6rem 1fr;gap:.6rem}
+.bh-coach-item:first-child{border-top:none;padding-top:0}
+.bh-coach-item strong{font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--antique-gold)}
+.bh-coach-item span{font-size:.84rem;line-height:1.7;color:var(--warm-paper)}
+.bh-prompt{background:var(--blackened-steel);border:1px solid var(--antique-gold);border-radius:3px;padding:1.1rem 1.25rem;margin-top:1rem}
+.bh-prompt h4{font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.5rem}
+.bh-prompt-text{font-size:.87rem;line-height:1.8;color:var(--warm-paper);margin-bottom:.8rem}
+textarea.bh-response{width:100%;min-height:120px;background:#23272a;border:1px solid var(--gunmetal-gray);border-radius:3px;padding:.8rem 1rem;font-family:var(--font-body);font-size:.85rem;color:var(--warm-paper);line-height:1.8;resize:vertical;outline:none}
+textarea.bh-response:focus{background:#262b2e;border-color:var(--antique-gold)}
+.bh-tool-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}
+.bh-note{font-family:var(--font-ui);font-size:.68rem;color:var(--muted-sandstone);margin-top:.5rem;min-height:1em}
+.bh-table{width:100%;border-collapse:collapse;font-size:.83rem}
+.bh-table th{font-family:var(--font-ui);font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--antique-gold);text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--antique-gold)}
+.bh-table td{padding:.6rem .7rem;border-bottom:1px solid var(--gunmetal-gray);line-height:1.7;color:var(--warm-paper);vertical-align:top}
+.bh-export{background:var(--charcoal-steel);border:1px solid var(--antique-gold);border-radius:4px;padding:1.5rem 1.8rem;margin-bottom:1.25rem}
+.bh-export h2{font-family:var(--font-display);font-size:1.2rem;color:var(--antique-gold);margin-bottom:.6rem}
+.bh-export p{font-size:.86rem;line-height:1.8;color:var(--warm-paper);margin-bottom:.9rem}
+#bh-output{background:var(--warm-paper);color:var(--ink);border:1px solid var(--antique-gold);border-radius:3px;padding:1rem 1.15rem;margin-top:.8rem;max-height:24rem;overflow-y:auto;font-family:var(--font-body);font-size:.85rem;line-height:1.7}
+#bh-output p{color:var(--ink);margin-bottom:.6rem}
+#bh-output hr{border:none;border-top:1px solid #cbbfa9;margin:1rem 0}
+.bh-sticky{position:sticky;bottom:0;background:rgba(26,28,29,.94);border-top:1px solid var(--antique-gold);padding:.7rem 1rem;margin:0 -1rem -4rem;display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;backdrop-filter:blur(4px);z-index:20}
+.bh-footer{text-align:center;font-family:var(--font-ui);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--aged-iron);padding:1.5rem 0 3rem}
+.bh-reading .reading-title-band{border-top:none}
+.bh-reading .reading-title-band::before{display:none}
+@media(max-width:760px){
+  .bh-two,.bh-lecture,.bh-roadmap{grid-template-columns:1fr}
+  .bh-module,.bh-export{padding:1.1rem 1rem}
+  .bh-hero{padding:1.3rem 1.1rem}
+  .bh-hero h1{font-size:1.4rem}
+  .bh-coach-item{grid-template-columns:1fr;gap:.2rem}
+}
+@media print{
+  body{background:#fff;color:#111;padding:0}
+  .bh-sticky,.bh-toc,.bh-export{display:none}
+  .bh-module{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="bh-wrap">
+
+  <header class="bh-hero">
+    <p class="bh-eyebrow">FOUNDATIONS 0</p>
+    <h1>Intro to BeHistorical</h1>
+    <p>You are not learning history. You are becoming a historian.</p>
+    <p class="bh-course">AP World History: Modern &nbsp;&middot;&nbsp; BeHistorical</p>
+  </header>
+
+  <nav class="bh-toc">
+    <h2>The 10 Modules</h2>
+    <ol><li><a href="#module-01">01. Map &amp; Geography Check</a></li><li><a href="#module-02">02. First &amp; 10 Reading</a></li><li><a href="#module-03">03. Content Delivery</a></li><li><a href="#module-04">04. BeSurreal</a></li><li><a href="#module-05">05. AP Skill Builder: Meet the Six Skills</a></li><li><a href="#module-06">06. Checkpoint 1</a></li><li><a href="#module-07">07. Evidence Lab</a></li><li><a href="#module-08">08. Socrates AI Coach</a></li><li><a href="#module-09">09. BeInTheRoom</a></li><li><a href="#module-10">10. Checkpoint 2</a></li></ol>
+  </nav>
+
+  <section class="bh-export" id="how-to">
+    <h2>How to Use This Page</h2>
+    <p>Everything for this lesson is on this one page: the map, the reading, the lecture cards, and every response box. Type your answers straight into the boxes. Your typing saves automatically, but <strong>only in this browser on this device</strong>, so it is not a submission.</p>
+    <p>When you finish, scroll to <strong>Turn In Your Work</strong> at the bottom, press <em>Gather All My Work</em>, then <em>Copy to Clipboard</em>, and paste it into the Canvas assignment. Canvas is where your graded work goes.</p>
+  </section>
+
+<section class="bh-module" id="targets">
+  <div class="bh-module-head"><span class="bh-badge">Start Here</span><h2>Learning Targets &amp; Success Criteria</h2></div>
+  <p class="bh-lead">Day 0 is the frame for the entire year. Before students learn a single date, they should know what BeHistorical is asking them to become, a historian, with six specific habits of mind, and what they are building over the year: a personal Historian's Portfolio drawn from their own writing. This lesson introduces the six AP historical thinking skills in student-friendly language, walks students and families through the 10-module rhythm they will see every class, and captures a baseline snapshot of each student as a historian on Day 1. That baseline becomes the first entry in the portfolio they will receive in May.</p>
+  <div class="bh-two">
+    <article class="bh-card"><h3>Learning Targets</h3><ol><li>I can name the six AP historical thinking skills and give a one-sentence explanation of each in my own words.</li><li>I can describe the 10-module structure I will see in every BeHistorical lesson and explain what each module trains.</li><li>I can explain what my Historian's Portfolio is and write a baseline self-portrait as a historian, where I am today and where I want to be by May.</li></ol></article>
+    <article class="bh-card"><h3>Success Criteria</h3><ol><li>I can list the six skills (contextualization, comparison, causation, continuity/change, argumentation, sourcing) and give a plain-language definition of each.</li><li>I can walk a family member through the 10 modules we use every class and say why each one exists.</li><li>I can describe in one sentence what my end-of-year portfolio will contain and who sees it, and write one paragraph in my own voice that captures who I am as a historical thinker on Day 1.</li></ol></article>
+  </div>
+  <div class="bh-roadmap">
+    <div class="bh-step"><strong>1. Build Context</strong>Review the targets, examine the map, and read the First &amp; 10 narrative.</div>
+    <div class="bh-step"><strong>2. Learn &amp; Practice</strong>Use the module cards, then move into the main lecture-card section.</div>
+    <div class="bh-step"><strong>3. Check Understanding</strong>Complete checkpoints with self-check and response tools.</div>
+  </div>
+</section>
+
+<section class="bh-module" id="module-01">
+  <div class="bh-module-head"><span class="bh-badge">Module 01</span><h2>Map &amp; Geography Check</h2></div>
+  <p class="bh-lead">AP World starts at c.1200, a world already full of empires, trade routes, and belief systems. This map is your baseline. You will return to it after every unit and see it differently each time.</p><figure class="bh-figure"><img class="bh-art" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjEwMDAiIHZpZXdCb3g9IjAgMCAxNjAwIDEwMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiIHJvbGU9ImltZyIgYXJpYS1sYWJlbGxlZGJ5PSJtYXAtdGl0bGUgbWFwLWRlc2MiPgogIDx0aXRsZSBpZD0ibWFwLXRpdGxlIj5UaGUgSGlzdG9yaWFuJmFwb3M7cyBXb3JsZCBhdCBjLiAxMjAwPC90aXRsZT4KICA8ZGVzYyBpZD0ibWFwLWRlc2MiPkZPVU5EQVRJT05TIDAgaW5zdHJ1Y3Rpb25hbCBtYXAgZm9yIEFQIFdvcmxkIEhpc3Rvcnk6IFRoZSBIaXN0b3JpYW4mYXBvcztzIFdvcmxkIGF0IGMuIDEyMDAuIEZvdW5kYXRpb25zIDAgwrcgVGhlIHNpeCBBUCBXb3JsZCByZWdpb25zPC9kZXNjPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJwYXBlciIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRkZERjciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGMUU3RDUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjIwIiBtYXJrZXJIZWlnaHQ9IjE2IiByZWZYPSIxNyIgcmVmWT0iOCIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8cGF0aCBkPSJNMCwwIEwyMCw4IEwwLDE2IFoiIGZpbGw9IiM4QzVBMkIiLz4KICAgIDwvbWFya2VyPgogICAgPHN0eWxlPgogICAgICAudGl0bGV7Zm9udC1mYW1pbHk6R2VvcmdpYSwnVGltZXMgTmV3IFJvbWFuJyxzZXJpZjtmb250LXdlaWdodDo3MDA7Zm9udC1zaXplOjQ0cHg7ZmlsbDojMUExQzFEfQogICAgICAuc3VidGl0bGV7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE5cHg7ZmlsbDojM0U0NDQ3O2xldHRlci1zcGFjaW5nOjEuMnB4O3RleHQtdHJhbnNmb3JtOnVwcGVyY2FzZX0KICAgICAgLnJlZ2lvbntmb250LWZhbWlseTpHZW9yZ2lhLCdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmO2ZvbnQtd2VpZ2h0OjcwMDtmb250LXNpemU6MjFweDtsZXR0ZXItc3BhY2luZzouNXB4fQogICAgICAucGxhY2V7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7Zm9udC13ZWlnaHQ6NzAwO2ZvbnQtc2l6ZToxOHB4O2ZpbGw6IzFBMUMxRH0KICAgICAgLnBsYWNlbm90ZXtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmb250LXNpemU6MTVweDtmaWxsOiMzRTQ0NDd9CiAgICAgIC5zbWFsbHtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtmb250LXNpemU6MTdweDtmaWxsOiMxQTFDMUR9CiAgICAgIC50aW55e2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNHB4O2ZpbGw6IzNFNDQ0N30KICAgICAgLmJhZGdlbnVte2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2ZvbnQtd2VpZ2h0OjcwMDtmb250LXNpemU6MTlweDtmaWxsOiNGRkZERjd9CiAgICAgIC5iYWRnZXtmaWxsOiM4QzVBMkI7c3Ryb2tlOiNGRkZERjc7c3Ryb2tlLXdpZHRoOjN9CiAgICAgIC5oYWxve3BhaW50LW9yZGVyOnN0cm9rZTtzdHJva2U6I0ZGRkRGNztzdHJva2Utd2lkdGg6NTtzdHJva2UtbGluZWpvaW46cm91bmR9CiAgICAgIC5jaXR5e2ZpbGw6IzFBMUMxRDtzdHJva2U6I0ZGRkRGNztzdHJva2Utd2lkdGg6NH0KICAgICAgLmZsb3d7ZmlsbDpub25lO3N0cm9rZTojOEM1QTJCO3N0cm9rZS13aWR0aDo2O3N0cm9rZS1saW5lY2FwOnJvdW5kO29wYWNpdHk6Ljl9CiAgICAgICNsYW5kIHBhdGh7ZmlsbDojRTREQUM0O3N0cm9rZTojQTk5QjdGO3N0cm9rZS13aWR0aDozfQogICAgICAjZ3JhdGljdWxlIGxpbmV7c3Ryb2tlOiM5RkIwQUU7c3Ryb2tlLXdpZHRoOjEuNTtvcGFjaXR5Oi4zNX0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgoKICA8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIxMDAwIiBmaWxsPSIjRDdFMkUxIi8+CiAgPGcgaWQ9ImdyYXRpY3VsZSI+CiAgICA8bGluZSB4MT0iMTMzLjMiIHkxPSIwIiB4Mj0iMTMzLjMiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iMjY2LjciIHkxPSIwIiB4Mj0iMjY2LjciIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iNDAwLjAiIHkxPSIwIiB4Mj0iNDAwLjAiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iNTMzLjMiIHkxPSIwIiB4Mj0iNTMzLjMiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iNjY2LjciIHkxPSIwIiB4Mj0iNjY2LjciIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iODAwLjAiIHkxPSIwIiB4Mj0iODAwLjAiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iOTMzLjMiIHkxPSIwIiB4Mj0iOTMzLjMiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iMTA2Ni43IiB5MT0iMCIgeDI9IjEwNjYuNyIgeTI9IjEwMDAiLz4KICAgIDxsaW5lIHgxPSIxMjAwLjAiIHkxPSIwIiB4Mj0iMTIwMC4wIiB5Mj0iMTAwMCIvPgogICAgPGxpbmUgeDE9IjEzMzMuMyIgeTE9IjAiIHgyPSIxMzMzLjMiIHkyPSIxMDAwIi8+CiAgICA8bGluZSB4MT0iMTQ2Ni43IiB5MT0iMCIgeDI9IjE0NjYuNyIgeTI9IjEwMDAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iODMzLjMiIHgyPSIxNjAwIiB5Mj0iODMzLjMiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iNjY2LjciIHgyPSIxNjAwIiB5Mj0iNjY2LjciLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iNTAwLjAiIHgyPSIxNjAwIiB5Mj0iNTAwLjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMzMzLjMiIHgyPSIxNjAwIiB5Mj0iMzMzLjMiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMTY2LjciIHgyPSIxNjAwIiB5Mj0iMTY2LjciLz4KICA8L2c+CiAgPGxpbmUgeDE9IjAiIHkxPSI1MDAuMCIgeDI9IjE2MDAiIHkyPSI1MDAuMCIgc3Ryb2tlPSIjNEU2QjcyIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTAiIG9wYWNpdHk9Ii41Ii8+CiAgPGcgaWQ9ImxhbmQiPgogICAgPHBhdGggaWQ9ImxhbmQtZ3JlZW5sYW5kIiBkPSJNNjAwLjAsMTY2LjcgTDY2Ni43LDEyMi4yIEw2ODguOSwxMDAuMCBMNjY2LjcsNTUuNiBMNjAwLjAsMzguOSBMNTQyLjIsNDQuNCBMNTMzLjMsNzcuOCBMNTY4LjksMTIyLjIgTDYwMC4wLDE2Ni43IFoiLz4KICAgIDxwYXRoIGlkPSJsYW5kLW5vcnRoQW1lcmljYSIgZD0iTTUzLjMsMTMzLjMgTDg4LjksMTA1LjYgTDEyNC40LDEwNS42IEwxNzcuOCwxMTEuMSBMMjMxLjEsMTExLjEgTDI4OC45LDExNi43IEwzNTUuNiwxMTYuNyBMNDAwLjAsMTExLjEgTDQ0NC40LDk0LjQgTDQ4OC45LDExMS4xIEw1MjQuNCwxNjYuNyBMNTU1LjYsMjExLjEgTDUzMy4zLDIzOC45IEw1MDIuMiwyNTAuMCBMNDg4LjksMjcyLjIgTDQ2Ni43LDMwMC4wIEw0NDAuMCwzNTUuNiBMNDQ0LjQsMzYxLjEgTDQyNi43LDMzMy4zIEw0MDQuNCwzMzguOSBMMzgyLjIsMzM4LjkgTDM2OC45LDM1NS42IEwzNjQuNCwzODguOSBMMzc3LjgsNDExLjEgTDM5MS4xLDQyMi4yIEw0MTMuMyw0MjcuOCBMNDMxLjEsNDUwLjAgTDQ1My4zLDQ1NS42IEw0MzUuNiw0MjIuMiBMNDA4LjksNDExLjEgTDM3Ny44LDQwNS42IEwzMzMuMywzODMuMyBMMzExLjEsMzY2LjcgTDI5My4zLDMzMy4zIEwyNzUuNiwzMTYuNyBMMjU3LjgsMjk0LjQgTDI0OC45LDI2Ni43IEwyNDguOSwyMzMuMyBMMjE3LjgsMjA1LjYgTDE3Ny44LDE3Mi4yIEwxNDIuMiwxNjYuNyBMMTExLjEsMTc3LjggTDc1LjYsMTc3LjggTDYyLjIsMTU1LjYgTDUzLjMsMTMzLjMgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtc291dGhBbWVyaWNhIiBkPSJNNDUzLjMsNDU1LjYgTDQ4MC4wLDQzOC45IEw1MjQuNCw0NDQuNCBMNTY4LjksNDcyLjIgTDU3Ny44LDUwMC4wIEw2MDQuNCw1MTEuMSBMNjQ0LjQsNTMzLjMgTDYzMS4xLDU3Mi4yIEw2MjIuMiw2MTEuMSBMNTg2LjcsNjM4LjkgTDU2NC40LDY4My4zIEw1NDIuMiw3MTEuMSBMNTI0LjQsNzIyLjIgTDUxMS4xLDc1MC4wIEw0OTcuOCw3ODMuMyBMNDg4LjksODA1LjYgTDQ2Ni43LDc4OC45IEw0NzEuMSw3NTAuMCBMNDc1LjYsNzA1LjYgTDQ4NC40LDY2Ni43IEw0ODguOSw2MjIuMiBMNDg0LjQsNTg4LjkgTDQ1Ny44LDUzMy4zIEw0NDQuNCw1MTYuNyBMNDUzLjMsNDg4LjkgTDQ1My4zLDQ1NS42IFoiLz4KICAgIDxwYXRoIGlkPSJsYW5kLWFmcmljYSIgZD0iTTcyNC40LDQxNi43IEw3MjguOSwzODMuMyBMNzU1LjYsMzU1LjYgTDc5MS4xLDMyNy44IEw4MzUuNiwzMTYuNyBMODQ4LjksMzExLjEgTDg4OC45LDMyMi4yIEw5MjQuNCwzMjcuOCBMOTQ2LjcsMzI3LjggTDk1NS42LDM2Ni43IEw5NjguOSw0MDAuMCBMOTkxLjEsNDMzLjMgTDEwMTMuMyw0MzguOSBMMTAyNi43LDQzOC45IEwxMDAwLjAsNDcyLjIgTDk4Mi4yLDUxMS4xIEw5NzcuOCw1NDQuNCBMOTU1LjYsNjAwLjAgTDk0Ni43LDY0NC40IEw5MjguOSw2NzIuMiBMOTExLjEsNjg4LjkgTDg4NC40LDY5NC40IEw4NzUuNiw2NjYuNyBMODYyLjIsNjIyLjIgTDg1My4zLDU4OC45IEw4NDAuMCw1MzMuMyBMODQwLjAsNDg4LjkgTDgyMi4yLDQ3Mi4yIEw3OTEuMSw0NzIuMiBMNzY0LjQsNDc3LjggTDc0Mi4yLDQ1MC4wIEw3MjQuNCw0MTYuNyBaIi8+CiAgICA8cGF0aCBpZD0ibGFuZC1ldXJhc2lhIiBkPSJNNzU1LjYsMzAwLjAgTDc2MC4wLDI2MS4xIEw3OTEuMSwyMzguOSBMODEzLjMsMjE2LjcgTDgzMS4xLDIwNS42IEw4MjIuMiwxNzcuOCBMODQwLjAsMTgzLjMgTDg0OC45LDE3Ny44IEw4NTcuOCwxOTQuNCBMODg0LjQsMjAwLjAgTDg5My4zLDE4OC45IEw5MDYuNywxODMuMyBMOTI0LjQsMTcyLjIgTDkzMy4zLDE2Ni43IEw5MjAuMCwxMzguOSBMODk3LjgsMTMzLjMgTDkwNi43LDExMS4xIEw5MzcuOCwxMTEuMSBMOTc3LjgsMTIyLjIgTDEwMjIuMiwxMTYuNyBMMTA2Ni43LDEwNS42IEwxMTExLjEsOTQuNCBMMTE1NS42LDg4LjkgTDEyMjIuMiw2Ni43IEwxMjY2LjcsNzIuMiBMMTMwMi4yLDg4LjkgTDEzNTUuNiw5NC40IEwxNDAwLjAsMTAwLjAgTDE0NDQuNCwxMDAuMCBMMTUxMS4xLDExMS4xIEwxNTU1LjYsMTE2LjcgTDE2MDAuMCwxMjIuMiBMMTYwMC4wLDE1NS42IEwxNTU1LjYsMTY2LjcgTDE1MjQuNCwxNzcuOCBMMTQ5Ny44LDIxMS4xIEwxNDY2LjcsMjQ0LjQgTDE0MzUuNiwyNTUuNiBMMTQyMi4yLDI2Ni43IEwxNDA4LjksMzAwLjAgTDEzNzcuOCwzMDUuNiBMMTM1NS42LDMyMi4yIEwxMzQyLjIsMzMzLjMgTDEzMjQuNCwzNjYuNyBMMTI4OC45LDM4My4zIEwxMjc1LjYsNDA1LjYgTDEyNjYuNyw0NDQuNCBMMTI1My4zLDQ3Ny44IEwxMjQ0LjQsNDYxLjEgTDEyMzUuNiw0MjcuOCBMMTIyMi4yLDQxMS4xIEwxMjA0LjQsMzc3LjggTDExODYuNywzODMuMyBMMTE2MC4wLDQxMS4xIEwxMTQ2LjcsNDUwLjAgTDExNDIuMiw0MTYuNyBMMTEyNC40LDM4OC45IEwxMTExLjEsMzcyLjIgTDEwODguOSwzNjYuNyBMMTA2Ni43LDM2MS4xIEwxMDUzLjMsMzc3LjggTDEwMzEuMSw0MTEuMSBMOTkxLjEsNDMzLjMgTDk2OC45LDQwMC4wIEw5NTUuNiwzNjYuNyBMOTU1LjYsMzI3LjggTDk2MC4wLDMwMC4wIEw5MzMuMywyOTQuNCBMOTIwLjAsMjcyLjIgTDkwMi4yLDI4OC45IEw4ODguOSwyNzcuOCBMODcxLjEsMjg4LjkgTDg1Ny44LDI1MC4wIEw4MzUuNiwyNTUuNiBMODEzLjMsMjY2LjcgTDc5MS4xLDI4My4zIEw3NzMuMywzMDAuMCBMNzU1LjYsMzAwLjAgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtYnJpdGFpbiIgZD0iTTc3My4zLDIyMi4yIEw3ODYuNywyMTYuNyBMODA0LjQsMjExLjEgTDc5NS42LDE5NC40IEw3OTEuMSwxNzcuOCBMNzc3LjgsMTc3LjggTDc3Ny44LDE5NC40IEw3NzMuMywyMDUuNiBMNzczLjMsMjIyLjIgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtaXJlbGFuZCIgZD0iTTc1NS42LDIxMS4xIEw3NzMuMywyMTEuMSBMNzczLjMsMTk0LjQgTDc2NC40LDE5NC40IEw3NTUuNiwyMDAuMCBMNzU1LjYsMjExLjEgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtamFwYW4iIGQ9Ik0xMzc3LjgsMzIyLjIgTDE0MDAuMCwzMTEuMSBMMTQxNy44LDMwNS42IEwxNDI2LjcsMjgzLjMgTDE0MzEuMSwyNjEuMSBMMTQ0NC40LDI1NS42IEwxNDI2LjcsMjUwLjAgTDE0MTMuMywyOTQuNCBMMTM5NS42LDMxMS4xIEwxMzc3LjgsMzIyLjIgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtaW5kb25lc2lhIiBkPSJNMTIyMi4yLDQ3Mi4yIEwxMjYyLjIsNTA1LjYgTDEyNzEuMSw1MzMuMyBMMTMwNi43LDU0NC40IEwxMzI4LjksNTUwLjAgTDEzMjAuMCw1MTYuNyBMMTI4OC45LDQ4OC45IEwxMjU3LjgsNDg4LjkgTDEyMjIuMiw0NzIuMiBaIi8+CiAgICA8cGF0aCBpZD0ibGFuZC1waGlsaXBwaW5lcyIgZD0iTTEzMjguOSw0MDAuMCBMMTM0Mi4yLDQwNS42IEwxMzUxLjEsNDI3LjggTDEzNjAuMCw0NTAuMCBMMTM1NS42LDQ2Ni43IEwxMzM3LjgsNDUwLjAgTDEzMzMuMyw0MjIuMiBMMTMyOC45LDQwMC4wIFoiLz4KICAgIDxwYXRoIGlkPSJsYW5kLWF1c3RyYWxpYSIgZD0iTTEzMDIuMiw2MjIuMiBMMTMwNi43LDY1MC4wIEwxMzE1LjYsNjc3LjggTDEzMzcuOCw2ODguOSBMMTM3My4zLDY3Ny44IEwxNDAwLjAsNjk0LjQgTDE0MjIuMiw3MTEuMSBMMTQ1My4zLDcxMS4xIEwxNDY2LjcsNjk0LjQgTDE0ODAuMCw2NTUuNiBMMTQ4MC4wLDYzOC45IEwxNDU3LjgsNjExLjEgTDE0MzUuNiw1NzIuMiBMMTQwMC4wLDU2Ni43IEwxMzc3LjgsNTY2LjcgTDEzNTUuNiw1NzcuOCBMMTMyNC40LDYwMC4wIEwxMzAyLjIsNjIyLjIgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtbmV3WmVhbGFuZCIgZD0iTTE1NjguOSw2OTQuNCBMMTU4Mi4yLDcxMS4xIEwxNTkxLjEsNzExLjEgTDE1NzMuMyw3MzMuMyBMMTU2MC4wLDc0NC40IEwxNTQyLjIsNzU1LjYgTDE1MzcuOCw3NTAuMCBMMTU1NS42LDczMy4zIEwxNTY0LjQsNzExLjEgTDE1NjguOSw2OTQuNCBaIi8+CiAgICA8cGF0aCBpZD0ibGFuZC1tYWRhZ2FzY2FyIiBkPSJNOTk1LjYsNTY2LjcgTDEwMjIuMiw1ODMuMyBMMTAyMi4yLDYxMS4xIEwxMDA4LjksNjM4LjkgTDEwMDAuMCw2MzguOSBMOTkxLjEsNjE2LjcgTDk5MS4xLDU4OC45IEw5OTUuNiw1NjYuNyBaIi8+CiAgICA8cGF0aCBpZD0ibGFuZC1jdWJhIiBkPSJNNDI2LjcsMzc3LjggTDQ1Ny44LDM4OC45IEw0NzEuMSw0MDAuMCBMNDUzLjMsMzk0LjQgTDQyNi43LDM3Ny44IFoiLz4KICAgIDxwYXRoIGlkPSJsYW5kLWhpc3BhbmlvbGEiIGQ9Ik00NzUuNiwzOTQuNCBMNDkzLjMsMzk0LjQgTDQ5Ny44LDQwMC4wIEw0ODAuMCw0MDAuMCBMNDc1LjYsMzk0LjQgWiIvPgogICAgPHBhdGggaWQ9ImxhbmQtc3JpTGFua2EiIGQ9Ik0xMTU1LjYsNDUwLjAgTDExNjQuNCw0NTUuNiBMMTE2MC4wLDQ2Ni43IEwxMTU1LjYsNDYxLjEgTDExNTUuNiw0NTAuMCBaIi8+CiAgPC9nPgoKICA8ZyBpZD0iaGlnaGxpZ2h0cyI+CiAgICA8ZWxsaXBzZSBjeD0iMTI5Ny44IiBjeT0iMzExLjEiIHJ4PSI2Ni43IiByeT0iNjEuMSIgZmlsbD0iI0M5QTQ2QSIgZmlsbC1vcGFjaXR5PSIwLjUiIHN0cm9rZT0iIzZCM0UxRiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgICA8dGV4dCBjbGFzcz0icmVnaW9uIGhhbG8iIHg9IjEyOTcuOCIgeT0iMzk4LjIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMxQTFDMUQiPjx0c3BhbiB4PSIxMjk3LjgiIGR5PSIwIj5FQVNUIEFTSUE8L3RzcGFuPjwvdGV4dD4KICAgIDxlbGxpcHNlIGN4PSIxMTQ2LjciIGN5PSIzNzcuOCIgcng9IjUzLjMiIHJ5PSI1NS42IiBmaWxsPSIjQzA4NTUyIiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSIjOEM1QTJCIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDx0ZXh0IGNsYXNzPSJyZWdpb24gaGFsbyIgeD0iMTE0Ni43IiB5PSI0NTkuMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzFBMUMxRCI+PHRzcGFuIHg9IjExNDYuNyIgZHk9IjAiPlNPVVRIICZhbXA7IFNFIEFTSUE8L3RzcGFuPjwvdGV4dD4KICAgIDxlbGxpcHNlIGN4PSIxMDAwLjAiIGN5PSIzMjcuOCIgcng9Ijc1LjYiIHJ5PSI1MC4wIiBmaWxsPSIjRDJCNDhDIiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSIjOEU3QTU1IiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDx0ZXh0IGNsYXNzPSJyZWdpb24gaGFsbyIgeD0iMTAwMC4wIiB5PSI0MDMuOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzFBMUMxRCI+PHRzcGFuIHg9IjEwMDAuMCIgZHk9IjAiPlNPVVRIV0VTVCBBU0lBPC90c3Bhbj48L3RleHQ+CiAgICA8ZWxsaXBzZSBjeD0iNzgyLjIiIGN5PSI0MzMuMyIgcng9IjY2LjciIHJ5PSIzOC45IiBmaWxsPSIjQjZDMkEyIiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSIjNUU2QjRDIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDx0ZXh0IGNsYXNzPSJyZWdpb24gaGFsbyIgeD0iNzgyLjIiIHk9IjQ5OC4yIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMUExQzFEIj48dHNwYW4geD0iNzgyLjIiIGR5PSIwIj5BRlJJQ0E8L3RzcGFuPjwvdGV4dD4KICAgIDxlbGxpcHNlIGN4PSI4NzEuMSIgY3k9IjIyMi4yIiByeD0iMTE1LjYiIHJ5PSI2MS4xIiBmaWxsPSIjOUZCMEFFIiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSIjNEU2MjYwIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDx0ZXh0IGNsYXNzPSJyZWdpb24gaGFsbyIgeD0iODcxLjEiIHk9IjMwOS4zIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMUExQzFEIj48dHNwYW4geD0iODcxLjEiIGR5PSIwIj5FVVJPUEU8L3RzcGFuPjwvdGV4dD4KICAgIDxlbGxpcHNlIGN4PSI0ODAuMCIgY3k9IjU3Ny44IiByeD0iMjYuNyIgcnk9IjEwMC4wIiBmaWxsPSIjQjQ5QUE4IiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSIjNkI0QTVBIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDx0ZXh0IGNsYXNzPSJyZWdpb24gaGFsbyIgeD0iNDgwLjAiIHk9IjY3OS44IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMUExQzFEIj48dHNwYW4geD0iNDgwLjAiIGR5PSIwIj5BTUVSSUNBUzwvdHNwYW4+PC90ZXh0PgogIDwvZz4KICA8ZyBpZD0iZmxvd3MiPgogICAgCiAgPC9nPgogIDxnIGlkPSJwbGFjZXMiPgogICAgCiAgPC9nPgoKICA8ZyBpZD0idGl0bGViYW5kIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjExOCIgZmlsbD0idXJsKCNwYXBlcikiIG9wYWNpdHk9Ii45MyIvPgogICAgPHJlY3QgeD0iMCIgeT0iMTE4IiB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI1IiBmaWxsPSIjQzlBNDZBIi8+CiAgICA8dGV4dCBjbGFzcz0idGl0bGUiIHg9IjQ2IiB5PSI2MiI+VGhlIEhpc3RvcmlhbiZhcG9zO3MgV29ybGQgYXQgYy4gMTIwMDwvdGV4dD4KICAgIDx0ZXh0IGNsYXNzPSJzdWJ0aXRsZSIgeD0iNDgiIHk9Ijk3Ij5Gb3VuZGF0aW9ucyAwIMK3IFRoZSBzaXggQVAgV29ybGQgcmVnaW9uczwvdGV4dD4KICA8L2c+CgogIDxnIGlkPSJsZWdlbmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ2LDY4OCkiPgogICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjY0MCIgaGVpZ2h0PSIyNDQiIHJ4PSIxNCIgZmlsbD0idXJsKCNwYXBlcikiIHN0cm9rZT0iIzNFNDQ0NyIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuOTciLz4KICAgIDx0ZXh0IGNsYXNzPSJzbWFsbCIgeD0iMTgiIHk9IjI4IiBmb250LXdlaWdodD0iNzAwIj5NYXAgS2V5PC90ZXh0PgogICAgICA8cmVjdCB4PSIxOCIgeT0iMzgiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMyIgcng9IjQiIGZpbGw9IiNDOUE0NkEiIGZpbGwtb3BhY2l0eT0iLjYiIHN0cm9rZT0iIzZCM0UxRiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI3NCIgeT0iNTYiPkVBU1QgQVNJQTwvdGV4dD4KICAgICAgPHJlY3QgeD0iMTgiIHk9IjcxIiB3aWR0aD0iNDAiIGhlaWdodD0iMjMiIHJ4PSI0IiBmaWxsPSIjQzA4NTUyIiBmaWxsLW9wYWNpdHk9Ii42IiBzdHJva2U9IiM4QzVBMkIiIHN0cm9rZS13aWR0aD0iMyIvPjx0ZXh0IGNsYXNzPSJzbWFsbCIgeD0iNzQiIHk9Ijg5Ij5TT1VUSCAmYW1wOyBTRSBBU0lBPC90ZXh0PgogICAgICA8cmVjdCB4PSIxOCIgeT0iMTA0IiB3aWR0aD0iNDAiIGhlaWdodD0iMjMiIHJ4PSI0IiBmaWxsPSIjRDJCNDhDIiBmaWxsLW9wYWNpdHk9Ii42IiBzdHJva2U9IiM4RTdBNTUiIHN0cm9rZS13aWR0aD0iMyIvPjx0ZXh0IGNsYXNzPSJzbWFsbCIgeD0iNzQiIHk9IjEyMiI+U09VVEhXRVNUIEFTSUE8L3RleHQ+CiAgICAgIDxyZWN0IHg9IjE4IiB5PSIxMzciIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMyIgcng9IjQiIGZpbGw9IiNCNkMyQTIiIGZpbGwtb3BhY2l0eT0iLjYiIHN0cm9rZT0iIzVFNkI0QyIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI3NCIgeT0iMTU1Ij5BRlJJQ0E8L3RleHQ+CiAgICAgIDxyZWN0IHg9IjE4IiB5PSIxNzAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMyIgcng9IjQiIGZpbGw9IiM5RkIwQUUiIGZpbGwtb3BhY2l0eT0iLjYiIHN0cm9rZT0iIzRFNjI2MCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI3NCIgeT0iMTg4Ij5FVVJPUEU8L3RleHQ+CiAgICAgIDxyZWN0IHg9IjE4IiB5PSIyMDMiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMyIgcng9IjQiIGZpbGw9IiNCNDlBQTgiIGZpbGwtb3BhY2l0eT0iLjYiIHN0cm9rZT0iIzZCNEE1QSIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI3NCIgeT0iMjIxIj5BTUVSSUNBUzwvdGV4dD4KICA8L2c+CgogIDxyZWN0IHg9IjAiIHk9Ijk0OCIgd2lkdGg9IjE2MDAiIGhlaWdodD0iNTIiIGZpbGw9InVybCgjcGFwZXIpIiBvcGFjaXR5PSIuOTMiLz4KICA8dGV4dCBjbGFzcz0idGlueSIgeD0iNDYiIHk9Ijk4MCI+QmVIaXN0b3JpY2FsIGluc3RydWN0aW9uYWwgbWFwLiBUaGUgQVAgV29ybGQgcmVnaW9ucyBhcmUgYW5hbHl0aWMgY2F0ZWdvcmllcywgbm90IGZpeGVkIGJvcmRlcnM7IGNvYXN0bGluZXMgYXJlIHNpbXBsaWZpZWQgZm9yIGNsYXNzcm9vbSBwcm9qZWN0aW9uLjwvdGV4dD4KPC9zdmc+Cg==" alt="The Historian's Map: The World at c.1200"><figcaption><strong>The Historian's Map: The World at c.1200</strong><br>AP World History begins at c.1200. This is the world you are about to learn to read, not memorize. Every unit this year will pull you back to this map, then push it forward.</figcaption></figure><article class="bh-card"><h3>Map Questions</h3><ul class=""><li>Which region on this map do you already know something about, and how did you learn it?</li><li>Which region do you know nothing about, and what does that gap tell you about the version of world history you've been taught before?</li><li>If you had to guess in one sentence, where in the world was the most powerful economy in 1200?</li><li>Why do you think AP World starts at 1200, and not at Ancient Rome, or the American Revolution, or 1500?</li></ul></article><article class="bh-card"><h3>Map Key</h3><dl class="bh-key"><div><dt>East Asia</dt><dd>Song China, the most sophisticated economy on Earth in 1200. You will start Unit 1 here.</dd></div><div><dt>Dar al-Islam</dt><dd>The Islamic world stretches from West Africa to South Asia, the trade and knowledge hub of the medieval world.</dd></div><div><dt>South &amp; Southeast Asia</dt><dd>Indian Ocean crossroads. Hindu, Buddhist, and Muslim kingdoms trade monsoon-driven routes between China and Africa.</dd></div><div><dt>The Americas</dt><dd>Aztec, Inca, and Mississippian societies build states without contact with Afro-Eurasia, a parallel story that will collide with it after 1492.</dd></div><div><dt>Africa</dt><dd>Mali, Great Zimbabwe, Ethiopia. Gold, salt, and Islam move along trans-Saharan and Indian Ocean routes.</dd></div><div><dt>Europe</dt><dd>The quietest corner in 1200, but the one that will reshape global connections after 1450. Watch how AP World frames Europe: not as the center, but as one region among many.</dd></div></dl></article><div class="bh-prompt">
+  <h4>Your Response</h4>
+  <p class="bh-prompt-text">Choose one region on the map. Write one sentence about what you already think you know, and one sentence about what you are curious to learn about it this year.</p>
+  <textarea class="bh-response" id="foundations-0-map" placeholder="Type your response here..."></textarea>
+  <div class="bh-tool-row">
+    <button type="button" onclick="bhSave('foundations-0-map')">Save</button>
+    <button type="button" class="secondary" onclick="bhCopy('foundations-0-map')">Copy This Answer</button>
+  </div>
+  <p class="bh-note" id="foundations-0-map-note"></p>
+</div>
+</section>
+
+<section class="bh-module" id="module-02">
+  <div class="bh-module-head"><span class="bh-badge">Module 02</span><h2>First &amp; 10 Reading</h2></div>
+  <div class="module bh-reading"><div class="reading-title-band">
+    <p class="reading-eyebrow">First &amp; 10 Reading</p>
+    <h1 class="reading-title">The Historian You Are About to <em>Become</em></h1>
+    <p class="reading-deck">Every year on Day 1, you walk into a room and become someone. This year you become a historian, someone who reads the world through six specific habits of mind, and leaves behind a year of thinking that belongs to you.</p>
+    <div class="skill-tags"><span class="skill-tag">Contextualization</span> <span class="skill-tag">Argumentation</span> <span class="skill-tag">Sourcing</span></div>
+  </div>
+
+  <div class="reading-body">
+    <div class="support-strip">
+      <div class="support-card">
+        <h3>Before You Read</h3>
+        <p>Read this like a manifesto, not a syllabus. It is a description of who you are being asked to become this year, a historian, with six specific habits of mind, and what you are building along the way. Notice what changes about the way this class asks you to think.</p>
+      </div>
+      <div class="support-card">
+        <h3>Reading Target</h3>
+        <p>By the end, you should be able to name the six AP historical thinking skills, describe the 10-module rhythm of a BeHistorical class, and explain what your Historian&rsquo;s Portfolio is and who controls it.</p>
+      </div>
+    </div>
+    <div class="vocab-strip">
+      <h3>Vocabulary to Watch</h3>
+      <span class="term-chip">Historian</span> <span class="term-chip">Contextualization</span> <span class="term-chip">Comparison</span> <span class="term-chip">Causation</span> <span class="term-chip">Continuity &amp; Change</span> <span class="term-chip">Argumentation</span> <span class="term-chip">Sourcing</span> <span class="term-chip">First &amp; 10</span> <span class="term-chip">BeSurreal</span> <span class="term-chip">BeInTheRoom</span> <span class="term-chip">Checkpoint</span> <span class="term-chip">Portfolio</span>
+    </div>
+
+    <div class="section">
+      <span class="section-number">1</span>
+      <p class="section-label">Frame</p>
+      <h2 class="section-heading">You Are Not Here to Memorize</h2>
+      <p class="reading-text">Every year on Day 1, you walk into a room and become someone. This year, in this room, you become a <span class="kt">historian</span>. Not in the sense that you memorize kings and dates, that is not what historians do. A historian is someone who reads the past the way a detective reads a crime scene: closely, skeptically, evidence in hand, ready to make an argument and defend it.</p>
+      <p class="reading-text">You will still learn a lot of history in this class. But the history is the material you practice on, not the point of the class. The point is who you become while practicing on it. AP World History does not test your ability to recall dates in May. It tests your ability to think like a historian. That is a very specific set of habits, and this course exists to build them into you.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking:Argumentation</p>
+        <p>The AP exam does not reward memorization. It rewards the ability to make an <strong>argument</strong> about the past, a claim in your voice, supported by evidence, that another intelligent person could reasonably disagree with. Every module in this course is a rep for that skill.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">2</span>
+      <p class="section-label">The Six Habits</p>
+      <h2 class="section-heading">The Six AP Historical Thinking Skills</h2>
+      <p class="reading-text">AP World History is built around six specific habits of mind, the six things historians actually do when they think. Learn them by name, because you will see them in every module of every lesson this year.</p>
+      <p class="reading-text"><span class="kt">Contextualization</span> is placing something inside the world that surrounded it, <em>before</em> you try to explain it. Set the stage first. <span class="kt">Comparison</span> is reading two things side by side to see what is the same, what is different, and, the AP kicker,<em>why the difference matters</em>. Never just list similarities.</p>
+      <p class="reading-text"><span class="kt">Causation</span> is following the chain of cause and effect, and being able to show how you know. Historians distinguish between triggers (the spark) and underlying causes (the fuel). Both matter. Neither alone explains. <span class="kt">Continuity and change over time</span> is watching what stayed the same and what changed as history moved forward, and refusing the easy story that everything changed or nothing did. Both are almost always wrong.</p>
+      <p class="reading-text"><span class="kt">Argumentation</span> is making a claim about the past in your own voice and backing it with specific evidence. A thesis is a position, not a summary. If someone cannot disagree with your thesis, it is not one. And <span class="kt">sourcing</span> is reading a document the way a lawyer reads a witness, who made it, when, why, for whom, and letting that shape how you weigh what it says.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking:Contextualization</p>
+        <p>These six skills are the whole game. Every unit, every lesson, every module in BeHistorical is a rep for one of these six habits. You will do them so many times that by May they become <strong>the way you think</strong>, not just tasks you finish. That is what &ldquo;becoming a historian&rdquo; means. It is not a metaphor.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">3</span>
+      <p class="section-label">The Rhythm</p>
+      <h2 class="section-heading">The Ten Modules of Every Class Period</h2>
+      <p class="reading-text">The rhythm of every class period is the same 10-module pattern, and it is deliberate. <span class="kt">Map</span> builds geographic context. <span class="kt">First &amp; 10</span> is the day&rsquo;s narrative reading, the historian&rsquo;s warm-up, which is what you are doing right now. <span class="kt">Content Delivery</span> is direct instruction. <span class="kt">BeSurreal</span> is a memorable everyday-life detail from the historical moment, the sensory anchor that makes the concept stick.</p>
+      <p class="reading-text">Then the practice work. <span class="kt">Skill Builder</span> practices one AP skill on today&rsquo;s content. <span class="kt">Checkpoint 1</span> captures your thinking early. <span class="kt">Evidence Lab</span> treats visuals as evidence, not decoration. <span class="kt">Primary Source</span> (or the <span class="kt">Socrates AI Coach</span> in Foundations) trains the sourcing skill. <span class="kt">BeInTheRoom</span> puts you inside the moment as a decision-maker, a general, an emperor, a merchant, a scholar, and asks what you would do and why. And <span class="kt">Checkpoint 2</span> is a synthesis, pulling threads across the modules into a single argument.</p>
+      <p class="reading-text">The modules repeat because the skills repeat. You are building muscle memory. The room does not change every class. The work you do inside it does.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking:Continuity &amp; Change Over Time</p>
+        <p>The 10-module pattern is the <strong>continuity</strong> across the year. What changes is <em>your ability to move through it</em>. By January, the checkpoints get faster and sharper. By April, the BeInTheRoom decisions sound like they were made by someone who lives inside the moment. That change is the record of who you became.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-number">4</span>
+      <p class="section-label">The Promise</p>
+      <h2 class="section-heading">What You Are Building: Your Historian&rsquo;s Portfolio</h2>
+      <p class="reading-text">Here is what makes BeHistorical different from most classes: everything you write this year <em>accumulates</em>. Every First &amp; 10 response. Every checkpoint. Every BeInTheRoom decision. Every DBQ draft. Your writing is the raw material for what comes next.</p>
+      <p class="reading-text">In May, after the AP exam, you receive your <span class="kt">Historian&rsquo;s Portfolio</span>: a one-page letter about the historian you became, drawn from your own writing at three moments across the year, September, January, April. The letter will name what you got specifically better at. It will flag one growth edge to keep working on. And it will quote actual sentences you wrote at different points in the year, so the story is grounded in evidence you can see with your own eyes.</p>
+      <p class="reading-text">The portfolio is yours. You see the draft before it is final. You can edit it. You choose who sees it, you, your family, your next AP teacher if you want, your college applications in senior year. It contains only your thinking. Never behavior notes, never personality labels, never anything you did not write. If it is not in your words on the page, it is not in the letter.</p>
+      <p class="reading-text">This is the receipt for what happened to your mind this year. It is not a grade. It is a portable, permanent artifact of who you became, and it starts today, with whatever you write in Checkpoint 2 of this lesson.</p>
+      <div class="ap-callout">
+        <p class="ap-callout-label">AP Thinking:Sourcing</p>
+        <p>You are being asked, on Day 1, to become the source of the most important document about this year of your life. <strong>Write like someone will read it in May.</strong> Because someone will. You.</p>
+      </div>
+    </div>
+
+    <div class="be-ready">
+      <h3>BeReady: 10-Second Takeaway</h3>
+      <p>You are not here to memorize. You are here to become a historian, someone who does six specific habits of mind, in a room that runs on a 10-module rhythm, and to leave a year of thinking behind that you own, in a portfolio drawn from your own words. The record starts today.</p>
+    </div>
+
+    <div class="family-strip">
+      <p class="family-eyebrow">For Families</p>
+      <h3>A Note to Parents &amp; Guardians</h3>
+      <p>Welcome to BeHistorical. This year your student is not just enrolled in AP World History, they are being asked to become a historian. That means practicing six specific habits of mind (contextualization, comparison, causation, continuity and change over time, argumentation, and sourcing) across every unit of the course, and producing a body of writing along the way that captures how they think.</p>
+      <p>In May, after the AP exam, your student will receive a <strong>Historian&rsquo;s Portfolio</strong>, a one-page letter about the historian they became this year, drawn from their own writing at three moments across the year. You will receive a family copy. Here is what you should know about how it works:</p>
+      <ul>
+        <li><strong>Nothing without evidence.</strong> Every claim in the portfolio quotes something your student actually wrote. If it is not in their words, it is not in the letter.</li>
+        <li><strong>Academic voice only.</strong> The portfolio contains only your student&rsquo;s historical thinking, never behavior notes, never discipline history, never personality labels.</li>
+        <li><strong>Your student reviews the draft.</strong> They see it before it is final. They can edit or remove anything. Their voice is their own.</li>
+        <li><strong>Consent-based sharing.</strong> The portfolio does not go anywhere without your student&rsquo;s permission. Next-year teacher, college application, personal archive, your student decides.</li>
+      </ul>
+      <p>Ask your student about their portfolio through the year. Ask what they wrote in September. Ask what they would write about the same topic now. That is how you will hear this course working.</p>
+    </div>
+  </div>
+
+  <div class="check-section">
+    <div class="check-header">
+      <span class="check-badge">Check</span>
+      <span class="check-title">Three Questions to Anchor Day 1</span>
+    </div>
+    <ul class="question-list">
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">01</span>
+          <span class="q-skill">Contextualization</span>
+          <p class="q-text">In your own words, define one of the six AP historical thinking skills and give a specific example, from anywhere in your life, not from history, of a time you already used it without calling it that.</p>
+        </div>
+        <textarea class="q-textarea bh-response" id="foundations-0-first10-q1" placeholder="One of the six skills is [name it]. It means [define]. I already use it when..."></textarea>
+      </li>
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">02</span>
+          <span class="q-skill">Argumentation</span>
+          <p class="q-text">Take a position: which of the six historical thinking skills do you predict will be hardest for you this year, and why? Be honest and be specific, the answer is a baseline, not a grade.</p>
+        </div>
+        <textarea class="q-textarea bh-response" id="foundations-0-first10-q2" placeholder="The skill that will be hardest for me is [name it], because..."></textarea>
+      </li>
+      <li class="question-item">
+        <div class="question-prompt">
+          <span class="q-num">03</span>
+          <span class="q-skill">Sourcing</span>
+          <p class="q-text">Your Historian&rsquo;s Portfolio in May will be sourced from your own words this year, the way historians build claims from documents. Write one sentence you would like your portfolio to be able to say honestly about you, and identify one thing you will have to write this year for that sentence to be sourceable from the record.</p>
+        </div>
+        <textarea class="q-textarea bh-response" id="foundations-0-first10-q3" placeholder="I want my portfolio to be able to say that I... To earn it, I will have to..."></textarea>
+      </li>
+    </ul>
+  </div></div><div class="bh-prompt">
+  <h4>Your Response</h4>
+  <p class="bh-prompt-text">Write a one-paragraph baseline: who are you as a historical thinker on Day 1, and who do you want to be by May? Be specific. This becomes the first line of your portfolio.</p>
+  <textarea class="bh-response" id="foundations-0-first10" placeholder="Type your response here..."></textarea>
+  <div class="bh-tool-row">
+    <button type="button" onclick="bhSave('foundations-0-first10')">Save</button>
+    <button type="button" class="secondary" onclick="bhCopy('foundations-0-first10')">Copy This Answer</button>
+  </div>
+  <p class="bh-note" id="foundations-0-first10-note"></p>
+</div>
+</section>
+
+<section class="bh-module" id="module-03">
+  <div class="bh-module-head"><span class="bh-badge">Module 03</span><h2>Content Delivery</h2></div>
+  <p class="bh-lead">Direct instruction. Work through the cards in order, they build on each other.</p><article class="bh-lecture">
+  <div class="bh-lecture-body">
+    <span class="bh-lecture-num">Card 1 of 5</span>
+    <h3>Welcome to BeHistorical: You Are Not Here to Memorize</h3>
+    <ul><li>AP World History is <strong>not a memorization course</strong>. You will not be tested in May on your ability to recall dates. You will be tested on your ability to <strong>think like a historian</strong>, to contextualize, compare, argue, and reason from evidence.</li><li>This is a course about <strong>becoming a person</strong>, a historian, not about consuming content. Everything you do in this room is a rep for that person.</li><li>BeHistorical is built around <strong>six habits of mind</strong> that repeat every unit, every lesson, every module. By May, these habits are how you think. Not tasks you finish.</li><li>You will still learn a lot of history. But the history is the <strong>material you practice on</strong>, not the point of the class. The point is who you become.</li></ul>
+  </div>
+  <figure class="bh-lecture-fig"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lascaux_painting.jpg" alt="Prehistoric Cave Paintings, Lascaux" data-fallback="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+Rk9VTkRBVElPTlMgMCDigJQgV2VsY29tZSB0byBCZUhpc3RvcmljYWw6IFlvdSBBcmUgTm90IEhlcmUgdG8gTWVtb3JpemU8L3RpdGxlPjxkZXNjIGlkPSJkZXNjIj5Mb2NhbCBCZUhpc3RvcmljYWwgYXJ0d29yayBmb3IgSW50cm8gdG8gQmVIaXN0b3JpY2FsLiBIaXN0b3JpY2FsIGFuY2hvcjogTGVjdHVyZSB2aXN1YWwgwrcgV2VsY29tZSB0byBCZUhpc3RvcmljYWw6IFlvdSBBcmUgTm90IEhlcmUgdG8gTWVtb3JpemUuPC9kZXNjPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMWExYzFkIi8+PHN0b3Agb2Zmc2V0PSIuNTgiIHN0b3AtY29sb3I9IiMyYjJmMzEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzZTQ0NDciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdyI+PHN0b3Agc3RvcC1jb2xvcj0iI2E4NjUyZCIgc3RvcC1vcGFjaXR5PSIuMzQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODY1MmQiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgZmlsbD0idXJsKCNiZykiLz48Y2lyY2xlIGN4PSI3MDciIGN5PSI5NyIgcj0iNDIwIiBmaWxsPSJ1cmwoI2dsb3cpIi8+PGNpcmNsZSBjeD0iMTA0NSIgY3k9IjYxMCIgcj0iMzMwIiBmaWxsPSJ1cmwoI2dsb3cpIiBvcGFjaXR5PSIuNyIvPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2E4NjUyZCIgb3BhY2l0eT0iLjE4Ij48cGF0aCBkPSJNMCA2NTUgMTIwMCAxNDVNMCA3MzUgMTIwMCAyMjUiIHN0cm9rZS13aWR0aD0iMyIvPjxjaXJjbGUgY3g9Ijg1MCIgY3k9IjQwMCIgcj0iMjU1IiBzdHJva2Utd2lkdGg9IjQiLz48Y2lyY2xlIGN4PSI4NTAiIGN5PSI0MDAiIHI9IjI4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9nPgogIDxnIGNvbG9yPSIjYTg2NTJkIiBvcGFjaXR5PSIuODIiPjxjaXJjbGUgY3g9Ijg1MCIgY3k9IjQwMCIgcj0iMTg1IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyMCIvPjxwYXRoIGQ9Im03NTAgNDA1IDcwIDcwIDE0NS0xNjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjI2Ii8+PC9nPgogIDxyZWN0IHg9IjcyIiB5PSI5NiIgd2lkdGg9IjE4MCIgaGVpZ2h0PSI3IiByeD0iMy41IiBmaWxsPSIjYTg2NTJkIiBvcGFjaXR5PSIuNzIiLz48cmVjdCB4PSI3MiIgeT0iMTIyIiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjMiIHJ4PSIxLjUiIGZpbGw9IiNkMmI0OGMiIG9wYWNpdHk9Ii40Ii8+CiAgPHBhdGggZD0iTTcyIDY1MGgzNjBNNzIgNjc4aDIyMCIgc3Ryb2tlPSIjYTg2NTJkIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjMyIi8+Cjwvc3ZnPgo=" onerror="bhFallback(this)"><figcaption><strong>Prehistoric Cave Paintings, Lascaux</strong><br>Long before writing, humans recorded their world on cave walls. History begins not with memorized dates but with people making meaning from what they saw, the same habit of mind you are about to build.<br><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Lascaux_painting.jpg" target="_blank" rel="noopener">Image source</a></figcaption></figure>
+</article><article class="bh-lecture">
+  <div class="bh-lecture-body">
+    <span class="bh-lecture-num">Card 2 of 5</span>
+    <h3>The Six AP Historical Thinking Skills</h3>
+    <ul><li><strong>Contextualization.</strong> Place a person, event, or idea inside the world that surrounded it *before* explaining it. "Set the stage first." Geography, prior events, and simultaneous forces all count as context.</li><li><strong>Comparison.</strong> Read two things side by side. What is the same? What is different? And, the AP kicker,*why does the difference matter?* Never just list similarities.</li><li><strong>Causation.</strong> Follow the chain of cause and effect. Historians distinguish between <strong>triggers</strong> (the spark) and <strong>underlying causes</strong> (the fuel). Both matter. Neither alone explains.</li><li><strong>Continuity & change over time.</strong> Watch what stayed the same and what changed as history moved. Reject the easy story that "everything changed" or "nothing changed." Both are almost always wrong.</li><li><strong>Argumentation.</strong> Make a claim about the past *in your voice* and back it with specific evidence. A thesis is a <strong>position</strong>, not a summary. If someone can't disagree with your thesis, it isn't one.</li><li><strong>Sourcing.</strong> Read a document like a lawyer reads a witness: who made it, when, why, for whom, and what that tells you about what it says. The <strong>source of a claim</strong> matters as much as the claim itself.</li></ul>
+  </div>
+  <figure class="bh-lecture-fig"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg" alt="Confucius, Tang Dynasty depiction" data-fallback="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+Rk9VTkRBVElPTlMgMCDigJQgVGhlIFNpeCBBUCBIaXN0b3JpY2FsIFRoaW5raW5nIFNraWxsczwvdGl0bGU+PGRlc2MgaWQ9ImRlc2MiPkxvY2FsIEJlSGlzdG9yaWNhbCBhcnR3b3JrIGZvciBJbnRybyB0byBCZUhpc3RvcmljYWwuIEhpc3RvcmljYWwgYW5jaG9yOiBMZWN0dXJlIHZpc3VhbCDCtyBUaGUgU2l4IEFQIEhpc3RvcmljYWwgVGhpbmtpbmcgU2tpbGxzLjwvZGVzYz4KICA8ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFhMWMxZCIvPjxzdG9wIG9mZnNldD0iLjU4IiBzdG9wLWNvbG9yPSIjMmIyZjMxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2U0NDQ3Ii8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3ciPjxzdG9wIHN0b3AtY29sb3I9IiNkMGExNWUiIHN0b3Atb3BhY2l0eT0iLjM0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZDBhMTVlIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjYmcpIi8+PGNpcmNsZSBjeD0iNjY5IiBjeT0iMjA4IiByPSI0MjAiIGZpbGw9InVybCgjZ2xvdykiLz48Y2lyY2xlIGN4PSI5NzkiIGN5PSI2MTAiIHI9IjMzMCIgZmlsbD0idXJsKCNnbG93KSIgb3BhY2l0eT0iLjciLz4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNkMGExNWUiIG9wYWNpdHk9Ii4xOCI+PHBhdGggZD0iTTAgNjU1IDEyMDAgMTQ1TTAgNzM1IDEyMDAgMjI1IiBzdHJva2Utd2lkdGg9IjMiLz48Y2lyY2xlIGN4PSI4NTAiIGN5PSI0MDAiIHI9IjI1NSIgc3Ryb2tlLXdpZHRoPSI0Ii8+PGNpcmNsZSBjeD0iODUwIiBjeT0iNDAwIiByPSIyODUiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz4KICA8ZyBjb2xvcj0iI2QwYTE1ZSIgb3BhY2l0eT0iLjgyIj48Y2lyY2xlIGN4PSI4NTAiIGN5PSI0MDAiIHI9IjE4NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMjAiLz48cGF0aCBkPSJtNzUwIDQwNSA3MCA3MCAxNDUtMTY1IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyNiIvPjwvZz4KICA8cmVjdCB4PSI3MiIgeT0iOTYiIHdpZHRoPSIxODAiIGhlaWdodD0iNyIgcng9IjMuNSIgZmlsbD0iI2QwYTE1ZSIgb3BhY2l0eT0iLjcyIi8+PHJlY3QgeD0iNzIiIHk9IjEyMiIgd2lkdGg9IjExMCIgaGVpZ2h0PSIzIiByeD0iMS41IiBmaWxsPSIjZDJiNDhjIiBvcGFjaXR5PSIuNCIvPgogIDxwYXRoIGQ9Ik03MiA2NTBoMzYwTTcyIDY3OGgyMjAiIHN0cm9rZT0iI2QwYTE1ZSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9Ii4zMiIvPgo8L3N2Zz4K" onerror="bhFallback(this)"><figcaption><strong>Confucius, Tang Dynasty depiction</strong><br>The six skills are habits of mind, practiced in writing every week until they become automatic.<br><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg" target="_blank" rel="noopener">Image source</a></figcaption></figure>
+</article><article class="bh-lecture">
+  <div class="bh-lecture-body">
+    <span class="bh-lecture-num">Card 3 of 5</span>
+    <h3>The Rhythm of Every Class Period: The 10 Modules</h3>
+    <ul><li>Every lesson in BeHistorical uses the <strong>same 10 modules</strong>, in the same order, on purpose. The rhythm is the pedagogy: repetition trains the skills into you.</li><li><strong>01 Map</strong> builds geographic context. <strong>02 First & 10</strong> is the day's narrative reading, the historian's warm-up. <strong>03 Content Delivery</strong> is direct instruction on the lecture cards.</li><li><strong>04 BeSurreal</strong> is a memorable everyday-life detail from the historical moment, the sensory anchor that makes the concept stick. <strong>05 Skill Builder</strong> practices one AP skill on today's content. <strong>06 Checkpoint 1</strong> captures your thinking early.</li><li><strong>07 Evidence Lab</strong> treats visuals as evidence, not decoration. <strong>08 Primary Source</strong> (or AI Coach in Foundations) trains sourcing. <strong>09 BeInTheRoom</strong> puts you in the moment as a decision-maker.</li><li><strong>10 Checkpoint 2</strong> is a synthesis, pulling threads across the modules into a single argument. This is the reflex the AP exam rewards.</li></ul>
+  </div>
+  <figure class="bh-lecture-fig"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg" alt="A Library in the Golden Islamic Age" data-fallback="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+Rk9VTkRBVElPTlMgMCDigJQgVGhlIFJoeXRobSBvZiBFdmVyeSBDbGFzcyBQZXJpb2Q6IFRoZSAxMCBNb2R1bGVzPC90aXRsZT48ZGVzYyBpZD0iZGVzYyI+TG9jYWwgQmVIaXN0b3JpY2FsIGFydHdvcmsgZm9yIEludHJvIHRvIEJlSGlzdG9yaWNhbC4gSGlzdG9yaWNhbCBhbmNob3I6IExlY3R1cmUgdmlzdWFsIMK3IFRoZSBSaHl0aG0gb2YgRXZlcnkgQ2xhc3MgUGVyaW9kOiBUaGUgMTAgTW9kdWxlcy48L2Rlc2M+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiMxYTFjMWQiLz48c3RvcCBvZmZzZXQ9Ii41OCIgc3RvcC1jb2xvcj0iIzJiMmYzMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzNlNDQ0NyIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJnbG93Ij48c3RvcCBzdG9wLWNvbG9yPSIjZDJiNDhjIiBzdG9wLW9wYWNpdHk9Ii4zNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2QyYjQ4YyIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iODAwIiBmaWxsPSJ1cmwoI2JnKSIvPjxjaXJjbGUgY3g9IjY3MSIgY3k9IjExNCIgcj0iNDIwIiBmaWxsPSJ1cmwoI2dsb3cpIi8+PGNpcmNsZSBjeD0iOTgyIiBjeT0iNjEwIiByPSIzMzAiIGZpbGw9InVybCgjZ2xvdykiIG9wYWNpdHk9Ii43Ii8+CiAgPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDJiNDhjIiBvcGFjaXR5PSIuMTgiPjxwYXRoIGQ9Ik0wIDY1NSAxMjAwIDE0NU0wIDczNSAxMjAwIDIyNSIgc3Ryb2tlLXdpZHRoPSIzIi8+PGNpcmNsZSBjeD0iODUwIiBjeT0iNDAwIiByPSIyNTUiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9Ijg1MCIgY3k9IjQwMCIgcj0iMjg1IiBzdHJva2Utd2lkdGg9IjIiLz48L2c+CiAgPGcgY29sb3I9IiNkMmI0OGMiIG9wYWNpdHk9Ii44MiI+PGNpcmNsZSBjeD0iODUwIiBjeT0iNDAwIiByPSIxODUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIwIi8+PHBhdGggZD0ibTc1MCA0MDUgNzAgNzAgMTQ1LTE2NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMjYiLz48L2c+CiAgPHJlY3QgeD0iNzIiIHk9Ijk2IiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjciIHJ4PSIzLjUiIGZpbGw9IiNkMmI0OGMiIG9wYWNpdHk9Ii43MiIvPjxyZWN0IHg9IjcyIiB5PSIxMjIiIHdpZHRoPSIxMTAiIGhlaWdodD0iMyIgcng9IjEuNSIgZmlsbD0iI2QyYjQ4YyIgb3BhY2l0eT0iLjQiLz4KICA8cGF0aCBkPSJNNzIgNjUwaDM2ME03MiA2NzhoMjIwIiBzdHJva2U9IiNkMmI0OGMiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIuMzIiLz4KPC9zdmc+Cg==" onerror="bhFallback(this)"><figcaption><strong>A Library in the Golden Islamic Age</strong><br>The 10-module rhythm is the room you enter every class period. The furniture doesn't change, the work you do inside it does.<br><a href="https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg" target="_blank" rel="noopener">Image source</a></figcaption></figure>
+</article><article class="bh-lecture">
+  <div class="bh-lecture-body">
+    <span class="bh-lecture-num">Card 4 of 5</span>
+    <h3>What You Are Building: Your Historian's Portfolio</h3>
+    <ul><li>Everything you write this year, every First & 10 response, every checkpoint, every BeInTheRoom decision, every DBQ draft, is preserved. Your writing is the raw material for what comes next.</li><li>In <strong>May, after the AP exam,</strong> you receive your <strong>Historian's Portfolio</strong>: a one-page letter about the historian you became, drawn from your own writing at three moments across the year, September, January, April.</li><li>The letter names <strong>what you got specifically better at,</strong> flags <strong>one growth edge</strong> to keep working on, and includes <strong>excerpts from your own writing</strong> so the story is grounded in evidence.</li><li>The portfolio is <strong>yours.</strong> You see the draft before it is final. You can edit it. <strong>You choose</strong> who sees it, you, your family, your next AP teacher, your college applications in senior year.</li><li>This is the receipt for what happened to your mind this year. It is not a grade. It is a portable, permanent artifact of who you became.</li></ul>
+  </div>
+  <figure class="bh-lecture-fig"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Isaiah_Scroll_MS_A_%281QIsa%29_-_Google_Art_Project.jpg" alt="The Great Isaiah Scroll, Dead Sea Scrolls" data-fallback="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+Rk9VTkRBVElPTlMgMCDigJQgV2hhdCBZb3UgQXJlIEJ1aWxkaW5nOiBZb3VyIEhpc3RvcmlhbiZhcG9zO3MgUG9ydGZvbGlvPC90aXRsZT48ZGVzYyBpZD0iZGVzYyI+TG9jYWwgQmVIaXN0b3JpY2FsIGFydHdvcmsgZm9yIEludHJvIHRvIEJlSGlzdG9yaWNhbC4gSGlzdG9yaWNhbCBhbmNob3I6IExlY3R1cmUgdmlzdWFsIMK3IFdoYXQgWW91IEFyZSBCdWlsZGluZzogWW91ciBIaXN0b3JpYW4mYXBvcztzIFBvcnRmb2xpby48L2Rlc2M+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiMxYTFjMWQiLz48c3RvcCBvZmZzZXQ9Ii41OCIgc3RvcC1jb2xvcj0iIzJiMmYzMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzNlNDQ0NyIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJnbG93Ij48c3RvcCBzdG9wLWNvbG9yPSIjYzlhNDZhIiBzdG9wLW9wYWNpdHk9Ii4zNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2M5YTQ2YSIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iODAwIiBmaWxsPSJ1cmwoI2JnKSIvPjxjaXJjbGUgY3g9IjY0MCIgY3k9IjIwMiIgcj0iNDIwIiBmaWxsPSJ1cmwoI2dsb3cpIi8+PGNpcmNsZSBjeD0iOTc2IiBjeT0iNjEwIiByPSIzMzAiIGZpbGw9InVybCgjZ2xvdykiIG9wYWNpdHk9Ii43Ii8+CiAgPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzlhNDZhIiBvcGFjaXR5PSIuMTgiPjxwYXRoIGQ9Ik0wIDY1NSAxMjAwIDE0NU0wIDczNSAxMjAwIDIyNSIgc3Ryb2tlLXdpZHRoPSIzIi8+PGNpcmNsZSBjeD0iODUwIiBjeT0iNDAwIiByPSIyNTUiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9Ijg1MCIgY3k9IjQwMCIgcj0iMjg1IiBzdHJva2Utd2lkdGg9IjIiLz48L2c+CiAgPGcgY29sb3I9IiNjOWE0NmEiIG9wYWNpdHk9Ii44MiI+PGNpcmNsZSBjeD0iODUwIiBjeT0iNDAwIiByPSIxODUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIwIi8+PHBhdGggZD0ibTc1MCA0MDUgNzAgNzAgMTQ1LTE2NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMjYiLz48L2c+CiAgPHJlY3QgeD0iNzIiIHk9Ijk2IiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjciIHJ4PSIzLjUiIGZpbGw9IiNjOWE0NmEiIG9wYWNpdHk9Ii43MiIvPjxyZWN0IHg9IjcyIiB5PSIxMjIiIHdpZHRoPSIxMTAiIGhlaWdodD0iMyIgcng9IjEuNSIgZmlsbD0iI2QyYjQ4YyIgb3BhY2l0eT0iLjQiLz4KICA8cGF0aCBkPSJNNzIgNjUwaDM2ME03MiA2NzhoMjIwIiBzdHJva2U9IiNjOWE0NmEiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIuMzIiLz4KPC9zdmc+Cg==" onerror="bhFallback(this)"><figcaption><strong>The Great Isaiah Scroll, Dead Sea Scrolls</strong><br>Ancient scrolls preserved a community's words across millennia, a body of writing kept as a single document. Your portfolio is a version of the same idea, your own writing curated into a letter you own.<br><a href="https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Isaiah_Scroll_MS_A_(1QIsa)_-_Google_Art_Project.jpg" target="_blank" rel="noopener">Image source</a></figcaption></figure>
+</article><article class="bh-lecture">
+  <div class="bh-lecture-body">
+    <span class="bh-lecture-num">Card 5 of 5</span>
+    <h3>The Compact: Student, Family, Teacher</h3>
+    <ul><li><strong>To the student:</strong> Take the checkpoints seriously. They are not busywork. They are the raw material of your portfolio. Write in your voice. Write like a historian, not like a kid finishing a worksheet.</li><li><strong>To the family:</strong> Your student is producing a <strong>portable body of work.</strong> In May you will receive a family copy of the portfolio. It is grounded in your student's own writing, and it captures growth, not just performance.</li><li><strong>On trust and consent:</strong> The portfolio contains only <strong>your student's thinking</strong>, never behavior notes, discipline history, or personality labels. Only academic voice. Your student reviews and edits before it is finalized. Nothing goes to a next teacher without your student's permission.</li><li><strong>Nothing gets in without evidence.</strong> Every claim in the portfolio quotes something your student actually wrote. If it is not on the page in their voice, it is not in the letter.</li><li><strong>On sharing:</strong> Your student decides where the portfolio goes. It is a piece of writing about them, owned by them, forwarded only with their consent. That principle is non-negotiable.</li></ul>
+  </div>
+  <figure class="bh-lecture-fig"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Palastexamen-SongDynastie.jpg" alt="Song Dynasty Palace Examinations" data-fallback="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+Rk9VTkRBVElPTlMgMCDigJQgVGhlIENvbXBhY3Q6IFN0dWRlbnQsIEZhbWlseSwgVGVhY2hlcjwvdGl0bGU+PGRlc2MgaWQ9ImRlc2MiPkxvY2FsIEJlSGlzdG9yaWNhbCBhcnR3b3JrIGZvciBJbnRybyB0byBCZUhpc3RvcmljYWwuIEhpc3RvcmljYWwgYW5jaG9yOiBMZWN0dXJlIHZpc3VhbCDCtyBUaGUgQ29tcGFjdDogU3R1ZGVudCwgRmFtaWx5LCBUZWFjaGVyLjwvZGVzYz4KICA8ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFhMWMxZCIvPjxzdG9wIG9mZnNldD0iLjU4IiBzdG9wLWNvbG9yPSIjMmIyZjMxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2U0NDQ3Ii8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3ciPjxzdG9wIHN0b3AtY29sb3I9IiNjOWE0NmEiIHN0b3Atb3BhY2l0eT0iLjM0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzlhNDZhIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjYmcpIi8+PGNpcmNsZSBjeD0iNjU1IiBjeT0iMjE3IiByPSI0MjAiIGZpbGw9InVybCgjZ2xvdykiLz48Y2lyY2xlIGN4PSI5ODQiIGN5PSI2MTAiIHI9IjMzMCIgZmlsbD0idXJsKCNnbG93KSIgb3BhY2l0eT0iLjciLz4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNjOWE0NmEiIG9wYWNpdHk9Ii4xOCI+PHBhdGggZD0iTTAgNjU1IDEyMDAgMTQ1TTAgNzM1IDEyMDAgMjI1IiBzdHJva2Utd2lkdGg9IjMiLz48Y2lyY2xlIGN4PSI4NTAiIGN5PSI0MDAiIHI9IjI1NSIgc3Ryb2tlLXdpZHRoPSI0Ii8+PGNpcmNsZSBjeD0iODUwIiBjeT0iNDAwIiByPSIyODUiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz4KICA8ZyBjb2xvcj0iI2M5YTQ2YSIgb3BhY2l0eT0iLjgyIj48Y2lyY2xlIGN4PSI4NTAiIGN5PSI0MDAiIHI9IjE4NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMjAiLz48cGF0aCBkPSJtNzUwIDQwNSA3MCA3MCAxNDUtMTY1IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyNiIvPjwvZz4KICA8cmVjdCB4PSI3MiIgeT0iOTYiIHdpZHRoPSIxODAiIGhlaWdodD0iNyIgcng9IjMuNSIgZmlsbD0iI2M5YTQ2YSIgb3BhY2l0eT0iLjcyIi8+PHJlY3QgeD0iNzIiIHk9IjEyMiIgd2lkdGg9IjExMCIgaGVpZ2h0PSIzIiByeD0iMS41IiBmaWxsPSIjZDJiNDhjIiBvcGFjaXR5PSIuNCIvPgogIDxwYXRoIGQ9Ik03MiA2NTBoMzYwTTcyIDY3OGgyMjAiIHN0cm9rZT0iI2M5YTQ2YSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9Ii4zMiIvPgo8L3N2Zz4K" onerror="bhFallback(this)"><figcaption><strong>Song Dynasty Palace Examinations</strong><br>The Song civil-service exam was a compact between a state and its citizens about what counted as a serious mind. The BeHistorical compact is smaller and more honest, but it is a compact, and it starts today.<br><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Palastexamen-SongDynastie.jpg" target="_blank" rel="noopener">Image source</a></figcaption></figure>
+</article>
+</section>
+
+<section class="bh-module" id="module-04">
+  <div class="bh-module-head"><span class="bh-badge">Module 04</span><h2>BeSurreal</h2></div>
+  <p class="bh-lead">A vignette of the moment you meet the historian you spent the year becoming.</p><article class="bh-callout"><h3>It's Late May. You Open a Letter About Yourself.</h3><p>The AP exam was three weeks ago. School is almost over. Your teacher hands you a printed one-page letter with your name at the top and the BeHistorical mark at the bottom.</p><blockquote>You start reading. The letter is not a grade. It is a description of you, as a historian, written from your own words. Three checkpoint responses from September, when you barely knew what contextualization meant. Three from January, when you were writing DBQ introductions in your sleep. Three from April, when you had a voice, an actual historical voice, dry and skeptical and comfortable making claims. The letter names the specific move you got best at. It flags one thing to keep working on. It quotes a sentence you wrote in October that you had completely forgotten writing, and reading it now makes you smile because it sounds like you but younger. You send a copy to your U.S. History teacher for next year. You keep one for yourself. Your parents get one too. It is not a report card. It is a receipt for what happened to your mind this year.</blockquote></article><div class="bh-prompt">
+  <h4>Your Response</h4>
+  <p class="bh-prompt-text">One sentence: what do you want that letter, the one that will be written from your own writing in May, to say about you?</p>
+  <textarea class="bh-response" id="foundations-0-besurreal" placeholder="Type your response here..."></textarea>
+  <div class="bh-tool-row">
+    <button type="button" onclick="bhSave('foundations-0-besurreal')">Save</button>
+    <button type="button" class="secondary" onclick="bhCopy('foundations-0-besurreal')">Copy This Answer</button>
+  </div>
+  <p class="bh-note" id="foundations-0-besurreal-note"></p>
+</div>
+</section>
+
+<section class="bh-module" id="module-05">
+  <div class="bh-module-head"><span class="bh-badge">Module 05</span><h2>AP Skill Builder: Meet the Six Skills</h2></div>
+  <p class="bh-lead">You are not expected to be good at any of these yet. The point is to hear each skill's question in your head so you can recognize it later. For each of the six, jot one sentence. Speed over polish, this is a warm-up.</p><article class="bh-card"><h3>Steps</h3><ol class="bh-steps"><li>CONTEXTUALIZATION. In one sentence, describe the wider world of 2026 that a historian in 2100 would need to know to understand your school.</li><li>COMPARISON. In one sentence, name one similarity and one difference between how you learn today and how a student learned 100 years ago.</li><li>CAUSATION. In one sentence, explain one thing that caused your school to look the way it does, and how you know.</li><li>CONTINUITY & CHANGE OVER TIME. In one sentence, name one thing about American teenagers that has stayed the same for 50 years, and one thing that has changed.</li><li>ARGUMENTATION. In one sentence, take a position on this claim: "Social media has made students worse at reading." Use one piece of evidence.</li><li>SOURCING. In one sentence, describe how you would decide whether a TikTok video about historical events is a trustworthy source.</li></ol></article><div class="bh-prompt">
+  <h4>Your Response</h4>
+  <p class="bh-prompt-text">Pick the one of the six warm-ups above that felt hardest to write. In two sentences, explain why, and what you think the skill is really asking you to do.</p>
+  <textarea class="bh-response" id="foundations-0-skill" placeholder="Type your response here..."></textarea>
+  <div class="bh-tool-row">
+    <button type="button" onclick="bhSave('foundations-0-skill')">Save</button>
+    <button type="button" class="secondary" onclick="bhCopy('foundations-0-skill')">Copy This Answer</button>
+  </div>
+  <p class="bh-note" id="foundations-0-skill-note"></p>
+</div>
+</section>
+
+<section class="bh-module" id="module-06">
+  <div class="bh-module-head"><span class="bh-badge">Module 06</span><h2>Checkpoint 1</h2></div>
+  <article class="bh-callout"><h3>Baseline Checkpoint: Your Historian's Pledge</h3><p>Write your Historian's Pledge, one paragraph, in your own voice, that captures who you are as a historical thinker on Day 1 and who you are trying to become by May. This becomes the opening entry in your portfolio.</p></article><article class="bh-card"><h3>Strong Response Checklist</h3><ul class="bh-checklist"><li>I described where I am today as a thinker, honestly, without overclaiming or underselling.</li><li>I named at least one of the six AP skills I want to get stronger at this year, and why.</li><li>I said something specific about the kind of historical voice I want to have by May.</li><li>It sounds like me. If someone read it out loud, my classmates could tell it was mine.</li></ul></article><div class="bh-prompt">
+  <h4>Your Response</h4>
+  <p class="bh-prompt-text">Answer the prompt stated directly above.</p>
+  <textarea class="bh-response" id="foundations-0-checkpoint" placeholder="Type your response here..."></textarea>
+  <div class="bh-tool-row">
+    <button type="button" onclick="bhSave('foundations-0-checkpoint')">Save</button>
+    <button type="button" class="secondary" onclick="bhCopy('foundations-0-checkpoint')">Copy This Answer</button>
+  </div>
+  <p class="bh-note" id="foundations-0-checkpoint-note"></p>
+</div>
+</section>
+
+<section class="bh-module" id="module-07">
+  <div class="bh-module-head"><span class="bh-badge">Module 07</span><h2>Evidence Lab</h2></div>
+  <p class="bh-lead">Every module you complete this year produces a piece of evidence about how you think. Look at these three examples, an early checkpoint response, a middle-of-year BeInTheRoom decision, and a late-year DBQ opening, and notice how one student's historical voice develops over nine months. That is what the portfolio captures.</p><div class="bh-two"><figure class="bh-figure"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG" alt="Artifact 1 (September): An Early Checkpoint Response" data-fallback="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+Rk9VTkRBVElPTlMgMCDigJQgQXJ0aWZhY3QgMSAoU2VwdGVtYmVyKTogQW4gRWFybHkgQ2hlY2twb2ludCBSZXNwb25zZTwvdGl0bGU+PGRlc2MgaWQ9ImRlc2MiPkxvY2FsIEJlSGlzdG9yaWNhbCBhcnR3b3JrIGZvciBJbnRybyB0byBCZUhpc3RvcmljYWwuIEhpc3RvcmljYWwgYW5jaG9yOiBTYW1wbGU6ICZxdW90O1NvbmcgQ2hpbmEgaGFkIGEgbG90IG9mIHRyYWRlIGJlY2F1c2UgdGhleSBoYWQgYSBiaWcgbmF2eSBhbmQgZ29vZCBib2F0cy4gQWxzbyB0aGV5IGludmVudGVkIHBhcGVyIG1vbmV5LiZxdW90OyBBIGZpcnN0LXdlZWsgcmVzcG9uc2UuIENvcnJlY3QsIGJ1dCBmbGF0LiBUaGUgc3R1ZGVudCBuYW1lcyB0d28gZmFjdHMuIFRoZXkgaGF2ZSBub3QgeWV0IGxlYXJuZWQgdG8gcGxhY2UgU29uZyBDaGluYSBpbiBjb250ZXh0IG9yIGNvbm5lY3QgdGhvc2UgZmFjdHMgdG8gY2F1c2F0aW9uLiBUaGlzIGlzIHdoZXJlIGV2ZXJ5IGhpc3RvcmlhbiBzdGFydHMuLjwvZGVzYz4KICA8ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFhMWMxZCIvPjxzdG9wIG9mZnNldD0iLjU4IiBzdG9wLWNvbG9yPSIjMmIyZjMxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2U0NDQ3Ii8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3ciPjxzdG9wIHN0b3AtY29sb3I9IiNhODY1MmQiIHN0b3Atb3BhY2l0eT0iLjM0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYTg2NTJkIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjYmcpIi8+PGNpcmNsZSBjeD0iNzQyIiBjeT0iMTQ3IiByPSI0MjAiIGZpbGw9InVybCgjZ2xvdykiLz48Y2lyY2xlIGN4PSIxMDQ1IiBjeT0iNjEwIiByPSIzMzAiIGZpbGw9InVybCgjZ2xvdykiIG9wYWNpdHk9Ii43Ii8+CiAgPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTg2NTJkIiBvcGFjaXR5PSIuMTgiPjxwYXRoIGQ9Ik0wIDY1NSAxMjAwIDE0NU0wIDczNSAxMjAwIDIyNSIgc3Ryb2tlLXdpZHRoPSIzIi8+PGNpcmNsZSBjeD0iODUwIiBjeT0iNDAwIiByPSIyNTUiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9Ijg1MCIgY3k9IjQwMCIgcj0iMjg1IiBzdHJva2Utd2lkdGg9IjIiLz48L2c+CiAgPGcgY29sb3I9IiNhODY1MmQiIG9wYWNpdHk9Ii44MiI+PGNpcmNsZSBjeD0iODUwIiBjeT0iNDAwIiByPSIxODUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIwIi8+PHBhdGggZD0ibTc1MCA0MDUgNzAgNzAgMTQ1LTE2NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMjYiLz48L2c+CiAgPHJlY3QgeD0iNzIiIHk9Ijk2IiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjciIHJ4PSIzLjUiIGZpbGw9IiNhODY1MmQiIG9wYWNpdHk9Ii43MiIvPjxyZWN0IHg9IjcyIiB5PSIxMjIiIHdpZHRoPSIxMTAiIGhlaWdodD0iMyIgcng9IjEuNSIgZmlsbD0iI2QyYjQ4YyIgb3BhY2l0eT0iLjQiLz4KICA8cGF0aCBkPSJNNzIgNjUwaDM2ME03MiA2NzhoMjIwIiBzdHJva2U9IiNhODY1MmQiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIuMzIiLz4KPC9zdmc+Cg==" onerror="bhFallback(this)"><figcaption><strong>Artifact 1 (September): An Early Checkpoint Response</strong><br>Sample: &quot;Song China had a lot of trade because they had a big navy and good boats. Also they invented paper money.&quot; A first-week response. Correct, but flat. The student names two facts. They have not yet learned to place Song China in context or connect those facts to causation. This is where every historian starts.<br><em>What is this response missing that a stronger version of you, in April, would add?</em><br><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Song_Imperial_Examination.JPG" target="_blank" rel="noopener">Image source</a></figcaption></figure><figure class="bh-figure"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg" alt="Artifact 2 (January): A BeInTheRoom Decision" data-fallback="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+Rk9VTkRBVElPTlMgMCDigJQgQXJ0aWZhY3QgMiAoSmFudWFyeSk6IEEgQmVJblRoZVJvb20gRGVjaXNpb248L3RpdGxlPjxkZXNjIGlkPSJkZXNjIj5Mb2NhbCBCZUhpc3RvcmljYWwgYXJ0d29yayBmb3IgSW50cm8gdG8gQmVIaXN0b3JpY2FsLiBIaXN0b3JpY2FsIGFuY2hvcjogU2FtcGxlOiAmcXVvdDtBcyBNYW5zYSBNdXNhJmFwb3M7cyBhZHZpc29yLCBJIHdvdWxkIHNwZW5kIHRoZSBnb2xkIG1vcmUgc2xvd2x5IG9uIHRoZSBoYWpqIHRvIE1lY2NhLCBiZWNhdXNlIHN1ZGRlbiBpbmZsb3dzIG9mIFdlc3QgQWZyaWNhbiBnb2xkIGludG8gRWd5cHRpYW4gbWFya2V0cyBjcmFzaGVkIGxvY2FsIHByaWNlcywgZGFtYWdpbmcgTWFsaSZhcG9zO3MgcmVwdXRhdGlvbiBhcyBhIHRyYWRlIHBhcnRuZXIuIExvbmctdGVybSBpbmZsdWVuY2UgbWF0dGVycyBtb3JlIHRoYW4gb25lIGRyYW1hdGljIGdlc3R1cmUuJnF1b3Q7LCBBIG1pZC15ZWFyIEJlSW5UaGVSb29tIHJlc3BvbnNlLiBUaGUgc3R1ZGVudCBpcyBtYWtpbmcgYSBkZWNpc2lvbiBhcyBhIGhpc3RvcmljYWwgYWN0b3IsIHdlaWdoaW5nIGV2aWRlbmNlLCBhbmQgdXNpbmcgY2F1c2F0aW9uIG5hdHVyYWxseS4uPC9kZXNjPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMWExYzFkIi8+PHN0b3Agb2Zmc2V0PSIuNTgiIHN0b3AtY29sb3I9IiMyYjJmMzEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzZTQ0NDciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdyI+PHN0b3Agc3RvcC1jb2xvcj0iI2M5YTQ2YSIgc3RvcC1vcGFjaXR5PSIuMzQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjOWE0NmEiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgZmlsbD0idXJsKCNiZykiLz48Y2lyY2xlIGN4PSI3MTAiIGN5PSIxOTkiIHI9IjQyMCIgZmlsbD0idXJsKCNnbG93KSIvPjxjaXJjbGUgY3g9Ijk5MSIgY3k9IjYxMCIgcj0iMzMwIiBmaWxsPSJ1cmwoI2dsb3cpIiBvcGFjaXR5PSIuNyIvPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M5YTQ2YSIgb3BhY2l0eT0iLjE4Ij48cGF0aCBkPSJNMCA2NTUgMTIwMCAxNDVNMCA3MzUgMTIwMCAyMjUiIHN0cm9rZS13aWR0aD0iMyIvPjxjaXJjbGUgY3g9Ijg1MCIgY3k9IjQwMCIgcj0iMjU1IiBzdHJva2Utd2lkdGg9IjQiLz48Y2lyY2xlIGN4PSI4NTAiIGN5PSI0MDAiIHI9IjI4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9nPgogIDxnIGNvbG9yPSIjYzlhNDZhIiBvcGFjaXR5PSIuODIiPjxjaXJjbGUgY3g9Ijg1MCIgY3k9IjQwMCIgcj0iMTg1IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyMCIvPjxwYXRoIGQ9Im03NTAgNDA1IDcwIDcwIDE0NS0xNjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjI2Ii8+PC9nPgogIDxyZWN0IHg9IjcyIiB5PSI5NiIgd2lkdGg9IjE4MCIgaGVpZ2h0PSI3IiByeD0iMy41IiBmaWxsPSIjYzlhNDZhIiBvcGFjaXR5PSIuNzIiLz48cmVjdCB4PSI3MiIgeT0iMTIyIiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjMiIHJ4PSIxLjUiIGZpbGw9IiNkMmI0OGMiIG9wYWNpdHk9Ii40Ii8+CiAgPHBhdGggZD0iTTcyIDY1MGgzNjBNNzIgNjc4aDIyMCIgc3Ryb2tlPSIjYzlhNDZhIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjMyIi8+Cjwvc3ZnPgo=" onerror="bhFallback(this)"><figcaption><strong>Artifact 2 (January): A BeInTheRoom Decision</strong><br>Sample: &quot;As Mansa Musa's advisor, I would spend the gold more slowly on the hajj to Mecca, because sudden inflows of West African gold into Egyptian markets crashed local prices, damaging Mali's reputation as a trade partner. Long-term influence matters more than one dramatic gesture.&quot;, A mid-year BeInTheRoom response. The student is making a decision as a historical actor, weighing evidence, and using causation naturally.<br><em>What has this student learned to do by January that they were not doing in September?</em><br><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg" target="_blank" rel="noopener">Image source</a></figcaption></figure><figure class="bh-figure"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg" alt="Artifact 3 (April): A DBQ Opening" data-fallback="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+Rk9VTkRBVElPTlMgMCDigJQgQXJ0aWZhY3QgMyAoQXByaWwpOiBBIERCUSBPcGVuaW5nPC90aXRsZT48ZGVzYyBpZD0iZGVzYyI+TG9jYWwgQmVIaXN0b3JpY2FsIGFydHdvcmsgZm9yIEludHJvIHRvIEJlSGlzdG9yaWNhbC4gSGlzdG9yaWNhbCBhbmNob3I6IFNhbXBsZTogJnF1b3Q7SW5kdXN0cmlhbGl6YXRpb24gZGlkIG5vdCBsaWJlcmF0ZSB3b3JrZXJzIHNvIG11Y2ggYXMgaXQgcmUtbGVnaXRpbWl6ZWQgY29lcmNpb24uIEZyb20gTWFuY2hlc3RlciZhcG9zO3MgY290dG9uIG1pbGxzIHRvIEJlbGdpYW4gcnViYmVyIGNhbXBzIGluIHRoZSBDb25nbywgdGhlIHN1cnBsdXMgdGhhdCBpbmR1c3RyaWFsIGNhcGl0YWxpc20gcHJvZHVjZWQgZGVwZW5kZWQgb24gZm9ybXMgb2YgdW5mcmVlIGxhYm9yIHRoYXQgaXRzIG93biBwb2xpdGljYWwgcmhldG9yaWMgY2xhaW1lZCB0byBoYXZlIGFib2xpc2hlZCwgYSBjb250cmFkaWN0aW9uIHRoYXQgc2hhcGVkIGJvdGggbmluZXRlZW50aC1jZW50dXJ5IGltcGVyaWFsaXNtIGFuZCB0aGUgbGFib3IgbW92ZW1lbnRzIHRoYXQgcmVzaXN0ZWQgaXQuJnF1b3Q7LCBBIGxhdGUteWVhciBEQlEgdGhlc2lzLiBUaGUgc3R1ZGVudCBoYXMgYSB2b2ljZSwgYSBwb3NpdGlvbiwgYW5kIGEgcGxhbi4uPC9kZXNjPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMWExYzFkIi8+PHN0b3Agb2Zmc2V0PSIuNTgiIHN0b3AtY29sb3I9IiMyYjJmMzEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzZTQ0NDciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdyI+PHN0b3Agc3RvcC1jb2xvcj0iI2E4NjUyZCIgc3RvcC1vcGFjaXR5PSIuMzQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODY1MmQiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgZmlsbD0idXJsKCNiZykiLz48Y2lyY2xlIGN4PSI2MDciIGN5PSI5MCIgcj0iNDIwIiBmaWxsPSJ1cmwoI2dsb3cpIi8+PGNpcmNsZSBjeD0iMTAzNSIgY3k9IjYxMCIgcj0iMzMwIiBmaWxsPSJ1cmwoI2dsb3cpIiBvcGFjaXR5PSIuNyIvPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2E4NjUyZCIgb3BhY2l0eT0iLjE4Ij48cGF0aCBkPSJNMCA2NTUgMTIwMCAxNDVNMCA3MzUgMTIwMCAyMjUiIHN0cm9rZS13aWR0aD0iMyIvPjxjaXJjbGUgY3g9Ijg1MCIgY3k9IjQwMCIgcj0iMjU1IiBzdHJva2Utd2lkdGg9IjQiLz48Y2lyY2xlIGN4PSI4NTAiIGN5PSI0MDAiIHI9IjI4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9nPgogIDxnIGNvbG9yPSIjYTg2NTJkIiBvcGFjaXR5PSIuODIiPjxjaXJjbGUgY3g9Ijg1MCIgY3k9IjQwMCIgcj0iMTg1IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyMCIvPjxwYXRoIGQ9Im03NTAgNDA1IDcwIDcwIDE0NS0xNjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjI2Ii8+PC9nPgogIDxyZWN0IHg9IjcyIiB5PSI5NiIgd2lkdGg9IjE4MCIgaGVpZ2h0PSI3IiByeD0iMy41IiBmaWxsPSIjYTg2NTJkIiBvcGFjaXR5PSIuNzIiLz48cmVjdCB4PSI3MiIgeT0iMTIyIiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjMiIHJ4PSIxLjUiIGZpbGw9IiNkMmI0OGMiIG9wYWNpdHk9Ii40Ii8+CiAgPHBhdGggZD0iTTcyIDY1MGgzNjBNNzIgNjc4aDIyMCIgc3Ryb2tlPSIjYTg2NTJkIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjMyIi8+Cjwvc3ZnPgo=" onerror="bhFallback(this)"><figcaption><strong>Artifact 3 (April): A DBQ Opening</strong><br>Sample: &quot;Industrialization did not liberate workers so much as it re-legitimized coercion. From Manchester's cotton mills to Belgian rubber camps in the Congo, the surplus that industrial capitalism produced depended on forms of unfree labor that its own political rhetoric claimed to have abolished, a contradiction that shaped both nineteenth-century imperialism and the labor movements that resisted it.&quot;, A late-year DBQ thesis. The student has a voice, a position, and a plan.<br><em>What is different about this student's writing that is not just about learning more content?</em><br><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri,_folio_86r_(detail).jpg" target="_blank" rel="noopener">Image source</a></figcaption></figure></div><div class="bh-prompt">
+  <h4>Your Response</h4>
+  <p class="bh-prompt-text">Choose one of the three artifacts below. In 2–3 sentences, describe the skill the student is practicing and one specific thing you would like your own version of this artifact to do by the end of the year.</p>
+  <textarea class="bh-response" id="foundations-0-evidence" placeholder="Type your response here..."></textarea>
+  <div class="bh-tool-row">
+    <button type="button" onclick="bhSave('foundations-0-evidence')">Save</button>
+    <button type="button" class="secondary" onclick="bhCopy('foundations-0-evidence')">Copy This Answer</button>
+  </div>
+  <p class="bh-note" id="foundations-0-evidence-note"></p>
+</div>
+</section>
+
+<section class="bh-module" id="module-08">
+  <div class="bh-module-head"><span class="bh-badge">Module 08</span><h2>Socrates AI Coach</h2></div>
+  <p class="bh-lead">Before you can watch yourself grow as a historical thinker, you need to know where you are today. These prompts help you take an honest self-portrait. There are no wrong answers on Day 1. The point is a real baseline.</p><article class="bh-card"><h3>Socrates Coach: Meet Yourself as a Historian</h3><div class="bh-coach"><div class="bh-coach-item"><strong>Prompt 1</strong><span>When you read something about the past, a textbook, a documentary, a museum sign, what do you usually notice first? What do you usually skip?</span></div><div class="bh-coach-item"><strong>Prompt 2</strong><span>Which of the six AP skills do you already do naturally without calling it a skill (contextualization, comparison, causation, continuity/change, argumentation, sourcing)? Which one sounds hardest?</span></div><div class="bh-coach-item"><strong>Prompt 3</strong><span>When you write about history, do you tend to summarize what happened, or do you tend to argue about what it meant? Which one feels safer, and why?</span></div><div class="bh-coach-item"><strong>Prompt 4</strong><span>If your April AP teacher were reading a letter about you as a historian right now, based only on your work today, what would it honestly say?</span></div></div>
+  <p class="bh-note">Open the class AI coach at <a href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">student.magicschool.ai</a> (join code czwb9Q) if your teacher has it open today.</p></article><div class="bh-prompt">
+  <h4>Your Response</h4>
+  <p class="bh-prompt-text">Choose one prompt. Write a paragraph that captures where you are as a historical thinker on Day 1. This becomes part of your baseline for the year.</p>
+  <textarea class="bh-response" id="foundations-0-coach" placeholder="Type your response here..."></textarea>
+  <div class="bh-tool-row">
+    <button type="button" onclick="bhSave('foundations-0-coach')">Save</button>
+    <button type="button" class="secondary" onclick="bhCopy('foundations-0-coach')">Copy This Answer</button>
+  </div>
+  <p class="bh-note" id="foundations-0-coach-note"></p>
+</div>
+</section>
+
+<section class="bh-module" id="module-09">
+  <div class="bh-module-head"><span class="bh-badge">Module 09</span><h2>BeInTheRoom</h2></div>
+  <p class="bh-lead">An immersive experience for this topic is coming soon. Your teacher will run this module in class when it is ready.</p>
+</section>
+
+<section class="bh-module" id="module-10">
+  <div class="bh-module-head"><span class="bh-badge">Module 10</span><h2>Checkpoint 2</h2></div>
+  <p class="bh-lead">Use evidence from at least two modules above. Connect what you studied today to the bigger picture of AP World History.</p><article class="bh-callout"><h3>Synthesis Checkpoint</h3><p>What is one specific thing you want your Historian's Portfolio to say about you in May, and what will you have to do this year to earn it?</p></article><div class="bh-prompt">
+  <h4>Your Response</h4>
+  <p class="bh-prompt-text">Answer the prompt stated directly above.</p>
+  <textarea class="bh-response" id="foundations-0-checkpoint2" placeholder="Type your response here..."></textarea>
+  <div class="bh-tool-row">
+    <button type="button" onclick="bhSave('foundations-0-checkpoint2')">Save</button>
+    <button type="button" class="secondary" onclick="bhCopy('foundations-0-checkpoint2')">Copy This Answer</button>
+  </div>
+  <p class="bh-note" id="foundations-0-checkpoint2-note"></p>
+</div>
+</section>
+
+<section class="bh-module" id="videos">
+  <div class="bh-module-head"><span class="bh-badge">Extra</span><h2>Video Clips</h2></div>
+  <p class="bh-lead">Optional reinforcement. Watch for the guiding question, do not take random notes.</p>
+  <div class="bh-two"><article class="bh-card"><h3>Crash Course World History: What Is History?</h3><p>Watch for: what does John Green say historians actually do, and how is it different from what you thought &quot;learning history&quot; meant?</p><p><a class="bh-btn-link" href="https://www.youtube.com/watch?v=Yocja_N5s1I" target="_blank" rel="noopener">Open video</a></p></article><article class="bh-card"><h3>Heimler's History on AP World: The Big Picture</h3><p>Watch for: how does Heimler frame the AP historical thinking skills, and which one sounds most like a habit you already have?</p><p><a class="bh-btn-link" href="https://www.youtube.com/watch?v=QO7NHZJ-eE4" target="_blank" rel="noopener">Open video</a></p></article></div>
+</section>
+
+<section class="bh-module" id="terms">
+  <div class="bh-module-head"><span class="bh-badge">Reference</span><h2>Key Terms</h2></div>
+  <table class="bh-table"><thead><tr><th>Term</th><th>What It Means</th></tr></thead><tbody><tr><td><strong>Historian</strong></td><td>A person who reads the past like a detective, closely, skeptically, evidence in hand, and makes arguments they can defend.</td></tr><tr><td><strong>Contextualization</strong></td><td>Placing a person, event, or idea inside the wider world that surrounded it before trying to explain it. The AP way of saying &quot;set the stage first.&quot;</td></tr><tr><td><strong>Causation</strong></td><td>Explaining what caused what, and being able to show how you know. Historians follow chains, not just list events.</td></tr><tr><td><strong>Argumentation</strong></td><td>Making a claim about the past in your own voice and backing it with specific evidence. Not a summary. A position.</td></tr><tr><td><strong>Sourcing</strong></td><td>Reading a document like a lawyer reads a witness: who made it, when, why, and what that tells you about what it says.</td></tr><tr><td><strong>Portfolio</strong></td><td>The one-page Historian's Letter you will receive in May, drawn from your own writing across the year. Yours. Editable. You choose who sees it.</td></tr></tbody></table>
+</section>
+
+<section class="bh-module" id="timeline">
+  <div class="bh-module-head"><span class="bh-badge">Reference</span><h2>Timeline</h2></div>
+  <table class="bh-table"><thead><tr><th>When</th><th>What Happened</th></tr></thead><tbody><tr><td><strong>Week 1 (August)</strong></td><td>Baseline. You write your first Historian's Pledge. Everything you write from here becomes raw material for your portfolio.</td></tr><tr><td><strong>Foundations 1–5 (Weeks 1–3)</strong></td><td>The world before c.1200. Geography, belief systems, states, trade, the operating system underneath everything AP World studies.</td></tr><tr><td><strong>Units 1–4 (September–December)</strong></td><td>c.1200–1750. Networks, empires, land-based expansions, and the transoceanic revolutions that connect the world.</td></tr><tr><td><strong>Units 5–7 (January–March)</strong></td><td>Revolutions, industry, and imperialism. The modern world is built, and its costs come due.</td></tr><tr><td><strong>Units 8–9 (March–April)</strong></td><td>Cold War, decolonization, and globalization. Your six skills applied to the recent past.</td></tr><tr><td><strong>May: AP Exam &amp; Portfolio</strong></td><td>You take the exam. You receive your Historian's Portfolio, a one-page letter about the historian you became, drawn from your own writing.</td></tr></tbody></table>
+  <p class="bh-lead">Which moment of this year do you think will change you the most as a thinker, and why?</p>
+</section>
+
+  <section class="bh-export" id="turn-in">
+    <h2>Turn In Your Work</h2>
+    <p>Add your name so your teacher can identify the paste, then gather and copy everything you typed above.</p>
+    <div class="bh-tool-row">
+      <input id="bh-name" placeholder="Your name" style="flex:2;min-width:12rem;padding:.55rem .8rem;border-radius:3px;border:1px solid #3E4447;background:#23272a;color:#F5F0E7;font-family:'Libre Baskerville',Georgia,serif;font-size:.85rem">
+      <input id="bh-period" placeholder="Period" style="flex:1;min-width:6rem;padding:.55rem .8rem;border-radius:3px;border:1px solid #3E4447;background:#23272a;color:#F5F0E7;font-family:'Libre Baskerville',Georgia,serif;font-size:.85rem">
+    </div>
+    <div class="bh-tool-row">
+      <button type="button" onclick="bhGather()">Gather All My Work</button>
+      <button type="button" class="secondary" onclick="bhCopyAll()">Copy to Clipboard</button>
+      <button type="button" class="secondary" onclick="bhPrint()">Print / Save as PDF</button>
+    </div>
+    <div id="bh-output"><p style="opacity:.7;margin:0">Press <strong>Gather All My Work</strong>, then Copy to Clipboard, and paste into Canvas.</p></div>
+    <p class="bh-note" id="bh-result"></p>
+  </section>
+
+  <p class="bh-footer">BeHistorical &nbsp;&middot;&nbsp; FOUNDATIONS 0 &nbsp;&middot;&nbsp; Intro to BeHistorical</p>
+</div>
+
+<div class="bh-sticky">
+  <button type="button" onclick="bhGather()">Gather All My Work</button>
+  <button type="button" class="secondary" onclick="bhCopyAll()">Copy for Canvas</button>
+</div>
+
+<script>
+var BH_TOPIC="FOUNDATIONS 0";
+var BH_TITLE="Intro to BeHistorical";
+var BH_KEY="behistorical-canvas-foundations-0";
+var BH_ITEMS=[{"id":"foundations-0-map","label":"Module 01, Map & Geography Check","prompt":"Choose one region on the map. Write one sentence about what you already think you know, and one sentence about what you are curious to learn about it this year."},{"id":"foundations-0-first10-q1","label":"Module 02, First & 10 Question 1","prompt":"In your own words, define one of the six AP historical thinking skills and give a specific example, from anywhere in your life, not from history, of a time you already used it without calling it that."},{"id":"foundations-0-first10-q2","label":"Module 02, First & 10 Question 2","prompt":"Take a position: which of the six historical thinking skills do you predict will be hardest for you this year, and why? Be honest and be specific, the answer is a baseline, not a grade."},{"id":"foundations-0-first10-q3","label":"Module 02, First & 10 Question 3","prompt":"Your Historian&rsquo;s Portfolio in May will be sourced from your own words this year, the way historians build claims from documents. Write one sentence you would like your portfolio to be able to say honestly about you, and identify one thing you will have to write this year for that sentence to be sourceable from the record."},{"id":"foundations-0-first10","label":"Module 02, First & 10 Reading","prompt":"Write a one-paragraph baseline: who are you as a historical thinker on Day 1, and who do you want to be by May? Be specific. This becomes the first line of your portfolio."},{"id":"foundations-0-besurreal","label":"Module 04, BeSurreal","prompt":"One sentence: what do you want that letter, the one that will be written from your own writing in May, to say about you?"},{"id":"foundations-0-skill","label":"Module 05, AP Skill Builder","prompt":"Pick the one of the six warm-ups above that felt hardest to write. In two sentences, explain why, and what you think the skill is really asking you to do."},{"id":"foundations-0-checkpoint","label":"Module 06, Checkpoint 1","prompt":"Write your Historian's Pledge, one paragraph, in your own voice, that captures who you are as a historical thinker on Day 1 and who you are trying to become by May. This becomes the opening entry in your portfolio."},{"id":"foundations-0-evidence","label":"Module 07, Evidence Lab","prompt":"Choose one of the three artifacts below. In 2–3 sentences, describe the skill the student is practicing and one specific thing you would like your own version of this artifact to do by the end of the year."},{"id":"foundations-0-coach","label":"Module 08, Socrates AI Coach","prompt":"Choose one prompt. Write a paragraph that captures where you are as a historical thinker on Day 1. This becomes part of your baseline for the year."},{"id":"foundations-0-checkpoint2","label":"Module 10, Checkpoint 2","prompt":"What is one specific thing you want your Historian's Portfolio to say about you in May, and what will you have to do this year to earn it?"}];
+
+function bhFallback(img){
+  var fb=img.getAttribute('data-fallback');
+  if(!fb||img.src===fb)return;
+  img.onerror=null;img.src=fb;img.className+=' bh-art';
+}
+function bhEl(id){return document.getElementById(id);}
+function bhStoreKey(id){return BH_KEY+'::'+id;}
+function bhSay(id,msg){var n=bhEl(id+'-note');if(n)n.textContent=msg;}
+function bhSave(id){
+  var t=bhEl(id);if(!t)return;
+  try{localStorage.setItem(bhStoreKey(id),t.value||'');bhSay(id,'Saved in this browser on this device.');}
+  catch(e){bhSay(id,'This browser will not let the page save. Copy your work somewhere safe.');}
+}
+function bhCopy(id){
+  var t=bhEl(id);if(!t)return;
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(t.value||'').then(function(){bhSay(id,'Copied.');},function(){bhSay(id,'Copy blocked. Select the text and press Ctrl-C.');});
+  }else{bhSay(id,'Select the text and press Ctrl-C.');}
+}
+function bhLoad(){
+  var boxes=document.querySelectorAll('textarea.bh-response');
+  for(var i=0;i<boxes.length;i++){
+    try{var v=localStorage.getItem(bhStoreKey(boxes[i].id));if(v)boxes[i].value=v;}catch(e){}
+  }
+}
+// Autosave, so closing the tab never costs a student their typing.
+document.addEventListener('input',function(e){
+  var t=e.target;
+  if(!t||!t.id||!t.classList||!t.classList.contains('bh-response'))return;
+  clearTimeout(t._bhTimer);
+  t._bhTimer=setTimeout(function(){
+    try{localStorage.setItem(bhStoreKey(t.id),t.value||'');bhSay(t.id,'Saved automatically.');}catch(err){}
+  },600);
+});
+
+function bhEscape(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function bhParas(t){
+  return String(t).split(/\n{2,}/).map(function(b){
+    return '<p>'+bhEscape(b.trim()).replace(/\n/g,'<br>')+'</p>';
+  }).join('');
+}
+function bhCollect(){
+  var out=[];
+  BH_ITEMS.forEach(function(item){
+    var el=bhEl(item.id),v='';
+    if(el)v=(el.value||'').trim();
+    if(!v){try{v=(localStorage.getItem(bhStoreKey(item.id))||'').trim();}catch(e){}}
+    if(v)out.push({label:item.label,prompt:item.prompt,text:v});
+  });
+  return out;
+}
+function bhBuildDoc(){
+  var work=bhCollect();
+  if(!work.length)return null;
+  var name=(bhEl('bh-name')&&bhEl('bh-name').value.trim())||'';
+  var period=(bhEl('bh-period')&&bhEl('bh-period').value.trim())||'';
+  var stamp=new Date().toLocaleString();
+  var head='<div><p><strong>AP World History, '+bhEscape(BH_TOPIC)+'</strong><br><strong>'+bhEscape(BH_TITLE)+'</strong></p>'
+    +(name||period?'<p><strong>Name:</strong> '+bhEscape(name)+(period?' &nbsp;&nbsp;<strong>Period:</strong> '+bhEscape(period):'')+'</p>':'')
+    +'<p><em>Student work, copied '+bhEscape(stamp)+'</em></p><hr>';
+  var body=work.map(function(w){
+    return '<p><strong>'+bhEscape(w.label)+'</strong></p>'
+      +(w.prompt?'<p><strong>Question:</strong> <em>'+bhEscape(w.prompt)+'</em></p>':'')
+      +'<p><strong>My response:</strong></p>'+bhParas(w.text);
+  }).join('<hr>');
+  var plainParts=['AP WORLD HISTORY, '+BH_TOPIC,BH_TITLE];
+  if(name)plainParts.push('Name: '+name+(period?'   Period: '+period:''));
+  plainParts.push('Student work, copied '+stamp,'');
+  work.forEach(function(w){
+    plainParts.push(w.label.toUpperCase());
+    if(w.prompt)plainParts.push('Question: '+w.prompt);
+    plainParts.push('My response:',w.text,'');
+  });
+  return {html:head+body+'</div>',plain:plainParts.join('\n'),count:work.length};
+}
+function bhGather(){
+  var out=bhEl('bh-output'),res=bhEl('bh-result');
+  var doc=bhBuildDoc();
+  if(!doc){
+    out.innerHTML='<p style="opacity:.7;margin:0">Nothing typed yet. Work through the modules above, then gather your work.</p>';
+    out.dataset.plain='';
+    res.textContent='';
+    return null;
+  }
+  out.innerHTML=doc.html;
+  out.dataset.plain=doc.plain;
+  res.textContent='Gathered '+doc.count+' response'+(doc.count===1?'':'s')+'. Copy it, then paste it into the Canvas assignment.';
+  return doc;
+}
+function bhSelect(el){
+  try{
+    var r=document.createRange();r.selectNodeContents(el);
+    var s=window.getSelection();s.removeAllRanges();s.addRange(r);
+    return true;
+  }catch(e){return false;}
+}
+function bhCopyAll(){
+  var out=bhEl('bh-output'),res=bhEl('bh-result');
+  var doc=bhGather();
+  if(!doc)return;
+  bhSelect(out);
+  var say=function(m){res.textContent=m;};
+  if(window.ClipboardItem&&navigator.clipboard&&navigator.clipboard.write){
+    navigator.clipboard.write([new ClipboardItem({
+      'text/html':new Blob([doc.html],{type:'text/html'}),
+      'text/plain':new Blob([doc.plain],{type:'text/plain'})
+    })]).then(function(){say('Copied with formatting. Paste it into the Canvas assignment.');},function(){bhCopyFallback(say);});
+  }else{bhCopyFallback(say);}
+}
+function bhCopyFallback(say){
+  var copied=false;
+  try{copied=document.execCommand('copy');}catch(e){copied=false;}
+  if(copied){say('Copied with formatting. Paste it into the Canvas assignment.');return;}
+  var out=bhEl('bh-output');
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(out.dataset.plain||out.textContent||'')
+      .then(function(){say('Copied as plain text. Paste it into the Canvas assignment.');},
+            function(){say('Copy is blocked on this device. Your work is selected, press Ctrl-C.');});
+  }else{say('Your work is selected, press Ctrl-C to copy.');}
+}
+function bhPrint(){window.print();}
+bhLoad();
+</script>
+</body>
+</html>
