@@ -699,6 +699,57 @@ function responseBlock(id, prompt, responseType, terms = [], captureKey = '') {
 
 // ── Draft / save / copy / self-check ─────────────────────────────────────────
 
+// Draft storage that cannot throw.
+//
+// Touching localStorage raises a SecurityError, not a null, when the browser
+// refuses it: a sandboxed frame (which is one of the ways Canvas serves
+// uploaded HTML), Safari private browsing, or a device policy that disables
+// site data. Unguarded, that one throw took out autosave, took out loadDraft
+// and therefore openModule for any module with a textarea, and took out Copy
+// All My Work, with nothing on screen to tell the student their typing was not
+// being kept.
+//
+// Every write also lands in a memory copy, so a lesson still gathers a full
+// Copy All My Work within the session even when nothing can be persisted. What
+// is lost in that case is surviving a reload, and the student is told so
+// plainly rather than finding out afterwards.
+const BHDraftStore = (function () {
+  const memory = {};
+  let live = false;
+  try {
+    const probe = '__bh_probe__';
+    localStorage.setItem(probe, '1');
+    localStorage.removeItem(probe);
+    live = true;
+  } catch (e) { live = false; }
+
+  return {
+    get available() { return live; },
+    get(key) {
+      if (live) { try { return localStorage.getItem(key); } catch (e) { live = false; } }
+      return Object.prototype.hasOwnProperty.call(memory, key) ? memory[key] : null;
+    },
+    set(key, value) {
+      memory[key] = value;
+      if (!live) return false;
+      try { localStorage.setItem(key, value); return true; } catch (e) { live = false; return false; }
+    },
+    keys() {
+      if (live) {
+        try {
+          const out = [];
+          for (let i = 0; i < localStorage.length; i++) out.push(localStorage.key(i));
+          return out;
+        } catch (e) { live = false; }
+      }
+      return Object.keys(memory);
+    }
+  };
+})();
+
+// Shown wherever a save would otherwise claim success it cannot deliver.
+const BH_NO_STORAGE_NOTE = 'This browser will not let the page save drafts. Your typing stays until you close the tab, so gather and copy your work into Canvas before you leave.';
+
 // Namespace localStorage keys by topic so drafts never bleed across lessons.
 function draftKey(id) {
   const topic = (L && L.meta && L.meta.topic) ? L.meta.topic.replace(/\s+/g, '-').toLowerCase() : 'shared';
@@ -708,14 +759,15 @@ function draftKey(id) {
 function saveDraft(id) {
   const t = byId(id);
   if (!t) return;
-  localStorage.setItem(draftKey(id), t.value || '');
-  byId(id + '-result').textContent = 'Draft saved in this browser on this device.';
+  const saved = BHDraftStore.set(draftKey(id), t.value || '');
+  const r = byId(id + '-result');
+  if (r) r.textContent = saved ? 'Draft saved in this browser on this device.' : BH_NO_STORAGE_NOTE;
 }
 
 function loadDraft(id) {
   const t = byId(id);
   if (!t) return;
-  const saved = localStorage.getItem(draftKey(id));
+  const saved = BHDraftStore.get(draftKey(id));
   if (saved) t.value = saved;
 }
 
@@ -772,6 +824,32 @@ function rememberPrompt(id, prompt) {
   if (id && prompt) WORK_PROMPTS[id] = String(prompt);
 }
 
+// The First & 10 renders in an iframe, so its three answers cannot be read off
+// this page: the modal is destroyed the moment another module opens. The reading
+// writes them to behistorical-first10-<TOPIC_KEY> instead, with the question text
+// attached, and this pulls them back in under the first10-q1..q3 ids WORK_ITEMS
+// already declares. See scripts/add-first10-capture.js.
+//
+// The stored question is what the student actually read, so it wins over
+// L.first10.questions, which can drift from the reading's wording.
+function injectFirst10Answers(stored) {
+  const topicKey = ((L.meta && L.meta.topic) || '').replace('Topic ', '').trim();
+  if (!topicKey) return;
+  const raw = BHDraftStore.get(`behistorical-first10-${topicKey}`);
+  if (!raw) return;
+  let saved;
+  try { saved = JSON.parse(raw); } catch (e) { return; }
+  if (!Array.isArray(saved)) return;
+  saved.forEach((item, i) => {
+    if (!item) return;
+    const id = `first10-q${i + 1}`;
+    const answer = String(item.a || '').trim();
+    if (!answer) return;
+    stored[id] = answer;
+    if (item.q) rememberPrompt(id, item.q);
+  });
+}
+
 function promptForId(id) {
   if (WORK_PROMPTS[id]) return WORK_PROMPTS[id];
   const item = WORK_ITEMS.find(w => w.id === id);
@@ -809,18 +887,19 @@ function collectLessonWork() {
   const prefix = draftKey('');
   const stored = {};
 
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (!key || key.indexOf(prefix) !== 0) continue;
-    const value = (localStorage.getItem(key) || '').trim();
+  BHDraftStore.keys().forEach(key => {
+    if (!key || key.indexOf(prefix) !== 0) return;
+    const value = (BHDraftStore.get(key) || '').trim();
     if (value) stored[key.slice(prefix.length)] = value;
-  }
+  });
 
   document.querySelectorAll('textarea.response-area').forEach(t => {
     if (!t.id || t.id === WORK_EXPORT_ID) return;
     const value = (t.value || '').trim();
     if (value) stored[t.id] = value;
   });
+
+  injectFirst10Answers(stored);
 
   const ordered = [];
   const listed = new Set();
@@ -972,9 +1051,9 @@ document.addEventListener('input', function (event) {
   if (!t.classList || !t.classList.contains('response-area')) return;
   clearTimeout(t._draftTimer);
   t._draftTimer = setTimeout(function () {
-    localStorage.setItem(draftKey(t.id), t.value || '');
+    const saved = BHDraftStore.set(draftKey(t.id), t.value || '');
     const r = byId(t.id + '-result');
-    if (r) r.textContent = 'Saved automatically in this browser on this device.';
+    if (r) r.textContent = saved ? 'Saved automatically in this browser on this device.' : BH_NO_STORAGE_NOTE;
   }, 600);
 });
 

@@ -104,9 +104,48 @@ function foundationCaptureAttrs(responseTypeKey){
   if(!window.BH_FORM||typeof captureDataAttrs!=='function'||!FOUNDATION_TOPIC_KEY)return '';
   return captureDataAttrs(FOUNDATION_TOPIC_KEY,responseTypeKey);
 }
-function saveDraft(id){const t=byId(id);localStorage.setItem(`foundations-topic-${id}`,t.value||'');byId(id+'-result').textContent='Draft saved in this browser on this device.'}
+// Draft storage that cannot throw.
+//
+// Touching localStorage raises a SecurityError, not a null, when the browser
+// refuses it: a sandboxed frame (which is one of the ways Canvas serves
+// uploaded HTML), Safari private browsing, or a device policy that disables
+// site data. Unguarded, that one throw took out autosave, took out loadDrafts
+// and therefore openModule for any module with a textarea, and took out Copy
+// All My Work, with nothing on screen to tell the student their typing was not
+// being kept.
+//
+// Every write also lands in a memory copy, so a lesson still gathers a full
+// Copy All My Work within the session even when nothing can be persisted. What
+// is lost in that case is surviving a reload, and the student is told so
+// plainly rather than finding out afterwards.
+const BHDraftStore=(function(){
+  const memory={};
+  let live=false;
+  try{const probe='__bh_probe__';localStorage.setItem(probe,'1');localStorage.removeItem(probe);live=true;}catch(e){live=false;}
+  return {
+    get available(){return live;},
+    get(key){
+      if(live){try{return localStorage.getItem(key);}catch(e){live=false;}}
+      return Object.prototype.hasOwnProperty.call(memory,key)?memory[key]:null;
+    },
+    set(key,value){
+      memory[key]=value;
+      if(!live)return false;
+      try{localStorage.setItem(key,value);return true;}catch(e){live=false;return false;}
+    },
+    keys(){
+      if(live){
+        try{const out=[];for(let i=0;i<localStorage.length;i++)out.push(localStorage.key(i));return out;}catch(e){live=false;}
+      }
+      return Object.keys(memory);
+    }
+  };
+})();
+// Shown wherever a save would otherwise claim success it cannot deliver.
+const BH_NO_STORAGE_NOTE='This browser will not let the page save drafts. Your typing stays until you close the tab, so gather and copy your work into Canvas before you leave.';
+function saveDraft(id){const t=byId(id);if(!t)return;const ok=BHDraftStore.set(`foundations-topic-${id}`,t.value||'');const r=byId(id+'-result');if(r)r.textContent=ok?'Draft saved in this browser on this device.':BH_NO_STORAGE_NOTE;}
 function copyResponse(id){const t=byId(id);navigator.clipboard.writeText(t.value||'').then(()=>byId(id+'-result').textContent='Response copied.').catch(()=>byId(id+'-result').textContent='Copy failed. Select and copy manually.')}
-function loadDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>{if(t.id===WORK_EXPORT_ID)return;const saved=localStorage.getItem(`foundations-topic-${t.id}`);if(saved)t.value=saved})}
+function loadDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>{if(t.id===WORK_EXPORT_ID)return;const saved=BHDraftStore.get(`foundations-topic-${t.id}`);if(saved)t.value=saved})}
 
 // ── Autosave and Copy All My Work ─────────────────────────────────────────────
 //
@@ -126,6 +165,12 @@ function loadDrafts(){document.querySelectorAll('textarea.response-area').forEac
 // to "no prompt", never throw and lose the student's work.
 const FOUNDATION_WORK_ITEMS=[
   {slot:'map',        label:'Module 01, Map & Geography Check', prompt:()=>T.map.prompt},
+  // The First & 10's three check questions. Their text is stored with the
+  // answers by the reading itself, so promptForSlot resolves them from
+  // WORK_PROMPTS and these fallbacks stay empty.
+  {slot:'first10-q1', label:'Module 02, First & 10, Question 1',prompt:()=>''},
+  {slot:'first10-q2', label:'Module 02, First & 10, Question 2',prompt:()=>''},
+  {slot:'first10-q3', label:'Module 02, First & 10, Question 3',prompt:()=>''},
   {slot:'first10',    label:'Module 02, First & 10 Reading',    prompt:()=>first10.prompt},
   {slot:'besurreal',  label:'Module 04, BeSurreal',             prompt:()=>beSurreal.prompt},
   {slot:'skill',      label:'Module 05, AP Skill Builder',      prompt:()=>T.skill.prompt},
@@ -135,6 +180,25 @@ const FOUNDATION_WORK_ITEMS=[
   {slot:'checkpoint2',label:'Module 10, Checkpoint 2',          prompt:()=>T.exitTicket||T.checkpoint.prompt}
 ];
 
+// The First & 10 renders in an iframe, so its three answers cannot be read off
+// this page: the modal is gone the moment another module opens. The reading
+// writes them to behistorical-first10-<TOPIC_KEY> instead, with the question
+// text attached, and this pulls them back in. See scripts/add-first10-capture.js.
+function injectFirst10Answers(stored){
+  if(!FOUNDATION_TOPIC_KEY)return;
+  const raw=BHDraftStore.get(`behistorical-first10-${FOUNDATION_TOPIC_KEY}`);
+  if(!raw)return;
+  let saved;
+  try{saved=JSON.parse(raw);}catch(e){return;}
+  if(!Array.isArray(saved))return;
+  saved.forEach((item,i)=>{
+    if(!item)return;
+    const slot=`first10-q${i+1}`,answer=String(item.a||'').trim();
+    if(!answer)return;
+    stored[slot]=answer;
+    if(item.q)WORK_PROMPTS[slot]=String(item.q);
+  });
+}
 function promptForSlot(slot){
   if(WORK_PROMPTS[slot])return WORK_PROMPTS[slot];
   const item=FOUNDATION_WORK_ITEMS.find(w=>w.slot===slot);
@@ -153,18 +217,18 @@ function paragraphsHtml(t){return String(t).split(/\n{2,}/).map(b=>'<p>'+escapeW
 function collectLessonWork(){
   const prefix=`foundations-topic-${T.id}-`;
   const stored={};
-  for(let i=0;i<localStorage.length;i++){
-    const key=localStorage.key(i);
-    if(!key||key.indexOf(prefix)!==0)continue;
-    const value=(localStorage.getItem(key)||'').trim();
+  BHDraftStore.keys().forEach(key=>{
+    if(!key||key.indexOf(prefix)!==0)return;
+    const value=(BHDraftStore.get(key)||'').trim();
     if(value)stored[key.slice(prefix.length)]=value;
-  }
+  });
   document.querySelectorAll('textarea.response-area').forEach(t=>{
     if(!t.id||t.id===WORK_EXPORT_ID)return;
     const value=(t.value||'').trim();
     if(!value)return;
     stored[t.id.indexOf(`${T.id}-`)===0?t.id.slice(`${T.id}-`.length):t.id]=value;
   });
+  injectFirst10Answers(stored);
   const ordered=[],listed=new Set();
   FOUNDATION_WORK_ITEMS.forEach(item=>{
     listed.add(item.slot);
@@ -269,9 +333,9 @@ document.addEventListener('input',function(event){
   if(!t.classList||!t.classList.contains('response-area'))return;
   clearTimeout(t._draftTimer);
   t._draftTimer=setTimeout(function(){
-    localStorage.setItem(`foundations-topic-${t.id}`,t.value||'');
+    const ok=BHDraftStore.set(`foundations-topic-${t.id}`,t.value||'');
     const r=byId(t.id+'-result');
-    if(r)r.textContent='Saved automatically in this browser on this device.';
+    if(r)r.textContent=ok?'Saved automatically in this browser on this device.':BH_NO_STORAGE_NOTE;
   },600);
 });
 
