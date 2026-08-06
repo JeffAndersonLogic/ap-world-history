@@ -190,20 +190,43 @@
       return s;
     }
 
+    // Targets and criteria accept either a plain string or { text, label }.
+    // The generated file uses the object form to carry the AP theme.
+    function normalizeEntries(list) {
+      return (list || []).map(function (entry) {
+        if (has(entry)) return { text: entry.trim(), label: '' };
+        if (entry && has(entry.text)) {
+          return { text: entry.text.trim(), label: has(entry.label) ? entry.label.trim() : '' };
+        }
+        return null;
+      }).filter(Boolean);
+    }
+
+    // These slides carry curriculum prose, which varies from one line to a
+    // paragraph, so the type steps down as the slide fills rather than
+    // letting a long day overflow the screen.
+    function densityClass(entries) {
+      var chars = entries.reduce(function (sum, e) { return sum + e.text.length; }, 0);
+      if (chars > 430 || entries.length > 4) return ' is-tight';
+      if (chars > 240 || entries.length > 3) return ' is-dense';
+      return '';
+    }
+
     // Learning targets are a set, not a sequence, so they carry a rule rather
     // than the numbering the agenda uses.
     function buildTargetsSlide(day) {
-      var targets = (day.learningTargets || []).filter(has);
+      var targets = normalizeEntries(day.learningTargets);
       if (!targets.length) return null;
 
       var s = slide();
       s.appendChild(eyebrow('Learning Targets'));
       s.appendChild(el('h2', 'slide-title', 'What you are learning'));
 
-      var list = el('ul', 'target-list' + (targets.length > 3 ? ' is-long' : ''));
-      targets.forEach(function (text) {
+      var list = el('ul', 'target-list' + densityClass(targets));
+      targets.forEach(function (entry) {
         var item = el('li', 'target-item');
-        item.appendChild(el('span', 'target-text', text));
+        if (entry.label) item.appendChild(el('span', 'entry-label', entry.label));
+        item.appendChild(el('span', 'target-text', entry.text));
         list.appendChild(item);
       });
       s.appendChild(list);
@@ -213,18 +236,21 @@
     // Success criteria are things a student ticks off, so they get checkboxes.
     // The mark is drawn in CSS, no glyph and no font dependency.
     function buildCriteriaSlide(day) {
-      var criteria = (day.successCriteria || []).filter(has);
+      var criteria = normalizeEntries(day.successCriteria);
       if (!criteria.length) return null;
 
       var s = slide();
       s.appendChild(eyebrow('Success Criteria'));
       s.appendChild(el('h2', 'slide-title', "You've got it when"));
 
-      var list = el('ul', 'criteria-list' + (criteria.length > 3 ? ' is-long' : ''));
-      criteria.forEach(function (text) {
+      var list = el('ul', 'criteria-list' + densityClass(criteria));
+      criteria.forEach(function (entry) {
         var item = el('li', 'criteria-item');
         item.appendChild(el('span', 'criteria-mark'));
-        item.appendChild(el('span', 'criteria-text', text));
+        var body = el('span', 'criteria-body');
+        if (entry.label) body.appendChild(el('span', 'entry-label', entry.label));
+        body.appendChild(el('span', 'criteria-text', entry.text));
+        item.appendChild(body);
         list.appendChild(item);
       });
       s.appendChild(list);

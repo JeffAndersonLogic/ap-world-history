@@ -1,175 +1,121 @@
 /* =========================================================
-   BEHISTORICAL DAILY ANNOUNCEMENTS BOARD, CONTENT FILE
-   =========================================================
+   GENERATED FILE, DO NOT EDIT BY HAND
 
-   This is the only file you edit to change what shows on the
-   classroom screen. Open announcements.html and the board reads
-   whatever is below.
+   Written by scripts/build-announcements.js from
+   assets/data/announcements-schedule.js. Every learning target
+   and success criterion below is copied from the lesson data
+   file named above it, so the board matches the lesson page.
 
-   THE BOARD SHOWS SIX THINGS:
-
-     1. Topic for the day        the title card
-     2. Learning targets         what you are learning
-     3. Success criteria         how you know you have learned it
-     4. Homework                 what leaves the room tonight
-     5. Upcoming topics          built automatically from `days`
-     6. Quizzes and exams        from `assessments`
-
-   THREE LISTS FEED THEM:
-
-     settings      how fast the slides move, and the exam countdown
-     days          one entry per class day, items 1 to 4 above
-     assessments   every quiz, test, and exam, item 6 above
-
-   RULES THE BOARD FOLLOWS:
-
-     - Dates are always 'YYYY-MM-DD'. That is the only format that works.
-     - The board looks for the day entry whose date matches today. Every
-       later entry in `days` automatically becomes an Upcoming Topic, so
-       typing a week on Sunday fills that slide for free.
-     - An assessment whose day has passed disappears on its own. You do
-       not have to prune the list.
-     - Every field except `date` is optional. Leave a field out or set it
-       to '' and the board simply skips that slide.
-     - Keep text short. This projects to the back of a classroom.
-
+   To change what the classroom screen shows, edit the schedule
+   and run:  node scripts/build-announcements.js
    ========================================================= */
 
 window.BEHISTORICAL_ANNOUNCEMENTS = {
 
-  /* ---------------------------------------------------------
-     SETTINGS
-     --------------------------------------------------------- */
   settings: {
     courseName: 'AP World History',
-    // Both of these are blank on purpose, so nothing personal projects on
-    // the screen. Fill either one in and it appears in the footer.
     teacherName: '',
     roomName: '',
-    // Seconds each slide stays on screen before the next one fades in.
     slideSeconds: 15,
-    // The national AP World exam date, used for the countdown in the footer.
-    // Set to '' to turn the countdown off.
     apExamDate: '2027-05-06'
   },
 
-  /* ---------------------------------------------------------
-     DAYS
-     One entry per class day. Copy a block, change the date.
-
-       date             required, 'YYYY-MM-DD'
-       unit             short label, shows under the topic
-       topic            THE TOPIC FOR THE DAY. Shows large on the title
-                        card, and again on the Upcoming Topics slide once
-                        the date is in the future.
-       learningTargets  a list of "I can" statements. Three is the sweet
-                        spot, four still reads from the back of the room.
-       successCriteria  a list of things a student can tick off. Write
-                        them as evidence, not as effort.
-       homework         one line, what leaves the room tonight
-       homeworkDue      optional, shows as a chip, e.g. 'Friday'
-
-     Two optional extras, both off unless you fill them in:
-       doNow            a bell ringer slide
-       agenda           a list of block steps, shows as a numbered slide
-       note             a one line callout for anything unusual
-                        ("Bring your Chromebook", "Half day")
-     --------------------------------------------------------- */
   days: [
+    /* 2026-08-06  <-  foundations-2-belief-systems-data.js */
     {
       date: '2026-08-06',
       unit: 'Foundations',
-      topic: 'The World Before 1200',
+      topic: 'Belief Systems & Cultural Exchange',
       learningTargets: [
-        'I can describe how belief systems shaped early societies.',
-        'I can explain why trade routes moved ideas as well as goods.',
-        'I can place the four regions we study on a blank map.'
+        { text: 'I can identify the core beliefs and origins of the six major belief systems: Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam.' },
+        { text: 'I can explain how belief systems functioned as institutions that organized society, not just private faith.' },
+        { text: 'I can trace how a belief system spread through trade networks, state adoption, or missionary activity, and compare how two of them adapted when they entered a new region (syncretism).' }
       ],
       successCriteria: [
-        'I named three belief systems and one region each shaped.',
-        'I traced one good and one idea along the same route.',
-        'I labeled East Asia, Dar al-Islam, Europe, and the Americas.'
+        { text: 'I can state the central idea of each of the six belief systems and where it originated.' },
+        { text: 'I can identify a specific institutional function of a belief system, education, law, welfare, legitimacy, social order, and give a concrete historical example.' },
+        { text: 'I can explain at least one mechanism by which a belief system spread, trade route, state adoption, missionary, civil service exam, or monastic network, and give a specific example of syncretism that shows how belief systems change as they travel.' }
       ],
       homework: 'Finish the First & 10 response and submit it through the Google Form.',
       homeworkDue: 'Tomorrow'
     },
+    /* 2026-08-07  <-  foundations-3-states-power-data.js */
     {
       date: '2026-08-07',
       unit: 'Foundations',
-      topic: 'Classical Empires and Their Echoes',
+      topic: 'States, Power & Social Organization',
       learningTargets: [
-        'I can explain how classical empires built and held power.',
-        'I can identify which imperial methods reappear after 1200.'
+        { text: 'I can explain how Persia, Han China, Greece, and Rome each solved the core problems of extraction, defense, administration, and legitimacy, and name the specific tools of rule they used, satrapies, bureaucracy, the Mandate of Heaven, citizen democracy, Roman law and citizenship.' },
+        { text: 'I can analyze how social hierarchies were constructed and who was excluded in at least two of these classical societies.' },
+        { text: 'I can compare two classical states and explain a meaningful similarity or difference in how they organized power.' }
       ],
       successCriteria: [
-        'I listed three methods of rule and gave an empire for each.',
-        'I matched one classical method to a post-1200 state.'
+        { text: 'I can name a specific tool of rule from one of the four classical civilizations, give an example, and explain the governance problem it solved.' },
+        { text: 'I can explain one example of resistance or exclusion (the Yellow Turbans, Spartacus, Greek or Roman exclusion of non-citizens) and connect it to a limit of state power.' },
+        { text: 'I can compare two of the four states by explaining how each answered the same problem differently, using a specific mechanism, not just "it helped the ruler" but how and why.' }
       ],
       homework: 'Read the Unit 1 overview before Monday.',
       homeworkDue: 'Monday'
     },
+    /* 2026-08-10  <-  lesson-1-1-song-china.js */
     {
       date: '2026-08-10',
-      unit: 'Unit 1',
-      topic: 'Developments in East Asia, Song China',
+      unit: 'Unit 1: The Global Tapestry',
+      topic: 'Song China: Power, Prosperity, and the Scholar\'s World',
       learningTargets: [
-        'I can explain how the civil service exam sustained Song power.',
-        'I can describe how Neo-Confucianism shaped Song society.',
-        'I can use the Qingming scroll as evidence about Song cities.'
+        { text: 'I can explain how Song China used Confucianism, imperial bureaucracy, and civil service exams to maintain and justify rule.', label: 'Governance' },
+        { text: 'I can describe how Chinese cultural traditions and Buddhism continued to shape East Asia and influence neighboring regions.', label: 'Culture' },
+        { text: 'I can explain how agricultural innovation, infrastructure, and commercialization strengthened Song China\'s economy and connections to wider trade networks.', label: 'Economics' }
       ],
       successCriteria: [
-        'I explained the exam system without using the word "test".',
-        'I gave two ways Neo-Confucianism changed daily life.',
-        'I cited one detail from the scroll to support a claim.'
+        { text: 'I can use specific evidence such as bureaucracy, civil service exams, Confucianism, or Neo-Confucianism to explain how Song rulers organized power.', label: 'Governance' },
+        { text: 'I can explain how Confucianism, Buddhism, and Chinese cultural traditions continued or changed as they shaped societies in East Asia.', label: 'Culture' },
+        { text: 'I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.', label: 'Economics' }
       ],
       homework: 'Topic 1.1 checkpoints, both of them, submitted tonight.'
     },
+    /* 2026-08-11  <-  lesson-1-2-dar-al-islam.js */
     {
       date: '2026-08-11',
-      unit: 'Unit 1',
+      unit: 'Unit 1: The Global Tapestry',
       topic: 'Developments in Dar al-Islam',
       learningTargets: [
-        'I can explain how Islamic states expanded after 1200.',
-        'I can describe how trade carried Islamic scholarship outward.'
+        { text: 'I can explain how systems of belief and their practices affected society in the period from c. 1200 to c. 1450.' },
+        { text: 'I can explain the causes and effects of the rise of Islamic states over time.' },
+        { text: 'I can explain the effects of intellectual innovation in Dar al-Islam.' }
       ],
       successCriteria: [
-        'I named two states and how each came to power.',
-        'I traced one idea from Baghdad to somewhere else.'
+        { text: 'I can describe how Islamic states changed after Abbasid fragmentation and identify examples such as the Seljuk Empire, Mamluk Sultanate, and Delhi Sultanate.' },
+        { text: 'I can explain how Islam spread through military expansion, merchants, missionaries, and Sufi networks.' },
+        { text: 'I can connect scholarship, translation, paper-making, mathematics, medicine, astronomy, and geography to intellectual exchange.' }
       ],
       homework: 'Topic 1.2 checkpoints.'
-    }
-  ],
-
-  /* ---------------------------------------------------------
-     ASSESSMENTS
-     Every quiz, test, and exam. Sorted by date automatically.
-     Anything already past disappears from the board on its own.
-
-       date    required, 'YYYY-MM-DD'
-       title   what it is
-       detail  one short line, what it covers
-       type    'Quiz', 'Test', or 'Exam'. All three project in red.
-     --------------------------------------------------------- */
-  assessments: [
-    {
-      date: '2026-08-14',
-      title: 'Foundations Unit Quiz',
-      detail: 'Belief systems, classical empires, and trade networks to c. 1200',
-      type: 'Quiz'
     },
+    /* 2026-08-12  <-  lesson-1-3-south-southeast-asia.js */
     {
-      date: '2026-08-28',
-      title: 'Unit 1 Test',
-      detail: 'The Global Tapestry, all seven topics, stimulus and short answer',
-      type: 'Test'
+      date: '2026-08-12',
+      unit: 'Unit 1: The Global Tapestry',
+      topic: 'Developments in South and Southeast Asia',
+      learningTargets: [
+        { text: 'I can explain how Hinduism, Buddhism, and Islam shaped societies and states in South and Southeast Asia.' },
+        { text: 'I can describe how states such as the Vijayanagara Empire, Delhi Sultanate, Srivijaya, Majapahit, and Khmer Empire used religion, trade, and administration to build power.' },
+        { text: 'I can explain how Indian Ocean trade connected South and Southeast Asia to wider Afro-Eurasian networks.' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence about Hinduism, Buddhism, Islam, temples, rulers, and merchants to explain how belief systems shaped society.' },
+        { text: 'I can compare how land-based states (Vijayanagara, Khmer) and maritime states (Srivijaya, Majapahit) used religion and geography to build power.' },
+        { text: 'I can connect trade routes, ports, monsoon winds, and merchant communities to political and cultural change in South and Southeast Asia.' }
+      ],
+      homework: 'Topic 1.3 checkpoints.'
     }
   ],
 
-  /* ---------------------------------------------------------
-     REMINDERS
-     Off by default. Add an entry and a Reminders slide joins the
-     loop; leave the list empty and no slide appears.
-       { title: 'Tutoring', detail: 'Tuesday and Thursday, 3:15 to 4:00.' }
-     --------------------------------------------------------- */
-  reminders: []
+  assessments: [
+    { date: '2026-08-14', title: 'Foundations Unit Quiz', detail: 'Belief systems, classical empires, and trade networks to c. 1200', type: 'Quiz' },
+    { date: '2026-08-28', title: 'Unit 1 Test', detail: 'The Global Tapestry, all seven topics, stimulus and short answer', type: 'Test' }
+  ],
+
+  reminders: [
+
+  ]
 };
