@@ -40,7 +40,9 @@
     </footer>
   </div>
 
-  <div class="help-hint" id="help-hint">Press <strong>H</strong> for controls</div>
+  <!-- Starts hidden. It appears only once someone drives the board, so a
+       class watching the projector never sees it. -->
+  <div class="help-hint is-hidden" id="help-hint">Press <strong>H</strong> for controls</div>
 
   <div class="help-overlay" id="help-overlay" role="dialog" aria-label="Announcements board controls">
     <div class="help-card">
@@ -542,6 +544,18 @@
     /* ---------------------------------------------------------------
        Player
        --------------------------------------------------------------- */
+    // Two ways to read the same board.
+    //
+    //   Board mode  a projector kiosk: one panel at a time, auto advancing.
+    //   Page mode   a phone or a laptop: every panel stacked on one
+    //               scrollable page, no timer, nothing to wait for.
+    //
+    // The stylesheet does the layout half of this at the same breakpoint.
+    // Here it only stops the clock, so a student reading on a phone is never
+    // scrolled out from under.
+    var PAGE_MODE = window.matchMedia('(max-width: 900px)');
+    function isPageMode() { return PAGE_MODE.matches; }
+
     var board = document.getElementById('board');
     var stage = document.getElementById('stage');
     var dotsWrap = document.getElementById('dots');
@@ -596,6 +610,13 @@
       if (!lastFrame) lastFrame = stamp;
       var dt = stamp - lastFrame;
       lastFrame = stamp;
+
+      // Page mode shows everything at once, so there is nothing to advance.
+      if (isPageMode()) {
+        elapsed = 0;
+        requestAnimationFrame(tick);
+        return;
+      }
 
       if (!paused && slides.length > 1) {
         elapsed += dt;
@@ -661,6 +682,8 @@
     }
 
     document.addEventListener('keydown', function (event) {
+      // In page mode the arrows belong to the scrollbar, not to us.
+      if (isPageMode()) return;
       switch (event.key) {
         case ' ': case 'Spacebar':
           event.preventDefault(); setPaused(!paused); break;
@@ -686,8 +709,12 @@
 
     overlay.addEventListener('click', function () { toggleHelp(false); });
 
+    // The controls hint is for whoever is driving the board, so it appears
+    // only once someone touches the mouse or a key. A class watching the
+    // screen never sees it, and it is meaningless in page mode anyway.
     var idleTimer = null;
     function wake() {
+      if (isPageMode()) return;
       document.body.classList.remove('is-idle');
       hint.classList.remove('is-hidden');
       clearTimeout(idleTimer);
@@ -696,19 +723,31 @@
         hint.classList.add('is-hidden');
       }, 5000);
     }
-    ['mousemove', 'mousedown', 'keydown', 'touchstart'].forEach(function (name) {
+    ['mousemove', 'mousedown', 'keydown'].forEach(function (name) {
       document.addEventListener(name, wake, { passive: true });
     });
 
     /* ---------------------------------------------------------------
        Start
        --------------------------------------------------------------- */
+    // Rotating a phone, or dragging a window across the breakpoint, swaps the
+    // two readings cleanly rather than leaving a half-played slideshow.
+    var onModeChange = function () {
+      document.body.classList.remove('is-idle');
+      hint.classList.add('is-hidden');
+      clearTimeout(idleTimer);
+      setPaused(false);
+      goTo(0);
+      if (isPageMode()) window.scrollTo(0, 0);
+    };
+    if (PAGE_MODE.addEventListener) PAGE_MODE.addEventListener('change', onModeChange);
+    else if (PAGE_MODE.addListener) PAGE_MODE.addListener(onModeChange);
+
     render();
     updateFooter();
     updateClock();
     setInterval(updateClock, 1000);
     setInterval(updateFooter, 60 * 60 * 1000);
-    wake();
     requestAnimationFrame(tick);
   })();
   </script>

@@ -549,9 +549,119 @@ body::before{
   background:rgba(201,164,106,.14); padding:.1em .45em; color:var(--antique-gold);
 }
 
-/* ---------- Narrow screens (previewing on a laptop or phone) ---------- */
-@media (max-width:760px){
-  .due-item{grid-template-columns:clamp(64px,16vw,96px) 1fr; row-gap:.6em}
-  .due-count{grid-column:2; text-align:left}
-  .masthead-clock .clock-date{letter-spacing:.12em}
+/* =========================================================
+   PAGE MODE
+
+   Everything above sizes itself against the viewport, which is right
+   for a projector and wrong for a phone: on a 390px screen those vw
+   clamps bottom out and the board becomes a tiny slideshow nobody can
+   scroll. Below 900px the same markup becomes an ordinary page, every
+   panel stacked and readable, type set in rem so it stops chasing the
+   viewport. announcements.html stops the timer at this same width.
+   ========================================================= */
+@media (max-width:900px){
+  html,body{height:auto}
+  body{overflow:auto}
+  body.is-idle{cursor:auto}
+
+  .board{height:auto; min-height:100vh}
+
+  /* Kiosk furniture has no meaning on a page you scroll. */
+  .timing-bar,
+  .board-foot .dots,
+  .help-hint{display:none}
+
+  .masthead{
+    position:sticky; top:0; z-index:10;
+    background:linear-gradient(180deg,#1e2122,#191b1c);
+    padding:14px 20px;
+  }
+  .masthead-wordmark{font-size:1.25rem}
+  .masthead-course{font-size:.6rem; letter-spacing:.22em}
+  .masthead-brand img{width:42px; height:42px}
+  .clock-time{font-size:1.35rem}
+  .clock-date{font-size:.62rem; letter-spacing:.1em}
+
+  .stage{flex:0 0 auto; overflow:visible}
+
+  /* Each panel becomes a section of the page instead of a slide. */
+  .slide{
+    position:static;
+    opacity:1; visibility:visible; transform:none; transition:none;
+    padding:34px 20px 38px;
+    border-bottom:1px solid rgba(201,164,106,.16);
+  }
+  .slide:last-of-type{border-bottom:0}
+
+  .slide-eyebrow{font-size:.66rem; letter-spacing:.24em; margin-bottom:10px}
+  .slide-title{font-size:1.9rem; margin-bottom:18px}
+
+  /* The title card is the page header, not a full screen hero. */
+  .slide.slide-title-card{text-align:left; align-items:stretch; padding-top:28px}
+  .slide-title-card .slide-eyebrow{justify-content:flex-start}
+  .slide-title-card .slide-eyebrow::before{display:none}
+  .slide-title-card .slide-eyebrow::after{flex:1 1 auto; width:auto}
+  .wordmark-big{display:none}
+  .title-card-day{font-size:.95rem; letter-spacing:.2em; margin:0}
+  .title-card-topic{font-size:2rem; margin:10px 0 0; max-width:none; text-align:left}
+  .title-card-unit{font-size:.68rem; margin-top:12px}
+
+  .panel{padding:20px 18px; box-shadow:none}
+  .panel-text{font-size:1.05rem}
+  .panel-foot{margin-top:16px}
+  .chip{font-size:.6rem; padding:.5em .9em}
+
+  /* Lists: one readable size, no density tiers, they were for a wall. */
+  .target-list,.criteria-list,.homework-list,
+  .target-list.is-dense,.criteria-list.is-dense,.homework-list.is-dense,
+  .target-list.is-tight,.criteria-list.is-tight{gap:12px}
+
+  .target-item,.criteria-item,.homework-item,
+  .target-list.is-tight .target-item,.criteria-list.is-tight .criteria-item{
+    padding:14px 16px;
+  }
+  .target-text,.criteria-text,.homework-text,
+  .target-list.is-dense .target-text,.criteria-list.is-dense .criteria-text,
+  .homework-list.is-dense .homework-text,
+  .target-list.is-tight .target-text,.criteria-list.is-tight .criteria-text{
+    font-size:1rem; line-height:1.45;
+  }
+  .criteria-mark,
+  .criteria-list.is-tight .criteria-mark{width:20px; height:20px; margin-top:.1em}
+  .homework-num,
+  .homework-list.is-dense .homework-num{font-size:1.3rem; min-width:1.1em}
+  .entry-label{font-size:.58rem; letter-spacing:.2em}
+
+  /* Dated rows go to two lines rather than squeezing three columns. */
+  .ahead-item{grid-template-columns:74px 1fr; gap:14px; padding:13px 15px}
+  .ahead-weekday{font-size:.58rem; letter-spacing:.14em}
+  .ahead-daynum{font-size:.92rem}
+  .ahead-topic{font-size:1.05rem}
+  .ahead-unit{font-size:.58rem; margin-top:.35em}
+
+  .due-item{grid-template-columns:70px 1fr; row-gap:10px; padding:13px 15px}
+  .due-count{grid-column:2; justify-content:flex-start}
+  .due-weekday{font-size:.56rem}
+  .due-daynum{font-size:1.5rem}
+  .due-month{font-size:.52rem}
+  .due-tbd{font-size:1rem}
+  .due-title{font-size:1.05rem}
+  .due-detail{font-size:.8rem}
+
+  .reminder-grid{grid-template-columns:1fr; gap:12px}
+  .reminder-title{font-size:.66rem}
+  .reminder-detail{font-size:1rem}
+
+  .board-foot{
+    justify-content:center; padding:18px 20px 26px;
+    border-top:1px solid rgba(201,164,106,.16);
+  }
+  .foot-meta{font-size:.6rem; text-align:center; letter-spacing:.16em}
+}
+
+/* Phones proper: the date column can go too. */
+@media (max-width:420px){
+  .slide-title{font-size:1.65rem}
+  .title-card-topic{font-size:1.7rem}
+  .ahead-item,.due-item{grid-template-columns:60px 1fr; gap:12px}
 }

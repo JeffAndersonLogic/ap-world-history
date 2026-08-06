@@ -90,6 +90,21 @@ Three optional day fields are off unless you fill them in: `doNow` adds a bell
 ringer slide, `agenda` adds a numbered list of block steps, and `note` adds a
 one line callout for anything unusual.
 
+## Two ways to read it
+
+The same page, the same data, two behaviors, split at 900px wide.
+
+**Board mode**, the projector. One panel at a time, auto advancing, keyboard
+controls. This is what goes on the wall.
+
+**Page mode**, a phone or a narrow laptop window. Every panel stacked on one
+scrollable page, type set in rem so it stays readable, no timer and nothing to
+wait for. This is what a student gets when they check tonight's homework from
+the couch, and it is why the board is safe to link from the landing page.
+
+Nothing switches by hand. Rotate a phone or drag a window across the breakpoint
+and it changes over cleanly.
+
 ## Controls at the projector
 
 | Key | What it does |
@@ -103,6 +118,11 @@ one line callout for anything unusual.
 
 The cursor hides after five seconds of stillness. Clicking a dot in the footer
 jumps to that slide.
+
+The "Press H for controls" hint starts hidden and appears only once you move the
+mouse or press a key, so a class watching the projector never sees it. None of
+this applies in page mode: no hint, no dots, and the arrow keys scroll the page
+the way they should.
 
 ## Leaving it up overnight
 
