@@ -244,10 +244,10 @@ window.FOUNDATION_TOPIC = {
         'Treat the map as an **argument**, not a backdrop.'
       ],
       image: {
-        title: 'Reading geography as a historian',
-        url: '',
+        title: 'Ancient Civilizations of the Old World',
+        url: '../assets/images/lecture/foundations-1/ancient-civilizations-old-world.jpg',
         sourceUrl: '',
-        caption: 'BeHistorical topic artwork for this card. Ask what a landscape made easy, what it made hard, and what it made necessary.'
+        caption: 'Old World civilizations colored by period: the first river-valley societies (3500 to 1000 BCE) in red, Minoan-Mycenaean Greece and Shang China (2100 to 1000 BCE) in yellow, and later states such as Ghana, Mali, Aksum, Zimbabwe, and Khmer (after 600 BCE) in green. Read it as an argument, not a picture: the earliest civilizations sit on rivers, and the later ones fill in coasts, highlands, and trade corridors the first wave never reached. Source: John Allen, Student Atlas of Anthropology, 1st ed. (McGraw-Hill, 2004), p. 42.'
       }
     }
   ],

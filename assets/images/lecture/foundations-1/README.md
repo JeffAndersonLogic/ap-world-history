@@ -13,7 +13,12 @@ blocks Commons, which matters for the Canvas packets.
 | File | Used by | Lecture card |
 |---|---|---|
 | `neolithic-foragers.jpg` | `foundations-1-geography-data.js`, `lecture[0].image` | From Foraging to Farming: The Neolithic Revolution |
-| `first-wave-civilizations.jpg` | `foundations-1-geography-data.js`, `lecture[1].image` | Why Geography Chose the River Valleys |
+| `first-wave-civilizations.webp` | `foundations-1-geography-data.js`, `lecture[1].image` | Why Geography Chose the River Valleys |
+| `ancient-civilizations-old-world.jpg` | `foundations-1-geography-data.js`, `lecture[4].image` | Geography Is Cause, Not Destiny |
+
+`ancient-civilizations-old-world.jpg` is from John Allen, *Student Atlas of
+Anthropology*, 1st ed. (McGraw-Hill, 2004), p. 42. The credit is repeated in the
+lecture card's `caption`.
 
 ## Rules
 
