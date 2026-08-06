@@ -1618,9 +1618,48 @@ function foundationCaptureAttrs(responseTypeKey){
   if(!window.BH_FORM||typeof captureDataAttrs!=='function'||!FOUNDATION_TOPIC_KEY)return '';
   return captureDataAttrs(FOUNDATION_TOPIC_KEY,responseTypeKey);
 }
-function saveDraft(id){const t=byId(id);localStorage.setItem(`foundations-topic-${id}`,t.value||'');byId(id+'-result').textContent='Draft saved in this browser on this device.'}
+// Draft storage that cannot throw.
+//
+// Touching localStorage raises a SecurityError, not a null, when the browser
+// refuses it: a sandboxed frame (which is one of the ways Canvas serves
+// uploaded HTML), Safari private browsing, or a device policy that disables
+// site data. Unguarded, that one throw took out autosave, took out loadDrafts
+// and therefore openModule for any module with a textarea, and took out Copy
+// All My Work, with nothing on screen to tell the student their typing was not
+// being kept.
+//
+// Every write also lands in a memory copy, so a lesson still gathers a full
+// Copy All My Work within the session even when nothing can be persisted. What
+// is lost in that case is surviving a reload, and the student is told so
+// plainly rather than finding out afterwards.
+const BHDraftStore=(function(){
+  const memory={};
+  let live=false;
+  try{const probe='__bh_probe__';localStorage.setItem(probe,'1');localStorage.removeItem(probe);live=true;}catch(e){live=false;}
+  return {
+    get available(){return live;},
+    get(key){
+      if(live){try{return localStorage.getItem(key);}catch(e){live=false;}}
+      return Object.prototype.hasOwnProperty.call(memory,key)?memory[key]:null;
+    },
+    set(key,value){
+      memory[key]=value;
+      if(!live)return false;
+      try{localStorage.setItem(key,value);return true;}catch(e){live=false;return false;}
+    },
+    keys(){
+      if(live){
+        try{const out=[];for(let i=0;i<localStorage.length;i++)out.push(localStorage.key(i));return out;}catch(e){live=false;}
+      }
+      return Object.keys(memory);
+    }
+  };
+})();
+// Shown wherever a save would otherwise claim success it cannot deliver.
+const BH_NO_STORAGE_NOTE='This browser will not let the page save drafts. Your typing stays until you close the tab, so gather and copy your work into Canvas before you leave.';
+function saveDraft(id){const t=byId(id);if(!t)return;const ok=BHDraftStore.set(`foundations-topic-${id}`,t.value||'');const r=byId(id+'-result');if(r)r.textContent=ok?'Draft saved in this browser on this device.':BH_NO_STORAGE_NOTE;}
 function copyResponse(id){const t=byId(id);navigator.clipboard.writeText(t.value||'').then(()=>byId(id+'-result').textContent='Response copied.').catch(()=>byId(id+'-result').textContent='Copy failed. Select and copy manually.')}
-function loadDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>{if(t.id===WORK_EXPORT_ID)return;const saved=localStorage.getItem(`foundations-topic-${t.id}`);if(saved)t.value=saved})}
+function loadDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>{if(t.id===WORK_EXPORT_ID)return;const saved=BHDraftStore.get(`foundations-topic-${t.id}`);if(saved)t.value=saved})}
 
 // ── Autosave and Copy All My Work ─────────────────────────────────────────────
 //
@@ -1667,12 +1706,11 @@ function paragraphsHtml(t){return String(t).split(/\n{2,}/).map(b=>'<p>'+escapeW
 function collectLessonWork(){
   const prefix=`foundations-topic-${T.id}-`;
   const stored={};
-  for(let i=0;i<localStorage.length;i++){
-    const key=localStorage.key(i);
-    if(!key||key.indexOf(prefix)!==0)continue;
-    const value=(localStorage.getItem(key)||'').trim();
+  BHDraftStore.keys().forEach(key=>{
+    if(!key||key.indexOf(prefix)!==0)return;
+    const value=(BHDraftStore.get(key)||'').trim();
     if(value)stored[key.slice(prefix.length)]=value;
-  }
+  });
   document.querySelectorAll('textarea.response-area').forEach(t=>{
     if(!t.id||t.id===WORK_EXPORT_ID)return;
     const value=(t.value||'').trim();
@@ -1783,9 +1821,9 @@ document.addEventListener('input',function(event){
   if(!t.classList||!t.classList.contains('response-area'))return;
   clearTimeout(t._draftTimer);
   t._draftTimer=setTimeout(function(){
-    localStorage.setItem(`foundations-topic-${t.id}`,t.value||'');
+    const ok=BHDraftStore.set(`foundations-topic-${t.id}`,t.value||'');
     const r=byId(t.id+'-result');
-    if(r)r.textContent='Saved automatically in this browser on this device.';
+    if(r)r.textContent=ok?'Saved automatically in this browser on this device.':BH_NO_STORAGE_NOTE;
   },600);
 });
 
