@@ -70,7 +70,7 @@
     var DATA = {
       settings: (RAW && RAW.settings) || {},
       days: (RAW && Array.isArray(RAW.days)) ? RAW.days : [],
-      dueDates: (RAW && Array.isArray(RAW.dueDates)) ? RAW.dueDates : [],
+      assessments: (RAW && Array.isArray(RAW.assessments)) ? RAW.assessments : [],
       reminders: (RAW && Array.isArray(RAW.reminders)) ? RAW.reminders : []
     };
 
@@ -190,6 +190,75 @@
       return s;
     }
 
+    // Learning targets are a set, not a sequence, so they carry a rule rather
+    // than the numbering the agenda uses.
+    function buildTargetsSlide(day) {
+      var targets = (day.learningTargets || []).filter(has);
+      if (!targets.length) return null;
+
+      var s = slide();
+      s.appendChild(eyebrow('Learning Targets'));
+      s.appendChild(el('h2', 'slide-title', 'What you are learning'));
+
+      var list = el('ul', 'target-list' + (targets.length > 3 ? ' is-long' : ''));
+      targets.forEach(function (text) {
+        var item = el('li', 'target-item');
+        item.appendChild(el('span', 'target-text', text));
+        list.appendChild(item);
+      });
+      s.appendChild(list);
+      return s;
+    }
+
+    // Success criteria are things a student ticks off, so they get checkboxes.
+    // The mark is drawn in CSS, no glyph and no font dependency.
+    function buildCriteriaSlide(day) {
+      var criteria = (day.successCriteria || []).filter(has);
+      if (!criteria.length) return null;
+
+      var s = slide();
+      s.appendChild(eyebrow('Success Criteria'));
+      s.appendChild(el('h2', 'slide-title', "You've got it when"));
+
+      var list = el('ul', 'criteria-list' + (criteria.length > 3 ? ' is-long' : ''));
+      criteria.forEach(function (text) {
+        var item = el('li', 'criteria-item');
+        item.appendChild(el('span', 'criteria-mark'));
+        item.appendChild(el('span', 'criteria-text', text));
+        list.appendChild(item);
+      });
+      s.appendChild(list);
+      return s;
+    }
+
+    // Upcoming topics build themselves out of the day entries already filed,
+    // so a week typed on Sunday populates this slide with no extra work.
+    function buildAheadSlide(days) {
+      var s = slide();
+      s.appendChild(eyebrow('Looking Ahead'));
+      s.appendChild(el('h2', 'slide-title', 'Upcoming Topics'));
+
+      var list = el('ul', 'ahead-list');
+      days.forEach(function (entry) {
+        var item = el('li', 'ahead-item');
+
+        var when = el('div', 'ahead-when');
+        when.appendChild(el('div', 'ahead-weekday', WEEKDAYS[entry.date.getDay()].slice(0, 3)));
+        when.appendChild(el('div', 'ahead-daynum',
+          MONTHS[entry.date.getMonth()].slice(0, 3) + ' ' + entry.date.getDate()));
+        item.appendChild(when);
+
+        var body = el('div', 'ahead-body');
+        body.appendChild(el('div', 'ahead-topic', entry.topic));
+        if (has(entry.unit)) body.appendChild(el('div', 'ahead-unit', entry.unit));
+        item.appendChild(body);
+
+        list.appendChild(item);
+      });
+      s.appendChild(list);
+      return s;
+    }
+
     function countdownFor(days) {
       if (days === 0) return { text: 'Due Today', style: 'alarm solid', row: 'is-urgent' };
       if (days === 1) return { text: 'Due Tomorrow', style: 'alarm solid', row: 'is-urgent' };
@@ -197,12 +266,12 @@
       return { text: days + ' Days', style: 'quiet', row: '' };
     }
 
-    function buildDueSlide(items, pageIndex, pageCount) {
+    function buildDueSlide(items, pageIndex, pageCount, label, heading) {
       var s = slide();
       s.appendChild(eyebrow(pageCount > 1
-        ? 'Coming Up, ' + (pageIndex + 1) + ' of ' + pageCount
-        : 'Coming Up'));
-      s.appendChild(el('h2', 'slide-title', 'Due Dates'));
+        ? label + ', ' + (pageIndex + 1) + ' of ' + pageCount
+        : label));
+      s.appendChild(el('h2', 'slide-title', heading));
 
       var list = el('ul', 'due-list');
       items.forEach(function (entry) {
@@ -282,6 +351,8 @@
         if (String(DATA.days[i] && DATA.days[i].date).trim() === key) { day = DATA.days[i]; break; }
       }
 
+      // Today first: the topic, then what you are learning, then how you know
+      // you have learned it, then what leaves the room with you.
       slides.push(buildTitleCard(day, now));
 
       if (day) {
@@ -293,47 +364,64 @@
             { text: 'Start the moment you sit down', style: 'quiet' }
           ]));
         }
-        if (has(day.objective)) {
-          slides.push(buildPanelSlide('Learning Target', "Today's Objective", day.objective, [
-            has(day.apSkill) ? { text: 'AP Skill: ' + day.apSkill, style: 'solid' } : null
-          ]));
-        }
+
+        var targets = buildTargetsSlide(day);
+        if (targets) slides.push(targets);
+
+        var criteria = buildCriteriaSlide(day);
+        if (criteria) slides.push(criteria);
+
         var agenda = buildAgendaSlide(day);
         if (agenda) slides.push(agenda);
 
         if (has(day.homework)) {
           slides.push(buildPanelSlide('Tonight', 'Homework', day.homework, [
-            { text: 'Write it down', style: 'quiet' }
+            has(day.homeworkDue) ? { text: 'Due ' + day.homeworkDue, style: 'solid' }
+                                 : { text: 'Write it down', style: 'quiet' }
           ]));
         }
       } else if (DATA.days.length) {
         slides.push(buildMessageSlide(
           'No Entry For Today', 'Check the board up front',
-          'There is no agenda filed for this date. Add one to',
+          'There is no entry filed for this date. Add one to',
           'assets/data/announcements.js'));
       }
 
-      // Due dates: drop anything past, sort, then page four to a slide.
-      var upcoming = DATA.dueDates
+      // Then what is ahead: the next topics, then the next assessments.
+      var ahead = DATA.days
         .map(function (entry) {
-          var date = parseYMD(entry && entry.due);
+          var date = parseYMD(entry && entry.date);
+          if (!date || !has(entry.topic)) return null;
+          return { date: date, days: daysUntil(date), topic: entry.topic, unit: entry.unit };
+        })
+        .filter(function (entry) { return entry && entry.days > 0; })
+        .sort(function (a, b) { return a.date - b.date; })
+        .slice(0, 4);
+
+      if (ahead.length) slides.push(buildAheadSlide(ahead));
+
+      var assessments = DATA.assessments
+        .map(function (entry) {
+          var date = parseYMD(entry && entry.date);
           if (!date || !has(entry.title)) return null;
           return {
             date: date,
             days: daysUntil(date),
             title: entry.title,
             detail: entry.detail,
-            tag: entry.tag
+            tag: entry.type
           };
         })
         .filter(function (entry) { return entry && entry.days >= 0; })
         .sort(function (a, b) { return a.date - b.date; });
 
-      if (upcoming.length) {
+      if (assessments.length) {
         var PER_SLIDE = 4;
-        var pages = Math.ceil(upcoming.length / PER_SLIDE);
+        var pages = Math.ceil(assessments.length / PER_SLIDE);
         for (var p = 0; p < pages; p++) {
-          slides.push(buildDueSlide(upcoming.slice(p * PER_SLIDE, (p + 1) * PER_SLIDE), p, pages));
+          slides.push(buildDueSlide(
+            assessments.slice(p * PER_SLIDE, (p + 1) * PER_SLIDE), p, pages,
+            'Put It On Your Calendar', 'Quizzes & Exams'));
         }
       }
 

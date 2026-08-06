@@ -13,9 +13,9 @@ are four blocks inside:
 | Block | What it holds |
 |---|---|
 | `settings` | Course name, seconds per slide, AP exam date |
-| `days` | One entry per class day: topic, objective, Do Now, agenda, homework |
-| `dueDates` | Anything with a deadline. Past dates drop off on their own |
-| `reminders` | Standing notes with no date. They show until you delete them |
+| `days` | One entry per class day: topic, learning targets, success criteria, homework |
+| `assessments` | Every quiz, test, and exam. Past dates drop off on their own |
+| `reminders` | Off by default. Add one and a Reminders slide joins the loop |
 
 Dates are always `YYYY-MM-DD`. That is the only format the board parses.
 
@@ -24,24 +24,30 @@ personal projects on the screen. Fill either one in and it joins the footer line
 next to the countdown to the national AP exam.
 
 Every field except `date` is optional. Leave one out and the board simply skips
-that slide, so a day with only an objective produces a two-slide loop rather than
-an error.
+that slide, so a day with only a topic and one learning target produces a short
+loop rather than an error.
 
 ## What the loop looks like
 
-For a day that has everything filled in:
+Six panels, today's work first and what is ahead second:
 
-1. Title card, the wordmark, today's date, the topic
-2. Heads Up, only if `note` is set
-3. Do Now
-4. Today's Objective, with the AP skill chip
-5. Today's Agenda, numbered
-6. Homework
-7. Due Dates, four per slide, sorted soonest first
-8. Reminders
+1. **Topic for the day**, the title card: wordmark, date, topic, unit
+2. **Learning targets**, the "I can" statements
+3. **Success criteria**, the things a student ticks off
+4. **Homework**, what leaves the room tonight
+5. **Upcoming topics**, the next four class days
+6. **Quizzes and exams**, from the `assessments` list
 
-Due dates inside three days turn gold. Due today and due tomorrow turn red. A
-`tag` of `Test`, `Quiz`, or `Exam` also turns red.
+Upcoming topics cost you nothing extra. Every `days` entry dated later than
+today lands there automatically, so a week typed on Sunday fills that slide for
+free.
+
+Assessments inside three days turn gold; today and tomorrow turn red. `Quiz`,
+`Test`, and `Exam` all project in red.
+
+Three optional day fields are off unless you fill them in: `doNow` adds a bell
+ringer slide, `agenda` adds a numbered list of block steps, and `note` adds a
+one line callout for anything unusual.
 
 ## Controls at the projector
 
@@ -67,7 +73,7 @@ press `R` on the classroom machine.
 ## When there is no entry for today
 
 The board never goes blank. With no matching day it still shows the title card,
-the due dates, and the reminders, plus one slide telling you an agenda was never
+the upcoming topics, and the assessments, plus one slide telling you nothing was
 filed for that date. With nothing filed at all it shows a single slide naming the
 file to edit.
 

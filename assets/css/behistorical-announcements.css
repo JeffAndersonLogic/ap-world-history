@@ -254,6 +254,91 @@ body::before{
 .agenda-list.is-long .agenda-num{font-size:clamp(.95rem,1.85vw,2.3rem)}
 .agenda-list.is-long{gap:clamp(6px,1vh,14px)}
 
+/* ---------- Learning targets ----------
+   A set, not a sequence. No numbering, just a gold rule per statement. */
+.target-list,
+.criteria-list{
+  list-style:none; margin:0; padding:0;
+  display:flex; flex-direction:column; gap:clamp(10px,1.8vh,24px);
+}
+.target-item{
+  padding:clamp(10px,1.8vh,24px) clamp(16px,2vw,36px);
+  background:linear-gradient(90deg, rgba(245,240,231,.07), rgba(245,240,231,.015));
+  border-left:clamp(5px,.5vw,10px) solid var(--antique-gold);
+}
+.target-text{
+  display:block;
+  font-family:var(--body);
+  font-size:clamp(1.05rem,2.1vw,2.7rem); line-height:1.3;
+  color:var(--clean-paper); text-wrap:pretty;
+}
+.target-list.is-long .target-text{font-size:clamp(.92rem,1.65vw,2.1rem)}
+.target-list.is-long{gap:clamp(7px,1.2vh,16px)}
+
+/* ---------- Success criteria ----------
+   Things you tick off, so they get a checkbox. The mark is drawn with
+   borders rather than a glyph, so no font or encoding can break it. */
+.criteria-item{
+  display:flex; align-items:flex-start; gap:clamp(14px,1.7vw,32px);
+  padding:clamp(10px,1.8vh,24px) clamp(16px,2vw,36px);
+  background:linear-gradient(90deg, rgba(245,240,231,.07), rgba(245,240,231,.015));
+  border-left:clamp(5px,.5vw,10px) solid var(--burnished-bronze);
+}
+.criteria-mark{
+  flex:0 0 auto; position:relative;
+  width:clamp(22px,1.9vw,42px); height:clamp(22px,1.9vw,42px);
+  margin-top:.12em;
+  border:2px solid var(--antique-gold);
+  background:rgba(201,164,106,.1);
+}
+.criteria-mark::after{
+  content:""; position:absolute;
+  left:28%; top:12%; width:34%; height:56%;
+  border-right:.16em solid var(--antique-gold);
+  border-bottom:.16em solid var(--antique-gold);
+  transform:rotate(42deg);
+}
+.criteria-text{
+  font-family:var(--body);
+  font-size:clamp(1.05rem,2.1vw,2.7rem); line-height:1.3;
+  color:var(--clean-paper); text-wrap:pretty;
+}
+.criteria-list.is-long .criteria-text{font-size:clamp(.92rem,1.65vw,2.1rem)}
+.criteria-list.is-long{gap:clamp(7px,1.2vh,16px)}
+
+/* ---------- Upcoming topics ---------- */
+.ahead-list{
+  list-style:none; margin:0; padding:0;
+  display:flex; flex-direction:column; gap:clamp(9px,1.6vh,20px);
+}
+.ahead-item{
+  display:grid;
+  grid-template-columns:clamp(96px,10vw,190px) 1fr;
+  align-items:center; gap:clamp(16px,2.2vw,42px);
+  padding:clamp(10px,1.7vh,24px) clamp(14px,1.8vw,32px);
+  background:linear-gradient(90deg, rgba(245,240,231,.06), rgba(245,240,231,.012));
+  border-left:clamp(4px,.4vw,8px) solid var(--aged-iron);
+}
+.ahead-when{font-family:var(--ui); text-align:center; line-height:1.1}
+.ahead-weekday{
+  font-weight:900; font-size:clamp(.6rem,.92vw,1.1rem);
+  letter-spacing:.22em; text-transform:uppercase; color:var(--muted-sandstone);
+}
+.ahead-daynum{
+  font-weight:900; font-size:clamp(.95rem,1.55vw,1.9rem);
+  color:var(--warm-paper); margin-top:.3em; font-variant-numeric:tabular-nums;
+}
+.ahead-topic{
+  font-family:var(--serif-title); font-weight:900;
+  font-size:clamp(1.05rem,2.1vw,2.6rem); line-height:1.12; color:var(--warm-paper);
+}
+.ahead-unit{
+  font-family:var(--ui); font-weight:800;
+  font-size:clamp(.6rem,.92vw,1.1rem);
+  letter-spacing:.22em; text-transform:uppercase;
+  color:var(--muted-sandstone); margin-top:.45em;
+}
+
 /* ---------- Due dates ---------- */
 .due-list{
   list-style:none; margin:0; padding:0;
