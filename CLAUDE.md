@@ -16,6 +16,7 @@
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios.
 - `node scripts/build-unit9.js`, deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
+- `node scripts/parse-canvas-submissions.js <dir>`, turn an unzipped Canvas "Download Submissions" folder into `responses.csv` (one row per student per module response) and `exceptions.csv`. Reads and writes local files only, never the network. See `docs/CANVAS-CAPTURE.md`.
 
 The student entry point is `index.html`. The project inventory is `teacher/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file.
 
@@ -58,6 +59,12 @@ Every picture a student can see must be on-topic and must be impossible to break
 > this repository and cannot be inferred from code. The form conforms to the
 > site, never the reverse. Prefill matching is character-exact and fails
 > silently.
+
+> **Before touching the Gather All My Work panel or its record footer, read
+> `docs/CANVAS-CAPTURE.md`.** Both renderers emit the footer and one parser reads
+> it, so a change to any one of the three breaks the other two. A wrong
+> `expected` count reports complete submissions as incomplete, which is worse
+> than no count at all.
 
 Standard unit lessons are thin HTML shells plus a topic data file, a renderer-config file, and `assets/js/behistorical-topic-renderer-v1.js`. Foundations uses `foundations/foundations-topic-renderer.js`. First & 10 readings are standalone pages embedded through capture wrappers. BeInTheRoom simulations live under `beintheroom/unit-N/` and must pass the theme-alignment gate in `docs/beintheroom-scenario-blueprint.md` before they are linked.
 

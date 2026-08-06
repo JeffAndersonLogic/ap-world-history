@@ -880,6 +880,124 @@ function paragraphsHtml(text) {
   ).join('');
 }
 
+// ── Record manifest ───────────────────────────────────────────────────────────
+//
+// The paste is the only evidence that reaches the teacher, and until now a
+// truncated, half-empty or hand-edited one was indistinguishable from a good
+// one. A blank paste that still carries all nine prompt headings reads as
+// "student wrote nothing", when the real cause is a wiped localStorage.
+//
+// The footer below makes that difference detectable. It declares how many
+// capture slots the lesson defines, how many were actually gathered, and a hash
+// per response, so scripts/parse-canvas-submissions.js can raise an exception
+// instead of silently recording a blank.
+//
+// Format is deliberately dumb. Canvas's editor rewrites HTML, so nothing may
+// depend on a tag, an attribute or a class surviving. Every record is one
+// self-delimiting line, `#BHR|k=v|...|#`, which a regex recovers from the
+// submission's text content even if every newline collapses.
+const BH_RECORD_VERSION = 1;
+const BH_RECORD_OPEN = '--- BEHISTORICAL RECORD, do not edit ---';
+const BH_RECORD_CLOSE = '--- END BEHISTORICAL RECORD ---';
+
+// Canvas rewrites line breaks on the way in and again on the way out, so a hash
+// over raw text would not survive its own round trip. Whitespace is collapsed
+// before hashing: the check is "is this the same writing", not "are the newlines
+// byte-identical".
+function bhNormalizeForHash(value) {
+  return String(value == null ? '' : value).replace(/\s+/g, ' ').trim();
+}
+
+// FNV-1a, 32-bit. Small, dependency-free, and identical here and in the Node
+// parser. This detects accident and drift, it is not a tamper-proof signature,
+// and nothing downstream should treat it as one.
+function bhHash(value) {
+  const s = bhNormalizeForHash(value);
+  let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = (h + ((h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24))) >>> 0;
+  }
+  return ('0000000' + h.toString(16)).slice(-8);
+}
+
+function bhWordCount(value) {
+  const s = bhNormalizeForHash(value);
+  return s ? s.split(' ').length : 0;
+}
+
+// `|` and newlines are the record format's only reserved characters.
+function bhField(value) {
+  return String(value == null ? '' : value).replace(/[|\r\n]+/g, ' ').trim();
+}
+
+// Module ordinal off the front of a label, e.g. 'Module 07, Evidence Lab' -> '07'.
+// A bespoke textarea the WORK_ITEMS table does not know about has no ordinal and
+// reports 'xx', which the parser buckets rather than drops.
+function bhOrdinal(label) {
+  const m = String(label || '').match(/Module\s+(\d+)/i);
+  return m ? m[1] : 'xx';
+}
+
+// How many capture slots this lesson actually defines, which is the denominator
+// the parser needs. Not every topic carries every module, so this counts the
+// WORK_ITEMS whose backing data resolves rather than assuming all nine.
+function expectedCaptureCount() {
+  let n = 0;
+  WORK_ITEMS.forEach(item => {
+    let prompt = '';
+    try { prompt = String(item.prompt() || '').trim(); } catch (e) { prompt = ''; }
+    if (prompt) { n++; return; }
+    // The First & 10's questions live in the reading, not the data file, so an
+    // empty prompt here still means the slot exists whenever the topic has one.
+    if (/^first10-q\d$/.test(item.id) && L.first10) n++;
+  });
+  return n;
+}
+
+// One header line, then one line per gathered response.
+function buildRecordManifest(work, topicId, isoStamp) {
+  const rows = work.map(w => ({
+    ord: bhOrdinal(w.label),
+    slot: bhField(w.id || ''),
+    label: bhField(w.label),
+    words: bhWordCount(w.text),
+    chars: bhNormalizeForHash(w.text).length,
+    promptHash: bhHash(plainPrompt(w.prompt)),
+    responseHash: bhHash(w.text)
+  }));
+
+  // Sum over the per-response hashes, so deleting a whole record line breaks it
+  // too, not just editing the writing inside one.
+  const sum = bhHash(rows.map(r => r.slot + ':' + r.responseHash).join('|'));
+
+  const header = '#BHV|v=' + BH_RECORD_VERSION
+    + '|topic=' + bhField(topicId)
+    + '|copied=' + isoStamp
+    + '|items=' + rows.length
+    + '|expected=' + expectedCaptureCount()
+    + '|sum=' + sum + '|#';
+
+  const lines = rows.map(r => '#BHR|i=' + r.ord
+    + '|slot=' + r.slot
+    + '|lab=' + r.label
+    + '|w=' + r.words
+    + '|c=' + r.chars
+    + '|ph=' + r.promptHash
+    + '|rh=' + r.responseHash + '|#');
+
+  return [BH_RECORD_OPEN, header].concat(lines).concat([BH_RECORD_CLOSE]);
+}
+
+// Each line gets its own <p>. Canvas may drop the styling, and that is fine,
+// nothing parses the presentation.
+function recordManifestHtml(lines) {
+  return '<hr>' + lines.map(line =>
+    '<p style="font-family:monospace;font-size:.68rem;opacity:.6;margin:.15rem 0;">'
+    + escapeWorkHtml(line) + '</p>'
+  ).join('');
+}
+
 // Reads from localStorage, not the DOM, because openModule() replaces the modal
 // body: a textarea for a module the student is not currently looking at does not
 // exist on the page. Anything on screen right now overrides the stored copy.
@@ -905,10 +1023,10 @@ function collectLessonWork() {
   const listed = new Set();
   WORK_ITEMS.forEach(item => {
     listed.add(item.id);
-    if (stored[item.id]) ordered.push({ label: item.label, prompt: promptForId(item.id), text: stored[item.id] });
+    if (stored[item.id]) ordered.push({ id: item.id, label: item.label, prompt: promptForId(item.id), text: stored[item.id] });
   });
   Object.keys(stored).sort().forEach(id => {
-    if (!listed.has(id)) ordered.push({ label: prettyWorkLabel(id), prompt: promptForId(id), text: stored[id] });
+    if (!listed.has(id)) ordered.push({ id: id, label: prettyWorkLabel(id), prompt: promptForId(id), text: stored[id] });
   });
   return ordered;
 }
@@ -936,7 +1054,10 @@ function buildWorkDocument() {
   if (!work.length) return null;
 
   const head = workHeading();
-  const stamp = new Date().toLocaleString();
+  const now = new Date();
+  const stamp = now.toLocaleString();
+  const isoStamp = now.toISOString();
+  const manifest = buildRecordManifest(work, workTopicId(), isoStamp);
 
   const html = ['<div>',
     '<p><strong>' + escapeWorkHtml(head.line1) + '</strong>',
@@ -963,9 +1084,14 @@ function buildWorkDocument() {
               'My response:',
               w.text, ''].filter(Boolean).join('\n');
     }))
+    .concat(manifest)
     .join('\n');
 
-  return { html: html + body + '</div>', plain: plain, count: work.length };
+  return {
+    html: html + body + recordManifestHtml(manifest) + '</div>',
+    plain: plain,
+    count: work.length
+  };
 }
 
 function gatherAllWork() {
@@ -983,7 +1109,17 @@ function gatherAllWork() {
 
   out.innerHTML = doc.html;
   out.dataset.plain = doc.plain;
-  if (result) result.textContent = `Gathered ${doc.count} response${doc.count === 1 ? '' : 's'}. Copy this, then paste it into Canvas.`;
+  // A short gather is the failure this panel used to hide: a wiped localStorage
+  // produces a well-formed paste with nothing in it, and the student has no way
+  // to tell. Say the number out loud before they submit it.
+  if (result) {
+    const expected = expectedCaptureCount();
+    const short = expected - doc.count;
+    result.textContent = `Gathered ${doc.count} of ${expected} response${expected === 1 ? '' : 's'}.`
+      + (short > 0
+        ? ` ${short} ${short === 1 ? 'is' : 'are'} still empty. Check those module cards before you submit, then copy and paste this into Canvas.`
+        : ' Copy this, then paste it into Canvas.');
+  }
   return doc;
 }
 

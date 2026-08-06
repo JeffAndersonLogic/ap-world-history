@@ -211,6 +211,80 @@ function escapeWorkHtml(v){return String(v==null?'':v).replace(/&/g,'&amp;').rep
 function plainPrompt(v){return String(v||'').replace(/\*\*(.*?)\*\*/g,'$1').trim();}
 function paragraphsHtml(t){return String(t).split(/\n{2,}/).map(b=>'<p>'+escapeWorkHtml(b.trim()).replace(/\n/g,'<br>')+'</p>').join('');}
 
+// ── Record manifest ───────────────────────────────────────────────────────────
+//
+// Mirrors the unit renderer's footer so one parser reads both. See the long
+// comment in assets/js/behistorical-topic-renderer-v1.js for why the format is
+// line-oriented and self-delimiting rather than structured HTML: Canvas rewrites
+// the paste, so nothing may depend on a tag surviving.
+const BH_RECORD_VERSION=1;
+const BH_RECORD_OPEN='--- BEHISTORICAL RECORD, do not edit ---';
+const BH_RECORD_CLOSE='--- END BEHISTORICAL RECORD ---';
+
+// Whitespace is collapsed before hashing because Canvas rewrites line breaks on
+// the way in and again on the way out.
+function bhNormalizeForHash(v){return String(v==null?'':v).replace(/\s+/g,' ').trim();}
+// FNV-1a 32-bit, identical to the unit renderer and to the Node parser. Detects
+// accident and drift; it is not a tamper-proof signature.
+function bhHash(v){
+  const s=bhNormalizeForHash(v);
+  let h=0x811c9dc5;
+  for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=(h+((h<<1)+(h<<4)+(h<<7)+(h<<8)+(h<<24)))>>>0;}
+  return ('0000000'+h.toString(16)).slice(-8);
+}
+function bhWordCount(v){const s=bhNormalizeForHash(v);return s?s.split(' ').length:0;}
+function bhField(v){return String(v==null?'':v).replace(/[|\r\n]+/g,' ').trim();}
+function bhOrdinal(label){const m=String(label||'').match(/Module\s+(\d+)/i);return m?m[1]:'xx';}
+
+// The denominator the parser needs, and it has to be exactly right: an inflated
+// expected count reports every complete submission as INCOMPLETE, and an
+// exception report that cries wolf is one nobody reads.
+//
+// Two slots need care. The First & 10's three questions live in the reading, not
+// in the data file, so their prompts resolve empty here but the slots are real
+// whenever the topic has a reading. The bare `first10` slot is the opposite:
+// renderFirst10() only draws that textarea when there is no embedUrl, and every
+// Foundations topic embeds, so counting it would overstate the denominator by one.
+function expectedCaptureCount(){
+  const embedded=typeof first10!=='undefined'&&first10&&Boolean(first10.embedUrl);
+  let n=0;
+  FOUNDATION_WORK_ITEMS.forEach(item=>{
+    if(item.slot==='first10'&&embedded)return;
+    if(/^first10-q\d$/.test(item.slot)){
+      if(typeof first10!=='undefined'&&first10)n++;
+      return;
+    }
+    let p='';
+    try{p=String(item.prompt()||'').trim();}catch(e){p='';}
+    if(p)n++;
+  });
+  return n;
+}
+
+function buildRecordManifest(work,topicId,isoStamp){
+  const rows=work.map(w=>({
+    ord:bhOrdinal(w.label),
+    slot:bhField(w.slot||''),
+    label:bhField(w.label),
+    words:bhWordCount(w.text),
+    chars:bhNormalizeForHash(w.text).length,
+    promptHash:bhHash(plainPrompt(w.prompt)),
+    responseHash:bhHash(w.text)
+  }));
+  // Summing slot:hash pairs means deleting a whole record line breaks the sum
+  // too, not just editing the writing inside one.
+  const sum=bhHash(rows.map(r=>r.slot+':'+r.responseHash).join('|'));
+  const header='#BHV|v='+BH_RECORD_VERSION+'|topic='+bhField(topicId)+'|copied='+isoStamp
+    +'|items='+rows.length+'|expected='+expectedCaptureCount()+'|sum='+sum+'|#';
+  const lines=rows.map(r=>'#BHR|i='+r.ord+'|slot='+r.slot+'|lab='+r.label
+    +'|w='+r.words+'|c='+r.chars+'|ph='+r.promptHash+'|rh='+r.responseHash+'|#');
+  return [BH_RECORD_OPEN,header].concat(lines).concat([BH_RECORD_CLOSE]);
+}
+
+function recordManifestHtml(lines){
+  return '<hr>'+lines.map(l=>'<p style="font-family:monospace;font-size:.68rem;opacity:.6;margin:.15rem 0;">'+escapeWorkHtml(l)+'</p>').join('');
+}
+
 // Reads localStorage, not the DOM: openModule() replaces the modal body, so a
 // textarea for a module the student is not looking at does not exist. Anything
 // on screen right now overrides the stored copy.
@@ -232,10 +306,10 @@ function collectLessonWork(){
   const ordered=[],listed=new Set();
   FOUNDATION_WORK_ITEMS.forEach(item=>{
     listed.add(item.slot);
-    if(stored[item.slot])ordered.push({label:item.label,prompt:promptForSlot(item.slot),text:stored[item.slot]});
+    if(stored[item.slot])ordered.push({slot:item.slot,label:item.label,prompt:promptForSlot(item.slot),text:stored[item.slot]});
   });
   Object.keys(stored).sort().forEach(slot=>{
-    if(!listed.has(slot))ordered.push({label:prettyWorkLabel(slot),prompt:promptForSlot(slot),text:stored[slot]});
+    if(!listed.has(slot))ordered.push({slot:slot,label:prettyWorkLabel(slot),prompt:promptForSlot(slot),text:stored[slot]});
   });
   return ordered;
 }
@@ -247,7 +321,9 @@ function buildWorkDocument(){
   if(!work.length)return null;
   const line1='AP World History'+(T.code?', '+T.code:'');
   const line2=T.title||'';
-  const stamp=new Date().toLocaleString();
+  const now=new Date();
+  const stamp=now.toLocaleString();
+  const manifest=buildRecordManifest(work,FOUNDATION_TOPIC_KEY||T.id||'',now.toISOString());
 
   const head='<div><p><strong>'+escapeWorkHtml(line1)+'</strong>'
     +(line2?'<br><strong>'+escapeWorkHtml(line2)+'</strong>':'')+'</p>'
@@ -264,9 +340,9 @@ function buildWorkDocument(){
     .concat(work.map(w=>{
       const prompt=plainPrompt(w.prompt);
       return [w.label.toUpperCase(),prompt?'Question: '+prompt:'','My response:',w.text,''].filter(Boolean).join('\n');
-    })).join('\n');
+    })).concat(manifest).join('\n');
 
-  return {html:head+body+'</div>',plain:plain,count:work.length};
+  return {html:head+body+recordManifestHtml(manifest)+'</div>',plain:plain,count:work.length};
 }
 
 function gatherAllWork(){
@@ -280,7 +356,15 @@ function gatherAllWork(){
   }
   out.innerHTML=doc.html;
   out.dataset.plain=doc.plain;
-  if(result)result.textContent=`Gathered ${doc.count} response${doc.count===1?'':'s'}. Copy this, then paste it into Canvas.`;
+  // A short gather is the failure this panel used to hide: a wiped localStorage
+  // produces a well-formed paste with nothing in it. Say the number out loud.
+  if(result){
+    const expected=expectedCaptureCount(),short=expected-doc.count;
+    result.textContent=`Gathered ${doc.count} of ${expected} response${expected===1?'':'s'}.`
+      +(short>0
+        ?` ${short} ${short===1?'is':'are'} still empty. Check those module cards before you submit, then copy and paste this into Canvas.`
+        :' Copy this, then paste it into Canvas.');
+  }
   return doc;
 }
 
