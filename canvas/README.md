@@ -1,67 +1,97 @@
 # Canvas Packets, Foundations 0 and 1
 
 Standalone versions of the two Foundations lessons for students who cannot reach
-the BeHistorical site. Each packet carries the whole lesson, all ten modules, in
-a single file. Nothing in them points back at the site, so a block on the
-BeHistorical domain does not affect them.
+the BeHistorical site. Nothing in them points back at the site, so a filter on
+the domain does not affect them.
 
-Rebuild with `node scripts/build-canvas-packets.js` (the PDFs are rendered by
-`scripts/build-canvas-pdfs.sh` afterward). Never hand-edit the files in this
-folder, edit the Foundations data files and rebuild.
+Rebuild with `node scripts/build-canvas-packets.js`, then
+`./scripts/build-canvas-pdfs.sh` for the PDFs. Never hand-edit anything in this
+folder, edit the Foundations sources and rebuild.
 
 ## What is here
 
 | File | Use it for |
 |---|---|
-| `foundations-0-intro-to-behistorical-canvas.html` | Interactive lesson. Students type answers on the page, then copy everything into a Canvas assignment. |
+| `foundations-0-intro-to-behistorical-canvas.html` | The lesson page itself, self-contained. Upload to Canvas Files and link. |
 | `foundations-1-geography-canvas.html` | Same, Foundations 1. |
 | `foundations-0-intro-to-behistorical-packet.pdf` | Print or attach. Ruled answer lines, name/period/date header. |
 | `foundations-1-geography-packet.pdf` | Same, Foundations 1. |
-| `print/*-print.html` | Source for the PDFs. Only needed if you want to re-render them. |
+| `print/*-print.html` | Source for the PDFs. Only needed to re-render them. |
 
-## Option A, the interactive HTML (recommended)
+## The HTML packets are the lesson page
 
-1. **Course → Files → Upload** both `*-canvas.html` files.
-2. Click the uploaded file once and copy the URL from the address bar.
-3. **Pages → + Page**, give it the lesson name, and add a link to the file
-   (the rich content editor's file sidebar lists it under Course Files).
-4. Publish the page and add it to a module.
+Not a copy of it, not a simplified version of it. The build reads the same shell,
+the same four stylesheets, the same renderer, and the same data file the live
+site uses, and folds every asset inside: the three typefaces, the logo, the
+instructional map, all of the module artwork, and the First & 10 reading.
 
-Students click through to a page that runs on its own. Their typing autosaves in
-the browser, then **Gather All My Work → Copy to Clipboard** puts a labelled,
-formatted transcript on the clipboard to paste into a Canvas assignment.
+So students get the real thing. The ten module cards still pop out into their
+modals. The lecture cards still open with arrow-key navigation. Draft boxes still
+autosave, and the lesson's own **Gather All My Work** panel still assembles a
+labelled transcript for the Canvas assignment. The build fails loudly if the site
+sources move out from under it, rather than quietly shipping a broken packet.
+
+Each file is about 1 MB, almost all of it embedded fonts and artwork. That is the
+cost of needing zero network access, and it loads as a single request.
+
+## Getting one into Canvas
+
+1. **Course → Files → Upload** the `*-canvas.html` file.
+2. **Files**, click the circle-slash icon next to it so it turns into a green
+   check. An unpublished file gives students an access-denied error even though
+   your link works fine.
+3. **Assignments → your assignment → Edit**, put the cursor in the description,
+   and use the right sidebar's **Documents → Course Documents** to insert a link.
+4. Set the assignment's submission type to **Text Entry**, so students have
+   somewhere to paste what the Gather panel produces.
+5. Check it in **Student View** before class.
 
 Two things to know:
 
 - **Do not paste the HTML into a Canvas page body.** Canvas strips `<script>`
-  from page content, which removes the response boxes' save and copy buttons.
-  Uploading the file to Files and linking to it keeps the page intact.
-- **Autosave is per-browser, per-device.** It is a scratchpad, not a submission.
-  Pair each packet with a Canvas assignment set to "Text Entry" so students have
-  somewhere to paste. The Gather output is already labelled by module, so it
-  grades cleanly.
-
-## Option B, the PDF
-
-Attach the PDF to a Canvas assignment or announcement. It is a worksheet: the
-same ten modules, the full reading, ruled lines under every prompt, and a
-name/period/date header. Works on paper or in Canvas's PDF viewer, and students
-can answer in the Canvas text box instead of on the lines if you prefer.
+  from page content, which kills every module card, modal, and response box.
+  Uploading to Files and linking is what keeps the lesson intact.
+- **Canvas shows a click-through warning** before displaying user-uploaded HTML,
+  and serves it from a sandboxed domain. Warn students so you do not field
+  twenty hands. Worth confirming in Student View that a draft survives closing
+  and reopening the tab, since the autosave is scoped to whatever domain Canvas
+  serves the file from.
 
 ## About the pictures
 
-The instructional map is drawn into the file itself and always renders. The
-photographs are Wikimedia Commons links: the interactive packet requests the
-photograph first and falls back to BeHistorical topic artwork if the network
-blocks Commons. The PDF does not print the fallback artwork, it prints the
-picture's title, caption, and Commons URL instead, so a student reading on paper
-still gets the evidence described and can look it up.
+The instructional map and every piece of module artwork are embedded and always
+render. Wikimedia photographs are still requested from Commons first and fall
+back to embedded topic artwork if the network blocks them, exactly as the site
+behaves. YouTube poster frames on the video cards are the only other optional
+request; if they fail, the cards show the plain thumbnail the site uses for a
+clip with no video id.
 
-## What is not in the packets
+The PDF does not print the fallback artwork, which is a brand motif that teaches
+nothing and costs a page of toner. It prints the picture's title, caption, and
+Commons URL instead, so a student reading on paper still gets the evidence
+described and can look it up.
 
-- **BeInTheRoom (module 09)** has no scenario for either Foundations topic yet,
-  so both packets show the same "coming soon" placeholder the site shows.
-- **The Google Form submit buttons** are gone. These packets route work to a
-  Canvas assignment instead, which is where graded work goes anyway.
-- **The MagicSchool AI coach** is still linked by URL in module 08 of the
-  interactive packet. Remove it if the class join code is not open.
+## Fonts
+
+`assets/fonts/behistorical-fonts-inline.css` holds Cinzel, Libre Baskerville, and
+Montserrat as embedded woff2, generated by `scripts/build-inline-fonts.js`. It is
+checked in so the packet build stays offline; regenerate it only if the site's
+font stack changes. Without it the packets fall back to Georgia and stop looking
+like the site.
+
+## What differs from the live page
+
+- **The topbar's Home and Foundations links are gone.** Nothing outside the
+  packet is reachable, and a link that goes nowhere is worse than no link. The
+  in-page Command Center, Modules, and Lecture links all still work.
+- **The First & 10 skips its capture wrapper.** That wrapper exists to relay
+  button clicks across a file boundary the packet does not have; the reading's
+  own handlers work unmediated. Its footer links drive the parent page instead
+  of navigating to a file that is not there.
+- **"Open map source" is gone** from the map module. The map is embedded, and
+  browsers refuse to open a data URI in a new tab.
+- **BeInTheRoom (module 09)** shows the same "coming soon" placeholder as the
+  site. Neither Foundations topic has a scenario yet.
+
+Everything else, including the Google Form buttons and the MagicSchool link,
+behaves as it does on the site.
