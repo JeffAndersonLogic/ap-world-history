@@ -34,13 +34,15 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
      --------------------------------------------------------- */
   settings: {
     courseName: 'AP World History',
-    teacherName: 'Mr. Anderson',
-    roomName: 'Room 214',
+    // Both of these are blank on purpose, so nothing personal projects on the
+    // screen. Fill either one in and it appears in the footer.
+    teacherName: '',
+    roomName: '',
     // Seconds each slide stays on screen before the next one fades in.
     slideSeconds: 15,
-    // The AP World exam date, used for the countdown in the footer.
+    // The national AP World exam date, used for the countdown in the footer.
     // Set to '' to turn the countdown off.
-    apExamDate: '2027-05-13'
+    apExamDate: '2027-05-06'
   },
 
   /* ---------------------------------------------------------
@@ -156,7 +158,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
   reminders: [
     {
       title: 'Tutoring',
-      detail: 'Tuesday and Thursday, 3:15 to 4:00, Room 214. No appointment needed.'
+      detail: 'Tuesday and Thursday, 3:15 to 4:00. No appointment needed.'
     },
     {
       title: 'Late Work',

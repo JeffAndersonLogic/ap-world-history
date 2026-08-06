@@ -12,12 +12,16 @@ are four blocks inside:
 
 | Block | What it holds |
 |---|---|
-| `settings` | Course name, teacher, room, seconds per slide, AP exam date |
+| `settings` | Course name, seconds per slide, AP exam date |
 | `days` | One entry per class day: topic, objective, Do Now, agenda, homework |
 | `dueDates` | Anything with a deadline. Past dates drop off on their own |
 | `reminders` | Standing notes with no date. They show until you delete them |
 
 Dates are always `YYYY-MM-DD`. That is the only format the board parses.
+
+`teacherName` and `roomName` inside `settings` ship blank on purpose, so nothing
+personal projects on the screen. Fill either one in and it joins the footer line
+next to the countdown to the national AP exam.
 
 Every field except `date` is optional. Leave one out and the board simply skips
 that slide, so a day with only an objective produces a two-slide loop rather than
