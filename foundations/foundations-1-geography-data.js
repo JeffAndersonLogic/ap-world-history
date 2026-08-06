@@ -162,10 +162,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'From Foraging to Farming: The Neolithic Revolution',
       bullets: [
-        'For roughly **200,000 years**, humans lived as **hunter-foragers**, mobile bands that hunted and gathered wild food. This was not primitive; it was a flexible way of life that often meant fewer working hours and a more varied diet than farming.',
-        'About **10,000 years ago**, as the last Ice Age ended and the climate warmed, wild grains spread, and in several regions **independently**, people began to **domesticate** plants and animals. This slow, world-changing shift is the **Neolithic Agricultural Revolution**.',
-        'Farming produced a **more reliable** food supply, but not necessarily a more diverse or healthier one. It also transformed the environment through cleared fields, irrigation, and domesticated animals used for food and labor.',
-        'The result: **populations grew**, family bands gave way to **villages** and then to **cities**, and human society became far more complex than foraging had ever allowed.'
+        'For roughly **200,000 years**, humans lived as **hunter-foragers** in small, mobile bands.',
+        'Foraging was not primitive. It often meant fewer working hours and a more varied diet than farming.',
+        'About **10,000 years ago** the last Ice Age ended, the climate warmed, and wild grains spread.',
+        'In several regions **independently**, people began to **domesticate** plants and animals.',
+        'That shift is the **Neolithic Agricultural Revolution**.',
+        'Farming produced a **more reliable** food supply, not a more diverse or healthier one.',
+        'Populations grew, bands became **villages**, and villages became **cities**.'
       ],
       image: {
         title: 'Foragers before the first harvest',
@@ -177,10 +180,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Why Geography Chose the River Valleys',
       bullets: [
-        'The Neolithic Revolution and the first civilizations clustered in **four great river valleys**: the **Nile** (Egypt), the **Tigris-Euphrates** (Mesopotamia), the **Indus** (South Asia), and the **Huang He / Yellow River** (China).',
-        'Rivers gave two things farming needs: **fresh water for irrigation**, and **fertile alluvial soil** deposited by floods that renewed the fields year after year.',
-        'The **Fertile Crescent** happened to host the wild ancestors of **wheat, barley, sheep, and goats**, the specific species that could be domesticated. Geography, not accident, placed the raw material of agriculture here.',
-        'Where geography offered water, soil, and domesticable species, farming took hold and surplus followed. Where it did not, in **deserts, forests, and open grasslands**, people kept foraging or turned to herding.'
+        'Farming and the first civilizations clustered in **four river valleys**.',
+        'The **Nile** (Egypt), the **Tigris-Euphrates** (Mesopotamia), the **Indus** (South Asia), the **Huang He** (China).',
+        'Rivers supplied **fresh water for irrigation**.',
+        'Floods deposited **fertile alluvial soil**, renewing the fields year after year.',
+        'The **Fertile Crescent** held the wild ancestors of **wheat, barley, sheep, and goats**.',
+        'Where water, soil, and domesticable species met, farming took hold and surplus followed.',
+        'In **deserts, forests, and grasslands**, people kept foraging or turned to herding.'
       ],
       image: {
         title: 'First-wave civilizations and where farming began',
@@ -192,10 +198,14 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Surplus: The Seed of Civilization',
       bullets: [
-        'Once a valley grew **more food than its farmers needed**, it had a **surplus**, and if not everyone must farm, some people can do something else. This is the single fact that produced civilization.',
-        '**Job specialization** appeared: artisans made pottery, art, and architecture; others became soldiers, merchants, or officials. **Government** arose to protect the surplus, organize irrigation, defend cities, and secure trade routes.',
-        '**Writing** developed, **cuneiform** in Mesopotamia, **hieroglyphs** in Egypt, first to keep accounts of grain, then to record laws, myths, and religion. **Trade** expanded to bring in what a valley lacked, carried by boats, wheeled carts, and animal caravans.',
-        'Surplus also concentrated power: society split into **social classes**, **patriarchy** and forced labor gave elite men authority over the majority, and **complex religion** tied rulers to the spirit world that supposedly guaranteed the harvest. The same logic built civilizations independently in the Americas, from the Maya to the Inca.'
+        'A **surplus** is more food than the farmers themselves need.',
+        'If not everyone must farm, some people can do something else. That single fact produced civilization.',
+        '**Job specialization**: artisans, soldiers, merchants, officials, priests.',
+        '**Government** arose to organize irrigation, defend cities, and protect the surplus.',
+        '**Writing** began as grain accounting: **cuneiform** in Mesopotamia, **hieroglyphs** in Egypt.',
+        '**Trade** brought in what a valley lacked, carried by boat, cart, and caravan.',
+        'Surplus also concentrated power: **social classes**, **patriarchy**, forced labor, and **complex religion**.',
+        'The same logic built civilizations independently in the Americas, from the Maya to the Inca.'
       ],
       image: {
         title: 'Machu Picchu, Peru',
@@ -207,10 +217,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Other Path: Pastoralists on the Grasslands',
       bullets: [
-        'Not every environment could support farming. On the **Eurasian steppe**, an 8,000-km grassland corridor from Hungary to Manchuria, the land was **too dry and open** for reliable agriculture.',
-        'People there took the other Neolithic path: **pastoralism**, herding domesticated animals across seasonal grazing ranges. Like farmers, pastoralists were more socially stratified than foragers.',
-        'Because they were **mobile**, pastoralists rarely accumulated many possessions, but their movement made them a crucial **conduit for technological and cultural exchange**, carrying goods, tools, and ideas between the settled societies they traded with and sometimes raided.',
-        'The lesson is geographic: the **same revolution**, domestication, produced **two different ways of life**, farming or herding, depending on what the land could support.'
+        'Not every environment could support farming.',
+        'The **Eurasian steppe** runs 8,000 km from Hungary to Manchuria, too dry and open for reliable agriculture.',
+        'Its people took the other Neolithic path: **pastoralism**, herding animals across seasonal ranges.',
+        'Like farmers, pastoralists were more socially stratified than foragers.',
+        'Mobility meant few possessions but constant contact with settled peoples.',
+        'Pastoralists carried goods, tools, and ideas between the societies they traded with and sometimes raided.',
+        'One revolution, two ways of life. The land decided which.'
       ],
       image: {
         title: 'The Eurasian Steppe',
@@ -222,10 +235,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Geography Is Cause, Not Destiny',
       bullets: [
-        'Historians use geography to explain the **conditions that shaped human choices**, not to argue that environment determined everything. The key question is always: what did this feature make **easier** or **harder**?',
-        'Geography decided **where** the Neolithic Revolution could happen; **human choices** decided what people built on it. Neither alone explains civilization.',
-        'The world AP World History begins with at **c.1200**, its empires, cities, and trade networks, rests entirely on this ancient agricultural foundation. You cannot explain a state without the surplus beneath it.',
-        'From Day 1, treat the map as an **argument**: a physical feature is evidence about why some societies could grow large, trade far, and build cities, and why others followed a different path.'
+        'Geography explains the **conditions** that shaped human choices. It does not determine everything.',
+        'The historian\'s question is always: what did this feature make **easier** or **harder**?',
+        'Geography decided **where** the Neolithic Revolution could happen.',
+        '**Human choices** decided what people built on top of it.',
+        'The world of **c.1200**, its empires, cities, and trade networks, rests on that agricultural foundation.',
+        'You cannot explain a state without the surplus beneath it.',
+        'Treat the map as an **argument**, not a backdrop.'
       ],
       image: {
         title: 'Reading geography as a historian',

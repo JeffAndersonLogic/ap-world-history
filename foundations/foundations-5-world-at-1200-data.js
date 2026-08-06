@@ -165,11 +165,16 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The World at c.1200: Six Regional Snapshots',
       bullets: [
-        '**Song China**: Population 100+ million, paper money, world\'s largest merchant fleet, civil service exam selecting officials, Neo-Confucian synthesis of Zhu Xi (1130–1200 CE), maritime customs revenue funding the state. Politically threatened by Jurchen Jin in the north and Mongol consolidation on the steppe. Commercially at its zenith.',
-        '**Dar al-Islam**: Abbasid caliph holds symbolic religious authority; Seljuk Turks hold real power. Intellectual peak: Ibn Rushd in Córdoba, Ibn Tufayl, Maimonides in Cairo. *Madrasa* networks funded by *waqf* sustain scholarship through political fragmentation. Indian Ocean and trans-Saharan trade routes connect Muslim merchants from Morocco to Malacca.',
-        '**Africa**: Swahili coast city-states (Kilwa, Mombasa) active Indian Ocean nodes, Chinese celadon in their archaeological record. Great Zimbabwe under construction. Mali Empire consolidating in West Africa. Africa at c.1200 is connected to both Indian Ocean and trans-Saharan systems, not isolated.',
-        '**Americas**: Cahokia (population 10,000–20,000) near modern St. Louis is the largest city north of Mexico. Post-Toltec Mesoamerica in city-state competition. Andes pre-Inca. Complete geographic isolation from Afro-Eurasia: no horses, no large draft animals, no Eurasian disease immunity. Complex civilizations developing on a different timeline under different geographic constraints.',
-        '**Europe**: First universities (Bologna 1088, Paris c.1150, Oxford c.1167). Crusades stimulating Mediterranean commerce. Agricultural revolution (heavy plow, three-field rotation). By almost any measure peripheral to the Islamic world and East Asia at c.1200. The transformation that makes Europe dominant is the story of Units 3–9, it has not happened yet.'
+        '**Song China**: 100+ million people, paper money, the world\'s largest merchant fleet, civil service exams, Zhu Xi\'s Neo-Confucian synthesis.',
+        'Song China is commercially at its zenith and militarily pressed by the Jurchen Jin and a consolidating Mongol steppe.',
+        '**Dar al-Islam**: the Abbasid caliph holds symbolic authority, the Seljuk Turks hold real power.',
+        '*Madrasas* funded by *waqf* sustain scholarship through political fragmentation. Ibn Rushd in Córdoba, Maimonides in Cairo.',
+        '**Africa**: Swahili city-states (Kilwa, Mombasa) trade on the Indian Ocean, with Chinese celadon in their archaeological record.',
+        'Great Zimbabwe is under construction and Mali is consolidating. Africa at c.1200 is connected, not isolated.',
+        '**Americas**: Cahokia (10,000–20,000 people) is the largest city north of Mexico; Mesoamerica is post-Toltec, the Andes pre-Inca.',
+        'Complete isolation from Afro-Eurasia means no horses, no large draft animals, and no Eurasian disease immunity.',
+        '**Europe**: first universities (Bologna 1088, Paris c.1150, Oxford c.1167), Crusades stimulating Mediterranean trade, heavy plow and three-field rotation.',
+        'By almost any measure Europe is peripheral to the Islamic world and East Asia. Its rise is the story of Units 3 to 9.'
       ],
       image: {
         title: 'Song Dynasty Map',
@@ -181,11 +186,12 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Five AP Historical Thinking Skills',
       bullets: [
-        '**Contextualization**: You practiced this on Day 1. Before explaining Song China\'s prosperity, you explained the Yangtze Delta\'s geographic conditions, the broader context that made the prosperity possible. Every AP writing task begins with this "zoom out" move.',
-        '**Causation**: You practiced this on Day 3. When you explained why the Song civil service exam strengthened imperial authority, you traced the mechanism, the chain connecting cause to effect. AP causation requires the mechanism, not just the identification.',
-        '**CCOT**: The entire Foundations unit built the baseline for CCOT. You cannot identify what changed by c.1200 without knowing what existed before. The world at c.1200 is your starting point for every period-spanning question in the course.',
-        '**Comparison**: You practiced this on Day 2. When you compared Confucianism and Islam as institutions, you used a specific analytical category, how each organized social hierarchy, rather than just listing facts about both. AP comparison requires a category, a similarity or difference, and evidence for each case.',
-        '**Argumentation**: You practiced this every day. A defensible claim in the first sentence. Specific named evidence. Explicit reasoning connecting the two. These three moves, claim, evidence, reasoning, are the architecture of every AP writing response.'
+        '**Contextualization** (Day 1): explain the Yangtze Delta\'s conditions before explaining Song prosperity. Every AP task starts by zooming out.',
+        '**Causation** (Day 3): trace the mechanism connecting cause to effect. Identification alone is not causation.',
+        '**CCOT**: you cannot say what changed by c.1200 without knowing what came before. Foundations built that baseline.',
+        '**Comparison** (Day 2): use an analytical category, such as how each system organized hierarchy.',
+        'AP comparison needs a category, a similarity or difference, and evidence for each case.',
+        '**Argumentation** (every day): claim, evidence, reasoning. That is the architecture of every AP response.'
       ],
       image: {
         title: 'Jiaozi paper money, Song China',
@@ -197,10 +203,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Contextualization in Practice: Song China',
       bullets: [
-        'Contextualization is the most commonly missed AP skill because students confuse it with introduction. An introduction says "I am going to talk about Song China." A contextualization explains the conditions that shaped what the essay will argue.',
-        '**Model contextualization sentence**: "When Jurchen Jin forces drove the Song court south across the Huai River in 1127, they inadvertently positioned China\'s government in the Yangtze Delta, the world\'s most productive wet-rice agricultural zone, where double-cropping Champa rice yielded surpluses that supported a population of 100 million and funded through maritime customs revenue what historians call the world\'s first Commercial Revolution."',
-        'Notice what that sentence does: it names a specific event (1127 Jurchen Jin conquest), explains a geographic consequence (Yangtze Delta positioning), connects that consequence to an agricultural mechanism (Champa rice double-cropping), and links the agricultural surplus to the commercial outcome. Every word is doing analytical work.',
-        'The rule: **contextualization must explain a connection, not just name a background condition**. "Song China existed during a time of Confucian tradition" is not contextualization. "Zhu Xi\'s Neo-Confucian synthesis embedded Confucian ethics into the civil service examination curriculum, ensuring that every official who administered Song China shared an ideological framework that defined loyalty to the emperor as a cosmic obligation" is contextualization.'
+        'Students confuse contextualization with introduction. "I am going to talk about Song China" is an introduction.',
+        'Contextualization explains the conditions that shaped what the essay argues.',
+        '**Model**: "When Jurchen Jin forces drove the Song court south in 1127, they positioned China\'s government in the Yangtze Delta, the world\'s most productive wet-rice zone, where double-cropped Champa rice fed 100 million people and funded, through maritime customs revenue, the world\'s first Commercial Revolution."',
+        'That sentence names an event, explains a geographic consequence, connects it to an agricultural mechanism, and links surplus to commercial outcome.',
+        'The rule: contextualization **explains a connection**. It does not just name a background condition.',
+        'Weak: "Song China existed during a time of Confucian tradition."',
+        'Strong: "Zhu Xi\'s Neo-Confucian synthesis embedded Confucian ethics in the exam curriculum, so every Song official shared a framework defining loyalty to the emperor as a cosmic obligation."'
       ],
       image: {
         title: 'Kilwa Kisiwani, Swahili coast',
@@ -212,10 +221,14 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Causation and CCOT in Practice',
       bullets: [
-        '**Causation requires mechanism, not just identification.** Weak: "The Inca mit\'a labor system caused the construction of roads." Strong: "The Inca mit\'a required every adult male to contribute rotating labor service to the state, which the Inca government directed toward road construction, producing 40,000 km of engineered road that allowed military units to traverse the empire in days rather than weeks, enabling the rapid suppression of regional rebellions that kept the empire intact."',
-        '**CCOT requires a baseline and a comparison.** The Foundations unit built the baseline: by c.1200, Song China already had paper money, Dar al-Islam already had *madrasa* networks, the Indian Ocean trade system already connected four continents. When Unit 2 asks "what changed after the Mongol conquests?" students who know the pre-1200 baseline can give a CCOT answer. Students who don\'t know the baseline can only describe the Mongols.',
-        '**The "zoom out / zoom in" rule**: CCOT answers zoom out to identify the long-term pattern (what was true across centuries), then zoom in to the specific period (what changed within that pattern). "Long-distance trade across Afro-Eurasia existed for centuries before the Mongols, but the Mongol *Pax Mongolica* reduced political fragmentation along Silk Road routes, enabling higher-volume, higher-speed exchange than the pre-Mongol relay system had supported", that is CCOT.',
-        '**The misconception to correct**: "Things always get better over time." By c.1200, the most sophisticated economy was in China, the most advanced mathematics in the Islamic world, the most extensive trade network in the Indian Ocean, and the most populous city north of Mexico on the Mississippi River. Progress is not a European project heading toward a Western destination. CCOT is neutral about direction, it describes change without implying improvement.'
+        '**Causation requires a mechanism.** Weak: "The Inca mit\'a caused road construction."',
+        'Strong: "The mit\'a required rotating labor from every adult male, which the state directed into 40,000 km of engineered road, letting armies cross the empire in days and crush rebellions before they spread."',
+        '**CCOT requires a baseline.** By c.1200, Song China already had paper money, Dar al-Islam already had *madrasa* networks, the Indian Ocean already linked four continents.',
+        'Without that baseline, "what changed after the Mongols?" can only be answered by describing the Mongols.',
+        '**Zoom out, then zoom in.** Name the long-term pattern, then the change inside it.',
+        'Example: Afro-Eurasian trade long predates the Mongols, but the *Pax Mongolica* cut political fragmentation and raised volume and speed.',
+        '**Correct the misconception that things always improve.** At c.1200 the richest economy was Chinese, the most advanced mathematics Islamic, the widest trade network the Indian Ocean.',
+        'The most populous city north of Mexico sat on the Mississippi. CCOT describes change without implying progress.'
       ],
       image: {
         title: 'Angkor Wat, Khmer Empire',
@@ -227,10 +240,15 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Launch: From Foundations to Topic 1.1',
       bullets: [
-        'Topic 1.1 (Song China) is the first AP World topic. Everything in the Foundations unit was preparation for this moment. When students open Topic 1.1 and encounter Song China\'s Commercial Revolution, they should not be learning about rice agriculture for the first time, they built that foundation on Day 1. When they encounter the civil service exam, they should not be encountering Confucianism for the first time, they built that foundation on Day 2.',
-        'The **four questions that unlock every Unit 1 state** (from Day 3): What governance problem was this state solving? Which tools did it use? Who did the hierarchy serve, and who was excluded? Where were the limits, and who pushed back? Apply these to Song China: governance problem = aristocratic counterweight; tool = civil service exam; hierarchy served educated gentry; limits = exam was meritocratic in form, oligarchic in function; pushback = peasant rebellions driven by over-taxation.',
-        'The **junction city principle** from Day 4 applies immediately in Unit 1: Quanzhou was wealthy because it sat at the junction of the South China Sea trade routes with China\'s internal Grand Canal system. Kilwa was wealthy because it sat at the junction of East African gold routes with the Indian Ocean network. Every wealthy city in Unit 1 is a junction city, find the junction, find the wealth.',
-        'The **non-goods principle** from Day 4 applies to every Unit 1 question about cultural exchange: Islam spreads to Southeast Asia via merchant networks, not conquest. Buddhism spreads to Korea and Japan via Tang Chinese court connections. Neo-Confucianism spreads to Korea and Vietnam via the civil service examination model. Ideas travel with people, and people travel along trade routes.'
+        'Topic 1.1 (Song China) is the first AP World topic. Everything in Foundations was preparation for it.',
+        'Rice agriculture was Day 1. Confucianism was Day 2. Neither should be new in Unit 1.',
+        'The **four state questions** from Day 3: What governance problem? Which tools? Who was served and who excluded? Where were the limits?',
+        'Song China: problem = a counterweight to aristocrats; tool = the civil service exam; served the educated gentry.',
+        'Its limit: meritocratic in form, oligarchic in function. Its pushback: peasant rebellions over taxation.',
+        '**Junction city principle** (Day 4): Quanzhou sat where South China Sea routes met the Grand Canal.',
+        'Kilwa sat where East African gold routes met the Indian Ocean. Find the junction, find the wealth.',
+        '**Non-goods principle** (Day 4): Islam reaches Southeast Asia via merchants, Buddhism reaches Korea and Japan via the Tang court, Neo-Confucianism reaches Korea and Vietnam via the exam model.',
+        'Ideas travel with people, and people travel along trade routes.'
       ],
       image: {
         title: 'Comparing the regions at c.1200',

@@ -162,10 +162,16 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Silk Roads: Relay, Not Highway',
       bullets: [
-        'The Silk Road was not one road, it was a **branching relay network** of overland routes from Chang\'an west through the Tarim Basin (north and south of the Taklamakan Desert), converging at Kashgar, continuing through Samarkand and Merv to Persia and the Mediterranean. No single merchant traveled the whole route: goods changed hands at each oasis city, each merchant taking a profit and assuming the next segment\'s risk.',
-        '**Tang Chang\'an** (population 1–2 million, c.700–750 CE) was the eastern anchor: the Western Market housed permanent colonies of Sogdian, Persian, Arab, Nestorian Christian, and Jewish merchants. Zoroastrian fire temples and a mosque existed within the Tang capital, the state officially recognized Muslim commercial courts for disputes among foreign merchants.',
-        'The **Sogdians**, Iranian-speaking merchants from Samarkand and Bukhara, were the indispensable middlemen of the central segment. They built caravanserais, spoke multiple languages, maintained family diaspora networks from China to Byzantium, and carried not just silk but Buddhist art, Zoroastrian texts, Manichaean manuscripts, and Nestorian Christianity. The "Ancient Sogdian Letters" (c.313 CE), found in a watchtower near Dunhuang, are the oldest surviving merchant correspondence from the Silk Road.',
-        '**What moved west from China**: silk, porcelain, paper (after 751 CE), tea, gunpowder (later), cast iron. **What moved east toward China**: horses (the Tang military desperately needed Central Asian horses), glassware, cotton textiles, spices, Buddhist texts and monks, silver, and gold.'
+        'Not one road. A **branching relay network** running from Chang\'an through the Tarim Basin to Kashgar, then Samarkand, Merv, Persia, and the Mediterranean.',
+        'No merchant traveled the whole route.',
+        'Goods changed hands at each oasis city, every trader taking a profit and assuming the next leg\'s risk.',
+        '**Tang Chang\'an** (1–2 million people, c.700–750 CE) anchored the eastern end.',
+        'Its Western Market held permanent Sogdian, Persian, Arab, Nestorian Christian, and Jewish merchant colonies.',
+        'Zoroastrian fire temples and a mosque stood inside the capital, and the state recognized Muslim commercial courts for foreign merchants.',
+        'The **Sogdians** of Samarkand and Bukhara were the middlemen of the central segment: caravanserais, many languages, family networks from China to Byzantium.',
+        'They carried Buddhist art, Zoroastrian texts, Manichaean manuscripts, and Nestorian Christianity along with the cargo.',
+        '**West from China**: silk, porcelain, paper (after 751 CE), tea, cast iron, and later gunpowder.',
+        '**East toward China**: horses (the Tang military needed them badly), glassware, cotton textiles, spices, silver, and gold.'
       ],
       image: {
         title: 'Silk Road Map',
@@ -177,10 +183,16 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Indian Ocean: Nature\'s Round-Trip Ticket',
       bullets: [
-        'The Indian Ocean monsoon reverses seasonally: **southwest monsoon (June–September)** drives ships from Arabia and East Africa toward India and Southeast Asia; **northeast monsoon (November–March)** drives them back. This natural wind reversal created a **built-in round-trip sailing schedule**, merchants could plan annual voyages without fighting the wind, making the Indian Ocean the world\'s first sustained maritime trade network.',
-        'By c.1200 CE, the network connected **six major port city clusters**: Aden (Red Sea gateway), Hormuz (Persian Gulf gateway), Calicut and Quilon (India\'s Malabar spice coast), Malacca (Strait of Malacca chokepoint), Quanzhou (Song China\'s primary international port), and Kilwa (East African gold entrepôt). Each was a junction city, wealthy not because of what it produced locally but because of its geographic position in the network.',
-        'The **Srivijaya Empire** (c.650–1377 CE, based in Sumatra) controlled the Strait of Malacca, the 900-km passage between the Indian Ocean and South China Sea through which all maritime traffic between India and China had to pass. Srivijaya extracted tolls, became enormously wealthy, and funded one of the most important centers of Mahayana Buddhist learning outside India.',
-        '**Kilwa** (modern Tanzania) shows the network\'s reach most dramatically: Song Dynasty celadon excavated there proves Chinese merchant ships were participating in East African trade. Gold from Great Zimbabwe\'s interior moved through Kilwa to India and Arabia; Chinese porcelain and Indian cotton textiles moved back. The Indian Ocean was not an Asian system, it connected four continents.'
+        'The monsoon reverses with the seasons.',
+        '**Southwest, June to September**: ships run from Arabia and East Africa toward India and Southeast Asia.',
+        '**Northeast, November to March**: they run back.',
+        'That reversal was a **built-in round-trip schedule**. Merchants planned annual voyages instead of fighting the wind.',
+        'By c.1200 six port clusters anchored the network: **Aden**, **Hormuz**, **Calicut and Quilon**, **Malacca**, **Quanzhou**, and **Kilwa**.',
+        'Each was wealthy because of its **position**, not its production.',
+        '**Srivijaya** (c.650–1377 CE, Sumatra) taxed the 900-km **Strait of Malacca**, the only sea passage between India and China.',
+        'Its tolls funded a major center of Mahayana Buddhist learning.',
+        'Song celadon excavated at **Kilwa** proves Chinese goods reached East Africa.',
+        'Gold from Great Zimbabwe moved out through the same port. This was a four-continent system, not an Asian one.'
       ],
       image: {
         title: 'Indian Ocean',
@@ -192,10 +204,16 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Trans-Saharan Trade: Desert as Highway',
       bullets: [
-        'Before the **North Arabian camel saddle** (c.300 CE), the Sahara was a genuine barrier. After it: the dromedary camel could carry 200–300 kg of cargo, travel 30–40 km per day, go 5–7 days without water, and eat desert scrub. The camel transformed 9.2 million km² of desert into a network of caravan routes linking five continents\' worth of exchange.',
-        'The trade ran on **geographic complementarity**: West Africa had gold (Bambuk and Bure goldfields in modern Mali/Guinea); the Sahara had salt (Taghaza rock salt mines, modern Algeria-Mali border); North Africa and the Mediterranean needed both. Salt moved south in exchange for gold moving north, two commodities whose production was geographically separated but whose demand was universal.',
-        'Islam provided the **commercial infrastructure**: after Arab conquest of North Africa (c.640–710 CE), Islamic contract law (*muamalat*) standardized agreements, the *hawala* credit system allowed value transfer without physically moving gold, and mosque and *khan* (caravanserai) networks provided hospitality and dispute resolution. Muslim merchants could operate across 5,000 km of desert using shared legal and financial frameworks.',
-        'The **Ghana Empire** (c.700–1100 CE) and **Mali Empire** (c.1235–1400 CE) built power by controlling the southern termini of trans-Saharan routes, taxing every load of gold and salt that passed through their territory. Mansa Musa\'s 1324 hajj (covered in Foundations 2) was only possible because generations of trans-Saharan trade had made Mali one of the wealthiest states on earth.'
+        'Before the **North Arabian camel saddle** (c.300 CE), the Sahara was a real barrier.',
+        'The dromedary carried 200–300 kg, covered 30–40 km a day, and went 5–7 days without water.',
+        'That turned 9.2 million km² of desert into a caravan network.',
+        'The trade ran on **geographic complementarity**: West African gold (Bambuk and Bure) for Saharan salt (Taghaza).',
+        'North Africa and the Mediterranean wanted both.',
+        'Islam supplied the commercial infrastructure after the Arab conquest of North Africa (c.640–710 CE).',
+        'Contract law (*muamalat*) standardized agreements, and the *hawala* credit system moved value without moving gold.',
+        'Mosque and *khan* networks provided hospitality and dispute resolution across 5,000 km of desert.',
+        'The **Ghana Empire** (c.700–1100 CE) and **Mali Empire** (c.1235–1400 CE) taxed the southern ends of every route.',
+        'Mansa Musa\'s 1324 hajj was possible only because generations of that trade had made Mali one of the wealthiest states on earth.'
       ],
       image: {
         title: 'Mansa Musa on the Catalan Atlas (1375 CE)',
@@ -207,10 +225,18 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'What Else Moved: Disease, Technology, Crops, Religion',
       bullets: [
-        '**Disease, Plague of Justinian (541 CE)**: Bubonic plague (*Yersinia pestis*) moved from Central Africa or Central Asia through the Indian Ocean grain trade to Egypt, then by sea to Constantinople. Grain ships carried rats; rats carried fleas; fleas carried plague. The Eastern Roman Empire lost an estimated 25–50 million people. The same trade infrastructure that fed Constantinople killed it. Disease is the most dramatic proof that trade networks move more than goods.',
-        '**Technology, Paper (751 CE)**: Chinese papermakers captured at the Battle of Talas established mills in Samarkand within years. Paper reached Baghdad by 794 CE, enabling the House of Wisdom\'s translation movement. Al-Khwarizmi wrote algebra on it. Ibn Sina\'s *Canon of Medicine* was copied on it. Paper reached Europe via Islamic Spain (c.1150 CE) and underpinned Gutenberg\'s printing press in 1440. One technology transfer at one military defeat rippled through 700 years of intellectual history.',
-        '**Crops, Champa Rice (c.1012 CE)**: Song Emperor Zhenzong imported fast-maturing Champa rice from Vietnam and distributed 30,000 bushels to Yangtze Delta farmers. Champa rice matured in 60 days (vs. 150 for standard varieties), enabling **double-cropping**, two harvests per year. This single agricultural transfer is a primary driver of Song China\'s population growth from 60 million (960 CE) to 100+ million (c.1200 CE). A crop that originated in Southeast Asia transformed the most populous society on earth.',
-        '**Religion, Islam via Indian Ocean merchants**: Islam spread to Southeast Asia primarily through Muslim merchants operating Indian Ocean routes, not through conquest. Malay and Javanese port rulers converted because Muslim merchant networks offered commercial advantages, shared legal frameworks, access to the *hajj* network, Arabic literacy. The Malay sultanate of Samudra-Pasai (c.1267 CE, in modern Aceh, Sumatra) is the earliest documented Islamic polity in Southeast Asia, a trading state converted by traders, not armies.'
+        '**Disease.** The Plague of Justinian (541 CE) rode the Indian Ocean grain trade to Egypt, then by sea to Constantinople.',
+        'Grain ships carried rats, rats carried fleas, fleas carried *Yersinia pestis*.',
+        'The Eastern Roman Empire lost an estimated 25–50 million people. The infrastructure that fed the city killed it.',
+        '**Technology.** Chinese papermakers captured at the Battle of Talas (751 CE) set up mills in Samarkand.',
+        'Paper reached Baghdad by 794 CE and enabled the House of Wisdom\'s translation movement.',
+        'It reached Europe through Islamic Spain (c.1150 CE) and underpinned Gutenberg\'s press in 1440.',
+        '**Crops.** Song Emperor Zhenzong distributed 30,000 bushels of Champa rice to Yangtze Delta farmers c.1012 CE.',
+        'It matured in 60 days instead of 150, allowing **double-cropping**, two harvests a year.',
+        'Song population grew from 60 million (960 CE) to over 100 million (c.1200 CE).',
+        '**Religion.** Islam reached Southeast Asia through Muslim merchants, not armies.',
+        'Malay and Javanese port rulers converted for commercial advantage: shared law, Arabic literacy, access to the hajj network.',
+        '**Samudra-Pasai** (c.1267 CE, Sumatra) is the earliest documented Islamic state in Southeast Asia.'
       ],
       image: {
         title: 'Great Buddha, Cave 96, Mogao Caves at Dunhuang',
@@ -222,10 +248,16 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Bridge to AP World: Units 2 and Beyond',
       bullets: [
-        'Unit 2 asks: *why did trade intensify after c.1200?* The answer only makes sense if students understand what already existed before 1200. The Mongol Empire did not create Silk Road trade, it pacified and systematized a network already operating for 1,400 years. Zheng He\'s voyages (1405–1433 CE) did not discover the Indian Ocean, they were diplomatic missions into a commercial system China had been participating in for centuries.',
-        'The **junction city principle** applies across AP World: wherever two or more trade routes cross, wealth and power accumulate. Students can use this to predict which societies will matter: Malacca controls the Strait, so Malacca becomes powerful. The Ottoman Empire captures Constantinople (1453 CE), controlling the eastern Mediterranean junction, and immediately becomes a commercial empire. The Portuguese reroute Indian Ocean trade around Africa, bypassing the Ottoman junction, and Ottoman power begins to decline.',
-        'The **non-goods principle** explains some of AP World\'s most important events: the Black Death (Unit 2) travels Mongol trade routes. The Columbian Exchange (Unit 4) is a biological version of the same process that moved Champa rice and plague bacilli. The spread of Islam to West Africa, Southeast Asia, and South Asia (Units 1–2) follows merchant networks, not conquest routes.',
-        'Students who arrive at Unit 1 knowing these principles can apply them immediately: *Song China\'s prosperity* → Yangtze Delta rice surplus plus Indian Ocean customs revenue. *Dar al-Islam\'s intellectual culture* → paper technology plus madrasa infrastructure plus cross-continental scholarly networks sustained by the hajj. The Foundations unit built the operating system. Unit 1 is where they start running the programs.'
+        'Unit 2 asks why trade intensified after c.1200. That answer requires knowing what already existed.',
+        'The Mongols did not create Silk Road trade. They pacified a network already 1,400 years old.',
+        'Zheng He (1405–1433 CE) did not discover the Indian Ocean. He sailed into a system China had used for centuries.',
+        '**Junction city principle**: wherever trade routes cross, wealth and power accumulate.',
+        'Malacca controls the Strait and rises. The Ottomans take Constantinople (1453 CE) and become a commercial empire.',
+        'The Portuguese reroute around Africa, bypass the Ottoman junction, and Ottoman power begins to slip.',
+        '**Non-goods principle**: the Black Death travels Mongol routes, the Columbian Exchange repeats the process, Islam follows merchants rather than armies.',
+        'Song prosperity = Yangtze rice surplus plus Indian Ocean customs revenue.',
+        'Dar al-Islam\'s intellectual culture = paper plus madrasas plus scholarly networks sustained by the hajj.',
+        'Foundations built the operating system. Unit 1 is where you run the programs.'
       ],
       image: {
         title: 'Kilwa Kisiwani ruins, Tanzania (Swahili coast, c.9th–16th centuries CE)',

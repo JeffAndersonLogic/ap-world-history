@@ -174,10 +174,11 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Welcome to BeHistorical: You Are Not Here to Memorize',
       bullets: [
-        'AP World History is **not a memorization course**. You will not be tested in May on your ability to recall dates. You will be tested on your ability to **think like a historian**, to contextualize, compare, argue, and reason from evidence.',
-        'This is a course about **becoming a person**, a historian, not about consuming content. Everything you do in this room is a rep for that person.',
-        'BeHistorical is built around **six habits of mind** that repeat every unit, every lesson, every module. By May, these habits are how you think. Not tasks you finish.',
-        'You will still learn a lot of history. But the history is the **material you practice on**, not the point of the class. The point is who you become.'
+        'AP World History is **not a memorization course**. The May exam does not test recall of dates.',
+        'It tests whether you can **think like a historian**: contextualize, compare, argue, reason from evidence.',
+        'BeHistorical is built on **six habits of mind** that repeat every unit, every lesson, every module.',
+        'You will still learn a lot of history. The history is the **material you practice on**.',
+        'The point of the course is who you become, not what you can recite.'
       ],
       image: {
         title: 'Prehistoric Cave Paintings, Lascaux',
@@ -189,12 +190,12 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Six AP Historical Thinking Skills',
       bullets: [
-        '**Contextualization.** Place a person, event, or idea inside the world that surrounded it *before* explaining it. "Set the stage first." Geography, prior events, and simultaneous forces all count as context.',
-        '**Comparison.** Read two things side by side. What is the same? What is different? And, the AP kicker,*why does the difference matter?* Never just list similarities.',
-        '**Causation.** Follow the chain of cause and effect. Historians distinguish between **triggers** (the spark) and **underlying causes** (the fuel). Both matter. Neither alone explains.',
-        '**Continuity & change over time.** Watch what stayed the same and what changed as history moved. Reject the easy story that "everything changed" or "nothing changed." Both are almost always wrong.',
-        '**Argumentation.** Make a claim about the past *in your voice* and back it with specific evidence. A thesis is a **position**, not a summary. If someone can\'t disagree with your thesis, it isn\'t one.',
-        '**Sourcing.** Read a document like a lawyer reads a witness: who made it, when, why, for whom, and what that tells you about what it says. The **source of a claim** matters as much as the claim itself.'
+        '**Contextualization.** Set the stage before you explain. Geography, prior events, and simultaneous forces all count.',
+        '**Comparison.** Same, different, and *why the difference matters*. Never just list similarities.',
+        '**Causation.** Separate **triggers** (the spark) from **underlying causes** (the fuel). Both matter.',
+        '**Continuity and change over time.** Track what held and what shifted. "Everything changed" is almost always wrong.',
+        '**Argumentation.** A thesis is a **position**, not a summary. If nobody can disagree with it, it is not a thesis.',
+        '**Sourcing.** Who made it, when, why, and for whom. The source matters as much as the claim.'
       ],
       image: {
         title: 'Confucius, Tang Dynasty depiction',
@@ -206,11 +207,12 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Rhythm of Every Class Period: The 10 Modules',
       bullets: [
-        'Every lesson in BeHistorical uses the **same 10 modules**, in the same order, on purpose. The rhythm is the pedagogy: repetition trains the skills into you.',
-        '**01 Map** builds geographic context. **02 First & 10** is the day\'s narrative reading, the historian\'s warm-up. **03 Content Delivery** is direct instruction on the lecture cards.',
-        '**04 BeSurreal** is a memorable everyday-life detail from the historical moment, the sensory anchor that makes the concept stick. **05 Skill Builder** practices one AP skill on today\'s content. **06 Checkpoint 1** captures your thinking early.',
-        '**07 Evidence Lab** treats visuals as evidence, not decoration. **08 Primary Source** (or AI Coach in Foundations) trains sourcing. **09 BeInTheRoom** puts you in the moment as a decision-maker.',
-        '**10 Checkpoint 2** is a synthesis, pulling threads across the modules into a single argument. This is the reflex the AP exam rewards.'
+        'Every lesson uses the **same 10 modules** in the same order. The rhythm is the pedagogy.',
+        '**01 Map**, geographic context. **02 First & 10**, the day\'s narrative reading.',
+        '**03 Content Delivery**, direct instruction on the lecture cards. **04 BeSurreal**, one memorable everyday detail.',
+        '**05 Skill Builder**, one AP skill on today\'s content. **06 Checkpoint 1**, your thinking captured early.',
+        '**07 Evidence Lab**, visuals as evidence, not decoration. **08 Primary Source** (AI Coach in Foundations), sourcing practice.',
+        '**09 BeInTheRoom**, you decide in the moment. **10 Checkpoint 2**, synthesis across the whole lesson.'
       ],
       image: {
         title: 'A Library in the Golden Islamic Age',
@@ -222,11 +224,12 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'What You Are Building: Your Historian\'s Portfolio',
       bullets: [
-        'Everything you write this year, every First & 10 response, every checkpoint, every BeInTheRoom decision, every DBQ draft, is preserved. Your writing is the raw material for what comes next.',
-        'In **May, after the AP exam,** you receive your **Historian\'s Portfolio**: a one-page letter about the historian you became, drawn from your own writing at three moments across the year, September, January, April.',
-        'The letter names **what you got specifically better at,** flags **one growth edge** to keep working on, and includes **excerpts from your own writing** so the story is grounded in evidence.',
-        'The portfolio is **yours.** You see the draft before it is final. You can edit it. **You choose** who sees it, you, your family, your next AP teacher, your college applications in senior year.',
-        'This is the receipt for what happened to your mind this year. It is not a grade. It is a portable, permanent artifact of who you became.'
+        'Everything you write this year is preserved: First & 10 responses, checkpoints, BeInTheRoom decisions, DBQ drafts.',
+        'In **May, after the AP exam**, you receive your **Historian\'s Portfolio**, a one-page letter about the historian you became.',
+        'It draws on your own writing at three moments: **September, January, April**.',
+        'It names what you got specifically better at, flags **one growth edge**, and quotes your own words as evidence.',
+        'The portfolio is **yours**. You see the draft, you can edit it, and **you choose** who sees it.',
+        'It is not a grade. It is a portable record of what happened to your mind this year.'
       ],
       image: {
         title: 'The Great Isaiah Scroll, Dead Sea Scrolls',
@@ -238,11 +241,11 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Compact: Student, Family, Teacher',
       bullets: [
-        '**To the student:** Take the checkpoints seriously. They are not busywork. They are the raw material of your portfolio. Write in your voice. Write like a historian, not like a kid finishing a worksheet.',
-        '**To the family:** Your student is producing a **portable body of work.** In May you will receive a family copy of the portfolio. It is grounded in your student\'s own writing, and it captures growth, not just performance.',
-        '**On trust and consent:** The portfolio contains only **your student\'s thinking**, never behavior notes, discipline history, or personality labels. Only academic voice. Your student reviews and edits before it is finalized. Nothing goes to a next teacher without your student\'s permission.',
-        '**Nothing gets in without evidence.** Every claim in the portfolio quotes something your student actually wrote. If it is not on the page in their voice, it is not in the letter.',
-        '**On sharing:** Your student decides where the portfolio goes. It is a piece of writing about them, owned by them, forwarded only with their consent. That principle is non-negotiable.'
+        '**Student:** checkpoints are not busywork. They are the raw material of your portfolio. Write in your own voice.',
+        '**Family:** in May you receive a family copy, grounded in your student\'s own writing and focused on growth.',
+        '**Limits:** academic voice only. No behavior notes, no discipline history, no personality labels.',
+        '**Evidence:** every claim in the portfolio quotes something your student actually wrote.',
+        '**Consent:** your student reviews and edits before it is final, and decides who sees it. That is non-negotiable.'
       ],
       image: {
         title: 'Song Dynasty Palace Examinations',

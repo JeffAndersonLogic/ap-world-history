@@ -164,10 +164,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Confucianism: Philosophy Becomes the State',
       bullets: [
-        '**Confucius** (551–479 BCE) taught that a harmonious society rests on **five key relationships** and on **filial piety**, respect for parents, elders, and rulers. The goal was social order through everyone fulfilling their proper role.',
-        'Because Confucianism prized **education and merit**, it became the basis of the **civil service examination (keju)**, passing required mastery of the Confucian classics, which turned a moral philosophy into the machinery of government.',
-        'The exam system solved a governance problem: it replaced hereditary aristocrats with officials who owed their careers to the state and shared one ethical vocabulary and idea of loyalty.',
-        '**Neo-Confucianism** (Zhu Xi, 1130–1200 CE) gave Confucian ethics a metaphysical foundation by blending in Buddhist and Daoist ideas, itself an example of syncretism inside China.'
+        '**Confucius** (551–479 BCE) taught social order through **five key relationships**.',
+        '**Filial piety**: respect for parents, elders, and rulers. Everyone fulfills a proper role.',
+        'Confucianism prized **education and merit**, so it became the basis of the **civil service exam (keju)**.',
+        'Passing required mastery of the Confucian classics. A moral philosophy became the machinery of government.',
+        'The exam replaced hereditary aristocrats with officials who owed their careers to the state.',
+        'Every official shared one ethical vocabulary and one idea of loyalty.',
+        '**Neo-Confucianism** (Zhu Xi, 1130–1200 CE) added Buddhist and Daoist metaphysics: syncretism inside China.'
       ],
       image: {
         title: 'Tang Dynasty Portrait of Confucius',
@@ -179,10 +182,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Daoism: Harmony With the Way',
       bullets: [
-        '**Daoism**, traditionally traced to **Laozi** and the *Dao De Jing*, taught harmony with the **Dao** ("the Way"), the natural order underlying all things.',
-        'Its core ideas were **balance** (the yin-yang of complementary forces), **simplicity**, and **wu wei**, "effortless action," or not forcing things against their nature.',
-        'Where Confucianism organized public duty, government, and family, **Daoism turned inward**, toward nature, the body, health, and personal balance. It shaped Chinese medicine, art, and poetry.',
-        'Most Chinese did not choose between them. Together with Buddhism, Confucianism and Daoism formed the **"Three Teachings" (sanjiao)**, treated as complementary, so a single person could draw on all three.'
+        '**Daoism** traces to **Laozi** and the *Dao De Jing*.',
+        'The goal is harmony with the **Dao**, "the Way," the natural order underlying all things.',
+        'Core ideas: **balance** (the yin-yang of complementary forces), **simplicity**, and **wu wei**, effortless action.',
+        'Confucianism organized public duty. Daoism turned **inward**, toward nature, the body, and health.',
+        'It shaped Chinese medicine, art, and poetry.',
+        'With Buddhism, the two formed the **Three Teachings (sanjiao)**.',
+        'Most Chinese did not choose between them. One person could draw on all three.'
       ],
       image: {
         title: 'The Taijitu (Yin-Yang), Symbol of Daoism',
@@ -194,10 +200,15 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Hinduism: Dharma, Karma, and Social Order',
       bullets: [
-        '**Hinduism** is one of the world\'s oldest belief systems, with **no single founder**, developing from the Vedas over more than a thousand years in South Asia.',
-        'Its core ideas are **dharma** (one\'s duty or right way of living), **karma** (the moral consequences of action), and **reincarnation**, with release from that cycle, **moksha**, as the ultimate goal. Many deities are understood as expressions of one underlying reality.',
-        'Hinduism was woven into the **varna/jati (caste) system**, a social architecture in which birth-groups were endogamous and occupational, reproducing hereditary specialization without the state having to allocate labor.',
-        '**Hindu kingship** and temple economies made it a political and economic institution: the *devaraja* (god-king) concept let rulers claim cosmic authority, which is why Southeast Asian kings adopted it, as at Angkor Wat.'
+        '**Hinduism** has **no single founder**. It developed from the Vedas over more than a thousand years in South Asia.',
+        '**Dharma**: your duty, your right way of living.',
+        '**Karma**: the moral consequences of action.',
+        '**Reincarnation**, with **moksha**, release from the cycle, as the ultimate goal.',
+        'Many deities are understood as expressions of one underlying reality.',
+        'The **varna/jati (caste) system** made birth-groups endogamous and occupational.',
+        'That reproduced hereditary specialization without the state allocating labor.',
+        'Temples owned land, employed hundreds, and anchored local economies.',
+        'The *devaraja* (god-king) idea let rulers claim cosmic authority, which is why Southeast Asian kings adopted it, as at Angkor Wat.'
       ],
       image: {
         title: 'Brihadisvara Temple, Thanjavur, India (completed c.1010 CE)',
@@ -209,10 +220,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Buddhism: A Universal Path That Traveled',
       bullets: [
-        '**Siddhartha Gautama, the Buddha** (c.563–483 BCE), taught the **Four Noble Truths**: life involves suffering, suffering arises from desire, desire can be overcome, and the **Eightfold Path** leads to release (**nirvana**).',
-        'Crucially, the Buddha taught that **anyone could reach enlightenment regardless of caste**. This universal message helped Buddhism spread far beyond its South Asian origin.',
-        'It moved **not by conquest** but along trade routes: merchants patronized monasteries, and monks like **Xuanzang** (629–645 CE) carried texts between India and China. Institutions like **Nalanda University** drew students from across Asia.',
-        'Buddhism adapted dramatically as it spread, **Chan (Zen) Buddhism** blended Buddhist meditation with Daoist aesthetics in China, and **Pure Land** Buddhism opened the tradition to ordinary people. Rulers adopted it for cosmic legitimacy, as at Borobudur in Java.'
+        '**Siddhartha Gautama, the Buddha** (c.563–483 BCE), taught the **Four Noble Truths**.',
+        'Life involves suffering, suffering arises from desire, desire can be overcome, and the **Eightfold Path** leads to **nirvana**.',
+        '**Anyone could reach enlightenment, regardless of caste.** That universality carried it far beyond South Asia.',
+        'It spread **not by conquest** but along trade routes, with merchants patronizing monasteries.',
+        '**Xuanzang** (629–645 CE) carried texts between India and China. **Nalanda University** drew students from across Asia.',
+        'It adapted as it moved. **Chan (Zen)** blended meditation with Daoist aesthetics; **Pure Land** opened the tradition to ordinary people.',
+        'Rulers adopted it for cosmic legitimacy, as at Borobudur in Java.'
       ],
       image: {
         title: 'Borobudur, Java (c.9th century CE)',
@@ -224,10 +238,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Christianity: One God, Many Churches',
       bullets: [
-        '**Christianity** is a **monotheistic, Abrahamic** faith built on the teachings of **Jesus**, sharing its roots with Judaism and, later, Islam.',
-        'It spread first through the **Roman Empire** by missionaries, then exploded when the state adopted it, **Constantine** legalized it in 313 CE and it became Rome\'s official religion by the end of that century.',
-        'By c.1200 it had branched into a **Latin (Catholic) west**, a **Greek (Orthodox) east**, and distinct **African churches**, a single faith taking different institutional forms in different regions.',
-        '**Ethiopian Christianity** is a vivid case of syncretism: it maintains its own biblical **canon** and carved its churches, like those at **Lalibela**, downward into solid rock, a distinctively Ethiopian theology of sacred space.'
+        '**Christianity** is a **monotheistic, Abrahamic** faith built on the teachings of **Jesus**.',
+        'It shares its roots with Judaism and, later, Islam.',
+        'It spread first through the **Roman Empire** by missionaries.',
+        '**Constantine** legalized it in 313 CE, and it became Rome\'s official religion by the end of that century.',
+        'By c.1200 it had branched into a **Latin (Catholic) west**, a **Greek (Orthodox) east**, and distinct **African churches**.',
+        '**Ethiopian Christianity** keeps its own biblical **canon**.',
+        'Its churches at **Lalibela** were carved downward into solid rock: syncretism made visible in stone.'
       ],
       image: {
         title: 'Rock-Hewn Church of Bete Giyorgis, Lalibela, Ethiopia (c.1200 CE)',
@@ -239,10 +256,15 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Islam: Faith as Social Infrastructure',
       bullets: [
-        '**Islam** is a **monotheistic, Abrahamic** faith founded on the message **Muhammad** began preaching in the 600s CE, centered on submission to one God (Allah), the **Quran**, and the **Five Pillars**.',
-        'Each Pillar performed a **social function**: the *shahada* defined membership in a cross-continental community; *zakat* (a wealth tax) created a **welfare system**; the **hajj** was the largest annual gathering in the pre-modern world, doubling as a trade and information network.',
-        '**Sharia** gave merchants a **portable legal framework**, the same commercial law from West Africa to China, while **madrasas**, funded by *waqf* endowments, provided education independent of the state.',
-        'Islam spread with remarkable speed through **conquest, trade, and Sufi missionaries**, creating the **Dar al-Islam** from Iberia to South Asia, and it adapted everywhere, as in **Mali**, where Islam blended with local Mande traditions.'
+        '**Islam** is a **monotheistic, Abrahamic** faith founded on the message **Muhammad** began preaching in the 600s CE.',
+        'Its core is submission to one God (Allah), the **Quran**, and the **Five Pillars**.',
+        'Each Pillar did social work. The *shahada* defined membership in a cross-continental community.',
+        '*Zakat*, a tax on wealth, created a **welfare system**.',
+        'The **hajj** was the largest annual gathering in the pre-modern world, and a trade and information network.',
+        '**Sharia** gave merchants one portable commercial law from West Africa to China.',
+        '**Madrasas**, funded by *waqf* endowments, provided education independent of the state.',
+        'It spread by **conquest, trade, and Sufi missionaries**, creating the **Dar al-Islam** from Iberia to South Asia.',
+        'It adapted everywhere, as in **Mali**, where Islam blended with local Mande traditions.'
       ],
       image: {
         title: 'Great Mosque of Kairouan (Tunisia, founded 670 CE)',

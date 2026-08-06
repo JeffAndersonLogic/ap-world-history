@@ -161,10 +161,14 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Achaemenid Persia: Empire by Tolerance',
       bullets: [
-        'Founded by **Cyrus the Great** (c.550 BCE), the Persian Empire stretched from the **Indus to the Aegean**, the largest the world had yet seen and deeply diverse in language, religion, and custom.',
-        '**Satrapies**: Persia divided the empire into provinces, each governed by a **satrap** who collected tribute and kept order while local rulers, laws, and religions were largely left in place. This solved the diversity problem without constant conquest.',
-        '**Infrastructure**: the **Royal Road** (c.2,500 km) with relay stations let couriers and armies move fast; standardized coinage and regular **tribute** bound the provinces to the center.',
-        '**Legitimacy through tolerance**: the ruler styled himself **"King of Kings."** By respecting local customs, Persia reduced the incentive to rebel, tolerance was a deliberate governing strategy, not merely kindness.'
+        'Founded by **Cyrus the Great** (c.550 BCE), stretching from the **Indus to the Aegean**.',
+        'The largest empire the world had yet seen, and deeply diverse in language, religion, and custom.',
+        '**Satrapies**: provinces run by a **satrap** who collected tribute and kept order.',
+        'Local rulers, laws, and religions were largely left in place.',
+        'The **Royal Road**, about 2,500 km with relay stations, moved couriers and armies fast.',
+        'Standardized coinage and regular **tribute** bound the provinces to the center.',
+        'The ruler styled himself **"King of Kings."**',
+        '**Tolerance was a governing strategy**, not kindness. Respecting local custom lowered the incentive to rebel.'
       ],
       image: {
         title: 'Apadana Staircase Relief, Persepolis (Achaemenid Persia)',
@@ -176,10 +180,14 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Han China: Bureaucracy and the Mandate of Heaven',
       bullets: [
-        'Where Persia delegated, the **Han Dynasty** (206 BCE–220 CE) **centralized**, governing roughly **60 million people** through a trained **bureaucracy** of officials increasingly selected for their education rather than noble birth.',
-        '**Legitimacy**: the **Mandate of Heaven** held that Heaven granted authority to just rulers and withdrew it, via natural disaster and rebellion, from unjust ones. It made dynastic rule cosmically conditional.',
-        '**Reach**: the Han pushed back the **Xiongnu** nomads on the northern frontier and opened the **Silk Roads**, extending Chinese power and trade across Central Asia.',
-        '**Limits**: over-taxation, decayed flood control, and court corruption triggered the **Yellow Turban Rebellion** (184 CE). The Han suppressed it only by empowering regional warlords, whose private armies then fragmented the empire, the solution destroyed the state it saved.'
+        'Persia delegated. The **Han Dynasty** (206 BCE–220 CE) **centralized**.',
+        'It governed roughly **60 million people** through a trained **bureaucracy**.',
+        'Officials were increasingly selected for education rather than noble birth.',
+        'The **Mandate of Heaven** granted authority to just rulers and withdrew it from unjust ones.',
+        'Natural disaster and rebellion were the evidence. Dynastic rule became cosmically conditional.',
+        'The Han pushed back the **Xiongnu** on the northern frontier and opened the **Silk Roads**.',
+        'Over-taxation, decayed flood control, and court corruption triggered the **Yellow Turban Rebellion** (184 CE).',
+        'The Han suppressed it only by empowering regional warlords, whose private armies then fragmented the empire.'
       ],
       image: {
         title: 'Flying Horse of Gansu (Han Dynasty bronze, c.2nd century CE)',
@@ -191,10 +199,14 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Classical Greece: Power in the Hands of Citizens',
       bullets: [
-        'Greece was not one state but hundreds of small, independent city-states, or **poleis**. They pioneered a radically different answer to the power problem: **rule by citizens.**',
-        '**Athens** developed direct **democracy**, free adult male citizens debated and voted on laws in person on the Pnyx. **Sparta** was an **oligarchy**, a militarized society governed by a small ruling elite.',
-        '**Narrow citizenship**: women, enslaved people, and resident foreigners (**metics**), together the majority, were excluded. Power was genuinely shared, but only among perhaps one in five residents.',
-        '**Legacy**: Greek ideas about citizenship, civic debate, and law shaped Rome and, much later, the modern world, even though the Greek city-states never united into a single lasting empire.'
+        'Greece was not one state but hundreds of small, independent city-states, or **poleis**.',
+        'Their answer to the power problem was **rule by citizens**.',
+        '**Athens**: direct **democracy**. Free adult male citizens debated and voted in person on the Pnyx.',
+        '**Sparta**: **oligarchy**. A militarized society governed by a small ruling elite.',
+        'Citizenship was narrow. Women, enslaved people, and resident foreigners (**metics**) were excluded.',
+        'Power was genuinely shared, but among perhaps one in five residents.',
+        'Greek ideas about citizenship, civic debate, and law shaped Rome and, much later, the modern world.',
+        'The city-states themselves never united into a lasting empire.'
       ],
       image: {
         title: 'The Parthenon, Acropolis of Athens (completed c.432 BCE)',
@@ -206,10 +218,14 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Rome: From Republic to Empire',
       bullets: [
-        'The **Roman Republic** mixed institutions to spread power and check any one man: elected **consuls**, a powerful **Senate**, and popular assemblies. It was designed to prevent a return to kingship.',
-        '**From republic to empire**: as Rome conquered the Mediterranean, the republic strained under civil war. **Augustus** (27 BCE) concentrated power in a single **emperor** while keeping the republic\'s outward forms.',
-        '**Integration through law and citizenship**: a shared body of **Roman law** and the gradual extension of **citizenship** to conquered peoples gave distant provinces a stake in the empire, a powerful tool of unity that Persia and Han China never used the same way.',
-        '**Force and its limits**: **roads** and professional **legions** held the empire together, but the system rested on coercion too. The enslaved gladiator **Spartacus** led 70,000+ in revolt (73–71 BCE), and Rome crushed it brutally, a reminder of what citizenship and law left out.'
+        'The **Roman Republic** split power among elected **consuls**, a powerful **Senate**, and popular assemblies.',
+        'The design was meant to prevent a return to kingship.',
+        'Mediterranean conquest strained the republic into civil war.',
+        '**Augustus** (27 BCE) concentrated power in a single **emperor** while keeping republican forms.',
+        'Shared **Roman law** and the gradual extension of **citizenship** gave distant provinces a stake in the empire.',
+        'Neither Persia nor Han China used citizenship that way.',
+        '**Roads** and professional **legions** held the empire together.',
+        'The system also rested on coercion. **Spartacus** led 70,000+ enslaved people in revolt (73–71 BCE), and Rome crushed it.'
       ],
       image: {
         title: 'The Colosseum, Rome (completed c.80 CE)',
@@ -221,10 +237,15 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Comparing the Four — and the Limits of Power',
       bullets: [
-        'Run the same four questions on each state: **What problem was it solving? Which tools did it use? Who did the hierarchy serve, and who was excluded? Where were the limits, and who pushed back?**',
-        '**Four answers to one problem**: Persia ruled by **tolerating difference** (satrapies); Han China by **centralized bureaucracy** (the Mandate of Heaven); Greece by **citizen self-rule** (the polis); Rome by **law and expanding citizenship** (republic to empire).',
-        '**Every hierarchy generated resistance**: the **Yellow Turbans** rose against Han over-extraction; **Spartacus** against Roman slavery; and Greek democracy and Roman citizenship both **excluded** the majority, women, enslaved people, and foreigners. Resistance and exclusion reveal exactly where each state\'s power ended.',
-        '**Bridge to AP World**: the states you study from c.1200, Song China, the Abbasid Caliphate, the Aztec and Inca empires, reuse these same tools. Learn the classical four and you have a comparison framework for the entire course.'
+        'Run four questions on every state. What problem was it solving? Which tools did it use?',
+        'Who did the hierarchy serve, and who was excluded? Where were the limits, and who pushed back?',
+        '**Persia**: rule by tolerating difference, through satrapies.',
+        '**Han China**: centralized bureaucracy, legitimized by the Mandate of Heaven.',
+        '**Greece**: citizen self-rule inside the polis.',
+        '**Rome**: law and expanding citizenship, republic into empire.',
+        'Every hierarchy generated resistance: the **Yellow Turbans** against Han taxation, **Spartacus** against Roman slavery.',
+        'Greek democracy and Roman citizenship both excluded the majority.',
+        'The states you study from **c.1200**, Song China, the Abbasids, the Aztec and Inca, reuse these same tools.'
       ],
       image: {
         title: 'The Classical World c. 200 CE',
