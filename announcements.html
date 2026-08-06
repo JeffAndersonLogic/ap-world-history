@@ -257,6 +257,22 @@
       return s;
     }
 
+    // A topic taught across two block days is one row, not two. 'Aug 10 & 11'
+    // reads as one thing coming up, which is what it is.
+    function formatDateGroup(dates) {
+      if (dates.length === 1) {
+        return MONTHS[dates[0].getMonth()].slice(0, 3) + ' ' + dates[0].getDate();
+      }
+      var sameMonth = dates.every(function (d) { return d.getMonth() === dates[0].getMonth(); });
+      if (sameMonth) {
+        return MONTHS[dates[0].getMonth()].slice(0, 3) + ' ' +
+               dates.map(function (d) { return d.getDate(); }).join(' & ');
+      }
+      return dates.map(function (d) {
+        return MONTHS[d.getMonth()].slice(0, 3) + ' ' + d.getDate();
+      }).join(' & ');
+    }
+
     // Upcoming topics build themselves out of the day entries already filed,
     // so a week typed on Sunday populates this slide with no extra work.
     function buildAheadSlide(days) {
@@ -269,9 +285,10 @@
         var item = el('li', 'ahead-item');
 
         var when = el('div', 'ahead-when');
-        when.appendChild(el('div', 'ahead-weekday', WEEKDAYS[entry.date.getDay()].slice(0, 3)));
-        when.appendChild(el('div', 'ahead-daynum',
-          MONTHS[entry.date.getMonth()].slice(0, 3) + ' ' + entry.date.getDate()));
+        when.appendChild(el('div', 'ahead-weekday', entry.dates.map(function (d) {
+          return WEEKDAYS[d.getDay()].slice(0, 3);
+        }).join(' & ')));
+        when.appendChild(el('div', 'ahead-daynum', formatDateGroup(entry.dates)));
         item.appendChild(when);
 
         var body = el('div', 'ahead-body');
@@ -301,13 +318,21 @@
 
       var list = el('ul', 'due-list');
       items.forEach(function (entry) {
-        var count = countdownFor(entry.days);
+        // An assessment you have announced but not dated still belongs on the
+        // board, so students know it is coming.
+        var count = entry.tbd
+          ? { text: 'Date TBD', style: 'quiet', row: '' }
+          : countdownFor(entry.days);
         var row = el('li', 'due-item' + (count.row ? ' ' + count.row : ''));
 
         var when = el('div', 'due-when');
-        when.appendChild(el('div', 'due-weekday', WEEKDAYS[entry.date.getDay()].slice(0, 3)));
-        when.appendChild(el('div', 'due-daynum', String(entry.date.getDate())));
-        when.appendChild(el('div', 'due-month', MONTHS[entry.date.getMonth()].slice(0, 3)));
+        if (entry.tbd) {
+          when.appendChild(el('div', 'due-tbd', 'TBD'));
+        } else {
+          when.appendChild(el('div', 'due-weekday', WEEKDAYS[entry.date.getDay()].slice(0, 3)));
+          when.appendChild(el('div', 'due-daynum', String(entry.date.getDate())));
+          when.appendChild(el('div', 'due-month', MONTHS[entry.date.getMonth()].slice(0, 3)));
+        }
         row.appendChild(when);
 
         var body = el('div', 'due-body');
@@ -414,32 +439,41 @@
       }
 
       // Then what is ahead: the next topics, then the next assessments.
-      var ahead = DATA.days
+      var future = DATA.days
         .map(function (entry) {
           var date = parseYMD(entry && entry.date);
           if (!date || !has(entry.topic)) return null;
           return { date: date, days: daysUntil(date), topic: entry.topic, unit: entry.unit };
         })
         .filter(function (entry) { return entry && entry.days > 0; })
-        .sort(function (a, b) { return a.date - b.date; })
-        .slice(0, 4);
+        .sort(function (a, b) { return a.date - b.date; });
+
+      // Collapse a topic that runs across consecutive class days into one row.
+      var ahead = [];
+      future.forEach(function (entry) {
+        var last = ahead[ahead.length - 1];
+        if (last && last.topic === entry.topic) last.dates.push(entry.date);
+        else ahead.push({ topic: entry.topic, unit: entry.unit, dates: [entry.date] });
+      });
+      ahead = ahead.slice(0, 4);
 
       if (ahead.length) slides.push(buildAheadSlide(ahead));
 
       var assessments = DATA.assessments
         .map(function (entry) {
-          var date = parseYMD(entry && entry.date);
-          if (!date || !has(entry.title)) return null;
+          if (!entry || !has(entry.title)) return null;
+          var date = parseYMD(entry.date);
           return {
             date: date,
-            days: daysUntil(date),
+            tbd: !date,
+            days: date ? daysUntil(date) : Infinity,
             title: entry.title,
             detail: entry.detail,
             tag: entry.type
           };
         })
         .filter(function (entry) { return entry && entry.days >= 0; })
-        .sort(function (a, b) { return a.date - b.date; });
+        .sort(function (a, b) { return a.days - b.days; });
 
       if (assessments.length) {
         var PER_SLIDE = 4;

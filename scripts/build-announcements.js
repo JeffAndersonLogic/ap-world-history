@@ -265,9 +265,11 @@ function main() {
   }).join(',\n');
   out += '\n  ],\n\n';
 
+  // An assessment with no date, or date: 'TBD', still reaches the board and
+  // projects as Date TBD. Announced but not scheduled is a real state.
   out += '  assessments: [\n';
   out += (schedule.assessments || []).map((a) => (
-    '    { date: ' + quote(a.date) +
+    '    { date: ' + quote(/^\d{4}-\d{2}-\d{2}$/.test(String(a.date || '').trim()) ? a.date : '') +
     ', title: ' + quote(a.title || '') +
     ', detail: ' + quote(a.detail || '') +
     ', type: ' + quote(a.type || 'Quiz') + ' }'

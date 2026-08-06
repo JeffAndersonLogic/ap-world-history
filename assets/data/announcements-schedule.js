@@ -63,51 +63,44 @@ window.BEHISTORICAL_SCHEDULE = {
      One line of typing per class day. Replace these samples.
      --------------------------------------------------------- */
   days: [
+    // Foundations 0, Thursday and Friday
     {
       date: '2026-08-06',
-      topic: 'F2',
-      homework: 'Finish the First & 10 response and submit it through the Google Form.',
-      homeworkDue: 'Tomorrow'
+      topic: 'F0',
+      homework: 'Complete your F0 responses and submit them in Canvas. Read Theme 1, page 18, in the eBook.'
     },
     {
       date: '2026-08-07',
-      topic: 'F3',
-      homework: 'Read the Unit 1 overview before Monday.',
-      homeworkDue: 'Monday'
+      topic: 'F0',
+      homework: 'Complete your F0 responses and submit them in Canvas. Read Theme 1, page 18, in the eBook.'
     },
-    {
-      date: '2026-08-10',
-      topic: '1.1',
-      homework: 'Topic 1.1 checkpoints, both of them, submitted tonight.'
-    },
-    {
-      date: '2026-08-11',
-      topic: '1.2',
-      homework: 'Topic 1.2 checkpoints.'
-    },
-    {
-      date: '2026-08-12',
-      topic: '1.3',
-      homework: 'Topic 1.3 checkpoints.'
-    }
+
+    // Foundations 1, Monday and Tuesday
+    { date: '2026-08-10', topic: 'F1', homework: '' },
+    { date: '2026-08-11', topic: 'F1', homework: '' },
+
+    // Foundations 2, Wednesday and Thursday
+    { date: '2026-08-12', topic: 'F2', homework: '' },
+    { date: '2026-08-13', topic: 'F2', homework: '' },
+
+    // Foundations 3, Friday and the following Monday
+    { date: '2026-08-14', topic: 'F3', homework: '' },
+    { date: '2026-08-17', topic: 'F3', homework: '' }
   ],
 
   /* ---------------------------------------------------------
      QUIZZES AND EXAMS
      type is 'Quiz', 'Test', or 'Exam'. All three project in red.
      Past dates drop off the board on their own.
+     Leave `date` empty and the board shows it as Date TBD, which is
+     how you announce something before you have scheduled it.
      --------------------------------------------------------- */
   assessments: [
     {
-      date: '2026-08-14',
-      title: 'Foundations Unit Quiz',
-      detail: 'Belief systems, classical empires, and trade networks to c. 1200',
-      type: 'Quiz'
-    },
-    {
-      date: '2026-08-28',
-      title: 'Unit 1 Test',
-      detail: 'The Global Tapestry, all seven topics, stimulus and short answer',
+      // Leave the date empty until it is set and the board prints Date TBD.
+      date: '',
+      title: 'Foundations Assessment',
+      detail: 'Covers the Foundations meetings, date to be announced',
       type: 'Test'
     }
   ],
