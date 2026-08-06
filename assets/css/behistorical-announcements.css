@@ -254,6 +254,36 @@ body::before{
 .agenda-list.is-long .agenda-num{font-size:clamp(.95rem,1.85vw,2.3rem)}
 .agenda-list.is-long{gap:clamp(6px,1vh,14px)}
 
+/* ---------- Homework, when there is more than one thing ----------
+   Numbered, because the count is what a student needs to carry out of
+   the room: "there are two things tonight". */
+.homework-list{
+  list-style:none; margin:0; padding:0;
+  display:flex; flex-direction:column; gap:clamp(10px,1.8vh,24px);
+}
+.homework-item{
+  display:flex; align-items:flex-start; gap:clamp(16px,2vw,38px);
+  padding:clamp(14px,2.4vh,32px) clamp(18px,2.2vw,42px);
+  background:linear-gradient(90deg, rgba(245,240,231,.075), rgba(245,240,231,.02));
+  border-left:clamp(6px,.6vw,12px) solid var(--antique-gold);
+}
+.homework-num{
+  flex:0 0 auto;
+  font-family:var(--ui); font-weight:900;
+  font-size:clamp(1.3rem,2.6vw,3.2rem); line-height:1.05;
+  color:var(--antique-gold); font-variant-numeric:tabular-nums;
+  min-width:1.3em;
+}
+.homework-body{display:flex; flex-direction:column; align-items:flex-start; gap:.6em}
+.homework-text{
+  font-family:var(--body);
+  font-size:clamp(1.05rem,2.15vw,2.7rem); line-height:1.3;
+  color:var(--clean-paper); text-wrap:pretty;
+}
+.homework-list.is-dense .homework-text{font-size:clamp(.92rem,1.65vw,2.05rem)}
+.homework-list.is-dense{gap:clamp(7px,1.2vh,16px)}
+.homework-list.is-dense .homework-num{font-size:clamp(1.05rem,2vw,2.4rem)}
+
 /* ---------- Learning targets ----------
    A set, not a sequence. No numbering, just a gold rule per statement. */
 .target-list,

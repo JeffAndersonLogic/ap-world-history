@@ -212,6 +212,50 @@
       return '';
     }
 
+    // Homework is one string or a list of them. Two assignments tonight are
+    // two lines, never one sentence a student has to unpick.
+    function buildHomeworkSlide(day) {
+      var items = (Array.isArray(day.homework) ? day.homework : [day.homework])
+        .map(function (entry) {
+          if (has(entry)) return { text: entry.trim(), due: '' };
+          if (entry && has(entry.text)) {
+            return { text: entry.text.trim(), due: has(entry.due) ? entry.due.trim() : '' };
+          }
+          return null;
+        })
+        .filter(Boolean);
+      if (!items.length) return null;
+
+      // A single assignment keeps the big panel treatment.
+      if (items.length === 1) {
+        var due = items[0].due || day.homeworkDue;
+        return buildPanelSlide('Tonight', 'Homework', items[0].text, [
+          has(due) ? { text: 'Due ' + due, style: 'solid' }
+                   : { text: 'Write it down', style: 'quiet' }
+        ]);
+      }
+
+      // Several get numbered, because how many there are is the thing a
+      // student most needs to carry out of the room.
+      var s = slide();
+      s.appendChild(eyebrow('Tonight'));
+      s.appendChild(el('h2', 'slide-title', 'Homework'));
+
+      var list = el('ol', 'homework-list' + (items.length > 3 ? ' is-dense' : ''));
+      items.forEach(function (entry, i) {
+        var item = el('li', 'homework-item');
+        item.appendChild(el('span', 'homework-num', String(i + 1)));
+        var body = el('div', 'homework-body');
+        body.appendChild(el('span', 'homework-text', entry.text));
+        var due = entry.due || (i === 0 ? day.homeworkDue : '');
+        if (has(due)) body.appendChild(el('span', 'chip solid homework-due', 'Due ' + due));
+        item.appendChild(body);
+        list.appendChild(item);
+      });
+      s.appendChild(list);
+      return s;
+    }
+
     // Learning targets are a set, not a sequence, so they carry a rule rather
     // than the numbering the agenda uses.
     function buildTargetsSlide(day) {
@@ -425,12 +469,8 @@
         var agenda = buildAgendaSlide(day);
         if (agenda) slides.push(agenda);
 
-        if (has(day.homework)) {
-          slides.push(buildPanelSlide('Tonight', 'Homework', day.homework, [
-            has(day.homeworkDue) ? { text: 'Due ' + day.homeworkDue, style: 'solid' }
-                                 : { text: 'Write it down', style: 'quiet' }
-          ]));
-        }
+        var homework = buildHomeworkSlide(day);
+        if (homework) slides.push(homework);
       } else if (DATA.days.length) {
         slides.push(buildMessageSlide(
           'No Entry For Today', 'Check the board up front',

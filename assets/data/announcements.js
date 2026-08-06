@@ -36,7 +36,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can walk a family member through the 10 modules we use every class and say why each one exists.' },
         { text: 'I can describe in one sentence what my end-of-year portfolio will contain and who sees it, and write one paragraph in my own voice that captures who I am as a historical thinker on Day 1.' }
       ],
-      homework: 'Complete your F0 responses and submit them in Canvas. Read Theme 1, page 18, in the eBook.'
+      homework: [
+        'Complete your F0 responses and submit them in Canvas.',
+        'Read Theme 1, page 18, in the eBook.'
+      ]
     },
     /* 2026-08-07  <-  foundations-0-intro-to-behistorical-data.js */
     {
@@ -53,7 +56,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can walk a family member through the 10 modules we use every class and say why each one exists.' },
         { text: 'I can describe in one sentence what my end-of-year portfolio will contain and who sees it, and write one paragraph in my own voice that captures who I am as a historical thinker on Day 1.' }
       ],
-      homework: 'Complete your F0 responses and submit them in Canvas. Read Theme 1, page 18, in the eBook.'
+      homework: [
+        'Complete your F0 responses and submit them in Canvas.',
+        'Read Theme 1, page 18, in the eBook.'
+      ]
     },
     /* 2026-08-10  <-  foundations-1-geography-data.js */
     {

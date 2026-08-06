@@ -207,7 +207,10 @@ function main() {
       topic: entry.topicTitle || (found ? found.title : ''),
       targets,
       criteria,
-      homework: entry.homework || '',
+      // One string or a list of them. A list becomes a numbered slide.
+      homework: Array.isArray(entry.homework)
+        ? entry.homework.filter((h) => typeof h === 'string' && h.trim()).map((h) => h.trim())
+        : (entry.homework || ''),
       homeworkDue: entry.homeworkDue || '',
       note: entry.note || '',
       source: found ? found.source : 'written by hand in the schedule'
@@ -257,7 +260,12 @@ function main() {
     if (day.criteria.length) {
       block += '      successCriteria: [\n' + emitEntries(day.criteria, 8) + '\n      ],\n';
     }
-    block += `      homework: ${quote(day.homework)}`;
+    if (Array.isArray(day.homework)) {
+      block += '      homework: [\n' +
+        day.homework.map((h) => '        ' + quote(h)).join(',\n') + '\n      ]';
+    } else {
+      block += `      homework: ${quote(day.homework)}`;
+    }
     if (day.homeworkDue) block += `,\n      homeworkDue: ${quote(day.homeworkDue)}`;
     if (day.note) block += `,\n      note: ${quote(day.note)}`;
     block += '\n    }';

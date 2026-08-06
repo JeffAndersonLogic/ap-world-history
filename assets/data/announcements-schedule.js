@@ -32,8 +32,11 @@
        topic        the topic number above. This fills in the unit,
                     the title, the learning targets, and the
                     success criteria automatically.
-       homework     what leaves the room tonight. Yours to write,
-                    the course data has no homework in it.
+       homework     what leaves the room tonight. Yours to write, the
+                    course data has no homework in it. One assignment can
+                    be a plain string. Two or more go in a list and each
+                    gets its own numbered line on the screen:
+                        homework: ['Finish the responses.', 'Read page 18.']
        homeworkDue  optional, shows as a chip, e.g. 'Friday'
        note         optional one line callout ('Bring your Chromebook')
 
@@ -67,12 +70,18 @@ window.BEHISTORICAL_SCHEDULE = {
     {
       date: '2026-08-06',
       topic: 'F0',
-      homework: 'Complete your F0 responses and submit them in Canvas. Read Theme 1, page 18, in the eBook.'
+      homework: [
+        'Complete your F0 responses and submit them in Canvas.',
+        'Read Theme 1, page 18, in the eBook.'
+      ]
     },
     {
       date: '2026-08-07',
       topic: 'F0',
-      homework: 'Complete your F0 responses and submit them in Canvas. Read Theme 1, page 18, in the eBook.'
+      homework: [
+        'Complete your F0 responses and submit them in Canvas.',
+        'Read Theme 1, page 18, in the eBook.'
+      ]
     },
 
     // Foundations 1, Monday and Tuesday

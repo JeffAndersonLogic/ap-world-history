@@ -25,6 +25,14 @@ A day is one line of real typing:
 Topic numbers are `F0` to `F5` for Foundations and `1.1` through `9.9` for the
 units, 77 topics in all. Homework is yours to write; the course data has none.
 
+One assignment can be a plain string. Two or more go in a list, and each gets
+its own numbered line rather than running together in a paragraph:
+
+```js
+homework: ['Complete your F0 responses and submit them in Canvas.',
+           'Read Theme 1, page 18, in the eBook.'],
+```
+
 | Block in the schedule | What it holds |
 |---|---|
 | `settings` | Course name, seconds per slide, AP exam date |
@@ -67,7 +75,7 @@ Six panels, today's work first and what is ahead second:
 1. **Topic for the day**, the title card: wordmark, date, topic, unit
 2. **Learning targets**, the "I can" statements
 3. **Success criteria**, the things a student ticks off
-4. **Homework**, what leaves the room tonight
+4. **Homework**, what leaves the room tonight, numbered when there is more than one
 5. **Upcoming topics**, the next four class days
 6. **Quizzes and exams**, from the `assessments` list
 
