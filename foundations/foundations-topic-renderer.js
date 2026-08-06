@@ -165,6 +165,12 @@ function loadDrafts(){document.querySelectorAll('textarea.response-area').forEac
 // to "no prompt", never throw and lose the student's work.
 const FOUNDATION_WORK_ITEMS=[
   {slot:'map',        label:'Module 01, Map & Geography Check', prompt:()=>T.map.prompt},
+  // The First & 10's three check questions. Their text is stored with the
+  // answers by the reading itself, so promptForSlot resolves them from
+  // WORK_PROMPTS and these fallbacks stay empty.
+  {slot:'first10-q1', label:'Module 02, First & 10, Question 1',prompt:()=>''},
+  {slot:'first10-q2', label:'Module 02, First & 10, Question 2',prompt:()=>''},
+  {slot:'first10-q3', label:'Module 02, First & 10, Question 3',prompt:()=>''},
   {slot:'first10',    label:'Module 02, First & 10 Reading',    prompt:()=>first10.prompt},
   {slot:'besurreal',  label:'Module 04, BeSurreal',             prompt:()=>beSurreal.prompt},
   {slot:'skill',      label:'Module 05, AP Skill Builder',      prompt:()=>T.skill.prompt},
@@ -174,6 +180,25 @@ const FOUNDATION_WORK_ITEMS=[
   {slot:'checkpoint2',label:'Module 10, Checkpoint 2',          prompt:()=>T.exitTicket||T.checkpoint.prompt}
 ];
 
+// The First & 10 renders in an iframe, so its three answers cannot be read off
+// this page: the modal is gone the moment another module opens. The reading
+// writes them to behistorical-first10-<TOPIC_KEY> instead, with the question
+// text attached, and this pulls them back in. See scripts/add-first10-capture.js.
+function injectFirst10Answers(stored){
+  if(!FOUNDATION_TOPIC_KEY)return;
+  const raw=BHDraftStore.get(`behistorical-first10-${FOUNDATION_TOPIC_KEY}`);
+  if(!raw)return;
+  let saved;
+  try{saved=JSON.parse(raw);}catch(e){return;}
+  if(!Array.isArray(saved))return;
+  saved.forEach((item,i)=>{
+    if(!item)return;
+    const slot=`first10-q${i+1}`,answer=String(item.a||'').trim();
+    if(!answer)return;
+    stored[slot]=answer;
+    if(item.q)WORK_PROMPTS[slot]=String(item.q);
+  });
+}
 function promptForSlot(slot){
   if(WORK_PROMPTS[slot])return WORK_PROMPTS[slot];
   const item=FOUNDATION_WORK_ITEMS.find(w=>w.slot===slot);
@@ -203,6 +228,7 @@ function collectLessonWork(){
     if(!value)return;
     stored[t.id.indexOf(`${T.id}-`)===0?t.id.slice(`${T.id}-`.length):t.id]=value;
   });
+  injectFirst10Answers(stored);
   const ordered=[],listed=new Set();
   FOUNDATION_WORK_ITEMS.forEach(item=>{
     listed.add(item.slot);

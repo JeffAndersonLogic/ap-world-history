@@ -824,6 +824,32 @@ function rememberPrompt(id, prompt) {
   if (id && prompt) WORK_PROMPTS[id] = String(prompt);
 }
 
+// The First & 10 renders in an iframe, so its three answers cannot be read off
+// this page: the modal is destroyed the moment another module opens. The reading
+// writes them to behistorical-first10-<TOPIC_KEY> instead, with the question text
+// attached, and this pulls them back in under the first10-q1..q3 ids WORK_ITEMS
+// already declares. See scripts/add-first10-capture.js.
+//
+// The stored question is what the student actually read, so it wins over
+// L.first10.questions, which can drift from the reading's wording.
+function injectFirst10Answers(stored) {
+  const topicKey = ((L.meta && L.meta.topic) || '').replace('Topic ', '').trim();
+  if (!topicKey) return;
+  const raw = BHDraftStore.get(`behistorical-first10-${topicKey}`);
+  if (!raw) return;
+  let saved;
+  try { saved = JSON.parse(raw); } catch (e) { return; }
+  if (!Array.isArray(saved)) return;
+  saved.forEach((item, i) => {
+    if (!item) return;
+    const id = `first10-q${i + 1}`;
+    const answer = String(item.a || '').trim();
+    if (!answer) return;
+    stored[id] = answer;
+    if (item.q) rememberPrompt(id, item.q);
+  });
+}
+
 function promptForId(id) {
   if (WORK_PROMPTS[id]) return WORK_PROMPTS[id];
   const item = WORK_ITEMS.find(w => w.id === id);
@@ -872,6 +898,8 @@ function collectLessonWork() {
     const value = (t.value || '').trim();
     if (value) stored[t.id] = value;
   });
+
+  injectFirst10Answers(stored);
 
   const ordered = [];
   const listed = new Set();

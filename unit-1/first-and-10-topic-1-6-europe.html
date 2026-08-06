@@ -312,6 +312,57 @@ function buildAiPrompt(){
 }
 function copyAiPrompt(){var c=document.getElementById('ai-output').value;navigator.clipboard.writeText(c).catch(function(){});}
 </script>
-<script src="../assets/js/behistorical-form-config.js?v=unified-v2"></script>
+<script src="../assets/js/behistorical-form-config.js?v=unified-v2">
+/* BeHistorical First & 10 answer capture ------------------------------------------------------------
+ * These three textareas sit inside an iframe, so the lesson page cannot read
+ * them directly and, before this, nothing saved them at all: closing the module
+ * lost the work. Answers and their questions go to one key that both the
+ * Foundations renderer and behistorical-topic-renderer-v1.js read when they
+ * assemble Copy All My Work. Never throws: a browser that refuses storage
+ * degrades to no autosave rather than breaking the reading.
+ */
+(function () {
+  var KEY = 'behistorical-first10-' + TOPIC_KEY;
+  var boxes = function () {
+    return Array.prototype.slice.call(document.querySelectorAll('.q-textarea, .qta'));
+  };
+  var questions = function () {
+    return Array.prototype.slice.call(document.querySelectorAll('.q-text, .qt'))
+      .map(function (el) { return (el.textContent || '').replace(/\s+/g, ' ').trim(); });
+  };
+  var save = function () {
+    var qs = questions();
+    var payload = boxes().map(function (t, i) {
+      return { q: qs[i] || '', a: t.value || '' };
+    });
+    try { localStorage.setItem(KEY, JSON.stringify(payload)); } catch (e) {}
+  };
+  var restore = function () {
+    var raw = null;
+    try { raw = localStorage.getItem(KEY); } catch (e) { return; }
+    if (!raw) return;
+    var saved;
+    try { saved = JSON.parse(raw); } catch (e) { return; }
+    if (!saved || !saved.length) return;
+    boxes().forEach(function (t, i) {
+      if (saved[i] && saved[i].a && !t.value) t.value = saved[i].a;
+    });
+  };
+
+  boxes().forEach(function (t, i) { if (!t.id) t.id = 'first10-q' + (i + 1); });
+  restore();
+
+  var timer;
+  document.addEventListener('input', function (event) {
+    var t = event.target;
+    if (!t || !t.classList) return;
+    if (!t.classList.contains('q-textarea') && !t.classList.contains('qta')) return;
+    clearTimeout(timer);
+    timer = setTimeout(save, 500);
+  });
+  // A student who closes the tab mid-sentence still keeps the sentence.
+  window.addEventListener('beforeunload', save);
+})();
+</script>
 </body>
 </html>
