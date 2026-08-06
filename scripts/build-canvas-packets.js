@@ -237,10 +237,36 @@ function scriptTag(js) {
   return `<script>${scriptSafe(js)}</script>`;
 }
 
+// The capture wrapper's script, hoisted into the packet so the reading's
+// "Submit to Google Form" behaves the way it does on the site.
+//
+// This is not cosmetic. The wrapper overrides the reading's own
+// submitToGoogleForm with a URL carrying the unit, the topic id, the response
+// type, and the topic's AP skills, and it prefills entry.1818136905 with what
+// the student actually typed. The reading's unaided handler sends two fields and
+// no answer, so dropping the wrapper would quietly downgrade every First & 10
+// submission. The wrapper's own load hook is stripped, because the iframe it
+// looks for does not exist until the module modal opens; renderFirst10's iframe
+// calls wireFirst10Capture from its onload instead.
+function captureScript(spec) {
+  const src = readOrDie(path.join(FOUNDATIONS, spec.reading.replace(/\.html$/, '-capture.html')));
+  const open = src.indexOf('<script>');
+  const close = src.lastIndexOf('</script>');
+  if (open < 0 || close < 0) throw new Error(`${spec.reading} capture wrapper has no script block`);
+  let js = src.slice(open + '<script>'.length, close);
+
+  const hook = "document.getElementById('first10-frame').addEventListener('load', wireFirst10Capture);";
+  if (js.indexOf(hook) < 0) throw new Error('capture wrapper load hook not found, its script has changed');
+  js = js.replace(hook, '');
+
+  if (!/PREFILLED_FIRST10_FORM\s*=\s*'https:\/\/docs\.google\.com/.test(js)) {
+    throw new Error('capture wrapper prefill URL not found, its script has changed');
+  }
+  return js;
+}
+
 // The First & 10 as a standalone document with its font link and form-config
-// script folded in, ready to hand to the iframe. The capture wrapper is skipped
-// entirely: it exists to relay button clicks across a file boundary that no
-// longer exists here, and the reading's own handlers work unmediated.
+// script folded in, ready to hand to the iframe.
 function readingDocument(spec) {
   let doc = readOrDie(path.join(FOUNDATIONS, spec.reading));
 
@@ -309,7 +335,7 @@ document.querySelectorAll('img[data-bh-logo]').forEach(function(i){i.src=${JSON.
     'artwork path lookup');
   renderer = must(renderer,
     '<iframe src="${first10.embedUrl}"',
-    '<iframe srcdoc="${window.BH_FIRST10||\'\'}"',
+    '<iframe id="first10-frame" onload="wireFirst10Capture()" srcdoc="${window.BH_FIRST10||\'\'}"',
     'First & 10 iframe source');
   // The map is embedded, so "Open map source" would point a new tab at a data
   // URI, which browsers refuse to navigate to.
@@ -324,6 +350,7 @@ document.querySelectorAll('img[data-bh-logo]').forEach(function(i){i.src=${JSON.
     // for the inlined copy before the renderer reads it.
     `window.FOUNDATION_TOPIC.map.url=${JSON.stringify(dataUri(path.join(ROOT, T.map.url.replace(/^\.\.\//, ''))))};`,
     bootstrap,
+    captureScript(spec),
     renderer
   ].map(scriptTag).join('\n');
 

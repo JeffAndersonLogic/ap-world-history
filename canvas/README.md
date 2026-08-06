@@ -81,17 +81,40 @@ like the site.
 
 ## What differs from the live page
 
-- **The topbar's Home and Foundations links are gone.** Nothing outside the
-  packet is reachable, and a link that goes nowhere is worse than no link. The
-  in-page Command Center, Modules, and Lecture links all still work.
-- **The First & 10 skips its capture wrapper.** That wrapper exists to relay
-  button clicks across a file boundary the packet does not have; the reading's
-  own handlers work unmediated. Its footer links drive the parent page instead
-  of navigating to a file that is not there.
+The rendered DOM was diffed against `foundations-N.html` element by element: the
+main page and all ten module modals plus the lecture modal. Every module body is
+byte-identical. These are the only departures, all deliberate:
+
+- **The topbar's Home and Foundations links are gone**, along with the hero
+  logo's link home. Nothing outside the packet is reachable, and a link that goes
+  nowhere is worse than no link. The in-page Command Center, Modules, and Lecture
+  links all still work.
 - **"Open map source" is gone** from the map module. The map is embedded, and
   browsers refuse to open a data URI in a new tab.
-- **BeInTheRoom (module 09)** shows the same "coming soon" placeholder as the
-  site. Neither Foundations topic has a scenario yet.
+- **The First & 10's footer links drive the parent page** (close the modal, jump
+  to the lecture section) instead of navigating to a file that is not there. On
+  the site those links resolve to `#content` for Foundations 1, an anchor that
+  exists on neither shell, so this also fixes a dead link.
 
-Everything else, including the Google Form buttons and the MagicSchool link,
-behaves as it does on the site.
+Everything else matches, including the Google Form button. That one is worth
+naming: the reading's own submit handler sends two fields and no answer, and it
+is the capture wrapper that upgrades the request to carry the unit, topic id,
+response type, AP skills, and the student's typed response. The packet inlines
+that wrapper's logic rather than skipping it, and the build asserts all six
+prefill fields survive.
+
+## Things that behave differently because of where it is hosted
+
+Not packet defects, but real and worth knowing:
+
+- **Drafts do not travel.** Autosave is keyed to the origin serving the page.
+  Work saved in the Canvas copy will not appear on the site later, or the other
+  way round, and Canvas's sandbox domain for uploaded HTML may not be stable
+  across sessions. Confirm in Student View that a draft survives closing and
+  reopening the tab before relying on it. Either way, the Gather panel exists so
+  work lands in Canvas rather than in browser storage.
+- **Clipboard permissions are tighter in a sandboxed frame.** Copy to Clipboard
+  falls back to selecting the text and prompting for Ctrl-C if the browser
+  refuses the write.
+- **It is a snapshot.** Edits to the lesson do not reach students until the
+  packet is rebuilt and re-uploaded.
