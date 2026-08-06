@@ -168,10 +168,10 @@ window.FOUNDATION_TOPIC = {
         'The result: **populations grew**, family bands gave way to **villages** and then to **cities**, and human society became far more complex than foraging had ever allowed.'
       ],
       image: {
-        title: 'River valleys, steppe, and highlands',
-        url: '',
+        title: 'Foragers before the first harvest',
+        url: '../assets/images/lecture/foundations-1/neolithic-foragers.jpg',
         sourceUrl: '',
-        caption: 'BeHistorical topic artwork for this card. The physical features that made farming, herding, and state building possible sat in specific places, and those places shaped what grew there.'
+        caption: 'For roughly 200,000 years this was the human condition: small mobile bands gathering wild plants and hunting game, moving with the seasons. Not a failure to invent farming, but a flexible way of life that often meant fewer working hours and a more varied diet than farming would bring.'
       }
     },
     {
@@ -183,10 +183,10 @@ window.FOUNDATION_TOPIC = {
         'Where geography offered water, soil, and domesticable species, farming took hold and surplus followed. Where it did not, in **deserts, forests, and open grasslands**, people kept foraging or turned to herding.'
       ],
       image: {
-        title: 'Nile River from Orbit',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_River_and_delta_from_orbit.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nile_River_and_delta_from_orbit.jpg',
-        caption: 'The Nile\'s narrow green corridor through the Sahara shows why agriculture and civilization began at the river, not in the surrounding desert.'
+        title: 'First-wave civilizations and where farming began',
+        url: '../assets/images/lecture/foundations-1/first-wave-civilizations.webp',
+        sourceUrl: '',
+        caption: 'Early agriculture in pale, the civilizations that grew out of it in bold. Farming begins independently in six regions, and in every case the state that follows sits on top of it by thousands of years. Map by inquirED for World History Encyclopedia, 2023.'
       }
     },
     {

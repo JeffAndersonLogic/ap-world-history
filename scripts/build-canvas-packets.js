@@ -108,6 +108,14 @@ function art(artDir, id) {
   return dataUri(path.join(ROOT, 'assets', 'images', 'module-art', 'foundations', artDir, `${id}.svg`));
 }
 
+// A repo-relative image path resolved to an inlined copy, or null when the slot
+// points at a remote URL or nothing. The print packet uses this to decide what
+// is worth ink: a real photograph or map is, generated brand motif is not.
+function localImageUri(url) {
+  if (typeof url !== 'string' || !url.startsWith('../')) return null;
+  return dataUri(path.join(ROOT, url.replace(/^\.\.\//, '')));
+}
+
 // Mirrors sanitizeImageUrl in foundations-topic-renderer.js: a Commons file page
 // or thumb URL is normalised to the Special:FilePath form that serves bytes.
 function commonsUrl(url) {
@@ -342,13 +350,46 @@ document.querySelectorAll('img[data-bh-logo]').forEach(function(i){i.src=${JSON.
   renderer = must(renderer,
     '<br><a class="source-link" href="${T.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a>',
     '', 'map source link');
+  // Same trap on the lecture cards. openLecture falls back to the image's own
+  // url when it has no sourceUrl, which for an inlined picture is a data URI.
+  // Drop the link in that case; a Commons-hosted card keeps its real one.
+  renderer = must(renderer,
+    'source=seg.image&&(seg.image.sourceUrl||seg.image.url);',
+    'source=(function(s){return s&&String(s).indexOf(\'data:\')===0?\'\':s;})(seg.image&&(seg.image.sourceUrl||seg.image.url));',
+    'lecture source link');
+
+  // Every repo-relative image in the data file becomes an inlined copy before
+  // the renderer reads it. Miss one and the packet carries a path to a file it
+  // does not contain: the picture silently degrades to fallback artwork, which
+  // looks deliberate and is very easy not to notice.
+  const isLocal = u => typeof u === 'string' && u.startsWith('../');
+  const localUri = u => dataUri(path.join(ROOT, u.replace(/^\.\.\//, '')));
+  const localised = [];
+  if (isLocal(T.heroImage)) {
+    localised.push(`window.FOUNDATION_TOPIC.heroImage=${JSON.stringify(localUri(T.heroImage))};`);
+  }
+  if (isLocal(T.map.url)) {
+    localised.push(`window.FOUNDATION_TOPIC.map.url=${JSON.stringify(localUri(T.map.url))};`);
+  }
+  T.lecture.forEach((seg, i) => {
+    if (seg.image && isLocal(seg.image.url)) {
+      localised.push(`window.FOUNDATION_TOPIC.lecture[${i}].image.url=${JSON.stringify(localUri(seg.image.url))};`);
+    }
+  });
+  // Evidence items render an "Open source" link from sourceUrl||url, and a data
+  // URI is not something a browser will open in a new tab. No evidence item uses
+  // a local path today; fail the build rather than ship a broken link if one does.
+  ((T.evidence && T.evidence.items) || []).forEach(item => {
+    if (isLocal(item.url) || isLocal(item.sourceUrl)) {
+      throw new Error('an Evidence Lab item now uses a local image path. '
+        + 'Inline it here and suppress its source link, the way renderMap already is.');
+    }
+  });
 
   const scripts = [
     readOrDie(FORM_CONFIG),
     readOrDie(path.join(FOUNDATIONS, spec.data)),
-    // The instructional map is a repo-relative path in the data file. Swap it
-    // for the inlined copy before the renderer reads it.
-    `window.FOUNDATION_TOPIC.map.url=${JSON.stringify(dataUri(path.join(ROOT, T.map.url.replace(/^\.\.\//, ''))))};`,
+    localised.join('\n'),
     bootstrap,
     captureScript(spec),
     renderer
@@ -443,7 +484,9 @@ function buildBlocks(T, reading, artDir) {
         title: seg.title,
         bullets: seg.bullets,
         img: picture(lecturePics[i].remote, lecturePics[i].fallback, (seg.image && seg.image.title) || seg.title),
-        printImg: null,
+        // Prints only when the slot holds a real local picture. A Commons photo
+        // cannot be fetched at build time, and the generated fallback is motif.
+        printImg: localImageUri(seg.image && seg.image.url),
         imgTitle: (seg.image && seg.image.title) || seg.title,
         caption: (seg.image && seg.image.caption) || '',
         source: commonsUrl(seg.image && (seg.image.sourceUrl || seg.image.url))

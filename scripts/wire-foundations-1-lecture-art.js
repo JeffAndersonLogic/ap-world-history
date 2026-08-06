@@ -43,7 +43,7 @@ const CARDS = [
       }`
   },
   {
-    file: 'first-wave-civilizations.jpg',
+    file: 'first-wave-civilizations.webp',
     match: `      image: {
         title: 'Nile River from Orbit',
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_River_and_delta_from_orbit.jpg',
@@ -52,22 +52,24 @@ const CARDS = [
       }`,
     replace: `      image: {
         title: 'First-wave civilizations and where farming began',
-        url: '../assets/images/lecture/foundations-1/first-wave-civilizations.jpg',
+        url: '../assets/images/lecture/foundations-1/first-wave-civilizations.webp',
         sourceUrl: '',
         caption: 'Early agriculture in pale, the civilizations that grew out of it in bold. Farming begins independently in six regions, and in every case the state that follows sits on top of it by thousands of years. Map by inquirED for World History Encyclopedia, 2023.'
       }`
   }
 ];
 
-// JPEG starts FF D8 FF, PNG starts 89 50 4E 47. validate.js checks this too, but
-// failing here names the file instead of failing three steps later.
+// JPEG starts FF D8 FF, PNG starts 89 50 4E 47, WebP starts RIFF. validate.js
+// checks this too, but failing here names the file instead of failing three
+// steps later.
 function isRealImage(file) {
   const fd = fs.openSync(file, 'r');
   const head = Buffer.alloc(4);
   fs.readSync(fd, head, 0, 4, 0);
   fs.closeSync(fd);
   return (head[0] === 0xFF && head[1] === 0xD8 && head[2] === 0xFF)
-    || (head[0] === 0x89 && head[1] === 0x50 && head[2] === 0x4E && head[3] === 0x47);
+    || (head[0] === 0x89 && head[1] === 0x50 && head[2] === 0x4E && head[3] === 0x47)
+    || (head.toString('ascii') === 'RIFF');
 }
 
 function main() {
