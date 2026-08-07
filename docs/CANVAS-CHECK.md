@@ -81,6 +81,13 @@ node scripts/verify-canvas-check.js ~/Downloads/submissions
 
 If the folder holds more than one student, add `--student <name>`.
 
+**You do not have to type the fixture text.** The default check recomputes the
+hash the Gather panel recorded for each response and compares it to what came
+back out of Canvas, so it settles the round trip against whatever the tester
+actually wrote. Use `--answers scripts/test/fixtures/canvas-check-answers.txt`
+only when the run deliberately used that script, for the stricter character
+diff on known input.
+
 The check reports per slot and catches five distinct corruptions:
 
 | It catches | What it means |
@@ -105,6 +112,28 @@ Do not roll out to students. Send me the output. A difference here is Canvas
 altering student writing, which is a different and more serious problem than a
 bug in this repository, and the fix depends entirely on which character class
 moved.
+
+## The first run, 2026-08-07
+
+Passed, 9 of 9, on Foundations 0 with a test student.
+
+- All nine manifest records survived the paste and the download.
+- Every response hashed byte-identical to what Gather recorded, so Canvas
+  altered nothing.
+- A curly apostrophe came through intact.
+- No HTML entity leaked into response text. The `&amp;` occurrences in the file
+  are all inside manifest labels such as "Map &amp; Geography Check", which is
+  correct encoding, and the parser decoded them.
+- No mojibake.
+- 7 of 9 confidence ratings present, two deliberately blank and staying blank
+  rather than becoming zeros.
+- Zero exceptions.
+
+**Still untested: paragraph preservation.** Every answer in that run was a single
+paragraph, so nothing exercised a blank line, which is the thing Canvas is most
+likely to rewrite. The checker now says so at the end of a run rather than
+letting a clean result imply coverage it does not have. Put a blank line inside
+one answer on the next pass.
 
 ## After it passes
 

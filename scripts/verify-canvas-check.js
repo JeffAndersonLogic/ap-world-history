@@ -15,14 +15,27 @@
  * entity leakage both look fine at a glance, and both would corrupt every
  * response the Skills Lens reads from then on.
  *
- * Usage:
- *   node scripts/verify-canvas-check.js <parsed-dir> [--answers <file>] [--student <name>]
+ * TWO MODES, AND THE DEFAULT IS THE USEFUL ONE
  *
- *   <parsed-dir>   the folder scripts/parse-canvas-submissions.js wrote
- *                  responses.csv into
- *   --answers      what was typed, default scripts/test/fixtures/canvas-check-answers.txt
- *   --student      which submission to check, when the folder holds more than one.
- *                  Matches on the leading name in the Canvas filename.
+ * The record footer carries a hash of every response, written at the moment
+ * Gather assembled the document. Recomputing those hashes from what came back
+ * out of Canvas settles the round trip against *whatever the student actually
+ * typed*, with no need for them to have typed a particular script. That is the
+ * default, and it is the mode to use on a real submission.
+ *
+ * The first version of this file only had the other mode: diff against a fixture
+ * file of known text. That is a stricter check of the same thing, but it fails
+ * loudly and uselessly the moment someone writes their own answers, which is
+ * exactly what a teacher testing their own lesson will do. It is now opt-in.
+ *
+ * Usage:
+ *   node scripts/verify-canvas-check.js <dir> [--answers <file>] [--student <name>]
+ *
+ *   <dir>          the unzipped Canvas submissions folder, after
+ *                  scripts/parse-canvas-submissions.js has run on it
+ *   --answers      also diff against a file of known typed text, for a run where
+ *                  the tester used scripts/test/fixtures/canvas-check-answers.txt
+ *   --student      which submission, when the folder holds more than one
  *
  * Reads local files only. See docs/CANVAS-CHECK.md for the full runbook.
  */
@@ -33,6 +46,18 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
+const { bhHash, htmlToText } = require('./parse-canvas-submissions');
+
+// Same record grammar the renderers emit and the parser reads.
+const RE_RECORD = /#BHR\|([^#]*?)\|#/g;
+function parseFields(blob) {
+  const out = {};
+  String(blob).split('|').forEach(pair => {
+    const eq = pair.indexOf('=');
+    if (eq > 0) out[pair.slice(0, eq).trim()] = pair.slice(eq + 1).trim();
+  });
+  return out;
+}
 
 // ── CSV, RFC4180 ──────────────────────────────────────────────────────────────
 // Responses contain commas, quotes and newlines, so a split(',') reader would
@@ -101,7 +126,7 @@ function context(s, at, span = 34) {
 
 function main() {
   const argv = process.argv.slice(2);
-  let dir = '', answersPath = path.join(ROOT, 'scripts/test/fixtures/canvas-check-answers.txt'), student = '';
+  let dir = '', answersPath = '', student = '';
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === '--answers') answersPath = argv[++i];
     else if (argv[i] === '--student') student = String(argv[++i]).toLowerCase();
@@ -119,7 +144,7 @@ function main() {
     process.exit(2);
   }
 
-  const expected = parseAnswers(fs.readFileSync(answersPath, 'utf8'));
+  const expected = answersPath ? parseAnswers(fs.readFileSync(answersPath, 'utf8')) : null;
   let rows = parseCsv(fs.readFileSync(csvPath, 'utf8'));
   if (student) rows = rows.filter(r => String(r.student_display || '').toLowerCase().includes(student));
 
@@ -134,41 +159,36 @@ function main() {
     process.exit(2);
   }
 
-  console.log(`  Checking ${names[0]}, ${rows.length} parsed responses against ${path.basename(answersPath)}\n`);
+  // Recompute from the raw submission, so this is a check of the round trip and
+  // not a restatement of what the parser already decided.
+  const source = rows[0].source_file;
+  const raw = fs.readFileSync(path.join(dir, source), 'utf8');
+  const text = /\.txt$/i.test(source) ? raw.replace(/\r\n?/g, '\n') : htmlToText(raw);
+  const recorded = {};
+  let m;
+  RE_RECORD.lastIndex = 0;
+  while ((m = RE_RECORD.exec(text)) !== null) {
+    const f = parseFields(m[1]);
+    if (f.slot) recorded[f.slot] = f;
+  }
 
-  const bySlot = Object.fromEntries(rows.map(r => [r.slot_id, r]));
-  let fail = 0, checked = 0;
+  console.log(`  ${names[0]}, ${rows.length} responses, ${Object.keys(recorded).length} manifest records\n`);
 
-  Object.keys(expected).forEach(slot => {
-    const want = expected[slot];
-    const row = bySlot[slot];
-    checked++;
-
-    if (!row) {
-      fail++;
-      console.log(`  FAIL  ${slot.padEnd(24)} no parsed row for this slot`);
-      return;
-    }
-
+  let fail = 0;
+  rows.forEach(row => {
+    const slot = row.slot_id;
     const got = row.response || '';
+    const rec = recorded[slot];
     const problems = [];
 
-    if (norm(got) !== norm(want)) {
-      const at = firstDifference(norm(want), norm(got));
-      problems.push(`text differs at character ${at} of ${norm(want).length}`);
-      problems.push(`    typed:  ${context(norm(want), at)}`);
-      problems.push(`    parsed: ${context(norm(got), at)}`);
-      if (norm(got).length < norm(want).length * 0.95) {
-        problems.push(`    parsed text is ${norm(want).length - norm(got).length} characters shorter, this looks like truncation`);
+    // The headline check. If Canvas altered a character, this hash moves.
+    if (!rec) {
+      problems.push('no manifest record for this slot, so fidelity cannot be checked');
+    } else if (bhHash(got) !== rec.rh) {
+      problems.push(`Canvas altered this response: hash ${bhHash(got)} against recorded ${rec.rh}`);
+      if (norm(got).length < Number(rec.c || 0) * 0.95) {
+        problems.push(`    parsed text is shorter than the ${rec.c} characters recorded, this looks like truncation`);
       }
-    }
-
-    // Paragraph structure is a separate question from wording. Canvas rewrites
-    // blank lines, and losing them turns a two-part answer into a wall.
-    const wantParas = want.split(/\n{2,}/).length;
-    const gotParas = got.split(/\n{2,}/).length;
-    if (wantParas > 1 && gotParas !== wantParas) {
-      problems.push(`paragraph breaks: typed ${wantParas} paragraphs, parsed ${gotParas}`);
     }
 
     SMELLS.forEach(([re, why]) => {
@@ -178,28 +198,41 @@ function main() {
 
     if (row.flags) problems.push(`parser flagged this row: ${row.flags}`);
 
+    // Optional stricter pass, only when a known-text file was supplied.
+    if (expected && expected[slot] !== undefined && norm(got) !== norm(expected[slot])) {
+      const at = firstDifference(norm(expected[slot]), norm(got));
+      problems.push(`differs from the answers file at character ${at}`);
+      problems.push(`    typed:  ${context(norm(expected[slot]), at)}`);
+      problems.push(`    parsed: ${context(norm(got), at)}`);
+    }
+
     if (problems.length) {
       fail++;
       console.log(`  FAIL  ${slot.padEnd(24)} ${problems[0]}`);
       problems.slice(1).forEach(p => console.log(`        ${p}`));
     } else {
-      console.log(`  PASS  ${slot.padEnd(24)} ${norm(got).length} chars, byte-for-byte after whitespace normalisation`);
+      const paras = got.split(/\n{2,}/).length;
+      console.log(`  PASS  ${slot.padEnd(24)} ${row.word_count} words, ${paras} paragraph${paras === 1 ? '' : 's'}, unchanged`);
     }
   });
 
-  const extra = Object.keys(bySlot).filter(s => s && !(s in expected));
-  if (extra.length) console.log(`\n  Note: ${extra.length} parsed slot(s) not in the answers file: ${extra.join(', ')}`);
+  const multi = rows.filter(r => (r.response || '').split(/\n{2,}/).length > 1).length;
+  const conf = rows.filter(r => r.confidence).length;
+  console.log(`\n  Confidence ratings present: ${conf} of ${rows.length}`);
+  console.log(`  Multi-paragraph responses:  ${multi} of ${rows.length}`);
+  if (!multi) {
+    console.log('  No response had a blank line in it, so paragraph preservation is');
+    console.log('  untested by this run. Include one next time to cover it.');
+  }
 
-  const conf = rows.filter(r => r.confidence);
-  console.log(`\n  Confidence ratings present: ${conf.length} of ${rows.length}`);
-
-  console.log(`\n  ${checked - fail}/${checked} slots survived the round trip`);
+  console.log(`\n  ${rows.length - fail}/${rows.length} responses survived the round trip`);
   if (fail) {
     console.log('\n  Do not roll this out to students yet. A difference here means Canvas is');
     console.log('  altering student writing between the paste and the download, and every');
     console.log('  response the Skills Lens reads would carry the same corruption.');
   } else {
-    console.log('\n  Canvas returned every response unchanged. The pipeline holds end to end.');
+    console.log('\n  Canvas returned every response byte-identical to what Gather recorded.');
+    console.log('  The pipeline holds end to end.');
   }
   process.exit(fail ? 1 : 0);
 }
