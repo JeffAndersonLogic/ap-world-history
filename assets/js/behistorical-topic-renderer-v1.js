@@ -253,6 +253,98 @@ function renderModuleGrid() {
     </article>`).join('');
 }
 
+// ── Modal focus management ────────────────────────────────────────────────────
+//
+// Adding .show made a dialog visible and did nothing else, so a keyboard or
+// screen-reader user was left behind the overlay: the reading cursor stayed on
+// the module card, Tab walked the page underneath, and closing the dialog
+// dropped focus at the top of the document. The modals hold the map, the
+// reading and the primary source, which is most of the lesson.
+//
+// A stack, not a single slot, because the lightbox opens from inside the module
+// modal when a student enlarges an Evidence Lab image. Escape closes the topmost
+// dialog only, and each dialog returns focus to whatever opened it.
+const BHModalStack = [];
+
+const BH_FOCUSABLE = [
+  'a[href]', 'button:not([disabled])', 'input:not([disabled]):not([type="hidden"])',
+  'select:not([disabled])', 'textarea:not([disabled])', 'iframe',
+  '[tabindex]:not([tabindex="-1"])'
+].join(',');
+
+// getClientRects() is the cheap "is it actually rendered" test. A control inside
+// a collapsed or hidden branch must not be a tab stop.
+function bhFocusable(root) {
+  return Array.prototype.slice.call(root.querySelectorAll(BH_FOCUSABLE))
+    .filter(el => el.getClientRects().length > 0);
+}
+
+function bhTrapTab(event) {
+  if (event.key !== 'Tab' || !BHModalStack.length) return;
+  const top = BHModalStack[BHModalStack.length - 1].el;
+  const items = bhFocusable(top);
+  if (!items.length) { event.preventDefault(); top.focus(); return; }
+
+  const first = items[0];
+  const last = items[items.length - 1];
+  const active = document.activeElement;
+  const outside = !top.contains(active);
+
+  if (event.shiftKey && (active === first || outside)) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && (active === last || outside)) {
+    event.preventDefault();
+    first.focus();
+  }
+}
+
+function bhOpenModal(modalId, labelId) {
+  const el = byId(modalId);
+  if (!el) return;
+
+  BHModalStack.push({ el: el, launcher: document.activeElement });
+  el.setAttribute('aria-modal', 'true');
+  if (labelId && byId(labelId)) el.setAttribute('aria-labelledby', labelId);
+  if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '-1');
+  if (BHModalStack.length === 1) {
+    document.addEventListener('keydown', bhTrapTab, true);
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Focus the dialog itself rather than its first control, so the label is
+  // announced and the student hears what opened before hearing a button. A tick
+  // late because the body was just replaced and Safari will not focus a node
+  // that was not in the tree when the click handler ran.
+  setTimeout(() => { if (el.classList.contains('show')) el.focus(); }, 0);
+}
+
+function bhCloseModal(modalId) {
+  const el = byId(modalId);
+  if (!el) return;
+
+  // Close anything stacked above this one too, so a stale entry cannot leave the
+  // trap pointing at a hidden dialog.
+  let entry = null;
+  for (let i = BHModalStack.length - 1; i >= 0; i--) {
+    const item = BHModalStack[i];
+    BHModalStack.splice(i, 1);
+    item.el.classList.remove('show');
+    item.el.removeAttribute('aria-modal');
+    if (item.el === el) { entry = item; break; }
+  }
+
+  if (!BHModalStack.length) {
+    document.removeEventListener('keydown', bhTrapTab, true);
+    document.body.style.overflow = '';
+  }
+
+  // Back to the card that opened it. Landing at the top of the document instead
+  // means re-tabbing through the whole page to reach the next module.
+  const launcher = entry && entry.launcher;
+  if (launcher && launcher.focus && launcher.getClientRects().length) launcher.focus();
+}
+
 // ── Modal controls ────────────────────────────────────────────────────────────
 
 function openLinkedModule(url) { window.open(url, '_blank'); }
@@ -266,9 +358,10 @@ function openModule(id) {
   byId('pop-body').innerHTML = mod.render();
   byId('pop-modal').classList.add('show');
   loadAllDrafts();
+  bhOpenModal('pop-modal', 'pop-title');
 }
 
-function closeModule() { byId('pop-modal').classList.remove('show'); }
+function closeModule() { bhCloseModal('pop-modal'); }
 
 function openLectureModal(i) {
   const seg = L.lecture.segments[i];
@@ -284,9 +377,10 @@ function openLectureModal(i) {
   const sourceLink = seg.image && (seg.image.sourceUrl || seg.image.url);
   byId('lecture-modal-caption').innerHTML = `<strong>${(seg.image && seg.image.title) || seg.title}</strong><br>${(seg.image && seg.image.caption) || 'Topic-specific instructional artwork.'}${sourceLink ? `<br><a href="${sourceLink}" target="_blank" rel="noopener">Open image source</a>` : ''}`;
   byId('lecture-modal').classList.add('show');
+  bhOpenModal('lecture-modal', 'lecture-modal-title');
 }
 
-function closeLectureModal() { byId('lecture-modal').classList.remove('show'); }
+function closeLectureModal() { bhCloseModal('lecture-modal'); }
 
 // ── Module render functions ───────────────────────────────────────────────────
 
@@ -303,7 +397,10 @@ function renderMap() {
     <article class="card map-card">
       <div class="map-grid">
         <figure class="map-figure">
-          <img src="${mediaImageUrl(L.map.url, 'map')}" alt="${L.map.title}" onclick="openMapLightbox()" ${mediaFallbackAttrs('map')}>
+          <img src="${mediaImageUrl(L.map.url, 'map')}" alt="${L.map.title}" role="button" tabindex="0"
+               aria-label="Enlarge map: ${L.map.title}"
+               onclick="openMapLightbox()"
+               onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openMapLightbox()}" ${mediaFallbackAttrs('map')}>
           <figcaption><strong>${L.map.caption}</strong><br><a class="source-link" href="${L.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a></figcaption>
         </figure>
         <div class="map-notes">
@@ -560,7 +657,10 @@ function renderEvidence() {
     <div class="pop-grid">
       ${(L.images || []).map((img, i) => `
         <article class="card image-card pop-half">
-          <img src="${evidenceImageUrl(i)}" alt="${img.title}" onclick="openLightbox(${i})" ${mediaFallbackAttrs(`evidence-${String(i + 1).padStart(2, '0')}`)}>
+          <img src="${evidenceImageUrl(i)}" alt="${img.title}" role="button" tabindex="0"
+               aria-label="Enlarge image: ${img.title}"
+               onclick="openLightbox(${i})"
+               onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(${i})}" ${mediaFallbackAttrs(`evidence-${String(i + 1).padStart(2, '0')}`)}>
           <div class="image-caption">
             <strong>${img.title}</strong><br>${img.caption}<br><em>${img.prompt}</em><br>
             <a class="source-link" href="${img.sourceUrl || img.url}" target="_blank" rel="noopener">Open source/image</a>
@@ -1146,13 +1246,15 @@ function openImageUrl(url, caption, fallbackId) {
   image.alt = caption;
   byId('lightbox-caption').textContent = caption;
   byId('lightbox').classList.add('show');
+  bhOpenModal('lightbox', 'lightbox-caption');
 }
-function closeLightbox() { byId('lightbox').classList.remove('show'); }
+function closeLightbox() { bhCloseModal('lightbox'); }
 
 // ── Keyboard escape ───────────────────────────────────────────────────────────
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { closeModule(); closeLightbox(); closeLectureModal(); }
+  if (e.key !== 'Escape' || !BHModalStack.length) return;
+  bhCloseModal(BHModalStack[BHModalStack.length - 1].el.id);
 });
 
 // ── Save Your Work panel ──────────────────────────────────────────────────────

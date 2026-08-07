@@ -1191,13 +1191,62 @@ const _lectureGrid=byId('main-lecture-grid')||byId('lecture-grid');if(_lectureGr
 const _lectureModal=byId('lecture-modal');if(_lectureModal&&!byId('lecture-prev')){_lectureModal.insertAdjacentHTML('beforeend',`<button class="lecture-arrow lecture-arrow-prev" id="lecture-prev" type="button" aria-label="Previous lecture card" onclick="lectureStep(-1)">&#8249;</button><button class="lecture-arrow lecture-arrow-next" id="lecture-next" type="button" aria-label="Next lecture card" onclick="lectureStep(1)">&#8250;</button><div class="lecture-nav-status" id="lecture-nav-status"></div>`);}
 const _videoGrid=byId('content-video-clips')||byId('video-grid');if(_videoGrid)_videoGrid.innerHTML=`<article class="foundation-card" style="grid-column:1/-1"><h3>Video Clips</h3><p>Use these clips as quick reinforcement for this Foundations topic. Students should watch for the guiding prompt, not simply take random notes.</p></article>`+T.videos.map(v=>`<article class="video-card"><div class="video-thumb" ${v.youtubeId?`style="background-image:linear-gradient(rgba(26,28,29,.25),rgba(26,28,29,.55)),url('https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg');background-size:cover;background-position:center"`:''}><span>Video Clip</span></div><h3>${v.title}</h3><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></article>`).join('');
 function jumpToSection(selector){const el=document.querySelector(selector);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
-function openModule(id){const m=modules.find(x=>x.id===id);if(!m||m.jump||m.link)return;byId('pop-eyebrow').textContent=m.label;byId('pop-title').textContent=m.title;byId('pop-body').innerHTML=m.render();byId('pop-modal').classList.add('show');loadDrafts();}
-function closeModule(){byId('pop-modal').classList.remove('show')}
+// ── Modal focus management ────────────────────────────────────────────────────
+//
+// Mirrors assets/js/behistorical-topic-renderer-v1.js. Adding .show made a
+// dialog visible and did nothing else, so a keyboard or screen-reader user was
+// left behind the overlay: the reading cursor stayed on the module card, Tab
+// walked the page underneath, and closing dropped focus at the top of the
+// document. The modals hold the map, the reading and the evidence, which is most
+// of the lesson. A stack because a dialog can open above another one.
+const BHModalStack=[];
+const BH_FOCUSABLE='a[href],button:not([disabled]),input:not([disabled]):not([type="hidden"]),select:not([disabled]),textarea:not([disabled]),iframe,[tabindex]:not([tabindex="-1"])';
+// getClientRects() is the cheap "is it actually rendered" test, so a control in
+// a hidden branch is not a tab stop.
+function bhFocusable(root){return Array.prototype.slice.call(root.querySelectorAll(BH_FOCUSABLE)).filter(el=>el.getClientRects().length>0);}
+function bhTrapTab(event){
+  if(event.key!=='Tab'||!BHModalStack.length)return;
+  const top=BHModalStack[BHModalStack.length-1].el,items=bhFocusable(top);
+  if(!items.length){event.preventDefault();top.focus();return;}
+  const first=items[0],last=items[items.length-1],active=document.activeElement,outside=!top.contains(active);
+  if(event.shiftKey&&(active===first||outside)){event.preventDefault();last.focus();}
+  else if(!event.shiftKey&&(active===last||outside)){event.preventDefault();first.focus();}
+}
+function bhOpenModal(modalId,labelId){
+  const el=byId(modalId);
+  if(!el)return;
+  BHModalStack.push({el:el,launcher:document.activeElement});
+  el.setAttribute('aria-modal','true');
+  if(labelId&&byId(labelId))el.setAttribute('aria-labelledby',labelId);
+  if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','-1');
+  if(BHModalStack.length===1){document.addEventListener('keydown',bhTrapTab,true);document.body.style.overflow='hidden';}
+  // Focus the dialog, not its first control, so the label is announced before a
+  // button. A tick late because the body was just replaced.
+  setTimeout(()=>{if(el.classList.contains('show'))el.focus();},0);
+}
+function bhCloseModal(modalId){
+  const el=byId(modalId);
+  if(!el)return;
+  let entry=null;
+  for(let i=BHModalStack.length-1;i>=0;i--){
+    const item=BHModalStack[i];
+    BHModalStack.splice(i,1);
+    item.el.classList.remove('show');
+    item.el.removeAttribute('aria-modal');
+    if(item.el===el){entry=item;break;}
+  }
+  if(!BHModalStack.length){document.removeEventListener('keydown',bhTrapTab,true);document.body.style.overflow='';}
+  // Back to the card that opened it, not the top of the document.
+  const launcher=entry&&entry.launcher;
+  if(launcher&&launcher.focus&&launcher.getClientRects().length)launcher.focus();
+}
+function openModule(id){const m=modules.find(x=>x.id===id);if(!m||m.jump||m.link)return;byId('pop-eyebrow').textContent=m.label;byId('pop-title').textContent=m.title;byId('pop-body').innerHTML=m.render();byId('pop-modal').classList.add('show');loadDrafts();bhOpenModal('pop-modal','pop-title');}
+function closeModule(){bhCloseModal('pop-modal');}
 let currentLectureIndex=0;
-function openLecture(i){currentLectureIndex=i;const seg=T.lecture[i],image=byId('lecture-modal-img'),fallbackId=`lecture-${String(i+1).padStart(2,'0')}`,fallback=foundationArtworkPath(fallbackId),source=(function(s){return s&&String(s).indexOf('data:')===0?'':s;})(seg.image&&(seg.image.sourceUrl||seg.image.url));byId('lecture-modal-title').textContent=seg.title;byId('lecture-modal-bullets').innerHTML=seg.bullets.map(b=>`<li>${md(b)}</li>`).join('');image.onerror=function(){useFoundationFallback(this,fallback)};image.dataset.fallback=fallback;image.src=foundationLectureImageUrl(i);image.alt=(seg.image&&seg.image.title)||`${seg.title} visual`;byId('lecture-modal-caption').innerHTML=`<strong>${(seg.image&&seg.image.title)||seg.title}</strong><br>${(seg.image&&seg.image.caption)||'Topic-specific instructional artwork.'}${source?`<br><a class="source-link" href="${source}" target="_blank" rel="noopener">Open image source</a>`:''}`;updateLectureNav();byId('lecture-modal').classList.add('show')}
+function openLecture(i){currentLectureIndex=i;const seg=T.lecture[i],image=byId('lecture-modal-img'),fallbackId=`lecture-${String(i+1).padStart(2,'0')}`,fallback=foundationArtworkPath(fallbackId),source=(function(s){return s&&String(s).indexOf('data:')===0?'':s;})(seg.image&&(seg.image.sourceUrl||seg.image.url));byId('lecture-modal-title').textContent=seg.title;byId('lecture-modal-bullets').innerHTML=seg.bullets.map(b=>`<li>${md(b)}</li>`).join('');image.onerror=function(){useFoundationFallback(this,fallback)};image.dataset.fallback=fallback;image.src=foundationLectureImageUrl(i);image.alt=(seg.image&&seg.image.title)||`${seg.title} visual`;byId('lecture-modal-caption').innerHTML=`<strong>${(seg.image&&seg.image.title)||seg.title}</strong><br>${(seg.image&&seg.image.caption)||'Topic-specific instructional artwork.'}${source?`<br><a class="source-link" href="${source}" target="_blank" rel="noopener">Open image source</a>`:''}`;updateLectureNav();byId('lecture-modal').classList.add('show');bhOpenModal('lecture-modal','lecture-modal-title');}
 function updateLectureNav(){const total=T.lecture.length,prev=byId('lecture-prev'),next=byId('lecture-next'),status=byId('lecture-nav-status');if(prev)prev.disabled=currentLectureIndex<=0;if(next)next.disabled=currentLectureIndex>=total-1;if(status)status.textContent=`Card ${currentLectureIndex+1} of ${total}`;}
 function lectureStep(delta){const n=currentLectureIndex+delta;if(n>=0&&n<T.lecture.length)openLecture(n);}
-function closeLectureModal(){byId('lecture-modal').classList.remove('show')}
+function closeLectureModal(){bhCloseModal('lecture-modal');}
 function renderMap(){return `<div class="pop-grid"><figure class="foundation-card map-figure pop-half"><img src="${foundationImageUrl(T.map.url,'map')}" alt="${T.map.title}" ${foundationFallbackAttrs('map')}><figcaption><strong>${T.map.title}</strong><br>${T.map.caption}</figcaption></figure><article class="foundation-card pop-half"><h3>Map Questions</h3><ul>${T.map.questions.map(q=>`<li>${q}</li>`).join('')}</ul>${mapKey.length?`<div class="map-key"><h4>Map Key</h4>${mapKey.map(k=>`<div class="map-key-item"><strong>${k.label}</strong><span>${k.detail}</span></div>`).join('')}</div>`:''}${draft(`${T.id}-map`,T.map.prompt)}</article></div>`}
 function renderFirst10(){if(first10.embedUrl){return `<div style="margin:-1.5rem"><iframe id="first10-frame" onload="wireFirst10Capture()" srcdoc="${window.BH_FIRST10||''}" title="First &amp; 10 Reading" style="width:100%;min-height:85vh;border:0;display:block;" loading="lazy"></iframe></div>`;}return `<article class="foundation-card reading"><h3>${first10.title}</h3>${first10.paragraphs.map(p=>`<p>${p}</p>`).join('')}</article><article class="foundation-card"><h3>First &amp; 10 Response</h3><p>${first10.prompt}</p></article>${draft(`${T.id}-first10`,first10.prompt)}`}
 function renderBeSurreal(){if(!beSurreal)return `<article class="foundation-card"><h3>BeSurreal</h3><p>This module is coming soon for ${T.title}.</p></article>`;return `<article class="foundation-card besurreal-card"><h3>${beSurreal.title}</h3><p>${beSurreal.intro}</p><blockquote class="besurreal-detail"><p>${beSurreal.detail}</p></blockquote></article>${draft(`${T.id}-besurreal`,beSurreal.prompt)}`}
@@ -1536,5 +1585,5 @@ function renderWorkExportPanel(){
   grid.insertAdjacentHTML('afterend',`<article class="foundation-card work-export"><h3>Save Your Work</h3><p>Your typing saves automatically, but only in this browser on this device. Before you leave class, gather everything here and paste it into the Canvas assignment. Canvas is where your graded work goes.</p><div class="tool-row"><button class="btn" type="button" onclick="gatherAllWork()">Gather All My Work</button><button class="btn secondary" type="button" onclick="copyAllWork()">Copy to Clipboard</button></div><div id="${WORK_EXPORT_ID}" class="work-output" tabindex="0" style="background:#F5F0E7;color:#1A1C1D;border:1px solid #C9A46A;border-radius:3px;padding:1rem 1.15rem;margin-top:.75rem;max-height:22rem;overflow-y:auto;font-family:'Libre Baskerville',Georgia,serif;font-size:.9rem;line-height:1.55;"><p style="opacity:.7;margin:0;">Click <strong>Gather All My Work</strong>, then Copy to Clipboard and paste into Canvas.</p></div><div id="all-work-result" class="check-result"></div></article>`);
 }
 renderWorkExportPanel();
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModule();closeLectureModal();}if(byId('lecture-modal').classList.contains('show')){if(e.key==='ArrowRight'){e.preventDefault();lectureStep(1);}else if(e.key==='ArrowLeft'){e.preventDefault();lectureStep(-1);}}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&BHModalStack.length){bhCloseModal(BHModalStack[BHModalStack.length-1].el.id);}if(byId('lecture-modal').classList.contains('show')){if(e.key==='ArrowRight'){e.preventDefault();lectureStep(1);}else if(e.key==='ArrowLeft'){e.preventDefault();lectureStep(-1);}}});
 </script></body></html>
