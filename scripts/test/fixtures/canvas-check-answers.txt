@@ -1,0 +1,50 @@
+# Canvas round-trip check, the text to type
+#
+# Paste each block into the matching module on the lesson page, then Gather and
+# submit to Canvas. scripts/verify-canvas-check.js diffs what comes back out of
+# the parser against exactly this file.
+#
+# The content is deliberately awkward. Every character class here has broken a
+# copy-paste pipeline somewhere: a curly apostrophe becomes a question mark under
+# the wrong encoding, an ampersand comes back as &amp; when an HTML decode is
+# missed, a double quote breaks naive CSV, an en dash is the character that once
+# silently dropped the Topic field on six lessons, and a blank line between
+# paragraphs is what Canvas's editor rewrites on the way in and again on the way
+# out. Long answers are here because truncation is the failure mode that looks
+# like a student writing less than they did.
+#
+# Lines starting with # are ignored. A slot header is ==slot-id==.
+
+==map-check-response==
+The Grand Canal linked the Huai and Yangzi systems, and the state's grain tax moved north along it.
+
+That mattered because the capital could feed an army it had no local means to supply — the canal is the reason the northern frontier was defensible at all. Roughly 40% of the tax grain travelled this way.
+
+==first10-q1==
+Champa rice ripened in about 60 days, so a farmer could take two harvests where one had been possible; the "double-cropping" that followed is what drove the population past 100 million.
+
+==first10-q2==
+What continued was the Confucian claim that a well-ordered family models a well-ordered state. What changed was who could act on it: the examination system meant a merchant's son might outrank a general's.
+
+==first10-q3==
+Trade shifted seaward. The Indian Ocean routes carried bulk goods (porcelain, iron, salt) that the overland routes never could, and Quanzhou's harbour records show ships from Srivijaya, the Chola lands & the Abbasid ports.
+
+==skill-builder-response==
+Cause: Champa rice and the canal together produced a surplus.
+Effect: cities grew past what local farmland could support.
+
+The link runs through distribution, not through agriculture alone — a surplus that cannot move is not a surplus, it is a glut. This is why I would rank the canal above the rice.
+
+==checkpoint-one-response==
+The Song staffed government through civil service exams rather than birth, which produced scholar-officials loyal to the bureaucracy and to the emperor instead of to regional lords. Neo-Confucianism gave that arrangement its justification, and the Mandate of Heaven gave it a way to explain failure without abandoning the system.
+
+==evidence-response==
+The scroll shows shopfronts opening directly onto the street, with no compound wall between the seller and the buyer. That is a market economy operating in public, not a controlled market district, and it is the single clearest visual argument for Song commercialisation.
+
+==primary-source-response==
+A Song official wrote it, and the audience was the court, so the tone is advisory rather than descriptive. He has an interest in the reforms succeeding; "the people rejoice" is the sort of claim I would want a second source for before I used it.
+
+==checkpoint-two-response==
+Continuity: the Confucian social hierarchy, with the scholar above the farmer, the artisan and the merchant.
+
+Change: an economy that had made some merchants richer than most scholars, which the hierarchy had no language for. The Song did not resolve that tension; they inherited it and passed it on.
