@@ -115,3 +115,22 @@ from this:
 4. **A gate written in client-side JavaScript on a static host is not a gate.**
    If a surface genuinely needs to be teacher-only, it does not belong on GitHub
    Pages.
+
+---
+
+## THE GOOGLE SIDE, OBSERVED 2026-08-07
+
+Deleting `Code.gs` from this repository did not undeploy anything. The live state
+was read off the teacher's Google account and is recorded in full in
+`docs/FORM-CONTRACT.md`. The part that belongs here:
+
+The Apps Script project is named **BeHistorical Teacher Hub Analysis**. Its only
+trigger is a simple `onOpen`, and it had been **failing on every run** for at
+least a week before the retirement, which is a fair summary of the tool's last
+months: the dashboard was not merely stale, its analysis layer was erroring and
+nobody saw it, because a failing simple trigger reports to nobody.
+
+A second project, **BeHistorical Script ReBind**, sits alongside it running
+`onFormSubmit`. It was never in this repository and its purpose is unknown. It
+is the form's problem rather than the Hub's, but anyone cleaning up one will
+meet the other.
