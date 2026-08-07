@@ -129,11 +129,35 @@ Passed, 9 of 9, on Foundations 0 with a test student.
   rather than becoming zeros.
 - Zero exceptions.
 
-**Still untested: paragraph preservation.** Every answer in that run was a single
-paragraph, so nothing exercised a blank line, which is the thing Canvas is most
-likely to rewrite. The checker now says so at the end of a run rather than
-letting a clean result imply coverage it does not have. Put a blank line inside
-one answer on the next pass.
+### Paragraph preservation, the one gap in that run
+
+Every answer in it was a single paragraph, so nothing exercised a blank line.
+That matters more than the other gaps would, because paragraph structure is the
+one corruption class the manifest hash cannot catch: `bhHash` normalizes
+whitespace before hashing, on purpose, since Canvas rewraps lines and a hash
+that moved every time it did would flag every clean submission. A response that
+came back as one paragraph instead of two would still hash green. The checker
+now says so at the end of a run rather than letting a clean result imply
+coverage it does not have.
+
+The gap splits in two, and only one half needs Canvas.
+
+**The parser half is closed.** `scripts/test/canvas-paragraphs.test.js` feeds
+every markup shape Canvas's editor is known to emit for a blank line, adjacent
+`<p>` siblings, a double `<br>`, a self-closing `<br>` pair, an empty spacer
+paragraph, and bare `<div>`s, and asserts each one comes back as two paragraphs
+with no EDITED flag. It also asserts that a single `<br>` stays one paragraph,
+so the parser cannot invent a break either. 9 of 9.
+
+**The Canvas half is strongly evidenced, not proven.** The 2026-08-07 submission
+stored 50 `<p>` elements and kept 39 adjacent `</p><p>` pairs, including all
+nine `My response:` labels sitting directly next to the paragraph beneath them.
+A two-paragraph answer reaches Canvas by the same route: `paragraphsHtml()` in
+both renderers puts `<p>a</p><p>b</p>` on the HTML clipboard flavour, which is
+the adjacency Canvas demonstrably preserved 39 times in that very document.
+
+So a redo purely for this is not worth an afternoon. Fold a blank line into one
+answer on the next real run, and the last of it is covered.
 
 ## After it passes
 
