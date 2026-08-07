@@ -15,6 +15,12 @@ const kcPills = kc => kc.split(';').map(s => s.trim()).filter(Boolean).map(s => 
 const WORK_EXPORT_ID = 'all-work-output';
 // Prompt text as each module card actually displayed it, keyed by textarea id.
 const WORK_PROMPTS = {};
+// Confidence for slots whose control lives somewhere this page cannot reach,
+// which today means the three First & 10 questions inside the reading iframe.
+const WORK_CONFIDENCE = {};
+// Canonical labels for First & 10 questions past the three WORK_ITEMS declares.
+// Without these, Topic 1.7's fourth and fifth answers exported as "First10 q4".
+const WORK_FIRST10_LABELS = {};
 
 
 function sanitizeImageUrl(url) {
@@ -697,6 +703,7 @@ function draftBlock(id, prompt, responseType) {
       <h3>Draft Your Thinking</h3>
       <p>${prompt}</p>
       <textarea class="response-area" id="${id}" data-response-type="${responseType}" placeholder="Type your response here..."></textarea>
+      ${confidenceBlock(id)}
       <div id="${id}-result" class="check-result"></div>
     </div>`;
 }
@@ -708,6 +715,7 @@ function responseBlock(id, prompt, responseType, terms = []) {
       <h3>Write Your Response</h3>
       <p>${prompt}</p>
       <textarea class="response-area" id="${id}" data-response-type="${responseType}" data-terms="${terms.join('|')}" placeholder="Type your checkpoint response here..."></textarea>
+      ${confidenceBlock(id)}
       <div class="tool-row">
         <button class="btn secondary" type="button" onclick="selfCheck('${id}')">Run Self-Check</button>
       </div>
@@ -772,6 +780,69 @@ const BH_NO_STORAGE_NOTE = 'This browser will not let the page save drafts. Your
 function draftKey(id) {
   const topic = (L && L.meta && L.meta.topic) ? L.meta.topic.replace(/\s+/g, '-').toLowerCase() : 'shared';
   return `behistorical-draft-${topic}-${id}`;
+}
+
+// ── Confidence ────────────────────────────────────────────────────────────────
+//
+// A separate key prefix, not a suffix on the draft key, because
+// collectLessonWork() sweeps every key beginning `behistorical-draft-<topic>-`
+// and treats what it finds as a student response. A confidence value stored
+// under that prefix would be exported as if it were writing.
+//
+// The Teacher Hub has always computed an average confidence off a column that
+// had no source, so it rendered empty forever. This is that source. It is
+// deliberately optional: a blank is a real answer, and a student who skips it
+// should not be nagged.
+function confidenceKey(id) {
+  const topic = (L && L.meta && L.meta.topic) ? L.meta.topic.replace(/\s+/g, '-').toLowerCase() : 'shared';
+  return `behistorical-conf-${topic}-${id}`;
+}
+
+const BH_CONFIDENCE_LABELS = {
+  1: 'Lost',
+  2: 'Shaky',
+  3: 'Getting there',
+  4: 'Solid',
+  5: 'Could teach it'
+};
+
+// Real radio inputs in a real fieldset. Buttons with aria-pressed would need
+// arrow-key handling written by hand and would still announce as five unrelated
+// controls; a radiogroup announces "1 of 5" and works with a screen reader for
+// free.
+function confidenceBlock(id) {
+  const saved = BHDraftStore.get(confidenceKey(id)) || '';
+  const options = [1, 2, 3, 4, 5].map(n => `
+        <label class="confidence-option">
+          <input type="radio" name="conf-${id}" value="${n}"${String(saved) === String(n) ? ' checked' : ''}
+                 onchange="setConfidence('${id}', ${n})">
+          <span aria-hidden="true">${n}</span>
+          <span class="confidence-option-text">${BH_CONFIDENCE_LABELS[n]}</span>
+        </label>`).join('');
+  return `
+      <fieldset class="confidence-row" id="${id}-confidence">
+        <legend>How confident are you in this answer?</legend>
+        <div class="confidence-scale">${options}</div>
+        <button class="confidence-clear" type="button" onclick="clearConfidence('${id}')">Clear</button>
+      </fieldset>`;
+}
+
+function setConfidence(id, value) {
+  BHDraftStore.set(confidenceKey(id), String(value));
+}
+
+function clearConfidence(id) {
+  BHDraftStore.set(confidenceKey(id), '');
+  const group = byId(id + '-confidence');
+  if (group) group.querySelectorAll('input[type="radio"]').forEach(r => { r.checked = false; });
+}
+
+// 1 to 5, or '' when the student did not answer. Anything else is discarded
+// rather than trusted, so a stale or hand-edited key cannot reach the manifest.
+function confidenceFor(id) {
+  if (WORK_CONFIDENCE[id]) return WORK_CONFIDENCE[id];
+  const raw = String(BHDraftStore.get(confidenceKey(id)) || '').trim();
+  return /^[1-5]$/.test(raw) ? raw : '';
 }
 
 function loadDraft(id) {
@@ -842,6 +913,20 @@ function rememberPrompt(id, prompt) {
 //
 // The stored question is what the student actually read, so it wins over
 // L.first10.questions, which can drift from the reading's wording.
+// How many questions the reading actually asks. The payload has one entry per
+// question box, answered or not, so its length is the reading's own count.
+// Topic 1.7 asks five; every other topic asks three, which is why WORK_ITEMS
+// lists three. Reading the payload rather than trusting the table keeps the
+// denominator honest on that topic instead of reporting 11 of 9.
+function first10QuestionCount() {
+  const topicKey = ((L.meta && L.meta.topic) || '').replace('Topic ', '').trim();
+  if (!topicKey) return 3;
+  let saved;
+  try { saved = JSON.parse(BHDraftStore.get(`behistorical-first10-${topicKey}`) || 'null'); }
+  catch (e) { return 3; }
+  return Array.isArray(saved) && saved.length ? saved.length : 3;
+}
+
 function injectFirst10Answers(stored) {
   const topicKey = ((L.meta && L.meta.topic) || '').replace('Topic ', '').trim();
   if (!topicKey) return;
@@ -856,7 +941,10 @@ function injectFirst10Answers(stored) {
     const answer = String(item.a || '').trim();
     if (!answer) return;
     stored[id] = answer;
+    WORK_FIRST10_LABELS[id] = `Module 02, First & 10, Question ${i + 1}`;
     if (item.q) rememberPrompt(id, item.q);
+    // Older payloads predate the confidence field and simply have no `c`.
+    if (/^[1-5]$/.test(String(item.c || ''))) WORK_CONFIDENCE[id] = String(item.c);
   });
 }
 
@@ -955,13 +1043,15 @@ function bhOrdinal(label) {
 function expectedCaptureCount() {
   let n = 0;
   WORK_ITEMS.forEach(item => {
+    // Skip the First & 10 questions before anything else. They are counted once
+    // below, from the reading's own question total, and a data file that also
+    // happens to carry `first10.questions` would otherwise count them twice.
+    if (/^first10-q\d$/.test(item.id)) return;
     let prompt = '';
     try { prompt = String(item.prompt() || '').trim(); } catch (e) { prompt = ''; }
-    if (prompt) { n++; return; }
-    // The First & 10's questions live in the reading, not the data file, so an
-    // empty prompt here still means the slot exists whenever the topic has one.
-    if (/^first10-q\d$/.test(item.id) && L.first10) n++;
+    if (prompt) n++;
   });
+  if (L.first10) n += first10QuestionCount();
   return n;
 }
 
@@ -974,7 +1064,8 @@ function buildRecordManifest(work, topicId, isoStamp) {
     words: bhWordCount(w.text),
     chars: bhNormalizeForHash(w.text).length,
     promptHash: bhHash(plainPrompt(w.prompt)),
-    responseHash: bhHash(w.text)
+    responseHash: bhHash(w.text),
+    confidence: w.confidence || ''
   }));
 
   // Sum over the per-response hashes, so deleting a whole record line breaks it
@@ -994,7 +1085,8 @@ function buildRecordManifest(work, topicId, isoStamp) {
     + '|w=' + r.words
     + '|c=' + r.chars
     + '|ph=' + r.promptHash
-    + '|rh=' + r.responseHash + '|#');
+    + '|rh=' + r.responseHash
+    + '|cf=' + r.confidence + '|#');
 
   return [BH_RECORD_OPEN, header].concat(lines).concat([BH_RECORD_CLOSE]);
 }
@@ -1033,10 +1125,10 @@ function collectLessonWork() {
   const listed = new Set();
   WORK_ITEMS.forEach(item => {
     listed.add(item.id);
-    if (stored[item.id]) ordered.push({ id: item.id, label: item.label, prompt: promptForId(item.id), text: stored[item.id] });
+    if (stored[item.id]) ordered.push({ id: item.id, label: item.label, prompt: promptForId(item.id), text: stored[item.id], confidence: confidenceFor(item.id) });
   });
   Object.keys(stored).sort().forEach(id => {
-    if (!listed.has(id)) ordered.push({ id: id, label: prettyWorkLabel(id), prompt: promptForId(id), text: stored[id] });
+    if (!listed.has(id)) ordered.push({ id: id, label: WORK_FIRST10_LABELS[id] || prettyWorkLabel(id), prompt: promptForId(id), text: stored[id], confidence: confidenceFor(id) });
   });
   return ordered;
 }

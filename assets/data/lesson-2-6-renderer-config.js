@@ -14,7 +14,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: The World the Plague Remade',
-    embedUrl: 'first-and-10-topic-2-6-environmental-consequences.html',
+    embedUrl: 'first-and-10-topic-2-6-environmental-consequences-capture.html',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 2.6 lesson path.'
   };
 

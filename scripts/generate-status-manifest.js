@@ -5,7 +5,7 @@
  * Scans the repo for the actual on-disk state of every unit topic and
  * Foundations topic, and writes assets/data/project-status-manifest.js , 
  * a plain window.PROJECT_STATUS_MANIFEST global consumed by
- * teacher/command-center.html.
+ * docs/command-center.html.
  *
  * Deliverables checked per topic: lesson shell, data file, renderer
  * config, First & 10 reading, First & 10 capture wrapper, BeInTheRoom

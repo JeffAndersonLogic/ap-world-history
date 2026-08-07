@@ -26,7 +26,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: The World the Mongols Made',
-    embedUrl: 'first-and-10-topic-2-2-mongol-empire.html',
+    embedUrl: 'first-and-10-topic-2-2-mongol-empire-capture.html',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 2.2 lesson path.'
   };
 

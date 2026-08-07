@@ -1,3 +1,25 @@
+// Topic 1.1 teacher reference content.
+//
+// This file outlived its consumer. It was the data file for the Teacher Hub
+// dashboard, which was retired on 2026-08-07 when the Google Form that fed it
+// was retired; see docs/TEACHER-HUB.md. Nothing loads this file today.
+//
+// It was kept because most of what is in it is curriculum rather than plumbing:
+// pacing, learning objectives and key concepts, illustrative examples,
+// misconceptions with corrections, sample strong SAQ responses, AI analysis
+// prompts, and the Canvas workflow language. None of that depended on the form
+// or the response sheet, and none of it can be regenerated from disk.
+//
+// The Hub's mock class data was removed in the same pass: stats.studentResponses,
+// the classPulse.summary block of invented totals, and four fabricated students.
+// Those were prototype fixtures, not observations, and leaving invented
+// completion rates in a teacher-facing file is the same failure the dashboard
+// was retired for. What survived of classPulse is anticipatory planning, so it
+// is named reteachPlan now.
+//
+// The two meta URLs are relative to a page one folder deep, which is where any
+// teacher surface that picks this up should live.
+
 window.BEHISTORICAL_TEACHER_TOPICS = window.BEHISTORICAL_TEACHER_TOPICS || {};
 
 window.BEHISTORICAL_TEACHER_TOPICS['1.1'] = {
@@ -6,7 +28,7 @@ window.BEHISTORICAL_TEACHER_TOPICS['1.1'] = {
     topic: '1.1',
     title: 'Developments in East Asia',
     subtitle: 'Song China, c. 1200–1450',
-    status: 'Prototype',
+    status: 'Reference content, no live surface',
     studentLessonUrl: '../unit-1/lesson-1-1-song-china.html',
     beInTheRoomUrl: '../beintheroom/unit-1/song-court.html'
   },
@@ -14,8 +36,7 @@ window.BEHISTORICAL_TEACHER_TOPICS['1.1'] = {
     learningObjectives: 3,
     keyConcepts: 5,
     classPeriods: '2–3',
-    themes: 'GOV · CDI · ECN',
-    studentResponses: 28
+    themes: 'GOV · CDI · ECN'
   },
   pacing: [
     { module: 'Geography / Map Check', time: '5–8 min', note: 'Locate Song China, the Grand Canal, Korea, and Japan before content delivery.' },
@@ -45,28 +66,17 @@ window.BEHISTORICAL_TEACHER_TOPICS['1.1'] = {
     { part: 'SAQ Part B', prompt: 'Explain ONE way Chinese cultural traditions affected a society outside of China in the period c. 1200–1450.', answer: 'Neo-Confucianism spread from China to Korea, where the Joseon Dynasty adopted Confucian values such as filial piety, hierarchy, and merit-based education. These ideas shaped Korean governance and social structure.' },
     { part: 'SAQ Part C', prompt: 'Explain ONE way technological or agricultural innovation affected the economy of Song China.', answer: 'The adoption of Champa rice increased agricultural productivity, supported population growth and urbanization, and helped commercialize the Song economy by creating larger markets and more surplus production.' }
   ],
-  classPulse: {
-    summary: {
-      totalResponses: 28,
-      completionRate: '82%',
-      strongResponses: 9,
-      developingResponses: 13,
-      needsSupport: 6
-    },
-    commonEvidence: ['Civil service exam', 'Champa rice', 'Paper money', 'Grand Canal'],
-    topMisconceptions: ['Civil service exam as pure meritocracy', 'Champa rice as Chinese invention', 'Economic strength confused with military strength'],
-    reteach: [
+  // Written before the lesson runs, not measured after it. These are the
+  // patterns to watch for and the moves to make when they show up.
+  reteachPlan: {
+    evidenceToExpect: ['Civil service exam', 'Champa rice', 'Paper money', 'Grand Canal'],
+    misconceptionsToWatchFor: ['Civil service exam as pure meritocracy', 'Champa rice as Chinese invention', 'Economic strength confused with military strength'],
+    moves: [
       { priority: 'High', focus: 'Civil service exam: meritocracy with limits', action: 'Use a two-column compare: hereditary aristocracy vs. exam bureaucracy.' },
       { priority: 'Medium', focus: 'Commercialization vs. invention list', action: 'Have students connect each innovation to economic effect.' },
       { priority: 'Medium', focus: 'SAQ reasoning', action: 'Model claim + evidence + because sentence.' }
     ]
   },
-  students: [
-    { name: 'Student A', task: 'AP Checkpoint', status: 'High', issue: 'Has evidence but does not explain how it maintained imperial power.', next: 'Ask: Why would exam-selected officials be more loyal to the emperor?' },
-    { name: 'Student B', task: 'Evidence Lab', status: 'Medium', issue: 'Lists inventions without connecting them to commercialization.', next: 'Prompt student to explain effect on trade, cities, or markets.' },
-    { name: 'Student C', task: 'BeInTheRoom', status: 'Low', issue: 'Strong historical context and clear tradeoff.', next: 'Use as anonymized model if appropriate.' },
-    { name: 'Student D', task: 'AP Checkpoint', status: 'High', issue: 'Confuses Neo-Confucianism with Buddhism.', next: 'Small-group reteach on belief systems and cultural influence.' }
-  ],
   prompts: [
     { id: 'prompt-class-analysis', title: 'Class Pattern Analysis', purpose: 'Identify trends, errors, and reteach targets.', text: 'You are an AP World History instructional coach helping a teacher analyze student responses for Topic 1.1: Song China. Analyze the class set for: 1) common accurate evidence, 2) common misconceptions, 3) missing AP skill components, 4) suggested reteach focus, and 5) 2-3 anonymized model responses. Keep the response concise and teacher-facing. STUDENT RESPONSES: [PASTE RESPONSES HERE]' },
     { id: 'prompt-saq-diagnostic', title: 'SAQ Diagnostic', purpose: 'Sort responses by claim, evidence, and reasoning.', text: 'You are an AP World History instructional coach. For each student SAQ response, identify whether it includes a historically defensible claim, specific evidence, and reasoning that connects evidence to the claim. Then summarize classwide patterns and recommend one reteach activity. Do not identify students by name. STUDENT RESPONSES: [PASTE RESPONSES HERE]' },

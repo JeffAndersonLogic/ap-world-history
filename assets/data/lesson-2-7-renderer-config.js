@@ -38,7 +38,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: Comparing the Networks',
-    embedUrl: 'first-and-10-topic-2-7-comparison.html',
+    embedUrl: 'first-and-10-topic-2-7-comparison-capture.html',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 2.7 lesson path.'
   };
 

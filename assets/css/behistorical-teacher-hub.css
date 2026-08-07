@@ -1,4 +1,9 @@
-/* BeHistorical Teacher Hub Prototype Styles */
+/* BeHistorical teacher-surface styles.
+   Named for the Teacher Hub, which was retired on 2026-08-07 (docs/TEACHER-HUB.md).
+   Nothing here was specific to that dashboard, so the file was kept rather than
+   deleted: it carries the purple not-for-students banner, the teacher top nav,
+   panels, tables, accordions, and metric tiles that any teacher-facing page in
+   /teacher/ should reuse instead of re-deriving. */
 :root{
   --blackened-steel:#1A1C1D;--charcoal-steel:#2B2F31;--gunmetal-gray:#3E4447;--aged-iron:#5A5F5C;
   --muted-sandstone:#D2B48C;--burnished-bronze:#8C5A2B;--antique-gold:#C9A46A;--warm-paper:#F5F0E7;--clean-paper:#FFFDF7;--ink:#151718;

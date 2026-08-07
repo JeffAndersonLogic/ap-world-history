@@ -159,12 +159,41 @@ function renderSkill(){return `<article class="foundation-card"><h3>${T.skill.ti
 function renderCheckpoint1(){return `<article class="dark-callout"><h3>${T.checkpoint.title}</h3><p>${T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Exit Ticket</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Strong Response Checklist</h3><ul>${T.checkpoint.checklist.map(x=>`<li>${x}</li>`).join('')}</ul></article>${draft(`${T.id}-checkpoint`,T.checkpoint.prompt)}`}
 function renderCheckpoint2(){return `<article class="dark-callout"><h3>Synthesis Checkpoint</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Build Your Synthesis</h3><p>Use evidence from at least two modules to answer the synthesis prompt above. Connect the themes you studied today to the bigger picture of AP World History.</p></article>${draft(`${T.id}-checkpoint2`,T.exitTicket||T.checkpoint.prompt)}`}
 function renderBeInTheRoomPlaceholder(){return `<article class="foundation-card"><h3>BeInTheRoom</h3><p>This immersive experience for ${T.title} is coming soon.</p></article>`;}
+// ── Confidence ────────────────────────────────────────────────────────────────
+//
+// Mirrors the unit renderer. A separate key prefix, not a suffix on the draft
+// key, because collectLessonWork() sweeps everything under
+// `foundations-topic-<id>-` and would export a confidence value as if it were
+// the student's writing. Optional by design: a blank is a real answer.
+const BH_CONFIDENCE_LABELS={1:'Lost',2:'Shaky',3:'Getting there',4:'Solid',5:'Could teach it'};
+const WORK_CONFIDENCE={};
+function confidenceKey(id){return `foundations-conf-${id}`;}
+// Real radios in a fieldset: a radiogroup announces "1 of 5" and arrow keys work
+// without a keyboard handler of our own.
+function confidenceBlock(id){
+  const saved=BHDraftStore.get(confidenceKey(id))||'';
+  const options=[1,2,3,4,5].map(n=>`<label class="confidence-option"><input type="radio" name="conf-${id}" value="${n}"${String(saved)===String(n)?' checked':''} onchange="setConfidence('${id}',${n})"><span aria-hidden="true">${n}</span><span class="confidence-option-text">${BH_CONFIDENCE_LABELS[n]}</span></label>`).join('');
+  return `<fieldset class="confidence-row" id="${id}-confidence"><legend>How confident are you in this answer?</legend><div class="confidence-scale">${options}</div><button class="confidence-clear" type="button" onclick="clearConfidence('${id}')">Clear</button></fieldset>`;
+}
+function setConfidence(id,value){BHDraftStore.set(confidenceKey(id),String(value));}
+function clearConfidence(id){
+  BHDraftStore.set(confidenceKey(id),'');
+  const group=byId(id+'-confidence');
+  if(group)group.querySelectorAll('input[type="radio"]').forEach(r=>{r.checked=false;});
+}
+// The slot key, not the full textarea id: collectLessonWork strips the topic
+// prefix before it builds the manifest, so the two must agree.
+function confidenceForSlot(slot){
+  if(WORK_CONFIDENCE[slot])return WORK_CONFIDENCE[slot];
+  const raw=String(BHDraftStore.get(confidenceKey(`${T.id}-${slot}`))||'').trim();
+  return /^[1-5]$/.test(raw)?raw:'';
+}
 // draft(id, prompt)
 // The response box and nothing else. Typing autosaves, and Gather All My Work
 // carries every box to Canvas in one action, so a per-box Save Draft button
 // implied work was only kept when clicked and a per-box Copy Response button
 // was a slower path to a worse result.
-function draft(id,prompt){rememberPrompt(id,prompt);return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" placeholder="Type your response here..."></textarea><div id="${id}-result" class="check-result"></div></div>`}
+function draft(id,prompt){rememberPrompt(id,prompt);return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" placeholder="Type your response here..."></textarea>${confidenceBlock(id)}<div id="${id}-result" class="check-result"></div></div>`}
 // Draft storage that cannot throw.
 //
 // Touching localStorage raises a SecurityError, not a null, when the browser
@@ -256,6 +285,7 @@ function injectFirst10Answers(stored){
     if(!answer)return;
     stored[slot]=answer;
     if(item.q)WORK_PROMPTS[slot]=String(item.q);
+    if(/^[1-5]$/.test(String(item.c||'')))WORK_CONFIDENCE[slot]=String(item.c);
   });
 }
 function promptForSlot(slot){
@@ -328,7 +358,8 @@ function buildRecordManifest(work,topicId,isoStamp){
     words:bhWordCount(w.text),
     chars:bhNormalizeForHash(w.text).length,
     promptHash:bhHash(plainPrompt(w.prompt)),
-    responseHash:bhHash(w.text)
+    responseHash:bhHash(w.text),
+    confidence:w.confidence||''
   }));
   // Summing slot:hash pairs means deleting a whole record line breaks the sum
   // too, not just editing the writing inside one.
@@ -336,7 +367,7 @@ function buildRecordManifest(work,topicId,isoStamp){
   const header='#BHV|v='+BH_RECORD_VERSION+'|topic='+bhField(topicId)+'|copied='+isoStamp
     +'|items='+rows.length+'|expected='+expectedCaptureCount()+'|sum='+sum+'|#';
   const lines=rows.map(r=>'#BHR|i='+r.ord+'|slot='+r.slot+'|lab='+r.label
-    +'|w='+r.words+'|c='+r.chars+'|ph='+r.promptHash+'|rh='+r.responseHash+'|#');
+    +'|w='+r.words+'|c='+r.chars+'|ph='+r.promptHash+'|rh='+r.responseHash+'|cf='+r.confidence+'|#');
   return [BH_RECORD_OPEN,header].concat(lines).concat([BH_RECORD_CLOSE]);
 }
 
@@ -365,10 +396,10 @@ function collectLessonWork(){
   const ordered=[],listed=new Set();
   FOUNDATION_WORK_ITEMS.forEach(item=>{
     listed.add(item.slot);
-    if(stored[item.slot])ordered.push({slot:item.slot,label:item.label,prompt:promptForSlot(item.slot),text:stored[item.slot]});
+    if(stored[item.slot])ordered.push({slot:item.slot,label:item.label,prompt:promptForSlot(item.slot),text:stored[item.slot],confidence:confidenceForSlot(item.slot)});
   });
   Object.keys(stored).sort().forEach(slot=>{
-    if(!listed.has(slot))ordered.push({slot:slot,label:prettyWorkLabel(slot),prompt:promptForSlot(slot),text:stored[slot]});
+    if(!listed.has(slot))ordered.push({slot:slot,label:prettyWorkLabel(slot),prompt:promptForSlot(slot),text:stored[slot],confidence:confidenceForSlot(slot)});
   });
   return ordered;
 }

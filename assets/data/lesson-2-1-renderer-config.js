@@ -26,7 +26,7 @@
   lesson.first10 = {
     ...lesson.first10,
     title: 'First & 10: Roads of Silk and Exchange',
-    embedUrl: 'first-and-10-topic-2-1-silk-roads.html',
+    embedUrl: 'first-and-10-topic-2-1-silk-roads-capture.html',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 2.1 lesson path.'
   };
 

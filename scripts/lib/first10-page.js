@@ -1,5 +1,7 @@
 'use strict';
 
+const { CAPTURE_BLOCK } = require('./first10-capture-block');
+
 function esc(value) {
   return String(value == null ? '' : value)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -68,7 +70,7 @@ function answers(){return[1,2,3].map(function(n){return(document.getElementById(
 
 function buildAiPrompt(){var out='Coach my AP World historical reasoning for '+TOPIC_LABEL+'. Do not write my final answer. Ask one question at a time, verify factual accuracy, and help me explain how evidence proves or qualifies my claim.\\n\\nMy responses:\\n'+answers().join('\\n\\n');document.getElementById('ai-output').value=out;return out;}
 function copyAiPrompt(){var out=buildAiPrompt();if(navigator.clipboard)navigator.clipboard.writeText(out).catch(function(){});}
-/* BeHistorical First & 10 answer capture. The three textareas sit inside an iframe, so the lesson page cannot read them directly. Answers and their questions go to one key that both renderers read when they assemble Gather All My Work. See docs/CANVAS-CAPTURE.md. Never throws: a browser that refuses storage degrades to no autosave rather than breaking the reading. */(function(){var KEY='behistorical-first10-'+TOPIC_KEY;var boxes=function(){return Array.prototype.slice.call(document.querySelectorAll('.q-textarea, .qta'));};var questions=function(){return Array.prototype.slice.call(document.querySelectorAll('.q-text, .qt')).map(function(el){return (el.textContent||'').replace(/\\s+/g,' ').trim();});};var save=function(){var qs=questions();var payload=boxes().map(function(t,i){return {q:qs[i]||'',a:t.value||''};});try{localStorage.setItem(KEY,JSON.stringify(payload));}catch(e){}};var restore=function(){var raw=null;try{raw=localStorage.getItem(KEY);}catch(e){return;}if(!raw)return;var saved;try{saved=JSON.parse(raw);}catch(e){return;}if(!saved||!saved.length)return;boxes().forEach(function(t,i){if(saved[i]&&saved[i].a&&!t.value)t.value=saved[i].a;});};boxes().forEach(function(t,i){if(!t.id)t.id='first10-q'+(i+1);});restore();var timer;document.addEventListener('input',function(event){var t=event.target;if(!t||!t.classList)return;if(!t.classList.contains('q-textarea')&&!t.classList.contains('qta'))return;clearTimeout(timer);timer=setTimeout(save,500);});window.addEventListener('beforeunload',save);})();
+${CAPTURE_BLOCK}
 </script></body></html>\n`;
 }
 

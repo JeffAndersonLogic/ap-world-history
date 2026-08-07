@@ -3,8 +3,7 @@
  * parse-canvas-submissions.js
  *
  * Turns a Canvas "Download Submissions" folder into the long-format table the
- * Teacher Hub and any skills analysis actually want: one row per student per
- * module response.
+ * Skills Lens wants: one row per student per module response.
  *
  * The input is whatever Canvas hands you. On a Text Entry assignment, Download
  * Submissions produces one HTML file per student, named
@@ -37,6 +36,13 @@
  *   NO_MANIFEST   an older submission, gathered before the footer shipped.
  *                 Parsed on a best-effort basis and flagged, never counted as
  *                 clean.
+ *
+ * CONFIDENCE
+ *
+ * A 1-to-5 self-rating the student may leave blank. A blank is a real answer and
+ * is reported as such, never imputed. The old Teacher Hub averaged a column that
+ * had no source anywhere in the pipeline, so it rendered empty forever; the
+ * record manifest's `cf` field is that column's first actual source.
  *
  * Usage:
  *   node scripts/parse-canvas-submissions.js <submissions-dir> [options]
@@ -277,6 +283,9 @@ function parseSubmission(text, source) {
       wordCount: wordCount(response),
       charCount: normalizeForHash(response).length,
       declaredWords: Number(rec.w || 0),
+      // '' when the student skipped it. Anything outside 1 to 5 is dropped
+      // rather than trusted, so a hand-edited paste cannot poison an average.
+      confidence: /^[1-5]$/.test(String(rec.cf || '')) ? String(rec.cf) : '',
       flags: flags
     });
   });
@@ -337,6 +346,7 @@ function parseWithoutManifest(text, source) {
       wordCount: wordCount(response),
       charCount: normalizeForHash(response).length,
       declaredWords: 0,
+      confidence: '',
       flags: ['NO_MANIFEST']
     });
   });
@@ -502,6 +512,7 @@ function main() {
         response: r.response,
         word_count: r.wordCount,
         char_count: r.charCount,
+        confidence: r.confidence,
         copied_at: parsed.copiedAt,
         flags: r.flags.join(';'),
         source_file: file
@@ -538,7 +549,7 @@ function main() {
   writeCsv(responsesFile, [
     'student_display', 'canvas_user_id', 'canvas_submission_id', 'class_period', 'late',
     'topic_id', 'module_ord', 'slot_id', 'module_label', 'prompt', 'prompt_hash',
-    'response', 'word_count', 'char_count', 'copied_at', 'flags', 'source_file'
+    'response', 'word_count', 'char_count', 'confidence', 'copied_at', 'flags', 'source_file'
   ], rows);
 
   writeCsv(exceptionsFile, [
@@ -560,6 +571,13 @@ function main() {
   console.log(`  Submissions read     ${files.length}`);
   console.log(`  Students             ${seenStudents.size}`);
   console.log(`  Responses parsed     ${rows.length}`);
+  const rated = rows.filter(r => r.confidence);
+  if (rated.length) {
+    const mean = rated.reduce((a, r) => a + Number(r.confidence), 0) / rated.length;
+    console.log(`  Confidence rated     ${rated.length} of ${rows.length}, mean ${mean.toFixed(2)} of 5`);
+  } else {
+    console.log(`  Confidence rated     0 of ${rows.length}`);
+  }
   console.log(`  Clean submissions    ${cleanCount} of ${files.length}`);
   if (exceptionRows.length) {
     console.log(`  Exceptions           ${exceptionRows.length}`);

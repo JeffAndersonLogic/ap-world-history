@@ -10,7 +10,7 @@ BeHistorical is a static AP World History: Modern lesson platform built around a
 - Foundations includes five complete pre-course topic stacks.
 - The repository validator currently reports zero deployment-blocking errors.
 
-Open `index.html` through a local static server to explore the student site. Open `teacher/command-center.html` for the generated project inventory.
+Open `index.html` through a local static server to explore the student site. Open `docs/command-center.html` for the generated project inventory.
 
 ## Architecture
 
@@ -36,7 +36,7 @@ node scripts/normalize-student-facing-language.js
 ```
 
 - `validate.js` checks lesson contracts, form keys, First & 10 wiring, and shell structure.
-- `generate-status-manifest.js` refreshes the data used by the teacher command center.
+- `generate-status-manifest.js` refreshes the data used by `docs/command-center.html`.
 - `build-unit6.js` deterministically rebuilds Topics 6.1–6.8 and the Unit 6 simulations.
 - `build-unit9.js` deterministically rebuilds Topics 9.4–9.9 and the five associated Unit 9 simulations.
 - `normalize-student-facing-language.js` keeps Canvas guidance and the classroom MagicSchool link consistent.
@@ -44,6 +44,8 @@ node scripts/normalize-student-facing-language.js
 ## Student response flow
 
 BeHistorical is the thinking and drafting space; students submit assessed work through Canvas. The Gather All My Work panel assembles every response into one labelled document with a machine-readable record footer, and `scripts/parse-canvas-submissions.js` turns the downloaded submissions into an analysis table plus an exceptions report. See `docs/CANVAS-CAPTURE.md`. The AI Coach is for questioning, verification, and revision, not answer generation.
+
+The Google Form and the Teacher Hub dashboard that read its response sheet were both retired on 2026-08-07. `docs/FORM-CONTRACT.md` and `docs/TEACHER-HUB.md` record why, and what the replacements have to guarantee that those did not.
 
 ## Source alignment
 

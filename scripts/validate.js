@@ -509,6 +509,26 @@ section('Google Form retirement and MagicSchool wiring');
     }
   }
 
+  // embedUrl must name the capture wrapper, not the reading. Seven Unit 2 topics
+  // pointed straight at the reading because their renderer-config overrode the
+  // data file's correct value, and the config loads second. The wrapper is what
+  // intercepts MagicSchool, so those seven buttons opened a blank tab.
+  [...dataFiles, ...rcFiles].forEach(filePath => {
+    const src = read(filePath);
+    if (!src) return;
+    // Scope to First & 10 embeds by filename. Topic 1.3's map module is also an
+    // embedUrl, and it legitimately points at a map page, not a capture wrapper.
+    const embeds = [...src.matchAll(/embedUrl:\s*'([^']+)'/g)]
+      .map(m => m[1])
+      .filter(u => /(^|\/)first-and-10-/.test(u));
+    embeds.forEach(url => {
+      totalChecks++;
+      if (!/-capture\.html$/.test(url.split('?')[0])) {
+        err(filePath, `first10.embedUrl points at the reading, not its capture wrapper: ${url}`);
+      }
+    });
+  });
+
   const readings = [...unitFirst10, ...fFirst10].filter(f => !path.basename(f).includes('-capture'));
   for (const filePath of readings) {
     totalChecks++;
