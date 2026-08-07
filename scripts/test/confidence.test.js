@@ -211,6 +211,28 @@ function check(name, pass, detail) {
 
   await page.evaluate(() => closeModule());
   const doc3 = await page.evaluate(() => { const d = gatherAllWork(); return d ? d.plain : ''; });
+  // The first version of this control was invisible on the reading's dark
+  // question card: a white chip with text left to inherit, which inherited the
+  // page's near-white body colour. Every chip rendered as an empty box. Assert
+  // the colours outright rather than trusting that a control which exists is a
+  // control anyone can see.
+  const paint = await frame.evaluate(() => {
+    const row = document.getElementById('bh-conf-row-0');
+    const chip = row.querySelector('label');
+    const g = el => getComputedStyle(el);
+    return {
+      chipBg: g(chip).backgroundColor,
+      numFg: g(chip.querySelector('[data-n]')).color,
+      textFg: g(chip.querySelector('[data-t]')).color,
+      legendClear: row.querySelector('legend').getBoundingClientRect().top
+        >= document.querySelector('.q-textarea, .qta').getBoundingClientRect().bottom
+    };
+  });
+  check('chip text is not the same colour as the chip',
+    paint.numFg !== paint.chipBg && paint.textFg !== paint.chipBg,
+    `${paint.numFg} and ${paint.textFg} on ${paint.chipBg}`);
+  check('legend sits clear of the textarea above it', paint.legendClear);
+
   check('First & 10 rating reaches the lesson manifest',
     /#BHR\|i=02\|slot=first10-q1\|[^#]*\|cf=5\|#/.test(doc3),
     (doc3.match(/#BHR\|i=02\|slot=first10-q1[^#]*\|#/) || ['not found'])[0].slice(-30));

@@ -264,7 +264,7 @@ var TOPIC_KEY='5.5';var TOPIC_LABEL='5.5 - Technology of Industrialization';
       // Payloads written before the confidence field simply have no c.
       if (saved[i] && /^[1-5]$/.test(String(saved[i].c || ''))) {
         var input = document.querySelector('input[name="bh-conf-' + i + '"][value="' + saved[i].c + '"]');
-        if (input) input.checked = true;
+        if (input) { input.checked = true; paint(input.parentNode, true); }
       }
     });
   };
@@ -273,47 +273,84 @@ var TOPIC_KEY='5.5';var TOPIC_LABEL='5.5 - Technology of Industrialization';
   // drifted, and one runtime implementation cannot drift. Real radios in a
   // fieldset, so a screen reader announces "1 of 5" and arrow keys work without
   // a keyboard handler of our own.
+  //
+  // Colours are stated outright, never inherited. The first version set a white
+  // chip and let the text inherit, which on the reading's dark question card
+  // meant near-white text on white: five blank boxes. The fieldset also carries
+  // no border, because a legend sitting on a border clips against the textarea
+  // above it.
+  var INK = '#1A1C1D', CARD = '#23272a', LINE = '#3E4447';
+  var GOLD = '#C9A46A', PAPER = '#F5F0E7', SAND = '#D2B48C';
+
+  var paint = function (label, on) {
+    label.style.background = on ? GOLD : CARD;
+    label.style.borderColor = on ? GOLD : LINE;
+    label.querySelector('[data-n]').style.color = on ? INK : GOLD;
+    label.querySelector('[data-t]').style.color = on ? INK : SAND;
+  };
+
   var addConfidence = function () {
     boxes().forEach(function (t, i) {
       if (document.getElementById('bh-conf-row-' + i)) return;
+
       var wrap = document.createElement('fieldset');
       wrap.id = 'bh-conf-row-' + i;
-      wrap.setAttribute('style', 'margin:12px 0 0;padding:10px 12px;border:1px solid rgba(23,36,59,.18);border-radius:10px;background:#f4efe3');
+      wrap.setAttribute('style', 'margin:0;padding:.75rem 1.1rem .9rem;border:0;'
+        + 'border-top:1px solid ' + LINE + ';background:transparent;min-width:0');
+
       var legend = document.createElement('legend');
-      legend.setAttribute('style', 'padding:0 6px;font:700 .7rem Montserrat,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8b5f16');
+      // float plus full width makes a legend lay out as an ordinary block, which
+      // keeps it clear of the field above instead of straddling a border.
+      legend.setAttribute('style', 'float:left;width:100%;padding:0;margin:0 0 .5rem;'
+        + 'font:700 .62rem Montserrat,Arial,sans-serif;letter-spacing:.1em;'
+        + 'text-transform:uppercase;color:' + SAND);
       legend.textContent = 'How confident are you in this answer?';
       wrap.appendChild(legend);
+
       var scale = document.createElement('div');
-      scale.setAttribute('style', 'display:flex;flex-wrap:wrap;gap:6px;margin-top:4px');
+      scale.setAttribute('style', 'clear:both;display:flex;flex-wrap:wrap;gap:.4rem');
+
       [1, 2, 3, 4, 5].forEach(function (n) {
         var label = document.createElement('label');
-        label.setAttribute('style', 'position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:70px;padding:6px 8px;border:1px solid rgba(23,36,59,.2);border-radius:8px;background:#fff;cursor:pointer;text-align:center');
+        label.setAttribute('style', 'position:relative;display:flex;align-items:baseline;'
+          + 'gap:.4rem;padding:.34rem .6rem;border:1px solid ' + LINE + ';border-radius:3px;'
+          + 'background:' + CARD + ';cursor:pointer;transition:background .12s ease');
+
         var input = document.createElement('input');
         input.type = 'radio';
         input.name = 'bh-conf-' + i;
         input.value = String(n);
-        input.setAttribute('style', 'position:absolute;opacity:0;top:0;left:0;width:100%;height:100%;margin:0;cursor:pointer');
+        input.setAttribute('style', 'position:absolute;opacity:0;top:0;left:0;'
+          + 'width:100%;height:100%;margin:0;cursor:pointer');
+
+        var num = document.createElement('span');
+        num.setAttribute('data-n', '');
+        num.setAttribute('aria-hidden', 'true');
+        num.setAttribute('style', 'font:700 .82rem Georgia,serif;line-height:1;color:' + GOLD);
+        num.textContent = String(n);
+
+        var text = document.createElement('span');
+        text.setAttribute('data-t', '');
+        text.setAttribute('style', 'font:.64rem Montserrat,Arial,sans-serif;'
+          + 'letter-spacing:.02em;line-height:1;color:' + SAND);
+        text.textContent = LABELS[n];
+
         input.addEventListener('change', function () {
-          Array.prototype.slice.call(scale.children).forEach(function (el) {
-            el.style.background = '#fff';
-            el.style.color = '';
-          });
-          label.style.background = '#8b5f16';
-          label.style.color = '#fff';
+          Array.prototype.slice.call(scale.children).forEach(function (el) { paint(el, false); });
+          paint(label, true);
           save();
         });
-        var num = document.createElement('span');
-        num.setAttribute('aria-hidden', 'true');
-        num.setAttribute('style', 'font:700 1.05rem Georgia,serif;line-height:1;color:inherit');
-        num.textContent = String(n);
-        var text = document.createElement('span');
-        text.setAttribute('style', 'font:.66rem Montserrat,Arial,sans-serif;line-height:1.2;color:inherit');
-        text.textContent = LABELS[n];
+        // The input is transparent, so the keyboard ring has to come from the
+        // chip or arrowing through the scale is invisible.
+        input.addEventListener('focus', function () { label.style.outline = '2px solid ' + PAPER; label.style.outlineOffset = '1px'; });
+        input.addEventListener('blur', function () { label.style.outline = 'none'; });
+
         label.appendChild(input);
         label.appendChild(num);
         label.appendChild(text);
         scale.appendChild(label);
       });
+
       wrap.appendChild(scale);
       if (t.parentNode) t.parentNode.insertBefore(wrap, t.nextSibling);
     });
@@ -334,6 +371,7 @@ var TOPIC_KEY='5.5';var TOPIC_LABEL='5.5 - Technology of Industrialization';
   // A student who closes the tab mid-sentence still keeps the sentence.
   window.addEventListener('beforeunload', save);
 })();
+/* end BeHistorical First & 10 answer capture */
 </script>
 </body>
 </html>
