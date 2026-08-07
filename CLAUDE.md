@@ -18,6 +18,9 @@
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
 - `node scripts/remove-google-form-capture.js`, idempotently strip any Google Form capture that reappears in a reading, wrapper, or lesson shell, and normalize all 77 capture wrappers to the MagicSchool-only shape.
 - `node scripts/test/modal-focus.unit.js` and `node scripts/test/modal-focus.foundations.js`, drive a real lesson page in Chromium and assert the modal focus contract. Needs `npm i playwright-core`; `validate.js` stays offline and dependency-free, so these are separate. Run them when touching any modal open/close path.
+- `node scripts/build-skills-map.js`, regenerate `assets/data/skills-map.js`, the AP skill and evidence-term lookup the Skills Lens inlines. Run it after editing a checkpoint's `terms`, a `skillBuilder.label`, or a reading's `q-skill` badges.
+- `node scripts/sync-first10-capture.js`, install the canonical First & 10 answer-capture block from `scripts/lib/first10-capture-block.js` into all 77 readings. That block is the only path by which the three reading answers and their confidence ratings reach Canvas, and it has gone missing silently twice.
+- `node scripts/test/skills-lens.test.js` and `node scripts/test/confidence.test.js`, browser tests for the Skills Lens panels and the confidence scale.
 - `node scripts/test/lightbox-sweep.js`, open the Map and Evidence Lab modules on all 77 lesson pages and confirm every enlargeable image is an operable button. Prints only failures. Two exceptions are legitimate and the test allows them: a module with no images at all, which covers the topics with no Evidence Lab pictures and Topic 1.3, whose Map module is the course's only embedded iframe map.
 - `node scripts/parse-canvas-submissions.js <dir>`, turn an unzipped Canvas "Download Submissions" folder into `responses.csv` (one row per student per module response) and `exceptions.csv`. Reads and writes local files only, never the network. See `docs/CANVAS-CAPTURE.md`.
 
@@ -74,6 +77,13 @@ Every picture a student can see must be on-topic and must be impossible to break
 > `role="button" tabindex="0"`, an `aria-label` naming the picture, and an
 > Enter/Space handler. An `onclick` on its own is mouse-only, which is how the
 > lightbox stayed unreachable by keyboard on every topic.
+
+> **`teacher/skills-lens.html` is the analysis surface**, and it is a teacher
+> tool: never link it from a lesson page. It reads `responses.csv` and
+> `exceptions.csv` entirely in the tab, makes no network call, and holds the
+> name-to-code crosswalk in memory only. Its denominators come from
+> `assets/data/skills-map.js`, never from what a student managed to submit,
+> because a bare n is the bug this pipeline exists to prevent.
 
 > **Before touching the Gather All My Work panel or its record footer, read
 > `docs/CANVAS-CAPTURE.md`.** Both renderers emit the footer and one parser reads

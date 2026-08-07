@@ -1,0 +1,26 @@
+student_display,canvas_user_id,class_period,topic_id,slot_id,reason,detail,source_file
+brooksmaya,102,,1.1,,INCOMPLETE,4 of 9 capture slots present,brooksmaya_102_9002_topic11.html
+carterdev,103,,1.1,map-check-response,EDITED,response hash b3bb8d8f does not match recorded 5c14402d,carterdev_103_9003_topic11.html
+dixonsam,104,,1.1,,COUNT_MISMATCH,"manifest declares 9 records, 8 arrived, paste is truncated",dixonsam_LATE_104_9004_topic11.html
+dixonsam,104,,1.1,checkpoint-one-response,EDITED,response hash 5e385fc8 does not match recorded ccefe99a,dixonsam_LATE_104_9004_topic11.html
+dixonsam,104,,1.1,,MANIFEST_ALTERED,checksum 2876383c does not match recorded 6979ab38,dixonsam_LATE_104_9004_topic11.html
+dixonsam,104,,1.1,,INCOMPLETE,8 of 9 capture slots present,dixonsam_LATE_104_9004_topic11.html
+ellisrae,105,,1.1,map-check-response,EDITED,response hash 811c9dc5 does not match recorded 5c14402d,ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,map-check-response,BLANK,"record present, response text empty",ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,first10-q1,EDITED,response hash 811c9dc5 does not match recorded 5a6791c4,ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,first10-q1,BLANK,"record present, response text empty",ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,first10-q2,EDITED,response hash 811c9dc5 does not match recorded 19d3ec61,ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,first10-q2,BLANK,"record present, response text empty",ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,first10-q3,EDITED,response hash 811c9dc5 does not match recorded 05841d8f,ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,first10-q3,BLANK,"record present, response text empty",ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,skill-builder-response,EDITED,response hash 811c9dc5 does not match recorded 362240c9,ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,skill-builder-response,BLANK,"record present, response text empty",ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,checkpoint-one-response,EDITED,response hash 811c9dc5 does not match recorded ccefe99a,ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,checkpoint-one-response,BLANK,"record present, response text empty",ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,evidence-response,EDITED,response hash 811c9dc5 does not match recorded 1102bbeb,ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,evidence-response,BLANK,"record present, response text empty",ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,primary-source-response,EDITED,response hash 811c9dc5 does not match recorded cd677a92,ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,primary-source-response,BLANK,"record present, response text empty",ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,checkpoint-two-response,EDITED,response hash 811c9dc5 does not match recorded 12c88b51,ellisrae_105_9005_topic11.html
+ellisrae,105,,1.1,checkpoint-two-response,BLANK,"record present, response text empty",ellisrae_105_9005_topic11.html
+floresjay,106,,1.1,,NO_MANIFEST,"no record footer, parsed on the legacy grammar, completeness unknown",floresjay_106_9006_topic11.html

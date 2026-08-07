@@ -1,0 +1,78 @@
+student_display,canvas_user_id,canvas_submission_id,class_period,late,topic_id,module_ord,slot_id,module_label,prompt,prompt_hash,response,word_count,char_count,confidence,copied_at,flags,source_file
+andersonjeff,101,9001,,,1.1,01,map-check-response,"Module 01, Map & Geography Check",Describe the Grand Canal and its role.,af70ad43,"The Grand Canal linked the Yellow and Yangzi river systems.
+
+It moved grain north, which let the capital feed an army it could not otherwise supply.",26,147,4,2026-08-07T03:03:22.568Z,,andersonjeff_101_9001_topic11.html
+andersonjeff,101,9001,,,1.1,02,first10-q1,"Module 02, First & 10, Question 1",Why did Song China grow?,4b650112,"Champa rice allowed two harvests a year, so population climbed sharply.",11,71,,2026-08-07T03:03:22.568Z,,andersonjeff_101_9001_topic11.html
+andersonjeff,101,9001,,,1.1,02,first10-q2,"Module 02, First & 10, Question 2",What role did the canal play?,f06acd5b,"The canal carried that surplus to cities, turning farm output into urban growth.",13,80,,2026-08-07T03:03:22.568Z,,andersonjeff_101_9001_topic11.html
+andersonjeff,101,9001,,,1.1,02,first10-q3,"Module 02, First & 10, Question 3",How did trade shift?,5446d28b,Trade shifted toward maritime routes as the Indian Ocean network deepened.,11,74,,2026-08-07T03:03:22.568Z,,andersonjeff_101_9001_topic11.html
+andersonjeff,101,9001,,,1.1,05,skill-builder-response,"Module 05, AP Skill Builder",Practice causation.,24c1f135,"Cause: Champa rice. Effect: urbanization. The link runs through surplus, not through technology alone.",14,102,2,2026-08-07T03:03:22.568Z,,andersonjeff_101_9001_topic11.html
+andersonjeff,101,9001,,,1.1,06,checkpoint-one-response,"Module 06, Checkpoint 1",Checkpoint one prompt.,ec4503ef,"The Song state used the exam system to staff a bureaucracy loyal to the emperor, not to regional lords.",19,103,5,2026-08-07T03:03:22.568Z,,andersonjeff_101_9001_topic11.html
+andersonjeff,101,9001,,,1.1,07,evidence-response,"Module 07, Evidence Lab",Analyze the evidence.,28dc0ae9,"The scroll shows commercial density, shops open to the street, which points to a market economy.",16,96,3,2026-08-07T03:03:22.568Z,,andersonjeff_101_9001_topic11.html
+andersonjeff,101,9001,,,1.1,08,primary-source-response,"Module 08, Primary Source",Who wrote this? Why?,909f288a,"A Song official wrote this, and the audience was the court, so the tone is advisory.",16,84,,2026-08-07T03:03:22.568Z,,andersonjeff_101_9001_topic11.html
+andersonjeff,101,9001,,,1.1,10,checkpoint-two-response,"Module 10, Checkpoint 2",Checkpoint two prompt.,7cc1f91d,Continuity: Confucian hierarchy. Change: a commercialized economy that hierarchy did not anticipate.,12,100,,2026-08-07T03:03:22.568Z,,andersonjeff_101_9001_topic11.html
+brooksmaya,102,9002,,,1.1,01,map-check-response,"Module 01, Map & Geography Check",Describe the Grand Canal and its role.,af70ad43,"The Grand Canal linked the Yellow and Yangzi river systems.
+
+It moved grain north, which let the capital feed an army it could not otherwise supply.",26,147,,2026-08-07T03:03:22.592Z,,brooksmaya_102_9002_topic11.html
+brooksmaya,102,9002,,,1.1,02,first10-q1,"Module 02, First & 10, Question 1",Why did Song China grow?,4b650112,"Champa rice allowed two harvests a year, so population climbed sharply.",11,71,,2026-08-07T03:03:22.592Z,,brooksmaya_102_9002_topic11.html
+brooksmaya,102,9002,,,1.1,05,skill-builder-response,"Module 05, AP Skill Builder",Practice causation.,24c1f135,"Cause: Champa rice. Effect: urbanization. The link runs through surplus, not through technology alone.",14,102,,2026-08-07T03:03:22.592Z,,brooksmaya_102_9002_topic11.html
+brooksmaya,102,9002,,,1.1,10,checkpoint-two-response,"Module 10, Checkpoint 2",Checkpoint two prompt.,7cc1f91d,Continuity: Confucian hierarchy. Change: a commercialized economy that hierarchy did not anticipate.,12,100,,2026-08-07T03:03:22.592Z,,brooksmaya_102_9002_topic11.html
+carterdev,103,9003,,,1.1,01,map-check-response,"Module 01, Map & Geography Check",Describe the Grand Canal and its role.,af70ad43,"The Grand Canal was built by aliens and linked nothing at all.
+
+It moved grain north, which let the capital feed an army it could not otherwise supply.",28,150,,2026-08-07T03:03:22.592Z,EDITED,carterdev_103_9003_topic11.html
+carterdev,103,9003,,,1.1,02,first10-q1,"Module 02, First & 10, Question 1",Why did Song China grow?,4b650112,"Champa rice allowed two harvests a year, so population climbed sharply.",11,71,,2026-08-07T03:03:22.592Z,,carterdev_103_9003_topic11.html
+carterdev,103,9003,,,1.1,02,first10-q2,"Module 02, First & 10, Question 2",What role did the canal play?,f06acd5b,"The canal carried that surplus to cities, turning farm output into urban growth.",13,80,,2026-08-07T03:03:22.592Z,,carterdev_103_9003_topic11.html
+carterdev,103,9003,,,1.1,02,first10-q3,"Module 02, First & 10, Question 3",How did trade shift?,5446d28b,Trade shifted toward maritime routes as the Indian Ocean network deepened.,11,74,,2026-08-07T03:03:22.592Z,,carterdev_103_9003_topic11.html
+carterdev,103,9003,,,1.1,05,skill-builder-response,"Module 05, AP Skill Builder",Practice causation.,24c1f135,"Cause: Champa rice. Effect: urbanization. The link runs through surplus, not through technology alone.",14,102,,2026-08-07T03:03:22.592Z,,carterdev_103_9003_topic11.html
+carterdev,103,9003,,,1.1,06,checkpoint-one-response,"Module 06, Checkpoint 1",Checkpoint one prompt.,ec4503ef,"The Song state used the exam system to staff a bureaucracy loyal to the emperor, not to regional lords.",19,103,,2026-08-07T03:03:22.592Z,,carterdev_103_9003_topic11.html
+carterdev,103,9003,,,1.1,07,evidence-response,"Module 07, Evidence Lab",Analyze the evidence.,28dc0ae9,"The scroll shows commercial density, shops open to the street, which points to a market economy.",16,96,,2026-08-07T03:03:22.592Z,,carterdev_103_9003_topic11.html
+carterdev,103,9003,,,1.1,08,primary-source-response,"Module 08, Primary Source",Who wrote this? Why?,909f288a,"A Song official wrote this, and the audience was the court, so the tone is advisory.",16,84,,2026-08-07T03:03:22.592Z,,carterdev_103_9003_topic11.html
+carterdev,103,9003,,,1.1,10,checkpoint-two-response,"Module 10, Checkpoint 2",Checkpoint two prompt.,7cc1f91d,Continuity: Confucian hierarchy. Change: a commercialized economy that hierarchy did not anticipate.,12,100,,2026-08-07T03:03:22.592Z,,carterdev_103_9003_topic11.html
+dixonsam,104,9004,,yes,1.1,01,map-check-response,"Module 01, Map & Geography Check",Describe the Grand Canal and its role.,af70ad43,"The Grand Canal linked the Yellow and Yangzi river systems.
+
+It moved grain north, which let the capital feed an army it could not otherwise supply.",26,147,,2026-08-07T03:03:22.593Z,,dixonsam_LATE_104_9004_topic11.html
+dixonsam,104,9004,,yes,1.1,02,first10-q1,"Module 02, First & 10, Question 1",Why did Song China grow?,4b650112,"Champa rice allowed two harvests a year, so population climbed sharply.",11,71,,2026-08-07T03:03:22.593Z,,dixonsam_LATE_104_9004_topic11.html
+dixonsam,104,9004,,yes,1.1,02,first10-q2,"Module 02, First & 10, Question 2",What role did the canal play?,f06acd5b,"The canal carried that surplus to cities, turning farm output into urban growth.",13,80,,2026-08-07T03:03:22.593Z,,dixonsam_LATE_104_9004_topic11.html
+dixonsam,104,9004,,yes,1.1,02,first10-q3,"Module 02, First & 10, Question 3",How did trade shift?,5446d28b,Trade shifted toward maritime routes as the Indian Ocean network deepened.,11,74,,2026-08-07T03:03:22.593Z,,dixonsam_LATE_104_9004_topic11.html
+dixonsam,104,9004,,yes,1.1,05,skill-builder-response,"Module 05, AP Skill Builder",Practice causation.,24c1f135,"Cause: Champa rice. Effect: urbanization. The link runs through surplus, not through technology alone.",14,102,,2026-08-07T03:03:22.593Z,,dixonsam_LATE_104_9004_topic11.html
+dixonsam,104,9004,,yes,1.1,06,checkpoint-one-response,"Module 06, Checkpoint 1",Checkpoint one prompt.,ec4503ef,"The Song state used the exam system to staff a bureaucracy loyal to the emperor, not to regional lords.
+
+Module 07, Evidence Lab
+
+Question: Analyze the evidence.
+
+My response:
+
+The scroll shows commercial density, shops open to the street, which points to a market economy.",45,269,,2026-08-07T03:03:22.593Z,EDITED,dixonsam_LATE_104_9004_topic11.html
+dixonsam,104,9004,,yes,1.1,08,primary-source-response,"Module 08, Primary Source",Who wrote this? Why?,909f288a,"A Song official wrote this, and the audience was the court, so the tone is advisory.",16,84,,2026-08-07T03:03:22.593Z,,dixonsam_LATE_104_9004_topic11.html
+dixonsam,104,9004,,yes,1.1,10,checkpoint-two-response,"Module 10, Checkpoint 2",Checkpoint two prompt.,7cc1f91d,Continuity: Confucian hierarchy. Change: a commercialized economy that hierarchy did not anticipate.,12,100,,2026-08-07T03:03:22.593Z,,dixonsam_LATE_104_9004_topic11.html
+ellisrae,105,9005,,,1.1,01,map-check-response,"Module 01, Map & Geography Check",Describe the Grand Canal and its role.,af70ad43,,0,0,,2026-08-07T03:03:22.594Z,EDITED;BLANK,ellisrae_105_9005_topic11.html
+ellisrae,105,9005,,,1.1,02,first10-q1,"Module 02, First & 10, Question 1",Why did Song China grow?,4b650112,,0,0,,2026-08-07T03:03:22.594Z,EDITED;BLANK,ellisrae_105_9005_topic11.html
+ellisrae,105,9005,,,1.1,02,first10-q2,"Module 02, First & 10, Question 2",What role did the canal play?,f06acd5b,,0,0,,2026-08-07T03:03:22.594Z,EDITED;BLANK,ellisrae_105_9005_topic11.html
+ellisrae,105,9005,,,1.1,02,first10-q3,"Module 02, First & 10, Question 3",How did trade shift?,5446d28b,,0,0,,2026-08-07T03:03:22.594Z,EDITED;BLANK,ellisrae_105_9005_topic11.html
+ellisrae,105,9005,,,1.1,05,skill-builder-response,"Module 05, AP Skill Builder",Practice causation.,24c1f135,,0,0,,2026-08-07T03:03:22.594Z,EDITED;BLANK,ellisrae_105_9005_topic11.html
+ellisrae,105,9005,,,1.1,06,checkpoint-one-response,"Module 06, Checkpoint 1",Checkpoint one prompt.,ec4503ef,,0,0,,2026-08-07T03:03:22.594Z,EDITED;BLANK,ellisrae_105_9005_topic11.html
+ellisrae,105,9005,,,1.1,07,evidence-response,"Module 07, Evidence Lab",Analyze the evidence.,28dc0ae9,,0,0,,2026-08-07T03:03:22.594Z,EDITED;BLANK,ellisrae_105_9005_topic11.html
+ellisrae,105,9005,,,1.1,08,primary-source-response,"Module 08, Primary Source",Who wrote this? Why?,909f288a,,0,0,,2026-08-07T03:03:22.594Z,EDITED;BLANK,ellisrae_105_9005_topic11.html
+ellisrae,105,9005,,,1.1,10,checkpoint-two-response,"Module 10, Checkpoint 2",Checkpoint two prompt.,7cc1f91d,,0,0,,2026-08-07T03:03:22.594Z,EDITED;BLANK,ellisrae_105_9005_topic11.html
+floresjay,106,9006,,,1.1,01,,"Module 01, Map & Geography Check",Describe the Grand Canal and its role.,,"The Grand Canal linked the Yellow and Yangzi river systems.
+
+It moved grain north, which let the capital feed an army it could not otherwise supply.",26,147,,,NO_MANIFEST,floresjay_106_9006_topic11.html
+floresjay,106,9006,,,1.1,02,,"Module 02, First & 10, Question 1",Why did Song China grow?,,"Champa rice allowed two harvests a year, so population climbed sharply.",11,71,,,NO_MANIFEST,floresjay_106_9006_topic11.html
+floresjay,106,9006,,,1.1,02,,"Module 02, First & 10, Question 2",What role did the canal play?,,"The canal carried that surplus to cities, turning farm output into urban growth.",13,80,,,NO_MANIFEST,floresjay_106_9006_topic11.html
+floresjay,106,9006,,,1.1,02,,"Module 02, First & 10, Question 3",How did trade shift?,,Trade shifted toward maritime routes as the Indian Ocean network deepened.,11,74,,,NO_MANIFEST,floresjay_106_9006_topic11.html
+floresjay,106,9006,,,1.1,05,,"Module 05, AP Skill Builder",Practice causation.,,"Cause: Champa rice. Effect: urbanization. The link runs through surplus, not through technology alone.",14,102,,,NO_MANIFEST,floresjay_106_9006_topic11.html
+floresjay,106,9006,,,1.1,06,,"Module 06, Checkpoint 1",Checkpoint one prompt.,,"The Song state used the exam system to staff a bureaucracy loyal to the emperor, not to regional lords.",19,103,,,NO_MANIFEST,floresjay_106_9006_topic11.html
+floresjay,106,9006,,,1.1,07,,"Module 07, Evidence Lab",Analyze the evidence.,,"The scroll shows commercial density, shops open to the street, which points to a market economy.",16,96,,,NO_MANIFEST,floresjay_106_9006_topic11.html
+floresjay,106,9006,,,1.1,08,,"Module 08, Primary Source",Who wrote this? Why?,,"A Song official wrote this, and the audience was the court, so the tone is advisory.",16,84,,,NO_MANIFEST,floresjay_106_9006_topic11.html
+floresjay,106,9006,,,1.1,10,,"Module 10, Checkpoint 2",Checkpoint two prompt.,,Continuity: Confucian hierarchy. Change: a commercialized economy that hierarchy did not anticipate.,12,100,,,NO_MANIFEST,floresjay_106_9006_topic11.html
+grantlee,107,9007,,,1.1,01,map-check-response,"Module 01, Map & Geography Check",Describe the Grand Canal and its role.,af70ad43,"The Grand Canal linked the Yellow and Yangzi river systems.
+
+It moved grain north, which let the capital feed an army it could not otherwise supply.",26,147,4,2026-08-07T03:03:22.596Z,,grantlee_107_9007_topic11.txt
+grantlee,107,9007,,,1.1,02,first10-q1,"Module 02, First & 10, Question 1",Why did Song China grow?,4b650112,"Champa rice allowed two harvests a year, so population climbed sharply.",11,71,,2026-08-07T03:03:22.596Z,,grantlee_107_9007_topic11.txt
+grantlee,107,9007,,,1.1,02,first10-q2,"Module 02, First & 10, Question 2",What role did the canal play?,f06acd5b,"The canal carried that surplus to cities, turning farm output into urban growth.",13,80,,2026-08-07T03:03:22.596Z,,grantlee_107_9007_topic11.txt
+grantlee,107,9007,,,1.1,02,first10-q3,"Module 02, First & 10, Question 3",How did trade shift?,5446d28b,Trade shifted toward maritime routes as the Indian Ocean network deepened.,11,74,,2026-08-07T03:03:22.596Z,,grantlee_107_9007_topic11.txt
+grantlee,107,9007,,,1.1,05,skill-builder-response,"Module 05, AP Skill Builder",Practice causation.,24c1f135,"Cause: Champa rice. Effect: urbanization. The link runs through surplus, not through technology alone.",14,102,2,2026-08-07T03:03:22.596Z,,grantlee_107_9007_topic11.txt
+grantlee,107,9007,,,1.1,06,checkpoint-one-response,"Module 06, Checkpoint 1",Checkpoint one prompt.,ec4503ef,"The Song state used the exam system to staff a bureaucracy loyal to the emperor, not to regional lords.",19,103,5,2026-08-07T03:03:22.596Z,,grantlee_107_9007_topic11.txt
+grantlee,107,9007,,,1.1,07,evidence-response,"Module 07, Evidence Lab",Analyze the evidence.,28dc0ae9,"The scroll shows commercial density, shops open to the street, which points to a market economy.",16,96,3,2026-08-07T03:03:22.596Z,,grantlee_107_9007_topic11.txt
+grantlee,107,9007,,,1.1,08,primary-source-response,"Module 08, Primary Source",Who wrote this? Why?,909f288a,"A Song official wrote this, and the audience was the court, so the tone is advisory.",16,84,,2026-08-07T03:03:22.596Z,,grantlee_107_9007_topic11.txt
+grantlee,107,9007,,,1.1,10,checkpoint-two-response,"Module 10, Checkpoint 2",Checkpoint two prompt.,7cc1f91d,Continuity: Confucian hierarchy. Change: a commercialized economy that hierarchy did not anticipate.,12,100,,2026-08-07T03:03:22.596Z,,grantlee_107_9007_topic11.txt
