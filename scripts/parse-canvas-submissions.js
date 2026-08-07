@@ -154,15 +154,30 @@ function htmlToText(html) {
 
 // Canvas's own convention. The trailing ids are what matter; the leading name is
 // squashed ("andersonjeff") and only good enough to show a human.
+//
+// Canvas does not always write both ids. The documented shape is
+// `name_userid_submissionid_text.html`, but the 2026-08-07 test-student download
+// came back as `studenttest_LATE_310529_text.html`, with one id and not two. The
+// original pattern required two, so it matched nothing, and the whole basename
+// became the display name: "studenttest_LATE_310529_text". Rows still parsed, but
+// the Skills Lens joins a roster on the squashed display name, and no roster
+// entry will ever squash to that. The teacher would have uploaded a roster and
+// watched every student stay unmapped.
+//
+// So: take however many trailing ids there are. With two, follow the documented
+// order. With one, keep it as the submission id rather than guessing it is a user
+// id, because canvas_user_id is what the roster joins on first and a wrong join
+// key is worse than an absent one. The cleaned name carries the match either way.
 function parseSubmissionFilename(filename) {
   const base = path.basename(filename).replace(/\.(html?|txt)$/i, '');
-  const m = base.match(/^(.+?)_(?:(late|LATE)_)?(\d+)_(\d+)(?:_(.*))?$/);
-  if (!m) return { displayName: base, canvasUserId: '', submissionId: '', late: false };
+  const m = base.match(/^(.+?)_(?:(late|LATE)_)?(\d+)(?:_(\d+))?(?:_(.*))?$/);
+  if (!m) return { displayName: base, canvasUserId: '', submissionId: '', late: false, assignment: '' };
+  const two = m[4] !== undefined;
   return {
     displayName: m[1],
     late: Boolean(m[2]),
-    canvasUserId: m[3],
-    submissionId: m[4],
+    canvasUserId: two ? m[3] : '',
+    submissionId: two ? m[4] : m[3],
     assignment: m[5] || ''
   };
 }
