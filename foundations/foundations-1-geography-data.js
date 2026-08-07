@@ -260,10 +260,10 @@ window.FOUNDATION_TOPIC = {
       prompt: 'Watch for: how did geography shape where agriculture developed first, and what did surplus food production make possible?'
     },
     {
-      title: 'Heimler\'s History: AP World History — Period 1 Context',
-      url: 'https://www.youtube.com/watch?v=QO7NHZJ-eE4',
-      youtubeId: 'QO7NHZJ-eE4',
-      prompt: 'Watch for: what geographic and historical conditions shaped the AP World starting point at c.1200?'
+      title: 'The Neolithic Revolution: Why Was Agriculture So Important?',
+      url: 'https://youtu.be/ADcj5Sh8YlE',
+      youtubeId: 'ADcj5Sh8YlE',
+      prompt: 'Watch for: which geographic conditions made farming possible in some places and not others, and what changed for human societies once agriculture produced a surplus?'
     }
   ]
 
