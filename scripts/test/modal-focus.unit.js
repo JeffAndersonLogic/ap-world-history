@@ -72,6 +72,14 @@ function check(name, pass, detail) {
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
 
+  // Abort anything the local fixture server does not serve. The lessons link
+  // Google Fonts and Wikimedia images, which in a sandbox hang rather than fail
+  // fast, leaving a document in readyState "loading". Both renderers already
+  // degrade to local artwork on a dead image, so this removes a test artefact
+  // rather than hiding a defect.
+  await page.route('**/*', route =>
+    route.request().url().startsWith(`http://127.0.0.1:${port}/`) ? route.continue() : route.abort());
+
   const url = `http://127.0.0.1:${port}/unit-1/lesson-1-1-song-china.html`;
   await page.goto(url, { waitUntil: 'domcontentloaded' });
   await page.waitForSelector('#module-grid .module-card');

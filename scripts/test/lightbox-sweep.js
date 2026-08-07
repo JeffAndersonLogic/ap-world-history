@@ -52,6 +52,13 @@ const srv = http.createServer((q,r)=>{const rel=decodeURIComponent(q.url.split('
   for (const f of pages) {
     const pg = await b.newPage();
     const errs = []; pg.on('pageerror', e => errs.push(e.message));
+    // Abort anything the local fixture server does not serve. The lessons link
+    // Google Fonts and Wikimedia images, which in a sandbox hang rather than
+    // fail fast, so a page can sit in "loading" past the navigation timeout.
+    // Both renderers already degrade to local artwork on a dead image, so this
+    // removes a test artefact rather than hiding a defect.
+    await pg.route('**/*', r =>
+      r.request().url().startsWith(`http://127.0.0.1:${port}/`) ? r.continue() : r.abort());
     await pg.goto(`http://127.0.0.1:${port}/${f}`, {waitUntil:'domcontentloaded'});
     await pg.waitForSelector('#module-grid .module-card, .command-center .module-card');
     const out = {};
