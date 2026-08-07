@@ -258,16 +258,16 @@ window.FOUNDATION_TOPIC = {
 
   videos: [
     {
-      title: 'Crash Course World History: What Is History?',
-      url: 'https://www.youtube.com/watch?v=Yocja_N5s1I',
-      youtubeId: 'Yocja_N5s1I',
-      prompt: 'Watch for: what does John Green say historians actually do, and how is it different from what you thought "learning history" meant?'
+      title: 'The Rise of the West and Historical Methodology: Crash Course World History #212',
+      url: 'https://www.youtube.com/watch?v=nosJVTuCHFk',
+      youtubeId: 'nosJVTuCHFk',
+      prompt: 'Watch for: what does John Green say historians actually do when they build an explanation, and how is it different from what you thought "learning history" meant?'
     },
     {
-      title: 'Heimler\'s History on AP World: The Big Picture',
-      url: 'https://www.youtube.com/watch?v=QO7NHZJ-eE4',
-      youtubeId: 'QO7NHZJ-eE4',
-      prompt: 'Watch for: how does Heimler frame the AP historical thinking skills, and which one sounds most like a habit you already have?'
+      title: 'AP World UNIT 1 REVIEW (Everything you NEED to KNOW!)',
+      url: 'https://www.youtube.com/watch?v=xDkPq5KcbS4',
+      youtubeId: 'xDkPq5KcbS4',
+      prompt: 'Watch for: what does Heimler say this course is actually about, and which of these developments do you already know something about?'
     }
   ]
 

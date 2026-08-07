@@ -261,15 +261,15 @@ window.FOUNDATION_TOPIC = {
 
   videos: [
     {
-      title: 'Heimler\'s History: Song Dynasty (Topic 1.1)',
-      url: 'https://www.youtube.com/watch?v=QO7NHZJ-eE4',
-      youtubeId: 'QO7NHZJ-eE4',
+      title: 'Developments in EAST ASIA [AP World Review Unit 1 Topic 1]',
+      url: 'https://www.youtube.com/watch?v=HfIWZhXt7fY',
+      youtubeId: 'HfIWZhXt7fY',
       prompt: 'This is the first Unit 1 content video. Watch it as a test of your Foundations knowledge: how many connections can you make between what Heimler describes and what you learned on Days 1–4? Identify at least three specific connections before moving on to Topic 1.1.'
     },
     {
-      title: 'Heimler\'s History: Dar al-Islam (Topic 1.2)',
-      url: 'https://www.youtube.com/watch?v=HfIWZhXt7fY',
-      youtubeId: 'HfIWZhXt7fY',
+      title: 'Developments in DAR-AL-ISLAM [AP World Review, Unit 1 Topic 2]',
+      url: 'https://www.youtube.com/watch?v=O9P1TaBnhg8',
+      youtubeId: 'O9P1TaBnhg8',
       prompt: 'Preview Topic 1.2 through the lens of Foundations 2 and 4. How does what you learned about Islam as a social institution (Day 2) and trade networks (Day 4) help you understand the Dar al-Islam at c.1200? What connections can you already make before reading the lesson?'
     }
   ]

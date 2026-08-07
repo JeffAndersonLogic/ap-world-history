@@ -277,15 +277,15 @@ window.FOUNDATION_TOPIC = {
 
   videos: [
     {
-      title: 'Heimler\'s History: Confucianism, Daoism & Chinese Belief Systems',
-      url: 'https://www.youtube.com/watch?v=QO7NHZJ-eE4',
-      youtubeId: 'QO7NHZJ-eE4',
+      title: '2,000 Years of Chinese History! The Mandate of Heaven and Confucius: Crash Course World History #7',
+      url: 'https://www.youtube.com/watch?v=ylWORyToTo4',
+      youtubeId: 'ylWORyToTo4',
       prompt: 'Watch for: how did Confucianism and Daoism each shape Chinese society and government, and how did they function together as part of the "Three Teachings"?'
     },
     {
-      title: 'Heimler\'s History: Dar al-Islam (Unit 1 Context)',
-      url: 'https://www.youtube.com/watch?v=HfIWZhXt7fY',
-      youtubeId: 'HfIWZhXt7fY',
+      title: 'Developments in DAR-AL-ISLAM [AP World Review, Unit 1 Topic 2]',
+      url: 'https://www.youtube.com/watch?v=O9P1TaBnhg8',
+      youtubeId: 'O9P1TaBnhg8',
       prompt: 'Watch for: how did Islam function as more than a personal religion in the Dar al-Islam? What institutions did it create and sustain?'
     }
   ]

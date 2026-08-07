@@ -140,9 +140,9 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to trace how colonial withdrawal produced new states, how the lines drawn at independence generated conflict and displacement, and how newly independent governments faced the challenge of building economies, while the migration of former colonial subjects to metropoles maintained connections across the end of empire.",
     videos: [
       {
-        title: "Heimler's History — Topic 8.6: Newly Independent States",
-        url: "https://youtu.be/placeholder-8-6",
-        youtubeId: "placeholder-8-6",
+        title: "Newly INDEPENDENT States [AP World History] Unit 8 Topic 6 (8.6)",
+        url: "https://youtu.be/IlqIqvcWvF8",
+        youtubeId: "IlqIqvcWvF8",
         prompt: "Use this clip to review how boundary redrawing created new states, the specific cases of Partition and Israeli independence, and the economic choices made by newly independent governments. Pay attention to the continuity question: what changed with independence, and what stayed the same?"
       }
     ],
