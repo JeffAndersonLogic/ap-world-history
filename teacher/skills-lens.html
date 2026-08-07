@@ -392,15 +392,16 @@ footer.foot{max-width:1240px;margin:0 auto;padding:24px 20px 50px;font-family:va
           and nothing is uploaded anywhere. Add your class roster CSV alongside it and the Lens can also
           name the students who did not submit at all, which is the one thing the submissions folder
           cannot tell you.</p>
-        <p class="sub">Already have <code>responses.csv</code> and <code>exceptions.csv</code> from
-          <code>scripts/parse-canvas-submissions.js</code>? Those still work, together or separately, and
-          so does a <code>responses.json</code> from <code>--json</code>.</p>
+        <p class="sub">Already unzipped it? Select the submission files themselves and drop those, all
+          at once. <code>responses.csv</code> and <code>exceptions.csv</code> from
+          <code>scripts/parse-canvas-submissions.js</code> still work too, together or separately, and so
+          does a <code>responses.json</code> from <code>--json</code>.</p>
         <div class="file-chips" id="file-chips"></div>
         <p id="zip-progress" class="sub" role="status" aria-live="polite" hidden></p>
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
         <label class="btn" for="filepick">Choose files</label>
-        <input id="filepick" type="file" accept=".zip,.csv,.json,.txt" multiple class="sr-only">
+        <input id="filepick" type="file" accept=".zip,.html,.htm,.csv,.json,.txt" multiple class="sr-only">
         <button class="btn quiet" id="save-csv" type="button" hidden>Save responses.csv</button>
         <button class="btn quiet" id="clear-all" type="button">Clear everything</button>
       </div>
@@ -13669,8 +13670,16 @@ function htmlToText(html) {
 
 // One entry point for "this file came out of Canvas, give me its text", so the
 // CLI and the Lens cannot disagree about when to run htmlToText.
+//
+// The extension decides when there is one to go on. When there is not, the
+// content does: a submission that carries no markup at all must not be put
+// through htmlToText, which would collapse its blank lines into single newlines
+// and lose the paragraph structure the parser is trying to preserve.
 function submissionText(filename, raw) {
-  return /\.txt$/i.test(filename) ? String(raw).replace(/\r\n?/g, '\n') : htmlToText(raw);
+  const s = String(raw == null ? '' : raw);
+  if (/\.txt$/i.test(filename)) return s.replace(/\r\n?/g, '\n');
+  if (!/\.html?$/i.test(filename) && !/<[a-z!\/][^>]*>/i.test(s)) return s.replace(/\r\n?/g, '\n');
+  return htmlToText(s);
 }
 
 // ── Filenames ─────────────────────────────────────────────────────────────────
@@ -13946,6 +13955,33 @@ function isSubmissionFile(name) {
   return true;
 }
 
+// The filename is a convention. The manifest is a fact.
+//
+// isSubmissionFile above is a fast path over names, and it is the right first
+// question when reading a folder. It is the wrong *only* question: a real Canvas
+// download was rejected as holding no submissions when its single entry parsed
+// perfectly once extracted by hand, because the name did not match what the
+// convention said it would be. A gathered submission announces itself from the
+// inside, so anything carrying the manifest header is a submission no matter
+// what it is called.
+//
+// The legacy grammar is accepted too, for work gathered before the footer
+// shipped. That path always flags NO_MANIFEST, so nothing here can make an
+// unverifiable submission look clean.
+function looksLikeSubmission(text) {
+  const s = String(text == null ? '' : text);
+  if (s.indexOf('#BHV|') !== -1) return true;
+  if (s.indexOf('BEHISTORICAL RECORD') !== -1) return true;
+  return /AP WORLD HISTORY,?\s*(?:TOPIC\s+)?([0-9]+\.[0-9]+|F\d+)/i.test(s)
+    && /my response\s*:/i.test(s);
+}
+
+// One question, asked the same way by the folder reader, the zip reader and the
+// drop handler: is this thing a submission at all?
+function acceptsAsSubmission(name, text) {
+  return isSubmissionFile(name) || looksLikeSubmission(text);
+}
+
 /**
  * files: [{ name, text }] straight out of a folder read or a zip.
  * roster: optional { 'id:123': '3rd', 'name:andersonjeff': '3rd' }
@@ -13969,7 +14005,7 @@ function buildTable(files, roster) {
   // between these two code paths and a slow drift apart, and a comparison that
   // has to sort first is a comparison that can be fooled by a real reordering.
   const ordered = files
-    .filter(f => isSubmissionFile(f.name))
+    .filter(f => acceptsAsSubmission(f.name, f.text))
     .slice()
     .sort((a, b) => baseName(a.name).localeCompare(baseName(b.name), 'en'));
 
@@ -14067,7 +14103,8 @@ return {
   SCHEMA_SUPPORTED, ROW_HEADERS, EXCEPTION_HEADERS,
   bhHash, normalizeForHash, wordCount, parseFields,
   decodeEntities, htmlToText, submissionText,
-  baseName, parseSubmissionFilename, squashName, isSubmissionFile,
+  baseName, parseSubmissionFilename, squashName,
+  isSubmissionFile, looksLikeSubmission, acceptsAsSubmission,
   findLabelIndex, extractResponse, extractPrompt,
   parseSubmission, parseWithoutManifest,
   buildTable, csvCell, toCsv
@@ -14220,51 +14257,84 @@ async function inflateRaw(bytes) {
   return new Uint8Array(await new Response(stream).arrayBuffer());
 }
 
+const MAX_SNIFF_BYTES = 8 * 1024 * 1024;   // no single submission is this large
+
+async function readOne(buf, view, entry) {
+  const raw = payloadOf(buf, view, entry);
+  if (entry.method === 0) return new TextDecoder('utf-8').decode(raw);
+  if (entry.method === 8) return new TextDecoder('utf-8').decode(await inflateRaw(raw));
+  throw new ZipError(`compression method ${entry.method}`, '');
+}
+
 /**
- * Reads every entry matching `filter` and decodes it as UTF-8 text.
+ * Reads the submissions out of an archive and decodes them as UTF-8 text.
  *
- * filter: (name) => boolean, so the caller decides what counts as a submission
- * onProgress: (done, total) => void, because a class set is 30 inflate calls and
- *             a silent page looks hung
+ * opts.accept(name)  fast path: which entry names look like submissions
+ * opts.sniff(text)   rescue path: does this content look like a submission,
+ *                    whatever it is called
+ * opts.onProgress(done, total)  a class set is 30 inflate calls and a silent
+ *                    page looks hung
  *
- * Returns { files: [{name, text}], skipped: [{name, why}] }.
+ * WHY THERE IS A RESCUE PATH
+ *
+ * The first version filtered on the filename alone and reported "1 entry, none
+ * of them a .html or .txt submission file" on a real Canvas download whose one
+ * entry parsed perfectly once extracted by hand. Gating on a filename convention
+ * means trusting a convention nobody promised us, and the whole point of the
+ * record manifest is that a submission says what it is from the inside. So if
+ * the name filter finds nothing, every entry gets opened and asked.
+ *
+ * The fast path stays first because on a real class set it avoids inflating
+ * whatever else a teacher happened to zip up.
+ *
+ * Returns { files, skipped, entries, total, rescued }. `entries` is every name
+ * in the archive, so a caller that finds nothing can say what was actually in
+ * there rather than leaving the teacher to guess.
  */
-async function readTextEntries(bytes, filter, onProgress) {
+async function readTextEntries(bytes, opts) {
+  const o = typeof opts === 'function' ? { accept: opts } : (opts || {});
   const buf = bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes);
   const view = new DataView(buf.buffer, buf.byteOffset, buf.byteLength);
   const all = listEntries(buf);
 
-  const wanted = all.filter(e => !e.name.endsWith('/') && (!filter || filter(e.name)));
+  const real = all.filter(e => !e.name.endsWith('/'));
+  const named = o.accept ? real.filter(e => o.accept(e.name)) : real.slice();
+
   const files = [];
   const skipped = [];
-  // Anything present but not a submission is reported, not silently dropped, so
-  // a teacher who zipped the wrong folder finds out from the page.
-  all.forEach(e => {
-    if (e.name.endsWith('/') || wanted.indexOf(e) !== -1) return;
-    skipped.push({ name: e.name, why: 'not a Canvas text submission' });
-  });
+  let rescued = false;
 
-  const decoder = new TextDecoder('utf-8');
-  for (let i = 0; i < wanted.length; i++) {
-    const entry = wanted[i];
-    try {
-      const raw = payloadOf(buf, view, entry);
-      let out;
-      if (entry.method === 0) out = raw;                    // stored
-      else if (entry.method === 8) out = await inflateRaw(raw);  // deflate
-      else throw new ZipError(`compression method ${entry.method}`, '');
-      files.push({ name: entry.name, text: decoder.decode(out) });
-    } catch (e) {
-      // One unreadable file must not cost the other twenty-nine.
-      skipped.push({ name: entry.name, why: e.message });
+  const take = async (list) => {
+    for (let i = 0; i < list.length; i++) {
+      try { files.push({ name: list[i].name, text: await readOne(buf, view, list[i]) }); }
+      catch (e) { skipped.push({ name: list[i].name, why: e.message }); }
+      if (o.onProgress) o.onProgress(i + 1, list.length);
     }
-    if (onProgress) onProgress(i + 1, wanted.length);
+  };
+
+  await take(named);
+
+  // Nothing matched by name. Open everything and let the content decide.
+  if (!files.length && o.sniff) {
+    const rest = real.filter(e => named.indexOf(e) === -1 && e.size <= MAX_SNIFF_BYTES);
+    for (let i = 0; i < rest.length; i++) {
+      let text = null;
+      try { text = await readOne(buf, view, rest[i]); } catch (e) { text = null; }
+      if (text !== null && o.sniff(text)) { files.push({ name: rest[i].name, text: text }); rescued = true; }
+      if (o.onProgress) o.onProgress(i + 1, rest.length);
+    }
   }
 
-  return { files, skipped, total: all.length };
+  // Whatever was present and not taken is reported, never silently dropped.
+  const taken = new Set(files.map(f => f.name).concat(skipped.map(s => s.name)));
+  real.forEach(e => {
+    if (!taken.has(e.name)) skipped.push({ name: e.name, why: 'not a Canvas text submission' });
+  });
+
+  return { files, skipped, entries: all.map(e => e.name), total: all.length, rescued };
 }
 
-return { listEntries, readTextEntries, inflateRaw, ZipError };
+return { listEntries, readTextEntries, readOne, inflateRaw, ZipError, MAX_SNIFF_BYTES };
 
 });
 </script>
@@ -14613,8 +14683,14 @@ async function ingestZip(file) {
 
   let result;
   try {
-    result = await CANVAS_ZIP.readTextEntries(bytes, CANVAS.isSubmissionFile,
-      (done, total) => say('Reading ' + file.name + ': ' + done + ' of ' + total + ' submissions...'));
+    result = await CANVAS_ZIP.readTextEntries(bytes, {
+      accept: CANVAS.isSubmissionFile,
+      /* If nothing matched the filename convention, ask the contents instead. A
+         real Canvas download was rejected outright by the name filter while its
+         single entry parsed perfectly once extracted by hand. */
+      sniff: CANVAS.looksLikeSubmission,
+      onProgress: (done, total) => say('Reading ' + file.name + ': ' + done + ' of ' + total + '...')
+    });
   } catch (e) {
     /* A ZipError carries a next step as well as a diagnosis, because "invalid
        central directory" is not something a teacher can act on. */
@@ -14624,10 +14700,18 @@ async function ingestZip(file) {
   }
 
   if (!result.files.length) {
-    S.problems.push(file.name + ' held no Canvas text submissions. It has ' + result.total +
-      ' entr' + (result.total === 1 ? 'y' : 'ies') + ', none of them a .html or .txt submission file. ' +
-      'On a File Upload assignment Canvas puts documents in the zip instead, and those carry no record ' +
-      'footer, so there is nothing here to read. This pipeline needs a Text Entry assignment.');
+    /* Name what was actually in there. The first version of this message said
+       "1 entry, none of them a .html or .txt submission file" and stopped, which
+       withheld the single fact needed to work out why: what the entry was
+       called. An error that describes its own rule instead of the input is an
+       error the reader cannot act on. */
+    const listed = result.entries.slice(0, 12).map(n => '"' + n + '"').join(', ');
+    S.problems.push(file.name + ' held no readable submissions. Its ' + result.total +
+      ' entr' + (result.total === 1 ? 'y is' : 'ies are') + ': ' + listed +
+      (result.entries.length > 12 ? ', and ' + (result.entries.length - 12) + ' more' : '') + '. ' +
+      'Nothing in it carried a BeHistorical record footer. On a File Upload assignment Canvas puts ' +
+      'documents in the zip instead, and those were never gathered, so there is nothing to read. ' +
+      'This pipeline needs a Text Entry assignment.');
     progress.hidden = true;
     return;
   }
@@ -14674,6 +14758,37 @@ function rosterLookup() {
   return map;
 }
 
+/* Loose submission files, unzipped and dragged in.
+   This is at least as natural a gesture as dropping the zip, and it used to land
+   in the CSV reader and come back as "was not recognised. Its columns are:"
+   followed by nothing, because a Canvas submission has no columns. The parser
+   could always read these files perfectly; the drop handler simply never offered
+   them to it. */
+function ingestSubmissions(files) {
+  const table = CANVAS.buildTable(files, rosterLookup());
+  if (!table.rows.length) {
+    S.problems.push('Read ' + files.length + ' submission file' + (files.length === 1 ? '' : 's') +
+      ' but found no responses in ' + (files.length === 1 ? 'it' : 'them') + '.');
+    return;
+  }
+  S.files.responses = {
+    name: files.length === 1 ? CANVAS.baseName(files[0].name) : files.length + ' submission files',
+    rows: table.rows, header: CANVAS.ROW_HEADERS.slice(), ragged: 0
+  };
+  S.files.exceptions = {
+    name: S.files.responses.name, rows: table.exceptions,
+    header: CANVAS.EXCEPTION_HEADERS.slice(), ragged: 0
+  };
+  S.zipTable = table;
+  const st = table.stats;
+  const progress = $('zip-progress');
+  progress.hidden = false;
+  progress.textContent = 'Read ' + st.files + ' submission' + (st.files === 1 ? '' : 's') + ', ' +
+    st.responses + ' responses, ' + st.clean + ' of ' + st.files + ' clean.' +
+    (st.exceptions ? ' ' + st.exceptions + ' exception' + (st.exceptions === 1 ? '' : 's') + ', see below.' : '');
+  $('save-csv').hidden = false;
+}
+
 async function ingestFiles(fileList) {
   S.problems = [];
   const all = Array.from(fileList);
@@ -14681,10 +14796,19 @@ async function ingestFiles(fileList) {
   /* Roster and CSV first, so a zip dropped alongside a roster picks the class
      periods up on the same pass instead of needing a second drop. */
   const zips = all.filter(f => /\.zip$/i.test(f.name));
+  const submissions = [];
   for (const file of all.filter(f => !/\.zip$/i.test(f.name))) {
     let text;
     try { text = await file.text(); }
     catch (e) { S.problems.push('Could not read ' + file.name + ': ' + e.message); continue; }
+
+    /* Asked before the CSV reader gets a look, and asked of the content as well
+       as the name, so an unzipped submission is recognised whatever Canvas
+       decided to call it. */
+    if (CANVAS.acceptsAsSubmission(file.name, text)) {
+      submissions.push({ name: file.name, text: text });
+      continue;
+    }
 
     if (/\.json$/i.test(file.name)) {
       try {
@@ -14702,8 +14826,15 @@ async function ingestFiles(fileList) {
     if (!parsed.header.length) { S.problems.push(file.name + ' is empty.'); continue; }
     const kind = detectKind(parsed.header, file.name);
     if (!kind) {
-      S.problems.push(file.name + ' was not recognised. Its columns are: ' + parsed.header.join(', ') +
-        '. A responses file needs slot_id, response and word_count; an exceptions file needs reason and detail; a roster needs a period column plus a name or id column.');
+      /* Say what it looked like, not only what was wanted. An HTML file lands
+         here with no columns at all, and "its columns are:" followed by nothing
+         reads as a broken page rather than as a wrong file. */
+      const looksHtml = /^\s*<(!doctype|html|body|div|p)\b/i.test(text);
+      S.problems.push(file.name + ' was not recognised. ' +
+        (looksHtml
+          ? 'It looks like an HTML page, but it carries no BeHistorical record footer, so it is not a gathered submission. A submission ends with a "--- BEHISTORICAL RECORD ---" block; if this one does not, the student pasted something other than what Gather All My Work produced.'
+          : 'Its columns are: ' + (parsed.header.join(', ') || '(none)') + '.') +
+        ' This page reads a Canvas submissions.zip, the submission files from inside one, a responses.csv with slot_id, response and word_count, an exceptions.csv with reason and detail, or a roster with a period column plus a name or id column.');
       continue;
     }
     /* A short row is a row the CSV writer and this reader disagree about. Count
@@ -14714,8 +14845,9 @@ async function ingestFiles(fileList) {
     if (ragged) S.problems.push(file.name + ': ' + ragged + ' row(s) had a different column count than the header. They were kept, with the missing cells empty.');
   }
 
+  if (submissions.length) ingestSubmissions(submissions);
   for (const file of zips) await ingestZip(file);
-  if (!zips.length) $('zip-progress').hidden = true;
+  if (!zips.length && !submissions.length) $('zip-progress').hidden = true;
 
   build();
 }

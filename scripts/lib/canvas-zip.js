@@ -140,50 +140,83 @@ async function inflateRaw(bytes) {
   return new Uint8Array(await new Response(stream).arrayBuffer());
 }
 
+const MAX_SNIFF_BYTES = 8 * 1024 * 1024;   // no single submission is this large
+
+async function readOne(buf, view, entry) {
+  const raw = payloadOf(buf, view, entry);
+  if (entry.method === 0) return new TextDecoder('utf-8').decode(raw);
+  if (entry.method === 8) return new TextDecoder('utf-8').decode(await inflateRaw(raw));
+  throw new ZipError(`compression method ${entry.method}`, '');
+}
+
 /**
- * Reads every entry matching `filter` and decodes it as UTF-8 text.
+ * Reads the submissions out of an archive and decodes them as UTF-8 text.
  *
- * filter: (name) => boolean, so the caller decides what counts as a submission
- * onProgress: (done, total) => void, because a class set is 30 inflate calls and
- *             a silent page looks hung
+ * opts.accept(name)  fast path: which entry names look like submissions
+ * opts.sniff(text)   rescue path: does this content look like a submission,
+ *                    whatever it is called
+ * opts.onProgress(done, total)  a class set is 30 inflate calls and a silent
+ *                    page looks hung
  *
- * Returns { files: [{name, text}], skipped: [{name, why}] }.
+ * WHY THERE IS A RESCUE PATH
+ *
+ * The first version filtered on the filename alone and reported "1 entry, none
+ * of them a .html or .txt submission file" on a real Canvas download whose one
+ * entry parsed perfectly once extracted by hand. Gating on a filename convention
+ * means trusting a convention nobody promised us, and the whole point of the
+ * record manifest is that a submission says what it is from the inside. So if
+ * the name filter finds nothing, every entry gets opened and asked.
+ *
+ * The fast path stays first because on a real class set it avoids inflating
+ * whatever else a teacher happened to zip up.
+ *
+ * Returns { files, skipped, entries, total, rescued }. `entries` is every name
+ * in the archive, so a caller that finds nothing can say what was actually in
+ * there rather than leaving the teacher to guess.
  */
-async function readTextEntries(bytes, filter, onProgress) {
+async function readTextEntries(bytes, opts) {
+  const o = typeof opts === 'function' ? { accept: opts } : (opts || {});
   const buf = bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes);
   const view = new DataView(buf.buffer, buf.byteOffset, buf.byteLength);
   const all = listEntries(buf);
 
-  const wanted = all.filter(e => !e.name.endsWith('/') && (!filter || filter(e.name)));
+  const real = all.filter(e => !e.name.endsWith('/'));
+  const named = o.accept ? real.filter(e => o.accept(e.name)) : real.slice();
+
   const files = [];
   const skipped = [];
-  // Anything present but not a submission is reported, not silently dropped, so
-  // a teacher who zipped the wrong folder finds out from the page.
-  all.forEach(e => {
-    if (e.name.endsWith('/') || wanted.indexOf(e) !== -1) return;
-    skipped.push({ name: e.name, why: 'not a Canvas text submission' });
-  });
+  let rescued = false;
 
-  const decoder = new TextDecoder('utf-8');
-  for (let i = 0; i < wanted.length; i++) {
-    const entry = wanted[i];
-    try {
-      const raw = payloadOf(buf, view, entry);
-      let out;
-      if (entry.method === 0) out = raw;                    // stored
-      else if (entry.method === 8) out = await inflateRaw(raw);  // deflate
-      else throw new ZipError(`compression method ${entry.method}`, '');
-      files.push({ name: entry.name, text: decoder.decode(out) });
-    } catch (e) {
-      // One unreadable file must not cost the other twenty-nine.
-      skipped.push({ name: entry.name, why: e.message });
+  const take = async (list) => {
+    for (let i = 0; i < list.length; i++) {
+      try { files.push({ name: list[i].name, text: await readOne(buf, view, list[i]) }); }
+      catch (e) { skipped.push({ name: list[i].name, why: e.message }); }
+      if (o.onProgress) o.onProgress(i + 1, list.length);
     }
-    if (onProgress) onProgress(i + 1, wanted.length);
+  };
+
+  await take(named);
+
+  // Nothing matched by name. Open everything and let the content decide.
+  if (!files.length && o.sniff) {
+    const rest = real.filter(e => named.indexOf(e) === -1 && e.size <= MAX_SNIFF_BYTES);
+    for (let i = 0; i < rest.length; i++) {
+      let text = null;
+      try { text = await readOne(buf, view, rest[i]); } catch (e) { text = null; }
+      if (text !== null && o.sniff(text)) { files.push({ name: rest[i].name, text: text }); rescued = true; }
+      if (o.onProgress) o.onProgress(i + 1, rest.length);
+    }
   }
 
-  return { files, skipped, total: all.length };
+  // Whatever was present and not taken is reported, never silently dropped.
+  const taken = new Set(files.map(f => f.name).concat(skipped.map(s => s.name)));
+  real.forEach(e => {
+    if (!taken.has(e.name)) skipped.push({ name: e.name, why: 'not a Canvas text submission' });
+  });
+
+  return { files, skipped, entries: all.map(e => e.name), total: all.length, rescued };
 }
 
-return { listEntries, readTextEntries, inflateRaw, ZipError };
+return { listEntries, readTextEntries, readOne, inflateRaw, ZipError, MAX_SNIFF_BYTES };
 
 });

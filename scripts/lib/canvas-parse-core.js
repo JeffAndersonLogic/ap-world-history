@@ -131,8 +131,16 @@ function htmlToText(html) {
 
 // One entry point for "this file came out of Canvas, give me its text", so the
 // CLI and the Lens cannot disagree about when to run htmlToText.
+//
+// The extension decides when there is one to go on. When there is not, the
+// content does: a submission that carries no markup at all must not be put
+// through htmlToText, which would collapse its blank lines into single newlines
+// and lose the paragraph structure the parser is trying to preserve.
 function submissionText(filename, raw) {
-  return /\.txt$/i.test(filename) ? String(raw).replace(/\r\n?/g, '\n') : htmlToText(raw);
+  const s = String(raw == null ? '' : raw);
+  if (/\.txt$/i.test(filename)) return s.replace(/\r\n?/g, '\n');
+  if (!/\.html?$/i.test(filename) && !/<[a-z!\/][^>]*>/i.test(s)) return s.replace(/\r\n?/g, '\n');
+  return htmlToText(s);
 }
 
 // ── Filenames ─────────────────────────────────────────────────────────────────
@@ -408,6 +416,33 @@ function isSubmissionFile(name) {
   return true;
 }
 
+// The filename is a convention. The manifest is a fact.
+//
+// isSubmissionFile above is a fast path over names, and it is the right first
+// question when reading a folder. It is the wrong *only* question: a real Canvas
+// download was rejected as holding no submissions when its single entry parsed
+// perfectly once extracted by hand, because the name did not match what the
+// convention said it would be. A gathered submission announces itself from the
+// inside, so anything carrying the manifest header is a submission no matter
+// what it is called.
+//
+// The legacy grammar is accepted too, for work gathered before the footer
+// shipped. That path always flags NO_MANIFEST, so nothing here can make an
+// unverifiable submission look clean.
+function looksLikeSubmission(text) {
+  const s = String(text == null ? '' : text);
+  if (s.indexOf('#BHV|') !== -1) return true;
+  if (s.indexOf('BEHISTORICAL RECORD') !== -1) return true;
+  return /AP WORLD HISTORY,?\s*(?:TOPIC\s+)?([0-9]+\.[0-9]+|F\d+)/i.test(s)
+    && /my response\s*:/i.test(s);
+}
+
+// One question, asked the same way by the folder reader, the zip reader and the
+// drop handler: is this thing a submission at all?
+function acceptsAsSubmission(name, text) {
+  return isSubmissionFile(name) || looksLikeSubmission(text);
+}
+
 /**
  * files: [{ name, text }] straight out of a folder read or a zip.
  * roster: optional { 'id:123': '3rd', 'name:andersonjeff': '3rd' }
@@ -431,7 +466,7 @@ function buildTable(files, roster) {
   // between these two code paths and a slow drift apart, and a comparison that
   // has to sort first is a comparison that can be fooled by a real reordering.
   const ordered = files
-    .filter(f => isSubmissionFile(f.name))
+    .filter(f => acceptsAsSubmission(f.name, f.text))
     .slice()
     .sort((a, b) => baseName(a.name).localeCompare(baseName(b.name), 'en'));
 
@@ -529,7 +564,8 @@ return {
   SCHEMA_SUPPORTED, ROW_HEADERS, EXCEPTION_HEADERS,
   bhHash, normalizeForHash, wordCount, parseFields,
   decodeEntities, htmlToText, submissionText,
-  baseName, parseSubmissionFilename, squashName, isSubmissionFile,
+  baseName, parseSubmissionFilename, squashName,
+  isSubmissionFile, looksLikeSubmission, acceptsAsSubmission,
   findLabelIndex, extractResponse, extractPrompt,
   parseSubmission, parseWithoutManifest,
   buildTable, csvCell, toCsv

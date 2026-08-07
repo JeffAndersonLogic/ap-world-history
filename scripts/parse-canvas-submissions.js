@@ -170,18 +170,37 @@ function main() {
   const outDir = opts.out || opts.dir;
   fs.mkdirSync(outDir, { recursive: true });
 
-  const names = fs.readdirSync(opts.dir).filter(isSubmissionFile).sort();
+  // Read by name first, then ask the contents of anything left over. Canvas does
+  // not always name a text-entry submission the way its own convention says it
+  // will, and a folder reader that trusts the name reports an empty download
+  // while a perfectly good submission sits in it. buildTable applies the same
+  // two-part test, so this only decides which files are worth opening.
+  const entries = fs.readdirSync(opts.dir, { withFileTypes: true })
+    .filter(e => e.isFile() && !e.name.startsWith('.'))
+    .map(e => e.name).sort();
 
-  if (!names.length) {
-    console.error(`No .html or .txt files in ${opts.dir}`);
+  const byName = entries.filter(isSubmissionFile);
+  const read = name => ({ name, text: fs.readFileSync(path.join(opts.dir, name), 'utf8') });
+  let files = byName.map(read);
+
+  if (!files.length) {
+    files = entries
+      .filter(n => !/\.(csv|json|zip|pdf|docx?|pptx?|xlsx?|png|jpe?g|gif|svg)$/i.test(n))
+      .map(read)
+      .filter(f => CORE.looksLikeSubmission(f.text));
+    if (files.length) {
+      console.log(`  ${files.length} file(s) matched by their record footer rather than by filename.`);
+    }
+  }
+
+  if (!files.length) {
+    console.error(`No BeHistorical submissions in ${opts.dir}`);
+    console.error(`  ${entries.length} file(s) there: ${entries.slice(0, 8).join(', ')}${entries.length > 8 ? ', ...' : ''}`);
+    console.error('  None carried a record footer. This pipeline needs a Text Entry assignment.');
     process.exit(1);
   }
 
   const roster = opts.roster ? loadRoster(opts.roster) : {};
-  const files = names.map(name => ({
-    name: name,
-    text: fs.readFileSync(path.join(opts.dir, name), 'utf8')
-  }));
 
   const { rows, exceptions: exceptionRows, perFile, stats } = buildTable(files, roster);
 

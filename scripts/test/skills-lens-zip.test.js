@@ -296,6 +296,60 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
     bundle.length > 50 && !/Anderson|Siobhan|Garcia|Zhang|Absent/i.test(bundle),
     (bundle.match(/Anderson|Siobhan|Garcia|Zhang|Absent/i) || ['clean, ' + bundle.length + ' chars'])[0]);
 
+  console.log('\n  The real Canvas download, by both gestures\n');
+
+  // Everything above uses submissions this test built. These two use the file
+  // Canvas actually handed over on 2026-08-07, and they are the regressions for
+  // the two ways the Lens turned it away: the zip reader said "no Canvas text
+  // submissions", and the loose file fell into the CSV reader and came back as
+  // "was not recognised. Its columns are:" with nothing after it.
+  const REAL = path.join(ROOT, 'scripts', 'test', 'fixtures', 'canvas-download-studenttest.html');
+  const realText = fs.readFileSync(REAL, 'utf8');
+
+  await page.click('#clear-all');
+  await page.waitForTimeout(80);
+  const loose = path.join(tmp, 'studenttest_LATE_310529_text.html');
+  fs.writeFileSync(loose, realText);
+  await page.setInputFiles('#filepick', [loose]);
+  await page.waitForTimeout(500);
+  const looseMsg = await page.textContent('#zip-progress');
+  check('a loose submission file dropped on its own is read',
+    /Read 1 submission, 9 responses/.test(looseMsg || ''), (looseMsg || '(nothing)').trim());
+  check('and it does not land in the CSV reader',
+    !/was not recognised/i.test(await page.evaluate(() => document.body.innerText)));
+  check('the panels come up on it',
+    await page.evaluate(() => !document.getElementById('filterbar').hidden
+      && document.getElementById('panel-coverage').innerText.length > 300));
+
+  // The same file inside a zip, under a name the filename convention does not
+  // predict. The name filter finds nothing; the content sniff has to rescue it.
+  await page.click('#clear-all');
+  await page.waitForTimeout(80);
+  const oddDir = path.join(tmp, 'odd');
+  fs.mkdirSync(oddDir, { recursive: true });
+  fs.writeFileSync(path.join(oddDir, 'submission_310529'), realText);
+  const oddZip = path.join(tmp, 'odd.zip');
+  execFileSync('zip', ['-q', '-r', oddZip, '.'], { cwd: oddDir });
+  await page.setInputFiles('#filepick', [oddZip]);
+  await page.waitForTimeout(900);
+  const oddMsg = await page.textContent('#zip-progress');
+  check('a zip entry the naming convention does not predict is still read',
+    /Read 1 submission, 9 responses/.test(oddMsg || ''), (oddMsg || '(nothing)').trim());
+
+  // And when there genuinely is nothing, the message names the entries.
+  await page.click('#clear-all');
+  await page.waitForTimeout(80);
+  const junkDir = path.join(tmp, 'junk');
+  fs.mkdirSync(junkDir, { recursive: true });
+  fs.writeFileSync(path.join(junkDir, 'Essay Draft.rtf'), 'not a submission');
+  const junkZip = path.join(tmp, 'junk.zip');
+  execFileSync('zip', ['-q', '-r', junkZip, '.'], { cwd: junkDir });
+  await page.setInputFiles('#filepick', [junkZip]);
+  await page.waitForTimeout(600);
+  const junkText = await page.evaluate(() => document.body.innerText);
+  check('an empty result names what was actually in the zip',
+    /Essay Draft\.rtf/.test(junkText), 'looked for the entry name in the message');
+
   console.log('\n  Failing honestly on a bad drop\n');
   await page.click('#clear-all');
   await page.waitForTimeout(80);

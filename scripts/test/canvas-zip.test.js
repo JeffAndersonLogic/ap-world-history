@@ -107,8 +107,21 @@ function stage(dir, files) {
 }
 
 async function readZip(file) {
-  return ZIP.readTextEntries(new Uint8Array(fs.readFileSync(file)), CORE.isSubmissionFile);
+  return ZIP.readTextEntries(new Uint8Array(fs.readFileSync(file)), {
+    accept: CORE.isSubmissionFile,
+    sniff: CORE.looksLikeSubmission
+  });
 }
+
+// Name filter only, to prove the rescue path is what saves the odd cases rather
+// than the fast path having quietly been loosened.
+async function readZipByNameOnly(file) {
+  return ZIP.readTextEntries(new Uint8Array(fs.readFileSync(file)), {
+    accept: CORE.isSubmissionFile
+  });
+}
+
+const REAL = path.join(__dirname, 'fixtures', 'canvas-download-studenttest.html');
 
 (async () => {
   console.log('\n  Zips written by real tools\n');
@@ -207,6 +220,53 @@ z.close()
   r = await readZip(commented);
   check('a trailing zip comment does not hide the directory', r.files.length === 3,
     `${r.files.length} files, comment 900 bytes`);
+
+  console.log('\n  A real Canvas download, and entries the convention did not predict\n');
+
+  // The file Canvas actually produced on 2026-08-07, committed verbatim. Test
+  // Student, the teacher's own writing, no real student in it.
+  const realText = fs.readFileSync(REAL, 'utf8');
+  check('the committed real download still parses to 9 clean responses',
+    (() => { const t = CORE.buildTable([{ name: 'studenttest_LATE_310529_text.html', text: realText }]);
+      return t.rows.length === 9 && t.stats.exceptions === 0; })());
+
+  // The reported failure: a zip whose one entry does not match the filename
+  // convention. Gating on the name alone reported "no Canvas text submissions"
+  // about an archive holding a perfectly good submission.
+  const odd = path.join(tmp, 'odd');
+  stage(odd, [['submission_310529', realText]]);
+  const oddZip = path.join(tmp, 'odd.zip');
+  execFileSync('zip', ['-q', '-r', oddZip, '.'], { cwd: odd });
+
+  const byName = await readZipByNameOnly(oddZip);
+  check('name filter alone finds nothing in it, which was the bug',
+    byName.files.length === 0, `${byName.files.length} files`);
+
+  r = await readZip(oddZip);
+  check('the content sniff rescues it', r.files.length === 1 && r.rescued,
+    `${r.files.length} file, rescued=${r.rescued}`);
+  check('and it parses to the same 9 responses',
+    CORE.buildTable(r.files).rows.length === 9,
+    `${CORE.buildTable(r.files).rows.length} rows`);
+
+  // The rescue must not turn junk into students. A zip of unrelated files still
+  // reports nothing found, and names what it saw.
+  const junk = path.join(tmp, 'junk');
+  stage(junk, [['notes.rtf', 'just some notes'], ['essay.docx', 'PK not really'], ['photo.png', 'binary-ish']]);
+  const junkZip = path.join(tmp, 'junk.zip');
+  execFileSync('zip', ['-q', '-r', junkZip, '.'], { cwd: junk });
+  r = await readZip(junkZip);
+  check('a zip of unrelated files is still rejected', r.files.length === 0,
+    `${r.files.length} files`);
+  check('and the error can name what was in it, rather than restating its own rule',
+    r.entries.length === 3 && r.entries.some(n => /notes\.rtf/.test(n)),
+    r.entries.join(', '));
+
+  // .txt submissions carry the manifest too, and a plain-text one must not be
+  // run through htmlToText, which would flatten its paragraphs.
+  const plain = 'AP WORLD HISTORY, TOPIC 1.1\n\nModule 01, Map & Geography Check\nQuestion: Why?\nMy response:\nFirst paragraph.\n\nSecond paragraph.\n';
+  check('a plain-text submission keeps its blank line',
+    CORE.submissionText('weirdname', plain).indexOf('First paragraph.\n\nSecond paragraph.') !== -1);
 
   console.log('\n  Failing honestly\n');
 

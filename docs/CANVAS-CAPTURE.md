@@ -139,7 +139,8 @@ submission reports `0 of 9` instead of looking like a student who wrote nothing.
 ### The normal way, no Terminal
 
 Open `teacher/skills-lens.html` and drop the `submissions.zip` on it, straight
-from Canvas. Drop the roster CSV alongside it in the same go and class periods
+from Canvas. If you have already unzipped it, select the submission files
+themselves and drop those instead; both gestures work. Drop the roster CSV alongside it in the same go and class periods
 come with it. **Save responses.csv** writes the CSVs back out if you want the
 files.
 
@@ -165,8 +166,17 @@ The input is an unzipped Canvas **Download Submissions** folder. Canvas names
 each file `lastnamefirstname_<userid>_<submissionid>_<assignment>.html`, and that
 filename is the only place the student's identity appears.
 
-It does not always write both ids. The 2026-08-07 test-student download came
-back as `studenttest_LATE_310529_text.html`, with one. The parser takes however
+**The filename is a convention, and the manifest is a fact.** Both readers ask
+the name first and the contents second. A real Canvas download was rejected as
+holding no submissions because its one zip entry did not match the expected name,
+while the file inside parsed perfectly once extracted by hand. So anything
+carrying a record footer is a submission whatever it is called, and an archive
+with nothing in it reports the entry names it actually saw rather than restating
+the rule it applied. `scripts/test/fixtures/canvas-download-studenttest.html` is
+that download, committed verbatim as the regression.
+
+Canvas also does not always write both ids. The 2026-08-07 test-student download
+came back as `studenttest_LATE_310529_text.html`, with one. The parser takes however
 many are there; with one it keeps it as the submission id rather than guessing it
 is a user id, because `canvas_user_id` is the roster's first join key and a wrong
 key is worse than an absent one. The paste itself
