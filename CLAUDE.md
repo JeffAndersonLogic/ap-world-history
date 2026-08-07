@@ -68,6 +68,11 @@ Every picture a student can see must be on-topic and must be impossible to break
 > because the lightbox opens from inside the module modal. Adding a `.show` class
 > without calling them locks a screen-reader user out of the lesson content. The
 > two `scripts/test/modal-focus.*.js` browser tests are the check.
+>
+> **Every enlargeable image is a button.** Map and Evidence Lab images carry
+> `role="button" tabindex="0"`, an `aria-label` naming the picture, and an
+> Enter/Space handler. An `onclick` on its own is mouse-only, which is how the
+> lightbox stayed unreachable by keyboard on every topic.
 
 > **Before touching the Gather All My Work panel or its record footer, read
 > `docs/CANVAS-CAPTURE.md`.** Both renderers emit the footer and one parser reads

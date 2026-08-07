@@ -132,9 +132,83 @@ function check(name, pass, detail) {
 
   check('scroll lock released', await page.evaluate(() => document.body.style.overflow === ''));
 
-  // The Foundations renderer never opens a lightbox, so there is no nested
-  // dialog on these pages. The shells do carry an unused #lightbox element.
-  console.log('  SKIP  nested lightbox (Foundations has no lightbox behavior)');
+  // ── Nested: lightbox opened from inside the Map modal ──────────────────────
+  await page.evaluate(() => openModule('map'));
+  await page.waitForSelector('#pop-modal.show');
+  await page.waitForTimeout(60);
+
+  const mapImg = page.locator('#pop-body img[role="button"]').first();
+  check('map image is keyboard reachable', await mapImg.count() > 0,
+    'role=button images in modal: ' + await mapImg.count());
+
+  await mapImg.focus();
+  check('map image can hold focus',
+    await page.evaluate(() => document.activeElement && document.activeElement.tagName === 'IMG'));
+  await page.keyboard.press('Enter');
+  await page.waitForSelector('#lightbox.show');
+  await page.waitForTimeout(60);
+
+  check('nested lightbox takes focus',
+    await page.evaluate(() => document.activeElement && document.activeElement.id === 'lightbox'));
+
+  check('lightbox shows the map, not a fallback frame',
+    await page.evaluate(() => {
+      const i = document.getElementById('lightbox-img');
+      return !!i.getAttribute('src') && (document.getElementById('lightbox-caption').textContent || '').length > 0;
+    }));
+
+  // The shells ship this Close button already; it called a function that did not
+  // exist until now.
+  await page.evaluate(() => document.querySelector('#lightbox button').click());
+  await page.waitForTimeout(60);
+  const state = await page.evaluate(() => ({
+    lightbox: document.getElementById('lightbox').classList.contains('show'),
+    pop: document.getElementById('pop-modal').classList.contains('show')
+  }));
+  check('the shell Close button closes only the lightbox',
+    !state.lightbox && state.pop, `lightbox=${state.lightbox} pop=${state.pop}`);
+
+  check('focus returns from lightbox to the map image',
+    await page.evaluate(() => document.activeElement && document.activeElement.tagName === 'IMG'));
+
+  // And again by keyboard, to prove Escape closes only the top of the stack.
+  await page.keyboard.press('Enter');
+  await page.waitForSelector('#lightbox.show');
+  await page.waitForTimeout(60);
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(60);
+  const after = await page.evaluate(() => ({
+    lightbox: document.getElementById('lightbox').classList.contains('show'),
+    pop: document.getElementById('pop-modal').classList.contains('show')
+  }));
+  check('Escape closes only the lightbox, module modal survives',
+    !after.lightbox && after.pop, `lightbox=${after.lightbox} pop=${after.pop}`);
+
+  check('scroll still locked with the module modal open',
+    await page.evaluate(() => document.body.style.overflow === 'hidden'));
+
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(60);
+  check('second Escape closes the module modal',
+    !await page.evaluate(() => document.getElementById('pop-modal').classList.contains('show')));
+
+  // ── Evidence Lab images get the same treatment ─────────────────────────────
+  await page.evaluate(() => openModule('evidence'));
+  await page.waitForSelector('#pop-modal.show');
+  await page.waitForTimeout(60);
+  const evImgs = page.locator('#pop-body img[role="button"]');
+  const evCount = await evImgs.count();
+  check('evidence images are keyboard reachable', evCount > 0, evCount + ' found');
+  if (evCount) {
+    await evImgs.first().focus();
+    await page.keyboard.press('Enter');
+    await page.waitForSelector('#lightbox.show');
+    await page.waitForTimeout(60);
+    check('evidence lightbox opens and takes focus',
+      await page.evaluate(() => document.activeElement && document.activeElement.id === 'lightbox'));
+    await page.keyboard.press('Escape');
+    await page.waitForTimeout(60);
+  }
   await page.evaluate(() => closeModule());
   await page.waitForTimeout(40);
 
