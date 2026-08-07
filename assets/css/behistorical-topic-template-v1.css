@@ -81,9 +81,20 @@
   padding-bottom: 0;
   border-bottom: none;
 }
+/* The bridge panel is blackened steel, so the secondary button has to drop the
+   base .btn.secondary paper background. Without this it renders warm paper text
+   on clean paper, a 1.03:1 contrast ratio that read as a disabled button. */
 .magicschool-bridge .btn.secondary {
+  background: transparent;
   color: var(--warm-paper);
   border-color: rgba(201,164,106,.5);
+  box-shadow: none;
+}
+.magicschool-bridge .btn.secondary:hover,
+.magicschool-bridge .btn.secondary:focus-visible {
+  background: rgba(201,164,106,.18);
+  border-color: rgba(201,164,106,.85);
+  color: var(--clean-paper);
 }
 .magicschool-bridge .check-result {
   color: var(--antique-gold);

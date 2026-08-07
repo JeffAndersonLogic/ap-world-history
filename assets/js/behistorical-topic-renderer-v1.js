@@ -21,6 +21,10 @@ const WORK_CONFIDENCE = {};
 // Canonical labels for First & 10 questions past the three WORK_ITEMS declares.
 // Without these, Topic 1.7's fourth and fifth answers exported as "First10 q4".
 const WORK_FIRST10_LABELS = {};
+// What each checkpoint's AI Coach prompt needs, keyed by its response textarea
+// id. The bridge buttons only carry that id, so the mode and the focus terms
+// have to be stashed here at render time for generateCheckpointPrompt to read.
+const CHECKPOINT_MS = {};
 
 
 function sanitizeImageUrl(url) {
@@ -602,6 +606,8 @@ function renderCheckpoint(cp, id) {
   const msUrl = (L && L.meta && L.meta.feedbackToolUrl) || 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
   const canvasNote = (L && L.meta && L.meta.canvasSubmissionNote) || 'Organize your thinking here, submit your final work in Canvas.';
 
+  CHECKPOINT_MS[id] = { msMode, topic, terms: cp.terms || [] };
+
   return `
     <div class="component-note"><strong>${cp.subtitle}</strong></div>
     <div class="pop-grid">
@@ -627,32 +633,76 @@ function renderCheckpoint(cp, id) {
     ${responseBlock(id, cp.prompt, cp.responseType, cp.terms || [])}
     <div class="magicschool-bridge">
       <h3>Take Your Thinking to the AI Coach</h3>
-      <p>After drafting your response above, open the BeHistorical AI Coach. Start your message with:</p>
+      <p>After drafting your response above, build your AI Coach prompt. The coach will ask you one question at a time to strengthen your reasoning.</p>
+      <p style="font-size:.82rem;opacity:.85;margin:.5rem 0 .75rem;">Click <strong>Build My AI Coach Prompt</strong> to package your response and focus terms. Then copy it and paste it into the BeHistorical AI Coach.</p>
       <div class="copy-template">
-        <p class="copy-template-text" id="${id}-ms-preview">${topic}, ${msMode}. My response: [paste your response here]</p>
+        <p class="copy-template-text" id="${id}-ms-preview">Your AI Coach prompt will appear here after you click Build My AI Coach Prompt.</p>
       </div>
       <div class="tool-row">
-        <button class="btn secondary" type="button" onclick="copyCheckpointPrompt('${id}', '${msMode}')">Copy Prompt</button>
-        <a class="btn" href="${msUrl}" target="_blank" rel="noopener">Open AI Coach</a>
+        <button class="btn" type="button" onclick="generateCheckpointPrompt('${id}')">Build My AI Coach Prompt</button>
+        <button class="btn secondary" type="button" onclick="copyCheckpointPrompt('${id}')">Copy Prompt</button>
+        <a class="btn secondary" href="${msUrl}" target="_blank" rel="noopener">Open AI Coach</a>
       </div>
       <div id="${id}-ms-result" class="check-result"></div>
       <p class="canvas-note">${canvasNote}</p>
     </div>`;
 }
 
-// ── Checkpoint prompt copy ────────────────────────────────────────────────────
+// ── Checkpoint prompt build and copy ──────────────────────────────────────────
+//
+// Mirrors the First & 10 bridge: Build packages the drafted response into a
+// coaching prompt and shows it in the preview, Copy sends what the preview
+// shows. The preview used to be a fixed string ending in "[paste your response
+// here]" that nothing ever rewrote, so the student had no way to see that a
+// prompt could be produced at all.
 
-function copyCheckpointPrompt(responseId, msMode) {
+const CHECKPOINT_PROMPT_PLACEHOLDER = 'will appear here';
+
+function generateCheckpointPrompt(responseId) {
+  const previewEl = byId(responseId + '-ms-preview');
+  const resultEl  = byId(responseId + '-ms-result');
   const responseEl = byId(responseId);
-  const resultEl = byId(responseId + '-ms-result');
-  const topic = (L && L.meta && L.meta.topic) ? L.meta.topic : 'Topic';
+  const meta = CHECKPOINT_MS[responseId] || {};
+  const topic = meta.topic || ((L && L.meta && L.meta.topic) ? L.meta.topic : 'this topic');
+  const msMode = meta.msMode || 'Checkpoint';
+  const topicTitle = (L && L.meta && L.meta.title) ? L.meta.title : '';
+  const terms = meta.terms || [];
+
   const responseText = (responseEl && responseEl.value && responseEl.value.trim())
     ? responseEl.value.trim()
-    : '[paste your response here]';
-  const prompt = `${topic}, ${msMode}. My response: ${responseText}`;
-  navigator.clipboard.writeText(prompt)
+    : '';
+  if (!responseText) {
+    if (resultEl) resultEl.textContent = 'Draft your response above before building your prompt.';
+    return;
+  }
+
+  const lines = [
+    `${topic}, ${msMode}${topicTitle ? `, ${topicTitle}` : ''}.`,
+    `Here is my response:`,
+    ``,
+    responseText,
+    ``
+  ];
+  if (terms.length) {
+    lines.push(`The focus terms for this checkpoint are: ${terms.join(', ')}.`, ``);
+  }
+  lines.push(`Please coach me by asking one question at a time. Help me strengthen my evidence, historical reasoning, and explanation. Do not write my final answer for me.`);
+  const prompt = lines.join('\n');
+
+  if (previewEl) previewEl.textContent = prompt;
+  if (resultEl)  resultEl.textContent  = 'Prompt ready, click Copy Prompt, then paste it into the BeHistorical AI Coach.';
+}
+
+function copyCheckpointPrompt(responseId) {
+  const previewEl = byId(responseId + '-ms-preview');
+  const resultEl  = byId(responseId + '-ms-result');
+  if (!previewEl || previewEl.textContent.includes(CHECKPOINT_PROMPT_PLACEHOLDER)) {
+    generateCheckpointPrompt(responseId);
+    return;
+  }
+  navigator.clipboard.writeText(previewEl.textContent)
     .then(() => { if (resultEl) resultEl.textContent = 'Prompt copied, paste it into the BeHistorical AI Coach.'; })
-    .catch(() => { if (resultEl) resultEl.textContent = 'Copy failed. Select and copy the prompt text manually.'; });
+    .catch(() => { if (resultEl) resultEl.textContent = 'Copy failed. Select and copy the prompt text above manually.'; });
 }
 
 // ── Evidence Lab ──────────────────────────────────────────────────────────────
