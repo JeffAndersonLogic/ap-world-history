@@ -99,6 +99,31 @@
 .magicschool-bridge .check-result {
   color: var(--antique-gold);
 }
+/* The three-step order matters: the coaching sits between the first draft and
+   the gathered answer, and students were reading the bridge as a hand-in step. */
+.bridge-steps {
+  font-family: "Montserrat",Inter,Arial,sans-serif;
+  font-size: .84rem;
+  line-height: 1.5;
+  margin: .5rem 0 .9rem;
+  padding-left: 1.2rem;
+}
+.bridge-steps li {
+  margin-bottom: .35rem;
+}
+.bridge-steps strong {
+  color: var(--antique-gold);
+}
+.bridge-return {
+  font-family: "Montserrat",Inter,Arial,sans-serif;
+  font-size: .8rem;
+  line-height: 1.55;
+  margin-top: .75rem;
+  background: rgba(201,164,106,.12);
+  border-left: 4px solid var(--antique-gold);
+  border-radius: 10px;
+  padding: 11px 13px;
+}
 .inline-target-kc-row {
   display:flex;
   flex-wrap:wrap;

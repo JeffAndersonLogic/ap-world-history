@@ -633,8 +633,12 @@ function renderCheckpoint(cp, id) {
     ${responseBlock(id, cp.prompt, cp.responseType, cp.terms || [])}
     <div class="magicschool-bridge">
       <h3>Take Your Thinking to the AI Coach</h3>
-      <p>After drafting your response above, build your AI Coach prompt. The coach will ask you one question at a time to strengthen your reasoning.</p>
-      <p style="font-size:.82rem;opacity:.85;margin:.5rem 0 .75rem;">Click <strong>Build My AI Coach Prompt</strong> to package your response and focus terms. Then copy it and paste it into the BeHistorical AI Coach.</p>
+      <p>Coaching happens between your first draft and what you hand in. The coach asks one question at a time; it will not write your answer for you.</p>
+      <ol class="bridge-steps">
+        <li><strong>Draft</strong> your response in the box above.</li>
+        <li><strong>Build</strong> and copy your prompt, then paste it into the AI Coach.</li>
+        <li><strong>Come back and revise the box above</strong> using what the coaching surfaced.</li>
+      </ol>
       <div class="copy-template">
         <p class="copy-template-text" id="${id}-ms-preview">Your AI Coach prompt will appear here after you click Build My AI Coach Prompt.</p>
       </div>
@@ -644,6 +648,7 @@ function renderCheckpoint(cp, id) {
         <a class="btn secondary" href="${msUrl}" target="_blank" rel="noopener">Open AI Coach</a>
       </div>
       <div id="${id}-ms-result" class="check-result"></div>
+      <p class="bridge-return"><strong>Your revised answer in the box above is what goes to Canvas.</strong> Nothing from the AI Coach conversation is collected, so improve your own writing before you gather your work.</p>
       <p class="canvas-note">${canvasNote}</p>
     </div>`;
 }
