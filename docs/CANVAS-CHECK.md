@@ -67,11 +67,17 @@ Paste into the Canvas assignment and submit.
 
 ## Step 4, download and parse
 
-In Canvas: **Assignment → Download Submissions**. Unzip it.
+In Canvas: **Assignment → Download Submissions**.
+
+Drop the zip straight onto `teacher/skills-lens.html`. It parses in the tab and
+**Save responses.csv** writes the files out. Or, from a Terminal, unzip it and
+run:
 
 ```bash
 node scripts/parse-canvas-submissions.js ~/Downloads/submissions
 ```
+
+Both run the same parser, so it makes no difference to the check which you use.
 
 ## Step 5, diff it
 
@@ -88,7 +94,7 @@ actually wrote. Use `--answers scripts/test/fixtures/canvas-check-answers.txt`
 only when the run deliberately used that script, for the stricter character
 diff on known input.
 
-The check reports per slot and catches five distinct corruptions:
+The check reports per slot and catches six distinct corruptions:
 
 | It catches | What it means |
 |---|---|

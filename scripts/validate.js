@@ -781,6 +781,66 @@ section('Image integrity');
   sectionDone(`${checked} local image references resolve to real image files`);
 }
 
+// ── Skills Lens inlined libraries ─────────────────────────────────────────────
+//
+// The Lens reads a Canvas zip in the browser, using the identical parser the
+// command line uses. "Identical" is only true while the inlined copy matches
+// scripts/lib/canvas-parse-core.js, and nothing about an out-of-date copy looks
+// wrong on screen: the page still loads, still reads a zip, and still fills
+// every panel. It just answers a slightly different question than the CLI does,
+// and the first sign would be a handful of EDITED flags nobody can account for.
+//
+// The Lens used to carry one hand-copied function under a comment promising to
+// keep it in step by hand. This section is what replaces that promise.
+section('Skills Lens inlined libraries');
+{
+  const lens = path.join(ROOT, 'teacher', 'skills-lens.html');
+  totalChecks++;
+  const src = read(lens);
+  if (!src) {
+    err(lens, 'teacher/skills-lens.html is missing');
+  } else {
+    let build;
+    try { build = require('./build-skills-lens'); } catch (e) { build = null; }
+    if (!build) {
+      err(lens, 'scripts/build-skills-lens.js is missing, so the inlined copy cannot be checked');
+    } else {
+      const start = src.indexOf(build.OPEN);
+      const end = src.indexOf(build.CLOSE);
+      if (start === -1 || end === -1) {
+        err(lens, 'the inline-libs sentinels are gone, run node scripts/build-skills-lens.js');
+      } else {
+        // Re-derive the block from source and compare. Same computation the
+        // builder does, so there is no second implementation to drift either.
+        const wanted = build.LIBS.map(rel => {
+          const lib = read(path.join(ROOT, rel));
+          return `<script>\n/* ${rel}\n   Generated copy. Edit the source and run: node scripts/build-skills-lens.js */\n${lib}</script>`;
+        });
+        const expected = [build.OPEN].concat(wanted).concat([build.CLOSE]).join('\n');
+        if (src.slice(start, end + build.CLOSE.length) !== expected) {
+          err(lens, 'its inlined copy of the shared parser has drifted from scripts/lib/, run node scripts/build-skills-lens.js');
+        }
+      }
+      // The whole privacy argument rests on this page being unable to reach the
+      // network. A zip reader that needed fetch would have quietly required
+      // loosening it, so the policy is asserted rather than assumed.
+      totalChecks++;
+      if (!/connect-src 'none'/.test(src) || !/default-src 'none'/.test(src)) {
+        err(lens, "lost its `default-src 'none'; connect-src 'none'` policy, so student work could leave the page");
+      }
+      // A teacher tool, never linked from anything a student opens.
+      for (const file of [...lessonShells, ...unitFirst10, ...fHtmlFiles]) {
+        const page = read(file);
+        totalChecks++;
+        if (page && page.includes('skills-lens')) {
+          err(file, 'links the teacher Skills Lens from a student-facing page');
+        }
+      }
+    }
+    sectionDone(`${build ? build.LIBS.length : 0} inlined libraries match their source; page is network-locked and unlinked from student pages`);
+  }
+}
+
 // ── Summary ───────────────────────────────────────────────────────────────────
 console.log(`\n${'─'.repeat(60)}`);
 console.log(`${W}Summary${X}  |  ${totalChecks} files checked`);

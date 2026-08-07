@@ -24,7 +24,10 @@
 - `node scripts/test/lightbox-sweep.js`, open the Map and Evidence Lab modules on all 77 lesson pages and confirm every enlargeable image is an operable button. Prints only failures. Two exceptions are legitimate and the test allows them: a module with no images at all, which covers the topics with no Evidence Lab pictures and Topic 1.3, whose Map module is the course's only embedded iframe map.
 - `node scripts/verify-canvas-check.js <parsed-dir>`, diff a real Canvas round trip character by character against the text that was typed. The one thing that cannot be tested from inside the repo is what Canvas does to a pasted document. See `docs/CANVAS-CHECK.md`.
 - `node scripts/test/canvas-paragraphs.test.js`, offline check that every markup shape Canvas emits for a blank line parses back into two paragraphs, and that a soft `<br>` does not. Paragraph structure is the one corruption the manifest hash cannot catch, because the hash normalizes whitespace on purpose.
-- `node scripts/parse-canvas-submissions.js <dir>`, turn an unzipped Canvas "Download Submissions" folder into `responses.csv` (one row per student per module response) and `exceptions.csv`. Reads and writes local files only, never the network. See `docs/CANVAS-CAPTURE.md`.
+- `node scripts/parse-canvas-submissions.js <dir>`, turn an unzipped Canvas "Download Submissions" folder into `responses.csv` (one row per student per module response) and `exceptions.csv`. Reads and writes local files only, never the network. See `docs/CANVAS-CAPTURE.md`. The teacher's normal route is now dropping the zip straight on the Skills Lens; this is for a folder or a script.
+- `node scripts/build-skills-lens.js`, inline `scripts/lib/canvas-parse-core.js` and `scripts/lib/canvas-zip.js` into `teacher/skills-lens.html`. Run it after editing either lib. `--check` fails without writing, which is what `validate.js` runs. Never hand-edit between the `BEGIN INLINED LIBS` sentinels.
+- `node scripts/test/canvas-zip.test.js`, offline check of the browser zip reader against archives written by real tools, plus the parity assertion that a dropped zip and the CLI emit byte-identical `responses.csv`.
+- `node scripts/test/skills-lens-zip.test.js`, drop a real Canvas zip on the real Lens in Chromium and assert the panels populate, the CSP still blocks the network, and the saved CSV matches the CLI byte for byte.
 
 The student entry point is `index.html`. The project inventory is `docs/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file. The Google Form and the old Teacher Hub are both retired; see `docs/FORM-CONTRACT.md` and `docs/TEACHER-HUB.md`. Student work reaches the teacher through Canvas only, and the Skills Lens is the analysis surface.
 
@@ -81,11 +84,18 @@ Every picture a student can see must be on-topic and must be impossible to break
 > lightbox stayed unreachable by keyboard on every topic.
 
 > **`teacher/skills-lens.html` is the analysis surface**, and it is a teacher
-> tool: never link it from a lesson page. It reads `responses.csv` and
-> `exceptions.csv` entirely in the tab, makes no network call, and holds the
-> name-to-code crosswalk in memory only. Its denominators come from
-> `assets/data/skills-map.js`, never from what a student managed to submit,
-> because a bare n is the bug this pipeline exists to prevent.
+> tool: never link it from a lesson page. It reads the Canvas `submissions.zip`
+> directly, or `responses.csv` and `exceptions.csv`, entirely in the tab. It
+> makes no network call and holds the name-to-code crosswalk in memory only. Its
+> denominators come from `assets/data/skills-map.js`, never from what a student
+> managed to submit, because a bare n is the bug this pipeline exists to prevent.
+>
+> **The parser inside it is not a copy, it is the same file.**
+> `scripts/lib/canvas-parse-core.js` is required by the CLI and inlined into the
+> Lens by `scripts/build-skills-lens.js`. Two implementations would mean two
+> answers to "did this student edit their work" depending on which door the
+> teacher used. `validate.js` re-derives the inlined block and fails on drift, and
+> `scripts/test/canvas-zip.test.js` asserts both paths emit byte-identical CSV.
 
 > **Before touching the Gather All My Work panel or its record footer, read
 > `docs/CANVAS-CAPTURE.md`.** Both renderers emit the footer and one parser reads

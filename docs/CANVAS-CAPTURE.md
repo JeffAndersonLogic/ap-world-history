@@ -6,7 +6,9 @@ pipeline refuses to do quietly.
 This is the counterpart to `docs/FORM-CONTRACT.md`. That file documents state
 living in Google that code cannot verify. This one documents a contract that is
 entirely inside the repository, which is the point: everything here is checkable
-by running `node scripts/parse-canvas-submissions.js`.
+by running `node scripts/parse-canvas-submissions.js`, or by dropping the
+Canvas zip on `teacher/skills-lens.html`, which runs the identical parser in the
+browser.
 
 ---
 
@@ -32,10 +34,29 @@ lesson page draft boxes (localStorage)
   -> Gather All My Work        buildWorkDocument() in either renderer
   -> clipboard                 text/html and text/plain, both carry the manifest
   -> Canvas Text Entry         one assignment per topic
-  -> Download Submissions      one HTML file per student
-  -> scripts/parse-canvas-submissions.js
+  -> Download Submissions      submissions.zip, one HTML file per student
+  ->                           either door, same answer:
+       teacher/skills-lens.html      drop the zip, parsed in the tab
+       scripts/parse-canvas-submissions.js   for a folder, from a Terminal
   -> responses.csv + exceptions.csv
 ```
+
+**Both doors run the same parser.** `scripts/lib/canvas-parse-core.js` is the one
+implementation; the CLI requires it and `scripts/build-skills-lens.js` inlines
+the identical bytes into the Lens. Two copies of a hash rule would mean two
+answers to "did this student edit their work" depending on which route the
+teacher took, and the copy that disagreed would not announce itself. It would
+surface as a few EDITED flags nobody could account for.
+
+The guard is mechanical, not a promise: `validate.js` re-derives the inlined
+block from source and fails the build the moment it drifts. The parity assertion
+in `scripts/test/canvas-zip.test.js` goes further and checks the two paths emit
+byte-identical `responses.csv` on the same input.
+
+Row order is therefore fixed inside `buildTable`, not left to the caller. A
+directory read and a zip hand over entries in different orders, and without a
+sort the two doors produce the same rows in different sequences, which makes the
+parity check meaningless.
 
 Two renderers emit the manifest and they must stay in lockstep:
 
@@ -115,6 +136,25 @@ submission reports `0 of 9` instead of looking like a student who wrote nothing.
 
 ## USAGE
 
+### The normal way, no Terminal
+
+Open `teacher/skills-lens.html` and drop the `submissions.zip` on it, straight
+from Canvas. Drop the roster CSV alongside it in the same go and class periods
+come with it. **Save responses.csv** writes the CSVs back out if you want the
+files.
+
+The Lens reads the zip with `DecompressionStream`, which is native in every
+current browser, so there is no library and no build step at the teacher's end.
+Its Content-Security-Policy is `default-src 'none'` with `connect-src 'none'`:
+the page cannot reach the network at all, which is not a policy choice it makes
+at runtime but a restriction the browser enforces on it.
+
+The Terminal step existed only because nothing had read a zip in the browser
+yet. Asking a teacher to type a folder path in the five minutes before a bell is
+how a pipeline goes unused.
+
+### The command line, for a folder or a script
+
 ```bash
 node scripts/parse-canvas-submissions.js ~/Downloads/submissions
 node scripts/parse-canvas-submissions.js ~/Downloads/submissions \
@@ -123,7 +163,13 @@ node scripts/parse-canvas-submissions.js ~/Downloads/submissions \
 
 The input is an unzipped Canvas **Download Submissions** folder. Canvas names
 each file `lastnamefirstname_<userid>_<submissionid>_<assignment>.html`, and that
-filename is the only place the student's identity appears. The paste itself
+filename is the only place the student's identity appears.
+
+It does not always write both ids. The 2026-08-07 test-student download came
+back as `studenttest_LATE_310529_text.html`, with one. The parser takes however
+many are there; with one it keeps it as the submission id rather than guessing it
+is a user id, because `canvas_user_id` is the roster's first join key and a wrong
+key is worse than an absent one. The paste itself
 deliberately carries no name, so a mispaste into the wrong assignment is a
 misfiled response rather than a disclosure.
 
@@ -131,9 +177,11 @@ misfiled response rather than a disclosure.
 either an id column or a name column; names are squashed to the same shape Canvas
 writes into filenames, so `Anderson, Jeff` joins to `andersonjeff`.
 
-**The script makes no network calls, and it must stay that way.** The folder it
-reads is identifiable student work. The moment this can reach the internet it
-becomes a data flow somebody has to govern.
+**Neither door makes a network call, and it must stay that way.** What they read
+is identifiable student work. The moment either can reach the internet it becomes
+a data flow somebody has to govern. `validate.js` asserts the Lens still carries
+its `connect-src 'none'` policy, and `scripts/test/skills-lens-zip.test.js`
+watches a real browser session for any request that tries to leave the page.
 
 ---
 
