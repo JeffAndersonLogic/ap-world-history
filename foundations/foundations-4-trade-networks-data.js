@@ -270,13 +270,13 @@ window.FOUNDATION_TOPIC = {
 
   videos: [
     {
-      title: 'Heimler\'s History: The Silk Roads (Unit 2)',
-      url: 'https://www.youtube.com/watch?v=4zL8DsGqf_I',
-      youtubeId: '4zL8DsGqf_I',
+      title: 'The SILK ROADS [AP World Review, Unit 2 Topic 1]',
+      url: 'https://www.youtube.com/watch?v=daiQ6aChKfk',
+      youtubeId: 'daiQ6aChKfk',
       prompt: 'Watch for: what moved through the Silk Roads besides silk? How did the Mongol Empire change the network after c.1200, and what does that tell you about how trade networks depend on political conditions?'
     },
     {
-      title: 'Crash Course World History: The Silk Road',
+      title: 'TED-Ed: The Silk Road, Connecting the Ancient World Through Trade',
       url: 'https://www.youtube.com/watch?v=vn3e37VWc0k',
       youtubeId: 'vn3e37VWc0k',
       prompt: 'Watch for: the specific non-goods John Green identifies moving through the Silk Roads. Can you add examples from Foundations 4 that he doesn\'t mention?'

@@ -168,8 +168,9 @@ window.BEHISTORICAL_LESSON = {
     ],
     videos: [
       {
-        title: 'Heimler AP World 1.3 — South and Southeast Asia',
-        url: 'https://www.youtube.com/results?search_query=Heimler+AP+World+1.3+South+and+Southeast+Asia',
+        title: 'State Building in SOUTH Asia & SOUTHEAST Asia [AP World Review, Unit 1 Topic 3]',
+        url: 'https://youtu.be/AMGPVDvo2VE',
+        youtubeId: 'AMGPVDvo2VE',
         previewImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
         prompt: 'Watch for states, religions, and Indian Ocean trade connections. Pause and note examples of the Bhakti movement, Sufism, and Buddhist monasticism.'
       }
