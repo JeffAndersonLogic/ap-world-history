@@ -1,514 +1,68 @@
-# Google Form Capture Contract
+# Google Form Capture Contract, RETIRED 2026-08-07
 
-**Last verified: 2026-08-03** — **live submission confirmed by the teacher, all
-seven fields landing in the sheet, including Student Response.** Prompt ID is now
-a short-answer question. Student Response entry ID corrected to
-`entry.1818136905` from a Google-generated pre-filled link, after the previous
-value turned out to be wrong and silently ignored. Capture scope restored
-to three touchpoints after a same-day expansion and revert.
+**This pipeline no longer exists.** The Google Form, its prefill contract, the
+`BH_FORM` config, and every Submit to Form button were removed on 2026-08-07.
+Student work reaches the teacher through Canvas only. See
+`docs/CANVAS-CAPTURE.md`.
 
-This file records state that lives in Google, not in this repository. Nothing
-here can be verified by reading code. If you are an agent working on capture,
-read this before changing anything.
+Nothing in this file describes live behavior. It is kept as the record of why
+the form was retired, because the reasons are the design constraints on whatever
+replaces it.
 
 ---
 
-## THE GOVERNING RULE
+## WHY IT WAS RETIRED
 
-**The Google Form conforms to the site. Never the reverse.**
+**It failed silently, twice, and the failures were invisible by construction.**
+Prefill matching was character-exact with no error and no log. An en dash
+against a hyphen dropped the Topic field on all six Foundations lessons for an
+unknown period. A wrong entry ID (`entry.1845180246` instead of
+`entry.1818136905`) discarded every Student Response for an unknown period. Both
+were found by accident. In each case the form still opened, still submitted, and
+still thanked the student.
 
-When a value the site sends does not match a Google Form dropdown option, the
-fix is to edit the form option. Do NOT edit site files to match the form.
+**Identity was a text box.** The student typed their own name on every
+submission, so `Jaden R.`, `jaden r` and `Jaden Ramirez` were three students to
+any analysis, and no row could be attributed with confidence.
 
-Reason: one form edit takes a minute. The equivalent site change touches
-80+ files and permanently changes the naming convention every future lesson
-inherits.
+**It covered 3 of 9 capture points.** First & 10, Checkpoint 1, Checkpoint 2.
+Six modules of student writing were never collected at all.
 
-**The one exception, already exercised:** Unit 1 topics 1.5, 1.6, 1.7. The form
-had drifted off the College Board CED. The form was corrected to match the site,
-because the site's names track the CED. CED compliance outranks the governing
-rule.
+**The analysis layer read a public endpoint.** The Apps Script web app was
+deployed as "Anyone with the link" and returned named student responses over an
+unauthenticated URL, with the dashboard caching that URL in `localStorage` on a
+public GitHub Pages origin.
 
----
-
-## THE FAILURE MODE YOU MUST UNDERSTAND
-
-Google Forms prefill matching is **character-exact and silent**.
-
-If the site sends `Foundations 1 - Geography` (hyphen) and the form option reads
-`Foundations 1 – Geography` (en dash), the form does not error, does not warn,
-and does not log. It leaves the field blank and accepts the submission.
-
-This exact mismatch silently dropped Topic on all six Foundations lessons for an
-unknown period. It was invisible in testing because the form still opened and
-still submitted.
-
-**Corollary:** never "clean up" or normalize a dash, an ampersand, a spacing
-choice, or capitalization in any capture string. Character-exact or don't touch.
+**Two collection channels split the record.** Once Canvas held the graded work,
+a parallel copy in a Google Sheet nobody owned on paper was a liability, not a
+backup.
 
 ---
 
-## THE PIPELINE
+## WHAT REPLACED IT
 
-```
-Lesson shell HTML
-  -> topic data JS  (defines T.id, embedUrl)
-  -> renderer JS    (builds Submit to Form buttons)
-  -> buildFormURL() in assets/js/behistorical-form-config.js
-  -> prefilled Google Form URL
-  -> Google Sheet
-  -> Apps Script (tools/teacher-hub/google-apps-script/Code.gs)
-```
-
-`assets/js/behistorical-form-config.js` is the **single source of truth** for
-every string the site sends. Entry IDs, unit names, topic names, response types,
-prompt-ID slugs, and skill tags all live there. Read it before assuming anything.
+`docs/CANVAS-CAPTURE.md`. Both renderers assemble every response into one
+document with a machine-readable record footer; the student pastes it into a
+Canvas Text Entry assignment; `scripts/parse-canvas-submissions.js` turns a
+Download Submissions folder into a long-format table and an exceptions report.
+Identity comes from the Canvas roster. Nothing is dropped silently.
 
 ---
 
-## FIELD MAP
-
-| Field | Entry ID | Source |
-|---|---|---|
-| Unit | `entry.125385659` | `BH_FORM.units` |
-| Topic | `entry.187055090` | `BH_FORM.topics` |
-| Prompt ID | `entry.1549761827` | derived, see below |
-| Response Type | `entry.2107637366` | `BH_FORM.responseTypes` |
-| Skill Focus | `entry.1963461515` | `BH_FORM.skills`, checkbox, repeats |
-| Class Period | `entry.1794755975` | student selects, not prefilled |
-| Student Response | `entry.1818136905` | pre-filled from the card's textarea at click time |
-
-`entry.1818136905` was obtained on 2026-08-03 from **Google's own "Get pre-filled
-link"** feature, which is the only trustworthy source for an entry ID.
-
-### THE WRONG-ID EPISODE, read this before trusting any entry ID
-
-Earlier the same day, capture was wired to `entry.1845180246` for Student
-Response. That ID was **wrong**. It had appeared in seven Unit 8 and Unit 9 First
-& 10 wrappers since they were generated, and its presence in working-looking code
-was mistaken for evidence that it worked. It was never verified against the form.
-Note that the 2026-08-01 verification entry below lists Unit, Topic, Prompt ID and
-Skill Focus as confirmed prefilling, and pointedly not Student Response.
-
-**Google silently ignores an unknown `entry.*` parameter.** The form opened, every
-other field filled, the submission succeeded, and Student Response stayed empty.
-Browser tests passed the whole time, because they asserted the response reached
-the **URL**, which it did. Reaching the URL and reaching the form are different
-claims.
-
-**The rule: never infer an entry ID from existing code, and never from any
-source other than a pre-filled link generated by the form itself.** Form editor,
-⋮ menu, Get pre-filled link, type a sentinel into the field, Get link, read the
-`entry.*` back. Sixty seconds, and it is the only method that cannot be wrong.
-
-**The corollary for testing:** a browser test can only prove the URL is built
-correctly. Only a real submission proves a field lands. State which of the two you
-have done.
-
-**Resolved.** `entry.1818136905` was confirmed by real submissions on 2026-08-03,
-from a First & 10 and from a Checkpoint 1, both landing in the sheet with Student
-Response populated. That is a submission test, not a URL test.
-
-Do not hardcode these anywhere. Read them from `BH_FORM.fields`.
-
----
-
-## KEY FORMAT TRAP
-
-Foundations data files set `T.id` to `foundations-0` … `foundations-5`.
-`buildFormURL(topicKey, ...)` expects the config's topic keys: `f0` … `f5`.
-
-Passing `T.id` directly does NOT throw. It produces a URL with the **Unit
-parameter silently missing**, because the internal regex `/^f(\d+)$/` fails to
-match and the unit lookup falls through to an empty string. The Prompt ID still
-comes out correct, which makes the bug look like it worked.
-
-Always convert:
-
-```js
-var topicKey = String(T.id || '').replace(/^foundations-(\d+)$/, 'f$1');
-```
-
-Then assert `BH_FORM.topics[topicKey]` exists before building a URL. If it does
-not, render no button. A button that opens a bare form is worse than no button.
-
----
-
-## PROMPT ID CONVENTION
-
-`promptId = {promptKey}-{slug}`
-
-- Unit topics: promptKey is the topic key, e.g. `4.1` -> `4.1-checkpoint-1`
-- Foundations: `f1` converts to `foundations-1` -> `foundations-1-checkpoint-1`
-
-Slugs (`BH_FORM.slugs`):
-
-| Response type key | Slug | Response Type string |
-|---|---|---|
-| `first10` | `first10` | `First and 10` |
-| `skillBuilder` | `ap-skill-builder` | `AP Skill Builder` |
-| `checkpoint1` | `checkpoint-1` | `Checkpoint 1` |
-| `evidenceLab` | `evidence-lab` | `Evidence Lab` |
-| `primarySource` | `primary-source` | `Primary Source` |
-| `beInTheRoom` | `beintheroom` | `BeInTheRoom` |
-| `checkpoint2` | `checkpoint-2` | `Checkpoint 2` |
-
-Note `First and 10` is spelled out. It is **not** `First & 10`.
-
----
-
-## WHAT THE FORM CURRENTLY CONTAINS
-
-Verified by hand on 2026-08-01, amended 2026-08-03 (see the boxed note below).
-
-**Unit dropdown** — includes `Foundations - How World History Works` plus
-Units 1 through 9.
-
-**Topic dropdown** — all six Foundations topics present with plain hyphens:
-
-```
-Foundations 0 - Intro to BeHistorical
-Foundations 1 - Geography
-Foundations 2 - Belief Systems
-Foundations 3 - States & Power
-Foundations 4 - Trade Networks
-Foundations 5 - World at 1200
-```
-
-Unit 1 topics 1.5 / 1.6 / 1.7 corrected to the CED-aligned site names.
-Units 2 through 9 topic names were already correct.
-
-> ### FORM CHANGED 2026-08-03. PROMPT ID IS NO LONGER A DROPDOWN.
->
-> Two edits were made by hand on the live form and **verified against a prefilled
-> link with the entry IDs unchanged**:
->
-> **1. Prompt ID converted from a dropdown to a short-answer question.** The 474
-> options are gone. This is the single most useful change ever made to this form:
-> short answer accepts any value, so **the silent-drop failure mode for Prompt ID
-> no longer exists** and the option list never needs maintaining again, including
-> for lessons added later. Do not convert it back.
->
-> **2. Three Response Type options added:** `Map Check`, `BeSurreal`,
-> `Socrates AI Coach`. These are currently **unused**. They were added for an
-> expansion that was reverted the same day. Harmless per the rule above, extra
-> options never cause failures, and they are ready if one of those touchpoints is
-> ever turned on. `Code.gs` would need them added to `BEHISTORICAL_CONFIG.responseTypes`
-> at that point.
->
-> **The conversion preserved the entry ID.** Verified by loading a prefilled link
-> for `foundations-0-checkpoint-1`: Topic, Prompt ID and Response Type all
-> populated, so `entry.1549761827` and `entry.2107637366` are unchanged. This
-> mattered because Google assigns a **new** entry ID to a question that is deleted
-> and recreated rather than converted, and the site would then have written to a
-> field that no longer existed, silently, on every submission.
->
-> **Prompt ID appears to have lost its Required flag** in the conversion; it no
-> longer shows an asterisk while Topic and Response Type do. Harmless while every
-> capture link prefills it. Re-checking Required is a cheap safeguard against a
-> hand-typed submission arriving with no Prompt ID.
->
-> If a future change adds a capture point, the checklist at the bottom of this
-> file still applies, but step 3 is now free: any Prompt ID string works.
-
-**Prompt ID** — **short-answer question as of 2026-08-03.** No option list, so
-there is nothing to audit and nothing to maintain. Any value the site sends is
-accepted verbatim.
-
-The 474 dropdown options it used to carry are gone, along with the legacy `f1-*`
-through `f5-*` entries and the position table that used to live here. None of it
-is needed: a short-answer field cannot silently drop a value for not being on a
-list, which was the only reason that inventory existed.
-
-What the site actually sends is derived, never hand-maintained. See PROMPT ID
-CONVENTION above; `buildFormURL()` composes `{promptKey}-{slug}` from
-`BH_FORM.slugs`. Currently three slugs are in use: `first10`, `checkpoint-1`,
-`checkpoint-2`.
-
-**Response Type** — multiple choice, required, ten options. Seven are sent by the
-site; the last three are unused, added 2026-08-03 for the reverted expansion:
-
-```
-First and 10          <- sent (capture wrapper)
-AP Skill Builder         unused, no button built
-Checkpoint 1          <- sent
-Evidence Lab             unused, no button built
-Primary Source           unused, no button built
-BeInTheRoom              unused, never built
-Checkpoint 2          <- sent
-Map Check                unused, added 2026-08-03
-BeSurreal                unused, added 2026-08-03
-Socrates AI Coach        unused, added 2026-08-03
-```
-
-**Skill Focus** — checkbox question, marked required. Nine options, in this
-order on the form:
-
-1. `Causation`
-2. `Comparison`
-3. `Continuity and Change Over Time (CCOT)`
-4. `Contextualization`
-5. `Argumentation`
-6. `Evidence Usage`
-7. `Sourcing`
-8. `Complexity`
-9. `Claims & Thesis`
-
-Verified 2026-08-01 against the complete `BH_FORM.skills` map — every topic,
-every response type. The site sends exactly eight distinct values across the
-entire course: `Argumentation`, `Causation`, `Claims & Thesis`, `Comparison`,
-`Contextualization`, `Continuity and Change Over Time (CCOT)`, `Evidence Usage`,
-`Sourcing`. All eight are present on the form. `Complexity` exists on the form
-but is never sent by any capture button — harmless.
-
-**This field cannot silently drop.** Extra options on the form are harmless;
-only missing ones cause failures.
-
-Note that Foundations checkpoints use a five-value subset. Five is not the
-ceiling — the unit topics use all eight.
-
----
-
-## KNOWN GAPS
-
-**THE CEILING HOLDS. It was lifted on 2026-08-03 and restored the same day.**
-
-Read this before you touch capture scope, because the mistake has now been made
-once and the reasoning is what stops it happening again.
-
-Three touchpoints are built: **First & 10, Checkpoint 1, Checkpoint 2.** Map,
-BeSurreal, AP Skill Builder, Evidence Lab, Primary Source and Socrates AI Coach
-keep their draft boxes and are localStorage-only **by design**.
-
-**Why an expansion looks like a fix and is not one.** On 2026-08-03 the modules
-with draft boxes but no Submit button were read as a wiring bug, and capture was
-expanded to eight touchpoints. It was reverted before students saw it. The
-expansion was aimed at the wrong problem:
-
-- A Submit to Form button does **not** make a draft durable. The text still lives
-  only in `localStorage` until the student remembers to click Submit on that
-  specific box. Eight buttons per lesson is eight things to forget.
-- The Form is **not the grading path and never was.** There is no Canvas
-  integration in this repository. The architecture is: BeHistorical is the
-  thinking space, MagicSchool is the coaching layer, **Canvas is the graded
-  submission point, and the student carries work there manually.** The Form is a
-  narrow teacher-visibility channel feeding a Sheet.
-- What students actually needed was durability and a path to Canvas. That is
-  **autosave plus "Copy All My Work"**, not more form touchpoints.
-
-So: if you find yourself about to add a capture point because a draft box "goes
-nowhere", it does not go nowhere. It autosaves, and Copy All My Work carries it
-to Canvas. Ask before expanding.
-
-**How the built buttons work.** Both renderers build them from
-`buildCaptureButton()` in `assets/js/behistorical-form-config.js`, inside the
-same `.tool-row` as Save Draft and Copy Response, never outside the card.
-
-`autoBuildCaptureUrls()` **merges** into `L.captureUrls` rather than replacing
-it, because topics 7.9 and 8.9 define bespoke `matrix*` capture keys that their
-own module renderers read. Replacing the object outright deletes those buttons
-silently. It does overwrite the standard keys, deliberately: hand-written
-`captureUrls` in `assets/data/` dropped Prompt ID and Skill Focus on 22 topics.
-
-**First & 10 has no button on the lesson page.** Its capture lives in the capture
-wrapper, which already prefills the response. A second button on the lesson page
-would open a form with nothing in it, because the reading is inside an iframe.
-
-**BeInTheRoom was never built.** `BeInTheRoom` is a valid Response Type and
-`beintheroom` is a valid slug, but no `*-beintheroom` prompt IDs exist on the
-form, module 09 is an external link with no textarea, and neither renderer builds
-a button. Earlier notes list it as one of the touchpoints. Those notes are
-aspirational, not a description of the code. Wiring it means either adding a
-debrief textarea to the 61 scenario pages under `beintheroom/`, or breaking the
-exactly-10-modules rule in `CLAUDE.md`.
-
-**Wrapper patterns, FIXED 2026-08-03.** All 77 First & 10 capture wrappers now
-prefill Student Response via `entry.1818136905` and open exactly one tab. Three
-divergent patterns were reconciled, and two were actively broken:
-
-- **57 files** (Units 1 to 5, 7, parts of 8, all Foundations) copied to the
-  clipboard and opened a bare form. The student had to paste. Now the response
-  rides in the URL; the clipboard copy stays as a fallback.
-- **13 files** (mostly Unit 6, plus Unit 9 topics 9.4 to 9.9) overwrote
-  `submitToGoogleForm` with a plain form open: **no clipboard copy and no
-  prefill**, so the student landed on a form with a required Student Response
-  field and nothing to paste. This was worse than the note this paragraph
-  replaces described, and it affected 13 topics rather than one.
-- **7 files** (Unit 8 topics 8.6 to 8.9, Unit 9 topics 9.1 to 9.3) already
-  prefilled, but **opened two tabs per click and the first one had no response**.
-  The reading's button uses an inline `onclick="submitToGoogleForm()"`, and
-  `preventDefault()` on an added listener does not stop an inline handler, so the
-  child's own bare-form submit fired alongside the wrapper's prefilled one. A
-  student who used the first tab submitted an empty response.
-
-**The lesson: overwrite `w.submitToGoogleForm`, never add a listener beside it.**
-The reading calls it from an inline `onclick`, which no added listener can
-suppress. Every wrapper now follows that one shape.
-
-Verified by driving all 77 wrappers in Chromium: questions filled, submit
-clicked, exactly one tab per click, response and all five metadata fields present
-in every URL.
-
-**Teacher Hub.** PR #7 is unmerged. Deployed Apps Script is a Topic-1.1
-prototype. `onOpen` fails, which removes the custom spreadsheet menu but does not
-affect data capture. `TeacherHub_Settings` is empty; `TeacherHub_Analysis` is
-stale and hardcoded.
-
-**Apps Script column access.** `Code.gs` resolves columns by header name via
-`HEADER_ALIASES` and `headers.indexOf(...)`, not by position. Reordering or
-deleting sheet columns is therefore safe. The only positional `getRange` calls
-write to the Teacher Hub output tabs.
-
----
-
-## BEFORE ADDING ANY NEW CAPTURE POINT
-
-1. Confirm the response type key exists in `BH_FORM.responseTypes` and
-   `BH_FORM.slugs`.
-2. Compute the resulting Prompt ID string and write it down.
-3. ~~Add that Prompt ID to the live Google Form dropdown before shipping.~~
-   **No longer required.** Prompt ID became a short-answer question on
-   2026-08-03, so any value is accepted. This step used to be the one people
-   skipped and the one that cost days. It is now free.
-4. Confirm any Skill Focus values you introduce exist in the form's Skill Focus
-   options.
-5. Update the "WHAT THE FORM CURRENTLY CONTAINS" section above.
-
-Step 3 is the one people skip. It is the one that costs days.
-
----
-
-## CACHE-BUSTING
-
-Lesson shells load the renderer with `?v=N`. Data files and capture wrappers are
-also versioned. **Bump the version on every capture-related edit.**
-
-### THE TWO-LEVEL TRAP, hit on 2026-08-03
-
-A wrapper's URL lives **inside** the data file, as `first10.embedUrl`. So bumping
-the wrapper's `?v=` alone changes nothing a browser can see:
-
-```
-shell:      data-file.js?v=3                      <- unchanged, so CACHE HIT
-data file:      embedUrl '...capture.html?v=NEW'   <- the new value never arrives
-browser:    loads the OLD wrapper from cache
-```
-
-The wrapper fix was correct, the tests passed, and the live site still served the
-old wrapper with no prefill, because the browser never re-read the data file that
-points at it.
-
-**The rule: when you change a capture wrapper, bump the DATA FILE's own `?v=` in
-the shell too.** Changing `embedUrl` without that is a no-op in a warm browser.
-Safest is to give every `.js` reference in the shell one shared tag, so the whole
-chain revalidates together:
-
-```
-shell -> form-config.js -> data.js -> renderer-config.js -> renderer.js
-```
-
-### TESTING THAT WOULD HAVE CAUGHT IT
-
-Loading a capture wrapper **directly** by URL tests the wrapper and nothing else.
-It cannot catch a stale chain, because it skips the shell and the data file
-entirely. That is exactly how this defect passed a 77-wrapper sweep.
-
-Test from the **lesson page**: open the First & 10 module, let the wrapper load
-inside the modal, then read the iframe's `src` and confirm it carries the version
-you expect. `scratchpad/verify-chain.js` in the 2026-08-03 session did this and
-found it immediately.
-
-A stale cached copy of a capture wrapper produced a bare, parameter-free form URL
-that could not be explained by reading current source, and burned a full
-debugging session. `scripts/validate.js` strips query strings before resolving
-`embedUrl` paths, so versioning will not trip the build gate.
-
----
-
-## VERIFICATION HISTORY
-
-**2026-08-03 (late) — SUBMISSION TEST PASSED.** Two real submissions, one First
-& 10 and one Checkpoint 1, both arrived in the sheet with all prefilled fields
-populated including Student Response. This closes the wrong-entry-ID defect and is
-the first end-to-end confirmation in this session that is not merely a URL check.
-
-Fixed the same day, after the capture work below appeared to be finished:
-
-1. **Wrong Student Response entry ID.** `entry.1845180246`, inherited from
-   generated wrappers and never verified, silently ignored by Google. Corrected to
-   `entry.1818136905` across 80 files.
-2. **Two-level cache trap.** Wrapper `embedUrl` was bumped without bumping the
-   data file's own `?v=`, so a warm browser kept loading the old wrapper. Every
-   `.js` reference in all 77 shells now shares one tag.
-3. **Copy All My Work upgraded to a worksheet.** Topic ID and title as the
-   heading, then module header, question and response per section, with bold
-   carried through a `text/html` clipboard flavour.
-
-**2026-08-03 — Capture scope expanded, reverted, and the form simplified.**
-
-Sequence, because the order is the lesson:
-
-1. Modules with draft boxes but no Submit button were read as a wiring bug.
-   Capture was expanded to eight touchpoints across both renderers.
-2. The teacher recognised it as the decision already made and reversed in June,
-   and asked for a revert. Nothing had reached students.
-3. Reverted to three touchpoints. The real problem was durability and the Canvas
-   hand-off, addressed instead by autosave and a "Copy All My Work" panel.
-
-**The reasoning error worth remembering:** a Submit to Form button was treated as
-the fix for "the response goes nowhere". It is not. It adds a click the student
-must remember, and it sends work to a Sheet, which is neither durable storage for
-the student nor Canvas. Durability is autosave. Canvas is Copy All My Work.
-
-Repo commits on `claude/behistorical-form-buttons-lr4nzy`:
-- `f368b53` — capture bug fixes, 103 files. Stray `#form-capture` sections removed
-  from 1.2 / 1.3 / 1.5; hand-written `captureUrls` removed from 22 data files,
-  which had been dropping Prompt ID; `entry.1818136905` recovered so Student
-  Response prefills; `submitResponseToGoogleForm` deduplicated into the config.
-- `4f2b2bc` — expansion reverted, three bug fixes kept.
-- `4930475` — autosave on typing, plus the Copy All My Work panel injected after
-  the module grid on all 77 lessons.
-
-Form-side changes (manual, outside the repo), verified against a prefilled link:
-- Prompt ID: **Dropdown converted to Short answer.** Entry ID preserved.
-- Response Type: three options added, currently unused.
-
-Three defects fixed, none of which threw an error:
-1. Prompt ID silently blank on 22 topics, because a hand-written `captureUrls`
-   short-circuited the auto-builder.
-2. Student Response never prefilled outside seven capture wrappers, so students
-   had to paste into a required field.
-3. Drafts lost on tab close, because persistence depended on pressing Save Draft.
-
-Verified in Chromium, not just `validate.js`: 77 lessons, 624 module cards, 154
-submit buttons, all Checkpoint 1 or Checkpoint 2, all inside a card, all six
-fields present. Autosave survived a reload for all 19 test responses across three
-lessons.
-
-**2026-08-01 — Full pipeline verified end-to-end.**
-
-Repo commits:
-- `0007ab2` — Foundations capture parity, 20 files. Checkpoint 1 and Checkpoint 2
-  wired into `foundations/foundations-topic-renderer.js`. Renderer cache-bust
-  `?v=6` → `?v=7` across six shells. Malformed `?v=2?replaced` corrected to
-  `?v=3` in foundations-1 through foundations-4. `scripts/validate.js` line ~356
-  fixed to strip query strings before path resolution.
-- `5cd7e3c` — this contract document plus the `CLAUDE.md` pointer.
-
-Form-side changes (manual, outside the repo):
-- Unit dropdown: added `Foundations - How World History Works`
-- Topic dropdown: all six Foundations topics added with plain hyphens
-- Unit 1 topics 1.5 / 1.6 / 1.7 corrected to CED-aligned site names
-- Prompt ID: 12 checkpoint options added (see table above)
-- Skill Focus: confirmed complete, no edits needed
-
-Four defects repaired, none of which threw an error:
-1. Unit parameter silently dropping on the `foundations-N` → `fN` key mismatch
-2. Checkpoint 1 and Checkpoint 2 had no capture path at all
-3. Stale browser cache serving a parameter-free form URL absent from all source
-4. Form drift off CED naming on three Unit 1 topics
-
-**`scripts/validate.js` passing does NOT indicate correct behavior.** Every
-defect listed above passed validation. The validator checks structural
-well-formedness, not runtime behavior. Do not treat a green validate run as
-evidence that capture works.
+## IF YOU ARE THINKING OF WIRING IT BACK UP
+
+Read the failure list above first, then note the guarantees the replacement
+provides that the form did not: a denominator that comes from the lesson rather
+than from what the student managed to submit, an exception for every response
+that should exist and does not, and identity from an SIS-synced roster instead
+of a text box.
+
+`scripts/validate.js` enforces the retirement. Its "Google Form retirement and
+MagicSchool wiring" section fails the build if a form URL, `BH_FORM`,
+`submitToGoogleForm`, `buildGooglePrompt`, or the old config file reappears on
+any student-facing surface. `scripts/remove-google-form-capture.js` is the
+idempotent cleanup if one does.
+
+**MagicSchool is not part of this.** It was never a capture channel, it is where
+students take their thinking to be questioned, and every AI Coach prompt builder
+and Open MagicSchool button stays.

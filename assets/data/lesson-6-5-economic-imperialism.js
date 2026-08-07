@@ -159,7 +159,7 @@ window.BEHISTORICAL_LESSON = {
   },
   first10: {
     title: 'First & 10: Economic Imperialism',
-    embedUrl: 'first-and-10-topic-6-5-economic-imperialism-capture.html?v=response-id-fix-v1',
+    embedUrl: 'first-and-10-topic-6-5-economic-imperialism-capture.html',
     note: 'Read the narrative, answer all three questions, build your feedback prompt, and return to the lesson path.'
   },
   evidenceLab: {

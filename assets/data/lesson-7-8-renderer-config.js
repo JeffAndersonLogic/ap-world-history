@@ -120,8 +120,6 @@
   // Replaces BeInTheRoom for Topic 7.8. Students analyze as historians; they
   // never role-play as participants in a genocide.
 
-  var MATRIX_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+7+-+Global+Conflict&entry.187055090=7.8+-+Mass+Atrocities&entry.1549761827=7.8-matrix-analysis&entry.2107637366=BeInTheRoom';
-
   function matrixRow(caseName, regime, conditions, target, consequences) {
     var cs = 'padding:.55rem .8rem;border:1px solid var(--gunmetal-gray,#3E4447);color:var(--warm-paper,#F5F0E7);line-height:1.55;vertical-align:top;';
     return '<tr>' +
@@ -159,7 +157,6 @@
       '<div class="tool-row">' +
       '<button class="btn" type="button" onclick="saveDraft(\'matrix-response\')">Save Draft</button>' +
       '<button class="btn secondary" type="button" onclick="copyResponse(\'matrix-response\')">Copy Response</button>' +
-      '<a class="btn-capture" href="' + MATRIX_FORM_URL + '" target="_blank" rel="noopener">Submit to Form</a>' +
       '</div>' +
       '<div id="matrix-response-result" class="check-result"></div>' +
       '<p class="canvas-note">' + canvasNote + '</p>' +

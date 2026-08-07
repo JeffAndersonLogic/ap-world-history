@@ -139,7 +139,7 @@ window.BEHISTORICAL_LESSON = {
   },
   first10: {
     title: 'First & 10: Globalized Culture After 1900',
-    embedUrl: 'first-and-10-topic-9-6-globalized-culture-capture.html?v=response-id-fix-v1',
+    embedUrl: 'first-and-10-topic-9-6-globalized-culture-capture.html',
     note: 'Read the narrative, answer three AP-thinking questions, build your coach prompt, and return to Topic 9.6.'
   },
   lecture: {

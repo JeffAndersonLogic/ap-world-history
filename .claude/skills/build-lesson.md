@@ -17,7 +17,7 @@ From the topic number, derive:
 - `topicSeq` = integer after the dot (e.g., `3`)
 - `topicKey` = `"6.3"`
 - `unitFolder` = `"unit-6"`
-- `unitLabel` = look up from `BH_FORM.units[unitNum]` in `assets/js/behistorical-form-config.js`
+- `unitLabel` = the College Board unit name, e.g. `"Unit 6 - Consequences of Industrialization"`
 - `slug` = lowercase, hyphenated version of the title (e.g., `indigenous-responses`)
 - `topicLabel` = `"6.3 - Indigenous Responses to State Expansion"`
 
@@ -34,9 +34,8 @@ Copy the template from `assets/templates/behistorical-topic-template-v1.html` an
 - `UNIT_LABEL` → `"Unit {N}"`
 - `TOPIC_DATA_FILE` → `lesson-{unitNum}-{topicSeq}-{slug}`
 
-**Critical:** Insert the form-config and renderer-config script tags. The script block at the bottom must be:
+**Critical:** Insert the data and renderer-config script tags. The script block at the bottom must be:
 ```html
-<script src="../assets/js/behistorical-form-config.js?v=3"></script>
 <script src="../assets/data/lesson-{unitNum}-{topicSeq}-{slug}.js"></script>
 <script src="../assets/data/lesson-{unitNum}-{topicSeq}-renderer-config.js"></script>
 <script src="../assets/js/behistorical-topic-renderer-v1.js"></script>
@@ -89,28 +88,23 @@ Follow the exact structure documented in CLAUDE.md "First & 10 Reading Standard"
 2. reading-title-band with eyebrow, h1, deck, skill-tags
 3. reading-body with support-strip, vocab-strip, 3-4 sections with AP callouts
 4. check-section with exactly 3 question-items
-5. Builder section 1: "Build Your Google Form Response"
-6. Builder section 2: "Build Your AI Coach Prompt"
-7. page-footer-note
-8. module-footer with nav links
+   builder; the form was retired on 2026-08-07, see `docs/FORM-CONTRACT.md`
+6. page-footer-note
+7. module-footer with nav links
+8. The First & 10 answer-capture script block. Without it the three reading
+   answers never reach Gather All My Work, see `docs/CANVAS-CAPTURE.md`
 
 Use the same CSS from an existing First & 10 page (e.g., `unit-7/first-and-10-topic-7-2-causes-wwi.html`). Write real AP World content for the reading sections.
 
 ### 5. First & 10 capture wrapper
 **Path:** `unit-{N}/first-and-10-topic-{topicKey-with-dashes}-{slug}-capture.html`
 
-Use the exact pattern from `unit-7/first-and-10-topic-7-2-causes-wwi-capture.html`:
+Use the exact pattern from `unit-7/first-and-10-topic-7-2-causes-wwi-capture.html`, or just run `node scripts/remove-google-form-capture.js`, which regenerates every wrapper to the canonical shape:
 - iframe src pointing to the standalone First & 10 page
-- `PREFILLED_FIRST10_FORM` URL generated using the same logic as `buildFormURL(topicKey, 'first10')`, must include Unit, Topic, Prompt ID (`{topicKey}-first10`), Response Type (`First and 10`)
 - `MAGICSCHOOL_URL` = `'https://student.magicschool.ai/s/login?joinCode=czwb9Q'`
 - Full `wireFirst10Capture()` function (copy from existing capture wrapper)
 
-### 6. Form config registration
-In `assets/js/behistorical-form-config.js`:
-- Verify the topic key exists in `BH_FORM.topics`. If not, add it in the correct position (sorted by topic number).
-- The topic label must match the Google Form dropdown format: `"{topicKey} - {title}"`
-
-### 7. Hub page wiring
+### 6. Hub page wiring
 In `unit-{N}/index.html`:
 - Find the `<a class="unit-card" href="#">` element for this topic number.
 - Replace `href="#"` with `href="lesson-{unitNum}-{topicSeq}-{slug}.html"`.

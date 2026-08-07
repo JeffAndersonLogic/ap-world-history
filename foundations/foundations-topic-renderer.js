@@ -16,8 +16,9 @@ const WORK_EXPORT_ID='all-work-output';
 // Prompt text as each card actually displayed it, keyed by the draft() slot.
 const WORK_PROMPTS={};
 function rememberPrompt(id,prompt){if(!id||!prompt)return;const slot=String(id).indexOf(`${T.id}-`)===0?String(id).slice(String(T.id).length+1):String(id);WORK_PROMPTS[slot]=String(prompt);}
-// Foundations data files use id 'foundations-N'; BH_FORM.topics is keyed 'fN'.
-// Passing the raw id would fail buildFormURL's /^f(\d+)$/ test and silently drop the Unit parameter.
+// Data files use id 'foundations-N'. The short 'fN' form is what the First & 10
+// answer-capture key and the Canvas record manifest's topic field both use, so a
+// parsed response joins back to the right topic. See docs/CANVAS-CAPTURE.md.
 const FOUNDATION_TOPIC_KEY=String(T.id||'').replace(/^foundations-(\d+)$/,'f$1');
 function foundationArtworkPath(id){const match=String(T.id||'').match(/(\d+)$/);return `../assets/images/module-art/foundations/topic-f${match?match[1]:'1'}/${id}.svg`;}
 function useFoundationFallback(image,fallback){if(!fallback||image.src.endsWith(fallback))return;image.onerror=null;image.src=fallback;image.classList.add('media-fallback');}
@@ -80,30 +81,15 @@ function renderBeSurreal(){if(!beSurreal)return `<article class="foundation-card
 function renderEvidence(){return `<article class="foundation-card"><h3>${evidence.title}</h3><p>${evidence.task}</p></article><div class="pop-grid">${evidence.items.map((item,i)=>{const fallbackId=`evidence-${String(i+1).padStart(2,'0')}`;return `<article class="foundation-card map-figure pop-half"><img src="${foundationEvidenceImageUrl(i)}" alt="${item.title}" ${foundationFallbackAttrs(fallbackId)}><figcaption><strong>${item.title}</strong><br>${item.caption}<br><em>${item.prompt}</em><br><a class="source-link" href="${item.sourceUrl||item.url}" target="_blank" rel="noopener">Open source</a></figcaption></article>`}).join('')}</div>${draft(`${T.id}-evidence`,evidence.prompt)}`}
 function renderCoach(){return `<article class="foundation-card"><h3>${aiCoach.title}</h3><p>${aiCoach.intro}</p><div class="coach-list">${aiCoach.prompts.map((p,i)=>`<div class="coach-prompt"><strong>Prompt ${i+1}</strong><span>${p}</span></div>`).join('')}</div></article>${draft(`${T.id}-coach`,aiCoach.responsePrompt||'Use one AI coach prompt to improve your historical explanation.')}`}
 function renderSkill(){return `<article class="foundation-card"><h3>${T.skill.title}</h3><p>${T.skill.intro}</p><table class="mini-table"><tr><th>Step</th><th>What to Do</th></tr>${T.skill.steps.map((s,i)=>`<tr><td>${i+1}</td><td>${s}</td></tr>`).join('')}</table></article>${draft(`${T.id}-skill`,T.skill.prompt)}`}
-function renderCheckpoint1(){return `<article class="dark-callout"><h3>${T.checkpoint.title}</h3><p>${T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Exit Ticket</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Strong Response Checklist</h3><ul>${T.checkpoint.checklist.map(x=>`<li>${x}</li>`).join('')}</ul></article>${draft(`${T.id}-checkpoint`,T.checkpoint.prompt,'checkpoint1')}`}
-function renderCheckpoint2(){return `<article class="dark-callout"><h3>Synthesis Checkpoint</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Build Your Synthesis</h3><p>Use evidence from at least two modules to answer the synthesis prompt above. Connect the themes you studied today to the bigger picture of AP World History.</p></article>${draft(`${T.id}-checkpoint2`,T.exitTicket||T.checkpoint.prompt,'checkpoint2')}`}
+function renderCheckpoint1(){return `<article class="dark-callout"><h3>${T.checkpoint.title}</h3><p>${T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Exit Ticket</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Strong Response Checklist</h3><ul>${T.checkpoint.checklist.map(x=>`<li>${x}</li>`).join('')}</ul></article>${draft(`${T.id}-checkpoint`,T.checkpoint.prompt)}`}
+function renderCheckpoint2(){return `<article class="dark-callout"><h3>Synthesis Checkpoint</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Build Your Synthesis</h3><p>Use evidence from at least two modules to answer the synthesis prompt above. Connect the themes you studied today to the bigger picture of AP World History.</p></article>${draft(`${T.id}-checkpoint2`,T.exitTicket||T.checkpoint.prompt)}`}
 function renderBeInTheRoomPlaceholder(){return `<article class="foundation-card"><h3>BeInTheRoom</h3><p>This immersive experience for ${T.title} is coming soon.</p></article>`;}
-// draft(id, prompt, captureKey)
-// captureKey is a key into BH_FORM.responseTypes. When present the card stamps
-// its own metadata onto the textarea and grows a Submit to Form button inside
-// the same .tool-row as Save Draft and Copy Response, never outside it.
-function draft(id,prompt,captureKey){rememberPrompt(id,prompt);return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" ${captureKey?foundationCaptureAttrs(captureKey):''} placeholder="Type your response here..."></textarea><div class="tool-row"><button class="btn" onclick="saveDraft('${id}')">Save Draft</button><button class="btn secondary" onclick="copyResponse('${id}')">Copy Response</button>${captureKey?foundationSubmitBtn(id,captureKey):''}</div><div id="${id}-result" class="check-result"></div></div>`}
-// submitResponseToGoogleForm lives in assets/js/behistorical-form-config.js so
-// this renderer and assets/js/behistorical-topic-renderer-v1.js share one
-// implementation. Do not redefine it here, the config file loads first and a
-// local copy would shadow it.
-
-// Returns '' when capture is unavailable. A button that opens a bare form is worse than no button.
-function foundationSubmitBtn(elemId,responseTypeKey){
-  if(!window.BH_FORM||typeof buildCaptureButton!=='function')return '';
-  if(!FOUNDATION_TOPIC_KEY)return '';
-  return buildCaptureButton(elemId,FOUNDATION_TOPIC_KEY,responseTypeKey);
-}
-// Attribute string stamping a card's own metadata onto its textarea.
-function foundationCaptureAttrs(responseTypeKey){
-  if(!window.BH_FORM||typeof captureDataAttrs!=='function'||!FOUNDATION_TOPIC_KEY)return '';
-  return captureDataAttrs(FOUNDATION_TOPIC_KEY,responseTypeKey);
-}
+// draft(id, prompt)
+// The response box and nothing else. Typing autosaves, and Gather All My Work
+// carries every box to Canvas in one action, so a per-box Save Draft button
+// implied work was only kept when clicked and a per-box Copy Response button
+// was a slower path to a worse result.
+function draft(id,prompt){rememberPrompt(id,prompt);return `<div class="prompt-box"><h3>Draft Your Thinking</h3><p>${prompt}</p><textarea class="response-area" id="${id}" placeholder="Type your response here..."></textarea><div id="${id}-result" class="check-result"></div></div>`}
 // Draft storage that cannot throw.
 //
 // Touching localStorage raises a SecurityError, not a null, when the browser
@@ -143,8 +129,6 @@ const BHDraftStore=(function(){
 })();
 // Shown wherever a save would otherwise claim success it cannot deliver.
 const BH_NO_STORAGE_NOTE='This browser will not let the page save drafts. Your typing stays until you close the tab, so gather and copy your work into Canvas before you leave.';
-function saveDraft(id){const t=byId(id);if(!t)return;const ok=BHDraftStore.set(`foundations-topic-${id}`,t.value||'');const r=byId(id+'-result');if(r)r.textContent=ok?'Draft saved in this browser on this device.':BH_NO_STORAGE_NOTE;}
-function copyResponse(id){const t=byId(id);navigator.clipboard.writeText(t.value||'').then(()=>byId(id+'-result').textContent='Response copied.').catch(()=>byId(id+'-result').textContent='Copy failed. Select and copy manually.')}
 function loadDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>{if(t.id===WORK_EXPORT_ID)return;const saved=BHDraftStore.get(`foundations-topic-${t.id}`);if(saved)t.value=saved})}
 
 // ── Autosave and Copy All My Work ─────────────────────────────────────────────

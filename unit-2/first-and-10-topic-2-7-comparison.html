@@ -174,17 +174,7 @@
     </ul>
   </div>
 
-  <div class="builder-section">
-    <h2 class="builder-heading">Build Your Google Form Response</h2>
-    <p class="builder-body">After answering the three questions, click the button to collect your responses into one field. Copy the result, then submit to the Google Form.</p>
-    <div class="tool-row">
-      <button onclick="buildGooglePrompt()">Build Google Prompt</button>
-    </div>
-    <textarea id="google-output" class="builder-output" readonly placeholder="Your responses will appear here..."></textarea>
-    <div class="tool-row">
-      <button onclick="submitToGoogleForm()">Submit to Google Form</button>
-    </div>
-  </div>
+  
 
   <div class="builder-section">
     <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
@@ -206,25 +196,9 @@
 
 </div>
 
-<script src="../assets/js/behistorical-form-config.js?v=unified-v2"></script>
+
 <script>
 var TOPIC_KEY='2.7';var TOPIC_LABEL='2.7 - Comparison of Trade Networks';
-function buildGooglePrompt() {
-  const q1 = document.getElementById('q1').value || '(no response)';
-  const q2 = document.getElementById('q2').value || '(no response)';
-  const q3 = document.getElementById('q3').value || '(no response)';
-  document.getElementById('google-output').value =
-    'Question 1: ' + q1 + '\n\nQuestion 2: ' + q2 + '\n\nQuestion 3: ' + q3;
-}
-
-function submitToGoogleForm() {
-  const content = document.getElementById('google-output').value;
-  navigator.clipboard.writeText(content).catch(() => {});
-  const tl = (window.BH_FORM && BH_FORM.topics[TOPIC_KEY]) || TOPIC_LABEL;
-  const u = window.BH_FORM ? BH_FORM.baseURL + '?usp=pp_url&entry.187055090=' + encodeURIComponent(tl).replace(/%20/g, '+') + '&entry.2107637366=First+and+10' : '';
-  if (u) window.open(u, '_blank', 'noopener');
-}
-
 function buildAiPrompt() {
   const q1 = document.getElementById('q1').value || '(no response)';
   const q2 = document.getElementById('q2').value || '(no response)';

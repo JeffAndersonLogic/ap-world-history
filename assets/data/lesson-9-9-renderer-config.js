@@ -78,7 +78,7 @@
     illustrativeExamples: []
   }
 ];
-  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-9-9-continuity-change-globalized-world-capture.html?v=response-id-fix-v1' };
+  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-9-9-continuity-change-globalized-world-capture.html' };
   lesson.beInTheRoom = {
   url: '',
   desc: 'The Unit 9 synthesis capstone uses the full evidence set instead of a separate simulation.'

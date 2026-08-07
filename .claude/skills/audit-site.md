@@ -9,15 +9,15 @@ Run a comprehensive validation sweep across the entire BeHistorical project. Rep
 
 ## Checks to perform
 
-### 1. Form Config Coverage
-- Every topic key found in `assets/data/lesson-*.js` (parsed from `meta.topic`) must exist in `BH_FORM.topics` in `assets/js/behistorical-form-config.js`.
-- Every unit number derived from topic keys must exist in `BH_FORM.units`.
-- Report any data files with topics NOT registered in the form config.
+### 1. Google Form Retirement
+The Google Form was retired on 2026-08-07; see `docs/FORM-CONTRACT.md` for why.
+- No student-facing surface may contain `docs.google.com/forms`, `BH_FORM`, `behistorical-form-config`, `submitToGoogleForm`, `buildGooglePrompt`, or `PREFILLED_FIRST10_FORM`.
+- Report any file that does, and point at `scripts/remove-google-form-capture.js`.
 
-### 2. Form Config Script Tag
-- Every `unit-*/lesson-*.html` file must contain a `<script>` tag loading `behistorical-form-config.js`.
-- The form-config script must appear BEFORE the renderer script (`behistorical-topic-renderer-v1.js`).
-- Report any lesson HTML files missing or mis-ordered.
+### 2. Canvas Capture Wiring
+- Every lesson page must render the Save Your Work panel with Gather All My Work.
+- Every gathered document must carry the record footer; see `docs/CANVAS-CAPTURE.md`.
+- Report any lesson whose `expected` capture count disagrees with the slots it actually renders. An inflated count reports complete submissions as incomplete.
 
 ### 3. Hub Link Integrity
 - For each `unit-*/index.html`, extract all `href` values from unit-card links.
@@ -50,12 +50,12 @@ Per CLAUDE.md, every lesson must render exactly 10 modules. Check each data file
 - `beInTheRoom` object (or URL)
 Report data files missing required module sections.
 
-### 7. Capture Wrapper Prefill Consistency
-For each `first-and-10-*-capture.html`, extract the `PREFILLED_FIRST10_FORM` URL and verify:
-- The `entry.125385659` (Unit) value matches `BH_FORM.units[N]`
-- The `entry.187055090` (Topic) value matches `BH_FORM.topics[key]`
-- The `entry.2107637366` (Response Type) is `First+and+10`
-Report any mismatches.
+### 7. Capture Wrapper MagicSchool Wiring
+For each `first-and-10-*-capture.html`, verify it defines `MAGICSCHOOL_URL` and
+intercepts clicks labelled `open magicschool` or `open ai coach`.
+Most readings render that button with no `onclick` and depend on the wrapper, so
+a wrapper without the interception is a dead button, not a cosmetic gap.
+Report any wrapper missing it.
 
 ## Output Format
 Print a summary table at the end:

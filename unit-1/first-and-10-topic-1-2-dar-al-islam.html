@@ -36,13 +36,7 @@
   <div class="check-section"><div class="check-header"><span class="check-badge">Check Your Thinking</span><span class="check-title">Three Questions, Supported Answers Only</span></div><ul class="question-list"><li class="question-item"><div class="question-prompt"><span class="q-num">01</span><span class="q-skill">Causation</span><p class="q-text">Explain why Sufi missionaries were especially effective in spreading Islam into regions not conquered by Islamic armies. How did their work connect with trade networks?</p></div><textarea class="q-textarea qta" placeholder="Sufi missionaries were effective in spreading Islam because..."></textarea></li><li class="question-item"><div class="question-prompt"><span class="q-num">02</span><span class="q-skill">Continuity &amp; Change</span><p class="q-text">The Mongol destruction of Baghdad in 1258 was catastrophic, and yet Dar al-Islam survived and transformed. Identify two specific things that changed and two things that continued in the Islamic world after 1258.</p></div><textarea class="q-textarea qta" placeholder="After the Mongol destruction of Baghdad, two things that changed were... while two things that continued were..."></textarea></li><li class="question-item"><div class="question-prompt"><span class="q-num">03</span><span class="q-skill">Comparison</span><p class="q-text">Both Song China and Dar al-Islam used scholarly classes, belief systems, and trade networks to sustain their civilizations. Identify one significant similarity and one significant difference in how these two civilizations maintained power and coherence.</p></div><textarea class="q-textarea qta" placeholder="Both Song China and Dar al-Islam maintained coherence through... however, a key difference was..."></textarea></li></ul></div>
 
   
-  <div class="builder-section">
-    <h2 class="builder-heading">Build Your Google Form Response</h2>
-    <p class="builder-body">After answering the questions, click the button to collect your responses. Copy the result, then submit to the Google Form.</p>
-    <div class="tool-row"><button onclick="buildGooglePrompt()">Build Google Prompt</button></div>
-    <textarea id="google-output" class="builder-output" readonly placeholder="Your responses will appear here..."></textarea>
-    <div class="tool-row"><button onclick="submitToGoogleForm()">Submit to Google Form</button></div>
-  </div>
+  
   <div class="builder-section">
     <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
     <p class="builder-body">Build one prompt for the BeHistorical AI Coach to question, challenge, and improve your thinking without writing the final answer for you.</p>
@@ -57,18 +51,6 @@
 <script>
 var TOPIC_KEY='1.2';var TOPIC_LABEL='1.2 - Dar al-Islam';
 document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('textarea.qta').forEach(function(ta,i){if(!ta.id)ta.id='q'+(i+1);});});
-function buildGooglePrompt(){
-  var q1=document.getElementById('q1').value||'(no response)';
-  var q2=document.getElementById('q2').value||'(no response)';
-  var q3=document.getElementById('q3').value||'(no response)';
-  document.getElementById('google-output').value=''+'\nQuestion 1:\n'+q1+'\nQuestion 2:\n'+q2+'\nQuestion 3:\n'+q3;
-}
-function submitToGoogleForm() {
-  var content = document.getElementById('google-output') ? document.getElementById('google-output').value : '';
-  if (content) { try { navigator.clipboard.writeText(content); } catch(e) {} }
-  var u = (window.BH_FORM && typeof buildFormURL === 'function') ? buildFormURL(TOPIC_KEY, 'first10') : '';
-  if (u) window.open(u, '_blank', 'noopener');
-}
 function buildAiPrompt(){
   var q1=document.getElementById('q1').value||'(no response)';
   var q2=document.getElementById('q2').value||'(no response)';
@@ -79,7 +61,7 @@ function copyAiPrompt(){var c=document.getElementById('ai-output').value;navigat
 </script>
 <div class="module-footer"><span class="footer-note">Topic 1.2, Dar al-Islam &nbsp;·&nbsp; AP World History: Modern</span><div style="display:flex;gap:.6rem;"><a class="nav-btn prev" href="lesson-1-2-dar-al-islam.html#modules">← Map &amp; Geography</a><a class="nav-btn" href="lesson-1-2-dar-al-islam.html#lecture">Content Delivery →</a></div></div>
 </div>
-<script src="../assets/js/behistorical-form-config.js?v=unified-v2">
+<script>
 /* BeHistorical First & 10 answer capture ------------------------------------------------------------
  * These three textareas sit inside an iframe, so the lesson page cannot read
  * them directly and, before this, nothing saved them at all: closing the module

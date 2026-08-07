@@ -32,65 +32,15 @@
       <li class="question-item"><div class="question-prompt"><span class="q-num">1</span><span class="q-skill">Evidence Usage</span><span class="q-text">Choose ONE rights-based discourse, the Universal Declaration of Human Rights, Negritude, liberation theology, or global feminism, and describe specifically how it challenged an old assumption about race, class, gender, or religion. What does your example reveal about how activists used the language of universal rights?</span></div><textarea class="q-textarea" id="q1" placeholder="Write your answer here..."></textarea></li>
       <li class="question-item"><div class="question-prompt"><span class="q-num">2</span><span class="q-skill">Causation</span><span class="q-text">The Civil Rights Act of 1964, the end of apartheid, and caste reservation all changed the law, yet inequality persisted afterward in each case. Explain why formal or legal inclusion did not automatically produce lived equality. What causes made social practice change more slowly than the law?</span></div><textarea class="q-textarea" id="q2" placeholder="Write your answer here..."></textarea></li>
       <li class="question-item"><div class="question-prompt"><span class="q-num">3</span><span class="q-skill">Argumentation</span><span class="q-text">Make a defensible claim about how social categories, roles, and practices were BOTH challenged AND maintained in the world after 1900. Support it with specific evidence from the reading, then identify one example that complicates or qualifies your argument.</span></div><textarea class="q-textarea" id="q3" placeholder="Write your answer here..."></textarea></li></ol></section>
-  <section class="builder-section"><h2 class="builder-heading">Build Your Google Form Response</h2><p class="builder-body">Compile and review your three answers before opening the class response form.</p><div class="tool-row"><button type="button" onclick="buildGooglePrompt()">Build Response</button><button type="button" onclick="submitToGoogleForm()">Submit to Google Form</button></div><textarea class="builder-output" id="google-output" readonly placeholder="Your compiled response will appear here."></textarea></section>
+  
   <section class="builder-section"><h2 class="builder-heading">Build Your AI Coach Prompt</h2><p class="builder-body">Ask the BeHistorical AI Coach to question, challenge, and improve your thinking without writing the final answer for you.</p><div class="tool-row"><button type="button" onclick="buildAiPrompt()">Build AI Prompt</button><button class="secondary" type="button" onclick="copyAiPrompt()">Copy Prompt</button><a class="tool-button secondary" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><textarea class="builder-output" id="ai-output" readonly placeholder="Your prompt will appear here."></textarea></section>
   <p class="page-footer-note">Organize your thinking here, submit your final work in Canvas.</p><footer class="module-footer"><span class="footer-note">Topic 9.5, Calls for Reform and Responses After 1900</span><nav class="footer-nav"><a class="nav-btn prev" href="lesson-9-5-calls-for-reform-responses.html">← Map &amp; Geography</a><a class="nav-btn" href="lesson-9-5-calls-for-reform-responses.html#lecture">Content Delivery →</a></nav></footer>
-</div><script src="../assets/js/behistorical-form-config.js?v=20260716"></script><script>
-var TOPIC_KEY='9.5';var TOPIC_LABEL=(window.BH_FORM&&BH_FORM.topics[TOPIC_KEY])||'Topic 9.5: Calls for Reform and Responses After 1900';
+</div><script>
+var TOPIC_KEY='9.5';var TOPIC_LABEL='Topic 9.5: Calls for Reform and Responses After 1900';
 function answers(){return[1,2,3].map(function(n){return(document.getElementById('q'+n)||{}).value||'';});}
-function buildGooglePrompt(){var out=TOPIC_LABEL+', First & 10\n\n'+answers().map(function(a,i){return'Question '+(i+1)+': '+a;}).join('\n\n');document.getElementById('google-output').value=out;return out;}
-function submitToGoogleForm(){var out=buildGooglePrompt();if(out&&navigator.clipboard)navigator.clipboard.writeText(out).catch(function(){});var url=typeof buildFormURL==='function'?buildFormURL(TOPIC_KEY,'first10'):(window.BH_FORM&&BH_FORM.baseURL);if(url)window.open(url,'_blank','noopener');}
+
+
 function buildAiPrompt(){var out='Coach my AP World historical reasoning for '+TOPIC_LABEL+'. Do not write my final answer. Ask one question at a time, verify factual accuracy, and help me explain how evidence proves or qualifies my claim.\n\nMy responses:\n'+answers().join('\n\n');document.getElementById('ai-output').value=out;return out;}
 function copyAiPrompt(){var out=buildAiPrompt();if(navigator.clipboard)navigator.clipboard.writeText(out).catch(function(){});}
-
-/* BeHistorical First & 10 answer capture ------------------------------------------------------------
- * These three textareas sit inside an iframe, so the lesson page cannot read
- * them directly and, before this, nothing saved them at all: closing the module
- * lost the work. Answers and their questions go to one key that both the
- * Foundations renderer and behistorical-topic-renderer-v1.js read when they
- * assemble Copy All My Work. Never throws: a browser that refuses storage
- * degrades to no autosave rather than breaking the reading.
- */
-(function () {
-  var KEY = 'behistorical-first10-' + TOPIC_KEY;
-  var boxes = function () {
-    return Array.prototype.slice.call(document.querySelectorAll('.q-textarea, .qta'));
-  };
-  var questions = function () {
-    return Array.prototype.slice.call(document.querySelectorAll('.q-text, .qt'))
-      .map(function (el) { return (el.textContent || '').replace(/\s+/g, ' ').trim(); });
-  };
-  var save = function () {
-    var qs = questions();
-    var payload = boxes().map(function (t, i) {
-      return { q: qs[i] || '', a: t.value || '' };
-    });
-    try { localStorage.setItem(KEY, JSON.stringify(payload)); } catch (e) {}
-  };
-  var restore = function () {
-    var raw = null;
-    try { raw = localStorage.getItem(KEY); } catch (e) { return; }
-    if (!raw) return;
-    var saved;
-    try { saved = JSON.parse(raw); } catch (e) { return; }
-    if (!saved || !saved.length) return;
-    boxes().forEach(function (t, i) {
-      if (saved[i] && saved[i].a && !t.value) t.value = saved[i].a;
-    });
-  };
-
-  boxes().forEach(function (t, i) { if (!t.id) t.id = 'first10-q' + (i + 1); });
-  restore();
-
-  var timer;
-  document.addEventListener('input', function (event) {
-    var t = event.target;
-    if (!t || !t.classList) return;
-    if (!t.classList.contains('q-textarea') && !t.classList.contains('qta')) return;
-    clearTimeout(timer);
-    timer = setTimeout(save, 500);
-  });
-  // A student who closes the tab mid-sentence still keeps the sentence.
-  window.addEventListener('beforeunload', save);
-})();
+/* BeHistorical First & 10 answer capture. The three textareas sit inside an iframe, so the lesson page cannot read them directly. Answers and their questions go to one key that both renderers read when they assemble Gather All My Work. See docs/CANVAS-CAPTURE.md. Never throws: a browser that refuses storage degrades to no autosave rather than breaking the reading. */(function(){var KEY='behistorical-first10-'+TOPIC_KEY;var boxes=function(){return Array.prototype.slice.call(document.querySelectorAll('.q-textarea, .qta'));};var questions=function(){return Array.prototype.slice.call(document.querySelectorAll('.q-text, .qt')).map(function(el){return (el.textContent||'').replace(/\s+/g,' ').trim();});};var save=function(){var qs=questions();var payload=boxes().map(function(t,i){return {q:qs[i]||'',a:t.value||''};});try{localStorage.setItem(KEY,JSON.stringify(payload));}catch(e){}};var restore=function(){var raw=null;try{raw=localStorage.getItem(KEY);}catch(e){return;}if(!raw)return;var saved;try{saved=JSON.parse(raw);}catch(e){return;}if(!saved||!saved.length)return;boxes().forEach(function(t,i){if(saved[i]&&saved[i].a&&!t.value)t.value=saved[i].a;});};boxes().forEach(function(t,i){if(!t.id)t.id='first10-q'+(i+1);});restore();var timer;document.addEventListener('input',function(event){var t=event.target;if(!t||!t.classList)return;if(!t.classList.contains('q-textarea')&&!t.classList.contains('qta'))return;clearTimeout(timer);timer=setTimeout(save,500);});window.addEventListener('beforeunload',save);})();
 </script></body></html>

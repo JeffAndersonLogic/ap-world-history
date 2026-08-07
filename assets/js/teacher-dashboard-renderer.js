@@ -218,7 +218,6 @@
     const misconceptionsHtml = `<div class="card-list">${topic.misconceptions.map(m => `<div class="data-card"><div class="small-label">Misconception</div><p>${escapeHtml(m.misconception)}</p><div class="small-label" style="margin-top:8px;color:#9fe0ad">Correction</div><p>${escapeHtml(m.correction)}</p></div>`).join('')}</div>`;
     const answerHtml = `<div class="card-list">${topic.answerKeys.map(k => `<div class="data-card"><div class="small-label">${escapeHtml(k.part)}</div><p><em>${escapeHtml(k.prompt)}</em></p><p style="margin-top:8px">${escapeHtml(k.answer)}</p></div>`).join('')}</div>`;
     const promptHtml = `<div class="card-list">${topic.prompts.map(p => `<div class="data-card"><div class="small-label">${escapeHtml(p.purpose)}</div><h3>${escapeHtml(p.title)}</h3><div class="copy-box" id="${escapeHtml(p.id)}">${escapeHtml(p.text)}</div><button class="btn secondary" style="margin-top:10px" onclick="TeacherHub.copyText(this,'${escapeHtml(p.id)}')">Copy prompt</button></div>`).join('')}</div>`;
-    const formsHtml = `<div class="card-list">${topic.forms.map(f => `<div class="data-card"><div class="student-row"><div><div class="student-name">${escapeHtml(f.name)}</div><p>${escapeHtml(f.description)}</p></div><a class="btn secondary" href="${escapeHtml(f.url)}" target="_blank" rel="noopener">Open</a></div></div>`).join('')}</div><div class="notice"><strong>Functional note:</strong> use the Apps Script endpoint above to replace mock pulse data with live Sheet analysis.</div>`;
     const canvasHtml = `<div class="data-card"><div class="small-label">Canvas assignment</div><p><strong>${escapeHtml(topic.canvas.title)}</strong></p><ul>${topic.canvas.workflow.map(step => `<li>${escapeHtml(step)}</li>`).join('')}</ul><p style="margin-top:8px"><strong>Language reminder:</strong> ${escapeHtml(topic.canvas.reminder)}</p></div>`;
     const pulsePanel = latestAnalysis ? renderLiveAnalysisPanel(topic, latestAnalysis) : `
       <div class="dashboard-grid">
@@ -255,7 +254,6 @@
         ${renderAccordion('acc-misconceptions','Common Misconceptions','High-frequency errors and corrections',misconceptionsHtml,false)}
         ${renderAccordion('acc-answers','Answer Keys','Sample strong SAQ responses',answerHtml,false)}
         ${renderAccordion('acc-prompts','AI Analysis Prompts','Copy-ready class analysis prompts',promptHtml,false)}
-        ${renderAccordion('acc-forms','Google Form / Response Capture','Prototype links and future data source',formsHtml,false)}
         ${renderAccordion('acc-canvas','Canvas Workflow','Three-layer classroom workflow',canvasHtml,false)}
       </div>`;
   }

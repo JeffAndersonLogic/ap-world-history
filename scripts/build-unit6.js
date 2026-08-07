@@ -9,6 +9,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { captureWrapper } = require('./lib/first10-capture-wrapper');
 const { inspect } = require('util');
 const vm = require('vm');
 const { renderFirst10Page } = require('./lib/first10-page');
@@ -20,14 +21,6 @@ const DATA = path.join(ROOT, 'assets', 'data');
 const ROOM = path.join(ROOT, 'beintheroom', 'unit-6');
 const COACH_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
 const SUBMIT_NOTE = 'Organize your thinking here, submit your final work in Canvas.';
-
-const formContext = { URLSearchParams };
-formContext.window = formContext;
-vm.runInNewContext(
-  fs.readFileSync(path.join(ROOT, 'assets', 'js', 'behistorical-form-config.js'), 'utf8'),
-  formContext,
-  { filename: 'behistorical-form-config.js' }
-);
 
 const topics = [
   {
@@ -440,23 +433,10 @@ function first10Page(topic) {
   });
 }
 
-function legacyFirst10Page(topic) {
-  const skills = ['Developments and Processes', 'Causation', 'Argumentation'];
-  const questions = [
-    'What historical process is introduced here, and what specific detail matters most?',
-    'Explain one causal relationship in the reading using because, therefore, or although.',
-    'How does the reading complicate or strengthen a defensible claim about the topic?'
-  ];
-  const sections = topic.first10.map((text, i) => `<div class="section"><div class="section-number">0${i + 1}</div><div class="section-label">Part ${i + 1}</div><h2 class="section-heading">${esc(topic.cases[i])}</h2><p class="reading-text">${esc(text)}</p><div class="ap-callout"><p class="ap-callout-label">AP Thinking, ${skills[i]}</p><p>Be ready to connect this section to the Topic ${topic.id} learning objective with specific evidence.</p></div></div>`).join('\n');
-  const questionItems = questions.map((question, i) => `<li class="question-item"><div class="question-prompt"><span class="q-num">Q${i + 1}</span><span class="q-skill">${skills[i]}</span><span class="q-text">${esc(question)}</span></div><textarea class="q-textarea" id="q${i + 1}" rows="5"></textarea></li>`).join('\n');
-  const vocab = topic.cases.map((term) => `<span class="term-chip">${esc(term)}</span>`).join('');
-  return `<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>First &amp; 10 | Topic ${topic.id}</title><link rel="stylesheet" href="../assets/css/behistorical-brand-lock.css"><style>body{margin:0;background:#17243b;color:#17243b;font:16px/1.65 Georgia,serif}.module-header,.reading-title-band,.reading-body,.check-section,.builder-section,.page-footer-note,.module-footer{max-width:860px;margin:auto;padding:24px}.module-header{background:#10213b;color:#fff}.module-header a{color:#f0c56a}.module-badge,.section-label,.ap-callout-label,.q-skill{font:700 .72rem Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.08em}.reading-title-band{background:#d8b463}.reading-title{font:800 2.25rem Montserrat,sans-serif;margin:.2rem 0}.reading-deck{font-style:italic}.skill-tags,.vocab-strip{display:flex;gap:8px;flex-wrap:wrap}.skill-tags span,.term-chip{background:#17243b;color:#fff;padding:4px 9px;border-radius:20px;font:600 .72rem Montserrat,sans-serif}.reading-body{background:#f4efe3}.support-strip{display:grid;grid-template-columns:1fr 1fr;gap:12px}.support-card,.section{background:#fff;padding:20px;margin:16px 0}.section{position:relative;border-left:6px solid #b68a37}.section-number{position:absolute;right:16px;top:4px;font:900 3rem Montserrat,sans-serif;color:#17243b12}.section-heading{font-family:Montserrat,sans-serif}.ap-callout{background:#e7edf4;padding:12px}.be-ready{background:#17243b;color:#fff;padding:16px}.check-section,.builder-section{background:#fff;border-top:1px solid #ccd2da}.question-list{list-style:none;padding:0}.question-item{margin:18px 0}.question-prompt{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap}.q-num{font-weight:bold;color:#8b5f16}.q-text{flex:1;min-width:260px}.q-textarea,.builder-output{width:100%;box-sizing:border-box;margin-top:8px;padding:12px;border:1px solid #8c94a0;border-radius:6px;min-height:110px}.tool-row button,.tool-row a{display:inline-block;padding:10px 14px;margin:5px;background:#10213b;color:#fff;border:0;border-radius:4px;text-decoration:none}.page-footer-note,.module-footer{background:#f4efe3;font-size:.9rem}.module-footer{display:flex;justify-content:space-between}.nav-btn{color:#17243b;font-weight:bold}@media(max-width:600px){.support-strip{grid-template-columns:1fr}}</style></head><body><header class="module-header"><span class="module-badge">Module 02</span><strong> First &amp; 10 Reading</strong><div>Topic ${topic.id} · AP World History</div></header><section class="reading-title-band"><div>FIRST &amp; 10 · UNIT 6</div><h1 class="reading-title"><em>${esc(topic.title)}</em></h1><p class="reading-deck">Read closely, answer all three checks, and turn your thinking into a feedback prompt.</p><div class="skill-tags">${skills.map((s) => `<span>${s}</span>`).join('')}</div></section><main class="reading-body"><div class="support-strip"><div class="support-card"><strong>Before You Read</strong><p>Look for a historical mechanism: who acts, what changes, and why?</p></div><div class="support-card"><strong>Reading Target</strong><p>${esc(topic.lo)}</p></div></div><div class="vocab-strip">${vocab}</div>${sections}<div class="be-ready"><h3>BeReady: 10-Second Takeaway</h3><p>${esc(topic.first10[2])}</p></div></main><section class="check-section"><h2>Check Your Thinking</h2><ul class="question-list">${questionItems}</ul></section><section class="builder-section"><h2 class="builder-heading">Build Your Google Form Response</h2><p class="builder-body">Compile your three answers, review them, and open the class response form.</p><div class="tool-row"><button type="button" onclick="buildGooglePrompt()">Build My Response</button><button type="button" onclick="submitToGoogleForm()">Submit to Google Form</button></div><textarea class="builder-output" id="google-output" readonly></textarea></section><section class="builder-section"><h2 class="builder-heading">Build Your AI Coach Prompt</h2><p class="builder-body">Ask the coach to pressure-test your evidence and reasoning without writing for you.</p><div class="tool-row"><button type="button" onclick="buildAiPrompt()">Build AI Prompt</button><button type="button" onclick="copyAiPrompt()">Copy Prompt</button><a href="${COACH_URL}" target="_blank" rel="noopener">Open MagicSchool</a></div><textarea class="builder-output" id="ai-output" readonly></textarea></section><p class="page-footer-note">${SUBMIT_NOTE}</p><footer class="module-footer"><a class="nav-btn" href="lesson-${topic.id.replace('.', '-')}-${topic.slug}.html">← Map &amp; Geography</a><span>Topic ${topic.id}</span><a class="nav-btn" href="lesson-${topic.id.replace('.', '-')}-${topic.slug}.html#lecture">Content Delivery →</a></footer><script src="../assets/js/behistorical-form-config.js"></script><script>var TOPIC_KEY='${topic.id}';var TOPIC_LABEL=(window.BH_FORM&&BH_FORM.topics[TOPIC_KEY])||'Topic ${topic.id}: ${esc(topic.title)}';function answers(){return[1,2,3].map(function(n){return(document.getElementById('q'+n)||{}).value||'';});}function buildGooglePrompt(){var out=''+TOPIC_LABEL+', First & 10\\n\\n'+answers().map(function(a,i){return'Q'+(i+1)+': '+a;}).join('\\n\\n');document.getElementById('google-output').value=out;return out;}function submitToGoogleForm(){var url=typeof buildFormURL==='function'?buildFormURL(TOPIC_KEY,'first10'):(window.BH_FORM&&BH_FORM.baseURL);if(!url){alert('Google Form URL is not configured.');return;}window.open(url,'_blank','noopener');}function buildAiPrompt(){var out='Coach my AP World historical reasoning for '+TOPIC_LABEL+'. Do not write my final answer. Ask one question at a time, check factual accuracy, and help me explain how evidence proves my claim.\\n\\nMy responses:\\n'+answers().join('\\n\\n');document.getElementById('ai-output').value=out;return out;}function copyAiPrompt(){var out=buildAiPrompt();navigator.clipboard&&navigator.clipboard.writeText(out);}document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.q-textarea').forEach(function(el,i){if(!el.id)el.id='q'+(i+1);});});</script></body></html>\n`;
-}
 
 function capturePage(topic) {
   const src = `first-and-10-topic-${topic.id.replace('.', '-')}-${topic.slug}.html`;
-  const formUrl = formContext.buildFormURL(topic.id, 'first10');
-  return `<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>First &amp; 10 Capture | ${topic.id}</title><style>html,body{margin:0;height:100%;background:#f4efe3}iframe{display:block;width:100%;height:100%;border:0}</style></head><body><iframe id="first10-frame" src="${src}" title="First &amp; 10 Topic ${topic.id}"></iframe><script>const PREFILLED_FIRST10_FORM='${formUrl}';document.getElementById('first10-frame').addEventListener('load',function(){try{var w=this.contentWindow;w.submitToGoogleForm=function(){w.open(PREFILLED_FIRST10_FORM,'_blank','noopener');};}catch(error){console.warn('Unable to wire First & 10 capture:',error);}});</script></body></html>\n`;
+  return captureWrapper(src, `First &amp; 10 Capture | Topic ${topic.id}`);
 }
 
 function lessonShell(topic) {

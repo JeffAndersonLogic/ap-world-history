@@ -71,7 +71,6 @@ const SITE_CSS = [
   path.join(FOUNDATIONS, 'foundations-topic.css')
 ];
 const FONT_CSS = path.join(ASSETS, 'fonts', 'behistorical-fonts-inline.css');
-const FORM_CONFIG = path.join(ASSETS, 'js', 'behistorical-form-config.js');
 const RENDERER = path.join(FOUNDATIONS, 'foundations-topic-renderer.js');
 const LOGO = path.join(ASSETS, 'logos', 'behistorical-logo.jpeg');
 
@@ -237,25 +236,22 @@ function scriptSafe(js) {
   return String(js).replace(/<\/script/gi, '<\\/script');
 }
 
-// Every inlined script goes through here. behistorical-form-config.js documents
-// its own <script src=...></script> include line in its banner comment, which
-// silently truncated the file at 324 bytes the first time it was inlined
-// without this.
+// Every inlined script goes through here. A script that documents its own
+// <script src=...></script> include line in a banner comment truncates the
+// inlined file at that point without this escaping.
 function scriptTag(js) {
   return `<script>${scriptSafe(js)}</script>`;
 }
 
 // The capture wrapper's script, hoisted into the packet so the reading's
-// "Submit to Google Form" behaves the way it does on the site.
+// MagicSchool button behaves the way it does on the site.
 //
-// This is not cosmetic. The wrapper overrides the reading's own
-// submitToGoogleForm with a URL carrying the unit, the topic id, the response
-// type, and the topic's AP skills, and it prefills entry.1818136905 with what
-// the student actually typed. The reading's unaided handler sends two fields and
-// no answer, so dropping the wrapper would quietly downgrade every First & 10
-// submission. The wrapper's own load hook is stripped, because the iframe it
-// looks for does not exist until the module modal opens; renderFirst10's iframe
-// calls wireFirst10Capture from its onload instead.
+// This is not cosmetic. Most readings render that button with no onclick and
+// rely on the wrapper catching the click by label, so dropping the wrapper
+// leaves a dead button in every packet. The wrapper's own load hook is
+// stripped, because the iframe it looks for does not exist until the module
+// modal opens; renderFirst10's iframe calls wireFirst10Capture from its onload
+// instead.
 function captureScript(spec) {
   const src = readOrDie(path.join(FOUNDATIONS, spec.reading.replace(/\.html$/, '-capture.html')));
   const open = src.indexOf('<script>');
@@ -267,22 +263,18 @@ function captureScript(spec) {
   if (js.indexOf(hook) < 0) throw new Error('capture wrapper load hook not found, its script has changed');
   js = js.replace(hook, '');
 
-  if (!/PREFILLED_FIRST10_FORM\s*=\s*'https:\/\/docs\.google\.com/.test(js)) {
-    throw new Error('capture wrapper prefill URL not found, its script has changed');
+  if (!/MAGICSCHOOL_URL\s*=\s*'https:\/\/student\.magicschool\.ai/.test(js)) {
+    throw new Error('capture wrapper MagicSchool URL not found, its script has changed');
   }
   return js;
 }
 
-// The First & 10 as a standalone document with its font link and form-config
-// script folded in, ready to hand to the iframe.
+// The First & 10 as a standalone document with its font link folded in, ready
+// to hand to the iframe.
 function readingDocument(spec) {
   let doc = readOrDie(path.join(FOUNDATIONS, spec.reading));
 
   doc = doc.replace(/<link[^>]*fonts\.googleapis\.com[^>]*>/g, `<style>${fontCss()}</style>`);
-
-  const formConfig = readOrDie(FORM_CONFIG);
-  doc = doc.replace(/<script src="\.\.\/assets\/js\/behistorical-form-config\.js[^"]*"><\/script>/,
-    () => scriptTag(formConfig));
 
   // The footer's "Back to Modules" and "Content Delivery" links point at the
   // lesson page by filename. Inside the packet's modal there is no such file,
@@ -387,7 +379,6 @@ document.querySelectorAll('img[data-bh-logo]').forEach(function(i){i.src=${JSON.
   });
 
   const scripts = [
-    readOrDie(FORM_CONFIG),
     readOrDie(path.join(FOUNDATIONS, spec.data)),
     localised.join('\n'),
     bootstrap,
@@ -395,8 +386,10 @@ document.querySelectorAll('img[data-bh-logo]').forEach(function(i){i.src=${JSON.
     renderer
   ].map(scriptTag).join('\n');
 
+  // Anchor on the data file's script tag. It used to be the form config's, but
+  // that file is retired; the data file is now the shell's first script.
   html = must(html,
-    '<script src="../assets/js/behistorical-form-config.js?v=response-id-fix-v1"></script>',
+    `<script src="${spec.data}?v=response-id-fix-v1"></script>`,
     '@@JS@@', 'first script tag');
   html = html.replace(/<script src="[^"]*"><\/script>/g, '');
   html = html.replace('@@JS@@', () => scripts);

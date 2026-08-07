@@ -170,17 +170,7 @@
     </ol>
   </div>
 
-  <div class="builder-section">
-    <h2 class="builder-heading">Build Your Google Form Response</h2>
-    <p class="builder-body">Click the button to compile your three answers into a single response. Then submit to the Google Form.</p>
-    <div class="tool-row">
-      <button onclick="buildGooglePrompt()">Build Response</button>
-    </div>
-    <textarea id="google-output" class="builder-output" readonly placeholder="Your compiled response will appear here after you click Build Response."></textarea>
-    <div class="tool-row">
-      <button onclick="submitToGoogleForm()">Submit to Google Form</button>
-    </div>
-  </div>
+  
 
   <div class="builder-section">
     <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
@@ -205,22 +195,9 @@
 
 </div>
 
-<script src="../assets/js/behistorical-form-config.js?v=20260610"></script>
+
 <script>
 var TOPIC_KEY='9.3';var TOPIC_LABEL='Technological Advances, Debates About the Environment After 1900';
-function buildGooglePrompt() {
-  var q1 = document.getElementById('q1').value || '(no response)';
-  var q2 = document.getElementById('q2').value || '(no response)';
-  var q3 = document.getElementById('q3').value || '(no response)';
-  document.getElementById('google-output').value =
-    'Question 1: ' + q1 + '\n\nQuestion 2: ' + q2 + '\n\nQuestion 3: ' + q3;
-}
-function submitToGoogleForm() {
-  var content = document.getElementById('google-output') ? document.getElementById('google-output').value : '';
-  if (content) { try { navigator.clipboard.writeText(content); } catch(e) {} }
-  var u = (window.BH_FORM && typeof buildFormURL === 'function') ? buildFormURL(TOPIC_KEY, 'first10') : '';
-  if (u) window.open(u, '_blank', 'noopener');
-}
 function buildAiPrompt() {
   var q1 = document.getElementById('q1').value || '(no response)';
   var q2 = document.getElementById('q2').value || '(no response)';

@@ -10,34 +10,35 @@
   </style>
 </head>
 <body>
-  <iframe id="first10-frame" src="first-and-10-topic-8-9-causation-capstone.html?v=20260610" title="First and 10 Topic 8.9"></iframe>
+  <iframe id="first10-frame" src="first-and-10-topic-8-9-causation-capstone.html?v=20260610" title="First & 10 Capture Wrapper | Topic 8.9"></iframe>
   <script>
-    const PREFILLED_FIRST10_FORM='https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.9+-+Causation+in+the+Cold+War+and+Decolonization&entry.1549761827=8.9-first10&entry.2107637366=First+and+10&entry.1963461515=Causation&entry.1963461515=Comparison&entry.1963461515=Argumentation';
-    const MAGICSCHOOL_URL='https://student.magicschool.ai/s/login?joinCode=czwb9Q';
-    // Overwrite the reading's own submitToGoogleForm. The reading's button uses an
-    // inline onclick, and preventDefault on an added listener does NOT stop an inline
-    // handler, so adding listeners alongside it opened two tabs: the child's bare form
-    // and the wrapper's prefilled one. Overwriting routes the single click through here.
+    // The reading runs in an iframe. Most readings render their MagicSchool
+    // button with no onclick and rely on this wrapper to catch the click by
+    // label, so this interception is load-bearing, not a convenience.
+    const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+
     function wireFirst10Capture() {
       const frame = document.getElementById('first10-frame');
       try {
-        const w = frame.contentWindow, d = frame.contentDocument || w.document;
-        w.submitToGoogleForm = function () {
-          if (typeof w.buildGooglePrompt === 'function') w.buildGooglePrompt();
-          const o = d.getElementById('google-output'), t = o ? (o.value || '').trim() : '';
-          w.open(PREFILLED_FIRST10_FORM + (t ? '&entry.1818136905=' + encodeURIComponent(t) : ''), '_blank', 'noopener');
-        };
-        d.addEventListener('click', function (event) {
+        const childWindow = frame.contentWindow;
+        const childDocument = frame.contentDocument || childWindow.document;
+        if (!childWindow || !childDocument) return;
+
+        childDocument.addEventListener('click', event => {
           const target = event.target && event.target.closest ? event.target.closest('a,button') : null;
           if (!target) return;
           const label = (target.textContent || '').trim().toLowerCase();
           if (label === 'open magicschool' || label === 'open ai coach') {
             event.preventDefault();
-            w.open(MAGICSCHOOL_URL, '_blank', 'noopener');
+            event.stopPropagation();
+            childWindow.open(MAGICSCHOOL_URL, '_blank', 'noopener');
           }
         }, true);
-      } catch (error) { console.warn('Unable to wire First & 10 capture:', error); }
+      } catch (error) {
+        console.warn('Unable to wire First & 10 MagicSchool link:', error);
+      }
     }
+
     document.getElementById('first10-frame').addEventListener('load', wireFirst10Capture);
   </script>
 </body>

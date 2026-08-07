@@ -43,7 +43,7 @@ node scripts/normalize-student-facing-language.js
 
 ## Student response flow
 
-BeHistorical is the thinking and drafting space. Google Form capture points are prefilled through `assets/js/behistorical-form-config.js`; students submit assessed work through Canvas. The AI Coach is for questioning, verification, and revision, not answer generation.
+BeHistorical is the thinking and drafting space; students submit assessed work through Canvas. The Gather All My Work panel assembles every response into one labelled document with a machine-readable record footer, and `scripts/parse-canvas-submissions.js` turns the downloaded submissions into an analysis table plus an exceptions report. See `docs/CANVAS-CAPTURE.md`. The AI Coach is for questioning, verification, and revision, not answer generation.
 
 ## Source alignment
 

@@ -7,7 +7,7 @@
 
 ## Repository Commands
 
-- `node scripts/validate.js`, run the full structural, form-wiring, and image-integrity audit.
+- `node scripts/validate.js`, run the full structural, capture-wiring, and image-integrity audit.
 - `node scripts/check-image-urls.js`, verify every remote Commons image URL actually resolves. Needs internet access to `commons.wikimedia.org`; `validate.js` stays offline on purpose and cannot do this.
 - `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
@@ -16,6 +16,7 @@
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios.
 - `node scripts/build-unit9.js`, deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
+- `node scripts/remove-google-form-capture.js`, idempotently strip any Google Form capture that reappears in a reading, wrapper, or lesson shell, and normalize all 77 capture wrappers to the MagicSchool-only shape.
 - `node scripts/parse-canvas-submissions.js <dir>`, turn an unzipped Canvas "Download Submissions" folder into `responses.csv` (one row per student per module response) and `exceptions.csv`. Reads and writes local files only, never the network. See `docs/CANVAS-CAPTURE.md`.
 
 The student entry point is `index.html`. The project inventory is `teacher/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file.
@@ -54,11 +55,12 @@ Every picture a student can see must be on-topic and must be impossible to break
 
 ## Core Architecture
 
-> **Before touching any form-capture code, read `docs/FORM-CONTRACT.md`.**
-> It records the live Google Form's dropdown contents, which are not stored in
-> this repository and cannot be inferred from code. The form conforms to the
-> site, never the reverse. Prefill matching is character-exact and fails
-> silently.
+> **The Google Form is retired.** It was removed on 2026-08-07 along with
+> `behistorical-form-config.js`, every Submit to Form button, and the Build Your
+> Google Form Response builder. `docs/FORM-CONTRACT.md` records why, and
+> `validate.js` fails the build if any of it reappears. Do not wire it back up.
+> **MagicSchool is unaffected**; it was never a capture channel and every AI
+> Coach prompt builder and Open MagicSchool button stays.
 
 > **Before touching the Gather All My Work panel or its record footer, read
 > `docs/CANVAS-CAPTURE.md`.** Both renderers emit the footer and one parser reads
@@ -121,16 +123,16 @@ Every First & 10 reading **must** follow the Topic 1.1 structure exactly. This r
    - Multiple `.section` divs, each with: `.section-number` watermark, `.section-label` eyebrow, `h2.section-heading`, `.reading-text` paragraphs, at least one `.ap-callout` with an AP skill label
    - `.be-ready` strip, "BeReady: 10-Second Takeaway"
 4. **`.check-section`**, exactly three `.question-item` elements, each with `.q-num`, `.q-skill` badge, `.q-text`, and `textarea.q-textarea`
-5. **Builder section 1, "Build Your Google Form Response"**, `.builder-section` with `buildGooglePrompt()` button, `#google-output` textarea, `submitToGoogleForm()` button
-6. **Builder section 2, "Build Your AI Coach Prompt"**, `.builder-section` with `buildAiPrompt()`, `copyAiPrompt()`, and Open MagicSchool buttons, `#ai-output` textarea
-7. **`.page-footer-note`**, submission note
-8. **`.module-footer`**, nav links back to lesson path (← Map & Geography | Content Delivery →)
+5. **Builder section, "Build Your AI Coach Prompt"**, `.builder-section` with `buildAiPrompt()`, `copyAiPrompt()`, and Open MagicSchool buttons, `#ai-output` textarea
+6. **`.page-footer-note`**, submission note
+7. **`.module-footer`**, nav links back to lesson path (← Map & Geography | Content Delivery →)
+8. **The First & 10 answer-capture script block.** It writes the three answers to `behistorical-first10-<TOPIC>` where both renderers read them for Gather All My Work. Drop it and those answers never reach Canvas.
 
 ### Delivery pattern
 
 Every First & 10 must use the **embedded iframe** pattern:
 - **Standalone reading file** (`first-and-10-topic-X-X-SLUG.html`), contains all reading content, check section, and builder sections
-- **Capture wrapper** (`first-and-10-topic-X-X-SLUG-capture.html`), thin iframe wrapper that intercepts "Submit to Google Form" and "Open MagicSchool" button clicks
+- **Capture wrapper** (`first-and-10-topic-X-X-SLUG-capture.html`), thin iframe wrapper that intercepts "Open MagicSchool" button clicks
 - **Lesson data file**, `first10.embedUrl` must point to the capture wrapper (e.g., `'first-and-10-topic-1-1-song-china-capture.html'`)
 
 ### CSS class names (canonical)
@@ -143,8 +145,13 @@ Always use the full class names from Topic 1.1/1.2. Never use abbreviated names 
 - No standalone HTML without a capture wrapper
 - No `embedUrl` pointing directly to the standalone HTML (must point to the capture wrapper)
 - No abbreviated CSS class names
+- No Google Form anything: no `submitToGoogleForm`, `buildGooglePrompt`, `#google-output`, `BH_FORM`, `PREFILLED_FIRST10_FORM`, or `behistorical-form-config.js`
 
 ### Capture wrapper pattern
+
+All 77 wrappers share one shape. The MagicSchool interception is load-bearing:
+most readings render that button with no `onclick` and rely on the wrapper
+catching the click by label, so a wrapper without it is a dead button.
 
 ```html
 <!DOCTYPE html>
@@ -152,7 +159,7 @@ Always use the full class names from Topic 1.1/1.2. Never use abbreviated names 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First & 10 Capture Wrapper | Topic X.X</title>
+  <title>First &amp; 10 Capture Wrapper | Topic X.X</title>
   <style>
     html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: #1A1C1D; overflow: hidden; }
     iframe { width: 100%; height: 100vh; border: 0; display: block; }
@@ -161,10 +168,13 @@ Always use the full class names from Topic 1.1/1.2. Never use abbreviated names 
 <body>
   <iframe id="first10-frame" src="first-and-10-topic-X-X-SLUG.html" title="First and 10 Topic X.X"></iframe>
   <script>
-    const PREFILLED_FIRST10_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=UNIT_LABEL&entry.187055090=TOPIC_LABEL&entry.1549761827=TOPIC_ID-first10&entry.2107637366=First+and+10&entry.1963461515=SKILL1&entry.1963461515=SKILL2';
     const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
-    // ... wireFirst10Capture() function (see topic 1.1 capture wrapper)
+    // ... wireFirst10Capture() intercepts clicks labelled
+    //     'open magicschool' or 'open ai coach'
   </script>
 </body>
 </html>
 ```
+
+Run `node scripts/remove-google-form-capture.js` to regenerate all 77 to this
+shape. It is idempotent.

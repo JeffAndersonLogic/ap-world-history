@@ -150,17 +150,7 @@
     </ul>
   </div>
 
-  <div class="builder-section">
-    <h2 class="builder-heading">Build Your Google Form Response</h2>
-    <p class="builder-body">After answering the questions, click the button to collect your responses into one field. Copy the result, then submit to the Google Form.</p>
-    <div class="tool-row">
-      <button onclick="buildGooglePrompt()">Build Google Prompt</button>
-    </div>
-    <textarea id="google-output" class="builder-output" readonly placeholder="Your responses will appear here..."></textarea>
-    <div class="tool-row">
-      <button onclick="submitToGoogleForm()">Submit to Google Form</button>
-    </div>
-  </div>
+  
   <div class="builder-section">
     <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
     <p class="builder-body">After answering the questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.</p>
@@ -183,7 +173,7 @@
 
 </div>
 
-<script src="../assets/js/behistorical-form-config.js?v=unified-v2"></script>
+
 <script>
 var TOPIC_KEY='f4';var TOPIC_LABEL='Foundations 4 - Trade Networks';
 function collectAnswers(){
@@ -191,16 +181,6 @@ function collectAnswers(){
 }
 function collectQuestions(){
   return Array.from(document.querySelectorAll('.q-text,.qt')).map(el=>el.textContent.trim());
-}
-function buildGooglePrompt(){
-  document.getElementById('google-output').value=collectAnswers().map(a=>'Question '+a.num+': '+a.value).join('\n\n');
-}
-function submitToGoogleForm(){
-  const content=document.getElementById('google-output').value;
-  const tl=(window.BH_FORM&&BH_FORM.topics[TOPIC_KEY])||TOPIC_LABEL;
-  const u=window.BH_FORM?BH_FORM.baseURL+'?usp=pp_url&entry.187055090='+encodeURIComponent(tl).replace(/%20/g,'+')+'&entry.2107637366=First+and+10':'';
-  if(content)navigator.clipboard.writeText(content).catch(()=>{});
-  if(u)window.open(u,'_blank','noopener');
 }
 function buildAiPrompt(){
   const ans=collectAnswers(),qs=collectQuestions();

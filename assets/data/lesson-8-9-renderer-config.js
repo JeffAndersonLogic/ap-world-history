@@ -64,14 +64,6 @@
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 8.9 lesson path.'
   };
 
-  // ── Capture URLs, static hardcoded anchor tags only. Never JS-generated. ─────
-  lesson.captureUrls = {
-    matrixEconomic: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.9+-+Causation+in+the+Cold+War+and+Decolonization&entry.1549761827=8.9-matrix-economic&entry.2107637366=Hemispheric+Matrix+Economic+Effects" target="_blank" rel="noopener">Submit to Form</a>',
-    matrixPolitical: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.9+-+Causation+in+the+Cold+War+and+Decolonization&entry.1549761827=8.9-matrix-political&entry.2107637366=Hemispheric+Matrix+Political+Effects" target="_blank" rel="noopener">Submit to Form</a>',
-    matrixSocial: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.9+-+Causation+in+the+Cold+War+and+Decolonization&entry.1549761827=8.9-matrix-social&entry.2107637366=Hemispheric+Matrix+Social+Effects" target="_blank" rel="noopener">Submit to Form</a>',
-    matrixCultural: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.9+-+Causation+in+the+Cold+War+and+Decolonization&entry.1549761827=8.9-matrix-cultural&entry.2107637366=Hemispheric+Matrix+Cultural+Effects" target="_blank" rel="noopener">Submit to Form</a>',
-    matrixSynthesis: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.125385659=Unit+8+-+Cold+War+and+Decolonization&entry.187055090=8.9+-+Causation+in+the+Cold+War+and+Decolonization&entry.1549761827=8.9-matrix-synthesis&entry.2107637366=Hemispheric+Matrix+Synthesis+Thesis" target="_blank" rel="noopener">Submit to Form</a>'
-  };
 
   // ── Custom render function: Unit Review Cards (8.1–8.8) ──────────────────────
   window.renderUnitReview89 = function () {
@@ -192,7 +184,6 @@
 
   window.renderMatrix89 = function () {
     var L = window.BEHISTORICAL_LESSON;
-    var cu = (L && L.captureUrls) || {};
 
     var labelStyle = 'font-family:\'Montserrat\',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#5A5F5C;margin-bottom:.35rem;';
     var hintStyle = 'font-family:\'Montserrat\',sans-serif;font-size:.68rem;line-height:1.5;color:#8C5A2B;font-style:italic;margin-bottom:.45rem;';
@@ -202,8 +193,7 @@
     var rowStyle = 'margin:1.25rem 0;border:1px solid #3E4447;border-radius:3px;overflow:hidden;';
     var footStyle = 'padding:.8rem 1rem;background:#1f2224;border-top:1px solid #3E4447;';
 
-    function matrixRow(rowId, label, eastHint, westHint, captureKey) {
-      var captureBtn = cu[captureKey] || '';
+    function matrixRow(rowId, label, eastHint, westHint) {
       return '<section style="' + rowStyle + '">' +
         '<div style="' + rowHeadStyle + '">' + label + '</div>' +
         '<div style="display:grid;grid-template-columns:1fr 1fr;">' +
@@ -236,7 +226,6 @@
           '</div>' +
           '<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;">' +
             '<button class="btn secondary" type="button" onclick="saveMatrixRow89(\'' + rowId + '\')">Save Row</button>' +
-            captureBtn +
           '</div>' +
           '<div id="matrix-' + rowId + '-save-result" style="font-family:\'Montserrat\',sans-serif;font-size:.68rem;color:#C9A46A;min-height:.9rem;margin-top:.35rem;"></div>' +
         '</div>' +
@@ -254,33 +243,25 @@
         'economic',
         'Economic Effects',
         'Hint: arms spending diverts civilian resources; state-led development (India, Egypt, Cuba); Great Leap Forward; Soviet command economy\'s structural weaknesses (8.4, 8.6, 8.8)',
-        'Hint: Marshall Plan reconstruction aid; U.S. military-industrial complex; economic pressure on Latin American states via Cold War aid conditions; Cuban embargo (8.1, 8.3, 8.4)',
-        'matrixEconomic'
-      ) +
+        'Hint: Marshall Plan reconstruction aid; U.S. military-industrial complex; economic pressure on Latin American states via Cold War aid conditions; Cuban embargo (8.1, 8.3, 8.4)') +
 
       matrixRow(
         'political',
         'Political Effects',
         'Hint: Warsaw Pact; Soviet-backed regimes in Eastern Europe, Asia, Africa; Brezhnev Doctrine; decolonization producing new states; 1989 revolutions (8.2, 8.3, 8.5, 8.6, 8.8)',
-        'Hint: NATO; U.S.-backed regimes (Guatemala 1954, Chile 1973, Contras in Nicaragua); Cuba as counter-model; Cold War shaping U.S. domestic politics (8.1, 8.2, 8.3, 8.7)',
-        'matrixPolitical'
-      ) +
+        'Hint: NATO; U.S.-backed regimes (Guatemala 1954, Chile 1973, Contras in Nicaragua); Cuba as counter-model; Cold War shaping U.S. domestic politics (8.1, 8.2, 8.3, 8.7)') +
 
       matrixRow(
         'social',
         'Social Effects',
         'Hint: refugee crises from proxy wars (Korea, Vietnam, Angola, Afghanistan); displacement from decolonization; gender mobilization in communist states; propaganda and censorship (8.3, 8.5, 8.6, 8.7)',
-        'Hint: civil rights and anti-war movements in the U.S. shaped by Cold War pressures; veterans\' experience of proxy wars; propaganda and McCarthyism; Latin American social displacement from U.S.-backed coups (8.3, 8.7)',
-        'matrixSocial'
-      ) +
+        'Hint: civil rights and anti-war movements in the U.S. shaped by Cold War pressures; veterans\' experience of proxy wars; propaganda and McCarthyism; Latin American social displacement from U.S.-backed coups (8.3, 8.7)') +
 
       matrixRow(
         'cultural',
         'Cultural Effects',
         'Hint: Soviet socialist realism as a state-mandated aesthetic; space race as Eastern Hemisphere achievement (Sputnik, Gagarin); decolonization producing new national cultures; nationalist art and literature in newly independent states (8.2, 8.5)',
-        'Hint: space race as Western Hemisphere competition (Apollo program); American consumer culture as soft power in Western Europe and Latin America; jazz diplomacy; Hollywood as cultural export (8.1, 8.2)',
-        'matrixCultural'
-      ) +
+        'Hint: space race as Western Hemisphere competition (Apollo program); American consumer culture as soft power in Western Europe and Latin America; jazz diplomacy; Hollywood as cultural export (8.1, 8.2)') +
 
       '<section style="margin:1.5rem 0;border:2px solid #C9A46A;border-radius:3px;padding:1.25rem;">' +
         '<div style="font-family:\'Cinzel\',serif;font-size:1rem;font-weight:700;color:#C9A46A;margin-bottom:.7rem;">Synthesis: Evaluate the Extent</div>' +
@@ -288,7 +269,6 @@
         '<textarea id="matrix-synthesis" class="response-area" placeholder="Draft your extent thesis: To a [great/moderate/limited] extent, the effects of the Cold War were [similar/different] in the Eastern and Western Hemispheres because..." style="' + synTaStyle + '"></textarea>' +
         '<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.75rem;">' +
           '<button class="btn secondary" type="button" onclick="saveMatrixSynthesis89()">Save Synthesis</button>' +
-          (cu.matrixSynthesis || '') +
         '</div>' +
         '<div id="matrix-synthesis-result" style="font-family:\'Montserrat\',sans-serif;font-size:.68rem;color:#C9A46A;min-height:.9rem;margin-top:.4rem;"></div>' +
       '</section>';

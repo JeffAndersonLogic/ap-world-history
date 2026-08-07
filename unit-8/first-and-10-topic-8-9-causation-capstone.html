@@ -151,17 +151,7 @@
     </ul>
   </div>
 
-  <div class="builder-section">
-    <h2 class="builder-heading">Build Your Google Form Response</h2>
-    <p class="builder-body">Click <strong>Build Google Form Response</strong> to compile your three answers, then click <strong>Submit to Google Form</strong> to open the form with your response prefilled.</p>
-    <div class="tool-row">
-      <button type="button" onclick="buildGooglePrompt()">Build Google Form Response</button>
-    </div>
-    <textarea id="google-output" class="builder-output" placeholder="Your compiled response will appear here..."></textarea>
-    <div class="tool-row">
-      <button type="button" class="secondary" onclick="submitToGoogleForm()">Submit to Google Form</button>
-    </div>
-  </div>
+  
 
   <div class="builder-section">
     <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
@@ -186,7 +176,7 @@
 
 </div>
 
-<script src="../assets/js/behistorical-form-config.js?v=20260610"></script>
+
 <script>
   var TOPIC_KEY = '8.9';
   var TOPIC_LABEL = '8.9 - Causation in the Cold War and Decolonization';
@@ -196,24 +186,7 @@
     return (el && el.value && el.value.trim()) ? el.value.trim() : '[no answer yet]';
   }
 
-  function buildGooglePrompt() {
-    var text = 'Topic 8.9, First & 10: The Cold War\'s Global Reach\n\n' +
-      'Q1 (Causation, Economic Effects):\n' + getAnswer('q1') + '\n\n' +
-      'Q2 (Comparison, Political Effects, Asia vs. Latin America):\n' + getAnswer('q2') + '\n\n' +
-      'Q3 (Argumentation, Preliminary Extent Claim):\n' + getAnswer('q3');
-    document.getElementById('google-output').value = text;
-  }
-
-  function submitToGoogleForm() {
-    buildGooglePrompt();
-    var text = document.getElementById('google-output').value;
-    var baseUrl = typeof buildFormURL === 'function' ? buildFormURL(TOPIC_KEY, 'first10') : '';
-    if (!baseUrl) return;
-    var url = baseUrl + (text ? '&entry.1818136905=' + encodeURIComponent(text) : '');
-    window.open(url, '_blank', 'noopener');
-  }
-
-  function buildAiPrompt() {
+      function buildAiPrompt() {
     var q1 = getAnswer('q1');
     var q2 = getAnswer('q2');
     var q3 = getAnswer('q3');

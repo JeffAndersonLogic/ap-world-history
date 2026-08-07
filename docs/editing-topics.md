@@ -176,10 +176,10 @@ self-contained. Keep these intact or the validator will complain:
   `builder-section`, etc.);
 - **exactly three** questions, each a `.question-item` with a
   `.q-skill` tag and a `.q-textarea`;
-- the `.q-skill` tags must match the topic's skill list in
-  `assets/js/behistorical-form-config.js` (this coupling is enforced — change
-  one, change the other);
-- the `<script>` block at the bottom (form wiring) and the `TOPIC_KEY`.
+- the `.q-skill` tags, which label the AP skill each question practises;
+- the `<script>` block at the bottom. It holds the AI Coach prompt builder and
+  the First & 10 answer capture that feeds Gather All My Work. Removing it
+  silently stops those three answers reaching Canvas.
 
 The reading title, deck, section prose, and the three question texts are all
 free to rewrite.

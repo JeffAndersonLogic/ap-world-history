@@ -172,17 +172,7 @@
     </ul>
   </div>
 
-  <div class="builder-section">
-    <h2 class="builder-heading">Build Your Google Form Response</h2>
-    <p class="builder-body">After answering the three questions above, click the button to collect your responses into a single field. Copy the result and submit it to the Google Form.</p>
-    <div class="tool-row">
-      <button onclick="buildGooglePrompt()">Build My Response</button>
-    </div>
-    <textarea id="google-output" class="builder-output" readonly placeholder="Your responses will appear here..."></textarea>
-    <div class="tool-row">
-      <button onclick="submitToGoogleForm()">Submit to Google Form</button>
-    </div>
-  </div>
+  
 
   <div class="builder-section">
     <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
@@ -204,7 +194,7 @@
 
 </div>
 
-<script src="../assets/js/behistorical-form-config.js?v=unified-v2"></script>
+
 <script>
 var TOPIC_KEY='4.2';var TOPIC_LABEL='4.2 - Exploration: Causes and Events';
 function collectAnswers() {
@@ -214,19 +204,6 @@ function collectAnswers() {
     const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';
     return 'Q' + (i+1) + ': ' + q + '\nAnswer: ' + a;
   }).join('\n\n');
-}
-
-function buildGooglePrompt() {
-  const output = document.getElementById('google-output');
-  if (output) output.value = collectAnswers();
-}
-
-function submitToGoogleForm() {
-  buildGooglePrompt();
-  var content = document.getElementById('google-output') ? document.getElementById('google-output').value : '';
-  if (content) { try { navigator.clipboard.writeText(content); } catch(e) {} }
-  var u = (window.BH_FORM && typeof buildFormURL === 'function') ? buildFormURL(TOPIC_KEY, 'first10') : '';
-  if (u) window.open(u, '_blank', 'noopener');
 }
 
 function buildAiPrompt() {

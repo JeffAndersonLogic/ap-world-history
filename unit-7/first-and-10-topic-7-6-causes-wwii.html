@@ -166,17 +166,7 @@
     </ul>
   </div>
 
-  <div class="builder-section">
-    <h2 class="builder-heading">Build Your Google Form Response</h2>
-    <p class="builder-body">Click the button below to compile your three answers into a single response you can submit to your class Google Form. Review your answers before submitting.</p>
-    <div class="tool-row">
-      <button onclick="buildGooglePrompt()">BUILD MY RESPONSE</button>
-    </div>
-    <textarea id="google-output" class="builder-output" placeholder="Your compiled answers will appear here..."></textarea>
-    <div class="tool-row">
-      <button onclick="submitToGoogleForm()">SUBMIT TO GOOGLE FORM</button>
-    </div>
-  </div>
+  
 
   <div class="builder-section">
     <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
@@ -199,7 +189,7 @@
 
 </div>
 
-<script src="../assets/js/behistorical-form-config.js?v=unit7-v1"></script>
+
 <script>
 var TOPIC_KEY = '7.6';
 var TOPIC_LABEL = '7.6 - Causes of World War II';
@@ -218,20 +208,6 @@ function collectAnswers() {
     const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '(no response)';
     return 'Question ' + (i + 1) + ': ' + q + '\nMy response: ' + (a || '(no response)');
   }).join('\n\n');
-}
-
-function buildGooglePrompt() {
-  const output = document.getElementById('google-output');
-  if (output) output.value = collectAnswers();
-}
-
-function submitToGoogleForm() {
-  buildGooglePrompt();
-  const content = document.getElementById('google-output').value;
-  navigator.clipboard.writeText(content).catch(function() {});
-  const tl = (window.BH_FORM && window.BH_FORM.topics[TOPIC_KEY]) || TOPIC_LABEL;
-  const u = window.BH_FORM ? window.BH_FORM.baseURL + '?usp=pp_url&entry.187055090=' + encodeURIComponent(tl).replace(/%20/g, '+') + '&entry.2107637366=First+and+10' : '';
-  if (u) window.open(u, '_blank', 'noopener');
 }
 
 function buildAiPrompt() {

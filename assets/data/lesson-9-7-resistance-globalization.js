@@ -115,7 +115,7 @@ window.BEHISTORICAL_LESSON = {
   },
   first10: {
     title: 'First & 10: Resistance to Globalization After 1900',
-    embedUrl: 'first-and-10-topic-9-7-resistance-globalization-capture.html?v=response-id-fix-v1',
+    embedUrl: 'first-and-10-topic-9-7-resistance-globalization-capture.html',
     note: 'Read the narrative, answer three AP-thinking questions, build your coach prompt, and return to Topic 9.7.'
   },
   lecture: {

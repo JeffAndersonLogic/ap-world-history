@@ -169,17 +169,7 @@
     </ul>
   </div>
 
-  <div class="builder-section">
-    <h2 class="builder-heading">Build Your Google Form Response</h2>
-    <p class="builder-body">Click the button below to compile your three answers into a single response you can submit to your class Google Form. Review your answers before submitting.</p>
-    <div class="tool-row">
-      <button onclick="buildGooglePrompt()">BUILD MY RESPONSE</button>
-    </div>
-    <textarea id="google-output" class="builder-output" placeholder="Your compiled answers will appear here..."></textarea>
-    <div class="tool-row">
-      <button onclick="submitToGoogleForm()">SUBMIT TO GOOGLE FORM</button>
-    </div>
-  </div>
+  
 
   <div class="builder-section">
     <h2 class="builder-heading">Build Your AI Coach Prompt</h2>
@@ -202,10 +192,10 @@
 
 </div>
 
-<script src="../assets/js/behistorical-form-config.js"></script>
+
 <script>
   var TOPIC_KEY = '6.1';
-  var TOPIC_LABEL = (window.BH_FORM && BH_FORM.topics[TOPIC_KEY]) || 'Topic 6.1: Rationales for Imperialism';
+  var TOPIC_LABEL = 'Topic 6.1: Rationales for Imperialism';
   function collectAnswers() {
     const items = document.querySelectorAll('.question-item');
     return Array.from(items).map((item, i) => {
@@ -215,18 +205,7 @@
     }).join('\n\n');
   }
 
-  function buildGooglePrompt() {
-    const output = document.getElementById('google-output');
-    if (output) output.value = collectAnswers();
-  }
-
-  function submitToGoogleForm() {
-    buildGooglePrompt();
-    // The capture wrapper replaces this handler with its prefilled URL. This is the standalone fallback.
-    if (window.BH_FORM && BH_FORM.baseURL) window.open(BH_FORM.baseURL, '_blank', 'noopener');
-  }
-
-  function buildAiPrompt() {
+      function buildAiPrompt() {
     const answers = collectAnswers();
     const prompt = 'I just finished a First & 10 reading for AP World History Topic 6.1, Rationales for Imperialism. The reading covered four ideologies used to justify imperialism from 1750 to 1900: Social Darwinism, nationalism, the civilizing mission, and the desire to religiously convert indigenous populations. Here are my answers:\n\n' + answers + '\n\nPlease give me feedback on my historical thinking. Check whether I clearly explain what each ideology claimed, whether I connect the ideologies to actual imperial expansion (rather than just defining them), and whether I show how they reinforced each other. Then ask me one follow-up question that pushes me to think about whether these ideologies were genuine causes of imperialism or justifications for decisions already made.';
     const output = document.getElementById('ai-output');

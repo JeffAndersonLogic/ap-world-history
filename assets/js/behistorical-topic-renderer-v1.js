@@ -103,78 +103,9 @@ function applyKeyConceptLabels() {
   (L.successCriteria || []).forEach((item, i) => { if (match.sc[i]) item.kc = match.sc[i]; });
 }
 
-// ── Form submission (unified, all topics) ────────────────────────────────────
-//
-// submitResponseToGoogleForm lives in assets/js/behistorical-form-config.js so
-// this renderer and foundations/foundations-topic-renderer.js share one
-// implementation. Do not redefine it here, the config file loads first and a
-// local copy would shadow it.
-
-// The topic key this lesson reports to the form, e.g. '1.3'. Empty when the
-// lesson's topic label is not a key in BH_FORM.topics.
-function captureTopicKey() {
-  if (!window.BH_FORM) return '';
-  const key = ((L.meta && L.meta.topic) || '').replace('Topic ', '').trim();
-  return (key && BH_FORM.topics[key]) ? key : '';
-}
-
-// Attribute string stamping a card's own metadata onto its textarea.
-function captureAttrs(responseTypeKey) {
-  const topicKey = captureTopicKey();
-  if (!topicKey || typeof captureDataAttrs !== 'function') return '';
-  return captureDataAttrs(topicKey, responseTypeKey);
-}
-
-// One metadata block per textarea. A card with a capture key reports the exact
-// strings BH_FORM sends to the form; a card without one (Map Check, BeSurreal)
-// keeps the human label it passes in. Never emit both, data-response-type would
-// appear twice and the browser would silently keep only the first.
-function textareaMeta(responseType, captureKey) {
-  return (captureKey ? captureAttrs(captureKey) : '') || `data-response-type="${responseType}"`;
-}
-
-// Capture is deliberately limited to Checkpoint 1 and Checkpoint 2 here, plus
-// First & 10 inside its own capture wrapper. That is the pared-down design from
-// June 2026 and it is the design on purpose, not an unfinished job.
-//
-// The reasoning, so nobody "fixes" this again: BeHistorical is the thinking
-// space, Canvas is where graded work is submitted, and the Google Form is a
-// narrow teacher-visibility channel. A Submit to Form button does not make a
-// draft durable, it only asks the student to remember one more click. Every
-// module card keeps its own draft box; "Copy All My Work" is how that reaches
-// Canvas. See docs/FORM-CONTRACT.md.
-//
-//   first10     , captured inside the First & 10 capture wrapper, which already
-//                 prefills the response. A second button here would open a form
-//                 with nothing in it, the reading lives in an iframe.
-//   beInTheRoom , module 09 is an external link with no textarea, and no
-//                 *-beintheroom Prompt IDs exist on the form.
-//
-// This still overwrites the standard keys a data file may have set, because
-// hand-written captureUrls in assets/data/ dropped Prompt ID and Skill Focus,
-// and a silently blank Prompt ID is the exact failure the contract warns about.
-function autoBuildCaptureUrls() {
-  if (!window.BH_FORM || typeof buildCaptureButton !== 'function') return;
-
-  const topicKey = captureTopicKey();
-  if (!topicKey) return;
-
-  const btn = (elemId, responseTypeKey) => buildCaptureButton(elemId, topicKey, responseTypeKey);
-
-  // Merge, do not replace. Topics 7.9 and 8.9 define bespoke matrix capture
-  // keys that their own module renderers read; overwriting the object outright
-  // would silently delete those buttons.
-  L.captureUrls = Object.assign({}, L.captureUrls, {
-    first10:     '',
-    checkpoint1: btn('checkpoint-one-response', 'checkpoint1'),
-    checkpoint2: btn('checkpoint-two-response', 'checkpoint2')
-  });
-}
-
 // ── Boot ──────────────────────────────────────────────────────────────────────
 
 if (L) {
-  autoBuildCaptureUrls();
   applyKeyConceptLabels();
   document.title = `BeHistorical | AP World ${L.meta.topic} ${L.meta.title}`;
   byId('lesson-title').textContent = `${L.meta.topic}, ${L.meta.title}`;
@@ -428,9 +359,6 @@ function renderFirst10() {
         data-response-type="First and 10 Q${i + 1}"
         placeholder="Write your answer here..."
       ></textarea>
-      <div class="tool-row" style="margin-top:.4rem;">
-        <button class="btn secondary" type="button" onclick="saveDraft('first10-q${i + 1}')">Save Draft</button>
-      </div>
       <div id="first10-q${i + 1}-result" class="check-result"></div>
     </div>`).join('');
 
@@ -443,8 +371,7 @@ function renderFirst10() {
       </div>
       <div class="first10-frame-wrap">
         <iframe class="first10-frame" src="${L.first10.embedUrl}" title="${L.first10.title}"></iframe>
-      </div>
-      ${L.captureUrls && L.captureUrls.first10 ? `<div class="tool-row" style="margin-top:1rem;">${L.captureUrls.first10}</div>` : ''}`;
+      </div>`;
 
   }
 
@@ -475,7 +402,6 @@ function renderFirst10AIBridge(msUrl, canvasNote, topic, topicTitle, questions) 
       <div class="tool-row" style="margin-top:.75rem;">
         <button class="btn" type="button" onclick="generateFirst10Prompt()">Build My AI Coach Prompt</button>
         <button class="btn secondary" type="button" onclick="copyFirst10Prompt()">Copy Prompt</button>
-        ${(L.captureUrls && L.captureUrls.first10) || ''}
         <a class="btn secondary" href="${msUrl}" target="_blank" rel="noopener">Open AI Coach</a>
       </div>
       <div id="first10-ms-result" class="check-result"></div>
@@ -595,7 +521,7 @@ function renderCheckpoint(cp, id) {
         <ul>${(cp.focus || []).map(f => `<li>${f}</li>`).join('')}</ul>
       </article>
     </div>
-    ${responseBlock(id, cp.prompt, cp.responseType, cp.terms || [], id === 'checkpoint-one-response' ? 'checkpoint1' : 'checkpoint2')}
+    ${responseBlock(id, cp.prompt, cp.responseType, cp.terms || [])}
     <div class="magicschool-bridge">
       <h3>Take Your Thinking to the AI Coach</h3>
       <p>After drafting your response above, open the BeHistorical AI Coach. Start your message with:</p>
@@ -664,34 +590,26 @@ function renderPrimarySource() {
 
 // ── Shared response/draft blocks ──────────────────────────────────────────────
 
-function draftBlock(id, prompt, responseType, captureKey = '') {
+function draftBlock(id, prompt, responseType) {
   rememberPrompt(id, prompt);
   return `
     <div class="prompt-box">
       <h3>Draft Your Thinking</h3>
       <p>${prompt}</p>
-      <textarea class="response-area" id="${id}" ${textareaMeta(responseType, captureKey)} placeholder="Type your response here..."></textarea>
-      <div class="tool-row">
-        <button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button>
-        <button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button>
-        ${captureKey && L.captureUrls && L.captureUrls[captureKey] ? L.captureUrls[captureKey] : ''}
-      </div>
+      <textarea class="response-area" id="${id}" data-response-type="${responseType}" placeholder="Type your response here..."></textarea>
       <div id="${id}-result" class="check-result"></div>
     </div>`;
 }
 
-function responseBlock(id, prompt, responseType, terms = [], captureKey = '') {
+function responseBlock(id, prompt, responseType, terms = []) {
   rememberPrompt(id, prompt);
   return `
     <div class="prompt-box">
       <h3>Write Your Response</h3>
       <p>${prompt}</p>
-      <textarea class="response-area" id="${id}" ${textareaMeta(responseType, captureKey)} data-terms="${terms.join('|')}" placeholder="Type your checkpoint response here..."></textarea>
+      <textarea class="response-area" id="${id}" data-response-type="${responseType}" data-terms="${terms.join('|')}" placeholder="Type your checkpoint response here..."></textarea>
       <div class="tool-row">
-        <button class="btn" type="button" onclick="saveDraft('${id}')">Save Draft</button>
-        <button class="btn secondary" type="button" onclick="copyResponse('${id}')">Copy Response</button>
         <button class="btn secondary" type="button" onclick="selfCheck('${id}')">Run Self-Check</button>
-        ${captureKey && L.captureUrls && L.captureUrls[captureKey] ? L.captureUrls[captureKey] : ''}
       </div>
       <div id="${id}-result" class="check-result"></div>
     </div>`;
@@ -754,14 +672,6 @@ const BH_NO_STORAGE_NOTE = 'This browser will not let the page save drafts. Your
 function draftKey(id) {
   const topic = (L && L.meta && L.meta.topic) ? L.meta.topic.replace(/\s+/g, '-').toLowerCase() : 'shared';
   return `behistorical-draft-${topic}-${id}`;
-}
-
-function saveDraft(id) {
-  const t = byId(id);
-  if (!t) return;
-  const saved = BHDraftStore.set(draftKey(id), t.value || '');
-  const r = byId(id + '-result');
-  if (r) r.textContent = saved ? 'Draft saved in this browser on this device.' : BH_NO_STORAGE_NOTE;
 }
 
 function loadDraft(id) {
@@ -1212,14 +1122,6 @@ function renderWorkExportPanel() {
       </div>
       <div id="all-work-result" class="check-result"></div>
     </article>`);
-}
-
-function copyResponse(id) {
-  const t = byId(id);
-  if (!t) return;
-  navigator.clipboard.writeText(t.value || '')
-    .then(() => byId(id + '-result').textContent = 'Response copied.')
-    .catch(() => byId(id + '-result').textContent = 'Copy failed. Select your text and copy manually.');
 }
 
 function selfCheck(id) {

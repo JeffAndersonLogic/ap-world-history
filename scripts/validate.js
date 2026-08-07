@@ -83,7 +83,6 @@ function findParenUrls(src) {
   return results;
 }
 
-// ─── BH_FORM topic keys ───────────────────────────────────────────────────────
 function loadTopicKeys() {
   const src = read(path.join(ROOT, 'assets/js/behistorical-form-config.js'));
   if (!src) return new Set();
@@ -94,20 +93,6 @@ function loadTopicKeys() {
   return keys;
 }
 
-function loadFormContext() {
-  const filePath = path.join(ROOT, 'assets/js/behistorical-form-config.js');
-  const src = read(filePath);
-  if (!src) return null;
-  const context = { URLSearchParams };
-  context.window = context;
-  try {
-    vm.runInNewContext(src, context, { filename: filePath });
-    return context;
-  } catch (error) {
-    err(filePath, `could not evaluate form configuration: ${error.message}`);
-    return null;
-  }
-}
 
 function primaryReasoningSkill(topicKey, topicLabel) {
   const foundations = { f1: 'Causation', f2: 'Comparison', f3: 'Comparison', f4: 'Causation', f5: 'Comparison' };
@@ -240,26 +225,18 @@ function checkFirst10(filePath, topicKeys) {
   const keyMatch = src.match(/var\s+TOPIC_KEY\s*=\s*['"]([^'"]+)['"]/);
   if (!keyMatch) {
     err(filePath, 'missing var TOPIC_KEY');
-  } else if (!topicKeys.has(keyMatch[1])) {
-    err(filePath, `TOPIC_KEY '${keyMatch[1]}' not in BH_FORM.topics, Google Form prefill will break`);
   }
   if (!src.match(/var\s+TOPIC_LABEL\s*=/)) err(filePath, 'missing var TOPIC_LABEL');
 
-  // Builder output IDs
-  if (!src.includes('id="google-output"') && !src.includes("id='google-output'")) {
-    err(filePath, 'missing id="google-output"');
-  }
+  // Builder output IDs. The Google builder is retired; only the AI Coach remains.
   if (!src.includes('id="ai-output"') && !src.includes("id='ai-output'")) {
     err(filePath, 'missing id="ai-output"');
   }
 
   // Builder functions
-  for (const fn of ['buildGooglePrompt', 'submitToGoogleForm', 'buildAiPrompt', 'copyAiPrompt']) {
+  for (const fn of ['buildAiPrompt', 'copyAiPrompt']) {
     if (!src.includes(`function ${fn}`)) err(filePath, `missing function ${fn}()`);
   }
-
-  // BH_FORM script loaded
-  if (!src.includes('behistorical-form-config.js')) err(filePath, 'behistorical-form-config.js not loaded');
 
   // Textarea count, treat qta and q-textarea as class tokens so multi-class
   // attributes such as class="q-textarea qta" are recognized correctly.
@@ -280,10 +257,6 @@ function checkFirst10(filePath, topicKeys) {
     warn(filePath, 'builder references q1-q3 but response textarea IDs are not assigned');
   }
 
-  // BH_FORM URL pattern
-  if (!src.includes('BH_FORM') && !src.includes('buildFormURL')) {
-    warn(filePath, 'submitToGoogleForm may not use BH_FORM.baseURL, check for hardcoded form URL');
-  }
 }
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -321,13 +294,9 @@ function checkLessonShell(filePath) {
   }
 
   // Script loading order
-  const fi = src.indexOf('behistorical-form-config.js');
   const di = src.search(/assets\/data\/lesson-\d+-\d+-(?!renderer)[^"']+\.js/);
   const ri = src.search(/lesson-\d+-\d+-renderer-config\.js/);
   const vi = src.indexOf('behistorical-topic-renderer-v1.js');
-
-  if (fi === -1) err(filePath, 'behistorical-form-config.js not loaded');
-  else if (di > -1 && fi > di) err(filePath, 'order: behistorical-form-config.js must load BEFORE the data file');
 
   if (di > -1 && ri > -1 && di > ri) err(filePath, 'order: data file must load BEFORE renderer-config.js');
   if (ri > -1 && vi > -1 && ri > vi) err(filePath, 'order: renderer-config.js must load BEFORE behistorical-topic-renderer-v1.js');
@@ -396,12 +365,8 @@ function checkFoundationsHtml(filePath) {
     if (src.includes(`id=${bad}`)) err(filePath, `wrong id=${bad}, use id=${good}`);
   }
 
-  const fi = src.indexOf('behistorical-form-config.js');
   const di = src.search(/foundations-\d+.*-data\.js|foundations-0\d.*-data\.js/);
   const ri = src.indexOf('foundations-topic-renderer.js');
-
-  if (fi === -1) err(filePath, 'behistorical-form-config.js not loaded');
-  else if (di > -1 && fi > di) err(filePath, 'order: behistorical-form-config.js must load BEFORE the data file');
   if (di > -1 && ri > -1 && di > ri) err(filePath, 'order: data file must load BEFORE foundations-topic-renderer.js');
 }
 
@@ -499,123 +464,66 @@ const fFirst10 = glob(foundationsDir, /^first-and-10-foundations.*\.html$/);
 for (const f of fFirst10) checkFirst10(f, topicKeys);
 sectionDone(`${fFirst10.filter(f => !path.basename(f).includes('-capture')).length} standalone foundations F&10 files`);
 
-// 8. Topic key audit
-section('behistorical-form-config.js topic key audit');
+// 8. The Google Form is retired. This check keeps it retired.
+//
+// Student work goes to Canvas through Gather All My Work. A second collection
+// channel splits the record and fails silently, which is how the form lost the
+// Topic field on six lessons and every Student Response for an unknown period.
+// MagicSchool is not a capture channel and must survive: it is where students
+// take their thinking to be questioned.
+section('Google Form retirement and MagicSchool wiring');
 {
-  totalChecks++;
-  const allFirst10 = [...unitFirst10, ...fFirst10];
-  let mismatches = 0;
-  for (const f of allFirst10) {
-    if (path.basename(f).includes('-capture')) continue;
-    const src = read(f);
-    if (!src) continue;
-    const m = src.match(/var\s+TOPIC_KEY\s*=\s*['"]([^'"]+)['"]/);
-    if (m && !topicKeys.has(m[1])) {
-      err(f, `TOPIC_KEY '${m[1]}' has no BH_FORM.topics entry, Google Form prefill will break`);
-      mismatches++;
-    }
-  }
-  if (mismatches === 0) console.log(`  ${G}✓${X} All F&10 TOPIC_KEYs matched to BH_FORM.topics`);
-}
+  const banned = [
+    ['docs.google.com/forms', 'a Google Form URL'],
+    ['behistorical-form-config', 'the retired form config'],
+    ['submitToGoogleForm', 'a form submit handler'],
+    ['buildGooglePrompt', 'the form prompt builder'],
+    ['PREFILLED_FIRST10_FORM', 'a prefilled form URL'],
+    ['BH_FORM', 'the retired BH_FORM global'],
+  ];
+  const surfaces = [...unitFirst10, ...fFirst10, ...lessonShells, ...fHtmlFiles];
+  let offenders = 0;
 
-// 9. Complete form-skill mapping audit
-section('Google Form skill mappings');
-{
-  totalChecks++;
-  const formContext = loadFormContext();
-  if (formContext) {
-    const form = formContext.BH_FORM;
-    const requiredResponseTypes = [
-      'first10', 'skillBuilder', 'checkpoint1', 'evidenceLab',
-      'primarySource', 'beInTheRoom', 'checkpoint2'
-    ];
-    const validSkills = new Set([
-      'Causation', 'Comparison', 'Continuity and Change Over Time (CCOT)',
-      'Contextualization', 'Argumentation', 'Evidence Usage', 'Sourcing',
-      'Complexity', 'Claims & Thesis'
-    ]);
-    const lessonTopics = Object.keys(form.topics)
-      .filter((topicKey) => /^\d+\.\d+$/.test(topicKey) || /^f\d+$/.test(topicKey))
-      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
-    const standaloneFirst10 = [...unitFirst10, ...fFirst10]
-      .filter((filePath) => !path.basename(filePath).includes('-capture'));
-
-    for (const topicKey of lessonTopics) {
-      const mapping = form.skills && form.skills[topicKey];
-      if (!mapping) {
-        err(path.join(ROOT, 'assets/js/behistorical-form-config.js'), `missing skill mapping for Topic ${topicKey}`);
-        continue;
-      }
-      for (const responseType of requiredResponseTypes) {
-        const skills = mapping[responseType];
-        if (!Array.isArray(skills) || skills.length === 0) {
-          err(path.join(ROOT, 'assets/js/behistorical-form-config.js'), `Topic ${topicKey} missing non-empty ${responseType} skill mapping`);
-          continue;
-        }
-        for (const skill of skills) {
-          if (!validSkills.has(skill)) {
-            err(path.join(ROOT, 'assets/js/behistorical-form-config.js'), `Topic ${topicKey} ${responseType} uses invalid skill '${skill}'`);
-          }
-        }
-      }
-
-      const topicPrefix = /^f\d+$/.test(topicKey)
-        ? `first-and-10-foundations-${topicKey.slice(1)}-`
-        : `first-and-10-topic-${topicKey.replace('.', '-')}-`;
-      const first10File = standaloneFirst10.find((filePath) => path.basename(filePath).startsWith(topicPrefix));
-      const first10Source = first10File && read(first10File);
-      if (!first10Source) {
-        err(path.join(ROOT, 'assets/js/behistorical-form-config.js'), `could not locate First & 10 page for Topic ${topicKey}`);
-      } else {
-        const displayedSkills = [];
-        for (const match of first10Source.matchAll(/<span class="q-skill">([^<]+)<\/span>/g)) {
-          for (const skill of normalizeDisplayedSkill(match[1], topicKey, form.topics[topicKey])) {
-            if (validSkills.has(skill) && !displayedSkills.includes(skill)) displayedSkills.push(skill);
-          }
-        }
-        if (JSON.stringify(mapping.first10) !== JSON.stringify(displayedSkills)) {
-          err(first10File, `First & 10 form skills ${JSON.stringify(mapping.first10)} do not match displayed skills ${JSON.stringify(displayedSkills)}`);
-        }
-      }
-    }
-    sectionDone(`${lessonTopics.length} topic mappings`);
-  }
-}
-
-// 10. Capture wrappers must carry the exact centrally generated First & 10 URL
-section('First & 10 capture-wrapper form wiring');
-{
-  const formContext = loadFormContext();
-  const captureFiles = [...unitFirst10, ...fFirst10]
-    .filter((filePath) => path.basename(filePath).includes('-capture'));
-  for (const filePath of captureFiles) {
+  for (const filePath of surfaces) {
     totalChecks++;
-    const source = read(filePath);
-    const fileName = path.basename(filePath);
-    const topicMatch = fileName.match(/^first-and-10-topic-(\d+)-(\d+)-.*-capture\.html$/);
-    const foundationMatch = fileName.match(/^first-and-10-foundations-(\d+)-.*-capture\.html$/);
-    if (!source || (!topicMatch && !foundationMatch)) {
-      err(filePath, 'capture wrapper is unreadable or has an invalid topic filename');
-      continue;
-    }
-    const topicKey = topicMatch ? `${topicMatch[1]}.${topicMatch[2]}` : `f${foundationMatch[1]}`;
-    const constantMatch = source.match(/const\s+PREFILLED_FIRST10_FORM\s*=\s*['"]([^'"]+)['"]/);
-    if (!constantMatch) {
-      err(filePath, 'missing PREFILLED_FIRST10_FORM constant');
-      continue;
-    }
-    if (formContext) {
-      const expected = formContext.buildFormURL(topicKey, 'first10');
-      if (constantMatch[1] !== expected) {
-        err(filePath, `prefilled URL does not match central form configuration for Topic ${topicKey}`);
+    const src = read(filePath);
+    if (!src) continue;
+    for (const [needle, label] of banned) {
+      if (src.includes(needle)) {
+        err(filePath, `${label} is still wired here, run scripts/remove-google-form-capture.js`);
+        offenders++;
       }
     }
-    const prefilledReferences = source.match(/PREFILLED_FIRST10_FORM/g) || [];
-    if (prefilledReferences.length < 2) {
-      err(filePath, 'capture wiring does not use PREFILLED_FIRST10_FORM');
+  }
+
+  // 41 readings render the MagicSchool button with no onclick and depend on the
+  // wrapper catching the click by label, so a wrapper without the interception
+  // is a dead button, not a cosmetic gap.
+  const wrappers = [...unitFirst10, ...fFirst10].filter(f => path.basename(f).includes('-capture'));
+  for (const filePath of wrappers) {
+    totalChecks++;
+    const src = read(filePath) || '';
+    if (!src.includes('MAGICSCHOOL_URL')) {
+      err(filePath, 'capture wrapper does not wire MagicSchool, the reading\'s button will do nothing');
+      offenders++;
     }
   }
-  sectionDone(`${captureFiles.length} capture wrappers`);
+
+  const readings = [...unitFirst10, ...fFirst10].filter(f => !path.basename(f).includes('-capture'));
+  for (const filePath of readings) {
+    totalChecks++;
+    const src = read(filePath) || '';
+    if (!/Open (MagicSchool|AI Coach)/.test(src)) {
+      err(filePath, 'reading has no MagicSchool button');
+      offenders++;
+    }
+    if (!src.includes('buildAiPrompt')) {
+      err(filePath, 'reading has no AI Coach prompt builder');
+      offenders++;
+    }
+  }
+
+  sectionDone(`${surfaces.length} surfaces clean of the form; ${wrappers.length} wrappers and ${readings.length} readings keep MagicSchool`);
 }
 
 // 11. BeInTheRoom links and v2 scenario contract

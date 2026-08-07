@@ -1,21 +1,43 @@
-<!DOCTYPE html>
+'use strict';
+
+/**
+ * The one canonical First & 10 capture wrapper.
+ *
+ * Three tools write these files: build-unit6.js, build-unit9.js, and
+ * remove-google-form-capture.js. They used to each carry their own copy of the
+ * markup, which is how the wrappers drifted into four different shapes and how
+ * seven Unit 6 wrappers ended up never wiring MagicSchool at all. One template,
+ * imported everywhere, so running any of the three converges instead of churning.
+ *
+ * The MagicSchool interception is load-bearing, not a convenience. Most readings
+ * render that button with no onclick and rely on the wrapper catching the click
+ * by label, so a wrapper without it is a dead button.
+ *
+ * The Google Form that these wrappers used to prefill is retired. See
+ * docs/FORM-CONTRACT.md for why, and do not add it back.
+ */
+
+const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+
+function captureWrapper(src, title) {
+  return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First &amp; 10 Capture Wrapper | Topic 1.5: State Building in Africa</title>
+  <title>${title}</title>
   <style>
     html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: #1A1C1D; overflow: hidden; }
     iframe { width: 100%; height: 100vh; border: 0; display: block; }
   </style>
 </head>
 <body>
-  <iframe id="first10-frame" src="first-and-10-topic-1-5-africa.html?v=form-fix-v1" title="First &amp; 10 Capture Wrapper | Topic 1.5: State Building in Africa"></iframe>
+  <iframe id="first10-frame" src="${src}" title="${title}"></iframe>
   <script>
     // The reading runs in an iframe. Most readings render their MagicSchool
     // button with no onclick and rely on this wrapper to catch the click by
     // label, so this interception is load-bearing, not a convenience.
-    const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+    const MAGICSCHOOL_URL = '${MAGICSCHOOL_URL}';
 
     function wireFirst10Capture() {
       const frame = document.getElementById('first10-frame');
@@ -43,3 +65,7 @@
   </script>
 </body>
 </html>
+`;
+}
+
+module.exports = { captureWrapper, MAGICSCHOOL_URL };

@@ -39,7 +39,6 @@ window.renderCausationMatrix = function () {
     'New military technology'
   ];
   var canvasNote = (L && L.meta && L.meta.canvasSubmissionNote) || 'Organize your thinking here, submit your final work in Canvas.';
-  var captureBtn = (L && L.captureUrls && L.captureUrls.matrixAnalysis) || '';
 
   var tableRows = rows.map(function (row, i) {
     return '<tr>'
@@ -85,7 +84,6 @@ window.renderCausationMatrix = function () {
     + '<div class="tool-row">'
     + '<button class="btn" type="button" onclick="saveDraft(\'matrix-synthesis-response\')">Save Draft</button>'
     + '<button class="btn secondary" type="button" onclick="copyResponse(\'matrix-synthesis-response\')">Copy Response</button>'
-    + captureBtn
     + '</div>'
     + '<div id="matrix-synthesis-response-result" class="check-result"></div>'
     + '<p class="canvas-note">' + canvasNote + '</p>'
@@ -262,10 +260,6 @@ window.renderCausationMatrix = function () {
   // ── Capture points, static hardcoded anchors (never JS-generated) ───────────
   // first10 is intentionally empty: the First & 10 capture lives inside the
   // capture wrapper, and nothing renders below the First & 10 iframe.
-  // matrixAnalysis is the sixth capture point (Response Type: Matrix Analysis).
-  lesson.captureUrls = {
-    matrixAnalysis: '<a class="btn-capture" href="https://docs.google.com/forms/d/e/1FAIpQLSe_0wBPNvSivuE0ea3fhty43c4PDNfE-tEWsGsZYyh0gFCxxw/viewform?usp=pp_url&entry.187055090=7.9+-+Causation+in+Global+Conflict&entry.2107637366=Matrix+Analysis" target="_blank" rel="noopener">Submit to Form</a>'
-  };
 
   // ── Custom 10-module array ────────────────────────────────────────────────────
   // Module 09 is the Causation Matrix. renderCausationMatrix is defined in

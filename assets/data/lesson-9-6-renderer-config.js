@@ -51,7 +51,7 @@
     ]
   }
 ];
-  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-9-6-globalized-culture-capture.html?v=response-id-fix-v1' };
+  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-9-6-globalized-culture-capture.html' };
   lesson.beInTheRoom = {
   url: '../beintheroom/unit-9/global-broadcast-board.html',
   desc: 'A new satellite network can reach viewers across South Asia and the diaspora. Decide how much programming should be locally produced, imported, translated, and sponsored by global brands.'
