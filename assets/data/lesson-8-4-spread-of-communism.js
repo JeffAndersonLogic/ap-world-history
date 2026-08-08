@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 8.4",
     title: "Spread of Communism After 1900",
     subtitle: "How internal crisis, foreign aggression, and the drive to redistribute land and resources fueled communist and socialist movements across China, Africa, Asia, and Latin America",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

@@ -12,7 +12,7 @@ window.BEHISTORICAL_LESSON = {
     topic: 'Topic 9.7',
     title: 'Resistance to Globalization After 1900',
     subtitle: 'Explain the various responses to increasing globalization from 1900 to present.',
-    feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
+    feedbackToolUrl: "",
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [

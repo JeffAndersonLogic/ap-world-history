@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 5.3",
     title: "The Industrial Revolution Begins",
     subtitle: "Why industrialization started in Britain — and how the steam engine, factory system, and urbanization transformed labor and society from c. 1750 to c. 1900",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

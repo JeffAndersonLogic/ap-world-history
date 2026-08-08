@@ -16,6 +16,7 @@
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios.
 - `node scripts/build-unit9.js`, deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
+- `node scripts/centralize-coach-url.js`, strip any literal MagicSchool joinCode that has reappeared and route it back through `assets/js/behistorical-coach-config.js`. Idempotent. **To point the course at a different classroom, edit `COACH_URL` in that config file, and nothing else.** The code was once pasted into 249 files in four shapes with five generators baking it in, so every generator run pasted it back; run this after `build-unit6.js`, `build-unit9.js`, `build-canvas-packets.js`, or `normalize-student-facing-language.js`. `validate.js` fails the build if a literal survives anywhere.
 - `node scripts/remove-google-form-capture.js`, idempotently strip any Google Form capture that reappears in a reading, wrapper, or lesson shell, and normalize all 77 capture wrappers to the MagicSchool-only shape.
 - `node scripts/test/modal-focus.unit.js` and `node scripts/test/modal-focus.foundations.js`, drive a real lesson page in Chromium and assert the modal focus contract. Needs `npm i playwright-core`; `validate.js` stays offline and dependency-free, so these are separate. Run them when touching any modal open/close path.
 - `node scripts/build-skills-map.js`, regenerate `assets/data/skills-map.js`, the AP skill and evidence-term lookup the Skills Lens inlines. Run it after editing a checkpoint's `terms`, a `skillBuilder.label`, or a reading's `q-skill` badges.
@@ -202,8 +203,9 @@ catching the click by label, so a wrapper without it is a dead button.
 </head>
 <body>
   <iframe id="first10-frame" src="first-and-10-topic-X-X-SLUG.html" title="First and 10 Topic X.X"></iframe>
+  <script src="../assets/js/behistorical-coach-config.js"></script>
   <script>
-    const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+    const MAGICSCHOOL_URL = window.BH_COACH_URL;   // from behistorical-coach-config.js
     // ... wireFirst10Capture() intercepts clicks labelled
     //     'open magicschool' or 'open ai coach'
   </script>

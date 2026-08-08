@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 3.1",
     title: "Empires Expand",
     subtitle: "Gunpowder weapons, military conquest, and the rise of land-based empires c. 1450–c. 1750",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

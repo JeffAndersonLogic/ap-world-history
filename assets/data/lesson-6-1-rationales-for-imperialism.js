@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 6.1",
     title: "Rationales for Imperialism",
     subtitle: "How cultural, religious, and racial ideologies — Social Darwinism, nationalism, the civilizing mission, and missionary conversion — were used to justify imperial expansion from 1750 to 1900",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

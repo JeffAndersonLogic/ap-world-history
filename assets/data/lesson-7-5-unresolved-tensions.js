@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 7.5",
     title: "Unresolved Tensions After World War I",
     subtitle: "Empires did not end in 1918 — they reorganized: how Western and Japanese imperial states maintained and expanded territorial control between the wars while anti-imperial resistance built the pressure that would reshape the map",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

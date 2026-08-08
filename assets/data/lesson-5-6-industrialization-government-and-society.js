@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 5.6",
     title: "Industrialization: Government and Society",
     subtitle: "How industrialization created new social classes and ideological conflicts — and how governments, workers, and women responded to the social transformations of the industrial age",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 4.6",
     title: "Internal and External Challenges to State Power",
     subtitle: "How colonized peoples, enslaved Africans, and rival European powers challenged maritime empires from within and without",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 7.6",
     title: "Causes of World War II",
     subtitle: "The unresolved tensions of Topic 7.5 resolve violently: how a failed peace, a global economic collapse, continued imperialist ambition, and — especially — the rise of fascist and totalitarian regimes drove the world into a second total war",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

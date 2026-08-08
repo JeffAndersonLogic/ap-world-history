@@ -11,11 +11,11 @@
 </head>
 <body>
   <iframe id="first10-frame" src="first-and-10-topic-6-4-global-economic-development.html" title="First &amp; 10 Capture | Topic 6.4"></iframe>
-  <script>
+  <script src="../assets/js/behistorical-coach-config.js"></script><script>
     // The reading runs in an iframe. Most readings render their MagicSchool
     // button with no onclick and rely on this wrapper to catch the click by
     // label, so this interception is load-bearing, not a convenience.
-    const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+    const MAGICSCHOOL_URL = window.BH_COACH_URL;
 
     function wireFirst10Capture() {
       const frame = document.getElementById('first10-frame');

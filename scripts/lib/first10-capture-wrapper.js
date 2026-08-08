@@ -17,7 +17,7 @@
  * docs/FORM-CONTRACT.md for why, and do not add it back.
  */
 
-const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+const MAGICSCHOOL_URL = require('../../assets/js/behistorical-coach-config.js').RESOLVED;
 
 function captureWrapper(src, title) {
   return `<!DOCTYPE html>

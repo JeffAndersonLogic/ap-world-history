@@ -19,7 +19,7 @@ const ROOT = path.resolve(__dirname, '..');
 const UNIT = path.join(ROOT, 'unit-6');
 const DATA = path.join(ROOT, 'assets', 'data');
 const ROOM = path.join(ROOT, 'beintheroom', 'unit-6');
-const COACH_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+const COACH_URL = require('../assets/js/behistorical-coach-config.js').RESOLVED;
 const SUBMIT_NOTE = 'Organize your thinking here, submit your final work in Canvas.';
 
 const topics = [

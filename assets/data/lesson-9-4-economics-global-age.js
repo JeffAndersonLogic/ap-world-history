@@ -12,7 +12,7 @@ window.BEHISTORICAL_LESSON = {
     topic: 'Topic 9.4',
     title: 'Economics in the Global Age',
     subtitle: 'Explain the continuities and changes in the global economy from 1900 to present.',
-    feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
+    feedbackToolUrl: "",
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [

@@ -91,7 +91,7 @@
       </section>
 
       <section class="role-grid" id="ai-coach">
-        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
+        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" data-bh-coach href="https://www.magicschool.ai/" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
       </section>
 
       <section class="role-grid" id="reflection">
@@ -108,7 +108,7 @@
       </div>
     </footer>
   </div>
-<script>
+<script src="../../assets/js/behistorical-coach-config.js"></script><script>
 const roles={
  governor:{name:'Inca Provincial Governor (Apu)',status:'State official appointed by Cusco with authority over multiple communities',power:'High formal authority; reports directly to the Sapa Inca\'s administrators.',goals:'Satisfy Cusco\'s labor quota, maintain provincial order, preserve your position.',fears:'A report of failure or rebellion reaching Cusco; losing the confidence of the state.',lens:'You value compliance with state obligations, administrative efficiency, and the long-term stability of the road network.',challenge:'Your loyalty to the state and your care for your communities are not always the same thing.'},
  curaca:{name:'Local Community Leader (Curaca)',status:'Traditional community authority who mediates between families and the state',power:'Moderate, you know your people and the land, but you answer to the apu above you.',goals:'Protect your community\'s labor, food supply, and survival through the agricultural season.',fears:'Famine, resentment, or seeing your people exhausted beyond their capacity to recover.',lens:'You value reciprocity, the idea that labor obligations must be matched by state support, food, tools, and ritual recognition.',challenge:'The state\'s timeline does not match the farming calendar.'},

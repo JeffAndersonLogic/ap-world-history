@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 7.2",
     title: "Causes of World War I",
     subtitle: "How imperialist competition, territorial and regional conflicts, a flawed alliance system, and intense nationalism escalated one assassination into global war",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

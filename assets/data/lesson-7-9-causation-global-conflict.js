@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 7.9",
     title: "Causation in Global Conflict",
     subtitle: "The unit's synthesis and skill capstone: historians don't just list causes of global conflict, they weigh them — and 'relative significance' means arguing that some causes mattered more than others. Build, rank, and defend your own causal argument across all of Unit 7.",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

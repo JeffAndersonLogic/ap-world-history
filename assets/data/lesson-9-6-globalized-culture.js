@@ -12,7 +12,7 @@ window.BEHISTORICAL_LESSON = {
     topic: 'Topic 9.6',
     title: 'Globalized Culture After 1900',
     subtitle: 'Explain how and why globalization changed culture over time.',
-    feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
+    feedbackToolUrl: "",
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [

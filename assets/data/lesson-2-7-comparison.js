@@ -32,7 +32,7 @@ window.BEHISTORICAL_LESSON = {
     topic: 'Topic 2.7',
     title: 'Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks',
     subtitle: 'Analyzing continuities and differences across Afro-Eurasian trade networks c. 1200–1450',
-    feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
+    feedbackToolUrl: "",
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
 

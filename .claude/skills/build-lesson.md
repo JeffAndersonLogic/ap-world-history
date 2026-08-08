@@ -101,7 +101,7 @@ Use the same CSS from an existing First & 10 page (e.g., `unit-7/first-and-10-to
 
 Use the exact pattern from `unit-7/first-and-10-topic-7-2-causes-wwi-capture.html`, or just run `node scripts/remove-google-form-capture.js`, which regenerates every wrapper to the canonical shape:
 - iframe src pointing to the standalone First & 10 page
-- `MAGICSCHOOL_URL` = `'https://student.magicschool.ai/s/login?joinCode=czwb9Q'`
+- `MAGICSCHOOL_URL` = `'<resolved from assets/js/behistorical-coach-config.js>'`
 - Full `wireFirst10Capture()` function (copy from existing capture wrapper)
 
 ### 6. Hub page wiring

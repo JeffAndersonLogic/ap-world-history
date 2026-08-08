@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 2.1",
     title: "The Silk Roads: Exchange Across Afro-Eurasia",
     subtitle: "Overland trade, luxury goods, and the spread of goods, ideas, and disease c. 1200–1450",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 7.3",
     title: "Conducting World War I",
     subtitle: "The first total war: how governments mobilized whole societies — home countries and colonies — and how new military technology drove casualties to unprecedented levels",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

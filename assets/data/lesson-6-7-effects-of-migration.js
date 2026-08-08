@@ -12,7 +12,7 @@ window.BEHISTORICAL_LESSON = {
     topic: 'Topic 6.7',
     title: 'Effects of Migration',
     subtitle: 'Explain how and why new patterns of migration affected society from 1750 to 1900.',
-    feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
+    feedbackToolUrl: "",
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [

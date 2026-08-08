@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 4.8",
     title: "Continuity and Change in the Period from c. 1450 to c. 1750",
     subtitle: "What changed — and what stayed the same — in global trade, demography, and social organization across three centuries of European maritime expansion",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

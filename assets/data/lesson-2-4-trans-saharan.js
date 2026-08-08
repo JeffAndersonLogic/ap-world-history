@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 2.4",
     title: "Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam",
     subtitle: "West African states, camel caravans, and cultural exchange across the Sahara c. 1200–1450",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

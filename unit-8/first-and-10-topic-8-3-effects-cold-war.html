@@ -168,7 +168,7 @@
     <div class="tool-row">
       <button onclick="buildAiPrompt()">Build AI Prompt</button>
       <button class="secondary" onclick="copyAiPrompt()">Copy Prompt</button>
-      <button class="secondary" onclick="window.open('https://student.magicschool.ai/s/login?joinCode=czwb9Q','_blank')">Open MagicSchool</button>
+      <button class="secondary" onclick="window.open(window.BH_COACH_URL,'_blank')">Open MagicSchool</button>
     </div>
     <textarea id="ai-output" class="builder-output" readonly placeholder="Your prompt will appear here after you click Build AI Prompt."></textarea>
   </div>
@@ -186,7 +186,7 @@
 </div>
 
 
-<script>
+<script src="../assets/js/behistorical-coach-config.js"></script><script>
 var TOPIC_KEY='8.3';var TOPIC_LABEL='Effects of the Cold War';
 function buildAiPrompt() {
   var q1 = document.getElementById('q1').value || '(no response)';

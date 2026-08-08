@@ -37,7 +37,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 8.9",
     title: "Causation in the Age of the Cold War and Decolonization",
     subtitle: "Evaluating the Extent to Which the Effects of the Cold War Were Similar in the Eastern and Western Hemispheres",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

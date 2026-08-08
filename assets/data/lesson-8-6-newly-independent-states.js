@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 8.6",
     title: "Newly Independent States",
     subtitle: "How the redrawing of colonial boundaries created new states, produced conflict and mass displacement, and shaped the economic choices newly independent governments made in building their nations",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

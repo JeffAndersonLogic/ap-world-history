@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 9.2",
     title: "Technological Advances and Limitations After 1900: Disease",
     subtitle: "How environmental factors — sanitation, density, climate, and urbanization — shaped disease patterns and affected human populations from 1900 to the present",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

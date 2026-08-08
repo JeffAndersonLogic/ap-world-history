@@ -546,6 +546,69 @@ section('Google Form retirement and MagicSchool wiring');
   sectionDone(`${surfaces.length} surfaces clean of the form; ${wrappers.length} wrappers and ${readings.length} readings keep MagicSchool`);
 }
 
+// 10b. One classroom join code, in one file.
+//
+// The code was once pasted into 249 files in four different shapes, and five
+// generators had it baked in, so every build-unit6/build-unit9 run pasted it
+// straight back after a manual cleanup. Any literal outside the config file is
+// therefore a regression by definition, not a style preference: it means one
+// classroom's students can be routed into another classroom's roster, and it
+// means the next generator run will spread it again.
+//
+// Fix with: node scripts/centralize-coach-url.js
+section('Classroom coach URL is centralized');
+{
+  const CONFIG_FILE = path.join(ROOT, 'assets', 'js', 'behistorical-coach-config.js');
+  const ALLOWED_LITERAL = new Set([
+    path.join('assets', 'js', 'behistorical-coach-config.js'),
+    path.join('scripts', 'centralize-coach-url.js'),
+  ]);
+  const JOIN_CODE = /https:\/\/student\.magicschool\.ai\/s\/login\?joinCode=[A-Za-z0-9]+/;
+
+  totalChecks++;
+  if (!exists(CONFIG_FILE)) {
+    err(CONFIG_FILE, 'the coach config is missing; every AI Coach button in the course resolves through it');
+  }
+
+  const walkAll = (dir, out = []) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (entry.name === '.git' || entry.name === 'node_modules') continue;
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walkAll(full, out);
+      else if (/\.(html|js|md)$/.test(entry.name)) out.push(full);
+    }
+    return out;
+  };
+
+  let leaks = 0;
+  const allFiles = walkAll(ROOT);
+  for (const filePath of allFiles) {
+    if (ALLOWED_LITERAL.has(path.relative(ROOT, filePath))) continue;
+    totalChecks++;
+    const src = read(filePath);
+    if (src && JOIN_CODE.test(src)) {
+      err(filePath, 'a literal classroom joinCode is hardcoded here, run scripts/centralize-coach-url.js');
+      leaks++;
+    }
+  }
+
+  // Anything that reads window.BH_COACH_URL must actually load the config, or
+  // the button silently resolves to undefined.
+  let unwired = 0;
+  for (const filePath of allFiles.filter(f => f.endsWith('.html'))) {
+    const src = read(filePath);
+    if (!src) continue;
+    if (!/BH_COACH_URL|data-bh-coach/.test(src)) continue;
+    totalChecks++;
+    if (!src.includes('behistorical-coach-config.js')) {
+      err(filePath, 'uses the coach URL but never loads assets/js/behistorical-coach-config.js');
+      unwired++;
+    }
+  }
+
+  sectionDone(`${allFiles.length - leaks} files free of a literal join code; ${unwired === 0 ? 'every' : 'not every'} coach surface loads the config`);
+}
+
 // 11. BeInTheRoom links and v2 scenario contract
 section('BeInTheRoom scenario links and v2 quality contract');
 {

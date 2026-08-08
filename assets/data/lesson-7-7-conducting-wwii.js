@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 7.7",
     title: "Conducting World War II",
     subtitle: "Total war, round two: how Western democracies and totalitarian states alike mobilized propaganda, art, media, nationalism, and every resource for war — and how new technology and tactics, including the atomic bomb and fire-bombing, drove wartime casualties to new heights",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

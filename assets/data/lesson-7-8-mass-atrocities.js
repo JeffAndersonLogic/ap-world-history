@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 7.8",
     title: "Mass Atrocities After 1900",
     subtitle: "How the rise of extremist groups in power led to genocide, ethnic violence, and the attempted destruction of specific populations — and how the world responded with new legal frameworks, from the Genocide Convention to the International Criminal Court",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

@@ -90,7 +90,7 @@
       </section>
 
       <section class="role-grid" id="ai-coach">
-        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
+        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" data-bh-coach href="https://www.magicschool.ai/" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
       </section>
 
       <section class="role-grid" id="reflection">
@@ -99,7 +99,7 @@
       </section>
     </main>
   </div>
-<script>
+<script src="../../assets/js/behistorical-coach-config.js"></script><script>
 const roles={
  'mongol-administrator':{name:'Mongol Provincial Administrator',status:'Imperial official governing a conquered city',power:'Commands the garrison, appoints local officials, and controls taxation',goals:'Extract maximum revenue for the khanate, maintain order, integrate the conquered city into Mongol trade networks',fears:'Rebellion, revenue shortfalls that anger the khan, local administrators who deceive you because you don\'t speak their language',lens:'Conquest is complete, now the work of governing begins. The productive city is more valuable than the destroyed one.',challenge:'You need local expertise to govern effectively. How much power do you share with people you cannot fully trust?'},
  'chinese-scholar':{name:'Chinese Scholar-Official Under Mongol Rule',status:'Educated administrator from the conquered Chinese bureaucracy',power:'Irreplaceable administrative expertise, the Mongols need people who can read, write, and govern',goals:'Preserve Chinese scholarly traditions, maintain personal safety and status, influence Mongol governance from within',fears:'Marginalization by rulers who favor Turkic or Persian administrators, cultural erasure, being seen as collaborator by fellow Chinese',lens:'The civil service examination is suspended. But someone has to run the government. That someone can be me.',challenge:'Collaboration preserves institutions but compromises integrity. What is worth protecting, and at what price?'},

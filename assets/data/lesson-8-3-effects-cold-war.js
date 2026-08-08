@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 8.3",
     title: "Effects of the Cold War",
     subtitle: "How military alliances, nuclear proliferation, and proxy wars in Latin America, Africa, and Asia became the dominant instruments of superpower competition",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

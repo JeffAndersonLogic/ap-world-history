@@ -12,7 +12,7 @@ window.BEHISTORICAL_LESSON = {
     topic: 'Topic 6.3',
     title: 'Indigenous Responses to State Expansion',
     subtitle: 'Explain how and why internal and external factors influenced state building from 1750 to 1900.',
-    feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
+    feedbackToolUrl: "",
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [

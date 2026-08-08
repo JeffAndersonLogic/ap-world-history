@@ -204,7 +204,7 @@ Full report: [`docs/beintheroom-theme-audit.md`](docs/beintheroom-theme-audit.md
 
 **Unit Review module (module 03):** `renderUnitReview89()` returns an 8-card grid (Topics 8.1–8.8), each with topic label, title, 2–3 sentence summary, and a "Matrix evidence" hint line.
 
-**AI coaching touchpoints:** First & 10 (3-question check section + AI Coach prompt builder) and Checkpoint 2 (full LO K LEQ). No BeInTheRoom touchpoint. MagicSchool URL: `https://student.magicschool.ai/s/login?joinCode=czwb9Q`.
+**AI coaching touchpoints:** First & 10 (3-question check section + AI Coach prompt builder) and Checkpoint 2 (full LO K LEQ). No BeInTheRoom touchpoint. MagicSchool URL: `<resolved from assets/js/behistorical-coach-config.js>`.
 
 **Step 0 gate:** N/A, capstone topics have no BeInTheRoom scenario.
 

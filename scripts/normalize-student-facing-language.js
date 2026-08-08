@@ -7,7 +7,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SUBMIT = 'Organize your thinking here, submit your final work in Canvas.';
-const COACH = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+const COACH = require('../assets/js/behistorical-coach-config.js').RESOLVED;
 const roots = ['assets', 'foundations', 'unit-1', 'unit-2', 'unit-3', 'unit-4', 'unit-5', 'unit-6', 'unit-7', 'unit-8', 'unit-9', 'beintheroom'];
 
 const replacements = [

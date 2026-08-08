@@ -163,7 +163,7 @@
 </div>
 
 
-<script>
+<script src="../assets/js/behistorical-coach-config.js"></script><script>
 var TOPIC_KEY='f5';var TOPIC_LABEL='Foundations 5 - World at 1200';
 function collectAnswers(){
   return Array.from(document.querySelectorAll('.q-textarea,.qta')).map((ta,i)=>{return{num:i+1,value:ta.value||'(no response)'}});
@@ -182,7 +182,7 @@ function copyAiPrompt(){
   navigator.clipboard.writeText(document.getElementById('ai-output').value).catch(()=>{});
 }
 function openMagicSchool(){
-  window.open('https://student.magicschool.ai/s/login?joinCode=czwb9Q','_blank');
+  window.open(window.BH_COACH_URL,'_blank');
 }
 
 /* BeHistorical First & 10 answer capture ------------------------------------------------------------

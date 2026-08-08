@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 7.4",
     title: "Economy in the Interwar Period",
     subtitle: "Four answers to one collapse: how democratic, fascist, communist, and popular-nationalist governments took a more active role in economic life after World War I and the Great Depression",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

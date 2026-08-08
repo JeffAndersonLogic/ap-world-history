@@ -90,7 +90,7 @@
       </section>
 
       <section class="role-grid" id="ai-coach">
-        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
+        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" data-bh-coach href="https://www.magicschool.ai/" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
       </section>
 
       <section class="role-grid" id="reflection">
@@ -99,7 +99,7 @@
       </section>
     </main>
   </div>
-<script>
+<script src="../../assets/js/behistorical-coach-config.js"></script><script>
 const roles={
  'silk-merchant':{name:'Chinese Silk Merchant',status:'Long-distance trader from eastern China',power:'Controls high-value goods that western markets desperately want',goals:'Reach western markets profitably, protect the caravan, establish reliable contacts for future journeys',fears:'Bandits, arbitrary taxation, political instability that disrupts routes, currency problems in unfamiliar markets',lens:'The road is only as safe as the rulers along it, you need political stability more than you need low prices',challenge:'You carry extraordinary wealth and have no army. Every relationship you build is also a vulnerability.'},
  'persian-intermediary':{name:'Persian Intermediary Merchant',status:'Trader who profits by connecting eastern and western markets',power:'Knows multiple languages, understands diverse customs, and controls the middle of the route',goals:'Maximize profit from brokering exchanges, maintain relationships with both eastern and western partners',fears:'Being cut out by direct trade relationships, political disruptions that collapse the middle of the route',lens:'The middleman who speaks everyone\'s language is irreplaceable, but only as long as the route needs a middleman',challenge:'Your power depends entirely on the route staying fragmented. What happens if empires simplify trade?'},

@@ -39,15 +39,40 @@ The 64 BeInTheRoom scenarios share nothing. Counted by grep over
 | `reflection1-response`, `reflection2-response`, `reflection3-response` | 2 each |
 | `reflect1`, `reflect2`, `reflect3`, `position-text` | 1 each |
 
-And storage is worse than uneven:
+Storage is uneven, but not broken. **An earlier version of this file claimed 26
+of 64 scenarios never touch `localStorage` and that student work in them is lost
+on tab close. That was wrong, and it was wrong in the direction that matters:
+it described a data-loss bug that does not exist.** Corrected 2026-08-08.
 
-- 38 of 64 scenarios call `localStorage.setItem` at all.
-- **26 of 64 never touch `localStorage`.** Student work in those is already lost
-  when the tab closes. That is true today, with or without a Canvas bridge, and
-  it is arguably the more urgent bug.
+The grep behind that claim searched scenario HTML for a `localStorage` call and
+missed the shared renderer. Counted properly:
 
-Scenarios that do autosave use `beintheroom-<slug>-<textarea id>` plus a
-`beintheroom-<slug>-state` key, where the slug comes from the filename.
+- 38 of 64 scenarios call `localStorage.setItem` in their own markup.
+- The other 26 call it through `assets/js/behistorical-room-v2.js`, which
+  persists on their behalf at `save()`.
+- Those two sets are **exactly** the v2 and pre-v2 scenarios. The only file
+  under `beintheroom/` with neither is `index.html`, which is a menu.
+
+So every scenario persists. Verify with, and note that the two counts match:
+
+```sh
+for f in beintheroom/*/*.html; do grep -q localStorage "$f" || echo "$f"; done | wc -l
+grep -l behistorical-room-v2 beintheroom/*/*.html | wc -l
+```
+
+Scenarios that autosave in their own markup use `beintheroom-<slug>-<textarea id>`
+plus a `beintheroom-<slug>-state` key, where the slug comes from the filename.
+The v2 renderer uses a single `behistorical-room-v2-<scenario id>` key.
+
+The real defect the miscount hid was narrower and is now fixed: `save()` in the
+v2 renderer called `localStorage.setItem` unguarded while `load()` had always
+been wrapped, so a device that refuses storage threw inside a click handler and
+took the scenario's render down with it. Same failure the lesson renderers fixed
+in `cbebb0a`, in the one file never audited for it.
+
+**The bridge work below is still unbuilt, and the id sprawl above is still the
+reason.** But it is a capture problem, not a data-loss emergency, so it does not
+justify normalizing nine id schemes across 64 files ahead of a paying reason to.
 
 ## The constraint that makes a partial bridge harmful
 

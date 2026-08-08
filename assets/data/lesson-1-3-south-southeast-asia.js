@@ -5,7 +5,7 @@ window.BEHISTORICAL_LESSON = {
     topic: 'Topic 1.3',
     title: 'Developments in South and Southeast Asia',
     subtitle: 'States, Belief Systems, and Trade, c. 1200 to c. 1450',
-    feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
+    feedbackToolUrl: "",
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
   learningTargets: [

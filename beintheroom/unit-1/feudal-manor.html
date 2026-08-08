@@ -90,7 +90,7 @@
       </section>
 
       <section class="role-grid" id="ai-coach">
-        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
+        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" data-bh-coach href="https://www.magicschool.ai/" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
       </section>
 
       <section class="role-grid" id="reflection">
@@ -99,7 +99,7 @@
       </section>
     </main>
   </div>
-<script>
+<script src="../../assets/js/behistorical-coach-config.js"></script><script>
 const roles={
  lord:{name:'Feudal Lord',status:'Manor Lord',power:'Owns the land and holds legal authority over the serfs and freemen of the manor.',goals:'Maintain agricultural production, keep serfs bound to the land, preserve the feudal order that sustains noble power.',fears:'Serfs fleeing to towns or demanding wages, which would destroy the manorial economy.',lens:'Order depends on everyone knowing their place, if serfs can leave, the whole system collapses.',challenge:'How do you maintain authority when your serfs know you need them more than ever?'},
  serf:{name:'Serf',status:'Bound Agricultural Worker',power:'Provides the labor that makes the manor function, now scarcer and more valuable than ever.',goals:'Freedom from serfdom, higher wages or better conditions, the right to leave the manor.',fears:'Punishment for demanding too much, being returned to bondage if caught fleeing.',lens:'The plague has shown that death treats lord and serf alike, why should one be free and the other bound?',challenge:'How do you demand better treatment without triggering violent repression?'},

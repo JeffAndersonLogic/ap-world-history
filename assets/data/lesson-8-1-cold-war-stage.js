@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 8.1",
     title: "Setting the Stage for the Cold War and Decolonization",
     subtitle: "How unfulfilled promises, exhausted empires, and two rising superpowers set the terms for the world after 1945",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 8.7",
     title: "Global Resistance to Established Power Structures After 1900",
     subtitle: "How groups and individuals challenged the wars of the century through nonviolence, how militarized states responded in ways that intensified conflict, and how some movements used violence against civilians to achieve political aims",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

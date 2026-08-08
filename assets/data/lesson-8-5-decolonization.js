@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 8.5",
     title: "Decolonization After 1900",
     subtitle: "How nationalist leaders, mass movements, and the legacies of inherited imperial boundaries drove the end of formal empire across Asia and Africa — through negotiation, armed struggle, and the unresolved conflicts that followed",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

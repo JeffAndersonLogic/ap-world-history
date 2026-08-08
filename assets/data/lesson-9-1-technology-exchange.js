@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 9.1",
     title: "Advances in Technology and Exchange After 1900",
     subtitle: "How new technologies in communication, transportation, energy, agriculture, and medicine transformed the world — with both intended and unintended consequences",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

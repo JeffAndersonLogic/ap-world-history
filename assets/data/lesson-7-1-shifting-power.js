@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 7.1",
     title: "Shifting Power After 1900",
     subtitle: "How internal and external factors brought down the Ottoman, Russian, and Qing empires — and how Mexico's revolution challenged the existing political and social order",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

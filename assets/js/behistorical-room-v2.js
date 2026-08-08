@@ -14,8 +14,21 @@
     catch { return { ...initial }; }
   }
 
+  // A refused write must not take the scenario down with it. `load()` has
+  // always been wrapped; `save()` was not, so on a device that refuses storage
+  // (Safari private browsing, a full quota, a locked-down district profile) the
+  // throw escaped a click handler and killed the render. Same failure the
+  // lesson renderers fixed in cbebb0a, in the one file that never got audited
+  // for it. The scenario stays usable; only surviving a reload is lost.
+  let storageLive = true;
   function save() {
-    localStorage.setItem(storageKey, JSON.stringify(state));
+    if (storageLive) {
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(state));
+      } catch (e) {
+        storageLive = false;
+      }
+    }
     updateProgress();
   }
 
@@ -117,7 +130,7 @@
           <div class="room-actions">
             <button class="room-button" id="room-build-prompt" type="button">Build AI Coach prompt</button>
             <button class="room-button secondary" id="room-copy-prompt" type="button">Copy prompt</button>
-            <a class="room-button magic" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a>
+            <a class="room-button magic" href="${(typeof window !== 'undefined' && window.BH_COACH_URL) || 'https://www.magicschool.ai/'}" target="_blank" rel="noopener">Open MagicSchool</a>
           </div>
           <div class="room-status" id="room-status" role="status" aria-live="polite"></div>
           <div class="room-prompt" id="room-prompt" tabindex="0">Your prompt will appear here after your selections and draft are complete.</div>

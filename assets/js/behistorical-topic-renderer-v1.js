@@ -447,7 +447,7 @@ function renderMapKey() {
 function renderFirst10() {
   const msUrl = (L.first10 && L.first10.magicSchoolBridge && L.first10.magicSchoolBridge.magicSchoolUrl)
     || (L.meta && L.meta.feedbackToolUrl)
-    || 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+    || (typeof window !== 'undefined' && window.BH_COACH_URL) || 'https://www.magicschool.ai/';
   const canvasNote = (L.meta && L.meta.canvasSubmissionNote)
     || 'Organize your thinking here, submit your final work in Canvas.';
   const topic = (L.meta && L.meta.topic) ? L.meta.topic : 'this topic';
@@ -603,7 +603,7 @@ function renderCheckpoint(cp, id) {
   if (!cp) return '<p>Checkpoint data not found.</p>';
   const msMode = cp.magicSchoolMode || (id === 'checkpoint-one-response' ? 'Checkpoint 1' : 'Checkpoint 2');
   const topic = (L && L.meta && L.meta.topic) ? L.meta.topic : 'Topic';
-  const msUrl = (L && L.meta && L.meta.feedbackToolUrl) || 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+  const msUrl = (L && L.meta && L.meta.feedbackToolUrl) || (typeof window !== 'undefined' && window.BH_COACH_URL) || 'https://www.magicschool.ai/';
   const canvasNote = (L && L.meta && L.meta.canvasSubmissionNote) || 'Organize your thinking here, submit your final work in Canvas.';
 
   CHECKPOINT_MS[id] = { msMode, topic, terms: cp.terms || [] };

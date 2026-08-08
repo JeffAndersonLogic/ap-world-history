@@ -31,7 +31,7 @@ window.BEHISTORICAL_LESSON = {
     topic: "Topic 9.3",
     title: "Technological Advances—Debates About the Environment After 1900",
     subtitle: "How human activity degraded the environment, intensified resource competition, and sparked debates about the nature and causes of climate change",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
+    feedbackToolUrl: "",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 

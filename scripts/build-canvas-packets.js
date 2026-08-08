@@ -74,7 +74,7 @@ const FONT_CSS = path.join(ASSETS, 'fonts', 'behistorical-fonts-inline.css');
 const RENDERER = path.join(FOUNDATIONS, 'foundations-topic-renderer.js');
 const LOGO = path.join(ASSETS, 'logos', 'behistorical-logo.jpeg');
 
-const MAGICSCHOOL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+const MAGICSCHOOL = require('../assets/js/behistorical-coach-config.js').RESOLVED;
 
 // ── helpers ───────────────────────────────────────────────────────────────────
 

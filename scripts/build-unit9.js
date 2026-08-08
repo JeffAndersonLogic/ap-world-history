@@ -18,7 +18,7 @@ const ROOT = path.resolve(__dirname, '..');
 const UNIT = path.join(ROOT, 'unit-9');
 const DATA = path.join(ROOT, 'assets', 'data');
 const ROOM = path.join(ROOT, 'beintheroom', 'unit-9');
-const COACH_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
+const COACH_URL = require('../assets/js/behistorical-coach-config.js').RESOLVED;
 const SUBMIT_NOTE = 'Organize your thinking here, submit your final work in Canvas.';
 // Each topic gets a purpose-built local map instead of a blank world outline,
 // and slots without a topic-specific photograph fall back to the generated
