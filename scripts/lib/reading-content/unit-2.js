@@ -342,7 +342,7 @@ module.exports = {
     "sourceFile": "first-and-10-topic-2-3-indian-ocean.html",
     "unitDir": "unit-2",
     "docTitle": "BeHistorical — Module 03 | First &amp; 10 | Topic 2.3 Indian Ocean Trade",
-    "moduleBadge": "Module 03",
+    "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
@@ -503,7 +503,7 @@ module.exports = {
     "sourceFile": "first-and-10-topic-2-4-trans-saharan.html",
     "unitDir": "unit-2",
     "docTitle": "BeHistorical — Module 04 | First &amp; 10 | Topic 2.4 Trans-Saharan Trade",
-    "moduleBadge": "Module 04",
+    "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
@@ -662,7 +662,7 @@ module.exports = {
     "sourceFile": "first-and-10-topic-2-5-cultural-consequences.html",
     "unitDir": "unit-2",
     "docTitle": "BeHistorical — Module 05 | First &amp; 10 | Topic 2.5 Cultural Consequences of Connectivity",
-    "moduleBadge": "Module 05",
+    "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
@@ -823,7 +823,7 @@ module.exports = {
     "sourceFile": "first-and-10-topic-2-6-environmental-consequences.html",
     "unitDir": "unit-2",
     "docTitle": "BeHistorical — Module 06 | First &amp; 10 | Topic 2.6 Environmental Consequences of Connectivity",
-    "moduleBadge": "Module 06",
+    "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
@@ -978,7 +978,7 @@ module.exports = {
     "sourceFile": "first-and-10-topic-2-7-comparison.html",
     "unitDir": "unit-2",
     "docTitle": "BeHistorical — Module 07 | First &amp; 10 | Topic 2.7 Comparison of Trade Networks",
-    "moduleBadge": "Module 07",
+    "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
