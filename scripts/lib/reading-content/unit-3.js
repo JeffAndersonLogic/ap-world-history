@@ -20,7 +20,7 @@ module.exports = {
     "sourceFile": "first-and-10-topic-3-1-empires-expand.html",
     "unitDir": "unit-3",
     "docTitle": "BeHistorical — Module 01 | First &amp; 10 | Topic 3.1 Empires Expand",
-    "moduleBadge": "Module 01",
+    "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
@@ -205,7 +205,7 @@ module.exports = {
     "sourceFile": "first-and-10-topic-3-2-empires-administration.html",
     "unitDir": "unit-3",
     "docTitle": "BeHistorical — Module 01 | First &amp; 10 | Topic 3.2 Empires: Administration",
-    "moduleBadge": "Module 01",
+    "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {

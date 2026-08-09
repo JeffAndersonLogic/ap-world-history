@@ -49,7 +49,7 @@ const INTENTIONAL = [
   { field: 'support[].body', contains: 'submit it in Canvas',
     why: 'same retirement, in the support card of 5.9, 5.10 and 6.1' },
   { field: 'header.badge', after: 'Module 02',
-    why: '5.9, 5.10 and 6.1 badged themselves "First & 10"; 45 other readings use Module 02' },
+    why: 'the First & 10 is module 02 in the ten-module standard. 5.9, 5.10 and 6.1 badged themselves "First & 10"; 1.1, 2.1, 3.1, 3.2 and 8.9 carried "Module 01", which is the Map module\'s number.' },
   { field: 'header.name', after: 'First & 10 Reading',
     why: 'those three put the topic title here instead; 55 others use the module name' },
   { field: 'support[].heading', after: 'Before You Read',

@@ -13,9 +13,10 @@
  *
  * Offline and dependency-free, so it runs in the push gate.
  *
- * Covers Foundations and all 58 unit readings. Units 6 and 9 are generated from
- * the same template but their build scripts have no --check mode, so a hand-edit
- * there is still caught only by rebuilding and reading the diff.
+ * Covers every generated reading: Foundations, the 58 unit readings, and Units 6
+ * and 9. For Units 6 and 9 it also covers the lesson data, shells and BeInTheRoom
+ * scenarios those scripts produce, because intercepting their write helper
+ * catches every file they touch, not just the readings.
  */
 
 const { spawnSync } = require('child_process');
@@ -26,7 +27,9 @@ const G = '\x1b[32m', R = '\x1b[31m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m
 
 const SUITES = [
   ['scripts/build-foundations-readings.js', 'Foundations readings vs foundations-f10-content.js'],
-  ['scripts/build-unit-readings.js', 'unit readings vs scripts/lib/reading-content/*']
+  ['scripts/build-unit-readings.js', 'unit readings vs scripts/lib/reading-content/*'],
+  ['scripts/build-unit6.js', 'Unit 6 readings, data, shells and rooms'],
+  ['scripts/build-unit9.js', 'Unit 9 readings, data, shells and rooms']
 ];
 
 let failed = 0;

@@ -152,7 +152,40 @@ const scenario61 = {
   evidence: ['Social Darwinism misapplied biological competition to human societies and racial hierarchies.', 'Missionaries sometimes criticized abuses while their networks also enabled imperial access.', 'National rivalry encouraged states to treat overseas expansion as proof of strength.', 'The “civilizing mission” framed unequal rule as a benefit to conquered peoples.']
 };
 
+/**
+ * `--check` compares instead of writing, and exits 1 on any difference.
+ *
+ * Every file this script produces is generated, so a hand-edit to one is the
+ * worst kind of change: it looks like it worked, and the next rebuild silently
+ * reverts it. Intercepting the single write helper covers the readings, the
+ * lesson data, the shells and the rooms in one place, and lets
+ * scripts/test/readings-reproducible.test.js gate this unit the same way it
+ * gates the others.
+ */
+const CHECK_ONLY = process.argv.includes('--check');
+const DRIFTED = [];
+
+if (CHECK_ONLY) {
+  process.on('exit', (code) => {
+    if (code) return;
+    if (DRIFTED.length) {
+      console.error(`${DRIFTED.length} generated file(s) differ from what this script produces:`);
+      for (const d of DRIFTED) console.error(`  ${d}`);
+      console.error('\nEdit the source, then rerun this script without --check.');
+      process.exitCode = 1;
+      return;
+    }
+    console.log('all generated files match this script');
+  });
+}
+
 function write(file, content) {
+  const normalized = content.replace(/\r?\n/g, '\n');
+  if (CHECK_ONLY) {
+    const onDisk = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null;
+    if (onDisk !== normalized) DRIFTED.push(require('path').relative(process.cwd(), file));
+    return;
+  }
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, content.replace(/\r?\n/g, '\n'), 'utf8');
 }

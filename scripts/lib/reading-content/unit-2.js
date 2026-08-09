@@ -20,7 +20,7 @@ module.exports = {
     "sourceFile": "first-and-10-topic-2-1-silk-roads.html",
     "unitDir": "unit-2",
     "docTitle": "BeHistorical — Module 01 | First &amp; 10 | Topic 2.1 The Silk Roads",
-    "moduleBadge": "Module 01",
+    "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {

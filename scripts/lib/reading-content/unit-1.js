@@ -20,7 +20,7 @@ module.exports = {
     "sourceFile": "first-and-10-topic-1-1-song-china.html",
     "unitDir": "unit-1",
     "docTitle": "BeHistorical — Module 01 | First &amp; 10 | Topic 1.1 Song China",
-    "moduleBadge": "Module 01",
+    "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {

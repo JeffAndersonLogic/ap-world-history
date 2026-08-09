@@ -1350,7 +1350,7 @@ module.exports = {
     "sourceFile": "first-and-10-topic-8-9-causation-capstone.html",
     "unitDir": "unit-8",
     "docTitle": "BeHistorical — Module 01 | First &amp; 10 | Topic 8.9 Causation in the Cold War",
-    "moduleBadge": "Module 01",
+    "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading · Unit 8 Capstone",
     "supportHeadings": {
