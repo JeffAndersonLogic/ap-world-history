@@ -23,35 +23,14 @@
  * commit with BASE=<ref>.
  */
 
-const { execFileSync } = require('child_process');
 const path = require('path');
 const { extractReading, diffReadings } = require('../lib/reading-extract');
 const CONTENT = require('../lib/foundations-f10-content');
 
 const ROOT = path.resolve(__dirname, '..', '..');
-/**
- * The last commit that still had the hand-authored Foundations readings.
- *
- * Pinned, not HEAD. Once the generated files are committed, a HEAD baseline
- * would compare the generated page against itself and pass no matter what was
- * lost, which is a check that can only ever say yes. Pinning keeps the question
- * the real one: does the reading a student sees today still say what the
- * hand-authored page said before the migration?
- *
- * Override with BASE=<ref> to diff against some other point.
- */
-const PRE_MIGRATION = '4bcd126e898a77841d2b706c2b2fe1ed9f546b8c';
-const BASE = process.env.BASE || PRE_MIGRATION;
+const BASELINE = require('./fixtures/foundations-before.json');
 
 const R = '\x1b[31m', G = '\x1b[32m', Y = '\x1b[33m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
-
-function fromGit(rel) {
-  try {
-    return execFileSync('git', ['show', `${BASE}:${rel}`], { cwd: ROOT, maxBuffer: 32 * 1024 * 1024 }).toString('utf8');
-  } catch (e) {
-    return null;
-  }
-}
 
 // The build script guards its main behind require.main, so requiring it here
 // gets the renderer without writing any files.
@@ -60,20 +39,20 @@ const { build } = require('../build-foundations-readings');
 let failed = 0;
 let checked = 0;
 
-console.log(`\n${W}Foundations readings, content preserved${X} ${D}(baseline: ${BASE})${X}\n`);
+console.log(`\n${W}Foundations readings, content preserved${X} ${D}(baseline: ${BASELINE.baseline.slice(0, 8)})${X}\n`);
 
 for (const key of Object.keys(CONTENT)) {
   const topic = CONTENT[key];
   const rel = `foundations/${topic.sourceFile}`;
-  const original = fromGit(rel);
+  const recorded = BASELINE.topics[key];
 
-  if (original === null) {
-    console.log(`  ${R}✗${X} ${key}  no baseline for ${rel} at ${BASE}`);
+  if (!recorded) {
+    console.log(`  ${R}✗${X} ${key}  no recorded baseline for ${rel}`);
     failed++;
     continue;
   }
 
-  const before = extractReading(original);
+  const before = recorded.extraction;
   const after = extractReading(build(topic));
   const diffs = diffReadings(before, after);
   checked++;

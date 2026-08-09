@@ -17,8 +17,20 @@
  * sizes, colours, and the reading measure have to match. --shots also writes
  * full-page PNGs for a human to compare.
  *
- * Needs playwright-core, so it is not part of validate.js. Exits 2 when the
- * browser is missing, like every other browser test here.
+ * Not in the browser suite, and deliberately so. It has to render the real
+ * pre-migration HTML, which means reading a commit that a shallow CI checkout
+ * does not have. Its finding was a one-time answer, already recorded in ACCEPTED
+ * below and in the commit that migrated these pages, so re-running it on every
+ * push would buy a git-history dependency for a question already settled.
+ *
+ * Run it by hand when touching assets/css/behistorical-first10.css or the
+ * template, against any ref that still has the originals:
+ *
+ *   git fetch --unshallow            # if needed
+ *   BASE=4bcd126 node scripts/test/foundations-visual.js --shots
+ *
+ * Needs playwright-core. Exits 2 when the browser is missing, like every other
+ * browser test here.
  */
 
 const http = require('http');

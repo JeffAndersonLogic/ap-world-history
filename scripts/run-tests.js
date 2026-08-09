@@ -48,8 +48,7 @@ const SUITES = {
     ['scripts/test/confidence.test.js', 'confidence scale'],
     ['scripts/test/skills-lens.test.js', 'Skills Lens panels'],
     ['scripts/test/skills-lens-zip.test.js', 'Skills Lens zip drop + CSP lock'],
-    ['scripts/test/topic-1-7-five-questions.test.js', 'Topic 1.7 five-question path'],
-    ['scripts/test/foundations-visual.js', 'Foundations render with no unreviewed style change']
+    ['scripts/test/topic-1-7-five-questions.test.js', 'Topic 1.7 five-question path']
   ]
 };
 
