@@ -24,6 +24,7 @@
 
 const { spawnSync } = require('child_process');
 const path = require('path');
+const fs = require('fs');
 
 const ROOT = path.resolve(__dirname, '..');
 
@@ -49,6 +50,49 @@ const SUITES = {
   ]
 };
 
+/**
+ * Find the Chromium binary and hand it to the tests through PW_CHROME.
+ *
+ * Every browser test already accepts PW_CHROME as an override, and falls back to
+ * scanning PLAYWRIGHT_BROWSERS_PATH for `chromium-<n>/chrome-linux/chrome`. That
+ * fallback is version-locked: Playwright 1.53 renamed the directory to
+ * `chrome-linux64`, so on any current install the fallback builds a path that
+ * does not exist and the launch fails with a missing-executable error that reads
+ * like a broken install rather than a stale path.
+ *
+ * Asking playwright-core where its own binary lives is correct by construction,
+ * because it is the same module the tests import. The directory scan stays as a
+ * second try, widened to both layouts, for the case where a browser was
+ * installed by a different Playwright version than the one resolved here.
+ *
+ * Returns null when nothing is found, which leaves PW_CHROME unset and lets each
+ * test print its own "install playwright-core" message and exit 2.
+ */
+function findChromium() {
+  if (process.env.PW_CHROME) return process.env.PW_CHROME;
+
+  try {
+    const p = require('playwright-core').chromium.executablePath();
+    if (p && fs.existsSync(p)) return p;
+  } catch (_) { /* playwright-core absent; the tests report that themselves */ }
+
+  const base = process.env.PLAYWRIGHT_BROWSERS_PATH || '/opt/pw-browsers';
+  if (!fs.existsSync(base)) return null;
+
+  const builds = fs.readdirSync(base)
+    .filter(d => /^chromium-\d+$/.test(d))
+    .sort((a, b) => Number(a.split('-')[1]) - Number(b.split('-')[1]))
+    .reverse();
+
+  for (const build of builds) {
+    for (const layout of ['chrome-linux64', 'chrome-linux']) {
+      const exe = path.join(base, build, layout, 'chrome');
+      if (fs.existsSync(exe)) return exe;
+    }
+  }
+  return null;
+}
+
 const args = process.argv.slice(2);
 const strict = args.includes('--strict');
 const which = args.find(a => !a.startsWith('-')) || 'offline';
@@ -61,15 +105,26 @@ if (names.some(n => !SUITES[n])) {
 
 const results = [];
 
+// Resolved once, not per test, so the seven browser tests cannot disagree about
+// which binary they are driving.
+const childEnv = { ...process.env };
+if (names.includes('browser')) {
+  const exe = findChromium();
+  if (exe) childEnv.PW_CHROME = exe;
+}
+
 for (const suite of names) {
   console.log(`\n${C}${W}── ${suite} ${X}${D}(${SUITES[suite].length} checks)${X}`);
+  if (suite === 'browser') {
+    console.log(`${D}chromium: ${childEnv.PW_CHROME || 'not found, tests will report it'}${X}`);
+  }
 
   for (const [rel, blurb] of SUITES[suite]) {
     const started = Date.now();
     // stdio inherit: a failing check's own output is the useful part, and these
     // scripts already print well. Swallowing it to re-print a summary would
     // lose the file and line every one of them reports.
-    const run = spawnSync(process.execPath, [rel], { cwd: ROOT, stdio: 'inherit' });
+    const run = spawnSync(process.execPath, [rel], { cwd: ROOT, stdio: 'inherit', env: childEnv });
     const secs = ((Date.now() - started) / 1000).toFixed(1);
 
     // spawnSync reports a failure to launch through .error, and a signal kill

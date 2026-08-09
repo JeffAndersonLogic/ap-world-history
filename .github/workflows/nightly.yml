@@ -53,13 +53,9 @@ jobs:
           node-version: '22'
 
       - name: Install Chromium
-        env:
-          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
         run: |
           npm install --no-save playwright
           npx playwright install --with-deps chromium
 
       - name: Full suite
-        env:
-          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
         run: node scripts/run-tests.js all --strict

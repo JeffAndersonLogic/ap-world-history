@@ -52,12 +52,12 @@ jobs:
         with:
           node-version: '22'
 
-      # Installed into the workspace rather than the runner's home cache, so the
-      # path is deterministic and matches the lookup the tests already do:
-      # PLAYWRIGHT_BROWSERS_PATH/chromium-<n>/chrome-linux/chrome.
+      # Default cache location on purpose. run-tests.js asks playwright-core for
+      # its own executablePath rather than assuming a directory layout, so there
+      # is nothing here to keep in sync: pinning a custom path was what broke the
+      # first run of this workflow, because Playwright renamed chrome-linux to
+      # chrome-linux64 and the assumed path stopped existing.
       - name: Install Chromium
-        env:
-          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
         run: |
           npm install --no-save playwright
           npx playwright install --with-deps chromium
@@ -66,6 +66,4 @@ jobs:
       # install would skip all seven tests and the job would pass green having
       # verified nothing at all.
       - name: Modal focus, lightbox, confidence, Skills Lens
-        env:
-          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
         run: node scripts/run-tests.js browser --strict
