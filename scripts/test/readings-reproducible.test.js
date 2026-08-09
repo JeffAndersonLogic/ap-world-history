@@ -1,0 +1,53 @@
+#!/usr/bin/env node
+'use strict';
+
+/**
+ * Generated readings must match the content model that produces them.
+ *
+ *   node scripts/test/readings-reproducible.test.js
+ *
+ * A generated file that someone hand-edited is the worst of both worlds: the
+ * edit looks like it worked, and the next rebuild silently reverts it. This is
+ * what makes the content model actually the source of truth rather than merely
+ * the intended one.
+ *
+ * Offline and dependency-free, so it runs in the push gate.
+ *
+ * Covers Foundations today. Units 6 and 9 are generated from the same template
+ * but their build scripts have no --check mode yet, so a hand-edit there is
+ * still caught only by rebuilding and reading the diff.
+ */
+
+const { spawnSync } = require('child_process');
+const path = require('path');
+
+const ROOT = path.resolve(__dirname, '..', '..');
+const G = '\x1b[32m', R = '\x1b[31m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
+
+const SUITES = [
+  ['scripts/build-foundations-readings.js', 'Foundations readings vs foundations-f10-content.js']
+];
+
+let failed = 0;
+console.log(`\n${W}Generated readings match their content model${X}\n`);
+
+for (const [script, label] of SUITES) {
+  const run = spawnSync(process.execPath, [script, '--check'], { cwd: ROOT, encoding: 'utf8' });
+  const ok = run.status === 0;
+  if (ok) {
+    console.log(`  ${G}✓${X} ${label}  ${D}${(run.stdout || '').trim()}${X}`);
+  } else {
+    failed++;
+    console.log(`  ${R}✗${X} ${W}${label}${X}`);
+    for (const line of `${run.stdout || ''}${run.stderr || ''}`.trim().split('\n')) {
+      console.log(`      ${line}`);
+    }
+  }
+}
+
+console.log(`\n${'─'.repeat(60)}`);
+if (failed) {
+  console.log(`${R}${W}${failed} generated set(s) drifted from the content model.${X}`);
+  process.exit(1);
+}
+console.log(`${G}${W}All generated readings match the content model.${X}`);

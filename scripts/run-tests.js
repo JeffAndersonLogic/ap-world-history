@@ -37,7 +37,9 @@ const SUITES = {
   offline: [
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
     ['scripts/test/canvas-paragraphs.test.js', 'Canvas blank-line round trip'],
-    ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity']
+    ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
+    ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
+    ['scripts/test/foundations-golden.js', 'Foundations content vs the hand-authored originals']
   ],
   browser: [
     ['scripts/test/modal-focus.unit.js', 'unit lesson modal focus contract'],
@@ -46,7 +48,8 @@ const SUITES = {
     ['scripts/test/confidence.test.js', 'confidence scale'],
     ['scripts/test/skills-lens.test.js', 'Skills Lens panels'],
     ['scripts/test/skills-lens-zip.test.js', 'Skills Lens zip drop + CSP lock'],
-    ['scripts/test/topic-1-7-five-questions.test.js', 'Topic 1.7 five-question path']
+    ['scripts/test/topic-1-7-five-questions.test.js', 'Topic 1.7 five-question path'],
+    ['scripts/test/foundations-visual.js', 'Foundations render with no unreviewed style change']
   ]
 };
 

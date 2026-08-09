@@ -82,6 +82,9 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/generate-status-manifest.js`, refresh the teacher command-center inventory after adding or removing deliverables.
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios.
 - `node scripts/build-unit9.js`, deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios.
+- `node scripts/build-foundations-readings.js`, rebuild the six Foundations First & 10 readings from `scripts/lib/foundations-f10-content.js`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/first-and-10-foundations-*.html`; they are generated.
+- `node scripts/test/foundations-golden.js`, prove the generated Foundations readings still carry every word, key term, callout, question and answer placeholder the hand-authored pages had. Compares content, not markup, against a pinned pre-migration commit.
+- `node scripts/test/foundations-visual.js [--shots]`, browser check that the shared stylesheet renders those readings the same. Nine reviewed deltas are listed in the script with reasons; anything else fails.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
 - `node scripts/remove-google-form-capture.js`, idempotently strip any Google Form capture that reappears in a reading, wrapper, or lesson shell, and normalize all 77 capture wrappers to the MagicSchool-only shape.
 - `node scripts/test/modal-focus.unit.js` and `node scripts/test/modal-focus.foundations.js`, drive a real lesson page in Chromium and assert the modal focus contract. Needs `npm i playwright-core`; `validate.js` stays offline and dependency-free, so these are separate. Run them when touching any modal open/close path.
@@ -97,6 +100,37 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/test/skills-lens-zip.test.js`, drop a real Canvas zip on the real Lens in Chromium and assert the panels populate, the CSP still blocks the network, and the saved CSV matches the CLI byte for byte.
 
 The student entry point is `index.html`. The project inventory is `docs/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file. The Google Form and the old Teacher Hub are both retired; see `docs/FORM-CONTRACT.md` and `docs/TEACHER-HUB.md`. Student work reaches the teacher through Canvas only, and the Skills Lens is the analysis surface.
+
+## The Content Model
+
+A First & 10 reading is either **generated** from a content module or **hand
+authored**. Generated is the direction of travel: 19 of 77 readings are there
+now, Units 6 and 9 (`scripts/lib/f10-content.js`) and Foundations
+(`scripts/lib/foundations-f10-content.js`), all through
+`scripts/lib/first10-page.js`.
+
+The point is not tidiness, it is that a change to the reading system reaches a
+generated reading by rebuilding and reaches a hand-authored one only by writing a
+sweep script that patches HTML in place. Every such script is permanent
+maintenance debt and can only fix a problem already known about. That is how the
+capture block went missing twice.
+
+**Migrating a set of readings, in order:**
+
+1. Extract the content into a module. Take paragraph, callout and support-card
+   bodies as raw HTML: `<span class="kt">` is how a key term is found on the page
+   and dropping it loses teaching, not styling.
+2. Add whatever the template cannot yet express as an *optional* parameter that
+   defaults to current behaviour, then regenerate the already-generated readings
+   and confirm not one byte moved. This is the step that catches escaping bugs.
+3. Prove the content survived with a golden diff against a **pinned** commit, not
+   `HEAD`. A HEAD baseline compares the generated page against itself and can
+   only say yes.
+4. Prove it still looks right in a browser. Reviewed differences get listed with
+   a reason rather than deleted, so the next unreviewed one still fails.
+5. Wire the reproducibility check into the offline suite, so a hand-edit to a
+   generated file fails the push instead of being silently reverted by the next
+   rebuild.
 
 ## Image Contract
 

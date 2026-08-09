@@ -43,6 +43,7 @@ node scripts/generate-status-manifest.js
 node scripts/build-unit6.js
 node scripts/build-unit9.js
 node scripts/normalize-student-facing-language.js
+node scripts/build-foundations-readings.js
 ```
 
 Checks run on every push via `.github/workflows/validate.yml`. The checks that

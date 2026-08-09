@@ -13,10 +13,8 @@
     "test:browser": "node scripts/run-tests.js browser",
     "test:all": "node scripts/run-tests.js all",
     "validate": "node scripts/validate.js",
-
     "check:images": "node scripts/check-image-urls.js",
     "check:canvas": "node scripts/verify-canvas-check.js",
-
     "build:maps": "node scripts/build-instructional-maps.js",
     "build:art": "node scripts/build-module-art.js",
     "build:announcements": "node scripts/build-announcements.js",
@@ -25,15 +23,14 @@
     "build:status": "node scripts/generate-status-manifest.js",
     "build:unit6": "node scripts/build-unit6.js",
     "build:unit9": "node scripts/build-unit9.js",
-
     "sync:first10": "node scripts/sync-first10-capture.js",
     "normalize": "node scripts/normalize-student-facing-language.js",
     "strip-form": "node scripts/remove-google-form-capture.js",
-
     "serve": "node scripts/serve-local.js",
-
     "hooks:install": "git config core.hooksPath .githooks && echo \"pre-push hook active: npm test runs before every push\"",
-    "prepare": "git config core.hooksPath .githooks || true"
+    "prepare": "git config core.hooksPath .githooks || true",
+    "build:foundations": "node scripts/build-foundations-readings.js",
+    "extract:foundations": "node scripts/extract-foundations-content.js"
   },
   "devDependencies": {
     "playwright": "^1.49.0"
