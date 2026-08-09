@@ -2,8 +2,14 @@
 
 ## Git
 
-- Always commit and push directly to `main`.
-- Do not create feature branches or pull requests.
+- `main` is the deploy branch: GitHub Pages serves it, so what is on `main` is
+  what students have.
+- Still no pull requests. Push to a working branch, wait for Validate to pass on
+  it, then fast-forward `main` to that commit. This is the one change the branch
+  rule forces, and only because a required check cannot pass on a commit that
+  exists nowhere yet. See "The branch rule" below.
+- Until the rule in `.github/branch-ruleset.json` is applied, committing directly
+  to `main` still works and nothing stops an untested commit reaching students.
 
 ## The Gate
 
@@ -31,6 +37,31 @@ keeps the offline suite honestly dependency-free, and `browser` installs
 Chromium. `.github/workflows/nightly.yml` runs the checks that cannot sit on the
 push path: `check-image-urls.js` needs commons.wikimedia.org, and a third party's
 outage must never fail your commit.
+
+### The branch rule
+
+`.github/branch-ruleset.json` is the protection rule for `main`, kept in the repo
+rather than only in the web UI so it can be reviewed and restored. Apply it with:
+
+```bash
+gh api --method POST /repos/JeffAndersonLogic/ap-world-history/rulesets \
+  --input .github/branch-ruleset.json
+```
+
+It does three things: `main` cannot be deleted, `main` cannot be force-pushed,
+and both Validate jobs must have passed on a commit before it can land there.
+
+**This changes the Git workflow above.** Required checks cannot pass on a commit
+that has not been pushed anywhere yet, so committing straight to `main` stops
+working. The replacement is still not a pull request: push the work to any
+branch, let Validate go green on it, then fast-forward `main` to that same
+commit. GitHub Pages deploys from `main`, so this is the wait between finishing a
+change and students seeing it, roughly six minutes, most of it `lightbox-sweep`
+opening all 77 lesson pages.
+
+If a broken CI ever blocks an urgent classroom fix, set the ruleset to
+`"enforcement": "evaluate"` in Settings, Rules, rather than reaching for a force
+push. That keeps the record of what it would have caught.
 
 ## Repository Commands
 
