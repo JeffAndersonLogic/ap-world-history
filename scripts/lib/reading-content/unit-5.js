@@ -200,7 +200,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 5.1, The Enlightenment",
     "navPrev": {
       "href": "#",
@@ -220,12 +220,12 @@ module.exports = {
     "sourceFile": "first-and-10-topic-5-10-continuity-and-change-in-the-industrial-age.html",
     "unitDir": "unit-5",
     "docTitle": "First &amp; 10 | Topic 5.10 Continuity and Change in the Industrial Age",
-    "moduleBadge": "First &amp; 10",
-    "moduleName": "Topic 5.10 · Continuity and Change in the Industrial Age",
+    "moduleBadge": "Module 02",
+    "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "What to do",
-      "target": "Why it matters"
+      "before": "Before You Read",
+      "target": "Reading Target"
     },
     "showFooter": true,
     "showFooterNote": true,
@@ -238,7 +238,7 @@ module.exports = {
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Read all three sections, then answer the three questions below. Build your response and submit it to the Google Form, then open your AI Coach to pressure-test your argument.",
+      "beforeYouRead": "Read all three sections, then answer the three questions below. Build your response and submit it in Canvas, then open your AI Coach to pressure-test your argument.",
       "readingTarget": "Topic 5.10 is an argumentation topic. The Learning Objective asks you to explain the <em>extent</em> to which industrialization brought change from 1750 to 1900, which means weighing change against continuity, not just naming changes."
     },
     "vocabulary": [
@@ -356,7 +356,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will pressure-test your extent argument, push you to balance change against continuity, and ask a follow-up that sharpens your thesis.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 5.10, Continuity and Change in the Industrial Age",
     "navPrev": {
       "href": "#",
@@ -543,7 +543,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 5.2, Nationalism and Revolutions",
     "navPrev": {
       "href": "#",
@@ -751,7 +751,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 5.3, The Industrial Revolution Begins",
     "navPrev": {
       "href": "#",
@@ -935,7 +935,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 5.4, Industrialization Spreads",
     "navPrev": {
       "href": "#",
@@ -1123,7 +1123,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 5.5, Technology of Industrialization",
     "navPrev": {
       "href": "#",
@@ -1307,7 +1307,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 5.6, Industrialization: Government and Society",
     "navPrev": {
       "href": "#",
@@ -1475,7 +1475,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 5.7, Economic Developments and Innovations",
     "navPrev": {
       "href": "#",
@@ -1655,7 +1655,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 5.8, Reactions to the Industrial Economy",
     "navPrev": {
       "href": "#",
@@ -1675,12 +1675,12 @@ module.exports = {
     "sourceFile": "first-and-10-topic-5-9-society-and-the-industrial-age.html",
     "unitDir": "unit-5",
     "docTitle": "First &amp; 10 | Topic 5.9 Society and the Industrial Age",
-    "moduleBadge": "First &amp; 10",
-    "moduleName": "Topic 5.9 · Society and the Industrial Age",
+    "moduleBadge": "Module 02",
+    "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "What to do",
-      "target": "Why it matters"
+      "before": "Before You Read",
+      "target": "Reading Target"
     },
     "showFooter": true,
     "showFooterNote": true,
@@ -1693,7 +1693,7 @@ module.exports = {
       "Comparison"
     ],
     "supportCards": {
-      "beforeYouRead": "Read all three sections, then answer the three questions below. Build your response and submit it to the Google Form, then open your AI Coach.",
+      "beforeYouRead": "Read all three sections, then answer the three questions below. Build your response and submit it in Canvas, then open your AI Coach.",
       "readingTarget": "Topic 5.9 is a causation topic: industrialization caused change in social hierarchies and standards of living. Track who gained, who lost, and why."
     },
     "vocabulary": [
@@ -1808,7 +1808,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 5.9, Society and the Industrial Age",
     "navPrev": {
       "href": "#",

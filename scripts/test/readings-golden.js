@@ -32,7 +32,51 @@ if (!fromDisk) {
   baseline = JSON.parse(fs.readFileSync(FIXTURE, 'utf8'));
 }
 
+/**
+ * Changes made deliberately after the migration, each pinned to the exact value
+ * it produces.
+ *
+ * The fixture is the historical record of what the hand-authored pages said, and
+ * it stays that way: editing it to match a new decision would erase the evidence
+ * the check exists to hold. Divergences are declared here instead, with the
+ * value they must produce, so this list can only ever accept the specific edit
+ * it describes. Any other change to the same field still fails.
+ */
+const INTENTIONAL = [
+  { field: 'footerNote',
+    after: 'Organize your thinking here, submit your final work in Canvas.',
+    why: 'the Google Form was retired 2026-08-07; 28 readings still pointed students at it. This is the wording the other 30 already used.' },
+  { field: 'support[].body', contains: 'submit it in Canvas',
+    why: 'same retirement, in the support card of 5.9, 5.10 and 6.1' },
+  { field: 'header.badge', after: 'Module 02',
+    why: '5.9, 5.10 and 6.1 badged themselves "First & 10"; 45 other readings use Module 02' },
+  { field: 'header.name', after: 'First & 10 Reading',
+    why: 'those three put the topic title here instead; 55 others use the module name' },
+  { field: 'support[].heading', after: 'Before You Read',
+    why: 'those three said "What to do"; 55 others say Before You Read' },
+  { field: 'support[].heading', after: 'Reading Target',
+    why: 'those three said "Why it matters"; 55 others say Reading Target' }
+];
+
+/** Parse one diff line back into field, before, after. */
+function parseDiff(d) {
+  const m = d.match(/^(.+?):\n\s+before: ([\s\S]*)\n\s+after:  ([\s\S]*)$/);
+  if (!m) return null;
+  const val = (raw) => { try { return JSON.parse(raw); } catch (_) { return raw; } };
+  return { field: m[1].replace(/\[\d+\]/g, '[]'), before: val(m[2]), after: val(m[3]) };
+}
+
+function intentional(d) {
+  const p = parseDiff(d);
+  if (!p) return null;
+  return INTENTIONAL.find(rule => rule.field === p.field
+    && (rule.after !== undefined
+      ? p.after === rule.after
+      : String(p.after).includes(rule.contains))) || null;
+}
+
 let failed = 0, checked = 0;
+const accepted = new Set();
 const failures = [];
 console.log(`\n${W}Unit readings, content preserved${X} ${D}(${fromDisk ? 'baseline: files on disk' : 'baseline: committed fixture'})${X}\n`);
 
@@ -49,8 +93,13 @@ for (const topic of allTopics()) {
     before = rec.extraction;
   }
 
-  const diffs = diffReadings(before, extractReading(build(topic)));
+  const all = diffReadings(before, extractReading(build(topic)));
   checked++;
+  const diffs = [];
+  for (const d of all) {
+    const rule = intentional(d);
+    if (rule) accepted.add(rule.why); else diffs.push(d);
+  }
   if (diffs.length === 0) continue;
   failed++;
   failures.push({ key: topic.topicKey, rel, diffs });
@@ -63,8 +112,13 @@ for (const f of failures) {
 }
 
 console.log(`\n${'─'.repeat(60)}`);
+if (accepted.size) {
+  console.log(`${Y}Deliberate changes since the originals:${X}`);
+  for (const why of accepted) console.log(`  ${D}${why}${X}`);
+  console.log('');
+}
 if (failed) {
   console.log(`${R}${W}${failed} of ${checked} readings differ.${X}  ${G}${checked - failures.length} identical.${X}`);
   process.exit(1);
 }
-console.log(`${G}${W}${checked} readings carry identical content to the hand-authored originals.${X}`);
+console.log(`${G}${W}${checked} readings match the hand-authored originals, allowing for the declared changes above.${X}`);

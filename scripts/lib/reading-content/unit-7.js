@@ -173,7 +173,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and share it with the Google Form or your AI Coach, organize your thinking here, submit your final work in Canvas.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 7.1, Shifting Power After 1900",
     "navPrev": {
       "href": "#",
@@ -341,7 +341,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and share it with the Google Form or your AI Coach, organize your thinking here, submit your final work in Canvas.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 7.2, Causes of World War I",
     "navPrev": {
       "href": "#",
@@ -517,7 +517,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and share it with the Google Form or your AI Coach, organize your thinking here, submit your final work in Canvas.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 7.3, Conducting World War I",
     "navPrev": {
       "href": "#",
@@ -689,7 +689,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and share it with the Google Form or your AI Coach, organize your thinking here, submit your final work in Canvas.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 7.4, Economy in the Interwar Period",
     "navPrev": {
       "href": "#",
@@ -864,7 +864,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and share it with the Google Form or your AI Coach, organize your thinking here, submit your final work in Canvas.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 7.5, Unresolved Tensions After World War I",
     "navPrev": {
       "href": "#",
@@ -1035,7 +1035,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and share it with the Google Form or your AI Coach, organize your thinking here, submit your final work in Canvas.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 7.6, Causes of World War II",
     "navPrev": {
       "href": "#",
@@ -1209,7 +1209,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and share it with the Google Form or your AI Coach, organize your thinking here, submit your final work in Canvas.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 7.7, Conducting World War II",
     "navPrev": {
       "href": "#",
@@ -1394,7 +1394,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and share it with the Google Form or your AI Coach, organize your thinking here, submit your final work in Canvas.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 7.8, Mass Atrocities After 1900",
     "navPrev": {
       "href": "#",
@@ -1566,7 +1566,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, push your significance argument deeper, and help you sharpen your weighing language.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and share it with the Google Form or your AI Coach, organize your thinking here, submit your final work in Canvas.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 7.9, Causation in Global Conflict",
     "navPrev": {
       "href": "#",

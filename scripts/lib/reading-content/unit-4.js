@@ -189,7 +189,7 @@ module.exports = {
       }
     ],
     "builderBody": "After answering the three questions, build a prompt for your AI Coach. The prompt will include your responses and ask the coach to give feedback on your historical thinking, pointing out gaps, suggesting stronger evidence, and asking a follow-up question.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "",
     "navPrev": {
       "href": "#",
@@ -378,7 +378,7 @@ module.exports = {
       }
     ],
     "builderBody": "After answering the three questions, build a prompt for your AI Coach. The prompt will include your responses and ask the coach to give feedback on your historical thinking, pointing out gaps, suggesting stronger evidence, and asking a follow-up question.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "",
     "navPrev": {
       "href": "#",
@@ -568,7 +568,7 @@ module.exports = {
       }
     ],
     "builderBody": "After answering the three questions, build a prompt for your AI Coach. The prompt will include your responses and ask the coach to give feedback on your historical thinking, pointing out gaps, suggesting stronger evidence, and asking a follow-up question.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "",
     "navPrev": {
       "href": "#",
@@ -741,7 +741,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 4.4, Maritime Empires Established",
     "navPrev": {
       "href": "#",
@@ -910,7 +910,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 4.5, Maritime Empires Maintained",
     "navPrev": {
       "href": "#",
@@ -1079,7 +1079,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 4.6, Internal and External Challenges",
     "navPrev": {
       "href": "#",
@@ -1248,7 +1248,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 4.7, Changing Social Hierarchies",
     "navPrev": {
       "href": "#",
@@ -1421,7 +1421,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 4.8, Continuity and Change",
     "navPrev": {
       "href": "#",

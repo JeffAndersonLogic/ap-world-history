@@ -20,12 +20,12 @@ module.exports = {
     "sourceFile": "first-and-10-topic-6-1-rationales-for-imperialism.html",
     "unitDir": "unit-6",
     "docTitle": "First &amp; 10 | Topic 6.1 Rationales for Imperialism",
-    "moduleBadge": "First &amp; 10",
-    "moduleName": "Topic 6.1 · Rationales for Imperialism",
+    "moduleBadge": "Module 02",
+    "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "What to do",
-      "target": "Why it matters"
+      "before": "Before You Read",
+      "target": "Reading Target"
     },
     "showFooter": true,
     "showFooterNote": true,
@@ -38,7 +38,7 @@ module.exports = {
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Read all four sections, then answer the three questions below. Build your response and submit it to the Google Form, then open your AI Coach to pressure-test your thinking.",
+      "beforeYouRead": "Read all four sections, then answer the three questions below. Build your response and submit it in Canvas, then open your AI Coach to pressure-test your thinking.",
       "readingTarget": "The Learning Objective asks you to explain how ideologies contributed to the development of imperialism from 1750 to 1900. To do that, you have to understand the four rationales, and how they reinforced one another."
     },
     "vocabulary": [
@@ -179,7 +179,7 @@ module.exports = {
       }
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will pressure-test how well you explain each ideology, push you to connect them, and ask a follow-up that sharpens your reasoning.",
-    "submitNote": "Your typed responses stay on this page. Use the builder buttons to copy your work and submit to Google Form or share with your AI Coach.",
+    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "Topic 6.1, Rationales for Imperialism",
     "navPrev": {
       "href": "#",
