@@ -55,9 +55,14 @@ and both Validate jobs must have passed on a commit before it can land there.
 that has not been pushed anywhere yet, so committing straight to `main` stops
 working. The replacement is still not a pull request: push the work to any
 branch, let Validate go green on it, then fast-forward `main` to that same
-commit. GitHub Pages deploys from `main`, so this is the wait between finishing a
-change and students seeing it, roughly six minutes, most of it `lightbox-sweep`
-opening all 77 lesson pages.
+commit.
+
+The wait is smaller than it looks. Both jobs run in parallel and the slow one is
+`browser` at about two minutes, 27s of that installing Chromium and 82s running
+the seven tests; `structure` finishes in 8 seconds. Required checks also bind to
+the commit SHA rather than the branch, so once they are green on a working
+branch, fast-forwarding `main` to that same commit is accepted straight away.
+The two minutes runs alongside whatever you are doing, not in front of it.
 
 If a broken CI ever blocks an urgent classroom fix, set the ruleset to
 `"enforcement": "evaluate"` in Settings, Rules, rather than reaching for a force
