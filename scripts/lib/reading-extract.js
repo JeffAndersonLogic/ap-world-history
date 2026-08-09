@@ -131,11 +131,24 @@ function findAll(node, name, out = []) {
 
 const find = (node, name) => findAll(node, name)[0] || null;
 
-/** Visible text of a node and everything under it. */
-function textOf(node) {
+/**
+ * Visible text of a node and everything under it.
+ *
+ * Entities are decoded exactly once, at the end, over the joined raw text.
+ * Decoding per nesting level instead would decode twice for any nested element,
+ * turning `&amp;nbsp;` into a space and making a page that literally prints
+ * "&nbsp;" to a student compare equal to one that prints a space. That is not
+ * hypothetical: it is how a double-escaped footer note passed this check and
+ * shipped.
+ */
+function rawTextOf(node) {
   if (!node) return '';
-  if (node.tag === '#text') return node.text;
-  return norm((node.children || []).map(textOf).join(' '));
+  if (node.tag === '#text') return node.raw;
+  return (node.children || []).map(rawTextOf).join(' ');
+}
+
+function textOf(node) {
+  return norm(rawTextOf(node));
 }
 
 /**
@@ -162,6 +175,27 @@ function marksOf(node) {
 const paragraphsOf = (node, cls = 'reading-text') =>
   findAll(node, cls).map(p => ({ text: textOf(p), marks: marksOf(p) }));
 
+/**
+ * Prose and pull-quotes in document order.
+ *
+ * Recorded as a sequence rather than two lists because position is meaning: a
+ * pull-quote is the author lifting one sentence out of the middle of a section.
+ * A migration that kept every word but moved the quote to the end would pass a
+ * text-only comparison and still have changed what the section emphasises.
+ */
+function blocksOf(section) {
+  const out = [];
+  const walk = (n) => {
+    for (const c of n.children || []) {
+      if (hasClass(c, 'reading-text')) { out.push({ type: 'p', text: textOf(c), marks: marksOf(c) }); continue; }
+      if (hasClass(c, 'pull-quote')) { out.push({ type: 'pull', text: textOf(c), marks: marksOf(c) }); continue; }
+      walk(c);
+    }
+  };
+  walk(section);
+  return out;
+}
+
 // ── the extraction ───────────────────────────────────────────────────────────
 function extractReading(html) {
   const doc = parse(html);
@@ -178,7 +212,12 @@ function extractReading(html) {
   const supportCards = findAll(doc, 'support-card').map(card => {
     const h = (card.children || []).find(c => /^h[1-6]$/.test(c.tag));
     const p = (card.children || []).find(c => c.tag === 'p');
-    return { heading: textOf(h), body: p ? textOf(p) : textOf(card) };
+    // Some cards write the body as bare text with no <p>. Falling back to the
+    // whole card would fold the heading into the body, so a card that says
+    // "What to do / Read all three sections" would compare unequal to the same
+    // card rendered with a real <p>, purely because of how it was marked up.
+    const body = p ? textOf(p) : norm(rawTextOf(card).replace(rawTextOf(h), ''));
+    return { heading: textOf(h), body };
   });
 
   const sections = findAll(body || doc, 'section').map((sec) => {
@@ -195,6 +234,7 @@ function extractReading(html) {
       label: textOf(find(sec, 'section-label')),
       heading: textOf(find(sec, 'section-heading')),
       paragraphs: paragraphsOf(sec),
+      blocks: blocksOf(sec),
       callout: callout ? { label: textOf(calloutLabel), body: calloutBody } : null
     };
   });

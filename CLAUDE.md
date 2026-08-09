@@ -82,6 +82,9 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/generate-status-manifest.js`, refresh the teacher command-center inventory after adding or removing deliverables.
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios.
 - `node scripts/build-unit9.js`, deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios.
+- `node scripts/build-unit-readings.js`, rebuild the 58 unit readings from `scripts/lib/reading-content/<unit>.js`. `--check` fails on drift without writing.
+- `node scripts/extract-unit-content.js`, the one-way lift from hand-authored HTML into a content module. Refuses to read a page it generated, because re-extracting from generated output writes the generator's own bugs back in as authored content.
+- `node scripts/test/readings-golden.js`, prove the 58 generated unit readings still carry every word of the originals, against `scripts/test/fixtures/readings-before.json`.
 - `node scripts/build-foundations-readings.js`, rebuild the six Foundations First & 10 readings from `scripts/lib/foundations-f10-content.js`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/first-and-10-foundations-*.html`; they are generated.
 - `node scripts/test/foundations-golden.js`, prove the generated Foundations readings still carry every word, key term, callout, question and answer placeholder the hand-authored pages had. Compares content, not markup, against `scripts/test/fixtures/foundations-before.json`, a committed extraction of the originals. In the offline suite.
 - `node scripts/test/foundations-visual.js [--shots]`, browser check that the shared stylesheet renders those readings the same. Not in the suite: it renders the real pre-migration HTML, which a shallow CI checkout does not have. Run it by hand with `BASE=<ref>` when touching `assets/css/behistorical-first10.css` or the template. Nine reviewed deltas are listed in the script with reasons; anything else fails.
@@ -103,11 +106,15 @@ The student entry point is `index.html`. The project inventory is `docs/command-
 
 ## The Content Model
 
-A First & 10 reading is either **generated** from a content module or **hand
-authored**. Generated is the direction of travel: 19 of 77 readings are there
-now, Units 6 and 9 (`scripts/lib/f10-content.js`) and Foundations
-(`scripts/lib/foundations-f10-content.js`), all through
-`scripts/lib/first10-page.js`.
+**Every one of the 77 First & 10 readings is generated.** Content lives in three
+places, all rendered by `scripts/lib/first10-page.js`:
+
+- `scripts/lib/f10-content.js`, Units 6 and 9 (13 readings)
+- `scripts/lib/foundations-f10-content.js`, Foundations (6)
+- `scripts/lib/reading-content/<unit>.js`, everything else (58)
+
+There are no hand-authored readings left, and no sweep scripts are needed to
+change one.
 
 The point is not tidiness, it is that a change to the reading system reaches a
 generated reading by rebuilding and reaches a hand-authored one only by writing a

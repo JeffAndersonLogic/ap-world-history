@@ -68,14 +68,44 @@ function inner(html, tag) {
   return m ? tidy(m[1]) : '';
 }
 
+
+// Fields the template escapes are stored as plain text, not as the HTML they
+// were lifted from. A vocabulary chip reading "Continuity &amp; Change" in the
+// source is the text "Continuity & Change"; storing the entity and escaping it
+// again renders the entity itself to the student. Fields the template trusts
+// (section blocks, callouts, support cards, the title band) keep their markup.
+const { decode } = require('./lib/reading-extract');
+const plain = (s) => decode(tidy(s));
+
 function attr(html, name) {
   const m = html.match(new RegExp(`\\b${name}\\s*=\\s*"([^"]*)"`));
   return m ? m[1] : '';
 }
 
 // ── per-file extraction ──────────────────────────────────────────────────────
+/**
+ * Refuse to read a page this pipeline generated.
+ *
+ * These extractors are one-way. Run one against an already-migrated reading and
+ * it re-ingests the generator's own output, including any escaping bug in it,
+ * and writes that back into the content model as though an author had chosen
+ * it. That is exactly how "Continuity &amp; Change" became a vocabulary term.
+ *
+ * A generated reading links the shared stylesheet and carries no inline <style>;
+ * every hand-authored one carries its own copy.
+ */
+function isGenerated(src) {
+  return src.includes('assets/css/behistorical-first10.css') && !/<style\b/.test(src);
+}
+
 function extract(file) {
   const src = fs.readFileSync(path.join(DIR, file), 'utf8');
+  if (isGenerated(src)) {
+    throw new Error(`${file} is already generated. Extract only from the hand-authored `
+      + 'originals, e.g. restore them with `git show <pre-migration-ref>:<path>` first. '
+      + "Re-extracting from generated output writes the generator's own bugs back into "
+      + 'the content model as if an author had chosen them.');
+  }
 
   const supportCards = blocks(src, 'support-card').map(c => tidy(inner(c, 'p')));
   const sections = blocks(src, 'section').map(sec => {
@@ -87,8 +117,8 @@ function extract(file) {
         .replace(/^\s*<p>([\s\S]*)<\/p>\s*$/, '$1')
     );
     return {
-      label: tidy(block(sec, 'section-label')),
-      heading: tidy(block(sec, 'section-heading')),
+      label: plain(block(sec, 'section-label')),
+      heading: plain(block(sec, 'section-heading')),
       paragraphs: blocks(sec, 'reading-text').map(tidy),
       callout: { label: tidy(block(sec, 'ap-callout-label')), html: calloutBody }
     };
@@ -97,9 +127,9 @@ function extract(file) {
   const questions = blocks(src, 'question-item').map(item => {
     const ta = (item.match(/<textarea\b[^>]*>/) || [''])[0];
     return {
-      skill: tidy(block(item, 'q-skill')),
-      text: tidy(block(item, 'q-text')),
-      placeholder: attr(ta, 'placeholder')
+      skill: plain(block(item, 'q-skill')),
+      text: plain(block(item, 'q-text')),
+      placeholder: decode(attr(ta, 'placeholder'))
     };
   });
 
@@ -128,17 +158,17 @@ function extract(file) {
     docTitle: tidy(inner(src, 'title')),
     headerSubtitle: tidy(block(src, 'module-subtitle')),
     titleHtml: tidy(block(src, 'reading-title')),
-    deck: tidy(block(src, 'reading-deck')),
-    skillTags: blocks(src, 'skill-tag').map(tidy),
+    deck: plain(block(src, 'reading-deck')),
+    skillTags: blocks(src, 'skill-tag').map(b => plain(b.inner !== undefined ? b.inner : b)),
     supportCards: { beforeYouRead: supportCards[0] || '', readingTarget: supportCards[1] || '' },
-    vocabulary: blocks(src, 'term-chip').map(tidy),
+    vocabulary: blocks(src, 'term-chip').map(b => plain(b.inner !== undefined ? b.inner : b)),
     sections,
     takeaway: tidy(inner(beReady.replace(/<h3[\s\S]*?<\/h3>/, ''), 'p')),
     checkBadge: tidy(block(src, 'check-badge')),
     checkTitle: tidy(block(src, 'check-title')),
     questions,
     builderBody: tidy(block(src, 'builder-body')),
-    submitNote: tidy(block(src, 'page-footer-note')),
+    submitNote: plain(block(src, 'page-footer-note')),
     footerNote: tidy(block(src, 'footer-note')),
     navPrev: navs[0],
     navNext: navs[1],

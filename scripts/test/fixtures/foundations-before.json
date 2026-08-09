@@ -1,6 +1,6 @@
 {
   "baseline": "4bcd126e898a77841d2b706c2b2fe1ed9f546b8c",
-  "note": "Extraction of the hand-authored Foundations readings as they stood at the commit above, immediately before they became generated. Committed rather than read from git so the check works on a shallow CI clone.",
+  "note": "Extraction of the hand-authored Foundations readings immediately before they became generated. Committed rather than read from git so the check works on a shallow CI clone.",
   "topics": {
     "f0": {
       "sourceFile": "first-and-10-foundations-0-intro-to-behistorical.html",
@@ -71,6 +71,28 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Every year on Day 1, you walk into a room and become someone. This year, in this room, you become a historian . Not in the sense that you memorize kings and dates, that is not what historians do. A historian is someone who reads the past the way a detective reads a crime scene: closely, skeptically, evidence in hand, ready to make an argument and defend it.",
+                "marks": {
+                  "kt": [
+                    "historian"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "You will still learn a lot of history in this class. But the history is the material you practice on, not the point of the class. The point is who you become while practicing on it. AP World History does not test your ability to recall dates in May. It tests your ability to think like a historian. That is a very specific set of habits, and this course exists to build them into you.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking:Argumentation",
               "body": "The AP exam does not reward memorization. It rewards the ability to make an argument about the past, a claim in your voice, supported by evidence, that another intelligent person could reasonably disagree with. Every module in this course is a rep for that skill."
@@ -115,6 +137,56 @@
                 }
               },
               {
+                "text": "Argumentation is making a claim about the past in your own voice and backing it with specific evidence. A thesis is a position, not a summary. If someone cannot disagree with your thesis, it is not one. And sourcing is reading a document the way a lawyer reads a witness, who made it, when, why, for whom, and letting that shape how you weigh what it says.",
+                "marks": {
+                  "kt": [
+                    "Argumentation",
+                    "sourcing"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "AP World History is built around six specific habits of mind, the six things historians actually do when they think. Learn them by name, because you will see them in every module of every lesson this year.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "Contextualization is placing something inside the world that surrounded it, before you try to explain it. Set the stage first. Comparison is reading two things side by side to see what is the same, what is different, and, the AP kicker, why the difference matters . Never just list similarities.",
+                "marks": {
+                  "kt": [
+                    "Contextualization",
+                    "Comparison"
+                  ],
+                  "strong": [],
+                  "em": [
+                    "before",
+                    "why the difference matters"
+                  ]
+                }
+              },
+              {
+                "type": "p",
+                "text": "Causation is following the chain of cause and effect, and being able to show how you know. Historians distinguish between triggers (the spark) and underlying causes (the fuel). Both matter. Neither alone explains. Continuity and change over time is watching what stayed the same and what changed as history moved forward, and refusing the easy story that everything changed or nothing did. Both are almost always wrong.",
+                "marks": {
+                  "kt": [
+                    "Causation",
+                    "Continuity and change over time"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "Argumentation is making a claim about the past in your own voice and backing it with specific evidence. A thesis is a position, not a summary. If someone cannot disagree with your thesis, it is not one. And sourcing is reading a document the way a lawyer reads a witness, who made it, when, why, for whom, and letting that shape how you weigh what it says.",
                 "marks": {
                   "kt": [
@@ -174,6 +246,48 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "The rhythm of every class period is the same 10-module pattern, and it is deliberate. Map builds geographic context. First & 10 is the day’s narrative reading, the historian’s warm-up, which is what you are doing right now. Content Delivery is direct instruction. BeSurreal is a memorable everyday-life detail from the historical moment, the sensory anchor that makes the concept stick.",
+                "marks": {
+                  "kt": [
+                    "Map",
+                    "First & 10",
+                    "Content Delivery",
+                    "BeSurreal"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "Then the practice work. Skill Builder practices one AP skill on today’s content. Checkpoint 1 captures your thinking early. Evidence Lab treats visuals as evidence, not decoration. Primary Source (or the Socrates AI Coach in Foundations) trains the sourcing skill. BeInTheRoom puts you inside the moment as a decision-maker, a general, an emperor, a merchant, a scholar, and asks what you would do and why. And Checkpoint 2 is a synthesis, pulling threads across the modules into a single argument.",
+                "marks": {
+                  "kt": [
+                    "Skill Builder",
+                    "Checkpoint 1",
+                    "Evidence Lab",
+                    "Primary Source",
+                    "Socrates AI Coach",
+                    "BeInTheRoom",
+                    "Checkpoint 2"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "The modules repeat because the skills repeat. You are building muscle memory. The room does not change every class. The work you do inside it does.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking:Continuity & Change Over Time",
               "body": "The 10-module pattern is the continuity across the year. What changes is your ability to move through it . By January, the checkpoints get faster and sharper. By April, the BeInTheRoom decisions sound like they were made by someone who lives inside the moment. That change is the record of who you became."
@@ -213,6 +327,48 @@
                 }
               },
               {
+                "text": "This is the receipt for what happened to your mind this year. It is not a grade. It is a portable, permanent artifact of who you became, and it starts today, with whatever you write in Checkpoint 2 of this lesson.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Here is what makes BeHistorical different from most classes: everything you write this year accumulates . Every First & 10 response. Every checkpoint. Every BeInTheRoom decision. Every DBQ draft. Your writing is the raw material for what comes next.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": [
+                    "accumulates"
+                  ]
+                }
+              },
+              {
+                "type": "p",
+                "text": "In May, after the AP exam, you receive your Historian’s Portfolio : a one-page letter about the historian you became, drawn from your own writing at three moments across the year, September, January, April. The letter will name what you got specifically better at. It will flag one growth edge to keep working on. And it will quote actual sentences you wrote at different points in the year, so the story is grounded in evidence you can see with your own eyes.",
+                "marks": {
+                  "kt": [
+                    "Historian’s Portfolio"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "The portfolio is yours. You see the draft before it is final. You can edit it. You choose who sees it, you, your family, your next AP teacher if you want, your college applications in senior year. It contains only your thinking. Never behavior notes, never personality labels, never anything you did not write. If it is not in your words on the page, it is not in the letter.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "This is the receipt for what happened to your mind this year. It is not a grade. It is a portable, permanent artifact of who you became, and it starts today, with whatever you write in Checkpoint 2 of this lesson.",
                 "marks": {
                   "kt": [],
@@ -342,6 +498,28 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "For roughly 200,000 years, humans lived as hunter-foragers , small, mobile bands that hunted animals and gathered wild plants, moving with the seasons and the herds. This was not a primitive failure to think of farming. It was a flexible, knowledge-rich way of life, and in many ways an easier one: foragers often worked fewer hours and ate a more varied diet than the farmers who came after them.",
+                "marks": {
+                  "kt": [
+                    "hunter-foragers"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "But foraging set hard limits. A band could only grow as large as the wild food around it could feed, and people who move constantly cannot store much, build permanent towns, or support large numbers of people who don't produce food. Then, at the end of the last Ice Age, that changed, not everywhere, and not overnight, but in a handful of places the relationship between humans and their food was rewritten forever.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Contextualization",
               "body": "The empires, cities, and trade routes AP World studies beginning at c.1200 rest on a foundation poured roughly 10,000 years earlier. Before you can explain any state, you have to explain the agricultural surplus that made states possible, and before that, the geography that made agriculture possible in the first place."
@@ -364,6 +542,29 @@
                 }
               },
               {
+                "text": "Farming produced a more reliable food supply, though not necessarily a more diverse or healthier one. It also reshaped the land itself: farmers cleared fields, favored a few crops over the wild variety around them, dug irrigation channels, and put domesticated animals to work for food and labor. Camps became villages; some villages grew into towns; and a few grew into the first cities.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "About 10,000 years ago, as the last Ice Age ended and the climate warmed, wild grains spread across certain regions. In several parts of the world, independently, with no contact between them, some human groups began to domesticate plants and animals: saving seeds and planting them, breeding animals for meat, milk, and muscle. Historians call this slow, world-changing shift the Neolithic Revolution . Other groups kept foraging.",
+                "marks": {
+                  "kt": [
+                    "domesticate",
+                    "Neolithic Revolution"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "Farming produced a more reliable food supply, though not necessarily a more diverse or healthier one. It also reshaped the land itself: farmers cleared fields, favored a few crops over the wild variety around them, dug irrigation channels, and put domesticated animals to work for food and labor. Camps became villages; some villages grew into towns; and a few grew into the first cities.",
                 "marks": {
                   "kt": [],
@@ -405,6 +606,32 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "The Neolithic Revolution and the first civilizations did not appear at random. They clustered in river valleys , the Nile in Egypt, the Tigris and Euphrates in Mesopotamia, the Indus in South Asia, and the Huang He (Yellow River) in China. This was geography at work. Rivers supplied fresh water for irrigation , and when they flooded they deposited a fresh layer of fertile silt, alluvial soil , across the floodplain, renewing it year after year.",
+                "marks": {
+                  "kt": [
+                    "river valleys",
+                    "irrigation",
+                    "alluvial soil"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "The wider setting mattered too. The Fertile Crescent happened to be home to the wild ancestors of wheat, barley, sheep, and goats, the specific species that could be domesticated. Where geography offered water, rich soil, and domesticable plants and animals, farming took root and populations swelled. Where it did not, in deserts, dense forests, and open grasslands, people kept foraging or turned to herding. Geography did not decide what people would think or build, but it decided what was possible, and where.",
+                "marks": {
+                  "kt": [
+                    "Fertile Crescent"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Geography as Context",
               "body": "The core habit of this course: for any feature, a river, a desert, a grassland, ask what it made easier and what it made harder . The river valleys made farming easy, and that single advantage set everything else in motion."
@@ -426,6 +653,31 @@
                 }
               },
               {
+                "text": "Not all of the change was benign. Surplus also concentrated power. Society split into classes, a small elite above a large laboring majority, and patriarchy and forced-labor systems gave elite men authority over almost everyone else. Complex religion tied rulers to the spirit world, whose favor supposedly guaranteed the harvest. Meanwhile, on grasslands too dry to farm, pastoralists herded domesticated animals across seasonal ranges. They stayed mobile and owned little, but their constant movement made them a vital conduit, carrying technologies and ideas between the settled civilizations they traded with and raided.",
+                "marks": {
+                  "kt": [
+                    "patriarchy",
+                    "pastoralists"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Once a river valley grew more food than its farmers needed, it produced an agricultural surplus , and a surplus changes everything. If not everyone has to farm, some people can do something else. That single fact is the seed of civilization. People specialized as potters, weavers, metalworkers, soldiers, and priests. Governments arose to organize irrigation, defend the fields and cities, protect trade, and manage the surplus. Writing was invented, cuneiform in Mesopotamia, hieroglyphs in Egypt, first to keep accounts of stored grain, then to record laws, myths, and religion. Trade expanded to bring in resources a valley lacked, carried by boats, wheeled carts, and animal caravans.",
+                "marks": {
+                  "kt": [
+                    "agricultural surplus"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "Not all of the change was benign. Surplus also concentrated power. Society split into classes, a small elite above a large laboring majority, and patriarchy and forced-labor systems gave elite men authority over almost everyone else. Complex religion tied rulers to the spirit world, whose favor supposedly guaranteed the harvest. Meanwhile, on grasslands too dry to farm, pastoralists herded domesticated animals across seasonal ranges. They stayed mobile and owned little, but their constant movement made them a vital conduit, carrying technologies and ideas between the settled civilizations they traded with and raided.",
                 "marks": {
                   "kt": [
@@ -559,6 +811,29 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "A belief system is a shared framework of ideas about the world, what is sacred, how people should behave, who deserves authority, and what happens after death. But in the world before c.1200, belief systems were never only private. They were institutions : they ran schools, settled disputes, funded charity, justified who ruled, and linked strangers across thousands of miles into a single community.",
+                "marks": {
+                  "kt": [
+                    "belief system",
+                    "institutions"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "Six belief systems shaped most of Afro-Eurasia. Two grew out of China, Confucianism and Daoism. Two grew out of South Asia, Hinduism and Buddhism. Two grew out of the Middle East and shared one God, Christianity and Islam. Learn what each one taught and how each one traveled, and you have the cultural map of the world AP World History is about to study.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Contextualization",
               "body": "Treat a belief system as an institution, not just a theology. Ask what problem it helped a society solve, social order, political legitimacy, education, welfare, or long-distance trust between merchants, and you can analyze it with real historical depth."
@@ -581,6 +856,33 @@
                 }
               },
               {
+                "text": "Daoism , traditionally traced to Laozi, pointed the other way, inward and toward nature. It taught harmony with the Dao (\"the Way\"), balance (the yin-yang), simplicity, and wu wei , or effortless action. Where Confucianism organized public duty, Daoism offered personal balance and a retreat from striving. Most Chinese did not choose between them: together with Buddhism they formed the \"Three Teachings,\" and people drew on all three.",
+                "marks": {
+                  "kt": [
+                    "Daoism",
+                    "Dao",
+                    "wu wei"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Confucianism , based on the teachings of Confucius (551–479 BCE), was a this-worldly ethic of social order. It taught that a harmonious society rests on five key relationships and on filial piety , respect for parents, elders, and rulers. Because it prized education and merit, it became the foundation of China's civil service examinations, turning a philosophy into the machinery of government.",
+                "marks": {
+                  "kt": [
+                    "Confucianism",
+                    "filial piety"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "Daoism , traditionally traced to Laozi, pointed the other way, inward and toward nature. It taught harmony with the Dao (\"the Way\"), balance (the yin-yang), simplicity, and wu wei , or effortless action. Where Confucianism organized public duty, Daoism offered personal balance and a retreat from striving. Most Chinese did not choose between them: together with Buddhism they formed the \"Three Teachings,\" and people drew on all three.",
                 "marks": {
                   "kt": [
@@ -625,6 +927,31 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Hinduism is one of the world's oldest belief systems, with no single founder. It teaches dharma (one's duty), karma (the moral weight of actions), and reincarnation, with release from that cycle, moksha, as the ultimate goal. Hinduism was woven into the varna social order (the caste system), which made it central to South Asian society but hard to separate from it.",
+                "marks": {
+                  "kt": [
+                    "Hinduism",
+                    "dharma"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "Buddhism began around 500 BCE with Siddhartha Gautama, the Buddha, as a reform within that same Indian world. He taught the Four Noble Truths: life involves suffering, suffering comes from desire, desire can be overcome, and the Eightfold Path leads to release (nirvana). Crucially, the Buddha taught that anyone could reach enlightenment regardless of caste. That universal message let Buddhism travel far beyond India, along the Silk Roads and Indian Ocean, while Hinduism stayed rooted in South Asia and its trading partners.",
+                "marks": {
+                  "kt": [
+                    "Buddhism"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Causation",
               "body": "Notice the causal difference. Buddhism's message was open to everyone, which helped it spread across Asia; Hinduism's tie to the caste social order kept it more geographically rooted. The content of a belief system shapes how far it can travel."
@@ -648,6 +975,30 @@
                 }
               },
               {
+                "text": "Islam, founded on the message Muhammad began preaching in the 600s CE, centers on submission to one God (Allah), the Quran, and the Five Pillars of practice. It spread with astonishing speed, through conquest, through merchants, and through Sufi missionaries, creating a vast connected world, the Dar al-Islam, stretching from Iberia to South Asia within a few centuries. Both faiths were universalizing: anyone, anywhere, could join.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Christianity and Islam are both monotheistic , they worship one God, and both grew from the same Middle Eastern, Abrahamic root as Judaism. Christianity, built on the teachings of Jesus, spread first through the Roman Empire by missionaries and then exploded when rulers adopted it, from Rome and Byzantium to the kingdom of Ethiopia. By c.1200 it had divided into a Latin (Catholic) west, a Greek (Orthodox) east, and distinct African churches.",
+                "marks": {
+                  "kt": [
+                    "Christianity",
+                    "Islam",
+                    "monotheistic"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "Islam, founded on the message Muhammad began preaching in the 600s CE, centers on submission to one God (Allah), the Quran, and the Five Pillars of practice. It spread with astonishing speed, through conquest, through merchants, and through Sufi missionaries, creating a vast connected world, the Dar al-Islam, stretching from Iberia to South Asia within a few centuries. Both faiths were universalizing: anyone, anywhere, could join.",
                 "marks": {
                   "kt": [],
@@ -680,6 +1031,31 @@
                 }
               },
               {
+                "text": "The lesson is that there is no single \"pure\" version of any of these traditions, only specific, historically located versions, each shaped by the culture that received it. These six belief systems are the cultural foundation of the world AP World History begins with at c.1200. Learn to see them as institutions that organized life and as living traditions that adapted, and every region of Unit 1 becomes readable.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Two patterns run through all six systems. First, they spread , carried along trade routes, pushed by missionaries, and adopted by rulers who used them to legitimate their power. Second, they changed . As a belief system entered a new culture, it absorbed local practices. This blending is called syncretism : Chan (Zen) Buddhism fused with Daoist ideas in China; Islam in Mali kept its griot bards and older ceremonies; Ethiopian Christianity built its own canon of scripture.",
+                "marks": {
+                  "kt": [
+                    "syncretism"
+                  ],
+                  "strong": [],
+                  "em": [
+                    "spread",
+                    "changed"
+                  ]
+                }
+              },
+              {
+                "type": "p",
                 "text": "The lesson is that there is no single \"pure\" version of any of these traditions, only specific, historically located versions, each shaped by the culture that received it. These six belief systems are the cultural foundation of the world AP World History begins with at c.1200. Learn to see them as institutions that organized life and as living traditions that adapted, and every region of Unit 1 becomes readable.",
                 "marks": {
                   "kt": [],
@@ -813,6 +1189,33 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "A state is an organized political community with authority over a territory and the people in it. Every state, ancient or modern, must solve the same four problems: it must extract resources (taxes, labor, and soldiers), defend its territory , administer people spread across distance, and make its rule feel legitimate rather than merely forced.",
+                "marks": {
+                  "kt": [
+                    "state",
+                    "legitimate"
+                  ],
+                  "strong": [
+                    "extract resources",
+                    "defend its territory",
+                    "administer"
+                  ],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "Between about 550 BCE and 220 CE, four classical civilizations became famous for how they answered these problems, the Persian Empire, Han China, the Greek city-states, and Rome. Their solutions were remarkably different: one ruled by tolerating difference, one by centralized bureaucracy, one by citizen self-government, and one by law and shared citizenship.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Contextualization",
               "body": "The states AP World studies from c.1200 did not invent government from scratch. They inherited models worked out by these classical states. Learn the four problems, extraction, defense, administration, legitimacy, and you have a checklist you can run on any state in the course."
@@ -834,6 +1237,30 @@
                 }
               },
               {
+                "text": "To hold this vast space together, Persia built the Royal Road , roughly 2,500 kilometers, with relay stations so that royal couriers and armies could move quickly. Standardized coinage and regular tribute tied the provinces to the center, and the ruler styled himself \"King of Kings,\" the head of many peoples rather than the destroyer of them.",
+                "marks": {
+                  "kt": [
+                    "Royal Road"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Founded by Cyrus the Great around 550 BCE, the Persian (Achaemenid) Empire was the largest the world had yet seen, stretching from the Indus River to the Aegean Sea. Rather than crush the many peoples it conquered, Persia ruled through tolerance and delegation. It divided the empire into provinces called satrapies , each run by a governor, a satrap, who collected tribute and kept order, while local languages, customs, and religions were largely left alone.",
+                "marks": {
+                  "kt": [
+                    "satrapies"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "To hold this vast space together, Persia built the Royal Road , roughly 2,500 kilometers, with relay stations so that royal couriers and armies could move quickly. Standardized coinage and regular tribute tied the provinces to the center, and the ruler styled himself \"King of Kings,\" the head of many peoples rather than the destroyer of them.",
                 "marks": {
                   "kt": [
@@ -876,6 +1303,31 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Where Persia delegated, Han China (206 BCE–220 CE) centralized . It governed some 60 million people through a trained bureaucracy of officials, increasingly chosen for their education in Confucian texts rather than for noble birth. Legitimacy rested on the Mandate of Heaven : Heaven granted authority to rulers who governed justly, and withdrew it, through disasters and successful rebellion, from those who did not.",
+                "marks": {
+                  "kt": [
+                    "bureaucracy",
+                    "Mandate of Heaven"
+                  ],
+                  "strong": [
+                    "centralized"
+                  ],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "This system made the Han immensely powerful: it pushed back the Xiongnu nomads on the northern frontier and opened the Silk Roads. But centralization had limits. When the Han over-taxed, let flood-control canals decay, and let court corruption spread, some 400,000 peasants launched the Yellow Turban Rebellion in 184 CE, invoking the very Mandate of Heaven to justify revolt. The dynasty crushed the rising only by empowering regional warlords, who then refused to disband and tore China apart.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Continuity & Change",
               "body": "The Mandate of Heaven was a continuity across thousands of years of Chinese history, but it cut both ways. It legitimized a just ruler and it justified overthrowing an unjust one. Bureaucracy made the Han strong; the same dependence on the center made it brittle when the center failed."
@@ -909,6 +1361,32 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Classical Greece was not a single state but hundreds of small, independent city-states, or poleis . The Greeks pioneered a radically different answer to the power problem: rule by citizens. Athens developed direct democracy , in which free adult male citizens debated and voted on laws in person; Sparta built a militarized society run by a small ruling elite. But Greek \"citizen rule\" was narrow, women, enslaved people, and foreign residents (metics), who together were the majority, had no vote. Power was shared, but only among a minority.",
+                "marks": {
+                  "kt": [
+                    "poleis",
+                    "democracy"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "Rome scaled these ideas up. The Roman Republic mixed elected consuls, a powerful Senate, and popular assemblies to spread authority and check any single man. As Rome conquered the Mediterranean, that system strained, and after decades of civil war Augustus turned the Republic into the Roman Empire, ruled by an emperor. Rome's genius was integration: a shared body of Roman law and the gradual extension of Roman citizenship to conquered peoples gave distant provinces a stake in the system, while roads and professional legions held it together. Its limits showed too, the enslaved gladiator Spartacus led over 70,000 people in revolt (73–71 BCE), and Rome crushed it brutally.",
+                "marks": {
+                  "kt": [
+                    "Roman Republic",
+                    "citizenship"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Argumentation",
               "body": "Greece and Rome offer two more answers: sharing authority among citizens, and binding conquered peoples through law and citizenship. A strong argument names the tool, democracy, Roman law, citizenship, and explains both what it accomplished and whom it left out."
@@ -928,6 +1406,26 @@
                 }
               },
               {
+                "text": "And every one of them hit limits and met resistance, the Yellow Turbans against the Han, Spartacus against Rome, and the vast populations that citizenship and citizenship-style democracy simply excluded. These classical models became the toolkit later states drew on, and the four questions are exactly the ones you will ask of every state in AP World, from Song China to the Abbasid Caliphate to the Aztec and Inca empires.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "Line the four up. Persia ruled a diverse empire by tolerating difference and delegating to satraps. Han China ruled by centralized bureaucracy backed by the Mandate of Heaven. The Greek poleis experimented with citizen self-rule on a small scale. Rome combined republican checks, then imperial authority, with law and citizenship to integrate an empire. Four civilizations, four solutions to the same problems of extraction, defense, administration, and legitimacy.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "And every one of them hit limits and met resistance, the Yellow Turbans against the Han, Spartacus against Rome, and the vast populations that citizenship and citizenship-style democracy simply excluded. These classical models became the toolkit later states drew on, and the four questions are exactly the ones you will ask of every state in AP World, from Song China to the Abbasid Caliphate to the Aztec and Inca empires.",
                 "marks": {
                   "kt": [],
@@ -1060,6 +1558,32 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "A trade network is a system of routes and relationships that carries goods between distant societies. But the goods are only the most visible layer. Along with silk and salt travel merchants and missionaries, seeds and livestock, tools and techniques, and, invisibly, the germs those travelers carry. What moves through a trade network is never just the cargo.",
+                "marks": {
+                  "kt": [
+                    "trade network"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "Before c.1200, three great networks did most of this work across Afro-Eurasia: the overland Silk Roads , the maritime Indian Ocean system, and the trans-Saharan caravan routes. They were not three separate worlds. Together they formed a single connected system, and learning how each one worked, and what rode along with the goods, is the key to reading every region of AP World.",
+                "marks": {
+                  "kt": [
+                    "Silk Roads",
+                    "Indian Ocean",
+                    "trans-Saharan"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Causation",
               "body": "The historian's move is to look past the cargo. Ask what else rode along with the goods, because the invisible cargo (a religion, a technology, a disease) often changed history more than the silk did."
@@ -1089,6 +1613,28 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "The Silk Roads were not a single road. They were a branching relay network of overland routes running from the Chinese capital of Chang'an, through the oasis cities of Central Asia, on to Samarkand, Persia, and the Mediterranean. No single merchant traveled the whole way. Goods changed hands again and again at oasis towns, passing from Chinese to Sogdian to Persian to Arab middlemen, each taking a profit and handing off the risk of the next leg.",
+                "marks": {
+                  "kt": [
+                    "relay"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "This relay carried silk, porcelain, and (after 751 CE) paper westward, and horses, glassware, spices, and precious metals eastward. It also carried people and ideas: Buddhist monks traveled with the caravans, and merchants funded monasteries at oasis stops as spiritual insurance for their dangerous journeys.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Continuity & Change",
               "body": "The Silk Roads operated for more than a thousand years. What changed was the political conditions around them: when strong states like Tang China (and later the Mongols) kept the routes safe, trade surged; when they fragmented, it shrank. The network endured; its volume rose and fell with the powers along it."
@@ -1110,6 +1656,30 @@
                 }
               },
               {
+                "text": "Wealthy port cities grew at the junctions of these sea-lanes: Aden, Hormuz, Calicut, Malacca, Quanzhou, and Kilwa. The Srivijaya Empire on Sumatra grew rich by controlling the Strait of Malacca, the chokepoint every ship between India and China had to pass. On the far side, Chinese porcelain excavated at Kilwa in East Africa proves that this single network reached across four continents.",
+                "marks": {
+                  "kt": [
+                    "Srivijaya"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "The Indian Ocean network ran on the monsoon winds, which reverse with the seasons. The southwest monsoon (June to September) pushed ships from Arabia and East Africa toward India and Southeast Asia; the northeast monsoon (November to March) carried them home. This reliable reversal created a natural round-trip schedule, and it made the Indian Ocean the world's first sustained maritime trade network.",
+                "marks": {
+                  "kt": [
+                    "monsoon"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "Wealthy port cities grew at the junctions of these sea-lanes: Aden, Hormuz, Calicut, Malacca, Quanzhou, and Kilwa. The Srivijaya Empire on Sumatra grew rich by controlling the Strait of Malacca, the chokepoint every ship between India and China had to pass. On the far side, Chinese porcelain excavated at Kilwa in East Africa proves that this single network reached across four continents.",
                 "marks": {
                   "kt": [
@@ -1152,6 +1722,31 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "For most of history the Sahara was a barrier. What changed it was a technology: the camel saddle , adopted around 300 CE, which let camels carry heavy loads for days without water. The desert became a highway of caravan routes linking West African goldfields to North African and Mediterranean markets. The trade ran on complementary needs, gold moving north and Saharan salt moving south.",
+                "marks": {
+                  "kt": [
+                    "camel saddle"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "The empires of Ghana and then Mali grew wealthy by taxing every load that crossed their territory. After Islam spread across North and West Africa, it supplied the commercial glue: a shared body of contract law, a credit system that moved value without moving gold, and caravanserais that sheltered merchants across thousands of kilometers of desert.",
+                "marks": {
+                  "kt": [
+                    "Ghana",
+                    "Mali"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Continuity & Change",
               "body": "The Sahara itself did not change, but the tools people brought to it did. A technology (the camel saddle) and an institution (Islamic commercial law) turned a barrier into a highway. Sometimes what transforms a trade route is not the route but what people bring to it."
@@ -1176,6 +1771,31 @@
                 }
               },
               {
+                "text": "This is why historians treat the three networks as one circulatory system rather than three separate roads. Goods, people, ideas, crops, and germs all moved together. By c.1200 that system's pulse was strong enough to sustain the most commercially sophisticated economies on earth, and it set the stage for everything AP World studies next.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "The most consequential cargo was often invisible. Technology: Chinese papermakers captured at the Battle of Talas (751 CE) carried papermaking into the Islamic world, where cheap paper fueled an extraordinary flowering of scholarship. Religion: Buddhism spread into China with Silk Road merchants, and Islam reached Southeast Asia through Indian Ocean traders rather than armies. Crops: fast-maturing Champa rice traveled from Vietnam to Song China, enabling two harvests a year and helping the population soar. Disease: the Plague of Justinian (541 CE) rode grain ships to Constantinople, killing tens of millions.",
+                "marks": {
+                  "kt": [],
+                  "strong": [
+                    "Technology:",
+                    "Religion:",
+                    "Crops:",
+                    "Disease:"
+                  ],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "This is why historians treat the three networks as one circulatory system rather than three separate roads. Goods, people, ideas, crops, and germs all moved together. By c.1200 that system's pulse was strong enough to sustain the most commercially sophisticated economies on earth, and it set the stage for everything AP World studies next.",
                 "marks": {
                   "kt": [],
@@ -1308,6 +1928,31 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "In Song China , the Southern Song capital Lin'an (Hangzhou) is approaching 1.5 million people, among the largest cities on earth. The dynasty has been pushed south of the Huai River by Jurchen Jin conquest, but geographically it has landed in the most productive agricultural zone in the world. The Yangtze Delta's wet-rice cultivation, the introduction of Champa rice from Vietnam, and the development of paper money and credit instruments have produced what historians call a Commercial Revolution. Maritime customs revenue at Quanzhou funds a significant share of the state budget. Zhu Xi (1130–1200 CE) is right now synthesizing the Neo-Confucian philosophy that will dominate Chinese intellectual and political life until 1905. On the northern steppe, a man named Temujin is consolidating the Mongolian tribes. He will take the title Genghis Khan in 1206.",
+                "marks": {
+                  "kt": [
+                    "Song China",
+                    "Neo-Confucian"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "In Dar al-Islam , the Abbasid Caliphate in Baghdad retains symbolic religious authority but has not held real military power for two centuries, Seljuk Turks govern in the caliph's name. Yet this political fragmentation has coincided with an intellectual peak: Ibn Rushd (Averroes, 1126–1198 CE) is finishing his commentaries on Aristotle in Córdoba; Maimonides (1138–1204 CE) is writing in Cairo. The madrasa system, funded by permanent waqf endowments, sustains scholarship independent of political upheaval. The Islamic world in 1200 CE is politically fractured and intellectually brilliant.",
+                "marks": {
+                  "kt": [
+                    "Dar al-Islam"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Contextualization",
               "body": "Before you can explain anything that happens in Units 1 through 9, you need this baseline. Song China at c.1200 is the most commercially sophisticated economy on earth. Dar al-Islam is politically fragmented but intellectually at its peak. These are the conditions AP World begins with, not endpoints, but starting points for everything that follows."
@@ -1329,6 +1974,31 @@
                 }
               },
               {
+                "text": "In South and Southeast Asia , the Khmer Empire's Angkor Wat (completed c.1150 CE) stands as the largest religious structure on earth, announcing the Hindu divine kingship of Suryavarman II. The Delhi Sultanate is about to be established in northern India (1206 CE), marking the arrival of sustained Islamic political authority on the subcontinent. Southeast Asian maritime states, many now Muslim, some still Hindu or Buddhist, control the Strait of Malacca and the spice trade routes connecting the Indian Ocean to the South China Sea.",
+                "marks": {
+                  "kt": [
+                    "South and Southeast Asia",
+                    "Angkor Wat"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "In Africa , the Swahili coast city-states, Kilwa, Mombasa, Zanzibar, are active nodes of Indian Ocean commerce, exporting gold and ivory from the continental interior in exchange for Chinese porcelain, Indian textiles, and Persian glass. Great Zimbabwe's stone enclosures are under construction in the interior of southern Africa. In West Africa, the Mali Empire is consolidating after the collapse of Ghana, positioning itself to control trans-Saharan gold routes. Africa at c.1200 is neither isolated nor peripheral, it is selectively and profoundly connected to both the Indian Ocean and trans-Saharan trade systems.",
+                "marks": {
+                  "kt": [
+                    "Africa"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "In South and Southeast Asia , the Khmer Empire's Angkor Wat (completed c.1150 CE) stands as the largest religious structure on earth, announcing the Hindu divine kingship of Suryavarman II. The Delhi Sultanate is about to be established in northern India (1206 CE), marking the arrival of sustained Islamic political authority on the subcontinent. Southeast Asian maritime states, many now Muslim, some still Hindu or Buddhist, control the Strait of Malacca and the spice trade routes connecting the Indian Ocean to the South China Sea.",
                 "marks": {
                   "kt": [
@@ -1371,6 +2041,30 @@
                 }
               }
             ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "In the Americas , Cahokia near modern St. Louis has a population of 10,000–20,000, the largest city north of Mexico, and participates in long-distance trade networks reaching the Gulf Coast. In Mesoamerica, post-Toltec fragmentation is producing the city-state competition that will eventually generate the Aztec Triple Alliance (1428 CE). In the Andes, the Inca are not yet an empire, that consolidation begins around 1438 CE. The Americas at c.1200 are developing complex societies in complete geographic isolation from Afro-Eurasia, without horses, without large draft animals, and without the Eurasian disease reservoir that will devastate their populations after 1492.",
+                "marks": {
+                  "kt": [
+                    "the Americas"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
+                "text": "In Europe , the founding of the first universities (Bologna, 1088; Paris, c.1150; Oxford, c.1167) and the Crusades' stimulation of Mediterranean commerce are beginning to pull Europe out of post-Roman stagnation. By almost any economic or intellectual measure, Europe in 1200 CE is peripheral relative to the Islamic world and East Asia. The transformation that will eventually make Europe dominant is the story of Units 3 through 9, it has not yet happened.",
+                "marks": {
+                  "kt": [
+                    "Europe"
+                  ],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
             "callout": {
               "label": "AP Thinking, Contextualization",
               "body": "The Americas' geographic isolation is one of the most consequential facts in AP World. Complex civilizations, Cahokia, the Aztec predecessors, the Inca predecessors, developed without contact with Afro-Eurasia, without horses or large draft animals, and without immunity to Eurasian diseases. That isolation explains not just what the Americas were at c.1200 but why post-1492 contact was so catastrophic."
@@ -1390,6 +2084,26 @@
                 }
               },
               {
+                "text": "Your job for the next year is to explain why things happened, not just that they happened. The Foundations unit gave you the tools. Unit 1 is where you use them.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              }
+            ],
+            "blocks": [
+              {
+                "type": "p",
+                "text": "This is the world AP World History enters. Not a collection of isolated civilizations each marching toward Western modernity, but an interconnected system, deeply connected across Afro-Eurasia, partially isolated in the Americas, where developments in one region regularly produce effects in others.",
+                "marks": {
+                  "kt": [],
+                  "strong": [],
+                  "em": []
+                }
+              },
+              {
+                "type": "p",
                 "text": "Your job for the next year is to explain why things happened, not just that they happened. The Foundations unit gave you the tools. Unit 1 is where you use them.",
                 "marks": {
                   "kt": [],

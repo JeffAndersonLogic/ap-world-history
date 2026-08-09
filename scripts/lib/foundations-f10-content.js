@@ -35,10 +35,10 @@ module.exports = {
       "Contextualization",
       "Comparison",
       "Causation",
-      "Continuity &amp; Change",
+      "Continuity & Change",
       "Argumentation",
       "Sourcing",
-      "First &amp; 10",
+      "First & 10",
       "BeSurreal",
       "BeInTheRoom",
       "Checkpoint",
@@ -86,7 +86,7 @@ module.exports = {
       },
       {
         "label": "The Promise",
-        "heading": "What You Are Building: Your Historian&rsquo;s Portfolio",
+        "heading": "What You Are Building: Your Historian’s Portfolio",
         "paragraphs": [
           "Here is what makes BeHistorical different from most classes: everything you write this year <em>accumulates</em>. Every First &amp; 10 response. Every checkpoint. Every BeInTheRoom decision. Every DBQ draft. Your writing is the raw material for what comes next.",
           "In May, after the AP exam, you receive your <span class=\"kt\">Historian&rsquo;s Portfolio</span>: a one-page letter about the historian you became, drawn from your own writing at three moments across the year, September, January, April. The letter will name what you got specifically better at. It will flag one growth edge to keep working on. And it will quote actual sentences you wrote at different points in the year, so the story is grounded in evidence you can see with your own eyes.",
@@ -115,7 +115,7 @@ module.exports = {
       },
       {
         "skill": "Sourcing",
-        "text": "Your Historian&rsquo;s Portfolio in May will be sourced from your own words this year, the way historians build claims from documents. Write one sentence you would like your portfolio to be able to say honestly about you, and identify one thing you will have to write this year for that sentence to be sourceable from the record.",
+        "text": "Your Historian’s Portfolio in May will be sourced from your own words this year, the way historians build claims from documents. Write one sentence you would like your portfolio to be able to say honestly about you, and identify one thing you will have to write this year for that sentence to be sourceable from the record.",
         "placeholder": "I want my portfolio to be able to say that I... To earn it, I will have to..."
       }
     ],
@@ -260,7 +260,7 @@ module.exports = {
     "deck": "Before c.1200, most people's lives were shaped less by kings than by belief systems, the shared frameworks that told them how to behave, who held authority, and what came after death. Six of them, Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam, did far more than answer spiritual questions. They organized whole civilizations, and they changed as they spread.",
     "skillTags": [
       "Causation",
-      "Continuity &amp; Change",
+      "Continuity & Change",
       "Argumentation"
     ],
     "supportCards": {
@@ -353,7 +353,7 @@ module.exports = {
         "placeholder": "[Belief system] spread (or stayed rooted) because..."
       },
       {
-        "skill": "Continuity &amp; Change",
+        "skill": "Continuity & Change",
         "text": "Belief systems changed as they traveled. Choose one example of syncretism from the reading (for example, Buddhism blending with Daoism in China, Islam in Mali, or Christianity in Ethiopia). Identify one thing that continued from the original tradition AND one thing that changed in the new setting.",
         "placeholder": "What continued was... What changed was..."
       },
@@ -388,7 +388,7 @@ module.exports = {
     "deck": "Every state faces the same problem: how do a few people hold power over many, across great distances, and make it last? Between roughly 550 BCE and 220 CE, four classical civilizations, Persia, Han China, Greece, and Rome, each answered it in a strikingly different way. Comparing their answers is how you learn to analyze any state in AP World.",
     "skillTags": [
       "Causation",
-      "Continuity &amp; Change",
+      "Continuity & Change",
       "Argumentation"
     ],
     "supportCards": {
@@ -446,7 +446,7 @@ module.exports = {
         }
       },
       {
-        "label": "Greece &amp; Rome",
+        "label": "Greece & Rome",
         "heading": "The Mediterranean: Citizens, Law, and Empire",
         "paragraphs": [
           "Classical Greece was not a single state but hundreds of small, independent city-states, or <span class=\"kt\">poleis</span>. The Greeks pioneered a radically different answer to the power problem: rule by citizens. Athens developed direct <span class=\"kt\">democracy</span>, in which free adult male citizens debated and voted on laws in person; Sparta built a militarized society run by a small ruling elite. But Greek \"citizen rule\" was narrow, women, enslaved people, and foreign residents (metics), who together were the majority, had no vote. Power was shared, but only among a minority.",
@@ -480,7 +480,7 @@ module.exports = {
         "placeholder": "[Civilization] held power effectively because [tool] worked by..."
       },
       {
-        "skill": "Continuity &amp; Change",
+        "skill": "Continuity & Change",
         "text": "States change over time. Choose ONE example from the reading, Rome's shift from republic to empire, or the Mandate of Heaven across a dynasty's rise and fall, and identify one thing that continued and one thing that changed.",
         "placeholder": "What continued was... What changed was..."
       },
@@ -515,7 +515,7 @@ module.exports = {
     "deck": "Before c.1200, three great trade networks stitched Afro-Eurasia together: the overland Silk Roads, the monsoon-driven Indian Ocean, and the trans-Saharan caravan routes. They moved silk, spices, and gold. But they also moved religions, technologies, crops, and diseases. Trade routes were never only about goods; they were the circulatory system of the premodern world.",
     "skillTags": [
       "Causation",
-      "Continuity &amp; Change",
+      "Continuity & Change",
       "Argumentation"
     ],
     "supportCards": {
@@ -607,7 +607,7 @@ module.exports = {
         "placeholder": "[Network] worked the way it did because..."
       },
       {
-        "skill": "Continuity &amp; Change",
+        "skill": "Continuity & Change",
         "text": "Trade networks changed over time. Choose one example from the reading, such as paper spreading after the Battle of Talas, Champa rice reaching Song China, or the camel saddle transforming the Sahara, and explain one thing that changed and one thing that stayed the same.",
         "placeholder": "What changed was... What stayed the same was..."
       },
