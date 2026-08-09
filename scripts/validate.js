@@ -25,6 +25,19 @@ const vm   = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 
+// The localStorage key prefix that carries the three First & 10 answers and
+// their confidence ratings from the reading to Gather All My Work, and from
+// there to Canvas. It is the only path those answers travel. Four files have to
+// agree on this literal, and nothing but this check makes them:
+//
+//   write  scripts/lib/first10-capture-block.js, installed into all 77 readings
+//   read   assets/js/behistorical-topic-renderer-v1.js
+//   read   foundations/foundations-topic-renderer.js
+//
+// Rename it in one place and the build still passes every structural check
+// while every student answer goes to a key nobody reads.
+const FIRST10_STORAGE_PREFIX = 'behistorical-first10-';
+
 // ─── ANSI colors ─────────────────────────────────────────────────────────────
 const R = '\x1b[31m';
 const G = '\x1b[32m';
@@ -227,6 +240,20 @@ function checkFirst10(filePath, topicKeys) {
     err(filePath, 'missing var TOPIC_KEY');
   }
   if (!src.match(/var\s+TOPIC_LABEL\s*=/)) err(filePath, 'missing var TOPIC_LABEL');
+
+  // The storage key itself, not just the block around it. Removing the capture
+  // block is caught by the TOPIC_KEY and buildAiPrompt checks above, but
+  // *renaming* the key is not: the block stays well-formed, every symbol above
+  // is still present, and the three answers quietly write to a key that neither
+  // renderer reads. That is silent data loss, and it looks like a clean build.
+  //
+  // Three files have to agree on this literal. The write side is
+  // scripts/lib/first10-capture-block.js; the read side is
+  // behistorical-topic-renderer-v1.js and foundations-topic-renderer.js, both of
+  // which read `behistorical-first10-${topicKey}` for Gather All My Work.
+  if (!src.includes(FIRST10_STORAGE_PREFIX)) {
+    err(filePath, `capture block does not write to ${FIRST10_STORAGE_PREFIX}<TOPIC_KEY>, answers will never reach Canvas`);
+  }
 
   // Builder output IDs. The Google builder is retired; only the AI Coach remains.
   if (!src.includes('id="ai-output"') && !src.includes("id='ai-output'")) {
@@ -463,6 +490,33 @@ section('Foundations F&10 files (foundations/first-and-10-foundations-*.html)');
 const fFirst10 = glob(foundationsDir, /^first-and-10-foundations.*\.html$/);
 for (const f of fFirst10) checkFirst10(f, topicKeys);
 sectionDone(`${fFirst10.filter(f => !path.basename(f).includes('-capture')).length} standalone foundations F&10 files`);
+
+// 7b. Both ends of the First & 10 storage key.
+//
+// checkFirst10 above asserts the 77 writers use the prefix. That is only half a
+// contract: if the renderers were changed to read a different key, all 77
+// readings would still validate clean and every answer would still be lost.
+// This closes the loop by asserting the readers use the same literal.
+section('First & 10 storage key, write and read sides agree');
+{
+  const endpoints = [
+    [path.join(ROOT, 'scripts', 'lib', 'first10-capture-block.js'), 'the canonical capture block installs'],
+    [path.join(ROOT, 'assets', 'js', 'behistorical-topic-renderer-v1.js'), 'the unit renderer reads'],
+    [path.join(ROOT, 'foundations', 'foundations-topic-renderer.js'), 'the foundations renderer reads']
+  ];
+
+  for (const [file, role] of endpoints) {
+    totalChecks++;
+    if (!fs.existsSync(file)) {
+      err(file, 'missing, but Gather All My Work depends on it');
+      continue;
+    }
+    if (!read(file).includes(FIRST10_STORAGE_PREFIX)) {
+      err(file, `${role} a key other than ${FIRST10_STORAGE_PREFIX}<TOPIC_KEY>`);
+    }
+  }
+  sectionDone(`3 endpoints agree on ${FIRST10_STORAGE_PREFIX}<TOPIC_KEY>`);
+}
 
 // 8. The Google Form is retired. This check keeps it retired.
 //

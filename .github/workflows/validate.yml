@@ -1,0 +1,71 @@
+name: Validate
+
+# The gate. Every push and every pull request, on any branch.
+#
+# Two jobs on purpose, because the checks have different dependency stories.
+# `structure` runs on a bare checkout with no npm install at all, which is the
+# same guarantee validate.js is written to hold, and it finishes in seconds.
+# `browser` needs Chromium, so it is slower and installs one package.
+#
+# The offline checks that cannot run here at all are in nightly.yml: anything
+# that needs commons.wikimedia.org is deliberately kept out of this workflow so
+# a Wikimedia outage can never fail a push.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  structure:
+    name: Structure and offline tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # No `npm install`. validate.js and the two offline tests are
+      # dependency-free by design, and running them on a bare checkout is what
+      # proves that stays true.
+      - name: Structure, capture wiring, image integrity, Canvas round trip
+        run: node scripts/run-tests.js offline
+
+  browser:
+    name: Browser contracts
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Installed into the workspace rather than the runner's home cache, so the
+      # path is deterministic and matches the lookup the tests already do:
+      # PLAYWRIGHT_BROWSERS_PATH/chromium-<n>/chrome-linux/chrome.
+      - name: Install Chromium
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+
+      # --strict turns a missing browser into a failure. Without it, a broken
+      # install would skip all seven tests and the job would pass green having
+      # verified nothing at all.
+      - name: Modal focus, lightbox, confidence, Skills Lens
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
+        run: node scripts/run-tests.js browser --strict

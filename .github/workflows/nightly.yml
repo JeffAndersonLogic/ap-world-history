@@ -1,0 +1,65 @@
+name: Nightly
+
+# The checks that cannot sit on the push gate.
+#
+# check-image-urls.js needs commons.wikimedia.org. Putting a third-party host on
+# the push path means their outage becomes your failed build, so it runs here
+# instead: a dead Wikimedia file name is real and worth knowing about, but it is
+# never a reason to block a commit.
+#
+# The browser suite runs again here against main specifically, because these are
+# the contracts that have broken silently before and a nightly run catches drift
+# that arrives from somewhere other than a push.
+
+on:
+  schedule:
+    # 07:00 UTC, which is around 02:00 Central. Cron here is always UTC.
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  images:
+    name: Remote image URLs resolve
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Exits 1 on any unreachable image and prints the file plus the exact
+      # file name to replace, so the run's log is the fix list.
+      - name: Check every remote Commons URL
+        run: node scripts/check-image-urls.js
+
+  contracts:
+    name: Structure and browser contracts on main
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Chromium
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+
+      - name: Full suite
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
+        run: node scripts/run-tests.js all --strict

@@ -5,9 +5,40 @@
 - Always commit and push directly to `main`.
 - Do not create feature branches or pull requests.
 
+## The Gate
+
+The contracts below are enforced by machine, not by memory.
+
+- `npm test`, the gate. Runs `validate.js` plus the two dependency-free tests in
+  about five seconds. This is what the pre-push hook and CI both run, and it is
+  the only command you need to remember.
+- `npm run test:browser`, the seven Chromium tests. Needs `npm i playwright-core`.
+- `npm run test:all`, both suites.
+- `npm run hooks:install`, point git at `.githooks/` so `npm test` runs before
+  every push. `npm install` does this automatically. Override once with
+  `git push --no-verify`.
+
+**Exit code 2 means skipped, not passed.** Every browser test exits 2 when
+playwright-core is absent, because `validate.js` must stay runnable on a bare
+checkout and the browser dependency is never installed by default.
+`scripts/run-tests.js` honours that locally. Anywhere the dependency is supposed
+to be present, pass `--strict`, which turns a skip into a failure, so a browser
+job can never pass green having run nothing. Both CI workflows use `--strict`.
+
+`.github/workflows/validate.yml` runs on every push and pull request, in two
+jobs: `structure` deliberately runs with no `npm install` at all, which is what
+keeps the offline suite honestly dependency-free, and `browser` installs
+Chromium. `.github/workflows/nightly.yml` runs the checks that cannot sit on the
+push path: `check-image-urls.js` needs commons.wikimedia.org, and a third party's
+outage must never fail your commit.
+
 ## Repository Commands
 
+Every script below also has an `npm run` alias; see `package.json`.
+
 - `node scripts/validate.js`, run the full structural, capture-wiring, and image-integrity audit.
+- `node scripts/run-tests.js offline|browser|all [--strict]`, run a suite. Prints
+  PASS, FAIL, or SKIP per check and exits 1 if anything failed.
 - `node scripts/check-image-urls.js`, verify every remote Commons image URL actually resolves. Needs internet access to `commons.wikimedia.org`; `validate.js` stays offline on purpose and cannot do this.
 - `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
@@ -19,7 +50,7 @@
 - `node scripts/remove-google-form-capture.js`, idempotently strip any Google Form capture that reappears in a reading, wrapper, or lesson shell, and normalize all 77 capture wrappers to the MagicSchool-only shape.
 - `node scripts/test/modal-focus.unit.js` and `node scripts/test/modal-focus.foundations.js`, drive a real lesson page in Chromium and assert the modal focus contract. Needs `npm i playwright-core`; `validate.js` stays offline and dependency-free, so these are separate. Run them when touching any modal open/close path.
 - `node scripts/build-skills-map.js`, regenerate `assets/data/skills-map.js`, the AP skill and evidence-term lookup the Skills Lens inlines. Run it after editing a checkpoint's `terms`, a `skillBuilder.label`, or a reading's `q-skill` badges.
-- `node scripts/sync-first10-capture.js`, install the canonical First & 10 answer-capture block from `scripts/lib/first10-capture-block.js` into all 77 readings. That block is the only path by which the three reading answers and their confidence ratings reach Canvas, and it has gone missing silently twice.
+- `node scripts/sync-first10-capture.js`, install the canonical First & 10 answer-capture block from `scripts/lib/first10-capture-block.js` into all 77 readings. That block is the only path by which the three reading answers and their confidence ratings reach Canvas, and it has gone missing silently twice. `validate.js` now fails if the block is absent **or** if any of the four files that must agree on the `behistorical-first10-<TOPIC_KEY>` storage key stops using it, which is the version of this failure that leaves every structural check green.
 - `node scripts/test/skills-lens.test.js` and `node scripts/test/confidence.test.js`, browser tests for the Skills Lens panels and the confidence scale.
 - `node scripts/test/lightbox-sweep.js`, open the Map and Evidence Lab modules on all 77 lesson pages and confirm every enlargeable image is an operable button. Prints only failures. Two exceptions are legitimate and the test allows them: a module with no images at all, which covers the topics with no Evidence Lab pictures and Topic 1.3, whose Map module is the course's only embedded iframe map.
 - `node scripts/verify-canvas-check.js <parsed-dir>`, diff a real Canvas round trip character by character against the text that was typed. The one thing that cannot be tested from inside the repo is what Canvas does to a pasted document. See `docs/CANVAS-CHECK.md`.

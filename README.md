@@ -28,12 +28,26 @@ The required module order and authoring rules are documented in `CLAUDE.md`.
 ## Local commands
 
 ```bash
+npm test                  # the gate: validate.js + offline tests, ~5s
+npm run test:browser      # seven Chromium tests (needs: npm i playwright-core)
+npm run test:all          # both suites
+npm run hooks:install     # run the gate before every push
+```
+
+`npm test` is what CI and the pre-push hook run. Every underlying script is still
+callable directly and has an `npm run` alias in `package.json`:
+
+```bash
 node scripts/validate.js
 node scripts/generate-status-manifest.js
 node scripts/build-unit6.js
 node scripts/build-unit9.js
 node scripts/normalize-student-facing-language.js
 ```
+
+Checks run on every push via `.github/workflows/validate.yml`. The checks that
+need the network, notably `check-image-urls.js`, run nightly instead, so a
+Wikimedia outage can never fail a commit.
 
 - `validate.js` checks lesson contracts, form keys, First & 10 wiring, and shell structure.
 - `generate-status-manifest.js` refreshes the data used by `docs/command-center.html`.
