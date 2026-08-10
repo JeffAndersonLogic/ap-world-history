@@ -292,6 +292,12 @@ Always use the full class names from Topic 1.1/1.2. Never use abbreviated names 
 - No `embedUrl` pointing directly to the standalone HTML (must point to the capture wrapper)
 - No abbreviated CSS class names
 - No Google Form anything: no `submitToGoogleForm`, `buildGooglePrompt`, `#google-output`, `BH_FORM`, `PREFILLED_FIRST10_FORM`, or `behistorical-form-config.js`
+- **And not the words either.** The phrase "Google Form" is banned from every
+  student-facing surface, readings, shells, and the data and renderer-config files
+  whose strings get rendered. Three readings and Topic 6.1's `first10.note` kept
+  telling students to "build your Google Form response" for three days after the
+  code went, with every check green, pointing at a builder that no longer existed.
+  `validate.js` now fails on the prose too.
 
 ### Capture wrapper pattern
 

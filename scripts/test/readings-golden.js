@@ -48,6 +48,20 @@ const INTENTIONAL = [
     why: 'the Google Form was retired 2026-08-07; 28 readings still pointed students at it. This is the wording the other 30 already used.' },
   { field: 'support[].body', contains: 'submit it in Canvas',
     why: 'same retirement, in the support card of 5.9, 5.10 and 6.1' },
+  // The same three readings again. The 2026-08-07 retirement pass caught their
+  // footerNote and their support card and missed the module subtitle, where the
+  // form survived as student-visible prose pointing at a builder section that no
+  // longer exists. The replacement is not a reworded sentence: the other 55
+  // readings put "Topic X.Y, Title | course" here, per the First & 10 standard
+  // in CLAUDE.md, and these three were the only ones carrying a workflow
+  // instruction instead. One rule per reading, each pinned to its own value, so
+  // this cannot accept a fourth subtitle change.
+  { field: 'header.subtitle', after: 'Topic 5.9, Society and the Industrial Age | AP World History: Modern',
+    why: '5.9 subtitle: form-era workflow sentence replaced with the topic + course line the other 55 readings use' },
+  { field: 'header.subtitle', after: 'Topic 5.10, Continuity and Change in the Industrial Age | AP World History: Modern',
+    why: '5.10 subtitle: form-era workflow sentence replaced with the topic + course line the other 55 readings use' },
+  { field: 'header.subtitle', after: 'Topic 6.1, Rationales for Imperialism | AP World History: Modern',
+    why: '6.1 subtitle: form-era workflow sentence replaced with the topic + course line the other 55 readings use' },
   { field: 'header.badge', after: 'Module 02',
     why: 'the First & 10 is module 02 in the ten-module standard. Three readings badged themselves "First & 10"; 1.1, 2.1, 3.1, 3.2 and 8.9 carried "Module 01", which is the Map module number; and 2.3 through 2.7 counted 03 to 07, numbering by topic position in the unit rather than by module position in the lesson.' },
   { field: 'header.name', after: 'First & 10 Reading',

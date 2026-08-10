@@ -1,7 +1,7 @@
 # Google Form Removal, Remaining References
 
-**Audit date:** 2026-08-10. **Report only. No code was changed in the session
-that produced this file.**
+**Audit date:** 2026-08-10. **Group A was fixed on 2026-08-10; everything else is
+still a report.**
 
 This is a scoped prompt for a separate cleanup session, not a change log. Mixing
 a documentation session with the removal of a subsystem that spans many files
@@ -9,14 +9,17 @@ makes breakage impossible to attribute: if the Canvas artifacts and the form
 teardown land in one commit and a First & 10 goes dark, nothing tells you which
 half did it. So the audit is written down and the removal is deferred.
 
-**Total: 98 references across 23 files.** 34 of those are in a single frozen test
-fixture that must not be touched, and 15 more are the enforcement machinery that
-keeps the retirement in place. What actually needs fixing is much smaller, and
-four lines of it are visible to students.
+**Total at audit time: 98 references across 23 files.** 34 of those are in a
+single frozen test fixture that must not be touched, and 15 more are the
+enforcement machinery that keeps the retirement in place. What actually needed
+fixing was much smaller, and four lines of it were visible to students.
+
+**Those four are now fixed. 93 references remain across 18 files**, none of them
+on a student-facing surface. Groups B through E below are still outstanding.
 
 ---
 
-## Headline: the capture layer is gone, but four student-visible lines still name it
+## Headline: the capture layer was already gone; the prose was not
 
 **The pipeline itself is genuinely dead.**
 
@@ -27,7 +30,7 @@ four lines of it are visible to students.
   `submitToGoogleForm`, `buildGooglePrompt`, `#google-output`,
   `PREFILLED_FIRST10_FORM`, or `behistorical-form-config`. Verified by grep across
   every `.html` and `.js` outside `scripts/`, and independently by
-  `scripts/validate.js`, which passes on 1182 files.
+  `scripts/validate.js`, which passes on 1330 files.
 - `foundations/foundations-topic-renderer.js` has no form code path at all. Its
   `draft()` takes `(id, prompt)` with no `captureKey` parameter. The only export
   route is `renderWorkExportPanel()`, the **Save Your Work** card, whose two
@@ -36,21 +39,27 @@ four lines of it are visible to students.
 - `node scripts/remove-google-form-capture.js --dry-run` reports **0 files that
   would change** across 77 readings, 77 wrappers, and 77 lesson shells.
 
-**But the prose did not all come with it.** Four student-facing lines still tell
-students to build a Google Form response, pointing at a builder section that was
-deleted. There is no button, no URL, and no handler behind any of them. They are
-dead instructions, not a live second capture channel, which is why Canvas
-documentation may safely describe the Gather All My Work path as the only one.
-They still need to go, because a student who reads one goes looking for a control
-that is not on the page.
+**But the prose did not all come with it.** At audit time, four student-facing
+lines still told students to build a Google Form response, pointing at a builder
+section that was deleted. There was no button, no URL, and no handler behind any
+of them: dead instructions, not a live second capture channel, which is why
+Canvas documentation could safely describe the Gather All My Work path as the
+only one even before they were fixed. They still had to go, because a student who
+reads one goes looking for a control that is not on the page.
+
+**Group A below is the record of what they were and how they were fixed.** It is
+kept rather than deleted, because the interesting part is not the four lines, it
+is that every check in the repository was green while they were on screen.
 
 ---
 
-## Group A, student-visible prose (fix first)
+## Group A, student-visible prose, FIXED 2026-08-10
 
-`validate.js` section 8 does not catch these. It bans six code identifiers and
-URLs; none of these four lines contains one. The phrase "Google Form" in running
-prose has never been on the banned list.
+`validate.js` section 8 did not catch these. It banned six code identifiers and
+URLs; none of the four lines contained one. The phrase "Google Form" in running
+prose had never been on the banned list, and the list only ever ran against HTML,
+so the data-file line at A2 was outside its reach twice over. Both gaps are now
+closed; see A3.
 
 ### A1. Three First & 10 readings, module subtitle
 
@@ -65,28 +74,41 @@ Each renders, in the visible `.module-subtitle` band at the top of the reading:
 > Read the narrative, answer three questions across three AP skills, then build
 > your Google Form response and your AI Coach prompt.
 
-All three of these readings are generated. **Do not edit the HTML.** The source
-strings are `headerSubtitle` in `scripts/lib/reading-content/unit-5.js` lines 232
-and 1687, and `scripts/lib/reading-content/unit-6.js` line 32. Fix those three,
-then `node scripts/build-unit-readings.js`.
+All three readings are generated, so the HTML was not touched. The source strings
+were `headerSubtitle` in `scripts/lib/reading-content/unit-5.js` lines 232 and
+1687 and `scripts/lib/reading-content/unit-6.js` line 32, followed by
+`node scripts/build-unit-readings.js`.
 
-The other 55 readings already carry the corrected wording, so there is a house
-version to copy rather than a new sentence to invent.
+**The replacement is not a reworded sentence.** The other 55 readings do not carry
+a corrected version of that instruction; they carry something else entirely. Every
+one of them puts `Topic X.Y, Title | course` in the module subtitle, which is what
+the First & 10 standard in `CLAUDE.md` specifies for that slot: "module subtitle
+(topic + course)". These three were the only readings in the course with a
+workflow instruction there at all. So the fix restores the house pattern rather
+than editing the sentence:
 
-**This will fail `scripts/test/readings-golden.js` until the change is declared.**
-That test compares against `scripts/test/fixtures/readings-before.json`, where the
-same string sits at lines 11436, 15021, and 15348 under `subtitle`. Add an entry
-to the `INTENTIONAL` list at the top of the test, in the same shape as the
-`footerNote` entry already there:
+| Reading | New subtitle |
+|---|---|
+| 5.9 | `Topic 5.9, Society and the Industrial Age &nbsp;\|&nbsp; AP World History: Modern` |
+| 5.10 | `Topic 5.10, Continuity and Change in the Industrial Age &nbsp;\|&nbsp; AP World History: Modern` |
+| 6.1 | `Topic 6.1, Rationales for Imperialism &nbsp;\|&nbsp; AP World History: Modern` |
 
-```js
-{ field: 'header.subtitle', after: '<the corrected wording>',
-  why: 'the Google Form was retired 2026-08-07; 5.9, 5.10 and 6.1 still pointed students at it in the module subtitle. This is the wording the other 55 already used.' },
-```
+`scripts/test/readings-golden.js` failed on exactly these three diffs, as
+expected, since `scripts/test/fixtures/readings-before.json` holds the old string
+at lines 11436, 15021, and 15348 under `subtitle`. Three entries were added to the
+test's `INTENTIONAL` list, **one per reading, each pinned to its own exact value**
+rather than one loose `contains` rule, so the list still cannot accept a fourth
+subtitle change it does not describe.
 
-That list already handles `footerNote` and `support[].body` for these same three
+That list already handled `footerNote` and `support[].body` for these same three
 readings, which is the tell: the 2026-08-07 normalization pass caught two of the
 three fields on these files and missed the third.
+
+**Pre-existing inconsistency, left alone:** Topics 5.3 through 5.8 end their
+subtitle with `AP World History` where every other reading in the course, all 52
+of them, says `AP World History: Modern`. The three fixed here use the majority
+form. The six stragglers are unrelated to the form retirement and were not
+touched.
 
 ### A2. Topic 6.1 lesson page, First & 10 module note
 
@@ -97,13 +119,32 @@ note: "Read the First & 10 narrative on the four ideologies of empire, answer th
 ```
 
 `assets/js/behistorical-topic-renderer-v1.js:477` renders `first10.note` inside
-the First & 10 module modal, so this is on screen every time a student opens
-module 02 of Topic 6.1. This one is a hand-authored data file, not generated;
-edit it directly.
+the First & 10 module modal, so this was on screen every time a student opened
+module 02 of Topic 6.1. Hand-authored data file, not generated, so it was edited
+directly: the clause `build your Google Form response and` was dropped, leaving
+`build your AI Coach prompt`, which is the builder the reading actually has.
 
-**After A1 and A2, add `'Google Form'` as a seventh banned token** to the list at
-`scripts/validate.js:531`, so the prose cannot come back the way it just did. The
-banned-token list is the check that would have caught this and did not.
+### A3. The two reasons the checks missed all four
+
+Both are now closed, in `scripts/validate.js` section 8.
+
+**`'Google Form'` is now a seventh banned token.** The first six are code
+identifiers and URLs. A student cannot read an identifier; they can read the
+prose, and then go looking for a builder that is not on the page. Each banned
+entry now also carries its own fix hint, because the sweep script the old message
+recommended only rewrites HTML and is the wrong advice for a data file or a
+generated reading.
+
+**The scan now covers data files, not just HTML.** The `surfaces` list was
+`unitFirst10 + fFirst10 + lessonShells + fHtmlFiles`, all HTML. A2 lived in a
+`.js` data file whose strings are read out and rendered, so it was outside the
+check's reach even for the identifiers. `dataFiles`, `rcFiles`, and the six
+Foundations data files are now included; the validator's file count went from 1182
+to 1330.
+
+Verified fail-closed: reinstating the A2 wording makes `validate.js` fail with
+`assets/data/lesson-6-1-rationales-for-imperialism.js: student-facing prose naming
+the retired form is still here`, and removing it again returns the suite to green.
 
 ---
 
@@ -141,7 +182,7 @@ config," describes an audit that no longer exists.
 **Removal:** delete `loadTopicKeys()`, delete lines 406 and 407, drop the second
 parameter from `checkFirst10` and both call sites, delete the stale comment at
 line 216. No check loses coverage, because no check was using it. `npm test` must
-still report `All checks passed` on 1182 files afterwards.
+still report `All checks passed` on 1330 files afterwards.
 
 ---
 
@@ -150,7 +191,7 @@ still report `All checks passed` on 1182 files afterwards.
 ### C1. `scripts/remove-google-form-capture.js`, 240 lines, currently a no-op
 
 14 references inside the file itself; referenced from `package.json:28` as
-`npm run strip-form`, `scripts/validate.js:547`, `CLAUDE.md:92` and `CLAUDE.md:325`,
+`npm run strip-form`, `scripts/validate.js:533`, `CLAUDE.md:92` and `CLAUDE.md:325`,
 `scripts/lib/first10-capture-wrapper.js:16`, `docs/FORM-CONTRACT.md:139`,
 `.claude/skills/audit-site.md:15`, and `.claude/skills/build-lesson.md:102`.
 
@@ -236,13 +277,13 @@ thing preventing its return.
 
 | File | Lines | What it does |
 |---|---|---|
-| `scripts/validate.js` | 521 to 552 | Section 8, fails the build if any of six banned tokens appears on a student-facing surface. Group A recommends adding a seventh |
+| `scripts/validate.js` | 521 to 570 | Section 8, fails the build if any of seven banned tokens appears on a student-facing surface. The seventh, and the widening of that surface set to include data files, were added by the Group A fix |
 | `.claude/skills/audit-site.md` | 12 to 14 | The same tokens as an audit instruction |
 | `CLAUDE.md` | 179 to 182, 294 | The retirement notice and the First & 10 prohibited-patterns list |
 
-One edit is needed inside this group: the error string at `scripts/validate.js:547`
+One edit is needed inside this group: the `SWEEP` hint at `scripts/validate.js:533`
 and the `CLAUDE.md` pointers name `scripts/remove-google-form-capture.js`, which
-Group C renames.
+Group C renames. The seventh token does not point at the sweep and needs no change.
 
 ---
 
@@ -295,15 +336,18 @@ grep surfaces hits there.
 Each step is independently verifiable with `npm test`. Do not collapse them into
 one commit; the point of the ordering is that a break is attributable.
 
-1. **Group A, the four student-visible lines.** Highest value, because these are
-   the only ones a student can read. Do A1 and A2 together, then add the seventh
-   banned token so the check that missed them stops missing them. Verify:
-   `node scripts/build-unit-readings.js --check` passes, `npm test` passes with the
-   new `INTENTIONAL` entry, and a grep for `Google Form` returns nothing under
-   `unit-*/`, `foundations/`, or `assets/data/`.
+1. ~~**Group A, the four student-visible lines.**~~ **Done 2026-08-10.** Fixed at
+   source in `scripts/lib/reading-content/unit-5.js`, `unit-6.js`, and
+   `assets/data/lesson-6-1-rationales-for-imperialism.js`; readings rebuilt; three
+   pinned `INTENTIONAL` entries added to `scripts/test/readings-golden.js`; the
+   seventh banned token and the widened surface set added to `scripts/validate.js`.
+   `npm test` green on 1330 files. A grep for `Google Form` under `unit-*/`,
+   `foundations/`, and `assets/data/` now returns exactly one hit, the Group F
+   comment at `assets/data/teacher/teacher-1-1-song-china.js:4`, which is a code
+   comment in a teacher file and is the historical record, not student prose.
 2. **Group B, `validate.js` dead code.** Small, zero blast radius, kills the false
-   green tick. Verify: `npm test` still passes on 1182 files and the
-   `Loaded 0 topic keys` line is gone from the output.
+   green tick. Verify: `npm test` still passes and the `Loaded 0 topic keys` line
+   is gone from the output.
 3. **Group D, the documentation.** No code touched and no test can catch any of
    it, so do it while the context is fresh rather than after a code change has
    consumed the attention. `canvas/README.md:99` first: it is the only one of the
@@ -312,7 +356,7 @@ one commit; the point of the ordering is that a break is attributable.
    with real risk, because job 2 is load-bearing for all 77 wrappers. Do it alone.
    Verify: `npm test`, then `npm run test:browser`, then confirm the renamed script
    is idempotent and reports 0 changes on a clean tree.
-5. **Group E, the one string at `validate.js:547` and the `CLAUDE.md` pointers.**
+5. **Group E, the `SWEEP` hint at `validate.js:533` and the `CLAUDE.md` pointers.**
    Follows step 4 mechanically, since it is only the new script name.
 
 Groups F and G are not in the removal order. Nothing in them should change.
@@ -331,10 +375,10 @@ suggest one.
 
 Two adjacent notes for whoever picks this up:
 
-- **The Group A lines are all in Units 5 and 6, not Foundations.** All six
-  Foundations readings and all six lesson shells are clean. The Foundations Canvas
-  build documented in this folder is unaffected, and can ship before this cleanup
-  runs.
+- **The Group A lines were all in Units 5 and 6, never Foundations.** All six
+  Foundations readings and all six lesson shells were clean throughout. The
+  Foundations Canvas build documented in this folder was never affected and can
+  ship ahead of the remaining cleanup.
 - **`canvas/` is a different thing from `docs/canvas/`.** `canvas/` holds the two
   built offline packets for Foundations 0 and 1, for students who cannot reach the
   site; `docs/canvas/` holds the paste-ready Canvas artifacts. `CANVAS-BUILD-GUIDE.md`

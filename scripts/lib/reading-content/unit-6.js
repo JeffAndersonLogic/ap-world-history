@@ -29,7 +29,7 @@ module.exports = {
     },
     "showFooter": true,
     "showFooterNote": true,
-    "headerSubtitle": "Read the narrative, answer three questions across three AP skills, then build your Google Form response and your AI Coach prompt.",
+    "headerSubtitle": "Topic 6.1, Rationales for Imperialism &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "The Language of <em>Conquest</em>",
     "deck": "Imperialism didn't just happen, it was sold. The 19th century gave industrial powers four ideologies that made conquest feel like science, patriotism, duty, and salvation.",
     "skillTags": [

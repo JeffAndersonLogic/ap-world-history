@@ -527,24 +527,43 @@ section('First & 10 storage key, write and read sides agree');
 // take their thinking to be questioned.
 section('Google Form retirement and MagicSchool wiring');
 {
+  // The sweep only rewrites HTML. Prose in a data file has to be edited by hand,
+  // and a generated reading has to be fixed in its content module and rebuilt,
+  // so those two carry their own instructions rather than the sweep's.
+  const SWEEP = 'run scripts/remove-google-form-capture.js';
   const banned = [
-    ['docs.google.com/forms', 'a Google Form URL'],
-    ['behistorical-form-config', 'the retired form config'],
-    ['submitToGoogleForm', 'a form submit handler'],
-    ['buildGooglePrompt', 'the form prompt builder'],
-    ['PREFILLED_FIRST10_FORM', 'a prefilled form URL'],
-    ['BH_FORM', 'the retired BH_FORM global'],
+    ['docs.google.com/forms', 'a Google Form URL', SWEEP],
+    ['behistorical-form-config', 'the retired form config', SWEEP],
+    ['submitToGoogleForm', 'a form submit handler', SWEEP],
+    ['buildGooglePrompt', 'the form prompt builder', SWEEP],
+    ['PREFILLED_FIRST10_FORM', 'a prefilled form URL', SWEEP],
+    ['BH_FORM', 'the retired BH_FORM global', SWEEP],
+    // The prose, not just the code. Every identifier above went on 2026-08-07,
+    // and the words survived anyway: three readings kept telling students to
+    // "build your Google Form response" in the module subtitle, and Topic 6.1's
+    // first10.note said the same inside the module modal, for three days, with
+    // every check above green. A student cannot read an identifier. They can
+    // read this, and then go looking for a builder that is not on the page.
+    ['Google Form', 'student-facing prose naming the retired form',
+      'edit the string where it is authored: a data file directly, a generated reading in scripts/lib/reading-content/ then rebuild'],
   ];
-  const surfaces = [...unitFirst10, ...fFirst10, ...lessonShells, ...fHtmlFiles];
+  // The data and renderer-config files are surfaces too. Their strings are read
+  // out and rendered: Topic 6.1's `first10.note` sat in a data file and was on
+  // screen in the module modal, which is why the HTML-only list above missed it.
+  const foundationsData = glob(foundationsDir, /^foundations-\d.*-data\.js$/);
+  const surfaces = [
+    ...unitFirst10, ...fFirst10, ...lessonShells, ...fHtmlFiles,
+    ...dataFiles, ...rcFiles, ...foundationsData
+  ];
   let offenders = 0;
 
   for (const filePath of surfaces) {
     totalChecks++;
     const src = read(filePath);
     if (!src) continue;
-    for (const [needle, label] of banned) {
+    for (const [needle, label, fix] of banned) {
       if (src.includes(needle)) {
-        err(filePath, `${label} is still wired here, run scripts/remove-google-form-capture.js`);
+        err(filePath, `${label} is still here, ${fix}`);
         offenders++;
       }
     }

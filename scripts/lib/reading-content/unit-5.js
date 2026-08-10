@@ -229,7 +229,7 @@ module.exports = {
     },
     "showFooter": true,
     "showFooterNote": true,
-    "headerSubtitle": "Read the narrative, answer three questions across three AP skills, then build your Google Form response and your AI Coach prompt.",
+    "headerSubtitle": "Topic 5.10, Continuity and Change in the Industrial Age &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "How Much Really <em>Changed</em>? Weighing the Industrial Age",
     "deck": "This is the unit’s capstone. The job isn’t to list what industrialization changed, it’s to argue how MUCH it changed, and to be honest about what stayed the same.",
     "skillTags": [
@@ -1684,7 +1684,7 @@ module.exports = {
     },
     "showFooter": true,
     "showFooterNote": true,
-    "headerSubtitle": "Read the narrative, answer three questions across three AP skills, then build your Google Form response and your AI Coach prompt.",
+    "headerSubtitle": "Topic 5.9, Society and the Industrial Age &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "A New Kind of Society: Class, Home, and the Industrial City",
     "deck": "Industrialization didn’t just change what people made, it remade who they were. New classes, new family roles, and cities that couldn’t keep up.",
     "skillTags": [
