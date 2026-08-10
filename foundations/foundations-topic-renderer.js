@@ -65,8 +65,27 @@ const modules=[
 ];
 byId('module-grid').innerHTML=modules.map(m=>{const a=m.link?`window.open('${m.link}','_blank','noopener')`:m.jump?`jumpToSection('${m.jump}')`:`openModule('${m.id}')`;return `<article class="module-card" tabindex="0" role="button" onclick="${a}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();${a}}" style="--module-img:url('${foundationArtworkPath(m.id)}')"><div class="module-label">${m.label}</div><h3>${m.title}</h3><p>${m.desc}</p></article>`;}).join('');
 const _lectureGrid=byId('main-lecture-grid')||byId('lecture-grid');if(_lectureGrid)_lectureGrid.innerHTML=T.lecture.map((seg,i)=>`<article class="card dark-card lecture-topic-card" tabindex="0" role="button" onclick="openLecture(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLecture(${i})}"><h3>${seg.title}</h3><ul class="lecture-list">${seg.bullets.map(b=>`<li>${md(b)}</li>`).join('')}</ul></article>`).join('');
-const _lectureModal=byId('lecture-modal');if(_lectureModal&&!byId('lecture-prev')){_lectureModal.insertAdjacentHTML('beforeend',`<button class="lecture-arrow lecture-arrow-prev" id="lecture-prev" type="button" aria-label="Previous lecture card" onclick="lectureStep(-1)">&#8249;</button><button class="lecture-arrow lecture-arrow-next" id="lecture-next" type="button" aria-label="Next lecture card" onclick="lectureStep(1)">&#8250;</button><div class="lecture-nav-status" id="lecture-nav-status"></div>`);}
-const _videoGrid=byId('content-video-clips')||byId('video-grid');if(_videoGrid)_videoGrid.innerHTML=`<article class="foundation-card" style="grid-column:1/-1"><h3>Video Clips</h3><p>Use these clips as quick reinforcement for this Foundations topic. Students should watch for the guiding prompt, not simply take random notes.</p></article>`+T.videos.map(v=>`<article class="video-card"><div class="video-thumb" ${v.youtubeId?`style="background-image:linear-gradient(rgba(26,28,29,.25),rgba(26,28,29,.55)),url('https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg');background-size:cover;background-position:center"`:''}><span>Video Clip</span></div><h3>${v.title}</h3><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></article>`).join('');
+const _lectureModal=byId('lecture-modal');
+if(_lectureModal&&!byId('lecture-prev')){_lectureModal.insertAdjacentHTML('beforeend',`<button class="lecture-arrow lecture-arrow-prev" id="lecture-prev" type="button" aria-label="Previous lecture card" onclick="lectureStep(-1)">&#8249;</button><button class="lecture-arrow lecture-arrow-next" id="lecture-next" type="button" aria-label="Next lecture card" onclick="lectureStep(1)">&#8250;</button><div class="lecture-nav-status" id="lecture-nav-status" aria-live="polite"></div>`);}
+// Close stays put, returning the student to the card they opened. Back to
+// Modules is the explicit way out of the deck, because "I am done lecturing" and
+// "show me the next card" are different intentions. Injected rather than added to
+// the six shells, so this renderer stays the only place that knows the shape.
+const _lectureClose=_lectureModal&&_lectureModal.querySelector('.lecture-close');
+if(_lectureClose&&!byId('lecture-to-modules')){
+  const _row=document.createElement('div');
+  _row.className='lecture-modal-actions';
+  _lectureClose.parentNode.insertBefore(_row,_lectureClose);
+  _row.insertAdjacentHTML('afterbegin',`<button class="btn secondary lecture-to-modules" id="lecture-to-modules" type="button" onclick="closeLectureToModules()">&#8593; Back to Modules</button>`);
+  _row.appendChild(_lectureClose);
+}
+// Video clips are an optional resource, not part of the ten-module path and not
+// part of the lecture deck. The block introduces itself when clips exist and
+// disappears entirely when they do not, so a topic with none shows no gap.
+const _videoGrid=byId('content-video-clips')||byId('video-grid');
+const _videos=T.videos||[];
+if(_videoGrid&&!_videos.length){_videoGrid.innerHTML='';_videoGrid.hidden=true;}
+else if(_videoGrid){_videoGrid.hidden=false;_videoGrid.innerHTML=`<article class="foundation-card video-intro" style="grid-column:1/-1"><h3>Video Clips</h3><p>Optional reinforcement for this topic. Your teacher may play one of these in class, and you can watch them on your own any time you want another pass at the material. Watch for the guiding question under each clip rather than taking down everything.</p></article>`+_videos.map(v=>`<article class="video-card"><div class="video-thumb" ${v.youtubeId?`style="background-image:linear-gradient(rgba(26,28,29,.25),rgba(26,28,29,.55)),url('https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg');background-size:cover;background-position:center"`:''}><span>Video Clip</span></div><h3>${v.title}</h3><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></article>`).join('');}
 function jumpToSection(selector){const el=document.querySelector(selector);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
 // ── Modal focus management ────────────────────────────────────────────────────
 //
@@ -92,7 +111,13 @@ function bhTrapTab(event){
 function bhOpenModal(modalId,labelId){
   const el=byId(modalId);
   if(!el)return;
-  BHModalStack.push({el:el,launcher:document.activeElement});
+  // Re-opening a dialog that is already open must not push a second entry, and
+  // must keep the original launcher. The lecture modal does exactly this: the
+  // prev/next arrows swap the card in place by calling openLecture again. A
+  // five-card deck used to push five entries, one Close popped one, and the
+  // stack stayed non-empty, so the scroll lock never lifted and the student was
+  // stranded on the lecture section until they reloaded the page.
+  if(!BHModalStack.some(item=>item.el===el))BHModalStack.push({el:el,launcher:document.activeElement});
   el.setAttribute('aria-modal','true');
   if(labelId&&byId(labelId))el.setAttribute('aria-labelledby',labelId);
   if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','-1');
@@ -112,7 +137,12 @@ function bhCloseModal(modalId){
     item.el.removeAttribute('aria-modal');
     if(item.el===el){entry=item;break;}
   }
-  if(!BHModalStack.length){document.removeEventListener('keydown',bhTrapTab,true);document.body.style.overflow='';}
+  // Purge any duplicate entry for this element, then release the lock whenever
+  // nothing on the stack is actually visible. Keying the release off "no visible
+  // dialog" rather than "empty stack" is what makes a stranded student
+  // impossible: a stale entry can no longer hold the page hostage.
+  for(let i=BHModalStack.length-1;i>=0;i--){if(BHModalStack[i].el===el)BHModalStack.splice(i,1);}
+  if(!BHModalStack.some(item=>item.el.classList.contains('show'))){BHModalStack.length=0;document.removeEventListener('keydown',bhTrapTab,true);document.body.style.overflow='';}
   // Back to the card that opened it, not the top of the document.
   const launcher=entry&&entry.launcher;
   if(launcher&&launcher.focus&&launcher.getClientRects().length)launcher.focus();
@@ -124,6 +154,10 @@ function openLecture(i){currentLectureIndex=i;const seg=T.lecture[i],image=byId(
 function updateLectureNav(){const total=T.lecture.length,prev=byId('lecture-prev'),next=byId('lecture-next'),status=byId('lecture-nav-status');if(prev)prev.disabled=currentLectureIndex<=0;if(next)next.disabled=currentLectureIndex>=total-1;if(status)status.textContent=`Card ${currentLectureIndex+1} of ${total}`;}
 function lectureStep(delta){const n=currentLectureIndex+delta;if(n>=0&&n<T.lecture.length)openLecture(n);}
 function closeLectureModal(){bhCloseModal('lecture-modal');}
+// Back to the module grid, with focus on the first card so a keyboard user lands
+// where the page just scrolled. preventScroll because the smooth scroll to the
+// section heading below is the one that should be visible.
+function closeLectureToModules(){closeLectureModal();const first=document.querySelector('#module-grid .module-card');if(first)first.focus({preventScroll:true});jumpToSection('#modules');}
 // ── Lightbox ──────────────────────────────────────────────────────────────────
 //
 // Every Foundations shell already carried the #lightbox markup, including a

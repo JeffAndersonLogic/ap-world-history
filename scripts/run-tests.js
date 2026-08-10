@@ -45,6 +45,7 @@ const SUITES = {
   browser: [
     ['scripts/test/modal-focus.unit.js', 'unit lesson modal focus contract'],
     ['scripts/test/modal-focus.foundations.js', 'foundations modal focus contract'],
+    ['scripts/test/lecture-deck.test.js', 'lecture deck flow, scroll lock, video block'],
     ['scripts/test/lightbox-sweep.js', 'enlargeable images operable on all 77'],
     ['scripts/test/confidence.test.js', 'confidence scale'],
     ['scripts/test/skills-lens.test.js', 'Skills Lens panels'],

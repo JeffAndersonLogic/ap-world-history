@@ -91,6 +91,7 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
 - `node scripts/remove-google-form-capture.js`, idempotently strip any Google Form capture that reappears in a reading, wrapper, or lesson shell, and normalize all 77 capture wrappers to the MagicSchool-only shape.
 - `node scripts/test/modal-focus.unit.js` and `node scripts/test/modal-focus.foundations.js`, drive a real lesson page in Chromium and assert the modal focus contract. Needs `npm i playwright-core`; `validate.js` stays offline and dependency-free, so these are separate. Run them when touching any modal open/close path.
+- `node scripts/test/lecture-deck.test.js`, walk the whole lecture deck on both renderers and assert the student can still scroll afterwards. This is the regression gate for the stranded-student bug described under "The Lecture Deck" below, and it also covers Back to Modules and the video block. In the browser suite.
 - `node scripts/build-skills-map.js`, regenerate `assets/data/skills-map.js`, the AP skill and evidence-term lookup the Skills Lens inlines. Run it after editing a checkpoint's `terms`, a `skillBuilder.label`, or a reading's `q-skill` badges.
 - `node scripts/sync-first10-capture.js`, install the canonical First & 10 answer-capture block from `scripts/lib/first10-capture-block.js` into all 77 readings. That block is the only path by which the three reading answers and their confidence ratings reach Canvas, and it has gone missing silently twice. `validate.js` now fails if the block is absent **or** if any of the four files that must agree on the `behistorical-first10-<TOPIC_KEY>` storage key stops using it, which is the version of this failure that leaves every structural check green.
 - `node scripts/test/skills-lens.test.js` and `node scripts/test/confidence.test.js`, browser tests for the Skills Lens panels and the confidence scale.
@@ -193,6 +194,55 @@ Every picture a student can see must be on-topic and must be impossible to break
 > `role="button" tabindex="0"`, an `aria-label` naming the picture, and an
 > Enter/Space handler. An `onclick` on its own is mouse-only, which is how the
 > lightbox stayed unreachable by keyboard on every topic.
+>
+> **`bhOpenModal` is idempotent per element, and the scroll lock lifts on "no
+> visible dialog", not "empty stack".** Both matter. The lecture arrows swap the
+> card inside the open dialog by calling the open function again, so a renderer
+> that pushed an entry per call left a five-card deck with five entries; one Close
+> popped one, the stack stayed non-empty, and `document.body.style.overflow` was
+> never restored. The dialog was gone, the page looked normal, and the student
+> could not scroll the lesson until they reloaded. **Every structural check stayed
+> green through all of it**, because nothing offline can see a scroll lock. Do not
+> reintroduce an unconditional `BHModalStack.push`.
+
+## The Lecture Deck
+
+The deck is a sequence and carries sequence controls in **both** renderers:
+prev/next arrows, a `Card 3 of 8` counter, and the left/right arrow keys. The
+controls and the Back to Modules button are **injected by the renderer**, not
+added to the 77 lesson shells, so the shared renderer stays the only place that
+knows the lecture modal's shape. Guard the injection on its own id, the way
+`wireLectureControls()` does, or a re-render doubles the buttons.
+
+Two exits, and they are not the same intention:
+
+- **Close** returns the student to the card they opened, focus and all. A teacher
+  stepping through a deck must not be yanked away from it.
+- **Back to Modules** closes the card, scrolls to `#modules`, and puts focus on
+  the first module card with `preventScroll: true` so the smooth scroll is the
+  only movement the student sees.
+
+`scripts/test/lecture-deck.test.js` is the gate on all of it. It asserts the page
+really scrolls after Close rather than only that the lock was cleared, so a future
+lock by some other mechanism fails there too.
+
+## Video Clips
+
+Videos are an **optional resource**, not part of the ten-module path and not part
+of the lecture deck. Only 27 of the 71 unit topics have a clip at all (units 1, 2,
+8 and 9, plus 3.1 and 3.4); Foundations has two per topic. That coverage is why
+they are not folded into the lecture cards: it would leave 44 topics' cards with
+an empty slot, and nothing in the data maps a clip to a particular card.
+
+- The block **introduces itself** when clips exist and **hides entirely** when
+  they do not. An empty `#content-video-clips` used to leave a gap under the
+  lecture cards on 44 topics, which reads as something failing to load.
+- Keep the container in the shell either way. `validate.js` requires the
+  `content-video-clips` id; the renderer sets `hidden` on it.
+- A clip card is headed by **its title**. It used to be headed "Video Clip" with
+  the real title demoted to a paragraph.
+- Each clip's `prompt` is the guiding question. It is what makes a clip usable as
+  homework rather than filler, so never add a clip without one.
 
 > **`teacher/skills-lens.html` is the analysis surface**, and it is a teacher
 > tool: never link it from a lesson page. It reads the Canvas `submissions.zip`

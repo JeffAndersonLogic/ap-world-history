@@ -472,6 +472,109 @@ blockquote{margin:0; padding:20px; background:#f6efe3; border-left:6px solid var
   box-shadow:0 10px 30px rgba(0,0,0,.28);
 }
 .video-card .media-card p{color:var(--ink)}
+/* One clip fills the row, two sit side by side. The intro card always spans, so
+   the block says what it is before the first thumbnail. */
+.content-videos{
+  display:grid !important;
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)) !important;
+  gap:18px !important;
+}
+.content-videos[hidden]{display:none !important;}
+.content-videos .video-intro{
+  grid-column:1 / -1;
+  background:var(--clean-paper);
+  color:var(--ink);
+}
+.content-videos .video-intro h3{color:var(--blackened-steel)}
+.content-videos .video-card h3{color:var(--blackened-steel)}
+
+/* Lecture deck controls
+   ---------------------
+   The deck is a sequence, so it carries sequence controls: arrows either side of
+   the panel, a card counter, and Back to Modules beside Close. Close returns the
+   student to the card they opened; Back to Modules is the way out of the deck. */
+.lecture-modal-actions{
+  position:absolute !important;
+  top:18px !important;
+  right:18px !important;
+  z-index:3 !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:10px !important;
+}
+.lecture-modal-actions .lecture-close{
+  position:static !important;
+  top:auto !important;
+  right:auto !important;
+  margin:0 !important;
+}
+/* `.btn.secondary` is a white pill, which on a dark projected panel is the
+   loudest thing on screen. Gold on dark keeps it clearly the other button of the
+   pair without competing with the lecture content behind it. */
+.lecture-to-modules.secondary{
+  background:linear-gradient(180deg,#14191b,#2b2f31) !important;
+  color:var(--antique-gold) !important;
+  border-color:rgba(201,164,106,.55) !important;
+}
+.lecture-to-modules.secondary:hover,
+.lecture-to-modules.secondary:focus{
+  border-color:var(--antique-gold) !important;
+  outline:none;
+}
+.lecture-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:200;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  border:1px solid rgba(201,164,106,.55);
+  background:linear-gradient(180deg,#14191b,#2b2f31);
+  color:var(--antique-gold);
+  font-family:"Montserrat", Inter, Arial, sans-serif;
+  font-size:2.2rem;
+  line-height:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  box-shadow:0 10px 28px rgba(0,0,0,.45);
+  transition:transform .16s ease, border-color .16s ease, opacity .16s ease;
+}
+.lecture-arrow:hover:not(:disabled),
+.lecture-arrow:focus:not(:disabled){
+  border-color:var(--antique-gold);
+  transform:translateY(-50%) scale(1.08);
+  outline:none;
+}
+.lecture-arrow:disabled{opacity:.28; cursor:default}
+.lecture-arrow-prev{left:20px}
+.lecture-arrow-next{right:20px}
+.lecture-nav-status{
+  position:absolute;
+  bottom:22px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:200;
+  font-family:"Montserrat", Inter, Arial, sans-serif;
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--muted-sandstone);
+  background:rgba(20,25,27,.85);
+  padding:7px 16px;
+  border-radius:999px;
+  border:1px solid rgba(201,164,106,.32);
+}
+@media (max-width:920px){
+  .lecture-arrow{width:46px; height:46px; font-size:1.7rem}
+  .lecture-arrow-prev{left:8px}
+  .lecture-arrow-next{right:8px}
+  .lecture-nav-status{bottom:12px}
+  .lecture-modal-actions{flex-wrap:wrap; justify-content:flex-end}
+}
 
 /* =========================================================
    OFFICIAL BEHISTORICAL LEARNING TARGETS + SUCCESS CRITERIA

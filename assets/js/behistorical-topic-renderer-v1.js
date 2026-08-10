@@ -152,6 +152,7 @@ if (L) {
 
   renderCollegeBoardFramework();
   renderLectureCards();
+  wireLectureControls();
   renderVideoClips();
   renderModuleGrid();
   loadAllDrafts();
@@ -215,17 +216,31 @@ function renderLectureCards() {
 
 // ── Video clips ───────────────────────────────────────────────────────────────
 
+// Video clips are an optional resource, not part of the ten-module path and not
+// part of the lecture deck. Only some topics have one, so the block introduces
+// itself when it is there and disappears entirely when it is not: an empty
+// container used to leave a gap under the lecture cards on every topic without a
+// clip, which reads as something failing to load.
 function renderVideoClips() {
-  byId('content-video-clips').innerHTML = (L.lecture.videos || []).map(v => {
+  const host = byId('content-video-clips');
+  if (!host) return;
+  const videos = L.lecture.videos || [];
+  if (!videos.length) { host.innerHTML = ''; host.hidden = true; return; }
+  host.hidden = false;
+
+  host.innerHTML = `
+    <article class="card video-intro">
+      <h3>Video Clips</h3>
+      <p>Optional reinforcement for this topic. Your teacher may play one of these in class, and you can watch them on your own any time you want another pass at the material. Watch for the guiding question under each clip rather than taking down everything.</p>
+    </article>` + videos.map(v => {
     const preview = videoPreviewImg(v);
     return `
       <article class="card video-card">
-        <h3>Video Clip</h3>
+        <h3>${v.title}</h3>
         <div class="media-card">
           <div class="thumb video-thumb" style="${preview ? `background-image:linear-gradient(rgba(26,28,29,.25),rgba(26,28,29,.55)),url('${preview}')` : ''}">
             <span>Video Clip</span>
           </div>
-          <p><strong>${v.title}</strong></p>
           <p>${v.prompt}</p>
           <a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a>
         </div>
@@ -313,7 +328,15 @@ function bhOpenModal(modalId, labelId) {
   const el = byId(modalId);
   if (!el) return;
 
-  BHModalStack.push({ el: el, launcher: document.activeElement });
+  // Re-opening a dialog that is already open must not push a second entry, and
+  // must keep the original launcher. The lecture modal does exactly this: the
+  // prev/next arrows swap the card in place by calling openLectureModal again.
+  // A five-card deck used to push five entries, one Close popped one, and the
+  // stack stayed non-empty, so the scroll lock never lifted and the student was
+  // stranded on the lecture section until they reloaded the page.
+  if (!BHModalStack.some(item => item.el === el)) {
+    BHModalStack.push({ el: el, launcher: document.activeElement });
+  }
   el.setAttribute('aria-modal', 'true');
   if (labelId && byId(labelId)) el.setAttribute('aria-labelledby', labelId);
   if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '-1');
@@ -344,7 +367,15 @@ function bhCloseModal(modalId) {
     if (item.el === el) { entry = item; break; }
   }
 
-  if (!BHModalStack.length) {
+  // Purge any duplicate entry for this element, then release the lock whenever
+  // nothing on the stack is actually visible. Keying the release off "no visible
+  // dialog" rather than "empty stack" is what makes a stranded student
+  // impossible: a stale entry can no longer hold the page hostage.
+  for (let i = BHModalStack.length - 1; i >= 0; i--) {
+    if (BHModalStack[i].el === el) BHModalStack.splice(i, 1);
+  }
+  if (!BHModalStack.some(item => item.el.classList.contains('show'))) {
+    BHModalStack.length = 0;
     document.removeEventListener('keydown', bhTrapTab, true);
     document.body.style.overflow = '';
   }
@@ -373,8 +404,71 @@ function openModule(id) {
 
 function closeModule() { bhCloseModal('pop-modal'); }
 
+// ── Lecture deck navigation ───────────────────────────────────────────────────
+//
+// The deck is a sequence, so it gets sequence controls: prev/next arrows, a
+// "Card 3 of 8" counter, and the left/right arrow keys. Without them a teacher
+// projecting an eight-card deck had to close the dialog and hunt for the next
+// card in the grid eight times.
+//
+// The controls and the Back to Modules button are injected rather than added to
+// the 71 lesson shells, so the shared renderer stays the only place that knows
+// the lecture modal's shape.
+let currentLectureIndex = 0;
+
+function wireLectureControls() {
+  const modal = byId('lecture-modal');
+  if (!modal) return;
+
+  if (!byId('lecture-prev')) {
+    modal.insertAdjacentHTML('beforeend',
+      `<button class="lecture-arrow lecture-arrow-prev" id="lecture-prev" type="button" aria-label="Previous lecture card" onclick="lectureStep(-1)">&#8249;</button>` +
+      `<button class="lecture-arrow lecture-arrow-next" id="lecture-next" type="button" aria-label="Next lecture card" onclick="lectureStep(1)">&#8250;</button>` +
+      `<div class="lecture-nav-status" id="lecture-nav-status" aria-live="polite"></div>`);
+  }
+
+  // Close stays put, returning the student to the card they opened. Back to
+  // Modules is the explicit way out of the deck, because "I am done lecturing"
+  // and "show me the next card" are different intentions.
+  const closeBtn = modal.querySelector('.lecture-close');
+  if (closeBtn && !byId('lecture-to-modules')) {
+    const row = document.createElement('div');
+    row.className = 'lecture-modal-actions';
+    closeBtn.parentNode.insertBefore(row, closeBtn);
+    row.insertAdjacentHTML('afterbegin',
+      `<button class="btn secondary lecture-to-modules" id="lecture-to-modules" type="button" onclick="closeLectureToModules()">&#8593; Back to Modules</button>`);
+    row.appendChild(closeBtn);
+  }
+}
+
+function updateLectureNav() {
+  const total = (L.lecture.segments || []).length;
+  const prev = byId('lecture-prev');
+  const next = byId('lecture-next');
+  const status = byId('lecture-nav-status');
+  if (prev) prev.disabled = currentLectureIndex <= 0;
+  if (next) next.disabled = currentLectureIndex >= total - 1;
+  if (status) status.textContent = `Card ${currentLectureIndex + 1} of ${total}`;
+}
+
+function lectureStep(delta) {
+  const n = currentLectureIndex + delta;
+  if (n >= 0 && n < (L.lecture.segments || []).length) openLectureModal(n);
+}
+
+// Back to the module grid, with focus on the first card so a keyboard user lands
+// where the page just scrolled. preventScroll because the smooth scroll to the
+// section heading below is the one that should be visible.
+function closeLectureToModules() {
+  closeLectureModal();
+  const first = document.querySelector('#module-grid .module-card');
+  if (first) first.focus({ preventScroll: true });
+  jumpToSection('#modules');
+}
+
 function openLectureModal(i) {
   const seg = L.lecture.segments[i];
+  currentLectureIndex = i;
   byId('lecture-modal-title').textContent = seg.title;
   byId('lecture-modal-bullets').innerHTML = seg.bullets.map(b => `<li>${md(b)}</li>`).join('');
   const image = byId('lecture-modal-img');
@@ -386,6 +480,7 @@ function openLectureModal(i) {
   image.alt = (seg.image && seg.image.title) || `${seg.title} visual`;
   const sourceLink = seg.image && (seg.image.sourceUrl || seg.image.url);
   byId('lecture-modal-caption').innerHTML = `<strong>${(seg.image && seg.image.title) || seg.title}</strong><br>${(seg.image && seg.image.caption) || 'Topic-specific instructional artwork.'}${sourceLink ? `<br><a href="${sourceLink}" target="_blank" rel="noopener">Open image source</a>` : ''}`;
+  updateLectureNav();
   byId('lecture-modal').classList.add('show');
   bhOpenModal('lecture-modal', 'lecture-modal-title');
 }
@@ -1397,11 +1492,19 @@ function openImageUrl(url, caption, fallbackId) {
 }
 function closeLightbox() { bhCloseModal('lightbox'); }
 
-// ── Keyboard escape ───────────────────────────────────────────────────────────
+// ── Keyboard escape and lecture deck keys ─────────────────────────────────────
 
 document.addEventListener('keydown', e => {
-  if (e.key !== 'Escape' || !BHModalStack.length) return;
-  bhCloseModal(BHModalStack[BHModalStack.length - 1].el.id);
+  if (e.key === 'Escape' && BHModalStack.length) {
+    bhCloseModal(BHModalStack[BHModalStack.length - 1].el.id);
+    return;
+  }
+  // Left/right walk the deck, but only while the lecture modal is the visible
+  // dialog: inside the module modal those keys belong to the textareas.
+  const lecture = byId('lecture-modal');
+  if (!lecture || !lecture.classList.contains('show')) return;
+  if (e.key === 'ArrowRight') { e.preventDefault(); lectureStep(1); }
+  else if (e.key === 'ArrowLeft') { e.preventDefault(); lectureStep(-1); }
 });
 
 // ── Save Your Work panel ──────────────────────────────────────────────────────
