@@ -85,8 +85,22 @@ window.BEHISTORICAL_SCHEDULE = {
     },
 
     // Foundations 1, Monday and Tuesday
-    { date: '2026-08-10', topic: 'F1', homework: '' },
-    { date: '2026-08-11', topic: 'F1', homework: '' },
+    {
+      date: '2026-08-10',
+      topic: 'F1',
+      homework: [
+        'Finish the Foundations 1 modules for Geography Shapes Civilization.',
+        'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.'
+      ]
+    },
+    {
+      date: '2026-08-11',
+      topic: 'F1',
+      homework: [
+        'Finish the Foundations 1 modules for Geography Shapes Civilization.',
+        'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.'
+      ]
+    },
 
     // Foundations 2, Wednesday and Thursday
     { date: '2026-08-12', topic: 'F2', homework: '' },
@@ -94,7 +108,29 @@ window.BEHISTORICAL_SCHEDULE = {
 
     // Foundations 3, Friday and the following Monday
     { date: '2026-08-14', topic: 'F3', homework: '' },
-    { date: '2026-08-17', topic: 'F3', homework: '' }
+    { date: '2026-08-17', topic: 'F3', homework: '' },
+
+    // Foundations 4, Tuesday and Wednesday
+    { date: '2026-08-18', topic: 'F4', homework: '' },
+    { date: '2026-08-19', topic: 'F4', homework: '' },
+
+    // Foundations 5, Thursday and Friday
+    { date: '2026-08-20', topic: 'F5', homework: '' },
+    { date: '2026-08-21', topic: 'F5', homework: '' },
+
+    // Foundations Assessment, Monday and Tuesday
+    {
+      date: '2026-08-24',
+      topicTitle: 'Foundations Assessment',
+      unit: 'Foundations',
+      homework: ''
+    },
+    {
+      date: '2026-08-25',
+      topicTitle: 'Foundations Assessment',
+      unit: 'Foundations',
+      homework: ''
+    }
   ],
 
   /* ---------------------------------------------------------
@@ -106,10 +142,11 @@ window.BEHISTORICAL_SCHEDULE = {
      --------------------------------------------------------- */
   assessments: [
     {
-      // Leave the date empty until it is set and the board prints Date TBD.
-      date: '',
+      // Dated on the second block day so the reminder stays on the board
+      // through both class days.
+      date: '2026-08-25',
       title: 'Foundations Assessment',
-      detail: 'Covers the Foundations meetings, date to be announced',
+      detail: 'Covers Foundations 0 to 5, in class Monday, August 24 and Tuesday, August 25',
       type: 'Test'
     }
   ],

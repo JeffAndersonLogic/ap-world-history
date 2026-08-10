@@ -76,7 +76,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can trace the causal chain from agricultural surplus to at least three characteristics of civilization.' },
         { text: 'I can write a contextualization sentence that identifies a geographic condition and explains how it shaped the shift to farming or the rise of a civilization.' }
       ],
-      homework: ''
+      homework: [
+        'Finish the Foundations 1 modules for Geography Shapes Civilization.',
+        'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.'
+      ]
     },
     /* 2026-08-11  <-  foundations-1-geography-data.js */
     {
@@ -93,7 +96,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can trace the causal chain from agricultural surplus to at least three characteristics of civilization.' },
         { text: 'I can write a contextualization sentence that identifies a geographic condition and explains how it shaped the shift to farming or the rise of a civilization.' }
       ],
-      homework: ''
+      homework: [
+        'Finish the Foundations 1 modules for Geography Shapes Civilization.',
+        'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.'
+      ]
     },
     /* 2026-08-12  <-  foundations-2-belief-systems-data.js */
     {
@@ -162,11 +168,93 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can compare two of the four states by explaining how each answered the same problem differently, using a specific mechanism, not just "it helped the ruler" but how and why.' }
       ],
       homework: ''
+    },
+    /* 2026-08-18  <-  foundations-4-trade-networks-data.js */
+    {
+      date: '2026-08-18',
+      unit: 'Foundations',
+      topic: 'Trade Networks & Innovation',
+      learningTargets: [
+        { text: 'I can explain how the Silk Roads, Indian Ocean trade system, and Trans-Saharan network each operated, their geographic basis, merchant communities, and key goods.' },
+        { text: 'I can identify specific non-goods that traveled through trade networks, disease, technology, crops, religious practices, and people, including the Battle of Talas (751 CE) as an example of technology transfer through conflict.' },
+        { text: 'I can write a complexity argument explaining how trade networks caused multiple simultaneous changes across different regions.' }
+      ],
+      successCriteria: [
+        { text: 'I can name at least three specific port cities or oasis towns on Afro-Eurasian trade routes, explain their geographic function, and describe how the Indian Ocean monsoon system worked, which months, which directions, which sailing routes.' },
+        { text: 'I can give at least two specific examples of non-goods traveling through trade networks, with dates and locations.' },
+        { text: 'I can write a complexity paragraph that identifies multiple effects of a single trade network and explains how they connected across regions.' }
+      ],
+      homework: ''
+    },
+    /* 2026-08-19  <-  foundations-4-trade-networks-data.js */
+    {
+      date: '2026-08-19',
+      unit: 'Foundations',
+      topic: 'Trade Networks & Innovation',
+      learningTargets: [
+        { text: 'I can explain how the Silk Roads, Indian Ocean trade system, and Trans-Saharan network each operated, their geographic basis, merchant communities, and key goods.' },
+        { text: 'I can identify specific non-goods that traveled through trade networks, disease, technology, crops, religious practices, and people, including the Battle of Talas (751 CE) as an example of technology transfer through conflict.' },
+        { text: 'I can write a complexity argument explaining how trade networks caused multiple simultaneous changes across different regions.' }
+      ],
+      successCriteria: [
+        { text: 'I can name at least three specific port cities or oasis towns on Afro-Eurasian trade routes, explain their geographic function, and describe how the Indian Ocean monsoon system worked, which months, which directions, which sailing routes.' },
+        { text: 'I can give at least two specific examples of non-goods traveling through trade networks, with dates and locations.' },
+        { text: 'I can write a complexity paragraph that identifies multiple effects of a single trade network and explains how they connected across regions.' }
+      ],
+      homework: ''
+    },
+    /* 2026-08-20  <-  foundations-5-world-at-1200-data.js */
+    {
+      date: '2026-08-20',
+      unit: 'Foundations',
+      topic: 'The World at c.1200 / Thinking Like a Historian',
+      learningTargets: [
+        { text: 'I can describe the world at c.1200 CE across six AP World regions and explain how the Foundations themes, geography, belief systems, states and power, trade networks, built the world we study beginning at c.1200.' },
+        { text: 'I can name and explain the five AP historical thinking skills: contextualization, causation, continuity and change over time (CCOT), comparison, and argumentation.' },
+        { text: 'I can write a complete AP-style SAQ paragraph using a claim, specific evidence, and explicit reasoning.' }
+      ],
+      successCriteria: [
+        { text: 'I can write one specific sentence about each of the six AP World regions at c.1200 that names a specific feature, institution, trade connection, or belief system, and explain which Foundations theme mattered most, using evidence from at least two days.' },
+        { text: 'I can explain each AP historical thinking skill in my own words and identify where it appeared in Foundations Days 1–4.' },
+        { text: 'I can write an SAQ paragraph with a defensible claim in the first sentence, at least two specific pieces of historical evidence, and a reasoning sentence that explains the connection.' }
+      ],
+      homework: ''
+    },
+    /* 2026-08-21  <-  foundations-5-world-at-1200-data.js */
+    {
+      date: '2026-08-21',
+      unit: 'Foundations',
+      topic: 'The World at c.1200 / Thinking Like a Historian',
+      learningTargets: [
+        { text: 'I can describe the world at c.1200 CE across six AP World regions and explain how the Foundations themes, geography, belief systems, states and power, trade networks, built the world we study beginning at c.1200.' },
+        { text: 'I can name and explain the five AP historical thinking skills: contextualization, causation, continuity and change over time (CCOT), comparison, and argumentation.' },
+        { text: 'I can write a complete AP-style SAQ paragraph using a claim, specific evidence, and explicit reasoning.' }
+      ],
+      successCriteria: [
+        { text: 'I can write one specific sentence about each of the six AP World regions at c.1200 that names a specific feature, institution, trade connection, or belief system, and explain which Foundations theme mattered most, using evidence from at least two days.' },
+        { text: 'I can explain each AP historical thinking skill in my own words and identify where it appeared in Foundations Days 1–4.' },
+        { text: 'I can write an SAQ paragraph with a defensible claim in the first sentence, at least two specific pieces of historical evidence, and a reasoning sentence that explains the connection.' }
+      ],
+      homework: ''
+    },
+    /* 2026-08-24  <-  written by hand in the schedule */
+    {
+      date: '2026-08-24',
+      unit: 'Foundations',
+      topic: 'Foundations Assessment',
+      homework: ''
+    },
+    /* 2026-08-25  <-  written by hand in the schedule */
+    {
+      date: '2026-08-25',
+      unit: 'Foundations',
+      topic: 'Foundations Assessment',
+      homework: ''
     }
   ],
 
   assessments: [
-    { date: '', title: 'Foundations Assessment', detail: 'Covers the Foundations meetings, date to be announced', type: 'Test' }
+    { date: '2026-08-25', title: 'Foundations Assessment', detail: 'Covers Foundations 0 to 5, in class Monday, August 24 and Tuesday, August 25', type: 'Test' }
   ],
 
   reminders: [
