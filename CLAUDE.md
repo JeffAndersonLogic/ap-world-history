@@ -226,6 +226,35 @@ Two exits, and they are not the same intention:
 really scrolls after Close rather than only that the lock was cleared, so a future
 lock by some other mechanism fails there too.
 
+### The card is paper, the picture is not
+
+The lecture panel is `--warm-paper` under `--ink`, with a `--blackened-steel`
+heading over a bronze rule and bold terms styled like a reading's `.kt`. The
+figure keeps its near-black mount. Three reasons, in order of how much they
+matter in a classroom:
+
+1. A lamp projector can only add light. In a lit room a dark background degrades
+   to washed-out grey, while a light one puts the lumens to work. Reverse this if
+   the room is dark or the display is a flat panel.
+2. Light-on-dark causes halation for the roughly one in three people with some
+   astigmatism.
+3. The positive polarity advantage: dark text on light is read measurably faster
+   and more accurately, and the advantage grows as characters get smaller. The
+   effect is small, and note that subjects in those studies performed better on
+   light while reporting no preference, so asking students will not settle it.
+
+It also ended an inconsistency. The readings and the module pop-outs were already
+paper; this was the last dark reading surface in the system. `foundations-topic.css`
+had been asking for a light panel all along and being overridden.
+
+**The lecture card grid on the page stays dark.** Those are scanned at a glance,
+not read at length, and it is the section's signature look.
+
+The test is **polarity-agnostic**: it asserts contrast, not lightness, so flipping
+back to dark stays a design call. What it will not allow is a half-done flip. Gold
+headings on paper are 2.1:1, so changing the panel without the headings leaves the
+title unreadable with every structural check still green.
+
 ## Video Clips
 
 Videos are an **optional resource**, not part of the ten-module path and not part

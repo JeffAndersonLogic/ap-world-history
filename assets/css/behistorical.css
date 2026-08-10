@@ -294,15 +294,30 @@ blockquote{margin:0; padding:20px; background:#f6efe3; border-left:6px solid var
   backdrop-filter:blur(10px) !important;
 }
 .lecture-modal.show{display:flex !important;}
+/* The panel is paper, the picture keeps its dark mount.
+   ------------------------------------------------------
+   This used to be a dark panel with light text. Three reasons it is paper now:
+   the positive polarity advantage (dark text on light reads measurably faster and
+   more accurately, and the advantage grows as characters get smaller); a lamp
+   projector can only add light, so in a lit classroom a dark background degrades
+   to washed-out grey while a light one puts the lumens to work; and light-on-dark
+   causes halation for the roughly one in three people with some astigmatism.
+   It also settles an inconsistency. Every other surface a student reads or types
+   on, the readings and the module pop-outs, was already paper. This card was the
+   last dark reading surface in the system.
+   The colours are the reading pages' own conventions, not new ones: warm paper
+   under ink, a burnished-bronze eyebrow, a blackened-steel heading over a bronze
+   rule, and bold terms styled like `.kt`. The lecture card grid on the page stays
+   dark on purpose: those are scanned at a glance, not read at length. */
 .lecture-modal-panel{
   width:min(1180px,96vw) !important;
   max-height:92vh !important;
   overflow:auto !important;
   border-radius:24px !important;
-  background:linear-gradient(135deg, var(--blackened-steel), var(--charcoal-steel)) !important;
-  border:1px solid rgba(201,164,106,.35) !important;
+  background:var(--warm-paper) !important;
+  border:1px solid rgba(140,90,43,.28) !important;
   box-shadow:0 30px 90px rgba(0,0,0,.45) !important;
-  color:var(--warm-paper) !important;
+  color:var(--ink) !important;
   padding:28px !important;
   position:relative !important;
 }
@@ -311,30 +326,52 @@ blockquote{margin:0; padding:20px; background:#f6efe3; border-left:6px solid var
   display:grid !important;
   grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr) !important;
   gap:28px !important;
-  align-items:stretch !important;
+  /* start, not stretch: the figure stretched to the height of the text column, so
+     a bullet-heavy card left dead space under the caption. That was invisible when
+     the panel was dark and the mount blended into it, and is a conspicuous empty
+     black rectangle against paper. Let the figure size to its own content. */
+  align-items:start !important;
   padding-top:20px !important;
 }
+.lecture-modal-content .eyebrow{color:var(--burnished-bronze) !important;}
 .lecture-modal-content h2{
   margin:.25rem 0 1.1rem !important;
   font-family:"Cinzel", "Trajan Pro", "Times New Roman", Georgia, serif !important;
   font-size:clamp(2rem, 5vw, 4.25rem) !important;
   line-height:1.05 !important;
-  color:var(--antique-gold) !important;
+  color:var(--blackened-steel) !important;
+  border-bottom:1px solid rgba(140,90,43,.28) !important;
+  padding-bottom:.5rem !important;
 }
 .lecture-list.enlarged{
   font-size:clamp(1.1rem, 2.3vw, 1.7rem) !important;
   line-height:1.55 !important;
   padding-left:1.35em !important;
 }
-.lecture-list.enlarged li{margin:.6rem 0 !important; color:var(--warm-paper) !important;}
-.lecture-list.enlarged strong{color:var(--muted-sandstone) !important;}
+.lecture-list.enlarged li{margin:.6rem 0 !important; color:var(--ink) !important;}
+/* Bold terms get the readings' key-term treatment, so a term a student met in the
+   First & 10 looks the same when it reappears in the lecture. Same signal, one
+   look, rather than two ways of saying "this is the word that matters". */
+/* The highlight bleeds via box-shadow rather than horizontal padding. Padding at
+   this type size pushed the following punctuation away from its word, so a bullet
+   ending in a bold term read as "complex religion ." with a floating period. A
+   spread shadow paints the same halo and occupies no layout width. */
+.lecture-list.enlarged strong{
+  color:var(--oxidized-brown) !important;
+  background:rgba(210,180,140,.35) !important;
+  box-shadow:0 0 0 3px rgba(210,180,140,.35) !important;
+  border-radius:2px !important;
+}
+/* The picture keeps its dark mount. A photograph or a map reads better against
+   near-black than against paper, and it gives the card a focal point now that the
+   text side is light. Its border is a dark edge rather than the old faint gold,
+   which disappeared against paper. */
 .lecture-modal-image-wrap{
   margin:0 !important;
   border-radius:22px !important;
   overflow:hidden !important;
   background:#0f1112 !important;
-  border:1px solid rgba(201,164,106,.28) !important;
-  min-height:420px !important;
+  border:1px solid rgba(26,28,29,.30) !important;
   display:flex !important;
   flex-direction:column !important;
 }

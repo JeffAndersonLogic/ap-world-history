@@ -143,6 +143,55 @@ const PAGES = [
     check('the Back to Modules and Close row sits inside the panel',
       placed.inside, `row=${placed.row} panel=${placed.panel}`);
 
+    // ── The card has to be readable at the back of the room ──────────────────
+    //
+    // Deliberately polarity-agnostic: it asserts contrast, not "light". Flipping
+    // the panel between paper and dark is a design call and this must not
+    // relitigate it. What it will not allow is a half-done flip, which is the real
+    // hazard here: the panel was dark with gold headings, and gold on paper is
+    // 2.1:1. Change the background without the headings and the title becomes
+    // unreadable while every structural check stays green.
+    const contrast = await page.evaluate(() => {
+      const lum = (rgb) => {
+        const c = rgb.map(v => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); });
+        return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+      };
+      const parse = (s) => {
+        const m = String(s).match(/rgba?\(([^)]+)\)/);
+        if (!m) return null;
+        const p = m[1].split(',').map(x => parseFloat(x.trim()));
+        return { rgb: p.slice(0, 3), a: p.length > 3 ? p[3] : 1 };
+      };
+      const ratio = (a, b) => {
+        const [hi, lo] = [lum(a), lum(b)].sort((x, y) => y - x);
+        return Math.round(((hi + 0.05) / (lo + 0.05)) * 100) / 100;
+      };
+      const panel = document.querySelector('.lecture-modal-panel');
+      const bg = parse(getComputedStyle(panel).backgroundColor);
+      const title = parse(getComputedStyle(document.getElementById('lecture-modal-title')).color);
+      const bullet = document.querySelector('#lecture-modal-bullets li');
+      const body = parse(getComputedStyle(bullet).color);
+      const term = bullet.parentNode.querySelector('strong');
+      // A highlighted term sits on its own background, so measure against that.
+      const termBg = term ? (parse(getComputedStyle(term).backgroundColor)) : null;
+      const termFg = term ? parse(getComputedStyle(term).color) : null;
+      const flat = (over, under) => over && over.a === 1 ? over.rgb
+        : over ? over.rgb.map((v, i) => Math.round(over.a * v + (1 - over.a) * under[i])) : under;
+      return {
+        opaque: !!bg && bg.a === 1,
+        title: bg && title ? ratio(title.rgb, bg.rgb) : 0,
+        body: bg && body ? ratio(body.rgb, bg.rgb) : 0,
+        term: termFg && bg ? ratio(termFg.rgb, flat(termBg, bg.rgb)) : null
+      };
+    });
+    check('the panel declares an opaque background', contrast.opaque);
+    check('body bullets clear 4.5:1 against the panel', contrast.body >= 4.5, contrast.body + ':1');
+    check('the card title clears 3:1 against the panel', contrast.title >= 3, contrast.title + ':1');
+    if (contrast.term !== null) {
+      check('a highlighted term clears 4.5:1 on its own background',
+        contrast.term >= 4.5, contrast.term + ':1');
+    }
+
     // ── Walk the whole deck, the way a teacher projecting it does ────────────
     for (let i = 1; i < cards; i++) {
       await page.keyboard.press('ArrowRight');
