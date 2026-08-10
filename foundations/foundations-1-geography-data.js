@@ -254,9 +254,9 @@ window.FOUNDATION_TOPIC = {
 
   videos: [
     {
-      title: 'Crash Course World History: The Agricultural Revolution',
-      url: 'https://www.youtube.com/watch?v=Yocja_N5s1I',
-      youtubeId: 'Yocja_N5s1I',
+      title: 'Mankind: The Story of All of Us: Birth of Farming',
+      url: 'https://www.youtube.com/watch?v=bhzQFIZuNFY',
+      youtubeId: 'bhzQFIZuNFY',
       prompt: 'Watch for: how did geography shape where agriculture developed first, and what did surplus food production make possible?'
     },
     {
