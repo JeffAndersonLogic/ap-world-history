@@ -277,16 +277,46 @@ window.FOUNDATION_TOPIC = {
 
   videos: [
     {
-      title: '2,000 Years of Chinese History! The Mandate of Heaven and Confucius: Crash Course World History #7',
-      url: 'https://www.youtube.com/watch?v=ylWORyToTo4',
-      youtubeId: 'ylWORyToTo4',
-      prompt: 'Watch for: how did Confucianism and Daoism each shape Chinese society and government, and how did they function together as part of the "Three Teachings"?'
+      title: 'Confucianism: The Basics',
+      url: 'https://www.youtube.com/watch?v=eylzNIaFW1c',
+      youtubeId: 'eylzNIaFW1c',
+      prompt: 'Watch for: how do the five key relationships and filial piety turn a moral philosophy into a system of public order? Note anything that helps explain why Confucianism became the content of the civil service exam.'
     },
     {
-      title: 'Developments in DAR-AL-ISLAM [AP World Review, Unit 1 Topic 2]',
-      url: 'https://www.youtube.com/watch?v=O9P1TaBnhg8',
-      youtubeId: 'O9P1TaBnhg8',
-      prompt: 'Watch for: how did Islam function as more than a personal religion in the Dar al-Islam? What institutions did it create and sustain?'
+      title: 'Daoism: The Basics',
+      url: 'https://www.youtube.com/watch?v=3ZhEa4TjXm8',
+      youtubeId: '3ZhEa4TjXm8',
+      prompt: 'Watch for: what does harmony with the Dao ask of a person? Note how Daoism turns inward, toward nature and the body, where Confucianism turns outward toward public duty, and why the two complemented each other instead of competing.'
+    },
+    {
+      title: 'Buddhism: The Basics',
+      url: 'https://www.youtube.com/watch?v=OVFfLUhM_zQ',
+      youtubeId: 'OVFfLUhM_zQ',
+      prompt: 'Watch for: what problem do the Four Noble Truths diagnose, and what solution do they offer? Note who carried Buddhism out of South Asia and what institutions, especially monasteries, made that spread possible.'
+    },
+    {
+      title: 'Hinduism: The Basics',
+      url: 'https://www.youtube.com/watch?v=H6ep6lwpeYg',
+      youtubeId: 'H6ep6lwpeYg',
+      prompt: 'Watch for: how do dharma and karma link an individual\'s duty to the wider social order? Note what it means for a belief system to have no single founder and to develop over more than a thousand years.'
+    },
+    {
+      title: 'Islam: The Basics',
+      url: 'https://www.youtube.com/watch?v=sY2IKVkZlFs',
+      youtubeId: 'sY2IKVkZlFs',
+      prompt: 'Watch for: how do the Five Pillars bind individual believers into a single community? Note what the hajj in particular did as a network stretching across the Dar al-Islam.'
+    },
+    {
+      title: 'Judaism: The Basics',
+      url: 'https://www.youtube.com/watch?v=gd8rK0JRRqU',
+      youtubeId: 'gd8rK0JRRqU',
+      prompt: 'Watch for: what do covenant and monotheism establish about the relationship between a people and their God? Note the ideas Christianity and Islam later inherited from this tradition.'
+    },
+    {
+      title: 'Christianity: The Basics',
+      url: 'https://www.youtube.com/watch?v=WhP85aRLU48',
+      youtubeId: 'WhP85aRLU48',
+      prompt: 'Watch for: how did Christianity move from a persecuted movement to the official religion of an empire? Note what changes for a belief system once a state adopts it and funds its institutions.'
     }
   ]
 

@@ -259,9 +259,10 @@ title unreadable with every structural check still green.
 
 Videos are an **optional resource**, not part of the ten-module path and not part
 of the lecture deck. Only 27 of the 71 unit topics have a clip at all (units 1, 2,
-8 and 9, plus 3.1 and 3.4); Foundations has two per topic. That coverage is why
-they are not folded into the lecture cards: it would leave 44 topics' cards with
-an empty slot, and nothing in the data maps a clip to a particular card.
+8 and 9, plus 3.1 and 3.4); most Foundations topics have two, and Foundations 2
+has seven, one per belief system it teaches. That coverage is why they are not
+folded into the lecture cards: it would leave 44 topics' cards with an empty
+slot, and nothing in the data maps a clip to a particular card.
 
 - The block **introduces itself** when clips exist and **hides entirely** when
   they do not. An empty `#content-video-clips` used to leave a gap under the
