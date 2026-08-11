@@ -12,7 +12,7 @@ window.FOUNDATION_TOPIC = {
     ['0-10', 'Launch Question', 'Students write: What does a belief system actually do for a society, beyond telling people what to believe?'],
     ['10-25', 'Map Check', 'Use the Map Module: students trace how Buddhism spread as a model for how all six belief systems diffused, identifying routes and mechanisms.'],
     ['25-42', 'First & 10', 'Read the survey of the six belief systems. Students identify the core idea of each and one example of syncretism.'],
-    ['42-65', 'Lecture Cards', 'Six cards, one per belief system: Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam, core ideas, institutional roles, and how each spread and adapted.'],
+    ['42-65', 'Lecture Cards', 'Seven cards: Confucianism, Daoism, Hinduism, Buddhism, Judaism, Christianity, and Islam, core ideas, institutional roles, and how each spread and adapted.'],
     ['65-80', 'AP Skill Builder', 'Students write a comparison paragraph: how did two of the six belief systems function in their societies?'],
     ['80-90', 'Checkpoint', 'SAQ-style exit ticket and confidence reflection.']
   ],
@@ -35,6 +35,7 @@ window.FOUNDATION_TOPIC = {
     { date: 'c. 563–483 BCE', event: 'Siddhartha Gautama, the Buddha, teaches in northeastern India. Buddhism begins as a reform movement within the Indian religious world.' },
     { date: 'c. 551–479 BCE', event: 'Confucius develops the ethical and political teachings that will later be institutionalized into Chinese governance for two thousand years.' },
     { date: 'c. 30 CE / 313 CE', event: 'Christianity begins with the teachings of Jesus; three centuries later Emperor Constantine legalizes it, and it spreads across the Roman world and into Ethiopia.' },
+    { date: 'c. 70 CE', event: 'Rome destroys the Second Temple in Jerusalem. Jewish worship shifts from temple sacrifice to the synagogue, the study of Torah, and the authority of rabbis, which is what makes Judaism portable across the diaspora.' },
     { date: 'c. 622 CE', event: 'Muhammad and his followers migrate to Medina (the Hijra). Within a century, Islam spreads from Arabia to Iberia, Persia, and Central Asia, creating the Dar al-Islam.' },
     { date: 'c. 1130–1200 CE', event: 'Zhu Xi synthesizes Neo-Confucianism, blending Confucian ethics with Buddhist and Daoist metaphysics, itself a form of syncretism within China.' }
   ],
@@ -85,9 +86,10 @@ window.FOUNDATION_TOPIC = {
   },
 
   terms: [
-    'belief system', 'Confucianism', 'Daoism', 'Hinduism', 'Buddhism', 'Christianity', 'Islam',
+    'belief system', 'Confucianism', 'Daoism', 'Hinduism', 'Buddhism', 'Judaism', 'Christianity', 'Islam',
     'syncretism', 'cultural diffusion', 'institution', 'filial piety', 'wu wei', 'Dao',
-    'dharma', 'karma', 'Four Noble Truths', 'monotheism', 'Five Pillars', 'Dar al-Islam', 'Neo-Confucianism'
+    'dharma', 'karma', 'Four Noble Truths', 'monotheism', 'covenant', 'Torah', 'synagogue', 'diaspora',
+    'Five Pillars', 'Dar al-Islam', 'Neo-Confucianism'
   ],
 
   termTable: [
@@ -95,6 +97,9 @@ window.FOUNDATION_TOPIC = {
     ['Daoism', 'A Chinese belief system traced to Laozi, teaching harmony with the Dao ("the Way"), balance (yin-yang), simplicity, and wu wei (effortless action). It complemented Confucianism rather than competing with it.'],
     ['Hinduism', 'One of the oldest belief systems, from South Asia, with no single founder. Its core ideas, dharma (duty), karma, and reincarnation toward moksha, were woven into the varna (caste) social order.'],
     ['Buddhism', 'Founded by Siddhartha Gautama (the Buddha, c.563–483 BCE) as a reform within the Indian world. Its Four Noble Truths and path to nirvana were open to all castes, which helped it spread across Asia.'],
+    ['Judaism', 'The oldest of the three monotheistic, Abrahamic faiths, built on a covenant between one God and a people and codified as law in the Torah and Talmud. After the Second Temple fell in 70 CE, the synagogue and the rabbi replaced the temple and the priest, making the tradition portable across the diaspora.'],
+    ['Covenant', 'A binding agreement between God and a people that carries obligations, not just beliefs. It is the organizing idea of Judaism and the reason Jewish practice took the form of detailed law.'],
+    ['Diaspora', 'The dispersal of a people from their homeland, and the communities they form abroad. Jewish diaspora communities lived as legally distinct minorities under Christian and Muslim rulers and linked the two worlds through trade.'],
     ['Christianity', 'A monotheistic, Abrahamic faith built on the teachings of Jesus. It spread through the Roman Empire by missionaries and state adoption, dividing into Catholic, Orthodox, and African (e.g., Ethiopian) branches.'],
     ['Islam', 'A monotheistic, Abrahamic faith founded on the message of Muhammad (from the 600s CE), centered on one God, the Quran, and the Five Pillars. It spread rapidly through conquest, trade, and Sufi missionaries, creating the Dar al-Islam.'],
     ['Syncretism', 'The blending of a traveling belief system with local cultural practices, producing a genuine hybrid. Examples: Chan Buddhism absorbing Daoism, Malian Islam retaining griot traditions, Ethiopian Christianity building its own canon.']
@@ -164,7 +169,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Confucianism: Philosophy Becomes the State',
       bullets: [
-        '**Confucius** (551–479 BCE) taught social order through **five key relationships**.',
+        '**Confucius** (551–479 BCE) taught social order through **five fundamental relationships**.',
+        '**1. Ruler / Subject.** The ruler owes benevolence and just government; the subject owes loyalty.',
+        '**2. Parent / Child.** The parent owes care and instruction; the child owes obedience and support in old age.',
+        '**3. Husband / Wife.** The husband owes provision and protection; the wife owes obedience and management of the household.',
+        '**4. Older Brother / Younger Brother.** The elder owes example and care; the younger owes respect.',
+        '**5. Friend / Friend.** The only relationship between equals. Both owe mutual trust and good faith.',
+        'Every relationship runs **both ways**. Authority carries duties, and a ruler who fails his people forfeits the obedience he is owed.',
         '**Filial piety**: respect for parents, elders, and rulers. Everyone fulfills a proper role.',
         'Confucianism prized **education and merit**, so it became the basis of the **civil service exam (keju)**.',
         'Passing required mastery of the Confucian classics. A moral philosophy became the machinery of government.',
@@ -233,6 +244,24 @@ window.FOUNDATION_TOPIC = {
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Stupa_Borobudur.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Stupa_Borobudur.jpg',
         caption: 'Borobudur in Java, the largest Buddhist monument in the world, built by the Sailendra dynasty, is ringed by bell-shaped stupas, each once sheltering a Buddha. Its location far from India shows how Buddhism spread by sea and was adopted by rulers seeking legitimacy.'
+      }
+    },
+    {
+      title: 'Judaism: Covenant, Law, and a Portable Community',
+      bullets: [
+        '**Judaism** is the oldest of the three **Abrahamic** faiths. Christianity and Islam both grew out of its **monotheism**.',
+        'Its core is **covenant**: a binding agreement between one God and a people, carrying obligations rather than only beliefs.',
+        'The **Torah**, and later the **Talmud**, turned that covenant into detailed law (**halakha**) governing food, marriage, commerce, and the calendar.',
+        'After Rome destroyed the Second Temple in **70 CE**, worship shifted from sacrifice to the **synagogue** and to study, led by **rabbis** rather than priests.',
+        'That shift made Judaism **portable**. A community needed a text, a teacher, and a quorum, not a temple in one city.',
+        'Scattered across the **diaspora**, Jewish communities lived as legally distinct minorities under Christian and Muslim rulers: taxed, restricted, sometimes protected, sometimes expelled.',
+        'Shared law and language let **Radhanite** merchants trade between the Islamic and Christian worlds, a religious network doing economic work.'
+      ],
+      image: {
+        title: 'Judaism as a Portable Institution',
+        url: '',
+        sourceUrl: '',
+        caption: 'After 70 CE the center of Jewish life moved from one temple to thousands of synagogues and study houses. A community needed a Torah scroll, a teacher, and a quorum, which is why the tradition outlasted a dispersal that ended other ancient religions.'
       }
     },
     {
