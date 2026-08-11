@@ -12,7 +12,7 @@ window.FOUNDATION_TOPIC = {
     ['0-10', 'Launch Question', 'Students write: What does a belief system actually do for a society, beyond telling people what to believe?'],
     ['10-25', 'Map Check', 'Use the Map Module: students trace how Buddhism spread as a model for how all six belief systems diffused, identifying routes and mechanisms.'],
     ['25-42', 'First & 10', 'Read the survey of the six belief systems. Students identify the core idea of each and one example of syncretism.'],
-    ['42-65', 'Lecture Cards', 'Seven cards: Confucianism, Daoism, Hinduism, Buddhism, Judaism, Christianity, and Islam, core ideas, institutional roles, and how each spread and adapted.'],
+    ['42-65', 'Lecture Cards', 'Eight cards: Confucianism in two (the five relationships, then the civil service exam), then Daoism, Hinduism, Buddhism, Judaism, Christianity, and Islam, core ideas, institutional roles, and how each spread and adapted.'],
     ['65-80', 'AP Skill Builder', 'Students write a comparison paragraph: how did two of the six belief systems function in their societies?'],
     ['80-90', 'Checkpoint', 'SAQ-style exit ticket and confidence reflection.']
   ],
@@ -167,27 +167,40 @@ window.FOUNDATION_TOPIC = {
 
   lecture: [
     {
-      title: 'Confucianism: Philosophy Becomes the State',
+      title: 'Confucianism I: The Five Fundamental Relationships',
       bullets: [
-        '**Confucius** (551–479 BCE) taught social order through **five fundamental relationships**.',
+        '**Confucius** (551–479 BCE) taught that social order rests on **five fundamental relationships**.',
         '**1. Ruler / Subject.** The ruler owes benevolence and just government; the subject owes loyalty.',
         '**2. Parent / Child.** The parent owes care and instruction; the child owes obedience and support in old age.',
         '**3. Husband / Wife.** The husband owes provision and protection; the wife owes obedience and management of the household.',
         '**4. Older Brother / Younger Brother.** The elder owes example and care; the younger owes respect.',
         '**5. Friend / Friend.** The only relationship between equals. Both owe mutual trust and good faith.',
         'Every relationship runs **both ways**. Authority carries duties, and a ruler who fails his people forfeits the obedience he is owed.',
-        '**Filial piety**: respect for parents, elders, and rulers. Everyone fulfills a proper role.',
-        'Confucianism prized **education and merit**, so it became the basis of the **civil service exam (keju)**.',
-        'Passing required mastery of the Confucian classics. A moral philosophy became the machinery of government.',
-        'The exam replaced hereditary aristocrats with officials who owed their careers to the state.',
-        'Every official shared one ethical vocabulary and one idea of loyalty.',
-        '**Neo-Confucianism** (Zhu Xi, 1130–1200 CE) added Buddhist and Daoist metaphysics: syncretism inside China.'
+        '**Filial piety**: respect for parents, elders, and rulers. Everyone fulfills a proper role.'
       ],
       image: {
         title: 'Tang Dynasty Portrait of Confucius',
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg',
         caption: 'Confucius (551–479 BCE), shown in a Tang-era portrait. His teachings were not institutionalized into state governance until centuries after his death, philosophy becoming political infrastructure over time.'
+      }
+    },
+    {
+      title: 'Confucianism II: Philosophy Becomes the State',
+      bullets: [
+        'Confucianism prized **education and merit**, so it became the basis of the **civil service exam (keju)**.',
+        'Passing required mastery of the Confucian classics. A moral philosophy became the machinery of government.',
+        'The exam replaced hereditary aristocrats with officials who owed their careers to the state.',
+        'Every official shared one ethical vocabulary and one idea of loyalty.',
+        'The five relationships scaled up: the **ruler/subject** bond became the model for the official\'s duty to the emperor.',
+        'Merit was real but narrow. Years of study meant only families with means could realistically compete.',
+        '**Neo-Confucianism** (Zhu Xi, 1130–1200 CE) added Buddhist and Daoist metaphysics: syncretism inside China.'
+      ],
+      image: {
+        title: 'The Civil Service Examination as an Institution',
+        url: '',
+        sourceUrl: '',
+        caption: 'Candidates sat for days in individual cells, writing on the Confucian classics. The exam turned an ethical philosophy into the recruitment system of the world\'s largest bureaucracy, which is how a set of teachings about relationships became a form of state power.'
       }
     },
     {
@@ -305,47 +318,47 @@ window.FOUNDATION_TOPIC = {
   ],
 
   videos: [
-    {
+{
       title: 'Confucianism: The Basics',
       url: 'https://www.youtube.com/watch?v=eylzNIaFW1c',
       youtubeId: 'eylzNIaFW1c',
       prompt: 'Watch for: how do the five key relationships and filial piety turn a moral philosophy into a system of public order? Note anything that helps explain why Confucianism became the content of the civil service exam.'
     },
-    {
+{
       title: 'Daoism: The Basics',
       url: 'https://www.youtube.com/watch?v=3ZhEa4TjXm8',
       youtubeId: '3ZhEa4TjXm8',
       prompt: 'Watch for: what does harmony with the Dao ask of a person? Note how Daoism turns inward, toward nature and the body, where Confucianism turns outward toward public duty, and why the two complemented each other instead of competing.'
     },
-    {
-      title: 'Buddhism: The Basics',
-      url: 'https://www.youtube.com/watch?v=OVFfLUhM_zQ',
-      youtubeId: 'OVFfLUhM_zQ',
-      prompt: 'Watch for: what problem do the Four Noble Truths diagnose, and what solution do they offer? Note who carried Buddhism out of South Asia and what institutions, especially monasteries, made that spread possible.'
-    },
-    {
+{
       title: 'Hinduism: The Basics',
       url: 'https://www.youtube.com/watch?v=H6ep6lwpeYg',
       youtubeId: 'H6ep6lwpeYg',
       prompt: 'Watch for: how do dharma and karma link an individual\'s duty to the wider social order? Note what it means for a belief system to have no single founder and to develop over more than a thousand years.'
     },
-    {
-      title: 'Islam: The Basics',
-      url: 'https://www.youtube.com/watch?v=sY2IKVkZlFs',
-      youtubeId: 'sY2IKVkZlFs',
-      prompt: 'Watch for: how do the Five Pillars bind individual believers into a single community? Note what the hajj in particular did as a network stretching across the Dar al-Islam.'
+{
+      title: 'Buddhism: The Basics',
+      url: 'https://www.youtube.com/watch?v=OVFfLUhM_zQ',
+      youtubeId: 'OVFfLUhM_zQ',
+      prompt: 'Watch for: what problem do the Four Noble Truths diagnose, and what solution do they offer? Note who carried Buddhism out of South Asia and what institutions, especially monasteries, made that spread possible.'
     },
-    {
+{
       title: 'Judaism: The Basics',
       url: 'https://www.youtube.com/watch?v=gd8rK0JRRqU',
       youtubeId: 'gd8rK0JRRqU',
       prompt: 'Watch for: what do covenant and monotheism establish about the relationship between a people and their God? Note the ideas Christianity and Islam later inherited from this tradition.'
     },
-    {
+{
       title: 'Christianity: The Basics',
       url: 'https://www.youtube.com/watch?v=WhP85aRLU48',
       youtubeId: 'WhP85aRLU48',
       prompt: 'Watch for: how did Christianity move from a persecuted movement to the official religion of an empire? Note what changes for a belief system once a state adopts it and funds its institutions.'
+    },
+{
+      title: 'Islam: The Basics',
+      url: 'https://www.youtube.com/watch?v=sY2IKVkZlFs',
+      youtubeId: 'sY2IKVkZlFs',
+      prompt: 'Watch for: how do the Five Pillars bind individual believers into a single community? Note what the hajj in particular did as a network stretching across the Dar al-Islam.'
     }
   ]
 

@@ -7,7 +7,9 @@
 
 const L = window.BEHISTORICAL_LESSON;
 const byId = id => document.getElementById(id);
-const md = s => String(s || '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+// Bold first, then italics: once **strong** is consumed the only asterisks left
+// are single ones, so [^*]+ cannot reach across a bold marker and swallow it.
+const md = s => String(s || '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*([^*]+)\*/g, '<em>$1</em>');
 const kcPills = kc => kc.split(';').map(s => s.trim()).filter(Boolean).map(s => `<span class="inline-target-kc">${s}</span>`).join(' ');
 // Id of the Copy All My Work textarea. Declared up here because the boot block
 // calls loadAllDrafts(), which must skip it, and a const declared further down
@@ -1115,10 +1117,11 @@ function escapeWorkHtml(value) {
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-// Strips the bold markers the data files use, so a prompt written as
-// "**Compare** the two" reads as plain text in the worksheet.
+// Strips the emphasis markers the data files use, so a prompt written as
+// "**Compare** the two" reads as plain text in the worksheet. Italics are
+// stripped for the same reason: a stray asterisk in a Canvas paste is noise.
 function plainPrompt(value) {
-  return String(value || '').replace(/\*\*(.*?)\*\*/g, '$1').trim();
+  return String(value || '').replace(/\*\*(.*?)\*\*/g, '$1').replace(/\*([^*]+)\*/g, '$1').trim();
 }
 
 // Turns a response into paragraphs, so a student's line breaks survive the paste.

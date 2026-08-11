@@ -1,5 +1,7 @@
 const byId=id=>document.getElementById(id);
-const md=s=>String(s||'').replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>');
+// Bold first, then italics: once **strong** is consumed the only asterisks left
+// are single ones, so [^*]+ cannot reach across a bold marker and swallow it.
+const md=s=>String(s||'').replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+)\*/g,'<em>$1</em>');
 function sanitizeImageUrl(url){
   const raw=String(url||'').trim();
   if(!raw)return '';
