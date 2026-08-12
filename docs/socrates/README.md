@@ -168,6 +168,33 @@ teacher preview:
 Step 4 is the one that cannot be moved into the repo, because it is the only
 question whose answer depends on MagicSchool's retrieval working.
 
+## The four surfaces
+
+Socrates serves exactly four assignments, and the persona names them so he can
+orient from the student's own words:
+
+| Surface | Reached from | Coverage |
+|---|---|---|
+| First & 10 Reflection | the Open MagicSchool button in each reading | all 77 |
+| Checkpoint 1 | the checkpoint bridge in both renderers | all 77 |
+| Checkpoint 2 | the same bridge | all 77 |
+| BeInTheRoom | each scenario's own payload builder | 38 of 64 scenarios |
+
+Foundations checkpoints had no bridge at all until 2026-08-12, so on those six
+topics two of the four surfaces were dead ends while Module 08 was titled
+"Socrates AI Coach" and offered three static prompts with no button. Both
+renderers now share one builder and one bridge shape, asserted by
+`scripts/test/coach-prompt.test.js` against a real Foundations page in Chromium.
+
+Two things about the Foundations paste are different by design rather than broken:
+it carries no `Key concept:` line, because Foundations has no CED key concepts and
+an empty label reads to a coach as a missing field; and both checkpoints send the
+topic's single checklist, because Foundations data has one rather than one per
+checkpoint. That second one is a judgement call: for the Checkpoint 2 exit ticket,
+two of the four checklist items map cleanly and two are a loose fit. Drop the
+`checklist` field from the Checkpoint 2 branch in the Foundations renderer if you
+would rather send none.
+
 ## Open questions
 
 1. **The instructions field limit is undocumented.** The persona plus the index

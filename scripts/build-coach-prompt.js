@@ -30,7 +30,13 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const SOURCE = path.join(ROOT, 'assets', 'js', 'behistorical-coach-prompt.js');
-const TARGET = path.join(ROOT, 'assets', 'js', 'behistorical-topic-renderer-v1.js');
+
+// Both renderers, because both carry a checkpoint bridge and neither can require
+// a module: they are plain scripts served from a static host.
+const TARGETS = [
+  path.join(ROOT, 'assets', 'js', 'behistorical-topic-renderer-v1.js'),
+  path.join(ROOT, 'foundations', 'foundations-topic-renderer.js')
+];
 const CHECK = process.argv.includes('--check');
 
 const OPEN = '// ── BEGIN INLINED COACH PROMPT BUILDER ──────────────────────────────────────';
@@ -49,37 +55,46 @@ function inlinedBlock() {
   ].join('\n');
 }
 
-const target = fs.readFileSync(TARGET, 'utf8');
-const start = target.indexOf(OPEN);
-const end = target.indexOf(CLOSE);
+let drift = 0;
+let wrote = 0;
 
-if (start === -1 || end === -1) {
-  console.error(`FAIL ${path.relative(ROOT, TARGET)} has no coach-prompt sentinels.`);
-  console.error('Add these two lines around the inlined region, then rebuild:');
-  console.error(`  ${OPEN}`);
-  console.error(`  ${CLOSE}`);
-  process.exit(1);
+for (const TARGET of TARGETS) {
+  const rel = path.relative(ROOT, TARGET);
+  const target = fs.readFileSync(TARGET, 'utf8');
+  const start = target.indexOf(OPEN);
+  const end = target.indexOf(CLOSE);
+
+  if (start === -1 || end === -1) {
+    console.error(`FAIL ${rel} has no coach-prompt sentinels.`);
+    console.error('Add these two lines around the inlined region, then rebuild:');
+    console.error(`  ${OPEN}`);
+    console.error(`  ${CLOSE}`);
+    process.exit(1);
+  }
+
+  const rebuilt = target.slice(0, start) + inlinedBlock() + target.slice(end + CLOSE.length);
+
+  if (CHECK) {
+    if (rebuilt !== target) {
+      console.error(`DRIFT ${rel}: the inlined coach prompt builder no longer matches`
+        + ' assets/js/behistorical-coach-prompt.js.');
+      drift++;
+    }
+  } else if (rebuilt !== target) {
+    fs.writeFileSync(TARGET, rebuilt);
+    wrote++;
+    console.log(`wrote ${rel}`);
+  }
 }
 
-const before = target.slice(0, start);
-const after = target.slice(end + CLOSE.length);
-const rebuilt = before + inlinedBlock() + after;
-
 if (CHECK) {
-  if (rebuilt !== target) {
-    console.error(`DRIFT ${path.relative(ROOT, TARGET)}: the inlined coach prompt builder`
-      + ' no longer matches assets/js/behistorical-coach-prompt.js.');
+  if (drift) {
     console.error('Run: node scripts/build-coach-prompt.js');
     process.exit(1);
   }
-  console.log('coach prompt builder: inlined copy matches source');
-  process.exit(0);
-}
-
-if (rebuilt === target) {
-  console.log('coach prompt builder: already current');
+  console.log(`coach prompt builder: inlined copies match source in ${TARGETS.length} renderers`);
 } else {
-  fs.writeFileSync(TARGET, rebuilt);
-  console.log(`wrote ${path.relative(ROOT, TARGET)}`
-    + ` (inlined ${(fs.readFileSync(SOURCE, 'utf8').length / 1024).toFixed(1)} KB)`);
+  console.log(wrote
+    ? `inlined ${(fs.readFileSync(SOURCE, 'utf8').length / 1024).toFixed(1)} KB into ${wrote} renderer(s)`
+    : 'coach prompt builder: already current');
 }

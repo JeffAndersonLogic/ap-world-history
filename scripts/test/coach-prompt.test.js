@@ -74,6 +74,21 @@ const CASES = [
   { id: '7.2', page: 'unit-7/lesson-7-2-causes-wwi.html' }
 ];
 
+// Foundations is a separate renderer with a separate data shape, and it had no
+// coach bridge at all until this was added. It is checked apart from the unit
+// cases because its paste legitimately differs: Foundations carries no College
+// Board key concepts, so the Key concept line is absent by design rather than
+// missing, and its topic ids are `foundations-3` on the page but F3 in the paste,
+// because F3 is what the spine Socrates has attached is keyed on.
+const FOUNDATIONS = {
+  id: 'F3',
+  page: 'foundations/foundations-3-states-power.html',
+  slots: [
+    { textarea: 'foundations-3-checkpoint', module: 'Checkpoint 1' },
+    { textarea: 'foundations-3-checkpoint2', module: 'Checkpoint 2' }
+  ]
+};
+
 const DRAFT = 'The alliance system turned a regional crisis into a world war because '
   + 'Austria-Hungary and Serbia pulled their partners in.';
 
@@ -169,6 +184,68 @@ const DRAFT = 'The alliance system turned a regional crisis into a world war bec
     });
     check('Copy sends exactly what the preview shows', copied === got,
       copied === null ? 'clipboard was not called' : `${String(copied).length} chars`);
+  }
+
+  // ── Foundations ────────────────────────────────────────────────────────────
+  const fTopic = byId.get(FOUNDATIONS.id);
+  console.log(`\nFoundations ${FOUNDATIONS.id}`);
+  await page.goto(`http://127.0.0.1:${port}/${FOUNDATIONS.page}`, { waitUntil: 'domcontentloaded' });
+  await page.waitForSelector('#module-grid .module-card');
+
+  check('the shared builder reached the Foundations page',
+    await page.evaluate(() => typeof window.BH_COACH === 'object'
+      && typeof window.BH_COACH.buildCoachPrompt === 'function'));
+
+  for (const slot of FOUNDATIONS.slots) {
+    const moduleId = slot.module === 'Checkpoint 1' ? 'checkpoint1' : 'checkpoint2';
+    await page.evaluate(id => window.openModule(id), moduleId);
+    await page.waitForSelector('#pop-modal.show');
+    await page.waitForSelector(`#${slot.textarea}`);
+
+    // The bridge exists at all, which is the whole point of this addition.
+    check(`${slot.module}: the coach bridge is rendered`,
+      await page.evaluate(t => !!document.getElementById(t + '-ms-preview'), slot.textarea));
+    check(`${slot.module}: Open AI Coach points at the classroom join code`,
+      await page.evaluate(() => {
+        const a = [...document.querySelectorAll('#pop-body a')]
+          .find(x => /open ai coach/i.test(x.textContent));
+        return !!a && a.href.includes('joinCode=czwb9Q');
+      }));
+
+    await page.evaluate(t => window.generateFoundationsCoachPrompt(t), slot.textarea);
+    const refused = await page.evaluate(t =>
+      document.getElementById(t + '-ms-result').textContent, slot.textarea);
+    check(`${slot.module}: an empty draft is refused`, /draft your response/i.test(refused));
+
+    await page.fill(`#${slot.textarea}`, DRAFT);
+    await page.evaluate(t => window.generateFoundationsCoachPrompt(t), slot.textarea);
+    const got = await page.evaluate(t =>
+      document.getElementById(t + '-ms-preview').textContent, slot.textarea);
+
+    check(`${slot.module}: names the topic as ${FOUNDATIONS.id}, not the page's own id`,
+      got.startsWith(`Topic ${FOUNDATIONS.id}, ${slot.module},`), got.split('\n')[0].slice(0, 56));
+    check(`${slot.module}: carries the Foundations period`,
+      got.includes(`Period: ${fTopic.span}.`));
+    check(`${slot.module}: carries the learning target`, got.includes('Learning target:'));
+    check(`${slot.module}: carries the evidence terms`, got.includes('Focus terms:'));
+    check(`${slot.module}: carries the assigned prompt`, got.includes('Assigned prompt:'));
+    check(`${slot.module}: carries the student draft`, got.includes(DRAFT));
+    // Absent by design: Foundations has no CED key concepts, and a "Key concept:"
+    // line with nothing after it would read as a missing field to the coach.
+    check(`${slot.module}: omits the Key concept line rather than emitting an empty one`,
+      !got.includes('Key concept:'));
+
+    const copied = await page.evaluate(async t => {
+      let captured = null;
+      navigator.clipboard.writeText = x => { captured = x; return Promise.resolve(); };
+      window.copyFoundationsCoachPrompt(t);
+      await new Promise(r => setTimeout(r, 30));
+      return captured;
+    }, slot.textarea);
+    check(`${slot.module}: Copy sends what the preview shows`, copied === got);
+
+    await page.evaluate(() => window.closeModule && window.closeModule());
+    await page.waitForTimeout(40);
   }
 
   check('no page errors', errors.length === 0, errors.slice(0, 2).join('; '));
