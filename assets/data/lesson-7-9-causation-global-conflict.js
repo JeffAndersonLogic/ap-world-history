@@ -80,7 +80,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.9 / Unit 7 Causation",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.9+causation+global+conflict",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
+        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
         prompt: "Watch for how Heimler frames 'relative significance', the AP skill that asks you to rank causes, not just list them. Look for how he distinguishes underlying causes (long-term structural factors) from immediate triggers, and how he connects evidence from different topics into a single causal argument."
       }
     ],
@@ -96,8 +96,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World War II — montage of the global conflict",
           caption: "Unit 7 synthesis: from empire collapse to total war, six topics of evidence now become the raw material for a single causal argument about relative significance.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG"
         }
       },
       {
@@ -141,8 +141,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World empires and territories, c. 1936",
           caption: "The world in 1936, imperial competition still covering much of the globe while the Ottoman, Russian, and Qing empires had already collapsed, leaving power vacuums and unresolved tensions.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png"
         }
       },
       {
@@ -171,8 +171,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World War II — montage of the global conflict",
           caption: "Six topics of evidence, one capstone argument, relative significance asks which causes mattered most and why, not which ones existed.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG"
         }
       }
     ]
@@ -180,8 +180,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: The World on the Eve of Global Conflict, c. 1936",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png",
     caption: "The world in 1936, imperial territories, alliance pressures, and fascist states. Use this map as a synthesis tool: locate the key actors, empires, and regions that appear across all seven Unit 7 topics.",
     intro: "This capstone uses the map as a synthesis tool, not a content delivery tool. Locate the actors and regions across all seven Unit 7 topics: where did empires collapse? Where did nationalist movements rise? Where did the Depression hit hardest? Where did fascist regimes come to power and expand?",
     prompt: "Using evidence from at least three Unit 7 topics, identify two regions on this map and explain what causal factors visible in the geography contributed most to the global conflicts of the 20th century. Then rank the two causes you identified by relative significance.",
@@ -222,8 +222,8 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "World empires and territories, c. 1936",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png",
       caption: "Imperial competition and empire collapse, the Ottoman, Russian, and Qing empires have fallen; European and Japanese imperial ambitions still drive competition for resources and territory.",
       prompt: "How does imperial competition and the collapse of older empires appear as a cause of global conflict on this map? Connect evidence from Topics 7.1, 7.2, and 7.5 to explain why this is an underlying cause, and rank it: is it more or less significant than the rise of fascist regimes?"
     }

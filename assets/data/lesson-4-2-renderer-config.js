@@ -52,7 +52,7 @@
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
     beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
     skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
     evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
     beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',

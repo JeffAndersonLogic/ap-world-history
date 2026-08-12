@@ -128,10 +128,10 @@ window.BEHISTORICAL_LESSON = {
           "**The key argument**: Economic imperialism reveals that the line between 'free trade' and 'coercion' is less clear than free trade ideology suggests. When Britain demanded that China open its ports under threat of naval bombardment, or when Latin American governments accepted British creditor control over their customs revenue as the price of continued access to capital markets, these were not voluntary agreements between equals. Economic relationships can be as coercive as military relationships, and in many cases, the economic relationship was enforced by the implicit or explicit threat of military force."
         ],
         image: {
-          title: "The port of Buenos Aires",
-          caption: "British capital built Argentina's railways and docks. Economic imperialism could control an economy without ever raising a flag.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Buenos_Aires_Port.jpg"
+          title: "Puerto Madero, Buenos Aires, begun 1887",
+          caption: "Dock 4 of Puerto Madero, one of four basins begun in 1887. British capital built Argentina's railways and docks. Economic imperialism could control an economy without ever raising a flag.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/J30_469_Dique_4.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:J30_469_Dique_4.jpg"
         }
       }
     ]

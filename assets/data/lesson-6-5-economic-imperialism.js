@@ -95,10 +95,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** British and French pressure on China through the Opium Wars and British investment in the port of Buenos Aires show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'The port of Buenos Aires',
-          caption: "British capital financed Argentina's docks and railways. Economic imperialism could direct an economy without formal colonial rule.",
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Buenos_Aires_Port.jpg'
+          title: 'Puerto Madero, Buenos Aires, begun 1887',
+          caption: "Dock 4 of Puerto Madero, one of four basins begun in 1887. British capital financed Argentina's docks and railways. Economic imperialism could direct an economy without formal colonial rule.",
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/J30_469_Dique_4.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:J30_469_Dique_4.jpg'
         }
       },
       {
@@ -289,8 +289,8 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'British investment in the port of Buenos Aires',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Buenos_Aires_Port.jpg',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/J30_469_Dique_4.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:J30_469_Dique_4.jpg',
       caption: 'British investment in the port of Buenos Aires helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does British investment in the port of Buenos Aires support or complicate a claim about economic imperialism?'
     },

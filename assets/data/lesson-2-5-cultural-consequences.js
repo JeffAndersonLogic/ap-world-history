@@ -112,10 +112,10 @@ window.BEHISTORICAL_LESSON = {
           '**Christianity** expanded through European trade networks and missionary activity into Central Asia, while **Hinduism** spread through Indian Ocean merchant communities into South and Southeast Asia, shaping the religious architecture and court culture of kingdoms such as the Khmer Empire.'
         ],
         image: {
-          title: 'Silk Road Trade Route Map, 7th Century AD',
+          title: 'Silk Road Routes Across Afro-Eurasia',
           caption: 'The overland and maritime routes of the Silk Roads served as the primary corridors for the spread of Buddhism, Islam, and other cultural traditions across Afro-Eurasia.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_Road_in_7th_century_AD.png'
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
         }
       },
       {
@@ -151,8 +151,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: 'Map: Silk Road Routes and Cultural Diffusion, c. 1200–1450',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_Road_in_7th_century_AD.png',
+    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',
     caption: 'The Silk Road network, overland and maritime, served as the primary corridor for the spread of religion, technology, and cultural practices across Afro-Eurasia from c. 1200 to c. 1450.',
     intro: 'Trade routes were cultural highways. Every caravan that carried silk and spices also carried merchants who prayed differently, wrote in different scripts, and ate different foods. Use this map to trace which routes carried which cultural traditions, and why geography determined what spread where.',
     prompt: 'Choose one religion and one technology. Using the map, trace the most likely route each one traveled between c. 1200 and c. 1450. What geographic features or human settlements made that route possible?',

@@ -49,15 +49,15 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png',
+    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
+    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png',
+    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
     checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
     evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Neville_Chamberlain.jpg',
+    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Neville-Chamberlain.jpg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg'
   };
 

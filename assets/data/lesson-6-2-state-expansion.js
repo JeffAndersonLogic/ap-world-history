@@ -128,10 +128,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** King Leopold II and the Belgian Congo and British and French rule in West Africa show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'Africa after the partition, 1910',
-          caption: 'Twenty-five years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Africa_map_1910.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Africa_map_1910.jpg'
+          title: 'Africa after the partition, 1913',
+          caption: 'Not thirty years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_Colonial_Africa_in_1913.png',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_Colonial_Africa_in_1913.png'
         }
       },
       {

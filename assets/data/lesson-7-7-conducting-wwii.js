@@ -112,7 +112,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.7",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.7+Conducting+World+War+II",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
+        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
         prompt: "Watch for how Britain, the United States, Germany, and the USSR each used propaganda, media, and nationalism to mobilize populations and resources, the difference between democratic and totalitarian mobilization, and how the atomic bomb and fire-bombing increased wartime casualties."
       }
     ],
@@ -128,8 +128,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World War II — montage of the global conflict",
           caption: "The second total war, every major power mobilized propaganda, media, nationalism, and its whole economy, but democracies and dictatorships mobilized differently.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG"
         }
       },
       {
@@ -218,8 +218,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World War II — montage of the global conflict",
           caption: "Same toolkit, different limits, all four powers mobilized propaganda, media, and nationalism, but only the totalitarian states repressed basic freedoms to do it.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG"
         }
       }
     ]
@@ -248,8 +248,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "World War II — montage of the global conflict",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG",
       caption: "The second total war, fought by societies fully mobilized for the front.",
       prompt: "The CED says 'World War II was a total war.' What does it mean for a war to be 'total,' and how is that visible in the scale of this conflict?"
     },

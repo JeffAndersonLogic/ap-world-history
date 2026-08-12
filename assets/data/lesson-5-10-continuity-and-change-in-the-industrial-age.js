@@ -107,14 +107,14 @@ window.BEHISTORICAL_LESSON = {
   stableImages: {
     map:             'https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg',
     first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
     skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png'
+    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
+    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png'
   },
 
   map: {
@@ -172,8 +172,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Manchester from Kersal Moor (William Wyld)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
           caption: "Industrial cities and networks remade where and how people lived and connected (KC-5.1.IV)."
         }
       },
@@ -186,8 +186,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "A Court for King Cholera (Punch, 1852)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
           caption: "Sharp inequality between classes was a continuity industrialization intensified rather than erased."
         }
       },
@@ -200,8 +200,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Manchester from Kersal Moor (William Wyld)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
           caption: "Political and ideological currents from the 1700s continued to drive change long into the industrial age."
         }
       },
@@ -306,8 +306,8 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "Industrial Manchester (William Wyld)",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
       caption: "The reshaped industrial landscape (KC-5.1.IV).",
       prompt: "What part of your extent argument could this image support?"
     }

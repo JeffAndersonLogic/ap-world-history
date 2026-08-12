@@ -4,8 +4,8 @@
 
   lesson.stableImages = {
     map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Hereford-Karte.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Chartres%20Cathedral%20Exterior.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Les%20Tres%20Riches%20Heures%20du%20duc%20de%20Berry%20mars.jpg',
+    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/ChartresCathedral-SouthFacade-high-res.jpg',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg',
     beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Les%20Tres%20Riches%20Heures%20du%20duc%20de%20Berry%20janvier.jpg',
     skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
     checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Bayeux_Tapestry.jpg',

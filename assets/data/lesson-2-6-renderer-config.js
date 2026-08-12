@@ -38,7 +38,7 @@
     evidence: '../assets/images/module-art/unit-2/topic-2-6/evidence.svg',
     source: '../assets/images/module-art/unit-2/topic-2-6/source.svg',
     beInTheRoom: '../assets/images/module-art/unit-2/topic-2-6/beintheroom.svg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png'
+    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg'
   };
 
   lesson.beInTheRoom = {

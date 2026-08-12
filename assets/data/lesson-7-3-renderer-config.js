@@ -59,8 +59,8 @@
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kitchener-Britons.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Unclesamwantyou.jpg',
     checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kitchener-Britons.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/John_Singer_Sargent_-_Gassed.jpg',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_troops_charging_German_positions_at_Neuve_Chapelle_1915.jpg',
+    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sargent,_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg',
     beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Unclesamwantyou.jpg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/British_Mark_I_male_tank_Somme_25_September_1916.jpg'
   };

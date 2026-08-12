@@ -112,10 +112,10 @@ window.BEHISTORICAL_LESSON = {
           "States that controlled gunpowder technology and the iron foundries to produce cannons were not just militarily stronger, they were structurally different from earlier empires. Maintaining and deploying gunpowder armies required **centralized state resources**, bureaucratic organization, and sustained revenue extraction."
         ],
         image: {
-          title: "Ottoman Empire expansion, 1359–1839",
-          caption: "Ottoman territorial expansion over nearly five centuries, beginning in Anatolia and expanding across three continents.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ottoman_empire_1359_to_1839.gif",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Ottoman_empire_1359_to_1839.gif"
+          title: "The Ottoman Empire at its greatest extent, 1683",
+          caption: "The result of three centuries of expansion from a base in Anatolia: by 1683 Ottoman territory reached across three continents.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/OttomanEmpireIn1683.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:OttomanEmpireIn1683.png"
         }
       },
       {
@@ -128,8 +128,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Topkapi Palace, Istanbul",
           caption: "The Ottoman palace complex was a seat of government as much as a residence: expansion had to be administered from somewhere.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Istanbul.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Istanbul.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace,_Istanbul_%2852116768973%29.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Topkapi_Palace,_Istanbul_%2852116768973%29.jpg"
         }
       },
       {
@@ -142,8 +142,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Mughal Empire at its height, c. 1700",
           caption: "Gunpowder, cavalry, and revenue systems let the Mughals expand across South Asia, the same combination the Ottomans and Safavids used.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_1700_map.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_1700_map.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/MughalEmpire1700.svg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:MughalEmpire1700.svg"
         }
       }
     ]
@@ -151,8 +151,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Ottoman Empire Expansion: A Land-Based Empire in Action",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ottoman_empire_1359_to_1839.gif",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Ottoman_empire_1359_to_1839.gif",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/OttomanEmpireIn1683.png",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:OttomanEmpireIn1683.png",
     caption: "Ottoman territorial expansion from c. 1359 to 1839, showing the empire's growth from Anatolia across three continents.",
     intro: "Use this map to trace how the Ottoman Empire expanded from a small Anatolian principality into one of the largest land-based empires in history, connecting Europe, Asia, and Africa.",
     prompt: "Where did Ottoman expansion begin, and in which directions did it spread? What geographic factors, seas, straits, mountain passes, shaped the routes of Ottoman conquest?",

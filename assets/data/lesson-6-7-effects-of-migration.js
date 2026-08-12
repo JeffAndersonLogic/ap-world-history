@@ -106,10 +106,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** Chinese communities across the Pacific and Americas and Indian communities in Africa, the Caribbean, and Southeast Asia show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'Chinatown, San Francisco, 1880',
+          title: 'The Chinese quarter of San Francisco, 1884',
           caption: 'Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chinatown_San_Francisco_1880.jpg'
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Die_Gartenlaube_%281884%29_b_448.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_%281884%29_b_448.jpg'
         }
       },
       {
@@ -293,8 +293,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Chinese communities across the Pacific and Americas',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chinatown_San_Francisco_1880.jpg',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Die_Gartenlaube_%281884%29_b_448.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_%281884%29_b_448.jpg',
       caption: 'Chinese communities across the Pacific and Americas helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Chinese communities across the Pacific and Americas support or complicate a claim about effects of migration?'
     },

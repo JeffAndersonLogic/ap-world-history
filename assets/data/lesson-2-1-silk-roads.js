@@ -126,10 +126,10 @@ window.BEHISTORICAL_LESSON = {
           "Religions and ideas also traveled: **Buddhism** spread from India into Central and East Asia, **Islam** reached Central Asian merchants and communities, and epidemic disease, including the **Black Death**, moved along the same routes as goods."
         ],
         image: {
-          title: "Silk Road routes in the 7th century",
-          caption: "Overland and maritime routes connecting Afro-Eurasian civilizations. By c. 1200 these routes were well established.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Silk_Road_in_7th_century_AD.png"
+          title: "Silk Road routes across Afro-Eurasia",
+          caption: "Overland routes in red and maritime routes in blue, connecting Afro-Eurasian civilizations. By c. 1200 these routes were well established.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Silk_route.jpg"
         }
       },
       {

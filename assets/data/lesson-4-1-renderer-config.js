@@ -39,7 +39,7 @@
     first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
     beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png',
+    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
     checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
     evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',

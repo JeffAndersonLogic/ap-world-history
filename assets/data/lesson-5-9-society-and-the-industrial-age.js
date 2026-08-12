@@ -107,8 +107,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Manchester from Kersal Moor (William Wyld)",
           caption: "A nineteenth-century view of Manchester, the archetypal industrial city, its skyline crowded with factory chimneys. The new class structure of the industrial age was most visible in cities like this, where factory owners and the workers they employed lived very different lives within the same smoke-filled landscape.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld,_William_-_Manchester_from_Kersal_Moor,_with_rustic_figures_and_goats_-_Google_Art_Project.jpg"
         }
       },
       {
@@ -135,8 +135,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "A Court for King Cholera (Punch, 1852)",
           caption: "A satirical illustration of an overcrowded, filthy urban court, the kind of densely packed, poorly drained neighborhood where cholera and typhoid spread. Images like this dramatized the public health crises that accompanied rapid industrial urbanization.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png"
         }
       }
     ]

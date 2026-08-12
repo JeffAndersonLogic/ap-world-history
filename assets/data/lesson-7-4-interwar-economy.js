@@ -208,8 +208,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: The Interwar World, c. 1936",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png",
     caption: "The world of the mid-1930s, empires, new states, and rival economic systems, all working through the same global depression.",
     intro: "Use the map to see why the Depression was global and the answers were national: a worldwide trading system collapsed together, but each state, the United States, Italy, the Soviet Union, Brazil, Mexico, answered inside its own borders and ideology.",
     prompt: "Locate the United States, Italy, the Soviet Union, Brazil, and Mexico. Each answered the same global depression with a different form of state intervention. What about each country's situation, political system, resources, recent history, helps explain why its answer took the form it did?",

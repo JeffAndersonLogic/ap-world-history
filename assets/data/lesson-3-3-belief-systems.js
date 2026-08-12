@@ -108,8 +108,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Safavid Empire and the Ottoman-Safavid frontier",
           caption: "The Safavid Empire at its height. The western frontier with the Ottoman Empire was both a military and a religious boundary, Sunni and Shia state power facing each other across contested terrain.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Safavid_Empire_Map.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Safavid_Empire_Map.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Safavid_persia.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Safavid_persia.png"
         }
       },
       {
@@ -136,10 +136,10 @@ window.BEHISTORICAL_LESSON = {
           "The comparison of Akbar and Aurangzeb is one of the most productive in AP World History: both were capable rulers of the same empire, a century apart. **Akbar's tolerance expanded the empire by drawing diverse elites into a shared imperial project. Aurangzeb's enforcement narrowed the empire's base of loyalty and fueled the rebellions that accelerated Mughal decline.**"
         ],
         image: {
-          title: "Akbar receiving nobles at the Mughal court",
+          title: "The court of Akbar, from the Akbarnama",
           caption: "Akbar governed a mostly Hindu population as a Muslim ruler, and experimented with religious toleration as a tool of empire.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Akbar_receiving_nobles.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Akbar_receiving_nobles.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg"
         }
       }
     ]
@@ -147,8 +147,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Ottoman-Safavid Frontier: A Sunni-Shia Divide",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Safavid_Empire_Map.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Safavid_Empire_Map.png",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Safavid_persia.png",
+    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Safavid_persia.png",
     caption: "The Safavid Empire at its height, showing the Ottoman Empire to the west and the Mughal Empire to the east, each a land-based empire with distinct religious identities and policies.",
     intro: "Use the map to locate the key empires and trace the geographic and religious boundaries between them. Notice how the Safavid Empire's position between two Sunni empires shaped the urgency of its Shia identity.",
     prompt: "How does the geographic position of the Safavid Empire between the Ottoman and Mughal empires help explain why religious identity became such a powerful political tool for Safavid rulers?",

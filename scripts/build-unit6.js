@@ -242,15 +242,15 @@ const MEDIA = {
     // A 1910 map of Africa cannot answer a map question about state expansion in
     // Japan, Russia, and the United States, so this topic gets its own map.
     map: instructionalMap('6.2'),
-    photo: 'Africa_map_1910.jpg', onCard: 1, onEvidence: 0,
-    photoTitle: 'Africa after the partition, 1910',
-    photoCaption: 'Twenty-five years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.'
+    photo: 'Map_of_Colonial_Africa_in_1913.png', onCard: 1, onEvidence: 0,
+    photoTitle: 'Africa after the partition, 1913',
+    photoCaption: 'Not thirty years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.'
   },
   '6.3': {
     map: instructionalMap('6.3'),
-    photo: 'Yaa_Asantewaa.jpg', onCard: 1, onEvidence: 1,
-    photoTitle: 'Yaa Asantewaa, c. 1900',
-    photoCaption: 'Yaa Asantewaa led Asante resistance in the War of the Golden Stool. Indigenous responses to expansion included organized armed defence, not only accommodation.'
+    photo: 'Yaa_Asantewaa_Museum_%284%29.jpg', onCard: 1, onEvidence: 1,
+    photoTitle: 'Statue of Yaa Asantewaa, Ejisu',
+    photoCaption: 'Yaa Asantewaa, commemorated by this statue at the museum in Ejisu, led Asante resistance in the War of the Golden Stool. Indigenous responses to expansion included organized armed defence, not only accommodation.'
   },
   '6.4': {
     map: instructionalMap('6.4'),
@@ -260,20 +260,18 @@ const MEDIA = {
   },
   '6.5': {
     map: instructionalMap('6.5'),
-    photo: 'Buenos_Aires_Port.jpg', onCard: 1, onEvidence: 2,
-    photoTitle: 'The port of Buenos Aires',
-    photoCaption: 'British capital financed Argentina\'s docks and railways. Economic imperialism could direct an economy without formal colonial rule.'
+    photo: 'J30_469_Dique_4.jpg', onCard: 1, onEvidence: 2,
+    photoTitle: 'Puerto Madero, Buenos Aires, begun 1887',
+    photoCaption: 'Dock 4 of Puerto Madero, one of four basins begun in 1887. British capital financed Argentina\'s docks and railways. Economic imperialism could direct an economy without formal colonial rule.'
   },
   '6.6': {
     map: instructionalMap('6.6'),
-    photo: 'Indian_indenture_ship.jpg', onCard: 1, onEvidence: 2,
-    photoTitle: 'An indenture ship carrying Indian laborers',
-    photoCaption: 'After abolition, plantations recruited indentured workers from India and China under contracts that limited pay, movement, and return.'
+    photo: null, onCard: 0, onEvidence: 0
   },
   '6.7': {
     map: instructionalMap('6.7'),
-    photo: 'Chinatown_San_Francisco_1880.jpg', onCard: 1, onEvidence: 1,
-    photoTitle: 'Chinatown, San Francisco, 1880',
+    photo: 'Die_Gartenlaube_%281884%29_b_448.jpg', onCard: 1, onEvidence: 1,
+    photoTitle: 'The Chinese quarter of San Francisco, 1884',
     photoCaption: 'Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.'
   },
   '6.8': {

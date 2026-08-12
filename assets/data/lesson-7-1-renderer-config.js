@@ -62,7 +62,7 @@
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Boxer_Rebellion.jpg',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/MustafaKemalAtaturk.jpg',
+    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mustafa_Kemal_Atat%C3%BCrk_1921.jpg',
     evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Boxer_Rebellion.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',
     beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',

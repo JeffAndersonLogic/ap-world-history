@@ -153,10 +153,10 @@ window.BEHISTORICAL_LESSON = {
           "Energy technologies raised productivity and increased the production of material goods, but created dependence on finite resources and environmental consequences that continue to shape global politics."
         ],
         image: {
-          title: "Oil refinery, 20th century",
+          title: "An oil refinery",
           caption: "Petroleum powered the industrial economies of the 20th century, but created strategic dependencies and environmental consequences.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Oil_Refinery.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Oil_Refinery.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Anacortes_Refinery_31911.JPG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Anacortes_Refinery_31911.JPG"
         }
       },
       {
@@ -201,8 +201,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Global fertility rate trends",
           caption: "More effective birth control contributed to declining fertility rates across much of the world, transforming demographic patterns and family structures.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_population_growth_rate_1950-2050.svg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:World_population_growth_rate_1950-2050.svg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Global_Total_Fertility_Rate,_1960-2016.gif",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Global_Total_Fertility_Rate,_1960-2016.gif"
         }
       }
     ]
@@ -245,8 +245,8 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "Chernobyl Nuclear Power Plant",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_nuclear_power_plant.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Chernobyl_nuclear_power_plant.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_Nuclear_Power_Plant_in_2006.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Chernobyl_Nuclear_Power_Plant_in_2006.jpg",
       caption: "The Chernobyl disaster (1986) exposed the catastrophic risks of nuclear power, an energy technology that had promised abundant, clean electricity.",
       prompt: "How does Chernobyl illustrate the TEC thematic focus, that technological advances shape human development with both intended and unintended consequences?"
     }

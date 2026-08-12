@@ -132,8 +132,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World Map, c. 1700",
           caption: "By c. 1700, a single global trade network connected the Americas, Europe, and Asia. Silver flowed from Potosí west to Manila and east to Seville; Chinese silk and porcelain flowed east and west in return. This was the first genuinely global economic system.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG"
         }
       },
       {
