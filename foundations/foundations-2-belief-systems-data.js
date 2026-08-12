@@ -10,7 +10,7 @@ window.FOUNDATION_TOPIC = {
 
   blockPlan: [
     ['0-10', 'Launch Question', 'Students write: What does a belief system actually do for a society, beyond telling people what to believe?'],
-    ['10-25', 'Map Check', 'Use the Map Module: students trace how Buddhism spread as a model for how all six belief systems diffused, identifying routes and mechanisms.'],
+    ['10-25', 'Map Check', 'Use the Map Module: students trace how Buddhism spread as a model for how all six belief systems diffused, identifying routes and mechanisms. The map colour-codes Theravada, Mahayana, and Vajrayana, so push students to read the arrows rather than the labels, and to notice that the dates mark establishment, not dominance.'],
     ['25-42', 'First & 10', 'Read the survey of the six belief systems. Students identify the core idea of each and one example of syncretism.'],
     ['42-65', 'Lecture Cards', 'Eight cards: Confucianism in two (the five relationships, then the civil service exam), then Daoism, Hinduism, Buddhism, Judaism, Christianity, and Islam, core ideas, institutional roles, and how each spread and adapted.'],
     ['65-80', 'AP Skill Builder', 'Students write a comparison paragraph: how did two of the six belief systems function in their societies?'],
@@ -43,25 +43,28 @@ window.FOUNDATION_TOPIC = {
   timelinePrompt: 'Which moment on this timeline best shows a belief system becoming a historical institution rather than personal faith? Explain your choice.',
 
   map: {
-    title: 'Map: Spread of Buddhism Across Asia',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Buddhism_in_Asia.svg',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Buddhism_in_Asia.svg',
-    caption: 'Buddhism spread from northeastern India across Central Asia, China, Korea, Japan, and Southeast Asia, not through conquest but through merchants, monks, rulers, and pilgrims. Use it as a model for how all six belief systems diffused and adapted.',
-    desc: 'Use this map as a historian: identify the routes, the mechanisms, and the regional variations. Like Christianity and Islam, Buddhism did not travel as a single unchanged system, it adapted at every stop.',
+    title: 'Map: The Origin and Spread of Buddhism Across Asia',
+    url: '../assets/images/maps/foundations-2/buddhism-spread-asia.png',
+    sourceUrl: 'https://www.worldhistory.org/image/19850/map-of-the-spread-of-buddhism-across-asia/',
+    caption: 'Buddhism began on the Gangetic plain in the 5th to 4th century BCE and reached Sri Lanka, the Silk Road oasis towns, China, Korea, Japan, Tibet, mainland Southeast Asia, and the islands of Indonesia, not by conquest but through merchants, monks, pilgrims, translators, and rulers who paid for monasteries. The coloured arrows separate three traditions: Theravada in red from the 3rd century BCE, Mahayana in purple from the 1st century BCE/CE, and Vajrayana in blue from the 7th century CE. Map by World History Encyclopedia (worldhistory.org).',
+    desc: 'Read this map the way a historian would: follow the arrows, not just the labels. Each colour is a different tradition moving at a different time, and the dates mark when Buddhism was established in a place, not when it took over. Use it as the model for how all six belief systems travelled and changed.',
     key: [
-      { label: 'Origin region', detail: 'Northeastern India (Gangetic plain). Buddhism began as a reform within the Hindu/Brahminic tradition, one South Asian belief system growing out of another.' },
-      { label: 'Silk Road routes', detail: 'Buddhism spread to Central Asia and China along overland Silk Road trade routes, carried by merchants who patronized monasteries and monks who traveled with caravans, the same trade-driven mechanism that later carried Islam.' },
-      { label: 'Maritime routes', detail: 'Buddhism spread to Southeast Asia via Indian Ocean maritime trade, carried by Indian merchants and monks to the Malay Peninsula, Java, and Sumatra.' },
-      { label: 'State adoption', detail: 'Belief systems spread rapidly when rulers adopted them. Ashoka spread Buddhism in India; Constantine adopted Christianity in Rome; West African kings embraced Islam. Rulers used religion to legitimate authority.' },
-      { label: 'Adaptation zones', detail: 'Chan (Zen) Buddhism in China blended with Daoist philosophy; Theravada Buddhism in Southeast Asia absorbed local spirit beliefs. These are not corruptions, they are syncretism, the normal process of cultural exchange, seen in every one of the six belief systems.' }
+      { label: 'Origin and heartland, 5th to 4th century BCE (orange block)', detail: 'The shaded zone on the Gangetic plain, the kingdom of Magadha (c.5th century BCE). Bodh Gaya is where Siddhartha Gautama attained enlightenment; Sarnath is where he gave his first sermon and the Buddhist community began. Buddhism started as a reform inside the existing South Asian religious world, one belief system growing out of another.' },
+      { label: 'Initial expansion (orange arrows)', detail: 'Short arrows fanning across the subcontinent to Mathura, Sanchi, Ujjain, and the western cave sites. They are short because this is spread by royal patronage rather than distance travel: Ashoka in the 3rd century BCE funded monasteries and sent missions, which is why Gandhara, Maharashtra, and Sri Lanka all date from that same century. Rulers legitimating themselves through a faith is the same mechanism that later carried Christianity under Constantine and Islam through West African kings.' },
+      { label: 'Theravada, from the 3rd century BCE (red arrows)', detail: 'The "Teaching of the Elders", focused on individual salvation and strict adherence to the Buddha\'s original teachings. It goes south to Sri Lanka (Sinhaladvipa, c.3rd century BCE) and takes root at Anuradhapura and Mihintale, then crosses the Bay of Bengal to the Pyu city-states, Bagan, Dvaravati, and the Thai and Khmer mainland. Sri Lanka is the hinge: the island preserved the tradition and re-exported it centuries later.' },
+      { label: 'Mahayana, from the 1st century BCE/CE (purple arrows)', detail: 'The "Great Vehicle", focused on compassion, the bodhisattva path, and salvation open to everyone. It runs northwest through Gandhara and Bactria, along the Silk Road oases of Kashgar, Khotan, Kucha, and Dunhuang, into Han China (c.1st century CE) at Chang\'an and Luoyang, then onward to Goguryeo in Korea (c.4th century CE) and the Yamato court in Japan (c.6th century CE). A second purple track goes by sea to Champa, Funan, and Srivijaya.' },
+      { label: 'Vajrayana, from the 7th century CE (blue arrows)', detail: 'The "Diamond Vehicle", focused on esoteric practice, ritual, and tantra as a fast path. It leaves the great monastic universities of Nalanda, Vikramasila, and Odantapura for Tibet (c.7th century CE), where Samye becomes the first monastery, and much later reaches Mongolia (c.13th century CE). Notice that this tradition originates in institutions, not in a founder.' },
+      { label: 'The Silk Road and the sea lanes', detail: 'The pale band across Central Asia is the overland Silk Road, and the map calls it the major conduit for transmission. The oasis towns strung along it are monastery towns: Dunhuang and the Mogao caves became a translation centre where Indian texts were turned into Chinese. Meanwhile the maritime arrows through Srivijaya, Palembang, and Borobudur show the Indian Ocean doing the same work by ship. Belief systems moved on the infrastructure that trade had already built.' },
+      { label: 'What the dates and arrows do not mean', detail: 'The map says so itself, and it matters for an AP argument. Dates mark the earliest known establishment or a strong presence, not continuous dominance. Arrows are broad pathways built from pilgrimage, trade, monastic networks, translation, and royal patronage, not single journeys or fixed routes. And the three traditions are separated for clarity even though they developed gradually and overlapped in the same regions for centuries.' }
     ],
     questions: [
-      'What routes did Buddhism follow from India to China? What does this reveal about the connection between trade and cultural exchange?',
-      'Why would a ruler adopt a belief system such as Buddhism, Christianity, or Islam? What political benefits did it offer?',
-      'How does Buddhism in Japan or Southeast Asia differ from Buddhism in India? What does that tell you about syncretism?',
-      'If you mapped the spread of Islam or Christianity, what routes and mechanisms would they share with Buddhism, and how would they differ?'
+      'Trace one route from Bodh Gaya to Chang\'an. Which oasis towns does it pass through, and what does the Silk Road band running underneath it tell you about who was actually carrying the religion?',
+      'Sri Lanka is dated c.3rd century BCE and Mongolia c.13th century CE, a gap of roughly 1,500 years. Using the arrows and their colours, explain why Buddhism reached one so early and the other so late.',
+      'Find a region where arrows of two different colours arrive. What does that overlap show, and what does the map\'s own note about overlapping traditions warn you against concluding from it?',
+      'Vajrayana\'s blue arrows begin at Nalanda and Vikramasila, which are monasteries rather than cities or courts. What does that tell you about belief systems as institutions rather than private faith?',
+      'If you drew this same map for Islam or for Christianity, which routes would look almost identical, and which would look completely different? Name a specific place on this map for each.'
     ],
-    prompt: 'Using the map as evidence, explain how Buddhism spread to at least two different regions. Identify the mechanism of spread (trade, state adoption, missionaries) and explain one way the religion adapted, then connect it to how another of the six belief systems spread.'
+    prompt: 'Using the map as your evidence, explain how Buddhism reached two different regions. For each one, name the specific places the arrows pass through, identify which tradition arrived (Theravada, Mahayana, or Vajrayana) and roughly when, and state the mechanism that carried it: trade, pilgrimage, monastic networks, translation, or royal patronage. Then connect it to another of the six belief systems: which mechanism did Christianity or Islam share with Buddhism, and where did the two differ?'
   },
 
   first10: {
