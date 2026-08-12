@@ -138,8 +138,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Akbar receiving nobles at the Mughal court",
           caption: "Akbar governed a mostly Hindu population as a Muslim ruler, and experimented with religious toleration as a tool of empire.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Akbar_receiving_nobles.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Akbar_receiving_nobles.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg"
         }
       }
     ]

@@ -60,7 +60,7 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG',
+    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
     first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg',

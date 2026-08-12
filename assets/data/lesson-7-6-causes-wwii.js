@@ -96,7 +96,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.6",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.6+Causes+of+World+War+II",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
+        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
         prompt: "Watch for the four causes the CED names, the unsustainable peace after WWI, the Great Depression, continued imperialist aspirations, and especially the rise of fascist and totalitarian regimes, and how aggressive militarism, above all Nazi Germany under Hitler, turned those tensions into war."
       }
     ],
@@ -112,8 +112,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World War II — montage of the global conflict",
           caption: "The war the interwar tensions produced, the CED asks you to explain its causes, and names four of them in a single sentence.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG"
         }
       },
       {
@@ -187,8 +187,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Neville Chamberlain",
           caption: "Chamberlain, face of appeasement, the policy that, with a powerless League, taught expansionist powers that aggression carried no consequences.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Neville_Chamberlain.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Neville_Chamberlain.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/MunichAgreement.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:MunichAgreement.jpg"
         }
       },
       {
@@ -232,8 +232,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "World War II — montage of the global conflict",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.png",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG",
       caption: "The second total war, the conflict the CED asks you to explain the causes of.",
       prompt: "The CED names four causes of this war in one sentence. Which of them do you think mattered most, and why does the framework single out 'the rise of fascist and totalitarian regimes'?"
     },
@@ -253,8 +253,8 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "Neville Chamberlain",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Neville_Chamberlain.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Neville_Chamberlain.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/MunichAgreement.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:MunichAgreement.jpg",
       caption: "Chamberlain and appeasement, the powerless League and the policy that emboldened aggression.",
       prompt: "The League's failure is not in the Key Concept's list of causes, but it multiplied them. How did unpunished aggression and appeasement turn the four causes into an actual war?"
     }

@@ -155,8 +155,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Oil refinery, 20th century",
           caption: "Petroleum powered the industrial economies of the 20th century, but created strategic dependencies and environmental consequences.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Oil_Refinery.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Oil_Refinery.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Abadanraffinerie.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Abadanraffinerie.jpg"
         }
       },
       {
@@ -231,8 +231,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Early Radio Broadcast, 1920s",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Atwater_Kent_radio.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Atwater_Kent_radio.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Early_1920s_radio_and_horn_speaker.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Early_1920s_radio_and_horn_speaker.png",
       caption: "Radio brought news, entertainment, and government messages into millions of homes for the first time, collapsing the distance between states and citizens.",
       prompt: "How did radio change the relationship between governments and the people they governed? What new possibilities, and risks, did instant mass communication create?"
     },
@@ -245,8 +245,8 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "Chernobyl Nuclear Power Plant",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_nuclear_power_plant.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Chernobyl_nuclear_power_plant.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_nuclear_plant2.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Chernobyl_nuclear_plant2.jpg",
       caption: "The Chernobyl disaster (1986) exposed the catastrophic risks of nuclear power, an energy technology that had promised abundant, clean electricity.",
       prompt: "How does Chernobyl illustrate the TEC thematic focus, that technological advances shape human development with both intended and unintended consequences?"
     }

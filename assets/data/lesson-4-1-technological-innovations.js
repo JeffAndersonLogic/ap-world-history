@@ -117,8 +117,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World Map, c. 1700",
           caption: "By 1700, European maritime exploration had produced detailed world maps, the direct result of the navigational technologies and systematic state-sponsored voyaging developed in the 15th century.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG"
         }
       },
       {

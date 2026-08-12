@@ -242,7 +242,7 @@ const MEDIA = {
     // A 1910 map of Africa cannot answer a map question about state expansion in
     // Japan, Russia, and the United States, so this topic gets its own map.
     map: instructionalMap('6.2'),
-    photo: 'Africa_map_1910.jpg', onCard: 1, onEvidence: 0,
+    photo: '1910_map_of_Africa.png', onCard: 1, onEvidence: 0,
     photoTitle: 'Africa after the partition, 1910',
     photoCaption: 'Twenty-five years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.'
   },
@@ -260,19 +260,19 @@ const MEDIA = {
   },
   '6.5': {
     map: instructionalMap('6.5'),
-    photo: 'Buenos_Aires_Port.jpg', onCard: 1, onEvidence: 2,
+    photo: 'Buenos_Aires_1915.jpg', onCard: 1, onEvidence: 2,
     photoTitle: 'The port of Buenos Aires',
     photoCaption: 'British capital financed Argentina\'s docks and railways. Economic imperialism could direct an economy without formal colonial rule.'
   },
   '6.6': {
     map: instructionalMap('6.6'),
-    photo: 'Indian_indenture_ship.jpg', onCard: 1, onEvidence: 2,
+    photo: 'Indian_indentured_labourers_on_a_sugar_estate,_Mauritius,_1870.jpg', onCard: 1, onEvidence: 2,
     photoTitle: 'An indenture ship carrying Indian laborers',
     photoCaption: 'After abolition, plantations recruited indentured workers from India and China under contracts that limited pay, movement, and return.'
   },
   '6.7': {
     map: instructionalMap('6.7'),
-    photo: 'Chinatown_San_Francisco_1880.jpg', onCard: 1, onEvidence: 1,
+    photo: 'Willard_B._Farwell,_Official_Map_of_Chinatown_1885,_Cornell_CUL_PJM_1093_01.jpg', onCard: 1, onEvidence: 1,
     photoTitle: 'Chinatown, San Francisco, 1880',
     photoCaption: 'Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.'
   },

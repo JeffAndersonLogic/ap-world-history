@@ -107,8 +107,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Topkapi Palace, Istanbul — seat of Ottoman power",
           caption: "The Ottoman imperial court at Topkapi was the administrative heart of an empire spanning three continents. The palace trained and housed the devshirme recruits who staffed the imperial bureaucracy.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Istanbul.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Istanbul.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_01.JPG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Topkapi_Palace_01.JPG"
         }
       },
       {
@@ -121,8 +121,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Mughal Empire at its greatest extent, c. 1700",
           caption: "The Mughal Empire administered hundreds of provinces through the mansabdar system, linking military obligation to revenue rights across a subcontinent.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_1700_map.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_1700_map.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:1700_CE_world_map.PNG"
         }
       },
       {
@@ -135,8 +135,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Akbar's multicultural Mughal court",
           caption: "Akbar deliberately incorporated Hindu Rajput nobles, Muslim commanders, and Persian scholars into a single imperial service. Accommodation was a calculated strategy, not generosity.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Akbar_receiving_nobles.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Akbar_receiving_nobles.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg"
         }
       }
     ]
@@ -144,8 +144,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Mughal Empire and Its Administrative Provinces",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_1700_map.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_1700_map.png",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:1700_CE_world_map.PNG",
     caption: "The Mughal Empire at its greatest extent c. 1700, showing the provincial structure administered through the mansabdar system.",
     intro: "Use the map to understand how the Mughal Empire organized vast territories through administrative provinces, each governed by mansabdars who owed military service and revenue to the emperor.",
     prompt: "How did the geographic scale of the Mughal Empire make centralized administration difficult, and how did the mansabdar system address that challenge?",

@@ -135,8 +135,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "A Court for King Cholera, Punch, 1852",
           caption: "Public-health reform grew directly out of scenes like this one: reformers argued that epidemics were a policy failure, not fate.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Court_for_King_Cholera.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png"
         }
       }
     ]

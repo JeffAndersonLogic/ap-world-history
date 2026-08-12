@@ -41,12 +41,12 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Ottoman_empire_1359_to_1839.gif',
+    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/OttomanEmpireIn1683.png',
     first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Istanbul.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_1700_map.png',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Akbar_receiving_nobles.jpg',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_01.JPG',
+    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
     evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Safavid_Empire_Map.png',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Shah_Abbas_I.jpg',
     beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',

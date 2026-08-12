@@ -162,8 +162,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World Map, c. 1700",
           caption: "A world map from c. 1700 showing the global extent of European maritime empires at their height, Portuguese trading posts along African and Asian coasts, Spanish colonial territories in the Americas, and Dutch and British commercial networks across the Indian Ocean and Atlantic.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG"
         }
       }
     ]

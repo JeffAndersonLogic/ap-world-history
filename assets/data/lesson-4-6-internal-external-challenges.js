@@ -132,8 +132,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World Map, c. 1700",
           caption: "By c. 1700, the global map of European empires reflected decades of commercial rivalry, military conflict, and colonial competition. The Dutch had displaced the Portuguese across much of the Indian Ocean; the British and French were competing for dominance in North America and the Caribbean.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG"
         }
       }
     ]

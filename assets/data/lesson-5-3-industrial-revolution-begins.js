@@ -126,8 +126,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "A Court for King Cholera, Punch, 1852",
           caption: "Industrial cities grew faster than sanitation. Overcrowding and contaminated water made epidemics a predictable feature of factory towns.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Court_for_King_Cholera.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png"
         }
       }
     ]

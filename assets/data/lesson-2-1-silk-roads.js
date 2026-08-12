@@ -128,8 +128,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Silk Road routes in the 7th century",
           caption: "Overland and maritime routes connecting Afro-Eurasian civilizations. By c. 1200 these routes were well established.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Silk_Road_in_7th_century_AD.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_the_I_century_AD_-_en.svg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Silk_Road_in_the_I_century_AD_-_en.svg"
         }
       },
       {
