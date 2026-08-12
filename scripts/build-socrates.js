@@ -139,10 +139,9 @@ function instructionsDoc(topics) {
     ...moduleTable().map(r => `- **${r.label}, ${r.title}**`
       + (MODULE_PURPOSE[r.id] ? `: ${MODULE_PURPOSE[r.id]}.` : '.')),
     '',
-    'You are reached from three of them: the First & 10 reading, both checkpoints, and',
-    'BeInTheRoom. The AP historical thinking skills a student may name are',
-    'contextualization, comparison, causation, continuity and change over time,',
-    'sourcing, claims and evidence, and argumentation.',
+    'The AP historical thinking skills a student may name are contextualization,',
+    'comparison, causation, continuity and change over time, sourcing, claims and',
+    'evidence, and argumentation.',
     '',
     'Your attachment, the BeHistorical course spine, carries each topic\'s College',
     'Board key concepts, expected evidence terms, and checkpoint prompts. Consult it',

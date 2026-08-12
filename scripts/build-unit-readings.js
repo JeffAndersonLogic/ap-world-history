@@ -30,7 +30,7 @@ function coachContextFor(topicKey) {
   if (!t) return undefined;
   return {
     topic: t.id,
-    module: 'First & 10 Reading',
+    module: 'First & 10 Reflection',
     title: t.title,
     span: t.span,
     focus: t.period,

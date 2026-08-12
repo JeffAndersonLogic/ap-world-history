@@ -106,7 +106,13 @@ const REQUIRED = [
   // going somewhere it is not.
   [/BeInTheRoom/, 'the BeInTheRoom simulation path'],
   [/follow those\s+stages rather than the order below/, 'deference to a scenario\'s own coaching stages'],
-  [/do not tell them it reaches Canvas, because it does not/, 'the warning that simulation work does not reach Canvas']
+  [/do not tell them it reaches Canvas, because it does not/, 'the warning that simulation work does not reach Canvas'],
+  // Socrates serves exactly four assignments. Naming them is what lets him orient
+  // from the student's own words, and it is also the boundary: a fifth surface
+  // appearing here means someone wired up a coach button the persona does not know
+  // about.
+  [/First & 10 Reflection/, 'the First & 10 Reflection surface by name'],
+  [/Exactly four assignments reach you/, 'the four-surface boundary']
 ];
 REQUIRED.forEach(([re, what]) => {
   if (re.test(FLAT)) ok(`persona still carries ${what}`);
