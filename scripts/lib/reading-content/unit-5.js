@@ -212,7 +212,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.1, The Enlightenment. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of Enlightenment ideas and their limits.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "5.10": {
     "topicKey": "5.10",
@@ -368,7 +367,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.10, Continuity and Change in the Industrial Age, the unit\\'s argumentation capstone. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. This topic asks me to argue the EXTENT to which industrialization brought change from 1750 to 1900, so check whether I take a clear, defensible position on how much changed (rather than just listing changes), whether I support BOTH change and continuity with specific evidence, and whether I concede the other side. Then ask me one follow-up question that pushes my extent argument deeper.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "5.2": {
     "topicKey": "5.2",
@@ -555,7 +553,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.2, Nationalism and Revolutions. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of the Atlantic Revolutions and the limits of Enlightenment universalism.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "5.3": {
     "topicKey": "5.3",
@@ -763,7 +760,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.3, The Industrial Revolution Begins. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of the causes of the Industrial Revolution and its social effects on the working class.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "5.4": {
     "topicKey": "5.4",
@@ -947,7 +943,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.4, Industrialization Spreads. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Focus especially on my comparison between regions that industrialized and regions that did not, and on whether my argument about the role of colonialism in blocking industrialization is well-supported with specific evidence. Point out any gaps in my reasoning, suggest stronger or more specific examples, and ask me a follow-up question that deepens my analysis of how political sovereignty shaped economic development in the 19th century.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "5.5": {
     "topicKey": "5.5",
@@ -1135,7 +1130,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.5, Technology of Industrialization. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of the relationship between technology and social change in the 19th century.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "5.6": {
     "topicKey": "5.6",
@@ -1319,7 +1313,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.6, Industrialization: Government and Society. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning about class formation, ideology, and government response. Suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of how industrialization reshaped social and political life.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "5.7": {
     "topicKey": "5.7",
@@ -1487,7 +1480,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.7, Economic Developments and Innovations. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of the relationship between financial innovation and economic power in the 19th century.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "5.8": {
     "topicKey": "5.8",
@@ -1667,7 +1659,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.8, Reactions to the Industrial Economy. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of the relationship between industrial capitalism and the reform movements that responded to it.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "5.9": {
     "topicKey": "5.9",
@@ -1820,6 +1811,5 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.9, Society and the Industrial Age. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of the relationship between industrial capitalism and the reform movements that responded to it.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   }
 };

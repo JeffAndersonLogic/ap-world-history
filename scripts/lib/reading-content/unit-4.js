@@ -201,7 +201,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": true,
-    "promptScript": "function collectAnswers() {\n  const items = document.querySelectorAll('.question-item');\n  return Array.from(items).map((item, i) => {\n    const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n    const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n    return 'Q' + (i+1) + ': ' + q + '\\nAnswer: ' + a;\n  }).join('\\n\\n');\n}\n\nfunction buildAiPrompt() {\n  const answers = collectAnswers();\n  const prompt = 'I just finished a First & 10 reading for AP World History. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps, suggest stronger evidence, and ask me a follow-up question to deepen my analysis.';\n  const output = document.getElementById('ai-output');\n  if (output) output.value = prompt;\n}\n\nfunction copyAiPrompt() {\n  const output = document.getElementById('ai-output');\n  if (!output || !output.value) { buildAiPrompt(); }\n  if (output && output.value) {\n    navigator.clipboard.writeText(output.value).catch(() => {});\n  }\n}"
   },
   "4.2": {
     "topicKey": "4.2",
@@ -390,7 +389,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": true,
-    "promptScript": "function collectAnswers() {\n  const items = document.querySelectorAll('.question-item');\n  return Array.from(items).map((item, i) => {\n    const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n    const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n    return 'Q' + (i+1) + ': ' + q + '\\nAnswer: ' + a;\n  }).join('\\n\\n');\n}\n\nfunction buildAiPrompt() {\n  const answers = collectAnswers();\n  const prompt = 'I just finished a First & 10 reading for AP World History. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps, suggest stronger evidence, and ask me a follow-up question to deepen my analysis.';\n  const output = document.getElementById('ai-output');\n  if (output) output.value = prompt;\n}\n\nfunction copyAiPrompt() {\n  const output = document.getElementById('ai-output');\n  if (!output || !output.value) { buildAiPrompt(); }\n  if (output && output.value) {\n    navigator.clipboard.writeText(output.value).catch(() => {});\n  }\n}"
   },
   "4.3": {
     "topicKey": "4.3",
@@ -580,7 +578,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": true,
-    "promptScript": "function collectAnswers() {\n  const items = document.querySelectorAll('.question-item');\n  return Array.from(items).map((item, i) => {\n    const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n    const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n    return 'Q' + (i+1) + ': ' + q + '\\nAnswer: ' + a;\n  }).join('\\n\\n');\n}\n\nfunction buildAiPrompt() {\n  const answers = collectAnswers();\n  const prompt = 'I just finished a First & 10 reading for AP World History. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps, suggest stronger evidence, and ask me a follow-up question to deepen my analysis.';\n  const output = document.getElementById('ai-output');\n  if (output) output.value = prompt;\n}\n\nfunction copyAiPrompt() {\n  const output = document.getElementById('ai-output');\n  if (!output || !output.value) { buildAiPrompt(); }\n  if (output && output.value) {\n    navigator.clipboard.writeText(output.value).catch(() => {});\n  }\n}"
   },
   "4.4": {
     "topicKey": "4.4",
@@ -753,7 +750,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 4.4, Maritime Empires Established. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that will deepen my analysis of how European maritime empires compared to each other.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "4.5": {
     "topicKey": "4.5",
@@ -922,7 +918,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 4.5, Maritime Empires Maintained and Developed. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that will deepen my analysis of how labor systems sustained European maritime empires.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "4.6": {
     "topicKey": "4.6",
@@ -1091,7 +1086,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 4.6, Internal and External Challenges to State Power. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of how resistance challenged European maritime empires.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "4.7": {
     "topicKey": "4.7",
@@ -1260,7 +1254,6 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 4.7, Changing Social Hierarchies. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of how colonialism changed social hierarchies.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   },
   "4.8": {
     "topicKey": "4.8",
@@ -1433,6 +1426,5 @@ module.exports = {
     },
     "lessonFile": "",
     "padQuestionNumbers": false,
-    "promptScript": "function collectAnswers() {\n    const items = document.querySelectorAll('.question-item');\n    return Array.from(items).map((item, i) => {\n      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';\n      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';\n      return 'Q' + (i + 1) + ': ' + q + '\\nAnswer: ' + a;\n    }).join('\\n\\n');\n  }\n\n      function buildAiPrompt() {\n    const answers = collectAnswers();\n    const prompt = 'I just finished a First & 10 reading for AP World History Topic 4.8, Continuity and Change in the Period from c. 1450 to c. 1750. Here are my answers:\\n\\n' + answers + '\\n\\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my CCOT analysis of global trade from 1450 to 1750.';\n    const output = document.getElementById('ai-output');\n    if (output) output.value = prompt;\n  }\n\n  function copyAiPrompt() {\n    const output = document.getElementById('ai-output');\n    if (!output || !output.value) { buildAiPrompt(); }\n    if (output && output.value) {\n      navigator.clipboard.writeText(output.value).catch(function() {});\n    }\n  }"
   }
 };

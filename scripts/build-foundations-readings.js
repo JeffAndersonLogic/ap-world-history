@@ -22,6 +22,28 @@ const fs = require('fs');
 const path = require('path');
 const { renderFirst10Page } = require('./lib/first10-page');
 const CONTENT = require('./lib/foundations-f10-content');
+const { loadCourse } = require('./lib/socrates-course');
+
+// Same assignment context the unit readings and the checkpoints carry, so
+// Socrates is told the same thing wherever a Foundations student reaches him.
+// Foundations topic keys are f0 to f5; the course loader calls them F0 to F5.
+const COURSE = new Map(loadCourse().topics.map(t => [t.id.toLowerCase(), t]));
+
+function coachContextFor(topicKey) {
+  const t = COURSE.get(String(topicKey).trim().toLowerCase());
+  if (!t) return undefined;
+  return {
+    topic: t.id,
+    module: 'First & 10 Reading',
+    title: t.title,
+    span: t.span,
+    focus: t.period,
+    targets: t.targets,
+    criteria: t.criteria,
+    kcs: t.kcs.map(k => ({ code: k.code, text: k.text })),
+    terms: t.terms
+  };
+}
 
 const ROOT = path.resolve(__dirname, '..');
 const DIR = path.join(ROOT, 'foundations');
@@ -57,7 +79,8 @@ function build(topic) {
     navPrev: topic.navPrev,
     navNext: topic.navNext,
     padQuestionNumbers: true,
-    promptScript: topic.promptScript
+    promptScript: topic.promptScript,
+    coachContext: coachContextFor(topic.topicKey)
   });
 }
 

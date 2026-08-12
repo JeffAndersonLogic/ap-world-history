@@ -3,14 +3,26 @@
 # The Socrates paste contract
 
 Socrates gets his topic knowledge from the student's pasted message, not from
-his own instructions. This file is the shape of that message. Three things have
-to agree on it, and nothing in a vendor web UI can be tested, so the shape is
-written down here and asserted by `scripts/test/socrates-contract.test.js`:
+his own instructions. This file is the shape of that message.
 
-1. the persona in `scripts/lib/socrates-persona.js`, under "Reading the paste";
-2. `generateCheckpointPrompt()` in `assets/js/behistorical-topic-renderer-v1.js`;
-3. `buildAiPrompt()` in `scripts/lib/first10-page.js`, and the Foundations
-   renderer's equivalent.
+There is exactly one implementation of it,
+`assets/js/behistorical-coach-prompt.js`, reached four ways:
+
+1. the persona in `scripts/lib/socrates-persona.js` describes it, under
+   "Reading the paste";
+2. `generateCheckpointPrompt()` in `assets/js/behistorical-topic-renderer-v1.js`
+   calls it, from a copy inlined by `scripts/build-coach-prompt.js`;
+3. the 77 generated First & 10 readings call it, from a copy that
+   `scripts/lib/first10-page.js` emits into each page;
+4. `scripts/lib/socrates-course.js` calls it to produce this document and to
+   feed the graded eval.
+
+Three checks hold that together: `build-coach-prompt.js --check` re-derives the
+renderer's inlined copy and fails on drift, `scripts/test/coach-prompt.test.js`
+drives a real lesson page in Chromium and asserts the built paste is
+byte-identical to what this document specifies, and
+`scripts/test/socrates-contract.test.js` asserts all 77 topics can produce a
+complete block.
 
 Every field below is read off the lesson data at build time, so a teacher who
 edits a checkpoint prompt changes what the coach is told, with no second copy
@@ -51,3 +63,27 @@ Coach me by asking one question at a time. Do not write my final answer for me.
 - **Checklist.** The same three expectations the student can already see on the
   page, so coach and page cannot contradict each other.
 - **Assigned prompt.** The coach needs the question, not just the answer.
+
+## The reading variant
+
+A First & 10 reading sends the same header lines and differs only below them,
+because a reading is three questions rather than one prompt:
+
+```
+Topic 7.2, First & 10 Reading, Causes of World War I.
+... the same Period, Lesson focus, Learning target, Success criteria,
+... Key concept and Focus terms lines ...
+
+Here are my responses:
+
+Question 1: <the question, read off the page>
+My response: <what the student typed>
+
+Question 2: ...
+
+Coach me by asking one question at a time. Do not write my final answer for me.
+```
+
+It carries no assigned prompt and no checklist, because a reading has neither.
+Pairing each answer with its question is the point: three loose paragraphs give
+the coach no way to tell which one was meant to be about causation.

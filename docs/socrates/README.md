@@ -174,23 +174,52 @@ question whose answer depends on MagicSchool's retrieval working.
    is 8 KB, which has not hit a cap in practice, but nobody outside MagicSchool
    can say where the cap is. If a paste is truncated, the index is the part to
    cut: the paste already tells the coach which topic it is in.
-2. **The paste is not yet enriched on the site, and this is the gap that matters.**
-   The renderers still send the topic, module, title, focus terms, and the draft,
-   which is 630 characters at the median. That is Arm A's prompt, and it is what
-   students get today. Until `generateCheckpointPrompt()` in
-   `assets/js/behistorical-topic-renderer-v1.js` and `buildAiPrompt()` in
-   `scripts/lib/first10-page.js` emit the block in
-   `socrates-paste-contract.md`, pasting the new instructions buys the persona and
-   the spine but not the measured Arm B result.
-3. **`contextBlock()` cannot be shared with the renderers.** They run in a browser
-   from a static host with no build step, so the paste shape is currently written
-   once in `scripts/lib/socrates-course.js` and once in each renderer, which is
-   exactly the two-implementations problem this repo avoids elsewhere. The
-   contract doc and the contract test are the stopgap. The real fix is to generate
-   a small data file the renderers read, the way `skills-map.js` already works.
-4. **The eval covers eight inputs on five topics, one turn each.** It does not
-   cover Foundations, the First & 10 three-answer paste, or a student who pushes
-   back twice, which is where a coach most often caves and writes the answer.
-5. **Arm A is a reconstruction.** The real Unit 1 instructions live in MagicSchool
+2. **The eval covers eight inputs on five topics, one turn each.** It does not
+   cover Foundations, or a student who pushes back twice, which is where a coach
+   most often caves and writes the answer. It measures the checkpoint shape; the
+   reading shape ships on the same builder but is not separately graded.
+3. **Arm A is a reconstruction.** The real Unit 1 instructions live in MagicSchool
    where nothing here can read them. Paste the real text over `ARM_A_PERSONA` in
    the eval to compare against the actual bot rather than a stand-in.
+4. **The renderer's copy of the builder is a derived copy.** It is inlined rather
+   than loaded as a fourth `<script src>`, because the alternative is a sweep
+   across 77 hand-authored shells. `build-coach-prompt.js --check` fails the push
+   on drift, so it cannot rot silently, but it is still a copy.
+
+## Resolved, and what it cost
+
+**The paste is enriched and live on all 77 topics.** Both surfaces now emit the
+full contract from one implementation in
+`assets/js/behistorical-coach-prompt.js`: the checkpoint bridge in the shared
+renderer, and all 77 generated First & 10 readings. Measured medians are 3,103
+characters for a checkpoint and 3,331 for a reading, roughly 520 and 555 words.
+`scripts/test/coach-prompt.test.js` drives a real lesson page in Chromium and
+asserts the built paste is byte-identical to the Node contract.
+
+**Wiring it up uncovered a live bug that had nothing to do with Socrates.** The
+58 unit readings and 6 Foundations readings each carried their own hand-written
+`promptScript`, 64 separate implementations of one thing, lifted out of the
+pre-migration HTML. Ten of them, all nine Unit 7 topics plus Topic 6.1, opened
+with a stray `});`.
+
+That is a SyntaxError, and a browser discards the whole `<script>` element when it
+hits one. On those ten readings:
+
+- Build AI Prompt and Copy Prompt were both undefined, so the buttons were dead;
+- the confidence scale never rendered, 0 radio inputs instead of 15;
+- the answer-capture block never ran, so the three reading answers were never
+  written to storage and **never reached Canvas**.
+
+All of it verified in Chromium against a healthy reading as a control. Every
+structural check stayed green the whole time, because `validate.js` asserts the
+capture block is present and byte-identical to the lib, and it was. The bytes were
+perfect and the code was unreachable.
+
+That is the third time the First & 10 capture has been silently lost, and the
+first time presence was not the problem. `scripts/test/readings-parse.test.js` is
+the new gate: it compiles the trailing script of all 77 readings and is in the
+offline suite, so it costs milliseconds and cannot be forgotten. It was verified
+by reintroducing the exact `});` and watching it fail.
+
+All 64 hand-written prompt scripts are now deleted. Removing them changed not one
+byte of generated output, because the shared builder had already replaced them.

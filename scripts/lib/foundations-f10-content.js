@@ -131,7 +131,6 @@ module.exports = {
       "label": "Content Delivery →"
     },
     "coachUrl": "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    "promptScript": "function collectAnswers(){\n  return Array.from(document.querySelectorAll('.q-textarea,.qta')).map((ta, i)=>{return{num:i+1, value:ta.value||'(no response)'}});\n}\nfunction collectQuestions(){\n  return Array.from(document.querySelectorAll('.q-text,.qt')).map(el=>el.textContent.trim());\n}\nfunction buildAiPrompt(){\n  const ans=collectAnswers(), qs=collectQuestions();\n  document.getElementById('ai-output').value=\n    'I completed the First & 10 reading for AP World History Foundations 0: Intro to BeHistorical, a Day 1 baseline about who I am as a historical thinker. Here are my responses:\\n\\n'+\n    ans.map((a, i)=>'Question '+a.num+': '+(qs[i]||'')+'\\nMy response: '+a.value).join('\\n\\n')+\n    '\\n\\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me sharpen this baseline, make it more honest, more specific, and more clearly in my own voice. Do not write it for me.';\n}\nfunction copyAiPrompt(){\n  navigator.clipboard.writeText(document.getElementById('ai-output').value).catch(()=>{});\n}",
     "sourceFile": "first-and-10-foundations-0-intro-to-behistorical.html",
     "lessonFile": "foundations-0-intro-to-behistorical.html"
   },
@@ -247,7 +246,6 @@ module.exports = {
       "label": "Content Delivery →"
     },
     "coachUrl": "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    "promptScript": "function collectAnswers(){\n  return Array.from(document.querySelectorAll('.q-textarea,.qta')).map((ta,i)=>{return{num:i+1,value:ta.value||'(no response)'}});\n}\nfunction collectQuestions(){\n  return Array.from(document.querySelectorAll('.q-text,.qt')).map(el=>el.textContent.trim());\n}\nfunction buildAiPrompt(){\n  const ans=collectAnswers(),qs=collectQuestions();\n  document.getElementById('ai-output').value=\n    'I completed the First & 10 reading for AP World History Foundations 1: Geography Shapes Civilization. Here are my responses:\\n\\n'+\n    ans.map((a,i)=>'Question '+a.num+': '+(qs[i]||'')+'\\nMy response: '+a.value).join('\\n\\n')+\n    '\\n\\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\nfunction copyAiPrompt(){\n  navigator.clipboard.writeText(document.getElementById('ai-output').value).catch(()=>{});\n}",
     "sourceFile": "first-and-10-foundations-1-geography.html",
     "lessonFile": "foundations-1-geography.html"
   },
@@ -375,7 +373,6 @@ module.exports = {
       "label": "Content Delivery →"
     },
     "coachUrl": "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    "promptScript": "function collectAnswers(){\n  return Array.from(document.querySelectorAll('.q-textarea,.qta')).map((ta,i)=>{return{num:i+1,value:ta.value||'(no response)'}});\n}\nfunction collectQuestions(){\n  return Array.from(document.querySelectorAll('.q-text,.qt')).map(el=>el.textContent.trim());\n}\nfunction buildAiPrompt(){\n  const ans=collectAnswers(),qs=collectQuestions();\n  document.getElementById('ai-output').value=\n    'I completed the First & 10 reading for AP World History Foundations 2: Belief Systems and Cultural Exchange. Here are my responses:\\n\\n'+\n    ans.map((a,i)=>'Question '+a.num+': '+(qs[i]||'')+'\\nMy response: '+a.value).join('\\n\\n')+\n    '\\n\\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\nfunction copyAiPrompt(){\n  navigator.clipboard.writeText(document.getElementById('ai-output').value).catch(()=>{});\n}",
     "sourceFile": "first-and-10-foundations-2-belief-systems.html",
     "lessonFile": "foundations-2-belief-systems.html"
   },
@@ -502,7 +499,6 @@ module.exports = {
       "label": "Content Delivery →"
     },
     "coachUrl": "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    "promptScript": "function collectAnswers(){\n  return Array.from(document.querySelectorAll('.q-textarea,.qta')).map((ta,i)=>{return{num:i+1,value:ta.value||'(no response)'}});\n}\nfunction collectQuestions(){\n  return Array.from(document.querySelectorAll('.q-text,.qt')).map(el=>el.textContent.trim());\n}\nfunction buildAiPrompt(){\n  const ans=collectAnswers(),qs=collectQuestions();\n  document.getElementById('ai-output').value=\n    'I completed the First & 10 reading for AP World History Foundations 3: States, Power, and Social Organization. Here are my responses:\\n\\n'+\n    ans.map((a,i)=>'Question '+a.num+': '+(qs[i]||'')+'\\nMy response: '+a.value).join('\\n\\n')+\n    '\\n\\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\nfunction copyAiPrompt(){\n  navigator.clipboard.writeText(document.getElementById('ai-output').value).catch(()=>{});\n}",
     "sourceFile": "first-and-10-foundations-3-states-power.html",
     "lessonFile": "foundations-3-states-power.html"
   },
@@ -629,7 +625,6 @@ module.exports = {
       "label": "Content Delivery →"
     },
     "coachUrl": "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    "promptScript": "function collectAnswers(){\n  return Array.from(document.querySelectorAll('.q-textarea,.qta')).map((ta,i)=>{return{num:i+1,value:ta.value||'(no response)'}});\n}\nfunction collectQuestions(){\n  return Array.from(document.querySelectorAll('.q-text,.qt')).map(el=>el.textContent.trim());\n}\nfunction buildAiPrompt(){\n  const ans=collectAnswers(),qs=collectQuestions();\n  document.getElementById('ai-output').value=\n    'I completed the First & 10 reading for AP World History Foundations 4: Trade Networks and Innovation. Here are my responses:\\n\\n'+\n    ans.map((a,i)=>'Question '+a.num+': '+(qs[i]||'')+'\\nMy response: '+a.value).join('\\n\\n')+\n    '\\n\\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\nfunction copyAiPrompt(){\n  navigator.clipboard.writeText(document.getElementById('ai-output').value).catch(()=>{});\n}",
     "sourceFile": "first-and-10-foundations-4-trade-networks.html",
     "lessonFile": "foundations-4-trade-networks.html"
   },
@@ -745,7 +740,6 @@ module.exports = {
       "label": "Content Delivery →"
     },
     "coachUrl": "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    "promptScript": "function collectAnswers(){\n  return Array.from(document.querySelectorAll('.q-textarea,.qta')).map((ta,i)=>{return{num:i+1,value:ta.value||'(no response)'}});\n}\nfunction collectQuestions(){\n  return Array.from(document.querySelectorAll('.q-text,.qt')).map(el=>el.textContent.trim());\n}\nfunction buildAiPrompt(){\n  const ans=collectAnswers(),qs=collectQuestions();\n  document.getElementById('ai-output').value=\n    'I completed the First & 10 reading for AP World History Foundations 5: The World at c.1200. Here are my responses:\\n\\n'+\n    ans.map((a,i)=>'Question '+a.num+': '+(qs[i]||'')+'\\nMy response: '+a.value).join('\\n\\n')+\n    '\\n\\nPlease act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\nfunction copyAiPrompt(){\n  navigator.clipboard.writeText(document.getElementById('ai-output').value).catch(()=>{});\n}",
     "sourceFile": "first-and-10-foundations-5-world-at-1200.html",
     "lessonFile": "foundations-5-world-at-1200.html"
   }

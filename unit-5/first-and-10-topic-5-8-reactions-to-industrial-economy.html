@@ -44,29 +44,179 @@
   <p class="page-footer-note">Organize your thinking here, submit your final work in Canvas.</p><footer class="module-footer"><span class="footer-note">Topic 5.8, Reactions to the Industrial Economy</span><nav class="footer-nav"><a class="nav-btn prev" href="#">← Map &amp; Geography</a><a class="nav-btn" href="#">Content Delivery →</a></nav></footer>
 </div><script>
 var TOPIC_KEY='5.8';var TOPIC_LABEL='5.8 - Reactions to the Industrial Economy';
-function collectAnswers() {
-    const items = document.querySelectorAll('.question-item');
-    return Array.from(items).map((item, i) => {
-      const q = item.querySelector('.q-text') ? item.querySelector('.q-text').textContent.trim() : '';
-      const a = item.querySelector('.q-textarea') ? item.querySelector('.q-textarea').value.trim() : '';
-      return 'Q' + (i + 1) + ': ' + q + '\nAnswer: ' + a;
-    }).join('\n\n');
+/**
+ * behistorical-coach-prompt.js
+ *
+ * The one implementation of the Socrates paste contract: the message a student
+ * copies out of a checkpoint bridge or a First & 10 reading and pastes into the
+ * AI coach.
+ *
+ * WHY THIS FILE EXISTS
+ *
+ * Socrates is one MagicSchool chatbot serving all 77 topics, and his own
+ * instructions carry no unit content on purpose. Everything he knows about the
+ * assignment in front of the student arrives in this block. If a field goes
+ * missing here, the coaching degrades to generic writing advice and every
+ * structural check stays green, which is why the shape is asserted rather than
+ * remembered. See docs/socrates/README.md.
+ *
+ * FOUR CONSUMERS, ONE IMPLEMENTATION
+ *
+ * This file runs in a browser and in Node, the same way
+ * scripts/lib/canvas-parse-core.js does, because four things need the same
+ * answer to "what does a paste for Topic 7.2 look like":
+ *
+ *   1. the checkpoint bridge in assets/js/behistorical-topic-renderer-v1.js,
+ *      where the text is inlined between sentinels by
+ *      scripts/build-coach-prompt.js;
+ *   2. the 77 generated First & 10 readings, where scripts/lib/first10-page.js
+ *      emits this file's source into the page;
+ *   3. scripts/lib/socrates-course.js, which builds the same block from the
+ *      lesson data for the documented contract and for the graded eval;
+ *   4. scripts/test/socrates-contract.test.js, which asserts all 77 topics can
+ *      produce a complete one.
+ *
+ * Two implementations would mean two answers depending on which door the student
+ * came through, and the one that shipped would be the one nothing tested.
+ *
+ * DO NOT hand-edit the inlined copy inside the renderer. Change this file and run
+ * `node scripts/build-coach-prompt.js`.
+ */
+
+(function () {
+  'use strict';
+
+  // The College Board's own unit spans from the AP World History Modern CED.
+  //
+  // This table is here rather than derived from the lesson data because
+  // `meta.subtitle` carries a date range on only 38 of the 77 topics. On the
+  // other 39 it is a thematic sentence, so labelling it "Period" would tell a
+  // Unit 7 student their period is "How imperialist competition [...] escalated
+  // one assassination into global war." Without a real period line the coach has
+  // nothing to check an anachronism against, and catching anachronisms is one of
+  // the eight things the graded eval measures.
+  //
+  // It lives in this file so the renderer, the readings, and the Node side all
+  // read one table. Foundations is Jeff's own pre-course unit and has no CED span.
+  var UNIT_PERIODS = {
+    0: 'before c. 1200',
+    1: 'c. 1200 to c. 1450',
+    2: 'c. 1200 to c. 1450',
+    3: 'c. 1450 to c. 1750',
+    4: 'c. 1450 to c. 1750',
+    5: 'c. 1750 to c. 1900',
+    6: 'c. 1750 to c. 1900',
+    7: 'c. 1900 to the present',
+    8: 'c. 1900 to the present',
+    9: 'c. 1900 to the present'
+  };
+
+  // Accepts '7.2', 'Topic 7.2', 7, or 'F3'.
+  function unitPeriod(topicOrUnit) {
+    var s = String(topicOrUnit == null ? '' : topicOrUnit);
+    if (/^F/i.test(s.trim())) return UNIT_PERIODS[0];
+    var m = s.match(/(\d+)/);
+    return m ? (UNIT_PERIODS[Number(m[1])] || '') : '';
   }
 
-      function buildAiPrompt() {
-    const answers = collectAnswers();
-    const prompt = 'I just finished a First & 10 reading for AP World History Topic 5.8, Reactions to the Industrial Economy. Here are my answers:\n\n' + answers + '\n\nPlease give me feedback on my historical thinking. Point out any gaps in my reasoning, suggest stronger or more specific evidence, and ask me a follow-up question that deepens my analysis of the relationship between industrial capitalism and the reform movements that responded to it.';
-    const output = document.getElementById('ai-output');
-    if (output) output.value = prompt;
+  function clean(value) {
+    return String(value == null ? '' : value).replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
   }
 
-  function copyAiPrompt() {
-    const output = document.getElementById('ai-output');
-    if (!output || !output.value) { buildAiPrompt(); }
-    if (output && output.value) {
-      navigator.clipboard.writeText(output.value).catch(function() {});
+  function joinList(value) {
+    return (Array.isArray(value) ? value : []).map(clean).filter(Boolean);
+  }
+
+  /**
+   * ctx fields, all optional except topic and title:
+   *   topic     '7.2'
+   *   module    'Checkpoint 2' or 'First & 10 Reading'
+   *   title     the topic title
+   *   span      the CED unit period, e.g. 'c. 1900 to the present'
+   *   focus     the lesson subtitle, a thematic sentence
+   *   targets   learning target sentences
+   *   criteria  success criteria sentences
+   *   kcs       [{code, text}]
+   *   terms     expected evidence terms
+   *   checklist strong-answer checklist sentences
+   *   assigned  the assigned prompt
+   *   draft     the student's single response  (checkpoint shape)
+   *   answers   [{question, response}]         (reading shape)
+   *
+   * The order is deliberate. The topic line is first because it is what lets one
+   * bot serve 77 topics, and the student's own writing is last because a model
+   * reads what bounds the task before what it is being asked to judge.
+   */
+  function buildCoachPrompt(ctx) {
+    var c = ctx || {};
+    var lines = [];
+
+    lines.push('Topic ' + clean(c.topic) + ', ' + (clean(c.module) || 'Checkpoint')
+      + ', ' + clean(c.title) + '.');
+    if (clean(c.span)) lines.push('Period: ' + clean(c.span) + '.');
+    if (clean(c.focus)) lines.push('Lesson focus: ' + clean(c.focus));
+
+    var targets = joinList(c.targets);
+    if (targets.length) lines.push('Learning target: ' + targets.join(' '));
+
+    var criteria = joinList(c.criteria);
+    if (criteria.length) lines.push('Success criteria: ' + criteria.join(' '));
+
+    var kcs = (Array.isArray(c.kcs) ? c.kcs : [])
+      .map(function (k) { return clean(k && k.code) + ' ' + clean(k && k.text); })
+      .map(function (s) { return s.trim(); })
+      .filter(Boolean);
+    if (kcs.length) lines.push('Key concept: ' + kcs.join(' '));
+
+    var terms = joinList(c.terms);
+    if (terms.length) lines.push('Focus terms: ' + terms.join(', ') + '.');
+
+    var checklist = joinList(c.checklist);
+    if (checklist.length) lines.push('Strong answer checklist: ' + checklist.join(' '));
+
+    if (clean(c.assigned)) lines.push('Assigned prompt: ' + clean(c.assigned));
+
+    // A reading carries three question-and-answer pairs; a checkpoint carries one
+    // draft. Both keep the student's own words verbatim rather than cleaned, since
+    // the coach is being asked to judge exactly what the student wrote.
+    var answers = Array.isArray(c.answers) ? c.answers : null;
+    if (answers && answers.length) {
+      lines.push('', 'Here are my responses:', '');
+      answers.forEach(function (a, i) {
+        var q = clean(a && a.question);
+        lines.push('Question ' + (i + 1) + (q ? ': ' + q : ''));
+        lines.push('My response: ' + String((a && a.response) || '').trim());
+        if (i < answers.length - 1) lines.push('');
+      });
+      lines.push('');
+    } else {
+      lines.push('', 'Here is my response:', '',
+        c.draft == null ? '{{DRAFT}}' : String(c.draft).trim(), '');
     }
+
+    lines.push('Coach me by asking one question at a time. Do not write my final answer for me.');
+    return lines.join('\n');
   }
+
+  var API = {
+    buildCoachPrompt: buildCoachPrompt,
+    unitPeriod: unitPeriod,
+    UNIT_PERIODS: UNIT_PERIODS
+  };
+  if (typeof module !== 'undefined' && module.exports) module.exports = API;
+  if (typeof window !== 'undefined') window.BH_COACH = API;
+})();
+var COACH_CONTEXT = {"topic":"5.8","module":"First & 10 Reading","title":"Reactions to the Industrial Economy","span":"c. 1750 to c. 1900","focus":"How workers built collective power through trade unions and strikes, abolitionists challenged slavery's structural connection to industrial capitalism, and reformers transformed education, public health, and social life in response to industrialization's dislocations","targets":["I can explain how workers organized through trade unions, strikes, and political parties to improve wages and working conditions, and analyze how government and employer responses, including violent suppression, shaped the development of the labor movement in Britain and the United States.","I can explain how abolitionism challenged slavery's structural connection to the industrial cotton economy, and how reform movements, including public education, public health reform, and temperance, responded to the social dislocations of industrialization."],"criteria":["I can explain why trade unions were illegal under early industrial-era law (Combination Acts in Britain; criminal conspiracy doctrine in the US) and how this legal framework shaped what forms of collective action were available to workers. I can describe three specific labor events and their significance: the Great Railroad Strike of 1877 (first major US labor uprising, broken by state and federal troops); the Haymarket affair of 1886 (bomb at eight-hour workday rally, used to criminalize labor radicalism); and the Pullman Strike of 1894 (nationwide solidarity strike broken by federal troops, Eugene Debs imprisoned). I can explain how the American Federation of Labor (1886) chose 'pure and simple unionism' over political radicalism, and why. I can compare British and American labor movements: why did Britain develop a Labour Party while the United States did not?","I can explain the structural connection between industrial capitalism (specifically the textile industry) and American slavery through the cotton economy, and how abolitionists used this connection in their arguments. I can describe the British abolition of slavery (1833, effective 1838) and the role of the abolitionist movement and the 1831–32 Baptist War. I can explain how the American Cotton Famine (1861–1865) forced British textile mills to diversify cotton sources, restructuring global cotton supply chains. I can give at least two examples of industrial-era reform movements beyond labor and abolitionism (public education reform, Forster Act 1870, mandatory schooling; public health reform, Edwin Chadwick's 1842 report, germ theory, Great Stink/Bazalgette sewers; temperance, WCTU 1874) and explain the connection between each reform and the social dislocations of industrialization."],"kcs":[{"code":"KC-5.1.V.D","text":"In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms."},{"code":"KC-5.1.V.A","text":"In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers’ movements and political parties emerged in different areas, promoting alternative visions of society."},{"code":"KC-5.3.IV.A.ii","text":"Discontent with established power structures encouraged the development of various ideologies, including those espoused by Karl Marx, and the ideas of socialism and communism."},{"code":"KC-5.1.V.B","text":"In response to the expansion of industrializing states, some governments in Asia and Africa, including the Ottoman Empire and Qing China, sought to reform and modernize their economies and militaries. Reform efforts were often resisted by some members of government or established elite groups."}],"terms":["Combination Acts","criminal conspiracy doctrine","trade union","collective bargaining","Great Railroad Strike","Haymarket affair","Pullman Strike","Eugene Debs","American Federation of Labor","May Day","abolitionism","Baptist War","Frederick Douglass","Thirteenth Amendment","Cotton Famine","Forster Act","Edwin Chadwick","germ theory","Bazalgette sewer","WCTU"]};
+function answers(){return[1,2,3].map(function(n){return(document.getElementById('q'+n)||{}).value||'';});}
+function questionTexts(){return Array.prototype.slice.call(document.querySelectorAll('.q-text')).map(function(el){return el.textContent.trim();});}
+function buildAiPrompt(){
+  var vals=answers(),qs=questionTexts();
+  var ctx={};for(var k in COACH_CONTEXT)ctx[k]=COACH_CONTEXT[k];
+  ctx.answers=vals.map(function(v,i){return{question:qs[i]||'',response:(v||'').trim()||'(no response yet)'};});
+  var out=window.BH_COACH.buildCoachPrompt(ctx);
+  document.getElementById('ai-output').value=out;return out;
+}
+function copyAiPrompt(){var out=buildAiPrompt();if(navigator.clipboard)navigator.clipboard.writeText(out).catch(function(){});}
 /* BeHistorical First & 10 answer capture ------------------------------------------------------------
  * These three textareas sit inside an iframe, so the lesson page cannot read
  * them directly. Answers, their questions, and the student's confidence go to

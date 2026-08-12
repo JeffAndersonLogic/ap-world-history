@@ -12,6 +12,28 @@ const { captureWrapper } = require('./lib/first10-capture-wrapper');
 const { inspect } = require('util');
 const vm = require('vm');
 const { renderFirst10Page } = require('./lib/first10-page');
+const { loadCourse } = require('./lib/socrates-course');
+
+// The reading's AI Coach prompt carries the same assignment context a checkpoint's
+// does, read from the lesson data so the two cannot disagree about what Socrates
+// is told. See docs/socrates/socrates-paste-contract.md.
+const COURSE = new Map(loadCourse().topics.map(t => [t.id, t]));
+
+function coachContextFor(topicId) {
+  const t = COURSE.get(String(topicId).replace(/^Topic\s+/i, '').trim());
+  if (!t) return undefined;
+  return {
+    topic: t.id,
+    module: 'First & 10 Reading',
+    title: t.title,
+    span: t.span,
+    focus: t.period,
+    targets: t.targets,
+    criteria: t.criteria,
+    kcs: t.kcs.map(k => ({ code: k.code, text: k.text })),
+    terms: t.terms
+  };
+}
 const F10_CONTENT = require('./lib/f10-content');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -389,6 +411,8 @@ function first10Page(topic) {
     return renderFirst10Page({
       unit: 9,
       topicId: topic.id,
+    coachContext: coachContextFor(topic.id),
+      coachContext: coachContextFor(topic.id),
       title: topic.title,
       subtitle: f.deck,
       learningObjective: topic.lo,
@@ -415,6 +439,7 @@ function first10Page(topic) {
   return renderFirst10Page({
     unit: 9,
     topicId: topic.id,
+    coachContext: coachContextFor(topic.id),
     title: topic.title,
     subtitle: 'Read for historical mechanism, specific evidence, continuity and change, and a defensible qualification.',
     learningObjective: topic.lo,

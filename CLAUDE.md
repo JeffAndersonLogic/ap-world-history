@@ -93,6 +93,9 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/test/modal-focus.unit.js` and `node scripts/test/modal-focus.foundations.js`, drive a real lesson page in Chromium and assert the modal focus contract. Needs `npm i playwright-core`; `validate.js` stays offline and dependency-free, so these are separate. Run them when touching any modal open/close path.
 - `node scripts/test/lecture-deck.test.js`, walk the whole lecture deck on both renderers and assert the student can still scroll afterwards. This is the regression gate for the stranded-student bug described under "The Lecture Deck" below, and it also covers Back to Modules and the video block. In the browser suite.
 - `node scripts/build-skills-map.js`, regenerate `assets/data/skills-map.js`, the AP skill and evidence-term lookup the Skills Lens inlines. Run it after editing a checkpoint's `terms`, a `skillBuilder.label`, or a reading's `q-skill` badges.
+- `node scripts/build-coach-prompt.js`, inline `assets/js/behistorical-coach-prompt.js` into the topic renderer between its sentinels. That file is the one implementation of the AI coach paste contract, shared by the checkpoint bridge, all 77 generated readings, and the Node side. `--check` fails on drift, which is what `validate.js` runs. Never hand-edit between the sentinels.
+- `node scripts/test/readings-parse.test.js`, compile the trailing `<script>` of all 77 readings and fail if any is not valid JavaScript. In the offline suite. Ten readings once shipped with a stray `});` that threw a SyntaxError, which discards the whole script element: the AI prompt buttons, the confidence scale, and the answer capture all died at once, with every structural check green because the capture block was present and byte-identical. It was simply unreachable.
+- `node scripts/test/coach-prompt.test.js`, drive a real lesson page in Chromium and assert the checkpoint paste is byte-identical to what `scripts/lib/socrates-course.js` produces. In the browser suite. It is the only check that the renderer actually *calls* the shared builder with the right fields.
 - `node scripts/build-socrates.js`, regenerate the Socrates Kit in `docs/socrates/`: the instructions to paste into MagicSchool, the course spine to attach, and the paste contract. `--check` fails on drift without writing, which is what the offline suite runs. Run it after editing any lesson data or the persona.
 - `node scripts/test/socrates-eval.js [--reps N] [--arm A|B|both]`, the graded stress test for the AI coach. Eight adversarial student inputs against the real persona and the real generated context blocks. Exits 2 when the `claude` CLI is absent, so it is not in the offline suite; `--strict` turns that skip into a failure. With one rep it is a regression gate, not a tuning instrument: use `--reps 3` or more before believing a persona edit helped.
 - `node scripts/sync-first10-capture.js`, install the canonical First & 10 answer-capture block from `scripts/lib/first10-capture-block.js` into all 77 readings. That block is the only path by which the three reading answers and their confidence ratings reach Canvas, and it has gone missing silently twice. `validate.js` now fails if the block is absent **or** if any of the four files that must agree on the `behistorical-first10-<TOPIC_KEY>` storage key stops using it, which is the version of this failure that leaves every structural check green.
@@ -291,12 +294,18 @@ whole design. Read `docs/socrates/README.md` before touching any of it.
   carries no unit names, no date ranges, and no unit numbers. With one bot serving
   77 topics, a content word in the persona is content the other 76 get coached
   with. `scripts/test/socrates-contract.test.js` fails the push if one reappears.
-- **The paste** carries the one assignment in front of the student, built by
-  `contextBlock()` in `scripts/lib/socrates-course.js` from the lesson data.
-  This is what makes one bot work for nine units: retrieval cannot miss a fact
-  that is already in the message. `docs/socrates/socrates-paste-contract.md` is
-  the documented shape, generated from that same function so the doc cannot
-  describe something the code does not produce.
+- **The paste** carries the one assignment in front of the student and is what
+  makes one bot work for nine units: retrieval cannot miss a fact that is already
+  in the message. There is exactly one implementation,
+  `assets/js/behistorical-coach-prompt.js`, reached four ways: the checkpoint
+  bridge in the renderer, via a copy inlined by `build-coach-prompt.js`; all 77
+  generated readings, via a copy `first10-page.js` emits into each page;
+  `scripts/lib/socrates-course.js`, for the docs and the eval; and the contract
+  test. Medians are about 520 words for a checkpoint and 555 for a reading.
+  `docs/socrates/socrates-paste-contract.md` is generated from that same builder,
+  so the doc cannot describe something the code does not produce.
+  **Do not add a second prompt builder.** There were 64 of them, one per reading,
+  and ten were malformed badly enough to kill their page's entire script block.
 - **The spine** is the generated attachment, for questions off the module path.
 
 **Never paste unit content into the instructions field, and never hand-build a

@@ -38,6 +38,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const { buildCoachPrompt, unitPeriod } = require('../../assets/js/behistorical-coach-prompt');
 
 const ROOT = path.join(__dirname, '..', '..');
 const DATA = path.join(ROOT, 'assets', 'data');
@@ -45,30 +46,6 @@ const FOUND = path.join(ROOT, 'foundations');
 
 const problems = [];
 const problem = m => problems.push(m);
-
-// The one hand-entered table in this file, and the reason it exists: `meta.subtitle`
-// carries a date range on only 38 of the 77 topics. On the other 39 it is a
-// thematic sentence, so labelling it "Period" in the paste would tell a Unit 7
-// student their period is "How imperialist competition [...] escalated one
-// assassination into global war." Without a real period line the coach has
-// nothing to check an anachronism against, which is one of the eight things the
-// stress test measures.
-//
-// These are the College Board's own unit spans from the AP World History Modern
-// CED, not a judgement call, so they change only when the CED does. Foundations
-// is Jeff's own pre-course unit and has no CED span.
-const UNIT_PERIODS = {
-  0: 'before c. 1200',
-  1: 'c. 1200 to c. 1450',
-  2: 'c. 1200 to c. 1450',
-  3: 'c. 1450 to c. 1750',
-  4: 'c. 1450 to c. 1750',
-  5: 'c. 1750 to c. 1900',
-  6: 'c. 1750 to c. 1900',
-  7: 'c. 1900 to the present',
-  8: 'c. 1900 to the present',
-  9: 'c. 1900 to the present'
-};
 
 function sandbox() {
   const box = {
@@ -142,7 +119,7 @@ function unitTopics() {
       unit: clean(L.meta.unit),
       title: clean(L.meta.title),
       period: clean(L.meta.subtitle),
-      span: UNIT_PERIODS[Number(m[1])] || '',
+      span: unitPeriod(m[1]),
       targets: list((L.learningTargets || []).map(t => t.target || t)),
       criteria: list((L.successCriteria || []).map(c => c.criteria || c)),
       kcs: kcs.map(k => ({
@@ -202,7 +179,7 @@ function foundationsTopics() {
       unit: 'Foundations',
       title: clean(T.title),
       period: clean(T.subtitle),
-      span: UNIT_PERIODS[0],
+      span: unitPeriod('F'),
       targets: list((T.learningTargets || []).map(t => t.target || t)),
       criteria: list((T.successCriteria || []).map(c => c.criteria || c)),
       kcs: [],
@@ -221,29 +198,27 @@ function foundationsTopics() {
 // a teacher who edits a checkpoint prompt changes what the coach is told with no
 // second copy to remember to update.
 //
-// The order is deliberate: the topic line first, because it is what lets one bot
-// serve 77 topics, and the student's draft last, because a model reads what
-// bounds the task before what it is being asked to judge.
+// The block itself is assembled by assets/js/behistorical-coach-prompt.js, which
+// is the same file the renderer and the 77 readings use. This function's only job
+// is choosing which checkpoint and mapping the loaded topic onto its fields.
 function contextBlock(topic, opts) {
   const o = opts || {};
   const cp = topic.checkpoints[o.checkpoint == null ? topic.checkpoints.length - 1 : o.checkpoint];
   if (!cp) return null;
-  const lines = [
-    `Topic ${topic.id}, ${cp.label || 'Checkpoint'}, ${topic.title}.`
-  ];
-  if (topic.span) lines.push(`Period: ${topic.span}.`);
-  if (topic.period) lines.push(`Lesson focus: ${topic.period}`);
-  if (topic.targets.length) lines.push(`Learning target: ${topic.targets.join(' ')}`);
-  if (topic.criteria.length) lines.push(`Success criteria: ${topic.criteria.join(' ')}`);
-  if (topic.kcs.length) {
-    lines.push(`Key concept: ${topic.kcs.map(k => `${k.code} ${k.text}`).join(' ')}`);
-  }
-  if (cp.terms.length) lines.push(`Focus terms: ${cp.terms.join(', ')}.`);
-  if (cp.focus.length) lines.push(`Strong answer checklist: ${cp.focus.join(' ')}`);
-  lines.push(`Assigned prompt: ${cp.prompt}`);
-  lines.push('', 'Here is my response:', '', o.draft == null ? '{{DRAFT}}' : o.draft, '');
-  lines.push('Coach me by asking one question at a time. Do not write my final answer for me.');
-  return lines.join('\n');
+  return buildCoachPrompt({
+    topic: topic.id,
+    module: cp.label || 'Checkpoint',
+    title: topic.title,
+    span: topic.span,
+    focus: topic.period,
+    targets: topic.targets,
+    criteria: topic.criteria,
+    kcs: topic.kcs,
+    terms: cp.terms,
+    checklist: cp.focus,
+    assigned: cp.prompt,
+    draft: o.draft
+  });
 }
 
 function loadCourse() {

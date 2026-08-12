@@ -16,6 +16,30 @@
 const fs = require('fs');
 const path = require('path');
 const { renderFirst10Page } = require('./lib/first10-page');
+const { loadCourse } = require('./lib/socrates-course');
+
+// The reading's AI Coach prompt has to carry the same assignment context a
+// checkpoint's does, and that context lives in the lesson data rather than in the
+// reading content module. Loaded once here and looked up per topic, so the reading
+// and the checkpoint cannot disagree about what Socrates is told.
+// See docs/socrates/socrates-paste-contract.md.
+const COURSE = new Map(loadCourse().topics.map(t => [t.id, t]));
+
+function coachContextFor(topicKey) {
+  const t = COURSE.get(String(topicKey).replace(/^Topic\s+/i, '').trim());
+  if (!t) return undefined;
+  return {
+    topic: t.id,
+    module: 'First & 10 Reading',
+    title: t.title,
+    span: t.span,
+    focus: t.period,
+    targets: t.targets,
+    criteria: t.criteria,
+    kcs: t.kcs.map(k => ({ code: k.code, text: k.text })),
+    terms: t.terms
+  };
+}
 
 const ROOT = path.resolve(__dirname, '..');
 const DIR = path.join(ROOT, 'scripts', 'lib', 'reading-content');
@@ -52,6 +76,7 @@ function build(topic) {
     navNext: topic.navNext,
     padQuestionNumbers: topic.padQuestionNumbers,
     promptScript: topic.promptScript,
+    coachContext: coachContextFor(topic.topicKey),
     moduleBadge: topic.moduleBadge,
     moduleName: topic.moduleName,
     readingEyebrow: topic.readingEyebrow,

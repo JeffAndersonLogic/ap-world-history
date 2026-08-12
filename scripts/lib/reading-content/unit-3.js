@@ -197,7 +197,6 @@ module.exports = {
     },
     "lessonFile": "../unit-3/index.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 3.1: Empires Expand. Here are my responses:\\n\\n' +\n    'Question 1: Explain how gunpowder technology contributed to the expansion of land-based empires after c. 1450. Use at least one specific empire as evidence.\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: What changed about warfare and imperial expansion between c. 1200–c. 1450 and c. 1450–c. 1750? What stayed the same?\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: Was the conquest of Constantinople in 1453 a turning point in world history? Use evidence to support your argument.\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\n\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   },
   "3.2": {
     "topicKey": "3.2",
@@ -382,7 +381,6 @@ module.exports = {
     },
     "lessonFile": "../unit-3/lesson-3-1-empires-expand.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 3.2: Empires: Administration. Here are my responses:\\n\\n' +\n    'Question 1: Explain why land-based empires developed specialized administrative systems like devshirme or mansabdar. What problem were rulers trying to solve?\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: How did the Ottoman devshirme system and the Mughal mansabdar system each create loyalty to the emperor? What did they have in common, and how did they differ?\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: Explain whether accommodation of local elites was a sign of imperial strength or weakness. Use specific evidence to support your argument.\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   },
   "3.3": {
     "topicKey": "3.3",
@@ -559,7 +557,6 @@ module.exports = {
     },
     "lessonFile": "../unit-3/lesson-3-2-empires-administration.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 3.3: Empires and Belief Systems. Here are my responses:\\n\\n' +\n    'Question 1: Explain why Shah Ismail I forced Persia to convert to Shia Islam. What problem was he trying to solve?\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: Explain what caused the Battle of Chaldiran (1514). What were both the military and religious dimensions?\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: Was Akbar\\'s approach to religious diversity more effective than Aurangzeb\\'s? Use specific evidence.\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   },
   "3.4": {
     "topicKey": "3.4",
@@ -731,6 +728,5 @@ module.exports = {
     },
     "lessonFile": "../unit-3/lesson-3-3-belief-systems.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 3.4: Comparison in Land-Based Empires. Here are my responses:\\n\\n' +\n    'Question 1: Identify one meaningful similarity between two empires in their administrative loyalty systems.\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: Identify one meaningful difference between two empires in religious policy and explain what accounts for it.\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: Write a comparison argument (2-3 sentences) and state what it reveals about imperial rule.\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   }
 };

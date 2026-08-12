@@ -37,24 +37,179 @@
   <p class="page-footer-note">Organize your thinking here, submit your final work in Canvas.</p><footer class="module-footer"><span class="footer-note">Topic 8.4, Spread of Communism After 1900</span><nav class="footer-nav"><a class="nav-btn prev" href="../unit-8/index.html">&#8592; Map &amp; Geography</a><a class="nav-btn" href="../unit-8/lesson-8-4-spread-of-communism.html#lecture">Content Delivery &#8594;</a></nav></footer>
 </div><script>
 var TOPIC_KEY='8.4';var TOPIC_LABEL='Spread of Communism After 1900';
-function buildAiPrompt() {
-  var q1 = document.getElementById('q1').value || '(no response)';
-  var q2 = document.getElementById('q2').value || '(no response)';
-  var q3 = document.getElementById('q3').value || '(no response)';
-  document.getElementById('ai-output').value =
-    'I completed the First & 10 reading for AP World History Topic 8.4: Spread of Communism After 1900. Here are my responses:\n\n' +
-    'Question 1 (Causation): Explain the two causes of China\'s communist revolution, internal tension AND Japanese aggression.\n' +
-    'My response: ' + q1 + '\n\n' +
-    'Question 2 (Causation): Explain how the Great Leap Forward represented state economic control and its repressive policies and negative repercussions.\n' +
-    'My response: ' + q2 + '\n\n' +
-    'Question 3 (Causation/Comparison): Explain causes and effects of two redistribution examples and compare them.\n' +
-    'My response: ' + q3 + '\n\n' +
-    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and causation/comparison arguments. Do not write the final answer for me.';
+/**
+ * behistorical-coach-prompt.js
+ *
+ * The one implementation of the Socrates paste contract: the message a student
+ * copies out of a checkpoint bridge or a First & 10 reading and pastes into the
+ * AI coach.
+ *
+ * WHY THIS FILE EXISTS
+ *
+ * Socrates is one MagicSchool chatbot serving all 77 topics, and his own
+ * instructions carry no unit content on purpose. Everything he knows about the
+ * assignment in front of the student arrives in this block. If a field goes
+ * missing here, the coaching degrades to generic writing advice and every
+ * structural check stays green, which is why the shape is asserted rather than
+ * remembered. See docs/socrates/README.md.
+ *
+ * FOUR CONSUMERS, ONE IMPLEMENTATION
+ *
+ * This file runs in a browser and in Node, the same way
+ * scripts/lib/canvas-parse-core.js does, because four things need the same
+ * answer to "what does a paste for Topic 7.2 look like":
+ *
+ *   1. the checkpoint bridge in assets/js/behistorical-topic-renderer-v1.js,
+ *      where the text is inlined between sentinels by
+ *      scripts/build-coach-prompt.js;
+ *   2. the 77 generated First & 10 readings, where scripts/lib/first10-page.js
+ *      emits this file's source into the page;
+ *   3. scripts/lib/socrates-course.js, which builds the same block from the
+ *      lesson data for the documented contract and for the graded eval;
+ *   4. scripts/test/socrates-contract.test.js, which asserts all 77 topics can
+ *      produce a complete one.
+ *
+ * Two implementations would mean two answers depending on which door the student
+ * came through, and the one that shipped would be the one nothing tested.
+ *
+ * DO NOT hand-edit the inlined copy inside the renderer. Change this file and run
+ * `node scripts/build-coach-prompt.js`.
+ */
+
+(function () {
+  'use strict';
+
+  // The College Board's own unit spans from the AP World History Modern CED.
+  //
+  // This table is here rather than derived from the lesson data because
+  // `meta.subtitle` carries a date range on only 38 of the 77 topics. On the
+  // other 39 it is a thematic sentence, so labelling it "Period" would tell a
+  // Unit 7 student their period is "How imperialist competition [...] escalated
+  // one assassination into global war." Without a real period line the coach has
+  // nothing to check an anachronism against, and catching anachronisms is one of
+  // the eight things the graded eval measures.
+  //
+  // It lives in this file so the renderer, the readings, and the Node side all
+  // read one table. Foundations is Jeff's own pre-course unit and has no CED span.
+  var UNIT_PERIODS = {
+    0: 'before c. 1200',
+    1: 'c. 1200 to c. 1450',
+    2: 'c. 1200 to c. 1450',
+    3: 'c. 1450 to c. 1750',
+    4: 'c. 1450 to c. 1750',
+    5: 'c. 1750 to c. 1900',
+    6: 'c. 1750 to c. 1900',
+    7: 'c. 1900 to the present',
+    8: 'c. 1900 to the present',
+    9: 'c. 1900 to the present'
+  };
+
+  // Accepts '7.2', 'Topic 7.2', 7, or 'F3'.
+  function unitPeriod(topicOrUnit) {
+    var s = String(topicOrUnit == null ? '' : topicOrUnit);
+    if (/^F/i.test(s.trim())) return UNIT_PERIODS[0];
+    var m = s.match(/(\d+)/);
+    return m ? (UNIT_PERIODS[Number(m[1])] || '') : '';
+  }
+
+  function clean(value) {
+    return String(value == null ? '' : value).replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  function joinList(value) {
+    return (Array.isArray(value) ? value : []).map(clean).filter(Boolean);
+  }
+
+  /**
+   * ctx fields, all optional except topic and title:
+   *   topic     '7.2'
+   *   module    'Checkpoint 2' or 'First & 10 Reading'
+   *   title     the topic title
+   *   span      the CED unit period, e.g. 'c. 1900 to the present'
+   *   focus     the lesson subtitle, a thematic sentence
+   *   targets   learning target sentences
+   *   criteria  success criteria sentences
+   *   kcs       [{code, text}]
+   *   terms     expected evidence terms
+   *   checklist strong-answer checklist sentences
+   *   assigned  the assigned prompt
+   *   draft     the student's single response  (checkpoint shape)
+   *   answers   [{question, response}]         (reading shape)
+   *
+   * The order is deliberate. The topic line is first because it is what lets one
+   * bot serve 77 topics, and the student's own writing is last because a model
+   * reads what bounds the task before what it is being asked to judge.
+   */
+  function buildCoachPrompt(ctx) {
+    var c = ctx || {};
+    var lines = [];
+
+    lines.push('Topic ' + clean(c.topic) + ', ' + (clean(c.module) || 'Checkpoint')
+      + ', ' + clean(c.title) + '.');
+    if (clean(c.span)) lines.push('Period: ' + clean(c.span) + '.');
+    if (clean(c.focus)) lines.push('Lesson focus: ' + clean(c.focus));
+
+    var targets = joinList(c.targets);
+    if (targets.length) lines.push('Learning target: ' + targets.join(' '));
+
+    var criteria = joinList(c.criteria);
+    if (criteria.length) lines.push('Success criteria: ' + criteria.join(' '));
+
+    var kcs = (Array.isArray(c.kcs) ? c.kcs : [])
+      .map(function (k) { return clean(k && k.code) + ' ' + clean(k && k.text); })
+      .map(function (s) { return s.trim(); })
+      .filter(Boolean);
+    if (kcs.length) lines.push('Key concept: ' + kcs.join(' '));
+
+    var terms = joinList(c.terms);
+    if (terms.length) lines.push('Focus terms: ' + terms.join(', ') + '.');
+
+    var checklist = joinList(c.checklist);
+    if (checklist.length) lines.push('Strong answer checklist: ' + checklist.join(' '));
+
+    if (clean(c.assigned)) lines.push('Assigned prompt: ' + clean(c.assigned));
+
+    // A reading carries three question-and-answer pairs; a checkpoint carries one
+    // draft. Both keep the student's own words verbatim rather than cleaned, since
+    // the coach is being asked to judge exactly what the student wrote.
+    var answers = Array.isArray(c.answers) ? c.answers : null;
+    if (answers && answers.length) {
+      lines.push('', 'Here are my responses:', '');
+      answers.forEach(function (a, i) {
+        var q = clean(a && a.question);
+        lines.push('Question ' + (i + 1) + (q ? ': ' + q : ''));
+        lines.push('My response: ' + String((a && a.response) || '').trim());
+        if (i < answers.length - 1) lines.push('');
+      });
+      lines.push('');
+    } else {
+      lines.push('', 'Here is my response:', '',
+        c.draft == null ? '{{DRAFT}}' : String(c.draft).trim(), '');
+    }
+
+    lines.push('Coach me by asking one question at a time. Do not write my final answer for me.');
+    return lines.join('\n');
+  }
+
+  var API = {
+    buildCoachPrompt: buildCoachPrompt,
+    unitPeriod: unitPeriod,
+    UNIT_PERIODS: UNIT_PERIODS
+  };
+  if (typeof module !== 'undefined' && module.exports) module.exports = API;
+  if (typeof window !== 'undefined') window.BH_COACH = API;
+})();
+var COACH_CONTEXT = {"topic":"8.4","module":"First & 10 Reading","title":"Spread of Communism After 1900","span":"c. 1900 to the present","focus":"How internal crisis, foreign aggression, and the drive to redistribute land and resources fueled communist and socialist movements across China, Africa, Asia, and Latin America","targets":["I can explain how internal tension and Japanese aggression contributed to the Chinese communists' seizure of power and communist revolution in 1949.","I can explain the consequences of communist government control of China's national economy through the Great Leap Forward, including repressive policies and negative repercussions for the population.","I can explain the causes and effects of movements to redistribute land and resources within states in Africa, Asia, and Latin America, including those advocating communism or socialism."],"criteria":["I can explain how the collapse of the Qing dynasty, warlordism, nationalist struggle, and Japanese aggression created the conditions in which the Chinese Communist Party (CCP) defeated the Kuomintang (KMT) and established the People's Republic of China in 1949.","I can explain how the Great Leap Forward (1958–1962), including collectivization, backyard steel furnaces, and inflated production reporting, represented communist government control of the national economy, and I can explain the resulting famine and social disruption as negative repercussions for the population.","I can explain the causes and effects of at least two of the four CED land/resource redistribution examples, Communist Revolution for Vietnamese independence, Mengistu Haile Mariam in Ethiopia, land reform in Kerala and other states within India, and the White Revolution in Iran, identifying both the path to redistribution and its effects on political and social order."],"kcs":[{"code":"Thematic Focus, Economic Systems (ECN)","text":"Economic Systems"},{"code":"Unit 8: Learning Objective D","text":"Explain the causes and consequences of China's adoption of communism."},{"code":"KC-6.2.I.i","text":"As a result of internal tension and Japanese aggression, Chinese communists seized power. These changes in China eventually led to communist revolution."},{"code":"KC-6.3.I.A.ii","text":"In communist China, the government controlled the national economy through the Great Leap Forward, often implementing repressive policies, with negative repercussions for the population."},{"code":"Thematic Focus, Social Interactions and Organization (SIO)","text":"Social Interactions and Organization"},{"code":"Unit 8: Learning Objective E","text":"Explain the causes and effects of movements to redistribute economic resources."},{"code":"KC-6.2.II.D.i","text":"Movements to redistribute land and resources developed within states in Africa, Asia, and Latin America, sometimes advocating communism or socialism."}],"terms":["redistribution","land reform","communism","socialism","Viet Minh","Ho Chi Minh","Vietnam","Mengistu","Derg","Ethiopia","Kerala","India","White Revolution","Iran","Shah","peasant","nationalization","colonial","tenant farmer","revolution","Chinese Communist Party","CCP","Kuomintang","KMT","Mao Zedong","People's Republic of China","Long March","Japanese aggression","warlordism","internal tension","Great Leap Forward","collectivization","people's commune","backyard steel furnace","production quota","Great Chinese Famine","Peng Dehuai","repressive policies","communist revolution","causation"]};
+function answers(){return[1,2,3].map(function(n){return(document.getElementById('q'+n)||{}).value||'';});}
+function questionTexts(){return Array.prototype.slice.call(document.querySelectorAll('.q-text')).map(function(el){return el.textContent.trim();});}
+function buildAiPrompt(){
+  var vals=answers(),qs=questionTexts();
+  var ctx={};for(var k in COACH_CONTEXT)ctx[k]=COACH_CONTEXT[k];
+  ctx.answers=vals.map(function(v,i){return{question:qs[i]||'',response:(v||'').trim()||'(no response yet)'};});
+  var out=window.BH_COACH.buildCoachPrompt(ctx);
+  document.getElementById('ai-output').value=out;return out;
 }
-function copyAiPrompt() {
-  var content = document.getElementById('ai-output').value;
-  navigator.clipboard.writeText(content).catch(function() {});
-}
+function copyAiPrompt(){var out=buildAiPrompt();if(navigator.clipboard)navigator.clipboard.writeText(out).catch(function(){});}
 /* BeHistorical First & 10 answer capture ------------------------------------------------------------
  * These three textareas sit inside an iframe, so the lesson page cannot read
  * them directly. Answers, their questions, and the student's confidence go to

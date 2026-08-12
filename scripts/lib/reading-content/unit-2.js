@@ -169,7 +169,6 @@ module.exports = {
     },
     "lessonFile": "../unit-2/index.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 2.1: The Silk Roads. Here are my responses:\\n\\n' +\n    'Question 1: Explain two causes of Silk Road growth between c. 1200 and c. 1450. What factors made long-distance overland trade possible and profitable?\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: Explain how one technology or religion spread along the Silk Roads. Where did it originate, how did it move, and what effect did it have?\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: The Black Death spread along trade routes. What does this reveal about the relationship between connectivity and vulnerability? Use evidence to support your argument.\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\n\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   },
   "2.2": {
     "topicKey": "2.2",
@@ -334,7 +333,6 @@ module.exports = {
     },
     "lessonFile": "../unit-2/index.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 2.2: The Mongol Empire. Here are my responses:\\n\\n' +\n    'Question 1: Explain how the Mongols were able to conquer and govern such a large empire. Use at least two specific examples of military or administrative methods.\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: Explain what the Pax Mongolica was and describe two ways it affected Afro-Eurasian exchange.\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: Evaluate this claim: \"The Mongol Empire was both the most destructive and the most connective force in medieval Afro-Eurasian history.\" Do you agree, disagree, or partially agree? Use evidence.\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\n\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   },
   "2.3": {
     "topicKey": "2.3",
@@ -495,7 +493,6 @@ module.exports = {
     },
     "lessonFile": "../unit-2/index.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 2.3: Indian Ocean Trade. Here are my responses:\\n\\n' +\n    'Question 1: Explain how monsoon winds and maritime technology enabled Indian Ocean trade. Use at least two specific examples.\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: Describe what diasporic merchant communities were and explain their role in Indian Ocean exchange.\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: Explain how Islam spread through the Indian Ocean trade network. What does this reveal about how religions spread through commerce rather than conquest?\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\n\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   },
   "2.4": {
     "topicKey": "2.4",
@@ -654,7 +651,6 @@ module.exports = {
     },
     "lessonFile": "../unit-2/index.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 2.4: Trans-Saharan Trade. Here are my responses:\\n\\n' +\n    'Question 1: Explain how the camel saddle made trans-Saharan trade possible. Why was this a significant technological development?\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: Explain why gold and salt were the central goods in trans-Saharan trade. Use evidence about both West African goldfields and Saharan salt mines.\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: Explain two effects of trans-Saharan trade on West African societies. Use specific evidence such as the Mali Empire, Mansa Musa, Timbuktu, or the spread of Islam.\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\n\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   },
   "2.5": {
     "topicKey": "2.5",
@@ -815,7 +811,6 @@ module.exports = {
     },
     "lessonFile": "../unit-2/index.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 2.5: Cultural Consequences of Connectivity. Here are my responses:\\n\\n' +\n    'Question 1: Explain how one religion spread along trade routes between c. 1200 and c. 1450. Describe the mechanism, the route, and the effect on receiving societies.\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: Explain how paper diffused from China westward and why this mattered for world history. Be specific about the path and the effects.\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: Cultural diffusion rarely produces exact copies. Choose one example from this reading and explain how an idea, religion, or technology changed as it moved along trade routes.\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\n\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   },
   "2.6": {
     "topicKey": "2.6",
@@ -970,7 +965,6 @@ module.exports = {
     },
     "lessonFile": "../unit-2/index.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 2.6: Environmental Consequences of Connectivity. Here are my responses:\\n\\n' +\n    'Question 1: Explain how trade routes enabled the spread of the Black Death from Central Asia to Europe and the Middle East. Trace the chain of causation.\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: Explain two social or institutional consequences of the Black Death. Use specific evidence.\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: The Black Death demonstrates that the same trade networks that brought prosperity also brought catastrophe. Do you agree? Use evidence to support your argument.\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\n\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   },
   "2.7": {
     "topicKey": "2.7",
@@ -1131,6 +1125,5 @@ module.exports = {
     },
     "lessonFile": "../unit-2/index.html",
     "padQuestionNumbers": true,
-    "promptScript": "function buildAiPrompt() {\n  const q1 = document.getElementById('q1').value || '(no response)';\n  const q2 = document.getElementById('q2').value || '(no response)';\n  const q3 = document.getElementById('q3').value || '(no response)';\n  document.getElementById('ai-output').value =\n    'I completed the First & 10 reading for AP World History Topic 2.7: Comparison of Trade Networks. Here are my responses:\\n\\n' +\n    'Question 1: Identify one meaningful similarity between the Silk Roads and the Indian Ocean trade network. Be specific, use evidence from both networks.\\n' +\n    'My response: ' + q1 + '\\n\\n' +\n    'Question 2: Identify one important difference between the Indian Ocean and trans-Saharan trade networks. Explain why this difference mattered historically.\\n' +\n    'My response: ' + q2 + '\\n\\n' +\n    'Question 3: Why is comparing trade networks useful for AP World History? What does comparison reveal that describing a single network cannot?\\n' +\n    'My response: ' + q3 + '\\n\\n' +\n    'Please act as my BeHistorical AI Coach. Ask me one question at a time to help me strengthen my evidence, historical reasoning, and argument. Do not write the final answer for me.';\n}\n\nfunction copyAiPrompt() {\n  const content = document.getElementById('ai-output').value;\n  navigator.clipboard.writeText(content).catch(() => {});\n}"
   }
 };
