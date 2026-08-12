@@ -98,7 +98,15 @@ const REQUIRED = [
   [/the block wins/i, 'the paste-beats-memory precedence rule'],
   [/[Nn]ever affirm a claim you believe is factually or chronologically wrong/, 'the no-sycophancy rule'],
   [/different unit or a different century/i, 'the cross-unit evidence guard'],
-  [/[Nn]ever invent a fact/, 'the no-fabrication rule']
+  [/[Nn]ever invent a fact/, 'the no-fabrication rule'],
+  // Socrates serves BeInTheRoom as well as the checkpoints and the readings. Those
+  // 38 scenario pastes carry a different shape and often their own numbered
+  // coaching sequence, and Module 09 work does NOT reach Canvas. A persona that
+  // knows only the checkpoint path tells a simulation student their argument is
+  // going somewhere it is not.
+  [/BeInTheRoom/, 'the BeInTheRoom simulation path'],
+  [/follow those\s+stages rather than the order below/, 'deference to a scenario\'s own coaching stages'],
+  [/do not tell them it reaches Canvas, because it does not/, 'the warning that simulation work does not reach Canvas']
 ];
 REQUIRED.forEach(([re, what]) => {
   if (re.test(FLAT)) ok(`persona still carries ${what}`);

@@ -113,10 +113,18 @@ function thinBlock(topic, draft) {
   ].filter(l => l !== undefined).join('\n');
 }
 
+// A BeInTheRoom case carries `scenarioPaste`: the payload its own scenario page
+// builds, which is a different shape from the checkpoint contract and often sets
+// out its own numbered coaching stages. Both arms get it verbatim, since neither
+// persona is what produces it.
 const ARMS = {
   A: { persona: ARM_A_PERSONA, block: thinBlock },
   B: { persona: PERSONA, block: (t, d) => contextBlock(t, { draft: d }) }
 };
+
+function pasteFor(cfg, kase, topic) {
+  return kase.scenarioPaste ? kase.scenarioPaste : cfg.block(topic, kase.draft);
+}
 
 // ── Model plumbing ───────────────────────────────────────────────────────────
 
@@ -242,7 +250,7 @@ async function grade(kase, reply) {
   let done = 0;
   const results = await pool(jobs, async job => {
     const cfg = ARMS[job.arm];
-    const user = cfg.block(job.topic, job.kase.draft);
+    const user = pasteFor(cfg, job.kase, job.topic);
     const reply = await ask(cfg.persona, user);
     const d = det(reply);
     const g = reply.startsWith('__ERROR__') ? [] : await grade(job.kase, reply);

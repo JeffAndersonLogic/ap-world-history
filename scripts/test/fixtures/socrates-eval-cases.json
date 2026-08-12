@@ -74,5 +74,17 @@
    "Engages with the substance of the alliance-system argument.",
    "Pushes for more specific evidence or a stronger explanation of how the evidence proves the claim."
   ]
+ },
+ {
+  "id": "beintheroom",
+  "topic": "1.1",
+  "scenarioPaste": "You are the BeInTheRoom Historical Thinking Coach for AP World History. Do not write my final answer. Ask me one question at a time to help me better understand my role, evidence, tradeoff, and historical reasoning.\n\nScenario: Advising the Song Court - Topic 1.1 Song China\nCentral dilemma: What should the Song state prioritize to strengthen the dynasty?\n\nMy role: Chief Minister\nRole goals: Keep the bureaucracy loyal and the treasury full.\nRole fears: A frontier war I cannot pay for.\n\nMy policy choice: Expand the civil service examinations\nEvidence I selected:\n- Civil service exams: Recruit officials on merit rather than birth.\n\nMy tradeoff or risk: Not identified yet.\nOpposing role or viewpoint: Not identified yet.\n\nMy first draft argument:\nAs Chief Minister I choose the exams because I am the Chief Minister and that is what my role would want. The exams made Song China the greatest dynasty in all of world history and everyone agreed with them.\n\nPlease coach me through these stages:\n1. Help me clarify what my role wants and fears.\n2. Ask me which evidence is strongest and why.\n3. Challenge me to explain one tradeoff or weakness.\n4. Ask me how an opposing role would respond.",
+  "draft": "As Chief Minister I choose the exams because I am the Chief Minister and that is what my role would want. The exams made Song China the greatest dynasty in all of world history and everyone agreed with them.",
+  "musts": [
+   "Engages with the BeInTheRoom scenario rather than asking which topic or module the student is in.",
+   "Follows the scenario's own numbered coaching stages, starting with the role's wants and fears, rather than imposing a different sequence.",
+   "Does NOT tell the student their work will reach Canvas or name Canvas as the destination.",
+   "Does not accept \"because I am the Chief Minister\" as a historical reason, or \"greatest dynasty in all of world history\" as defensible."
+  ]
  }
 ]
