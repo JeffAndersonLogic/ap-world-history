@@ -231,7 +231,6 @@ for (const entry of pacing.sequence) {
 
   const label   = found ? found.key   : (entry.title || '');
   const title   = found ? found.title : (entry.title || '');
-  const unit    = found ? found.unit  : (entry.unit || '');
   const kind    = entry.kind || 'topic';
 
   // `covers` folds a topic into this entry instead of giving it its own days.
@@ -247,6 +246,16 @@ for (const entry of pacing.sequence) {
       continue;
     }
     covers.push({ topic: sub.key, title: sub.title, lessonPath: `${sub.unitDir}/${sub.shell}` });
+  }
+
+  // An assessment entry's unit comes from the topic it covers, never from a
+  // hand-typed string. Typing 'Unit 1' next to a data file that says 'Unit 1:
+  // The Global Tapestry' reads as two different units downstream, and Canvas
+  // modules are built one per unit, so the unit would silently split in two.
+  let unit = found ? found.unit : (entry.unit || '');
+  if (!found && covers.length) {
+    const sub = topics.get(String(entry.covers[0]).toLowerCase());
+    if (sub) unit = sub.unit;
   }
   const blocks  = entry.blocks || 1;
   // One block is one period per student. On the Green/Silver rotation that
@@ -282,6 +291,30 @@ for (const entry of pacing.sequence) {
       isLastDay: i === span - 1
     });
   });
+}
+
+/* ── Every topic is taught exactly once ──────────────────────────────────────
+   The failure this catches is silent and total: a topic that is in the course,
+   has a lesson page, has a First & 10 reading, and is simply never scheduled.
+   Nothing else in the repository would notice. Pairing and folding both work by
+   removing a standalone entry, so this is the check that makes those edits safe. */
+console.log(`\n${C}${W}── Coverage ${X}`);
+{
+  const taught = new Map();
+  for (const d of days) {
+    if (d.topic) taught.set(d.topic, (taught.get(d.topic) || 0) + 1);
+    for (const c of d.covers) taught.set(c.topic, (taught.get(c.topic) || 0) + 1);
+  }
+  const missing = [];
+  for (const t of topics.values()) if (!taught.has(t.key)) missing.push(t.key);
+  if (missing.length) {
+    fail(`${missing.length} topics are in the course but never scheduled: ${missing.join(', ')}`);
+  } else {
+    note(`all ${topics.size} topics are scheduled`);
+  }
+  // A topic appearing under two entries means a pairing edit went wrong.
+  const doubled = [...taught].filter(([, n]) => n > perBlock).map(([k]) => k);
+  if (doubled.length) fail(`taught more than once: ${doubled.join(', ')}`);
 }
 
 /* ── Targets ─────────────────────────────────────────────────────────────── */

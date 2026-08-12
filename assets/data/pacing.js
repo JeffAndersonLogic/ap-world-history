@@ -55,6 +55,19 @@ window.BEHISTORICAL_PACING = {
 
   /* ---------------------------------------------------------
      THE SEQUENCE
+
+     `covers` means the entry teaches more than one topic in its
+     block. It is used two ways here, and the `kind` field is what
+     tells them apart:
+
+       kind 'topic'       a pair of adjacent topics taught together,
+                          both real lessons the students work
+       kind 'assessment'  an end-of-unit reasoning topic taught as
+                          the unit review, alongside the exam
+
+     Ten pairs were chosen 2026-08-12 to fit all content before
+     spring break. Each pairs topics the CED already treats as one
+     arc; the reason is on the line.
      --------------------------------------------------------- */
   sequence: [
     // ── Foundations ──────────────────────────────────────────
@@ -94,8 +107,7 @@ window.BEHISTORICAL_PACING = {
     { topic: '4.1', blocks: 1 },
     { topic: '4.2', blocks: 1 },
     { topic: '4.3', blocks: 1 },
-    { topic: '4.4', blocks: 1 },
-    { topic: '4.5', blocks: 1 },
+    { topic: '4.4', blocks: 1, covers: ['4.5'] },   // Maritime empires established, then how they were maintained
     { topic: '4.6', blocks: 1 },
     { topic: '4.7', blocks: 1 },
     { title: 'Unit 4 Review and Exam', kind: 'assessment', unit: 'Unit 4', blocks: 1, covers: ['4.8'] },
@@ -106,49 +118,40 @@ window.BEHISTORICAL_PACING = {
     { topic: '5.2', blocks: 1 },
     { topic: '5.3', blocks: 1 },
     { topic: '5.4', blocks: 1 },
-    { topic: '5.5', blocks: 1 },
-    { topic: '5.6', blocks: 1 },
+    { topic: '5.5', blocks: 1, covers: ['5.6'] },   // The technology of industrialization and the state response to it
     { topic: '5.7', blocks: 1 },
-    { topic: '5.8', blocks: 1 },
-    { topic: '5.9', blocks: 1 },
+    { topic: '5.8', blocks: 1, covers: ['5.9'] },   // Reactions to the industrial economy and the society it produced
     { title: 'Unit 5 Review and Exam', kind: 'assessment', unit: 'Unit 5', blocks: 1, covers: ['5.10'] },
 
     // ── Unit 6, Consequences of Industrialization ────────────
     { topic: '6.1', blocks: 1 },
-    { topic: '6.2', blocks: 1 },
-    { topic: '6.3', blocks: 1 },
+    { topic: '6.2', blocks: 1, covers: ['6.3'] },   // State expansion and the indigenous responses to it
     { topic: '6.4', blocks: 1 },
     { topic: '6.5', blocks: 1 },
-    { topic: '6.6', blocks: 1 },
-    { topic: '6.7', blocks: 1 },
+    { topic: '6.6', blocks: 1, covers: ['6.7'] },   // Causes of migration and its effects, one story
     { title: 'Unit 6 Review and Exam', kind: 'assessment', unit: 'Unit 6', blocks: 1, covers: ['6.8'] },
 
     // ── Unit 7, Global Conflict ──────────────────────────────
     { topic: '7.1', blocks: 1 },
-    { topic: '7.2', blocks: 1 },
-    { topic: '7.3', blocks: 1 },
+    { topic: '7.2', blocks: 1, covers: ['7.3'] },   // Causes of World War I, then conducting it
     { topic: '7.4', blocks: 1 },
     { topic: '7.5', blocks: 1 },
-    { topic: '7.6', blocks: 1 },
-    { topic: '7.7', blocks: 1 },
+    { topic: '7.6', blocks: 1, covers: ['7.7'] },   // Causes of World War II, then conducting it
     { topic: '7.8', blocks: 1 },
     { title: 'Unit 7 Review and Exam', kind: 'assessment', unit: 'Unit 7', blocks: 1, covers: ['7.9'] },
 
     // ── Unit 8, Cold War and Decolonization ──────────────────
     { topic: '8.1', blocks: 1 },
-    { topic: '8.2', blocks: 1 },
-    { topic: '8.3', blocks: 1 },
+    { topic: '8.2', blocks: 1, covers: ['8.3'] },   // The Cold War and its effects
     { topic: '8.4', blocks: 1 },
     { topic: '8.5', blocks: 1 },
-    { topic: '8.6', blocks: 1 },
-    { topic: '8.7', blocks: 1 },
+    { topic: '8.6', blocks: 1, covers: ['8.7'] },   // Newly independent states and resistance to established power
     { topic: '8.8', blocks: 1 },
     { title: 'Unit 8 Review and Exam', kind: 'assessment', unit: 'Unit 8', blocks: 1, covers: ['8.9'] },
 
     // ── Unit 9, Globalization ────────────────────────────────
     { topic: '9.1', blocks: 1 },
-    { topic: '9.2', blocks: 1 },
-    { topic: '9.3', blocks: 1 },
+    { topic: '9.2', blocks: 1, covers: ['9.3'] },   // Both are Technological Advances and Limitations in the CED
     { topic: '9.4', blocks: 1 },
     { topic: '9.5', blocks: 1 },
     { topic: '9.6', blocks: 1 },
