@@ -14,13 +14,28 @@ and for a classroom on a filtered school connection.
 
 | File | Used by | Slot |
 |---|---|---|
-| `buddhism-spread-asia.png` | `foundations/foundations-2-belief-systems-data.js`, `map.url` | Module 01, Map & Geography Check |
+| `buddhism-spread-asia.webp` | `foundations/foundations-2-belief-systems-data.js`, `map.url` | Module 01, Map & Geography Check |
 
-`buddhism-spread-asia.png` is *The Origin and Spread of Buddhism Across Asia*,
+`buddhism-spread-asia.webp` is *The Origin and Spread of Buddhism Across Asia*,
 World History Encyclopedia, https://www.worldhistory.org/image/19850/map-of-the-spread-of-buddhism-across-asia/.
 The publisher's logo and the `worldhistory.org` wordmark are printed inside the
 image and must not be cropped out. The credit is repeated in the slot's
 `caption` so it survives when the picture does not load.
+
+## Why this one is WebP
+
+It arrived as a 5.9 MB PNG, twelve times the largest picture anywhere else in
+the repo. A class opening Module 01 together is thirty simultaneous downloads,
+so that size is a classroom problem on school wi-fi, not a housekeeping one.
+
+Re-encoded at WebP quality 92 it is 1.17 MB, the same 3489x2791 pixels, with
+every label, arrow, marker and date still crisp at 1:1. The only thing lost is
+some micro-detail in the pale terrain shading, which teaches nothing. Full
+resolution is the point here: the place names are small and students read them
+by opening the lightbox and zooming, so **do not downscale this file**.
+
+The original PNG is in this branch's git history, and the publisher's page
+linked above remains the real source if it ever needs re-encoding.
 
 ## Rules
 
