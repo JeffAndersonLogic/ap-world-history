@@ -30,11 +30,21 @@ const anyObject = new Proxy(function () {}, {
   construct: () => anyObject
 });
 
+// Node 22 makes `globalThis.navigator` a getter-only property, so a plain
+// assignment throws and this script dies before reading a single data file.
+function setGlobal(name, value) {
+  try {
+    global[name] = value;
+  } catch {
+    Object.defineProperty(global, name, { value, configurable: true, writable: true });
+  }
+}
+
 function loadGlobals(file) {
-  global.document = anyObject;
-  global.location = anyObject;
-  global.navigator = anyObject;
-  global.window = {};
+  setGlobal('document', anyObject);
+  setGlobal('location', anyObject);
+  setGlobal('navigator', anyObject);
+  setGlobal('window', {});
   try {
     delete require.cache[require.resolve(file)];
     require(file);
