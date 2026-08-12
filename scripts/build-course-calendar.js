@@ -207,6 +207,11 @@ for (const sem of school.semesters || []) {
 /* Instructional days: school is in session, this class meets, not finals. */
 const teachable = schoolDays.filter(d => !d.isFinals && !d.isNoClass);
 
+// One block is one period per student. On the Green/Silver rotation the same
+// lesson is delivered to the Green sections and then the Silver sections, so a
+// block occupies two consecutive days on the classroom board.
+const perBlock = school.rotation.topicSpansBothColours ? 2 : 1;
+
 const topics = buildTopicIndex();
 note(`${topics.size} topics indexed from the course data files`);
 
@@ -228,10 +233,25 @@ for (const entry of pacing.sequence) {
   const title   = found ? found.title : (entry.title || '');
   const unit    = found ? found.unit  : (entry.unit || '');
   const kind    = entry.kind || 'topic';
+
+  // `covers` folds a topic into this entry instead of giving it its own days.
+  // The end-of-unit reasoning topics (Comparison, Continuity and Change,
+  // Causation) are unit synthesis by design, so they are taught as the review
+  // rather than as a separate lesson. The topic keeps its lesson page and is
+  // still named on the board and in Canvas; it just shares this entry's block.
+  const covers = [];
+  for (const ck of entry.covers || []) {
+    const sub = topics.get(String(ck).toLowerCase());
+    if (!sub) {
+      fail(`pacing.js folds topic ${ck} into "${entry.title}", but no data file declares it`);
+      continue;
+    }
+    covers.push({ topic: sub.key, title: sub.title, lessonPath: `${sub.unitDir}/${sub.shell}` });
+  }
   const blocks  = entry.blocks || 1;
   // One block is one period per student. On the Green/Silver rotation that
   // is two consecutive school days on the board, one per colour.
-  const span    = school.rotation.topicSpansBothColours ? blocks * 2 : blocks;
+  const span    = blocks * perBlock;
 
   const slots = [];
   for (let i = 0; i < span; i++) {
@@ -256,6 +276,7 @@ for (const entry of pacing.sequence) {
       dayOfEntry: i + 1,
       daysInEntry: span,
       lessonPath: found ? `${found.unitDir}/${found.shell}` : '',
+      covers,
       // The last day of an entry is when the work is due for the students
       // who met on the first day, which is the sane default for a block.
       isLastDay: i === span - 1
@@ -265,8 +286,46 @@ for (const entry of pacing.sequence) {
 
 /* ── Targets ─────────────────────────────────────────────────────────────── */
 console.log(`\n${C}${W}── Targets ${X}`);
+// When did a topic last appear, whether on its own days or folded into a
+// review entry? A folded topic is still taught, so a target that names one
+// must find it.
+function lastDayOf(key) {
+  for (let i = days.length - 1; i >= 0; i--) {
+    if (days[i].topic === key) return days[i];
+    if (days[i].covers.some(c => c.topic === key)) return days[i];
+  }
+  return null;
+}
+
+// "Every topic is finished by this date." The deadline that matters is not
+// the last day of school; it is the last day content can still be new.
+for (const deadline of pacing.allTopicsBy ? [pacing.allTopicsBy] : []) {
+  const taught = days.filter(d => d.topic || d.covers.length);
+  const last = taught[taught.length - 1];
+  const late = taught.filter(d => d.date > deadline.onDate);
+  if (!last) {
+    fail('no topics were scheduled at all');
+  } else if (late.length === 0) {
+    const runway = teachable.filter(d => d.date > last.date).length;
+    note(`all topics finish ${longDate(last.date)}, on or before ${deadline.label}, leaving ${runway} class days after`);
+  } else {
+    // Capacity, not a list of casualties. Which entries happen to fall off the
+    // end is an artifact of ordering; how many entries the calendar can hold is
+    // the number that tells you what to change.
+    const room = teachable.filter(d => d.date <= deadline.onDate).length;
+    const content = (pacing.sequence || []).filter(e => (e.kind || 'topic') !== 'review');
+    const wanted = content.reduce((a, e) => a + (e.blocks || 1) * perBlock, 0);
+    const names = [...new Set(late.map(d => d.topic || d.topicTitle))];
+    fail(`content does not fit before ${deadline.label} (${deadline.onDate}).`);
+    console.log(`      room for ${room} school days, or ${Math.floor(room / perBlock)} entries at one block each`);
+    console.log(`      pacing asks for ${wanted} school days across ${content.length} entries`);
+    console.log(`      short by ${wanted - room} school days, about ${Math.ceil((wanted - room) / perBlock)} entries`);
+    console.log(`      first to fall past the date: ${names.slice(0, 4).join(', ')}`);
+  }
+}
+
 for (const target of pacing.targets || []) {
-  const hit = [...days].reverse().find(d => d.topic === target.through);
+  const hit = lastDayOf(target.through);
   if (!hit) {
     fail(`target "${target.through} by ${target.by}" cannot be checked, ${target.through} was never scheduled`);
     continue;
@@ -318,6 +377,7 @@ days.forEach((d, i) => {
     `      dayOfEntry: ${d.dayOfEntry}`,
     `      daysInEntry: ${d.daysInEntry}`,
     `      lessonPath: ${quote(d.lessonPath)}`,
+    `      covers: [${d.covers.map(c => `{ topic: ${quote(c.topic)}, title: ${quote(c.title)}, lessonPath: ${quote(c.lessonPath)} }`).join(', ')}]`,
     `      isLastDay: ${d.isLastDay}`
   ];
   lines.push('    {');
