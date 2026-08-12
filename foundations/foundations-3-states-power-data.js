@@ -42,8 +42,8 @@ window.FOUNDATION_TOPIC = {
 
   map: {
     title: 'Map: World States c. 200 CE',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_in_200_CE.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_in_200_CE.png',
+    url: '../assets/images/instructional-maps/foundations-3.svg',
+    sourceUrl: '../assets/images/instructional-maps/foundations-3.svg',
     caption: 'Around 200 CE, two giant empires anchored Eurasia, Rome in the west and Han China in the east, with the Parthian heirs of Persia between them and the Greek world now absorbed into Rome. Every state here faced the same core governance problems, and each solved them differently.',
     desc: 'Use this map to think about the challenge of ruling large, diverse, and distant populations. What tools would Persia, Han China, or Rome need to govern a territory this size without modern communication or transportation?',
     key: [
@@ -248,10 +248,10 @@ window.FOUNDATION_TOPIC = {
         'The states you study from **c.1200**, Song China, the Abbasids, the Aztec and Inca, reuse these same tools.'
       ],
       image: {
-        title: 'The Classical World c. 200 CE',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_in_200_CE.png',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_in_200_CE.png',
-        caption: 'By 200 CE, Rome and Han China anchored opposite ends of Eurasia, with the Parthian heirs of Persia between them. Four classical experiments in organizing power, and a template for every state AP World will study.'
+        title: 'The Eastern Hemisphere in 200 CE (modern reference map)',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/East-Hem_200ad.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:East-Hem_200ad.jpg',
+        caption: 'A modern reconstruction of the Eastern Hemisphere at 200 CE, drawn by Thomas Lessman. Read it left to right: the Roman Empire around the Mediterranean, the Parthian Empire on the Iranian plateau, the Kushan Empire across the northwest of South Asia, and the Han Dynasty in the east. Four classical experiments in organizing power, and a template for every state AP World will study.'
       }
     }
   ],

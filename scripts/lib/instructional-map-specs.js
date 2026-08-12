@@ -47,6 +47,28 @@ module.exports = [
     note: 'BeHistorical instructional map. River valleys, steppe, and highland zones are shown schematically to support comparison, not to mark precise boundaries.'
   },
   {
+    id: 'foundations-3',
+    code: 'FOUNDATIONS 3',
+    title: 'Classical States and Empires, c. 200 CE',
+    subtitle: 'Foundations 3 · Four answers to the same problem',
+    highlights: [
+      { zone: 'mediterranean', label: 'ROME', tone: 'slate', legend: 'Rome: law and expanding citizenship' },
+      { zone: 'iran', label: 'PARTHIAN PERSIA', tone: 'plum', legend: 'Parthian Persia: heirs of the satrapy model' },
+      { zone: 'eastAsia', label: 'HAN CHINA', tone: 'gold', legend: 'Han China: centralized bureaucracy, Mandate of Heaven' }
+    ],
+    flows: [
+      { from: 'eastAsia', to: 'iran', label: 'Silk Roads west' },
+      { from: 'iran', to: 'mediterranean', label: 'Parthia sits astride the routes between the two giants', bow: 0.35 }
+    ],
+    points: [
+      { at: [12, 42], label: 'Rome', note: 'imperial capital', side: 'left' },
+      { at: [23, 38], label: 'Athens', note: 'the polis' },
+      { at: [44, 33], label: 'Ctesiphon', note: 'Parthian seat' },
+      { at: [109, 34], label: 'Chang\'an', note: 'Han capital' }
+    ],
+    note: 'BeHistorical instructional map. Zones show the rough reach of each state at c. 200 CE, not surveyed borders; coastlines are simplified for classroom projection.'
+  },
+  {
     id: 'foundations-5',
     code: 'FOUNDATIONS 5',
     title: 'The Six AP World Regions at c. 1200',
