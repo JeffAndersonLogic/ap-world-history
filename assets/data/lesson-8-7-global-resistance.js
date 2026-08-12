@@ -142,8 +142,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Martin Luther King Jr., Birmingham Campaign, 1963",
           caption: "Birmingham, Alabama, 1963: Bull Connor's police use fire hoses against peaceful civil rights marchers. The images, broadcast nationally and internationally, accelerated the passage of the Civil Rights Act of 1964, illustrating how nonviolent resistance works by making the cost of repression visible.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Birmingham_campaign.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Birmingham_campaign.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Firemen_spraying_protestors_in_Downtown_Birmingham_01.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Firemen_spraying_protestors_in_Downtown_Birmingham_01.jpg"
         }
       },
       {
@@ -158,8 +158,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Chilean military coup, September 11, 1973",
           caption: "La Moneda presidential palace under military bombardment during the September 11, 1973 coup that brought Pinochet to power in Chile. The democratically elected socialist government of Salvador Allende was overthrown; Allende died during the coup. The regime that followed detained and tortured tens of thousands.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Moneda_1973.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Moneda_1973.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Golpe_de_Estado_1973.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Golpe_de_Estado_1973.jpg"
         }
       },
       {
@@ -171,10 +171,10 @@ window.BEHISTORICAL_LESSON = {
           "**The analytical distinction:** All three categories in KC-6.2.V describe reactions to existing power structures, but they differ fundamentally in method and in relationship to civilian populations. Nonviolent resisters (KC-6.2.V.A) sought change through moral witness, disciplined suffering, and political pressure without harming civilians. Militarized states (KC-6.2.V.C) used institutional force, armies, police, detention systems, against political opponents, often in ways that extended to civilians. Movements in KC-6.2.V.D used civilian targeting as an instrument of political strategy, not a by-product of conflict. The AP exam rewards students who can make these distinctions with evidence, and who can recognize that some cases (like Mandela's ANC) complicate neat categorization."
         ],
         image: {
-          title: "Shining Path mural, Peru",
-          caption: "A Shining Path propaganda mural in Peru. The Maoist insurgency, active from 1980 through the 1990s, combined attacks on the state with violence against civilians it deemed insufficiently revolutionary. The conflict killed an estimated 70,000 people; both Shining Path and the Peruvian security forces committed atrocities.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sendero_Luminoso_mural.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Sendero_Luminoso_mural.jpg"
+          title: "Shining Path propaganda poster, Peru",
+          caption: "A Shining Path propaganda poster calling for a boycott of elections. The Maoist insurgency, active from 1980 through the 1990s, combined attacks on the state with violence against civilians it deemed insufficiently revolutionary. The conflict killed an estimated 70,000 people; both Shining Path and the Peruvian security forces committed atrocities.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/CartelSenderoLuminosoBoycott.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:CartelSenderoLuminosoBoycott.jpg"
         }
       }
     ]
@@ -207,23 +207,23 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Gandhi leading the Salt March, 1930",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_salt_march.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gandhi_salt_march.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Marche_sel.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Marche_sel.jpg",
       caption: "Mohandas Gandhi leading the Salt March, March 1930, a 240-mile walk to the sea to make salt illegally in defiance of British colonial tax law. Gandhi's strategic nonviolence was designed to make the cost of colonial authority higher than the cost of political concessions.",
       prompt: "What does Gandhi's choice to march to make salt reveal about how nonviolence works as a political strategy? How does this image illustrate the difference between nonviolence as moral stance and nonviolence as deliberate method for producing political change?"
     },
     {
-      title: "Nelson Mandela released from Victor Verster Prison, 1990",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nelson_Mandela_1990.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1990.jpg",
-      caption: "Nelson Mandela leaving Victor Verster Prison on February 11, 1990, after 27 years of imprisonment. Mandela's release marked the beginning of negotiations that ended apartheid and led to South Africa's first democratic elections in 1994.",
+      title: "Nelson Mandela burning his passbook, 1960",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mandela_burn_pass_1960.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Mandela_burn_pass_1960.jpg",
+      caption: "Nelson Mandela burning the passbook every Black South African was required to carry under apartheid, a public act of defiance in 1960. He was imprisoned two years later and held for 27 years; his release in February 1990 opened the negotiations that ended apartheid and produced South Africa's first democratic elections in 1994.",
       prompt: "How does Mandela's release after 27 years of imprisonment illustrate the long-term logic of resistance, that political change can be achieved through sustained pressure over decades rather than immediate victory? What does this suggest about nonviolence as a strategy for change against a deeply entrenched power structure?"
     },
     {
-      title: "Eisenhower's farewell address, January 1961",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Eisenhower_farewell_address.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Eisenhower_farewell_address.jpg",
-      caption: "President Dwight D. Eisenhower delivering his farewell address on January 17, 1961, in which he coined the phrase 'military-industrial complex' and warned of the dangers of an arms economy that gave institutional interests an incentive to perpetuate conflict.",
+      title: "Eisenhower's farewell address, January 17, 1961",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Farewell_address_by_President_Dwight_D._Eisenhower,_01-17-1961_%285285428635%29.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Farewell_address_by_President_Dwight_D._Eisenhower,_01-17-1961_%285285428635%29.jpg",
+      caption: "A page from Eisenhower's own reading copy of the farewell address he delivered on January 17, 1961, held in his presidential papers. In it he coined the phrase 'military-industrial complex' and warned of the dangers of an arms economy that gave institutional interests an incentive to perpetuate conflict.",
       prompt: "Why is it significant that the warning about the military-industrial complex came from a five-star general and former Supreme Allied Commander? What does Eisenhower's perspective reveal about how structural forces can intensify conflict even when individual leaders seek peace?"
     }
   ],

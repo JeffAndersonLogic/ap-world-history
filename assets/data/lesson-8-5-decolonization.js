@@ -141,10 +141,10 @@ window.BEHISTORICAL_LESSON = {
           "**Gamal Abdel Nasser** led the military coup that overthrew King Farouk in 1952 and became President of Egypt in 1954. Egypt had been nominally independent since 1922 but remained under British military and economic influence. Nasser's signature act, the **nationalization of the Suez Canal in 1956**, directly challenged British and French economic interests and imperial prestige. Britain and France responded with military force (the **Suez Crisis, 1956**), but the United States and Soviet Union both opposed the invasion, forcing a humiliating British and French withdrawal. The Suez Crisis demonstrated the limits of European imperial power in the postwar world, and made Nasser the symbol of pan-Arab nationalism and decolonization."
         ],
         image: {
-          title: "Kwame Nkrumah declares Ghana's independence, March 6, 1957",
-          caption: "Kwame Nkrumah proclaims Ghana's independence on March 6, 1957, the first sub-Saharan African nation to achieve independence, with a leader who had been imprisoned by British colonial authorities just six years earlier.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah_declares_independence.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah_declares_independence.jpg"
+          title: "Kwame Nkrumah, who led the Gold Coast to independence in 1957",
+          caption: "Kwame Nkrumah, photographed for the British Colonial Office. On March 6, 1957 he proclaimed the independence of Ghana, the first sub-Saharan African nation to achieve it, six years after British colonial authorities had him in prison.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah_-_The_National_Archives_UK_-_CO_1069-50-1.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah_-_The_National_Archives_UK_-_CO_1069-50-1.jpg"
         }
       },
       {
@@ -156,10 +156,10 @@ window.BEHISTORICAL_LESSON = {
           "**What conditions pushed a colony one road or the other?** Four factors matter for AP comparison: (1) **Settler presence**, large European settler populations (Algeria, Angola) gave the metropole political reasons to resist withdrawal; (2) **Metropole politics**, Labour Britain was more willing to negotiate exit than the French Fourth Republic facing Algeria; (3) **Leadership strategy**, Gandhi and Nkrumah built nonviolent mass movements that made British repression politically costly; Ho Chi Minh chose armed resistance because France refused to recognize the 1945 independence declaration; (4) **Cold War stakes**, both the U.S. and the USSR pressured former European powers to decolonize, but Cold War framing also meant that movements labeled 'communist' faced different responses from Western powers."
         ],
         image: {
-          title: "FLN fighters, Algerian War of Independence, late 1950s",
-          caption: "Fighters of the Front de Libération Nationale (FLN) during Algeria's war of independence (1954–1962). Algeria's path, armed struggle, contrasted sharply with the negotiated independence achieved by India and the Gold Coast.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/FLN_fighters_Algeria.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:FLN_fighters_Algeria.jpg"
+          title: "Algerian fighters at prayer, War of Independence, 1954–1962",
+          caption: "A group of Algerian mujahidin at prayer during the war against French colonial rule (1954–1962), fought by the Front de Libération Nationale (FLN). Algeria's path, armed struggle, contrasted sharply with the negotiated independence achieved by India and the Gold Coast.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Fear_Prayer.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Fear_Prayer.jpg"
         }
       },
       {
@@ -171,10 +171,10 @@ window.BEHISTORICAL_LESSON = {
           "The **Biafra secessionist movement** demonstrated the violence possible when post-independence states refused to accept challenges to colonial-era boundaries. **Nigeria** gained independence from Britain in 1960 as a federation of three major ethnic groups: Hausa-Fulani (north), Yoruba (southwest), and Igbo (southeast). The boundaries were British, the federation was artificial, and political and economic competition between groups was intense. After a 1966 military coup, anti-Igbo pogroms drove Igbo people back to the southeast, and the Igbo-majority southeastern region declared independence as the **Republic of Biafra** in 1967. The **Biafran War (1967–1970)** killed an estimated 1–3 million people, many from the famine blockade imposed by the Nigerian government. Nigeria's reunification preserved the colonial-era boundary, but at catastrophic human cost."
         ],
         image: {
-          title: "Partition of India, August 1947 — refugees crossing the border",
-          caption: "Millions of people displaced during the 1947 Partition of India and Pakistan, one of the largest forced migrations in history, produced by the redrawing of colonial-era boundaries along religious lines when Britain withdrew.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Partition_of_India_1947_mass_migration.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Partition_of_India_1947_mass_migration.jpg"
+          title: "Partition of Punjab, 1947 — a refugee train",
+          caption: "An overcrowded refugee train during the 1947 partition of Punjab. Millions were displaced in what became one of the largest forced migrations in history, produced by the redrawing of colonial-era boundaries along religious lines when Britain withdrew.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Partition_of_Punjab,_India_1947.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Partition_of_Punjab,_India_1947.jpg"
         }
       }
     ]
@@ -205,23 +205,23 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Mahatma Gandhi, Salt March, 1930",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_salt_march.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gandhi_salt_march.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Marche_sel.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Marche_sel.jpg",
       caption: "Gandhi leads the Salt March in 1930, a 240-mile walk to the sea to collect salt illegally, defying British tax law. The march was a mass act of nonviolent civil disobedience that galvanized Indian independence and drew global attention.",
       prompt: "How does the Salt March illustrate the INC's strategy for pursuing independence? What does it reveal about how Gandhi sought to challenge British imperial rule without armed violence, and why that strategy was effective?"
     },
     {
       title: "Gamal Abdel Nasser after Suez Canal nationalization, 1956",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gamal_Abdel_Nasser_1956.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gamal_Abdel_Nasser_1956.jpg",
-      caption: "Nasser after announcing the nationalization of the Suez Canal in 1956. The nationalization triggered the Suez Crisis, Britain and France invaded, but U.S. pressure forced their withdrawal, demonstrating the limits of European imperial power in the postwar world.",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gamal_Abd_El-Nasser_1956.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gamal_Abd_El-Nasser_1956.png",
+      caption: "Nasser setting out Egypt's legal case for nationalizing the Suez Canal Company at a press conference in 1956. The nationalization triggered the Suez Crisis, Britain and France invaded, but U.S. pressure forced their withdrawal, demonstrating the limits of European imperial power in the postwar world.",
       prompt: "What does Nasser's nationalization of the Suez Canal reveal about how decolonization extended beyond formal political independence? How does the Suez Crisis illustrate the role of Cold War superpower pressure in accelerating European decolonization?"
     },
     {
-      title: "Biafra, Nigerian Civil War, 1967–1970",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Biafra_child_famine.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Biafra_child_famine.jpg",
-      caption: "The Biafran War (1967–1970): the secessionist movement of the Igbo-majority southeast challenged Nigeria's colonial-era boundaries. An estimated 1–3 million people died, many from the famine produced by the Nigerian blockade of Biafra.",
+      title: "Relief airlift during the Nigerian Civil War, 1967–1970",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Food_aid_Nigeria.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Food_aid_Nigeria.png",
+      caption: "A relief team unloads airlifted food during the Nigerian-Biafran civil war. The secessionist movement of the Igbo-majority southeast challenged Nigeria's colonial-era boundaries; an estimated 1–3 million people died, many from the famine produced by the Nigerian blockade of Biafra, which made airlifts like this one the only way in.",
       prompt: "How does the Biafra secessionist movement illustrate the argument that inherited imperial boundaries became fault lines after independence? What does the Biafran War reveal about the relationship between colonial boundary-drawing and postcolonial conflict?"
     }
   ],

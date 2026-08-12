@@ -119,10 +119,10 @@ window.BEHISTORICAL_LESSON = {
           "By 1945 the grievances had not disappeared. They had intensified: colonial subjects who had fought for the Allies expected their sacrifices to be rewarded with self-government."
         ],
         image: {
-          title: "Indian National Congress session, 1920s",
-          caption: "The Indian National Congress became the largest organized anti-colonial movement of the interwar period.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi1918.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Gandhi1918.jpg"
+          title: "Indian National Congress, Bombay session, December 1904",
+          caption: "Delegates of the Indian National Congress at its Bombay session in 1904. From this base the Congress grew into the largest organized anti-colonial movement of the interwar period.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_National_Congress_1904.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_National_Congress_1904.jpg"
         }
       },
       {
@@ -153,8 +153,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Yalta Conference, February 1945",
           caption: "Churchill, Roosevelt, and Stalin at Yalta, the moment when the post-war division of Europe began to take shape.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_1945_CC.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Yalta_Conference_1945_CC.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_summit_1945_with_Churchill,_Roosevelt,_Stalin.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Yalta_summit_1945_with_Churchill,_Roosevelt,_Stalin.jpg"
         }
       }
     ]
@@ -162,9 +162,9 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The World in 1945: Colonial Empires and Rising Superpowers",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1945_empires_colonies_territory.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1945_empires_colonies_territory.png",
-    caption: "The global political order in 1945, colonial empires at their peak extent, with two new superpowers emerging.",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Koloniismo_1945.png",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Koloniismo_1945.png",
+    caption: "Colonial holdings and their borders as they stood in 1945. The old imperial map is still intact here, which is exactly the point: within two decades most of it would be gone.",
     intro: "Use the map to identify where colonial empires still extended, and where the U.S. and Soviet Union held power. The map shows the world at a turning point: the old imperial order intact on the map, but already under pressure from exhaustion, nationalist movements, and superpower rivalry.",
     prompt: "What does the map suggest about the tension between the old colonial order and the new superpower world? Identify two areas where you would predict major change in the next two decades.",
     notes: [
@@ -183,9 +183,9 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "League of Nations Mandate Map",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/League_of_Nations_Mandates.png",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:League_of_Nations_Mandates.png",
-      caption: "The League of Nations Mandate System divided Germany's former colonies among the victorious Allied powers, principally Britain and France.",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_league_of_nations_mandate.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_of_league_of_nations_mandate.png",
+      caption: "The League of Nations Mandate System placed Germany's former colonies and the Ottoman Empire's Arab provinces under British, French, Belgian, Japanese, and Commonwealth administration rather than granting them self-government.",
       prompt: "How does this map challenge Wilson's promise of self-determination? What does it reveal about the difference between the rhetoric of 1918 and the reality of 1919?"
     },
     {

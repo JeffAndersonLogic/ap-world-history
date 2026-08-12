@@ -145,8 +145,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Mao Zedong proclaims the People's Republic of China, 1949",
           caption: "On October 1, 1949, Mao Zedong proclaimed the founding of the People's Republic of China from Tiananmen Gate, the culmination of decades of internal tension and anti-Japanese struggle.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_PRC.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Mao_proclaiming_PRC.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_establishment_of_PRC.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Mao_proclaiming_establishment_of_PRC.jpg"
         }
       },
       {
@@ -161,8 +161,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Great Leap Forward — backyard steel furnace, 1958",
           caption: "During the Great Leap Forward, Chinese communes operated thousands of backyard steel furnaces, melting down household implements to meet centrally mandated production targets. The resulting steel was largely unusable while agricultural production collapsed.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Leap_Forward_backyard_steel.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Great_Leap_Forward_backyard_steel.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Backyard_furnace2.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Backyard_furnace2.jpg"
         }
       },
       {
@@ -186,9 +186,9 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Communist and Redistribution Movements, 1900–1979",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Communist_world_1983.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Communist_world_1983.png",
-    caption: "Communist and socialist states at peak Cold War spread, showing the geographic range of movements to redistribute land and resources across Africa, Asia, and Latin America.",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Communist_Block.svg",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Communist_Block.svg",
+    caption: "States that had communist governments during the Cold War, shaded by whether they stayed aligned with the Soviet Union, broke with it, or were judged by Moscow to be moving toward socialism. The spread across Africa, Asia, and Latin America is the geographic range this topic asks you to explain.",
     intro: "Use the map to trace the geographic spread of communist and socialist movements after 1900. China, Vietnam, Ethiopia, and the wider pattern of redistribution movements show how the ideological conflict of the Cold War era intersected with the drive for economic transformation across the postcolonial world.",
     prompt: "What geographic pattern do you notice in the spread of communist and redistribution movements? What does the distribution of these movements across Asia, Africa, and Latin America suggest about the relationship between communism and decolonization?",
     notes: [
@@ -208,9 +208,9 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Great Leap Forward propaganda poster, 1958",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/GLF_poster.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:GLF_poster.jpg",
-      caption: "A Great Leap Forward propaganda poster (1958) celebrates the simultaneous drive for agricultural and industrial production, imagery that contrasted sharply with the famine unfolding in Chinese villages.",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Brave_the_wind_and_the_waves.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Brave_the_wind_and_the_waves.jpg",
+      caption: "A Great Leap Forward propaganda poster from 1958, \"Brave the wind and the waves, everything has remarkable abilities,\" promising that sheer mobilized effort could overcome any limit. The imagery contrasted sharply with the famine unfolding in Chinese villages.",
       prompt: "What does this propaganda poster reveal about how the CCP government exercised control of the national economy during the Great Leap Forward? How does the imagery relate to the CED's description of 'repressive policies with negative repercussions for the population'?"
     },
     {
@@ -222,8 +222,8 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "Shah Mohammad Reza Pahlavi announces White Revolution, 1963",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/White_Revolution_Iran.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:White_Revolution_Iran.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mrp1341.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Mrp1341.jpg",
       caption: "Shah Mohammad Reza Pahlavi launched the White Revolution in 1963, a top-down land reform program that redistributed holdings from large landlords, partly to preempt communist organizing and satisfy American pressure for modernization.",
       prompt: "How does the White Revolution in Iran differ from redistribution in Vietnam or Kerala? What does a monarchical, top-down path to land reform reveal about the range of motivations and methods behind resource redistribution movements?"
     }

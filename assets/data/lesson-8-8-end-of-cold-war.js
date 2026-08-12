@@ -116,8 +116,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Reagan announcing SDI, March 23, 1983",
           caption: "President Reagan in the Oval Office, March 23, 1983, announcing the Strategic Defense Initiative. Reagan proposed using advanced technology to render Soviet ballistic missiles 'impotent and obsolete.' Soviet military planners assessed that matching or countering SDI would require investments the strained Soviet economy could not bear.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_sdi_speech_1983.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_sdi_speech_1983.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/President_Ronald_Reagan_Addresses_The_Nation_from_The_Oval_Office_on_National_Security_%28Sdi_Speech%29_-_DPLA_-_1a02931f54ddec689b9826dcf64c0658.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_Addresses_The_Nation_from_The_Oval_Office_on_National_Security_%28Sdi_Speech%29_-_DPLA_-_1a02931f54ddec689b9826dcf64c0658.jpg"
         }
       },
       {
@@ -131,9 +131,9 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Soviet troops withdrawing from Afghanistan, 1989",
-          caption: "Soviet soldiers cross the Friendship Bridge over the Amu Darya River from Afghanistan into the Soviet Union, February 1989. The withdrawal ended nine years of war that killed approximately 15,000 Soviet troops, wounded more than 35,000, and cost billions of rubles, while achieving none of its original military objectives.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Soviet_withdrawal_Afghanistan_1989.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Soviet_withdrawal_Afghanistan_1989.jpg"
+          caption: "The last Soviet troop column crosses the border out of Afghanistan on 15 February 1989, under a banner reading \"Glory to the soldiers of the fatherland!\" The withdrawal ended nine years of war that killed approximately 15,000 Soviet troops, wounded more than 35,000, and cost billions of rubles, while achieving none of its original military objectives.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.jpg"
         }
       },
       {
@@ -181,23 +181,23 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Reagan and Gorbachev at the Geneva Summit, 1985",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_1985.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_%281985%29.jpg",
       caption: "President Reagan and Soviet General Secretary Gorbachev at the Geneva Summit, November 1985, their first meeting. The two leaders met four times between 1985 and 1988. Their negotiations eventually produced the Intermediate-Range Nuclear Forces (INF) Treaty (1987), the first Cold War agreement to actually eliminate a class of nuclear weapons.",
       prompt: "What does the fact that Reagan and Gorbachev met four times and ultimately signed the INF Treaty reveal about the relationship between U.S. military pressure (LT1) and Soviet domestic reform (LT3)? How does a summit between two leaders illustrate the intersection of external pressure and internal change?"
     },
     {
-      title: "Mujahideen fighters, Afghanistan, 1980s",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Afghan_Mujahideen_1987.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Afghan_Mujahideen_1987.jpg",
-      caption: "Afghan Mujahideen fighters in the 1980s. The decentralized, regionally organized Mujahideen resistance proved impossible for Soviet conventional forces to defeat. CIA support through Operation Cyclone, including Stinger anti-aircraft missiles from 1986, provided the insurgency with capabilities that negated Soviet tactical air advantage.",
+      title: "Mujahideen weaponry seized by Soviet forces, Afghanistan, 1980s",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Afghanistan_%E2%80%93_Seized_Mujahideen_weaponry_007.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Afghanistan_%E2%80%93_Seized_Mujahideen_weaponry_007.jpg",
+      caption: "Mujahideen grenade launchers, machine guns and rifles seized by a Soviet KGB detachment in Badakhshan province. The decentralized, regionally organized Mujahideen resistance proved impossible for Soviet conventional forces to defeat. CIA support through Operation Cyclone, including Stinger anti-aircraft missiles from 1986, provided the insurgency with capabilities that negated Soviet tactical air advantage.",
       prompt: "Why did the Soviet military, which had modernized extensively since World War II, find it impossible to defeat the Mujahideen? What does the Afghan experience reveal about the limits of conventional military power against irregular resistance, and how does this connect to LT2's causal claim?"
     },
     {
-      title: "Gorbachev at the Central Committee, announcing perestroika",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gorbachev_speech_1988.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gorbachev_speech_1988.jpg",
-      caption: "Mikhail Gorbachev addressing the Central Committee of the Communist Party. Gorbachev's programs of glasnost (openness) and perestroika (restructuring) were designed to modernize the Soviet system, but they released forces of criticism and nationalism that the party could not control once permitted.",
+      title: "Gorbachev speaking at the Kremlin Palace of Congresses, February 1987",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/RIAN_archive_850809_General_Secretary_of_the_CPSU_CC_M._Gorbachev.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:RIAN_archive_850809_General_Secretary_of_the_CPSU_CC_M._Gorbachev.jpg",
+      caption: "Mikhail Gorbachev, General Secretary of the Communist Party's Central Committee, speaking at the Kremlin Palace of Congresses in February 1987. His programs of glasnost (openness) and perestroika (restructuring) were designed to modernize the Soviet system, but they released forces of criticism and nationalism that the party could not control once permitted.",
       prompt: "Gorbachev did not intend to end the Soviet Union, he intended to save it. How does the unintended outcome of his reforms illustrate KC-6.2.IV.E's causal claim about 'public discontent and economic weakness in communist countries'? What does glasnost reveal about why open criticism, once permitted, is difficult to stop?"
     }
   ],
