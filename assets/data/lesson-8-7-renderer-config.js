@@ -82,13 +82,13 @@
     map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
     first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nelson_Mandela_1990.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_salt_march.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Birmingham_campaign.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_salt_march.jpg',
+    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nelson_Mandela_1994.jpg',
+    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_during_the_Salt_March.jpg',
+    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/MLK_mugshot_birmingham.jpg',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_during_the_Salt_March.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_King_Jr_NYWTS.jpg',
     beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sharpeville_massacre.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Moneda_1973.jpg'
+    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Golpe_de_Estado_1973.jpg'
   };
 
   lesson.beInTheRoom = {

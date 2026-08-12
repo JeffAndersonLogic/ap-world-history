@@ -78,12 +78,12 @@
     map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png',
     first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah_declares_independence.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_salt_march.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_salt_march.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gamal_Abdel_Nasser_1956.jpg',
+    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/A_portrait_of_Dr_Kwame_Nkrumah.jpg',
+    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_during_the_Salt_March.jpg',
+    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_during_the_Salt_March.jpg',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nasser_cheered_by_supporters_in_1956.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_1946.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah_declares_independence.jpg',
+    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/A_portrait_of_Dr_Kwame_Nkrumah.jpg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png'
   };
 

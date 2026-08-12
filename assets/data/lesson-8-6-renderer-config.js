@@ -101,7 +101,7 @@
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sirimavo_Bandaranaike.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Aswan_High_Dam.jpg',
     checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Partition_of_India_1947_mass_migration.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nehru_Mountbatten.jpg',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15%2C_1947.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jawaharlal_Nehru_1947.jpg',
     beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Partition_of_India_1947_mass_migration.jpg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png'

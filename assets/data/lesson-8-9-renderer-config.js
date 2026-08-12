@@ -320,7 +320,7 @@
       label: 'Module 05',
       title: 'AP Skill Builder',
       desc: 'LEQ construction: plan contextualization, thesis degree claim, two evidence paragraphs (one per hemisphere), and the complexity move.',
-      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg',
+      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/President_Ronald_Reagan_and_Soviet_General_Secretary_Mikhail_Gorbachev_at_the_first_Summit_in_Geneva%2C_Switzerland.jpg',
       render: function () { return renderSkill(); }
     },
     {

@@ -80,16 +80,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_world_1983.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_world_1983.png',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_world_1983.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/GLF_poster.jpg',
+    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cold_War_Map_1980.svg',
+    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cold_War_Map_1980.svg',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cold_War_Map_1980.svg',
+    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/A_Great_Leap_Forward_Propaganda_Painting_on_the_Wall_of_a_Rural_House_in_Shanghai.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_1946.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_PRC.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/GLF_poster.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_PRC.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_PRC.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_world_1983.png'
+    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_Proclaiming_New_China.JPG',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/A_Great_Leap_Forward_Propaganda_Painting_on_the_Wall_of_a_Rural_House_in_Shanghai.jpg',
+    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_Proclaiming_New_China.JPG',
+    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_Proclaiming_New_China.JPG',
+    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cold_War_Map_1980.svg'
   };
 
   lesson.beInTheRoom = {

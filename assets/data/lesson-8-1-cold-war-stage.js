@@ -121,8 +121,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Indian National Congress session, 1920s",
           caption: "The Indian National Congress became the largest organized anti-colonial movement of the interwar period.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi1918.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Gandhi1918.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Kheda_1918.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Gandhi_Kheda_1918.jpg"
         }
       },
       {
@@ -162,8 +162,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The World in 1945: Colonial Empires and Rising Superpowers",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1945_empires_colonies_territory.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1945_empires_colonies_territory.png",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Colonization_1945.png",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Colonization_1945.png",
     caption: "The global political order in 1945, colonial empires at their peak extent, with two new superpowers emerging.",
     intro: "Use the map to identify where colonial empires still extended, and where the U.S. and Soviet Union held power. The map shows the world at a turning point: the old imperial order intact on the map, but already under pressure from exhaustion, nationalist movements, and superpower rivalry.",
     prompt: "What does the map suggest about the tension between the old colonial order and the new superpower world? Identify two areas where you would predict major change in the next two decades.",
@@ -183,8 +183,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "League of Nations Mandate Map",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/League_of_Nations_Mandates.png",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:League_of_Nations_Mandates.png",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_league_of_nations_mandate.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_of_league_of_nations_mandate.png",
       caption: "The League of Nations Mandate System divided Germany's former colonies among the victorious Allied powers, principally Britain and France.",
       prompt: "How does this map challenge Wilson's promise of self-determination? What does it reveal about the difference between the rhetoric of 1918 and the reality of 1919?"
     },

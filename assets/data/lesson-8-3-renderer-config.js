@@ -55,7 +55,7 @@
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_1945_CC.jpg',
     checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_1945_CC.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/NATO_signing.jpg',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Truman_signing_North_Atlantic_Treaty.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Truman_signing_bills.jpg',
     beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Agostinho_Neto.jpg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cold_war_europe_military_alliances_map_en.png'

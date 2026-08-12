@@ -59,11 +59,11 @@
     first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Soviet_withdrawal_Afghanistan_1989.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_sdi_speech_1983.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gorbachev_speech_1988.jpg',
+    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/President_Ronald_Reagan_and_Soviet_General_Secretary_Mikhail_Gorbachev_at_the_first_Summit_in_Geneva%2C_Switzerland.jpg',
+    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.jpg',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/President_Ronald_Reagan_and_Soviet_General_Secretary_Mikhail_Gorbachev_at_the_first_Summit_in_Geneva%2C_Switzerland.jpg',
+    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_sitting_with_people_from_the_Afghanistan-Pakistan_region_in_February_1983.jpg',
+    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mikhail_Gorbachev.jpg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG'
   };
 
