@@ -959,6 +959,49 @@ section('No committed Canvas credentials');
   sectionDone(`${scanned.length} text files carry no Canvas credential, and .env is ignored`);
 }
 
+// 13. Every unit topic has a Canvas overview.
+//
+// OVERVIEW is the one row of a Canvas calendar event that is not lifted out of a
+// lesson data file, because no unit data file contains prose addressed to a
+// student. It is drafted by hand in assets/data/canvas-overviews.js.
+//
+// The failure this catches is a new topic whose Canvas event is built with an
+// empty OVERVIEW cell. Everything else about that event generates correctly, so
+// the gap only shows up on the student's screen.
+section('Canvas overviews');
+{
+  const overviewFile = path.join(ROOT, 'assets', 'data', 'canvas-overviews.js');
+  totalChecks++;
+  const src = read(overviewFile);
+  if (!src) {
+    err(overviewFile, 'is missing, so every unit Canvas event would have an empty OVERVIEW');
+  } else {
+    const declared = new Set();
+    for (const m of src.matchAll(/^\s*"(\d+\.\d+)":/gm)) declared.add(m[1]);
+
+    const missing = [];
+    for (const filePath of dataFiles) {
+      const topic = (read(filePath) || '').match(/topic:\s*['"]Topic\s*([\d.]+)['"]/);
+      if (!topic) continue;
+      totalChecks++;
+      if (!declared.has(topic[1])) missing.push(topic[1]);
+    }
+    if (missing.length) {
+      err(overviewFile, `has no OVERVIEW for ${missing.length} topics: ${missing.sort().join(', ')}`);
+    }
+
+    // Prose written to the teacher, pasted at a student, is the exact failure
+    // the Foundations generator's OVERVIEWS table was created to prevent.
+    for (const m of src.matchAll(/^\s*"(\d+\.\d+)": "(.*)",?$/gm)) {
+      totalChecks++;
+      if (/\bstudents (?:who|will|should|need)\b/i.test(m[2])) {
+        err(overviewFile, `the overview for ${m[1]} talks about students rather than to them`);
+      }
+    }
+    sectionDone(`${declared.size} unit topics have a student-facing Canvas overview`);
+  }
+}
+
 // ── Summary ───────────────────────────────────────────────────────────────────
 console.log(`\n${'─'.repeat(60)}`);
 console.log(`${W}Summary${X}  |  ${totalChecks} files checked`);
