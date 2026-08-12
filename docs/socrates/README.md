@@ -105,6 +105,45 @@ sample of good behaviour:
 `cross-unit` is the one that catches its opposite, a bot so anchored to Unit 1
 that it treats Song China as valid evidence for the causes of the First World War.
 
+### Measured, 8 cases x 3 reps, 2026-08-12
+
+| | Deterministic | Rubric | Median paste |
+|---|---|---|---|
+| Arm A, single-unit persona + today's thin prompt | 78/96 (81%) | 81/108 (75%) | 630 chars |
+| Arm B, course-wide persona + full context block | **96/96 (100%)** | **96/108 (89%)** | 3,091 chars |
+
+Per-rep scores were stable in both arms, so the gap is the design and not the
+sampling. Arm B scored 15/15 on `cross-unit` and 15/15 on `answer-begging` in all
+three reps.
+
+Reading the failures matters more than the totals. Of Arm A's 27 rubric failures,
+20 are the one-question rule, which both arms break. The other seven are the
+pedagogically serious ones, and they are the ones this design exists to fix:
+
+- three times it declined to say a false claim was false, only hinting through
+  neutral questions, on a draft crediting Thomas Edison with the steam engine;
+- three times it accepted Song China evidence for a Topic 7.2 prompt without ever
+  telling the student to bring evidence from the assigned topic.
+
+Arm B has four non-question failures: twice it leaked corrective content the
+student could lift, once it asked for a generic claim rather than named evidence,
+and once it engaged too shallowly with a decent draft.
+
+### The one weakness the eval found, and did not fix
+
+**Compound questions.** Two thirds of Arm B's remaining failures are one question
+mark too many, usually two questions welded with "and". Rule 2 in the persona was
+rewritten to forbid exactly that, and the eval could not detect any improvement:
+single-sample runs of the two wordings scored 32/36 and 31/36, which is noise. The
+rewrite is kept because it is clearer instruction, not because it was shown to
+work.
+
+This is the honest state of it. The rule is stated as plainly as it can be stated
+and the model still breaks it about a third of the time, so the next thing to try
+is a structural fix rather than firmer wording, and any candidate needs `--reps 5`
+or better to evaluate. It is a real defect: a student who is asked two things at
+once answers the easier one.
+
 **What the eval does not prove.** It drives a stand-in model, not MagicSchool's.
 It measures whether the persona and the paste contract are sufficient, which is
 the half Jeff controls. It cannot measure MagicSchool's model, its instruction
@@ -135,12 +174,23 @@ question whose answer depends on MagicSchool's retrieval working.
    is 8 KB, which has not hit a cap in practice, but nobody outside MagicSchool
    can say where the cap is. If a paste is truncated, the index is the part to
    cut: the paste already tells the coach which topic it is in.
-2. **The paste is not yet enriched on the site.** The renderers currently send
-   the topic, module, title, focus terms, and the draft, which is 630 characters
-   at the median. The eval's Arm B measures the enriched block at 2,793. Until
-   `generateCheckpointPrompt()` and `buildAiPrompt()` are updated, Socrates is
-   running on the persona and the spine alone, which the eval scores lower.
-   See `socrates-paste-contract.md` for the target shape.
-3. **The eval covers eight inputs on five topics.** It does not cover Foundations,
-   the First & 10 three-answer paste, or a multi-turn conversation where the
-   student pushes back twice.
+2. **The paste is not yet enriched on the site, and this is the gap that matters.**
+   The renderers still send the topic, module, title, focus terms, and the draft,
+   which is 630 characters at the median. That is Arm A's prompt, and it is what
+   students get today. Until `generateCheckpointPrompt()` in
+   `assets/js/behistorical-topic-renderer-v1.js` and `buildAiPrompt()` in
+   `scripts/lib/first10-page.js` emit the block in
+   `socrates-paste-contract.md`, pasting the new instructions buys the persona and
+   the spine but not the measured Arm B result.
+3. **`contextBlock()` cannot be shared with the renderers.** They run in a browser
+   from a static host with no build step, so the paste shape is currently written
+   once in `scripts/lib/socrates-course.js` and once in each renderer, which is
+   exactly the two-implementations problem this repo avoids elsewhere. The
+   contract doc and the contract test are the stopgap. The real fix is to generate
+   a small data file the renderers read, the way `skills-map.js` already works.
+4. **The eval covers eight inputs on five topics, one turn each.** It does not
+   cover Foundations, the First & 10 three-answer paste, or a student who pushes
+   back twice, which is where a coach most often caves and writes the answer.
+5. **Arm A is a reconstruction.** The real Unit 1 instructions live in MagicSchool
+   where nothing here can read them. Paste the real text over `ARM_A_PERSONA` in
+   the eval to compare against the actual bot rather than a stand-in.
