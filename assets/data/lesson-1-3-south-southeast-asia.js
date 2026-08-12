@@ -119,7 +119,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Hampi Virupaksha Temple',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Hampi%20virupaksha%20temple.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Hampi_virupaksha_temple.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Hampi%20virupaksha%20temple.jpg',
           caption: 'The Vijayanagara Empire was a major center of Hindu devotional culture and temple patronage in southern India.'
         }
       },
@@ -147,7 +147,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Angkor Wat',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor%20Wat.jpg',
           caption: 'Angkor Wat displayed religious devotion and the political power of the Khmer state through monumental scale and sacred symbolism.'
         }
       },
@@ -161,7 +161,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Borobudur Ship Relief',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur%20ship.JPG',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Borobudur_ship.JPG',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Borobudur%20ship.JPG',
           caption: 'A ship relief from Borobudur captures the maritime power and Buddhist cultural reach of Southeast Asian states.'
         }
       }
@@ -228,14 +228,14 @@ window.BEHISTORICAL_LESSON = {
     {
       title: 'Angkor Wat',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor%20Wat.jpg',
       caption: 'Monumental architecture displayed religious devotion and Khmer state power.',
       prompt: 'How does this structure connect religion to political authority? What does its scale suggest about state power and labor mobilization?'
     },
     {
       title: 'Borobudur Ship Relief',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur%20ship.JPG',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Borobudur_ship.JPG',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Borobudur%20ship.JPG',
       caption: 'Maritime trade was central to Buddhist states like Srivijaya and Majapahit in Southeast Asia.',
       prompt: 'What does this image suggest about the relationship between maritime trade and Buddhist culture in Southeast Asia?'
     },
@@ -249,7 +249,7 @@ window.BEHISTORICAL_LESSON = {
     {
       title: 'Hampi Virupaksha Temple',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Hampi%20virupaksha%20temple.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Hampi_virupaksha_temple.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Hampi%20virupaksha%20temple.jpg',
       caption: 'Hampi was the capital of the Vijayanagara Empire, a major Hindu kingdom in southern India.',
       prompt: 'How does this image show the relationship between Hinduism and state power in the Vijayanagara Empire?'
     },

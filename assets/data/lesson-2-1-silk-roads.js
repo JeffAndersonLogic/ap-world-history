@@ -143,7 +143,7 @@ window.BEHISTORICAL_LESSON = {
           title: "Jiaozi paper money — Song China",
           caption: "Paper money reflects the commercialized economy that powered demand for Silk Road luxury goods.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg"
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Jiao%20zi.jpg"
         }
       }
     ]

@@ -71,7 +71,7 @@
 
   lesson.stableImages = {
     map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atwater_Kent_radio.jpg',
+    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/PensacolaAug081920sRadio.jpg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',

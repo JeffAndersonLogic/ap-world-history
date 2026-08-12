@@ -230,9 +230,9 @@ window.BEHISTORICAL_LESSON = {
 
   images: [
     {
-      title: "Early Radio Broadcast, 1920s",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Atwater_Kent_radio.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Atwater_Kent_radio.jpg",
+      title: "A 1920s broadcast radio receiver",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/PensacolaAug081920sRadio.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:PensacolaAug081920sRadio.jpg",
       caption: "Radio brought news, entertainment, and government messages into millions of homes for the first time, collapsing the distance between states and citizens.",
       prompt: "How did radio change the relationship between governments and the people they governed? What new possibilities, and risks, did instant mass communication create?"
     },

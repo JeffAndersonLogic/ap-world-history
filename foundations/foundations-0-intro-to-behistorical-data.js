@@ -109,7 +109,7 @@ window.FOUNDATION_TOPIC = {
       {
         title: 'Artifact 1 (September): An Early Checkpoint Response',
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song%20Imperial%20Examination.JPG',
         caption: 'Sample: "Song China had a lot of trade because they had a big navy and good boats. Also they invented paper money." A first-week response. Correct, but flat. The student names two facts. They have not yet learned to place Song China in context or connect those facts to causation. This is where every historian starts.',
         prompt: 'What is this response missing that a stronger version of you, in April, would add?'
       },
