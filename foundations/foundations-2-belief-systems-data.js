@@ -122,8 +122,8 @@ window.FOUNDATION_TOPIC = {
       },
       {
         title: 'The Great Mosque of Córdoba (begun 784 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mosque_of_Cordoba_overview.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mosque_of_Cordoba_overview.jpg',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mosque_Cordoba.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mosque_Cordoba.jpg',
         caption: 'The Great Mosque of Córdoba in Umayyad Spain was simultaneously a place of prayer, a center of legal adjudication, a school, and an architectural statement of Islamic political authority, one Islamic institution performing several civic functions at once.',
         prompt: 'What does this mosque reveal about Islam as an institution rather than just a personal religion? What multiple functions did it serve in Córdoba\'s Islamic society?'
       }
