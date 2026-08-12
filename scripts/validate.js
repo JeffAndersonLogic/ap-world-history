@@ -895,6 +895,70 @@ section('Skills Lens inlined libraries');
   }
 }
 
+// 12. No Canvas credential may be committed.
+//
+// A Canvas access token grants everything the teacher account can do, in a
+// course full of minors, over an API with no undo. This repository is public,
+// GitHub Pages serves it, and `main` is what students have. A token pasted into
+// a script "just to test it" is published the moment it is pushed, and it stays
+// in the history after it is deleted from the file.
+//
+// The Canvas token shape is `<user_id>~<long random string>`, which is specific
+// enough to match on and generic enough that this also catches the ones typed
+// into a comment. The literal-assignment check catches the other half of the
+// failure: a token parked in a variable rather than pasted inline.
+//
+// The one correct place for a token is an environment variable read at runtime,
+// which is why `.env` is gitignored rather than checked for content.
+section('No committed Canvas credentials');
+{
+  // 1234~ followed by 40 or more token characters. Canvas issues far longer,
+  // but 40 is past anything a real identifier reaches by accident.
+  const TOKEN_SHAPE = /\b\d{3,7}~[A-Za-z0-9]{40,}\b/;
+  // A named token variable given a hard-coded string, of any length.
+  const HARDCODED = /(canvas[_-]?(api[_-]?)?(token|key|secret)|access[_-]?token)\s*[:=]\s*['"`][^'"`\s]{12,}['"`]/i;
+
+  const SKIP_DIRS = new Set(['.git', 'node_modules', '.visual-check', '.claude']);
+  const TEXT_EXT = new Set(['.js', '.mjs', '.cjs', '.json', '.html', '.md', '.sh', '.yml', '.yaml', '.txt', '.css']);
+
+  const scanned = [];
+  (function walk(dir) {
+    let entries;
+    try { entries = fs.readdirSync(dir, { withFileTypes: true }); } catch { return; }
+    for (const entry of entries) {
+      if (entry.isDirectory()) {
+        if (!SKIP_DIRS.has(entry.name)) walk(path.join(dir, entry.name));
+      } else if (TEXT_EXT.has(path.extname(entry.name))) {
+        scanned.push(path.join(dir, entry.name));
+      }
+    }
+  })(ROOT);
+
+  const SELF = path.join(ROOT, 'scripts', 'validate.js');
+  for (const filePath of scanned) {
+    // This file carries the patterns themselves and would match on itself.
+    if (filePath === SELF) continue;
+    totalChecks++;
+    const src = read(filePath);
+    if (!src) continue;
+    if (TOKEN_SHAPE.test(src)) {
+      err(filePath, 'contains something shaped like a Canvas access token. Revoke it in Canvas, Account, Settings, then remove it and use an environment variable');
+    } else if (HARDCODED.test(src)) {
+      err(filePath, 'hard-codes a token or key in a variable. Read it from an environment variable at runtime instead');
+    }
+  }
+
+  // Gitignoring .env is what makes "put it in an environment variable" safe
+  // advice rather than a different way to commit the same secret.
+  totalChecks++;
+  const ignore = read(path.join(ROOT, '.gitignore')) || '';
+  if (!/^\.env$/m.test(ignore)) {
+    err(path.join(ROOT, '.gitignore'), 'does not ignore .env, so a token file dropped there would be committed');
+  }
+
+  sectionDone(`${scanned.length} text files carry no Canvas credential, and .env is ignored`);
+}
+
 // ── Summary ───────────────────────────────────────────────────────────────────
 console.log(`\n${'─'.repeat(60)}`);
 console.log(`${W}Summary${X}  |  ${totalChecks} files checked`);
