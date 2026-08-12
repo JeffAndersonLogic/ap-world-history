@@ -26,6 +26,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-0-intro-to-behistorical.html',
       covers: [],
+      homework: ['Finish the F0 modules for Intro to BeHistorical and submit your work in Canvas.', 'Read Theme 1, page 18, in Traditions and Encounters.'],
+      dueDate: '2026-08-06',
+      reading: 'Theme 1, page 18',
       isLastDay: false
     },
     {
@@ -40,6 +43,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-0-intro-to-behistorical.html',
       covers: [],
+      homework: ['Finish the F0 modules for Intro to BeHistorical and submit your work in Canvas.', 'Read Theme 1, page 18, in Traditions and Encounters.'],
+      dueDate: '2026-08-07',
+      reading: 'Theme 1, page 18',
       isLastDay: true
     },
     {
@@ -54,6 +60,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-1-geography.html',
       covers: [],
+      homework: ['Finish the F1 modules for Geography Shapes Civilization and submit your work in Canvas.', 'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in Traditions and Encounters.'],
+      dueDate: '2026-08-10',
+      reading: 'Theme 2, Cultural Developments and Interactions, pages 19 and 20',
       isLastDay: false
     },
     {
@@ -68,6 +77,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-1-geography.html',
       covers: [],
+      homework: ['Finish the F1 modules for Geography Shapes Civilization and submit your work in Canvas.', 'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in Traditions and Encounters.'],
+      dueDate: '2026-08-11',
+      reading: 'Theme 2, Cultural Developments and Interactions, pages 19 and 20',
       isLastDay: true
     },
     {
@@ -82,6 +94,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-2-belief-systems.html',
       covers: [],
+      homework: ['Finish the F2 modules for Belief Systems & Cultural Exchange and submit your work in Canvas.'],
+      dueDate: '2026-08-12',
+      reading: '',
       isLastDay: false
     },
     {
@@ -96,6 +111,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-2-belief-systems.html',
       covers: [],
+      homework: ['Finish the F2 modules for Belief Systems & Cultural Exchange and submit your work in Canvas.'],
+      dueDate: '2026-08-13',
+      reading: '',
       isLastDay: true
     },
     {
@@ -110,6 +128,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-3-states-power.html',
       covers: [],
+      homework: ['Finish the F3 modules for States, Power & Social Organization and submit your work in Canvas.'],
+      dueDate: '2026-08-14',
+      reading: '',
       isLastDay: false
     },
     {
@@ -124,6 +145,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-3-states-power.html',
       covers: [],
+      homework: ['Finish the F3 modules for States, Power & Social Organization and submit your work in Canvas.'],
+      dueDate: '2026-08-17',
+      reading: '',
       isLastDay: true
     },
     {
@@ -138,6 +162,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-4-trade-networks.html',
       covers: [],
+      homework: ['Finish the F4 modules for Trade Networks & Innovation and submit your work in Canvas.'],
+      dueDate: '2026-08-18',
+      reading: '',
       isLastDay: false
     },
     {
@@ -152,6 +179,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-4-trade-networks.html',
       covers: [],
+      homework: ['Finish the F4 modules for Trade Networks & Innovation and submit your work in Canvas.'],
+      dueDate: '2026-08-19',
+      reading: '',
       isLastDay: true
     },
     {
@@ -166,6 +196,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-5-world-at-1200.html',
       covers: [],
+      homework: ['Finish the F5 modules for The World at c.1200 / Thinking Like a Historian and submit your work in Canvas.'],
+      dueDate: '2026-08-20',
+      reading: '',
       isLastDay: false
     },
     {
@@ -180,6 +213,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'foundations/foundations-5-world-at-1200.html',
       covers: [],
+      homework: ['Finish the F5 modules for The World at c.1200 / Thinking Like a Historian and submit your work in Canvas.'],
+      dueDate: '2026-08-21',
+      reading: '',
       isLastDay: true
     },
     {
@@ -194,6 +230,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [],
+      homework: ['Study for the Foundations Assessment.'],
+      dueDate: '2026-08-24',
+      reading: '',
       isLastDay: false
     },
     {
@@ -208,6 +247,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [],
+      homework: ['Study for the Foundations Assessment.'],
+      dueDate: '2026-08-25',
+      reading: '',
       isLastDay: true
     },
     {
@@ -222,6 +264,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-1-song-china.html',
       covers: [],
+      homework: ['Finish the 1.1 modules for Song China: Power, Prosperity, and the Scholar\'s World and submit your work in Canvas.'],
+      dueDate: '2026-08-26',
+      reading: '',
       isLastDay: false
     },
     {
@@ -236,6 +281,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-1-song-china.html',
       covers: [],
+      homework: ['Finish the 1.1 modules for Song China: Power, Prosperity, and the Scholar\'s World and submit your work in Canvas.'],
+      dueDate: '2026-08-27',
+      reading: '',
       isLastDay: true
     },
     {
@@ -250,6 +298,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-2-dar-al-islam.html',
       covers: [],
+      homework: ['Finish the 1.2 modules for Developments in Dar al-Islam and submit your work in Canvas.'],
+      dueDate: '2026-08-28',
+      reading: '',
       isLastDay: false
     },
     {
@@ -264,6 +315,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-2-dar-al-islam.html',
       covers: [],
+      homework: ['Finish the 1.2 modules for Developments in Dar al-Islam and submit your work in Canvas.'],
+      dueDate: '2026-08-31',
+      reading: '',
       isLastDay: true
     },
     {
@@ -278,6 +332,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-3-south-southeast-asia.html',
       covers: [],
+      homework: ['Finish the 1.3 modules for Developments in South and Southeast Asia and submit your work in Canvas.'],
+      dueDate: '2026-09-01',
+      reading: '',
       isLastDay: false
     },
     {
@@ -292,6 +349,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-3-south-southeast-asia.html',
       covers: [],
+      homework: ['Finish the 1.3 modules for Developments in South and Southeast Asia and submit your work in Canvas.'],
+      dueDate: '2026-09-02',
+      reading: '',
       isLastDay: true
     },
     {
@@ -306,6 +366,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-4-americas.html',
       covers: [],
+      homework: ['Finish the 1.4 modules for State Building in the Americas and submit your work in Canvas.'],
+      dueDate: '2026-09-03',
+      reading: '',
       isLastDay: false
     },
     {
@@ -320,6 +383,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-4-americas.html',
       covers: [],
+      homework: ['Finish the 1.4 modules for State Building in the Americas and submit your work in Canvas.'],
+      dueDate: '2026-09-04',
+      reading: '',
       isLastDay: true
     },
     {
@@ -334,6 +400,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-5-africa.html',
       covers: [],
+      homework: ['Finish the 1.5 modules for State Building in Africa and submit your work in Canvas.'],
+      dueDate: '2026-09-08',
+      reading: '',
       isLastDay: false
     },
     {
@@ -348,6 +417,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-5-africa.html',
       covers: [],
+      homework: ['Finish the 1.5 modules for State Building in Africa and submit your work in Canvas.'],
+      dueDate: '2026-09-09',
+      reading: '',
       isLastDay: true
     },
     {
@@ -362,6 +434,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-6-europe.html',
       covers: [],
+      homework: ['Finish the 1.6 modules for Developments in Europe and submit your work in Canvas.'],
+      dueDate: '2026-09-10',
+      reading: '',
       isLastDay: false
     },
     {
@@ -376,6 +451,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-1/topic-1-6-europe.html',
       covers: [],
+      homework: ['Finish the 1.6 modules for Developments in Europe and submit your work in Canvas.'],
+      dueDate: '2026-09-11',
+      reading: '',
       isLastDay: true
     },
     {
@@ -390,6 +468,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '1.7', title: 'Comparison in the Period from c. 1200 to c. 1450', lessonPath: 'unit-1/topic-1-7-comparison.html' }],
+      homework: ['Study for the Unit 1 exam.', 'Review Comparison in the Period from c. 1200 to c. 1450 and your unit notes.'],
+      dueDate: '2026-09-14',
+      reading: '',
       isLastDay: false
     },
     {
@@ -404,6 +485,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '1.7', title: 'Comparison in the Period from c. 1200 to c. 1450', lessonPath: 'unit-1/topic-1-7-comparison.html' }],
+      homework: ['Study for the Unit 1 exam.', 'Review Comparison in the Period from c. 1200 to c. 1450 and your unit notes.'],
+      dueDate: '2026-09-15',
+      reading: '',
       isLastDay: true
     },
     {
@@ -418,6 +502,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-1-silk-roads.html',
       covers: [],
+      homework: ['Finish the 2.1 modules for The Silk Roads: Exchange Across Afro-Eurasia and submit your work in Canvas.'],
+      dueDate: '2026-09-16',
+      reading: '',
       isLastDay: false
     },
     {
@@ -432,6 +519,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-1-silk-roads.html',
       covers: [],
+      homework: ['Finish the 2.1 modules for The Silk Roads: Exchange Across Afro-Eurasia and submit your work in Canvas.'],
+      dueDate: '2026-09-17',
+      reading: '',
       isLastDay: true
     },
     {
@@ -446,6 +536,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-2-mongol-empire.html',
       covers: [],
+      homework: ['Finish the 2.2 modules for The Mongol Empire: Conquest, Connection, and the Pax Mongolica and submit your work in Canvas.'],
+      dueDate: '2026-09-18',
+      reading: '',
       isLastDay: false
     },
     {
@@ -460,6 +553,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-2-mongol-empire.html',
       covers: [],
+      homework: ['Finish the 2.2 modules for The Mongol Empire: Conquest, Connection, and the Pax Mongolica and submit your work in Canvas.'],
+      dueDate: '2026-09-21',
+      reading: '',
       isLastDay: true
     },
     {
@@ -474,6 +570,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-3-indian-ocean.html',
       covers: [],
+      homework: ['Finish the 2.3 modules for Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection and submit your work in Canvas.'],
+      dueDate: '2026-09-22',
+      reading: '',
       isLastDay: false
     },
     {
@@ -488,6 +587,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-3-indian-ocean.html',
       covers: [],
+      homework: ['Finish the 2.3 modules for Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection and submit your work in Canvas.'],
+      dueDate: '2026-09-23',
+      reading: '',
       isLastDay: true
     },
     {
@@ -502,6 +604,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-4-trans-saharan.html',
       covers: [],
+      homework: ['Finish the 2.4 modules for Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam and submit your work in Canvas.'],
+      dueDate: '2026-09-24',
+      reading: '',
       isLastDay: false
     },
     {
@@ -516,6 +621,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-4-trans-saharan.html',
       covers: [],
+      homework: ['Finish the 2.4 modules for Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam and submit your work in Canvas.'],
+      dueDate: '2026-09-25',
+      reading: '',
       isLastDay: true
     },
     {
@@ -530,6 +638,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-5-cultural-consequences.html',
       covers: [],
+      homework: ['Finish the 2.5 modules for Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move and submit your work in Canvas.'],
+      dueDate: '2026-09-28',
+      reading: '',
       isLastDay: false
     },
     {
@@ -544,6 +655,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-5-cultural-consequences.html',
       covers: [],
+      homework: ['Finish the 2.5 modules for Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move and submit your work in Canvas.'],
+      dueDate: '2026-09-29',
+      reading: '',
       isLastDay: true
     },
     {
@@ -558,6 +672,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-6-environmental-consequences.html',
       covers: [],
+      homework: ['Finish the 2.6 modules for Environmental Consequences of Connectivity: Disease, Death, and Ecological Change and submit your work in Canvas.'],
+      dueDate: '2026-09-30',
+      reading: '',
       isLastDay: false
     },
     {
@@ -572,6 +689,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-2/topic-2-6-environmental-consequences.html',
       covers: [],
+      homework: ['Finish the 2.6 modules for Environmental Consequences of Connectivity: Disease, Death, and Ecological Change and submit your work in Canvas.'],
+      dueDate: '2026-10-01',
+      reading: '',
       isLastDay: true
     },
     {
@@ -586,6 +706,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '2.7', title: 'Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks', lessonPath: 'unit-2/topic-2-7-comparison.html' }],
+      homework: ['Study for the Unit 2 exam.', 'Review Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks and your unit notes.'],
+      dueDate: '2026-10-02',
+      reading: '',
       isLastDay: false
     },
     {
@@ -600,6 +723,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '2.7', title: 'Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks', lessonPath: 'unit-2/topic-2-7-comparison.html' }],
+      homework: ['Study for the Unit 2 exam.', 'Review Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks and your unit notes.'],
+      dueDate: '2026-10-05',
+      reading: '',
       isLastDay: true
     },
     {
@@ -614,6 +740,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-3/topic-3-1-empires-expand.html',
       covers: [],
+      homework: ['Finish the 3.1 modules for Empires Expand and submit your work in Canvas.'],
+      dueDate: '2026-10-08',
+      reading: '',
       isLastDay: false
     },
     {
@@ -628,6 +757,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-3/topic-3-1-empires-expand.html',
       covers: [],
+      homework: ['Finish the 3.1 modules for Empires Expand and submit your work in Canvas.'],
+      dueDate: '2026-10-07',
+      reading: '',
       isLastDay: true
     },
     {
@@ -642,6 +774,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-3/topic-3-2-empires-administration.html',
       covers: [],
+      homework: ['Finish the 3.2 modules for Empires: Administration and submit your work in Canvas.'],
+      dueDate: '2026-10-09',
+      reading: '',
       isLastDay: false
     },
     {
@@ -656,6 +791,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-3/topic-3-2-empires-administration.html',
       covers: [],
+      homework: ['Finish the 3.2 modules for Empires: Administration and submit your work in Canvas.'],
+      dueDate: '2026-10-19',
+      reading: '',
       isLastDay: true
     },
     {
@@ -670,6 +808,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-3/topic-3-3-belief-systems.html',
       covers: [],
+      homework: ['Finish the 3.3 modules for Empires and Belief Systems and submit your work in Canvas.'],
+      dueDate: '2026-10-20',
+      reading: '',
       isLastDay: false
     },
     {
@@ -684,6 +825,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-3/topic-3-3-belief-systems.html',
       covers: [],
+      homework: ['Finish the 3.3 modules for Empires and Belief Systems and submit your work in Canvas.'],
+      dueDate: '2026-10-21',
+      reading: '',
       isLastDay: true
     },
     {
@@ -698,6 +842,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '3.4', title: 'Comparison in Land-Based Empires', lessonPath: 'unit-3/topic-3-4-comparison.html' }],
+      homework: ['Study for the Unit 3 exam.', 'Review Comparison in Land-Based Empires and your unit notes.'],
+      dueDate: '2026-10-22',
+      reading: '',
       isLastDay: false
     },
     {
@@ -712,6 +859,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '3.4', title: 'Comparison in Land-Based Empires', lessonPath: 'unit-3/topic-3-4-comparison.html' }],
+      homework: ['Study for the Unit 3 exam.', 'Review Comparison in Land-Based Empires and your unit notes.'],
+      dueDate: '2026-10-23',
+      reading: '',
       isLastDay: true
     },
     {
@@ -726,6 +876,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-1-technological-innovations.html',
       covers: [],
+      homework: ['Finish the 4.1 modules for Technological Innovations and submit your work in Canvas.'],
+      dueDate: '2026-10-26',
+      reading: '',
       isLastDay: false
     },
     {
@@ -740,6 +893,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-1-technological-innovations.html',
       covers: [],
+      homework: ['Finish the 4.1 modules for Technological Innovations and submit your work in Canvas.'],
+      dueDate: '2026-10-27',
+      reading: '',
       isLastDay: true
     },
     {
@@ -754,6 +910,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-2-exploration.html',
       covers: [],
+      homework: ['Finish the 4.2 modules for Exploration: Causes and Events and submit your work in Canvas.'],
+      dueDate: '2026-10-28',
+      reading: '',
       isLastDay: false
     },
     {
@@ -768,6 +927,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-2-exploration.html',
       covers: [],
+      homework: ['Finish the 4.2 modules for Exploration: Causes and Events and submit your work in Canvas.'],
+      dueDate: '2026-10-29',
+      reading: '',
       isLastDay: true
     },
     {
@@ -782,6 +944,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-3-columbian-exchange.html',
       covers: [],
+      homework: ['Finish the 4.3 modules for Columbian Exchange and submit your work in Canvas.'],
+      dueDate: '2026-10-30',
+      reading: '',
       isLastDay: false
     },
     {
@@ -796,6 +961,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-3-columbian-exchange.html',
       covers: [],
+      homework: ['Finish the 4.3 modules for Columbian Exchange and submit your work in Canvas.'],
+      dueDate: '2026-11-02',
+      reading: '',
       isLastDay: true
     },
     {
@@ -810,6 +978,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-4-maritime-empires-established.html',
       covers: [{ topic: '4.5', title: 'Maritime Empires Maintained and Developed', lessonPath: 'unit-4/topic-4-5-maritime-empires-maintained.html' }],
+      homework: ['Finish the 4.4 and 4.5 modules and submit your work in Canvas.'],
+      dueDate: '2026-11-03',
+      reading: '',
       isLastDay: false
     },
     {
@@ -824,6 +995,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-4-maritime-empires-established.html',
       covers: [{ topic: '4.5', title: 'Maritime Empires Maintained and Developed', lessonPath: 'unit-4/topic-4-5-maritime-empires-maintained.html' }],
+      homework: ['Finish the 4.4 and 4.5 modules and submit your work in Canvas.'],
+      dueDate: '2026-11-04',
+      reading: '',
       isLastDay: true
     },
     {
@@ -838,6 +1012,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-6-internal-external-challenges.html',
       covers: [],
+      homework: ['Finish the 4.6 modules for Internal and External Challenges to State Power and submit your work in Canvas.'],
+      dueDate: '2026-11-05',
+      reading: '',
       isLastDay: false
     },
     {
@@ -852,6 +1029,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-6-internal-external-challenges.html',
       covers: [],
+      homework: ['Finish the 4.6 modules for Internal and External Challenges to State Power and submit your work in Canvas.'],
+      dueDate: '2026-11-06',
+      reading: '',
       isLastDay: true
     },
     {
@@ -866,6 +1046,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-7-changing-social-hierarchies.html',
       covers: [],
+      homework: ['Finish the 4.7 modules for Changing Social Hierarchies and submit your work in Canvas.'],
+      dueDate: '2026-11-09',
+      reading: '',
       isLastDay: false
     },
     {
@@ -880,6 +1063,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-4/topic-4-7-changing-social-hierarchies.html',
       covers: [],
+      homework: ['Finish the 4.7 modules for Changing Social Hierarchies and submit your work in Canvas.'],
+      dueDate: '2026-11-10',
+      reading: '',
       isLastDay: true
     },
     {
@@ -894,6 +1080,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '4.8', title: 'Continuity and Change in the Period from c. 1450 to c. 1750', lessonPath: 'unit-4/topic-4-8-continuity-and-change.html' }],
+      homework: ['Study for the Unit 4 exam.', 'Review Continuity and Change in the Period from c. 1450 to c. 1750 and your unit notes.'],
+      dueDate: '2026-11-11',
+      reading: '',
       isLastDay: false
     },
     {
@@ -908,6 +1097,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '4.8', title: 'Continuity and Change in the Period from c. 1450 to c. 1750', lessonPath: 'unit-4/topic-4-8-continuity-and-change.html' }],
+      homework: ['Study for the Unit 4 exam.', 'Review Continuity and Change in the Period from c. 1450 to c. 1750 and your unit notes.'],
+      dueDate: '2026-11-12',
+      reading: '',
       isLastDay: true
     },
     {
@@ -922,6 +1114,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-1-enlightenment.html',
       covers: [],
+      homework: ['Finish the 5.1 modules for The Enlightenment and submit your work in Canvas.'],
+      dueDate: '2026-11-13',
+      reading: '',
       isLastDay: false
     },
     {
@@ -936,6 +1131,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-1-enlightenment.html',
       covers: [],
+      homework: ['Finish the 5.1 modules for The Enlightenment and submit your work in Canvas.'],
+      dueDate: '2026-11-16',
+      reading: '',
       isLastDay: true
     },
     {
@@ -950,6 +1148,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-2-nationalism-and-revolutions.html',
       covers: [],
+      homework: ['Finish the 5.2 modules for Nationalism and Revolutions and submit your work in Canvas.'],
+      dueDate: '2026-11-17',
+      reading: '',
       isLastDay: false
     },
     {
@@ -964,6 +1165,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-2-nationalism-and-revolutions.html',
       covers: [],
+      homework: ['Finish the 5.2 modules for Nationalism and Revolutions and submit your work in Canvas.'],
+      dueDate: '2026-11-18',
+      reading: '',
       isLastDay: true
     },
     {
@@ -978,6 +1182,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-3-industrial-revolution-begins.html',
       covers: [],
+      homework: ['Finish the 5.3 modules for The Industrial Revolution Begins and submit your work in Canvas.'],
+      dueDate: '2026-11-19',
+      reading: '',
       isLastDay: false
     },
     {
@@ -992,6 +1199,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-3-industrial-revolution-begins.html',
       covers: [],
+      homework: ['Finish the 5.3 modules for The Industrial Revolution Begins and submit your work in Canvas.'],
+      dueDate: '2026-11-20',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1006,6 +1216,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-4-industrialization-spreads.html',
       covers: [],
+      homework: ['Finish the 5.4 modules for Industrialization Spreads and submit your work in Canvas.'],
+      dueDate: '2026-11-23',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1020,6 +1233,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-4-industrialization-spreads.html',
       covers: [],
+      homework: ['Finish the 5.4 modules for Industrialization Spreads and submit your work in Canvas.'],
+      dueDate: '2026-11-24',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1034,6 +1250,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-5-technology-of-industrialization.html',
       covers: [{ topic: '5.6', title: 'Industrialization: Government and Society', lessonPath: 'unit-5/topic-5-6-industrialization-government-and-society.html' }],
+      homework: ['Finish the 5.5 and 5.6 modules and submit your work in Canvas.'],
+      dueDate: '2026-11-30',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1048,6 +1267,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-5-technology-of-industrialization.html',
       covers: [{ topic: '5.6', title: 'Industrialization: Government and Society', lessonPath: 'unit-5/topic-5-6-industrialization-government-and-society.html' }],
+      homework: ['Finish the 5.5 and 5.6 modules and submit your work in Canvas.'],
+      dueDate: '2026-12-01',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1062,6 +1284,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-7-economic-developments-and-innovations.html',
       covers: [],
+      homework: ['Finish the 5.7 modules for Economic Developments and Innovations and submit your work in Canvas.'],
+      dueDate: '2026-12-02',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1076,6 +1301,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-7-economic-developments-and-innovations.html',
       covers: [],
+      homework: ['Finish the 5.7 modules for Economic Developments and Innovations and submit your work in Canvas.'],
+      dueDate: '2026-12-03',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1090,6 +1318,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-8-reactions-to-industrial-economy.html',
       covers: [{ topic: '5.9', title: 'Society and the Industrial Age', lessonPath: 'unit-5/topic-5-9-society-and-the-industrial-age.html' }],
+      homework: ['Finish the 5.8 and 5.9 modules and submit your work in Canvas.'],
+      dueDate: '2026-12-04',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1104,6 +1335,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-5/topic-5-8-reactions-to-industrial-economy.html',
       covers: [{ topic: '5.9', title: 'Society and the Industrial Age', lessonPath: 'unit-5/topic-5-9-society-and-the-industrial-age.html' }],
+      homework: ['Finish the 5.8 and 5.9 modules and submit your work in Canvas.'],
+      dueDate: '2026-12-07',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1118,6 +1352,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '5.10', title: 'Continuity and Change in the Industrial Age', lessonPath: 'unit-5/topic-5-10-continuity-and-change-in-the-industrial-age.html' }],
+      homework: ['Study for the Unit 5 exam.', 'Review Continuity and Change in the Industrial Age and your unit notes.'],
+      dueDate: '2026-12-08',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1132,6 +1369,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '5.10', title: 'Continuity and Change in the Industrial Age', lessonPath: 'unit-5/topic-5-10-continuity-and-change-in-the-industrial-age.html' }],
+      homework: ['Study for the Unit 5 exam.', 'Review Continuity and Change in the Industrial Age and your unit notes.'],
+      dueDate: '2026-12-09',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1146,6 +1386,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-6/topic-6-1-rationales-for-imperialism.html',
       covers: [],
+      homework: ['Finish the 6.1 modules for Rationales for Imperialism and submit your work in Canvas.'],
+      dueDate: '2026-12-10',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1160,6 +1403,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-6/topic-6-1-rationales-for-imperialism.html',
       covers: [],
+      homework: ['Finish the 6.1 modules for Rationales for Imperialism and submit your work in Canvas.'],
+      dueDate: '2026-12-11',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1174,6 +1420,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-6/topic-6-2-state-expansion.html',
       covers: [{ topic: '6.3', title: 'Indigenous Responses to State Expansion', lessonPath: 'unit-6/topic-6-3-indigenous-responses-to-state-expansion.html' }],
+      homework: ['Finish the 6.2 and 6.3 modules and submit your work in Canvas.'],
+      dueDate: '2026-12-14',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1188,6 +1437,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-6/topic-6-2-state-expansion.html',
       covers: [{ topic: '6.3', title: 'Indigenous Responses to State Expansion', lessonPath: 'unit-6/topic-6-3-indigenous-responses-to-state-expansion.html' }],
+      homework: ['Finish the 6.2 and 6.3 modules and submit your work in Canvas.'],
+      dueDate: '2027-01-05',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1202,6 +1454,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-6/topic-6-4-global-economic-development.html',
       covers: [],
+      homework: ['Finish the 6.4 modules for Global Economic Development and submit your work in Canvas.'],
+      dueDate: '2027-01-06',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1216,6 +1471,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-6/topic-6-4-global-economic-development.html',
       covers: [],
+      homework: ['Finish the 6.4 modules for Global Economic Development and submit your work in Canvas.'],
+      dueDate: '2027-01-07',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1230,6 +1488,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-6/topic-6-5-economic-imperialism.html',
       covers: [],
+      homework: ['Finish the 6.5 modules for Economic Imperialism and submit your work in Canvas.'],
+      dueDate: '2027-01-08',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1244,6 +1505,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-6/topic-6-5-economic-imperialism.html',
       covers: [],
+      homework: ['Finish the 6.5 modules for Economic Imperialism and submit your work in Canvas.'],
+      dueDate: '2027-01-11',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1258,6 +1522,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-6/topic-6-6-causes-of-migration.html',
       covers: [{ topic: '6.7', title: 'Effects of Migration', lessonPath: 'unit-6/topic-6-7-effects-of-migration.html' }],
+      homework: ['Finish the 6.6 and 6.7 modules and submit your work in Canvas.'],
+      dueDate: '2027-01-12',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1272,6 +1539,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-6/topic-6-6-causes-of-migration.html',
       covers: [{ topic: '6.7', title: 'Effects of Migration', lessonPath: 'unit-6/topic-6-7-effects-of-migration.html' }],
+      homework: ['Finish the 6.6 and 6.7 modules and submit your work in Canvas.'],
+      dueDate: '2027-01-13',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1286,6 +1556,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '6.8', title: 'Causation in the Imperial Age', lessonPath: 'unit-6/topic-6-8-causation-in-the-imperial-age.html' }],
+      homework: ['Study for the Unit 6 exam.', 'Review Causation in the Imperial Age and your unit notes.'],
+      dueDate: '2027-01-14',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1300,6 +1573,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '6.8', title: 'Causation in the Imperial Age', lessonPath: 'unit-6/topic-6-8-causation-in-the-imperial-age.html' }],
+      homework: ['Study for the Unit 6 exam.', 'Review Causation in the Imperial Age and your unit notes.'],
+      dueDate: '2027-01-15',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1314,6 +1590,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-1-shifting-power.html',
       covers: [],
+      homework: ['Finish the 7.1 modules for Shifting Power After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-01-19',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1328,6 +1607,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-1-shifting-power.html',
       covers: [],
+      homework: ['Finish the 7.1 modules for Shifting Power After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-01-20',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1342,6 +1624,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-2-causes-wwi.html',
       covers: [{ topic: '7.3', title: 'Conducting World War I', lessonPath: 'unit-7/topic-7-3-conducting-wwi.html' }],
+      homework: ['Finish the 7.2 and 7.3 modules and submit your work in Canvas.'],
+      dueDate: '2027-01-21',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1356,6 +1641,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-2-causes-wwi.html',
       covers: [{ topic: '7.3', title: 'Conducting World War I', lessonPath: 'unit-7/topic-7-3-conducting-wwi.html' }],
+      homework: ['Finish the 7.2 and 7.3 modules and submit your work in Canvas.'],
+      dueDate: '2027-01-22',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1370,6 +1658,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-4-interwar-economy.html',
       covers: [],
+      homework: ['Finish the 7.4 modules for Economy in the Interwar Period and submit your work in Canvas.'],
+      dueDate: '2027-01-25',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1384,6 +1675,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-4-interwar-economy.html',
       covers: [],
+      homework: ['Finish the 7.4 modules for Economy in the Interwar Period and submit your work in Canvas.'],
+      dueDate: '2027-01-26',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1398,6 +1692,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-5-unresolved-tensions.html',
       covers: [],
+      homework: ['Finish the 7.5 modules for Unresolved Tensions After World War I and submit your work in Canvas.'],
+      dueDate: '2027-01-27',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1412,6 +1709,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-5-unresolved-tensions.html',
       covers: [],
+      homework: ['Finish the 7.5 modules for Unresolved Tensions After World War I and submit your work in Canvas.'],
+      dueDate: '2027-01-28',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1426,6 +1726,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-6-causes-wwii.html',
       covers: [{ topic: '7.7', title: 'Conducting World War II', lessonPath: 'unit-7/topic-7-7-conducting-wwii.html' }],
+      homework: ['Finish the 7.6 and 7.7 modules and submit your work in Canvas.'],
+      dueDate: '2027-01-29',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1440,6 +1743,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-6-causes-wwii.html',
       covers: [{ topic: '7.7', title: 'Conducting World War II', lessonPath: 'unit-7/topic-7-7-conducting-wwii.html' }],
+      homework: ['Finish the 7.6 and 7.7 modules and submit your work in Canvas.'],
+      dueDate: '2027-02-01',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1454,6 +1760,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-8-mass-atrocities.html',
       covers: [],
+      homework: ['Finish the 7.8 modules for Mass Atrocities After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-02-02',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1468,6 +1777,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-7/topic-7-8-mass-atrocities.html',
       covers: [],
+      homework: ['Finish the 7.8 modules for Mass Atrocities After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-02-03',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1482,6 +1794,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '7.9', title: 'Causation in Global Conflict', lessonPath: 'unit-7/topic-7-9-causation-global-conflict.html' }],
+      homework: ['Study for the Unit 7 exam.', 'Review Causation in Global Conflict and your unit notes.'],
+      dueDate: '2027-02-04',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1496,6 +1811,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '7.9', title: 'Causation in Global Conflict', lessonPath: 'unit-7/topic-7-9-causation-global-conflict.html' }],
+      homework: ['Study for the Unit 7 exam.', 'Review Causation in Global Conflict and your unit notes.'],
+      dueDate: '2027-02-05',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1510,6 +1828,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-1-cold-war-stage.html',
       covers: [],
+      homework: ['Finish the 8.1 modules for Setting the Stage for the Cold War and Decolonization and submit your work in Canvas.'],
+      dueDate: '2027-02-08',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1524,6 +1845,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-1-cold-war-stage.html',
       covers: [],
+      homework: ['Finish the 8.1 modules for Setting the Stage for the Cold War and Decolonization and submit your work in Canvas.'],
+      dueDate: '2027-02-09',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1538,6 +1862,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-2-the-cold-war.html',
       covers: [{ topic: '8.3', title: 'Effects of the Cold War', lessonPath: 'unit-8/topic-8-3-effects-cold-war.html' }],
+      homework: ['Finish the 8.2 and 8.3 modules and submit your work in Canvas.'],
+      dueDate: '2027-02-10',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1552,6 +1879,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-2-the-cold-war.html',
       covers: [{ topic: '8.3', title: 'Effects of the Cold War', lessonPath: 'unit-8/topic-8-3-effects-cold-war.html' }],
+      homework: ['Finish the 8.2 and 8.3 modules and submit your work in Canvas.'],
+      dueDate: '2027-02-11',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1566,6 +1896,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-4-spread-of-communism.html',
       covers: [],
+      homework: ['Finish the 8.4 modules for Spread of Communism After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-02-12',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1580,6 +1913,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-4-spread-of-communism.html',
       covers: [],
+      homework: ['Finish the 8.4 modules for Spread of Communism After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-02-22',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1594,6 +1930,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-5-decolonization.html',
       covers: [],
+      homework: ['Finish the 8.5 modules for Decolonization After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-02-23',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1608,6 +1947,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-5-decolonization.html',
       covers: [],
+      homework: ['Finish the 8.5 modules for Decolonization After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-02-24',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1622,6 +1964,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-6-newly-independent-states.html',
       covers: [{ topic: '8.7', title: 'Global Resistance to Established Power Structures After 1900', lessonPath: 'unit-8/topic-8-7-global-resistance.html' }],
+      homework: ['Finish the 8.6 and 8.7 modules and submit your work in Canvas.'],
+      dueDate: '2027-02-25',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1636,6 +1981,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-6-newly-independent-states.html',
       covers: [{ topic: '8.7', title: 'Global Resistance to Established Power Structures After 1900', lessonPath: 'unit-8/topic-8-7-global-resistance.html' }],
+      homework: ['Finish the 8.6 and 8.7 modules and submit your work in Canvas.'],
+      dueDate: '2027-02-26',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1650,6 +1998,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-8-end-of-cold-war.html',
       covers: [],
+      homework: ['Finish the 8.8 modules for End of the Cold War and submit your work in Canvas.'],
+      dueDate: '2027-03-01',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1664,6 +2015,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-8/topic-8-8-end-of-cold-war.html',
       covers: [],
+      homework: ['Finish the 8.8 modules for End of the Cold War and submit your work in Canvas.'],
+      dueDate: '2027-03-02',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1678,6 +2032,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '8.9', title: 'Causation in the Age of the Cold War and Decolonization', lessonPath: 'unit-8/topic-8-9-causation-capstone.html' }],
+      homework: ['Study for the Unit 8 exam.', 'Review Causation in the Age of the Cold War and Decolonization and your unit notes.'],
+      dueDate: '2027-03-03',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1692,6 +2049,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '8.9', title: 'Causation in the Age of the Cold War and Decolonization', lessonPath: 'unit-8/topic-8-9-causation-capstone.html' }],
+      homework: ['Study for the Unit 8 exam.', 'Review Causation in the Age of the Cold War and Decolonization and your unit notes.'],
+      dueDate: '2027-03-08',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1706,6 +2066,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-1-technology-exchange.html',
       covers: [],
+      homework: ['Finish the 9.1 modules for Advances in Technology and Exchange After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-03-05',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1720,6 +2083,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-1-technology-exchange.html',
       covers: [],
+      homework: ['Finish the 9.1 modules for Advances in Technology and Exchange After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-03-09',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1734,6 +2100,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-2-disease.html',
       covers: [{ topic: '9.3', title: 'Technological Advances—Debates About the Environment After 1900', lessonPath: 'unit-9/topic-9-3-environment.html' }],
+      homework: ['Finish the 9.2 and 9.3 modules and submit your work in Canvas.'],
+      dueDate: '2027-03-10',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1748,6 +2117,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-2-disease.html',
       covers: [{ topic: '9.3', title: 'Technological Advances—Debates About the Environment After 1900', lessonPath: 'unit-9/topic-9-3-environment.html' }],
+      homework: ['Finish the 9.2 and 9.3 modules and submit your work in Canvas.'],
+      dueDate: '2027-03-11',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1762,6 +2134,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-4-economics-global-age.html',
       covers: [],
+      homework: ['Finish the 9.4 modules for Economics in the Global Age and submit your work in Canvas.'],
+      dueDate: '2027-03-12',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1776,6 +2151,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-4-economics-global-age.html',
       covers: [],
+      homework: ['Finish the 9.4 modules for Economics in the Global Age and submit your work in Canvas.'],
+      dueDate: '2027-03-15',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1790,6 +2168,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-5-calls-for-reform-responses.html',
       covers: [],
+      homework: ['Finish the 9.5 modules for Calls for Reform and Responses After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-03-16',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1804,6 +2185,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-5-calls-for-reform-responses.html',
       covers: [],
+      homework: ['Finish the 9.5 modules for Calls for Reform and Responses After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-03-17',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1818,6 +2202,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-6-globalized-culture.html',
       covers: [],
+      homework: ['Finish the 9.6 modules for Globalized Culture After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-03-18',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1832,6 +2219,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-6-globalized-culture.html',
       covers: [],
+      homework: ['Finish the 9.6 modules for Globalized Culture After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-03-19',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1846,6 +2236,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-7-resistance-globalization.html',
       covers: [],
+      homework: ['Finish the 9.7 modules for Resistance to Globalization After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-03-22',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1860,6 +2253,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-7-resistance-globalization.html',
       covers: [],
+      homework: ['Finish the 9.7 modules for Resistance to Globalization After 1900 and submit your work in Canvas.'],
+      dueDate: '2027-03-23',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1874,6 +2270,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-8-institutions-globalized-world.html',
       covers: [],
+      homework: ['Finish the 9.8 modules for Institutions Developing in a Globalized World and submit your work in Canvas.'],
+      dueDate: '2027-03-24',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1888,6 +2287,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: 'unit-9/topic-9-8-institutions-globalized-world.html',
       covers: [],
+      homework: ['Finish the 9.8 modules for Institutions Developing in a Globalized World and submit your work in Canvas.'],
+      dueDate: '2027-03-25',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1902,6 +2304,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '9.9', title: 'Continuity and Change in a Globalized World', lessonPath: 'unit-9/topic-9-9-continuity-change-globalized-world.html' }],
+      homework: ['Study for the Unit 9 exam.', 'Review Continuity and Change in a Globalized World and your unit notes.'],
+      dueDate: '2027-03-26',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1916,6 +2321,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 2,
       lessonPath: '',
       covers: [{ topic: '9.9', title: 'Continuity and Change in a Globalized World', lessonPath: 'unit-9/topic-9-9-continuity-change-globalized-world.html' }],
+      homework: ['Study for the Unit 9 exam.', 'Review Continuity and Change in a Globalized World and your unit notes.'],
+      dueDate: '2027-04-05',
+      reading: '',
       isLastDay: true
     },
     {
@@ -1930,6 +2338,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-06',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1944,6 +2355,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-07',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1958,6 +2372,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-08',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1972,6 +2389,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-09',
+      reading: '',
       isLastDay: false
     },
     {
@@ -1986,6 +2406,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-12',
+      reading: '',
       isLastDay: false
     },
     {
@@ -2000,6 +2423,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-13',
+      reading: '',
       isLastDay: false
     },
     {
@@ -2014,6 +2440,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-14',
+      reading: '',
       isLastDay: false
     },
     {
@@ -2028,6 +2457,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-15',
+      reading: '',
       isLastDay: false
     },
     {
@@ -2042,6 +2474,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-16',
+      reading: '',
       isLastDay: false
     },
     {
@@ -2056,6 +2491,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-19',
+      reading: '',
       isLastDay: false
     },
     {
@@ -2070,6 +2508,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-20',
+      reading: '',
       isLastDay: false
     },
     {
@@ -2084,6 +2525,9 @@ window.BEHISTORICAL_CALENDAR = {
       daysInEntry: 12,
       lessonPath: '',
       covers: [],
+      homework: ['Keep up with your review schedule for the AP exam.'],
+      dueDate: '2027-04-21',
+      reading: '',
       isLastDay: true
     }
   ],

@@ -19,7 +19,8 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'assets', 'data', 'announcements.js');
-const SCHEDULE = path.join(ROOT, 'assets', 'data', 'announcements-schedule.js');
+const CALENDAR = path.join(ROOT, 'assets', 'data', 'course-calendar.js');
+const BOARD    = path.join(ROOT, 'assets', 'data', 'board-config.js');
 
 // A lesson data file decorates the page as a side effect. This stub answers
 // anything so those calls run harmlessly while we read the data it declares.
@@ -149,6 +150,13 @@ function quote(value) {
   return "'" + String(value).replace(/\\/g, '\\\\').replace(/'/g, "\\'") + "'";
 }
 
+// 'Friday', which is what a student needs off a projected chip. A bare
+// 2026-11-03 makes them count days.
+function weekdayName(isoStr) {
+  const names = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  return names[new Date(isoStr + 'T12:00:00Z').getUTCDay()];
+}
+
 function emitEntries(entries, indent) {
   const pad = ' '.repeat(indent);
   return entries.map((e) => {
@@ -158,18 +166,55 @@ function emitEntries(entries, indent) {
 }
 
 function main() {
-  if (!fs.existsSync(SCHEDULE)) {
-    console.error('No schedule found at assets/data/announcements-schedule.js');
+  if (!fs.existsSync(CALENDAR)) {
+    console.error('No calendar at assets/data/course-calendar.js.');
+    console.error('Run: node scripts/build-course-calendar.js');
     process.exit(1);
   }
 
   const { index } = buildIndex();
-  const win = loadGlobals(SCHEDULE);
-  const schedule = win && win.BEHISTORICAL_SCHEDULE;
-  if (!schedule) {
-    console.error('The schedule file did not set window.BEHISTORICAL_SCHEDULE');
+
+  const calWin = loadGlobals(CALENDAR);
+  const calendar = calWin && calWin.BEHISTORICAL_CALENDAR;
+  if (!calendar) {
+    console.error('course-calendar.js did not set window.BEHISTORICAL_CALENDAR');
     process.exit(1);
   }
+
+  const boardWin = loadGlobals(BOARD);
+  const board = (boardWin && boardWin.BEHISTORICAL_BOARD) || {};
+  const overrides = board.overrides || {};
+
+  // The board reads the generated calendar; the only hand-written input left is
+  // an override for one day. Everything else, including the assessment slides,
+  // moves when the calendar moves.
+  const schedule = {
+    settings: board.settings,
+    reminders: board.reminders,
+    days: calendar.days.map((d) => {
+      const o = overrides[d.date] || {};
+      return Object.assign({
+        date: d.date,
+        topic: d.topic,
+        topicTitle: d.topicTitle,
+        unit: d.unit,
+        homework: d.homework,
+        // The chip says when it is due, in the students' own words.
+        homeworkDue: d.dueDate ? weekdayName(d.dueDate) : ''
+      }, o);
+    }),
+    assessments: calendar.days
+      // One slide per assessment, not one per class day, so the second day of
+      // a two-day exam does not announce it twice.
+      .filter((d) => d.kind === 'assessment' && d.isLastDay)
+      .map((d) => ({
+        date: d.date,
+        title: d.topicTitle,
+        detail: d.covers.length ? 'Covers ' + d.unit + ', including ' + d.covers[0].title : 'Covers ' + d.unit,
+        type: 'Test'
+      }))
+      .concat(board.extraAssessments || [])
+  };
 
   const problems = [];
   const notes = [];
@@ -223,7 +268,7 @@ function main() {
         : (entry.homework || ''),
       homeworkDue: entry.homeworkDue || '',
       note: entry.note || '',
-      source: found ? found.source : 'written by hand in the schedule'
+      source: found ? found.source : 'generated from the course calendar'
     });
   }
 
@@ -241,11 +286,15 @@ function main() {
   out += '/* =========================================================\n';
   out += '   GENERATED FILE, DO NOT EDIT BY HAND\n\n';
   out += '   Written by scripts/build-announcements.js from\n';
-  out += '   assets/data/announcements-schedule.js. Every learning target\n';
+  out += '   assets/data/course-calendar.js, which is itself generated from\n';
+  out += '   the district calendar and the pacing map. Every learning target\n';
   out += '   and success criterion below is copied from the lesson data\n';
   out += '   file named above it, so the board matches the lesson page.\n\n';
-  out += '   To change what the classroom screen shows, edit the schedule\n';
-  out += '   and run:  node scripts/build-announcements.js\n';
+  out += '   To change a date or a topic, edit assets/data/pacing.js or\n';
+  out += '   assets/data/school-calendar.js and rebuild the calendar. To\n';
+  out += '   change one day\'s wording, use overrides in board-config.js:\n\n';
+  out += '       node scripts/build-course-calendar.js\n';
+  out += '       node scripts/build-announcements.js\n';
   out += '   ========================================================= */\n\n';
   out += 'window.BEHISTORICAL_ANNOUNCEMENTS = {\n\n';
 
@@ -299,6 +348,17 @@ function main() {
     '    { title: ' + quote(r.title || '') + ', detail: ' + quote(r.detail || '') + ' }'
   )).join(',\n');
   out += '\n  ]\n};\n';
+
+  if (process.argv.includes('--check')) {
+    const existing = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : null;
+    if (existing !== out) {
+      console.error('assets/data/announcements.js has drifted from the course calendar.');
+      console.error('Run: node scripts/build-announcements.js');
+      process.exit(1);
+    }
+    console.log(`Board is up to date, ${days.length} class days.`);
+    return;
+  }
 
   fs.writeFileSync(OUT, out);
 

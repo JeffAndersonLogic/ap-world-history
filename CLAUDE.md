@@ -78,7 +78,8 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/check-image-urls.js`, verify every remote Commons image URL actually resolves. Needs internet access to `commons.wikimedia.org`; `validate.js` stays offline on purpose and cannot do this.
 - `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
-- `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets and success criteria out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand.
+- `node scripts/build-course-calendar.js`, derive the whole year from `assets/data/school-calendar.js` (the district calendar, typed once) and `assets/data/pacing.js` (an ordered list with no dates in it). Writes the generated `assets/data/course-calendar.js`, one entry per class day, carrying date, Green/Silver colour, topic, unit, homework, due date and lesson path. `--check` fails on drift without writing. **It refuses to produce a year that does not work**: it counts its own school days against the 90 per semester the district calendar states, asserts all 77 topics are scheduled exactly once, and fails if a stated pacing target is missed. That is how a shortfall surfaces in August instead of April.
+- `node scripts/build-announcements.js`, rebuild the classroom board from `assets/data/course-calendar.js`, pulling each day's learning targets and success criteria out of that topic's lesson data file and merging any per-day override from `assets/data/board-config.js`. Writes the generated `assets/data/announcements.js`, never edit that file by hand. `npm run build:board` runs both builders in order, which is what you want after any pacing or calendar change.
 - `node scripts/generate-status-manifest.js`, refresh the teacher command-center inventory after adding or removing deliverables.
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios. `--check` fails on drift without writing.
 - `node scripts/build-unit9.js`, deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios. `--check` fails on drift without writing.
@@ -104,6 +105,45 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/test/skills-lens-zip.test.js`, drop a real Canvas zip on the real Lens in Chromium and assert the panels populate, the CSP still blocks the network, and the saved CSV matches the CLI byte for byte.
 
 The student entry point is `index.html`. The project inventory is `docs/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file. The Google Form and the old Teacher Hub are both retired; see `docs/FORM-CONTRACT.md` and `docs/TEACHER-HUB.md`. Student work reaches the teacher through Canvas only, and the Skills Lens is the analysis surface.
+
+## The Course Calendar
+
+**No surface is ever told a date.** `assets/data/course-calendar.js` is generated
+and is the source of truth for what happens when; the classroom board is a
+projection of it, and the Canvas events and module blueprint will be too.
+
+Three files are hand-written, and only these three:
+
+- `assets/data/school-calendar.js`, the district calendar. Typed once a year.
+- `assets/data/pacing.js`, an ordered list of entries with no dates in it. The
+  order is the curriculum; the dates are arithmetic.
+- `assets/data/board-config.js`, settings, standing reminders, and per-day
+  overrides for what a generator cannot know ("we are in the library today").
+
+Plus two content tables: `assets/data/ebook-map.js`, topic to chapter and pages
+in Traditions and Encounters, and `assets/data/homework-templates.js`, the four
+sentences homework is actually made of.
+
+**A topic occupies two consecutive school days**, one Green and one Silver, which
+is one class period for any given student. `blocks: 1` in the pacing map means
+one period, and the builder doubles it. Two mechanisms compress the year, both
+spelled `covers`, told apart by `kind`:
+
+- a **pair** of adjacent topics taught in one block, both real lessons
+- a **fold**, where an end-of-unit reasoning topic is taught as the unit review
+
+Ten pairs and nine folds are what make the content fit before spring break 2027.
+
+**Never hand-edit a generated file, and never type a date into one.** To move the
+year, edit the pacing map or the school calendar and rebuild:
+
+```bash
+npm run build:board
+```
+
+`scripts/test/calendar-reproducible.test.js` is in the offline suite and fails
+the push if either generated file has drifted, or if a pacing edit has dropped a
+topic or pushed the year past a target.
 
 ## The Content Model
 

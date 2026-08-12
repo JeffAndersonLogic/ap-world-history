@@ -105,6 +105,41 @@ function longDate(isoStr) {
   return `${DOW[d.getUTCDay()]}, ${months[d.getUTCMonth()]} ${d.getUTCDate()}`;
 }
 
+/* ── The reading phrase for a topic, from the eBook map ──────────────────── */
+function readingFor(keys) {
+  const parts = [];
+  for (const k of keys) {
+    const e = (ebook.topics || {})[k];
+    if (!e) continue;
+    if (e.label) { parts.push(e.label); continue; }
+    if (e.chapter === undefined || e.chapter === null || e.chapter === '') continue;
+    const chapters = Array.isArray(e.chapter) ? e.chapter : [e.chapter];
+    const noun = chapters.length > 1 ? 'Chapters ' : 'Chapter ';
+    let phrase = noun + chapters.join(' and ');
+    if (e.pages) phrase += ', pages ' + e.pages;
+    parts.push(phrase);
+  }
+  return parts.join('; ');
+}
+
+/* ── Fill a template, dropping any line whose placeholder is empty ──────────
+   A homework line printed with a hole in it is worse than no line, and the
+   eBook map is filled in a unit at a time on purpose, so most of the year has
+   no reading yet. Dropping the line is what makes that safe. */
+function fillTemplate(lines, vars) {
+  const out = [];
+  for (const line of lines || []) {
+    let dropped = false;
+    const filled = line.replace(/\{(\w+)\}/g, (m, key) => {
+      const v = vars[key];
+      if (!v) { dropped = true; return ''; }
+      return v;
+    });
+    if (!dropped) out.push(filled);
+  }
+  return out;
+}
+
 /* ── Index the course, so a topic number resolves to real content ────────── */
 function buildTopicIndex() {
   const index = new Map();
@@ -161,6 +196,11 @@ const pacing = paceWin && paceWin.BEHISTORICAL_PACING;
 if (!school) { fail('assets/data/school-calendar.js did not load'); process.exit(1); }
 if (!pacing) { fail('assets/data/pacing.js did not load'); process.exit(1); }
 
+const ebookWin = loadGlobals(path.join(ROOT, 'assets', 'data', 'ebook-map.js'));
+const ebook = (ebookWin && ebookWin.BEHISTORICAL_EBOOK) || { topics: {} };
+const hwWin = loadGlobals(path.join(ROOT, 'assets', 'data', 'homework-templates.js'));
+const templates = (hwWin && hwWin.BEHISTORICAL_HOMEWORK) || {};
+
 const noSchool = expandRanges(school.noSchool);
 const noClass  = expandRanges(school.noClass);
 const finals   = expandRanges(school.finals);
@@ -211,6 +251,17 @@ const teachable = schoolDays.filter(d => !d.isFinals && !d.isNoClass);
 // lesson is delivered to the Green sections and then the Silver sections, so a
 // block occupies two consecutive days on the classroom board.
 const perBlock = school.rotation.topicSpansBothColours ? 2 : 1;
+teachable.forEach((d, i) => { d.idx = i; });
+
+// Homework set on a Green day is due the next time the Green sections meet,
+// which is the next teachable Green day, not simply two days later: a break or
+// a testing day in between moves it. Returns '' for the last day of the year.
+function nextMeeting(slot) {
+  for (let i = slot.idx + 1; i < teachable.length; i++) {
+    if (teachable[i].colour === slot.colour) return teachable[i].date;
+  }
+  return '';
+}
 
 const topics = buildTopicIndex();
 note(`${topics.size} topics indexed from the course data files`);
@@ -273,8 +324,32 @@ for (const entry of pacing.sequence) {
     continue;
   }
 
+  // The homework is the same for both colours: each section gets it on the day
+  // they meet. Only the due date differs, because the sections meet on
+  // different days.
+  const allKeys = (found ? [found.key] : []).concat(covers.map(c => c.topic));
+  const allTitles = (found ? [title] : []).concat(covers.map(c => c.title));
+  const vars = {
+    label: allKeys.join(' and '),
+    title: allTitles.filter(Boolean).join(' and '),
+    reading: readingFor(allKeys),
+    entryTitle: entry.title || '',
+    unit,
+    // 'Unit 1', not 'Unit 1: The Global Tapestry'. The full name is correct in
+    // a heading and reads badly mid-sentence: "Study for the Unit 1: The Global
+    // Tapestry exam."
+    unitShort: String(unit).split(':')[0].trim()
+  };
+  let templateName = kind;
+  if (kind === 'topic' && covers.length) templateName = 'topicPair';
+  if (kind === 'assessment' && covers.length === 0) templateName = 'assessmentPlain';
+  const homework = fillTemplate(templates[templateName], vars);
+
   slots.forEach((slot, i) => {
     days.push({
+      homework,
+      dueDate: nextMeeting(slot),
+      reading: vars.reading,
       date: slot.date,
       weekday: DOW[parse(slot.date).getUTCDay()],
       colour: slot.colour,
@@ -411,6 +486,9 @@ days.forEach((d, i) => {
     `      daysInEntry: ${d.daysInEntry}`,
     `      lessonPath: ${quote(d.lessonPath)}`,
     `      covers: [${d.covers.map(c => `{ topic: ${quote(c.topic)}, title: ${quote(c.title)}, lessonPath: ${quote(c.lessonPath)} }`).join(', ')}]`,
+    `      homework: [${d.homework.map(quote).join(', ')}]`,
+    `      dueDate: ${quote(d.dueDate)}`,
+    `      reading: ${quote(d.reading)}`,
     `      isLastDay: ${d.isLastDay}`
   ];
   lines.push('    {');
