@@ -200,10 +200,10 @@ window.FOUNDATION_TOPIC = {
         '**Neo-Confucianism** (Zhu Xi, 1130–1200 CE) added Buddhist and Daoist metaphysics: syncretism inside China.'
       ],
       image: {
-        title: 'The Civil Service Examination as an Institution',
-        url: '',
-        sourceUrl: '',
-        caption: 'Candidates sat for days in individual cells, writing on the Confucian classics. The exam turned an ethical philosophy into the recruitment system of the world\'s largest bureaucracy, which is how a set of teachings about relationships became a form of state power.'
+        title: 'The Examination Compound, from The Official Career of Xu Xianqing (1590)',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Xu_Xianqing_part11.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Xu_Xianqing_part11.jpg',
+        caption: 'A Ming album leaf of 1590, painted for the official Xu Xianqing, showing an examination compound at work: candidates writing in long rows of individual cells while the presiding officials watch from the halls above. Candidates sat for days at a time on the Confucian classics. The exam turned an ethical philosophy into the recruitment system of the world\'s largest bureaucracy, which is how a set of teachings about relationships became a form of state power.'
       }
     },
     {
@@ -274,10 +274,10 @@ window.FOUNDATION_TOPIC = {
         'Shared law and language let **Radhanite** merchants trade between the Islamic and Christian worlds, a religious network doing economic work.'
       ],
       image: {
-        title: 'Judaism as a Portable Institution',
-        url: '',
-        sourceUrl: '',
-        caption: 'After 70 CE the center of Jewish life moved from one temple to thousands of synagogues and study houses. A community needed a Torah scroll, a teacher, and a quorum, which is why the tradition outlasted a dispersal that ended other ancient religions.'
+        title: 'Ben Ezra Synagogue, Fustat (Old Cairo), rebuilt in the eleventh century',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Interior_of_the_Ben_Ezra_Synagogue,_Cairo.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Interior_of_the_Ben_Ezra_Synagogue,_Cairo.jpg',
+        caption: 'The Ben Ezra Synagogue in Fustat, Old Cairo, rebuilt in the eleventh century and restored more than once since. After 70 CE the center of Jewish life moved from one temple to thousands of synagogues and study houses like this one. A community needed a Torah scroll, a teacher, and a quorum, which is why the tradition outlasted a dispersal that ended other ancient religions. A storeroom in this building held the Cairo Geniza, hundreds of thousands of discarded documents, among them the letters and contracts of Jewish merchants trading across the Islamic and Christian worlds.'
       }
     },
     {
