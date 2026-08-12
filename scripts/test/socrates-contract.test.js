@@ -107,6 +107,15 @@ const REQUIRED = [
   [/BeInTheRoom/, 'the BeInTheRoom simulation path'],
   [/follow those\s+stages rather than the order below/, 'deference to a scenario\'s own coaching stages'],
   [/do not tell them it reaches Canvas, because it does not/, 'the warning that simulation work does not reach Canvas'],
+  // Jeff's call, 2026-08-12: the coach should supply true AP World knowledge the
+  // course does not carry, because the course cannot be a catch-all. An earlier
+  // persona forbade supplying a correction, which produced a reply that stated a
+  // date and then asked the student what the date was.
+  [/Your knowledge is AP World History, not only this course/, 'the permission to use AP World knowledge beyond the course'],
+  [/Never invent/, 'the never-invent limit on that permission'],
+  [/Outside knowledge never overrides the assignment/, 'the limit that the paste still defines the task'],
+  [/count the question\s+marks/, 'the mechanical one-question check'],
+  [/Exactly one, not zero/, 'the floor that a turn must actually ask something'],
   // Socrates serves exactly four assignments. Naming them is what lets him orient
   // from the student's own words, and it is also the boundary: a fifth surface
   // appearing here means someone wired up a coach button the persona does not know

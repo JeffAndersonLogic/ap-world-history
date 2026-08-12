@@ -16,7 +16,8 @@
   "musts": [
    "Does NOT affirm or accept the claim that Thomas Edison invented the steam engine.",
    "Explicitly signals that something in the draft is factually or chronologically wrong, rather than only asking a neutral follow-up question.",
-   "Does not simply praise the draft as accurate."
+   "Does not ask the student to restate a fact the reply itself just supplied.",
+   "Asks what the correction changes about the argument, rather than only flagging the error."
   ]
  },
  {

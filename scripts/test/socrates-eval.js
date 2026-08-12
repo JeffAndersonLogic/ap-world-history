@@ -156,6 +156,34 @@ async function pool(items, worker, limit) {
   return out;
 }
 
+// ── Is this even a reply? ────────────────────────────────────────────────────
+//
+// A run on 2026-08-12 scored 108/108 on the deterministic checks and 35% on the
+// rubric, and both numbers were fiction: the CLI had hit its session limit and
+// every call returned the string "You've hit your session limit · resets 7:40pm
+// (UTC)". That is nine words with no question mark and nothing submittable in it,
+// so it passed all four deterministic checks cleanly, while the grader got the
+// same string and returned no JSON.
+//
+// A harness that reports a score computed from failed calls is worse than one
+// that crashes, which is the same reason this repo's browser suite treats a
+// missing dependency as a skip rather than a pass. So a non-reply is now an ERROR:
+// excluded from scoring, counted, and fatal to the run.
+const NOT_A_REPLY = [
+  /^__ERROR__/,
+  /you'?ve hit your (session|usage) limit/i,
+  /\b(rate|usage|session) limit\b.*\bresets?\b/i,
+  /^\s*$/
+];
+function isReply(text) {
+  const t = String(text || '');
+  if (NOT_A_REPLY.some(r => r.test(t))) return false;
+  // Every real coaching turn names something in the draft and asks for something.
+  // Twenty characters cannot do either, so treat it as a transport failure rather
+  // than as a terse coach.
+  return t.trim().length >= 20;
+}
+
 // ── Deterministic checks ─────────────────────────────────────────────────────
 
 // A '?' not followed by a word character. The first version of this required
@@ -175,9 +203,11 @@ function det(text) {
   const words = text.split(/\s+/).filter(Boolean).length;
   const q = questionCount(text);
   return {
-    // A reply that asks for one thing with an imperative rather than a question
-    // mark satisfies the intent, so zero is allowed and two is not.
-    one_question: { pass: q <= 1, detail: `${q} question mark(s)` },
+    // Exactly one. Zero used to be allowed here on the grounds that an imperative
+    // ask satisfies the intent, and that allowance hid a real regression: the
+    // mechanical "delete all but the most important question" rule pushed some
+    // replies to no question at all, which the rubric flagged and this did not.
+    one_question: { pass: q === 1, detail: `${q} question mark(s)` },
     under_160_words: { pass: words <= 160, detail: `${words} words` },
     no_answer_handoff: {
       pass: !GAVE_ANSWER.some(r => r.test(text)),
@@ -252,10 +282,15 @@ async function grade(kase, reply) {
     const cfg = ARMS[job.arm];
     const user = pasteFor(cfg, job.kase, job.topic);
     const reply = await ask(cfg.persona, user);
+    if (!isReply(reply)) {
+      process.stderr.write(`  ${++done}/${jobs.length} (no reply)\r`);
+      return { ...job, pasteChars: user.length, reply, failed: true, det: null, rubric: [] };
+    }
     const d = det(reply);
-    const g = reply.startsWith('__ERROR__') ? [] : await grade(job.kase, reply);
-    process.stderr.write(`  ${++done}/${jobs.length}\r`);
-    return { ...job, pasteChars: user.length, reply, det: d, rubric: g };
+    const g = await grade(job.kase, reply);
+    const graderDied = g.some(v => v.verdict === 'UNGRADED');
+    process.stderr.write(`  ${++done}/${jobs.length}${graderDied ? ' (grader failed)' : ''}\r`);
+    return { ...job, pasteChars: user.length, reply, failed: graderDied, det: d, rubric: graderDied ? [] : g };
   }, JOBS);
   process.stderr.write('\n');
 
@@ -263,8 +298,24 @@ async function grade(kase, reply) {
   const pct = (a, b) => b ? `${Math.round(100 * a / b)}%` : 'n/a';
   let anyUngraded = 0;
 
+  // Bail before printing anything that looks like a score. A partial run cannot be
+  // compared against a recorded baseline, and a number that looks comparable is
+  // exactly how a bad conclusion gets written down.
+  const broken = results.filter(r => r.failed);
+  if (broken.length) {
+    console.error(`\nFAILED: ${broken.length} of ${results.length} conversations did not`
+      + ' complete, so there is no score to report.');
+    const sample = String(broken[0].reply || '').trim().slice(0, 120);
+    console.error(`First failure looked like: ${JSON.stringify(sample)}`);
+    if (/limit/i.test(sample)) {
+      console.error('That is a usage limit, not a persona problem. Wait for the reset and rerun.');
+    }
+    console.error('Nothing was scored. Rerun when the calls succeed.');
+    process.exit(1);
+  }
+
   for (const arm of arms) {
-    const rows = results.filter(r => r.arm === arm);
+    const rows = results.filter(r => r.arm === arm && !r.failed);
     console.log(`── Arm ${arm} ${arm === 'A' ? '(single-unit persona, thin paste)' : '(course-wide persona, full context block)'}`);
     let dp = 0, dt = 0, rp = 0, rt = 0;
     for (const kase of cases) {
