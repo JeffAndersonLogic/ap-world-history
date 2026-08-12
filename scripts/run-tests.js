@@ -40,7 +40,8 @@ const SUITES = {
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
     ['scripts/test/foundations-golden.js', 'Foundations content vs the hand-authored originals'],
-    ['scripts/test/readings-golden.js', '58 unit readings vs the hand-authored originals']
+    ['scripts/test/readings-golden.js', '58 unit readings vs the hand-authored originals'],
+    ['scripts/test/socrates-contract.test.js', 'AI coach kit reproducible, persona unit-agnostic']
   ],
   browser: [
     ['scripts/test/modal-focus.unit.js', 'unit lesson modal focus contract'],

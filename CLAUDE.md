@@ -93,6 +93,8 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/test/modal-focus.unit.js` and `node scripts/test/modal-focus.foundations.js`, drive a real lesson page in Chromium and assert the modal focus contract. Needs `npm i playwright-core`; `validate.js` stays offline and dependency-free, so these are separate. Run them when touching any modal open/close path.
 - `node scripts/test/lecture-deck.test.js`, walk the whole lecture deck on both renderers and assert the student can still scroll afterwards. This is the regression gate for the stranded-student bug described under "The Lecture Deck" below, and it also covers Back to Modules and the video block. In the browser suite.
 - `node scripts/build-skills-map.js`, regenerate `assets/data/skills-map.js`, the AP skill and evidence-term lookup the Skills Lens inlines. Run it after editing a checkpoint's `terms`, a `skillBuilder.label`, or a reading's `q-skill` badges.
+- `node scripts/build-socrates.js`, regenerate the Socrates Kit in `docs/socrates/`: the instructions to paste into MagicSchool, the course spine to attach, and the paste contract. `--check` fails on drift without writing, which is what the offline suite runs. Run it after editing any lesson data or the persona.
+- `node scripts/test/socrates-eval.js [--reps N] [--arm A|B|both]`, the graded stress test for the AI coach. Eight adversarial student inputs against the real persona and the real generated context blocks. Exits 2 when the `claude` CLI is absent, so it is not in the offline suite; `--strict` turns that skip into a failure. With one rep it is a regression gate, not a tuning instrument: use `--reps 3` or more before believing a persona edit helped.
 - `node scripts/sync-first10-capture.js`, install the canonical First & 10 answer-capture block from `scripts/lib/first10-capture-block.js` into all 77 readings. That block is the only path by which the three reading answers and their confidence ratings reach Canvas, and it has gone missing silently twice. `validate.js` now fails if the block is absent **or** if any of the four files that must agree on the `behistorical-first10-<TOPIC_KEY>` storage key stops using it, which is the version of this failure that leaves every structural check green.
 - `node scripts/test/skills-lens.test.js` and `node scripts/test/confidence.test.js`, browser tests for the Skills Lens panels and the confidence scale.
 - `node scripts/test/lightbox-sweep.js`, open the Map and Evidence Lab modules on all 77 lesson pages and confirm every enlargeable image is an operable button. Prints only failures. Two exceptions are legitimate and the test allows them: a module with no images at all, which covers the topics with no Evidence Lab pictures and Topic 1.3, whose Map module is the course's only embedded iframe map.
@@ -273,6 +275,42 @@ slot, and nothing in the data maps a clip to a particular card.
   the real title demoted to a paragraph.
 - Each clip's `prompt` is the guiding question. It is what makes a clip usable as
   homework rather than filler, so never add a clip without one.
+
+## Socrates, the AI Coach
+
+**Socrates is one MagicSchool chatbot serving all 77 topics.** Every lesson's
+`meta.feedbackToolUrl` and all 77 capture wrappers point at join code `czwb9Q`, so
+the plumbing has always been course-wide. What was scoped to Unit 1 was his
+*instructions*, which is why a Unit 7 student used to get told their topic was
+outside the coach's scope.
+
+The content is split three ways by how often it changes, and the split is the
+whole design. Read `docs/socrates/README.md` before touching any of it.
+
+- **The persona** is hand-authored in `scripts/lib/socrates-persona.js` and
+  carries no unit names, no date ranges, and no unit numbers. With one bot serving
+  77 topics, a content word in the persona is content the other 76 get coached
+  with. `scripts/test/socrates-contract.test.js` fails the push if one reappears.
+- **The paste** carries the one assignment in front of the student, built by
+  `contextBlock()` in `scripts/lib/socrates-course.js` from the lesson data.
+  This is what makes one bot work for nine units: retrieval cannot miss a fact
+  that is already in the message. `docs/socrates/socrates-paste-contract.md` is
+  the documented shape, generated from that same function so the doc cannot
+  describe something the code does not produce.
+- **The spine** is the generated attachment, for questions off the module path.
+
+**Never paste unit content into the instructions field, and never hand-build a
+knowledge pack.** Both make a second copy of content whose first copy is the
+lesson data, with nothing able to tell you when the two disagree. That is the same
+failure that lost the First & 10 capture block twice, and here it would be worse:
+the coach would keep teaching last term's checkpoint with every structural check
+green.
+
+Two things the repo cannot test, so they are manual and written down in
+`docs/socrates/README.md`: pasting the instructions into MagicSchool, and
+uploading the spine. Nothing here can log into a vendor web UI. What the repo does
+test is that both documents are reproducible from the lesson data, and that every
+one of the 77 topics can produce a complete context block.
 
 > **`teacher/skills-lens.html` is the analysis surface**, and it is a teacher
 > tool: never link it from a lesson page. It reads the Canvas `submissions.zip`

@@ -3,3 +3,6 @@
 node_modules/
 package-lock.json
 .visual-check/
+
+# Socrates eval transcripts, regenerated per run and not a fixture.
+scripts/test/.socrates-eval-out/
