@@ -21,6 +21,8 @@
     "build:skills-map": "node scripts/build-skills-map.js",
     "build:skills-lens": "node scripts/build-skills-lens.js",
     "build:status": "node scripts/generate-status-manifest.js",
+    "build:exam": "node scripts/build-foundations-exam.js",
+    "check:exam": "node scripts/build-foundations-exam.js --check",
     "build:unit6": "node scripts/build-unit6.js",
     "build:unit9": "node scripts/build-unit9.js",
     "sync:first10": "node scripts/sync-first10-capture.js",
