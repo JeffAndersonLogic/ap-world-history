@@ -25,7 +25,7 @@
  * editorial decision about what belongs together and in what order, which is
  * not something a directory listing knows. The chapters inside a volume are
  * still discovered from the content directory, so adding a chapter is one new
- * content module plus its slug in the right volume.
+ * content module plus its filename in the right volume's contents.
  */
 
 const fs = require('fs');
@@ -63,11 +63,15 @@ const VOLUMES = [
     // collected at the end, because a student looking for Foundations 2 looks
     // between Foundations 1 and Foundations 3, and finding it there marked
     // "not written yet" answers the question. Finding nothing does not.
+    // `module` is the CONTENT MODULE FILENAME in deep-reading-content/, which is
+    // not the same string as the `slug` field inside that module. The module is
+    // foundations-4.js; its slug is foundations-4-trade-networks. Naming this
+    // key `slug` invited exactly that confusion, so it does not.
     contents: [
-      { slug: 'foundations-1' },
+      { module: 'foundations-1' },
       { pending: { label: 'Foundations 2', title: 'Belief Systems & Cultural Exchange' } },
-      { slug: 'foundations-3' },
-      { pending: { label: 'Foundations 4', title: 'Trade Networks & Innovation' } },
+      { module: 'foundations-3' },
+      { module: 'foundations-4' },
       { pending: { label: 'Foundations 5', title: 'The World at c.1200' } }
     ]
   }
@@ -82,9 +86,11 @@ module.exports = { VOLUMES, LIBRARY };
 
 if (require.main !== module) return;
 
-function loadChapter(slug) {
-  const file = path.join(CONTENT_DIR, `${slug}.js`);
-  if (!fs.existsSync(file)) throw new Error(`volume names a chapter with no content module: ${slug}`);
+function loadChapter(moduleName) {
+  const file = path.join(CONTENT_DIR, `${moduleName}.js`);
+  if (!fs.existsSync(file)) {
+    throw new Error(`volume names a chapter with no content module: scripts/lib/deep-reading-content/${moduleName}.js`);
+  }
   return require(file);
 }
 
@@ -96,7 +102,7 @@ for (const volume of VOLUMES) {
   // chapter carries its loaded content module, a pending one carries only its
   // label. Order is preserved exactly as declared.
   const entries = volume.contents.map(entry =>
-    entry.slug ? { chapter: loadChapter(entry.slug) } : { pending: entry.pending }
+    entry.module ? { chapter: loadChapter(entry.module) } : { pending: entry.pending }
   );
   const chapters = entries.filter(e => e.chapter).map(e => e.chapter);
   const target = path.join(ROOT, volume.outputFile);
@@ -121,8 +127,8 @@ for (const volume of VOLUMES) {
   const rel = path.relative(ROOT, target);
   const html = renderLibrary(LIBRARY, VOLUMES.map(v => ({
     volume: v,
-    chapters: v.contents.filter(e => e.slug).map(e => loadChapter(e.slug)),
-    pending: v.contents.filter(e => e.pending).map(e => e.pending)
+    entries: v.contents.map(e =>
+      e.module ? { chapter: loadChapter(e.module) } : { pending: e.pending })
   })));
 
   if (check) {

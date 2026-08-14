@@ -1,0 +1,522 @@
+'use strict';
+
+/**
+ * Foundations 4, Trade Networks & Innovation: the deep reading.
+ *
+ * This topic's success criteria are unusually literal, and the First & 10 cannot
+ * satisfy them at roughly 970 words. SC1 asks a student to name at least three
+ * specific port cities or oasis towns, explain their geographic function, and
+ * describe the monsoon system by month and direction. SC2 asks for at least two
+ * non-goods with dates and locations. SC3 asks for a complexity paragraph
+ * connecting multiple effects of one network across regions. Those are demands
+ * for specifics, and a survey has room only for names.
+ *
+ * Three things this chapter does deliberately:
+ *
+ *   1. It treats the monsoon as a mechanism with a schedule, not a fact. The
+ *      months and directions are the answer to question 1, and the months are
+ *      also what produce the merchant diasporas and entrepots, because a crew
+ *      that misses the wind waits half a year.
+ *   2. It gives the three networks the same four-part skeleton, so reading
+ *      across them is already the comparison the checkpoint wants.
+ *   3. It carries a full section on what the networks cost, including the
+ *      trade in enslaved people and the Zanj Rebellion. Question 3 asks whether
+ *      the most important things moving were not goods at all, and a chapter
+ *      that answers only with paper and Champa rice has quietly rigged it.
+ *
+ * Sourcing is hedged where the scholarship hedges. The Talas papermaker story,
+ * the salt-for-gold-by-weight claim, and the Arab agricultural diffusion thesis
+ * are all flagged in the student-facing text rather than asserted.
+ */
+
+module.exports = {
+  topicKey: 'f4',
+  slug: 'foundations-4-trade-networks',
+  sourceFile: 'deep-reading-foundations-4-trade-networks.html',
+  lessonFile: 'foundations-4-trade-networks.html',
+
+  docTitle: 'BeHistorical | Deep Reading | Foundations 4: The Relay',
+  eyebrow: 'Foundations 4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
+  titleHtml: 'The <em>Relay</em>',
+  deck: `Almost nobody travelled the Silk Road. Goods did, changing hands a dozen times between the workshop and the buyer, and that is not a footnote about logistics: it is the reason ideas, crops, faiths and diseases moved too. A merchant who carries a bale of silk four hundred miles and hands it on carries everything else he is carrying as well, including what he believes and what he is infected with.`,
+  meta: ['One chapter', 'Foundations 4', 'Read alongside the First & 10'],
+  footerNote: 'Foundations 4 &nbsp;·&nbsp; The Relay &nbsp;·&nbsp; Companion to the First &amp; 10',
+
+  howTo: {
+    heading: 'How to Use This',
+    intro: `Your First & 10 asks you to explain a mechanism, to trace one thing that changed and one that stayed the same, and to argue about whether the most important cargo was cargo at all. The three network sections share one skeleton on purpose: what made it possible, how it actually worked, the places that mattered, and what moved. Read the same part across all three and you are holding a comparison without having tried.`,
+    steps: [
+      `<b>Section 1:</b> what a trade network is, and why relay is the whole idea.`,
+      `<b>Sections 2 to 4:</b> the Silk Roads, the Indian Ocean, and the Sahara, same skeleton each.`,
+      `<b>Sections 5 to 7:</b> what else moved, technology, crops and disease, faith and people.`,
+      `<b>Section 8:</b> what it cost, and who was carried rather than carrying.`,
+      `<b>Section 9:</b> how to build the complexity paragraph the checkpoint asks for.`
+    ]
+  },
+
+  empires: [
+    // ── 01 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'relay',
+      num: '01',
+      accent: 'iron',
+      name: 'Relay, Not Highway',
+      navLabel: 'Relay, not highway',
+      dates: 'The idea the whole chapter runs on',
+      thesis: `A trade network is not a road with a start and an end. It is a chain of short journeys by people who mostly never met each other, and understanding that is what turns a list of goods into an explanation of how the world changed.`,
+      parts: [
+        {
+          heading: 'What a network actually is',
+          blocks: [
+            { p: `A <span class="kt">trade network</span> is a durable system of routes, ports, towns and merchant communities along which goods move regularly enough that people build their lives around it. The word to hold on to is <em>system</em>. Any two places can trade once. A network is what exists when the trading is predictable enough that a town grows up to service it, a language spreads to conduct it, and a state decides to tax it.` },
+            { p: `The image most people carry, a merchant loading a camel in China and unloading it in Rome, is wrong, and correcting it is the single most useful move in this chapter. In <span class="kt">relay trade</span>, a merchant works a segment he knows: the passes he can read, the officials he can bribe, the language he can bargain in. He sells to the next merchant and turns back. Chinese silk reached the Mediterranean having passed through many hands, each taking a margin, which is exactly why it cost what it cost when it arrived.` }
+          ]
+        },
+        {
+          heading: 'Why the relay is the cause of everything else',
+          blocks: [
+            { p: `Here is the mechanism, and it deserves a sentence of its own in your essay. <strong>Because goods moved by relay, the people moving them stopped constantly, and everything that travels with a stopped human being got a chance to get off.</strong> A merchant who overwinters in an oasis town spends four months there. He worships somewhere. He talks. He is host to whatever bacteria and viruses he is carrying. He notices a device he has not seen and buys one.` },
+            { p: `A single traveller crossing a continent transmits very little, because he passes through. A chain of thousands of short-haul merchants, each pausing for weeks in the same handful of towns, transmits enormously. The relay is slow, and its slowness is precisely what makes it a conduit for ideas rather than only for cargo.` },
+            { note: {
+              kind: 'misconception',
+              label: 'The name is younger than you think',
+              html: `Nobody in the ancient or medieval world called it the Silk Road. The term <em>Seidenstraße</em> was coined by the German geographer Ferdinand von Richthofen in <span class="num">1877</span>, and "Silk Roads," plural, is the modern preference because it was never one route. This matters for more than trivia. <strong>Naming a sprawling network after one luxury good, in a phrase invented by a nineteenth-century European, quietly frames the whole thing around what reached the West.</strong> Silk was a small fraction of what moved.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Relay trade. <em>The mechanism is that goods changed hands many times over short segments, so merchants stopped constantly in the same towns, and everything a stopped human being carries, belief, technique, infection, had repeated opportunities to transfer. Through-travel would have moved cargo and almost nothing else.</em>`,
+        limit: `The "Silk Road" name is a nineteenth-century European coinage naming a vast network after one luxury good, which distorts what the network was mostly for.`,
+        comparison: `Relay is the constant across all three networks. What differs is what enforced the segments: mountain passes and deserts on the Silk Roads, the wind schedule on the Indian Ocean, and water on the Sahara.`
+      },
+      terms: [
+        ['Trade network', 'A durable system of routes, ports and merchant communities along which goods move regularly enough that towns, languages and states organize around it.'],
+        ['Relay trade', 'Trade in which goods pass through many merchants over short segments rather than travelling with one merchant end to end.'],
+        ['Cultural diffusion', 'The spread of ideas, practices, technologies and beliefs from one society to another, usually along the same routes goods take.']
+      ]
+    },
+
+    // ── 02 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'silk',
+      num: '02',
+      accent: 'gold',
+      name: 'The Silk Roads',
+      navLabel: 'Silk Roads',
+      dates: 'c. 130 BCE onward &nbsp;·&nbsp; China to the Mediterranean, overland',
+      thesis: `An overland network across the most hostile terrain in Eurasia, held together not by roads but by water: the chain of oasis towns without which the deserts between them are simply lethal.`,
+      parts: [
+        {
+          heading: 'What made it possible',
+          blocks: [
+            { p: `Two things, one biological and one geographic. The <strong>Bactrian camel</strong>, the two-humped Central Asian species, tolerates extreme cold and heat, goes days between drinks, and carries a load a horse cannot over ground a cart cannot cross. In much of Central Asia the camel caravan simply outcompeted wheeled transport, and roads were not maintained because they were not needed.` },
+            { p: `The geography is a chain of <strong>oases</strong>, places where meltwater from the Tian Shan, Pamir and Kunlun ranges reaches the desert margin. The Taklamakan is one of the most arid places on earth, and routes skirt its northern and southern rims from water to water. The distance between oases sets the length of a stage, which sets where towns grow, which sets where goods change hands. <strong>Water decided the map.</strong>` },
+            { p: `The network is usually dated from the Han embassies westward under Emperor Wu, when Zhang Qian's journey from <span class="num">138 BCE</span> returned with detailed intelligence about the states of Central Asia. Regular long-distance exchange follows within a few decades.` }
+          ]
+        },
+        {
+          heading: 'How it actually worked',
+          blocks: [
+            { p: `Along the routes stood <span class="kt">caravanserai</span>, fortified roadside inns spaced roughly a day's travel apart, offering a walled courtyard, water, fodder, storage and rooms. They are infrastructure in the fullest sense: they made a long route survivable by turning it into a sequence of short ones, and because merchants from different regions were held in the same courtyard overnight, they were also where deals, news, techniques and beliefs were exchanged.` },
+            { p: `The dominant merchants of the Central Asian routes for several centuries were the <span class="kt">Sogdians</span>, from the region around Samarkand and Bukhara in modern Uzbekistan. They ran family firms with agents posted in distant cities, and their language became a commercial lingua franca along the eastern routes. They were middlemen by trade and by geography, and their prosperity came from the relay itself rather than from producing anything.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: somebody dropped the mail',
+              html: `In a ruined watchtower near Dunhuang, archaeologists found a bag of undelivered letters written in Sogdian in the early fourth century CE. They are business correspondence and family news: a merchant reporting on prices, an abandoned wife writing furiously to a husband who has not sent money. <strong>They are not literature and were never meant to be read by us</strong>, which is exactly what makes them good evidence. Most of what we know about the Silk Roads comes from official histories and the occasional famous traveller. These are ordinary people caught mid-sentence.`
+            } }
+          ]
+        },
+        {
+          heading: 'The places that mattered',
+          blocks: [
+            { p: `<strong>Samarkand</strong> and <strong>Bukhara</strong>, in the well-watered Zerafshan valley, were the Sogdian home cities and the commercial heart of the network. <strong>Merv</strong>, in modern Turkmenistan, sat where routes from Iran, Central Asia and the steppe converged and was among the largest cities in the world in its day. <strong>Kashgar</strong> lies where the northern and southern rims of the Taklamakan meet at the foot of the Pamirs, so caravans taking either route around the desert came together there. <strong>Dunhuang</strong> guarded the western end of the Hexi corridor, the narrow passage between mountains and desert through which everything entering or leaving China by land had to pass.` },
+            { p: `Notice that none of these are ports or capitals by accident of politics. Each is a <strong>chokepoint or a junction</strong>: a place the terrain forces travellers through, or where two routes meet. That is the geographic function to name in an essay.` }
+          ]
+        },
+        {
+          heading: 'What moved',
+          blocks: [
+            { p: `Eastward and westward: silk, obviously, but also Chinese ceramics and lacquer; horses from the steppe, which China wanted badly enough to build policy around; glassware from Rome and Persia, which China could not yet make to the same standard; jade, furs, spices, and paper once it began to travel. Because overland transport was expensive per kilogram, the goods that paid were <strong>low bulk and high value</strong>. Nobody moved grain across the Taklamakan.` },
+            { p: `And the things that were not goods at all: Buddhism into China, papermaking westward, Nestorian Christianity and Manichaeism eastward, plus whatever the merchants happened to be carrying in their lungs. Sections 5 to 7 take those in turn.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The oasis chain plus the Bactrian camel. <em>The mechanism is that water availability set the maximum distance between stops, which fixed the stages of the relay, which determined where towns grew and where goods changed hands. The camel made those stages crossable at all, which is why caravans beat carts and why roads went unbuilt.</em>`,
+        limit: `High transport cost per kilogram meant only low-bulk, high-value goods could pay their way, so the Silk Roads never moved staples and never fed anyone.`,
+        comparison: `Against the <em>Indian Ocean</em> on cost and capacity: a camel carries a couple of hundred kilograms and a ship carries tons, which is why bulk goods went by sea and luxuries went by land.`
+      },
+      terms: [
+        ['Silk Roads', 'The overland network of routes linking China, Central Asia, Persia and the Mediterranean, named in the nineteenth century and never a single road.'],
+        ['Caravanserai', 'A fortified roadside inn spaced about a day apart on the routes, providing water, fodder, storage and safety, and functioning as a place of exchange.'],
+        ['Sogdian merchants', 'Central Asian traders from the Samarkand and Bukhara region who dominated the eastern routes for centuries and whose language served as a commercial lingua franca.'],
+        ['Chokepoint', 'A place the terrain or the sea forces traffic through, giving whoever controls it disproportionate power to tax, protect or block trade.']
+      ]
+    },
+
+    // ── 03 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'indian-ocean',
+      num: '03',
+      accent: 'rust',
+      name: 'The Indian Ocean',
+      navLabel: 'Indian Ocean',
+      dates: 'Ancient origins, dense by c. 700 CE &nbsp;·&nbsp; East Africa to South China',
+      thesis: `The largest and busiest trade system in the pre-modern world ran on a wind that reverses twice a year on a schedule. Learn the schedule and you have explained the ports, the merchant communities, the religion of the coast, and the shape of three empires.`,
+      parts: [
+        {
+          heading: 'What made it possible: the monsoon, with its timetable',
+          blocks: [
+            { p: `<span class="kt">Monsoon winds</span> are seasonal winds that reverse direction, driven by the different rates at which land and ocean heat and cool. In summer the Asian landmass heats faster than the sea, air rises over it, and moist air is drawn in off the ocean. In winter the land cools faster, the flow reverses, and dry air pushes out to sea. Know the two halves by month and direction, because that is what the success criterion asks for.` },
+            { p: `The <strong>southwest monsoon</strong> blows from roughly <span class="num">June to September</span>, out of the southwest. It carries ships <em>from</em> East Africa and Arabia <em>toward</em> India and onward east. The <strong>northeast monsoon</strong> blows from roughly <span class="num">November to February</span>, out of the northeast, and carries them back <em>from</em> India and Southeast Asia <em>toward</em> Arabia and the East African coast.` },
+            { p: `So the Indian Ocean offers something no other pre-modern route did: <strong>a reliable round trip</strong>. Sail out on one monsoon, sell, sail home on the other. But the wind sets the calendar and there is no negotiating with it. Miss your monsoon and you are not delayed by a week. You are in that port until the wind turns, which can be four to six months.` },
+            { p: `That waiting is the mechanism, and it is the answer to question 1. <strong>Because crews were stranded for months at a time, they did not simply trade and leave; they lodged, learned the language, did business, married local women, and some never went home.</strong> Permanent foreign merchant quarters grew in the ports. Those communities are how Islam reached the Swahili coast and the islands of Southeast Asia, carried by merchants rather than armies. The wind schedule produced the religious map.` }
+          ]
+        },
+        {
+          heading: 'How it actually worked',
+          blocks: [
+            { p: `The characteristic Arab and Swahili vessel was the <strong>dhow</strong>, built with planks stitched together using coconut fibre rather than nailed, which made a hull that flexed instead of splitting. Its <strong>lateen sail</strong>, triangular and set at an angle, let a ship sail closer to the wind than a square sail allows, so a captain was not limited to running directly downwind. Chinese <strong>junks</strong> came west with a different engineering tradition: watertight internal bulkheads, so a breached compartment did not sink the ship, and a sternpost rudder for steering a large hull. The magnetic compass, developed in China and in maritime use by the Song period, made open-water navigation less dependent on the coastline.` },
+            { p: `Because a ship carries tons where a camel carries kilograms, the Indian Ocean could move <strong>bulk</strong>: timber, grain, salt, ordinary cotton textiles, building stone, and enslaved people, alongside the pepper, spices, ivory, gold and porcelain. This is the single biggest practical difference between the sea routes and the land routes, and it is why the Indian Ocean was the larger system by far.` }
+          ]
+        },
+        {
+          heading: 'The places that mattered',
+          blocks: [
+            { p: `An <span class="kt">entrepôt</span> is a port whose business is not producing goods but gathering, storing and redistributing other people's. Its function is to be the place where one leg of the relay ends and the next begins, which is why entrepôts cluster where the wind or the coastline forces a change of ship.` },
+            { p: `<strong>Kilwa</strong>, on the coast of modern Tanzania, was the southern anchor of the Swahili coast, prospering by controlling access to gold brought from the interior through Sofala. <strong>Calicut</strong> and the Malabar ports of southwest India sat on the pepper coast and at the natural meeting point of the western and eastern halves of the ocean. <strong>Aden</strong> commanded the mouth of the Red Sea, and <strong>Hormuz</strong> the mouth of the Persian Gulf, each of them a chokepoint through which everything bound for Egypt or Iraq had to pass. <strong>Palembang</strong>, capital of the <span class="kt">Srivijaya Empire</span> on Sumatra, sat beside the <strong>Strait of Malacca</strong>, the narrow passage between the Indian Ocean and the South China Sea. <strong>Guangzhou</strong> and <strong>Quanzhou</strong> on the South China coast were the eastern terminus, with large resident foreign merchant communities.` },
+            { p: `Srivijaya is the clearest case of a state built on a chokepoint. It produced comparatively little itself. It grew rich and powerful from about the seventh century by controlling the strait, taxing the ships that used it and suppressing the piracy that would otherwise have made the passage unusable. <strong>Protection and extraction were the same policy.</strong>` },
+            { p: `The <span class="kt">Swahili city-states</span> along the East African coast, Mogadishu, Mombasa, Kilwa, Sofala and others, were independent commercial towns rather than one state, built in coral stone, ruled by merchant elites, and Muslim from an early date. The Swahili language is the evidence in linguistic form: a Bantu language, African in grammar and core vocabulary, carrying a substantial layer of Arabic loanwords. <strong>A language is a record of who spent centuries talking to whom.</strong>` }
+          ]
+        },
+        {
+          heading: 'What moved',
+          blocks: [
+            { p: `Pepper and spices from India and the islands, cotton textiles from Gujarat and the Coromandel coast, Chinese porcelain and silk, ivory and gold from the African interior, timber and horses from Arabia, and enslaved people in both directions. Also, and this is the part to remember, <strong>bananas</strong>, which are Southeast Asian in origin and reached Africa across this ocean, and <strong>Islam</strong>, which arrived in Southeast Asia and on the Swahili coast in the baggage of merchants who were waiting for the wind.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The monsoon timetable. <em>The mechanism is not "the winds helped sailors." It is that the reversal made a round trip predictable but locked to a calendar, so a crew that missed the wind waited months in port, which produced permanent foreign merchant quarters, which is how Islam, language and capital settled along the coasts. The wind wrote the demographic map.</em>`,
+        limit: `Total dependence on the schedule. There was no sailing against the season, so commerce, and any state depending on its taxes, moved at the pace of the weather.`,
+        comparison: `Against the <em>Silk Roads</em> on capacity: ships carried bulk, camels carried luxuries, so the sea system was larger and touched ordinary life while the land system moved goods only the rich ever saw.`
+      },
+      terms: [
+        ['Monsoon winds', 'Seasonal reversing winds: southwest from roughly June to September carrying ships toward India, northeast from roughly November to February carrying them back toward Arabia and Africa.'],
+        ['Entrepôt', 'A port that gathers, stores and redistributes goods produced elsewhere, existing to be the point where one leg of a trade relay ends and the next begins.'],
+        ['Srivijaya Empire', 'A maritime power based at Palembang on Sumatra that grew rich from about the seventh century by controlling and taxing traffic through the Strait of Malacca.'],
+        ['Swahili city-states', 'Independent Muslim commercial towns along the East African coast, including Kilwa, Mombasa and Mogadishu, linking the African interior to the Indian Ocean.']
+      ]
+    },
+
+    // ── 04 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'sahara',
+      num: '04',
+      accent: 'oxide',
+      name: 'Across the Sahara',
+      navLabel: 'Trans-Saharan',
+      dates: 'Regular by c. 700 CE &nbsp;·&nbsp; West Africa to the Mediterranean',
+      thesis: `The Sahara is not a wall between two worlds. Once the camel made it crossable, it worked exactly like an ocean: empty in the middle, valuable at the edges, and dominated by whoever controlled the ports on either shore.`,
+      parts: [
+        {
+          heading: 'What made it possible',
+          blocks: [
+            { p: `The camel, and specifically the equipment for using one. The one-humped dromedary spread into North Africa in the early centuries CE, and it is superbly adapted: it can lose a large share of its body water and recover it in a single long drink, its nostrils and eyelashes close against sand, and it can carry heavy loads for days between waterings.` },
+            { p: `The animal alone was not enough. What made large-scale desert commerce practical was <strong>saddle design</strong>, a rig that let a load be balanced securely over or around the hump and let a rider sit high with real control of the animal. The historian Richard Bulliet argued that this equipment made the camel so superior to wheeled transport across North Africa and Southwest Asia that societies there effectively abandoned the wheel for centuries, which is a striking claim and a useful one to know: <strong>a technology can be discarded because something better exists, not because a society failed to invent it.</strong>` },
+            { p: `The second condition is oases, again. Caravans, sometimes numbering in the thousands of animals, crossed in stages between wells. A caravan that misjudged the distance did not arrive late. It did not arrive.` }
+          ]
+        },
+        {
+          heading: 'How it actually worked: the gold and salt exchange',
+          blocks: [
+            { p: `The trade rested on a genuine and unusual complementarity. West Africa, in the goldfields of Bambuk, Bure and Wangara along the upper Senegal and Niger, had gold in quantity and very little salt. The Sahara had salt in enormous slabs, mined at desert sites such as <strong>Taghaza</strong>, where blocks were cut straight out of the ground. And salt is not a seasoning in a hot climate. <strong>It is a physiological requirement</strong>, needed to replace what the body loses through sweat, and needed to preserve food. Each side had a surplus of something the other could not live comfortably without.` },
+            { note: {
+              kind: 'howknow',
+              label: 'Two famous claims, handled carefully',
+              html: `You will read that gold and salt traded pound for pound, and that West Africans and Berber traders conducted a "silent trade" in which the two sides left goods and withdrew, never meeting or speaking. Both come to us through Arabic geographers, above all <strong>al-Bakri</strong>, writing in Córdoba in the <span class="num">11th century</span>, who compiled merchant reports and <em>never went to West Africa</em>. The equal-weight exchange is best treated as an image of how extraordinarily valuable salt was rather than a market rate, and the silent trade may describe a real practice for guarding the location of goldfields, or may be a traveller's tale repeated because it is a good one. <strong>Write "according to Arabic accounts" and you have said something defensible.</strong> Write it as fact and you have not.`
+            } }
+          ]
+        },
+        {
+          heading: 'The places that mattered',
+          blocks: [
+            { p: `<strong>Sijilmasa</strong>, in southern Morocco, was the northern port of the desert: the assembly point where caravans formed up before crossing and where gold entered the Mediterranean economy. <strong>Awdaghust</strong> sat on the southern desert edge as its counterpart. <strong>Koumbi Saleh</strong> was the capital of the Ghana Empire. <strong>Gao</strong>, <strong>Timbuktu</strong> and <strong>Djenné</strong> grew along the Niger bend, where the river gave access into the interior and where desert transport handed over to river transport.` },
+            { p: `The pattern is identical to the Indian Ocean, and worth saying explicitly in an essay: <strong>the wealthy towns are at the edges of the empty space, not in it.</strong> Sijilmasa and Awdaghust are desert ports, and they made their money for the same reason Aden and Kilwa did.` },
+            { p: `The <strong>Ghana Empire</strong>, dominant from roughly the eighth century to the twelfth, is the classic case of profiting from a network without producing its goods. Ghana did not control the goldfields and by most accounts did not want to. It sat between the mines and the desert crossing and <strong>taxed everything moving in either direction</strong>. Its power came from position, exactly as Srivijaya's did.` }
+          ]
+        },
+        {
+          heading: 'What moved',
+          blocks: [
+            { p: `North across the desert: gold, in quantities large enough to matter to the coinage of the Mediterranean world, along with ivory, hides, kola nuts and enslaved people. South: salt, cloth, horses, copper, manufactured goods, and books.` },
+            { p: `And Islam, which travelled with the merchants and arrived first among the trading and ruling classes of the Sahel rather than among farmers. Al-Bakri describes Ghana's capital as effectively two towns a few miles apart, one the royal town and the other a Muslim merchant town with mosques. That layout is a snapshot of a religion partway through arriving: <strong>present, prosperous, institutionally established, and not yet the king's.</strong> Conversion of West African rulers follows over the next centuries.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The camel saddle. <em>The mechanism is that the saddle turned an animal that could survive the desert into one that could carry a commercial cargo across it and be controlled while doing so, which converted the Sahara from a barrier into a crossing and made the towns on both shores rich. Note that Bulliet's argument runs further: the rig was good enough that wheeled transport was abandoned, not merely outperformed.</em>`,
+        limit: `Enslaved people were a major northbound commodity, so this network's prosperity was built partly on moving human beings. Also note Ghana taxed the trade without controlling the mines, which is power that evaporates if the route shifts.`,
+        comparison: `Against <em>Srivijaya</em> on the same category, profiting from position: both states produced little and grew rich by controlling a passage others had to use, one a strait and one a desert crossing.`
+      },
+      terms: [
+        ['Trans-Saharan trade', 'The caravan network linking West Africa to North Africa and the Mediterranean across the Sahara, carrying gold and enslaved people north and salt and manufactured goods south.'],
+        ['Taghaza', 'A Saharan salt-mining settlement where salt was cut from the ground in slabs and carried south by caravan.'],
+        ['Sijilmasa', 'The Moroccan town at the northern edge of the Sahara where caravans assembled, functioning as a desert port.'],
+        ['Ghana Empire', 'A West African state, dominant roughly from the eighth to the twelfth century, that grew powerful by taxing the gold and salt trade rather than by controlling the mines.']
+      ]
+    },
+
+    // ── 05 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'technology',
+      num: '05',
+      accent: 'gold',
+      name: 'What Else Moved: Technology',
+      navLabel: 'Technology',
+      dates: 'c. 751 CE onward &nbsp;·&nbsp; the case of paper',
+      thesis: `Technology transfer is the clearest evidence that these networks moved more than cargo, because a technique, unlike a bale of silk, is not used up when it is handed on. Both parties end up holding it.`,
+      parts: [
+        {
+          heading: 'The Battle of Talas, and what it may or may not explain',
+          blocks: [
+            { p: `In <span class="num">751 CE</span>, near the Talas River in Central Asia, an Abbasid army defeated a Tang Chinese force. As a battle it changed little; neither empire pushed much further. Its fame rests on the traditional account that Chinese prisoners taken there included <strong>papermakers</strong>, and that papermaking passed into the Islamic world as a result.` },
+            { note: {
+              kind: 'howknow',
+              label: 'The story is famous, the causation is disputed',
+              html: `The captured-artisans account appears in later sources, and historians have questioned how much weight it can bear. Papermaking may well have been spreading westward gradually through Central Asia already, with Talas serving as a convenient date for a slower process. <strong>What is not in doubt is the outcome:</strong> a paper mill operating at Samarkand in the eighth century, paper manufacture at Baghdad by the end of it, then Cairo, then North Africa, then Iberia. The safe sentence for an essay is that papermaking reached the Islamic world from China in the eighth century, with the Battle of Talas traditionally marking the transfer.`
+            } },
+            { p: `Why it mattered is not disputed at all. Paper is dramatically cheaper than <strong>parchment</strong>, which requires an animal skin per few pages, and more durable and versatile than papyrus. Cheap writing material changes what a state and a scholarly culture can afford to do. The Abbasid bureaucracy could keep records at a scale that had been impossible. The translation movement in Baghdad, which preserved and extended Greek, Persian and Indian learning, ran on it. Book markets and libraries followed, and centuries later paper reached Europe by the same relay, through Islamic Iberia.` },
+            { p: `That is the shape of a strong causation answer: <strong>a manufacturing technique moved along a trade route and changed what was administratively and intellectually possible three thousand kilometres away.</strong>` }
+          ]
+        },
+        {
+          heading: 'The rest of the traffic',
+          blocks: [
+            { p: `<span class="kt">Technology transfer</span> along these routes was constant and mostly undramatic. The magnetic compass and the sternpost rudder, both developed in China, spread west and reshaped what sailors could attempt. Indian numerals, including a symbol for zero and a positional system, passed into Islamic mathematics and reached Europe as "Arabic numerals," where Fibonacci's <em>Liber Abaci</em> of <span class="num">1202</span> argued for them against Roman numerals. Sugar refining, silk production, and glassmaking all travelled. Gunpowder went west along the same corridors somewhat later.` },
+            { p: `Note the direction of nearly all of it. In the period this chapter covers, <strong>the flow of technology and learning runs predominantly from east and south toward the northwest</strong>, from China, India and the Islamic world toward Europe. A student who assumes otherwise has the map upside down for this era.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Paper as a transferred technique. <em>The mechanism is that a technique is not consumed by being given away, so unlike a traded good it accumulates: cheap writing material lowered the cost of records and books, which enabled bureaucracy at scale and the Baghdad translation movement, which preserved learning that later travelled on to Europe.</em>`,
+        limit: `The Talas causal story is traditional rather than established. Say the transfer happened in the eighth century with Talas traditionally marking it, and you are accurate.`,
+        comparison: `Set technology against goods for question 3. A bale of silk is consumed by its buyer; papermaking is held by everyone who receives it and keeps compounding.`
+      },
+      terms: [
+        ['Battle of Talas', 'A 751 CE clash between Abbasid and Tang forces in Central Asia, traditionally credited with transferring papermaking to the Islamic world.'],
+        ['Technology transfer', 'The movement of a technique or device from one society to another, after which both possess it.'],
+        ['Parchment', 'Writing material made from prepared animal skin, durable but so costly that it limited how much any society could afford to write down.']
+      ]
+    },
+
+    // ── 06 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'crops',
+      num: '06',
+      accent: 'rust',
+      name: 'What Else Moved: Crops and Disease',
+      navLabel: 'Crops and disease',
+      dates: 'c. 541 CE and c. 1000 CE &nbsp;·&nbsp; the two biggest cargoes nobody loaded',
+      thesis: `The two things that changed the most lives were a rice variety and a bacterium, and neither was anybody's cargo. Both simply travelled with the people who were carrying something else.`,
+      parts: [
+        {
+          heading: 'Champa rice, and a hundred million people',
+          blocks: [
+            { p: `Around the year <span class="num">1000</span>, a rice variety from <strong>Champa</strong>, in what is now central Vietnam, reached China, and the Song state actively promoted its distribution in the early eleventh century. Its virtues were agricultural rather than culinary: it ripened fast, tolerated drought, and grew on land the older varieties could not use.` },
+            { p: `Run the causation carefully, because this is the strongest continuity-and-change example in the chapter. A fast-ripening rice means <strong>two harvests a year</strong> where there had been one, and cultivation on hillsides and drier ground previously left idle. More food supports more people; Song China's population climbed past figures no state had previously sustained. More people in a commercialized economy means larger cities, a bigger internal market, more labour available for crafts and mining, and more taxable wealth for a bureaucratic state.` },
+            { p: `<strong>What continued:</strong> rice remained the staple of southern China, paddy agriculture remained the basis of rural life, and the Chinese state continued to depend on a taxed agricultural surplus. <strong>What changed:</strong> the scale of everything, because the same land now fed roughly twice as many people. Notice that a foreign seed did more to shape Song China than most of its wars, and that when you reach Unit 1 and read about Song population and urbanization, this is the reason underneath it.` }
+          ]
+        },
+        {
+          heading: 'Bananas, and a coastline that changed the interior',
+          blocks: [
+            { p: `Bananas and plantains are Southeast Asian in origin and are not native to Africa. They crossed the Indian Ocean, very likely with Austronesian voyagers whose migrations reached Madagascar, and spread into the African mainland and the Great Lakes region. Because bananas thrive in wet tropical conditions where grain does poorly, they allowed farming communities to expand into forested regions that cereal agriculture had not suited, supporting denser settlement well inland.` },
+            { p: `The general point is worth stating: <strong>a trade network can transform a region no merchant ever visits.</strong> The banana reached farmers hundreds of kilometres from any port.` },
+            { note: {
+              kind: 'misconception',
+              label: 'A contested framing to use carefully',
+              html: `You may encounter the "Islamic Green Revolution" or Arab agricultural diffusion, the argument that sugarcane, citrus, cotton, rice and hard wheat spread systematically westward across Dar al-Islam and transformed Mediterranean farming. The movement of the crops is real and documented. <strong>The strong version, a single coordinated revolution driven by Islamic expansion, has been substantially criticized</strong>, with critics arguing the spread was slower, patchier and often predates the period claimed. Cite specific crops moving along specific routes. Avoid the packaged phrase.`
+            } }
+          ]
+        },
+        {
+          heading: 'The Plague of Justinian, and the cost of connection',
+          blocks: [
+            { p: `From <span class="num">541 CE</span>, an epidemic swept the Byzantine Empire and the Mediterranean world, recurring for two centuries. Modern analysis of DNA from burials has identified <em>Yersinia pestis</em>, the same bacterium responsible for the later Black Death. It reached Constantinople along the grain shipping routes from Egypt, arriving with the rats and fleas that lived in the cargo.` },
+            { p: `Ancient estimates of the death toll are enormous and are not reliable, and modern historians disagree sharply about the scale of its demographic and political effects. What is not in dispute is the mechanism, and the mechanism is the point: <strong>the same density of connection that carried paper and rice carried the pathogen, by the same ships, on the same schedule.</strong> Two hundred years later the routes were denser still, and in the 1340s they delivered the Black Death across Eurasia. That is Unit 2, and this is why it happened.` },
+            { p: `Hold this next to Champa rice when you answer question 3. Connection is not a synonym for improvement. It is a synonym for <em>exposure</em>, and exposure runs in every direction at once.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Champa rice. <em>The mechanism is agronomic and then demographic: a fast-ripening drought-tolerant variety permitted double-cropping and cultivation of previously unusable land, which roughly doubled the population a given area could feed, which produced the urbanization, commercial growth and tax base of Song China.</em>`,
+        limit: `The Plague of Justinian from 541 CE, arriving on Egyptian grain ships, showing that the density enabling the beneficial transfers is the same density enabling the catastrophic ones.`,
+        comparison: `Champa rice against the plague on one category, unintended consequences of connection. Both moved without anyone trading them, and both reshaped populations far more than any luxury good.`
+      },
+      terms: [
+        ['Champa rice', 'A fast-ripening, drought-resistant rice variety from central Vietnam, spread in Song China from about 1000 CE, enabling double-cropping and large population growth.'],
+        ['Plague of Justinian', 'The epidemic beginning in 541 CE, caused by Yersinia pestis and carried along Mediterranean shipping routes, that struck the Byzantine Empire and recurred for two centuries.'],
+        ['Diffusion', 'The spread of a crop, technique, practice or organism from one region into another, whether or not anyone intended to move it.']
+      ]
+    },
+
+    // ── 07 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'faith',
+      num: '07',
+      accent: 'iron',
+      name: 'What Else Moved: Faith and People',
+      navLabel: 'Faith and people',
+      dates: 'Throughout &nbsp;·&nbsp; merchants as missionaries',
+      thesis: `The great religious maps of Eurasia and Africa were drawn largely by merchants, not by armies or missionaries. Where the trade went, the faith went, and it usually arrived in the luggage of somebody whose actual job was selling cloth.`,
+      parts: [
+        {
+          heading: 'Buddhism along the Silk Roads',
+          blocks: [
+            { p: `Buddhism began in northern India and reached China overland through Central Asia in the first centuries CE, then spread onward to Korea and Japan. The transmission mechanism is very concrete. Monasteries were established along the routes, where they offered travellers lodging, storage and sometimes credit. Merchants were their principal donors, because donation earned religious merit and because a monastery at a dangerous stage of a journey was a practical asset. <strong>Trade funded the monasteries and the monasteries serviced the trade.</strong>` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: a room that was bricked up',
+              html: `At <strong>Dunhuang</strong>, the Silk Road town guarding the Chinese end of the Hexi corridor, hundreds of Buddhist cave shrines were cut and painted over roughly a thousand years. One of them, sealed around <span class="num">1000 CE</span> and reopened in <span class="num">1900</span>, held tens of thousands of manuscripts in many languages, including a copy of the Diamond Sutra dated <span class="num">868 CE</span> that is among the earliest dated printed books in existence. It is an accidental archive: nobody assembled it for posterity, someone simply walled up a storeroom. <strong>A single Silk Road town produced a library in Chinese, Tibetan, Sanskrit, Sogdian, Uyghur and Khotanese</strong>, which tells you what kind of place it was more directly than any chronicle could.`
+            } }
+          ]
+        },
+        {
+          heading: 'Islam by sea and by caravan',
+          blocks: [
+            { p: `Islam expanded rapidly by conquest in its first century across Southwest Asia, North Africa and Iberia. But its spread into <strong>Southeast Asia, the East African coast and West Africa</strong>, the regions this chapter is about, happened very differently, and getting this right is one of the most valuable distinctions in the unit.` },
+            { p: `<strong>No army carried Islam to Sumatra, Java, Kilwa or the Niger bend.</strong> Merchants did. Muslim traders settled in ports while waiting out the monsoon, married locally, and established mosques and legal practice in their quarters. Shared faith brought practical advantages in long-distance commerce: a common law of contract, a recognized framework for credit and partnership, arbitration a foreign merchant could rely on, and a network of coreligionists in distant ports who would house you. Local rulers who converted gained access to that network and to the literate administrators who came with it. Conversion frequently moved from the trading and ruling classes downward and outward, which is why coastal and commercial areas were Muslim well before rural interiors.` },
+            { p: `The result is the enormous religious geography of <strong>Dar al-Islam</strong>, spanning from West Africa to island Southeast Asia, held together far more by commerce, law and pilgrimage than by any single state.` }
+          ]
+        },
+        {
+          heading: 'And the smaller diasporas',
+          blocks: [
+            { p: `The routes carried more than the famous faiths. Nestorian Christianity, from the Church of the East, reached Tang China, where a stele erected at Xi'an in <span class="num">781 CE</span> records its presence in Chinese and Syriac. Manichaeism travelled the same roads. Jewish merchants known as the Radhanites are described in a ninth-century Arabic account as trading between Frankish Europe and China, speaking multiple languages, and using routes across both the Mediterranean and Central Asia.` },
+            { p: `What all of these share is the merchant diaspora: a community living permanently far from home, bound by kinship, language and faith, and useful to its members precisely because it existed in many places at once. <strong>A trade network is not only a set of routes. It is a set of people who chose to live at the far end of one.</strong>` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Merchant-carried religion. <em>The mechanism is that shared faith lowered the cost and risk of long-distance trade, providing common contract law, credit arrangements, arbitration and hospitality in foreign ports, so conversion was commercially useful and spread first among traders and rulers rather than downward from conquest.</em>`,
+        limit: `It arrived unevenly and from the top: coastal and commercial populations were Muslim long before rural interiors, so "the region converted" is almost always too coarse a statement.`,
+        comparison: `Against the <em>conquest</em> model of Islamic expansion in Southwest Asia and North Africa: same religion, two entirely different transmission mechanisms, which is a strong comparison paragraph on its own.`
+      },
+      terms: [
+        ['Dar al-Islam', 'The lands where Islam and Islamic law were established, spanning West Africa to Southeast Asia and held together largely by trade, law and pilgrimage rather than one state.'],
+        ['Merchant diaspora', 'A community of traders living permanently far from home, connected across many ports by kinship, language and faith.'],
+        ['Dunhuang', 'A Silk Road town in western China whose Buddhist cave shrines and sealed manuscript cache preserve an accidental archive of the routes in many languages.']
+      ]
+    },
+
+    // ── 08 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'cost',
+      num: '08',
+      accent: 'oxide',
+      name: 'What It Cost, and Who Was Carried',
+      navLabel: 'What it cost',
+      dates: 'The other half of question 3',
+      thesis: `Every network in this chapter also moved human beings as property. An answer that celebrates the movement of paper and rice without saying so is not a strong argument; it is an incomplete one.`,
+      parts: [
+        {
+          heading: 'People as cargo',
+          blocks: [
+            { p: `Enslaved people were traded along all three networks and across many centuries. The trans-Saharan routes carried captives north across the desert alongside the gold. The Indian Ocean carried East Africans north into Arabia and Iraq, and moved enslaved people in other directions too. Enslaved people appear in the Silk Road record as well. This was not marginal to the commerce. It was part of the ordinary cargo, recorded in the same documents as textiles and salt.` },
+            { p: `The scale and character varied enormously by time and place and cannot be flattened into one description, and the sources make precise numbers impossible. <strong>The historically honest statement is that the trade in people was a continuous and significant component of all three networks, not an occasional aberration in them.</strong>` }
+          ]
+        },
+        {
+          heading: 'The Zanj Rebellion',
+          blocks: [
+            { p: `From <span class="num">869 to 883 CE</span>, in the salt marshes of southern Iraq, enslaved East African labourers known as the <strong>Zanj</strong> rose against the Abbasid Caliphate. They had been put to work in brutal conditions draining marshland to make it cultivable, held in large gangs, which is the arrangement that made organized revolt possible. The rebellion lasted roughly <span class="num">fourteen years</span>, established its own fortified settlements, took the major city of Basra, and required a sustained campaign by the caliphate to defeat.` },
+            { p: `It is worth knowing for two reasons. It is direct evidence that Indian Ocean commerce moved enough people far enough to concentrate a large East African population in Iraq. And it is a limit on state power in exactly the sense Foundations 3 taught: <strong>a rebellion of this size and duration marks where extraction had become heavy enough that people preferred a fourteen-year war to continuing.</strong>` }
+          ]
+        },
+        {
+          heading: 'Who else paid',
+          blocks: [
+            { p: `Beyond the trade in people, the networks distributed their costs unevenly in ways worth naming. Disease travelled the busiest routes and struck densest at the nodes. Regions whose prosperity rested on controlling a passage, Ghana on the desert crossing, Srivijaya on the strait, held wealth that a shifted route or a stronger rival could remove, and both eventually declined as circumstances changed around them. And a network that made coastal elites rich did not necessarily improve life for farmers in the interior, whose surplus was frequently what funded it.` },
+            { p: `None of this means the networks were bad. It means <strong>"transformed" is the accurate verb and "improved" is a claim requiring evidence</strong>, and that a historian specifies for whom.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Trade in enslaved people as ordinary cargo. <em>The mechanism is the same one that moved everything else: established routes, merchant communities and predictable demand, applied to human beings, and recorded in the same commercial documents as salt and cloth.</em>`,
+        limit: `The Zanj Rebellion, 869 to 883 CE, is the specific, dateable evidence: a fourteen-year uprising of enslaved East Africans in Iraq that took Basra and required a sustained imperial campaign to suppress.`,
+        comparison: `Set this against sections 5 and 6 for question 3. If the most important cargo was not goods, then it was paper and rice and the plague, and it was also people, and an argument that names only the first three has chosen its evidence.`
+      },
+      terms: [
+        ['Zanj Rebellion', 'The 869 to 883 CE uprising of enslaved East African labourers in southern Iraq, which took Basra and lasted roughly fourteen years before the Abbasids suppressed it.'],
+        ['Zanj', 'The Arabic term used for East Africans, and for the enslaved East African population in Abbasid Iraq.']
+      ]
+    },
+
+    // ── 09 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'complexity',
+      num: '09',
+      accent: 'gold',
+      name: 'Writing the Complexity Argument',
+      navLabel: 'Complexity',
+      dates: 'The skill this topic is built around',
+      thesis: `Your AP Skill Builder asks for complexity: one network, multiple simultaneous effects, connected across regions. That is a specific shape of paragraph, and this chapter was arranged to fill it.`,
+      parts: [
+        {
+          heading: 'What complexity means here',
+          blocks: [
+            { p: `Complexity is not "it was complicated." In AP terms it means showing that a development produced <strong>several different kinds of change at once</strong>, in more than one place, and explaining how those changes connect. The failure mode is a list. The success looks like a web.` },
+            { p: `A worked example, using the Indian Ocean. The monsoon system made round-trip voyaging predictable but calendar-bound. That produced, simultaneously: an <em>economic</em> change, because bulk goods could move profitably, so ordinary cotton textiles from Gujarat clothed people across the ocean rather than only luxuries reaching the rich; a <em>demographic and religious</em> change, because crews stranded for months founded permanent merchant quarters, which is how Islam reached the Swahili coast and island Southeast Asia without an army; a <em>political</em> change, because control of chokepoints became the basis of state power, which is what Srivijaya was; and an <em>epidemiological and agricultural</em> change, because the same ships carried bananas to Africa and pathogens to everywhere.` },
+            { p: `Then connect them. Srivijaya could tax the strait because the wind forced ships through it; the merchant quarters that made Palembang and Kilwa wealthy existed because of the same wind; and the bananas that changed farming a thousand kilometres inland arrived on the ships that came because the monsoon made the voyage worth making. <strong>One cause, four kinds of effect, three regions, and the connections said out loud.</strong>` }
+          ]
+        },
+        {
+          heading: 'Where this goes next',
+          blocks: [
+            { p: `Everything here is the substructure of Unit 2, which studies these same networks between about 1200 and 1450 at a greater intensity. The Mongol conquests will unify much of the overland route under one authority and make the thirteenth century a peak of Silk Road exchange. That same density will deliver the Black Death in the 1340s along the routes section 6 described. Indian Ocean trade will grow further, Malacca will rise beside the strait Srivijaya once held, and Mali will follow Ghana in the western Sudan with a ruler whose pilgrimage across the Sahara in <span class="num">1324</span> is remembered for disrupting the economies he passed through.` },
+            { p: `The analytical habits are portable too. When you meet any network in this course, ask the four questions this chapter used: what physical or technological fact made it possible, how did the relay actually work, which places did the geography make valuable, and what moved that nobody intended to send.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The complexity shape. <em>One cause, several distinct kinds of effect, more than one region, and explicit sentences connecting the effects to each other. A list of consequences is not complexity; the connective sentences are.</em>`,
+        limit: `Complexity claims fail when the categories overlap. Economic, political, religious, demographic and epidemiological are genuinely different kinds of change, and choosing across those categories is what makes the paragraph work.`,
+        comparison: `Any two networks on any one part of the shared skeleton. The chapter gave all three the same four parts precisely so that reading across is already a comparison.`
+      },
+      terms: [
+        ['Complexity', 'Showing that one development produced several different kinds of change, in more than one place, and explaining how those changes connect.'],
+        ['Periodization', 'Dividing the past into labelled eras, and recognizing that the divisions are analytical choices rather than facts about the past.']
+      ]
+    }
+  ],
+
+  closing: {
+    navLabel: 'Building your answer',
+    heading: 'Building an Answer That Scores',
+    intro: `Your three reading questions ask for three different moves, and the checkpoint asks for a fourth. Below is what each is testing and where in this chapter the evidence lives.`,
+    pairs: [
+      {
+        category: 'Question 1: Causation',
+        title: 'Name the feature, then the mechanism',
+        body: `The trap is stopping at the feature. "The monsoon winds helped sailors" is not a mechanism. "The monsoon reversed on a schedule, so a crew that missed it waited four to six months in port, which is why permanent foreign merchant quarters formed and why Islam reached the Swahili coast by trade rather than conquest" is. Same for the camel saddle: not that it helped carry loads, but that it made the Sahara a crossing rather than a barrier, which made the towns on both shores rich. Sections 3 and 4.`
+      },
+      {
+        category: 'Question 2: Continuity and Change',
+        title: 'Both halves, and be specific about each',
+        body: `Champa rice is the cleanest. Changed: two harvests a year, cultivation of previously unusable land, and a population that grew past anything a Chinese state had sustained, bringing urbanization and a larger tax base. Continued: rice as the staple, paddy agriculture as rural life, and a state still funded by taxing an agricultural surplus. Paper after Talas and the camel saddle work the same way. Section 6, and section 5 for paper.`
+      },
+      {
+        category: 'Question 3: Argumentation',
+        title: 'The claim is stronger than it first looks',
+        body: `"Not goods at all" invites easy agreement, so earn it. The strongest case: paper reshaped what Abbasid administration and scholarship could do (section 5), Champa rice roughly doubled what Chinese land could feed (section 6), Islam redrew the religious map of two oceans' coastlines (section 7), and Yersinia pestis killed on a scale no cargo ever matched (section 6). Then complicate it honestly with section 8: enslaved people were moved as goods, so the sharpest version of the claim is that <em>the most consequential things that moved were the ones nobody was trying to sell</em>, which is not quite what the prompt said.`
+      },
+      {
+        category: 'The Skill Builder and Checkpoint',
+        title: 'Complexity, and two non-goods with dates',
+        body: `The checkpoint wants one network, at least two non-goods, how each travelled, and a consequence. Safest pairing: paper moving west from 751 CE with merchants and captives, and Islam moving with merchants who settled in ports. Give dates and places, as the success criteria specifically ask: 751 CE at Talas, Samarkand then Baghdad; 541 CE for the plague on Egyptian grain ships; about 1000 CE for Champa rice into Song China. Section 9 has the paragraph shape.`
+      }
+    ]
+  }
+};

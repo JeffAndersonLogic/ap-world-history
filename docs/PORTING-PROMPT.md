@@ -237,8 +237,10 @@ these steps for the human.
    },
    ```
 3. In `scripts/build-ebook.js`, replace that topic's `{ pending: {...} }` entry
-   in the volume's `contents` array with `{ slug: 'foundations-N-<slug>' }`,
-   keeping teaching order.
+   in the volume's `contents` array with `{ module: 'foundations-N' }`, keeping
+   teaching order. **`module` is the content module's filename**, for example
+   `foundations-4` for `deep-reading-content/foundations-4.js`. It is not the
+   `slug` field inside that module, which is longer.
 4. Build and verify:
    ```bash
    npm run build:deep-readings
@@ -255,11 +257,14 @@ the file and the fix.
 
 - **Foundations 1**, `foundations-1.js`, "The Bargain", 9 sections, ~6,900 words.
 - **Foundations 3**, `foundations-3.js`, "The Machinery of Power", 4 sections, ~8,300 words.
+- **Foundations 4**, `foundations-4.js`, "The Relay", 9 sections, ~8,200 words.
 
 **Read both before writing.** They are the style reference, and matching them
 matters more than any instruction above.
 
 ### Still to write
+
+Two chapters remain: Foundations 2 and Foundations 5.
 
 **Foundations 0 is deliberately excluded.** It is course orientation and the six
 thinking skills, not history content, and its reading asks for a personal
@@ -297,35 +302,6 @@ literate institution in post-Roman Europe, caste as lived social order,
 Confucian examination shaping who could hold office. Hinduism is the deliberate
 contrast case for Q1, a tradition that travels far less because membership is
 bound to birth and social position rather than to conversion.
-
----
-
-#### Foundations 4, Trade Networks & Innovation
-
-`lessonFile: foundations-4-trade-networks.html`
-
-Learning targets:
-1. Explain how the Silk Roads, Indian Ocean and trans-Saharan networks each operated: geographic basis, merchant communities, key goods.
-2. Identify specific **non-goods** that traveled: disease, technology, crops, religion, people, including the Battle of Talas (751 CE) as technology transfer through conflict.
-3. Write a complexity argument about multiple simultaneous changes across regions.
-
-Success criteria:
-1. Name at least three specific port cities or oasis towns, explain their geographic function, and describe the **monsoon system**: which months, which directions, which routes.
-2. Give at least two specific examples of non-goods traveling, with dates and locations.
-3. Write a complexity paragraph connecting multiple effects of one network across regions.
-
-Reading questions:
-- **Q1 (Causation).** Choose one network and explain how a specific geographic feature or technology caused it to function, for example monsoon winds or the camel saddle. Identify the mechanism, not just the feature.
-- **Q2 (Continuity & Change).** Choose one change: paper spreading after Talas, Champa rice reaching Song China, or the camel saddle transforming the Sahara. One thing changed, one stayed the same.
-- **Q3 (Argumentation).** Evaluate: "The most important things that moved along trade networks before c.1200 were not goods at all."
-
-Notes for the writer. SC1 is unusually specific and the chapter must hit it
-literally: named ports and oasis towns, and the monsoon cycle by direction and
-season. The framing to carry throughout is **relay, not through-travel**: almost
-nobody traveled the whole Silk Road, goods changed hands many times, and that is
-why ideas and diseases moved with them. Q3 needs the non-goods case built
-properly, so give real weight to disease, crop transfer, paper, and religion
-moving with merchants rather than missionaries.
 
 ---
 

@@ -61,6 +61,16 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Choose one trade network, Silk Roads, Indian Ocean, or Trans-Saharan. Identify one chokepoint or junction city on that network and explain why its geographic position made it economically or politically powerful.'
   },
 
+  // The optional push-further layer, rendered under the lecture cards by
+  // foundations-topic-renderer.js. The page is generated from
+  // scripts/lib/deep-reading-content/foundations-4.js; never hand-edit it.
+  // Omit this field entirely and the whole feature disappears from the page.
+  deepReading: {
+    title: 'The Relay',
+    desc: 'A textbook-depth chapter on the Silk Roads, the Indian Ocean and the Sahara, with the monsoon timetable by month and direction, the named ports and oasis towns, and what moved that nobody was trying to sell. Optional, and the place to find dates and locations for the non-goods.',
+    url: 'deep-reading-foundations-4-trade-networks.html'
+  },
+
   first10: {
     title: 'First & 10: Three Networks That Moved the World',
     embedUrl: 'first-and-10-foundations-4-trade-networks-capture.html?v=response-id-fix-v1',

@@ -641,10 +641,10 @@ section('eBook volumes are generated and linked');
     }
 
     for (const entry of volume.contents || []) {
-      if (!entry.slug) continue;                 // a pending topic has no module yet, by design
-      const mod = path.join(ROOT, 'scripts', 'lib', 'deep-reading-content', `${entry.slug}.js`);
+      if (!entry.module) continue;               // a pending topic has no module yet, by design
+      const mod = path.join(ROOT, 'scripts', 'lib', 'deep-reading-content', `${entry.module}.js`);
       if (!exists(mod)) {
-        err(path.join(ROOT, 'scripts', 'build-ebook.js'), `volume "${volume.id}" names chapter "${entry.slug}" with no content module`);
+        err(path.join(ROOT, 'scripts', 'build-ebook.js'), `volume "${volume.id}" names chapter module "${entry.module}" that does not exist`);
       }
     }
 

@@ -177,18 +177,27 @@ ${chapterNav(entries)}${body}  <footer class="dr-footer">
  * a link.
  *
  * @param {object} library  the LIBRARY config from scripts/build-ebook.js
- * @param {object[]} volumes [{ volume, chapters, pending }]
+ * @param {object[]} volumes [{ volume, entries }] where entries are the volume's
+ *        ordered contents, {chapter} for written and {pending} for not
  */
 function renderLibrary(library, volumes) {
-  const cards = volumes.map(({ volume, chapters, pending }) => {
+  const cards = volumes.map(({ volume, entries }) => {
+    const chapters = entries.filter(e => e.chapter).map(e => e.chapter);
+    const pending = entries.filter(e => e.pending).map(e => e.pending);
     const sections = chapters.reduce((sum, c) => sum + (c.empires || []).length, 0);
-    const written = chapters.map(c =>
-      `          <li><a href="${esc(path_basename(volume.outputFile))}#chapter-${esc(c.topicKey)}">` +
-      `<span class="eb-sec-n">${esc(chapterNumber(c))}</span>${esc(stripTags(c.titleHtml))}</a></li>\n`
-    ).join('');
-    const soon = pending.map(p =>
-      `          <li class="eb-lib-pending"><span class="eb-sec-n">&mdash;</span>${esc(p.title)}</li>\n`
-    ).join('');
+
+    // Walked in declared order, so written and unwritten chapters interleave in
+    // teaching order. Listing every written chapter first and the gaps after
+    // tells a student looking for Foundations 2 to check the bottom of the list,
+    // which is the wrong place to look.
+    const rows = entries.map(entry => {
+      if (entry.pending) {
+        return `          <li class="eb-lib-pending"><span class="eb-sec-n">&mdash;</span>${esc(entry.pending.title)}</li>\n`;
+      }
+      const c = entry.chapter;
+      return `          <li><a href="${esc(path_basename(volume.outputFile))}#chapter-${esc(c.topicKey)}">` +
+             `<span class="eb-sec-n">${esc(chapterNumber(c))}</span>${esc(stripTags(c.titleHtml))}</a></li>\n`;
+    }).join('');
 
     return (
       `      <article class="eb-lib-card">\n` +
@@ -199,7 +208,7 @@ function renderLibrary(library, volumes) {
       ` &nbsp;·&nbsp; ${sections} sections` +
       `${pending.length ? ` &nbsp;·&nbsp; ${pending.length} still to come` : ''}</p>\n` +
       `        </a>\n` +
-      `        <ul class="eb-lib-chapters">\n${written}${soon}        </ul>\n` +
+      `        <ul class="eb-lib-chapters">\n${rows}        </ul>\n` +
       `      </article>\n`
     );
   }).join('');
