@@ -602,6 +602,12 @@ function paragraphsHtml(t){return String(t).split(/\n{2,}/).map(b=>'<p>'+escapeW
 const BH_RECORD_VERSION=1;
 const BH_RECORD_OPEN='--- BEHISTORICAL RECORD, do not edit ---';
 const BH_RECORD_CLOSE='--- END BEHISTORICAL RECORD ---';
+// Said in words, because "do not edit" in 0.68rem grey monospace reads as
+// decoration and students deleted it. Presentation only: nothing parses this,
+// and it sits after BH_RECORD_OPEN so no parse path reads it as a response.
+const BH_RECORD_NOTE='Leave the lines below in place when you paste into Canvas. '
+  +'They are how your work is matched to you and to this lesson. '
+  +'They do not change your answers, and deleting them can cost you credit for work you actually did.';
 
 // Whitespace is collapsed before hashing because Canvas rewrites line breaks on
 // the way in and again on the way out.
@@ -664,8 +670,22 @@ function buildRecordManifest(work,topicId,isoStamp){
   return [BH_RECORD_OPEN,header].concat(lines).concat([BH_RECORD_CLOSE]);
 }
 
+// Sentinels and the note at readable size; only the #BHV and #BHR lines stay
+// faint, because those genuinely are machine data. Styling all of it the same
+// made "do not edit" exactly as easy to ignore as the hashes under it.
 function recordManifestHtml(lines){
-  return '<hr>'+lines.map(l=>'<p style="font-family:monospace;font-size:.68rem;opacity:.6;margin:.15rem 0;">'+escapeWorkHtml(l)+'</p>').join('');
+  const rows=lines.map(l=>/^---/.test(l)
+    ?'<p style="font-weight:700;margin:.4rem 0;">'+escapeWorkHtml(l)+'</p>'
+    :'<p style="font-family:monospace;font-size:.68rem;opacity:.6;margin:.15rem 0;">'+escapeWorkHtml(l)+'</p>');
+  // After the opening sentinel, so the parser's body cut excludes it.
+  if(rows.length)rows.splice(1,0,'<p style="margin:.4rem 0;">'+escapeWorkHtml(BH_RECORD_NOTE)+'</p>');
+  return '<hr>'+rows.join('');
+}
+
+// The text/plain flavour. Kept out of buildRecordManifest so that function
+// returns the wire format and nothing else.
+function recordManifestPlain(lines){
+  return lines.length?[lines[0],BH_RECORD_NOTE].concat(lines.slice(1)):lines;
 }
 
 // Reads localStorage, not the DOM: openModule() replaces the modal body, so a
@@ -708,8 +728,17 @@ function buildWorkDocument(){
   const stamp=now.toLocaleString();
   const manifest=buildRecordManifest(work,FOUNDATION_TOPIC_KEY||T.id||'',now.toISOString());
 
+  // The topic in the one form the parser can read without guessing at prose.
+  // In the heading rather than the footer on purpose: the footer is what
+  // students delete, and "AP World History, FOUNDATIONS 1" was a heading the
+  // parser's recovery pattern could not read. Above the first module label, so
+  // no parse path reads it as an answer.
+  const topicCode=FOUNDATION_TOPIC_KEY||T.id||'';
+  const codeLine=topicCode?'Topic code: '+topicCode:'';
+
   const head='<div><p><strong>'+escapeWorkHtml(line1)+'</strong>'
     +(line2?'<br><strong>'+escapeWorkHtml(line2)+'</strong>':'')+'</p>'
+    +(codeLine?'<p>'+escapeWorkHtml(codeLine)+'</p>':'')
     +'<p><em>Student work, copied '+escapeWorkHtml(stamp)+'</em></p><hr>';
 
   const body=work.map(w=>{
@@ -719,11 +748,11 @@ function buildWorkDocument(){
       +'<p><strong>My response:</strong></p>'+paragraphsHtml(w.text);
   }).join('<hr>');
 
-  const plain=[line1.toUpperCase(),line2,'Student work, copied '+stamp,''].filter(Boolean)
+  const plain=[line1.toUpperCase(),line2,codeLine,'Student work, copied '+stamp,''].filter(Boolean)
     .concat(work.map(w=>{
       const prompt=plainPrompt(w.prompt);
       return [w.label.toUpperCase(),prompt?'Question: '+prompt:'','My response:',w.text,''].filter(Boolean).join('\n');
-    })).concat(manifest).join('\n');
+    })).concat(recordManifestPlain(manifest)).join('\n');
 
   return {html:head+body+recordManifestHtml(manifest)+'</div>',plain:plain,count:work.length};
 }

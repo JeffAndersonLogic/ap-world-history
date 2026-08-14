@@ -1338,6 +1338,14 @@ const BH_RECORD_VERSION = 1;
 const BH_RECORD_OPEN = '--- BEHISTORICAL RECORD, do not edit ---';
 const BH_RECORD_CLOSE = '--- END BEHISTORICAL RECORD ---';
 
+// Said in words, because "do not edit" in 0.68rem grey monospace reads as
+// decoration and students deleted it. It is presentation only: nothing parses
+// this string, and it sits after BH_RECORD_OPEN so no parse path can mistake it
+// for the last module's response.
+const BH_RECORD_NOTE = 'Leave the lines below in place when you paste into Canvas. '
+  + 'They are how your work is matched to you and to this lesson. '
+  + 'They do not change your answers, and deleting them can cost you credit for work you actually did.';
+
 // Canvas rewrites line breaks on the way in and again on the way out, so a hash
 // over raw text would not survive its own round trip. Whitespace is collapsed
 // before hashing: the check is "is this the same writing", not "are the newlines
@@ -1433,11 +1441,25 @@ function buildRecordManifest(work, topicId, isoStamp) {
 
 // Each line gets its own <p>. Canvas may drop the styling, and that is fine,
 // nothing parses the presentation.
+//
+// The two sentinel lines and the note are rendered at readable size. Only the
+// #BHV and #BHR lines stay faint, because those genuinely are machine data. The
+// old version styled all of it identically, which made the words "do not edit"
+// exactly as easy to ignore as the hashes under them.
 function recordManifestHtml(lines) {
-  return '<hr>' + lines.map(line =>
-    '<p style="font-family:monospace;font-size:.68rem;opacity:.6;margin:.15rem 0;">'
-    + escapeWorkHtml(line) + '</p>'
-  ).join('');
+  const rows = lines.map(line => /^---/.test(line)
+    ? '<p style="font-weight:700;margin:.4rem 0;">' + escapeWorkHtml(line) + '</p>'
+    : '<p style="font-family:monospace;font-size:.68rem;opacity:.6;margin:.15rem 0;">'
+      + escapeWorkHtml(line) + '</p>');
+  // After the opening sentinel, so the parser's body cut excludes it.
+  if (rows.length) rows.splice(1, 0, '<p style="margin:.4rem 0;">' + escapeWorkHtml(BH_RECORD_NOTE) + '</p>');
+  return '<hr>' + rows.join('');
+}
+
+// The text/plain flavour of the same thing. Kept out of buildRecordManifest so
+// that function returns the wire format and nothing else.
+function recordManifestPlain(lines) {
+  return lines.length ? [lines[0], BH_RECORD_NOTE].concat(lines.slice(1)) : lines;
 }
 
 // Reads from localStorage, not the DOM, because openModule() replaces the modal
@@ -1501,10 +1523,19 @@ function buildWorkDocument() {
   const isoStamp = now.toISOString();
   const manifest = buildRecordManifest(work, workTopicId(), isoStamp);
 
+  // The topic in the one form the parser can read without guessing at prose.
+  // It lives in the heading rather than the footer on purpose: the footer is
+  // what students delete, and a submission that keeps its heading keeps its
+  // identity. Above the first module label, so no parse path reads it as an
+  // answer.
+  const topicCode = workTopicId();
+  const codeLine = topicCode ? 'Topic code: ' + topicCode : '';
+
   const html = ['<div>',
     '<p><strong>' + escapeWorkHtml(head.line1) + '</strong>',
     head.line2 ? '<br><strong>' + escapeWorkHtml(head.line2) + '</strong>' : '',
     '</p>',
+    codeLine ? '<p>' + escapeWorkHtml(codeLine) + '</p>' : '',
     '<p><em>Student work, copied ' + escapeWorkHtml(stamp) + '</em></p>',
     '<hr>'
   ].join('');
@@ -1517,7 +1548,7 @@ function buildWorkDocument() {
       + paragraphsHtml(w.text);
   }).join('<hr>');
 
-  const plain = [head.line1.toUpperCase(), head.line2, 'Student work, copied ' + stamp, '']
+  const plain = [head.line1.toUpperCase(), head.line2, codeLine, 'Student work, copied ' + stamp, '']
     .filter(Boolean)
     .concat(work.map(w => {
       const prompt = plainPrompt(w.prompt);
@@ -1526,7 +1557,7 @@ function buildWorkDocument() {
               'My response:',
               w.text, ''].filter(Boolean).join('\n');
     }))
-    .concat(manifest)
+    .concat(recordManifestPlain(manifest))
     .join('\n');
 
   return {

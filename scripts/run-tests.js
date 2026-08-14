@@ -37,6 +37,7 @@ const SUITES = {
   offline: [
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
     ['scripts/test/canvas-paragraphs.test.js', 'Canvas blank-line round trip'],
+    ['scripts/test/canvas-topic-recovery.test.js', 'footer-less submissions still land on a topic'],
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
     ['scripts/test/foundations-golden.js', 'Foundations content vs the hand-authored originals'],

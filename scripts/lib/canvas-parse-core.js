@@ -332,7 +332,9 @@ function parseSubmission(text, source) {
   }
 
   return {
-    topicId: header.topic || '',
+    // Normalized so a manifest and a footer-less recovery of the same lesson
+    // land on one topic id rather than two that differ only in case.
+    topicId: normalizeTopicId(header.topic || ''),
     copiedAt: header.copied || '',
     declaredItems: declared,
     expectedItems: expected,
@@ -343,11 +345,55 @@ function parseSubmission(text, source) {
   };
 }
 
-// Submissions gathered before the footer shipped. Parsed on the old grammar so
-// existing work is not stranded, and always flagged: without a manifest there is
-// no denominator, so "complete" is not a claim this can make.
+// Foundations topics are keyed f0..f5 everywhere that counts: skills-map.js, the
+// draft store, and the manifest the renderers write. A heading that says
+// "Foundations 1" has to arrive at the same place.
+function normalizeTopicId(raw) {
+  const s = String(raw == null ? '' : raw).trim();
+  const f = s.match(/^f(?:oundations)?\s*(\d+)$/i);
+  return f ? 'f' + f[1] : s;
+}
+
+// Recovering the topic when the record footer is gone.
+//
+// This is not a nicety. A response the parser cannot attribute to a topic drops
+// out of every topic-filtered panel in the Lens, so a student who deleted the
+// footer disappears from the class entirely while their writing sits in
+// responses.csv with an empty topic_id. On 2026-08-13 that was 16 of 115
+// students on f1, and all but 6 of 130 on f0.
+//
+// Two sources, most reliable first:
+//
+//   1. "Topic code: f1", which both renderers now print in the heading block.
+//      It is above the first module label, so neither parse path can mistake it
+//      for a response.
+//   2. The prose heading, in the two shapes the renderers actually write:
+//      "AP World History, Topic 1.1" from the unit renderer, and
+//      "AP World History, FOUNDATIONS 1" from the Foundations one. The old
+//      pattern here accepted "F1" and "1.1" only, so every Foundations
+//      submission that lost its footer also lost its topic. That is the bug
+//      this function exists to close.
+function recoverTopicId(text) {
+  const coded = text.match(/topic\s*code\s*:\s*([0-9]+\.[0-9]+|f\s*\d+)/i);
+  if (coded) return normalizeTopicId(coded[1]);
+
+  const head = text.match(
+    /AP WORLD HISTORY,?\s*(?:TOPIC\s+)?(?:FOUNDATIONS\s*(\d+)|([0-9]+\.[0-9]+)|F\s*(\d+))/i);
+  if (!head) return '';
+  if (head[1] !== undefined) return 'f' + head[1];
+  if (head[2] !== undefined) return head[2];
+  if (head[3] !== undefined) return 'f' + head[3];
+  return '';
+}
+
+// Submissions gathered before the footer shipped, or submissions whose footer
+// the student deleted. Parsed on the old grammar so existing work is not
+// stranded, and always flagged: without a manifest there is no denominator, so
+// "complete" is not a claim this can make. The topic, however, is recoverable,
+// and recovering it is the difference between work the teacher can see and work
+// that silently leaves the class.
 function parseWithoutManifest(text, source) {
-  const head = text.match(/AP WORLD HISTORY,?\s*(?:TOPIC\s+)?([0-9]+\.[0-9]+|F\d+)/i);
+  const topicId = recoverTopicId(text);
   const responses = [];
   const re = /^(module\s+\d+[^\n]*)$/gim;
   const hits = [];
@@ -376,7 +422,7 @@ function parseWithoutManifest(text, source) {
   });
 
   return {
-    topicId: head ? head[1] : '',
+    topicId: topicId,
     copiedAt: '',
     declaredItems: 0,
     expectedItems: 0,
@@ -567,6 +613,7 @@ return {
   baseName, parseSubmissionFilename, squashName,
   isSubmissionFile, looksLikeSubmission, acceptsAsSubmission,
   findLabelIndex, extractResponse, extractPrompt,
+  normalizeTopicId, recoverTopicId,
   parseSubmission, parseWithoutManifest,
   buildTable, csvCell, toCsv
 };

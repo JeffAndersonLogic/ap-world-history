@@ -258,5 +258,6 @@ if (require.main === module) main();
 module.exports = {
   bhHash, normalizeForHash, htmlToText, submissionText, parseSubmission,
   parseSubmissionFilename, squashName, buildTable, toCsv,
+  normalizeTopicId: CORE.normalizeTopicId, recoverTopicId: CORE.recoverTopicId,
   ROW_HEADERS, EXCEPTION_HEADERS, loadRoster
 };
