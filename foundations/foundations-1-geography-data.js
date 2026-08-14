@@ -62,6 +62,12 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Choose one geographic feature from the map and explain how it helped decide whether the people living there became farmers, herders, or foragers.'
   },
 
+  deepReading: {
+    title: 'The Bargain',
+    desc: 'A textbook-depth companion that builds the causal chain one link at a time, from the end of the Ice Age to the first cities, with what domestication physically is, what a river actually supplies, and what the switch to farming cost the people who made it. Optional, and useful when a question asks you to explain how one link caused the next rather than to list them.',
+    url: 'deep-reading-foundations-1-geography.html'
+  },
+
   first10: {
     title: 'First & 10: The First Harvest',
     embedUrl: 'first-and-10-foundations-1-geography-capture.html?v=response-id-fix-v1',
