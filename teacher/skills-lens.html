@@ -202,6 +202,32 @@ main{max-width:1240px;margin:0 auto;padding:0 20px 80px}
 .f-btn:hover{border-color:var(--antique-gold);color:var(--antique-gold)}
 .f-btn:focus-visible{outline:2px solid var(--antique-gold);outline-offset:2px}
 .f-more{font-family:var(--ui);font-size:12px;color:var(--text-muted);margin:2px 0 0}
+/* The keyboard reader. One response filling the panel, so the eye has nowhere
+   else to go and the hand never leaves the home row. */
+.rd-bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:10px}
+.rd-pos{font-family:var(--ui);font-size:12px;font-weight:700;color:var(--text-muted);font-variant-numeric:tabular-nums}
+.rd-prog{height:3px;background:var(--gunmetal-gray);border-radius:2px;margin-top:12px;overflow:hidden}
+.rd-prog span{display:block;height:100%;background:var(--antique-gold);transition:width .12s linear}
+.rd-prompt{font-family:var(--ui);font-size:13px;color:var(--text-secondary);line-height:1.55;
+  background:var(--surface-inset);border-left:3px solid var(--antique-gold);border-radius:0 6px 6px 0;padding:11px 14px;margin-top:14px}
+.rd-card{background:var(--warm-paper);color:var(--ink);border-radius:8px;padding:20px 22px;margin-top:12px;min-height:190px}
+.rd-meta{display:flex;flex-wrap:wrap;gap:16px;font-family:var(--ui);font-size:11.5px;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;color:#5A5F5C;border-bottom:1px solid rgba(21,23,24,.14);padding-bottom:9px}
+.rd-text{font-size:16.5px;line-height:1.62;margin-top:13px}
+.rd-text p{margin:0 0 10px;max-width:70ch}
+.rd-text p:last-child{margin-bottom:0}
+.rd-card .termrow{margin-top:14px}
+.rd-tags{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:12px}
+.rd-tag{text-align:left;background:var(--surface-inset);border:1px solid var(--gunmetal-gray);border-radius:8px;
+  padding:10px 12px;cursor:pointer;font-family:var(--ui);color:var(--text-primary)}
+.rd-tag:hover{border-color:var(--antique-gold)}
+.rd-tag.on{border-color:var(--antique-gold);background:rgba(201,164,106,.14)}
+.rd-tag:focus-visible{outline:2px solid var(--antique-gold);outline-offset:2px}
+.rd-tl{display:block;font-size:13.5px;font-weight:800;margin-top:5px}
+.rd-th{display:block;font-size:11.5px;color:var(--text-muted);margin-top:2px}
+.rd-keys{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px;font-family:var(--ui);font-size:11.5px;color:var(--text-muted)}
+kbd{font-family:var(--mono,ui-monospace,monospace);font-size:11px;background:var(--surface-inset);
+  border:1px solid var(--gunmetal-gray);border-bottom-width:2px;border-radius:4px;padding:1px 5px;color:var(--text-primary)}
 .hero-figure{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-top:14px}
 .hero-figure .value{font-family:var(--ui);font-size:clamp(38px,7vw,60px);font-weight:800;line-height:1;color:var(--text-primary)}
 .hero-figure .of{font-family:var(--ui);font-size:20px;font-weight:600;color:var(--text-muted)}
@@ -14512,7 +14538,16 @@ const S = {
   slotsPresent: [],
   periodsPresent: [],
   filters: { period: '', topic: '', slot: '', q: '', thresh: 40 },
-  active: 'coverage'
+  active: 'coverage',
+
+  /* Reading state. Both of these are deliberately in memory and nowhere else.
+     Tags are a teacher's private read of a student's writing, made fast and
+     without much deliberation, and the whole reason they can be made that fast
+     is that they evaporate when the tab closes. The moment they persist they
+     become a record, and a record gets treated as a judgement. */
+  tags: new Map(),         // `${studentKey}|${topic}|${slot}` -> 'exemplar'|'reteach'|'conference'|'unclear'
+  reader: null,            // {topic, slot, i} while the keyboard reader is open
+  readerNames: false
 };
 
 const $ = (id) => document.getElementById(id);
@@ -16331,12 +16366,94 @@ function renderConfidence() {
 /* ==========================================================================
    PANEL 07, READ MODE
    ========================================================================== */
+/* ── The tags ───────────────────────────────────────────────────────────────
+   Four, and four is the number on purpose. Three leaves nowhere to put a
+   response you cannot read, so it goes in the nearest bin and quietly poisons
+   whatever that bin feeds. Five means choosing, and the entire value of this
+   pass is that it happens at reading speed. */
+const TAGS = [
+  { key: '1', id: 'exemplar',   label: 'Exemplar',   hint: 'read this one out tomorrow' },
+  { key: '2', id: 'reteach',    label: 'Reteach',    hint: 'the whole class needs this' },
+  { key: '3', id: 'conference', label: 'Conference', hint: 'this student, one to one' },
+  { key: '4', id: 'unclear',    label: 'Unclear',    hint: 'come back to it' }
+];
+const TAG_BY_ID = {};
+TAGS.forEach(t => { TAG_BY_ID[t.id] = t; });
+const rowKey = (r) => r.studentKey + '|' + r.topic + '|' + r.slot;
+
+function readerRows(sc, topic, slot) {
+  return sc.rows.filter(r => r.topic === topic && r.slot === slot && !r.blank);
+}
+
+/* The reader. One response, filling the panel, with the prompt pinned above it.
+   Everything here is built around not needing the mouse: a teacher reading a
+   hundred and fifteen answers with a trackpad will stop at thirty. */
+function renderReader(sc) {
+  const el = $('panel-read');
+  const R = S.reader;
+  const rows = readerRows(sc, R.topic, R.slot);
+  if (!rows.length) { S.reader = null; renderReadMode(); return; }
+  if (R.i >= rows.length) R.i = rows.length - 1;
+  if (R.i < 0) R.i = 0;
+
+  const r = rows[R.i];
+  const m = slotMeta(R.topic, R.slot);
+  const st = S.students.get(r.studentKey);
+  const tag = S.tags.get(rowKey(r)) || null;
+  const terms = (m && m.terms && m.terms.length) ? termsIn(r.norm, m.terms) : null;
+  const tagged = rows.filter(x => S.tags.has(rowKey(x))).length;
+
+  const out = [];
+  out.push('<p class="section-label">Panel 07</p>');
+  out.push('<div class="rd-bar">' +
+    '<button class="btn secondary small" type="button" id="rd-exit">Back to the prompt list</button>' +
+    '<span class="rd-pos">' + (R.i + 1) + ' of ' + rows.length + '</span>' +
+    '<span class="rd-pos">' + tagged + ' tagged</span>' +
+    '<button class="btn quiet small" type="button" id="rd-names">' +
+      (S.readerNames ? 'Hide names' : 'Show names') + '</button></div>');
+  out.push('<div class="rd-prog"><span style="width:' + Math.round(((R.i + 1) / rows.length) * 100) + '%"></span></div>');
+
+  out.push('<div class="rd-prompt"><strong>' + esc(m ? m.module : R.slot) + '.</strong> ' +
+    esc(clip(m && m.prompt ? m.prompt : (r.prompt || ''), 320)) + '</div>');
+
+  out.push('<div class="rd-card">' +
+    '<div class="rd-meta">' +
+      '<span>' + esc(S.readerNames && st ? st.display : (st ? st.code : r.studentKey)) + '</span>' +
+      '<span>' + r.words + ' words</span>' +
+      '<span>' + (r.confidence != null ? 'rated ' + r.confidence + ' of 5' : 'no rating') + '</span>' +
+      (terms ? '<span>' + ofStr(terms.hit.length, m.terms.length) + ' terms</span>' : '') +
+    '</div>' +
+    '<div class="rd-text">' + esc(r.response || '').replace(/\n+/g, '</p><p>').replace(/^/, '<p>') + '</p></div>' +
+    (terms && m.terms.length
+      ? '<div class="termrow">' + m.terms.map(t =>
+          '<span class="term' + (terms.hit.indexOf(t) !== -1 ? ' hit' : '') + '">' + esc(t) + '</span>').join('') + '</div>'
+      : '') +
+  '</div>');
+
+  out.push('<div class="rd-tags">' + TAGS.map(t =>
+    '<button class="rd-tag' + (tag === t.id ? ' on' : '') + '" type="button" data-tag="' + t.id + '">' +
+      '<kbd>' + t.key + '</kbd><span class="rd-tl">' + esc(t.label) + '</span>' +
+      '<span class="rd-th">' + esc(t.hint) + '</span></button>').join('') + '</div>');
+
+  out.push('<div class="rd-keys">' +
+    '<span><kbd>J</kbd> / <kbd>K</kbd> move</span>' +
+    '<span><kbd>1</kbd>&ndash;<kbd>4</kbd> tag, then move on</span>' +
+    '<span><kbd>0</kbd> clear</span>' +
+    '<span><kbd>N</kbd> names</span>' +
+    '<span><kbd>Esc</kbd> back</span></div>');
+  out.push('<p class="lede">Tags live in this tab only and are gone when it closes. That is deliberate: a fast read stays fast because it is not being filed anywhere. Panel 08 turns them into an opener, an exemplar set and a small-group roster before you leave.</p>');
+
+  el.innerHTML = out.join('');
+}
+
 function renderReadMode() {
   const sc = scope();
+  if (S.reader) { renderReader(sc); return; }
   const el = $('panel-read');
   const out = [];
   out.push('<p class="section-label">Panel 07</p><h2>Read mode</h2>');
   out.push('<p class="lede">Pick a prompt and read every answer to it in a row. This is the norming view: it is faster to calibrate a bar by reading thirty answers to one question than by reading one student\'s nine.</p>');
+  out.push('<p class="lede"><b>Read</b> opens one answer at a time and is driven from the keyboard: <kbd>J</kbd> and <kbd>K</kbd> to move, <kbd>1</kbd> to <kbd>4</kbd> to tag and advance in one keystroke. <b>Read all</b> is the old scrolling list, which is still the better view when you want to scan rather than judge.</p>');
 
   const prompts = [];
   sc.knownTopics.forEach(t => {
@@ -16349,14 +16466,21 @@ function renderReadMode() {
   if (!prompts.length) { el.innerHTML = out.join('') + '<p class="empty-state">No prompts in this scope.</p>'; return; }
 
   out.push('<div class="table-scroll"><table class="data"><caption>One row per prompt in scope.</caption>' +
-    '<thead><tr><th>Module</th><th class="wide">Prompt</th><th class="num">Present</th><th class="num">Blank</th><th></th></tr></thead><tbody>' +
-    prompts.map(p =>
-      '<tr><th scope="row" style="font-weight:600">' + esc(p.topic + '  ' + (p.meta ? p.meta.module : p.slot)) + '</th>' +
+    '<thead><tr><th>Module</th><th class="wide">Prompt</th><th class="num">Present</th><th class="num">Blank</th><th class="num">Tagged</th><th></th></tr></thead><tbody>' +
+    prompts.map(p => {
+      const readable = p.rows.filter(r => !r.blank).length;
+      const tagged = p.rows.filter(r => S.tags.has(rowKey(r))).length;
+      return '<tr><th scope="row" style="font-weight:600">' + esc(p.topic + '  ' + (p.meta ? p.meta.module : p.slot)) + '</th>' +
       '<td class="wide">' + esc(clip(p.meta ? p.meta.prompt : (p.rows[0] ? p.rows[0].prompt : ''), 190)) + '</td>' +
       '<td class="num">' + ofStr(p.rows.length, sc.students.length) + '</td>' +
       '<td class="num">' + p.rows.filter(r => r.blank).length + '</td>' +
-      '<td><button class="btn secondary small" type="button" data-norm="' + esc(p.topic) + '|' + esc(p.slot) + '">Read all ' + p.rows.length + '</button></td></tr>'
-    ).join('') + '</tbody></table></div>');
+      '<td class="num">' + (tagged || '') + '</td>' +
+      '<td style="white-space:nowrap">' +
+        (readable
+          ? '<button class="btn small" type="button" data-read="' + esc(p.topic) + '|' + esc(p.slot) + '">Read ' + readable + '</button> '
+          : '') +
+        '<button class="btn secondary small" type="button" data-norm="' + esc(p.topic) + '|' + esc(p.slot) + '">Read all</button></td></tr>';
+    }).join('') + '</tbody></table></div>');
   el.innerHTML = out.join('');
 }
 
@@ -16378,6 +16502,17 @@ function renderExport() {
     '<button class="btn" type="button" id="x-build">Build the bundle</button>' +
     '<button class="btn secondary" type="button" id="x-copy">Copy to clipboard</button>' +
     '<button class="btn quiet" type="button" id="x-show-crosswalk">Show the code crosswalk on screen</button></div>');
+
+  /* The four things you can leave the room holding. Separated from the bundle
+     above because that one is raw material and these are finished: the bundle
+     answers "give an AI everything", these answer "give me the thing I need in
+     eleven minutes". */
+  out.push('<h3>Walk out with something</h3>');
+  out.push('<p class="lede">Each of these builds into the same box and goes through the same name scan. The clustering paste is the only one meant for an AI: this tab still makes no network call, so you carry it across yourself.</p>');
+  out.push('<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">' +
+    '<button class="btn secondary" type="button" data-art="cluster">Clustering paste for an AI</button>' +
+    '<button class="btn secondary" type="button" data-art="opener">Tomorrow\'s opener</button>' +
+    '<button class="btn secondary" type="button" data-art="roster">Conference roster</button></div>');
   out.push('<p class="lede" id="x-status"></p>');
   out.push('<textarea class="export" id="x-out" readonly aria-label="Pseudonymous export bundle" placeholder="Press Build the bundle."></textarea>');
   out.push(note('', 'The crosswalk from a code to a name lives in this tab and nowhere else, and the codes are salted with a fresh random value on every page load. Two bundles built on different days therefore cannot be lined up by code even by you, which is the point. Print or screenshot the crosswalk if you need it after this tab closes.'));
@@ -16481,18 +16616,158 @@ function buildBundle() {
 
   const text = L.join('\n');
 
-  /* Leak canary. Names are the one thing that must not be in here, so the check
-     is a refusal rather than a warning. A display name that is one character
-     long or is also a common word would false-positive; nothing shorter than
-     three characters is checked, and the refusal names the offender so the
-     cause is findable. */
-  const hay = text.toLowerCase();
+  return { text, leaks: leakScan(text) };
+}
+
+/* Leak canary. Names are the one thing that must not be in any of these, so the
+   check is a refusal rather than a warning. A display name one character long or
+   one that is also a common word would false-positive; nothing shorter than
+   three characters is checked, and the refusal names the offender so the cause
+   is findable.
+
+   Every artifact below routes through this. It is a free function rather than a
+   step inside one builder precisely so a new builder cannot be written that
+   quietly skips it. */
+function leakScan(text) {
+  const hay = String(text).toLowerCase();
   const leaks = [];
   S.students.forEach(s => {
     const nm = String(s.display || '').trim().toLowerCase();
     if (nm.length >= 3 && hay.indexOf(nm) !== -1) leaks.push(s.display);
   });
-  return { text, leaks };
+  return leaks;
+}
+
+/* ── The artifacts ──────────────────────────────────────────────────────────
+   Four things a teacher can walk out of the room holding. The tool spent its
+   whole life ending at a number; each of these ends at something you do.
+
+   The clustering paste is the one that needs an LLM, and it is built the way
+   the Socrates paste is built: everything the model needs is IN the message,
+   because retrieval cannot miss a fact that was handed to it. The Lens still
+   makes no network call. The teacher carries it across. */
+function codeOf(key) { const s = S.students.get(key); return s ? s.code : key; }
+
+function taggedRows(sc, id) {
+  return sc.rows.filter(r => S.tags.get(rowKey(r)) === id);
+}
+
+function buildClusterPaste() {
+  const sc = scope();
+  const R = S.reader;
+  // The prompt in front of you if the reader is open, otherwise the one with
+  // the most responses, which is the one worth clustering.
+  let topic, slot;
+  if (R) { topic = R.topic; slot = R.slot; }
+  else {
+    let best = null;
+    sc.knownTopics.forEach(t => (sc.expectedSlotsByTopic.get(t) || []).forEach(sl => {
+      const n = readerRows(sc, t, sl).length;
+      if (!best || n > best.n) best = { t, sl, n };
+    }));
+    if (!best || !best.n) return { text: '', leaks: [], empty: true };
+    topic = best.t; slot = best.sl;
+  }
+  const m = slotMeta(topic, slot);
+  const rows = readerRows(sc, topic, slot);
+  const L = [];
+  L.push('You are helping a high school AP World History teacher plan tomorrow.');
+  L.push('');
+  L.push('THE ASSIGNMENT THEY GAVE');
+  L.push('Topic ' + topic + ', ' + (m ? m.module : slot) + '.');
+  if (m && m.prompt) L.push('Prompt: ' + m.prompt);
+  if (m && m.skill) L.push('AP skill being practised: ' + m.skill);
+  if (m && m.terms && m.terms.length) {
+    L.push('Evidence terms the teacher expected: ' + m.terms.join(', ') +
+      (m.termScope === 'topic' ? '  (this is the topic vocabulary; this course stores Foundations terms per topic, not per prompt)' : ''));
+  }
+  L.push('');
+  L.push('THE RESPONSES, ' + rows.length + ' of them, students identified by code only');
+  rows.forEach(r => L.push('[' + codeOf(r.studentKey) + '] ' + String(r.response || '').replace(/\s+/g, ' ').trim()));
+  L.push('');
+  L.push('WHAT TO DO');
+  L.push('1. Group these into at most six clusters by what the student actually understands, not by quality or length. Name each cluster in plain language a teacher would say out loud.');
+  L.push('2. For each cluster give the count, the student codes in it, and one sentence on what that group is missing.');
+  L.push('3. Name the single most common misconception, and quote the codes that show it.');
+  L.push('4. Write a five-minute opener for tomorrow that addresses the largest cluster. It must be something the teacher says and asks, not an activity that needs materials.');
+  L.push('5. List any response you could not place, by code, and say why.');
+  L.push('');
+  L.push('Do not grade, rank, or score anything. Do not guess at student names; you have codes and that is deliberate.');
+  const text = L.join('\n');
+  return { text, leaks: leakScan(text) };
+}
+
+function buildOpener() {
+  const sc = scope();
+  const f = buildFindings(sc);
+  const ex = taggedRows(sc, 'exemplar');
+  const rt = taggedRows(sc, 'reteach');
+  const L = [];
+  L.push('TOMORROW, FIRST FIVE MINUTES');
+  L.push('Built from ' + sc.students.length + ' students across ' + sc.topics.join(', ') + '.');
+  L.push('');
+  if (!f.length) L.push('Nothing in this drop rose to a finding, so there is nothing here the data insists on.');
+  f.slice(0, 3).forEach((x, i) => {
+    L.push((i + 1) + '. ' + x.title);
+    L.push('   ' + x.body);
+    L.push('');
+  });
+  if (ex.length) {
+    L.push('READ THESE OUT (' + ex.length + ' tagged as exemplars)');
+    ex.forEach(r => {
+      const m = slotMeta(r.topic, r.slot);
+      L.push('  [' + codeOf(r.studentKey) + '] ' + (m ? m.module : r.slot) + ': ' +
+        String(r.response || '').replace(/\s+/g, ' ').trim());
+    });
+    L.push('');
+  }
+  if (rt.length) {
+    L.push('RETEACH, flagged while reading (' + rt.length + ')');
+    rt.forEach(r => {
+      const m = slotMeta(r.topic, r.slot);
+      L.push('  [' + codeOf(r.studentKey) + '] ' + (m ? m.module : r.slot) + ': ' +
+        clip(String(r.response || '').replace(/\s+/g, ' ').trim(), 220));
+    });
+    L.push('');
+  }
+  if (!ex.length && !rt.length) {
+    L.push('No responses are tagged yet. Panel 07 reads them one at a time from the keyboard; tagging four or five turns this into a script rather than a summary.');
+  }
+  const text = L.join('\n');
+  return { text, leaks: leakScan(text) };
+}
+
+function buildRoster() {
+  const sc = scope();
+  const conf = taggedRows(sc, 'conference');
+  const byStudent = new Map();
+  conf.forEach(r => {
+    if (!byStudent.has(r.studentKey)) byStudent.set(r.studentKey, []);
+    byStudent.get(r.studentKey).push(r);
+  });
+  const L = [];
+  L.push('SMALL GROUP / CONFERENCE ROSTER');
+  L.push('Codes, not names. The crosswalk is in this tab and nowhere else, so print it alongside this or the roster is unusable tomorrow.');
+  L.push('');
+  if (!byStudent.size) {
+    L.push('Nobody is tagged for a conference yet. Tag with 3 while reading in Panel 07.');
+  } else {
+    L.push(byStudent.size + ' students, ' + conf.length + ' flagged responses.');
+    L.push('');
+    byStudent.forEach((rows, key) => {
+      const st = S.students.get(key);
+      L.push('[' + codeOf(key) + ']' + (st && st.period ? '  period ' + st.period : '') + '  ' + rows.length + ' flagged');
+      rows.forEach(r => {
+        const m = slotMeta(r.topic, r.slot);
+        L.push('    ' + r.topic + ' ' + (m ? m.module : r.slot) + ', ' + r.words + ' words' +
+          (r.confidence != null ? ', self-rated ' + r.confidence + ' of 5' : '') +
+          ': ' + clip(String(r.response || '').replace(/\s+/g, ' ').trim(), 160));
+      });
+      L.push('');
+    });
+  }
+  const text = L.join('\n');
+  return { text, leaks: leakScan(text) };
 }
 
 /* ==========================================================================
@@ -16621,6 +16896,45 @@ function openNorming(topic, slot, launcher, highlightTerm, replace) {
     body, '<span></span>', launcher);
 }
 
+/* Tagging advances. That is the whole ergonomic bet: one keystroke per response
+   means a hundred and fifteen responses is a hundred and fifteen keystrokes,
+   and a teacher will actually finish. Re-pressing the tag a response already
+   has clears it instead, so a misfire costs one key and not a hunt back. */
+function applyTag(id) {
+  const R = S.reader;
+  if (!R) return;
+  const rows = readerRows(scope(), R.topic, R.slot);
+  const r = rows[R.i];
+  if (!r) return;
+  const k = rowKey(r);
+  if (id === null || S.tags.get(k) === id) S.tags.delete(k); else S.tags.set(k, id);
+  if (id !== null && S.tags.has(k) && R.i < rows.length - 1) R.i++;
+  renderReadMode();
+}
+
+/* The reader's keys. Guarded three ways: only while the reader is open, only
+   while the Read panel is the visible one, and never while the caret is in a
+   field. The tab strip already owns the arrow keys, so this takes J and K and
+   leaves the strip alone. */
+document.addEventListener('keydown', (e) => {
+  if (!S.reader || S.active !== 'read') return;
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const el = document.activeElement;
+  if (el && (/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName) || el.isContentEditable)) return;
+  if (document.querySelector('.dialog[open], dialog[open]')) return;
+
+  const R = S.reader;
+  const n = readerRows(scope(), R.topic, R.slot).length;
+  const k = e.key;
+  if (k === 'j' || k === 'J' || k === 'ArrowDown') { e.preventDefault(); if (R.i < n - 1) { R.i++; renderReadMode(); } return; }
+  if (k === 'k' || k === 'K' || k === 'ArrowUp')   { e.preventDefault(); if (R.i > 0) { R.i--; renderReadMode(); } return; }
+  if (k === 'Escape') { e.preventDefault(); S.reader = null; renderReadMode(); return; }
+  if (k === 'n' || k === 'N') { e.preventDefault(); S.readerNames = !S.readerNames; renderReadMode(); return; }
+  if (k === '0') { e.preventDefault(); applyTag(null); return; }
+  const hit = TAGS.filter(t => t.key === k)[0];
+  if (hit) { e.preventDefault(); applyTag(hit.id); }
+});
+
 /* ==========================================================================
    10. EVENTS
    One delegated listener, because the grid rebuilds 1350 cells on every filter
@@ -16643,6 +16957,17 @@ document.addEventListener('click', (e) => {
   if (gotoBtn) { selectTab(gotoBtn.getAttribute('data-goto'), true); return; }
   const openBtn = t.closest('[data-open]');
   if (openBtn) { const [k, topic, slot] = openBtn.getAttribute('data-open').split('|'); openResponse(k, topic, slot, openBtn); return; }
+  const readBtn = t.closest('[data-read]');
+  if (readBtn) {
+    const [topic, slot] = readBtn.getAttribute('data-read').split('|');
+    S.reader = { topic, slot, i: 0 };
+    renderReadMode();
+    return;
+  }
+  if (t.closest('#rd-exit')) { S.reader = null; renderReadMode(); return; }
+  if (t.closest('#rd-names')) { S.readerNames = !S.readerNames; renderReadMode(); return; }
+  const tagBtn = t.closest('[data-tag]');
+  if (tagBtn && S.reader) { applyTag(tagBtn.getAttribute('data-tag')); return; }
   const normBtn = t.closest('[data-norm]');
   if (normBtn) { const [topic, slot] = normBtn.getAttribute('data-norm').split('|'); openNorming(topic, slot, normBtn); return; }
   const termBtn = t.closest('[data-term]');
@@ -16678,8 +17003,48 @@ document.addEventListener('click', (e) => {
   }
   if (t.id === 'x-build') { doBuild(); return; }
   if (t.id === 'x-copy') { doCopy(); return; }
+  const art = t.closest('[data-art]');
+  if (art) { doArtifact(art.getAttribute('data-art')); return; }
   if (t.id === 'x-show-crosswalk') { showCrosswalk(t); return; }
 });
+
+const ARTIFACTS = {
+  cluster: { fn: buildClusterPaste, name: 'Clustering paste' },
+  opener:  { fn: buildOpener,       name: "Tomorrow's opener" },
+  roster:  { fn: buildRoster,       name: 'Conference roster' }
+};
+
+/* One emit path, so every artifact is scanned. A builder that wrote straight to
+   the box would be one refactor away from shipping a name into someone's
+   chatbot history. */
+function doArtifact(id) {
+  const spec = ARTIFACTS[id];
+  if (!spec) return;
+  /* Panels render lazily, so the output box does not exist until Panel 08 has
+     been opened once. Build it rather than throwing: this is the function a
+     future "build me the opener" control on a finding would call, and a null
+     dereference there would be a dead button with an error in the console
+     nobody has open. */
+  if (!$('x-out')) { selectTab('export', false); }
+  const out = $('x-out'), status = $('x-status');
+  if (!out || !status) return;
+  const res = spec.fn();
+  if (res.empty) {
+    out.value = '';
+    status.textContent = 'Nothing in scope to build that from yet.';
+    return;
+  }
+  if (res.leaks.length) {
+    out.value = '';
+    status.innerHTML = '<strong style="color:#f0b3b3">Refused.</strong> ' + res.leaks.length +
+      ' student name(s) appeared in the generated text. Nothing has been placed in the box. ' +
+      'This is a bug in the Lens, not in your data: report it rather than working around it.';
+    return;
+  }
+  out.value = res.text;
+  status.textContent = spec.name + ' built. ' + res.text.length.toLocaleString() +
+    ' characters, scanned against all ' + S.students.size + ' known display names and none appear. Copy to clipboard is above.';
+}
 
 function doBuild() {
   const { text, leaks } = buildBundle();

@@ -107,6 +107,8 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/parse-canvas-submissions.js <dir>`, turn an unzipped Canvas "Download Submissions" folder into `responses.csv` (one row per student per module response) and `exceptions.csv`. Reads and writes local files only, never the network. See `docs/CANVAS-CAPTURE.md`. The teacher's normal route is now dropping the zip straight on the Skills Lens; this is for a folder or a script.
 - `node scripts/build-skills-lens.js`, inline `scripts/lib/canvas-parse-core.js` and `scripts/lib/canvas-zip.js` into `teacher/skills-lens.html`. Run it after editing either lib. `--check` fails without writing, which is what `validate.js` runs. Never hand-edit between the `BEGIN INLINED LIBS` sentinels.
 - `node scripts/test/canvas-zip.test.js`, offline check of the browser zip reader against archives written by real tools, plus the parity assertion that a dropped zip and the CLI emit byte-identical `responses.csv`.
+- `node scripts/test/skills-lens-findings.test.js`, the three ranked findings and the Foundations evidence-term fallback. In the browser suite. Asserts the ranking is deterministic across five renders, that no finding id is pushed twice, that the severity bands never cross, and that a finding never prints a denominator it does not have.
+- `node scripts/test/skills-lens-reader.test.js`, the keyboard reader in Panel 07 and the three artifacts in Panel 08. In the browser suite. The load-bearing assertions are that the reader keys stay dead while the caret is in a field, and that a student display name planted in the source refuses the whole artifact rather than trimming it.
 - `node scripts/test/skills-lens-zip.test.js`, drop a real Canvas zip on the real Lens in Chromium and assert the panels populate, the CSP still blocks the network, and the saved CSV matches the CLI byte for byte.
 
 The student entry point is `index.html`. The project inventory is `docs/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file. The Google Form and the old Teacher Hub are both retired; see `docs/FORM-CONTRACT.md` and `docs/TEACHER-HUB.md`. Student work reaches the teacher through Canvas only, and the Skills Lens is the analysis surface.
@@ -335,6 +337,39 @@ one of the 77 topics can produce a complete context block.
 > makes no network call and holds the name-to-code crosswalk in memory only. Its
 > denominators come from `assets/data/skills-map.js`, never from what a student
 > managed to submit, because a bare n is the bug this pipeline exists to prevent.
+>
+> **The Lens concludes, and every conclusion opens.** Three ranked findings sit
+> above Panel 01, ordered by a severity band plus share of class, bands never
+> crossing: `.80` the data cannot be trusted yet, `.60` the class missed
+> something, `.40` named students need you, `.20` the measurement is incomplete.
+> Ties break on a fixed order so the same drop always yields the same three in
+> the same sequence. `docs/SKILLS-LENS-SPEC.md` is the brief.
+>
+> **Judge a finding per student, not per response, whenever it names people.**
+> Confident-and-thin judged per response returned 73 of 115 students on the real
+> f1 drop, because one checkpoint answer missing all thirteen terms is ordinary.
+> Sixty-three percent of a class is a statistic, not a roster, and a finding you
+> cannot act on teaches the teacher to skim the box. Per student across the
+> lesson it returns 4.
+>
+> **Foundations evidence terms live on the topic, not the slot,** and
+> `build-skills-map.js` is right to keep it that way: a Foundations checkpoint
+> carries a checklist of expectation sentences, not evidence words. `slotMeta()`
+> lets a checkpoint borrow the topic list, records `termScope:'topic'`, and
+> returns a copy so the shipped map is never mutated. Checkpoints only. Both
+> panels say which list they used. Without this the Evidence Term panel, the term
+> column in Panel 03 and the confident-and-thin table were all dark on every
+> Foundations topic while printing "no terms authored".
+>
+> **Tags in the keyboard reader are memory-only, and that is the design.** A
+> teacher tags at reading speed precisely because nothing is being filed. The
+> moment they persist they become a record, and a record gets treated as a
+> judgement.
+>
+> **Every artifact routes through `leakScan()`.** It is a free function rather
+> than a step inside one builder so a new builder cannot be written that quietly
+> skips it. A name in the source refuses the whole artifact; a partial redaction
+> is the kind of thing nobody checks twice.
 >
 > **The parser inside it is not a copy, it is the same file.**
 > `scripts/lib/canvas-parse-core.js` is required by the CLI and inlined into the

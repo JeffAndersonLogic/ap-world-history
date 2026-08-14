@@ -129,14 +129,32 @@ fallback belongs in the consumer, labelled.
   evidence behind it and a control that reaches the students or responses.
 - Findings are derived, ranked by a stated rule, and reproducible.
 
-### Phase 3: reading gets fast
-- Read Mode becomes keyboard-first: `J`/`K` to move, `1`–`4` to tag, tagging
-  advances. Tags are session state and feed the exports.
+### Phase 3: reading gets fast — shipped 2026-08-14
+Read Mode is keyboard-first. `J`/`K` move, `1` to `4` tag and advance in one
+keystroke, `0` clears, `N` toggles names, `Esc` exits. Re-pressing a tag the
+response already has clears it, so a misfire costs one key rather than a hunt.
 
-### Phase 4: the tool hands you artifacts
-- Clipboard bridge: a clustering paste for an LLM, following the Socrates paste
-  contract pattern already in the repo.
-- Exemplar set, opener, and small-group roster off the tags.
+Four tags, and four is deliberate. Three leaves nowhere to put a response you
+cannot read, so it goes in the nearest bin and poisons whatever that bin feeds.
+Five means choosing, and the value of this pass is that it happens at reading
+speed.
+
+Tags live in memory and nowhere else. That is not a limitation, it is the
+reason the pass can be fast: the moment they persist they become a record, and
+a record gets treated as a judgement.
+
+### Phase 4: the tool hands you artifacts — shipped 2026-08-14
+Three things you can walk out holding, all through one emit path so none can
+skip the name scan:
+
+- **Clustering paste**, built the way the Socrates paste is built: the prompt,
+  the terms, and every response in the message, because retrieval cannot miss a
+  fact it was handed. On the real f1 checkpoint that is 56KB over 99 responses.
+  The Lens still makes no network call. The teacher carries it across.
+- **Tomorrow's opener**, the ranked findings plus every exemplar-tagged
+  response, as a script rather than a summary.
+- **Conference roster**, the conference-tagged students by code, with what they
+  wrote and how they rated it.
 
 ### Phase 5: growth
 - Multi-zip drop in one session, linked in memory, never persisted. Slope per
@@ -149,8 +167,12 @@ Machine checks, in the offline suite:
 - **`skills-lens-findings.test.js`** — the ranking rule is deterministic; the
   same fixture yields the same ordered findings; a finding never cites a
   denominator it does not have.
-- **`skills-lens-terms.test.js`** — the topic fallback fires only where slot
-  terms are absent, only on checkpoint slots, and is labelled in the output.
+- **`skills-lens-findings.test.js`** — also covers the topic fallback: it fires
+  only where slot terms are absent, only on checkpoint slots, never mutates the
+  shipped map, and is labelled in the output.
+- **`skills-lens-reader.test.js`** — the reader keys move, tag, advance, clear,
+  and stay dead while the caret is in a field; every artifact routes through
+  `leakScan()`; a planted name refuses the whole artifact rather than trimming it.
 - **Existing gates hold** — `build-skills-lens.js --check` (no drift between the
   lib and the inlined copy), `canvas-zip.test.js` (CLI and browser emit
   byte-identical CSV), `canvas-topic-recovery.test.js`.
