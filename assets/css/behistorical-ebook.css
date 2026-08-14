@@ -1,0 +1,143 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+ * BeHistorical, the eBook
+ *
+ * Layers on top of behistorical-deep-reading.css, which the eBook page loads
+ * first. Everything a chapter body needs is already defined there; this file
+ * adds only what a *book* needs and a standalone chapter does not: a cover, a
+ * table of contents, and chapter openers that read as chapter openers.
+ *
+ * Loading both rather than duplicating means a change to how a callout or a
+ * terms table looks reaches the eBook and the standalone page together, which
+ * is the same reason the renderer is shared rather than copied.
+ * ──────────────────────────────────────────────────────────────────────────── */
+
+.eb-body{background:var(--paper)}
+
+/* ── cover ──────────────────────────────────────────────────────────────── */
+.eb-cover{
+  background:
+    linear-gradient(165deg,#202324 0%, var(--steel) 46%, #101112 100%);
+  color:var(--clean);
+  border-bottom:4px solid var(--gold);
+  padding:clamp(3rem,9vw,6.5rem) 0 clamp(2.2rem,5vw,3.4rem);
+}
+.eb-cover h1{
+  font-family:var(--font-display); font-weight:700;
+  font-size:clamp(2.3rem,7vw,4.6rem); line-height:1.04;
+  letter-spacing:.02em; margin:.6rem 0 1rem; text-wrap:balance;
+}
+.eb-cover h1 em{font-style:normal;color:var(--gold)}
+.eb-cover-deck{
+  font-size:clamp(.95rem,1.8vw,1.15rem); line-height:1.75;
+  color:#e6ded0; max-width:56ch;
+}
+.eb-cover-deck em{color:var(--clean);font-style:italic}
+.eb-cover-meta{
+  display:flex; flex-wrap:wrap; gap:.5rem 1.6rem; margin-top:1.8rem;
+  padding-top:1.2rem; border-top:1px solid var(--gunmetal);
+  font-family:var(--font-ui); font-size:.68rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--sandstone);
+  font-variant-numeric:tabular-nums;
+}
+
+/* ── contents ───────────────────────────────────────────────────────────── */
+.eb-contents{padding:clamp(2.2rem,5vw,3.6rem) 0 clamp(1rem,2vw,1.5rem)}
+.eb-contents h2{
+  font-family:var(--font-display); font-size:clamp(1.2rem,2.6vw,1.6rem);
+  font-weight:700; letter-spacing:.06em; color:var(--steel);
+  padding-bottom:.6rem; border-bottom:2px solid var(--steel); margin-bottom:1.2rem;
+}
+ol.eb-toc{list-style:none;display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+ol.eb-toc > li{background:var(--clean)}
+a.eb-toc-chapter,
+ol.eb-toc > li.eb-toc-pending{
+  display:grid; grid-template-columns:auto 1fr; gap:0 1.1rem;
+  align-items:baseline; padding:1rem 1.2rem; text-decoration:none;
+}
+a.eb-toc-chapter{color:inherit}
+a.eb-toc-chapter:hover,a.eb-toc-chapter:focus-visible{background:#f7f1e3;outline:none}
+
+/* Section list under each chapter. */
+ul.eb-toc-sections{
+  list-style:none; display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(190px,1fr));
+  gap:1px; background:var(--rule-soft);
+  border-top:1px solid var(--rule-soft);
+}
+ul.eb-toc-sections li{background:#faf6ec}
+ul.eb-toc-sections a{
+  display:flex; align-items:baseline; gap:.5rem; padding:.5rem .8rem;
+  font-family:var(--font-ui); font-size:.72rem; line-height:1.4;
+  color:var(--charcoal); text-decoration:none;
+}
+ul.eb-toc-sections a:hover,ul.eb-toc-sections a:focus-visible{background:#f2ead9;color:var(--steel);outline:none}
+.eb-sec-n{
+  font-variant-numeric:tabular-nums; font-weight:700; font-size:.66rem;
+  color:var(--gold); flex:none;
+}
+.eb-toc-n{
+  font-family:var(--font-display); font-size:1.35rem; font-weight:700;
+  color:var(--gold); font-variant-numeric:tabular-nums; line-height:1;
+}
+.eb-toc-body{display:block}
+.eb-toc-title{
+  display:block; font-family:var(--font-display); font-size:1.02rem;
+  font-weight:700; letter-spacing:.03em; color:var(--steel); line-height:1.25;
+}
+.eb-toc-title em{font-style:normal;color:var(--oxidized)}
+.eb-toc-meta{
+  display:block; margin-top:.3rem; font-family:var(--font-ui);
+  font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:var(--iron);
+}
+li.eb-toc-pending{background:#efe9dd}
+li.eb-toc-pending .eb-toc-n{color:var(--sandstone)}
+li.eb-toc-pending .eb-toc-title{color:var(--iron)}
+
+/* ── chapter opener ─────────────────────────────────────────────────────── */
+.eb-chapter{padding-top:clamp(2rem,5vw,3.5rem)}
+.eb-chapter + .eb-chapter{border-top:4px double var(--steel);margin-top:clamp(2rem,4vw,3rem)}
+.eb-chapter-head{
+  background:var(--clean); border:1px solid var(--rule);
+  border-left:6px solid var(--gold);
+  padding:clamp(1.3rem,3vw,2rem) clamp(1.2rem,3vw,1.9rem);
+  margin-bottom:.5rem;
+}
+.eb-chapter-label{
+  font-family:var(--font-ui); font-size:.63rem; font-weight:700;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--oxidized);
+  font-variant-numeric:tabular-nums;
+}
+.eb-chapter-head h2{
+  font-family:var(--font-display); font-size:clamp(1.6rem,4vw,2.6rem);
+  font-weight:700; letter-spacing:.02em; color:var(--steel);
+  line-height:1.1; margin:.5rem 0 .8rem; text-wrap:balance;
+}
+.eb-chapter-head h2 em{font-style:normal;color:var(--oxidized)}
+.eb-chapter-deck{font-size:.95rem;line-height:1.75;max-width:62ch;color:var(--ink)}
+.eb-chapter-deck em{font-style:italic}
+.eb-chapter-return{
+  margin-top:1rem; padding-top:.8rem; border-top:1px solid var(--rule-soft);
+  font-family:var(--font-ui); font-size:.68rem; letter-spacing:.06em;
+}
+.eb-chapter-return a{color:var(--oxidized);text-decoration:none;font-weight:600}
+.eb-chapter-return a:hover,.eb-chapter-return a:focus-visible{text-decoration:underline;outline:none}
+
+/* The chapter's own how-to sits directly under the opener, so it should not
+   also carry the standalone page's large top margin. */
+.eb-chapter .dr-howto{margin-top:1.1rem}
+/* The first section in a chapter follows the opener, not another section. */
+.eb-chapter .empire:first-of-type{border-top:0}
+
+@media print{
+  .eb-cover{background:#fff;color:#000;border-bottom:2pt solid #000;padding:0 0 1rem}
+  .eb-cover h1{color:#000}
+  .eb-cover h1 em{color:#6b3e1f}
+  .eb-cover-deck{color:#000}
+  .eb-cover-meta{color:#4a2a13;border-top-color:#999}
+  .eb-contents{break-after:page}
+  ol.eb-toc a:hover{background:none}
+  .eb-chapter{break-before:page;padding-top:0}
+  .eb-chapter + .eb-chapter{border-top:0;margin-top:0}
+  .eb-chapter-head{break-inside:avoid;border-left-width:4pt}
+  .eb-chapter-return{display:none}
+}

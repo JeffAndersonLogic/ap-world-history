@@ -87,6 +87,7 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/test/readings-golden.js`, prove the 58 generated unit readings still carry every word of the originals, against `scripts/test/fixtures/readings-before.json`.
 - `node scripts/build-foundations-readings.js`, rebuild the six Foundations First & 10 readings from `scripts/lib/foundations-f10-content.js`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/first-and-10-foundations-*.html`; they are generated.
 - `node scripts/build-deep-readings.js`, rebuild the deep readings from `scripts/lib/deep-reading-content/`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/deep-reading-*.html`; they are generated. See "Deep Readings" below.
+- `node scripts/build-ebook.js`, compile the deep readings for a volume into `ebook/<volume>.html`. `--check` fails on drift without writing, which is what the offline suite runs. See "The eBook" below.
 - `node scripts/test/foundations-golden.js`, prove the generated Foundations readings still carry every word, key term, callout, question and answer placeholder the hand-authored pages had. Compares content, not markup, against `scripts/test/fixtures/foundations-before.json`, a committed extraction of the originals. In the offline suite.
 - `node scripts/test/foundations-visual.js [--shots]`, browser check that the shared stylesheet renders those readings the same. Not in the suite: it renders the real pre-migration HTML, which a shallow CI checkout does not have. Run it by hand with `BASE=<ref>` when touching `assets/css/behistorical-first10.css` or the template. Nine reviewed deltas are listed in the script with reasons; anything else fails.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
@@ -201,6 +202,51 @@ with every other structural check green. It checks both directions, because a
 data file pointing at a missing page is a dead card and a page no content module
 produces is a hand-authored reading, which is the thing the content model exists
 to prevent.
+
+## The eBook
+
+The eBook is a **second surface on the chapter modules, not a second copy of the
+content.** Every chapter in `ebook/foundations.html` is the same
+`scripts/lib/deep-reading-content/<slug>.js` that produces that topic's
+standalone deep reading, so the two cannot disagree. `scripts/lib/ebook-page.js`
+renders the cover and contents and then calls `renderChapterBody` from the
+deep-reading renderer rather than reimplementing it, for the same reason
+`canvas-parse-core.js` is inlined into the Skills Lens instead of copied: two
+implementations eventually give two different answers and nothing tells you
+which one a student read.
+
+It exists alongside the per-topic pages because they answer different questions.
+The deep reading on the Foundations 1 lesson serves the student doing Foundations
+1 tonight. The eBook serves the student revising in May, the student who missed
+three weeks, and the case manager who wants to see what is being taught.
+
+**Volumes are declared, chapters are ordered by hand.** A volume is an editorial
+decision about what belongs together and in what order, which no directory
+listing knows, so `VOLUMES` in `scripts/build-ebook.js` lists them. Its
+`contents` array is one ordered list in **teaching order**, mixing written
+chapters (`{ slug }`) with topics still to come (`{ pending }`). Unwritten
+topics are listed **in place** rather than collected at the end, because a
+student looking for Foundations 2 looks between 1 and 3, and finding it there
+marked "chapter not written yet" answers the question while finding nothing
+does not.
+
+**Chapters are numbered by their topic, not their position.** Sequential
+numbering would make the Foundations 3 chapter "Chapter 02" while Foundations 2
+is unwritten, and would silently renumber every chapter the moment a gap is
+filled.
+
+**`build-ebook.js` exports `VOLUMES` before it runs, and guards the run with
+`if (require.main !== module) return;`.** `validate.js` requires the file purely
+to read that list. Without the guard the require executes the builder, which
+means the validator writes files as a side effect of validating, and a check
+that silently rebuilds the thing it is checking can never fail. That bug existed
+for about ten minutes and is exactly the kind this repo is built to refuse.
+
+**Two checks, same shape as the deep readings.** `--check` in the offline suite
+proves each volume still matches its chapter modules. `validate.js` proves the
+volume exists, that every slug it names has a content module, and that **some
+hub page links to it**, because a volume nothing links to is served by Pages and
+reachable only by typing the URL.
 
 ## Image Contract
 

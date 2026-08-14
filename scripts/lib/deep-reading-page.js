@@ -29,6 +29,17 @@
  * /^first-and-10-foundations.*\.html$/. A deep reading must miss both, or it is
  * checked against a contract it was never meant to satisfy. Hence
  * `deep-reading-<slug>.html`. If you rename these, re-read those two globs first.
+ *
+ * ── Reused by the eBook ──────────────────────────────────────────────────────
+ *
+ * scripts/lib/ebook-page.js renders each chapter by calling renderChapterBody
+ * here rather than reimplementing it, so a volume and a standalone page cannot
+ * render the same content differently. The only thing the eBook needs that a
+ * standalone page does not is an `idPrefix`: several chapters legitimately use
+ * the same section ids, and the closing section is `compare` in every one of
+ * them, so concatenating chapters into one document without namespacing the ids
+ * produces duplicates and every in-page link lands on the first chapter.
+ * The prefix defaults to empty, which is exactly the standalone behaviour.
  */
 
 const ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' };
@@ -43,6 +54,11 @@ function esc(value) {
 
 function slugId(value) {
   return String(value || '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+/** Namespace a section id for the eBook, leave it alone for a standalone page. */
+function withPrefix(prefix, id) {
+  return prefix ? `${prefix}-${id}` : id;
 }
 
 function renderNote(note) {
@@ -81,8 +97,8 @@ function renderTerms(terms) {
   return `    <div class="dr-terms">\n      <h3>Terms to use precisely</h3>\n      <dl>\n${items}      </dl>\n    </div>\n`;
 }
 
-function renderEmpire(empire, index) {
-  const id = empire.id || slugId(empire.name);
+function renderEmpire(empire, index, prefix) {
+  const id = withPrefix(prefix, empire.id || slugId(empire.name));
   const num = empire.num || String(index + 1).padStart(2, '0');
   const accent = `accent-${empire.accent || 'gold'}`;
   const parts = (empire.parts || []).map(renderPart).join('');
@@ -104,7 +120,7 @@ function renderEmpire(empire, index) {
   );
 }
 
-function renderComparisons(closing) {
+function renderComparisons(closing, prefix) {
   if (!closing || !closing.pairs || !closing.pairs.length) return '';
   const cards = closing.pairs
     .map(pair =>
@@ -117,7 +133,7 @@ function renderComparisons(closing) {
     .join('');
 
   return (
-    `  <section class="dr-closing" id="compare">\n` +
+    `  <section class="dr-closing" id="${esc(withPrefix(prefix, 'compare'))}">\n` +
     `    <h2>${esc(closing.heading)}</h2>\n` +
     `    <p>${closing.intro}</p>\n` +
     `    <div class="dr-pairs">\n${cards}    </div>\n` +
@@ -125,13 +141,13 @@ function renderComparisons(closing) {
   );
 }
 
-function renderHowTo(howTo) {
+function renderHowTo(howTo, prefix) {
   if (!howTo) return '';
   const steps = (howTo.steps || [])
     .map(step => `        <li>${step}</li>\n`)
     .join('');
   return (
-    `  <section class="dr-howto" id="howto">\n` +
+    `  <section class="dr-howto" id="${esc(withPrefix(prefix, 'howto'))}">\n` +
     `    <h2>${esc(howTo.heading || 'How to Use This')}</h2>\n` +
     `    <p>${howTo.intro}</p>\n` +
     (steps ? `    <ol>\n${steps}    </ol>\n` : '') +
@@ -153,7 +169,24 @@ function renderJumpNav(topic) {
 }
 
 /**
- * Render one complete deep reading page.
+ * The chapter body: how-to, every section, and the closing comparison. Shared
+ * by the standalone deep reading and the eBook.
+ *
+ * @param {object} topic              a module from scripts/lib/deep-reading-content/
+ * @param {object} [opts]
+ * @param {string} [opts.idPrefix=''] namespace for section ids, used by the eBook
+ */
+function renderChapterBody(topic, opts) {
+  const prefix = (opts && opts.idPrefix) || '';
+  return (
+    renderHowTo(topic.howTo, prefix) +
+    (topic.empires || []).map((empire, i) => renderEmpire(empire, i, prefix)).join('') +
+    renderComparisons(topic.closing, prefix)
+  );
+}
+
+/**
+ * Render one complete standalone deep reading page.
  *
  * @param {object} topic  a module from scripts/lib/deep-reading-content/
  * @returns {string} the full HTML document, newline-terminated
@@ -179,7 +212,7 @@ function renderDeepReadingPage(topic) {
 ${meta ? `    <div class="dr-meta">\n${meta}    </div>\n` : ''}  </div>
 </header>
 ${renderJumpNav(topic)}<div class="dr-wrap">
-${renderHowTo(topic.howTo)}${(topic.empires || []).map(renderEmpire).join('')}${renderComparisons(topic.closing)}  <footer class="dr-footer">
+${renderChapterBody(topic)}  <footer class="dr-footer">
     <span class="dr-footer-note">${topic.footerNote}</span>
     <nav class="dr-nav" aria-label="Back to the lesson">
       <a href="${esc(topic.lessonFile)}#modules">Back to Modules</a>
@@ -192,4 +225,4 @@ ${renderHowTo(topic.howTo)}${(topic.empires || []).map(renderEmpire).join('')}${
 `);
 }
 
-module.exports = { renderDeepReadingPage };
+module.exports = { renderDeepReadingPage, renderChapterBody, escapeText: esc };

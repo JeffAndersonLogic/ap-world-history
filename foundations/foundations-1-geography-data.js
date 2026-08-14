@@ -62,6 +62,16 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Choose one geographic feature from the map and explain how it helped decide whether the people living there became farmers, herders, or foragers.'
   },
 
+  // The optional push-further layer, rendered under the lecture cards by
+  // foundations-topic-renderer.js. The page is generated from
+  // scripts/lib/deep-reading-content/foundations-1.js; never hand-edit it.
+  // Omit this field entirely and the whole feature disappears from the page.
+  deepReading: {
+    title: 'The Bargain',
+    desc: 'A textbook-depth chapter on the world before farming, why domestication happened independently in at least seven places, what an agricultural surplus actually bought, and what it cost. Optional, and the place to find evidence for whether farming was an improvement for everyone.',
+    url: 'deep-reading-foundations-1-geography.html'
+  },
+
   first10: {
     title: 'First & 10: The First Harvest',
     embedUrl: 'first-and-10-foundations-1-geography-capture.html?v=response-id-fix-v1',
