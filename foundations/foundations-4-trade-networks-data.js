@@ -61,6 +61,10 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Choose one trade network, Silk Roads, Indian Ocean, or Trans-Saharan. Identify one chokepoint or junction city on that network and explain why its geographic position made it economically or politically powerful.'
   },
 
+  // The optional push-further layer, rendered under the lecture cards by
+  // foundations-topic-renderer.js. The page is generated from
+  // scripts/lib/deep-reading-content/foundations-4.js; never hand-edit it.
+  // Omit this field entirely and the whole feature disappears from the page.
   deepReading: {
     title: 'Nobody Traveled the Whole Road',
     desc: 'A textbook-depth companion covering the three networks one at a time, with the named oasis towns and ports and what each was for, the monsoon by month and direction, and then the four things that traveled without anyone intending it. Optional, and useful when a question asks how a network actually worked rather than what moved along it.',

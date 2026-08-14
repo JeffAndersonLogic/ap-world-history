@@ -62,6 +62,10 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Choose one geographic feature from the map and explain how it helped decide whether the people living there became farmers, herders, or foragers.'
   },
 
+  // The optional push-further layer, rendered under the lecture cards by
+  // foundations-topic-renderer.js. The page is generated from
+  // scripts/lib/deep-reading-content/foundations-1.js; never hand-edit it.
+  // Omit this field entirely and the whole feature disappears from the page.
   deepReading: {
     title: 'The Bargain',
     desc: 'A textbook-depth companion that builds the causal chain one link at a time, from the end of the Ice Age to the first cities, with what domestication physically is, what a river actually supplies, and what the switch to farming cost the people who made it. Optional, and useful when a question asks you to explain how one link caused the next rather than to list them.',
