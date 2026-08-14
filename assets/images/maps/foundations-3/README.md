@@ -13,15 +13,39 @@ zone on a world map.
 
 ## Expected files
 
-| File | Shows | Publisher |
+All four are wired to `map.gallery` in
+`foundations/foundations-3-states-power-data.js`, and each one's caption there
+carries the credit, so it survives when the picture does not load.
+
+| File | Shows | Credit |
 |---|---|---|
-| `persian-empires.png` | Achaemenid (500 BCE), Sassanid (621 CE), and Safavid (16th c.) Persia on one frame | Geopolitical Futures |
-| `qin-han-empires.png` | Qin and Han empires side by side, 221 BCE to 220 CE, with the Great Wall in each period | National Geographic |
-| `greek-city-states.png` | The Greek city-states, 500 BCE, with Athens, Sparta, Corinth, Thebes and the major temples | Glencoe/McGraw-Hill |
-| `roman-empire-height.png` | The Roman Empire at its height, 117 CE, with the Republic of 264 BCE shown inside it | Glencoe/McGraw-Hill |
+| `persian-empires.jpg` | Achaemenid (500 BCE), Sassanid (621 CE), and Safavid (16th c.) Persia on one frame | Graphic redesign by Geopolitical Futures, printed in the image, over Wikimedia Commons sources also printed in the image |
+| `qin-han-empires.jpg` | Qin and Han empires in two panels, 221 BCE to 220 CE, each with the Great Wall of its period | National Geographic, logo printed in the image |
+| `greek-city-states.png` | The Greek city-states, 500 BCE, with Athens, Sparta, Corinth, Thebes, the major shrines, and the Persian Empire across the Aegean | Classroom textbook cartography; the image carries no publisher mark, so none is asserted |
+| `roman-empire-height.jpg` | The Roman Empire at its height, 117 CE, with the Republic of 264 BCE inside it | Classroom textbook cartography; the image carries no publisher mark, so none is asserted |
+
+Two of these carry no attribution anywhere in the image, and none is invented
+here. If you know the publisher, add it to the table and to that entry's
+`caption`.
 
 Any of `.png`, `.jpg`, `.webp` or `.svg` works; `scripts/validate.js` checks the
 magic bytes, so the extension has to match the actual bytes.
+
+## Resolution, and which two are thin
+
+| File | Native size | Reads well enlarged? |
+|---|---|---|
+| `persian-empires.jpg` | 1280 x 938 | Yes |
+| `greek-city-states.png` | 727 x 525 | Just about |
+| `qin-han-empires.jpg` | 636 x 472 | Marginal |
+| `roman-empire-height.jpg` | 550 x 395 | No, it is already near 1:1 in the card |
+
+The card shows each map at roughly 470 px wide, so the Roman one is displayed at
+almost its full resolution and the lightbox gains a student very little. That is
+a projector problem more than a laptop one: `ANATOLIA` and `JUDEA` are legible on
+a screen and soft on a wall. If a higher-resolution copy of the Roman or the
+Qin/Han map turns up, replace the file under the same name and nothing else needs
+to change.
 
 ## Two notes on what these maps teach
 

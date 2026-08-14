@@ -58,7 +58,45 @@ window.FOUNDATION_TOPIC = {
       'Why might a state that relied only on military force collapse faster than one that combined force with legitimacy?',
       'Where on this map would you expect the greatest resistance to state power, and why?'
     ],
-    prompt: 'Choose one state visible on this map (Rome, Han China, or Parthian Persia). Identify one governance problem it faced and one tool it used to address that problem. Explain the connection.'
+    prompt: 'Choose one state visible on this map (Rome, Han China, or Parthian Persia). Identify one governance problem it faced and one tool it used to address that problem. Explain the connection.',
+
+    // The four close-ups under the world map, one per civilization. The world
+    // map is what the questions and the key above are written against; these
+    // are the reference a student comes back to while answering it, because a
+    // single frame holding four empires cannot show any one of them in detail.
+    // Files and credits: assets/images/maps/foundations-3/README.md.
+    galleryTitle: 'Close-Ups: One State at a Time',
+    galleryIntro: 'The map above puts all four states on one frame, which is what the questions ask about. These four zoom in on one state each, so you can actually see its shape, its capital, and where it stopped. Click any map to enlarge it, and zoom in to read the small place names.',
+    gallery: [
+      {
+        title: 'The Persian Empires',
+        url: '../assets/images/maps/foundations-3/persian-empires.jpg',
+        sourceUrl: '../assets/images/maps/foundations-3/persian-empires.jpg',
+        caption: 'Three Persian empires on one frame. Foundations 3 is about the yellow layer, the Achaemenid Empire of 500 BCE, which is the one Cyrus founded and Darius ran through satrapies. The orange (Sassanid, 621 CE) and dark red (Safavid, 16th century) layers come much later, in Units 1 and 3; they are here because the same plateau kept posing the same problem of rule. Note that the place names are modern countries, not ancient ones. Graphic redesign by Geopolitical Futures, from Wikimedia Commons sources printed at the bottom of the map.',
+        prompt: 'Trace only the yellow layer, then count the modern countries it covers. That spread, from Egypt and the Aegean to the edge of India, is the administrative problem the satrapies and the Royal Road were built to solve.'
+      },
+      {
+        title: 'The Qin and Han Empires, 221 BCE to 220 CE',
+        url: '../assets/images/maps/foundations-3/qin-han-empires.jpg',
+        sourceUrl: '../assets/images/maps/foundations-3/qin-han-empires.jpg',
+        caption: 'Two panels, not one map. On the left the Qin empire in green with its capital at Xianyang; on the right the Han in pink, ruling from Chang\'an, holding what the Qin built and pushing west along the corridor that becomes the Silk Roads. Each panel marks the Great Wall of its own period, and each puts the Xiongnu on the northern edge. Map by National Geographic.',
+        prompt: 'Compare the two panels. What did the Han add, and in which direction? Then look at the wall line in each: two dynasties, the same northern neighbour, the same answer.'
+      },
+      {
+        title: 'The Greek City-States, 500 BCE',
+        url: '../assets/images/maps/foundations-3/greek-city-states.png',
+        sourceUrl: '../assets/images/maps/foundations-3/greek-city-states.png',
+        caption: 'Athens, Sparta, Corinth, Thebes, Argos and Mycenae, with the shrines at Delphi, Olympia and Delos, and Greek cities like Ephesus and Miletus on the Anatolian coast. The orange is not a country: it marks where Greeks settled, which is why this is the one map in the set with no single border around it. The Persian Empire sits directly across the Aegean.',
+        prompt: 'Look for the thing that is missing: there is no line around Greece, because there was no Greek state, only hundreds of poleis. Then find Miletus and Ephesus, Greek cities inside the Persian Empire, and ask what that closeness meant for Athens.'
+      },
+      {
+        title: 'The Roman Empire at its Height, 117 CE',
+        url: '../assets/images/maps/foundations-3/roman-empire-height.jpg',
+        sourceUrl: '../assets/images/maps/foundations-3/roman-empire-height.jpg',
+        caption: 'Two Romes in one picture. The small red patch is the Roman Republic of 264 BCE, still just Italy. The yellow is the empire at its greatest extent in 117 CE: Britain, Spain, Gaul, Dacia, Greece, Anatolia, Syria, Judea, Egypt, and the North African coast, wrapped the whole way around the Mediterranean.',
+        prompt: 'Compare the red to the yellow, then remember that no message crossed that yellow faster than a horse or a ship. Every province in it is a place Rome had to make Roman. Roman law, the roads, and the slow extension of citizenship are the answer to this map.'
+      }
+    ]
   },
 
   // The optional push-further layer, rendered under the lecture cards by

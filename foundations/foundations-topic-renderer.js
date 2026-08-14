@@ -208,6 +208,17 @@ document.title=`BeHistorical | ${T.code} ${T.title}`;
 const first10=T.first10||T.reading;
 const evidence=T.evidence||{title:'Evidence Lab',task:'Use visual and textual evidence from this topic to support a historical claim.',prompt:'What evidence from this topic best supports the main idea?',items:[{title:T.map.title,url:T.map.url,sourceUrl:T.map.sourceUrl,caption:T.map.caption,prompt:T.map.prompt}]};
 const mapKey=T.map.key||[];
+// Module 01 leads with one map, the one the questions and the map key are
+// written against. `map.gallery` is the optional row of close-ups underneath it,
+// for a topic whose lesson compares several states and where one world map
+// cannot show any of them in detail. Like the video block and the deep reading,
+// it introduces itself when entries exist and leaves no trace when they do not,
+// so the topics without a gallery show no empty frame.
+//
+// An entry with no `url` is dropped rather than rendered against the map
+// fallback artwork: a caption promising the Roman Empire over a generic map is
+// worse than no card, and this is the shape a mistyped path takes.
+const mapGallery=(Array.isArray(T.map.gallery)?T.map.gallery:[]).filter(m=>m&&m.url);
 const aiCoach=T.aiCoach||{title:'AI Historical Coach',intro:'Use these questions to deepen your historical reasoning before submitting your response.',prompts:['What pattern do you notice?','How did geography influence this development?','What changed, and what stayed the same?']};
 const beSurreal=T.beSurreal||null;
 const beInTheRoom=T.beInTheRoom||null;
@@ -368,13 +379,29 @@ function openImageUrl(url,caption,fallbackId){
   bhOpenModal('lightbox','lightbox-caption');
 }
 function openMapLightbox(){openImageUrl(foundationImageUrl(T.map.url,'map'),`${T.map.title}, ${T.map.caption}`,'map');}
+// The close-ups are where the small place names live, and a student reads those
+// by enlarging the picture and zooming, so every gallery entry opens the
+// lightbox exactly the way the lead map and the Evidence Lab pictures do.
+function openMapGalleryLightbox(i){
+  const item=mapGallery[i];
+  if(!item)return;
+  openImageUrl(foundationImageUrl(item.url,'map'),`${item.title}, ${item.caption}`,'map');
+}
 function openEvidenceLightbox(i){
   const item=(evidence.items||[])[i];
   if(!item)return;
   openImageUrl(foundationEvidenceImageUrl(i),`${item.title}, ${item.caption}`,`evidence-${String(i+1).padStart(2,'0')}`);
 }
 function closeLightbox(){bhCloseModal('lightbox');}
-function renderMap(){return `<div class="pop-grid"><figure class="foundation-card map-figure pop-half"><img src="${foundationImageUrl(T.map.url,'map')}" alt="${T.map.title}" role="button" tabindex="0" aria-label="Enlarge map: ${T.map.title}" onclick="openMapLightbox()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openMapLightbox()}" ${foundationFallbackAttrs('map')}><figcaption><strong>${T.map.title}</strong><br>${T.map.caption}<br><a class="source-link" href="${T.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a></figcaption></figure><article class="foundation-card pop-half"><h3>Map Questions</h3><ul>${T.map.questions.map(q=>`<li>${q}</li>`).join('')}</ul>${mapKey.length?`<div class="map-key"><h4>Map Key</h4>${mapKey.map(k=>`<div class="map-key-item"><strong>${k.label}</strong><span>${k.detail}</span></div>`).join('')}</div>`:''}${draft(`${T.id}-map`,T.map.prompt)}</article></div>`}
+function renderMap(){
+  const lead=`<figure class="foundation-card map-figure pop-half"><img src="${foundationImageUrl(T.map.url,'map')}" alt="${T.map.title}" role="button" tabindex="0" aria-label="Enlarge map: ${T.map.title}" onclick="openMapLightbox()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openMapLightbox()}" ${foundationFallbackAttrs('map')}><figcaption><strong>${T.map.title}</strong><br>${T.map.caption}<br><a class="source-link" href="${T.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a></figcaption></figure><article class="foundation-card pop-half"><h3>Map Questions</h3><ul>${T.map.questions.map(q=>`<li>${q}</li>`).join('')}</ul>${mapKey.length?`<div class="map-key"><h4>Map Key</h4>${mapKey.map(k=>`<div class="map-key-item"><strong>${k.label}</strong><span>${k.detail}</span></div>`).join('')}</div>`:''}${draft(`${T.id}-map`,T.map.prompt)}</article>`;
+  // The gallery sits after the questions and the draft box on purpose. The lead
+  // map plus the questions is the work; these are the reference a student comes
+  // back to while answering, and putting them above the prompt would read as
+  // five maps to get through before writing anything.
+  const gallery=mapGallery.length?`<article class="foundation-card" style="grid-column:1/-1"><h3>${T.map.galleryTitle||'Close-Ups: One State at a Time'}</h3><p>${T.map.galleryIntro||'The map above puts every state on one frame, which is what the questions ask about. These zoom in on one at a time. Click any map to enlarge it, and zoom in to read the small place names.'}</p></article>`+mapGallery.map((m,i)=>`<figure class="foundation-card map-figure pop-half"><img src="${foundationImageUrl(m.url,'map')}" alt="${m.title}" role="button" tabindex="0" aria-label="Enlarge map: ${m.title}" onclick="openMapGalleryLightbox(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openMapGalleryLightbox(${i})}" ${foundationFallbackAttrs('map')}><figcaption><strong>${m.title}</strong><br>${m.caption}${m.prompt?`<br><em>${m.prompt}</em>`:''}${m.sourceUrl?`<br><a class="source-link" href="${m.sourceUrl}" target="_blank" rel="noopener">Open map source</a>`:''}</figcaption></figure>`).join(''):'';
+  return `<div class="pop-grid">${lead}${gallery}</div>`;
+}
 function renderFirst10(){if(first10.embedUrl){return `<div style="margin:-1.5rem"><iframe src="${first10.embedUrl}" title="First &amp; 10 Reading" style="width:100%;min-height:85vh;border:0;display:block;" loading="lazy"></iframe></div>`;}return `<article class="foundation-card reading"><h3>${first10.title}</h3>${first10.paragraphs.map(p=>`<p>${p}</p>`).join('')}</article><article class="foundation-card"><h3>First &amp; 10 Response</h3><p>${first10.prompt}</p></article>${draft(`${T.id}-first10`,first10.prompt)}`}
 function renderBeSurreal(){if(!beSurreal)return `<article class="foundation-card"><h3>BeSurreal</h3><p>This module is coming soon for ${T.title}.</p></article>`;return `<article class="foundation-card besurreal-card"><h3>${beSurreal.title}</h3><p>${beSurreal.intro}</p><blockquote class="besurreal-detail"><p>${beSurreal.detail}</p></blockquote></article>${draft(`${T.id}-besurreal`,beSurreal.prompt)}`}
 function renderEvidence(){return `<article class="foundation-card"><h3>${evidence.title}</h3><p>${evidence.task}</p></article><div class="pop-grid">${evidence.items.map((item,i)=>{const fallbackId=`evidence-${String(i+1).padStart(2,'0')}`;return `<article class="foundation-card map-figure pop-half"><img src="${foundationEvidenceImageUrl(i)}" alt="${item.title}" role="button" tabindex="0" aria-label="Enlarge image: ${item.title}" onclick="openEvidenceLightbox(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openEvidenceLightbox(${i})}" ${foundationFallbackAttrs(fallbackId)}><figcaption><strong>${item.title}</strong><br>${item.caption}<br><em>${item.prompt}</em><br><a class="source-link" href="${item.sourceUrl||item.url}" target="_blank" rel="noopener">Open source</a></figcaption></article>`}).join('')}</div>${draft(`${T.id}-evidence`,evidence.prompt)}`}

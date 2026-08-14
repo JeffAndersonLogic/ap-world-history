@@ -66,10 +66,14 @@ const srv = http.createServer((q,r)=>{const rel=decodeURIComponent(q.url.split('
       await pg.evaluate(m => openModule(m), mod);
       await pg.waitForTimeout(80);
       const n = await pg.evaluate(() => document.querySelectorAll('#pop-body img[role="button"]').length);
-      let opened = false;
-      if (n) {
-        await pg.evaluate(() => document.querySelector('#pop-body img[role="button"]').click());
-        await pg.waitForTimeout(80);
+      // Every image, not just the first. Foundations 3's Map module carries five
+      // pictures, a world map and four close-ups, and a first-image-only check
+      // would have gone on reporting that module green with four dead maps in
+      // it: the failure this sweep exists to catch, one card further down.
+      let opened = n > 0;
+      for (let i = 0; i < n && opened; i++) {
+        await pg.evaluate(k => document.querySelectorAll('#pop-body img[role="button"]')[k].click(), i);
+        await pg.waitForTimeout(60);
         opened = await pg.evaluate(() => document.getElementById('lightbox').classList.contains('show'));
         await pg.evaluate(() => closeLightbox());
         await pg.waitForTimeout(40);
