@@ -178,6 +178,30 @@ main{max-width:1240px;margin:0 auto;padding:0 20px 80px}
 .section-label{font-family:var(--ui);font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--antique-gold)}
 
 /* ── Figures ────────────────────────────────────────────────────────────── */
+/* Findings: the three ranked conclusions above Panel 01. Deliberately louder
+   than anything below them, because the panels are the evidence and these are
+   the point. */
+.findings{display:flex;flex-direction:column;gap:10px;margin:0 0 28px}
+.finding{background:var(--surface-page);border:1px solid var(--gunmetal-gray);border-left:3px solid var(--gunmetal-gray);border-radius:8px;padding:16px 18px}
+.finding.lead{border-color:var(--antique-gold);border-left-color:var(--antique-gold)}
+.f-kick{font-family:var(--ui);font-size:10.5px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted);margin:0}
+.finding.lead .f-kick{color:var(--antique-gold)}
+.f-title{font-family:var(--title);font-size:21px;line-height:1.22;margin:6px 0 0;max-width:34ch}
+.f-body{font-family:var(--ui);font-size:13.5px;color:var(--text-muted);line-height:1.6;margin:8px 0 0;max-width:74ch}
+.f-evid{display:flex;flex-wrap:wrap;gap:0;margin:14px 0 0;border-top:1px solid var(--gunmetal-gray);padding-top:11px}
+.f-evid>div{padding-right:20px;margin-right:20px;border-right:1px solid var(--gunmetal-gray)}
+.f-evid>div:last-child{border-right:0;margin-right:0;padding-right:0}
+.f-n{font-family:var(--ui);font-weight:800;font-size:21px;display:block;line-height:1.2;color:var(--text-primary);font-variant-numeric:tabular-nums}
+/* The status ramp, never a series colour. The figure below it always carries
+   the word too, because colour alone does not survive deutan vision. */
+.f-n.bad{color:var(--status-serious)}
+.f-k{font-family:var(--ui);font-size:11.5px;color:var(--text-muted);display:block;margin-top:1px}
+.f-acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
+.f-btn{font-family:var(--ui);font-size:12.5px;font-weight:700;background:var(--charcoal-steel);color:var(--text-primary);
+  border:1px solid var(--gunmetal-gray);border-radius:6px;padding:7px 13px;cursor:pointer}
+.f-btn:hover{border-color:var(--antique-gold);color:var(--antique-gold)}
+.f-btn:focus-visible{outline:2px solid var(--antique-gold);outline-offset:2px}
+.f-more{font-family:var(--ui);font-size:12px;color:var(--text-muted);margin:2px 0 0}
 .hero-figure{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-top:14px}
 .hero-figure .value{font-family:var(--ui);font-size:clamp(38px,7vw,60px);font-weight:800;line-height:1;color:var(--text-primary)}
 .hero-figure .of{font-family:var(--ui);font-size:20px;font-weight:600;color:var(--text-muted)}
@@ -15093,9 +15117,52 @@ function topicSort(a, b) {
 }
 
 function lessonFor(topicId) { return (SKILLS && SKILLS.topics[topicId]) || null; }
+
+/* Evidence terms, and the Foundations fallback.
+   ─────────────────────────────────────────────
+   Unit topics hang their evidence terms off the two checkpoint slots.
+   Foundations does not have any: scripts/build-skills-map.js says so out loud,
+   and it is right to. A Foundations checkpoint carries a `checklist` of
+   expectation sentences, not evidence words, so it lands in `criteria`, and the
+   topic's real vocabulary list hangs off the topic because that is where it
+   actually lives. Inventing slot terms in the data would be the data lying.
+
+   The cost of that honesty landed on the consumer. Every panel here reads slot
+   terms, so on all six Foundations topics the Evidence Term panel, the term-hit
+   column in Panel 03 and the "confident and thin" table in Panel 06 all went
+   dark and printed "no terms authored". Three working analyses, blank for the
+   only unit that had been taught, while the vocabulary they needed sat one level
+   up in the same file.
+
+   So the fallback lives here, where it can be labelled: a checkpoint with no
+   terms of its own borrows the topic's list, and `termScope` records that it
+   did, so nothing downstream can present topic-wide vocabulary as if the author
+   had chosen it for that one prompt. Checkpoints only. Scoring a Map Check
+   against thirteen topic terms would be measuring the wrong thing loudly. */
+const TERM_FALLBACK = new Map();
 function slotMeta(topicId, slotId) {
   const l = lessonFor(topicId);
-  return (l && l.slots && l.slots[slotId]) || null;
+  const m = (l && l.slots && l.slots[slotId]) || null;
+  if (!m) return null;
+  if (m.terms && m.terms.length) return m;
+  if (!l.terms || !l.terms.length || !/^checkpoint/.test(slotId)) return m;
+  const key = topicId + '|' + slotId;
+  if (!TERM_FALLBACK.has(key)) {
+    // A copy, never a mutation: SKILLS is the shipped map and every panel
+    // re-reads it on every render.
+    TERM_FALLBACK.set(key, Object.assign({}, m, { terms: l.terms.slice(), termScope: 'topic' }));
+  }
+  return TERM_FALLBACK.get(key);
+}
+
+/* True when anything in scope is leaning on the fallback, so a panel can say so
+   once at the top rather than repeating a caveat on every row. */
+function usesTopicTerms(sc) {
+  return sc.knownTopics.some(t =>
+    (sc.expectedSlotsByTopic.get(t) || []).some(sl => {
+      const m = slotMeta(t, sl);
+      return m && m.termScope === 'topic';
+    }));
 }
 
 /* ==========================================================================
@@ -15386,11 +15453,247 @@ function clip(s, n) { s = String(s); return s.length > n ? s.slice(0, n - 1) + '
    First, always. A number the teacher cannot trust is worse than no number, so
    nothing else on this page is worth reading until this panel is understood.
    ========================================================================== */
+/* ── Findings ───────────────────────────────────────────────────────────────
+   Three of them, ranked, at the top of the first panel, because a teacher
+   between classes has four minutes and this tool used to spend all four of them
+   asking to be browsed.
+
+   The ranking rule, stated so it can be argued with: every finding gets a
+   severity BAND by what kind of problem it is, then a fraction of the class it
+   touches, and the bands never cross.
+
+     A  .80  the data itself cannot be trusted yet
+     B  .60  the class missed something
+     C  .40  named students need you
+     D  .20  the measurement is incomplete
+
+   weight = band + 0.19 x share, so a band-B finding touching the whole class
+   still sits below the smallest band-A one. Ties break on a fixed order, so the
+   same drop always produces the same three in the same sequence: a tool that
+   reshuffles its own conclusions is a tool nobody believes twice.
+
+   A finding may only cite a denominator it actually has. Every one of these
+   returns null rather than guessing, which is why they are built as functions
+   that can decline. */
+const FINDING_ORDER = ['pipeline', 'coverage', 'terms', 'thin', 'skills', 'underrated'];
+
+function buildFindings(sc) {
+  const found = [];
+  const students = sc.students.length;
+
+  // A. Responses the parser could not attribute. Everything below is computed
+  //    on what did attribute, so this has to lead when it is real.
+  const lost = new Set();
+  sc.excs.forEach(x => { if (x.reason === 'NO_MANIFEST' || x.reason === 'INCOMPLETE') lost.add(x.studentKey); });
+  if (lost.size && students) {
+    const share = lost.size / students;
+    found.push({
+      id: 'pipeline', weight: 0.80 + 0.19 * share,
+      kicker: 'Check this before you read anything else',
+      title: lost.size + ' of ' + students + ' submissions did not fully attribute',
+      body: 'Every figure on this page is computed from the submissions that parsed cleanly. Until these are resolved, the rest of this page is describing a subset of your class and cannot tell you it is.',
+      evid: [[lost.size, 'submissions affected'], [Math.round(share * 100) + '%', 'of those who submitted', true]],
+      acts: [['See the exception reasons', 'coverage']]
+    });
+  }
+
+  // B. Work the lessons define and the submissions do not contain.
+  if (sc.expected) {
+    const missing = sc.expected - sc.observed;
+    const share = missing / sc.expected;
+    if (missing > 0) {
+      found.push({
+        id: 'coverage', weight: 0.60 + 0.19 * share,
+        kicker: 'Coverage',
+        title: missing.toLocaleString() + ' responses the lessons expect and the drop does not have',
+        body: 'The denominator comes from the lesson data, not from what arrived, so a student who gathered nothing owes their full set and shows as gaps rather than as an absence.',
+        evid: [[Math.round((sc.observed / sc.expected) * 100) + '%', 'present'], [missing.toLocaleString(), 'missing', share > 0.25]],
+        acts: [['Open the student grid', 'grid']]
+      });
+    }
+  }
+
+  // B. Vocabulary the class never reached. The negative direction is the one
+  //    that turns into tomorrow's first five minutes.
+  const termRows = [];
+  sc.knownTopics.forEach(t => {
+    (sc.expectedSlotsByTopic.get(t) || []).forEach(sl => {
+      const m = slotMeta(t, sl);
+      if (!m || !m.terms || !m.terms.length) return;
+      const answered = sc.rows.filter(r => r.topic === t && r.slot === sl && !r.blank);
+      if (!answered.length) return;
+      m.terms.forEach(term => {
+        const re = termMatcher(term);
+        const n = re ? answered.filter(r => re.test(r.norm)).length : 0;
+        termRows.push({ term: term, n: n, of: answered.length });
+      });
+    });
+  });
+  if (termRows.length) {
+    // Collapse a term appearing on several slots to its best showing, so a term
+    // used freely in one checkpoint is not reported as unreached.
+    const best = new Map();
+    termRows.forEach(r => {
+      const cur = best.get(r.term);
+      const rate = r.of ? r.n / r.of : 0;
+      if (!cur || rate > cur.rate) best.set(r.term, { term: r.term, n: r.n, of: r.of, rate: rate });
+    });
+    // Array.from, not slice.call: a Map iterator has no length, so slice.call
+    // returns an empty array and this finding silently never fires.
+    const all = Array.from(best.values()).sort((a, b) => a.rate - b.rate || a.term.localeCompare(b.term));
+    const cold = all.filter(t => t.rate < 0.05);
+    if (cold.length) {
+      const share = cold.length / all.length;
+      const dead = cold.filter(t => t.n === 0);
+      found.push({
+        id: 'terms', weight: 0.60 + 0.19 * share,
+        kicker: 'Tomorrow, open with this',
+        title: cold.length + ' of ' + all.length + ' terms reached almost nobody',
+        body: 'They can do the thinking. ' + (dead.length
+          ? 'What they cannot yet do is name it: ' + dead.slice(0, 3).map(t => '"' + t.term + '"').join(', ') +
+            (dead.length > 3
+              ? ' and ' + (dead.length - 3) + ' more appear in no response at all.'
+              : (dead.length === 1 ? ' appears' : ' appear') + ' in no response at all.')
+          : 'The lesson\'s own language is barely surfacing in their writing.') +
+          ' On an exam that scores the vocabulary, that is invisible until May.',
+        evid: [[cold.length, 'terms under 5% use', true], [all.length, 'terms authored']],
+        acts: [['See every term', 'terms']]
+      });
+    }
+  }
+
+  /* C. The two students nobody catches.
+     Both of these are judged per STUDENT across the whole lesson, not per
+     response, and that distinction is the entire value of them. Judged per
+     response on the real f1 drop, "confident and thin" returned 73 of 115
+     students, because a single checkpoint answer that happens to miss all
+     thirteen topic terms is ordinary rather than alarming. Sixty-three percent
+     of a class is a statistic. It is not a roster, and a finding you cannot act
+     on is worse than no finding, because it teaches you to skim this box.
+     Across a whole lesson the same rule returns four, and those four are real. */
+  const universe = [];
+  const seenTerm = new Set();
+  sc.knownTopics.forEach(t => {
+    (sc.expectedSlotsByTopic.get(t) || []).forEach(sl => {
+      const m = slotMeta(t, sl);
+      if (!m || !m.terms) return;
+      m.terms.forEach(term => { if (!seenTerm.has(term)) { seenTerm.add(term); universe.push(term); } });
+    });
+  });
+
+  if (universe.length >= 4 && students) {
+    const per = new Map();
+    sc.rows.forEach(r => {
+      if (r.blank) return;
+      let a = per.get(r.studentKey);
+      if (!a) { a = { conf: [], terms: new Set() }; per.set(r.studentKey, a); }
+      if (r.confidence != null) a.conf.push(r.confidence);
+      termsIn(r.norm, universe).hit.forEach(t => a.terms.add(t));
+    });
+    // Proportional, so the rule reads the same on a 13-term Foundations topic
+    // and a 6-term unit checkpoint.
+    const FLOOR = Math.max(1, Math.round(universe.length * 0.15));
+    const CEIL = Math.max(2, Math.round(universe.length * 0.35));
+    const thin = [], under = [];
+    per.forEach((a, key) => {
+      if (!a.conf.length) return;
+      const mean = a.conf.reduce((x, y) => x + y, 0) / a.conf.length;
+      if (mean >= 4 && a.terms.size <= FLOOR) thin.push(key);
+      if (mean <= 3 && a.terms.size >= CEIL) under.push(key);
+    });
+
+    if (thin.length) {
+      const share = thin.length / students;
+      found.push({
+        id: 'thin', weight: 0.40 + 0.19 * share,
+        kicker: 'Who needs you',
+        title: thin.length + ' ' + (thin.length === 1 ? 'student is' : 'students are') + ' confident and thin',
+        body: 'Across the whole lesson they rated themselves 4 or 5 on average and reached at most ' +
+          FLOOR + ' of the ' + universe.length + ' terms. This is the student who turns everything in, ' +
+          'is pleasant about it, clears every bar you can measure, and is not learning. Nothing else on this page finds them.',
+        evid: [[thin.length, 'to pull aside', true], [students, 'students in scope']],
+        acts: [['Name them', 'confidence']]
+      });
+    }
+    if (under.length) {
+      const share = under.length / students;
+      found.push({
+        id: 'underrated', weight: 0.40 + 0.19 * share - 0.05,
+        kicker: 'Worth thirty seconds each',
+        title: under.length + ' ' + (under.length === 1 ? 'student is' : 'students are') + ' better than they think',
+        body: 'They rated themselves 3 or below on average and reached ' + CEIL + ' or more of the ' +
+          universe.length + ' terms anyway. Telling a student out loud that they are good at this is the ' +
+          'cheapest intervention available to you, and it is the one this data is best at finding.',
+        evid: [[under.length, 'to tell'], [students, 'students in scope']],
+        acts: [['Name them', 'confidence']]
+      });
+    }
+  }
+
+  // D. Skills with nowhere to land. Not a class problem, a coverage problem in
+  //    the lesson data, and it silently narrows every skill figure on the page.
+  const skillsSeen = new Set();
+  let taggable = 0;
+  sc.knownTopics.forEach(t => {
+    (sc.expectedSlotsByTopic.get(t) || []).forEach(sl => {
+      const m = slotMeta(t, sl);
+      taggable++;
+      if (m && m.skill) String(m.skill).split(/\s*,\s*/).forEach(s => skillsSeen.add(s.trim()));
+    });
+  });
+  if (taggable && skillsSeen.size) {
+    const KNOWN = ['Causation', 'Comparison', 'Continuity and Change', 'Contextualization', 'Argumentation', 'Sourcing', 'Claims and Evidence'];
+    const dark = KNOWN.filter(k => !skillsSeen.has(k));
+    if (dark.length) {
+      const share = dark.length / KNOWN.length;
+      found.push({
+        id: 'skills', weight: 0.20 + 0.19 * share,
+        kicker: 'What this page cannot see',
+        title: dark.length + ' of the 7 AP skills are not measured here',
+        body: 'No slot in scope is tagged with ' + dark.join(', ') + '. That is a gap in the lesson data, not in the students, and it means the skill panel is reporting on a narrower course than you are teaching.',
+        evid: [[skillsSeen.size + ' of 7', 'skills exercised'], [dark.length, 'dark', true]],
+        acts: [['See the skill panel', 'skill']]
+      });
+    }
+  }
+
+  found.sort((a, b) => b.weight - a.weight ||
+    FINDING_ORDER.indexOf(a.id) - FINDING_ORDER.indexOf(b.id));
+  return found;
+}
+
+function findingsHtml(sc) {
+  const f = buildFindings(sc);
+  if (!f.length) {
+    return '<div class="findings"><div class="finding"><p class="f-kick">Findings</p>' +
+      '<h3 class="f-title">Nothing in this drop rises to a finding</h3>' +
+      '<p class="f-body">Coverage is complete, the lesson\'s language is reaching the class, and no student is both confident and thin. That is a real result, not an empty state. The panels below carry the detail.</p></div></div>';
+  }
+  const top = f.slice(0, 3);
+  return '<div class="findings">' + top.map((x, i) =>
+    '<div class="finding' + (i === 0 ? ' lead' : '') + '">' +
+      '<p class="f-kick">' + esc(x.kicker) + '</p>' +
+      '<h3 class="f-title">' + esc(x.title) + '</h3>' +
+      '<p class="f-body">' + esc(x.body) + '</p>' +
+      '<div class="f-evid">' + x.evid.map(e =>
+        '<div><span class="f-n' + (e[2] ? ' bad' : '') + '">' + esc(String(e[0])) + '</span>' +
+        '<span class="f-k">' + esc(e[1]) + '</span></div>').join('') + '</div>' +
+      '<div class="f-acts">' + x.acts.map(a =>
+        '<button class="f-btn" type="button" data-goto="' + esc(a[1]) + '">' + esc(a[0]) + '</button>').join('') + '</div>' +
+    '</div>').join('') +
+    (f.length > top.length
+      ? '<p class="f-more">' + (f.length - top.length) + ' further finding' + (f.length - top.length === 1 ? '' : 's') +
+        ' ranked below these. The panels below carry all of them.</p>'
+      : '') +
+  '</div>';
+}
+
 function renderCoverage() {
   const sc = scope();
   const el = $('panel-coverage');
   const out = [];
 
+  out.push(findingsHtml(sc));
   out.push('<p class="section-label">Panel 01</p><h2>Coverage and exceptions</h2>');
   out.push('<p class="lede">Read this before anything else. The denominator below comes from the lesson data, not from what arrived, so a student who gathered nothing still owes nine responses and shows up as nine gaps rather than as an absence from the table.</p>');
 
@@ -15855,6 +16158,9 @@ function renderTerms() {
   const out = [];
   out.push('<p class="section-label">Panel 05</p><h2>Evidence term coverage</h2>');
   out.push('<p class="lede">These are the terms you wrote into the lesson data, matched against what the class actually wrote. A term counts as used when it appears as a whole word, allowing a plural or a possessive. Nothing looser: partial matching would score "trade" inside "tradition" and send you to reteach something the class already had.</p>');
+  if (usesTopicTerms(sc)) {
+    out.push('<p class="lede"><b>Some slots below are scored against the topic vocabulary, not a per-slot list.</b> Foundations stores its terms once per topic rather than per checkpoint, so its checkpoints borrow that list. Read those rows as "did the lesson\'s language reach this answer", which is a fair question, rather than "did the author expect this exact term here", which nobody wrote down.</p>');
+  }
 
   const slots = [];
   sc.knownTopics.forEach(t => {
@@ -15996,7 +16302,8 @@ function renderConfidence() {
     return false;
   });
   out.push('<h3>Confident and thin</h3>');
-  out.push('<p class="lede">Rated 4 or 5, and either under your ' + sc.thresh + ' word bar or using none of the evidence terms authored for that slot. This is the student who does not know what they do not know, and it is the one group on this page worth pulling aside by name.</p>');
+  out.push('<p class="lede">Rated 4 or 5, and either under your ' + sc.thresh + ' word bar or using none of the evidence terms for that slot. This is the student who does not know what they do not know, and it is the one group on this page worth pulling aside by name.' +
+    (usesTopicTerms(sc) ? ' On Foundations checkpoints the terms are the topic vocabulary, because that is where Foundations keeps them.' : '') + '</p>');
   if (!risky.length) {
     out.push('<p class="lede">Nobody in this scope is in that group.</p>');
   } else {
@@ -16330,6 +16637,10 @@ document.addEventListener('click', (e) => {
     else { S.filters.topic = topic; $('f-topic').value = topic; renderChrome(); renderActive(); }
     return;
   }
+  // A finding is only worth reading if it opens. Every one carries a control
+  // that lands on the panel holding its evidence.
+  const gotoBtn = t.closest('[data-goto]');
+  if (gotoBtn) { selectTab(gotoBtn.getAttribute('data-goto'), true); return; }
   const openBtn = t.closest('[data-open]');
   if (openBtn) { const [k, topic, slot] = openBtn.getAttribute('data-open').split('|'); openResponse(k, topic, slot, openBtn); return; }
   const normBtn = t.closest('[data-norm]');
