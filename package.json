@@ -30,6 +30,7 @@
     "hooks:install": "git config core.hooksPath .githooks && echo \"pre-push hook active: npm test runs before every push\"",
     "prepare": "git config core.hooksPath .githooks || true",
     "build:foundations": "node scripts/build-foundations-readings.js",
+    "build:deep-readings": "node scripts/build-deep-readings.js",
     "extract:foundations": "node scripts/extract-foundations-content.js",
     "build:readings": "node scripts/build-unit-readings.js",
     "extract:readings": "node scripts/extract-unit-content.js",

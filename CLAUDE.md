@@ -86,6 +86,7 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/extract-unit-content.js`, the one-way lift from hand-authored HTML into a content module. Refuses to read a page it generated, because re-extracting from generated output writes the generator's own bugs back in as authored content.
 - `node scripts/test/readings-golden.js`, prove the 58 generated unit readings still carry every word of the originals, against `scripts/test/fixtures/readings-before.json`.
 - `node scripts/build-foundations-readings.js`, rebuild the six Foundations First & 10 readings from `scripts/lib/foundations-f10-content.js`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/first-and-10-foundations-*.html`; they are generated.
+- `node scripts/build-deep-readings.js`, rebuild the deep readings from `scripts/lib/deep-reading-content/`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/deep-reading-*.html`; they are generated. See "Deep Readings" below.
 - `node scripts/test/foundations-golden.js`, prove the generated Foundations readings still carry every word, key term, callout, question and answer placeholder the hand-authored pages had. Compares content, not markup, against `scripts/test/fixtures/foundations-before.json`, a committed extraction of the originals. In the offline suite.
 - `node scripts/test/foundations-visual.js [--shots]`, browser check that the shared stylesheet renders those readings the same. Not in the suite: it renders the real pre-migration HTML, which a shallow CI checkout does not have. Run it by hand with `BASE=<ref>` when touching `assets/css/behistorical-first10.css` or the template. Nine reviewed deltas are listed in the script with reasons; anything else fails.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
@@ -147,6 +148,59 @@ capture block went missing twice.
 5. Wire the reproducibility check into the offline suite, so a hand-edit to a
    generated file fails the push instead of being silently reverted by the next
    rebuild.
+
+## Deep Readings
+
+A deep reading is the **optional push-further layer** under Content Delivery, for
+a topic whose modules assume more background than its First & 10 has room to
+carry. Foundations 3 is the case that produced it: 716 words of body text across
+Persia, Han China, Greece and Rome, about 179 each, against success criteria that
+ask a student to name a tool of rule and explain **the mechanism by which it
+worked**. The survey named the tools. A student cannot infer a mechanism from a
+name.
+
+Generated, like everything else. Content lives in
+`scripts/lib/deep-reading-content/<slug>.js`, `scripts/lib/deep-reading-page.js`
+renders it, and `scripts/build-deep-readings.js` writes the page beside the
+lesson it belongs to. Content modules are **discovered by reading the directory**,
+not listed, so adding one is a new content file plus a `deepReading` block in
+that topic's data file. Nothing else.
+
+**A deep reading is deliberately not a First & 10**, and the differences are the
+point:
+
+- **No questions, so no capture block, no storage key, and none of the
+  four-files-must-agree failure modes.** Nothing is submitted from a deep
+  reading. The ten modules remain the only path by which student writing reaches
+  Canvas.
+- **No coach bridge.** Socrates is told about exactly four assignments. A fifth
+  surface that grew a coach button silently would mean the coach meets work it
+  was told does not exist.
+- **No `<script>` at all.** A page with no script cannot ship a SyntaxError that
+  discards its own behaviour, which is the failure `readings-parse.test.js`
+  exists to catch on the 77.
+
+**The filename prefix is load-bearing.** `validate.js` globs Foundations lesson
+shells with `/^foundations-\d+.*\.html$/` and Foundations readings with
+`/^first-and-10-foundations.*\.html$/`. A deep reading must miss both, or it gets
+checked against a contract it was never meant to satisfy. Hence
+`deep-reading-<slug>.html`. Re-read those two globs before renaming these.
+
+**The renderer injects the card and hides the feature entirely when absent**, the
+same way the video block does, so the topics without one show no empty frame. It
+sits *after* the lecture cards on purpose: the cards are the path everyone walks
+and this is depth on top of them. Given the IEP and 504 load in this room, a
+reading this long placed above the cards reads as required work, which is why the
+card says optional twice.
+
+**Two checks, because each failure is silent.** `--check` in the offline suite
+proves the page still matches its content module. `validate.js` proves the page
+is **reachable**: a generated reading that no `deepReading` block points at sits
+on disk, gets served by Pages, and can only be found by typing the filename,
+with every other structural check green. It checks both directions, because a
+data file pointing at a missing page is a dead card and a page no content module
+produces is a hand-authored reading, which is the thing the content model exists
+to prevent.
 
 ## Image Contract
 

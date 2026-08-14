@@ -251,6 +251,24 @@ if(_lectureClose&&!byId('lecture-to-modules')){
   _row.insertAdjacentHTML('afterbegin',`<button class="btn secondary lecture-to-modules" id="lecture-to-modules" type="button" onclick="closeLectureToModules()">&#8593; Back to Modules</button>`);
   _row.appendChild(_lectureClose);
 }
+// The deep reading is the optional push-further layer, for a topic whose
+// modules assume more background than its First & 10 has room to carry. Like
+// the video block it introduces itself when one exists and leaves no trace when
+// one does not, so the 5 topics without one show no empty frame.
+//
+// Injected rather than added to the six shells, so this renderer stays the only
+// place that knows the shape, and guarded on its own id the way the lecture
+// controls are, or a re-render doubles the card.
+//
+// It sits AFTER the lecture cards on purpose. The cards are the path everyone
+// walks; this is depth on top of them. Given the IEP and 504 load in this room,
+// a 1,200-words-per-empire reading placed above the cards reads as required
+// work, and the wording below says optional twice for the same reason.
+const _deep=T.deepReading||null;
+const _lectureSection=byId('lecture');
+if(_deep&&_deep.url&&_lectureSection&&_lectureGrid&&!byId('deep-reading-banner')){
+  _lectureGrid.insertAdjacentHTML('afterend',`<article class="foundation-card deep-reading-banner" id="deep-reading-banner" style="margin-top:1.5rem"><div class="eyebrow">Optional, go deeper</div><h3>${_deep.title||'Deep Reading'}</h3><p>${_deep.desc||'A textbook-depth companion to this topic, for when you want more detail than the First &amp; 10 has room for.'}</p><a class="btn" href="${_deep.url}">Open the Deep Reading</a></article>`);
+}
 // Video clips are an optional resource, not part of the ten-module path and not
 // part of the lecture deck. The block introduces itself when clips exist and
 // disappears entirely when they do not, so a topic with none shows no gap.

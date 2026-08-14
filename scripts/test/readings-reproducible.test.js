@@ -29,7 +29,8 @@ const SUITES = [
   ['scripts/build-foundations-readings.js', 'Foundations readings vs foundations-f10-content.js'],
   ['scripts/build-unit-readings.js', 'unit readings vs scripts/lib/reading-content/*'],
   ['scripts/build-unit6.js', 'Unit 6 readings, data, shells and rooms'],
-  ['scripts/build-unit9.js', 'Unit 9 readings, data, shells and rooms']
+  ['scripts/build-unit9.js', 'Unit 9 readings, data, shells and rooms'],
+  ['scripts/build-deep-readings.js', 'deep readings vs scripts/lib/deep-reading-content/*']
 ];
 
 let failed = 0;

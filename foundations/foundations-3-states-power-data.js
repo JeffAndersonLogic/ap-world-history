@@ -61,6 +61,16 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Choose one state visible on this map (Rome, Han China, or Parthian Persia). Identify one governance problem it faced and one tool it used to address that problem. Explain the connection.'
   },
 
+  // The optional push-further layer, rendered under the lecture cards by
+  // foundations-topic-renderer.js. The page is generated from
+  // scripts/lib/deep-reading-content/foundations-3.js; never hand-edit it.
+  // Omit this field entirely and the whole feature disappears from the page.
+  deepReading: {
+    title: 'The Machinery of Power',
+    desc: 'A textbook-depth companion covering Persia, Han China, Greece and Rome one at a time, with the mechanism behind each tool of rule, who each system excluded, and where each one cracked. Optional, and useful when a checkpoint asks you how a tool actually worked.',
+    url: 'deep-reading-foundations-3-states-power.html'
+  },
+
   first10: {
     title: 'First & 10: Four Ways to Hold Power',
     embedUrl: 'first-and-10-foundations-3-states-power-capture.html?v=response-id-fix-v1',

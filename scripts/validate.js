@@ -518,6 +518,93 @@ section('First & 10 storage key, write and read sides agree');
   sectionDone(`3 endpoints agree on ${FIRST10_STORAGE_PREFIX}<TOPIC_KEY>`);
 }
 
+// 7c. Deep readings are reachable from the lesson that owns them.
+//
+// A deep reading is generated into the lesson's folder but is reached only by
+// the `deepReading` block in that topic's data file, which the renderer turns
+// into the card under the lecture grid. Nothing else points at the page, so a
+// missing or mistyped url leaves a complete reading sitting on disk, served by
+// Pages, and reachable only by someone who types the filename. Every structural
+// check stays green: the file is there, the data file parses, the lesson
+// renders. It is the orphaned-page failure, and it is silent by construction.
+//
+// Both directions are checked, because each fails on its own. A data file
+// pointing at a page that does not exist is a dead card; a generated page no
+// data file points at is an unreachable reading.
+section('Deep readings are linked from their lesson');
+{
+  const contentDir = path.join(ROOT, 'scripts', 'lib', 'deep-reading-content');
+  const modules = exists(contentDir)
+    ? fs.readdirSync(contentDir).filter(f => f.endsWith('.js')).sort()
+    : [];
+
+  // Two sets, deliberately. `generated` is every page a content module claims,
+  // whether or not its link checked out; `linked` is the ones that fully passed.
+  // The orphan sweep below must use `generated`, or a topic that fails the link
+  // check also gets reported as hand-authored, which is a second error for one
+  // fault and sends you looking in the wrong directory.
+  const generated = new Set();
+  const linked = new Set();
+
+  for (const file of modules) {
+    totalChecks++;
+    let topic;
+    try {
+      topic = require(path.join(contentDir, file));
+    } catch (e) {
+      err(path.join(contentDir, file), `content module does not load: ${e.message}`);
+      continue;
+    }
+
+    const dir = /^foundations-/.test(topic.slug || '')
+      ? path.join(ROOT, 'foundations')
+      : path.join(ROOT, `unit-${(/^topic-(\d)/.exec(topic.slug || '') || [])[1]}`);
+
+    if (topic.sourceFile) generated.add(topic.sourceFile);
+
+    const page = path.join(dir, topic.sourceFile || '');
+    const lesson = path.join(dir, topic.lessonFile || '');
+    // The lesson shell names its data file; the deepReading block lives there.
+    const data = lesson.replace(/\.html$/, '-data.js');
+
+    if (!exists(page)) {
+      err(page, `generated page missing, run: npm run build:deep-readings`);
+      continue;
+    }
+    if (!exists(data)) {
+      err(data, `deep reading ${topic.sourceFile} names a lesson with no data file`);
+      continue;
+    }
+
+    const src = read(data) || '';
+    if (!/\bdeepReading\s*:/.test(src)) {
+      err(data, `deep reading ${topic.sourceFile} exists but this lesson has no deepReading block, so nothing links to it`);
+      continue;
+    }
+    if (!src.includes(topic.sourceFile)) {
+      err(data, `deepReading.url does not point at ${topic.sourceFile}, so the card is a dead link`);
+      continue;
+    }
+    linked.add(topic.sourceFile);
+  }
+
+  // The other direction: a page on disk that no content module produces is a
+  // hand-authored deep reading, which is the thing the content model exists to
+  // prevent. Only foundations/ and unit-N/ are scanned, matching where the
+  // builder writes.
+  const searchDirs = [path.join(ROOT, 'foundations'), ...Array.from({ length: 9 }, (_, i) => path.join(ROOT, `unit-${i + 1}`))];
+  for (const dir of searchDirs) {
+    for (const found of glob(dir, /^deep-reading-.*\.html$/)) {
+      totalChecks++;
+      if (!generated.has(path.basename(found))) {
+        err(found, 'deep reading has no content module in scripts/lib/deep-reading-content/, so a rebuild cannot reproduce it');
+      }
+    }
+  }
+
+  sectionDone(`${linked.size} deep reading${linked.size === 1 ? '' : 's'} generated and linked`);
+}
+
 // 8. The Google Form is retired. This check keeps it retired.
 //
 // Student work goes to Canvas through Gather All My Work. A second collection
