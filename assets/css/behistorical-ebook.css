@@ -141,3 +141,49 @@ li.eb-toc-pending .eb-toc-title{color:var(--iron)}
   .eb-chapter-head{break-inside:avoid;border-left-width:4pt}
   .eb-chapter-return{display:none}
 }
+
+/* ── library page ───────────────────────────────────────────────────────── */
+.eb-library{padding:clamp(2.2rem,5vw,3.6rem) 0 clamp(2rem,4vw,3rem)}
+.eb-library h2{
+  font-family:var(--font-display); font-size:clamp(1.2rem,2.6vw,1.6rem);
+  font-weight:700; letter-spacing:.06em; color:var(--steel);
+  padding-bottom:.6rem; border-bottom:2px solid var(--steel); margin-bottom:1.3rem;
+}
+.eb-lib-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem}
+.eb-lib-card{background:var(--clean);border:1px solid var(--rule);border-top:4px solid var(--gold);display:flex;flex-direction:column}
+.eb-lib-open{display:block;padding:1.3rem 1.4rem 1rem;text-decoration:none;color:inherit}
+.eb-lib-open:hover,.eb-lib-open:focus-visible{background:#f7f1e3;outline:none}
+.eb-lib-open h3{
+  font-family:var(--font-display); font-size:clamp(1.15rem,2.4vw,1.5rem);
+  font-weight:700; letter-spacing:.03em; color:var(--steel); line-height:1.15;
+}
+.eb-lib-open h3 em{font-style:normal;color:var(--oxidized)}
+.eb-lib-blurb{font-size:.87rem;line-height:1.7;margin-top:.6rem;color:var(--ink)}
+.eb-lib-meta{
+  font-family:var(--font-ui); font-size:.65rem; font-weight:700;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--oxidized);
+  margin-top:.9rem; font-variant-numeric:tabular-nums;
+}
+ul.eb-lib-chapters{
+  list-style:none; border-top:1px solid var(--rule-soft);
+  display:grid; gap:1px; background:var(--rule-soft); margin-top:auto;
+}
+ul.eb-lib-chapters li{background:#faf6ec}
+ul.eb-lib-chapters a,
+ul.eb-lib-chapters li.eb-lib-pending{
+  display:flex; align-items:baseline; gap:.55rem; padding:.55rem 1.4rem;
+  font-family:var(--font-ui); font-size:.74rem; line-height:1.45;
+  color:var(--charcoal); text-decoration:none;
+}
+ul.eb-lib-chapters a:hover,ul.eb-lib-chapters a:focus-visible{background:#f2ead9;color:var(--steel);outline:none}
+li.eb-lib-pending{color:var(--iron);font-style:italic;background:#f0eade}
+li.eb-lib-pending .eb-sec-n{color:var(--sandstone)}
+.eb-lib-note{
+  margin-top:1.4rem; padding:.9rem 1.1rem; background:#f6efe1;
+  border-left:4px solid var(--sandstone); font-size:.83rem; line-height:1.7;
+  max-width:66ch; color:var(--charcoal);
+}
+
+@media print{
+  .eb-lib-open:hover{background:none}
+}

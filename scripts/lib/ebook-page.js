@@ -168,4 +168,85 @@ ${chapterNav(entries)}${body}  <footer class="dr-footer">
 `);
 }
 
-module.exports = { renderEbook };
+
+/**
+ * The library page: one card per volume, listing what is written and what is
+ * not. This is the stable eBook URL that index.html links and that gets pasted
+ * into Canvas, which is why the front door points here rather than at a volume
+ * file: adding a volume must never require editing the front door or re-sharing
+ * a link.
+ *
+ * @param {object} library  the LIBRARY config from scripts/build-ebook.js
+ * @param {object[]} volumes [{ volume, chapters, pending }]
+ */
+function renderLibrary(library, volumes) {
+  const cards = volumes.map(({ volume, chapters, pending }) => {
+    const sections = chapters.reduce((sum, c) => sum + (c.empires || []).length, 0);
+    const written = chapters.map(c =>
+      `          <li><a href="${esc(path_basename(volume.outputFile))}#chapter-${esc(c.topicKey)}">` +
+      `<span class="eb-sec-n">${esc(chapterNumber(c))}</span>${esc(stripTags(c.titleHtml))}</a></li>\n`
+    ).join('');
+    const soon = pending.map(p =>
+      `          <li class="eb-lib-pending"><span class="eb-sec-n">&mdash;</span>${esc(p.title)}</li>\n`
+    ).join('');
+
+    return (
+      `      <article class="eb-lib-card">\n` +
+      `        <a class="eb-lib-open" href="${esc(path_basename(volume.outputFile))}">\n` +
+      `          <h3>${volume.titleHtml}</h3>\n` +
+      `          <p class="eb-lib-blurb">${volume.blurb}</p>\n` +
+      `          <p class="eb-lib-meta">${chapters.length} chapter${chapters.length === 1 ? '' : 's'}` +
+      ` &nbsp;·&nbsp; ${sections} sections` +
+      `${pending.length ? ` &nbsp;·&nbsp; ${pending.length} still to come` : ''}</p>\n` +
+      `        </a>\n` +
+      `        <ul class="eb-lib-chapters">\n${written}${soon}        </ul>\n` +
+      `      </article>\n`
+    );
+  }).join('');
+
+  return (
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${esc(library.docTitle)}</title>
+  <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
+  <link rel="stylesheet" href="../assets/css/behistorical-ebook.css">
+</head>
+<body class="eb-body">
+<header class="eb-cover">
+  <div class="dr-wrap">
+    <div class="dr-eyebrow">${library.eyebrow}</div>
+    <h1>${library.titleHtml}</h1>
+    <p class="eb-cover-deck">${library.deck}</p>
+  </div>
+</header>
+<div class="dr-wrap">
+  <section class="eb-library">
+    <h2>Volumes</h2>
+    <div class="eb-lib-grid">
+${cards}    </div>
+    <p class="eb-lib-note">${library.note}</p>
+  </section>
+  <footer class="dr-footer">
+    <span class="dr-footer-note">BeHistorical &nbsp;·&nbsp; The eBook &nbsp;·&nbsp; Generated from the course content model</span>
+    <nav class="dr-nav" aria-label="Course navigation">
+      <a href="../index.html">Course Home</a>
+      <a href="../foundations/index.html">Foundations</a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
+`);
+}
+
+/** basename without pulling in path, since this file renders and does no I/O. */
+function path_basename(p) { return String(p).split('/').pop(); }
+
+/** The volume title is authored as HTML for the <em> highlight; the library
+ *  chapter list needs it as plain text. */
+function stripTags(html) { return String(html || '').replace(/<[^>]+>/g, ''); }
+
+module.exports = { renderEbook, renderLibrary };

@@ -30,16 +30,30 @@
 
 const fs = require('fs');
 const path = require('path');
-const { renderEbook } = require('./lib/ebook-page');
+const { renderEbook, renderLibrary } = require('./lib/ebook-page');
 
 const ROOT = path.resolve(__dirname, '..');
 const CONTENT_DIR = path.join(__dirname, 'lib', 'deep-reading-content');
 const check = process.argv.includes('--check');
 
+// The library page: the one stable eBook URL. It is what index.html links and
+// what gets pasted into Canvas, so it must keep working as volumes are added.
+// Linking a volume file directly from the front door would mean changing the
+// front door, and re-pasting the Canvas link, every time a volume lands.
+const LIBRARY = {
+  outputFile: 'ebook/index.html',
+  docTitle: 'BeHistorical | The eBook',
+  eyebrow: 'BeHistorical &nbsp;·&nbsp; AP World History: Modern',
+  titleHtml: 'The BeHistorical <em>eBook</em>',
+  deck: `The course reading, in one place, written for this class rather than adapted from a textbook. Each chapter goes deeper than the First &amp; 10 for that topic, because the checkpoints ask you to explain how something worked and why it mattered, and a name is not a mechanism.`,
+  note: `Volumes are added as they are written. A topic listed as not written yet has its First &amp; 10 reading and its lecture cards on the lesson page already; what it does not have yet is a chapter here.`
+};
+
 const VOLUMES = [
   {
     id: 'foundations',
     outputFile: 'ebook/foundations.html',
+    blurb: `The pre-1200 bridge unit: how geography produced the first civilizations, how classical states held power, and what AP World assumes you already know before Unit 1 begins.`,
     docTitle: 'BeHistorical | The Foundations eBook',
     eyebrow: 'BeHistorical &nbsp;·&nbsp; AP World History: Modern',
     titleHtml: 'The Foundations <em>eBook</em>',
@@ -64,7 +78,7 @@ const VOLUMES = [
 // require() would execute the builder, which would mean the validator writes
 // files as a side effect of validating, and a check that silently rebuilds the
 // thing it is checking can never fail.
-module.exports = { VOLUMES };
+module.exports = { VOLUMES, LIBRARY };
 
 if (require.main !== module) return;
 
@@ -99,6 +113,27 @@ for (const volume of VOLUMES) {
   fs.writeFileSync(target, html);
   wrote++;
   console.log(`  wrote ${rel}  (${chapters.length} chapters)`);
+}
+
+// The library indexes whatever volumes exist, so it is regenerated with them.
+{
+  const target = path.join(ROOT, LIBRARY.outputFile);
+  const rel = path.relative(ROOT, target);
+  const html = renderLibrary(LIBRARY, VOLUMES.map(v => ({
+    volume: v,
+    chapters: v.contents.filter(e => e.slug).map(e => loadChapter(e.slug)),
+    pending: v.contents.filter(e => e.pending).map(e => e.pending)
+  })));
+
+  if (check) {
+    const onDisk = fs.existsSync(target) ? fs.readFileSync(target, 'utf8') : null;
+    if (onDisk !== html) drifted.push(rel);
+  } else {
+    fs.mkdirSync(path.dirname(target), { recursive: true });
+    fs.writeFileSync(target, html);
+    wrote++;
+    console.log(`  wrote ${rel}  (library, ${VOLUMES.length} volume${VOLUMES.length === 1 ? '' : 's'})`);
+  }
 }
 
 if (check) {

@@ -615,9 +615,9 @@ section('Deep readings are linked from their lesson');
 // mean a book with a chapter missing.
 section('eBook volumes are generated and linked');
 {
-  let VOLUMES = [];
+  let VOLUMES = [], LIBRARY = null;
   try {
-    ({ VOLUMES } = require(path.join(ROOT, 'scripts', 'build-ebook.js')));
+    ({ VOLUMES, LIBRARY } = require(path.join(ROOT, 'scripts', 'build-ebook.js')));
   } catch (e) {
     err(path.join(ROOT, 'scripts', 'build-ebook.js'), `does not load: ${e.message}`);
   }
@@ -655,7 +655,31 @@ section('eBook volumes are generated and linked');
     }
   }
 
-  sectionDone(`${VOLUMES.length} eBook volume${VOLUMES.length === 1 ? '' : 's'} generated and linked`);
+  // The library is the one stable eBook URL and the only one the front door
+  // links, so it carries the reachability contract for every volume behind it:
+  // if the library is missing or the home page stops linking it, every volume
+  // becomes unreachable at once while each individual volume file still exists.
+  if (LIBRARY) {
+    totalChecks++;
+    const lib = path.join(ROOT, LIBRARY.outputFile);
+    if (!exists(lib)) {
+      err(lib, 'eBook library missing, run: npm run build:ebook');
+    } else {
+      const home = read(path.join(ROOT, 'index.html')) || '';
+      if (!home.includes(LIBRARY.outputFile)) {
+        err(path.join(ROOT, 'index.html'), `the front door does not link ${LIBRARY.outputFile}, so the eBook is reachable only by typing the URL`);
+      }
+      const libSrc = read(lib) || '';
+      for (const volume of VOLUMES) {
+        totalChecks++;
+        if (!libSrc.includes(path.basename(volume.outputFile))) {
+          err(lib, `library does not list volume "${volume.id}"`);
+        }
+      }
+    }
+  }
+
+  sectionDone(`${VOLUMES.length} eBook volume${VOLUMES.length === 1 ? '' : 's'} in a library the front door links`);
 }
 
 // 8. The Google Form is retired. This check keeps it retired.

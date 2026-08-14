@@ -242,11 +242,20 @@ means the validator writes files as a side effect of validating, and a check
 that silently rebuilds the thing it is checking can never fail. That bug existed
 for about ten minutes and is exactly the kind this repo is built to refuse.
 
+**`ebook/index.html` is the library, and it is the one stable eBook URL.** The
+front door links the library, never a volume file, because the library keeps
+working as volumes are added while a direct link would mean editing `index.html`
+and re-pasting the Canvas link every time one lands. It is generated from the
+same `VOLUMES` list, so it cannot list a volume that does not exist or miss one
+that does.
+
 **Two checks, same shape as the deep readings.** `--check` in the offline suite
-proves each volume still matches its chapter modules. `validate.js` proves the
-volume exists, that every slug it names has a content module, and that **some
-hub page links to it**, because a volume nothing links to is served by Pages and
-reachable only by typing the URL.
+proves each volume and the library still match the chapter modules.
+`validate.js` proves each volume exists, that every slug it names has a content
+module, that the library lists every volume, and that **`index.html` links the
+library**, because the library carries reachability for everything behind it: if
+the front door stops linking it, every volume goes unreachable at once while each
+volume file still sits happily on disk.
 
 ## Image Contract
 
