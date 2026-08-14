@@ -67,6 +67,12 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Using the map as your evidence, explain how Buddhism reached two different regions. For each one, name the specific places the arrows pass through, identify which tradition arrived (Theravada, Mahayana, or Vajrayana) and roughly when, and state the mechanism that carried it: trade, pilgrimage, monastic networks, translation, or royal patronage. Then connect it to another of the six belief systems: which mechanism did Christianity or Islam share with Buddhism, and where did the two differ?'
   },
 
+  deepReading: {
+    title: 'What a Belief System Does',
+    desc: 'A textbook-depth companion covering seven traditions one at a time, each on the same four questions: what it claims, what it actually ran, how it traveled, and who it ranked where. A final section works through three cases of syncretism. Optional, and useful when a question asks what a belief system did institutionally rather than what people believed.',
+    url: 'deep-reading-foundations-2-belief-systems.html'
+  },
+
   first10: {
     title: 'First & 10: Six Ways to Order a World',
     embedUrl: 'first-and-10-foundations-2-belief-systems-capture.html?v=response-id-fix-v1',

@@ -61,6 +61,12 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Choose one trade network, Silk Roads, Indian Ocean, or Trans-Saharan. Identify one chokepoint or junction city on that network and explain why its geographic position made it economically or politically powerful.'
   },
 
+  deepReading: {
+    title: 'Nobody Traveled the Whole Road',
+    desc: 'A textbook-depth companion covering the three networks one at a time, with the named oasis towns and ports and what each was for, the monsoon by month and direction, and then the four things that traveled without anyone intending it. Optional, and useful when a question asks how a network actually worked rather than what moved along it.',
+    url: 'deep-reading-foundations-4-trade-networks.html'
+  },
+
   first10: {
     title: 'First & 10: Three Networks That Moved the World',
     embedUrl: 'first-and-10-foundations-4-trade-networks-capture.html?v=response-id-fix-v1',

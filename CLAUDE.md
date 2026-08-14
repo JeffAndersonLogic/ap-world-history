@@ -189,9 +189,9 @@ checked against a contract it was never meant to satisfy. Hence
 **The renderer injects the card and hides the feature entirely when absent**, the
 same way the video block does, so the topics without one show no empty frame. It
 sits *after* the lecture cards on purpose: the cards are the path everyone walks
-and this is depth on top of them. Given the IEP and 504 load in this room, a
-reading this long placed above the cards reads as required work, which is why the
-card says optional twice.
+and this is depth on top of them. A reading this long placed above the cards reads
+as required work rather than as an offer, which is why it sits below them and why
+the card says optional twice.
 
 **Two checks, because each failure is silent.** `--check` in the offline suite
 proves the page still matches its content module. `validate.js` proves the page

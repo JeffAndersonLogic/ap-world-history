@@ -61,6 +61,12 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Using evidence from at least two different Foundations days, write a contextualization statement explaining the historical conditions that shaped Song China\'s prosperity at c.1200.'
   },
 
+  deepReading: {
+    title: 'The Starting Line',
+    desc: 'A textbook-depth companion in two halves: six regional snapshots as they actually stood around 1200, each ending with the Foundations theme that explains it, and then the five thinking skills with a worked example and a failure mode for each. Optional, and useful when you need the baseline a continuity and change question measures against.',
+    url: 'deep-reading-foundations-5-world-at-1200.html'
+  },
+
   first10: {
     title: 'First & 10: Six Windows on c.1200',
     embedUrl: 'first-and-10-foundations-5-world-at-1200-capture.html?v=response-id-fix-v1',
