@@ -54,7 +54,8 @@ const SUITES = {
     ['scripts/test/skills-lens.test.js', 'Skills Lens panels'],
     ['scripts/test/skills-lens-zip.test.js', 'Skills Lens zip drop + CSP lock'],
     ['scripts/test/topic-1-7-five-questions.test.js', 'Topic 1.7 five-question path'],
-    ['scripts/test/coach-prompt.test.js', 'checkpoint paste matches the Node contract']
+    ['scripts/test/coach-prompt.test.js', 'checkpoint paste matches the Node contract'],
+    ['scripts/test/ebook-a11y.test.js', 'eBook landmarks, focus, reflow, contrast']
   ]
 };
 

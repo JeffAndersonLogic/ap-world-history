@@ -88,6 +88,11 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-foundations-readings.js`, rebuild the six Foundations First & 10 readings from `scripts/lib/foundations-f10-content.js`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/first-and-10-foundations-*.html`; they are generated.
 - `node scripts/build-deep-readings.js`, rebuild the deep readings from `scripts/lib/deep-reading-content/`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/deep-reading-*.html`; they are generated. See "Deep Readings" below.
 - `node scripts/build-ebook.js`, compile the deep readings for a volume into `ebook/<volume>.html`. `--check` fails on drift without writing, which is what the offline suite runs. See "The eBook" below.
+- `node scripts/test/ebook-a11y.test.js`, drive both generated eBook pages in
+  Chromium and assert the WCAG 2.1 AA contract: skip link first and visible,
+  one `<main>` with the footer outside it, a focus ring on every interactive
+  element, no sideways scroll at 320px or at 200% zoom, and no text under its
+  contrast threshold. In the browser suite. See "eBook accessibility" below.
 - `node scripts/check-style.js`, the mechanical half of the house style: American
   English spelling, `c. 1200` rather than `c.1200`, no em or en dashes in prose, and
   the two canonical note labels. In the offline suite. It reads the deep-reading
@@ -254,6 +259,46 @@ working as volumes are added while a direct link would mean editing `index.html`
 and re-pasting the Canvas link every time one lands. It is generated from the
 same `VOLUMES` list, so it cannot list a volume that does not exist or miss one
 that does.
+
+### eBook accessibility
+
+The eBook is the surface a student reads at length, on a phone, on a projector,
+and in May when they have three weeks to catch up. It is held to WCAG 2.1 AA,
+and the parts of that which can be checked by machine are.
+
+**Antique Gold is a dark-surface colour.** It is 7.3:1 on steel and 2.1:1 on
+paper, which is under the 3:1 that even large text is allowed. It keeps the
+cover, the mastheads, the card rules and the chapter opener's border; it is not
+used for text on paper, and `.dr-usethis > b` uses it rather than `--accent`
+because three of the four empire accents are paper colours that read at 1.9:1 to
+3.7:1 on that panel's dark ground. On light surfaces the equivalent is
+`--oxidized`, at 7.9:1. **Do not "restore" gold on a cream row.** It looks more
+on brand and is the defect this section exists to describe.
+
+**Focus is a ring, not a tint.** `behistorical-deep-reading.css` defines one
+`:focus-visible` treatment for every interactive element, and nothing may go
+back to `outline:none` plus a background change: a 3% shift between two creams
+is invisible on a projector and absent entirely in forced-colours mode. Hover
+tints are unaffected and should stay.
+
+**Both page types render `<main id="main-content">` with the footer outside it,
+and a skip link as the literal first element in `<body>`.** Both come from
+`scripts/lib/ebook-page.js`, which holds the skip link in one constant so the
+two templates cannot point at different ids.
+
+**Grid minimums are `minmax(min(100%,N),1fr)`, never `minmax(N,1fr)`.** A bare
+floor is a width the track cannot go under, so at the 320px viewport reflow is
+tested at, a 320px card inside a wrap that has already spent 32px on padding
+scrolls the whole page sideways.
+
+**Two checks, and they cover different failures.** `validate.js` proves the
+landmarks and the skip link are in the generated HTML, offline, in the push
+gate. `scripts/test/ebook-a11y.test.js` proves the things only a rendered page
+knows: that the skip link is really what Tab reaches first, that the ring really
+paints, that nothing overflows 320px, and that no text is under its contrast
+threshold. The contrast sweep is the one that earns its runtime, because the
+same colour is correct on the cover and wrong on the contents rows and only a
+browser can tell those two uses apart.
 
 **Two checks, same shape as the deep readings.** `--check` in the offline suite
 proves each volume and the library still match the chapter modules.

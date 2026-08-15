@@ -37,6 +37,84 @@ body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-
 
 .dr-wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
 
+/* ── keyboard focus ─────────────────────────────────────────────────────── */
+/*
+ * One visible focus ring for every interactive element on every surface.
+ *
+ * The rules further down this file, and in behistorical-ebook.css, used to set
+ * `outline:none` on :focus-visible and lean on the hover tint to show where the
+ * keyboard was. That is a change of colour alone: a 3% background shift is hard
+ * to see on a projector, invisible to anyone who cannot separate the two creams,
+ * and dropped entirely in forced-colours mode. A ring is a shape, and it is
+ * drawn outside the element, so the hover tint still does its own job underneath
+ * and nothing about hover changes.
+ *
+ * Oxidized Brown rather than Antique Gold, because the ring has to read against
+ * paper: gold on --paper is 2.1:1, well under the 3:1 WCAG 1.4.11 asks of a
+ * focus indicator, while oxidized is 7.9:1. Gold is not retired, it is moved to
+ * the surfaces where it is the stronger of the two; see the override below.
+ */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--oxidized);
+  outline-offset:3px;
+}
+
+/* Dark surfaces flip the ring to gold, which is 7.3:1 on steel where oxidized
+   is 2.1:1. Same shape, same width, opposite polarity. */
+.dr-masthead a:focus-visible,
+.dr-usethis a:focus-visible{outline-color:var(--gold)}
+
+/* The jump bar is a horizontal scroll container, and a scroll container clips
+   anything drawn outside its children. An offset ring here would be cropped to
+   nothing, so this one goes inside the link instead of around it. */
+.dr-jump a:focus-visible{outline-color:var(--gold);outline-offset:-3px}
+
+/* ── skip link ──────────────────────────────────────────────────────────── */
+/*
+ * The first focusable thing on the page, so a keyboard or screen-reader user can
+ * step over the cover masthead in one keystroke and land on the main landmark
+ * instead of tabbing in from the top of the document every time.
+ *
+ * Moved off-screen rather than `display:none` or `visibility:hidden`, both of
+ * which take it out of the focus order and out of the accessibility tree, which
+ * would leave a skip link unreachable by the only people who need it. Parking it
+ * to the left is deliberate too: in a left-to-right document, content off the
+ * left edge does not extend the scrollable area, so this cannot make the page
+ * scroll sideways.
+ */
+.skip-link{
+  position:absolute; top:0; left:-9999px; z-index:100;
+  background:var(--steel); color:var(--clean);
+  border-bottom:3px solid var(--gold);
+  padding:.8rem 1.2rem;
+  font-family:var(--font-ui); font-size:.75rem; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; text-decoration:none;
+}
+/*
+ * :focus, not :focus-visible. Nothing reaches this link except the keyboard and
+ * the screen reader, so there is no mouse case to suppress, and a browser that
+ * disagrees about heuristic focus must not be able to hide it.
+ *
+ * Two rings, light inside dark, because this is the one element whose backdrop
+ * is not knowable from the stylesheet: it is position:fixed, so it sits over the
+ * near-black cover at the top of the page and over cream paper once the reader
+ * has scrolled. No single colour covers both, and the two candidates fail in
+ * opposite directions, gold being 7.3:1 on the cover and 2.1:1 on paper while
+ * oxidized is the reverse. The pair always leaves one edge at 7.9:1 or better
+ * whatever is underneath.
+ */
+.skip-link:focus{
+  position:fixed; top:1rem; left:1rem;
+  outline:3px solid var(--oxidized); outline-offset:3px;
+  box-shadow:0 0 0 3px var(--clean);
+}
+
 /* ── masthead ───────────────────────────────────────────────────────────── */
 .dr-masthead{background:var(--steel);color:var(--clean);border-bottom:3px solid var(--gold);padding:clamp(2rem,5vw,3.4rem) 0 clamp(1.6rem,3vw,2.2rem)}
 .dr-eyebrow{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
@@ -50,7 +128,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-
 .dr-jump{position:sticky;top:0;z-index:20;background:rgba(26,28,29,.97);border-bottom:1px solid var(--gunmetal)}
 .dr-jump ul{max-width:1080px;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem);list-style:none;display:flex;gap:0;overflow-x:auto}
 .dr-jump a{display:block;padding:.7rem .95rem;font-family:var(--font-ui);font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sandstone);text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap}
-.dr-jump a:hover,.dr-jump a:focus-visible{color:var(--clean);border-bottom-color:var(--gold);outline:none}
+.dr-jump a:hover,.dr-jump a:focus-visible{color:var(--clean);border-bottom-color:var(--gold)}
 .dr-jump a .n{font-variant-numeric:tabular-nums;color:var(--gold);margin-right:.4rem}
 
 /* ── how to use ─────────────────────────────────────────────────────────── */
@@ -69,7 +147,13 @@ body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-
 .empire.accent-oxide{--accent:#6b3e1f;--accent-deep:#4a2a13;--tint:#f5ebe1}
 
 .dr-ehead{display:grid;grid-template-columns:auto 1fr;gap:0 1.2rem;align-items:start;margin-bottom:1.6rem}
-.dr-enum{font-family:var(--font-display);font-size:clamp(2.2rem,5vw,3.2rem);font-weight:700;line-height:.9;color:var(--accent);font-variant-numeric:tabular-nums;padding-top:.1em}
+/* --accent-deep, not --accent. On the gold empires --accent is Antique Gold,
+   which is 2.1:1 against paper: under 3:1 even at this size, and this number is
+   how the contents page and the jump bar refer to the section, so it is content
+   rather than ornament. --accent-deep is the same hue family one step down and
+   clears 5:1 on every empire. The gold stays on the rules and the key-term
+   underlines around it. */
+.dr-enum{font-family:var(--font-display);font-size:clamp(2.2rem,5vw,3.2rem);font-weight:700;line-height:.9;color:var(--accent-deep);font-variant-numeric:tabular-nums;padding-top:.1em}
 .dr-ehead h2{font-family:var(--font-display);font-size:clamp(1.45rem,3.4vw,2.15rem);font-weight:700;letter-spacing:.03em;color:var(--steel);line-height:1.15;text-wrap:balance}
 .dr-dates{font-family:var(--font-ui);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-deep);margin-top:.5rem;font-variant-numeric:tabular-nums}
 .dr-thesis{grid-column:2;font-size:clamp(.95rem,1.7vw,1.08rem);line-height:1.7;color:var(--charcoal);margin-top:.9rem;max-width:60ch;font-style:italic;border-left:3px solid var(--accent);padding-left:1rem}
@@ -92,7 +176,15 @@ body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-
 
 /* ── use this in your answer ────────────────────────────────────────────── */
 .dr-usethis{background:var(--steel);color:var(--clean);padding:1.3rem 1.4rem;margin-top:2rem;border-top:3px solid var(--accent)}
-.dr-usethis > b{display:block;font-family:var(--font-ui);font-size:.63rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.9rem}
+/* --gold, not --accent. This panel is the one dark surface a section paints, and
+   three of the four empire accents are dark colours chosen to sit on paper: on
+   steel they measure 3.7:1 (rust), 2.6:1 (oxide) and 1.9:1 (iron) against the
+   4.5:1 this 10px label needs, so the heading of the "use this in your answer"
+   box was close to invisible on three empires out of four. Gold is 7.3:1 here
+   and is already the on-dark accent everywhere else in this stylesheet, from the
+   eyebrow to the masthead highlight to the jump-bar numerals. The per-empire
+   colour is not lost: the panel's top rule above still carries --accent. */
+.dr-usethis > b{display:block;font-family:var(--font-ui);font-size:.63rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
 .dr-usethis dl{display:grid;gap:.85rem}
 .dr-usethis dt{font-family:var(--font-ui);font-size:.64rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sandstone);margin-bottom:.2rem}
 .dr-usethis dd{font-size:.87rem;line-height:1.65;color:#eee6d9;max-width:66ch}
@@ -101,7 +193,12 @@ body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-
 /* ── terms ──────────────────────────────────────────────────────────────── */
 .dr-terms{margin-top:1.7rem}
 .dr-terms h3{font-family:var(--font-ui);font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-deep);padding-bottom:.4rem;border-bottom:1px solid var(--rule);margin-bottom:.8rem}
-.dr-terms dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.8rem 1.6rem}
+/* minmax(min(100%,250px),1fr), not minmax(250px,1fr). A bare minimum is a floor
+   the track cannot go under, so at a 320px viewport, where .dr-wrap has already
+   spent 32px on padding, the grid is wider than the page and the whole document
+   scrolls sideways. min(100%,250px) lets the track collapse to the container on
+   the narrow end and changes nothing above it. */
+.dr-terms dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:.8rem 1.6rem}
 .dr-terms dt{font-weight:700;color:var(--steel);font-size:.87rem}
 .dr-terms dd{font-size:.82rem;line-height:1.6;color:var(--charcoal);margin-top:.15rem}
 
@@ -109,7 +206,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-
 .dr-closing{border-top:3px solid var(--steel);margin-top:clamp(2.5rem,5vw,4rem);padding:clamp(2rem,4vw,3rem) 0 2rem}
 .dr-closing h2{font-family:var(--font-display);font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700;letter-spacing:.03em;color:var(--steel);margin-bottom:1rem}
 .dr-closing > p{max-width:64ch;margin-bottom:1.6rem}
-.dr-pairs{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:1rem}
+.dr-pairs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,285px),1fr));gap:1rem}
 .dr-pair{background:var(--clean);border:1px solid var(--rule);border-top:3px solid var(--gold);padding:1rem 1.1rem}
 .dr-pair h3{font-family:var(--font-display);font-size:.9rem;font-weight:700;letter-spacing:.04em;color:var(--steel);margin-bottom:.5rem}
 .dr-pair .cat{font-family:var(--font-ui);font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--oxidized);display:block;margin-bottom:.45rem}
@@ -120,7 +217,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-
 .dr-footer-note{font-family:var(--font-ui);font-size:.68rem;letter-spacing:.05em;color:var(--iron)}
 .dr-nav{display:flex;flex-wrap:wrap;gap:.6rem}
 .dr-nav a{font-family:var(--font-ui);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--oxidized);text-decoration:none;border:1px solid var(--rule);background:var(--clean);padding:.45rem .8rem}
-.dr-nav a:hover,.dr-nav a:focus-visible{color:var(--steel);border-color:var(--bronze);outline:none}
+.dr-nav a:hover,.dr-nav a:focus-visible{color:var(--steel);border-color:var(--bronze)}
 
 @media (max-width:620px){
   .dr-ehead{grid-template-columns:1fr}
@@ -130,7 +227,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-
 
 @media print{
   body{background:#fff;font-size:11pt;line-height:1.5}
-  .dr-jump,.dr-nav{display:none}
+  .dr-jump,.dr-nav,.skip-link{display:none}
   .dr-masthead{background:#fff;color:#000;border-bottom:2pt solid #000;padding-bottom:1rem}
   .dr-masthead h1,.dr-deck{color:#000}
   .dr-masthead h1 em{color:#6b3e1f}

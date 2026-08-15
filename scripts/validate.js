@@ -631,6 +631,55 @@ section('eBook volumes are generated and linked');
   ].filter(exists);
   const entrySrc = entryPoints.map(read).join('\n');
 
+  /**
+   * The accessibility scaffolding both eBook page types are generated with.
+   *
+   * These live in one template each in scripts/lib/ebook-page.js, so they cannot
+   * go missing from one page and not the other, which is exactly why they are
+   * cheap to check and worth checking: every one of them fails silently. A skip
+   * link that stops pointing at a real id still renders, still takes focus, and
+   * simply does nothing when activated. A <main> that swallows the footer still
+   * looks identical. Nothing offline can see either, and no student would report
+   * it, because the students who would notice are the ones least likely to be
+   * asked.
+   */
+  function checkEbookLandmarks(file, label) {
+    const src = read(file) || '';
+
+    totalChecks++;
+    if (!/<html lang="en">/.test(src)) {
+      err(file, `${label} lost <html lang="en">, so a screen reader guesses the language`);
+    }
+
+    // First focusable, not merely present. Styling can put it anywhere on screen;
+    // only source order decides what Tab reaches first.
+    totalChecks++;
+    const skip = '<a class="skip-link" href="#main-content">Skip to main content</a>';
+    const bodyStart = src.indexOf('<body');
+    const bodyOpenEnd = src.indexOf('>', bodyStart);
+    if (!src.includes(skip)) {
+      err(file, `${label} has no skip link, so reaching the text means tabbing every contents link`);
+    } else if (src.slice(bodyOpenEnd + 1).trimStart().indexOf(skip) !== 0) {
+      err(file, `${label} has a skip link that is not the first element in <body>, so it is not the first thing Tab reaches`);
+    }
+
+    // The link is only a link if its target exists.
+    totalChecks++;
+    if (!/<main id="main-content"/.test(src)) {
+      err(file, `${label} has no <main id="main-content">, so the skip link points at nothing and there is no main landmark`);
+    }
+
+    // The footer belongs to the page, not to the main content. A footer inside
+    // <main> is announced as part of the article and is skipped over by anyone
+    // jumping to the contentinfo landmark.
+    totalChecks++;
+    const mainEnd = src.indexOf('</main>');
+    const footer = src.indexOf('<footer');
+    if (mainEnd !== -1 && footer !== -1 && footer < mainEnd) {
+      err(file, `${label} has its footer inside <main>, which puts the site footer in the main landmark`);
+    }
+  }
+
   for (const volume of VOLUMES) {
     totalChecks++;
     const target = path.join(ROOT, volume.outputFile);
@@ -653,6 +702,8 @@ section('eBook volumes are generated and linked');
     if (!entrySrc.includes(path.basename(volume.outputFile))) {
       err(target, `no hub page links to this volume, so students can only reach it by typing the URL`);
     }
+
+    checkEbookLandmarks(target, `eBook volume "${volume.id}"`);
   }
 
   // The library is the one stable eBook URL and the only one the front door
@@ -669,6 +720,7 @@ section('eBook volumes are generated and linked');
       if (!home.includes(LIBRARY.outputFile)) {
         err(path.join(ROOT, 'index.html'), `the front door does not link ${LIBRARY.outputFile}, so the eBook is reachable only by typing the URL`);
       }
+      checkEbookLandmarks(lib, 'the eBook library');
       const libSrc = read(lib) || '';
       for (const volume of VOLUMES) {
         totalChecks++;

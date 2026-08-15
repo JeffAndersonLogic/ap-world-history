@@ -19,6 +19,24 @@ const { renderChapterBody, escapeText } = require('./deep-reading-page');
 
 const esc = escapeText;
 
+/**
+ * The skip link, first focusable element on both eBook page types.
+ *
+ * It has to come before the cover in source order, not merely be styled to look
+ * first, because "first focusable" is a fact about the document rather than
+ * about the layout. Its target is the <main id="main-content"> each renderer
+ * opens after the cover, so one Tab and one Enter steps a keyboard user over the
+ * masthead and, on a volume page, over a contents list that is one link per
+ * chapter plus one per section. On Foundations that is 30 links to tab past to
+ * reach the first sentence of chapter one.
+ *
+ * One constant rather than the string typed twice, so the two page types cannot
+ * end up pointing at different ids. behistorical-deep-reading.css positions it
+ * off-screen until focused; it is never display:none, which would take it out of
+ * the focus order and leave a skip link only the mouse could not use anyway.
+ */
+const SKIP_LINK = `<a class="skip-link" href="#main-content">Skip to main content</a>\n`;
+
 function chapterNav(entries) {
   const rows = entries.map(entry => {
     if (entry.pending) {
@@ -141,7 +159,7 @@ function renderEbook(volume, entries) {
   <link rel="stylesheet" href="../assets/css/behistorical-ebook.css">
 </head>
 <body class="eb-body">
-<header class="eb-cover">
+${SKIP_LINK}<header class="eb-cover">
   <div class="dr-wrap">
     <div class="dr-eyebrow">${volume.eyebrow}</div>
     <h1>${volume.titleHtml}</h1>
@@ -153,8 +171,10 @@ function renderEbook(volume, entries) {
     </div>
   </div>
 </header>
+<main id="main-content" class="dr-wrap">
+${chapterNav(entries)}${body}</main>
 <div class="dr-wrap">
-${chapterNav(entries)}${body}  <footer class="dr-footer">
+  <footer class="dr-footer">
     <span class="dr-footer-note">BeHistorical &nbsp;·&nbsp; The Foundations eBook &nbsp;·&nbsp; Generated from the course content model</span>
     <nav class="dr-nav" aria-label="Course navigation">
       <a href="../index.html">Course Home</a>
@@ -224,20 +244,22 @@ function renderLibrary(library, volumes) {
   <link rel="stylesheet" href="../assets/css/behistorical-ebook.css">
 </head>
 <body class="eb-body">
-<header class="eb-cover">
+${SKIP_LINK}<header class="eb-cover">
   <div class="dr-wrap">
     <div class="dr-eyebrow">${library.eyebrow}</div>
     <h1>${library.titleHtml}</h1>
     <p class="eb-cover-deck">${library.deck}</p>
   </div>
 </header>
-<div class="dr-wrap">
+<main id="main-content" class="dr-wrap">
   <section class="eb-library">
     <h2>Volumes</h2>
     <div class="eb-lib-grid">
 ${cards}    </div>
     <p class="eb-lib-note">${library.note}</p>
   </section>
+</main>
+<div class="dr-wrap">
   <footer class="dr-footer">
     <span class="dr-footer-note">BeHistorical &nbsp;·&nbsp; The eBook &nbsp;·&nbsp; Generated from the course content model</span>
     <nav class="dr-nav" aria-label="Course navigation">
