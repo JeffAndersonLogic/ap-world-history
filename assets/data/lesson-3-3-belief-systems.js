@@ -159,6 +159,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: 'Faith, and the Uses of It',
+    desc: 'A textbook-depth companion on the Reformation as a political event, the Catholic response that carried the church across the world, the sectarian border Chaldiran drew and left behind, the arithmetic of ruling people who believe otherwise, and Sikhism. Optional.',
+    url: 'deep-reading-topic-3-3-belief-systems.html'
+  },
+
   first10: {
     title: 'First & 10: God, Power, and Empire',
     embedUrl: 'first-and-10-topic-3-3-belief-systems-capture.html?v=response-id-fix-v1'

@@ -286,6 +286,19 @@ compiled into `ebook/unit-2.html`:
 - **Topic 2.6**, `topic-2-6.js`, "The Cargo Nobody Ordered", 5 sections, ~4,100 words.
 - **Topic 2.7**, `topic-2-7.js`, "One System, Three Surfaces", 5 sections, ~3,900 words.
 
+**The Unit 3 volume is complete.** All four chapters are on the working branch and
+compiled into `ebook/unit-3.html`:
+
+- **Topic 3.1**, `topic-3-1.js`, "The Wall That Stopped Working", 6 sections, ~5,000 words.
+- **Topic 3.2**, `topic-3-2.js`, "Who Collects, and Who Serves", 6 sections, ~4,900 words.
+- **Topic 3.3**, `topic-3-3.js`, "Faith, and the Uses of It", 6 sections, ~4,900 words.
+- **Topic 3.4**, `topic-3-4.js`, "One Problem, Five Answers", 5 sections, ~3,800 words.
+
+**A four-topic unit gets a four-chapter volume with longer chapters, not padding.**
+Unit 3 has four topics against Unit 1 and Unit 2's seven, so its chapters run six
+sections rather than five and the volume totals about the same length. Never
+invent a topic to fill a volume; the chapter list is a fact about the unit.
+
 **Unit 2 overlaps Foundations 4, and the split is deliberate.** Foundations 4
 gives the map of the three networks: the towns, the winds, relay rather than
 through-travel, and value-to-weight. The Unit 2 chapters do not repeat any of
@@ -314,12 +327,12 @@ paragraph. Whoever lands a chapter updates this list in the same commit.
 
 ### Still to write
 
-Foundations, Unit 1 and Unit 2 are complete. The next volume is another unit:
+Foundations and Units 1, 2 and 3 are complete. The next volume is another unit:
 pick one, add a `VOLUMES` entry in `scripts/build-ebook.js`, and write its
-chapters against the same schema. Units 3 through 9 are unwritten, and Unit 3,
-land-based empires, is the natural next one, because the Unit 2 chapters end
-with gunpowder moving west and the Mongol khanates fragmenting, which is exactly
-where Unit 3 begins.
+chapters against the same schema. Units 4 through 9 are unwritten, and Unit 4,
+transoceanic connections, is the natural next one, because the Unit 3 chapters
+end on the observation that the Mughals never defended a coastline and the Qing
+prepared for the frontier they had always faced, which is where Unit 4 begins.
 
 **Foundations 0 is deliberately excluded.** It is course orientation and the six
 thinking skills, not history content, and its reading asks for a personal

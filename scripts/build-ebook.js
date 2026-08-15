@@ -112,6 +112,21 @@ const VOLUMES = [
       { module: 'topic-2-6' },
       { module: 'topic-2-7' }
     ]
+  },
+  {
+    id: 'unit-3',
+    outputFile: 'ebook/unit-3.html',
+    blurb: `Land-Based Empires: how artillery made the old fortress useless, what it cost to keep an army that could use it, and how five empires governed enormous populations who did not share their religion.`,
+    docTitle: 'BeHistorical | The Unit 3 eBook',
+    eyebrow: 'BeHistorical &nbsp;·&nbsp; AP World History: Modern',
+    titleHtml: 'The Unit 3 <em>eBook</em>',
+    deck: `Four chapters for four topics, and one argument running through them: gunpowder is a fiscal problem before it is a military one, so the empires that expanded were the ones that could pay, and everything they built afterward, the levied servants, the tax farms, the endowed mosque complexes, follows from having to keep paying.`,
+    contents: [
+      { module: 'topic-3-1' },
+      { module: 'topic-3-2' },
+      { module: 'topic-3-3' },
+      { module: 'topic-3-4' }
+    ]
   }
 ];
 

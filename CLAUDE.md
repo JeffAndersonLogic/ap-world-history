@@ -237,9 +237,10 @@ Foundations is written, and it stops covering silently.
 
 ## The eBook
 
-Three volumes exist: `ebook/foundations.html`, five chapters; `ebook/unit-1.html`,
-seven, one per Unit 1 topic including the comparison topic; and
-`ebook/unit-2.html`, seven, one per Unit 2 topic.
+Four volumes exist: `ebook/foundations.html`, five chapters; `ebook/unit-1.html`
+and `ebook/unit-2.html`, seven each, one per topic; and `ebook/unit-3.html`,
+four, because Unit 3 has four topics. A volume carries one chapter per topic,
+so its chapter count is a fact about the unit rather than a target.
 
 The eBook is a **second surface on the chapter modules, not a second copy of the
 content.** Every chapter in a volume is the same

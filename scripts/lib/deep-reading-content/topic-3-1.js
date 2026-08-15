@@ -1,0 +1,366 @@
+'use strict';
+
+/**
+ * Topic 3.1, Empires Expand: the deep reading.
+ *
+ * Why this exists. The lesson names the gunpowder empires, the devshirme, the
+ * bombards at Constantinople and the maps of Ottoman and Mughal expansion. What
+ * it cannot carry is the mechanism the success criteria actually ask for: how a
+ * gunpowder weapon gave an advantage "over rivals and fortified opponents,"
+ * which is a question about walls, money and infantry drill rather than about
+ * the invention of a chemical.
+ *
+ * The organizing argument of this chapter, and the thing worth carrying into
+ * every Unit 3 answer: artillery did not win empires by killing people. It won
+ * them by making the old fortified refuge useless, and it did that at a price
+ * only a centralized state could pay. The weapon and the bureaucracy are the
+ * same story, which is why Topic 3.1 and Topic 3.2 belong together.
+ *
+ * Three things carried deliberately:
+ *
+ *   1. "Gunpowder empire" is a useful label and a poor explanation. Every state
+ *      in this unit had guns; the ones that expanded had guns plus a treasury
+ *      that could keep buying them. Students who write the label as though it
+ *      were a cause lose the point they think they are earning.
+ *   2. Tondibi in 1591 is the cleanest case in the course, because a Moroccan
+ *      force of a few thousand with firearms crossed the Sahara and destroyed
+ *      a far larger Songhai army. It is named in the success criteria and it is
+ *      almost never used.
+ *   3. Expansion had limits, and naming them is what separates an argument from
+ *      a list: Vienna twice, Kandahar four times, the Deccan for twenty-six
+ *      years. Guns do not solve distance, supply or terrain.
+ */
+
+module.exports = {
+  topicKey: 't3-1',
+  slug: 'topic-3-1-empires-expand',
+  sourceFile: 'deep-reading-topic-3-1-empires-expand.html',
+  lessonFile: 'lesson-3-1-empires-expand.html',
+
+  docTitle: 'BeHistorical | Deep Reading | Topic 3.1: The Wall That Stopped Working',
+  eyebrow: 'Topic 3.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
+  titleHtml: 'The Wall That Stopped <em>Working</em>',
+  deck: `For three thousand years a defender's answer to an army was a wall, and around <span class="num">1450</span> that answer stopped working. This chapter explains what artillery actually changed, why the change favored large centralized treasuries over everybody else, and then walks the five empires that made the most of it, finishing with the places where guns were not enough.`,
+  meta: ['Six sections', 'One weapon, five empires', 'Read alongside the First & 10'],
+  footerNote: 'Topic 3.1 &nbsp;·&nbsp; The Wall That Stopped Working &nbsp;·&nbsp; Companion to the First &amp; 10',
+
+  howTo: {
+    heading: 'How to Use This',
+    intro: `Section 01 is the mechanism and everything else is its application, so read it first even if you read nothing else. Sections 02 to 05 are the empires, built on the same skeleton so that reading two of them in a row gives you a comparison. Section 06 is the limits, which is where the best answers in this topic come from.`,
+    steps: [
+      `<b>01 What gunpowder changed:</b> walls, drill, and why artillery is a fiscal problem.`,
+      `<b>02 The Ottomans:</b> the model case, from 1453 to the walls of Vienna.`,
+      `<b>03 The Safavids:</b> a state founded on a religious claim and beaten at Chaldiran.`,
+      `<b>04 The Mughals:</b> Panipat to the Deccan, and expansion that outran its revenue.`,
+      `<b>05 Qing China and Russia:</b> the two land empires that expanded furthest and are usually left out.`,
+      `<b>06 Rivalries and limits:</b> Tondibi, Kandahar, Vienna, and what guns could not do.`,
+      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+    ]
+  },
+
+  empires: [
+    // ── 01 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'mechanism',
+      num: '01',
+      accent: 'gold',
+      name: 'What Gunpowder Actually Changed',
+      navLabel: 'What gunpowder changed',
+      dates: 'c. 1400 to 1600 &nbsp;·&nbsp; Cannon, musket, treasury',
+      thesis: `The important consequence of artillery was political, not military. A cannon made the independent fortified stronghold obsolete, and only a large centralized state could afford one, so the weapon transferred power from local lords to central treasuries.`,
+      parts: [
+        {
+          heading: 'The wall problem',
+          blocks: [
+            { p: `Before effective siege artillery, a high stone wall was close to an unanswerable defense. An attacker's options were to starve the defenders out, which took months and an army that had to be fed the whole time, or to storm the wall at appalling cost. That arithmetic is the foundation of medieval politics everywhere: a noble with a castle, a city with walls or a monastery with a curtain wall could defy a distant ruler almost indefinitely, because taking the place cost more than it was worth.` },
+            { p: `Large bronze and iron cannon changed the arithmetic. A high, thin wall built to resist ladders and rams is exactly the wrong shape to resist a heavy iron ball, which does not climb the wall but breaks it. Sieges that had taken a year began to take weeks. At Constantinople in <span class="num">1453</span> the Ottomans deployed enormous bombards against the most famous fortifications in the Christian world and took the city in under two months.` },
+            { p: `Now follow the consequence, because this is the point of the section. If a wall no longer protects you from your own ruler, the local strongman's independence evaporates. Every rebellious noble, every autonomous city, every mountain fastness that had been a permanent thorn becomes reducible. Expansion outward is the visible half of the story; the invisible half is that the same guns pointed inward at anyone who resisted the center.` }
+          ]
+        },
+        {
+          heading: 'Why only some states could use it',
+          blocks: [
+            { p: `Artillery is expensive in a way that swords and horses are not. Casting a large gun requires metallurgical skill, bronze or good iron, foundries and specialists. Powder needs saltpeter, sulfur and charcoal, produced and stored at scale. Guns need carriages, draft animals, roads and engineers to move; and firearms need trained infantry who will stand in formation and fire on command, which is a discipline problem that costs money in drill, wages and time.` },
+            { p: `So the real qualification for a gunpowder empire is not access to the technology, which spread quickly, but the fiscal and administrative capacity to sustain it: standing tax revenue, arsenals, supply trains and a paid professional infantry. That is why the Topic 3.2 chapter on administration is not a separate subject from this one. The empires that expanded were the ones that had built, or could build, a machine to pay for the guns.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `"Gunpowder empire" is a label, not an explanation, and writing that an empire expanded "because it was a gunpowder empire" is circular. By <span class="num">1550</span> firearms were available across Eurasia and North Africa; plenty of states had them and did not build empires. The explanatory version names what the guns required: a treasury that could pay for foundries, powder, siege trains and salaried infantry year after year, plus an administration able to collect that revenue. Say that, and the label becomes a conclusion rather than a premise. It also lets you handle the states that had guns and still lost, which is the harder half of the topic.`
+            } },
+            { p: `A related development in Europe is worth knowing because it shows the arms race running the other way. Engineers answered the cannon with a new kind of fortification, low, thick, angled walls set behind ditches, designed to absorb shot and to let defenders sweep every approach with fire. These fortresses worked, and they were ruinously expensive, so states that wanted to take them needed still larger armies and still more money. Wherever you look, artillery pushed the price of war upward, and the states that could pay grew at the expense of the states that could not.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Artillery as a solvent of local autonomy. <em>The mechanism is that a heavy gun breaks a high stone wall rather than having to climb it, which turns a fortified stronghold from an unanswerable refuge into a target, and since only a state with standing revenue could afford foundries, powder, siege trains and salaried infantry, the weapon transferred power from local lords to central treasuries.</em>`,
+        limit: `The technology spread everywhere and the capacity to sustain it did not, which is why "they had gunpowder" explains nothing on its own and why the fiscal machinery in Topic 3.2 is part of this answer.`,
+        comparison: `Against <em>Europe's</em> star fortresses: the same technology produced expansion in one place and stalemate plus escalating military budgets in another, because Europe's political fragmentation meant every rival could invest in defense too. Same weapon, opposite structural result.`
+      },
+      terms: [
+        ['Bombard', 'A very large siege cannon, of the type used against the walls of Constantinople in 1453.'],
+        ['Siege train', 'The artillery, powder, draft animals and engineers an army needed to move and use heavy guns, and a major reason artillery required a rich state.'],
+        ['Saltpeter', 'The scarce oxidizer in gunpowder, whose production and storage at scale was a state industry in every empire in this unit.'],
+        ['Star fort', 'The low, thick, angled fortification developed to resist artillery, which restored the defense at enormous cost and drove military budgets higher.'],
+        ['Fiscal-military state', 'A government organized to extract the revenue its army requires, the political form that artillery rewarded.']
+      ]
+    },
+
+    // ── 02 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'ottomans',
+      num: '02',
+      accent: 'rust',
+      name: 'The Ottomans',
+      navLabel: 'The Ottomans',
+      dates: '1453 to 1699 &nbsp;·&nbsp; Constantinople to Karlowitz',
+      thesis: `The model case, and the one the other empires were measured against. The Ottomans combined artillery, a salaried professional infantry and an administration that could pay for both, a century before anyone else assembled all three.`,
+      parts: [
+        {
+          heading: 'The expansion',
+          blocks: [
+            { p: `From a frontier principality in northwestern Anatolia the Ottomans had, by the early fifteenth century, taken much of Anatolia and the Balkans. In <span class="num">1453</span> Mehmed II took <span class="kt">Constantinople</span>, which ended the Byzantine empire, gave the Ottomans the greatest fortress city and harbor in the eastern Mediterranean, and put them astride the land and sea routes between Europe and Asia.` },
+            { p: `Selim I turned east and south: victory over the Safavids at Chaldiran in <span class="num">1514</span>, then the conquest of the Mamluk Sultanate in <span class="num">1516</span> and <span class="num">1517</span>, which brought Syria, Egypt and, decisively, custody of Mecca and Medina. That last acquisition converted a successful Turkish dynasty into the protector of the holy cities and the leading Sunni power in the world, a claim its sultans used for four centuries.` },
+            { p: `Under Suleiman, from <span class="num">1520</span> to <span class="num">1566</span>, the empire took Belgrade, Rhodes, most of Hungary after the battle of Mohacs in <span class="num">1526</span>, and North Africa west to Algiers, and reached the walls of Vienna in <span class="num">1529</span>. At its height it ruled from Hungary to Yemen and from Algeria to Iraq, three continents and a dozen major languages.` }
+          ]
+        },
+        {
+          heading: 'What made it work',
+          blocks: [
+            { p: `<b>The janissaries.</b> An infantry corps recruited through the <span class="kt">devshirme</span>, a levy of Christian boys from Balkan villages who were converted, trained, and made <span class="kt">kul</span>, servants of the sultan's household, with no family property, no local ties and no career except through him. They were salaried, barracked, drilled, and equipped with firearms early. The mechanism is the same one the mamluk system used in Topic 1.2: an elite with no local power base is loyal to the ruler because the ruler is the only source of everything it has.` },
+            { p: `<b>The artillery arm.</b> The Ottomans invested heavily in casting, powder and gunners, employed foreign specialists without embarrassment, and treated siege capability as a standing institution rather than an improvisation. Combined with janissary firepower, the result at Chaldiran and Mohacs was the same: a mass of excellent cavalry broken by disciplined infantry behind guns.` },
+            { p: `<b>The cavalry and the land system.</b> Alongside the paid infantry stood the <span class="kt">timar</span> system, in which a cavalryman held the revenue of an assigned district in exchange for service. That is the same instrument as the Islamic iqta and the European fief, and it had the same tendency to become hereditary, which is why the Topic 3.2 chapter follows the Ottoman shift toward tax farming as firearms made mass paid infantry more important than horse.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not treat the failure at Vienna in <span class="num">1529</span>, or the second failure in <span class="num">1683</span>, as evidence that the Ottoman state was in decline. In <span class="num">1529</span> the empire was at its height, and the siege failed for reasons of distance and season: Vienna sat at the far end of a campaign route from Istanbul, the heavy siege guns could not be brought up through wet autumn roads, and an Ottoman army had to be home before winter. The older story of a long Ottoman decline after Suleiman has been substantially revised by historians, who point to a seventeenth and eighteenth-century state that adapted its finances and its provincial politics rather than simply weakening. Write about logistics and adaptation, not decay.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The devshirme and the janissary corps. <em>The mechanism is that boys levied from village families, converted and raised as the sultan's household servants had no lineage, land or local clients, so the corps owed everything to the throne, could be salaried, barracked and drilled, and would use firearms in disciplined formation at a time when free aristocratic cavalry considered that beneath them.</em>`,
+        limit: `An elite defined by service eventually became an interest of its own. By the seventeenth century janissary status was increasingly hereditary and the corps was a political force able to depose sultans, which is the standard fate of a praetorian institution.`,
+        comparison: `Against the <em>Mamluks</em> in Topic 1.2 and the <em>Qing banners</em> in section 05: three empires manufacturing an elite with no local base, by purchase, by levy and by hereditary military caste. Same problem, three solutions, all of them eventually entrenching.`
+      },
+      terms: [
+        ['Devshirme', 'The Ottoman levy of Christian boys from the Balkans, converted and trained as servants of the sultan, which supplied the janissaries and many senior officials.'],
+        ['Janissary', 'The salaried, barracked and drilled Ottoman infantry corps, equipped with firearms early and loyal to the sultan alone.'],
+        ['Kul', 'A servant of the sultan&rsquo;s household, legally without independent status, the category that made the devshirme elite dependable.'],
+        ['Timar', 'A revenue assignment supporting a cavalryman in exchange for service, the Ottoman equivalent of the iqta and the fief.'],
+        ['Mohacs', 'The 1526 battle in which Ottoman guns and infantry destroyed the Hungarian army, opening central Europe to Ottoman power.']
+      ]
+    },
+
+    // ── 03 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'safavids',
+      num: '03',
+      accent: 'iron',
+      name: 'The Safavids',
+      navLabel: 'The Safavids',
+      dates: '1501 to 1722 &nbsp;·&nbsp; Ismail to the Afghan invasion',
+      thesis: `The Safavids are the empire founded on a religious claim, and their history is the story of a state converting the enthusiasm that created it into an administration that could survive it.`,
+      parts: [
+        {
+          heading: 'A Sufi order becomes a state',
+          blocks: [
+            { p: `The Safavid movement began as a Sufi order in northwestern Iran whose leaders came to claim descent from the Shia imams and attracted devoted followers among Turkoman tribes, known from their headgear as the <span class="kt">Qizilbash</span>, the red-heads. In <span class="num">1501</span> the teenage <span class="kt">Ismail</span> led them to take Tabriz and declared himself shah.` },
+            { p: `He then did something with enormous consequences. He declared Twelver Shia Islam the religion of the state and set about imposing it on a population that was largely Sunni, importing Shia scholars from Arab lands to staff the new religious establishment because Iran did not have enough of its own. That decision made Iran the Shia country it remains, created a permanent sectarian border with the Ottomans, and is the single clearest case in the course of a state manufacturing a religious identity for political ends. The Topic 3.3 chapter takes the religious argument in full.` }
+          ]
+        },
+        {
+          heading: 'Chaldiran, and what it taught',
+          blocks: [
+            { p: `In <span class="num">1514</span> at <span class="kt">Chaldiran</span>, Ismail's Qizilbash cavalry met an Ottoman army with artillery and janissary firearms. The Qizilbash charged and were destroyed. Ismail lost his capital temporarily, his aura of invincibility permanently, and a good deal of eastern Anatolia.` },
+            { p: `Chaldiran is the exam's favorite Unit 3 battle for a reason: it is a religious war between two Muslim empires and a demonstration of the section 01 mechanism in one afternoon. Superb cavalry, motivated by genuine religious devotion, could not close with disciplined infantry standing behind guns. What is worth adding is why the Safavids did not simply copy the winner. Artillery required foundries, a treasury and paid infantry, and the Safavid state at that point was a tribal confederation whose military power was the Qizilbash themselves, who had no interest in being replaced by salaried gunners.` }
+          ]
+        },
+        {
+          heading: 'Abbas I rebuilds the state',
+          blocks: [
+            { p: `The answer came a lifetime later under <span class="kt">Abbas I</span>, who ruled from <span class="num">1588</span> to <span class="num">1629</span> and is the most instructive ruler in this chapter. He faced the classic problem of a ruler dependent on the very warriors who put his family in power, and he solved it exactly as the Ottomans had: by building a rival elite that owed everything to him. He formed regiments of <span class="kt">ghulams</span>, largely Georgian, Armenian and Circassian captives and converts, raised as royal servants, paid from the treasury, and equipped with firearms and artillery. He then used them to reduce Qizilbash influence, took provinces back under direct crown administration, and generated the revenue for all of it in part through a royal monopoly on the silk trade.` },
+            { p: `He moved his capital to <span class="kt">Isfahan</span> and rebuilt it around a vast planned square, framed by a royal mosque, a smaller mosque for the court, the palace and the covered bazaar, which is a physical statement of the four powers that ran the empire: religion, dynasty, government and commerce, facing each other across one space. The Topic 3.2 chapter treats it as architecture doing political work.` },
+            { p: `The state he built outlasted him by a century and then failed quickly. In <span class="num">1722</span> an Afghan force took Isfahan and the dynasty effectively ended, after decades in which the ghulam and Qizilbash systems had both decayed and central revenue had weakened. An empire assembled around one ruler's reforms is vulnerable to the reforms not being maintained, which is a fair general lesson from this section.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Building a rival elite to displace the one that made you. <em>The mechanism is that Abbas raised, converted, paid and armed a corps of ghulams from outside the tribal system, so that the crown had a military instrument the Qizilbash did not control, which let him claw provinces back under direct administration and fund the change from crown revenues and the silk monopoly.</em>`,
+        limit: `A state rebuilt around one ruler's institutions decays when those institutions are not maintained, and Isfahan fell to an Afghan army in 1722, a century after Abbas.`,
+        comparison: `Against the <em>Ottomans</em>: the same solution, a converted service elite paid by the crown, adopted a century later and under military pressure from the state that invented it. Against <em>Akbar</em> in section 04: three empires each managing a warrior aristocracy they could not simply abolish.`
+      },
+      terms: [
+        ['Qizilbash', 'The Turkoman tribal cavalry devoted to the Safavid house, whose religious loyalty founded the empire and whose power later rivals constrained.'],
+        ['Chaldiran', 'The 1514 Ottoman victory over the Safavids, in which artillery and janissary firearms destroyed a cavalry army and fixed the sectarian frontier.'],
+        ['Ghulam', 'A royal servant recruited largely from Caucasian converts, salaried and armed with firearms, created by Abbas I to offset the Qizilbash.'],
+        ['Twelver Shiism', 'The branch of Shia Islam imposed as the Safavid state religion from 1501, which made Iran a Shia country and created a sectarian border.'],
+        ['Isfahan', 'The capital rebuilt by Abbas I around a planned royal square framed by mosque, palace and bazaar.']
+      ]
+    },
+
+    // ── 04 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'mughals',
+      num: '04',
+      accent: 'oxide',
+      name: 'The Mughals',
+      navLabel: 'The Mughals',
+      dates: '1526 to 1707 &nbsp;·&nbsp; Panipat to the Deccan',
+      thesis: `A Central Asian dynasty conquered northern India with artillery and then faced the question that decides this whole unit: what do you do about the fact that almost none of your subjects share your religion?`,
+      parts: [
+        {
+          heading: 'Conquest',
+          blocks: [
+            { p: `<span class="kt">Babur</span>, a Timurid prince from Central Asia who had lost his own inheritance, invaded India and in <span class="num">1526</span> met the much larger army of the Delhi Sultanate at <span class="kt">Panipat</span>. He won with a combination of field artillery and matchlock infantry positioned behind a barrier of carts, with cavalry sweeping the flanks. It is Chaldiran again, twelve years later and a thousand miles east: guns and disciplined infantry defeating numbers.` },
+            { p: `His grandson <span class="kt">Akbar</span>, ruling from <span class="num">1556</span> to <span class="num">1605</span>, turned a conquest into an empire covering most of northern and central India. Expansion continued under his successors, and under Aurangzeb, from <span class="num">1658</span> to <span class="num">1707</span>, the empire reached its greatest extent, covering nearly the whole subcontinent.` }
+          ]
+        },
+        {
+          heading: 'The machinery Akbar built',
+          blocks: [
+            { p: `Akbar's system is the most sophisticated administrative design in this unit and the Topic 3.2 chapter takes it apart properly. In outline: the <span class="kt">mansabdari</span> system ranked every officer of the empire on a numerical scale that fixed his status, his pay and the number of cavalry he owed, and those ranks were granted by the emperor, not inherited. Officers were normally paid not in cash but by assignment of the revenue of a district, a <span class="kt">jagir</span>, and jagirs were rotated so that no officer put down roots. Revenue itself was assessed on measured land and average yields rather than guessed at, which made income predictable enough to plan around.` },
+            { p: `The political innovation matters as much. Akbar recruited his nobility from everywhere: Central Asian Turks, Persians, Indian Muslims and, crucially, Hindu Rajput rulers, who were brought in as high-ranking mansabdars, married into the imperial family, and left in possession of their own kingdoms as imperial servants. He abolished the <span class="kt">jizya</span>, the tax on non-Muslims, in <span class="num">1564</span>, and the pilgrimage tax before it.` },
+            { p: `That is not tolerance as a modern value, and describing it that way weakens the answer. It is a solution to an arithmetic problem: a Muslim dynasty of foreign origin ruling a population overwhelmingly Hindu cannot govern by exclusion without permanent revolt, so it buys the cooperation of the existing warrior and landholding elite by making them stakeholders. The Topic 3.3 chapter follows what happened when Aurangzeb reversed the policy.` }
+          ]
+        },
+        {
+          heading: 'Expansion that outran the system',
+          blocks: [
+            { p: `Aurangzeb spent the last twenty-six years of his reign campaigning in the Deccan, and it is the best available case study of imperial overreach. The wars were expensive and never conclusively won: fortresses fell and were retaken, and Maratha forces under Shivaji and his successors fought a mobile war the imperial army could not finish.` },
+            { p: `Meanwhile the machinery strained in a specific and traceable way. As the empire grew, more officers held higher ranks, so more jagirs were required to pay them, while the revenue of newly conquered and war-damaged provinces was poor. Assignments were promised that could not deliver their nominal value; officers squeezed peasants harder to make up the difference; and loyalty became harder to buy at precisely the moment when it cost most. When Aurangzeb died in <span class="num">1707</span>, the empire came apart into effectively independent provinces with startling speed.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: the argument about why the Mughals fell',
+              html: `Older accounts blame Aurangzeb's religious policies, the reimposition of the jizya in <span class="num">1679</span> and the alienation of Hindu allies, for the collapse. Later historians emphasized the fiscal and structural argument above, the mismatch between ranks promised and revenue available. More recent work stresses that the provinces did not collapse at all: they became prosperous regional states, and the "decline" is partly an artifact of measuring everything from the imperial center. You do not have to settle this. Naming two of the three explanations and saying which the evidence you are using supports is a stronger answer than confidently asserting one.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The mansabdari and jagir system. <em>The mechanism is that a numerical rank granted by the emperor fixed an officer's pay and his obligation of cavalry, and the revenue assignment that paid him was rotated between districts, so the nobility was salaried in effect, non-hereditary in principle, and prevented from converting office into a local landed base.</em>`,
+        limit: `It depended on there being enough revenue to cover the ranks awarded. Aurangzeb's expansion created more claimants than assignments could pay, which pushed officers to squeeze cultivators and made loyalty expensive exactly when it was most needed.`,
+        comparison: `Against the <em>Ottoman timar</em>: both paid a cavalry elite from land revenue rather than cash, and both faced the same drift toward hereditary local power. The Mughals fought it with rotation and rank; the Ottomans eventually gave way to tax farming, as Topic 3.2 describes.`
+      },
+      terms: [
+        ['Panipat', 'The 1526 battle in which Babur&rsquo;s artillery and matchlock infantry defeated a much larger Delhi Sultanate army, founding Mughal rule.'],
+        ['Mansabdari', 'The Mughal system of numerical ranks fixing an officer&rsquo;s status, pay and cavalry obligation, granted by the emperor rather than inherited.'],
+        ['Jagir', 'A revenue assignment paying a mansabdar, rotated between districts to prevent an officer from building a local base.'],
+        ['Zamindar', 'A local landholder with hereditary rights to collect revenue in his district, the intermediary through whom the empire actually reached the village.'],
+        ['Jizya', 'The tax on non-Muslims, abolished by Akbar in 1564 and reimposed by Aurangzeb in 1679, and therefore a precise index of imperial religious policy.']
+      ]
+    },
+
+    // ── 05 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'qing-russia',
+      num: '05',
+      accent: 'gold',
+      name: 'The Two That Expanded Furthest',
+      navLabel: 'Qing and Russia',
+      dates: '1582 to 1760 &nbsp;·&nbsp; Siberia, Manchuria, Xinjiang',
+      thesis: `The Qing and the Russians added more territory in this period than the Ottomans, Safavids and Mughals combined, and they are the two empires students are least likely to mention. Both conquered the steppe, which nobody had managed before, and gunpowder is the reason.`,
+      parts: [
+        {
+          heading: 'The Qing',
+          blocks: [
+            { p: `The Ming dynasty fell in <span class="num">1644</span> amid rebellion, famine and fiscal crisis, and the <span class="kt">Manchus</span>, a people from the northeast who had built a state on the Ming frontier, took Beijing and founded the Qing. They were a small conquest elite ruling an enormous Chinese population, and their solution combined two systems: the <span class="kt">banner</span> organization, a hereditary military and social structure covering Manchus, Mongols and allied Chinese, and the retention of the entire Chinese bureaucratic apparatus, including the examinations, with senior posts frequently doubled between a Manchu and a Chinese official.` },
+            { p: `Then they expanded. Under Kangxi and Qianlong, the Qing took Taiwan, established control over Mongolia, brought Tibet under a protectorate, and in a series of campaigns in the eighteenth century destroyed the Zunghar Mongol state and annexed the vast territory that became Xinjiang. That last campaign was catastrophic for the Zunghars, whose population was largely destroyed by war, flight and epidemic, and it ended two thousand years of steppe nomads posing a strategic threat to settled China.` },
+            { p: `The reason it could be done is the section 01 mechanism applied to the steppe. Cavalry mobility had always meant that nomads could raid and withdraw faster than infantry could respond. Firearms and artillery, carried by an empire with the logistics to supply an army deep into arid country, reversed the balance: mounted archers could not charge disciplined musketry, and fortified supply posts held ground that horsemen could not take. The steppe frontier that had shaped Chinese history since the Han closed permanently in the eighteenth century.` }
+          ]
+        },
+        {
+          heading: 'Russia',
+          blocks: [
+            { p: `Muscovy under Ivan IV took the Tatar khanates of Kazan in <span class="num">1552</span> and Astrakhan in <span class="num">1556</span>, using artillery against their fortifications, which opened the Volga to the Caspian. From <span class="num">1582</span> Cossack bands with firearms, financed initially by a merchant family with fur interests, pushed east across the Urals into Siberia, and Russian forts reached the Pacific by the <span class="num">1630</span>s and <span class="num">1640</span>s.` },
+            { p: `The mechanism there is worth stating precisely, because it is not the Ottoman one. Siberia was not conquered by a great army: it was taken by small, well-armed parties who built stockaded posts on river routes, extracted fur tribute from indigenous peoples, and were followed by traders and settlers. Firearms mattered against peoples who had none, and disease did much of the rest. The prize was fur, which was to the Russian treasury roughly what silver was to Spain.` },
+            { p: `Russia is also the clearest case of a land empire deliberately importing military technique, first through hired foreign specialists and later, under Peter I, through a wholesale reorganization: a conscripted standing army, a navy, state ironworks and arms manufacture, and a table of service ranks that made noble status depend on service to the state. The Topic 3.2 chapter treats that as an administrative story, which is exactly what it was.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Gunpowder plus logistics closing the steppe. <em>The mechanism is that firearms let infantry defeat cavalry that could not close with them, and fortified supply posts let an army hold arid ground it could not otherwise occupy, which reversed the mobility advantage nomads had held for two thousand years and allowed the Qing and Russia to absorb the steppe rather than defend against it.</em>`,
+        limit: `It was catastrophic for the peoples absorbed. The destruction of the Zunghars and the extraction of fur tribute from Siberian peoples are the human cost of this expansion, and an answer about the closing of the steppe that does not say so is describing only the winners' side.`,
+        comparison: `Against the <em>Ottomans</em>: three empires using the same technology against completely different opponents, fortified cities, rival gunpowder states, and mounted nomads. The technology is constant and the strategic problem is not, which is why the institutions each built look so different.`
+      },
+      terms: [
+        ['Manchu', 'The northeastern people who founded the Qing dynasty in 1644, a small conquest elite ruling an enormous Chinese population.'],
+        ['Banner system', 'The hereditary Qing military and social organization of Manchu, Mongol and allied Chinese units, the conquest elite&rsquo;s own structure.'],
+        ['Zunghars', 'The Mongol state destroyed by Qing campaigns in the eighteenth century, whose defeat ended the steppe threat and added Xinjiang.'],
+        ['Cossacks', 'The armed frontier bands whose firearms and river forts carried Russian power across Siberia to the Pacific.'],
+        ['Fur tribute', 'The pelts extracted from Siberian peoples, the economic purpose of Russian eastward expansion and a major source of state revenue.']
+      ]
+    },
+
+    // ── 06 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'limits',
+      num: '06',
+      accent: 'rust',
+      name: 'Rivalries, and the Limits of Guns',
+      navLabel: 'Rivalries and limits',
+      dates: '1514 to 1699 &nbsp;·&nbsp; Chaldiran, Tondibi, Kandahar, Vienna',
+      thesis: `These empires spent as much effort fighting each other as fighting anyone else, and the places where expansion stopped tell you more about what gunpowder could and could not do than the places where it succeeded.`,
+      parts: [
+        {
+          heading: 'Empires against empires',
+          blocks: [
+            { p: `<b>Ottoman against Safavid</b> is the defining rivalry of the period, and it is religious and geopolitical at once. Chaldiran in <span class="num">1514</span> opened roughly two centuries of intermittent war over Iraq, the Caucasus and eastern Anatolia. Each side claimed religious legitimacy against the other, Sunni caliphal protector against Shia shah, and each used the other's heresy to justify campaigns that were also about trade routes, fortresses and revenue. Baghdad changed hands repeatedly. The Topic 3.3 chapter treats the sectarian argument in full; what belongs here is that religious difference made a border war permanent rather than negotiable.` },
+            { p: `<b>Safavid against Mughal</b> centered on <span class="kt">Kandahar</span>, the fortress commanding the road between Iran and India, which passed between the two empires several times across the seventeenth century. It is a useful case precisely because both sides were Muslim empires of Turco-Persian culture with intermarried elites and constant diplomatic contact: the fight was about a strategic corridor, not about faith, which is a helpful corrective to the assumption that religion explains every conflict in this unit.` },
+            { p: `<b>Morocco against Songhai</b> is the case the success criteria name and almost nobody uses. In <span class="num">1591</span> the Moroccan sultan sent an expedition across the Sahara, a few thousand men equipped with firearms and light artillery, many of them European and North African mercenaries. At <span class="kt">Tondibi</span> they met a Songhai army many times their size and destroyed it. Songhai, the largest state in West African history and the successor to Mali described in the Topic 2.4 chapter, collapsed as an empire.` },
+            { p: `Tondibi is worth learning as a set piece because it isolates the variable better than any European example: same continent, same century, one side with firearms and one without, and an overwhelming numerical disadvantage overcome. The Moroccan motive was the gold and salt trade of the Niger bend, which ties the battle directly back to Unit 2, and the aftermath is instructive too: Morocco won the battle and could not govern the conquest, and its garrison in the Niger cities gradually became a local power detached from Marrakesh. Guns take a place; they do not run it.` }
+          ]
+        },
+        {
+          heading: 'Where expansion stopped, and why',
+          blocks: [
+            { p: `Four limits, and each one is a mechanism rather than an excuse.` },
+            { p: `<b>Distance and season.</b> Vienna in <span class="num">1529</span> and again in <span class="num">1683</span> sat at the outer edge of what an army marching from Istanbul could reach and still return before winter, with the heavy guns the slowest thing in the column. An empire's reach is set by its logistics, not by its ambition.` },
+            { p: `<b>Terrain and irregular warfare.</b> Aurangzeb's Deccan campaigns and the Maratha response show artillery's basic weakness: guns are superb against a fixed target and nearly useless against an enemy who declines to be one.` },
+            { p: `<b>Money.</b> Every limit in this list is ultimately fiscal, because the section 01 mechanism cuts both ways: an army that costs this much can only campaign as long as the revenue holds, and the Topic 3.2 chapter is about what happened to each empire's revenue system under that pressure.` },
+            { p: `<b>The sea.</b> These are land empires, and the qualifier is load-bearing. While the Ottomans, Safavids, Mughals and Qing expanded across land, European states were building the maritime empires of Unit 4. The Mughals never built a navy able to control their own coast, which is why European trading companies could establish fortified coastal factories in the empire's territory without the empire treating it as a threat worth answering. Unit 4 begins in the space that observation opens.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Tondibi in 1591 as the isolated variable. <em>The mechanism is that a Moroccan force of a few thousand with firearms and light artillery crossed the Sahara and destroyed a Songhai army many times larger, which shows the firearms advantage in the cleanest possible form, and the subsequent failure to govern the conquest shows equally clearly that military technology and administrative capacity are separate things.</em>`,
+        limit: `Guns did not solve distance, season, terrain, irregular warfare or revenue, which is why Vienna held twice, Kandahar changed hands four times and the Deccan absorbed twenty-six years of campaigning.`,
+        comparison: `Against <em>Unit 4</em>: land empires spent this period conquering neighbors while European states spent it building ships, and the Mughals' lack of a navy is why coastal trading posts inside their territory looked like commerce rather than invasion.`
+      },
+      terms: [
+        ['Tondibi', 'The 1591 battle in which a Moroccan expedition with firearms destroyed a far larger Songhai army, ending Songhai as an empire.'],
+        ['Kandahar', 'The fortress commanding the route between Iran and India, contested repeatedly between Safavids and Mughals in the seventeenth century.'],
+        ['Marathas', 'The Deccan power whose mobile warfare frustrated Aurangzeb&rsquo;s campaigns for decades and expanded rapidly after 1707.'],
+        ['Logistics', 'The supply, transport and seasonal constraints that set the practical limit of an empire&rsquo;s reach, most visible at Vienna.'],
+        ['Land-based empire', 'A state expanding across contiguous territory rather than overseas, the category this unit examines and the contrast Unit 4 opens.']
+      ]
+    }
+  ],
+
+  closing: {
+    heading: 'Building an Answer That Scores',
+    navLabel: 'Building a comparison',
+    intro: `Each card is a full comparison: the claim, the specific evidence, and the reason the difference existed. Notice that none of them says "because they had gunpowder," and that all of them could.`,
+    pairs: [
+      {
+        category: 'Technology and politics',
+        title: 'Artillery centralized power before it conquered anything',
+        body: `A heavy gun breaks a stone wall instead of climbing it, so the fortified stronghold that had let a noble, a city or a monastery defy a distant ruler became a target that could be reduced in weeks. Only a state with standing revenue could pay for foundries, powder, siege trains and drilled infantry, so the weapon rewarded exactly the governments that could tax. The difference between the states that built empires in this period and the states that merely owned guns is fiscal and administrative rather than technological, which is why "gunpowder empire" is a label that needs the treasury behind it before it explains anything.`
+      },
+      {
+        category: 'Elites',
+        title: 'Three empires manufactured a ruling elite that had nowhere else to go',
+        body: `The Ottomans levied Christian boys through the devshirme, converted them and made them kul of the sultan's household. The Safavids under Abbas I raised ghulam regiments from Caucasian converts to offset the Qizilbash who had founded the dynasty. The Qing ruled through hereditary banners of Manchus, Mongols and allied Chinese while staffing the civil bureaucracy with examined Chinese officials. The similarity exists because all three were minorities ruling majorities and needed servants whose status came entirely from the throne; the differences in method follow from what each had available, a subject Christian population, a supply of Caucasian captives, or a conquest people of their own.`
+      },
+      {
+        category: 'Religion and rule',
+        title: 'Akbar and Ismail did opposite things for the same reason',
+        body: `Ismail imposed Twelver Shiism on a largely Sunni Iran from 1501, importing scholars to staff a religious establishment that did not yet exist, which gave a new dynasty an identity and a permanent quarrel with the Ottomans. Akbar abolished the jizya in 1564, recruited Rajput rulers into the highest ranks of his nobility and married into their houses. Both were solving the problem of legitimacy for a dynasty of foreign origin, and they diverged because their arithmetic differed: Ismail could build a state around a militant minority faith in a region he could convert, while a Muslim dynasty ruling a Hindu majority across a subcontinent could not govern by exclusion without permanent revolt.`
+      },
+      {
+        category: 'Limits',
+        title: 'Tondibi and Vienna are the same lesson from opposite directions',
+        body: `In 1591 a Moroccan force of a few thousand with firearms crossed the Sahara and destroyed a Songhai army many times its size, then found it could not govern what it had taken, and its garrison drifted into becoming a local power. In 1529 and again in 1683 the Ottoman army, the most formidable in Europe, failed at Vienna because the city sat at the far end of a marching season and heavy guns move slowly on wet roads. Together they show that firepower decides battles and neither distance nor administration cares about firepower, which is the sentence to reach for whenever a prompt asks why an empire stopped expanding.`
+      }
+    ]
+  }
+};

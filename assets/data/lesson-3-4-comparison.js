@@ -191,6 +191,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: 'One Problem, Five Answers',
+    desc: 'A textbook-depth companion that puts the five empires under one question set, reduces their differences to three variables you can check on any pair, and shows how to write the eighteenth century without reading it backward. No new content, one new skill. Optional.',
+    url: 'deep-reading-topic-3-4-comparison.html'
+  },
+
   first10: {
     title: 'First & 10: Comparing the Empires',
     embedUrl: 'first-and-10-topic-3-4-comparison-capture.html?v=response-id-fix-v1',
