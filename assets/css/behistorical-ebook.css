@@ -187,6 +187,15 @@ li.eb-toc-pending .eb-toc-title{color:var(--iron)}
   font-weight:700; letter-spacing:.03em; color:var(--steel); line-height:1.15;
 }
 .eb-lib-open h3 em{font-style:normal;color:var(--oxidized)}
+/* The unit label above the volume name, matching the "UNIT 01" eyebrow on the
+   front door's unit cards. Oxidized brown rather than gold or sandstone,
+   because this sits on clean paper: gold is 2.1:1 here and oxidized is 7.9:1,
+   the same rule the focus ring follows. */
+.eb-lib-label{
+  font-family:var(--font-ui); font-size:.63rem; font-weight:700;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--oxidized);
+  margin-bottom:.35rem; font-variant-numeric:tabular-nums;
+}
 .eb-lib-blurb{font-size:.87rem;line-height:1.7;margin-top:.6rem;color:var(--ink)}
 .eb-lib-meta{
   font-family:var(--font-ui); font-size:.65rem; font-weight:700;

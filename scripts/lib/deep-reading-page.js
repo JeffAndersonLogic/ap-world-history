@@ -42,6 +42,35 @@
  * The prefix defaults to empty, which is exactly the standalone behaviour.
  */
 
+/**
+ * The brand typefaces, loaded exactly as the 77 First & 10 readings load them.
+ *
+ * behistorical-deep-reading.css has always asked for Cinzel, Libre Baskerville
+ * and Montserrat through its --font-display, --font-body and --font-ui tokens,
+ * and no deep reading or eBook page ever loaded them, so every one of these
+ * surfaces silently rendered in the Georgia and Arial fallbacks while the rest
+ * of the site rendered in the brand faces. The tokens were right; the link was
+ * missing.
+ *
+ * The href is byte-identical to the one the readings use, which is deliberate
+ * and is the reason to prefer it over the four other font URLs in this repo: a
+ * student moving from a First & 10 reading to the eBook reuses the cached
+ * stylesheet and font files rather than fetching a second nearly identical set.
+ * It also covers every weight these stylesheets actually ask for, 600 and 700,
+ * so nothing is synthetically bolded, and it carries Libre Baskerville italic,
+ * which matters because the chapters lean on <em> throughout.
+ *
+ * `display=swap` is the accessibility-relevant part: text paints immediately in
+ * the fallback and swaps when the webfont arrives, so a slow connection never
+ * produces invisible text. The fallback stacks stay in the CSS, so a reader
+ * with webfonts blocked or no network gets Georgia and loses nothing but the
+ * brand.
+ */
+const FONT_LINKS =
+  `  <link rel="preconnect" href="https://fonts.googleapis.com">\n` +
+  `  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n` +
+  `  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">\n`;
+
 const ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' };
 
 /** Escape text destined for an attribute or a text node. Body copy is authored
@@ -265,7 +294,7 @@ function renderDeepReadingPage(topic) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(topic.docTitle)}</title>
-  <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
+${FONT_LINKS}  <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
 </head>
 <body>
 <header class="dr-masthead">
@@ -289,4 +318,4 @@ ${renderChapterBody(topic)}  <footer class="dr-footer">
 `);
 }
 
-module.exports = { renderDeepReadingPage, renderChapterBody, escapeText: esc };
+module.exports = { renderDeepReadingPage, renderChapterBody, escapeText: esc, FONT_LINKS };

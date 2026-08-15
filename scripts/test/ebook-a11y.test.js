@@ -148,8 +148,15 @@ const withHelpers = body => `(() => {${HELPERS}\n${body}\n})()`;
   // The eBook pages load Google Fonts. In a sandbox that request hangs rather
   // than failing fast, which leaves the document in readyState "loading" and
   // makes every measurement below race the network. Blocking anything off the
-  // fixture server is a test artefact, not a change of behaviour: the CSS
-  // already falls back to Georgia and Arial by design.
+  // fixture server keeps this pass hermetic and fast.
+  //
+  // The consequence has to be stated, because it is exactly the kind of quiet
+  // gap this suite exists to close: with the fonts blocked, every measurement
+  // below is taken in the Georgia and Arial fallbacks, so the reflow numbers
+  // say nothing about how the page lays out in Cinzel and Libre Baskerville,
+  // which are wider. The webfont pass at the end of this file covers that, and
+  // skips rather than fails when the fonts cannot be fetched, because a third
+  // party's outage must never fail a commit.
   await page.route('**/*', route => {
     const url = route.request().url();
     if (url.startsWith(`http://localhost:${port}/`)) return route.continue();
@@ -339,6 +346,94 @@ const withHelpers = body => `(() => {${HELPERS}\n${body}\n})()`;
     check(`${label}: all ${outbound.length} outbound links resolve`, broken.length === 0,
       broken.join(', '));
   }
+
+  // ── 6. the same reflow measurement, in the real brand fonts ──────────────
+  //
+  // Everything above ran with webfonts blocked, so it measured the fallbacks.
+  // Cinzel and Libre Baskerville are both wider than Georgia at the same size,
+  // and reflow is a width test, so a page that fits at 320px in the fallback
+  // can still overflow in the face a student actually sees. This pass allows
+  // the two font hosts, waits for the faces to be in use, and repeats the two
+  // reflow measurements.
+  //
+  // It SKIPS rather than fails when the fonts do not arrive. The browser job
+  // has network, so this normally runs; when Google is unreachable the suite
+  // still has to be able to go green, for the same reason check-image-urls.js
+  // lives in the nightly workflow rather than on the push path. A skip is
+  // printed, so nobody mistakes it for coverage.
+  console.log('\nwith the brand webfonts loaded');
+  const fontCtx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  const fontPage = await fontCtx.newPage();
+  await fontPage.route('**/*', route => {
+    const url = route.request().url();
+    if (url.startsWith(`http://localhost:${port}/`)) return route.continue();
+    if (/^https:\/\/fonts\.(googleapis|gstatic)\.com\//.test(url)) return route.continue();
+    return route.abort();
+  });
+
+  for (const [rel, label] of PAGES) {
+    let loaded = false;
+    try {
+      await fontPage.goto(`http://localhost:${port}/${rel}`, { waitUntil: 'load', timeout: 15000 });
+      // Measured, not asked. document.fonts.check() answers "can I render this
+      // string in that family", and a browser with no Cinzel answers yes,
+      // because it can render it in a fallback. It returns true on a machine
+      // with no network at all, which would make this whole pass report a
+      // confident green while measuring Georgia. The honest test is whether the
+      // face changes the layout: render the same string in the webfont and in
+      // the fallback and compare widths. Cinzel is a Trajan-style face whose
+      // lowercase are small capitals, so it is nowhere near Georgia's metrics,
+      // and identical widths mean it did not apply.
+      loaded = await fontPage.evaluate(async () => {
+        await document.fonts.ready;
+        const width = family => {
+          const el = document.createElement('span');
+          el.textContent = 'The Global Tapestry Handgloves';
+          el.style.cssText =
+            `position:absolute;visibility:hidden;white-space:nowrap;` +
+            `font-size:40px;font-weight:700;font-family:${family}`;
+          document.body.appendChild(el);
+          const w = el.getBoundingClientRect().width;
+          el.remove();
+          return w;
+        };
+        const fallback = width('Georgia,serif');
+        return Math.abs(width('Cinzel,Georgia,serif') - fallback) > 1 &&
+               Math.abs(width('"Libre Baskerville",Georgia,serif') - fallback) > 1;
+      });
+    } catch (e) { loaded = false; }
+
+    if (!loaded) {
+      console.log(`  SKIP  ${label}: brand webfonts did not load, reflow measured in fallbacks only`);
+      continue;
+    }
+
+    for (const [w, h, why] of [[320, 640, '320px reflow'], [640, 512, '200% zoom of 1280x1024']]) {
+      await fontPage.setViewportSize({ width: w, height: h });
+      await fontPage.waitForTimeout(80);
+      const over = await fontPage.evaluate(() => {
+        const de = document.documentElement;
+        const wide = [];
+        for (const el of document.querySelectorAll('body *')) {
+          const r = el.getBoundingClientRect();
+          if (r.right > de.clientWidth + 1) {
+            let scrolls = false;
+            for (let n = el.parentElement; n; n = n.parentElement) {
+              const o = getComputedStyle(n).overflowX;
+              if (o === 'auto' || o === 'scroll') { scrolls = true; break; }
+            }
+            if (!scrolls) wide.push(el.className || el.tagName);
+          }
+        }
+        return { scrollW: de.scrollWidth, clientW: de.clientWidth, wide: wide.slice(0, 4) };
+      });
+      check(`${label}: no horizontal scroll in brand fonts, ${why}`,
+        over.scrollW <= over.clientW + 1 && over.wide.length === 0,
+        `scrollWidth ${over.scrollW} vs ${over.clientW}${over.wide.length ? ', ' + over.wide.join(', ') : ''}`);
+    }
+    await fontPage.setViewportSize({ width: 1280, height: 900 });
+  }
+  await fontCtx.close();
 
   check('no page errors in either eBook page', errors.length === 0, errors.slice(0, 3).join(' | '));
 

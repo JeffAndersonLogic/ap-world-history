@@ -38,6 +38,13 @@ const esc = escapeText;
 const SKIP_LINK = `<a class="skip-link" href="#main-content">Skip to main content</a>\n`;
 
 /**
+ * The brand typefaces: Cinzel for display, Libre Baskerville for reading, and
+ * Montserrat for labels. Re-exported from deep-reading-page.js so the eBook and
+ * the standalone readings cannot end up loading different fonts.
+ */
+const FONT_LINKS = require('./deep-reading-page').FONT_LINKS;
+
+/**
  * The "Listen to this section" module, on volume pages only.
  *
  * A volume is the surface this feature is for: chapters of continuous reading,
@@ -188,7 +195,7 @@ function renderEbook(volume, entries) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(volume.docTitle)}</title>
-  <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
+${FONT_LINKS}  <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
   <link rel="stylesheet" href="../assets/css/behistorical-ebook.css">
 </head>
 <body class="eb-body">
@@ -208,7 +215,7 @@ ${SKIP_LINK}<header class="eb-cover">
 ${chapterNav(entries)}${body}</main>
 <div class="dr-wrap">
   <footer class="dr-footer">
-    <span class="dr-footer-note">BeHistorical &nbsp;·&nbsp; ${esc(stripTags(volume.titleHtml))} &nbsp;·&nbsp; Generated from the course content model</span>
+    <span class="dr-footer-note">BeHistorical &nbsp;·&nbsp; ${esc([volume.label, stripTags(volume.titleHtml)].filter(Boolean).join(': '))} &nbsp;·&nbsp; The eBook</span>
     <nav class="dr-nav" aria-label="Course navigation">
       <a href="../index.html">Course Home</a>
       <a href="${esc(hub(volume, chapters).href)}">${esc(hub(volume, chapters).label)}</a>
@@ -255,6 +262,11 @@ function renderLibrary(library, volumes) {
     return (
       `      <article class="eb-lib-card">\n` +
       `        <a class="eb-lib-open" href="${esc(path_basename(volume.outputFile))}">\n` +
+      // The unit label sits above the name, the way the front door's unit cards
+      // put "UNIT 01" above "The Global Tapestry". Without it the library reads
+      // as four unrelated titles and a student looking for Unit 2 has to know
+      // that Networks of Exchange is Unit 2.
+      (volume.label ? `          <div class="eb-lib-label">${esc(volume.label)}</div>\n` : '') +
       `          <h3>${volume.titleHtml}</h3>\n` +
       `          <p class="eb-lib-blurb">${volume.blurb}</p>\n` +
       `          <p class="eb-lib-meta">${chapters.length} chapter${chapters.length === 1 ? '' : 's'}` +
@@ -273,7 +285,7 @@ function renderLibrary(library, volumes) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(library.docTitle)}</title>
-  <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
+${FONT_LINKS}  <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
   <link rel="stylesheet" href="../assets/css/behistorical-ebook.css">
 </head>
 <body class="eb-body">

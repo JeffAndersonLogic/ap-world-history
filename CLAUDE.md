@@ -257,6 +257,25 @@ The deep reading on the Foundations 1 lesson serves the student doing Foundation
 1 tonight. The eBook serves the student revising in May, the student who missed
 three weeks, and the case manager who wants to see what is being taught.
 
+**A volume is named the way the front door names its unit.** `ebook/unit-1.html`
+is "The Global Tapestry", not "The Unit 1 eBook", and the library card carries
+"UNIT 01" above it exactly as the unit card on `index.html` does. The volume's
+`label` and `titleHtml` are the two fields that carry this, and they must match
+the unit card in `index.html`; a student who has just clicked away from that
+card should not have to work out that Networks of Exchange is Unit 2.
+
+**The brand typefaces are loaded by the page templates, not by the stylesheet.**
+`behistorical-deep-reading.css` has always declared Cinzel, Libre Baskerville and
+Montserrat in `--font-display`, `--font-body` and `--font-ui`, and for the first
+four volumes nothing loaded them, so every eBook page and every standalone deep
+reading quietly rendered in the Georgia and Arial fallbacks while the rest of the
+site rendered in the brand faces. Tokens are not a request. `FONT_LINKS` in
+`scripts/lib/deep-reading-page.js` is the one copy, re-exported to
+`ebook-page.js`, and its href is byte-identical to the one the 77 First & 10
+readings use so that a student moving between them reuses the cache. It carries
+`display=swap`, so slow fonts never mean invisible text, and the CSS fallbacks
+stay, so a blocked or offline load costs the brand and nothing else.
+
 **Volumes are declared, chapters are ordered by hand.** A volume is an editorial
 decision about what belongs together and in what order, which no directory
 listing knows, so `VOLUMES` in `scripts/build-ebook.js` lists them. Its
@@ -335,6 +354,22 @@ paints, that nothing overflows 320px, and that no text is under its contrast
 threshold. The contrast sweep is the one that earns its runtime, because the
 same colour is correct on the cover and wrong on the contents rows and only a
 browser can tell those two uses apart.
+
+**The a11y test measures reflow twice, and the second pass is allowed to skip.**
+Its main pass blocks every request off the fixture server, which keeps it
+hermetic and means it measures the *fallback* fonts. Cinzel is about 30% wider
+than Georgia at the same size and reflow is a width test, so that pass says
+nothing about the page a student actually sees. A second pass allows the two
+font hosts and repeats the 320px and 200% measurements, and **skips**, visibly,
+when the fonts do not arrive, because a third party's outage must never fail a
+commit, which is the same reason `check-image-urls.js` is nightly.
+
+**`document.fonts.check()` does not tell you a webfont loaded.** It answers "can
+this string be rendered in that family", and a browser with no network answers
+yes, because it can render it in a fallback. Written that way, the pass above
+reported a confident green while measuring Georgia. The honest signal is
+metrics: render a string in the webfont stack and in the fallback and compare
+widths, since identical widths mean the face never applied.
 
 **Both browser tests read their page list from `VOLUMES`, never a typed list.**
 `ebook-a11y.test.js` runs every assertion against the library and every volume.
