@@ -124,7 +124,7 @@ module.exports = {
       },
       terms: [
         ['Ren', 'Humaneness toward others, the central Confucian virtue, expressed in conduct rather than in belief.'],
-        ['Li', 'Correct form and ritual propriety: the observable behaviour that keeps a relationship in good order.'],
+        ['Li', 'Correct form and ritual propriety: the observable behavior that keeps a relationship in good order.'],
         ['Five relationships', 'The reciprocal bonds Confucianism treats as the structure of society, each carrying duties in both directions.'],
         ['Filial piety', 'The duty of support, obedience and ritual care owed to parents and ancestors, treated as the model for loyalty to a ruler.'],
         ['Examination system', 'Recruitment of officials by written test on the Confucian classics, developed under the Sui and Tang and expanded under the Song.'],
@@ -216,8 +216,8 @@ module.exports = {
         {
           heading: 'How it became an institution',
           blocks: [
-            { p: `Two institutions carry the weight. The first is the caste order, and the precision here separates strong answers from weak ones. <span class="kt">Varna</span> is the four-fold ideal scheme of the texts: brahmins, kshatriyas, vaishyas and shudras. <span class="kt">Jati</span> is the lived reality of thousands of local birth groups, each with an occupational association, marrying within itself. Jati is the one that governed an actual life. It reproduced hereditary occupational specialization and settled who could eat with, marry or work alongside whom, and it did all of that without a state allocating anybody's labour. That is an extraordinary thing for a belief system to accomplish, and it is the best single answer to what a belief system <em>does</em>.` },
-            { p: `The second is the temple. A major South Asian temple was not only a place of worship. The Brihadisvara temple at Thanjavur, completed around <span class="num">1010 CE</span> under the Chola dynasty, held granted land, employed hundreds of priests, musicians, dancers, accountants and labourers, received endowments recorded in inscriptions on its own walls, lent at interest and redistributed grain. Temples were among the largest landholders and employers in the regions that held them, so Hinduism functioned as an economic institution in the most literal sense.` },
+            { p: `Two institutions carry the weight. The first is the caste order, and the precision here separates strong answers from weak ones. <span class="kt">Varna</span> is the four-fold ideal scheme of the texts: brahmins, kshatriyas, vaishyas and shudras. <span class="kt">Jati</span> is the lived reality of thousands of local birth groups, each with an occupational association, marrying within itself. Jati is the one that governed an actual life. It reproduced hereditary occupational specialization and settled who could eat with, marry or work alongside whom, and it did all of that without a state allocating anybody's labor. That is an extraordinary thing for a belief system to accomplish, and it is the best single answer to what a belief system <em>does</em>.` },
+            { p: `The second is the temple. A major South Asian temple was not only a place of worship. The Brihadisvara temple at Thanjavur, completed around <span class="num">1010 CE</span> under the Chola dynasty, held granted land, employed hundreds of priests, musicians, dancers, accountants and laborers, received endowments recorded in inscriptions on its own walls, lent at interest and redistributed grain. Temples were among the largest landholders and employers in the regions that held them, so Hinduism functioned as an economic institution in the most literal sense.` },
             { p: `Between the two stood the brahmins, ritual specialists whose services were required at birth, marriage and death, and who held their position by birth rather than by examination or appointment. A hereditary religious class embedded in every locality is a durable institution, and it needed no central church to sustain it.` }
           ]
         },
@@ -225,7 +225,7 @@ module.exports = {
           heading: 'How it traveled, or why it did not',
           blocks: [
             { p: `There is no conversion mechanism. You do not join a jati; you are born into one. There is no missionary tradition, no equivalent of baptism or of the shahada, and brahmin concerns about ritual purity discouraged the long journeys other traditions used to spread. Where Buddhism could offer a Sogdian merchant membership on the spot, the traditions later grouped as Hinduism had nothing structurally comparable to offer him.` },
-            { p: `And yet the largest Hindu temple complex in the world is in Cambodia. Angkor Wat, completed around <span class="num">1150 CE</span> under Suryavarman II, aligned the Khmer king with Vishnu, and Sanskrit inscriptions, Hindu ritual specialists and the Ramayana reached courts across Southeast Asia. The mechanism was neither conquest nor mission. Southeast Asian rulers adopted Hindu cosmology and the <span class="kt">devaraja</span> ideal because it supplied something they wanted: a cosmology in which the king stood at the centre of the universe, plus a literate ritual class to maintain it.` },
+            { p: `And yet the largest Hindu temple complex in the world is in Cambodia. Angkor Wat, completed around <span class="num">1150 CE</span> under Suryavarman II, aligned the Khmer king with Vishnu, and Sanskrit inscriptions, Hindu ritual specialists and the Ramayana reached courts across Southeast Asia. The mechanism was neither conquest nor mission. Southeast Asian rulers adopted Hindu cosmology and the <span class="kt">devaraja</span> ideal because it supplied something they wanted: a cosmology in which the king stood at the center of the universe, plus a literate ritual class to maintain it.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -242,7 +242,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `The jati order. <em>The mechanism is that a birth group with an inherited occupation and a rule of marrying within itself reproduced the entire division of labour across generations without any state allocating work, which is why the social order survived every dynastic change that swept over it.</em>`,
+        tool: `The jati order. <em>The mechanism is that a birth group with an inherited occupation and a rule of marrying within itself reproduced the entire division of labor across generations without any state allocating work, which is why the social order survived every dynastic change that swept over it.</em>`,
         limit: `Untouchability as enforced exclusion from wells, temples and streets; rank fixed at birth with no route out; and the bhakti movements from the sixth century CE as evidence that people inside the system pushed against it.`,
         comparison: `Against <em>Buddhism</em> on membership: born into versus joined, which is the single cleanest explanation of why one stayed rooted and the other crossed a continent. Against <em>Confucianism</em> on hierarchy: birth versus examined attainment.`
       },
@@ -272,7 +272,7 @@ module.exports = {
           blocks: [
             { p: `Siddhartha Gautama taught in northeastern India as a reformer inside the existing South Asian religious world, not outside it: he took rebirth and karma as given and disagreed about what to do with them. The <span class="kt">Four Noble Truths</span> state the diagnosis and the cure. Existence involves suffering; suffering arises from craving; craving can cease; and the Eightfold Path is the method. The goal is <span class="kt">nirvana</span>, the extinguishing of craving and release from rebirth.` },
             { p: `Two features made it portable. First, the path was open to anyone regardless of birth, which meant a merchant in a foreign city could become a lay follower without belonging to any local lineage. Second, it required no priesthood tied to a place. What it required was the <span class="kt">sangha</span>, the community of monks and nuns, and a sangha can be founded anywhere there are people willing to feed it.` },
-            { p: `The tradition divided as it grew. Theravada, strong in Sri Lanka and mainland Southeast Asia, emphasizes the monastic path and the earliest teachings. Mahayana, dominant in China, Korea and Japan, elevated the <span class="kt">bodhisattva</span>, one who postpones their own release to help others, which opened salvation to lay people on a much larger scale. Vajrayana, in Tibet and later Mongolia, developed esoteric ritual practice out of the great monastic universities of northeastern India. Read the arrows on the Module 01 map with those three in mind and the colours stop being decoration.` }
+            { p: `The tradition divided as it grew. Theravada, strong in Sri Lanka and mainland Southeast Asia, emphasizes the monastic path and the earliest teachings. Mahayana, dominant in China, Korea and Japan, elevated the <span class="kt">bodhisattva</span>, one who postpones their own release to help others, which opened salvation to lay people on a much larger scale. Vajrayana, in Tibet and later Mongolia, developed esoteric ritual practice out of the great monastic universities of northeastern India. Read the arrows on the Module 01 map with those three in mind and the colors stop being decoration.` }
           ]
         },
         {
@@ -309,12 +309,12 @@ module.exports = {
         comparison: `Against <em>Hinduism</em> on membership: joined versus born into, the cleanest explanation of divergent spread. Against <em>Islam</em> on mechanism: both moved with merchants along the same routes, but one offered merit and a monastery and the other offered law, literacy and a partnership contract.`
       },
       terms: [
-        ['Four Noble Truths', 'The diagnosis and cure at the centre of Buddhist teaching: suffering, its cause in craving, its cessation, and the path.'],
+        ['Four Noble Truths', 'The diagnosis and cure at the center of Buddhist teaching: suffering, its cause in craving, its cessation, and the path.'],
         ['Nirvana', 'The extinguishing of craving and release from the cycle of rebirth.'],
         ['Sangha', 'The community of monks and nuns, and the institution that carried the religion across Asia.'],
         ['Bodhisattva', 'In Mahayana, one who delays their own release in order to help others, which widened salvation beyond the monastery.'],
         ['Merit', 'The spiritual credit generated by giving, especially to the sangha, and the economic engine of monastic wealth.'],
-        ['Theravada, Mahayana, Vajrayana', 'The three major branches, whose different centres of gravity explain the different arrows on the Module 01 map.']
+        ['Theravada, Mahayana, Vajrayana', 'The three major branches, whose different centers of gravity explain the different arrows on the Module 01 map.']
       ]
     },
 
@@ -338,7 +338,7 @@ module.exports = {
         {
           heading: 'How it became an institution',
           blocks: [
-            { p: `Rome destroyed the Second Temple in <span class="num">70 CE</span>, and with it the sacrificial worship that had been centred on one building in one city. What replaced it is the institutional story: the <span class="kt">synagogue</span> as a place of assembly, prayer and study, the rabbi as an authority whose standing came from learning rather than from priestly descent, and the study of law as itself an act of worship. The Mishnah was compiled around <span class="num">200 CE</span> and the Talmud over the following centuries, turning oral legal debate into a portable curriculum.` },
+            { p: `Rome destroyed the Second Temple in <span class="num">70 CE</span>, and with it the sacrificial worship that had been centered on one building in one city. What replaced it is the institutional story: the <span class="kt">synagogue</span> as a place of assembly, prayer and study, the rabbi as an authority whose standing came from learning rather than from priestly descent, and the study of law as itself an act of worship. The Mishnah was compiled around <span class="num">200 CE</span> and the Talmud over the following centuries, turning oral legal debate into a portable curriculum.` },
             { p: `Once that structure existed, a community needed a scroll, a teacher and a quorum, and it could exist anywhere. Around it grew the rest: the beit din, a court of Jewish law settling disputes between community members, obligatory charity funds for the poor, and schooling for boys that made a high level of male literacy normal in communities where the surrounding population was largely illiterate. That literacy had commercial consequences, because a merchant who can read a contract and write a letter has an advantage in long-distance trade.` },
             { note: {
               kind: 'howknow',
@@ -371,7 +371,7 @@ module.exports = {
         ['Covenant', 'A binding agreement between God and a people, carrying obligations, which is why the tradition took the form of law.'],
         ['Torah', 'The foundational law and narrative, elaborated by later rabbinic literature into a working legal system.'],
         ['Halakha', 'Jewish law, governing food, marriage, commerce and the calendar.'],
-        ['Synagogue', 'The house of assembly, prayer and study that replaced the Temple as the centre of practice after 70 CE.'],
+        ['Synagogue', 'The house of assembly, prayer and study that replaced the Temple as the center of practice after 70 CE.'],
         ['Diaspora', 'The dispersal of a people from their homeland, and the linked communities they formed abroad.'],
         ['Dhimmi', 'The protected status of Jews and Christians under Muslim rule: own law and courts, a special tax, and varying restrictions.']
       ]
@@ -391,7 +391,7 @@ module.exports = {
           heading: 'The core idea',
           blocks: [
             { p: `One God, and the claim that Jesus of Nazareth was that God's son, crucified under Roman authority and raised from the dead, so that salvation is available to anyone who accepts it. The universality is the historically decisive part. Salvation did not depend on descent, on locality, or on ritual status, which meant the movement could recruit anyone: a Greek shopkeeper, a Roman soldier, an enslaved household worker.` },
-            { p: `Defining what the claim actually meant took institutional machinery. Bishops assembled at councils, most famously at Nicaea in <span class="num">325 CE</span>, and issued creeds settling disputed questions. Some churches did not accept later definitions and went their own way, which is why by c.1200 Christianity is not one church but several: a Latin west under the pope, a Greek east under the patriarch of Constantinople and the emperor, the Church of the East across Persia and Central Asia, and the Ethiopian and Armenian churches. Deciding doctrine by council is itself an institutional act, and it is the origin of the divisions.` }
+            { p: `Defining what the claim actually meant took institutional machinery. Bishops assembled at councils, most famously at Nicaea in <span class="num">325 CE</span>, and issued creeds settling disputed questions. Some churches did not accept later definitions and went their own way, which is why by c. 1200 Christianity is not one church but several: a Latin west under the pope, a Greek east under the patriarch of Constantinople and the emperor, the Church of the East across Persia and Central Asia, and the Ethiopian and Armenian churches. Deciding doctrine by council is itself an institutional act, and it is the origin of the divisions.` }
           ]
         },
         {
@@ -431,7 +431,7 @@ module.exports = {
         ['Diocese', 'A bishop&rsquo;s territorial jurisdiction, mapped onto Roman provincial administration and outlasting it.'],
         ['Monastery', 'A religious community that in the post-Roman west also functioned as school, library, farm, hospital and hostel.'],
         ['Canon law', 'The church&rsquo;s own legal system and courts, with jurisdiction over marriage, wills and the clergy.'],
-        ['Orthodoxy', 'The Greek-speaking eastern church, closely bound to the Byzantine emperor and centred on Constantinople.'],
+        ['Orthodoxy', 'The Greek-speaking eastern church, closely bound to the Byzantine emperor and centered on Constantinople.'],
         ['Ge’ez', 'The liturgical language of Ethiopian Christianity, one marker of a church that developed its own canon and tradition.']
       ]
     },
@@ -450,7 +450,7 @@ module.exports = {
           heading: 'The core idea',
           blocks: [
             { p: `Submission to one God, whose final revelation came through Muhammad and is recorded in the <span class="kt">Quran</span>, alongside the sunna, the example of the Prophet transmitted in hadith. The community's era begins not with a birth or a revelation but with a migration, the <span class="kt">hijra</span> to Medina in <span class="num">622 CE</span>, which is itself informative: the calendar starts when the believers became a community governing itself.` },
-            { p: `The <span class="kt">Five Pillars</span> are usually taught as devotions. Read them as social machinery and each one does visible work. The declaration of faith defines membership in a community that crosses every political border. Prayer five times daily synchronizes a population's day. The fast of Ramadan is collective and public. <span class="kt">Zakat</span> is not voluntary charity but an obligation on wealth at a set rate, which makes it a transfer system. And the <span class="kt">hajj</span> assembled believers from thousands of kilometres apart in one place annually, which made it the largest regular gathering in the pre-modern world and, incidentally, an information and trade network of extraordinary reach.` }
+            { p: `The <span class="kt">Five Pillars</span> are usually taught as devotions. Read them as social machinery and each one does visible work. The declaration of faith defines membership in a community that crosses every political border. Prayer five times daily synchronizes a population's day. The fast of Ramadan is collective and public. <span class="kt">Zakat</span> is not voluntary charity but an obligation on wealth at a set rate, which makes it a transfer system. And the <span class="kt">hajj</span> assembled believers from thousands of kilometers apart in one place annually, which made it the largest regular gathering in the pre-modern world and, incidentally, an information and trade network of extraordinary reach.` }
           ]
         },
         {
@@ -478,7 +478,7 @@ module.exports = {
           blocks: [
             { p: `The primary legal distinction was between Muslim and non-Muslim, with dhimmi communities protected and self-governing in their own law, taxed differently, and subject to restrictions that varied widely by ruler and century. Slavery was legal and extensive, supplied through the trans-Saharan routes, the Indian Ocean and the steppe, and enslaved people served in households, in agriculture, and as soldiers and administrators, occasionally reaching great power in that last role.` },
             { p: `On women the honest answer requires two clauses. Islamic law granted women defined rights of inheritance and the right to own and manage property in their own names, which was a stronger legal position than women held in several contemporary societies, and Geniza and court records show women exercising those rights. Those same legal traditions also placed women under male guardianship, assigned unequal shares in inheritance, and restricted their access to public office and to the roles that carried religious authority. Both are true, and an answer that reports only one of them is describing a preference rather than a period.` },
-            { p: `The community also divided over authority. The dispute about the succession to Muhammad produced the Sunni and Shia traditions, and by c.1200 that division was institutional and political, not only theological.` }
+            { p: `The community also divided over authority. The dispute about the succession to Muhammad produced the Sunni and Shia traditions, and by c. 1200 that division was institutional and political, not only theological.` }
           ]
         }
       ],
@@ -513,7 +513,7 @@ module.exports = {
           blocks: [
             { p: `Buddhism arrived in China carrying commitments that Chinese society found genuinely offensive. Monks left their families, took no wives and produced no heirs, which under the obligations of filial piety looked like abandoning one's parents and ending the ancestral line. Monks did not bow to the emperor. The whole apparatus arrived in Sanskrit and Pali, in a vocabulary China had no words for.` },
             { p: `<b>What changed.</b> Translators rendered Buddhist concepts using existing Daoist vocabulary, a practice called <em>geyi</em>, matching concepts, so nirvana was explained through terms already carrying Daoist meaning. <span class="kt">Chan</span> Buddhism, later known in Japan as Zen, developed a distinctively Chinese emphasis on direct insight, meditation and suspicion of scholastic elaboration that has a recognizably Daoist flavour. Pure Land practice offered ordinary people rebirth in a paradise through devotion rather than through monastic discipline, which made the religion available to people who could never join a sangha. And Chinese Buddhism grew a literature about filial piety, including the story of the monk Mulian rescuing his mother from suffering after death, celebrated in the annual Ghost Festival: a Buddhist story reshaped to answer the exact objection Chinese critics had raised.` },
-            { p: `<b>What continued.</b> The core diagnosis did not move. Suffering, craving, karma, rebirth and release remained what the tradition was about, the monastic community remained its institutional centre, and the texts translated were the Indian texts. Chinese Buddhism is a Chinese version of Buddhism, not a Chinese religion wearing Buddhist clothing, and a strong answer says which parts moved and which did not.` },
+            { p: `<b>What continued.</b> The core diagnosis did not move. Suffering, craving, karma, rebirth and release remained what the tradition was about, the monastic community remained its institutional center, and the texts translated were the Indian texts. Chinese Buddhism is a Chinese version of Buddhism, not a Chinese religion wearing Buddhist clothing, and a strong answer says which parts moved and which did not.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -583,7 +583,7 @@ module.exports = {
       {
         category: 'Question 3: Argumentation',
         title: 'Belief systems against kings and armies',
-        body: `The claim is that before c.1200 belief systems shaped how ordinary people lived more than kings and armies did, and you cannot argue it honestly without evidence on both sides. <b>For:</b> jati governed occupation and marriage without any state involvement; zakat and waqf funded welfare and schooling outside the treasury; monasteries were the schools, hospitals and lenders of two continents; halakha and sharia settled the disputes of daily life in their own courts; the Confucian family order set the terms of household life for centuries. <b>Against:</b> the Tang suppression of 845 CE closed monasteries by imperial order; Constantine and Theodosius changed Christianity's position by decree; a Ghanaian king decided what happened in his own town; and every tradition here that became powerful did so because a ruler adopted it. The strongest answers usually land on a qualified claim, such as that belief systems reached further into daily life than states could, while states repeatedly determined which belief system got to do the reaching.`
+        body: `The claim is that before c. 1200 belief systems shaped how ordinary people lived more than kings and armies did, and you cannot argue it honestly without evidence on both sides. <b>For:</b> jati governed occupation and marriage without any state involvement; zakat and waqf funded welfare and schooling outside the treasury; monasteries were the schools, hospitals and lenders of two continents; halakha and sharia settled the disputes of daily life in their own courts; the Confucian family order set the terms of household life for centuries. <b>Against:</b> the Tang suppression of 845 CE closed monasteries by imperial order; Constantine and Theodosius changed Christianity's position by decree; a Ghanaian king decided what happened in his own town; and every tradition here that became powerful did so because a ruler adopted it. The strongest answers usually land on a qualified claim, such as that belief systems reached further into daily life than states could, while states repeatedly determined which belief system got to do the reaching.`
       },
       {
         category: 'Category: how each tradition defined membership',

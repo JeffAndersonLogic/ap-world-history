@@ -88,7 +88,7 @@ module.exports = {
         {
           heading: 'Why it was not primitive, and how sure we can be',
           blocks: [
-            { p: `The reason this matters for your third reading question is that if foraging was miserable, the switch to farming needs no defending, and the argument is over before it starts. The evidence says it was not miserable. It says foragers generally ate a varied diet, showed fewer of the deficiency and infection markers that appear in early farming populations, and in favourable environments could meet their needs without working every waking hour.` },
+            { p: `The reason this matters for your third reading question is that if foraging was miserable, the switch to farming needs no defending, and the argument is over before it starts. The evidence says it was not miserable. It says foragers generally ate a varied diet, showed fewer of the deficiency and infection markers that appear in early farming populations, and in favorable environments could meet their needs without working every waking hour.` },
             { note: {
               kind: 'howknow',
               label: 'How we know, and how much to trust it',
@@ -132,7 +132,7 @@ module.exports = {
           heading: 'What changed',
           blocks: [
             { p: `The last glacial period ended, and with it went a climate that had been not only colder but wildly unstable, swinging between states within a human lifetime. What followed, the epoch geologists call the Holocene, has been by comparison remarkably steady: warmer, wetter in many regions, and above all predictable from one decade to the next.` },
-            { p: `Predictability is the part that matters, and it is easy to skip past. Planting is a bet. You put seed and months of labour into the ground on the expectation that the next twelve months will resemble the last twelve. In a climate that lurches, that bet is bad, and mobility, which lets you go to wherever the food is this year, is the rational strategy. In a stable climate the bet becomes reasonable, and staying put stops being a risk.` },
+            { p: `Predictability is the part that matters, and it is easy to skip past. Planting is a bet. You put seed and months of labor into the ground on the expectation that the next twelve months will resemble the last twelve. In a climate that lurches, that bet is bad, and mobility, which lets you go to wherever the food is this year, is the rational strategy. In a stable climate the bet becomes reasonable, and staying put stops being a risk.` },
             { p: `Warming also moved the plants. Stands of wild wheat and barley spread across the hills of Southwest Asia, wild rice across parts of Asia, wild grasses elsewhere, putting dense concentrations of harvestable seed within reach of people who had the tools to cut and grind them. Nobody had to invent anything to eat those. They only had to be there.` }
           ]
         },
@@ -146,7 +146,7 @@ module.exports = {
         {
           heading: 'Forager and farmer, side by side',
           blocks: [
-            { p: `Your first success criterion asks you to describe how the two ways of life differed, so here they are on the same six measures. <b>Mobility:</b> the forager moves to the food on a seasonal round, the farmer stays and brings the food to a fixed point. <b>Diet:</b> the forager eats a wide range of species and the farmer eats a narrow one, dominated by one or two cereals. <b>Work:</b> the forager's labour is skilled, varied and intermittent, while the farmer's is repetitive, seasonal in its peaks and, at planting and harvest, relentless.` },
+            { p: `Your first success criterion asks you to describe how the two ways of life differed, so here they are on the same six measures. <b>Mobility:</b> the forager moves to the food on a seasonal round, the farmer stays and brings the food to a fixed point. <b>Diet:</b> the forager eats a wide range of species and the farmer eats a narrow one, dominated by one or two cereals. <b>Work:</b> the forager's labor is skilled, varied and intermittent, while the farmer's is repetitive, seasonal in its peaks and, at planting and harvest, relentless.` },
             { p: `<b>Property:</b> the forager owns what can be carried, the farmer owns land, a house, a store and animals, all of which can be inherited. <b>Group size:</b> dozens against hundreds and then thousands. <b>And a bad year:</b> the forager's response is to move or to switch to another food, since a diverse wild diet rarely fails all at once, while the farmer's is to eat the store, then the seed grain, then to starve or leave. That last row is the one worth memorizing, because it explains both why farming supported far more people and why farming societies were far more vulnerable to a single failure.` }
           ]
         },
@@ -154,7 +154,7 @@ module.exports = {
           heading: 'Settlement came first, at least sometimes',
           blocks: [
             { p: `Here is the fact that reorders the story. In the Levant, the Natufians were building stone-founded houses, storing wild cereals and burying their dead in the same places for generations <em>before</em> anyone was farming. They were sedentary, or nearly so, and they were foragers. Rich wild resources, not domesticated crops, held them in place.` },
-            { p: `And at Gobekli Tepe in what is now southeastern Turkey, from around <span class="num">9600 BCE</span>, people were quarrying, carving and erecting massive stone pillars decorated with animals, in a monumental complex that took organized labour on a considerable scale. The people who built it were not, or were barely, farmers. That single site breaks the neat sequence in which surplus produces settlement, settlement produces cities and cities produce monuments, because here the monument arrives first.` },
+            { p: `And at Gobekli Tepe in what is now southeastern Turkey, from around <span class="num">9600 BCE</span>, people were quarrying, carving and erecting massive stone pillars decorated with animals, in a monumental complex that took organized labor on a considerable scale. The people who built it were not, or were barely, farmers. That single site breaks the neat sequence in which surplus produces settlement, settlement produces cities and cities produce monuments, because here the monument arrives first.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -184,7 +184,7 @@ module.exports = {
       name: 'What Domestication Actually Is',
       navLabel: 'Domestication',
       dates: 'Centuries per species &nbsp;·&nbsp; a change in the plants and animals themselves',
-      thesis: `<span class="kt">Domestication</span> is not a decision. It is an evolutionary change in another species, caused by human behaviour, mostly without anyone intending it, and knowing the physical mechanism is what separates an answer that explains from one that asserts.`,
+      thesis: `<span class="kt">Domestication</span> is not a decision. It is an evolutionary change in another species, caused by human behavior, mostly without anyone intending it, and knowing the physical mechanism is what separates an answer that explains from one that asserts.`,
       parts: [
         {
           heading: 'The mechanism, in one plant',
@@ -208,7 +208,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Selection for non-shattering grain. <em>The mechanism is that harvesting with a sickle and replanting part of the harvest systematically favours the rare mutant whose seed stays attached, so over centuries the crop loses the ability to sow itself and becomes dependent on people, which is domestication happening without anyone intending it.</em>`,
+        tool: `Selection for non-shattering grain. <em>The mechanism is that harvesting with a sickle and replanting part of the harvest systematically favors the rare mutant whose seed stays attached, so over centuries the crop loses the ability to sow itself and becomes dependent on people, which is domestication happening without anyone intending it.</em>`,
         limit: `Only a handful of large mammals were ever domesticable, because a candidate needed the right diet, growth rate, temperament and herd structure. Which species those were, and where they lived, was settled by biogeography long before humans arrived.`,
         comparison: `Against <em>section 05</em>: the Fertile Crescent's advantage was not only water and soil but the wild ancestors of wheat, barley, sheep and goats growing in the same place, which is a second geographic condition and a better answer than "rivers" on its own.`
       },
@@ -226,19 +226,19 @@ module.exports = {
       num: '04',
       accent: 'oxide',
       name: 'It Happened Several Times',
-      navLabel: 'Independent centres',
-      dates: 'Roughly seven or more centres &nbsp;·&nbsp; none of them in contact',
+      navLabel: 'Independent centers',
+      dates: 'Roughly seven or more centers &nbsp;·&nbsp; none of them in contact',
       thesis: `Agriculture was invented independently in a number of separate regions by people who had never heard of each other. That single fact is the strongest evidence that the Neolithic was a response to a shared condition rather than a good idea that spread.`,
       parts: [
         {
-          heading: 'The centres, and what each one had to work with',
+          heading: 'The centers, and what each one had to work with',
           blocks: [
             { p: `<b>Southwest Asia</b>, from roughly <span class="num">9500 BCE</span>: emmer and einkorn wheat, barley, lentils, peas, flax, with sheep, goats, cattle and pigs. The most complete package anywhere, which matters for section 09.` },
-            { p: `<b>China</b>, at least two separate centres: millet in the drier north along the Huang He, and rice in the wetter Yangtze basin, with pigs and chickens. Two different crops, two different water regimes, one country.` },
+            { p: `<b>China</b>, at least two separate centers: millet in the drier north along the Huang He, and rice in the wetter Yangtze basin, with pigs and chickens. Two different crops, two different water regimes, one country.` },
             { p: `<b>Mesoamerica</b>: maize, domesticated from a wild grass called teosinte whose seed head bears almost no resemblance to a modern corn cob, along with beans and squash. The transformation took thousands of years, which makes maize the clearest proof that domestication is a slow evolutionary process rather than an act of invention.` },
-            { p: `<b>The Andes and Amazonia</b>: potato, quinoa, and manioc, with llamas and alpacas and guinea pigs. Note what is missing from that list, since no animal here could pull a plough or carry a rider, a point Foundations 5 returns to.` },
+            { p: `<b>The Andes and Amazonia</b>: potato, quinoa, and manioc, with llamas and alpacas and guinea pigs. Note what is missing from that list, since no animal here could pull a plow or carry a rider, a point Foundations 5 returns to.` },
             { p: `<b>New Guinea</b>: taro, yams and bananas, cultivated in drained wetland plots at Kuk Swamp thousands of years ago, in a highland region with no state, no cities and no writing. Agriculture does not always produce civilization, and this is the case that proves it.` },
-            { p: `<b>West Africa and the Sahel</b>: sorghum, pearl millet, African rice and yams, domesticated for a climate where rain is seasonal and unreliable. <b>Eastern North America</b>: squash, sunflower, marsh elder and goosefoot, a genuine independent centre whose crops were later largely displaced when maize arrived from the south.` }
+            { p: `<b>West Africa and the Sahel</b>: sorghum, pearl millet, African rice and yams, domesticated for a climate where rain is seasonal and unreliable. <b>Eastern North America</b>: squash, sunflower, marsh elder and goosefoot, a genuine independent center whose crops were later largely displaced when maize arrived from the south.` }
           ]
         },
         {
@@ -249,7 +249,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Two habits to break. The first is treating Southwest Asia as <em>the</em> origin of agriculture with everywhere else as a copy. It is the earliest well-documented centre and the best-studied, which is not the same thing, and maize, rice, potatoes and sorghum were domesticated by people who owed it nothing. The second is assuming farming leads to cities and states. New Guinea's highlands supported dense farming populations for millennia without producing either. Agriculture is necessary for a state and nowhere near sufficient, which is exactly why section 06 has to explain what else had to be true.`
+              html: `Two habits to break. The first is treating Southwest Asia as <em>the</em> origin of agriculture with everywhere else as a copy. It is the earliest well-documented center and the best-studied, which is not the same thing, and maize, rice, potatoes and sorghum were domesticated by people who owed it nothing. The second is assuming farming leads to cities and states. New Guinea's highlands supported dense farming populations for millennia without producing either. Agriculture is necessary for a state and nowhere near sufficient, which is exactly why section 06 has to explain what else had to be true.`
             } }
           ]
         }
@@ -290,7 +290,7 @@ module.exports = {
           heading: 'How a farming package traveled',
           blocks: [
             { p: `Independent invention is only half the story, because most places that farm did not invent it, and how it arrived has been settled by evidence that did not exist a generation ago. For Europe the answer turned out to be people. Ancient DNA recovered from skeletons shows that the spread of farming from Anatolia into Europe involved the large-scale movement of farming populations themselves, who mixed with the hunter-gatherers already living there rather than simply teaching them.` },
-            { p: `That matters for how you write about diffusion generally. There are two mechanisms and they leave different traces: a technique can spread by people adopting it from neighbours, or by the people who practise it moving in and outnumbering them. Pottery styles and crop remains alone cannot easily tell you which happened, and genetics can. When a later unit asks how a technology or a religion spread, having the distinction ready, adoption against migration, is worth a great deal, and this is the clearest early case of it.` },
+            { p: `That matters for how you write about diffusion generally. There are two mechanisms and they leave different traces: a technique can spread by people adopting it from neighbors, or by the people who practice it moving in and outnumbering them. Pottery styles and crop remains alone cannot easily tell you which happened, and genetics can. When a later unit asks how a technology or a religion spread, having the distinction ready, adoption against migration, is worth a great deal, and this is the clearest early case of it.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: a new kind of evidence',
@@ -301,10 +301,10 @@ module.exports = {
         {
           heading: 'Four valleys, four different bargains',
           blocks: [
-            { p: `<b>The Nile</b> had the gentlest terms. Its flood was annual, and reliable enough to plan a whole agricultural calendar around: water and silt arrived in late summer, the fields were sown as the water fell back, and the harvest came before the next flood. Herodotus called Egypt the gift of the river, and the compliment is mostly accurate. Add deserts on both flanks, which discouraged invasion, and Egypt got predictability that its neighbours did not.` },
+            { p: `<b>The Nile</b> had the gentlest terms. Its flood was annual, and reliable enough to plan a whole agricultural calendar around: water and silt arrived in late summer, the fields were sown as the water fell back, and the harvest came before the next flood. Herodotus called Egypt the gift of the river, and the compliment is mostly accurate. Add deserts on both flanks, which discouraged invasion, and Egypt got predictability that its neighbors did not.` },
             { p: `<b>The Tigris and Euphrates</b> gave the same gifts on far harsher terms. The flood was violent, its timing poor for the grain cycle, and its scale varied unpredictably from year to year, so agriculture there required serious engineering: canals, levees and basins, built and maintained collectively. And it carried a sting. Irrigating heavily in a hot, flat, poorly drained plain leaves salts behind as the water evaporates, and over centuries the soil <span class="kt">salinizes</span>. Cuneiform records from southern Mesopotamia show a long shift from wheat toward barley, which tolerates salt better, together with complaints of failing yields. Historians have debated how much of the region's political trouble that explains, so cite it as a well-evidenced environmental cost rather than as the cause of a collapse.` },
             { p: `<b>The Indus</b> combined river flooding with monsoon rain, and produced the most striking cities of the lot: Mohenjo-daro and Harappa, laid out on a grid, built from standardized fired bricks, with covered drains, wells and bathing platforms serving ordinary houses. The Indus later shifted its channels and the monsoon appears to have weakened, and the cities were largely abandoned, which is a reminder that a geographic gift can be withdrawn.` },
-            { p: `<b>The Huang He</b> ran through <span class="kt">loess</span>, a fine wind-blown soil that is fertile and soft enough to work with simple tools, which made early farming easy. The same softness fills the river with silt, so its bed rises, so its banks must be raised, so when it breaks them it does so catastrophically and can shift its course by hundreds of kilometres. The Chinese name for it, China's Sorrow, is an accurate summary of a geographic bargain: fertile ground purchased with permanent risk.` },
+            { p: `<b>The Huang He</b> ran through <span class="kt">loess</span>, a fine wind-blown soil that is fertile and soft enough to work with simple tools, which made early farming easy. The same softness fills the river with silt, so its bed rises, so its banks must be raised, so when it breaks them it does so catastrophically and can shift its course by hundreds of kilometers. The Chinese name for it, China's Sorrow, is an accurate summary of a geographic bargain: fertile ground purchased with permanent risk.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -319,7 +319,7 @@ module.exports = {
         comparison: `Against itself: <em>Nile and Tigris-Euphrates</em> is the sharpest comparison in this chapter, because both are irrigation civilizations and one had a predictable flood while the other had a violent one, which shows up in how much collective engineering each required.`
       },
       terms: [
-        ['Alluvial soil', 'Fine, fertile sediment deposited by a flooding river, which renews a field&rsquo;s productivity without any labour.'],
+        ['Alluvial soil', 'Fine, fertile sediment deposited by a flooding river, which renews a field&rsquo;s productivity without any labor.'],
         ['Irrigation', 'Directing water onto fields, which makes farming possible where rainfall alone cannot support it.'],
         ['Salinization', 'The build-up of salts in irrigated soil in hot, poorly drained land, which reduces yields over centuries.'],
         ['Loess', 'Fine wind-blown soil, fertile and easy to work, which gives the Huang He both its early farming and its silt-laden floods.'],
@@ -358,7 +358,7 @@ module.exports = {
             { p: `<b>Cities.</b> Uruk in southern Mesopotamia grew to tens of thousands of people, an order of magnitude beyond any village, and its scale is only possible because a hinterland of farmers was producing food for people who were not.` },
             { p: `<b>Specialists.</b> Potters, weavers, metalworkers, brewers, builders, soldiers, priests and administrators, each supported by grain they did not grow. Specialization compounds, because a full-time potter gets better at pots than a farmer who makes them in the off season.` },
             { p: `<b>Writing.</b> This is the detail worth carrying out of the whole chapter. The earliest writing anywhere is not poetry, law or scripture. The oldest tablets from Uruk, from roughly <span class="num">3300 BCE</span>, are accounts: quantities of grain, beer, textiles and livestock, with the names of officials. Literature arrives centuries later. Writing was invented to keep track of the surplus, and one influential account traces it back further, to clay tokens sealed in clay envelopes and then impressed on the outside so the contents could be read without breaking the seal. The strong version of that token theory is debated, but the administrative origin of writing is not.` },
-            { p: `<b>Government and hierarchy.</b> Someone had to organize irrigation works, defend the store, settle disputes over land and water, and decide what the surplus was for. Those functions became permanent offices, offices became authority, and authority backed by control of the granary became class. Alongside it came patriarchy, hardening as property became heritable and descent became something worth policing, and forced labour, since a state with a store can feed people it compels to work.` },
+            { p: `<b>Government and hierarchy.</b> Someone had to organize irrigation works, defend the store, settle disputes over land and water, and decide what the surplus was for. Those functions became permanent offices, offices became authority, and authority backed by control of the granary became class. Alongside it came patriarchy, hardening as property became heritable and descent became something worth policing, and forced labor, since a state with a store can feed people it compels to work.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -394,8 +394,8 @@ module.exports = {
         {
           heading: 'What the skeletons say',
           blocks: [
-            { p: `Human remains from the transition to agriculture in many regions show a consistent set of changes, and none of them are good. Average stature declines. Dental decay rises sharply, because a diet centred on starchy cereals feeds the bacteria that cause it. Enamel defects and other markers of arrested growth become more common, which indicates episodes of childhood illness or hunger. Iron-deficiency markers increase. Signs of infectious disease increase with settlement density.` },
-            { p: `Joint and bone wear tells the labour story. Grinding grain on a saddle quern is done kneeling, pushing with the whole upper body, for hours daily, and at some early farming sites the skeletons of women carry a matching signature of arthritic damage to knees, toes and lower back. Whatever else the Neolithic did, it invented long, repetitive, physically destructive daily work, and it distributed that work unequally from the beginning.` },
+            { p: `Human remains from the transition to agriculture in many regions show a consistent set of changes, and none of them are good. Average stature declines. Dental decay rises sharply, because a diet centered on starchy cereals feeds the bacteria that cause it. Enamel defects and other markers of arrested growth become more common, which indicates episodes of childhood illness or hunger. Iron-deficiency markers increase. Signs of infectious disease increase with settlement density.` },
+            { p: `Joint and bone wear tells the labor story. Grinding grain on a saddle quern is done kneeling, pushing with the whole upper body, for hours daily, and at some early farming sites the skeletons of women carry a matching signature of arthritic damage to knees, toes and lower back. Whatever else the Neolithic did, it invented long, repetitive, physically destructive daily work, and it distributed that work unequally from the beginning.` },
             { note: {
               kind: 'howknow',
               label: 'How we know, and how much to trust it',
@@ -407,14 +407,14 @@ module.exports = {
           heading: 'Why populations grew anyway',
           blocks: [
             { p: `The resolution is demographic. Population growth is births minus deaths, and farming raised both. It raised births because settled women were no longer carrying an infant across long distances, and because cereal porridge is a weaning food, so children could be weaned earlier and birth intervals shortened. It raised deaths through infectious disease in crowded settlements, through the new illnesses that came from living beside animals, and through famine when a monoculture failed. Births won.` },
-            { p: `So the honest summary is that agriculture was a success for populations and a hardship for most people in them. A farming society with worse individual health and higher fertility grows, and a growing society with a granary and specialists out-competes, absorbs and displaces its foraging neighbours, which is why the arrangement spread despite the costs to the individuals paying them.` },
+            { p: `So the honest summary is that agriculture was a success for populations and a hardship for most people in them. A farming society with worse individual health and higher fertility grows, and a growing society with a granary and specialists out-competes, absorbs and displaces its foraging neighbors, which is why the arrangement spread despite the costs to the individuals paying them.` },
             { p: `There was no going back either, and that matters for the argument. Once population had risen to what farming could support, the land could no longer feed those people by foraging, and the skills and the wild stands were both gone. The bargain came with a ratchet.` }
           ]
         },
         {
           heading: 'And who paid',
           blocks: [
-            { p: `The costs were not shared evenly, which is where a strong response to question 3 usually lands. Elites in early states were taller and better fed than the people who grew their food, so agriculture was demonstrably an improvement for some. Enslaved and forced labourers existed from very early in the record of these states. Women's position generally worsened as heritable property, patriarchal descent and the grinding stone all arrived together. The people who benefited most were the ones who controlled the store rather than the ones who filled it.` },
+            { p: `The costs were not shared evenly, which is where a strong response to question 3 usually lands. Elites in early states were taller and better fed than the people who grew their food, so agriculture was demonstrably an improvement for some. Enslaved and forced laborers existed from very early in the record of these states. Women's position generally worsened as heritable property, patriarchal descent and the grinding stone all arrived together. The people who benefited most were the ones who controlled the store rather than the ones who filled it.` },
             { p: `That gives you the shape of a good argument. The question is not only whether agriculture was an improvement, but an improvement for whom, measured by what, and over what timescale, and a response that separates those three is doing genuine historical work.` }
           ]
         }
@@ -446,8 +446,8 @@ module.exports = {
         {
           heading: 'Herding as a strategy',
           blocks: [
-            { p: `The Eurasian steppe runs for thousands of kilometres from Hungary to Manchuria as continuous grassland, too dry for reliable rain-fed agriculture and mostly without rivers to irrigate from. Grass is useless to humans directly, and the whole logic of <span class="kt">pastoralism</span> is to convert it, by putting animals on it and eating the animals or their products.` },
-            { p: `The productivity gain came from taking the products rather than only the meat, sometimes called the secondary products revolution: milk, wool, hides, dung for fuel, and traction from animals harnessed to ploughs and carts. A slaughtered animal feeds you once, whereas a milked animal feeds you for years, and that changes the arithmetic of what a herd is worth.` },
+            { p: `The Eurasian steppe runs for thousands of kilometers from Hungary to Manchuria as continuous grassland, too dry for reliable rain-fed agriculture and mostly without rivers to irrigate from. Grass is useless to humans directly, and the whole logic of <span class="kt">pastoralism</span> is to convert it, by putting animals on it and eating the animals or their products.` },
+            { p: `The productivity gain came from taking the products rather than only the meat, sometimes called the secondary products revolution: milk, wool, hides, dung for fuel, and traction from animals harnessed to plows and carts. A slaughtered animal feeds you once, whereas a milked animal feeds you for years, and that changes the arithmetic of what a herd is worth.` },
             { p: `Milk carries a striking piece of evidence with it. Most adult mammals cannot digest lactose, and neither can most adult humans, but in populations with long dairying traditions in Europe and East Africa a genetic change allowing it spread independently. It is one of the clearest cases we have of a cultural practice altering human biology, though the timing does not line up neatly with the start of dairying and researchers are still arguing about why.` }
           ]
         },
@@ -484,7 +484,7 @@ module.exports = {
       accent: 'gold',
       name: 'Cause, Not Destiny',
       navLabel: 'Cause, not destiny',
-      dates: 'The guard rail on everything above &nbsp;·&nbsp; and the bridge to c.1200',
+      dates: 'The guard rail on everything above &nbsp;·&nbsp; and the bridge to c. 1200',
       thesis: `Geography is the most powerful contextual tool in this course and the easiest one to overuse. The historian's question is never "what did the land determine" but "what did it make easier or harder, for whom, and what did people then do about it."`,
       parts: [
         {
@@ -501,12 +501,12 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `The examinable form of this is a sentence pattern. <b>Weak, and determinist:</b> "Egypt became a great civilization because it had the Nile." <b>Strong:</b> "The Nile's predictable annual flood renewed the fields without labour and set a fixed agricultural calendar, which made permanent settlement and centralized planning far easier than they were in Mesopotamia, where an unpredictable flood forced the same populations to build and maintain far more collective engineering." Both mention a river. Only the second says what the river made easier, for whom, and compared to what. That comparison clause is where the credit is.`
+              html: `The examinable form of this is a sentence pattern. <b>Weak, and determinist:</b> "Egypt became a great civilization because it had the Nile." <b>Strong:</b> "The Nile's predictable annual flood renewed the fields without labor and set a fixed agricultural calendar, which made permanent settlement and centralized planning far easier than they were in Mesopotamia, where an unpredictable flood forced the same populations to build and maintain far more collective engineering." Both mention a river. Only the second says what the river made easier, for whom, and compared to what. That comparison clause is where the credit is.`
             } }
           ]
         },
         {
-          heading: 'The bridge to c.1200',
+          heading: 'The bridge to c. 1200',
           blocks: [
             { p: `Everything else in Foundations sits on this chapter. The states in Foundations 3 tax, conscript and feed themselves from an agricultural surplus, and every tool of rule they use is a way of collecting or spending one. The trade networks in Foundations 4 move goods that a surplus paid for, along routes provisioned by farmers, and the crop transfers in that lesson are the same Neolithic process running again in the eleventh century when Champa rice reaches the Yangtze. The belief systems in Foundations 2 were institutions with land, tenants and granaries. And when Foundations 5 says Song China supported a hundred million people, the sentence underneath it is that wet-rice agriculture in the Yangtze delta produced enough surplus to feed the ones who were not farming.` },
             { p: `That is why this is Day 1. Not because it is old, but because it is the layer everything else in the course is standing on, and a student who can name the layer can explain a state instead of describing it.` }
@@ -540,17 +540,17 @@ module.exports = {
       {
         category: 'Question 2: Contextualization',
         title: 'Name the feature, then say what it did',
-        body: `The template is: condition, mechanism, consequence, in one sentence. Weak: "Mesopotamia had the Tigris and Euphrates, which helped farming." Strong: "Because the Tigris and Euphrates flooded violently and at an unhelpful point in the grain cycle, farming on the southern floodplain required canals, levees and basins that no single household could build or maintain, which pushed Sumerian communities toward collective organization and centralized authority earlier than rain-fed regions needed it." Section 05 gives you four valleys to do this with, and the strongest versions use the mechanism most answers miss: the flood renewed soil fertility without labour, which is what made permanent fields, and therefore permanent cities, possible.`
+        body: `The template is: condition, mechanism, consequence, in one sentence. Weak: "Mesopotamia had the Tigris and Euphrates, which helped farming." Strong: "Because the Tigris and Euphrates flooded violently and at an unhelpful point in the grain cycle, farming on the southern floodplain required canals, levees and basins that no single household could build or maintain, which pushed Sumerian communities toward collective organization and centralized authority earlier than rain-fed regions needed it." Section 05 gives you four valleys to do this with, and the strongest versions use the mechanism most answers miss: the flood renewed soil fertility without labor, which is what made permanent fields, and therefore permanent cities, possible.`
       },
       {
         category: 'Question 3: Argumentation',
         title: 'An improvement for everyone?',
-        body: `Take a position, and give the other side real weight, because a response that only lists costs is as incomplete as one that only lists gains. <b>Against the claim:</b> in many regions early farmers were shorter than the foragers before them, with more dental decay, more childhood growth interruption, more infectious disease, and long repetitive labour whose marks are on their bones; monoculture brought famine risk; hierarchy, forced labour and patriarchy hardened as heritable property arrived. <b>For the claim, or complicating it:</b> populations grew, which means more people lived at all; storage buffered bad seasons; specialization produced technologies, writing and cities; and elites in these societies really were better fed and taller. The strongest answers separate three questions the claim runs together, which is <em>improvement for whom</em>, <em>measured by what</em>, and <em>over what timescale</em>, and then land somewhere like this: agriculture was a success for populations and for the people who controlled the surplus, and a decline in the daily life and health of most individuals who produced it, which is why "improvement" needs a subject before it can be evaluated.`
+        body: `Take a position, and give the other side real weight, because a response that only lists costs is as incomplete as one that only lists gains. <b>Against the claim:</b> in many regions early farmers were shorter than the foragers before them, with more dental decay, more childhood growth interruption, more infectious disease, and long repetitive labor whose marks are on their bones; monoculture brought famine risk; hierarchy, forced labor and patriarchy hardened as heritable property arrived. <b>For the claim, or complicating it:</b> populations grew, which means more people lived at all; storage buffered bad seasons; specialization produced technologies, writing and cities; and elites in these societies really were better fed and taller. The strongest answers separate three questions the claim runs together, which is <em>improvement for whom</em>, <em>measured by what</em>, and <em>over what timescale</em>, and then land somewhere like this: agriculture was a success for populations and for the people who controlled the surplus, and a decline in the daily life and health of most individuals who produced it, which is why "improvement" needs a subject before it can be evaluated.`
       },
       {
         category: 'Category: what an environment had to supply',
         title: 'One comparison spine for the whole chapter',
-        body: `If you need a single analytical category that works everywhere in this lesson, use what the land had to supply and what it therefore permitted. The Fertile Crescent supplied water, renewing soil and the wild ancestors of wheat, barley, sheep and goats, so it got the earliest complete farming package. The Nile supplied a predictable flood, so Egypt got a calendar and a centralized state with unusually little engineering effort. Southern Mesopotamia supplied an unpredictable one, so it got canals, collective labour and, eventually, salt. The steppe supplied grass and nothing else, so it got herds and mobility instead of fields. Set any two of those inside that one category and you have a comparison rather than two descriptions.`
+        body: `If you need a single analytical category that works everywhere in this lesson, use what the land had to supply and what it therefore permitted. The Fertile Crescent supplied water, renewing soil and the wild ancestors of wheat, barley, sheep and goats, so it got the earliest complete farming package. The Nile supplied a predictable flood, so Egypt got a calendar and a centralized state with unusually little engineering effort. Southern Mesopotamia supplied an unpredictable one, so it got canals, collective labor and, eventually, salt. The steppe supplied grass and nothing else, so it got herds and mobility instead of fields. Set any two of those inside that one category and you have a comparison rather than two descriptions.`
       }
     ]
   }

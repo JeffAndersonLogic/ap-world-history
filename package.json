@@ -37,7 +37,8 @@
     "extract:readings": "node scripts/extract-unit-content.js",
     "build:socrates": "node scripts/build-socrates.js",
     "eval:socrates": "node scripts/test/socrates-eval.js",
-    "build:coach-prompt": "node scripts/build-coach-prompt.js"
+    "build:coach-prompt": "node scripts/build-coach-prompt.js",
+    "check:style": "node scripts/check-style.js"
   },
   "devDependencies": {
     "playwright": "^1.49.0"

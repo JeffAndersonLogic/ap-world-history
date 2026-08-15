@@ -19,7 +19,7 @@
  *      and Rome (Spartacus). Persia and Han China now carry their own, so a
  *      student may pick any pair.
  *   2. The Evidence Lab pairs the Apadana with the Code of Hammurabi, which is
- *      Babylon in c.1754 BCE and not one of the four. Rome's section ties the
+ *      Babylon in c. 1754 BCE and not one of the four. Rome's section ties the
  *      Twelve Tables back to it explicitly, so the jump is the intended
  *      argument about published law rather than a fifth classical state.
  *
@@ -267,7 +267,7 @@ module.exports = {
         {
           heading: 'How it ruled: government by lottery',
           blocks: [
-            { p: `Athenian <span class="kt">democracy</span> was built in stages. Solon in <span class="num">594 BCE</span> cancelled debts and outlawed enslaving Athenians for debt, and organized political rights by wealth rather than birth. Cleisthenes in <span class="num">508 BCE</span> made the decisive move, reorganizing citizens into ten new tribes deliberately drawn to mix people from the coast, the city and the inland, breaking the regional power of aristocratic families. Through the fifth century, pay for public service was introduced, which meant a poor citizen could afford to serve.` },
+            { p: `Athenian <span class="kt">democracy</span> was built in stages. Solon in <span class="num">594 BCE</span> canceled debts and outlawed enslaving Athenians for debt, and organized political rights by wealth rather than birth. Cleisthenes in <span class="num">508 BCE</span> made the decisive move, reorganizing citizens into ten new tribes deliberately drawn to mix people from the coast, the city and the inland, breaking the regional power of aristocratic families. Through the fifth century, pay for public service was introduced, which meant a poor citizen could afford to serve.` },
             { p: `The working machinery had three parts. The <span class="kt">Assembly</span>, open to all adult male citizens, met roughly forty times a year on the Pnyx hill, debated in the open and decided by show of hands, with a quorum of six thousand for certain votes. The Council of Five Hundred prepared the Assembly's agenda and handled daily business, and its members were chosen <em>by lot</em> for one-year terms. The courts were juries of hundreds of citizens, also chosen by lot, also paid.` },
             { p: `The lottery is the part to understand, because it is the most alien and the most revealing. To Greek thinkers, election was an <em>aristocratic</em> device, since elections reliably favor the famous, the eloquent and the rich. Selection by lot was the democratic device, because it gives every citizen the same chance to govern and makes officeholding an ordinary duty rather than a prize. Athens elected only the offices where technical competence was unavoidable, most notably the generals. Everything else went to the lot. And the Assembly could remove a man it feared by <span class="kt">ostracism</span>: a vote to exile a citizen for ten years, without charge or trial, needing six thousand votes to take effect.` }
           ]
@@ -331,7 +331,7 @@ module.exports = {
             { p: `Rome also had a long internal struggle, the Conflict of the Orders, in which the common citizens, the plebeians, extracted concessions from the aristocratic patricians by the simple device of collectively withdrawing from the city and refusing to fight. They won <span class="kt">tribunes of the plebs</span>, officials whose persons were sacrosanct and who could veto acts of magistrates and the Senate. Around <span class="num">450 BCE</span> they won something arguably more important: the <span class="kt">Twelve Tables</span>, the first written publication of Roman law, set up in the forum where anyone could consult them.` },
             { note: {
               kind: 'howknow',
-              label: 'Connect this to the Evidence Lab',
+              label: 'How we know: the Evidence Lab connection',
               html: `The Twelve Tables are Rome doing what Hammurabi did roughly thirteen centuries earlier: taking law out of the private knowledge of a priestly or aristocratic class and putting it on public display. In both cases the act of publication is the political move, because a law you can read is a law that can be cited against a powerful man. And in both cases the published law still encoded inequality, since the Twelve Tables originally forbade marriage between patricians and plebeians. Written law limits arbitrary power and entrenches hierarchy at the same time, which is the argument to make about both documents.`
             } }
           ]

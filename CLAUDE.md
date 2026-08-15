@@ -88,6 +88,12 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-foundations-readings.js`, rebuild the six Foundations First & 10 readings from `scripts/lib/foundations-f10-content.js`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/first-and-10-foundations-*.html`; they are generated.
 - `node scripts/build-deep-readings.js`, rebuild the deep readings from `scripts/lib/deep-reading-content/`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/deep-reading-*.html`; they are generated. See "Deep Readings" below.
 - `node scripts/build-ebook.js`, compile the deep readings for a volume into `ebook/<volume>.html`. `--check` fails on drift without writing, which is what the offline suite runs. See "The eBook" below.
+- `node scripts/check-style.js`, the mechanical half of the house style: American
+  English spelling, `c. 1200` rather than `c.1200`, no em or en dashes in prose, and
+  the two canonical note labels. In the offline suite. It reads the deep-reading
+  content modules only; the 77 First & 10 readings are pinned word for word by
+  golden fixtures, so a spelling sweep there is a separate decision. Everything a
+  machine cannot decide is in `docs/STYLE.md`.
 - `node scripts/test/foundations-golden.js`, prove the generated Foundations readings still carry every word, key term, callout, question and answer placeholder the hand-authored pages had. Compares content, not markup, against `scripts/test/fixtures/foundations-before.json`, a committed extraction of the originals. In the offline suite.
 - `node scripts/test/foundations-visual.js [--shots]`, browser check that the shared stylesheet renders those readings the same. Not in the suite: it renders the real pre-migration HTML, which a shallow CI checkout does not have. Run it by hand with `BASE=<ref>` when touching `assets/css/behistorical-first10.css` or the template. Nine reviewed deltas are listed in the script with reasons; anything else fails.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.

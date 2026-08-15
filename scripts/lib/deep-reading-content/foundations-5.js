@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Foundations 5, The World at c.1200 and Thinking Like a Historian: the deep
+ * Foundations 5, The World at c. 1200 and Thinking Like a Historian: the deep
  * reading.
  *
  * Why this exists. This lesson carries two jobs at once and the First & 10 has
@@ -23,10 +23,10 @@
  * away from this lesson believing:
  *
  *   1. That isolation means backwardness. The Americas were isolated from
- *      Afro-Eurasia and internally connected across thousands of kilometres.
+ *      Afro-Eurasia and internally connected across thousands of kilometers.
  *      Section 05 is built so that a student cannot come away confusing the two,
  *      because reading question 2 puts Africa and the Americas side by side.
- *   2. That c.1200 was a peak everyone was climbing toward. Cahokia was already
+ *   2. That c. 1200 was a peak everyone was climbing toward. Cahokia was already
  *      past its height, Ghana had fallen, Chaco was abandoned, and the Abbasid
  *      caliphate had not held real power in two centuries. Change is not
  *      improvement, and the snapshots are dated honestly rather than flattened
@@ -55,10 +55,10 @@ module.exports = {
     steps: [
       `<b>The snapshot:</b> where the region actually stood around 1200, dated honestly, including what was already declining.`,
       `<b>What holds it up:</b> the institutions, geography or trade that explain the snapshot rather than just describe it.`,
-      `<b>The pressure on it:</b> the strains already visible at c.1200, which is what makes this a moment rather than a photograph.`,
+      `<b>The pressure on it:</b> the strains already visible at c. 1200, which is what makes this a moment rather than a photograph.`,
       `<b>Which theme explains it:</b> geography, belief systems, states and power, or trade networks, with the case for choosing that one. This part answers your first reading question directly.`,
       `<b>Section 07</b> defines the five thinking skills, points to where each one already appeared in Foundations 1 to 4, and names the way each is usually done badly.`,
-      `<b>Section 08</b> asks why the course starts at c.1200 at all, which is the periodization question and a useful thing to have an opinion about.`,
+      `<b>Section 08</b> asks why the course starts at c. 1200 at all, which is the periodization question and a useful thing to have an opinion about.`,
       `<b>Section 09</b> writes an SAQ paragraph in front of you, sentence by sentence, and then shows the weak version of the same paragraph so you can see the difference.`,
       `<b>The closing</b> takes your three reading questions in turn, including the Africa and Americas comparison, which is the one most easily got wrong.`
     ]
@@ -73,7 +73,7 @@ module.exports = {
       name: 'Song China',
       navLabel: 'Song China',
       dates: 'Southern Song, capital at Lin&rsquo;an &nbsp;·&nbsp; East Asia',
-      thesis: `Song China at c.1200 is the most commercially sophisticated economy on earth and one of the most militarily vulnerable states in this chapter. Holding both facts at once is the whole skill, because a student who remembers only the prosperity cannot explain anything that happens next.`,
+      thesis: `Song China at c. 1200 is the most commercially sophisticated economy on earth and one of the most militarily vulnerable states in this chapter. Holding both facts at once is the whole skill, because a student who remembers only the prosperity cannot explain anything that happens next.`,
       parts: [
         {
           heading: 'The snapshot',
@@ -86,22 +86,22 @@ module.exports = {
         {
           heading: 'What holds it up',
           blocks: [
-            { p: `Three mechanisms, and each one is traceable to an earlier Foundations day. Agriculture first: the Yangtze region is the most productive wet-rice zone in the world, and the fast-ripening Champa rice promoted by Song officials from the early eleventh century allowed double-cropping, which raised the food ceiling and freed labour for everything else. That is Foundations 1 and Foundations 4 combining in one field.` },
-            { p: `Revenue second. Losing the north cost the Song their overland trade access, and the state responded by orienting seaward. Maritime customs offices at ports such as <span class="kt">Quanzhou</span> taxed the Indian Ocean trade, and that revenue funded a state that could not out-fight its northern neighbours and therefore had to out-pay them, including through negotiated tribute payments to keep the peace.` },
+            { p: `Three mechanisms, and each one is traceable to an earlier Foundations day. Agriculture first: the Yangtze region is the most productive wet-rice zone in the world, and the fast-ripening Champa rice promoted by Song officials from the early eleventh century allowed double-cropping, which raised the food ceiling and freed labor for everything else. That is Foundations 1 and Foundations 4 combining in one field.` },
+            { p: `Revenue second. Losing the north cost the Song their overland trade access, and the state responded by orienting seaward. Maritime customs offices at ports such as <span class="kt">Quanzhou</span> taxed the Indian Ocean trade, and that revenue funded a state that could not out-fight its northern neighbors and therefore had to out-pay them, including through negotiated tribute payments to keep the peace.` },
             { p: `Personnel third. The examination system, expanded enormously under the Song and made cheaper to prepare for by printing, staffed the bureaucracy with men selected on a Confucian canon rather than born into office. It gave the dynasty a governing class loyal to the throne rather than to regional families, and it gave every official the same vocabulary for duty.` }
           ]
         },
         {
           heading: 'The pressure on it',
           blocks: [
-            { p: `The Song could not solve their military problem, and the reason is partly geographic. The pastures that produced cavalry horses lay in the north, which the Jin now held, so the wealthiest state in the world could not field the arm of war that mattered most on its own frontier. It compensated with fortifications, crossbows, a substantial navy and gunpowder weapons, and with money: negotiated payments to northern neighbours bought years of peace at a price the Song economy could absorb more easily than a war.` },
-            { p: `That arrangement had worked for over a century by c.1200 and it is easy to read as weakness. It was closer to a policy, and a rational one for a state that could out-earn any opponent and out-fight none of them. What it could not survive was an opponent uninterested in being paid, which is what was assembling on the steppe while Zhu Xi finished his commentaries.` }
+            { p: `The Song could not solve their military problem, and the reason is partly geographic. The pastures that produced cavalry horses lay in the north, which the Jin now held, so the wealthiest state in the world could not field the arm of war that mattered most on its own frontier. It compensated with fortifications, crossbows, a substantial navy and gunpowder weapons, and with money: negotiated payments to northern neighbors bought years of peace at a price the Song economy could absorb more easily than a war.` },
+            { p: `That arrangement had worked for over a century by c. 1200 and it is easy to read as weakness. It was closer to a policy, and a rational one for a state that could out-earn any opponent and out-fight none of them. What it could not survive was an opponent uninterested in being paid, which is what was assembling on the steppe while Zhu Xi finished his commentaries.` }
           ]
         },
         {
           heading: 'Which theme explains it',
           blocks: [
-            { p: `<b>Trade networks</b>, with geography underneath. The case for it is that the distinctive features of Song China at c.1200 are all commercial: paper money, credit, urban scale, and a state financed substantially by taxing exchange rather than only by taxing land. Those follow from a maritime reorientation forced by the loss of the north and made possible by the Indian Ocean system Foundations 4 describes.` },
+            { p: `<b>Trade networks</b>, with geography underneath. The case for it is that the distinctive features of Song China at c. 1200 are all commercial: paper money, credit, urban scale, and a state financed substantially by taxing exchange rather than only by taxing land. Those follow from a maritime reorientation forced by the loss of the north and made possible by the Indian Ocean system Foundations 4 describes.` },
             { p: `The case for choosing geography instead is also strong, and either choice can score if you argue it: the Yangtze Delta's rice made the surplus, and the loss of the north was itself a geographic and military fact. What will not score is naming a theme and moving on. Name it, then explain the connection in the next sentence, which is the difference between contextualization and introduction.` },
             { note: {
               kind: 'misconception',
@@ -113,12 +113,12 @@ module.exports = {
       ],
       useThis: {
         tool: `Maritime customs revenue at Quanzhou. <em>The mechanism is that the loss of the north cut Song access to overland trade, so the state taxed seaborne commerce instead, which funded a government that could buy peace on a frontier it could not win on and paid for an administration staffed by examination.</em>`,
-        limit: `The most commercially advanced state in the world was paying tribute to its northern neighbours to avoid war. Prosperity and vulnerability at once, which is why "Song China was the most advanced society" is a weaker sentence than it looks.`,
+        limit: `The most commercially advanced state in the world was paying tribute to its northern neighbors to avoid war. Prosperity and vulnerability at once, which is why "Song China was the most advanced society" is a weaker sentence than it looks.`,
         comparison: `Against <em>Europe</em> on scale: cities of a million against cities of tens of thousands, which is the fastest way to show that the ranking of regions in 1200 does not resemble the ranking in 1900. Against <em>Dar al-Islam</em> on how the state paid for itself: customs revenue versus land taxes and endowment-funded institutions.`
       },
       terms: [
         ['Southern Song', 'The dynasty after 1127, ruling from Lin&rsquo;an in the south with the north held by the Jurchen Jin.'],
-        ['Lin’an', 'Modern Hangzhou, the Southern Song capital and among the largest cities in the world at c.1200.'],
+        ['Lin’an', 'Modern Hangzhou, the Southern Song capital and among the largest cities in the world at c. 1200.'],
         ['Quanzhou', 'The great southern port whose maritime customs revenue helped fund the Song state.'],
         ['Neo-Confucianism', 'Zhu Xi&rsquo;s synthesis, completed by 1200, which became the curriculum of the examinations.'],
         ['Champa rice', 'The fast-ripening Vietnamese variety that allowed two harvests a year in the Yangtze region.']
@@ -133,7 +133,7 @@ module.exports = {
       name: 'Dar al-Islam',
       navLabel: 'Dar al-Islam',
       dates: 'Iberia to Central Asia &nbsp;·&nbsp; politically fragmented, intellectually connected',
-      thesis: `Dar al-Islam at c.1200 is the best evidence in this chapter that political unity and cultural coherence are different things. There is no single ruler and there has not been for centuries, and it is nevertheless one connected world of law, language and scholarship.`,
+      thesis: `Dar al-Islam at c. 1200 is the best evidence in this chapter that political unity and cultural coherence are different things. There is no single ruler and there has not been for centuries, and it is nevertheless one connected world of law, language and scholarship.`,
       parts: [
         {
           heading: 'The snapshot',
@@ -153,29 +153,29 @@ module.exports = {
         {
           heading: 'The pressure on it',
           blocks: [
-            { p: `Three pressures at c.1200, and none of them is the one students expect. Crusader states still hold parts of the Levantine coast, though Saladin has taken Jerusalem back. In Iberia the long Christian advance is grinding southward and the decisive defeat of the Almohads is only a decade away. And political authority everywhere in the central lands rests on Turkish military elites whose successions are contested, which is why the map changes so often.` },
-            { p: `The catastrophe that most people associate with this world has not happened yet. The Mongol sack of Baghdad, which ends the Abbasid caliphate outright, is more than fifty years in the future. Writing about c.1200 as though that shadow were already falling is a version of the mistake section 07 calls projecting the ending onto the beginning.` }
+            { p: `Three pressures at c. 1200, and none of them is the one students expect. Crusader states still hold parts of the Levantine coast, though Saladin has taken Jerusalem back. In Iberia the long Christian advance is grinding southward and the decisive defeat of the Almohads is only a decade away. And political authority everywhere in the central lands rests on Turkish military elites whose successions are contested, which is why the map changes so often.` },
+            { p: `The catastrophe that most people associate with this world has not happened yet. The Mongol sack of Baghdad, which ends the Abbasid caliphate outright, is more than fifty years in the future. Writing about c. 1200 as though that shadow were already falling is a version of the mistake section 07 calls projecting the ending onto the beginning.` }
           ]
         },
         {
           heading: 'Which theme explains it',
           blocks: [
-            { p: `<b>Belief systems</b>, understood institutionally rather than devotionally. The claim to make is that Islam in this period functioned as infrastructure: it supplied the commercial law that made long-distance trade enforceable, the endowment mechanism that funded schooling and medicine outside the state, and the annual gathering that kept a fragmented world in contact. That is why the political map at c.1200 is a poor guide to how connected this world was.` },
+            { p: `<b>Belief systems</b>, understood institutionally rather than devotionally. The claim to make is that Islam in this period functioned as infrastructure: it supplied the commercial law that made long-distance trade enforceable, the endowment mechanism that funded schooling and medicine outside the state, and the annual gathering that kept a fragmented world in contact. That is why the political map at c. 1200 is a poor guide to how connected this world was.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not describe Dar al-Islam at c.1200 as being in decline because it is politically fragmented, and do not treat "the Islamic Golden Age" as something that ended when the Abbasids lost power. Ibn Rushd and Maimonides are writing in the 1190s, and the madrasa network is expanding. The accurate and more interesting claim is that intellectual life continued through fragmentation <em>because</em> its funding was endowment-based rather than political. That is a causal argument, and it is available to you only if you keep the two maps, political and institutional, separate.`
+              html: `Do not describe Dar al-Islam at c. 1200 as being in decline because it is politically fragmented, and do not treat "the Islamic Golden Age" as something that ended when the Abbasids lost power. Ibn Rushd and Maimonides are writing in the 1190s, and the madrasa network is expanding. The accurate and more interesting claim is that intellectual life continued through fragmentation <em>because</em> its funding was endowment-based rather than political. That is a causal argument, and it is available to you only if you keep the two maps, political and institutional, separate.`
             } }
           ]
         }
       ],
       useThis: {
         tool: `The waqf endowment. <em>The mechanism is that dedicating property revenue permanently and inalienably to a madrasa or hospital removed that institution from the treasury and therefore from the fate of the current dynasty, so schooling, medicine and scholarship kept running through conquests that repeatedly changed who ruled the city.</em>`,
-        limit: `The caliph's authority at c.1200 is largely symbolic, crusader states hold parts of the Levantine coast, and Iberia is contracting under Christian pressure. Connected does not mean secure.`,
+        limit: `The caliph's authority at c. 1200 is largely symbolic, crusader states hold parts of the Levantine coast, and Iberia is contracting under Christian pressure. Connected does not mean secure.`,
         comparison: `Against <em>Song China</em> on how learning was funded: state examination and state academies versus private endowments independent of any ruler, which is why one system's scholarship tracked dynastic fortunes more closely than the other's. Against <em>Europe</em> on the same question at the moment universities are being founded.`
       },
       terms: [
-        ['Dar al-Islam', 'The connected world of Muslim rule, law, language and trade, which by c.1200 has no single ruler.'],
+        ['Dar al-Islam', 'The connected world of Muslim rule, law, language and trade, which by c. 1200 has no single ruler.'],
         ['Waqf', 'A permanent, inalienable endowment funding a school, hospital, mosque or fountain out of dedicated property revenue.'],
         ['Madrasa', 'A school of religious and legal learning, typically waqf-funded and therefore independent of the treasury.'],
         ['Hajj', 'The annual pilgrimage to Mecca, and in practice an annual meeting of the whole Islamic world.'],
@@ -190,8 +190,8 @@ module.exports = {
       accent: 'iron',
       name: 'Africa',
       navLabel: 'Africa',
-      dates: 'Swahili coast, the Sahel, the Zimbabwe plateau, Ethiopia &nbsp;·&nbsp; c.1200',
-      thesis: `Africa at c.1200 is best described as selectively and profoundly connected. Different regions plugged into different networks by different routes, and the wealth of the trading states came from controlling exchange rather than from producing what was exchanged.`,
+      dates: 'Swahili coast, the Sahel, the Zimbabwe plateau, Ethiopia &nbsp;·&nbsp; c. 1200',
+      thesis: `Africa at c. 1200 is best described as selectively and profoundly connected. Different regions plugged into different networks by different routes, and the wealth of the trading states came from controlling exchange rather than from producing what was exchanged.`,
       parts: [
         {
           heading: 'The snapshot',
@@ -204,7 +204,7 @@ module.exports = {
         {
           heading: 'What holds it up',
           blocks: [
-            { p: `Two separate networks, and keeping them separate is what makes an answer precise. The Indian Ocean connects the east coast, on the monsoon schedule described in Foundations 4, which is why Swahili ports face outward and why their elites were Muslim: conversion carried commercial advantage in a network whose law and language were largely Islamic. The trans-Saharan routes connect the west and the centre by camel caravan, which is why the West African states taxed the desert's southern end.` },
+            { p: `Two separate networks, and keeping them separate is what makes an answer precise. The Indian Ocean connects the east coast, on the monsoon schedule described in Foundations 4, which is why Swahili ports face outward and why their elites were Muslim: conversion carried commercial advantage in a network whose law and language were largely Islamic. The trans-Saharan routes connect the west and the center by camel caravan, which is why the West African states taxed the desert's southern end.` },
             { p: `In both cases the mechanism is control of exchange rather than production. Kilwa did not mine gold; it commanded the point where interior gold met the ocean. Ghana had not owned the goldfields either. That is one of the most transferable ideas in this course, and it explains as much about Malacca and Samarkand as it does about Africa.` },
             { note: {
               kind: 'howknow',
@@ -217,7 +217,7 @@ module.exports = {
           heading: 'The pressure on it',
           blocks: [
             { p: `The vulnerability common to all these states is that their wealth came from a route rather than from a resource they held. Ghana had already demonstrated what that means: once the political and commercial conditions of the western Sahara shifted, an empire built on levying an exchange lost its basis, and the century around 1200 is the unsettled interval before Mali reassembles the same business on a larger scale.` },
-            { p: `On the east coast the risk ran the other way. Swahili ports depended on interior producers they did not govern for the gold and ivory that made them worth visiting, and on a monsoon network whose demand was set thousands of kilometres away. Prosperity that depends on a route and on somebody else's demand is prosperity with two failure points, and naming them is what separates an explanation from a description.` }
+            { p: `On the east coast the risk ran the other way. Swahili ports depended on interior producers they did not govern for the gold and ivory that made them worth visiting, and on a monsoon network whose demand was set thousands of kilometers away. Prosperity that depends on a route and on somebody else's demand is prosperity with two failure points, and naming them is what separates an explanation from a description.` }
           ]
         },
         {
@@ -248,7 +248,7 @@ module.exports = {
       accent: 'oxide',
       name: 'South and Southeast Asia',
       navLabel: 'South and SE Asia',
-      dates: 'The Ghurid conquests, Angkor at its height, the straits &nbsp;·&nbsp; c.1200',
+      dates: 'The Ghurid conquests, Angkor at its height, the straits &nbsp;·&nbsp; c. 1200',
       thesis: `This is the region where all four Foundations themes are visible in one frame: a belief system supplying kingship, a trade chokepoint supplying revenue, a state formed by conquest from outside, and monsoon geography deciding what any of them could do.`,
       parts: [
         {
@@ -261,7 +261,7 @@ module.exports = {
         {
           heading: 'What holds it up',
           blocks: [
-            { p: `For Angkor, water and rice. The Khmer state's capacity rested on managing a monsoon that delivers most of the year's rain in a few months, through reservoirs and channels that supported dense population and the labour to build on the scale the temples record. Whether those works were primarily agricultural, ritual or both is debated, but the connection between water control and state power is not.` },
+            { p: `For Angkor, water and rice. The Khmer state's capacity rested on managing a monsoon that delivers most of the year's rain in a few months, through reservoirs and channels that supported dense population and the labor to build on the scale the temples record. Whether those works were primarily agricultural, ritual or both is debated, but the connection between water control and state power is not.` },
             { p: `For the straits states, position. Whoever held the passage taxed the traffic between the two halves of the Indian Ocean network, and the wealth funded courts and religious institutions out of all proportion to local production.` },
             { p: `For the Delhi Sultanate, a military and administrative apparatus imported from the Persianate world and imposed on an existing agrarian order, with the practical problem all conquest states face: a small ruling group governing a large population that does not share its religion or language. Foundations 3 gives you the vocabulary for how such states manage that, and it is worth asking which of Persia's or Rome's solutions this one resembles.` }
           ]
@@ -269,7 +269,7 @@ module.exports = {
         {
           heading: 'The pressure on it',
           blocks: [
-            { p: `Angkor's water works needed continuous maintenance, and a state that mobilizes enormous labour for temples and reservoirs is committing itself to keeping that mobilization going. Historians debate how much later Angkor was undone by hydraulic failure, by climate swings between drought and flood, by war, or by a shift of gravity toward maritime trade on the coast. What is not in doubt is that the system had a running cost.` },
+            { p: `Angkor's water works needed continuous maintenance, and a state that mobilizes enormous labor for temples and reservoirs is committing itself to keeping that mobilization going. Historians debate how much later Angkor was undone by hydraulic failure, by climate swings between drought and flood, by war, or by a shift of gravity toward maritime trade on the coast. What is not in doubt is that the system had a running cost.` },
             { p: `For the new sultanate at Delhi the pressure is the one every conquest state in Foundations 3 faced: a small ruling group, foreign in language and religion, governing a large agrarian population through local intermediaries it did not fully control. Persia bought quiet with autonomy and Rome bought loyalty with citizenship. Which of those routes a Muslim state in a mostly non-Muslim subcontinent could take is a genuinely open question, and Unit 1 is partly the answer to it.` }
           ]
         },
@@ -282,13 +282,13 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `The devaraja ideal at Angkor. <em>The mechanism is that identifying the king with a deity converted religious cosmology into political authority and into a claim on labour, which is how a state with no cash economy of consequence mobilized the workforce that built the largest religious structure in the world.</em>`,
+        tool: `The devaraja ideal at Angkor. <em>The mechanism is that identifying the king with a deity converted religious cosmology into political authority and into a claim on labor, which is how a state with no cash economy of consequence mobilized the workforce that built the largest religious structure in the world.</em>`,
         limit: `Sustained Muslim rule from Delhi over a non-Muslim majority is the region's central governing problem from 1206 onward, and no ideology of kingship solved it.`,
-        comparison: `Against <em>Song China</em> on how a state extracts labour and revenue: an examined bureaucracy taxing commerce versus a sacred kingship commanding corvée. Against <em>Dar al-Islam</em> on conquest and conversion: rapid political conquest, slow and partial religious change, exactly the distinction Foundations 2 insists on.`
+        comparison: `Against <em>Song China</em> on how a state extracts labor and revenue: an examined bureaucracy taxing commerce versus a sacred kingship commanding corvée. Against <em>Dar al-Islam</em> on conquest and conversion: rapid political conquest, slow and partial religious change, exactly the distinction Foundations 2 insists on.`
       },
       terms: [
         ['Delhi Sultanate', 'The Muslim state established in northern India in 1206, ruling a largely non-Muslim population.'],
-        ['Angkor', 'The Khmer capital region, whose temples and water works record an unusually large mobilization of labour.'],
+        ['Angkor', 'The Khmer capital region, whose temples and water works record an unusually large mobilization of labor.'],
         ['Devaraja', 'The god-king ideal by which Southeast Asian rulers identified themselves with a deity.'],
         ['Strait of Malacca', 'The passage between the Indian Ocean and the South China Sea, and the region&rsquo;s most valuable chokepoint.'],
         ['Chola', 'The southern Indian dynasty whose naval reach crossed the Bay of Bengal in the 11th century.']
@@ -302,14 +302,14 @@ module.exports = {
       accent: 'gold',
       name: 'The Americas',
       navLabel: 'The Americas',
-      dates: 'Cahokia past its peak, Chan Chan rising, no Aztec or Inca yet &nbsp;·&nbsp; c.1200',
-      thesis: `The Americas at c.1200 are isolated from Afro-Eurasia and densely connected internally, and the entire value of this section is in keeping those two statements from collapsing into each other.`,
+      dates: 'Cahokia past its peak, Chan Chan rising, no Aztec or Inca yet &nbsp;·&nbsp; c. 1200',
+      thesis: `The Americas at c. 1200 are isolated from Afro-Eurasia and densely connected internally, and the entire value of this section is in keeping those two statements from collapsing into each other.`,
       parts: [
         {
           heading: 'The snapshot',
           blocks: [
-            { p: `In the Mississippi valley, <span class="kt">Cahokia</span> was the largest settlement north of Mexico, with population estimates commonly in the range of ten to twenty thousand at its height around the eleventh and twelfth centuries, surrounded by enormous earthen mounds. By c.1200 it is declining, and it will be largely abandoned within roughly a century and a half. In the southwest, the great houses of Chaco Canyon have already been left behind by about <span class="num">1150</span>.` },
-            { p: `In Mesoamerica, the Toltec centre at Tula has collapsed around the middle of the twelfth century, and the region is in a period of competing city-states out of which the Aztec Triple Alliance will eventually form in <span class="num">1428</span>. In the Andes, the earlier Wari and Tiwanaku states are long gone, the Chimú kingdom is building its capital at Chan Chan on the north coast, and the Inca are a small polity around Cusco with imperial expansion still more than two centuries away.` },
+            { p: `In the Mississippi valley, <span class="kt">Cahokia</span> was the largest settlement north of Mexico, with population estimates commonly in the range of ten to twenty thousand at its height around the eleventh and twelfth centuries, surrounded by enormous earthen mounds. By c. 1200 it is declining, and it will be largely abandoned within roughly a century and a half. In the southwest, the great houses of Chaco Canyon have already been left behind by about <span class="num">1150</span>.` },
+            { p: `In Mesoamerica, the Toltec center at Tula has collapsed around the middle of the twelfth century, and the region is in a period of competing city-states out of which the Aztec Triple Alliance will eventually form in <span class="num">1428</span>. In the Andes, the earlier Wari and Tiwanaku states are long gone, the Chimú kingdom is building its capital at Chan Chan on the north coast, and the Inca are a small polity around Cusco with imperial expansion still more than two centuries away.` },
             { p: `Read that list again and notice its shape. Three of the four best-known American sites in this paragraph are past their peak, and the two empires everybody has heard of do not exist yet. This is the single most useful thing Foundations 5 can teach about periodization.` }
           ]
         },
@@ -317,11 +317,11 @@ module.exports = {
           heading: 'What holds it up, and what is missing',
           blocks: [
             { p: `Long-distance exchange is documented and extensive. Marine shell from the Gulf coast, copper from the Great Lakes region and mica from the Appalachians all reach Mississippian sites, which means goods crossed most of a continent. Mesoamerican obsidian, cacao, feathers and jade moved through established trade circuits, and Andean societies moved goods between coast, highland and forest by design. This is not a world of isolated villages.` },
-            { p: `What is missing is specific and consequential, and naming it precisely is the mark of a good answer. There are no horses and no cattle, so no draft animals for heavy haulage and no cavalry; llamas and alpacas in the Andes carry loads but cannot pull a plough or a wagon. Wheels appear on Mesoamerican figurines and are not used for transport, which makes sense in a world with nothing to pull the cart. There is no Afro-Eurasian disease pool, because the herd animals whose pathogens crossed into humans there are absent, which means American populations have no exposure and no acquired resistance to the diseases that will arrive after 1492.` },
+            { p: `What is missing is specific and consequential, and naming it precisely is the mark of a good answer. There are no horses and no cattle, so no draft animals for heavy haulage and no cavalry; llamas and alpacas in the Andes carry loads but cannot pull a plow or a wagon. Wheels appear on Mesoamerican figurines and are not used for transport, which makes sense in a world with nothing to pull the cart. There is no Afro-Eurasian disease pool, because the herd animals whose pathogens crossed into humans there are absent, which means American populations have no exposure and no acquired resistance to the diseases that will arrive after 1492.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Isolation is not backwardness, and the two must not be run together. The Americas were isolated <em>from Afro-Eurasia</em>, and that isolation is a geographic fact about oceans, not a judgment about the societies. Within the hemisphere there were monumental cities, engineered agriculture including terracing, raised fields and irrigation, mathematics and astronomy, and trade over thousands of kilometres. Write "isolated from Afro-Eurasian networks" rather than "isolated," and the sentence becomes both accurate and safe. The consequences of that isolation, above all in 1492, were catastrophic, and they were consequences of separation rather than of any deficiency in what had been built.`
+              html: `Isolation is not backwardness, and the two must not be run together. The Americas were isolated <em>from Afro-Eurasia</em>, and that isolation is a geographic fact about oceans, not a judgment about the societies. Within the hemisphere there were monumental cities, engineered agriculture including terracing, raised fields and irrigation, mathematics and astronomy, and trade over thousands of kilometers. Write "isolated from Afro-Eurasian networks" rather than "isolated," and the sentence becomes both accurate and safe. The consequences of that isolation, above all in 1492, were catastrophic, and they were consequences of separation rather than of any deficiency in what had been built.`
             } }
           ]
         },
@@ -329,7 +329,7 @@ module.exports = {
           heading: 'The pressure on it',
           blocks: [
             { p: `The pressures here are internal and environmental, which is exactly what makes this region a useful control case. Cahokia's decline has been attributed to some combination of climate shifts and flooding, resource exhaustion around a large concentrated population, and political fragmentation, and the argument is unsettled. The abandonment of Chaco Canyon is associated with prolonged drought. In Mesoamerica the fall of Tula left competition rather than a successor.` },
-            { p: `No outside power is pressing on any of it. Everything happening in this hemisphere at c.1200 is happening for reasons internal to it, which is precisely the condition that ends in 1492. Holding that thought is what stops the Americas from being narrated as a place waiting for history to arrive.` }
+            { p: `No outside power is pressing on any of it. Everything happening in this hemisphere at c. 1200 is happening for reasons internal to it, which is precisely the condition that ends in 1492. Holding that thought is what stops the Americas from being narrated as a place waiting for history to arrive.` }
           ]
         },
         {
@@ -342,14 +342,14 @@ module.exports = {
       ],
       useThis: {
         tool: `Separation from the Afro-Eurasian disease pool. <em>The mechanism is that the epidemic diseases of Afro-Eurasia emerged largely from long contact with domesticated herd animals that the Americas did not have, so American populations were never exposed and acquired no resistance, which is why contact after 1492 produced mortality on a scale no army could have caused.</em>`,
-        limit: `Cahokia and Chaco are already declining at c.1200 and the Aztec and Inca empires do not yet exist, so do not describe this hemisphere as static or as waiting for anything.`,
+        limit: `Cahokia and Chaco are already declining at c. 1200 and the Aztec and Inca empires do not yet exist, so do not describe this hemisphere as static or as waiting for anything.`,
         comparison: `Against <em>Africa</em>, which is your second reading question: both hemispheres had long-distance exchange in high-value goods, and only one was connected to Afro-Eurasia. The closing sets out how to write that comparison without implying a hierarchy.`
       },
       terms: [
-        ['Cahokia', 'The Mississippian centre near modern St. Louis, the largest settlement north of Mexico, past its peak by c.1200.'],
+        ['Cahokia', 'The Mississippian center near modern St. Louis, the largest settlement north of Mexico, past its peak by c. 1200.'],
         ['Chimú', 'The Andean north-coast kingdom building its capital at Chan Chan, preceding the Inca.'],
         ['Mississippian exchange', 'The long-distance movement of shell, copper and mica across much of North America.'],
-        ['Draft animal', 'An animal used to pull loads or ploughs; the Americas had none, which is why wheels were not used for transport.'],
+        ['Draft animal', 'An animal used to pull loads or plows; the Americas had none, which is why wheels were not used for transport.'],
         ['Disease pool', 'The set of endemic pathogens a connected population has been exposed to, and to which it has some acquired resistance.']
       ]
     },
@@ -361,20 +361,20 @@ module.exports = {
       accent: 'rust',
       name: 'Europe',
       navLabel: 'Europe',
-      dates: 'Universities founded, fields reorganized, still peripheral &nbsp;·&nbsp; c.1200',
-      thesis: `Latin Europe at c.1200 is a secondary region by almost every measure this chapter uses, and it is also in the middle of the agricultural and institutional changes that will matter later. Both halves have to be said, because saying only the first is inaccurate and saying only the second is the whole error this course exists to correct.`,
+      dates: 'Universities founded, fields reorganized, still peripheral &nbsp;·&nbsp; c. 1200',
+      thesis: `Latin Europe at c. 1200 is a secondary region by almost every measure this chapter uses, and it is also in the middle of the agricultural and institutional changes that will matter later. Both halves have to be said, because saying only the first is inaccurate and saying only the second is the whole error this course exists to correct.`,
       parts: [
         {
           heading: 'The snapshot',
           blocks: [
             { p: `Political authority is fragmented among kingdoms, duchies, counties and towns, with the papacy at the height of its claims under Innocent III, elected in <span class="num">1198</span>. Cities are small by the standards of section 01: the largest in Latin Europe number in the tens of thousands where Lin'an numbers in the hundreds of thousands. The universities are appearing, at Bologna, Paris and Oxford, as guilds of masters and students rather than as buildings. The crusades have been running for a century, and in <span class="num">1204</span> the Fourth Crusade will sack Constantinople, a Christian city, which is worth remembering whenever the crusades are described as a straightforward religious conflict.` },
-            { p: `The intellectual current runs inward. Aristotle is arriving in Latin translation, much of it through Iberia and Sicily, together with Ibn Rushd's commentaries and Arabic mathematics and medicine. Europe at c.1200 is a net importer of ideas, and the universities are, among other things, the institutions built to digest what is arriving.` }
+            { p: `The intellectual current runs inward. Aristotle is arriving in Latin translation, much of it through Iberia and Sicily, together with Ibn Rushd's commentaries and Arabic mathematics and medicine. Europe at c. 1200 is a net importer of ideas, and the universities are, among other things, the institutions built to digest what is arriving.` }
           ]
         },
         {
           heading: 'What holds it up',
           blocks: [
-            { p: `Underneath the politics is an agricultural reorganization several centuries in the making: the heavy plough that could work the wet clay soils of the north, the horse collar and horseshoe that made horses usable for ploughing, and three-field rotation, which left a third rather than a half of the land fallow and added a spring crop. More food supported more people, and more people supported towns.` },
+            { p: `Underneath the politics is an agricultural reorganization several centuries in the making: the heavy plow that could work the wet clay soils of the north, the horse collar and horseshoe that made horses usable for plowing, and three-field rotation, which left a third rather than a half of the land fallow and added a spring crop. More food supported more people, and more people supported towns.` },
             { p: `Alongside it, mechanical power on a scale worth noting. The Domesday survey of England in <span class="num">1086</span> records several thousand water mills for a population of perhaps a couple of million, which is a striking density of installed machinery, and windmills spread in the following century. Mills ground grain, fulled cloth and drove hammers.` },
             { p: `And commerce is reviving along two axes: the Italian maritime cities trading into the eastern Mediterranean and the Champagne fairs linking northern cloth production to southern goods, with the credit and partnership instruments that trade required.` }
           ]
@@ -382,30 +382,30 @@ module.exports = {
         {
           heading: 'The pressure on it',
           blocks: [
-            { p: `The most revealing pressure at c.1200 is internal to Christendom. In 1204 a crusade aimed at Egypt sacked Constantinople instead, installed a Latin regime there, and did lasting damage to the Byzantine state and to relations between the two churches. A movement that justified itself as a war for the faith had just destroyed the richest Christian city in the world, which is worth remembering whenever a source describes a conflict purely in terms of belief.` },
-            { p: `Underneath, population has been rising for two centuries and good land is running short, which pushes settlement onto marginal ground. That works while the weather cooperates. It stops working in the fourteenth century, when famine and then plague cut the population sharply, and a student who knows the c.1200 baseline can explain why that hit so hard instead of merely reporting that it did.` }
+            { p: `The most revealing pressure at c. 1200 is internal to Christendom. In 1204 a crusade aimed at Egypt sacked Constantinople instead, installed a Latin regime there, and did lasting damage to the Byzantine state and to relations between the two churches. A movement that justified itself as a war for the faith had just destroyed the richest Christian city in the world, which is worth remembering whenever a source describes a conflict purely in terms of belief.` },
+            { p: `Underneath, population has been rising for two centuries and good land is running short, which pushes settlement onto marginal ground. That works while the weather cooperates. It stops working in the fourteenth century, when famine and then plague cut the population sharply, and a student who knows the c. 1200 baseline can explain why that hit so hard instead of merely reporting that it did.` }
           ]
         },
         {
           heading: 'Which theme explains it',
           blocks: [
-            { p: `<b>Geography</b>, if you want the underlying condition: heavy northern soils that became productive only with a specific plough, rivers and coasts that made internal transport cheap, and a position on the receiving end of Mediterranean exchange. <b>Belief systems</b>, if you want the institutional story: the church supplied the schools, the law, the literate personnel and the network that held a fragmented region together, and the universities grew out of cathedral schools.` },
+            { p: `<b>Geography</b>, if you want the underlying condition: heavy northern soils that became productive only with a specific plow, rivers and coasts that made internal transport cheap, and a position on the receiving end of Mediterranean exchange. <b>Belief systems</b>, if you want the institutional story: the church supplied the schools, the law, the literate personnel and the network that held a fragmented region together, and the universities grew out of cathedral schools.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Two errors, opposite in direction. The first is to write about Europe at c.1200 as if its later dominance were already visible; it is not, and an answer that treats 1200 as the start of a European rise is projecting the ending onto the beginning. The second is to overcorrect into calling this a dark age of stagnation, which the ploughs, the mills, the fairs and the universities all contradict. The accurate sentence holds both: peripheral in wealth, population and scholarship relative to Song China and Dar al-Islam, and simultaneously in the middle of changes whose consequences arrive later. Getting that balance right is itself the periodization skill from section 07.`
+              html: `Two errors, opposite in direction. The first is to write about Europe at c. 1200 as if its later dominance were already visible; it is not, and an answer that treats 1200 as the start of a European rise is projecting the ending onto the beginning. The second is to overcorrect into calling this a dark age of stagnation, which the plows, the mills, the fairs and the universities all contradict. The accurate sentence holds both: peripheral in wealth, population and scholarship relative to Song China and Dar al-Islam, and simultaneously in the middle of changes whose consequences arrive later. Getting that balance right is itself the periodization skill from section 07.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `The heavy plough with three-field rotation. <em>The mechanism is that a wheeled plough with a mouldboard could turn the heavy wet soils of northern Europe that a lighter plough merely scratched, and rotating three fields instead of two cut fallow land from a half to a third while adding a spring crop, so output per farmer rose and supported the towns, fairs and universities that follow.</em>`,
-        limit: `Peripheral by almost every measure at c.1200, and importing its philosophy through Arabic translations. Also worth citing: the Fourth Crusade sacking Constantinople in 1204.`,
+        tool: `The heavy plow with three-field rotation. <em>The mechanism is that a wheeled plow with a moldboard could turn the heavy wet soils of northern Europe that a lighter plow merely scratched, and rotating three fields instead of two cut fallow land from a half to a third while adding a spring crop, so output per farmer rose and supported the towns, fairs and universities that follow.</em>`,
+        limit: `Peripheral by almost every measure at c. 1200, and importing its philosophy through Arabic translations. Also worth citing: the Fourth Crusade sacking Constantinople in 1204.`,
         comparison: `Against <em>Dar al-Islam</em> on the direction of intellectual traffic in 1200, which runs from the Islamic world into Latin Europe and not the other way. Against <em>Song China</em> on urban scale, which is the fastest way to show that the 1200 ranking is not the 1900 ranking.`
       },
       terms: [
         ['Three-field rotation', 'A system leaving one field in three fallow while adding a spring crop, raising output over the older two-field method.'],
-        ['Heavy plough', 'A wheeled, mouldboard plough able to turn the wet clay soils of northern Europe.'],
+        ['Heavy plow', 'A wheeled, moldboard plow able to turn the wet clay soils of northern Europe.'],
         ['University', 'A guild of masters and students, appearing at Bologna, Paris and Oxford, and the institution built to absorb newly arriving texts.'],
         ['Champagne fairs', 'The cycle of markets linking northern European cloth to Mediterranean goods, with the credit instruments that came with them.'],
         ['Fourth Crusade', 'The expedition that sacked Constantinople in 1204, a Christian army taking a Christian capital.']
@@ -443,7 +443,7 @@ module.exports = {
           blocks: [
             { p: `<b>The move:</b> identify what changed and what stayed the same across a period, which requires a baseline and an endpoint. Foundations exists to give you the baseline. Everything in sections 01 to 06 is what the world looked like before the story starts.` },
             { p: `<b>Where you already did it:</b> Foundations 2, in syncretism, which is precisely a question of what continued and what changed when a tradition arrived somewhere new.` },
-            { p: `<b>The failure mode:</b> assuming change means improvement. At c.1200 Cahokia is shrinking, Chaco is abandoned, Ghana has fallen and the Abbasid caliph has not held real power in two centuries, while the richest economy is Chinese and the most advanced mathematics is being written in Arabic. Describe the direction of change from evidence, not from where you know the story ends.` }
+            { p: `<b>The failure mode:</b> assuming change means improvement. At c. 1200 Cahokia is shrinking, Chaco is abandoned, Ghana has fallen and the Abbasid caliph has not held real power in two centuries, while the richest economy is Chinese and the most advanced mathematics is being written in Arabic. Describe the direction of change from evidence, not from where you know the story ends.` }
           ]
         },
         {
@@ -451,7 +451,7 @@ module.exports = {
           blocks: [
             { p: `<b>The move:</b> choose one analytical category, put two cases inside it, and explain a similarity or difference with evidence on both sides. The category is what turns two descriptions into a comparison.` },
             { p: `<b>Where you already did it:</b> Foundations 3, in the four state pairings, and Foundations 2, in comparing how two belief systems defined membership.` },
-            { p: `<b>The failure mode:</b> the parallel list. Writing a paragraph about Kilwa and then a paragraph about Cahokia is not comparison, even if both paragraphs are accurate. Name the category first, in the sentence itself: "Both Kilwa and Cahokia sat at the centre of long-distance exchange, but the networks they anchored differed in reach," and the rest of the paragraph has somewhere to go.` }
+            { p: `<b>The failure mode:</b> the parallel list. Writing a paragraph about Kilwa and then a paragraph about Cahokia is not comparison, even if both paragraphs are accurate. Name the category first, in the sentence itself: "Both Kilwa and Cahokia sat at the center of long-distance exchange, but the networks they anchored differed in reach," and the rest of the paragraph has somewhere to go.` }
           ]
         },
         {
@@ -484,14 +484,14 @@ module.exports = {
       accent: 'oxide',
       name: 'Why the Course Starts Here',
       navLabel: 'Periodization',
-      dates: 'c.1200 as a choice &nbsp;·&nbsp; the sixth move',
+      dates: 'c. 1200 as a choice &nbsp;·&nbsp; the sixth move',
       thesis: `A period boundary is an argument someone made, not an event that happened. Nobody alive in 1200 noticed a new era beginning, and understanding why this course starts where it does is worth more than any single fact in the six snapshots above.`,
       parts: [
         {
           heading: 'What a period boundary actually is',
           blocks: [
             { p: `<span class="kt">Periodization</span> is the practice of cutting continuous time into named stretches. It is unavoidable, because a history that refuses to divide anything cannot be organized or taught, and it is always an argument, because the moment you choose says what you think the story is about. A course that began in 1492 would be making a claim about European expansion. A course that began in 1750 would be making one about industry. This one begins around 1200, and that is a claim too.`,  },
-            { p: `The <em>c.</em> in c.1200 is doing real work and is not decoration. It stands for circa, meaning approximately, and it is there because the boundary is a convenience rather than a date on which anything occurred. Angkor Wat was finished around 1150, the Delhi Sultanate was founded in 1206, Zhu Xi died in 1200 and Genghis Khan took his title in 1206. The line is drawn through a cluster, not at a moment.` },
+            { p: `The <em>c.</em> in c. 1200 is doing real work and is not decoration. It stands for circa, meaning approximately, and it is there because the boundary is a convenience rather than a date on which anything occurred. Angkor Wat was finished around 1150, the Delhi Sultanate was founded in 1206, Zhu Xi died in 1200 and Genghis Khan took his title in 1206. The line is drawn through a cluster, not at a moment.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -500,7 +500,7 @@ module.exports = {
           ]
         },
         {
-          heading: 'The case for c.1200',
+          heading: 'The case for c. 1200',
           blocks: [
             { p: `Read the six snapshots as an argument and the choice makes sense. Starting here says that the history of the modern world begins with an Afro-Eurasia already densely connected by trade, law and religion, with its wealthiest and most sophisticated societies in China and the Islamic world, and with Latin Europe as a secondary region. Every later question about European dominance then has to be answered rather than assumed, because the starting picture does not contain it.`, },
             { p: `The choice also sits just before a genuine transformation. Within a few decades of 1200 the Mongol conquests will link Eurasia under a small number of connected regimes, raising the volume and speed of movement across routes that already existed. Beginning slightly before that gives you a baseline against which the change can be measured, which is precisely what continuity and change over time requires and precisely what this chapter is for.` }
@@ -516,13 +516,13 @@ module.exports = {
         {
           heading: 'How to use this in an answer',
           blocks: [
-            { p: `Watch for the frame in the prompt. "Before c.1200," "in the period 1200 to 1450" and "over the course of the period" are all instructions about the window you are being asked to look through, and evidence from outside it will not count for you no matter how good it is. Check the window before you choose your examples, which is a mechanical habit worth building now.` },
-            { p: `Then, when a question invites it, say something about the frame itself. <span class="kt">Historical significance</span> is a judgment rather than a property: an event matters because of what it made possible or prevented, and for whom. A sentence such as "the c.1200 boundary captures a moment when Afro-Eurasian exchange was dense but not yet politically consolidated, which is what makes the Mongol century legible as an intensification rather than an origin" is doing exactly what the top of the rubric asks for, and it costs one sentence.` }
+            { p: `Watch for the frame in the prompt. "Before c. 1200," "in the period 1200 to 1450" and "over the course of the period" are all instructions about the window you are being asked to look through, and evidence from outside it will not count for you no matter how good it is. Check the window before you choose your examples, which is a mechanical habit worth building now.` },
+            { p: `Then, when a question invites it, say something about the frame itself. <span class="kt">Historical significance</span> is a judgment rather than a property: an event matters because of what it made possible or prevented, and for whom. A sentence such as "the c. 1200 boundary captures a moment when Afro-Eurasian exchange was dense but not yet politically consolidated, which is what makes the Mongol century legible as an intensification rather than an origin" is doing exactly what the top of the rubric asks for, and it costs one sentence.` }
           ]
         }
       ],
       useThis: {
-        tool: `Periodization as an argument. <em>The mechanism is that choosing a start date determines which developments count as background and which count as change, so a course beginning at c.1200 makes Afro-Eurasian interconnection the given condition and European dominance the thing requiring explanation, where a course beginning in 1492 would have reversed both.</em>`,
+        tool: `Periodization as an argument. <em>The mechanism is that choosing a start date determines which developments count as background and which count as change, so a course beginning at c. 1200 makes Afro-Eurasian interconnection the given condition and European dominance the thing requiring explanation, where a course beginning in 1492 would have reversed both.</em>`,
         limit: `Every boundary hides continuity. The Indian Ocean network, the Silk Roads and all seven traditions in Foundations 2 run straight through this one, and the line fits Afro-Eurasia far better than it fits the Americas.`,
         comparison: `Against the dating conventions in <em>Foundations 3</em>, which used dynastic dates such as 206 BCE and 476 CE. Those are equally chosen: a dynasty falling is an event, but treating it as the end of an era is a judgment about what mattered, and the satrapy system outliving the Achaemenids is the standing counter-example.`
       },
@@ -556,19 +556,19 @@ module.exports = {
         {
           heading: 'A worked example',
           blocks: [
-            { p: `<b>Prompt:</b> explain how one Foundations theme shaped the world at c.1200.` },
-            { p: `<b>The paragraph.</b> "Trade networks shaped the world at c.1200 more decisively than any single state did, because they determined which societies had access to wealth, ideas and technologies that no local resource could supply. The Southern Song, cut off from overland routes after the loss of the north in 1127, funded a substantial part of their state through maritime customs revenue collected at ports such as Quanzhou, while on the other side of the same ocean the Swahili port of Kilwa grew wealthy by controlling the outlet for gold and ivory from the African interior, and Chinese celadon in Kilwa's archaeology proves the two ends were joined. Neither place produced what made it rich: the Song taxed the passage of goods and Kilwa commanded an exchange point, which means that position within a network, rather than local production, was what converted geography into power. That was possible because the monsoon reversal, blowing from the southwest between June and September and from the northeast between November and March, made the Indian Ocean a predictable annual circuit rather than an obstacle."` },
+            { p: `<b>Prompt:</b> explain how one Foundations theme shaped the world at c. 1200.` },
+            { p: `<b>The paragraph.</b> "Trade networks shaped the world at c. 1200 more decisively than any single state did, because they determined which societies had access to wealth, ideas and technologies that no local resource could supply. The Southern Song, cut off from overland routes after the loss of the north in 1127, funded a substantial part of their state through maritime customs revenue collected at ports such as Quanzhou, while on the other side of the same ocean the Swahili port of Kilwa grew wealthy by controlling the outlet for gold and ivory from the African interior, and Chinese celadon in Kilwa's archaeology proves the two ends were joined. Neither place produced what made it rich: the Song taxed the passage of goods and Kilwa commanded an exchange point, which means that position within a network, rather than local production, was what converted geography into power. That was possible because the monsoon reversal, blowing from the southwest between June and September and from the northeast between November and March, made the Indian Ocean a predictable annual circuit rather than an obstacle."` },
             { p: `<b>What each sentence did.</b> One: a claim you could argue against, since a reader might reasonably say states mattered more. Two: two specific cases with named places and a date, plus a piece of physical evidence. Three: the reasoning, explaining what the two cases have in common and why that supports the claim. Four: the contextualization, naming the underlying condition and connecting it. Four sentences, four jobs.` }
           ]
         },
         {
           heading: 'The weak version of the same paragraph',
           blocks: [
-            { p: `"Trade networks were very important in the world at c.1200. There was a lot of trade in the Indian Ocean, and China traded a lot of goods like silk and porcelain. Africa also traded gold. Trade networks connected many different places and helped societies grow and develop, which shows how important trade was."` },
+            { p: `"Trade networks were very important in the world at c. 1200. There was a lot of trade in the Indian Ocean, and China traded a lot of goods like silk and porcelain. Africa also traded gold. Trade networks connected many different places and helped societies grow and develop, which shows how important trade was."` },
             { p: `Everything in that paragraph is true, and it would score close to nothing. The claim is not disputable. The evidence names no place, no date and no institution. The final sentence restates the claim instead of reasoning from evidence to it. There is no contextualization. The gap between the two paragraphs is not knowledge, since both writers know that Indian Ocean trade existed. It is specificity and the willingness to take a position.` },
             { note: {
               kind: 'howknow',
-              label: 'One habit worth keeping',
+              label: 'How we know: check the number before you write it',
               html: `When you write a number, a date or a quotation, ask where it came from before you commit it to the page. Several figures in this course are genuinely disputed, including the mortality of the Plague of Justinian and the population of Cahokia, and the deep readings hedge them for that reason. Writing "estimates commonly range from ten to twenty thousand" is not weaker than writing a single confident number. It is stronger, because it is the sentence that survives someone checking.`
             } }
           ]
@@ -601,12 +601,12 @@ module.exports = {
       {
         category: 'Question 2: Comparison',
         title: 'Africa and the Americas, done carefully',
-        body: `<b>A significant similarity:</b> both supported long-distance exchange in high-value goods over thousands of kilometres, moving gold, ivory, shell, copper and obsidian, and in both cases the wealthiest places were those that controlled an exchange point rather than a resource. <b>A significant difference:</b> Africa's networks connected it directly to Afro-Eurasia, through the Indian Ocean on the east coast and the trans-Saharan routes in the west, while the American networks were internal to the hemisphere and joined to nothing outside it. <b>What that reveals:</b> connection is a matter of degree and direction rather than a yes or no, and what a network gives a society is access to what it cannot produce, which in Afro-Eurasia included crops, technologies, religions and, eventually, epidemic disease and some resistance to it. Write "isolated from Afro-Eurasia," never "isolated," and never let isolation stand in for backwardness: Cahokia, Chan Chan and the Mesoamerican city-states were built by societies doing sophisticated things with what their hemisphere contained.`
+        body: `<b>A significant similarity:</b> both supported long-distance exchange in high-value goods over thousands of kilometers, moving gold, ivory, shell, copper and obsidian, and in both cases the wealthiest places were those that controlled an exchange point rather than a resource. <b>A significant difference:</b> Africa's networks connected it directly to Afro-Eurasia, through the Indian Ocean on the east coast and the trans-Saharan routes in the west, while the American networks were internal to the hemisphere and joined to nothing outside it. <b>What that reveals:</b> connection is a matter of degree and direction rather than a yes or no, and what a network gives a society is access to what it cannot produce, which in Afro-Eurasia included crops, technologies, religions and, eventually, epidemic disease and some resistance to it. Write "isolated from Afro-Eurasia," never "isolated," and never let isolation stand in for backwardness: Cahokia, Chan Chan and the Mesoamerican city-states were built by societies doing sophisticated things with what their hemisphere contained.`
       },
       {
         category: 'Question 3: Argumentation',
         title: 'Was Afro-Eurasia an interconnected system?',
-        body: `<b>For:</b> Champa rice moved from Vietnam into Chinese fields and raised the population ceiling; paper moved from China through Samarkand and Baghdad into Europe and reorganized administration and scholarship at every stop; plague moved on grain ships and emptied cities; Islam moved with merchants into the Sahel and Southeast Asia and brought written law and literacy; Ibn Rushd was read in Latin within decades. Developments in one region regularly produced effects in others, which is exactly what a system means. <b>Against, or at least as a qualification:</b> connection was uneven and slow, most people never saw a foreign good, no political authority spanned the system, and the whole thing contracted whenever the states along a route failed. And the strongest limit on the claim sits in section 05: the Americas are outside it entirely, so "the world at c.1200 was an interconnected system" is true of Afro-Eurasia and false of the globe. A strong answer states the claim, names the mechanism that carried the connection, and then names its edge.`
+        body: `<b>For:</b> Champa rice moved from Vietnam into Chinese fields and raised the population ceiling; paper moved from China through Samarkand and Baghdad into Europe and reorganized administration and scholarship at every stop; plague moved on grain ships and emptied cities; Islam moved with merchants into the Sahel and Southeast Asia and brought written law and literacy; Ibn Rushd was read in Latin within decades. Developments in one region regularly produced effects in others, which is exactly what a system means. <b>Against, or at least as a qualification:</b> connection was uneven and slow, most people never saw a foreign good, no political authority spanned the system, and the whole thing contracted whenever the states along a route failed. And the strongest limit on the claim sits in section 05: the Americas are outside it entirely, so "the world at c. 1200 was an interconnected system" is true of Afro-Eurasia and false of the globe. A strong answer states the claim, names the mechanism that carried the connection, and then names its edge.`
       },
       {
         category: 'Category: what the baseline is for',
