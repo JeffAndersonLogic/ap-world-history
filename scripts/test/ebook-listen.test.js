@@ -89,24 +89,29 @@ const OTHER_VOLUMES = require(path.join(ROOT, 'scripts', 'build-ebook.js'))
  * dropped and the test would then be driving the real engine while believing
  * it had a stub, which is the one failure mode a stub must not have.
  */
-const STUB = `(() => {
+const stubWith = (voices) => `(() => {
+  const VOICES = ${JSON.stringify(voices || [])};
   const state = { spoken: [], cancels: 0, pauses: 0, resumes: 0, current: null, paused: false };
   window.__speech = state;
 
   function Utter(text) {
     this.text = text; this.rate = 1; this.pitch = 1; this.volume = 1;
-    this.lang = ''; this.onend = null; this.onerror = null; this.onstart = null;
+    this.lang = ''; this.voice = null;
+    this.onend = null; this.onerror = null; this.onstart = null;
   }
 
   const synth = {
     get speaking() { return !!state.current; },
     get paused() { return state.paused; },
     get pending() { return false; },
-    speak(u) { state.spoken.push({ text: u.text, rate: u.rate, lang: u.lang }); state.current = u; state.paused = false; },
+    speak(u) {
+      state.spoken.push({ text: u.text, rate: u.rate, lang: u.lang, voice: u.voice ? u.voice.name : null });
+      state.current = u; state.paused = false;
+    },
     cancel() { state.cancels++; state.current = null; state.paused = false; },
     pause() { state.pauses++; state.paused = true; },
     resume() { state.resumes++; state.paused = false; },
-    getVoices() { return []; },
+    getVoices() { return VOICES; },
     addEventListener() {}, removeEventListener() {}
   };
 
@@ -130,6 +135,10 @@ const STUB = `(() => {
   window.__drain = () => { let n = 0; while (state.current && n < 2000) { window.__finish(); n++; } return n; };
   window.__reset = () => { state.spoken = []; state.cancels = 0; state.pauses = 0; state.resumes = 0; };
 })();`;
+
+/** No voices at all, which is what headless Chromium reports and is the case
+ *  that must leave the utterance on the browser default. */
+const STUB = stubWith([]);
 
 /** speechSynthesis absent entirely, for the graceful-degradation case. */
 const NO_SPEECH = `Object.defineProperty(window, 'speechSynthesis', { value: undefined, configurable: true });
@@ -563,7 +572,126 @@ const tick = page => page.waitForTimeout(30);
     library.controls === 0 && library.listenable === 0 && library.scripts === 0,
     JSON.stringify(library));
 
-  // ── 10. no speech engine at all ───────────────────────────────────────────
+  // ── 10. which voice gets chosen ───────────────────────────────────────────
+  //
+  // The browser's default voice is frequently the worst one installed, so a
+  // voice is scored and chosen rather than left to the engine. Each list below
+  // is a real platform's shape, and the assertion is about which one wins.
+  console.log('\nvoice selection');
+
+  /** Load the volume in a fresh context with a given voice list, click Listen
+   *  on the first section, and report what the engine was handed. */
+  async function voiceFor(voices, label) {
+    const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    await ctx.addInitScript(stubWith(voices));
+    const pageErrors = [];
+    const p = await ctx.newPage();
+    p.on('pageerror', e => pageErrors.push(e.message));
+    await p.route('**/*', route =>
+      route.request().url().startsWith(`http://localhost:${port}/`) ? route.continue() : route.abort());
+    await p.goto(url(VOLUME), { waitUntil: 'load' });
+    await p.click('.bh-listen-play');
+    await p.waitForTimeout(30);
+    const first = await p.evaluate(() => window.__speech.spoken[0]);
+    await ctx.close();
+    if (pageErrors.length) check(`${label}: no page errors`, false, pageErrors[0]);
+    return first;
+  }
+
+  // Chrome and ChromeOS. The Google voice is a network voice and is not what
+  // the browser picks by default; it is the whole reason this ranking exists.
+  const chromeish = await voiceFor([
+    { name: 'Albert', lang: 'en-US', localService: true, voiceURI: 'com.apple.speech.synthesis.voice.Albert', default: true },
+    { name: 'Google US English', lang: 'en-US', localService: false, voiceURI: 'Google US English', default: false },
+    { name: 'Google UK English Male', lang: 'en-GB', localService: false, voiceURI: 'Google UK English Male', default: false }
+  ], 'chrome');
+  check('a Chrome-shaped list picks the Google network voice over the default',
+    chromeish.voice === 'Google US English', String(chromeish.voice));
+  check('and the utterance language follows the chosen voice',
+    chromeish.lang === 'en-US', chromeish.lang);
+
+  // Edge. Same idea, different naming.
+  const edgeish = await voiceFor([
+    { name: 'Microsoft David - English (United States)', lang: 'en-US', localService: true, voiceURI: 'David', default: true },
+    { name: 'Microsoft Ava Online (Natural) - English (United States)', lang: 'en-US', localService: false, voiceURI: 'Ava', default: false }
+  ], 'edge');
+  check('an Edge-shaped list picks the Natural voice',
+    /Natural/.test(String(edgeish.voice)), String(edgeish.voice));
+
+  // Apple. The downloadable voices are not in this list because WebKit does not
+  // expose them, which is the documented ceiling on that platform. What must not
+  // happen is a novelty voice reading a chapter on the Neolithic.
+  const appleish = await voiceFor([
+    { name: 'Bad News', lang: 'en-US', localService: true, voiceURI: 'com.apple.speech.synthesis.voice.BadNews', default: false },
+    { name: 'Zarvox', lang: 'en-US', localService: true, voiceURI: 'com.apple.speech.synthesis.voice.Zarvox', default: false },
+    { name: 'Samantha', lang: 'en-US', localService: true, voiceURI: 'com.apple.voice.compact.en-US.Samantha', default: true }
+  ], 'apple');
+  check('a novelty voice is never chosen', appleish.voice === 'Samantha', String(appleish.voice));
+
+  // If WebKit ever does expose the quality tiers, the ranking is already right.
+  const tiered = await voiceFor([
+    { name: 'Samantha', lang: 'en-US', localService: true, voiceURI: 'com.apple.voice.compact.en-US.Samantha', default: true },
+    { name: 'Ava', lang: 'en-US', localService: true, voiceURI: 'com.apple.voice.premium.en-US.Ava', default: false }
+  ], 'tiers');
+  check('a premium tier outranks a compact one of the same platform',
+    tiered.voice === 'Ava', String(tiered.voice));
+
+  // No English voice is not a reason to read English in a French accent.
+  const french = await voiceFor([
+    { name: 'Google français', lang: 'fr-FR', localService: false, voiceURI: 'fr', default: true }
+  ], 'french');
+  check('a non-English voice is never chosen for an English document',
+    french.voice === null && french.lang === 'en', `${french.voice}, ${french.lang}`);
+
+  // The original behaviour, unchanged: nothing scored, so nothing is set.
+  const bareList = await voiceFor([], 'empty');
+  check('an empty voice list leaves the browser default alone',
+    bareList.voice === null && bareList.lang === 'en', `${bareList.voice}, ${bareList.lang}`);
+
+  // A network voice on a dropped connection. The section must not report itself
+  // broken; it must fall back to a local voice and say the same words.
+  const offline = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  await offline.addInitScript(stubWith([
+    { name: 'Google US English', lang: 'en-US', localService: false, voiceURI: 'Google US English', default: false },
+    { name: 'Samantha', lang: 'en-US', localService: true, voiceURI: 'com.apple.voice.compact.en-US.Samantha', default: true }
+  ]));
+  const offlineErrors = [];
+  const offlinePage = await offline.newPage();
+  offlinePage.on('pageerror', e => offlineErrors.push(e.message));
+  await offlinePage.route('**/*', route =>
+    route.request().url().startsWith(`http://localhost:${port}/`) ? route.continue() : route.abort());
+  await offlinePage.goto(url(VOLUME), { waitUntil: 'load' });
+  await offlinePage.click('.bh-listen-play');
+  await offlinePage.waitForTimeout(30);
+  await offlinePage.evaluate(() => window.__error('network'));
+  await offlinePage.waitForTimeout(30);
+
+  const recovered = await offlinePage.evaluate(() => ({
+    spoken: window.__speech.spoken,
+    playing: document.querySelectorAll('.bh-listen[data-state="playing"]').length
+  }));
+  check('a failed network voice retries the same words on a local voice',
+    recovered.spoken.length === 2 &&
+    recovered.spoken[0].text === recovered.spoken[1].text &&
+    recovered.spoken[0].voice === 'Google US English' &&
+    recovered.spoken[1].voice === 'Samantha',
+    recovered.spoken.map(s => s.voice).join(' -> '));
+  check('and the section is still playing rather than reported broken',
+    recovered.playing === 1, `${recovered.playing} playing`);
+
+  // One retry, not a loop. A second failure is a real fault and must stop.
+  await offlinePage.evaluate(() => window.__error('synthesis-failed'));
+  const gaveUp = await offlinePage.evaluate(() => ({
+    spoken: window.__speech.spoken.length,
+    playing: document.querySelectorAll('.bh-listen[data-state="playing"]').length
+  }));
+  check('a second failure stops instead of retrying forever',
+    gaveUp.spoken === 2 && gaveUp.playing === 0, JSON.stringify(gaveUp));
+  check('no page errors during the voice fallback', offlineErrors.length === 0,
+    offlineErrors.slice(0, 2).join(' | '));
+  await offline.close();
+
+  // ── 11. no speech engine at all ───────────────────────────────────────────
   console.log('\nwithout speechSynthesis');
   const bare = await browser.newContext({ viewport: { width: 1280, height: 900 } });
   await bare.addInitScript(NO_SPEECH);

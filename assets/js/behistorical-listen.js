@@ -221,6 +221,137 @@
     return out;
   }
 
+  /* ── voice selection ─────────────────────────────────────────────────────
+   *
+   * The browser's default voice is often the worst one installed, and this is
+   * the single biggest thing separating narration a student will use from
+   * narration a student turns off after one paragraph.
+   *
+   * So a voice is chosen, but never pinned. Every candidate is scored, the best
+   * one is used, and if nothing scores above zero the utterance is left with no
+   * voice at all, which is exactly the browser default this file started with.
+   * Naming one specific voice would mean silence for any student whose device
+   * does not have it, and device voice sets differ by platform, by ChromeOS
+   * build and by profile.
+   *
+   * ── What this can and cannot reach ──────────────────────────────────────
+   *
+   * **Chrome, including Chromebooks: this is the win.** Chrome exposes Google's
+   * network voices alongside the local ones and does not select them by
+   * default. They are markedly better and they are what this ranking finds.
+   *
+   * **Edge**: the "Natural" voices, same idea.
+   *
+   * **iOS, including Chrome on an iPhone: this cannot help, and nothing else on
+   * a page can either.** Every browser on iOS is WebKit underneath, and WebKit
+   * deliberately withholds the downloadable voices from the web. Apple's own
+   * engineer, on their developer forum: "it is expected that with Web Speech
+   * APIs only the pre-installed voices are available. Optionally downloadable
+   * voices are not available." A student can download an excellent voice in
+   * Settings, Accessibility, Spoken Content, and a web page still cannot use
+   * it. iOS is also unreliable about the voices it does list: asking for Alex
+   * returns Samantha. What a page gets there is the pre-installed compact
+   * voice, and the only better route on that device is iOS's own Speak Screen
+   * or Safari's Listen to Page, both of which do use the downloaded voices.
+   * See the eBook narration section of CLAUDE.md.
+   *
+   * **macOS Safari**: the downloadable voices are withheld here too, but the
+   * novelty voices are not, which is why they are scored into the floor below.
+   * "Bad News" and "Zarvox" are real entries in getVoices() and one of them
+   * being picked for a chapter on the Neolithic is a live possibility.
+   */
+
+  /* Apple's novelty and legacy voices. These are jokes and 1980s synthesizers,
+     they are returned by getVoices() alongside the real ones, and none of them
+     may ever read a reading. Matched on the whole name, so a real voice that
+     merely contains one of these words is unaffected. */
+  var NOVELTY = /^(albert|bad news|bahh|bells|boing|bubbles|cellos|deranged|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|fred|junior|ralph|kathy|princess|bruce|agnes|victoria|grandma|grandpa|rocko|shelley|sandy|eddy|flo|reed|hysterical)$/i;
+
+  var chosenVoice;            // undefined until resolved, null means browser default
+  var networkVoiceRefused = false;   // set when a network voice has failed once
+
+  function scoreVoice(voice, full) {
+    var name = String(voice.name || '');
+    var uri = String(voice.voiceURI || '').toLowerCase();
+    var lang = String(voice.lang || '').toLowerCase().replace('_', '-');
+
+    var score = 0;
+
+    /* The single strongest signal on Chrome and Edge. A voice that is not a
+       local service is a server-rendered one, and on both browsers those are
+       the good ones. */
+    if (voice.localService === false) score += 6;
+
+    if (/natural/i.test(name)) score += 5;          // Edge
+    if (/^google/i.test(name)) score += 4;          // Chrome and ChromeOS
+
+    /* macOS quality tiers. Present in the voiceURI rather than the name, and
+       currently unreachable from the web on Apple platforms, but scored anyway
+       so this keeps working if WebKit ever changes its mind. */
+    if (uri.indexOf('premium') !== -1) score += 3;
+    if (uri.indexOf('enhanced') !== -1) score += 2;
+    if (uri.indexOf('compact') !== -1) score -= 1;
+
+    if (lang === full) score += 1;                  // en-US over en-GB when the page says so
+
+    /* The browser's own pick, weighted enough to win any tie. The engine knows
+       things about the device that a name and a URI do not, so it is only
+       overruled by a positive quality signal, never by a coin toss. */
+    if (voice['default']) score += 2;
+
+    return score;
+  }
+
+  /**
+   * The chosen voice, or null for the browser default.
+   *
+   * Resolved lazily and memoized, because getVoices() returns an empty array on
+   * the first call in Chrome and fills in asynchronously afterwards. Resolving
+   * at speak time rather than at load time means the list is populated by the
+   * time anybody clicks, without a voiceschanged listener that has to be right
+   * about when it fires.
+   */
+  function resolveVoice() {
+    if (chosenVoice !== undefined) return chosenVoice;
+
+    var voices;
+    try { voices = synth.getVoices() || []; } catch (e) { voices = []; }
+    if (!voices.length) return null;              // not loaded yet, try again next chunk
+
+    var full = String(document.documentElement.lang || 'en').toLowerCase().replace('_', '-');
+    var want = full.split('-')[0];
+
+    var best = null, bestScore = -Infinity;
+    for (var i = 0; i < voices.length; i++) {
+      var voice = voices[i];
+
+      var lang = String(voice.lang || '').toLowerCase().replace('_', '-');
+      if (lang.split('-')[0] !== want) continue;  // never read English in a French voice
+
+      /* Jokes and 1980s synthesizers, dropped rather than scored low, so no
+         combination of other signals can ever float one back up. */
+      if (NOVELTY.test(String(voice.name || '').trim())) continue;
+
+      /* A network voice has already failed once this session, so the wifi is
+         not to be trusted with the rest of the chapter. Excluded outright
+         rather than merely marked down: "Google US English" still earns four
+         points from its name alone, which is enough to win the retry and fail
+         again in exactly the same way. */
+      if (networkVoiceRefused && voice.localService === false) continue;
+
+      var score = scoreVoice(voice, full);
+      if (score > bestScore) { bestScore = score; best = voice; }
+    }
+
+    /* The best candidate, explicitly, rather than a threshold above which the
+       engine's default is left in place. Deferring to the default is what
+       produced a novelty voice reading a chapter in the first place, and a
+       deterministic choice is the point of the exercise. When there is no
+       candidate at all, null leaves the engine to it, unchanged. */
+    chosenVoice = best;
+    return chosenVoice;
+  }
+
   /* ── playback ────────────────────────────────────────────────────────────
    *
    * One active entry, page-wide, and one session token.
@@ -262,11 +393,17 @@
 
     var utterance = new Utterance(active.chunks[active.index]);
     utterance.rate = rate;
-    /* The document's language, not a named voice. Voice availability differs by
-       device, by profile and by ChromeOS build, and pinning one means a student
-       whose machine does not have it gets silence. The browser's default for
-       the language is the one voice guaranteed to exist. */
     utterance.lang = document.documentElement.lang || 'en';
+
+    /* A deliberately chosen voice when one scored, the browser's own default
+       when none did. See resolveVoice() above. The language is taken from the
+       voice when there is one, because a voice and a lang that disagree is
+       undefined behaviour and some engines resolve it by ignoring the voice. */
+    var voice = resolveVoice();
+    if (voice) {
+      utterance.voice = voice;
+      if (voice.lang) utterance.lang = voice.lang;
+    }
 
     utterance.onend = function () {
       if (token !== session || !active) return;
@@ -280,6 +417,21 @@
     utterance.onerror = function (event) {
       if (token !== session || !active) return;
       if (event && (event.error === 'interrupted' || event.error === 'canceled')) return;
+
+      /* A network voice on a dropped connection fails here, and a classroom is
+         exactly where that happens. Rather than reporting the section as
+         broken, the network voices are refused for the rest of the session, the
+         choice is recomputed, and this same chunk is spoken again on whatever
+         local voice the device has. One retry, and only for a voice that could
+         plausibly have been the cause, so a genuinely failing engine still
+         stops instead of looping. */
+      if (voice && voice.localService === false && !networkVoiceRefused) {
+        networkVoiceRefused = true;
+        chosenVoice = undefined;
+        speakNext(token);
+        return;
+      }
+
       finish(token);
     };
 

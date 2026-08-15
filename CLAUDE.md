@@ -515,10 +515,50 @@ Found while building this, and worth knowing before changing any of it:
   cancelling section A mid-paragraph advances A and speaks it over section B.
   Every callback carries a session token and does nothing once the session has
   moved on. Do not remove it.
-- **Voices are per device and per profile.** No voice is named; the utterance
-  carries the document language and the browser picks. Pinning a voice means
-  silence for any student whose machine does not have it, and ChromeOS ships a
-  different set from desktop Chrome.
+- **The browser's default voice is often the worst one installed**, and that is
+  the single biggest thing separating narration a student will use from
+  narration a student turns off after one paragraph. So a voice is scored and
+  chosen, never named: every candidate in the document's language is ranked,
+  the winner is used, and if there is no candidate the utterance is left with
+  no voice, which is the plain browser default. Naming one specific voice would
+  mean silence for any student whose device does not have it. The ranking
+  prefers a network voice (Chrome's Google voices and Edge's Natural ones,
+  which are the good ones on those browsers and are not what either picks by
+  default), then a premium or enhanced tier over a compact one, and it drops
+  Apple's novelty voices outright. **"Bad News" and "Zarvox" are real entries in
+  `getVoices()`**, and one of them reading a chapter on the Neolithic was a live
+  possibility before this.
+- **A network voice that fails is retried once on a local voice**, speaking the
+  same words, and network voices are then refused for the rest of the session.
+  A classroom is exactly where the wifi drops, and the section must not report
+  itself broken when it does. Excluded outright on the retry rather than marked
+  down, because "Google US English" still earns four points from its name alone
+  and would win the retry and fail again identically.
+
+##### iOS cannot be fixed from a web page
+
+**Every browser on iOS is WebKit, so Chrome on an iPhone is Safari's speech
+engine.** WebKit deliberately withholds the downloadable voices from the web.
+Apple's own engineer, on their developer forum, thread 723503: *"it is expected
+that with Web Speech APIs only the pre-installed voices are available.
+Optionally downloadable voices are not available."*
+
+A student can download an excellent voice in Settings, Accessibility, Spoken
+Content, Voices, and a web page still cannot use it. iOS is unreliable about the
+voices it does list, too: asking for Alex returns Samantha. What a page gets on
+an iPhone is the pre-installed compact voice, and no ranking, no rate change and
+no amount of code here improves it.
+
+**The route that does work on that device is outside the page.** iOS Speak
+Screen, and Safari's Listen to Page, both use the downloaded voices and both
+work on the eBook, because the eBook is ordinary semantic HTML with a real
+`<main>` landmark. If iPhone listening matters for a student, that is the answer
+to give them, not this feature. The other way to fix it would be a paid TTS
+service, which means the reading leaving the device, and that is refused for the
+reasons at the top of this section.
+
+macOS Safari has the same withholding, which is why the novelty voices matter
+there: they are exposed while the good ones are not.
 - **Changing the speed applies from the next chunk**, not mid-sentence.
   Restarting the current utterance would throw away the paragraph the student
   was in the middle of, which is worse than one sentence at the old speed.
