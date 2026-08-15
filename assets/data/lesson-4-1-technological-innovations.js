@@ -148,6 +148,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "What does the Waldseemüller map reveal about the geographic knowledge European navigators had accumulated by 1507? What does it still get wrong, and what does that suggest about the limits of early modern cartography?"
   },
 
+  deepReading: {
+    title: "Sailing Away to Get Home",
+    desc: "A textbook-depth companion on the actual problem an ocean sets, why the caravel, carrack and fluyt were each built for a different part of it, how latitude was solved and longitude was not, and the borrowed knowledge and the volta do mar that made a return voyage possible. Optional, and useful when a checkpoint asks how a technology actually worked.",
+    url: "deep-reading-topic-4-1-technological-innovations.html"
+  },
+
   first10: {
     title: 'First & 10: The Navigational Revolution',
     embedUrl: 'first-and-10-topic-4-1-technological-innovations-capture.html?v=response-id-fix-v1',

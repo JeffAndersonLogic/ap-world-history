@@ -160,6 +160,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map, identify the geographic barriers that European explorers had to overcome. Which route, Portuguese or Spanish, represented a greater geographic challenge? What does the shape of the Americas on this early map suggest about how quickly European knowledge of new discoveries circulated?"
   },
 
+  deepReading: {
+    title: "Who Paid, and What For",
+    desc: "A textbook-depth companion on why a state would fund a voyage that might return nothing: the pepper margin, the crusading inheritance, and the capitulaciones that made a contract out of a gamble, followed by the Portuguese program from Ceuta to Calicut, the Spanish bet, and the latecomers who went north. Optional, and useful when a checkpoint asks about motives.",
+    url: "deep-reading-topic-4-2-exploration.html"
+  },
+
   first10: {
     title: 'First & 10: Why They Sailed',
     embedUrl: 'first-and-10-topic-4-2-exploration-capture.html?v=response-id-fix-v1',

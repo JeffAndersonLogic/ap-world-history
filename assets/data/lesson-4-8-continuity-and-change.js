@@ -178,6 +178,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map, identify one specific change and one specific continuity in global trade networks from c. 1450 to c. 1700. For each, explain the mechanism: what drove the change, and what sustained the continuity? Your argument should be specific, name the trade network, the commodity, or the institution you are describing."
   },
 
+  deepReading: {
+    title: "What Changed and What Did Not",
+    desc: "A textbook-depth companion on what makes a trade network global rather than merely long, the catastrophe and the crops in one argument, three continuities with the structural reason each held, a method for continuity-and-change prompts, and where the line into Unit 5 actually falls. Optional, and the chapter to read before writing about this period.",
+    url: "deep-reading-topic-4-8-continuity-and-change.html"
+  },
+
   first10: {
     title: 'First & 10: The Connected World',
     embedUrl: 'first-and-10-topic-4-8-continuity-and-change-capture.html?v=response-id-fix-v1',

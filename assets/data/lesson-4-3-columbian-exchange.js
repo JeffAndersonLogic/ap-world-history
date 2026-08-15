@@ -166,6 +166,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map, trace the three most consequential transfers of the Columbian Exchange: New World crops moving east, Old World diseases moving west, and enslaved Africans moving west. For each, identify the source region, the destination region, and the major consequence."
   },
 
+  deepReading: {
+    title: "The Exchange Nobody Negotiated",
+    desc: "A textbook-depth companion on why the catastrophe fell where it did, with the biology of a virgin soil epidemic done properly, an honest account of contested numbers, what crossed in each direction, and the six decisions that run from a labor vacuum to the Middle Passage. Optional, and the place to go if you have ever written that a population had no immunity without being able to say why.",
+    url: "deep-reading-topic-4-3-columbian-exchange.html"
+  },
+
   first10: {
     title: 'First & 10: The Great Exchange',
     embedUrl: 'first-and-10-topic-4-3-columbian-exchange-capture.html?v=response-id-fix-v1',

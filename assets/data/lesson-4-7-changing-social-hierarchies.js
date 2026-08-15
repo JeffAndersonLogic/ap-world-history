@@ -154,6 +154,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the casta painting as evidence, explain what the casta system reveals about Spanish colonial society. Why did colonizers feel the need to create such an elaborate classification system? What does the existence of categories like 'mestizo' and 'mulatto', which had no pre-colonial equivalent, reveal about the demographic consequences of colonialism?"
   },
 
+  deepReading: {
+    title: "Writing Ancestry Into Law",
+    desc: "A textbook-depth companion on the millet system as an administrative bargain, Qing separation as a minority protecting itself, the casta categories with the gracias al sacar that proves what kind of category they were, why a descent hierarchy has to regulate women, and the one continuity and one change the criteria ask for. Optional, and useful when a checkpoint asks about social structure.",
+    url: "deep-reading-topic-4-7-changing-social-hierarchies.html"
+  },
+
   first10: {
     title: 'First & 10: New Hierarchies',
     embedUrl: 'first-and-10-topic-4-7-changing-social-hierarchies-capture.html?v=response-id-fix-v1',

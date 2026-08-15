@@ -178,6 +178,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Looking at the map, explain why the Portuguese focused on fortified coastal ports rather than inland conquest. What does the geography of the Indian Ocean, with its key straits and chokepoints, reveal about why the trading post model was viable for a small state like Portugal?"
   },
 
+  deepReading: {
+    title: "Three Ways to Hold an Ocean",
+    desc: "A textbook-depth companion on the trading post empire and the cartaz, who actually did the fighting at Tenochtitlan and Cajamarca, how Spain governed across a year of distance, and what a charter granting war-making powers turned a company into. Optional, and useful when a checkpoint asks you to compare models of empire.",
+    url: "deep-reading-topic-4-4-maritime-empires-established.html"
+  },
+
   first10: {
     title: 'First & 10: Building Empires at Sea',
     embedUrl: 'first-and-10-topic-4-4-maritime-empires-established-capture.html?v=response-id-fix-v1',

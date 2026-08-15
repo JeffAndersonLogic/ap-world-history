@@ -131,6 +131,26 @@ const VOLUMES = [
       { module: 'topic-3-3' },
       { module: 'topic-3-4' }
     ]
+  },
+  {
+    id: 'unit-4',
+    outputFile: 'ebook/unit-4.html',
+    blurb: `Transoceanic Connections: the ships that could come home against the wind, the three incompatible ways of holding an ocean, the silver that paid for all of it, and the honest account of what Europeans still could not do in 1750.`,
+    label: 'Unit 04',
+    docTitle: 'BeHistorical | Unit 4: Transoceanic Connections',
+    eyebrow: 'Unit 04 &nbsp;·&nbsp; The eBook &nbsp;·&nbsp; AP World History: Modern',
+    titleHtml: 'Transoceanic <em>Connections</em>',
+    deck: `Eight chapters for eight topics, and two arguments running through them. The first is that every empire in this unit took the shape of what it was extracting and what stood in its way, which is why Portugal took harbors, Spain took land, and the Dutch chartered a company that could declare war. The second is the correction the unit needs: Europeans dominated the ocean routes and the Americas while remaining customers of Asian economies they could not match in production, and knowing where that line falls is what makes Unit 5 legible.`,
+    contents: [
+      { module: 'topic-4-1' },
+      { module: 'topic-4-2' },
+      { module: 'topic-4-3' },
+      { module: 'topic-4-4' },
+      { module: 'topic-4-5' },
+      { module: 'topic-4-6' },
+      { module: 'topic-4-7' },
+      { module: 'topic-4-8' }
+    ]
   }
 ];
 

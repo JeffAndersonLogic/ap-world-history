@@ -294,6 +294,32 @@ compiled into `ebook/unit-3.html`:
 - **Topic 3.3**, `topic-3-3.js`, "Faith, and the Uses of It", 6 sections, ~4,900 words.
 - **Topic 3.4**, `topic-3-4.js`, "One Problem, Five Answers", 5 sections, ~3,800 words.
 
+**The Unit 4 volume is complete.** All eight chapters are on the working branch
+and compiled into `ebook/unit-4.html`:
+
+- **Topic 4.1**, `topic-4-1.js`, "Sailing Away to Get Home", 4 sections, ~4,200 words.
+- **Topic 4.2**, `topic-4-2.js`, "Who Paid, and What For", 4 sections, ~4,400 words.
+- **Topic 4.3**, `topic-4-3.js`, "The Exchange Nobody Negotiated", 5 sections, ~4,900 words.
+- **Topic 4.4**, `topic-4-4.js`, "Three Ways to Hold an Ocean", 5 sections, ~4,900 words.
+- **Topic 4.5**, `topic-4-5.js`, "What Held It Together", 5 sections, ~5,300 words.
+- **Topic 4.6**, `topic-4-6.js`, "The Cracks in the Map", 4 sections, ~4,300 words.
+- **Topic 4.7**, `topic-4-7.js`, "Writing Ancestry Into Law", 5 sections, ~4,900 words.
+- **Topic 4.8**, `topic-4-8.js`, "What Changed and What Did Not", 5 sections, ~4,600 words.
+
+**An eight-topic unit gets shorter chapters, for the same reason a four-topic one
+gets longer ones.** The volume is the unit of length, not the chapter. Unit 4's
+eight chapters run four or five sections against Unit 3's six, and the two
+volumes come out within a few thousand words of each other. A student reads a
+volume; they do not read a chapter count.
+
+**Unit 4's chapters carry a correction, and it is worth knowing before writing
+Unit 5.** Topics 4.5 and 4.8 both end on the fact that Europe paid for Asian
+goods in silver throughout this period because it made nothing Asian buyers
+wanted, and both date the reversal to the Bengal diwani in 1765 and to
+industrialization. A Unit 5 chapter that opens on European dominance as an
+established fact contradicts two chapters already on the shelf, so open on what
+changed instead.
+
 **A four-topic unit gets a four-chapter volume with longer chapters, not padding.**
 Unit 3 has four topics against Unit 1 and Unit 2's seven, so its chapters run six
 sections rather than five and the volume totals about the same length. Never
@@ -327,12 +353,12 @@ paragraph. Whoever lands a chapter updates this list in the same commit.
 
 ### Still to write
 
-Foundations and Units 1, 2 and 3 are complete. The next volume is another unit:
-pick one, add a `VOLUMES` entry in `scripts/build-ebook.js`, and write its
-chapters against the same schema. Units 4 through 9 are unwritten, and Unit 4,
-transoceanic connections, is the natural next one, because the Unit 3 chapters
-end on the observation that the Mughals never defended a coastline and the Qing
-prepared for the frontier they had always faced, which is where Unit 4 begins.
+Foundations and Units 1, 2, 3 and 4 are complete. The next volume is another
+unit: pick one, add a `VOLUMES` entry in `scripts/build-ebook.js`, and write its
+chapters against the same schema. Units 5 through 9 are unwritten, and Unit 5,
+revolutions, is the natural next one, because Topic 4.8 ends by naming the two
+developments that begin it, the Bengal diwani of 1765 and industrialization, and
+by insisting they belong to Unit 5 rather than to Unit 4.
 
 **Foundations 0 is deliberately excluded.** It is course orientation and the six
 thinking skills, not history content, and its reading asks for a personal

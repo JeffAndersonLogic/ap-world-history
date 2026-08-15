@@ -1,0 +1,314 @@
+'use strict';
+
+/**
+ * Topic 4.7, Changing Social Hierarchies: the deep reading.
+ *
+ * Why this exists. The success criteria ask for three things a survey cannot
+ * carry: states that accommodated diversity set against states that suppressed
+ * it, the casta system with the actual categories and a concrete legal
+ * consequence, and, hardest of all, one continuity and one genuine change with
+ * gender running through both.
+ *
+ * That last requirement is the reason this chapter exists at all. "Society
+ * became more hierarchical" is not an argument, because every society in this
+ * course was already hierarchical. The change worth naming is that ancestry
+ * became the axis, and it became so through law, which is a specific and datable
+ * development rather than an atmosphere.
+ *
+ * Three things carried deliberately:
+ *
+ *   1. The millet system gets its mechanism, tax-and-delegate, so a student can
+ *      see that toleration was an administrative solution rather than a modern
+ *      value, and can then say honestly what it did not include.
+ *   2. The casta section names the categories, states how status was assigned in
+ *      practice, and gives the gracias al sacar as a concrete legal consequence,
+ *      because the criteria ask for one and because a purchasable whiteness
+ *      exposes the whole system's logic in one document.
+ *   3. Gender is written as intersecting rather than as an appended paragraph.
+ *      Limpieza de sangre runs through women's bodies, the casta categories are
+ *      assigned by descent, and the demographics of conquest made that
+ *      inevitable, so the gender material belongs inside the hierarchy sections
+ *      rather than after them.
+ */
+
+module.exports = {
+  topicKey: 't4-7',
+  slug: 'topic-4-7-changing-social-hierarchies',
+  sourceFile: 'deep-reading-topic-4-7-changing-social-hierarchies.html',
+  lessonFile: 'lesson-4-7-changing-social-hierarchies.html',
+
+  docTitle: 'BeHistorical | Deep Reading | Topic 4.7: Writing Ancestry Into Law',
+  eyebrow: 'Topic 4.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
+  titleHtml: 'Writing Ancestry Into <em>Law</em>',
+  deck: `Every society in this course sorted people. What changes in these three centuries is what the sorting is based on: not birth into a rank, not religion, not occupation, but ancestry, recorded in a register and carrying legal consequences you could not work your way out of. This chapter is how that happened, what states did with the diversity they governed, and why the whole apparatus ran through women.`,
+  meta: ['Five sections', 'Toleration, suppression, casta, gender, continuity', 'Read alongside the First & 10'],
+  footerNote: 'Topic 4.7 &nbsp;·&nbsp; Writing Ancestry Into Law &nbsp;·&nbsp; Companion to the First &amp; 10',
+
+  howTo: {
+    heading: 'How to Use This',
+    intro: `Sections 01 and 02 are the accommodation and suppression pair the success criteria ask you to contrast. Section 03 is the casta system in the detail the criteria specify, section 04 is gender running through all of it, and section 05 is the continuity-and-change argument, which is the hardest of the three and the one worth most.`,
+    steps: [
+      `<b>01 States that accommodated:</b> the millet system, and what a tax-and-delegate arrangement was and was not.`,
+      `<b>02 States that restricted:</b> Qing rule over a Han majority, and separation as a strategy.`,
+      `<b>03 The casta system:</b> the categories, how status was actually assigned, and what it cost.`,
+      `<b>04 Gender through the hierarchy:</b> why descent rules run through women.`,
+      `<b>05 One continuity and one change:</b> the argument the criteria ask you to make.`,
+      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+    ]
+  },
+
+  empires: [
+    // ── 01 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'accommodation',
+      num: '01',
+      accent: 'gold',
+      name: 'Toleration as an Administrative Solution',
+      navLabel: 'Accommodation',
+      dates: 'c. 1450 to 1800 &nbsp;·&nbsp; The Ottoman millet system',
+      thesis: `The Ottoman <span class="kt">millet</span> system was not liberal toleration and was not persecution. It was a method for taxing and governing a religiously plural empire cheaply, and understanding it as a mechanism rather than as a virtue is what lets you use it accurately.`,
+      parts: [
+        {
+          heading: 'How it worked',
+          blocks: [
+            { p: `A millet was a religious community, Greek Orthodox, Armenian Apostolic, Jewish, and others, recognized by the state and permitted to run its own affairs. Its own religious authorities, a patriarch or a chief rabbi, administered family law, marriage, inheritance, education, internal disputes and community charity, and were held responsible to the sultan for the community's obedience and for delivering its taxes.` },
+            { p: `The mechanism to write is a bargain, and it is deeply practical. Non-Muslim subjects paid the <span class="kt">jizya</span>, a tax on protected non-Muslim populations, and accepted certain legal disabilities: their testimony carried less weight against a Muslim in an Islamic court, they faced restrictions on dress, on building or repairing houses of worship, and on riding certain animals, and they were barred from certain offices. In exchange they received the protection of the state, the free practice of their religion, and self-government in everything the state did not need to control.` },
+            { p: `From the state's side, this is administratively brilliant. An empire governing tens of millions of people across many languages and faiths does not need to build courts, schools and registries for each of them; it delegates all of that to existing institutions, collects a tax, and holds one identifiable leader accountable. The cost of governing plurality drops enormously, and the plurality is preserved as a by-product because uniformity was never the goal.` },
+            { p: `The best-known case is the reception of Jews expelled from Spain in <span class="num">1492</span> and from Portugal shortly after. Bayezid II offered refuge, and Sephardic communities settled in Salonica, Istanbul, Izmir and elsewhere, where Salonica became a majority-Jewish city for centuries. The remark attributed to Bayezid, that Ferdinand had impoverished his own kingdom and enriched the Ottoman one, is very likely later embroidery, but it captures the reasoning exactly: skilled populations were an asset, and a state that could absorb them at the cost of a tax arrangement was buying cheaply.` }
+          ]
+        },
+        {
+          heading: 'What it was not',
+          blocks: [
+            { p: `Be precise about the limits, because a student who overstates this loses the comparison. It was not equality: the disabilities were real and permanent, and conversion moved in one direction only, with apostasy from Islam a capital matter. It was not a right: the arrangement rested on the sultan's authority and could tighten under pressure, and periods of increased restriction and episodes of violence occurred. And its coverage was uneven: <span class="kt">devshirme</span>, the levy described in the Topic 3.2 chapter, took Christian boys from Balkan villages for conversion and state service, which is a heavy imposition on exactly the communities the millet system protected.` },
+            { p: `The honest formula is that the Ottoman system tolerated difference while institutionalizing inequality, and that it did so because that was the cheapest way to run the empire. It was more accommodating than most contemporary European states by a wide margin, and it was not a modern pluralism, and both halves belong in the sentence.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not describe the millet system as religious freedom, and do not swing to the opposite and call it oppression that happened to permit worship. Both readings apply modern categories to a premodern bargain. The structure to name is a <b>hierarchy with a legal floor</b>: non-Muslims were unambiguously subordinate and unambiguously protected, and the protection was contractual rather than conditional on goodwill. Compare it with Spain, which resolved the same problem by expulsion in <span class="num">1492</span> and then policed the descendants of converts for generations, and the Ottoman arrangement looks like what it was, the more successful method of governing a plural population.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Tax and delegate. <em>The mechanism is that an empire too large and too plural to administer directly recognizes each religious community as a unit, delegates family law, education and internal justice to its existing authorities, and holds one leader responsible for obedience and for the community&rsquo;s tax, so the state buys order and revenue without building parallel institutions and diversity survives as a by-product of not paying to eliminate it.</em>`,
+        limit: `It institutionalized inequality permanently: the jizya, unequal legal testimony, restrictions on worship and dress, and no route upward except conversion, which ran one way.`,
+        comparison: `Against <em>Mughal policy</em> in Topic 3.3: Akbar went further, abolishing the jizya, marrying into Rajput houses and recruiting Hindus into the highest ranks of the mansabdari, and Aurangzeb reversed much of it. The Ottoman system is the more durable design precisely because it depended on an institution rather than on a particular emperor&rsquo;s conviction.`
+      },
+      terms: [
+        ['Millet', 'A recognized religious community in the Ottoman empire, self-governing in family law, education and internal justice.'],
+        ['Jizya', 'The tax on protected non-Muslim subjects, the revenue half of the millet bargain.'],
+        ['Dhimmi', 'The status of a protected non-Muslim under Islamic rule: subordinate in law, secure in worship and property.'],
+        ['Sephardic diaspora', 'The Jewish communities expelled from Iberia in 1492 and after, many resettled in Ottoman cities such as Salonica.'],
+        ['Devshirme', 'The levy of Christian boys for conversion and imperial service, a heavy imposition on the communities the millets protected.']
+      ]
+    },
+
+    // ── 02 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'restriction',
+      num: '02',
+      accent: 'iron',
+      name: 'Ruling a Majority You Cannot Absorb',
+      navLabel: 'Restriction',
+      dates: 'c. 1644 to 1800 &nbsp;·&nbsp; Qing China',
+      thesis: `The Qing were a Manchu dynasty of perhaps a million people ruling well over a hundred million Han Chinese, and their whole social policy follows from that arithmetic: govern through Chinese institutions, and keep the ruling group from disappearing into the population it rules.`,
+      parts: [
+        {
+          heading: 'The two halves of Qing policy',
+          blocks: [
+            { p: `The Qing did not attempt to make China Manchu, and that is the first thing to get right. They kept the Confucian civil service examinations, the bureaucracy, the legal codes and the ritual apparatus of the Ming, and staffed the administration overwhelmingly with Han officials, because governing a hundred million people any other way was impossible. Several emperors, Kangxi and Qianlong above all, presented themselves as model Confucian rulers and patrons of Chinese scholarship.` },
+            { p: `Alongside that they built a set of separations designed to preserve the Manchus as a distinct group. <b>Dual appointment</b> put a Manchu and a Han official in many senior posts. The <b>banner system</b> organized Manchus, along with Mongol and some Han bannermen, into hereditary military units with their own registers, stipends and garrisons, physically quartered in walled sections of major cities. Intermarriage between Manchus and Han was restricted, Manchus were barred from ordinary commerce and from the examination path that defined Han elite status, and Manchuria itself was formally closed to Han settlement for much of the period.` },
+            { p: `The most visible imposition ran the other way. The <b>queue</b> order of <span class="num">1645</span> required Han men to shave the forehead and wear the Manchu braid on pain of death, which is why it provoked ferocious resistance: in Confucian terms the body was a gift from one's parents and cutting the hair was a violation, so the order forced a daily, public, physical act of submission. Han women were exempt, and footbinding, a Han practice the Qing repeatedly and unsuccessfully tried to ban, continued.` }
+          ]
+        },
+        {
+          heading: 'Why this is the right contrast with the Ottomans',
+          blocks: [
+            { p: `Both empires governed populations they could not homogenize and both chose not to try. The difference is direction. The Ottoman state was the majority faith accommodating minorities beneath it; the Qing state was a tiny minority ruling a vast majority and its separations were defensive, aimed at preventing the assimilation of the rulers rather than of the ruled.` },
+            { p: `That is why the Qing case reads as suppression in some places and as accommodation in others, and why students find it confusing. Restrictions on Han settlement in Manchuria and on intermarriage are a minority protecting its own distinctiveness; the queue order is a minority demanding a visible marker of submission; the retention of the examination system is a minority conceding that the majority's institutions are indispensable. All three are the same strategy seen from different angles.` },
+            { p: `And the long outcome argues against the strategy. By the nineteenth century a great many bannermen spoke Chinese rather than Manchu, the language was in decline, and the separations had eroded in practice. Legal separation slowed assimilation and did not prevent it, which is worth noting whenever a state tries to legislate a group into permanence.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Separation to preserve a ruling minority. <em>The mechanism is that a conquest elite far outnumbered by its subjects must use their institutions to govern, which exposes it to absorption, so it builds legal barriers, hereditary military registers, residential segregation and marriage restrictions around itself, protecting the rulers from the ruled rather than the reverse.</em>`,
+        limit: `It did not work in the long run. Bannermen shifted to Chinese, the Manchu language declined, and by the nineteenth century the separations were substantially eroded.`,
+        comparison: `Against the <em>millet system</em> in section 01: both empires governed plurality by not attempting uniformity, but the Ottomans institutionalized inequality downward, granting subordinate communities self-rule, while the Qing institutionalized separation upward, fencing off the rulers. Same refusal to homogenize, opposite direction, and the direction is decided by which group is in the minority.`
+      },
+      terms: [
+        ['Banner system', 'The hereditary Manchu military and social organization, with its own registers, stipends and walled garrison quarters.'],
+        ['Dual appointment', 'The Qing practice of pairing Manchu and Han officials in senior posts, sharing administration while retaining control.'],
+        ['Queue order', 'The 1645 requirement that Han men shave the forehead and wear the Manchu braid, a public daily act of submission.'],
+        ['Examination system', 'The Confucian civil service selection the Qing retained, conceding that Han institutions were indispensable to rule.'],
+        ['Assimilation', 'The absorption of a group into a larger population, which Qing separations slowed and ultimately did not prevent.']
+      ]
+    },
+
+    // ── 03 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'casta',
+      num: '03',
+      accent: 'rust',
+      name: 'The System That Sorted by Descent',
+      navLabel: 'Casta',
+      dates: 'c. 1550 to 1800 &nbsp;·&nbsp; Spanish America',
+      thesis: `The <span class="kt">casta</span> system is the genuinely new thing in this topic. Other societies ranked people by birth; this one ranked them by ancestry, wrote the ranking into law, recorded it in parish registers, and attached specific legal disabilities to each position.`,
+      parts: [
+        {
+          heading: 'The categories',
+          blocks: [
+            { p: `The main terms, and they are worth knowing exactly. <b>Peninsulares</b>: Spaniards born in Spain, who held the highest offices, the senior Church posts and the top of the commercial hierarchy. <b>Criollos</b>: people of Spanish descent born in the Americas, wealthy and often landowning, but excluded from the highest positions on the grounds of birthplace alone, which is the grievance the Topic 4.4 chapter flags and which detonates in Unit 5. <b>Mestizos</b>: people of mixed Spanish and Indigenous descent, an enormous and growing group occupying artisan, overseer and small-farming roles. <b>Mulattoes</b>: people of mixed Spanish and African descent. <b>Indios</b>: Indigenous people, legally a separate republic with its own tribute obligations, its own courts and, at least on paper, crown protections. <b>Negros</b>: people of African descent, enslaved or free, at the bottom of the legal hierarchy.` },
+            { p: `Beneath those main terms proliferated dozens of finer labels for particular combinations of descent, some of them recorded in the well-known eighteenth-century <b>casta paintings</b>, series of canvases each depicting a couple of two categories with the child that results, labeled with the resulting term. The paintings are usually read as documentation and they are better read as a genre: made largely for Spanish audiences, they present a rationalized, orderly taxonomy that colonial society did not actually operate.` }
+          ]
+        },
+        {
+          heading: 'How status was really assigned, and what it cost',
+          blocks: [
+            { p: `In practice casta was assigned by a combination of recorded parentage in baptismal registers, appearance, reputation, wealth, occupation, dress and the company one kept. Priests recorded a category at baptism, and that record followed a person. Wealth could shift the assignment: a prosperous, well-connected mestizo might be recorded and treated as a criollo, and a poor criollo might not be.` },
+            { p: `That fluidity is not evidence of a mild system, and this is the subtle point. A hierarchy in which category can be negotiated is one in which everybody is always negotiating, and in which the categories reach into ordinary life continuously rather than being settled once at birth.` },
+            { p: `The consequences were legal and specific, which is what the success criteria want. Higher administrative and ecclesiastical offices were restricted by category. Guilds limited membership. Universities and religious orders applied purity-of-descent requirements. Tribute obligations fell on Indios and on free people of African descent and not on Spaniards. Sumptuary rules restricted dress. Marriage across categories required approval under the <em>Pragmática</em> of <span class="num">1776</span>, which gave parents legal power to block an unequal match. And the clearest single case is the <span class="kt">gracias al sacar</span>, a royal dispensation that a person of mixed descent could purchase, for a substantial fee, which legally reclassified them as white and opened offices, guilds and universities.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: the money proves the mechanism',
+              html: `The <em>gracias al sacar</em> is the most useful single document in this topic because of what it concedes. If ancestry were understood as an unchangeable natural fact, a fee could not alter it. The crown sold the reclassification anyway, which means that in operation the system was a legal and social status rather than a biological one, and that it was for sale to the rich. Petitions survive in the colonial archives with the applicant&rsquo;s case, the fee, and the offices sought, so we can see individuals reasoning about their own position in the hierarchy. Use it to make an argument rather than as a curiosity: a category that money can change is a category doing economic work.`
+            } }
+          ]
+        },
+        {
+          heading: 'Where it came from',
+          blocks: [
+            { p: `The casta system did not appear from nowhere. Its direct ancestor is Iberian <span class="kt">limpieza de sangre</span>, purity of blood, the sixteenth-century Spanish doctrine that excluded people with Jewish or Muslim ancestry from offices, guilds, religious orders and universities regardless of their own Christian practice.` },
+            { p: `That is the conceptual leap already made in Europe before 1492: religious identity, which conversion can change, is reinterpreted as descent, which it cannot. What the Americas supplied was a colonial society of enormous mixed population in which to apply the doctrine at scale, with African enslavement supplying a category defined explicitly by heritable status. Trace it that way and you have a causal chain rather than an assertion that racism appeared.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Descent recorded as legal status. <em>The mechanism is that a colonial state assigns a category at baptism, records it in a parish register that follows the person for life, and attaches office-holding, guild membership, tribute liability, dress and marriage rules to it, which converts ancestry from a fact about a family into an enforceable legal position that no amount of achievement can escape.</em>`,
+        limit: `It was negotiable in practice, through wealth, reputation and the purchasable gracias al sacar, so the neat taxonomy of the casta paintings describes an ideal rather than how the society ran.`,
+        comparison: `Against the <em>Ottoman millet</em> in section 01: both are legal hierarchies of subordinate groups, and the difference is the axis. A millet is defined by religion, so conversion moves a person between categories and the boundary is a belief. A casta is defined by descent, so nothing a person does moves them, and that is precisely what makes this the new thing in the period.`
+      },
+      terms: [
+        ['Casta', 'The Spanish American system of legal categories assigned by ancestry, carrying specific disabilities and obligations.'],
+        ['Peninsular and criollo', 'Spaniards born in Spain and in the Americas; the second were wealthy and excluded from the highest offices by birthplace alone.'],
+        ['Limpieza de sangre', 'Iberian purity of blood, which excluded people of Jewish or Muslim descent regardless of their own faith, the direct ancestor of casta.'],
+        ['Gracias al sacar', 'The purchasable royal dispensation reclassifying a person of mixed descent as white, proof that the category was legal rather than natural.'],
+        ['Casta painting', 'The eighteenth-century genre depicting category combinations and their offspring, a rationalized ideal rather than a record of practice.']
+      ]
+    },
+
+    // ── 04 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'gender',
+      num: '04',
+      accent: 'oxide',
+      name: 'Why the Hierarchy Ran Through Women',
+      navLabel: 'Gender',
+      dates: 'c. 1520 to 1800 &nbsp;·&nbsp; Descent, honor, and law',
+      thesis: `A hierarchy based on ancestry has to control reproduction, because ancestry is produced by it. That single structural fact explains most of what colonial law had to say about women, and it is why gender cannot be a paragraph appended to the end of this topic.`,
+      parts: [
+        {
+          heading: 'The demographic starting point',
+          blocks: [
+            { p: `Early Spanish migration to the Americas was overwhelmingly male, and conquest and colonization produced sexual relationships across the whole range from formal marriage to sustained concubinage to systematic rape. Within a generation there was a large mixed population, which is where the mestizo category comes from and why it grew so fast. Malintzin, the interpreter of the Topic 4.4 chapter, is the emblematic and contested figure here, read variously as traitor, victim and founder.` },
+            { p: `A society sorting people by ancestry, with a rapidly growing mixed population, needs rules about which unions are permitted, which children are legitimate, and who inherits. That is not incidental to the casta system; it is the machinery that keeps it running.` }
+          ]
+        },
+        {
+          heading: 'What the law did with that',
+          blocks: [
+            { p: `Three instruments are worth naming. <b>Legitimacy</b> determined inheritance and access to offices and religious orders, so a child recognized by a Spanish father could enter positions closed to one who was not, which put enormous weight on formal acknowledgment. <b>Honor</b>, meaning a family's public standing, was located specifically in the sexual conduct of its women, which is why elite women's movement, dress and marriage were closely governed, and why convents functioned as respectable places for women outside marriage. And <b>marriage regulation</b> made the descent rules explicit: the Pragmática of <span class="num">1776</span> required parental consent for marriages the family judged unequal and gave legal force to blocking them.` },
+            { p: `The burdens were sharply unequal by category. Elite Spanish and criolla women were confined and protected. Indigenous, mestiza and African-descended women worked in fields, mines, markets and Spanish households, had far less protection from sexual coercion, and were often heads of their own households. And under slavery, the rule that a child followed the status of the mother made enslaved women's reproduction the mechanism by which slavery perpetuated itself, which is the harshest example in the course of a legal system placing an entire institution on women's bodies.` },
+            { p: `Autonomy existed and should be named. Indigenous and mixed-descent women were prominent in market trading in Mexico and the Andes and controlled real income. Colonial courts heard suits by women over property, dowry, inheritance, and marriage promises, and women brought them and won. Widows ran estates and businesses. Convents held property, educated women and were among the largest lenders in some colonial cities.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that colonization made women's position worse everywhere, and do not write that women in these societies simply lacked agency. Both are too flat to score. The accurate claim is that colonial law made a woman&rsquo;s position depend on her category as much as on her sex, so a criolla and an enslaved woman lived under arrangements that were not versions of the same thing. And in specific documented respects colonization reduced authority that Indigenous women had held: Andean and Mesoamerican societies gave women defined roles in landholding, market activity, ritual and parallel lines of descent, and Spanish law substituted a single male-headed household model on top of them. Name the category, name the change, give the example.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Reproduction as the enforcement point of a descent hierarchy. <em>The mechanism is that a system assigning legal status by ancestry can only be maintained by controlling which unions occur and which children are recognized, so it regulates marriage, legitimacy and women&rsquo;s conduct directly, and under slavery it makes status follow the mother, which places the reproduction of the entire labor system on the bodies of the enslaved.</em>`,
+        limit: `Legal constraint is not the whole picture. Women traded, litigated, inherited, ran estates and headed households, and colonial court records are full of them using the system against the people who administered it.`,
+        comparison: `Against <em>Confucian family law</em> in Topic 1.1 and Topic 3.2: both subordinate women within a patriarchal household, but the Chinese hierarchy runs through generation, seniority and gender within a lineage, while the Spanish American one runs through ancestry across categories. One asks where you sit in your family; the other asks who your grandparents were.`
+      },
+      terms: [
+        ['Legitimacy', 'Formal recognition of a child, which decided inheritance and access to offices and religious orders.'],
+        ['Honor', 'A family\'s public standing, located in the sexual conduct of its women, which is why their movement and marriage were governed.'],
+        ['Pragmatica of 1776', 'The law requiring parental consent for unequal marriages, giving families legal power to enforce the descent hierarchy.'],
+        ['Status follows the mother', 'The rule making a child of an enslaved woman enslaved, which made slavery self-perpetuating through reproduction.'],
+        ['Convent', 'A respectable institution for women outside marriage, which held property, educated women and functioned as a major colonial lender.']
+      ]
+    },
+
+    // ── 05 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'continuity',
+      num: '05',
+      accent: 'gold',
+      name: 'One Continuity and One Change',
+      navLabel: 'Continuity and change',
+      dates: 'c. 1450 to 1800 &nbsp;·&nbsp; The argument',
+      thesis: `The success criteria ask for a continuity and a genuine change, and there is a right answer to both. Hierarchy and unfree labor are the continuity, and they are ancient. Ancestry as the legal axis is the change, and it is datable.`,
+      parts: [
+        {
+          heading: 'The continuities',
+          blocks: [
+            { p: `<b>Stratification itself continued.</b> Every society in this course before 1450 sorted people: Song China by degree-holding and lineage, as the Topic 1.1 chapter shows; South Asia by varna and jati; Mesoamerica and the Andes by noble and commoner lines; Europe by estate. Colonial societies were hierarchical because their predecessors were, and writing "colonialism introduced hierarchy" is simply wrong.` },
+            { p: `<b>Indigenous elites often kept their position.</b> Spain governed through them deliberately. Andean <em>kurakas</em> and Mesoamerican noble lineages retained land, titles and authority as intermediaries who organized tribute and labor for the colonial state, some of them retaining privileges into the eighteenth century, and Tupac Amaru II, who led the great Andean rising of <span class="num">1780</span>, was an Inca-descended kuraka. A hierarchy that predated the Spanish continued inside the one they built.` },
+            { p: `<b>Unfree labor continued.</b> Slavery, serfdom, corvee and debt bondage existed across Afro-Eurasia and the Americas long before this period, as Unit 2 and Unit 3 show, and Russian serfdom deepened during exactly these centuries. Coerced labor is not what is new about the Atlantic world.` }
+          ]
+        },
+        {
+          heading: 'The change, stated precisely',
+          blocks: [
+            { p: `What is new is the <b>axis</b>. Earlier hierarchies sorted people by birth into a rank, by religion, by occupation, by legal estate. Most of them were closed in practice and open in principle: a convert changed status, a degree changed status, manumission changed status, and the boundary was something a person could in some circumstances cross.` },
+            { p: `The colonial systems of this period made ancestry the axis, in law, with records. That is a different kind of category, because nothing a person does alters their descent. And it was built by a traceable route: limpieza de sangre in Iberia reinterpreted religious identity as heritable, colonization supplied a large mixed population to sort, and Atlantic slavery supplied a status that was permanent, heritable and increasingly tied to African ancestry specifically. By the eighteenth century Atlantic societies had done something no earlier society in this course had done, which is to make ancestry the primary determinant of legal status across a whole population.` },
+            { p: `The qualification that keeps this honest: the system was negotiable, the gracias al sacar was for sale, and category boundaries were argued about constantly. But a hierarchy you can sometimes buy your way across is still a hierarchy defined by something you cannot change by any other means, and it is the ancestor of the racial categories of the nineteenth and twentieth centuries in a way that varna, estate and millet are not.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Changing the axis rather than the shape. <em>The mechanism is that a society can keep the same number of ranks and the same distance between top and bottom while changing what decides who goes where, and moving that decision from religion or occupation, which a person can sometimes change, to descent, which nobody can, converts a steep hierarchy into a closed one without altering its shape at all.</em>`,
+        limit: `The closure was never total. Wealth, patronage, reputation and a purchasable dispensation moved individuals, and the categories were contested in the courts throughout.`,
+        comparison: `Against <em>varna and jati</em> in Topic 1.6: South Asian caste is also hereditary and also carries occupational and marital rules, so it is the strongest counterexample to any claim that hereditary hierarchy was invented here. The difference worth writing is that caste developed over many centuries within one society, while casta was legislated within decades by a colonial state to sort a population its own conquest had created.`
+      },
+      terms: [
+        ['Stratification', 'The sorting of a society into ranks, universal before this period and therefore the continuity rather than the change.'],
+        ['Kuraka', 'An Andean hereditary local lord retained by Spain as an intermediary, evidence of Indigenous elites persisting inside colonial rule.'],
+        ['Axis of hierarchy', 'What decides a person\'s rank, which shifted in this period from religion, occupation and estate to descent.'],
+        ['Racialization', 'The process by which ancestry became the legal basis of status, the genuine change of the period.'],
+        ['Tupac Amaru II', 'The Inca-descended kuraka who led the 1780 Andean rising, a continuity of Indigenous nobility and a challenge to the system at once.']
+      ]
+    }
+  ],
+
+  closing: {
+    heading: 'Building an Answer That Scores',
+    navLabel: 'Building a comparison',
+    intro: `Each card is a full comparison or argument: the claim, the specific evidence, and the reason. The last one is the continuity-and-change answer the success criteria ask for, so learn its shape.`,
+    pairs: [
+      {
+        category: 'Comparison',
+        title: 'Both empires refused uniformity, in opposite directions',
+        body: `The Ottoman millet system recognized Greek Orthodox, Armenian and Jewish communities as self-governing in family law, education and internal justice, held their religious authorities responsible for obedience and taxes, and collected the jizya, which bought order and revenue without building parallel institutions; Bayezid II received Jews expelled from Spain in 1492 and Salonica became a majority-Jewish city. The Qing, about a million Manchus ruling over a hundred million Han, kept the Confucian examinations and staffed the bureaucracy with Han officials while fencing themselves off through the banner system, dual appointments, marriage restrictions and a closed Manchuria. One majority accommodated minorities beneath it; one minority protected itself from the majority above which it sat.`
+      },
+      {
+        category: 'Institutions',
+        title: 'A category you can buy is a category doing economic work',
+        body: `Casta status was assigned at baptism, recorded in parish registers and attached to specific consequences: restricted offices and ecclesiastical posts, guild and university exclusions on purity-of-descent grounds, tribute liability for Indios and free people of African descent, sumptuary rules, and the Pragmatica of 1776 letting families block unequal marriages. Yet the crown sold the gracias al sacar, a dispensation legally reclassifying a person of mixed descent as white. If ancestry were an unalterable natural fact a fee could not touch it, so the sale is proof that casta was a legal and social status rather than a biological one, and that it was available to the rich.`
+      },
+      {
+        category: 'Structure',
+        title: 'A descent hierarchy has to regulate reproduction, so it regulates women',
+        body: `Status assigned by ancestry can only be maintained by controlling which unions occur and which children are recognized, which is why colonial law concentrated on legitimacy, on family honor located in women&rsquo;s sexual conduct, and on marriage approval under the Pragmatica of 1776. Under slavery the rule that a child followed the mother&rsquo;s status made enslaved women&rsquo;s reproduction the mechanism by which the labor system renewed itself. The burden fell by category rather than by sex alone: criolla women were confined and protected while Indigenous, mestiza and African-descended women worked in fields, markets and households with far less protection, and Spanish law replaced Andean and Mesoamerican arrangements that had given women defined roles in landholding, markets and descent.`
+      },
+      {
+        category: 'Continuity and change',
+        title: 'The hierarchy kept its shape and changed its axis',
+        body: `Stratification is the continuity: Song China sorted by degree and lineage, South Asia by varna and jati, the Andes by noble and commoner lines, Europe by estate, and Spain governed through Andean kurakas and Mesoamerican nobles who kept land and authority, with Tupac Amaru II leading the 1780 rising as an Inca-descended kuraka. Unfree labor is a second continuity, and Russian serfdom deepened in exactly these centuries. The change is the axis. Iberian limpieza de sangre had already reinterpreted religious identity as heritable descent; colonization supplied a large mixed population to sort and Atlantic slavery supplied a permanent heritable status tied to African ancestry, and by the eighteenth century legal position across a whole society was determined by something no achievement could alter.`
+      }
+    ]
+  }
+};

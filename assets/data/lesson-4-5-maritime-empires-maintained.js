@@ -184,6 +184,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map, explain how the silver economy connected three continents. What role did Chinese demand for silver play in driving the entire system? What does this reveal about Asia's role in the global economy during this period?"
   },
 
+  deepReading: {
+    title: "What Held It Together",
+    desc: "A textbook-depth companion on the economics: mercantilism derived from its premise, the silver chain from Potosi to Canton and why a Ming tax reform set the price, the real shape of the Atlantic system, creolization as creation under constraint, and the trade deficit that defined Europe in Asia. Optional, and the strongest single corrective to a Unit 4 essay.",
+    url: "deep-reading-topic-4-5-maritime-empires-maintained.html"
+  },
+
   first10: {
     title: 'First & 10: The Labor of Empire',
     embedUrl: 'first-and-10-topic-4-5-maritime-empires-maintained-capture.html?v=response-id-fix-v1',
