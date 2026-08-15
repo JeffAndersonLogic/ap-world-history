@@ -146,6 +146,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map and your knowledge, explain how British financial investment created economic dependencies in Latin America and the Ottoman Empire without formal colonialism. What specific financial mechanisms produced these dependencies? How does the geographic pattern of British investment by 1900 reveal the structure of the global economy that industrial capitalism created?"
   },
 
+  deepReading: {
+    title: "Somebody Else Carries the Risk",
+    desc: "A textbook-depth companion on what an investor faced before limited liability and what the Companies Act of 1862 changed, what a stock exchange and an investment bank actually do, why free trade was the policy of the cheapest producer, and how a loan became a government in Egypt, the Ottoman empire and the treaty ports. Optional, and the bridge from this unit into Unit 6.",
+    url: "deep-reading-topic-5-7-economic-developments-and-innovations.html"
+  },
+
   first10: {
     title: 'First & 10: The Free Market',
     embedUrl: 'first-and-10-topic-5-7-economic-developments-and-innovations-capture.html?v=response-id-fix-v1',

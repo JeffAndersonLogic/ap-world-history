@@ -159,6 +159,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map and your knowledge, compare the political responses to industrialization in at least two regions. What specific reforms did governments enact, and why did they enact them? Were government reforms driven primarily by moral concern for workers, fear of revolution, or political calculation? What does the pattern of reform suggest about the relationship between industrial class conflict and political change?"
   },
 
+  deepReading: {
+    title: "One Question, Five Answers",
+    desc: "A textbook-depth companion that defines the two classes structurally and then runs one question, what causes industrial poverty and what is the remedy, across liberalism, conservatism, utopian socialism and Marxism, before turning to what governments actually legislated, from the Factory Acts and the workhouse to Bismarck&rsquo;s pensions. Optional, and useful when a checkpoint asks you to compare ideologies.",
+    url: "deep-reading-topic-5-6-industrialization-government-and-society.html"
+  },
+
   first10: {
     title: 'First & 10: The Class Question',
     embedUrl: 'first-and-10-topic-5-6-industrialization-government-and-society-capture.html?v=response-id-fix-v1',

@@ -158,6 +158,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map, explain how geography shaped both the spread of Enlightenment ideas and their limits. Why were Enlightenment ideas most accessible to educated Europeans, and hardest to access for enslaved Africans in the Americas? What does this geographic pattern reveal about the relationship between Enlightenment universalism and Enlightenment practice?"
   },
 
+  deepReading: {
+    title: "Where Authority Comes From",
+    desc: "A textbook-depth companion on six Enlightenment arguments and what each one licenses, how banned books reached readers through a cross-border smuggling trade, why the exclusions of women and enslaved people were built into the theory rather than appended to it, and what Wollstonecraft, de Gouges, Equiano and Haiti did with a universal claim once it existed in print. Optional, and useful when a checkpoint asks you to explain a thinker rather than name one.",
+    url: "deep-reading-topic-5-1-enlightenment.html"
+  },
+
   first10: {
     title: 'First & 10: The Age of Reason',
     embedUrl: 'first-and-10-topic-5-1-enlightenment-capture.html?v=response-id-fix-v1',

@@ -44,12 +44,20 @@ should know what kind of box they are looking at before reading a word of it.
 ### Exceptions are real, and they go in the checker
 
 Proper nouns, titles of works and direct quotations keep their source's
-spelling. *Report on the Sanitary Condition of the Labouring Population* is a
-title. The *Statute of Labourers* of 1351 is the name of an English statute and
-is the one exception currently in the list. "The British Labour government" is a
-name. None of them is a mistake. Add the
-exact string to `ALLOWED_STRINGS` in `scripts/check-style.js` with the reason,
-rather than weakening a rule so that a real error can slip past it later.
+spelling. Four are currently in the list: the *Statute of Labourers* of 1351,
+the title of Chadwick's 1842 *Report on the Sanitary Condition of the Labouring
+Population*, the Labour Representation Committee of 1900, and the Labour Party.
+None of them is a mistake. Add the exact string to `ALLOWED_STRINGS` in
+`scripts/check-style.js` with the reason, rather than weakening a rule so that a
+real error can slip past it later.
+
+An exemption covers **every** occurrence of its phrase in a string, not the
+first. Matching on `indexOf` alone let a paragraph name the Labour Party once
+and then flagged it the second time, in a sentence identical to one that had
+just passed, and the fix a writer reaches for when that happens is to stop
+naming the thing. The exemption is still narrow: it covers only the span of the
+allowed phrase itself, so a bare "labour" elsewhere in the same sentence still
+fails.
 
 ### What the checker does not cover, and why
 

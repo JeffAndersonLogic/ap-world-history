@@ -147,6 +147,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map and your knowledge, explain the relationship between industrial technology in Europe and North America and resource extraction in Asia, Africa, and Latin America. What specific technologies drove demand for specific resources? What labor systems were used to extract these resources? What does this pattern reveal about who benefited from industrialization and who bore its costs?"
   },
 
+  deepReading: {
+    title: "The Machines That Needed Each Other",
+    desc: "A textbook-depth companion writing the technologies as a chain of bottlenecks rather than a list, from flooded mines to Bessemer steel to the telegraph, and then the environmental half: the smoke where the factories were, and the guano, rubber and coerced labor that produced the raw materials somewhere else. Optional, and useful when a checkpoint asks how one technology enabled another.",
+    url: "deep-reading-topic-5-5-technology-of-industrialization.html"
+  },
+
   first10: {
     title: 'First & 10: The Iron Road',
     embedUrl: 'first-and-10-topic-5-5-technology-of-industrialization-capture.html?v=response-id-fix-v1',

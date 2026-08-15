@@ -142,6 +142,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map, explain the relationship between geography and industrialization. Which features of Britain's geography were most important for enabling industrialization? What would have been different if Britain's coal deposits had been in the interior, far from navigable water?"
   },
 
+  deepReading: {
+    title: "Why It Started There",
+    desc: "A textbook-depth companion that tests six candidate causes against places that had each one and did not industrialize, then explains why the steam engine was first built where its own waste fuel was free, why Arkwright&rsquo;s real invention was the working day, and what the Luddites were actually objecting to. Optional, and useful when a checkpoint asks why Britain first.",
+    url: "deep-reading-topic-5-3-industrial-revolution-begins.html"
+  },
+
   first10: {
     title: 'First & 10: The Age of Steam',
     embedUrl: 'first-and-10-topic-5-3-industrial-revolution-begins-capture.html?v=response-id-fix-v1',

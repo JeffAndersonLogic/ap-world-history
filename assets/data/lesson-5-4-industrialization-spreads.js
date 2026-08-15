@@ -141,6 +141,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map, explain the geographic pattern of industrialization. What do the regions that industrialized have in common? What do the regions that did not industrialize have in common? How does the concept of 'political sovereignty' help explain this geographic pattern?"
   },
 
+  deepReading: {
+    title: "Who Got to Industrialize",
+    desc: "A textbook-depth companion on why going second is a different problem from going first, the Zollverein and the German model, Meiji Japan&rsquo;s deliberate program and the land tax that paid for it, and the half most answers skip: India, Egypt and Latin America, and the tariff as the instrument that decided who could industrialize. Optional, and the strongest corrective available for this topic.",
+    url: "deep-reading-topic-5-4-industrialization-spreads.html"
+  },
+
   first10: {
     title: 'First & 10: Beyond Britain',
     embedUrl: 'first-and-10-topic-5-4-industrialization-spreads-capture.html?v=response-id-fix-v1',

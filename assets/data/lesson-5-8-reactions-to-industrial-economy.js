@@ -151,6 +151,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map and your knowledge, compare the geographic patterns of two reform movements, labor organizing and abolitionism. Where was each movement strongest? What explains the geographic concentration? What does comparing these two reform movements reveal about the relationship between political power, economic interest, and moral commitment in the industrial era?"
   },
 
+  deepReading: {
+    title: "Illegal, Then Inevitable",
+    desc: "A textbook-depth companion on why organizing was a crime and what that leaves a worker, the three American strikes and who broke them, four structural reasons Britain got a Labour Party and the United States did not, and the movements that shared a cause with labor, including the one connecting a Lancashire mill to a Mississippi plantation. Optional, and useful when a checkpoint asks why reform happened when it did.",
+    url: "deep-reading-topic-5-8-reactions-to-industrial-economy.html"
+  },
+
   first10: {
     title: 'First & 10: The Rising',
     embedUrl: 'first-and-10-topic-5-8-reactions-to-industrial-economy-capture.html?v=response-id-fix-v1',

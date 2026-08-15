@@ -76,8 +76,9 @@ const SPELLINGS = [
  */
 const ALLOWED_STRINGS = [
   'Statute of Labourers',  // title of the English statute of 1351
-  // 'Labouring Population',  // title of Chadwick's 1842 report
-  // 'British Labour government',  // name of a political party
+  'Labouring Population',  // title of Chadwick's 1842 sanitary report
+  'Labour Representation Committee',  // name of the 1900 body
+  'Labour Party',  // name of a political party
 ];
 
 /** A misconception note always carries this exact label. */
@@ -98,10 +99,20 @@ function context(text, index, span) {
   return (start ? '...' : '') + text.slice(start, end).replace(/\s+/g, ' ') + (end < text.length ? '...' : '');
 }
 
+/**
+ * Is this match inside an allowed proper noun or title?
+ *
+ * Every occurrence is checked, not only the first. Testing `indexOf` alone
+ * exempts a phrase the first time a paragraph names it and flags it the
+ * second, which reads as a spelling error in a sentence identical to one that
+ * just passed, and the fix a writer reaches for is to stop naming the thing.
+ */
 function exempt(text, index, span) {
   return ALLOWED_STRINGS.some(allowed => {
-    const at = text.indexOf(allowed);
-    return at !== -1 && index >= at && index + span <= at + allowed.length;
+    for (let at = text.indexOf(allowed); at !== -1; at = text.indexOf(allowed, at + 1)) {
+      if (index >= at && index + span <= at + allowed.length) return true;
+    }
+    return false;
   });
 }
 

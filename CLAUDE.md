@@ -237,11 +237,19 @@ Foundations is written, and it stops covering silently.
 
 ## The eBook
 
-Five volumes exist: `ebook/foundations.html`, five chapters; `ebook/unit-1.html`
+Six volumes exist: `ebook/foundations.html`, five chapters; `ebook/unit-1.html`
 and `ebook/unit-2.html`, seven each, one per topic; `ebook/unit-3.html`, four,
-because Unit 3 has four topics; and `ebook/unit-4.html`, eight. A volume carries
-one chapter per topic, so its chapter count is a fact about the unit rather than
-a target.
+because Unit 3 has four topics; `ebook/unit-4.html`, eight; and
+`ebook/unit-5.html`, ten. A volume carries one chapter per topic, so its chapter
+count is a fact about the unit rather than a target, and chapter length is set so
+that the **volume** comes out comparable rather than the chapter: Unit 3's four
+chapters run six sections each and Unit 5's ten run four.
+
+**A two-digit topic number works and was not free.** Unit 5 has a Topic 5.10,
+the course's first, and `chapterNumber()` and `tocLabel()` in `ebook-page.js`
+both match `^topic-(\d+)-(\d+)`, so it renders as "5.10" rather than "5.1".
+Anything new that parses a slug must use `\d+` for the topic segment; `\d`
+silently truncates and the page still builds.
 
 The eBook is a **second surface on the chapter modules, not a second copy of the
 content.** Every chapter in a volume is the same

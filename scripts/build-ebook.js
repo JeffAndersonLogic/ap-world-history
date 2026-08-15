@@ -151,6 +151,28 @@ const VOLUMES = [
       { module: 'topic-4-7' },
       { module: 'topic-4-8' }
     ]
+  },
+  {
+    id: 'unit-5',
+    outputFile: 'ebook/unit-5.html',
+    blurb: `Revolutions: where authority comes from and who counted as the people, why industrialization began in one set of counties and was blocked everywhere else, and the five competing explanations of why an economy producing unprecedented wealth also produced unprecedented misery.`,
+    label: 'Unit 05',
+    docTitle: 'BeHistorical | Unit 5: Revolutions',
+    eyebrow: 'Unit 05 &nbsp;·&nbsp; The eBook &nbsp;·&nbsp; AP World History: Modern',
+    titleHtml: '<em>Revolutions</em>',
+    deck: `Ten chapters for ten topics, and one argument connecting the political half to the industrial one. A set of writers claimed that authority comes from the governed and that rights belong to people as such, and then wrote those claims down, where everyone they excluded could read them. The rest of the unit is what happened as revolutionaries, the enslaved, nationalists, women and factory workers each held that principle to its own terms, against states that were simultaneously being remade by coal.`,
+    contents: [
+      { module: 'topic-5-1' },
+      { module: 'topic-5-2' },
+      { module: 'topic-5-3' },
+      { module: 'topic-5-4' },
+      { module: 'topic-5-5' },
+      { module: 'topic-5-6' },
+      { module: 'topic-5-7' },
+      { module: 'topic-5-8' },
+      { module: 'topic-5-9' },
+      { module: 'topic-5-10' }
+    ]
   }
 ];
 

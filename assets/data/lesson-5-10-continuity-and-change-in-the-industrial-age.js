@@ -139,6 +139,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Across the world of Unit 5, where do you see the deepest change industrialization caused, and where do you see the strongest evidence that things stayed the same?"
   },
 
+  deepReading: {
+    title: "The Question That Runs Both Ways",
+    desc: "A textbook-depth companion on three changes written with their mechanisms, three continuities with the reason each counts as one, four questions that decide which side any fact belongs on, and a full thesis written out with its concession attached. Optional, and the chapter to read before writing the unit essay.",
+    url: "deep-reading-topic-5-10-continuity-and-change-in-the-industrial-age.html"
+  },
+
   first10: {
     title: "First & 10: How Much Really Changed?",
     embedUrl: "first-and-10-topic-5-10-continuity-and-change-in-the-industrial-age-capture.html?v=response-id-fix-v1",

@@ -172,6 +172,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map, explain why the Haitian Revolution happened in Saint-Domingue rather than somewhere else. What specific features of Saint-Domingue's situation, its population, its wealth, its relationship to the French Revolution, made it uniquely explosive? What does this geographic and demographic specificity reveal about the causes of the Haitian Revolution?"
   },
 
+  deepReading: {
+    title: "Who Counted as the People",
+    desc: "A textbook-depth companion on why all four Atlantic revolutions began in a treasury, what each borrowed from the Enlightenment and whom each left out, Haiti as three revolutions at once and the indemnity France charged for it, and the mechanism by which nationalism leaves a multiethnic empire no good answer. Optional, and the place to go before writing about any revolution in this unit.",
+    url: "deep-reading-topic-5-2-nationalism-and-revolutions.html"
+  },
+
   first10: {
     title: 'First & 10: The Revolutionary Atlantic',
     embedUrl: 'first-and-10-topic-5-2-nationalism-and-revolutions-capture.html?v=response-id-fix-v1',

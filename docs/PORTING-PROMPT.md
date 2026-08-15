@@ -306,6 +306,42 @@ and compiled into `ebook/unit-4.html`:
 - **Topic 4.7**, `topic-4-7.js`, "Writing Ancestry Into Law", 5 sections, ~4,900 words.
 - **Topic 4.8**, `topic-4-8.js`, "What Changed and What Did Not", 5 sections, ~4,600 words.
 
+**The Unit 5 volume is complete.** All ten chapters are on the working branch and
+compiled into `ebook/unit-5.html`:
+
+- **Topic 5.1**, `topic-5-1.js`, "Where Authority Comes From", 4 sections, ~4,300 words.
+- **Topic 5.2**, `topic-5-2.js`, "Who Counted as the People", 5 sections, ~5,100 words.
+- **Topic 5.3**, `topic-5-3.js`, "Why It Started There", 4 sections, ~4,300 words.
+- **Topic 5.4**, `topic-5-4.js`, "Who Got to Industrialize", 4 sections, ~4,500 words.
+- **Topic 5.5**, `topic-5-5.js`, "The Machines That Needed Each Other", 4 sections, ~4,300 words.
+- **Topic 5.6**, `topic-5-6.js`, "One Question, Five Answers", 4 sections, ~4,200 words.
+- **Topic 5.7**, `topic-5-7.js`, "Somebody Else Carries the Risk", 4 sections, ~4,500 words.
+- **Topic 5.8**, `topic-5-8.js`, "Illegal, Then Inevitable", 4 sections, ~4,900 words.
+- **Topic 5.9**, `topic-5-9.js`, "A City Built for a Quarter of Itself", 4 sections, ~4,700 words.
+- **Topic 5.10**, `topic-5-10.js`, "The Question That Runs Both Ways", 4 sections, ~4,300 words.
+
+**When several topics in a unit overlap, write the split down before writing the
+chapters.** Unit 5 has three topics that all touch class, reform and daily life,
+and without a rule they produce three chapters saying the same thing in three
+places. The rule adopted, and recorded in the header comment of `topic-5-6.js`
+so the next person finds it: **5.6 is ideas and the state**, the competing
+explanations of industrial poverty and what governments legislated; **5.8 is
+organized action**, unions against the law, abolition, and the reform movements
+as movements; **5.9 is lived experience**, what the classes were day to day and
+the physical city. Public health therefore appears in all three and differently:
+the sanitary crisis is 5.9's, the sanitary movement is 5.8's, and the legislation
+is 5.6's. Cross-reference across chapters rather than restating, and put the rule
+in a header comment rather than only in this file, because the person who breaks
+it will be reading the module and not the docs.
+
+**Unit 5's chapters carry two arguments forward.** Topic 5.1 establishes the
+move by which an excluded group holds a published principle to its own terms,
+and every later chapter names it, so a Unit 6 chapter about anticolonial
+nationalism should pick that up rather than introduce it. And Topic 5.4 argues
+that tariff sovereignty, not resources or capability, decided who industrialized,
+with Egypt after Balta Liman as the natural experiment; a Unit 6 chapter that
+explains the industrial gap by capability contradicts it.
+
 **An eight-topic unit gets shorter chapters, for the same reason a four-topic one
 gets longer ones.** The volume is the unit of length, not the chapter. Unit 4's
 eight chapters run four or five sections against Unit 3's six, and the two
@@ -353,12 +389,12 @@ paragraph. Whoever lands a chapter updates this list in the same commit.
 
 ### Still to write
 
-Foundations and Units 1, 2, 3 and 4 are complete. The next volume is another
+Foundations and Units 1, 2, 3, 4 and 5 are complete. The next volume is another
 unit: pick one, add a `VOLUMES` entry in `scripts/build-ebook.js`, and write its
-chapters against the same schema. Units 5 through 9 are unwritten, and Unit 5,
-revolutions, is the natural next one, because Topic 4.8 ends by naming the two
-developments that begin it, the Bengal diwani of 1765 and industrialization, and
-by insisting they belong to Unit 5 rather than to Unit 4.
+chapters against the same schema. Units 6 through 9 are unwritten, and Unit 6,
+consequences of industrialization, is the natural next one, because Topic 5.7
+ends on economic imperialism and debt administrations and Topic 5.4 ends on who
+was blocked from industrializing, which is where the new imperialism starts.
 
 **Foundations 0 is deliberately excluded.** It is course orientation and the six
 thinking skills, not history content, and its reading asks for a personal

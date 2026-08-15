@@ -151,6 +151,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Using the map and your knowledge, explain how the geography of the industrial city reflected BOTH the new class structure (KC-5.1.VI.A) AND the challenges of rapid urbanization (KC-5.1.VI.C). Where did each class live, and why did rapid, concentrated growth produce problems that slower-growing towns avoided?"
   },
 
+  deepReading: {
+    title: "A City Built for a Quarter of Itself",
+    desc: "A textbook-depth companion on what actually separated a clerk from a spinner, why separate spheres was an ideology a household had to be able to afford, why unplanned growth produces housing shortage and filth as arithmetic rather than as squalor, and the mechanism that made the water lethal. Optional, and the place to go for the why behind each urban challenge.",
+    url: "deep-reading-topic-5-9-society-and-the-industrial-age.html"
+  },
+
   first10: {
     title: 'First & 10: A New Kind of Society',
     embedUrl: 'first-and-10-topic-5-9-society-and-the-industrial-age-capture.html?v=response-id-fix-v1',
