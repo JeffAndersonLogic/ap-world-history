@@ -1,0 +1,358 @@
+'use strict';
+
+/**
+ * Topic 1.1, Song China: the deep reading.
+ *
+ * Why this exists. The Topic 1.1 First & 10 has to introduce the exam system,
+ * Neo-Confucianism, the economic revolution and the tribute relationships in
+ * one reading, which leaves each of them a paragraph. The success criteria ask
+ * a student to explain how Confucianism, the bureaucracy and the exams
+ * "maintained and justified" Song rule. Maintaining and justifying are two
+ * different jobs done by two different mechanisms, and a paragraph that names
+ * the exam cannot show either.
+ *
+ * What this chapter adds that the lesson cannot carry:
+ *
+ *   1. The exam as a working machine: three levels, sealed names, recopied
+ *      papers, quotas, and the cost of the years of study that decided who
+ *      could sit at all. "Merit" is the claim; the machinery is the evidence a
+ *      student needs in order to argue about the claim rather than repeat it.
+ *   2. The Chanyuan settlement of 1005 in its own right. A Song that pays the
+ *      Liao annually is the single most useful fact in the topic, because it
+ *      breaks the assumption that the richest state in the world was also the
+ *      strongest one.
+ *   3. Where Neo-Confucianism landed on women, which is the exclusion evidence
+ *      the checkpoints ask for and the reading has no room to supply.
+ *
+ * Two dates the lesson data leaves implicit are made explicit here because
+ * students routinely lose points on them: Zhu Xi's commentaries became the exam
+ * orthodoxy in 1313, under the Yuan and a century after his death, and the
+ * Southern Song is 1127 onward, not a separate dynasty.
+ */
+
+module.exports = {
+  topicKey: 't1-1',
+  slug: 'topic-1-1-song-china',
+  sourceFile: 'deep-reading-topic-1-1-song-china.html',
+  lessonFile: 'lesson-1-1-song-china.html',
+
+  docTitle: 'BeHistorical | Deep Reading | Topic 1.1: The Examined State',
+  eyebrow: 'Topic 1.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
+  titleHtml: 'The Examined <em>State</em>',
+  deck: `Song China was the richest, most urban, most literate society on earth, and it spent its whole existence paying its neighbors not to invade. This chapter takes the four things the topic asks you to explain, the exam, the philosophy, the economy and the frontier, and shows the working parts of each, so that when a question asks <em>how</em> Confucianism held the state together you have a mechanism rather than a label.`,
+  meta: ['Five sections', 'One machine at a time', 'Read alongside the First & 10'],
+  footerNote: 'Topic 1.1 &nbsp;·&nbsp; The Examined State &nbsp;·&nbsp; Companion to the First &amp; 10',
+
+  howTo: {
+    heading: 'How to Use This',
+    intro: `The sections build one argument in order, so reading them in sequence is worth more than picking one. Section 01 is the problem the Song was founded to solve, sections 02 to 04 are the three answers it built, and section 05 is what those answers cost.`,
+    steps: [
+      `<b>01 The founding problem:</b> why a general took the throne and then spent his reign making generals harmless.`,
+      `<b>02 The exam:</b> how the machinery actually worked, and who it still shut out.`,
+      `<b>03 Neo-Confucianism:</b> what Zhu Xi added, and where it landed on women.`,
+      `<b>04 The economy:</b> rice, iron, coin and cities, and why the state got richer than its army got stronger.`,
+      `<b>05 The frontier:</b> the payments to Liao and Xi Xia, the loss of the north in 1127, and the Mongol conquest.`,
+      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can actually write.`
+    ]
+  },
+
+  empires: [
+    // ── 01 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'founding',
+      num: '01',
+      accent: 'gold',
+      name: 'The Problem the Song Was Built to Solve',
+      navLabel: 'The founding problem',
+      dates: '907 to 976 CE &nbsp;·&nbsp; Tang collapse to Emperor Taizu',
+      thesis: `Every institution in this chapter is an answer to one question the Song founders could not stop asking: how do you stop the army from doing to you what you just did to somebody else?`,
+      parts: [
+        {
+          heading: 'The situation',
+          blocks: [
+            { p: `The Tang dynasty fell apart in <span class="num">907</span>, and the fifty-three years that followed are known as the Five Dynasties and Ten Kingdoms, a period in which China had five northern governments in half a century and most of them ended when a military commander took the throne from the last one. The pattern was not chaos for its own sake. Late Tang emperors had handed enormous power to regional military governors, and once a governor commanded the troops, collected the taxes and appointed the officials in his own region, nothing except his own calculation kept him loyal.` },
+            { p: `In <span class="num">960</span> the commander of the palace guard, Zhao Kuangyin, was proclaimed emperor by his own troops while on campaign. He took the throne as Emperor Taizu and founded the Song. He was, in other words, the sixth man in fifty-three years to do exactly this, and he knew it. The whole design of the Song state follows from his determination to be the last.` }
+          ]
+        },
+        {
+          heading: 'The answer: civil officials over generals, permanently',
+          blocks: [
+            { p: `Taizu's solution was not to abolish the army but to subordinate it. Command was split so that the officer who trained a unit was not the officer who led it in the field. Troops were rotated between garrisons so that a commander never held one army long enough for it to become his. Above all, the men who set military policy, controlled supply and approved campaigns were <span class="kt">civil officials</span>, degree holders from the examination system, not soldiers. The Song did not merely have a bureaucracy alongside its army. It put the bureaucracy on top of the army and kept it there for three centuries.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know, and how much to trust it',
+              html: `The famous story is that Taizu invited his senior generals to a banquet, told them he could not sleep for fear of what their troops might do to him one day, and persuaded them to resign their commands in exchange for wealth and honorable retirement. It is a wonderful anecdote and it appears in sources written a century or more later, most influentially in Sima Guang's collected notes. Historians treat the banquet itself as probably embroidered. What is not in doubt is the policy: the senior commands were dismantled, the men who held them retired rich, and no Song general ever overthrew a Song emperor. Use the policy as your evidence and mention the story as a story.`
+            } },
+            { p: `The cost of that arrangement is the theme of section 05, and it is the single most useful thing to carry out of this chapter. A state that has made it structurally difficult for a general to seize power has also made it structurally difficult for a general to win a war quickly. The Song chose internal stability over military initiative, deliberately, with its eyes open, and then spent three hundred years paying the bill.` }
+          ]
+        },
+        {
+          heading: 'Legitimacy: ruling as the civilized center',
+          blocks: [
+            { p: `The Song claimed authority in the language every Chinese dynasty used, the <span class="kt">Mandate of Heaven</span>, under which Heaven grants rule to a just ruler and withdraws it from an unjust one. The claim is old, but the Song faced a version of it no earlier dynasty had: for most of its existence it did not control the northern heartland where Chinese civilization had begun, and after <span class="num">1127</span> its capital was in the south, with a foreign dynasty ruling the old capitals. If Heaven grants rule to the legitimate holder of the realm, what does it mean to be the legitimate holder of half of it?` },
+            { p: `The answer Song thinkers built is important, because it is a claim about culture rather than territory. Legitimacy came from being the civilized center: the place that kept the classics, the rites, the script and the moral order, whoever happened to occupy the northern plains this century. That argument made the scholar-official the guardian of the dynasty's legitimacy rather than merely its administrator, which raised the standing of the exam system and the philosophy it taught to a height neither had reached before.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Civil supremacy over the military. <em>The mechanism is not "the Song liked scholars." It is that command was deliberately fragmented, commanders rotated, and every strategic decision routed through examination-degree civil officials, so that no general could assemble the personal army that had produced five coups in fifty-three years.</em>`,
+        limit: `The same design left the Song slow to raise, command and commit force, which is why it bought peace on the northern frontier rather than winning it. Stability and capability were traded against each other on purpose.`,
+        comparison: `Against <em>Europe</em> in the same period: Song China solved the warlord problem with a salaried, examined, rotating bureaucracy, while European monarchs still granted land to armed nobles and got the warlord problem permanently. Same problem, opposite answers.`
+      },
+      terms: [
+        ['Mandate of Heaven', 'The claim that Heaven grants authority to a just ruler and withdraws it from an unjust one, making rebellion evidence of a lost mandate rather than of a strong rebel.'],
+        ['Civil supremacy', 'The Song arrangement placing examination-qualified civil officials in authority over military commanders at every level above the field.'],
+        ['Scholar-official', 'A man who held an examination degree and served in the imperial administration, the Song ruling class and the guardian of its legitimacy.'],
+        ['Five Dynasties', 'The fifty-three years of short-lived northern regimes between the Tang collapse in 907 and the Song founding in 960, most of them ended by a general.']
+      ]
+    },
+
+    // ── 02 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'exams',
+      num: '02',
+      accent: 'rust',
+      name: 'The Examination System',
+      navLabel: 'The exam',
+      dates: '973 onward &nbsp;·&nbsp; The palace exam to the late Song',
+      thesis: `The Song did not invent the civil service examination. It made it the main road into power, and then rebuilt the procedure so that a grader could not tell whose paper he was marking. Both halves matter, and students usually only know the first.`,
+      parts: [
+        {
+          heading: 'How the system worked, level by level',
+          blocks: [
+            { p: `A candidate faced three stages. The prefectural examination, held in his home prefecture, qualified him to travel to the capital. The departmental examination at the capital, run by the Ministry of Rites, produced the short list. The <span class="kt">palace examination</span>, added under Emperor Taizong in <span class="num">973</span>, ranked the successful candidates and was held in the emperor's name. That third stage is not a formality, and it is the part students most often leave out. Because the emperor personally conferred the final ranking, every new official owed his place to the throne rather than to the minister who had graded him, which cut off the patronage networks that turn a bureaucracy into a set of factions.` },
+            { p: `The content was the Confucian classics, together with commentary, history, and policy essays on real administrative problems. A candidate was expected to have memorized a body of text running to hundreds of thousands of characters and to be able to argue from it about a flood, a famine or a frontier. It was not a test of technical skill. It was a test of whether a man had spent his youth absorbing a moral and literary tradition, which meant the state recruited officials who had already internalized the ideology they would go on to enforce.` }
+          ]
+        },
+        {
+          heading: 'The anti-cheating machinery, which is the real evidence',
+          blocks: [
+            { p: `From <span class="num">992</span> the papers at the capital were submitted with the candidate's name sealed, so the grader marked an anonymous script. That was not enough, because an examiner could still recognize the handwriting of a candidate from his own circle. So from <span class="num">1015</span> a corps of clerks recopied every paper before it reached a grader, and the graders read copies in an anonymous hand. Papers were marked independently by more than one examiner. Examiners were locked into the compound for the duration.` },
+            { p: `Learn these procedures, because they are the argument. Anyone can assert that the Song exam was meritocratic. A student who can say that names were sealed in 992, that papers were recopied from 1015 so handwriting could not be recognized, and that the emperor conferred the final rank himself, is describing a state that spent real money to make its own officials unable to favor their friends. That is the difference between a claim and evidence for a claim.` },
+            { p: `The scale changed too. The Tang had produced a few dozen degree holders in a good year. The Song produced them in the hundreds annually, and by the twelfth century several hundred thousand men were sitting prefectural examinations across the empire in a single examination round, competing for a few hundred places. The pass rate at the top was brutal, on the order of one in a hundred or worse, and the men who failed did not vanish: they became local teachers, private secretaries, clerks and landlords, which spread the values of the examined class far beyond the men who actually held office.` }
+          ]
+        },
+        {
+          heading: 'Who it still shut out',
+          blocks: [
+            { p: `The examination was formally open to almost all adult men, and that formal openness is real and worth saying. Merchants' sons were admitted, which would have been unthinkable in many societies. What the system did not do is make the competition equal. Preparing took ten to twenty years of full-time study with a tutor, during which the candidate earned nothing. A family had to be able to lose a working adult for two decades and pay for books, paper, ink, travel and lodging at the capital. That is a wealth test administered before the merit test, and it is why the men who passed came overwhelmingly from the landholding <span class="kt">gentry</span>.` },
+            { p: `Women were excluded outright, in every prefecture, in every year, without exception. Half the population could not sit the examination that was the main route to office, income and honor in the most examined society on earth. When a checkpoint asks you for evidence of hierarchy or exclusion in Song China, this is the strongest single piece you have, and it costs one sentence.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that the exams "let anyone rise" or that they "created a merit-based society with no aristocracy." Both overshoot. The most careful modern studies of Song officeholding find that a substantial share of successful candidates came from families that already had officials in them, and that local elite families reproduced their position across generations by other means when a son failed. The accurate and far more impressive claim is narrower: the Song made education rather than birth the formal qualification for power, which was rare in the world of <span class="num">1200</span>, and the cost of that education kept the winners concentrated in one class anyway.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The examination system. <em>The mechanism is sealed names from 992, recopied papers from 1015, multiple independent graders, and a final ranking conferred by the emperor himself, which together produced officials who owed their careers to the throne rather than to a patron, and a state staffed by men who had spent twenty years internalizing its official ideology.</em>`,
+        limit: `Women were barred entirely, and the twenty unpaid years of preparation were a wealth test that ran before the merit test, so the gentry kept the offices while the state kept the language of merit.`,
+        comparison: `Against <em>Dar al-Islam</em> on recruiting administrators: the Song built an anonymous written competition, while the Delhi Sultanate and the Mamluks built their administrations out of imported military slaves whose loyalty came from having no local family at all. Both are answers to "how do I get servants who are not somebody else's clients."`
+      },
+      terms: [
+        ['Palace examination', 'The final examination stage, added in 973, at which the emperor personally conferred the ranking, so a new official owed his place to the throne.'],
+        ['Jinshi', 'The highest examination degree, the "presented scholar," which opened the senior ranks of the administration.'],
+        ['Gentry', 'The landholding families whose wealth allowed a son to study full time for two decades, and who therefore supplied most successful candidates.'],
+        ['Meritocracy', 'Selection by demonstrated ability rather than birth. In Song China this is a real claim about the rules and a poor description of the outcomes.'],
+        ['Filial piety', 'The Confucian duty of respect and obedience owed to parents and ancestors, extended by analogy to the ruler, so that obedience to the state was framed as family virtue.']
+      ]
+    },
+
+    // ── 03 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'neoconfucian',
+      num: '03',
+      accent: 'iron',
+      name: 'Neo-Confucianism',
+      navLabel: 'Neo-Confucianism',
+      dates: 'c. 1050 to 1200 &nbsp;·&nbsp; The Cheng brothers to Zhu Xi',
+      thesis: `Buddhism had spent seven centuries asking questions Confucianism had no answer to. Neo-Confucianism is what happened when Song scholars built those answers into Confucianism itself, and the version they built ordered the family as tightly as it ordered the state.`,
+      parts: [
+        {
+          heading: 'The problem it solved',
+          blocks: [
+            { p: `Classical Confucianism was a teaching about conduct: how to be a good son, a good official, a good ruler. It had very little to say about what the universe is made of, why suffering exists, or what happens after death. Buddhism, which had spread across China from the first century CE onward, had detailed answers to all three, and by the Tang it had enormous monasteries, tax-exempt land and mass popular devotion. For a Confucian scholar this was not simply a rival faith. It was proof that his own tradition had a hole in it.` },
+            { p: `<span class="kt">Neo-Confucianism</span> filled the hole. Working from the eleventh century onward and synthesized by <span class="kt">Zhu Xi</span>, who lived from <span class="num">1130</span> to <span class="num">1200</span>, it argued that everything that exists consists of <em>li</em>, a pattern or principle, expressed in <em>qi</em>, material force. Every thing and every relationship has a correct pattern built into it, and the moral life is the work of clearing away selfish desire until you can perceive that pattern and act on it. The route to it was "the investigation of things," which meant sustained study of the classics, of history, and of the world.` }
+          ]
+        },
+        {
+          heading: 'Why this made the state stronger',
+          blocks: [
+            { p: `Look at what that does politically. If the hierarchy of ruler and subject, father and son, husband and wife is not a human custom but part of the pattern of the universe, then obeying it is not submission, it is alignment with reality, and disturbing it is not disagreement, it is disorder. <span class="kt">Filial piety</span>, the duty a son owes his father, becomes the model for the duty a subject owes the emperor, so every family in the empire was rehearsing the political order daily without anyone having to enforce it.` },
+            { p: `The teaching also gave the scholar-official a mission larger than his job. He was not a clerk processing tax returns; he was a man whose self-cultivation was continuous with the ordering of the world. Zhu Xi organized private academies, wrote a curriculum, and selected four short texts, the Four Books, as the core of moral education. That curriculum spread through the academies and the printing houses long before it was ever official.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Zhu Xi's commentaries did not become the required orthodoxy of the civil service examination during the Song. He was, for part of his career, out of favor, and his teaching was briefly proscribed. His commentaries were made the examination standard in <span class="num">1313</span>, under the Mongol Yuan dynasty, more than a century after his death, and they stayed the standard until <span class="num">1905</span>. Writing "the Song exams tested Zhu Xi's commentaries" is a date error that a reader who knows the period will catch. The accurate claim is that Neo-Confucianism took over Song intellectual life through academies and printing, and was made official later.`
+            } }
+          ]
+        },
+        {
+          heading: 'Where it landed on women',
+          blocks: [
+            { p: `Neo-Confucian writers put unprecedented emphasis on the separation of the domestic and public spheres and on the chastity of widows. Cheng Yi, one of the movement's founders, was asked whether a widow in poverty might remarry and replied that to starve to death is a small matter but to lose one's virtue is a great one. That sentence was quoted for centuries afterward as the standard.` },
+            { p: `It is worth being precise about what changed and when. Widow remarriage remained legally permitted and socially common through the Song itself, and women in this period could inherit and control property, including dowry, to a degree that later dynasties restricted. What the Song produced was the ideology; the harshest practice came later, as Ming and Qing states built cults and memorial arches around chaste widowhood. A student who says "Neo-Confucianism immediately crushed women's rights" has the direction right and the timing wrong, and timing is what the reader is checking.` },
+            { p: `<span class="kt">Foot binding</span> belongs here for the same reason. It appears among court dancers and elite households in the tenth and eleventh centuries and spreads through the elite during the Song, and it is exactly the kind of evidence a comparison question wants: a practice that made elite women physically less mobile, marked their family's status by their inability to work, and was maintained by mothers on daughters, so that the hierarchy reproduced itself inside the household without any official ever appearing.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Neo-Confucianism. <em>The mechanism is that it recast social hierarchy as cosmic principle, so obedience became alignment with the natural order rather than submission to power, and made filial piety in every household a daily rehearsal of obedience to the emperor. That is legitimacy produced by families rather than enforced by officials.</em>`,
+        limit: `Its emphasis on widow chastity and separate spheres, plus the spread of foot binding through elite households, is the clearest evidence that the Song's ordered society was ordered against women in particular.`,
+        comparison: `Against the <em>Christian Church</em> in Europe: both supplied a moral order that made an unequal social arrangement feel like the structure of reality, but the Church was an institution with its own land, courts and revenue that could oppose a king, while Neo-Confucianism was a teaching inside the state that made officials more loyal, not less.`
+      },
+      terms: [
+        ['Neo-Confucianism', 'The Song synthesis, systematized by Zhu Xi, that gave Confucian ethics a metaphysics of principle and material force and absorbed the questions Buddhism had been answering.'],
+        ['Zhu Xi', 'The scholar, 1130 to 1200, whose commentaries and Four Books curriculum became the standard of Chinese education, made official under the Yuan in 1313.'],
+        ['Foot binding', 'The practice of binding elite girls&rsquo; feet, spreading through the Song elite, which marked status by immobility and reproduced female subordination inside the household.'],
+        ['Investigation of things', 'Zhu Xi&rsquo;s method: sustained study of the classics and the world in order to perceive the principle behind them and act in accordance with it.'],
+        ['Four Books', 'The short Confucian texts Zhu Xi selected as the core curriculum, which shaped Chinese education for six centuries.']
+      ]
+    },
+
+    // ── 04 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'economy',
+      num: '04',
+      accent: 'oxide',
+      name: 'The Commercial Revolution',
+      navLabel: 'The economy',
+      dates: 'c. 1000 to 1250 &nbsp;·&nbsp; Champa rice to the Southern Song ports',
+      thesis: `Song China ran the largest economy on earth, with paper money, iron output Europe would not match for seven hundred years, and cities larger than any in the world. None of it bought a decisive army, and understanding why is the whole point of the section.`,
+      parts: [
+        {
+          heading: 'It starts with rice',
+          blocks: [
+            { p: `Around the year <span class="num">1000</span> a fast-ripening, drought-resistant rice strain from Champa, in what is now central Vietnam, entered the Song empire, and the government actively promoted its distribution in the early eleventh century. <span class="kt">Champa rice</span> matured in around sixty days rather than a hundred or more. That single agronomic fact allowed two harvests a year on land that had produced one, and on hillier, drier ground that had produced none.` },
+            { p: `The demographic result is the largest number in this chapter. China's population, which had hovered around fifty to sixty million for centuries, roughly doubled to something over a hundred million by <span class="num">1100</span>. More food meant more people; more people meant more workers who were not needed in the fields; and workers not needed in the fields are the raw material of cities, workshops, mines and armies. Every other development in this section runs downstream of the rice.` }
+          ]
+        },
+        {
+          heading: 'Iron, coal, and manufacturing at scale',
+          blocks: [
+            { p: `Song ironworks in the north used coal and coke to smelt ore at a scale no other economy approached; the best-known estimate puts annual output in the late eleventh century at over a hundred thousand tons, a figure Europe did not reach until the industrial revolution. That iron went into agricultural tools, nails, cooking pots, coins, armor and weapons, including the earliest gunpowder weapons: the fire lance, a bamboo or metal tube that threw flame and shrapnel, was in use in Song sieges by the twelfth century.` },
+            { p: `Shipbuilding matched it. Song junks carried watertight bulkheads, stern-post rudders, and the <span class="kt">magnetic compass</span>, whose use for navigation at sea is first clearly described in a Chinese text of <span class="num">1119</span>. Those three technologies are the reason a ship could sail out of sight of land in weather and still arrive, and they moved outward along the trade routes to be adopted by everyone else in the Indian Ocean.` }
+          ]
+        },
+        {
+          heading: 'Money that was not metal',
+          blocks: [
+            { p: `Commerce on this scale broke the coinage. Chinese copper cash was strung in units of a thousand and was too heavy to move in bulk; a large transaction meant carting a load of metal across the country. Merchants in Sichuan began issuing paper receipts against deposited coin, and in <span class="num">1024</span> the government took the system over and issued the world's first government-backed <span class="kt">paper money</span>. The Song also ran state monopolies on salt, tea, wine and alum, so a large share of imperial revenue came from commerce rather than from the land tax, which is a genuinely unusual thing for a pre-modern state.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know',
+              html: `Much of what we know about daily commercial life in the Song comes from two unusual kinds of source. The first is administrative: tax registers, salt monopoly accounts and the records of the Superintendency of Maritime Trade, which taxed foreign cargo at the great southern ports. The second is descriptive: memoirs such as <em>Dreams of Splendor of the Eastern Capital</em>, in which a man who had fled the fall of Kaifeng in <span class="num">1127</span> wrote down everything he could remember about the lost city, street by street and shop by shop. It is nostalgic and it is not a survey, but a homesick exile listing the night markets he used to visit is evidence of a kind a tax register can never be.`
+            } },
+            { p: `The cities those markets sat in were the largest in the world. Kaifeng, the northern capital, and later Hangzhou in the south each held on the order of a million people. Kaifeng had abandoned the old walled-ward system that shut markets at night, so shops opened onto the streets and stayed open late, which is why the memoirs are full of restaurants and entertainers rather than gates and curfews.` }
+          ]
+        },
+        {
+          heading: 'Why the money did not become power',
+          blocks: [
+            { p: `Here is the connection this chapter exists to make. The Song taxed commerce successfully, and it spent the proceeds on the largest standing army in the world, upward of a million men. What it could not buy was cavalry. The horse-breeding grasslands of the north and northwest were held by the Liao and the Xi Xia, which meant the Song had to purchase warhorses from the very neighbors it might have to fight, in quantities they controlled. An infantry army, however well equipped and however well paid, cannot pursue mounted raiders, and mounted raiders choose when the war happens.` },
+            { p: `So Song wealth bought the one thing wealth is best at buying, which is a settlement. Silver and silk went north every year, the frontier stayed quiet, and the merchants kept trading, some of them selling into the very markets the payments had opened. It was, in strict arithmetic, cheaper than a war. It was also a permanent admission that the richest state on earth could not impose terms on its neighbors.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The commercial revolution. <em>The mechanism runs in a chain you can write in one sentence: Champa rice doubled the harvest, the doubled harvest doubled the population, the surplus population filled cities and ironworks, and the state taxed the resulting commerce through monopolies and maritime customs instead of relying on the land tax alone.</em>`,
+        limit: `None of it produced cavalry. The grasslands were held by the Liao and Xi Xia, so the Song bought its warhorses from its rivals and its peace with annual payments, which is the limit of what money can do against mobility.`,
+        comparison: `Against <em>Dar al-Islam</em> on commercial instruments: both regions solved the problem of moving value without moving metal, the Song with state-issued paper money from 1024, the Islamic world with the sakk and the commenda partnership. State solution versus merchant solution, same underlying problem.`
+      },
+      terms: [
+        ['Champa rice', 'A fast-ripening rice from Vietnam, promoted by the Song state from the early eleventh century, which allowed two harvests a year and roughly doubled the population.'],
+        ['Paper money', 'Government-issued notes, first backed by the Song state in 1024, developed because copper cash was too heavy to move at the scale Song commerce required.'],
+        ['Magnetic compass', 'A navigational instrument whose maritime use is first clearly described in a Chinese text of 1119, and which spread outward along the Indian Ocean routes.'],
+        ['Grand Canal', 'The inland waterway linking the rice-growing south to the northern capitals, which made it possible to feed a city of a million people far from the fields that fed it.'],
+        ['State monopoly', 'Exclusive state control of the sale of a necessity such as salt, tea or wine, which raises revenue from commerce without a visible tax increase.']
+      ]
+    },
+
+    // ── 05 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'frontier',
+      num: '05',
+      accent: 'gold',
+      name: 'The Frontier, and the End',
+      navLabel: 'The frontier',
+      dates: '1005 to 1279 &nbsp;·&nbsp; Chanyuan to Yamen',
+      thesis: `The Song spent its entire existence as one state among several in East Asia, paying two of its neighbors annually, losing its northern half to a third, and finally being conquered by a fourth. Any answer that treats Song China as an unchallenged regional hegemon has the topic backwards.`,
+      parts: [
+        {
+          heading: 'The Chanyuan settlement, 1005',
+          blocks: [
+            { p: `The Liao dynasty, ruled by the Khitan, held the northeastern grasslands and a strip of northern Chinese territory including the region around modern Beijing. After a war neither side could finish, the two states signed the Treaty of Chanyuan in <span class="num">1005</span>. The Song agreed to send the Liao an annual payment of silver and silk, the border was fixed, and the two courts addressed each other as formal equals, with the two rulers described in family terms as elder and younger relatives.` },
+            { p: `Two things about this are worth memorizing. First, the Song called the payments gifts, and the Liao called them tribute, and both terms are in the surviving diplomatic record, which tells you exactly how much of the arrangement was about face. Second, it worked. The Chanyuan settlement held for over a century, and the sum involved was small next to the cost of campaigning. A similar arrangement followed with the Tangut Xi Xia state in <span class="num">1044</span>.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not describe the Song tribute system as though China simply received tribute from admiring neighbors. Both directions existed at once. Korea's Goryeo state and Vietnam's Dai Viet did send tribute missions to the Song and accepted Chinese cultural forms, so the classic picture is not wrong; but the Song simultaneously paid the Liao and the Xi Xia to leave it alone. Writing that Song China "collected tribute from all its neighbors" turns a complicated balance of power into a simple hierarchy and loses the most interesting fact in the topic.`
+            } }
+          ]
+        },
+        {
+          heading: 'What the neighbors took, and what they refused',
+          blocks: [
+            { p: `The states around Song China borrowed selectively, which is the point students miss when they call this "Chinese influence." Korea under the Goryeo dynasty adopted a civil service examination on the Chinese model, Confucian statecraft and Buddhist institutions, but kept a hereditary aristocracy powerful enough that the examination never displaced birth the way it did in China. Vietnam, independent since <span class="num">939</span>, adopted Confucian administration and the examination system while retaining local practices, including a markedly stronger position for women in inheritance and household authority than Chinese norms allowed.` },
+            { p: `Japan is the clearest case of refusal. Having imported Chinese writing, Buddhism and bureaucratic models in earlier centuries, Japan by the Song period had stopped sending official missions, and from <span class="num">1185</span> real power lay with a military government under a shogun, with the emperor a legitimating figure. Japan did not adopt the examination system at all: authority stayed with warrior families, land and lineage. Selective borrowing is the term to use, and Japan is the example that proves it was selective.`}
+          ]
+        },
+        {
+          heading: '1127, and the Southern Song',
+          blocks: [
+            { p: `The Song allied with the Jurchen, a people from the northeast, against the Liao, and the alliance worked: the Liao fell. The Jurchen then discovered how weak the Song army was and kept going. In <span class="num">1127</span> they took Kaifeng and carried the retired emperor, the reigning emperor and much of the court north as prisoners. The Jurchen founded the Jin dynasty over northern China, and the remnant of the Song court reestablished itself at Hangzhou in the south.` },
+            { p: `Everything after that is the <span class="kt">Southern Song</span>, which is the same dynasty in a smaller territory, not a new one. It is also, awkwardly for anyone who thinks territory equals success, the richer half. Cut off from the north, the Southern Song leaned into maritime trade, and the ports of Quanzhou and Guangzhou became the busiest in the world, taxed by a Superintendency of Maritime Trade whose customs revenue became a major pillar of the state budget.` }
+          ]
+        },
+        {
+          heading: 'The Mongol conquest',
+          blocks: [
+            { p: `The Mongols destroyed the Jin in <span class="num">1234</span> and then spent forty-five years on the Southern Song, the longest campaign of their entire expansion. The siege of the twin cities of Xiangyang alone lasted about five years and was broken only when Mongol forces brought in counterweight trebuchets built with the help of engineers from the Islamic world, which is a detail worth keeping: the conquest of China was completed with siege technology moved across Eurasia by the same connections this unit is about.` },
+            { p: `The Southern Song ended in <span class="num">1279</span> at the naval battle of Yamen, and Kublai Khan ruled all of China as the Yuan dynasty. The examination system was suspended for decades under Mongol rule and restored in <span class="num">1315</span>, and when it returned it was Zhu Xi's Neo-Confucian commentaries that it tested. The institutions in this chapter outlived the dynasty that built them, which is the strongest possible evidence for how well they worked.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Diplomacy backed by payment. <em>The mechanism is that the Chanyuan settlement of 1005 converted an unwinnable frontier war into a fixed annual cost, bought over a century of peace for less than a campaign, and let the Song spend its energy on the commercial economy that generated the payments in the first place.</em>`,
+        limit: `It was still a state that paid its neighbors, lost its capital and its emperor in 1127, and needed forty-five years of Mongol effort to finish rather than any capacity of its own to prevent it.`,
+        comparison: `Against <em>the Americas</em> on state reach: the Song governed a hundred million people through examined officials on paper records, while the Inca governed perhaps ten to twelve million through the mit'a labor obligation and knotted-cord khipu with no writing at all. Two solutions to administering people you will never see.`
+      },
+      terms: [
+        ['Treaty of Chanyuan', 'The 1005 settlement under which the Song paid the Liao annually in silver and silk, fixed the border, and treated the two courts as formal equals.'],
+        ['Southern Song', 'The same dynasty after 1127, ruling from Hangzhou with the north lost to the Jin, and more dependent on maritime trade than the Northern Song had been.'],
+        ['Tributary relationship', 'A ranked diplomatic arrangement of gifts, recognition and trading rights, which in East Asia ran in both directions at once during the Song.'],
+        ['Selective borrowing', 'The pattern by which Korea, Vietnam and Japan adopted some Chinese institutions and refused others, which is why the three ended up so different from one another.'],
+        ['Superintendency of Maritime Trade', 'The Song office that licensed and taxed foreign shipping at the southern ports, making customs revenue a pillar of the Southern Song budget.']
+      ]
+    }
+  ],
+
+  closing: {
+    heading: 'Building an Answer That Scores',
+    navLabel: 'Building a comparison',
+    intro: `Every card below is a full comparison: a claim, the specific evidence, and the reason the difference existed. That third part is what separates a response that earns the point from one that lists two facts side by side. Steal the structure, not the wording.`,
+    pairs: [
+      {
+        category: 'State building',
+        title: 'Song China and Europe answered the warlord problem in opposite directions',
+        body: `Both faced armed men who could take power locally. The Song answer was a salaried, examined, rotating civil bureaucracy placed in authority over the army, with sealed names and recopied papers to keep the selection out of any patron's hands. The European answer was to grant land to armed nobles in exchange for service, which paid for soldiers a king could not otherwise afford and permanently created rivals who held land, courts and troops of their own. The difference exists because the Song inherited an intact imperial administration and a tax system capable of paying officials in cash, while European monarchs after the Carolingians had land and no revenue, and land was the only currency they had.`
+      },
+      {
+        category: 'Belief and rule',
+        title: 'Neo-Confucianism strengthened the Song state; the Church constrained European kings',
+        body: `Both supplied the moral order that made an unequal society feel natural. Neo-Confucianism placed hierarchy inside the structure of the universe and made filial piety in the household a rehearsal of obedience to the emperor, and its teachers were the same men who staffed the administration. The Latin Church was a separate institution with its own law, land, revenue and the power to excommunicate a monarch, as Innocent III did. The difference exists because Chinese religious institutions never developed an authority independent of the state, while the Church was built during centuries when there was no state in western Europe strong enough to absorb it.`
+      },
+      {
+        category: 'Economy',
+        title: 'Song wealth and Song military weakness are the same fact, not a contradiction',
+        body: `Champa rice doubled the population, the surplus filled the cities and the ironworks, and monopolies and maritime customs let the state tax that commerce directly. But the horse pastures lay north of the border, so the Song bought warhorses from the Liao and the Xi Xia and paid both of them annually to keep the frontier quiet. Wealth converts into infantry, fortification and siege engineering; it does not convert into cavalry when a rival controls the grass. This is why "richest" and "strongest" are separate questions to ask of any state, and it is the comparison this topic is built to teach.`
+      },
+      {
+        category: 'Hierarchy',
+        title: 'The most open recruitment system in the world excluded half the population by rule',
+        body: `A merchant's son could sit the Song examination, which was not true in most societies in <span class="num">1200</span>. No woman could sit it in any year, in any prefecture. Meanwhile Neo-Confucian writers were making widow chastity a standard and foot binding was spreading through elite households, marking status by immobility and reproducing itself mother to daughter with no official involved. When a question asks for continuity and change, this is the pairing to reach for: the qualification for office changed from birth to education, and the exclusion of women did not change at all.`
+      }
+    ]
+  }
+};

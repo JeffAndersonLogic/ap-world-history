@@ -67,12 +67,19 @@ function check(name, pass, detail) {
   console.log(`  ${pass ? 'PASS' : 'FAIL'}  ${name}${detail ? '  (' + detail + ')' : ''}`);
 }
 
-// The two generated eBook page types. Both come out of scripts/lib/ebook-page.js
-// but through different template functions, so a fix applied to one and not the
-// other is a real and easy mistake; every assertion below runs against both.
+// Both generated eBook page types, and every volume that exists.
+//
+// The two page types come out of scripts/lib/ebook-page.js through different
+// template functions, so a fix applied to one and not the other is a real and
+// easy mistake, and every assertion below runs against both. The volume list is
+// read from build-ebook.js rather than typed here for the reason the rest of
+// this repo prefers discovery: a hand-written list stops covering the moment a
+// volume is added, and it does so silently, with the suite still reporting the
+// same confident green it did when the list was complete.
+const { VOLUMES } = require(path.join(ROOT, 'scripts', 'build-ebook.js'));
 const PAGES = [
   ['ebook/index.html', 'library'],
-  ['ebook/foundations.html', 'volume']
+  ...VOLUMES.map(v => [v.outputFile, `volume "${v.id}"`])
 ];
 
 /**

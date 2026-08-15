@@ -68,8 +68,18 @@ function check(name, pass, detail) {
   console.log(`  ${pass ? 'PASS' : 'FAIL'}  ${name}${detail ? '  (' + detail + ')' : ''}`);
 }
 
+// The volume driven in depth, and every other volume that exists.
+//
+// The detailed assertions below name Foundations sections by their labels, so
+// they cannot be run over an arbitrary volume; the sweep in step 9 covers the
+// rest structurally instead. The list comes from build-ebook.js rather than
+// being typed here, so a new volume is checked the moment it is built. A typed
+// list would go on reporting the same green while covering less of the eBook
+// every time one landed.
 const VOLUME = 'ebook/foundations.html';
 const LIBRARY = 'ebook/index.html';
+const OTHER_VOLUMES = require(path.join(ROOT, 'scripts', 'build-ebook.js'))
+  .VOLUMES.map(v => v.outputFile).filter(f => f !== VOLUME);
 
 /**
  * The fake engine. Installed before any page script runs.
@@ -500,7 +510,47 @@ const tick = page => page.waitForTimeout(30);
   check('Enter on the Listen control starts narration',
     byKeyboard.playing === 1 && byKeyboard.spoken === 1, JSON.stringify(byKeyboard));
 
-  // ── 9. the library page has none of this ──────────────────────────────────
+  // ── 9. every other volume gets the feature too ────────────────────────────
+  //
+  // The eight sections above drive one volume in depth, and they have to: the
+  // labels, the paragraph counts and the section names they assert against are
+  // Foundations content. What that leaves uncovered is the far likelier
+  // failure, which is a volume that was built and never checked at all. This
+  // sweep is deliberately structural, asserting only what is true of any
+  // volume, so it keeps working as volumes are added without anyone editing it.
+  for (const other of OTHER_VOLUMES) {
+    console.log(`\n${other}`);
+    await page.goto(url(other), { waitUntil: 'load' });
+    const built = await page.evaluate(() => ({
+      sections: document.querySelectorAll('[data-listenable="true"]').length,
+      controls: document.querySelectorAll('.bh-listen').length,
+      empty: Array.from(document.querySelectorAll('[data-listen-mount]'))
+        .filter(m => !m.querySelector('.bh-listen')).length
+    }));
+    check('every marked section has controls, and no mount is left empty',
+      built.sections > 0 && built.controls === built.sections && built.empty === 0,
+      JSON.stringify(built));
+
+    const crossSection = await page.evaluate(async () => {
+      const plays = Array.from(document.querySelectorAll('.bh-listen-play'));
+      plays[0].click();
+      await new Promise(r => setTimeout(r, 20));
+      const before = window.__speech.cancels;
+      plays[1].click();
+      await new Promise(r => setTimeout(r, 20));
+      const playing = document.querySelectorAll('.bh-listen[data-state="playing"]');
+      return {
+        cancelled: window.__speech.cancels > before,
+        playing: playing.length,
+        second: playing[0] === plays[1].closest('.bh-listen')
+      };
+    });
+    check('starting a second section cancels the first, page-wide',
+      crossSection.cancelled && crossSection.playing === 1 && crossSection.second,
+      JSON.stringify(crossSection));
+  }
+
+  // ── 10. the library page has none of this ─────────────────────────────────
   console.log(`\n${LIBRARY}`);
   await page.goto(url(LIBRARY), { waitUntil: 'load' });
   const library = await page.evaluate(() => ({

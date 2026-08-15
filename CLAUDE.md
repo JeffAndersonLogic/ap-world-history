@@ -86,10 +86,10 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/extract-unit-content.js`, the one-way lift from hand-authored HTML into a content module. Refuses to read a page it generated, because re-extracting from generated output writes the generator's own bugs back in as authored content.
 - `node scripts/test/readings-golden.js`, prove the 58 generated unit readings still carry every word of the originals, against `scripts/test/fixtures/readings-before.json`.
 - `node scripts/build-foundations-readings.js`, rebuild the six Foundations First & 10 readings from `scripts/lib/foundations-f10-content.js`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/first-and-10-foundations-*.html`; they are generated.
-- `node scripts/build-deep-readings.js`, rebuild the deep readings from `scripts/lib/deep-reading-content/`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/deep-reading-*.html`; they are generated. See "Deep Readings" below.
+- `node scripts/build-deep-readings.js`, rebuild the deep readings from `scripts/lib/deep-reading-content/`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit a generated `deep-reading-*.html`, in `foundations/` or in any `unit-N/`. See "Deep Readings" below.
 - `node scripts/build-ebook.js`, compile the deep readings for a volume into `ebook/<volume>.html`. `--check` fails on drift without writing, which is what the offline suite runs. See "The eBook" below.
-- `node scripts/test/ebook-a11y.test.js`, drive both generated eBook pages in
-  Chromium and assert the WCAG 2.1 AA contract: skip link first and visible,
+- `node scripts/test/ebook-a11y.test.js`, drive the library and every volume in
+  `VOLUMES` in Chromium and assert the WCAG 2.1 AA contract: skip link first and visible,
   one `<main>` with the footer outside it, a focus ring on every interactive
   element, no sideways scroll at 320px or at 200% zoom, and no text under its
   contrast threshold. In the browser suite. See "eBook accessibility" below.
@@ -206,12 +206,22 @@ shells with `/^foundations-\d+.*\.html$/` and Foundations readings with
 checked against a contract it was never meant to satisfy. Hence
 `deep-reading-<slug>.html`. Re-read those two globs before renaming these.
 
-**The renderer injects the card and hides the feature entirely when absent**, the
+**Both renderers inject the card and hide the feature entirely when absent**, the
 same way the video block does, so the topics without one show no empty frame. It
 sits *after* the lecture cards on purpose: the cards are the path everyone walks
 and this is depth on top of them. A reading this long placed above the cards reads
 as required work rather than as an offer, which is why it sits below them and why
-the card says optional twice.
+the card says optional twice. `renderDeepReading()` in the unit renderer mirrors
+the Foundations one, guard on its own id included, or a re-render doubles the
+card.
+
+**A unit topic keeps its `deepReading` block somewhere else, and the check has to
+know.** A Foundations topic's data file sits beside its shell as
+`foundations-3-states-power-data.js`; a unit topic's sits in `assets/data/` under
+the shell's own name, because the shell loads it with a `<script src>`. Resolving
+a unit topic the Foundations way looks for `unit-1/lesson-1-1-song-china-data.js`,
+which no unit topic has ever had, so every unit deep reading would fail
+reachability for a file that was never supposed to exist.
 
 **Two checks, because each failure is silent.** `--check` in the offline suite
 proves the page still matches its content module. `validate.js` proves the page
@@ -220,12 +230,18 @@ on disk, gets served by Pages, and can only be found by typing the filename,
 with every other structural check green. It checks both directions, because a
 data file pointing at a missing page is a dead card and a page no content module
 produces is a hand-authored reading, which is the thing the content model exists
-to prevent.
+to prevent. Both directions scan `foundations/` **and** every `unit-N/`, through
+one `standaloneDeepReadings()` helper rather than a glob repeated per call site:
+a glob naming only `foundations/` stops covering the moment a volume outside
+Foundations is written, and it stops covering silently.
 
 ## The eBook
 
+Two volumes exist: `ebook/foundations.html`, five chapters, and
+`ebook/unit-1.html`, seven, one per Unit 1 topic including the comparison topic.
+
 The eBook is a **second surface on the chapter modules, not a second copy of the
-content.** Every chapter in `ebook/foundations.html` is the same
+content.** Every chapter in a volume is the same
 `scripts/lib/deep-reading-content/<slug>.js` that produces that topic's
 standalone deep reading, so the two cannot disagree. `scripts/lib/ebook-page.js`
 renders the cover and contents and then calls `renderChapterBody` from the
@@ -252,7 +268,17 @@ does not.
 **Chapters are numbered by their topic, not their position.** Sequential
 numbering would make the Foundations 3 chapter "Chapter 02" while Foundations 2
 is unwritten, and would silently renumber every chapter the moment a gap is
-filled.
+filled. Unit chapters number as `1.4` and label as `Topic 1.4`, both derived from
+the slug, which is why a unit content module's slug must start `topic-<unit>-`:
+`build-deep-readings.js` places the page from it, and `ebook-page.js` derives the
+chapter number, the contents label and the link back to the lesson from it too.
+
+**A volume's footer names the volume and links its own hub**, derived from the
+first written chapter's slug rather than declared, for the same reason the lesson
+link is derived: a declared value is a second place to state where a topic lives,
+and the two can then disagree. The Foundations volume came out of that change
+byte for byte unchanged, which is the check worth running whenever a shared
+template gains a parameter.
 
 **`build-ebook.js` exports `VOLUMES` before it runs, and guards the run with
 `if (require.main !== module) return;`.** `validate.js` requires the file purely
@@ -307,6 +333,16 @@ paints, that nothing overflows 320px, and that no text is under its contrast
 threshold. The contrast sweep is the one that earns its runtime, because the
 same colour is correct on the cover and wrong on the contents rows and only a
 browser can tell those two uses apart.
+
+**Both browser tests read their page list from `VOLUMES`, never a typed list.**
+`ebook-a11y.test.js` runs every assertion against the library and every volume.
+`ebook-listen.test.js` drives Foundations in depth, because its labels and
+paragraph counts are Foundations content, and then sweeps every other volume
+structurally: controls built in every marked section, no mount left empty, and
+starting a second section cancelling the first. A typed list would go on
+reporting the same confident green while covering less of the eBook each time a
+volume landed, which is the failure this repo cares about more than an outright
+red.
 
 **Two checks, same shape as the deep readings.** `--check` in the offline suite
 proves each volume and the library still match the chapter modules.
@@ -390,7 +426,8 @@ ship no `<script>` at all, in writing, because a page with no script cannot ship
 a SyntaxError that silently discards its own behaviour. The `listen` option
 defaults to false and only the eBook turns it on, so
 `foundations/deep-reading-*.html` came out of this change byte for byte
-unchanged. `validate.js` now fails if one of them grows a `<script>` tag.
+unchanged. `validate.js` fails if any standalone deep reading, in `foundations/`
+or in a `unit-N/`, grows a `<script>` tag.
 
 **Two checks, because the failures are silent in opposite directions.**
 `validate.js` proves offline that the sections are marked, that the marked count

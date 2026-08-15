@@ -129,6 +129,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: 'The Examined State',
+    desc: 'A textbook-depth companion covering the examination machinery, Neo-Confucianism, the commercial revolution and the northern frontier one at a time, with the mechanism behind each and where each one cracked. Optional, and useful when a checkpoint asks you how a tool of rule actually worked.',
+    url: 'deep-reading-topic-1-1-song-china.html'
+  },
+
   first10: {
     title: "First & 10: The World That Song Built",
     embedUrl: 'first-and-10-topic-1-1-song-china-capture.html?v=response-id-fix-v1'

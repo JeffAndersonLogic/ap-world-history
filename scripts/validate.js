@@ -81,6 +81,21 @@ function glob(dir, re) {
   return fs.readdirSync(dir).filter(f => re.test(f)).map(f => path.join(dir, f));
 }
 
+/**
+ * Every standalone deep reading on disk, wherever build-deep-readings.js writes
+ * them: foundations/ for a Foundations topic and unit-N/ for a unit topic.
+ *
+ * One list rather than a glob repeated at each call site, because the checks
+ * that use it are the ones that keep a deep reading script-free, and a glob
+ * naming only foundations/ silently stops covering the moment a volume outside
+ * Foundations is written. That is the failure this repo keeps paying for: not a
+ * check that fails, a check that quietly examines less than it says it does.
+ */
+function standaloneDeepReadings() {
+  const dirs = [path.join(ROOT, 'foundations'), ...Array.from({ length: 9 }, (_, i) => path.join(ROOT, `unit-${i + 1}`))];
+  return dirs.flatMap(dir => glob(dir, /^deep-reading-.*\.html$/));
+}
+
 // ─── Parentheses-in-URL checker ──────────────────────────────────────────────
 // Matches url: '...(...)...' patterns where the path component contains ( or )
 // Also matches CSS url('...(...)')
@@ -565,7 +580,18 @@ section('Deep readings are linked from their lesson');
     const page = path.join(dir, topic.sourceFile || '');
     const lesson = path.join(dir, topic.lessonFile || '');
     // The lesson shell names its data file; the deepReading block lives there.
-    const data = lesson.replace(/\.html$/, '-data.js');
+    //
+    // The two lesson systems keep that data file in different places, and the
+    // check has to know which: a Foundations topic keeps it beside the shell as
+    // foundations-3-states-power-data.js, while a unit topic keeps it in
+    // assets/data/ under the shell's own name, because the shell loads it with a
+    // <script src>. Resolving a unit topic the Foundations way looks for
+    // unit-1/lesson-1-1-song-china-data.js, which no unit topic has ever had, so
+    // every unit deep reading would fail this check for a file that was never
+    // supposed to exist.
+    const data = /^foundations-/.test(topic.slug || '')
+      ? lesson.replace(/\.html$/, '-data.js')
+      : path.join(ROOT, 'assets', 'data', path.basename(topic.lessonFile || '').replace(/\.html$/, '.js'));
 
     if (!exists(page)) {
       err(page, `generated page missing, run: npm run build:deep-readings`);
@@ -592,13 +618,10 @@ section('Deep readings are linked from their lesson');
   // hand-authored deep reading, which is the thing the content model exists to
   // prevent. Only foundations/ and unit-N/ are scanned, matching where the
   // builder writes.
-  const searchDirs = [path.join(ROOT, 'foundations'), ...Array.from({ length: 9 }, (_, i) => path.join(ROOT, `unit-${i + 1}`))];
-  for (const dir of searchDirs) {
-    for (const found of glob(dir, /^deep-reading-.*\.html$/)) {
-      totalChecks++;
-      if (!generated.has(path.basename(found))) {
-        err(found, 'deep reading has no content module in scripts/lib/deep-reading-content/, so a rebuild cannot reproduce it');
-      }
+  for (const found of standaloneDeepReadings()) {
+    totalChecks++;
+    if (!generated.has(path.basename(found))) {
+      err(found, 'deep reading has no content module in scripts/lib/deep-reading-content/, so a rebuild cannot reproduce it');
     }
   }
 
@@ -838,7 +861,7 @@ section('eBook narration is generated and shared');
   const generated = [
     ...(VOLUMES.map(v => path.join(ROOT, v.outputFile))),
     ...(LIBRARY ? [path.join(ROOT, LIBRARY.outputFile)] : []),
-    ...glob(path.join(ROOT, 'foundations'), /^deep-reading-.*\.html$/)
+    ...standaloneDeepReadings()
   ].filter(exists);
 
   for (const file of generated) {
@@ -854,7 +877,7 @@ section('eBook narration is generated and shared');
   // script cannot ship a SyntaxError that discards its own behaviour. The eBook
   // is where narration lives; a deep reading that grew a script tag is the
   // first step towards a fifth surface nobody decided to add.
-  for (const file of glob(path.join(ROOT, 'foundations'), /^deep-reading-.*\.html$/)) {
+  for (const file of standaloneDeepReadings()) {
     totalChecks++;
     if (/<script/i.test(read(file) || '')) {
       err(file, 'a deep reading has grown a <script> tag; see the header of scripts/lib/deep-reading-page.js');

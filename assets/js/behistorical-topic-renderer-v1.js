@@ -323,6 +323,7 @@ if (L) {
   renderCollegeBoardFramework();
   renderLectureCards();
   wireLectureControls();
+  renderDeepReading();
   renderVideoClips();
   renderModuleGrid();
   loadAllDrafts();
@@ -382,6 +383,39 @@ function renderLectureCards() {
       <h3>${seg.title}</h3>
       <ul class="lecture-list">${seg.bullets.map(b => `<li>${md(b)}</li>`).join('')}</ul>
     </article>`).join('');
+}
+
+// ── Deep reading ──────────────────────────────────────────────────────────────
+
+// The optional push-further layer under Content Delivery, for a topic whose
+// modules assume more background than its First & 10 has room to carry. Mirrors
+// foundations/foundations-topic-renderer.js, including where the card sits and
+// why.
+//
+// Injected rather than added to the 71 unit shells, so this renderer stays the
+// only place that knows the card's shape, and guarded on its own id the way the
+// lecture controls are, or a re-render doubles the card.
+//
+// It sits AFTER the lecture cards on purpose. The cards are the path everyone
+// walks; this is depth on top of them. Given the IEP and 504 load in this room,
+// a reading this long placed above the cards reads as required work, and the
+// wording below says optional twice for the same reason.
+//
+// A topic with no deepReading block shows no trace of the feature, the same way
+// the video block hides itself, so the 64 topics without a chapter show no empty
+// frame where one would go.
+function renderDeepReading() {
+  const deep = L.deepReading;
+  const grid = byId('main-lecture-grid');
+  if (!deep || !deep.url || !grid || byId('deep-reading-banner')) return;
+
+  grid.insertAdjacentHTML('afterend', `
+    <article class="card deep-reading-banner" id="deep-reading-banner" style="margin-top:1.5rem">
+      <div class="eyebrow">Optional, go deeper</div>
+      <h3>${deep.title || 'Deep Reading'}</h3>
+      <p>${deep.desc || 'A textbook-depth companion to this topic, for when you want more detail than the First &amp; 10 has room for.'}</p>
+      <a class="btn" href="${deep.url}">Open the Deep Reading</a>
+    </article>`);
 }
 
 // ── Video clips ───────────────────────────────────────────────────────────────

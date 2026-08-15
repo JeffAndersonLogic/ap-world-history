@@ -67,6 +67,7 @@ const SPELLINGS = [
  * Every entry carries the reason it is exempt.
  */
 const ALLOWED_STRINGS = [
+  'Statute of Labourers',  // title of the English statute of 1351
   // 'Labouring Population',  // title of Chadwick's 1842 report
   // 'British Labour government',  // name of a political party
 ];

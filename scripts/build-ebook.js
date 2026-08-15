@@ -74,6 +74,26 @@ const VOLUMES = [
       { module: 'foundations-4' },
       { module: 'foundations-5' }
     ]
+  },
+  {
+    id: 'unit-1',
+    outputFile: 'ebook/unit-1.html',
+    blurb: `The Global Tapestry: six regions in the century either side of <span class="num">1200</span>, each answering the same questions about power, belief and wealth, and the comparison chapter that puts the answers side by side.`,
+    docTitle: 'BeHistorical | The Unit 1 eBook',
+    eyebrow: 'BeHistorical &nbsp;·&nbsp; AP World History: Modern',
+    titleHtml: 'The Unit 1 <em>eBook</em>',
+    deck: `Unit 1 is the course's survey of the world as it stood around <span class="num">1200</span>, and a survey is exactly the format that has no room to explain how anything worked. Each chapter here takes one topic and gives you the working parts: not that the Song had an examination, but how sealed names and recopied papers made it work and whom it still shut out.`,
+    // Teaching order is topic order here, and every chapter is written, so this
+    // volume carries no pending entries. It will if Unit 1 ever gains a topic.
+    contents: [
+      { module: 'topic-1-1' },
+      { module: 'topic-1-2' },
+      { module: 'topic-1-3' },
+      { module: 'topic-1-4' },
+      { module: 'topic-1-5' },
+      { module: 'topic-1-6' },
+      { module: 'topic-1-7' }
+    ]
   }
 ];
 

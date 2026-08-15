@@ -45,7 +45,9 @@ should know what kind of box they are looking at before reading a word of it.
 
 Proper nouns, titles of works and direct quotations keep their source's
 spelling. *Report on the Sanitary Condition of the Labouring Population* is a
-title. "The British Labour government" is a name. Neither is a mistake. Add the
+title. The *Statute of Labourers* of 1351 is the name of an English statute and
+is the one exception currently in the list. "The British Labour government" is a
+name. None of them is a mistake. Add the
 exact string to `ALLOWED_STRINGS` in `scripts/check-style.js` with the reason,
 rather than weakening a rule so that a real error can slip past it later.
 

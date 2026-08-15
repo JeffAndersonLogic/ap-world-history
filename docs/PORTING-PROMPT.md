@@ -264,6 +264,25 @@ compiled into `ebook/foundations.html`:
 - **Foundations 4**, `foundations-4.js`, "Nobody Traveled the Whole Road", 8 sections, ~6,300 words.
 - **Foundations 5**, `foundations-5.js`, "The Starting Line", 9 sections, ~6,300 words.
 
+**The Unit 1 volume is complete.** All seven chapters are on the Unit 1 branch and
+compiled into `ebook/unit-1.html`:
+
+- **Topic 1.1**, `topic-1-1.js`, "The Examined State", 5 sections, ~5,200 words.
+- **Topic 1.2**, `topic-1-2.js`, "The House Divided", 5 sections, ~4,900 words.
+- **Topic 1.3**, `topic-1-3.js`, "Rice, Water, and the Strait", 5 sections, ~4,500 words.
+- **Topic 1.4**, `topic-1-4.js`, "Tribute and Labor", 5 sections, ~5,000 words.
+- **Topic 1.5**, `topic-1-5.js`, "Gold, Salt, Stone, and Faith", 5 sections, ~4,600 words.
+- **Topic 1.6**, `topic-1-6.js`, "The Kingdom That Never Assembled", 5 sections, ~4,500 words.
+- **Topic 1.7**, `topic-1-7.js`, "The Same Four Questions", 5 sections, ~4,700 words.
+
+**A unit chapter differs from a Foundations chapter in four fields and one wiring
+step.** `topicKey` is `t1-4`, `slug` starts `topic-1-4-` (the builder places the
+page and the eBook derives the chapter number and lesson link from it),
+`sourceFile` is `deep-reading-topic-1-4-<slug>.html` and `lessonFile` is the unit
+shell. The wiring step: a unit topic's `deepReading` block goes in
+`assets/data/lesson-1-4-<slug>.js`, not beside the shell the way a Foundations
+topic's does.
+
 **Read two of them before writing.** They are the style reference, and matching
 them matters more than any instruction above.
 
@@ -275,9 +294,11 @@ paragraph. Whoever lands a chapter updates this list in the same commit.
 
 ### Still to write
 
-No Foundations chapters remain. The next volume is a unit: pick one, add a
-`VOLUMES` entry in `scripts/build-ebook.js`, and write its chapters against the
-same schema.
+No Foundations chapters remain and Unit 1 is complete. The next volume is another
+unit: pick one, add a `VOLUMES` entry in `scripts/build-ebook.js`, and write its
+chapters against the same schema. Units 2 through 9 are all unwritten, and Unit 2,
+the networks of exchange, is the natural next one because Unit 1's chapters
+already point forward to it repeatedly.
 
 **Foundations 0 is deliberately excluded.** It is course orientation and the six
 thinking skills, not history content, and its reading asks for a personal

@@ -153,6 +153,24 @@ function renderChapter(chapter) {
 }
 
 /**
+ * The hub page a volume belongs to, for the footer's second link.
+ *
+ * Derived from the first written chapter's slug rather than declared on the
+ * volume, for the same reason lessonHref() derives its directory: a declared
+ * value is a second place to state where a topic lives, and the two can then
+ * disagree. A volume with no written chapter at all falls back to Foundations,
+ * which is where the eBook started and is harmless on a page that has nothing
+ * in it yet.
+ */
+function hub(volume, chapters) {
+  const first = (chapters || []).find(Boolean);
+  const unit = first && /^topic-(\d)/.exec(first.slug || '');
+  return unit
+    ? { href: `../unit-${unit[1]}/index.html`, label: `Unit ${unit[1]}` }
+    : { href: '../foundations/index.html', label: 'Foundations' };
+}
+
+/**
  * @param {object} volume    a VOLUMES entry from scripts/build-ebook.js
  * @param {object[]} entries ordered contents: {chapter} for written, {pending} for not
  * @returns {string} the full HTML document, newline-terminated
@@ -190,10 +208,10 @@ ${SKIP_LINK}<header class="eb-cover">
 ${chapterNav(entries)}${body}</main>
 <div class="dr-wrap">
   <footer class="dr-footer">
-    <span class="dr-footer-note">BeHistorical &nbsp;·&nbsp; The Foundations eBook &nbsp;·&nbsp; Generated from the course content model</span>
+    <span class="dr-footer-note">BeHistorical &nbsp;·&nbsp; ${esc(stripTags(volume.titleHtml))} &nbsp;·&nbsp; Generated from the course content model</span>
     <nav class="dr-nav" aria-label="Course navigation">
       <a href="../index.html">Course Home</a>
-      <a href="../foundations/index.html">Foundations</a>
+      <a href="${esc(hub(volume, chapters).href)}">${esc(hub(volume, chapters).label)}</a>
       <a href="#contents">Contents</a>
     </nav>
   </footer>
