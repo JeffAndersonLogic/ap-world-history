@@ -190,6 +190,104 @@ textarea:focus-visible,
 .dr-usethis dd{font-size:.87rem;line-height:1.65;color:#eee6d9;max-width:66ch}
 .dr-usethis dd em{color:var(--clean);font-style:normal;font-weight:700}
 
+/* ── listen to this section ─────────────────────────────────────────────── */
+/*
+ * The narration controls, injected into every section marked data-listenable by
+ * assets/js/behistorical-listen.js.
+ *
+ * Part of the reading surface, not a media player. It sits on paper, in the UI
+ * face already used for eyebrows and nav, at a size that reads as an offer
+ * rather than an instruction, and it does not animate. A student who wants to
+ * read is not being asked to dismiss anything.
+ *
+ * Colours are the existing tokens and nothing new: Blackened Steel on Clean
+ * Paper for the buttons, Oxidized Brown for the active state and the rule.
+ * Antique Gold is deliberately absent, because this is a light surface and gold
+ * is 2.1:1 on it, which is the defect the eBook accessibility section of
+ * CLAUDE.md exists to describe.
+ *
+ * The mount is empty until the script fills it, so it must have no box of its
+ * own: a page with JavaScript off, or a browser with no speech synthesis, shows
+ * no gap where a control would have been.
+ */
+.bh-listen-mount:empty{display:none}
+
+.bh-listen{
+  display:flex; flex-wrap:wrap; align-items:center; gap:.4rem .55rem;
+  /* Hugs its buttons rather than spanning the column. A full-width strip under
+     every heading reads as a player bar the reading has to get past; this reads
+     as an offer sitting beside the text. max-width keeps it inside the wrap at
+     320px, where it wraps onto two rows instead of pushing the page sideways. */
+  width:fit-content; max-width:100%;
+  margin:1.1rem 0 0; padding:.55rem .7rem;
+  background:var(--clean); border:1px solid var(--rule);
+  border-left:3px solid var(--rule);
+  font-family:var(--font-ui);
+}
+/* State is carried by the button labels and by the status text. This border is
+   a second, redundant signal, never the only one: 1.4.1 is not satisfied by a
+   colour change and neither is a projector at the back of a classroom. */
+.bh-listen[data-state="playing"]{border-left-color:var(--oxidized);background:#f7f1e3}
+.bh-listen[data-state="paused"]{border-left-color:var(--iron);background:#f7f1e3}
+
+.bh-listen-btn{
+  font-family:var(--font-ui); font-size:.66rem; font-weight:700;
+  letter-spacing:.11em; text-transform:uppercase;
+  color:var(--steel); background:var(--clean);
+  border:1px solid var(--rule); padding:.4rem .7rem;
+  cursor:pointer; line-height:1.3;
+}
+.bh-listen-btn:hover{background:#f2ead9;border-color:var(--bronze)}
+/* No :focus-visible rule here on purpose. The one ring at the top of this file
+   already covers every button on every BeHistorical surface, and a component
+   that redefines it is how a ring becomes a tint again. */
+.bh-listen-play{border-color:var(--bronze);color:var(--oxidized)}
+.bh-listen-play:hover{color:var(--steel)}
+
+/* Disabled is a real state a student can see and a screen reader announces, so
+   it is styled rather than left to the user agent. Chromium's default disabled
+   text is about 1.5:1 on this paper, which is unreadable for the many students
+   who can still see it well enough to try. Iron is 6.5:1. */
+.bh-listen-btn:disabled{
+  color:var(--iron); background:#f4efe4; border-color:var(--rule-soft);
+  cursor:default; opacity:1;
+}
+.bh-listen-btn:disabled:hover{background:#f4efe4;border-color:var(--rule-soft)}
+
+.bh-listen-speed{display:inline-flex;align-items:center;gap:.35rem}
+.bh-listen-speed label{
+  font-size:.6rem; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--charcoal);
+}
+.bh-listen-rate{
+  font-family:var(--font-ui); font-size:.68rem; font-weight:600;
+  color:var(--steel); background:var(--clean);
+  border:1px solid var(--rule); padding:.3rem .35rem; line-height:1.3;
+}
+
+/* Empty when idle, so it takes no room and announces nothing. */
+.bh-listen-status{
+  font-size:.62rem; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--oxidized);
+}
+.bh-listen-status:empty{display:none}
+
+/*
+ * Available to a screen reader, never to the eye. clip-path with a 1px box
+ * rather than display:none or visibility:hidden, both of which remove the text
+ * from the accessibility tree, which would defeat the entire purpose: this is
+ * how forty-three buttons that all read "Listen to this section" tell a screen
+ * reader user which section each one belongs to.
+ */
+.bh-vh{
+  position:absolute; width:1px; height:1px; overflow:hidden;
+  clip:rect(0 0 0 0); clip-path:inset(50%); white-space:nowrap;
+}
+
+@media print{
+  .bh-listen,.bh-listen-mount{display:none}
+}
+
 /* ── terms ──────────────────────────────────────────────────────────────── */
 .dr-terms{margin-top:1.7rem}
 .dr-terms h3{font-family:var(--font-ui);font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-deep);padding-bottom:.4rem;border-bottom:1px solid var(--rule);margin-bottom:.8rem}

@@ -93,6 +93,14 @@ Every script below also has an `npm run` alias; see `package.json`.
   one `<main>` with the footer outside it, a focus ring on every interactive
   element, no sideways scroll at 320px or at 200% zoom, and no text under its
   contrast threshold. In the browser suite. See "eBook accessibility" below.
+- `node scripts/test/ebook-listen.test.js`, drive the eBook's "Listen to this
+  section" controls in Chromium against a stubbed speech engine: controls built in
+  every marked section, narration that reads the history and not the page
+  furniture, starting one section cancelling another, pause, resume and stop
+  moving the real state, a playback speed that persists and rejects anything
+  outside the four supported values, and a browser with no speech synthesis
+  getting no controls rather than dead ones. In the browser suite. See "Listen to
+  this section" below.
 - `node scripts/check-style.js`, the mechanical half of the house style: American
   English spelling, `c. 1200` rather than `c.1200`, no em or en dashes in prose, and
   the two canonical note labels. In the offline suite. It reads the deep-reading
@@ -307,6 +315,128 @@ module, that the library lists every volume, and that **`index.html` links the
 library**, because the library carries reachability for everything behind it: if
 the front door stops linking it, every volume goes unreachable at once while each
 volume file still sits happily on disk.
+
+### Listen to this section
+
+Every reading section in an eBook volume carries a compact **Listen to this
+section** control: Listen, Pause and Resume on one button, Stop, and a speed
+selector offering 0.75x, 1x, 1.25x and 1.5x. It is built by
+`assets/js/behistorical-listen.js` and it is the only implementation.
+
+**It is an instructional enhancement, not an accessibility feature, and it is
+not a substitute for one.** A student using a screen reader already has a better
+tool for hearing this page than this is. What this is for is the student who
+reads slowly, the student who holds more when the words arrive through two
+channels at once, and the student catching up on three weeks in May. The eBook's
+WCAG 2.1 AA contract in the section above is a separate layer, and nothing here
+may weaken it: real buttons, real labels, one shared focus ring, no ARIA where
+native HTML already says the thing, and nothing that starts speaking on its own.
+
+**The HTML stays the source of truth.** Narration reads the rendered DOM of the
+section in front of the student, so a revised chapter is a revised narration on
+the next page load, with nothing to regenerate and nothing that can fall behind.
+
+**That is why there are no MP3 files and no speech API.** An audio file is a
+second copy of the content, and the moment a paragraph is edited nothing in this
+repo can tell you which copy a student heard. It is the same failure the content
+model exists to refuse, and it would be worse here, because a stale recording
+sounds exactly as authoritative as a current one. A paid TTS service adds the
+second failure on top of the first: it would mean the reading, and eventually a
+student's page, leaving the device. `window.speechSynthesis` is the browser's
+own engine, it costs nothing, and nothing is sent anywhere. The single stored
+value is the playback rate, a number, under `behistorical-listen-rate`.
+
+**One section speaks at a time, page-wide.** Starting anywhere cancels
+everywhere, playback stops on `pagehide`, and there is never more than one
+utterance in flight. Two sections talking over each other is not a degraded
+experience, it is noise.
+
+**The controls are generated, never hand-written.** Two things come from
+`scripts/lib/deep-reading-page.js`: `data-listenable="true"` with a
+`data-listen-label` on the section, and an empty `data-listen-mount` div under
+its heading. The shared module finds those and builds the buttons. Forty-three
+sections wired by hand would be forty-three places for the next change to miss
+one, which is exactly how the First & 10 capture block went missing twice.
+
+**So a future section inherits the feature by existing.** A new chapter module
+in `deep-reading-content/`, or a new volume in `build-ebook.js`, is narratable
+the moment it is built. There is nothing to add and nothing to remember. A new
+*component* inside a section is narrated too, because the extractor walks
+structure rather than a list of known class names.
+
+**Narrated:** the section heading, its dates line, its thesis, every explanatory
+paragraph, subsection headings, the How we know and Common mistake to avoid
+callouts, and the closing comparison cards. **"Use this in your answer" and
+"Terms to use precisely" are both narrated**, deliberately: they are the parts a
+student is most likely to be revising from, and the definition-list markup reads
+naturally out loud because the walk puts each label and each body on its own
+utterance, so it comes out as "Terms to use precisely. Domestication. The genetic
+change in..." rather than as markup.
+
+**Not narrated:** the site and jump navigation, the contents list, Back to
+contents, Go to the lesson, the footer, any button or select label, the listen
+controls and their own status text, and the section number watermark, which is a
+navigational label rather than content. The **How to Use This** panel is also
+excluded: it is instructions for reading the chapter rather than the chapter, and
+it stays on the page in text, where scanning it is quicker than hearing it.
+Anything hidden, collapsed or `aria-hidden` is skipped, and a future exclusion is
+one `data-no-narrate` attribute in the renderer.
+
+**Volumes only.** `ebook/index.html` is a shelf, not a reading, so it marks no
+sections and loads no narration module. `validate.js` asserts both directions.
+
+**The standalone deep readings do not have this, and that is deliberate.** They
+ship no `<script>` at all, in writing, because a page with no script cannot ship
+a SyntaxError that silently discards its own behaviour. The `listen` option
+defaults to false and only the eBook turns it on, so
+`foundations/deep-reading-*.html` came out of this change byte for byte
+unchanged. `validate.js` now fails if one of them grows a `<script>` tag.
+
+**Two checks, because the failures are silent in opposite directions.**
+`validate.js` proves offline that the sections are marked, that the marked count
+equals what the chapter modules contain, that every one has its mount, and that
+exactly one shared module is loaded: a volume that marks its sections and does
+not load the module renders perfectly and does nothing, and so does a volume that
+loads the module and stops marking its sections.
+`scripts/test/ebook-listen.test.js` proves in Chromium what only a browser knows,
+against a stubbed engine: that Listen speaks the right section, that starting one
+cancels another, that pause, resume and stop move the real state, that speed
+persists and rejects a value that is not one of the four, and that a browser with
+no speech synthesis gets no controls rather than dead ones.
+
+#### What the browser does, and what it does not
+
+Found while building this, and worth knowing before changing any of it:
+
+- **Chromium stops part way through a long utterance.** The common workaround is
+  a `pause()`/`resume()` heartbeat on a timer, which is not used here because it
+  fights the real Pause button for the same state. Instead the section is fed to
+  the engine one paragraph at a time, and a paragraph over about 220 characters
+  is split further at its sentence boundaries. Playback was already sequential,
+  so this costs nothing and the bug has no room to appear.
+- **A `speak()` in the same task as a `cancel()` is sometimes swallowed**, which
+  showed up as a Listen button that did nothing on the second section a student
+  tried. The first utterance of a section is deferred by one turn.
+- **`cancel()` fires the current utterance's `end` handler**, which at the
+  handler is indistinguishable from a natural finish, and in some builds also
+  fires `error` with reason `interrupted` or `canceled`. Without a guard,
+  cancelling section A mid-paragraph advances A and speaks it over section B.
+  Every callback carries a session token and does nothing once the session has
+  moved on. Do not remove it.
+- **Voices are per device and per profile.** No voice is named; the utterance
+  carries the document language and the browser picks. Pinning a voice means
+  silence for any student whose machine does not have it, and ChromeOS ships a
+  different set from desktop Chrome.
+- **Changing the speed applies from the next chunk**, not mid-sentence.
+  Restarting the current utterance would throw away the paragraph the student
+  was in the middle of, which is worse than one sentence at the old speed.
+- **`pause()` is not reliable everywhere.** On some Android and ChromeOS builds,
+  and with remote voices, it behaves like a stop. The UI reports what it asked
+  for, which is the best any page can do.
+- **Headless Chromium exposes the whole API and has no voices**, so a test that
+  waited on real audio would hang in CI and sound different on every laptop. The
+  browser test stubs the engine, and the honest limit of that is written at the
+  top of the file: it proves this code is correct, not that Chrome is.
 
 ## Image Contract
 

@@ -734,6 +734,136 @@ section('eBook volumes are generated and linked');
   sectionDone(`${VOLUMES.length} eBook volume${VOLUMES.length === 1 ? '' : 's'} in a library the front door links`);
 }
 
+// 7e. "Listen to this section" is generated, shared, and reaches every section.
+//
+// The feature is an instructional listening layer over the eBook, described in
+// CLAUDE.md. Its failures are the quiet kind, which is why they are checked here
+// rather than left to a browser:
+//
+//   - A volume that marks its sections and does not load the module shows no
+//     controls at all, on a page that is otherwise perfect. Nothing renders
+//     wrong, nothing errors, the feature is simply not there.
+//   - A volume that loads the module and stops marking its sections is the same
+//     silence from the opposite direction.
+//   - A section that gains the attribute but loses its mount still gets
+//     controls, prepended above its own heading, which reads as a toolbar
+//     bolted to the top of the reading.
+//   - A count that drifts below what the content modules contain is the worst
+//     of the four, because a chapter with narration on four of its five
+//     sections looks entirely finished.
+//
+// What a browser has to prove instead is in scripts/test/ebook-listen.test.js:
+// that the buttons work, that one section cancels another, and that the
+// extractor reads the history and not the furniture.
+section('eBook narration is generated and shared');
+{
+  const LISTEN_MODULE = path.join(ROOT, 'assets', 'js', 'behistorical-listen.js');
+  const SCRIPT_TAG = 'src="../assets/js/behistorical-listen.js"';
+
+  let VOLUMES = [], LIBRARY = null;
+  try {
+    ({ VOLUMES, LIBRARY } = require(path.join(ROOT, 'scripts', 'build-ebook.js')));
+  } catch (e) { /* 7d already reported this */ }
+
+  totalChecks++;
+  const moduleSrc = exists(LISTEN_MODULE) ? read(LISTEN_MODULE) : null;
+  if (!moduleSrc) {
+    err(LISTEN_MODULE, 'the one narration module is missing, so every Listen control on every volume is dead');
+  } else if (!/speechSynthesis/.test(moduleSrc)) {
+    err(LISTEN_MODULE, 'the narration module no longer uses window.speechSynthesis');
+  }
+
+  let listenable = 0;
+
+  for (const volume of VOLUMES) {
+    const target = path.join(ROOT, volume.outputFile);
+    if (!exists(target)) continue;                 // 7d reports a missing volume
+    const src = read(target) || '';
+
+    // How many sections this volume's content modules actually contain. Derived
+    // from the source of truth rather than from the page, because comparing a
+    // page against itself can only ever agree with itself.
+    let expected = 0;
+    for (const entry of volume.contents || []) {
+      if (!entry.module) continue;
+      const modFile = path.join(ROOT, 'scripts', 'lib', 'deep-reading-content', `${entry.module}.js`);
+      if (!exists(modFile)) continue;              // 7d reports this too
+      let mod;
+      try { mod = require(modFile); } catch (e) { continue; }
+      expected += (mod.empires || []).length;
+      if (mod.closing && (mod.closing.pairs || []).length) expected += 1;
+    }
+
+    const marked = (src.match(/data-listenable="true"/g) || []).length;
+    const mounts = (src.match(/data-listen-mount/g) || []).length;
+    listenable += marked;
+
+    totalChecks++;
+    if (marked !== expected) {
+      err(target, `volume "${volume.id}" marks ${marked} narratable sections but its chapter modules contain ${expected}, so ${Math.abs(expected - marked)} section${Math.abs(expected - marked) === 1 ? ' has' : 's have'} no Listen control`);
+    }
+
+    totalChecks++;
+    if (mounts !== marked) {
+      err(target, `volume "${volume.id}" has ${marked} narratable sections and ${mounts} control mounts, so the controls land above the section heading instead of under it`);
+    }
+
+    totalChecks++;
+    const tags = (src.match(/behistorical-listen\.js/g) || []).length;
+    if (marked && tags !== 1) {
+      err(target, tags === 0
+        ? `volume "${volume.id}" marks ${marked} narratable sections but never loads ${SCRIPT_TAG}, so no control is ever built`
+        : `volume "${volume.id}" loads the narration module ${tags} times, which builds a duplicate control in every section`);
+    }
+  }
+
+  // The library is a shelf, not a reading. Both directions are asserted, because
+  // "no controls here" is a decision and a decision that nothing enforces is a
+  // preference. See ebook-page.js.
+  if (LIBRARY) {
+    const lib = path.join(ROOT, LIBRARY.outputFile);
+    if (exists(lib)) {
+      const src = read(lib) || '';
+      totalChecks++;
+      if (/data-listenable/.test(src) || /behistorical-listen\.js/.test(src)) {
+        err(lib, 'the eBook library carries narration, but it has no reading section to narrate; see the LISTEN_SCRIPT note in scripts/lib/ebook-page.js');
+      }
+    }
+  }
+
+  // Narration logic lives in one file. A page that grew its own copy is the
+  // beginning of the 64-prompt-builders problem, ten of which were malformed
+  // badly enough to kill their page's whole script block, and it is far cheaper
+  // to refuse the first copy than to find the tenth.
+  const generated = [
+    ...(VOLUMES.map(v => path.join(ROOT, v.outputFile))),
+    ...(LIBRARY ? [path.join(ROOT, LIBRARY.outputFile)] : []),
+    ...glob(path.join(ROOT, 'foundations'), /^deep-reading-.*\.html$/)
+  ].filter(exists);
+
+  for (const file of generated) {
+    totalChecks++;
+    const src = read(file) || '';
+    if (/speechSynthesis|SpeechSynthesisUtterance/.test(src)) {
+      err(file, 'narration code is inlined in a generated page; it belongs only in assets/js/behistorical-listen.js');
+    }
+  }
+
+  // The standalone deep readings ship no <script> at all, which is a contract
+  // predating this feature and one it must not quietly break: a page with no
+  // script cannot ship a SyntaxError that discards its own behaviour. The eBook
+  // is where narration lives; a deep reading that grew a script tag is the
+  // first step towards a fifth surface nobody decided to add.
+  for (const file of glob(path.join(ROOT, 'foundations'), /^deep-reading-.*\.html$/)) {
+    totalChecks++;
+    if (/<script/i.test(read(file) || '')) {
+      err(file, 'a deep reading has grown a <script> tag; see the header of scripts/lib/deep-reading-page.js');
+    }
+  }
+
+  sectionDone(`${listenable} eBook sections narratable from one shared module`);
+}
+
 // 8. The Google Form is retired. This check keeps it retired.
 //
 // Student work goes to Canvas through Gather All My Work. A second collection

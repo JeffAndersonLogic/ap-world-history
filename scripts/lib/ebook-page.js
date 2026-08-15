@@ -37,6 +37,21 @@ const esc = escapeText;
  */
 const SKIP_LINK = `<a class="skip-link" href="#main-content">Skip to main content</a>\n`;
 
+/**
+ * The "Listen to this section" module, on volume pages only.
+ *
+ * A volume is the surface this feature is for: chapters of continuous reading,
+ * a student following along with the words in front of them. The library page
+ * is a shelf. It has no reading section to narrate, so it loads no narration
+ * code and shows no controls, and validate.js asserts both directions of that
+ * rather than trusting it.
+ *
+ * `defer` because the module reads the rendered DOM to find its sections, and
+ * because nothing above it needs to wait for it. It is the only script either
+ * eBook page type loads.
+ */
+const LISTEN_SCRIPT = `<script defer src="../assets/js/behistorical-listen.js"></script>\n`;
+
 function chapterNav(entries) {
   const rows = entries.map(entry => {
     if (entry.pending) {
@@ -132,7 +147,7 @@ function renderChapter(chapter) {
     `      <p class="eb-chapter-deck">${chapter.deck}</p>\n` +
     `      <p class="eb-chapter-return"><a href="${esc(lessonHref(chapter))}">Go to the ${esc(tocLabel(chapter))} lesson</a> &nbsp;·&nbsp; <a href="#contents">Back to contents</a></p>\n` +
     `    </header>\n` +
-    renderChapterBody(chapter, { idPrefix: chapter.topicKey }) +
+    renderChapterBody(chapter, { idPrefix: chapter.topicKey, listen: true, listenScope: tocLabel(chapter) }) +
     `  </section>\n`
   );
 }
@@ -183,7 +198,7 @@ ${chapterNav(entries)}${body}</main>
     </nav>
   </footer>
 </div>
-</body>
+${LISTEN_SCRIPT}</body>
 </html>
 `);
 }

@@ -97,22 +97,73 @@ function renderTerms(terms) {
   return `    <div class="dr-terms">\n      <h3>Terms to use precisely</h3>\n      <dl>\n${items}      </dl>\n    </div>\n`;
 }
 
-function renderEmpire(empire, index, prefix) {
+/* ── "Listen to this section" ────────────────────────────────────────────────
+ *
+ * Two strings, and between them the whole of what this renderer knows about
+ * narration. assets/js/behistorical-listen.js does everything else.
+ *
+ * The split is the design. A section says *that* it is narratable and *where*
+ * its controls belong; it does not carry a single line of playback logic, and
+ * no page carries a copy of any. That is what makes the feature reach 43
+ * sections today and every section written after today without one of them
+ * being wired by hand, which is the failure mode this repo keeps paying for
+ * when it does the other thing.
+ *
+ * Opt-in, not on by default, and the eBook is the only caller that opts in.
+ * A standalone deep reading ships no <script> at all, on purpose and in
+ * writing: a page with no script cannot ship a SyntaxError that silently
+ * discards its own behaviour. Emitting these attributes unconditionally would
+ * put dead mount points and a promise of buttons into five pages that have
+ * nothing to build them, so `listen` defaults to false and the standalone
+ * pages come out byte for byte as they did before this feature existed.
+ */
+function listenAttrs(on, scope, name) {
+  if (!on) return '';
+  // Scoped by chapter, because the label is what a screen reader reads out to
+  // tell one Listen button from another and a volume is one document. Four of
+  // the five Foundations chapters close on a section called "Building an Answer
+  // That Scores", so an unscoped name leaves four identical buttons in a list of
+  // forty-three and no way to tell which chapter each belongs to.
+  const label = [scope, stripMarkup(name)].filter(Boolean).join(', ');
+  return ` data-listenable="true" data-listen-label="${esc(label)}"`;
+}
+
+/** The mount slot. Empty in the HTML, filled by the shared module on load, and
+ *  marked data-no-narrate so the controls are never read out as part of the
+ *  reading they control. */
+function listenMount(on, indent) {
+  return on ? `${indent}<div class="bh-listen-mount" data-listen-mount data-no-narrate></div>\n` : '';
+}
+
+/** Section names are authored as HTML for the same reason body copy is. The
+ *  accessible label on a button is text, so the markup comes off here rather
+ *  than being escaped and read aloud as angle brackets. */
+function stripMarkup(html) {
+  return String(html == null ? '' : html).replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function renderEmpire(empire, index, prefix, listen, scope) {
   const id = withPrefix(prefix, empire.id || slugId(empire.name));
   const num = empire.num || String(index + 1).padStart(2, '0');
   const accent = `accent-${empire.accent || 'gold'}`;
   const parts = (empire.parts || []).map(renderPart).join('');
 
   return (
-    `  <section class="empire ${accent}" id="${esc(id)}">\n` +
+    `  <section class="empire ${accent}" id="${esc(id)}"${listenAttrs(listen, scope, empire.name)}>\n` +
     `    <div class="dr-ehead">\n` +
-    `      <div class="dr-enum">${esc(num)}</div>\n` +
+    // The section number is how the contents page and the jump bar refer to
+    // this section, and it is nothing else: spoken aloud in front of the
+    // heading it is a navigational label read as content.
+    `      <div class="dr-enum"${listen ? ' data-no-narrate' : ''}>${esc(num)}</div>\n` +
     `      <div>\n` +
     `        <h2>${empire.name}</h2>\n` +
     `        <div class="dr-dates">${empire.dates}</div>\n` +
     `      </div>\n` +
     `      <p class="dr-thesis">${empire.thesis}</p>\n` +
     `    </div>\n` +
+    // Under the heading, the dates and the thesis, which is the point at which
+    // a student has read enough to decide whether to hear the rest.
+    listenMount(listen, '    ') +
     parts +
     renderUseThis(empire.useThis) +
     renderTerms(empire.terms) +
@@ -120,7 +171,7 @@ function renderEmpire(empire, index, prefix) {
   );
 }
 
-function renderComparisons(closing, prefix) {
+function renderComparisons(closing, prefix, listen, scope) {
   if (!closing || !closing.pairs || !closing.pairs.length) return '';
   const cards = closing.pairs
     .map(pair =>
@@ -133,9 +184,10 @@ function renderComparisons(closing, prefix) {
     .join('');
 
   return (
-    `  <section class="dr-closing" id="${esc(withPrefix(prefix, 'compare'))}">\n` +
+    `  <section class="dr-closing" id="${esc(withPrefix(prefix, 'compare'))}"${listenAttrs(listen, scope, closing.heading)}>\n` +
     `    <h2>${esc(closing.heading)}</h2>\n` +
     `    <p>${closing.intro}</p>\n` +
+    listenMount(listen, '    ') +
     `    <div class="dr-pairs">\n${cards}    </div>\n` +
     `  </section>\n`
   );
@@ -175,13 +227,25 @@ function renderJumpNav(topic) {
  * @param {object} topic              a module from scripts/lib/deep-reading-content/
  * @param {object} [opts]
  * @param {string} [opts.idPrefix=''] namespace for section ids, used by the eBook
+ * @param {boolean} [opts.listen=false] mark every reading section narratable and
+ *        emit its control mount. Off by default; the eBook turns it on. See
+ *        listenAttrs() above for why this is opt-in rather than always.
+ * @param {string} [opts.listenScope=''] chapter label prefixed to each section's
+ *        narration label, so the buttons stay distinguishable across a volume
  */
 function renderChapterBody(topic, opts) {
   const prefix = (opts && opts.idPrefix) || '';
+  const listen = !!(opts && opts.listen);
+  const scope = (opts && opts.listenScope) || '';
   return (
+    // The how-to is not narrated. It is instructions for reading the chapter,
+    // not the chapter: a student who asked to hear the section wants the
+    // history, and hearing "Sections 01 to 06 build the causal chain" first is
+    // the audio equivalent of reading the manual before the book. It stays
+    // fully on the page, in text, where it is quicker to scan than to hear.
     renderHowTo(topic.howTo, prefix) +
-    (topic.empires || []).map((empire, i) => renderEmpire(empire, i, prefix)).join('') +
-    renderComparisons(topic.closing, prefix)
+    (topic.empires || []).map((empire, i) => renderEmpire(empire, i, prefix, listen, scope)).join('') +
+    renderComparisons(topic.closing, prefix, listen, scope)
   );
 }
 
