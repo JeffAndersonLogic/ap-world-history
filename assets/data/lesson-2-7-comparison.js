@@ -177,6 +177,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: 'One System, Three Surfaces',
+    desc: 'A textbook-depth companion that puts the three networks under one set of questions, names the single cost mechanism behind most of their differences, and shows what a comparison paragraph has to contain. No new content, one new skill. Optional.',
+    url: 'deep-reading-topic-2-7-comparison.html'
+  },
+
   first10: {
     title: 'First & 10: Comparing the Networks',
     embedUrl: 'first-and-10-topic-2-7-comparison-capture.html?v=response-id-fix-v1'

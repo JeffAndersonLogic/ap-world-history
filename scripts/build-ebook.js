@@ -94,6 +94,24 @@ const VOLUMES = [
       { module: 'topic-1-6' },
       { module: 'topic-1-7' }
     ]
+  },
+  {
+    id: 'unit-2',
+    outputFile: 'ebook/unit-2.html',
+    blurb: `Networks of Exchange: the three great trade systems of Afro-Eurasia treated as businesses, with the capital, the contracts, the ships and the animals, and then what the connection carried that nobody ordered.`,
+    docTitle: 'BeHistorical | The Unit 2 eBook',
+    eyebrow: 'BeHistorical &nbsp;·&nbsp; AP World History: Modern',
+    titleHtml: 'The Unit 2 <em>eBook</em>',
+    deck: `Unit 2 is about connection, and connection is easy to describe and hard to explain. These chapters give the machinery: what a caravan cost to run, why a ship could carry rice when a camel could not, what a harbor master did, and why the same routes that carried Persian cobalt to Chinese kilns carried a pandemic to every port on the map.`,
+    contents: [
+      { module: 'topic-2-1' },
+      { module: 'topic-2-2' },
+      { module: 'topic-2-3' },
+      { module: 'topic-2-4' },
+      { module: 'topic-2-5' },
+      { module: 'topic-2-6' },
+      { module: 'topic-2-7' }
+    ]
   }
 ];
 

@@ -163,6 +163,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: 'The Business of the Road',
+    desc: 'A textbook-depth companion treating the overland routes as a business: what a caravan cost to run, what a caravanserai did, the partnership contracts and Mongol-financed merchant associations that paid for it, and why the traffic faded without anyone closing it. Optional, and useful when a checkpoint asks how something actually worked.',
+    url: 'deep-reading-topic-2-1-silk-roads.html'
+  },
+
   first10: {
     title: 'First & 10: Roads of Silk and Exchange',
     embedUrl: 'first-and-10-topic-2-1-silk-roads-capture.html?v=response-id-fix-v1'

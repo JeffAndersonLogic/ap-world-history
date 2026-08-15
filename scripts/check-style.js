@@ -48,11 +48,19 @@ const ROOT = path.resolve(__dirname, '..');
 const CONTENT_DIRS = [path.join(ROOT, 'scripts', 'lib', 'deep-reading-content')];
 
 /** British form -> American form, matched as a stem so that one entry covers
- *  centre/centres/centred and labour/labourer/labouring. */
+ *  centre/centres/centred and labour/labourer/labouring.
+ *
+ *  A stem is a regular expression, and one entry needs to be, because a stem
+ *  can be too greedy: `organis` catches organise and organisation and also
+ *  catches `organism`, which is correct in American English and is a word any
+ *  chapter about ecology, disease or evolution will use repeatedly. The fix is
+ *  a lookahead on that entry rather than exemptions in ALLOWED_STRINGS, because
+ *  the exemption list is for proper nouns and titles, and burying a rule's own
+ *  false positives in it is how a rule stops meaning anything. */
 const SPELLINGS = [
   ['favour', 'favor'], ['colour', 'color'], ['behaviour', 'behavior'],
   ['neighbour', 'neighbor'], ['labour', 'labor'], ['centre', 'center'],
-  ['metre', 'meter'], ['organis', 'organiz'], ['recognis', 'recogniz'],
+  ['metre', 'meter'], ['organis(?!m)', 'organiz'], ['recognis', 'recogniz'],
   ['civilis', 'civiliz'], ['defence', 'defense'], ['offence', 'offense'],
   ['licence', 'license'], ['practise', 'practice'], ['travelling', 'traveling'],
   ['travelled', 'traveled'], ['labelled', 'labeled'], ['modelling', 'modeling'],

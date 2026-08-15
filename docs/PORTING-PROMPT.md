@@ -275,6 +275,26 @@ compiled into `ebook/unit-1.html`:
 - **Topic 1.6**, `topic-1-6.js`, "The Kingdom That Never Assembled", 5 sections, ~4,500 words.
 - **Topic 1.7**, `topic-1-7.js`, "The Same Four Questions", 5 sections, ~4,700 words.
 
+**The Unit 2 volume is complete.** All seven chapters are on the working branch and
+compiled into `ebook/unit-2.html`:
+
+- **Topic 2.1**, `topic-2-1.js`, "The Business of the Road", 5 sections, ~4,300 words.
+- **Topic 2.2**, `topic-2-2.js`, "The Empire of the Relay", 5 sections, ~4,500 words.
+- **Topic 2.3**, `topic-2-3.js`, "The Ocean That Carried Everything", 5 sections, ~4,400 words.
+- **Topic 2.4**, `topic-2-4.js`, "Two Months Without Water", 5 sections, ~4,000 words.
+- **Topic 2.5**, `topic-2-5.js`, "What Traveled Without Paying Freight", 5 sections, ~4,200 words.
+- **Topic 2.6**, `topic-2-6.js`, "The Cargo Nobody Ordered", 5 sections, ~4,100 words.
+- **Topic 2.7**, `topic-2-7.js`, "One System, Three Surfaces", 5 sections, ~3,900 words.
+
+**Unit 2 overlaps Foundations 4, and the split is deliberate.** Foundations 4
+gives the map of the three networks: the towns, the winds, relay rather than
+through-travel, and value-to-weight. The Unit 2 chapters do not repeat any of
+that. They take the same networks as businesses, the capital, the contracts, the
+ships and animals, the cost per ton-mile, and the specific events of 1200 to
+1450. If you write a chapter for a topic Foundations already touches, read the
+Foundations chapter first and pick a different question rather than a different
+wording.
+
 **A unit chapter differs from a Foundations chapter in four fields and one wiring
 step.** `topicKey` is `t1-4`, `slug` starts `topic-1-4-` (the builder places the
 page and the eBook derives the chapter number and lesson link from it),
@@ -294,11 +314,12 @@ paragraph. Whoever lands a chapter updates this list in the same commit.
 
 ### Still to write
 
-No Foundations chapters remain and Unit 1 is complete. The next volume is another
-unit: pick one, add a `VOLUMES` entry in `scripts/build-ebook.js`, and write its
-chapters against the same schema. Units 2 through 9 are all unwritten, and Unit 2,
-the networks of exchange, is the natural next one because Unit 1's chapters
-already point forward to it repeatedly.
+Foundations, Unit 1 and Unit 2 are complete. The next volume is another unit:
+pick one, add a `VOLUMES` entry in `scripts/build-ebook.js`, and write its
+chapters against the same schema. Units 3 through 9 are unwritten, and Unit 3,
+land-based empires, is the natural next one, because the Unit 2 chapters end
+with gunpowder moving west and the Mongol khanates fragmenting, which is exactly
+where Unit 3 begins.
 
 **Foundations 0 is deliberately excluded.** It is course orientation and the six
 thinking skills, not history content, and its reading asks for a personal

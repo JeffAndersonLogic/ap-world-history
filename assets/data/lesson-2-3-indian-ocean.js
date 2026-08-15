@@ -181,6 +181,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: 'The Ocean That Carried Everything',
+    desc: 'A textbook-depth companion on the ships and navigation, the bulk cargo that makes this ocean different from the Silk Roads, the port cities and their harbor masters, the merchant diasporas, and what Zheng He was actually for. Optional, and the fastest way to be ready for the Unit 2 comparison.',
+    url: 'deep-reading-topic-2-3-indian-ocean.html'
+  },
+
   first10: {
     title: 'First & 10: The Ocean That Connected the World',
     embedUrl: 'first-and-10-topic-2-3-indian-ocean-capture.html?v=response-id-fix-v1'

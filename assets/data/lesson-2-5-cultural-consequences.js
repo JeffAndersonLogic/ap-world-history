@@ -164,6 +164,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: 'What Traveled Without Paying Freight',
+    desc: 'A textbook-depth companion on how a belief or a technique actually moves, with traceable chains: papermaking city by city, the crops that carried the plantation model to the Atlantic, and one porcelain dish that contains the whole Eurasian system. Optional.',
+    url: 'deep-reading-topic-2-5-cultural-consequences.html'
+  },
+
   first10: {
     title: 'First & 10: Ideas on the Move',
     embedUrl: 'first-and-10-topic-2-5-cultural-consequences-capture.html?v=response-id-fix-v1'

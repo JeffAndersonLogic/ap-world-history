@@ -153,6 +153,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: 'The Cargo Nobody Ordered',
+    desc: 'A textbook-depth companion on the plague from its reservoir to its consequences, why the same mortality raised wages in England and wrecked the irrigation of Egypt, the ecological costs of distant demand, and the tree rings, ice cores and ancient DNA that are how we know. Optional.',
+    url: 'deep-reading-topic-2-6-environmental-consequences.html'
+  },
+
   first10: {
     title: 'First & 10: The World the Plague Remade',
     embedUrl: 'first-and-10-topic-2-6-environmental-consequences-capture.html?v=response-id-fix-v1'
