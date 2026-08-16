@@ -44,6 +44,51 @@ const ROOM = path.join(ROOT, 'beintheroom', 'unit-6');
 const COACH_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
 const SUBMIT_NOTE = 'Organize your thinking here, submit your final work in Canvas.';
 
+/**
+ * The optional deep reading offered under Content Delivery, keyed by topic id.
+ *
+ * Only the title and the description live here, because only they are editorial.
+ * The filename is derived from the topic's own id and slug, for the same reason
+ * the lesson link inside the eBook is derived: a declared path is a second place
+ * to state where a page lives, and the two can then disagree. The chapter itself
+ * is scripts/lib/deep-reading-content/topic-6-N.js, and validate.js checks the
+ * pairing in both directions, so a topic listed here with no content module, or
+ * a content module no topic points at, fails the push.
+ *
+ * A topic absent from this map simply shows no deep-reading card, which is how
+ * the feature stays optional.
+ */
+const DEEP_READINGS = {
+  '6.2': {
+    title: 'What Conquest Started to Cost',
+    desc: 'A textbook-depth companion on what the Berlin Conference actually decided and why a rule about effective occupation started a race, how quinine, steamers, breech-loaders and locally raised taxes collapsed the price of conquest, why the Congo Free State differed in kind rather than degree from a normal colony, how direct rule, indirect rule and settler colonization were chosen by cost, and why Japan, Russia and the United States built empires with the same package. Optional, and useful when a checkpoint asks you to compare processes rather than list annexations.'
+  },
+  '6.3': {
+    title: 'Five Kinds of No',
+    desc: 'A textbook-depth companion on the five distinct strategies the word resistance covers and what decided which one a people could use, why the greased cartridge is the trigger of 1857 and not its cause, how a rebellion that failed rebuilt the state that defeated it, what the Golden Stool and Samory Toure&rsquo;s gunsmiths had in common, why one prophetic movement destroyed a nation and another founded a state, and what Adwa explains about every defeat elsewhere. Optional, and useful when a checkpoint asks for a meaningful regional difference.'
+  },
+  '6.4': {
+    title: 'One Crop, and What It Costs',
+    desc: 'A textbook-depth companion on what an export economy does to a place beyond its fields, the dated chain from Egyptian cotton to a foreign debt commission to the occupation of 1882, why a crop that grows wild produces a coercive labor system and why seventy thousand seeds in a London greenhouse ended the Amazon boom, the West African case where producers owned the trees, and how four ownership structures produced four different countries. Optional, and useful when a checkpoint asks how environmental factors shaped the global economy.'
+  },
+  '6.5': {
+    title: 'Control Without a Flag',
+    desc: 'A textbook-depth companion on how to detect an empire that appears on no map, why the lasting damage of the Opium War settlement was the fixed tariff and the most-favored-nation clause rather than Hong Kong, how Argentina became economically dependent with no conquest, no treaty and a willing local elite, what a tariff written by your competitor does to an industry, and why Japan had the same unequal treaties and a different century. Optional, and useful when a checkpoint asks you to explain economic factors rather than name them.'
+  },
+  '6.6': {
+    title: 'Why People Could Go',
+    desc: 'A textbook-depth companion on the four things that had to be true at once before a reason to leave became a journey, why the same steamships that carried migrants out carried the grain that ruined their farms, how land tenure and relief policy rather than a plant disease set the death toll in Ireland, the single clause that separates indenture from both slavery and free labor, and why the largest migrations of the age left almost no statistical trace. Optional, and useful when a checkpoint asks why migration patterns varied.'
+  },
+  '6.7': {
+    title: 'Two Societies, Both Changed',
+    desc: 'A textbook-depth companion on what a male-selective migration did to the villages it emptied, why an ethnic enclave is a set of institutions rather than a neighborhood and why exclusion builds one as surely as preference does, how the dictation test let three countries exclude by race with no racial word in the statute, and how labor recruitment composed plural societies whose administrative categories became their political ones. Optional, and useful when a checkpoint asks how migration affected society at both ends.'
+  },
+  '6.8': {
+    title: 'Which One Mattered Most',
+    desc: 'A textbook-depth companion on how to weigh one effect of imperialism against another: the four effects stated as mechanisms so they can be compared, four tests of significance that rank them in different orders, the causes sorted into necessary, permissive and accelerating, the argument historians actually have about Hobson and Lenin and the investment data that complicates it, and a full thesis written out with its evidence structure. Optional, and the one to read before an argument essay.'
+  }
+};
+
 const topics = [
   {
     id: '6.2', slug: 'state-expansion', title: 'State Expansion', theme: 'Governance',
@@ -364,6 +409,13 @@ function buildLesson(topic) {
       prompt: `Which geographic relationship best helps explain ${topic.title.toLowerCase()}, and what evidence supports your answer?`,
       key: topic.cases.map((name) => ({ label: name, detail: `Use ${name} to connect a specific place to the topic learning objective.` }))
     },
+    ...(DEEP_READINGS[topic.id] ? {
+      deepReading: {
+        title: DEEP_READINGS[topic.id].title,
+        desc: DEEP_READINGS[topic.id].desc,
+        url: `deep-reading-topic-${topic.id.replace('.', '-')}-${topic.slug}.html`
+      }
+    } : {}),
     first10: {
       title: `First & 10: ${topic.title}`, embedUrl: `first-and-10-topic-${topic.id.replace('.', '-')}-${topic.slug}-capture.html`,
       note: 'Read the narrative, answer all three questions, build your feedback prompt, and return to the lesson path.'

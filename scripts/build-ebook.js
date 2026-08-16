@@ -173,6 +173,26 @@ const VOLUMES = [
       { module: 'topic-5-9' },
       { module: 'topic-5-10' }
     ]
+  },
+  {
+    id: 'unit-6',
+    outputFile: 'ebook/unit-6.html',
+    blurb: `Consequences of Industrialization: why conquest suddenly became affordable, what an export crop does to a country that has only one, the five different things the word resistance covers, and the hundred and fifty million people who moved.`,
+    label: 'Unit 06',
+    docTitle: 'BeHistorical | Unit 6: Consequences of Industrialization',
+    eyebrow: 'Unit 06 &nbsp;·&nbsp; The eBook &nbsp;·&nbsp; AP World History: Modern',
+    titleHtml: 'Consequences of <em>Industrialization</em>',
+    deck: `Eight chapters for eight topics, and one argument running through them: industrial production created a demand that could only be met somewhere else, and everything in this unit follows from how that demand was satisfied. Conquest became cheap enough to be a police action, whole regions were rebuilt around a single crop, states lost the power to set their own tariffs without losing their flags, and a hundred and fifty million people moved to do the work. The last chapter is about weighing those against each other, because by then you will have more evidence than any essay can hold.`,
+    contents: [
+      { module: 'topic-6-1' },
+      { module: 'topic-6-2' },
+      { module: 'topic-6-3' },
+      { module: 'topic-6-4' },
+      { module: 'topic-6-5' },
+      { module: 'topic-6-6' },
+      { module: 'topic-6-7' },
+      { module: 'topic-6-8' }
+    ]
   }
 ];
 

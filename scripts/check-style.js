@@ -79,6 +79,7 @@ const ALLOWED_STRINGS = [
   'Labouring Population',  // title of Chadwick's 1842 sanitary report
   'Labour Representation Committee',  // name of the 1900 body
   'Labour Party',  // name of a political party
+  'civilisatrice',  // French: the doctrine's name is mission civilisatrice, not an English word
 ];
 
 /** A misconception note always carries this exact label. */

@@ -168,6 +168,11 @@ window.BEHISTORICAL_LESSON = {
       }
     ]
   },
+  deepReading: {
+    title: 'Five Kinds of No',
+    desc: 'A textbook-depth companion on the five distinct strategies the word resistance covers and what decided which one a people could use, why the greased cartridge is the trigger of 1857 and not its cause, how a rebellion that failed rebuilt the state that defeated it, what the Golden Stool and Samory Toure&rsquo;s gunsmiths had in common, why one prophetic movement destroyed a nation and another founded a state, and what Adwa explains about every defeat elsewhere. Optional, and useful when a checkpoint asks for a meaningful regional difference.',
+    url: 'deep-reading-topic-6-3-indigenous-responses-to-state-expansion.html'
+  },
   first10: {
     title: 'First & 10: Indigenous Responses to State Expansion',
     embedUrl: 'first-and-10-topic-6-3-indigenous-responses-to-state-expansion-capture.html',

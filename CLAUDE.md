@@ -246,13 +246,23 @@ Foundations is written, and it stops covering silently.
 
 ## The eBook
 
-Six volumes exist: `ebook/foundations.html`, five chapters; `ebook/unit-1.html`
+Seven volumes exist: `ebook/foundations.html`, five chapters; `ebook/unit-1.html`
 and `ebook/unit-2.html`, seven each, one per topic; `ebook/unit-3.html`, four,
-because Unit 3 has four topics; `ebook/unit-4.html`, eight; and
-`ebook/unit-5.html`, ten. A volume carries one chapter per topic, so its chapter
-count is a fact about the unit rather than a target, and chapter length is set so
-that the **volume** comes out comparable rather than the chapter: Unit 3's four
-chapters run six sections each and Unit 5's ten run four.
+because Unit 3 has four topics; `ebook/unit-4.html`, eight; `ebook/unit-5.html`,
+ten; and `ebook/unit-6.html`, eight. A volume carries one chapter per topic, so
+its chapter count is a fact about the unit rather than a target, and chapter
+length is set so that the **volume** comes out comparable rather than the
+chapter: Unit 3's four chapters run six sections each, Unit 5's ten run four, and
+Unit 6's eight run four or five.
+
+**A unit whose lessons are generated keeps its `deepReading` block in the
+generator.** Unit 6 Topics 6.2 to 6.8 have their data files written by
+`scripts/build-unit6.js`, so the card is declared in the `DEEP_READINGS` map at
+the top of that script and the page's filename is derived from the topic's own id
+and slug, for the same reason the eBook derives its lesson links. Editing
+`assets/data/lesson-6-4-*.js` by hand would survive exactly until the next
+`npm run build:unit6`. Topic 6.1 is the hand-authored template the others are
+built from, so its block does live in its data file.
 
 **A two-digit topic number works and was not free.** Unit 5 has a Topic 5.10,
 the course's first, and `chapterNumber()` and `tocLabel()` in `ebook-page.js`

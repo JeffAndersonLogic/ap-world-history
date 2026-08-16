@@ -179,6 +179,11 @@ window.BEHISTORICAL_LESSON = {
       }
     ]
   },
+  deepReading: {
+    title: 'Why People Could Go',
+    desc: 'A textbook-depth companion on the four things that had to be true at once before a reason to leave became a journey, why the same steamships that carried migrants out carried the grain that ruined their farms, how land tenure and relief policy rather than a plant disease set the death toll in Ireland, the single clause that separates indenture from both slavery and free labor, and why the largest migrations of the age left almost no statistical trace. Optional, and useful when a checkpoint asks why migration patterns varied.',
+    url: 'deep-reading-topic-6-6-causes-of-migration.html'
+  },
   first10: {
     title: 'First & 10: Causes of Migration',
     embedUrl: 'first-and-10-topic-6-6-causes-of-migration-capture.html',

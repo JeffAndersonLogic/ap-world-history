@@ -109,6 +109,12 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Looking at the regions imperial powers targeted and the states that competed for them, why would European publics need a 'story', an ideology, to feel that this expansion was right and not just profitable?"
   },
 
+  deepReading: {
+    title: "The Arguments Made Out Loud",
+    desc: "A textbook-depth companion on how each of the four rationales actually worked: what Herbert Spencer wrote in 1864 and why an argument nothing can disprove was so useful, why a colony that would never pay was still worth taking, the French offer of citizenship in Algeria that almost nobody could accept, and the missionaries who supplied empire with maps and schools and then produced the photographs that destroyed the Congo Free State. Optional, and useful when a checkpoint asks you to explain an ideology rather than define it.",
+    url: "deep-reading-topic-6-1-rationales-for-imperialism.html"
+  },
+
   first10: {
     title: "First & 10: The Language of Conquest",
     embedUrl: "first-and-10-topic-6-1-rationales-for-imperialism-capture.html?v=response-id-fix-v1",
