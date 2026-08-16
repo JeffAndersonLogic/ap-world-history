@@ -73,7 +73,7 @@ module.exports = {
           blocks: [
             { p: `<b>Scale.</b> The Mughal empire at its height governed something on the order of a hundred and fifty million people; Qing China well over two hundred million by the eighteenth century; the Ottomans perhaps twenty to thirty million across three continents. No ruler could know his officials, and no capital could supervise a district a thousand miles away.` },
             { p: `<b>Speed.</b> Information moved at the pace of a rider or a ship. An order from Istanbul to Cairo, or Delhi to Bengal, took weeks; a reply took weeks more. Everything about early modern administration follows from the fact that by the time the center learned about a problem, the problem had already been handled by somebody local, well or badly.` },
-            { p: `<b>Difference.</b> These were empires by definition, which means the ruling group was not the ruled majority. A Sunni Turkish dynasty governing Orthodox Christians, Armenians, Arabs and Jews; a Shia shah over converted Sunnis; a Muslim dynasty of Central Asian origin over a Hindu majority; a Manchu house of perhaps a million people over two hundred million Chinese. Uniformity was not available, and no ruler in this unit seriously attempted it.` }
+            { p: `<b>Difference.</b> These were empires, which means each governed populations of different languages, religions and legal statuses from the ruling group, though not always as a minority within its own state, since Russia is the case that does not fit. A Sunni Turkish dynasty governing Orthodox Christians, Armenians, Arabs and Jews; a Shia shah over converted Sunnis; a Muslim dynasty of Central Asian origin over a Hindu majority; a Manchu house of perhaps a million people over two hundred million Chinese. Uniformity was not available, and no ruler in this unit seriously attempted it.` }
           ]
         },
         {
@@ -106,7 +106,7 @@ module.exports = {
       name: 'Servants With Nowhere Else to Go',
       navLabel: 'The service elites',
       dates: 'c. 1450 to 1750 &nbsp;·&nbsp; Devshirme, ghulam, mansabdar, banner, rank',
-      thesis: `Five empires, five ways of manufacturing an elite whose entire standing depends on the ruler. The variations are dictated by what each had available, and the failure mode is identical in every case.`,
+      thesis: `Five empires, five ways rulers tried to bind military and administrative elites to the throne. The variations are dictated by what each had available, and the failure mode is identical in every case.`,
       parts: [
         {
           heading: 'The five systems',
@@ -126,7 +126,7 @@ module.exports = {
         {
           heading: 'The failure mode, which is the same everywhere',
           blocks: [
-            { p: `Each of these systems was designed to prevent inheritance, and each of them drifted toward it. Janissary status became effectively hereditary and the corps became a political actor able to depose sultans. Mansabs were not inheritable in principle, and in practice great houses reproduced their position across generations. Banner households became a hereditary stipendiary class with declining military value. Russian service nobility became, by the later eighteenth century, a nobility exempted from compulsory service altogether.` },
+            { p: `Do not flatten these into one design. The Ottoman and Safavid corps and the Mughal mansab were built to keep standing from descending, the Qing banner was hereditary by intention, and the Russian nobility was hereditary before Peter tied its advancement to service. What they share is the direction they drifted: elites created or reorganized to serve the center developed corporate and familial interests of their own. Janissary status became effectively hereditary and the corps became a political actor able to depose sultans. Mansabs were not inheritable in principle, and in practice great houses reproduced their position across generations. Banner households became a hereditary stipendiary class with declining military value. Russian service nobility became, by the later eighteenth century, a nobility exempted from compulsory service altogether.` },
             { p: `The reason is worth stating because it is general. A man who has power wants his son to have it, and a ruler who needs that man's cooperation this year is poorly placed to refuse. Institutional designs that depend on permanently denying inheritance require constant enforcement by a center that is strong enough not to need the concession, and any period of weakness converts a service elite into an aristocracy. That is not a story about decadence; it is what happens to a rule that nobody has an interest in enforcing.` }
           ]
         }
@@ -140,7 +140,7 @@ module.exports = {
         ['Kul', 'A servant of the Ottoman ruler&rsquo;s household, without independent legal standing, the status that made devshirme recruits dependable.'],
         ['Mansab', 'The Mughal numerical rank fixing an officer&rsquo;s pay and cavalry obligation, granted by the emperor and not inherited.'],
         ['Banner', 'A hereditary Qing military and social unit of Manchu, Mongol or allied Chinese households, garrisoned and stipendiary.'],
-        ['Table of Ranks', 'Peter I&rsquo;s 1722 grading of military, civil and court offices, which tied Russian noble status to service rather than birth.'],
+        ['Table of Ranks', 'Peter I&rsquo;s 1722 grading of military, civil and court offices, which tied advancement and access to noble status to state service while leaving the hereditary nobility in place.'],
         ['Praetorian problem', 'The tendency of a guard created to protect a ruler to become a power that makes and unmakes rulers, as the janissaries did.']
       ]
     },

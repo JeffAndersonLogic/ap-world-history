@@ -86,7 +86,7 @@ module.exports = {
       },
       terms: [
         ['Land-based empire', 'A state expanding across contiguous territory rather than overseas, the category this unit compares.'],
-        ['Conquest elite', 'A ruling group of different origin from the majority it governs, true of every empire in this unit.'],
+        ['Conquest elite', 'A ruling group of different origin from the majority it governs, which fits the Qing and the Mughals closely and Russia hardly at all.'],
         ['Service elite', 'Officials and soldiers whose status comes from the ruler rather than from birth or land, the standard early modern solution to loyalty.'],
         ['Revenue system', 'The arrangement by which a state converts rural production into money or service, and the best single predictor of what else it can do.'],
         ['Frontier type', 'Whether an empire faced fortified rivals, gunpowder equals, or mobile peoples, which shaped the army and therefore the state.']
@@ -159,7 +159,7 @@ module.exports = {
         {
           heading: 'Variable three: who was on the other side of the frontier?',
           blocks: [
-            { p: `Armies are shaped by their opponents, and states are shaped by their armies. The Ottomans faced fortified European states and a rival gunpowder empire, so they needed siege artillery, disciplined infantry and a navy, all of which are expensive and standing. The Qing and the Russians faced mobile peoples with no artillery, so they needed logistics, forts and mounted firepower rather than great siege trains, and they could expand at lower cost per square mile than anyone else in this unit.` },
+            { p: `Armies are shaped by their opponents, and states are shaped by their armies. The Ottomans faced fortified European states and a rival gunpowder empire, so they needed siege artillery, disciplined infantry and a navy, all of which are expensive and standing. The Qing and the Russians faced mobile peoples who were themselves acquiring gunpowder weapons, the Zunghars casting their own cannon with foreign help, but who could not match a settled empire's siege train or its supply, so they needed logistics, forts and mounted firepower rather than great siege trains, and they could expand at lower cost per square mile than anyone else in this unit.` },
             { p: `The Mughals faced neither reliably: a rival empire at Kandahar, mobile Maratha forces in the Deccan that artillery could not pin, and a coastline they did not defend. That last omission is the one to carry into Unit 4, because it explains how European trading companies established fortified posts inside a superpower's territory without the superpower treating it as an invasion.` },
             { note: {
               kind: 'misconception',
@@ -301,7 +301,7 @@ module.exports = {
       {
         category: 'Expansion and its limits',
         title: 'The steppe closed and the coast opened',
-        body: `The Qing spent the eighteenth century destroying the Zunghar state and absorbing the territory that became Xinjiang, ending two thousand years of nomadic threat to settled China, because firearms and supply forts reversed the mobility advantage of cavalry. The Mughals, at their greatest extent under Aurangzeb, never built a navy able to control their own coastline, and European trading companies established fortified posts inside imperial territory without the empire treating it as an invasion. The difference follows from which frontier each state judged dangerous, and the significance is that the threat each empire prepared for was the one it had always faced, while the one that mattered in the next century arrived from the direction nobody was watching.`
+        body: `The Qing spent the eighteenth century destroying the Zunghar state and absorbing the territory that became Xinjiang, transforming a steppe frontier that had shaped Chinese security for two thousand years, because firearms and supply forts reversed the mobility advantage of cavalry. The Mughals, at their greatest extent under Aurangzeb, never made blue-water naval power a priority to match their land armies, and European trading companies held fortified posts on their coast. They were not ignored: Mughal forces took Portuguese Hooghly in 1632 and Aurangzeb's government fought the English East India Company in the 1680s. The difference follows from which frontier each state judged dangerous, and the significance is that each empire ranked first the threat it had always faced, while the one that mattered in the next century was the one it had ranked second.`
       }
     ]
   }
