@@ -178,7 +178,7 @@ module.exports = {
         comparison: `Against <em>Melaka</em> and <em>Kilwa</em> in Topics 1.3 and 1.5: identical institution in three environments, a settlement at a compulsory transfer point living on services and duties. The comparison is strong precisely because the landscapes could not be more different.`
       },
       terms: [
-        ['Sijilmasa', 'The southern Moroccan city where caravans were assembled, financed and dispatched, and where southbound goods entered Mediterranean markets.'],
+        ['Sijilmasa', 'The southern Moroccan city where caravans were assembled, financed and dispatched, and where northbound goods off the desert entered North African and Mediterranean markets.'],
         ['Timbuktu', 'The Sahelian city near the Niger where desert caravans met river transport, which made it a market and then a center of Islamic scholarship.'],
         ['Djenne', 'The inland delta city upstream on the Niger, a major market and, with its great mud-brick mosque, an emblem of Sahelian urban architecture.'],
         ['Gao', 'The Niger city that served as a terminus of the eastern desert routes and later as the capital of the Songhai empire.'],

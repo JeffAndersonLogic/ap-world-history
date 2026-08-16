@@ -41,7 +41,7 @@ module.exports = {
   docTitle: 'BeHistorical | Deep Reading | Topic 2.3: The Ocean That Carried Everything',
   eyebrow: 'Topic 2.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Ocean That Carried <em>Everything</em>',
-  deck: `The busiest trading system in the world before <span class="num">1500</span> had no navy, no ruler and no capital, and it moved cargo by the shipload rather than by the saddlebag. This chapter covers the ships, the economics, the port cities and the merchant communities, and finishes with the one fleet that was a state project and what happened to it.`,
+  deck: `One of the largest trading systems in the world before <span class="num">1500</span> had no ruler, no capital and no power trying to police it, and it moved cargo by the shipload rather than by the saddlebag. This chapter covers the ships, the economics, the port cities and the merchant communities, and finishes with the one fleet that was a state project and what happened to it.`,
   meta: ['Five sections', 'Ships, cargo, ports, people', 'Read alongside the First & 10'],
   footerNote: 'Topic 2.3 &nbsp;·&nbsp; The Ocean That Carried Everything &nbsp;·&nbsp; Companion to the First &amp; 10',
 
@@ -178,7 +178,7 @@ module.exports = {
         {
           heading: 'The system without a hegemon',
           blocks: [
-            { p: `Here is the fact that surprises students and that examiners love. Before the Portuguese arrived at the very end of the fifteenth century, no power attempted to control the Indian Ocean as a whole. There were no state navies patrolling the sea lanes, no licensing of who could sail where, no blockades. Ports were governed; the water between them was not.` },
+            { p: `Here is the fact that surprises students and that examiners love. Before the Portuguese arrived at the very end of the fifteenth century, no power attempted to control the Indian Ocean as a whole. Indian Ocean states had fleets and fought at sea, and Calicut, Gujarat and the Mamluks would all put warships against the Portuguese. What none of them attempted was basin-wide control: no licensing of who could sail where, no blockade of a rival's trade, no claim to govern the water itself. Ports were governed; the water between them was not.` },
             { p: `The system worked anyway, and the reason is worth stating precisely: at sea a merchant's exposure is to weather and to the occasional pirate near a coast, not to the tolls, bandits and hostile jurisdictions that line every mile of an overland route. There is nothing between two ports to control. So maritime trade needed welcoming harbors rather than a protector, which is exactly why the Indian Ocean flourished under dozens of separate rulers while the Silk Roads had their best century under one empire.` },
             { note: {
               kind: 'misconception',
@@ -276,7 +276,7 @@ module.exports = {
               label: 'Common mistake to avoid',
               html: `Resist the counterfactual that China nearly discovered the world and turned back. It imports the aims of later European voyages into a project that did not share them: Zheng He was not looking for a route to anywhere, because the route was known and Chinese goods were already reaching every market that mattered, and China wanted very little that the ocean did not already deliver. The interesting historical question is not why China stopped but why anyone would continue: a state fleet that costs a fortune, returns prestige rather than profit, and secures trade that private merchants were conducting perfectly well without it is a policy that has to be justified every year in a court budget. Answer that and you have said something; repeat the counterfactual and you have said nothing.`
             } },
-            { p: `Chinese maritime trade did not end with the voyages. Private Chinese merchants and shipping continued throughout the period, and Chinese communities remained in Southeast Asian ports. What ended was the state's presence at sea, and the practical result was that when armed European ships entered this ocean at the end of the century, they met a rich, plural, well-organized commercial world with no navy in it.` }
+            { p: `Chinese maritime trade did not end with the voyages. Private Chinese merchants and shipping continued throughout the period, and Chinese communities remained in Southeast Asian ports. What ended was the state's presence at sea, and the practical result was that when armed European ships entered this ocean at the end of the century, they met a rich, plural, well-organized commercial world that no single power was trying to police.` }
           ]
         }
       ],
@@ -308,7 +308,7 @@ module.exports = {
       {
         category: 'Political control',
         title: 'One network needed an empire and the other needed nobody',
-        body: `Overland trade peaked under the Pax Mongolica, when one authority reduced tolls and made the journey's risk calculable, and contracted when that authority dissolved after 1335. The Indian Ocean had no hegemon at all before 1498, and Calicut, Hormuz, Aden, Kilwa and Melaka were separately governed and competitively hospitable. The difference exists because of where the danger lies: a caravan is exposed for every mile between towns, so the ground must be policed, while a ship is exposed only in port, so a welcoming harbor is the only institution the system requires.`
+        body: `Overland trade peaked under the Pax Mongolica, when related Chinggisid regimes reduced tolls and made the journey's risk calculable, and contracted as those regimes fell apart after 1335. The Indian Ocean had no hegemon at all before 1498, and Calicut, Hormuz, Aden, Kilwa and Melaka were separately governed and competitively hospitable. The difference exists because of where the danger lies: a caravan is exposed for every mile between towns, so the ground must be policed, while a ship is exposed only in port, so a welcoming harbor is the only institution the system requires.`
       },
       {
         category: 'Cultural consequences',
