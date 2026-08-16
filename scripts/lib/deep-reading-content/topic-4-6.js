@@ -167,7 +167,7 @@ module.exports = {
       name: 'Rivals, and the Ships States Hired',
       navLabel: 'Rivals',
       dates: 'c. 1570 to 1700 &nbsp;·&nbsp; Dutch displacement and privateering',
-      thesis: `The most effective challenge to the Portuguese and Spanish empires came from other Europeans, and it took two forms: a company with more capital that simply out-competed and out-shot the Estado da India, and a legal instrument that let a state attack shipping without admitting it was at war.`,
+      thesis: `The most effective challenge to the Portuguese and Spanish empires came from other Europeans, and it took two forms: a company with more capital that simply out-competed and out-shot the Estado da India, and a legal instrument that let a state wage war on a rival's commerce with ships and crews it did not have to pay for.`,
       parts: [
         {
           heading: 'How the Dutch took the network',

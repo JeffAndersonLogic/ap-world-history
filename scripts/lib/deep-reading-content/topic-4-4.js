@@ -97,7 +97,7 @@ module.exports = {
         ['Trading post empire', 'An empire of coastal strongpoints that taxes and directs trade rather than governing territory or population.'],
         ['Cartaz', 'The pass Portugal sold to merchant ships, requiring them to call at a Portuguese port and pay duties there.'],
         ['Chokepoint', 'A narrow passage all shipping on a route must use, which lets a small naval force tax a large trade.'],
-        ['Factory', 'A fortified trading station holding warehouses, agents and a garrison, the standard unit of the Portuguese network.']
+        ['Factory', 'A permanent overseas trading post staffed by company or crown agents; some were fortified or sat inside a fort and others were not.']
       ]
     },
 
@@ -170,7 +170,7 @@ module.exports = {
             { p: `The crown had not paid for the conquests. Expeditions were private ventures under royal license, and the men who survived expected reward. The <span class="kt">encomienda</span> was the currency: a grant to a Spaniard of the right to demand labor and tribute from a named Indigenous community, in exchange for a formal obligation to protect them and see them instructed in Christianity.` },
             { p: `The mechanism is worth stating exactly. It was not a grant of land, legally, and it did not make the people property. It was a grant of <em>the right to their work</em>, which let the crown pay its conquerors without money and without ceding sovereignty over territory. In practice, on a community collapsing from epidemic and with no realistic appeal, the distinction between a right to labor and outright ownership was thin.` },
             { p: `Legal challenge came early and from inside the system. Antonio de Montesinos preached against it in <span class="num">1511</span>; Bartolome de las Casas, himself once an encomendero, spent decades campaigning; the Laws of Burgos of <span class="num">1512</span> and the New Laws of <span class="num">1542</span> restricted the institution and tried to end its inheritance. The New Laws provoked armed revolt in Peru and were partly withdrawn, which tells you where power actually sat.` },
-            { p: `Encomienda declined across the sixteenth century, less from the reformers than from the collapse in the population it drew on, and was succeeded by the <span class="kt">repartimiento</span>, a state-administered rotational draft that in the Andes reused the Inca mit'a, and by debt peonage and wage labor on the great estates.` }
+            { p: `Encomienda declined across the sixteenth century, less from the reformers than from the collapse in the population it drew on. What followed was not one successor but a portfolio, and keeping two of them apart is worth a mark. The <span class="kt">repartimiento</span> required Indigenous communities to supply rotating groups of workers for limited periods, in theory for wages. The Andean colonial <span class="kt">mita</span> is a related but separate institution, built by Viceroy Toledo in the 1570s out of a pre-conquest Andean labor obligation and aimed above all at Potosi. Debt peonage and wage labor on the great estates grew alongside both. These overlapped in time and place rather than replacing one another in tidy stages, and Indigenous slavery and encomienda tribute persisted in some regions while the others were running.` }
           ]
         },
         {
@@ -190,7 +190,8 @@ module.exports = {
       },
       terms: [
         ['Encomienda', 'A grant of the right to Indigenous labor and tribute from a named community, used to pay conquerors without money or land.'],
-        ['Repartimiento', 'The state-administered rotational labor draft that succeeded encomienda, built in the Andes on the Inca mit\'a.'],
+        ['Repartimiento', 'The Spanish colonial requirement that Indigenous communities supply rotating groups of workers for limited periods, in theory for wages.'],
+        ['Colonial mita', 'The Andean labor draft Spanish authorities built out of a pre-conquest Inca obligation, most famously to supply Potosi; related to the repartimiento and not the same institution.'],
         ['Viceroyalty', 'A vast administrative division, New Spain and Peru, headed by a viceroy standing in the king\'s person.'],
         ['Audiencia', 'A high court with administrative powers, able to report to Madrid over the viceroy and check him from inside his own territory.'],
         ['Casa de Contratacion', 'The Seville house of trade that licensed every ship and registered every cargo, the crown\'s point of control over Atlantic commerce.']

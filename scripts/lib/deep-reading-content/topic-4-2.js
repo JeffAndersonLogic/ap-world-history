@@ -214,7 +214,7 @@ module.exports = {
           heading: 'The search for a passage',
           blocks: [
             { p: `The logic is straightforward. If Spain holds the west and Portugal the route around Africa, a latecomer needs a third way to Asia, and the map suggested two: a <span class="kt">Northwest Passage</span> over the top of North America, or a <span class="kt">Northeast Passage</span> over the top of Russia. Both would also, in theory, be shorter.` },
-            { p: `England sent John Cabot west in <span class="num">1497</span>, reaching Newfoundland. France sent Verrazzano along the North American coast in the <span class="num">1520</span>s and Cartier up the St Lawrence in the <span class="num">1530</span>s, looking for the opening. English expeditions under Frobisher, Davis and later Hudson probed the Arctic, and Hudson's crew mutinied and set him adrift in <span class="num">1611</span>. Dutch expeditions under Barents tried the northeast route and wintered in the Arctic in the <span class="num">1590</span>s. Every one of these failed at its stated objective, because the passages are choked with ice and were not navigable by wooden sailing ships.` }
+            { p: `England sent John Cabot west in <span class="num">1497</span>, reaching Newfoundland. France sent Verrazzano along the North American coast in the <span class="num">1520</span>s and Cartier up the St Lawrence in the <span class="num">1530</span>s, looking for the opening. English expeditions under Frobisher, Davis and later Hudson probed the Arctic, and Hudson's crew mutinied and set him adrift in <span class="num">1611</span>. Dutch expeditions under Barents tried the northeast route and wintered in the Arctic in the <span class="num">1590</span>s. Every one of these failed at its stated objective, and the reason is worth stating carefully because the shorthand version is wrong. Both passages are real geography and both have since been sailed. What defeated these expeditions was Arctic ice, which in the climate of those centuries and with wooden sailing ships made the routes unusable as dependable commercial highways.` }
           ]
         },
         {
@@ -234,7 +234,7 @@ module.exports = {
       ],
       useThis: {
         tool: `Exclusion redirecting a state's strategy. <em>The mechanism is that a power shut out of existing routes by treaty and by force must either find a new route, take the existing one, or exploit what lies along the way, and when the northern passages proved unnavigable the latecomers converted to fisheries, furs, licensed plunder and eventually to chartered companies that could contest the southern routes directly.</em>`,
-        limit: `The passages never existed as usable routes in this period, so decades of expeditions and many lives were spent proving a negative.`,
+        limit: `The passages existed and were unusable, which is not the same claim, so decades of expeditions and many lives were spent establishing that ice closed a route the map correctly said was there.`,
         comparison: `Against <em>Portugal and Spain</em>: the first movers were funded by crowns and held their claims by royal monopoly, while the latecomers ended up funding expansion through joint-stock companies with delegated sovereign powers, which is the institutional difference the Topic 4.4 chapter is built on.`
       },
       terms: [
@@ -270,7 +270,7 @@ module.exports = {
       {
         category: 'Law and power',
         title: 'A line only binds those who accept the authority that drew it',
-        body: `Tordesillas in 1494 divided newly encountered lands between Spain and Portugal along a line west of Cape Verde, mediated by a papacy both crowns recognized, and it gave Portugal Brazil. It meant nothing to Protestant England or the Dutch Republic after the Reformation, nothing to France, and nothing at all to the peoples whose territory it allocated. The excluded powers spent decades looking for northern passages that did not exist, then took what was profitable anyway: Newfoundland cod, the fur trade, licensed plunder of Spanish shipping, and finally chartered companies that went to Asia by Portugal's own route. Whenever a treaty appears in this course, ask who signed it and who had no reason to care.`
+        body: `Tordesillas in 1494 divided newly encountered lands between Spain and Portugal along a line west of Cape Verde, mediated by a papacy both crowns recognized, and it gave Portugal Brazil. It meant nothing to Protestant England or the Dutch Republic after the Reformation, nothing to France, and nothing at all to the peoples whose territory it allocated. The excluded powers spent decades looking for northern passages that ice would not let them use, then took what was profitable anyway: Newfoundland cod, the fur trade, licensed plunder of Spanish shipping, and finally chartered companies that went to Asia by Portugal's own route. Whenever a treaty appears in this course, ask who signed it and who had no reason to care.`
       }
     ]
   }
