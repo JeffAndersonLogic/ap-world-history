@@ -25,6 +25,16 @@
   font-family:var(--font-display); font-weight:700;
   font-size:clamp(2.3rem,7vw,4.6rem); line-height:1.04;
   letter-spacing:.02em; margin:.6rem 0 1rem; text-wrap:balance;
+  /* A cover word longer than the line must break rather than push the page
+     sideways. The clamp floor is 2.3rem, so at the 320px viewport reflow is
+     tested at, Cinzel sets "Industrialization" about 75px wider than the
+     viewport and the whole page scrolled horizontally. break-word is a floor
+     rather than a style choice: it does nothing until a word cannot fit on a
+     line of its own, so the six shorter cover titles are unchanged to the
+     pixel. Do not swap it for `anywhere`, which breaks words that would have
+     fit by wrapping normally. Unit 8's "Decolonization" is the next one close
+     to this cliff, and it inherits the fix by existing. */
+  overflow-wrap:break-word;
 }
 .eb-cover h1 em{font-style:normal;color:var(--gold)}
 /* The cover is the one near-black surface on an eBook page, so it takes the
