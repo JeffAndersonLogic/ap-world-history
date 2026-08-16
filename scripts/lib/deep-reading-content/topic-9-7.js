@@ -1,0 +1,300 @@
+'use strict';
+
+/**
+ * Topic 9.7, Resistance to Globalization After 1900: the deep reading.
+ *
+ * Why this exists. The success criteria ask for anti-IMF activism, anti-World
+ * Bank campaigns and the Seattle protests, explained rather than listed, plus a
+ * qualification. The First & 10 makes the essential point that most critics
+ * opposed particular rules rather than exchange itself. What it cannot do in
+ * three sections is answer the question a checkpoint actually turns on: why
+ * these targets, why at that moment, and what if anything the campaigns
+ * changed.
+ *
+ * The organizing mechanism is that a protest is aimed at whoever can grant the
+ * demand. When decisions about tariffs, subsidies, public spending and the
+ * location of a factory moved out of national parliaments and into loan
+ * conditions, trade agreements and corporate siting decisions, the address for
+ * a grievance moved with them. That is why a movement of farmers, dockworkers
+ * and students ends up outside a ministerial conference in a city none of them
+ * lives in. Topic 9.5 established that a systemic grievance has to be converted
+ * into something with an owner; this chapter is what happens when the owner is
+ * an institution nobody voted for.
+ *
+ * Three things carried deliberately:
+ *
+ *   1. The ledger in section 04 is the part that makes this a history chapter
+ *      rather than a sympathetic narration. Every claimed outcome is dated and
+ *      attached to a documented change in the target's own behavior, which is
+ *      the evidentiary standard Topic 9.5 set for attributing anything to a
+ *      movement.
+ *   2. The case for the institutions is stated properly, because a student who
+ *      has only heard the critique cannot write the qualification. The Bank's
+ *      and Fund's defenders had an argument about unsustainable deficits, and
+ *      the strongest criticism of adjustment came from inside the UN system.
+ *   3. Present-day politics is handled at arm's length, dated, and without
+ *      taking a side, because the durable historical claim is about where
+ *      decisions are made and the rest is contested current politics.
+ */
+
+module.exports = {
+  topicKey: 't9-7',
+  slug: 'topic-9-7-resistance-globalization',
+  sourceFile: 'deep-reading-topic-9-7-resistance-globalization.html',
+  lessonFile: 'lesson-9-7-resistance-globalization.html',
+
+  docTitle: 'BeHistorical | Deep Reading | Topic 9.7: Protest Follows the Decision',
+  eyebrow: 'Topic 9.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
+  titleHtml: 'Protest Follows the <em>Decision</em>',
+  deck: `In <span class="num">1999</span> tens of thousands of people shut down a trade meeting in a city most of them did not live in, over rules written by an organization four years old. To understand why, follow the decisions. Through the <span class="num">1980</span>s and <span class="num">1990</span>s the choices that set a food subsidy, a tariff, a dam site or a factory's location moved out of national parliaments and into loan conditions, trade agreements and corporate siting decisions. A protest is aimed at whoever can grant the demand, so when the decision moved, the protest moved after it.`,
+  meta: ['Four sections', 'Conditionality, coalition, the state, the ledger', 'Read alongside the First & 10'],
+  footerNote: 'Topic 9.7 &nbsp;·&nbsp; Protest Follows the Decision &nbsp;·&nbsp; Companion to the First &amp; 10',
+
+  howTo: {
+    heading: 'How to Use This',
+    intro: `Sections 01 to 03 are three kinds of resistance sorted by who was being addressed: the lenders, the trade rules, and the media and technology systems. Section 04 is the ledger, which asks what any of it actually changed and is where the qualification a checkpoint wants comes from. The classification is the answer to "various responses", so learn the categories rather than the anecdotes.`,
+    steps: [
+      `<b>01 Conditionality:</b> what a structural adjustment loan actually required, who paid for it, and the case the lenders made.`,
+      `<b>02 The coalition:</b> Seattle in 1999, why those groups converged, and the disagreements the alliance did not resolve.`,
+      `<b>03 States and cultures:</b> screen quotas, cultural exception treaties, national platforms, and movements that rejected rather than reformed.`,
+      `<b>04 The ledger:</b> the documented outcomes with dates, what the campaigns did not touch, and how to write about live politics.`,
+      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+    ]
+  },
+
+  empires: [
+    // ── 01 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'conditionality',
+      num: '01',
+      accent: 'gold',
+      name: 'The Loan With a Policy Attached',
+      navLabel: 'Conditionality',
+      dates: 'c. 1980 to 2005 &nbsp;·&nbsp; Structural adjustment and its critics',
+      thesis: `The reason anyone protests a bank is that this particular kind of lending does not only move money, it sets policy. A structural adjustment loan changed who decided a country's budget, and that transfer of decision is what the campaigns were about.`,
+      parts: [
+        {
+          heading: 'What conditionality actually is',
+          blocks: [
+            { p: `The International Monetary Fund and the World Bank were created at the Bretton Woods conference of <span class="num">1944</span>, and the Topic 9.4 chapter explains the order they were built to run. What changed their role was the debt crisis that opened when Mexico announced in August <span class="num">1982</span> that it could not service its debts, followed by a wave of similar crises across Latin America, Africa and parts of Asia. A government that cannot pay needs emergency lending, and from around <span class="num">1980</span> that lending came with <span class="kt">conditionality</span>: a written list of policy changes the borrower had to enact to receive each tranche of money.` },
+            { p: `The standard package, known as <span class="kt">structural adjustment</span>, was reasonably consistent. Cut the budget deficit, which in practice meant reducing subsidies on food and fuel, freezing or cutting public sector wages, and charging user fees for health care and schooling. Devalue the currency to make exports competitive. Privatize state-owned enterprises. Remove tariffs and open to foreign investment. The economist John Williamson gave a version of the list a name in <span class="num">1989</span>, the <span class="kt">Washington Consensus</span>, and then spent years objecting that the phrase had come to mean something far more ideological than the ten technical measures he had described.` },
+            { p: `Notice what conditionality does to accountability, because that is the historical claim. A finance minister who cuts a bread subsidy under an agreement with an external lender can tell voters the decision was not hers, and voters who want it reversed have no one to vote against. The demand therefore leaves the ballot box and goes into the street, and it goes to the lender's door. That is the chapter's mechanism appearing for the first time.` }
+          ]
+        },
+        {
+          heading: 'Who paid, and how we know',
+          blocks: [
+            { p: `The costs were concentrated and quick. Removing a fuel subsidy raises transport costs within days for people who spend a large share of income on getting to work. Introducing school fees removes children from classrooms in the same term. Public sector layoffs hit the salaried urban households that are also the most politically organized. Sociologists John Walton and David Seddon documented dozens of austerity protests across Latin America, Africa, the Middle East and Asia between the mid-<span class="num">1970</span>s and the early <span class="num">1990</span>s, and the pattern was consistent enough that the phrase "IMF riot" entered ordinary use.` },
+            { p: `Venezuela in February <span class="num">1989</span> is the case usually cited. Days after the government announced a package including sharp increases in fuel and transport prices, rioting and looting spread through Caracas and other cities and the army was deployed. The episode is called the <span class="kt">Caracazo</span>. Official counts of the dead were around three hundred; human rights organizations argued at the time that the true figure was far higher, and exhumations of mass graves in later years supported them. The total has never been established, and the honest formulation is a range with the reason for the uncertainty attached, which is that a government counting deaths caused by its own security forces is not a neutral source.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: the sharpest criticism came from inside the system',
+              html: `It would be easy to treat this as activists against institutions, and the record is more interesting than that. In <span class="num">1987</span> UNICEF, a United Nations agency, published <em>Adjustment with a Human Face</em>, a study by Giovanni Andrea Cornia, Richard Jolly and Frances Stewart, which accepted that many economies needed adjustment and argued with data that the programs as designed were cutting health, nutrition and schooling spending in ways that damaged children measurably and unnecessarily. That is not a protest pamphlet; it is one part of the international system publishing evidence against another part. It matters for two reasons. It shows that the disagreement was technical as well as political, and it is a large part of why the Bank and Fund began, through the <span class="num">1990</span>s, to add social spending protections and to talk about poverty reduction rather than adjustment. When you need to show that a criticism was serious rather than merely loud, an internal document is the strongest evidence available.`
+            } },
+            { p: `The case for the lenders has to be stated too, or the qualification cannot be written. Their argument was that the crisis countries had genuinely unsustainable deficits and inflation, that somebody had to lend when private markets would not, that a lender is entitled to conditions, and that the alternative to a painful program was a disorderly default with worse consequences. Whether adjustment worked remains disputed among economists, and the dispute turns partly on the counterfactual, which is unobservable: comparing an adjusting country to itself without the program is exactly what nobody can do.` }
+          ]
+        },
+        {
+          heading: 'The World Bank and the project campaigns',
+          blocks: [
+            { p: `Opposition to the Bank took a different shape, because a development project has a location. The Sardar Sarovar dam on the Narmada River in India, which the Bank helped finance, would submerge villages and farmland, and the <span class="kt">Narmada Bachao Andolan</span> organized affected villagers, activists and researchers from the mid-<span class="num">1980</span>s around the claim that resettlement provisions were inadequate and that the people bearing the cost had not agreed to it.` },
+            { p: `This campaign produced the single best-documented outcome in the chapter, and it is documented because the Bank itself created the record. Under pressure, the Bank commissioned an independent review led by Bradford Morse, which reported in <span class="num">1992</span> and was severely critical of resettlement and environmental assessment. The Bank withdrew from the project in <span class="num">1993</span>, and in the same year it established an <span class="kt">Inspection Panel</span>, a standing body to which people harmed by a Bank-financed project can complain directly. A campaign that produces a critical internal review, a withdrawal and a permanent complaints mechanism has met the evidentiary standard Topic 9.5 sets: a documented change in the target's own calculations rather than a coincidence of protest and policy.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Conditionality as a transfer of decision. <em>The mechanism is that an emergency loan tied to a written list of policy changes moves a budget decision from the borrowing government to the lender, so a citizen who objects to a fuel price or a school fee has no domestic official who can be voted out over it and no institution that answers to them. The grievance therefore travels to the lender, which explains both the target of these campaigns and their transnational form.</em>`,
+        limit: `The transfer is never complete. Governments negotiated, delayed, complied selectively and sometimes used the lender as political cover for cuts they already wanted, so attributing every austerity measure to an external condition overstates the mechanism and lets domestic decision-makers off.`,
+        comparison: `Against the <em>Opium Wars</em> and the unequal treaties in Topic 5.5: those also removed tariff and fiscal decisions from a government by external pressure, backed by force rather than by lending. Comparing the two makes a precise point about change over time in how leverage is applied, and it is a stronger comparison than treating either as simply domination.`
+      },
+      terms: [
+        ['Conditionality', 'The written list of policy changes a borrower must enact to receive each tranche of an emergency loan, which moves the decision from the government to the lender.'],
+        ['Structural adjustment', 'The standard loan package from around 1980: deficit cuts, subsidy removal, devaluation, privatization and trade opening.'],
+        ['Washington Consensus', 'John Williamson\'s 1989 name for a list of ten policy measures, which he later objected had come to mean something far broader than he intended.'],
+        ['Caracazo', 'The February 1989 rioting in Venezuela following an adjustment package that raised fuel and transport prices; the death toll is disputed and was never established.'],
+        ['Inspection Panel', 'The World Bank body created in 1993 to receive complaints from people harmed by Bank-financed projects, an institutional outcome of the Narmada campaign.']
+      ]
+    },
+
+    // ── 02 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'coalition',
+      num: '02',
+      accent: 'rust',
+      name: 'Teamsters, Turtles, and the Room Upstairs',
+      navLabel: 'The coalition',
+      dates: '1994 to 2003 &nbsp;·&nbsp; Chiapas to Cancun',
+      thesis: `Seattle is the image everyone has of this topic, and the useful analysis is not the tear gas. It is that two entirely separate revolts happened in the same week, one in the street and one inside the negotiating rooms, and the meeting failed for reasons belonging to both.`,
+      parts: [
+        {
+          heading: 'Before Seattle, which matters',
+          blocks: [
+            { p: `Treating <span class="num">1999</span> as the beginning gets the causation wrong. Two earlier episodes show the movement already working. On 1 January <span class="num">1994</span>, the day the North American Free Trade Agreement took effect, the Zapatista Army of National Liberation rose in the Mexican state of Chiapas, timing the action explicitly against the agreement and against constitutional changes affecting communal landholding. It was an armed rising that became, within weeks, mostly a communications campaign, and it was among the first movements anywhere to use the internet as its principal channel to international supporters.` },
+            { p: `Second, between <span class="num">1995</span> and <span class="num">1998</span> the wealthy countries of the OECD negotiated a Multilateral Agreement on Investment, intended to standardize protections for foreign investors. A leaked draft circulated online, a transnational campaign of nongovernmental organizations formed around it, France withdrew, and the negotiation was abandoned in <span class="num">1998</span>. A treaty was stopped before it existed by a campaign that assembled itself around a document on the early web. Both cases establish that the network existed before Seattle and that its distinctive capability was speed of coordination across borders.` },
+            { p: `Meanwhile the target had changed shape. The General Agreement on Tariffs and Trade of <span class="num">1947</span> was a negotiating framework; the <span class="kt">World Trade Organization</span>, created on 1 January <span class="num">1995</span> at the end of the Uruguay Round, was a standing organization with a binding dispute settlement system that could authorize retaliation against a member whose law breached the rules. That is a genuine increase in the authority of an international body over national legislation, and it is why the WTO drew opposition that the GATT never had.` }
+          ]
+        },
+        {
+          heading: 'What happened in Seattle, and why the coalition held',
+          blocks: [
+            { p: `The WTO's third ministerial conference opened in Seattle on 30 November <span class="num">1999</span>. Estimates of the crowd commonly run from about forty thousand upward. Nonviolent blockades organized through affinity groups closed intersections and prevented delegates reaching the opening session; a much smaller group broke windows; police used tear gas and pepper spray, the mayor declared a state of emergency and a downtown curfew, and the National Guard was deployed. The conference ended on 3 December without launching a new round of negotiations.` },
+            { p: `The coalition is the analytically interesting part. Labor unions were there because manufacturing employment was falling and trade rules governed where production could go. Environmental groups were there because of a WTO ruling about American restrictions on shrimp imports, which produced the sea turtle costumes and the slogan about Teamsters and turtles. Consumer, farm, student, faith and development organizations came with their own reasons. What united them was not a shared program but a shared observation: an unelected body was making decisions that overrode laws their own legislatures had passed. Shared opposition to a decision-maker is a much easier coalition to build than agreement about what should replace it.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `The turtle case is almost always described wrongly, and describing it correctly is a way to show you understand how trade rules work. In <span class="num">1998</span> the WTO's Appellate Body ruled against the United States in a dispute over an import ban on shrimp caught without turtle excluder devices. It did <b>not</b> rule that a country may not protect endangered species; it ruled that the American measure had been applied in a discriminatory way, giving some exporting countries more notice and technical help than others. The United States modified how it applied the rule, and in a compliance ruling in <span class="num">2001</span> the revised measure was found acceptable. So the accurate claim is narrower and more useful than the slogan: trade adjudication constrained <em>how</em> an environmental measure could be applied, which is still a genuine transfer of authority away from a national legislature, and that is what the protest was really about.`
+            } }
+          ]
+        },
+        {
+          heading: 'The revolt inside the building',
+          blocks: [
+            { p: `The talks did not collapse only because of the street. Delegations from developing countries objected publicly to the conference's procedure, in which the substantive bargaining happened in small invitation-only sessions, informally called green room meetings, from which most members were excluded and then presented with a near-final text. Several delegations said they would not join a consensus reached that way. The chair closed the conference without agreement.` },
+            { p: `Holding both causes together is the strong version of this answer, and it also exposes a real division. Some of the demands in the street, particularly for labor and environmental standards written into trade rules, were opposed by many of the governments and by some of the movements of the Global South, on the grounds that such standards would function as protectionism and shut poorer countries' exports out of wealthy markets. So "resistance to globalization" contains a genuine conflict of interest between a factory worker in Ohio and a garment worker in Dhaka, and pretending otherwise is the weakness in most accounts of this topic.` },
+            { p: `The sequence afterwards is worth knowing. The next ministerial was held in Doha in November <span class="num">2001</span>, in a location far harder for demonstrators to reach, and launched a round of negotiations framed as a development round. At Genoa in July <span class="num">2001</span> a protester, Carlo Giuliani, was killed by police during demonstrations at the G8 summit, which changed the tenor of European mobilizations. The World Social Forum first met at Porto Alegre in January <span class="num">2001</span> under the slogan that another world is possible, deliberately scheduled against the World Economic Forum at Davos, converting a protest movement into a recurring assembly. And at Cancun in <span class="num">2003</span> the ministerial collapsed again, this time squarely over agricultural subsidies, with a bloc of developing countries formed at the meeting holding together. The Doha round never concluded.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Opposition to a decision-maker as a coalition technology. <em>The mechanism is that agreeing on what is wrong requires far less shared interest than agreeing on a remedy, so a body that makes binding decisions over many policy areas at once assembles its own opposition out of groups with nothing else in common. That explains both why the Seattle coalition formed so quickly and why it could not convert into a program, since the moment the question turned to what should replace the rules its members wanted opposite things.</em>`,
+        limit: `The mechanism explains assembly, not durability. Coalitions built on a shared target dissolve when the target changes venue, which is roughly what happened as trade negotiation moved to less accessible locations and into bilateral and regional agreements after Cancun.`,
+        comparison: `Against the <em>abolitionist coalition</em> of Topic 5.7: religious campaigners, formerly enslaved witnesses, radical artisans and commercial rivals of the plantation interest also assembled around a single target while disagreeing about nearly everything else. The Seattle alliance is the same structure two centuries later, and reading them together turns a protest into a pattern.`
+      },
+      terms: [
+        ['World Trade Organization', 'Created 1 January 1995 out of the GATT, with a binding dispute settlement system that could authorize retaliation, which is why it drew opposition the GATT had not.'],
+        ['Battle of Seattle', 'The blockade of the WTO ministerial conference from 30 November 1999, which ended on 3 December without launching a negotiating round.'],
+        ['Green room', 'The informal small-group bargaining at a ministerial conference, exclusion from which was the developing countries\' stated objection at Seattle and Cancun.'],
+        ['Global justice movement', 'The transnational network of labor, environmental, farm, faith and development organizations coordinating across borders from the mid-1990s.'],
+        ['World Social Forum', 'The assembly first held at Porto Alegre in January 2001, scheduled against Davos, which turned episodic protest into a recurring institution.']
+      ]
+    },
+
+    // ── 03 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'states',
+      num: '03',
+      accent: 'iron',
+      name: 'When the State Is the One Resisting',
+      navLabel: 'States and cultures',
+      dates: '1971 to c. 2015 &nbsp;·&nbsp; Quotas, treaties, firewalls and rejection',
+      thesis: `Most accounts of resistance describe citizens against institutions. A large share of the actual resistance was carried out by governments, using law, and it is the strand a student is least likely to have ready.`,
+      parts: [
+        {
+          heading: 'Resistance written into law',
+          blocks: [
+            { p: `Canada introduced Canadian content requirements for broadcasters in <span class="num">1971</span>, obliging radio and television to carry a set share of domestically produced material. South Korea maintained a screen quota requiring cinemas to show domestic films for a set number of days a year, which was cut by half in <span class="num">2006</span> under pressure in trade negotiations with the United States. France pressed hardest of all: in the closing stages of the Uruguay Round in <span class="num">1993</span> it insisted that audiovisual services be treated differently from other trade in services, an argument that became known as the <span class="kt">cultural exception</span>.` },
+            { p: `The argument in each case is the same and is worth stating fairly, because it is not obviously right or obviously wrong. A film is a commodity and also the way a society talks to itself, and section 01 of the Topic 9.6 chapter explains why an unregulated market in a good with near-zero copying costs tends to be won by whoever can spread the largest production budget over the largest audience. Defenders of quotas say that without them a smaller language market cannot sustain its own production at all. Opponents say a quota is a subsidy to domestic producers paid for by audiences and a restriction on what people may choose to watch. Both positions have serious advocates and the dispute is unresolved.` },
+            { p: `The strand culminated in a treaty. UNESCO adopted a Convention on the Protection and Promotion of the Diversity of Cultural Expressions in <span class="num">2005</span>, affirming states' right to adopt cultural policies. It passed overwhelmingly, with the United States and Israel voting against, on the ground that it could be used to justify protectionism. That vote is a compact illustration of the whole disagreement, and it is a better piece of evidence than any protest photograph.` }
+          ]
+        },
+        {
+          heading: 'The national internet',
+          blocks: [
+            { p: `China's filtering and blocking system, developed from the late <span class="num">1990</span>s and generally known abroad by the journalists' coinage <span class="kt">Great Firewall</span>, is the largest example of a state deciding which parts of the global network its population may reach. Google announced in January <span class="num">2010</span> that it would stop censoring its Chinese search results and redirected mainland users to its Hong Kong service. The blocking of foreign platforms was primarily a matter of political control, and it also produced a protected commercial space in which domestic companies grew.` },
+            { p: `<span class="kt">Weibo</span>, a microblogging service, was launched by Sina in August <span class="num">2009</span>, shortly after Twitter and Facebook were blocked following unrest in Xinjiang that July. Baidu, founded in <span class="num">2000</span>, held search; WeChat, launched in <span class="num">2011</span>, combined messaging with payment in a way that had no Western equivalent at the time. This is <span class="kt">localization</span> rather than imitation: the services operated in Chinese, answered to Chinese regulators, were designed around local habits, and kept users and advertising revenue inside the national economy.` },
+            { p: `The honest account is double-edged and that is what makes it usable in an argument. The same platforms enabled surveillance and rapid removal of posts, and they occasionally carried criticism at a scale that forced official responses, as after the high-speed rail collision at Wenzhou in July <span class="num">2011</span>. A student who writes only the first half has produced propaganda and a student who writes only the second half has produced a different propaganda. Write both and you have the complexity point.` }
+          ]
+        },
+        {
+          heading: 'Rejection, which is a different thing from reform',
+          blocks: [
+            { p: `Everything so far in this chapter is an argument about rules. There was also a strand that rejected the premise: religious and nationalist movements in many countries which framed global consumer culture, its advertising, its permissiveness and its commercialism, as a threat to faith, family or national character, and called for a return to local values rather than for renegotiated terms. Keeping this strand distinct from the reform strand is important, because they wanted incompatible things and lumping them together as anti-globalization erases the difference.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not describe rejection movements as simply anti-modern or as a return to the past, and do not describe them as pure hypocrisy either because they used satellite television and social media. Both readings miss the mechanism. These movements were overwhelmingly <b>selective</b>: they adopted the technologies of global communication with enthusiasm while rejecting particular contents and values carried on them, which is a coherent position rather than a contradiction. Religious broadcasters bought satellite airtime; nationalist parties built social media operations; movements organized internationally against internationalism. The accurate claim is that they contested what globalization would carry rather than whether it would exist, which is the same finding as the rest of the chapter arriving from the opposite direction.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The state as a resisting actor. <em>The mechanism is that a government can do what a protest cannot, which is change the rules directly, so where a national film industry, broadcaster or platform survived global competition it was usually because a law required or protected it rather than because audiences chose it. Quotas, cultural exception clauses and blocked platforms are all the same instrument: using sovereign authority to alter what the market would otherwise deliver.</em>`,
+        limit: `The same instrument protects a domestic industry and restricts what citizens may see, and there is no version of it that does one without the other. Which effect dominates depends on who is protected and who is silenced, which is a political judgment rather than a finding.`,
+        comparison: `Against <em>mercantilist policy</em> in Topic 4.6 and the Calico Acts in Topic 4.8: England banned imported Indian cottons because it could not compete with them, exactly as later states restricted imported film and television. Protection by the less competitive producer is a repeating structure, and naming it as such is stronger than treating cultural policy as a purely modern invention.`
+      },
+      terms: [
+        ['Cultural exception', 'The argument, pressed by France in the 1993 Uruguay Round, that audiovisual products should be treated differently from other traded services.'],
+        ['Content quota', 'A legal requirement that broadcasters or cinemas carry a set share of domestic material, as in Canada from 1971 and South Korea until the 2006 reduction.'],
+        ['Great Firewall', 'The journalists\' name for China\'s system of filtering and blocking foreign internet services, developed from the late 1990s.'],
+        ['Localization', 'Building a domestic service adapted to local language, regulation and habits rather than importing a foreign one, as with Weibo from 2009 and WeChat from 2011.'],
+        ['Selective rejection', 'Adopting global technologies while refusing particular contents and values carried on them, the actual position of most religious and nationalist critics.']
+      ]
+    },
+
+    // ── 04 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'ledger',
+      num: '04',
+      accent: 'oxide',
+      name: 'The Ledger',
+      navLabel: 'The ledger',
+      dates: '1993 to the 2010s &nbsp;·&nbsp; What changed, and what did not',
+      thesis: `Topic 9.5 argued that a movement's achievement is best evidenced by a documented change in the target's own behavior. Applied here, that standard produces a real list of outcomes and a much shorter one than the movements wanted, and the gap between the two is the qualification this topic is graded on.`,
+      parts: [
+        {
+          heading: 'What can be documented',
+          blocks: [
+            { p: `<b>Institutional procedure.</b> The World Bank withdrew from Sardar Sarovar in <span class="num">1993</span> after the Morse review, and created the Inspection Panel the same year. Environmental and resettlement safeguards were formalized across development lending in the following decade.` },
+            { p: `<b>Debt.</b> The Jubilee <span class="num">2000</span> campaign, built out of churches, unions and development organizations and reported to have gathered over twenty million signatures worldwide, pressed for cancellation of the debts of the poorest countries. The Heavily Indebted Poor Countries initiative launched in <span class="num">1996</span> and was enhanced in <span class="num">1999</span>; the Multilateral Debt Relief Initiative followed in <span class="num">2005</span>. Debt was canceled for more than thirty countries, and the relief was tied to conditions of its own, which critics noted at the time.` },
+            { p: `<b>Medicines.</b> In <span class="num">1998</span> a large group of pharmaceutical companies sued the South African government over a law intended to allow cheaper access to HIV medicines. A sustained campaign by South African treatment activists and international organizations made the case a public confrontation, and the companies dropped it in April <span class="num">2001</span>. In November <span class="num">2001</span> the WTO ministerial at Doha adopted a declaration affirming that the intellectual property agreement should be interpreted to support public health, including the right to issue compulsory licenses. That is a change to how a binding international rule is read, produced by campaigning, and it is the strongest single item on this ledger.` },
+            { p: `<b>Supply chains.</b> Campaigning against conditions in contract factories from the mid-<span class="num">1990</span>s produced codes of conduct, monitoring bodies and auditing regimes across the apparel and footwear industries. After the collapse of the Rana Plaza building in Bangladesh in April <span class="num">2013</span> killed over a thousand garment workers, a legally binding agreement on building and fire safety was signed the following month by a large group of mostly European brands together with global unions, while a separate and non-binding body was formed by mostly North American brands. That contrast, binding versus voluntary, is the most useful thing in this paragraph, because it lets a student compare two responses to one disaster.` }
+          ]
+        },
+        {
+          heading: 'What did not change, and the honest reckoning',
+          blocks: [
+            { p: `The structural features the movements attacked mostly persisted. Capital remained far more mobile than labor, which the Topic 9.4 chapter identifies as the fact that decides most of the distribution. Conditionality continued in a modified form. Investor protections abandoned with the Multilateral Agreement on Investment in <span class="num">1998</span> reappeared, chapter by chapter, inside bilateral and regional trade and investment treaties, where they attracted much less attention than a single global agreement had. And the movement's own great success at Seattle and Cancun, blocking multilateral rounds, contributed to negotiation shifting into those bilateral and regional deals, where a poorer country bargains alone against a larger one instead of within a bloc. That is a genuinely uncomfortable outcome and it belongs in the answer.` },
+            { p: `Set that against the four conditions Topic 9.5 derived for when a campaign succeeds: a specific rule to change, a target that cares about reputation, an ability to impose a concrete cost, and a standard the target has already accepted. Every item on the documented list above has at least three of the four. The medicines case has all four, which is why it worked. The general campaign against the structure of the global economy has, at best, one, which is why it did not.` }
+          ]
+        },
+        {
+          heading: 'Writing about the present without leaving history',
+          blocks: [
+            { p: `This topic runs into live politics, and the rule that keeps an answer defensible is to make dated structural claims and to leave contested judgments as contested. What the historical record supports is this: through the <span class="num">2000</span>s and <span class="num">2010</span>s the political salience of trade, migration and the authority of international bodies rose in a number of wealthy democracies, and questions about who sets rules and who controls movement featured in major votes, including the United Kingdom's referendum on European Union membership in June <span class="num">2016</span>. Why voters decided as they did is studied by political scientists and genuinely disputed, with economic dislocation, cultural and demographic change, party competition and the campaigns themselves all argued for and none of them established as decisive.` },
+            { p: `So write the structure and date it, and attribute the interpretation. The concentrated losses that Topic 9.4 documents were real and geographically specific, and a constituency shaped by them existed; whether that is the main explanation for any particular election is a question this course cannot settle and should not pretend to.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Judging a movement by a documented change in the target. <em>The mechanism is that protest coincides with many other pressures, so the only reliable evidence that a campaign caused an outcome is a record made by the target itself: a commissioned review that criticizes its own project, a withdrawal, a new complaints procedure, a dropped lawsuit, a signed binding agreement. Applying that standard produces a shorter and far more defensible list than a narrative in which every reform followed a march.</em>`,
+        limit: `The standard is conservative and will miss real effects that left no paper trail, including shifts in what officials considered politically possible. Absence of a document is not evidence that nothing happened, which is why the honest phrasing is that a movement was one contributing cause among several.`,
+        comparison: `Against the <em>anti-apartheid divestment campaign</em> in Topic 9.5: that case scores on all four conditions and took over four decades, which sets the realistic scale. Measuring the global justice movement against it shows why campaigns aimed at a named statute or a named company outperformed campaigns aimed at the structure of the world economy.`
+      },
+      terms: [
+        ['Jubilee 2000', 'The transnational debt cancellation campaign of the late 1990s, followed by the HIPC initiative of 1996 and 1999 and the Multilateral Debt Relief Initiative of 2005.'],
+        ['Doha Declaration on TRIPS and Public Health', 'The November 2001 WTO declaration affirming that intellectual property rules should be read to support access to medicines.'],
+        ['Bangladesh Accord', 'The legally binding fire and building safety agreement signed in May 2013 by mostly European brands and global unions after the Rana Plaza collapse.'],
+        ['Bilateral drift', 'The shift of trade and investment negotiation from global rounds into bilateral and regional treaties, an unintended consequence of blocking multilateral rounds.'],
+        ['Documented change', 'A record made by the target of a campaign, such as a critical internal review or a dropped case, which is the strongest available evidence that a movement achieved something.']
+      ]
+    }
+  ],
+
+  closing: {
+    heading: 'Building an Answer That Scores',
+    navLabel: 'Building a comparison',
+    intro: `Each card is a claim, its evidence and the mechanism. The first card is the classification the learning objective asks for, and the last is the qualification, so write both as full paragraphs.`,
+    pairs: [
+      {
+        category: 'Classification',
+        title: 'Responses sort by who was being addressed, not by how angry they were',
+        body: `The objective asks for the various responses, and a list of protests is not a classification. Sort them by the decision-maker. Aimed at lenders: the anti-IMF and anti-World Bank campaigns against conditionality, the austerity protests Walton and Seddon documented across three continents, the Narmada campaign against a specific project. Aimed at trade rules: Seattle in 1999, Cancun in 2003, and the campaign that killed the Multilateral Agreement on Investment in 1998. Aimed at firms: anti-sweatshop campaigning from the mid-1990s and the binding safety accord signed after Rana Plaza in 2013. Carried out by states: Canadian content rules from 1971, France's cultural exception in 1993, the UNESCO cultural diversity convention of 2005, China's blocking of foreign platforms. And rejection rather than reform: religious and nationalist movements that contested what globalization carried while adopting its technologies. Five categories with dated evidence answers the question a list cannot.`
+      },
+      {
+        category: 'Mechanism',
+        title: 'Conditionality moved the decision, so the protest followed it',
+        body: `After Mexico's default announcement in August 1982, emergency lending to indebted countries came with written policy conditions: cut deficits by removing food and fuel subsidies and charging school and clinic fees, devalue, privatize, open to imports and investment. A citizen who objected had no domestic official to vote against, because the decision no longer sat with one, so the grievance went to the street and to the lender. That explains why campaigns became transnational, why they targeted summits, and why they were organized by coalitions rather than by parties. It also explains the timing of the Caracazo in February 1989, days after a package raising fuel and transport prices, where the official death toll of around three hundred was disputed at the time and later exhumations supported much higher figures that were never established.`
+      },
+      {
+        category: 'Complexity',
+        title: 'Seattle failed for two reasons and the movement contained a real conflict of interest',
+        body: `The WTO ministerial opening on 30 November 1999 was blockaded by a crowd commonly estimated at forty thousand or more, drawn from labor, environmental, farm, faith and student organizations united by opposition to a body whose binding dispute system could override national law. It closed on 3 December with no negotiating round. But delegations from developing countries had also refused a consensus reached in small invitation-only sessions from which they were excluded. Both causes are real, and holding both reveals the division inside the movement: demands to write labor and environmental standards into trade rules were opposed by many Global South governments and organizations as protectionism in disguise. A factory worker in Ohio and a garment worker in Dhaka were both harmed by the same system and did not want the same remedy.`
+      },
+      {
+        category: 'Qualification',
+        title: 'The documented wins were specific and the structure held',
+        body: `Judge a movement by a change in the target's own record. The World Bank commissioned the Morse review, withdrew from Sardar Sarovar in 1993 and created the Inspection Panel that year. Jubilee 2000 preceded debt relief for over thirty countries through HIPC from 1996 and MDRI in 2005. Thirty-nine pharmaceutical companies dropped their South African case in April 2001, and the Doha declaration that November affirmed that intellectual property rules should be read to support public health. A binding safety accord followed Rana Plaza in May 2013. Now the other column: capital stayed mobile while labor did not, conditionality continued in modified form, the investor protections abandoned with the MAI in 1998 reappeared inside bilateral treaties, and blocking multilateral rounds helped push negotiation into bilateral deals where a poor country bargains alone. Campaigns aimed at a named rule, project or company won; campaigns aimed at the structure did not.`
+      }
+    ]
+  }
+};

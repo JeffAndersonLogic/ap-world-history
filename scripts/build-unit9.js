@@ -69,6 +69,16 @@ const DEEP_READINGS = {
     title: 'A Standard You Can Be Held To',
     desc: 'A textbook-depth companion on what a declaration that bound nobody to anything turned out to be good for, and how movements used a standard their governments had already endorsed. Optional, and useful when a checkpoint asks how human rights claims produced political change.',
     url: 'deep-reading-topic-9-5-calls-for-reform-responses.html'
+  },
+  '9.6': {
+    title: 'A Format Is Not a Meaning',
+    desc: 'A textbook-depth companion that follows the near-zero cost of one more digital copy into culture, and separates what actually travels, the format, from what audiences do with it once it arrives. Presents homogenization and hybridity as the live argument they are rather than settling it. Optional, and useful when a checkpoint asks whether globalization flattened culture.',
+    url: 'deep-reading-topic-9-6-globalized-culture.html'
+  },
+  '9.7': {
+    title: 'Protest Follows the Decision',
+    desc: 'A textbook-depth companion that explains why opposition to globalization gathered where it did by following the decisions rather than the slogans, starting from the fact that rules affecting people everywhere were being written by bodies those people could not vote out. Optional, and useful when a checkpoint asks who resisted globalization and why.',
+    url: 'deep-reading-topic-9-7-resistance-globalization.html'
   }
 };
 
