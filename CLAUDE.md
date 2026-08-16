@@ -392,6 +392,28 @@ font hosts and repeats the 320px and 200% measurements, and **skips**, visibly,
 when the fonts do not arrive, because a third party's outage must never fail a
 commit, which is the same reason `check-image-urls.js` is nightly.
 
+**A skip is not a pass, and the environment that skips is the one you develop
+in.** The Unit 6 cover shipped a 75px horizontal overflow at 320px because of
+this. Cloud dev sandboxes generally cannot reach the font hosts from inside
+Chromium, so the second pass skips there and a local run reports a confident
+green having never measured the page a student sees; CI can reach them, and
+failed. **Treat a SKIP on that pass as "not tested", never as "fine", and if you
+have added or renamed a volume title, prove the reflow before pushing.** The
+cheap way needs no browser network access: fetch the woff2 once with `curl`,
+which does work through most proxies, register it with `new FontFace(...)` from
+the bytes, block every request off the fixture server, and measure. That
+reproduced 395 vs 320 exactly, which is how the fix was confirmed rather than
+assumed. The general form of the trap is worth remembering on its own: a check
+allowed to skip will skip in precisely the environment where nobody is watching
+for it.
+
+**A long word in a display face is the recurring shape of this bug.**
+`.eb-cover h1` clamps to a 2.3rem floor, and Cinzel sets "Industrialization"
+379px wide against a 320px viewport. `overflow-wrap:break-word` is the floor
+that stops it, and it is a no-op until a word cannot fit on a line of its own,
+so the shorter cover titles measure identically with and without it. Unit 8's
+"Decolonization" is the next one near the cliff.
+
 **`document.fonts.check()` does not tell you a webfont loaded.** It answers "can
 this string be rendered in that family", and a browser with no network answers
 yes, because it can render it in a fallback. Written that way, the pass above
