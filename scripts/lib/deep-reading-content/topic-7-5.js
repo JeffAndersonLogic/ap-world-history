@@ -37,7 +37,7 @@ module.exports = {
   docTitle: 'BeHistorical | Deep Reading | Topic 7.5: Empire Changes Its Vocabulary',
   eyebrow: 'Topic 7.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Empire Changes Its <em>Vocabulary</em>',
-  deck: `Four empires ended in <span class="num">1918</span> and the total amount of territory under imperial rule went up. The peace that dissolved the Ottoman, Austro-Hungarian, Russian and German empires handed most of the pieces to the winners under a new name, and the name promised eventual self-government. This chapter is the gap between that promise and the administration, and why the gap is the beginning of Unit 8.`,
+  deck: `Four empires did not survive the war and the total amount of territory under imperial rule went up. The peace that dissolved the Ottoman, Austro-Hungarian, Russian and German empires handed most of the pieces to the winners under a new name, and the name promised eventual self-government. This chapter is the gap between that promise and the administration, and why the gap is the beginning of Unit 8.`,
   meta: ['Four sections', 'The settlement, the mandates, the promise, the failures', 'Read alongside the First & 10'],
   footerNote: 'Topic 7.5 &nbsp;·&nbsp; Empire Changes Its Vocabulary &nbsp;·&nbsp; Companion to the First &amp; 10',
 
@@ -67,7 +67,7 @@ module.exports = {
         {
           heading: 'What was decided, and by whom',
           blocks: [
-            { p: `The conference that opened in Paris in <span class="num">1919</span> was dominated by a small group of victorious powers, and produced separate treaties with each defeated state, of which Versailles with Germany is the best known. The Ottoman, Austro-Hungarian, Russian and German empires had all ended, and their territories had to be assigned.` },
+            { p: `The conference that opened in Paris in <span class="num">1919</span> was dominated by a small group of victorious powers, and produced separate treaties with each defeated state, of which Versailles with Germany is the best known. The Austro-Hungarian, Russian and German empires had ended, and the Ottoman Empire was defeated and under occupation, with its formal abolition still four years away. Their territories had to be assigned.` },
             { p: `In central and eastern Europe the settlement created or recognized a set of nation-states out of the Austro-Hungarian and Russian remains: Poland, Czechoslovakia, Yugoslavia, Hungary, and the Baltic republics among them. The organizing idea was <span class="kt">self-determination</span>, associated above all with Woodrow Wilson's Fourteen Points, and in Europe it was applied substantially, though imperfectly, because the populations of the region were mixed and no line could sort them cleanly. Every new state contained large minorities, which is a tension the interwar years never resolved.` },
             { p: `Outside Europe the same principle produced a different instrument. The German colonies and the Ottoman Arab provinces were not made independent and were not formally annexed. They became <span class="kt">mandates</span>, assigned to victorious powers under the supervision of the new League of Nations, which is section 02.` }
           ]

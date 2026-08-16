@@ -65,7 +65,7 @@ module.exports = {
       name: 'Berlin Did Not Divide Africa, It Started a Race',
       navLabel: 'Berlin',
       dates: 'November 1884 to February 1885 &nbsp;·&nbsp; Fourteen states, no Africans',
-      thesis: `The <span class="kt">Berlin Conference</span> drew no colonial borders and allocated no territory to anyone except Leopold. What it did was set a procedural rule, that a new coastal claim had to be backed by <b>effective occupation</b> and notified to the other signatories, and a rule of that shape turns a slow scramble into a fast one, because it converts wanting a place into having to go there first.`,
+      thesis: `The <span class="kt">Berlin Conference</span> drew no colonial borders and allocated no territory to anyone, and the one claim it came closest to settling, Leopold's, it recognized rather than granted. What it did was set a procedural rule, that a new coastal claim had to be backed by <b>effective occupation</b> and notified to the other signatories, and a rule of that shape turns a slow scramble into a fast one, because it converts wanting a place into having to go there first.`,
       parts: [
         {
           heading: 'What was decided in the room',
@@ -83,7 +83,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Africa was divided at the Berlin Conference, or that the delegates drew the borders. It is the single most common error on this topic and it is wrong in three separate ways. The conference allocated no territory except recognition of Leopold's association; the borders were fixed afterward in a long series of bilateral treaties between European powers; and possession on paper was not possession on the ground, which took decades of campaigning against people who did not accept it. The accurate sentence is that Berlin set the <b>rules of the competition</b>, above all effective occupation and notification, and that those rules accelerated a partition that was already beginning. That version explains the speed. "They divided it at a table" explains nothing, and it also quietly erases the African resistance that the next topic is about.`
+              html: `Do not write that Africa was divided at the Berlin Conference, or that the delegates drew the borders. It is the single most common error on this topic and it is wrong in three separate ways. The conference allocated no territory, and recognizing Leopold's association is not the same as awarding him a colony, since his claim had been assembled from treaties on the ground and recognized bilaterally by other powers before and around the conference; the borders were fixed afterward in a long series of bilateral treaties between European powers; and possession on paper was not possession on the ground, which took decades of campaigning against people who did not accept it. The accurate sentence is that Berlin set the <b>rules of the competition</b>, above all effective occupation and notification, and that those rules accelerated a partition that was already beginning. That version explains the speed. "They divided it at a table" explains nothing, and it also quietly erases the African resistance that the next topic is about.`
             } }
           ]
         }

@@ -90,7 +90,7 @@ module.exports = {
       ],
       useThis: {
         tool: `The fiscal-military squeeze. <em>The mechanism is that great-power status came to require manufactured weapons bought with industrial output or foreign currency, while an agrarian tax base yields little, slowly, through intermediaries, so the state must borrow, centralize or concede, and each of those three raises revenue by creating a constituency with a reason and a means to oppose it.</em>`,
-        limit: `It explains the pressure, not the timing. All three empires were under this squeeze for decades and fell within a few years of each other because a world war concentrated the strain, so name the war as what turned a chronic condition into an acute one.`,
+        limit: `It explains the pressure, not the timing, and the timing is not one story. For Russia and the Ottomans the First World War is exactly the accelerant, turning a chronic condition into an acute one. The Qing fell in February <span class="num">1912</span>, before that war began, so its acute cause is the railway nationalization and the provincial revolt in section 03. Name the war for two of the three, and do not let it reach backward over China.`,
         comparison: `Against the <em>gunpowder empires</em> in Topic 3.1: there too a military technology forced a fiscal reorganization, and the states that could pay expanded. This is the same mechanism four centuries later with the threshold raised, and the empires that cleared it in <span class="num">1500</span> are three of the ones that failed to clear it in <span class="num">1900</span>.`
       },
       terms: [
@@ -149,7 +149,7 @@ module.exports = {
       },
       terms: [
         ['Ottoman Public Debt Administration', 'The 1881 body of European bondholder representatives that collected specified Ottoman revenues directly, the standard example of lost fiscal sovereignty.'],
-        ['Semi-colonial', 'Formally independent and unable to control tariffs, courts or revenue, which is the Ottoman and Qing position rather than colonization.'],
+        ['Semi-colonial', 'Formally independent while losing tariff autonomy, jurisdiction over foreigners and designated revenue streams, the Ottoman and Qing position rather than colonization.'],
         ['Tanzimat', 'The nineteenth-century Ottoman reorganization of army, law, taxation and schooling, expensive and partial, which created new groups with new expectations.'],
         ['Young Turks', 'The movement, largely of modern-trained officers, that restored the constitution in 1908 and then narrowed toward authoritarian Turkish nationalism.'],
         ['Treaty of Lausanne', 'The 1923 settlement, replacing the rejected Sèvres, that recognized the Republic of Turkey in place of the empire.']

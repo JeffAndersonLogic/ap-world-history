@@ -13,7 +13,11 @@
  * That is more than a First & 10 can carry, and the criteria's insistence on
  * structural conditions alongside ideas is the part most likely to be dropped.
  * So section 01 makes the fiscal crisis a mechanism in its own right and shows
- * that all four revolutions begin in a treasury.
+ * that all four revolutions begin in a treasury, while being explicit that in
+ * Saint-Domingue the treasury is the metropole's. The fiscal crisis supplies
+ * Haiti's opening and none of its grievance, and a section that blurred that
+ * would teach the one thing about the Haitian Revolution most worth getting
+ * right.
  *
  * Three things carried deliberately:
  *
@@ -62,10 +66,10 @@ module.exports = {
       id: 'causes',
       num: '01',
       accent: 'gold',
-      name: 'They All Began in a Treasury',
+      name: 'They All Began in a Treasury, Not All in Their Own',
       navLabel: 'The fiscal trap',
       dates: 'c. 1756 to 1808 &nbsp;·&nbsp; War debt and taxation',
-      thesis: `Enlightenment ideas were available across Europe and the Americas for decades without producing a revolution. What turned an argument into a rising, in every case here, was a government that had run out of money and had to ask somebody new for it.`,
+      thesis: `Enlightenment ideas were available across Europe and the Americas for decades without producing a revolution. What turned an argument into a rising, in every case here, was a government that had run out of money and had to ask somebody new for it. Track which government, because in three cases it is the one being revolted against and in the fourth it is an ocean away.`,
       parts: [
         {
           heading: 'The mechanism',
@@ -82,6 +86,7 @@ module.exports = {
             { p: `<b>France</b>: debt service consumed an enormous share of royal revenue by the late <span class="num">1780</span>s, and the tax system exempted much of the nobility and clergy from the principal direct tax. Attempts at reform were blocked, so Louis XVI summoned the Estates-General in <span class="num">1789</span> for the first time since <span class="num">1614</span>, in order to obtain consent to new taxation. The body summoned to fund a monarchy dissolved it.` },
             { p: `<b>Spanish America</b>: the Bourbon Reforms of the later eighteenth century tightened tax collection, restricted creole officeholding and reasserted Spanish control over colonial trade and administration, which is a fiscal squeeze on exactly the group that had the wealth and the education to object. Then in <span class="num">1808</span> Napoleon deposed the Spanish king, and the question of who held legitimate authority in the colonies became unanswerable.` },
             { p: `<b>Saint-Domingue</b>: the richest colony in the world by a wide margin, producing a large share of the world's sugar and coffee, in which the fiscal and political crisis of the French metropole in <span class="num">1789</span> opened a fight among white planters, free people of color and the enslaved majority about who the revolution's principles applied to.` },
+            { p: `Be exact about what that last sentence claims, because it is the one most easily got wrong. The metropole's treasury supplies the <b>opening</b> in Saint-Domingue and none of the <b>grievance</b>. The colony was not in fiscal crisis; it was the most profitable territory in the world, and it was profitable because of the slave system and the racial hierarchy built to hold it, which are the causes of the revolution and which section 03 takes on their own terms. A student who writes that Haiti began in a treasury the way France did has made the fiscal argument do work it cannot do.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -99,7 +104,7 @@ module.exports = {
         ['Seven Years War', 'The 1756 to 1763 global conflict whose debts set up the fiscal crises in both Britain and France.'],
         ['Estates-General', 'The French representative body summoned in 1789 to consent to taxation, which instead became the National Assembly.'],
         ['Bourbon Reforms', 'The Spanish tightening of colonial taxation, trade and officeholding that alienated the creole elite.'],
-        ['Fiscal crisis', 'A state\'s inability to service debt from existing revenue, the common precondition of all four revolutions.'],
+        ['Fiscal crisis', 'A state\'s inability to service debt from existing revenue, which opened all four risings, though in Saint-Domingue it was the metropole\'s crisis and not the colony\'s.'],
         ['Consent to taxation', 'The demand that those taxed have a say in the taxing, the point where fiscal necessity meets Enlightenment vocabulary.']
       ]
     },

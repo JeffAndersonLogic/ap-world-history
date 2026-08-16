@@ -23,10 +23,12 @@
  *      counterpart funds in local currency and a condition of joint European
  *      planning, aimed at restoring living standards fast enough to weaken the
  *      communist parties of France and Italy. That is a mechanism.
- *   2. Alliance as automatic commitment. Article 5 is a tripwire that converts a
- *      local incident into a general war before anyone can decide otherwise,
- *      which is exactly how deterrence is supposed to work and exactly why it is
- *      dangerous.
+ *   2. Alliance as credible commitment, which is not the same as automatic
+ *      commitment and is the distinction students get wrong. Article 5 obliges
+ *      every ally to assist and leaves each government to judge what assisting
+ *      means, so what removes the attacker's calculation is the tripwire
+ *      deployment rather than the clause. Writing the treaty as an automatic
+ *      war is a legal error that a grader who knows the text will catch.
  *   3. Non-alignment stated honestly. It was real leverage and it was extremely
  *      hard to sustain, and the evidence for both is in the same countries:
  *      Indian arms purchases, the Egyptian switch, the coup against Nkrumah.
@@ -41,7 +43,7 @@ module.exports = {
   docTitle: 'BeHistorical | Deep Reading | Topic 8.2: The Rules of a War Nobody Fought',
   eyebrow: 'Topic 8.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Rules of a War Nobody <em>Fought</em>',
-  deck: `The United States and the Soviet Union never fought each other. They spent forty years building the institutions of a war they intended not to have: a doctrine, a recovery program, two alliances with automatic triggers, and arsenals whose whole purpose was never to be used. This chapter takes those four and shows what each was actually for, and then takes seriously the governments that tried to refuse the choice.`,
+  deck: `The United States and the Soviet Union never fought each other. They spent forty years building the institutions of a war they intended not to have: a doctrine, a recovery program, two alliances built to make a promise believable, and arsenals whose whole purpose was never to be used. This chapter takes those four and shows what each was actually for, and then takes seriously the governments that tried to refuse the choice.`,
   meta: ['Four sections', 'Doctrine, alliance, deterrence, refusal', 'Read alongside the First & 10'],
   footerNote: 'Topic 8.2 &nbsp;·&nbsp; The Rules of a War Nobody Fought &nbsp;·&nbsp; Companion to the First &amp; 10',
 
@@ -113,14 +115,14 @@ module.exports = {
       name: 'What an Alliance Does That a Promise Does Not',
       navLabel: 'The two blocs',
       dates: '1948 to 1955 &nbsp;·&nbsp; The Berlin blockade to the Warsaw Pact',
-      thesis: `The point of a mutual defense treaty is that it removes the decision. Article 5 of the North Atlantic Treaty is designed so that an attack on one member starts a general war automatically, before any government has time to calculate whether this particular border town is worth it, and that automatic quality is the entire deterrent.`,
+      thesis: `The point of a mutual defense treaty is to settle in advance a question an attacker is counting on being asked in the moment: is this particular border town worth a war? Article 5 of the North Atlantic Treaty does not answer it by removing the decision, because the text leaves each government to judge what assistance it owes. What answered it was where the troops were standing.`,
       parts: [
         {
           heading: 'Berlin, and why the alliance came next',
           blocks: [
             { p: `Berlin lay deep inside the Soviet occupation zone and was itself divided into four sectors. In June <span class="num">1948</span>, after the Western powers introduced a new currency in their zones of Germany, the Soviet Union closed the land routes into the western sectors. The Western response was to supply a city of over two million people by air for eleven months, flying in food and coal around the clock until the blockade was lifted in May <span class="num">1949</span>.` },
             { p: `The airlift is worth understanding as a deliberate choice about escalation. An armed convoy sent up the autobahn would have forced the Soviet Union either to shoot or to back down, with no third option. An aircraft crossing an air corridor put the same choice on the other side, in a form where doing nothing was easy and shooting would have been an unmistakable act of war. Both governments spent the crisis looking for ways not to be the one who fired, which is a pattern that recurs through the whole period and reaches its clearest form in <span class="num">1962</span>.` },
-            { p: `The North Atlantic Treaty was signed in April <span class="num">1949</span> by twelve states. Its <span class="kt">Article 5</span> commits each member to treat an armed attack on any one of them in Europe or North America as an attack on all. The practical instrument that followed mattered as much as the words: an integrated command structure and, above all, American troops permanently stationed in Europe. Those troops were not numerous enough to stop a full Soviet offensive on their own, and were not meant to be. They were there so that any attack would kill Americans immediately, which made the American commitment credible in a way no signature could.` }
+            { p: `The North Atlantic Treaty was signed in April <span class="num">1949</span> by twelve states. Its <span class="kt">Article 5</span> commits each member to treat an armed attack on any one of them in Europe or North America as an attack on all, and then says what each will do about it: take <b>such action as it deems necessary, including the use of armed force</b>. Read that clause carefully, because it is the opposite of what the alliance is usually described as doing. Armed force is named, and the judgment is left with each government, which is what the United States Senate required before it would ratify a peacetime alliance at all. The practical instrument that followed therefore mattered more than the words: an integrated command structure and, above all, American troops permanently stationed in Europe. Those troops were not numerous enough to stop a full Soviet offensive on their own, and were not meant to be. They were there so that any attack would kill Americans immediately, which made the American commitment credible in a way no signature could.` }
           ]
         },
         {
@@ -131,18 +133,18 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that NATO and the Warsaw Pact were simply the same kind of thing on opposite sides. They were both mutual defense treaties with integrated commands, and that similarity is real and worth stating. But NATO was never used against a member, while the Warsaw Pact's largest operation was the <span class="num">1968</span> invasion of one of its own members, and no NATO state was governed by a party the alliance leader had installed. The precise version of the comparison is the one that scores: both alliances converted the superpower's protection into an automatic commitment, and only one of them also functioned as an instrument for policing the bloc's internal politics.`
+              html: `Do not write that NATO and the Warsaw Pact were simply the same kind of thing on opposite sides. They were both mutual defense treaties with integrated commands, and that similarity is real and worth stating. But NATO was never used against a member, while the Warsaw Pact's largest operation was the <span class="num">1968</span> invasion of one of its own members, and no NATO state was governed by a party the alliance leader had installed. The precise version of the comparison is the one that scores: both alliances converted the superpower's protection into a standing commitment backed by an integrated command, and only one of them also functioned as an instrument for policing the bloc's internal politics.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Automatic commitment as deterrence. <em>The mechanism is that a treaty defining an attack on one member as an attack on all, backed by an integrated command and by the aggressor's own troops standing where the attack would fall, removes the calculation the attacker is counting on. The value of Article 5 is precisely that no government gets to decide, in the moment, whether this particular border is worth a war.</em>`,
-        limit: `The same automatic quality is what makes a local incident dangerous, and it never covered everything: NATO's guarantee applied to Europe and North America, which is one reason the actual fighting happened in Korea, Indochina, the Middle East, Africa and Latin America.`,
+        tool: `The tripwire, and why the wording is not the mechanism. <em>The mechanism is that a treaty obliging every ally to respond, while leaving each to judge how, is only as good as the response an attacker expects, so the commitment was made believable by stationing American troops where an attack would have to come through: an attacker could not test the border without killing the citizens of the government he most needed to stay out, which is a fact on the ground rather than a promise on paper.</em>`,
+        limit: `A tripwire that makes deterrence work also makes a local incident dangerous, since the forces meant to guarantee escalation are in no position to contain one. And the guarantee never covered everything: it applied to Europe and North America, which is one reason the actual fighting happened in Korea, Indochina, the Middle East, Africa and Latin America.`,
         comparison: `Against <em>Topic 8.3</em> on proxy wars: an alliance is how a superpower commits to a place it will defend, and a proxy war is what happens in the places it has not committed to. Reading the two together tells you why the map of the fighting looks the way it does.`
       },
       terms: [
-        ['Article 5', 'The North Atlantic Treaty clause treating an armed attack on one member as an attack on all, the mechanism that makes the commitment automatic.'],
+        ['Article 5', 'The North Atlantic Treaty clause treating an armed attack on one member as an attack on all, each ally then taking the action it deems necessary, armed force included.'],
         ['Berlin blockade', 'The Soviet closure of land routes into West Berlin from June 1948 to May 1949, answered by an eleven-month airlift rather than an armed convoy.'],
         ['Warsaw Pact', 'The 1955 Eastern bloc mutual defense treaty, signed the month West Germany joined NATO, and used most consequentially against a member in 1968.'],
         ['Brezhnev Doctrine', 'The claim, stated after the 1968 invasion of Czechoslovakia, of a collective right to intervene where socialism was judged threatened.'],
@@ -254,8 +256,8 @@ module.exports = {
       },
       {
         category: 'Comparison',
-        title: 'Both alliances made protection automatic; only one was used against a member',
-        body: `Article 5 of the 1949 North Atlantic Treaty defines an attack on one as an attack on all, backed by an integrated command and by American troops stationed in Europe whose presence guaranteed that any attack would kill Americans at once. The Warsaw Pact of 1955, signed the month West Germany joined NATO, bound eight states under a Soviet-headed command. Both converted a superpower's protection into a commitment no government could reconsider in the moment, which is what deterrence requires. The difference to state precisely: France left NATO's integrated command in 1966 and stayed in the treaty, while the Warsaw Pact's largest operation was the 1968 invasion of Czechoslovakia, justified afterward by the Brezhnev Doctrine.`
+        title: 'Both alliances made protection believable; only one was used against a member',
+        body: `Article 5 of the 1949 North Atlantic Treaty defines an attack on one as an attack on all, each ally then taking the action it deems necessary, armed force included. The commitment was made believable not by that wording but by an integrated command and by American troops stationed in Europe, whose presence guaranteed that any attack would kill Americans at once. The Warsaw Pact of 1955, signed the month West Germany joined NATO, bound eight states under a Soviet-headed command. Both converted a superpower's protection into a standing commitment an attacker had to assume would hold, which is what deterrence requires. The difference to state precisely: France left NATO's integrated command in 1966 and stayed in the treaty, while the Warsaw Pact's largest operation was the 1968 invasion of Czechoslovakia, justified afterward by the Brezhnev Doctrine.`
       },
       {
         category: 'Causation',

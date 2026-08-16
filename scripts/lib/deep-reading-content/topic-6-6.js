@@ -36,7 +36,7 @@ module.exports = {
   docTitle: 'BeHistorical | Deep Reading | Topic 6.6: Why People Could Go',
   eyebrow: 'Topic 6.6 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Why People Could <em>Go</em>',
-  deck: `Between about <span class="num">1840</span> and <span class="num">1914</span> something on the order of a hundred and fifty million people left home for good or for years, in three great streams of roughly similar size: across the Atlantic, across the Indian Ocean and the South China Sea, and north into Manchuria, Siberia and Central Asia. People had always had reasons to leave. This chapter is about the four things that had to be true at once before a reason could become a journey, and about why they became true when they did.`,
+  deck: `Between the <span class="num">1840</span>s and <span class="num">1940</span> something on the order of a hundred and fifty million people left home for good or for years, in three great streams of roughly similar size: across the Atlantic, across the Indian Ocean and the South China Sea, and north into Manchuria, Siberia and Central Asia. People had always had reasons to leave. This chapter is about the four things that had to be true at once before a reason could become a journey, and about why they became true when they did.`,
   meta: ['Five sections', 'The model, Ireland, indenture, convicts, and the flows nobody counted', 'Read alongside the First & 10'],
   footerNote: 'Topic 6.6 &nbsp;·&nbsp; Why People Could Go &nbsp;·&nbsp; Companion to the First &amp; 10',
 
@@ -61,7 +61,7 @@ module.exports = {
       accent: 'gold',
       name: 'Four Things That Have to Be True at Once',
       navLabel: 'The model',
-      dates: 'c. 1840 to 1914 &nbsp;·&nbsp; Three streams, and the ship that did both jobs',
+      dates: 'c. 1840 to 1940 &nbsp;·&nbsp; Three streams, and the ship that did both jobs',
       thesis: `Push and pull sorts reasons into two boxes and stops. It cannot tell you why the same poverty that produced no emigration in <span class="num">1800</span> produced mass emigration in <span class="num">1880</span>. The four-part version can, because two of its four requirements, an affordable route and a legal right to arrive, are exactly the things that changed.`,
       parts: [
         {
@@ -77,6 +77,7 @@ module.exports = {
           heading: 'Three streams, and the ship that carried both the migrant and the cause',
           blocks: [
             { p: `Historians now describe three great migration systems of the period, and their rough comparability is the fact most likely to change how you think about the topic. Something on the order of fifty to sixty million people crossed the Atlantic from Europe to the Americas. A comparable number moved from India and southern China into Southeast Asia, the Indian Ocean rim and the Pacific. And a comparable number again moved from northern China, Korea and European Russia into Manchuria, Siberia and Central Asia.` },
+            { p: `Be careful with the window those figures cover, because it is not the one this unit ends in. The reconstruction they come from runs from the <span class="num">1840</span>s to <span class="num">1940</span>, and the two non-Atlantic streams kept growing hard through the <span class="num">1920</span>s and <span class="num">1930</span>s. Cut the count off at <span class="num">1914</span> and the Atlantic stream is very nearly complete while the other two are substantially short, which makes them look smaller than they were. That is the same bias as the record-keeping one below, arriving by a different route, and a good answer names the dates its numbers come from.` },
             { p: `The Atlantic stream is not the largest; it is the most documented, because it crossed borders that kept records and ended in countries that later built national stories out of it. Keep that asymmetry in mind whenever you meet a confident number in this topic.` },
             { p: `And now the mechanism that makes this section worth reading twice. The transport revolution appears on both sides of the ledger. The same steamships and railways that carried European migrants west carried American and Ukrainian grain east, and from the <span class="num">1870</span>s that grain arrived in European markets at prices with which small farms in Ireland, Italy, Sweden, Poland and Spain could not compete. The falling cost of moving bulk goods destroyed the livelihood and, in the same stroke, supplied the affordable ticket out. That is a much better answer to "why did they leave" than poverty, because poverty was not new and this was.` },
             { note: {
@@ -96,7 +97,7 @@ module.exports = {
         ['Chain migration', 'Movement along established links from one village to one destination, following information and prepaid tickets.'],
         ['Return migration', 'Going home after a period abroad, made ordinary by fast cheap steamers and common in every stream.'],
         ['Remittances', 'Earnings sent home, which financed further migration, land purchase and household survival at the origin.'],
-        ['Three migration systems', 'The Atlantic, the Indian Ocean and South China Sea, and the north Asian streams, of roughly comparable size.'],
+        ['Three migration systems', 'The Atlantic, the Indian Ocean and South China Sea, and the north Asian streams, of roughly comparable size across the 1840s to 1940.'],
         ['Grain invasion', 'The arrival of cheap American and Russian wheat in European markets from the 1870s, which destroyed small farms.']
       ]
     },
@@ -248,7 +249,7 @@ module.exports = {
           heading: 'Two overland streams and one that stayed home',
           blocks: [
             { p: `<b>Manchuria.</b> The Qing had restricted Han Chinese settlement in the dynasty's own homeland for most of its rule. Under pressure from Russian expansion and from population strain in the north China plain, the restrictions were relaxed from the <span class="num">1860</span>s and then abandoned, and tens of millions of people moved north from Shandong and Hebei over the following decades, on foot, by junk and eventually by steamer and rail. It was one of the largest migrations of the age and much of it was seasonal or circular, men going north for a season's work and returning.` },
-            { p: `<b>Siberia and Central Asia.</b> Russian peasant migration eastward grew after the emancipation of the serfs in <span class="num">1861</span> removed the legal ties binding cultivators to an estate, and accelerated enormously once the Trans-Siberian Railway opened the route from <span class="num">1891</span>. The state actively assisted it, because settling agriculturalists in a contested frontier was a strategic objective as well as a relief valve for land hunger in European Russia, which is the settler-colonial mechanism of Topic 6.2 conducted inside a single empire.` },
+            { p: `<b>Siberia and Central Asia.</b> Russian peasant migration eastward grew after the emancipation of the serfs in <span class="num">1861</span> removed the legal ties binding cultivators to an estate, and accelerated enormously as the Trans-Siberian Railway, begun in <span class="num">1891</span>, opened the route section by section over the following two decades. The state actively assisted it, because settling agriculturalists in a contested frontier was a strategic objective as well as a relief valve for land hunger in European Russia, which is the settler-colonial mechanism of Topic 6.2 conducted inside a single empire.` },
             { p: `<b>And the movement to the mill town.</b> Rural to urban migration within countries was larger than all the transoceanic streams combined and is usually filed under industrialization rather than under migration, which is a filing decision rather than a distinction in what happened. The peasant who moved from Lancashire's countryside to Manchester, from Bengal's villages to the Calcutta jute mills, from Naples to Milan or from Guangdong's counties to the Pearl River delta was making the same calculation, under the same pressures, as the one who boarded a ship.` }
           ]
         },
@@ -268,7 +269,7 @@ module.exports = {
       },
       terms: [
         ['Manchurian migration', 'The movement of tens of millions from north China after Qing settlement restrictions were relaxed from the 1860s.'],
-        ['Trans-Siberian Railway', 'The line opened from 1891 that turned assisted Russian peasant settlement of Siberia into a mass movement.'],
+        ['Trans-Siberian Railway', 'The line begun in 1891 and opened in sections thereafter, which turned assisted Russian peasant settlement of Siberia into a mass movement.'],
         ['Emancipation of the serfs', 'The 1861 reform that removed the legal ties binding Russian cultivators and made eastward migration possible.'],
         ['Circular migration', 'Seasonal or repeated movement with return, the dominant pattern in the overland streams and heavily undercounted.'],
         ['Statistical bias', 'The tendency of border-crossing records to make measured migrations look larger than unmeasured ones of similar size.']
@@ -299,7 +300,7 @@ module.exports = {
       {
         category: 'Qualification',
         title: 'The evidence flatters one stream, and the destinations differed by law',
-        body: `Three migration systems of roughly comparable size ran in this period: fifty to sixty million across the Atlantic, a similar number from India and southern China into Southeast Asia and the Indian Ocean rim, and a similar number again into Manchuria, Siberia and Central Asia. The Atlantic stream is the best documented rather than the largest, because it crossed borders that kept records, while tens of millions moving north from Shandong and Hebei after the Qing relaxed settlement restrictions in the 1860s left almost no statistical trace. And the destinations differed in law rather than in migrant intent: Europeans crossing the Atlantic could acquire land and citizenship and their descendants became majorities, while Indian and Chinese migrants arrived under contracts and into legal systems that allowed neither. That is the qualification to write, and Topic 6.7 is its consequences.`
+        body: `Three migration systems of roughly comparable size ran from the 1840s to 1940: fifty to sixty million across the Atlantic, a similar number from India and southern China into Southeast Asia and the Indian Ocean rim, and a similar number again into Manchuria, Siberia and Central Asia. Quote the dates, because stopping at 1914 leaves the Atlantic stream nearly complete and the other two short. The Atlantic stream is the best documented rather than the largest, because it crossed borders that kept records, while tens of millions moving north from Shandong and Hebei after the Qing relaxed settlement restrictions in the 1860s left almost no statistical trace. And the destinations differed in law rather than in migrant intent: Europeans crossing the Atlantic could acquire land and citizenship and their descendants became majorities, while Indian and Chinese migrants arrived under contracts and into legal systems that allowed neither. That is the qualification to write, and Topic 6.7 is its consequences.`
       }
     ]
   }
