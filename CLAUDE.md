@@ -107,6 +107,15 @@ Every script below also has an `npm run` alias; see `package.json`.
   content modules only; the 77 First & 10 readings are pinned word for word by
   golden fixtures, so a spelling sweep there is a separate decision. Everything a
   machine cannot decide is in `docs/STYLE.md`.
+- `node scripts/report-absolutes.js [topic-N] [--counts]`, list superlatives,
+  universals and sole-cause claims across the deep readings, with context,
+  grouped by pattern. **Deliberately not in any suite, and exits 0 always.**
+  Whether a claim is defensible is a judgment about evidence, and a gate that
+  failed a push over the word "only" would teach one behavior, which is adding
+  qualifiers until the grep goes quiet. Hedged prose is not more accurate, it
+  has just stopped saying anything. Expect a high false-positive rate by design;
+  see `docs/STYLE.md` for how to triage a hit, and note that the usual repair is
+  a narrower **concrete** claim rather than a softer one.
 - `node scripts/test/foundations-golden.js`, prove the generated Foundations readings still carry every word, key term, callout, question and answer placeholder the hand-authored pages had. Compares content, not markup, against `scripts/test/fixtures/foundations-before.json`, a committed extraction of the originals. In the offline suite.
 - `node scripts/test/foundations-visual.js [--shots]`, browser check that the shared stylesheet renders those readings the same. Not in the suite: it renders the real pre-migration HTML, which a shallow CI checkout does not have. Run it by hand with `BASE=<ref>` when touching `assets/css/behistorical-first10.css` or the template. Nine reviewed deltas are listed in the script with reasons; anything else fails.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.

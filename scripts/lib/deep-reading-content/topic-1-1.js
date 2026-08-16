@@ -39,7 +39,7 @@ module.exports = {
   docTitle: 'BeHistorical | Deep Reading | Topic 1.1: The Examined State',
   eyebrow: 'Topic 1.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Examined <em>State</em>',
-  deck: `Song China was the richest, most urban, most literate society on earth, and it spent its whole existence paying its neighbors not to invade. This chapter takes the four things the topic asks you to explain, the exam, the philosophy, the economy and the frontier, and shows the working parts of each, so that when a question asks <em>how</em> Confucianism held the state together you have a mechanism rather than a label.`,
+  deck: `Song China ran the largest cities in the world, the deepest commercial economy anyone had yet built and a print culture nothing else came close to, and it never solved the problem of its northern frontier. This chapter takes the four things the topic asks you to explain, the exam, the philosophy, the economy and the frontier, and shows the working parts of each, so that when a question asks <em>how</em> Confucianism held the state together you have a mechanism rather than a label.`,
   meta: ['Five sections', 'One machine at a time', 'Read alongside the First & 10'],
   footerNote: 'Topic 1.1 &nbsp;·&nbsp; The Examined State &nbsp;·&nbsp; Companion to the First &amp; 10',
 

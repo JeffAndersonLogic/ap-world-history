@@ -59,6 +59,42 @@ naming the thing. The exemption is still narrow: it covers only the span of the
 allowed phrase itself, so a bare "labour" elsewhere in the same sentence still
 fails.
 
+### Overclaims, and why that check is a report rather than a gate
+
+`node scripts/report-absolutes.js` lists superlatives, universals and sole-cause
+claims across every deep-reading chapter, with context, grouped by pattern. It
+exits 0 no matter what it finds, and it must stay that way.
+
+The reason is the split this repo runs on. `npm test` is hard on plumbing and
+silent on pedagogy, because a missing capture block loses a student's work with
+every other check green, while whether a claim is defensible is a judgment about
+evidence. A gate that failed a push over the word "only" would teach one
+behavior: add qualifiers until the grep stops matching. Hedged prose is not more
+accurate prose, it is prose that has stopped saying anything, and the whole
+value of these chapters is that they state a mechanism sharply enough to be
+remembered.
+
+So a person reads the list and decides one of three things per hit:
+
+- **Keep.** The absolute is true and load-bearing. "The only path by which the
+  three reading answers reach Canvas" describes a system with one path.
+- **Narrow.** The usual answer, and the important one: replace a wide claim with
+  a smaller **concrete** one rather than with a qualifier. "The richest society
+  on earth" becomes the largest cities, the deepest commercial economy, the
+  widest print culture. Narrower and sharper at once.
+- **Hedge.** Only when the point is genuinely contested, and then name the
+  dispute: "one influential interpretation holds that...". This is the right
+  answer for a scholarly argument and the lazy answer for everything else.
+
+A useful discriminator when triaging: a ranking of something **measured**, the
+largest city, the largest temple, usually survives, and a ranking of an
+**aggregate abstraction**, the richest or most sophisticated society, usually
+does not, because nobody can check it.
+
+Expect a high false-positive rate by design. Most hits on "the only" are honest
+mechanism claims, and a report that fired only on certain problems would miss
+the ones worth catching.
+
 ### What the checker does not cover, and why
 
 It reads the deep-reading content modules only. The 77 First & 10 readings are
