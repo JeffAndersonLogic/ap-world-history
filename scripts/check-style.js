@@ -81,6 +81,7 @@ const ALLOWED_STRINGS = [
   'Labour Party',  // name of a political party
   'civilisatrice',  // French: the doctrine's name is mission civilisatrice, not an English word
   'Chinese Labour Corps',  // name of the British labor corps raised in China, 1916
+  'International Labour Organization',  // name of the United Nations agency, founded 1919
 ];
 
 /** A misconception note always carries this exact label. */

@@ -131,6 +131,12 @@ window.BEHISTORICAL_LESSON = {
     checkpoint2:     "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png"
   },
 
+  deepReading: {
+    title: "The Word Extent Is Doing All the Work",
+    desc: "A textbook-depth companion on the skill the capstone is really testing: it fixes the hemisphere trap that misplaces most of the evidence, supplies three tests that make a degree claim defensible, works Egypt against Cuba and Poland against Guatemala as matched pairs, and builds an evaluate-the-extent thesis that meets the decolonization counterargument head on. Optional, and useful when a checkpoint asks you to commit to a degree rather than write \"partly similar\".",
+    url: "deep-reading-topic-8-9-causation-capstone.html"
+  },
+
   first10: {
     title: "First & 10: The Cold War's Global Reach",
     embedUrl: "first-and-10-topic-8-9-causation-capstone-capture.html?v=response-id-fix-v1",

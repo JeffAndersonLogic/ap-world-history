@@ -164,6 +164,11 @@ window.BEHISTORICAL_LESSON = {
       }
     ]
   },
+  deepReading: {
+    title: 'Measured Against What',
+    desc: 'The last chapter of the course. A textbook-depth companion that shows an extent claim needs a baseline, a criterion and a population before it means anything, traces four threads from c. 1200 to the present across all nine units, weighs the continuities that outlived the century, and builds the closing thesis one sentence at a time. Optional, and useful when a checkpoint asks how much science and technology actually changed.',
+    url: 'deep-reading-topic-9-9-continuity-change-globalized-world.html'
+  },
   first10: {
     title: 'First & 10: Continuity and Change in a Globalized World',
     embedUrl: 'first-and-10-topic-9-9-continuity-change-globalized-world-capture.html',

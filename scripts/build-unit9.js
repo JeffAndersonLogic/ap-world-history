@@ -79,6 +79,16 @@ const DEEP_READINGS = {
     title: 'Protest Follows the Decision',
     desc: 'A textbook-depth companion that explains why opposition to globalization gathered where it did by following the decisions rather than the slogans, starting from the fact that rules affecting people everywhere were being written by bodies those people could not vote out. Optional, and useful when a checkpoint asks who resisted globalization and why.',
     url: 'deep-reading-topic-9-7-resistance-globalization.html'
+  },
+  '9.8': {
+    title: 'The Price of Keeping Everyone Inside',
+    desc: 'A textbook-depth companion that reads the 1945 Charter as a list of corrections to three specific League failures, treats the veto as the price of keeping the great powers inside rather than as a flaw somebody missed, uses the United Nations own 1999 inquiries into Rwanda and Srebrenica as evidence, and gives you one axis that predicts which institutions work and which cannot. Optional, and useful when a checkpoint asks how globalization changed interactions among states.',
+    url: 'deep-reading-topic-9-8-institutions-globalized-world.html'
+  },
+  '9.9': {
+    title: 'Measured Against What',
+    desc: 'The last chapter of the course. A textbook-depth companion that shows an extent claim needs a baseline, a criterion and a population before it means anything, traces four threads from c. 1200 to the present across all nine units, weighs the continuities that outlived the century, and builds the closing thesis one sentence at a time. Optional, and useful when a checkpoint asks how much science and technology actually changed.',
+    url: 'deep-reading-topic-9-9-continuity-change-globalized-world.html'
   }
 };
 

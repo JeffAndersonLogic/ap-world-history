@@ -214,6 +214,48 @@ const VOLUMES = [
       { module: 'topic-7-8' },
       { module: 'topic-7-9' }
     ]
+  },
+  {
+    id: 'unit-8',
+    outputFile: 'ebook/unit-8.html',
+    blurb: `Cold War and Decolonization: two things that happened at once and are usually taught apart, because a standoff that could not be fought in Europe turned every newly independent state into a place where it could be fought instead.`,
+    label: 'Unit 08',
+    docTitle: 'BeHistorical | Unit 8: Cold War and Decolonization',
+    eyebrow: 'Unit 08 &nbsp;·&nbsp; The eBook &nbsp;·&nbsp; AP World History: Modern',
+    titleHtml: 'Cold War &amp; <em>Decolonization</em>',
+    deck: `Nine chapters for nine topics, and one argument holding them together: this unit teaches two processes in separate topics and they are one system. European empires ran out of money and will at the same moment two powers with incompatible systems were left facing each other, and because the rivalry could not be fought directly in Europe it was fought through the states coming into existence everywhere else. That is why non-alignment was so attractive and so nearly impossible to sustain, and why the rivalry ending in <span class="num">1991</span> did not end the wars it had funded.`,
+    contents: [
+      { module: 'topic-8-1' },
+      { module: 'topic-8-2' },
+      { module: 'topic-8-3' },
+      { module: 'topic-8-4' },
+      { module: 'topic-8-5' },
+      { module: 'topic-8-6' },
+      { module: 'topic-8-7' },
+      { module: 'topic-8-8' },
+      { module: 'topic-8-9' }
+    ]
+  },
+  {
+    id: 'unit-9',
+    outputFile: 'ebook/unit-9.html',
+    blurb: `Globalization: not connection, which is old and belongs to Unit 2, but a collapse in the cost of moving goods, money, people and information, and the question that follows it, which is who captured the savings and who absorbed the costs left off the invoice.`,
+    label: 'Unit 09',
+    docTitle: 'BeHistorical | Unit 9: Globalization',
+    eyebrow: 'Unit 09 &nbsp;·&nbsp; The eBook &nbsp;·&nbsp; AP World History: Modern',
+    titleHtml: '<em>Globalization</em>',
+    deck: `Nine chapters for nine topics, and one question running under all of them. Globalization is not the fact of long-distance connection, which Unit 2 already covered seven centuries earlier; it is a collapse in what distance costs. Almost everything in this unit follows from asking who received those savings and who absorbed the costs that were never billed, from a container that is not unpacked between the factory and the store, to a cure that exists and does not arrive, to rules written by bodies nobody can vote out. The last chapter closes the course.`,
+    contents: [
+      { module: 'topic-9-1' },
+      { module: 'topic-9-2' },
+      { module: 'topic-9-3' },
+      { module: 'topic-9-4' },
+      { module: 'topic-9-5' },
+      { module: 'topic-9-6' },
+      { module: 'topic-9-7' },
+      { module: 'topic-9-8' },
+      { module: 'topic-9-9' }
+    ]
   }
 ];
 

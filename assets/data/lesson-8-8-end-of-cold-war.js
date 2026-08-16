@@ -173,6 +173,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "What the System Could No Longer Pay For",
+    desc: "A textbook-depth companion on the economics the survey has no room for: why Soviet planning was good at one kind of growth and structurally bad at the other, how oil postponed the reckoning until 1986, why an arms race moving into microelectronics cost more than the dollar totals suggest, and what the Afghan withdrawal actually signaled. Optional, and useful when a checkpoint asks for the mechanism of each cause rather than a list of three.",
+    url: "deep-reading-topic-8-8-end-of-cold-war.html"
+  },
+
   first10: {
     title: "First & 10: End of the Cold War",
     embedUrl: "first-and-10-topic-8-8-end-of-cold-war-capture.html?v=response-id-fix-v1"
