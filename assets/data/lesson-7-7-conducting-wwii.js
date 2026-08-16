@@ -240,6 +240,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "The War the Factories Decided",
+    desc: "A textbook-depth companion that explains what combination restored movement to the battlefield, argues the production gap decided the war more than any battle, and delivers the comparison the criteria ask for with a finding that inverts the expected one: Britain conscripted women in <span class=\"num\">1941</span> and Germany would not for years. Optional, and useful when a checkpoint compares democracies with totalitarian states.",
+    url: "deep-reading-topic-7-7-conducting-wwii.html"
+  },
+
   first10: {
     title: "First & 10: Mobilizing Everything",
     note: "Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 7.7 lesson path."

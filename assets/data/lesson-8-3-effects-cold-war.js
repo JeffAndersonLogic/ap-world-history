@@ -174,6 +174,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "Wars by Other Hands",
+    desc: "A textbook-depth companion explaining how a rivalry in which the principals never fought each other still killed several million people, by taking the proxy conflicts seriously as wars with their own local causes. Optional, and useful when a checkpoint asks for the effects of superpower competition.",
+    url: "deep-reading-topic-8-3-effects-cold-war.html"
+  },
+
   first10: {
     title: "First & 10: Effects of the Cold War",
     embedUrl: "first-and-10-topic-8-3-effects-cold-war-capture.html?v=response-id-fix-v1"

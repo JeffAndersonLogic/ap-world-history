@@ -1,0 +1,270 @@
+'use strict';
+
+/**
+ * Topic 7.2, Causes of World War I: the deep reading.
+ *
+ * Why this exists. The success criteria ask for imperial competition tied to
+ * specific evidence, and then for the escalation chain from the Balkans through
+ * the alliance commitments into a general war. MAIN, the mnemonic every student
+ * arrives with, names four categories and explains nothing, and a student who
+ * writes it has listed the ingredients of a recipe without saying what heat
+ * does.
+ *
+ * The organizing argument: none of the four background conditions started the
+ * war, because all four had been present for years while crises came and went
+ * without war. What turned the July crisis into a general war was that the
+ * alliance commitments and the mobilization timetables together removed the
+ * time in which a crisis is normally settled. Naming the clock is what turns
+ * MAIN into an explanation.
+ *
+ * Three things carried deliberately:
+ *
+ *   1. Previous Balkan and Moroccan crises did NOT produce war. That is the
+ *      control case, and without it a student cannot explain why 1914 was
+ *      different from 1908 or 1911.
+ *   2. The Schlieffen Plan is a political fact, not a military detail: because
+ *      the German plan answered a Russian mobilization by invading Belgium and
+ *      France, a quarrel in the Balkans mechanically became a war in the west.
+ *   3. Blame is a live historiographical argument, and the chapter says so
+ *      rather than settling it, because the criteria reward handling a dispute.
+ */
+
+module.exports = {
+  topicKey: 't7-2',
+  slug: 'topic-7-2-causes-wwi',
+  sourceFile: 'deep-reading-topic-7-2-causes-wwi.html',
+  lessonFile: 'lesson-7-2-causes-wwi.html',
+
+  docTitle: 'BeHistorical | Deep Reading | Topic 7.2: The Month There Was No Time',
+  eyebrow: 'Topic 7.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
+  titleHtml: 'The Month There Was No <em>Time</em>',
+  deck: `Europe had imperial rivalry, arms racing, alliances and nationalism for years before <span class="num">1914</span>, and had passed through crisis after crisis without a general war. This chapter is about what was different in July: a set of commitments and railway timetables that converted an assassination in Sarajevo into an invasion of Belgium in five weeks, and left the people making the decisions with days rather than months.`,
+  meta: ['Four sections', 'Conditions, crises, the clock, the argument', 'Read alongside the First & 10'],
+  footerNote: 'Topic 7.2 &nbsp;·&nbsp; The Month There Was No Time &nbsp;·&nbsp; Companion to the First &amp; 10',
+
+  howTo: {
+    heading: 'How to Use This',
+    intro: `Section 01 is the standing conditions, which is what MAIN actually names. Section 02 is the control case that most answers are missing, the crises that did not become wars. Section 03 is the escalation chain the success criteria ask you to trace, and section 04 is how to handle the blame question without picking a side badly.`,
+    steps: [
+      `<b>01 The standing conditions:</b> imperial competition and naval rivalry, with the evidence.`,
+      `<b>02 The crises that did not cause a war:</b> Morocco and the Balkans, and why they matter.`,
+      `<b>03 The clock:</b> July <span class="num">1914</span>, the alliance commitments, and the mobilization timetables.`,
+      `<b>04 Who is to blame:</b> a real historiographical dispute, and how to write about one.`,
+      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+    ]
+  },
+
+  empires: [
+    // ── 01 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'conditions',
+      num: '01',
+      accent: 'gold',
+      name: 'The Standing Conditions',
+      navLabel: 'The conditions',
+      dates: 'c. 1880 to 1914 &nbsp;·&nbsp; Empire, steel, and rivalry',
+      thesis: `MAIN is not wrong, it is incomplete in a specific way: it lists conditions that make a war more likely and were all in place for decades without producing one. Get the conditions right first, with evidence, and then section 03 can explain the difference.`,
+      parts: [
+        {
+          heading: 'Imperial competition, with the specifics the criteria ask for',
+          blocks: [
+            { p: `The <span class="kt">Scramble for Africa</span> is the evidence to name. Between roughly <span class="num">1880</span> and <span class="num">1914</span> European powers claimed almost the whole continent, and the <span class="kt">Berlin Conference</span> of <span class="num">1884</span> to <span class="num">1885</span> set ground rules among the claimants for how those claims would be recognized. Read that conference correctly: it was Europeans agreeing with Europeans about procedure, with no African representation, and its function was to keep the partition from producing a European war.` },
+            { p: `That last clause is the useful one. Imperial competition generated repeated confrontations, and for thirty years the powers kept settling them, because each judged a colonial quarrel not worth a general war. Fashoda in <span class="num">1898</span> brought Britain and France to the edge over the upper Nile and ended in a French withdrawal and, within a few years, an entente. The system was under strain and the strain was being managed.` },
+            { p: `What imperial competition did do is teach every foreign ministry to read the world as a fixed board on which a rival's gain was its own loss, and to treat prestige as a strategic asset. That habit of mind is what a student should take from the Scramble into July <span class="num">1914</span>, rather than a claim that colonies caused the war.` }
+          ]
+        },
+        {
+          heading: 'The naval race, and why a battleship is a political object',
+          blocks: [
+            { p: `Anglo-German rivalry is the cleanest case of an arms race in the course. Britain's security rested on a navy stronger than any likely combination against it, because an island that imports food cannot afford to lose control of its sea lanes. Germany, from the naval laws of the <span class="num">1890</span>s onward, built a battle fleet it did not need for defense, and Britain read it as aimed at exactly the thing Britain could not compromise on.` },
+            { p: `The launch of HMS <em>Dreadnought</em> in <span class="num">1906</span> made the race sharper rather than settling it, because a ship that outclassed everything afloat also made Britain's existing lead obsolete and reset the count to near zero. Both states then built dreadnoughts at enormous cost, and the Topic 7.1 squeeze applies here too: this is industrial capacity converted directly into strategic position, and it is expensive enough to be a domestic political issue in both countries.` },
+            { p: `The effect that matters is not the ships. It is that the race pushed Britain out of its long detachment from continental alignments and toward France and Russia, which is how the two-bloc structure of section 03 came to exist.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that the alliances "dragged" everyone in automatically, as though the treaties were machinery with no people in them. Alliance terms were conditional and were read politically: Italy was a member of the Triple Alliance and did not fight alongside Germany and Austria-Hungary in <span class="num">1914</span>, entering the war against them in <span class="num">1915</span> instead. Britain's understandings with France and Russia were ententes rather than binding pledges of war, and the British cabinet argued hard before committing. The alliances made escalation far more likely; they did not remove the decision. Write "alliance commitments turned a local war into a general one, and each government still chose to honor them" and you have kept both halves.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The security dilemma. <em>The mechanism is that arms a state builds for its own defense look identical from outside to arms built for attack, so the rival builds too and both end up less secure and poorer than before, which is why the Anglo-German naval race produced no advantage for either side and did produce the alignment of Britain with France and Russia.</em>`,
+        limit: `A condition, not a trigger. The race had been running for two decades by <span class="num">1914</span> and had recently slowed, so it explains why the powers were grouped as they were rather than why war came that summer.`,
+        comparison: `Against the <em>gunpowder empires</em> in Topic 3.1: there too a military technology forced a fiscal reorganization, and the states that could pay stayed in the game. The difference is that this competition ran between industrial states of comparable capacity, so neither could buy a decisive lead and both simply paid.`
+      },
+      terms: [
+        ['Scramble for Africa', 'The rapid European partition of Africa from about 1880, the standing evidence for imperial competition among the great powers.'],
+        ['Berlin Conference', 'The 1884 to 1885 meeting that set rules among European claimants for recognizing African claims, with no African representation.'],
+        ['Dreadnought', 'The 1906 British battleship that outclassed all existing ships and reset the naval race by making Britain\'s own lead obsolete.'],
+        ['Entente', 'An understanding and alignment short of a binding alliance, the form of Britain\'s links to France and Russia.'],
+        ['Security dilemma', 'The trap in which defensive arms are indistinguishable from offensive ones, so mutual buildup leaves both sides poorer and no safer.']
+      ]
+    },
+
+    // ── 02 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'crises',
+      num: '02',
+      accent: 'rust',
+      name: 'The Crises That Did Not Become a War',
+      navLabel: 'The crises',
+      dates: '1905 to 1913 &nbsp;·&nbsp; Morocco and the Balkans',
+      thesis: `This is the section most answers are missing, and it is what makes the rest an argument. If the standing conditions caused the war, they should have caused it in <span class="num">1905</span>, or <span class="num">1908</span>, or <span class="num">1911</span>, or <span class="num">1912</span>. They did not, and asking why not is how you find what was different.`,
+      parts: [
+        {
+          heading: 'Four crises, all settled',
+          blocks: [
+            { p: `<b>The First Moroccan Crisis, <span class="num">1905</span> to <span class="num">1906</span>.</b> Germany challenged French primacy in Morocco, hoping to expose the new Anglo-French entente as hollow. An international conference at Algeciras did the opposite, leaving France's position largely intact and Germany more isolated. No war.` },
+            { p: `<b>The Bosnian Crisis, <span class="num">1908</span>.</b> Austria-Hungary annexed Bosnia and Herzegovina outright. Serbia was furious and Russia, Serbia's patron, was humiliated into acquiescence because it was not yet recovered from the Japanese war and revolution of <span class="num">1905</span>. No war, and a lesson learned in St Petersburg about backing down.` },
+            { p: `<b>The Agadir Crisis, <span class="num">1911</span>.</b> Germany sent a gunboat to a Moroccan port. It ended in a negotiated compensation in central Africa, and it hardened British opinion further toward France. No war.` },
+            { p: `<b>The Balkan Wars, <span class="num">1912</span> to <span class="num">1913</span>.</b> The Balkan states took nearly all remaining Ottoman territory in Europe and then fought each other over the spoils. The great powers stayed out and worked to contain it. No general war, and a Serbia roughly doubled in size and confidence.` }
+          ]
+        },
+        {
+          heading: 'What the control case tells you',
+          blocks: [
+            { p: `Two conclusions follow, and both are more useful than MAIN. First, the machinery of great-power diplomacy could still work: conferences, compensation, patrons restraining clients. Crises were being resolved, which means <span class="num">1914</span> requires an explanation beyond the existence of tension.` },
+            { p: `Second, each crisis changed the position for the next one. Russia had backed down in <span class="num">1908</span> and its leadership was determined not to be humiliated again. Austria-Hungary had watched Serbia grow and read a strengthening Serbia as a threat to an empire with a large South Slav population of its own. Germany had been checked twice over Morocco and concluded that its one reliable partner was Austria-Hungary, whom it therefore could not afford to see weakened.` },
+            { p: `So the crises did not release the pressure, they redistributed it, and they left three capitals each holding a conclusion that made the next crisis harder to settle. That is a mechanism, and it is the reason section 03 is about time.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: the crises are the experiment the period ran for us',
+              html: `Historians usually cannot run controls, and here the period supplies four. The standing conditions of section 01 are held roughly constant across <span class="num">1905</span>, <span class="num">1908</span>, <span class="num">1911</span> and <span class="num">1912</span>, and the outcome each time is a settlement. That is close to a natural experiment, and it is why an explanation that stops at "there was tension" cannot be right: the same tension produced peace four times running. Whenever you are given a list of causes for an event, look for a moment when those causes were present and the event did not happen. If you find one, the real explanation is in the difference, and you have just built a much better paragraph than the list would have given you.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The control case. <em>The mechanism is that a condition present during both an outcome and its absence cannot by itself explain the outcome, so identifying earlier crises that were settled forces the explanation onto whatever changed, which here is the loss of decision time rather than the level of hostility.</em>`,
+        limit: `The crises were not neutral rehearsals. Each one shifted expectations and hardened positions, so use them as a control on the standing conditions and also as part of the causal build-up.`,
+        comparison: `Against the <em>Ottoman losses</em> in Topic 7.1: the Balkan Wars are the same event seen from the other side. What reads here as a Serbian gain that alarmed Vienna reads there as the collapse of Ottoman Europe, and a student who can hold both is describing one process rather than two topics.`
+      },
+      terms: [
+        ['Moroccan crises', 'The 1905 and 1911 confrontations over Morocco, both settled by conference or compensation, which pushed Britain closer to France.'],
+        ['Bosnian Crisis', 'Austria-Hungary\'s 1908 annexation of Bosnia and Herzegovina, which humiliated Russia into backing down and shaped its response in 1914.'],
+        ['Balkan Wars', 'The 1912 to 1913 wars that ended Ottoman rule in most of Europe and left Serbia roughly doubled in size.'],
+        ['Pan-Slavism', 'The idea of solidarity among Slavic peoples, which gave Russia a claimed obligation to Serbia and Austria-Hungary a reason to fear it.'],
+        ['Great-power management', 'The conference-and-compensation practice by which the powers settled crises before 1914, and which failed in July.']
+      ]
+    },
+
+    // ── 03 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'clock',
+      num: '03',
+      accent: 'iron',
+      name: 'July 1914: The Clock',
+      navLabel: 'The clock',
+      dates: '28 June to 4 August 1914 &nbsp;·&nbsp; Five weeks',
+      thesis: `Here is the escalation chain the success criteria ask for, and the thing to notice as you read it is how quickly the decisions stop being about Serbia. By the end, states are at war over a Balkan quarrel by way of a railway timetable and a Belgian border.`,
+      parts: [
+        {
+          heading: 'The chain, step by step',
+          blocks: [
+            { p: `<b>28 June.</b> Archduke Franz Ferdinand, heir to the Austro-Hungarian throne, is assassinated in Sarajevo by Gavrilo Princip, a Bosnian Serb nationalist connected to a network with ties reaching into Serbian military intelligence.` },
+            { p: `<b>Early July.</b> Austria-Hungary decides to use the assassination to settle the Serbian problem permanently, and asks Berlin for backing. Germany gives it, in what is usually called the <span class="kt">blank cheque</span>: assurance of support whatever Vienna decides. That is the moment a local quarrel acquires a great power's guarantee.` },
+            { p: `<b>23 July.</b> Austria-Hungary delivers an ultimatum to Serbia with a forty-eight hour deadline, written with terms severe enough that acceptance was not expected. Serbia accepts most of it and qualifies the rest. Austria-Hungary declares the reply insufficient and declares war on 28 July.` },
+            { p: `<b>30 July.</b> Russia orders general mobilization in support of Serbia. This is the hinge, and the next paragraph explains why it could not stay a gesture.` },
+            { p: `<b>1 to 4 August.</b> Germany declares war on Russia, then on France, and invades Belgium on 4 August to execute its war plan. Britain, which had given no binding pledge to France, enters that day, with Belgian neutrality supplying both a treaty obligation and the argument that carried a divided cabinet and public.` }
+          ]
+        },
+        {
+          heading: 'Why mobilization was not a bluff',
+          blocks: [
+            { p: `In earlier centuries a ruler could raise an army slowly and negotiate while doing it. By <span class="num">1914</span> mobilization meant executing a pre-planned schedule that moved millions of men and their supplies to frontiers by rail, in a sequence worked out years in advance and not easily altered or reversed. To mobilize was to start a clock that every rival could see.` },
+            { p: `<span class="kt">Mobilization timetables</span> therefore created a premium on going first, because an army caught half-assembled by a fully assembled enemy is in serious trouble. That is the opposite of what a crisis needs, which is time. Every hour spent negotiating was an hour of advantage conceded, so the incentive ran toward acting before the diplomacy was finished.` },
+            { p: `Germany's plan made this worse than it had to be. The <span class="kt">Schlieffen Plan</span>, in the form German planning had taken by <span class="num">1914</span>, assumed a two-front war and answered it by defeating France quickly before Russia could fully mobilize, with the attack routed through neutral Belgium to avoid the fortified Franco-German frontier. Follow what that means: German planning converted a Russian mobilization over Serbia into an immediate invasion of France and Belgium. There was no version of the plan that fought Russia alone.` },
+            { p: `So the answer to "how did a regional crisis become a global war" is not only the alliance list. It is that one power's only war plan required attacking two countries that had no part in the original quarrel, one of them neutral, and that attacking the neutral one brought in Britain and with Britain its empire. Say that and you have explained the escalation instead of naming it.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: the railway schedules survive',
+              html: `The mobilization plans were among the most closely held documents any of these states produced, and substantial parts of them survive in military archives, along with the general staff correspondence arguing about them. They are unusually revealing sources because they are not arguments and were never meant to persuade anyone: they are schedules, listing which units entrain on which day on which line. What they show is how little room a government actually had once mobilization began, and they are the reason historians treat the July crisis as partly a problem of planning rather than purely of intention. Read a document written to be used rather than to be read, and you learn what its authors assumed rather than what they wanted others to believe.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Mobilization timetables as a first-mover premium. <em>The mechanism is that rail-based mobilization is a pre-planned sequence that takes weeks and cannot easily be halted or reversed, and an army caught half-assembled by a fully assembled one is at severe disadvantage, so each state's schedule pressures it to start before diplomacy concludes and the time in which crises are normally settled disappears.</em>`,
+        limit: `Planning constrained the choices and did not make them. Men in Vienna, Berlin, St Petersburg, Paris and London decided, and the German blank cheque and the Austrian ultimatum were deliberate policy rather than accidents of a schedule.`,
+        comparison: `Against the <em>earlier crises</em> in section 02: Algeciras and the Bosnian crisis were settled over months by conference and compensation. July gave the same diplomats five weeks, with the last week under a mobilization clock, and the machinery that had worked four times could not work in the time available.`
+      },
+      terms: [
+        ['Blank cheque', 'Germany\'s early July assurance of support to Austria-Hungary whatever it decided, which attached a great power to a local quarrel.'],
+        ['July ultimatum', 'Austria-Hungary\'s 23 July demands on Serbia with a forty-eight hour deadline, framed so that acceptance was not expected.'],
+        ['Mobilization timetable', 'The pre-planned rail schedule for assembling an army, which took weeks, could not easily be reversed, and rewarded moving first.'],
+        ['Schlieffen Plan', 'German planning that answered a two-front war by attacking France first through neutral Belgium, which turned an eastern crisis into a western war.'],
+        ['Belgian neutrality', 'The treaty-guaranteed status whose violation on 4 August gave Britain both an obligation and the argument that unified its cabinet.']
+      ]
+    },
+
+    // ── 04 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'blame',
+      num: '04',
+      accent: 'oxide',
+      name: 'The Argument About Blame',
+      navLabel: 'The argument',
+      dates: '1919 to now &nbsp;·&nbsp; A live dispute',
+      thesis: `Who caused the First World War is one of the most argued questions in modern history and it has not been settled. That is not a problem for your essay, it is an opportunity, because handling a genuine dispute well is worth more than asserting a verdict.`,
+      parts: [
+        {
+          heading: 'The positions, briefly and fairly',
+          blocks: [
+            { p: `<b>German responsibility.</b> Article 231 of the Treaty of Versailles assigned responsibility to Germany and its allies, and the case rests on the blank cheque, on a plan that required invading two neutral or uninvolved countries, and on arguments that German leaders were willing to risk a general war. A major twentieth-century restatement pushed this further, arguing for deliberate German aims, and the argument it started has run ever since.` },
+            { p: `<b>Shared responsibility.</b> On this reading every capital made choices that raised the risk: Vienna wanted a war with Serbia, Berlin backed it, St Petersburg mobilized, Paris encouraged its ally, London was ambiguous about its intentions long enough for Berlin to gamble that it might stay out.` },
+            { p: `<b>Systemic causes.</b> On this reading individuals mattered less than the structure: two armed blocs, plans that rewarded speed, and a diplomatic system with no mechanism able to stop a crisis once mobilization began. Nobody chose the war and the system produced it.` },
+            { p: `You do not have to pick, and if you do pick you should say why. What a strong answer does is name the positions, weigh evidence, and then commit with a reason, in that order.` }
+          ]
+        },
+        {
+          heading: 'How to write about a dispute',
+          blocks: [
+            { p: `Three habits, and they transfer to every contested question in this course. <b>Separate the underlying from the immediate.</b> Imperial rivalry and the naval race are underlying; the blank cheque and the ultimatum are immediate; the assassination is a trigger. A cause that had been present for thirty years cannot explain the timing, and a trigger cannot explain the scale.` },
+            { p: `<b>Ask what each explanation predicts.</b> If the alliances alone caused the war, Italy should have fought alongside Germany and Austria-Hungary, and it did not. If the standing tensions alone caused it, section 02 should not exist. An explanation that survives its own counterexamples is worth more than one that has not been tested.` },
+            { p: `<b>Name the dispute in the essay.</b> "Historians continue to disagree about the balance of responsibility, and the strongest case for X is Y" is a better sentence than a confident verdict, and it is also a better sentence than a vague one. The Topic 7.9 chapter is built around exactly this skill, so treat this section as the rehearsal for it.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Separating underlying causes, immediate causes and triggers. <em>The mechanism is that each kind of cause answers a different question, so a long-running condition explains why war was possible, a decision in the weeks before explains why it happened then, and a trigger explains only what the participants pointed at, which is why an essay that mixes the three cannot rank anything.</em>`,
+        limit: `The categories are analytic rather than natural, and reasonable historians sort the same events differently, so define which bucket you are using for a given cause rather than assuming it is obvious.`,
+        comparison: `Against <em>Topic 7.6</em> on the causes of the Second World War: there the underlying causes include the settlement that ended this war, which is why the two topics have to be read together and why the phrase "twenty-year truce" is worth taking seriously as an argument rather than as a slogan.`
+      },
+      terms: [
+        ['Article 231', 'The Versailles clause assigning responsibility for the war to Germany and its allies, the basis of reparations and a lasting grievance.'],
+        ['Underlying cause', 'A long-running condition that made war possible, such as imperial rivalry or the naval race, which cannot by itself explain timing.'],
+        ['Immediate cause', 'A decision in the weeks before the outbreak, such as the blank cheque or the ultimatum, which explains why war came when it did.'],
+        ['Trigger', 'The precipitating event, here the Sarajevo assassination, which explains what participants pointed at rather than why they acted.'],
+        ['Historiography', 'The study of how historians have argued about a question, and the thing an essay demonstrates by naming a dispute rather than hiding it.']
+      ]
+    }
+  ],
+
+  closing: {
+    heading: 'Building an Answer That Scores',
+    navLabel: 'Building a comparison',
+    intro: `Each card is a full explanation: the claim, the specific evidence, and the reason. The second is the one that separates a strong answer from a MAIN paragraph, so learn its shape.`,
+    pairs: [
+      {
+        category: 'Evidence',
+        title: 'Name the Scramble and the Dreadnought, not the category',
+        body: `Imperial competition is evidence when it has specifics attached. Between about 1880 and 1914 European powers claimed nearly all of Africa, and the Berlin Conference of 1884 to 1885 set rules among the claimants with no African representation, whose function was to stop the partition from producing a European war. Anglo-German naval rivalry is sharper still: Britain needed naval supremacy because an island importing food cannot lose its sea lanes, Germany built a battle fleet it did not need for defense, and the Dreadnought of 1906 reset the count by making Britain's own lead obsolete. The effect that mattered was not the ships but that the race pushed Britain toward France and Russia, which built the two-bloc structure of 1914.`
+      },
+      {
+        category: 'Method',
+        title: 'The same tensions produced peace four times before they produced war',
+        body: `If the standing conditions caused the war they should have caused it earlier. The First Moroccan Crisis of 1905 to 1906 ended at the Algeciras conference; the Bosnian Crisis of 1908 ended with Russia backing down; Agadir in 1911 ended in negotiated compensation; the Balkan Wars of 1912 to 1913 were contained by the powers. Four crises, four settlements. So the explanation for 1914 has to be in the difference, not in the tension, and the crises also redistributed pressure: Russia was determined not to be humiliated twice, Vienna read a doubled Serbia as a threat to its own South Slav population, and Berlin concluded Austria-Hungary was its one reliable partner.`
+      },
+      {
+        category: 'Escalation',
+        title: 'A German war plan turned a Balkan quarrel into an invasion of Belgium',
+        body: `After the 28 June assassination, Vienna sought and received German backing whatever it decided, delivered a forty-eight hour ultimatum to Serbia on 23 July framed so acceptance was not expected, and declared war on 28 July. Russia's general mobilization on 30 July started a clock everyone could see, because rail mobilization was a pre-planned weeks-long sequence that rewarded moving first. German planning answered a two-front war by defeating France quickly through neutral Belgium, so there was no version of it that fought Russia alone. Germany invaded Belgium on 4 August, and the violated neutrality gave a divided British cabinet both a treaty obligation and its argument. That is how the chain reaches the west.`
+      },
+      {
+        category: 'Historiography',
+        title: 'Rank the causes and say which kind each one is',
+        body: `Responsibility for 1914 is genuinely disputed: Article 231 and later arguments for deliberate German aims, against readings that distribute responsibility across every capital, against readings in which two armed blocs and speed-rewarding plans produced a war nobody chose. Handle it by sorting rather than asserting. Imperial rivalry and the naval race are underlying causes and explain why war was possible; the blank cheque and the ultimatum are immediate causes and explain the timing; Sarajevo is a trigger. Then test each explanation against a counterexample, and note that Italy was in the Triple Alliance and did not fight alongside it in 1914, which is fatal to any account in which alliances worked automatically.`
+      }
+    ]
+  }
+};

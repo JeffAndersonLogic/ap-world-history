@@ -137,6 +137,11 @@ window.BEHISTORICAL_LESSON = {
       }
     ]
   },
+  deepReading: {
+    title: 'Who Captured the Savings',
+    desc: 'A textbook-depth companion that takes the enormous savings from cheaper distance and asks who received them and who absorbed the costs, with the genuine disagreements about inequality presented as disagreements. Optional, and useful when a checkpoint asks you to evaluate the effects of globalization.',
+    url: 'deep-reading-topic-9-4-economics-global-age.html'
+  },
   first10: {
     title: 'First & 10: Economics in the Global Age',
     embedUrl: 'first-and-10-topic-9-4-economics-global-age-capture.html',

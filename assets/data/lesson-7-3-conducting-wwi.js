@@ -229,6 +229,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "When a War Stops Being Fought by Armies",
+    desc: "A textbook-depth companion that defines total war as an industrial capacity rather than a level of suffering, explains why defensive firepower froze the front and what finally moved it, and gives the colonial troops and labor the criteria ask for and most answers omit. Optional, and useful when a checkpoint asks why this was the first total war.",
+    url: "deep-reading-topic-7-3-conducting-wwi.html"
+  },
+
   first10: {
     title: "First & 10: The Total War",
     note: "Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 7.3 lesson path."

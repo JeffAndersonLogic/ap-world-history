@@ -80,6 +80,7 @@ const ALLOWED_STRINGS = [
   'Labour Representation Committee',  // name of the 1900 body
   'Labour Party',  // name of a political party
   'civilisatrice',  // French: the doctrine's name is mission civilisatrice, not an English word
+  'Chinese Labour Corps',  // name of the British labor corps raised in China, 1916
 ];
 
 /** A misconception note always carries this exact label. */

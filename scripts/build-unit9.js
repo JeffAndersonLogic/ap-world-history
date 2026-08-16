@@ -49,6 +49,29 @@ const instructionalMap = (id) => `../assets/images/instructional-maps/topic-${id
 const moduleArt = (id, slot) => `../assets/images/module-art/unit-9/topic-${id.replace('.', '-')}/${slot}.svg`;
 const TOPIC_ART = '';
 
+/** Deep reading cards for the generated topics, keyed by topic id.
+ *
+ *  These lesson data files are generated, so the deepReading block has to be
+ *  emitted here rather than pasted into assets/data/. A block hand-added to a
+ *  generated file survives until the next rebuild and then vanishes, taking the
+ *  card with it and leaving a chapter on disk that nothing links to, which is
+ *  the failure validate.js checks for in both directions.
+ *
+ *  A topic with no entry here simply gets no card, so this list grows as
+ *  chapters are written rather than needing a placeholder per topic. */
+const DEEP_READINGS = {
+  '9.4': {
+    title: 'Who Captured the Savings',
+    desc: 'A textbook-depth companion that takes the enormous savings from cheaper distance and asks who received them and who absorbed the costs, with the genuine disagreements about inequality presented as disagreements. Optional, and useful when a checkpoint asks you to evaluate the effects of globalization.',
+    url: 'deep-reading-topic-9-4-economics-global-age.html'
+  },
+  '9.5': {
+    title: 'A Standard You Can Be Held To',
+    desc: 'A textbook-depth companion on what a declaration that bound nobody to anything turned out to be good for, and how movements used a standard their governments had already endorsed. Optional, and useful when a checkpoint asks how human rights claims produced political change.',
+    url: 'deep-reading-topic-9-5-calls-for-reform-responses.html'
+  }
+};
+
 const topics = [
   {
     id: '9.4', slug: 'economics-global-age', title: 'Economics in the Global Age', theme: 'Economic Systems', code: 'ECN',
@@ -326,6 +349,7 @@ function buildLesson(topic) {
       notes: topic.cases.map((x) => `${x} connects a local or regional development to a wider global process.`),
       key: topic.cases.map((x) => ({ label: x, detail: `Use ${x} to connect place, process, and consequence.` }))
     },
+    ...(DEEP_READINGS[topic.id] ? { deepReading: DEEP_READINGS[topic.id] } : {}),
     first10: {
       title: `First & 10: ${topic.title}`, embedUrl: `first-and-10-topic-${topic.id.replace('.', '-')}-${topic.slug}-capture.html`,
       note: `Read the narrative, answer three AP-thinking questions, build your coach prompt, and return to Topic ${topic.id}.`

@@ -193,6 +193,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "Ranking Causes Without Guessing",
+    desc: "A textbook-depth companion that supplies three tests for significance, counterfactual, timing and scope, shows that they rank the same causes differently and that this is why a thesis must name its criterion, compares the two wars' causal chains, and builds a worked thesis sentence by sentence. Optional, and the one to read before writing any causation essay.",
+    url: "deep-reading-topic-7-9-causation-global-conflict.html"
+  },
+
   first10: {
     title: "First & 10: Weighing What Mattered Most",
     note: "Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 7.9 lesson path."

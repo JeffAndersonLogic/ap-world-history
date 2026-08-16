@@ -193,6 +193,27 @@ const VOLUMES = [
       { module: 'topic-6-7' },
       { module: 'topic-6-8' }
     ]
+  },
+  {
+    id: 'unit-7',
+    outputFile: 'ebook/unit-7.html',
+    blurb: `Global Conflict: why three empires could not afford an industrial army, how a war became unendable by battle and therefore consumed whole societies, and what the same capacity did when a state turned it on a population inside its own reach.`,
+    label: 'Unit 07',
+    docTitle: 'BeHistorical | Unit 7: Global Conflict',
+    eyebrow: 'Unit 07 &nbsp;·&nbsp; The eBook &nbsp;·&nbsp; AP World History: Modern',
+    titleHtml: 'Global <em>Conflict</em>',
+    deck: `Nine chapters for nine topics, and one argument running through them: total war is a capacity rather than a mood. Once a factory system can replace losses faster than battles inflict them, beating an army stops ending a war, so states reach into kitchens, newspapers, colonies and eventually other people's cities. The same censuses, railways and chains of command that made this possible are what Topic 7.8 describes a state turning inward, which is why the atrocities of this century belong in a unit about industrial capacity rather than in a separate box about human wickedness.`,
+    contents: [
+      { module: 'topic-7-1' },
+      { module: 'topic-7-2' },
+      { module: 'topic-7-3' },
+      { module: 'topic-7-4' },
+      { module: 'topic-7-5' },
+      { module: 'topic-7-6' },
+      { module: 'topic-7-7' },
+      { module: 'topic-7-8' },
+      { module: 'topic-7-9' }
+    ]
   }
 ];
 

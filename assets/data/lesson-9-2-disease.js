@@ -175,6 +175,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "Who the Cure Reaches",
+    desc: "A textbook-depth companion on why a disease that can be prevented, diagnosed in minutes and treated still kills at scale, which turns a topic about medicine into one about distribution. Optional, and useful when a checkpoint asks about the limits of technological advance.",
+    url: "deep-reading-topic-9-2-disease.html"
+  },
+
   first10: {
     title: "First & 10: Disease, Environment, and Population",
     embedUrl: "first-and-10-topic-9-2-disease-capture.html?v=response-id-fix-v1"

@@ -177,6 +177,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "The Rules of a War Nobody Fought",
+    desc: "A textbook-depth companion on how two superpowers built the institutions of a war they intended never to fight, and what deterrence actually required in order to work. Optional, and useful when a checkpoint asks why the Cold War stayed cold in Europe.",
+    url: "deep-reading-topic-8-2-the-cold-war.html"
+  },
+
   first10: {
     title: "First & 10: The Cold War",
     embedUrl: "first-and-10-topic-8-2-cold-war-capture.html?v=response-id-fix-v1"

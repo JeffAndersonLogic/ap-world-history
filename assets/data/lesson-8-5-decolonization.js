@@ -197,6 +197,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "Two Roads Out of Empire",
+    desc: "A textbook-depth companion on why some colonies negotiated independence and others fought for years, and why the difference is not that some empires were more reasonable than others. Optional, and useful when a checkpoint asks you to compare negotiated and armed decolonization.",
+    url: "deep-reading-topic-8-5-decolonization.html"
+  },
+
   first10: {
     title: "First & 10: Decolonization After 1900",
     embedUrl: "first-and-10-topic-8-5-decolonization-capture.html?v=response-id-fix-v1"

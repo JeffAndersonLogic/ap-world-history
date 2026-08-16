@@ -224,6 +224,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "A Grievance Waiting for a Crisis",
+    desc: "A textbook-depth companion that uses the later <span class=\"num\">1920</span>s as a control case, since the treaty was fully in force when the Nazi Party was still marginal, and concludes that Versailles supplied the story and the Depression supplied the audience. Explains the legal route to power in <span class=\"num\">1933</span> and states the case for appeasement before rejecting it. Optional, and useful when a checkpoint asks you to rank causes.",
+    url: "deep-reading-topic-7-6-causes-wwii.html"
+  },
+
   first10: {
     title: "First & 10: Four Roads to One War",
     note: "Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 7.6 lesson path."

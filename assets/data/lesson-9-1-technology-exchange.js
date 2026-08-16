@@ -223,6 +223,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "The Cost of Distance",
+    desc: "A textbook-depth companion arguing that globalization is not connection, which is old and covered in Unit 2, but a collapse in the cost of moving goods, money, people and information. Optional, and the chapter to read first, because the rest of the unit follows from it.",
+    url: "deep-reading-topic-9-1-technology-exchange.html"
+  },
+
   first10: {
     title: "First & 10: Advances in Technology and Exchange",
     embedUrl: "first-and-10-topic-9-1-technology-exchange-capture.html?v=response-id-fix-v1"

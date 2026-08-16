@@ -221,6 +221,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "Who Runs the Economy Now",
+    desc: "A textbook-depth companion that gives the Depression a transmission mechanism, bank failure, the gold standard, tariffs and commodity collapse, and then does the Soviet Five-Year Plans with both halves of the accounting: rapid heavy industrialization, and the famine, deportation and camp labor that paid for it. Optional, and useful when a checkpoint asks about state control of the economy.",
+    url: "deep-reading-topic-7-4-interwar-economy.html"
+  },
+
   first10: {
     title: "First & 10: When the Money Stopped",
     note: "Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 7.4 lesson path."

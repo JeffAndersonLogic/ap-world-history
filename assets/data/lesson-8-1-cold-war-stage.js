@@ -175,6 +175,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "The World the War Left",
+    desc: "A textbook-depth companion that puts the two halves of this unit together, since European empires ran out of money and will at the same moment two powers with incompatible systems were left facing each other. Optional, and useful when a checkpoint asks how the Cold War and decolonization are connected.",
+    url: "deep-reading-topic-8-1-cold-war-stage.html"
+  },
+
   first10: {
     title: "First & 10: Setting the Stage",
     embedUrl: "first-and-10-topic-8-1-cold-war-stage-capture.html?v=response-id-fix-v1"

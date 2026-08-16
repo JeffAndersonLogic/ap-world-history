@@ -137,6 +137,11 @@ window.BEHISTORICAL_LESSON = {
       }
     ]
   },
+  deepReading: {
+    title: 'A Standard You Can Be Held To',
+    desc: 'A textbook-depth companion on what a declaration that bound nobody to anything turned out to be good for, and how movements used a standard their governments had already endorsed. Optional, and useful when a checkpoint asks how human rights claims produced political change.',
+    url: 'deep-reading-topic-9-5-calls-for-reform-responses.html'
+  },
   first10: {
     title: 'First & 10: Calls for Reform and Responses After 1900',
     embedUrl: 'first-and-10-topic-9-5-calls-for-reform-responses-capture.html',

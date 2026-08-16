@@ -190,6 +190,12 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
+  deepReading: {
+    title: "What States Did With Their New Capacity",
+    desc: "A textbook-depth companion that gives five recurring conditions behind mass atrocity and then tests them against the Armenian Genocide, the Holodomor, Cambodia and Rwanda, does the Holocaust as an escalation through steps that each passed without cost, and assesses what was built afterward. Names contested classifications as contested. Optional, and useful when a checkpoint asks for causes and consequences.",
+    url: "deep-reading-topic-7-8-mass-atrocities.html"
+  },
+
   first10: {
     title: "First & 10: Mass Atrocities After 1900",
     note: "Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 7.8 lesson path."
