@@ -46,6 +46,10 @@ const LIBRARY = {
   eyebrow: 'BeHistorical &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The BeHistorical <em>eBook</em>',
   deck: `The course reading, in one place, written for this class rather than adapted from a textbook. Each chapter goes deeper than the First &amp; 10 for that topic, because the checkpoints ask you to explain how something worked and why it mattered, and a name is not a mechanism.`,
+  // Shown only while some volume still lists a pending topic, which none does
+  // now that all ten volumes are complete. renderLibrary derives that from the
+  // contents rather than taking it on trust, so this text cannot outlive the
+  // gaps it explains and does not have to be remembered when one reopens.
   note: `Volumes are added as they are written. A topic listed as not written yet has its First &amp; 10 reading and its lecture cards on the lesson page already; what it does not have yet is a chapter here.`
 };
 

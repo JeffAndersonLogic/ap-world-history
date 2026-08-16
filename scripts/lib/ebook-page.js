@@ -241,6 +241,14 @@ ${LISTEN_SCRIPT}</body>
  *        ordered contents, {chapter} for written and {pending} for not
  */
 function renderLibrary(library, volumes) {
+  // The note explains the "chapter not written yet" rows, so it is shown only
+  // while there are some. Deriving it from the entries rather than declaring it
+  // means it cannot outlive the gaps it describes: every volume is complete
+  // today, and a library telling a student a topic might be missing when none
+  // is teaches them to distrust the contents. It returns by itself if a volume
+  // ever gains a pending topic, which is the failure a hand-removed note has.
+  const anyPending = volumes.some(({ entries }) => entries.some(e => e.pending));
+
   const cards = volumes.map(({ volume, entries }) => {
     const chapters = entries.filter(e => e.chapter).map(e => e.chapter);
     const pending = entries.filter(e => e.pending).map(e => e.pending);
@@ -301,8 +309,7 @@ ${SKIP_LINK}<header class="eb-cover">
     <h2>Volumes</h2>
     <div class="eb-lib-grid">
 ${cards}    </div>
-    <p class="eb-lib-note">${library.note}</p>
-  </section>
+${anyPending ? `    <p class="eb-lib-note">${library.note}</p>\n` : ''}  </section>
 </main>
 <div class="dr-wrap">
   <footer class="dr-footer">

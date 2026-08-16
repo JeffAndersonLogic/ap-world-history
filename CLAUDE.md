@@ -246,10 +246,12 @@ Foundations is written, and it stops covering silently.
 
 ## The eBook
 
-Seven volumes exist: `ebook/foundations.html`, five chapters; `ebook/unit-1.html`
-and `ebook/unit-2.html`, seven each, one per topic; `ebook/unit-3.html`, four,
-because Unit 3 has four topics; `ebook/unit-4.html`, eight; `ebook/unit-5.html`,
-ten; and `ebook/unit-6.html`, eight. A volume carries one chapter per topic, so
+Ten volumes exist and the course is covered end to end: `ebook/foundations.html`,
+five chapters; `ebook/unit-1.html` and `ebook/unit-2.html`, seven each, one per
+topic; `ebook/unit-3.html`, four, because Unit 3 has four topics;
+`ebook/unit-4.html`, eight; `ebook/unit-5.html`, ten; `ebook/unit-6.html`,
+eight; `ebook/unit-7.html`, `ebook/unit-8.html` and `ebook/unit-9.html`, nine
+each. A volume carries one chapter per topic, so
 its chapter count is a fact about the unit rather than a target, and chapter
 length is set so that the **volume** comes out comparable rather than the
 chapter: Unit 3's four chapters run six sections each, Unit 5's ten run four, and
@@ -313,6 +315,15 @@ topics are listed **in place** rather than collected at the end, because a
 student looking for Foundations 2 looks between 1 and 3, and finding it there
 marked "chapter not written yet" answers the question while finding nothing
 does not.
+
+**The library's note about unwritten chapters is derived, not declared.**
+`LIBRARY.note` explains those pending rows, so `renderLibrary` prints it only
+while some volume still has one, and every volume is complete as of 2026-08-16.
+Deleting the text instead would have worked
+today and left nothing to explain the first pending row that reappears; a note
+that outlives its gaps is the worse half of the same failure, because a library
+warning a student that a topic might be missing when none is teaches them to
+distrust the contents. Do not restore it unconditionally.
 
 **Chapters are numbered by their topic, not their position.** Sequential
 numbering would make the Foundations 3 chapter "Chapter 02" while Foundations 2
