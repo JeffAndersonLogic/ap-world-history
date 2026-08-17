@@ -813,10 +813,13 @@ one of the 77 topics can produce a complete context block.
 > `expected` count reports complete submissions as incomplete, which is worse
 > than no count at all.
 
-> **The weekly current events activity is documented in `docs/current-events-desk.md`.**
-> `current-events/index.html` is not a lesson: it is outside the 10-module
-> standard, outside the renderer, and has no Google Form capture on purpose.
-> Read that file before touching it, especially before adding capture.
+> **The current events desk left this repo on 2026-08-17.** It was branded BeCurrent
+> and linked from the front door, and BeCurrent is a separate course. All six files
+> moved to `BeCurrent/archive/current-events-desk/`, which carries the provenance and
+> the list of what is still wrong with it. Nothing here should link a BeCurrent
+> surface, and current events work does not belong in this repo: it is not a lesson,
+> it does not use either renderer, and it answers to a different course's gate. Do
+> not rebuild it here.
 
 Standard unit lessons are thin HTML shells plus a topic data file, a renderer-config file, and `assets/js/behistorical-topic-renderer-v1.js`. Foundations uses `foundations/foundations-topic-renderer.js`. First & 10 readings are standalone pages embedded through capture wrappers. BeInTheRoom simulations live under `beintheroom/unit-N/` and must pass the theme-alignment gate in `docs/beintheroom-scenario-blueprint.md` before they are linked.
 
