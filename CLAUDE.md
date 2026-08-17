@@ -86,8 +86,7 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/extract-unit-content.js`, the one-way lift from hand-authored HTML into a content module. Refuses to read a page it generated, because re-extracting from generated output writes the generator's own bugs back in as authored content.
 - `node scripts/test/readings-golden.js`, prove the 58 generated unit readings still carry every word of the originals, against `scripts/test/fixtures/readings-before.json`.
 - `node scripts/build-foundations-readings.js`, rebuild the six Foundations First & 10 readings from `scripts/lib/foundations-f10-content.js`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/first-and-10-foundations-*.html`; they are generated.
-- `node scripts/build-deep-readings.js`, rebuild the deep readings from `scripts/lib/deep-reading-content/`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit a generated `deep-reading-*.html`, in `foundations/` or in any `unit-N/`. See "Deep Readings" below.
-- `node scripts/build-ebook.js`, compile the deep readings for a volume into `ebook/<volume>.html`. `--check` fails on drift without writing, which is what the offline suite runs. See "The eBook" below.
+- `node scripts/build-ebook.js`, compile the chapters of a volume from `scripts/lib/deep-reading-content/` into `ebook/<volume>.html`. `--check` fails on drift without writing, which is what the offline suite runs. This is the only builder those content modules have; `build-deep-readings.js` and the 76 standalone pages it wrote were retired on 2026-08-17. See "The eBook" below.
 - `node scripts/test/ebook-a11y.test.js`, drive the library and every volume in
   `VOLUMES` in Chromium and assert the WCAG 2.1 AA contract: skip link first and visible,
   one `<main>` with the footer outside it, a focus ring on every interactive
@@ -103,12 +102,12 @@ Every script below also has an `npm run` alias; see `package.json`.
   this section" below.
 - `node scripts/check-style.js`, the mechanical half of the house style: American
   English spelling, `c. 1200` rather than `c.1200`, no em or en dashes in prose, and
-  the two canonical note labels. In the offline suite. It reads the deep-reading
+  the two canonical note labels. In the offline suite. It reads the chapter
   content modules only; the 77 First & 10 readings are pinned word for word by
   golden fixtures, so a spelling sweep there is a separate decision. Everything a
   machine cannot decide is in `docs/STYLE.md`.
 - `node scripts/report-absolutes.js [topic-N] [--counts]`, list superlatives,
-  universals and sole-cause claims across the deep readings, with context,
+  universals and sole-cause claims across the eBook chapters, with context,
   grouped by pattern. **Deliberately not in any suite, and exits 0 always.**
   Whether a claim is defensible is a judgment about evidence, and a gate that
   failed a push over the word "only" would teach one behavior, which is adding
@@ -178,71 +177,75 @@ capture block went missing twice.
    generated file fails the push instead of being silently reverted by the next
    rebuild.
 
-## Deep Readings
+## The Chapter Card, and the standalone pages that were retired
 
-A deep reading is the **optional push-further layer** under Content Delivery, for
-a topic whose modules assume more background than its First & 10 has room to
-carry. Foundations 3 is the case that produced it: 716 words of body text across
-Persia, Han China, Greece and Rome, about 179 each, against success criteria that
-ask a student to name a tool of rule and explain **the mechanism by which it
-worked**. The survey named the tools. A student cannot infer a mechanism from a
-name.
+A chapter is the **optional push-further layer** under Content Delivery, for a
+topic whose modules assume more background than its First & 10 has room to carry.
+Foundations 3 is the case that produced it: 716 words of body text across Persia,
+Han China, Greece and Rome, about 179 each, against success criteria that ask a
+student to name a tool of rule and explain **the mechanism by which it worked**.
+The survey named the tools. A student cannot infer a mechanism from a name.
 
 Generated, like everything else. Content lives in
 `scripts/lib/deep-reading-content/<slug>.js`, `scripts/lib/deep-reading-page.js`
-renders it, and `scripts/build-deep-readings.js` writes the page beside the
-lesson it belongs to. Content modules are **discovered by reading the directory**,
-not listed, so adding one is a new content file plus a `deepReading` block in
-that topic's data file. Nothing else.
+renders a chapter body, and `scripts/build-ebook.js` compiles the chapters of a
+unit into its volume. Adding one is a new content file, its filename in the right
+volume's `contents`, and a `deepReading` block in that topic's data file. Nothing
+else.
 
-**A deep reading is deliberately not a First & 10**, and the differences are the
+**Until 2026-08-17 the same module also produced a standalone
+`deep-reading-<slug>.html` beside its lesson, and the card pointed there.** Those
+76 pages are gone. They were never a second copy of the content, since both
+surfaces were built from the one module, but they were the same reading at two
+URLs, and the two were not equal: the volume carries "Listen to this section",
+the contents, the neighbouring topics and the WCAG sweep in
+`ebook-a11y.test.js`, and the standalone page could never carry the first of
+those, because it ships no `<script>` by contract. A student sent to the weaker
+of two identical readings is a choice nobody would make on purpose, and every
+new chapter meant maintaining both. `validate.js` fails if one reappears in
+`foundations/` or any `unit-N/`: nothing generates them now, so a page there is
+hand-authored by definition.
+
+**A chapter is deliberately not a First & 10**, and the differences are the
 point:
 
 - **No questions, so no capture block, no storage key, and none of the
-  four-files-must-agree failure modes.** Nothing is submitted from a deep
-  reading. The ten modules remain the only path by which student writing reaches
-  Canvas.
+  four-files-must-agree failure modes.** Nothing is submitted from a chapter.
+  The ten modules remain the only path by which student writing reaches Canvas.
 - **No coach bridge.** Socrates is told about exactly four assignments. A fifth
   surface that grew a coach button silently would mean the coach meets work it
   was told does not exist.
-- **No `<script>` at all.** A page with no script cannot ship a SyntaxError that
-  discards its own behaviour, which is the failure `readings-parse.test.js`
-  exists to catch on the 77.
-
-**The filename prefix is load-bearing.** `validate.js` globs Foundations lesson
-shells with `/^foundations-\d+.*\.html$/` and Foundations readings with
-`/^first-and-10-foundations.*\.html$/`. A deep reading must miss both, or it gets
-checked against a contract it was never meant to satisfy. Hence
-`deep-reading-<slug>.html`. Re-read those two globs before renaming these.
+- **One script, and it is shared.** A volume loads
+  `assets/js/behistorical-listen.js` and nothing else, wired by the renderer. No
+  page carries a copy of any playback logic, which is what kept the 43-sections
+  problem from becoming 43 hand-wired mistakes.
 
 **Both renderers inject the card and hide the feature entirely when absent**, the
-same way the video block does, so the topics without one show no empty frame. It
-sits *after* the lecture cards on purpose: the cards are the path everyone walks
-and this is depth on top of them. A reading this long placed above the cards reads
-as required work rather than as an offer, which is why it sits below them and why
-the card says optional twice. `renderDeepReading()` in the unit renderer mirrors
-the Foundations one, guard on its own id included, or a re-render doubles the
-card.
+same way the video block does, so a topic without a chapter shows no empty frame.
+It sits *after* the lecture cards on purpose: the cards are the path everyone
+walks and this is depth on top of them. A reading this long placed above the
+cards reads as required work rather than as an offer, which is why it sits below
+them and why the card says optional twice. `renderDeepReading()` in the unit
+renderer mirrors the Foundations one, guard on its own id included, or a
+re-render doubles the card.
 
 **A unit topic keeps its `deepReading` block somewhere else, and the check has to
 know.** A Foundations topic's data file sits beside its shell as
 `foundations-3-states-power-data.js`; a unit topic's sits in `assets/data/` under
 the shell's own name, because the shell loads it with a `<script src>`. Resolving
 a unit topic the Foundations way looks for `unit-1/lesson-1-1-song-china-data.js`,
-which no unit topic has ever had, so every unit deep reading would fail
-reachability for a file that was never supposed to exist.
+which no unit topic has ever had, so every unit chapter would fail the card check
+for a file that was never supposed to exist.
 
-**Two checks, because each failure is silent.** `--check` in the offline suite
-proves the page still matches its content module. `validate.js` proves the page
-is **reachable**: a generated reading that no `deepReading` block points at sits
-on disk, gets served by Pages, and can only be found by typing the filename,
-with every other structural check green. It checks both directions, because a
-data file pointing at a missing page is a dead card and a page no content module
-produces is a hand-authored reading, which is the thing the content model exists
-to prevent. Both directions scan `foundations/` **and** every `unit-N/`, through
-one `standaloneDeepReadings()` helper rather than a glob repeated per call site:
-a glob naming only `foundations/` stops covering the moment a volume outside
-Foundations is written, and it stops covering silently.
+**The card's url is derived, then compared whole.** It is
+`../ebook/unit-4.html#chapter-t4-1`, and `validate.js` rebuilds that string from
+`VOLUMES` and the chapter's own `topicKey` and fails on any difference, then
+looks for the anchor in the built volume. Both halves earn their place, because
+this link cannot 404 the way the old one could: a wrong anchor lands the student
+at the top of a 300KB volume and a wrong volume lands them in the wrong unit,
+and both look exactly like a working link to every other check. It is checked in
+the other direction too, over every lesson data file, so a card offering a
+chapter no volume carries fails as well.
 
 ## The eBook
 
@@ -260,8 +263,8 @@ Unit 6's eight run four or five.
 **A unit whose lessons are generated keeps its `deepReading` block in the
 generator.** Unit 6 Topics 6.2 to 6.8 have their data files written by
 `scripts/build-unit6.js`, so the card is declared in the `DEEP_READINGS` map at
-the top of that script and the page's filename is derived from the topic's own id
-and slug, for the same reason the eBook derives its lesson links. Editing
+the top of that script and its link is derived from the topic's own id, for the
+same reason the eBook derives its lesson links. Editing
 `assets/data/lesson-6-4-*.js` by hand would survive exactly until the next
 `npm run build:unit6`. Topic 6.1 is the hand-authored template the others are
 built from, so its block does live in its data file.
@@ -272,20 +275,19 @@ both match `^topic-(\d+)-(\d+)`, so it renders as "5.10" rather than "5.1".
 Anything new that parses a slug must use `\d+` for the topic segment; `\d`
 silently truncates and the page still builds.
 
-The eBook is a **second surface on the chapter modules, not a second copy of the
-content.** Every chapter in a volume is the same
-`scripts/lib/deep-reading-content/<slug>.js` that produces that topic's
-standalone deep reading, so the two cannot disagree. `scripts/lib/ebook-page.js`
-renders the cover and contents and then calls `renderChapterBody` from the
-deep-reading renderer rather than reimplementing it, for the same reason
-`canvas-parse-core.js` is inlined into the Skills Lens instead of copied: two
-implementations eventually give two different answers and nothing tells you
-which one a student read.
+The eBook is **the** surface on the chapter modules, and the volume is where a
+chapter lives. `scripts/lib/ebook-page.js` renders the cover and contents and
+then calls `renderChapterBody` from `deep-reading-page.js` rather than
+reimplementing it, for the same reason `canvas-parse-core.js` is inlined into the
+Skills Lens instead of copied: two implementations eventually give two different
+answers and nothing tells you which one a student read.
 
-It exists alongside the per-topic pages because they answer different questions.
-The deep reading on the Foundations 1 lesson serves the student doing Foundations
-1 tonight. The eBook serves the student revising in May, the student who missed
-three weeks, and the case manager who wants to see what is being taught.
+It serves two different students through two doors into the same page. The card
+on the Foundations 1 lesson opens `#chapter-f1` for the student doing Foundations
+1 tonight; the library serves the student revising in May, the student who missed
+three weeks, and the case manager who wants to see what is being taught. There
+used to be a second *page* for the first of those, which is the arrangement
+retired above.
 
 **A volume is named the way the front door names its unit.** `ebook/unit-1.html`
 is "The Global Tapestry", not "The Unit 1 eBook", and the library card carries
@@ -297,9 +299,9 @@ card should not have to work out that Networks of Exchange is Unit 2.
 **The brand typefaces are loaded by the page templates, not by the stylesheet.**
 `behistorical-deep-reading.css` has always declared Cinzel, Libre Baskerville and
 Montserrat in `--font-display`, `--font-body` and `--font-ui`, and for the first
-four volumes nothing loaded them, so every eBook page and every standalone deep
-reading quietly rendered in the Georgia and Arial fallbacks while the rest of the
-site rendered in the brand faces. Tokens are not a request. `FONT_LINKS` in
+four volumes nothing loaded them, so every eBook page quietly rendered in the
+Georgia and Arial fallbacks while the rest of the site rendered in the brand
+faces. Tokens are not a request. `FONT_LINKS` in
 `scripts/lib/deep-reading-page.js` is the one copy, re-exported to
 `ebook-page.js`, and its href is byte-identical to the one the 77 First & 10
 readings use so that a student moving between them reuses the cache. It carries
@@ -330,8 +332,8 @@ numbering would make the Foundations 3 chapter "Chapter 02" while Foundations 2
 is unwritten, and would silently renumber every chapter the moment a gap is
 filled. Unit chapters number as `1.4` and label as `Topic 1.4`, both derived from
 the slug, which is why a unit content module's slug must start `topic-<unit>-`:
-`build-deep-readings.js` places the page from it, and `ebook-page.js` derives the
-chapter number, the contents label and the link back to the lesson from it too.
+`ebook-page.js` derives the chapter number, the contents label and the link back
+to the lesson from it.
 
 **A volume's footer names the volume and links its own hub**, derived from the
 first written chapter's slug rather than declared, for the same reason the lesson
@@ -442,7 +444,7 @@ reporting the same confident green while covering less of the eBook each time a
 volume landed, which is the failure this repo cares about more than an outright
 red.
 
-**Two checks, same shape as the deep readings.** `--check` in the offline suite
+**Two checks, same shape as the chapter cards.** `--check` in the offline suite
 proves each volume and the library still match the chapter modules.
 `validate.js` proves each volume exists, that every slug it names has a content
 module, that the library lists every volume, and that **`index.html` links the
@@ -519,13 +521,13 @@ one `data-no-narrate` attribute in the renderer.
 **Volumes only.** `ebook/index.html` is a shelf, not a reading, so it marks no
 sections and loads no narration module. `validate.js` asserts both directions.
 
-**The standalone deep readings do not have this, and that is deliberate.** They
-ship no `<script>` at all, in writing, because a page with no script cannot ship
-a SyntaxError that silently discards its own behaviour. The `listen` option
-defaults to false and only the eBook turns it on, so
-`foundations/deep-reading-*.html` came out of this change byte for byte
-unchanged. `validate.js` fails if any standalone deep reading, in `foundations/`
-or in a `unit-N/`, grows a `<script>` tag.
+**The standalone deep readings never had this, and it is half of why they were
+retired.** They shipped no `<script>` at all, in writing, so the narration could
+never reach them: a student on the lesson page was being sent to the one copy of
+the reading that could not be listened to. `listen` stays an opt-in option rather
+than always-on, because a future surface reusing `renderChapterBody` must decide
+whether it can build the controls before it advertises them, and a dead mount
+point looks exactly like a working one until a student presses it.
 
 **Two checks, because the failures are silent in opposite directions.**
 `validate.js` proves offline that the sections are marked, that the marked count

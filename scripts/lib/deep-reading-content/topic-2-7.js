@@ -30,15 +30,10 @@
 module.exports = {
   topicKey: 't2-7',
   slug: 'topic-2-7-comparison',
-  sourceFile: 'deep-reading-topic-2-7-comparison.html',
   lessonFile: 'lesson-2-7-comparison.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 2.7: One System, Three Surfaces',
-  eyebrow: 'Topic 2.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'One System, Three <em>Surfaces</em>',
   deck: `Sand, water and grass are three different problems, and the traders solving them were often the same people selling into the same markets. This chapter puts the three networks under one set of questions, names the single mechanism that explains most of their differences, and then shows exactly what a comparison paragraph has to contain.`,
-  meta: ['Five sections', 'No new content, one new skill', 'Read alongside the First & 10'],
-  footerNote: 'Topic 2.7 &nbsp;·&nbsp; One System, Three Surfaces &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

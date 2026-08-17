@@ -5,9 +5,11 @@
  * as one continuous document.
  *
  * This file renders; it does not author. Every word of every chapter comes from
- * the same content module that produces that topic's standalone deep reading,
- * so the eBook and the per-topic page cannot drift apart. If you find yourself
- * about to type a sentence of history here, it belongs in a content module.
+ * a content module in scripts/lib/deep-reading-content/, and since 2026-08-17
+ * the volume is the only surface those modules produce: the standalone
+ * deep-reading pages that carried the same words were retired, and each lesson's
+ * card now links its chapter's anchor here. If you find yourself about to type a
+ * sentence of history in this file, it belongs in a content module.
  *
  * The chapter body is rendered by the deep-reading renderer, reused rather than
  * reimplemented, for the same reason canvas-parse-core.js is inlined into the
@@ -124,9 +126,9 @@ function chapterNumber(chapter) {
 /**
  * The lesson page's path relative to the eBook. The eBook lives in ebook/ and
  * the lessons live in foundations/ or unit-N/, so a bare "../<lessonFile>"
- * resolves to the repo root and 404s. Derived from the slug the same way
- * build-deep-readings.js derives the output directory, so the two cannot
- * disagree about where a topic lives.
+ * resolves to the repo root and 404s. Derived from the slug rather than
+ * declared, so this and the lesson's own card cannot disagree about where a
+ * topic lives; validate.js checks the return trip.
  */
 function lessonHref(chapter) {
   const file = chapter.lessonFile || '';

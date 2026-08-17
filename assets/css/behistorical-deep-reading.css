@@ -1,14 +1,15 @@
 /* ─────────────────────────────────────────────────────────────────────────────
  * BeHistorical, Deep Reading
  *
- * The shared stylesheet for the generated deep readings, the optional
- * push-further layer that sits under Content Delivery on a lesson page.
+ * The shared stylesheet for the eBook: the library, every volume, and every
+ * chapter inside one. A chapter is the optional push-further layer a lesson page
+ * offers under Content Delivery, through a card that opens it here.
  *
  * Kept out of the page template on purpose. The 77 First & 10 readings each
  * carried a duplicated 80-line stylesheet before they were generated, and the
  * lesson from that is not "generation makes duplication safe" but "a style fix
- * should not need a content rebuild." Editing this file changes every deep
- * reading without running build-deep-readings.js.
+ * should not need a content rebuild." Editing this file changes every chapter of
+ * every volume without running build-ebook.js.
  *
  * Polarity: paper under ink, per the rule in CLAUDE.md. This is a surface a
  * student reads at length, in a lit room, often projected. A lamp projector can

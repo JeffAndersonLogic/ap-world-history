@@ -32,15 +32,10 @@
 module.exports = {
   topicKey: 't4-2',
   slug: 'topic-4-2-exploration',
-  sourceFile: 'deep-reading-topic-4-2-exploration.html',
   lessonFile: 'lesson-4-2-exploration.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 4.2: Who Paid, and What For',
-  eyebrow: 'Topic 4.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Who Paid, and What <em>For</em>',
   deck: `Voyages of this kind lost most of their ships and most of their crews, so somebody had to want the result badly enough to keep funding them. This chapter is about who that was and why: the price of pepper at both ends of the chain, the contracts that promised explorers a percentage, the line the pope's mediation drew through the world in <span class="num">1494</span>, and what the countries on the wrong side of it did next.`,
-  meta: ['Four sections', 'Motives with mechanisms', 'Read alongside the First & 10'],
-  footerNote: 'Topic 4.2 &nbsp;·&nbsp; Who Paid, and What For &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

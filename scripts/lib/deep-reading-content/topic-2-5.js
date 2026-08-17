@@ -31,15 +31,10 @@
 module.exports = {
   topicKey: 't2-5',
   slug: 'topic-2-5-cultural-consequences',
-  sourceFile: 'deep-reading-topic-2-5-cultural-consequences.html',
   lessonFile: 'lesson-2-5-cultural-consequences.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 2.5: What Traveled Without Paying Freight',
-  eyebrow: 'Topic 2.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'What Traveled Without Paying <em>Freight</em>',
   deck: `Merchants moved cargo, and everything else came along for free: religions, techniques, crops, styles, words and the occasional French silversmith. This chapter follows the chains, with the dates and places that turn "ideas spread along trade routes" into something a reader can check.`,
-  meta: ['Five sections', 'Chains, not lists', 'Read alongside the First & 10'],
-  footerNote: 'Topic 2.5 &nbsp;·&nbsp; What Traveled Without Paying Freight &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

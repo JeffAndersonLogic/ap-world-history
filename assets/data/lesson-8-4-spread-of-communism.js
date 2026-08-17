@@ -203,7 +203,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Land, and Who Holds It",
     desc: "A textbook-depth companion that reads the spread of communism as a series of arguments about land rather than as the travel of an idea, which is what makes its appeal in agrarian societies explicable. Optional, and useful when a checkpoint asks why communist movements succeeded where they did.",
-    url: "deep-reading-topic-8-4-spread-of-communism.html"
+    url: "../ebook/unit-8.html#chapter-t8-4"
   },
 
   first10: {

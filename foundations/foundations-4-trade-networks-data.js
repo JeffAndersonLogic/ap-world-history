@@ -68,7 +68,7 @@ window.FOUNDATION_TOPIC = {
   deepReading: {
     title: 'Nobody Traveled the Whole Road',
     desc: 'A textbook-depth companion covering the three networks one at a time, with the named oasis towns and ports and what each was for, the monsoon by month and direction, and then the four things that traveled without anyone intending it. Optional, and useful when a question asks how a network actually worked rather than what moved along it.',
-    url: 'deep-reading-foundations-4-trade-networks.html'
+    url: '../ebook/foundations.html#chapter-f4'
   },
 
   first10: {

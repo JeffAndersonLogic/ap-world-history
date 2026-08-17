@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't5-4',
   slug: 'topic-5-4-industrialization-spreads',
-  sourceFile: 'deep-reading-topic-5-4-industrialization-spreads.html',
   lessonFile: 'lesson-5-4-industrialization-spreads.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.4: Who Got to Industrialize',
-  eyebrow: 'Topic 5.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Who Got to <em>Industrialize</em>',
   deck: `Industrialization spread to a short list of places and not to most of the world, and the difference is not one of talent, ambition or even knowledge. Egypt built cotton mills and an arsenal and was stopped by a treaty. India had the finest textile industry on earth, was tariffed out of Britain's market and was never allowed the tariff that would have protected its own. Japan, which nobody expected, did it in forty years. What separates those outcomes is who controlled the tariff.`,
-  meta: ['Four sections', 'Followers, two state-led cases, and who was blocked', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.4 &nbsp;·&nbsp; Who Got to Industrialize &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

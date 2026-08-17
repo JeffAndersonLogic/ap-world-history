@@ -116,7 +116,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'Protest Follows the Decision',
     desc: 'A textbook-depth companion that explains why opposition to globalization gathered where it did by following the decisions rather than the slogans, starting from the fact that rules affecting people everywhere were being written by bodies those people could not vote out. Optional, and useful when a checkpoint asks who resisted globalization and why.',
-    url: 'deep-reading-topic-9-7-resistance-globalization.html'
+    url: '../ebook/unit-9.html#chapter-t9-7'
   },
   first10: {
     title: 'First & 10: Resistance to Globalization After 1900',

@@ -187,7 +187,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "What Held It Together",
     desc: "A textbook-depth companion on the economics: mercantilism derived from its premise, the silver chain from Potosi to Canton and why a Ming tax reform set the price, the real shape of the Atlantic system, creolization as creation under constraint, and the trade deficit that defined Europe in Asia. Optional, and the strongest single corrective to a Unit 4 essay.",
-    url: "deep-reading-topic-4-5-maritime-empires-maintained.html"
+    url: "../ebook/unit-4.html#chapter-t4-5"
   },
 
   first10: {

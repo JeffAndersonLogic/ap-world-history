@@ -36,15 +36,10 @@
 module.exports = {
   topicKey: 't1-3',
   slug: 'topic-1-3-south-southeast-asia',
-  sourceFile: 'deep-reading-topic-1-3-south-southeast-asia.html',
   lessonFile: 'lesson-1-3-south-southeast-asia.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 1.3: Rice, Water, and the Strait',
-  eyebrow: 'Topic 1.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Rice, Water, and the <em>Strait</em>',
   deck: `Two ways to build a state in this region, and the geography chooses for you. Control land and you tax rice, which means water, labor and a temple to justify taking both. Control a strait and you tax everyone else's cargo, which means a harbor, a navy and a reputation merchants trust. This chapter works through both, so the comparison the topic asks for has real machinery behind it.`,
-  meta: ['Five sections', 'Land states and sea states', 'Read alongside the First & 10'],
-  footerNote: 'Topic 1.3 &nbsp;·&nbsp; Rice, Water, and the Strait &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

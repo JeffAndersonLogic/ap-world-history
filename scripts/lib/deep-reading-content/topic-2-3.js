@@ -35,15 +35,10 @@
 module.exports = {
   topicKey: 't2-3',
   slug: 'topic-2-3-indian-ocean',
-  sourceFile: 'deep-reading-topic-2-3-indian-ocean.html',
   lessonFile: 'lesson-2-3-indian-ocean.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 2.3: The Ocean That Carried Everything',
-  eyebrow: 'Topic 2.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Ocean That Carried <em>Everything</em>',
   deck: `One of the largest trading systems in the world before <span class="num">1500</span> had no ruler, no capital and no power trying to police it, and it moved cargo by the shipload rather than by the saddlebag. This chapter covers the ships, the economics, the port cities and the merchant communities, and finishes with the one fleet that was a state project and what happened to it.`,
-  meta: ['Five sections', 'Ships, cargo, ports, people', 'Read alongside the First & 10'],
-  footerNote: 'Topic 2.3 &nbsp;·&nbsp; The Ocean That Carried Everything &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

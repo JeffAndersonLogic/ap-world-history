@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't6-2',
   slug: 'topic-6-2-state-expansion',
-  sourceFile: 'deep-reading-topic-6-2-state-expansion.html',
   lessonFile: 'lesson-6-2-state-expansion.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 6.2: What Conquest Started to Cost',
-  eyebrow: 'Topic 6.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'What Conquest Started to <em>Cost</em>',
   deck: `In <span class="num">1870</span> Europeans held a scattering of coastal forts, river mouths and a few large possessions in Africa. By <span class="num">1914</span> the entire continent except Ethiopia and Liberia was claimed. Nothing about European desire for Africa changed in those forty years; people had wanted it for centuries. What changed is that the price of taking it and holding it fell through the floor, and this chapter follows that price through five stages, from the rule set in Berlin to the empires assembled in Tokyo, St Petersburg and Washington.`,
-  meta: ['Five sections', 'Rules, cost, the Congo, forms of rule, and the other empires', 'Read alongside the First & 10'],
-  footerNote: 'Topic 6.2 &nbsp;·&nbsp; What Conquest Started to Cost &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

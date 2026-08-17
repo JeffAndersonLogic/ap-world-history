@@ -166,7 +166,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'Two Months Without Water',
     desc: 'A textbook-depth companion on the camel and the saddle, the caravan, why salt was worth gold, the cities that grew where the routes met the river, what Islam delivered to a merchant, and what the system cost the people carried in it. Optional.',
-    url: 'deep-reading-topic-2-4-trans-saharan.html'
+    url: '../ebook/unit-2.html#chapter-t2-4'
   },
 
   first10: {

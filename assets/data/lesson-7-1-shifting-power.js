@@ -225,7 +225,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Bill Comes Due",
     desc: "A textbook-depth companion that explains why three empires collapsed within fifteen years of each other, not because they were old but because each was buying an industrial-age army out of an agrarian tax base. Traces the Ottoman debt administration, the Qing decision to abolish the examinations that had manufactured its own supporters, and the Russian chain from Bloody Sunday to October. Optional, and useful when a checkpoint asks how internal and external factors reinforced each other.",
-    url: "deep-reading-topic-7-1-shifting-power.html"
+    url: "../ebook/unit-7.html#chapter-t7-1"
   },
 
   first10: {

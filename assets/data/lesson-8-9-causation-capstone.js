@@ -134,7 +134,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Word Extent Is Doing All the Work",
     desc: "A textbook-depth companion on the skill the capstone is really testing: it fixes the hemisphere trap that misplaces most of the evidence, supplies three tests that make a degree claim defensible, works Egypt against Cuba and Poland against Guatemala as matched pairs, and builds an evaluate-the-extent thesis that meets the decolonization counterargument head on. Optional, and useful when a checkpoint asks you to commit to a degree rather than write \"partly similar\".",
-    url: "deep-reading-topic-8-9-causation-capstone.html"
+    url: "../ebook/unit-8.html#chapter-t8-9"
   },
 
   first10: {

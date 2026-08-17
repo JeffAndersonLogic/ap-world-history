@@ -31,15 +31,10 @@
 module.exports = {
   topicKey: 't4-4',
   slug: 'topic-4-4-maritime-empires-established',
-  sourceFile: 'deep-reading-topic-4-4-maritime-empires-established.html',
   lessonFile: 'lesson-4-4-maritime-empires-established.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 4.4: Three Ways to Hold an Ocean',
-  eyebrow: 'Topic 4.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Three Ways to Hold an <em>Ocean</em>',
   deck: `Portugal took ports and taxed everyone else&rsquo;s shipping. Spain took land and the people on it. The Dutch and English chartered private companies and gave them the powers of a state. Three empires built in the same century out of the same voyages, and the differences are not national character. They are answers to what each state wanted, what it could reach, and who was standing in the way.`,
-  meta: ['Five sections', 'Ports, conquest, government, companies, comparison', 'Read alongside the First & 10'],
-  footerNote: 'Topic 4.4 &nbsp;·&nbsp; Three Ways to Hold an Ocean &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

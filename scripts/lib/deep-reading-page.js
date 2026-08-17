@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * The one renderer for deep readings.
+ * The one renderer for a chapter body.
  *
- * A deep reading is the optional push-further layer under Content Delivery: the
+ * A chapter is the optional push-further layer under Content Delivery: the
  * textbook-depth treatment of a topic the ten modules assume a student already
  * has. Foundations 3 is the case that produced it. Its First & 10 carried 716
  * words across four classical states, about 179 each, while its success criteria
@@ -15,31 +15,30 @@
  *
  *   - No questions, so no textareas, so no capture block, no storage key, and
  *     none of the four-files-must-agree failure modes that come with them. A
- *     deep reading has nothing to submit; the modules remain the only path by
- *     which student writing reaches Canvas.
+ *     chapter has nothing to submit; the modules remain the only path by which
+ *     student writing reaches Canvas.
  *   - No coach bridge. Socrates is told about exactly four assignments, and
  *     adding a fifth surface silently would mean the coach meets work it was
  *     told does not exist. See the Socrates section of CLAUDE.md.
- *   - No <script> at all. A page with no script cannot ship a SyntaxError that
- *     discards its own behaviour, which is the failure readings-parse.test.js
- *     exists to catch on the 77.
  *
- * The filename prefix is load-bearing. validate.js globs foundations lesson
- * shells with /^foundations-\d+.*\.html$/ and Foundations readings with
- * /^first-and-10-foundations.*\.html$/. A deep reading must miss both, or it is
- * checked against a contract it was never meant to satisfy. Hence
- * `deep-reading-<slug>.html`. If you rename these, re-read those two globs first.
+ * ── One surface, since 2026-08-17 ────────────────────────────────────────────
  *
- * ── Reused by the eBook ──────────────────────────────────────────────────────
+ * This file used to render two things: the chapter body, and a standalone
+ * `deep-reading-<slug>.html` page beside each lesson that wrapped it in its own
+ * masthead and jump nav. Every one of those 76 pages carried the same words as
+ * the eBook chapter built from the same module, so a topic's reading existed at
+ * two URLs and only one of them had the narration controls and the WCAG sweep.
+ * The pages were retired and the page template with them; the lesson card now
+ * links the chapter's anchor in its volume, and `scripts/build-deep-readings.js`
+ * is gone. The content modules did not change, which is why the ten volumes came
+ * out of that change byte for byte identical.
  *
  * scripts/lib/ebook-page.js renders each chapter by calling renderChapterBody
- * here rather than reimplementing it, so a volume and a standalone page cannot
- * render the same content differently. The only thing the eBook needs that a
- * standalone page does not is an `idPrefix`: several chapters legitimately use
- * the same section ids, and the closing section is `compare` in every one of
- * them, so concatenating chapters into one document without namespacing the ids
- * produces duplicates and every in-page link lands on the first chapter.
- * The prefix defaults to empty, which is exactly the standalone behaviour.
+ * here rather than reimplementing it, and passes an `idPrefix`: several chapters
+ * legitimately use the same section ids, and the closing section is `compare` in
+ * every one of them, so concatenating chapters into one document without
+ * namespacing the ids produces duplicates and every in-page link lands on the
+ * first chapter.
  */
 
 /**
@@ -138,13 +137,13 @@ function renderTerms(terms) {
  * being wired by hand, which is the failure mode this repo keeps paying for
  * when it does the other thing.
  *
- * Opt-in, not on by default, and the eBook is the only caller that opts in.
- * A standalone deep reading ships no <script> at all, on purpose and in
- * writing: a page with no script cannot ship a SyntaxError that silently
- * discards its own behaviour. Emitting these attributes unconditionally would
- * put dead mount points and a promise of buttons into five pages that have
- * nothing to build them, so `listen` defaults to false and the standalone
- * pages come out byte for byte as they did before this feature existed.
+ * Opt-in, not on by default, and the eBook is the only caller that opts in. It
+ * stays opt-in now that the eBook is the only caller at all, because the cost of
+ * the flag is one boolean and what it buys is that a future surface reusing this
+ * body has to decide whether it can build the controls before it advertises
+ * them: attributes emitted unconditionally would promise buttons on any page
+ * that does not load assets/js/behistorical-listen.js, and a dead mount point
+ * looks exactly like a working one until a student presses it.
  */
 function listenAttrs(on, scope, name) {
   if (!on) return '';
@@ -236,19 +235,6 @@ function renderHowTo(howTo, prefix) {
   );
 }
 
-function renderJumpNav(topic) {
-  const links = [];
-  if (topic.howTo) links.push(`      <li><a href="#howto">How to use this</a></li>\n`);
-  (topic.empires || []).forEach((empire, index) => {
-    const id = empire.id || slugId(empire.name);
-    const num = empire.num || String(index + 1).padStart(2, '0');
-    links.push(`      <li><a href="#${esc(id)}"><span class="n">${esc(num)}</span>${esc(empire.navLabel || empire.name)}</a></li>\n`);
-  });
-  if (topic.closing) links.push(`      <li><a href="#compare">${esc(topic.closing.navLabel || 'Building a comparison')}</a></li>\n`);
-
-  return `<nav class="dr-jump" aria-label="Jump to section">\n  <ul>\n${links.join('')}  </ul>\n</nav>\n`;
-}
-
 /**
  * The chapter body: how-to, every section, and the closing comparison. Shared
  * by the standalone deep reading and the eBook.
@@ -278,44 +264,4 @@ function renderChapterBody(topic, opts) {
   );
 }
 
-/**
- * Render one complete standalone deep reading page.
- *
- * @param {object} topic  a module from scripts/lib/deep-reading-content/
- * @returns {string} the full HTML document, newline-terminated
- */
-function renderDeepReadingPage(topic) {
-  const meta = (topic.meta || []).map(item => `      <span>${esc(item)}</span>\n`).join('');
-
-  return (
-`<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${esc(topic.docTitle)}</title>
-${FONT_LINKS}  <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
-</head>
-<body>
-<header class="dr-masthead">
-  <div class="dr-wrap">
-    <div class="dr-eyebrow">${topic.eyebrow}</div>
-    <h1>${topic.titleHtml}</h1>
-    <p class="dr-deck">${topic.deck}</p>
-${meta ? `    <div class="dr-meta">\n${meta}    </div>\n` : ''}  </div>
-</header>
-${renderJumpNav(topic)}<div class="dr-wrap">
-${renderChapterBody(topic)}  <footer class="dr-footer">
-    <span class="dr-footer-note">${topic.footerNote}</span>
-    <nav class="dr-nav" aria-label="Back to the lesson">
-      <a href="${esc(topic.lessonFile)}#modules">Back to Modules</a>
-      <a href="${esc(topic.lessonFile)}#lecture">Content Delivery</a>
-    </nav>
-  </footer>
-</div>
-</body>
-</html>
-`);
-}
-
-module.exports = { renderDeepReadingPage, renderChapterBody, escapeText: esc, FONT_LINKS };
+module.exports = { renderChapterBody, escapeText: esc, FONT_LINKS };

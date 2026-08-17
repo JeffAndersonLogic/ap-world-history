@@ -149,7 +149,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Somebody Else Carries the Risk",
     desc: "A textbook-depth companion on what an investor faced before limited liability and what the Companies Act of 1862 changed, what a stock exchange and an investment bank actually do, why free trade was the policy of the cheapest producer, and how a loan became a government in Egypt, the Ottoman empire and the treaty ports. Optional, and the bridge from this unit into Unit 6.",
-    url: "deep-reading-topic-5-7-economic-developments-and-innovations.html"
+    url: "../ebook/unit-5.html#chapter-t5-7"
   },
 
   first10: {

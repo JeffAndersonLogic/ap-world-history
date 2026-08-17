@@ -42,15 +42,10 @@
 module.exports = {
   topicKey: 't9-9',
   slug: 'topic-9-9-continuity-change-globalized-world',
-  sourceFile: 'deep-reading-topic-9-9-continuity-change-globalized-world.html',
   lessonFile: 'lesson-9-9-continuity-change-globalized-world.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 9.9: Measured Against What',
-  eyebrow: 'Topic 9.9 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Measured Against <em>What</em>',
   deck: `This is the last chapter of the course, and its question is the one every essay you have written has been practicing for. How much did the twentieth century actually change? The answer is not hiding in more facts. An extent claim has three parameters people leave unstated, a baseline, a criterion and a population, and once you say all three out loud the question stops being unanswerable and becomes a thesis somebody could argue with. Which is what a thesis is.`,
-  meta: ['Four sections', 'The parameters, the layers, the continuities, the answer', 'The last chapter of the course'],
-  footerNote: 'Topic 9.9 &nbsp;·&nbsp; Measured Against What &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

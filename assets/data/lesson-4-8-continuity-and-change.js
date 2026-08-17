@@ -181,7 +181,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "What Changed and What Did Not",
     desc: "A textbook-depth companion on what makes a trade network global rather than merely long, the catastrophe and the crops in one argument, three continuities with the structural reason each held, a method for continuity-and-change prompts, and where the line into Unit 5 actually falls. Optional, and the chapter to read before writing about this period.",
-    url: "deep-reading-topic-4-8-continuity-and-change.html"
+    url: "../ebook/unit-4.html#chapter-t4-8"
   },
 
   first10: {

@@ -44,15 +44,10 @@
 module.exports = {
   topicKey: 'f1',
   slug: 'foundations-1-geography',
-  sourceFile: 'deep-reading-foundations-1-geography.html',
   lessonFile: 'foundations-1-geography.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Foundations 1: The Bargain',
-  eyebrow: 'Foundations 1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The <em>Bargain</em>',
   deck: `Farming produced more food per hectare and, for a very long time, worse lives for most of the people who did it. Both halves of that sentence are supported by evidence, and holding them together is what turns the Neolithic from a story about progress into an argument you can actually make.`,
-  meta: ['One chain, link by link', 'And what it cost', 'Read alongside the First & 10'],
-  footerNote: 'Foundations 1 &nbsp;·&nbsp; The Bargain &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

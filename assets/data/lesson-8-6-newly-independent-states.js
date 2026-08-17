@@ -218,7 +218,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Line, and the People on It",
     desc: "A textbook-depth companion on the gap between transferring sovereignty and transferring capacity, worked through a drawn border and the states that inherited it. Optional, and useful when a checkpoint asks about the challenges facing newly independent states.",
-    url: "deep-reading-topic-8-6-newly-independent-states.html"
+    url: "../ebook/unit-8.html#chapter-t8-6"
   },
 
   first10: {

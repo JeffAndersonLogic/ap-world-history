@@ -41,15 +41,10 @@
 module.exports = {
   topicKey: 'f2',
   slug: 'foundations-2-belief-systems',
-  sourceFile: 'deep-reading-foundations-2-belief-systems.html',
   lessonFile: 'foundations-2-belief-systems.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Foundations 2: What a Belief System Does',
-  eyebrow: 'Foundations 2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'What a Belief System <em>Does</em>',
   deck: `Seven traditions, and for each one the same four questions: what does it claim, what did it actually run, how did it travel, and who did it put where. The claims are the part you already know. The machinery is the part an AP question is asking about when it wants to know what a belief system <em>did</em> in the society that held it.`,
-  meta: ['Seven traditions', 'One skeleton each', 'Read alongside the First & 10'],
-  footerNote: 'Foundations 2 &nbsp;·&nbsp; What a Belief System Does &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

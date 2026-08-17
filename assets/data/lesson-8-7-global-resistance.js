@@ -202,7 +202,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Three Bets About Who Is Watching",
     desc: "A textbook-depth companion that stops treating nonviolent campaigns, state terror and attacks on civilians as a moral ranking and reads each as a method, a wager about which audience is watching and what that audience will do. Optional, and useful when a checkpoint asks you to compare forms of resistance and repression.",
-    url: "deep-reading-topic-8-7-global-resistance.html"
+    url: "../ebook/unit-8.html#chapter-t8-7"
   },
 
   first10: {

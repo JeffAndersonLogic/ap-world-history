@@ -30,15 +30,10 @@
 module.exports = {
   topicKey: 't6-6',
   slug: 'topic-6-6-causes-of-migration',
-  sourceFile: 'deep-reading-topic-6-6-causes-of-migration.html',
   lessonFile: 'lesson-6-6-causes-of-migration.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 6.6: Why People Could Go',
-  eyebrow: 'Topic 6.6 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Why People Could <em>Go</em>',
   deck: `Between the <span class="num">1840</span>s and <span class="num">1940</span> something on the order of a hundred and fifty million people left home for good or for years, in three great streams of roughly similar size: across the Atlantic, across the Indian Ocean and the South China Sea, and north into Manchuria, Siberia and Central Asia. People had always had reasons to leave. This chapter is about the four things that had to be true at once before a reason could become a journey, and about why they became true when they did.`,
-  meta: ['Five sections', 'The model, Ireland, indenture, convicts, and the flows nobody counted', 'Read alongside the First & 10'],
-  footerNote: 'Topic 6.6 &nbsp;·&nbsp; Why People Could Go &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

@@ -34,15 +34,10 @@
 module.exports = {
   topicKey: 't5-7',
   slug: 'topic-5-7-economic-developments-and-innovations',
-  sourceFile: 'deep-reading-topic-5-7-economic-developments-and-innovations.html',
   lessonFile: 'lesson-5-7-economic-developments-and-innovations.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.7: Somebody Else Carries the Risk',
-  eyebrow: 'Topic 5.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Somebody Else Carries the <em>Risk</em>',
   deck: `Industry needed more money than any partnership could raise, and the money would not come while an investor could lose his house over a company he did not manage. The nineteenth century solved that, brilliantly, with a set of legal and financial instruments. Every one of them works by moving risk somewhere else, and this chapter follows where it went, from a shareholder&rsquo;s balance sheet to an Egyptian tax collector.`,
-  meta: ['Four sections', 'The company, the money, free trade, and control by debt', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.7 &nbsp;·&nbsp; Somebody Else Carries the Risk &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

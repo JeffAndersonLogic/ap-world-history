@@ -225,7 +225,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Month There Was No Time",
     desc: "A textbook-depth companion that treats MAIN as a list of conditions rather than an explanation, then shows why four earlier crises were settled without war and what was different in July <span class=\"num\">1914</span>. Explains mobilization timetables and the Schlieffen Plan as the reason a Balkan quarrel reached Belgium. Optional, and useful when a checkpoint asks you to trace the escalation chain.",
-    url: "deep-reading-topic-7-2-causes-wwi.html"
+    url: "../ebook/unit-7.html#chapter-t7-2"
   },
 
   first10: {

@@ -163,7 +163,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Who Paid, and What For",
     desc: "A textbook-depth companion on why a state would fund a voyage that might return nothing: the pepper margin, the crusading inheritance, and the capitulaciones that made a contract out of a gamble, followed by the Portuguese program from Ceuta to Calicut, the Spanish bet, and the latecomers who went north. Optional, and useful when a checkpoint asks about motives.",
-    url: "deep-reading-topic-4-2-exploration.html"
+    url: "../ebook/unit-4.html#chapter-t4-2"
   },
 
   first10: {

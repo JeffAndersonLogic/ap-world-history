@@ -106,7 +106,7 @@ window.FOUNDATION_TOPIC = {
   deepReading: {
     title: 'The Machinery of Power',
     desc: 'A textbook-depth companion covering Persia, Han China, Greece and Rome one at a time, with the mechanism behind each tool of rule, who each system excluded, and where each one cracked. Optional, and useful when a checkpoint asks you how a tool actually worked.',
-    url: 'deep-reading-foundations-3-states-power.html'
+    url: '../ebook/foundations.html#chapter-f3'
   },
 
   first10: {

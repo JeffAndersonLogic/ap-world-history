@@ -38,15 +38,10 @@
 module.exports = {
   topicKey: 't3-3',
   slug: 'topic-3-3-belief-systems',
-  sourceFile: 'deep-reading-topic-3-3-belief-systems.html',
   lessonFile: 'lesson-3-3-belief-systems.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 3.3: Faith, and the Uses of It',
-  eyebrow: 'Topic 3.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Faith, and the Uses of <em>It</em>',
   deck: `Between <span class="num">1450</span> and <span class="num">1750</span> religion was the only language of legitimacy every subject understood, which made it the most powerful instrument a ruler had and the most dangerous. This chapter covers the Reformation as a political event, the sectarian border two empires drew and left behind, the arithmetic of ruling people who believe otherwise, and the tradition that began in the space where two of these worlds met.`,
-  meta: ['Six sections', 'Belief as instrument and as conviction', 'Read alongside the First & 10'],
-  footerNote: 'Topic 3.3 &nbsp;·&nbsp; Faith, and the Uses of It &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

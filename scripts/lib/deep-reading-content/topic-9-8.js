@@ -43,15 +43,10 @@
 module.exports = {
   topicKey: 't9-8',
   slug: 'topic-9-8-institutions-globalized-world',
-  sourceFile: 'deep-reading-topic-9-8-institutions-globalized-world.html',
   lessonFile: 'lesson-9-8-institutions-globalized-world.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 9.8: The Price of Keeping Everyone Inside',
-  eyebrow: 'Topic 9.8 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Price of Keeping Everyone <em>Inside</em>',
   deck: `The League of Nations was designed to stop wars and the most powerful states either never joined it or walked out of it. The people who wrote the United Nations Charter in <span class="num">1945</span> had watched that happen, and they made a trade: the great powers would be given a permanent veto, and in exchange they would be inside the building. Almost everything the organization has and has not been able to do since follows from that bargain, and this chapter is about how to reason from it rather than complain about it.`,
-  meta: ['Four sections', 'The bargain, the chamber, the field, the axis', 'Read alongside the First & 10'],
-  footerNote: 'Topic 9.8 &nbsp;·&nbsp; The Price of Keeping Everyone Inside &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

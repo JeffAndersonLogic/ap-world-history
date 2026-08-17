@@ -154,7 +154,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "A City Built for a Quarter of Itself",
     desc: "A textbook-depth companion on what actually separated a clerk from a spinner, why separate spheres was an ideology a household had to be able to afford, why unplanned growth produces housing shortage and filth as arithmetic rather than as squalor, and the mechanism that made the water lethal. Optional, and the place to go for the why behind each urban challenge.",
-    url: "deep-reading-topic-5-9-society-and-the-industrial-age.html"
+    url: "../ebook/unit-5.html#chapter-t5-9"
   },
 
   first10: {

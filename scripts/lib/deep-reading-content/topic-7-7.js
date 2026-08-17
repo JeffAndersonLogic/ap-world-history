@@ -31,15 +31,10 @@
 module.exports = {
   topicKey: 't7-7',
   slug: 'topic-7-7-conducting-wwii',
-  sourceFile: 'deep-reading-topic-7-7-conducting-wwii.html',
   lessonFile: 'lesson-7-7-conducting-wwii.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 7.7: The War the Factories Decided',
-  eyebrow: 'Topic 7.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The War the Factories <em>Decided</em>',
   deck: `The states that called themselves total, and claimed the right to organize every part of their societies, were out-mobilized by the ones that did not. Britain conscripted women for war work in <span class="num">1941</span>; Germany resisted doing so for years. This chapter is the comparison the success criteria ask for, and the answer it reaches is not the one the propaganda of either side would have predicted.`,
-  meta: ['Four sections', 'Movement, production, persuasion, the target', 'Read alongside the First & 10'],
-  footerNote: 'Topic 7.7 &nbsp;·&nbsp; The War the Factories Decided &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

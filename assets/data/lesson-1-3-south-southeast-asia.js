@@ -89,7 +89,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'Rice, Water, and the Strait',
     desc: 'A textbook-depth companion on land states and sea states side by side: Vijayanagara and Angkor on water and rice, Srivijaya, Majapahit and Melaka on the monsoon and the strait, and what religion did for each. Optional, and the fastest way to be ready for the comparison this topic asks for.',
-    url: 'deep-reading-topic-1-3-south-southeast-asia.html'
+    url: '../ebook/unit-1.html#chapter-t1-3'
   },
 
   first10: {

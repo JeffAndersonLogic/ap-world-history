@@ -161,7 +161,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Where Authority Comes From",
     desc: "A textbook-depth companion on six Enlightenment arguments and what each one licenses, how banned books reached readers through a cross-border smuggling trade, why the exclusions of women and enslaved people were built into the theory rather than appended to it, and what Wollstonecraft, de Gouges, Equiano and Haiti did with a universal claim once it existed in print. Optional, and useful when a checkpoint asks you to explain a thinker rather than name one.",
-    url: "deep-reading-topic-5-1-enlightenment.html"
+    url: "../ebook/unit-5.html#chapter-t5-1"
   },
 
   first10: {

@@ -31,15 +31,10 @@
 module.exports = {
   topicKey: 't7-8',
   slug: 'topic-7-8-mass-atrocities',
-  sourceFile: 'deep-reading-topic-7-8-mass-atrocities.html',
   lessonFile: 'lesson-7-8-mass-atrocities.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 7.8: What States Did With Their New Capacity',
-  eyebrow: 'Topic 7.8 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'What States Did With Their New <em>Capacity</em>',
   deck: `The mass killings of the twentieth century were not carried out by mobs in the dark. They were carried out by governments, using censuses, identity papers, railways, radio and organized bureaucracies, against populations already inside their reach. This chapter is about the shared mechanism, the specific cases, and what the world built afterward to try to make it prosecutable.`,
-  meta: ['Four sections', 'The mechanism, the cases, the Holocaust, the response', 'Read alongside the First & 10'],
-  footerNote: 'Topic 7.8 &nbsp;·&nbsp; What States Did With Their New Capacity &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

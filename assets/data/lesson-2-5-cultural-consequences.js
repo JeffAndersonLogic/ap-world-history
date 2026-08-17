@@ -167,7 +167,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'What Traveled Without Paying Freight',
     desc: 'A textbook-depth companion on how a belief or a technique actually moves, with traceable chains: papermaking city by city, the crops that carried the plantation model to the Atlantic, and one porcelain dish that contains the whole Eurasian system. Optional.',
-    url: 'deep-reading-topic-2-5-cultural-consequences.html'
+    url: '../ebook/unit-2.html#chapter-t2-5'
   },
 
   first10: {

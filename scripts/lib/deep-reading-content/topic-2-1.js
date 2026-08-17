@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't2-1',
   slug: 'topic-2-1-silk-roads',
-  sourceFile: 'deep-reading-topic-2-1-silk-roads.html',
   lessonFile: 'lesson-2-1-silk-roads.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 2.1: The Business of the Road',
-  eyebrow: 'Topic 2.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Business of the <em>Road</em>',
   deck: `Somebody had to pay for all of it. This chapter treats the Silk Roads as what they actually were between <span class="num">1200</span> and <span class="num">1450</span>, a commercial system with capital, contracts, staff, insurance of a sort, and a cost per mile, because a student who can say what a caravan cost to run can explain why the traffic was what it was and why it stopped.`,
-  meta: ['Five sections', 'The road as a business', 'Read alongside the First & 10'],
-  footerNote: 'Topic 2.1 &nbsp;·&nbsp; The Business of the Road &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

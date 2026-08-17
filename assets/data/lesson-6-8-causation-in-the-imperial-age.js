@@ -182,7 +182,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'Which One Mattered Most',
     desc: 'A textbook-depth companion on how to weigh one effect of imperialism against another: the four effects stated as mechanisms so they can be compared, four tests of significance that rank them in different orders, the causes sorted into necessary, permissive and accelerating, the argument historians actually have about Hobson and Lenin and the investment data that complicates it, and a full thesis written out with its evidence structure. Optional, and the one to read before an argument essay.',
-    url: 'deep-reading-topic-6-8-causation-in-the-imperial-age.html'
+    url: '../ebook/unit-6.html#chapter-t6-8'
   },
   first10: {
     title: 'First & 10: Causation in the Imperial Age',

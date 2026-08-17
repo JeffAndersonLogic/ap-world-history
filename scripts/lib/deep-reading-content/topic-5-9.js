@@ -37,15 +37,10 @@
 module.exports = {
   topicKey: 't5-9',
   slug: 'topic-5-9-society-and-the-industrial-age',
-  sourceFile: 'deep-reading-topic-5-9-society-and-the-industrial-age.html',
   lessonFile: 'lesson-5-9-society-and-the-industrial-age.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.9: A City Built for a Quarter of Itself',
-  eyebrow: 'Topic 5.9 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'A City Built for a Quarter of <em>Itself</em>',
   deck: `Manchester grew twelvefold in two generations, into pipes, drains and streets laid out for a market town. This chapter is what that was like to live in: the two classes industrialization created and what separated them at the dinner table rather than in theory, why the same century sent one woman to a mill at five in the morning and told another that leaving the house was improper, and why the water killed people.`,
-  meta: ['Four sections', 'Two classes, gender by class, the city, the water', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.9 &nbsp;·&nbsp; A City Built for a Quarter of Itself &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

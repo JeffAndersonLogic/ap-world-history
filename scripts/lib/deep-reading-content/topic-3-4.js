@@ -29,15 +29,10 @@
 module.exports = {
   topicKey: 't3-4',
   slug: 'topic-3-4-comparison',
-  sourceFile: 'deep-reading-topic-3-4-comparison.html',
   lessonFile: 'lesson-3-4-comparison.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 3.4: One Problem, Five Answers',
-  eyebrow: 'Topic 3.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'One Problem, Five <em>Answers</em>',
   deck: `Five empires, one problem: how does a small ruling group hold an enormous population it does not resemble, with an army it cannot fully afford, through officials it cannot see? This chapter puts the answers side by side, names the three variables that explain most of the differences, and then shows how to write a comparison that earns the point rather than describing two empires in turn.`,
-  meta: ['Five sections', 'No new content, one new skill', 'Read alongside the First & 10'],
-  footerNote: 'Topic 3.4 &nbsp;·&nbsp; One Problem, Five Answers &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

@@ -31,15 +31,10 @@
 module.exports = {
   topicKey: 't7-5',
   slug: 'topic-7-5-unresolved-tensions',
-  sourceFile: 'deep-reading-topic-7-5-unresolved-tensions.html',
   lessonFile: 'lesson-7-5-unresolved-tensions.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 7.5: Empire Changes Its Vocabulary',
-  eyebrow: 'Topic 7.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Empire Changes Its <em>Vocabulary</em>',
   deck: `Four empires did not survive the war and the total amount of territory under imperial rule went up. The peace that dissolved the Ottoman, Austro-Hungarian, Russian and German empires handed most of the pieces to the winners under a new name, and the name promised eventual self-government. This chapter is the gap between that promise and the administration, and why the gap is the beginning of Unit 8.`,
-  meta: ['Four sections', 'The settlement, the mandates, the promise, the failures', 'Read alongside the First & 10'],
-  footerNote: 'Topic 7.5 &nbsp;·&nbsp; Empire Changes Its Vocabulary &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

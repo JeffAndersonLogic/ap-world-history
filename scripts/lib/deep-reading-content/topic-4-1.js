@@ -36,15 +36,10 @@
 module.exports = {
   topicKey: 't4-1',
   slug: 'topic-4-1-technological-innovations',
-  sourceFile: 'deep-reading-topic-4-1-technological-innovations.html',
   lessonFile: 'lesson-4-1-technological-innovations.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 4.1: Sailing Away to Get Home',
-  eyebrow: 'Topic 4.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Sailing Away to Get <em>Home</em>',
   deck: `The Indian Ocean had better ships than Europe and a wind that reversed on schedule. The Atlantic offered neither, and the technology in this chapter is the answer to that harder problem: how to leave the sight of land for weeks, find a place you have never been, and get back against the wind that brought you.`,
-  meta: ['Four sections', 'The problem before the technology', 'Read alongside the First & 10'],
-  footerNote: 'Topic 4.1 &nbsp;·&nbsp; Sailing Away to Get Home &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

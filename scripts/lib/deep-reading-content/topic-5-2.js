@@ -37,15 +37,10 @@
 module.exports = {
   topicKey: 't5-2',
   slug: 'topic-5-2-nationalism-and-revolutions',
-  sourceFile: 'deep-reading-topic-5-2-nationalism-and-revolutions.html',
   lessonFile: 'lesson-5-2-nationalism-and-revolutions.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.2: Who Counted as the People',
-  eyebrow: 'Topic 5.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Who Counted as the <em>People</em>',
   deck: `Four revolutions declared that authority comes from the people, and then each had to decide who the people were. Three of them answered narrowly and one answered without qualification, which is why the one that abolished slavery and won was treated by the others as a catastrophe rather than a vindication. This chapter is the causes, the exclusions, Haiti, and how the same idea then took empires apart from the inside.`,
-  meta: ['Five sections', 'Causes, three revolutions, Haiti, nationalism', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.2 &nbsp;·&nbsp; Who Counted as the People &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

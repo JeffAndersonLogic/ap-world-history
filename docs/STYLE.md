@@ -5,13 +5,13 @@ offline suite, so it fails a push rather than waiting to be noticed. The second
 is judgment, which no checker can hold, and it is the half that actually decides
 whether a chapter teaches anything.
 
-**Before anything else: you cannot edit the pages.** `ebook/foundations.html`,
-`foundations/deep-reading-*.html` and the 77 readings are all generated. A style
-fix goes into the content module and then you rebuild:
+**Before anything else: you cannot edit the pages.** The ten eBook volumes and
+the 77 readings are all generated. A style fix goes into the content module and
+then you rebuild:
 
 ```bash
 # edit scripts/lib/deep-reading-content/<topic>.js, then
-npm run build:deep-readings && npm run build:ebook && npm test
+npm run build:ebook && npm test
 ```
 
 Hand-editing a generated page either fails `--check` on the next push or gets
@@ -62,7 +62,7 @@ fails.
 ### Overclaims, and why that check is a report rather than a gate
 
 `node scripts/report-absolutes.js` lists superlatives, universals and sole-cause
-claims across every deep-reading chapter, with context, grouped by pattern. It
+claims across every eBook chapter, with context, grouped by pattern. It
 exits 0 no matter what it finds, and it must stay that way.
 
 The reason is the split this repo runs on. `npm test` is hard on plumbing and
@@ -97,7 +97,7 @@ the ones worth catching.
 
 ### What the checker does not cover, and why
 
-It reads the deep-reading content modules only. The 77 First & 10 readings are
+It reads the chapter content modules only. The 77 First & 10 readings are
 pinned word for word by `readings-golden.js` and `foundations-golden.js` against
 committed fixtures of the hand-authored originals, so changing a spelling there
 fails a test whose entire purpose is to prove no words were lost in migration.
@@ -129,7 +129,7 @@ worth keeping.
 
 Prefer `contributed to`, `helped create the conditions for`, `in many regions`,
 `one important factor`. Reserve `caused` for a mechanism you can state. The house
-formulation is the one in the deep readings: **surplus made hierarchy possible,
+formulation is the one in the chapters: **surplus made hierarchy possible,
 it did not cause it**, and the Indus cities are the evidence for the distinction.
 
 This is not hedging for its own sake. It is the causation skill the AP exam
@@ -162,7 +162,7 @@ An unmarked anachronism teaches a student that the period boundary is decorative
 
 Any direct quotation is checked word for word against a reliable source.
 Quotation marks never wrap a paraphrase of what someone "essentially said". The
-deep readings mostly paraphrase Herodotus, Thucydides, Juvenal and Augustus
+chapters mostly paraphrase Herodotus, Thucydides, Juvenal and Augustus
 without quotation marks precisely to avoid this, which is a legitimate solution:
 if you cannot verify the wording, do not use the marks.
 
@@ -202,5 +202,5 @@ the student is actually being asked for.
 For any section, ask what a student could **do** with it: contextualize, explain
 a cause, compare two cases inside one category, argue a position, or cite it as
 evidence. If the honest answer is "remember it", the section is decoration and
-the space belongs to something else. Every `useThis` block in a deep reading is
+the space belongs to something else. Every `useThis` block in a chapter is
 this test written down.

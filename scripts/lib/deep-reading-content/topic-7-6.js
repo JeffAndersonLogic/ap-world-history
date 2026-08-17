@@ -31,15 +31,10 @@
 module.exports = {
   topicKey: 't7-6',
   slug: 'topic-7-6-causes-wwii',
-  sourceFile: 'deep-reading-topic-7-6-causes-wwii.html',
   lessonFile: 'lesson-7-6-causes-wwii.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 7.6: A Grievance Waiting for a Crisis',
-  eyebrow: 'Topic 7.6 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'A Grievance Waiting for a <em>Crisis</em>',
   deck: `The Treaty of Versailles was signed in <span class="num">1919</span> and the war it is blamed for began twenty years later. In between, the German republic survived the treaty's harshest years and the extremists lost elections badly. This chapter is about what changed: a grievance supplies a story, and a depression supplies the audience, and neither one does the job alone.`,
-  meta: ['Four sections', 'The treaty, the control case, the seizure, the road', 'Read alongside the First & 10'],
-  footerNote: 'Topic 7.6 &nbsp;·&nbsp; A Grievance Waiting for a Crisis &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

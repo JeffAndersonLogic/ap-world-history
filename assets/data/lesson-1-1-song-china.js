@@ -132,7 +132,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'The Examined State',
     desc: 'A textbook-depth companion covering the examination machinery, Neo-Confucianism, the commercial revolution and the northern frontier one at a time, with the mechanism behind each and where each one cracked. Optional, and useful when a checkpoint asks you how a tool of rule actually worked.',
-    url: 'deep-reading-topic-1-1-song-china.html'
+    url: '../ebook/unit-1.html#chapter-t1-1'
   },
 
   first10: {

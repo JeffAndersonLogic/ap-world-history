@@ -181,7 +181,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Three Ways to Hold an Ocean",
     desc: "A textbook-depth companion on the trading post empire and the cartaz, who actually did the fighting at Tenochtitlan and Cajamarca, how Spain governed across a year of distance, and what a charter granting war-making powers turned a company into. Optional, and useful when a checkpoint asks you to compare models of empire.",
-    url: "deep-reading-topic-4-4-maritime-empires-established.html"
+    url: "../ebook/unit-4.html#chapter-t4-4"
   },
 
   first10: {

@@ -40,15 +40,10 @@
 module.exports = {
   topicKey: 't9-6',
   slug: 'topic-9-6-globalized-culture',
-  sourceFile: 'deep-reading-topic-9-6-globalized-culture.html',
   lessonFile: 'lesson-9-6-globalized-culture.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 9.6: A Format Is Not a Meaning',
-  eyebrow: 'Topic 9.6 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'A Format Is Not a <em>Meaning</em>',
   deck: `The Topic 9.1 chapter ended with a cost: once information is digital and a network exists, one more copy costs the sender almost nothing. This chapter follows that cost into culture, where it does two opposite things at once. A good whose second copy is free gets made once and sent everywhere, which puts production in few hands. The same good then lands among people who share none of its origins, and they make their own sense of it. Convergence and hybridity are not rival findings about globalization. They are two results of one mechanism, and holding both is the whole of this topic.`,
-  meta: ['Four sections', 'The copy, the counterflow, the spectacle, the argument', 'Read alongside the First & 10'],
-  footerNote: 'Topic 9.6 &nbsp;·&nbsp; A Format Is Not a Meaning &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

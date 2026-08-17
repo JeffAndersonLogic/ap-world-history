@@ -145,7 +145,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Why It Started There",
     desc: "A textbook-depth companion that tests six candidate causes against places that had each one and did not industrialize, then explains why the steam engine was first built where its own waste fuel was free, why Arkwright&rsquo;s real invention was the working day, and what the Luddites were actually objecting to. Optional, and useful when a checkpoint asks why Britain first.",
-    url: "deep-reading-topic-5-3-industrial-revolution-begins.html"
+    url: "../ebook/unit-5.html#chapter-t5-3"
   },
 
   first10: {

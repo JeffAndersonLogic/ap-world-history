@@ -64,7 +64,7 @@ window.FOUNDATION_TOPIC = {
   deepReading: {
     title: 'The Starting Line',
     desc: 'A textbook-depth companion in two halves: six regional snapshots as they actually stood around 1200, each ending with the Foundations theme that explains it, and then the five thinking skills with a worked example and a failure mode for each. Optional, and useful when you need the baseline a continuity and change question measures against.',
-    url: 'deep-reading-foundations-5-world-at-1200.html'
+    url: '../ebook/foundations.html#chapter-f5'
   },
 
   first10: {

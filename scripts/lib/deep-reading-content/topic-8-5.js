@@ -35,15 +35,10 @@
 module.exports = {
   topicKey: 't8-5',
   slug: 'topic-8-5-decolonization',
-  sourceFile: 'deep-reading-topic-8-5-decolonization.html',
   lessonFile: 'lesson-8-5-decolonization.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 8.5: Two Roads Out of Empire',
-  eyebrow: 'Topic 8.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Two Roads Out of <em>Empire</em>',
   deck: `Some colonies negotiated their independence in conference rooms and some fought for eight years. The difference is not that some empires were more reasonable, and a student who writes that has answered the wrong question. This chapter builds the machinery of a nationalist movement, sets out the four conditions that decided which road a colony took, and then shows how the Cold War changed the price of both.`,
-  meta: ['Four sections', 'Organization, the two roads, the Cold War, the argument', 'Read alongside the First & 10'],
-  footerNote: 'Topic 8.5 &nbsp;·&nbsp; Two Roads Out of Empire &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

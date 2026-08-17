@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't2-4',
   slug: 'topic-2-4-trans-saharan',
-  sourceFile: 'deep-reading-topic-2-4-trans-saharan.html',
   lessonFile: 'lesson-2-4-trans-saharan.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 2.4: Two Months Without Water',
-  eyebrow: 'Topic 2.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Two Months Without <em>Water</em>',
   deck: `Every feature of the trans-Saharan trade is an answer to one problem: the desert is wider than a person can cross unaided, and the profits on the far side were worth solving it for. This chapter works through the animal, the caravan, the two commodities, the cities that grew where the routes met, and the religion that arrived as part of the business.`,
-  meta: ['Five sections', 'One constraint, five consequences', 'Read alongside the First & 10'],
-  footerNote: 'Topic 2.4 &nbsp;·&nbsp; Two Months Without Water &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

@@ -28,15 +28,10 @@
 module.exports = {
   topicKey: 't6-8',
   slug: 'topic-6-8-causation-in-the-imperial-age',
-  sourceFile: 'deep-reading-topic-6-8-causation-in-the-imperial-age.html',
   lessonFile: 'lesson-6-8-causation-in-the-imperial-age.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 6.8: Which One Mattered Most',
-  eyebrow: 'Topic 6.8 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Which One Mattered <em>Most</em>',
   deck: `By now you have four effects of imperialism, a dozen mechanisms and about sixty datable facts, and an essay has room for perhaps a third of them. The question this topic asks is not what happened. It is which of the things that happened mattered most, and why, and that is a question you cannot answer at all until you decide what "mattered" is being measured in. This chapter is about making that decision and defending it.`,
-  meta: ['Four sections', 'The effects, the tests, the causes, and a worked thesis', 'Read alongside the First & 10'],
-  footerNote: 'Topic 6.8 &nbsp;·&nbsp; Which One Mattered Most &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

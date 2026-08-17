@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't4-5',
   slug: 'topic-4-5-maritime-empires-maintained',
-  sourceFile: 'deep-reading-topic-4-5-maritime-empires-maintained.html',
   lessonFile: 'lesson-4-5-maritime-empires-maintained.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 4.5: What Held It Together',
-  eyebrow: 'Topic 4.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'What Held It <em>Together</em>',
   deck: `Taking a port is one problem and keeping an empire running for two centuries is another. This chapter is the economics: the theory that told governments what an empire was for, the mountain of silver that paid for everything, the Atlantic system that moved people as cargo, the cultures made in its holds and its cane fields, and the awkward fact underneath it all, which is that Europe had almost nothing Asia wanted to buy.`,
-  meta: ['Five sections', 'Mercantilism, silver, the Atlantic, synthesis, limits', 'Read alongside the First & 10'],
-  footerNote: 'Topic 4.5 &nbsp;·&nbsp; What Held It Together &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

@@ -385,12 +385,19 @@ function renderLectureCards() {
     </article>`).join('');
 }
 
-// ── Deep reading ──────────────────────────────────────────────────────────────
+// ── The eBook chapter for this topic ──────────────────────────────────────────
 
 // The optional push-further layer under Content Delivery, for a topic whose
 // modules assume more background than its First & 10 has room to carry. Mirrors
 // foundations/foundations-topic-renderer.js, including where the card sits and
 // why.
+//
+// The card links the chapter's anchor inside its eBook volume. It used to link a
+// standalone deep-reading page carrying the same words, which meant one reading
+// at two URLs, only one of which had the narration controls and the a11y sweep.
+// Those pages were retired on 2026-08-17; the chapter modules they were built
+// from are untouched, because the eBook is built from the same ones. deep.url is
+// checked against the volume, anchor included, by validate.js.
 //
 // Injected rather than added to the 71 unit shells, so this renderer stays the
 // only place that knows the card's shape, and guarded on its own id the way the
@@ -402,8 +409,8 @@ function renderLectureCards() {
 // wording below says optional twice for the same reason.
 //
 // A topic with no deepReading block shows no trace of the feature, the same way
-// the video block hides itself, so the 64 topics without a chapter show no empty
-// frame where one would go.
+// the video block hides itself, so a topic with no chapter shows no empty frame
+// where one would go.
 function renderDeepReading() {
   const deep = L.deepReading;
   const grid = byId('main-lecture-grid');
@@ -412,9 +419,9 @@ function renderDeepReading() {
   grid.insertAdjacentHTML('afterend', `
     <article class="card deep-reading-banner" id="deep-reading-banner" style="margin-top:1.5rem">
       <div class="eyebrow">Optional, go deeper</div>
-      <h3>${deep.title || 'Deep Reading'}</h3>
+      <h3>${deep.title || 'The eBook Chapter'}</h3>
       <p>${deep.desc || 'A textbook-depth companion to this topic, for when you want more detail than the First &amp; 10 has room for.'}</p>
-      <a class="btn" href="${deep.url}">Open the Deep Reading</a>
+      <a class="btn" href="${deep.url}">Open the eBook Chapter</a>
     </article>`);
 }
 

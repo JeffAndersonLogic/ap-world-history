@@ -36,15 +36,10 @@
 module.exports = {
   topicKey: 't5-1',
   slug: 'topic-5-1-enlightenment',
-  sourceFile: 'deep-reading-topic-5-1-enlightenment.html',
   lessonFile: 'lesson-5-1-enlightenment.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.1: Where Authority Comes From',
-  eyebrow: 'Topic 5.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Where Authority Comes <em>From</em>',
   deck: `For most of this course, the answer was God, or ancestry, or the mandate of heaven. Then a set of writers argued that authority comes from the people who are governed by it, and that if it stops serving them they may take it back. This chapter is what each of them actually argued, how banned books reached readers anyway, why the word <em>universal</em> was written by men who excluded most of humanity, and what the excluded did with it once it existed in print.`,
-  meta: ['Four sections', 'Arguments, spread, exclusions, and the use of them', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.1 &nbsp;·&nbsp; Where Authority Comes From &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

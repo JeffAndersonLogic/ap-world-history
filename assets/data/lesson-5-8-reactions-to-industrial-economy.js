@@ -154,7 +154,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Illegal, Then Inevitable",
     desc: "A textbook-depth companion on why organizing was a crime and what that leaves a worker, the three American strikes and who broke them, four structural reasons Britain got a Labour Party and the United States did not, and the movements that shared a cause with labor, including the one connecting a Lancashire mill to a Mississippi plantation. Optional, and useful when a checkpoint asks why reform happened when it did.",
-    url: "deep-reading-topic-5-8-reactions-to-industrial-economy.html"
+    url: "../ebook/unit-5.html#chapter-t5-8"
   },
 
   first10: {

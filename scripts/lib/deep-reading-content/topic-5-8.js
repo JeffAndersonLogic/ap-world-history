@@ -36,15 +36,10 @@
 module.exports = {
   topicKey: 't5-8',
   slug: 'topic-5-8-reactions-to-industrial-economy',
-  sourceFile: 'deep-reading-topic-5-8-reactions-to-industrial-economy.html',
   lessonFile: 'lesson-5-8-reactions-to-industrial-economy.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.8: Illegal, Then Inevitable',
-  eyebrow: 'Topic 5.8 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Illegal, Then <em>Inevitable</em>',
   deck: `For the first half of the century, workers who agreed among themselves to ask for more money were committing a crime. Everything about how labor organized, what it demanded and how violently it was met follows from that starting point. This chapter is the law, the strikes, why Britain got a workers&rsquo; party and America did not, and the other movements that grew out of the same dislocation, including the one that connected a Lancashire mill to a Mississippi plantation.`,
-  meta: ['Four sections', 'The law, the strikes, the divergence, and the other reforms', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.8 &nbsp;·&nbsp; Illegal, Then Inevitable &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

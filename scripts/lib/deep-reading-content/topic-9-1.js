@@ -38,15 +38,10 @@
 module.exports = {
   topicKey: 't9-1',
   slug: 'topic-9-1-technology-exchange',
-  sourceFile: 'deep-reading-topic-9-1-technology-exchange.html',
   lessonFile: 'lesson-9-1-technology-exchange.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 9.1: The Cost of Distance',
-  eyebrow: 'Topic 9.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Cost of <em>Distance</em>',
   deck: `Long-distance connection is not new, and the Topic 2.3 chapter is the proof: silk moved from Chang&rsquo;an to the Mediterranean seven centuries before any of this. What changed after <span class="num">1900</span> is the <em>price</em> of moving something. This chapter treats globalization as a collapse in the cost of moving goods, money, people and information, works out what each technology actually made cheaper, and then asks the question the whole volume runs on: who captured the savings, and who absorbed the costs nobody was billed for.`,
-  meta: ['Four sections', 'What got cheaper, and who paid', 'Read alongside the First & 10'],
-  footerNote: 'Topic 9.1 &nbsp;·&nbsp; The Cost of Distance &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

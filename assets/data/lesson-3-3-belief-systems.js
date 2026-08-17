@@ -162,7 +162,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'Faith, and the Uses of It',
     desc: 'A textbook-depth companion on the Reformation as a political event, the Catholic response that carried the church across the world, the sectarian border Chaldiran drew and left behind, the arithmetic of ruling people who believe otherwise, and Sikhism. Optional.',
-    url: 'deep-reading-topic-3-3-belief-systems.html'
+    url: '../ebook/unit-3.html#chapter-t3-3'
   },
 
   first10: {

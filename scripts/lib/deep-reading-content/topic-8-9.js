@@ -40,15 +40,10 @@
 module.exports = {
   topicKey: 't8-9',
   slug: 'topic-8-9-causation-capstone',
-  sourceFile: 'deep-reading-topic-8-9-causation-capstone.html',
   lessonFile: 'lesson-8-9-causation-capstone.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 8.9: The Word Extent Is Doing All the Work',
-  eyebrow: 'Topic 8.9 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Word <em>Extent</em> Is Doing All the Work',
   deck: `The capstone prompt asks you to evaluate the extent to which Cold War effects were similar in the two hemispheres, and most answers treat that phrase as packaging around a list. It is the assignment. This chapter shows what a degree claim has to be measured against, gives three tests that make one defensible, works two comparisons that control something, and starts where the essay is most often lost, which is the word hemisphere.`,
-  meta: ['Four sections', 'A method chapter, like Topic 7.9', 'Read alongside the First & 10'],
-  footerNote: 'Topic 8.9 &nbsp;·&nbsp; The Word Extent Is Doing All the Work &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

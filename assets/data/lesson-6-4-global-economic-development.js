@@ -149,7 +149,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'One Crop, and What It Costs',
     desc: 'A textbook-depth companion on what an export economy does to a place beyond its fields, the dated chain from Egyptian cotton to a foreign debt commission to the occupation of 1882, why a crop that grows wild produces a coercive labor system and why seventy thousand seeds in a London greenhouse ended the Amazon boom, the West African case where producers owned the trees, and how four ownership structures produced four different countries. Optional, and useful when a checkpoint asks how environmental factors shaped the global economy.',
-    url: 'deep-reading-topic-6-4-global-economic-development.html'
+    url: '../ebook/unit-6.html#chapter-t6-4'
   },
   first10: {
     title: 'First & 10: Global Economic Development',

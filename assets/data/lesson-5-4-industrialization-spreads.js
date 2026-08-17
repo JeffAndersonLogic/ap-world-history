@@ -144,7 +144,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Who Got to Industrialize",
     desc: "A textbook-depth companion on why going second is a different problem from going first, the Zollverein and the German model, Meiji Japan&rsquo;s deliberate program and the land tax that paid for it, and the half most answers skip: India, Egypt and Latin America, and the tariff as the instrument that decided who could industrialize. Optional, and the strongest corrective available for this topic.",
-    url: "deep-reading-topic-5-4-industrialization-spreads.html"
+    url: "../ebook/unit-5.html#chapter-t5-4"
   },
 
   first10: {

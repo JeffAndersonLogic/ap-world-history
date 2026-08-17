@@ -26,7 +26,7 @@
  *      for a specific tail, such as "How we know: a wreck is a sealed sample".
  *
  * Scope, deliberately narrow. It reads the deep-reading content modules, which
- * are the source of both the standalone deep readings and the eBook. It does
+ * are the source of every chapter of the eBook. It does
  * NOT touch the 77 First & 10 readings, and that is not an oversight:
  * readings-golden.js and foundations-golden.js pin those word for word against
  * committed fixtures of the hand-authored originals, so changing a spelling
@@ -211,7 +211,7 @@ if (violations.length) {
     for (const v of list) console.error(`  [${v.rule}] ${v.where}\n      ${v.detail}`);
   }
   console.error(`\nStyle: ${violations.length} violation${violations.length === 1 ? '' : 's'} in ${byFile.size} file${byFile.size === 1 ? '' : 's'}.`);
-  console.error('Fix the content module, never the generated page, then run: npm run build:deep-readings && npm run build:ebook');
+  console.error('Fix the content module, never the generated page, then run: npm run build:ebook');
   process.exit(1);
 }
 

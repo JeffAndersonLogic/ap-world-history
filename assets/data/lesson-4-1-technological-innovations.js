@@ -151,7 +151,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Sailing Away to Get Home",
     desc: "A textbook-depth companion on the actual problem an ocean sets, why the caravel, carrack and fluyt were each built for a different part of it, how latitude was solved and longitude was not, and the borrowed knowledge and the volta do mar that made a return voyage possible. Optional, and useful when a checkpoint asks how a technology actually worked.",
-    url: "deep-reading-topic-4-1-technological-innovations.html"
+    url: "../ebook/unit-4.html#chapter-t4-1"
   },
 
   first10: {

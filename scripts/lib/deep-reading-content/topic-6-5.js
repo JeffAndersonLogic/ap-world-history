@@ -34,15 +34,10 @@
 module.exports = {
   topicKey: 't6-5',
   slug: 'topic-6-5-economic-imperialism',
-  sourceFile: 'deep-reading-topic-6-5-economic-imperialism.html',
   lessonFile: 'lesson-6-5-economic-imperialism.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 6.5: Control Without a Flag',
-  eyebrow: 'Topic 6.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Control Without a <em>Flag</em>',
   deck: `China was never colonized. Argentina had been independent since the <span class="num">1810</span>s. Neither appears in a European color on a map of <span class="num">1900</span>, and in both, foreign capital built the railways and held the debt. In China foreigners also set the tariff and stood outside the local courts. In Argentina they did neither, and that difference is the most useful thing in this chapter. This chapter is about the kind of power that does not show up on the map, why it was often preferred to conquest, and how to prove it is there.`,
-  meta: ['Five sections', 'The test, China, Argentina, cotton, and the state that escaped', 'Read alongside the First & 10'],
-  footerNote: 'Topic 6.5 &nbsp;·&nbsp; Control Without a Flag &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

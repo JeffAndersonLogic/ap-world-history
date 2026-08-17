@@ -34,15 +34,10 @@
 module.exports = {
   topicKey: 't3-1',
   slug: 'topic-3-1-empires-expand',
-  sourceFile: 'deep-reading-topic-3-1-empires-expand.html',
   lessonFile: 'lesson-3-1-empires-expand.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 3.1: The Wall That Stopped Working',
-  eyebrow: 'Topic 3.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Wall That Stopped <em>Working</em>',
   deck: `For three thousand years a defender's answer to an army was a wall, and around <span class="num">1450</span> that answer stopped working. This chapter explains what artillery actually changed, why the change favored large centralized treasuries over everybody else, and then walks the five empires that made the most of it, finishing with the places where guns were not enough.`,
-  meta: ['Six sections', 'One weapon, five empires', 'Read alongside the First & 10'],
-  footerNote: 'Topic 3.1 &nbsp;·&nbsp; The Wall That Stopped Working &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

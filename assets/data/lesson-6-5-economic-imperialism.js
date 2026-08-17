@@ -160,7 +160,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'Control Without a Flag',
     desc: 'A textbook-depth companion on how to detect an empire that appears on no map, why the lasting damage of the Opium War settlement was the fixed tariff and the most-favored-nation clause rather than Hong Kong, how Argentina became economically dependent with no conquest, no treaty and a willing local elite, what a tariff written by your competitor does to an industry, and why Japan had the same unequal treaties and a different century. Optional, and useful when a checkpoint asks you to explain economic factors rather than name them.',
-    url: 'deep-reading-topic-6-5-economic-imperialism.html'
+    url: '../ebook/unit-6.html#chapter-t6-5'
   },
   first10: {
     title: 'First & 10: Economic Imperialism',

@@ -40,15 +40,10 @@
 module.exports = {
   topicKey: 't9-7',
   slug: 'topic-9-7-resistance-globalization',
-  sourceFile: 'deep-reading-topic-9-7-resistance-globalization.html',
   lessonFile: 'lesson-9-7-resistance-globalization.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 9.7: Protest Follows the Decision',
-  eyebrow: 'Topic 9.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Protest Follows the <em>Decision</em>',
   deck: `In <span class="num">1999</span> tens of thousands of people shut down a trade meeting in a city most of them did not live in, over rules written by an organization four years old. To understand why, follow the decisions. Through the <span class="num">1980</span>s and <span class="num">1990</span>s the choices that set a food subsidy, a tariff, a dam site or a factory's location moved out of national parliaments and into loan conditions, trade agreements and corporate siting decisions. A protest is aimed at whoever can grant the demand, so when the decision moved, the protest moved after it.`,
-  meta: ['Four sections', 'Conditionality, coalition, the state, the ledger', 'Read alongside the First & 10'],
-  footerNote: 'Topic 9.7 &nbsp;·&nbsp; Protest Follows the Decision &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

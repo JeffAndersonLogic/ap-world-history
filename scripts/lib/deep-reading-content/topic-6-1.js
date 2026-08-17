@@ -34,15 +34,10 @@
 module.exports = {
   topicKey: 't6-1',
   slug: 'topic-6-1-rationales-for-imperialism',
-  sourceFile: 'deep-reading-topic-6-1-rationales-for-imperialism.html',
   lessonFile: 'lesson-6-1-rationales-for-imperialism.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 6.1: The Arguments Made Out Loud',
-  eyebrow: 'Topic 6.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Arguments Made Out <em>Loud</em>',
   deck: `Conquest is old. What is new after about <span class="num">1870</span> is the volume of public argument justifying it: newspaper columns, parliamentary speeches, school prize-books, missionary magazines and scientific papers, all explaining to ordinary people at home why taking somebody else's country was right. This chapter takes the four arguments the course names and asks of each one the only question that produces an explanation rather than a definition: what does this argument convert into what?`,
-  meta: ['Four sections', 'Science, nation, mission, faith', 'Read alongside the First & 10'],
-  footerNote: 'Topic 6.1 &nbsp;·&nbsp; The Arguments Made Out Loud &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

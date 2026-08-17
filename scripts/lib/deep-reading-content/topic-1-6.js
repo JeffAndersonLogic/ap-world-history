@@ -37,15 +37,10 @@
 module.exports = {
   topicKey: 't1-6',
   slug: 'topic-1-6-europe',
-  sourceFile: 'deep-reading-topic-1-6-europe.html',
   lessonFile: 'lesson-1-6-europe.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 1.6: The Kingdom That Never Assembled',
-  eyebrow: 'Topic 1.6 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Kingdom That Never <em>Assembled</em>',
   deck: `Every other region in this unit produced at least one large state. Europe produced hundreds of small ones and an institution that outranked all of them without ruling any. This chapter explains why the centralized empire never came back, what filled the gap, and how a labor shortage caused by a disease did more to change European society than any king managed in three centuries.`,
-  meta: ['Five sections', 'Fragmentation as the starting condition', 'Read alongside the First & 10'],
-  footerNote: 'Topic 1.6 &nbsp;·&nbsp; The Kingdom That Never Assembled &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

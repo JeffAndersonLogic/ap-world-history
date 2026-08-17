@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't3-2',
   slug: 'topic-3-2-empires-administration',
-  sourceFile: 'deep-reading-topic-3-2-empires-administration.html',
   lessonFile: 'lesson-3-2-empires-administration.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 3.2: Who Collects, and Who Serves',
-  eyebrow: 'Topic 3.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Who Collects, and Who <em>Serves</em>',
   deck: `An empire is a machine for turning the harvest of villages nobody at the capital will ever visit into armies, palaces and salaries. This chapter takes the machine apart: the elites who were built to have no alternative, the tax systems that actually delivered the money, the buildings that justified taking it, and the bargains with local power that made all of it affordable and, eventually, fragile.`,
-  meta: ['Six sections', 'Elites, revenue, legitimacy, bargains', 'Read alongside the First & 10'],
-  footerNote: 'Topic 3.2 &nbsp;·&nbsp; Who Collects, and Who Serves &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

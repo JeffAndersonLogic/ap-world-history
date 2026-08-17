@@ -142,7 +142,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Question That Runs Both Ways",
     desc: "A textbook-depth companion on three changes written with their mechanisms, three continuities with the reason each counts as one, four questions that decide which side any fact belongs on, and a full thesis written out with its concession attached. Optional, and the chapter to read before writing the unit essay.",
-    url: "deep-reading-topic-5-10-continuity-and-change-in-the-industrial-age.html"
+    url: "../ebook/unit-5.html#chapter-t5-10"
   },
 
   first10: {

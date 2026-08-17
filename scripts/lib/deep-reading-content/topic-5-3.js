@@ -32,15 +32,10 @@
 module.exports = {
   topicKey: 't5-3',
   slug: 'topic-5-3-industrial-revolution-begins',
-  sourceFile: 'deep-reading-topic-5-3-industrial-revolution-begins.html',
   lessonFile: 'lesson-5-3-industrial-revolution-begins.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.3: Why It Started There',
-  eyebrow: 'Topic 5.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Why It Started <em>There</em>',
   deck: `Every ingredient of the Industrial Revolution existed somewhere else first. China had coal, gunpowder and the world&rsquo;s largest iron industry; the Dutch had capital and the best financial system in Europe; India made the finest cotton cloth on earth. The question is not what Britain had but what Britain had <em>together</em>, and this chapter answers it by asking of every candidate factor which other place also had it and did not industrialize.`,
-  meta: ['Four sections', 'Causes, the engine, the factory, the workers', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.3 &nbsp;·&nbsp; Why It Started There &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

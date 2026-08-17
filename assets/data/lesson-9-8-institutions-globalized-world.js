@@ -115,7 +115,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'The Price of Keeping Everyone Inside',
     desc: 'A textbook-depth companion that reads the 1945 Charter as a list of corrections to three specific League failures, treats the veto as the price of keeping the great powers inside rather than as a flaw somebody missed, uses the United Nations own 1999 inquiries into Rwanda and Srebrenica as evidence, and gives you one axis that predicts which institutions work and which cannot. Optional, and useful when a checkpoint asks how globalization changed interactions among states.',
-    url: 'deep-reading-topic-9-8-institutions-globalized-world.html'
+    url: '../ebook/unit-9.html#chapter-t9-8'
   },
   first10: {
     title: 'First & 10: Institutions Developing in a Globalized World',

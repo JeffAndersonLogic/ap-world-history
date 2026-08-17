@@ -37,15 +37,10 @@
 module.exports = {
   topicKey: 't8-2',
   slug: 'topic-8-2-the-cold-war',
-  sourceFile: 'deep-reading-topic-8-2-the-cold-war.html',
   lessonFile: 'lesson-8-2-the-cold-war.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 8.2: The Rules of a War Nobody Fought',
-  eyebrow: 'Topic 8.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Rules of a War Nobody <em>Fought</em>',
   deck: `The United States and the Soviet Union never fought each other. They spent forty years building the institutions of a war they intended not to have: a doctrine, a recovery program, two alliances built to make a promise believable, and arsenals whose whole purpose was never to be used. This chapter takes those four and shows what each was actually for, and then takes seriously the governments that tried to refuse the choice.`,
-  meta: ['Four sections', 'Doctrine, alliance, deterrence, refusal', 'Read alongside the First & 10'],
-  footerNote: 'Topic 8.2 &nbsp;·&nbsp; The Rules of a War Nobody Fought &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

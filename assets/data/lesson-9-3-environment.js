@@ -179,7 +179,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Bill Nobody Was Sent",
     desc: "A textbook-depth companion on costs left off the invoice, which is what connects cheap production to environmental damage and explains why some international agreements worked and others did not. Optional, and useful when a checkpoint asks about technology and the environment.",
-    url: "deep-reading-topic-9-3-environment.html"
+    url: "../ebook/unit-9.html#chapter-t9-3"
   },
 
   first10: {

@@ -34,15 +34,10 @@
 module.exports = {
   topicKey: 't6-4',
   slug: 'topic-6-4-global-economic-development',
-  sourceFile: 'deep-reading-topic-6-4-global-economic-development.html',
   lessonFile: 'lesson-6-4-global-economic-development.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 6.4: One Crop, and What It Costs',
-  eyebrow: 'Topic 6.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'One Crop, and What It <em>Costs</em>',
   deck: `Industrial factories in Europe and North America needed things that do not grow there: cotton, rubber, palm oil, nitrates, sugar, tin, jute. Between about <span class="num">1820</span> and <span class="num">1900</span> whole regions were rebuilt to supply them, and the rebuilding reached much further than the fields. It changed who owned land, who worked and under what compulsion, what a government could tax, what it could borrow, and in two of the cases here, who governed. This chapter follows one question through five sections: who owned the land and the crop.`,
-  meta: ['Five sections', 'The model, Egypt, rubber, palm oil, and four ownership structures', 'Read alongside the First & 10'],
-  footerNote: 'Topic 6.4 &nbsp;·&nbsp; One Crop, and What It Costs &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

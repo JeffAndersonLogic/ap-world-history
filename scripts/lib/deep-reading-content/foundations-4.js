@@ -42,15 +42,10 @@
 module.exports = {
   topicKey: 'f4',
   slug: 'foundations-4-trade-networks',
-  sourceFile: 'deep-reading-foundations-4-trade-networks.html',
   lessonFile: 'foundations-4-trade-networks.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Foundations 4: Nobody Traveled the Whole Road',
-  eyebrow: 'Foundations 4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Nobody Traveled the <em>Whole</em> Road',
   deck: `Three networks, and then the four things that traveled on them without anyone intending it. The first half is geography and machinery: which towns, which winds, which months, and who collected the toll. The second half is what the machinery carried besides cargo, which is where the questions in this lesson actually live.`,
-  meta: ['Three networks', 'Four kinds of cargo nobody ordered', 'Read alongside the First & 10'],
-  footerNote: 'Foundations 4 &nbsp;·&nbsp; Nobody Traveled the Whole Road &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

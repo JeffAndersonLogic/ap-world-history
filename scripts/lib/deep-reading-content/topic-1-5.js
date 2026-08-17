@@ -35,15 +35,10 @@
 module.exports = {
   topicKey: 't1-5',
   slug: 'topic-1-5-africa',
-  sourceFile: 'deep-reading-topic-1-5-africa.html',
   lessonFile: 'lesson-1-5-africa.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 1.5: Gold, Salt, Stone, and Faith',
-  eyebrow: 'Topic 1.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Gold, Salt, Stone, and <em>Faith</em>',
   deck: `Every state in this chapter sits at the end of a trade route, and the route explains the state. A Sahelian empire taxes the gold going north and the salt coming south; a Swahili port taxes what crosses the ocean; a highland kingdom taxes what moves through the Red Sea. What each one then does with religion is the part the survey never has room for, and it is the part the checkpoints ask about.`,
-  meta: ['Five sections', 'Sahel, savanna, coast, plateau, highland', 'Read alongside the First & 10'],
-  footerNote: 'Topic 1.5 &nbsp;·&nbsp; Gold, Salt, Stone, and Faith &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

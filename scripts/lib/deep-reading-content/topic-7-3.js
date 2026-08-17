@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't7-3',
   slug: 'topic-7-3-conducting-wwi',
-  sourceFile: 'deep-reading-topic-7-3-conducting-wwi.html',
   lessonFile: 'lesson-7-3-conducting-wwi.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 7.3: When a War Stops Being Fought by Armies',
-  eyebrow: 'Topic 7.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'When a War Stops Being Fought by <em>Armies</em>',
   deck: `Total war is not a war that is especially bad. It is a war an industrial economy can keep supplying long after the point at which earlier wars ended, which means the fighting continues until a whole society runs out of shells, food, workers or willingness. This chapter is the machinery of that: why the front froze, what the state took over, who was conscripted from where, and what the word "civilian" stopped protecting.`,
-  meta: ['Four sections', 'Stalemate, the state, the colonies, the exit', 'Read alongside the First & 10'],
-  footerNote: 'Topic 7.3 &nbsp;·&nbsp; When a War Stops Being Fought by Armies &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

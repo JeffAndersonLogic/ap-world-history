@@ -140,7 +140,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'A Format Is Not a Meaning',
     desc: 'A textbook-depth companion that follows the near-zero cost of one more digital copy into culture, and separates what actually travels, the format, from what audiences do with it once it arrives. Presents homogenization and hybridity as the live argument they are rather than settling it. Optional, and useful when a checkpoint asks whether globalization flattened culture.',
-    url: 'deep-reading-topic-9-6-globalized-culture.html'
+    url: '../ebook/unit-9.html#chapter-t9-6'
   },
   first10: {
     title: 'First & 10: Globalized Culture After 1900',

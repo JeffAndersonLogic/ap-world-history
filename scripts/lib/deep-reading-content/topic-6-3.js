@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't6-3',
   slug: 'topic-6-3-indigenous-responses-to-state-expansion',
-  sourceFile: 'deep-reading-topic-6-3-indigenous-responses-to-state-expansion.html',
   lessonFile: 'lesson-6-3-indigenous-responses-to-state-expansion.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 6.3: Five Kinds of No',
-  eyebrow: 'Topic 6.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Five Kinds of <em>No</em>',
   deck: `Nobody in this topic was deciding whether to resist. They were deciding what to do with the resources they actually had: an army or no army, a treasury or no treasury, a coastline where rifles could be bought or an interior where they could not, a state that could be rebuilt or a village that could only be abandoned. This chapter sorts the responses by that variable rather than by outcome, because sorting them by outcome tells you only who lost.`,
-  meta: ['Five sections', 'A taxonomy, then four cases and a counterexample', 'Read alongside the First & 10'],
-  footerNote: 'Topic 6.3 &nbsp;·&nbsp; Five Kinds of No &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

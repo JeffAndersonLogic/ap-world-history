@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't1-7',
   slug: 'topic-1-7-comparison',
-  sourceFile: 'deep-reading-topic-1-7-comparison.html',
   lessonFile: 'lesson-1-7-comparison.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 1.7: The Same Four Questions',
-  eyebrow: 'Topic 1.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Same Four <em>Questions</em>',
   deck: `Six regions, none of them in contact with all the others, every one of them facing the same problems: how to take resources, how to make taking them feel legitimate, and how to hold together people who had no particular reason to obey. This chapter puts the answers side by side, and then shows you exactly what a comparison sentence has to contain before it earns anything.`,
-  meta: ['Five sections', 'No new content, one new skill', 'Read alongside the First & 10'],
-  footerNote: 'Topic 1.7 &nbsp;·&nbsp; The Same Four Questions &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

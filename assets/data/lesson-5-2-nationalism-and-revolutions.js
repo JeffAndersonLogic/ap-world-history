@@ -175,7 +175,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Who Counted as the People",
     desc: "A textbook-depth companion on why all four Atlantic revolutions began in a treasury, what each borrowed from the Enlightenment and whom each left out, Haiti as three revolutions at once and the indemnity France charged for it, and the mechanism by which nationalism leaves a multiethnic empire no good answer. Optional, and the place to go before writing about any revolution in this unit.",
-    url: "deep-reading-topic-5-2-nationalism-and-revolutions.html"
+    url: "../ebook/unit-5.html#chapter-t5-2"
   },
 
   first10: {

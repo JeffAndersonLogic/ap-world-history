@@ -31,15 +31,10 @@
 module.exports = {
   topicKey: 't7-9',
   slug: 'topic-7-9-causation-global-conflict',
-  sourceFile: 'deep-reading-topic-7-9-causation-global-conflict.html',
   lessonFile: 'lesson-7-9-causation-global-conflict.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 7.9: Ranking Causes Without Guessing',
-  eyebrow: 'Topic 7.9 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Ranking Causes Without <em>Guessing</em>',
   deck: `Every prompt in this unit ends up asking which cause mattered most, and most answers rank by how often a cause gets mentioned. This chapter gives you three tests that produce a defensible ranking, shows that they can disagree, and explains why that is a feature: a ranking is only meaningful once you have said what you are ranking for.`,
-  meta: ['Four sections', 'The causes, the tests, the comparison, the writing', 'Read alongside the First & 10'],
-  footerNote: 'Topic 7.9 &nbsp;·&nbsp; Ranking Causes Without Guessing &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

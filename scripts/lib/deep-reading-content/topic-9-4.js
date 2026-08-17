@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't9-4',
   slug: 'topic-9-4-economics-global-age',
-  sourceFile: 'deep-reading-topic-9-4-economics-global-age.html',
   lessonFile: 'lesson-9-4-economics-global-age.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 9.4: Who Captured the Savings',
-  eyebrow: 'Topic 9.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Who Captured the <em>Savings</em>',
   deck: `The Topic 9.1 chapter explained how moving goods, money and information got cheap. This one asks the question that follows: the savings were enormous, so where did they go? The answer runs through a set of rules built in <span class="num">1944</span>, a turn toward markets in the <span class="num">1970</span>s and <span class="num">1980</span>s, and one structural fact that decides most of the outcome. Capital can move and workers mostly cannot.`,
-  meta: ['Four sections', 'Rules, the turn, the supply chain, the accounts', 'Read alongside the First & 10'],
-  footerNote: 'Topic 9.4 &nbsp;·&nbsp; Who Captured the Savings &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

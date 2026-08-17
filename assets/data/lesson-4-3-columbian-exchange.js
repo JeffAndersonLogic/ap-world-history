@@ -169,7 +169,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Exchange Nobody Negotiated",
     desc: "A textbook-depth companion on why the catastrophe fell where it did, with the biology of a virgin soil epidemic done properly, an honest account of contested numbers, what crossed in each direction, and the six decisions that run from a labor vacuum to the Middle Passage. Optional, and the place to go if you have ever written that a population had no immunity without being able to say why.",
-    url: "deep-reading-topic-4-3-columbian-exchange.html"
+    url: "../ebook/unit-4.html#chapter-t4-3"
   },
 
   first10: {

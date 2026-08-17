@@ -82,14 +82,14 @@ function glob(dir, re) {
 }
 
 /**
- * Every standalone deep reading on disk, wherever build-deep-readings.js writes
- * them: foundations/ for a Foundations topic and unit-N/ for a unit topic.
+ * Any standalone deep-reading page still on disk. There should be none: the 76
+ * of them were retired on 2026-08-17 in favour of the eBook chapters they were
+ * built from, so this exists to prove the retirement, not to serve it.
  *
- * One list rather than a glob repeated at each call site, because the checks
- * that use it are the ones that keep a deep reading script-free, and a glob
- * naming only foundations/ silently stops covering the moment a volume outside
- * Foundations is written. That is the failure this repo keeps paying for: not a
- * check that fails, a check that quietly examines less than it says it does.
+ * One list rather than a glob repeated at each call site, and it scans every
+ * unit rather than foundations/ alone, because a glob naming one directory
+ * silently stops covering the rest. That is the failure this repo keeps paying
+ * for: not a check that fails, a check that quietly examines less than it says.
  */
 function standaloneDeepReadings() {
   const dirs = [path.join(ROOT, 'foundations'), ...Array.from({ length: 9 }, (_, i) => path.join(ROOT, `unit-${i + 1}`))];
@@ -533,99 +533,141 @@ section('First & 10 storage key, write and read sides agree');
   sectionDone(`3 endpoints agree on ${FIRST10_STORAGE_PREFIX}<TOPIC_KEY>`);
 }
 
-// 7c. Deep readings are reachable from the lesson that owns them.
+// 7c. Every lesson's card opens the right chapter of the eBook.
 //
-// A deep reading is generated into the lesson's folder but is reached only by
-// the `deepReading` block in that topic's data file, which the renderer turns
-// into the card under the lecture grid. Nothing else points at the page, so a
-// missing or mistyped url leaves a complete reading sitting on disk, served by
-// Pages, and reachable only by someone who types the filename. Every structural
-// check stays green: the file is there, the data file parses, the lesson
-// renders. It is the orphaned-page failure, and it is silent by construction.
+// The chapter a topic pushes further into lives in its volume, and the lesson
+// reaches it through the `deepReading` block in that topic's data file, which
+// the renderer turns into the card under the lecture grid. Until 2026-08-17 the
+// same words were also written to a standalone deep-reading page beside the
+// lesson, and that card pointed there; one reading at two URLs, only one of
+// which carried the narration controls and the a11y sweep. The pages are gone,
+// the chapter modules they were built from are not, and the card now points into
+// the volume.
 //
-// Both directions are checked, because each fails on its own. A data file
-// pointing at a page that does not exist is a dead card; a generated page no
-// data file points at is an unreachable reading.
-section('Deep readings are linked from their lesson');
+// What replaced the orphaned-page check is an anchor check, because the failure
+// moved rather than disappearing. `../ebook/unit-4.html#chapter-t4-1` is a link
+// that cannot 404: a wrong anchor lands the student at the top of a 300KB volume
+// with no error and no clue, and a wrong volume lands them in the wrong unit
+// entirely. Both look exactly like a working link to every other check here.
+//
+// So the href is derived from the volume list and the chapter's own topicKey and
+// compared whole, and then the anchor is looked for in the built volume, which
+// catches the case where the data file and the derivation agree and the page
+// does not carry that id at all.
+section('Lesson cards open the right eBook chapter');
 {
+  let VOLUMES = [];
+  try {
+    ({ VOLUMES } = require(path.join(ROOT, 'scripts', 'build-ebook.js')));
+  } catch (e) {
+    err(path.join(ROOT, 'scripts', 'build-ebook.js'), `does not load: ${e.message}`);
+  }
+
   const contentDir = path.join(ROOT, 'scripts', 'lib', 'deep-reading-content');
-  const modules = exists(contentDir)
-    ? fs.readdirSync(contentDir).filter(f => f.endsWith('.js')).sort()
-    : [];
+  let linked = 0;
 
-  // Two sets, deliberately. `generated` is every page a content module claims,
-  // whether or not its link checked out; `linked` is the ones that fully passed.
-  // The orphan sweep below must use `generated`, or a topic that fails the link
-  // check also gets reported as hand-authored, which is a second error for one
-  // fault and sends you looking in the wrong directory.
-  const generated = new Set();
-  const linked = new Set();
+  // Every href a chapter can legitimately be reached by, and every data file
+  // this pass has already judged. The sweep below uses both: the first so that a
+  // card pointing at a real anchor in the wrong volume is still caught, and the
+  // second so that a card already reported as wrong is not reported twice, which
+  // is one fault printed as two errors sending you to two directories.
+  const chapterHrefs = new Set();
+  const judged = new Set();
 
-  for (const file of modules) {
-    totalChecks++;
-    let topic;
-    try {
-      topic = require(path.join(contentDir, file));
-    } catch (e) {
-      err(path.join(contentDir, file), `content module does not load: ${e.message}`);
-      continue;
-    }
+  for (const volume of VOLUMES) {
+    const volumeFile = path.join(ROOT, volume.outputFile);
+    const volumeSrc = read(volumeFile) || '';
 
-    const dir = /^foundations-/.test(topic.slug || '')
-      ? path.join(ROOT, 'foundations')
-      : path.join(ROOT, `unit-${(/^topic-(\d)/.exec(topic.slug || '') || [])[1]}`);
+    for (const entry of volume.contents || []) {
+      if (!entry.module) continue;             // a pending topic has no chapter yet, by design
+      totalChecks++;
 
-    if (topic.sourceFile) generated.add(topic.sourceFile);
+      let topic;
+      try {
+        topic = require(path.join(contentDir, `${entry.module}.js`));
+      } catch (e) {
+        err(path.join(contentDir, `${entry.module}.js`), `content module does not load: ${e.message}`);
+        continue;
+      }
 
-    const page = path.join(dir, topic.sourceFile || '');
-    const lesson = path.join(dir, topic.lessonFile || '');
-    // The lesson shell names its data file; the deepReading block lives there.
-    //
-    // The two lesson systems keep that data file in different places, and the
-    // check has to know which: a Foundations topic keeps it beside the shell as
-    // foundations-3-states-power-data.js, while a unit topic keeps it in
-    // assets/data/ under the shell's own name, because the shell loads it with a
-    // <script src>. Resolving a unit topic the Foundations way looks for
-    // unit-1/lesson-1-1-song-china-data.js, which no unit topic has ever had, so
-    // every unit deep reading would fail this check for a file that was never
-    // supposed to exist.
-    const data = /^foundations-/.test(topic.slug || '')
-      ? lesson.replace(/\.html$/, '-data.js')
-      : path.join(ROOT, 'assets', 'data', path.basename(topic.lessonFile || '').replace(/\.html$/, '.js'));
+      // The lesson shell names its data file, and the deepReading block lives
+      // there. The two lesson systems keep that file in different places and the
+      // check has to know which: a Foundations topic keeps it beside the shell as
+      // foundations-3-states-power-data.js, while a unit topic keeps it in
+      // assets/data/ under the shell's own name, because the shell loads it with
+      // a <script src>. Resolving a unit topic the Foundations way looks for
+      // unit-1/lesson-1-1-song-china-data.js, which no unit topic has ever had,
+      // so every unit chapter would fail this check for a file that was never
+      // supposed to exist.
+      const isFoundations = /^foundations-/.test(topic.slug || '');
+      const data = isFoundations
+        ? path.join(ROOT, 'foundations', (topic.lessonFile || '').replace(/\.html$/, '-data.js'))
+        : path.join(ROOT, 'assets', 'data', path.basename(topic.lessonFile || '').replace(/\.html$/, '.js'));
 
-    if (!exists(page)) {
-      err(page, `generated page missing, run: npm run build:deep-readings`);
-      continue;
-    }
-    if (!exists(data)) {
-      err(data, `deep reading ${topic.sourceFile} names a lesson with no data file`);
-      continue;
-    }
+      // Derived, never declared twice. The lesson pages sit one directory below
+      // the root and the volumes sit in ebook/, so the href a card carries is
+      // ../ebook/<volume>#chapter-<topicKey> from either lesson system.
+      const anchor = `chapter-${topic.topicKey}`;
+      const href = `../${volume.outputFile}#${anchor}`;
+      chapterHrefs.add(href);
+      judged.add(data);
 
-    const src = read(data) || '';
-    if (!/\bdeepReading\s*:/.test(src)) {
-      err(data, `deep reading ${topic.sourceFile} exists but this lesson has no deepReading block, so nothing links to it`);
-      continue;
-    }
-    if (!src.includes(topic.sourceFile)) {
-      err(data, `deepReading.url does not point at ${topic.sourceFile}, so the card is a dead link`);
-      continue;
-    }
-    linked.add(topic.sourceFile);
-  }
+      if (!exists(data)) {
+        err(data, `chapter ${entry.module} names a lesson with no data file`);
+        continue;
+      }
 
-  // The other direction: a page on disk that no content module produces is a
-  // hand-authored deep reading, which is the thing the content model exists to
-  // prevent. Only foundations/ and unit-N/ are scanned, matching where the
-  // builder writes.
-  for (const found of standaloneDeepReadings()) {
-    totalChecks++;
-    if (!generated.has(path.basename(found))) {
-      err(found, 'deep reading has no content module in scripts/lib/deep-reading-content/, so a rebuild cannot reproduce it');
+      const src = read(data) || '';
+      if (!/\bdeepReading\s*:/.test(src)) {
+        err(data, `${entry.module} is a chapter of ${path.basename(volume.outputFile)} but this lesson has no deepReading block, so nothing on the lesson path opens it`);
+        continue;
+      }
+      if (!src.includes(`'${href}'`) && !src.includes(`"${href}"`)) {
+        err(data, `deepReading.url is not ${href}, so the card opens the wrong chapter or the wrong volume`);
+        continue;
+      }
+      if (!volumeSrc.includes(`id="${anchor}"`)) {
+        err(volumeFile, `carries no ${anchor}, so the card on ${path.basename(topic.lessonFile || '')} lands at the top of the volume`);
+        continue;
+      }
+      linked++;
     }
   }
 
-  sectionDone(`${linked.size} deep reading${linked.size === 1 ? '' : 's'} generated and linked`);
+  // The other direction, which walking the volumes cannot reach: a lesson that
+  // offers a chapter the eBook does not carry. Anything the pass above did not
+  // already judge is a card nobody's volume claims, whether it points at a
+  // retired standalone page, at a chapter that was never written, or at a real
+  // anchor in the wrong volume, which is the one that still renders a reading
+  // and simply the wrong one.
+  const dataFiles = [
+    ...glob(path.join(ROOT, 'assets', 'data'), /^lesson-.*\.js$/),
+    ...glob(path.join(ROOT, 'foundations'), /^foundations-\d+.*-data\.js$/)
+  ];
+  for (const file of dataFiles) {
+    if (judged.has(file)) continue;
+    const src = read(file) || '';
+    const m = /deepReading\s*:\s*\{[\s\S]*?url\s*:\s*['"]([^'"]+)['"]/.exec(src);
+    if (!m) continue;
+    totalChecks++;
+    if (!chapterHrefs.has(m[1])) {
+      err(file, `deepReading.url is "${m[1]}", which is not the chapter anchor of any volume in build-ebook.js`);
+    }
+  }
+
+  // And the standalone pages stay retired. They carried the same words as the
+  // chapters they were built from, which meant one reading at two URLs and only
+  // one of them narratable and swept for contrast. Nothing generates them any
+  // more, so a deep-reading page reappearing beside a lesson is hand-authored by
+  // definition: a second copy of a chapter that no rebuild could correct, which
+  // is the failure the content model exists to refuse. Counted as one check
+  // rather than one per file, so the check is visibly run when it finds nothing.
+  totalChecks++;
+  for (const file of standaloneDeepReadings()) {
+    err(file, 'standalone deep readings were retired on 2026-08-17; the chapter lives in its eBook volume and the lesson card links it there');
+  }
+
+  sectionDone(`${linked} lesson${linked === 1 ? '' : 's'} open their chapter in the eBook`);
 }
 
 // 7d. eBook volumes exist, and something links to them.
@@ -860,8 +902,7 @@ section('eBook narration is generated and shared');
   // to refuse the first copy than to find the tenth.
   const generated = [
     ...(VOLUMES.map(v => path.join(ROOT, v.outputFile))),
-    ...(LIBRARY ? [path.join(ROOT, LIBRARY.outputFile)] : []),
-    ...standaloneDeepReadings()
+    ...(LIBRARY ? [path.join(ROOT, LIBRARY.outputFile)] : [])
   ].filter(exists);
 
   for (const file of generated) {
@@ -869,18 +910,6 @@ section('eBook narration is generated and shared');
     const src = read(file) || '';
     if (/speechSynthesis|SpeechSynthesisUtterance/.test(src)) {
       err(file, 'narration code is inlined in a generated page; it belongs only in assets/js/behistorical-listen.js');
-    }
-  }
-
-  // The standalone deep readings ship no <script> at all, which is a contract
-  // predating this feature and one it must not quietly break: a page with no
-  // script cannot ship a SyntaxError that discards its own behaviour. The eBook
-  // is where narration lives; a deep reading that grew a script tag is the
-  // first step towards a fifth surface nobody decided to add.
-  for (const file of standaloneDeepReadings()) {
-    totalChecks++;
-    if (/<script/i.test(read(file) || '')) {
-      err(file, 'a deep reading has grown a <script> tag; see the header of scripts/lib/deep-reading-page.js');
     }
   }
 

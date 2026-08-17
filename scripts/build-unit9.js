@@ -49,13 +49,13 @@ const instructionalMap = (id) => `../assets/images/instructional-maps/topic-${id
 const moduleArt = (id, slot) => `../assets/images/module-art/unit-9/topic-${id.replace('.', '-')}/${slot}.svg`;
 const TOPIC_ART = '';
 
-/** Deep reading cards for the generated topics, keyed by topic id.
+/** eBook chapter cards for the generated topics, keyed by topic id.
  *
  *  These lesson data files are generated, so the deepReading block has to be
  *  emitted here rather than pasted into assets/data/. A block hand-added to a
  *  generated file survives until the next rebuild and then vanishes, taking the
- *  card with it and leaving a chapter on disk that nothing links to, which is
- *  the failure validate.js checks for in both directions.
+ *  card with it and leaving a chapter nothing on the lesson path points at,
+ *  which is the failure validate.js checks for in both directions.
  *
  *  A topic with no entry here simply gets no card, so this list grows as
  *  chapters are written rather than needing a placeholder per topic. */
@@ -63,32 +63,32 @@ const DEEP_READINGS = {
   '9.4': {
     title: 'Who Captured the Savings',
     desc: 'A textbook-depth companion that takes the enormous savings from cheaper distance and asks who received them and who absorbed the costs, with the genuine disagreements about inequality presented as disagreements. Optional, and useful when a checkpoint asks you to evaluate the effects of globalization.',
-    url: 'deep-reading-topic-9-4-economics-global-age.html'
+    url: '../ebook/unit-9.html#chapter-t9-4'
   },
   '9.5': {
     title: 'A Standard You Can Be Held To',
     desc: 'A textbook-depth companion on what a declaration that bound nobody to anything turned out to be good for, and how movements used a standard their governments had already endorsed. Optional, and useful when a checkpoint asks how human rights claims produced political change.',
-    url: 'deep-reading-topic-9-5-calls-for-reform-responses.html'
+    url: '../ebook/unit-9.html#chapter-t9-5'
   },
   '9.6': {
     title: 'A Format Is Not a Meaning',
     desc: 'A textbook-depth companion that follows the near-zero cost of one more digital copy into culture, and separates what actually travels, the format, from what audiences do with it once it arrives. Presents homogenization and hybridity as the live argument they are rather than settling it. Optional, and useful when a checkpoint asks whether globalization flattened culture.',
-    url: 'deep-reading-topic-9-6-globalized-culture.html'
+    url: '../ebook/unit-9.html#chapter-t9-6'
   },
   '9.7': {
     title: 'Protest Follows the Decision',
     desc: 'A textbook-depth companion that explains why opposition to globalization gathered where it did by following the decisions rather than the slogans, starting from the fact that rules affecting people everywhere were being written by bodies those people could not vote out. Optional, and useful when a checkpoint asks who resisted globalization and why.',
-    url: 'deep-reading-topic-9-7-resistance-globalization.html'
+    url: '../ebook/unit-9.html#chapter-t9-7'
   },
   '9.8': {
     title: 'The Price of Keeping Everyone Inside',
     desc: 'A textbook-depth companion that reads the 1945 Charter as a list of corrections to three specific League failures, treats the veto as the price of keeping the great powers inside rather than as a flaw somebody missed, uses the United Nations own 1999 inquiries into Rwanda and Srebrenica as evidence, and gives you one axis that predicts which institutions work and which cannot. Optional, and useful when a checkpoint asks how globalization changed interactions among states.',
-    url: 'deep-reading-topic-9-8-institutions-globalized-world.html'
+    url: '../ebook/unit-9.html#chapter-t9-8'
   },
   '9.9': {
     title: 'Measured Against What',
     desc: 'The last chapter of the course. A textbook-depth companion that shows an extent claim needs a baseline, a criterion and a population before it means anything, traces four threads from c. 1200 to the present across all nine units, weighs the continuities that outlived the century, and builds the closing thesis one sentence at a time. Optional, and useful when a checkpoint asks how much science and technology actually changed.',
-    url: 'deep-reading-topic-9-9-continuity-change-globalized-world.html'
+    url: '../ebook/unit-9.html#chapter-t9-9'
   }
 };
 

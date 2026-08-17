@@ -41,15 +41,10 @@
 module.exports = {
   topicKey: 't8-7',
   slug: 'topic-8-7-global-resistance',
-  sourceFile: 'deep-reading-topic-8-7-global-resistance.html',
   lessonFile: 'lesson-8-7-global-resistance.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 8.7: Three Bets About Who Is Watching',
-  eyebrow: 'Topic 8.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Three Bets About Who Is <em>Watching</em>',
   deck: `Nonviolent campaigns, states that answered opposition with terror, and movements that attacked civilians are usually taught as a moral ranking. Read as methods, each is a wager about an audience: who has to see this, and what they will do once they have. This chapter takes the three apart and finds the differences where the exam wants them, in who acts, who is harmed, and what the harm is meant to produce.`,
-  meta: ['Four sections', 'Three categories, one analytical question', 'Read alongside the First & 10'],
-  footerNote: 'Topic 8.7 &nbsp;·&nbsp; Three Bets About Who Is Watching &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

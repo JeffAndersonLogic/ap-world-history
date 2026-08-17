@@ -166,7 +166,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'The Empire of the Relay',
     desc: 'A textbook-depth companion on the decimal army that dissolved tribal loyalty, how the sieges were won with borrowed engineers, the yam and the khanates, the specialists and sciences that moved under Mongol rule, and how to write the destructive and connective effects in one paragraph instead of two. Optional.',
-    url: 'deep-reading-topic-2-2-mongol-empire.html'
+    url: '../ebook/unit-2.html#chapter-t2-2'
   },
 
   first10: {

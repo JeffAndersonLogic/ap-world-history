@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't1-2',
   slug: 'topic-1-2-dar-al-islam',
-  sourceFile: 'deep-reading-topic-1-2-dar-al-islam.html',
   lessonFile: 'lesson-1-2-dar-al-islam.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 1.2: The House Divided',
-  eyebrow: 'Topic 1.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The House <em>Divided</em>',
   deck: `By <span class="num">1200</span> there was no single Islamic empire and there had not been one for centuries, and yet the Islamic world was the most connected, most literate and most scientifically productive zone on earth. This chapter explains how a religion held together a civilization after the state that carried it had come apart, which is the question the topic is really asking.`,
-  meta: ['Five sections', 'Political, then religious, then intellectual', 'Read alongside the First & 10'],
-  footerNote: 'Topic 1.2 &nbsp;·&nbsp; The House Divided &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

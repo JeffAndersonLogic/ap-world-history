@@ -193,7 +193,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'What Conquest Started to Cost',
     desc: 'A textbook-depth companion on what the Berlin Conference actually decided and why a rule about effective occupation started a race, how quinine, steamers, breech-loaders and locally raised taxes collapsed the price of conquest, why the Congo Free State differed in kind rather than degree from a normal colony, how direct rule, indirect rule and settler colonization were chosen by cost, and why Japan, Russia and the United States built empires with the same package. Optional, and useful when a checkpoint asks you to compare processes rather than list annexations.',
-    url: 'deep-reading-topic-6-2-state-expansion.html'
+    url: '../ebook/unit-6.html#chapter-t6-2'
   },
   first10: {
     title: 'First & 10: State Expansion',

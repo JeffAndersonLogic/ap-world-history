@@ -200,7 +200,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Two Roads Out of Empire",
     desc: "A textbook-depth companion on why some colonies negotiated independence and others fought for years, and why the difference is not that some empires were more reasonable than others. Optional, and useful when a checkpoint asks you to compare negotiated and armed decolonization.",
-    url: "deep-reading-topic-8-5-decolonization.html"
+    url: "../ebook/unit-8.html#chapter-t8-5"
   },
 
   first10: {

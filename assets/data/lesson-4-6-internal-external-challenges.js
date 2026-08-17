@@ -151,7 +151,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Cracks in the Map",
     desc: "A textbook-depth companion on the Pueblo Revolt with its three grievances and the knotted cords that synchronized it, Palmares as a state rather than a hideout, how the Dutch took the Portuguese network one link at a time, and the four structural weaknesses every maritime empire shared. Optional, and useful when a checkpoint asks what resistance changed.",
-    url: "deep-reading-topic-4-6-internal-external-challenges.html"
+    url: "../ebook/unit-4.html#chapter-t4-6"
   },
 
   first10: {

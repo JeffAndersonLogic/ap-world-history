@@ -35,15 +35,10 @@
 module.exports = {
   topicKey: 't5-10',
   slug: 'topic-5-10-continuity-and-change-in-the-industrial-age',
-  sourceFile: 'deep-reading-topic-5-10-continuity-and-change-in-the-industrial-age.html',
   lessonFile: 'lesson-5-10-continuity-and-change-in-the-industrial-age.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.10: The Question That Runs Both Ways',
-  eyebrow: 'Topic 5.10 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Question That Runs Both <em>Ways</em>',
   deck: `In 1750 most people on earth farmed, moved at the speed of a horse and lived under someone who inherited the right to rule them. By 1900 a third of that had changed completely, a third had changed its form and kept its shape, and a third had not moved at all. This chapter is how to tell which is which, and how to write a thesis that takes a position instead of listing both.`,
-  meta: ['Four sections', 'Changes, continuities, the method, a worked thesis', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.10 &nbsp;·&nbsp; The Question That Runs Both Ways &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

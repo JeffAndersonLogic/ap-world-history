@@ -171,7 +171,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'Two Societies, Both Changed',
     desc: 'A textbook-depth companion on what a male-selective migration did to the villages it emptied, why an ethnic enclave is a set of institutions rather than a neighborhood and why exclusion builds one as surely as preference does, how the dictation test let three countries exclude by race with no racial word in the statute, and how labor recruitment composed plural societies whose administrative categories became their political ones. Optional, and useful when a checkpoint asks how migration affected society at both ends.',
-    url: 'deep-reading-topic-6-7-effects-of-migration.html'
+    url: '../ebook/unit-6.html#chapter-t6-7'
   },
   first10: {
     title: 'First & 10: Effects of Migration',

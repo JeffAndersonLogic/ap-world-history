@@ -35,15 +35,10 @@
 module.exports = {
   topicKey: 't9-2',
   slug: 'topic-9-2-disease',
-  sourceFile: 'deep-reading-topic-9-2-disease.html',
   lessonFile: 'lesson-9-2-disease.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 9.2: Who the Cure Reaches',
-  eyebrow: 'Topic 9.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Who the Cure <em>Reaches</em>',
   deck: `Malaria can be prevented, diagnosed in minutes and treated, and it still kills hundreds of thousands of people a year, most of them African children under five. That gap between what medicine can do and what it does is this chapter&rsquo;s subject. Pathogens travel on the same cheap networks as everything else in this volume, and once a cure exists the remaining question is a distribution question: who the cure reaches, and who pays for it.`,
-  meta: ['Four sections', 'Poverty, emergence, longevity, counting', 'Read alongside the First & 10'],
-  footerNote: 'Topic 9.2 &nbsp;·&nbsp; Who the Cure Reaches &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

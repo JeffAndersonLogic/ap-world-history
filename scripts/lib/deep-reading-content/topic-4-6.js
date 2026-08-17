@@ -34,15 +34,10 @@
 module.exports = {
   topicKey: 't4-6',
   slug: 'topic-4-6-internal-external-challenges',
-  sourceFile: 'deep-reading-topic-4-6-internal-external-challenges.html',
   lessonFile: 'lesson-4-6-internal-external-challenges.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 4.6: The Cracks in the Map',
-  eyebrow: 'Topic 4.6 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Cracks in the <em>Map</em>',
   deck: `An empire on a map looks solid. In 1680 Spain lost the whole of New Mexico to a rising organized across dozens of autonomous towns speaking unrelated languages, and did not get it back for twelve years. In Brazil a community of escaped people held out for nearly a century. And the Portuguese network fell to a Dutch company with better capital. Three kinds of challenge, one structural weakness.`,
-  meta: ['Four sections', 'Pueblo, maroons, rivals, and why empires crack', 'Read alongside the First & 10'],
-  footerNote: 'Topic 4.6 &nbsp;·&nbsp; The Cracks in the Map &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

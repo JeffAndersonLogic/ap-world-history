@@ -34,15 +34,10 @@
 module.exports = {
   topicKey: 't5-6',
   slug: 'topic-5-6-industrialization-government-and-society',
-  sourceFile: 'deep-reading-topic-5-6-industrialization-government-and-society.html',
   lessonFile: 'lesson-5-6-industrialization-government-and-society.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.6: One Question, Five Answers',
-  eyebrow: 'Topic 5.6 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'One Question, Five <em>Answers</em>',
   deck: `Everybody in nineteenth-century Europe could see that industry was producing enormous wealth and enormous misery at the same time. What divided them was the explanation: whether poverty was a natural stage, a moral failure, a design flaw, or the entire point of the system. This chapter runs one question across five answers, and then asks what governments actually did, which turns out to match none of them.`,
-  meta: ['Four sections', 'The two classes, five ideologies, the laws, the vote', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.6 &nbsp;·&nbsp; One Question, Five Answers &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

@@ -35,15 +35,10 @@
 module.exports = {
   topicKey: 't4-3',
   slug: 'topic-4-3-columbian-exchange',
-  sourceFile: 'deep-reading-topic-4-3-columbian-exchange.html',
   lessonFile: 'lesson-4-3-columbian-exchange.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 4.3: The Exchange Nobody Negotiated',
-  eyebrow: 'Topic 4.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Exchange Nobody <em>Negotiated</em>',
   deck: `Two biological worlds that had been separate for thousands of years were joined in a generation, and the joining was not a trade agreement. This chapter does the biology of why the disaster fell where it did, the honest version of the numbers, what crossed in each direction, and the chain that runs from an empty labor market to the largest forced migration in history.`,
-  meta: ['Five sections', 'Biology, numbers, crops, consequences', 'Read alongside the First & 10'],
-  footerNote: 'Topic 4.3 &nbsp;·&nbsp; The Exchange Nobody Negotiated &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

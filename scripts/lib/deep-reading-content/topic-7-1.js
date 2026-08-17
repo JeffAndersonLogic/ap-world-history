@@ -32,15 +32,10 @@
 module.exports = {
   topicKey: 't7-1',
   slug: 'topic-7-1-shifting-power',
-  sourceFile: 'deep-reading-topic-7-1-shifting-power.html',
   lessonFile: 'lesson-7-1-shifting-power.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 7.1: The Bill Comes Due',
-  eyebrow: 'Topic 7.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Bill Comes <em>Due</em>',
   deck: `Three empires that had governed for centuries came apart within fifteen years of each other, and not because they were old. Each was trying to pay for an industrial-age army out of a farming economy, and each of the three ways out of that squeeze, borrowing abroad, centralizing harder, or granting a constitution, built the coalition that finished it.`,
-  meta: ['Four sections', 'One squeeze, three collapses', 'Read alongside the First & 10'],
-  footerNote: 'Topic 7.1 &nbsp;·&nbsp; The Bill Comes Due &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

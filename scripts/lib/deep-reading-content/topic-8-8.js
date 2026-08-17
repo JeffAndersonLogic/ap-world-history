@@ -42,15 +42,10 @@
 module.exports = {
   topicKey: 't8-8',
   slug: 'topic-8-8-end-of-cold-war',
-  sourceFile: 'deep-reading-topic-8-8-end-of-cold-war.html',
   lessonFile: 'lesson-8-8-end-of-cold-war.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 8.8: What the System Could No Longer Pay For',
-  eyebrow: 'Topic 8.8 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'What the System Could No Longer <em>Pay For</em>',
   deck: `The Soviet Union did not lose a war. It ran out of the ability to pay for the things holding it together, and the three causes this topic names are versions of that one problem: an economy that had exhausted the kind of growth it knew how to produce, an arms race that moved into technologies it could not make, and a war on its border it could neither win nor leave cheaply. Then a reform program removed the fear the system had been using in place of consent.`,
-  meta: ['Four sections', 'The economics first, because the rest rests on it', 'Read alongside the First & 10'],
-  footerNote: 'Topic 8.8 &nbsp;·&nbsp; What the System Could No Longer Pay For &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

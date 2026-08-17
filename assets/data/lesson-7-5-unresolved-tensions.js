@@ -237,7 +237,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "Empire Changes Its Vocabulary",
     desc: "A textbook-depth companion that adds up the territory and finds the war destroyed four empires and enlarged two, reads the mandate system's own categories as an argument about hierarchy, and shows what colonized petitioners said at Paris in <span class=\"num\">1919</span> before they went home and built mass movements. Optional, and useful when a checkpoint asks about the gap between mandate rhetoric and reality.",
-    url: "deep-reading-topic-7-5-unresolved-tensions.html"
+    url: "../ebook/unit-7.html#chapter-t7-5"
   },
 
   first10: {

@@ -48,15 +48,16 @@ const SUBMIT_NOTE = 'Organize your thinking here, submit your final work in Canv
  * The optional deep reading offered under Content Delivery, keyed by topic id.
  *
  * Only the title and the description live here, because only they are editorial.
- * The filename is derived from the topic's own id and slug, for the same reason
- * the lesson link inside the eBook is derived: a declared path is a second place
- * to state where a page lives, and the two can then disagree. The chapter itself
- * is scripts/lib/deep-reading-content/topic-6-N.js, and validate.js checks the
- * pairing in both directions, so a topic listed here with no content module, or
- * a content module no topic points at, fails the push.
+ * The link is derived from the topic's own id, for the same reason the lesson
+ * link inside the eBook is derived: a declared path is a second place to state
+ * where a chapter lives, and the two can then disagree. It points at the
+ * chapter's anchor in ebook/unit-6.html, which is where the reading actually
+ * lives; the chapter itself is scripts/lib/deep-reading-content/topic-6-N.js,
+ * and validate.js checks the pairing in both directions, so a topic listed here
+ * with no chapter, or a chapter no topic points at, fails the push.
  *
- * A topic absent from this map simply shows no deep-reading card, which is how
- * the feature stays optional.
+ * A topic absent from this map simply shows no chapter card, which is how the
+ * feature stays optional.
  */
 const DEEP_READINGS = {
   '6.2': {
@@ -413,7 +414,7 @@ function buildLesson(topic) {
       deepReading: {
         title: DEEP_READINGS[topic.id].title,
         desc: DEEP_READINGS[topic.id].desc,
-        url: `deep-reading-topic-${topic.id.replace('.', '-')}-${topic.slug}.html`
+        url: `../ebook/unit-6.html#chapter-t${topic.id.replace('.', '-')}`
       }
     } : {}),
     first10: {

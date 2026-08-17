@@ -166,7 +166,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'The Wall That Stopped Working',
     desc: 'A textbook-depth companion on what artillery actually changed, why it favored states that could tax, and how the Ottomans, Safavids, Mughals, Qing and Russians used it, finishing with Tondibi, Kandahar and Vienna, where the limits of gunpowder are clearest. Optional, and useful when a checkpoint asks how a tool of rule actually worked.',
-    url: 'deep-reading-topic-3-1-empires-expand.html'
+    url: '../ebook/unit-3.html#chapter-t3-1'
   },
 
   first10: {

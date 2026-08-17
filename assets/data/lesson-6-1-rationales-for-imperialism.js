@@ -112,7 +112,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Arguments Made Out Loud",
     desc: "A textbook-depth companion on how each of the four rationales actually worked: what Herbert Spencer wrote in 1864 and why an argument nothing can disprove was so useful, why a colony that would never pay was still worth taking, the French offer of citizenship in Algeria that almost nobody could accept, and the missionaries who supplied empire with maps and schools and then produced the photographs that destroyed the Congo Free State. Optional, and useful when a checkpoint asks you to explain an ideology rather than define it.",
-    url: "deep-reading-topic-6-1-rationales-for-imperialism.html"
+    url: "../ebook/unit-6.html#chapter-t6-1"
   },
 
   first10: {

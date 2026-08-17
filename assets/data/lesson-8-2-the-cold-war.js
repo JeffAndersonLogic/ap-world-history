@@ -180,7 +180,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Rules of a War Nobody Fought",
     desc: "A textbook-depth companion on how two superpowers built the institutions of a war they intended never to fight, and what deterrence actually required in order to work. Optional, and useful when a checkpoint asks why the Cold War stayed cold in Europe.",
-    url: "deep-reading-topic-8-2-the-cold-war.html"
+    url: "../ebook/unit-8.html#chapter-t8-2"
   },
 
   first10: {

@@ -37,15 +37,10 @@
 module.exports = {
   topicKey: 't8-6',
   slug: 'topic-8-6-newly-independent-states',
-  sourceFile: 'deep-reading-topic-8-6-newly-independent-states.html',
   lessonFile: 'lesson-8-6-newly-independent-states.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 8.6: The Line, and the People on It',
-  eyebrow: 'Topic 8.6 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Line, and the People <em>on It</em>',
   deck: `Independence transferred sovereignty far faster than it transferred capacity. This chapter takes the two places that gap shows most clearly: a border drawn in five weeks with no plan for the people it cut through, and an economy built to sell two commodities to one buyer, now expected to fund a nation.`,
-  meta: ['Four sections', 'Two partitions, then the economics', 'Read alongside the First & 10'],
-  footerNote: 'Topic 8.6 &nbsp;·&nbsp; The Line, and the People on It &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

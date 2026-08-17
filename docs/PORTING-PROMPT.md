@@ -1,7 +1,7 @@
-# Porting Prompt: Writing BeHistorical Deep Readings
+# Porting Prompt: Writing BeHistorical eBook Chapters
 
-**What this is.** A self-contained brief for handing the deep-reading and eBook
-work to a different model or a different session. Everything below the line is
+**What this is.** A self-contained brief for handing the eBook chapter work to a
+different model or a different session. Everything below the line is
 meant to be copied and pasted as a single prompt. It carries the architecture,
 the exact data schema, the house rules, and the full specification for each
 chapter still to be written, so the receiving model does not have to reverse
@@ -35,24 +35,29 @@ give **a specific limit or counter-example**, and to **compare two cases inside
 one analytical category**. A student cannot infer a mechanism from a name, and
 950 words has no room to supply one.
 
-A deep reading is the optional push-further layer that supplies it. It is linked
-from the topic's lesson page under the lecture cards, and it is also compiled
-into a course eBook. Same source file, two surfaces.
+An eBook chapter is the optional push-further layer that supplies it. Chapters
+are compiled into one volume per unit, and the topic's lesson page carries a card
+under the lecture cards that opens that chapter's anchor in its volume. One
+source file, one surface, two doors into it.
 
 ### The content model, which is the thing to respect most
 
 **Every page is generated.** You never write HTML. You write one JavaScript
-content module, and a renderer produces both the standalone page and the eBook
-chapter from it. Hand-editing a generated page fails the build, on purpose,
-because a hand-edit looks like it worked and is silently reverted by the next
-rebuild.
+content module, and a renderer turns it into a chapter of its volume.
+Hand-editing a generated page fails the build, on purpose, because a hand-edit
+looks like it worked and is silently reverted by the next rebuild.
 
 ```
 scripts/lib/deep-reading-content/<slug>.js   <- you write this, and only this
-scripts/lib/deep-reading-page.js             <- renders it (do not edit)
-scripts/build-deep-readings.js               <- writes the standalone page
+scripts/lib/deep-reading-page.js             <- renders a chapter body (do not edit)
 scripts/build-ebook.js                       <- compiles chapters into the eBook
 ```
+
+Until 2026-08-17 each module also produced a standalone `deep-reading-<slug>.html`
+page beside its lesson, carrying the same words as the chapter. That was one
+reading at two URLs, only one of which had the narration controls and the WCAG
+sweep, so the pages were retired and the lesson card was repointed at the
+chapter. Do not add one back.
 
 ### The exact schema
 
@@ -68,17 +73,12 @@ Copy this shape. Field names are load-bearing; the renderer reads them literally
  */
 
 module.exports = {
-  topicKey:   'f2',                                  // short id, also the eBook id prefix
-  slug:       'foundations-2-belief-systems',        // decides the output directory
-  sourceFile: 'deep-reading-foundations-2-belief-systems.html',
+  topicKey:   'f2',                                  // short id; the chapter's anchor is chapter-f2
+  slug:       'foundations-2-belief-systems',        // the eBook derives the chapter number and lesson link from it
   lessonFile: 'foundations-2-belief-systems.html',   // the lesson this belongs to
 
-  docTitle:   'BeHistorical | Deep Reading | Foundations 2: <Title>',
-  eyebrow:    'Foundations 2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml:  'The <em>Keyword</em>',   // ONE word in <em>, it renders as the gold highlight
   deck:       `One paragraph. What the chapter is about and what argument it lets a student make.`,
-  meta:       ['One chapter', 'Foundations 2', 'Read alongside the First & 10'],
-  footerNote: 'Foundations 2 &nbsp;·&nbsp; <Title> &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
@@ -195,14 +195,9 @@ Nothing else. No headings, no lists, no links, no images inside body copy.
    sides, or the question is unanswerable.
 
 7. **Never write a `<script>`, a form, a textarea, or an AI-coach button.**
-   Nothing is submitted from a deep reading. Student work reaches the teacher
-   through other modules only. A page with no script cannot ship a syntax error
-   that silently kills its own behaviour.
-
-8. **Filename prefix is `deep-reading-`.** The build validator globs lesson
-   shells as `^foundations-\d+.*\.html$` and readings as
-   `^first-and-10-foundations.*\.html$`. A deep reading must miss both globs or
-   it gets validated against a contract it was never meant to satisfy.
+   Nothing is submitted from a chapter. Student work reaches the teacher through
+   the modules only, and the one script a volume loads is the shared narration
+   module, which the renderer wires for you.
 
 ### Chapter design
 
@@ -228,12 +223,14 @@ these steps for the human.
 
 1. Write `scripts/lib/deep-reading-content/<slug>.js`.
 2. Add a `deepReading` block to the topic's data file
-   (`foundations/foundations-N-<slug>-data.js`), immediately before `first10:`:
+   (`foundations/foundations-N-<slug>-data.js`), immediately before `first10:`.
+   The url is the chapter's anchor in its volume, and `validate.js` derives the
+   same string from `build-ebook.js` and fails on any difference:
    ```js
    deepReading: {
      title: 'The Chapter Title',
      desc:  'One or two sentences. Say "optional" and say what it is useful for.',
-     url:   'deep-reading-foundations-N-<slug>.html'
+     url:   '../ebook/foundations.html#chapter-fN'
    },
    ```
 3. In `scripts/build-ebook.js`, add `{ module: 'foundations-N' }` to the right
@@ -243,14 +240,13 @@ these steps for the human.
    `slug` field inside that module, which is longer.
 4. Build and verify:
    ```bash
-   npm run build:deep-readings
    npm run build:ebook
-   npm test                 # must be 8/8
+   npm test                 # must be 9/9
    ```
 
-`npm test` enforces that the generated page still matches the content module,
-that the page is linked from its lesson, and that the eBook lists every volume
-and is linked from the front door. If it fails, read the error; each one names
+`npm test` enforces that every volume still matches its content modules, that the
+lesson card opens the right chapter anchor of the right volume, and that the
+eBook lists every volume and is linked from the front door. If it fails, read the error; each one names
 the file and the fix.
 
 ### Already written, do not redo
@@ -370,13 +366,12 @@ ships and animals, the cost per ton-mile, and the specific events of 1200 to
 Foundations chapter first and pick a different question rather than a different
 wording.
 
-**A unit chapter differs from a Foundations chapter in four fields and one wiring
-step.** `topicKey` is `t1-4`, `slug` starts `topic-1-4-` (the builder places the
-page and the eBook derives the chapter number and lesson link from it),
-`sourceFile` is `deep-reading-topic-1-4-<slug>.html` and `lessonFile` is the unit
+**A unit chapter differs from a Foundations chapter in three fields and one
+wiring step.** `topicKey` is `t1-4`, `slug` starts `topic-1-4-` (the eBook derives
+the chapter number and the lesson link from it), and `lessonFile` is the unit
 shell. The wiring step: a unit topic's `deepReading` block goes in
 `assets/data/lesson-1-4-<slug>.js`, not beside the shell the way a Foundations
-topic's does.
+topic's does, and its url is `../ebook/unit-1.html#chapter-t1-4`.
 
 **Read two of them before writing.** They are the style reference, and matching
 them matters more than any instruction above.

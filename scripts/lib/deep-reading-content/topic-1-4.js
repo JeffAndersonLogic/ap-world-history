@@ -37,15 +37,10 @@
 module.exports = {
   topicKey: 't1-4',
   slug: 'topic-1-4-americas',
-  sourceFile: 'deep-reading-topic-1-4-americas.html',
   lessonFile: 'lesson-1-4-americas.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 1.4: Tribute and Labor',
-  eyebrow: 'Topic 1.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Tribute and <em>Labor</em>',
   deck: `Two empires, built at the same time on opposite ends of a hemisphere, neither one knowing the other existed. One taxed goods and left its subjects to govern themselves; the other taxed work and rebuilt the lives of everyone it absorbed. This chapter gives you the working parts of both, plus the city-states and the great towns that the survey never has room for, and finishes with the question this topic depends on: how do we know any of it?`,
-  meta: ['Five sections', 'Two empires, three regions', 'Read alongside the First & 10'],
-  footerNote: 'Topic 1.4 &nbsp;·&nbsp; Tribute and Labor &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

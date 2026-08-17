@@ -159,7 +159,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: 'Who Collects, and Who Serves',
     desc: 'A textbook-depth companion on the elites built to have no alternative, the tax systems that actually delivered the money, the buildings that justified taking it, and the bargains with local power that made empire affordable and then fragile. Optional.',
-    url: 'deep-reading-topic-3-2-empires-administration.html'
+    url: '../ebook/unit-3.html#chapter-t3-2'
   },
 
   first10: {

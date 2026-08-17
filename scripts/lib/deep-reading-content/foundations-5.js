@@ -39,15 +39,10 @@
 module.exports = {
   topicKey: 'f5',
   slug: 'foundations-5-world-at-1200',
-  sourceFile: 'deep-reading-foundations-5-world-at-1200.html',
   lessonFile: 'foundations-5-world-at-1200.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Foundations 5: The Starting Line',
-  eyebrow: 'Foundations 5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The <em>Starting</em> Line',
   deck: `Six regions as they actually stood around the year 1200, and then the moves a historian makes to explain any of them. The snapshots are the baseline every continuity and change question in this course will measure against, so they are worth knowing precisely rather than approximately.`,
-  meta: ['Six regions', 'Five moves and a boundary', 'Read alongside the First & 10'],
-  footerNote: 'Foundations 5 &nbsp;·&nbsp; The Starting Line &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

@@ -32,15 +32,10 @@
 module.exports = {
   topicKey: 't4-8',
   slug: 'topic-4-8-continuity-and-change',
-  sourceFile: 'deep-reading-topic-4-8-continuity-and-change.html',
   lessonFile: 'lesson-4-8-continuity-and-change.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 4.8: What Changed and What Did Not',
-  eyebrow: 'Topic 4.8 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'What Changed and What Did <em>Not</em>',
   deck: `By 1750 silver from a Bolivian mountain was paying taxes in China, a potato from the Andes was feeding Ireland, and roughly six million Africans had been carried across an ocean against their will. And the largest economies on earth were still the ones that had been largest in 1450, still trading along the same routes, still selling Europe goods Europe could not make. Both of those are true, and knowing why is what this unit was for.`,
-  meta: ['Five sections', 'Global circuit, catastrophe, continuities, the test, the handover', 'Read alongside the First & 10'],
-  footerNote: 'Topic 4.8 &nbsp;·&nbsp; What Changed and What Did Not &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

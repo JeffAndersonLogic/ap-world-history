@@ -70,7 +70,7 @@ window.FOUNDATION_TOPIC = {
   deepReading: {
     title: 'What a Belief System Does',
     desc: 'A textbook-depth companion covering seven traditions one at a time, each on the same four questions: what it claims, what it actually ran, how it traveled, and who it ranked where. A final section works through three cases of syncretism. Optional, and useful when a question asks what a belief system did institutionally rather than what people believed.',
-    url: 'deep-reading-foundations-2-belief-systems.html'
+    url: '../ebook/foundations.html#chapter-f2'
   },
 
   first10: {

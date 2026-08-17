@@ -36,15 +36,10 @@
 module.exports = {
   topicKey: 't8-4',
   slug: 'topic-8-4-spread-of-communism',
-  sourceFile: 'deep-reading-topic-8-4-spread-of-communism.html',
   lessonFile: 'lesson-8-4-spread-of-communism.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 8.4: Land, and Who Holds It',
-  eyebrow: 'Topic 8.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Land, and Who <em>Holds</em> It',
   deck: `This topic is usually taught as the spread of an ideology. It is better read as a series of arguments about land, because in an agrarian society land is where the tax base, the food supply and the political power all sit. Once you read it that way, Mao&rsquo;s base areas, Ho Chi Minh&rsquo;s recruitment, Ethiopia&rsquo;s nationalizations, Kerala&rsquo;s elected communists and the Shah of Iran&rsquo;s land program stop looking like five unrelated things.`,
-  meta: ['Four sections', 'Land, catastrophe, comparison, and the myth of one bloc', 'Read alongside the First & 10'],
-  footerNote: 'Topic 8.4 &nbsp;·&nbsp; Land, and Who Holds It &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

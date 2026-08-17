@@ -162,7 +162,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "One Question, Five Answers",
     desc: "A textbook-depth companion that defines the two classes structurally and then runs one question, what causes industrial poverty and what is the remedy, across liberalism, conservatism, utopian socialism and Marxism, before turning to what governments actually legislated, from the Factory Acts and the workhouse to Bismarck&rsquo;s pensions. Optional, and useful when a checkpoint asks you to compare ideologies.",
-    url: "deep-reading-topic-5-6-industrialization-government-and-society.html"
+    url: "../ebook/unit-5.html#chapter-t5-6"
   },
 
   first10: {

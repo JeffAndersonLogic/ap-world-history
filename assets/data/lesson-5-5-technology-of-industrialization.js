@@ -150,7 +150,7 @@ window.BEHISTORICAL_LESSON = {
   deepReading: {
     title: "The Machines That Needed Each Other",
     desc: "A textbook-depth companion writing the technologies as a chain of bottlenecks rather than a list, from flooded mines to Bessemer steel to the telegraph, and then the environmental half: the smoke where the factories were, and the guano, rubber and coerced labor that produced the raw materials somewhere else. Optional, and useful when a checkpoint asks how one technology enabled another.",
-    url: "deep-reading-topic-5-5-technology-of-industrialization.html"
+    url: "../ebook/unit-5.html#chapter-t5-5"
   },
 
   first10: {

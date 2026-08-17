@@ -41,15 +41,10 @@
 module.exports = {
   topicKey: 't9-3',
   slug: 'topic-9-3-environment',
-  sourceFile: 'deep-reading-topic-9-3-environment.html',
   lessonFile: 'lesson-9-3-environment.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 9.3: The Bill Nobody Was Sent',
-  eyebrow: 'Topic 9.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Bill Nobody Was <em>Sent</em>',
   deck: `Every technology in the Topic 9.1 chapter made something cheaper, and some of them were cheap because a cost was left off the invoice. Smoke, runoff, drawn-down groundwater and carbon dioxide are all real costs paid by real people who were not party to the transaction that produced them. This chapter explains why an unbilled cost gets produced in excess, follows four kinds of degradation to the competition they set off, and then separates what the evidence about climate settles from what it does not.`,
-  meta: ['Four sections', 'Externalities, land and water, air, the debate', 'Read alongside the First & 10'],
-  footerNote: 'Topic 9.3 &nbsp;·&nbsp; The Bill Nobody Was Sent &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

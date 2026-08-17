@@ -36,15 +36,10 @@
 module.exports = {
   topicKey: 'f3',
   slug: 'foundations-3-states-power',
-  sourceFile: 'deep-reading-foundations-3-states-power.html',
   lessonFile: 'foundations-3-states-power.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Foundations 3: The Machinery of Power',
-  eyebrow: 'Foundations 3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Machinery of <em>Power</em>',
   deck: `Persia, Han China, Greece and Rome each faced the same four problems: how to take resources, how to defend ground, how to govern people they would never see, and how to make all of it feel legitimate rather than forced. This reading gives you the working parts of each answer, so that when a question asks <em>how</em> a tool of rule actually worked, you have something specific to say.`,
-  meta: ['Four empires', 'One page each', 'Read alongside the First & 10'],
-  footerNote: 'Foundations 3 &nbsp;·&nbsp; The Machinery of Power &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

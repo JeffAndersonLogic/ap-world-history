@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't6-7',
   slug: 'topic-6-7-effects-of-migration',
-  sourceFile: 'deep-reading-topic-6-7-effects-of-migration.html',
   lessonFile: 'lesson-6-7-effects-of-migration.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 6.7: Two Societies, Both Changed',
-  eyebrow: 'Topic 6.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Two Societies, Both <em>Changed</em>',
   deck: `A migration changes two places. The one the migrant arrives in gets a new population, a new labor supply and, quite often, a new politics of exclusion. The one the migrant leaves gets money, absences, and women running farms and households that the law still says belong to men who are eight thousand miles away. This chapter takes both ends seriously, because the curriculum names the home society first and it is the half that surveys leave out.`,
-  meta: ['Four sections', 'The absence, the enclave, the law, and the long run', 'Read alongside the First & 10'],
-  footerNote: 'Topic 6.7 &nbsp;·&nbsp; Two Societies, Both Changed &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

@@ -39,15 +39,10 @@
 module.exports = {
   topicKey: 't9-5',
   slug: 'topic-9-5-calls-for-reform-responses',
-  sourceFile: 'deep-reading-topic-9-5-calls-for-reform-responses.html',
   lessonFile: 'lesson-9-5-calls-for-reform-responses.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 9.5: A Standard You Can Be Held To',
-  eyebrow: 'Topic 9.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'A Standard You Can Be <em>Held To</em>',
   deck: `In <span class="num">1948</span> the United Nations General Assembly adopted a declaration of human rights that bound nobody to anything. Governments signed it partly because it cost them nothing. Within a generation their own citizens were quoting it back at them, and that is the mechanism this chapter is built on: a publicly accepted standard is a lever, because the distance between what a state says and what it does can be measured, documented and published.`,
-  meta: ['Four sections', 'The standard, gender, legal hierarchy, the system', 'Read alongside the First & 10'],
-  footerNote: 'Topic 9.5 &nbsp;·&nbsp; A Standard You Can Be Held To &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

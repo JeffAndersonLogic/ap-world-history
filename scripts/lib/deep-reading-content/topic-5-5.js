@@ -34,15 +34,10 @@
 module.exports = {
   topicKey: 't5-5',
   slug: 'topic-5-5-technology-of-industrialization',
-  sourceFile: 'deep-reading-topic-5-5-technology-of-industrialization.html',
   lessonFile: 'lesson-5-5-technology-of-industrialization.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.5: The Machines That Needed Each Other',
-  eyebrow: 'Topic 5.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Machines That Needed Each <em>Other</em>',
   deck: `No nineteenth-century technology worked alone. The steam engine needed coal, and coal needed a railway to move it, and the railway needed steel, and cheap steel needed a process nobody had until 1856, and the whole system needed a telegraph to run on time. This chapter is that chain, and then the part that is usually left off it: an industrial economy has an ecological footprint, and most of it was somewhere else.`,
-  meta: ['Four sections', 'The chain, steel and wire, the smoke, the extraction', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.5 &nbsp;·&nbsp; The Machines That Needed Each Other &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

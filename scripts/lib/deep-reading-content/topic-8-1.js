@@ -36,15 +36,10 @@
 module.exports = {
   topicKey: 't8-1',
   slug: 'topic-8-1-cold-war-stage',
-  sourceFile: 'deep-reading-topic-8-1-cold-war-stage.html',
   lessonFile: 'lesson-8-1-cold-war-stage.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 8.1: The World the War Left',
-  eyebrow: 'Topic 8.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The World the War <em>Left</em>',
   deck: `Two things happened at once after <span class="num">1945</span>, and this unit teaches them in separate topics: European empires ran out of the money and the political will to hold their colonies, and two states that had grown stronger during the war began a rivalry neither could settle by fighting the other. This chapter argues they are one story, and sets out the machinery of each before showing where they join.`,
-  meta: ['Four sections', 'The volume&rsquo;s argument, stated once', 'Read alongside the First & 10'],
-  footerNote: 'Topic 8.1 &nbsp;·&nbsp; The World the War Left &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

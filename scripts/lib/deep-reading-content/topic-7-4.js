@@ -33,15 +33,10 @@
 module.exports = {
   topicKey: 't7-4',
   slug: 'topic-7-4-interwar-economy',
-  sourceFile: 'deep-reading-topic-7-4-interwar-economy.html',
   lessonFile: 'lesson-7-4-interwar-economy.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 7.4: Who Runs the Economy Now',
-  eyebrow: 'Topic 7.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Who Runs the Economy <em>Now</em>',
   deck: `Between the wars, governments everywhere answered a question they had never had to ask: how much of an economy should the state run? They asked it because the war had proved they could, and they had to answer it because the Depression destroyed the case for leaving things alone. This chapter is the transmission mechanism of a global slump and the competing answers it produced, including the most extreme one.`,
-  meta: ['Four sections', 'The war\'s lesson, the crash, the answers, the cost', 'Read alongside the First & 10'],
-  footerNote: 'Topic 7.4 &nbsp;·&nbsp; Who Runs the Economy Now &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

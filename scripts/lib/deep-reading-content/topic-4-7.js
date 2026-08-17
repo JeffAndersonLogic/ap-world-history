@@ -34,15 +34,10 @@
 module.exports = {
   topicKey: 't4-7',
   slug: 'topic-4-7-changing-social-hierarchies',
-  sourceFile: 'deep-reading-topic-4-7-changing-social-hierarchies.html',
   lessonFile: 'lesson-4-7-changing-social-hierarchies.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 4.7: Writing Ancestry Into Law',
-  eyebrow: 'Topic 4.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Writing Ancestry Into <em>Law</em>',
   deck: `Every society in this course sorted people. What changes in these three centuries is what the sorting is based on: not birth into a rank, not religion, not occupation, but ancestry, recorded in a register and carrying legal consequences you could not work your way out of. This chapter is how that happened, what states did with the diversity they governed, and why the whole apparatus ran through women.`,
-  meta: ['Five sections', 'Toleration, suppression, casta, gender, continuity', 'Read alongside the First & 10'],
-  footerNote: 'Topic 4.7 &nbsp;·&nbsp; Writing Ancestry Into Law &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

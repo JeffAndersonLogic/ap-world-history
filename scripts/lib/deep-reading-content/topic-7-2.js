@@ -32,15 +32,10 @@
 module.exports = {
   topicKey: 't7-2',
   slug: 'topic-7-2-causes-wwi',
-  sourceFile: 'deep-reading-topic-7-2-causes-wwi.html',
   lessonFile: 'lesson-7-2-causes-wwi.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 7.2: The Month There Was No Time',
-  eyebrow: 'Topic 7.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Month There Was No <em>Time</em>',
   deck: `Europe had imperial rivalry, arms racing, alliances and nationalism for years before <span class="num">1914</span>, and had passed through crisis after crisis without a general war. This chapter is about what was different in July: a set of commitments and railway timetables that converted an assassination in Sarajevo into an invasion of Belgium in five weeks, and left the people making the decisions with days rather than months.`,
-  meta: ['Four sections', 'Conditions, crises, the clock, the argument', 'Read alongside the First & 10'],
-  footerNote: 'Topic 7.2 &nbsp;·&nbsp; The Month There Was No Time &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

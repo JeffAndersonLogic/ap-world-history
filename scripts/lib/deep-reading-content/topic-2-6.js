@@ -35,15 +35,10 @@
 module.exports = {
   topicKey: 't2-6',
   slug: 'topic-2-6-environmental-consequences',
-  sourceFile: 'deep-reading-topic-2-6-environmental-consequences.html',
   lessonFile: 'lesson-2-6-environmental-consequences.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 2.6: The Cargo Nobody Ordered',
-  eyebrow: 'Topic 2.6 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Cargo Nobody <em>Ordered</em>',
   deck: `A network that moves silk moves everything else on the same path, including a bacterium that killed an enormous share of the population across Europe, North Africa and western Asia. This chapter follows the pandemic from its reservoir to its consequences, then turns to the slower environmental costs of connection, and ends with how any of this can be known.`,
-  meta: ['Five sections', 'Pandemic, consequences, ecology, evidence', 'Read alongside the First & 10'],
-  footerNote: 'Topic 2.6 &nbsp;·&nbsp; The Cargo Nobody Ordered &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

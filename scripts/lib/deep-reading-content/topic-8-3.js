@@ -36,15 +36,10 @@
 module.exports = {
   topicKey: 't8-3',
   slug: 'topic-8-3-effects-cold-war',
-  sourceFile: 'deep-reading-topic-8-3-effects-cold-war.html',
   lessonFile: 'lesson-8-3-effects-cold-war.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 8.3: Wars by Other Hands',
-  eyebrow: 'Topic 8.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Wars by Other <em>Hands</em>',
   deck: `The superpowers never fought each other, and their competition killed several million people. This chapter explains how that is possible by taking the proxy war apart as a transaction: what Washington and Moscow supplied, what the local ally supplied, and why a war paid for from outside does not stop when local resources run out.`,
-  meta: ['Four sections', 'The transaction, then three regions', 'Read alongside the First & 10'],
-  footerNote: 'Topic 8.3 &nbsp;·&nbsp; Wars by Other Hands &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',

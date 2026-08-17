@@ -36,15 +36,10 @@
 module.exports = {
   topicKey: 't2-2',
   slug: 'topic-2-2-mongol-empire',
-  sourceFile: 'deep-reading-topic-2-2-mongol-empire.html',
   lessonFile: 'lesson-2-2-mongol-empire.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 2.2: The Empire of the Relay',
-  eyebrow: 'Topic 2.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Empire of the <em>Relay</em>',
   deck: `Roughly a million people on the steppe conquered and then governed most of Eurasia, and the same three habits explain both halves: organize by function rather than by family, use the best specialist regardless of where he comes from, and move information faster than anyone else can. This chapter takes the conquest, the administration and the exchange in order, and finishes with the destruction, which belongs in the same answer and not in a different one.`,
-  meta: ['Five sections', 'Conquest, rule, exchange, cost', 'Read alongside the First & 10'],
-  footerNote: 'Topic 2.2 &nbsp;·&nbsp; The Empire of the Relay &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
