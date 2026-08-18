@@ -174,17 +174,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'Empires First, Then the Volume',
       bullets: [
-        'The question the whole day answers: why does long-distance trade jump in volume in the age of the large empires, and not before it?',
-        'Han China, Rome, Parthian and then Sasanian Persia, and the **Kushans** in between each paved, policed, and taxed the roads inside their own borders.',
-        'A merchant crossing four empires met four states with a reason to keep the road usable, instead of four thousand kilometers of nobody in particular.',
-        'Empires also concentrated **demand**. A Roman senator and a Han official both wanted things their own province could not grow or make.',
-        'Two kinds of cargo drove the traffic: **luxury goods** with a high value-to-weight ratio (silk, incense, pepper, gems, glass) and **raw materials** the buyer\'s region lacked (salt, timber, ivory, tin, copper).',
-        'Value-to-weight is the economics of a caravan in one phrase. Nobody walked wheat 5,000 km. You carried what was worth more than the animal carrying it. Ships are the exception, and that is card 3.',
-        'Four routes are **required** by the framework, and you need all four: the **Eurasian Silk Roads**, the **trans-Saharan caravan routes**, the **Indian Ocean sea lanes**, and the **Mediterranean sea lanes**.',
-        'Three things gave each route its distinctive character: the **climate and terrain** it crossed, the **goods** it typically carried, and the **communities** who actually ran it.',
-        'The framework\'s last sentence on this matters: in the **Americas and Oceania, localized networks developed instead**. The reason is geographic, not cultural.',
-        'The Americas had no animal that pulls. Andean traders ran **llama caravans** between mountain zones, Mesoamerican goods moved on human backs, and Teotihuacan\'s green obsidian still reached cities hundreds of kilometers away.',
-        'Across the Pacific, **outrigger and double-hulled canoes** carried settlers, obsidian, pigs, and taro thousands of kilometers. Enormous distance, but linking societies of similar scale rather than empires with imperial appetites.'
+        'Big empires (Han China, Rome, Persia, the **Kushans**) paved, policed, and taxed their own roads.',
+        'Safer roads plus richer buyers equals far more long-distance trade.',
+        'Two kinds of cargo: **luxury goods** (silk, incense, pepper, gems) and **raw materials** (salt, ivory, timber, metals).',
+        '**Value-to-weight** is the rule. Carry what is worth more than the animal carrying it.',
+        'Four routes to know: the **Silk Roads**, the **trans-Saharan** caravan routes, the **Indian Ocean** sea lanes, and the **Mediterranean** sea lanes.',
+        'Each route\'s character came from three things: its **climate**, its **goods**, its **merchants**.',
+        'The **Americas and Oceania** built **localized** networks instead. No animal that pulls, no empire next door.'
       ],
       image: {
         title: 'Silk Road Map',
@@ -196,17 +192,12 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Land Routes: Silk Roads and Sahara',
       bullets: [
-        'Not one road. A **branching relay network** from Chang\'an through the Tarim Basin oases to Kashgar, then Samarkand, Merv, Persia, and the Mediterranean.',
-        'No merchant traveled the whole way. Goods changed hands at each oasis, every trader taking a profit and taking on the next leg\'s risk.',
-        '**Climate wrote the route.** You cross the Taklamakan by going around it, north or south, oasis to oasis, because the water comes off the mountains at the edges.',
-        'The Han envoy **Zhang Qian** (138 to 126 BCE) brought back the first Chinese reports of the far west, and Han garrisons were pushed into the corridor to hold it open.',
-        'The middle belonged to middlemen: the **Kushans** (c. 30 to 375 CE) taxed the Bactria and Gandhara crossroads, and the **Sogdians** of Samarkand and Bukhara (c. 200 to 900 CE) ran the caravanserais, the languages, and the family firms from China to Byzantium.',
-        '**West from China**: silk, porcelain, and after 751 CE paper. **East toward China**: horses (the cavalry needed them badly), glassware, cotton, gems, and silver.',
-        'The **Sahara** is the same problem with the difficulty turned up, and for most of history it was a barrier rather than a route.',
-        'The **Garamantes** of the Fezzan (c. 500 BCE to 700 CE) were already farming and trading from the middle of it, tapping fossil water through underground channels and selling north to Rome. Hold onto that irrigation trick, it returns in card 5.',
-        'What made the crossing routine was the camel and the saddle built for it, in wide use by about 300 CE. That is card 4.',
-        'After that, geography did the work: **West African gold** (Bambuk and Bure) traded against **Saharan salt** (Taghaza), with the Mediterranean wanting both.',
-        '**Ghana** (c. 700 to 1100 CE) and then **Mali** (c. 1235 to 1400 CE) taxed the southern end of every route. Berber caravanners, and later Muslim commercial law and credit, ran the crossing itself.'
+        'The Silk Roads were a **relay**, not a highway. Goods changed hands at every oasis.',
+        'The route follows the water, oasis to oasis around the desert.',
+        '**Sogdian** merchants ran the middle: caravanserais, many languages, family firms.',
+        '**West**: silk, porcelain, paper. **East**: horses, glassware, cotton, silver.',
+        'The **Sahara** stayed a barrier until camels made the crossing routine, about 300 CE.',
+        'Then **gold** moved north and **salt** moved south. **Ghana** and **Mali** taxed the southern end.'
       ],
       image: {
         title: 'Mansa Musa on the Catalan Atlas (1375 CE)',
@@ -218,16 +209,13 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Sea Lanes: Monsoon and Mediterranean',
       bullets: [
-        'The Indian Ocean\'s advantage is that its wind **reverses on a calendar**. Southwest monsoon, June to September, ships run east and north. Northeast monsoon, November to March, they run home.',
-        'That is a built-in **round trip**. You do not fight the wind, you wait for it, which also means a merchant may spend months in a foreign port, and some of them stay, marry, and become the local trading community.',
-        'A ship carries what a camel cannot: **bulk**. Timber, grain, salt, iron, pottery, and enslaved people all moved by sea alongside the pepper and the porcelain.',
-        'Ports grew rich on **position rather than production**: Aden, Hormuz, Calicut, Malacca, Quanzhou, and **Kilwa** on the Swahili coast.',
-        '**Srivijaya** (c. 650 to 1377 CE, Sumatra) taxed the Strait of Malacca, the only sea gate between the Indian Ocean and the South China Sea, and spent the revenue on becoming a center of Buddhist learning.',
-        'The **Mediterranean** is the fourth required route and the easiest to forget, because Rome makes it look like domestic shipping rather than international trade.',
-        'It ran on a **season, not a monsoon**: sailing was normal from roughly late spring to early autumn, and winter effectively closed it.',
-        'Rome\'s grain fleet fed a city of roughly a million people from **Egypt and North Africa**. Monte Testaccio, a hill in Rome built from about 53 million broken oil jars, is what that traffic left behind.',
-        'The two water systems were **joined at the Red Sea**. Strabo reports 120 ships a year sailing from Myos Hormos toward India, and the *Periplus of the Erythraean Sea* is a working merchant\'s handbook for that run.',
-        'So a peppercorn grown in Kerala could be shipped to Berenike, carted to the Nile, and eaten in Rome. One cargo, three networks, and no single merchant who saw both ends.'
+        'The **monsoon reverses**: southwest June to September, northeast November to March.',
+        'That is a free **round trip**. Sail out on one season, home on the next.',
+        'Ships carry the **bulk** a camel cannot: grain, timber, iron, pottery.',
+        'Rich ports sat on **position, not production**: Aden, Calicut, Malacca, Kilwa.',
+        '**Srivijaya** taxed the Strait of Malacca, the gate between the two oceans.',
+        'The **Mediterranean** is the fourth route: a sailing season rather than a monsoon, and a grain fleet feeding Rome.',
+        'The two systems met at the **Red Sea**, so Indian pepper reached a Roman table.'
       ],
       image: {
         title: 'Indian Ocean',
@@ -239,18 +227,14 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'The Technologies That Made Distance Cheap',
       bullets: [
-        'A route is only as good as the thing carrying the load, so the framework asks you to know **one animal technology** and **one maritime technology**. Know one of each cold, with a date.',
-        '**Yoke.** A wooden frame across the shoulders lets **oxen** pull a cart or a plow. Slow, but it moves bulk on short and medium hauls, which is how goods reach the caravan in the first place.',
-        'The equivalent fix for horses was the **padded collar**, in use in China by about the 5th century CE and in Europe by about the 10th. The older throat strap choked a horse that pulled hard.',
-        '**Saddle.** The **North Arabian camel saddle**, designed in the last centuries BCE and in wide use by about 300 CE, sits over the hump so the animal can carry a heavy load and a rider who can actually control it.',
-        'Camel economics: roughly 200 to 300 kg of cargo, 30 to 40 km a day, and five to seven days between drinks. That is what turned nine million square kilometers of desert into a route.',
-        '**Stirrup.** Paired stirrups appear in Chinese tombs in the 4th and 5th centuries CE and spread west across the steppe. They give a rider a braced seat, so long days on horseback and fighting from one both get easier.',
-        '*Common mistake to avoid:* the stirrup did not cause feudalism. That was a famous argument and it has not held up. Say what it actually did, which is change what a rider could do and how far.',
-        '**Lateen sail.** A triangular sail, shown on Mediterranean vessels by roughly the 2nd century CE, that lets a ship work at an angle to the wind instead of only running before it. Fewer weeks lost waiting for weather.',
-        '**Dhows**, the workhorse of the Arabian Sea, were built by sewing planks together with coconut fiber rather than nailing them, and rigged with that lateen sail.',
-        'The **Belitung wreck** (c. 830 CE) is the argument in one object: an Arab-built sewn ship, sunk off Indonesia, carrying roughly 60,000 pieces of Chinese ceramics. Arab hull, Chinese cargo, Southeast Asian water.',
-        'Knowing the monsoon **is** a technology. It is knowledge, it was written down, and it was worth money, which is exactly why someone wrote the *Periplus*.',
-        'The Americas had the **llama**, which carries about 30 kg and does not pull. No cart, no plow, no camel, no monsoon corridor. Same human ingenuity, different raw material to work with.'
+        'Know **one animal technology** and **one maritime technology**, with a date.',
+        '**Yoke**: lets oxen pull a cart or a plow. Bulk, over short hauls.',
+        '**Camel saddle** (North Arabian, in wide use by c. 300 CE): 200 to 300 kg across desert, days between drinks.',
+        '**Stirrup** (China, 4th to 5th centuries CE): a braced seat, so longer rides and fighting on horseback.',
+        '**Lateen sail**: triangular, so a ship can work at an angle to the wind instead of only with it.',
+        '**Dhow**: planks sewn with coconut fiber, lateen rigged, the workhorse of the Arabian Sea.',
+        'Knowing the **monsoon calendar** was itself a technology, and it was written down.',
+        'The Americas had only the **llama**: about 30 kg, and it does not pull.'
       ],
       image: {
         title: 'Ship carved on the Borobudur temple, Java (c. 8th to 9th centuries CE)',
@@ -262,34 +246,26 @@ window.FOUNDATION_TOPIC = {
     {
       title: 'What Moved That Nobody Sold: Crops, Water, Germs',
       bullets: [
-        'Trade moves things nobody put a price on. **Crops, farming methods, and disease** all ride along with the cargo.',
-        '**Rice and cotton**, both long grown in South Asia, spread west into Persia, Mesopotamia, and North Africa along these routes.',
-        'Both are **summer crops arriving in a dry-summer climate**, so growing them meant finding summer water. The crop and the irrigation had to travel together or neither one mattered.',
-        'The **qanat** is the engineering Persia already had: a gently sloping tunnel that taps groundwater at the foot of the hills and carries it kilometers underground to the fields, with vertical shafts along the way for digging and cleaning.',
-        'Underground means almost nothing **evaporates**, which is why the technique spread as the *falaj* in Arabia, the *foggara* in the Sahara (the Garamantes trick from card 2), and later into Spain.',
-        'Notice the shape of that claim. A crop moves, and a **whole landscape gets rebuilt** to receive it. That is a far stronger argument than "they traded rice."',
-        'The same roads carried **pathogens**, and to a population that has never met a disease, contact is a catastrophe rather than an inconvenience.',
-        'The **Antonine Plague** (165 to 180 CE) arrived with Roman troops returning from campaign in Mesopotamia and ran through an empire with no immunity to it. Mortality estimates vary widely, but the army and the treasury both felt it for a generation.',
-        '**Han China** recorded severe epidemics repeatedly between about 150 and 190 CE. Within a generation came the Yellow Turban rebellion (184 CE) and the end of effective Han authority (220 CE).',
-        'The **Plague of Justinian** (541 CE) reached Egypt on the grain route and then Constantinople by ship, exactly while the empire was trying to reconquer the west. Contemporary death tolls are not trustworthy numbers, and modern estimates disagree sharply.',
-        '*Say "contributed to," never "caused."* Rome and Han both had fiscal, military, and political trouble already. The exam rewards the traceable strand, not the slogan.',
-        'The honest causal claim is the uncomfortable one: the same network that made these empires rich carried the thing that thinned their cities, and nobody was trading it.'
+        'Crops, farming methods, and disease all traveled with the cargo.',
+        '**Rice and cotton** spread from South Asia west into Persia, Mesopotamia, and North Africa.',
+        'Both need summer water, so the **irrigation had to travel too**.',
+        'The **qanat**: a sloping tunnel carrying groundwater underground to the fields, so almost nothing evaporates.',
+        '**Antonine Plague** (165 to 180 CE) ran through Rome. Severe epidemics hit **Han China** about 150 to 190 CE.',
+        'The **Plague of Justinian** (541 CE) rode the grain ships to Constantinople.',
+        'Say disease **contributed to** decline. It never caused a collapse by itself.'
       ]
     },
     {
       title: 'Religions Change on the Road, and the Bridge Forward',
       bullets: [
-        'The framework\'s word is **transformed**, not spread. A tradition that travels does not arrive unchanged, and the change is the evidence that it traveled.',
-        '**Buddhism** moved up the Silk Roads with merchants and monks into China, where translators explained it in **Daoist vocabulary**, because that was the language available for talking about the way things are.',
-        'What grew there was Chinese: **Chan** (later Zen) and **Pure Land**, and the bodhisattva Avalokiteshvara became **Guanyin**, increasingly shown as female. Merchants paid for the **Mogao caves** at Dunhuang as insurance on a dangerous road.',
-        'By sea it went the other way, into Sri Lanka and Southeast Asia as **Theravada**, and Srivijaya became a place people sailed to in order to study it.',
-        '**Christianity** moved east along these roads long before it moved north into Europe. **Armenia** adopted it around 301 CE and **Aksum**, in Ethiopia, around 330 CE.',
-        'The **Church of the East** reached the Tang capital, and the Xi\'an stele of 781 CE describes Christianity in Buddhist and Daoist terms, in Chinese, on a Chinese monument. That is transformation you can stand in front of and read.',
-        'Language stayed local too: Ge\'ez in Ethiopia, Coptic in Egypt, Syriac across Persia and Central Asia. One faith, several liturgies, several art traditions.',
-        '**Hinduism** had no missionaries. It traveled with Indian Ocean merchants and with the **Brahmin advisers** that Southeast Asian rulers invited, because Sanskrit ritual was a way to make a king legitimate.',
-        'Those courts took what was useful and kept what they had: the **devaraja** god-king idea, the Ramayana absorbed into local theater, and local spirits and ancestors left in place. **Angkor Wat** (begun c. 1113 CE) is the largest Hindu temple in the world, built by a Khmer king, and later used as a Buddhist one.',
-        '**Bridge to Unit 2.** All of this already existed by c. 1200. The Mongols did not create Silk Road trade, they policed a network 1,400 years old. Zheng He did not discover the Indian Ocean, he sailed into a system that already had a schedule.',
-        'Two principles worth carrying into every later unit: wherever routes cross, **wealth and power pile up** (Malacca, Constantinople, Cairo), and **the most consequential cargo is usually the one nobody was selling**.'
+        'The word is **transformed**, not simply spread.',
+        '**Buddhism** went up the Silk Roads into China, explained in **Daoist** vocabulary. **Chan** and **Pure Land** grew there, and Avalokiteshvara became **Guanyin**.',
+        'Merchants paid for the **Mogao caves** at Dunhuang as insurance on a dangerous road.',
+        '**Christianity** moved east first: **Armenia** c. 301 CE, **Aksum** c. 330 CE, the Tang capital by the Xi\'an stele of 781 CE.',
+        'It stayed local in language: Ge\'ez in Ethiopia, Coptic in Egypt, Syriac across Persia.',
+        '**Hinduism** traveled with merchants and Brahmin advisers, and Southeast Asian kings used it for legitimacy. **Angkor Wat** (begun c. 1113 CE) is the largest Hindu temple in the world.',
+        '**Bridge to Unit 2**: all of this existed before the Mongols. They policed the network, they did not build it.',
+        'Where routes cross, **wealth and power pile up**, and the most important cargo is often the one nobody was selling.'
       ],
       image: {
         title: 'Great Buddha, Cave 96, Mogao Caves at Dunhuang',
