@@ -218,10 +218,11 @@ window.FOUNDATION_TOPIC = {
         'The two systems met at the **Red Sea**, so Indian pepper reached a Roman table.'
       ],
       image: {
-        title: 'Indian Ocean',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png',
-        caption: 'The Indian Ocean\'s shape matters: the monsoon blows one way for part of the year and the other way for the rest, creating predictable sailing lanes and a natural round-trip schedule. Port cities at the intersections, Aden, Calicut, Malacca, Kilwa, collected the wealth of trade passing through without producing most of what was traded.'
+        title: 'Indian Ocean Trade Routes and the Monsoon Winds',
+        // Files and credits: assets/images/maps/foundations-4/README.md.
+        url: '../assets/images/maps/foundations-4/indian-ocean-monsoon-trade.jpg',
+        sourceUrl: '../assets/images/maps/foundations-4/indian-ocean-monsoon-trade.jpg',
+        caption: 'The two arrow sets are the mechanism. Green runs April to September and pushes ships east and north toward India, Southeast Asia, and China; gray runs November to February and brings them home toward Arabia and East Africa. Trace one purple route with a finger, Kilwa to Aden to Calicut to Melaka to Quanzhou, and the relay is obvious: no single ship sailed it end to end. Two cautions. The ports are labeled for the network at its later height, so Cairo and Melaka in particular are later than this lesson. And the arrows give the full sailing windows, while the notes give the reliable core of each season; either is right if you can say which direction goes with which season. Classroom textbook cartography; the image carries no publisher mark, so none is asserted.'
       }
     },
     {
