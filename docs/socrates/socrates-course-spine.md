@@ -70,7 +70,7 @@ Strong answer checklist: I named a specific tool of rule from Persia, Han China,
 
 **Where this sits.** Foundations, before c. 1200. How do trade networks transform societies?
 
-**Expected evidence terms.** trade network, Silk Roads, Indian Ocean trade, trans-Saharan trade, monsoon winds, chokepoint, entrepôt, relay trade, Sogdian merchants, caravanserai, technology transfer, cultural diffusion, Srivijaya Empire, Swahili city-states, paper, Battle of Talas.
+**Expected evidence terms.** trade network, Silk Roads, Indian Ocean trade, trans-Saharan trade, Mediterranean sea lanes, monsoon winds, chokepoint, entrepôt, relay trade, Sogdian merchants, caravanserai, camel saddle, stirrup, yoke, lateen sail, dhow, qanat, technology transfer, cultural diffusion, Srivijaya Empire, Swahili city-states, paper, Battle of Talas.
 
 **AP skill focus.** AP Skill Builder: Complexity.
 
