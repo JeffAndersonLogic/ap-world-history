@@ -71,15 +71,15 @@
 
   lesson.stableImages = {
     map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atwater_Kent_radio.jpg',
+    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atwater_Kent_Radios_-1927A.jpg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Oil_Refinery.jpg',
+    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Anacortes_Refinery_31911.JPG',
     evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',
     beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_nuclear_power_plant.jpg'
+    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_Nuclear_Power_Plant%2C_April_1997.jpg'
   };
 
   lesson.beInTheRoom = {

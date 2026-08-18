@@ -108,8 +108,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Chinatown, San Francisco, 1880',
           caption: 'Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chinatown_San_Francisco_1880.jpg'
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/A_Holiday_in_Chinatown%2C_San_Francisco_%28P._Frenzeny%2C_Harper%27s%2C_1880-03-20%29.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:A_Holiday_in_Chinatown%2C_San_Francisco_%28P._Frenzeny%2C_Harper%27s%2C_1880-03-20%29.jpg'
         }
       },
       {
@@ -298,8 +298,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Chinese communities across the Pacific and Americas',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chinatown_San_Francisco_1880.jpg',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/A_Holiday_in_Chinatown%2C_San_Francisco_%28P._Frenzeny%2C_Harper%27s%2C_1880-03-20%29.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:A_Holiday_in_Chinatown%2C_San_Francisco_%28P._Frenzeny%2C_Harper%27s%2C_1880-03-20%29.jpg',
       caption: 'Chinese communities across the Pacific and Americas helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Chinese communities across the Pacific and Americas support or complicate a claim about effects of migration?'
     },

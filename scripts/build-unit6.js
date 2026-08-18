@@ -287,13 +287,13 @@ const MEDIA = {
     // A 1910 map of Africa cannot answer a map question about state expansion in
     // Japan, Russia, and the United States, so this topic gets its own map.
     map: instructionalMap('6.2'),
-    photo: 'Africa_map_1910.jpg', onCard: 1, onEvidence: 0,
+    photo: 'Map_of_Colonial_Africa_in_1913.png', onCard: 1, onEvidence: 0,
     photoTitle: 'Africa after the partition, 1910',
     photoCaption: 'Twenty-five years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.'
   },
   '6.3': {
     map: instructionalMap('6.3'),
-    photo: 'Yaa_Asantewaa.jpg', onCard: 1, onEvidence: 1,
+    photo: null, onCard: 0, onEvidence: 0,
     photoTitle: 'Yaa Asantewaa, c. 1900',
     photoCaption: 'Yaa Asantewaa led Asante resistance in the War of the Golden Stool. Indigenous responses to expansion included organized armed defence, not only accommodation.'
   },
@@ -305,19 +305,19 @@ const MEDIA = {
   },
   '6.5': {
     map: instructionalMap('6.5'),
-    photo: 'Buenos_Aires_Port.jpg', onCard: 1, onEvidence: 2,
+    photo: 'Port_of_Buenos_Aires.jpg', onCard: 1, onEvidence: 2,
     photoTitle: 'The port of Buenos Aires',
     photoCaption: 'British capital financed Argentina\'s docks and railways. Economic imperialism could direct an economy without formal colonial rule.'
   },
   '6.6': {
     map: instructionalMap('6.6'),
-    photo: 'Indian_indenture_ship.jpg', onCard: 1, onEvidence: 2,
+    photo: null, onCard: 0, onEvidence: 0,
     photoTitle: 'An indenture ship carrying Indian laborers',
     photoCaption: 'After abolition, plantations recruited indentured workers from India and China under contracts that limited pay, movement, and return.'
   },
   '6.7': {
     map: instructionalMap('6.7'),
-    photo: 'Chinatown_San_Francisco_1880.jpg', onCard: 1, onEvidence: 1,
+    photo: 'A_Holiday_in_Chinatown%2C_San_Francisco_%28P._Frenzeny%2C_Harper%27s%2C_1880-03-20%29.jpg', onCard: 1, onEvidence: 1,
     photoTitle: 'Chinatown, San Francisco, 1880',
     photoCaption: 'Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.'
   },

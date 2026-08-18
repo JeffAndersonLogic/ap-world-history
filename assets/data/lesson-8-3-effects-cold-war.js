@@ -152,8 +152,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Angolan Civil War — MPLA fighters, 1975",
           caption: "Angola's independence in November 1975 immediately became a Cold War battleground: Soviet- and Cuban-backed MPLA forces fought U.S.- and South African-backed UNITA and FNLA fighters in a civil war that lasted until 2002.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/MPLA_fighters.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:MPLA_fighters.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Agostinho_Neto_%2C_president_Angolese_bevrijdingsbeweging_MPLA%2C_in_Nederland_over%2C_Bestanddeelnr_927-8480.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Agostinho_Neto_%2C_president_Angolese_bevrijdingsbeweging_MPLA%2C_in_Nederland_over%2C_Bestanddeelnr_927-8480.jpg"
         }
       }
     ]
@@ -188,22 +188,22 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "NATO founding ceremony, 1949",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/NATO_signing.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:NATO_signing.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Truman_signing_North_Atlantic_Treaty.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Truman_signing_North_Atlantic_Treaty.jpg",
       caption: "The signing of the North Atlantic Treaty, April 4, 1949, formalizing the Western military alliance under American leadership as the primary U.S. instrument for maintaining influence in Europe.",
       prompt: "Who signed NATO, and who did not? What does the treaty's membership reveal about how the United States used the alliance system to extend its influence beyond its own borders?"
     },
     {
       title: "Cuban troops in Angola, 1975",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cuban_troops_Angola.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cuban_troops_Angola.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cuito_Cuanavale_Montage.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cuito_Cuanavale_Montage.jpg",
       caption: "Cuban combat troops deployed to Angola in 1975 at the request of the Soviet-backed MPLA, one of the most direct forms of proxy war intervention in Cold War Africa.",
       prompt: "What does Cuba's military deployment to Angola reveal about how the Soviet bloc used local clients and third-party forces to pursue Cold War objectives? How is this similar to or different from U.S. methods in Nicaragua?"
     },
     {
       title: "Sandinista soldiers, Nicaragua, 1980s",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/FSLN_fighter.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:FSLN_fighter.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Revoluci%C3%B3n_sandinista.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Revoluci%C3%B3n_sandinista.png",
       caption: "Sandinista fighters in Nicaragua during the 1980s Contra conflict, a proxy war in which the U.S. funded insurgents to destabilize a Soviet-aligned government.",
       prompt: "How does the Nicaraguan conflict illustrate the comparison AP LO C demands? What methods did the U.S. use to maintain influence, and how did those compare to Soviet methods in Angola or Korea?"
     }

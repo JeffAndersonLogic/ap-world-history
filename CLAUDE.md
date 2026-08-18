@@ -75,7 +75,7 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/validate.js`, run the full structural, capture-wiring, and image-integrity audit.
 - `node scripts/run-tests.js offline|browser|all [--strict]`, run a suite. Prints
   PASS, FAIL, or SKIP per check and exits 1 if anything failed.
-- `node scripts/check-image-urls.js`, verify every remote Commons image URL actually resolves. Needs internet access to `commons.wikimedia.org`; `validate.js` stays offline on purpose and cannot do this.
+- `node scripts/check-image-urls.js`, verify every remote Commons image URL actually resolves. Needs internet access to `commons.wikimedia.org`; `validate.js` stays offline on purpose and cannot do this. **A 429 is not a failure.** Wikimedia throttles a shared CI egress IP, so a request that is still rate limited after every retry was never answered, and the script reports it as not verified and does not exit 1 for it. Reporting a throttled request as a broken picture is what made the nightly fail most nights regardless of whether anything was wrong, and a check that cries wolf nightly is a check nobody reads. Only a real answer, a 404 or a non-image content type, fails the run.
 - `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
 - `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets and success criteria out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand.

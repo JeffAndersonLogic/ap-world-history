@@ -106,10 +106,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** Yaa Asantewaa and the War of the Golden Stool and The Indian Rebellion of 1857 show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'Yaa Asantewaa, c. 1900',
-          caption: 'Yaa Asantewaa led Asante resistance in the War of the Golden Stool. Indigenous responses to expansion included organized armed defence, not only accommodation.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Yaa_Asantewaa.jpg'
+          title: 'Indigenous Responses to State Expansion',
+          caption: 'The mechanism behind Topic 6.3, drawn as BeHistorical topic artwork.',
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -298,8 +298,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Yaa Asantewaa and the War of the Golden Stool',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Yaa_Asantewaa.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Yaa Asantewaa and the War of the Golden Stool helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Yaa Asantewaa and the War of the Golden Stool support or complicate a claim about indigenous responses to state expansion?'
     },

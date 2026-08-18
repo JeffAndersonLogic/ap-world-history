@@ -117,10 +117,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** Irish and Italian migration to the Americas and Chinese and Indian indentured labor show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'An indenture ship carrying Indian laborers',
-          caption: 'After abolition, plantations recruited indentured workers from India and China under contracts that limited pay, movement, and return.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_indenture_ship.jpg'
+          title: 'Causes of Migration',
+          caption: 'The mechanism behind Topic 6.6, drawn as BeHistorical topic artwork.',
+          url: '',
+          sourceUrl: ''
         }
       },
       {
@@ -316,8 +316,8 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'Chinese and Indian indentured labor',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_indenture_ship.jpg',
+      url: '',
+      sourceUrl: '',
       caption: 'Chinese and Indian indentured labor helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Chinese and Indian indentured labor support or complicate a claim about causes of migration?'
     },

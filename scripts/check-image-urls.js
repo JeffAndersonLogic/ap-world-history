@@ -21,9 +21,17 @@ const path = require('path');
 const https = require('https');
 
 const ROOT = path.resolve(__dirname, '..');
-const CONCURRENCY = 6;
+const CONCURRENCY = 2;
 const TIMEOUT_MS = 20000;
-const RETRIES = 2;
+const RETRIES = 4;
+// Wikimedia asks for a descriptive agent with a way to reach the operator.
+// Without one a shared CI egress IP gets throttled almost immediately.
+const USER_AGENT =
+  'BeHistorical-image-check/1.0 (https://github.com/JeffAndersonLogic/ap-world-history) Node/' +
+  process.versions.node;
+// A small gap between requests to the same host. Cheap here, and it is the
+// difference between a clean run and a wall of 429s.
+const POLITE_MS = 150;
 const FIX_LIST_ONLY = process.argv.includes('--fix-list');
 
 const R = '\x1b[31m';
@@ -51,6 +59,8 @@ const IMAGE_EXT = /\.(svg|jpe?g|png|gif|webp|PNG|JPG|JPEG|SVG)$/;
 // Both need to resolve, but only one is expected to be an image.
 function classify(url) {
   if (!/^https?:/i.test(url)) return null;
+  // A template literal that was never substituted is source code, not a URL.
+  if (url.includes('${')) return null;
   if (/fonts\.(googleapis|gstatic)\.com/i.test(url)) return null;
   if (/docs\.google\.com|magicschool\.ai|(?:^|\.)youtube\.com|youtu\.be/i.test(url)) {
     return /^https:\/\/img\.youtube\.com\//i.test(url) ? 'image' : null;
@@ -90,7 +100,7 @@ function head(url, expectImage, redirects = 0) {
     const done = (value) => { if (!settled) { settled = true; resolve(value); } };
     const request = https.request(url, { method: 'GET', headers: {
       // Commons rejects requests without a descriptive agent.
-      'User-Agent': 'BeHistorical-image-check/1.0 (AP World History course validator)',
+      'User-Agent': USER_AGENT,
       Range: 'bytes=0-0'
     } }, (response) => {
       const status = response.statusCode;
@@ -106,7 +116,9 @@ function head(url, expectImage, redirects = 0) {
         if (/^image\//i.test(type) || /svg/i.test(type)) return done({ ok: true, status, type });
         return done({ ok: false, status, type, reason: `served ${type || 'no content-type'}, not an image` });
       }
-      done({ ok: false, status, type, reason: `HTTP ${status}` });
+      const retryAfter = Number(response.headers['retry-after']);
+      done({ ok: false, status, type, reason: `HTTP ${status}`,
+             retryAfter: Number.isFinite(retryAfter) ? retryAfter : null });
     });
     request.setTimeout(TIMEOUT_MS, () => { request.destroy(); done({ ok: false, status: 'timeout', reason: 'timed out' }); });
     request.on('error', (error) => done({ ok: false, status: 'error', reason: error.message }));
@@ -121,8 +133,16 @@ async function checkWithRetries(url, expectImage) {
     if (last.ok) return last;
     // A 404 is a real answer; only retry transport-level trouble.
     if (typeof last.status === 'number' && last.status !== 429 && last.status < 500) return last;
-    await new Promise((r) => setTimeout(r, 800 * (attempt + 1)));
+    // Exponential, and honour Retry-After when the host sends one. The old
+    // 800ms flat retry re-queried a throttled host while it was still angry,
+    // which turned one 429 into three.
+    const backoff = last.retryAfter ? last.retryAfter * 1000 : 1000 * 2 ** attempt;
+    await new Promise((r) => setTimeout(r, Math.min(backoff, 30000)));
   }
+  // Still throttled after every retry means this run did not get an answer.
+  // That is not the same as the picture being wrong, and must not be reported
+  // as though it were.
+  if (last.status === 429) last.throttled = true;
   return last;
 }
 
@@ -150,18 +170,23 @@ async function main() {
       const url = urls[mine];
       results.set(url, await checkWithRetries(url, found.get(url).kind === 'image'));
       done++;
+      if (POLITE_MS) await new Promise((r) => setTimeout(r, POLITE_MS));
       if (process.stdout.isTTY && !FIX_LIST_ONLY) process.stdout.write(`  checked ${done}/${urls.length}\r`);
     }
   });
   await Promise.all(workers);
   if (process.stdout.isTTY && !FIX_LIST_ONLY) process.stdout.write(`${' '.repeat(40)}\r`);
 
-  const broken = urls.filter((url) => !results.get(url).ok);
+  // A request the host throttled was never answered, so it is unknown, not
+  // broken. Counting it as broken is what made this check fail most nights
+  // regardless of whether a single image had actually gone missing.
+  const throttled = urls.filter((url) => results.get(url).throttled);
+  const broken = urls.filter((url) => !results.get(url).ok && !results.get(url).throttled);
 
   // If every single request failed the same way, the network is the problem, not
   // the course. Saying "393 images are broken" in that situation is worse than
   // saying nothing, because it sends someone hunting for 393 imaginary bugs.
-  if (broken.length === urls.length) {
+  if (broken.length + throttled.length === urls.length && broken.length) {
     const statuses = new Set(broken.map((url) => String(results.get(url).status)));
     if (statuses.size === 1) {
       const status = [...statuses][0];
@@ -173,10 +198,21 @@ async function main() {
     }
   }
 
+  const reportThrottled = () => {
+    if (!throttled.length) return;
+    console.log(`${Y}${W}${throttled.length} not verified this run.${X} The host throttled the request (HTTP 429)`);
+    console.log('after every retry, so these were never answered. This is a rate limit on the way out,');
+    console.log('not a broken picture, and it does not fail the run. They are re-checked tomorrow.\n');
+  };
+
   if (!broken.length) {
-    console.log(`${G}${W}All ${urls.length} remote references resolve.${X} ${images.length} are real image files.\n`);
+    console.log(`${G}${W}All ${urls.length - throttled.length} verified remote references resolve.${X} ${images.length} are real image files.`);
+    if (throttled.length) console.log('');
+    reportThrottled();
     return;
   }
+
+  reportThrottled();
 
   const brokenImages = broken.filter((url) => found.get(url).kind === 'image');
   const brokenSources = broken.filter((url) => found.get(url).kind === 'source');

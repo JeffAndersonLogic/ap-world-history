@@ -138,8 +138,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World Map, c. 1700",
           caption: "By c. 1700, racial and social hierarchies organized colonial societies across three continents. The casta in Spanish America, the plantation hierarchy in Portuguese Brazil and the Caribbean, and the racial classifications of Dutch and British colonies all reflected the same underlying logic: race as the legal basis for labor extraction.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG"
         }
       }
     ]

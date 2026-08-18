@@ -57,11 +57,11 @@
     first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/British_Mark_I_male_tank_Somme_25_September_1916.jpg',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kitchener-Britons.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Unclesamwantyou.jpg',
+    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/J._M._Flagg%2C_I_Want_You_for_U.S._Army_poster_%281917%29.jpg',
     checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kitchener-Britons.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/John_Singer_Sargent_-_Gassed.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Unclesamwantyou.jpg',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg',
+    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg',
+    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/J._M._Flagg%2C_I_Want_You_for_U.S._Army_poster_%281917%29.jpg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/British_Mark_I_male_tank_Somme_25_September_1916.jpg'
   };
 

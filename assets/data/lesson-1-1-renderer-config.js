@@ -54,7 +54,7 @@
 
   lesson.stableImages = {
     map: 'https://commons.wikimedia.org/wiki/Special:FilePath/China_-_Song_Dynasty-en.svg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Along_the_River_During_the_Qingming_Festival_(detail_of_original).jpg',
+    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Along_the_River_During_the_Qingming_Festival_%28detail_of_original%29.jpg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Huizong.jpg',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG',

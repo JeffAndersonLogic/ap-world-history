@@ -50,7 +50,7 @@
     evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
     beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png'
+    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG'
   };
 
   lesson.beInTheRoom = {

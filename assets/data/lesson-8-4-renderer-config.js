@@ -80,16 +80,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_world_1983.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_world_1983.png',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_world_1983.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/GLF_poster.jpg',
+    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_countries_1979-1983.png',
+    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_countries_1979-1983.png',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_countries_1979-1983.png',
+    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Brave_the_wind_and_the_waves.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_1946.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_PRC.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/GLF_poster.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_PRC.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_PRC.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_world_1983.png'
+    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_establishment_of_PRC.jpg',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Brave_the_wind_and_the_waves.jpg',
+    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_establishment_of_PRC.jpg',
+    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_establishment_of_PRC.jpg',
+    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_countries_1979-1983.png'
   };
 
   lesson.beInTheRoom = {

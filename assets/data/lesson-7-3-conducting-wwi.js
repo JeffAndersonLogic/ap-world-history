@@ -148,8 +148,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Gassed, by John Singer Sargent",
           caption: "Sargent's 'Gassed' (1919), commissioned by the British government as official war art, and a record of what the war actually did.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/John_Singer_Sargent_-_Gassed.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:John_Singer_Sargent_-_Gassed.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg"
         }
       },
       {
@@ -162,8 +162,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Uncle Sam — 'I Want You'",
           caption: "James Montgomery Flagg's Uncle Sam (1917), the nation personified, recruiting its citizens for a war of national destiny.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Unclesamwantyou.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Unclesamwantyou.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/J._M._Flagg%2C_I_Want_You_for_U.S._Army_poster_%281917%29.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:J._M._Flagg%2C_I_Want_You_for_U.S._Army_poster_%281917%29.jpg"
         }
       },
       {
@@ -177,8 +177,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Indian bicycle troops on the Somme, 1916",
           caption: "Indian cyclist troops at the Battle of the Somme, colonial soldiers mobilized into a European war on a global scale.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_bicycle_troops_Somme_1916.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg"
         }
       },
       {
@@ -207,8 +207,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Gassed, by John Singer Sargent",
           caption: "The cost rendered as official art: blinded soldiers led in file past a field of casualties, total war's answer to the question 'what did it cost?'",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/John_Singer_Sargent_-_Gassed.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:John_Singer_Sargent_-_Gassed.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg"
         }
       }
     ]
@@ -257,15 +257,15 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "Indian bicycle troops on the Somme, 1916",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_bicycle_troops_Somme_1916.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg",
       caption: "Colonial troops on the Western Front, the empire mobilized.",
       prompt: "How does this image support the claim that governments mobilized populations 'both in the home countries and the colonies'?"
     },
     {
       title: "Gassed, by John Singer Sargent",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/John_Singer_Sargent_-_Gassed.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:John_Singer_Sargent_-_Gassed.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg",
       caption: "Sargent's 'Gassed' (1919), government-commissioned art recording the human cost of chemical weapons.",
       prompt: "This painting is both government-commissioned art AND a record of technological horror. How can one source serve as evidence for both Key Concepts in this topic?"
     }
