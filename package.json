@@ -38,7 +38,10 @@
     "build:socrates": "node scripts/build-socrates.js",
     "eval:socrates": "node scripts/test/socrates-eval.js",
     "build:coach-prompt": "node scripts/build-coach-prompt.js",
-    "check:style": "node scripts/check-style.js"
+    "check:style": "node scripts/check-style.js",
+    "check:exam": "node scripts/check-exam-cues.js",
+    "build:exam": "node scripts/build-exam.js",
+    "build:exam:zip": "node scripts/build-exam.js --bundle"
   },
   "devDependencies": {
     "playwright": "^1.49.0"

@@ -6,3 +6,8 @@ package-lock.json
 
 # Socrates eval transcripts, regenerated per run and not a fixture.
 scripts/test/.socrates-eval-out/
+
+# Built exam packages. The XML, manifest and answer key are committed; the zip
+# is derived, carries no information the others lack, and would churn the
+# history on every wording change. Run: npm run build:exam:zip
+exams/**/*.zip

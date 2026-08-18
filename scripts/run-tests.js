@@ -43,7 +43,9 @@ const SUITES = {
     ['scripts/test/readings-golden.js', '58 unit readings vs the hand-authored originals'],
     ['scripts/test/socrates-contract.test.js', 'AI coach kit reproducible, persona unit-agnostic'],
     ['scripts/test/readings-parse.test.js', '77 reading script blocks are valid JavaScript'],
-    ['scripts/check-style.js', 'American English, date form, note labels']
+    ['scripts/check-style.js', 'American English, date form, note labels'],
+    ['scripts/check-exam-cues.js', 'exam items carry no measurable answer cue'],
+    ['scripts/test/exam-reproducible.test.js', 'exam package matches the content model']
   ],
   browser: [
     ['scripts/test/modal-focus.unit.js', 'unit lesson modal focus contract'],

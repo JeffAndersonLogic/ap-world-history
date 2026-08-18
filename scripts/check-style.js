@@ -45,7 +45,13 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const CONTENT_DIRS = [path.join(ROOT, 'scripts', 'lib', 'deep-reading-content')];
+const CONTENT_DIRS = [
+  path.join(ROOT, 'scripts', 'lib', 'deep-reading-content'),
+  // Exam prose is student-facing too, and it is a content module of the same
+  // shape, so the walk covers it for free. checkNoteLabels is a no-op here
+  // because an exam has no `empires` array.
+  path.join(ROOT, 'scripts', 'lib', 'exam-content')
+];
 
 /** British form -> American form, matched as a stem so that one entry covers
  *  centre/centres/centred and labour/labourer/labouring.

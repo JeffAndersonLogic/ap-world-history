@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="behistorical_foundations_v3_manifest" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/imscp_v1p1.xsd">
+  <metadata>
+    <schema>IMS Content</schema>
+    <schemaversion>1.1.3</schemaversion>
+  </metadata>
+  <organizations />
+  <resources>
+    <resource identifier="behistorical_foundations_v3_resource" type="imsqti_xmlv1p2" href="behistorical_foundations_v3.xml">
+      <file href="behistorical_foundations_v3.xml" />
+    </resource>
+  </resources>
+</manifest>
