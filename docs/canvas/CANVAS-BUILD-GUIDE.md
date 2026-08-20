@@ -47,6 +47,23 @@ renderer, or config file.
 | Assignment (Canvas **and** PowerSchool) | `FN - [Short Title]` | `F1 - Geo Shapes Civilization` |
 | Page | `APW Foundations - [Purpose]` | `APW Foundations - Learning Targets` |
 
+For Units 1 through 9 the day code is the AP topic number, which students already
+read on the lesson page and in the CED, so nothing has to be translated between
+the two:
+
+| Object | Format | Example |
+|---|---|---|
+| Calendar event title | `APW - U.T - [Topic Title]` | `APW - 2.4 - Trans-Saharan Trade Routes` |
+| Module | `APW Unit N - [Unit Name]` | `APW Unit 1 - The Global Tapestry` |
+| Text header inside module | `Topic U.T - [Topic Title]` | `Topic 2.4 - Trans-Saharan Trade Routes` |
+| Assignment (Canvas **and** PowerSchool) | `U.T - [Short Title]` | `2.4 - Trans-Saharan Trade` |
+
+A unit data file's `title` carries a colon and a second half written for the
+lesson page's hero, longer than a calendar chip shows. **The Canvas object name is
+the first half**, hand-specified in the generator's `UNITS` table the same way
+Foundations' six are, and checked there for the ampersand and the forward slash.
+`The Silk Roads: Exchange Across Afro-Eurasia` becomes `The Silk Roads`.
+
 Rules, all of which matter:
 
 - **Assignment names must be identical in Canvas and PowerSchool, character for
@@ -196,15 +213,26 @@ own, they disagree with each other, and nothing reports it. A student who reads
 the event and then works the lesson is being graded against a target they were
 never shown.
 
-`docs/canvas/foundations-calendar-events.md` holds the six paste-ready events.
-It is **generated**, not hand-maintained:
+Three files hold the paste-ready events, all **generated**, none hand-maintained:
+
+| File | Covers |
+|---|---|
+| `docs/canvas/foundations-calendar-events.md` | the six Foundations days |
+| `docs/canvas/unit-1-calendar-events.md` | Topics 1.1 to 1.7 |
+| `docs/canvas/unit-2-calendar-events.md` | Topics 2.1 to 2.7 |
 
 ```bash
 node tools/build-canvas-events.js          # rewrite from the data files
 node tools/build-canvas-events.js --check  # fail on drift, write nothing
 ```
 
-Do not hand-edit that file. Change a target in the data file, rerun the
+**A unit topic is not one data file.** The lesson shell loads a topic data file and
+then a renderer-config, and the config is what students see wherever the two
+disagree. The generator reads the scripts out of the shell and runs them in that
+order rather than naming them, so it resolves the same values the browser does,
+and a topic that later gains an addon file is picked up by existing.
+
+Do not hand-edit any of those three files. Change a target in the data file, rerun the
 generator, repaste the affected event.
 
 ### Why OVERVIEW is the exception
@@ -546,16 +574,26 @@ For each topic in Units 1 through 9:
 8. **Add the module text header and the indented assignment**, per Section 6.
 9. **Walk it end to end on a Chromebook** before publishing the module.
 
-Extending `tools/build-canvas-events.js` to cover a unit is the better move once
-a unit's topics are stable. It reads the data files directly, so a Learning Target
-edit becomes a rerun rather than a re-transcription, and `--check` will fail
-loudly when the repository and the pasted Canvas content have diverged.
+**Units 1 and 2 are already generated**, so for those fourteen topics steps 1, 2,
+3 and 5 are done: open `docs/canvas/unit-1-calendar-events.md` or
+`unit-2-calendar-events.md`, create the assignment named at the top of the topic's
+entry, and paste the block. Steps 4 and 6 through 9 are still Canvas work that
+nothing here can do for you.
+
+Extending `tools/build-canvas-events.js` to cover Units 3 through 9 is the better
+move once each unit's topics are stable. It reads the data files directly, so a
+Learning Target edit becomes a rerun rather than a re-transcription, and `--check`
+fails loudly when the repository and the pasted Canvas content have diverged. A new
+unit is an entry in the `UNITS` table plus one OVERVIEW and one short assignment
+title per topic; nothing else.
 
 ---
 
 ## Related documents
 
 - `docs/canvas/foundations-calendar-events.md`, the six paste-ready events, generated
+- `docs/canvas/unit-1-calendar-events.md`, Topics 1.1 to 1.7, generated
+- `docs/canvas/unit-2-calendar-events.md`, Topics 2.1 to 2.7, generated
 - `tools/build-canvas-events.js`, the generator
 - `docs/CANVAS-CAPTURE.md`, the capture contract, read before touching the gather panel
 - `docs/CANVAS-CHECK.md`, verifying a real Canvas round trip character by character

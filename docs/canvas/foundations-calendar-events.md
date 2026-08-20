@@ -313,8 +313,8 @@ All six links point at the live GitHub Pages build:
             </td>
             <td style="vertical-align: top;">
                 <ol>
-                    <li>I can explain how the Silk Roads, Indian Ocean trade system, and Trans-Saharan network each operated, their geographic basis, merchant communities, and key goods.</li>
-                    <li>I can identify specific non-goods that traveled through trade networks, disease, technology, crops, religious practices, and people, including the Battle of Talas (751 CE) as an example of technology transfer through conflict.</li>
+                    <li>I can explain how each of the four transregional routes operated, the Eurasian Silk Roads, the trans-Saharan caravan routes, the Indian Ocean sea lanes, and the Mediterranean sea lanes, including the climate and terrain each crossed, the goods it typically carried, and the communities who ran it.</li>
+                    <li>I can name the technologies that made long-distance transport possible, a pack-animal technology such as the camel saddle, yoke, or stirrup and a maritime technology such as the lateen sail or the dhow, and I can identify specific non-goods that traveled the networks: crops and irrigation methods, disease pathogens, religious traditions, and people.</li>
                     <li>I can write a complexity argument explaining how trade networks caused multiple simultaneous changes across different regions.</li>
                 </ol>
             </td>
@@ -325,8 +325,8 @@ All six links point at the live GitHub Pages build:
             </td>
             <td style="vertical-align: top;">
                 <ol>
-                    <li>I can name at least three specific port cities or oasis towns on Afro-Eurasian trade routes, explain their geographic function, and describe how the Indian Ocean monsoon system worked, which months, which directions, which sailing routes.</li>
-                    <li>I can give at least two specific examples of non-goods traveling through trade networks, with dates and locations.</li>
+                    <li>I can name all four required routes, give at least three specific port cities or oasis towns and explain each one's geographic function, and describe how the Indian Ocean monsoon worked, which months, which directions, which sailing routes.</li>
+                    <li>I can name one pack-animal technology and one maritime technology with a date, and I can give at least two specific examples of non-goods traveling the networks, with dates and locations, including one religious tradition that was changed by the journey.</li>
                     <li>I can write a complexity paragraph that identifies multiple effects of a single trade network and explains how they connected across regions.</li>
                 </ol>
             </td>
