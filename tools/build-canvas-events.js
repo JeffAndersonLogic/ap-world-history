@@ -21,6 +21,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const consolePage = require('./canvas-console-page.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'docs', 'canvas');
@@ -182,6 +183,12 @@ const warnings = [];
 function warn(msg) {
   warnings.push(msg);
 }
+
+// Every event the markdown describes, collected as it is built, so the paste
+// console renders from the same tables rather than from a second derivation.
+// A console that could disagree with the markdown would be the drift this whole
+// generator exists to refuse, one layer up.
+const VOLUMES_OUT = [];
 
 // The data files are plain assignments to `window.FOUNDATION_TOPIC`. Running one
 // in a bare vm context is exact, where a regex over the source would quietly
@@ -421,9 +428,26 @@ function build() {
   out.push('---');
   out.push('');
 
+  const collected = { id: 'foundations', short: 'Foundations', heading: 'Foundations, How World History Works', items: [] };
+  VOLUMES_OUT.push(collected);
+
   DAYS.forEach(day => {
     const topic = loadTopic(day.data);
     const eventTitle = `APW - ${day.code} - ${day.title}`;
+    const table = buildTable(day, topic);
+
+    collected.items.push({
+      vol: 'foundations',
+      code: day.code,
+      title: day.title,
+      eventTitle,
+      assignmentName: `${day.code} - ${assignmentShortTitle(day.code)}`,
+      table,
+      href: `${BASE_URL}/${day.shell}`,
+      linkText: `Foundations ${day.n} - ${day.title}`,
+      shellLabel: `foundations/${day.shell}`,
+      sources: `foundations/${day.data}`
+    });
 
     out.push(`## ${eventTitle}`);
     out.push('');
@@ -433,7 +457,7 @@ function build() {
     out.push(`**Lesson page:** \`foundations/${day.shell}\``);
     out.push('');
     out.push('```html');
-    out.push(buildTable(day, topic));
+    out.push(table);
     out.push('```');
     out.push('');
     out.push('---');
@@ -487,9 +511,32 @@ function buildUnit(unit) {
   out.push('---');
   out.push('');
 
+  const volId = `unit-${unit.unit}`;
+  const collected = {
+    id: volId,
+    short: `Unit ${unit.unit}`,
+    heading: `Unit ${unit.unit}, ${unit.name}`,
+    items: []
+  };
+  VOLUMES_OUT.push(collected);
+
   unit.topics.forEach(topic => {
     const { lesson, scripts } = loadUnitTopic(unit, topic);
     const eventTitle = `APW - ${topic.code} - ${topic.title}`;
+    const table = buildUnitTable(unit, topic, lesson);
+
+    collected.items.push({
+      vol: volId,
+      code: topic.code,
+      title: topic.title,
+      eventTitle,
+      assignmentName: `${topic.code} - ${assignmentShortTitle(topic.code)}`,
+      table,
+      href: `${SITE_URL}/${unit.dir}/${topic.shell}`,
+      linkText: `Topic ${topic.code} - ${topic.title}`,
+      shellLabel: `${unit.dir}/${topic.shell}`,
+      sources: scripts.map(sc => `assets/data/${sc}`).join(', ')
+    });
 
     out.push(`## ${eventTitle}`);
     out.push('');
@@ -499,7 +546,7 @@ function buildUnit(unit) {
     out.push(`**Lesson page:** \`${unit.dir}/${topic.shell}\``);
     out.push('');
     out.push('```html');
-    out.push(buildUnitTable(unit, topic, lesson));
+    out.push(table);
     out.push('```');
     out.push('');
     out.push('---');
@@ -569,6 +616,7 @@ function main() {
     UNITS.forEach(unit => {
       docs.push({ file: `unit-${unit.unit}-calendar-events.md`, text: buildUnit(unit) });
     });
+    docs.push({ file: 'canvas-events.html', text: consolePage.render(VOLUMES_OUT) });
   } catch (err) {
     console.error(`build-canvas-events: ${err.message}`);
     process.exit(1);
