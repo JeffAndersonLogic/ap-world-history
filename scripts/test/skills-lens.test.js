@@ -3,7 +3,7 @@
  * skills-lens.test.js
  *
  * Loads teacher/skills-lens.html in Chromium, feeds it real parser output, and
- * renders all eight panels, asserting each produces content and throws nothing.
+ * renders all nine panels, asserting each produces content and throws nothing.
  *
  * The Lens replaced a dashboard that showed frozen numbers from a dead
  * spreadsheet for weeks without anyone noticing, so "it loads" is not the bar.
@@ -55,7 +55,7 @@ const srv=http.createServer((q,r)=>{const rel=decodeURIComponent(q.url.split('?'
   await (await pg.$('input[type="file"]')).setInputFiles([path.join(SUBS,'responses.csv'), path.join(SUBS,'exceptions.csv')]);
   await pg.waitForTimeout(900);
 
-  const panels=['coverage','grid','module','skill','terms','confidence','read','export'];
+  const panels=['coverage','grid','module','skill','terms','confidence','read','target','export'];
   let bad=0;
   for (const p of panels) {
     const before = errs.length;
