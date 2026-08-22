@@ -807,6 +807,41 @@ one of the 77 topics can produce a complete context block.
 > teacher used. `validate.js` re-derives the inlined block and fails on drift, and
 > `scripts/test/canvas-zip.test.js` asserts both paths emit byte-identical CSV.
 
+> **Every drop merges, and there is one merge.** The Lens holds a cumulative
+> dataset across the year, not the last file dropped on it, because the Over time
+> panel is otherwise a chart of one evening. The zip, loose submission files,
+> `responses.csv`, `exceptions.csv` and a `responses.json` all fold through the
+> same code: a row is `student + topic + slot`, `copied_at` decides which version
+> of a row is current, an undated row never overwrites a dated one, and a
+> byte-identical row is a duplicate. The store is a **deterministic fold over
+> `S.sources`**, so removing one drop is a replay rather than an un-merge. Every
+> drop prints a receipt naming added, updated, duplicates and older rows;
+> "loaded successfully" is the message that could not answer whether the year's
+> data actually grew. The full contract is in `docs/CANVAS-CAPTURE.md` and the
+> browser assertions are in `scripts/test/skills-lens-zip.test.js`.
+>
+> **Panel 10, Over time, plots observable evidence and never mastery.** The
+> longitudinal dimension is the AP historical-thinking skill, because a skill
+> recurs for nine units and a learning target does not: a Song China target
+> followed by a gunpowder target is two constructs measured once each, and a line
+> between them would claim a trend the data cannot carry. Targets stay in Panel
+> 08. One skill, one measure, one series, one chart, chosen from completion rate,
+> median response length, median evidence-term hits and median confidence.
+> **Never add a combined score, a growth figure or a proficiency number**: word
+> count is not quality, and any arithmetic over these four would be read as a
+> grade within a week. The x axis is categorical topic sequence through
+> `topicSort()`, never calendar spacing; `copied_at` is context in the tooltip
+> and the table and never a position. Every point carries its n on the axis, and
+> a point under n=5 is drawn hollow and flagged rather than suppressed.
+>
+> **The evidence-term measure currently has nothing to plot, and that is a fact
+> about the lesson data.** No slot in the course carries both an AP skill tag and
+> authored evidence terms: the tags sit on the First & 10 questions and the Skill
+> Builder, the terms sit on the checkpoints and the Evidence Lab. The panel says
+> so and points at Panels 05 and 08 rather than inventing an association the
+> lesson author never made. To make it plot, name a skill on the checkpoints that
+> carry terms and re-run `node scripts/build-skills-map.js`.
+
 > **Before touching the Gather All My Work panel or its record footer, read
 > `docs/CANVAS-CAPTURE.md`.** Both renderers emit the footer and one parser reads
 > it, so a change to any one of the three breaks the other two. A wrong

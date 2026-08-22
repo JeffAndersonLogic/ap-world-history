@@ -68,9 +68,10 @@ function submission(topic, slots, opts) {
     // recorded value, so write the tampered text into the body only.
     `<p>${o.tamper === i ? slots[i].text + ' And then I changed it.' : slots[i].text}</p>`
   ].join('\n')).join('\n<hr>\n');
+  const copied = o.copied === null ? '' : (o.copied || '2026-08-07T14:38:32.878Z');
   const manifest = [
     '<p>--- BEHISTORICAL RECORD, do not edit ---</p>',
-    `<p>#BHV|v=1|topic=${topic}|copied=2026-08-07T14:38:32.878Z|items=${recs.length}|expected=${o.expected || recs.length}|sum=${sum}|#</p>`
+    `<p>#BHV|v=1|topic=${topic}|copied=${copied}|items=${recs.length}|expected=${o.expected || recs.length}|sum=${sum}|#</p>`
   ].concat(recs.map(r =>
     `<p>#BHR|i=${r.ord}|slot=${r.slot}|lab=${r.label}|w=12|c=60|ph=00000000|rh=${r.rh}|cf=${r.cf}|#</p>`
   )).join('\n');
@@ -92,6 +93,21 @@ const SLOTS = [
   { ord: 10, slot: 'checkpoint-two-response', label: 'Module 10, Checkpoint 2',
     prompt: 'How did Song commerce reach beyond China?',
     text: 'Porcelain and silk moved on the Grand Canal to coastal ports and from there into Indian Ocean networks reaching Southeast Asia and the Islamic world.', cf: 5 }
+];
+
+/* A second topic, for the merge tests below. Its first two slots are the ones
+   the skills map tags Causation and Continuity and Change, which is what gives
+   Panel 10 a real second point rather than a single reading. */
+const SLOTS_12 = [
+  { ord: 2, slot: 'first10-q1', label: 'Module 02, First &amp; 10, Question 1',
+    prompt: 'What caused Dar al-Islam to expand as fast as it did?',
+    text: 'Conquest opened the routes and the tax structure kept them open, so merchants and scholars moved along roads an army had cleared and a treasury had reason to maintain.', cf: 4 },
+  { ord: 2, slot: 'first10-q2', label: 'Module 02, First &amp; 10, Question 2',
+    prompt: 'What continued from the empires that came before?',
+    text: 'Persian administrative practice and Byzantine coinage both survived the conquest, because a new ruler who dismantles the tax rolls stops collecting taxes.', cf: 3 },
+  { ord: 6, slot: 'checkpoint-one-response', label: 'Module 06, Checkpoint 1',
+    prompt: 'How did scholarship travel?',
+    text: 'Paper from China met Greek philosophy in Baghdad, and the House of Wisdom translated what the caliphate could afford to have translated.', cf: 5 }
 ];
 
 // Four students: one clean, one who edited an answer, one who gathered short,
@@ -295,6 +311,288 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
   check('the AI export carries codes, never names',
     bundle.length > 50 && !/Anderson|Siobhan|Garcia|Zhang|Absent/i.test(bundle),
     (bundle.match(/Anderson|Siobhan|Garcia|Zhang|Absent/i) || ['clean, ' + bundle.length + ' chars'])[0]);
+
+  /* ── Merge on drop ──────────────────────────────────────────────────────────
+     A Lens that replaced its dataset on every drop could answer "how did last
+     night go" and nothing about a year, which is the whole premise of the Over
+     time panel. These are the assertions that keep a second drop additive: that
+     an older topic survives a newer one, that re-dropping the same file changes
+     nothing, that copied_at and not arrival order decides which version of an
+     answer is current, and that the teacher is told which of those happened
+     rather than being shown "loaded successfully".
+
+     Driven through the real page, on real drops. A unit test over the merge
+     function alone would pass just as happily with the page never calling it. */
+  console.log('\n  Merge on drop, the cumulative dataset\n');
+
+  const state = () => page.evaluate(() => ({
+    responses: S.merged ? S.merged.rows.length : 0,
+    exceptions: S.merged ? S.merged.exceptions.length : 0,
+    topics: S.topicsPresent.slice(),
+    sources: S.sources.length,
+    receipt: S.receipts.length ? JSON.parse(JSON.stringify(S.receipts[S.receipts.length - 1])) : null,
+    // Text is read back so an "updated" count cannot be believed on its own.
+    text: (S.merged ? S.merged.rows : []).reduce((acc, r) => {
+      acc[r.student_display + '|' + r.topic_id + '|' + r.slot_id] = r.response; return acc;
+    }, {}),
+    flags: (S.merged ? S.merged.exceptions : []).map(x => x.student_display + ':' + x.topic_id + ':' + x.reason)
+  }));
+
+  const zipOf = (name, files) => {
+    const dir = path.join(tmp, 'z-' + name);
+    fs.mkdirSync(dir, { recursive: true });
+    files.forEach(([n, t]) => fs.writeFileSync(path.join(dir, n), t, 'utf8'));
+    const out = path.join(tmp, name + '.zip');
+    execFileSync('zip', ['-q', '-r', out, '.'], { cwd: dir });
+    return out;
+  };
+  const drop = async (files) => {
+    const before = await page.evaluate(() => S.sources.length);
+    await page.setInputFiles('#filepick', files);
+    await page.waitForFunction(n => S.sources.length === n, before + 1, { timeout: 20000 });
+    await page.waitForTimeout(120);
+  };
+
+  const base = await state();
+  check('the first zip is one source holding the whole class',
+    base.sources === 1 && base.responses === 11 && base.topics.join(',') === '1.1',
+    base.responses + ' responses, topics ' + base.topics.join(','));
+
+  // 1 and 2. A later topic arrives. The earlier one must survive it.
+  const TOPIC12 = [
+    ['andersonjeff_88123_310640_text.html', submission('1.2', SLOTS_12, { copied: '2026-09-14T15:02:00.000Z' })],
+    ['garciamaria_88125_310641_text.html', submission('1.2', SLOTS_12, { copied: '2026-09-14T15:44:00.000Z' })],
+    ['odonnellsiobhan_88124_310642_text.html', submission('1.2', SLOTS_12, { copied: '2026-09-14T16:10:00.000Z' })]
+  ];
+  await drop([zipOf('topic12', TOPIC12)]);
+  const two = await state();
+  check('Topic 1.1 is still there after a Topic 1.2 drop',
+    two.topics.indexOf('1.1') !== -1, two.topics.join(', '));
+  check('and Topic 1.2 was added rather than replacing it',
+    two.topics.join(',') === '1.1,1.2' && two.responses === base.responses + 9,
+    two.responses + ' responses across ' + two.topics.join(', '));
+  check('the receipt calls all nine of them new',
+    two.receipt.added === 9 && two.receipt.updated === 0 && two.receipt.unchanged === 0,
+    JSON.stringify({ added: two.receipt.added, updated: two.receipt.updated, unchanged: two.receipt.unchanged }));
+
+  // 3. The same file again. Nothing may grow.
+  await drop([zipOf('topic12b', TOPIC12)]);
+  const dup = await state();
+  check('re-dropping the identical data does not grow the dataset',
+    dup.responses === two.responses, dup.responses + ' responses, was ' + two.responses);
+  check('and the receipt says so instead of claiming success',
+    dup.receipt.added === 0 && dup.receipt.unchanged === 9 && dup.receipt.updated === 0,
+    JSON.stringify({ added: dup.receipt.added, unchanged: dup.receipt.unchanged }));
+
+  // 4. A newer version of a submission already held. copied_at decides, and the
+  //    stale EDITED flag has to come off with it.
+  const KEY = 'odonnellsiobhan|1.1|checkpoint-one-response';
+  check('the edited answer is currently the tampered text, and is flagged',
+    /And then I changed it/.test(dup.text[KEY] || '') &&
+    dup.flags.indexOf('odonnellsiobhan:1.1:EDITED') !== -1,
+    dup.flags.filter(f => /odonnell/.test(f)).join(', ') || 'no flags');
+
+  await drop([zipOf('resub', [
+    ['odonnellsiobhan_88124_310777_text.html', submission('1.1', SLOTS, { copied: '2026-09-20T18:00:00.000Z' })]
+  ])]);
+  const newer = await state();
+  /* All three slots update, not only the one whose text changed. copied_at is
+     part of the record, so a re-paste at a new time is a new version of every
+     row in it even where the words came out the same, and the store has to hold
+     the timestamp the panels will later order by. Only a byte-identical row is
+     a duplicate. */
+  check('a newer copied_at replaces the older rows for that student and topic',
+    newer.receipt.updated === 3 && newer.receipt.unchanged === 0 && newer.receipt.added === 0,
+    JSON.stringify({ added: newer.receipt.added, updated: newer.receipt.updated, unchanged: newer.receipt.unchanged }));
+  check('the replacement is really in the data, not only in the count',
+    !/And then I changed it/.test(newer.text[KEY] || ''), (newer.text[KEY] || '').slice(-40));
+  check('the dataset did not grow, because it was the same three slots',
+    newer.responses === dup.responses, newer.responses + ' responses');
+  check('and the stale EDITED flag came off with the submission it belonged to',
+    newer.flags.indexOf('odonnellsiobhan:1.1:EDITED') === -1 && newer.receipt.excCleared === 1,
+    newer.flags.join(', ') || 'none left');
+
+  // 5. An older version, arriving after the newer one. It must lose.
+  await drop([zipOf('stale', [
+    ['odonnellsiobhan_88124_310111_text.html',
+      submission('1.1', SLOTS.map(s => Object.assign({}, s, { text: s.text + ' An earlier draft.' })),
+        { tamper: 1, copied: '2026-08-01T09:00:00.000Z' })]
+  ])]);
+  const older = await state();
+  check('an older copied_at does not overwrite the newer row',
+    older.receipt.olderIgnored === 3 && older.receipt.updated === 0,
+    JSON.stringify({ olderIgnored: older.receipt.olderIgnored, updated: older.receipt.updated }));
+  check('the newer text survived the stale drop',
+    !/An earlier draft/.test(older.text[KEY] || '') && older.responses === newer.responses,
+    (older.text[KEY] || '').slice(-40));
+  check('and the older submission could not re-flag the newer one',
+    older.flags.indexOf('odonnellsiobhan:1.1:EDITED') === -1 && older.receipt.excRefused === 1,
+    JSON.stringify({ excRefused: older.receipt.excRefused }));
+
+  // 6. The undated case, which is the one that silently corrupts a year.
+  await drop([zipOf('undated', [
+    ['andersonjeff_88123_310999_text.html',
+      submission('1.2', SLOTS_12.map(s => Object.assign({}, s, { text: s.text + ' Undated rewrite.' })),
+        { copied: null })]
+  ])]);
+  const undated = await state();
+  check('a row with no copied_at is refused rather than overwriting a dated row',
+    undated.receipt.undatedRefused === 3 && undated.receipt.updated === 0,
+    JSON.stringify({ undatedRefused: undated.receipt.undatedRefused, updated: undated.receipt.updated }));
+  check('so the dated text is still what the panels read',
+    !/Undated rewrite/.test(undated.text['andersonjeff|1.2|first10-q1'] || ''));
+
+  // 7. The receipt on screen, in the teacher's words.
+  const receiptText = (await page.textContent('#merge-receipt') || '').replace(/\s+/g, ' ');
+  check('the ingest receipt names added, updated, duplicates and older rows',
+    /added/.test(receiptText) && /updated/.test(receiptText) &&
+    /duplicate/.test(receiptText) && /older row/.test(receiptText),
+    receiptText.slice(0, 110));
+  check('and it says the undated rows were refused rather than applied',
+    /no copied_at/.test(receiptText) && /refused/.test(receiptText), receiptText.slice(0, 160));
+  check('the receipt reports the size of the cumulative set, not of this drop',
+    /Cumulative set now holds 20 responses across 2 topics/.test(receiptText),
+    (receiptText.match(/Cumulative set[^.]*\./) || ['not found'])[0]);
+
+  // 8. Save writes the cumulative set, not the last drop.
+  const [dl2] = await Promise.all([
+    page.waitForEvent('download', { timeout: 10000 }),
+    page.click('#save-csv')
+  ]);
+  const cumPath = path.join(tmp, 'cumulative.csv');
+  await dl2.saveAs(cumPath);
+  const cumulative = fs.readFileSync(cumPath, 'utf8');
+  const dataLines = CORE.toCsv(CORE.ROW_HEADERS, []).trim().length
+    ? cumulative.trim().split('\n').length - 1 : 0;
+  check('the saved CSV holds both topics, not just the most recent drop',
+    /,1\.1,/.test(cumulative) && /,1\.2,/.test(cumulative), 'topics 1.1 and 1.2');
+  check('it carries the accepted version of the replaced answer and not the rejected ones',
+    !/And then I changed it/.test(cumulative) && !/An earlier draft/.test(cumulative) &&
+    !/Undated rewrite/.test(cumulative));
+  check('and it still parses back to exactly the rows the page holds',
+    CORE.toCsv(CORE.ROW_HEADERS, await page.evaluate(() => S.merged.rows)) === cumulative &&
+    dataLines >= undated.responses,
+    cumulative.length + ' bytes');
+
+  /* Every door, one merge. The spec that mattered here was not "make the zip
+     additive", it was "do not grow four merge rules". So the CSV the page just
+     wrote is fed straight back to it, a JSON drop and a loose submission file
+     follow, and all three have to land under the same identity and the same
+     copied_at rule the zip did. */
+  console.log('\n  The other three doors merge under the same rule\n');
+
+  const cumulativeCsv = path.join(tmp, 'responses.csv');
+  fs.writeFileSync(cumulativeCsv, cumulative, 'utf8');
+  await drop([cumulativeCsv]);
+  const roundTrip = await state();
+  check('the page\'s own saved responses.csv, dropped back on, is entirely duplicates',
+    roundTrip.receipt.unchanged === undated.responses && roundTrip.receipt.added === 0 &&
+    roundTrip.receipt.updated === 0 && roundTrip.responses === undated.responses,
+    JSON.stringify({ unchanged: roundTrip.receipt.unchanged, added: roundTrip.receipt.added,
+                     updated: roundTrip.receipt.updated }));
+
+  const jsonPath = path.join(tmp, 'responses.json');
+  const jsonRow = Object.assign({}, (await page.evaluate(() =>
+    S.merged.rows.filter(r => r.topic_id === '1.2' && r.slot_id === 'first10-q1' &&
+      r.student_display === 'andersonjeff')[0])), {
+    response: 'A later rewrite of the causation answer, submitted through the JSON door.',
+    word_count: 12, copied_at: '2026-10-02T13:00:00.000Z'
+  });
+  fs.writeFileSync(jsonPath, JSON.stringify({ responses: [jsonRow] }), 'utf8');
+  await drop([jsonPath]);
+  const viaJson = await state();
+  check('a JSON drop updates the same row a zip would have',
+    viaJson.receipt.updated === 1 && viaJson.responses === roundTrip.responses &&
+    /through the JSON door/.test(viaJson.text['andersonjeff|1.2|first10-q1'] || ''),
+    JSON.stringify({ updated: viaJson.receipt.updated, rows: viaJson.responses }));
+  check('and a responses-only drop leaves exception state alone rather than clearing it',
+    viaJson.exceptions === roundTrip.exceptions,
+    viaJson.exceptions + ' exceptions, was ' + roundTrip.exceptions);
+
+  const looseThird = path.join(tmp, 'garciamaria_88125_311200_text.html');
+  fs.writeFileSync(looseThird, submission('1.3', SLOTS_12, { copied: '2026-10-09T14:00:00.000Z' }), 'utf8');
+  await drop([looseThird]);
+  const viaLoose = await state();
+  check('a loose submission file adds a third topic to the same cumulative set',
+    viaLoose.topics.join(',') === '1.1,1.2,1.3' && viaLoose.responses === viaJson.responses + 3,
+    viaLoose.responses + ' responses across ' + viaLoose.topics.join(', '));
+
+  // 9. Panel 10 on merged, multi-topic data. This is the thing merging is for.
+  await page.click('#tab-trend');
+  await page.waitForTimeout(200);
+  const trend = await page.evaluate(() => {
+    const el = document.getElementById('panel-trend');
+    return {
+      skill: document.getElementById('t-skill') ? document.getElementById('t-skill').value : '',
+      points: el.querySelectorAll('circle.pt').length,
+      segments: el.querySelectorAll('path.seg').length,
+      axis: Array.from(el.querySelectorAll('svg text')).map(n => n.textContent),
+      rows: Array.from(el.querySelectorAll('table.data tbody tr')).map(tr => tr.children[0].textContent.trim()),
+      text: el.innerText
+    };
+  });
+  check('Over time plots a real sequence once several topics are merged',
+    trend.points >= 3 && trend.rows.join(',') === '1.1,1.2,1.3',
+    trend.points + ' points on ' + trend.rows.join(', ') + ' for ' + trend.skill);
+  check('the topics sit in curriculum order on the axis, with their sample sizes',
+    trend.axis.indexOf('1.1') < trend.axis.indexOf('1.2') &&
+    trend.axis.indexOf('1.2') < trend.axis.indexOf('1.3') &&
+    trend.axis.some(t => /^n=\d+/.test(t)),
+    trend.axis.filter(t => /^(n=|\d+\.\d+$)/.test(t)).join(' '));
+  check('and the segments join them as straight runs, one per unbroken stretch',
+    trend.segments >= 1, trend.segments + ' segment path(s)');
+  check('and it still refuses to call any of it mastery',
+    /does not score mastery/i.test(trend.text));
+
+  /* Requirement G, driven rather than inspected. Narrowing to one student makes
+     every sample genuinely small, and the rule is that a thin point stays on the
+     chart and is marked, because hiding it would make the line look steadier
+     than the evidence. */
+  await page.fill('#f-student', 'siobhan');
+  await page.waitForTimeout(400);
+  const thin = await page.evaluate(() => {
+    const el = document.getElementById('panel-trend');
+    return {
+      plotted: el.querySelectorAll('circle.pt').length,
+      flagged: el.querySelectorAll('circle.pt.small').length,
+      axis: Array.from(el.querySelectorAll('svg text')).map(n => n.textContent),
+      text: el.innerText.replace(/\s+/g, ' ')
+    };
+  });
+  check('a small sample is still plotted, never silently suppressed',
+    thin.plotted >= 2 && thin.plotted === thin.flagged,
+    thin.plotted + ' plotted, ' + thin.flagged + ' marked small');
+  check('and it is visibly flagged on the axis, not only in a tooltip',
+    thin.axis.filter(t => /^n=\d+ !$/.test(t)).length === thin.flagged,
+    thin.axis.filter(t => /^n=/.test(t)).join(' '));
+  check('the small-n rule is written down where the teacher reads it',
+    /under n=5/.test(thin.text) && /1\.1 \(n=1\)/.test(thin.text),
+    (thin.text.match(/\d+ points? (is|are) under n=5:[^.]*\./) || ['not stated'])[0]);
+  await page.fill('#f-student', '');
+  await page.waitForTimeout(400);
+
+  console.log('\n  Every panel renders on merged, multi-topic data\n');
+  for (const id of tabs) {
+    await page.click('#' + id);
+    await page.waitForTimeout(60);
+    const n = await page.evaluate(() => {
+      const p = document.querySelector('[role="tabpanel"]:not([hidden])');
+      return p ? p.innerText.trim().length : 0;
+    });
+    check('merged panel renders: ' + id.replace(/^tab-/, ''), n > 120, n + ' characters');
+  }
+
+  check('nothing left the page during any of the merging', offPage.length === 0,
+    offPage.join(', ') || 'none');
+  check('the CSP is still in force after all of it',
+    await page.evaluate(() => {
+      const m = document.querySelector('meta[http-equiv="Content-Security-Policy"]');
+      return Boolean(m && /default-src 'none'/.test(m.content) && /connect-src 'none'/.test(m.content));
+    }));
+  check('no CSP violation beyond the page\'s own self-test', cspViolations.length === 0,
+    cspViolations[0] ? cspViolations[0].slice(0, 80) : 'none');
+  check('no page errors through the whole merge sequence', errors.length === 0,
+    errors.join(' | ') || 'none');
 
   console.log('\n  The real Canvas download, by both gestures\n');
 

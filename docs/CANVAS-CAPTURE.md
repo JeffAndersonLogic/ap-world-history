@@ -154,6 +154,55 @@ The Terminal step existed only because nothing had read a zip in the browser
 yet. Asking a teacher to type a folder path in the five minutes before a bell is
 how a pipeline goes unused.
 
+### Every drop merges
+
+A drop adds to what the page already holds. It does not replace it. Drop Topic
+1.2 in September and Topic 1.3 in October and the Lens holds both, which is what
+lets the Over time panel plot a course rather than an evening. Every door goes
+through the same merge: the zip, loose submission files, `responses.csv`,
+`exceptions.csv` and a `responses.json`. There is one implementation, because
+four ingest paths with four merge rules would give four answers to whether a
+student's work got counted.
+
+**A row is a student, a topic and a slot.** The student is `canvas_user_id`
+where Canvas wrote one and the squashed display name where it did not, and that
+fallback is a real limitation rather than a solved problem: two students who
+squash to the same string are one student to this code. Where some drop carried
+both a name and an id for the same person, that pairing is Canvas's own and the
+name-only rows are folded onto the id; two ids under one squashed name is
+genuinely ambiguous, so those stay apart and the page says so. Nothing here
+invents a permanent identifier. A legacy row with no `slot_id` falls back to its
+module ordinal and label, because nine such rows keyed on one empty string would
+collapse a whole submission into a single record.
+
+**`copied_at` decides which version wins**, not the order the files were
+dropped. A newer paste replaces an older one; an older paste arriving late does
+not overwrite the newer row; a byte-identical row is a duplicate and stays one
+row. A row with no `copied_at` never overwrites a dated one. When neither side
+can be dated, the later drop wins, which is a convention rather than evidence,
+so it is counted separately and reported as the weaker rule.
+
+**Exceptions move with the submission they describe.** An `EDITED` flag belongs
+to a paste, not to a slot, so when a newer submission for the same student and
+topic wins, its exception set replaces the old one outright, including replacing
+a flag with nothing when the new paste is clean. A drop that carries only
+responses is not in a position to say anything about exceptions and leaves them
+alone rather than clearing them.
+
+**Every drop prints a receipt**, because "loaded successfully" cannot answer the
+only question a second drop raises:
+
+```
+Merge: 184 added · 12 updated · 176 duplicates ignored · 3 older rows ignored.
+Cumulative set now holds 1,204 responses across 14 topics.
+```
+
+**Save responses.csv writes the cumulative set**, in the same `ROW_HEADERS`
+order and the same RFC4180 quoting the CLI uses, so it round-trips: dropping the
+page's own saved CSV back onto the page reports every row as a duplicate.
+`scripts/test/skills-lens-zip.test.js` asserts exactly that, along with the
+newer-wins, older-loses and undated-refused rules, in a real browser.
+
 ### The command line, for a folder or a script
 
 ```bash

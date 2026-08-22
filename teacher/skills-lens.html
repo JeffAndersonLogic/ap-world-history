@@ -137,6 +137,16 @@ body{
 .btn.small{padding:6px 10px;font-size:10px}
 .btn:disabled{opacity:.45;cursor:not-allowed}
 
+/* Ingest receipt. The teacher has to be able to see whether a second drop
+   actually grew the cumulative set, so the counts get their own line under the
+   read message rather than folded into it. */
+.receipt{
+  font-family:var(--ui);font-size:12.5px;color:var(--text-secondary);margin-top:6px;
+  border-left:3px solid var(--series-1);padding:4px 0 4px 10px;line-height:1.55;max-width:92ch;
+}
+.receipt b{color:var(--text-primary);font-weight:800;font-variant-numeric:tabular-nums}
+.receipt .weak{color:var(--status-warning)}
+
 /* ── Filters ────────────────────────────────────────────────────────────── */
 .filterbar{
   position:sticky;top:0;z-index:20;background:rgba(26,28,29,.96);
@@ -246,6 +256,15 @@ table.data tbody tr:hover{background:rgba(201,164,106,.06)}
 }
 .tip[hidden]{display:none}
 .tip b{display:block;color:var(--antique-gold);font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px}
+
+/* Over time. The controls sit inside the panel because they choose what the
+   chart plots. The student scope deliberately does NOT live here: it is the one
+   in the filter bar, so there is only ever one student filter on the page. */
+.trend-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:10px 14px;margin-top:16px;align-items:end}
+.trend-controls .field label{margin-bottom:5px}
+.chart .pt{fill:var(--series-1)}
+.chart .pt.small{fill:var(--surface-panel);stroke:var(--status-warning);stroke-width:2.5}
+.chart .seg{stroke:var(--series-1);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
 
 /* ── Student grid ───────────────────────────────────────────────────────── */
 .gridwrap{margin-top:14px;overflow:auto;max-height:70vh;border:1px solid var(--gunmetal-gray);border-radius:8px;background:var(--surface-inset)}
@@ -398,6 +417,7 @@ footer.foot{max-width:1240px;margin:0 auto;padding:24px 20px 50px;font-family:va
           does a <code>responses.json</code> from <code>--json</code>.</p>
         <div class="file-chips" id="file-chips"></div>
         <p id="zip-progress" class="sub" role="status" aria-live="polite" hidden></p>
+        <p id="merge-receipt" class="receipt" role="status" aria-live="polite" hidden></p>
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
         <label class="btn" for="filepick">Choose files</label>
@@ -436,6 +456,7 @@ footer.foot{max-width:1240px;margin:0 auto;padding:24px 20px 50px;font-family:va
   <button class="tab" role="tab" id="tab-read"       aria-controls="panel-read"       aria-selected="false" tabindex="-1"><span class="tab-num">07</span>Read mode</button>
   <button class="tab" role="tab" id="tab-target"     aria-controls="panel-target"     aria-selected="false" tabindex="-1"><span class="tab-num">08</span>Learning targets</button>
   <button class="tab" role="tab" id="tab-export"     aria-controls="panel-export"     aria-selected="false" tabindex="-1"><span class="tab-num">09</span>Export</button>
+  <button class="tab" role="tab" id="tab-trend"      aria-controls="panel-trend"      aria-selected="false" tabindex="-1"><span class="tab-num">10</span>Over time</button>
 </div>
 
 <main>
@@ -448,6 +469,7 @@ footer.foot{max-width:1240px;margin:0 auto;padding:24px 20px 50px;font-family:va
   <section class="panel" id="panel-read"       role="tabpanel" aria-labelledby="tab-read"       tabindex="0" hidden></section>
   <section class="panel" id="panel-target"     role="tabpanel" aria-labelledby="tab-target"     tabindex="0" hidden></section>
   <section class="panel" id="panel-export"     role="tabpanel" aria-labelledby="tab-export"     tabindex="0" hidden></section>
+  <section class="panel" id="panel-trend"      role="tabpanel" aria-labelledby="tab-trend"      tabindex="0" hidden></section>
 </main>
 
 <footer class="foot">
@@ -16529,8 +16551,10 @@ const S = {
   responses: [],
   exceptions: [],
   roster: null,            // [{name, id, period, squash}]
-  files: {},               // kind -> {name, rows, note}
-  zipTable: null,          // {rows, exceptions, stats} when a Canvas zip was read here
+  files: {},               // kind -> {name, rows, note}, roster only now
+  sources: [],             // every drop, in the order it landed. See section 5b.
+  merged: null,            // the cumulative fold over S.sources
+  receipts: [],            // one per source, what merging it actually did
   problems: [],            // ingest complaints worth surfacing
   students: new Map(),     // key -> {key, code, display, period, fromRoster, submitted}
   byKey: new Map(),        // `${studentKey}|${topic}|${slot}` -> row
@@ -16538,8 +16562,17 @@ const S = {
   slotsPresent: [],
   periodsPresent: [],
   filters: { period: '', topic: '', slot: '', q: '', thresh: 40 },
+  trend: { skill: '', measure: 'completion' },
   active: 'coverage'
 };
+
+let sourceSeq = 0;   // drop counter, so a source can be named and removed
+const hasData = () => Boolean(S.merged && (S.merged.rows.length || S.merged.exceptions.length));
+const hasResponses = () => Boolean(S.merged && S.merged.rows.length);
+/* Zero exceptions and no exception data at all look identical on a dashboard
+   and mean opposite things, so the question is whether any drop was in a
+   position to speak about exceptions, not whether any arrived. */
+const hasExceptionSource = () => S.sources.some(src => src.declaresExceptions);
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s == null ? '' : s)
@@ -16747,7 +16780,24 @@ const pct = (a, b) => (b ? Math.round((a / b) * 100) : null);
 const ofStr = (a, b) => a + ' of ' + b;
 
 /* ==========================================================================
-   5. INGEST
+   5. INGEST AND MERGE
+
+   Every drop MERGES into a cumulative dataset. It used to replace it, which was
+   fine while the Lens answered "how did last night's topic go" and useless the
+   moment it had to answer anything about a year. A teacher who drops Topic 1.2
+   in September and Topic 1.3 in October must end up holding both, and dropping
+   the same zip twice must not double anything.
+
+   There is exactly ONE merge implementation and every door goes through it: the
+   Canvas zip, loose submission files, responses.csv, exceptions.csv, and a
+   responses.json. Four ingest paths with four merge rules would mean four
+   answers to "did this student's work get counted", which is the same class of
+   failure as two parsers.
+
+   The store is a deterministic fold over S.sources, which is the ordered list
+   of drops with their raw rows kept. Nothing is merged in place, so removing a
+   source is a replay rather than an un-merge, and replaying the same sources
+   always lands on the same dataset.
    ========================================================================== */
 function detectKind(header, name) {
   const has = (h) => header.indexOf(h) !== -1;
@@ -16760,6 +16810,275 @@ function detectKind(header, name) {
   return null;
 }
 
+/* ── Identity ─────────────────────────────────────────────────────────────
+   The strongest stable identity Canvas actually gives, and no invented one.
+
+   canvas_user_id first. It is the only identifier in this pipeline that a
+   student cannot change by getting married or by Canvas re-squashing their
+   name, and docs/CANVAS-CAPTURE.md records that it is also the roster's first
+   join key.
+
+   When it is absent the squashed display name is all there is, and that is a
+   real limitation rather than a solved problem: two students who squash to the
+   same string are one person to this code, and nothing here can tell. It is
+   said out loud in the receipt rather than papered over with a synthetic id,
+   because a fabricated permanent identifier would look exactly like a real one
+   in every later drop.
+
+   The one repair that is not an invention: when some drop carried both a name
+   and an id for a student, that pairing is Canvas's own assertion, so a
+   name-only row for the same squash is folded onto the id. Only when the squash
+   maps to exactly one id. Two ids under one squashed name is genuinely
+   ambiguous and is left split, and counted. */
+function studentIdentity(row, alias) {
+  const id = String(row.canvas_user_id || '').trim();
+  if (id) return 'id:' + id;
+  const sq = squashName(String(row.student_display || ''));
+  if (!sq) return 'anon:';
+  const known = alias.get(sq);
+  return known ? 'id:' + known : 'name:' + sq;
+}
+
+/* A legacy submission has no record footer, so parseWithoutManifest writes
+   slot_id="". Nine such rows share one empty slot id, and keying on it directly
+   would collapse a whole submission into a single record: the exact silent row
+   loss this pipeline exists to stop. The module ordinal and label survive that
+   parse and are stable across drops, so they are the fallback. A row carrying
+   none of the three cannot be identified at all and is told so rather than
+   merged on a guess. */
+function slotIdentity(row) {
+  const slot = String(row.slot_id || '').trim();
+  if (slot) return slot;
+  const ord = String(row.module_ord || '').trim();
+  const label = String(row.module_label || '').trim().toLowerCase().replace(/\s+/g, ' ');
+  if (ord || label) return 'raw:' + ord + '#' + label;
+  return null;
+}
+
+function sameValues(a, b, headers) {
+  for (const h of headers) {
+    if (String(a[h] == null ? '' : a[h]) !== String(b[h] == null ? '' : b[h])) return false;
+  }
+  return true;
+}
+function sameExceptionSet(a, b) {
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i++) if (!sameValues(a[i], b[i], CANVAS.EXCEPTION_HEADERS)) return false;
+  return true;
+}
+
+/* ── The conflict rule ────────────────────────────────────────────────────
+   One function, used for responses and for exception sets alike, so the two can
+   never drift into disagreeing about which submission is the current one.
+
+   copied_at decides. It is written by the Gather panel at the moment the
+   student copied their work, so it orders two versions of the same answer even
+   when both were pasted into Canvas on the same evening.
+
+   The undated cases are where a merge quietly corrupts a year of data if it is
+   careless, so they are named rather than defaulted:
+     - a dated row always beats an undated one, never the other way round,
+       because "we know when this was written" outranks "we do not";
+     - two undated rows, or two rows with the same timestamp and different
+       content, cannot be ordered by evidence at all. The later drop wins,
+       which is a convention and not a fact, so it is counted separately and
+       reported in the receipt as the weaker rule. */
+function resolveConflict(incoming, existing) {
+  const a = Date.parse(String(incoming == null ? '' : incoming));
+  const b = Date.parse(String(existing == null ? '' : existing));
+  const aOk = Number.isFinite(a), bOk = Number.isFinite(b);
+  if (aOk && bOk) {
+    if (a > b) return 'newer';
+    if (a < b) return 'older';
+    return 'weak';                 // same instant, different content
+  }
+  if (aOk && !bOk) return 'dated-over-undated';
+  if (!aOk && bOk) return 'undated-refused';
+  return 'weak';
+}
+
+function newReceipt(label) {
+  return { label: label, added: 0, updated: 0, unchanged: 0, olderIgnored: 0,
+           datedOverUndated: 0, undatedRefused: 0, weakResolved: 0, unidentified: 0,
+           excAdded: 0, excReplaced: 0, excCleared: 0, excRefused: 0 };
+}
+
+/* The fold. Rebuilt from scratch on every change, because a store that can only
+   be added to cannot answer "remove that drop, I picked the wrong file". */
+function mergeAll() {
+  /* Pre-pass, over every source at once so the answer does not depend on which
+     drop landed first. */
+  const idsBySquash = new Map();
+  S.sources.forEach(src => src.responses.concat(src.exceptions).forEach(r => {
+    const id = String(r.canvas_user_id || '').trim();
+    if (!id) return;
+    const sq = squashName(String(r.student_display || ''));
+    if (!sq) return;
+    if (!idsBySquash.has(sq)) idsBySquash.set(sq, new Set());
+    idsBySquash.get(sq).add(id);
+  }));
+  const alias = new Map();
+  const ambiguous = [];
+  idsBySquash.forEach((ids, sq) => {
+    if (ids.size === 1) alias.set(sq, Array.from(ids)[0]);
+    else ambiguous.push(sq + ' (' + Array.from(ids).join(', ') + ')');
+  });
+
+  const rows = new Map();          // identity -> {row, src}
+  const exc = new Map();           // submission -> {rows, date, src}
+  const receipts = [];
+  let nameOnly = 0;
+
+  S.sources.forEach((src, si) => {
+    const rc = newReceipt(src.label);
+    const counters = new Map();    // student|topic -> running n for unidentifiable rows
+    const subDate = new Map();     // student|topic -> newest copied_at in THIS source
+    const subSeen = new Set();     // every submission this source carries
+
+    src.responses.forEach(row => {
+      const who = studentIdentity(row, alias);
+      if (who.indexOf('name:') === 0) nameOnly++;
+      const topic = String(row.topic_id || '').trim();
+      const sub = who + '|' + topic;
+      subSeen.add(sub);
+      const when = Date.parse(String(row.copied_at || ''));
+      if (Number.isFinite(when) && (!subDate.has(sub) || when > subDate.get(sub))) subDate.set(sub, when);
+
+      let slot = slotIdentity(row);
+      if (slot === null) {
+        const n = (counters.get(sub) || 0) + 1;
+        counters.set(sub, n);
+        slot = 'noid:' + n;
+        rc.unidentified++;
+      }
+      const key = sub + '|' + slot;
+      const prev = rows.get(key);
+      if (!prev) { rows.set(key, { row: row, src: si }); rc.added++; return; }
+      if (sameValues(prev.row, row, CANVAS.ROW_HEADERS)) { rc.unchanged++; return; }
+
+      const verdict = resolveConflict(row.copied_at, prev.row.copied_at);
+      if (verdict === 'older') { rc.olderIgnored++; return; }
+      if (verdict === 'undated-refused') { rc.undatedRefused++; return; }
+      /* Map.set on a key that already exists keeps its original position, which
+         is what makes a re-drop of the same zip round-trip byte for byte
+         through Save responses.csv. */
+      rows.set(key, { row: row, src: si });
+      rc.updated++;
+      if (verdict === 'dated-over-undated') rc.datedOverUndated++;
+      if (verdict === 'weak') rc.weakResolved++;
+    });
+
+    /* ── Exceptions ────────────────────────────────────────────────────────
+       An exception is a fact about a whole submission, not about one slot, so
+       the unit here is the (student, topic) submission and its exception set
+       moves as one. That is what keeps a stale EDITED flag off a student's
+       replacement paste: when a newer submission for the same pair wins, its
+       exception set replaces the old one outright, including replacing a
+       non-empty set with an empty one when the new paste is clean.
+
+       A source only speaks for a pair when it actually knows: a Canvas zip, a
+       set of loose submissions, or a drop that included an exceptions file has
+       parsed the submission and its silence about a pair means clean. A drop of
+       responses.csv on its own has not, so it leaves exception state alone
+       rather than clearing it. Deleting an exception on the strength of a file
+       that was never asked about exceptions is exactly the silent overwrite
+       this section is here to prevent. */
+    if (src.declaresExceptions) {
+      const bySub = new Map();
+      src.exceptions.forEach(x => {
+        const who = studentIdentity(x, alias);
+        const sub = who + '|' + String(x.topic_id || '').trim();
+        subSeen.add(sub);
+        if (!bySub.has(sub)) bySub.set(sub, []);
+        bySub.get(sub).push(x);
+      });
+      const order = Array.from(bySub.keys()).concat(Array.from(subSeen).filter(k => !bySub.has(k)));
+      order.forEach(sub => {
+        const incoming = bySub.get(sub) || [];
+        const when = subDate.has(sub) ? subDate.get(sub) : NaN;
+        const prev = exc.get(sub);
+        if (!prev) {
+          exc.set(sub, { rows: incoming, date: when, src: si });
+          rc.excAdded += incoming.length;
+          return;
+        }
+        if (sameExceptionSet(prev.rows, incoming)) return;
+        const verdict = resolveConflict(
+          Number.isFinite(when) ? new Date(when).toISOString() : '',
+          Number.isFinite(prev.date) ? new Date(prev.date).toISOString() : '');
+        if (verdict === 'older' || verdict === 'undated-refused') { rc.excRefused++; return; }
+        const cleared = prev.rows.length > 0 && incoming.length === 0;
+        exc.set(sub, { rows: incoming, date: Number.isFinite(when) ? when : prev.date, src: si });
+        if (cleared) rc.excCleared++; else rc.excReplaced++;
+        if (verdict === 'weak') rc.weakResolved++;
+      });
+    }
+
+    receipts.push(rc);
+  });
+
+  const outRows = [];
+  rows.forEach(v => outRows.push(v.row));
+  const outExc = [];
+  exc.forEach(v => v.rows.forEach(x => outExc.push(x)));
+
+  S.merged = { rows: outRows, exceptions: outExc, alias: alias, nameOnly: nameOnly, ambiguous: ambiguous };
+  S.receipts = receipts;
+
+  return receipts;
+}
+
+/* What the merge did, in the teacher's terms. "Loaded successfully" is the
+   message this replaces, and it is the one message that cannot answer the only
+   question a second drop raises: did the cumulative set actually grow. */
+function receiptText(rc) {
+  const bits = [
+    '<b>' + rc.added + '</b> added',
+    '<b>' + rc.updated + '</b> updated',
+    '<b>' + rc.unchanged + '</b> duplicate' + (rc.unchanged === 1 ? '' : 's') + ' ignored',
+    '<b>' + rc.olderIgnored + '</b> older row' + (rc.olderIgnored === 1 ? '' : 's') + ' ignored'
+  ];
+  const tail = [];
+  if (rc.datedOverUndated) tail.push(rc.datedOverUndated + ' of the updates replaced a row that carried no copied_at.');
+  if (rc.undatedRefused) tail.push('<span class="weak">' + rc.undatedRefused + ' incoming row' +
+    (rc.undatedRefused === 1 ? ' had' : 's had') + ' no copied_at and ' +
+    (rc.undatedRefused === 1 ? 'was' : 'were') + ' refused rather than overwriting a dated row.</span>');
+  if (rc.weakResolved) tail.push('<span class="weak">' + rc.weakResolved + ' conflict' +
+    (rc.weakResolved === 1 ? '' : 's') + ' could not be ordered by copied_at, so the later drop won. ' +
+    'That is a convention, not evidence.</span>');
+  if (rc.unidentified) tail.push(rc.unidentified + ' row' + (rc.unidentified === 1 ? '' : 's') +
+    ' carried no slot id, module ordinal or module label, so each was kept as its own row rather than collapsed onto one key.');
+  const e = [];
+  if (rc.excAdded) e.push(rc.excAdded + ' added');
+  if (rc.excReplaced) e.push(rc.excReplaced + ' submission' + (rc.excReplaced === 1 ? '' : 's') + ' re-flagged');
+  if (rc.excCleared) e.push(rc.excCleared + ' stale set' + (rc.excCleared === 1 ? '' : 's') + ' cleared by a newer clean submission');
+  if (rc.excRefused) e.push(rc.excRefused + ' left alone as older');
+  if (e.length) tail.push('Exceptions: ' + e.join(', ') + '.');
+  return 'Merge: ' + bits.join(' &middot; ') + '.' + (tail.length ? ' ' + tail.join(' ') : '');
+}
+
+function showReceipt() {
+  const el = $('merge-receipt');
+  const rc = S.receipts.length ? S.receipts[S.receipts.length - 1] : null;
+  if (!rc) { el.hidden = true; el.innerHTML = ''; return; }
+  const total = S.merged ? S.merged.rows.length : 0;
+  el.hidden = false;
+  el.innerHTML = receiptText(rc) + ' Cumulative set now holds <b>' + total + '</b> response' +
+    (total === 1 ? '' : 's') + ' across <b>' + S.topicsPresent.length + '</b> topic' +
+    (S.topicsPresent.length === 1 ? '' : 's') + '.' +
+    (S.merged && S.merged.nameOnly
+      ? ' <span class="weak">' + S.merged.nameOnly + ' row' + (S.merged.nameOnly === 1 ? '' : 's') +
+        ' had no canvas_user_id, so those are matched on the squashed name alone. Two students who squash ' +
+        'to the same string would be one student here.</span>'
+      : '') +
+    (S.merged && S.merged.ambiguous.length
+      ? ' <span class="weak">' + S.merged.ambiguous.length + ' squashed name' +
+        (S.merged.ambiguous.length === 1 ? '' : 's') + ' cover more than one Canvas user id (' +
+        esc(S.merged.ambiguous.join('; ')) + '). Those rows were kept apart rather than merged, because ' +
+        'deciding which student is which is not something this page is allowed to guess at.</span>'
+      : '');
+}
+
 /* ── The Canvas zip ───────────────────────────────────────────────────────────
    The teacher drops what Canvas gave them and the parsing happens here, in the
    tab, using the same core the CLI uses. The Terminal step existed only because
@@ -16769,7 +17088,7 @@ function detectKind(header, name) {
    Nothing leaves the page. The CSP on this file is `default-src 'none'` with
    `connect-src 'none'`, so it is not that the page chooses not to upload the
    student work, it is that it structurally cannot. */
-async function ingestZip(file) {
+async function ingestZip(file, src) {
   const progress = $('zip-progress');
   const say = (msg) => { progress.hidden = false; progress.textContent = msg; };
   say('Reading ' + file.name + '...');
@@ -16813,12 +17132,8 @@ async function ingestZip(file) {
     return;
   }
 
-  const roster = rosterLookup();
-  const table = CANVAS.buildTable(result.files, roster);
-
-  S.files.responses = { name: file.name, rows: table.rows, header: CANVAS.ROW_HEADERS.slice(), ragged: 0 };
-  S.files.exceptions = { name: file.name, rows: table.exceptions, header: CANVAS.EXCEPTION_HEADERS.slice(), ragged: 0 };
-  S.zipTable = table;
+  const table = CANVAS.buildTable(result.files, rosterLookup());
+  addToSource(src, file.name, table.rows, table.exceptions, true);
 
   /* Skipped entries are surfaced, never swallowed. One unreadable file is one
      student whose work is missing, and a count that quietly shrinks is the
@@ -16828,11 +17143,23 @@ async function ingestZip(file) {
       '). That student is missing from every count below.');
   });
 
-  const st = table.stats;
-  say('Read ' + st.files + ' submission' + (st.files === 1 ? '' : 's') + ', ' +
+  say(readMessage(table.stats));
+}
+
+function readMessage(st) {
+  return 'Read ' + st.files + ' submission' + (st.files === 1 ? '' : 's') + ', ' +
     st.responses + ' responses, ' + st.clean + ' of ' + st.files + ' clean.' +
-    (st.exceptions ? ' ' + st.exceptions + ' exception' + (st.exceptions === 1 ? '' : 's') + ', see below.' : ''));
-  $('save-csv').hidden = false;
+    (st.exceptions ? ' ' + st.exceptions + ' exception' + (st.exceptions === 1 ? '' : 's') + ', see below.' : '');
+}
+
+/* One place where a drop's rows are accumulated, so every door contributes to a
+   source in the same shape and the fold above does not have to know which door
+   it came through. */
+function addToSource(src, label, responses, exceptions, declaresExceptions) {
+  if (label && src.labels.indexOf(label) === -1) src.labels.push(label);
+  (responses || []).forEach(r => src.responses.push(r));
+  (exceptions || []).forEach(x => src.exceptions.push(x));
+  if (declaresExceptions) src.declaresExceptions = true;
 }
 
 /* The roster is a plain CSV and may arrive in the same drop as the zip, so this
@@ -16861,34 +17188,28 @@ function rosterLookup() {
    followed by nothing, because a Canvas submission has no columns. The parser
    could always read these files perfectly; the drop handler simply never offered
    them to it. */
-function ingestSubmissions(files) {
+function ingestSubmissions(files, src) {
   const table = CANVAS.buildTable(files, rosterLookup());
   if (!table.rows.length) {
     S.problems.push('Read ' + files.length + ' submission file' + (files.length === 1 ? '' : 's') +
       ' but found no responses in ' + (files.length === 1 ? 'it' : 'them') + '.');
     return;
   }
-  S.files.responses = {
-    name: files.length === 1 ? CANVAS.baseName(files[0].name) : files.length + ' submission files',
-    rows: table.rows, header: CANVAS.ROW_HEADERS.slice(), ragged: 0
-  };
-  S.files.exceptions = {
-    name: S.files.responses.name, rows: table.exceptions,
-    header: CANVAS.EXCEPTION_HEADERS.slice(), ragged: 0
-  };
-  S.zipTable = table;
-  const st = table.stats;
+  const label = files.length === 1 ? CANVAS.baseName(files[0].name) : files.length + ' submission files';
+  addToSource(src, label, table.rows, table.exceptions, true);
   const progress = $('zip-progress');
   progress.hidden = false;
-  progress.textContent = 'Read ' + st.files + ' submission' + (st.files === 1 ? '' : 's') + ', ' +
-    st.responses + ' responses, ' + st.clean + ' of ' + st.files + ' clean.' +
-    (st.exceptions ? ' ' + st.exceptions + ' exception' + (st.exceptions === 1 ? '' : 's') + ', see below.' : '');
-  $('save-csv').hidden = false;
+  progress.textContent = readMessage(table.stats);
 }
 
 async function ingestFiles(fileList) {
   S.problems = [];
   const all = Array.from(fileList);
+
+  /* One drop is one source. Two zips dragged together are one editorial act and
+     merge against each other under the same rule they would meet on separate
+     days, so nothing depends on how many files the teacher happened to select. */
+  const src = { id: ++sourceSeq, labels: [], responses: [], exceptions: [], declaresExceptions: false };
 
   /* Roster and CSV first, so a zip dropped alongside a roster picks the class
      periods up on the same pass instead of needing a second drop. */
@@ -16910,9 +17231,10 @@ async function ingestFiles(fileList) {
     if (/\.json$/i.test(file.name)) {
       try {
         const j = JSON.parse(text);
-        if (Array.isArray(j.responses)) S.files.responses = { name: file.name, rows: j.responses };
-        if (Array.isArray(j.exceptions)) S.files.exceptions = { name: file.name, rows: j.exceptions };
-        if (!Array.isArray(j.responses) && !Array.isArray(j.exceptions)) {
+        const hasResp = Array.isArray(j.responses), hasExc = Array.isArray(j.exceptions);
+        if (hasResp || hasExc) {
+          addToSource(src, file.name, hasResp ? j.responses : [], hasExc ? j.exceptions : [], hasExc);
+        } else {
           S.problems.push(file.name + ' is JSON but has no `responses` or `exceptions` array, so it was ignored.');
         }
       } catch (e) { S.problems.push(file.name + ' is not valid JSON: ' + e.message); }
@@ -16938,25 +17260,43 @@ async function ingestFiles(fileList) {
        them and say so rather than letting a ragged file quietly become smaller
        numbers. */
     const ragged = parsed.rows.filter(r => r.__cells !== parsed.header.length).length;
-    S.files[kind] = { name: file.name, rows: parsed.rows, header: parsed.header, ragged: ragged };
     if (ragged) S.problems.push(file.name + ': ' + ragged + ' row(s) had a different column count than the header. They were kept, with the missing cells empty.');
+    if (kind === 'roster') {
+      S.files.roster = { name: file.name, rows: parsed.rows, header: parsed.header, ragged: ragged };
+    } else if (kind === 'responses') {
+      addToSource(src, file.name, parsed.rows, [], false);
+    } else {
+      addToSource(src, file.name, [], parsed.rows, true);
+    }
   }
 
-  if (submissions.length) ingestSubmissions(submissions);
-  for (const file of zips) await ingestZip(file);
+  if (submissions.length) ingestSubmissions(submissions, src);
+  for (const file of zips) await ingestZip(file, src);
   if (!zips.length && !submissions.length) $('zip-progress').hidden = true;
 
+  if (src.responses.length || src.exceptions.length) {
+    src.label = src.labels.join(' + ') || 'dropped data';
+    S.sources.push(src);
+  }
+
   build();
+  showReceipt();
 }
 
 /* The CSV the CLI would have written, offered as a download so a zip run still
    leaves the teacher with the artefact everything else in the repo expects, and
    so a class set does not have to be re-read every time the tab is closed.
+
+   It writes the CUMULATIVE set, not the last drop. The whole point of merging is
+   that the dataset outlives one zip, and a Save button that quietly wrote only
+   the most recent one would be the fastest possible way to lose a year of it.
+   Column order and quoting are CANVAS.ROW_HEADERS and CANVAS.toCsv, unchanged,
+   so the file still round-trips through the CLI parser and back into this page.
    A Blob URL is same-origin and never touches the network. */
 function saveCsv() {
-  if (!S.zipTable) return;
-  [['responses.csv', CANVAS.toCsv(CANVAS.ROW_HEADERS, S.zipTable.rows)],
-   ['exceptions.csv', CANVAS.toCsv(CANVAS.EXCEPTION_HEADERS, S.zipTable.exceptions)]
+  if (!S.merged || !(S.merged.rows.length || S.merged.exceptions.length)) return;
+  [['responses.csv', CANVAS.toCsv(CANVAS.ROW_HEADERS, S.merged.rows)],
+   ['exceptions.csv', CANVAS.toCsv(CANVAS.EXCEPTION_HEADERS, S.merged.exceptions)]
   ].forEach(([name, text]) => {
     const url = URL.createObjectURL(new Blob([text], { type: 'text/csv' }));
     const a = document.createElement('a');
@@ -16967,8 +17307,11 @@ function saveCsv() {
 }
 
 function build() {
-  const respFile = S.files.responses;
-  const excFile = S.files.exceptions;
+  /* The fold runs first and is the only source of rows below. Every panel
+     therefore reads the cumulative dataset, not the last drop. */
+  mergeAll();
+  const respRows = S.merged.rows;
+  const excRows = S.merged.exceptions;
 
   S.responses = [];
   S.exceptions = [];
@@ -16996,8 +17339,13 @@ function build() {
   });
 
   const taken = new Set();
+  /* The same identity the merge used, or the page would show one student twice:
+     merged rows keep whichever canvas_user_id the winning row carried, so a
+     student whose September drop had an id and whose October drop did not would
+     split into two people on screen while being one row set underneath. */
+  const alias = (S.merged && S.merged.alias) || new Map();
   function studentFor(display, canvasId, period) {
-    const key = canvasId || display;
+    const key = canvasId || alias.get(squashName(display)) || display;
     if (S.students.has(key)) return S.students.get(key);
     const match = (canvasId && rosterById.get(canvasId)) || rosterBySquash.get(squashName(display)) || null;
     const rec = {
@@ -17015,8 +17363,8 @@ function build() {
   S.recovered = 0;
   S.unmapped = 0;
 
-  if (respFile) {
-    respFile.rows.forEach((r, i) => {
+  {
+    respRows.forEach((r, i) => {
       const st = studentFor(r.student_display || '', String(r.canvas_user_id || '').trim(), r.class_period || '');
       st.submitted = true;
       const text = r.response == null ? '' : String(r.response);
@@ -17053,8 +17401,8 @@ function build() {
     });
   }
 
-  if (excFile) {
-    excFile.rows.forEach(r => {
+  {
+    excRows.forEach(r => {
       const st = studentFor(r.student_display || '', String(r.canvas_user_id || '').trim(), r.class_period || '');
       st.submitted = true;
       S.exceptions.push({
@@ -17209,32 +17557,33 @@ function isFlagged(row) {
    7. CHROME
    ========================================================================== */
 function renderChrome() {
-  const loaded = Boolean(S.files.responses || S.files.exceptions);
+  const loaded = hasData();
   $('filterbar').hidden = !loaded;
   $('tabs').hidden = !loaded;
+  $('save-csv').hidden = !loaded;
 
+  /* One chip per drop, in the order they landed, because with merging the
+     question "what is in this dataset" is no longer answered by one filename.
+     Each chip removes its own drop, and removing one is a replay of the fold
+     over what is left rather than an attempt to un-merge it. */
   const chips = [];
-  const chip = (kind, label) => {
-    const f = S.files[kind];
-    if (f) chips.push('<span class="chip">' + esc(label) + ': ' + esc(f.name) +
-      ' <button type="button" data-drop-file="' + kind + '" aria-label="Remove ' + esc(f.name) + '">&times;</button></span>');
-    else chips.push('<span class="chip absent">' + esc(label) + ': not loaded</span>');
-  };
-  /* When a zip filled both slots, one chip naming the zip is the truth. Two
-     chips reading "responses.csv: submissions.zip" and "exceptions.csv:
-     submissions.zip" describe an internal detail as though it were two files
-     the teacher chose. */
-  if (S.zipTable) {
-    const name = (S.files.responses && S.files.responses.name) || 'the Canvas zip';
-    const st = S.zipTable.stats;
-    chips.push('<span class="chip">' + esc(name) + ': ' + st.files + ' submission' +
-      (st.files === 1 ? '' : 's') + ', ' + st.responses + ' responses' +
-      ' <button type="button" data-drop-file="zip" aria-label="Remove ' + esc(name) + '">&times;</button></span>');
+  if (!S.sources.length) {
+    chips.push('<span class="chip absent">no responses loaded</span>');
   } else {
-    chip('responses', 'responses.csv');
-    chip('exceptions', 'exceptions.csv');
+    S.sources.forEach((src, i) => {
+      const rc = S.receipts[i];
+      const detail = src.responses.length + ' response' + (src.responses.length === 1 ? '' : 's') +
+        (rc ? ', ' + rc.added + ' new' : '');
+      chips.push('<span class="chip">' + esc(src.label) + ': ' + esc(detail) +
+        ' <button type="button" data-drop-source="' + src.id + '" aria-label="Remove ' + esc(src.label) + '">&times;</button></span>');
+    });
   }
-  chip('roster', 'roster');
+  if (S.files.roster) {
+    chips.push('<span class="chip">roster: ' + esc(S.files.roster.name) +
+      ' <button type="button" data-drop-file="roster" aria-label="Remove ' + esc(S.files.roster.name) + '">&times;</button></span>');
+  } else {
+    chips.push('<span class="chip absent">roster: not loaded</span>');
+  }
   $('file-chips').innerHTML = chips.join('');
 
   if (!loaded) { $('scope-line').textContent = ''; return; }
@@ -17272,7 +17621,7 @@ function fillSelect(sel, pairs, value) {
    in the tab order. The lesson pages just finished paying for a modal that
    moved a class into a focus trap it could not leave; the cheap version of that
    mistake is a tab strip you cannot drive without a mouse. */
-const TAB_IDS = ['coverage', 'grid', 'module', 'skill', 'terms', 'confidence', 'read', 'target', 'export'];
+const TAB_IDS = ['coverage', 'grid', 'module', 'skill', 'terms', 'confidence', 'read', 'target', 'export', 'trend'];
 function selectTab(id, focus) {
   S.active = id;
   TAB_IDS.forEach(t => {
@@ -17300,10 +17649,11 @@ $('tabs').addEventListener('keydown', (e) => {
 });
 
 function renderActive() {
-  if (!(S.files.responses || S.files.exceptions)) { renderEmpty(); return; }
+  if (!hasData()) { renderEmpty(); return; }
   const fn = { coverage: renderCoverage, grid: renderGrid, module: renderByModule,
                skill: renderBySkill, terms: renderTerms, confidence: renderConfidence,
-               read: renderReadMode, target: renderTargets, export: renderExport }[S.active];
+               read: renderReadMode, target: renderTargets, export: renderExport,
+               trend: renderTrend }[S.active];
   if (fn) fn();
 }
 
@@ -17397,6 +17747,118 @@ function niceTicks(max, count, integer) {
 }
 function clip(s, n) { s = String(s); return s.length > n ? s.slice(0, n - 1) + '…' : s; }
 
+/* ── lineChart ────────────────────────────────────────────────────────────
+   The sequence twin of barChart, written by hand for the same reason: a chart
+   library would be a network dependency on a page whose whole argument is that
+   it has none, and this needs about eighty lines.
+
+   Same contract as barChart, so nothing new has to be learned to read one:
+   ONE series, no legend, the title says what is plotted, every hover target is
+   a full-height band rather than the mark itself, every band is focusable so a
+   keyboard reader gets the same tooltip, and the table underneath carries every
+   number so nothing is gated behind a pointer.
+
+   Two rules specific to a line:
+
+   1. The x axis is CATEGORICAL. Topics sit at even spacing in curriculum order,
+      never at calendar distance. A snow day is not a fact about Causation, and
+      proportional spacing would let a two-week gap draw a long flat run that
+      reads as a plateau in the data.
+   2. Segments are straight and a point with no value BREAKS the line rather
+      than being interpolated across. A smooth curve through a gap draws
+      measurements that were never taken, which on this page is the same offence
+      as a fabricated denominator. */
+function lineChart(opts) {
+  const pts = opts.points || [];
+  if (!pts.length) return '<p class="empty-state">Nothing to plot in this scope.</p>';
+  const W = 900, LEFT = 66, RIGHT = 26, TOP = 30, PLOT = 210, FOOT = 52;
+  const H = TOP + PLOT + FOOT;
+  const plotW = W - LEFT - RIGHT;
+  const defined = pts.filter(p => p.value != null).map(p => p.value);
+  const max = opts.max != null ? opts.max : Math.max(1, ...(defined.length ? defined : [1]));
+  const ticks = opts.ticks || niceTicks(max, 4, Boolean(opts.integer));
+  const top = ticks[ticks.length - 1] || 1;
+  const band = plotW / pts.length;
+  const cx = (i) => LEFT + band * (i + 0.5);
+  const cy = (v) => TOP + PLOT - (Math.max(0, Math.min(v, top)) / top) * PLOT;
+  const out = [];
+
+  out.push('<div class="chart">');
+  out.push('<p class="chart-title">' + esc(opts.title) + '</p>');
+  if (opts.sub) out.push('<p class="chart-sub">' + esc(opts.sub) + '</p>');
+  out.push('<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' +
+    esc(opts.title + '. ' + (opts.sub || '') + ' Topics run left to right in curriculum order, not by date. ' +
+        'Every value, its sample size and its date are listed in the table below the chart.') + '">');
+
+  ticks.forEach(t => {
+    const y = cy(t);
+    out.push('<line x1="' + LEFT + '" y1="' + y.toFixed(1) + '" x2="' + (W - RIGHT) + '" y2="' + y.toFixed(1) +
+      '" stroke="var(--gridline)" stroke-width="1"></line>');
+    out.push('<text x="' + (LEFT - 10) + '" y="' + (y + 4).toFixed(1) +
+      '" fill="var(--text-muted)" font-family="Montserrat,system-ui,sans-serif" font-size="10.5" text-anchor="end">' +
+      esc(opts.tickFmt ? opts.tickFmt(t) : String(t)) + '</text>');
+  });
+
+  /* One path per unbroken run. A single path with a move-to across the gap
+     would work too and would be one accident away from becoming a line. */
+  let run = [];
+  const flush = () => {
+    if (run.length > 1) out.push('<path class="seg" d="M' + run.map(q => q[0].toFixed(1) + ',' + q[1].toFixed(1)).join(' L') + '"></path>');
+    run = [];
+  };
+  pts.forEach((p, i) => {
+    if (p.value == null) { flush(); return; }
+    run.push([cx(i), cy(p.value)]);
+  });
+  flush();
+
+  pts.forEach((p, i) => {
+    const x = cx(i);
+    if (p.value != null) {
+      const y = cy(p.value);
+      out.push('<circle class="pt' + (p.small ? ' small' : '') + '" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="5"></circle>');
+      out.push('<text x="' + x.toFixed(1) + '" y="' + (y - 12).toFixed(1) +
+        '" fill="var(--text-primary)" font-family="Montserrat,system-ui,sans-serif" font-size="11" font-weight="700" font-variant-numeric="tabular-nums" text-anchor="middle">' +
+        esc(p.display) + '</text>');
+    } else {
+      out.push('<text x="' + x.toFixed(1) + '" y="' + (TOP + PLOT - 8) +
+        '" fill="var(--text-muted)" font-family="Montserrat,system-ui,sans-serif" font-size="10" text-anchor="middle">not defined</text>');
+    }
+    /* The sample size rides the axis, never a tooltip. A teacher glancing at
+       this has to be able to see that n=28 and n=3 are not the same kind of
+       claim without hovering anything. */
+    out.push('<text x="' + x.toFixed(1) + '" y="' + (TOP + PLOT + 18) +
+      '" fill="var(--text-secondary)" font-family="Montserrat,system-ui,sans-serif" font-size="11" font-weight="700" text-anchor="middle">' +
+      esc(p.label) + '</text>');
+    out.push('<text x="' + x.toFixed(1) + '" y="' + (TOP + PLOT + 33) +
+      '" fill="' + (p.small ? 'var(--status-warning)' : 'var(--text-muted)') +
+      '" font-family="Montserrat,system-ui,sans-serif" font-size="10" text-anchor="middle">' +
+      esc('n=' + p.n + (p.small ? ' !' : '')) + '</text>');
+    if (p.date) {
+      out.push('<text x="' + x.toFixed(1) + '" y="' + (TOP + PLOT + 46) +
+        '" fill="var(--text-muted)" font-family="Montserrat,system-ui,sans-serif" font-size="9.5" text-anchor="middle">' +
+        esc(p.date) + '</text>');
+    }
+    out.push('<rect class="bar-hit" x="' + (LEFT + band * i).toFixed(1) + '" y="' + TOP + '" width="' + band.toFixed(1) +
+      '" height="' + PLOT + '" tabindex="0" data-tip="' + esc(p.tip) + '" aria-label="' + esc(p.aria) + '"></rect>');
+  });
+
+  out.push('<line x1="' + LEFT + '" y1="' + TOP + '" x2="' + LEFT + '" y2="' + (TOP + PLOT) + '" stroke="var(--axis)" stroke-width="1"></line>');
+  out.push('<line x1="' + LEFT + '" y1="' + (TOP + PLOT) + '" x2="' + (W - RIGHT) + '" y2="' + (TOP + PLOT) + '" stroke="var(--axis)" stroke-width="1"></line>');
+  out.push('</svg></div>');
+  return out.join('');
+}
+
+/* Dates are context, never position. Month abbreviated the way the course
+   writes them elsewhere, and the year only when it is not this dataset's. */
+const MONTHS = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];
+function shortDate(ms) {
+  if (!Number.isFinite(ms)) return '';
+  const d = new Date(ms);
+  return MONTHS[d.getMonth()] + ' ' + d.getDate();
+}
+
+
 /* Tooltip. Shown on hover and on keyboard focus, because a value reachable only
    by mouse is a value half the class cannot read. */
 (function wireTips() {
@@ -17473,8 +17935,8 @@ function renderCoverage() {
   out.push('<div class="tiles">' + tiles.join('') + '</div>');
 
   // Honest gaps.
-  if (!S.files.responses) out.push(note('gap', 'No responses.csv is loaded. Everything except the exception list below is unavailable, and no substitute is being shown for it.'));
-  if (!S.files.exceptions) out.push(note('gap', 'No exceptions.csv is loaded. This page therefore cannot tell you which gaps are pipeline failures and which are students who wrote nothing, and it will not guess. Load the exceptions file the parser wrote next to responses.csv.'));
+  if (!hasResponses()) out.push(note('gap', 'No responses are loaded. Everything except the exception list below is unavailable, and no substitute is being shown for it.'));
+  if (!hasExceptionSource()) out.push(note('gap', 'Nothing loaded carries exception data. This page therefore cannot tell you which gaps are pipeline failures and which are students who wrote nothing, and it will not guess. Drop the Canvas zip, or the exceptions.csv the parser wrote next to responses.csv.'));
   if (!S.roster) out.push(note('', 'No roster is loaded, so a student who submitted nothing at all is invisible to this page. Canvas Download Submissions only contains files for students who submitted, which means the count of students is a count of submitters. Drop your roster CSV (a period or section column plus a name or id column) to fix this.'));
   if (sc.unknownTopics.length) out.push(note('gap', '<strong>' + sc.unknownTopics.length + ' topic(s) are not in the skills map: ' + esc(sc.unknownTopics.join(', ')) + '.</strong> Their responses are still counted as observed, but they contribute no expected slots, so the denominator above is smaller than the real one. Re-run <code>node scripts/build-skills-map.js</code> if these are real topics.'));
   if (S.recovered) out.push(note('calm', '<strong>' + S.recovered + ' response(s) arrived with no slot id and were joined back to the right slot by their module label.</strong> They came from submissions with no record footer, which the parser reads on the legacy grammar and always flags NO_MANIFEST. Without that join every legacy response for one student would collide on the same empty key and eight of nine would disappear.'));
@@ -17523,7 +17985,7 @@ function renderCoverage() {
 
   // Exceptions by reason, each explained in a sentence.
   out.push('<h3>Exceptions, by reason</h3>');
-  if (!S.files.exceptions) {
+  if (!hasExceptionSource()) {
     out.push('<p class="empty-state">No exceptions file is loaded, so there is nothing to group. This section is blank on purpose rather than showing a zero, because zero exceptions and no exceptions file look identical on a dashboard and mean opposite things.</p>');
   } else if (!sc.excs.length) {
     out.push('<p class="lede">No exceptions in this scope. Every submission parsed clean.</p>');
@@ -18201,6 +18663,305 @@ function renderTargets() {
   el.innerHTML = out.join('');
 }
 
+
+/* ==========================================================================
+   PANEL 10, OVER TIME
+
+   Panel 08 asks "what are students showing me on this content". This one asks
+   "how are the observable indicators moving across the course".
+
+   The longitudinal dimension is the AP historical-thinking skill, and that is
+   the load-bearing decision in this panel. Learning targets were the obvious
+   alternative and they are the wrong one: a Song China target followed by a
+   gunpowder target is two different constructs measured once each, not one
+   construct measured twice, and drawing a line between them would invite a
+   reading the data cannot support. The seven AP skills recur for nine units by
+   design, so a Causation slot in Topic 1.1 and a Causation slot in Topic 5.3
+   really are the same thing asked twice. Content-specific interpretation stays
+   in Panel 08, where it belongs.
+
+   WHAT THIS PANEL MAY NOT DO. It plots one observable measure at a time and
+   never combines them. There is no proficiency figure, no growth percentage and
+   no skill score, because word count, term usage, completion and self-reported
+   confidence are not mastery and no arithmetic over them becomes mastery. A
+   single number would be read as a grade within a week of shipping, and it
+   would be a grade this page has no evidence for. Judging whether a student is
+   getting better at causation is a reading judgment and it belongs to the
+   teacher; what a parser can honestly contribute is the shape of what was
+   handed in.
+
+   The student scope is the filter bar's, deliberately not a second selector in
+   here. One student search on the page means clearing it always returns the
+   class view, and there is never a question about which of two filters is in
+   force.
+   ========================================================================== */
+const MEASURES = {
+  completion: {
+    label: 'Completion rate',
+    axis: 'Percent of expected responses present',
+    max: 100, integer: false, fmt: (v) => v + '%',
+    nWord: 'expected responses',
+    what: 'Of the responses this skill’s slots expect from the students in scope, the share that arrived with something written in them. A slot that was gathered blank counts as not present here, and the table’s Blank column says how many those were.'
+  },
+  words: {
+    label: 'Median response length',
+    axis: 'Words', integer: true,
+    nWord: 'non-blank responses',
+    what: 'The median word count of the responses that were actually written. Median, not mean, because one student writing six hundred words moves a mean and tells you nothing about the class. Blank responses are left out: a blank is a completion fact, not a length.'
+  },
+  terms: {
+    label: 'Median evidence-term hits',
+    axis: 'Terms used', integer: true,
+    nWord: 'responses in slots with authored terms',
+    what: 'For slots where the lesson author wrote evidence terms, how many of those terms the median response actually used. Slots with no authored terms contribute nothing rather than a zero, because zero out of nothing is not a measurement.'
+  },
+  confidence: {
+    label: 'Median student confidence',
+    axis: 'Self-rating, 1 to 5', max: 5, integer: true, ticks: [0, 1, 2, 3, 4, 5],
+    nWord: 'rated responses',
+    what: 'What students said about how sure they felt, on the 1 to 5 scale in the capture panel. Median, and unrated responses are left out rather than counted as a zero: not answering is not the same as answering "not confident".'
+  }
+};
+
+/* n < 5 is the flag. It is a convention, not a finding, so it is stated in the
+   panel rather than left for the reader to infer, and a small sample is drawn
+   and tabled like any other: suppressing it would hide the one case where the
+   teacher most needs to know the line is thin. */
+const SMALL_N = 5;
+
+function skillsInScope(sc) {
+  const counts = new Map();
+  sc.knownTopics.forEach(t => {
+    const lesson = lessonFor(t);
+    const seen = new Set();
+    lesson.order.forEach(sl => {
+      if (S.filters.slot && sl !== S.filters.slot) return;
+      const m = lesson.slots[sl];
+      (m && m.skills ? m.skills : []).forEach(k => seen.add(k));
+    });
+    seen.forEach(k => counts.set(k, (counts.get(k) || 0) + 1));
+  });
+  const order = CANON_SKILLS.filter(k => counts.has(k));
+  Array.from(counts.keys()).sort().forEach(k => { if (order.indexOf(k) === -1) order.push(k); });
+  return order.map(k => ({ skill: k, topics: counts.get(k) }));
+}
+
+function trendSeries(sc, skill, measureKey) {
+  const points = [];
+  let untagged = 0;
+  sc.rows.forEach(r => {
+    const m = slotMeta(r.topic, r.slot);
+    if (!m || !m.skills || !m.skills.length) untagged++;
+  });
+
+  sc.topics.slice().sort(topicSort).forEach(topic => {
+    const lesson = lessonFor(topic);
+    if (!lesson) return;
+    const slots = (sc.expectedSlotsByTopic.get(topic) || []).filter(sl => {
+      const m = lesson.slots[sl];
+      return m && m.skills && m.skills.indexOf(skill) !== -1;
+    });
+    /* No slot at this topic is tagged with this skill, so the course did not ask
+       for it here. That is an absent measurement, not a zero, and an absent
+       measurement gets no position on the axis at all. */
+    if (!slots.length) return;
+
+    const rows = sc.rows.filter(r => r.topic === topic && slots.indexOf(r.slot) !== -1);
+    const written = rows.filter(r => !r.blank);
+    const blanks = rows.length - written.length;
+    const expected = slots.length * sc.students.length;
+
+    let value = null, display = '', n = 0, why = '', used = written;
+    if (measureKey === 'completion') {
+      n = expected;
+      value = expected ? Math.round((written.length / expected) * 100) : null;
+      display = value == null ? '' : value + '%';
+      if (value == null) why = 'no students in scope, so there is no denominator';
+    } else if (measureKey === 'words') {
+      n = written.length;
+      value = median(written.map(r => r.words));
+      display = value == null ? '' : String(value);
+      if (value == null) why = 'nothing was written in these slots, so there is no length to take a median of';
+    } else if (measureKey === 'terms') {
+      const withTerms = written.filter(r => {
+        const m = slotMeta(r.topic, r.slot);
+        return m && m.terms && m.terms.length;
+      });
+      used = withTerms;
+      n = withTerms.length;
+      const anyAuthored = slots.some(sl => {
+        const m = lesson.slots[sl];
+        return m && m.terms && m.terms.length;
+      });
+      value = median(withTerms.map(r => termsIn(r.norm, slotMeta(r.topic, r.slot).terms).hit.length));
+      display = value == null ? '' : String(value);
+      if (value == null) {
+        why = anyAuthored
+          ? 'the slots here do carry authored terms, but nothing non-blank was written in them'
+          : 'no slot tagged with this skill at this topic has authored evidence terms, so there is nothing to count';
+      }
+    } else {
+      const rated = rows.filter(r => r.confidence != null);
+      used = rated;
+      n = rated.length;
+      value = median(rated.map(r => r.confidence));
+      display = value == null ? '' : String(value);
+      if (value == null) why = 'nobody in scope rated their confidence on these slots';
+    }
+
+    /* Dates are read off the rows the measure was actually computed from, so a
+       point never carries a date belonging to work it did not use. */
+    const stamps = (used.length ? used : rows)
+      .map(r => Date.parse(r.copiedAt)).filter(Number.isFinite).sort((a, b) => a - b);
+    const mid = stamps.length ? stamps[stamps.length >> 1] : NaN;
+    const range = stamps.length > 1 && shortDate(stamps[0]) !== shortDate(stamps[stamps.length - 1])
+      ? shortDate(stamps[0]) + ' to ' + shortDate(stamps[stamps.length - 1]) : '';
+
+    const M = MEASURES[measureKey];
+    const small = n > 0 && n < SMALL_N;
+    const tipLines = [
+      topic + (lesson.title ? '  ' + clip(lesson.title, 40) : ''),
+      M.label + ': ' + (value == null ? 'not defined' : display),
+      'n=' + n + ' ' + M.nWord + (small ? '  (small sample, read with care)' : ''),
+      slots.length + ' slot' + (slots.length === 1 ? '' : 's') + ' tagged ' + skill
+    ];
+    if (measureKey === 'completion') tipLines.push(written.length + ' present, ' + blanks + ' blank, ' + expected + ' expected');
+    if (range) tipLines.push('Copied ' + range);
+    else if (Number.isFinite(mid)) tipLines.push('Copied ' + shortDate(mid));
+    if (value == null && why) tipLines.push('Not defined: ' + why);
+
+    points.push({
+      topic: topic, title: lesson.title || '', label: topic, value: value, display: display,
+      n: n, small: small, why: why, slots: slots.length,
+      present: written.length, blanks: blanks, expected: expected,
+      date: Number.isFinite(mid) ? shortDate(mid) : '', range: range,
+      tip: tipLines.join('\n'),
+      aria: 'Topic ' + topic + ', ' + M.label + ' ' + (value == null ? 'not defined' : display) +
+            ', n equals ' + n + (small ? ', a small sample' : '') + (Number.isFinite(mid) ? ', copied ' + shortDate(mid) : '')
+    });
+  });
+
+  return { points: points, untagged: untagged };
+}
+
+function renderTrend() {
+  const sc = scope();
+  const el = $('panel-trend');
+  const avail = skillsInScope(sc);
+
+  if (!S.trend.skill || !avail.some(a => a.skill === S.trend.skill)) {
+    /* Default to the skill with the most topics behind it, so the first thing
+       drawn is the longest honest line rather than the alphabetically first
+       one, which on this course is a three-slot skill. */
+    const best = avail.slice().sort((a, b) => b.topics - a.topics)[0];
+    S.trend.skill = best ? best.skill : '';
+  }
+  if (!MEASURES[S.trend.measure]) S.trend.measure = 'completion';
+
+  const out = [];
+  out.push('<p class="section-label">Panel 10</p><h2>Over time</h2>');
+  out.push('<p class="lede">One AP historical-thinking skill, one observable measure, plotted across the topics in curriculum order. Skills are the longitudinal dimension because they are the thing the course asks for again and again: a Causation prompt in Topic 1.1 and a Causation prompt in Topic 5.3 are the same demand made twice, which is what makes a line between them mean anything. Learning targets are content-specific and change every topic, so they stay in Panel 08 rather than being strung into a sequence they were never a sequence of.</p>');
+  out.push(note('', '<strong>This shows observable response patterns over time. It does not score mastery of the selected AP skill.</strong> Length, completion, term usage and self-rated confidence are what a parser can see. Whether the causation in a paragraph is any good is a reading judgment, it belongs to you, and no combination of these four numbers becomes it. There is deliberately no growth figure and no single score on this page.'));
+
+  if (!avail.length) {
+    out.push('<p class="empty-state">No slot in the topics currently in scope is tagged with an AP skill, so there is no longitudinal dimension to plot. The tags come from the lesson data by way of <code>assets/data/skills-map.js</code>; on this course they sit on the three First &amp; 10 questions and the AP Skill Builder.</p>');
+    el.innerHTML = out.join('');
+    return;
+  }
+
+  out.push('<div class="trend-controls">' +
+    '<div class="field"><label for="t-skill">AP historical-thinking skill</label><select id="t-skill">' +
+    avail.map(a => '<option value="' + esc(a.skill) + '"' + (a.skill === S.trend.skill ? ' selected' : '') + '>' +
+      esc(a.skill) + '  (' + a.topics + ' topic' + (a.topics === 1 ? '' : 's') + ' in scope)</option>').join('') +
+    '</select></div>' +
+    '<div class="field"><label for="t-measure">Observable measure</label><select id="t-measure">' +
+    Object.keys(MEASURES).map(k => '<option value="' + k + '"' + (k === S.trend.measure ? ' selected' : '') + '>' +
+      esc(MEASURES[k].label) + '</option>').join('') +
+    '</select></div>' +
+    '<div class="field"><span class="hint">Students come from the filter bar above, not from here. Empty student search is the class; type a name and this becomes that student’s line.</span></div>' +
+    '</div>');
+  out.push('<div id="t-body"></div>');
+  el.innerHTML = out.join('');
+  renderTrendBody();
+}
+
+/* Only the body repaints when a selector changes, so the select keeps focus and
+   a keyboard user is not thrown back to the top of the panel on every change. */
+function renderTrendBody() {
+  const el = $('t-body');
+  if (!el) return;
+  const sc = scope();
+  const skill = S.trend.skill;
+  const M = MEASURES[S.trend.measure];
+  const series = trendSeries(sc, skill, S.trend.measure);
+  const pts = series.points;
+  const out = [];
+
+  const who = sc.students.length === 1
+    ? esc(sc.students[0].display) : sc.students.length + ' students';
+  out.push('<p class="chart-sub" style="margin-top:16px">Scope: <strong>' + esc(who) + '</strong>' +
+    (S.filters.period ? ', period ' + esc(S.filters.period) : '') +
+    (S.filters.slot ? ', one module only' : '') + '. ' + esc(M.what) + '</p>');
+
+  if (!pts.length) {
+    out.push('<p class="empty-state">No topic in scope has a slot tagged ' + esc(skill) +
+      '. Widen the topic filter, or pick another skill.</p>');
+    el.innerHTML = out.join('');
+    return;
+  }
+
+  out.push(lineChart({
+    title: M.label + ', ' + skill,
+    sub: 'Topics in curriculum order, one position each. Horizontal distance is sequence, never calendar time, so a long unit or a snow day cannot stretch the line. Sample size sits under every point and a point drawn hollow in amber is under ' + SMALL_N + '.',
+    points: pts, max: M.max, integer: M.integer, ticks: M.ticks, tickFmt: M.fmt
+  }));
+
+  const small = pts.filter(p => p.small);
+  const gaps = pts.filter(p => p.value == null);
+
+  out.push('<div class="table-scroll"><table class="data"><caption>Every plotted value, with the sample it came from and the dates the work was copied. The chart carries nothing this table does not.</caption>' +
+    '<thead><tr><th>Topic</th><th>Title</th><th class="num">' + esc(M.label) + '</th><th class="num">n (' + esc(M.nWord) + ')</th>' +
+    '<th class="num">Slots tagged</th><th>Copied</th><th>Notes</th></tr></thead><tbody>');
+  pts.forEach(p => {
+    const notes = [];
+    if (p.small) notes.push('<span class="fact warn">small n, under ' + SMALL_N + '</span>');
+    if (p.value == null) notes.push('<span class="fact bad">not defined</span> ' + esc(p.why));
+    if (S.trend.measure === 'completion') notes.push(p.present + ' present, ' + p.blanks + ' blank, ' + p.expected + ' expected');
+    out.push('<tr><th scope="row">' + esc(p.topic) + '</th>' +
+      '<td class="wide">' + esc(clip(p.title, 46)) + '</td>' +
+      '<td class="num">' + (p.value == null ? '<span style="color:var(--text-muted)">not defined</span>' : esc(p.display)) + '</td>' +
+      '<td class="num">' + p.n + '</td>' +
+      '<td class="num">' + p.slots + '</td>' +
+      '<td>' + esc(p.range || p.date || 'no copied_at on file') + '</td>' +
+      '<td class="wide">' + (notes.join(' ') || '') + '</td></tr>');
+  });
+  out.push('</tbody></table></div>');
+
+  if (pts.length === 1) {
+    out.push(note('', 'One topic is in scope, so this is a single reading rather than a trend. Set the topic filter back to <strong>All topics</strong>, and drop more of the year’s Canvas downloads on the page: every drop merges into what is already here rather than replacing it.'));
+  }
+  if (small.length) {
+    out.push(note('gap', '<strong>' + small.length + ' point' + (small.length === 1 ? ' is' : 's are') +
+      ' under n=' + SMALL_N + ':</strong> ' + esc(small.map(p => p.topic + ' (n=' + p.n + ')').join(', ')) +
+      '. They are drawn hollow and left on the chart on purpose. Hiding a thin point would make the line look ' +
+      'steadier than the evidence is, which is the opposite of the problem this page exists to fix. Read a move ' +
+      'into or out of one of these as a fact about who submitted, not about the class.'));
+  }
+  if (gaps.length) {
+    out.push(note('calm', '<strong>' + gaps.length + ' topic' + (gaps.length === 1 ? '' : 's') +
+      ' could not produce this measure</strong>, so the line breaks rather than being drawn through them. The reason is in each row’s Notes column. Nothing is interpolated across a gap, because a smooth line through a missing measurement draws a reading that was never taken.'));
+  }
+  if (S.trend.measure === 'terms' && pts.every(p => p.value == null)) {
+    out.push(note('gap', '<strong>This measure has nothing to draw on for any skill in this course as the lesson data currently stands.</strong> Evidence terms are authored on the checkpoints and the Evidence Lab, and the AP skill tags sit on the First &amp; 10 questions and the Skill Builder, so no single slot carries both. That is a fact about the lesson data, not about your class: term coverage is real and is in Panel 05 and Panel 08. To bring it here, the checkpoints that carry terms would need a skill named in their lesson data, then <code>node scripts/build-skills-map.js</code>.'));
+  }
+  if (series.untagged) {
+    out.push(note('calm', series.untagged + ' response(s) in scope sit in slots the skills map tags with no skill at all, so they are on no skill’s line here. That is normal: Map &amp; Geography, the Evidence Lab and the checkpoints usually do not name a skill. Panel 03 counts every response by module regardless of tagging.'));
+  }
+  out.push(note('calm', 'Reading this honestly: a point moving up means the class handed in more, or wrote longer, or used more of your terms, or felt surer. Each of those is worth knowing and none of them is the same as writing better history. If a line surprises you, Panel 07 puts the actual responses in front of you, which is the only place the question can be settled.'));
+
+  el.innerHTML = out.join('');
+}
+
 /* ==========================================================================
    PANEL 09, PSEUDONYMOUS EXPORT
    ========================================================================== */
@@ -18245,7 +19006,7 @@ function buildBundle() {
   L.push('');
 
   L.push('EXCEPTIONS BY REASON');
-  if (!S.files.exceptions) L.push('  no exceptions file was loaded, so this section is unknown rather than zero');
+  if (!hasExceptionSource()) L.push('  no exceptions file was loaded, so this section is unknown rather than zero');
   else if (!sc.excs.length) L.push('  none');
   else {
     const by = new Map();
@@ -18493,18 +19254,18 @@ document.addEventListener('click', (e) => {
     if (again) again.focus();
     return;
   }
+  const dropSource = t.closest('[data-drop-source]');
+  if (dropSource) {
+    const id = Number(dropSource.getAttribute('data-drop-source'));
+    S.sources = S.sources.filter(src => src.id !== id);
+    $('zip-progress').hidden = true;
+    build();
+    showReceipt();
+    return;
+  }
   const dropFile = t.closest('[data-drop-file]');
   if (dropFile) {
-    const kind = dropFile.getAttribute('data-drop-file');
-    // A zip filled both tables from one file, so removing it has to clear both.
-    if (kind === 'zip') {
-      delete S.files.responses; delete S.files.exceptions;
-      S.zipTable = null;
-      $('zip-progress').hidden = true;
-      $('save-csv').hidden = true;
-    } else {
-      delete S.files[kind];
-    }
+    delete S.files[dropFile.getAttribute('data-drop-file')];
     build();
     return;
   }
@@ -18557,6 +19318,17 @@ function showCrosswalk(launcher) {
   openDialog('Code crosswalk', esc(sc.students.length + ' students in the current filter scope'), body, '<span></span>', launcher);
 }
 
+/* Panel 10's two selectors. Delegated, because the panel is re-rendered as a
+   string and a listener bound to the element would be dropped every repaint.
+   Only the body repaints on a change, so the select the teacher is using keeps
+   focus. */
+document.addEventListener('change', (e) => {
+  const t = e.target;
+  if (!t || !t.id) return;
+  if (t.id === 't-skill') { S.trend.skill = t.value; renderTrendBody(); }
+  else if (t.id === 't-measure') { S.trend.measure = t.value; renderTrendBody(); }
+});
+
 /* ── Filters ─────────────────────────────────────────────────────────────── */
 function wireFilter(id, key, transform) {
   const el = $(id);
@@ -18590,8 +19362,9 @@ document.addEventListener('drop', (e) => {
 });
 $('save-csv').addEventListener('click', saveCsv);
 $('clear-all').addEventListener('click', () => {
-  S.files = {}; S.problems = []; S.zipTable = null;
+  S.files = {}; S.problems = []; S.sources = []; S.receipts = [];
   $('zip-progress').hidden = true;
+  $('merge-receipt').hidden = true;
   $('save-csv').hidden = true;
   build();
   $('x-out') && ($('x-out').value = '');
