@@ -38,11 +38,27 @@ const esc = escapeText;
 const SKIP_LINK = `<a class="skip-link" href="#main-content">Skip to main content</a>\n`;
 
 /**
- * The brand typefaces: Cinzel for display, Libre Baskerville for reading, and
- * Montserrat for labels. Re-exported from deep-reading-page.js so the eBook and
- * the standalone readings cannot end up loading different fonts.
+ * <main id="main-content"> carries tabindex="-1" so the skip link actually
+ * lands somewhere. Without it the browser scrolls the fragment into view but
+ * has no focusable target to give the caret to, and focus falls back to
+ * <body>; the next Tab then resumes at the top of the page, the exact
+ * navigation the skip link exists to let a keyboard user bypass. -1 rather
+ * than 0 keeps <main> out of the normal Tab order, so it is reachable only as
+ * the skip link's destination, never as an extra stop on the way there.
  */
-const FONT_LINKS = require('./deep-reading-page').FONT_LINKS;
+const MAIN_OPEN = '<main id="main-content" class="dr-wrap" tabindex="-1">';
+
+/**
+ * The brand typefaces: Cinzel for display, Libre Baskerville for reading, and
+ * Montserrat for labels. The eBook loads the non-blocking variant,
+ * FONT_LINKS_ASYNC: it already ships behistorical-listen.js, so an eBook page
+ * is never truly script-free the way a standalone deep reading is, and a slow
+ * or unreachable font host should stall only the typeface, not first paint.
+ * Both variants point at the same href (re-exported from deep-reading-page.js
+ * so the two cannot drift), which is what lets a student moving between a
+ * lesson's deep reading and an eBook volume reuse a warm font cache.
+ */
+const FONT_LINKS = require('./deep-reading-page').FONT_LINKS_ASYNC;
 
 /**
  * The "Listen to this section" module, on volume pages only.
@@ -211,7 +227,7 @@ ${SKIP_LINK}<header class="eb-cover">
     </div>
   </div>
 </header>
-<main id="main-content" class="dr-wrap">
+${MAIN_OPEN}
 ${chapterNav(entries)}${body}</main>
 <div class="dr-wrap">
   <footer class="dr-footer">
@@ -304,7 +320,7 @@ ${SKIP_LINK}<header class="eb-cover">
     <p class="eb-cover-deck">${library.deck}</p>
   </div>
 </header>
-<main id="main-content" class="dr-wrap">
+${MAIN_OPEN}
   <section class="eb-library">
     <h2>Volumes</h2>
     <div class="eb-lib-grid">

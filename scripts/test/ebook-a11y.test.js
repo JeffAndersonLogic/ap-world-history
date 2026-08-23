@@ -217,10 +217,21 @@ const withHelpers = body => `(() => {${HELPERS}\n${body}\n})()`;
     await page.waitForTimeout(120);
     const landed = await page.evaluate(() => {
       const t = document.querySelector(location.hash || '#none');
-      return { hash: location.hash, isMain: !!t && t.tagName === 'MAIN' };
+      return {
+        hash: location.hash,
+        isMain: !!t && t.tagName === 'MAIN',
+        // The hash resolving to <main> only proves the browser scrolled
+        // there, not that a keyboard user's focus went with it. <main>
+        // needs tabindex="-1" to be a valid focus target at all; without it
+        // the caret drops to <body> and the next Tab resumes at the top of
+        // the page, silently defeating the skip link's one job.
+        focusIsMain: document.activeElement === t
+      };
     });
     check(`${label}: activating the skip link resolves to <main>`,
       landed.hash === '#main-content' && landed.isMain, landed.hash);
+    check(`${label}: activating the skip link moves keyboard focus into <main>`,
+      landed.focusIsMain, landed.focusIsMain ? 'focus on <main>' : 'focus stayed on <body>');
 
     // ── 3. a focus ring on every interactive element ────────────────────────
     // Tabbed rather than focused programmatically: :focus-visible is defined in

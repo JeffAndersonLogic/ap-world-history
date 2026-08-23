@@ -6,7 +6,9 @@
   <title>BeHistorical | The eBook</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
   <link rel="stylesheet" href="../assets/css/behistorical-ebook.css">
 </head>
@@ -19,7 +21,7 @@
     <p class="eb-cover-deck">The course reading, in one place, written for this class rather than adapted from a textbook. Each chapter goes deeper than the First &amp; 10 for that topic, because the checkpoints ask you to explain how something worked and why it mattered, and a name is not a mechanism.</p>
   </div>
 </header>
-<main id="main-content" class="dr-wrap">
+<main id="main-content" class="dr-wrap" tabindex="-1">
   <section class="eb-library">
     <h2>Volumes</h2>
     <div class="eb-lib-grid">

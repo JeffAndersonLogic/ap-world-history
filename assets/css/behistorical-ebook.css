@@ -64,7 +64,7 @@ ol.eb-toc{list-style:none;display:grid;gap:1px;background:var(--rule);border:1px
 ol.eb-toc > li{background:var(--clean)}
 a.eb-toc-chapter,
 ol.eb-toc > li.eb-toc-pending{
-  display:grid; grid-template-columns:auto 1fr; gap:0 1.1rem;
+  display:grid; grid-template-columns:auto minmax(0,1fr); gap:0 1.1rem;
   align-items:baseline; padding:1rem 1.2rem; text-decoration:none;
 }
 a.eb-toc-chapter{color:inherit}
@@ -109,15 +109,25 @@ ul.eb-toc-sections a:hover,ul.eb-toc-sections a:focus-visible{background:#f2ead9
   font-family:var(--font-display); font-size:1.35rem; font-weight:700;
   color:var(--oxidized); font-variant-numeric:tabular-nums; line-height:1;
 }
-.eb-toc-body{display:block}
+/* min-width:0 undoes the default a grid item takes from its content (auto,
+   effectively max-content), which is what let a long chapter title hold its
+   1fr column open to its own unbroken width instead of wrapping. Without it,
+   minmax(0,1fr) on the column above is fighting a min-width the browser set
+   back to auto on this element specifically. overflow-wrap is the floor
+   below that, the same fix .eb-cover h1 already uses for "Industrialization"
+   and "Decolonization": once wrapping has nowhere left to break a line, a
+   single long word still can't hold the column past its own width. */
+.eb-toc-body{display:block; min-width:0}
 .eb-toc-title{
   display:block; font-family:var(--font-display); font-size:1.02rem;
   font-weight:700; letter-spacing:.03em; color:var(--steel); line-height:1.25;
+  overflow-wrap:break-word;
 }
 .eb-toc-title em{font-style:normal;color:var(--oxidized)}
 .eb-toc-meta{
   display:block; margin-top:.3rem; font-family:var(--font-ui);
   font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:var(--iron);
+  overflow-wrap:break-word;
 }
 li.eb-toc-pending{background:#efe9dd}
 /* Sandstone is a dark-surface colour: 8.7:1 on steel, 1.6:1 here, which makes

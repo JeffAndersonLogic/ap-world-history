@@ -66,10 +66,52 @@
  * with webfonts blocked or no network gets Georgia and loses nothing but the
  * brand.
  */
+const GOOGLE_FONTS_HREF =
+  'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap';
+
 const FONT_LINKS =
   `  <link rel="preconnect" href="https://fonts.googleapis.com">\n` +
   `  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n` +
-  `  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">\n`;
+  `  <link href="${GOOGLE_FONTS_HREF}" rel="stylesheet">\n`;
+
+/**
+ * The same brand faces as FONT_LINKS, loaded so a slow or unreachable font
+ * host can never stall the page. A plain <link rel="stylesheet"> is a
+ * render-blocking resource: any script after it in the document, deferred or
+ * not, waits for it to resolve before running, which on a hung connection
+ * (a captive portal, a school content filter that stalls rather than
+ * rejects) turned an eBook volume's first paint into a ten-plus-second wait
+ * despite `display=swap` already being set. `display=swap` fixes invisible
+ * *text* once rendering starts; it does nothing about rendering itself being
+ * gated on the stylesheet. The standard fix is to load the stylesheet as a
+ * non-blocking resource and swap it in once it arrives: `media="print"`
+ * makes the browser fetch it without waiting to apply it, and the `onload`
+ * flips it to `all` the moment it's ready. The `<noscript>` fallback covers
+ * the (rare, and here academic) case of a browser with JavaScript off.
+ *
+ * The href is identical to FONT_LINKS's, on purpose: the two need to name the
+ * exact same URL so a student moving between a lesson's deep reading (which
+ * keeps the blocking FONT_LINKS, see below) and an eBook volume reuses a warm
+ * cache rather than fetching the fonts twice.
+ *
+ * Reserved for the eBook. The standalone deep readings ship no <script> tag
+ * at all, deliberately, so a hand-authored page can never carry a
+ * SyntaxError that silently discards its own behaviour; they keep the
+ * ordinary blocking FONT_LINKS above rather than gain an inline `onload`
+ * handler; they are also read start to finish rather than skimmed for a
+ * volume's whole contents list, so the render-blocking cost this exists to
+ * avoid barely shows up there in the first place. The eBook already loads
+ * behistorical-listen.js on every volume page, so it was never truly
+ * script-free, and it is exactly the surface a slow classroom or home
+ * connection hits hardest: the one meant to work in May, on a phone, on
+ * three weeks of catching up.
+ */
+const FONT_LINKS_ASYNC =
+  `  <link rel="preconnect" href="https://fonts.googleapis.com">\n` +
+  `  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n` +
+  `  <link rel="preload" as="style" href="${GOOGLE_FONTS_HREF}">\n` +
+  `  <link href="${GOOGLE_FONTS_HREF}" rel="stylesheet" media="print" onload="this.media='all'">\n` +
+  `  <noscript><link href="${GOOGLE_FONTS_HREF}" rel="stylesheet"></noscript>\n`;
 
 const ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' };
 
@@ -318,4 +360,4 @@ ${renderChapterBody(topic)}  <footer class="dr-footer">
 `);
 }
 
-module.exports = { renderDeepReadingPage, renderChapterBody, escapeText: esc, FONT_LINKS };
+module.exports = { renderDeepReadingPage, renderChapterBody, escapeText: esc, FONT_LINKS, FONT_LINKS_ASYNC };
