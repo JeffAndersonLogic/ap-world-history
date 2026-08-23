@@ -203,6 +203,20 @@ page's own saved CSV back onto the page reports every row as a duplicate.
 `scripts/test/skills-lens-zip.test.js` asserts exactly that, along with the
 newer-wins, older-loses and undated-refused rules, in a real browser.
 
+**That file is now the only copy, and it is your responsibility to hold, not
+this page's.** The Lens keeps nothing between sessions: `S.sources` is an
+in-memory array, closing the tab or losing the browser destroys it, on
+purpose, because a page that persisted a year of student writing in browser
+storage would be a materially bigger liability than a file on disk. Before
+this merge existed that cost nothing to ignore, since a lost tab only ever
+cost you one evening's drop. It now costs a year's, so treat `responses.csv`
+as the save file it is: drop it back onto the page at the start of every
+session before dropping anything new, so the evening's zip merges into the
+running total instead of quietly starting over, and keep the file itself
+wherever your other student-work files already live under your district's
+retention rules, never on a shared or synced drive the CSP was written to
+keep this data off of.
+
 ### The command line, for a folder or a script
 
 ```bash
