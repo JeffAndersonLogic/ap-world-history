@@ -119,16 +119,45 @@ window.BEHISTORICAL_SCHEDULE = {
     { date: '2026-08-21', topic: 'F5', homework: '' },
 
     // Foundations Assessment, Monday and Tuesday
+    // Homework on both days is Unit 1 prep: the Topic 1.1 required eBook
+    // reading, split across the two nights so all of it is done before the
+    // 1.1 block starts Wednesday. See the two 1.1 entries below for why the
+    // reading is split 01-02-03 / 04-05: each half is read before the class
+    // day that discusses it, not the day it goes out.
     {
       date: '2026-08-24',
       topicTitle: 'Foundations Assessment',
       unit: 'Foundations',
-      homework: ''
+      homework: [
+        'Required eBook reading for Topic 1.1: read Section 01, The Founding Problem, and Section 02, The Exam (ebook/unit-1.html).'
+      ],
+      homeworkDue: 'Wednesday'
     },
     {
       date: '2026-08-25',
       topicTitle: 'Foundations Assessment',
       unit: 'Foundations',
+      homework: [
+        'Required eBook reading for Topic 1.1: read Section 03, Neo-Confucianism, finishing the required reading before class Wednesday.'
+      ],
+      homeworkDue: 'Wednesday'
+    },
+
+    // Topic 1.1, Song China, Wednesday and Thursday
+    // Day 1 discussion covers Sections 01 to 03 (already assigned above, due
+    // today). Day 2 covers Sections 04 and 05, assigned tonight so it is read
+    // before Day 2 rather than due the day it is discussed.
+    {
+      date: '2026-08-26',
+      topic: '1.1',
+      homework: [
+        'Required eBook reading for Topic 1.1: read Section 04, The Economy, and Section 05, The Frontier and the End (ebook/unit-1.html).'
+      ],
+      homeworkDue: 'Thursday'
+    },
+    {
+      date: '2026-08-27',
+      topic: '1.1',
       homework: ''
     }
   ],

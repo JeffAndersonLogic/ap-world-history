@@ -242,13 +242,56 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       date: '2026-08-24',
       unit: 'Foundations',
       topic: 'Foundations Assessment',
-      homework: ''
+      homework: [
+        'Required eBook reading for Topic 1.1: read Section 01, The Founding Problem, and Section 02, The Exam (ebook/unit-1.html).'
+      ],
+      homeworkDue: 'Wednesday'
     },
     /* 2026-08-25  <-  written by hand in the schedule */
     {
       date: '2026-08-25',
       unit: 'Foundations',
       topic: 'Foundations Assessment',
+      homework: [
+        'Required eBook reading for Topic 1.1: read Section 03, Neo-Confucianism, finishing the required reading before class Wednesday.'
+      ],
+      homeworkDue: 'Wednesday'
+    },
+    /* 2026-08-26  <-  lesson-1-1-song-china.js */
+    {
+      date: '2026-08-26',
+      unit: 'Unit 1: The Global Tapestry',
+      topic: 'Song China: Power, Prosperity, and the Scholar\'s World',
+      learningTargets: [
+        { text: 'I can explain how Song China used Confucianism, imperial bureaucracy, and civil service exams to maintain and justify rule.', label: 'Governance' },
+        { text: 'I can describe how Chinese cultural traditions and Buddhism continued to shape East Asia and influence neighboring regions.', label: 'Culture' },
+        { text: 'I can explain how agricultural innovation, infrastructure, and commercialization strengthened Song China\'s economy and connections to wider trade networks.', label: 'Economics' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence such as bureaucracy, civil service exams, Confucianism, or Neo-Confucianism to explain how Song rulers organized power.', label: 'Governance' },
+        { text: 'I can explain how Confucianism, Buddhism, and Chinese cultural traditions continued or changed as they shaped societies in East Asia.', label: 'Culture' },
+        { text: 'I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.', label: 'Economics' }
+      ],
+      homework: [
+        'Required eBook reading for Topic 1.1: read Section 04, The Economy, and Section 05, The Frontier and the End (ebook/unit-1.html).'
+      ],
+      homeworkDue: 'Thursday'
+    },
+    /* 2026-08-27  <-  lesson-1-1-song-china.js */
+    {
+      date: '2026-08-27',
+      unit: 'Unit 1: The Global Tapestry',
+      topic: 'Song China: Power, Prosperity, and the Scholar\'s World',
+      learningTargets: [
+        { text: 'I can explain how Song China used Confucianism, imperial bureaucracy, and civil service exams to maintain and justify rule.', label: 'Governance' },
+        { text: 'I can describe how Chinese cultural traditions and Buddhism continued to shape East Asia and influence neighboring regions.', label: 'Culture' },
+        { text: 'I can explain how agricultural innovation, infrastructure, and commercialization strengthened Song China\'s economy and connections to wider trade networks.', label: 'Economics' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence such as bureaucracy, civil service exams, Confucianism, or Neo-Confucianism to explain how Song rulers organized power.', label: 'Governance' },
+        { text: 'I can explain how Confucianism, Buddhism, and Chinese cultural traditions continued or changed as they shaped societies in East Asia.', label: 'Culture' },
+        { text: 'I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.', label: 'Economics' }
+      ],
       homework: ''
     }
   ],
