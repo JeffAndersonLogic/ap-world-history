@@ -273,12 +273,12 @@ module.exports = {
   closing: {
     heading: 'Building an Answer That Scores',
     navLabel: 'Building a comparison',
-    intro: `Each card is a claim, its evidence and the mechanism. The first card is the classification the learning objective asks for, and the last is the qualification, so write both as full paragraphs.`,
+    intro: `Each card is a claim, its evidence and the mechanism. The first card teaches the classifying move the learning objective asks for and works one category as a model; finishing the other four is your job. The last card is the qualification. Write both as full paragraphs.`,
     pairs: [
       {
-        category: 'Classification',
-        title: 'Responses sort by who was being addressed, not by how angry they were',
-        body: `The objective asks for the various responses, and a list of protests is not a classification. Sort them by the decision-maker. Aimed at lenders: the anti-IMF and anti-World Bank campaigns against conditionality, the austerity protests Walton and Seddon documented across three continents, the Narmada campaign against a specific project. Aimed at trade rules: Seattle in 1999, Cancun in 2003, and the campaign that killed the Multilateral Agreement on Investment in 1998. Aimed at firms: anti-sweatshop campaigning from the mid-1990s and the binding safety accord signed after Rana Plaza in 2013. Carried out by states: Canadian content rules from 1971, France's cultural exception in 1993, the UNESCO cultural diversity convention of 2005, China's blocking of foreign platforms. And rejection rather than reform: religious and nationalist movements that contested what globalization carried while adopting its technologies. Five categories with dated evidence answers the question a list cannot.`
+        category: 'Method',
+        title: 'Sort responses by who was being addressed, not by how angry they were',
+        body: `The objective asks for the various responses, and a list of protests is not a classification. Sort them by the decision-maker being targeted, and here is what that looks like worked once. Aimed at firms: anti-sweatshop campaigning from the mid-1990s pressured brands directly rather than the governments hosting their factories, and after the Rana Plaza collapse in 2013 killed over a thousand garment workers, manufacturers signed a binding safety accord, because the target of the pressure was the company's own name, not a government's policy. That is one category, with dated evidence, answering a decision-maker question rather than a moral one. Four more categories are waiting in this chapter: aimed at lenders, aimed at trade rules, carried out by states, and outright rejection of the whole framework. Find the dated evidence for each before you write your own answer.`
       },
       {
         category: 'Mechanism',

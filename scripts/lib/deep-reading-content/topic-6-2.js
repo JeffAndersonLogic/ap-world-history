@@ -298,8 +298,8 @@ module.exports = {
       },
       {
         category: 'Comparison',
-        title: 'The Congo and Northern Nigeria differ in what the ruler needed from people',
-        body: `Leopold&rsquo;s Free State was his personal property, recognized at Berlin, with no legislature, press or electorate above it, taking wild rubber that could not be intensified by investment, so quotas were enforced by the Force Publique through hostage-taking and mutilation, with officers paid on commission. Nothing in the structure required the population to survive, and the demographic catastrophe that followed is measured in millions with a range no source can narrow. Lugard in Northern Nigeria from 1900 kept the emirs, their courts and their revenue collection and took a share, because a few hundred officials could not govern millions any other way. The difference is not the character of the men: a tax regime needs subjects alive and countable next year, and a wild-commodity quota regime does not.`
+        title: 'Two rulers, two very different things to protect',
+        body: `Leopold&rsquo;s Congo Free State was his personal property, recognized at Berlin, with no legislature, press or electorate above it. It ran on wild rubber, a resource that could not be intensified by investment, so officers paid on commission enforced quotas through the Force Publique&rsquo;s hostage-taking and mutilation, and the demographic catastrophe that followed is measured in millions with a range no source can narrow. Lugard&rsquo;s Northern Nigeria from 1900 ran on tax instead: he kept the emirs, their courts and their revenue collection, and took a share, because a few hundred British officials could never have governed millions any other way. Before you write your own answer, work out what each system needed from its population to keep functioning, and what that need did to how each ruler treated the people under him.`
       },
       {
         category: 'Continuity',
