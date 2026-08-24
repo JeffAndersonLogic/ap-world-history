@@ -243,7 +243,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Foundations',
       topic: 'Foundations Assessment',
       homework: [
-        'Required eBook reading for Topic 1.1: read Section 01, The Founding Problem, and Section 02, The Exam (ebook/unit-1.html).'
+        'Required eBook reading for Topic 1.1, all five sections (ebook/unit-1.html): 01 The Founding Problem, 02 The Exam, 03 Neo-Confucianism, 04 The Economy, 05 The Frontier and the End.'
       ],
       homeworkDue: 'Wednesday'
     },
@@ -252,10 +252,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       date: '2026-08-25',
       unit: 'Foundations',
       topic: 'Foundations Assessment',
-      homework: [
-        'Required eBook reading for Topic 1.1: read Section 03, Neo-Confucianism, finishing the required reading before class Wednesday.'
-      ],
-      homeworkDue: 'Wednesday'
+      homework: ''
     },
     /* 2026-08-26  <-  lesson-1-1-song-china.js */
     {
@@ -272,10 +269,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how Confucianism, Buddhism, and Chinese cultural traditions continued or changed as they shaped societies in East Asia.', label: 'Culture' },
         { text: 'I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.', label: 'Economics' }
       ],
-      homework: [
-        'Required eBook reading for Topic 1.1: read Section 04, The Economy, and Section 05, The Frontier and the End (ebook/unit-1.html).'
-      ],
-      homeworkDue: 'Thursday'
+      homework: ''
     },
     /* 2026-08-27  <-  lesson-1-1-song-china.js */
     {
