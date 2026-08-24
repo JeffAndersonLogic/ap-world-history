@@ -140,15 +140,16 @@ window.BEHISTORICAL_LESSON = {
     embedUrl: 'first-and-10-topic-1-1-song-china-capture.html?v=response-id-fix-v1'
   },
 
+  images: [
+    { title: "Song imperial examination", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG", sourceUrl: "https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG", caption: "Candidates sat for civil service exams built on Confucian texts, the main path into the scholar-official class that ran Song government.", prompt: "What does this image reveal about how Song rulers used bureaucracy and Confucian education to organize and justify power?" },
+    { title: "Confucius portrait, Tang dynasty", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg", sourceUrl: "https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg", caption: "Confucian learning stayed central to elite culture, and Neo-Confucianism carried it into the philosophy taught across East Asia.", prompt: "What does this image reveal about how Chinese cultural traditions continued and spread to influence neighboring regions?" },
+    { title: "Jiaozi paper money", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg", sourceUrl: "https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg", caption: "Jiaozi, the world's earliest paper currency, backed the scale of trade and exchange in Song China's commercialized economy.", prompt: "What does this image reveal about how commercialization and large-scale exchange transformed the Song economy?" }
+  ],
+
   evidenceLab: {
     title: "Evidence Lab: Reading Song China Through Evidence",
-    intro: "Use the evidence to connect Song institutions and innovations to broader historical developments.",
-    prompt: "Choose one piece of evidence from Song China and explain how it supports a claim about political order, cultural influence, or economic commercialization.",
-    items: [
-      { title: "Civil service exams", detail: "Evidence of bureaucratic government and Confucian education." },
-      { title: "Champa rice", detail: "Evidence of agricultural innovation, population growth, and productivity." },
-      { title: "Paper money", detail: "Evidence of commercialization and large-scale exchange." }
-    ]
+    task: "Choose one image and explain what it reveals about political order, cultural influence, or economic commercialization in Song China.",
+    prompt: "Choose one piece of evidence from Song China and explain how it supports a claim about political order, cultural influence, or economic commercialization."
   },
 
   primarySource: {
