@@ -116,6 +116,18 @@ Every script below also has an `npm run` alias; see `package.json`.
   has just stopped saying anything. Expect a high false-positive rate by design;
   see `docs/STYLE.md` for how to triage a hit, and note that the usual repair is
   a narrower **concrete** claim rather than a softer one.
+- `node scripts/report-checkpoint-congruence.js [topicKey] [--counts] [--min=N]`,
+  list checkpoint prompts whose own topic publishes an eBook closing card or
+  "Use this in your answer" box that answers the same specific question, ranked
+  by content-word overlap. **Deliberately not in any suite, and exits 0
+  always**, same reasoning as `report-absolutes.js`: the eBook and a checkpoint
+  are supposed to share evidence about the same events, and whether a given
+  match has crossed from shared evidence into a published conclusion is a
+  judgment about teaching, not something a machine can decide. Topic 5.3 is the
+  case that found this: Checkpoint 2 asks why calling the Luddites
+  "anti-technology" mischaracterizes them, and the chapter's own closing card
+  answers exactly that, with its evidence, on a public page. See the script's
+  header for FINE / REWORD / PROMOTE, the three outcomes for a hit.
 - `node scripts/test/foundations-golden.js`, prove the generated Foundations readings still carry every word, key term, callout, question and answer placeholder the hand-authored pages had. Compares content, not markup, against `scripts/test/fixtures/foundations-before.json`, a committed extraction of the originals. In the offline suite.
 - `node scripts/test/foundations-visual.js [--shots]`, browser check that the shared stylesheet renders those readings the same. Not in the suite: it renders the real pre-migration HTML, which a shallow CI checkout does not have. Run it by hand with `BASE=<ref>` when touching `assets/css/behistorical-first10.css` or the template. Nine reviewed deltas are listed in the script with reasons; anything else fails.
 - `node scripts/normalize-student-facing-language.js`, normalize Canvas guidance and the classroom MagicSchool URL.
