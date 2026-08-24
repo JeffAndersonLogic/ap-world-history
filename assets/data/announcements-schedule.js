@@ -140,8 +140,12 @@ window.BEHISTORICAL_SCHEDULE = {
     },
 
     // Topic 1.1, Song China, Wednesday and Thursday
-    // All required reading was already assigned as one block above; nothing
-    // further goes out during the block itself.
+    // All required reading was already assigned as one block above; the
+    // second day's homework is the single required-reading assignment for
+    // the NEXT block (1.2), posted the last school day before it starts.
+    // This is the pattern for the rest of Unit 1: one homework entry, on
+    // the last school day of the block before, naming every required
+    // section for the block ahead in one line.
     {
       date: '2026-08-26',
       topic: '1.1',
@@ -150,6 +154,104 @@ window.BEHISTORICAL_SCHEDULE = {
     {
       date: '2026-08-27',
       topic: '1.1',
+      homework: [
+        'Required eBook reading for Topic 1.2, four sections (ebook/unit-1.html): 01 The Unraveling of the Caliphate, 02 The Turkic Successor States, 03 How Islam Actually Spread, 04 The Knowledge Machine. (Section 05 is recommended, not required.)'
+      ],
+      homeworkDue: 'Friday'
+    },
+
+    // Topic 1.2, Dar al-Islam, Friday and Monday
+    {
+      date: '2026-08-28',
+      topic: '1.2',
+      homework: ''
+    },
+    {
+      date: '2026-08-31',
+      topic: '1.2',
+      homework: [
+        'Required eBook reading for Topic 1.3, all five sections (ebook/unit-1.html): 01 South Asia After the Sultanate Arrived, 02 Belief and the Social Order in South Asia, 03 The Sea States, 04 The Land States, 05 Religion as Governance.'
+      ],
+      homeworkDue: 'Tuesday'
+    },
+
+    // Topic 1.3, South and Southeast Asia, Tuesday and Wednesday
+    {
+      date: '2026-09-01',
+      topic: '1.3',
+      homework: ''
+    },
+    {
+      date: '2026-09-02',
+      topic: '1.3',
+      homework: [
+        'Required eBook reading for Topic 1.4, all five sections (ebook/unit-1.html): 01 The Maya City-States, 02 The Mexica, 03 The Inca, 04 North America, 05 The Evidence, and Who Wrote It.'
+      ],
+      homeworkDue: 'Thursday'
+    },
+
+    // Topic 1.4, The Americas, Thursday and Friday
+    {
+      date: '2026-09-03',
+      topic: '1.4',
+      homework: ''
+    },
+    {
+      // Assigned over the long weekend: Monday 9/7 is Labor Day, so the 1.5
+      // reading is due Tuesday rather than the usual single school night.
+      date: '2026-09-04',
+      topic: '1.4',
+      homework: [
+        'Required eBook reading for Topic 1.5, three sections (ebook/unit-1.html): 02 The Hausa City-States, 03 Great Zimbabwe, 05 Ethiopia. (Sections 01, Mali, and 04, the Swahili Coast, are recommended, not required.)'
+      ],
+      homeworkDue: 'Tuesday'
+    },
+
+    // Topic 1.5, Africa, Tuesday and Wednesday (Monday 9/7 is Labor Day)
+    {
+      date: '2026-09-08',
+      topic: '1.5',
+      homework: ''
+    },
+    {
+      date: '2026-09-09',
+      topic: '1.5',
+      homework: [
+        'Required eBook reading for Topic 1.6, four sections (ebook/unit-1.html): 01 Fragmentation, 02 The Church, 03 The Monarchies, 04 Towns, Guilds, and the Commercial Revolution. (Section 05, the Fourteenth-Century Crisis, is recommended, not required.)'
+      ],
+      homeworkDue: 'Thursday'
+    },
+
+    // Topic 1.6, Europe, Thursday and Friday
+    // NOTE: 9/10 and 9/11 follow the same back-to-back school-day pattern as
+    // every block above, but are not yet confirmed against the Canvas
+    // calendar the way 1.1 to 1.5 were. Check these two dates before the
+    // board goes live for this block.
+    {
+      date: '2026-09-10',
+      topic: '1.6',
+      homework: ''
+    },
+    {
+      date: '2026-09-11',
+      topic: '1.6',
+      homework: [
+        'Required eBook reading for Topic 1.7, two sections (ebook/unit-1.html): 01 What Comparison Actually Is, 05 Writing It Without Collapsing. (Sections 02 to 04 are reference material for building your comparison, not required reading.)'
+      ],
+      homeworkDue: 'Monday'
+    },
+
+    // Topic 1.7, Comparison, Monday and Tuesday
+    // NOTE: same caveat as 1.6, 9/14 and 9/15 are extrapolated from the
+    // back-to-back pattern, not confirmed against the Canvas calendar.
+    {
+      date: '2026-09-14',
+      topic: '1.7',
+      homework: ''
+    },
+    {
+      date: '2026-09-15',
+      topic: '1.7',
       homework: ''
     }
   ],
