@@ -177,6 +177,18 @@ module.exports = {
           ]
         },
         {
+          heading: `Buddhism's own spread, five centuries before Neo-Confucianism answered it`,
+          blocks: [
+            { p: `By the time Song scholars were building Neo-Confucianism, Buddhism itself had already spread across half of Asia and split into branches that never traveled the same way twice. <span class="kt">Mahayana Buddhism</span> is the branch that took hold in China from the first century CE onward, emphasizing the bodhisattva, a being who has earned enlightenment and stays in the world to help others reach it rather than departing at once. Mahayana moved outward with Chinese cultural forms rather than ahead of them: Japanese pilgrim monks still crossed to Chinese monasteries to study during the Song period, and the Chan school they carried home became Zen in Japan, one more example of the selective borrowing described in section 05, a religious practice adopted on its own terms rather than as part of a package.` },
+            { p: `Two other major branches spread along paths that never ran through China at all, and a student who treats "Buddhism reached East Asia" as one migration with one outcome misses both. <span class="kt">Theravada Buddhism</span>, the older tradition closest to the historical Buddha's own teaching, spread from Sri Lanka into mainland Southeast Asia and became the dominant tradition among the states Topic 1.3 covers, with no Chinese intermediary in the chain at all. <span class="kt">Tibetan Buddhism</span> developed inside Tibet out of Mahayana philosophy, tantric ritual, and the older Bon religion, and it was Tibetan Buddhism, not Confucianism in any form, that the Mongols favored once they had finished conquering the Song and ruled China as the Yuan dynasty.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that "Buddhism spread to East Asia" as though one teaching moved outward from India and landed everywhere the same way. It fits the same pattern as the Confucian institutions in section 05: one wide tradition, diversifying by region, on a different route and a different timeline for each of its major branches, adopted only where it answered a need the receiving society already had.`
+            } }
+          ]
+        },
+        {
           heading: 'Why this made the state stronger',
           blocks: [
             { p: `Look at what that does politically. If the hierarchy of ruler and subject, father and son, husband and wife is not a human custom but part of the pattern of the universe, then obeying it is not submission, it is alignment with reality, and disturbing it is not disagreement, it is disorder. <span class="kt">Filial piety</span>, the duty a son owes his father, becomes the model for the duty a subject owes the emperor, so every family in the empire was rehearsing the political order daily without anyone having to enforce it.` },
@@ -205,6 +217,9 @@ module.exports = {
       terms: [
         ['Neo-Confucianism', 'The Song synthesis, systematized by Zhu Xi, that gave Confucian ethics a metaphysics of principle and material force and absorbed the questions Buddhism had been answering.'],
         ['Zhu Xi', 'The scholar, 1130 to 1200, whose commentaries and Four Books curriculum became the standard of Chinese education, made official under the Yuan in 1313.'],
+        ['Mahayana Buddhism', 'The branch of Buddhism that took hold in China and moved outward with Chinese cultural forms into Korea, Japan, and Vietnam.'],
+        ['Theravada Buddhism', 'The older Buddhist tradition that spread from Sri Lanka into mainland Southeast Asia without passing through China.'],
+        ['Tibetan Buddhism', 'The branch that developed inside Tibet out of Mahayana philosophy, tantric ritual, and the Bon religion, and that the Mongols favored once they ruled China as the Yuan.'],
         ['Foot binding', 'The practice of binding elite girls&rsquo; feet, spreading through the Song elite, which marked status by immobility and reproduced female subordination inside the household.'],
         ['Investigation of things', 'Zhu Xi&rsquo;s method: sustained study of the classics and the world in order to perceive the principle behind them and act in accordance with it.'],
         ['Four Books', 'The short Confucian texts Zhu Xi selected as the core curriculum, which shaped Chinese education for six centuries.']
