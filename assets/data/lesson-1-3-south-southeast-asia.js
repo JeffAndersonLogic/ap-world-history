@@ -192,9 +192,9 @@ window.BEHISTORICAL_LESSON = {
     label: 'CCOT practice, belief systems and state power',
     intro: 'South and Southeast Asia shows how religious traditions continued over time while also changing as they spread. Hinduism, Buddhism, and Islam all adapted to local political and social contexts, but each preserved core practices and beliefs even as rulers, merchants, and scholars adapted them to new settings. A strong CCOT argument identifies what stayed the same, what changed, and why it mattered.',
     steps: [
-      { label: 'Identify the Continuity', text: ', Name a belief system or practice that remained important across the whole period (c. 1200–1450).' },
-      { label: 'Identify the Change', text: ', Explain how the same belief system or practice changed: how rulers used it differently, or how it spread to new places or groups.' },
-      { label: 'Explain the Significance', text: ', Why did this continuity or change matter for how states built power or how societies were organized?' }
+      { label: 'Identify the Continuity', text: 'Name a belief system or practice that remained important across the whole period (c. 1200–1450).' },
+      { label: 'Identify the Change', text: 'Explain how the same belief system or practice changed: how rulers used it differently, or how it spread to new places or groups.' },
+      { label: 'Explain the Significance', text: 'Why did this continuity or change matter for how states built power or how societies were organized?' }
     ],
     prompt: 'Write two to three sentences explaining one continuity AND one change in how belief systems shaped states in South or Southeast Asia between c. 1200 and c. 1450.'
   },
