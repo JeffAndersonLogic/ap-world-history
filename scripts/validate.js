@@ -930,6 +930,13 @@ section('Google Form retirement and MagicSchool wiring');
       err(filePath, 'capture wrapper does not wire MagicSchool, the reading\'s button will do nothing');
       offenders++;
     }
+    // Anderson and Kelly team-teach off this one shared site, each with his own
+    // MagicSchool classroom, so the join link a wrapper opens has to resolve per
+    // student rather than stay fixed at build time. See assets/js/behistorical-classroom.js.
+    if (!src.includes('behistorical-classroom.js')) {
+      err(filePath, 'capture wrapper does not load the classroom resolver, Kelly\'s students would land in Anderson\'s classroom');
+      offenders++;
+    }
   }
 
   // embedUrl must name the capture wrapper, not the reading. Seven Unit 2 topics
@@ -962,6 +969,13 @@ section('Google Form retirement and MagicSchool wiring');
     }
     if (!src.includes('buildAiPrompt')) {
       err(filePath, 'reading has no AI Coach prompt builder');
+      offenders++;
+    }
+    // Readings inline the classroom resolver's source (like the coach prompt
+    // builder) rather than loading it by filename, so this checks for the
+    // function it defines rather than a <script src>.
+    if (!src.includes('id="magicschool-open-link"') || !src.includes('resolveMagicSchoolUrl')) {
+      err(filePath, 'reading\'s MagicSchool button is not classroom-aware, Kelly\'s students would land in Anderson\'s classroom');
       offenders++;
     }
   }
@@ -1038,7 +1052,27 @@ section('BeInTheRoom scenario links and v2 quality contract');
     if (!Array.isArray(scenario.sources) || scenario.sources.length < 2) err(filePath, 'v2 scenario requires at least two historical references');
     if (!linkedTargets.has(filePath)) err(filePath, 'v2 scenario exists but is not linked from its lesson data/config');
   }
-  sectionDone(`${linkedTargets.size} linked scenarios; ${v2Files.length} v2 scenarios`);
+
+  // v1 scenarios build their MagicSchool button by hand instead of through the
+  // shared v2 renderer, so each one has to carry its own classroom resolver.
+  // See scripts/wire-beintheroom-magicschool.js, which wired all of these once;
+  // this is what catches a future scenario, or a hand-revert, that skips it.
+  let v1Wired = 0;
+  for (let unit = 1; unit <= 9; unit++) {
+    const roomDir = path.join(ROOT, 'beintheroom', `unit-${unit}`);
+    for (const filePath of glob(roomDir, /\.html$/)) {
+      const source = read(filePath) || '';
+      if (source.includes('window.BH_ROOM_SCENARIO')) continue;
+      if (!source.includes('joinCode=')) continue;
+      totalChecks++;
+      v1Wired++;
+      if (!source.includes('id="magicschool-open-link"') || !source.includes('behistorical-classroom.js')) {
+        err(filePath, 'v1 BeInTheRoom scenario\'s MagicSchool button is not classroom-aware, Kelly\'s students would land in Anderson\'s classroom');
+      }
+    }
+  }
+
+  sectionDone(`${linkedTargets.size} linked scenarios; ${v2Files.length} v2 scenarios; ${v1Wired} v1 scenarios classroom-aware`);
 }
 
 // 12. Generated project inventory must agree with the completed filesystem.

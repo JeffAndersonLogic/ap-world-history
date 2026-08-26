@@ -261,7 +261,7 @@
           <div class="tool-row">
             <button class="btn" onclick="buildMagicSchoolPayload()">Build Coach Prompt</button>
             <button class="btn secondary" onclick="copyCoachPrompt()">Copy Prompt</button>
-            <button class="btn secondary" onclick="window.open('https://student.magicschool.ai/s/login?joinCode=czwb9Q','_blank','noopener')">Open MagicSchool</button>
+            <button class="btn secondary" id="magicschool-open-link" data-default-href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" onclick="window.open((window.BHClassroom?window.BHClassroom.resolveMagicSchoolUrl(this.getAttribute('data-default-href')):this.getAttribute('data-default-href')),'_blank','noopener')">Open MagicSchool</button>
           </div>
         </article>
 
@@ -300,6 +300,7 @@
     </footer>
   </div>
 
+  <script src="../../assets/js/behistorical-classroom.js"></script>
   <script>
     var roles = {
       economic: { label: 'Chief Economic Advisor', short: 'Economic Advisor' },

@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { CAPTURE_BLOCK } = require('./first10-capture-block');
+const { DEFAULT_MAGICSCHOOL_URL } = require('./classroom-config');
 
 // The reading is a standalone page, so it cannot load the topic renderer and has
 // to carry its own copy of the coach prompt builder. Read from source at build
@@ -10,6 +11,18 @@ const { CAPTURE_BLOCK } = require('./first10-capture-block');
 // inlined by scripts/build-coach-prompt.js instead of being typed twice.
 const COACH_BUILDER_SOURCE = fs.readFileSync(
   path.join(__dirname, '..', '..', 'assets', 'js', 'behistorical-coach-prompt.js'), 'utf8').trim();
+
+// Same reason, for the classroom resolver: a reading is a standalone page and
+// cannot load it from the renderer, so its own copy is read from source at
+// build time by scripts/build-classroom-config.js's --check, which is what
+// keeps this from drifting out of step with assets/js/behistorical-classroom.js.
+const CLASSROOM_SOURCE = fs.readFileSync(
+  path.join(__dirname, '..', '..', 'assets', 'js', 'behistorical-classroom.js'), 'utf8').trim();
+
+// Sets the Open MagicSchool button's href once the classroom resolver has run.
+// A student who followed a `?classroom=<key>` link gets that teacher's join
+// code; everyone else keeps the button's own default, unchanged.
+const WIRE_MAGICSCHOOL_LINK = `(function(){var link=document.getElementById('magicschool-open-link');if(link&&window.BHClassroom){link.href=window.BHClassroom.resolveMagicSchoolUrl(link.getAttribute('data-default-href')||link.href);}})();`;
 
 // A context object is being written into a <script> element, so a literal "</" in
 // any lesson field would end the script early. The data is author-controlled, but
@@ -193,10 +206,12 @@ function copyAiPrompt(){var out=buildAiPrompt();if(navigator.clipboard)navigator
   <div class="be-ready"><h3>${takeawayHeading}</h3><p>${takeawayHtml || esc(takeaway)}</p></div></main>
   <section class="check-section"><div class="check-header"><span class="check-badge">${checkBadgeHtml || esc(checkBadge)}</span><span class="check-title">${checkTitleHtml || esc(checkTitle)}</span></div><ol class="question-list">${questionHtml}</ol></section>
   
-  <section class="builder-section"><h2 class="builder-heading">${builderHeading}</h2><p class="builder-body">${builderBodyHtml || esc(builderBody)}</p><div class="tool-row"><button type="button" onclick="buildAiPrompt()">Build AI Prompt</button><button class="secondary" type="button" onclick="copyAiPrompt()">Copy Prompt</button><a class="tool-button secondary" href="${esc(coachUrl)}" target="_blank" rel="noopener">Open MagicSchool</a></div><textarea class="builder-output" id="ai-output" readonly placeholder="Your prompt will appear here."></textarea></section>
+  <section class="builder-section"><h2 class="builder-heading">${builderHeading}</h2><p class="builder-body">${builderBodyHtml || esc(builderBody)}</p><div class="tool-row"><button type="button" onclick="buildAiPrompt()">Build AI Prompt</button><button class="secondary" type="button" onclick="copyAiPrompt()">Copy Prompt</button><a class="tool-button secondary" id="magicschool-open-link" data-default-href="${esc(coachUrl || DEFAULT_MAGICSCHOOL_URL)}" href="${esc(coachUrl || DEFAULT_MAGICSCHOOL_URL)}" target="_blank" rel="noopener">Open MagicSchool</a></div><textarea class="builder-output" id="ai-output" readonly placeholder="Your prompt will appear here."></textarea></section>
   <p class="page-footer-note">${esc(submitNote)}</p>${showFooter ? `<footer class="module-footer">${showFooterNote ? `<span class="footer-note">${footerNoteHtml || esc(footNote)}</span>` : ''}<nav class="footer-nav"><a class="nav-btn prev" href="${esc(prev.href)}">${prev.label}</a><a class="nav-btn" href="${esc(next.href)}">${next.label}</a></nav></footer>` : ''}
 </div><script>
 var TOPIC_KEY='${esc(topicId)}';var TOPIC_LABEL='${storedLabel}';
+${CLASSROOM_SOURCE}
+${WIRE_MAGICSCHOOL_LINK}
 ${coachContext ? coachPromptScript(coachContext) : (promptScript || defaultPromptScript)}
 ${CAPTURE_BLOCK}
 </script></body></html>\n`;

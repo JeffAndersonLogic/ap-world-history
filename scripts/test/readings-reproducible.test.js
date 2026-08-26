@@ -26,6 +26,7 @@ const ROOT = path.resolve(__dirname, '..', '..');
 const G = '\x1b[32m', R = '\x1b[31m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 
 const SUITES = [
+  ['scripts/build-classroom-config.js', 'classroom config vs scripts/lib/classroom-config.js'],
   ['scripts/build-foundations-readings.js', 'Foundations readings vs foundations-f10-content.js'],
   ['scripts/build-unit-readings.js', 'unit readings vs scripts/lib/reading-content/*'],
   ['scripts/build-unit6.js', 'Unit 6 readings, data, shells and rooms'],

@@ -90,7 +90,7 @@
       </section>
 
       <section class="role-grid" id="ai-coach">
-        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
+        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" id="magicschool-open-link" data-default-href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
       </section>
 
       <section class="role-grid" id="reflection">
@@ -99,7 +99,7 @@
       </section>
     </main>
   </div>
-<script>
+<script src="../../assets/js/behistorical-classroom.js"></script><script>
 const roles={
  'turkic-ruler':{name:'Turkic Military Ruler',status:'Sultan',power:'Commands the army and controls territory through military force',goals:'Establish lasting rule, gain religious legitimacy, prevent rival military leaders from challenging authority',fears:'Being seen as an outsider with no right to rule, rebellion from scholars and local elites',lens:'Power must be demonstrated before it can be respected',challenge:'How do you rule a society whose religion and culture you are still learning?'},
  'islamic-scholar':{name:'Islamic Scholar',status:'Ulama',power:'Controls religious interpretation, education, and moral authority',goals:'Preserve Islamic law and learning, ensure the ruler governs according to sharia, protect the independence of religious institutions',fears:'A ruler who ignores Islamic law or uses religion only for political convenience',lens:'Legitimate rule flows from God through law, not from military strength',challenge:'How do you preserve religious authority when the ruler controls the army?'},
@@ -142,6 +142,6 @@ function applySavedSelections(){if(selectedRole){document.getElementById('role-s
 function loadDrafts(){['decision-response','reflection-response'].forEach(id=>{const saved=localStorage.getItem('beintheroom-abbasid-fragmentation-'+id);if(saved)document.getElementById(id).value=saved})}
 document.addEventListener('input',e=>{if(e.target&&['tradeoff-input','opposition-input'].includes(e.target.id))saveState()});
 renderRoles();renderEvidence();loadState();loadDrafts();applySavedSelections();
-</script>
+(function(){var link=document.getElementById('magicschool-open-link');if(link&&window.BHClassroom){link.href=window.BHClassroom.resolveMagicSchoolUrl(link.getAttribute('data-default-href')||link.href);}})();</script>
 </body>
 </html>

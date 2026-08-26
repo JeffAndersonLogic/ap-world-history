@@ -38,6 +38,7 @@
     "build:socrates": "node scripts/build-socrates.js",
     "eval:socrates": "node scripts/test/socrates-eval.js",
     "build:coach-prompt": "node scripts/build-coach-prompt.js",
+    "build:classroom-config": "node scripts/build-classroom-config.js",
     "check:style": "node scripts/check-style.js"
   },
   "devDependencies": {

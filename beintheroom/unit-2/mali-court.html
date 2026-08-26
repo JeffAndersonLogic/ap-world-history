@@ -90,7 +90,7 @@
       </section>
 
       <section class="role-grid" id="ai-coach">
-        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
+        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" id="magicschool-open-link" data-default-href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
       </section>
 
       <section class="role-grid" id="reflection">
@@ -99,7 +99,7 @@
       </section>
     </main>
   </div>
-<script>
+<script src="../../assets/js/behistorical-classroom.js"></script><script>
 const roles={
  'mansa-musa-advisor':{name:'Advisor to Mansa Musa',status:'Senior court official with the emperor\'s trust',power:'Direct access to the most powerful ruler in West Africa, your advice shapes imperial policy',goals:'Strengthen Mali\'s position, manage the pilgrimage\'s diplomatic and economic implications, protect the court\'s long-term interests',fears:'Policies that destabilize the gold trade, rivals who use the pilgrimage to undermine Mali\'s reputation, religious advisors who push too fast for Islamization',lens:'Power is a tool. Everything, religion, trade, diplomacy, serves the empire\'s survival.',challenge:'Mansa Musa is about to flood the Mediterranean gold market with charity. How do you manage the economic consequences?'},
  'tuareg-caravan-leader':{name:'Tuareg Caravan Leader',status:'Nomadic guide and escort commander for trans-Saharan caravans',power:'Controls access to desert routes, without Tuareg guides, no caravan crosses the Sahara safely',goals:'Maintain profitable relationships with Mali, protect caravan contracts, preserve Tuareg autonomy in the desert',fears:'Mali claiming direct control over routes the Tuareg currently manage, rival nomadic groups, drought that makes the desert impassable',lens:'We know the desert. Mali knows gold. That mutual dependence is our protection.',challenge:'The camel saddle makes the Sahara crossable. But the knowledge of how to cross it is ours. Is that knowledge itself a form of power?'},
@@ -141,6 +141,6 @@ function applySavedSelections(){if(selectedRole){document.getElementById('role-s
 function loadDrafts(){['decision-response','reflection-response'].forEach(id=>{const saved=localStorage.getItem('beintheroom-mali-court-'+id);if(saved)document.getElementById(id).value=saved})}
 document.addEventListener('input',e=>{if(e.target&&['tradeoff-input','opposition-input'].includes(e.target.id))saveState()});
 renderRoles();renderEvidence();loadState();loadDrafts();applySavedSelections();
-</script>
+(function(){var link=document.getElementById('magicschool-open-link');if(link&&window.BHClassroom){link.href=window.BHClassroom.resolveMagicSchoolUrl(link.getAttribute('data-default-href')||link.href);}})();</script>
 </body>
 </html>

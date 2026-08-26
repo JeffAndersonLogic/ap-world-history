@@ -136,6 +136,8 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/test/lecture-deck.test.js`, walk the whole lecture deck on both renderers and assert the student can still scroll afterwards. This is the regression gate for the stranded-student bug described under "The Lecture Deck" below, and it also covers Back to Modules and the video block. In the browser suite.
 - `node scripts/build-skills-map.js`, regenerate `assets/data/skills-map.js`, the AP skill and evidence-term lookup the Skills Lens inlines. Run it after editing a checkpoint's `terms`, a `skillBuilder.label`, or a reading's `q-skill` badges.
 - `node scripts/build-coach-prompt.js`, inline `assets/js/behistorical-coach-prompt.js` into **both** renderers between their sentinels. That file is the one implementation of the AI coach paste contract, shared by the checkpoint bridge, all 77 generated readings, and the Node side. `--check` fails on drift, which is what `validate.js` runs. Never hand-edit between the sentinels.
+- `node scripts/build-classroom-config.js`, regenerate `assets/js/behistorical-classroom.js` from `scripts/lib/classroom-config.js`, and inline it into both renderers and `behistorical-room-v2.js` between sentinels. `--check` fails on drift, which is what the offline suite runs. Never hand-edit between the sentinels or the generated file. See "Two Classrooms, One Site" below.
+- `node scripts/wire-beintheroom-magicschool.js [--dry-run]`, one-time sweep that gives every v1 BeInTheRoom scenario's MagicSchool button the same classroom-aware wiring. Idempotent; run it again after adding a new hand-authored (non-v2) scenario with its own MagicSchool button.
 - `node scripts/test/readings-parse.test.js`, compile the trailing `<script>` of all 77 readings and fail if any is not valid JavaScript. In the offline suite. Ten readings once shipped with a stray `});` that threw a SyntaxError, which discards the whole script element: the AI prompt buttons, the confidence scale, and the answer capture all died at once, with every structural check green because the capture block was present and byte-identical. It was simply unreachable.
 - `node scripts/test/coach-prompt.test.js`, drive a real lesson page in Chromium and assert the checkpoint paste is byte-identical to what `scripts/lib/socrates-course.js` produces. In the browser suite. It is the only check that the renderer actually *calls* the shared builder with the right fields.
 - `node scripts/build-socrates.js`, regenerate the Socrates Kit in `docs/socrates/`: the instructions to paste into MagicSchool, the course spine to attach, and the paste contract. `--check` fails on drift without writing, which is what the offline suite runs. Run it after editing any lesson data or the persona.
@@ -804,6 +806,71 @@ Two things the repo cannot test, so they are manual and written down in
 uploading the spine. Nothing here can log into a vendor web UI. What the repo does
 test is that both documents are reproducible from the lesson data, and that every
 one of the 77 topics can produce a complete context block.
+
+### Two Classrooms, One Site
+
+Anderson team-teaches AP World History with Kelly. Both run their own MagicSchool
+Socrates classroom, on the same shared site, at the same shared URL, with no
+login system to tell one teacher's students from the other's. Left alone, every
+AI Coach and Open MagicSchool button on the site points at Anderson's join link,
+because that link is what every lesson's `meta.feedbackToolUrl`, every capture
+wrapper, and every BeInTheRoom scenario has always hardcoded.
+
+**`scripts/lib/classroom-config.js` is the one place that lists which join link
+belongs to which classroom.** It exports `DEFAULT_MAGICSCHOOL_URL` (Anderson's
+own) and `CLASSROOMS`, a `key -> MagicSchool URL` map for every other teacher.
+Kelly's is `kelly`. Adding a third teacher is one more entry here, a rebuild, and
+a link to give that teacher's students; nothing else in this section changes.
+
+**A student's classroom is chosen once, by a link, and remembered after that.**
+Kelly gives his students a link ending in `?classroom=kelly`, on whatever page
+he wants them to land on first. The first time a student loads a page with that
+parameter, `assets/js/behistorical-classroom.js` writes `kelly` to
+`localStorage` under `behistorical-classroom`, and every classroom-aware button
+on every later page, on that device, resolves to Kelly's join link instead of
+Anderson's, with no parameter needed again. A student who never sees that link,
+or whose browser blocks `localStorage`, gets Anderson's own classroom, unchanged.
+Private browsing and a blocked `localStorage` fail the same way: the resolver
+falls through to the caller's default rather than throwing.
+
+**One browser module, reached four ways**, the same shape as the coach prompt
+builder and for the same reason: a second copy is a second place to fall out of
+sync with `scripts/lib/classroom-config.js`.
+
+- `scripts/build-classroom-config.js` writes `assets/js/behistorical-classroom.js`
+  from the source data, then inlines that same file between sentinels into
+  `assets/js/behistorical-topic-renderer-v1.js`,
+  `foundations/foundations-topic-renderer.js`, and `assets/js/behistorical-room-v2.js`.
+  Inlining, not a fourth `<script src>`, for the same reason the coach prompt
+  builder is inlined: those three files are loaded by hundreds of hand-authored
+  shells and scenario pages, and a shell sweep is exactly the maintenance debt
+  this repo tries not to create. `--check` fails on drift, wired into the offline
+  suite.
+- The 77 capture wrappers and the 77 First & 10 readings are generated pages, so
+  they carry it two different ways instead: a wrapper loads the generated file
+  with a plain `<script src="../assets/js/behistorical-classroom.js">`; a
+  reading inlines the same file's source directly, the way it already inlines
+  the coach prompt builder, because a reading is a standalone page with no
+  renderer underneath it to load from.
+- The 38 hand-authored (non-v2) BeInTheRoom scenarios have no shared generator,
+  so `scripts/wire-beintheroom-magicschool.js` swept all of them once, the same
+  way `remove-google-form-capture.js` normalized the capture wrappers. Run it
+  again for a newly written v1 scenario; it skips anything already wired. The 26
+  v2 scenarios need nothing of their own: `behistorical-room-v2.js` builds their
+  MagicSchool button in JS already, so the sentinel-inlined copy above covers
+  every one of them.
+
+**Every classroom-aware button gets an `id="magicschool-open-link"` and a
+`data-default-href` carrying its own default**, and resolves its real `href` (or
+computes the URL at click time, for the handful of buttons built as
+`<button onclick="window.open(...)">` rather than an anchor) through
+`window.BHClassroom.resolveMagicSchoolUrl(defaultUrl)`. `validate.js` checks
+both halves everywhere a classroom-aware button is supposed to exist: capture
+wrappers and v1 BeInTheRoom scenarios for the `<script src>` and the id;
+readings for `resolveMagicSchoolUrl` and the id, since a reading inlines the
+resolver's source rather than loading it by filename. A hand-revert of any of
+this fails the push instead of silently routing Kelly's students into
+Anderson's classroom.
 
 > **`teacher/skills-lens.html` is the analysis surface**, and it is a teacher
 > tool: never link it from a lesson page. It reads the Canvas `submissions.zip`

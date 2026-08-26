@@ -90,7 +90,7 @@
       </section>
 
       <section class="role-grid" id="ai-coach">
-        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
+        <article class="role-card full"><div class="stage-label">Step 5</div><h2>MagicSchool AI Coach Bridge</h2><p>Use this copy block with your MagicSchool chatbot. The chatbot should question your reasoning and help you revise, not write your final answer.</p><div class="tool-row"><button class="btn" onclick="buildMagicSchoolPayload()">Build MagicSchool Copy Block</button><button class="btn secondary" onclick="copyMagicSchoolPayload()">Copy for MagicSchool</button><a class="btn secondary" id="magicschool-open-link" data-default-href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" href="https://student.magicschool.ai/s/login?joinCode=czwb9Q" target="_blank" rel="noopener">Open MagicSchool</a></div><div id="coach-output" class="coach-box">Select a role, decision, evidence, and draft your argument. Then build the MagicSchool copy block.</div><div class="copy-box" id="magic-copy">MagicSchool copy block will appear here.</div><div class="check-result" id="magic-copy-result"></div></article>
       </section>
 
       <section class="role-grid" id="reflection">
@@ -99,7 +99,7 @@
       </section>
     </main>
   </div>
-<script>
+<script src="../../assets/js/behistorical-classroom.js"></script><script>
 const roles={
  'city-official':{name:'City Official Trying to Maintain Order',status:'Administrator of a city watching its population collapse',power:'Authority to close the city gates, enforce quarantine, manage food distribution, maintain public order',goals:'Minimize deaths, maintain economic function, prevent social collapse, protect the city\'s institutional structures',fears:'Complete breakdown of order, starvation if trade routes are cut, inability to bury the dead, political challenges from desperate populations',lens:'My job is to keep this city functioning. If it stops functioning, more people die than the plague kills.',challenge:'You can close the ports, but that cuts the food supply. You can keep them open, but that brings more plague. There is no good answer.'},
  'physician':{name:'Physician Attempting to Treat the Sick',status:'Medical practitioner whose knowledge is completely inadequate for what they are facing',power:'Professional authority and medical knowledge, but that knowledge is based on humoral theory that cannot explain the plague',goals:'Treat as many patients as possible, understand the cause of the disease, protect yourself enough to keep working',fears:'Contracting the plague yourself, loss of faith in medical knowledge, inability to help the people who are counting on you',lens:'We do not understand this. But we must do something. Doing nothing is also a choice.',challenge:'The best medical knowledge of 1347 is wrong about what causes the plague and wrong about how it spreads. How do you act responsibly when your foundational knowledge is incorrect?'},
@@ -141,6 +141,6 @@ function applySavedSelections(){if(selectedRole){document.getElementById('role-s
 function loadDrafts(){['decision-response','reflection-response'].forEach(id=>{const saved=localStorage.getItem('beintheroom-plague-europe-'+id);if(saved)document.getElementById(id).value=saved})}
 document.addEventListener('input',e=>{if(e.target&&['tradeoff-input','opposition-input'].includes(e.target.id))saveState()});
 renderRoles();renderEvidence();loadState();loadDrafts();applySavedSelections();
-</script>
+(function(){var link=document.getElementById('magicschool-open-link');if(link&&window.BHClassroom){link.href=window.BHClassroom.resolveMagicSchoolUrl(link.getAttribute('data-default-href')||link.href);}})();</script>
 </body>
 </html>
