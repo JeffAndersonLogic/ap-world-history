@@ -660,8 +660,29 @@ const FOUNDATION_WORK_ITEMS=[
   {slot:'checkpoint', label:'Module 06, Checkpoint 1',          prompt:()=>T.checkpoint.prompt},
   {slot:'evidence',   label:'Module 07, Evidence Lab',          prompt:()=>evidence.prompt},
   {slot:'coach',      label:'Module 08, Socrates AI Coach',     prompt:()=>aiCoach.responsePrompt},
+  // Only a real slot once a Foundations topic has a scenario to reflect on;
+  // every Foundations topic currently shows the "coming soon" placeholder.
+  {slot:'beintheroom-response',label:'Module 09, BeInTheRoom Reflection',prompt:()=>(beInTheRoom&&beInTheRoom.url)?BEINTHEROOM_REFLECTION_PROMPT:''},
   {slot:'checkpoint2',label:'Module 10, Checkpoint 2',          prompt:()=>T.exitTicket||T.checkpoint.prompt}
 ];
+
+// BeInTheRoom always opens as its own page, so nothing here can read its
+// textarea directly. See assets/js/behistorical-beintheroom-capture.js and
+// injectBeInTheRoomAnswer() in assets/js/behistorical-topic-renderer-v1.js,
+// which this mirrors.
+const BEINTHEROOM_REFLECTION_PROMPT='Step out of character and explain what this BeInTheRoom scenario reveals about the topic, using specific historical evidence.';
+function injectBeInTheRoomAnswer(stored){
+  if(!FOUNDATION_TOPIC_KEY)return;
+  const raw=BHDraftStore.get(`behistorical-beintheroom-${FOUNDATION_TOPIC_KEY}`);
+  if(!raw)return;
+  let saved;
+  try{saved=JSON.parse(raw);}catch(e){return;}
+  if(!saved)return;
+  const answer=String(saved.a||'').trim();
+  if(!answer)return;
+  stored['beintheroom-response']=answer;
+  if(saved.q)WORK_PROMPTS['beintheroom-response']=String(saved.q);
+}
 
 // The First & 10 renders in an iframe, so its three answers cannot be read off
 // this page: the modal is gone the moment another module opens. The reading
@@ -788,6 +809,7 @@ function collectLessonWork(){
     stored[t.id.indexOf(`${T.id}-`)===0?t.id.slice(`${T.id}-`.length):t.id]=value;
   });
   injectFirst10Answers(stored);
+  injectBeInTheRoomAnswer(stored);
   const ordered=[],listed=new Set();
   FOUNDATION_WORK_ITEMS.forEach(item=>{
     listed.add(item.slot);

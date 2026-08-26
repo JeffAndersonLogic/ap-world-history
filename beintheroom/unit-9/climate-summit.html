@@ -301,7 +301,7 @@
   </div>
 
   <script src="../../assets/js/behistorical-classroom.js"></script>
-  <script>
+  <script src="../../assets/js/behistorical-beintheroom-capture.js"></script><script>
     var roles = {
       economic: { label: 'Chief Economic Advisor', short: 'Economic Advisor' },
       environment: { label: 'Environment Ministry Director', short: 'Environment Director' },
@@ -464,6 +464,6 @@
     }
 
     loadState();
-  </script>
+  (function(){var ids=["reflect1","reflect2","reflect3"];function sync(){var text=ids.map(function(id){var t=document.getElementById(id);return t?t.value:"";}).filter(Boolean).join("\n\n");if(window.BHBeInTheRoomCapture)window.BHBeInTheRoomCapture.save("9.3","Step out of character and explain what this BeInTheRoom scenario reveals about the topic, using specific historical evidence.",text);}ids.forEach(function(id){var t=document.getElementById(id);if(t)t.addEventListener("input",sync);});sync();})();</script>
 </body>
 </html>

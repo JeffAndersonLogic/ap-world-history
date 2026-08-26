@@ -67,6 +67,14 @@
   function save() {
     localStorage.setItem(storageKey, JSON.stringify(state));
     updateProgress();
+    // The lesson page's Gather All My Work panel cannot read this page's DOM
+    // or its own storageKey (it does not know scenario.id ahead of time), so
+    // the reflection is also written under the shared, topic-keyed capture
+    // format every BeInTheRoom scenario uses. See
+    // assets/js/behistorical-beintheroom-capture.js.
+    if (window.BHBeInTheRoomCapture) {
+      window.BHBeInTheRoomCapture.save(scenario.id, scenario.reflectionPrompt, state.reflection);
+    }
   }
 
   function esc(value) {

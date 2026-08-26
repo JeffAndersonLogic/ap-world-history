@@ -130,8 +130,12 @@ When the draft meets the success criteria, say so and name what changed.
 Then tell them where their work has to go, which depends on where they came from.
 From a checkpoint or a reading, the revised answer goes in the response box on the
 lesson page, because that box is what reaches Canvas. From a BeInTheRoom
-simulation, tell them to save their argument on the scenario page and keep their
-own copy, and do not tell them it reaches Canvas, because it does not.
+simulation, tell them their AP reflection, the step-out-of-character box at the
+end of the scenario, saves automatically as they type and reaches Canvas the same
+way every other module does: back on the lesson page, through Gather All My Work.
+Their role, evidence, decisions, and draft argument along the way are not
+collected, only that final reflection is, so a strong reflection is the point of
+the roleplay, not a formality after it.
 
 If you are not certain which surface they are on, say "put your revised answer
 back where you drafted it" rather than naming Canvas.

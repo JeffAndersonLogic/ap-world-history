@@ -1023,6 +1023,9 @@ section('BeInTheRoom scenario links and v2 quality contract');
     const source = read(filePath) || '';
     if (!source.includes('behistorical-room-v2.css')) err(filePath, 'missing shared BeInTheRoom v2 stylesheet');
     if (!source.includes('behistorical-room-v2.js')) err(filePath, 'missing shared BeInTheRoom v2 renderer');
+    if (!source.includes('behistorical-beintheroom-capture.js')) {
+      err(filePath, 'v2 scenario does not load the BeInTheRoom capture bridge, its AP reflection would never reach Gather All My Work');
+    }
     const configMatch = source.match(/window\.BH_ROOM_SCENARIO\s*=\s*([\s\S]*?);<\/script>/);
     if (!configMatch) {
       err(filePath, 'could not locate generated BH_ROOM_SCENARIO configuration');
@@ -1068,6 +1071,16 @@ section('BeInTheRoom scenario links and v2 quality contract');
       v1Wired++;
       if (!source.includes('id="magicschool-open-link"') || !source.includes('behistorical-classroom.js')) {
         err(filePath, 'v1 BeInTheRoom scenario\'s MagicSchool button is not classroom-aware, Kelly\'s students would land in Anderson\'s classroom');
+      }
+
+      // Only a scenario a lesson page can actually reach needs the capture
+      // bridge: a file no lesson data links to has no topic key to write
+      // under and no student ever opens it through the module path. See
+      // scripts/wire-beintheroom-work-capture.js, which wired all of these
+      // once; this is what catches a future scenario, or a hand-revert, that
+      // skips it.
+      if (linkedTargets.has(filePath) && !source.includes('behistorical-beintheroom-capture.js')) {
+        err(filePath, 'v1 BeInTheRoom scenario does not load the BeInTheRoom capture bridge, its AP reflection would never reach Gather All My Work');
       }
     }
   }

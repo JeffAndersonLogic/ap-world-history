@@ -215,7 +215,7 @@
     </main>
   </div>
 
-<script src="../../assets/js/behistorical-classroom.js"></script><script>
+<script src="../../assets/js/behistorical-classroom.js"></script><script src="../../assets/js/behistorical-beintheroom-capture.js"></script><script>
 const roles = {
   secretary: {
     name: 'County Party Secretary',
@@ -551,6 +551,6 @@ renderEvidence();
 loadState();
 loadDrafts();
 applySavedSelections();
-(function(){var link=document.getElementById('magicschool-open-link');if(link&&window.BHClassroom){link.href=window.BHClassroom.resolveMagicSchoolUrl(link.getAttribute('data-default-href')||link.href);}})();</script>
+(function(){var link=document.getElementById('magicschool-open-link');if(link&&window.BHClassroom){link.href=window.BHClassroom.resolveMagicSchoolUrl(link.getAttribute('data-default-href')||link.href);}})();(function(){var ids=["reflection-response"];function sync(){var text=ids.map(function(id){var t=document.getElementById(id);return t?t.value:"";}).filter(Boolean).join("\n\n");if(window.BHBeInTheRoomCapture)window.BHBeInTheRoomCapture.save("8.4","Step out of character and explain what this BeInTheRoom scenario reveals about the topic, using specific historical evidence.",text);}ids.forEach(function(id){var t=document.getElementById(id);if(t)t.addEventListener("input",sync);});sync();})();</script>
 </body>
 </html>

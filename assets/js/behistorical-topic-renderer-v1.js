@@ -1,8 +1,10 @@
 // behistorical-topic-renderer-v1.js
 // BeHistorical AP World History, Shared Topic Renderer
 // Updated: Capture reduced to 3 built touchpoints (First & 10, Checkpoint 1, Checkpoint 2), June 2026,
-//          restored August 2026 after a brief expansion. BeInTheRoom was in the original note but was
-//          never built: module 09 has no textarea and no *-beintheroom Prompt IDs exist on the form.
+//          restored August 2026 after a brief expansion. BeInTheRoom's AP reflection joined the capture
+//          set later that month: every BeInTheRoom scenario page writes its reflection to
+//          behistorical-beintheroom-<TOPIC_KEY> and injectBeInTheRoomAnswer() below pulls it back in,
+//          the same bridge injectFirst10Answers() uses for the First & 10 iframe.
 //          Every other module card keeps a draft box; "Copy All My Work" carries those to Canvas.
 
 const L = window.BEHISTORICAL_LESSON;
@@ -1321,6 +1323,10 @@ const WORK_ITEMS = [
     prompt: () => L.evidenceLab.prompt },
   { id: 'primary-source-response', label: 'Module 08, Primary Source',
     prompt: () => L.primarySource.questions.join(' ') },
+  { id: 'beintheroom-response',    label: 'Module 09, BeInTheRoom Reflection',
+    // Only a real slot when this topic has a scenario to reflect on; a topic
+    // still showing the "coming soon" placeholder has nothing to capture.
+    prompt: () => (L.beInTheRoom && L.beInTheRoom.url) ? BEINTHEROOM_REFLECTION_PROMPT : '' },
   { id: 'checkpoint-two-response', label: 'Module 10, Checkpoint 2',
     prompt: () => L.checkpoints[1].prompt }
 ];
@@ -1375,6 +1381,33 @@ function injectFirst10Answers(stored) {
     // Older payloads predate the confidence field and simply have no `c`.
     if (/^[1-5]$/.test(String(item.c || ''))) WORK_CONFIDENCE[id] = String(item.c);
   });
+}
+
+// BeInTheRoom's default prompt text for the manifest, used whenever the
+// scenario page never captured a more specific one for this topic (v1
+// scenarios use this fallback outright; v2 scenarios capture their own
+// scenario.reflectionPrompt instead, which wins because rememberPrompt()
+// records it in WORK_PROMPTS).
+const BEINTHEROOM_REFLECTION_PROMPT = 'Step out of character and explain what this BeInTheRoom scenario reveals about the topic, using specific historical evidence.';
+
+// BeInTheRoom always opens as its own page, a new tab via window.open, so
+// nothing on this page can read its textarea directly. The scenario page
+// writes its reflection to behistorical-beintheroom-<TOPIC_KEY> instead, with
+// whatever prompt text it actually showed, and this pulls it back in under the
+// beintheroom-response id WORK_ITEMS already declares. See
+// assets/js/behistorical-beintheroom-capture.js.
+function injectBeInTheRoomAnswer(stored) {
+  const topicKey = workTopicId();
+  if (!topicKey) return;
+  const raw = BHDraftStore.get(`behistorical-beintheroom-${topicKey}`);
+  if (!raw) return;
+  let saved;
+  try { saved = JSON.parse(raw); } catch (e) { return; }
+  if (!saved) return;
+  const answer = String(saved.a || '').trim();
+  if (!answer) return;
+  stored['beintheroom-response'] = answer;
+  if (saved.q) rememberPrompt('beintheroom-response', saved.q);
 }
 
 function promptForId(id) {
@@ -1550,6 +1583,7 @@ function collectLessonWork() {
   });
 
   injectFirst10Answers(stored);
+  injectBeInTheRoomAnswer(stored);
 
   const ordered = [];
   const listed = new Set();

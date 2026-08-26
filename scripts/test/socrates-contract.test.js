@@ -100,13 +100,15 @@ const REQUIRED = [
   [/different unit or a different century/i, 'the cross-unit evidence guard'],
   [/[Nn]ever invent a fact/, 'the no-fabrication rule'],
   // Socrates serves BeInTheRoom as well as the checkpoints and the readings. Those
-  // 38 scenario pastes carry a different shape and often their own numbered
-  // coaching sequence, and Module 09 work does NOT reach Canvas. A persona that
-  // knows only the checkpoint path tells a simulation student their argument is
+  // scenario pastes carry a different shape and often their own numbered coaching
+  // sequence. The AP reflection box is the one piece of Module 09 that reaches
+  // Canvas, through Gather All My Work on the lesson page like every other
+  // module; the roleplay choices along the way are not collected. A persona that
+  // knows only the checkpoint path tells a simulation student their reflection is
   // going somewhere it is not.
   [/BeInTheRoom/, 'the BeInTheRoom simulation path'],
   [/follow those\s+stages rather than the order below/, 'deference to a scenario\'s own coaching stages'],
-  [/do not tell them it reaches Canvas, because it does not/, 'the warning that simulation work does not reach Canvas'],
+  [/reaches Canvas the same\s+way every other module does/, 'the note that a BeInTheRoom reflection reaches Canvas through Gather All My Work'],
   // Jeff's call, 2026-08-12: the coach should supply true AP World knowledge the
   // course does not carry, because the course cannot be a catch-all. An earlier
   // persona forbade supplying a correction, which produced a reply that stated a

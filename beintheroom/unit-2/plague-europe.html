@@ -99,7 +99,7 @@
       </section>
     </main>
   </div>
-<script src="../../assets/js/behistorical-classroom.js"></script><script>
+<script src="../../assets/js/behistorical-classroom.js"></script><script src="../../assets/js/behistorical-beintheroom-capture.js"></script><script>
 const roles={
  'city-official':{name:'City Official Trying to Maintain Order',status:'Administrator of a city watching its population collapse',power:'Authority to close the city gates, enforce quarantine, manage food distribution, maintain public order',goals:'Minimize deaths, maintain economic function, prevent social collapse, protect the city\'s institutional structures',fears:'Complete breakdown of order, starvation if trade routes are cut, inability to bury the dead, political challenges from desperate populations',lens:'My job is to keep this city functioning. If it stops functioning, more people die than the plague kills.',challenge:'You can close the ports, but that cuts the food supply. You can keep them open, but that brings more plague. There is no good answer.'},
  'physician':{name:'Physician Attempting to Treat the Sick',status:'Medical practitioner whose knowledge is completely inadequate for what they are facing',power:'Professional authority and medical knowledge, but that knowledge is based on humoral theory that cannot explain the plague',goals:'Treat as many patients as possible, understand the cause of the disease, protect yourself enough to keep working',fears:'Contracting the plague yourself, loss of faith in medical knowledge, inability to help the people who are counting on you',lens:'We do not understand this. But we must do something. Doing nothing is also a choice.',challenge:'The best medical knowledge of 1347 is wrong about what causes the plague and wrong about how it spreads. How do you act responsibly when your foundational knowledge is incorrect?'},
@@ -141,6 +141,6 @@ function applySavedSelections(){if(selectedRole){document.getElementById('role-s
 function loadDrafts(){['decision-response','reflection-response'].forEach(id=>{const saved=localStorage.getItem('beintheroom-plague-europe-'+id);if(saved)document.getElementById(id).value=saved})}
 document.addEventListener('input',e=>{if(e.target&&['tradeoff-input','opposition-input'].includes(e.target.id))saveState()});
 renderRoles();renderEvidence();loadState();loadDrafts();applySavedSelections();
-(function(){var link=document.getElementById('magicschool-open-link');if(link&&window.BHClassroom){link.href=window.BHClassroom.resolveMagicSchoolUrl(link.getAttribute('data-default-href')||link.href);}})();</script>
+(function(){var link=document.getElementById('magicschool-open-link');if(link&&window.BHClassroom){link.href=window.BHClassroom.resolveMagicSchoolUrl(link.getAttribute('data-default-href')||link.href);}})();(function(){var ids=["reflection-response"];function sync(){var text=ids.map(function(id){var t=document.getElementById(id);return t?t.value:"";}).filter(Boolean).join("\n\n");if(window.BHBeInTheRoomCapture)window.BHBeInTheRoomCapture.save("2.6","Step out of character and explain what this BeInTheRoom scenario reveals about the topic, using specific historical evidence.",text);}ids.forEach(function(id){var t=document.getElementById(id);if(t)t.addEventListener("input",sync);});sync();})();</script>
 </body>
 </html>

@@ -17,6 +17,7 @@ function renderRoomPage(scenario) {
 <body>
   <div id="room-app"></div>
   <script>window.BH_ROOM_SCENARIO = ${safeJson(scenario)};</script>
+  <script src="../../assets/js/behistorical-beintheroom-capture.js"></script>
   <script src="../../assets/js/behistorical-room-v2.js"></script>
 </body>
 </html>

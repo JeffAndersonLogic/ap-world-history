@@ -138,6 +138,7 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-coach-prompt.js`, inline `assets/js/behistorical-coach-prompt.js` into **both** renderers between their sentinels. That file is the one implementation of the AI coach paste contract, shared by the checkpoint bridge, all 77 generated readings, and the Node side. `--check` fails on drift, which is what `validate.js` runs. Never hand-edit between the sentinels.
 - `node scripts/build-classroom-config.js`, regenerate `assets/js/behistorical-classroom.js` from `scripts/lib/classroom-config.js`, and inline it into both renderers and `behistorical-room-v2.js` between sentinels. `--check` fails on drift, which is what the offline suite runs. Never hand-edit between the sentinels or the generated file. See "Two Classrooms, One Site" below.
 - `node scripts/wire-beintheroom-magicschool.js [--dry-run]`, one-time sweep that gives every v1 BeInTheRoom scenario's MagicSchool button the same classroom-aware wiring. Idempotent; run it again after adding a new hand-authored (non-v2) scenario with its own MagicSchool button.
+- `node scripts/wire-beintheroom-work-capture.js [--dry-run]`, one-time sweep that gives every hand-authored v1 BeInTheRoom scenario the same wiring to `assets/js/behistorical-beintheroom-capture.js`, so its AP reflection reaches Gather All My Work. Idempotent; run it again after adding a new hand-authored scenario. See "BeInTheRoom reflections reach Canvas" below.
 - `node scripts/test/readings-parse.test.js`, compile the trailing `<script>` of all 77 readings and fail if any is not valid JavaScript. In the offline suite. Ten readings once shipped with a stray `});` that threw a SyntaxError, which discards the whole script element: the AI prompt buttons, the confidence scale, and the answer capture all died at once, with every structural check green because the capture block was present and byte-identical. It was simply unreachable.
 - `node scripts/test/coach-prompt.test.js`, drive a real lesson page in Chromium and assert the checkpoint paste is byte-identical to what `scripts/lib/socrates-course.js` produces. In the browser suite. It is the only check that the renderer actually *calls* the shared builder with the right fields.
 - `node scripts/build-socrates.js`, regenerate the Socrates Kit in `docs/socrates/`: the instructions to paste into MagicSchool, the course spine to attach, and the paste contract. `--check` fails on drift without writing, which is what the offline suite runs. Run it after editing any lesson data or the persona.
@@ -800,6 +801,25 @@ lesson data, with nothing able to tell you when the two disagree. That is the sa
 failure that lost the First & 10 capture block twice, and here it would be worse:
 the coach would keep teaching last term's checkpoint with every structural check
 green.
+
+**BeInTheRoom's AP reflection reaches Canvas.** It used to be true, and the
+persona used to say, that BeInTheRoom work never reached Canvas: module 09 had
+no textarea and no capture wiring at all. It now works the same way First & 10
+does. Every scenario page, v2, the unit-6/unit-9 generated template, and every
+hand-authored v1 scenario, writes its "step out of character" reflection to
+`behistorical-beintheroom-<TOPIC_KEY>` through the one shared bridge,
+`assets/js/behistorical-beintheroom-capture.js`. `injectBeInTheRoomAnswer()` in
+both renderers pulls that back in under the `beintheroom-response` work item, the
+same way `injectFirst10Answers()` pulls in the reading's answers, so it appears
+in Gather All My Work and the Canvas paste like every other module. Only the
+final reflection is captured, never the role, evidence, decisions, or draft
+argument along the way; those stay local to the scenario page, which is why the
+persona still tells a simulation student the roleplay itself is not collected.
+`scripts/wire-beintheroom-work-capture.js` is the one-time sweep that wired the
+26 reachable hand-authored scenarios; three older scenario files
+(`abbasid-fragmentation.html`, `cahokia-council.html`, `khmer-court.html`) sit
+unlinked from any lesson data file and were left alone, the same as the v2
+"linked from its lesson data/config" check already treats an unlinked scenario.
 
 Two things the repo cannot test, so they are manual and written down in
 `docs/socrates/README.md`: pasting the instructions into MagicSchool, and
