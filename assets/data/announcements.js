@@ -250,11 +250,33 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Foundations',
       topic: 'Foundations Assessment',
       homework: ''
+    },
+    /* 2026-08-28  <-  written by hand in the schedule */
+    {
+      date: '2026-08-28',
+      unit: 'Social Media Unit',
+      topic: 'Social Media Unit Exam',
+      homework: '',
+      note: 'Social Media Unit Exam today.'
+    },
+    /* 2026-09-01  <-  written by hand in the schedule */
+    {
+      date: '2026-09-01',
+      unit: 'War in Iran Unit',
+      topic: 'War in Iran, Section 1',
+      homework: ''
+    },
+    /* 2026-09-03  <-  written by hand in the schedule */
+    {
+      date: '2026-09-03',
+      unit: 'War in Iran Unit',
+      topic: 'War in Iran, Section 2',
+      homework: ''
     }
   ],
 
   assessments: [
-    { date: '2026-08-25', title: 'Foundations Assessment', detail: 'Covers Foundations 0 to 5, in class Monday, August 24 and Tuesday, August 25', type: 'Test' }
+    { date: '2026-08-28', title: 'Social Media Unit Exam', detail: 'In class Friday, August 28', type: 'Exam' }
   ],
 
   reminders: [

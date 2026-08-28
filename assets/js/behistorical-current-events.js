@@ -689,6 +689,25 @@
     });
   }
 
+  function renderTopStories() {
+    var host = byId('top-stories-grid');
+    if (!host) return;
+
+    (CE.pinned || []).filter(function (story) {
+      return story && story.title && safeUrl(story.url);
+    }).forEach(function (story) {
+      var card = el('a', 'top-story');
+      card.href = safeUrl(story.url);
+      card.target = '_blank';
+      card.rel = 'noopener noreferrer';
+      card.appendChild(el('span', 'top-story-source', story.source || 'Today\'s wire'));
+      card.appendChild(el('span', 'top-story-title', story.title));
+      if (story.summary) card.appendChild(el('span', 'top-story-summary', story.summary));
+      card.appendChild(el('span', 'top-story-cta', 'Read the story →'));
+      host.appendChild(card);
+    });
+  }
+
   // ── Copy All My Work ───────────────────────────────────────────────────────
   //
   // Same contract as the lesson pages: two clipboard flavours, html so Canvas
@@ -847,6 +866,7 @@
     }
 
     renderMasthead();
+    renderTopStories();
     renderWireDeck();
 
     var host = byId('stations');

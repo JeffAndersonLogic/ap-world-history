@@ -22,7 +22,9 @@ Save. That is the whole job. Everything else on the page renumbers, re-times,
 and re-namespaces itself.
 
 Optional, another minute: paste this week's articles into `pinned`, and comment
-stations in or out of the `stations` array.
+stations in or out of the `stations` array. Pinned articles appear twice: as
+the **Today's Top Stories** cards near the top of the landing page and as the
+directed readings in the Editor's Briefing station.
 
 ### Why `edition.id` matters more than it looks
 

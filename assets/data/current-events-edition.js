@@ -20,10 +20,10 @@ window.BEHISTORICAL_CURRENT_EVENTS = {
 
   /* ── 1. THIS WEEK ──────────────────────────────────────────────────────── */
   edition: {
-    id:       '2026-08-06',                  // YYYY-MM-DD, also the autosave key
-    label:    'Edition 01',
-    title:    'Weekend Update',
-    dateline: 'Thursday, August 6, 2026',
+    id:       '2026-08-28',                  // YYYY-MM-DD, also the autosave key
+    label:    'Edition 02',
+    title:    "Today's Top Stories",
+    dateline: 'Friday, August 28, 2026',
     // No minutes field here on purpose. The desk adds up the stations you left
     // switched on below and prints that total itself, so the masthead can never
     // promise forty five minutes while the page holds seventy.
@@ -69,7 +69,7 @@ window.BEHISTORICAL_CURRENT_EVENTS = {
      into the same worksheet nine times.
 
      Valid keys: GOV, ECN, CDI, TEC, ENV, SIO                                 */
-  beats: ['GOV', 'ECN', 'TEC'],
+  beats: ['GOV', 'ENV', 'SIO'],
 
   /* ── 3b. THE FOUR FRONT PAGES ──────────────────────────────────────────────
      Which outlets students compare in the Front Page Test. Keep one non US
@@ -95,7 +95,40 @@ window.BEHISTORICAL_CURRENT_EVENTS = {
          skill:    'Causation',
          question: 'What changed this week, and who has the most to lose from it?'
        },                                                                     */
-  pinned: [],
+  pinned: [
+    {
+      source: 'Al Jazeera',
+      title: 'Six months of war between Iran, US leave Arab states facing tough questions',
+      url: 'https://www.aljazeera.com/news/2026/8/28/six-months-of-war-between-iran-us-leave-arab-states-facing-tough-questions',
+      summary: 'The conflict has entered a prolonged phase, disrupting Gulf economies and global energy routes.',
+      skill: 'Causation',
+      question: 'Which long-term condition best explains why the conflict has become a war of attrition rather than producing a quick victory?'
+    },
+    {
+      source: 'AP News',
+      title: 'Death toll rises in Nepal-China border disaster to more than 500',
+      url: 'https://apnews.com/article/nepal-tibet-china-glacier-floods-ae9973b5fd2b1dc6d54c3e88b1b55bdc',
+      summary: 'Rescuers are searching for survivors after glacier-linked flooding devastated Himalayan communities.',
+      skill: 'Environment',
+      question: 'How do geography, climate, and infrastructure combine to shape both the disaster and the response?'
+    },
+    {
+      source: 'AP News',
+      title: 'Ebola outbreak in eastern Congo spreads to 2 new health zones',
+      url: 'https://apnews.com/article/ebola-outbreak-congo-615dcbccd5b37f68aca89f8e286f4d7b',
+      summary: 'The fast-moving outbreak is spreading amid displacement, insecurity, and strained public-health systems.',
+      skill: 'Contextualization',
+      question: 'Which political and social conditions are making this outbreak harder to contain?'
+    },
+    {
+      source: 'AP News',
+      title: 'Norway\'s King Harald V dies at 89 and his son becomes King Haakon VIII',
+      url: 'https://apnews.com/article/king-harald-norway-228366941b7c48c59ececf004cc3c467',
+      summary: 'Norway begins a royal transition while elected institutions continue to hold governing power.',
+      skill: 'Continuity and Change',
+      question: 'What changed with the succession, and what remained continuous in Norway\'s political system?'
+    }
+  ],
 
   /* ── 5. LOCAL PAPER ────────────────────────────────────────────────────────
      Confirm these load before class. Local news sites move more often than

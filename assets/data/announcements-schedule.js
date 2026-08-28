@@ -130,6 +130,29 @@ window.BEHISTORICAL_SCHEDULE = {
       topicTitle: 'Foundations Assessment',
       unit: 'Foundations',
       homework: ''
+    },
+
+    // Social Media Unit Exam, Friday
+    {
+      date: '2026-08-28',
+      topicTitle: 'Social Media Unit Exam',
+      unit: 'Social Media Unit',
+      homework: '',
+      note: 'Social Media Unit Exam today.'
+    },
+
+    // War in Iran Unit, Tuesday and Thursday
+    {
+      date: '2026-09-01',
+      topicTitle: 'War in Iran, Section 1',
+      unit: 'War in Iran Unit',
+      homework: ''
+    },
+    {
+      date: '2026-09-03',
+      topicTitle: 'War in Iran, Section 2',
+      unit: 'War in Iran Unit',
+      homework: ''
     }
   ],
 
@@ -142,12 +165,10 @@ window.BEHISTORICAL_SCHEDULE = {
      --------------------------------------------------------- */
   assessments: [
     {
-      // Dated on the second block day so the reminder stays on the board
-      // through both class days.
-      date: '2026-08-25',
-      title: 'Foundations Assessment',
-      detail: 'Covers Foundations 0 to 5, in class Monday, August 24 and Tuesday, August 25',
-      type: 'Test'
+      date: '2026-08-28',
+      title: 'Social Media Unit Exam',
+      detail: 'In class Friday, August 28',
+      type: 'Exam'
     }
   ],
 
