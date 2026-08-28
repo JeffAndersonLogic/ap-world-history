@@ -144,16 +144,61 @@ if (packed.length) fail('reading assignments with no sections to bullet: ' + pac
 else ok('every reading assignment carries its sections as separate items');
 
 /* ---- 5. the board and the Canvas events agree ---- */
+// Canvas creates one event per topic and splits the dates with its own
+// Assign to feature, so the generator prints one row per section under each
+// event. That row is the join between what the projector says tonight and
+// what a student sees in Canvas, and the two disagreeing is silent on both.
 const events = fs.readFileSync(path.join(ROOT, 'docs', 'canvas', 'calendar-events.md'), 'utf8');
+
+const COHORT_LABEL = { green: 'Green Day', silver: 'Silver Day' };
+const WEEKDAY = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const MONTH = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+  'August', 'September', 'October', 'November', 'December'];
+function longDate(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso || ''));
+  if (!m) return '';
+  const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]), 12, 0, 0);
+  return `${WEEKDAY[d.getDay()]}, ${MONTH[d.getMonth()]} ${d.getDate()}`;
+}
+
 const mismatched = [];
 for (const day of announcements.days || []) {
-  if (!day.homeworkDue) continue;
-  if (!events.includes(`Due ${day.homeworkDue}`)) {
-    mismatched.push(`${day.date}: "${day.homeworkDue}" is on the board but in no Canvas event`);
+  if (!day.homework || !day.homework.length) continue;
+  const label = COHORT_LABEL[day.cohort];
+  const taught = longDate(day.date);
+  const wanted = `| ${label} | ${taught} | ${day.homeworkDue} |`;
+  if (!events.includes(wanted)) {
+    mismatched.push(`${day.date}: no Canvas Assign to row "${wanted.trim()}"`);
   }
 }
 if (mismatched.length) fail(mismatched.join('; '));
-else ok('every due date on the board also appears in a Canvas event');
+else ok('every board due date has a matching Canvas Assign to row for its section');
+
+/* ---- 6. one Canvas event per topic, not one per cohort ---- */
+// Canvas has one event and one assignment for the whole course. Two events
+// for one topic would be two objects where the course has one, two places
+// for the text to drift, and a student in the wrong one reading the wrong
+// date. A per-cohort heading is what that regression would look like.
+const headings = events.match(/^## .*$/gm) || [];
+const perCohort = headings.filter((h) => /Green Day|Silver Day/.test(h));
+if (perCohort.length) {
+  fail('Canvas events are split per cohort: ' + perCohort.join(', '));
+} else {
+  ok(`${headings.length - 2} Canvas events, one per topic, none split by cohort`);
+}
+
+// Every topic's event must carry a row for both sections, or one room is
+// pasting an event that never names its own date.
+const topicHeadings = headings.filter((h) => !/^## (Green and Silver|How to paste)/.test(h));
+const missingRows = [];
+for (const h of topicHeadings) {
+  const block = events.slice(events.indexOf(h), events.indexOf('```html', events.indexOf(h)));
+  for (const label of Object.values(COHORT_LABEL)) {
+    if (!block.includes(`| ${label} |`)) missingRows.push(`${h.slice(3)} has no ${label} row`);
+  }
+}
+if (missingRows.length) fail(missingRows.join('; '));
+else ok('every event names both sections in its Assign to table');
 
 console.log('');
 if (failures) {

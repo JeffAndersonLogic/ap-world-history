@@ -14,14 +14,23 @@ node scripts/build-canvas-events.js --check  # fail on drift, write nothing
 
 ## Green and Silver
 
-School days alternate and each topic is taught twice, to two different rooms.
-**Every topic below therefore has two events with two different due dates**, and
-pasting the Green event on the Silver day is the one mistake this document exists
-to prevent. Each event carries its cohort three ways: the colour, the letter, and
-the shape, a filled disc for Green against an open ring for Silver.
+**One event per topic, not one per cohort.** Canvas creates a calendar
+event and an assignment once for the whole course and splits the dates with
+its own **Assign to** feature, so the HTML below is shared by both rooms and
+the dates live per section. Each event is printed with the Assign to rows to
+type in, since those dates are the half this repo can compute and Canvas
+cannot.
 
-Due dates are derived from the schedule, never typed. A holiday or a cancelled
-day is one deleted row in the schedule and every affected due date moves with it.
+School days alternate and each topic is taught twice, so the masthead names
+both meetings and Tonight's Work carries a due chip per cohort. Each cohort
+is marked three ways: the colour, the letter, and the shape, a filled disc
+for Green against an open ring for Silver. Colour alone fails on a
+washed-out projector, in a grayscale print, and for a reader who cannot
+separate the hues.
+
+Due dates are derived from the schedule, never typed: a cohort's work is due
+at that cohort's own next meeting. A holiday or a cancelled day is one
+deleted row in the schedule and every affected date moves with it.
 
 ## How to paste one of these
 
@@ -34,32 +43,37 @@ day is one deleted row in the schedule and every affected due date moves with it
 5. Switch back to the visual editor, delete the `[INSERT ASSIGNMENT LINK]`
    placeholder, and insert the real assignment from the right-hand course-links
    panel. Do not hand-type that link; see Section 5 of `CANVAS-BUILD-GUIDE.md`.
-6. Save.
+6. In **Assign to**, add one row per section using the table printed with the
+   event, and remove the Everyone row so no student inherits the wrong date.
+7. Save.
 
 ---
 
-## F0 - Intro to BeHistorical
+## Topic F0: Intro to BeHistorical
 
-### Green Day &middot; Thursday, August 6
+**Event title:** `APW - F0 - Intro to BeHistorical`
 
-**Event title:** `APW - F0 - Intro to BeHistorical (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** Monday, August 10  
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Thursday, August 6 | Monday, August 10 |
+| Silver Day | Friday, August 7 | Tuesday, August 11 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic F0: Intro to BeHistorical</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Thursday, August 6</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, August 6</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, August 7</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -67,7 +81,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -79,7 +93,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -91,7 +105,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -101,11 +115,14 @@ day is one deleted row in the schedule and every affected due date moves with it
                     <li style="margin: 0 0 8px 0;">Read Theme 1, page 18, in the eBook.
                     </li>
                 </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 3px 8px;">Due Monday, August 10</span></p>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Monday, August 10</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Tuesday, August 11</span></span>
+                </p>
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -113,7 +130,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -124,112 +141,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Friday, August 7
+## Topic F1: Geography Shapes Civilization
 
-**Event title:** `APW - F0 - Intro to BeHistorical (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** Tuesday, August 11  
+**Event title:** `APW - F1 - Geography Shapes Civilization`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Friday, August 7</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Day 0 is the frame for the whole year. Before you learn a single date, you need to know what this course is asking you to become: a historian, with six specific habits of mind. Today you meet the six AP historical thinking skills in plain language, walk through the 10-module rhythm you will see in every class, and write a baseline snapshot of yourself as a historian on Day 1. That baseline becomes the first entry in the Historian's Portfolio you receive in May.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can name the six AP historical thinking skills and give a one-sentence explanation of each in my own words.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe the 10-module structure I will see in every BeHistorical lesson and explain what each module trains.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain what my Historian's Portfolio is and write a baseline self-portrait as a historian, where I am today and where I want to be by May.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can list the six skills (contextualization, comparison, causation, continuity/change, argumentation, sourcing) and give a plain-language definition of each.</li>
-                    <li style="margin: 0 0 6px 0;">I can walk a family member through the 10 modules we use every class and say why each one exists.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe in one sentence what my end-of-year portfolio will contain and who sees it, and write one paragraph in my own voice that captures who I am as a historical thinker on Day 1.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Complete your F0 responses and submit them in Canvas.
-                    </li>
-                    <li style="margin: 0 0 8px 0;">Read Theme 1, page 18, in the eBook.
-                    </li>
-                </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 3px 8px;">Due Tuesday, August 11</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/foundations/foundations-0-intro-to-behistorical.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Foundations 0 - Intro to BeHistorical</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## F1 - Geography Shapes Civilization
-
-### Green Day &middot; Monday, August 10
-
-**Event title:** `APW - F1 - Geography Shapes Civilization (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** Wednesday, August 12  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Monday, August 10 | Wednesday, August 12 |
+| Silver Day | Tuesday, August 11 | Thursday, August 13 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic F1: Geography Shapes Civilization</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Monday, August 10</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, August 10</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, August 11</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -237,7 +173,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -249,7 +185,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -261,7 +197,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -271,11 +207,14 @@ day is one deleted row in the schedule and every affected due date moves with it
                     <li style="margin: 0 0 8px 0;">Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.
                     </li>
                 </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 3px 8px;">Due Wednesday, August 12</span></p>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Wednesday, August 12</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Thursday, August 13</span></span>
+                </p>
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -283,7 +222,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -294,112 +233,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Tuesday, August 11
+## Topic F2: Belief Systems & Cultural Exchange
 
-**Event title:** `APW - F1 - Geography Shapes Civilization (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** Thursday, August 13  
+**Event title:** `APW - F2 - Belief Systems & Cultural Exchange`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Tuesday, August 11</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Geography is the first layer of the AP World operating system. Before you can explain any state, empire, or trade network, you need the event that made all of them possible: the Neolithic Agricultural Revolution, the shift from hunting and gathering to farming. Today you build one causal chain &mdash; geography made farming possible, farming produced surplus, surplus produced civilization &mdash; and you learn to treat geography as an argument, not a backdrop.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain the Neolithic Agricultural Revolution, the shift from hunting and gathering to settled agriculture, and how geography made farming possible in certain river valleys and not in other environments.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how an agricultural surplus produced the characteristics of civilization: cities, specialized labor, government, writing, social classes, and organized religion.</li>
-                    <li style="margin: 0 0 6px 0;">I can write a short contextualization statement connecting a geographic condition to the rise of farming or civilization.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can describe how hunter-forager life differed from settled agricultural life, and name a specific geographic feature, a river, fertile soil, a domesticable species, that made the beginning of agriculture possible.</li>
-                    <li style="margin: 0 0 6px 0;">I can trace the causal chain from agricultural surplus to at least three characteristics of civilization.</li>
-                    <li style="margin: 0 0 6px 0;">I can write a contextualization sentence that identifies a geographic condition and explains how it shaped the shift to farming or the rise of a civilization.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Finish the Foundations 1 modules for Geography Shapes Civilization.
-                    </li>
-                    <li style="margin: 0 0 8px 0;">Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.
-                    </li>
-                </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 3px 8px;">Due Thursday, August 13</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/foundations/foundations-1-geography.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Foundations 1 - Geography Shapes Civilization</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## F2 - Belief Systems & Cultural Exchange
-
-### Green Day &middot; Wednesday, August 12
-
-**Event title:** `APW - F2 - Belief Systems & Cultural Exchange (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** nothing assigned  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Wednesday, August 12 | nothing assigned |
+| Silver Day | Thursday, August 13 | nothing assigned |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic F2: Belief Systems &amp; Cultural Exchange</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Wednesday, August 12</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, August 12</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, August 13</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -407,7 +265,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -419,7 +277,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -431,7 +289,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -439,7 +297,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -447,7 +305,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -458,106 +316,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Thursday, August 13
+## Topic F3: States, Power & Social Organization
 
-**Event title:** `APW - F2 - Belief Systems & Cultural Exchange (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** nothing assigned  
+**Event title:** `APW - F3 - States, Power & Social Organization`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Thursday, August 13</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam were never only private spiritual matters. They were public institutions that organized labor, legitimated authority, structured family life, funded education, and connected communities across enormous distances. Today you learn the core idea of each system, how each one spread, and how each one changed when it entered a new region. Seeing belief systems as institutions rather than only theologies is what lets you analyze them with real historical depth.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can identify the core beliefs and origins of the six major belief systems: Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how belief systems functioned as institutions that organized society, not just private faith.</li>
-                    <li style="margin: 0 0 6px 0;">I can trace how a belief system spread through trade networks, state adoption, or missionary activity, and compare how two of them adapted when they entered a new region (syncretism).</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can state the central idea of each of the six belief systems and where it originated.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify a specific institutional function of a belief system, education, law, welfare, legitimacy, social order, and give a concrete historical example.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain at least one mechanism by which a belief system spread, trade route, state adoption, missionary, civil service exam, or monastic network, and give a specific example of syncretism that shows how belief systems change as they travel.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/foundations/foundations-2-belief-systems.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Foundations 2 - Belief Systems &amp; Cultural Exchange</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## F3 - States, Power & Social Organization
-
-### Green Day &middot; Friday, August 14
-
-**Event title:** `APW - F3 - States, Power & Social Organization (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** nothing assigned  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Friday, August 14 | nothing assigned |
+| Silver Day | Monday, August 17 | nothing assigned |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic F3: States, Power &amp; Social Organization</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Friday, August 14</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, August 14</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, August 17</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -565,7 +348,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -577,7 +360,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -589,7 +372,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -597,7 +380,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -605,7 +388,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -616,106 +399,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Monday, August 17
+## Topic F4: Trade Networks & Innovation
 
-**Event title:** `APW - F3 - States, Power & Social Organization (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** nothing assigned  
+**Event title:** `APW - F4 - Trade Networks & Innovation`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Monday, August 17</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">States are not natural. They are constructed solutions to specific problems: every state has to extract resources, defend territory, administer distant populations, and make its rule feel legitimate rather than merely forced. Persia, Han China, Greece, and Rome answered those same four problems in strikingly different ways, through tolerance and delegated satrapies, through centralized bureaucracy and the Mandate of Heaven, through citizen self-rule in the polis, and through law and expanding citizenship. If you can compare those four answers, you can analyze any state you meet in Units 1 through 9.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how Persia, Han China, Greece, and Rome each solved the core problems of extraction, defense, administration, and legitimacy, and name the specific tools of rule they used, satrapies, bureaucracy, the Mandate of Heaven, citizen democracy, Roman law and citizenship.</li>
-                    <li style="margin: 0 0 6px 0;">I can analyze how social hierarchies were constructed and who was excluded in at least two of these classical societies.</li>
-                    <li style="margin: 0 0 6px 0;">I can compare two classical states and explain a meaningful similarity or difference in how they organized power.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can name a specific tool of rule from one of the four classical civilizations, give an example, and explain the governance problem it solved.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain one example of resistance or exclusion (the Yellow Turbans, Spartacus, Greek or Roman exclusion of non-citizens) and connect it to a limit of state power.</li>
-                    <li style="margin: 0 0 6px 0;">I can compare two of the four states by explaining how each answered the same problem differently, using a specific mechanism, not just "it helped the ruler" but how and why.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/foundations/foundations-3-states-power.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Foundations 3 - States, Power &amp; Social Organization</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## F4 - Trade Networks & Innovation
-
-### Green Day &middot; Tuesday, August 18
-
-**Event title:** `APW - F4 - Trade Networks & Innovation (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** nothing assigned  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Tuesday, August 18 | nothing assigned |
+| Silver Day | Wednesday, August 19 | nothing assigned |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic F4: Trade Networks &amp; Innovation</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Tuesday, August 18</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, August 18</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, August 19</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -723,7 +431,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -735,7 +443,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -747,7 +455,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -755,7 +463,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -763,7 +471,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -774,106 +482,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Wednesday, August 19
+## Topic F5: The World at c.1200 / Thinking Like a Historian
 
-**Event title:** `APW - F4 - Trade Networks & Innovation (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** nothing assigned  
+**Event title:** `APW - F5 - The World at c.1200 / Thinking Like a Historian`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Wednesday, August 19</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Trade routes do not simply move goods. They are systems of human interaction that transform everything they touch. A Sogdian merchant carrying silk from Chang'an to Samarkand is also carrying Tang court aesthetics, Buddhist monastery patronage networks, diseases bred in crowded Chinese cities, and their own religious practice. The goods are the most visible layer, and the invisible layers are often the more consequential ones. Today you learn to see all of them at once.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how each of the four transregional routes operated, the Eurasian Silk Roads, the trans-Saharan caravan routes, the Indian Ocean sea lanes, and the Mediterranean sea lanes, including the climate and terrain each crossed, the goods it typically carried, and the communities who ran it.</li>
-                    <li style="margin: 0 0 6px 0;">I can name the technologies that made long-distance transport possible, a pack-animal technology such as the camel saddle, yoke, or stirrup and a maritime technology such as the lateen sail or the dhow, and I can identify specific non-goods that traveled the networks: crops and irrigation methods, disease pathogens, religious traditions, and people.</li>
-                    <li style="margin: 0 0 6px 0;">I can write a complexity argument explaining how trade networks caused multiple simultaneous changes across different regions.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can name all four required routes, give at least three specific port cities or oasis towns and explain each one's geographic function, and describe how the Indian Ocean monsoon worked, which months, which directions, which sailing routes.</li>
-                    <li style="margin: 0 0 6px 0;">I can name one pack-animal technology and one maritime technology with a date, and I can give at least two specific examples of non-goods traveling the networks, with dates and locations, including one religious tradition that was changed by the journey.</li>
-                    <li style="margin: 0 0 6px 0;">I can write a complexity paragraph that identifies multiple effects of a single trade network and explains how they connected across regions.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/foundations/foundations-4-trade-networks.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Foundations 4 - Trade Networks &amp; Innovation</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## F5 - The World at c.1200 / Thinking Like a Historian
-
-### Green Day &middot; Thursday, August 20
-
-**Event title:** `APW - F5 - The World at c.1200 / Thinking Like a Historian (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** nothing assigned  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Thursday, August 20 | nothing assigned |
+| Silver Day | Friday, August 21 | nothing assigned |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic F5: The World at c.1200 / Thinking Like a Historian</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Thursday, August 20</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, August 20</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, August 21</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -881,7 +514,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -893,7 +526,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -905,7 +538,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -913,7 +546,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -921,7 +554,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -932,106 +565,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Friday, August 21
+## Foundations Assessment
 
-**Event title:** `APW - F5 - The World at c.1200 / Thinking Like a Historian (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** nothing assigned  
+**Event title:** `APW - Foundations Assessment - Foundations Assessment`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Friday, August 21</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Day 5 does two jobs at once. You build the baseline snapshot of the world at c.1200 CE that every later unit refers back to, and you name the AP historical thinking skills out loud for the first time. Those skills were embedded in everything you did on Days 1 through 4 without being called by name. You leave Foundations holding both the content, what the world looked like at c.1200, and the toolkit, how historians explain it.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can describe the world at c.1200 CE across six AP World regions and explain how the Foundations themes, geography, belief systems, states and power, trade networks, built the world we study beginning at c.1200.</li>
-                    <li style="margin: 0 0 6px 0;">I can name and explain the five AP historical thinking skills: contextualization, causation, continuity and change over time (CCOT), comparison, and argumentation.</li>
-                    <li style="margin: 0 0 6px 0;">I can write a complete AP-style SAQ paragraph using a claim, specific evidence, and explicit reasoning.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can write one specific sentence about each of the six AP World regions at c.1200 that names a specific feature, institution, trade connection, or belief system, and explain which Foundations theme mattered most, using evidence from at least two days.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain each AP historical thinking skill in my own words and identify where it appeared in Foundations Days 1–4.</li>
-                    <li style="margin: 0 0 6px 0;">I can write an SAQ paragraph with a defensible claim in the first sentence, at least two specific pieces of historical evidence, and a reasoning sentence that explains the connection.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/foundations/foundations-5-world-at-1200.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Foundations 5 - The World at c.1200 / Thinking Like a Historian</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## Foundations Assessment - Foundations Assessment
-
-### Green Day &middot; Monday, August 24
-
-**Event title:** `APW - Foundations Assessment - Foundations Assessment (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** Wednesday, August 26  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Monday, August 24 | Wednesday, August 26 |
+| Silver Day | Tuesday, August 25 | Thursday, August 27 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Foundations Assessment</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Monday, August 24</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, August 24</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, August 25</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1039,7 +597,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1047,7 +605,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1055,7 +613,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1070,11 +628,14 @@ day is one deleted row in the schedule and every affected due date moves with it
                         </ul>
                     </li>
                 </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 3px 8px;">Due Wednesday, August 26</span></p>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Wednesday, August 26</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Thursday, August 27</span></span>
+                </p>
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1082,7 +643,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1093,109 +654,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Tuesday, August 25
+## Topic 1.1: Song China: Power, Prosperity, and the Scholar's World
 
-**Event title:** `APW - Foundations Assessment - Foundations Assessment (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** Thursday, August 27  
+**Event title:** `APW - 1.1 - Song China: Power, Prosperity, and the Scholar's World`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Foundations</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Tuesday, August 25</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Foundations Assessment covers Foundations 0 through 5: the six AP historical thinking skills, geography and the Neolithic Revolution, belief systems as institutions, how states solve the four problems every state faces, what trade routes actually move, and the snapshot of the world at c. 1200. Everything after this builds on that snapshot, so treat it as the baseline you will keep referring back to rather than as a unit you are finished with.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">This day assesses the targets from the block it closes.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">See the targets for the topics this assessment covers.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 1.1, Song China: Power, Prosperity, and the Scholar's World (ebook/unit-1.html).
-                        <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 The Founding Problem</li>
-                            <li style="margin: 0 0 4px 0;">02 The Exam</li>
-                            <li style="margin: 0 0 4px 0;">03 Neo-Confucianism</li>
-                            <li style="margin: 0 0 4px 0;">04 The Economy</li>
-                            <li style="margin: 0 0 4px 0;">05 The Frontier and the End</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 3px 8px;">Due Thursday, August 27</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">BeHistorical</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## 1.1 - Song China: Power, Prosperity, and the Scholar's World
-
-### Green Day &middot; Wednesday, August 26
-
-**Event title:** `APW - 1.1 - Song China: Power, Prosperity, and the Scholar's World (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** Friday, August 28  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Wednesday, August 26 | Friday, August 28 |
+| Silver Day | Thursday, August 27 | Monday, August 31 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 1.1: Song China: Power, Prosperity, and the Scholar's World</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Wednesday, August 26</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, August 26</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, August 27</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1203,7 +686,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1215,7 +698,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1227,7 +710,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1242,11 +725,14 @@ day is one deleted row in the schedule and every affected due date moves with it
                         </ul>
                     </li>
                 </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 3px 8px;">Due Friday, August 28</span></p>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Friday, August 28</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Monday, August 31</span></span>
+                </p>
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1254,7 +740,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1265,117 +751,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Thursday, August 27
+## Topic 1.2: Developments in Dar al-Islam
 
-**Event title:** `APW - 1.1 - Song China: Power, Prosperity, and the Scholar's World (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** Monday, August 31  
+**Event title:** `APW - 1.2 - Developments in Dar al-Islam`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Thursday, August 27</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Song China ran an empire through paperwork. Where other states of the period rewarded noble families or bought soldiers, the Song recruited officials through a written examination, sealed the candidates' names so the graders could not know whose paper they held, and rotated the winners between posts so that none of them could build a base. Today you follow that machinery, the Neo-Confucian revival that gave it a moral language, the commercial revolution that paid for it, and the northern frontier where the whole arrangement finally cracked. Hold onto the exam in particular: it is one half of a comparison Topic 1.2 will ask you to make.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how Song China used Confucianism, imperial bureaucracy, and civil service exams to maintain and justify rule.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe how Chinese cultural traditions and Buddhism continued to shape East Asia and influence neighboring regions.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how agricultural innovation, infrastructure, and commercialization strengthened Song China's economy and connections to wider trade networks.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence such as bureaucracy, civil service exams, Confucianism, or Neo-Confucianism to explain how Song rulers organized power.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how Confucianism, Buddhism, and Chinese cultural traditions continued or changed as they shaped societies in East Asia.</li>
-                    <li style="margin: 0 0 6px 0;">I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 1.2, Developments in Dar al-Islam (ebook/unit-1.html).
-                        <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 The Unraveling of the Caliphate</li>
-                            <li style="margin: 0 0 4px 0;">02 The Turkic Successor States</li>
-                            <li style="margin: 0 0 4px 0;">03 How Islam Actually Spread</li>
-                            <li style="margin: 0 0 4px 0;">04 The Knowledge Machine</li>
-                            <li style="margin: 0 0 4px 0; color: #57544c;">05 Who Was on Top, and Who Was Not <span style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #57544c;">recommended</span></li>
-                        </ul>
-                    </li>
-                </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 3px 8px;">Due Monday, August 31</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-1/lesson-1-1-song-china.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 1.1 - Song China: Power, Prosperity, and the Scholar's World</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## 1.2 - Developments in Dar al-Islam
-
-### Green Day &middot; Friday, August 28
-
-**Event title:** `APW - 1.2 - Developments in Dar al-Islam (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** Tuesday, September 1  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Friday, August 28 | Tuesday, September 1 |
+| Silver Day | Monday, August 31 | Wednesday, September 2 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 1.2: Developments in Dar al-Islam</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Friday, August 28</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, August 28</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, August 31</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1383,7 +783,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1395,7 +795,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1407,7 +807,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1424,11 +824,14 @@ day is one deleted row in the schedule and every affected due date moves with it
                         </ul>
                     </li>
                 </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 3px 8px;">Due Tuesday, September 1</span></p>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Tuesday, September 1</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Wednesday, September 2</span></span>
+                </p>
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1436,7 +839,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1447,119 +850,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Monday, August 31
+## Topic 1.3: Developments in South and Southeast Asia
 
-**Event title:** `APW - 1.2 - Developments in Dar al-Islam (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** Wednesday, September 2  
+**Event title:** `APW - 1.3 - Developments in South and Southeast Asia`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Monday, August 31</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Abbasid caliph did not fall in 1258. He had been powerless for three hundred years already, kept on his throne by the very soldiers who had taken his power, because the legitimacy attached to him was worth more to them intact than removed. Today you follow what grew in that gap: the Turkic states that formed inside a fragmenting caliphate, the merchants and Sufi teachers who carried Islam into regions no army ever reached, and the cheap paper, shared language, and endowed institutions that let scholarship survive the loss of its own capital. Dar al-Islam is this course's clearest case of cultural coherence outlasting political unity.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how systems of belief and their practices affected society in the period from c. 1200 to c. 1450.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain the causes and effects of the rise of Islamic states over time.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain the effects of intellectual innovation in Dar al-Islam.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can describe how Islamic states changed after Abbasid fragmentation and identify examples such as the Seljuk Empire, Mamluk Sultanate, and Delhi Sultanate.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how Islam spread through military expansion, merchants, missionaries, and Sufi networks.</li>
-                    <li style="margin: 0 0 6px 0;">I can connect scholarship, translation, paper-making, mathematics, medicine, astronomy, and geography to intellectual exchange.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Finish BeInTheRoom, the scholars council, if it did not fit in the block.
-                    </li>
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 1.3, Developments in South and Southeast Asia (ebook/unit-1.html).
-                        <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 South Asia After the Sultanate Arrived</li>
-                            <li style="margin: 0 0 4px 0;">02 Belief and the Social Order in South Asia</li>
-                            <li style="margin: 0 0 4px 0;">03 The Sea States</li>
-                            <li style="margin: 0 0 4px 0;">04 The Land States</li>
-                            <li style="margin: 0 0 4px 0;">05 Religion as Governance</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 3px 8px;">Due Wednesday, September 2</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-1/lesson-1-2-dar-al-islam.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 1.2 - Developments in Dar al-Islam</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## 1.3 - Developments in South and Southeast Asia
-
-### Green Day &middot; Tuesday, September 1
-
-**Event title:** `APW - 1.3 - Developments in South and Southeast Asia (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** Thursday, September 3  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Tuesday, September 1 | Thursday, September 3 |
+| Silver Day | Wednesday, September 2 | Friday, September 4 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 1.3: Developments in South and Southeast Asia</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Tuesday, September 1</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, September 1</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, September 2</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1567,7 +882,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1579,7 +894,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1591,7 +906,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1606,11 +921,14 @@ day is one deleted row in the schedule and every affected due date moves with it
                         </ul>
                     </li>
                 </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 3px 8px;">Due Thursday, September 3</span></p>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Thursday, September 3</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Friday, September 4</span></span>
+                </p>
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1618,7 +936,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1629,117 +947,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Wednesday, September 2
+## Topic 1.4: State Building in the Americas
 
-**Event title:** `APW - 1.3 - Developments in South and Southeast Asia (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** Friday, September 4  
+**Event title:** `APW - 1.4 - State Building in the Americas`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Wednesday, September 2</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">South and Southeast Asia in this period is two problems side by side. Vijayanagara and the Delhi Sultanate were land states, built on rice, water control, and the revenue of farmed territory. Srivijaya, Majapahit, and Melaka were sea states, built on a strait, a monsoon, and the ability to tax whatever passed through. Today you learn what each kind of state needed in order to survive, and what Hinduism, Buddhism, and Islam each did for the rulers who adopted them. The comparison between the two kinds is the thing this topic is actually testing.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how Hinduism, Buddhism, and Islam shaped societies and states in South and Southeast Asia.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe how states such as the Vijayanagara Empire, Delhi Sultanate, Srivijaya, Majapahit, and Khmer Empire used religion, trade, and administration to build power.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how Indian Ocean trade connected South and Southeast Asia to wider Afro-Eurasian networks.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence about Hinduism, Buddhism, Islam, temples, rulers, and merchants to explain how belief systems shaped society.</li>
-                    <li style="margin: 0 0 6px 0;">I can compare how land-based states (Vijayanagara, Khmer) and maritime states (Srivijaya, Majapahit) used religion and geography to build power.</li>
-                    <li style="margin: 0 0 6px 0;">I can connect trade routes, ports, monsoon winds, and merchant communities to political and cultural change in South and Southeast Asia.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 1.4, State Building in the Americas (ebook/unit-1.html).
-                        <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 The Maya City-States</li>
-                            <li style="margin: 0 0 4px 0;">02 The Mexica</li>
-                            <li style="margin: 0 0 4px 0;">03 The Inca</li>
-                            <li style="margin: 0 0 4px 0;">04 North America</li>
-                            <li style="margin: 0 0 4px 0;">05 The Evidence, and Who Wrote It</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 3px 8px;">Due Friday, September 4</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-1/lesson-1-3-south-southeast-asia.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 1.3 - Developments in South and Southeast Asia</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## 1.4 - State Building in the Americas
-
-### Green Day &middot; Thursday, September 3
-
-**Event title:** `APW - 1.4 - State Building in the Americas (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** Tuesday, September 8  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Thursday, September 3 | Tuesday, September 8 |
+| Silver Day | Friday, September 4 | Wednesday, September 9 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 1.4: State Building in the Americas</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Thursday, September 3</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, September 3</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, September 4</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1747,7 +979,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1759,7 +991,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1771,7 +1003,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1786,11 +1018,14 @@ day is one deleted row in the schedule and every affected due date moves with it
                         </ul>
                     </li>
                 </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 3px 8px;">Due Tuesday, September 8</span></p>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Tuesday, September 8</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Wednesday, September 9</span></span>
+                </p>
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1798,7 +1033,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1809,117 +1044,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Friday, September 4
+## Topic 1.5: State Building in Africa
 
-**Event title:** `APW - 1.4 - State Building in the Americas (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** Wednesday, September 9  
+**Event title:** `APW - 1.5 - State Building in Africa`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Friday, September 4</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Maya, the Mexica, and the Inca built three of the largest states of the period without a shared writing system between them, without the wheel in practical use, and, in the Inca case, without money. Today you follow how each one answered the same problems every state faces, extracting resources, holding distant territory, and making rule feel legitimate rather than merely forced: the Mexica through tribute, the Inca through labor owed to the state, the Maya through cities that competed rather than combined. The topic closes on the question the evidence forces, which is who wrote these societies down, and what that does to every claim you make about them.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how and why states in the Americas developed and changed over time.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe how American state systems demonstrated continuity, innovation, diversity, and expanded in scope and reach.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify evidence in a source that supports an argument about state building in the Americas.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use evidence about Maya city-states, Mexica, Inca, Chaco, Mesa Verde, or Cahokia to explain state systems in the Americas.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain continuity, innovation, diversity, or expansion in American state systems.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify evidence used in a source to support an argument about American state building.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 1.5, State Building in Africa (ebook/unit-1.html).
-                        <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">02 The Hausa City-States</li>
-                            <li style="margin: 0 0 4px 0;">03 Great Zimbabwe</li>
-                            <li style="margin: 0 0 4px 0;">05 Ethiopia</li>
-                            <li style="margin: 0 0 4px 0; color: #57544c;">01 Mali <span style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #57544c;">recommended</span></li>
-                            <li style="margin: 0 0 4px 0; color: #57544c;">04 The Swahili Coast <span style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #57544c;">recommended</span></li>
-                        </ul>
-                    </li>
-                </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 3px 8px;">Due Wednesday, September 9</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-1/lesson-1-4-americas.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 1.4 - State Building in the Americas</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## 1.5 - State Building in Africa
-
-### Green Day &middot; Tuesday, September 8
-
-**Event title:** `APW - 1.5 - State Building in Africa (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** Thursday, September 10  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Tuesday, September 8 | Thursday, September 10 |
+| Silver Day | Wednesday, September 9 | Friday, September 11 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 1.5: State Building in Africa</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Tuesday, September 8</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, September 8</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, September 9</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1927,7 +1076,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1939,7 +1088,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1951,7 +1100,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1966,11 +1115,14 @@ day is one deleted row in the schedule and every affected due date moves with it
                         </ul>
                     </li>
                 </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 3px 8px;">Due Thursday, September 10</span></p>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Thursday, September 10</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Friday, September 11</span></span>
+                </p>
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1978,7 +1130,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -1989,117 +1141,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Wednesday, September 9
+## Topic 1.6: Developments in Europe
 
-**Event title:** `APW - 1.5 - State Building in Africa (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** Friday, September 11  
+**Event title:** `APW - 1.6 - Developments in Europe`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Wednesday, September 9</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">African states in this period were built on connection, not isolation. Mali and the Hausa city-states sat on the trans-Saharan routes, the Swahili coast on the Indian Ocean monsoon, Great Zimbabwe on gold moving toward that coast, and Ethiopia on a Christianity older than most of Europe's. Today you learn how each used trade, religion, and architecture to build authority, and you meet a case where the archaeology itself was pressured to produce a politically convenient answer about who built Great Zimbabwe. That last one is a lesson about evidence as much as about Africa.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how and why states in Africa developed and changed from c. 1200 to c. 1450.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe how trade, religion, and geography shaped state power in Great Zimbabwe, Ethiopia, and the Hausa kingdoms.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how Islam and Christianity functioned as tools of governance, not just belief, in African states.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence about Great Zimbabwe's stone enclosures, gold trade, and Indian Ocean connections to explain how it built power.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how Ethiopia's Solomonic dynasty used Christianity and control of Red Sea trade to maintain independence and legitimacy.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe how Hausa city-states used trans-Saharan trade and Islamic administration to build and exercise power.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 1.6, Developments in Europe (ebook/unit-1.html).
-                        <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 Fragmentation</li>
-                            <li style="margin: 0 0 4px 0;">02 The Church</li>
-                            <li style="margin: 0 0 4px 0;">03 The Monarchies</li>
-                            <li style="margin: 0 0 4px 0;">04 Towns, Guilds, and the Commercial Revolution</li>
-                            <li style="margin: 0 0 4px 0; color: #57544c;">05 The Fourteenth-Century Crisis <span style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #57544c;">recommended</span></li>
-                        </ul>
-                    </li>
-                </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 3px 8px;">Due Friday, September 11</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-1/lesson-1-5-africa.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 1.5 - State Building in Africa</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## 1.6 - Developments in Europe
-
-### Green Day &middot; Thursday, September 10
-
-**Event title:** `APW - 1.6 - Developments in Europe (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** Monday, September 14  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Thursday, September 10 | Monday, September 14 |
+| Silver Day | Friday, September 11 | Tuesday, September 15 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 1.6: Developments in Europe</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Thursday, September 10</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, September 10</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, September 11</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2107,7 +1173,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2119,7 +1185,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2131,7 +1197,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2144,11 +1210,14 @@ day is one deleted row in the schedule and every affected due date moves with it
                         <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-style: italic; color: #57544c; margin: 6px 0 0 0;">Sections 02 to 04 are reference material for building your comparison, not required reading.</p>
                     </li>
                 </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 3px 8px;">Due Monday, September 14</span></p>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Monday, September 14</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Tuesday, September 15</span></span>
+                </p>
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2156,7 +1225,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2167,115 +1236,31 @@ day is one deleted row in the schedule and every affected due date moves with it
 </table>
 ```
 
-### Silver Day &middot; Friday, September 11
+## Topic 1.7: Comparison in the Period from c. 1200 to c. 1450
 
-**Event title:** `APW - 1.6 - Developments in Europe (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** Tuesday, September 15  
+**Event title:** `APW - 1.7 - Comparison in the Period from c. 1200 to c. 1450`
 
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Friday, September 11</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Europe is this period's case of a region that did not centralize, and the useful question is what grew in the space where a large state did not. A Church with its own courts, its own revenue, and the power to excommunicate a king. Chartered towns that bought their independence. Guilds. Assemblies that traded money for a say in how it was spent. Today you follow all four, and then the plague, which did more to end serfdom than any monarch managed. Europe earns its place in this unit mostly as a contrast, so keep asking how each of these looks next to Song China or Dar al-Islam.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how European political structures developed in the period c. 1200 to c. 1450.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe how Christianity, feudalism, manorialism, and cities shaped European society.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how Europe compared with other regions of Unit 1 in state power, belief systems, and economic organization.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use evidence about monarchies, nobles, the Church, and decentralized power to explain European politics.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain the roles of feudalism, manorialism, towns, guilds, and trade in European society.</li>
-                    <li style="margin: 0 0 6px 0;">I can compare Europe with Song China, Dar al-Islam, Africa, the Americas, or South and Southeast Asia.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 1.7, Comparison in the Period from c. 1200 to c. 1450 (ebook/unit-1.html).
-                        <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 What Comparison Actually Is</li>
-                            <li style="margin: 0 0 4px 0;">05 Writing It Without Collapsing</li>
-                        </ul>
-                        <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-style: italic; color: #57544c; margin: 6px 0 0 0;">Sections 02 to 04 are reference material for building your comparison, not required reading.</p>
-                    </li>
-                </ul>
-                <p style="margin: 10px 0 0 0;"><span style="display: inline-block; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 3px 8px;">Due Tuesday, September 15</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-1/lesson-1-6-europe.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 1.6 - Developments in Europe</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
+**Assign to, one row per section:**
 
-## 1.7 - Comparison in the Period from c. 1200 to c. 1450
-
-### Green Day &middot; Monday, September 14
-
-**Event title:** `APW - 1.7 - Comparison in the Period from c. 1200 to c. 1450 (Green)`  
-**Cohort:** Green Day (verdigris)  
-**Homework due:** nothing assigned  
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Monday, September 14 | nothing assigned |
+| Silver Day | Tuesday, September 15 | nothing assigned |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 1.7: Comparison in the Period from c. 1200 to c. 1450</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Monday, September 14</span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, September 14</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, September 15</span></span>
     </div>
 </div>
 <table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
     <tbody>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2283,7 +1268,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2295,7 +1280,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2307,7 +1292,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2315,7 +1300,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2323,85 +1308,7 @@ day is one deleted row in the schedule and every affected due date moves with it
             </td>
         </tr>
         <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #2F5C46;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
-
-### Silver Day &middot; Tuesday, September 15
-
-**Event title:** `APW - 1.7 - Comparison in the Period from c. 1200 to c. 1450 (Silver)`  
-**Cohort:** Silver Day (pewter)  
-**Homework due:** nothing assigned  
-
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: #f5f0e7;">BeHistorical</div>
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 1: The Global Tapestry</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span>
-        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span>
-        <span style="padding-left: 10px; color: #f5f0e7;">Tuesday, September 15</span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">This topic adds no new content and one new skill. You already have six regions; today you lay them side by side under one question at a time, how each extracted resources, how each justified its rule, how each ordered its society. Then you learn what a comparison sentence has to contain before it earns anything. Two facts about two places is not a comparison. A claim, the specific evidence underneath it, and the reason the difference existed is.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can compare methods of state building across regions from c. 1200 to c. 1450.</li>
-                    <li style="margin: 0 0 6px 0;">I can compare how belief systems shaped politics and society across Unit 1 regions.</li>
-                    <li style="margin: 0 0 6px 0;">I can write a clear AP-style comparison using specific evidence from at least two regions.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can identify one meaningful similarity and one meaningful difference between two Unit 1 regions.</li>
-                    <li style="margin: 0 0 6px 0;">I can support each comparison with specific evidence such as Song bureaucracy, Dar al-Islam scholarship, Mali trade, Inca roads, or European feudalism.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain why the similarity or difference existed instead of only naming it.</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-1/lesson-1-7-comparison.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 1.7 - Comparison in the Period from c. 1200 to c. 1450</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #8A9298;">
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
@@ -2414,4 +1321,4 @@ day is one deleted row in the schedule and every affected due date moves with it
 
 ---
 
-Built from 28 class days (14 green, 14 silver).
+14 events, built from 28 class days (14 green, 14 silver).

@@ -116,14 +116,25 @@ sentence is how a student reads three.
 
 ### Green and Silver
 
-**Every topic produces two events, not one.** School days alternate, the two
-cohorts are different students, and homework assigned to one is due at that
-cohort's next meeting two school days later. Pasting the Green event on the
-Silver day is the single mistake this document exists to prevent, so each event
-carries its cohort three ways: the colour, the letter G or S, and the shape, a
-filled disc for Green against an open ring for Silver. Colour alone fails on a
-washed-out projector, in a grayscale print, and for a reader who cannot
-separate the hues.
+**One event per topic, not one per cohort.** Canvas creates a calendar event and
+an assignment once for the whole course and splits the dates with its own
+**Assign to** feature, so the pasted HTML is shared by both rooms and the dates
+live per section. Two events for one topic would be two Canvas objects where the
+course has one, two places for the text to drift, and a student in the wrong one
+reading the wrong date. Assignments work the same way.
+
+**The dates are per cohort inside the shared body.** School days alternate, the
+two cohorts are different students, and homework assigned to one is due at that
+cohort's next meeting two school days later, so the masthead names both meeting
+days and `TONIGHT'S WORK` carries a due chip per cohort. Each is marked three
+ways: the colour, the letter G or S, and the shape, a filled disc for Green
+against an open ring for Silver. Colour alone fails on a washed-out projector, in
+a grayscale print, and for a reader who cannot separate the hues.
+
+**Every event is printed with its Assign to rows**, a small table naming each
+section, the day it is taught, and the day its work is due. Those dates are the
+half this repo can compute and Canvas cannot, so type them into Assign to and
+remove the Everyone row, or a student inherits a date meant for the other room.
 
 Green is verdigris and Silver is pewter, defined once in `scripts/lib/cohorts.js`
 and read from there by the generator, the announcements builder and the
@@ -161,8 +172,10 @@ the building for, with every other check green.
 - `width: 22%`
 - `vertical-align: top`
 - `background-color: #f5f0e7`, warm paper
-- `border-left: 5px solid <the cohort's colour>`, which is what makes the
-  cohort readable at a glance down the whole event
+- `border-left: 5px solid #6b3e1f`, oxidized bronze, down the whole label
+  column. It used to carry the cohort's colour, from when an event belonged to
+  one cohort; a shared event has two, so the rule went back to the brand and the
+  cohorts live in the masthead and the due chips instead.
 - the label wrapped in `<h3>` in Montserrat, uppercase, in oxidized bronze
 
 **Antique gold is a dark-surface colour and is not used for text on a light

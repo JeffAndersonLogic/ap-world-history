@@ -10,21 +10,32 @@
    per class day in assets/data/announcements-schedule.js.
 
    ---------------------------------------------------------
-   WHY THIS REPLACED THE FOUNDATIONS-ONLY GENERATOR
+   ONE EVENT PER TOPIC, TWO DATES INSIDE IT
+
+   The unit of generation is the TOPIC, not the class day, because
+   that is how Canvas works. A calendar event and an assignment are
+   created once for all AP students, and Canvas's own Assign to
+   feature splits the dates by section. Emitting one event per
+   cohort would mean two Canvas objects where the course has one,
+   two places for the text to drift, and a student in the wrong
+   one seeing the wrong date.
+
+   So the pasted HTML is shared and the dates are per cohort
+   INSIDE it: the masthead names both meeting days and Tonight's
+   Work carries a due chip per cohort. Each event is printed with
+   the Assign to rows to type into Canvas underneath it, since
+   those dates are the half this repo can compute and Canvas
+   cannot.
+
+   The schedule is still the one place the calendar lives, and the
+   dates are still derived from it: a cohort's due date is that
+   cohort's next meeting. Add days there and the topic's event
+   appears here.
 
    There used to be a second generator, at tools/build-canvas-events.js,
-   deleted on 2026-08-28. It emitted six events, keyed to the six
-   Foundations topics, one per topic. On an alternating block
-   a topic is not one event: it is two, on two dates, for two
-   different rooms, with two different due dates. A generator
-   that cannot say which cohort an event is for cannot put the
-   right date on it, which is the whole reason the old schedule
-   had Silver reading due on a Friday it is never in the building
-   for.
-
-   So the unit of generation is the CLASS DAY, taken from the
-   schedule, and the schedule is the one place the calendar
-   lives. Add a day there and its event appears here.
+   deleted on 2026-08-28. It emitted six events keyed to the six
+   Foundations topics and knew nothing about cohorts at all, so it
+   could not compute either date.
 
    ---------------------------------------------------------
    WHAT CANVAS DOES TO THIS
@@ -243,33 +254,40 @@ function seal(c) {
   );
 }
 
-function band(day, c) {
-  const dateLine = `${longDate(day.date)}`;
-  return [
+/* The masthead names both meetings, because one event is read by both
+   rooms and "which day is mine" is the first question a student has. */
+function band(topic) {
+  const lines = [
     `<div style="background-color: ${STEEL}; border-top: 4px solid ${GOLD}; padding: 14px 18px; color: ${PAPER};">`,
     `    <div style="font-family: ${DISPLAY}; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: ${PAPER};">BeHistorical</div>`,
-    `    <div style="font-family: ${UI}; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: ${GOLD}; padding-top: 4px;">${esc(day.courseName)} &middot; ${esc(day.unit || '')}</div>`,
-    `    <div style="padding-top: 10px; font-family: ${UI}; font-size: 13px; color: ${PAPER};">`,
-    `        ${seal(c)}`,
-    `        <span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: ${c.onDark};">${esc(c.label)}</span>`,
-    `        <span style="padding-left: 10px; color: ${PAPER};">${esc(dateLine)}</span>`,
-    '    </div>',
-    '</div>'
-  ].join('\n');
+    `    <div style="font-family: ${UI}; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: ${GOLD}; padding-top: 4px;">${esc(topic.courseName)} &middot; ${esc(topic.unit || '')}</div>`,
+    `    <div style="font-family: ${DISPLAY}; font-size: 17px; font-weight: bold; color: ${PAPER}; padding-top: 6px;">${esc(topic.heading)}</div>`,
+    `    <div style="padding-top: 10px; font-family: ${UI}; font-size: 13px; color: ${PAPER};">`
+  ];
+  topic.meetings.forEach((m, i) => {
+    const c = m.cohort;
+    lines.push(
+      `        <span style="display: inline-block; padding-right: 22px;">${seal(c)}` +
+      `<span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: ${c.onDark};">${esc(c.label)}</span>` +
+      `<span style="padding-left: 8px; color: ${PAPER};">${esc(longDate(m.date))}</span></span>`
+    );
+  });
+  lines.push('    </div>', '</div>');
+  return lines.join('\n');
 }
 
-function labelCell(text, c) {
+function labelCell(text) {
   return [
-    `            <td style="width: 22%; vertical-align: top; background-color: ${PAPER}; border-left: 5px solid ${c.mark};">`,
+    `            <td style="width: 22%; vertical-align: top; background-color: ${PAPER}; border-left: 5px solid ${OXIDIZED};">`,
     `                <h3 style="font-family: ${UI}; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: ${OXIDIZED}; margin: 0;">${text}</h3>`,
     '            </td>'
   ].join('\n');
 }
 
-function row(label, content, c) {
+function row(label, content) {
   return [
     '        <tr>',
-    labelCell(label, c),
+    labelCell(label),
     `            <td style="vertical-align: top; background-color: ${CLEAN};">`,
     content,
     '            </td>',
@@ -289,34 +307,50 @@ function bulletList(items, emptyMessage) {
   ].join('\n');
 }
 
-function dueChip(text, c) {
-  return (
-    `<span style="display: inline-block; font-family: ${UI}; font-size: 12px; font-weight: bold; ` +
-    `letter-spacing: 0.08em; text-transform: uppercase; color: ${c.ink}; ` +
-    `border: 1px solid ${c.mark}; border-radius: 2px; padding: 3px 8px;">Due ${esc(text)}</span>`
-  );
+/* One chip per cohort. Canvas will show each student only their own date on
+   the assignment itself, but the event body is shared, so both belong here
+   and each has to say whose it is. The seal does that, and the letter and the
+   shape carry it when the colour does not. */
+function dueRow(meetings) {
+  const out = ['                <p style="margin: 12px 0 0 0;">'];
+  meetings.forEach((m) => {
+    const c = m.cohort;
+    if (!m.due) return;
+    out.push(
+      `                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: ${UI}; ` +
+      `font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: ${c.ink}; ` +
+      `border: 1px solid ${c.mark}; border-radius: 2px; padding: 4px 9px;">` +
+      `${seal(c)}<span style="padding-left: 7px; text-transform: uppercase;">${esc(c.short)} due ${esc(m.due)}</span></span>`
+    );
+  });
+  out.push('                </p>');
+  return out.join('\n');
 }
 
 /* Tonight's work. Plain tasks are bullets; a reading is a bullet with its
    sections nested under it, because the sections ARE the assignment and
-   five of them inside one sentence is how a student reads three. */
-function homeworkCell(day, c) {
+   five of them inside one sentence is how a student reads three.
+
+   The list itself is shared: both rooms get the same work. Only the date
+   differs, and that is what the per-cohort chips underneath are for. If the
+   two cohorts are ever assigned different work, the caller has already
+   warned and the Green list is what prints, because a silently merged list
+   would be wrong for one room with nothing to show it. */
+function homeworkCell(topic) {
   const out = [];
-  if (!day.homework.length) {
+  if (!topic.homework.length) {
     out.push(`                <p style="font-family: ${BODY}; font-size: 15px; color: ${MUTED}; margin: 0;">Nothing tonight.</p>`);
     return out.join('\n');
   }
 
   out.push(`                <ul style="margin: 0 0 0 18px; padding: 0; font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK};">`);
-  for (const h of day.homework) {
+  for (const h of topic.homework) {
     out.push(`                    <li style="margin: 0 0 8px 0;">${esc(h.text)}`);
     if (h.items && h.items.length) {
       out.push(`                        <ul style="margin: 6px 0 0 18px; padding: 0;">`);
       for (const b of h.items) {
         const rec = b.tone === 'recommended';
-        const style = rec
-          ? `margin: 0 0 4px 0; color: ${MUTED};`
-          : `margin: 0 0 4px 0;`;
+        const style = rec ? `margin: 0 0 4px 0; color: ${MUTED};` : `margin: 0 0 4px 0;`;
         const tag = rec
           ? ` <span style="font-family: ${UI}; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: ${MUTED};">recommended</span>`
           : '';
@@ -330,26 +364,22 @@ function homeworkCell(day, c) {
     out.push('                    </li>');
   }
   out.push('                </ul>');
-
-  if (day.homeworkDue) {
-    out.push(`                <p style="margin: 10px 0 0 0;">${dueChip(day.homeworkDue, c)}</p>`);
-  }
+  out.push(dueRow(topic.meetings));
   return out.join('\n');
 }
 
-function buildEvent(day, c) {
-  const overview = day.overview;
+function buildEvent(topic) {
   return [
-    band(day, c),
+    band(topic),
     `<table style="border-collapse: collapse; width: 100%; border-color: ${RULE}; border-style: solid;" border="1" cellpadding="10">`,
     '    <tbody>',
-    row('OVERVIEW', `                <p style="font-family: ${BODY}; font-size: 15px; line-height: 1.55; color: ${INK}; margin: 0;">${overview}</p>`, c),
-    row('LEARNING TARGETS', bulletList(day.targets, day.noTargetsMessage), c),
-    row('SUCCESS CRITERIA', bulletList(day.criteria, day.noCriteriaMessage), c),
-    row("TONIGHT'S WORK", homeworkCell(day, c), c),
+    row('OVERVIEW', `                <p style="font-family: ${BODY}; font-size: 15px; line-height: 1.55; color: ${INK}; margin: 0;">${topic.overview}</p>`),
+    row('LEARNING TARGETS', bulletList(topic.targets, topic.noTargetsMessage)),
+    row('SUCCESS CRITERIA', bulletList(topic.criteria, topic.noCriteriaMessage)),
+    row("TONIGHT'S WORK", homeworkCell(topic)),
     row('BeHistorical Link',
-      `                <p style="font-family: ${UI}; font-size: 14px; margin: 0;"><a class="inline_disabled" href="${day.href}" target="_blank" rel="noopener" style="color: ${OXIDIZED}; font-weight: bold;">${esc(day.linkText)}</a></p>`, c),
-    row('ASSIGNMENT', `                <p style="font-family: ${UI}; font-size: 14px; color: ${MUTED}; margin: 0;">[INSERT ASSIGNMENT LINK]</p>`, c),
+      `                <p style="font-family: ${UI}; font-size: 14px; margin: 0;"><a class="inline_disabled" href="${topic.href}" target="_blank" rel="noopener" style="color: ${OXIDIZED}; font-weight: bold;">${esc(topic.linkText)}</a></p>`),
+    row('ASSIGNMENT', `                <p style="font-family: ${UI}; font-size: 14px; color: ${MUTED}; margin: 0;">[INSERT ASSIGNMENT LINK]</p>`),
     '    </tbody>',
     '</table>'
   ].join('\n');
@@ -378,30 +408,27 @@ function build() {
     return '';
   }
 
+  /* One record per class day first, then folded into one record per topic.
+     The day is what the schedule knows; the topic is what Canvas wants. */
   const days = [];
   for (const entry of calendar) {
     const c = lookupCohort(entry.cohort);
     if (!c) {
-      warn(`${entry.date}: no valid cohort, event not built.`);
+      warn(`${entry.date}: no valid cohort, day skipped.`);
       continue;
     }
 
     const wanted = String(entry.topic || '').trim();
     const found = wanted ? index.get(wanted.toLowerCase()) : null;
     if (wanted && !found) {
-      warn(`${entry.date}: no lesson data for topic "${wanted}", event not built.`);
+      warn(`${entry.date}: no lesson data for topic "${wanted}", day skipped.`);
       continue;
     }
 
     const code = found ? found.key : (entry.topicTitle || entry.date);
-    let overview = OVERVIEWS[code];
-    if (!overview) {
-      overview = found && found.subtitle ? esc(found.subtitle) : '';
-      warn(`${code}: no OVERVIEW prose written. Falling back to the lesson subtitle; add an entry to OVERVIEWS in scripts/build-canvas-events.js.`);
-    }
-
     const targets = found ? found.learningTargets : (entry.learningTargets || []);
     const criteria = found ? found.successCriteria : (entry.successCriteria || []);
+
     // A day with no `topic` is an assessment or a flex day. It has no targets
     // of its own by design, so it gets a sentence rather than a warning and an
     // empty row. Only a day that names a topic and still has none is a defect.
@@ -435,30 +462,86 @@ function build() {
     const nextDate = nextMeeting(entry.date, entry.cohort);
     const due = entry.homeworkDue || (nextDate ? longDate(nextDate) : '');
     if (homework.length && !due) {
-      warn(`${entry.date}: homework with no later ${entry.cohort} meeting, so the event carries no due date.`);
+      warn(`${entry.date}: homework with no later ${entry.cohort} meeting, so it carries no due date.`);
     }
 
     days.push({
       date: entry.date,
-      cohortKey: c.key,
+      cohort: c,
       courseName,
       code,
+      isTopicDay,
       unit: entry.unit || (found ? found.unit : ''),
       title: entry.topicTitle || (found ? found.title : ''),
-      overview,
       targets,
       criteria,
-      noTargetsMessage: isTopicDay
-        ? 'None listed. Do not paste this event.'
-        : 'This day assesses the targets from the block it closes.',
-      noCriteriaMessage: isTopicDay
-        ? 'None listed. Do not paste this event.'
-        : 'See the targets for the topics this assessment covers.',
       homework,
-      homeworkDue: homework.length ? due : '',
+      due: homework.length ? due : '',
       href: found ? found.href : `${BASE_URL}/`,
       linkText: found ? found.linkText : 'BeHistorical'
     });
+  }
+
+  /* Fold the days into topics. Canvas creates one event and one assignment
+     for the whole course and splits the dates by section, so two events for
+     one topic would be two Canvas objects where the course has one, two
+     places for the text to drift, and a student in the wrong one reading the
+     wrong date. */
+  const topics = [];
+  const byCode = new Map();
+  for (const day of days) {
+    let topic = byCode.get(day.code);
+    if (!topic) {
+      let overview = OVERVIEWS[day.code];
+      if (!overview) {
+        overview = day.title || day.code ? esc((index.get(String(day.code).toLowerCase()) || {}).subtitle || '') : '';
+        warn(`${day.code}: no OVERVIEW prose written. Falling back to the lesson subtitle; add an entry to OVERVIEWS in scripts/build-canvas-events.js.`);
+      }
+      topic = {
+        code: day.code,
+        courseName: day.courseName,
+        unit: day.unit,
+        title: day.title,
+        heading: day.isTopicDay
+          ? `Topic ${day.code}${day.title ? ': ' + day.title : ''}`
+          : (day.title || day.code),
+        overview,
+        targets: day.targets,
+        criteria: day.criteria,
+        homework: day.homework,
+        href: day.href,
+        linkText: day.linkText,
+        noTargetsMessage: day.isTopicDay
+          ? 'None listed. Do not paste this event.'
+          : 'This day assesses the targets from the block it closes.',
+        noCriteriaMessage: day.isTopicDay
+          ? 'None listed. Do not paste this event.'
+          : 'See the targets for the topics this assessment covers.',
+        meetings: []
+      };
+      byCode.set(day.code, topic);
+      topics.push(topic);
+    }
+
+    // Both rooms get the same work; only the date differs. If they ever do
+    // not, say so rather than merging two lists into one that is wrong for
+    // somebody, and keep the first cohort's, which is Green's.
+    const a = JSON.stringify(topic.homework);
+    const b = JSON.stringify(day.homework);
+    if (topic.meetings.length && a !== b) {
+      warn(`${topic.code}: ${day.cohort.label} is assigned different homework from ` +
+        `${topic.meetings[0].cohort.label}. The event prints ${topic.meetings[0].cohort.label}'s. ` +
+        `Split them into two Canvas assignments, or make the schedule agree.`);
+    }
+
+    topic.meetings.push({ date: day.date, cohort: day.cohort, due: day.due });
+  }
+
+  for (const topic of topics) {
+    if (topic.meetings.length < 2) {
+      warn(`${topic.code}: only ${topic.meetings.length} meeting in the schedule. ` +
+        `A topic is normally taught to both cohorts.`);
+    }
   }
 
   /* ---- the document ---- */
@@ -479,14 +562,23 @@ function build() {
   out.push('');
   out.push('## Green and Silver');
   out.push('');
-  out.push('School days alternate and each topic is taught twice, to two different rooms.');
-  out.push('**Every topic below therefore has two events with two different due dates**, and');
-  out.push('pasting the Green event on the Silver day is the one mistake this document exists');
-  out.push('to prevent. Each event carries its cohort three ways: the colour, the letter, and');
-  out.push('the shape, a filled disc for Green against an open ring for Silver.');
+  out.push('**One event per topic, not one per cohort.** Canvas creates a calendar');
+  out.push('event and an assignment once for the whole course and splits the dates with');
+  out.push('its own **Assign to** feature, so the HTML below is shared by both rooms and');
+  out.push('the dates live per section. Each event is printed with the Assign to rows to');
+  out.push('type in, since those dates are the half this repo can compute and Canvas');
+  out.push('cannot.');
   out.push('');
-  out.push('Due dates are derived from the schedule, never typed. A holiday or a cancelled');
-  out.push('day is one deleted row in the schedule and every affected due date moves with it.');
+  out.push('School days alternate and each topic is taught twice, so the masthead names');
+  out.push("both meetings and Tonight's Work carries a due chip per cohort. Each cohort");
+  out.push('is marked three ways: the colour, the letter, and the shape, a filled disc');
+  out.push('for Green against an open ring for Silver. Colour alone fails on a');
+  out.push('washed-out projector, in a grayscale print, and for a reader who cannot');
+  out.push('separate the hues.');
+  out.push('');
+  out.push('Due dates are derived from the schedule, never typed: a cohort\'s work is due');
+  out.push('at that cohort\'s own next meeting. A holiday or a cancelled day is one');
+  out.push('deleted row in the schedule and every affected date moves with it.');
   out.push('');
   out.push('## How to paste one of these');
   out.push('');
@@ -499,36 +591,37 @@ function build() {
   out.push('5. Switch back to the visual editor, delete the `[INSERT ASSIGNMENT LINK]`');
   out.push('   placeholder, and insert the real assignment from the right-hand course-links');
   out.push('   panel. Do not hand-type that link; see Section 5 of `CANVAS-BUILD-GUIDE.md`.');
-  out.push('6. Save.');
+  out.push('6. In **Assign to**, add one row per section using the table printed with the');
+  out.push('   event, and remove the Everyone row so no student inherits the wrong date.');
+  out.push('7. Save.');
   out.push('');
   out.push('---');
   out.push('');
 
-  let currentTopic = null;
-  for (const day of days) {
-    const c = lookupCohort(day.cohortKey);
-    if (day.code !== currentTopic) {
-      currentTopic = day.code;
-      out.push(`## ${day.code}${day.title ? ' - ' + day.title : ''}`);
-      out.push('');
-    }
-    out.push(`### ${c.label} &middot; ${longDate(day.date)}`);
+  for (const topic of topics) {
+    out.push(`## ${topic.heading}`);
     out.push('');
-    out.push(`**Event title:** \`APW - ${day.code} - ${day.title || ''} (${c.short})\`  `);
-    out.push(`**Cohort:** ${c.label} (${c.metal})  `);
-    out.push(`**Homework due:** ${day.homeworkDue || 'nothing assigned'}  `);
+    out.push(`**Event title:** \`APW - ${topic.code}${topic.title ? ' - ' + topic.title : ''}\``);
+    out.push('');
+    out.push('**Assign to, one row per section:**');
+    out.push('');
+    out.push('| Section | Taught | Work due |');
+    out.push('| --- | --- | --- |');
+    for (const m of topic.meetings) {
+      out.push(`| ${m.cohort.label} | ${longDate(m.date)} | ${m.due || 'nothing assigned'} |`);
+    }
     out.push('');
     out.push('```html');
-    out.push(buildEvent(day, c));
+    out.push(buildEvent(topic));
     out.push('```');
     out.push('');
   }
 
   out.push('---');
   out.push('');
-  out.push(`Built from ${days.length} class days ` +
-    `(${days.filter((d) => d.cohortKey === 'green').length} green, ` +
-    `${days.filter((d) => d.cohortKey === 'silver').length} silver).`);
+  out.push(`${topics.length} events, built from ${days.length} class days ` +
+    `(${days.filter((d) => d.cohort.key === 'green').length} green, ` +
+    `${days.filter((d) => d.cohort.key === 'silver').length} silver).`);
   out.push('');
 
   return out.join('\n');
