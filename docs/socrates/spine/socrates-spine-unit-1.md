@@ -41,9 +41,9 @@ Strong answer checklist: Use one cultural example. Use one economic or technolog
 
 **College Board key concepts.**
 - KC-3.1.III.D.iii (Culture): Islam, Judaism, Christianity, and the core beliefs and practices of these religions continued to shape societies in Africa and Asia.
-- KC-3.2.I (Governance): As the Abbasid Caliphate fragmented, new Islamic political entities emerged, most of which were dominated by Turkic peoples. These states demonstrated continuity, innovation, and diversity. Illustrative examples: Seljuk Empire, Mamluk Sultanate of Egypt, Delhi Sultanates.
+- KC-3.2.I (Governance): As the Abbasid Caliphate fragmented, new Islamic political entities emerged, most of which were dominated by Turkic peoples. These states demonstrated continuity, innovation, and diversity. Illustrative examples: Seljuk Empire, Mamluk sultanate of Egypt, Delhi sultanates.
 - KC-3.1.III.A (Culture): Muslim rule continued to expand to many parts of Afro-Eurasia due to military expansion, and Islam subsequently expanded through the activities of merchants, missionaries, and Sufis.
-- KC-3.2.II.A.i (Technology): Muslim states and empires encouraged significant intellectual innovations and transfers. Illustrative examples: Advances in mathematics (Nasir al-Din al-Tusi), Advances in literature (A'ishah al-Ba'uniyyah), Advances in medicine, Preservation and commentaries on Greek moral and natural philosophy, House of Wisdom in Abbasid Baghdad, Scholarly and cultural transfers in Muslim and Christian Spain.
+- KC-3.2.II.A.i (Technology): Muslim states and empires encouraged significant intellectual innovations and transfers. Illustrative examples: Advances in mathematics (Nasir al-Din al-Tusi), Advances in literature ('A'ishah al-Ba'uniyyah), Advances in medicine, Preservation and commentaries on Greek moral and natural philosophy, House of Wisdom in Abbasid Bagdad, Scholarly and cultural transfers in Muslim and Christian Spain.
 
 **Expected evidence terms.** Abbasid Caliphate, fragmentation, Seljuk Empire, Mamluk Sultanate, Delhi Sultanate, Turkic peoples, legitimacy, merchants, missionaries, Sufis, Indian Ocean, House of Wisdom, translation, paper-making, mathematics, medicine, astronomy, Nasir al-Din al-Tusi.
 

@@ -266,6 +266,10 @@ function jsObject(value) {
   return inspect(value, { depth: null, compact: false, breakLength: 110, maxArrayLength: null });
 }
 
+function jsonAssignmentValue(value) {
+  return JSON.stringify(value, null, 2).replace(/\n/g, '\n  ');
+}
+
 // Media contract for Unit 6.
 //
 // Every topic used to point all ten module slots, all three lecture cards, and
@@ -500,7 +504,7 @@ function rendererConfig(topic) {
     text,
     illustrativeExamples: topic.cases
   })));
-  return `(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.collegeBoardKeyConcepts = ${jsObject(concepts)};\n})();\n`;
+  return `(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.collegeBoardKeyConcepts = ${jsonAssignmentValue(concepts)};\n})();\n`;
 }
 
 function first10Page(topic) {

@@ -75,8 +75,13 @@ window.BEHISTORICAL_LESSON = {
       theme: 'Economic Systems',
       text: 'In the late 20th century, revolutions in information and communications technology led to the growth of knowledge economies in some regions, while industrial production and manufacturing were increasingly situated in Asia and Latin America.',
       illustrativeExamples: [
-        'Knowledge economies: Finland, Japan, United States',
-        'Manufacturing: Vietnam, Bangladesh, Mexico, Honduras'
+        'Finland',
+        'Japan',
+        'U.S.',
+        'Vietnam',
+        'Bangladesh',
+        'Mexico',
+        'Honduras'
       ]
     },
     {
@@ -84,9 +89,9 @@ window.BEHISTORICAL_LESSON = {
       theme: 'Economic Systems',
       text: 'Changing economic institutions, multinational corporations, and regional trade agreements reflected the spread of principles and practices associated with free-market economics throughout the world.',
       illustrativeExamples: [
-        'WTO',
-        'NAFTA',
-        'ASEAN',
+        'World Trade Organization (WTO)',
+        'North American Free Trade Agreement (NAFTA)',
+        'Association of Southeast Asian Nations (ASEAN)',
         'Nestlé',
         'Nissan',
         'Mahindra and Mahindra'

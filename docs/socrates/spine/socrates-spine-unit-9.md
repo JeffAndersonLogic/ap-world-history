@@ -21,7 +21,7 @@ wins. The block came from the lesson they are actually sitting in.
 **College Board key concepts.**
 - Thematic Focus, Technology and Innovation (TEC) (Technology and Innovation): Human adaptation and innovation have resulted in increased efficiency, comfort, and security, and technological advances have shaped human development and interactions with both intended and unintended consequences.
 - Unit 9: Learning Objective A (Learning Objective): Explain how the development of new technologies changed the world from 1900 to the present.
-- KC-6.1.I.A (Technology and Innovation): New modes of communication, including radio communication, cellular communication, and the internet, as well as transportation, including air travel and shipping containers, reduced the problem of geographic distance.
+- KC-6.1.I.A (Technology and Innovation): New modes of communication—including radio communication, cellular communication, and the internet—as well as transportation, including air travel and shipping containers, reduced the problem of geographic distance.
 - KC-6.1.I.D (Technology and Innovation): Energy technologies, including the use of petroleum and nuclear power, raised productivity and increased the production of material goods.
 - KC-6.1.III.B (Technology and Innovation): More effective forms of birth control gave women greater control over fertility, transformed reproductive practices, and contributed to declining rates of fertility in much of the world.
 - KC-6.1.I.B (Technology and Innovation): The Green Revolution and commercial agriculture increased productivity and sustained the earth’s growing population as it spread chemically and genetically modified forms of agriculture.
@@ -45,7 +45,7 @@ Strong answer checklist: Open with a clear claim about how technology changed th
 - Thematic Focus, Humans and the Environment (ENV) (Humans and the Environment): The environment shapes human societies, and as populations grow and change, these populations in turn shape their environments.
 - Unit 9: Learning Objective B (Learning Objective): Explain how environmental factors affected human populations over time.
 - KC-6.1.III (Humans and the Environment): Diseases, as well as medical and scientific developments, had significant effects on populations around the world.
-- KC-6.1.III.A (Humans and the Environment): Diseases associated with poverty persisted while other diseases emerged as new epidemics and threats to human populations, in some cases leading to social disruption. These outbreaks spurred technological and medical advances. Some diseases occurred at higher incidence merely because of increased longevity. Illustrative examples: <strong>Diseases associated with poverty:</strong>, Malaria, Tuberculosis, Cholera, <strong>Emergent epidemic diseases:</strong>, 1918 influenza pandemic, Ebola, HIV/AIDS, <strong>Diseases associated with increased longevity:</strong>, Heart disease, Alzheimer’s disease.
+- KC-6.1.III.A (Humans and the Environment): Diseases associated with poverty persisted while other diseases emerged as new epidemics and threats to human populations, in some cases leading to social disruption. These outbreaks spurred technological and medical advances. Some diseases occurred at higher incidence merely because of increased longevity. Illustrative examples: Malaria, Tuberculosis, Cholera, 1918 influenza pandemic, Ebola, HIV/AIDS, Heart disease, Alzheimer’s disease.
 
 **Expected evidence terms.** malaria, tuberculosis, cholera, 1918 influenza, Ebola, HIV/AIDS, sanitation, density, crowding, poverty, travel, social disruption, medical advances, environmental, causation, population, heart disease, Alzheimer, longevity, urbanization.
 
@@ -85,8 +85,8 @@ Strong answer checklist: Open with a clear claim about how human activity caused
 - Thematic Focus, Economic Systems (ECN) (Economic Systems): As societies develop, they affect and are affected by the ways that they produce, exchange, and consume goods and services.
 - Unit 9: Learning Objective D (Learning Objective): Explain the continuities and changes in the global economy from 1900 to present.
 - KC-6.3.I.D (Economic Systems): In a trend accelerated by the end of the Cold War, many governments encouraged free-market economic policies and promoted economic liberalization in the late 20th century. Illustrative examples: The United States under Ronald Reagan, Britain under Margaret Thatcher, China under Deng Xiaoping, Chile under Augusto Pinochet.
-- KC-6.3.I.E (Economic Systems): In the late 20th century, revolutions in information and communications technology led to the growth of knowledge economies in some regions, while industrial production and manufacturing were increasingly situated in Asia and Latin America. Illustrative examples: Knowledge economies: Finland, Japan, United States, Manufacturing: Vietnam, Bangladesh, Mexico, Honduras.
-- KC-6.3.II.B (Economic Systems): Changing economic institutions, multinational corporations, and regional trade agreements reflected the spread of principles and practices associated with free-market economics throughout the world. Illustrative examples: WTO, NAFTA, ASEAN, Nestlé, Nissan, Mahindra and Mahindra.
+- KC-6.3.I.E (Economic Systems): In the late 20th century, revolutions in information and communications technology led to the growth of knowledge economies in some regions, while industrial production and manufacturing were increasingly situated in Asia and Latin America. Illustrative examples: Finland, Japan, U.S., Vietnam, Bangladesh, Mexico, Honduras.
+- KC-6.3.II.B (Economic Systems): Changing economic institutions, multinational corporations, and regional trade agreements reflected the spread of principles and practices associated with free-market economics throughout the world. Illustrative examples: World Trade Organization (WTO), North American Free Trade Agreement (NAFTA), Association of Southeast Asian Nations (ASEAN), Nestlé, Nissan, Mahindra and Mahindra.
 
 **Expected evidence terms.** Deng-era economic reforms, Bangladesh garment manufacturing, NAFTA and regional trade, Multinational corporations.
 
@@ -105,9 +105,9 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Social Interactions and Organization (SIO) (Social Interactions and Organization): The process by which societies group their members and the norms governing interactions among groups and individuals influence political, economic, and cultural institutions.
 - Unit 9: Learning Objective E (Learning Objective): Explain how social categories, roles, and practices have been maintained and challenged over time.
-- KC-6.3.III.i (Social Interactions and Organization): Rights-based discourses challenged old assumptions about race, class, gender, and religion. Illustrative examples: Universal Declaration of Human Rights, Global feminism, Negritude, Liberation theology.
-- KC-6.3.III.ii (Social Interactions and Organization): In much of the world, access to education and participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion. Illustrative examples: Women’s political rights, Rising female literacy and higher education, U.S. Civil Rights Act of 1965, End of apartheid, Caste reservation in India.
-- KC-6.3.II.C (Social Interactions and Organization): Movements throughout the world protested the inequality of the environmental and economic consequences of global integration. Illustrative examples: Greenpeace, Wangari Maathai’s Green Belt Movement, World Fair Trade Organization.
+- KC-6.3.III.i (Social Interactions and Organization): Rights-based discourses challenged old assumptions about race, class, gender, and religion. Illustrative examples: The U.N. Universal Declaration of Human Rights, especially as it sought to protect the rights of children, women, and refugees, Global feminism movements, Negritude movement, Liberation theology in Latin America.
+- KC-6.3.III.ii (Social Interactions and Organization): In much of the world, access to education as well as participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion. Illustrative examples: The right to vote and/or to hold public office granted to women in the United States (1920), Brazil (1932), Turkey (1934), Japan (1945), India (1947), and Morocco (1963), The rising rate of female literacy and the increasing numbers of women in higher education, in most parts of the world, The U.S. Civil Rights Act of 1965, The end of apartheid, Caste reservation in India.
+- KC-6.3.II.C (Social Interactions and Organization): Movements throughout the world protested the inequality of the environmental and economic consequences of global integration. Illustrative examples: Greenpeace, Professor Wangari Maathai’s Green Belt Movement in Kenya, World Fair Trade Organization.
 
 **Expected evidence terms.** Universal Declaration of Human Rights, Global feminism and expanded education, End of apartheid and civil-rights law, Green Belt and fair-trade movements.
 
@@ -126,9 +126,9 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Cultural Developments and Interactions (CDI) (Cultural Developments and Interactions): Ideas, beliefs, and religions shape how groups view themselves, and interactions among societies have political, social, and cultural implications.
 - Unit 9: Learning Objective F (Learning Objective): Explain how and why globalization changed culture over time.
-- KC-6.3.IV.i (Cultural Developments and Interactions): Political and social changes of the 20th century led to changes in the arts, and in the second half of the century popular and consumer culture became more global. Illustrative examples: Reggae, Bollywood, BBC, World Cup soccer, Olympics.
-- KC-6.3.IV.ii (Cultural Developments and Interactions): Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society. Illustrative examples: Social media, Global music and film, International sports.
-- KC-6.3.IV.iii (Cultural Developments and Interactions): Consumer culture became globalized and transcended national borders. Illustrative examples: Alibaba, eBay, Toyota, Coca-Cola.
+- KC-6.3.IV.i (Cultural Developments and Interactions): Political and social changes of the 20th century led to changes in the arts and in the second half of the century, popular and consumer culture became more global. Illustrative examples: Music: Reggae, Movies: Bollywood, Social media: Facebook, Twitter, Television: BBC, Sports: World Cup soccer, the Olympics.
+- KC-6.3.IV.ii (Cultural Developments and Interactions): Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society.
+- KC-6.3.IV.iii (Cultural Developments and Interactions): Consumer culture became globalized and transcended national borders. Illustrative examples: Online commerce: Alibaba, eBay, Global brands: Toyota, Coca-Cola.
 
 **Expected evidence terms.** Reggae as global music, Bollywood and transnational film audiences, World Cup and Olympic spectacle, Alibaba, Toyota, and Coca-Cola.
 
@@ -147,7 +147,7 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Cultural Developments and Interactions (CDI) (Cultural Developments and Interactions): Ideas, beliefs, and religions shape how groups view themselves, and interactions among societies have political, social, and cultural implications.
 - Unit 9: Learning Objective G (Learning Objective): Explain the various responses to increasing globalization from 1900 to present.
-- KC-6.3.IV.iv (Cultural Developments and Interactions): Responses to rising cultural and economic globalization took a variety of forms. Illustrative examples: Anti-IMF and anti-World Bank activism, Locally developed social media such as Weibo in China.
+- KC-6.3.IV.iv (Cultural Developments and Interactions): Responses to rising cultural and economic globalization took a variety of forms. Illustrative examples: Anti-IMF and anti-World Bank activism, Advent of locally developed social media (Weibo in China).
 
 **Expected evidence terms.** Anti-IMF activism, Anti-World Bank campaigns, Seattle WTO protests, Weibo and locally developed platforms.
 
@@ -166,7 +166,7 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Governance (GOV) (Governance): Governments obtain, retain, and exercise power in different ways, while internal and external factors shape state formation, expansion, and decline.
 - Unit 9: Learning Objective H (Learning Objective): Explain how and why globalization changed international interactions among states.
-- KC-6.3.II.A (Governance): New international organizations, including the United Nations, formed with the stated goal of maintaining world peace and facilitating international cooperation. Illustrative examples: United Nations.
+- KC-6.3.II.A (Governance): New international organizations, including the United Nations, formed with the stated goal of maintaining world peace and facilitating international cooperation.
 
 **Expected evidence terms.** United Nations General Assembly, Security Council and veto power, Peacekeeping operations, Humanitarian and development agencies.
 
@@ -185,15 +185,18 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Unit 9 Synthesis (SYN) (Unit 9 Synthesis): Use Unit 9 evidence to evaluate change, continuity, significance, and complexity.
 - Unit 9: Learning Objective I (Learning Objective): Explain the extent to which science and technology brought change in the period from 1900 to the present.
-- KC-6.1 (Unit 9 Synthesis): Rapid advances in science and technology altered understandings of the universe and natural world and advanced communication, transportation, industry, agriculture, and medicine.
-- KC-6.1.I.A (Unit 9 Synthesis): New communication and transportation modes reduced the problem of geographic distance. Illustrative examples: Radio, Cellular communication, Internet, Air travel, Shipping containers.
-- KC-6.1.I.D (Unit 9 Synthesis): Petroleum and nuclear energy technologies raised productivity and increased material production.
-- KC-6.1.III.B (Unit 9 Synthesis): More effective birth control increased women’s control over fertility and contributed to declining fertility rates in much of the world.
-- KC-6.1.I.B (Unit 9 Synthesis): The Green Revolution and commercial agriculture increased productivity and helped sustain a growing population.
-- KC-6.1.I.C (Unit 9 Synthesis): Vaccines and antibiotics increased human survival and longevity.
+- KC-6.1 (Unit 9 Synthesis): Rapid advances in science and technology altered the understanding of the universe and the natural world and led to advances in communication, transportation, industry, agriculture, and medicine.
+- KC-6.1.I.A (Unit 9 Synthesis): New modes of communication—including radio communication, cellular communication, and the internet—as well as transportation, including air travel and shipping containers, reduced the problem of geographic distance.
+- KC-6.1.I.D (Unit 9 Synthesis): Energy technologies, including the use of petroleum and nuclear power, raised productivity and increased the production of material goods.
+- KC-6.1.III.B (Unit 9 Synthesis): More effective forms of birth control gave women greater control over fertility, transformed reproductive practices, and contributed to declining rates of fertility in much of the world.
+- KC-6.1.I.B (Unit 9 Synthesis): The Green Revolution and commercial agriculture increased productivity and sustained the earth’s growing population as it spread chemically and genetically modified forms of agriculture.
+- KC-6.1.I.C (Unit 9 Synthesis): Medical innovations, including vaccines and antibiotics, increased the ability of humans to survive and live longer lives.
 - KC-6.3.I (Unit 9 Synthesis): States responded in a variety of ways to the economic challenges of the 20th century.
-- KC-6.3.III.i–ii (Unit 9 Synthesis): Rights-based discourse challenged old assumptions, while education and political and professional participation became more inclusive.
-- KC-6.3.IV.i–iii (Unit 9 Synthesis): Arts, entertainment, popular culture, and consumer culture increasingly reflected a globalized society and crossed national borders.
+- KC-6.3.III.i (Unit 9 Synthesis): Rights-based discourses challenged old assumptions about race, class, gender, and religion.
+- KC-6.3.III.ii (Unit 9 Synthesis): In much of the world, access to education as well as participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion.
+- KC-6.3.IV.i (Unit 9 Synthesis): Political and social changes of the 20th century led to changes in the arts and in the second half of the century, popular and consumer culture became more global.
+- KC-6.3.IV.ii (Unit 9 Synthesis): Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society.
+- KC-6.3.IV.iii (Unit 9 Synthesis): Consumer culture became globalized and transcended national borders.
 
 **Expected evidence terms.** Internet and cellular communication, Container shipping and air travel, Green Revolution and medicine, Birth control and global consumer culture.
 

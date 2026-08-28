@@ -50,46 +50,26 @@ window.BEHISTORICAL_LESSON = {
     {
       code: 'KC-5.1',
       theme: 'Unit 6 Synthesis',
-      text: 'Industrial capitalism expanded manufacturing, commodity demand, and uneven gains in standards of living.',
-      illustrativeExamples: [
-        'Economic extraction and infrastructure',
-        'State expansion and resistance',
-        'Migration and diaspora',
-        'Cultural justification and racial hierarchy'
-      ]
+      text: 'The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.',
+      illustrativeExamples: []
     },
     {
       code: 'KC-5.2',
       theme: 'Unit 6 Synthesis',
-      text: 'Industrial states expanded empires and created new transoceanic relationships.',
-      illustrativeExamples: [
-        'Economic extraction and infrastructure',
-        'State expansion and resistance',
-        'Migration and diaspora',
-        'Cultural justification and racial hierarchy'
-      ]
+      text: 'As states industrialized, they also expanded existing overseas empires and established new colonies and transoceanic relationships.',
+      illustrativeExamples: []
     },
     {
       code: 'KC-5.3',
       theme: 'Unit 6 Synthesis',
-      text: 'Revolution and rebellion contributed to new states and challenges to authority.',
-      illustrativeExamples: [
-        'Economic extraction and infrastructure',
-        'State expansion and resistance',
-        'Migration and diaspora',
-        'Cultural justification and racial hierarchy'
-      ]
+      text: 'The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.',
+      illustrativeExamples: []
     },
     {
       code: 'KC-5.4',
       theme: 'Unit 6 Synthesis',
-      text: 'Empires and global capitalism changed the patterns and scale of migration.',
-      illustrativeExamples: [
-        'Economic extraction and infrastructure',
-        'State expansion and resistance',
-        'Migration and diaspora',
-        'Cultural justification and racial hierarchy'
-      ]
+      text: 'As a result of the emergence of transoceanic empires and a global capitalist economy, migration patterns changed dramatically, and the numbers of migrants increased significantly.',
+      illustrativeExamples: []
     }
   ],
   stableImages: {

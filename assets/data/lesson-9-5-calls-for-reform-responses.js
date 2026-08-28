@@ -64,21 +64,21 @@ window.BEHISTORICAL_LESSON = {
       theme: 'Social Interactions and Organization',
       text: 'Rights-based discourses challenged old assumptions about race, class, gender, and religion.',
       illustrativeExamples: [
-        'Universal Declaration of Human Rights',
-        'Global feminism',
-        'Negritude',
-        'Liberation theology'
+        'The U.N. Universal Declaration of Human Rights, especially as it sought to protect the rights of children, women, and refugees',
+        'Global feminism movements',
+        'Negritude movement',
+        'Liberation theology in Latin America'
       ]
     },
     {
       code: 'KC-6.3.III.ii',
       theme: 'Social Interactions and Organization',
-      text: 'In much of the world, access to education and participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion.',
+      text: 'In much of the world, access to education as well as participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion.',
       illustrativeExamples: [
-        'Women’s political rights',
-        'Rising female literacy and higher education',
-        'U.S. Civil Rights Act of 1965',
-        'End of apartheid',
+        'The right to vote and/or to hold public office granted to women in the United States (1920), Brazil (1932), Turkey (1934), Japan (1945), India (1947), and Morocco (1963)',
+        'The rising rate of female literacy and the increasing numbers of women in higher education, in most parts of the world',
+        'The U.S. Civil Rights Act of 1965',
+        'The end of apartheid',
         'Caste reservation in India'
       ]
     },
@@ -88,7 +88,7 @@ window.BEHISTORICAL_LESSON = {
       text: 'Movements throughout the world protested the inequality of the environmental and economic consequences of global integration.',
       illustrativeExamples: [
         'Greenpeace',
-        'Wangari Maathai’s Green Belt Movement',
+        'Professor Wangari Maathai’s Green Belt Movement in Kenya',
         'World Fair Trade Organization'
       ]
     }

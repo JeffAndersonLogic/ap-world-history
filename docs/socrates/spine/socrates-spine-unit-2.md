@@ -19,7 +19,7 @@ wins. The block came from the lesson they are actually sitting in.
 **Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Overland trade, luxury goods, and the spread of goods, ideas, and disease c. 1200–1450
 
 **College Board key concepts.**
-- KC-3.1.I.A.i (Economic Systems): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Silk Roads, promoting the growth of powerful new trading cities. Illustrative examples: Kashgar, Samarkand.
+- KC-3.1.I.A.i (Economic Systems): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities. Illustrative examples: Kashgar, Samarkand.
 - KC-3.1.I.C.i (Economic Systems): The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies. Illustrative examples: Bills of exchange, Banking houses, Use of paper money.
 - KC-3.3.I.B (Economic Systems): Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.
 
@@ -39,8 +39,8 @@ Strong answer checklist: Identify at least two distinct effects. Use specific ev
 
 **College Board key concepts.**
 - KC-3.2.I.B.iii (Governance): Empires collapsed in different regions of the world and in some areas were replaced by new imperial states, including the Mongol khanates.
-- KC-3.1.I.E.i (Economic Systems): The expansion of empires, including the Mongols, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.
-- KC-3.2.II.A.ii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers. Illustrative examples: Transfer of Greco-Islamic medical knowledge to western Europe, Transfer of numbering systems to Europe, Adoption of Uyghur script.
+- KC-3.1.I.E.i (Economic Systems): The expansion of empires—including the Mongols—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.
+- KC-3.2.II.A.ii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers. Illustrative examples: Transfer of Greco–Islamic medical knowledge to western Europe, Transfer of numbering systems to Europe, Adoption of Uyghur script.
 
 **Expected evidence terms.** Genghis Khan, khanate, Pax Mongolica, Yam, siege warfare, cavalry, religious tolerance, trade, diplomacy, plague, Black Death, Marco Polo, Ibn Battuta, connectivity.
 
@@ -61,7 +61,7 @@ Strong answer checklist: Name at least two distinct effects. Explain whether eac
 - KC-3.1.I.C.ii (Economic Systems): The growth of interregional trade in luxury goods was encouraged by significant innovations in previously existing transportation and commercial technologies, including the use of the compass, the astrolabe, and larger ship designs.
 - KC-3.1.I.A.iii (Economic Systems): The Indian Ocean trading network fostered the growth of states. Illustrative examples: City-states of the Swahili Coast, Gujarat, Sultanate of Malacca.
 - KC-3.1.III.B (Cultural Developments and Interactions): In key places along important trade routes, merchants set up diasporic communities where they introduced their own cultural traditions into the indigenous cultures and, in turn, indigenous cultures influenced merchant cultures. Illustrative examples: Arab and Persian communities in East Africa, Chinese merchant communities in Southeast Asia, Malay communities in the Indian Ocean basin.
-- KC-3.2.II.A.iii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers, including during Chinese maritime activity led by Ming admiral Zheng He.
+- KC-3.2.II.A.iii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers, including during Chinese maritime activity led by Ming Admiral Zheng He.
 - KC-3.1.II.A.i (Humans and the Environment): The expansion and intensification of long-distance trade routes often depended on environmental knowledge, including advanced knowledge of the monsoon winds.
 
 **Expected evidence terms.** monsoon, dhow, compass, lateen sail, navigation, seasonal winds, spices, textiles, gold, ivory, diaspora, Islam, Kilwa, Calicut, Swahili, port city.
@@ -81,7 +81,7 @@ Strong answer checklist: Name at least two effects. Use specific place names or 
 **College Board key concepts.**
 - KC-3.1.II.A.ii (Technology and Innovation): The growth of interregional trade was encouraged by innovations in existing transportation technologies. Illustrative examples: Camel saddle, Caravans.
 - KC-3.1.I.A.iv (Technology and Innovation): Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the trans-Saharan trade network.
-- KC-3.1.I.E.ii (Governance): The expansion of empires, including Mali in West Africa, facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.
+- KC-3.1.I.E.ii (Governance): The expansion of empires—including Mali in West Africa–facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.
 
 **Expected evidence terms.** camel, camel saddle, caravan, gold, salt, Taghaza, Wangara, oasis, Mali Empire, Mansa Musa, Timbuktu, Islam, hajj, mosque, scholarship.
 
@@ -98,7 +98,7 @@ Strong answer checklist: Name at least two effects of trans-Saharan trade on Wes
 **Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How trade networks spread religion, technology, crops, and artistic traditions c. 1200–1450
 
 **College Board key concepts.**
-- KC-3.1.III.D (Cultural Developments and Interactions): Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations. Illustrative examples: Influence of Buddhism in East Asia, Spread of Hinduism and Buddhism into Southeast Asia, Spread of Islam in sub-Saharan Africa and Asia, Gunpowder from China, Paper from China.
+- KC-3.1.III.D (Cultural Developments and Interactions): Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations. Illustrative examples: The influence of Buddhism in East Asia, The spread of Hinduism and Buddhism into Southeast Asia, The spread of Islam in sub-Saharan Africa and Asia, Gunpowder from China, Paper from China.
 - KC-3.3.II (Cultural Developments and Interactions): The fate of cities varied greatly, with periods of significant decline and periods of increased urbanization, buoyed by rising productivity and expanding trade networks.
 - KC-3.1.III.C (Cultural Developments and Interactions): As exchange networks intensified, an increasing number of travelers within Afro-Eurasia wrote about their travels. Illustrative examples: Ibn Battuta, Margery Kempe, Marco Polo.
 
@@ -135,7 +135,7 @@ Strong answer checklist: Name at least two distinct consequences. Explain how ea
 
 **College Board key concepts.**
 - KC-3.1 (Networks of Exchange): A deepening and widening of networks of human interaction within and across regions contributed to cultural, technological, and biological diffusion within and between various societies.
-- KC-3.1.I.A.i (Networks of Exchange): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Silk Roads, promoting the growth of powerful new trading cities.
+- KC-3.1.I.A.i (Networks of Exchange): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.
 - KC-3.1.I.C.i (Networks of Exchange): The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.
 - KC-3.3 (Networks of Exchange): Changes in trade networks resulted from and stimulated increasing productive capacity, with important implications for social and gender structures and environmental processes.
 - KC-3.3.I.B (Networks of Exchange): Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.

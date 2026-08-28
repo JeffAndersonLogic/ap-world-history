@@ -106,7 +106,10 @@ for (let unit = 1; unit <= 9; unit += 1) {
     const topic = String(lesson.meta.topic).replace(/^Topic\s+/i, '').trim();
     const concepts = alignTopicConcepts(topic, lesson.collegeBoardKeyConcepts || []);
     const configPath = path.join(DATA, `lesson-${topic.replace('.', '-')}-renderer-config.js`);
-    writeAssignment(configPath, concepts);
+    const configSource = fs.readFileSync(configPath, 'utf8');
+    const alreadyOverridesConcepts = configSource.includes('lesson.collegeBoardKeyConcepts');
+    const runtimeNeedsOverride = JSON.stringify(concepts) !== JSON.stringify(lesson.collegeBoardKeyConcepts || []);
+    if (alreadyOverridesConcepts || runtimeNeedsOverride) writeAssignment(configPath, concepts);
     updated.push(topic);
   }
 }

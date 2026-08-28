@@ -36,11 +36,11 @@ Strong answer checklist: State a defensible position on the claim. Support it wi
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Compare processes by which state power shifted in various parts of the world from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.2.I.A (Governance): States strengthened existing colonies and established direct control over territories previously held by non-state entities. Illustrative examples: King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
-- KC-5.2.I.B (Governance): European states, the United States, and Japan acquired territories in Asia and the Pacific while older Spanish and Portuguese influence declined. Illustrative examples: King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
-- KC-5.2.I.C (Governance): European states used warfare and diplomacy to establish empires in Africa. Illustrative examples: King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
-- KC-5.2.I.D (Governance): Europeans established settler colonies in some parts of their empires. Illustrative examples: King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
-- KC-5.2.II.B (Governance): The United States, Russia, and Japan expanded into neighboring territories. Illustrative examples: King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
+- KC-5.2.I.A (Governance): Some states with existing colonies strengthened their control over those colonies and in some cases assumed direct control over colonies previously held by non-state entities. Illustrative examples: Shift from the private ownership of the Congo by King Leopold II to the Belgium government, Shift from the Dutch East India Company to Dutch government control in Indonesia and Southeast Asia.
+- KC-5.2.I.B (Governance): European states as well as the United States and Japan acquired territories throughout Asia and the Pacific, while Spanish and Portuguese influence declined.
+- KC-5.2.I.C (Governance): Many European states used both warfare and diplomacy to expand their empires in Africa. Illustrative examples: Britain in West Africa, Belgium in the Congo, French in West Africa.
+- KC-5.2.I.D (Governance): Europeans established settler colonies in some parts of their empires. Illustrative examples: New Zealand.
+- KC-5.2.II.B (Governance): The United States, Russia, and Japan expanded their land holdings by conquering and settling neighboring territories.
 
 **Expected evidence terms.** King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
 
@@ -57,9 +57,9 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain how and why internal and external factors influenced state building from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.3.III.D (Governance): Nationalism and challenges to imperial authority contributed to anticolonial movements. Illustrative examples: Yaa Asantewaa and the War of the Golden Stool, The Indian Rebellion of 1857, Samory Touré in West Africa, The Mahdist state and the Xhosa Cattle-Killing movement.
-- KC-5.2.II.C (Governance): Anti-imperial resistance took direct and indirect forms and sometimes produced new states on imperial peripheries. Illustrative examples: Yaa Asantewaa and the War of the Golden Stool, The Indian Rebellion of 1857, Samory Touré in West Africa, The Mahdist state and the Xhosa Cattle-Killing movement.
-- KC-5.3.III.E (Governance): Discontent with imperial rule led to rebellions, some influenced by religious ideas. Illustrative examples: Yaa Asantewaa and the War of the Golden Stool, The Indian Rebellion of 1857, Samory Touré in West Africa, The Mahdist state and the Xhosa Cattle-Killing movement.
+- KC-5.3.III.D (Governance): Increasing questions about political authority and growing nationalism contributed to anticolonial movements.
+- KC-5.2.II.C (Governance): Anti-imperial resistance took various forms, including direct resistance within empires and the creation of new states on the peripheries. Illustrative examples: Túpac Amaru II’s rebellion in Peru, Samory Touré’s military battles in West Africa, Yaa Asantewaa War in West Africa, 1857 rebellion in India, Establishment of independent states in the Balkans, Sokoto Caliphate in modern-day Nigeria, Cherokee Nation, Zulu Kingdom.
+- KC-5.3.III.E (Governance): Increasing discontent with imperial rule led to rebellions, some of which were influenced by religious ideas. Illustrative examples: Ghost Dance in the U.S., Xhosa Cattle-Killing Movement in Southern Africa, Mahdist wars in Sudan.
 
 **Expected evidence terms.** Yaa Asantewaa and the War of the Golden Stool, The Indian Rebellion of 1857, Samory Touré in West Africa, The Mahdist state and the Xhosa Cattle-Killing movement.
 
@@ -76,7 +76,7 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain how environmental factors contributed to the development of the global economy from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.1.II.A (Humans and the Environment): Demand for raw materials and food created export economies specializing in natural resources, foodstuffs, and industrial crops; profits were used to purchase finished goods. Illustrative examples: Cotton production in Egypt, Rubber extraction in the Amazon and Congo, Palm oil in West Africa, Guano, meat, and diamond export economies.
+- KC-5.1.II.A (Humans and the Environment): The need for raw materials for factories and increased food supplies for the growing population in urban centers led to the growth of export economies around the world that specialized in commercial extraction of natural resources and the production of food and industrial crops. The profits from these raw materials were used to purchase finished goods. Illustrative examples: Cotton production in Egypt, Rubber extraction in the Amazon and the Congo basin, The palm oil trade in West Africa, The guano industries in Peru and Chile, Meat from Argentina and Uruguay, Diamonds from Africa.
 
 **Expected evidence terms.** Cotton production in Egypt, Rubber extraction in the Amazon and Congo, Palm oil in West Africa, Guano, meat, and diamond export economies.
 
@@ -93,8 +93,8 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain how economic factors contributed to the development of the global economy from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.2.I.E (Economic Systems): Industrialized states and businesses practiced economic imperialism in Asia and Latin America. Illustrative examples: British and French pressure on China through the Opium Wars, British investment in the port of Buenos Aires, Cotton exports from South Asia and Egypt, Palm oil and copper commodity chains.
-- KC-5.1.II.C (Economic Systems): Global commodity trade was organized to benefit merchants and companies in Europe and the United States. Illustrative examples: British and French pressure on China through the Opium Wars, British investment in the port of Buenos Aires, Cotton exports from South Asia and Egypt, Palm oil and copper commodity chains.
+- KC-5.2.I.E (Economic Systems): Industrialized states and businesses within those states practiced economic imperialism primarily in Asia and Latin America. Illustrative examples: Britain and France expanding their influence in China through the Opium Wars, The construction of the Port of Buenos Aires with the support of British firms.
+- KC-5.1.II.C (Economic Systems): Trade in some commodities was organized in a way that gave merchants and companies based in Europe and the U.S. a distinct economic advantage. Illustrative examples: Opium produced in the Middle East or South Asia and exported to China, Cotton grown in South Asia and Egypt and exported to Great Britain and other European countries, Palm oil produced in sub-Saharan Africa and exported to European countries, Copper extracted in Chile.
 
 **Expected evidence terms.** British and French pressure on China through the Opium Wars, British investment in the port of Buenos Aires, Cotton exports from South Asia and Egypt, Palm oil and copper commodity chains.
 
@@ -111,10 +111,10 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain how environmental and economic factors contributed to varied patterns of migration from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.4.I (Humans and the Environment / Economic Systems): Demographic changes challenged established living patterns. Illustrative examples: Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.
-- KC-5.4.I.B (Humans and the Environment / Economic Systems): New transportation encouraged internal, external, urban, and return migration. Illustrative examples: Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.
-- KC-5.4.II.A (Humans and the Environment / Economic Systems): Many migrants relocated freely in search of work. Illustrative examples: Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.
-- KC-5.4.II.B (Humans and the Environment / Economic Systems): Global capitalism relied on coerced and semicoerced migration, including enslavement, indenture, and convict labor. Illustrative examples: Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.
+- KC-5.4.I (Humans and the Environment / Economic Systems): Migration in many cases was influenced by changes in demographics in both industrialized and unindustrialized societies that presented challenges to existing patterns of living.
+- KC-5.4.I.B (Humans and the Environment / Economic Systems): Because of the nature of new modes of transportation, both internal and external migrants increasingly relocated to cities. This pattern contributed to the significant global urbanization of the 19th century. The new methods of transportation also allowed for many migrants to return, periodically or permanently, to their home societies. Illustrative examples: Japanese agricultural workers in the Pacific, Lebanese merchants in the Americas, Italian industrial workers in Argentina.
+- KC-5.4.II.A (Humans and the Environment / Economic Systems): Many individuals chose freely to relocate, often in search of work. Illustrative examples: Irish to the United States, British engineers and geologists to South Asia and Africa.
+- KC-5.4.II.B (Humans and the Environment / Economic Systems): The new global capitalist economy continued to rely on coerced and semicoerced labor migration, including enslavement Chinese and Indian indentured servitude, and convict labor.
 
 **Expected evidence terms.** Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.
 
@@ -131,9 +131,9 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain how and why new patterns of migration affected society from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.4.III.A (Social Interactions and Organization): Because many migrants were male, women often took on new roles in home societies. Illustrative examples: Chinese communities across the Pacific and Americas, Indian communities in Africa, the Caribbean, and Southeast Asia, Irish and Italian migration, The Chinese Exclusion Act and White Australia policy.
-- KC-5.4.III.B (Social Interactions and Organization): Migrants created ethnic enclaves and transplanted culture into new environments. Illustrative examples: Chinese communities across the Pacific and Americas, Indian communities in Africa, the Caribbean, and Southeast Asia, Irish and Italian migration, The Chinese Exclusion Act and White Australia policy.
-- KC-5.4.III.C (Social Interactions and Organization): Migrants faced prejudice and states adopted restrictive policies. Illustrative examples: Chinese communities across the Pacific and Americas, Indian communities in Africa, the Caribbean, and Southeast Asia, Irish and Italian migration, The Chinese Exclusion Act and White Australia policy.
+- KC-5.4.III.A (Social Interactions and Organization): Migrants tended to be male, leaving women to take on new roles in the home society that had been formerly occupied by men.
+- KC-5.4.III.B (Social Interactions and Organization): Migrants often created ethnic enclaves in different parts of the world that helped transplant their culture into new environments. Illustrative examples: Chinese in Southeast Asia, the Caribbean, South America, and North America, Indians in East and Southern Africa, the Caribbean, and Southeast Asia, Irish in North America, Italians in North and South America.
+- KC-5.4.III.C (Social Interactions and Organization): Receiving societies did not always embrace immigrants, as seen in the various degrees of ethnic and racial prejudice and the ways states attempted to regulate the increased flow of people across their borders. Illustrative examples: Chinese Exclusion Act, White Australia policy.
 
 **Expected evidence terms.** Chinese communities across the Pacific and Americas, Indian communities in Africa, the Caribbean, and Southeast Asia, Irish and Italian migration, The Chinese Exclusion Act and White Australia policy.
 
@@ -150,10 +150,10 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain the relative significance of the effects of imperialism from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.1 (Unit 6 Synthesis): Industrial capitalism expanded manufacturing, commodity demand, and uneven gains in standards of living. Illustrative examples: Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.
-- KC-5.2 (Unit 6 Synthesis): Industrial states expanded empires and created new transoceanic relationships. Illustrative examples: Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.
-- KC-5.3 (Unit 6 Synthesis): Revolution and rebellion contributed to new states and challenges to authority. Illustrative examples: Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.
-- KC-5.4 (Unit 6 Synthesis): Empires and global capitalism changed the patterns and scale of migration. Illustrative examples: Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.
+- KC-5.1 (Unit 6 Synthesis): The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.
+- KC-5.2 (Unit 6 Synthesis): As states industrialized, they also expanded existing overseas empires and established new colonies and transoceanic relationships.
+- KC-5.3 (Unit 6 Synthesis): The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.
+- KC-5.4 (Unit 6 Synthesis): As a result of the emergence of transoceanic empires and a global capitalist economy, migration patterns changed dramatically, and the numbers of migrants increased significantly.
 
 **Expected evidence terms.** Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.
 

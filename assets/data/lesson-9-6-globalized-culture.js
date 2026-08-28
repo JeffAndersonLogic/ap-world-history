@@ -62,34 +62,28 @@ window.BEHISTORICAL_LESSON = {
     {
       code: 'KC-6.3.IV.i',
       theme: 'Cultural Developments and Interactions',
-      text: 'Political and social changes of the 20th century led to changes in the arts, and in the second half of the century popular and consumer culture became more global.',
+      text: 'Political and social changes of the 20th century led to changes in the arts and in the second half of the century, popular and consumer culture became more global.',
       illustrativeExamples: [
-        'Reggae',
-        'Bollywood',
-        'BBC',
-        'World Cup soccer',
-        'Olympics'
+        'Music: Reggae',
+        'Movies: Bollywood',
+        'Social media: Facebook, Twitter',
+        'Television: BBC',
+        'Sports: World Cup soccer, the Olympics'
       ]
     },
     {
       code: 'KC-6.3.IV.ii',
       theme: 'Cultural Developments and Interactions',
       text: 'Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society.',
-      illustrativeExamples: [
-        'Social media',
-        'Global music and film',
-        'International sports'
-      ]
+      illustrativeExamples: []
     },
     {
       code: 'KC-6.3.IV.iii',
       theme: 'Cultural Developments and Interactions',
       text: 'Consumer culture became globalized and transcended national borders.',
       illustrativeExamples: [
-        'Alibaba',
-        'eBay',
-        'Toyota',
-        'Coca-Cola'
+        'Online commerce: Alibaba, eBay',
+        'Global brands: Toyota, Coca-Cola'
       ]
     }
   ],
