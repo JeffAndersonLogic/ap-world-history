@@ -97,11 +97,11 @@ Strong answer checklist: My first sentence states a defensible claim that direct
 **Where this sits.** Unit 1: The Global Tapestry, c. 1200 to c. 1450. Developments in East Asia, c. 1200 to c. 1450
 
 **College Board key concepts.**
-- KC-3.2.I.A: Song China utilized traditional methods of Confucianism and an imperial bureaucracy to maintain and justify its rule.
-- KC-3.1.III.D.i: Chinese cultural traditions continued, and they influenced neighboring regions. Illustrative examples: Filial piety, Neo-Confucianism.
-- KC-3.1.III.D.ii: Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices. Illustrative examples: Theravada, Mahayana, Tibetan.
-- KC-3.3.III.A.i: The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisan labor. Illustrative examples: Champa rice, Grand Canal, Flying cash.
-- KC-3.1.I.D: The expansion of empires, including the Song Dynasty, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.
+- KC-3.2.I.A (Governance): Empires and states in Afro-Eurasia and the Americas demonstrated continuity, innovation, and diversity in the 13th century. This included the Song Dynasty of China, which utilized traditional methods of Confucianism and an imperial bureaucracy to maintain and justify its rule.
+- KC-3.1.III.D.i (Culture): Chinese cultural traditions continued, and they influenced neighboring regions. Illustrative examples: Filial piety in East Asia, Influence of Neo-Confucianism and Buddhism in East Asia, Confucian traditions of both respect for and expected deference from women, Chinese literary and scholarly traditions and their spread to Heian Japan and Korea.
+- KC-3.1.III.D.ii (Culture): Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices. Illustrative examples: Theravada, Mahayana, Tibetan.
+- KC-3.3.III.A.i (Economics): The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisanal labor. Illustrative examples: Champa rice, Transportation innovations, like the Grand Canal expansion, Steel and iron production, Textiles and porcelains for export.
+- KC-3.1.I.D (Economics): The economy of Song China flourished as a result of increased productive capacity, expanding trade networks, and innovations in agriculture and manufacturing.
 
 **Expected evidence terms.** bureaucracy, civil service exams, scholar-officials, Confucianism, Neo-Confucianism, Mandate of Heaven, Buddhism, Champa rice, Grand Canal, paper money, commercialization, urbanization, printing, Indian Ocean trade networks, Silk Road connections.
 
