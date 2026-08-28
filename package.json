@@ -42,7 +42,8 @@
     "build:classroom-config": "node scripts/build-classroom-config.js",
     "check:style": "node scripts/check-style.js",
     "build:canvas-events": "node scripts/build-canvas-events.js",
-    "check:schedule": "node scripts/test/schedule-cohorts.test.js"
+    "check:schedule": "node scripts/test/schedule-cohorts.test.js",
+    "build:wordmark": "node scripts/build-wordmark.js"
   },
   "devDependencies": {
     "playwright": "^1.49.0"

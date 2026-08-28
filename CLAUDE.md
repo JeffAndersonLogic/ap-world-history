@@ -79,6 +79,13 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
 - `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets and success criteria out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand. `--check` fails on drift, which is what the offline suite runs.
+- `node scripts/build-wordmark.js`, render the BeHistorical wordmark to
+  `assets/logos/behistorical-wordmark-{light,dark}.png` from the same markup and
+  the same `behistorical-brand-lock.css` the site draws it with. Needs
+  `npm i playwright-core` and reachable Google Fonts, so it is not in any suite;
+  it exits 2 when playwright-core is absent and **fails** rather than rendering
+  in Georgia when the font does not arrive. `--check` fails on drift. See "The
+  wordmark in Canvas" below.
 - `node scripts/build-canvas-events.js`, rebuild the paste-ready Canvas calendar events in `docs/canvas/calendar-events.md`, one per class day, from the same schedule. `--check` fails on drift. See "Green and Silver" below.
 - `node scripts/test/schedule-cohorts.test.js`, prove the alternating block contract: every day names a cohort, cohorts alternate, every topic is scheduled for both, and every due date is the assigning cohort's own next meeting. In the offline suite.
 - `node scripts/generate-status-manifest.js`, refresh the teacher command-center inventory after adding or removing deliverables.
@@ -887,6 +894,38 @@ board also appears in a Canvas event. That last one caught the board emitting a
 due date on days with nothing assigned, which is invisible on the projector and
 is exactly the quiet disagreement between two surfaces this section exists to
 prevent.
+
+### The wordmark in Canvas
+
+On the site the wordmark is live HTML: Cinzel text with the globe O built from
+CSS gradients and a `::before` pseudo-element in
+`assets/css/behistorical-brand-lock.css`. That is right for the site and cannot
+survive Canvas, which strips `<style>` blocks, cannot express a pseudo-element
+inline, and will not load a webfont. Typed into a Canvas event it degrades to
+Georgia with a literal letter o, which is the wordmark not being the wordmark.
+
+**So Canvas gets a picture, and the picture is rendered from the stylesheet
+rather than drawn by hand.** `scripts/build-wordmark.js` loads the real
+brand-lock CSS and the real font, screenshots the mark, and writes the two PNGs.
+Edit the lock, rerun it, and the image follows. A hand-made PNG is a second copy
+of the brand that stops matching the site the first time the lock changes, and
+nothing would report it.
+
+**The font is fetched and the run fails without it.** Cinzel is not in this repo
+and headless Chromium has no webfonts, so the face is downloaded and embedded as
+a data URI before rendering. A run that cannot reach the font host fails rather
+than quietly shipping Georgia: a wordmark in the wrong face looks deliberate,
+which makes it worse than no new file. The proof is metric, comparing the
+rendered width against the fallback, because `document.fonts.check()` answers
+"can this string be rendered in that family" and says yes for a fallback.
+
+**Light on steel, dark on paper.** The Canvas masthead is `--blackened-steel`,
+so it takes the light mark. The dark one exists for any light surface. Do not
+put the dark mark on the band.
+
+**The image is served by GitHub Pages from `main`,** so a new or changed
+wordmark is a broken image in every pasted Canvas event until `main` carries it.
+Land it before pasting.
 
 ### Two Classrooms, One Site
 

@@ -88,6 +88,18 @@ const RULE = '#ddd2be';
 const MUTED = '#57544c';
 
 const DISPLAY = "Cinzel, 'Trajan Pro', Georgia, serif";
+
+/* The wordmark is an image, not text, and it has to be.
+   The globe O is built from CSS gradients and a ::before pseudo-element in
+   assets/css/behistorical-brand-lock.css, and Canvas strips <style> blocks and
+   cannot express a pseudo-element inline at all. Cinzel is a webfont, which
+   Canvas will not load either, so typed text falls back to Georgia and the
+   wordmark stops being the wordmark.
+   assets/logos/behistorical-wordmark-light.png is rendered from that same
+   stylesheet with the real font, so what a student sees in Canvas is the same
+   mark the site draws. Light on the steel band; a dark version sits beside it
+   for any light surface. Regenerate with scripts/build-wordmark.js. */
+const WORDMARK = `${BASE_URL}/assets/logos/behistorical-wordmark-light.png`;
 const BODY = "'Libre Baskerville', Georgia, 'Times New Roman', serif";
 const UI = "Montserrat, Arial, Helvetica, sans-serif";
 
@@ -259,7 +271,7 @@ function seal(c) {
 function band(topic) {
   const lines = [
     `<div style="background-color: ${STEEL}; border-top: 4px solid ${GOLD}; padding: 14px 18px; color: ${PAPER};">`,
-    `    <div style="font-family: ${DISPLAY}; font-size: 22px; font-weight: bold; letter-spacing: 0.02em; color: ${PAPER};">BeHistorical</div>`,
+    `    <img src="${WORDMARK}" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">`,
     `    <div style="font-family: ${UI}; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: ${GOLD}; padding-top: 4px;">${esc(topic.courseName)} &middot; ${esc(topic.unit || '')}</div>`,
     `    <div style="font-family: ${DISPLAY}; font-size: 17px; font-weight: bold; color: ${PAPER}; padding-top: 6px;">${esc(topic.heading)}</div>`,
     `    <div style="padding-top: 10px; font-family: ${UI}; font-size: 13px; color: ${PAPER};">`
