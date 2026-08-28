@@ -22,6 +22,10 @@
           <span class="masthead-course" id="masthead-course">AP World History</span>
         </span>
       </a>
+      <div class="cohort-seal is-hidden" id="cohort-seal" hidden>
+        <span class="cohort-disc" id="cohort-disc" aria-hidden="true"></span>
+        <span class="cohort-name" id="cohort-name"></span>
+      </div>
       <div class="masthead-clock">
         <div class="clock-time" id="clock-time">&nbsp;</div>
         <div class="clock-date" id="clock-date">&nbsp;</div>
@@ -71,6 +75,10 @@
     var RAW = window.BEHISTORICAL_ANNOUNCEMENTS || null;
     var DATA = {
       settings: (RAW && RAW.settings) || {},
+      // Generated from scripts/lib/cohorts.js. This object is a whitelist, so
+      // a key added to announcements.js and not added here arrives as
+      // undefined and the feature reading it silently does nothing.
+      cohorts: (RAW && RAW.cohorts) || {},
       days: (RAW && Array.isArray(RAW.days)) ? RAW.days : [],
       assessments: (RAW && Array.isArray(RAW.assessments)) ? RAW.assessments : [],
       reminders: (RAW && Array.isArray(RAW.reminders)) ? RAW.reminders : []
@@ -128,6 +136,45 @@
     /* ---------------------------------------------------------------
        Slide builders
        --------------------------------------------------------------- */
+    /* ---------------------------------------------------------------
+       Green and Silver
+
+       Colour is never the only signal. The seal carries the colour, the
+       letter, and a shape: Green is a filled disc, Silver an open ring.
+       Any one of the three survives a washed-out projector, a grayscale
+       print, or a reader who cannot separate the two hues.
+
+       It sits in the masthead rather than only on the title card, so a
+       slide seen four minutes into the loop still answers which room is
+       in front of you.
+       --------------------------------------------------------------- */
+    function cohortOf(day) {
+      var key = day && has(day.cohort) ? day.cohort.trim().toLowerCase() : '';
+      var table = DATA.cohorts || {};
+      return key && table[key] ? table[key] : null;
+    }
+
+    function paintCohort(day) {
+      var seal = document.getElementById('cohort-seal');
+      var disc = document.getElementById('cohort-disc');
+      var name = document.getElementById('cohort-name');
+      if (!seal || !disc || !name) return;
+
+      var c = cohortOf(day);
+      if (!c) {
+        seal.hidden = true;
+        seal.classList.add('is-hidden');
+        return;
+      }
+      seal.hidden = false;
+      seal.classList.remove('is-hidden');
+      seal.style.setProperty('--cohort', c.onDark || c.mark);
+      seal.classList.toggle('is-filled', c.filled === true);
+      disc.textContent = c.letter || '';
+      name.textContent = c.label || '';
+      seal.setAttribute('title', c.label + ', ' + (c.metal || ''));
+    }
+
     function buildTitleCard(day, now) {
       var s = slide('slide-title-card');
       s.appendChild(eyebrow(DATA.settings.courseName || 'AP World History'));
@@ -141,6 +188,15 @@
 
       s.appendChild(el('div', 'title-card-day',
         WEEKDAYS[now.getDay()] + ', ' + MONTHS[now.getMonth()] + ' ' + now.getDate()));
+
+      var c = cohortOf(day);
+      if (c) {
+        var band = el('div', 'title-card-cohort' + (c.filled ? ' is-filled' : ''));
+        band.style.setProperty('--cohort', c.onDark || c.mark);
+        band.appendChild(el('span', 'cohort-disc', c.letter || ''));
+        band.appendChild(el('span', 'cohort-name', c.label || ''));
+        s.appendChild(band);
+      }
 
       if (day && has(day.topic)) {
         s.appendChild(el('h1', 'title-card-topic', day.topic));
@@ -214,47 +270,85 @@
       return '';
     }
 
-    // Homework is one string or a list of them. Two assignments tonight are
-    // two lines, never one sentence a student has to unpick.
+    // Homework is a list of entries. An entry is one line of text, and a
+    // reading entry also carries `items`, the sections, which print as their
+    // own bullets rather than being packed into the sentence.
+    //
+    // Bulleted, not numbered. The count still matters, so it moved to the
+    // eyebrow ("Tonight, two things") where it is read once instead of being
+    // re-derived from a column of digits at the back of the room.
+    var COUNT_WORDS = ['', 'one thing', 'two things', 'three things', 'four things'];
+
+    function normalizeHomework(day) {
+      var raw = Array.isArray(day.homework) ? day.homework : [day.homework];
+      return raw.map(function (entry) {
+        if (has(entry)) return { text: entry.trim(), due: '', items: [], note: '' };
+        if (entry && has(entry.text)) {
+          return {
+            text: entry.text.trim(),
+            due: has(entry.due) ? entry.due.trim() : '',
+            note: has(entry.note) ? entry.note.trim() : '',
+            items: Array.isArray(entry.items) ? entry.items.filter(function (b) {
+              return b && has(b.text);
+            }) : []
+          };
+        }
+        return null;
+      }).filter(Boolean);
+    }
+
     function buildHomeworkSlide(day) {
-      var items = (Array.isArray(day.homework) ? day.homework : [day.homework])
-        .map(function (entry) {
-          if (has(entry)) return { text: entry.trim(), due: '' };
-          if (entry && has(entry.text)) {
-            return { text: entry.text.trim(), due: has(entry.due) ? entry.due.trim() : '' };
-          }
-          return null;
-        })
-        .filter(Boolean);
+      var items = normalizeHomework(day);
       if (!items.length) return null;
 
-      // A single assignment keeps the big panel treatment.
-      if (items.length === 1) {
-        var due = items[0].due || day.homeworkDue;
-        return buildPanelSlide('Tonight', 'Homework', items[0].text, [
-          has(due) ? { text: 'Due ' + due, style: 'solid' }
-                   : { text: 'Write it down', style: 'quiet' }
-        ]);
-      }
-
-      // Several get numbered, because how many there are is the thing a
-      // student most needs to carry out of the room.
       var s = slide();
-      s.appendChild(eyebrow('Tonight'));
+      s.appendChild(eyebrow('Tonight' + (COUNT_WORDS[items.length]
+        ? ', ' + COUNT_WORDS[items.length]
+        : '')));
       s.appendChild(el('h2', 'slide-title', 'Homework'));
 
-      var list = el('ol', 'homework-list' + (items.length > 3 ? ' is-dense' : ''));
+      var sections = items.reduce(function (n, e) { return n + e.items.length; }, 0);
+      var dense = (items.length + sections) > 4;
+
+      var list = el('ul', 'homework-list' + (dense ? ' is-dense' : ''));
       items.forEach(function (entry, i) {
         var item = el('li', 'homework-item');
-        item.appendChild(el('span', 'homework-num', String(i + 1)));
         var body = el('div', 'homework-body');
         body.appendChild(el('span', 'homework-text', entry.text));
-        var due = entry.due || (i === 0 ? day.homeworkDue : '');
-        if (has(due)) body.appendChild(el('span', 'chip solid homework-due', 'Due ' + due));
+
+        if (entry.items.length) {
+          var sub = el('ul', 'reading-list');
+          entry.items.forEach(function (b) {
+            var tone = b.tone === 'recommended' ? ' is-recommended' : '';
+            var li = el('li', 'reading-item' + tone);
+            li.appendChild(el('span', 'reading-text', b.text));
+            if (b.tone === 'recommended') {
+              li.appendChild(el('span', 'reading-tone', 'recommended'));
+            }
+            sub.appendChild(li);
+          });
+          body.appendChild(sub);
+        }
+
+        if (has(entry.note)) body.appendChild(el('span', 'homework-note', entry.note));
+
+        // A per-item due date only prints when it differs from the night's,
+        // which is what an override in the schedule means. Everything sharing
+        // the same date is covered by the single chip under the list; a chip
+        // repeated on every line stops being read after the first one.
+        if (has(entry.due) && entry.due !== day.homeworkDue) {
+          body.appendChild(el('span', 'chip solid homework-due', 'Due ' + entry.due));
+        }
         item.appendChild(body);
         list.appendChild(item);
       });
       s.appendChild(list);
+
+      if (has(day.homeworkDue)) {
+        var foot = el('div', 'homework-foot');
+        foot.appendChild(el('span', 'chip solid homework-due', 'Due ' + day.homeworkDue));
+        s.appendChild(foot);
+      }
       return s;
     }
 
@@ -448,6 +542,8 @@
         if (String(DATA.days[i] && DATA.days[i].date).trim() === key) { day = DATA.days[i]; break; }
       }
 
+      paintCohort(day);
+
       // Today first: the topic, then what you are learning, then how you know
       // you have learned it, then what leaves the room with you.
       slides.push(buildTitleCard(day, now));
@@ -481,10 +577,23 @@
       }
 
       // Then what is ahead: the next topics, then the next assessments.
+      //
+      // Filtered to the cohort sitting in the room. Every topic is taught
+      // twice, on two dates, and the other cohort's date is not this room's
+      // class: an unfiltered list showed a Green class "Dar al-Islam, Monday
+      // August 31" on the afternoon they had already had it, because Monday
+      // is Silver's. A student reading their own next class off the board has
+      // to be reading their own calendar.
+      //
+      // With no cohort on today's entry there is nothing to filter by, so the
+      // list stays as it was rather than emptying.
+      var todaysCohort = day && has(day.cohort) ? day.cohort.trim().toLowerCase() : '';
       var future = DATA.days
         .map(function (entry) {
           var date = parseYMD(entry && entry.date);
           if (!date || !has(entry.topic)) return null;
+          if (todaysCohort && has(entry.cohort) &&
+              entry.cohort.trim().toLowerCase() !== todaysCohort) return null;
           return { date: date, days: daysUntil(date), topic: entry.topic, unit: entry.unit };
         })
         .filter(function (entry) { return entry && entry.days > 0; })

@@ -78,7 +78,9 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/check-image-urls.js`, verify every remote Commons image URL actually resolves. Needs internet access to `commons.wikimedia.org`; `validate.js` stays offline on purpose and cannot do this.
 - `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
-- `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets and success criteria out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand.
+- `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets and success criteria out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand. `--check` fails on drift, which is what the offline suite runs.
+- `node scripts/build-canvas-events.js`, rebuild the paste-ready Canvas calendar events in `docs/canvas/calendar-events.md`, one per class day, from the same schedule. `--check` fails on drift. See "Green and Silver" below.
+- `node scripts/test/schedule-cohorts.test.js`, prove the alternating block contract: every day names a cohort, cohorts alternate, every topic is scheduled for both, and every due date is the assigning cohort's own next meeting. In the offline suite.
 - `node scripts/generate-status-manifest.js`, refresh the teacher command-center inventory after adding or removing deliverables.
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios. `--check` fails on drift without writing.
 - `node scripts/build-unit9.js`, deterministically rebuild Unit 9 Topics 9.4–9.9 and their BeInTheRoom scenarios. `--check` fails on drift without writing.
@@ -826,6 +828,65 @@ Two things the repo cannot test, so they are manual and written down in
 uploading the spine. Nothing here can log into a vendor web UI. What the repo does
 test is that both documents are reproducible from the lesson data, and that every
 one of the 77 topics can produce a complete context block.
+
+### Green and Silver
+
+**The schedule is an alternating block.** School days alternate strictly, and
+each topic is taught to Green first and to Silver at the next meeting. They are
+**different students**, so a topic is not a two-day arc: it is one 90-minute
+block, taught twice, to two rooms that never see each other's work. Everything a
+topic needs has to land inside one block, and nothing carries over.
+
+`scripts/lib/cohorts.js` is the one place the two cohorts are defined, read by
+the announcements builder, the classroom board, and the Canvas event generator,
+for the same reason the coach prompt has one builder: a second copy is a second
+place for the labels and the colours to fall out of agreement, and the failure is
+silent because both copies still render.
+
+**A due date is derived, never typed.** It is the next date in the schedule
+carrying the same cohort. The old schedule kept one homework entry per topic
+pair, posted on the last day of the pair with a hand-typed weekday, which on an
+alternating block puts every assignment in front of one cohort and every blank
+row in front of the other: Green went into Topic 1.2 with nothing assigned and
+Silver's said due Friday, a day Silver is never in the building. Every structural
+check was green through all of it, because nothing offline could see that a
+weekday belonged to the other room. Deriving the date also means a holiday is one
+deleted row rather than an edit to every date after it.
+
+**Colour is never the only signal.** Every surface marking a cohort carries
+three: the colour, the letter G or S, and the shape, a filled disc for Green
+against an open ring for Silver. That survives a washed-out projector, a
+grayscale print, and a reader who cannot separate the hues. The palette is
+already a set of metals, bronze, gold, iron, gunmetal, oxidized steel, so the
+cohorts are metals too: Green is **verdigris**, Silver is **pewter**. A stock
+green and a stock grey would sit beside the brand rather than inside it.
+
+**Pewter is a fill colour, not a text colour.** `#8A9298` is about 2.9:1 on
+paper, under the 3:1 floor even for large text, so Silver carries a darker `ink`
+for text and uses `mark` only for rules, seals and fills, and an `onDark` value
+again for the board, which is steel. This is the same rule the eBook has in
+writing about antique gold on a cream row, and "restoring" the lighter value on
+text is the same defect.
+
+**Anything reading the schedule has to filter by cohort, not just render it.**
+The board's Upcoming Topics slide listed every future class day, which showed a
+Green class "Dar al-Islam, Monday August 31" on the afternoon they had already
+had it, because Monday is Silver's. A student reading their next class off the
+board has to be reading their own calendar. `DATA` in `announcements.html` is
+also a **whitelist**, so a key added to the generated file and not added there
+arrives as undefined and the feature reading it silently does nothing; that is
+how the cohort seal shipped invisible the first time.
+
+**Two checks, because the failures are silent in opposite directions.**
+`--check` on both generators proves the board and the Canvas events still match
+the schedule. `scripts/test/schedule-cohorts.test.js` proves the schedule itself
+is coherent: cohorts alternate, every topic reaches both rooms, every due date is
+the assigning cohort's own next meeting, every reading carries its sections as
+separate items rather than packed into one sentence, and every due date on the
+board also appears in a Canvas event. That last one caught the board emitting a
+due date on days with nothing assigned, which is invisible on the projector and
+is exactly the quiet disagreement between two surfaces this section exists to
+prevent.
 
 ### Two Classrooms, One Site
 

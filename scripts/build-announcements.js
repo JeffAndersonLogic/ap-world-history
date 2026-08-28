@@ -12,10 +12,18 @@
    Nothing is invented here. Every target and criterion printed on
    the classroom screen is the same text the lesson page shows, so
    the board can never drift from the curriculum.
+
+   GREEN AND SILVER. Every day belongs to one cohort and they
+   alternate. A due date is NOT typed in the schedule: it is the
+   next date in the schedule carrying the same cohort, so a
+   holiday or a cancelled day moves every affected due date by
+   deleting one row. Hand-typed due dates were how Silver ended up
+   with a reading due on a Friday it is never in the building for.
    ========================================================= */
 
 const fs = require('fs');
 const path = require('path');
+const { COHORTS, cohort: lookupCohort, nextCohortKey } = require('./lib/cohorts.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'assets', 'data', 'announcements.js');
@@ -70,6 +78,64 @@ function collect(list, key) {
     }
   }
   return out;
+}
+
+/* ---------------------------------------------------------
+   Dates
+
+   Parsed at noon so a timezone offset can never roll a date onto
+   the day before, which is the classic way a board shows Thursday
+   to a room sitting in it on Friday.
+   --------------------------------------------------------- */
+const WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+  'August', 'September', 'October', 'November', 'December'];
+
+function parseDate(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso || '').trim());
+  if (!m) return null;
+  return new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]), 12, 0, 0);
+}
+
+/* 'Wednesday, September 2'. The weekday alone is what the old schedule
+   typed by hand, and a weekday with no date is ambiguous the moment an
+   assignment spans a weekend or a holiday. */
+function longDate(iso) {
+  const d = parseDate(iso);
+  if (!d) return '';
+  return WEEKDAYS[d.getDay()] + ', ' + MONTHS[d.getMonth()] + ' ' + d.getDate();
+}
+
+/* ---------------------------------------------------------
+   Reading assignments
+
+   Written in the schedule as structure, not as one long sentence,
+   so the board and the Canvas event both print real bullets and
+   neither has to split a string on a colon to find them.
+   --------------------------------------------------------- */
+function readingItem(reading, index) {
+  if (!reading || !Array.isArray(reading.required) || !reading.required.length) return null;
+
+  const forKey = String(reading.for || '').trim();
+  const found = forKey ? index.get(forKey.toLowerCase()) : null;
+  const name = found
+    ? `Topic ${found.key}, ${found.title}`
+    : (forKey ? `Topic ${forKey}` : 'the next block');
+
+  const where = String(reading.where || '').trim();
+  const lead = `Required eBook reading for ${name}` + (where ? ` (${where})` : '') + '.';
+
+  const bullets = reading.required.map((t) => ({ text: String(t).trim(), tone: 'required' }));
+  for (const t of reading.recommended || []) {
+    bullets.push({ text: String(t).trim(), tone: 'recommended' });
+  }
+
+  return {
+    text: lead,
+    kind: 'reading',
+    items: bullets,
+    note: String(reading.note || '').trim()
+  };
 }
 
 /* ---------------------------------------------------------
@@ -139,6 +205,26 @@ function quote(value) {
   return "'" + String(value).replace(/\\/g, '\\\\').replace(/'/g, "\\'") + "'";
 }
 
+function emitHomework(items, indent) {
+  const pad = ' '.repeat(indent);
+  const inner = ' '.repeat(indent + 2);
+  return items.map((h) => {
+    let block = pad + '{ text: ' + quote(h.text);
+    if (h.kind) block += ', kind: ' + quote(h.kind);
+    if (h.due) block += ', due: ' + quote(h.due);
+    if (h.note) block += ', note: ' + quote(h.note);
+    if (h.items && h.items.length) {
+      block += ',\n' + inner + 'items: [\n' +
+        h.items.map((b) => inner + '  { text: ' + quote(b.text) +
+          (b.tone && b.tone !== 'required' ? ', tone: ' + quote(b.tone) : '') + ' }'
+        ).join(',\n') +
+        '\n' + inner + ']\n' + pad;
+    }
+    block += ' }';
+    return block;
+  }).join(',\n');
+}
+
 function emitEntries(entries, indent) {
   const pad = ' '.repeat(indent);
   return entries.map((e) => {
@@ -165,7 +251,41 @@ function main() {
   const notes = [];
   const days = [];
 
-  for (const entry of schedule.days || []) {
+  /* Every day belongs to a cohort, and the next meeting of that cohort is
+     what a due date means. Build that lookup once, from the schedule itself,
+     so a holiday is a deleted row rather than an edit to every date after it. */
+  const calendar = (schedule.days || [])
+    .filter((e) => e && e.date)
+    .slice()
+    .sort((a, b) => String(a.date).localeCompare(String(b.date)));
+
+  for (const entry of calendar) {
+    if (!entry.cohort) {
+      problems.push(`${entry.date}: no cohort. Every day is 'green' or 'silver'.`);
+    } else if (!lookupCohort(entry.cohort)) {
+      problems.push(`${entry.date}: cohort "${entry.cohort}" is not green or silver.`);
+    }
+  }
+
+  /* School days alternate. Two of the same in a row is a typo, and it is the
+     kind that reads fine on the page and puts a whole block in front of the
+     wrong room. */
+  for (let i = 1; i < calendar.length; i++) {
+    const prev = calendar[i - 1];
+    const here = calendar[i];
+    if (prev.cohort && here.cohort && here.cohort === prev.cohort) {
+      notes.push(`${prev.date} and ${here.date} are both ${here.cohort}. School days alternate, so check these two.`);
+    }
+  }
+
+  function nextMeeting(date, cohortKey) {
+    for (const day of calendar) {
+      if (day.cohort === cohortKey && String(day.date) > String(date)) return day.date;
+    }
+    return '';
+  }
+
+  for (const entry of calendar) {
     if (!entry || !entry.date) continue;
 
     const wanted = String(entry.topic || '').trim();
@@ -201,17 +321,41 @@ function main() {
       }
     }
 
+    /* Plain tasks first, then the structured reading, so the thing with
+       bullets under it sits at the bottom of the list where it reads. */
+    const homework = [];
+    const plain = Array.isArray(entry.homework) ? entry.homework : [entry.homework];
+    for (const h of plain) {
+      if (typeof h === 'string' && h.trim()) homework.push({ text: h.trim() });
+    }
+    const reading = readingItem(entry.reading, index);
+    if (reading) homework.push(reading);
+
+    /* One due date for the night, derived from this cohort's next meeting.
+       An explicit homeworkDue in the schedule still wins. */
+    const nextDate = nextMeeting(entry.date, entry.cohort);
+    const due = entry.homeworkDue || (nextDate ? longDate(nextDate) : '');
+    if (homework.length && !due) {
+      notes.push(`${entry.date}: homework assigned with no later ${entry.cohort} meeting in the schedule, so it prints with no due date.`);
+    }
+    for (const h of homework) {
+      if (!h.due) h.due = due;
+    }
+
     days.push({
       date: entry.date,
+      cohort: entry.cohort || '',
       unit: entry.unit || (found ? found.unit : ''),
       topic: entry.topicTitle || (found ? found.title : ''),
       targets,
       criteria,
-      // One string or a list of them. A list becomes a numbered slide.
-      homework: Array.isArray(entry.homework)
-        ? entry.homework.filter((h) => typeof h === 'string' && h.trim()).map((h) => h.trim())
-        : (entry.homework || ''),
-      homeworkDue: entry.homeworkDue || '',
+      homework,
+      // A day with nothing assigned carries no due date. Emitting one anyway
+      // is invisible on the board, because the homework slide does not build,
+      // and it is exactly the kind of quiet disagreement between two surfaces
+      // that ends with the projector and Canvas showing different dates.
+      homeworkDue: homework.length ? due : '',
+      dueDate: homework.length ? nextDate : '',
       note: entry.note || '',
       source: found ? found.source : 'written by hand in the schedule'
     });
@@ -247,11 +391,23 @@ function main() {
   out += `    apExamDate: ${quote(settings.apExamDate)}\n`;
   out += '  },\n\n';
 
+  // Straight out of scripts/lib/cohorts.js, so the board, the Canvas events
+  // and the schedule cannot disagree about what Green looks like.
+  out += '  cohorts: {\n';
+  out += Object.values(COHORTS).map((c) => (
+    `    ${c.key}: { label: ${quote(c.label)}, short: ${quote(c.short)}, ` +
+    `letter: ${quote(c.letter)}, metal: ${quote(c.metal)}, mark: ${quote(c.mark)}, ` +
+    `ink: ${quote(c.ink)}, tint: ${quote(c.tint)}, onDark: ${quote(c.onDark)}, ` +
+    `filled: ${c.filled} }`
+  )).join(',\n');
+  out += '\n  },\n\n';
+
   out += '  days: [\n';
   out += days.map((day) => {
     let block = `    /* ${day.date}  <-  ${day.source} */\n`;
     block += '    {\n';
     block += `      date: ${quote(day.date)},\n`;
+    block += `      cohort: ${quote(day.cohort)},\n`;
     block += `      unit: ${quote(day.unit)},\n`;
     block += `      topic: ${quote(day.topic)},\n`;
     if (day.targets.length) {
@@ -260,13 +416,13 @@ function main() {
     if (day.criteria.length) {
       block += '      successCriteria: [\n' + emitEntries(day.criteria, 8) + '\n      ],\n';
     }
-    if (Array.isArray(day.homework)) {
-      block += '      homework: [\n' +
-        day.homework.map((h) => '        ' + quote(h)).join(',\n') + '\n      ]';
+    if (day.homework.length) {
+      block += '      homework: [\n' + emitHomework(day.homework, 8) + '\n      ]';
     } else {
-      block += `      homework: ${quote(day.homework)}`;
+      block += '      homework: []';
     }
     if (day.homeworkDue) block += `,\n      homeworkDue: ${quote(day.homeworkDue)}`;
+    if (day.dueDate) block += `,\n      dueDate: ${quote(day.dueDate)}`;
     if (day.note) block += `,\n      note: ${quote(day.note)}`;
     block += '\n    }';
     return block;
@@ -290,10 +446,27 @@ function main() {
   )).join(',\n');
   out += '\n  ]\n};\n';
 
+  if (process.argv.includes('--check')) {
+    const current = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : null;
+    if (current !== out) {
+      console.error('FAIL  assets/data/announcements.js is out of date.');
+      console.error('      Run: node scripts/build-announcements.js');
+      process.exit(1);
+    }
+    console.log('OK  announcements.js matches the schedule and the lesson data.');
+    if (problems.length) {
+      problems.forEach((p) => console.error('  ! ' + p));
+      process.exit(1);
+    }
+    return;
+  }
+
   fs.writeFileSync(OUT, out);
 
   console.log(`Indexed ${index.size} topics from the course.`);
-  console.log(`Wrote ${days.length} class days to assets/data/announcements.js.`);
+  const green = days.filter((d) => d.cohort === 'green').length;
+  const silver = days.filter((d) => d.cohort === 'silver').length;
+  console.log(`Wrote ${days.length} class days to assets/data/announcements.js (${green} green, ${silver} silver).`);
   if (notes.length) {
     console.log('\nWorth a look:');
     [...new Set(notes)].forEach((n) => console.log('  - ' + n));

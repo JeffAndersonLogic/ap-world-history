@@ -254,9 +254,12 @@ body::before{
 .agenda-list.is-long .agenda-num{font-size:clamp(.95rem,1.85vw,2.3rem)}
 .agenda-list.is-long{gap:clamp(6px,1vh,14px)}
 
-/* ---------- Homework, when there is more than one thing ----------
-   Numbered, because the count is what a student needs to carry out of
-   the room: "there are two things tonight". */
+/* ---------- Homework ----------
+   Bulleted, not numbered. The count moved to the eyebrow, where it is read
+   once, instead of being re-derived from a column of digits at the back of
+   the room. A reading entry carries its sections as their own bullets: the
+   sections are the assignment, and packing five of them into one sentence
+   is how a student ends up reading three. */
 .homework-list{
   list-style:none; margin:0; padding:0;
   display:flex; flex-direction:column; gap:clamp(10px,1.8vh,24px);
@@ -267,12 +270,11 @@ body::before{
   background:linear-gradient(90deg, rgba(245,240,231,.075), rgba(245,240,231,.02));
   border-left:clamp(6px,.6vw,12px) solid var(--antique-gold);
 }
-.homework-num{
-  flex:0 0 auto;
-  font-family:var(--ui); font-weight:900;
-  font-size:clamp(1.3rem,2.6vw,3.2rem); line-height:1.05;
-  color:var(--antique-gold); font-variant-numeric:tabular-nums;
-  min-width:1.3em;
+.homework-item::before{
+  content:""; flex:0 0 auto;
+  width:clamp(.5rem,.85vw,1rem); height:clamp(.5rem,.85vw,1rem);
+  margin-top:clamp(.42rem,.85vw,1.05rem);
+  border-radius:50%; background:var(--antique-gold);
 }
 .homework-body{display:flex; flex-direction:column; align-items:flex-start; gap:.6em}
 .homework-text{
@@ -280,9 +282,95 @@ body::before{
   font-size:clamp(1.05rem,2.15vw,2.7rem); line-height:1.3;
   color:var(--clean-paper); text-wrap:pretty;
 }
-.homework-list.is-dense .homework-text{font-size:clamp(.92rem,1.65vw,2.05rem)}
+.homework-note{
+  font-family:var(--ui); font-weight:600; font-style:italic;
+  font-size:clamp(.8rem,1.35vw,1.6rem); line-height:1.35;
+  color:var(--muted-sandstone);
+}
+
+/* The sections of one reading. Indented under their assignment, set in the
+   UI face so they read as a list of items rather than as more prose. */
+.reading-list{
+  list-style:none; margin:0; padding:0 0 0 clamp(10px,1.3vw,26px);
+  display:flex; flex-direction:column; gap:clamp(4px,.7vh,12px);
+  border-left:1px solid var(--hairline);
+}
+.reading-item{
+  display:flex; align-items:baseline; gap:clamp(8px,1vw,18px);
+  font-family:var(--ui); font-weight:600;
+  font-size:clamp(.86rem,1.55vw,1.95rem); line-height:1.3;
+  color:var(--warm-paper);
+}
+.reading-item::before{
+  content:"\2013"; flex:0 0 auto;
+  color:var(--antique-gold); font-weight:700;
+}
+.reading-item.is-recommended{color:var(--muted-sandstone); font-weight:400}
+.reading-item.is-recommended::before{color:var(--muted-sandstone)}
+.reading-tone{
+  font-size:.62em; letter-spacing:.16em; text-transform:uppercase;
+  font-weight:700; color:var(--muted-sandstone);
+  border:1px solid var(--hairline); border-radius:2px;
+  padding:.1em .5em; white-space:nowrap;
+}
+
+.homework-foot{margin-top:clamp(12px,2vh,26px)}
+
 .homework-list.is-dense{gap:clamp(7px,1.2vh,16px)}
-.homework-list.is-dense .homework-num{font-size:clamp(1.05rem,2vw,2.4rem)}
+.homework-list.is-dense .homework-text{font-size:clamp(.92rem,1.65vw,2.05rem)}
+.homework-list.is-dense .reading-item{font-size:clamp(.76rem,1.25vw,1.55rem)}
+.homework-list.is-dense .homework-item{padding:clamp(10px,1.6vh,22px) clamp(14px,1.8vw,32px)}
+
+/* ---------- Green and Silver ----------
+   The palette is already a set of metals, so the two cohorts are metals too:
+   verdigris, the patina copper takes with age, against pewter. A stock green
+   and a stock grey would sit beside the brand rather than inside it.
+
+   Three signals, never one. The colour, the letter, and the shape: Green is a
+   filled disc, Silver an open ring. Any one of them survives a washed-out
+   projector, a grayscale print, or a reader who cannot separate the hues.
+
+   --cohort is set inline from assets/data/announcements.js, which gets it
+   from scripts/lib/cohorts.js. It is the on-dark value: this board is steel,
+   and pewter's own #8A9298 is a fill colour, not a text colour. */
+.cohort-seal{
+  display:flex; align-items:center; gap:clamp(8px,.9vw,16px);
+  margin-left:auto; margin-right:clamp(14px,2vw,40px);
+}
+.cohort-seal.is-hidden{display:none}
+.cohort-disc{
+  display:flex; align-items:center; justify-content:center;
+  width:clamp(26px,2.5vw,44px); height:clamp(26px,2.5vw,44px);
+  border-radius:50%;
+  border:2px solid var(--cohort, var(--antique-gold));
+  color:var(--cohort, var(--antique-gold));
+  font-family:var(--ui); font-weight:800;
+  font-size:clamp(.75rem,1.1vw,1.15rem); letter-spacing:0;
+  line-height:1;
+}
+.cohort-seal.is-filled .cohort-disc,
+.title-card-cohort.is-filled .cohort-disc{
+  background:var(--cohort, var(--antique-gold));
+  color:var(--blackened-steel,#1a1c1d);
+}
+.cohort-name{
+  font-family:var(--ui); font-weight:800;
+  font-size:clamp(.6rem,.85vw,1rem);
+  letter-spacing:.22em; text-transform:uppercase;
+  color:var(--cohort, var(--antique-gold));
+}
+.title-card-cohort{
+  display:inline-flex; align-items:center; gap:clamp(10px,1.1vw,20px);
+  margin:clamp(10px,1.6vh,24px) auto 0;
+  padding:clamp(6px,.9vh,12px) clamp(14px,1.4vw,26px);
+  border:1px solid var(--cohort, var(--antique-gold));
+  border-radius:999px;
+}
+.title-card-cohort .cohort-disc{
+  width:clamp(30px,2.8vw,52px); height:clamp(30px,2.8vw,52px);
+  font-size:clamp(.85rem,1.3vw,1.4rem);
+}
+.title-card-cohort .cohort-name{font-size:clamp(.7rem,1.05vw,1.3rem)}
 
 /* ---------- Learning targets ----------
    A set, not a sequence. No numbering, just a gold rule per statement. */
@@ -628,8 +716,17 @@ body::before{
   }
   .criteria-mark,
   .criteria-list.is-tight .criteria-mark{width:20px; height:20px; margin-top:.1em}
-  .homework-num,
-  .homework-list.is-dense .homework-num{font-size:1.3rem; min-width:1.1em}
+  .homework-item::before{width:.5rem; height:.5rem; margin-top:.42rem}
+  .reading-item,
+  .homework-list.is-dense .reading-item{font-size:.86rem; line-height:1.4}
+  .reading-tone{font-size:.55rem}
+  .homework-note{font-size:.82rem}
+  .cohort-seal{margin-right:10px; gap:7px}
+  .cohort-disc{width:24px; height:24px; font-size:.7rem}
+  .cohort-name{font-size:.55rem; letter-spacing:.16em}
+  .title-card-cohort{padding:5px 12px; gap:9px}
+  .title-card-cohort .cohort-disc{width:26px; height:26px; font-size:.78rem}
+  .title-card-cohort .cohort-name{font-size:.62rem}
   .entry-label{font-size:.58rem; letter-spacing:.2em}
 
   /* Dated rows go to two lines rather than squeezing three columns. */

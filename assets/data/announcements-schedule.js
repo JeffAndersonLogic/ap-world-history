@@ -2,16 +2,41 @@
    BEHISTORICAL ANNOUNCEMENTS, THE SCHEDULE
    =========================================================
 
-   THIS is the file you edit. Give a date and a topic number, and
-   the learning targets and success criteria come straight out of
-   that lesson's own data file.
+   THIS is the file you edit. Give a date, a cohort, and a topic
+   number, and the learning targets and success criteria come
+   straight out of that lesson's own data file.
 
    After editing, run:
 
        node scripts/build-announcements.js
+       node scripts/build-canvas-events.js
 
-   That writes assets/data/announcements.js, which the classroom
-   board reads. Never edit that file by hand, it gets overwritten.
+   The first writes assets/data/announcements.js, which the
+   classroom board reads. The second writes the paste-ready Canvas
+   calendar events. Never edit either output by hand.
+
+   ---------------------------------------------------------
+   GREEN AND SILVER
+
+   This is an alternating block. School days alternate strictly,
+   Green then Silver, and each topic is taught to Green first and
+   to Silver at the next meeting. They are DIFFERENT STUDENTS, so
+   a topic is not a two-day arc: it is one 90-minute block, taught
+   twice, to two rooms that never see each other's work.
+
+   That is why every day carries a `cohort`, and why homework is
+   written on BOTH of a topic's days rather than once on the
+   second. The old file had one homework entry per topic pair,
+   posted on the last day of the pair. On an alternating block
+   that lands every assignment in front of one cohort and every
+   blank row in front of the other: Green went into Topic 1.2
+   with no reading assigned, and Silver's said due Friday, which
+   is not a day Silver is in the building.
+
+   The due date is NOT typed here. The builder derives it from the
+   next date in this list carrying the same cohort, so a holiday,
+   a snow day or a schedule change moves every due date with it by
+   deleting one row. Type `homeworkDue` only to override.
 
    TOPIC NUMBERS you can use:
 
@@ -29,15 +54,25 @@
    A DAY ENTRY:
 
        date         required, 'YYYY-MM-DD'
+       cohort       required, 'green' or 'silver'
        topic        the topic number above. This fills in the unit,
                     the title, the learning targets, and the
                     success criteria automatically.
-       homework     what leaves the room tonight. Yours to write, the
-                    course data has no homework in it. One assignment can
-                    be a plain string. Two or more go in a list and each
-                    gets its own numbered line on the screen:
-                        homework: ['Finish the responses.', 'Read page 18.']
-       homeworkDue  optional, shows as a chip, e.g. 'Friday'
+       homework     plain tasks that leave the room tonight. One can
+                    be a string; two or more go in a list.
+       reading      a required-reading assignment, written as
+                    structure rather than one long sentence, so the
+                    board and Canvas both print real bullets:
+
+                        reading: {
+                          for: '1.3',                  // topic it prepares
+                          where: 'ebook/unit-1.html',
+                          required: ['01 ...', '02 ...'],
+                          recommended: ['05 ...']      // optional
+                        }
+
+       homeworkDue  optional override, e.g. 'Friday'. Leave it out
+                    and the builder uses this cohort's next meeting.
        note         optional one line callout ('Bring your Chromebook')
 
    OVERRIDES, for when the lesson wording is too long to project:
@@ -63,12 +98,14 @@ window.BEHISTORICAL_SCHEDULE = {
 
   /* ---------------------------------------------------------
      THE CALENDAR
-     One line of typing per class day. Replace these samples.
+     One row per class day. Green first, Silver next meeting.
      --------------------------------------------------------- */
   days: [
-    // Foundations 0, Thursday and Friday
+
+    /* ---- Foundations 0 ---------------------------------- */
     {
       date: '2026-08-06',
+      cohort: 'green',
       topic: 'F0',
       homework: [
         'Complete your F0 responses and submit them in Canvas.',
@@ -77,6 +114,7 @@ window.BEHISTORICAL_SCHEDULE = {
     },
     {
       date: '2026-08-07',
+      cohort: 'silver',
       topic: 'F0',
       homework: [
         'Complete your F0 responses and submit them in Canvas.',
@@ -84,9 +122,10 @@ window.BEHISTORICAL_SCHEDULE = {
       ]
     },
 
-    // Foundations 1, Monday and Tuesday
+    /* ---- Foundations 1 ---------------------------------- */
     {
       date: '2026-08-10',
+      cohort: 'green',
       topic: 'F1',
       homework: [
         'Finish the Foundations 1 modules for Geography Shapes Civilization.',
@@ -95,6 +134,7 @@ window.BEHISTORICAL_SCHEDULE = {
     },
     {
       date: '2026-08-11',
+      cohort: 'silver',
       topic: 'F1',
       homework: [
         'Finish the Foundations 1 modules for Geography Shapes Civilization.',
@@ -102,158 +142,273 @@ window.BEHISTORICAL_SCHEDULE = {
       ]
     },
 
-    // Foundations 2, Wednesday and Thursday
-    { date: '2026-08-12', topic: 'F2', homework: '' },
-    { date: '2026-08-13', topic: 'F2', homework: '' },
+    /* ---- Foundations 2 ---------------------------------- */
+    { date: '2026-08-12', cohort: 'green',  topic: 'F2', homework: '' },
+    { date: '2026-08-13', cohort: 'silver', topic: 'F2', homework: '' },
 
-    // Foundations 3, Friday and the following Monday
-    { date: '2026-08-14', topic: 'F3', homework: '' },
-    { date: '2026-08-17', topic: 'F3', homework: '' },
+    /* ---- Foundations 3 ---------------------------------- */
+    { date: '2026-08-14', cohort: 'green',  topic: 'F3', homework: '' },
+    { date: '2026-08-17', cohort: 'silver', topic: 'F3', homework: '' },
 
-    // Foundations 4, Tuesday and Wednesday
-    { date: '2026-08-18', topic: 'F4', homework: '' },
-    { date: '2026-08-19', topic: 'F4', homework: '' },
+    /* ---- Foundations 4 ---------------------------------- */
+    { date: '2026-08-18', cohort: 'green',  topic: 'F4', homework: '' },
+    { date: '2026-08-19', cohort: 'silver', topic: 'F4', homework: '' },
 
-    // Foundations 5, Thursday and Friday
-    { date: '2026-08-20', topic: 'F5', homework: '' },
-    { date: '2026-08-21', topic: 'F5', homework: '' },
+    /* ---- Foundations 5 ---------------------------------- */
+    { date: '2026-08-20', cohort: 'green',  topic: 'F5', homework: '' },
+    { date: '2026-08-21', cohort: 'silver', topic: 'F5', homework: '' },
 
-    // Foundations Assessment, Monday and Tuesday
-    // One single assignment, posted today, covers all five required Topic
-    // 1.1 sections at once, due before the block starts Wednesday. Kept as
-    // one homework entry on purpose: it is one Canvas assignment to post,
-    // not one per section.
+    /* ---- Foundations Assessment ------------------------- */
+    // The Topic 1.1 reading is assigned at the end of each cohort's own
+    // assessment day, due at that cohort's next meeting. One Canvas
+    // assignment naming every required section, not one per section.
     {
       date: '2026-08-24',
+      cohort: 'green',
       topicTitle: 'Foundations Assessment',
       unit: 'Foundations',
-      homework: [
-        'Required eBook reading for Topic 1.1, all five sections (ebook/unit-1.html): 01 The Founding Problem, 02 The Exam, 03 Neo-Confucianism, 04 The Economy, 05 The Frontier and the End.'
-      ],
-      homeworkDue: 'Wednesday'
+      reading: {
+        for: '1.1',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 The Founding Problem',
+          '02 The Exam',
+          '03 Neo-Confucianism',
+          '04 The Economy',
+          '05 The Frontier and the End'
+        ]
+      }
     },
     {
       date: '2026-08-25',
+      cohort: 'silver',
       topicTitle: 'Foundations Assessment',
       unit: 'Foundations',
-      homework: ''
+      reading: {
+        for: '1.1',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 The Founding Problem',
+          '02 The Exam',
+          '03 Neo-Confucianism',
+          '04 The Economy',
+          '05 The Frontier and the End'
+        ]
+      }
     },
 
-    // Topic 1.1, Song China, Wednesday and Thursday
-    // All required reading was already assigned as one block above; the
-    // second day's homework is the single required-reading assignment for
-    // the NEXT block (1.2), posted the last school day before it starts.
-    // This is the pattern for the rest of Unit 1: one homework entry, on
-    // the last school day of the block before, naming every required
-    // section for the block ahead in one line.
+    /* ---- Topic 1.1, Song China -------------------------- */
     {
       date: '2026-08-26',
+      cohort: 'green',
       topic: '1.1',
-      homework: ''
+      reading: {
+        for: '1.2',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 The Unraveling of the Caliphate',
+          '02 The Turkic Successor States',
+          '03 How Islam Actually Spread',
+          '04 The Knowledge Machine'
+        ],
+        recommended: ['05 Who Was on Top, and Who Was Not']
+      }
     },
     {
       date: '2026-08-27',
+      cohort: 'silver',
       topic: '1.1',
-      homework: [
-        'Required eBook reading for Topic 1.2, four sections (ebook/unit-1.html): 01 The Unraveling of the Caliphate, 02 The Turkic Successor States, 03 How Islam Actually Spread, 04 The Knowledge Machine. (Section 05 is recommended, not required.)'
-      ],
-      homeworkDue: 'Friday'
+      reading: {
+        for: '1.2',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 The Unraveling of the Caliphate',
+          '02 The Turkic Successor States',
+          '03 How Islam Actually Spread',
+          '04 The Knowledge Machine'
+        ],
+        recommended: ['05 Who Was on Top, and Who Was Not']
+      }
     },
 
-    // Topic 1.2, Dar al-Islam, Friday and Monday
+    /* ---- Topic 1.2, Dar al-Islam ------------------------ */
     {
       date: '2026-08-28',
+      cohort: 'green',
       topic: '1.2',
-      homework: ''
+      homework: 'Finish BeInTheRoom, the scholars council, if it did not fit in the block.',
+      reading: {
+        for: '1.3',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 South Asia After the Sultanate Arrived',
+          '02 Belief and the Social Order in South Asia',
+          '03 The Sea States',
+          '04 The Land States',
+          '05 Religion as Governance'
+        ]
+      }
     },
     {
       date: '2026-08-31',
+      cohort: 'silver',
       topic: '1.2',
-      homework: [
-        'Required eBook reading for Topic 1.3, all five sections (ebook/unit-1.html): 01 South Asia After the Sultanate Arrived, 02 Belief and the Social Order in South Asia, 03 The Sea States, 04 The Land States, 05 Religion as Governance.'
-      ],
-      homeworkDue: 'Tuesday'
+      homework: 'Finish BeInTheRoom, the scholars council, if it did not fit in the block.',
+      reading: {
+        for: '1.3',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 South Asia After the Sultanate Arrived',
+          '02 Belief and the Social Order in South Asia',
+          '03 The Sea States',
+          '04 The Land States',
+          '05 Religion as Governance'
+        ]
+      }
     },
 
-    // Topic 1.3, South and Southeast Asia, Tuesday and Wednesday
+    /* ---- Topic 1.3, South and Southeast Asia ------------ */
     {
       date: '2026-09-01',
+      cohort: 'green',
       topic: '1.3',
-      homework: ''
+      reading: {
+        for: '1.4',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 The Maya City-States',
+          '02 The Mexica',
+          '03 The Inca',
+          '04 North America',
+          '05 The Evidence, and Who Wrote It'
+        ]
+      }
     },
     {
       date: '2026-09-02',
+      cohort: 'silver',
       topic: '1.3',
-      homework: [
-        'Required eBook reading for Topic 1.4, all five sections (ebook/unit-1.html): 01 The Maya City-States, 02 The Mexica, 03 The Inca, 04 North America, 05 The Evidence, and Who Wrote It.'
-      ],
-      homeworkDue: 'Thursday'
+      reading: {
+        for: '1.4',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 The Maya City-States',
+          '02 The Mexica',
+          '03 The Inca',
+          '04 North America',
+          '05 The Evidence, and Who Wrote It'
+        ]
+      }
     },
 
-    // Topic 1.4, The Americas, Thursday and Friday
+    /* ---- Topic 1.4, The Americas ------------------------ */
+    // Green's 1.5 reading crosses the long weekend: Monday 9/7 is Labor Day,
+    // so Green's next meeting is Tuesday 9/8. The builder works that out
+    // from the calendar below rather than from a typed due date.
     {
       date: '2026-09-03',
+      cohort: 'green',
       topic: '1.4',
-      homework: ''
+      reading: {
+        for: '1.5',
+        where: 'ebook/unit-1.html',
+        required: [
+          '02 The Hausa City-States',
+          '03 Great Zimbabwe',
+          '05 Ethiopia'
+        ],
+        recommended: ['01 Mali', '04 The Swahili Coast']
+      }
     },
     {
-      // Assigned over the long weekend: Monday 9/7 is Labor Day, so the 1.5
-      // reading is due Tuesday rather than the usual single school night.
       date: '2026-09-04',
+      cohort: 'silver',
       topic: '1.4',
-      homework: [
-        'Required eBook reading for Topic 1.5, three sections (ebook/unit-1.html): 02 The Hausa City-States, 03 Great Zimbabwe, 05 Ethiopia. (Sections 01, Mali, and 04, the Swahili Coast, are recommended, not required.)'
-      ],
-      homeworkDue: 'Tuesday'
+      reading: {
+        for: '1.5',
+        where: 'ebook/unit-1.html',
+        required: [
+          '02 The Hausa City-States',
+          '03 Great Zimbabwe',
+          '05 Ethiopia'
+        ],
+        recommended: ['01 Mali', '04 The Swahili Coast']
+      }
     },
 
-    // Topic 1.5, Africa, Tuesday and Wednesday (Monday 9/7 is Labor Day)
+    /* ---- Topic 1.5, Africa ------------------------------ */
+    // Monday 9/7 is Labor Day, so this block starts Tuesday.
     {
       date: '2026-09-08',
+      cohort: 'green',
       topic: '1.5',
-      homework: ''
+      reading: {
+        for: '1.6',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 Fragmentation',
+          '02 The Church',
+          '03 The Monarchies',
+          '04 Towns, Guilds, and the Commercial Revolution'
+        ],
+        recommended: ['05 The Fourteenth-Century Crisis']
+      }
     },
     {
       date: '2026-09-09',
+      cohort: 'silver',
       topic: '1.5',
-      homework: [
-        'Required eBook reading for Topic 1.6, four sections (ebook/unit-1.html): 01 Fragmentation, 02 The Church, 03 The Monarchies, 04 Towns, Guilds, and the Commercial Revolution. (Section 05, the Fourteenth-Century Crisis, is recommended, not required.)'
-      ],
-      homeworkDue: 'Thursday'
+      reading: {
+        for: '1.6',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 Fragmentation',
+          '02 The Church',
+          '03 The Monarchies',
+          '04 Towns, Guilds, and the Commercial Revolution'
+        ],
+        recommended: ['05 The Fourteenth-Century Crisis']
+      }
     },
 
-    // Topic 1.6, Europe, Thursday and Friday
-    // NOTE: 9/10 and 9/11 follow the same back-to-back school-day pattern as
-    // every block above, but are not yet confirmed against the Canvas
-    // calendar the way 1.1 to 1.5 were. Check these two dates before the
-    // board goes live for this block.
+    /* ---- Topic 1.6, Europe ------------------------------ */
+    // NOTE: 9/10 and 9/11 follow the same alternating pattern as every block
+    // above, but are not yet confirmed against the Canvas calendar the way
+    // 1.1 to 1.5 were. Check these two dates before the board goes live.
     {
       date: '2026-09-10',
+      cohort: 'green',
       topic: '1.6',
-      homework: ''
+      reading: {
+        for: '1.7',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 What Comparison Actually Is',
+          '05 Writing It Without Collapsing'
+        ],
+        note: 'Sections 02 to 04 are reference material for building your comparison, not required reading.'
+      }
     },
     {
       date: '2026-09-11',
+      cohort: 'silver',
       topic: '1.6',
-      homework: [
-        'Required eBook reading for Topic 1.7, two sections (ebook/unit-1.html): 01 What Comparison Actually Is, 05 Writing It Without Collapsing. (Sections 02 to 04 are reference material for building your comparison, not required reading.)'
-      ],
-      homeworkDue: 'Monday'
+      reading: {
+        for: '1.7',
+        where: 'ebook/unit-1.html',
+        required: [
+          '01 What Comparison Actually Is',
+          '05 Writing It Without Collapsing'
+        ],
+        note: 'Sections 02 to 04 are reference material for building your comparison, not required reading.'
+      }
     },
 
-    // Topic 1.7, Comparison, Monday and Tuesday
+    /* ---- Topic 1.7, Comparison -------------------------- */
     // NOTE: same caveat as 1.6, 9/14 and 9/15 are extrapolated from the
-    // back-to-back pattern, not confirmed against the Canvas calendar.
-    {
-      date: '2026-09-14',
-      topic: '1.7',
-      homework: ''
-    },
-    {
-      date: '2026-09-15',
-      topic: '1.7',
-      homework: ''
-    }
+    // alternating pattern, not confirmed against the Canvas calendar.
+    { date: '2026-09-14', cohort: 'green',  topic: '1.7', homework: '' },
+    { date: '2026-09-15', cohort: 'silver', topic: '1.7', homework: '' }
   ],
 
   /* ---------------------------------------------------------
@@ -265,11 +420,11 @@ window.BEHISTORICAL_SCHEDULE = {
      --------------------------------------------------------- */
   assessments: [
     {
-      // Dated on the second block day so the reminder stays on the board
-      // through both class days.
+      // Dated on the Silver day so the reminder stays on the board through
+      // both cohorts' meetings.
       date: '2026-08-25',
       title: 'Foundations Assessment',
-      detail: 'Covers Foundations 0 to 5, in class Monday, August 24 and Tuesday, August 25',
+      detail: 'Covers Foundations 0 to 5, in class Monday, August 24 for Green and Tuesday, August 25 for Silver',
       type: 'Test'
     }
   ],

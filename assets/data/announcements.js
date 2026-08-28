@@ -20,10 +20,16 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
     apExamDate: '2027-05-06'
   },
 
+  cohorts: {
+    green: { label: 'Green Day', short: 'Green', letter: 'G', metal: 'verdigris', mark: '#2F5C46', ink: '#2F5C46', tint: '#E7EFE9', onDark: '#7FB496', filled: true },
+    silver: { label: 'Silver Day', short: 'Silver', letter: 'S', metal: 'pewter', mark: '#8A9298', ink: '#545B5F', tint: '#ECEEEF', onDark: '#B9C1C6', filled: false }
+  },
+
   days: [
     /* 2026-08-06  <-  foundations-0-intro-to-behistorical-data.js */
     {
       date: '2026-08-06',
+      cohort: 'green',
       unit: 'Foundations',
       topic: 'Intro to BeHistorical',
       learningTargets: [
@@ -37,13 +43,16 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can describe in one sentence what my end-of-year portfolio will contain and who sees it, and write one paragraph in my own voice that captures who I am as a historical thinker on Day 1.' }
       ],
       homework: [
-        'Complete your F0 responses and submit them in Canvas.',
-        'Read Theme 1, page 18, in the eBook.'
-      ]
+        { text: 'Complete your F0 responses and submit them in Canvas.', due: 'Monday, August 10' },
+        { text: 'Read Theme 1, page 18, in the eBook.', due: 'Monday, August 10' }
+      ],
+      homeworkDue: 'Monday, August 10',
+      dueDate: '2026-08-10'
     },
     /* 2026-08-07  <-  foundations-0-intro-to-behistorical-data.js */
     {
       date: '2026-08-07',
+      cohort: 'silver',
       unit: 'Foundations',
       topic: 'Intro to BeHistorical',
       learningTargets: [
@@ -57,13 +66,16 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can describe in one sentence what my end-of-year portfolio will contain and who sees it, and write one paragraph in my own voice that captures who I am as a historical thinker on Day 1.' }
       ],
       homework: [
-        'Complete your F0 responses and submit them in Canvas.',
-        'Read Theme 1, page 18, in the eBook.'
-      ]
+        { text: 'Complete your F0 responses and submit them in Canvas.', due: 'Tuesday, August 11' },
+        { text: 'Read Theme 1, page 18, in the eBook.', due: 'Tuesday, August 11' }
+      ],
+      homeworkDue: 'Tuesday, August 11',
+      dueDate: '2026-08-11'
     },
     /* 2026-08-10  <-  foundations-1-geography-data.js */
     {
       date: '2026-08-10',
+      cohort: 'green',
       unit: 'Foundations',
       topic: 'Geography Shapes Civilization',
       learningTargets: [
@@ -77,13 +89,16 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can write a contextualization sentence that identifies a geographic condition and explains how it shaped the shift to farming or the rise of a civilization.' }
       ],
       homework: [
-        'Finish the Foundations 1 modules for Geography Shapes Civilization.',
-        'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.'
-      ]
+        { text: 'Finish the Foundations 1 modules for Geography Shapes Civilization.', due: 'Wednesday, August 12' },
+        { text: 'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.', due: 'Wednesday, August 12' }
+      ],
+      homeworkDue: 'Wednesday, August 12',
+      dueDate: '2026-08-12'
     },
     /* 2026-08-11  <-  foundations-1-geography-data.js */
     {
       date: '2026-08-11',
+      cohort: 'silver',
       unit: 'Foundations',
       topic: 'Geography Shapes Civilization',
       learningTargets: [
@@ -97,13 +112,16 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can write a contextualization sentence that identifies a geographic condition and explains how it shaped the shift to farming or the rise of a civilization.' }
       ],
       homework: [
-        'Finish the Foundations 1 modules for Geography Shapes Civilization.',
-        'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.'
-      ]
+        { text: 'Finish the Foundations 1 modules for Geography Shapes Civilization.', due: 'Thursday, August 13' },
+        { text: 'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.', due: 'Thursday, August 13' }
+      ],
+      homeworkDue: 'Thursday, August 13',
+      dueDate: '2026-08-13'
     },
     /* 2026-08-12  <-  foundations-2-belief-systems-data.js */
     {
       date: '2026-08-12',
+      cohort: 'green',
       unit: 'Foundations',
       topic: 'Belief Systems & Cultural Exchange',
       learningTargets: [
@@ -116,11 +134,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can identify a specific institutional function of a belief system, education, law, welfare, legitimacy, social order, and give a concrete historical example.' },
         { text: 'I can explain at least one mechanism by which a belief system spread, trade route, state adoption, missionary, civil service exam, or monastic network, and give a specific example of syncretism that shows how belief systems change as they travel.' }
       ],
-      homework: ''
+      homework: []
     },
     /* 2026-08-13  <-  foundations-2-belief-systems-data.js */
     {
       date: '2026-08-13',
+      cohort: 'silver',
       unit: 'Foundations',
       topic: 'Belief Systems & Cultural Exchange',
       learningTargets: [
@@ -133,11 +152,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can identify a specific institutional function of a belief system, education, law, welfare, legitimacy, social order, and give a concrete historical example.' },
         { text: 'I can explain at least one mechanism by which a belief system spread, trade route, state adoption, missionary, civil service exam, or monastic network, and give a specific example of syncretism that shows how belief systems change as they travel.' }
       ],
-      homework: ''
+      homework: []
     },
     /* 2026-08-14  <-  foundations-3-states-power-data.js */
     {
       date: '2026-08-14',
+      cohort: 'green',
       unit: 'Foundations',
       topic: 'States, Power & Social Organization',
       learningTargets: [
@@ -150,11 +170,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain one example of resistance or exclusion (the Yellow Turbans, Spartacus, Greek or Roman exclusion of non-citizens) and connect it to a limit of state power.' },
         { text: 'I can compare two of the four states by explaining how each answered the same problem differently, using a specific mechanism, not just "it helped the ruler" but how and why.' }
       ],
-      homework: ''
+      homework: []
     },
     /* 2026-08-17  <-  foundations-3-states-power-data.js */
     {
       date: '2026-08-17',
+      cohort: 'silver',
       unit: 'Foundations',
       topic: 'States, Power & Social Organization',
       learningTargets: [
@@ -167,11 +188,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain one example of resistance or exclusion (the Yellow Turbans, Spartacus, Greek or Roman exclusion of non-citizens) and connect it to a limit of state power.' },
         { text: 'I can compare two of the four states by explaining how each answered the same problem differently, using a specific mechanism, not just "it helped the ruler" but how and why.' }
       ],
-      homework: ''
+      homework: []
     },
     /* 2026-08-18  <-  foundations-4-trade-networks-data.js */
     {
       date: '2026-08-18',
+      cohort: 'green',
       unit: 'Foundations',
       topic: 'Trade Networks & Innovation',
       learningTargets: [
@@ -184,11 +206,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can name one pack-animal technology and one maritime technology with a date, and I can give at least two specific examples of non-goods traveling the networks, with dates and locations, including one religious tradition that was changed by the journey.' },
         { text: 'I can write a complexity paragraph that identifies multiple effects of a single trade network and explains how they connected across regions.' }
       ],
-      homework: ''
+      homework: []
     },
     /* 2026-08-19  <-  foundations-4-trade-networks-data.js */
     {
       date: '2026-08-19',
+      cohort: 'silver',
       unit: 'Foundations',
       topic: 'Trade Networks & Innovation',
       learningTargets: [
@@ -201,11 +224,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can name one pack-animal technology and one maritime technology with a date, and I can give at least two specific examples of non-goods traveling the networks, with dates and locations, including one religious tradition that was changed by the journey.' },
         { text: 'I can write a complexity paragraph that identifies multiple effects of a single trade network and explains how they connected across regions.' }
       ],
-      homework: ''
+      homework: []
     },
     /* 2026-08-20  <-  foundations-5-world-at-1200-data.js */
     {
       date: '2026-08-20',
+      cohort: 'green',
       unit: 'Foundations',
       topic: 'The World at c.1200 / Thinking Like a Historian',
       learningTargets: [
@@ -218,11 +242,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain each AP historical thinking skill in my own words and identify where it appeared in Foundations Days 1–4.' },
         { text: 'I can write an SAQ paragraph with a defensible claim in the first sentence, at least two specific pieces of historical evidence, and a reasoning sentence that explains the connection.' }
       ],
-      homework: ''
+      homework: []
     },
     /* 2026-08-21  <-  foundations-5-world-at-1200-data.js */
     {
       date: '2026-08-21',
+      cohort: 'silver',
       unit: 'Foundations',
       topic: 'The World at c.1200 / Thinking Like a Historian',
       learningTargets: [
@@ -235,28 +260,52 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain each AP historical thinking skill in my own words and identify where it appeared in Foundations Days 1–4.' },
         { text: 'I can write an SAQ paragraph with a defensible claim in the first sentence, at least two specific pieces of historical evidence, and a reasoning sentence that explains the connection.' }
       ],
-      homework: ''
+      homework: []
     },
     /* 2026-08-24  <-  written by hand in the schedule */
     {
       date: '2026-08-24',
+      cohort: 'green',
       unit: 'Foundations',
       topic: 'Foundations Assessment',
       homework: [
-        'Required eBook reading for Topic 1.1, all five sections (ebook/unit-1.html): 01 The Founding Problem, 02 The Exam, 03 Neo-Confucianism, 04 The Economy, 05 The Frontier and the End.'
+        { text: 'Required eBook reading for Topic 1.1, Song China: Power, Prosperity, and the Scholar\'s World (ebook/unit-1.html).', kind: 'reading', due: 'Wednesday, August 26',
+          items: [
+            { text: '01 The Founding Problem' },
+            { text: '02 The Exam' },
+            { text: '03 Neo-Confucianism' },
+            { text: '04 The Economy' },
+            { text: '05 The Frontier and the End' }
+          ]
+         }
       ],
-      homeworkDue: 'Wednesday'
+      homeworkDue: 'Wednesday, August 26',
+      dueDate: '2026-08-26'
     },
     /* 2026-08-25  <-  written by hand in the schedule */
     {
       date: '2026-08-25',
+      cohort: 'silver',
       unit: 'Foundations',
       topic: 'Foundations Assessment',
-      homework: ''
+      homework: [
+        { text: 'Required eBook reading for Topic 1.1, Song China: Power, Prosperity, and the Scholar\'s World (ebook/unit-1.html).', kind: 'reading', due: 'Thursday, August 27',
+          items: [
+            { text: '01 The Founding Problem' },
+            { text: '02 The Exam' },
+            { text: '03 Neo-Confucianism' },
+            { text: '04 The Economy' },
+            { text: '05 The Frontier and the End' }
+          ]
+         }
+      ],
+      homeworkDue: 'Thursday, August 27',
+      dueDate: '2026-08-27'
     },
     /* 2026-08-26  <-  lesson-1-1-song-china.js */
     {
       date: '2026-08-26',
+      cohort: 'green',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'Song China: Power, Prosperity, and the Scholar\'s World',
       learningTargets: [
@@ -269,11 +318,24 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how Confucianism, Buddhism, and Chinese cultural traditions continued or changed as they shaped societies in East Asia.', label: 'Culture' },
         { text: 'I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.', label: 'Economics' }
       ],
-      homework: ''
+      homework: [
+        { text: 'Required eBook reading for Topic 1.2, Developments in Dar al-Islam (ebook/unit-1.html).', kind: 'reading', due: 'Friday, August 28',
+          items: [
+            { text: '01 The Unraveling of the Caliphate' },
+            { text: '02 The Turkic Successor States' },
+            { text: '03 How Islam Actually Spread' },
+            { text: '04 The Knowledge Machine' },
+            { text: '05 Who Was on Top, and Who Was Not', tone: 'recommended' }
+          ]
+         }
+      ],
+      homeworkDue: 'Friday, August 28',
+      dueDate: '2026-08-28'
     },
     /* 2026-08-27  <-  lesson-1-1-song-china.js */
     {
       date: '2026-08-27',
+      cohort: 'silver',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'Song China: Power, Prosperity, and the Scholar\'s World',
       learningTargets: [
@@ -287,13 +349,23 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.', label: 'Economics' }
       ],
       homework: [
-        'Required eBook reading for Topic 1.2, four sections (ebook/unit-1.html): 01 The Unraveling of the Caliphate, 02 The Turkic Successor States, 03 How Islam Actually Spread, 04 The Knowledge Machine. (Section 05 is recommended, not required.)'
+        { text: 'Required eBook reading for Topic 1.2, Developments in Dar al-Islam (ebook/unit-1.html).', kind: 'reading', due: 'Monday, August 31',
+          items: [
+            { text: '01 The Unraveling of the Caliphate' },
+            { text: '02 The Turkic Successor States' },
+            { text: '03 How Islam Actually Spread' },
+            { text: '04 The Knowledge Machine' },
+            { text: '05 Who Was on Top, and Who Was Not', tone: 'recommended' }
+          ]
+         }
       ],
-      homeworkDue: 'Friday'
+      homeworkDue: 'Monday, August 31',
+      dueDate: '2026-08-31'
     },
     /* 2026-08-28  <-  lesson-1-2-dar-al-islam.js */
     {
       date: '2026-08-28',
+      cohort: 'green',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'Developments in Dar al-Islam',
       learningTargets: [
@@ -306,11 +378,25 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how Islam spread through military expansion, merchants, missionaries, and Sufi networks.' },
         { text: 'I can connect scholarship, translation, paper-making, mathematics, medicine, astronomy, and geography to intellectual exchange.' }
       ],
-      homework: ''
+      homework: [
+        { text: 'Finish BeInTheRoom, the scholars council, if it did not fit in the block.', due: 'Tuesday, September 1' },
+        { text: 'Required eBook reading for Topic 1.3, Developments in South and Southeast Asia (ebook/unit-1.html).', kind: 'reading', due: 'Tuesday, September 1',
+          items: [
+            { text: '01 South Asia After the Sultanate Arrived' },
+            { text: '02 Belief and the Social Order in South Asia' },
+            { text: '03 The Sea States' },
+            { text: '04 The Land States' },
+            { text: '05 Religion as Governance' }
+          ]
+         }
+      ],
+      homeworkDue: 'Tuesday, September 1',
+      dueDate: '2026-09-01'
     },
     /* 2026-08-31  <-  lesson-1-2-dar-al-islam.js */
     {
       date: '2026-08-31',
+      cohort: 'silver',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'Developments in Dar al-Islam',
       learningTargets: [
@@ -324,13 +410,24 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can connect scholarship, translation, paper-making, mathematics, medicine, astronomy, and geography to intellectual exchange.' }
       ],
       homework: [
-        'Required eBook reading for Topic 1.3, all five sections (ebook/unit-1.html): 01 South Asia After the Sultanate Arrived, 02 Belief and the Social Order in South Asia, 03 The Sea States, 04 The Land States, 05 Religion as Governance.'
+        { text: 'Finish BeInTheRoom, the scholars council, if it did not fit in the block.', due: 'Wednesday, September 2' },
+        { text: 'Required eBook reading for Topic 1.3, Developments in South and Southeast Asia (ebook/unit-1.html).', kind: 'reading', due: 'Wednesday, September 2',
+          items: [
+            { text: '01 South Asia After the Sultanate Arrived' },
+            { text: '02 Belief and the Social Order in South Asia' },
+            { text: '03 The Sea States' },
+            { text: '04 The Land States' },
+            { text: '05 Religion as Governance' }
+          ]
+         }
       ],
-      homeworkDue: 'Tuesday'
+      homeworkDue: 'Wednesday, September 2',
+      dueDate: '2026-09-02'
     },
     /* 2026-09-01  <-  lesson-1-3-south-southeast-asia.js */
     {
       date: '2026-09-01',
+      cohort: 'green',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'Developments in South and Southeast Asia',
       learningTargets: [
@@ -343,11 +440,24 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can compare how land-based states (Vijayanagara, Khmer) and maritime states (Srivijaya, Majapahit) used religion and geography to build power.' },
         { text: 'I can connect trade routes, ports, monsoon winds, and merchant communities to political and cultural change in South and Southeast Asia.' }
       ],
-      homework: ''
+      homework: [
+        { text: 'Required eBook reading for Topic 1.4, State Building in the Americas (ebook/unit-1.html).', kind: 'reading', due: 'Thursday, September 3',
+          items: [
+            { text: '01 The Maya City-States' },
+            { text: '02 The Mexica' },
+            { text: '03 The Inca' },
+            { text: '04 North America' },
+            { text: '05 The Evidence, and Who Wrote It' }
+          ]
+         }
+      ],
+      homeworkDue: 'Thursday, September 3',
+      dueDate: '2026-09-03'
     },
     /* 2026-09-02  <-  lesson-1-3-south-southeast-asia.js */
     {
       date: '2026-09-02',
+      cohort: 'silver',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'Developments in South and Southeast Asia',
       learningTargets: [
@@ -361,13 +471,23 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can connect trade routes, ports, monsoon winds, and merchant communities to political and cultural change in South and Southeast Asia.' }
       ],
       homework: [
-        'Required eBook reading for Topic 1.4, all five sections (ebook/unit-1.html): 01 The Maya City-States, 02 The Mexica, 03 The Inca, 04 North America, 05 The Evidence, and Who Wrote It.'
+        { text: 'Required eBook reading for Topic 1.4, State Building in the Americas (ebook/unit-1.html).', kind: 'reading', due: 'Friday, September 4',
+          items: [
+            { text: '01 The Maya City-States' },
+            { text: '02 The Mexica' },
+            { text: '03 The Inca' },
+            { text: '04 North America' },
+            { text: '05 The Evidence, and Who Wrote It' }
+          ]
+         }
       ],
-      homeworkDue: 'Thursday'
+      homeworkDue: 'Friday, September 4',
+      dueDate: '2026-09-04'
     },
     /* 2026-09-03  <-  lesson-1-4-americas.js */
     {
       date: '2026-09-03',
+      cohort: 'green',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'State Building in the Americas',
       learningTargets: [
@@ -380,11 +500,24 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain continuity, innovation, diversity, or expansion in American state systems.' },
         { text: 'I can identify evidence used in a source to support an argument about American state building.' }
       ],
-      homework: ''
+      homework: [
+        { text: 'Required eBook reading for Topic 1.5, State Building in Africa (ebook/unit-1.html).', kind: 'reading', due: 'Tuesday, September 8',
+          items: [
+            { text: '02 The Hausa City-States' },
+            { text: '03 Great Zimbabwe' },
+            { text: '05 Ethiopia' },
+            { text: '01 Mali', tone: 'recommended' },
+            { text: '04 The Swahili Coast', tone: 'recommended' }
+          ]
+         }
+      ],
+      homeworkDue: 'Tuesday, September 8',
+      dueDate: '2026-09-08'
     },
     /* 2026-09-04  <-  lesson-1-4-americas.js */
     {
       date: '2026-09-04',
+      cohort: 'silver',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'State Building in the Americas',
       learningTargets: [
@@ -398,13 +531,23 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can identify evidence used in a source to support an argument about American state building.' }
       ],
       homework: [
-        'Required eBook reading for Topic 1.5, three sections (ebook/unit-1.html): 02 The Hausa City-States, 03 Great Zimbabwe, 05 Ethiopia. (Sections 01, Mali, and 04, the Swahili Coast, are recommended, not required.)'
+        { text: 'Required eBook reading for Topic 1.5, State Building in Africa (ebook/unit-1.html).', kind: 'reading', due: 'Wednesday, September 9',
+          items: [
+            { text: '02 The Hausa City-States' },
+            { text: '03 Great Zimbabwe' },
+            { text: '05 Ethiopia' },
+            { text: '01 Mali', tone: 'recommended' },
+            { text: '04 The Swahili Coast', tone: 'recommended' }
+          ]
+         }
       ],
-      homeworkDue: 'Tuesday'
+      homeworkDue: 'Wednesday, September 9',
+      dueDate: '2026-09-09'
     },
     /* 2026-09-08  <-  lesson-1-5-africa.js */
     {
       date: '2026-09-08',
+      cohort: 'green',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'State Building in Africa',
       learningTargets: [
@@ -417,11 +560,24 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how Ethiopia\'s Solomonic dynasty used Christianity and control of Red Sea trade to maintain independence and legitimacy.', label: 'Governance' },
         { text: 'I can describe how Hausa city-states used trans-Saharan trade and Islamic administration to build and exercise power.', label: 'Governance' }
       ],
-      homework: ''
+      homework: [
+        { text: 'Required eBook reading for Topic 1.6, Developments in Europe (ebook/unit-1.html).', kind: 'reading', due: 'Thursday, September 10',
+          items: [
+            { text: '01 Fragmentation' },
+            { text: '02 The Church' },
+            { text: '03 The Monarchies' },
+            { text: '04 Towns, Guilds, and the Commercial Revolution' },
+            { text: '05 The Fourteenth-Century Crisis', tone: 'recommended' }
+          ]
+         }
+      ],
+      homeworkDue: 'Thursday, September 10',
+      dueDate: '2026-09-10'
     },
     /* 2026-09-09  <-  lesson-1-5-africa.js */
     {
       date: '2026-09-09',
+      cohort: 'silver',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'State Building in Africa',
       learningTargets: [
@@ -435,30 +591,23 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can describe how Hausa city-states used trans-Saharan trade and Islamic administration to build and exercise power.', label: 'Governance' }
       ],
       homework: [
-        'Required eBook reading for Topic 1.6, four sections (ebook/unit-1.html): 01 Fragmentation, 02 The Church, 03 The Monarchies, 04 Towns, Guilds, and the Commercial Revolution. (Section 05, the Fourteenth-Century Crisis, is recommended, not required.)'
+        { text: 'Required eBook reading for Topic 1.6, Developments in Europe (ebook/unit-1.html).', kind: 'reading', due: 'Friday, September 11',
+          items: [
+            { text: '01 Fragmentation' },
+            { text: '02 The Church' },
+            { text: '03 The Monarchies' },
+            { text: '04 Towns, Guilds, and the Commercial Revolution' },
+            { text: '05 The Fourteenth-Century Crisis', tone: 'recommended' }
+          ]
+         }
       ],
-      homeworkDue: 'Thursday'
+      homeworkDue: 'Friday, September 11',
+      dueDate: '2026-09-11'
     },
     /* 2026-09-10  <-  lesson-1-6-europe.js */
     {
       date: '2026-09-10',
-      unit: 'Unit 1: The Global Tapestry',
-      topic: 'Developments in Europe',
-      learningTargets: [
-        { text: 'I can explain how European political structures developed in the period c. 1200 to c. 1450.' },
-        { text: 'I can describe how Christianity, feudalism, manorialism, and cities shaped European society.' },
-        { text: 'I can explain how Europe compared with other regions of Unit 1 in state power, belief systems, and economic organization.' }
-      ],
-      successCriteria: [
-        { text: 'I can use evidence about monarchies, nobles, the Church, and decentralized power to explain European politics.' },
-        { text: 'I can explain the roles of feudalism, manorialism, towns, guilds, and trade in European society.' },
-        { text: 'I can compare Europe with Song China, Dar al-Islam, Africa, the Americas, or South and Southeast Asia.' }
-      ],
-      homework: ''
-    },
-    /* 2026-09-11  <-  lesson-1-6-europe.js */
-    {
-      date: '2026-09-11',
+      cohort: 'green',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'Developments in Europe',
       learningTargets: [
@@ -472,13 +621,47 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can compare Europe with Song China, Dar al-Islam, Africa, the Americas, or South and Southeast Asia.' }
       ],
       homework: [
-        'Required eBook reading for Topic 1.7, two sections (ebook/unit-1.html): 01 What Comparison Actually Is, 05 Writing It Without Collapsing. (Sections 02 to 04 are reference material for building your comparison, not required reading.)'
+        { text: 'Required eBook reading for Topic 1.7, Comparison in the Period from c. 1200 to c. 1450 (ebook/unit-1.html).', kind: 'reading', due: 'Monday, September 14', note: 'Sections 02 to 04 are reference material for building your comparison, not required reading.',
+          items: [
+            { text: '01 What Comparison Actually Is' },
+            { text: '05 Writing It Without Collapsing' }
+          ]
+         }
       ],
-      homeworkDue: 'Monday'
+      homeworkDue: 'Monday, September 14',
+      dueDate: '2026-09-14'
+    },
+    /* 2026-09-11  <-  lesson-1-6-europe.js */
+    {
+      date: '2026-09-11',
+      cohort: 'silver',
+      unit: 'Unit 1: The Global Tapestry',
+      topic: 'Developments in Europe',
+      learningTargets: [
+        { text: 'I can explain how European political structures developed in the period c. 1200 to c. 1450.' },
+        { text: 'I can describe how Christianity, feudalism, manorialism, and cities shaped European society.' },
+        { text: 'I can explain how Europe compared with other regions of Unit 1 in state power, belief systems, and economic organization.' }
+      ],
+      successCriteria: [
+        { text: 'I can use evidence about monarchies, nobles, the Church, and decentralized power to explain European politics.' },
+        { text: 'I can explain the roles of feudalism, manorialism, towns, guilds, and trade in European society.' },
+        { text: 'I can compare Europe with Song China, Dar al-Islam, Africa, the Americas, or South and Southeast Asia.' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 1.7, Comparison in the Period from c. 1200 to c. 1450 (ebook/unit-1.html).', kind: 'reading', due: 'Tuesday, September 15', note: 'Sections 02 to 04 are reference material for building your comparison, not required reading.',
+          items: [
+            { text: '01 What Comparison Actually Is' },
+            { text: '05 Writing It Without Collapsing' }
+          ]
+         }
+      ],
+      homeworkDue: 'Tuesday, September 15',
+      dueDate: '2026-09-15'
     },
     /* 2026-09-14  <-  lesson-1-7-comparison.js */
     {
       date: '2026-09-14',
+      cohort: 'green',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'Comparison in the Period from c. 1200 to c. 1450',
       learningTargets: [
@@ -491,11 +674,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can support each comparison with specific evidence such as Song bureaucracy, Dar al-Islam scholarship, Mali trade, Inca roads, or European feudalism.' },
         { text: 'I can explain why the similarity or difference existed instead of only naming it.' }
       ],
-      homework: ''
+      homework: []
     },
     /* 2026-09-15  <-  lesson-1-7-comparison.js */
     {
       date: '2026-09-15',
+      cohort: 'silver',
       unit: 'Unit 1: The Global Tapestry',
       topic: 'Comparison in the Period from c. 1200 to c. 1450',
       learningTargets: [
@@ -508,12 +692,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can support each comparison with specific evidence such as Song bureaucracy, Dar al-Islam scholarship, Mali trade, Inca roads, or European feudalism.' },
         { text: 'I can explain why the similarity or difference existed instead of only naming it.' }
       ],
-      homework: ''
+      homework: []
     }
   ],
 
   assessments: [
-    { date: '2026-08-25', title: 'Foundations Assessment', detail: 'Covers Foundations 0 to 5, in class Monday, August 24 and Tuesday, August 25', type: 'Test' }
+    { date: '2026-08-25', title: 'Foundations Assessment', detail: 'Covers Foundations 0 to 5, in class Monday, August 24 for Green and Tuesday, August 25 for Silver', type: 'Test' }
   ],
 
   reminders: [

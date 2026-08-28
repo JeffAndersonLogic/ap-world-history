@@ -87,16 +87,55 @@ Canvas object name reads as a path separator in several export formats.
 
 ## Section 3, Calendar event table specification
 
-Every calendar event body is one table with exactly five rows, in this order:
+**Generated, not hand-built.** `scripts/build-canvas-events.js` emits every
+event in the year from `assets/data/announcements-schedule.js` into
+`docs/canvas/calendar-events.md`. Copy from there. The markup below is the
+specification that generator implements, kept here so the shape can be reviewed
+and restored; it is not a template to fill in by hand.
+
+Every calendar event body is a masthead `<div>` followed by one table with
+exactly six rows, in this order:
 
 1. `OVERVIEW`
 2. `LEARNING TARGETS`
 3. `SUCCESS CRITERIA`
-4. `BeHistorical Link`
-5. `ASSIGNMENT`
+4. `TONIGHT'S WORK`
+5. `BeHistorical Link`
+6. `ASSIGNMENT`
 
 No extra rows. No reordering. A student learns the shape once and then reads
 every event in the year the same way.
+
+**`TONIGHT'S WORK` was the fifth row added on 2026-08-28**, when the schedule
+was restructured for the alternating block. Homework had lived only on the
+projected announcements board, which a student who was absent, or who is doing
+the reading at 9pm, cannot see. It carries the assignment as bullets, a
+required eBook reading as bullets nested under it, and one due-date chip. The
+sections of a reading are the assignment, and five of them packed inside one
+sentence is how a student reads three.
+
+### Green and Silver
+
+**Every topic produces two events, not one.** School days alternate, the two
+cohorts are different students, and homework assigned to one is due at that
+cohort's next meeting two school days later. Pasting the Green event on the
+Silver day is the single mistake this document exists to prevent, so each event
+carries its cohort three ways: the colour, the letter G or S, and the shape, a
+filled disc for Green against an open ring for Silver. Colour alone fails on a
+washed-out projector, in a grayscale print, and for a reader who cannot
+separate the hues.
+
+Green is verdigris and Silver is pewter, defined once in `scripts/lib/cohorts.js`
+and read from there by the generator, the announcements builder and the
+classroom board. The palette is already a set of metals, bronze, gold, iron,
+gunmetal, oxidized steel, so the cohorts are metals too rather than a stock
+green and a stock grey sitting beside the brand.
+
+**Due dates are derived, never typed.** They come from the next date in the
+schedule carrying the same cohort, so a holiday or a cancelled day is one
+deleted row and every affected date moves with it. The hand-typed weekday this
+replaced is how Silver ended up with a reading due on a Friday it is never in
+the building for, with every other check green.
 
 ### The canonical markup
 
@@ -117,12 +156,21 @@ every event in the year the same way.
 
 ### Constraints
 
-**Label cells** (the left column) carry all four of these:
+**Label cells** (the left column) carry all five of these:
 
-- `width: 20%`
+- `width: 22%`
 - `vertical-align: top`
-- `background-color: #f0f0f0`
-- the label wrapped in `<h3>`
+- `background-color: #f5f0e7`, warm paper
+- `border-left: 5px solid <the cohort's colour>`, which is what makes the
+  cohort readable at a glance down the whole event
+- the label wrapped in `<h3>` in Montserrat, uppercase, in oxidized bronze
+
+**Antique gold is a dark-surface colour and is not used for text on a light
+row.** It is 7.3:1 on steel and 2.1:1 on paper, under the 3:1 that even large
+text is allowed. It appears on the masthead band and as rules. On the light
+rows the equivalent is oxidized bronze, `#6b3e1f`, at 7.9:1. This is the same
+rule the eBook has in writing, and "restoring" gold on a cream row is the
+defect it exists to describe.
 
 **The table element** carries all six of these:
 
