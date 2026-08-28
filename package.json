@@ -23,6 +23,7 @@
     "build:status": "node scripts/generate-status-manifest.js",
     "build:unit6": "node scripts/build-unit6.js",
     "build:unit9": "node scripts/build-unit9.js",
+    "sync:ced-2026": "node scripts/sync-ced-2026-key-concepts.js",
     "sync:first10": "node scripts/sync-first10-capture.js",
     "normalize": "node scripts/normalize-student-facing-language.js",
     "strip-form": "node scripts/remove-google-form-capture.js",

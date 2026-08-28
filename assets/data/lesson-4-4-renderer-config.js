@@ -4,46 +4,54 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.3.II.A.i',
-      theme: 'Governance',
-      text: 'Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved in new global trade networks. Some Asian states sought to limit the disruptive economic and cultural effects of European-dominated long-distance trade by adopting restrictive or isolationist trade policies.',
-      illustrativeExamples: ['Ming China', 'Tokugawa Japan']
+      "code": "KC-4.3.II.A.i",
+      "theme": "Governance",
+      "text": "Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved in new global trade networks. Some Asian states sought to limit the disruptive economic and cultural effects of European-dominated long-distance trade by adopting restrictive or isolationist trade policies.",
+      "illustrativeExamples": [
+        "Ming China",
+        "Tokugawa Japan"
+      ]
     },
     {
-      code: 'KC-4.3.II.C',
-      theme: 'Governance',
-      text: 'Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British.',
-      illustrativeExamples: []
+      "code": "KC-4.3.II.C",
+      "theme": "Governance",
+      "text": "Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.3.II.A.ii',
-      theme: 'Governance',
-      text: 'The expansion of maritime trading networks fostered the growth of states in Africa, including the Asante and the Kingdom of the Kongo, whose participation in trading networks led to an increase in their influence.',
-      illustrativeExamples: []
+      "code": "KC-4.3.II.A.ii",
+      "theme": "Governance",
+      "text": "The expansion of maritime trading networks fostered the growth of states in Africa, including the Asante and the Kingdom of the Kongo, whose participation in trading networks led to an increase in their influence.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.3.II.A.iii',
-      theme: 'Economic Systems',
-      text: 'Despite some disruption and restructuring due to the arrival of Portuguese, Spanish, and Dutch merchants, existing trade networks in the Indian Ocean continued to flourish and included intra-Asian trade and Asian merchants.',
-      illustrativeExamples: ['Swahili Arabs', 'Omanis', 'Gujaratis', 'Javanese']
+      "code": "KC-4.3.II.A.iii",
+      "theme": "Economic Systems",
+      "text": "Despite some disruption and restructuring due to the arrival of Portuguese, Spanish, and Dutch merchants, existing trade networks in the Indian Ocean continued to flourish and included intra-Asian trade and Asian merchants.",
+      "illustrativeExamples": [
+        "Swahili Arabs",
+        "Omanis",
+        "Gujaratis",
+        "Javanese"
+      ]
     },
     {
-      code: 'KC-4.2.II.D',
-      theme: 'Economic Systems',
-      text: 'Newly developed colonial economies in the Americas largely depended on agriculture, utilized existing labor systems, including the Incan mit’a, and introduced new labor systems including chattel slavery, indentured servitude, and encomienda and hacienda systems.',
-      illustrativeExamples: []
+      "code": "KC-4.2.II.D",
+      "theme": "Economic Systems",
+      "text": "Newly developed colonial economies in the Americas largely depended on agriculture, utilized existing labor systems, including the Incan mit’a, and introduced new labor systems including chattel slavery, indentured servitude, and encomienda and hacienda systems.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.2.II.B',
-      theme: 'Social Interactions and Organization',
-      text: 'Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions.',
-      illustrativeExamples: []
+      "code": "KC-4.2.II.B",
+      "theme": "Social Interactions and Organization",
+      "text": "Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.2.II.C',
-      theme: 'Social Interactions and Organization',
-      text: 'The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes.',
-      illustrativeExamples: []
+      "code": "KC-4.2.II.C",
+      "theme": "Social Interactions and Organization",
+      "text": "The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes.",
+      "illustrativeExamples": []
     }
   ];
 

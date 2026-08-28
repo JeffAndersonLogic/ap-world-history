@@ -12,33 +12,32 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Economic Systems (ECN)',
-      theme: 'Economic Systems',
-      text: 'As societies develop, they affect and are affected by the ways that they produce, exchange, and consume goods and services.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Economic Systems (ECN)",
+      "theme": "Economic Systems",
+      "text": "As societies develop, they affect and are affected by the ways that they produce, exchange, and consume goods and services.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 7: Learning Objective D',
-      theme: 'Learning Objective',
-      text: 'Explain how different governments responded to economic crisis after 1900.',
-      illustrativeExamples: []
+      "code": "Unit 7: Learning Objective D",
+      "theme": "Learning Objective",
+      "text": "Explain how different governments responded to economic crisis after 1900.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.3.I.B',
-      theme: 'Economic Systems',
-      text: 'Following World War I and the onset of the Great Depression, governments began to take a more active role in economic life.',
-      illustrativeExamples: [
-        'Government intervention in the economy:',
-        'The New Deal',
-        'The fascist corporatist economy',
-        'Governments with strong popular support in Brazil and Mexico'
+      "code": "KC-6.3.I.B",
+      "theme": "Economic Systems",
+      "text": "Following World War I and the onset of the Great Depression, governments began to take a more active role in economic life.",
+      "illustrativeExamples": [
+        "The New Deal",
+        "The fascist corporatist economy",
+        "Governments with strong popular support in Brazil and Mexico"
       ]
     },
     {
-      code: 'KC-6.3.I.A.i',
-      theme: 'Economic Systems',
-      text: 'In the Soviet Union, the government controlled the national economy through the Five-Year Plans, often implementing repressive policies, with negative repercussions for the population.',
-      illustrativeExamples: []
+      "code": "KC-6.3.I.A.i",
+      "theme": "Economic Systems",
+      "text": "In the Soviet Union, the government controlled the national economy through the Five Year Plans, often implementing repressive policies, with negative repercussions for the population.",
+      "illustrativeExamples": []
     }
   ];
 

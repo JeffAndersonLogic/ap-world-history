@@ -4,16 +4,20 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-5.1.II.B',
-      theme: 'Technology and Innovation',
-      text: 'The rapid development of steam-powered industrial production in European countries and the United States contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined.',
-      illustrativeExamples: ['Shipbuilding in India and Southeast Asia', 'Iron works in India', 'Textile production in India and Egypt']
+      "code": "KC-5.1.II.B",
+      "theme": "Technology and Innovation",
+      "text": "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined.",
+      "illustrativeExamples": [
+        "Shipbuilding in India and Southeast Asia",
+        "Iron works in India",
+        "Textile production in India and Egypt"
+      ]
     },
     {
-      code: 'KC-5.1.I.D',
-      theme: 'Technology and Innovation',
-      text: 'As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan.',
-      illustrativeExamples: []
+      "code": "KC-5.1.I.D",
+      "theme": "Technology and Innovation",
+      "text": "As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan.",
+      "illustrativeExamples": []
     }
   ];
 

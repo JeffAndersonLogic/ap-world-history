@@ -14,4 +14,24 @@
     beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ceiling%2C_Notre_Dame%2C_Paris%2C_ZM.JPG',
     checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Laon_cathedral_notre_dame_002.JPG'
   };
+  lesson.collegeBoardKeyConcepts = [
+    {
+      "code": "KC-3.1.III.D.v",
+      "theme": "Culture",
+      "text": "Christianity, Judaism, Islam, and the core beliefs and practices of these religions continued to shape societies in Europe.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "KC-3.2.I.B.ii",
+      "theme": "Governance",
+      "text": "Europe was politically fragmented and characterized by decentralized monarchies, feudalism, and the manorial system.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "KC-3.3.III.C",
+      "theme": "Social",
+      "text": "Europe was largely an agricultural society dependent on free and coerced labor, including serfdom.",
+      "illustrativeExamples": []
+    }
+  ];
 })();

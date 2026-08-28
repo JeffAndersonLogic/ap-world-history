@@ -4,22 +4,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-5.1.I.B',
-      theme: 'Technology and Innovation',
-      text: 'The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies.',
-      illustrativeExamples: []
+      "code": "KC-5.1.I.B",
+      "theme": "Technology and Innovation",
+      "text": "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.1.I.E',
-      theme: 'Technology and Innovation',
-      text: 'The “second industrial revolution” led to new methods in the production of steel, chemicals, electricity, and precision machinery during the second half of the 19th century.',
-      illustrativeExamples: []
+      "code": "KC-5.1.I.E",
+      "theme": "Technology and Innovation",
+      "text": "The “second industrial revolution” led to new methods in the production of steel, chemicals, electricity, and precision machinery during the second half of the 19th century.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.1.IV',
-      theme: 'Technology and Innovation',
-      text: 'Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration.',
-      illustrativeExamples: []
+      "code": "KC-5.1.IV",
+      "theme": "Technology and Innovation",
+      "text": "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration.",
+      "illustrativeExamples": []
     }
   ];
 

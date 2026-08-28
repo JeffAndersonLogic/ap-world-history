@@ -5,22 +5,22 @@
   // ── CED key concepts, VERBATIM (config wins over data file) ──
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-5.1.VI.A',
-      theme: 'Social Interactions and Organization',
-      text: 'New social classes, including the middle class and the industrial working class, developed.',
-      illustrativeExamples: []
+      "code": "KC-5.1.VI.A",
+      "theme": "Social Interactions and Organization",
+      "text": "New social classes, including the middle class and the industrial working class, developed.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.1.VI.B',
-      theme: 'Social Interactions and Organization',
-      text: 'While women and often children in working-class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development.',
-      illustrativeExamples: []
+      "code": "KC-5.1.VI.B",
+      "theme": "Social Interactions and Organization",
+      "text": "While women and often children in working class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.1.VI.C',
-      theme: 'Social Interactions and Organization',
-      text: 'The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth.',
-      illustrativeExamples: []
+      "code": "KC-5.1.VI.C",
+      "theme": "Social Interactions and Organization",
+      "text": "The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth.",
+      "illustrativeExamples": []
     }
   ];
 

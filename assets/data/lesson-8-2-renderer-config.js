@@ -8,30 +8,30 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Cultural Developments and Interactions (CDI)',
-      theme: 'Cultural Developments and Interactions',
-      text: 'The development of ideas, beliefs, and religions illustrates how groups in society view themselves, and the interactions of societies and their beliefs often have political, social, and cultural implications.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Cultural Developments and Interactions (CDI)",
+      "theme": "Cultural Developments and Interactions",
+      "text": "The development of ideas, beliefs, and religions illustrates how groups in society view themselves, and the interactions of societies and their beliefs often have political, social, and cultural implications.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 8: Learning Objective B',
-      theme: 'Learning Objective',
-      text: 'Explain the causes and effects of the ideological struggle of the Cold War.',
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective B",
+      "theme": "Learning Objective",
+      "text": "Explain the causes and effects of the ideological struggle of the Cold War.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.C.ii',
-      theme: 'Cultural Developments and Interactions',
-      text: 'The global balance of economic and political power shifted during and after World War II and rapidly evolved into the Cold War. The democracy of the United States and the authoritarian communist Soviet Union emerged as superpowers, which led to ideological conflict and a power struggle between capitalism and communism across the globe.',
-      illustrativeExamples: []
+      "code": "KC-6.2.IV.C.ii",
+      "theme": "Cultural Developments and Interactions",
+      "text": "The global balance of economic and political power shifted during and after World War II and rapidly evolved into the Cold War. The democracy of the United States and the authoritarian communist Soviet Union emerged as superpowers, which led to ideological conflict and a power struggle between capitalism and communism across the globe.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.V.B',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Groups and individuals, including the Non-Aligned Movement, opposed and promoted alternatives to the existing economic, political, and social orders.',
-      illustrativeExamples: [
-        'Non-Aligned Movement: Sukarno in Indonesia',
-        'Non-Aligned Movement: Kwame Nkrumah in Ghana'
+      "code": "KC-6.2.V.B",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Groups and individuals, including the Non-Aligned Movement, opposed and promoted alternatives to the existing economic, political, and social orders.",
+      "illustrativeExamples": [
+        "Sukarno in Indonesia",
+        "Kwame Nkrumah in Ghana"
       ]
     }
   ];

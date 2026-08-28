@@ -15,19 +15,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Governance (GOV)',
-      theme: 'Governance',
-      text: 'A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.'
+      "code": "Thematic Focus, Governance (GOV)",
+      "theme": "Governance",
+      "text": "A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 7: Learning Objective F',
-      theme: 'Learning Objective',
-      text: 'Explain the causes and consequences of World War II.'
+      "code": "Unit 7: Learning Objective F",
+      "theme": "Learning Objective",
+      "text": "Explain the causes and consequences of World War II.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.B.ii',
-      theme: 'Governance',
-      text: 'The causes of World War II included the unsustainable peace settlement after World War I, the global economic crisis engendered by the Great Depression, continued imperialist aspirations, and especially the rise to power of fascist and totalitarian regimes that resulted in the aggressive militarism of Nazi Germany under Adolf Hitler.'
+      "code": "KC-6.2.IV.B.ii",
+      "theme": "Governance",
+      "text": "The causes of World War II included the unsustainable peace settlement after World War I, the global economic crisis engendered by the Great Depression, continued imperialist aspirations, and especially the rise to power of fascist and totalitarian regimes that resulted in the aggressive militarism of Nazi Germany under Adolf Hitler.",
+      "illustrativeExamples": []
     }
   ];
 

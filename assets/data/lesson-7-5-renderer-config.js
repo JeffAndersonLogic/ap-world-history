@@ -14,28 +14,26 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Governance (GOV)',
-      theme: 'Governance',
-      text: 'A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Governance (GOV)",
+      "theme": "Governance",
+      "text": "A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 7: Learning Objective E',
-      theme: 'Learning Objective',
-      text: 'Explain the continuities and changes in territorial holdings from 1900 to the present.',
-      illustrativeExamples: []
+      "code": "Unit 7: Learning Objective E",
+      "theme": "Learning Objective",
+      "text": "Explain the continuities and changes in territorial holdings from 1900 to the present.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.I.B',
-      theme: 'Governance',
-      text: 'Between the two world wars, Western and Japanese imperial states predominantly maintained control over colonial holdings; in some cases, they gained additional territories through conquest or treaty settlement and in other cases faced anti-imperial resistance.',
-      illustrativeExamples: [
-        'Territorial gains:',
-        'Transfer of former German colonies to Great Britain and France under the system of League of Nations mandates',
-        'Manchukuo / Greater East Asia Co-Prosperity Sphere',
-        'Anti-imperial resistance:',
-        'Indian National Congress',
-        'West African resistance (strikes/congresses) to French rule'
+      "code": "KC-6.2.I.B",
+      "theme": "Governance",
+      "text": "Between the two world wars, Western and Japanese imperial states predominantly maintained control over colonial holdings; in some cases, they gained additional territories through conquest or treaty settlement and in other cases faced anti-imperial resistance.",
+      "illustrativeExamples": [
+        "Transfer of former German colonies to Great Britain and France under the system of League of Nations mandates",
+        "Manchukuo/Greater East Asia Co-Prosperity Sphere",
+        "Indian National Congress",
+        "West African resistance (strikes/congresses) to French rule"
       ]
     }
   ];

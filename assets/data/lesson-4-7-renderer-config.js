@@ -4,22 +4,30 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.3.I.B',
-      theme: 'Social Interactions and Organization',
-      text: 'Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups’ roles in society, politics, or the economy.',
-      illustrativeExamples: ['Expulsion of Jews from Spain and Portugal; acceptance of Jews in the Ottoman Empire', 'Restrictive policies against Han Chinese in Qing China', 'Varying status of different classes of women within the Ottoman Empire']
+      "code": "KC-4.3.I.B",
+      "theme": "Social Interactions and Organization",
+      "text": "Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups’ roles in society, politics, or the economy.",
+      "illustrativeExamples": [
+        "Expulsion of Jews from Spain and Portugal; the acceptance of Jews in the Ottoman Empire",
+        "Restrictive policies against Han Chinese in Qing China",
+        "Varying status of different classes of women within the Ottoman Empire"
+      ]
     },
     {
-      code: 'KC-4.2.III.A',
-      theme: 'Social Interactions and Organization',
-      text: 'Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system.',
-      illustrativeExamples: []
+      "code": "KC-4.2.III.A",
+      "theme": "Social Interactions and Organization",
+      "text": "Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.2.III.B',
-      theme: 'Social Interactions and Organization',
-      text: 'The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders.',
-      illustrativeExamples: ['Ottoman timars', 'Russian boyars', 'European nobility']
+      "code": "KC-4.2.III.B",
+      "theme": "Social Interactions and Organization",
+      "text": "The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders.",
+      "illustrativeExamples": [
+        "Ottoman timars",
+        "Russian boyars",
+        "European nobility"
+      ]
     }
   ];
 

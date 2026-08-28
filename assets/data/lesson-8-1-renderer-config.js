@@ -8,28 +8,28 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Governance (GOV)',
-      theme: 'Governance',
-      text: 'A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Governance (GOV)",
+      "theme": "Governance",
+      "text": "A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 8: Learning Objective A',
-      theme: 'Learning Objective',
-      text: 'Explain the historical context of the Cold War after 1945.',
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective A",
+      "theme": "Learning Objective",
+      "text": "Explain the historical context of the Cold War after 1945.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.II',
-      theme: 'Governance',
-      text: 'Hopes for greater self-government were largely unfulfilled following World War I; however, in the years following World War II, increasing anti-imperialist sentiment contributed to the dissolution of empires and the restructuring of states.',
-      illustrativeExamples: []
+      "code": "KC-6.2.II",
+      "theme": "Governance",
+      "text": "Hopes for greater self-government were largely unfulfilled following World War I; however, in the years following World War II, increasing anti-imperialist sentiment contributed to the dissolution of empires and the restructuring of states.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.C.i',
-      theme: 'Governance',
-      text: 'Technological and economic gains experienced during World War II by the victorious nations shifted the global balance of power.',
-      illustrativeExamples: []
+      "code": "KC-6.2.IV.C.i",
+      "theme": "Governance",
+      "text": "Technological and economic gains experienced during World War II by the victorious nations shifted the global balance of power.",
+      "illustrativeExamples": []
     }
   ];
 

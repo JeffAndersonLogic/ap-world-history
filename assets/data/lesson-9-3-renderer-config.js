@@ -9,28 +9,28 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Humans and the Environment (ENV)',
-      theme: 'Humans and the Environment',
-      text: 'The environment shapes human societies, and as populations grow and change, these populations in turn shape their environments.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Humans and the Environment (ENV)",
+      "theme": "Humans and the Environment",
+      "text": "The environment shapes human societies, and as populations grow and change, these populations in turn shape their environments.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 9: Learning Objective C',
-      theme: 'Learning Objective',
-      text: 'Explain the causes and effects of environmental changes in the period from 1900 to the present.',
-      illustrativeExamples: []
+      "code": "Unit 9: Learning Objective C",
+      "theme": "Learning Objective",
+      "text": "Explain the causes and effects of environmental changes in the period from 1900 to the present.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.II.A',
-      theme: 'Humans and the Environment',
-      text: 'As human activity contributed to deforestation, desertification, a decline in air quality, and increased consumption of the world\u2019s supply of fresh water, humans competed over these and other resources more intensely than ever before.',
-      illustrativeExamples: []
+      "code": "KC-6.1.II.A",
+      "theme": "Humans and the Environment",
+      "text": "As human activity contributed to deforestation, desertification, a decline in air quality, and increased consumption of the world’s supply of fresh water, humans competed over these and other resources more intensely than ever before.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.II.B',
-      theme: 'Humans and the Environment',
-      text: 'The release of greenhouse gases and pollutants into the atmosphere contributed to debates about the nature and causes of climate change.',
-      illustrativeExamples: []
+      "code": "KC-6.1.II.B",
+      "theme": "Humans and the Environment",
+      "text": "The release of greenhouse gases and pollutants into the atmosphere contributed to debates about the nature and causes of climate change.",
+      "illustrativeExamples": []
     }
   ];
 

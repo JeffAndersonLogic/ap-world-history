@@ -4,22 +4,25 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-3.1.II.A.ii',
-      theme: 'Technology and Innovation',
-      text: 'The growth of interregional trade was encouraged by innovations in existing transportation technologies.',
-      illustrativeExamples: ['Camel saddle', 'Caravans']
+      "code": "KC-3.1.II.A.ii",
+      "theme": "Technology and Innovation",
+      "text": "The growth of interregional trade was encouraged by innovations in existing transportation technologies.",
+      "illustrativeExamples": [
+        "Camel saddle",
+        "Caravans"
+      ]
     },
     {
-      code: 'KC-3.1.I.A.iv',
-      theme: 'Technology and Innovation',
-      text: 'Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the trans-Saharan trade network.',
-      illustrativeExamples: []
+      "code": "KC-3.1.I.A.iv",
+      "theme": "Technology and Innovation",
+      "text": "Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the trans-Saharan trade network.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-3.1.I.E.ii',
-      theme: 'Governance',
-      text: 'The expansion of empires, including Mali in West Africa, facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.',
-      illustrativeExamples: []
+      "code": "KC-3.1.I.E.ii",
+      "theme": "Governance",
+      "text": "The expansion of empires—including Mali in West Africa–facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.",
+      "illustrativeExamples": []
     }
   ];
 

@@ -4,22 +4,26 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-3.2.I.B.iii',
-      theme: 'Governance',
-      text: 'Empires collapsed in different regions of the world and in some areas were replaced by new imperial states, including the Mongol khanates.',
-      illustrativeExamples: []
+      "code": "KC-3.2.I.B.iii",
+      "theme": "Governance",
+      "text": "Empires collapsed in different regions of the world and in some areas were replaced by new imperial states, including the Mongol khanates.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-3.1.I.E.i',
-      theme: 'Economic Systems',
-      text: 'The expansion of empires, including the Mongols, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.',
-      illustrativeExamples: []
+      "code": "KC-3.1.I.E.i",
+      "theme": "Economic Systems",
+      "text": "The expansion of empires—including the Mongols—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-3.2.II.A.ii',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers.',
-      illustrativeExamples: ['Transfer of Greco-Islamic medical knowledge to western Europe', 'Transfer of numbering systems to Europe', 'Adoption of Uyghur script']
+      "code": "KC-3.2.II.A.ii",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers.",
+      "illustrativeExamples": [
+        "Transfer of Greco–Islamic medical knowledge to western Europe",
+        "Transfer of numbering systems to Europe",
+        "Adoption of Uyghur script"
+      ]
     }
   ];
 

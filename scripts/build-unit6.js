@@ -14,6 +14,7 @@ const { inspect } = require('util');
 const vm = require('vm');
 const { renderFirst10Page } = require('./lib/first10-page');
 const { loadCourse } = require('./lib/socrates-course');
+const { alignTopicConcepts } = require('./lib/ced-2026-key-concepts');
 
 // The reading's AI Coach prompt carries the same assignment context a checkpoint's
 // does, read from the lesson data so the two cannot disagree about what Socrates
@@ -352,7 +353,12 @@ function evidenceImage(topic, index) {
 
 function buildLesson(topic) {
   const media = mediaFor(topic);
-  const concepts = topic.kc.map(([code, text]) => ({ code, theme: topic.theme, text, illustrativeExamples: topic.cases }));
+  const concepts = alignTopicConcepts(topic.id, topic.kc.map(([code, text]) => ({
+    code,
+    theme: topic.theme,
+    text,
+    illustrativeExamples: topic.cases
+  })));
   const evidenceItems = topic.cases.map((name, i) => ({
     title: name,
     detail: `${name} helps explain ${i % 2 ? 'how institutions and local choices shaped this global pattern' : 'how power and economic incentives turned a broad trend into a specific historical outcome'}. Use it to support a claim, then explain why the evidence proves the claim.`
@@ -488,7 +494,13 @@ function dataFile(topic) {
 }
 
 function rendererConfig(topic) {
-  return `(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n})();\n`;
+  const concepts = alignTopicConcepts(topic.id, topic.kc.map(([code, text]) => ({
+    code,
+    theme: topic.theme,
+    text,
+    illustrativeExamples: topic.cases
+  })));
+  return `(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.collegeBoardKeyConcepts = ${jsObject(concepts)};\n})();\n`;
 }
 
 function first10Page(topic) {

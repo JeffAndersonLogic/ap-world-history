@@ -97,88 +97,82 @@ window.renderCausationMatrix = function () {
   // ── College Board Key Concepts (13, verbatim CED) ────────────────────────────
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Unit 7: Learning Objective I',
-      theme: 'Learning Objective',
-      text: 'Explain the relative significance of the causes of global conflict in the period 1900 to the present.',
-      illustrativeExamples: []
+      "code": "Unit 7: Learning Objective I",
+      "theme": "Learning Objective",
+      "text": "Explain the relative significance of the causes of global conflict in the period 1900 to the present.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1',
-      theme: 'Technology and Innovation',
-      text: 'Rapid advances in science and technology altered the understanding of the universe and the natural world and led to advances in communication, transportation, industry, agriculture, and medicine.',
-      illustrativeExamples: []
+      "code": "KC-6.1",
+      "theme": "Technology and Innovation",
+      "text": "Rapid advances in science and technology altered the understanding of the universe and the natural world and led to advances in communication, transportation, industry, agriculture, and medicine.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2',
-      theme: 'Governance',
-      text: 'Peoples and states around the world challenged the existing political and social order in varying ways, leading to unprecedented worldwide conflicts.',
-      illustrativeExamples: []
+      "code": "KC-6.2",
+      "theme": "Governance",
+      "text": "Peoples and states around the world challenged the existing political and social order in varying ways, leading to unprecedented worldwide conflicts.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.I',
-      theme: 'Governance',
-      text: 'The West dominated the global political order at the beginning of the 20th century, but both land-based and maritime empires gave way to new states by the century\'s end.',
-      illustrativeExamples: []
+      "code": "KC-6.2.I",
+      "theme": "Governance",
+      "text": "The West dominated the global political order at the beginning of the 20th century, but both land-based and maritime empires gave way to new states by the century’s end.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.I.A',
-      theme: 'Governance',
-      text: 'The older, land-based Ottoman, Russian, and Qing empires collapsed due to a combination of internal and external factors. These changes in Russia eventually led to communist revolution.',
-      illustrativeExamples: []
+      "code": "KC-6.2.I.A",
+      "theme": "Governance",
+      "text": "The older, land-based Ottoman, Russian, and Qing empires collapsed due to a combination of internal and external factors. These changes in Russia eventually led to communist revolution.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.II.D',
-      theme: 'Governance',
-      text: 'States around the world challenged the existing political and social order, including the Mexican Revolution that arose as a result of political crisis.',
-      illustrativeExamples: []
+      "code": "KC-6.2.II.D",
+      "theme": "Governance",
+      "text": "States around the world challenged the existing political and social order, including the Mexican Revolution that arose as a result of political crisis.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV',
-      theme: 'Governance',
-      text: 'Global conflicts were influenced by economic, political, and social factors.',
-      illustrativeExamples: []
+      "code": "KC-6.2.IV.B.i",
+      "theme": "Governance",
+      "text": "The causes of World War I included imperialist expansion and competition for resources. In addition, territorial and regional conflicts combined with a flawed alliance system and intense nationalism to escalate the tensions into global conflict.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.B.i',
-      theme: 'Governance',
-      text: 'The causes of World War I included imperialist expansion and competition for resources. In addition, territorial and regional conflicts combined with a flawed alliance system and intense nationalism to escalate the tensions into global conflict.',
-      illustrativeExamples: []
+      "code": "KC-6.2.IV.B.ii",
+      "theme": "Governance",
+      "text": "The causes of World War II included the unsustainable peace settlement after World War I, the global economic crisis engendered by the Great Depression, continued imperialist aspirations, and especially the rise to power of fascist and totalitarian regimes that resulted in the aggressive militarism of Nazi Germany under Adolf Hitler.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.B.ii',
-      theme: 'Governance',
-      text: 'The causes of World War II included the unsustainable peace settlement after World War I, the global economic crisis engendered by the Great Depression, continued imperialist aspirations, and especially the rise to power of fascist and totalitarian regimes that resulted in the aggressive militarism of Nazi Germany under Adolf Hitler.',
-      illustrativeExamples: []
+      "code": "KC-6.2.IV.A.i",
+      "theme": "Governance",
+      "text": "World War I was the first total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies) for the purpose of waging war.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.A.i',
-      theme: 'Governance',
-      text: 'World War I was the first total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies) for the purpose of waging war.',
-      illustrativeExamples: []
+      "code": "KC-6.2.IV.A.ii",
+      "theme": "Governance",
+      "text": "World War II was a total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies or former colonies) for the purpose of waging war. Governments used ideologies, including fascism and communism to mobilize all of their state’s resources for war and, in the case of totalitarian states, to repress basic freedoms and dominate many aspects of daily life during the course of the conflicts and beyond.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.A.ii',
-      theme: 'Governance',
-      text: 'World War II was a total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies or former colonies) for the purpose of waging war. Governments used ideologies, including fascism and communism, to mobilize all of their state\'s resources for war and, in the case of totalitarian states, to repress basic freedoms and dominate many aspects of daily life during the course of the conflicts and beyond.',
-      illustrativeExamples: []
+      "code": "KC-6.1.III.C.i",
+      "theme": "Technology and Innovation",
+      "text": "New military technology led to increased levels of wartime casualties.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.III.C.i',
-      theme: 'Technology and Innovation',
-      text: 'New military technology led to increased levels of wartime casualties.',
-      illustrativeExamples: []
+      "code": "KC-6.1.III.C.ii",
+      "theme": "Technology and Innovation",
+      "text": "New military technology and new tactics, including the atomic bomb, fire-bombing, and the waging of “total war” led to increased levels of wartime casualties.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.III.C.ii',
-      theme: 'Technology and Innovation',
-      text: 'New military technology and new tactics, including the atomic bomb, fire-bombing, and the waging of "total war" led to increased levels of wartime casualties.',
-      illustrativeExamples: []
-    },
-    {
-      code: 'KC-6.2.III.C',
-      theme: 'Governance',
-      text: 'The rise of extremist groups in power led to the attempted destruction of specific populations, notably the Nazi killing of the Jews in the Holocaust during World War II, and to other atrocities, acts of genocide, or ethnic violence.',
-      illustrativeExamples: []
+      "code": "KC-6.2.III.C",
+      "theme": "Governance",
+      "text": "The rise of extremist groups in power led to the attempted destruction of specific populations, notably the Nazi killing of the Jews in the Holocaust during World War II, and to other atrocities, acts of genocide, or ethnic violence.",
+      "illustrativeExamples": []
     }
   ];
 

@@ -14,64 +14,64 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Governance (GOV)',
-      theme: 'Governance',
-      text: 'Governance',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Governance (GOV)",
+      "theme": "Governance",
+      "text": "Governance",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 8: Learning Objective G',
-      theme: 'Learning Objective',
-      text: 'Explain how political changes in the period from c. 1900 to the present led to territorial, demographic, and nationalist developments.',
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective G",
+      "theme": "Learning Objective",
+      "text": "Explain how political changes in the period from c. 1900 to the present led to territorial, demographic, and nationalist developments.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.III.A.i',
-      theme: 'Governance',
-      text: 'The redrawing of political boundaries after the withdrawal of former colonial authorities led to the creation of new states.',
-      illustrativeExamples: [
-        'Israel',
-        'Cambodia',
-        'Pakistan'
+      "code": "KC-6.2.III.A.i",
+      "theme": "Governance",
+      "text": "The redrawing of political boundaries after the withdrawal of former colonial authorities led to the creation of new states.",
+      "illustrativeExamples": [
+        "Israel",
+        "Cambodia",
+        "Pakistan"
       ]
     },
     {
-      code: 'KC-6.2.III.A.ii',
-      theme: 'Governance',
-      text: 'The redrawing of political boundaries in some cases led to conflict as well as population displacement and/or resettlements, including those related to the Partition of India and the creation of the state of Israel.',
-      illustrativeExamples: []
+      "code": "KC-6.2.III.A.ii",
+      "theme": "Governance",
+      "text": "The redrawing of political boundaries in some cases led to conflict as well as population displacement and/or resettlements, including those related to the Partition of India and the creation of the state of Israel.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Thematic Focus, Economic Systems (ECN)',
-      theme: 'Economic Systems',
-      text: 'Economic Systems',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Economic Systems (ECN)",
+      "theme": "Economic Systems",
+      "text": "Economic Systems",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 8: Learning Objective H',
-      theme: 'Learning Objective',
-      text: 'Explain the economic changes and continuities resulting from the process of decolonization.',
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective H",
+      "theme": "Learning Objective",
+      "text": "Explain the economic changes and continuities resulting from the process of decolonization.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.3.I.C',
-      theme: 'Economic Systems',
-      text: 'In newly independent states after World War II, governments often took on a strong role in guiding economic life to promote development.',
-      illustrativeExamples: [
-        "Gamal Abdel Nasser's promotion of economic development in Egypt",
+      "code": "KC-6.3.I.C",
+      "theme": "Economic Systems",
+      "text": "In newly independent states after World War II, governments often took on a strong role in guiding economic life to promote development.",
+      "illustrativeExamples": [
+        "Gamal Abdel Nasser’s promotion of economic development in Egypt",
         "Indira Gandhi's economic policies in India",
-        "Julius Nyerere's modernization in Tanzania",
-        "Sirimavo Bandaranaike's economic policies in Sri Lanka"
+        "Julius Nyerere’s modernization in Tanzania",
+        "Sirimavo Bandaranaike’s economic policies in Sri Lanka"
       ]
     },
     {
-      code: 'KC-6.2.III.B',
-      theme: 'Economic Systems',
-      text: 'The migration of former colonial subjects to imperial metropoles (the former colonizing country), usually in the major cities, maintained cultural and economic ties between the colony and the metropole even after the dissolution of empires.',
-      illustrativeExamples: [
-        'South Asians to Britain',
-        'Algerians to France',
-        'Filipinos to the United States'
+      "code": "KC-6.2.III.B",
+      "theme": "Economic Systems",
+      "text": "The migration of former colonial subjects to imperial metropoles (the former colonizing country), usually in the major cities, maintained cultural and economic ties between the colony and the metropole even after the dissolution of empires.",
+      "illustrativeExamples": [
+        "South Asians to Britain",
+        "Algerians to France",
+        "Filipinos to the United States"
       ]
     }
   ];

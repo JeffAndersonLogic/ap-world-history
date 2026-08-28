@@ -10,49 +10,49 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Governance (GOV)',
-      theme: 'Governance',
-      text: 'Governance',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Governance (GOV)",
+      "theme": "Governance",
+      "text": "Governance",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 8: Learning Objective F',
-      theme: 'Learning Objective',
-      text: 'Compare the processes by which various peoples pursued independence after 1900.',
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective F",
+      "theme": "Learning Objective",
+      "text": "Compare the processes by which various peoples pursued independence after 1900.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.II.A',
-      theme: 'Governance',
-      text: 'Nationalist leaders and parties in Asia and Africa sought varying degrees of autonomy within or independence from imperial rule.',
-      illustrativeExamples: [
-        'Indian National Congress',
-        'Ho Chi Minh in French Indochina (Vietnam)',
-        'Kwame Nkrumah in British Gold Coast (Ghana)',
-        'Gamal Abdel Nasser in Egypt'
+      "code": "KC-6.2.II.A",
+      "theme": "Governance",
+      "text": "Nationalist leaders and parties in Asia and Africa sought varying degrees of autonomy within or independence from imperial rule.",
+      "illustrativeExamples": [
+        "Indian National Congress",
+        "Ho Chi Minh in French Indochina (Vietnam)",
+        "Kwame Nkrumah in British Gold Coast (Ghana)",
+        "Gamal Abdel Nasser in Egypt"
       ]
     },
     {
-      code: 'KC-6.2.II.B',
-      theme: 'Governance',
-      text: 'After the end of World War II, some colonies negotiated their independence, while others achieved independence through armed struggle.',
-      illustrativeExamples: [
-        'Negotiated independence: India from the British Empire',
-        'Negotiated independence: The Gold Coast from the British Empire',
-        'Negotiated independence: French West Africa',
-        'Independence through armed struggle: Algeria from the French empire',
-        'Independence through armed struggle: Angola from the Portuguese empire',
-        'Independence through armed struggle: Vietnam from the French empire'
+      "code": "KC-6.2.II.B",
+      "theme": "Governance",
+      "text": "Regional, religious, and ethnic movements challenged colonial rule and inherited imperial boundaries. Some of these movements advocated for autonomy.",
+      "illustrativeExamples": [
+        "Muslim League in British India",
+        "Québécois separatist movement in Canada",
+        "Biafra secessionist movement in Nigeria"
       ]
     },
     {
-      code: 'KC-6.2.I.C',
-      theme: 'Governance',
-      text: 'Regional, religious, and ethnic movements challenged colonial rule and inherited imperial boundaries. Some of these movements advocated for autonomy.',
-      illustrativeExamples: [
-        'Muslim League in British India',
-        'Québécois separatist movement in Canada',
-        'Biafra secessionist movement in Nigeria'
+      "code": "KC-6.2.I.C",
+      "theme": "Governance",
+      "text": "After the end of World War II, some colonies negotiated their independence, while others achieved independence through armed struggle.",
+      "illustrativeExamples": [
+        "India from the British Empire",
+        "The Gold Coast from the British Empire",
+        "French West Africa",
+        "Algeria from the French empire",
+        "Angola from the Portuguese empire",
+        "Vietnam from the French empire"
       ]
     }
   ];

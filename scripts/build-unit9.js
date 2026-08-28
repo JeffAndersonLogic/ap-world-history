@@ -13,6 +13,7 @@ const { inspect } = require('util');
 const vm = require('vm');
 const { renderFirst10Page } = require('./lib/first10-page');
 const { loadCourse } = require('./lib/socrates-course');
+const { alignTopicConcepts } = require('./lib/ced-2026-key-concepts');
 
 // The reading's AI Coach prompt carries the same assignment context a checkpoint's
 // does, read from the lesson data so the two cannot disagree about what Socrates
@@ -326,11 +327,11 @@ function jsObject(value) {
 }
 
 function conceptArray(topic) {
-  return [
+  return alignTopicConcepts(topic.id, [
     { code: `Thematic Focus, ${topic.theme} (${topic.code})`, theme: topic.theme, text: topic.focus, illustrativeExamples: [] },
     { code: topic.loCode, theme: 'Learning Objective', text: topic.lo, illustrativeExamples: [] },
     ...topic.kcs.map(([code, text, examples]) => ({ code, theme: topic.theme, text, illustrativeExamples: examples }))
-  ];
+  ]);
 }
 
 function buildLesson(topic) {

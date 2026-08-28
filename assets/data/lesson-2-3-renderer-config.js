@@ -4,40 +4,48 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-3.1.I.A.ii',
-      theme: 'Economic Systems',
-      text: 'Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Indian Ocean, promoting the growth of powerful new trading cities.',
-      illustrativeExamples: []
+      "code": "KC-3.1.I.A.ii",
+      "theme": "Economic Systems",
+      "text": "Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Indian Ocean, promoting the growth of powerful new trading cities.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-3.1.I.C.ii',
-      theme: 'Economic Systems',
-      text: 'The growth of interregional trade in luxury goods was encouraged by significant innovations in previously existing transportation and commercial technologies, including the use of the compass, the astrolabe, and larger ship designs.',
-      illustrativeExamples: []
+      "code": "KC-3.1.I.C.ii",
+      "theme": "Economic Systems",
+      "text": "The growth of interregional trade in luxury goods was encouraged by significant innovations in previously existing transportation and commercial technologies, including the use of the compass, the astrolabe, and larger ship designs.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-3.1.I.A.iii',
-      theme: 'Economic Systems',
-      text: 'The Indian Ocean trading network fostered the growth of states.',
-      illustrativeExamples: ['City-states of the Swahili Coast', 'Gujarat', 'Sultanate of Malacca']
+      "code": "KC-3.1.I.A.iii",
+      "theme": "Economic Systems",
+      "text": "The Indian Ocean trading network fostered the growth of states.",
+      "illustrativeExamples": [
+        "City-states of the Swahili Coast",
+        "Gujarat",
+        "Sultanate of Malacca"
+      ]
     },
     {
-      code: 'KC-3.1.III.B',
-      theme: 'Cultural Developments and Interactions',
-      text: 'In key places along important trade routes, merchants set up diasporic communities where they introduced their own cultural traditions into the indigenous cultures and, in turn, indigenous cultures influenced merchant cultures.',
-      illustrativeExamples: ['Arab and Persian communities in East Africa', 'Chinese merchant communities in Southeast Asia', 'Malay communities in the Indian Ocean basin']
+      "code": "KC-3.1.III.B",
+      "theme": "Cultural Developments and Interactions",
+      "text": "In key places along important trade routes, merchants set up diasporic communities where they introduced their own cultural traditions into the indigenous cultures and, in turn, indigenous cultures influenced merchant cultures.",
+      "illustrativeExamples": [
+        "Arab and Persian communities in East Africa",
+        "Chinese merchant communities in Southeast Asia",
+        "Malay communities in the Indian Ocean basin"
+      ]
     },
     {
-      code: 'KC-3.2.II.A.iii',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers, including during Chinese maritime activity led by Ming admiral Zheng He.',
-      illustrativeExamples: []
+      "code": "KC-3.2.II.A.iii",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers, including during Chinese maritime activity led by Ming Admiral Zheng He.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-3.1.II.A.i',
-      theme: 'Humans and the Environment',
-      text: 'The expansion and intensification of long-distance trade routes often depended on environmental knowledge, including advanced knowledge of the monsoon winds.',
-      illustrativeExamples: []
+      "code": "KC-3.1.II.A.i",
+      "theme": "Humans and the Environment",
+      "text": "The expansion and intensification of long-distance trade routes often depended on environmental knowledge, including advanced knowledge of the monsoon winds.",
+      "illustrativeExamples": []
     }
   ];
 

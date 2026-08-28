@@ -9,46 +9,46 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Technology and Innovation (TEC)',
-      theme: 'Technology and Innovation',
-      text: 'Human adaptation and innovation have resulted in increased efficiency, comfort, and security, and technological advances have shaped human development and interactions with both intended and unintended consequences.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Technology and Innovation (TEC)",
+      "theme": "Technology and Innovation",
+      "text": "Human adaptation and innovation have resulted in increased efficiency, comfort, and security, and technological advances have shaped human development and interactions with both intended and unintended consequences.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 9: Learning Objective A',
-      theme: 'Learning Objective',
-      text: 'Explain how the development of new technologies changed the world from 1900 to the present.',
-      illustrativeExamples: []
+      "code": "Unit 9: Learning Objective A",
+      "theme": "Learning Objective",
+      "text": "Explain how the development of new technologies changed the world from 1900 to the present.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.I.A',
-      theme: 'Technology and Innovation',
-      text: 'New modes of communication, including radio communication, cellular communication, and the internet, as well as transportation, including air travel and shipping containers, reduced the problem of geographic distance.',
-      illustrativeExamples: []
+      "code": "KC-6.1.I.A",
+      "theme": "Technology and Innovation",
+      "text": "New modes of communication—including radio communication, cellular communication, and the internet—as well as transportation, including air travel and shipping containers, reduced the problem of geographic distance.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.I.D',
-      theme: 'Technology and Innovation',
-      text: 'Energy technologies, including the use of petroleum and nuclear power, raised productivity and increased the production of material goods.',
-      illustrativeExamples: []
+      "code": "KC-6.1.I.D",
+      "theme": "Technology and Innovation",
+      "text": "Energy technologies, including the use of petroleum and nuclear power, raised productivity and increased the production of material goods.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.III.B',
-      theme: 'Technology and Innovation',
-      text: 'More effective forms of birth control gave women greater control over fertility, transformed reproductive practices, and contributed to declining rates of fertility in much of the world.',
-      illustrativeExamples: []
+      "code": "KC-6.1.III.B",
+      "theme": "Technology and Innovation",
+      "text": "More effective forms of birth control gave women greater control over fertility, transformed reproductive practices, and contributed to declining rates of fertility in much of the world.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.I.B',
-      theme: 'Technology and Innovation',
-      text: 'The Green Revolution and commercial agriculture increased productivity and sustained the earth’s growing population as it spread chemically and genetically modified forms of agriculture.',
-      illustrativeExamples: []
+      "code": "KC-6.1.I.B",
+      "theme": "Technology and Innovation",
+      "text": "The Green Revolution and commercial agriculture increased productivity and sustained the earth’s growing population as it spread chemically and genetically modified forms of agriculture.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.I.C',
-      theme: 'Technology and Innovation',
-      text: 'Medical innovations, including vaccines and antibiotics, increased the ability of humans to survive and live longer lives.',
-      illustrativeExamples: []
+      "code": "KC-6.1.I.C",
+      "theme": "Technology and Innovation",
+      "text": "Medical innovations, including vaccines and antibiotics, increased the ability of humans to survive and live longer lives.",
+      "illustrativeExamples": []
     }
   ];
 

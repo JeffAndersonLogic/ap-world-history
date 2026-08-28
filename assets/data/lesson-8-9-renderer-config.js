@@ -20,40 +20,40 @@
   // ── RUNTIME-AUTHORITATIVE: verbatim CED text ─────────────────────────────────
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Unit 8: Learning Objective K',
-      theme: 'Learning Objective',
-      text: 'Explain the extent to which the effects of the Cold War were similar in the Eastern and Western Hemispheres.',
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective K",
+      "theme": "Learning Objective",
+      "text": "Explain the extent to which the effects of the Cold War were similar in the Eastern and Western Hemispheres.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2',
-      theme: 'Historical Developments',
-      text: 'Peoples and states around the world challenged the existing political and social order in varying ways, leading to unprecedented worldwide conflicts.',
-      illustrativeExamples: []
+      "code": "KC-6.2",
+      "theme": "Historical Developments",
+      "text": "Peoples and states around the world challenged the existing political and social order in varying ways, leading to unprecedented worldwide conflicts.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.II',
-      theme: 'Historical Developments',
-      text: 'Hopes for greater self-government were largely unfulfilled following World War I; however, in the years following World War II, increasing anti-imperialist sentiment contributed to the dissolution of empires and the restructuring of states.',
-      illustrativeExamples: []
+      "code": "KC-6.2.II",
+      "theme": "Historical Developments",
+      "text": "Hopes for greater self-government were largely unfulfilled following World War I; however, in the years following World War II, increasing anti-imperialist sentiment contributed to the dissolution of empires and the restructuring of states.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.C',
-      theme: 'Historical Developments',
-      text: 'The Cold War conflict extended beyond its basic ideological origins to have profound effects on economic, political, social, and cultural aspects of global events.',
-      illustrativeExamples: []
+      "code": "KC-6.2.IV.C",
+      "theme": "Historical Developments",
+      "text": "The Cold War conflict extended beyond its basic ideological origins to have profound effects on economic, political, social, and cultural aspects of global events.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.3',
-      theme: 'Historical Developments',
-      text: 'The role of the state in the domestic economy varied, and new institutions of global association emerged and continued to develop throughout the century.',
-      illustrativeExamples: []
+      "code": "KC-6.3",
+      "theme": "Historical Developments",
+      "text": "The role of the state in the domestic economy varied, and new institutions of global association emerged and continued to develop throughout the century.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.3.I',
-      theme: 'Historical Developments',
-      text: 'States responded in a variety of ways to the economic challenges of the 20th century.',
-      illustrativeExamples: []
+      "code": "KC-6.3.I",
+      "theme": "Historical Developments",
+      "text": "States responded in a variety of ways to the economic challenges of the 20th century.",
+      "illustrativeExamples": []
     }
   ];
 

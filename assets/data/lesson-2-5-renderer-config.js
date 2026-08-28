@@ -4,22 +4,32 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-3.1.III.D',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations.',
-      illustrativeExamples: ['Influence of Buddhism in East Asia', 'Spread of Hinduism and Buddhism into Southeast Asia', 'Spread of Islam in sub-Saharan Africa and Asia', 'Gunpowder from China', 'Paper from China']
+      "code": "KC-3.1.III.D",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations.",
+      "illustrativeExamples": [
+        "The influence of Buddhism in East Asia",
+        "The spread of Hinduism and Buddhism into Southeast Asia",
+        "The spread of Islam in sub-Saharan Africa and Asia",
+        "Gunpowder from China",
+        "Paper from China"
+      ]
     },
     {
-      code: 'KC-3.3.II',
-      theme: 'Cultural Developments and Interactions',
-      text: 'The fate of cities varied greatly, with periods of significant decline and periods of increased urbanization, buoyed by rising productivity and expanding trade networks.',
-      illustrativeExamples: []
+      "code": "KC-3.3.II",
+      "theme": "Cultural Developments and Interactions",
+      "text": "The fate of cities varied greatly, with periods of significant decline and periods of increased urbanization, buoyed by rising productivity and expanding trade networks.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-3.1.III.C',
-      theme: 'Cultural Developments and Interactions',
-      text: 'As exchange networks intensified, an increasing number of travelers within Afro-Eurasia wrote about their travels.',
-      illustrativeExamples: ['Ibn Battuta', 'Margery Kempe', 'Marco Polo']
+      "code": "KC-3.1.III.C",
+      "theme": "Cultural Developments and Interactions",
+      "text": "As exchange networks intensified, an increasing number of travelers within Afro-Eurasia wrote about their travels.",
+      "illustrativeExamples": [
+        "Ibn Battuta",
+        "Margery Kempe",
+        "Marco Polo"
+      ]
     }
   ];
 

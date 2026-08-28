@@ -13,50 +13,50 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Economic Systems (ECN)',
-      theme: 'Economic Systems',
-      text: 'Economic Systems',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Economic Systems (ECN)",
+      "theme": "Economic Systems",
+      "text": "Economic Systems",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 8: Learning Objective D',
-      theme: 'Learning Objective',
-      text: "Explain the causes and consequences of China's adoption of communism.",
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective D",
+      "theme": "Learning Objective",
+      "text": "Explain the causes and consequences of China's adoption of communism.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.I.i',
-      theme: 'Economic Systems',
-      text: 'As a result of internal tension and Japanese aggression, Chinese communists seized power. These changes in China eventually led to communist revolution.',
-      illustrativeExamples: []
+      "code": "KC-6.2.I.i",
+      "theme": "Economic Systems",
+      "text": "As a result of internal tension and Japanese aggression, Chinese communists seized power. These changes in China eventually led to communist revolution.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.3.I.A.ii',
-      theme: 'Economic Systems',
-      text: 'In communist China, the government controlled the national economy through the Great Leap Forward, often implementing repressive policies, with negative repercussions for the population.',
-      illustrativeExamples: []
+      "code": "KC-6.3.I.A.ii",
+      "theme": "Economic Systems",
+      "text": "In communist China, the government controlled the national economy through the Great Leap Forward, often implementing repressive policies, with negative repercussions for the population.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Thematic Focus, Social Interactions and Organization (SIO)',
-      theme: 'Social Interactions and Organization',
-      text: 'Social Interactions and Organization',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Social Interactions and Organization (SIO)",
+      "theme": "Social Interactions and Organization",
+      "text": "Social Interactions and Organization",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 8: Learning Objective E',
-      theme: 'Learning Objective',
-      text: 'Explain the causes and effects of movements to redistribute economic resources.',
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective E",
+      "theme": "Learning Objective",
+      "text": "Explain the causes and effects of movements to redistribute economic resources.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.II.D.i',
-      theme: 'Social Interactions and Organization',
-      text: 'Movements to redistribute land and resources developed within states in Africa, Asia, and Latin America, sometimes advocating communism or socialism.',
-      illustrativeExamples: [
-        'Land and resource redistribution: Communist Revolution for Vietnamese independence',
-        'Land and resource redistribution: Mengistu Haile Mariam in Ethiopia',
-        'Land and resource redistribution: Land reform in Kerala and other states within India',
-        'Land and resource redistribution: White Revolution in Iran'
+      "code": "KC-6.2.II.D.i",
+      "theme": "Social Interactions and Organization",
+      "text": "Movements to redistribute land and resources developed within states in Africa, Asia, and Latin America, sometimes advocating communism or socialism.",
+      "illustrativeExamples": [
+        "Communist Revolution for Vietnamese independence",
+        "Mengistu Haile Mariam in Ethiopia",
+        "Land reform in Kerala and other states within India",
+        "White Revolution in Iran"
       ]
     }
   ];

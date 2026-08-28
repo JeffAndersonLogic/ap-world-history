@@ -17,27 +17,26 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Social Interactions and Organization (SIO)',
-      theme: 'Social Interactions and Organization',
-      text: 'The process by which societies group their members and the norms that govern the interactions between these groups and between individuals influence political, economic, and cultural institutions and organization.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Social Interactions and Organization (SIO)",
+      "theme": "Social Interactions and Organization",
+      "text": "The process by which societies group their members and the norms that govern the interactions between these groups and between individuals influence political, economic, and cultural institutions and organization.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 7: Learning Objective H',
-      theme: 'Learning Objective',
-      text: 'Explain the various causes and consequences of mass atrocities in the period from 1900 to the present.',
-      illustrativeExamples: []
+      "code": "Unit 7: Learning Objective H",
+      "theme": "Learning Objective",
+      "text": "Explain the various causes and consequences of mass atrocities in the period from 1900 to the present.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.III.C',
-      theme: 'Social Interactions and Organization',
-      text: 'The rise of extremist groups in power led to the attempted destruction of specific populations, notably the Nazi killing of the Jews in the Holocaust during World War II, and to other atrocities, acts of genocide, or ethnic violence.',
-      illustrativeExamples: [
-        'Genocide, ethnic violence, or attempted destruction of specific populations:',
-        'Armenians in the Ottoman Empire during and after World War I',
-        'Cambodia during the late 1970s',
-        'Tutsi in Rwanda in the 1990s',
-        'Ukraine in the Soviet Union in the 1920s and 1930s'
+      "code": "KC-6.2.III.C",
+      "theme": "Social Interactions and Organization",
+      "text": "The rise of extremist groups in power led to the attempted destruction of specific populations, notably the Nazi killing of the Jews in the Holocaust during World War II, and to other atrocities, acts of genocide, or ethnic violence.",
+      "illustrativeExamples": [
+        "Armenians in the Ottoman Empire during and after World War I",
+        "Cambodia during the late 1970s",
+        "Tutsi in Rwanda in the 1990s",
+        "Ukraine in the Soviet Union in the 1920s and 1930s"
       ]
     }
   ];

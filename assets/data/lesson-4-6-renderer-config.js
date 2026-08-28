@@ -4,16 +4,26 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.3.III.iii',
-      theme: 'Governance',
-      text: 'State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level.',
-      illustrativeExamples: ['Pueblo Revolts', 'Fronde', 'Cossack revolts', 'Maratha conflict with Mughals', 'Ana Nzinga’s resistance (as ruler of Ndongo and Matamba)', 'Metacom’s War (King Philip’s War)']
+      "code": "KC-4.3.III.iii",
+      "theme": "Governance",
+      "text": "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level.",
+      "illustrativeExamples": [
+        "Pueblo Revolts",
+        "Fronde",
+        "Cossack revolts",
+        "Maratha conflict with Mughals",
+        "Ana Nzinga’s resistance (as ruler of Ndongo and Matamba)",
+        "Metacom’s War (King Philip’s War)"
+      ]
     },
     {
-      code: 'KC-5.3.III.C',
-      theme: 'Governance',
-      text: 'Enslaved persons challenged existing authorities in the Americas through organized resistance.',
-      illustrativeExamples: ['Establishment of Maroon societies in the Caribbean and Brazil', 'Resistance of enslaved persons in North America']
+      "code": "KC-5.3.III.C",
+      "theme": "Governance",
+      "text": "Enslaved persons challenged existing authorities in the Americas through organized resistance.",
+      "illustrativeExamples": [
+        "Establishment of Maroon societies in the Caribbean and Brazil",
+        "Resistance of enslaved persons in North America"
+      ]
     }
   ];
 
