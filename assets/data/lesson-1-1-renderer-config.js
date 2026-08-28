@@ -4,34 +4,48 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-3.2.I.A',
-      theme: 'Governance',
-      text: 'Song China utilized traditional methods of Confucianism and an imperial bureaucracy to maintain and justify its rule.',
-      illustrativeExamples: []
+      "code": "KC-3.2.I.A",
+      "theme": "Governance",
+      "text": "Empires and states in Afro-Eurasia and the Americas demonstrated continuity, innovation, and diversity in the 13th century. This included the Song Dynasty of China, which utilized traditional methods of Confucianism and an imperial bureaucracy to maintain and justify its rule.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-3.1.III.D.i',
-      theme: 'Culture',
-      text: 'Chinese cultural traditions continued, and they influenced neighboring regions.',
-      illustrativeExamples: ['Filial piety', 'Neo-Confucianism']
+      "code": "KC-3.1.III.D.i",
+      "theme": "Culture",
+      "text": "Chinese cultural traditions continued, and they influenced neighboring regions.",
+      "illustrativeExamples": [
+        "Filial piety in East Asia",
+        "Influence of Neo-Confucianism and Buddhism in East Asia",
+        "Confucian traditions of both respect for and expected deference from women",
+        "Chinese literary and scholarly traditions and their spread to Heian Japan and Korea"
+      ]
     },
     {
-      code: 'KC-3.1.III.D.ii',
-      theme: 'Culture',
-      text: 'Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices.',
-      illustrativeExamples: ['Theravada', 'Mahayana', 'Tibetan']
+      "code": "KC-3.1.III.D.ii",
+      "theme": "Culture",
+      "text": "Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices.",
+      "illustrativeExamples": [
+        "Theravada",
+        "Mahayana",
+        "Tibetan"
+      ]
     },
     {
-      code: 'KC-3.3.III.A.i',
-      theme: 'Economics',
-      text: 'The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisan labor.',
-      illustrativeExamples: ['Champa rice', 'Grand Canal', 'Flying cash']
+      "code": "KC-3.3.III.A.i",
+      "theme": "Economics",
+      "text": "The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisanal labor.",
+      "illustrativeExamples": [
+        "Champa rice",
+        "Transportation innovations, like the Grand Canal expansion",
+        "Steel and iron production",
+        "Textiles and porcelains for export"
+      ]
     },
     {
-      code: 'KC-3.1.I.D',
-      theme: 'Economics',
-      text: "The expansion of empires, including the Song Dynasty, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.",
-      illustrativeExamples: []
+      "code": "KC-3.1.I.D",
+      "theme": "Economics",
+      "text": "The economy of Song China flourished as a result of increased productive capacity, expanding trade networks, and innovations in agriculture and manufacturing.",
+      "illustrativeExamples": []
     }
   ];
 

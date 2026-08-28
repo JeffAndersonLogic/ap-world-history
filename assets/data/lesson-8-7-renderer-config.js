@@ -15,47 +15,47 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Cultural Developments and Interactions (CDI)',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Cultural Developments and Interactions',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Cultural Developments and Interactions (CDI)",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Cultural Developments and Interactions",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 8: Learning Objective I',
-      theme: 'Learning Objective',
-      text: 'Explain various reactions to existing power structures in the period after 1900.',
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective I",
+      "theme": "Learning Objective",
+      "text": "Explain various reactions to existing power structures in the period after 1900.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.V',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Although conflict dominated much of the 20th century, many individuals and groups, including states, opposed this trend. Some individuals and groups, however, intensified the conflicts.',
-      illustrativeExamples: []
+      "code": "KC-6.2.V",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Although conflict dominated much of the 20th century, many individuals and groups—including states—opposed this trend. Some individuals and groups, however, intensified the conflicts.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.V.A',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Groups and individuals challenged the many wars of the century, and some, such as Mohandas Gandhi, Martin Luther King Jr., and Nelson Mandela, promoted the practice of nonviolence as a way to bring about political change.',
-      illustrativeExamples: []
+      "code": "KC-6.2.V.A",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Groups and individuals challenged the many wars of the century, and some, such as Mohandas Gandhi, Martin Luther King Jr., and Nelson Mandela, promoted the practice of nonviolence as a way to bring about political change.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.V.C',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Militaries and militarized states often responded to the proliferation of conflicts in ways that further intensified conflict.',
-      illustrativeExamples: [
-        'Chile under Augusto Pinochet',
-        'Spain under Francisco Franco',
-        'Uganda under Idi Amin',
-        'The buildup of the military–industrial complex and weapons trading'
+      "code": "KC-6.2.V.C",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Militaries and militarized states often responded to the proliferation of conflicts in ways that further intensified conflict.",
+      "illustrativeExamples": [
+        "Chile under Augusto Pinochet",
+        "Spain under Francisco Franco",
+        "Uganda under Idi Amin",
+        "The buildup of the military–industrial complex and weapons trading"
       ]
     },
     {
-      code: 'KC-6.2.V.D',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Some movements used violence against civilians in an effort to achieve political aims.',
-      illustrativeExamples: [
-        'Shining Path',
-        'Al-Qaeda'
+      "code": "KC-6.2.V.D",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Some movements used violence against civilians in an effort to achieve political aims.",
+      "illustrativeExamples": [
+        "Shining Path",
+        "Al-Qaeda"
       ]
     }
   ];

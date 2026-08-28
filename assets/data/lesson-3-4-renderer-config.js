@@ -74,4 +74,42 @@
       focus: ['State a clear comparison claim (similarity AND difference).', 'Use specific evidence from at least two different empires.', 'Explain what the comparison reveals, connect it to a broader historical argument about imperial rule.']
     }
   ];
+  lesson.collegeBoardKeyConcepts = [
+    {
+      "code": "KC-4.1",
+      "theme": "Land-Based Empires",
+      "text": "The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "KC-4.1.VI",
+      "theme": "Land-Based Empires",
+      "text": "In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "KC-4.3",
+      "theme": "Land-Based Empires",
+      "text": "Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "KC-4.3.II",
+      "theme": "Land-Based Empires",
+      "text": "Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "KC-4.3.II.B",
+      "theme": "Land-Based Empires",
+      "text": "Land empires included the Manchu in Central and East Asia; the Mughal in South and Central Asia; the Ottoman in Southern Europe, the Middle East, and North Africa; and the Safavids in the Middle East.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "KC-4.3.III.i",
+      "theme": "Land-Based Empires",
+      "text": "Political and religious disputes led to rivalries and conflict between states.",
+      "illustrativeExamples": []
+    }
+  ];
 })();

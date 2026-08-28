@@ -4,22 +4,25 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.3.II',
-      theme: 'Governance',
-      text: 'Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.',
-      illustrativeExamples: []
+      "code": "KC-4.3.II",
+      "theme": "Governance",
+      "text": "Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.3.II.B',
-      theme: 'Governance',
-      text: 'Land empires included the Manchu in Central and East Asia; the Mughal in South and Central Asia; the Ottoman in Southern Europe, the Middle East, and North Africa; and the Safavids in the Middle East.',
-      illustrativeExamples: []
+      "code": "KC-4.3.II.B",
+      "theme": "Governance",
+      "text": "Land empires included the Manchu in Central and East Asia; the Mughal in South and Central Asia; the Ottoman in Southern Europe, the Middle East, and North Africa; and the Safavids in the Middle East.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.3.III.i',
-      theme: 'Governance',
-      text: 'Political and religious disputes led to rivalries and conflict between states.',
-      illustrativeExamples: ['Safavid–Mughal conflict', 'Songhai Empire’s conflict with Morocco']
+      "code": "KC-4.3.III.i",
+      "theme": "Governance",
+      "text": "Political and religious disputes led to rivalries and conflict between states.",
+      "illustrativeExamples": [
+        "Safavid–Mughal conflict",
+        "Songhai Empire’s conflict with Morocco"
+      ]
     }
   ];
 

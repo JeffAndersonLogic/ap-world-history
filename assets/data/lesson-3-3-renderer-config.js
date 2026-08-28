@@ -4,22 +4,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.1.VI.i',
-      theme: 'Cultural Developments and Interactions',
-      text: 'The Protestant Reformation marked a break with existing Christian traditions, and both the Protestant and Catholic reformations contributed to the growth of Christianity.',
-      illustrativeExamples: []
+      "code": "KC-4.1.VI.i",
+      "theme": "Cultural Developments and Interactions",
+      "text": "The Protestant Reformation marked a break with existing Christian traditions and both the Protestant and Catholic reformations contributed to the growth of Christianity.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.1.VI.ii',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Political rivalries between the Ottoman and Safavid empires intensified the split within Islam between Sunni and Shi’a.',
-      illustrativeExamples: []
+      "code": "KC-4.1.VI.ii",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Political rivalries between the Ottoman and Safavid empires intensified the split within Islam between Sunni and Shi’a.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.1.VI.iii',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Sikhism developed in South Asia in a context of interactions between Hinduism and Islam.',
-      illustrativeExamples: []
+      "code": "KC-4.1.VI.iii",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Sikhism developed in South Asia in a context of interactions between Hinduism and Islam.",
+      "illustrativeExamples": []
     }
   ];
 

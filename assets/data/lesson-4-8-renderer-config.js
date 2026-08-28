@@ -4,46 +4,46 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.1',
-      theme: 'Transoceanic Interconnections',
-      text: 'The interconnection of the Eastern and Western Hemispheres, made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.',
-      illustrativeExamples: []
+      "code": "KC-4.1",
+      "theme": "Transoceanic Interconnections",
+      "text": "The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.1.II',
-      theme: 'Transoceanic Interconnections',
-      text: 'Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.',
-      illustrativeExamples: []
+      "code": "KC-4.1.II",
+      "theme": "Transoceanic Interconnections",
+      "text": "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.1.II.A',
-      theme: 'Transoceanic Interconnections',
-      text: 'The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible.',
-      illustrativeExamples: []
+      "code": "KC-4.1.II.A",
+      "theme": "Transoceanic Interconnections",
+      "text": "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.2',
-      theme: 'Transoceanic Interconnections',
-      text: 'Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes.',
-      illustrativeExamples: []
+      "code": "KC-4.2",
+      "theme": "Transoceanic Interconnections",
+      "text": "Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.2.II',
-      theme: 'Transoceanic Interconnections',
-      text: 'The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed.',
-      illustrativeExamples: []
+      "code": "KC-4.2.II",
+      "theme": "Transoceanic Interconnections",
+      "text": "The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.3',
-      theme: 'Transoceanic Interconnections',
-      text: 'Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.',
-      illustrativeExamples: []
+      "code": "KC-4.3",
+      "theme": "Transoceanic Interconnections",
+      "text": "Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.3.III.ii',
-      theme: 'Transoceanic Interconnections',
-      text: 'Economic disputes led to rivalries and conflict between states.',
-      illustrativeExamples: []
+      "code": "KC-4.3.III.ii",
+      "theme": "Transoceanic Interconnections",
+      "text": "Economic disputes led to rivalries and conflict between states.",
+      "illustrativeExamples": []
     }
   ];
 

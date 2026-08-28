@@ -4,34 +4,38 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-5.3.I.A',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Enlightenment philosophies applied new ways of understanding and empiricist approaches to both the natural world and human relationships; they also reexamined the role that religion played in public life and emphasized the importance of reason. Philosophers developed new political ideas about the individual, natural rights, and the social contract.',
-      illustrativeExamples: []
+      "code": "KC-5.3.I.A",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Enlightenment philosophies applied new ways of understanding and empiricist approaches to both the natural world and human relationships; they also reexamined the role that religion played in public life and emphasized the importance of reason. Philosophers developed new political ideas about the individual, natural rights, and the social contract.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.3.I',
-      theme: 'Cultural Developments and Interactions',
-      text: 'The rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions and rebellions against existing governments.',
-      illustrativeExamples: []
+      "code": "KC-5.3.I",
+      "theme": "Cultural Developments and Interactions",
+      "text": "The rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions and rebellions against existing governments.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.3.II.i',
-      theme: 'Cultural Developments and Interactions',
-      text: 'Nationalism also became a major force shaping the historical development of states and empires.',
-      illustrativeExamples: []
+      "code": "KC-5.3.II.i",
+      "theme": "Cultural Developments and Interactions",
+      "text": "Nationalism also became a major force shaping the historical development of states and empires.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.3.I.C',
-      theme: 'Social Interactions and Organization',
-      text: 'Enlightenment ideas and religious ideals influenced various reform movements. These reform movements contributed to the expansion of rights, as seen in expanded suffrage, the abolition of slavery, and the end of serfdom.',
-      illustrativeExamples: []
+      "code": "KC-5.3.I.C",
+      "theme": "Social Interactions and Organization",
+      "text": "Enlightenment ideas and religious ideals influenced various reform movements. These reform movements contributed to the expansion of rights, as seen in expanded suffrage, the abolition of slavery, and the end of serfdom.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.3.IV.B',
-      theme: 'Social Interactions and Organization',
-      text: 'Demands for women’s suffrage and an emergent feminism challenged political and gender hierarchies.',
-      illustrativeExamples: ['Mary Wollstonecraft’s A Vindication of the Rights of Woman', 'Olympe de Gouges’s Declaration of the Rights of Woman and of the Female Citizen', 'Seneca Falls Conference (1848), organized by Elizabeth Cady Stanton and Lucretia Mott']
+      "code": "KC-5.3.IV.B",
+      "theme": "Social Interactions and Organization",
+      "text": "Demands for women’s suffrage and an emergent feminism challenged political and gender hierarchies.",
+      "illustrativeExamples": [
+        "Mary Wollstonecraft’s A Vindication of the Rights of Woman",
+        "Olympe de Gouges’s Declaration of the Rights of Woman and of the Female Citizen",
+        "Seneca Falls Conference (1848) organized by Elizabeth Cady Stanton and Lucretia Mott"
+      ]
     }
   ];
 

@@ -4,28 +4,28 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.1.III',
-      theme: 'Governance',
-      text: 'New state-supported transoceanic maritime exploration occurred in this period.',
-      illustrativeExamples: []
+      "code": "KC-4.1.III",
+      "theme": "Governance",
+      "text": "New state-supported transoceanic maritime exploration occurred in this period.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.1.III.A',
-      theme: 'Economic Systems',
-      text: 'Portuguese development of maritime technology and navigational skills led to increased travel to and trade with Africa and Asia and resulted in the construction of a global trading-post empire.',
-      illustrativeExamples: []
+      "code": "KC-4.1.III.A",
+      "theme": "Economic Systems",
+      "text": "Portuguese development of maritime technology and navigational skills led to increased travel to and trade with Africa and Asia and resulted in the construction of a global trading-post empire.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.1.III.B',
-      theme: 'Economic Systems',
-      text: 'Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade.',
-      illustrativeExamples: []
+      "code": "KC-4.1.III.B",
+      "theme": "Economic Systems",
+      "text": "Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-4.1.III.C',
-      theme: 'Economic Systems',
-      text: 'Northern Atlantic crossings were undertaken under English, French, and Dutch sponsorship, often with the goal of finding alternative sailing routes to Asia.',
-      illustrativeExamples: []
+      "code": "KC-4.1.III.C",
+      "theme": "Economic Systems",
+      "text": "Northern Atlantic crossings were undertaken under English, French, and Dutch sponsorship, often with the goal of finding alternative sailing routes to Asia.",
+      "illustrativeExamples": []
     }
   ];
 

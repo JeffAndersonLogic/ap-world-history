@@ -4,22 +4,38 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-4.3.I.C',
-      theme: 'Governance',
-      text: 'Recruitment and use of bureaucratic elites, as well as the development of military professionals, became more common among rulers who wanted to maintain centralized control over their populations and resources.',
-      illustrativeExamples: ['Ottoman devshirme', 'Salaried samurai']
+      "code": "KC-4.3.I.C",
+      "theme": "Governance",
+      "text": "Recruitment and use of bureaucratic elites, as well as the development of military professionals, became more common among rulers who wanted to maintain centralized control over their populations and resources.",
+      "illustrativeExamples": [
+        "Ottoman devshirme",
+        "Salaried samurai"
+      ]
     },
     {
-      code: 'KC-4.3.I.A',
-      theme: 'Governance',
-      text: 'Rulers continued to use religious ideas, art, and monumental architecture to legitimize their rule.',
-      illustrativeExamples: ['Mexica practice of human sacrifice', 'European notions of divine right', 'Songhai promotion of Islam', 'Qing imperial portraits', 'Incan sun temple of Cuzco', 'Mughal mausolea and mosques', 'European palaces, such as Versailles']
+      "code": "KC-4.3.I.A",
+      "theme": "Governance",
+      "text": "Rulers continued to use religious ideas, art, and monumental architecture to legitimize their rule.",
+      "illustrativeExamples": [
+        "Mexica practice of human sacrifice",
+        "European notions of divine right",
+        "Songhai promotion of Islam",
+        "Qing imperial portraits",
+        "Incan sun temple of Cuzco",
+        "Mughal mausolea and mosques",
+        "European palaces, such as Versailles"
+      ]
     },
     {
-      code: 'KC-4.3.I.D',
-      theme: 'Governance',
-      text: 'Rulers used tribute collection, tax farming, and innovative tax-collection systems to generate revenue in order to forward state power and expansion.',
-      illustrativeExamples: ['Mughal zamindar tax collection', 'Ottoman tax farming', 'Mexica tribute lists', 'Ming practice of collecting taxes in hard currency']
+      "code": "KC-4.3.I.D",
+      "theme": "Governance",
+      "text": "Rulers used tribute collection, tax farming, and innovative tax-collection systems to generate revenue in order to forward state power and expansion.",
+      "illustrativeExamples": [
+        "Mughal zamindar tax collection",
+        "Ottoman tax farming",
+        "Mexica tribute lists",
+        "Ming practice of collecting taxes in hard currency"
+      ]
     }
   ];
 

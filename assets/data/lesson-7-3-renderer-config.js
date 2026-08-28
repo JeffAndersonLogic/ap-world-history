@@ -10,28 +10,28 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Technology and Innovation (TEC)',
-      theme: 'Technology and Innovation',
-      text: 'Human adaptation and innovation have resulted in increased efficiency, comfort, and security, and technological advances have shaped human development and interactions with both intended and unintended consequences.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Technology and Innovation (TEC)",
+      "theme": "Technology and Innovation",
+      "text": "Human adaptation and innovation have resulted in increased efficiency, comfort, and security, and technological advances have shaped human development and interactions with both intended and unintended consequences.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 7: Learning Objective C',
-      theme: 'Learning Objective',
-      text: 'Explain how governments used a variety of methods to conduct war.',
-      illustrativeExamples: []
+      "code": "Unit 7: Learning Objective C",
+      "theme": "Learning Objective",
+      "text": "Explain how governments used a variety of methods to conduct war.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.A.i',
-      theme: 'Governance',
-      text: 'World War I was the first total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies) for the purpose of waging war.',
-      illustrativeExamples: []
+      "code": "KC-6.2.IV.A.i",
+      "theme": "Governance",
+      "text": "World War I was the first total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies) for the purpose of waging war.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.III.C.i',
-      theme: 'Technology and Innovation',
-      text: 'New military technology led to increased levels of wartime casualties.',
-      illustrativeExamples: []
+      "code": "KC-6.1.III.C.i",
+      "theme": "Technology and Innovation",
+      "text": "New military technology led to increased levels of wartime casualties.",
+      "illustrativeExamples": []
     }
   ];
 

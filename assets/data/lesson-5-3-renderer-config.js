@@ -4,16 +4,16 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-5.1.I.A',
-      theme: 'Humans and the Environment',
-      text: 'A variety of factors contributed to the growth of industrial production and eventually resulted in the Industrial Revolution, including: Proximity to waterways; access to rivers and canals; Geographical distribution of coal, iron, and timber; Urbanization; Improved agricultural productivity; Legal protection of private property; Access to foreign resources; Accumulation of capital',
-      illustrativeExamples: []
+      "code": "KC-5.1.I.A",
+      "theme": "Humans and the Environment",
+      "text": "A variety of factors contributed to the growth of industrial production and eventually resulted in the Industrial Revolution, including:<br>▪ Proximity to waterways; access to rivers and canals<br>▪ Geographical distribution of coal, iron, and timber<br>▪ Urbanization<br>▪ Improved agricultural productivity<br>▪ Legal protection of private property<br>▪ Access to foreign resources<br>▪ Accumulation of capital",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.1.I.C',
-      theme: 'Humans and the Environment',
-      text: 'The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor.',
-      illustrativeExamples: []
+      "code": "KC-5.1.I.C",
+      "theme": "Humans and the Environment",
+      "text": "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor.",
+      "illustrativeExamples": []
     }
   ];
 

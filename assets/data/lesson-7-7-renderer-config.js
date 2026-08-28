@@ -21,35 +21,33 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Governance (GOV)',
-      theme: 'Governance',
-      text: 'A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Governance (GOV)",
+      "theme": "Governance",
+      "text": "A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 7: Learning Objective G',
-      theme: 'Learning Objective',
-      text: 'Explain similarities and differences in how governments used a variety of methods to conduct war.',
-      illustrativeExamples: []
+      "code": "Unit 7: Learning Objective G",
+      "theme": "Learning Objective",
+      "text": "Explain similarities and differences in how governments used a variety of methods to conduct war.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.A.ii',
-      theme: 'Governance',
-      text: 'World War II was a total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies or former colonies) for the purpose of waging war. Governments used ideologies, including fascism and communism, to mobilize all of their state\'s resources for war and, in the case of totalitarian states, to repress basic freedoms and dominate many aspects of daily life during the course of the conflicts and beyond.',
-      illustrativeExamples: [
-        'Western democracies mobilizing for war:',
-        'Great Britain under Winston Churchill',
-        'United States under Franklin Roosevelt',
-        'Totalitarian states mobilizing for war:',
-        'Germany under Adolf Hitler',
-        'USSR under Joseph Stalin'
+      "code": "KC-6.2.IV.A.ii",
+      "theme": "Governance",
+      "text": "World War II was a total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies or former colonies) for the purpose of waging war. Governments used ideologies, including fascism and communism to mobilize all of their state’s resources for war and, in the case of totalitarian states, to repress basic freedoms and dominate many aspects of daily life during the course of the conflicts and beyond.",
+      "illustrativeExamples": [
+        "Great Britain under Winston Churchill",
+        "United States under Franklin Roosevelt",
+        "Germany under Adolf Hitler",
+        "USSR under Joseph Stalin"
       ]
     },
     {
-      code: 'KC-6.1.III.C.ii',
-      theme: 'Technology and Innovation',
-      text: 'New military technology and new tactics, including the atomic bomb, fire-bombing, and the waging of "total war" led to increased levels of wartime casualties.',
-      illustrativeExamples: []
+      "code": "KC-6.1.III.C.ii",
+      "theme": "Technology and Innovation",
+      "text": "New military technology and new tactics, including the atomic bomb, fire-bombing, and the waging of “total war” led to increased levels of wartime casualties.",
+      "illustrativeExamples": []
     }
   ];
 

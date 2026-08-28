@@ -9,39 +9,36 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Humans and the Environment (ENV)',
-      theme: 'Humans and the Environment',
-      text: 'The environment shapes human societies, and as populations grow and change, these populations in turn shape their environments.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Humans and the Environment (ENV)",
+      "theme": "Humans and the Environment",
+      "text": "The environment shapes human societies, and as populations grow and change, these populations in turn shape their environments.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 9: Learning Objective B',
-      theme: 'Learning Objective',
-      text: 'Explain how environmental factors affected human populations over time.',
-      illustrativeExamples: []
+      "code": "Unit 9: Learning Objective B",
+      "theme": "Learning Objective",
+      "text": "Explain how environmental factors affected human populations over time.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.III',
-      theme: 'Humans and the Environment',
-      text: 'Diseases, as well as medical and scientific developments, had significant effects on populations around the world.',
-      illustrativeExamples: []
+      "code": "KC-6.1.III",
+      "theme": "Humans and the Environment",
+      "text": "Diseases, as well as medical and scientific developments, had significant effects on populations around the world.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.1.III.A',
-      theme: 'Humans and the Environment',
-      text: 'Diseases associated with poverty persisted while other diseases emerged as new epidemics and threats to human populations, in some cases leading to social disruption. These outbreaks spurred technological and medical advances. Some diseases occurred at higher incidence merely because of increased longevity.',
-      illustrativeExamples: [
-        '<strong>Diseases associated with poverty:</strong>',
-        'Malaria',
-        'Tuberculosis',
-        'Cholera',
-        '<strong>Emergent epidemic diseases:</strong>',
-        '1918 influenza pandemic',
-        'Ebola',
-        'HIV/AIDS',
-        '<strong>Diseases associated with increased longevity:</strong>',
-        'Heart disease',
-        'Alzheimer’s disease'
+      "code": "KC-6.1.III.A",
+      "theme": "Humans and the Environment",
+      "text": "Diseases associated with poverty persisted while other diseases emerged as new epidemics and threats to human populations, in some cases leading to social disruption. These outbreaks spurred technological and medical advances. Some diseases occurred at higher incidence merely because of increased longevity.",
+      "illustrativeExamples": [
+        "Malaria",
+        "Tuberculosis",
+        "Cholera",
+        "1918 influenza pandemic",
+        "Ebola",
+        "HIV/AIDS",
+        "Heart disease",
+        "Alzheimer’s disease"
       ]
     }
   ];

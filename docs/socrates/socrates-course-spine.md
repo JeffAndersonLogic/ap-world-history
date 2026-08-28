@@ -97,11 +97,11 @@ Strong answer checklist: My first sentence states a defensible claim that direct
 **Where this sits.** Unit 1: The Global Tapestry, c. 1200 to c. 1450. Developments in East Asia, c. 1200 to c. 1450
 
 **College Board key concepts.**
-- KC-3.2.I.A: Song China utilized traditional methods of Confucianism and an imperial bureaucracy to maintain and justify its rule.
-- KC-3.1.III.D.i: Chinese cultural traditions continued, and they influenced neighboring regions. Illustrative examples: Filial piety, Neo-Confucianism.
-- KC-3.1.III.D.ii: Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices. Illustrative examples: Theravada, Mahayana, Tibetan.
-- KC-3.3.III.A.i: The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisan labor. Illustrative examples: Champa rice, Grand Canal, Flying cash.
-- KC-3.1.I.D: The expansion of empires, including the Song Dynasty, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.
+- KC-3.2.I.A (Governance): Empires and states in Afro-Eurasia and the Americas demonstrated continuity, innovation, and diversity in the 13th century. This included the Song Dynasty of China, which utilized traditional methods of Confucianism and an imperial bureaucracy to maintain and justify its rule.
+- KC-3.1.III.D.i (Culture): Chinese cultural traditions continued, and they influenced neighboring regions. Illustrative examples: Filial piety in East Asia, Influence of Neo-Confucianism and Buddhism in East Asia, Confucian traditions of both respect for and expected deference from women, Chinese literary and scholarly traditions and their spread to Heian Japan and Korea.
+- KC-3.1.III.D.ii (Culture): Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices. Illustrative examples: Theravada, Mahayana, Tibetan.
+- KC-3.3.III.A.i (Economics): The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisanal labor. Illustrative examples: Champa rice, Transportation innovations, like the Grand Canal expansion, Steel and iron production, Textiles and porcelains for export.
+- KC-3.1.I.D (Economics): The economy of Song China flourished as a result of increased productive capacity, expanding trade networks, and innovations in agriculture and manufacturing.
 
 **Expected evidence terms.** bureaucracy, civil service exams, scholar-officials, Confucianism, Neo-Confucianism, Mandate of Heaven, Buddhism, Champa rice, Grand Canal, paper money, commercialization, urbanization, printing, Indian Ocean trade networks, Silk Road connections.
 
@@ -119,9 +119,9 @@ Strong answer checklist: Use one cultural example. Use one economic or technolog
 
 **College Board key concepts.**
 - KC-3.1.III.D.iii (Culture): Islam, Judaism, Christianity, and the core beliefs and practices of these religions continued to shape societies in Africa and Asia.
-- KC-3.2.I (Governance): As the Abbasid Caliphate fragmented, new Islamic political entities emerged, most of which were dominated by Turkic peoples. These states demonstrated continuity, innovation, and diversity. Illustrative examples: Seljuk Empire, Mamluk Sultanate of Egypt, Delhi Sultanates.
+- KC-3.2.I (Governance): As the Abbasid Caliphate fragmented, new Islamic political entities emerged, most of which were dominated by Turkic peoples. These states demonstrated continuity, innovation, and diversity. Illustrative examples: Seljuk Empire, Mamluk sultanate of Egypt, Delhi sultanates.
 - KC-3.1.III.A (Culture): Muslim rule continued to expand to many parts of Afro-Eurasia due to military expansion, and Islam subsequently expanded through the activities of merchants, missionaries, and Sufis.
-- KC-3.2.II.A.i (Technology): Muslim states and empires encouraged significant intellectual innovations and transfers. Illustrative examples: Advances in mathematics (Nasir al-Din al-Tusi), Advances in literature (A'ishah al-Ba'uniyyah), Advances in medicine, Preservation and commentaries on Greek moral and natural philosophy, House of Wisdom in Abbasid Baghdad, Scholarly and cultural transfers in Muslim and Christian Spain.
+- KC-3.2.II.A.i (Technology): Muslim states and empires encouraged significant intellectual innovations and transfers. Illustrative examples: Advances in mathematics (Nasir al-Din al-Tusi), Advances in literature ('A'ishah al-Ba'uniyyah), Advances in medicine, Preservation and commentaries on Greek moral and natural philosophy, House of Wisdom in Abbasid Bagdad, Scholarly and cultural transfers in Muslim and Christian Spain.
 
 **Expected evidence terms.** Abbasid Caliphate, fragmentation, Seljuk Empire, Mamluk Sultanate, Delhi Sultanate, Turkic peoples, legitimacy, merchants, missionaries, Sufis, Indian Ocean, House of Wisdom, translation, paper-making, mathematics, medicine, astronomy, Nasir al-Din al-Tusi.
 
@@ -231,7 +231,7 @@ Strong answer checklist: Use two societies. Include similarity and difference. E
 **Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Overland trade, luxury goods, and the spread of goods, ideas, and disease c. 1200–1450
 
 **College Board key concepts.**
-- KC-3.1.I.A.i (Economic Systems): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Silk Roads, promoting the growth of powerful new trading cities. Illustrative examples: Kashgar, Samarkand.
+- KC-3.1.I.A.i (Economic Systems): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities. Illustrative examples: Kashgar, Samarkand.
 - KC-3.1.I.C.i (Economic Systems): The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies. Illustrative examples: Bills of exchange, Banking houses, Use of paper money.
 - KC-3.3.I.B (Economic Systems): Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.
 
@@ -251,8 +251,8 @@ Strong answer checklist: Identify at least two distinct effects. Use specific ev
 
 **College Board key concepts.**
 - KC-3.2.I.B.iii (Governance): Empires collapsed in different regions of the world and in some areas were replaced by new imperial states, including the Mongol khanates.
-- KC-3.1.I.E.i (Economic Systems): The expansion of empires, including the Mongols, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.
-- KC-3.2.II.A.ii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers. Illustrative examples: Transfer of Greco-Islamic medical knowledge to western Europe, Transfer of numbering systems to Europe, Adoption of Uyghur script.
+- KC-3.1.I.E.i (Economic Systems): The expansion of empires—including the Mongols—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.
+- KC-3.2.II.A.ii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers. Illustrative examples: Transfer of Greco–Islamic medical knowledge to western Europe, Transfer of numbering systems to Europe, Adoption of Uyghur script.
 
 **Expected evidence terms.** Genghis Khan, khanate, Pax Mongolica, Yam, siege warfare, cavalry, religious tolerance, trade, diplomacy, plague, Black Death, Marco Polo, Ibn Battuta, connectivity.
 
@@ -273,7 +273,7 @@ Strong answer checklist: Name at least two distinct effects. Explain whether eac
 - KC-3.1.I.C.ii (Economic Systems): The growth of interregional trade in luxury goods was encouraged by significant innovations in previously existing transportation and commercial technologies, including the use of the compass, the astrolabe, and larger ship designs.
 - KC-3.1.I.A.iii (Economic Systems): The Indian Ocean trading network fostered the growth of states. Illustrative examples: City-states of the Swahili Coast, Gujarat, Sultanate of Malacca.
 - KC-3.1.III.B (Cultural Developments and Interactions): In key places along important trade routes, merchants set up diasporic communities where they introduced their own cultural traditions into the indigenous cultures and, in turn, indigenous cultures influenced merchant cultures. Illustrative examples: Arab and Persian communities in East Africa, Chinese merchant communities in Southeast Asia, Malay communities in the Indian Ocean basin.
-- KC-3.2.II.A.iii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers, including during Chinese maritime activity led by Ming admiral Zheng He.
+- KC-3.2.II.A.iii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers, including during Chinese maritime activity led by Ming Admiral Zheng He.
 - KC-3.1.II.A.i (Humans and the Environment): The expansion and intensification of long-distance trade routes often depended on environmental knowledge, including advanced knowledge of the monsoon winds.
 
 **Expected evidence terms.** monsoon, dhow, compass, lateen sail, navigation, seasonal winds, spices, textiles, gold, ivory, diaspora, Islam, Kilwa, Calicut, Swahili, port city.
@@ -293,7 +293,7 @@ Strong answer checklist: Name at least two effects. Use specific place names or 
 **College Board key concepts.**
 - KC-3.1.II.A.ii (Technology and Innovation): The growth of interregional trade was encouraged by innovations in existing transportation technologies. Illustrative examples: Camel saddle, Caravans.
 - KC-3.1.I.A.iv (Technology and Innovation): Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the trans-Saharan trade network.
-- KC-3.1.I.E.ii (Governance): The expansion of empires, including Mali in West Africa, facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.
+- KC-3.1.I.E.ii (Governance): The expansion of empires—including Mali in West Africa–facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.
 
 **Expected evidence terms.** camel, camel saddle, caravan, gold, salt, Taghaza, Wangara, oasis, Mali Empire, Mansa Musa, Timbuktu, Islam, hajj, mosque, scholarship.
 
@@ -310,7 +310,7 @@ Strong answer checklist: Name at least two effects of trans-Saharan trade on Wes
 **Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How trade networks spread religion, technology, crops, and artistic traditions c. 1200–1450
 
 **College Board key concepts.**
-- KC-3.1.III.D (Cultural Developments and Interactions): Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations. Illustrative examples: Influence of Buddhism in East Asia, Spread of Hinduism and Buddhism into Southeast Asia, Spread of Islam in sub-Saharan Africa and Asia, Gunpowder from China, Paper from China.
+- KC-3.1.III.D (Cultural Developments and Interactions): Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations. Illustrative examples: The influence of Buddhism in East Asia, The spread of Hinduism and Buddhism into Southeast Asia, The spread of Islam in sub-Saharan Africa and Asia, Gunpowder from China, Paper from China.
 - KC-3.3.II (Cultural Developments and Interactions): The fate of cities varied greatly, with periods of significant decline and periods of increased urbanization, buoyed by rising productivity and expanding trade networks.
 - KC-3.1.III.C (Cultural Developments and Interactions): As exchange networks intensified, an increasing number of travelers within Afro-Eurasia wrote about their travels. Illustrative examples: Ibn Battuta, Margery Kempe, Marco Polo.
 
@@ -347,7 +347,7 @@ Strong answer checklist: Name at least two distinct consequences. Explain how ea
 
 **College Board key concepts.**
 - KC-3.1 (Networks of Exchange): A deepening and widening of networks of human interaction within and across regions contributed to cultural, technological, and biological diffusion within and between various societies.
-- KC-3.1.I.A.i (Networks of Exchange): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Silk Roads, promoting the growth of powerful new trading cities.
+- KC-3.1.I.A.i (Networks of Exchange): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.
 - KC-3.1.I.C.i (Networks of Exchange): The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.
 - KC-3.3 (Networks of Exchange): Changes in trade networks resulted from and stimulated increasing productive capacity, with important implications for social and gender structures and environmental processes.
 - KC-3.3.I.B (Networks of Exchange): Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.
@@ -405,7 +405,7 @@ Strong answer checklist: Describe at least two distinct administrative systems f
 **Where this sits.** Unit 3: Land-Based Empires, c. 1450 to c. 1750. How rulers of land-based empires used religion to legitimize authority, manage diversity, and wage sectarian conflict c. 1450–c. 1750
 
 **College Board key concepts.**
-- KC-4.1.VI.i (Cultural Developments and Interactions): The Protestant Reformation marked a break with existing Christian traditions, and both the Protestant and Catholic reformations contributed to the growth of Christianity.
+- KC-4.1.VI.i (Cultural Developments and Interactions): The Protestant Reformation marked a break with existing Christian traditions and both the Protestant and Catholic reformations contributed to the growth of Christianity.
 - KC-4.1.VI.ii (Cultural Developments and Interactions): Political rivalries between the Ottoman and Safavid empires intensified the split within Islam between Sunni and Shi’a.
 - KC-4.1.VI.iii (Cultural Developments and Interactions): Sikhism developed in South Asia in a context of interactions between Hinduism and Islam.
 
@@ -424,7 +424,7 @@ Strong answer checklist: Name at least two specific policies Akbar used to manag
 **Where this sits.** Unit 3: Land-Based Empires, c. 1450 to c. 1750. Using the AP Comparison skill to analyze similarities and differences across the Ottoman, Safavid, Mughal, Qing, and Russian empires, c. 1450–c. 1750
 
 **College Board key concepts.**
-- KC-4.1 (Land-Based Empires): The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging transformed trade and had a significant social impact on the world.
+- KC-4.1 (Land-Based Empires): The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.
 - KC-4.1.VI (Land-Based Empires): In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.
 - KC-4.3 (Land-Based Empires): Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.
 - KC-4.3.II (Land-Based Empires): Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.
@@ -447,7 +447,7 @@ Strong answer checklist: State a clear comparison claim (similarity AND differen
 
 **College Board key concepts.**
 - KC-4.1.II (Technology and Innovation): Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.
-- KC-4.1.II.A (Technology and Innovation): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible. Illustrative examples: Caravel, Carrack, Fluyt, Lateen sail, Compass, Astronomical charts.
+- KC-4.1.II.A (Technology and Innovation): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible. Illustrative examples: Caravel, Carrack, Fluyt, Lateen sail, Compass, Astronomical charts.
 
 **Expected evidence terms.** compass, astrolabe, lateen sail, caravel, dead reckoning, latitude, portolan chart, cross-staff, quadrant, square sail, Waldseemüller map, printing press, Prince Henry, Sagres, cartography, geographic knowledge, state sponsorship, cosmographer.
 
@@ -488,7 +488,7 @@ Strong answer checklist: Describe at least two specific voyages with routes and 
 - KC-4.1.V.A (Humans and the Environment): European colonization of the Americas led to the unintentional transfer of disease vectors, including mosquitoes and rats, and the spread of diseases that were endemic in the Eastern Hemisphere, including smallpox, measles, and malaria. Some of these diseases substantially reduced the indigenous populations, with catastrophic effects in many areas.
 - KC-4.1.V.B (Humans and the Environment): American foods became staple crops in various parts of Europe, Asia, and Africa. Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East.
 - KC-4.1.V.C (Humans and the Environment): Afro-Eurasian fruit trees, grains, sugar, and domesticated animals were brought by Europeans to the Americas, while other foods were brought by African enslaved persons. Illustrative examples: Horses, Pigs, Cattle, Okra, Rice.
-- KC-4.1.V.D (Humans and the Environment): Populations in Afro-Eurasia benefited nutritionally from the increased diversity of American food crops.
+- KC-4.1.V.D (Humans and the Environment): Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops.
 
 **Expected evidence terms.** potato, maize, tomato, cacao, tobacco, horse, cattle, sugarcane, wheat, cassava, smallpox, virgin soil epidemic, demographic collapse, encomienda, Atlantic slave trade, Potosí, silver, labor shortage, Tenochtitlan, Cuitláhuac.
 
@@ -531,10 +531,10 @@ Strong answer checklist: Explain how joint-stock companies spread risk and mobil
 - KC-4.1.IV.C (Governance): Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories. Joint-stock companies, influenced by these mercantilist principles, were used by rulers and merchants to finance exploration and were used by rulers to compete against one another in global trade.
 - KC-4.3.III.ii (Governance): Economic disputes led to rivalries and conflict between states. Illustrative examples: Muslim–European rivalry in the Indian Ocean, Moroccan conflict with the Songhai Empire.
 - KC-4.1.IV.D.i (Economic Systems): The Atlantic trading system involved the movement of goods, wealth, and labor, including enslaved persons.
-- KC-4.1.IV (Economic Systems): The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver. Regional markets continued to flourish in Afro-Eurasia by using established commercial practices, and new transoceanic and regional shipping services developed by European merchants.
-- KC-4.2.II.A (Economic Systems): Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased. Illustrative examples: Western Europe, wool and linen, India, cotton, China, silk.
+- KC-4.1.IV (Economic Systems): The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver. Regional markets continued to flourish in Afro-Eurasia by using established commercial practices and new transoceanic and regional shipping services developed by European merchants.
+- KC-4.2.II.A (Economic Systems): Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased. Illustrative examples: Western Europe—wool and linen, India—cotton, China—silk.
 - KC-4.2.III.C (Social Interactions and Organization): Some notable gender and family restructuring occurred, including demographic changes in Africa that resulted from the trade of enslaved persons.
-- KC-4.1.IV.D.ii (Social Interactions and Organization): The Atlantic trading system involved the movement of labor, including enslaved persons, and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis.
+- KC-4.1.IV.D.ii (Social Interactions and Organization): The Atlantic trading system involved the movement of labor—including enslaved persons and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis.
 - KC-4.1.VI (Cultural Developments and Interactions): In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.
 
 **Expected evidence terms.** encomienda, mita, Potosí, chattel slavery, viceroyalty, audiencia, Jesuit missions, las Casas, New Spain, Peru, Manila Galleon, Casa de Contratación, global price revolution, Chinese demand, silver economy, Seville, Single Whip Tax Reform.
@@ -570,7 +570,7 @@ Strong answer checklist: Choose one specific example of European rivalry and exp
 **Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How European colonialism reorganized social order — creating the casta system in Spanish America, racializing slavery in the Atlantic world, and producing new hierarchies wherever it reached
 
 **College Board key concepts.**
-- KC-4.3.I.B (Social Interactions and Organization): Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups’ roles in society, politics, or the economy. Illustrative examples: Expulsion of Jews from Spain and Portugal; acceptance of Jews in the Ottoman Empire, Restrictive policies against Han Chinese in Qing China, Varying status of different classes of women within the Ottoman Empire.
+- KC-4.3.I.B (Social Interactions and Organization): Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups’ roles in society, politics, or the economy. Illustrative examples: Expulsion of Jews from Spain and Portugal; the acceptance of Jews in the Ottoman Empire, Restrictive policies against Han Chinese in Qing China, Varying status of different classes of women within the Ottoman Empire.
 - KC-4.2.III.A (Social Interactions and Organization): Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system.
 - KC-4.2.III.B (Social Interactions and Organization): The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders. Illustrative examples: Ottoman timars, Russian boyars, European nobility.
 
@@ -589,11 +589,11 @@ Strong answer checklist: Identify one specific continuity from pre-colonial soci
 **Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. What changed — and what stayed the same — in global trade, demography, and social organization across three centuries of European maritime expansion
 
 **College Board key concepts.**
-- KC-4.1 (Transoceanic Interconnections): The interconnection of the Eastern and Western Hemispheres, made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.
+- KC-4.1 (Transoceanic Interconnections): The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.
 - KC-4.1.II (Transoceanic Interconnections): Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.
-- KC-4.1.II.A (Transoceanic Interconnections): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible.
+- KC-4.1.II.A (Transoceanic Interconnections): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible.
 - KC-4.2 (Transoceanic Interconnections): Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes.
-- KC-4.2.II (Transoceanic Interconnections): The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed.
+- KC-4.2.II (Transoceanic Interconnections): The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified.
 - KC-4.3 (Transoceanic Interconnections): Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.
 - KC-4.3.III.ii (Transoceanic Interconnections): Economic disputes led to rivalries and conflict between states.
 
@@ -616,7 +616,7 @@ Strong answer checklist: Name two specific continuities (Indian Ocean trade, Chi
 - KC-5.3.I (Cultural Developments and Interactions): The rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions and rebellions against existing governments.
 - KC-5.3.II.i (Cultural Developments and Interactions): Nationalism also became a major force shaping the historical development of states and empires.
 - KC-5.3.I.C (Social Interactions and Organization): Enlightenment ideas and religious ideals influenced various reform movements. These reform movements contributed to the expansion of rights, as seen in expanded suffrage, the abolition of slavery, and the end of serfdom.
-- KC-5.3.IV.B (Social Interactions and Organization): Demands for women’s suffrage and an emergent feminism challenged political and gender hierarchies. Illustrative examples: Mary Wollstonecraft’s A Vindication of the Rights of Woman, Olympe de Gouges’s Declaration of the Rights of Woman and of the Female Citizen, Seneca Falls Conference (1848), organized by Elizabeth Cady Stanton and Lucretia Mott.
+- KC-5.3.IV.B (Social Interactions and Organization): Demands for women’s suffrage and an emergent feminism challenged political and gender hierarchies. Illustrative examples: Mary Wollstonecraft’s A Vindication of the Rights of Woman, Olympe de Gouges’s Declaration of the Rights of Woman and of the Female Citizen, Seneca Falls Conference (1848) organized by Elizabeth Cady Stanton and Lucretia Mott.
 
 **Expected evidence terms.** natural rights, social contract, popular sovereignty, separation of powers, Locke, Rousseau, Montesquieu, Voltaire, Wollstonecraft, divine right of kings, Encyclopédie, salons, print culture, Republic of Letters, Royal African Company, universalism, exclusion, contradiction.
 
@@ -637,8 +637,8 @@ Strong answer checklist: Describe two specific mechanisms of spread, be concrete
 - KC-5.3 (Governance): The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.
 - KC-5.3.IV.A.i (Governance): Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism.
 - KC-5.3.III.B (Governance): Colonial subjects in the Americas led a series of rebellions inspired by democratic ideals. The American Revolution, and its successful establishment of a republic, the United States of America, was a model and inspiration for a number of the revolutions that followed. The American Revolution, the Haitian Revolution, and the Latin American independence movements facilitated the emergence of independent states in the Americas.
-- KC-5.3.I.B (Governance): The ideas of Enlightenment philosophers, as reflected in revolutionary documents, including the American Declaration of Independence during the American Revolution, the French Declaration of the Rights of Man and of the Citizen during the French Revolution, and Bolívar’s Letter from Jamaica on the eve of the Latin American revolutions, influenced resistance to existing political authority, often in pursuit of independence and democratic ideals.
-- KC-5.3.II.iii (Governance): Newly imagined national communities often linked this new national identity with borders of the state, and in some cases, nationalists challenged boundaries or sought unification of fragmented regions. Illustrative examples: Propaganda Movement in the Philippines, Māori nationalism and the New Zealand wars in New Zealand, Puerto Rico, writings of Lola Rodríguez de Tió, German and Italian unifications, Balkan nationalisms, Ottomanism.
+- KC-5.3.I.B (Governance): The ideas of Enlightenment philosophers, as reflected in revolutionary documents—including the American Declaration of Independence during the American Revolution, the French “Declaration of the Rights of Man and of the Citizen” during the French Revolution, and Bolívar’s “Letter from Jamaica” on the eve of the Latin American revolutions—influenced resistance to existing political authority, often in pursuit of independence and democratic ideals.
+- KC-5.3.II.iii (Governance): Newly imagined national communities often linked this new national identity with borders of the state, and in some cases, nationalists challenged boundaries or sought unification of fragmented regions. Illustrative examples: Propaganda Movement in the Philippines, Maori nationalism and the New Zealand wars in New Zealand, Puerto Rico—writings of Lola Rodríguez de Tió, German and Italian unifications, Balkan nationalisms, Ottomanism.
 
 **Expected evidence terms.** natural rights, popular sovereignty, Toussaint Louverture, Bois Caïman, Haitian Revolution, Declaration of Independence, Declaration of Rights of Man, Seven Years War, Saint-Domingue, Napoleon, nationalism, self-determination, multiethnic empire, Ottoman Empire, Habsburg Empire, Greek independence, Italian unification, German unification, Bolívar, creole.
 
@@ -655,7 +655,7 @@ Strong answer checklist: Define nationalism clearly, how is it different from lo
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Why industrialization started in Britain — and how the steam engine, factory system, and urbanization transformed labor and society from c. 1750 to c. 1900
 
 **College Board key concepts.**
-- KC-5.1.I.A (Humans and the Environment): A variety of factors contributed to the growth of industrial production and eventually resulted in the Industrial Revolution, including: Proximity to waterways; access to rivers and canals; Geographical distribution of coal, iron, and timber; Urbanization; Improved agricultural productivity; Legal protection of private property; Access to foreign resources; Accumulation of capital
+- KC-5.1.I.A (Humans and the Environment): A variety of factors contributed to the growth of industrial production and eventually resulted in the Industrial Revolution, including:<br>▪ Proximity to waterways; access to rivers and canals<br>▪ Geographical distribution of coal, iron, and timber<br>▪ Urbanization<br>▪ Improved agricultural productivity<br>▪ Legal protection of private property<br>▪ Access to foreign resources<br>▪ Accumulation of capital
 - KC-5.1.I.C (Humans and the Environment): The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor.
 
 **Expected evidence terms.** coal, enclosure acts, capital, Glorious Revolution, patent system, canals, Royal Society, putting-out system, steam engine, geographic advantages, factory system, Manchester, Luddites, Chartism, child labor, Factory Acts, urbanization, working conditions, standard of living.
@@ -673,7 +673,7 @@ Strong answer checklist: Describe two specific changes from domestic to factory 
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How industrialization spread to Europe, North America, and Japan — and why colonial relationships ensured it did NOT spread to most of Asia, Africa, and Latin America
 
 **College Board key concepts.**
-- KC-5.1.II.B (Technology and Innovation): The rapid development of steam-powered industrial production in European countries and the United States contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined. Illustrative examples: Shipbuilding in India and Southeast Asia, Iron works in India, Textile production in India and Egypt.
+- KC-5.1.II.B (Technology and Innovation): The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined. Illustrative examples: Shipbuilding in India and Southeast Asia, Iron works in India, Textile production in India and Egypt.
 - KC-5.1.I.D (Technology and Innovation): As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan.
 
 **Expected evidence terms.** Meiji Restoration, Iwakura Mission, zaibatsu, state-led industrialization, protective tariffs, transcontinental railroad, Lowell mills, Ruhr valley, fukoku kyōhei, deindustrialization, India textile industry, Treaty of Balta Liman, Muhammad Ali, comparative advantage, raw material supplier, political sovereignty, dependency, unequal treaties.
@@ -713,7 +713,7 @@ Strong answer checklist: Describe the specific labor system, who worked, under w
 - KC-5.1.V.C (Governance): As the influence of the Industrial Revolution grew, a small number of states and governments promoted their own state-sponsored visions of industrialization. Illustrative examples: Muhammad Ali’s development of a cotton textile industry in Egypt.
 - KC-5.2.II.A (Governance): The expansion of U.S. and European influence in Asia led to internal reform in Japan that supported industrialization and led to the growing regional power of Japan in the Meiji Era.
 - KC-5.1.VI.A (Social Interactions and Organization): New social classes, including the middle class and the industrial working class, developed.
-- KC-5.1.VI.B (Social Interactions and Organization): While women and often children in working-class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development.
+- KC-5.1.VI.B (Social Interactions and Organization): While women and often children in working class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development.
 - KC-5.1.VI.C (Social Interactions and Organization): The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth.
 
 **Expected evidence terms.** bourgeoisie, proletariat, surplus value, means of production, class conflict, Communist Manifesto, Das Kapital, liberalism, utopian socialism, Chartism, Reform Acts, Factory Acts, Bismarck social insurance, health insurance, old-age pension, women's suffrage, Seneca Falls, Wollstonecraft, natural rights, domestic femininity.
@@ -732,7 +732,7 @@ Strong answer checklist: Compare British parliamentary reform and German social 
 
 **College Board key concepts.**
 - KC-5.1.III.A (Economic Systems): Western European countries began abandoning mercantilism and adopting free trade policies, partly in response to the growing acceptance of Adam Smith’s theories of laissez-faire capitalism and free markets.
-- KC-5.1.III.B (Economic Systems): The global nature of trade and production contributed to the proliferation of large-scale transnational businesses that relied on new practices in banking and finance. Illustrative examples: Hong Kong and Shanghai Banking Corporation (HSBC), Unilever, based in England and the Netherlands and operating in British West Africa and the Belgian Congo, Stock markets, Limited-liability corporations.
+- KC-5.1.III.B (Economic Systems): The global nature of trade and production contributed to the proliferation of large-scale transnational businesses that relied on new practices in banking and finance. Illustrative examples: Hong Kong and Shanghai Banking Corporation (HSBC), Unilever based in England and the Netherlands and operating in British West Africa and the Belgian Congo, Stock markets, Limited-liability corporations.
 - KC-5.1 (Economic Systems): The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.
 
 **Expected evidence terms.** joint-stock company, limited liability, Companies Act 1862, stock exchange, London Stock Exchange, New York Stock Exchange, investment bank, House of Morgan, Deutsche Bank, dividend, comparative advantage, Corn Laws, Anti-Corn Law League, gold standard, economic imperialism, Ottoman Public Debt Administration, Latin American debt dependency, treaty ports, extraterritoriality, informal empire.
@@ -771,7 +771,7 @@ Strong answer checklist: Explain the structural connection between industrial ca
 
 **College Board key concepts.**
 - KC-5.1.VI.A (Social Interactions and Organization): New social classes, including the middle class and the industrial working class, developed.
-- KC-5.1.VI.B (Social Interactions and Organization): While women and often children in working-class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development.
+- KC-5.1.VI.B (Social Interactions and Organization): While women and often children in working class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development.
 - KC-5.1.VI.C (Social Interactions and Organization): The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth.
 
 **Expected evidence terms.** middle class, industrial working class, bourgeoisie, proletariat, wage labor, factory system, social hierarchy, standard of living, urbanization, tenement, cholera, typhoid, public health, infrastructure, separate spheres, domesticity, wage-earning.
@@ -828,11 +828,11 @@ Strong answer checklist: State a defensible position on the claim. Support it wi
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Compare processes by which state power shifted in various parts of the world from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.2.I.A (Governance): States strengthened existing colonies and established direct control over territories previously held by non-state entities. Illustrative examples: King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
-- KC-5.2.I.B (Governance): European states, the United States, and Japan acquired territories in Asia and the Pacific while older Spanish and Portuguese influence declined. Illustrative examples: King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
-- KC-5.2.I.C (Governance): European states used warfare and diplomacy to establish empires in Africa. Illustrative examples: King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
-- KC-5.2.I.D (Governance): Europeans established settler colonies in some parts of their empires. Illustrative examples: King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
-- KC-5.2.II.B (Governance): The United States, Russia, and Japan expanded into neighboring territories. Illustrative examples: King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
+- KC-5.2.I.A (Governance): Some states with existing colonies strengthened their control over those colonies and in some cases assumed direct control over colonies previously held by non-state entities. Illustrative examples: Shift from the private ownership of the Congo by King Leopold II to the Belgium government, Shift from the Dutch East India Company to Dutch government control in Indonesia and Southeast Asia.
+- KC-5.2.I.B (Governance): European states as well as the United States and Japan acquired territories throughout Asia and the Pacific, while Spanish and Portuguese influence declined.
+- KC-5.2.I.C (Governance): Many European states used both warfare and diplomacy to expand their empires in Africa. Illustrative examples: Britain in West Africa, Belgium in the Congo, French in West Africa.
+- KC-5.2.I.D (Governance): Europeans established settler colonies in some parts of their empires. Illustrative examples: New Zealand.
+- KC-5.2.II.B (Governance): The United States, Russia, and Japan expanded their land holdings by conquering and settling neighboring territories.
 
 **Expected evidence terms.** King Leopold II and the Belgian Congo, British and French rule in West Africa, Japanese expansion into East Asia, Russian and United States continental expansion.
 
@@ -849,9 +849,9 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain how and why internal and external factors influenced state building from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.3.III.D (Governance): Nationalism and challenges to imperial authority contributed to anticolonial movements. Illustrative examples: Yaa Asantewaa and the War of the Golden Stool, The Indian Rebellion of 1857, Samory Touré in West Africa, The Mahdist state and the Xhosa Cattle-Killing movement.
-- KC-5.2.II.C (Governance): Anti-imperial resistance took direct and indirect forms and sometimes produced new states on imperial peripheries. Illustrative examples: Yaa Asantewaa and the War of the Golden Stool, The Indian Rebellion of 1857, Samory Touré in West Africa, The Mahdist state and the Xhosa Cattle-Killing movement.
-- KC-5.3.III.E (Governance): Discontent with imperial rule led to rebellions, some influenced by religious ideas. Illustrative examples: Yaa Asantewaa and the War of the Golden Stool, The Indian Rebellion of 1857, Samory Touré in West Africa, The Mahdist state and the Xhosa Cattle-Killing movement.
+- KC-5.3.III.D (Governance): Increasing questions about political authority and growing nationalism contributed to anticolonial movements.
+- KC-5.2.II.C (Governance): Anti-imperial resistance took various forms, including direct resistance within empires and the creation of new states on the peripheries. Illustrative examples: Túpac Amaru II’s rebellion in Peru, Samory Touré’s military battles in West Africa, Yaa Asantewaa War in West Africa, 1857 rebellion in India, Establishment of independent states in the Balkans, Sokoto Caliphate in modern-day Nigeria, Cherokee Nation, Zulu Kingdom.
+- KC-5.3.III.E (Governance): Increasing discontent with imperial rule led to rebellions, some of which were influenced by religious ideas. Illustrative examples: Ghost Dance in the U.S., Xhosa Cattle-Killing Movement in Southern Africa, Mahdist wars in Sudan.
 
 **Expected evidence terms.** Yaa Asantewaa and the War of the Golden Stool, The Indian Rebellion of 1857, Samory Touré in West Africa, The Mahdist state and the Xhosa Cattle-Killing movement.
 
@@ -868,7 +868,7 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain how environmental factors contributed to the development of the global economy from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.1.II.A (Humans and the Environment): Demand for raw materials and food created export economies specializing in natural resources, foodstuffs, and industrial crops; profits were used to purchase finished goods. Illustrative examples: Cotton production in Egypt, Rubber extraction in the Amazon and Congo, Palm oil in West Africa, Guano, meat, and diamond export economies.
+- KC-5.1.II.A (Humans and the Environment): The need for raw materials for factories and increased food supplies for the growing population in urban centers led to the growth of export economies around the world that specialized in commercial extraction of natural resources and the production of food and industrial crops. The profits from these raw materials were used to purchase finished goods. Illustrative examples: Cotton production in Egypt, Rubber extraction in the Amazon and the Congo basin, The palm oil trade in West Africa, The guano industries in Peru and Chile, Meat from Argentina and Uruguay, Diamonds from Africa.
 
 **Expected evidence terms.** Cotton production in Egypt, Rubber extraction in the Amazon and Congo, Palm oil in West Africa, Guano, meat, and diamond export economies.
 
@@ -885,8 +885,8 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain how economic factors contributed to the development of the global economy from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.2.I.E (Economic Systems): Industrialized states and businesses practiced economic imperialism in Asia and Latin America. Illustrative examples: British and French pressure on China through the Opium Wars, British investment in the port of Buenos Aires, Cotton exports from South Asia and Egypt, Palm oil and copper commodity chains.
-- KC-5.1.II.C (Economic Systems): Global commodity trade was organized to benefit merchants and companies in Europe and the United States. Illustrative examples: British and French pressure on China through the Opium Wars, British investment in the port of Buenos Aires, Cotton exports from South Asia and Egypt, Palm oil and copper commodity chains.
+- KC-5.2.I.E (Economic Systems): Industrialized states and businesses within those states practiced economic imperialism primarily in Asia and Latin America. Illustrative examples: Britain and France expanding their influence in China through the Opium Wars, The construction of the Port of Buenos Aires with the support of British firms.
+- KC-5.1.II.C (Economic Systems): Trade in some commodities was organized in a way that gave merchants and companies based in Europe and the U.S. a distinct economic advantage. Illustrative examples: Opium produced in the Middle East or South Asia and exported to China, Cotton grown in South Asia and Egypt and exported to Great Britain and other European countries, Palm oil produced in sub-Saharan Africa and exported to European countries, Copper extracted in Chile.
 
 **Expected evidence terms.** British and French pressure on China through the Opium Wars, British investment in the port of Buenos Aires, Cotton exports from South Asia and Egypt, Palm oil and copper commodity chains.
 
@@ -903,10 +903,10 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain how environmental and economic factors contributed to varied patterns of migration from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.4.I (Humans and the Environment / Economic Systems): Demographic changes challenged established living patterns. Illustrative examples: Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.
-- KC-5.4.I.B (Humans and the Environment / Economic Systems): New transportation encouraged internal, external, urban, and return migration. Illustrative examples: Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.
-- KC-5.4.II.A (Humans and the Environment / Economic Systems): Many migrants relocated freely in search of work. Illustrative examples: Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.
-- KC-5.4.II.B (Humans and the Environment / Economic Systems): Global capitalism relied on coerced and semicoerced migration, including enslavement, indenture, and convict labor. Illustrative examples: Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.
+- KC-5.4.I (Humans and the Environment / Economic Systems): Migration in many cases was influenced by changes in demographics in both industrialized and unindustrialized societies that presented challenges to existing patterns of living.
+- KC-5.4.I.B (Humans and the Environment / Economic Systems): Because of the nature of new modes of transportation, both internal and external migrants increasingly relocated to cities. This pattern contributed to the significant global urbanization of the 19th century. The new methods of transportation also allowed for many migrants to return, periodically or permanently, to their home societies. Illustrative examples: Japanese agricultural workers in the Pacific, Lebanese merchants in the Americas, Italian industrial workers in Argentina.
+- KC-5.4.II.A (Humans and the Environment / Economic Systems): Many individuals chose freely to relocate, often in search of work. Illustrative examples: Irish to the United States, British engineers and geologists to South Asia and Africa.
+- KC-5.4.II.B (Humans and the Environment / Economic Systems): The new global capitalist economy continued to rely on coerced and semicoerced labor migration, including enslavement Chinese and Indian indentured servitude, and convict labor.
 
 **Expected evidence terms.** Irish and Italian migration to the Americas, Chinese and Indian indentured labor, Convict labor, Japanese agricultural workers and Lebanese merchant networks.
 
@@ -923,9 +923,9 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain how and why new patterns of migration affected society from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.4.III.A (Social Interactions and Organization): Because many migrants were male, women often took on new roles in home societies. Illustrative examples: Chinese communities across the Pacific and Americas, Indian communities in Africa, the Caribbean, and Southeast Asia, Irish and Italian migration, The Chinese Exclusion Act and White Australia policy.
-- KC-5.4.III.B (Social Interactions and Organization): Migrants created ethnic enclaves and transplanted culture into new environments. Illustrative examples: Chinese communities across the Pacific and Americas, Indian communities in Africa, the Caribbean, and Southeast Asia, Irish and Italian migration, The Chinese Exclusion Act and White Australia policy.
-- KC-5.4.III.C (Social Interactions and Organization): Migrants faced prejudice and states adopted restrictive policies. Illustrative examples: Chinese communities across the Pacific and Americas, Indian communities in Africa, the Caribbean, and Southeast Asia, Irish and Italian migration, The Chinese Exclusion Act and White Australia policy.
+- KC-5.4.III.A (Social Interactions and Organization): Migrants tended to be male, leaving women to take on new roles in the home society that had been formerly occupied by men.
+- KC-5.4.III.B (Social Interactions and Organization): Migrants often created ethnic enclaves in different parts of the world that helped transplant their culture into new environments. Illustrative examples: Chinese in Southeast Asia, the Caribbean, South America, and North America, Indians in East and Southern Africa, the Caribbean, and Southeast Asia, Irish in North America, Italians in North and South America.
+- KC-5.4.III.C (Social Interactions and Organization): Receiving societies did not always embrace immigrants, as seen in the various degrees of ethnic and racial prejudice and the ways states attempted to regulate the increased flow of people across their borders. Illustrative examples: Chinese Exclusion Act, White Australia policy.
 
 **Expected evidence terms.** Chinese communities across the Pacific and Americas, Indian communities in Africa, the Caribbean, and Southeast Asia, Irish and Italian migration, The Chinese Exclusion Act and White Australia policy.
 
@@ -942,10 +942,10 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **Where this sits.** Unit 6: Consequences of Industrialization, c. 1750 to c. 1900. Explain the relative significance of the effects of imperialism from 1750 to 1900.
 
 **College Board key concepts.**
-- KC-5.1 (Unit 6 Synthesis): Industrial capitalism expanded manufacturing, commodity demand, and uneven gains in standards of living. Illustrative examples: Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.
-- KC-5.2 (Unit 6 Synthesis): Industrial states expanded empires and created new transoceanic relationships. Illustrative examples: Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.
-- KC-5.3 (Unit 6 Synthesis): Revolution and rebellion contributed to new states and challenges to authority. Illustrative examples: Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.
-- KC-5.4 (Unit 6 Synthesis): Empires and global capitalism changed the patterns and scale of migration. Illustrative examples: Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.
+- KC-5.1 (Unit 6 Synthesis): The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.
+- KC-5.2 (Unit 6 Synthesis): As states industrialized, they also expanded existing overseas empires and established new colonies and transoceanic relationships.
+- KC-5.3 (Unit 6 Synthesis): The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.
+- KC-5.4 (Unit 6 Synthesis): As a result of the emergence of transoceanic empires and a global capitalist economy, migration patterns changed dramatically, and the numbers of migrants increased significantly.
 
 **Expected evidence terms.** Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.
 
@@ -964,7 +964,7 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Governance (GOV) (Governance): A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.
 - Unit 7: Learning Objective A (Learning Objective): Explain how internal and external factors contributed to change in various states after 1900.
-- KC-6.2.I (Governance): The West dominated the global political order at the beginning of the 20th century, but both land-based and maritime empires gave way to new states by the century's end.
+- KC-6.2.I (Governance): The West dominated the global political order at the beginning of the 20th century, but both land-based and maritime empires gave way to new states by the century’s end.
 - KC-6.2.I.A (Governance): The older, land-based Ottoman, Russian, and Qing empires collapsed due to a combination of internal and external factors. These changes in Russia eventually led to communist revolution.
 - KC-6.2.II.D (Governance): States around the world challenged the existing political and social order, including the Mexican Revolution that arose as a result of political crisis.
 
@@ -1024,8 +1024,8 @@ Strong answer checklist: Name at least three specific technologies as evidence. 
 **College Board key concepts.**
 - Thematic Focus, Economic Systems (ECN) (Economic Systems): As societies develop, they affect and are affected by the ways that they produce, exchange, and consume goods and services.
 - Unit 7: Learning Objective D (Learning Objective): Explain how different governments responded to economic crisis after 1900.
-- KC-6.3.I.B (Economic Systems): Following World War I and the onset of the Great Depression, governments began to take a more active role in economic life. Illustrative examples: Government intervention in the economy:, The New Deal, The fascist corporatist economy, Governments with strong popular support in Brazil and Mexico.
-- KC-6.3.I.A.i (Economic Systems): In the Soviet Union, the government controlled the national economy through the Five-Year Plans, often implementing repressive policies, with negative repercussions for the population.
+- KC-6.3.I.B (Economic Systems): Following World War I and the onset of the Great Depression, governments began to take a more active role in economic life. Illustrative examples: The New Deal, The fascist corporatist economy, Governments with strong popular support in Brazil and Mexico.
+- KC-6.3.I.A.i (Economic Systems): In the Soviet Union, the government controlled the national economy through the Five Year Plans, often implementing repressive policies, with negative repercussions for the population.
 
 **Expected evidence terms.** Great Depression, stock market crash, unemployment, global trade, Five-Year Plans, rapid industrialization, collectivization, forced labor, Holodomor, repressive policies, New Deal, Social Security Act, WPA, corporatist economy, Mussolini, autarky, Vargas, import substitution industrialization, Cárdenas, Pemex, oil nationalization, land reform.
 
@@ -1044,7 +1044,7 @@ Strong answer checklist: Use at least two illustrative examples with specific ev
 **College Board key concepts.**
 - Thematic Focus, Governance (GOV) (Governance): A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.
 - Unit 7: Learning Objective E (Learning Objective): Explain the continuities and changes in territorial holdings from 1900 to the present.
-- KC-6.2.I.B (Governance): Between the two world wars, Western and Japanese imperial states predominantly maintained control over colonial holdings; in some cases, they gained additional territories through conquest or treaty settlement and in other cases faced anti-imperial resistance. Illustrative examples: Territorial gains:, Transfer of former German colonies to Great Britain and France under the system of League of Nations mandates, Manchukuo / Greater East Asia Co-Prosperity Sphere, Anti-imperial resistance:, Indian National Congress, West African resistance (strikes/congresses) to French rule.
+- KC-6.2.I.B (Governance): Between the two world wars, Western and Japanese imperial states predominantly maintained control over colonial holdings; in some cases, they gained additional territories through conquest or treaty settlement and in other cases faced anti-imperial resistance. Illustrative examples: Transfer of former German colonies to Great Britain and France under the system of League of Nations mandates, Manchukuo/Greater East Asia Co-Prosperity Sphere, Indian National Congress, West African resistance (strikes/congresses) to French rule.
 
 **Expected evidence terms.** League of Nations mandates, German East Africa, German South West Africa, Sykes-Picot Agreement, Syria, Lebanon, Iraq, Manchukuo, Greater East Asia Co-Prosperity Sphere, self-governance, Indian National Congress, Jallianwala Bagh massacre, mass protest, self-determination, West African resistance, strikes, congresses, French colonial rule, nationalism, anti-imperial resistance.
 
@@ -1082,8 +1082,8 @@ Strong answer checklist: Explain how Hitler turned nationalist resentment and th
 **College Board key concepts.**
 - Thematic Focus, Governance (GOV) (Governance): A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.
 - Unit 7: Learning Objective G (Learning Objective): Explain similarities and differences in how governments used a variety of methods to conduct war.
-- KC-6.2.IV.A.ii (Governance): World War II was a total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies or former colonies) for the purpose of waging war. Governments used ideologies, including fascism and communism, to mobilize all of their state's resources for war and, in the case of totalitarian states, to repress basic freedoms and dominate many aspects of daily life during the course of the conflicts and beyond. Illustrative examples: Western democracies mobilizing for war:, Great Britain under Winston Churchill, United States under Franklin Roosevelt, Totalitarian states mobilizing for war:, Germany under Adolf Hitler, USSR under Joseph Stalin.
-- KC-6.1.III.C.ii (Technology and Innovation): New military technology and new tactics, including the atomic bomb, fire-bombing, and the waging of "total war" led to increased levels of wartime casualties.
+- KC-6.2.IV.A.ii (Governance): World War II was a total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies or former colonies) for the purpose of waging war. Governments used ideologies, including fascism and communism to mobilize all of their state’s resources for war and, in the case of totalitarian states, to repress basic freedoms and dominate many aspects of daily life during the course of the conflicts and beyond. Illustrative examples: Great Britain under Winston Churchill, United States under Franklin Roosevelt, Germany under Adolf Hitler, USSR under Joseph Stalin.
+- KC-6.1.III.C.ii (Technology and Innovation): New military technology and new tactics, including the atomic bomb, fire-bombing, and the waging of “total war” led to increased levels of wartime casualties.
 
 **Expected evidence terms.** total war, political propaganda, media, intensified nationalism, Winston Churchill, Franklin Roosevelt, Lend-Lease, Joseph Goebbels, Great Patriotic War, repress basic freedoms, atomic bomb, fire-bombing, wartime casualties, Hiroshima, Nagasaki, Dresden, Tokyo, civilian targets, military technology.
 
@@ -1102,7 +1102,7 @@ Strong answer checklist: Name specific new technology and tactics: the atomic bo
 **College Board key concepts.**
 - Thematic Focus, Social Interactions and Organization (SIO) (Social Interactions and Organization): The process by which societies group their members and the norms that govern the interactions between these groups and between individuals influence political, economic, and cultural institutions and organization.
 - Unit 7: Learning Objective H (Learning Objective): Explain the various causes and consequences of mass atrocities in the period from 1900 to the present.
-- KC-6.2.III.C (Social Interactions and Organization): The rise of extremist groups in power led to the attempted destruction of specific populations, notably the Nazi killing of the Jews in the Holocaust during World War II, and to other atrocities, acts of genocide, or ethnic violence. Illustrative examples: Genocide, ethnic violence, or attempted destruction of specific populations:, Armenians in the Ottoman Empire during and after World War I, Cambodia during the late 1970s, Tutsi in Rwanda in the 1990s, Ukraine in the Soviet Union in the 1920s and 1930s.
+- KC-6.2.III.C (Social Interactions and Organization): The rise of extremist groups in power led to the attempted destruction of specific populations, notably the Nazi killing of the Jews in the Holocaust during World War II, and to other atrocities, acts of genocide, or ethnic violence. Illustrative examples: Armenians in the Ottoman Empire during and after World War I, Cambodia during the late 1970s, Tutsi in Rwanda in the 1990s, Ukraine in the Soviet Union in the 1920s and 1930s.
 
 **Expected evidence terms.** extremist groups, attempted destruction, Holocaust, Armenian Genocide, Holodomor, Khmer Rouge, Tutsi, genocide, ethnic violence, dehumanization, cultural trauma, Genocide Convention, International Criminal Court, ICC, reconciliation, human rights, international law, survivors, consequences, prevention.
 
@@ -1122,16 +1122,15 @@ Strong answer checklist: Name at least two specific consequences with evidence. 
 - Unit 7: Learning Objective I (Learning Objective): Explain the relative significance of the causes of global conflict in the period 1900 to the present.
 - KC-6.1 (Technology and Innovation): Rapid advances in science and technology altered the understanding of the universe and the natural world and led to advances in communication, transportation, industry, agriculture, and medicine.
 - KC-6.2 (Governance): Peoples and states around the world challenged the existing political and social order in varying ways, leading to unprecedented worldwide conflicts.
-- KC-6.2.I (Governance): The West dominated the global political order at the beginning of the 20th century, but both land-based and maritime empires gave way to new states by the century's end.
+- KC-6.2.I (Governance): The West dominated the global political order at the beginning of the 20th century, but both land-based and maritime empires gave way to new states by the century’s end.
 - KC-6.2.I.A (Governance): The older, land-based Ottoman, Russian, and Qing empires collapsed due to a combination of internal and external factors. These changes in Russia eventually led to communist revolution.
 - KC-6.2.II.D (Governance): States around the world challenged the existing political and social order, including the Mexican Revolution that arose as a result of political crisis.
-- KC-6.2.IV (Governance): Global conflicts were influenced by economic, political, and social factors.
 - KC-6.2.IV.B.i (Governance): The causes of World War I included imperialist expansion and competition for resources. In addition, territorial and regional conflicts combined with a flawed alliance system and intense nationalism to escalate the tensions into global conflict.
 - KC-6.2.IV.B.ii (Governance): The causes of World War II included the unsustainable peace settlement after World War I, the global economic crisis engendered by the Great Depression, continued imperialist aspirations, and especially the rise to power of fascist and totalitarian regimes that resulted in the aggressive militarism of Nazi Germany under Adolf Hitler.
 - KC-6.2.IV.A.i (Governance): World War I was the first total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies) for the purpose of waging war.
-- KC-6.2.IV.A.ii (Governance): World War II was a total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies or former colonies) for the purpose of waging war. Governments used ideologies, including fascism and communism, to mobilize all of their state's resources for war and, in the case of totalitarian states, to repress basic freedoms and dominate many aspects of daily life during the course of the conflicts and beyond.
+- KC-6.2.IV.A.ii (Governance): World War II was a total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies or former colonies) for the purpose of waging war. Governments used ideologies, including fascism and communism to mobilize all of their state’s resources for war and, in the case of totalitarian states, to repress basic freedoms and dominate many aspects of daily life during the course of the conflicts and beyond.
 - KC-6.1.III.C.i (Technology and Innovation): New military technology led to increased levels of wartime casualties.
-- KC-6.1.III.C.ii (Technology and Innovation): New military technology and new tactics, including the atomic bomb, fire-bombing, and the waging of "total war" led to increased levels of wartime casualties.
+- KC-6.1.III.C.ii (Technology and Innovation): New military technology and new tactics, including the atomic bomb, fire-bombing, and the waging of “total war” led to increased levels of wartime casualties.
 - KC-6.2.III.C (Governance): The rise of extremist groups in power led to the attempted destruction of specific populations, notably the Nazi killing of the Jews in the Holocaust during World War II, and to other atrocities, acts of genocide, or ethnic violence.
 
 **Expected evidence terms.** imperialist expansion, nationalism, alliance system, empire collapse, Great Depression, Versailles settlement, fascist regimes, totalitarian, new military technology, relative significance, underlying cause, immediate trigger, necessary condition, enabling condition, most significant because, more significant than, without which, defensible claim, specific evidence.
@@ -1172,7 +1171,7 @@ Strong answer checklist: Open with a sentence that explains what broader histori
 - Thematic Focus, Cultural Developments and Interactions (CDI) (Cultural Developments and Interactions): The development of ideas, beliefs, and religions illustrates how groups in society view themselves, and the interactions of societies and their beliefs often have political, social, and cultural implications.
 - Unit 8: Learning Objective B (Learning Objective): Explain the causes and effects of the ideological struggle of the Cold War.
 - KC-6.2.IV.C.ii (Cultural Developments and Interactions): The global balance of economic and political power shifted during and after World War II and rapidly evolved into the Cold War. The democracy of the United States and the authoritarian communist Soviet Union emerged as superpowers, which led to ideological conflict and a power struggle between capitalism and communism across the globe.
-- KC-6.2.V.B (Cultural Developments and Interactions): Groups and individuals, including the Non-Aligned Movement, opposed and promoted alternatives to the existing economic, political, and social orders. Illustrative examples: Non-Aligned Movement: Sukarno in Indonesia, Non-Aligned Movement: Kwame Nkrumah in Ghana.
+- KC-6.2.V.B (Cultural Developments and Interactions): Groups and individuals, including the Non-Aligned Movement, opposed and promoted alternatives to the existing economic, political, and social orders. Illustrative examples: Sukarno in Indonesia, Kwame Nkrumah in Ghana.
 
 **Expected evidence terms.** Cold War, superpower, liberal capitalism, Marxism-Leninism, Truman Doctrine, Marshall Plan, containment, NATO, Warsaw Pact, Iron Curtain, nuclear arms race, Korean War, Vietnam War, proxy conflict, ideological conflict, Non-Aligned Movement, Bandung Conference, Sukarno, Kwame Nkrumah, Nehru, anti-colonialism, self-determination, sovereignty, causation, ideological struggle, capitalism, communism.
 
@@ -1191,7 +1190,7 @@ Strong answer checklist: Open with the cause: how did WWII produce rival superpo
 **College Board key concepts.**
 - Thematic Focus, Governance (GOV) (Governance): Governance
 - Unit 8: Learning Objective C (Learning Objective): Compare the ways in which the United States and the Soviet Union sought to maintain influence over the course of the Cold War.
-- KC-6.2.IV.D (Governance): The Cold War produced new military alliances, including NATO and the Warsaw Pact, and led to nuclear proliferation and proxy wars between and within postcolonial states in Latin America, Africa, and Asia. Illustrative examples: Proxy wars: Korean War, Proxy wars: Angolan Civil War, Proxy wars: Sandinista–Contras conflict in Nicaragua.
+- KC-6.2.IV.D (Governance): The Cold War produced new military alliances, including NATO and the Warsaw Pact, and led to nuclear proliferation and proxy wars between and within postcolonial states in Latin America, Africa, and Asia. Illustrative examples: Korean War, Angolan Civil War, Sandinista-Contras conflict in Nicaragua.
 
 **Expected evidence terms.** NATO, Warsaw Pact, collective defense, Brezhnev Doctrine, nuclear proliferation, Mutually Assured Destruction, MAD, deterrence, nuclear umbrella, military-industrial complex, arms race, thermonuclear, Cold War, superpower, influence, proxy war, Korean War, Angolan Civil War, Sandinista, Contras, Nicaragua, MPLA, UNITA, Cuba, arms transfer, military advisor, client state, comparison, similarity, difference, postcolonial.
 
@@ -1214,7 +1213,7 @@ Strong answer checklist: Open with a similarity: both superpowers used arms, adv
 - KC-6.3.I.A.ii (Economic Systems): In communist China, the government controlled the national economy through the Great Leap Forward, often implementing repressive policies, with negative repercussions for the population.
 - Thematic Focus, Social Interactions and Organization (SIO) (Social Interactions and Organization): Social Interactions and Organization
 - Unit 8: Learning Objective E (Learning Objective): Explain the causes and effects of movements to redistribute economic resources.
-- KC-6.2.II.D.i (Social Interactions and Organization): Movements to redistribute land and resources developed within states in Africa, Asia, and Latin America, sometimes advocating communism or socialism. Illustrative examples: Land and resource redistribution: Communist Revolution for Vietnamese independence, Land and resource redistribution: Mengistu Haile Mariam in Ethiopia, Land and resource redistribution: Land reform in Kerala and other states within India, Land and resource redistribution: White Revolution in Iran.
+- KC-6.2.II.D.i (Social Interactions and Organization): Movements to redistribute land and resources developed within states in Africa, Asia, and Latin America, sometimes advocating communism or socialism. Illustrative examples: Communist Revolution for Vietnamese independence, Mengistu Haile Mariam in Ethiopia, Land reform in Kerala and other states within India, White Revolution in Iran.
 
 **Expected evidence terms.** redistribution, land reform, communism, socialism, Viet Minh, Ho Chi Minh, Vietnam, Mengistu, Derg, Ethiopia, Kerala, India, White Revolution, Iran, Shah, peasant, nationalization, colonial, tenant farmer, revolution, Chinese Communist Party, CCP, Kuomintang, KMT, Mao Zedong, People's Republic of China, Long March, Japanese aggression, warlordism, internal tension, Great Leap Forward, collectivization, people's commune, backyard steel furnace, production quota, Great Chinese Famine, Peng Dehuai, repressive policies, communist revolution, causation.
 
@@ -1234,8 +1233,8 @@ Strong answer checklist: Name both causes explicitly, internal tension (warlordi
 - Thematic Focus, Governance (GOV) (Governance): Governance
 - Unit 8: Learning Objective F (Learning Objective): Compare the processes by which various peoples pursued independence after 1900.
 - KC-6.2.II.A (Governance): Nationalist leaders and parties in Asia and Africa sought varying degrees of autonomy within or independence from imperial rule. Illustrative examples: Indian National Congress, Ho Chi Minh in French Indochina (Vietnam), Kwame Nkrumah in British Gold Coast (Ghana), Gamal Abdel Nasser in Egypt.
-- KC-6.2.II.B (Governance): After the end of World War II, some colonies negotiated their independence, while others achieved independence through armed struggle. Illustrative examples: Negotiated independence: India from the British Empire, Negotiated independence: The Gold Coast from the British Empire, Negotiated independence: French West Africa, Independence through armed struggle: Algeria from the French empire, Independence through armed struggle: Angola from the Portuguese empire, Independence through armed struggle: Vietnam from the French empire.
-- KC-6.2.I.C (Governance): Regional, religious, and ethnic movements challenged colonial rule and inherited imperial boundaries. Some of these movements advocated for autonomy. Illustrative examples: Muslim League in British India, Québécois separatist movement in Canada, Biafra secessionist movement in Nigeria.
+- KC-6.2.II.B (Governance): Regional, religious, and ethnic movements challenged colonial rule and inherited imperial boundaries. Some of these movements advocated for autonomy. Illustrative examples: Muslim League in British India, Québécois separatist movement in Canada, Biafra secessionist movement in Nigeria.
+- KC-6.2.I.C (Governance): After the end of World War II, some colonies negotiated their independence, while others achieved independence through armed struggle. Illustrative examples: India from the British Empire, The Gold Coast from the British Empire, French West Africa, Algeria from the French empire, Angola from the Portuguese empire, Vietnam from the French empire.
 
 **Expected evidence terms.** Indian National Congress, INC, Gandhi, Nehru, Salt March, nonviolent resistance, Ho Chi Minh, Viet Minh, Nkrumah, CPP, Positive Action, Gold Coast, Ghana, Nasser, Suez Canal, Muslim League, Jinnah, Pakistan, Partition, Québécois, Biafra, Igbo, decolonization, imperial boundaries, nationalism, negotiated independence, armed struggle, India, French West Africa, Algeria, FLN, Angola, Vietnam, settler colony, colonial dependency, process, comparison, similarity, difference, factor, pied-noir, Labour government, Cold War.
 
@@ -1258,7 +1257,7 @@ Strong answer checklist: Open with a similarity: both paths required organized m
 - KC-6.2.III.A.ii (Governance): The redrawing of political boundaries in some cases led to conflict as well as population displacement and/or resettlements, including those related to the Partition of India and the creation of the state of Israel.
 - Thematic Focus, Economic Systems (ECN) (Economic Systems): Economic Systems
 - Unit 8: Learning Objective H (Learning Objective): Explain the economic changes and continuities resulting from the process of decolonization.
-- KC-6.3.I.C (Economic Systems): In newly independent states after World War II, governments often took on a strong role in guiding economic life to promote development. Illustrative examples: Gamal Abdel Nasser's promotion of economic development in Egypt, Indira Gandhi's economic policies in India, Julius Nyerere's modernization in Tanzania, Sirimavo Bandaranaike's economic policies in Sri Lanka.
+- KC-6.3.I.C (Economic Systems): In newly independent states after World War II, governments often took on a strong role in guiding economic life to promote development. Illustrative examples: Gamal Abdel Nasser’s promotion of economic development in Egypt, Indira Gandhi's economic policies in India, Julius Nyerere’s modernization in Tanzania, Sirimavo Bandaranaike’s economic policies in Sri Lanka.
 - KC-6.2.III.B (Economic Systems): The migration of former colonial subjects to imperial metropoles (the former colonizing country), usually in the major cities, maintained cultural and economic ties between the colony and the metropole even after the dissolution of empires. Illustrative examples: South Asians to Britain, Algerians to France, Filipinos to the United States.
 
 **Expected evidence terms.** Nasser, Egypt, Suez Canal, nationalization, Aswan Dam, Indira Gandhi, India, five-year plan, Nyerere, Tanzania, ujamaa, Arusha Declaration, Bandaranaike, Sri Lanka, Ceylon, state-led development, economic development, South Asians, Britain, Algerians, France, Filipinos, United States, migration, remittances, metropole, continuity, change, decolonization, Partition, Pakistan, Radcliffe Line, Israel, Palestine, UN Partition Plan, Nakba, Cambodia, Norodom Sihanouk, British Mandate, boundary redrawing, population displacement, colonial withdrawal, new state, refugee, Arab-Israeli War, intercommunal violence, demographic, territorial, nationalist.
@@ -1278,7 +1277,7 @@ Strong answer checklist: Explain the specific mechanism: not just that a new sta
 **College Board key concepts.**
 - Thematic Focus, Cultural Developments and Interactions (CDI) (Cultural Developments and Interactions): Cultural Developments and Interactions
 - Unit 8: Learning Objective I (Learning Objective): Explain various reactions to existing power structures in the period after 1900.
-- KC-6.2.V (Cultural Developments and Interactions): Although conflict dominated much of the 20th century, many individuals and groups, including states, opposed this trend. Some individuals and groups, however, intensified the conflicts.
+- KC-6.2.V (Cultural Developments and Interactions): Although conflict dominated much of the 20th century, many individuals and groups—including states—opposed this trend. Some individuals and groups, however, intensified the conflicts.
 - KC-6.2.V.A (Cultural Developments and Interactions): Groups and individuals challenged the many wars of the century, and some, such as Mohandas Gandhi, Martin Luther King Jr., and Nelson Mandela, promoted the practice of nonviolence as a way to bring about political change.
 - KC-6.2.V.C (Cultural Developments and Interactions): Militaries and militarized states often responded to the proliferation of conflicts in ways that further intensified conflict. Illustrative examples: Chile under Augusto Pinochet, Spain under Francisco Franco, Uganda under Idi Amin, The buildup of the military–industrial complex and weapons trading.
 - KC-6.2.V.D (Cultural Developments and Interactions): Some movements used violence against civilians in an effort to achieve political aims. Illustrative examples: Shining Path, Al-Qaeda.
@@ -1300,7 +1299,7 @@ Strong answer checklist: Use at least two categories (not two examples from the 
 **College Board key concepts.**
 - Thematic Focus, Governance (GOV) (Governance): Governance
 - Unit 8: Learning Objective J (Learning Objective): Explain the causes of the end of the Cold War.
-- KC-6.2.IV.E (Governance): Advances in U.S. military and technological development, the Soviet Union's costly and ultimately failed invasion of Afghanistan, and public discontent and economic weakness in communist countries led to the end of the Cold War and the collapse of the Soviet Union.
+- KC-6.2.IV.E (Governance): Advances in U.S. military and technological development, the Soviet Union’s costly and ultimately failed invasion of Afghanistan, and public discontent and economic weakness in communist countries led to the end of the Cold War and the collapse of the Soviet Union.
 
 **Expected evidence terms.** military, technological, sdi, strategic defense initiative, star wars, reagan, defense spending, arms race, afghanistan, mujahideen, invasion, withdrawal, stinger, cia, operation cyclone, casualties, drain, prestige, signal, eastern europe, satellite, mechanism, pressure, compound, interact, cold war, end, defense, casualt, discontent, economic, weakness, stagnation, shortages, gorbachev, glasnost, perestroika, reform, unintended, nationalism, soviet republic, berlin wall, solidarity, 1989, dissolution, collapse, soviet union, causes, most significant.
 
@@ -1341,7 +1340,7 @@ Strong answer checklist: Contextualization must describe a condition that PRECED
 **College Board key concepts.**
 - Thematic Focus, Technology and Innovation (TEC) (Technology and Innovation): Human adaptation and innovation have resulted in increased efficiency, comfort, and security, and technological advances have shaped human development and interactions with both intended and unintended consequences.
 - Unit 9: Learning Objective A (Learning Objective): Explain how the development of new technologies changed the world from 1900 to the present.
-- KC-6.1.I.A (Technology and Innovation): New modes of communication, including radio communication, cellular communication, and the internet, as well as transportation, including air travel and shipping containers, reduced the problem of geographic distance.
+- KC-6.1.I.A (Technology and Innovation): New modes of communication—including radio communication, cellular communication, and the internet—as well as transportation, including air travel and shipping containers, reduced the problem of geographic distance.
 - KC-6.1.I.D (Technology and Innovation): Energy technologies, including the use of petroleum and nuclear power, raised productivity and increased the production of material goods.
 - KC-6.1.III.B (Technology and Innovation): More effective forms of birth control gave women greater control over fertility, transformed reproductive practices, and contributed to declining rates of fertility in much of the world.
 - KC-6.1.I.B (Technology and Innovation): The Green Revolution and commercial agriculture increased productivity and sustained the earth’s growing population as it spread chemically and genetically modified forms of agriculture.
@@ -1365,7 +1364,7 @@ Strong answer checklist: Open with a clear claim about how technology changed th
 - Thematic Focus, Humans and the Environment (ENV) (Humans and the Environment): The environment shapes human societies, and as populations grow and change, these populations in turn shape their environments.
 - Unit 9: Learning Objective B (Learning Objective): Explain how environmental factors affected human populations over time.
 - KC-6.1.III (Humans and the Environment): Diseases, as well as medical and scientific developments, had significant effects on populations around the world.
-- KC-6.1.III.A (Humans and the Environment): Diseases associated with poverty persisted while other diseases emerged as new epidemics and threats to human populations, in some cases leading to social disruption. These outbreaks spurred technological and medical advances. Some diseases occurred at higher incidence merely because of increased longevity. Illustrative examples: <strong>Diseases associated with poverty:</strong>, Malaria, Tuberculosis, Cholera, <strong>Emergent epidemic diseases:</strong>, 1918 influenza pandemic, Ebola, HIV/AIDS, <strong>Diseases associated with increased longevity:</strong>, Heart disease, Alzheimer’s disease.
+- KC-6.1.III.A (Humans and the Environment): Diseases associated with poverty persisted while other diseases emerged as new epidemics and threats to human populations, in some cases leading to social disruption. These outbreaks spurred technological and medical advances. Some diseases occurred at higher incidence merely because of increased longevity. Illustrative examples: Malaria, Tuberculosis, Cholera, 1918 influenza pandemic, Ebola, HIV/AIDS, Heart disease, Alzheimer’s disease.
 
 **Expected evidence terms.** malaria, tuberculosis, cholera, 1918 influenza, Ebola, HIV/AIDS, sanitation, density, crowding, poverty, travel, social disruption, medical advances, environmental, causation, population, heart disease, Alzheimer, longevity, urbanization.
 
@@ -1405,8 +1404,8 @@ Strong answer checklist: Open with a clear claim about how human activity caused
 - Thematic Focus, Economic Systems (ECN) (Economic Systems): As societies develop, they affect and are affected by the ways that they produce, exchange, and consume goods and services.
 - Unit 9: Learning Objective D (Learning Objective): Explain the continuities and changes in the global economy from 1900 to present.
 - KC-6.3.I.D (Economic Systems): In a trend accelerated by the end of the Cold War, many governments encouraged free-market economic policies and promoted economic liberalization in the late 20th century. Illustrative examples: The United States under Ronald Reagan, Britain under Margaret Thatcher, China under Deng Xiaoping, Chile under Augusto Pinochet.
-- KC-6.3.I.E (Economic Systems): In the late 20th century, revolutions in information and communications technology led to the growth of knowledge economies in some regions, while industrial production and manufacturing were increasingly situated in Asia and Latin America. Illustrative examples: Knowledge economies: Finland, Japan, United States, Manufacturing: Vietnam, Bangladesh, Mexico, Honduras.
-- KC-6.3.II.B (Economic Systems): Changing economic institutions, multinational corporations, and regional trade agreements reflected the spread of principles and practices associated with free-market economics throughout the world. Illustrative examples: WTO, NAFTA, ASEAN, Nestlé, Nissan, Mahindra and Mahindra.
+- KC-6.3.I.E (Economic Systems): In the late 20th century, revolutions in information and communications technology led to the growth of knowledge economies in some regions, while industrial production and manufacturing were increasingly situated in Asia and Latin America. Illustrative examples: Finland, Japan, U.S., Vietnam, Bangladesh, Mexico, Honduras.
+- KC-6.3.II.B (Economic Systems): Changing economic institutions, multinational corporations, and regional trade agreements reflected the spread of principles and practices associated with free-market economics throughout the world. Illustrative examples: World Trade Organization (WTO), North American Free Trade Agreement (NAFTA), Association of Southeast Asian Nations (ASEAN), Nestlé, Nissan, Mahindra and Mahindra.
 
 **Expected evidence terms.** Deng-era economic reforms, Bangladesh garment manufacturing, NAFTA and regional trade, Multinational corporations.
 
@@ -1425,9 +1424,9 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Social Interactions and Organization (SIO) (Social Interactions and Organization): The process by which societies group their members and the norms governing interactions among groups and individuals influence political, economic, and cultural institutions.
 - Unit 9: Learning Objective E (Learning Objective): Explain how social categories, roles, and practices have been maintained and challenged over time.
-- KC-6.3.III.i (Social Interactions and Organization): Rights-based discourses challenged old assumptions about race, class, gender, and religion. Illustrative examples: Universal Declaration of Human Rights, Global feminism, Negritude, Liberation theology.
-- KC-6.3.III.ii (Social Interactions and Organization): In much of the world, access to education and participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion. Illustrative examples: Women’s political rights, Rising female literacy and higher education, U.S. Civil Rights Act of 1965, End of apartheid, Caste reservation in India.
-- KC-6.3.II.C (Social Interactions and Organization): Movements throughout the world protested the inequality of the environmental and economic consequences of global integration. Illustrative examples: Greenpeace, Wangari Maathai’s Green Belt Movement, World Fair Trade Organization.
+- KC-6.3.III.i (Social Interactions and Organization): Rights-based discourses challenged old assumptions about race, class, gender, and religion. Illustrative examples: The U.N. Universal Declaration of Human Rights, especially as it sought to protect the rights of children, women, and refugees, Global feminism movements, Negritude movement, Liberation theology in Latin America.
+- KC-6.3.III.ii (Social Interactions and Organization): In much of the world, access to education as well as participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion. Illustrative examples: The right to vote and/or to hold public office granted to women in the United States (1920), Brazil (1932), Turkey (1934), Japan (1945), India (1947), and Morocco (1963), The rising rate of female literacy and the increasing numbers of women in higher education, in most parts of the world, The U.S. Civil Rights Act of 1965, The end of apartheid, Caste reservation in India.
+- KC-6.3.II.C (Social Interactions and Organization): Movements throughout the world protested the inequality of the environmental and economic consequences of global integration. Illustrative examples: Greenpeace, Professor Wangari Maathai’s Green Belt Movement in Kenya, World Fair Trade Organization.
 
 **Expected evidence terms.** Universal Declaration of Human Rights, Global feminism and expanded education, End of apartheid and civil-rights law, Green Belt and fair-trade movements.
 
@@ -1446,9 +1445,9 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Cultural Developments and Interactions (CDI) (Cultural Developments and Interactions): Ideas, beliefs, and religions shape how groups view themselves, and interactions among societies have political, social, and cultural implications.
 - Unit 9: Learning Objective F (Learning Objective): Explain how and why globalization changed culture over time.
-- KC-6.3.IV.i (Cultural Developments and Interactions): Political and social changes of the 20th century led to changes in the arts, and in the second half of the century popular and consumer culture became more global. Illustrative examples: Reggae, Bollywood, BBC, World Cup soccer, Olympics.
-- KC-6.3.IV.ii (Cultural Developments and Interactions): Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society. Illustrative examples: Social media, Global music and film, International sports.
-- KC-6.3.IV.iii (Cultural Developments and Interactions): Consumer culture became globalized and transcended national borders. Illustrative examples: Alibaba, eBay, Toyota, Coca-Cola.
+- KC-6.3.IV.i (Cultural Developments and Interactions): Political and social changes of the 20th century led to changes in the arts and in the second half of the century, popular and consumer culture became more global. Illustrative examples: Music: Reggae, Movies: Bollywood, Social media: Facebook, Twitter, Television: BBC, Sports: World Cup soccer, the Olympics.
+- KC-6.3.IV.ii (Cultural Developments and Interactions): Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society.
+- KC-6.3.IV.iii (Cultural Developments and Interactions): Consumer culture became globalized and transcended national borders. Illustrative examples: Online commerce: Alibaba, eBay, Global brands: Toyota, Coca-Cola.
 
 **Expected evidence terms.** Reggae as global music, Bollywood and transnational film audiences, World Cup and Olympic spectacle, Alibaba, Toyota, and Coca-Cola.
 
@@ -1467,7 +1466,7 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Cultural Developments and Interactions (CDI) (Cultural Developments and Interactions): Ideas, beliefs, and religions shape how groups view themselves, and interactions among societies have political, social, and cultural implications.
 - Unit 9: Learning Objective G (Learning Objective): Explain the various responses to increasing globalization from 1900 to present.
-- KC-6.3.IV.iv (Cultural Developments and Interactions): Responses to rising cultural and economic globalization took a variety of forms. Illustrative examples: Anti-IMF and anti-World Bank activism, Locally developed social media such as Weibo in China.
+- KC-6.3.IV.iv (Cultural Developments and Interactions): Responses to rising cultural and economic globalization took a variety of forms. Illustrative examples: Anti-IMF and anti-World Bank activism, Advent of locally developed social media (Weibo in China).
 
 **Expected evidence terms.** Anti-IMF activism, Anti-World Bank campaigns, Seattle WTO protests, Weibo and locally developed platforms.
 
@@ -1486,7 +1485,7 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Governance (GOV) (Governance): Governments obtain, retain, and exercise power in different ways, while internal and external factors shape state formation, expansion, and decline.
 - Unit 9: Learning Objective H (Learning Objective): Explain how and why globalization changed international interactions among states.
-- KC-6.3.II.A (Governance): New international organizations, including the United Nations, formed with the stated goal of maintaining world peace and facilitating international cooperation. Illustrative examples: United Nations.
+- KC-6.3.II.A (Governance): New international organizations, including the United Nations, formed with the stated goal of maintaining world peace and facilitating international cooperation.
 
 **Expected evidence terms.** United Nations General Assembly, Security Council and veto power, Peacekeeping operations, Humanitarian and development agencies.
 
@@ -1505,15 +1504,18 @@ Strong answer checklist: Defensible thesis Two explained examples Meaningful qua
 **College Board key concepts.**
 - Thematic Focus, Unit 9 Synthesis (SYN) (Unit 9 Synthesis): Use Unit 9 evidence to evaluate change, continuity, significance, and complexity.
 - Unit 9: Learning Objective I (Learning Objective): Explain the extent to which science and technology brought change in the period from 1900 to the present.
-- KC-6.1 (Unit 9 Synthesis): Rapid advances in science and technology altered understandings of the universe and natural world and advanced communication, transportation, industry, agriculture, and medicine.
-- KC-6.1.I.A (Unit 9 Synthesis): New communication and transportation modes reduced the problem of geographic distance. Illustrative examples: Radio, Cellular communication, Internet, Air travel, Shipping containers.
-- KC-6.1.I.D (Unit 9 Synthesis): Petroleum and nuclear energy technologies raised productivity and increased material production.
-- KC-6.1.III.B (Unit 9 Synthesis): More effective birth control increased women’s control over fertility and contributed to declining fertility rates in much of the world.
-- KC-6.1.I.B (Unit 9 Synthesis): The Green Revolution and commercial agriculture increased productivity and helped sustain a growing population.
-- KC-6.1.I.C (Unit 9 Synthesis): Vaccines and antibiotics increased human survival and longevity.
+- KC-6.1 (Unit 9 Synthesis): Rapid advances in science and technology altered the understanding of the universe and the natural world and led to advances in communication, transportation, industry, agriculture, and medicine.
+- KC-6.1.I.A (Unit 9 Synthesis): New modes of communication—including radio communication, cellular communication, and the internet—as well as transportation, including air travel and shipping containers, reduced the problem of geographic distance.
+- KC-6.1.I.D (Unit 9 Synthesis): Energy technologies, including the use of petroleum and nuclear power, raised productivity and increased the production of material goods.
+- KC-6.1.III.B (Unit 9 Synthesis): More effective forms of birth control gave women greater control over fertility, transformed reproductive practices, and contributed to declining rates of fertility in much of the world.
+- KC-6.1.I.B (Unit 9 Synthesis): The Green Revolution and commercial agriculture increased productivity and sustained the earth’s growing population as it spread chemically and genetically modified forms of agriculture.
+- KC-6.1.I.C (Unit 9 Synthesis): Medical innovations, including vaccines and antibiotics, increased the ability of humans to survive and live longer lives.
 - KC-6.3.I (Unit 9 Synthesis): States responded in a variety of ways to the economic challenges of the 20th century.
-- KC-6.3.III.i–ii (Unit 9 Synthesis): Rights-based discourse challenged old assumptions, while education and political and professional participation became more inclusive.
-- KC-6.3.IV.i–iii (Unit 9 Synthesis): Arts, entertainment, popular culture, and consumer culture increasingly reflected a globalized society and crossed national borders.
+- KC-6.3.III.i (Unit 9 Synthesis): Rights-based discourses challenged old assumptions about race, class, gender, and religion.
+- KC-6.3.III.ii (Unit 9 Synthesis): In much of the world, access to education as well as participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion.
+- KC-6.3.IV.i (Unit 9 Synthesis): Political and social changes of the 20th century led to changes in the arts and in the second half of the century, popular and consumer culture became more global.
+- KC-6.3.IV.ii (Unit 9 Synthesis): Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society.
+- KC-6.3.IV.iii (Unit 9 Synthesis): Consumer culture became globalized and transcended national borders.
 
 **Expected evidence terms.** Internet and cellular communication, Container shipping and air travel, Green Revolution and medicine, Birth control and global consumer culture.
 

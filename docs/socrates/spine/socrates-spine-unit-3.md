@@ -57,7 +57,7 @@ Strong answer checklist: Describe at least two distinct administrative systems f
 **Where this sits.** Unit 3: Land-Based Empires, c. 1450 to c. 1750. How rulers of land-based empires used religion to legitimize authority, manage diversity, and wage sectarian conflict c. 1450–c. 1750
 
 **College Board key concepts.**
-- KC-4.1.VI.i (Cultural Developments and Interactions): The Protestant Reformation marked a break with existing Christian traditions, and both the Protestant and Catholic reformations contributed to the growth of Christianity.
+- KC-4.1.VI.i (Cultural Developments and Interactions): The Protestant Reformation marked a break with existing Christian traditions and both the Protestant and Catholic reformations contributed to the growth of Christianity.
 - KC-4.1.VI.ii (Cultural Developments and Interactions): Political rivalries between the Ottoman and Safavid empires intensified the split within Islam between Sunni and Shi’a.
 - KC-4.1.VI.iii (Cultural Developments and Interactions): Sikhism developed in South Asia in a context of interactions between Hinduism and Islam.
 
@@ -76,7 +76,7 @@ Strong answer checklist: Name at least two specific policies Akbar used to manag
 **Where this sits.** Unit 3: Land-Based Empires, c. 1450 to c. 1750. Using the AP Comparison skill to analyze similarities and differences across the Ottoman, Safavid, Mughal, Qing, and Russian empires, c. 1450–c. 1750
 
 **College Board key concepts.**
-- KC-4.1 (Land-Based Empires): The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging transformed trade and had a significant social impact on the world.
+- KC-4.1 (Land-Based Empires): The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.
 - KC-4.1.VI (Land-Based Empires): In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.
 - KC-4.3 (Land-Based Empires): Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.
 - KC-4.3.II (Land-Based Empires): Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.

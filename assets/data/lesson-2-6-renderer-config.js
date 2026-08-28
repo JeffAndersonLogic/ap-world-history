@@ -4,10 +4,14 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-3.1.IV',
-      theme: 'Humans and the Environment',
-      text: 'There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes.',
-      illustrativeExamples: ['Bananas in Africa', 'New rice varieties in East Asia', 'Spread of citrus in the Mediterranean']
+      "code": "KC-3.1.IV",
+      "theme": "Humans and the Environment",
+      "text": "There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes.",
+      "illustrativeExamples": [
+        "Bananas in Africa",
+        "New rice varieties in East Asia",
+        "Spread of citrus in the Mediterranean"
+      ]
     }
   ];
 

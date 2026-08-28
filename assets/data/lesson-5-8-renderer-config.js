@@ -4,28 +4,28 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-5.1.V.D',
-      theme: 'Social Interactions and Organization',
-      text: 'In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms.',
-      illustrativeExamples: []
+      "code": "KC-5.1.V.D",
+      "theme": "Social Interactions and Organization",
+      "text": "In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.1.V.A',
-      theme: 'Social Interactions and Organization',
-      text: 'In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers’ movements and political parties emerged in different areas, promoting alternative visions of society.',
-      illustrativeExamples: []
+      "code": "KC-5.1.V.A",
+      "theme": "Social Interactions and Organization",
+      "text": "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers’ movements and political parties emerged in different areas, promoting alternative visions of society.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.3.IV.A.ii',
-      theme: 'Social Interactions and Organization',
-      text: 'Discontent with established power structures encouraged the development of various ideologies, including those espoused by Karl Marx, and the ideas of socialism and communism.',
-      illustrativeExamples: []
+      "code": "KC-5.3.IV.A.ii",
+      "theme": "Social Interactions and Organization",
+      "text": "Discontent with established power structures encouraged the development of various ideologies, including those espoused by Karl Marx, and the ideas of socialism and communism.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.1.V.B',
-      theme: 'Social Interactions and Organization',
-      text: 'In response to the expansion of industrializing states, some governments in Asia and Africa, including the Ottoman Empire and Qing China, sought to reform and modernize their economies and militaries. Reform efforts were often resisted by some members of government or established elite groups.',
-      illustrativeExamples: []
+      "code": "KC-5.1.V.B",
+      "theme": "Social Interactions and Organization",
+      "text": "In response to the expansion of industrializing states, some governments in Asia and Africa, including the Ottoman Empire and Qing China, sought to reform and modernize their economies and militaries. Reform efforts were often resisted by some members of government or established elite groups.",
+      "illustrativeExamples": []
     }
   ];
 

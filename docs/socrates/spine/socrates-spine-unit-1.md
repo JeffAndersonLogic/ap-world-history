@@ -19,11 +19,11 @@ wins. The block came from the lesson they are actually sitting in.
 **Where this sits.** Unit 1: The Global Tapestry, c. 1200 to c. 1450. Developments in East Asia, c. 1200 to c. 1450
 
 **College Board key concepts.**
-- KC-3.2.I.A: Song China utilized traditional methods of Confucianism and an imperial bureaucracy to maintain and justify its rule.
-- KC-3.1.III.D.i: Chinese cultural traditions continued, and they influenced neighboring regions. Illustrative examples: Filial piety, Neo-Confucianism.
-- KC-3.1.III.D.ii: Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices. Illustrative examples: Theravada, Mahayana, Tibetan.
-- KC-3.3.III.A.i: The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisan labor. Illustrative examples: Champa rice, Grand Canal, Flying cash.
-- KC-3.1.I.D: The expansion of empires, including the Song Dynasty, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.
+- KC-3.2.I.A (Governance): Empires and states in Afro-Eurasia and the Americas demonstrated continuity, innovation, and diversity in the 13th century. This included the Song Dynasty of China, which utilized traditional methods of Confucianism and an imperial bureaucracy to maintain and justify its rule.
+- KC-3.1.III.D.i (Culture): Chinese cultural traditions continued, and they influenced neighboring regions. Illustrative examples: Filial piety in East Asia, Influence of Neo-Confucianism and Buddhism in East Asia, Confucian traditions of both respect for and expected deference from women, Chinese literary and scholarly traditions and their spread to Heian Japan and Korea.
+- KC-3.1.III.D.ii (Culture): Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices. Illustrative examples: Theravada, Mahayana, Tibetan.
+- KC-3.3.III.A.i (Economics): The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisanal labor. Illustrative examples: Champa rice, Transportation innovations, like the Grand Canal expansion, Steel and iron production, Textiles and porcelains for export.
+- KC-3.1.I.D (Economics): The economy of Song China flourished as a result of increased productive capacity, expanding trade networks, and innovations in agriculture and manufacturing.
 
 **Expected evidence terms.** bureaucracy, civil service exams, scholar-officials, Confucianism, Neo-Confucianism, Mandate of Heaven, Buddhism, Champa rice, Grand Canal, paper money, commercialization, urbanization, printing, Indian Ocean trade networks, Silk Road connections.
 
@@ -41,9 +41,9 @@ Strong answer checklist: Use one cultural example. Use one economic or technolog
 
 **College Board key concepts.**
 - KC-3.1.III.D.iii (Culture): Islam, Judaism, Christianity, and the core beliefs and practices of these religions continued to shape societies in Africa and Asia.
-- KC-3.2.I (Governance): As the Abbasid Caliphate fragmented, new Islamic political entities emerged, most of which were dominated by Turkic peoples. These states demonstrated continuity, innovation, and diversity. Illustrative examples: Seljuk Empire, Mamluk Sultanate of Egypt, Delhi Sultanates.
+- KC-3.2.I (Governance): As the Abbasid Caliphate fragmented, new Islamic political entities emerged, most of which were dominated by Turkic peoples. These states demonstrated continuity, innovation, and diversity. Illustrative examples: Seljuk Empire, Mamluk sultanate of Egypt, Delhi sultanates.
 - KC-3.1.III.A (Culture): Muslim rule continued to expand to many parts of Afro-Eurasia due to military expansion, and Islam subsequently expanded through the activities of merchants, missionaries, and Sufis.
-- KC-3.2.II.A.i (Technology): Muslim states and empires encouraged significant intellectual innovations and transfers. Illustrative examples: Advances in mathematics (Nasir al-Din al-Tusi), Advances in literature (A'ishah al-Ba'uniyyah), Advances in medicine, Preservation and commentaries on Greek moral and natural philosophy, House of Wisdom in Abbasid Baghdad, Scholarly and cultural transfers in Muslim and Christian Spain.
+- KC-3.2.II.A.i (Technology): Muslim states and empires encouraged significant intellectual innovations and transfers. Illustrative examples: Advances in mathematics (Nasir al-Din al-Tusi), Advances in literature ('A'ishah al-Ba'uniyyah), Advances in medicine, Preservation and commentaries on Greek moral and natural philosophy, House of Wisdom in Abbasid Bagdad, Scholarly and cultural transfers in Muslim and Christian Spain.
 
 **Expected evidence terms.** Abbasid Caliphate, fragmentation, Seljuk Empire, Mamluk Sultanate, Delhi Sultanate, Turkic peoples, legitimacy, merchants, missionaries, Sufis, Indian Ocean, House of Wisdom, translation, paper-making, mathematics, medicine, astronomy, Nasir al-Din al-Tusi.
 

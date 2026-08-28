@@ -17,22 +17,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Governance (GOV)',
-      theme: 'Governance',
-      text: 'Governance',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Governance (GOV)",
+      "theme": "Governance",
+      "text": "Governance",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 8: Learning Objective J',
-      theme: 'Learning Objective',
-      text: 'Explain the causes of the end of the Cold War.',
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective J",
+      "theme": "Learning Objective",
+      "text": "Explain the causes of the end of the Cold War.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.E',
-      theme: 'Governance',
-      text: 'Advances in U.S. military and technological development, the Soviet Union\'s costly and ultimately failed invasion of Afghanistan, and public discontent and economic weakness in communist countries led to the end of the Cold War and the collapse of the Soviet Union.',
-      illustrativeExamples: []
+      "code": "KC-6.2.IV.E",
+      "theme": "Governance",
+      "text": "Advances in U.S. military and technological development, the Soviet Union’s costly and ultimately failed invasion of Afghanistan, and public discontent and economic weakness in communist countries led to the end of the Cold War and the collapse of the Soviet Union.",
+      "illustrativeExamples": []
     }
   ];
 

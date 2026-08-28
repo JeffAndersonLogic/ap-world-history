@@ -4,22 +4,27 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-5.1.III.A',
-      theme: 'Economic Systems',
-      text: 'Western European countries began abandoning mercantilism and adopting free trade policies, partly in response to the growing acceptance of Adam Smith’s theories of laissez-faire capitalism and free markets.',
-      illustrativeExamples: []
+      "code": "KC-5.1.III.A",
+      "theme": "Economic Systems",
+      "text": "Western European countries began abandoning mercantilism and adopting free trade policies, partly in response to the growing acceptance of Adam Smith’s theories of laissez-faire capitalism and free markets.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.1.III.B',
-      theme: 'Economic Systems',
-      text: 'The global nature of trade and production contributed to the proliferation of large-scale transnational businesses that relied on new practices in banking and finance.',
-      illustrativeExamples: ['Hong Kong and Shanghai Banking Corporation (HSBC)', 'Unilever, based in England and the Netherlands and operating in British West Africa and the Belgian Congo', 'Stock markets', 'Limited-liability corporations']
+      "code": "KC-5.1.III.B",
+      "theme": "Economic Systems",
+      "text": "The global nature of trade and production contributed to the proliferation of large-scale transnational businesses that relied on new practices in banking and finance.",
+      "illustrativeExamples": [
+        "Hong Kong and Shanghai Banking Corporation (HSBC)",
+        "Unilever based in England and the Netherlands and operating in British West Africa and the Belgian Congo",
+        "Stock markets",
+        "Limited-liability corporations"
+      ]
     },
     {
-      code: 'KC-5.1',
-      theme: 'Economic Systems',
-      text: 'The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.',
-      illustrativeExamples: []
+      "code": "KC-5.1",
+      "theme": "Economic Systems",
+      "text": "The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.",
+      "illustrativeExamples": []
     }
   ];
 

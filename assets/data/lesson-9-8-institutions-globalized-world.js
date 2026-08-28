@@ -63,9 +63,7 @@ window.BEHISTORICAL_LESSON = {
       code: 'KC-6.3.II.A',
       theme: 'Governance',
       text: 'New international organizations, including the United Nations, formed with the stated goal of maintaining world peace and facilitating international cooperation.',
-      illustrativeExamples: [
-        'United Nations'
-      ]
+      illustrativeExamples: []
     }
   ],
   stableImages: {

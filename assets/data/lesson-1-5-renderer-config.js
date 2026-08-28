@@ -14,4 +14,16 @@
     beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
     checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Mali_Empire.png'
   };
+  lesson.collegeBoardKeyConcepts = [
+    {
+      "code": "KC-3.2.I.D.ii",
+      "theme": "Governance",
+      "text": "In Africa, as in Eurasia and the Americas, state systems demonstrated continuity, innovation, and diversity and expanded in scope and reach.",
+      "illustrativeExamples": [
+        "Great Zimbabwe",
+        "Ethiopia",
+        "Hausa kingdoms"
+      ]
+    }
+  ];
 })();

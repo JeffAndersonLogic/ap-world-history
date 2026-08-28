@@ -50,34 +50,32 @@ window.BEHISTORICAL_LESSON = {
     {
       code: 'KC-5.3.III.D',
       theme: 'Governance',
-      text: 'Nationalism and challenges to imperial authority contributed to anticolonial movements.',
-      illustrativeExamples: [
-        'Yaa Asantewaa and the War of the Golden Stool',
-        'The Indian Rebellion of 1857',
-        'Samory Touré in West Africa',
-        'The Mahdist state and the Xhosa Cattle-Killing movement'
-      ]
+      text: 'Increasing questions about political authority and growing nationalism contributed to anticolonial movements.',
+      illustrativeExamples: []
     },
     {
       code: 'KC-5.2.II.C',
       theme: 'Governance',
-      text: 'Anti-imperial resistance took direct and indirect forms and sometimes produced new states on imperial peripheries.',
+      text: 'Anti-imperial resistance took various forms, including direct resistance within empires and the creation of new states on the peripheries.',
       illustrativeExamples: [
-        'Yaa Asantewaa and the War of the Golden Stool',
-        'The Indian Rebellion of 1857',
-        'Samory Touré in West Africa',
-        'The Mahdist state and the Xhosa Cattle-Killing movement'
+        'Túpac Amaru II’s rebellion in Peru',
+        'Samory Touré’s military battles in West Africa',
+        'Yaa Asantewaa War in West Africa',
+        '1857 rebellion in India',
+        'Establishment of independent states in the Balkans',
+        'Sokoto Caliphate in modern-day Nigeria',
+        'Cherokee Nation',
+        'Zulu Kingdom'
       ]
     },
     {
       code: 'KC-5.3.III.E',
       theme: 'Governance',
-      text: 'Discontent with imperial rule led to rebellions, some influenced by religious ideas.',
+      text: 'Increasing discontent with imperial rule led to rebellions, some of which were influenced by religious ideas.',
       illustrativeExamples: [
-        'Yaa Asantewaa and the War of the Golden Stool',
-        'The Indian Rebellion of 1857',
-        'Samory Touré in West Africa',
-        'The Mahdist state and the Xhosa Cattle-Killing movement'
+        'Ghost Dance in the U.S.',
+        'Xhosa Cattle-Killing Movement in Southern Africa',
+        'Mahdist wars in Sudan'
       ]
     }
   ],

@@ -4,40 +4,47 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-5.3.II.ii',
-      theme: 'Governance',
-      text: 'People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity.',
-      illustrativeExamples: []
+      "code": "KC-5.3.II.ii",
+      "theme": "Governance",
+      "text": "People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.3',
-      theme: 'Governance',
-      text: 'The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.',
-      illustrativeExamples: []
+      "code": "KC-5.3",
+      "theme": "Governance",
+      "text": "The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.3.IV.A.i',
-      theme: 'Governance',
-      text: 'Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism.',
-      illustrativeExamples: []
+      "code": "KC-5.3.IV.A.i",
+      "theme": "Governance",
+      "text": "Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.3.III.B',
-      theme: 'Governance',
-      text: 'Colonial subjects in the Americas led a series of rebellions inspired by democratic ideals. The American Revolution, and its successful establishment of a republic, the United States of America, was a model and inspiration for a number of the revolutions that followed. The American Revolution, the Haitian Revolution, and the Latin American independence movements facilitated the emergence of independent states in the Americas.',
-      illustrativeExamples: []
+      "code": "KC-5.3.III.B",
+      "theme": "Governance",
+      "text": "Colonial subjects in the Americas led a series of rebellions inspired by democratic ideals. The American Revolution, and its successful establishment of a republic, the United States of America, was a model and inspiration for a number of the revolutions that followed. The American Revolution, the Haitian Revolution, and the Latin American independence movements facilitated the emergence of independent states in the Americas.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.3.I.B',
-      theme: 'Governance',
-      text: 'The ideas of Enlightenment philosophers, as reflected in revolutionary documents, including the American Declaration of Independence during the American Revolution, the French Declaration of the Rights of Man and of the Citizen during the French Revolution, and Bolívar’s Letter from Jamaica on the eve of the Latin American revolutions, influenced resistance to existing political authority, often in pursuit of independence and democratic ideals.',
-      illustrativeExamples: []
+      "code": "KC-5.3.I.B",
+      "theme": "Governance",
+      "text": "The ideas of Enlightenment philosophers, as reflected in revolutionary documents—including the American Declaration of Independence during the American Revolution, the French “Declaration of the Rights of Man and of the Citizen” during the French Revolution, and Bolívar’s “Letter from Jamaica” on the eve of the Latin American revolutions—influenced resistance to existing political authority, often in pursuit of independence and democratic ideals.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-5.3.II.iii',
-      theme: 'Governance',
-      text: 'Newly imagined national communities often linked this new national identity with borders of the state, and in some cases, nationalists challenged boundaries or sought unification of fragmented regions.',
-      illustrativeExamples: ['Propaganda Movement in the Philippines', 'Māori nationalism and the New Zealand wars in New Zealand', 'Puerto Rico, writings of Lola Rodríguez de Tió', 'German and Italian unifications', 'Balkan nationalisms', 'Ottomanism']
+      "code": "KC-5.3.II.iii",
+      "theme": "Governance",
+      "text": "Newly imagined national communities often linked this new national identity with borders of the state, and in some cases, nationalists challenged boundaries or sought unification of fragmented regions.",
+      "illustrativeExamples": [
+        "Propaganda Movement in the Philippines",
+        "Maori nationalism and the New Zealand wars in New Zealand",
+        "Puerto Rico—writings of Lola Rodríguez de Tió",
+        "German and Italian unifications",
+        "Balkan nationalisms",
+        "Ottomanism"
+      ]
     }
   ];
 

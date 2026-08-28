@@ -8,25 +8,25 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Governance (GOV)',
-      theme: 'Governance',
-      text: 'Governance',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Governance (GOV)",
+      "theme": "Governance",
+      "text": "Governance",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 8: Learning Objective C',
-      theme: 'Learning Objective',
-      text: 'Compare the ways in which the United States and the Soviet Union sought to maintain influence over the course of the Cold War.',
-      illustrativeExamples: []
+      "code": "Unit 8: Learning Objective C",
+      "theme": "Learning Objective",
+      "text": "Compare the ways in which the United States and the Soviet Union sought to maintain influence over the course of the Cold War.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.D',
-      theme: 'Governance',
-      text: 'The Cold War produced new military alliances, including NATO and the Warsaw Pact, and led to nuclear proliferation and proxy wars between and within postcolonial states in Latin America, Africa, and Asia.',
-      illustrativeExamples: [
-        'Proxy wars: Korean War',
-        'Proxy wars: Angolan Civil War',
-        'Proxy wars: Sandinista–Contras conflict in Nicaragua'
+      "code": "KC-6.2.IV.D",
+      "theme": "Governance",
+      "text": "The Cold War produced new military alliances, including NATO and the Warsaw Pact, and led to nuclear proliferation and proxy wars between and within postcolonial states in Latin America, Africa, and Asia.",
+      "illustrativeExamples": [
+        "Korean War",
+        "Angolan Civil War",
+        "Sandinista-Contras conflict in Nicaragua"
       ]
     }
   ];

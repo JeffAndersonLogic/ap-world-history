@@ -13,6 +13,7 @@ const { inspect } = require('util');
 const vm = require('vm');
 const { renderFirst10Page } = require('./lib/first10-page');
 const { loadCourse } = require('./lib/socrates-course');
+const { alignTopicConcepts } = require('./lib/ced-2026-key-concepts');
 
 // The reading's AI Coach prompt carries the same assignment context a checkpoint's
 // does, read from the lesson data so the two cannot disagree about what Socrates
@@ -325,12 +326,16 @@ function jsObject(value) {
   return inspect(value, { depth: null, compact: false, breakLength: 112, maxArrayLength: null });
 }
 
+function jsonAssignmentValue(value) {
+  return JSON.stringify(value, null, 2).replace(/\n/g, '\n  ');
+}
+
 function conceptArray(topic) {
-  return [
+  return alignTopicConcepts(topic.id, [
     { code: `Thematic Focus, ${topic.theme} (${topic.code})`, theme: topic.theme, text: topic.focus, illustrativeExamples: [] },
     { code: topic.loCode, theme: 'Learning Objective', text: topic.lo, illustrativeExamples: [] },
     ...topic.kcs.map(([code, text, examples]) => ({ code, theme: topic.theme, text, illustrativeExamples: examples }))
-  ];
+  ]);
 }
 
 function buildLesson(topic) {
@@ -437,7 +442,7 @@ function rendererConfig(topic) {
   const scenario = topic.scenario
     ? { url: `../beintheroom/unit-9/${topic.scenario.file}`, desc: topic.scenario.dilemma }
     : { url: '', desc: 'The Unit 9 synthesis capstone uses the full evidence set instead of a separate simulation.' };
-  return `// Topic ${topic.id}, runtime-authoritative CED alignment, effective Fall 2026.\n(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.collegeBoardKeyConcepts = ${jsObject(conceptArray(topic))};\n  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-${topic.id.replace('.', '-')}-${topic.slug}-capture.html' };\n  lesson.beInTheRoom = ${jsObject(scenario)};\n})();\n`;
+  return `// Topic ${topic.id}, runtime-authoritative CED alignment, effective Fall 2026.\n(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.collegeBoardKeyConcepts = ${jsonAssignmentValue(conceptArray(topic))};\n  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-${topic.id.replace('.', '-')}-${topic.slug}-capture.html' };\n  lesson.beInTheRoom = ${jsObject(scenario)};\n})();\n`;
 }
 
 function lessonShell(topic) {

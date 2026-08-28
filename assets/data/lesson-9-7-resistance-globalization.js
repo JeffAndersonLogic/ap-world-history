@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       text: 'Responses to rising cultural and economic globalization took a variety of forms.',
       illustrativeExamples: [
         'Anti-IMF and anti-World Bank activism',
-        'Locally developed social media such as Weibo in China'
+        'Advent of locally developed social media (Weibo in China)'
       ]
     }
   ],

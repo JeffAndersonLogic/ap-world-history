@@ -8,22 +8,22 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Governance (GOV)',
-      theme: 'Governance',
-      text: 'A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Governance (GOV)",
+      "theme": "Governance",
+      "text": "A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 7: Learning Objective B',
-      theme: 'Learning Objective',
-      text: 'Explain the causes and consequences of World War I.',
-      illustrativeExamples: []
+      "code": "Unit 7: Learning Objective B",
+      "theme": "Learning Objective",
+      "text": "Explain the causes and consequences of World War I.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.IV.B.i',
-      theme: 'Governance',
-      text: 'The causes of World War I included imperialist expansion and competition for resources. In addition, territorial and regional conflicts combined with a flawed alliance system and intense nationalism to escalate the tensions into global conflict.',
-      illustrativeExamples: []
+      "code": "KC-6.2.IV.B.i",
+      "theme": "Governance",
+      "text": "The causes of World War I included imperialist expansion and competition for resources. In addition, territorial and regional conflicts combined with a flawed alliance system and intense nationalism to escalate the tensions into global conflict.",
+      "illustrativeExamples": []
     }
   ];
 

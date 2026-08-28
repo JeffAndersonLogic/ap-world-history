@@ -8,34 +8,34 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'Thematic Focus, Governance (GOV)',
-      theme: 'Governance',
-      text: 'A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.',
-      illustrativeExamples: []
+      "code": "Thematic Focus, Governance (GOV)",
+      "theme": "Governance",
+      "text": "A variety of internal and external factors contribute to state formation, expansion, and decline. Governments maintain order through a variety of administrative institutions, policies, and procedures, and governments obtain, retain, and exercise power in different ways and for different purposes.",
+      "illustrativeExamples": []
     },
     {
-      code: 'Unit 7: Learning Objective A',
-      theme: 'Learning Objective',
-      text: 'Explain how internal and external factors contributed to change in various states after 1900.',
-      illustrativeExamples: []
+      "code": "Unit 7: Learning Objective A",
+      "theme": "Learning Objective",
+      "text": "Explain how internal and external factors contributed to change in various states after 1900.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.I',
-      theme: 'Governance',
-      text: "The West dominated the global political order at the beginning of the 20th century, but both land-based and maritime empires gave way to new states by the century's end.",
-      illustrativeExamples: []
+      "code": "KC-6.2.I",
+      "theme": "Governance",
+      "text": "The West dominated the global political order at the beginning of the 20th century, but both land-based and maritime empires gave way to new states by the century’s end.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.I.A',
-      theme: 'Governance',
-      text: 'The older, land-based Ottoman, Russian, and Qing empires collapsed due to a combination of internal and external factors. These changes in Russia eventually led to communist revolution.',
-      illustrativeExamples: []
+      "code": "KC-6.2.I.A",
+      "theme": "Governance",
+      "text": "The older, land-based Ottoman, Russian, and Qing empires collapsed due to a combination of internal and external factors. These changes in Russia eventually led to communist revolution.",
+      "illustrativeExamples": []
     },
     {
-      code: 'KC-6.2.II.D',
-      theme: 'Governance',
-      text: 'States around the world challenged the existing political and social order, including the Mexican Revolution that arose as a result of political crisis.',
-      illustrativeExamples: []
+      "code": "KC-6.2.II.D",
+      "theme": "Governance",
+      "text": "States around the world challenged the existing political and social order, including the Mexican Revolution that arose as a result of political crisis.",
+      "illustrativeExamples": []
     }
   ];
 

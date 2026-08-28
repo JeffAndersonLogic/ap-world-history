@@ -9,34 +9,6 @@
     { label: 'Geographic takeaway', detail: 'Song China needed bureaucracy, infrastructure, revenue, and trade systems to hold together a complex state.' }
   ];
 
-  lesson.collegeBoardKeyConcepts = [
-    {
-      code: 'KC-3.2.I.A',
-      text: 'Song China utilized traditional methods of Confucianism and an imperial bureaucracy to maintain and justify its rule.',
-      illustrativeExamples: []
-    },
-    {
-      code: 'KC-3.1.III.D.i',
-      text: 'Chinese cultural traditions continued, and they influenced neighboring regions.',
-      illustrativeExamples: ['Filial piety', 'Neo-Confucianism']
-    },
-    {
-      code: 'KC-3.1.III.D.ii',
-      text: 'Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices.',
-      illustrativeExamples: ['Theravada', 'Mahayana', 'Tibetan']
-    },
-    {
-      code: 'KC-3.3.III.A.i',
-      text: 'The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisan labor.',
-      illustrativeExamples: ['Champa rice', 'Grand Canal', 'Flying cash']
-    },
-    {
-      code: 'KC-3.1.I.D',
-      text: "The expansion of empires, including the Song Dynasty, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors' economies and trade networks.",
-      illustrativeExamples: []
-    }
-  ];
-
   function addStyles() {
     if (document.getElementById('topic-11-standards-styles')) return;
     const style = document.createElement('style');

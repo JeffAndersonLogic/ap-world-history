@@ -62,43 +62,37 @@ window.BEHISTORICAL_LESSON = {
     {
       code: 'KC-6.1',
       theme: 'Unit 9 Synthesis',
-      text: 'Rapid advances in science and technology altered understandings of the universe and natural world and advanced communication, transportation, industry, agriculture, and medicine.',
+      text: 'Rapid advances in science and technology altered the understanding of the universe and the natural world and led to advances in communication, transportation, industry, agriculture, and medicine.',
       illustrativeExamples: []
     },
     {
       code: 'KC-6.1.I.A',
       theme: 'Unit 9 Synthesis',
-      text: 'New communication and transportation modes reduced the problem of geographic distance.',
-      illustrativeExamples: [
-        'Radio',
-        'Cellular communication',
-        'Internet',
-        'Air travel',
-        'Shipping containers'
-      ]
+      text: 'New modes of communication—including radio communication, cellular communication, and the internet—as well as transportation, including air travel and shipping containers, reduced the problem of geographic distance.',
+      illustrativeExamples: []
     },
     {
       code: 'KC-6.1.I.D',
       theme: 'Unit 9 Synthesis',
-      text: 'Petroleum and nuclear energy technologies raised productivity and increased material production.',
+      text: 'Energy technologies, including the use of petroleum and nuclear power, raised productivity and increased the production of material goods.',
       illustrativeExamples: []
     },
     {
       code: 'KC-6.1.III.B',
       theme: 'Unit 9 Synthesis',
-      text: 'More effective birth control increased women’s control over fertility and contributed to declining fertility rates in much of the world.',
+      text: 'More effective forms of birth control gave women greater control over fertility, transformed reproductive practices, and contributed to declining rates of fertility in much of the world.',
       illustrativeExamples: []
     },
     {
       code: 'KC-6.1.I.B',
       theme: 'Unit 9 Synthesis',
-      text: 'The Green Revolution and commercial agriculture increased productivity and helped sustain a growing population.',
+      text: 'The Green Revolution and commercial agriculture increased productivity and sustained the earth’s growing population as it spread chemically and genetically modified forms of agriculture.',
       illustrativeExamples: []
     },
     {
       code: 'KC-6.1.I.C',
       theme: 'Unit 9 Synthesis',
-      text: 'Vaccines and antibiotics increased human survival and longevity.',
+      text: 'Medical innovations, including vaccines and antibiotics, increased the ability of humans to survive and live longer lives.',
       illustrativeExamples: []
     },
     {
@@ -108,15 +102,33 @@ window.BEHISTORICAL_LESSON = {
       illustrativeExamples: []
     },
     {
-      code: 'KC-6.3.III.i–ii',
+      code: 'KC-6.3.III.i',
       theme: 'Unit 9 Synthesis',
-      text: 'Rights-based discourse challenged old assumptions, while education and political and professional participation became more inclusive.',
+      text: 'Rights-based discourses challenged old assumptions about race, class, gender, and religion.',
       illustrativeExamples: []
     },
     {
-      code: 'KC-6.3.IV.i–iii',
+      code: 'KC-6.3.III.ii',
       theme: 'Unit 9 Synthesis',
-      text: 'Arts, entertainment, popular culture, and consumer culture increasingly reflected a globalized society and crossed national borders.',
+      text: 'In much of the world, access to education as well as participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-6.3.IV.i',
+      theme: 'Unit 9 Synthesis',
+      text: 'Political and social changes of the 20th century led to changes in the arts and in the second half of the century, popular and consumer culture became more global.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-6.3.IV.ii',
+      theme: 'Unit 9 Synthesis',
+      text: 'Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-6.3.IV.iii',
+      theme: 'Unit 9 Synthesis',
+      text: 'Consumer culture became globalized and transcended national borders.',
       illustrativeExamples: []
     }
   ],

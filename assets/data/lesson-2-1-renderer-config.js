@@ -4,22 +4,29 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      code: 'KC-3.1.I.A.i',
-      theme: 'Economic Systems',
-      text: 'Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Silk Roads, promoting the growth of powerful new trading cities.',
-      illustrativeExamples: ['Kashgar', 'Samarkand']
+      "code": "KC-3.1.I.A.i",
+      "theme": "Economic Systems",
+      "text": "Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.",
+      "illustrativeExamples": [
+        "Kashgar",
+        "Samarkand"
+      ]
     },
     {
-      code: 'KC-3.1.I.C.i',
-      theme: 'Economic Systems',
-      text: 'The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.',
-      illustrativeExamples: ['Bills of exchange', 'Banking houses', 'Use of paper money']
+      "code": "KC-3.1.I.C.i",
+      "theme": "Economic Systems",
+      "text": "The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.",
+      "illustrativeExamples": [
+        "Bills of exchange",
+        "Banking houses",
+        "Use of paper money"
+      ]
     },
     {
-      code: 'KC-3.3.I.B',
-      theme: 'Economic Systems',
-      text: 'Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.',
-      illustrativeExamples: []
+      "code": "KC-3.3.I.B",
+      "theme": "Economic Systems",
+      "text": "Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.",
+      "illustrativeExamples": []
     }
   ];
 

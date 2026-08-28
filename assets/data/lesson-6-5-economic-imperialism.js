@@ -50,23 +50,21 @@ window.BEHISTORICAL_LESSON = {
     {
       code: 'KC-5.2.I.E',
       theme: 'Economic Systems',
-      text: 'Industrialized states and businesses practiced economic imperialism in Asia and Latin America.',
+      text: 'Industrialized states and businesses within those states practiced economic imperialism primarily in Asia and Latin America.',
       illustrativeExamples: [
-        'British and French pressure on China through the Opium Wars',
-        'British investment in the port of Buenos Aires',
-        'Cotton exports from South Asia and Egypt',
-        'Palm oil and copper commodity chains'
+        'Britain and France expanding their influence in China through the Opium Wars',
+        'The construction of the Port of Buenos Aires with the support of British firms'
       ]
     },
     {
       code: 'KC-5.1.II.C',
       theme: 'Economic Systems',
-      text: 'Global commodity trade was organized to benefit merchants and companies in Europe and the United States.',
+      text: 'Trade in some commodities was organized in a way that gave merchants and companies based in Europe and the U.S. a distinct economic advantage.',
       illustrativeExamples: [
-        'British and French pressure on China through the Opium Wars',
-        'British investment in the port of Buenos Aires',
-        'Cotton exports from South Asia and Egypt',
-        'Palm oil and copper commodity chains'
+        'Opium produced in the Middle East or South Asia and exported to China',
+        'Cotton grown in South Asia and Egypt and exported to Great Britain and other European countries',
+        'Palm oil produced in sub-Saharan Africa and exported to European countries',
+        'Copper extracted in Chile'
       ]
     }
   ],
