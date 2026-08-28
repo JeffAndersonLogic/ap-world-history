@@ -244,12 +244,12 @@ own, they disagree with each other, and nothing reports it. A student who reads
 the event and then works the lesson is being graded against a target they were
 never shown.
 
-`docs/canvas/foundations-calendar-events.md` holds the six paste-ready events.
-It is **generated**, not hand-maintained:
+`docs/canvas/calendar-events.md` holds every paste-ready event, one per class
+day. It is **generated**, not hand-maintained:
 
 ```bash
-node tools/build-canvas-events.js          # rewrite from the data files
-node tools/build-canvas-events.js --check  # fail on drift, write nothing
+node scripts/build-canvas-events.js          # rewrite from the schedule
+node scripts/build-canvas-events.js --check  # fail on drift, write nothing
 ```
 
 Do not hand-edit that file. Change a target in the data file, rerun the
@@ -264,8 +264,14 @@ student it reads as though they are being talked about rather than to.
 
 OVERVIEW is therefore hand-written from `commandCopy`, two to four sentences, in
 second person. That prose lives in the `OVERVIEWS` table inside
-`tools/build-canvas-events.js` so a regeneration never overwrites it. Edit it
+`scripts/build-canvas-events.js` so a regeneration never overwrites it. Edit it
 there.
+
+A topic with no entry in that table falls back to its own subtitle from the
+lesson data and the run warns. The fallback is true and already published, it is
+just thin; nothing is invented to fill the row, because an overview nobody wrote
+is a second copy of the content that can drift from the lesson with nothing
+failing.
 
 ---
 
@@ -594,17 +600,22 @@ For each topic in Units 1 through 9:
 8. **Add the module text header and the indented assignment**, per Section 6.
 9. **Walk it end to end on a Chromebook** before publishing the module.
 
-Extending `tools/build-canvas-events.js` to cover a unit is the better move once
-a unit's topics are stable. It reads the data files directly, so a Learning Target
-edit becomes a rerun rather than a re-transcription, and `--check` will fail
-loudly when the repository and the pasted Canvas content have diverged.
+`scripts/build-canvas-events.js` already covers every class day in the schedule,
+so a new unit needs its days added to `assets/data/announcements-schedule.js` and
+its OVERVIEW prose added to the generator, not a new transcription. It reads the
+lesson data files directly, so a Learning Target edit becomes a rerun rather than
+a re-typing, and `--check` fails loudly when the repository and the pasted Canvas
+content have diverged.
 
 ---
 
 ## Related documents
 
-- `docs/canvas/foundations-calendar-events.md`, the six paste-ready events, generated
-- `tools/build-canvas-events.js`, the generator
+- `docs/canvas/calendar-events.md`, the paste-ready events, one per class day, generated
+- `scripts/build-canvas-events.js`, the generator
+- `scripts/lib/cohorts.js`, the one definition of Green and Silver
+- `assets/data/announcements-schedule.js`, the calendar both the events and the
+  classroom board are built from
 - `docs/CANVAS-CAPTURE.md`, the capture contract, read before touching the gather panel
 - `docs/CANVAS-CHECK.md`, verifying a real Canvas round trip character by character
 - `docs/FORM-CONTRACT.md`, why the Google Form is retired

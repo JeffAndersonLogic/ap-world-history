@@ -12,8 +12,9 @@
    ---------------------------------------------------------
    WHY THIS REPLACED THE FOUNDATIONS-ONLY GENERATOR
 
-   tools/build-canvas-events.js emitted six events, keyed to the
-   six Foundations topics, one per topic. On an alternating block
+   There used to be a second generator, at tools/build-canvas-events.js,
+   deleted on 2026-08-28. It emitted six events, keyed to the six
+   Foundations topics, one per topic. On an alternating block
    a topic is not one event: it is two, on two dates, for two
    different rooms, with two different due dates. A generator
    that cannot say which cohort an event is for cannot put the
