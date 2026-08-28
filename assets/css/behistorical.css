@@ -355,6 +355,9 @@ blockquote{margin:0; padding:20px; background:#f6efe3; border-left:6px solid var
   padding-left:1.35em !important;
 }
 .lecture-list.enlarged li{margin:.6rem 0 !important; color:var(--ink) !important;}
+.lecture-modal-resource{margin-top:1.5rem !important;}
+.lecture-modal-resource:empty{display:none !important;}
+.lecture-modal-resource .btn{display:inline-flex !important; align-items:center !important; justify-content:center !important;}
 /* Bold terms get the readings' key-term treatment, so a term a student met in the
    First & 10 looks the same when it reappears in the lecture. Same signal, one
    look, rather than two ways of saying "this is the word that matters". */

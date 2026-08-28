@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeHistorical | Topic 1.2 Summary Organizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/behistorical-brand-lock.css">
+  <style>
+    :root{
+      --black-stone:#1a1c1d;
+      --charcoal:#2b2f31;
+      --granite:#3e4447;
+      --antique-gold:#c9a46a;
+      --muted-sandstone:#d2b48c;
+      --oxidized-brown:#8c5a2b;
+      --warm-paper:#f5f0e7;
+      --cream:#fffdf7;
+      --ink:#151718;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#242829;color:var(--ink);font-family:"Libre Baskerville",Georgia,serif;line-height:1.38}
+    .toolbar{position:sticky;top:0;z-index:3;display:flex;justify-content:center;gap:.7rem;padding:.7rem;background:rgba(26,28,29,.96);border-bottom:1px solid rgba(201,164,106,.35)}
+    .button{display:inline-block;border:1px solid var(--antique-gold);border-radius:3px;background:var(--antique-gold);color:var(--black-stone);font:800 .75rem/1 "Montserrat",Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;padding:.7rem 1rem;cursor:pointer}
+    .button.secondary{background:transparent;color:var(--warm-paper)}
+    .sheet{width:min(1180px,calc(100% - 2rem));margin:1.2rem auto 2rem;background:var(--warm-paper);box-shadow:0 18px 55px rgba(0,0,0,.38);border-top:8px solid var(--antique-gold)}
+    .masthead{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1.1rem;background:var(--black-stone);color:var(--cream);padding:1rem 1.3rem}
+    .logo-title{margin:0;color:var(--antique-gold);font:900 1.55rem/1 "Cinzel",Georgia,serif;letter-spacing:.02em}
+    .topic-kicker{margin:0 0 .15rem;color:var(--muted-sandstone);font:800 .65rem/1.2 "Montserrat",Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+    h1{margin:0;color:var(--cream);font:800 1.55rem/1.08 "Cinzel",Georgia,serif}
+    .date-range{color:var(--muted-sandstone);font:800 .72rem/1.25 "Montserrat",Arial,sans-serif;text-align:right;text-transform:uppercase;letter-spacing:.08em}
+    .thesis{margin:0;padding:.72rem 1.3rem;background:#efe3cf;border-bottom:1px solid #cdbb9d;font-size:.92rem}
+    .thesis strong{color:var(--oxidized-brown);font-family:"Montserrat",Arial,sans-serif}
+    .content{padding:1rem 1.3rem 1.1rem}
+    .organizer{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.75rem}
+    .layer{background:var(--cream);border:1px solid #d7cbbb;border-top:5px solid var(--oxidized-brown)}
+    .layer:nth-child(2){border-top-color:var(--antique-gold)}
+    .layer:nth-child(3){border-top-color:var(--granite)}
+    .layer-head{padding:.65rem .75rem .52rem;border-bottom:1px solid #ded3c4}
+    .layer-number{display:block;color:var(--oxidized-brown);font:900 .58rem/1 "Montserrat",Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase}
+    .layer h2{margin:.18rem 0 0;color:var(--black-stone);font:800 1.02rem/1.1 "Cinzel",Georgia,serif}
+    .layer-body{padding:.62rem .75rem .72rem}
+    .prompt{margin:.48rem 0 .18rem;color:var(--oxidized-brown);font:900 .58rem/1.15 "Montserrat",Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase}
+    .prompt:first-child{margin-top:0}
+    .layer p{margin:0;font-size:.75rem}
+    .layer ul{margin:.18rem 0 0;padding-left:1rem;font-size:.72rem}
+    .layer li{margin:.16rem 0}
+    .effect{margin-top:.5rem!important;padding:.42rem .48rem;background:#f0e6d6;border-left:3px solid var(--antique-gold)}
+    .states{display:grid;grid-template-columns:auto repeat(3,1fr);margin-top:.8rem;border:1px solid #cbbca7;background:var(--cream)}
+    .states-title{display:flex;align-items:center;padding:.5rem .7rem;background:var(--charcoal);color:var(--antique-gold);font:900 .68rem/1.2 "Montserrat",Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase}
+    .state{padding:.5rem .65rem;border-left:1px solid #ddd2c3;font-size:.69rem}
+    .state strong{display:block;color:var(--oxidized-brown);font:900 .72rem/1.2 "Montserrat",Arial,sans-serif;text-transform:uppercase}
+    .bottom{margin-top:.8rem}
+    .guardrails{padding:.65rem .75rem;background:var(--cream);border:1px solid #d7cbbb}
+    .bottom h2{margin:0 0 .4rem;color:var(--black-stone);font:800 .83rem/1.1 "Cinzel",Georgia,serif}
+    .guardrails ul{display:grid;grid-template-columns:1fr 1fr;gap:.24rem 1.2rem;margin:0;padding-left:1rem;font-size:.7rem}
+    .guardrails li{margin:.2rem 0}
+    .footer{display:flex;justify-content:space-between;gap:1rem;padding:.48rem 1.3rem;background:var(--charcoal);color:#ddd1c0;font:700 .55rem/1.3 "Montserrat",Arial,sans-serif;letter-spacing:.04em}
+    @media(max-width:850px){
+      .masthead{grid-template-columns:1fr}.date-range{text-align:left}.organizer{grid-template-columns:1fr}.states{grid-template-columns:1fr}.states-title{display:block}.state{border-left:0;border-top:1px solid #ddd2c3}.guardrails ul{grid-template-columns:1fr}.sheet{width:min(100% - 1rem,720px)}
+    }
+    @page{size:letter landscape;margin:.28in}
+    @media print{
+      body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      .toolbar{display:none}
+      .sheet{width:auto;margin:0;box-shadow:none;border-top-width:5px}
+      .masthead{padding:.48rem .72rem;grid-template-columns:auto 1fr auto;gap:.7rem}
+      .logo-title{font-size:1.05rem}h1{font-size:1.08rem}.topic-kicker,.date-range{font-size:.48rem}
+      .thesis{padding:.38rem .72rem;font-size:.67rem}
+      .content{padding:.48rem .72rem .52rem}.organizer{gap:.42rem}.layer-head{padding:.38rem .48rem .3rem}.layer h2{font-size:.76rem}.layer-number{font-size:.43rem}.layer-body{padding:.35rem .48rem .4rem}.prompt{font-size:.43rem;margin:.3rem 0 .1rem}.layer p{font-size:.53rem}.layer ul{font-size:.5rem;line-height:1.25}.effect{margin-top:.3rem!important;padding:.25rem .3rem}.states{margin-top:.42rem}.states-title{font-size:.48rem}.state{padding:.3rem .42rem;font-size:.48rem}.state strong{font-size:.52rem}.bottom{margin-top:.42rem}.guardrails{padding:.38rem .48rem}.bottom h2{font-size:.6rem;margin-bottom:.22rem}.guardrails ul{font-size:.48rem;line-height:1.2}.footer{padding:.28rem .72rem;font-size:.4rem}
+    }
+  </style>
+</head>
+<body>
+  <nav class="toolbar" aria-label="Document actions">
+    <a class="button secondary" href="lesson-1-2-dar-al-islam.html#lecture">Back to Lecture Cards</a>
+    <button class="button" type="button" onclick="window.print()">Print or Save as PDF</button>
+  </nav>
+
+  <main class="sheet">
+    <header class="masthead">
+      <p class="logo-title" aria-label="BeHistorical">Be<span class="hero-h">H</span>ist<span class="globe-o">o</span>rical</p>
+      <div>
+        <p class="topic-kicker">AP World History · Topic 1.2 Summary Organizer</p>
+        <h1>Dar al-Islam: One Civilization, Many States</h1>
+      </div>
+      <div class="date-range">c. 1200–c. 1450<br>GOV · CDI · TEC</div>
+    </header>
+
+    <p class="thesis"><strong>Essential understanding:</strong> Political power fragmented after the Abbasids, but shared belief, trade, law, travel, and scholarship kept Dar al-Islam connected across Afro-Eurasia.</p>
+
+    <div class="content">
+      <section class="organizer" aria-label="Three-layer topic summary">
+        <article class="layer">
+          <div class="layer-head"><span class="layer-number">Layer 1 · Governance</span><h2>Power After the Abbasids</h2></div>
+          <div class="layer-body">
+            <p class="prompt">What changed?</p>
+            <p>The Abbasid Caliphate fragmented. New Islamic political entities emerged, many led by Turkic military elites.</p>
+            <p class="prompt">How did it work?</p>
+            <p>Regional <strong>sultans</strong> controlled armies, taxes, and officials while Islamic institutions supplied law and legitimacy.</p>
+            <p class="prompt">Evidence to know</p>
+            <ul><li>Seljuk Empire</li><li>Mamluk Sultanate of Egypt</li><li>Delhi Sultanates</li></ul>
+            <p class="effect"><strong>Effect:</strong> Political diversity increased, but Islamic government and culture continued in multiple regional centers.</p>
+          </div>
+        </article>
+
+        <article class="layer">
+          <div class="layer-head"><span class="layer-number">Layer 2 · Culture</span><h2>Rule Is Not Conversion</h2></div>
+          <div class="layer-body">
+            <p class="prompt">What changed?</p>
+            <p>Muslim rule expanded through warfare, while Islam spread farther through non-state networks.</p>
+            <p class="prompt">How did it spread?</p>
+            <p><strong>Merchants, missionaries, and Sufis</strong> carried Islam through ports, trade routes, teaching, and personal relationships.</p>
+            <p class="prompt">Evidence to know</p>
+            <ul><li>Indian Ocean and trans-Saharan trade</li><li>Sufi adaptation to local cultures</li><li>Hindu majority under Muslim rule in Delhi</li></ul>
+            <p class="effect"><strong>Effect:</strong> Islam connected distant communities, but conversion was gradual and local cultures persisted.</p>
+          </div>
+        </article>
+
+        <article class="layer">
+          <div class="layer-head"><span class="layer-number">Layer 3 · Innovation</span><h2>Knowledge Across Borders</h2></div>
+          <div class="layer-body">
+            <p class="prompt">What made it possible?</p>
+            <p>Rulers and patrons supported scholars, libraries, hospitals, observatories, translation, and travel.</p>
+            <p class="prompt">What did scholars do?</p>
+            <p>They preserved, commented on, tested, and extended Greek, Persian, and Indian knowledge.</p>
+            <p class="prompt">Evidence to know</p>
+            <ul><li>Nasir al-Din al-Tusi: mathematics and astronomy</li><li>A’ishah al-Ba’uniyyah: literature</li><li>Medicine, House of Wisdom, and exchange in Spain</li></ul>
+            <p class="effect"><strong>Effect:</strong> Innovations and ideas circulated across Afro-Eurasia and survived the destruction of Baghdad in 1258.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="states" aria-label="State comparison">
+        <div class="states-title">Three states<br>in one phrase</div>
+        <div class="state"><strong>Seljuks</strong>Turkic military power combined with Persian administration and Sunni institutions.</div>
+        <div class="state"><strong>Mamluks</strong>Military-slave elite ruled Egypt and Syria and stopped the Mongols at Ayn Jalut in 1260.</div>
+        <div class="state"><strong>Delhi Sultanates</strong>Turkic and Persian Muslim rulers governed a large, predominantly Hindu population in northern India.</div>
+      </section>
+
+      <section class="bottom">
+        <aside class="guardrails">
+          <h2>Keep These Distinctions Straight</h2>
+          <ul>
+            <li><strong>Dar al-Islam was not one empire.</strong></li>
+            <li><strong>Muslim rule did not equal mass conversion.</strong></li>
+            <li><strong>1258 ended Abbasid rule in Iraq, not Islamic learning.</strong></li>
+            <li>The CED asks for both <strong>innovation</strong> and <strong>transfer</strong>, not preservation alone.</li>
+          </ul>
+        </aside>
+      </section>
+    </div>
+
+    <footer class="footer"><span>BeHistorical · Think Like a Historian.</span><span>Use specific evidence and explain the historical effect—do not stop at naming a person or state.</span></footer>
+  </main>
+</body>
+</html>

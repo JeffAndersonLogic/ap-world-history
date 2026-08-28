@@ -269,6 +269,34 @@ function topicArtworkCssPath(id) {
   return `../images/module-art/unit-${match[1]}/topic-${match[1]}-${match[2]}/${id}.svg`;
 }
 
+// Optional topic-specific resources that belong at the end of a lecture deck.
+// Keeping the registry here lets a lesson gain a printable summary card without
+// changing the shared shell or making every lesson carry an empty data block.
+const LECTURE_SUMMARY_RESOURCES = {
+  'Topic 1.2': {
+    title: 'Topic 1.2 Summary Organizer',
+    bullets: [
+      'Review the three connected layers: **power**, **belief**, and **knowledge**.',
+      'Compare the **Seljuk**, **Mamluk**, and **Delhi** states in one phrase each.',
+      'Keep Muslim political rule separate from conversion through merchants, missionaries, and **Sufis**.',
+      'Use the organizer as a one-page visual review of the topic.'
+    ],
+    resourceUrl: 'summary-organizer-topic-1-2-dar-al-islam.html?v=20260828-visual-only',
+    resourceLabel: 'Open the Summary Organizer',
+    image: {
+      title: 'One Civilization, Many States',
+      url: '../assets/images/unit-1/topic-1-2/module-05-continuity-change.svg',
+      caption: 'Use the organizer to connect political fragmentation with the religious, commercial, and intellectual networks that held Dar al-Islam together.'
+    }
+  }
+};
+
+function lectureSegments() {
+  const core = (L.lecture && L.lecture.segments) || [];
+  const summary = LECTURE_SUMMARY_RESOURCES[String((L.meta && L.meta.topic) || '')];
+  return summary ? core.concat(summary) : core;
+}
+
 function useMediaFallback(image, fallback) {
   const replacement = sanitizeImageUrl(fallback || image.dataset.fallback || '../assets/images/media-fallback.svg');
   if (!replacement || image.src.endsWith(replacement)) return;
@@ -287,7 +315,7 @@ function mediaFallbackAttrs(fallbackId) {
 }
 
 function lectureImageUrl(index) {
-  const segments = (L.lecture && L.lecture.segments) || [];
+  const segments = lectureSegments();
   const current = sanitizeImageUrl(segments[index] && segments[index].image && segments[index].image.url);
   const repeated = current && segments.slice(0, index).some(seg => sanitizeImageUrl(seg.image && seg.image.url) === current);
   return current && !repeated ? current : topicArtworkPath(`lecture-${String(index + 1).padStart(2, '0')}`);
@@ -428,7 +456,7 @@ function renderCollegeBoardFramework() {
 // ── Lecture cards ─────────────────────────────────────────────────────────────
 
 function renderLectureCards() {
-  byId('main-lecture-grid').innerHTML = (L.lecture.segments || []).map((seg, i) => `
+  byId('main-lecture-grid').innerHTML = lectureSegments().map((seg, i) => `
     <article class="card dark-card lecture-topic-card" role="button" tabindex="0"
       onclick="openLectureModal(${i})"
       onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLectureModal(${i})}">
@@ -698,7 +726,7 @@ function wireLectureControls() {
 }
 
 function updateLectureNav() {
-  const total = (L.lecture.segments || []).length;
+  const total = lectureSegments().length;
   const prev = byId('lecture-prev');
   const next = byId('lecture-next');
   const status = byId('lecture-nav-status');
@@ -709,7 +737,7 @@ function updateLectureNav() {
 
 function lectureStep(delta) {
   const n = currentLectureIndex + delta;
-  if (n >= 0 && n < (L.lecture.segments || []).length) openLectureModal(n);
+  if (n >= 0 && n < lectureSegments().length) openLectureModal(n);
 }
 
 // Back to the module grid, with focus on the first card so a keyboard user lands
@@ -723,10 +751,22 @@ function closeLectureToModules() {
 }
 
 function openLectureModal(i) {
-  const seg = L.lecture.segments[i];
+  const seg = lectureSegments()[i];
   currentLectureIndex = i;
   byId('lecture-modal-title').textContent = seg.title;
   byId('lecture-modal-bullets').innerHTML = seg.bullets.map(b => `<li>${md(b)}</li>`).join('');
+  let resource = byId('lecture-modal-resource');
+  if (!resource) {
+    resource = document.createElement('div');
+    resource.id = 'lecture-modal-resource';
+    resource.className = 'lecture-modal-resource';
+    byId('lecture-modal-bullets').insertAdjacentElement('afterend', resource);
+  }
+  const resourceUrl = String(seg.resourceUrl || '').trim();
+  const safeResourceUrl = /^(?:javascript|data):/i.test(resourceUrl) ? '' : resourceUrl;
+  resource.innerHTML = safeResourceUrl
+    ? `<a class="btn" href="${safeResourceUrl}" target="_blank" rel="noopener">${seg.resourceLabel || 'Open the Resource'}</a>`
+    : '';
   const image = byId('lecture-modal-img');
   const fallbackId = `lecture-${String(i + 1).padStart(2, '0')}`;
   const fallback = topicArtworkPath(fallbackId);
