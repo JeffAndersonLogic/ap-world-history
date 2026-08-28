@@ -51,4 +51,14 @@
       ]
     }
   ];
+
+  if (lesson.lecture && Array.isArray(lesson.lecture.videos) && !lesson.lecture.videos.some(video => video.youtubeId === 'yD4vvlPMQrw')) {
+    lesson.lecture.videos.push({
+      title: 'Sufism and the Spread of Islam',
+      url: 'https://youtu.be/yD4vvlPMQrw',
+      youtubeId: 'yD4vvlPMQrw',
+      previewImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_43_Abu_Zayd_and_al-Harith_travelling.jpg',
+      prompt: 'Watch for how Sufi beliefs, practices, and personal religious networks helped Islam spread across diverse societies.'
+    });
+  }
 })();
