@@ -80,6 +80,89 @@ happen in a vendor web UI. Nothing in this repo can log into MagicSchool, so
 nothing here can prove the bot is configured correctly. What the repo can prove,
 and does, is that the documents are reproducible from the lesson data.
 
+## Version 2, the length retune, 2026-08-29
+
+Students reported that Socrates kept pushing after they already knew what was
+wrong. That was not the model being stubborn, it was two rules and a contradiction
+working exactly as written.
+
+**Rule 2 forbade the useful sentence.** Version 1 said "ask exactly one question
+per turn. Exactly one, not zero", enforced with "count the question marks". That
+is compliance language, and a model follows compliance language harder than it
+follows prose. It meant Socrates could not say "your evidence is specific but you
+have not explained how it supports your claim, revise that one sentence." He had
+to ask about it instead, and then wait a turn for the student to arrive where he
+already was.
+
+**The coaching order was a serial diagnostic.** "Work down this list and stop at
+the first place the draft actually breaks" meant a draft with three weaknesses
+could not cost fewer than three exchanges, because he was only allowed to see one
+weakness at a time.
+
+**And the two rules contradicted the Closing section.** Closing tells him to
+announce the draft is done and say where the work goes, a turn with no question in
+it, while rule 2 said zero questions was not allowed. Given a conflict, a model
+keeps the rule with the enforcement scaffolding, so **Socrates had no clean exit**
+and asked one more question instead of releasing. That is probably the single
+biggest contributor, and it is fixed by carving the release turn out of rule 2
+rather than leaving the two sections to fight.
+
+### The fourth cause, which was not in the persona at all
+
+`buildCoachPrompt` ended every student paste with **"Coach me by asking one
+question at a time."** Version 1 of the rule, restated inside the student's own
+message, in the one place the persona says beats everything else: "if the block
+and your memory disagree, the block wins."
+
+So no edit to the persona could have fixed this on its own. Every paste from
+every checkpoint and all 77 readings reinstated the behaviour being retuned. The
+line now reads "Give me one thing to work on at a time", which asks for the same
+restraint without dictating that the one thing has to be a question, and the
+persona alone decides the form. This is the same second-copy failure the repo
+already refuses elsewhere: one prompt builder, one classroom config, one parser.
+
+### What changed, and what deliberately did not
+
+| Changed | To |
+|---|---|
+| Exactly one question per turn, never zero | Exactly one **ask** per turn: a question or a single revision instruction |
+| No stopping rule at all | A budget: most conversations finish within two student revisions |
+| Stop at the first place the draft breaks | Diagnose the whole draft, act on the highest-value revision |
+| One standard for all four assignments | A threshold per assignment, in "How much is enough" |
+| Nothing about ending | A release turn that asks nothing and names where the work goes |
+
+Unchanged, and not to be traded away for brevity: the refusal to write the
+student's answer, the factual-correction and no-sycophancy rules, the cross-unit
+evidence guard, paste-beats-memory precedence, and the four-surface boundary.
+The new rule 4, "name what is missing, never the words that would fill it", exists
+because direct coaching is the failure mode that drifts toward dictation, and it
+is the guard that lets rule 3 be safe.
+
+### Measuring length, which the old suite could not
+
+`socrates-eval.js` grades one reply. All nine of its cases are single-turn, so
+the whole suite could stay green while Socrates took nine exchanges to release a
+student who needed two. The retune's entire subject was invisible to it.
+
+`node scripts/test/socrates-turns.js` drives a real conversation instead:
+Socrates against a simulated student who revises partially, the way a first
+revision actually goes, and counts coach turns until release. A release is
+detected as a turn that asks nothing **and** names where the work goes, because
+requiring both is what stops a coach who merely forgot to ask a question from
+scoring as a coach who released the student.
+
+`--persona <file>` runs the same cases against an older persona pulled out of git
+history, because a turn count means nothing without an answer to "shorter than
+what."
+
+**The honest limits.** The simulated student is more compliant than a real
+fifteen-year-old, never gets bored and never argues, so these counts are a floor:
+a conversation that runs long here runs longer in a classroom. And the three cases
+vary assignment *and* draft quality at the same time, so they cannot by themselves
+prove the per-assignment thresholds are what moved a number. The clean version of
+that test is the same draft submitted under two different assignment labels, and
+it is not written yet.
+
 ## Stress testing
 
 `node scripts/test/socrates-eval.js` runs eight adversarial student inputs

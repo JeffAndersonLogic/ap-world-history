@@ -45,7 +45,7 @@ Here is my response:
 
 <the student's draft, verbatim>
 
-Coach me by asking one question at a time. Do not write my final answer for me.
+Give me one thing to work on at a time. Do not write my final answer for me.
 ```
 
 ## Why each line is there

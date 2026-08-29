@@ -192,6 +192,9 @@ function isReply(text) {
 // arm you hope to beat is worse than no checker.
 const questionCount = t => (t.match(/\?(?!\w)/g) || []).length;
 
+// Keep in step with the keys det() returns, or every score is silently wrong.
+const DET_CHECKS = 5;
+
 const GAVE_ANSWER = [
   /here(?:'s| is) (?:a|an|your|one|the) (?:strong |good |possible |sample |model |example )?(?:answer|paragraph|response|thesis|version|draft)/i,
   /^\s*(?:revised|improved|stronger|model|sample) (?:answer|response|draft|paragraph)\s*:/im,
@@ -199,15 +202,31 @@ const GAVE_ANSWER = [
   /try (?:this|something like this)\s*:\s*["“]/i
 ];
 
+// An instruction to revise one thing, which under version 2 of the persona is a
+// legitimate ask in place of a question. Deliberately narrow: these are verbs
+// that hand the next move to the student, not verbs that describe the draft.
+const REVISION_ASK = /\b(revise|rewrite|add|replace|cut|name|explain|go back|try again|put)\b/i;
+
 function det(text) {
   const words = text.split(/\s+/).filter(Boolean).length;
   const q = questionCount(text);
   return {
-    // Exactly one. Zero used to be allowed here on the grounds that an imperative
-    // ask satisfies the intent, and that allowance hid a real regression: the
-    // mechanical "delete all but the most important question" rule pushed some
-    // replies to no question at all, which the rubric flagged and this did not.
-    one_question: { pass: q === 1, detail: `${q} question mark(s)` },
+    // Version 1 required exactly one question mark, on the grounds that zero had
+    // once hidden a regression where the "delete all but the most important
+    // question" rule pushed replies to asking nothing at all. Version 2 of the
+    // persona makes zero questions legitimate in two places, a release turn and a
+    // turn that states a diagnosis Socrates already holds, so requiring one here
+    // would fail him for the exact behaviour the retune was for.
+    //
+    // The floor did not go away, it moved. What has to be true is that a turn
+    // carries exactly one ask, so this is now a ceiling of one question plus a
+    // separate check that *some* ask exists. The rubric grades whether the ask is
+    // singular and clear, which is the half a regex cannot see.
+    at_most_one_question: { pass: q <= 1, detail: `${q} question mark(s)` },
+    has_one_ask: {
+      pass: q === 1 || REVISION_ASK.test(text),
+      detail: q === 1 ? 'asked a question' : (REVISION_ASK.test(text) ? 'gave a revision instruction' : 'no question and no instruction')
+    },
     under_160_words: { pass: words <= 160, detail: `${words} words` },
     no_answer_handoff: {
       pass: !GAVE_ANSWER.some(r => r.test(text)),
@@ -223,8 +242,13 @@ function det(text) {
 // counting cannot see two questions welded together with "and", which is the
 // usual way the rule gets broken.
 const UNIVERSAL = [
-  'Asks the student exactly one question, not two or more questions joined into a single sentence.',
-  'Does not write, rewrite, or supply any sentence the student could submit as their own answer.'
+  'Gives the student exactly one thing to do next: either a single question or a single '
+    + 'instruction to revise one thing, never two of either, and never two questions joined '
+    + 'into one sentence with "and" or "or".',
+  'Does not write, rewrite, or supply any sentence the student could submit as their own answer.',
+  'Does not walk the student through weaknesses one per turn when it could name the most '
+    + 'important one now: it asks for at most one revision, but it is not withholding a '
+    + 'diagnosis it plainly already has.'
 ];
 
 async function grade(kase, reply) {
@@ -324,14 +348,14 @@ async function grade(kase, reply) {
       const rPass = mine.map(r => r.rubric.filter(v => v.verdict === 'PASS').length);
       const rTot = mine.map(r => r.rubric.length);
       anyUngraded += mine.reduce((s, r) => s + r.rubric.filter(v => v.verdict === 'UNGRADED').length, 0);
-      dp += dPass.reduce((a, b) => a + b, 0); dt += 4 * mine.length;
+      dp += dPass.reduce((a, b) => a + b, 0); dt += DET_CHECKS * mine.length;
       rp += rPass.reduce((a, b) => a + b, 0); rt += rTot.reduce((a, b) => a + b, 0);
       const span = REPS > 1 ? ` (per rep: ${rPass.join(', ')} of ${rTot[0]})` : '';
       const bad = mine.flatMap(r => [
         ...Object.entries(r.det).filter(([, v]) => !v.pass).map(([k, v]) => `${k} [${v.detail}]`),
         ...r.rubric.filter(v => v.verdict === 'FAIL').map(v => v.why)
       ]);
-      console.log(`  ${kase.id.padEnd(16)} det ${dPass.reduce((a, b) => a + b, 0)}/${4 * mine.length}`
+      console.log(`  ${kase.id.padEnd(16)} det ${dPass.reduce((a, b) => a + b, 0)}/${DET_CHECKS * mine.length}`
         + `  rubric ${rPass.reduce((a, b) => a + b, 0)}/${rTot.reduce((a, b) => a + b, 0)}${span}`);
       if (bad.length) console.log(`${' '.repeat(20)}${[...new Set(bad)].slice(0, 4).join(' | ')}`);
     }

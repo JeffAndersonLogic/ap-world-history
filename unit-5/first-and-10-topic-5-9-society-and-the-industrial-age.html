@@ -230,7 +230,16 @@ var TOPIC_KEY='5.9';var TOPIC_LABEL='5.9 - Society and the Industrial Age';
         c.draft == null ? '{{DRAFT}}' : String(c.draft).trim(), '');
     }
 
-    lines.push('Coach me by asking one question at a time. Do not write my final answer for me.');
+    // 2026-08-29: this line used to read "Coach me by asking one question at a
+    // time", which was version 1 of the persona restated inside the student's own
+    // message. That made it the one instruction Socrates could not retune around:
+    // the persona tells him the pasted block is authoritative, so every paste
+    // reinstated the rule the version 2 retune exists to relax, in the place the
+    // persona says wins. A second copy of a rule is a second place for it to fall
+    // out of step, which is the same reason there is only one prompt builder.
+    // The paste now asks for one thing at a time without dictating the form, and
+    // the persona alone decides whether that thing is a question.
+    lines.push('Give me one thing to work on at a time. Do not write my final answer for me.');
     return lines.join('\n');
   }
 

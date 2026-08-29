@@ -207,7 +207,12 @@ function contextBlock(topic, opts) {
   if (!cp) return null;
   return buildCoachPrompt({
     topic: topic.id,
-    module: cp.label || 'Checkpoint',
+    // Optional override, defaulting to the checkpoint's own label so nothing that
+    // does not pass it moves a byte. socrates-turns.js needs it to build a First &
+    // 10 Reflection paste, which is a real surface with no checkpoint of its own,
+    // and the assignment name is what selects Socrates' threshold under version 2
+    // of the persona.
+    module: o.module || cp.label || 'Checkpoint',
     title: topic.title,
     span: topic.span,
     focus: topic.period,

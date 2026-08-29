@@ -92,8 +92,24 @@ if (leaked.length) {
 
 // The rules the eval measures. If one of these sentences is deleted the graded
 // stress test drops, and that is a slow thing to discover.
+// 2026-08-29, the version 2 retune. Three of these patterns changed when the
+// one-question rule loosened, and they are called out here because a future
+// reader finding "exactly one question per turn" gone will otherwise assume
+// drift. The rule did not disappear, it became one *ask* per turn, where an ask
+// is a question or a single revision instruction. The reason is in the header
+// comment of socrates-persona.js: version 1 forbade Socrates from ever stating
+// a diagnosis he already held, and it contradicted the Closing section, which
+// left him no way to end a conversation. What is pinned now is the pair that
+// has to hold together: one ask per turn, and a release turn that asks nothing.
 const REQUIRED = [
-  [/exactly one question per turn/i, 'the one-question-per-turn rule'],
+  [/Every coaching turn ends with exactly one ask/, 'the one-ask-per-turn rule'],
+  [/The release turn is the one exception and\s+asks nothing/, 'the carve-out that lets Socrates actually end a conversation'],
+  [/A question is not owed/, 'the permission to state a diagnosis instead of asking about it'],
+  [/[Nn]ame what is missing, never the words that would fill it/, 'the boundary that keeps direct coaching from becoming dictation'],
+  [/Do not walk this list one rung per turn/, 'the ban on the serial one-weakness-per-turn diagnostic'],
+  [/finished within two student revisions/, 'the conversation budget'],
+  [/[Dd]o not prolong a conversation because more improvement is possible/, 'the rule against coaching past the bar'],
+  [/## How much is enough/, 'the per-assignment thresholds'],
   [/[Nn]ever write, rewrite, or dictate/, 'the refusal to write the student\'s answer'],
   [/the block wins/i, 'the paste-beats-memory precedence rule'],
   [/[Nn]ever affirm a claim you believe is factually or chronologically wrong/, 'the no-sycophancy rule'],
@@ -117,7 +133,12 @@ const REQUIRED = [
   [/Never invent/, 'the never-invent limit on that permission'],
   [/Outside knowledge never overrides the assignment/, 'the limit that the paste still defines the task'],
   [/count the question\s+marks/, 'the mechanical one-question check'],
-  [/Exactly one, not zero/, 'the floor that a turn must actually ask something'],
+  // Version 1 pinned "Exactly one, not zero" here as the floor that a turn must
+  // actually ask something. That floor is still wanted, but zero questions is now
+  // legitimate on a release turn and on a turn that states a diagnosis, so the
+  // floor moved from "a question mark exists" to "exactly one ask exists", pinned
+  // above. Do not restore the old sentence: it is what stopped him releasing.
+  [/never more than one/, 'the ceiling of one ask per turn'],
   // Socrates serves exactly four assignments. Naming them is what lets him orient
   // from the student's own words, and it is also the boundary: a fifth surface
   // appearing here means someone wired up a coach button the persona does not know
