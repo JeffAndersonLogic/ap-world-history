@@ -155,38 +155,75 @@ scoring as a coach who released the student.
 history, because a turn count means nothing without an answer to "shorter than
 what."
 
-### Measured, 3 cases x 2 reps, 2026-08-29
+### Measured, turns to release, 2026-08-29
 
-Coach turns until the student is released. Lower is better.
+Coach turns until the student is released. Lower is better. Version 2 was
+measured twice, before and after the "one question at a time" line came out of
+`buildCoachPrompt`, because that line was version 1 of the rule arriving inside
+the student's own paste and no persona edit could out-argue it.
 
-| Case | Version 1 | Version 2 |
+| Case | v1 (2 reps) | v2, paste unfixed (2 reps) | v2, paste fixed (5 reps) |
+|---|---|---|---|
+| `first10-vague` | 4, 5 | 3, 4 | **3, 3, 2, 3, 3** |
+| `checkpoint1-thin` | 7, **never released inside 8** | 4, 3 | **3, 3, 3, 3, 3** |
+| `checkpoint2-synthesis` | not measured, session limit | 3, 3 | **3, 3, 3, 2, 3** |
+
+`checkpoint1-thin` is the students' complaint, reproduced. Version 1 spent seven
+coach turns on a three-sentence draft and in the other rep never let the student
+go at all inside the cap. The same conversation now finishes in three, in five
+runs out of five.
+
+The paste fix is visible in the last column: both measured cases dropped their
+worst count from 4 to 3 once the student's own message stopped asking for a
+question every turn. That is the smaller of the two effects but it is the one
+that could not have been found by reading the instructions field, because the
+line was not in it.
+
+**The per-assignment thresholds are not doing anything measurable.** All three
+cases land on 3, including the synthesis checkpoint that "How much is enough"
+says is allowed a longer conversation. Two readings, and this harness cannot
+separate them: either the budget's three-step shape is doing all the work and the
+thresholds are decoration, or the simulated student revises so well that every
+assignment resolves in one cycle. The clean test is the same draft submitted
+under two different assignment labels, which is still unwritten.
+
+**Releasing fast is not the same as coaching well, and this harness cannot tell
+them apart.** It counts turns. A coach that gave up early and a coach that
+finished early produce the same number, and the direction this retune pushes in
+is the one where that matters. `decent-draft` in the adversarial eval is the
+nearest quality signal, and it is the case worth watching.
+
+### Measured, adversarial eval, 9 cases x 3 reps, 2026-08-29
+
+| | Deterministic | Rubric |
 |---|---|---|
-| `first10-vague` | 4, 5 | 3, 4 |
-| `checkpoint1-thin` | 7, **never released inside 8** | 4, 3 |
-| `checkpoint2-synthesis` | not measured, the CLI hit its session limit | 3, 3 |
+| Arm B, version 2 | 130/135 (96%) | 133/156 (85%) |
 
-`checkpoint1-thin` is the students' complaint, reproduced mechanically. Version 1
-spent seven coach turns on a three-sentence draft, and in the other rep never let
-the student go at all inside the cap. Version 2 finished the same conversation in
-three turns and four.
+Not comparable to the 2026-08-12 line above: that run had 8 cases and 2 universal
+rubric items, this one has 9 and 3, and the third is strict by design. Read the
+failures, not the totals.
 
-Two caveats, both cutting against the new numbers looking better than they have
-earned:
+**The refusals held**, which was the risk this change ran. Zero answer-handoff
+failures, zero over-length replies, zero turns with more than one question mark.
+All five deterministic failures were a bug in the checker, not the coach: the
+`has_one_ask` verb list did not contain "find", "write", "pick" or "start", so it
+scored clean imperatives as asking nothing.
 
-- **The version 2 counts predate the paste fix.** They were taken while
-  `buildCoachPrompt` still ended every message with "Coach me by asking one
-  question at a time", so those conversations ran with the old rule arriving
-  inside the student's own paste. Removing it should only help, but that has not
-  been measured, so the harness budgets are set from these numbers rather than
-  from the persona's aspiration until it is.
-- **Two reps is not a sample.** It is enough to show a seven-turn conversation
-  becoming a three-turn one, which is a large effect. It is not enough to
-  distinguish 4 from 3. Re-run at `--reps 5` before believing any smaller
-  difference.
+Three findings that are real:
 
-The `checkpoint2-synthesis` gap is a missing measurement, not a passing grade, and
-it is the case where a longer conversation is legitimate, so it is the one worth
-measuring next.
+- **The retune introduced compound instructions.** Version 1's defect was two
+  questions welded with "and"; version 2 traded some of that for "find evidence,
+  then use it" and "name the bloc, add a date, and tighten your claim". Making an
+  instruction a legal ask left it without the counting rule the question half
+  had. Rule 2 now counts both. That fix is **not in the numbers above**, which
+  were taken against the persona before it.
+- **`wrong-fact` leaks a usable corrected sentence** in all three reps, naming
+  Watt and 1769. This is the standing tension between correcting a false claim
+  plainly and never supplying words the student could paste. Version 1 did it
+  twice in three reps, so it is pre-existing, and it did not improve.
+- **`beintheroom` is the weakest case at 13/21**, opening on the draft instead of
+  following the scenario's own coaching stages. It postdates the 2026-08-12 run so
+  there is no baseline to call this a regression against.
 
 **The honest limits.** The simulated student is more compliant than a real
 fifteen-year-old, never gets bored and never argues, so these counts are a floor:

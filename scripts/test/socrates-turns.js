@@ -90,15 +90,20 @@ if (!haveCli()) {
 //
 // `budget` is the number of coach turns by which release is expected. These are
 // set from measurement, not from the persona's aspiration: the worst count
-// observed on version 2 plus a turn of slack, because two reps of a stochastic
-// model will not reproduce their own worst case reliably and a gate that flakes
-// gets switched off. Version 1 measured 5 and 9 against these same numbers.
+// observed plus a turn of slack, because a stochastic model will not reproduce
+// its own worst case reliably and a gate that flakes gets switched off.
 //
-// They are provisional in one specific way. The version 2 counts below were taken
-// before the "one question at a time" line came out of buildCoachPrompt, so every
-// one of those conversations still had the old rule arriving inside the student's
-// paste. Re-measure at --reps 5 and tighten these when the CLI's session limit
-// resets; first10-vague in particular should come down to 3.
+// Measured 2026-08-29 at --reps 5, after the "one question at a time" line came
+// out of buildCoachPrompt: every case ran 3 turns, with a 2 in two of the
+// fifteen conversations. Version 1 ran 5 on first10-vague and 9 on
+// checkpoint1-thin, one of which never released inside the cap at all.
+//
+// checkpoint2-synthesis keeps the looser budget even though it currently measures
+// the same as the other two. Its threshold in the persona says a synthesis
+// checkpoint may legitimately run longer, and holding the budget there is what
+// keeps a future longer conversation on that case from reading as a regression.
+// That the three cases do not currently differ is a finding in its own right and
+// is written up in docs/socrates/README.md.
 const CASES = [
   {
     id: 'first10-vague',
@@ -118,7 +123,7 @@ const CASES = [
     topic: '5.3',
     module: null,
     checkpoint: 0,
-    budget: 5,
+    budget: 4,
     draft: 'Workers had a hard time during industrialization. Factory conditions '
       + 'were bad and people worked long hours for low pay. Some workers protested '
       + 'about it because they were angry about how things were changing.'
