@@ -61,6 +61,22 @@ const JOBS = Math.max(1, Number(arg('jobs', 4)));
 const ARM = arg('arm', 'B');
 const STRICT = process.argv.includes('--strict');
 
+// Isolating a regression needs two things this did not have on 2026-08-29, when
+// answer-begging dropped from 14/18 to 14/30 across two persona edits and there
+// was no cheap way to ask which edit did it. Re-running all nine cases to look at
+// one of them costs 45 conversations and a session limit.
+//
+// --case runs one case by id. --persona drives a file exporting PERSONA, usually
+// one pulled out of git history, the same flag socrates-turns.js carries. Together
+// they turn "which change caused this" from a 90-call question into a 10-call one.
+const ONLY = arg('case', null);
+const PERSONA_FILE = arg('persona', null);
+const COACH = PERSONA_FILE ? require(path.resolve(PERSONA_FILE)).PERSONA : PERSONA;
+if (PERSONA_FILE && !COACH) {
+  console.error(`${PERSONA_FILE} does not export PERSONA.`);
+  process.exit(1);
+}
+
 // ── Skip when there is no model to drive ─────────────────────────────────────
 
 function haveCli() {
@@ -119,7 +135,7 @@ function thinBlock(topic, draft) {
 // persona is what produces it.
 const ARMS = {
   A: { persona: ARM_A_PERSONA, block: thinBlock },
-  B: { persona: PERSONA, block: (t, d) => contextBlock(t, { draft: d }) }
+  B: { persona: COACH, block: (t, d) => contextBlock(t, { draft: d }) }
 };
 
 function pasteFor(cfg, kase, topic) {
@@ -293,7 +309,14 @@ async function grade(kase, reply) {
 // ── Run ──────────────────────────────────────────────────────────────────────
 
 (async () => {
-  const cases = JSON.parse(fs.readFileSync(CASES, 'utf8'));
+  let cases = JSON.parse(fs.readFileSync(CASES, 'utf8'));
+  if (ONLY) {
+    cases = cases.filter(c => c.id === ONLY);
+    if (!cases.length) {
+      console.error(`no such case: ${ONLY}`);
+      process.exit(1);
+    }
+  }
   const { topics, problems } = loadCourse();
   if (problems.length) {
     console.error(`Refusing to run: the course did not load cleanly (${problems.length} problem(s)).`);
@@ -312,8 +335,9 @@ async function grade(kase, reply) {
     }
   }
 
-  console.log(`Socrates eval: ${arms.join(' and ')}, ${cases.length} cases`
-    + ` x ${REPS} rep(s) = ${jobs.length} conversations, ${JOBS} at a time.\n`);
+  console.log(`Socrates eval: ${arms.join(' and ')}, ${cases.length} case(s)`
+    + ` x ${REPS} rep(s) = ${jobs.length} conversations, ${JOBS} at a time.`);
+  console.log(`Persona: ${PERSONA_FILE || 'scripts/lib/socrates-persona.js (current)'}\n`);
 
   let done = 0;
   const results = await pool(jobs, async job => {
@@ -384,7 +408,8 @@ async function grade(kase, reply) {
 
   const outDir = path.join(ROOT, 'scripts', 'test', '.socrates-eval-out');
   fs.mkdirSync(outDir, { recursive: true });
-  const dest = path.join(outDir, `results-${arms.join('')}-r${REPS}.json`);
+  const dest = path.join(outDir, `results-${arms.join('')}-r${REPS}`
+    + `${ONLY ? '-' + ONLY : ''}${PERSONA_FILE ? '-alt' : ''}.json`);
   fs.writeFileSync(dest, JSON.stringify(results, null, 1));
   console.log(`Transcripts and verdicts: ${path.relative(ROOT, dest)}`);
   console.log('\nThis eval scores a stand-in model, not MagicSchool. Run the manual');
