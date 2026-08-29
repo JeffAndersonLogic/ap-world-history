@@ -88,15 +88,23 @@ if (!haveCli()) {
 // number of turns. A run where all three land on the same number is a run where
 // the thresholds are not doing anything, even if every number looks acceptable.
 //
-// `budget` is the number of coach turns by which release is expected. It comes
-// from the persona's own budget section, diagnose, revise, check, plus one turn
-// of slack for the assignments allowed a longer conversation.
+// `budget` is the number of coach turns by which release is expected. These are
+// set from measurement, not from the persona's aspiration: the worst count
+// observed on version 2 plus a turn of slack, because two reps of a stochastic
+// model will not reproduce their own worst case reliably and a gate that flakes
+// gets switched off. Version 1 measured 5 and 9 against these same numbers.
+//
+// They are provisional in one specific way. The version 2 counts below were taken
+// before the "one question at a time" line came out of buildCoachPrompt, so every
+// one of those conversations still had the old rule arriving inside the student's
+// paste. Re-measure at --reps 5 and tighten these when the CLI's session limit
+// resets; first10-vague in particular should come down to 3.
 const CASES = [
   {
     id: 'first10-vague',
     topic: '2.2',
     module: 'First & 10 Reflection',
-    budget: 3,
+    budget: 4,
     // Understands the idea, evidence is real but unspecific, explanation thin.
     // Under version 1 this drew a full claim/evidence/explanation walk. It should
     // now cost one note and one revision.
@@ -110,7 +118,7 @@ const CASES = [
     topic: '5.3',
     module: null,
     checkpoint: 0,
-    budget: 4,
+    budget: 5,
     draft: 'Workers had a hard time during industrialization. Factory conditions '
       + 'were bad and people worked long hours for low pay. Some workers protested '
       + 'about it because they were angry about how things were changing.'

@@ -155,6 +155,39 @@ scoring as a coach who released the student.
 history, because a turn count means nothing without an answer to "shorter than
 what."
 
+### Measured, 3 cases x 2 reps, 2026-08-29
+
+Coach turns until the student is released. Lower is better.
+
+| Case | Version 1 | Version 2 |
+|---|---|---|
+| `first10-vague` | 4, 5 | 3, 4 |
+| `checkpoint1-thin` | 7, **never released inside 8** | 4, 3 |
+| `checkpoint2-synthesis` | not measured, the CLI hit its session limit | 3, 3 |
+
+`checkpoint1-thin` is the students' complaint, reproduced mechanically. Version 1
+spent seven coach turns on a three-sentence draft, and in the other rep never let
+the student go at all inside the cap. Version 2 finished the same conversation in
+three turns and four.
+
+Two caveats, both cutting against the new numbers looking better than they have
+earned:
+
+- **The version 2 counts predate the paste fix.** They were taken while
+  `buildCoachPrompt` still ended every message with "Coach me by asking one
+  question at a time", so those conversations ran with the old rule arriving
+  inside the student's own paste. Removing it should only help, but that has not
+  been measured, so the harness budgets are set from these numbers rather than
+  from the persona's aspiration until it is.
+- **Two reps is not a sample.** It is enough to show a seven-turn conversation
+  becoming a three-turn one, which is a large effect. It is not enough to
+  distinguish 4 from 3. Re-run at `--reps 5` before believing any smaller
+  difference.
+
+The `checkpoint2-synthesis` gap is a missing measurement, not a passing grade, and
+it is the case where a longer conversation is legitimate, so it is the one worth
+measuring next.
+
 **The honest limits.** The simulated student is more compliant than a real
 fifteen-year-old, never gets bored and never argues, so these counts are a floor:
 a conversation that runs long here runs longer in a classroom. And the three cases
