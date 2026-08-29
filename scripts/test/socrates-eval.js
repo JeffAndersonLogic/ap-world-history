@@ -203,9 +203,23 @@ const GAVE_ANSWER = [
 ];
 
 // An instruction to revise one thing, which under version 2 of the persona is a
-// legitimate ask in place of a question. Deliberately narrow: these are verbs
-// that hand the next move to the student, not verbs that describe the draft.
-const REVISION_ASK = /\b(revise|rewrite|add|replace|cut|name|explain|go back|try again|put)\b/i;
+// legitimate ask in place of a question.
+//
+// The first version of this list was short, on the theory that a narrow list is a
+// strict check. It is not, it is just a wrong one: the 2026-08-29 run scored five
+// replies as asking nothing at all, and every one of them was a clean imperative
+// this list happened not to contain. "Find one piece of evidence that belongs to
+// this topic." "Write your actual argument." "Pick one thing about their workday
+// that changed." A checker that reports good coaching as no coaching sends you
+// looking for a defect in the persona that is really in the checker.
+//
+// So the list is wide, and the honest limit is written down: this is a floor that
+// catches a reply which neither asks nor instructs, pure commentary the student
+// cannot act on. Whether the ask is singular and clear is graded by the rubric,
+// which can read the sentence. Do not narrow this to make the number look strict.
+const REVISION_ASK = new RegExp('\\b(revise|rewrite|add|replace|cut|name|explain'
+  + '|find|write|pick|choose|start|think|look|use|tell|show|give|point|swap|drop'
+  + '|keep|make|take|decide|go back|try again|put)\\b', 'i');
 
 function det(text) {
   const words = text.split(/\s+/).filter(Boolean).length;
