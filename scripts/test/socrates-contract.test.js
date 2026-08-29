@@ -132,7 +132,12 @@ const REQUIRED = [
   [/Your knowledge is AP World History, not only this course/, 'the permission to use AP World knowledge beyond the course'],
   [/Never invent/, 'the never-invent limit on that permission'],
   [/Outside knowledge never overrides the assignment/, 'the limit that the paste still defines the task'],
-  [/count the question\s+marks/, 'the mechanical one-question check'],
+  [/[Cc]ount the question\s+marks/, 'the mechanical one-question check'],
+  // 2026-08-29, found by the eval. Version 2 made an instruction a legal ask and
+  // left the counting rule applying only to question marks, so compound asks came
+  // straight back in the other form. Both halves have to be counted or the rule
+  // only covers whichever one the model happens to reach for.
+  [/An instruction counts\s+exactly the same way/, 'the rule that instructions are counted like questions'],
   // Version 1 pinned "Exactly one, not zero" here as the floor that a turn must
   // actually ask something. That floor is still wanted, but zero questions is now
   // legitimate on a release turn and on a turn that states a diagnosis, so the

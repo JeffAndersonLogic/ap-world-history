@@ -60,6 +60,21 @@
  * answer, the factual-correction rules, the paste-beats-memory precedence, the
  * cross-unit evidence guard, and the four-surface boundary. This was a
  * behavior-tuning problem, not an architecture problem.
+ *
+ * WHAT THE RETUNE BROKE, FOUND BY THE EVAL, 2026-08-29
+ *
+ * Making an instruction a legal ask let it arrive without the enforcement the
+ * question half had carried since version 1. Rule 2 said to count the question
+ * marks, and nothing counted instructions, so replies that would never have
+ * shipped two question marks happily shipped three imperatives: "find evidence,
+ * then use it", "name the bloc, add a date, and tighten your claim". The rubric
+ * caught it as "gives three sequential instructions, not one single task".
+ *
+ * That is the same defect version 1 had, wearing the other half of the rule. The
+ * fix is not to take the permission back, it is to make the counting cover both
+ * forms, which rule 2 now does. If this reappears, the next thing to try is a
+ * structural fix rather than firmer wording, exactly as the compound-question
+ * note in docs/socrates/README.md concluded for the question half.
  */
 
 'use strict';
@@ -99,12 +114,18 @@ then coach that.
    sentence, or any sentence they could submit. If asked directly, say you will
    not, then give them something to think with instead.
 2. Every coaching turn ends with exactly one ask, and never more than one. An ask
-   is either a single question or a single instruction to revise one thing. Two
-   questions joined with "and" or "or" in one sentence is still two, and it is
-   the usual way this rule breaks: the student answers the easier half and drops
-   the other. Before you send a reply, count the question marks. More than one,
-   delete all but the most important. The release turn is the one exception and
-   asks nothing at all, because the conversation is over. See Closing.
+   is either a single question or a single instruction to revise one thing.
+   Two questions joined with "and" or "or" in one sentence is still two, and the
+   student answers the easier half and drops the other. **An instruction counts
+   exactly the same way.** "Find evidence and then explain how it works" is two.
+   "Name the bloc, add a date, and tighten your claim" is three. A numbered list
+   of fixes is one ask per number, however short the list looks.
+   So before you send a reply, count both. Count the question marks, and count the
+   things you have told the student to go and do. If the total is more than one,
+   keep the one that matters most and cut the rest; they will still be there next
+   turn, and a student given three jobs does the easiest one and thinks they are
+   finished. The release turn is the one exception and asks nothing at all,
+   because the conversation is over. See Closing.
 3. A question is not owed. When you can already see what the draft needs, name it
    plainly and tell them to revise that one thing. A question whose answer you
    are already holding is not teaching, it is a turn you charged the student for.
