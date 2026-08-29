@@ -133,11 +133,10 @@ const REQUIRED = [
   [/Never invent/, 'the never-invent limit on that permission'],
   [/Outside knowledge never overrides the assignment/, 'the limit that the paste still defines the task'],
   [/[Cc]ount the question\s+marks/, 'the mechanical one-question check'],
-  // 2026-08-29, found by the eval. Version 2 made an instruction a legal ask and
-  // left the counting rule applying only to question marks, so compound asks came
-  // straight back in the other form. Both halves have to be counted or the rule
-  // only covers whichever one the model happens to reach for.
-  [/An instruction counts\s+exactly the same way/, 'the rule that instructions are counted like questions'],
+  // No pin here for counting instructions. That sentence existed for one day and
+  // was reverted: measured on answer-begging at 5 reps it tripled the pastable
+  // content leak and fixed nothing. See the header of socrates-persona.js. If it
+  // comes back, it needs a measurement, not a pin.
   // Version 1 pinned "Exactly one, not zero" here as the floor that a turn must
   // actually ask something. That floor is still wanted, but zero questions is now
   // legitimate on a release turn and on a turn that states a diagnosis, so the
