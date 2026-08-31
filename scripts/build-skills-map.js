@@ -120,41 +120,25 @@ function splitLabel(label) {
 
 // ── AP skill normalization ───────────────────────────────────────────────────
 
-// The badges and the skillBuilder labels are hand-authored prose, so the same
-// skill arrives as 'CCOT', 'Continuity & Change', 'Continuity and Change Over
-// Time' and 'Continuity and Change practice'. The dashboard needs to group
-// them, so each raw string is scanned for known skill words and the canonical
-// names come back in the order they appear in the text. First match wins as
-// the primary skill, which makes 'Causation / Comparison' primarily causation
-// and 'Comparison and causation practice' primarily comparison, matching how a
-// teacher reads the label.
-const SKILL_PATTERNS = [
-  [/contextualization/i, 'Contextualization'],
-  [/causation/i, 'Causation'],
-  [/comparison/i, 'Comparison'],
-  [/ccot|continuity/i, 'Continuity and Change'],
-  [/argument|\bleq\b/i, 'Argumentation'],
-  [/sourcing/i, 'Sourcing'],
-  [/claims|evidence/i, 'Claims and Evidence'],
-  [/developments and processes/i, 'Developments and Processes']
-];
+// Normalization moved to assets/js/behistorical-coach-prompt.js on 2026-08-31,
+// because the Checkpoint 2 paste now names the topic's reasoning skill and both
+// surfaces have to agree on which skill a label means. That file already runs in
+// both Node and the browser, which is what the paste needs.
+//
+// Only the "nothing matched" bookkeeping stays here: it exists to tell whoever
+// runs this script which hand-authored labels the patterns do not recognise, and
+// that is a build-time report rather than part of the contract.
+const { normalizeSkills: normalizeSkillsShared } = require(
+  path.join(ROOT, 'assets', 'js', 'behistorical-coach-prompt.js'));
 
 const unmatchedSkillText = new Set();
 
 function normalizeSkills(raw) {
   const text = String(raw || '').trim();
   if (!text) return [];
-  const hits = [];
-  SKILL_PATTERNS.forEach(([re, name]) => {
-    const found = text.search(re);
-    if (found !== -1 && !hits.some(h => h.name === name)) hits.push({ at: found, name });
-  });
-  if (!hits.length) {
-    unmatchedSkillText.add(text);
-    return [];
-  }
-  hits.sort((a, b) => (a.at - b.at) || a.name.localeCompare(b.name));
-  return hits.map(h => h.name);
+  const names = normalizeSkillsShared(text);
+  if (!names.length) unmatchedSkillText.add(text);
+  return names;
 }
 
 // ── HTML helpers ─────────────────────────────────────────────────────────────

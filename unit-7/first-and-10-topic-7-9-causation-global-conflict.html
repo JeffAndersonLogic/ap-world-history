@@ -162,6 +162,44 @@ var TOPIC_KEY='7.9';var TOPIC_LABEL='7.9 - Causation in Global Conflict';
     return m ? (UNIT_PERIODS[Number(m[1])] || '') : '';
   }
 
+  // ── AP skill normalization ─────────────────────────────────────────────────
+  //
+  // The skillBuilder labels and the reading badges are hand-authored prose, so
+  // the same skill arrives as 'CCOT', 'Continuity & Change', 'Continuity and
+  // Change practice' and 'Comparison and causation practice'. First match by
+  // position wins as the primary skill, which makes 'Causation / Comparison'
+  // primarily causation, matching how a teacher reads the label.
+  //
+  // This lives here rather than in scripts/build-skills-map.js, which is where
+  // it was written, because two things now need the same answer to "which AP
+  // skill is this topic practising": the Skills Lens dashboard, and the
+  // Checkpoint 2 paste that asks Socrates to coach that skill. Two copies would
+  // eventually give two answers, and the paste's copy is the one nothing would
+  // notice was wrong.
+  var SKILL_PATTERNS = [
+    [/contextualization/i, 'Contextualization'],
+    [/causation/i, 'Causation'],
+    [/comparison/i, 'Comparison'],
+    [/ccot|continuity/i, 'Continuity and Change'],
+    [/argument|\bleq\b/i, 'Argumentation'],
+    [/sourcing/i, 'Sourcing'],
+    [/claims|evidence/i, 'Claims and Evidence'],
+    [/developments and processes/i, 'Developments and Processes']
+  ];
+
+  function normalizeSkills(raw) {
+    var text = String(raw == null ? '' : raw).trim();
+    if (!text) return [];
+    var hits = [];
+    SKILL_PATTERNS.forEach(function (pair) {
+      var at = text.search(pair[0]);
+      var already = hits.some(function (h) { return h.name === pair[1]; });
+      if (at !== -1 && !already) hits.push({ at: at, name: pair[1] });
+    });
+    hits.sort(function (a, b) { return (a.at - b.at) || a.name.localeCompare(b.name); });
+    return hits.map(function (h) { return h.name; });
+  }
+
   function clean(value) {
     return String(value == null ? '' : value).replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
   }
@@ -181,6 +219,7 @@ var TOPIC_KEY='7.9';var TOPIC_LABEL='7.9 - Causation in Global Conflict';
    *   criteria  success criteria sentences
    *   kcs       [{code, text}]
    *   terms     expected evidence terms
+   *   skill     the topic's AP skillBuilder label, normalized before use
    *   checklist strong-answer checklist sentences
    *   assigned  the assigned prompt
    *   draft     the student's single response  (checkpoint shape)
@@ -213,6 +252,19 @@ var TOPIC_KEY='7.9';var TOPIC_LABEL='7.9 - Causation in Global Conflict';
 
     var terms = joinList(c.terms);
     if (terms.length) lines.push('Focus terms: ' + terms.join(', ') + '.');
+
+    // The AP reasoning skill this topic is practising.
+    //
+    // The persona's diagnostic list already ends on "if the prompt calls for
+    // causation, comparison, or continuity and change, does the draft actually
+    // do that reasoning?" It has always had that rung and never been told which
+    // skill applies, so it had to infer one from the prompt's wording.
+    //
+    // Derived from the topic's own skillBuilder label rather than typed onto 77
+    // checkpoints, for the same reason a due date is derived from the schedule:
+    // a second place to state it is a second place for the two to disagree.
+    var skill = normalizeSkills(c.skill)[0] || '';
+    if (skill) lines.push('Reasoning skill: ' + skill + '.');
 
     var checklist = joinList(c.checklist);
     if (checklist.length) lines.push('Strong answer checklist: ' + checklist.join(' '));
@@ -252,6 +304,7 @@ var TOPIC_KEY='7.9';var TOPIC_LABEL='7.9 - Causation in Global Conflict';
 
   var API = {
     buildCoachPrompt: buildCoachPrompt,
+    normalizeSkills: normalizeSkills,
     unitPeriod: unitPeriod,
     UNIT_PERIODS: UNIT_PERIODS
   };

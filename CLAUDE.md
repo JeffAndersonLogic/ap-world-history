@@ -126,6 +126,13 @@ Every script below also has an `npm run` alias; see `package.json`.
   has just stopped saying anything. Expect a high false-positive rate by design;
   see `docs/STYLE.md` for how to triage a hit, and note that the usual repair is
   a narrower **concrete** claim rather than a softer one.
+- `node scripts/report-skill-alignment.js [topic] [--flagged]`, list each topic's
+  AP reasoning skill beside what its Checkpoint 2 actually asks for, and flag the
+  ones whose prompt contains none of that skill's language. **Deliberately not in
+  any suite, and exits 0 always**, same reasoning as the two reports below. The
+  Checkpoint 2 paste now names the topic's skill, so a mislabelled topic points
+  Socrates at a reasoning move the prompt never asked for. See "The reasoning
+  skill in the Checkpoint 2 paste" below for the outstanding triage.
 - `node scripts/report-checkpoint-congruence.js [topicKey] [--counts] [--min=N]`,
   list checkpoint prompts whose own topic publishes an eBook closing card or
   "Use this in your answer" box that answers the same specific question, ranked
@@ -881,6 +888,49 @@ persona still tells a simulation student the roleplay itself is not collected.
 (`abbasid-fragmentation.html`, `cahokia-council.html`, `khmer-court.html`) sit
 unlinked from any lesson data file and were left alone, the same as the v2
 "linked from its lesson data/config" check already treats an unlinked scenario.
+
+### The reasoning skill in the Checkpoint 2 paste
+
+The persona's diagnostic list has always ended on "if the prompt calls for
+causation, comparison, or continuity and change, does the draft actually do that
+reasoning?", and Socrates was never told which skill applied. He had to infer one
+from the prompt's wording. The paste now carries a `Reasoning skill:` line.
+
+**Derived from the topic's own `skillBuilder.label`, never typed onto a
+checkpoint**, for the same reason a due date is derived from the schedule: a
+second place to state it is a second place for the two to disagree.
+
+**One normalizer, in `assets/js/behistorical-coach-prompt.js`.** The labels are
+hand-authored prose, so the same skill arrives as `CCOT`, `Continuity & Change`
+and `Continuity and Change practice`. That normalization used to live in
+`scripts/build-skills-map.js`; it moved because two surfaces now need the same
+answer to "which AP skill is this topic practising", and the paste's copy is the
+one nothing would notice was wrong. `build-skills-map.js` requires it from there
+and keeps only its own "nothing matched" reporting.
+
+**The label data is not clean enough for this yet, and that is the open item.**
+`node scripts/report-skill-alignment.js` lists each topic's named skill beside
+what its Checkpoint 2 actually asks for, and **37 of 74 checkpoints contain none
+of the named skill's language.** The largest clusters are 11 topics labelled
+"Causation practice" and 5 labelled "Evidence, causation, and qualification",
+the latter normalizing to "Claims and Evidence" because Evidence appears first
+in the label, while their prompts read "Develop and qualify an argument". Naming
+the wrong skill is worse than naming none: it points the one coaching
+conversation in the lesson at a reasoning move the prompt never asked for.
+
+So the line is wired and reproducible, and the triage is a teaching decision
+that has to happen before it helps. Three outcomes per row, in the script's
+header: KEEP, RETAG, REWORD.
+
+**The report is deliberately not in any suite and exits 0 always**, the same as
+`report-absolutes.js` and `report-checkpoint-congruence.js`. Whether a
+checkpoint is really doing causation is a judgement about evidence, and a gate
+that failed a push over it would teach one behaviour, which is editing prompts
+until the grep goes quiet. Two earlier versions of its rules were too loose and
+flagged 40 and then 35 of 74, including prompts that open "Write a causation
+argument". It now flags only the total absence of the named skill's language,
+because if the skill is present at all the prompt does it, and how much is not
+something word counts can settle.
 
 ### Checkpoint 1 is independent
 

@@ -220,6 +220,7 @@ function contextBlock(topic, opts) {
     criteria: topic.criteria,
     kcs: topic.kcs,
     terms: cp.terms,
+    skill: topic.skill,
     checklist: cp.focus,
     assigned: cp.prompt,
     draft: o.draft
