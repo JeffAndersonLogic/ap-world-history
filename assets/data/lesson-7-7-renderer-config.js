@@ -124,6 +124,7 @@
       successCriteria: [lesson.successCriteria[2].criteria],
       prompt: 'Explain how new military technology and tactics, including the atomic bomb, fire-bombing, and the waging of total war, led to increased levels of wartime casualties. Use specific evidence and explain how these methods put civilians inside the target zone, escalating beyond even World War I (callback to Topic 7.3).',
       responseType: 'Checkpoint 2',
+      skill: 'Causation',
       terms: ['atomic bomb', 'fire-bombing', 'total war', 'wartime casualties', 'Hiroshima', 'Nagasaki', 'Dresden', 'Tokyo', 'civilian targets', 'military technology'],
       focus: ['Name specific new technology and tactics: the atomic bomb and fire-bombing.', 'Explain how total war put civilians inside the target zone.', 'Connect to Topic 7.3: each war\'s technology made the next deadlier.']
     }

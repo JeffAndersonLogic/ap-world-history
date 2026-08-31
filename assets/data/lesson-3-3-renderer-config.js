@@ -85,6 +85,7 @@
       successCriteria: [lesson.successCriteria[2].criteria],
       prompt: 'Compare Akbar\'s approach to religious diversity with Aurangzeb\'s. What specific policies did each ruler adopt? What were the political consequences of each approach? Use evidence to explain what the contrast reveals about how rulers used religion as a governing tool.',
       responseType: 'Checkpoint 2',
+      skill: 'Comparison',
       terms: ['Akbar', 'Aurangzeb', 'Din-i-Ilahi', 'jizya', 'Fatehpur Sikri', 'tolerance', 'enforcement', 'Rajput', 'syncretic'],
       focus: ['Name at least two specific policies Akbar used to manage religious diversity.', 'Name at least one policy Aurangzeb used to enforce religious conformity.', 'Explain the political consequences, what did each approach produce in terms of loyalty or rebellion?']
     }

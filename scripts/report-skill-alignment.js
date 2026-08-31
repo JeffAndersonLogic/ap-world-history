@@ -9,36 +9,39 @@
  *
  * WHY THIS EXISTS
  *
- * Checkpoint 2's paste now carries a `Reasoning skill:` line, derived from the
- * topic's AP Skill Builder label, so Socrates can coach the reasoning move the
- * lesson is practising instead of inferring one from the prompt's wording.
+ * Checkpoint 2's paste carries a `Reasoning skill:` line so Socrates can coach
+ * the reasoning move in front of the student instead of inferring one from the
+ * prompt's wording.
  *
- * That wiring is only an improvement where the label and the checkpoint are
- * about the same thing, and they are not always. Topic 5.1 is the case that
- * produced this script: its Skill Builder is "Causation practice", while its
- * Checkpoint 2 asks for two mechanisms of spread, two excluded groups, and a
- * defended judgement about whether Enlightenment universalism was genuine. That
- * is argumentation and contextualization work. Telling Socrates to coach
- * causation there makes the coaching worse than it was before, in a way nothing
- * else in the repo would notice.
+ * Which skill that is turned out to be two questions, not one. `skillBuilder.label`
+ * answers "what does module 05 teach". The paste needs "what does module 10
+ * assess". On about a sixth of the course those are different skills: Topic 7.3
+ * teaches students to HIPP a propaganda poster and then asks a Checkpoint 2
+ * about how military technology caused casualties. Deriving the paste from the
+ * label alone named the wrong skill on all of them.
+ *
+ * So a checkpoint may state its own `skill`, and falls back to the Skill Builder
+ * label when it does not. An explicit empty string means "this checkpoint has no
+ * clean AP skill", which is a decision rather than a gap, and sends no line.
+ * This script is what finds the next divergence.
  *
  * **Deliberately not in any suite, and it exits 0 always.** Whether a checkpoint
- * is really doing causation is a judgement about teaching, not something a
- * regex decides, and a gate that failed a push over it would teach one
- * behaviour: edit prompts until the grep goes quiet. Expect false positives by
- * design. This is a worklist, not a verdict, the same shape as
- * report-absolutes.js and report-checkpoint-congruence.js.
+ * is really doing causation is a judgement about teaching, not something a regex
+ * decides, and a gate that failed a push over it would teach one behaviour: edit
+ * prompts until the grep goes quiet. Expect false positives by design, and leave
+ * them. Topic F2 is the standing one: "why should historians treat the six
+ * belief systems as institutions" is argumentation asked as a question, and the
+ * pattern that would catch it would flag half the course.
  *
  * THREE OUTCOMES FOR A HIT
  *
  *   KEEP     the prompt does the named skill, the verbs just do not say so.
- *            Most hits. Nothing to do.
- *   RETAG    the Skill Builder label names the wrong skill for what this topic
- *            actually practises. Fix the label; the paste follows.
+ *   RETAG    the checkpoint assesses a different skill from the one it inherits.
+ *            Give that checkpoint its own `skill`. Do not edit skillBuilder.label
+ *            to fix this: that label describes module 05, which is usually right.
  *   REWORD   the label is right and the checkpoint drifted off it. Fix the
- *            checkpoint prompt, which is the more common real finding, because
- *            a checkpoint that does not exercise the topic's skill is a gap in
- *            the lesson rather than a labelling error.
+ *            prompt. This is the finding worth having, because a checkpoint that
+ *            does not assess what the lesson taught is a gap in the lesson.
  *
  * Usage:
  *   node scripts/report-skill-alignment.js            every topic
@@ -60,8 +63,13 @@ const only = args.find(a => !a.startsWith('--'));
 // What each reasoning skill looks like in the language a prompt uses. These are
 // the words a teacher writes when they mean that move, not a definition of it.
 const SKILL_MARKERS = {
+  // Widened after reading the real prompts: "contributed to", "drove", "the role
+  // of", "escalated into", "affect" and "reasons" are all how a teacher writes a
+  // causal question, and every one of them was a false flag before.
   'Causation': [/\bcause[ds]?\b/i, /\bcausal\b/i, /\bled to\b/i, /\bresult(?:ed|ing)?\b/i,
-    /\bwhy did\b/i, /\beffects?\b/i, /\bconsequences?\b/i, /\bbecause\b/i, /\bmechanism\b/i],
+    /\bwhy\b/i, /\beffects?\b/i, /\baffect/i, /\bconsequences?\b/i, /\bbecause\b/i,
+    /\bmechanism\b/i, /\bcontribut/i, /\bcreated\b/i, /\brole of\b/i, /\bescalat/i,
+    /\binfluenc/i, /\bshaped\b/i, /\bhelped\b/i, /\breasons?\b/i, /\bdr[oi]ve[sn]?\b/i],
   'Comparison': [/\bcompare\b/i, /\bcontrast\b/i, /\bsimilar/i, /\bdiffer/i, /\bboth\b/i,
     /\bwhereas\b/i, /\bthan (?:in|the)\b/i],
   'Continuity and Change': [/\bcontinuit/i, /\bchange[ds]?\b/i, /\bstayed the same\b/i,
@@ -106,6 +114,7 @@ console.log(`${C}${W}AP skill vs what Checkpoint 2 actually asks for${X}`);
 console.log(`${D}A judgement call per row. KEEP, RETAG or REWORD; see the header of this file.${X}\n`);
 
 let flagged = 0;
+let settled = 0;
 let noSkill = 0;
 let checked = 0;
 
@@ -114,7 +123,17 @@ for (const topic of topics) {
   const cp = topic.checkpoints[topic.checkpoints.length - 1];
   if (!cp || !cp.prompt) continue;
 
-  const named = normalizeSkills(topic.skill)[0] || '';
+  // The checkpoint's own skill when it states one, else the Skill Builder's
+  // label. An explicit '' means the author decided this checkpoint has no clean
+  // AP skill, which is a settled answer rather than a gap, so it is not flagged.
+  const declared = cp.skill != null ? cp.skill : topic.skill;
+  if (cp.skill === '') {
+    settled++;
+    if (!FLAGGED_ONLY) console.log(`${D}- Topic ${topic.id}  no AP skill by decision, no skill line sent${X}`);
+    continue;
+  }
+  const names = normalizeSkills(declared);
+  const named = names[0] || '';
   if (!named) {
     noSkill++;
     if (!FLAGGED_ONLY) {
@@ -126,7 +145,8 @@ for (const topic of topics) {
 
   checked++;
   const prompt = String(cp.prompt);
-  const own = markersHit(named, prompt);
+  // Any of the skills the label names, since a compound label sends them all.
+  const own = Math.max(...names.map(n => markersHit(n, prompt)));
   const suggested = skillsPromptSuggests(prompt);
   const top = suggested[0];
 
@@ -139,13 +159,13 @@ for (const topic of topics) {
   const disagrees = own === 0;
   if (!disagrees) {
     if (!FLAGGED_ONLY) {
-      console.log(`${G}✓${X} Topic ${topic.id}  ${W}${named}${X} ${D}(${own} marker${own === 1 ? '' : 's'} in the prompt)${X}`);
+      console.log(`${G}✓${X} Topic ${topic.id}  ${W}${names.join(', ')}${X} ${D}(${own} marker${own === 1 ? '' : 's'} in the prompt)${X}`);
     }
     continue;
   }
 
   flagged++;
-  console.log(`${R}!${X} ${W}Topic ${topic.id}${X}  named ${W}${named}${X}, prompt reads as `
+  console.log(`${R}!${X} ${W}Topic ${topic.id}${X}  named ${W}${names.join(', ')}${X}, prompt reads as `
     + `${W}${top ? top.skill : 'none of the eight'}${X}`);
   console.log(`${D}    label:  ${topic.skill}${X}`);
   console.log(`${D}    prompt: ${prompt.slice(0, 190)}${prompt.length > 190 ? '...' : ''}${X}`);
@@ -154,4 +174,5 @@ for (const topic of topics) {
 
 console.log(`\n${W}${flagged} of ${checked} checkpoints read as a different skill than their label.${X}`);
 if (noSkill) console.log(`${Y}${noSkill} topics have no readable AP skill, so their paste carries no skill line.${X}`);
+if (settled) console.log(`${D}${settled} checkpoints declare no AP skill on purpose.${X}`);
 console.log(`${D}Nothing here fails a build. Triage by hand: KEEP, RETAG or REWORD.${X}\n`);

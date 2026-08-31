@@ -106,6 +106,7 @@
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
       prompt: 'Explain how one technology or crop diffused along trade routes and affected societies. Use specific evidence.',
       responseType: 'Checkpoint 2',
+      skill: 'Causation',
       terms: ['paper', 'printing', 'gunpowder', 'compass', 'cotton', 'sugar', 'citrus', 'diffusion', 'technology transfer'],
       focus: ['Name a specific technology or crop.', 'Explain where it originated and where it spread to.', 'Explain how it changed the society that received it.']
     }

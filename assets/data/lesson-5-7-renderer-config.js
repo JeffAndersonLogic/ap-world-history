@@ -95,6 +95,7 @@
       successCriteria: [lesson.successCriteria[1].criteria],
       prompt: 'Explain the political context of British free trade advocacy: why did Britain promote free trade so aggressively in the 19th century, and why did Germany and the United States reject British free trade advice while industrializing? Then explain economic imperialism: choose one case (Latin America, Ottoman Empire, or China) and explain specifically how economic relationships, debt, investment, or trade, achieved colonial-like control without formal annexation. What specific mechanism created the dependency? End with a synthesis: is economic imperialism fundamentally different from political imperialism, or does it achieve the same results through different means?',
       responseType: 'Checkpoint 2',
+      skill: 'Causation and contextualization',
       terms: ['comparative advantage', 'Corn Laws', 'Anti-Corn Law League', 'gold standard', 'economic imperialism', 'Ottoman Public Debt Administration', 'Latin American debt dependency', 'treaty ports', 'extraterritoriality', 'informal empire'],
       focus: ['Explain why Britain advocated free trade and why other industrializing countries rejected it.', 'Explain the specific mechanism of economic imperialism in one case, how debt or investment created dependency.', 'Synthesize: is economic imperialism fundamentally different from formal colonialism?']
     }

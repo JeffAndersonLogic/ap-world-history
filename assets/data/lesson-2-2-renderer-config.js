@@ -100,6 +100,7 @@
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
       prompt: 'Explain two effects of the Pax Mongolica on Afro-Eurasian exchange. Consider both positive effects (trade, diplomacy) and negative effects (plague).',
       responseType: 'Checkpoint 2',
+      skill: 'Causation',
       terms: ['Pax Mongolica', 'trade', 'diplomacy', 'plague', 'Black Death', 'Marco Polo', 'Ibn Battuta', 'connectivity'],
       focus: ['Name at least two distinct effects.', 'Explain whether each effect was connective, destructive, or both.', 'Connect the Pax Mongolica to wider Afro-Eurasian patterns of exchange and disruption.']
     }

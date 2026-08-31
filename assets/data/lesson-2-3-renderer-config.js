@@ -122,6 +122,7 @@
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
       prompt: 'Explain two effects of Indian Ocean trade on the societies connected by these routes. Use specific evidence such as goods traded, diasporic communities, or the spread of Islam.',
       responseType: 'Checkpoint 2',
+      skill: 'Causation',
       terms: ['spices', 'textiles', 'gold', 'ivory', 'diaspora', 'Islam', 'Kilwa', 'Calicut', 'Swahili', 'port city'],
       focus: ['Name at least two effects.', 'Use specific place names or goods as evidence.', 'Explain how the effect changed societies along the Indian Ocean world.']
     }

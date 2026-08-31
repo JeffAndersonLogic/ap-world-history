@@ -99,7 +99,11 @@ const byId=id=>document.getElementById(id);
     [/causation/i, 'Causation'],
     [/comparison/i, 'Comparison'],
     [/ccot|continuity/i, 'Continuity and Change'],
-    [/argument|\bleq\b/i, 'Argumentation'],
+    // "qualification" is argumentation language: qualifying a claim is the move.
+    // Without it, "Evidence, causation, and qualification" reported as Claims and
+    // Evidence alone, against checkpoints that say "Develop and qualify an
+    // argument".
+    [/argument|qualif|\bleq\b/i, 'Argumentation'],
     [/sourcing/i, 'Sourcing'],
     [/claims|evidence/i, 'Claims and Evidence'],
     [/developments and processes/i, 'Developments and Processes']
@@ -137,7 +141,15 @@ const byId=id=>document.getElementById(id);
    *   criteria  success criteria sentences
    *   kcs       [{code, text}]
    *   terms     expected evidence terms
-   *   skill     the topic's AP skillBuilder label, normalized before use
+   *   skill     which AP skill THIS assignment assesses, normalized before use.
+   *             Callers pass the checkpoint's own `skill` when it has one and
+   *             fall back to the topic's skillBuilder label. Those are two
+   *             different facts: what module 05 teaches, and what module 10
+   *             assesses. On about a sixth of the course they differ, so the
+   *             fallback alone named the wrong skill. An explicit empty string
+   *             means "this checkpoint has no clean AP skill", and no line is
+   *             emitted, which is honest rather than forcing a label onto a
+   *             descriptive prompt.
    *   checklist strong-answer checklist sentences
    *   assigned  the assigned prompt
    *   draft     the student's single response  (checkpoint shape)
@@ -181,8 +193,16 @@ const byId=id=>document.getElementById(id);
     // Derived from the topic's own skillBuilder label rather than typed onto 77
     // checkpoints, for the same reason a due date is derived from the schedule:
     // a second place to state it is a second place for the two to disagree.
-    var skill = normalizeSkills(c.skill)[0] || '';
-    if (skill) lines.push('Reasoning skill: ' + skill + '.');
+    // Every skill the label names, not just the first.
+    //
+    // Many labels are compound: "Comparison and causation practice", "Evidence,
+    // causation, and qualification". Collapsing those to a single primary picked
+    // by position told Socrates to coach comparison on five Unit 6 checkpoints
+    // that do causation and argumentation, and Claims and Evidence on five Unit
+    // 9 checkpoints that say "Develop and qualify an argument". Naming all of
+    // them is both more honest and less work than deciding which one wins.
+    var skills = normalizeSkills(c.skill);
+    if (skills.length) lines.push('Reasoning skill: ' + skills.join(', ') + '.');
 
     var checklist = joinList(c.checklist);
     if (checklist.length) lines.push('Strong answer checklist: ' + checklist.join(' '));
@@ -563,6 +583,16 @@ function independentCheckpointNote(){
     </div>`;
 }
 
+// Which AP skill the checkpoint in front of the student assesses. Foundations
+// keeps its checkpoint data in one `checkpoint` object shared by both modules,
+// so an explicit `skill` there applies to the synthesis checkpoint; otherwise
+// the Skill module's own label stands in.
+function checkpointSkill(mode){
+  const cp=T.checkpoint||{};
+  if(mode==='Checkpoint 2'&&cp.skill!=null) return cp.skill;
+  return (T.skill&&(T.skill.label||T.skill.title))||'';
+}
+
 function coachBridge(id,mode){
   COACH_MS[id]={mode};
   const COACH_URL=coachMagicSchoolUrl();
@@ -619,7 +649,9 @@ function generateFoundationsCoachPrompt(id){
     terms:T.terms||[],
     // Foundations has no skillBuilder; its AP skill sits in the Skill module's
     // own title, which is what build-skills-map.js reads for these six topics.
-    skill:(T.skill&&(T.skill.label||T.skill.title))||'',
+    // The checkpoint's own skill when it names one, else the Skill module's.
+    // See behistorical-coach-prompt.js: those are two different facts.
+    skill:checkpointSkill(mode),
     checklist:(T.checkpoint&&T.checkpoint.checklist)||[],
     assigned:mode==='Checkpoint 2'?(T.exitTicket||T.checkpoint.prompt):T.checkpoint.prompt,
     draft:responseText

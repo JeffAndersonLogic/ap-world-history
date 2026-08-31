@@ -96,6 +96,7 @@
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
       prompt: 'Describe at least TWO key European voyages of exploration, including what route they followed and what they found or established. Then explain what the Treaty of Tordesillas reveals about European assumptions regarding non-European peoples, and briefly describe how at least one non-European group experienced European exploration.',
       responseType: 'Checkpoint 2',
+      skill: '',
       terms: ['Vasco da Gama', 'Columbus', 'Magellan', 'Cape of Good Hope', 'Caribbean', 'circumnavigation', 'Treaty of Tordesillas', 'Taíno', 'encomienda', 'indigenous peoples'],
       focus: ['Describe at least two specific voyages with routes and outcomes.', 'Explain the Treaty of Tordesillas and what European assumptions it reflects.', 'Describe the experience of at least one non-European group during the era of exploration.']
     }

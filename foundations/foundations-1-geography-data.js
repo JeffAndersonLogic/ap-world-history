@@ -156,7 +156,8 @@ window.FOUNDATION_TOPIC = {
   },
 
   checkpoint: {
-    title: 'Exit Ticket: Geography Shapes Civilization',
+skill: 'Causation and contextualization',
+        title: 'Exit Ticket: Geography Shapes Civilization',
     prompt: 'Explain how geography made the shift from hunting and gathering to civilization possible. Your answer should identify a specific geographic condition, connect it to the beginning of agriculture, and explain how the resulting surplus produced at least one characteristic of civilization, using cause-and-effect reasoning.',
     checklist: [
       'I named a specific geographic feature (a river, fertile soil, a domesticable species, a grassland).',

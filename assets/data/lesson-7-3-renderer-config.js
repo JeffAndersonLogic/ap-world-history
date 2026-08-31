@@ -108,6 +108,7 @@
       successCriteria: [lesson.successCriteria[2].criteria],
       prompt: 'Explain how new military technology led to increased levels of wartime casualties in World War I. Use at least three specific technologies, explain the mechanism for each (how it killed or wounded at new scale), and end with one sentence on an ethical question this human cost raised.',
       responseType: 'Checkpoint 2',
+      skill: 'Causation',
       terms: ['machine guns', 'trench warfare', 'stalemate', 'tanks', 'aircraft', 'chemical weapons', 'mustard gas', 'artillery', 'casualties', 'Somme', 'Verdun'],
       focus: ['Name at least three specific technologies as evidence.', 'Explain the mechanism: how did each technology raise casualty levels (e.g., machine guns → massed attacks fail → trench stalemate → battles of attrition)?', 'Close with one ethical question the unprecedented human cost raised.']
     }

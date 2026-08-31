@@ -896,41 +896,56 @@ causation, comparison, or continuity and change, does the draft actually do that
 reasoning?", and Socrates was never told which skill applied. He had to infer one
 from the prompt's wording. The paste now carries a `Reasoning skill:` line.
 
-**Derived from the topic's own `skillBuilder.label`, never typed onto a
-checkpoint**, for the same reason a due date is derived from the schedule: a
-second place to state it is a second place for the two to disagree.
+**Which skill that is turned out to be two questions, not one.**
+`skillBuilder.label` answers "what does module 05 teach". The paste needs "what
+does module 10 assess". On about a sixth of the course those are different
+skills, and deriving the paste from the label alone named the wrong one on every
+one of them. Topic 7.3 is the case: its AP Skill Builder is "HIPP a Propaganda
+Poster", genuinely sourcing, and its Checkpoint 2 asks how military technology
+caused casualties.
 
-**One normalizer, in `assets/js/behistorical-coach-prompt.js`.** The labels are
-hand-authored prose, so the same skill arrives as `CCOT`, `Continuity & Change`
-and `Continuity and Change practice`. That normalization used to live in
-`scripts/build-skills-map.js`; it moved because two surfaces now need the same
-answer to "which AP skill is this topic practising", and the paste's copy is the
-one nothing would notice was wrong. `build-skills-map.js` requires it from there
-and keeps only its own "nothing matched" reporting.
+So **a checkpoint may declare its own `skill`, and inherits the Skill Builder's
+label when it does not.** That is not the duplication this repo forbids: two
+modules practising two skills are two different facts, each stated once. Twelve
+checkpoints declare one today. An explicit empty string means "this checkpoint
+has no clean AP reasoning skill" and sends no line, which is honest rather than
+forcing a label onto a descriptive prompt; Topic 4.2 is the one.
 
-**The label data is not clean enough for this yet, and that is the open item.**
-`node scripts/report-skill-alignment.js` lists each topic's named skill beside
-what its Checkpoint 2 actually asks for, and **37 of 74 checkpoints contain none
-of the named skill's language.** The largest clusters are 11 topics labelled
-"Causation practice" and 5 labelled "Evidence, causation, and qualification",
-the latter normalizing to "Claims and Evidence" because Evidence appears first
-in the label, while their prompts read "Develop and qualify an argument". Naming
-the wrong skill is worse than naming none: it points the one coaching
-conversation in the lesson at a reasoning move the prompt never asked for.
+**Do not fix a mismatch by editing `skillBuilder.label`.** That label describes
+the Skill Builder module, and on every topic checked it was accurate. Retagging
+it to match the checkpoint would corrupt a correct label to patch a paste.
 
-So the line is wired and reproducible, and the triage is a teaching decision
-that has to happen before it helps. Three outcomes per row, in the script's
-header: KEEP, RETAG, REWORD.
+**A compound label sends every skill it names.** Many are compound: "Comparison
+and causation practice", "Evidence, causation, and qualification". Collapsing
+those to a single primary picked by position told Socrates to coach comparison on
+five Unit 6 checkpoints that do causation and argumentation. `normalizeSkills`
+also reads "qualification" as argumentation language, because qualifying a claim
+is the move.
 
-**The report is deliberately not in any suite and exits 0 always**, the same as
-`report-absolutes.js` and `report-checkpoint-congruence.js`. Whether a
-checkpoint is really doing causation is a judgement about evidence, and a gate
-that failed a push over it would teach one behaviour, which is editing prompts
-until the grep goes quiet. Two earlier versions of its rules were too loose and
-flagged 40 and then 35 of 74, including prompts that open "Write a causation
-argument". It now flags only the total absence of the named skill's language,
-because if the skill is present at all the prompt does it, and how much is not
-something word counts can settle.
+**One normalizer, in `assets/js/behistorical-coach-prompt.js`.** It used to live
+in `scripts/build-skills-map.js`; it moved because two surfaces now need the same
+answer to "which AP skill is this", and the paste's copy is the one nothing would
+notice was wrong. `build-skills-map.js` requires it from there and keeps only its
+own "nothing matched" reporting.
+
+**`node scripts/report-skill-alignment.js` is what finds the next divergence.**
+It reads each checkpoint's declared skill, falls back to the label, and flags a
+prompt containing none of that skill's language. It found the original 37 and is
+down to 1, which is Foundations 2: "why should historians treat the six belief
+systems as institutions" is argumentation asked as a question, and the pattern
+that would catch it would flag half the course. **Leave it flagged.** A report
+tuned until it goes quiet is a report that has stopped saying anything, which is
+the same defect as a nightly that is red for a reason nobody can fix.
+
+**Deliberately not in any suite, and it exits 0 always**, the same as
+`report-absolutes.js` and `report-checkpoint-congruence.js`. Whether a checkpoint
+is really doing causation is a judgement about teaching. Three outcomes for a
+hit, in the script's header: KEEP, RETAG the checkpoint, or REWORD the prompt.
+
+**The finding underneath this is a lesson-design one, and it is not fixed.** On
+those topics the AP Skill Builder teaches one skill and Checkpoint 2 assesses
+another, inside a single 90-minute block. Declaring the checkpoint's own skill
+makes the coaching correct and records the divergence; it does not close it.
 
 ### Checkpoint 1 is independent
 

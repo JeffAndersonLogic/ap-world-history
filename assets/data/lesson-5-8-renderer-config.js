@@ -96,6 +96,7 @@
       successCriteria: [lesson.successCriteria[1].criteria],
       prompt: 'Explain the structural connection between industrial capitalism and American slavery, how were they economically linked through the cotton economy, and what did this connection mean for the abolitionist movement\'s political challenge? Then describe how two non-labor reform movements (choose two: public education reform, public health reform, temperance) addressed specific social dislocations created by industrialization. For each, explain: what specific industrial-era problem did this reform address, and what argument did reformers make for it? End with a synthesis: did these reform movements challenge industrial capitalism or stabilize it?',
       responseType: 'Checkpoint 2',
+      skill: 'Causation',
       terms: ['abolitionism', 'Baptist War', 'Frederick Douglass', 'Thirteenth Amendment', 'Cotton Famine', 'Forster Act', 'Edwin Chadwick', 'germ theory', 'Bazalgette sewer', 'WCTU'],
       focus: ['Explain the structural connection between industrial capitalism and slavery through the cotton economy.', 'Describe two non-labor reform movements and their specific arguments and targets.', 'Synthesize: did reform movements challenge or stabilize industrial capitalism?']
     }

@@ -14218,7 +14218,8 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "skill": "Claims and Evidence",
           "skills": [
             "Claims and Evidence",
-            "Causation"
+            "Causation",
+            "Argumentation"
           ],
           "skillRaw": "Evidence, causation, and qualification",
           "skillFrom": "skillBuilder.label",
@@ -14401,7 +14402,8 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "skill": "Claims and Evidence",
           "skills": [
             "Claims and Evidence",
-            "Causation"
+            "Causation",
+            "Argumentation"
           ],
           "skillRaw": "Evidence, causation, and qualification",
           "skillFrom": "skillBuilder.label",
@@ -14584,7 +14586,8 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "skill": "Claims and Evidence",
           "skills": [
             "Claims and Evidence",
-            "Causation"
+            "Causation",
+            "Argumentation"
           ],
           "skillRaw": "Evidence, causation, and qualification",
           "skillFrom": "skillBuilder.label",
@@ -14767,7 +14770,8 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "skill": "Claims and Evidence",
           "skills": [
             "Claims and Evidence",
-            "Causation"
+            "Causation",
+            "Argumentation"
           ],
           "skillRaw": "Evidence, causation, and qualification",
           "skillFrom": "skillBuilder.label",
@@ -14950,7 +14954,8 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "skill": "Claims and Evidence",
           "skills": [
             "Claims and Evidence",
-            "Causation"
+            "Causation",
+            "Argumentation"
           ],
           "skillRaw": "Evidence, causation, and qualification",
           "skillFrom": "skillBuilder.label",

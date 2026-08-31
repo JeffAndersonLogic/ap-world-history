@@ -133,6 +133,10 @@ function unitTopics() {
         label: clean(c.responseType) || clean(c.title),
         prompt: clean(c.prompt),
         terms: list(c.terms),
+        // A checkpoint's own AP skill, when it states one. Left undefined
+        // otherwise so the caller can fall back to the topic's Skill Builder
+        // label, and distinguishable from an explicit '' meaning "no clean skill".
+        skill: c.skill == null ? undefined : clean(c.skill),
         focus: list(c.focus)
       })),
       skill: L.skillBuilder ? clean(L.skillBuilder.label || L.skillBuilder.title) : ''
@@ -170,7 +174,9 @@ function foundationsTopics() {
       });
     }
     if (T.exitTicket) {
-      checkpoints.push({ label: 'Checkpoint 2', prompt: clean(T.exitTicket), terms, focus: [] });
+      checkpoints.push({ label: 'Checkpoint 2', prompt: clean(T.exitTicket), terms,
+        skill: (T.checkpoint && T.checkpoint.skill != null) ? clean(T.checkpoint.skill) : undefined,
+        focus: [] });
     }
     out.push({
       id: `F${n}`,
@@ -220,7 +226,9 @@ function contextBlock(topic, opts) {
     criteria: topic.criteria,
     kcs: topic.kcs,
     terms: cp.terms,
-    skill: topic.skill,
+    // The checkpoint's own skill wins; the topic's Skill Builder label is the
+    // fallback. See behistorical-coach-prompt.js for why these differ.
+    skill: cp.skill != null ? cp.skill : topic.skill,
     checklist: cp.focus,
     assigned: cp.prompt,
     draft: o.draft

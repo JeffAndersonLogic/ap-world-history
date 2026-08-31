@@ -219,6 +219,7 @@ window.BEHISTORICAL_LESSON = {
       subtitle: 'Checks trade, geography, and political power — LO H.',
       prompt: 'Explain how Indian Ocean trade helped spread goods, religions, and cultural practices in South and Southeast Asia between c. 1200 and c. 1450.',
       responseType: 'Checkpoint 2',
+      skill: 'Causation',
       learningTargets: ['I can explain how trade shaped regional states and cultural exchange in South and Southeast Asia.'],
       successCriteria: ['I can connect geography, ports, and exchange to state-building and cultural diffusion.'],
       terms: ['Indian Ocean', 'monsoon winds', 'merchants', 'Srivijaya', 'Majapahit', 'Strait of Malacca', 'ports', 'Islam', 'Buddhism', 'trade routes', 'maritime'],

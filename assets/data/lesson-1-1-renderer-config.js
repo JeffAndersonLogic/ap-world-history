@@ -122,6 +122,7 @@
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
       prompt: 'How did Song China\'s economic innovations, including new agricultural techniques, manufacturing advances, and the commercialization of its economy, affect not only Chinese society but also trade across the wider Afro-Eurasian world? In your response, connect at least one Song development to the Indian Ocean trade networks or Silk Road exchange routes that linked China to South Asia, Southeast Asia, the Islamic world, and beyond.',
       responseType: 'Checkpoint 2',
+      skill: 'Causation and contextualization',
       terms: ['Confucianism', 'Buddhism', 'Champa rice', 'Grand Canal', 'paper money', 'commercialization', 'urbanization', 'printing', 'Indian Ocean trade networks', 'Silk Road connections'],
       focus: ['Use one cultural example.', 'Use one economic or technological example.', 'Explain the connection to East Asian influence, population growth, commercial expansion, or trade networks.']
     }

@@ -162,7 +162,8 @@ window.FOUNDATION_TOPIC = {
   },
 
   checkpoint: {
-    title: 'Exit Ticket: Belief Systems & Cultural Exchange',
+skill: 'Argumentation',
+        title: 'Exit Ticket: Belief Systems & Cultural Exchange',
     prompt: 'Choose ONE of the six belief systems and explain how it functioned as a social institution in a specific region before c.1200. Your answer should name the belief system, identify a specific institutional function it performed, and support the claim with historical evidence.',
     checklist: [
       'I named a specific belief system (Confucianism, Daoism, Hinduism, Buddhism, Christianity, or Islam).',

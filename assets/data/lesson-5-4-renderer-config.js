@@ -88,6 +88,7 @@
       successCriteria: [lesson.successCriteria[1].criteria],
       prompt: 'Explain why India did not industrialize in the 19th century despite having sophisticated pre-existing textile manufacturing, a large labor force, and raw materials. Be specific about the colonial mechanism, what exactly did British colonial policy do, and how did it prevent Indian industrialization? Then explain the "sovereignty argument": why could Germany impose protective tariffs that India was forbidden to use? End with a synthesis: overall, was the failure of most of Asia, Africa, and Latin America to industrialize primarily a result of natural disadvantages or deliberate colonial policy?',
       responseType: 'Checkpoint 2',
+      skill: 'Causation and comparison',
       terms: ['deindustrialization', 'India textile industry', 'protective tariffs', 'Treaty of Balta Liman', 'Muhammad Ali', 'comparative advantage', 'raw material supplier', 'political sovereignty', 'dependency', 'unequal treaties'],
       focus: ['Explain the specific colonial mechanism that blocked Indian industrialization, not vague, but the actual policy tool.', 'Explain the sovereignty argument, why Germany could do what India could not.', 'Make a supported synthesis claim: natural disadvantages or colonial policy?']
     }
