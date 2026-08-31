@@ -83,8 +83,11 @@ const CASES = [
 const FOUNDATIONS = {
   id: 'F3',
   page: 'foundations/foundations-3-states-power.html',
+  // Checkpoint 1 is not here any more, and its absence is the point. It became
+  // an independent formative diagnostic on 2026-08-31, so it renders no bridge
+  // and has no paste to compare. The unit and Foundations renderers are both
+  // asserted below to have stopped emitting one.
   slots: [
-    { textarea: 'foundations-3-checkpoint', module: 'Checkpoint 1' },
     { textarea: 'foundations-3-checkpoint2', module: 'Checkpoint 2' }
   ]
 };
@@ -120,6 +123,27 @@ const DRAFT = 'The alliance system turned a regional crisis into a world war bec
     check('the shared builder reached the page',
       await page.evaluate(() => typeof window.BH_COACH === 'object'
         && typeof window.BH_COACH.buildCoachPrompt === 'function'));
+
+    // Checkpoint 1 first, because it must offer no route to Socrates at all.
+    // This is the renderer 71 of the 77 topics use, so it carries more of the
+    // course than the Foundations case below.
+    await page.evaluate(() => window.openModule('checkpoint1'));
+    await page.waitForSelector('#pop-modal.show');
+    await page.waitForSelector('#checkpoint-one-response');
+    const cp1 = await page.evaluate(() => ({
+      preview: !!document.getElementById('checkpoint-one-response-ms-preview'),
+      bridges: document.querySelectorAll('#pop-body .magicschool-bridge').length,
+      coachControls: [...document.querySelectorAll('#pop-body a, #pop-body button')]
+        .filter(el => /ai coach|magicschool|socrates/i.test(el.textContent)).length,
+      saysSoloWork: /on your own/i.test(document.getElementById('pop-body').textContent),
+      stillHasDraftBox: !!document.getElementById('checkpoint-one-response')
+    }));
+    check('Checkpoint 1 renders no coach bridge', cp1.bridges === 0 && cp1.preview === false,
+      `${cp1.bridges} bridge(s)`);
+    check('Checkpoint 1 offers no button or link to Socrates', cp1.coachControls === 0,
+      `${cp1.coachControls} found`);
+    check('Checkpoint 1 says it is unaided rather than just losing a button', cp1.saysSoloWork);
+    check('Checkpoint 1 still captures a response for Canvas', cp1.stillHasDraftBox);
 
     // Checkpoint 2 is module 10. Open it by id rather than by grid position so a
     // reordered module grid fails the module contract test, not this one.
@@ -195,6 +219,29 @@ const DRAFT = 'The alliance system turned a regional crisis into a world war bec
   check('the shared builder reached the Foundations page',
     await page.evaluate(() => typeof window.BH_COACH === 'object'
       && typeof window.BH_COACH.buildCoachPrompt === 'function'));
+
+  // Checkpoint 1 is the unaided diagnostic, so it must render no way to reach
+  // Socrates at all. validate.js asserts the renderers' source shape offline;
+  // this is the half only a browser can answer, which is what a student
+  // actually sees on the card.
+  await page.evaluate(() => window.openModule('checkpoint1'));
+  await page.waitForSelector('#pop-modal.show');
+  await page.waitForSelector('#foundations-3-checkpoint');
+  const cp1 = await page.evaluate(() => ({
+    preview: !!document.getElementById('foundations-3-checkpoint-ms-preview'),
+    bridges: document.querySelectorAll('#pop-body .magicschool-bridge').length,
+    coachLinks: [...document.querySelectorAll('#pop-body a, #pop-body button')]
+      .filter(el => /ai coach|magicschool|socrates/i.test(el.textContent)).length,
+    saysSoloWork: /on your own/i.test(document.getElementById('pop-body').textContent),
+    stillHasDraftBox: !!document.getElementById('foundations-3-checkpoint')
+  }));
+  check('Checkpoint 1: renders no coach prompt preview', cp1.preview === false);
+  check('Checkpoint 1: renders no coach bridge', cp1.bridges === 0, `${cp1.bridges} found`);
+  check('Checkpoint 1: offers no button or link to Socrates', cp1.coachLinks === 0,
+    `${cp1.coachLinks} found`);
+  check('Checkpoint 1: tells the student it is unaided rather than just losing a button',
+    cp1.saysSoloWork);
+  check('Checkpoint 1: still captures a response for Canvas', cp1.stillHasDraftBox);
 
   for (const slot of FOUNDATIONS.slots) {
     const moduleId = slot.module === 'Checkpoint 1' ? 'checkpoint1' : 'checkpoint2';

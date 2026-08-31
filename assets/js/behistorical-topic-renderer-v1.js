@@ -853,83 +853,10 @@ function renderFirst10() {
     </div>
     <div class="card" style="margin-top:1.25rem;">
       <h3>First &amp; 10 Response Questions</h3>
-      <p style="font-size:.85rem;opacity:.8;margin-bottom:1rem;">Answer all three questions. Your answers will build your AI Coach prompt before you move to the lecture.</p>
+      <p style="font-size:.85rem;opacity:.8;margin-bottom:1rem;">Answer all three questions in your own words, then move on to the lecture.</p>
       ${questionBlocks}
     </div>
-    ${renderFirst10AIBridge(msUrl, canvasNote, topic, topicTitle, questions)}`;
-}
-
-// Renders the AI bridge block that sits below the question boxes
-function renderFirst10AIBridge(msUrl, canvasNote, topic, topicTitle, questions) {
-  return `
-    <div class="magicschool-bridge first10-bridge" style="margin-top:1.25rem;">
-      <h3>Take Your Thinking to the AI Coach</h3>
-      <p>Before moving to the lecture, use your answers above to build your AI Coach prompt. The coach will ask you one question at a time to strengthen your historical reasoning.</p>
-      <p style="font-size:.82rem;opacity:.85;margin:.5rem 0 .75rem;">Click <strong>Build My AI Coach Prompt</strong> to package your answers. Then copy and paste into the BeHistorical AI Coach.</p>
-      <div class="copy-template">
-        <p class="copy-template-text" id="first10-ms-preview">Your AI Coach prompt will appear here after you click Build My AI Coach Prompt.</p>
-      </div>
-      <div class="tool-row" style="margin-top:.75rem;">
-        <button class="btn" type="button" onclick="generateFirst10Prompt()">Build My AI Coach Prompt</button>
-        <button class="btn secondary" type="button" onclick="copyFirst10Prompt()">Copy Prompt</button>
-        <a class="btn secondary" href="${msUrl}" target="_blank" rel="noopener">Open AI Coach</a>
-      </div>
-      <div id="first10-ms-result" class="check-result"></div>
-      <p class="canvas-note">${canvasNote}</p>
-    </div>`;
-}
-
-// ── First & 10 prompt generator ───────────────────────────────────────────────
-//
-// Reads each question textarea by ID (first10-q1, first10-q2, first10-q3),
-// packages answers into a structured MagicSchool-ready prompt,
-// and displays it in the preview block.
-
-function generateFirst10Prompt() {
-  const previewEl = byId('first10-ms-preview');
-  const resultEl  = byId('first10-ms-result');
-  const topic     = (L && L.meta && L.meta.topic)  ? L.meta.topic  : 'this topic';
-  const topicTitle= (L && L.meta && L.meta.title)  ? L.meta.title  : '';
-  const questions = (L && L.first10 && L.first10.questions) ? L.first10.questions : [];
-
-  // Gather answers, fall back to placeholder if blank
-  const answers = questions.map((q, i) => {
-    const el  = byId(`first10-q${i + 1}`);
-    const val = (el && el.value && el.value.trim()) ? el.value.trim() : '[no answer yet]';
-    return `${i + 1}. ${val}`;
-  });
-
-  // Check that at least one answer is filled in
-  const hasAnswer = answers.some(a => !a.includes('[no answer yet]'));
-  if (!hasAnswer) {
-    if (resultEl) resultEl.textContent = 'Answer at least one question above before building your prompt.';
-    return;
-  }
-
-  // Build the structured MagicSchool prompt
-  const prompt = [
-    `${topic}, First & 10 Reflection${topicTitle ? `, ${topicTitle}` : ''}.`,
-    `I just read the First & 10 reading. Here are my responses:`,
-    ``,
-    ...answers,
-    ``,
-    `Please coach me by asking one question at a time. Help me strengthen my evidence, historical reasoning, and explanation. Do not write my final answer for me.`
-  ].join('\n');
-
-  if (previewEl) previewEl.textContent = prompt;
-  if (resultEl)  resultEl.textContent  = 'Prompt ready, click Copy Prompt, then paste it into the BeHistorical AI Coach.';
-}
-
-function copyFirst10Prompt() {
-  const previewEl = byId('first10-ms-preview');
-  const resultEl  = byId('first10-ms-result');
-  if (!previewEl || previewEl.textContent.includes('will appear here')) {
-    generateFirst10Prompt();
-    return;
-  }
-  navigator.clipboard.writeText(previewEl.textContent)
-    .then(()  => { if (resultEl) resultEl.textContent = 'Prompt copied, paste it into the BeHistorical AI Coach.'; })
-    .catch(()  => { if (resultEl) resultEl.textContent = 'Copy failed. Select the prompt text above and copy it manually.'; });
+    `;
 }
 
 // ── BeSurreal ─────────────────────────────────────────────────────────────────
@@ -1007,6 +934,33 @@ function renderCheckpoint(cp, id) {
       </article>
     </div>
     ${responseBlock(id, cp.prompt, cp.responseType, cp.terms || [])}
+    ${msMode === 'Checkpoint 1' ? independentCheckpointNote() : coachedCheckpointBridge(id, msUrl, canvasNote)}`;
+}
+
+// Checkpoint 1 is deliberately independent as of 2026-08-31.
+//
+// It is the lesson's formative diagnostic, and its question is whether the
+// student can show the learning target at this point without help. Coaching it
+// before it is captured measures the coaching. Saying so on the card matters:
+// students had a coach here all year, and a button that simply vanishes reads
+// as something broken rather than as a decision.
+//
+// The feedback loop this used to provide does not disappear, it moves to the
+// teacher, in the room, in the same block. On an alternating block nothing
+// carries over, so that is a commitment rather than a thing that happens by
+// itself.
+function independentCheckpointNote() {
+  return `
+    <div class="component-note">
+      <strong>Do this one on your own.</strong> Checkpoint 1 is where you and your
+      teacher find out what has landed so far, so there is no AI coaching here.
+      Write what you actually think, including the parts you are unsure about.
+      Socrates is waiting at Checkpoint 2, once you have more to work with.
+    </div>`;
+}
+
+function coachedCheckpointBridge(id, msUrl, canvasNote) {
+  return `
     <div class="magicschool-bridge">
       <h3>Take Your Thinking to the AI Coach</h3>
       <p>Coaching happens between your first draft and what you hand in. Socrates gives you one thing to work on at a time; he will not write your answer for you.</p>
@@ -1028,6 +982,7 @@ function renderCheckpoint(cp, id) {
       <p class="canvas-note">${canvasNote}</p>
     </div>`;
 }
+
 
 // ── Checkpoint prompt build and copy ──────────────────────────────────────────
 //

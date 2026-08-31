@@ -841,8 +841,16 @@ whole design. Read `docs/socrates/README.md` before touching any of it.
   and ten were malformed badly enough to kill their page's entire script block.
 - **The spine** is the generated attachment, for questions off the module path.
 
-**Four assignments reach him, and only four:** the First & 10 Reflection, Checkpoint
-1, Checkpoint 2, and BeInTheRoom. Both renderers carry the checkpoint bridge, all
+**Three assignments reach him as of 2026-08-31:** the First & 10 Reflection,
+Checkpoint 2, and BeInTheRoom. Checkpoint 1 was the fourth until it became the
+unaided diagnostic described below, and the First & 10 builder is scheduled to
+follow it, which will leave Checkpoint 2 and BeInTheRoom as the only two.
+
+**The persona still names four, and that is a known gap rather than an
+oversight.** It lives in a vendor UI no test here can read, so every edit to it
+is a manual paste, and it is worth doing once at the end of this sequence rather
+than three times. Until then Socrates is told about a Checkpoint 1 surface no
+student can reach, which costs nothing: he simply never meets it. Both renderers carry the checkpoint bridge, all
 77 readings carry their own, and 38 of the 64 BeInTheRoom scenarios build their own
 payload. The unit renderer's inline First & 10 bridge is dead code, because all 71
 topics use the iframe path. If a fifth surface ever grows a coach button, add it to
@@ -873,6 +881,34 @@ persona still tells a simulation student the roleplay itself is not collected.
 (`abbasid-fragmentation.html`, `cahokia-council.html`, `khmer-court.html`) sit
 unlinked from any lesson data file and were left alone, the same as the v2
 "linked from its lesson data/config" check already treats an unlinked scenario.
+
+### Checkpoint 1 is independent
+
+**Checkpoint 1 has no Socrates, as of 2026-08-31, and that is the point.** It is
+the lesson's formative diagnostic: can the student show the learning target at
+this stage without help. Coaching it before it is captured measures the coaching.
+
+Both renderers render `independentCheckpointNote()` in place of the bridge, and
+the note says so in words. A button that simply vanishes reads as something
+broken to a student who had one there all last year, which is why the card
+explains itself and points at Checkpoint 2.
+
+**The feedback that used to happen here moves to the teacher, in the room, in
+the same block.** That is a commitment rather than something that happens by
+itself: on an alternating block nothing carries over, so a wrong Checkpoint 1
+left uncorrected stays wrong through Evidence Lab and into Checkpoint 2.
+
+**Do not oversell this as assessment validity.** Socrates lives on a separate
+site with no enforcement, and every student has another AI on their phone.
+Removing the button removes *this* coach from the diagnostic, not AI. What it
+reliably buys is a shorter lesson and a cleaner rhythm.
+
+**Two checks, because the failure is invisible.** A regrown bridge would look
+exactly like last year's card, and nothing offline can see which conversation a
+student had. `validate.js` asserts the source shape in both renderers, and
+`scripts/test/coach-prompt.test.js` asserts what a browser actually renders: no
+bridge, no preview, no button or link to Socrates, the note present, and the
+draft box still capturing for Canvas.
 
 ### What a scenario pastes
 

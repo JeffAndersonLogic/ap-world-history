@@ -473,7 +473,7 @@ function renderBeSurreal(){if(!beSurreal)return `<article class="foundation-card
 function renderEvidence(){return `<article class="foundation-card"><h3>${evidence.title}</h3><p>${evidence.task}</p></article><div class="pop-grid">${evidence.items.map((item,i)=>{const fallbackId=`evidence-${String(i+1).padStart(2,'0')}`;return `<article class="foundation-card map-figure pop-half"><img src="${foundationEvidenceImageUrl(i)}" alt="${item.title}" role="button" tabindex="0" aria-label="Enlarge image: ${item.title}" onclick="openEvidenceLightbox(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openEvidenceLightbox(${i})}" ${foundationFallbackAttrs(fallbackId)}><figcaption><strong>${item.title}</strong><br>${item.caption}<br><em>${item.prompt}</em><br><a class="source-link" href="${item.sourceUrl||item.url}" target="_blank" rel="noopener">Open source</a></figcaption></article>`}).join('')}</div>${draft(`${T.id}-evidence`,evidence.prompt)}`}
 function renderCoach(){return `<article class="foundation-card"><h3>${aiCoach.title}</h3><p>${aiCoach.intro}</p><div class="coach-list">${aiCoach.prompts.map((p,i)=>`<div class="coach-prompt"><strong>Prompt ${i+1}</strong><span>${p}</span></div>`).join('')}</div></article>${draft(`${T.id}-coach`,aiCoach.responsePrompt||'Use one AI coach prompt to improve your historical explanation.')}`}
 function renderSkill(){return `<article class="foundation-card"><h3>${T.skill.title}</h3><p>${T.skill.intro}</p><table class="mini-table"><tr><th>Step</th><th>What to Do</th></tr>${T.skill.steps.map((s,i)=>`<tr><td>${i+1}</td><td>${s}</td></tr>`).join('')}</table></article>${draft(`${T.id}-skill`,T.skill.prompt)}`}
-function renderCheckpoint1(){return `<article class="dark-callout"><h3>${T.checkpoint.title}</h3><p>${T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Exit Ticket</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Strong Response Checklist</h3><ul>${T.checkpoint.checklist.map(x=>`<li>${x}</li>`).join('')}</ul></article>${draft(`${T.id}-checkpoint`,T.checkpoint.prompt)}${coachBridge(`${T.id}-checkpoint`,'Checkpoint 1')}`}
+function renderCheckpoint1(){return `<article class="dark-callout"><h3>${T.checkpoint.title}</h3><p>${T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Exit Ticket</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Strong Response Checklist</h3><ul>${T.checkpoint.checklist.map(x=>`<li>${x}</li>`).join('')}</ul></article>${draft(`${T.id}-checkpoint`,T.checkpoint.prompt)}${independentCheckpointNote()}`}
 function renderCheckpoint2(){return `<article class="dark-callout"><h3>Synthesis Checkpoint</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Build Your Synthesis</h3><p>Use evidence from at least two modules to answer the synthesis prompt above. Connect the themes you studied today to the bigger picture of AP World History.</p></article>${draft(`${T.id}-checkpoint2`,T.exitTicket||T.checkpoint.prompt)}${coachBridge(`${T.id}-checkpoint2`,'Checkpoint 2')}`}
 
 // ── The AI Coach bridge, Foundations side ────────────────────────────────────
@@ -497,12 +497,25 @@ function coachMagicSchoolUrl(){
     : DEFAULT_COACH_URL;
 }
 
+// Checkpoint 1 is deliberately independent as of 2026-08-31, the same as the
+// unit renderer. It is the lesson's formative diagnostic, and coaching it before
+// it is captured measures the coaching rather than the student. The card says so
+// rather than simply losing its button, which would read as something broken.
+function independentCheckpointNote(){
+  return `<div class="component-note">
+      <strong>Do this one on your own.</strong> Checkpoint 1 is where you and your
+      teacher find out what has landed so far, so there is no AI coaching here.
+      Write what you actually think, including the parts you are unsure about.
+      Socrates is waiting at Checkpoint 2, once you have more to work with.
+    </div>`;
+}
+
 function coachBridge(id,mode){
   COACH_MS[id]={mode};
   const COACH_URL=coachMagicSchoolUrl();
   return `<div class="magicschool-bridge">
       <h3>Take Your Thinking to the AI Coach</h3>
-      <p>Coaching happens between your first draft and what you hand in. The coach asks one question at a time; it will not write your answer for you.</p>
+      <p>Coaching happens between your first draft and what you hand in. Socrates gives you one thing to work on at a time; he will not write your answer for you.</p>
       <ol class="bridge-steps">
         <li><strong>Draft</strong> your response in the box above.</li>
         <li><strong>Build</strong> and copy your prompt, then paste it into the AI Coach.</li>

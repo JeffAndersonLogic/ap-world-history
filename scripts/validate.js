@@ -1139,6 +1139,40 @@ section('BeInTheRoom scenario links and v2 quality contract');
   sectionDone(`${linkedTargets.size} linked scenarios; ${v2Files.length} v2 scenarios; ${v1Wired} v1 scenarios classroom-aware; ${pasteChecked} pastes clean of version 1 coach wording`);
 }
 
+// 11b. Checkpoint 1 is independent, and stays that way.
+//
+// Checkpoint 1 became the lesson's unaided formative diagnostic on 2026-08-31.
+// Coaching it before it is captured measures the coaching rather than the
+// student, which is the whole reason it is the one written module with no
+// Socrates on it.
+//
+// Nothing offline can see which conversation a student had, and nothing visible
+// on the page would look wrong if a bridge came back: the card would simply have
+// a button again, exactly as it did all last year. So the shape is asserted at
+// the source, in both renderers, rather than remembered.
+section('Checkpoint 1 is independent of Socrates');
+{
+  const renderers = [
+    ['assets/js/behistorical-topic-renderer-v1.js', /msMode === 'Checkpoint 1' \? independentCheckpointNote\(\)/],
+    ['foundations/foundations-topic-renderer.js', /\$\{independentCheckpointNote\(\)\}`\}/]
+  ];
+  for (const [rel, wired] of renderers) {
+    const filePath = path.join(ROOT, rel);
+    const source = read(filePath) || '';
+    totalChecks++;
+    if (!source.includes('function independentCheckpointNote')) {
+      err(filePath, 'renderer has no independentCheckpointNote, Checkpoint 1 would render nothing in its place');
+    } else if (!wired.test(source)) {
+      err(filePath, 'Checkpoint 1 does not render the independent note, it may have regrown a coach bridge');
+    }
+    totalChecks++;
+    if (/coachBridge\([^)]*Checkpoint 1/.test(source)) {
+      err(filePath, 'Checkpoint 1 builds a coach bridge again, so it is no longer an independent diagnostic');
+    }
+  }
+  sectionDone('both renderers keep Checkpoint 1 unaided');
+}
+
 // 12. Generated project inventory must agree with the completed filesystem.
 section('Generated project status inventory');
 {
