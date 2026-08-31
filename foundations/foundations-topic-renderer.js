@@ -301,7 +301,14 @@ const modules=[
   {id:'skill',label:'Module 05',title:T.skill.title,desc:T.skill.desc,img:T.heroImage,render:renderSkill},
   {id:'checkpoint1',label:'Module 06',title:'Checkpoint 1',desc:T.checkpoint.title||'First checkpoint for this Foundations topic.',img:T.heroImage,render:renderCheckpoint1},
   {id:'evidence',label:'Module 07',title:'Evidence Lab',desc:evidence.task,img:(evidence.items&&evidence.items[0]?evidence.items[0].url:T.heroImage),render:renderEvidence},
-  {id:'coach',label:'Module 08',title:'Socrates AI Coach',desc:'Socratic prompts that help students notice patterns and improve reasoning.',img:T.heroImage,render:renderCoach},
+  // Titled "Socrates AI Coach" until 2026-08-31, which it never was: it renders
+  // three static prompts and a draft box, and has never had a button to him.
+  // Socrates now appears at Checkpoint 2 and in BeInTheRoom only, so a module
+  // carrying his name while offering none of him is the kind of quiet
+  // disagreement between two surfaces this repo keeps paying for. The id stays
+  // `coach` on purpose: it is in CANONICAL_IDS and it names this module's
+  // capture slot, so changing it would move a storage key to relabel a card.
+  {id:'coach',label:'Module 08',title:'Reasoning Prompts',desc:'Prompts that help students notice patterns and improve their own reasoning.',img:T.heroImage,render:renderCoach},
   {id:'beintheroom',label:'Module 09',title:'BeInTheRoom',...(beInTheRoom&&beInTheRoom.url?{desc:beInTheRoom.desc||'An immersive experience from this historical moment.',img:T.heroImage,link:beInTheRoom.url}:{desc:'An immersive experience, coming soon for this topic.',img:T.heroImage,render:renderBeInTheRoomPlaceholder})},
   {id:'checkpoint2',label:'Module 10',title:'Checkpoint 2',desc:'Synthesis checkpoint, bring it all together.',img:T.heroImage,render:renderCheckpoint2}
 ];
@@ -668,7 +675,7 @@ const FOUNDATION_WORK_ITEMS=[
   {slot:'skill',      label:'Module 05, AP Skill Builder',      prompt:()=>T.skill.prompt},
   {slot:'checkpoint', label:'Module 06, Checkpoint 1',          prompt:()=>T.checkpoint.prompt},
   {slot:'evidence',   label:'Module 07, Evidence Lab',          prompt:()=>evidence.prompt},
-  {slot:'coach',      label:'Module 08, Socrates AI Coach',     prompt:()=>aiCoach.responsePrompt},
+  {slot:'coach',      label:'Module 08, Reasoning Prompts',    prompt:()=>aiCoach.responsePrompt},
   // Only a real slot once a Foundations topic has a scenario to reflect on;
   // every Foundations topic currently shows the "coming soon" placeholder.
   {slot:'beintheroom-response',label:'Module 09, BeInTheRoom Reflection',prompt:()=>(beInTheRoom&&beInTheRoom.url)?BEINTHEROOM_REFLECTION_PROMPT:''},

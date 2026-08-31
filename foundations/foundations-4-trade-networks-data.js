@@ -133,7 +133,7 @@ window.FOUNDATION_TOPIC = {
   },
 
   aiCoach: {
-    title: 'Socrates Coach: Trade as Transformation',
+    title: 'Reasoning Prompts: Trade as Transformation',
     intro: 'Use one of these prompts to push your thinking past listing goods and toward historical argument about transformation. The goal is to explain what changed, in specific societies, in specific ways, because a trade network existed.',
     prompts: [
       'What moved through this network besides goods? For each non-good you name, explain specifically how it traveled and what changed when it arrived.',
@@ -141,7 +141,7 @@ window.FOUNDATION_TOPIC = {
       'What was the unintended consequence of this trade network, something that changed that no one planned or wanted? How does that unintended consequence reveal how trade systems actually work?',
       'How would the world at c.1200 look different if this trade network had not developed? What specific changes would be absent, in religion, technology, wealth distribution, or political power?'
     ],
-    responsePrompt: 'Use one Socrates prompt to revise your explanation. Your revised answer should make a specific causal claim about how a trade network transformed a society, not just moved goods through it.'
+    responsePrompt: 'Use one of these prompts to revise your explanation. Your revised answer should make a specific causal claim about how a trade network transformed a society, not just moved goods through it.'
   },
 
   skill: {

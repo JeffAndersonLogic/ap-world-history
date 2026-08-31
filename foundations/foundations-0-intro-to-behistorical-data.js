@@ -131,7 +131,7 @@ window.FOUNDATION_TOPIC = {
   },
 
   aiCoach: {
-    title: 'Socrates Coach: Meet Yourself as a Historian',
+    title: 'Reasoning Prompts: Meet Yourself as a Historian',
     intro: 'Before you can watch yourself grow as a historical thinker, you need to know where you are today. These prompts help you take an honest self-portrait. There are no wrong answers on Day 1. The point is a real baseline.',
     prompts: [
       'When you read something about the past, a textbook, a documentary, a museum sign, what do you usually notice first? What do you usually skip?',

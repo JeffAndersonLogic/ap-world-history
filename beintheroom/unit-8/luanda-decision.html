@@ -424,7 +424,7 @@ function buildMagicSchoolPayload() {
   const draft = document.getElementById('decision-response').value.trim() || 'No first draft written yet.';
   const tradeoff = document.getElementById('tradeoff-input').value.trim() || 'Not identified yet.';
   const opposition = document.getElementById('opposition-input').value.trim() || 'Not identified yet.';
-  latestPayload = `You are the BeInTheRoom Historical Thinking Coach for AP World History. Do not write my final answer. Ask me one question at a time to help me better understand my role, evidence, tradeoff, and historical reasoning. Push me to explain because, not just name facts.
+  latestPayload = `Socrates, I am in a BeInTheRoom simulation and you are in the room with me. Push me to explain because, not just name facts.
 
 Scenario: The Luanda Decision, Topic 8.3 Effects of the Cold War
 Setting: Luanda, Angola, November 1975. Portugal is withdrawing. Three liberation movements claim Angola. South African forces advance from the south; FNLA/Zaire forces press from the north. Independence Day is approaching. The MPLA controls Luanda but faces military pressure it may not survive without outside help. Both superpowers are extending offers.
@@ -451,13 +451,11 @@ Opposing role or viewpoint: ${opposition}
 My first draft argument:
 ${draft}
 
-Please coach me through these stages:
-1. Help me clarify what my role believes about what sovereignty means in Angola's specific situation, not just what it wants strategically.
-2. Ask me which evidence best supports my recommended path on the Cuban offer, Western channel, and African path decisions.
-3. Challenge me to explain one tradeoff or weakness in my recommended path.
-4. Ask me how an opposing role in the room would respond to my argument.
-5. Help me revise into a stronger 4-6 sentence historically grounded argument that compares how the U.S. and Soviet Union sought to maintain influence through their respective interventions in Angola.
-6. End by asking me to step out of character and explain what this scenario reveals about the cost of proxy war competition for postcolonial states, and how it connects to the Bandung promise of non-alignment.`;
+Coach me on one thing: is my decision defensible given my role, my evidence, and the tradeoff I accepted? Name the weakest part of it and tell me what to revise. I am aiming for a stronger 4-6 sentence historically grounded argument that compares how the U.S. and Soviet Union sought to maintain influence through their respective interventions in Angola.
+
+After I revise once, tell me whether it holds. When it does, I will step out of character and explain what this scenario reveals about the cost of proxy war competition for postcolonial states, and how it connects to the Bandung promise of non-alignment. That reflection is the box at the end of this scenario, and it is what reaches Canvas through Gather All My Work on the lesson page.
+
+Give me one thing to work on at a time. Do not write my final answer for me.`;
 
   document.getElementById('magic-copy').textContent = latestPayload;
   generateCoachPrompts();

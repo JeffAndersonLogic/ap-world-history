@@ -148,6 +148,7 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-classroom-config.js`, regenerate `assets/js/behistorical-classroom.js` from `scripts/lib/classroom-config.js`, and inline it into both renderers and `behistorical-room-v2.js` between sentinels. `--check` fails on drift, which is what the offline suite runs. Never hand-edit between the sentinels or the generated file. See "Two Classrooms, One Site" below.
 - `node scripts/wire-beintheroom-magicschool.js [--dry-run]`, one-time sweep that gives every v1 BeInTheRoom scenario's MagicSchool button the same classroom-aware wiring. Idempotent; run it again after adding a new hand-authored (non-v2) scenario with its own MagicSchool button.
 - `node scripts/wire-beintheroom-work-capture.js [--dry-run]`, one-time sweep that gives every hand-authored v1 BeInTheRoom scenario the same wiring to `assets/js/behistorical-beintheroom-capture.js`, so its AP reflection reaches Gather All My Work. Idempotent; run it again after adding a new hand-authored scenario. See "BeInTheRoom reflections reach Canvas" below.
+- `node scripts/wire-beintheroom-coach-prompt.js [--dry-run]`, normalize what a hand-authored BeInTheRoom scenario pastes into Socrates: name him rather than a second coach, drop the restated persona rule, and replace the six-stage walk with the bounded ask. Idempotent, skips the generated unit-6 and unit-9 scenarios because their generators own them, and preserves each scenario's own revision target and step-out-of-character question. Run it after writing a new hand-authored scenario. See "What a scenario pastes" below.
 - `node scripts/test/readings-parse.test.js`, compile the trailing `<script>` of all 77 readings and fail if any is not valid JavaScript. In the offline suite. Ten readings once shipped with a stray `});` that threw a SyntaxError, which discards the whole script element: the AI prompt buttons, the confidence scale, and the answer capture all died at once, with every structural check green because the capture block was present and byte-identical. It was simply unreachable.
 - `node scripts/test/coach-prompt.test.js`, drive a real lesson page in Chromium and assert the checkpoint paste is byte-identical to what `scripts/lib/socrates-course.js` produces. In the browser suite. It is the only check that the renderer actually *calls* the shared builder with the right fields.
 - `node scripts/build-socrates.js`, regenerate the Socrates Kit in `docs/socrates/`: the instructions to paste into MagicSchool, the course spine to attach, and the paste contract. `--check` fails on drift without writing, which is what the offline suite runs. Run it after editing any lesson data or the persona.
@@ -830,6 +831,55 @@ persona still tells a simulation student the roleplay itself is not collected.
 unlinked from any lesson data file and were left alone, the same as the v2
 "linked from its lesson data/config" check already treats an unlinked scenario.
 
+### What a scenario pastes
+
+**A paste can replace Socrates, and for a year every BeInTheRoom scenario did.**
+The persona treats the pasted block as authoritative over anything he remembers,
+which is what lets one bot serve 77 topics. It also makes the paste the one place
+that can overwrite him, and two strings were doing it until 2026-08-31.
+
+The first named a different coach. Every hand-authored scenario and the v2
+renderer opened with "You are the BeInTheRoom Historical Thinking Coach", and the
+two generated units opened by asking him to act as a generic AP World coach. A
+student who is supposed to build one relationship with Socrates across nine units
+met an unnamed second bot in the module where the coach is most present.
+
+The second was worse. The pastes said "ask me one question at a time", which is
+**version 1 of the persona's own rule, restated in the place the persona says
+wins**. That line was removed from the checkpoint paste on 2026-08-29, for the
+reasons at the bottom of `assets/js/behistorical-coach-prompt.js`. The checkpoint
+path was fixed and the scenarios were not, so BeInTheRoom went on running the
+coach students complained about, and every structural check stayed green through
+all of it, because nothing offline could see which conversation a paste produced.
+
+On top of both, every scenario closed with a six-stage coaching walk. The persona
+follows scenario-authored stages **deliberately**, so five or six stages at one
+ask each made BeInTheRoom the longest and most repetitive conversation in the
+course. That is replaced with the persona's own budget: diagnose whether the
+decision is defensible given role, evidence and tradeoff, one revision, release.
+
+**A scenario that genuinely teaches a sequence keeps it.** Topic 9.3 is the case:
+its stages name historical responsibility, the ENV thematic focus, and the 9.2 to
+9.3 bridge, which is a sequence about the history rather than a template with the
+topic dropped in. Only the identity line and the restated rule were fixed there.
+
+**The last line of a scenario paste is byte-identical to a checkpoint's**, "Give
+me one thing to work on at a time. Do not write my final answer for me.", so the
+two surfaces cannot drift into asking Socrates for different things.
+
+**Two authored fragments are preserved per scenario**, and losing either would
+look like a successful sweep: the revision target, which on several scenarios
+names the AP key concept the argument has to reach, and the
+step-out-of-character question, which is different on every scenario and is the
+reflection that actually reaches Canvas. The sweep reports and skips any file
+where it cannot find them rather than writing a generic substitute.
+
+**The prohibition is what makes it stick.** `validate.js` fails on those strings
+across every scenario, the v2 renderer, and both unit generators. Scanning
+`beintheroom/` alone would cover the 38 hand-authored scenarios and report green
+for the 26 that share `behistorical-room-v2.js`, which builds its paste at
+runtime, so its wording never lands in a scenario file at all.
+
 Two things the repo cannot test, so they are manual and written down in
 `docs/socrates/README.md`: pasting the instructions into MagicSchool, and
 uploading the spine. Nothing here can log into a vendor web UI. What the repo does
@@ -1070,7 +1120,7 @@ Every lesson page, Unit and Foundations, must display exactly **10 modules** in 
 | 05 | `skill` | AP Skill Builder | `renderSkill()` | `renderSkill()` |
 | 06 | `checkpoint1` | Checkpoint 1 | `renderCheckpoint1()` | `renderCheckpoint1()` |
 | 07 | `evidence` | Evidence Lab | `renderEvidence()` | `renderEvidence()` |
-| 08 | `source` / `coach` | Primary Source (Unit) / Socrates AI Coach (Foundations) | `renderSource()` | `renderCoach()` |
+| 08 | `source` / `coach` | Primary Source (Unit) / Reasoning Prompts (Foundations) | `renderSource()` | `renderCoach()` |
 | 09 | `beintheroom` | BeInTheRoom | link to external URL | link to external URL (or placeholder if none) |
 | 10 | `checkpoint2` | Checkpoint 2 | `renderCheckpoint2()` | `renderCheckpoint2()` |
 

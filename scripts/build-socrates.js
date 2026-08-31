@@ -294,7 +294,7 @@ function contractDoc(topics) {
     '',
     'Question 2: ...',
     '',
-    'Coach me by asking one question at a time. Do not write my final answer for me.',
+    'Give me one thing to work on at a time. Do not write my final answer for me.',
     '```',
     '',
     'It carries no assigned prompt and no checklist, because a reading has neither.',

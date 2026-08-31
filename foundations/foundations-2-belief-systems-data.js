@@ -137,7 +137,7 @@ window.FOUNDATION_TOPIC = {
   },
 
   aiCoach: {
-    title: 'Socrates Coach: Belief Systems as Institutions',
+    title: 'Reasoning Prompts: Belief Systems as Institutions',
     intro: 'Use one of these prompts to push your thinking from description to historical argument. The goal is not to list facts about a belief system, it is to explain what that system did in the society that practiced it, and how it compares to the others.',
     prompts: [
       'What specific problem did this belief system help a society solve, social order, political legitimacy, education, welfare, or trust between merchants?',
@@ -145,7 +145,7 @@ window.FOUNDATION_TOPIC = {
       'How did this belief system spread into a new region, and what changed about it in the process? What stayed the same?',
       'Who benefited most from this belief system as an institution, and who was subordinated or excluded by it?'
     ],
-    responsePrompt: 'Use one Socrates prompt to revise your explanation. Your revised answer should make a specific claim about what a belief system did institutionally, or how it compares to another of the six, not just what people believed.'
+    responsePrompt: 'Use one of these prompts to revise your explanation. Your revised answer should make a specific claim about what a belief system did institutionally, or how it compares to another of the six, not just what people believed.'
   },
 
   skill: {

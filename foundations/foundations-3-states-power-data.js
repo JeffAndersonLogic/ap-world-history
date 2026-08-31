@@ -168,7 +168,7 @@ window.FOUNDATION_TOPIC = {
   },
 
   aiCoach: {
-    title: 'Socrates Coach: Power, Hierarchy, and Resistance',
+    title: 'Reasoning Prompts: Power, Hierarchy, and Resistance',
     intro: 'Use one of these prompts to push your thinking from description to historical argument. The goal is not to list tools of rule, it is to explain why a specific tool solved a specific problem for one of the classical states, and where it failed.',
     prompts: [
       'What specific governance problem was this tool of rule designed to solve, for Persia, Han China, Greece, or Rome? What would have happened to the state without it?',
@@ -176,7 +176,7 @@ window.FOUNDATION_TOPIC = {
       'Who benefited from this state\'s social hierarchy, and who was excluded or exploited? How was that exclusion made to seem natural or lawful?',
       'What does an example of resistance, the Yellow Turbans, Spartacus, the exclusion of non-citizens, reveal about the limits of that state\'s power?'
     ],
-    responsePrompt: 'Use one Socrates prompt to revise your explanation. Your revised answer should make a specific claim about why a tool of rule worked, failed, or excluded people, and ideally compare two of the four classical states.'
+    responsePrompt: 'Use one of these prompts to revise your explanation. Your revised answer should make a specific claim about why a tool of rule worked, failed, or excluded people, and ideally compare two of the four classical states.'
   },
 
   skill: {

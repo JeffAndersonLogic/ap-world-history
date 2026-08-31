@@ -175,8 +175,8 @@
         </section>
 
         <section class="room-section" id="coach-section">
-          <div class="room-step"><span class="room-step-num">5</span><span class="room-step-label">Use the AI Coach</span></div>
-          <p class="room-intro">Build a prompt that asks the coach to question and strengthen your reasoning without writing the answer for you.</p>
+          <div class="room-step"><span class="room-step-num">5</span><span class="room-step-label">Bring Socrates into the room</span></div>
+          <p class="room-intro">Build a prompt that puts your decision in front of Socrates, the same coach you work with at a checkpoint. He will test your reasoning here, not write your argument for you.</p>
           <div class="room-actions">
             <button class="room-button" id="room-build-prompt" type="button">Build AI Coach prompt</button>
             <button class="room-button secondary" id="room-copy-prompt" type="button">Copy prompt</button>
@@ -286,10 +286,26 @@
     const role = selectedRole();
     const facts = selectedEvidence().map(item => `- ${item.label}: ${item.text}`);
     const decisions = selectedDecisions().map(item => `- ${item.decision.title}: ${item.option.title}, ${item.option.action}`);
-    const prompt = `You are the BeInTheRoom Historical Thinking Coach for an AP World History student. Ask one question at a time. Do not write my final answer. Help me test accuracy, connect evidence to claims, recognize tradeoffs, and revise my reasoning.\n\nScenario: ${scenario.title.replaceAll('*', '')}\nTopic: ${scenario.id}, ${scenario.topicTitle}\nCentral dilemma: ${scenario.centralQuestion}\n\nMy role: ${role.name}\nPower and limits: ${role.power}\nGoals: ${role.goals}\nFears: ${role.fears}\nBlind spot: ${role.blindSpot}\n\nMy decisions:\n${decisions.join('\n')}\n\nMy selected evidence:\n${facts.join('\n')}\n\nMy first draft:\n${state.argument}\n\nTradeoff or risk:\n${state.tradeoff}\n\nStrongest opposing perspective:\n${state.opposition}\n\nCoach me through role understanding, evidence, tradeoffs, opposing perspectives, and historical reasoning. End by asking me to revise in 4–6 sentences and then step out of character to explain what this scenario reveals about Topic ${scenario.id}.`;
+    // The opening and closing lines are the paste's whole relationship with the
+    // persona, and both were getting it wrong. This used to name a separate
+    // roleplay coach rather than Socrates, and the persona treats the paste as
+    // authoritative, so Socrates believed it and the student met a second bot in
+    // the module where the coach is most present. It also restated version 1 of
+    // the persona's own one-ask rule, in the place the persona says wins: the
+    // same line removed from the checkpoint paste on 2026-08-29, for the reasons
+    // written at the bottom of assets/js/behistorical-coach-prompt.js. It
+    // survived here, so BeInTheRoom went on running the coach students
+    // complained about. validate.js now prohibits both strings in this file.
+    //
+    // The five-stage walk is gone for the same reason. The persona follows
+    // scenario-authored stages deliberately, so five stages at one ask each made
+    // this the longest conversation in the course. The bounded ask below is the
+    // persona's own budget: diagnose, one revision, release. The last line is
+    // byte-identical to what a checkpoint sends.
+    const prompt = `Socrates, I am in a BeInTheRoom simulation and you are in the room with me. Push me to explain because, not just name facts.\n\nScenario: ${scenario.title.replaceAll('*', '')}\nTopic: ${scenario.id}, ${scenario.topicTitle}\nCentral dilemma: ${scenario.centralQuestion}\n\nMy role: ${role.name}\nPower and limits: ${role.power}\nGoals: ${role.goals}\nFears: ${role.fears}\nBlind spot: ${role.blindSpot}\n\nMy decisions:\n${decisions.join('\n')}\n\nMy selected evidence:\n${facts.join('\n')}\n\nMy first draft:\n${state.argument}\n\nTradeoff or risk:\n${state.tradeoff}\n\nStrongest opposing perspective:\n${state.opposition}\n\nCoach me on one thing: is my decision defensible given my role, my evidence, and the tradeoff I accepted? Name the weakest part of it and tell me what to revise. I am aiming for a stronger 4 to 6 sentence historically grounded argument.\n\nAfter I revise once, tell me whether it holds. When it does, I will step out of character and explain what this scenario reveals about Topic ${scenario.id}. That reflection is the box at the end of this scenario, and it is what reaches Canvas through Gather All My Work on the lesson page.\n\nGive me one thing to work on at a time. Do not write my final answer for me.`;
     document.getElementById('room-prompt').textContent = prompt;
     status.classList.add('success');
-    status.textContent = 'Prompt built. Read it once, then copy it to the AI Coach.';
+    status.textContent = 'Prompt built. Read it once, then copy it to Socrates.';
     save();
   }
 

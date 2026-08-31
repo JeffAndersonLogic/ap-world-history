@@ -136,7 +136,7 @@ window.FOUNDATION_TOPIC = {
       'Read your reasoning sentence. Does it explain *why* the evidence proves the claim, or does it just repeat the evidence? Add the word "because" or "which means" and see if your reasoning becomes more explicit.',
       'Which Foundations theme does your argument depend on most: geography, belief systems, states and power, or trade networks? State that explicitly in your response, it is your contextualization.'
     ],
-    responsePrompt: 'Use one Socrates prompt to revise your final SAQ response. After revising, rate your confidence from 1 to 5 and explain what part of the response still feels weakest.'
+    responsePrompt: 'Use one of these prompts to revise your final SAQ response. After revising, rate your confidence from 1 to 5 and explain what part of the response still feels weakest.'
   },
 
   skill: {

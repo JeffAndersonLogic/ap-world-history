@@ -1085,7 +1085,58 @@ section('BeInTheRoom scenario links and v2 quality contract');
     }
   }
 
-  sectionDone(`${linkedTargets.size} linked scenarios; ${v2Files.length} v2 scenarios; ${v1Wired} v1 scenarios classroom-aware`);
+  // What a scenario pastes must not overwrite the coach it is pasting into.
+  //
+  // The persona treats the pasted block as authoritative over anything Socrates
+  // remembers. That is what lets one bot serve 77 topics, and it is why a paste
+  // is the one place that can silently replace him. Two strings did exactly
+  // that in every hand-authored scenario until 2026-08-31:
+  //
+  //   - a paste naming some other coach, which meant the student building one
+  //     relationship with Socrates across nine units met an unnamed second bot
+  //     in the module where the coach is most present;
+  //   - "ask me one question at a time", which is version 1 of the persona's own
+  //     rule restated in the place the persona says wins. It was removed from
+  //     the checkpoint paste on 2026-08-29 for the reasons at the bottom of
+  //     assets/js/behistorical-coach-prompt.js, and it survived here, so
+  //     BeInTheRoom went on running the coach students complained about while
+  //     every structural check stayed green.
+  //
+  // Neither failure is visible on the page: the scenario renders perfectly and
+  // the wrong conversation happens somewhere this repo cannot see. So the strings
+  // are prohibited rather than remembered. See
+  // scripts/wire-beintheroom-coach-prompt.js, which normalized all of them once.
+  const BANNED_PASTE = [
+    [/Historical Thinking Coach/i, 'names a second coach instead of Socrates'],
+    [/one question at a time/i, 'restates version 1 of the persona one-ask rule'],
+    [/Act as an AP World History coach/i, 'names a generic coach instead of Socrates'],
+    [/coach me through these stages/i, 'reinstates the six-stage walk the bounded ask replaced']
+  ];
+  // The v2 renderer builds its paste at runtime, so its wording never lands in a
+  // scenario file and scanning beintheroom/ alone would cover 38 scenarios while
+  // reporting green for the 26 that share this one builder. The two unit
+  // generators are scanned for the same reason one step earlier: their output is
+  // caught here only after a rebuild.
+  const pasteSources = [
+    path.join(ROOT, 'assets', 'js', 'behistorical-room-v2.js'),
+    path.join(ROOT, 'scripts', 'build-unit6.js'),
+    path.join(ROOT, 'scripts', 'build-unit9.js')
+  ];
+  let pasteChecked = 0;
+  for (let unit = 1; unit <= 9; unit++) {
+    const roomDir = path.join(ROOT, 'beintheroom', `unit-${unit}`);
+    for (const filePath of glob(roomDir, /\.html$/)) pasteSources.push(filePath);
+  }
+  for (const filePath of pasteSources) {
+    const source = read(filePath) || '';
+    totalChecks++;
+    pasteChecked++;
+    for (const [re, why] of BANNED_PASTE) {
+      if (re.test(source)) err(filePath, `BeInTheRoom paste ${why}`);
+    }
+  }
+
+  sectionDone(`${linkedTargets.size} linked scenarios; ${v2Files.length} v2 scenarios; ${v1Wired} v1 scenarios classroom-aware; ${pasteChecked} pastes clean of version 1 coach wording`);
 }
 
 // 12. Generated project inventory must agree with the completed filesystem.

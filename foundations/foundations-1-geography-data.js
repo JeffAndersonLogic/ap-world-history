@@ -131,7 +131,7 @@ window.FOUNDATION_TOPIC = {
   },
 
   aiCoach: {
-    title: 'Socrates Coach: Geography as Explanation',
+    title: 'Reasoning Prompts: Geography as Explanation',
     intro: 'Use one of these prompts to push your thinking from observation to historical argument. The goal is not to describe geography, it is to explain what geography caused in the shift from foraging to civilization.',
     prompts: [
       'What specific geographic feature made farming possible in this place, and what did it make possible that hunting and gathering never could?',
@@ -139,7 +139,7 @@ window.FOUNDATION_TOPIC = {
       'How would history have been different if the geography changed, if the river dried up, if the wild grains never grew here, if the soil were barren?',
       'What is the connection between the agricultural surplus this geography produced and one characteristic of civilization, cities, writing, government, social class, or religion?'
     ],
-    responsePrompt: 'Use one Socrates prompt to revise your explanation. Your revised answer should make a cause-and-effect claim about how geography shaped the shift to farming or civilization, not just describe a feature.'
+    responsePrompt: 'Use one of these prompts to revise your explanation. Your revised answer should make a cause-and-effect claim about how geography shaped the shift to farming or civilization, not just describe a feature.'
   },
 
   skill: {

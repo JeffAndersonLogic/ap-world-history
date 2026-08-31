@@ -1009,7 +1009,7 @@ function renderCheckpoint(cp, id) {
     ${responseBlock(id, cp.prompt, cp.responseType, cp.terms || [])}
     <div class="magicschool-bridge">
       <h3>Take Your Thinking to the AI Coach</h3>
-      <p>Coaching happens between your first draft and what you hand in. The coach asks one question at a time; it will not write your answer for you.</p>
+      <p>Coaching happens between your first draft and what you hand in. Socrates gives you one thing to work on at a time; he will not write your answer for you.</p>
       <ol class="bridge-steps">
         <li><strong>Draft</strong> your response in the box above.</li>
         <li><strong>Build</strong> and copy your prompt, then paste it into the AI Coach.</li>

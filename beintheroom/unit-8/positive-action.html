@@ -425,7 +425,7 @@ function buildMagicSchoolPayload() {
   const draft = document.getElementById('decision-response').value.trim() || 'No first draft written yet.';
   const tradeoff = document.getElementById('tradeoff-input').value.trim() || 'Not identified yet.';
   const opposition = document.getElementById('opposition-input').value.trim() || 'Not identified yet.';
-  latestPayload = `You are the BeInTheRoom Historical Thinking Coach for AP World History. Do not write my final answer. Ask me one question at a time to help me better understand my role, evidence, tradeoff, and historical reasoning. Push me to explain because, not just name facts.
+  latestPayload = `Socrates, I am in a BeInTheRoom simulation and you are in the room with me. Push me to explain because, not just name facts.
 
 Scenario: Positive Action, Topic 8.5 Decolonization After 1900
 Setting: Accra, Gold Coast, January 1950. Kwame Nkrumah's Convention People's Party is deciding whether to launch Positive Action, nonviolent strikes and boycotts, against British colonial rule. The colonial government has offered the Coussey Committee constitutional reforms but stopped short of self-government. Nkrumah is certain to be arrested if Positive Action launches. The Cold War is shaping what London and Washington will tolerate. The question is whether Positive Action is the right instrument in this specific colonial context.
@@ -452,13 +452,11 @@ Opposing role or viewpoint: ${opposition}
 My first draft argument:
 ${draft}
 
-Please coach me through these stages:
-1. Help me clarify what makes my chosen path specifically appropriate for the Gold Coast's colonial situation, not just decolonization in general, but what is specific about British West Africa in 1950 that shapes the available options.
-2. Ask me which evidence best explains the difference between the Gold Coast's negotiated path and the armed-struggle paths in Algeria or Vietnam, what specific condition accounts for the difference?
-3. Challenge me to identify one genuine weakness or risk in my chosen path, something that could cause it to fail.
-4. Ask me how an opposing role would respond to my argument, and what that tells me about why the CPP-UGCC split matters to understanding decolonization.
-5. Help me revise into a stronger 4-6 sentence argument about what KC-6.2.II.A means for the specific case of Nkrumah and the CPP in January 1950.
-6. End by asking me to step out of character and compare: what conditions in the Gold Coast made the negotiated path possible? What conditions in Algeria or Vietnam made armed struggle necessary instead? What do both paths share?`;
+Coach me on one thing: is my decision defensible given my role, my evidence, and the tradeoff I accepted? Name the weakest part of it and tell me what to revise. I am aiming for a stronger 4-6 sentence argument about what KC-6.2.II.A means for the specific case of Nkrumah and the CPP in January 1950.
+
+After I revise once, tell me whether it holds. When it does, I will step out of character and compare: what conditions in the Gold Coast made the negotiated path possible? What conditions in Algeria or Vietnam made armed struggle necessary instead? What do both paths share? That reflection is the box at the end of this scenario, and it is what reaches Canvas through Gather All My Work on the lesson page.
+
+Give me one thing to work on at a time. Do not write my final answer for me.`;
 
   document.getElementById('magic-copy').textContent = latestPayload;
   generateCoachPrompts();
