@@ -66,6 +66,23 @@ const MIN_GAP_MS = Number(process.env.IMAGE_CHECK_MIN_GAP_MS || 120);
 // goes unverified, which is the honest answer.
 const MAX_BACKOFF_MS = Number(process.env.IMAGE_CHECK_MAX_BACKOFF_MS || 30000);
 const MAX_RETRY_AFTER_MS = Number(process.env.IMAGE_CHECK_MAX_RETRY_AFTER_MS || 120000);
+
+// A wall clock the whole run has to finish inside, and it is not optional.
+//
+// Obeying Retry-After honestly makes a throttled run slow: a 429 stops every
+// worker on that host, so a host handing out sixty-second waits can stall the
+// entire sweep. The first version of this fix had no budget, and the nightly job
+// ran 25 minutes and was killed by the runner's own timeout. That is the same
+// failure this script exists to stop, wearing a different hat: a red job for a
+// reason nobody in this repo can fix.
+//
+// So the run always finishes. When the budget is gone, whatever has not been
+// checked is reported as not verified, which is exactly what it is, and the
+// next night checks it again. Keep this comfortably under the nightly job's
+// timeout-minutes, or the runner kills the process before it can report.
+const BUDGET_MS = Number(process.env.IMAGE_CHECK_BUDGET_MS || 15 * 60 * 1000);
+const startedAt = Date.now();
+const remainingBudget = () => BUDGET_MS - (Date.now() - startedAt);
 const FIX_LIST_ONLY = process.argv.includes('--fix-list');
 
 const R = '\x1b[31m';
@@ -136,16 +153,21 @@ function gateFor(host) {
   return hostGates.get(host);
 }
 
+// Returns false when the budget ran out before the slot came free, so the
+// caller can give up on this URL rather than sleep past the deadline.
 async function waitForSlot(host) {
   for (;;) {
     const gate = gateFor(host);
     const now = Date.now();
     const ready = Math.max(gate.until, gate.nextSlot);
-    if (ready > now) { await sleep(ready - now); continue; }
-    gate.nextSlot = now + MIN_GAP_MS;
-    return;
+    if (ready <= now) { gate.nextSlot = now + MIN_GAP_MS; return true; }
+    const wait = ready - now;
+    if (wait >= remainingBudget()) return false;
+    await sleep(wait);
   }
 }
+
+const NOT_CHECKED = { ok: false, status: 'not checked', reason: 'run budget exhausted', declined: true };
 
 // A 429 is the host talking to the whole run, so it stops the whole run.
 function coolDownHost(host, ms) {
@@ -237,7 +259,8 @@ async function checkWithRetries(url, expectImage) {
   try { host = new URL(url).host; } catch { host = url; }
   let last;
   for (let attempt = 0; attempt <= RETRIES; attempt++) {
-    await waitForSlot(host);
+    if (remainingBudget() <= 0) return last ? { ...last, declined: true } : NOT_CHECKED;
+    if (!await waitForSlot(host)) return last ? { ...last, declined: true } : NOT_CHECKED;
     last = await head(url, expectImage);
     if (last.ok) return last;
     // A 404 is a real answer, and a 403 will be a 403 next time too.
@@ -252,6 +275,9 @@ async function checkWithRetries(url, expectImage) {
     if (last.status === 429 || (typeof last.status === 'number' && last.status >= 500)) {
       coolDownHost(host, wait);
     }
+    // Never sleep past the deadline: an unverified URL reported on time beats a
+    // process the runner kills mid-wait, which reports nothing at all.
+    if (wait >= remainingBudget()) return { ...last, declined: true };
     await sleep(wait);
   }
   return { ...last, declined: true };
@@ -275,21 +301,60 @@ async function main() {
   console.log(`${C}${W}BeHistorical remote image check${X}`);
   console.log(`${images.length} pictures and ${sources.length} Commons credit pages, referenced by ${allFiles.size} files\n`);
 
+  // Work order is shuffled, report order stays sorted.
+  //
+  // With a budget, a deterministic order means a deterministic blind spot: the
+  // sweep would check the same prefix every night and the tail would never be
+  // verified once, while the run reported itself green. Shuffling means each
+  // night samples a different part of the course, so a dead picture anywhere
+  // surfaces within a few nights instead of never.
+  const queue = urls.slice();
+  for (let i = queue.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [queue[i], queue[j]] = [queue[j], queue[i]];
+  }
+
   const results = new Map();
   let cursor = 0;
   let done = 0;
+  let lastReport = Date.now();
+
+  // CI is not a TTY, so the old carriage-return progress line printed nothing
+  // there at all. The run that hit the runner's timeout produced 25 minutes of
+  // total silence, which made it impossible to tell a slow sweep from a hung
+  // one. A periodic line costs nothing and answers that.
+  const report = (force) => {
+    if (FIX_LIST_ONLY) return;
+    if (process.stdout.isTTY) {
+      process.stdout.write(`  checked ${done}/${urls.length}\r`);
+      return;
+    }
+    if (!force && Date.now() - lastReport < 30000) return;
+    lastReport = Date.now();
+    const left = Math.max(0, Math.round(remainingBudget() / 1000));
+    console.log(`  checked ${done}/${urls.length}, ${left}s of budget left`);
+  };
+
   const workers = Array.from({ length: Math.min(CONCURRENCY, urls.length) }, async () => {
     for (;;) {
       const mine = cursor++;
-      if (mine >= urls.length) return;
-      const url = urls[mine];
-      results.set(url, await checkWithRetries(url, found.get(url).kind === 'image'));
+      if (mine >= queue.length) return;
+      const url = queue[mine];
+      results.set(url, remainingBudget() > 0
+        ? await checkWithRetries(url, found.get(url).kind === 'image')
+        : NOT_CHECKED);
       done++;
-      if (process.stdout.isTTY && !FIX_LIST_ONLY) process.stdout.write(`  checked ${done}/${urls.length}\r`);
+      report(false);
     }
   });
   await Promise.all(workers);
-  if (process.stdout.isTTY && !FIX_LIST_ONLY) process.stdout.write(`${' '.repeat(40)}\r`);
+  if (process.stdout.isTTY && !FIX_LIST_ONLY) process.stdout.write(`${' '.repeat(50)}\r`);
+
+  const ranOutOfTime = urls.some((url) => results.get(url).status === 'not checked');
+  if (ranOutOfTime) {
+    console.log(`${Y}The ${Math.round(BUDGET_MS / 60000)} minute budget ran out before every URL was checked.${X}`);
+    console.log(`${Y}What is left is reported as not verified, and checked again next run.${X}\n`);
+  }
 
   const verified = urls.filter((url) => results.get(url).ok);
   // The host declined to answer: rate limit, server error, timeout, no route.

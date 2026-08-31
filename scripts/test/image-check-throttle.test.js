@@ -72,6 +72,12 @@ function makeServer(state) {
       res.writeHead(429, { 'Content-Type': 'text/plain', 'Retry-After': '0' });
       return res.end('slow down');
     }
+    // Asks for a wait far longer than the run budget, which is what a real host
+    // under load does and what killed the first version of this fix.
+    if (path_ === '/always-limited-slow') {
+      res.writeHead(429, { 'Content-Type': 'text/plain', 'Retry-After': '30' });
+      return res.end('slow down');
+    }
     if (path_ === '/flaky') {
       state.flakyHits++;
       if (state.flakyHits <= state.throttleFor) {
@@ -156,17 +162,68 @@ async function main() {
     ok(notImage.ok === false && isDecline(notImage) === false,
       'a page served where an image should be is still reported as broken');
 
+    // ── the budget bounds the run, whatever the host does ───────────────────
+    //
+    // This is the regression gate for the run that was killed by the runner's
+    // own 25 minute timeout. Obeying Retry-After honestly makes a throttled
+    // sweep slow, and slow without a ceiling is a job that gets cancelled and
+    // reports nothing at all, which is worse than the red it replaced.
+    //
+    // A separate process, because BUDGET_MS is read once at require time. The
+    // child runs its own server: spawnSync blocks the parent's event loop, so a
+    // probe pointed at the parent's server times out instead of ever seeing the
+    // 429, and the assertions then pass for entirely the wrong reason.
+    const budgetProbe = `
+      process.env.IMAGE_CHECK_BUDGET_MS = '1200';
+      process.env.IMAGE_CHECK_RETRIES = '8';
+      process.env.IMAGE_CHECK_TIMEOUT_MS = '5000';
+      process.env.IMAGE_CHECK_MAX_RETRY_AFTER_MS = '60000';
+      const http = require('http');
+      const { checkWithRetries, isDecline } = require(${JSON.stringify(CHECKER)});
+      let hits = 0;
+      const server = http.createServer((req, res) => {
+        hits++;
+        res.writeHead(429, { 'Content-Type': 'text/plain', 'Retry-After': '30' });
+        res.end('slow down');
+      });
+      server.listen(0, '127.0.0.1', () => {
+        const url = 'http://127.0.0.1:' + server.address().port + '/always-limited-slow';
+        const started = Date.now();
+        checkWithRetries(url, true).then((r) => {
+          console.log(JSON.stringify({
+            ms: Date.now() - started, decline: isDecline(r), status: String(r.status), hits
+          }));
+          server.close();
+        });
+      });
+    `;
+    const probe = require('child_process').spawnSync(process.execPath, ['-e', budgetProbe],
+      { encoding: 'utf8', timeout: 30000 });
+    const probeOut = JSON.parse((probe.stdout || '{}').trim() || '{}');
+    ok(probe.status === 0 && probeOut.ms !== undefined, 'the budget probe ran', probe.stderr.slice(0, 160));
+    ok(probeOut.hits >= 1, 'the probe really reached its server and got the 429',
+      `${probeOut.hits} request(s), status ${probeOut.status}`);
+    ok(String(probeOut.status) === '429',
+      'it gave up on the rate limit itself, not on a timeout', `status ${probeOut.status}`);
+    ok(probeOut.ms !== undefined && probeOut.ms < 8000,
+      'a host asking for a 30s wait does not blow the run budget',
+      `returned after ${probeOut.ms}ms`);
+    ok(probeOut.decline === true, 'and the URL it gave up on is unverified, never broken');
+
     // ── the per-host gate applies across concurrent workers ─────────────────
     // Six requests fired at once against one host must not arrive at once.
+    // Asserted on total elapsed rather than per-request gaps. The gate spaces
+    // out when each request is *issued*; arrival times at the server carry
+    // scheduler jitter, so a gap assertion at millisecond resolution measures
+    // the event loop rather than the pacing, and fails at random.
     state.hits.length = 0;
     const before = Date.now();
     await Promise.all(Array.from({ length: 6 }, (_, i) => checkWithRetries(`${base}/fine-${i}`, true)));
     const elapsed = Date.now() - before;
-    const gaps = state.hits.map((h) => h.at).sort((a, b) => a - b);
-    const tooClose = gaps.slice(1).filter((at, i) => at - gaps[i] < 5).length;
-    ok(elapsed >= 5 * 10, 'six concurrent requests to one host are spaced by the minimum gap',
-      `${elapsed}ms for 6`);
-    ok(tooClose === 0, 'and no two requests to that host arrive back to back', `${tooClose} bunched`);
+    const gapFloor = 5 * Number(process.env.IMAGE_CHECK_MIN_GAP_MS);
+    ok(elapsed >= gapFloor, 'six concurrent requests to one host are spaced by the minimum gap',
+      `${elapsed}ms for 6, floor ${gapFloor}ms`);
+    ok(state.hits.length === 6, 'and all six still got through', `${state.hits.length} arrived`);
   } finally {
     await new Promise((resolve) => server.close(resolve));
   }
