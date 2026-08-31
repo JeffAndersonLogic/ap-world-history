@@ -75,7 +75,8 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/validate.js`, run the full structural, capture-wiring, and image-integrity audit.
 - `node scripts/run-tests.js offline|browser|all [--strict]`, run a suite. Prints
   PASS, FAIL, or SKIP per check and exits 1 if anything failed.
-- `node scripts/check-image-urls.js`, verify every remote Commons image URL actually resolves. Needs internet access to `commons.wikimedia.org`; `validate.js` stays offline on purpose and cannot do this.
+- `node scripts/check-image-urls.js`, verify every remote Commons image URL actually resolves. Needs internet access to `commons.wikimedia.org`; `validate.js` stays offline on purpose and cannot do this. **It separates "gone" from "not verified"**, see "Rate limiting is not a broken image" below. Exit 1 means a picture is genuinely missing, exit 2 means nothing could be checked at all.
+- `node scripts/test/image-check-throttle.test.js`, prove that separation against a local server that rate-limits on demand: `Retry-After` obeyed in both its forms, a 429 pausing every worker on that host rather than one request, a throttled URL that later answers reported as fine, a permanent 429 or a proxy 403 reported as unverified rather than broken, and a real 404 still failing the run. Offline and in the push gate, because the real host cannot be a test fixture.
 - `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
 - `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets and success criteria out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand. `--check` fails on drift, which is what the offline suite runs.
@@ -637,6 +638,48 @@ there: they are exposed while the good ones are not.
   waited on real audio would hang in CI and sound different on every laptop. The
   browser test stubs the engine, and the honest limit of that is written at the
   top of the file: it proves this code is correct, not that Chrome is.
+
+### Rate limiting is not a broken image
+
+Nightly went red two nights running with a list headed "pictures did not
+resolve". Most of that list was HTTP 429, which is Commons rate-limiting a run
+that fired six workers at one host across about 400 URLs. Four entries were
+genuinely dead files, and they were buried in the noise.
+
+**A check that is red for a reason nobody can fix in this repo gets skimmed,
+and then the real failures underneath it get skimmed too.** That is worse than
+the red itself, and it is the reason this was worth fixing rather than muting.
+
+So the checker now answers two different questions separately:
+
+- **Broken**, and the run fails. The host answered and the answer was that the
+  picture is not there: a 404, or a page served where an image should be.
+- **Not verified**, and the run does not fail. The host declined to answer: a
+  429, a 5xx, a timeout, or an access refusal. These are named in their own
+  section and checked again the next night.
+
+**A proxy 403 is a decline, not a dead picture.** A filtering proxy answers 403
+or 407 to everything, so classifying those as broken is how a blocked network
+becomes a report that 400 images are missing. Access refusals are also never
+retried, because they will refuse identically next time and retrying 400 of them
+spends the whole nightly budget learning nothing.
+
+**The honest cost, and it is deliberate:** a picture that is genuinely dead
+behind a persistent throttle is not detected on that run. It appears in the
+not-verified list instead. Calling it broken without evidence would be a guess,
+and a guess sitting in the same list as the real failures is what made the list
+worthless.
+
+**Retry-After is obeyed, not clamped to our own guess.** There are two ceilings
+and they bound different things: `MAX_BACKOFF_MS` caps a delay this script
+invented, and `MAX_RETRY_AFTER_MS` caps one the host asked for, at a much higher
+value. Clamping the host's number down to ours means retrying before it said to,
+which earns another 429. That bug was written and then caught by the test.
+
+**A 429 pauses every worker on that host, not just the request that got it.**
+Rate limiting is a property of the host, so the backoff has to be too. Backing
+off one request while five others kept going is what turned one 429 into a
+cascade.
 
 ## Image Contract
 

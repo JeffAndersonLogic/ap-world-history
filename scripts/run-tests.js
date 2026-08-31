@@ -44,6 +44,7 @@ const SUITES = {
     ['scripts/test/socrates-contract.test.js', 'AI coach kit reproducible, persona unit-agnostic'],
     ['scripts/test/readings-parse.test.js', '77 reading script blocks are valid JavaScript'],
     ['scripts/check-style.js', 'American English, date form, note labels'],
+    ['scripts/test/image-check-throttle.test.js', 'rate limiting is not reported as a broken image'],
     ['scripts/test/schedule-cohorts.test.js', 'green/silver alternation, due dates, generated board and Canvas events']
   ],
   browser: [

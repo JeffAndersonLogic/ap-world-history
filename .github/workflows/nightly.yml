@@ -34,10 +34,28 @@ jobs:
         with:
           node-version: '22'
 
-      # Exits 1 on any unreachable image and prints the file plus the exact
-      # file name to replace, so the run's log is the fix list.
+      # Exit 1 means a picture is genuinely gone, and prints the file plus the
+      # exact file name to replace, so the run's log is the fix list.
+      #
+      # Exit 2 means nothing could be checked at all, because the runner could
+      # not reach the image hosts. That is the repo's "skipped, not passed"
+      # convention, the same one run-tests.js honours for the browser suite, and
+      # it must not be red: a job that fails because a third party was
+      # unreachable is a job people stop reading, which is exactly how the four
+      # genuinely dead images went unnoticed behind a wall of 429s. Rate limits
+      # no longer reach here at all; the script reports those as not verified
+      # and keeps exit 0. See "Rate limiting is not a broken image" in CLAUDE.md.
       - name: Check every remote Commons URL
-        run: node scripts/check-image-urls.js
+        run: |
+          set +e
+          node scripts/check-image-urls.js
+          code=$?
+          set -e
+          if [ "$code" -eq 2 ]; then
+            echo "::notice::Image hosts were unreachable, so nothing was verified. Not a failure."
+            exit 0
+          fi
+          exit $code
 
   contracts:
     name: Structure and browser contracts on main
