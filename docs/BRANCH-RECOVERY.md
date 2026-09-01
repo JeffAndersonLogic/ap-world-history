@@ -226,3 +226,97 @@ retrigger-pages-deploy
 
 Restore any one of them from the table above with
 `git push origin <SHA>:refs/heads/<BRANCH>`.
+
+## Classification of the 58 branches that carry content not on `main`
+
+Each was checked for work that never landed, the way
+`claude/daily-error-resolution-r0rd3y` turned out to hold the fix for a nightly
+that had been red for ten nights.
+
+### Hold: real work that is not on `main` (10)
+
+| Branch | What it has that main does not |
+|---|---|
+| `claude/foundations-exam-design-hodyb2` | 40-question Foundations exam, generated |
+| `claude/foundations-exam-design-24m6ue` | the 40-question exam, second pass |
+| `claude/foundations-exam-review-72xlg9` | exam rebuilt, with the cue that broke v2 gated |
+| `claude/behistorical-foundations-targets-xzlcyd` | Foundations Exam 1 as a Canvas QTI package |
+| `claude/historical-modulus-structure-vtz5jh` | Skills Lens keyboard reader, a spec, and three tests |
+| `claude/beintheroom-samarkand-scenario-OEhMa` | `unit-2/samarkand-caravanserai.html` |
+| `claude/kilwa-harbor-scenario-b0z10` | `unit-2/kilwa-harbor.html` |
+| `claude/taghaza-salt-road-build-2FEvY` | four Unit 2 scenarios incl. the Cairo capstone |
+| `claude/ilkhan-court-advisory-jslL8` | `unit-2/ilkhan-court.html` |
+| `claude/ap-history-repo-map-xngvsb` | a visual repo map for `docs/` |
+
+**There is no Foundations exam on `main` at all.** Four branches built one across
+six days in August and none landed. Whether to land it is a teaching decision, not a
+cleanup one, so all four are held.
+
+The seven Unit 2 scenarios are held for the same reason: `main` carries six different
+Unit 2 scenarios covering 2.1 to 2.6, so these are most likely superseded drafts, but
+"superseded" is a judgment about teaching that the blueprint gate in
+`docs/beintheroom-scenario-blueprint.md` should make, not a merge-tree comparison.
+
+### Harvested, then safe to delete
+
+Two branches were read for what they knew before being listed for deletion:
+
+- `claude/daily-error-resolution-r0rd3y` established 65 verified Commons names. Its
+  corrections are now on this branch, applied to `main` as it stands.
+- `claude/canvas-artifacts-docs-port-ef0sib` reported four student-visible lines still
+  naming the retired Google Form on 10 August. Three were still there today, and are
+  now fixed at their source.
+
+### Stale, safe to delete (43)
+
+Superseded: `main` has rewritten the files they touch, or the direction was abandoned
+(the BeCurrent work moved to its own repository, the Teacher Hub was retired, and
+`remove-optional-deeper-read` retires the standalone deep readings, which CLAUDE.md
+documents as current).
+
+```bash
+git push origin --delete \
+agent/beintheroom-v2-expansion \
+agent/standardize-first10-media \
+claude/admiring-noether-cvgZO \
+claude/ap-world-history-automation-90rdu6 \
+claude/behistorical-cards-nav-fq7t25 \
+claude/behistorical-current-events-access-g9ld2c \
+claude/behistorical-current-events-dcwd0q \
+claude/behistorical-google-form-sheet-jxtv4l \
+claude/behistorical-instruction-manual-lzyu4y \
+claude/behistorical-lesson-build-MB44v \
+claude/behistorical-looping-e998ne \
+claude/behistorical-monetization-readiness-784vh3 \
+claude/behistorical-pitch-deck-gr7w6a \
+claude/behistorical-remove-final-draft-zbyat6 \
+claude/beintheroom-topic-1-2-lo-f-WRTCm \
+claude/brave-darwin-PnePn \
+claude/canvas-artifacts-docs-port-ef0sib \
+claude/canvas-calendar-html-units-vvpjjv \
+claude/ced-compliance-renderer-config-SS5ER \
+claude/claude-md-docs-atzhky \
+claude/constantinople-siege-html-5P7PK \
+claude/current-events-activity-upgrade-ie6whn \
+claude/daily-error-resolution-r0rd3y \
+claude/delete-old-foundations-PoSKa \
+claude/foundations-content-audit-Nm4mp \
+claude/foundations-first-and-10-reading-QnvkC \
+claude/loving-newton-NGikG \
+claude/personalized-study-guides-d7oand \
+claude/remove-optional-deeper-read-x7gto4 \
+claude/sharp-meitner-rF1Ob \
+claude/song-china-first-10-cTmqP \
+claude/student-response-workflow-6xurnm \
+claude/teacher-hub-apps-script-0qDGZ \
+claude/topic-1-5-africa-lesson-eKCFi \
+claude/topic-1-6-medieval-europe-7ekfy \
+claude/topic-1-7-comparison-un2Dk \
+claude/topic-6-1-imperialism-ttftw8 \
+claude/unit-2-beintheroom-scenarios-dEUBm \
+claude/unit-2-beintheroom-scenarios-wdnz3t \
+claude/unit-4-5-f10-validators-CtTmA \
+claude/unit-5-completion-jueU7 \
+claude/unit-8-404s-4bnsod \
+claude/unit-8-image-repair
+```
