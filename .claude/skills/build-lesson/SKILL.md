@@ -5,6 +5,47 @@ description: Scaffold a complete BeHistorical lesson for a given AP World topic,
 
 # BeHistorical Lesson Builder
 
+> **Read this note before following the steps below.** This skill predates several
+> architecture changes documented in the repo's `CLAUDE.md`, and following it literally
+> will produce a lesson that fights the current content model rather than fitting it.
+> Known drift, checked 2026-08-23:
+>
+> - **"Standalone reading file" (Step 4) is stale as a process instruction.** Per
+>   `CLAUDE.md`'s "The Content Model", every First & 10 is now *generated* from a content
+>   module (`scripts/lib/reading-content/<unit>.js` for most units, `f10-content.js` for
+>   Units 6 and 9, `foundations-f10-content.js` for Foundations), rendered by
+>   `scripts/lib/first10-page.js`. There are no hand-authored readings left, and hand-writing
+>   the HTML structure below (which is still an accurate description of the *output shape*)
+>   directly, instead of writing a content module and running the unit's build script, creates
+>   exactly the kind of one-off file the content model exists to prevent. Check which build
+>   script owns the target unit (`build-unit-readings.js`, `build-unit6.js`, `build-unit9.js`,
+>   or `build-foundations-readings.js`) before writing any HTML by hand.
+> - **The capture wrapper is generated too, or synced with `scripts/sync-first10-capture.js`
+>   / `scripts/remove-google-form-capture.js`.** Don't hand-build one field by field; read
+>   `docs/CANVAS-CAPTURE.md` first.
+> - **Image sourcing has moved.** `CLAUDE.md`'s "Image Contract" now requires local generated
+>   artwork as the floor (`scripts/build-module-art.js`, `assets/images/module-art/`) with a
+>   remote Commons URL layered on top and `onerror` degrading back to local art, not a bare
+>   Wikimedia URL per slot. Hub cards need the two-`<img>`-layer structure `validate.js`
+>   enforces.
+> - **Not mentioned below at all, and required by current `CLAUDE.md`:** the exact 10-module
+>   table (module 08 is `renderSource()` on a Unit page but `renderCoach()` on a Foundations
+>   page), the required `.lesson-roadmap` Classroom Flow block, an optional `deepReading`
+>   block and where its data file lives (differs between Foundations and Unit topics, see
+>   "Deep Readings"), the Socrates paste plumbing (`docs/socrates/README.md`), and, if this
+>   topic has a BeInTheRoom simulation, the theme-alignment gate in
+>   `docs/beintheroom-scenario-blueprint.md` before it can be linked.
+> - **The "form config registration" in this skill's own description no longer exists.** The
+>   Google Form was retired 2026-08-07; see `docs/FORM-CONTRACT.md`. Do not register anything
+>   with it.
+>
+> Treat everything below as a description of the required *output shape* for the pieces it
+> still gets right (the data file's fields, the hub wiring, the 10-module completeness check),
+> and re-derive the *process* (which script generates what) from `CLAUDE.md` and the actual
+> build scripts rather than from this file. This skill has not been re-verified end to end
+> against the current generators; run `/audit-site` and `npm test` on whatever it produces
+> before trusting it.
+
 Build a complete lesson for a single AP World History topic. The user provides the topic number and title; this skill generates all required files and wiring.
 
 ## Required input (ask if not provided)

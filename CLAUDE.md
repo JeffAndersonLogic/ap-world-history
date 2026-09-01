@@ -8,8 +8,10 @@
   it, then fast-forward `main` to that commit. This is the one change the branch
   rule forces, and only because a required check cannot pass on a commit that
   exists nowhere yet. See "The branch rule" below.
-- Until the rule in `.github/branch-ruleset.json` is applied, committing directly
-  to `main` still works and nothing stops an untested commit reaching students.
+- The rule in `.github/branch-ruleset.json` is applied, as of 2026-09-01: the API
+  reports `main` protected. Committing directly to `main` no longer works, so the
+  branch-then-fast-forward flow above is the only route and the escape hatch this
+  line used to describe is gone.
 
 ## The Gate
 

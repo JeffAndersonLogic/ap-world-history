@@ -7,6 +7,15 @@ description: Validate structural integrity of the BeHistorical site, form config
 
 Run a comprehensive validation sweep across the entire BeHistorical project. Report all findings grouped by severity (errors, warnings, info).
 
+> **Run `node scripts/validate.js` (or `npm test`) first.** It is the repo's actual, currently
+> maintained gate and covers considerably more than the checks below: image integrity, deep
+> reading reachability in both directions, the eBook's volume/library consistency, the
+> Socrates paste contract, the 10-module table (including the Unit vs. Foundations module 08
+> split), the Classroom Flow block, and more, all listed in `CLAUDE.md`. The seven checks below
+> predate most of that and are a useful *manual*, human-readable narrative sweep on top of
+> `validate.js`, not a replacement for it. Do not report a clean run of just this skill as "the
+> site is validated."
+
 ## Checks to perform
 
 ### 1. Google Form Retirement
