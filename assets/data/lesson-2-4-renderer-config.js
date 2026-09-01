@@ -53,7 +53,7 @@
     evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Interior_of_great_enclosure%2CG.Zimbabwe.JPG',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
     beInTheRoom: '../assets/images/module-art/unit-2/topic-2-4/beintheroom.svg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Biet_Giorgis%2C_Lalibela%2C_Ethiopia_%2824076354516%29.jpg).jpg'
+    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Biet_Giorgis%2C_Lalibela%2C_Ethiopia_%2824076354516%29.jpg'
   };
 
   lesson.beInTheRoom = {

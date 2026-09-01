@@ -123,7 +123,7 @@ window.FOUNDATION_TOPIC = {
       {
         title: 'Artifact 3 (April): A DBQ Opening',
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqamat_al-Hariri,_folio_86r_%28detail%29.jpg).jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
         caption: 'Sample: "Industrialization did not liberate workers so much as it re-legitimized coercion. From Manchester\'s cotton mills to Belgian rubber camps in the Congo, the surplus that industrial capitalism produced depended on forms of unfree labor that its own political rhetoric claimed to have abolished, a contradiction that shaped both nineteenth-century imperialism and the labor movements that resisted it.", A late-year DBQ thesis. The student has a voice, a position, and a plan.',
         prompt: 'What is different about this student\'s writing that is not just about learning more content?'
       }
@@ -234,7 +234,7 @@ window.FOUNDATION_TOPIC = {
       image: {
         title: 'The Great Isaiah Scroll, Dead Sea Scrolls',
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Isaiah_Scroll_MS_A_%281QIsa%29_-_Google_Art_Project.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:The_Great_Isaiah_Scroll_MS_A_%281QIsa%29_-_Google_Art_Project.jpg)_-_Google_Art_Project.jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:The_Great_Isaiah_Scroll_MS_A_%281QIsa%29_-_Google_Art_Project.jpg',
         caption: 'Ancient scrolls preserved a community\'s words across millennia, a body of writing kept as a single document. Your portfolio is a version of the same idea, your own writing curated into a letter you own.'
       }
     },
