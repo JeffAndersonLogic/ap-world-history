@@ -677,6 +677,30 @@ not-verified list instead. Calling it broken without evidence would be a guess,
 and a guess sitting in the same list as the real failures is what made the list
 worthless.
 
+**The real fix was making fewer requests.** Pacing 386 separate fetches at one
+host politely still meant 386 fetches, and a throttled run inside the budget
+verified about 30 of them. Commons answers up to 50 file titles per API call, so
+the sweep is now about eight requests plus a narrowed set of real fetches.
+
+**The API answers a different question, so it narrows the work rather than
+replacing it.** "Does this file exist on Commons" is not "does the URL a
+student's browser hits return image bytes". So anything the API calls missing is
+still fetched, and so is a rotating sample of what it vouches for, which is what
+keeps the end-to-end path honest. A failing API answers about nothing and every
+URL falls through to the direct path, rather than being guessed at.
+
+**Skip a URL that still contains a template placeholder.** The video preview is
+built as `img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg`, and the collector was
+reading that literally, fetching it, and reporting a broken picture nobody could
+fix. Whatever the template renders to gets checked when it lands in a data file.
+
+**Never hand-build an `upload.wikimedia.org/.../thumb/<hash>/<n>px-<name>` URL.**
+That bakes in the file's storage hash, and a wrong prefix earns HTTP 400, which
+reads as broken while the underlying file is fine. Three Unit 2 BeInTheRoom
+scenarios did this. The canonical form is
+`Special:FilePath/<EXACT_FILE_NAME>?width=1200`, which resolves whatever the hash
+is.
+
 **Retry-After is obeyed, not clamped to our own guess.** There are two ceilings
 and they bound different things: `MAX_BACKOFF_MS` caps a delay this script
 invented, and `MAX_RETRY_AFTER_MS` caps one the host asked for, at a much higher

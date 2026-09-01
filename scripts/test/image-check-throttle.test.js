@@ -36,7 +36,7 @@ process.env.IMAGE_CHECK_MIN_GAP_MS = '10';
 process.env.IMAGE_CHECK_MAX_BACKOFF_MS = '500';
 process.env.IMAGE_CHECK_TIMEOUT_MS = '2000';
 
-const { checkWithRetries, isDecline, isRetryable, retryAfterMs } = require(CHECKER);
+const { checkWithRetries, isDecline, isRetryable, retryAfterMs, commonsTitle, askCommons, classify } = require(CHECKER);
 
 const G = '\x1b[32m', R = '\x1b[31m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 let failures = 0;
@@ -226,6 +226,69 @@ async function main() {
     ok(state.hits.length === 6, 'and all six still got through', `${state.hits.length} arrived`);
   } finally {
     await new Promise((resolve) => server.close(resolve));
+  }
+
+  // ── the Commons batch layer ────────────────────────────────────────────────
+  //
+  // The real API cannot be a fixture: it rate-limits, and this repo already
+  // learned what a third party deciding a check's outcome costs. A local server
+  // speaking the same shape is what makes this deterministic and offline.
+  ok(commonsTitle('https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_1945_CC.jpg')
+    === 'Yalta Conference 1945 CC.jpg', 'a FilePath URL yields its file title');
+  ok(commonsTitle('https://commons.wikimedia.org/wiki/File:Quipu.png') === 'Quipu.png',
+    'a credit-page URL yields its file title');
+  ok(commonsTitle('https://img.youtube.com/vi/abc/hqdefault.jpg') === null,
+    'a non-Commons URL is left to the direct path');
+  ok(classify('https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg') === null,
+    'an unrendered template literal is not treated as a URL to check');
+  ok(classify('https://img.youtube.com/vi/abc123/hqdefault.jpg') === 'image',
+    'a real video thumbnail still is');
+  ok(commonsTitle('https://commons.wikimedia.org/wiki/Special:FilePath/A%20B%2FC.jpg')
+    === 'A B/C.jpg', 'a percent-encoded title is decoded');
+
+  let apiCalls = 0;
+  let lastTitles = '';
+  const api = http.createServer((req, res) => {
+    apiCalls++;
+    const url = new URL(req.url, 'http://x');
+    lastTitles = url.searchParams.get('titles') || '';
+    const asked = lastTitles.split('|');
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      query: {
+        // Commons rewrites titles it normalized, so the reply deliberately does
+        // not echo what was asked: the mapping back is the part worth testing.
+        normalized: [{ from: 'File:lower case.jpg', to: 'File:Lower case.jpg' }],
+        pages: asked.map(t => {
+          const title = t === 'File:lower case.jpg' ? 'File:Lower case.jpg' : t;
+          return /Gone/.test(t) ? { title, missing: true } : { title, imageinfo: [{ mime: 'image/jpeg' }] };
+        })
+      }
+    }));
+  });
+  await new Promise((r) => api.listen(0, '127.0.0.1', r));
+  const apiBase = `http://127.0.0.1:${api.address().port}/w/api.php`;
+  try {
+    const answered = await askCommons(['Present one.jpg', 'Gone one.jpg', 'lower case.jpg'], apiBase);
+    ok(apiCalls === 1, 'three titles cost one request, not three', `${apiCalls} call(s)`);
+    ok(answered.get('Present one.jpg') === true, 'a file that exists comes back present');
+    ok(answered.get('Gone one.jpg') === false, 'a file that is missing comes back missing');
+    ok(answered.get('lower case.jpg') === true,
+      'a normalized title is mapped back to what was asked, not left unanswered');
+    ok(lastTitles.split('|').every(t => t.startsWith('File:')),
+      'titles are asked for in the File: namespace');
+
+    // A failing API must not be read as "everything is missing".
+    const broken = http.createServer((req, res) => { res.writeHead(500); res.end(); });
+    await new Promise((r) => broken.listen(0, '127.0.0.1', r));
+    const badBase = `http://127.0.0.1:${broken.address().port}/w/api.php`;
+    const none = await askCommons(['Anything.jpg'], badBase);
+    ok(none.size === 0 || [...none.values()].every(v => v === true),
+      'an API that fails answers about nothing, leaving URLs to the direct path',
+      `${none.size} answered`);
+    await new Promise((r) => broken.close(r));
+  } finally {
+    await new Promise((r) => api.close(r));
   }
 
   console.log(`\n${failures ? R : G}${W}${checks - failures}/${checks} checks passed.${X}\n`);

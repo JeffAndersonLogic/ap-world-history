@@ -110,6 +110,11 @@ const IMAGE_EXT = /\.(svg|jpe?g|png|gif|webp|PNG|JPG|JPEG|SVG)$/;
 // Both need to resolve, but only one is expected to be an image.
 function classify(url) {
   if (!/^https?:/i.test(url)) return null;
+  // A template literal picked up out of a renderer, not a URL. The video preview
+  // is built as `img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg`, and fetching
+  // that verbatim 404s forever and reports a picture nobody can fix as broken.
+  // Whatever the template renders to is checked when it lands in a data file.
+  if (/\$\{|\{\{/.test(url)) return null;
   if (/fonts\.(googleapis|gstatic)\.com/i.test(url)) return null;
   if (/docs\.google\.com|magicschool\.ai|(?:^|\.)youtube\.com|youtu\.be/i.test(url)) {
     return /^https:\/\/img\.youtube\.com\//i.test(url) ? 'image' : null;
@@ -283,6 +288,89 @@ async function checkWithRetries(url, expectImage) {
   return { ...last, declined: true };
 }
 
+// ── The Commons batch layer ──────────────────────────────────────────────────
+//
+// The rate limiting was never really about pacing. It was about making 386
+// separate requests to one host. With a 15 minute budget and honest backoff, a
+// throttled run verified about 30 of them a night, which is a check that mostly
+// did not look.
+//
+// Commons answers up to 50 file titles in one API call, so the same sweep is
+// about eight requests. That is under any rate limit worth the name, and it
+// finishes in seconds rather than exhausting a budget.
+//
+// WHAT THE API DOES AND DOES NOT TELL YOU
+//
+// It answers "does this file exist on Commons", which is not the same question
+// as "does the URL a student's browser hits return image bytes". Three of the
+// failures found on 2026-08-31 were HTTP 400 on names like
+// `1200px-Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg`, a thumbnail filename handed
+// to Special:FilePath. The API would report the underlying file as fine.
+//
+// So the batch layer narrows the work rather than replacing it: anything the API
+// says is missing, plus a rotating sample of the ones it says are fine, still
+// gets fetched for real. The sample is what keeps the end-to-end path honest,
+// and it rotates because a fixed sample verifies the same corner forever.
+const API_BATCH = Number(process.env.IMAGE_CHECK_API_BATCH || 50);
+const SAMPLE_SIZE = Number(process.env.IMAGE_CHECK_SAMPLE || 25);
+const COMMONS_API = process.env.IMAGE_CHECK_API
+  || 'https://commons.wikimedia.org/w/api.php';
+
+// The file title inside a Commons URL, or null when this is not one.
+function commonsTitle(url) {
+  const m = String(url).match(/\/(?:Special:(?:FilePath|Redirect)\/(?:file\/)?|wiki\/File:)([^?#]+)/i);
+  if (!m) return null;
+  try { return decodeURIComponent(m[1]).replace(/_/g, ' ').trim(); }
+  catch { return m[1].replace(/_/g, ' ').trim(); }
+}
+
+function getJson(url) {
+  return new Promise((resolve) => {
+    const agent = url.startsWith('http://') ? http : https;
+    const request = agent.request(url, { method: 'GET', headers: {
+      'User-Agent': 'BeHistorical-image-check/2.0 (AP World History course validator)',
+      Accept: 'application/json'
+    } }, (response) => {
+      if (response.statusCode !== 200) { response.resume(); return resolve(null); }
+      let body = '';
+      response.setEncoding('utf8');
+      response.on('data', (c) => { body += c; });
+      response.on('end', () => { try { resolve(JSON.parse(body)); } catch { resolve(null); } });
+    });
+    request.setTimeout(TIMEOUT_MS, () => { request.destroy(); resolve(null); });
+    request.on('error', () => resolve(null));
+    request.end();
+  });
+}
+
+/**
+ * Asks Commons about a batch of titles. Returns a Map of title -> true/false
+ * for the ones it answered about, and an empty Map when the call failed, which
+ * leaves every URL to the direct path rather than guessing.
+ */
+async function askCommons(titles, endpoint) {
+  const known = new Map();
+  const query = `${endpoint || COMMONS_API}?action=query&format=json&formatversion=2&prop=imageinfo`
+    + `&iiprop=url|mime&titles=${encodeURIComponent(titles.map(t => `File:${t}`).join('|'))}`;
+  const data = await getJson(query);
+  const pages = data && data.query && data.query.pages;
+  if (!Array.isArray(pages)) return known;
+
+  // Commons rewrites titles it normalized or followed a redirect for, so the
+  // answer has to be mapped back to what was asked rather than matched by name.
+  const back = new Map();
+  for (const kind of ['normalized', 'redirects']) {
+    for (const row of (data.query[kind] || [])) back.set(row.to, row.from);
+  }
+  const asked = new Set(titles.map(t => `File:${t}`));
+  for (const page of pages) {
+    let title = page.title;
+    while (back.has(title) && !asked.has(title)) title = back.get(title);
+    known.set(String(title).replace(/^File:/, ''), !page.missing);
+  }
+  return known;
+}
+
 function prettyName(url) {
   return decodeURIComponent(url.replace(/^.*\/(?:Special:(?:FilePath|Redirect)\/(?:file\/)?|File:)?/, ''));
 }
@@ -315,6 +403,58 @@ async function main() {
   }
 
   const results = new Map();
+
+  // Ask Commons about everything it can answer in bulk first, then fetch only
+  // what still needs a real answer: whatever the API called missing, plus a
+  // rotating sample of what it called fine.
+  const titleFor = new Map();
+  for (const url of urls) {
+    const t = commonsTitle(url);
+    if (t) titleFor.set(url, t);
+  }
+  let apiVerified = 0;
+  let apiMissing = 0;
+  let apiAnswered = new Map();
+  if (titleFor.size) {
+    const titles = [...new Set(titleFor.values())];
+    for (let i = 0; i < titles.length; i += API_BATCH) {
+      if (remainingBudget() <= 0) break;
+      const answered = await askCommons(titles.slice(i, i + API_BATCH));
+      for (const [title, exists] of answered) apiAnswered.set(title, exists);
+    }
+  }
+
+  // A URL the API vouched for is provisionally fine, and only the sample is
+  // fetched. A URL it says is missing is fetched too, because the file being
+  // absent from Commons and the URL failing are different claims and the report
+  // should rest on the second.
+  const sample = new Set();
+  const vouched = urls.filter(u => apiAnswered.get(titleFor.get(u)) === true);
+  const shuffledVouched = vouched.slice();
+  for (let i = shuffledVouched.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledVouched[i], shuffledVouched[j]] = [shuffledVouched[j], shuffledVouched[i]];
+  }
+  shuffledVouched.slice(0, SAMPLE_SIZE).forEach(u => sample.add(u));
+
+  for (const url of urls) {
+    const title = titleFor.get(url);
+    if (title === undefined || !apiAnswered.has(title)) continue;   // direct path
+    if (apiAnswered.get(title) === false) { apiMissing++; continue; }  // fetch to confirm
+    apiVerified++;
+    if (!sample.has(url)) {
+      results.set(url, { ok: true, status: 200, viaApi: true });
+    }
+  }
+
+  if (apiAnswered.size) {
+    console.log(`  Commons answered for ${apiAnswered.size} file(s) in `
+      + `${Math.ceil([...new Set(titleFor.values())].length / API_BATCH)} request(s): `
+      + `${apiVerified} exist, ${apiMissing} missing.`);
+    console.log(`  Fetching ${urls.length - apiVerified + sample.size} directly `
+      + `(everything unanswered or missing, plus a ${sample.size} URL sample).\n`);
+  }
+
   let cursor = 0;
   let done = 0;
   let lastReport = Date.now();
@@ -340,6 +480,7 @@ async function main() {
       const mine = cursor++;
       if (mine >= queue.length) return;
       const url = queue[mine];
+      if (results.has(url)) { done++; continue; }   // answered by the batch layer
       results.set(url, remainingBudget() > 0
         ? await checkWithRetries(url, found.get(url).kind === 'image')
         : NOT_CHECKED);
@@ -436,7 +577,7 @@ async function main() {
 // pacing and classification against a local server, rather than a copy of them.
 // The guard matters for the same reason build-ebook.js has one: without it, a
 // require of this file would run a full network sweep as a side effect.
-module.exports = { checkWithRetries, isDecline, isRetryable, retryAfterMs, head };
+module.exports = { checkWithRetries, isDecline, isRetryable, retryAfterMs, head, commonsTitle, askCommons, classify };
 
 if (require.main === module) {
   main().catch((error) => {
