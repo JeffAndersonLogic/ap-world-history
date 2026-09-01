@@ -142,3 +142,87 @@ branch changes nothing, so its work is already on main and deleting it loses not
 | `feature/ebook-listen-voice-quality` | `3f50768aa4eeecacb633ca866b6dfa225446ebe1` | 2026-08-16 | absorbed |
 | `main` | `bb881f4b5c36f8c333d20a4518b3024bc795e410` | 2026-08-31 | default branch |
 | `retrigger-pages-deploy` | `ff7736bf7b66b1ce2073b214031376873f9e8da3` | 2026-08-26 | absorbed |
+
+## Cleanup: the 69 branches that are provably absorbed
+
+For each of these, `git merge-tree` against `main` returns main's own tree, so merging
+the branch is a no-op and deleting it loses nothing. Re-verified against `main` at
+`bb881f4` on 2026-09-01.
+
+Delete them all:
+
+```bash
+git push origin --delete \
+accessibility/ebook-wcag-aa \
+add-1-2-sufism-video \
+claude/ap-world-foundations-exam-0lzn02 \
+claude/b-historical-announcements-0cuwms \
+claude/be-in-room-module-response-6jwqvk \
+claude/behistorical-ebook-stress-test-kcrlx2 \
+claude/behistorical-ebook-unit-1-q2axu6 \
+claude/behistorical-form-buttons-lr4nzy \
+claude/behistorical-foundations-canvas-bibagu \
+claude/behistorical-image-fixes-01tlyj \
+claude/behistorical-lecture-images-6tsbzc \
+claude/behistorical-productivity-strategy-qzrme6 \
+claude/behistorical-project-access-ymg6ta \
+claude/behistorical-push-main-ki0my9 \
+claude/behistorical-status-review-x4thz6 \
+claude/behistorical-topic-1-2-q1m2as \
+claude/behistorical-unit-6-f5fcqh \
+claude/behistorical-units-5-9-review-64445a \
+claude/behistorical-video-swap-8lm6b8 \
+claude/behistorical-washed-button-60md8f \
+claude/beinthroom-next-step-instructions-ib5z9a \
+claude/canvas-assignments-module-sort-lqlv73 \
+claude/canvas-build-guide-docs-0kyndl \
+claude/confucianism-lecture-updates-8c5pn3 \
+claude/current-events-activity-access-lojpnv \
+claude/descriptor-comma-placement-dvkewt \
+claude/ebook-units-disclaimer-removal-aoowdo \
+claude/education-tools-ideas-dxhmzc \
+claude/festive-archimedes-cmwk8t \
+claude/festive-sagan-1U8rD \
+claude/fix-card-image-issue-ukwirv \
+claude/foundations-0-map-swap-oc1sfd \
+claude/foundations-1-geography-jtqrt \
+claude/foundations-1-video-swap \
+claude/foundations-2-buddhism-map-1a0swh \
+claude/foundations-3-coverage-628c5a \
+claude/foundations-3-module-1-maps-8ngqsg \
+claude/foundations-4-networks-notes-33hsw7 \
+claude/foundations-capture-parity-9tedg0 \
+claude/foundations-card-contrast \
+claude/foundations-learning-targets-60tm0j \
+claude/foundations-lecture-notes-86koy9 \
+claude/foundations-modules-format-aQqFh \
+claude/grand-canal-map-lecture-wr0v6h \
+claude/historical-website-link-switch-q62an0 \
+claude/lecture-cards-video-placement-kq0c7i \
+claude/listen-to-section-feature-amcnf6 \
+claude/magic-school-socrates-file-liu4af \
+claude/modest-brahmagupta-VvWvM \
+claude/module-7-tile-content-0kg8ez \
+claude/notion-summaries-recovery-qrbcyi \
+claude/remove-becurrent-link-wwz9rq \
+claude/separate-socrates-classrooms-ff9gp8 \
+claude/skills-lens-over-time-zc4rrx \
+claude/skillslens-status-knmkh0 \
+claude/socrates-multi-unit-expansion-map695 \
+claude/song-china-reading-section-IT8vT \
+claude/topic-1-2-dar-al-islam-VI3jA \
+claude/topic-1-3-lesson-build-IGrEt \
+claude/topic-8-1-cold-war-lesson-gtlcp3 \
+claude/unit-1-ebook-alignment-uut4d1 \
+claude/unit-3-build-gOgO5 \
+claude/unit-4-critique-response-3due9t \
+claude/unit-5-ced-audit \
+claude/unit4-5-first10-fixes-xm7xyy \
+claude/units-2-4-ced-audit-vwovod \
+feature/ebook-listen-to-section \
+feature/ebook-listen-voice-quality \
+retrigger-pages-deploy
+```
+
+Restore any one of them from the table above with
+`git push origin <SHA>:refs/heads/<BRANCH>`.
