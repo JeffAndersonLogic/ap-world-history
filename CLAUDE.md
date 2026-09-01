@@ -721,6 +721,19 @@ Every picture a student can see must be on-topic and must be impossible to break
   container until the picture is letterboxed off-screen.
 - **Never commit a placeholder image file.** `validate.js` checks magic bytes;
   a text file named `.jpg` fails the build.
+- **A remote image filename carries exactly one extension, at the end.**
+  `Khmer_Empire_1203_Map_%28cropped%29.png).png` names no file on Commons, and
+  Topic 1.3 shipped it to students on 2026-09-01 with every structural check
+  green. A sweep percent-encoding parentheses across 72 Commons names had
+  substituted each encoded name in for the *unencoded prefix*, leaving the tail
+  of the old name attached; six pictures across four units went that way in one
+  commit. `validate.js` now fails on a filename whose first image extension is
+  not the end of the name, which needs no network because such a name is
+  malformed on its face. **This is the offline half of the contract and it does
+  not replace `check-image-urls.js`**, which is the only thing that knows
+  whether a well-formed name actually resolves, and which is nightly on purpose
+  so a third party's outage never fails a commit. That split is why a teacher
+  found this before a machine did.
 
 ## Core Architecture
 
