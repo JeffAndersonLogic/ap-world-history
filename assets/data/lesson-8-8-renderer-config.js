@@ -58,13 +58,13 @@
     map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
     first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Soviet_withdrawal_Afghanistan_1989.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_sdi_speech_1983.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gorbachev_speech_1988.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG'
+    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
+    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg',
+    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.jpg',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg',
+    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Photograph_of_President_Reagan_Addressing_the_Nation_on_National_Security_%28SDI_Speech%29_-_NARA_-_198536.jpg',
+    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/RIAN_archive_850809_General_Secretary_of_the_CPSU_CC_M._Gorbachev_%28cropped%29.jpg',
+    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg'
   };
 
   lesson.beInTheRoom = {

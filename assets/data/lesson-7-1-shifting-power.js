@@ -141,8 +141,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Mustafa Kemal Atatürk",
           caption: "Atatürk, founder and first president of the Republic of Turkey (1923), the new state that replaced the Ottoman Empire.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/MustafaKemalAtaturk.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:MustafaKemalAtaturk.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kemal_Atat%C3%BCrk_portrait.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Kemal_Atat%C3%BCrk_portrait.jpg"
         }
       },
       {

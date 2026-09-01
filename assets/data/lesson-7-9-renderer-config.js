@@ -197,15 +197,15 @@ window.renderCausationMatrix = function () {
 
   // ── Stable images ─────────────────────────────────────────────────────────────
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png',
+    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
+    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png',
+    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
     evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
-    causationMatrix: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.png',
+    causationMatrix: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg'
   };
 

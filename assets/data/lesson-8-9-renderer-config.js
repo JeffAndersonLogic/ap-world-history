@@ -296,7 +296,7 @@
       label: 'Module 02',
       title: 'Content Delivery',
       desc: 'Jump to the lecture cards: four effect categories, Eastern Hemisphere patterns, Western Hemisphere patterns, and how to write the extent thesis.',
-      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG',
+      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
       jump: '#lecture'
     },
     {
@@ -312,7 +312,7 @@
       label: 'Module 04',
       title: 'Hemispheric Effects Matrix',
       desc: 'Complete the four-row matrix (economic, political, social, cultural effects × Eastern/Western hemispheres), rate each row, then draft your extent thesis.',
-      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG',
+      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
       render: function () { return renderMatrix89(); }
     },
     {
@@ -320,7 +320,7 @@
       label: 'Module 05',
       title: 'AP Skill Builder',
       desc: 'LEQ construction: plan contextualization, thesis degree claim, two evidence paragraphs (one per hemisphere), and the complexity move.',
-      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg',
+      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg',
       render: function () { return renderSkill(); }
     },
     {

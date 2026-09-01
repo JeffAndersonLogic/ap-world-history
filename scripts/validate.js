@@ -1359,6 +1359,89 @@ section('Image integrity');
 }
 
 // ── Skills Lens inlined libraries ─────────────────────────────────────────────
+// 14. A remote image filename must carry exactly one extension, at the end.
+//
+// This is the offline half of the image contract, and it exists because of a
+// specific failure on 2026-09-01. A sweep that percent-encoded parentheses in
+// 72 Commons filenames substituted each encoded name in for the *unencoded
+// prefix*, which left the tail of the old name attached:
+//
+//   Khmer_Empire_1203_Map_%28cropped%29.png).png
+//                                         ^^^^^
+//
+// Commons has no such file, so Topic 1.3's Map module drew its "did not load"
+// fallback where the mainland map belongs, and five other pictures across four
+// units went the same way in the same commit. Every check in this file stayed
+// green, because nothing offline had ever looked at the shape of a remote URL:
+// the Image integrity section above skips anything matching /^https?:/ by
+// design, since it cannot stat a file on someone else's server.
+//
+// check-image-urls.js does catch this, and did not get the chance: it is
+// nightly on purpose, because commons.wikimedia.org must never fail a commit.
+// So a broken map reached students first and a teacher found it, which is the
+// gap this section closes. It needs no network, because a filename carrying a
+// second extension after the first is malformed on its face, whatever the host
+// would have said about it.
+//
+// The rule is deliberately narrow: exactly one image extension, ending the
+// name. All 431 remote Commons URLs in the repo satisfy it, so a hit is a
+// corrupted name rather than an unusual one.
+section('Remote image URLs are well formed');
+{
+  const IMAGE_EXT_ANY = /\.(svg|jpe?g|png|gif|tiff?|webp)/i;
+
+  // Every place a remote picture can be named: quoted url:/sourceUrl: fields in
+  // data and script files, and src=/href= attributes in pages. Walking the repo
+  // rather than a typed file list, for the same reason the eBook tests read
+  // VOLUMES: a list goes on reporting green while covering less each time
+  // something new lands.
+  const SKIP_DIRS = new Set(['node_modules', '.git', 'submissions', '.github']);
+  const scanFiles = [];
+  const walkAll = (dir) => {
+    if (!exists(dir)) return;
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (SKIP_DIRS.has(entry.name)) continue;
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walkAll(full);
+      else if (/\.(html|js)$/i.test(entry.name)) scanFiles.push(full);
+    }
+  };
+  walkAll(ROOT);
+
+  // A URL ends at a quote, whitespace, or a markup delimiter. It does NOT end
+  // at the first ")", which is the trap: a percent-encoded name is allowed to
+  // contain one, and truncating there hides the very corruption being hunted.
+  const URL_RE = /https?:\/\/[^\s"'`<>\\]+/g;
+
+  let malformed = 0;
+  const reported = new Set();
+  for (const file of scanFiles) {
+    const src = read(file) || '';
+    for (const match of src.matchAll(URL_RE)) {
+      const url = match[0].replace(/[.,;:]+$/, '');
+      const name = url.split(/[?#]/)[0].split('/').pop();
+      if (!name || !IMAGE_EXT_ANY.test(name)) continue;
+
+      const hit = name.match(IMAGE_EXT_ANY);
+      const endsAtFirstExt = hit.index + hit[0].length === name.length;
+      if (endsAtFirstExt) continue;
+
+      totalChecks++;
+      malformed++;
+      const key = `${path.relative(ROOT, file)}|${name}`;
+      if (reported.has(key)) continue;
+      reported.add(key);
+      err(file, `remote image filename carries a second extension, so it names no real file: ${name}`);
+    }
+  }
+
+  totalChecks++;
+  if (!scanFiles.length) {
+    err(ROOT, 'found no pages to scan for remote image URLs, the walk is broken');
+  }
+  sectionDone(`${scanFiles.length} pages and scripts scanned for remote image URLs`);
+}
+
 //
 // The Lens reads a Canvas zip in the browser, using the identical parser the
 // command line uses. "Identical" is only true while the inlined copy matches

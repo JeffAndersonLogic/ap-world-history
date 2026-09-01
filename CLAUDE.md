@@ -8,8 +8,10 @@
   it, then fast-forward `main` to that commit. This is the one change the branch
   rule forces, and only because a required check cannot pass on a commit that
   exists nowhere yet. See "The branch rule" below.
-- Until the rule in `.github/branch-ruleset.json` is applied, committing directly
-  to `main` still works and nothing stops an untested commit reaching students.
+- The rule in `.github/branch-ruleset.json` is applied, as of 2026-09-01: the API
+  reports `main` protected. Committing directly to `main` no longer works, so the
+  branch-then-fast-forward flow above is the only route and the escape hatch this
+  line used to describe is gone.
 
 ## The Gate
 
@@ -743,6 +745,19 @@ Every picture a student can see must be on-topic and must be impossible to break
   container until the picture is letterboxed off-screen.
 - **Never commit a placeholder image file.** `validate.js` checks magic bytes;
   a text file named `.jpg` fails the build.
+- **A remote image filename carries exactly one extension, at the end.**
+  `Khmer_Empire_1203_Map_%28cropped%29.png).png` names no file on Commons, and
+  Topic 1.3 shipped it to students on 2026-09-01 with every structural check
+  green. A sweep percent-encoding parentheses across 72 Commons names had
+  substituted each encoded name in for the *unencoded prefix*, leaving the tail
+  of the old name attached; six pictures across four units went that way in one
+  commit. `validate.js` now fails on a filename whose first image extension is
+  not the end of the name, which needs no network because such a name is
+  malformed on its face. **This is the offline half of the contract and it does
+  not replace `check-image-urls.js`**, which is the only thing that knows
+  whether a well-formed name actually resolves, and which is nightly on purpose
+  so a third party's outage never fails a commit. That split is why a teacher
+  found this before a machine did.
 
 ## Core Architecture
 

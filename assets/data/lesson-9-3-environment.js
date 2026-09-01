@@ -122,8 +122,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Amazon deforestation",
           caption: "Large-scale clearing of the Amazon rainforest for agriculture and ranching illustrates how human activity contributed to deforestation after 1900.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rondonia_Deforestation.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Rondonia_Deforestation.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg"
         }
       },
       {
@@ -190,8 +190,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Deforestation in Rondônia, Brazil",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rondonia_Deforestation.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Rondonia_Deforestation.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg",
       caption: "Satellite image of deforestation in the Brazilian state of Rondônia, large-scale clearing for cattle ranching and agriculture transformed the landscape.",
       prompt: "What human activities caused this deforestation, and what environmental effects would follow from clearing this much forest?"
     },

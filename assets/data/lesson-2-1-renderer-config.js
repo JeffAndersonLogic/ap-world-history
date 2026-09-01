@@ -52,7 +52,7 @@
     first10: '../assets/images/module-art/unit-2/topic-2-1/first10.svg',
     contentDelivery: '../assets/images/module-art/unit-2/topic-2-1/contentdelivery.svg',
     beSurreal: '../assets/images/module-art/unit-2/topic-2-1/besurreal.svg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
+    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
     checkpoint1: '../assets/images/module-art/unit-2/topic-2-1/checkpoint1.svg',
     evidence: '../assets/images/module-art/unit-2/topic-2-1/evidence.svg',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',

@@ -76,13 +76,13 @@ window.BEHISTORICAL_LESSON = {
 
   stableImages: {
     map:             'https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/The_Rhodes_Colossus.png',
+    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg',
     beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/The_Rhodes_Colossus.png',
+    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png',
     checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Herbert_Spencer.jpg',
     evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/The_Rhodes_Colossus.png',
+    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png',
     beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg',
     checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg'
   },
@@ -118,7 +118,7 @@ window.BEHISTORICAL_LESSON = {
   first10: {
     title: "First & 10: The Language of Conquest",
     embedUrl: "first-and-10-topic-6-1-rationales-for-imperialism-capture.html?v=response-id-fix-v1",
-    note: "Read the First & 10 narrative on the four ideologies of empire, answer the three questions, build your Google Form response and your AI Coach prompt, then return to the 6.1 lesson path."
+    note: "Read the First & 10 narrative on the four ideologies of empire, answer the three questions, build your AI Coach prompt, then return to the 6.1 lesson path."
   },
 
   lecture: {
@@ -148,8 +148,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "The Rhodes Colossus (Punch, 1892)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/The_Rhodes_Colossus.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:The_Rhodes_Colossus.png",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png",
           caption: "Cecil Rhodes striding across Africa, national prestige and imperial ambition fused into a single image."
         }
       },
@@ -244,8 +244,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "The Rhodes Colossus (Punch, 1892)",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/The_Rhodes_Colossus.png",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:The_Rhodes_Colossus.png",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png",
       caption: "Cecil Rhodes bestrides Africa, imperial ambition rendered as heroic national achievement.",
       prompt: "Which ideology does this image promote most directly, nationalism, the civilizing mission, or racial hierarchy? Defend your reading."
     },

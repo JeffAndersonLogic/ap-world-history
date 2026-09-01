@@ -118,15 +118,15 @@ window.BEHISTORICAL_LESSON = {
 
   stableImages: {
     map:             "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
-    contentDelivery: "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG",
+    contentDelivery: "https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
     first10:         "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
     unitreview:      "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
-    matrix:          "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG",
-    skill:           "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg",
-    beSurreal:       "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG",
+    matrix:          "https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
+    skill:           "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg",
+    beSurreal:       "https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
     checkpoint1:     "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
-    evidence:        "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg",
-    source:          "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG",
+    evidence:        "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg",
+    source:          "https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
     beInTheRoom:     "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png",
     checkpoint2:     "https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png"
   },
@@ -196,8 +196,8 @@ window.BEHISTORICAL_LESSON = {
 
   images: [
     { title: "Proxy-war geography", url: "", sourceUrl: "", caption: "BeHistorical topic artwork for this card. Superpower rivalry was fought out mostly in places far from Washington and Moscow.", prompt: "Which geographic pattern best supports a hemispheric comparison?" },
-    { title: "Proxy-war geography", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg", sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_1985.jpg", caption: "Superpower meetings shaped relationships and consequences far beyond the two states represented.", prompt: "How can diplomacy be both a bilateral event and evidence of global effects?" },
-    { title: "The Berlin Wall falls", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG", sourceUrl: "https://commons.wikimedia.org/wiki/File:Thefalloftheberlinwall1989.JPG", caption: "The fall of the Berlin Wall carried political, social, and cultural meaning across hemispheres.", prompt: "Which effect category does this image support most strongly, and why?" }
+    { title: "Proxy-war geography", url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg", sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_%281985%29.jpg", caption: "Superpower meetings shaped relationships and consequences far beyond the two states represented.", prompt: "How can diplomacy be both a bilateral event and evidence of global effects?" },
+    { title: "The Berlin Wall falls", url: "https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg", sourceUrl: "https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg", caption: "The fall of the Berlin Wall carried political, social, and cultural meaning across hemispheres.", prompt: "Which effect category does this image support most strongly, and why?" }
   ],
 
   lecture: {
@@ -215,8 +215,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Fall of the Berlin Wall, 1989",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thefalloftheberlinwall1989.JPG",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Thefalloftheberlinwall1989.JPG",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
           caption: "The fall of the Berlin Wall was a political AND cultural effect of the Cold War, and it occurred in the Eastern Hemisphere. A strong LEQ uses specific moments like this to anchor hemisphere comparisons."
         }
       },
@@ -231,8 +231,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Soviet withdrawal from Afghanistan, 1989",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Soviet_withdrawal_Afghanistan_1989.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Soviet_withdrawal_Afghanistan_1989.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.jpg",
           caption: "The Soviet withdrawal from Afghanistan was an Eastern Hemisphere event with global Cold War significance, one of three causal strands in KC-6.2.IV.E that ended the superpower rivalry."
         }
       },
@@ -247,8 +247,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Reagan and Gorbachev, Geneva, 1985",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_1985.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_1985.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_%281985%29.jpg",
           caption: "Reagan-Gorbachev summits, Western and Eastern Hemisphere superpowers in direct diplomatic engagement, are also evidence of new global institutions (KC-6.3) emerging from Cold War competition."
         }
       },

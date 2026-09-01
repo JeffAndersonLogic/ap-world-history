@@ -292,7 +292,7 @@ const MEDIA = {
     // A 1910 map of Africa cannot answer a map question about state expansion in
     // Japan, Russia, and the United States, so this topic gets its own map.
     map: instructionalMap('6.2'),
-    photo: 'Africa_map_1910.jpg', onCard: 1, onEvidence: 0,
+    photo: 'Map_of_Colonial_Africa_in_1913.png', onCard: 1, onEvidence: 0,
     photoTitle: 'Africa after the partition, 1910',
     photoCaption: 'Twenty-five years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.'
   },

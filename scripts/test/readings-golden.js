@@ -55,7 +55,16 @@ const INTENTIONAL = [
   { field: 'support[].heading', after: 'Before You Read',
     why: 'those three said "What to do"; 55 others say Before You Read' },
   { field: 'support[].heading', after: 'Reading Target',
-    why: 'those three said "Why it matters"; 55 others say Reading Target' }
+    why: 'those three said "Why it matters"; 55 others say Reading Target' },
+  { field: 'header.subtitle',
+    after: 'Topic 5.9, Society and the Industrial Age | AP World History',
+    why: 'same retirement again, in the header of 5.9. These three were the last student-facing text in the course still telling students to build a Google Form response, three weeks after the form was removed. The other 55 already carry the topic title here.' },
+  { field: 'header.subtitle',
+    after: 'Topic 5.10, Continuity and Change in the Industrial Age | AP World History',
+    why: 'same retirement, in the header of 5.10' },
+  { field: 'header.subtitle',
+    after: 'Topic 6.1, Rationales for Imperialism | AP World History: Modern',
+    why: 'same retirement, in the header of 6.1' }
 ];
 
 /** Parse one diff line back into field, before, after. */
