@@ -106,9 +106,15 @@ if (!haveCli()) {
 // is written up in docs/socrates/README.md.
 const CASES = [
   {
-    id: 'first10-vague',
+    // Was a First & 10 Reflection case until 2026-08-31, when the reading stopped
+    // reaching Socrates. The draft is what this case measures, a student who has
+    // the idea but no specific evidence, so it moved to the surface that still
+    // exists rather than being deleted. An eval that grades a retired surface
+    // reports confidently on a conversation no student can have.
+    id: 'checkpoint2-vague',
     topic: '2.2',
-    module: 'First & 10 Reflection',
+    module: null,
+    checkpoint: null,
     budget: 4,
     // Understands the idea, evidence is real but unspecific, explanation thin.
     // Under version 1 this drew a full claim/evidence/explanation walk. It should
@@ -119,10 +125,12 @@ const CASES = [
       + 'than it had been before.'
   },
   {
-    id: 'checkpoint1-thin',
+    // Was a Checkpoint 1 case; Checkpoint 1 is the unaided diagnostic now, so
+    // this thin draft is graded where coaching actually happens.
+    id: 'checkpoint2-thin',
     topic: '5.3',
     module: null,
-    checkpoint: 0,
+    checkpoint: null,
     budget: 4,
     draft: 'Workers had a hard time during industrialization. Factory conditions '
       + 'were bad and people worked long hours for low pay. Some workers protested '

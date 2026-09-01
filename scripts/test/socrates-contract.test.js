@@ -143,12 +143,19 @@ const REQUIRED = [
   // floor moved from "a question mark exists" to "exactly one ask exists", pinned
   // above. Do not restore the old sentence: it is what stopped him releasing.
   [/never more than one/, 'the ceiling of one ask per turn'],
-  // Socrates serves exactly four assignments. Naming them is what lets him orient
-  // from the student's own words, and it is also the boundary: a fifth surface
-  // appearing here means someone wired up a coach button the persona does not know
-  // about.
-  [/First & 10 Reflection/, 'the First & 10 Reflection surface by name'],
-  [/Exactly four assignments reach you/, 'the four-surface boundary']
+  // Socrates serves exactly two assignments as of 2026-08-31, Checkpoint 2 and
+  // BeInTheRoom. Naming them is what lets him orient from the student's own
+  // words, and it is also the boundary: a third surface appearing here means
+  // someone wired up a coach button, and a surface missing here means a student
+  // can reach a coach who has never heard of what they are working on.
+  //
+  // The First & 10 Reflection and Checkpoint 1 are asserted absent rather than
+  // deleted from this list, because a persona that still names them would send
+  // students looking for buttons the pages no longer have.
+  [/Checkpoint 2/, 'the Checkpoint 2 surface by name'],
+  [/BeInTheRoom/, 'the BeInTheRoom surface by name'],
+  [/Exactly two assignments reach you/, 'the two-surface boundary'],
+  [/Reasoning skill/, 'the instruction to use the pasted reasoning skill']
 ];
 REQUIRED.forEach(([re, what]) => {
   if (re.test(FLAT)) ok(`persona still carries ${what}`);
