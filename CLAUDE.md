@@ -837,27 +837,26 @@ whole design. Read `docs/socrates/README.md` before touching any of it.
 - **The paste** carries the one assignment in front of the student and is what
   makes one bot work for nine units: retrieval cannot miss a fact that is already
   in the message. There is exactly one implementation,
-  `assets/js/behistorical-coach-prompt.js`, reached four ways: the checkpoint
-  bridge in the renderer, via a copy inlined by `build-coach-prompt.js`; all 77
-  generated readings, via a copy `first10-page.js` emits into each page;
+  `assets/js/behistorical-coach-prompt.js`, reached three ways: the checkpoint
+  bridge in both renderers, via a copy inlined by `build-coach-prompt.js`;
   `scripts/lib/socrates-course.js`, for the docs and the eval; and the contract
-  test. Medians are about 520 words for a checkpoint and 555 for a reading.
+  test. The 77 readings were the fourth until their builder was removed. Medians are about 520 words for a checkpoint and 555 for a reading.
   `docs/socrates/socrates-paste-contract.md` is generated from that same builder,
   so the doc cannot describe something the code does not produce.
   **Do not add a second prompt builder.** There were 64 of them, one per reading,
   and ten were malformed badly enough to kill their page's entire script block.
 - **The spine** is the generated attachment, for questions off the module path.
 
-**Three assignments reach him as of 2026-08-31:** the First & 10 Reflection,
-Checkpoint 2, and BeInTheRoom. Checkpoint 1 was the fourth until it became the
-unaided diagnostic described below, and the First & 10 builder is scheduled to
-follow it, which will leave Checkpoint 2 and BeInTheRoom as the only two.
+**Two assignments reach him as of 2026-08-31, and only two:** Checkpoint 2 and
+BeInTheRoom. Checkpoint 1 became the unaided diagnostic described below, and the
+First & 10's coach builder was removed, because coaching the lowest-stakes
+writing in the lesson cost a vendor round trip and bought little. That is four
+surfaces down to two, and three copy-paste trips per lesson down to one.
 
-**The persona still names four, and that is a known gap rather than an
-oversight.** It lives in a vendor UI no test here can read, so every edit to it
-is a manual paste, and it is worth doing once at the end of this sequence rather
-than three times. Until then Socrates is told about a Checkpoint 1 surface no
-student can reach, which costs nothing: he simply never meets it. Both renderers carry the checkpoint bridge, all
+**The persona has to be pasted into MagicSchool before the site changes ship.**
+It lives in a vendor UI no test here can read. A bot still expecting readings
+that no longer send is the smaller failure; a bot that has never heard of the
+only surface left is the larger one. Both renderers carry the checkpoint bridge, all
 77 readings carry their own, and 38 of the 64 BeInTheRoom scenarios build their own
 payload. The unit renderer's inline First & 10 bridge is dead code, because all 71
 topics use the iframe path. If a fifth surface ever grows a coach button, add it to
@@ -1304,10 +1303,15 @@ Every First & 10 reading **must** follow the Topic 1.1 structure exactly. This r
    - Multiple `.section` divs, each with: `.section-number` watermark, `.section-label` eyebrow, `h2.section-heading`, `.reading-text` paragraphs, at least one `.ap-callout` with an AP skill label
    - `.be-ready` strip, "BeReady: 10-Second Takeaway"
 4. **`.check-section`**, exactly three `.question-item` elements, each with `.q-num`, `.q-skill` badge, `.q-text`, and `textarea.q-textarea`
-5. **Builder section, "Build Your AI Coach Prompt"**, `.builder-section` with `buildAiPrompt()`, `copyAiPrompt()`, and Open MagicSchool buttons, `#ai-output` textarea
+5. **No builder section, and no route to Socrates at all.** The reading carried a
+   "Build Your AI Coach Prompt" block until 2026-08-31. It is gone, along with the
+   Open MagicSchool button, the inlined prompt builder and the inlined classroom
+   resolver, which existed only to resolve that button's href. `validate.js`
+   prohibits all of it on both the reading and its wrapper, in the inverted form
+   of the checks that used to require it, so it cannot come back on one side only.
 6. **`.page-footer-note`**, submission note
 7. **`.module-footer`**, nav links back to lesson path (← Map & Geography | Content Delivery →)
-8. **The First & 10 answer-capture script block.** It writes the three answers to `behistorical-first10-<TOPIC>` where both renderers read them for Gather All My Work. Drop it and those answers never reach Canvas.
+8. **The First & 10 answer-capture script block.** It writes the three answers to `behistorical-first10-<TOPIC>` where both renderers read them for Gather All My Work. Drop it and those answers never reach Canvas. It is now the *only* thing in a reading's trailing `<script>`.
 
 ### Delivery pattern
 
@@ -1330,9 +1334,13 @@ Always use the full class names from Topic 1.1/1.2. Never use abbreviated names 
 
 ### Capture wrapper pattern
 
-All 77 wrappers share one shape. The MagicSchool interception is load-bearing:
-most readings render that button with no `onclick` and rely on the wrapper
-catching the click by label, so a wrapper without it is a dead button.
+All 77 wrappers share one shape, and it is now just an iframe. The MagicSchool
+click interception is gone with the reading's coach button: most readings
+rendered that button with no `onclick` and relied on the wrapper catching the
+click by label, so with no button there is nothing to intercept.
+
+The wrapper itself stays, because `first10.embedUrl` points at it and the iframe
+is the delivery pattern.
 
 ```html
 <!DOCTYPE html>
@@ -1348,14 +1356,10 @@ catching the click by label, so a wrapper without it is a dead button.
 </head>
 <body>
   <iframe id="first10-frame" src="first-and-10-topic-X-X-SLUG.html" title="First and 10 Topic X.X"></iframe>
-  <script>
-    const MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
-    // ... wireFirst10Capture() intercepts clicks labelled
-    //     'open magicschool' or 'open ai coach'
-  </script>
 </body>
 </html>
 ```
 
-Run `node scripts/remove-google-form-capture.js` to regenerate all 77 to this
-shape. It is idempotent.
+`scripts/lib/first10-capture-wrapper.js` is the one template; three tools write
+these files and all three import it. Run `node scripts/remove-google-form-capture.js`
+to regenerate all 77. It is idempotent.

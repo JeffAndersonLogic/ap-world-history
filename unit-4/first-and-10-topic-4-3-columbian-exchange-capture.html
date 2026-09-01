@@ -11,43 +11,5 @@
 </head>
 <body>
   <iframe id="first10-frame" src="first-and-10-topic-4-3-columbian-exchange.html" title="First &amp; 10 Capture Wrapper | Topic 4.3 Columbian Exchange"></iframe>
-  <script src="../assets/js/behistorical-classroom.js"></script>
-  <script>
-    // The reading runs in an iframe. Most readings render their MagicSchool
-    // button with no onclick and rely on this wrapper to catch the click by
-    // label, so this interception is load-bearing, not a convenience.
-    //
-    // Anderson and Kelly team-teach off this one shared site, each running his
-    // own MagicSchool classroom, so the join link is resolved per student
-    // rather than fixed at build time. See assets/js/behistorical-classroom.js.
-    const DEFAULT_MAGICSCHOOL_URL = 'https://student.magicschool.ai/s/login?joinCode=czwb9Q';
-    const MAGICSCHOOL_URL = window.BHClassroom
-      ? window.BHClassroom.resolveMagicSchoolUrl(DEFAULT_MAGICSCHOOL_URL)
-      : DEFAULT_MAGICSCHOOL_URL;
-
-    function wireFirst10Capture() {
-      const frame = document.getElementById('first10-frame');
-      try {
-        const childWindow = frame.contentWindow;
-        const childDocument = frame.contentDocument || childWindow.document;
-        if (!childWindow || !childDocument) return;
-
-        childDocument.addEventListener('click', event => {
-          const target = event.target && event.target.closest ? event.target.closest('a,button') : null;
-          if (!target) return;
-          const label = (target.textContent || '').trim().toLowerCase();
-          if (label === 'open magicschool' || label === 'open ai coach') {
-            event.preventDefault();
-            event.stopPropagation();
-            childWindow.open(MAGICSCHOOL_URL, '_blank', 'noopener');
-          }
-        }, true);
-      } catch (error) {
-        console.warn('Unable to wire First & 10 MagicSchool link:', error);
-      }
-    }
-
-    document.getElementById('first10-frame').addEventListener('load', wireFirst10Capture);
-  </script>
 </body>
 </html>

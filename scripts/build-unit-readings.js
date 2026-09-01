@@ -25,21 +25,6 @@ const { loadCourse } = require('./lib/socrates-course');
 // See docs/socrates/socrates-paste-contract.md.
 const COURSE = new Map(loadCourse().topics.map(t => [t.id, t]));
 
-function coachContextFor(topicKey) {
-  const t = COURSE.get(String(topicKey).replace(/^Topic\s+/i, '').trim());
-  if (!t) return undefined;
-  return {
-    topic: t.id,
-    module: 'First & 10 Reflection',
-    title: t.title,
-    span: t.span,
-    focus: t.period,
-    targets: t.targets,
-    criteria: t.criteria,
-    kcs: t.kcs.map(k => ({ code: k.code, text: k.text })),
-    terms: t.terms
-  };
-}
 
 const ROOT = path.resolve(__dirname, '..');
 const DIR = path.join(ROOT, 'scripts', 'lib', 'reading-content');
@@ -61,7 +46,6 @@ function build(topic) {
     questions: topic.questions,
     takeawayHtml: topic.takeaway,
     lessonHref: topic.lessonFile,
-    coachUrl: topic.coachUrl,
     submitNote: topic.submitNote,
     titleHtml: topic.titleHtml,
     headerSubtitle: topic.headerSubtitle,
@@ -69,14 +53,11 @@ function build(topic) {
     topicLabel: topic.topicLabel,
     checkBadgeHtml: topic.checkBadge,
     checkTitleHtml: topic.checkTitle,
-    builderBodyHtml: topic.builderBody,
     footerNoteHtml: topic.footerNote,
     footerNote: topic.footerNote,
     navPrev: topic.navPrev,
     navNext: topic.navNext,
     padQuestionNumbers: topic.padQuestionNumbers,
-    promptScript: topic.promptScript,
-    coachContext: coachContextFor(topic.topicKey),
     moduleBadge: topic.moduleBadge,
     moduleName: topic.moduleName,
     readingEyebrow: topic.readingEyebrow,

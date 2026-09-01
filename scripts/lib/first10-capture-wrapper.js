@@ -9,16 +9,22 @@
  * seven Unit 6 wrappers ended up never wiring MagicSchool at all. One template,
  * imported everywhere, so running any of the three converges instead of churning.
  *
- * The MagicSchool interception is load-bearing, not a convenience. Most readings
- * render that button with no onclick and rely on the wrapper catching the click
- * by label, so a wrapper without it is a dead button.
+ * WHAT THIS WRAPPER IS FOR NOW
+ *
+ * It embeds the reading, and that is all. It used to also intercept the
+ * reading's "Open MagicSchool" click by label, because most readings rendered
+ * that button with no onclick of their own. That button is gone: the First & 10
+ * stopped being a coached surface on 2026-08-31, so the interception, the join
+ * link and the classroom resolver went with it. There is nothing left in a
+ * reading to intercept.
+ *
+ * The wrapper itself stays, because `first10.embedUrl` points at it and the
+ * iframe is the delivery pattern. validate.js asserts the coach wiring does not
+ * come back on either side.
  *
  * The Google Form that these wrappers used to prefill is retired. See
  * docs/FORM-CONTRACT.md for why, and do not add it back.
  */
-
-const { DEFAULT_MAGICSCHOOL_URL } = require('./classroom-config');
-const MAGICSCHOOL_URL = DEFAULT_MAGICSCHOOL_URL;
 
 function captureWrapper(src, title) {
   return `<!DOCTYPE html>
@@ -34,47 +40,9 @@ function captureWrapper(src, title) {
 </head>
 <body>
   <iframe id="first10-frame" src="${src}" title="${title}"></iframe>
-  <script src="../assets/js/behistorical-classroom.js"></script>
-  <script>
-    // The reading runs in an iframe. Most readings render their MagicSchool
-    // button with no onclick and rely on this wrapper to catch the click by
-    // label, so this interception is load-bearing, not a convenience.
-    //
-    // Anderson and Kelly team-teach off this one shared site, each running his
-    // own MagicSchool classroom, so the join link is resolved per student
-    // rather than fixed at build time. See assets/js/behistorical-classroom.js.
-    const DEFAULT_MAGICSCHOOL_URL = '${MAGICSCHOOL_URL}';
-    const MAGICSCHOOL_URL = window.BHClassroom
-      ? window.BHClassroom.resolveMagicSchoolUrl(DEFAULT_MAGICSCHOOL_URL)
-      : DEFAULT_MAGICSCHOOL_URL;
-
-    function wireFirst10Capture() {
-      const frame = document.getElementById('first10-frame');
-      try {
-        const childWindow = frame.contentWindow;
-        const childDocument = frame.contentDocument || childWindow.document;
-        if (!childWindow || !childDocument) return;
-
-        childDocument.addEventListener('click', event => {
-          const target = event.target && event.target.closest ? event.target.closest('a,button') : null;
-          if (!target) return;
-          const label = (target.textContent || '').trim().toLowerCase();
-          if (label === 'open magicschool' || label === 'open ai coach') {
-            event.preventDefault();
-            event.stopPropagation();
-            childWindow.open(MAGICSCHOOL_URL, '_blank', 'noopener');
-          }
-        }, true);
-      } catch (error) {
-        console.warn('Unable to wire First & 10 MagicSchool link:', error);
-      }
-    }
-
-    document.getElementById('first10-frame').addEventListener('load', wireFirst10Capture);
-  </script>
 </body>
 </html>
 `;
 }
 
-module.exports = { captureWrapper, MAGICSCHOOL_URL };
+module.exports = { captureWrapper };

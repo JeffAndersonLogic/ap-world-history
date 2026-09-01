@@ -3,56 +3,6 @@
 const fs = require('fs');
 const path = require('path');
 const { CAPTURE_BLOCK } = require('./first10-capture-block');
-const { DEFAULT_MAGICSCHOOL_URL } = require('./classroom-config');
-
-// The reading is a standalone page, so it cannot load the topic renderer and has
-// to carry its own copy of the coach prompt builder. Read from source at build
-// time rather than restated here, which is the same reason the renderer's copy is
-// inlined by scripts/build-coach-prompt.js instead of being typed twice.
-const COACH_BUILDER_SOURCE = fs.readFileSync(
-  path.join(__dirname, '..', '..', 'assets', 'js', 'behistorical-coach-prompt.js'), 'utf8').trim();
-
-// Same reason, for the classroom resolver: a reading is a standalone page and
-// cannot load it from the renderer, so its own copy is read from source at
-// build time by scripts/build-classroom-config.js's --check, which is what
-// keeps this from drifting out of step with assets/js/behistorical-classroom.js.
-const CLASSROOM_SOURCE = fs.readFileSync(
-  path.join(__dirname, '..', '..', 'assets', 'js', 'behistorical-classroom.js'), 'utf8').trim();
-
-// Sets the Open MagicSchool button's href once the classroom resolver has run.
-// A student who followed a `?classroom=<key>` link gets that teacher's join
-// code; everyone else keeps the button's own default, unchanged.
-const WIRE_MAGICSCHOOL_LINK = `(function(){var link=document.getElementById('magicschool-open-link');if(link&&window.BHClassroom){link.href=window.BHClassroom.resolveMagicSchoolUrl(link.getAttribute('data-default-href')||link.href);}})();`;
-
-// A context object is being written into a <script> element, so a literal "</" in
-// any lesson field would end the script early. The data is author-controlled, but
-// a page that breaks silently on one topic is exactly the failure this subsystem
-// keeps being bitten by.
-function scriptSafeJson(value) {
-  return JSON.stringify(value).replace(/</g, '\\u003c').replace(/-->/g, '--\\u003e');
-}
-
-// The reading's version of the paste contract. Same builder and same field names
-// as a checkpoint's, with two differences that follow from what a reading is:
-// there is no single assigned prompt, because the assignment is three questions,
-// and the student's writing arrives as three question-and-answer pairs so the
-// coach can see what was actually asked rather than three loose paragraphs.
-function coachPromptScript(context) {
-  return [
-    COACH_BUILDER_SOURCE,
-    `var COACH_CONTEXT = ${scriptSafeJson(context)};`,
-    `function answers(){return[1,2,3].map(function(n){return(document.getElementById('q'+n)||{}).value||'';});}`,
-    `function questionTexts(){return Array.prototype.slice.call(document.querySelectorAll('.q-text')).map(function(el){return el.textContent.trim();});}`,
-    `function buildAiPrompt(){`,
-    `  var vals=answers(),qs=questionTexts();`,
-    `  var ctx={};for(var k in COACH_CONTEXT)ctx[k]=COACH_CONTEXT[k];`,
-    `  ctx.answers=vals.map(function(v,i){return{question:qs[i]||'',response:(v||'').trim()||'(no response yet)'};});`,
-    `  var out=window.BH_COACH.buildCoachPrompt(ctx);`,
-    `  document.getElementById('ai-output').value=out;return out;`,
-    `}`,
-    `function copyAiPrompt(){var out=buildAiPrompt();if(navigator.clipboard)navigator.clipboard.writeText(out).catch(function(){});}`
-  ].join('\n');
-}
 
 function esc(value) {
   return String(value == null ? '' : value)
@@ -63,7 +13,7 @@ function esc(value) {
 function renderFirst10Page(options) {
   const {
     unit, topicId, title, subtitle, learningObjective, vocabulary, sections,
-    skills, questions, takeaway, lessonHref, coachUrl, submitNote,
+    skills, questions, takeaway, lessonHref, submitNote,
     skillTags: skillTagList, supportCards
   } = options;
   // skillTagList, supportCards, and the section/callout/question rich fields below
@@ -84,13 +34,10 @@ function renderFirst10Page(options) {
     topicLabel,
     checkBadge = 'Check Your Reading',
     checkTitle = 'Three Questions',
-    builderBody = 'Ask the BeHistorical AI Coach to question, challenge, and improve your thinking without writing the final answer for you.',
     footerNote,
     navPrev,
     navNext,
     padQuestionNumbers = false,
-    promptScript,
-    coachContext,
     // Chrome that varies across the 77 readings and is preserved verbatim rather
     // than normalised. Most readings label themselves "Module 01" even though the
     // First & 10 is module 02 in the ten-module standard; that inconsistency is
@@ -101,7 +48,6 @@ function renderFirst10Page(options) {
     readingEyebrow = 'First &amp; 10 Reading',
     supportHeadings,
     takeawayHeading = 'BeReady: 10-Second Takeaway',
-    builderHeading = 'Build Your AI Coach Prompt',
     // Explicit HTML variants, rather than letting one field mean plain text for
     // some callers and markup for others. Units 6 and 9 hold these as plain
     // text in f10-content.js and must stay escaped; the readings lifted out of
@@ -110,7 +56,6 @@ function renderFirst10Page(options) {
     // "&nbsp;" on five Foundations pages.
     takeawayHtml,
     footerNoteHtml,
-    builderBodyHtml,
     checkBadgeHtml,
     checkTitleHtml,
     // Not every reading has a module footer. Emitting one where the original had
@@ -123,23 +68,6 @@ function renderFirst10Page(options) {
   const supportBeforeHeading = (supportHeadings && supportHeadings.before) || 'Before You Read';
   const supportTargetHeading = (supportHeadings && supportHeadings.target) || 'Reading Target';
 
-  // Kept only for a reading that genuinely needs to override the coach prompt.
-  // `coachContext` now takes precedence, because the 64 per-reading promptScript
-  // fields lifted out of the hand-authored pages were 64 separate implementations
-  // of one thing, and ten of them were malformed: they opened with a stray `});`
-  // that threw a SyntaxError and killed the entire trailing script block, taking
-  // buildAiPrompt, copyAiPrompt, the confidence scale, and the answer-capture
-  // block down with it. All of Unit 7 plus Topic 6.1 shipped that way, and every
-  // structural check stayed green because the capture block was present and
-  // byte-identical. It simply never ran.
-  //
-  // scripts/test/readings-parse.test.js is the gate that makes that a push
-  // failure rather than something a student discovers.
-  const defaultPromptScript = `function answers(){return[1,2,3].map(function(n){return(document.getElementById('q'+n)||{}).value||'';});}
-
-
-function buildAiPrompt(){var out='Coach my AP World historical reasoning for '+TOPIC_LABEL+'. Do not write my final answer. Give me one thing to work on at a time, verify factual accuracy, and help me explain how evidence proves or qualifies my claim.\\n\\nMy responses:\\n'+answers().join('\\n\\n');document.getElementById('ai-output').value=out;return out;}
-function copyAiPrompt(){var out=buildAiPrompt();if(navigator.clipboard)navigator.clipboard.writeText(out).catch(function(){});}`;
 
   const bandTitleHtml = titleHtml || `<em>${esc(title)}</em>`;
   const subtitleLine = headerSubtitle || `Topic ${esc(topicId)}, ${esc(title)} &nbsp;|&nbsp; AP World History: Modern`;
@@ -206,13 +134,9 @@ function copyAiPrompt(){var out=buildAiPrompt();if(navigator.clipboard)navigator
   <div class="be-ready"><h3>${takeawayHeading}</h3><p>${takeawayHtml || esc(takeaway)}</p></div></main>
   <section class="check-section"><div class="check-header"><span class="check-badge">${checkBadgeHtml || esc(checkBadge)}</span><span class="check-title">${checkTitleHtml || esc(checkTitle)}</span></div><ol class="question-list">${questionHtml}</ol></section>
   
-  <section class="builder-section"><h2 class="builder-heading">${builderHeading}</h2><p class="builder-body">${builderBodyHtml || esc(builderBody)}</p><div class="tool-row"><button type="button" onclick="buildAiPrompt()">Build AI Prompt</button><button class="secondary" type="button" onclick="copyAiPrompt()">Copy Prompt</button><a class="tool-button secondary" id="magicschool-open-link" data-default-href="${esc(coachUrl || DEFAULT_MAGICSCHOOL_URL)}" href="${esc(coachUrl || DEFAULT_MAGICSCHOOL_URL)}" target="_blank" rel="noopener">Open MagicSchool</a></div><textarea class="builder-output" id="ai-output" readonly placeholder="Your prompt will appear here."></textarea></section>
   <p class="page-footer-note">${esc(submitNote)}</p>${showFooter ? `<footer class="module-footer">${showFooterNote ? `<span class="footer-note">${footerNoteHtml || esc(footNote)}</span>` : ''}<nav class="footer-nav"><a class="nav-btn prev" href="${esc(prev.href)}">${prev.label}</a><a class="nav-btn" href="${esc(next.href)}">${next.label}</a></nav></footer>` : ''}
 </div><script>
 var TOPIC_KEY='${esc(topicId)}';var TOPIC_LABEL='${storedLabel}';
-${CLASSROOM_SOURCE}
-${WIRE_MAGICSCHOOL_LINK}
-${coachContext ? coachPromptScript(coachContext) : (promptScript || defaultPromptScript)}
 ${CAPTURE_BLOCK}
 </script></body></html>\n`;
 }

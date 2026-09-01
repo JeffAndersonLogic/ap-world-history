@@ -240,7 +240,9 @@ function checkFirst10(filePath, topicKeys) {
   // bronze, paper, and serif reading system. Generated pages use the shared
   // stylesheet; legacy hand-authored pages carry the same tokens inline.
   const hasCanonicalStyles = src.includes('behistorical-first10.css') || src.includes('--blackened-steel');
-  const visualMarkers = ['class="module"', 'class="reading-title-band"', 'class="vocab-strip"', 'class="check-header"', 'class="builder-section"'];
+  // `builder-section` is deliberately absent: the reading's coach prompt builder
+  // was removed on 2026-08-31 and its absence is asserted below.
+  const visualMarkers = ['class="module"', 'class="reading-title-band"', 'class="vocab-strip"', 'class="check-header"'];
   if (!hasCanonicalStyles) err(filePath, 'does not use the canonical BeHistorical First & 10 visual system');
   for (const marker of visualMarkers) {
     if (!src.includes(marker)) err(filePath, `missing canonical First & 10 structure: ${marker}`);
@@ -270,14 +272,25 @@ function checkFirst10(filePath, topicKeys) {
     err(filePath, `capture block does not write to ${FIRST10_STORAGE_PREFIX}<TOPIC_KEY>, answers will never reach Canvas`);
   }
 
-  // Builder output IDs. The Google builder is retired; only the AI Coach remains.
-  if (!src.includes('id="ai-output"') && !src.includes("id='ai-output'")) {
-    err(filePath, 'missing id="ai-output"');
-  }
-
-  // Builder functions
-  for (const fn of ['buildAiPrompt', 'copyAiPrompt']) {
-    if (!src.includes(`function ${fn}`)) err(filePath, `missing function ${fn}()`);
+  // A reading no longer reaches Socrates, and must not grow a way back.
+  //
+  // The First & 10 Reflection stopped being a coached surface on 2026-08-31.
+  // Coaching there added a vendor round trip to the lowest-stakes writing in the
+  // lesson, and the reading is now read, answer, move on.
+  //
+  // These are prohibitions rather than requirements, which is the inversion of
+  // what this block checked until then. A reading that regrew a builder would
+  // look completely normal: three questions, a capture block, every other check
+  // green, and a coach conversation nobody decided to have.
+  //
+  // The capture block is the thing that must NOT go with it, which is why the
+  // TOPIC_KEY and storage-key checks above stay exactly as they were. Those
+  // three answers reaching Canvas is the reading's entire job.
+  for (const gone of ['id="ai-output"', "id='ai-output'", 'function buildAiPrompt',
+    'function copyAiPrompt', 'class="builder-section"', 'magicschool-open-link', 'joinCode=']) {
+    if (src.includes(gone)) {
+      err(filePath, `reading has regrown coach wiring (${gone}); the First & 10 is not a coached surface`);
+    }
   }
 
   // Textarea count, treat qta and q-textarea as class tokens so multi-class
@@ -919,23 +932,27 @@ section('Google Form retirement and MagicSchool wiring');
     }
   }
 
-  // 41 readings render the MagicSchool button with no onclick and depend on the
-  // wrapper catching the click by label, so a wrapper without the interception
-  // is a dead button, not a cosmetic gap.
+  // A wrapper embeds the reading and does nothing else.
+  //
+  // It used to intercept the reading's "Open MagicSchool" click by label,
+  // because most readings rendered that button with no onclick of their own.
+  // That button is gone with the coach builder, so the interception, the join
+  // link and the classroom resolver went with it: there is nothing left in a
+  // reading to intercept. These checks are inverted rather than deleted, for the
+  // same reason as the reading's own, so the pair cannot come back on one side.
   const wrappers = [...unitFirst10, ...fFirst10].filter(f => path.basename(f).includes('-capture'));
   for (const filePath of wrappers) {
     totalChecks++;
     const src = read(filePath) || '';
-    if (!src.includes('MAGICSCHOOL_URL')) {
-      err(filePath, 'capture wrapper does not wire MagicSchool, the reading\'s button will do nothing');
+    if (!src.includes('first10-frame')) {
+      err(filePath, 'capture wrapper does not embed the reading, the module would show nothing');
       offenders++;
     }
-    // Anderson and Kelly team-teach off this one shared site, each with his own
-    // MagicSchool classroom, so the join link a wrapper opens has to resolve per
-    // student rather than stay fixed at build time. See assets/js/behistorical-classroom.js.
-    if (!src.includes('behistorical-classroom.js')) {
-      err(filePath, 'capture wrapper does not load the classroom resolver, Kelly\'s students would land in Anderson\'s classroom');
-      offenders++;
+    for (const gone of ['MAGICSCHOOL_URL', 'joinCode=', 'behistorical-classroom.js']) {
+      if (src.includes(gone)) {
+        err(filePath, `capture wrapper still carries coach wiring (${gone}); the reading it embeds has no coach button`);
+        offenders++;
+      }
     }
   }
 
@@ -959,28 +976,33 @@ section('Google Form retirement and MagicSchool wiring');
     });
   });
 
+  // A reading carries no route to Socrates at all, as of 2026-08-31.
+  //
+  // These three checks used to require the opposite: a MagicSchool button, a
+  // prompt builder, and a classroom-aware link. They are inverted rather than
+  // deleted, because the failure they now guard is the same shape it always was,
+  // pointing the other way. A reading that regrew a button would render
+  // perfectly and send students on a vendor round trip nobody decided to add.
+  //
+  // The classroom resolver goes with it: a reading inlined that source only to
+  // resolve this button's href, so with no button there is nothing to resolve.
+  // Kelly's students are unaffected, because the surfaces that still reach
+  // Socrates, Checkpoint 2 and BeInTheRoom, keep their own wiring and their own
+  // checks below.
   const readings = [...unitFirst10, ...fFirst10].filter(f => !path.basename(f).includes('-capture'));
   for (const filePath of readings) {
     totalChecks++;
     const src = read(filePath) || '';
-    if (!/Open (MagicSchool|AI Coach)/.test(src)) {
-      err(filePath, 'reading has no MagicSchool button');
-      offenders++;
-    }
-    if (!src.includes('buildAiPrompt')) {
-      err(filePath, 'reading has no AI Coach prompt builder');
-      offenders++;
-    }
-    // Readings inline the classroom resolver's source (like the coach prompt
-    // builder) rather than loading it by filename, so this checks for the
-    // function it defines rather than a <script src>.
-    if (!src.includes('id="magicschool-open-link"') || !src.includes('resolveMagicSchoolUrl')) {
-      err(filePath, 'reading\'s MagicSchool button is not classroom-aware, Kelly\'s students would land in Anderson\'s classroom');
-      offenders++;
+    for (const gone of ['Open MagicSchool', 'Open AI Coach', 'buildAiPrompt',
+      'id="magicschool-open-link"', 'resolveMagicSchoolUrl', 'joinCode=']) {
+      if (src.includes(gone)) {
+        err(filePath, `reading still carries coach wiring (${gone}); the First & 10 is not a coached surface`);
+        offenders++;
+      }
     }
   }
 
-  sectionDone(`${surfaces.length} surfaces clean of the form; ${wrappers.length} wrappers and ${readings.length} readings keep MagicSchool`);
+  sectionDone(`${surfaces.length} surfaces clean of the form; ${wrappers.length} wrappers keep MagicSchool; ${readings.length} readings carry no coach route`);
 }
 
 // 11. BeInTheRoom links and v2 scenario contract

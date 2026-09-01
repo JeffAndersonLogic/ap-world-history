@@ -97,12 +97,19 @@ if (blocks !== files.length) {
   console.log(`  ok   all ${blocks} reading script blocks are valid JavaScript`);
 }
 
-// The three things that live in that block, asserted by name on every reading, so
-// a future edit that parses but drops one of them still fails here.
+// What has to live in that block, asserted by name on every reading, so a future
+// edit that parses but drops one of them still fails here.
+//
+// buildAiPrompt and copyAiPrompt were here until 2026-08-31, when the reading
+// stopped being a coached surface. What is left is the part that always
+// mattered: the storage key the capture block writes under, and the write
+// itself. Those three answers reaching Canvas is the reading's whole job, and
+// the original bug this test exists for, a stray `});` that silently discarded
+// the entire script element, would still take them down.
 const REQUIRED = [
   [/var TOPIC_KEY\s*=/, 'TOPIC_KEY, which the capture block keys storage on'],
-  [/function buildAiPrompt\s*\(/, 'buildAiPrompt, the Build AI Prompt button'],
-  [/function copyAiPrompt\s*\(/, 'copyAiPrompt, the Copy Prompt button']
+  [/behistorical-first10-/, 'the capture block storage key, so answers reach Canvas'],
+  [/localStorage\.setItem/, 'the capture block write, so answers are saved at all']
 ];
 for (const rel of files) {
   const html = fs.readFileSync(path.join(ROOT, rel), 'utf8');
@@ -113,7 +120,7 @@ for (const rel of files) {
     }
   }
 }
-if (!failures) console.log('  ok   every reading defines TOPIC_KEY, buildAiPrompt, and copyAiPrompt');
+if (!failures) console.log('  ok   every reading defines TOPIC_KEY and writes its answers to storage');
 
 if (failures) {
   console.error(`\n${failures} failure(s).`);

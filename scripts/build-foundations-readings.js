@@ -29,21 +29,6 @@ const { loadCourse } = require('./lib/socrates-course');
 // Foundations topic keys are f0 to f5; the course loader calls them F0 to F5.
 const COURSE = new Map(loadCourse().topics.map(t => [t.id.toLowerCase(), t]));
 
-function coachContextFor(topicKey) {
-  const t = COURSE.get(String(topicKey).trim().toLowerCase());
-  if (!t) return undefined;
-  return {
-    topic: t.id,
-    module: 'First & 10 Reflection',
-    title: t.title,
-    span: t.span,
-    focus: t.period,
-    targets: t.targets,
-    criteria: t.criteria,
-    kcs: t.kcs.map(k => ({ code: k.code, text: k.text })),
-    terms: t.terms
-  };
-}
 
 const ROOT = path.resolve(__dirname, '..');
 const DIR = path.join(ROOT, 'foundations');
@@ -64,7 +49,6 @@ function build(topic) {
     questions: topic.questions,
     takeawayHtml: topic.takeaway,
     lessonHref: topic.lessonFile,
-    coachUrl: topic.coachUrl,
     submitNote: topic.submitNote,
 
     titleHtml: topic.titleHtml,
@@ -73,14 +57,11 @@ function build(topic) {
     topicLabel: topic.topicLabel,
     checkBadgeHtml: topic.checkBadge,
     checkTitleHtml: topic.checkTitle,
-    builderBodyHtml: topic.builderBody,
     footerNoteHtml: topic.footerNote,
     footerNote: topic.footerNote,
     navPrev: topic.navPrev,
     navNext: topic.navNext,
-    padQuestionNumbers: true,
-    promptScript: topic.promptScript,
-    coachContext: coachContextFor(topic.topicKey)
+    padQuestionNumbers: true
   });
 }
 

@@ -197,6 +197,12 @@ function blocksOf(section) {
 }
 
 // ── the extraction ───────────────────────────────────────────────────────────
+// The builder section is deliberately not extracted. It was the reading's coach
+// prompt UI, never its content, and the First & 10 stopped being a coached
+// surface on 2026-08-31. Every content field below stays pinned to the
+// hand-authored originals, which is what these fixtures are for; dropping the
+// one key that described a retired button keeps that guarantee intact instead of
+// re-baselining all of it.
 function extractReading(html) {
   const doc = parse(html);
 
@@ -281,10 +287,6 @@ function extractReading(html) {
       badge: textOf(find(doc, 'check-badge')),
       title: textOf(find(doc, 'check-title')),
       questions
-    },
-    builder: {
-      heading: textOf(find(doc, 'builder-heading')),
-      body: textOf(find(doc, 'builder-body'))
     },
     footerNote: textOf(find(doc, 'page-footer-note')),
     footer: {
