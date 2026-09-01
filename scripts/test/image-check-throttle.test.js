@@ -36,7 +36,7 @@ process.env.IMAGE_CHECK_MIN_GAP_MS = '10';
 process.env.IMAGE_CHECK_MAX_BACKOFF_MS = '500';
 process.env.IMAGE_CHECK_TIMEOUT_MS = '2000';
 
-const { checkWithRetries, isDecline, isRetryable, retryAfterMs, commonsTitle, askCommons, classify } = require(CHECKER);
+const { checkWithRetries, isDecline, isRetryable, retryAfterMs, commonsTitle, askCommons, classify, sweep } = require(CHECKER);
 
 const G = '\x1b[32m', R = '\x1b[31m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 let failures = 0;
@@ -289,6 +289,149 @@ async function main() {
     await new Promise((r) => broken.close(r));
   } finally {
     await new Promise((r) => api.close(r));
+  }
+
+  // ── the anti-starvation fix ─────────────────────────────────────────────
+  //
+  // This is the regression gate for a real production incident, 2026-09-01:
+  // the nightly's batch API resolved 356 of 377 URLs in four requests and
+  // under a second, and the run still only checked 236 of them in fifteen
+  // minutes. The pre-resolved and needs-a-fetch URLs were shuffled into one
+  // queue and handed to four workers. A worker races through every
+  // pre-resolved URL with no `await` between them and only yields at its
+  // first real fetch, so the four workers converge on their first four slow
+  // items almost immediately; from then on the cursor only advances as fast
+  // as those four slow items resolve, and the hundreds of already-answered
+  // URLs later in the shuffle sit unclaimed behind them until it does.
+  //
+  // The fix marks a pre-resolved URL done before any worker starts and never
+  // queues it at all, so only genuine fetches compete for the four slots.
+  // This drives the real sweep() against a fixture built to reproduce the
+  // failure: many titles the fake API answers instantly, and a few direct
+  // URLs on a host that never answers within the test's patience. If the fix
+  // regresses, the many resolve at the same crawl as the few.
+  {
+    const N_FAST = 300;
+    const N_SLOW = 4;
+
+    // Both fake servers are created INSIDE the spawned child, not out here.
+    // A first version of this test ran them in the parent process instead,
+    // reasoning that a child process can reach back over loopback to
+    // whatever the parent is listening on. In this sandbox it cannot: every
+    // request from the child to the parent's server timed out silently,
+    // askCommons saw nothing and fell through to "unanswered", and the test
+    // passed for a completely different reason than the one it claimed to
+    // prove. Self-contained, the way every other probe in this file already
+    // works, is what actually exercises the real network path.
+    const probeScript = `
+      process.env.IMAGE_CHECK_BUDGET_MS = '4000';
+      process.env.IMAGE_CHECK_RETRIES = '2';
+      process.env.IMAGE_CHECK_SAMPLE = '0';
+      process.env.IMAGE_CHECK_MIN_GAP_MS = '5';
+      process.env.IMAGE_CHECK_TIMEOUT_MS = '2000';
+      // Pinned above the fast-URL count so 300 titles really do cost one
+      // batch call, the way the assertion below says. The production
+      // default is 50, which would make this an honest six calls; that is
+      // not what this probe is trying to prove, so it is pinned rather than
+      // left to drift with whatever the default happens to be.
+      process.env.IMAGE_CHECK_API_BATCH = String(${N_FAST});
+      const http = require('http');
+      const { sweep } = require(${JSON.stringify(CHECKER)});
+
+      const N_FAST = ${N_FAST};
+      const N_SLOW = ${N_SLOW};
+
+      let apiCalls = 0;
+      const apiServer = http.createServer((req, res) => {
+        apiCalls++;
+        const url = new URL(req.url, 'http://x');
+        const asked = (url.searchParams.get('titles') || '').split('|');
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({
+          query: { pages: asked.map((t) => ({ title: t, imageinfo: [{ mime: 'image/jpeg' }] })) }
+        }));
+      });
+
+      // Each slow URL gets its own host (its own port), not one shared
+      // host. Sharing a host would also exercise coolDownHost, which pauses
+      // every worker on a host the moment one of them sees a 429 by design
+      // ("a 429 pauses every worker on that host, not just the request that
+      // got it") — that behaviour has its own tests above. Separate hosts
+      // isolate what this probe is actually checking: that a handful of
+      // genuine, concurrent fetches does not stall the queue behind the
+      // hundreds of already-answered URLs.
+      let slowHits = 0;
+      const slowServers = Array.from({ length: N_SLOW }, () => http.createServer((req, res) => {
+        slowHits++;
+        res.writeHead(429, { 'Content-Type': 'text/plain', 'Retry-After': '25' });
+        res.end('slow down');
+      }));
+
+      Promise.all([
+        new Promise((r) => apiServer.listen(0, '127.0.0.1', r)),
+        ...slowServers.map((s) => new Promise((r) => s.listen(0, '127.0.0.1', r)))
+      ]).then(async () => {
+        const apiEndpoint = 'http://127.0.0.1:' + apiServer.address().port + '/w/api.php';
+
+        // Every fast URL answers 'yes' from the fake API and is never
+        // fetched directly. Every slow URL is a real fetch, on its own host
+        // that answers 429 forever with a long Retry-After, so each one
+        // exhausts its retries before settling.
+        const fastUrls = Array.from({ length: N_FAST },
+          (_, i) => 'https://commons.wikimedia.org/wiki/Special:FilePath/Fast_' + i + '.jpg');
+        const slowUrls = slowServers.map((s, i) =>
+          'http://127.0.0.1:' + s.address().port + '/slow-' + i + '.jpg');
+
+        // Fixed order, not random: the point is to prove the fix works, and a
+        // shuffle that happened to keep the slow items apart would pass
+        // without proving anything. Interleaving one slow item every few
+        // fast ones is close to the worst case for the old code, since it
+        // lets all four workers pick up a slow item within the first dozen
+        // or so URLs.
+        const interleaved = [];
+        let slowIdx = 0;
+        fastUrls.forEach((u, i) => {
+          interleaved.push(u);
+          if (slowIdx < slowUrls.length && i % 3 === 0) interleaved.push(slowUrls[slowIdx++]);
+        });
+        while (slowIdx < slowUrls.length) interleaved.push(slowUrls[slowIdx++]);
+
+        const started = Date.now();
+        const results = await sweep(interleaved, () => 'image', { apiEndpoint });
+        console.log(JSON.stringify({
+          ms: Date.now() - started,
+          fastResolved: fastUrls.filter((u) => results.get(u) && results.get(u).ok).length,
+          slowResolved: slowUrls.filter((u) => results.get(u) && !results.get(u).ok).length,
+          apiCalls,
+          slowHits
+        }));
+        apiServer.close();
+        slowServers.forEach((s) => s.close());
+      });
+    `;
+    const probe = require('child_process').spawnSync(process.execPath, ['-e', probeScript],
+      { encoding: 'utf8', timeout: 20000 });
+    let probeOut = {};
+    try { probeOut = JSON.parse((probe.stdout || '').trim().split('\n').pop() || '{}'); }
+    catch { /* leave probeOut empty, the assertions below report it as a failure */ }
+
+    ok(probe.status === 0, 'the anti-starvation probe ran', (probe.stderr || '').slice(0, 300));
+    ok(probeOut.fastResolved === N_FAST,
+      'every pre-resolved URL is answered, not stranded behind the slow ones',
+      `${probeOut.fastResolved}/${N_FAST} resolved`);
+    ok(probeOut.slowResolved === N_SLOW,
+      'the slow URLs are still resolved, just not blocking the fast ones',
+      `${probeOut.slowResolved}/${N_SLOW} resolved`);
+    // Loose bound: proves this finishes in a few seconds, not the 12+
+    // minutes the real incident took to crawl through a similarly-sized
+    // fast set while pinned behind four throttled items.
+    ok(probeOut.ms !== undefined && probeOut.ms < 10000,
+      'resolving 300 pre-answered URLs does not wait on 4 throttled ones',
+      `${probeOut.ms}ms`);
+    ok(probeOut.apiCalls === 1, 'the fast URLs cost one batch call, not per-URL requests',
+      `${probeOut.apiCalls} call(s)`);
+    ok(probeOut.slowHits >= N_SLOW, 'the slow URLs were genuinely attempted, not skipped',
+      `${probeOut.slowHits} hit(s)`);
   }
 
   console.log(`\n${failures ? R : G}${W}${checks - failures}/${checks} checks passed.${X}\n`);

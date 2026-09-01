@@ -375,33 +375,8 @@ function prettyName(url) {
   return decodeURIComponent(url.replace(/^.*\/(?:Special:(?:FilePath|Redirect)\/(?:file\/)?|File:)?/, ''));
 }
 
-async function main() {
-  const found = collect();
-  const urls = [...found.keys()].sort();
-  if (!urls.length) {
-    console.log('No remote image URLs found.');
-    return;
-  }
-  const images = urls.filter((url) => found.get(url).kind === 'image');
-  const sources = urls.filter((url) => found.get(url).kind === 'source');
-  const allFiles = new Set(urls.flatMap((url) => [...found.get(url).files]));
-
-  console.log(`${C}${W}BeHistorical remote image check${X}`);
-  console.log(`${images.length} pictures and ${sources.length} Commons credit pages, referenced by ${allFiles.size} files\n`);
-
-  // Work order is shuffled, report order stays sorted.
-  //
-  // With a budget, a deterministic order means a deterministic blind spot: the
-  // sweep would check the same prefix every night and the tail would never be
-  // verified once, while the run reported itself green. Shuffling means each
-  // night samples a different part of the course, so a dead picture anywhere
-  // surfaces within a few nights instead of never.
-  const queue = urls.slice();
-  for (let i = queue.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [queue[i], queue[j]] = [queue[j], queue[i]];
-  }
-
+async function sweep(urls, kindOf, opts) {
+  const apiEndpoint = opts && opts.apiEndpoint;
   const results = new Map();
 
   // Ask Commons about everything it can answer in bulk first, then fetch only
@@ -419,7 +394,7 @@ async function main() {
     const titles = [...new Set(titleFor.values())];
     for (let i = 0; i < titles.length; i += API_BATCH) {
       if (remainingBudget() <= 0) break;
-      const answered = await askCommons(titles.slice(i, i + API_BATCH));
+      const answered = await askCommons(titles.slice(i, i + API_BATCH), apiEndpoint);
       for (const [title, exists] of answered) apiAnswered.set(title, exists);
     }
   }
@@ -455,8 +430,42 @@ async function main() {
       + `(everything unanswered or missing, plus a ${sample.size} URL sample).\n`);
   }
 
-  let cursor = 0;
+  // The worker queue is built from what still needs a real check, not from
+  // every URL, and this is not an optimisation, it fixes a real stall.
+  //
+  // On 2026-09-01, four API requests answered 356 of 377 URLs in about a
+  // second, and the run still only got through 236 of them in fifteen
+  // minutes. The old queue shuffled all 377 together and let four workers
+  // discover which ones were pre-answered as they went. With only four
+  // workers, the first few slow items in the shuffle occupy all four almost
+  // immediately, since a worker races through every fast item with no
+  // `await` between them and only yields at its first real fetch. Once that
+  // happens, the cursor stalls exactly there: the hundreds of already
+  // answered URLs later in the shuffle are never unclaimed work, they are
+  // simply behind four workers that cannot get to them until a throttled
+  // host lets one go. The budget then drains waiting on a host, not on
+  // answers this run already had for free.
+  //
+  // So a pre-resolved URL is marked done here, synchronously, before any
+  // worker starts, and never enters the queue at all. Only URLs that
+  // genuinely need a fetch compete for the four slots and the budget.
   let done = 0;
+  for (const url of urls) if (results.has(url)) done++;
+
+  // Work order is shuffled, report order stays sorted.
+  //
+  // With a budget, a deterministic order means a deterministic blind spot: the
+  // sweep would check the same prefix every night and the tail would never be
+  // verified once, while the run reported itself green. Shuffling means each
+  // night samples a different part of the course, so a dead picture anywhere
+  // surfaces within a few nights instead of never.
+  const queue = urls.filter((url) => !results.has(url));
+  for (let i = queue.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [queue[i], queue[j]] = [queue[j], queue[i]];
+  }
+
+  let cursor = 0;
   let lastReport = Date.now();
 
   // CI is not a TTY, so the old carriage-return progress line printed nothing
@@ -475,14 +484,19 @@ async function main() {
     console.log(`  checked ${done}/${urls.length}, ${left}s of budget left`);
   };
 
-  const workers = Array.from({ length: Math.min(CONCURRENCY, urls.length) }, async () => {
+  // The pre-resolved count is worth showing before any worker runs, not just
+  // after the first 30 second interval: it is the number that proves the
+  // batch call was worth making at all, and on a quiet run it can otherwise
+  // be the only progress line anyone sees.
+  report(true);
+
+  const workers = Array.from({ length: Math.min(CONCURRENCY, queue.length) }, async () => {
     for (;;) {
       const mine = cursor++;
       if (mine >= queue.length) return;
       const url = queue[mine];
-      if (results.has(url)) { done++; continue; }   // answered by the batch layer
       results.set(url, remainingBudget() > 0
-        ? await checkWithRetries(url, found.get(url).kind === 'image')
+        ? await checkWithRetries(url, kindOf(url) === 'image')
         : NOT_CHECKED);
       done++;
       report(false);
@@ -490,6 +504,35 @@ async function main() {
   });
   await Promise.all(workers);
   if (process.stdout.isTTY && !FIX_LIST_ONLY) process.stdout.write(`${' '.repeat(50)}\r`);
+  return results;
+}
+
+async function main() {
+  const found = collect();
+  const urls = [...found.keys()].sort();
+  if (!urls.length) {
+    console.log('No remote image URLs found.');
+    return;
+  }
+  const images = urls.filter((url) => found.get(url).kind === 'image');
+  const sources = urls.filter((url) => found.get(url).kind === 'source');
+  const allFiles = new Set(urls.flatMap((url) => [...found.get(url).files]));
+
+  console.log(`${C}${W}BeHistorical remote image check${X}`);
+  console.log(`${images.length} pictures and ${sources.length} Commons credit pages, referenced by ${allFiles.size} files\n`);
+
+/**
+ * Resolves every url to a result: the Commons batch API first, then a direct
+ * fetch for whatever it could not verify. Extracted out of main() so the fix
+ * below is directly testable rather than something a test has to reimplement
+ * beside the real code and hope stays in sync.
+ *
+ * kindOf(url) must answer 'image' or 'source', the same distinction collect()
+ * makes; only 'image' results are held to a content-type check.
+ */
+
+  const results = await sweep(urls, (url) => found.get(url).kind);
+
 
   const ranOutOfTime = urls.some((url) => results.get(url).status === 'not checked');
   if (ranOutOfTime) {
@@ -577,7 +620,7 @@ async function main() {
 // pacing and classification against a local server, rather than a copy of them.
 // The guard matters for the same reason build-ebook.js has one: without it, a
 // require of this file would run a full network sweep as a side effect.
-module.exports = { checkWithRetries, isDecline, isRetryable, retryAfterMs, head, commonsTitle, askCommons, classify };
+module.exports = { checkWithRetries, isDecline, isRetryable, retryAfterMs, head, commonsTitle, askCommons, classify, sweep };
 
 if (require.main === module) {
   main().catch((error) => {
