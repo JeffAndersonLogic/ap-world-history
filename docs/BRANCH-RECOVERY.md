@@ -320,3 +320,88 @@ claude/unit-5-completion-jueU7 \
 claude/unit-8-404s-4bnsod \
 claude/unit-8-image-repair
 ```
+
+## The other three repositories
+
+Same `merge-tree` test, run on 2026-09-01. Ref deletion is not available from the
+session that produced this file (the git proxy does not forward a delete, and the
+GitHub tool surface has no delete-branch call), so these are lists to run, not
+a record of what was run.
+
+### BeCurrent — 18 absorbed
+
+`claude/becurrent-repo-setup-odn0qi` is **excluded and must not be deleted**: it is
+the repository default branch, 167 commits behind `main`. Point the default at `main`
+first, in Settings, Branches; the eight other divergent branches are all live work
+from 21 to 26 August and are left alone.
+
+```bash
+git push origin --delete \
+chatgpt/announcements-projector-fit \
+chatgpt/desk-2-newsroom \
+chatgpt/desk-2-polish-final \
+chatgpt/social-media-archive-polish \
+chatgpt/ukraine-topic-1 \
+chatgpt/ukraine-topic-2 \
+claude/becurrent-canvas-social-media-hqagnk \
+claude/becurrent-logo-design-kjv6s1 \
+claude/becurrent-tweaks-cosmetic-a262yb \
+claude/busy-hopper-p7w527 \
+claude/canvas-topic-6-outline-rluced \
+claude/remove-becurrent-link-wwz9rq \
+claude/social-media-slides-brief-4-y8azsx \
+claude/social-media-topic-5-6-content \
+claude/vibrant-ride-whx433 \
+desk-modes-2026-08-30 \
+logo-drop \
+work/iran-unit-20260826
+```
+
+### AndersonLogic-OS — 24, after `claude/land-open-work` lands
+
+Seventeen were already absorbed. The other seven carried the only copy of the
+Department OS product brief, the Cardinal Room Month 2 deliverables, the SkillLens
+judgment layer, and two skills; all seven merged into `claude/land-open-work` with
+no conflicts. Fast-forward `main` to it, then all 24 are absorbed.
+
+```bash
+git push origin --delete \
+claude/anderson-logic-consulting-bzbafx \
+claude/anderson-professional-background-9m3f6i \
+claude/andersonlogic-os-addition-xz9n6c \
+claude/andersonlogic-os-visual-gysouv \
+claude/behistorical-ebook-stress-test-kcrlx2 \
+claude/behistorical-google-form-sheet-jxtv4l \
+claude/behistorical-monetization-readiness-784vh3 \
+claude/behistorical-productivity-strategy-qzrme6 \
+claude/cardinal-room-canva-packs-ekuebs \
+claude/cardinal-room-email-summary-3zm7yb \
+claude/cardinal-room-linkedin-page-x1x91b \
+claude/cardinal-room-scope-ekjmgw \
+claude/cardinal-room-scope-report-uugooe \
+claude/claude-pd-teachers-consulting-po6bb0 \
+claude/claude-teachers-career-impact-2660c7 \
+claude/framework-porting-audit-rhgn6a \
+claude/gci-cardinal-room-brief-c33gje \
+claude/os-development-interview-jwitpp \
+claude/pd-curriculum-another-district-wpown6 \
+claude/project-task-tracking-sync-txm7wg \
+claude/school-department-os-tfh644 \
+claude/skills-implementation-review-0g5lwz \
+claude/skillslens-html-prototype-frp05f \
+claude/social-media-canva-prompts-k12jak
+```
+
+### AtTheTurn — 4, after `claude/land-open-work` lands
+
+`claude/claude-md-docs-atzhky` held the only CLAUDE.md in the repository and is now
+on `claude/land-open-work`. `attheturn-firebase-scaffold-4c29nq` is the first pass at
+the scaffold, superseded by `-tm8kp1`, which merged as PR #1.
+
+```bash
+git push origin --delete \
+claude/andersonlogic-os-structure-xm6g8e \
+claude/attheturn-firebase-scaffold-4c29nq \
+claude/attheturn-firebase-scaffold-tm8kp1 \
+claude/claude-md-docs-atzhky
+```
