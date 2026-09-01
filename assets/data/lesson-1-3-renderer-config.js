@@ -29,13 +29,14 @@
     }
   ];
 
-  const religionSpreadMap = 'https://raw.githubusercontent.com/JeffAndersonLogic/ap-world-history/main/assets/images/lecture/unit-1/topic-1-3/religions-spread-map.jpg';
+  const religionSpreadMap = 'https://image1.slideserve.com/2074734/slide10-l.jpg';
+  const religionSpreadSource = 'https://www.slideserve.com/mead/ch-9-the-expansion-of-trade-religion-in-south-and-southeast-asia-part-1';
 
   if (lesson.lecture && Array.isArray(lesson.lecture.segments) && lesson.lecture.segments[0]) {
     lesson.lecture.segments[0].image = {
       title: 'Spread of Buddhism, Hinduism, and Islam',
       url: religionSpreadMap,
-      sourceUrl: religionSpreadMap,
+      sourceUrl: religionSpreadSource,
       caption: 'The spread of Buddhism, Hinduism, and Islam across South and Southeast Asia shows how belief systems moved through trade routes, states, and cultural exchange.'
     };
   }
