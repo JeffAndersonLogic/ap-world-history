@@ -1013,6 +1013,24 @@ student had. `validate.js` asserts the source shape in both renderers, and
 bridge, no preview, no button or link to Socrates, the note present, and the
 draft box still capturing for Canvas.
 
+### Checkpoint 2 finishes in class, or at home
+
+**Checkpoint 2 is a required conversation at the end of a 90-minute block, and
+the room does not empty out at the same speed.** The draft, the coaching, and the
+revision all have to happen before Gather All My Work, and a student who is
+still coaching when the bell rings has nothing to submit. Jeff's decision,
+2026-09-01: if it is not finished in class, it is homework, all three steps, not
+just the write-up.
+
+Both renderers say so on the card, right after the line that the revised answer
+in the box is what goes to Canvas. It is the same shape as the independence note
+on Checkpoint 1: a policy a machine cannot enforce is still worth stating in
+words a student reads at the moment it applies, rather than leaving it to be
+announced verbally and half-heard.
+
+`scripts/test/coach-prompt.test.js` asserts the sentence is on the rendered
+Checkpoint 2 card, on two unit topics and Foundations.
+
 ### What a scenario pastes
 
 **A paste can replace Socrates, and for a year every BeInTheRoom scenario did.**

@@ -614,6 +614,7 @@ function coachBridge(id,mode){
       </div>
       <div id="${id}-ms-result" class="check-result"></div>
       <p class="bridge-return"><strong>Your revised answer in the box above is what goes to Canvas.</strong> Nothing from the AI Coach conversation is collected, so improve your own writing before you gather your work.</p>
+      <p class="bridge-homework">If you do not finish the draft, the coaching, and the revision in class, complete all three for homework.</p>
     </div>`;
 }
 

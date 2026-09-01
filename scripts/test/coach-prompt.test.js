@@ -208,6 +208,14 @@ const DRAFT = 'The alliance system turned a regional crisis into a world war bec
     });
     check('Copy sends exactly what the preview shows', copied === got,
       copied === null ? 'clipboard was not called' : `${String(copied).length} chars`);
+
+    // Jeff's rule, 2026-09-01: if the draft, the coaching, and the revision are
+    // not finished in class, they are homework. The card has to say so, because
+    // Checkpoint 2 is a required conversation at the end of the block and the
+    // slower half of the room will not always reach it before the bell.
+    const saysHomework = await page.evaluate(() =>
+      /do not finish.*class.*complete.*homework/is.test(document.getElementById('pop-body').textContent));
+    check('Checkpoint 2 tells the student to finish at home if class runs out', saysHomework);
   }
 
   // ── Foundations ────────────────────────────────────────────────────────────
@@ -290,6 +298,10 @@ const DRAFT = 'The alliance system turned a regional crisis into a world war bec
       return captured;
     }, slot.textarea);
     check(`${slot.module}: Copy sends what the preview shows`, copied === got);
+
+    const saysHomework = await page.evaluate(() =>
+      /do not finish.*class.*complete.*homework/is.test(document.getElementById('pop-body').textContent));
+    check(`${slot.module}: tells the student to finish at home if class runs out`, saysHomework);
 
     await page.evaluate(() => window.closeModule && window.closeModule());
     await page.waitForTimeout(40);
