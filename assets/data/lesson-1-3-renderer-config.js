@@ -1,6 +1,7 @@
 (() => {
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
+
   lesson.collegeBoardKeyConcepts = [
     {
       "code": "KC-3.1.III.D.iv",
@@ -27,4 +28,28 @@
       ]
     }
   ];
+
+  const religionSpreadMap = '../assets/images/lecture/unit-1/topic-1-3/religions-spread-map.jpg';
+
+  if (lesson.lecture && Array.isArray(lesson.lecture.segments) && lesson.lecture.segments[0]) {
+    lesson.lecture.segments[0].image = {
+      title: 'Spread of Buddhism, Hinduism, and Islam',
+      url: religionSpreadMap,
+      sourceUrl: '',
+      caption: 'The spread of Buddhism, Hinduism, and Islam across South and Southeast Asia shows how belief systems moved through trade routes, states, and cultural exchange.'
+    };
+  }
+
+  if (lesson.lecture) {
+    lesson.lecture.videos = Array.isArray(lesson.lecture.videos) ? lesson.lecture.videos : [];
+    if (!lesson.lecture.videos.some((video) => video.youtubeId === 'V6q2HFGpDu4')) {
+      lesson.lecture.videos.push({
+        title: 'Srivijaya: Maritime Trade and Power',
+        url: 'https://youtu.be/V6q2HFGpDu4',
+        youtubeId: 'V6q2HFGpDu4',
+        previewImage: religionSpreadMap,
+        prompt: 'Watch for how Srivijaya used its maritime location, control of trade routes, and Buddhist connections to build regional power.'
+      });
+    }
+  }
 })();
