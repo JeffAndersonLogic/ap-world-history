@@ -31,6 +31,8 @@
 
   const religionSpreadMap = 'https://image1.slideserve.com/2074734/slide10-l.jpg';
   const religionSpreadSource = 'https://www.slideserve.com/mead/ch-9-the-expansion-of-trade-religion-in-south-and-southeast-asia-part-1';
+  const casteSystemImage = 'https://substackcdn.com/image/fetch/%24s_%21Y2Tq%21%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F01f83a6b-0d13-4800-8fa0-2663747777e2_862x530.jpeg';
+  const casteSystemSource = 'https://www.asiasentinel.com/p/modi-uturn-caste-census';
 
   if (lesson.lecture && Array.isArray(lesson.lecture.segments) && lesson.lecture.segments[0]) {
     lesson.lecture.segments[0].image = {
@@ -38,6 +40,12 @@
       url: religionSpreadMap,
       sourceUrl: religionSpreadSource,
       caption: 'The spread of Buddhism, Hinduism, and Islam across South and Southeast Asia shows how belief systems moved through trade routes, states, and cultural exchange.'
+    };
+    lesson.lecture.segments[0].secondaryImage = {
+      title: 'Hindu Caste System',
+      url: casteSystemImage,
+      sourceUrl: casteSystemSource,
+      caption: 'A visual hierarchy of Brahmins, Kshatriyas, Vaishyas, Shudras, and Dalits that helps connect Hindu social organization to the lesson.'
     };
   }
 
