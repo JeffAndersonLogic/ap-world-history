@@ -51,13 +51,13 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_1945_CC.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_1945_CC.jpg',
+    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg',
+    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi1918.jpg',
+    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mahatma-Gandhi%2C_studio%2C_1931.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atlantic_charter.jpg',
     checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/League_of_Nations_Mandates.png',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_league_of_nations_mandate.png',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atlantic_charter.jpg',
     beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Clement_Attlee.jpg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg'

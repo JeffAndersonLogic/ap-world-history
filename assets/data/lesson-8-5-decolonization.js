@@ -143,8 +143,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Kwame Nkrumah declares Ghana's independence, March 6, 1957",
           caption: "Kwame Nkrumah proclaims Ghana's independence on March 6, 1957, the first sub-Saharan African nation to achieve independence, with a leader who had been imprisoned by British colonial authorities just six years earlier.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah_declares_independence.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah_declares_independence.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah_Portrait%2C_The_National_Archives_UK.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah_Portrait%2C_The_National_Archives_UK.jpg"
         }
       },
       {
@@ -158,8 +158,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "FLN fighters, Algerian War of Independence, late 1950s",
           caption: "Fighters of the Front de Libération Nationale (FLN) during Algeria's war of independence (1954–1962). Algeria's path, armed struggle, contrasted sharply with the negotiated independence achieved by India and the Gold Coast.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/FLN_fighters_Algeria.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:FLN_fighters_Algeria.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_female_fighter_of_the_Front_de_Lib%C3%A9ration_Nationale_%28FLN%29.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:A_female_fighter_of_the_Front_de_Lib%C3%A9ration_Nationale_%28FLN%29.jpg"
         }
       },
       {
@@ -173,8 +173,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Partition of India, August 1947 — refugees crossing the border",
           caption: "Millions of people displaced during the 1947 Partition of India and Pakistan, one of the largest forced migrations in history, produced by the redrawing of colonial-era boundaries along religious lines when Britain withdrew.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Partition_of_India_1947_mass_migration.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Partition_of_India_1947_mass_migration.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Millions_fled_across_the_border_to_the_other_country.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Millions_fled_across_the_border_to_the_other_country.jpg"
         }
       }
     ]
@@ -211,22 +211,22 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Mahatma Gandhi, Salt March, 1930",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_salt_march.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gandhi_salt_march.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Salt_March.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gandhi_Salt_March.jpg",
       caption: "Gandhi leads the Salt March in 1930, a 240-mile walk to the sea to collect salt illegally, defying British tax law. The march was a mass act of nonviolent civil disobedience that galvanized Indian independence and drew global attention.",
       prompt: "How does the Salt March illustrate the INC's strategy for pursuing independence? What does it reveal about how Gandhi sought to challenge British imperial rule without armed violence, and why that strategy was effective?"
     },
     {
       title: "Gamal Abdel Nasser after Suez Canal nationalization, 1956",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gamal_Abdel_Nasser_1956.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gamal_Abdel_Nasser_1956.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gamal_Abd_El-Nasser_1956.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gamal_Abd_El-Nasser_1956.png",
       caption: "Nasser after announcing the nationalization of the Suez Canal in 1956. The nationalization triggered the Suez Crisis, Britain and France invaded, but U.S. pressure forced their withdrawal, demonstrating the limits of European imperial power in the postwar world.",
       prompt: "What does Nasser's nationalization of the Suez Canal reveal about how decolonization extended beyond formal political independence? How does the Suez Crisis illustrate the role of Cold War superpower pressure in accelerating European decolonization?"
     },
     {
       title: "Biafra, Nigerian Civil War, 1967–1970",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Biafra_child_famine.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Biafra_child_famine.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Food_aid_Nigeria.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Food_aid_Nigeria.png",
       caption: "The Biafran War (1967–1970): the secessionist movement of the Igbo-majority southeast challenged Nigeria's colonial-era boundaries. An estimated 1–3 million people died, many from the famine produced by the Nigerian blockade of Biafra.",
       prompt: "How does the Biafra secessionist movement illustrate the argument that inherited imperial boundaries became fault lines after independence? What does the Biafran War reveal about the relationship between colonial boundary-drawing and postcolonial conflict?"
     }

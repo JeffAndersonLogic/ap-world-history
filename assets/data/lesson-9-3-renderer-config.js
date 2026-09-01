@@ -52,14 +52,14 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rondonia_Deforestation.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rondonia_Deforestation.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rondonia_Deforestation.jpg',
+    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
+    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/AralSea1989_2014.jpg',
     skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Greenhouse_Gas_by_Sector.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rondonia_Deforestation.jpg',
+    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
     evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/AralSea1989_2014.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rondonia_Deforestation.jpg',
+    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
     beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Greenhouse_Gas_by_Sector.png',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Greenhouse_Gas_by_Sector.png'
   };

@@ -137,8 +137,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Imperial holdings of the interwar world, c. 1936",
           caption: "After 1919 the defeated empires' colonies did not become independent, they were redistributed among the victors as League of Nations mandates.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png"
         }
       },
       {
@@ -197,8 +197,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Blaise Diagne",
           caption: "Blaise Diagne of Senegal, emblem of the educated West African elite whose strikes, congresses, and political organizing challenged French colonial rule between the wars.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Blaise_Diagne.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Blaise_Diagne.jpg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Blaise_Diagne-1921.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Blaise_Diagne-1921.jpg"
         }
       },
       {
@@ -212,8 +212,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Imperial holdings of the interwar world, c. 1936",
           caption: "One map, two truths: imperial control predominantly maintained (continuity) even as mandates redrew borders and resistance movements built pressure (change).",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png"
         }
       }
     ]
@@ -221,8 +221,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: Empires and Mandates, c. 1936",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG",
+    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png",
     caption: "The interwar world, defeated empires' colonies redistributed to the victors as mandates, Japanese expansion in East Asia, and colonized peoples organizing for self-determination.",
     intro: "Use the map to test the Learning Objective: where did territorial holdings change between the wars, and where did imperial control simply continue under a new name? Trace the former German and Ottoman territories to their new mandate holders, and watch Japan expand in the northeast.",
     prompt: "Locate the British and French empires, the former German colonies now held as mandates, the post-Ottoman Middle East, and Japanese-controlled Manchukuo. Which changes on this map represent new territorial GAINS, and which represent old control simply MAINTAINED? Where on the map would you mark the anti-imperial resistance that challenged these holdings?",
@@ -255,8 +255,8 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "Imperial holdings of the interwar world, c. 1936",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.PNG",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.PNG",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png",
       caption: "The interwar world, empires maintained, mandates redistributed, and Japanese expansion in East Asia.",
       prompt: "Compare this map to the empires that collapsed in Topic 7.1. What CHANGED in territorial holdings by 1936, and what was simply MAINTAINED under a new name?"
     },

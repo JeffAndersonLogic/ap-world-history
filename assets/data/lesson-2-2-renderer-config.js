@@ -51,7 +51,7 @@
     beSurreal: '../assets/images/module-art/unit-2/topic-2-2/besurreal.svg',
     skill: '../assets/images/module-art/unit-2/topic-2-2/skill.svg',
     checkpoint1: '../assets/images/module-art/unit-2/topic-2-2/checkpoint1.svg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
     source: '../assets/images/module-art/unit-2/topic-2-2/source.svg',
     beInTheRoom: '../assets/images/module-art/unit-2/topic-2-2/beintheroom.svg',
     checkpoint2: '../assets/images/module-art/unit-2/topic-2-2/checkpoint2.svg'

@@ -159,8 +159,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Partition of India, August 1947",
           caption: "The Radcliffe Line dividing British India into India and Pakistan, drawn in six weeks by a British lawyer who had never visited India, cut through Punjab and Bengal, displacing an estimated 10–20 million people.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Partition_of_India.svg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Partition_of_India.svg"
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Partition_of_India_1947_en.svg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Partition_of_India_1947_en.svg"
         }
       },
       {
@@ -229,8 +229,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Jawaharlal Nehru and Lord Mountbatten, August 1947",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nehru_Mountbatten.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Nehru_Mountbatten.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15%2C_1947.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15%2C_1947.jpg",
       caption: "India's first Prime Minister Jawaharlal Nehru with Lord Mountbatten, the last British Viceroy of India, at independence. The handoff of power was negotiated, but the Partition it accompanied produced one of the largest humanitarian crises of the 20th century.",
       prompt: "What does this image reveal about the relationship between negotiated independence and the human costs of boundary redrawing? How does Nehru's presence here connect to his role in managing the Partition crisis as head of a weeks-old government?"
     },
@@ -243,8 +243,8 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "South Asian immigrants arriving in Britain, 1960s",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Commonwealth_immigrants_britain.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Commonwealth_immigrants_britain.jpg",
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Passenger_list_header_M.V._%22Empire_Windrush%22%2C_Tilbury_June_1948.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Passenger_list_header_M.V._%22Empire_Windrush%22%2C_Tilbury_June_1948.jpg",
       caption: "South Asian Commonwealth citizens arriving in Britain during the 1960s, one of the three CED migration examples illustrating how former colonial subjects moved to imperial metropoles, maintaining cultural and economic ties after independence.",
       prompt: "How does the migration of South Asians to Britain illustrate KC-6.2.III.B? What does it reveal about the economic relationship between former colonies and former colonizers that persisted after formal independence? What 'continuities' does this migration represent?"
     }

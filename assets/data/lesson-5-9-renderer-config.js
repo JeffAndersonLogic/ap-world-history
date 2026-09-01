@@ -43,16 +43,16 @@
 
   // ── Module-card images. INDUSTRIAL-THEMED CANDIDATES; verified/falled-back in Step 8. ──
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg',
+    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
     first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
     skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Manchester_from_Kersal_Moor_William_Wyld.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/A_Court_for_King_Cholera.png'
+    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
+    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png'
   };
 
   lesson.beInTheRoom = {

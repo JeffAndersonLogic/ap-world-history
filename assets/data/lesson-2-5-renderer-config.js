@@ -51,7 +51,7 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_7th_century_AD.png',
+    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
     first10: '../assets/images/module-art/unit-2/topic-2-5/first10.svg',
     contentDelivery: '../assets/images/module-art/unit-2/topic-2-5/contentdelivery.svg',
     beSurreal: '../assets/images/module-art/unit-2/topic-2-5/besurreal.svg',

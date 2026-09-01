@@ -76,7 +76,7 @@
     map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
     first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/World_1700_CE.png',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
     skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
     checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
     evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
