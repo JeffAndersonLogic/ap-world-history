@@ -166,17 +166,24 @@ table.compare tbody th{
 }
 table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border-bottom:none}
 
-/* ── The "so what" strip ────────────────────────────────────────────────── */
-.sowhat{
-  margin-top:22px;background:var(--steel);color:var(--paper);
-  border-radius:10px;padding:20px 26px;border-left:6px solid var(--gold);
+/* ── The one thing to write down ──────────────────────────────────────────
+   Every content slide carries exactly one of these and nothing else on the
+   slide is meant to be copied. That is the whole point: when every line on
+   the wall is a full sentence, students transcribe the wall and stop
+   listening, and a period spent copying is a period not spent thinking.
+   The prose those bullets used to carry now lives in data-notes, where the
+   teacher says it. Keep this to one short line. If it needs two, the slide
+   is trying to make two points. */
+.writethis{
+  margin-top:20px;background:var(--steel);color:var(--paper);
+  border-radius:10px;padding:15px 24px;border-left:6px solid var(--gold);
 }
-.sowhat .tag{
-  font-family:var(--font-ui);font-size:12px;font-weight:800;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--gold);margin:0 0 6px;
+.writethis .tag{
+  font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 5px;
 }
-.sowhat p{margin:0;font-size:19px;line-height:1.45;color:var(--paper)}
-.sowhat b,.sowhat strong{color:var(--gold)}
+.writethis p{margin:0;font-size:21px;line-height:1.35;color:var(--paper)}
+.writethis b,.writethis strong{color:var(--gold)}
 
 /* ── Term chips ─────────────────────────────────────────────────────────── */
 .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:4px}
@@ -316,7 +323,7 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 
 <!-- ═════ 01 COVER ═════════════════════════════════════════════════════════ -->
 <section class="slide dark cover" data-title="Cover"
-  data-notes="Open cold. Do not explain the title. Ask the room one question and leave it hanging: <b>&ldquo;What holds an empire together when the ruler is three weeks away by boat?&rdquo;</b> Take two or three answers, write nothing down, then advance. The whole block is an answer to that question.">
+  data-notes="Open cold. Do not explain the title. Ask the room one question and leave it hanging: <b>&ldquo;What holds an empire together when the ruler is three weeks away by boat?&rdquo;</b> Take two or three answers, write nothing down, then advance. The whole block is an answer to that question.<br><br><b>Set the note-taking rule here, once, and then hold it.</b> Every slide has one dark box marked WRITE THIS DOWN. That box is the only thing they copy. Everything else on the wall is there so they can follow what you are saying, and they should be listening to it, not transcribing it. Say plainly that a page of copied bullets is not notes and will not help them in May.">
   <p class="kicker">AP World History &middot; Unit 1 &middot; Topic 1.3</p>
   <h1>Developments in South and Southeast Asia</h1>
   <p class="dates">States, Belief Systems, and Trade &middot; c. 1200 to c. 1450</p>
@@ -325,33 +332,33 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 
 <!-- ═════ 02 THE QUESTION ══════════════════════════════════════════════════ -->
 <section class="slide dark divider" data-title="The Question"
-  data-notes="This is the spine of the block. Everything after it is evidence for one of these three. Read the big question aloud, then let the three targets appear one at a time so the room reads them instead of skimming them. Tell students the two checkpoints at the end are targets 1 and 3.">
+  data-notes="This is the spine of the block, and everything after it is evidence for one of the three lines. Read the big question aloud, then let the three land one at a time so the room reads them instead of skimming.<br><br>Say what they are: <b>these are the learning targets</b>, in the order the block will hit them. Belief on society, belief on the state, geography on both. Tell them the two checkpoints at the end assess the first and the third.<br><br>Nothing to copy here. They will see the targets again on the lesson page and again on the checkpoints.">
   <p class="part">The Question</p>
   <h1>How do you build a state out of belief and geography?</h1>
   <div class="rule" style="margin-top:26px"></div>
   <ul class="points" style="margin-top:6px">
-    <li data-step="1">How <b>Hinduism, Buddhism, and Islam</b> shaped societies and states.</li>
-    <li data-step="2">How states used <b>religion, trade, and administration</b> to build power.</li>
-    <li data-step="3">How <b>Indian Ocean trade</b> tied this region to all of Afro-Eurasia.</li>
+    <li data-step="1">Belief shapes <b>society</b></li>
+    <li data-step="2">Belief builds <b>states</b></li>
+    <li data-step="3">Geography decides <b>which states win</b></li>
   </ul>
 </section>
 
 <!-- ═════ 03 THE MAP ═══════════════════════════════════════════════════════ -->
 <section class="slide" data-title="Three Zones"
-  data-notes="Point at the three zones on the projected map before you say a word about religion. Students who cannot place Malacca cannot explain Srivijaya. <b>Say the organizing idea out loud:</b> mainland states grow out of rivers and rice, island states grow out of straits and ships. That single contrast carries the last third of this deck.">
+  data-notes="<b>Point at the three zones on the projected map before you say a word about religion.</b> A student who cannot place Malacca cannot explain Srivijaya.<br><br><b>South Asia</b> held both Islamic states in the north, the Delhi Sultanate and the Rajput kingdoms, and Hindu states in the south, Vijayanagara and the Sinhala dynasties. <b>Mainland Southeast Asia</b> was land states built on river systems and irrigation: the Khmer Empire and Sukhothai. <b>Maritime Southeast Asia</b> was island and strait states that lived off trade: Srivijaya and Majapahit.<br><br>Then give them the organizing idea, which carries the last third of the deck: <b>mainland states grew out of rivers and rice, island states grew out of straits and ships.</b> Monsoon winds and the Strait of Malacca made the whole region a permanent crossroads between the Indian Ocean and the South China Sea.">
   <p class="eyebrow">Where in the World</p>
   <h2>One region, three geographies</h2>
   <div class="rule"></div>
   <div class="cols split">
     <div>
       <ul class="points">
-        <li><b>South Asia.</b> Islamic states in the north (Delhi Sultanate, Rajputs), Hindu states in the south (Vijayanagara, Sinhala dynasties).</li>
-        <li data-step="1"><b>Mainland Southeast Asia.</b> Land states built on rivers and irrigation. Khmer, Sukhothai.</li>
-        <li data-step="2"><b>Maritime Southeast Asia.</b> Island and strait states that lived off trade. Srivijaya, Majapahit.</li>
+        <li><b>South Asia:</b> Islamic north, Hindu south</li>
+        <li data-step="1"><b>Mainland:</b> rivers, rice, irrigation</li>
+        <li data-step="2"><b>Maritime:</b> straits, ports, ships</li>
       </ul>
-      <div class="sowhat" data-step="3">
-        <p class="tag">The hinge</p>
-        <p>Monsoon winds and the <b>Strait of Malacca</b> made this region a permanent crossroads between the Indian Ocean and the South China Sea.</p>
+      <div class="writethis" data-step="3">
+        <p class="tag">Write this down</p>
+        <p>Mainland states grew from <b>rice</b>. Island states grew from <b>trade</b>.</p>
       </div>
     </div>
     <figure class="contain">
@@ -365,7 +372,7 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 
 <!-- ═════ 04 THREE TRADITIONS ══════════════════════════════════════════════ -->
 <section class="slide" data-title="Three Traditions"
-  data-notes="Ninety seconds, not ten minutes. Students do not need the theology; they need to know these three were <b>in the same rooms and the same ports at the same time</b>. Kill the misconception now: these were not sealed boxes. A Hindu ruler could patronize a Buddhist monastery; a Muslim merchant could trade in a Hindu port under a Hindu king.">
+  data-notes="<b>Ninety seconds, not ten minutes.</b> They do not need the theology; they need to know these three were in the same rooms and the same ports at the same time.<br><br><b>Hinduism</b> organized society through caste and organized kingship through temple patronage: a ruler who built temples fed priests, employed artisans, and hosted pilgrims. <b>Buddhism</b> traveled the trade routes with merchants and monks, and its monasteries worked as schools, banks, and rest stops along the sea lanes. <b>Islam</b> arrived through two very different doors, by conquest in the north and by commerce and Sufi teachers in the south and the islands.<br><br><b>Kill the misconception now.</b> These were not sealed boxes. A Hindu ruler could patronize a Buddhist monastery; a Muslim merchant could trade in a Hindu port under a Hindu king. That interaction is what the AP framework actually wants them to explain.">
   <p class="eyebrow">The Cast</p>
   <h2>Three traditions, one region</h2>
   <div class="rule"></div>
@@ -373,28 +380,28 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
     <div class="panel">
       <p class="tag">Oldest, deepest</p>
       <h3>Hinduism</h3>
-      <p>Organized society through <b>caste</b>, and organized kingship through temple patronage. A ruler who built temples fed priests, employed artisans, and hosted pilgrims.</p>
+      <p><b>Caste</b> and <b>temple kingship</b></p>
     </div>
     <div class="panel gold" data-step="1">
       <p class="tag">Monastic, mobile</p>
       <h3>Buddhism</h3>
-      <p>Travelled the trade routes with merchants and monks. <b>Monasteries</b> functioned as schools, banks, and rest stops along the sea lanes.</p>
+      <p><b>Monasteries</b> along the trade routes</p>
     </div>
     <div class="panel rust" data-step="2">
       <p class="tag">Newest, arriving</p>
       <h3>Islam</h3>
-      <p>Arrived by <b>conquest in the north</b> and by <b>commerce and Sufi teachers</b> in the south and the islands. Two very different doors.</p>
+      <p>Conquest in the north, <b>commerce</b> in the south</p>
     </div>
   </div>
-  <div class="sowhat" data-step="3">
-    <p class="tag">Do not miss this</p>
-    <p>These traditions were not sealed off from each other. Rulers, merchants, and scholars <b>moved between them</b>, and that interaction is what the AP framework wants you to explain.</p>
+  <div class="writethis" data-step="3">
+    <p class="tag">Write this down</p>
+    <p>Not sealed boxes. Rulers and merchants <b>moved between all three</b>.</p>
   </div>
 </section>
 
 <!-- ═════ 05 DIVIDER: PART ONE ═════════════════════════════════════════════ -->
 <section class="slide dark divider" data-title="Part One: Society"
-  data-notes="Signpost. Say it plainly: &ldquo;First, what belief did to <b>society</b>. Then what it did to <b>states</b>.&rdquo; Two examples are coming, Bhakti and Sufism, and both are movements that made religion <b>more personal and less institutional</b>.">
+  data-notes="Signpost, and say it plainly: &ldquo;First, what belief did to <b>society</b>. Then what it did to <b>states</b>.&rdquo;<br><br>Two examples are coming, Bhakti and Sufism, and both do the same thing: they move religion out of the hands of an institution and into the hands of a person. Tell them to watch for that shared shape, because the comparison slide in three minutes depends on them having noticed it.">
   <p class="part">Part One</p>
   <h1>Belief reshapes society</h1>
   <p class="lede">Two movements, five hundred miles apart, doing the same thing: moving religion out of the hands of an institution and into the hands of a person.</p>
@@ -402,20 +409,20 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 
 <!-- ═════ 06 BHAKTI ════════════════════════════════════════════════════════ -->
 <section class="slide" data-title="Bhakti"
-  data-notes="The word to land is <b>devotion</b>. Bhakti says a poor weaver who loves the god sincerely is closer to the divine than a Brahmin performing a ritual without feeling. Ask: <b>&ldquo;Who gains power from that idea, and who loses it?&rdquo;</b> That question is the whole social significance. Note the reform came from <b>inside</b> Hinduism, not against it.">
+  data-notes="The word to land is <b>devotion</b>. Bhakti emphasized personal devotion to a deity over ritual, priestly hierarchy, or caste identity. It says a poor weaver who loves the god sincerely is closer to the divine than a Brahmin performing a ritual without feeling.<br><br>Bhakti poets and saints, <b>including low-caste individuals and women</b>, challenged Brahmin authority from within the Hindu tradition. The movement reshaped religious culture across southern India and fed devotional traditions across the subcontinent.<br><br><b>Ask the room, and wait:</b> &ldquo;Who gains power from that idea, and who loses it?&rdquo; That question is the entire social significance, and it is better coming from them than from you. Then make the point they will miss: this was a reform from <b>inside</b> the tradition. Hinduism did not fracture; it opened a door that had been closed to most people.">
   <p class="eyebrow">Movement One &middot; South India</p>
   <h2>Bhakti: devotion over hierarchy</h2>
   <div class="rule"></div>
   <div class="cols split">
     <div>
       <ul class="points">
-        <li><b>Bhakti</b> emphasized personal devotion to a deity over ritual, priestly hierarchy, or caste identity.</li>
-        <li data-step="1">Bhakti poets and saints, including <b>low-caste individuals and women</b>, challenged Brahmin authority from within the Hindu tradition.</li>
-        <li data-step="2">It reshaped religious culture across southern India and fed devotional traditions across the subcontinent.</li>
+        <li><b>Devotion</b>, not ritual or caste</li>
+        <li data-step="1">Led by <b>low-caste poets and women</b></li>
+        <li data-step="2">Reform from <b>inside</b> Hinduism</li>
       </ul>
-      <div class="sowhat" data-step="3">
-        <p class="tag">Why it matters</p>
-        <p>A reform from <b>inside</b> a tradition. Hinduism did not fracture; it opened a door that had been closed to most people.</p>
+      <div class="writethis" data-step="3">
+        <p class="tag">Write this down</p>
+        <p>Hinduism did not fracture. It <b>opened a closed door</b>.</p>
       </div>
     </div>
     <figure>
@@ -429,20 +436,20 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 
 <!-- ═════ 07 SUFISM ════════════════════════════════════════════════════════ -->
 <section class="slide" data-title="Sufism"
-  data-notes="The word to land is <b>adaptation</b>. Sufis met people where they already were: local music, local poetry, local saints' shrines. That is why Islam spread far past the reach of any army. Contrast the two doors explicitly: the Delhi Sultanate is <b>political</b> Islam arriving by conquest; Sufism is <b>cultural</b> Islam arriving by relationship. Students routinely collapse these into one thing.">
+  data-notes="The word to land is <b>adaptation</b>. Sufi orders spread Islam through mystical devotion, poetry, music, and personal spiritual guidance rather than conquest alone. Sufi teachers met people where they already were: local music, local poetry, local saints' shrines. That is why Islam spread far past the reach of any army.<br><br>The <b>Delhi Sultanate</b> governed a religiously diverse population by relying on both Islamic law and practical accommodation of existing traditions.<br><br><b>Contrast the two doors explicitly, because students collapse them into one thing.</b> The Delhi Sultanate is political Islam arriving by conquest. Sufism is cultural Islam arriving by relationship. Same religion, same century, same subcontinent, two completely different mechanisms of spread.">
   <p class="eyebrow">Movement Two &middot; North India and beyond</p>
   <h2>Sufism: Islam through connection</h2>
   <div class="rule"></div>
   <div class="cols split">
     <div>
       <ul class="points">
-        <li><b>Sufi</b> orders spread Islam through mystical devotion, poetry, music, and personal guidance, not conquest alone.</li>
-        <li data-step="1">Sufi teachers <b>adapted to local customs</b>, which made Islam reachable across South Asia.</li>
-        <li data-step="2">The <b>Delhi Sultanate</b> ruled a mixed population with both Islamic law and practical accommodation.</li>
+        <li><b>Mystics, poets, teachers</b></li>
+        <li data-step="1">Adapted to <b>local custom</b></li>
+        <li data-step="2">Delhi Sultanate: <b>law plus accommodation</b></li>
       </ul>
-      <div class="sowhat" data-step="3">
-        <p class="tag">Why it matters</p>
-        <p>Islam entered South Asia through <b>two different doors</b>: an army in the north, a teacher or a merchant nearly everywhere else.</p>
+      <div class="writethis" data-step="3">
+        <p class="tag">Write this down</p>
+        <p>Islam came through <b>two doors</b>: an army, and a teacher.</p>
       </div>
     </div>
     <figure>
@@ -456,7 +463,7 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 
 <!-- ═════ 08 COMPARISON ════════════════════════════════════════════════════ -->
 <section class="slide" data-title="Bhakti vs Sufism"
-  data-notes="<b>This is the slide the lecture cards could never do.</b> Do not read the table. Reveal the last row only after the room has tried to answer it. Ask: &ldquo;Two different religions, two different regions. Why do they look so similar?&rdquo; The answer is the AP-level insight: both are responses to <b>institutional religion feeling distant from ordinary people</b>, and both spread along the same trade routes.">
+  data-notes="<b>This is the slide the lecture cards could never do, so use it as a discussion, not a reading.</b><br><br>Do not read the table out. Reveal a row, then make the room fill in the other side before you show it. They have just heard both movements, so they can do this.<br><br>Hold the last row back until someone has tried it. Then ask: <b>&ldquo;Two different religions, two different regions. Why do they look so similar?&rdquo;</b> The answer is the AP-level insight: both are responses to institutional religion having grown distant from ordinary people, and both traveled the same roads and sea lanes the merchants did.<br><br><b>Tell them not to copy the grid.</b> It is in the eBook chapter for this topic, laid out the same way. Copying it here costs them the discussion, which is the only part that is not written down anywhere.">
   <p class="eyebrow">Comparison</p>
   <h2>Two movements, one shape</h2>
   <div class="rule"></div>
@@ -466,21 +473,21 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
     </thead>
     <tbody>
       <tr><th>Tradition</th><td>Hindu</td><td>Islamic</td></tr>
-      <tr data-step="1"><th>Core move</th><td>Personal devotion over ritual and priesthood</td><td>Mystical, personal experience of God</td></tr>
-      <tr data-step="2"><th>Who it reached</th><td>Low-caste people and women, excluded by ritual hierarchy</td><td>Non-elite and non-Arabic-speaking populations</td></tr>
-      <tr data-step="3"><th>Carried by</th><td>Poets and saints, in local languages</td><td>Teachers and orders, using local custom</td></tr>
-      <tr data-step="4"><th>Effect on power</th><td>Weakened Brahmin gatekeeping from inside Hinduism</td><td>Spread Islam far past the reach of any army</td></tr>
+      <tr data-step="1"><th>Core move</th><td>Devotion over priesthood</td><td>Direct experience of God</td></tr>
+      <tr data-step="2"><th>Reached</th><td>Low caste, women</td><td>Non-elite, non-Arabic speakers</td></tr>
+      <tr data-step="3"><th>Carried by</th><td>Poets, local languages</td><td>Teachers, local custom</td></tr>
+      <tr data-step="4"><th>Effect</th><td>Weakened Brahmin gatekeeping</td><td>Spread Islam past any army</td></tr>
     </tbody>
   </table>
-  <div class="sowhat" data-step="5">
-    <p class="tag">The pattern</p>
-    <p>Both are answers to the same problem: <b>institutional religion had grown distant from ordinary people.</b> And both traveled the same roads and sea lanes the merchants did.</p>
+  <div class="writethis" data-step="5">
+    <p class="tag">Write this down &middot; the grid is in your eBook, do not copy it</p>
+    <p>Both answer the same problem: <b>religion had grown distant from ordinary people</b>.</p>
   </div>
 </section>
 
 <!-- ═════ 09 DIVIDER: PART TWO ═════════════════════════════════════════════ -->
 <section class="slide dark divider" data-title="Part Two: The State"
-  data-notes="Signpost, and a pivot. &ldquo;That is belief working on society. Now watch a ruler pick belief up and <b>use</b> it.&rdquo; The next three slides are one argument: the mechanism, then two cases.">
+  data-notes="Signpost, and a pivot. &ldquo;That is belief working on society. Now watch a ruler pick belief up and <b>use</b> it.&rdquo;<br><br>The next three slides are one argument: the mechanism first, then two cases that run it. Tell them the mechanism slide is the one that matters for Checkpoint 1.">
   <p class="part">Part Two</p>
   <h1>Belief builds states</h1>
   <p class="lede">A ruler cannot stand behind every farmer with a spear. So he needs subjects who believe that obeying him is the right thing to do.</p>
@@ -488,7 +495,7 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 
 <!-- ═════ 10 THE MECHANISM ═════════════════════════════════════════════════ -->
 <section class="slide" data-title="The Mechanism"
-  data-notes="<b>The single most important slide in the deck.</b> Students write &ldquo;religion legitimized power&rdquo; and stop, and that sentence earns nothing on an AP rubric because it names no mechanism. Walk the four boxes left to right and make them say the verbs: patronize, employ, gather, obey. Then say: <b>&ldquo;A temple is not a decoration. It is payroll, it is a granary, it is a courthouse, and it is a billboard.&rdquo;</b>">
+  data-notes="<b>The single most important slide in the deck, and the shortest.</b> Students write &ldquo;religion legitimized power&rdquo; and stop, and that sentence earns nothing on an AP rubric because it names no mechanism.<br><br>Walk the four boxes left to right and make <b>them</b> say the verbs out loud: patronize, employ, gather, obey. One: the ruler funds a temple, a monastery, or a shrine. Two: it becomes an economy, with priests, artisans, laborers and landholdings on the payroll. Three: pilgrims and festivals bring people, tribute and trade to his capital. Four: his authority now looks like the natural order rather than one man's claim.<br><br>Then the line worth saying slowly: <b>&ldquo;A temple is not a decoration. It is payroll, it is a granary, it is a courthouse, and it is a billboard.&rdquo;</b><br><br>This is the one slide where you should stop and watch them write.">
   <p class="eyebrow">The Move Every Ruler Made</p>
   <h2>How a temple becomes political power</h2>
   <div class="rule"></div>
@@ -496,46 +503,46 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
     <div class="panel">
       <p class="tag">Step 1</p>
       <h3>Patronize</h3>
-      <p>The ruler funds a temple, a monastery, or a shrine.</p>
+      <p>Fund the temple</p>
     </div>
     <div class="panel gold" data-step="1">
       <p class="tag">Step 2</p>
       <h3>Employ</h3>
-      <p>It becomes an economy: priests, artisans, laborers, landholdings.</p>
+      <p>Priests, artisans, land</p>
     </div>
     <div class="panel rust" data-step="2">
       <p class="tag">Step 3</p>
       <h3>Gather</h3>
-      <p>Pilgrims and festivals bring people, tribute, and trade to his capital.</p>
+      <p>Pilgrims, tribute, trade</p>
     </div>
     <div class="panel iron" data-step="3">
       <p class="tag">Step 4</p>
       <h3>Obey</h3>
-      <p>His authority now looks like the natural order rather than one man's claim.</p>
+      <p>Rule looks like the natural order</p>
     </div>
   </div>
-  <div class="sowhat" data-step="4">
+  <div class="writethis" data-step="4">
     <p class="tag">Write this down</p>
-    <p>&ldquo;Religion legitimized power&rdquo; earns nothing on its own. <b>Name the mechanism:</b> patronage bought loyalty, employment, tribute, and the appearance of cosmic order.</p>
+    <p>Never stop at &ldquo;religion legitimized power&rdquo;. <b>Name the mechanism.</b></p>
   </div>
 </section>
 
 <!-- ═════ 11 VIJAYANAGARA ══════════════════════════════════════════════════ -->
 <section class="slide" data-title="Vijayanagara"
-  data-notes="Case one, the Hindu land state. Founded 1336 in the southern Deccan, and note <b>why</b> it was founded: as a Hindu power holding the line against Muslim sultanates pressing south. Temple culture was the anchor: pilgrimage economies, royal patronage of the arts, and a capital at Hampi that ran on it.">
+  data-notes="Case one, the Hindu land state, and the mechanism from the last slide running in a real place.<br><br>Founded <b>1336</b> in the southern Deccan, and note why: as a Hindu power holding the line while Muslim sultanates pressed south. It used Hindu temple culture to anchor royal authority, organize a pilgrimage economy, and project regional power. The capital at <b>Hampi</b> became one of the largest and richest cities in the world.<br><br>Run the chain out loud and make them trace it back to slide 10: patronage, then pilgrims, then markets, then revenue, then an army. <b>The temple was the engine, not the ornament.</b><br><br>Nothing new to write here. The mechanism is already on their page; this is the evidence for it.">
   <p class="eyebrow">Case One &middot; South Asia</p>
   <h2>Vijayanagara: the temple as anchor</h2>
   <div class="rule"></div>
   <div class="cols split">
     <div>
       <ul class="points">
-        <li>Founded <b>1336</b> in the southern Deccan, a Hindu power holding the line as Muslim sultanates pressed south.</li>
-        <li data-step="1">Used <b>Hindu temple culture</b> to anchor royal authority and organize a pilgrimage economy.</li>
-        <li data-step="2">The capital at <b>Hampi</b> became one of the largest and richest cities in the world.</li>
+        <li>Founded <b>1336</b>, Hindu Deccan</li>
+        <li data-step="1"><b>Temple culture</b> anchors authority</li>
+        <li data-step="2"><b>Hampi:</b> among the world's richest cities</li>
       </ul>
-      <div class="sowhat" data-step="3">
-        <p class="tag">The mechanism, in one state</p>
-        <p>Patronage &rarr; pilgrims &rarr; markets &rarr; revenue &rarr; an army. <b>The temple was the engine, not the ornament.</b></p>
+      <div class="writethis" data-step="3">
+        <p class="tag">Say it, do not write it</p>
+        <p>Patronage, pilgrims, markets, revenue, <b>army</b>.</p>
       </div>
     </div>
     <figure>
@@ -549,7 +556,7 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 
 <!-- ═════ 12 ANGKOR ════════════════════════════════════════════════════════ -->
 <section class="slide" data-title="Angkor and the devaraja"
-  data-notes="Case two, and the strongest version of the argument. <b>Devaraja</b> means god-king: the ruler is not merely chosen by the divine, he is a node in the cosmic order, and the temple is a scale model of the universe with him at the center. Then give them the hydraulics: Angkor's power rested on <b>irrigation</b>, on barays holding monsoon water for a dry-season rice crop. Say it directly: <b>whoever controls the water controls the rice, and whoever controls the rice controls the labor that builds the temple.</b>">
+  data-notes="Case two, and the strongest version of the argument.<br><br><b>Devaraja</b> means god-king. The ruler is not merely chosen by the divine; he is a node in the cosmic order, and the temple is built as a scale model of the universe with him at the center.<br><br>Then give them the hydraulics, because this is the part they find surprising: Angkor's power rested on <b>irrigation</b>. Vast reservoirs held monsoon water for a dry-season rice crop, and that surplus fed the labor that built the monuments. Angkor Wat is still the largest religious structure in the world, and its scale was itself an argument about who ruled.<br><br>Say the chain slowly, then let the box land: <b>whoever controls the water controls the rice, whoever controls the rice controls the labor, and whoever controls the labor can build the thing that proves he was meant to rule.</b>">
   <p class="eyebrow">Case Two &middot; Mainland Southeast Asia</p>
   <h2>Angkor: the god-king and the water</h2>
   <div class="rule"></div>
@@ -557,28 +564,28 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
     <div class="panel">
       <p class="tag">The claim</p>
       <h3>Devaraja</h3>
-      <p>The <b>god-king</b>. Kingship tied directly to cosmic order, with the temple built as a model of the universe and the ruler at its center.</p>
+      <p>The <b>god-king</b>. Temple as a model of the universe.</p>
     </div>
     <div class="panel gold" data-step="1">
       <p class="tag">The engine</p>
       <h3>Water and rice</h3>
-      <p>Vast reservoirs held monsoon water for a <b>dry-season crop</b>. Surplus rice fed the labor that built the monuments.</p>
+      <p>Reservoirs, <b>dry-season crop</b>, surplus labor</p>
     </div>
     <div class="panel rust" data-step="2">
       <p class="tag">The billboard</p>
       <h3>Angkor Wat</h3>
-      <p>Still the <b>largest religious structure in the world</b>. Its scale was itself an argument about who ruled.</p>
+      <p>Largest religious structure <b>on earth</b></p>
     </div>
   </div>
-  <div class="sowhat" data-step="3">
-    <p class="tag">Connect the three</p>
-    <p>Control the water, and you control the rice. Control the rice, and you control the labor. Control the labor, and you can build the thing that proves you were <b>meant</b> to rule.</p>
+  <div class="writethis" data-step="3">
+    <p class="tag">Write this down</p>
+    <p>Control the <b>water</b>, control the <b>rice</b>, control the <b>labor</b>.</p>
   </div>
 </section>
 
 <!-- ═════ 13 DIVIDER: PART THREE ═══════════════════════════════════════════ -->
 <section class="slide dark divider" data-title="Part Three: Geography"
-  data-notes="Signpost, and the pivot to Checkpoint 2. &ldquo;Everything so far was land, rice, and temples. Now take all of it out to sea, where <b>none of that works</b>.&rdquo; The maritime states had no farmland worth holding and no great armies. Ask before you advance: <b>&ldquo;If you cannot grow it and cannot conquer it, how do you get rich?&rdquo;</b>">
+  data-notes="Signpost, and the pivot to Checkpoint 2. &ldquo;Everything so far was land, rice and temples. Now take all of it out to sea, where <b>none of that works</b>.&rdquo;<br><br>The maritime states had no farmland worth holding and no great armies. Ask before you advance, and genuinely wait: <b>&ldquo;If you cannot grow it and you cannot conquer it, how do you get rich?&rdquo;</b> Someone will say trade. Push once more: rich from trade <b>how</b>, exactly?">
   <p class="part">Part Three</p>
   <h1>Geography builds states</h1>
   <p class="lede">Take away the farmland and the army. What is left to build an empire on? The wind, and a narrow place in the water.</p>
@@ -586,44 +593,44 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 
 <!-- ═════ 14 LAND VS SEA ═══════════════════════════════════════════════════ -->
 <section class="slide" data-title="Land States vs Sea States"
-  data-notes="<b>The comparison this topic is built to assess.</b> Reveal a row at a time and make the room supply the right-hand column before you show it. The payoff line at the bottom is the AP-level move: same century, same religions, same ocean, <b>two completely different answers to the problem of holding power</b>, and geography is what explains the difference.">
+  data-notes="<b>The comparison this topic is built to assess, so protect the thinking time.</b><br><br>Reveal a row at a time and make the room supply the right-hand column before you show it. They have the mainland side already from Vijayanagara and Angkor, so the sea side is the guessable half.<br><br>The payoff is the last box, and it is the AP-level move: same century, same religions, same ocean, and <b>two completely different answers to the problem of holding power</b>. Geography is what explains the difference.<br><br><b>Say the eBook line out loud.</b> This grid is in the deep reading for 1.3, &lsquo;Rice, Water, and the Strait&rsquo;, laid out the same way. Nobody needs to copy it, and a student copying it is a student not arguing.">
   <p class="eyebrow">The Core Comparison</p>
   <h2>Land states and sea states</h2>
   <div class="rule"></div>
   <table class="compare">
     <thead>
-      <tr><th>&nbsp;</th><th>Land states &middot; Vijayanagara, Khmer</th><th>Sea states &middot; Srivijaya, Majapahit</th></tr>
+      <tr><th>&nbsp;</th><th>Land &middot; Vijayanagara, Khmer</th><th>Sea &middot; Srivijaya, Majapahit</th></tr>
     </thead>
     <tbody>
-      <tr><th>Power base</th><td>Farmland, irrigation, rice surplus</td><td>Ports, sea lanes, the strait</td></tr>
-      <tr data-step="1"><th>Revenue from</th><td>Taxing peasants and land</td><td>Taxing and protecting passing ships</td></tr>
-      <tr data-step="2"><th>Holds territory by</th><td>Armies and administration</td><td>Navies, alliances, and reputation</td></tr>
-      <tr data-step="3"><th>Religion does</th><td>Legitimizes the king; organizes labor</td><td>Builds trust with foreign merchants; carries culture outward</td></tr>
-      <tr data-step="4"><th>Fatal weakness</th><td>Drought, silt, failed harvests</td><td>A rival port, or trade shifting elsewhere</td></tr>
+      <tr><th>Power base</th><td>Farmland, irrigation, rice</td><td>Ports, sea lanes, the strait</td></tr>
+      <tr data-step="1"><th>Revenue</th><td>Taxing peasants and land</td><td>Taxing passing ships</td></tr>
+      <tr data-step="2"><th>Holds it by</th><td>Armies, administration</td><td>Navies, alliances, reputation</td></tr>
+      <tr data-step="3"><th>Religion does</th><td>Legitimizes the king</td><td>Builds trust with merchants</td></tr>
+      <tr data-step="4"><th>Dies from</th><td>Drought, failed harvests</td><td>A rival port</td></tr>
     </tbody>
   </table>
-  <div class="sowhat" data-step="5">
-    <p class="tag">The AP move</p>
-    <p>Same century, same religions, same ocean, and <b>two entirely different strategies for holding power</b>. Geography is what explains the difference.</p>
+  <div class="writethis" data-step="5">
+    <p class="tag">Write this down &middot; the grid is in your eBook, do not copy it</p>
+    <p>Same ocean, two strategies. <b>Geography explains the difference.</b></p>
   </div>
 </section>
 
 <!-- ═════ 15 MARITIME ══════════════════════════════════════════════════════ -->
 <section class="slide" data-title="Srivijaya and Majapahit"
-  data-notes="The counter-intuitive point, and worth saying slowly: these states were <b>rich without being big</b> and <b>powerful without large armies</b>. Srivijaya taxed the strait from roughly 700 to 1300; Majapahit projected influence across the archipelago from Java, roughly 1293 to 1527, largely through trade and diplomacy. Religion traveled the same ships: Buddhism and Hinduism reached island Southeast Asia through merchants and monks, not conquest.">
+  data-notes="The counter-intuitive point, and worth saying slowly: these states were <b>rich without being big</b> and <b>powerful without large armies</b>.<br><br><b>Srivijaya</b>, roughly 700 to 1300, grew rich taxing and protecting ships moving through the Strait of Malacca. <b>Majapahit</b>, roughly 1293 to 1527, projected power across the Indonesian archipelago from Java through trade, diplomacy and cultural pull rather than occupation.<br><br>Religion traveled the same ships: Buddhism and Hinduism reached island Southeast Asia through merchant, diplomatic and monastic networks, not conquest.<br><br>Land the idea: <b>control a chokepoint and you do not need to control the land around it.</b> Wealth and cultural reach, without the cost of an occupying army.">
   <p class="eyebrow">Case Three &middot; Maritime Southeast Asia</p>
   <h2>Power without an army</h2>
   <div class="rule"></div>
   <div class="cols split">
     <div>
       <ul class="points">
-        <li><b>Srivijaya</b> (c. 700&ndash;1300) grew rich by taxing and protecting ships through the Strait of Malacca.</li>
-        <li data-step="1"><b>Majapahit</b> (c. 1293&ndash;1527) projected power across the Indonesian archipelago through trade, diplomacy, and cultural pull.</li>
-        <li data-step="2">Both spread <b>Buddhism and Hinduism</b> along merchant, diplomatic, and monastic networks.</li>
+        <li><b>Srivijaya</b> taxed the strait</li>
+        <li data-step="1"><b>Majapahit</b> ruled by sea, not by soil</li>
+        <li data-step="2">Their ships carried <b>Buddhism and Hinduism</b></li>
       </ul>
-      <div class="sowhat" data-step="3">
-        <p class="tag">Say this out loud</p>
-        <p>Control a <b>chokepoint</b> and you do not need to control the land around it. Wealth and cultural reach, without the cost of an occupying army.</p>
+      <div class="writethis" data-step="3">
+        <p class="tag">Write this down</p>
+        <p>Hold a <b>chokepoint</b>, and you need not hold the land.</p>
       </div>
     </div>
     <figure>
@@ -637,7 +644,7 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 
 <!-- ═════ 16 THE STRAIT ════════════════════════════════════════════════════ -->
 <section class="slide" data-title="The Strait of Malacca"
-  data-notes="Zoom all the way in on the one place. Everything moving between China and India had to squeeze through here, and the monsoon set the timetable: sail west to east on one season's wind, wait, sail back on the other. <b>That wait is the business model.</b> Ships parked for weeks need food, repairs, warehouses, and safety, and whoever supplies that gets rich. Then connect it forward: this is the chokepoint Europeans come looking for in Unit 4.">
+  data-notes="Zoom all the way in on the one place, and let the mechanism do the work.<br><br>Everything moving between China and India had to squeeze through here. The monsoon set the timetable: sail west to east on one season's wind, then wait for the other. <b>That wait is the business model.</b> Ships parked for weeks need food, repairs, warehouses and safety, and whoever supplies that gets rich. The port does not have to produce anything.<br><br>Then the part that answers Checkpoint 2 directly: merchants waiting out a monsoon married, taught, worshipped and argued. <b>The same wind that moved pepper moved Islam, Buddhism, law and language.</b> That is cultural diffusion with a named mechanism attached, which is exactly what the checkpoint is asking for.<br><br>Connect forward in one sentence: this is the chokepoint Europeans come looking for in Unit 4.">
   <p class="eyebrow">Zoom In</p>
   <h2>Why one narrow strait mattered so much</h2>
   <div class="rule"></div>
@@ -645,52 +652,52 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
     <div class="panel">
       <p class="tag">Geography</p>
       <h3>The chokepoint</h3>
-      <p>Everything moving between the Indian Ocean and the South China Sea funnelled through <b>one narrow passage</b>.</p>
+      <p><b>One narrow passage</b> between two oceans</p>
     </div>
     <div class="panel gold" data-step="1">
       <p class="tag">Climate</p>
       <h3>The monsoon clock</h3>
-      <p>Winds reverse with the seasons. You sail one way, then <b>wait months</b> for the wind to turn.</p>
+      <p>Wind reverses. <b>Ships wait months.</b></p>
     </div>
     <div class="panel rust" data-step="2">
       <p class="tag">Consequence</p>
       <h3>The waiting city</h3>
-      <p>Crews stuck ashore need food, repairs, warehouses, and protection. <b>Ports got rich on the wait.</b></p>
+      <p>Ports got rich <b>on the wait</b></p>
     </div>
   </div>
-  <div class="sowhat" data-step="3">
-    <p class="tag">And it carried more than cargo</p>
-    <p>Merchants waiting out a monsoon married, taught, worshipped, and argued. <b>The same wind that moved pepper moved Islam, Buddhism, law, and language.</b></p>
+  <div class="writethis" data-step="3">
+    <p class="tag">Write this down</p>
+    <p>The same wind that moved pepper moved <b>religion, law, and language</b>.</p>
   </div>
 </section>
 
 <!-- ═════ 17 TAKEAWAY ══════════════════════════════════════════════════════ -->
 <section class="slide" data-title="AP Takeaway"
-  data-notes="Land the block. Both checkpoints are on this slide, so students can see exactly what they are about to be asked. Remind them of the rule from slide 10: <b>name the mechanism, do not just name the fact.</b> Then send them to Checkpoint 1, and note that Checkpoint 1 is theirs alone, no Socrates, so you can see where they actually are.">
+  data-notes="Land the block. Both checkpoint prompts are here so they can see exactly what they are about to be asked, and <b>this is the one slide where copying is the right move</b>: the prompts and the terms are the assignment.<br><br>Remind them of the rule from slide 10, because it applies to both: name the mechanism, do not just name the fact. &ldquo;Religion legitimized power&rdquo; and &ldquo;trade spread ideas&rdquo; are both true and both earn nothing.<br><br>Send them to Checkpoint 1, and say why it has no coach: it is theirs alone, so you can see where they actually are before anyone helps them. Checkpoint 2 is where Socrates comes in. If they do not finish Checkpoint 2 in class, all three steps are homework, the draft, the coaching and the revision.">
   <p class="eyebrow">What You Must Be Able To Do</p>
   <h2>The takeaway</h2>
   <div class="rule"></div>
   <div class="cols c2">
     <div class="panel">
       <p class="tag">Checkpoint 1 &middot; Belief and state power</p>
-      <p>Explain how rulers used <b>religion or monumental architecture</b> to strengthen political authority, c. 1200&ndash;1450.</p>
+      <p>How did rulers use <b>religion or monumental architecture</b> to strengthen political authority?</p>
       <div class="chips" style="margin-top:10px">
-        <span class="chip">Delhi Sultanate</span><span class="chip">Vijayanagara</span>
-        <span class="chip">Khmer</span><span class="chip">devaraja</span><span class="chip">Bhakti</span><span class="chip">Sufism</span>
+        <span class="chip">Vijayanagara</span><span class="chip">Khmer</span>
+        <span class="chip">devaraja</span><span class="chip">Bhakti</span><span class="chip">Sufism</span>
       </div>
     </div>
     <div class="panel rust" data-step="1">
       <p class="tag">Checkpoint 2 &middot; Causation</p>
-      <p>Explain how <b>Indian Ocean trade</b> spread goods, religions, and cultural practices across the region.</p>
+      <p>How did <b>Indian Ocean trade</b> spread goods, religions, and cultural practices?</p>
       <div class="chips" style="margin-top:10px">
         <span class="chip">monsoon winds</span><span class="chip">Strait of Malacca</span>
-        <span class="chip">Srivijaya</span><span class="chip">Majapahit</span><span class="chip">ports</span>
+        <span class="chip">Srivijaya</span><span class="chip">Majapahit</span>
       </div>
     </div>
   </div>
-  <div class="sowhat" data-step="2">
-    <p class="tag">The rule for both</p>
-    <p>Do not stop at &ldquo;religion legitimized power&rdquo; or &ldquo;trade spread ideas&rdquo;. <b>Name the mechanism</b>: what specifically did the ruler do, and what specifically did it get him?</p>
+  <div class="writethis" data-step="2">
+    <p class="tag">Write this down &middot; both checkpoints</p>
+    <p><b>Name the mechanism.</b> What did the ruler do, and what did it get him?</p>
   </div>
 </section>
 
