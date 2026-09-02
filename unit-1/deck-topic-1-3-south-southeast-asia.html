@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeHistorical | Teach Mode 1.3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   BeHistorical Teach Mode, Topic 1.3
+
+   POLARITY, and it is the rule that governs the rest of this file.
+   A lamp projector can only add light: in a lit classroom a dark background
+   degrades to washed-out grey while a light one puts the lumens to work.
+   So every slide a student READS is paper under ink. Dark is reserved for the
+   cover and the part dividers, which are scanned in two seconds, not read.
+
+   ANTIQUE GOLD IS A DARK-SURFACE COLOUR. It is 7.3:1 on steel and 2.1:1 on
+   paper, under the 3:1 floor even for large text. On paper the accent is
+   --oxidized at 7.9:1. Do not "restore" gold on a cream slide; it looks more
+   on brand and is unreadable from the back row.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root{
+  --steel:#1a1c1d; --charcoal:#2b2f31; --gunmetal:#3e4447; --iron:#5a5f5c;
+  --sandstone:#d2b48c; --bronze:#8c5a2b; --rust:#a8652d; --oxidized:#6b3e1f;
+  --gold:#c9a46a; --paper:#f5f0e7; --clean:#fffdf7; --ink:#151718;
+  --rule:#ddd2be; --rule-soft:#e8dfd0;
+  --font-display:'Cinzel','Trajan Pro',Georgia,serif;
+  --font-body:'Libre Baskerville',Georgia,'Times New Roman',serif;
+  --font-ui:'Montserrat',Arial,Helvetica,sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#0d0e0f}
+body{font-family:var(--font-body);color:var(--ink)}
+
+/* ── The stage ──────────────────────────────────────────────────────────────
+   A fixed 1280x720 board scaled to fit the window, rather than a fluid layout.
+   A projector is an unknown aspect ratio and an unknown resolution, and a
+   fluid slide reflows differently on every one of them: a line that fit in
+   rehearsal wraps in the room. Fixed geometry plus one scale factor means what
+   you saw at your desk is what lands on the wall, every time. */
+#viewport{position:fixed;inset:0;display:grid;place-items:center;background:#0d0e0f}
+#stage{
+  width:1280px;height:720px;position:relative;flex:none;
+  transform:scale(var(--scale,1));transform-origin:center center;
+  box-shadow:0 40px 120px rgba(0,0,0,.6);
+}
+
+.slide{
+  position:absolute;inset:0;display:none;
+  padding:64px 76px;overflow:hidden;
+  background:var(--paper);color:var(--ink);
+}
+.slide.active{display:flex;flex-direction:column}
+
+/* Dark slides: cover and dividers only. */
+.slide.dark{background:var(--steel);color:var(--paper)}
+.slide.dark .eyebrow{color:var(--gold)}
+.slide.dark h1,.slide.dark h2{color:var(--clean)}
+
+/* ── Typography ─────────────────────────────────────────────────────────── */
+.eyebrow{
+  font-family:var(--font-ui);font-weight:800;font-size:15px;
+  letter-spacing:.20em;text-transform:uppercase;color:var(--oxidized);
+  margin:0 0 14px;
+}
+h1{font-family:var(--font-display);font-weight:900;font-size:64px;line-height:1.06;margin:0 0 18px;letter-spacing:.01em}
+h2{font-family:var(--font-display);font-weight:800;font-size:44px;line-height:1.12;margin:0 0 8px;color:var(--steel)}
+h3{font-family:var(--font-ui);font-weight:800;font-size:21px;line-height:1.25;margin:0 0 10px;color:var(--oxidized);letter-spacing:.01em}
+.deck-sub{font-size:22px;line-height:1.45;color:var(--gunmetal);margin:0 0 26px;font-style:italic}
+.slide.dark .deck-sub{color:var(--sandstone)}
+p{font-size:20px;line-height:1.55;margin:0 0 16px}
+b,strong{color:var(--oxidized);font-weight:700}
+.slide.dark b,.slide.dark strong{color:var(--gold)}
+
+.rule{height:3px;background:var(--bronze);width:96px;border-radius:2px;margin:0 0 26px}
+.slide.dark .rule{background:var(--gold)}
+
+/* A slide's body area, so the header stays pinned and content fills below. */
+.body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
+.body.top{justify-content:flex-start}
+
+/* ── Bullets ────────────────────────────────────────────────────────────── */
+ul.points{list-style:none;margin:0;padding:0}
+ul.points li{
+  position:relative;padding-left:38px;margin-bottom:20px;
+  font-size:22px;line-height:1.5;
+}
+ul.points li::before{
+  content:"";position:absolute;left:0;top:.52em;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--bronze);box-shadow:0 0 0 4px rgba(140,90,43,.16);
+}
+.slide.dark ul.points li::before{background:var(--gold);box-shadow:0 0 0 4px rgba(201,164,106,.18)}
+
+/* ── Reveals ────────────────────────────────────────────────────────────────
+   Anything with data-step is hidden until the teacher advances to it. This is
+   the one thing a projected slide does that a lecture card cannot: control
+   what the room is looking at. Visibility, not display, so nothing reflows
+   when a step lands. */
+[data-step]{opacity:0;transform:translateY(10px);transition:opacity .28s ease,transform .28s ease}
+[data-step].shown{opacity:1;transform:none}
+
+/* ── Two and three column layouts ───────────────────────────────────────── */
+.cols{display:grid;gap:26px;flex:1;min-height:0}
+.cols.c2{grid-template-columns:1fr 1fr}
+.cols.c3{grid-template-columns:repeat(3,1fr)}
+.cols.split{grid-template-columns:1.05fr .95fr;align-items:center}
+
+.panel{
+  background:var(--clean);border:1px solid var(--rule);border-radius:10px;
+  padding:24px 26px;border-top:5px solid var(--bronze);
+  display:flex;flex-direction:column;min-height:0;
+}
+.panel.gold{border-top-color:var(--gold)}
+.panel.rust{border-top-color:var(--rust)}
+.panel.iron{border-top-color:var(--iron)}
+.panel p{font-size:18px;line-height:1.5;margin:0 0 12px}
+.panel p:last-child{margin-bottom:0}
+.panel .tag{
+  font-family:var(--font-ui);font-size:12px;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--iron);margin:0 0 6px;
+}
+
+/* ── Figures ────────────────────────────────────────────────────────────── */
+figure{margin:0;display:flex;flex-direction:column;min-height:0;height:100%}
+figure img{
+  width:100%;flex:1;min-height:0;object-fit:cover;border-radius:8px;
+  background:var(--charcoal);border:1px solid var(--rule);
+}
+figure.contain img{object-fit:contain;background:var(--clean);padding:8px}
+/* A remote picture that dies degrades to this topic's local artwork rather
+   than an empty frame. Local art is drawn, not photographed, so it is
+   contained rather than cropped once it lands. */
+figure img.is-fallback{object-fit:contain;background:var(--clean);padding:14px}
+figcaption{
+  font-family:var(--font-ui);font-size:13px;line-height:1.45;color:var(--iron);
+  margin-top:10px;font-weight:500;
+}
+
+/* ── Comparison table ───────────────────────────────────────────────────── */
+/* Row padding is tight on purpose. Cinzel runs about 50% wider than the
+   Georgia fallback, so a comparison slide that fits at your desk with no
+   webfonts overflows the fixed board in the room, where the fonts do load.
+   Both table slides did, by 11px and 17px, and a fixed slide clips silently:
+   the bottom row of the comparison just is not there on the wall. Re-measure
+   with the real faces before loosening any of this. */
+table.compare{width:100%;border-collapse:collapse;font-size:18px}
+table.compare th,table.compare td{
+  text-align:left;padding:10px 16px;border-bottom:1px solid var(--rule);vertical-align:top;
+}
+table.compare thead th{
+  font-family:var(--font-ui);font-size:13px;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--clean);background:var(--gunmetal);
+  border-bottom:none;
+}
+table.compare thead th:first-child{background:var(--steel);border-radius:8px 0 0 0}
+table.compare thead th:last-child{border-radius:0 8px 0 0}
+table.compare tbody th{
+  font-family:var(--font-ui);font-size:14px;font-weight:800;color:var(--oxidized);
+  letter-spacing:.06em;text-transform:uppercase;width:172px;background:var(--tint,#f6efe1);
+}
+table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border-bottom:none}
+
+/* ── The "so what" strip ────────────────────────────────────────────────── */
+.sowhat{
+  margin-top:22px;background:var(--steel);color:var(--paper);
+  border-radius:10px;padding:20px 26px;border-left:6px solid var(--gold);
+}
+.sowhat .tag{
+  font-family:var(--font-ui);font-size:12px;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 6px;
+}
+.sowhat p{margin:0;font-size:19px;line-height:1.45;color:var(--paper)}
+.sowhat b,.sowhat strong{color:var(--gold)}
+
+/* ── Term chips ─────────────────────────────────────────────────────────── */
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:4px}
+.chip{
+  font-family:var(--font-ui);font-size:13px;font-weight:700;letter-spacing:.04em;
+  background:#f6efe1;color:var(--oxidized);border:1px solid var(--rule);
+  border-radius:999px;padding:7px 15px;
+}
+.slide.dark .chip{background:rgba(201,164,106,.14);color:var(--gold);border-color:rgba(201,164,106,.38)}
+
+/* ── Cover ──────────────────────────────────────────────────────────────── */
+.cover{
+  justify-content:center;
+  background:
+    radial-gradient(ellipse at 22% 18%, rgba(201,164,106,.16) 0%, transparent 58%),
+    linear-gradient(145deg,#1a1c1d 0%,#22262a 55%,#151718 100%);
+}
+.cover .kicker{
+  font-family:var(--font-ui);font-weight:800;font-size:16px;letter-spacing:.30em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 22px;
+}
+.cover h1{font-size:76px;max-width:19ch}
+.cover .dates{
+  font-family:var(--font-ui);font-weight:700;font-size:19px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sandstone);margin:14px 0 0;
+}
+.cover .brandline{
+  position:absolute;left:76px;bottom:56px;
+  font-family:var(--font-display);font-weight:800;font-size:20px;
+  letter-spacing:.06em;color:var(--gold);
+}
+
+/* ── Divider ────────────────────────────────────────────────────────────── */
+.divider{justify-content:center;background:linear-gradient(135deg,#1a1c1d 0%,#2b2f31 100%)}
+.divider .part{
+  font-family:var(--font-ui);font-weight:800;font-size:15px;letter-spacing:.30em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 18px;
+}
+.divider h1{font-size:60px;max-width:20ch}
+.divider .lede{font-size:23px;line-height:1.5;color:var(--sandstone);max-width:62ch;margin:20px 0 0;font-style:italic}
+
+/* ── Slide furniture ────────────────────────────────────────────────────── */
+.slideno{
+  position:absolute;right:34px;bottom:26px;
+  font-family:var(--font-ui);font-weight:800;font-size:12px;letter-spacing:.16em;
+  color:var(--iron);
+}
+.slide.dark .slideno{color:rgba(210,180,140,.55)}
+.topicmark{
+  position:absolute;left:76px;bottom:26px;
+  font-family:var(--font-ui);font-weight:700;font-size:12px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--iron);
+}
+.slide.dark .topicmark{color:rgba(210,180,140,.55)}
+
+/* ── Progress ───────────────────────────────────────────────────────────── */
+#progress{position:fixed;left:0;top:0;height:4px;background:var(--gold);width:0;z-index:40;transition:width .25s ease}
+
+/* ── Controls ───────────────────────────────────────────────────────────── */
+#hud{
+  position:fixed;right:16px;bottom:14px;z-index:45;display:flex;gap:8px;align-items:center;
+  font-family:var(--font-ui);opacity:.28;transition:opacity .2s ease;
+}
+#hud:hover,#hud:focus-within{opacity:1}
+#hud button{
+  font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:.08em;
+  background:rgba(245,240,231,.10);color:var(--paper);border:1px solid rgba(245,240,231,.26);
+  border-radius:6px;padding:7px 11px;cursor:pointer;
+}
+#hud button:hover{background:rgba(201,164,106,.24);border-color:var(--gold)}
+#hud button:focus-visible,#overview button:focus-visible,#notes button:focus-visible{
+  outline:3px solid var(--gold);outline-offset:2px;
+}
+#counter{font-size:12px;font-weight:800;letter-spacing:.10em;color:var(--sandstone);padding:0 6px}
+
+/* ── Overview ───────────────────────────────────────────────────────────── */
+#overview{
+  position:fixed;inset:0;z-index:60;background:rgba(13,14,15,.97);
+  display:none;padding:34px 40px;overflow-y:auto;
+}
+#overview.show{display:block}
+#overview h2{font-family:var(--font-ui);font-size:14px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 22px}
+#ovgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+#ovgrid button{
+  text-align:left;background:var(--paper);border:2px solid transparent;border-radius:8px;
+  padding:14px 16px;cursor:pointer;font-family:var(--font-ui);color:var(--ink);
+  display:flex;flex-direction:column;gap:6px;min-height:92px;
+}
+#ovgrid button.dk{background:var(--charcoal);color:var(--paper)}
+#ovgrid button:hover{border-color:var(--gold)}
+#ovgrid button.here{border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,164,106,.22)}
+#ovgrid .n{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--iron)}
+#ovgrid button.dk .n{color:var(--sandstone)}
+#ovgrid .t{font-size:14px;font-weight:700;line-height:1.3}
+
+/* ── Presenter notes ────────────────────────────────────────────────────── */
+#notes{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--steel);
+  color:var(--paper);border-top:3px solid var(--gold);padding:20px 26px 22px;
+  display:none;max-height:36vh;overflow-y:auto;
+}
+#notes.show{display:block}
+#notes .tag{font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.20em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+#notes .txt{font-family:var(--font-ui);font-size:15px;line-height:1.6;max-width:112ch}
+#notes .txt b{color:var(--gold)}
+
+/* ── Blackout ───────────────────────────────────────────────────────────── */
+#black{position:fixed;inset:0;background:#000;z-index:70;display:none}
+#black.show{display:block}
+
+/* ── Help ───────────────────────────────────────────────────────────────── */
+#help{
+  position:fixed;inset:0;z-index:80;background:rgba(13,14,15,.96);display:none;
+  place-items:center;font-family:var(--font-ui);color:var(--paper);
+}
+#help.show{display:grid}
+#help .box{max-width:560px;padding:34px 40px}
+#help h2{font-family:var(--font-display);font-size:30px;color:var(--gold);margin:0 0 20px}
+#help dl{display:grid;grid-template-columns:auto 1fr;gap:12px 20px;margin:0;font-size:15px}
+#help dt{font-weight:800;color:var(--gold);letter-spacing:.06em}
+#help dd{margin:0;color:var(--sandstone)}
+#help .close{margin-top:26px;font-size:13px;color:var(--iron)}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<div id="viewport">
+<div id="stage">
+
+<!-- ═════ 01 COVER ═════════════════════════════════════════════════════════ -->
+<section class="slide dark cover" data-title="Cover"
+  data-notes="Open cold. Do not explain the title. Ask the room one question and leave it hanging: <b>&ldquo;What holds an empire together when the ruler is three weeks away by boat?&rdquo;</b> Take two or three answers, write nothing down, then advance. The whole block is an answer to that question.">
+  <p class="kicker">AP World History &middot; Unit 1 &middot; Topic 1.3</p>
+  <h1>Developments in South and Southeast Asia</h1>
+  <p class="dates">States, Belief Systems, and Trade &middot; c. 1200 to c. 1450</p>
+  <div class="brandline">BeHistorical</div>
+</section>
+
+<!-- ═════ 02 THE QUESTION ══════════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="The Question"
+  data-notes="This is the spine of the block. Everything after it is evidence for one of these three. Read the big question aloud, then let the three targets appear one at a time so the room reads them instead of skimming them. Tell students the two checkpoints at the end are targets 1 and 3.">
+  <p class="part">The Question</p>
+  <h1>How do you build a state out of belief and geography?</h1>
+  <div class="rule" style="margin-top:26px"></div>
+  <ul class="points" style="margin-top:6px">
+    <li data-step="1">How <b>Hinduism, Buddhism, and Islam</b> shaped societies and states.</li>
+    <li data-step="2">How states used <b>religion, trade, and administration</b> to build power.</li>
+    <li data-step="3">How <b>Indian Ocean trade</b> tied this region to all of Afro-Eurasia.</li>
+  </ul>
+</section>
+
+<!-- ═════ 03 THE MAP ═══════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Three Zones"
+  data-notes="Point at the three zones on the projected map before you say a word about religion. Students who cannot place Malacca cannot explain Srivijaya. <b>Say the organizing idea out loud:</b> mainland states grow out of rivers and rice, island states grow out of straits and ships. That single contrast carries the last third of this deck.">
+  <p class="eyebrow">Where in the World</p>
+  <h2>One region, three geographies</h2>
+  <div class="rule"></div>
+  <div class="cols split">
+    <div>
+      <ul class="points">
+        <li><b>South Asia.</b> Islamic states in the north (Delhi Sultanate, Rajputs), Hindu states in the south (Vijayanagara, Sinhala dynasties).</li>
+        <li data-step="1"><b>Mainland Southeast Asia.</b> Land states built on rivers and irrigation. Khmer, Sukhothai.</li>
+        <li data-step="2"><b>Maritime Southeast Asia.</b> Island and strait states that lived off trade. Srivijaya, Majapahit.</li>
+      </ul>
+      <div class="sowhat" data-step="3">
+        <p class="tag">The hinge</p>
+        <p>Monsoon winds and the <b>Strait of Malacca</b> made this region a permanent crossroads between the Indian Ocean and the South China Sea.</p>
+      </div>
+    </div>
+    <figure class="contain">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Map-of-southeast-asia_1400_CE-es.svg"
+           alt="Map of Southeast Asian states around 1400 CE"
+           onerror="this.onerror=null;this.src='../assets/images/module-art/unit-1/topic-1-3/map.svg';this.classList.add('is-fallback')">
+      <figcaption>Southeast Asia c. 1400. Mainland kingdoms and island polities, divided by water that connected more than it separated.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ═════ 04 THREE TRADITIONS ══════════════════════════════════════════════ -->
+<section class="slide" data-title="Three Traditions"
+  data-notes="Ninety seconds, not ten minutes. Students do not need the theology; they need to know these three were <b>in the same rooms and the same ports at the same time</b>. Kill the misconception now: these were not sealed boxes. A Hindu ruler could patronize a Buddhist monastery; a Muslim merchant could trade in a Hindu port under a Hindu king.">
+  <p class="eyebrow">The Cast</p>
+  <h2>Three traditions, one region</h2>
+  <div class="rule"></div>
+  <div class="cols c3">
+    <div class="panel">
+      <p class="tag">Oldest, deepest</p>
+      <h3>Hinduism</h3>
+      <p>Organized society through <b>caste</b>, and organized kingship through temple patronage. A ruler who built temples fed priests, employed artisans, and hosted pilgrims.</p>
+    </div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">Monastic, mobile</p>
+      <h3>Buddhism</h3>
+      <p>Travelled the trade routes with merchants and monks. <b>Monasteries</b> functioned as schools, banks, and rest stops along the sea lanes.</p>
+    </div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">Newest, arriving</p>
+      <h3>Islam</h3>
+      <p>Arrived by <b>conquest in the north</b> and by <b>commerce and Sufi teachers</b> in the south and the islands. Two very different doors.</p>
+    </div>
+  </div>
+  <div class="sowhat" data-step="3">
+    <p class="tag">Do not miss this</p>
+    <p>These traditions were not sealed off from each other. Rulers, merchants, and scholars <b>moved between them</b>, and that interaction is what the AP framework wants you to explain.</p>
+  </div>
+</section>
+
+<!-- ═════ 05 DIVIDER: PART ONE ═════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part One: Society"
+  data-notes="Signpost. Say it plainly: &ldquo;First, what belief did to <b>society</b>. Then what it did to <b>states</b>.&rdquo; Two examples are coming, Bhakti and Sufism, and both are movements that made religion <b>more personal and less institutional</b>.">
+  <p class="part">Part One</p>
+  <h1>Belief reshapes society</h1>
+  <p class="lede">Two movements, five hundred miles apart, doing the same thing: moving religion out of the hands of an institution and into the hands of a person.</p>
+</section>
+
+<!-- ═════ 06 BHAKTI ════════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Bhakti"
+  data-notes="The word to land is <b>devotion</b>. Bhakti says a poor weaver who loves the god sincerely is closer to the divine than a Brahmin performing a ritual without feeling. Ask: <b>&ldquo;Who gains power from that idea, and who loses it?&rdquo;</b> That question is the whole social significance. Note the reform came from <b>inside</b> Hinduism, not against it.">
+  <p class="eyebrow">Movement One &middot; South India</p>
+  <h2>Bhakti: devotion over hierarchy</h2>
+  <div class="rule"></div>
+  <div class="cols split">
+    <div>
+      <ul class="points">
+        <li><b>Bhakti</b> emphasized personal devotion to a deity over ritual, priestly hierarchy, or caste identity.</li>
+        <li data-step="1">Bhakti poets and saints, including <b>low-caste individuals and women</b>, challenged Brahmin authority from within the Hindu tradition.</li>
+        <li data-step="2">It reshaped religious culture across southern India and fed devotional traditions across the subcontinent.</li>
+      </ul>
+      <div class="sowhat" data-step="3">
+        <p class="tag">Why it matters</p>
+        <p>A reform from <b>inside</b> a tradition. Hinduism did not fracture; it opened a door that had been closed to most people.</p>
+      </div>
+    </div>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hampi%20virupaksha%20temple.jpg"
+           alt="Virupaksha Temple at Hampi, capital of the Vijayanagara Empire"
+           onerror="this.onerror=null;this.src='../assets/images/module-art/unit-1/topic-1-3/lecture-02.svg';this.classList.add('is-fallback')">
+      <figcaption>Virupaksha Temple, Hampi. Vijayanagara was a center of Hindu devotional culture and royal temple patronage.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ═════ 07 SUFISM ════════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Sufism"
+  data-notes="The word to land is <b>adaptation</b>. Sufis met people where they already were: local music, local poetry, local saints' shrines. That is why Islam spread far past the reach of any army. Contrast the two doors explicitly: the Delhi Sultanate is <b>political</b> Islam arriving by conquest; Sufism is <b>cultural</b> Islam arriving by relationship. Students routinely collapse these into one thing.">
+  <p class="eyebrow">Movement Two &middot; North India and beyond</p>
+  <h2>Sufism: Islam through connection</h2>
+  <div class="rule"></div>
+  <div class="cols split">
+    <div>
+      <ul class="points">
+        <li><b>Sufi</b> orders spread Islam through mystical devotion, poetry, music, and personal guidance, not conquest alone.</li>
+        <li data-step="1">Sufi teachers <b>adapted to local customs</b>, which made Islam reachable for diverse populations across South Asia.</li>
+        <li data-step="2">The <b>Delhi Sultanate</b> governed a religiously mixed population using both Islamic law and practical accommodation.</li>
+      </ul>
+      <div class="sowhat" data-step="3">
+        <p class="tag">Why it matters</p>
+        <p>Islam entered South Asia through <b>two different doors</b>: an army in the north, and a teacher, a poem, or a merchant almost everywhere else.</p>
+      </div>
+    </div>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Qutb_Minar_2022.jpg"
+           alt="The Qutb Minar in Delhi, built under the Delhi Sultanate"
+           onerror="this.onerror=null;this.src='../assets/images/module-art/unit-1/topic-1-3/lecture-03.svg';this.classList.add('is-fallback')">
+      <figcaption>The Qutb Minar, Delhi. Islamic political authority in stone, at the northern door.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ═════ 08 COMPARISON ════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Bhakti vs Sufism"
+  data-notes="<b>This is the slide the lecture cards could never do.</b> Do not read the table. Reveal the last row only after the room has tried to answer it. Ask: &ldquo;Two different religions, two different regions. Why do they look so similar?&rdquo; The answer is the AP-level insight: both are responses to <b>institutional religion feeling distant from ordinary people</b>, and both spread along the same trade routes.">
+  <p class="eyebrow">Comparison</p>
+  <h2>Two movements, one shape</h2>
+  <div class="rule"></div>
+  <table class="compare">
+    <thead>
+      <tr><th>&nbsp;</th><th>Bhakti</th><th>Sufism</th></tr>
+    </thead>
+    <tbody>
+      <tr><th>Tradition</th><td>Hindu</td><td>Islamic</td></tr>
+      <tr data-step="1"><th>Core move</th><td>Personal devotion over ritual and priesthood</td><td>Mystical, personal experience of God</td></tr>
+      <tr data-step="2"><th>Who it reached</th><td>Low-caste people and women, excluded by ritual hierarchy</td><td>Non-elite and non-Arabic-speaking populations</td></tr>
+      <tr data-step="3"><th>Carried by</th><td>Poets and saints, in local languages</td><td>Teachers and orders, using local custom</td></tr>
+      <tr data-step="4"><th>Effect on power</th><td>Weakened Brahmin gatekeeping from inside Hinduism</td><td>Spread Islam far past the reach of any army</td></tr>
+    </tbody>
+  </table>
+  <div class="sowhat" data-step="5">
+    <p class="tag">The pattern</p>
+    <p>Both are answers to the same problem: <b>institutional religion had grown distant from ordinary people.</b> And both traveled the same roads and sea lanes the merchants did.</p>
+  </div>
+</section>
+
+<!-- ═════ 09 DIVIDER: PART TWO ═════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Two: The State"
+  data-notes="Signpost, and a pivot. &ldquo;That is belief working on society. Now watch a ruler pick belief up and <b>use</b> it.&rdquo; The next three slides are one argument: the mechanism, then two cases.">
+  <p class="part">Part Two</p>
+  <h1>Belief builds states</h1>
+  <p class="lede">A ruler cannot stand behind every farmer with a spear. So he needs subjects who believe that obeying him is the right thing to do.</p>
+</section>
+
+<!-- ═════ 10 THE MECHANISM ═════════════════════════════════════════════════ -->
+<section class="slide" data-title="The Mechanism"
+  data-notes="<b>The single most important slide in the deck.</b> Students write &ldquo;religion legitimized power&rdquo; and stop, and that sentence earns nothing on an AP rubric because it names no mechanism. Walk the four boxes left to right and make them say the verbs: patronize, employ, gather, obey. Then say: <b>&ldquo;A temple is not a decoration. It is payroll, it is a granary, it is a courthouse, and it is a billboard.&rdquo;</b>">
+  <p class="eyebrow">The Move Every Ruler Made</p>
+  <h2>How a temple becomes political power</h2>
+  <div class="rule"></div>
+  <div class="cols c2" style="grid-template-columns:repeat(4,1fr);gap:16px">
+    <div class="panel">
+      <p class="tag">Step 1</p>
+      <h3>Patronize</h3>
+      <p>The ruler funds a temple, a monastery, or a shrine.</p>
+    </div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">Step 2</p>
+      <h3>Employ</h3>
+      <p>It becomes an economy: priests, artisans, laborers, landholdings.</p>
+    </div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">Step 3</p>
+      <h3>Gather</h3>
+      <p>Pilgrims and festivals bring people, tribute, and trade to his capital.</p>
+    </div>
+    <div class="panel iron" data-step="3">
+      <p class="tag">Step 4</p>
+      <h3>Obey</h3>
+      <p>His authority now looks like the natural order rather than one man's claim.</p>
+    </div>
+  </div>
+  <div class="sowhat" data-step="4">
+    <p class="tag">Write this down</p>
+    <p>&ldquo;Religion legitimized power&rdquo; earns nothing on its own. <b>Name the mechanism:</b> patronage bought loyalty, employment, tribute, and the appearance of cosmic order.</p>
+  </div>
+</section>
+
+<!-- ═════ 11 VIJAYANAGARA ══════════════════════════════════════════════════ -->
+<section class="slide" data-title="Vijayanagara"
+  data-notes="Case one, the Hindu land state. Founded 1336 in the southern Deccan, and note <b>why</b> it was founded: as a Hindu power holding the line against Muslim sultanates pressing south. Temple culture was the anchor: pilgrimage economies, royal patronage of the arts, and a capital at Hampi that ran on it.">
+  <p class="eyebrow">Case One &middot; South Asia</p>
+  <h2>Vijayanagara: the temple as anchor</h2>
+  <div class="rule"></div>
+  <div class="cols split">
+    <div>
+      <ul class="points">
+        <li>Founded <b>1336</b> in the southern Deccan, a Hindu power holding the line as Muslim sultanates pressed south.</li>
+        <li data-step="1">Used <b>Hindu temple culture</b> to anchor royal authority and organize a pilgrimage economy.</li>
+        <li data-step="2">The capital at <b>Hampi</b> became one of the largest and richest cities in the world.</li>
+      </ul>
+      <div class="sowhat" data-step="3">
+        <p class="tag">The mechanism, in one state</p>
+        <p>Patronage &rarr; pilgrims &rarr; markets &rarr; revenue &rarr; an army. <b>The temple was the engine, not the ornament.</b></p>
+      </div>
+    </div>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg"
+           alt="Angkor Wat, the temple complex of the Khmer Empire"
+           onerror="this.onerror=null;this.src='../assets/images/module-art/unit-1/topic-1-3/lecture-04.svg';this.classList.add('is-fallback')">
+      <figcaption>Monumental religious building was a state project across the whole region, from Hampi to Angkor.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ═════ 12 ANGKOR ════════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Angkor and the devaraja"
+  data-notes="Case two, and the strongest version of the argument. <b>Devaraja</b> means god-king: the ruler is not merely chosen by the divine, he is a node in the cosmic order, and the temple is a scale model of the universe with him at the center. Then give them the hydraulics: Angkor's power rested on <b>irrigation</b>, on barays holding monsoon water for a dry-season rice crop. Say it directly: <b>whoever controls the water controls the rice, and whoever controls the rice controls the labor that builds the temple.</b>">
+  <p class="eyebrow">Case Two &middot; Mainland Southeast Asia</p>
+  <h2>Angkor: the god-king and the water</h2>
+  <div class="rule"></div>
+  <div class="cols c3">
+    <div class="panel">
+      <p class="tag">The claim</p>
+      <h3>Devaraja</h3>
+      <p>The <b>god-king</b>. Kingship tied directly to cosmic order, with the temple built as a model of the universe and the ruler at its center.</p>
+    </div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">The engine</p>
+      <h3>Water and rice</h3>
+      <p>Vast reservoirs held monsoon water for a <b>dry-season crop</b>. Surplus rice fed the labor that built the monuments.</p>
+    </div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">The billboard</p>
+      <h3>Angkor Wat</h3>
+      <p>Still the <b>largest religious structure in the world</b>. Its scale was itself an argument about who ruled.</p>
+    </div>
+  </div>
+  <div class="sowhat" data-step="3">
+    <p class="tag">Connect the three</p>
+    <p>Control the water, and you control the rice. Control the rice, and you control the labor. Control the labor, and you can build the thing that proves you were <b>meant</b> to rule.</p>
+  </div>
+</section>
+
+<!-- ═════ 13 DIVIDER: PART THREE ═══════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Three: Geography"
+  data-notes="Signpost, and the pivot to Checkpoint 2. &ldquo;Everything so far was land, rice, and temples. Now take all of it out to sea, where <b>none of that works</b>.&rdquo; The maritime states had no farmland worth holding and no great armies. Ask before you advance: <b>&ldquo;If you cannot grow it and cannot conquer it, how do you get rich?&rdquo;</b>">
+  <p class="part">Part Three</p>
+  <h1>Geography builds states</h1>
+  <p class="lede">Take away the farmland and the army. What is left to build an empire on? The wind, and a narrow place in the water.</p>
+</section>
+
+<!-- ═════ 14 LAND VS SEA ═══════════════════════════════════════════════════ -->
+<section class="slide" data-title="Land States vs Sea States"
+  data-notes="<b>The comparison this topic is built to assess.</b> Reveal a row at a time and make the room supply the right-hand column before you show it. The payoff line at the bottom is the AP-level move: same century, same religions, same ocean, <b>two completely different answers to the problem of holding power</b>, and geography is what explains the difference.">
+  <p class="eyebrow">The Core Comparison</p>
+  <h2>Land states and sea states</h2>
+  <div class="rule"></div>
+  <table class="compare">
+    <thead>
+      <tr><th>&nbsp;</th><th>Land states &middot; Vijayanagara, Khmer</th><th>Sea states &middot; Srivijaya, Majapahit</th></tr>
+    </thead>
+    <tbody>
+      <tr><th>Power base</th><td>Farmland, irrigation, rice surplus</td><td>Ports, sea lanes, the strait</td></tr>
+      <tr data-step="1"><th>Revenue from</th><td>Taxing peasants and land</td><td>Taxing and protecting passing ships</td></tr>
+      <tr data-step="2"><th>Holds territory by</th><td>Armies and administration</td><td>Navies, alliances, and reputation</td></tr>
+      <tr data-step="3"><th>Religion does</th><td>Legitimizes the king; organizes labor</td><td>Builds trust with foreign merchants; carries culture outward</td></tr>
+      <tr data-step="4"><th>Fatal weakness</th><td>Drought, silt, failed harvests</td><td>A rival port, or trade shifting elsewhere</td></tr>
+    </tbody>
+  </table>
+  <div class="sowhat" data-step="5">
+    <p class="tag">The AP move</p>
+    <p>Same century, same religions, same ocean, and <b>two entirely different strategies for holding power</b>. Geography is what explains the difference.</p>
+  </div>
+</section>
+
+<!-- ═════ 15 MARITIME ══════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Srivijaya and Majapahit"
+  data-notes="The counter-intuitive point, and worth saying slowly: these states were <b>rich without being big</b> and <b>powerful without large armies</b>. Srivijaya taxed the strait from roughly 700 to 1300; Majapahit projected influence across the archipelago from Java, roughly 1293 to 1527, largely through trade and diplomacy. Religion traveled the same ships: Buddhism and Hinduism reached island Southeast Asia through merchants and monks, not conquest.">
+  <p class="eyebrow">Case Three &middot; Maritime Southeast Asia</p>
+  <h2>Power without an army</h2>
+  <div class="rule"></div>
+  <div class="cols split">
+    <div>
+      <ul class="points">
+        <li><b>Srivijaya</b> (c. 700&ndash;1300) grew rich by taxing and protecting ships through the Strait of Malacca.</li>
+        <li data-step="1"><b>Majapahit</b> (c. 1293&ndash;1527) projected power across the Indonesian archipelago through trade, diplomacy, and cultural pull.</li>
+        <li data-step="2">Both spread <b>Buddhism and Hinduism</b> along merchant, diplomatic, and monastic networks.</li>
+      </ul>
+      <div class="sowhat" data-step="3">
+        <p class="tag">Say this out loud</p>
+        <p>Control a <b>chokepoint</b> and you do not need to control the land around it. Wealth and cultural reach, without the cost of an occupying army.</p>
+      </div>
+    </div>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur%20ship.JPG"
+           alt="Ship relief carved at Borobudur, Java"
+           onerror="this.onerror=null;this.src='../assets/images/module-art/unit-1/topic-1-3/lecture-05.svg';this.classList.add('is-fallback')">
+      <figcaption>A ship carved at Borobudur. The vessel, the trade, and the Buddhism all arrived together.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ═════ 16 THE STRAIT ════════════════════════════════════════════════════ -->
+<section class="slide" data-title="The Strait of Malacca"
+  data-notes="Zoom all the way in on the one place. Everything moving between China and India had to squeeze through here, and the monsoon set the timetable: sail west to east on one season's wind, wait, sail back on the other. <b>That wait is the business model.</b> Ships parked for weeks need food, repairs, warehouses, and safety, and whoever supplies that gets rich. Then connect it forward: this is the chokepoint Europeans come looking for in Unit 4.">
+  <p class="eyebrow">Zoom In</p>
+  <h2>Why one narrow strait mattered so much</h2>
+  <div class="rule"></div>
+  <div class="cols c3">
+    <div class="panel">
+      <p class="tag">Geography</p>
+      <h3>The chokepoint</h3>
+      <p>Everything moving between the Indian Ocean and the South China Sea funnelled through <b>one narrow passage</b>.</p>
+    </div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">Climate</p>
+      <h3>The monsoon clock</h3>
+      <p>Winds reverse with the seasons. You sail one way, then <b>wait months</b> for the wind to turn.</p>
+    </div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">Consequence</p>
+      <h3>The waiting city</h3>
+      <p>Crews stuck ashore need food, repairs, warehouses, and protection. <b>Ports got rich on the wait.</b></p>
+    </div>
+  </div>
+  <div class="sowhat" data-step="3">
+    <p class="tag">And it carried more than cargo</p>
+    <p>Merchants waiting out a monsoon married, taught, worshipped, and argued. <b>The same wind that moved pepper moved Islam, Buddhism, law, and language.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 17 TAKEAWAY ══════════════════════════════════════════════════════ -->
+<section class="slide" data-title="AP Takeaway"
+  data-notes="Land the block. Both checkpoints are on this slide, so students can see exactly what they are about to be asked. Remind them of the rule from slide 10: <b>name the mechanism, do not just name the fact.</b> Then send them to Checkpoint 1, and note that Checkpoint 1 is theirs alone, no Socrates, so you can see where they actually are.">
+  <p class="eyebrow">What You Must Be Able To Do</p>
+  <h2>The takeaway</h2>
+  <div class="rule"></div>
+  <div class="cols c2">
+    <div class="panel">
+      <p class="tag">Checkpoint 1 &middot; Belief and state power</p>
+      <p>Explain how rulers used <b>religion or monumental architecture</b> to strengthen political authority, c. 1200&ndash;1450.</p>
+      <div class="chips" style="margin-top:10px">
+        <span class="chip">Delhi Sultanate</span><span class="chip">Vijayanagara</span>
+        <span class="chip">Khmer</span><span class="chip">devaraja</span><span class="chip">Bhakti</span><span class="chip">Sufism</span>
+      </div>
+    </div>
+    <div class="panel rust" data-step="1">
+      <p class="tag">Checkpoint 2 &middot; Causation</p>
+      <p>Explain how <b>Indian Ocean trade</b> spread goods, religions, and cultural practices across the region.</p>
+      <div class="chips" style="margin-top:10px">
+        <span class="chip">monsoon winds</span><span class="chip">Strait of Malacca</span>
+        <span class="chip">Srivijaya</span><span class="chip">Majapahit</span><span class="chip">ports</span>
+      </div>
+    </div>
+  </div>
+  <div class="sowhat" data-step="2">
+    <p class="tag">The rule for both</p>
+    <p>Do not stop at &ldquo;religion legitimized power&rdquo; or &ldquo;trade spread ideas&rdquo;. <b>Name the mechanism</b>: what specifically did the ruler do, and what specifically did it get him?</p>
+  </div>
+</section>
+
+</div><!-- /stage -->
+</div><!-- /viewport -->
+
+<div id="hud">
+  <button id="btn-prev" type="button" aria-label="Previous slide">&larr;</button>
+  <span id="counter">1 / 17</span>
+  <button id="btn-next" type="button" aria-label="Next slide">&rarr;</button>
+  <button id="btn-ov"  type="button">All slides</button>
+  <button id="btn-nt"  type="button">Notes</button>
+  <button id="btn-fs"  type="button">Full screen</button>
+  <button id="btn-hp"  type="button" aria-label="Keyboard help">?</button>
+</div>
+
+<div id="overview" role="dialog" aria-modal="true" aria-label="All slides">
+  <h2>All slides, click to jump</h2>
+  <div id="ovgrid"></div>
+</div>
+
+<div id="notes" aria-live="polite">
+  <p class="tag">Presenter notes</p>
+  <div class="txt" id="notes-txt"></div>
+</div>
+
+<div id="black"></div>
+
+<div id="help" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts">
+  <div class="box">
+    <h2>Teach Mode controls</h2>
+    <dl>
+      <dt>&rarr; &darr; Space</dt><dd>Next step, then next slide</dd>
+      <dt>&larr; &uarr;</dt><dd>Back</dd>
+      <dt>Home / End</dt><dd>First / last slide</dd>
+      <dt>O</dt><dd>All slides, click to jump</dd>
+      <dt>N</dt><dd>Presenter notes</dd>
+      <dt>B</dt><dd>Blackout, for eyes on you</dd>
+      <dt>F</dt><dd>Full screen</dd>
+      <dt>?</dt><dd>This panel</dd>
+    </dl>
+    <p class="close">Press Escape or ? to close.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var stage    = document.getElementById('stage');
+  var slides   = Array.prototype.slice.call(stage.querySelectorAll('.slide'));
+  var progress = document.getElementById('progress');
+  var counter  = document.getElementById('counter');
+  var overview = document.getElementById('overview');
+  var ovgrid   = document.getElementById('ovgrid');
+  var notes    = document.getElementById('notes');
+  var notesTxt = document.getElementById('notes-txt');
+  var black    = document.getElementById('black');
+  var help     = document.getElementById('help');
+
+  var i = 0;    // current slide
+  var step = 0; // steps revealed on the current slide
+
+  /* Steps on a slide, sorted, deduplicated. A slide may number its reveals
+     1,1,2,3: two elements sharing a step land together. */
+  function stepsOf(slide) {
+    var seen = {}, out = [];
+    Array.prototype.forEach.call(slide.querySelectorAll('[data-step]'), function (el) {
+      var n = parseInt(el.getAttribute('data-step'), 10);
+      if (!isNaN(n) && !seen[n]) { seen[n] = 1; out.push(n); }
+    });
+    return out.sort(function (a, b) { return a - b; });
+  }
+
+  function paintSteps() {
+    var order = stepsOf(slides[i]);
+    var upto  = order.slice(0, step);
+    Array.prototype.forEach.call(slides[i].querySelectorAll('[data-step]'), function (el) {
+      var n = parseInt(el.getAttribute('data-step'), 10);
+      el.classList.toggle('shown', upto.indexOf(n) !== -1);
+    });
+  }
+
+  /* Jumping backwards lands on a fully revealed slide: a teacher going back to
+     re-explain wants the finished slide, not the first bullet again. */
+  function show(n, revealAll) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function (s, k) { s.classList.toggle('active', k === i); });
+    step = revealAll ? stepsOf(slides[i]).length : 0;
+    paintSteps();
+    counter.textContent = (i + 1) + ' / ' + slides.length;
+    progress.style.width = ((i + 1) / slides.length * 100) + '%';
+    notesTxt.innerHTML = slides[i].getAttribute('data-notes') || '<em>No notes for this slide.</em>';
+    if (overview.classList.contains('show')) markHere();
+  }
+
+  function next() {
+    if (step < stepsOf(slides[i]).length) { step++; paintSteps(); return; }
+    if (i < slides.length - 1) show(i + 1, false);
+  }
+
+  function prev() {
+    if (step > 0) { step--; paintSteps(); return; }
+    if (i > 0) show(i - 1, true);
+  }
+
+  /* ── Scale the fixed stage to the window ────────────────────────────────
+     Whole-number-ish scaling of one fixed board is what keeps the deck
+     identical on a 1024x768 classroom projector and a 4K panel. */
+  function fit() {
+    var pad = 0;
+    var s = Math.min(
+      (window.innerWidth  - pad) / 1280,
+      (window.innerHeight - pad) / 720
+    );
+    stage.style.setProperty('--scale', s);
+  }
+  window.addEventListener('resize', fit);
+
+  /* ── Overview ───────────────────────────────────────────────────────── */
+  function buildOverview() {
+    slides.forEach(function (s, k) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      if (s.classList.contains('dark')) b.className = 'dk';
+      b.innerHTML = '<span class="n">' + String(k + 1).padStart(2, '0') + '</span>' +
+                    '<span class="t"></span>';
+      b.querySelector('.t').textContent = s.getAttribute('data-title') || ('Slide ' + (k + 1));
+      b.addEventListener('click', function () { toggleOverview(false); show(k, false); });
+      ovgrid.appendChild(b);
+    });
+  }
+  function markHere() {
+    Array.prototype.forEach.call(ovgrid.children, function (b, k) {
+      b.classList.toggle('here', k === i);
+    });
+  }
+  function toggleOverview(on) {
+    var want = (typeof on === 'boolean') ? on : !overview.classList.contains('show');
+    overview.classList.toggle('show', want);
+    if (want) markHere();
+  }
+
+  /* ── Full screen ────────────────────────────────────────────────────── */
+  function toggleFs() {
+    if (!document.fullscreenElement) {
+      if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+    } else if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+
+  /* ── Keyboard ───────────────────────────────────────────────────────── */
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var k = e.key;
+
+    if (k === 'Escape') {
+      if (help.classList.contains('show'))     { help.classList.remove('show');     e.preventDefault(); return; }
+      if (overview.classList.contains('show')) { toggleOverview(false);             e.preventDefault(); return; }
+      if (black.classList.contains('show'))    { black.classList.remove('show');    e.preventDefault(); return; }
+      return;
+    }
+    /* Blackout swallows navigation on purpose: the screen is dark because the
+       room is meant to be looking at the teacher, and a stray arrow key must
+       not advance a slide nobody can see. */
+    if (black.classList.contains('show')) {
+      if (k === 'b' || k === 'B') { black.classList.remove('show'); e.preventDefault(); }
+      return;
+    }
+
+    switch (k) {
+      case 'ArrowRight': case 'ArrowDown': case ' ': case 'PageDown':
+        next(); e.preventDefault(); break;
+      case 'ArrowLeft': case 'ArrowUp': case 'Backspace': case 'PageUp':
+        prev(); e.preventDefault(); break;
+      case 'Home': show(0, false); e.preventDefault(); break;
+      case 'End':  show(slides.length - 1, true); e.preventDefault(); break;
+      case 'o': case 'O': toggleOverview(); e.preventDefault(); break;
+      case 'n': case 'N': notes.classList.toggle('show'); e.preventDefault(); break;
+      case 'b': case 'B': black.classList.add('show'); e.preventDefault(); break;
+      case 'f': case 'F': toggleFs(); e.preventDefault(); break;
+      case '?': help.classList.toggle('show'); e.preventDefault(); break;
+    }
+  });
+
+  /* ── Click and touch ────────────────────────────────────────────────── */
+  document.getElementById('viewport').addEventListener('click', function (e) {
+    if (overview.classList.contains('show') || help.classList.contains('show')) return;
+    (e.clientX < window.innerWidth * 0.24 ? prev : next)();
+  });
+  black.addEventListener('click', function () { black.classList.remove('show'); });
+  help.addEventListener('click', function () { help.classList.remove('show'); });
+
+  var tx = null;
+  document.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].clientX; }, { passive: true });
+  document.addEventListener('touchend', function (e) {
+    if (tx === null) return;
+    var dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 45) (dx < 0 ? next : prev)();
+    tx = null;
+  }, { passive: true });
+
+  document.getElementById('btn-prev').addEventListener('click', function (e) { e.stopPropagation(); prev(); });
+  document.getElementById('btn-next').addEventListener('click', function (e) { e.stopPropagation(); next(); });
+  document.getElementById('btn-ov').addEventListener('click',   function (e) { e.stopPropagation(); toggleOverview(); });
+  document.getElementById('btn-nt').addEventListener('click',   function (e) { e.stopPropagation(); notes.classList.toggle('show'); });
+  document.getElementById('btn-fs').addEventListener('click',   function (e) { e.stopPropagation(); toggleFs(); });
+  document.getElementById('btn-hp').addEventListener('click',   function (e) { e.stopPropagation(); help.classList.toggle('show'); });
+
+  /* ── Go ─────────────────────────────────────────────────────────────── */
+  slides.forEach(function (s, k) {
+    var mark = document.createElement('div');
+    mark.className = 'topicmark';
+    mark.textContent = 'Topic 1.3 · South & Southeast Asia';
+    var no = document.createElement('div');
+    no.className = 'slideno';
+    no.textContent = String(k + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+    if (!s.classList.contains('cover')) s.appendChild(mark);
+    s.appendChild(no);
+  });
+
+  buildOverview();
+  fit();
+  show(0, false);
+})();
+</script>
+</body>
+</html>
