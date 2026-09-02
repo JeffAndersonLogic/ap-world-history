@@ -218,7 +218,13 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 .divider h1{font-size:60px;max-width:20ch}
 .divider .lede{font-size:23px;line-height:1.5;color:var(--sandstone);max-width:62ch;margin:20px 0 0;font-style:italic}
 
-/* ── Slide furniture ────────────────────────────────────────────────────── */
+/* ── Slide furniture ────────────────────────────────────────────────────────
+   The topic label and slide number sit in the slide's bottom padding, which
+   makes that padding a reserved zone rather than slack to grow into. Content
+   that stays inside the slide can still print straight through them, and a
+   check written against the slide's own bounds calls that green: the Sufism
+   slide shipped its closing strip over the footer label that way. Measure a
+   content element against the PADDING box, not the slide box. */
 .slideno{
   position:absolute;right:34px;bottom:26px;
   font-family:var(--font-ui);font-weight:800;font-size:12px;letter-spacing:.16em;
@@ -431,12 +437,12 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
     <div>
       <ul class="points">
         <li><b>Sufi</b> orders spread Islam through mystical devotion, poetry, music, and personal guidance, not conquest alone.</li>
-        <li data-step="1">Sufi teachers <b>adapted to local customs</b>, which made Islam reachable for diverse populations across South Asia.</li>
-        <li data-step="2">The <b>Delhi Sultanate</b> governed a religiously mixed population using both Islamic law and practical accommodation.</li>
+        <li data-step="1">Sufi teachers <b>adapted to local customs</b>, which made Islam reachable across South Asia.</li>
+        <li data-step="2">The <b>Delhi Sultanate</b> ruled a mixed population with both Islamic law and practical accommodation.</li>
       </ul>
       <div class="sowhat" data-step="3">
         <p class="tag">Why it matters</p>
-        <p>Islam entered South Asia through <b>two different doors</b>: an army in the north, and a teacher, a poem, or a merchant almost everywhere else.</p>
+        <p>Islam entered South Asia through <b>two different doors</b>: an army in the north, a teacher or a merchant nearly everywhere else.</p>
       </div>
     </div>
     <figure>
