@@ -41,8 +41,8 @@ window.BEHISTORICAL_TEACHER_TOPICS['1.1'] = {
   pacing: [
     { module: 'Geography / Map Check', time: '5–8 min', note: 'Locate Song China, the Grand Canal, Korea, and Japan before content delivery.' },
     { module: 'First & 10', time: '8–10 min', note: 'Narrative hook. Let students react before pre-explaining the content.' },
-    { module: 'Lecture Cards', time: '18–22 min', note: 'Suggested order: Governance → Culture → Economy. Pause after governance for a quick check.' },
-    { module: 'Video Clips', time: '10–14 min', note: 'Use as reinforcement or independent review after lecture cards.' },
+    { module: 'Concept Cards', time: '18–22 min', note: 'Suggested order: Governance → Culture → Economy. Pause after governance for a quick check.' },
+    { module: 'Video Clips', time: '10–14 min', note: 'Use as reinforcement or independent review after concept cards.' },
     { module: 'Evidence Lab', time: '12–15 min', note: 'Students draft, coach through MagicSchool, then revise.' },
     { module: 'Primary Source', time: '10–12 min', note: 'Briefly model sourcing cues before students respond.' },
     { module: 'AP Checkpoint', time: '12–15 min', note: 'BeHistorical is the thinking space. Canvas is the final submission point.' },

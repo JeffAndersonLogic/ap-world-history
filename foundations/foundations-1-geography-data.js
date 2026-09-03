@@ -12,7 +12,7 @@ window.FOUNDATION_TOPIC = {
     ['0-10', 'Launch Question', 'Students write one sentence: Why did some human societies become farming civilizations while others kept hunting and gathering?'],
     ['10-25', 'Map Check', 'Use the Map Module to locate the river valleys, the Fertile Crescent, and the grasslands, and predict where agriculture would begin and why.'],
     ['25-40', 'First & 10', 'Read the Neolithic Revolution narrative. Students annotate one geographic advantage, one consequence of surplus, and one cost of the switch to farming.'],
-    ['40-65', 'Lecture Cards', 'Direct instruction: the Neolithic Revolution, why geography chose the river valleys, surplus and the characteristics of civilization, pastoralism, and geography as cause not destiny.'],
+    ['40-65', 'Concept Cards', 'Direct instruction: the Neolithic Revolution, why geography chose the river valleys, surplus and the characteristics of civilization, pastoralism, and geography as cause not destiny.'],
     ['65-80', 'AP Skill Builder', 'Students write a contextualization sentence using geography to explain why farming and civilization emerged where they did.'],
     ['80-90', 'Checkpoint', 'Exit ticket and confidence reflection.']
   ],
@@ -62,7 +62,7 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Choose one geographic feature from the map and explain how it helped decide whether the people living there became farmers, herders, or foragers.'
   },
 
-  // The optional push-further layer, rendered under the lecture cards by
+  // The optional push-further layer, rendered under the concept cards by
   // foundations-topic-renderer.js. The page is generated from
   // scripts/lib/deep-reading-content/foundations-1.js; never hand-edit it.
   // Omit this field entirely and the whole feature disappears from the page.

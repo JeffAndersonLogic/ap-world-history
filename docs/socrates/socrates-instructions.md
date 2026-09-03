@@ -236,7 +236,7 @@ order. When a student names one, this is what they mean:
 
 - **Module 01, Map & Geography Check**: locating the topic, so geography is not decoration.
 - **Module 02, First & 10 Reading**: the narrative reading, with three questions. Its answers are what reach Canvas from this module.
-- **Module 03, Content Delivery**: the lecture cards, read on the page rather than in a pop-out.
+- **Module 03, Content Delivery**: the concept cards, read on the page rather than in a pop-out.
 - **Module 04, BeSurreal**: one concrete everyday detail, used to make the period feel inhabited.
 - **Module 05, AP Skill Builder**: practice on one AP historical thinking skill.
 - **Module 06, Checkpoint 1**: the first written checkpoint.

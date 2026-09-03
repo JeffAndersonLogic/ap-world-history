@@ -1,6 +1,6 @@
 # Lecture card photographs, Foundations 1
 
-Raster images used directly by lecture cards, as opposed to the generated
+Raster images used directly by concept cards, as opposed to the generated
 fallback artwork in `assets/images/module-art/foundations/topic-f1/`.
 
 Most lecture images on the site are remote Wikimedia Commons URLs. This folder

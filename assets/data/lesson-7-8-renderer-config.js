@@ -171,7 +171,7 @@
   lesson.modules = [
     { id: 'map', label: 'Module 01', title: 'Map & Geography Check', desc: 'Connect geography to historical development.', img: lesson.map.url, render: function() { return renderMap(); } },
     { id: 'first10', label: 'Module 02', title: 'First & 10 Reading', desc: 'Narrative foundation for the topic.', img: lesson.map.url, render: function() { return renderFirst10(); } },
-    { id: 'contentdelivery', label: 'Module 03', title: 'Content Delivery', desc: 'Jump down to the main lecture-card section.', img: lesson.map.url, jump: '#lecture' },
+    { id: 'contentdelivery', label: 'Module 03', title: 'Content Delivery', desc: 'Jump down to the main concept-card section.', img: lesson.map.url, jump: '#lecture' },
     { id: 'besurreal', label: 'Module 04', title: 'BeSurreal', desc: 'A memorable detail about language and law.', img: lesson.map.url, render: function() { return renderBeSurreal(); } },
     { id: 'skill', label: 'Module 05', title: 'AP Skill Builder', desc: (lesson.skillBuilder && lesson.skillBuilder.label) || 'Causation practice.', img: lesson.map.url, render: function() { return renderSkill(); } },
     { id: 'checkpoint1', label: 'Module 06', title: 'Checkpoint 1', desc: (lesson.checkpoints && lesson.checkpoints[0] && lesson.checkpoints[0].cardDesc) || 'First checkpoint.', img: lesson.map.url, render: function() { return renderCheckpoint(lesson.checkpoints[0], 'checkpoint-one-response'); } },

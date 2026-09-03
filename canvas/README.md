@@ -26,7 +26,7 @@ site uses, and folds every asset inside: the three typefaces, the logo, the
 instructional map, all of the module artwork, and the First & 10 reading.
 
 So students get the real thing. The ten module cards still pop out into their
-modals. The lecture cards still open with arrow-key navigation. Draft boxes still
+modals. The concept cards still open with arrow-key navigation. Draft boxes still
 autosave, and the lesson's own **Gather All My Work** panel still assembles a
 labelled transcript for the Canvas assignment. The build fails loudly if the site
 sources move out from under it, rather than quietly shipping a broken packet.

@@ -425,7 +425,7 @@ if (L) {
   byId('lesson-title').textContent = `${L.meta.topic}, ${L.meta.title}`;
   byId('lesson-subtitle').textContent = L.meta.subtitle;
   byId('footer-topic-label').textContent = `${L.meta.topic}, ${L.meta.title} · Think Like a Historian.`;
-  byId('lecture-title').textContent = L.lecture.title || 'Lecture Cards';
+  byId('lecture-title').textContent = L.lecture.title || 'Concept Cards';
   byId('lecture-intro').textContent = L.lecture.intro || 'Use these cards from the main page. Each card opens a projection-friendly pop-up with enlarged content and a related visual.';
 
   byId('inline-targets').innerHTML = `
@@ -507,7 +507,7 @@ function renderCollegeBoardFramework() {
     </div>`;
 }
 
-// ── Lecture cards ─────────────────────────────────────────────────────────────
+// ── Concept cards ─────────────────────────────────────────────────────────────
 
 function renderLectureCards() {
   byId('main-lecture-grid').innerHTML = (L.lecture.segments || []).map((seg, i) => `
@@ -530,7 +530,7 @@ function renderLectureCards() {
 // only place that knows the card's shape, and guarded on its own id the way the
 // lecture controls are, or a re-render doubles the card.
 //
-// It sits AFTER the lecture cards on purpose. The cards are the path everyone
+// It sits AFTER the concept cards on purpose. The cards are the path everyone
 // walks; this is depth on top of them. Given the IEP and 504 load in this room,
 // a reading this long placed above the cards reads as required work, and the
 // wording below says optional twice for the same reason.
@@ -557,7 +557,7 @@ function renderDeepReading() {
 // Video clips are an optional resource, not part of the ten-module path and not
 // part of the lecture deck. Only some topics have one, so the block introduces
 // itself when it is there and disappears entirely when it is not: an empty
-// container used to leave a gap under the lecture cards on every topic without a
+// container used to leave a gap under the concept cards on every topic without a
 // clip, which reads as something failing to load.
 function renderVideoClips() {
   const host = byId('content-video-clips');
@@ -592,7 +592,7 @@ function defaultModules() {
   return [
     { id: 'map', label: 'Module 01', title: 'Map & Geography Check', desc: 'Connect geography to historical development.', img: moduleCardImg('map', L.map.url), render: renderMap },
     { id: 'first10', label: 'Module 02', title: 'First & 10 Reading', desc: 'Narrative foundation for the topic.', img: moduleCardImg('first10', L.map.url), render: renderFirst10 },
-    { id: 'contentdelivery', label: 'Module 03', title: 'Content Delivery', desc: 'Jump down to the main lecture-card section.', img: moduleCardImg('contentdelivery', L.map.url), jump: '#lecture' },
+    { id: 'contentdelivery', label: 'Module 03', title: 'Content Delivery', desc: 'Jump down to the main concept-card section.', img: moduleCardImg('contentdelivery', L.map.url), jump: '#lecture' },
     { id: 'besurreal', label: 'Module 04', title: 'BeSurreal', desc: 'A memorable everyday-life detail.', img: moduleCardImg('besurreal', L.map.url), render: renderBeSurreal },
     { id: 'skill', label: 'Module 05', title: 'AP Skill Builder', desc: (L.skillBuilder && L.skillBuilder.label) || 'Historical thinking practice.', img: moduleCardImg('skill', L.map.url), render: renderSkill },
     { id: 'checkpoint1', label: 'Module 06', title: 'Checkpoint 1', desc: (L.checkpoints && L.checkpoints[0] && L.checkpoints[0].cardDesc) || 'First checkpoint.', img: moduleCardImg('checkpoint1', L.map.url), render: () => renderCheckpoint(L.checkpoints[0], 'checkpoint-one-response') },

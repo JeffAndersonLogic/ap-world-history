@@ -36,7 +36,7 @@ Every full BeHistorical topic page should include:
 6. Map & Geography Check with Map Key
 7. First & 10 Reading
 8. Content Delivery jump card
-9. Lecture Cards with projection-friendly pop-outs
+9. Concept Cards with projection-friendly pop-outs
 10. Video Clips inside Content Delivery
 11. BeSurreal
 12. AP Skill Builder
@@ -120,7 +120,7 @@ Map modules should include:
 
 ## Lecture Card Rule
 
-Lecture cards stay on the main page.
+Concept cards stay on the main page.
 
 Each lecture card opens a projection-friendly pop-out with:
 
@@ -128,7 +128,7 @@ Each lecture card opens a projection-friendly pop-out with:
 - related historical image
 - caption/source link
 
-Images appear in the pop-out, not on the standard lecture cards.
+Images appear in the pop-out, not on the standard concept cards.
 
 ## First & 10 Rule
 

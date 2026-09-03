@@ -12,7 +12,7 @@ window.FOUNDATION_TOPIC = {
     ['0-10', 'Launch Question', 'Students write: If you had to describe the world at c.1200 to someone who knew nothing about it, what would you say about each of these six regions? Song China, Dar al-Islam, Africa, South/Southeast Asia, the Americas, Europe. One sentence each.'],
     ['10-25', 'Map Check', 'Use the Map Module: students place the six AP World regions on the world map, identify one fact from Foundations days 1–4 for each region, and locate the major trade networks connecting them.'],
     ['25-42', 'First & 10', 'Read the c.1200 snapshot narrative. Students identify which Foundations theme (geography, belief systems, states/power, trade networks) best explains each regional snapshot.'],
-    ['42-65', 'Lecture Cards', 'Five cards: world at c.1200 regional snapshots, the five AP historical thinking skills (named and modeled), contextualization in practice, causation and CCOT in practice, the launch into Topic 1.1.'],
+    ['42-65', 'Concept Cards', 'Five cards: world at c.1200 regional snapshots, the five AP historical thinking skills (named and modeled), contextualization in practice, causation and CCOT in practice, the launch into Topic 1.1.'],
     ['65-80', 'AP Skill Builder', 'Students write a full SAQ response, the first complete AP-style paragraph of the course, using evidence from at least two Foundations days.'],
     ['80-90', 'Final Checkpoint', 'Synthesis exit ticket, confidence reflection, and explicit transition to Topic 1.1.']
   ],

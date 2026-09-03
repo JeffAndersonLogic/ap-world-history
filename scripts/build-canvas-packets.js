@@ -342,7 +342,7 @@ document.querySelectorAll('img[data-bh-logo]').forEach(function(i){i.src=${JSON.
   renderer = must(renderer,
     '<br><a class="source-link" href="${T.map.sourceUrl}" target="_blank" rel="noopener">Open map source</a>',
     '', 'map source link');
-  // Same trap on the lecture cards. openLecture falls back to the image's own
+  // Same trap on the concept cards. openLecture falls back to the image's own
   // url when it has no sourceUrl, which for an inlined picture is a data URI.
   // Drop the link in that case; a Commons-hosted card keeps its real one.
   renderer = must(renderer,
@@ -605,7 +605,7 @@ function renderPrint(block) {
   </div>
   <div class="p-roadmap">
     <div class="p-step"><strong>1. Build Context</strong>Review the targets, examine the map, and read the First &amp; 10 narrative.</div>
-    <div class="p-step"><strong>2. Learn &amp; Practice</strong>Use the module cards, then move into the main lecture-card section.</div>
+    <div class="p-step"><strong>2. Learn &amp; Practice</strong>Use the module cards, then move into the main concept-card section.</div>
     <div class="p-step"><strong>3. Check Understanding</strong>Complete checkpoints with self-check and response tools.</div>
   </div>
 </section>`;

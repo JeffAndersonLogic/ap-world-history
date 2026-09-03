@@ -12,7 +12,7 @@ window.FOUNDATION_TOPIC = {
     ['0-10', 'Launch Question', 'One sentence: "What kind of historian do you want to be by May?" Save the response, it is portfolio entry #1.'],
     ['10-25', 'The Map of the Year', 'Use the Map module to preview the world at c.1200 and the nine units the year will cover.'],
     ['25-45', 'First & 10 Reading', 'Read "The Historian You Are About to Become." Meet the six AP skills and the portfolio promise.'],
-    ['45-65', 'Lecture Cards', 'Direct instruction: six skills, the 10-module class rhythm, the portfolio promise, and the trust compact.'],
+    ['45-65', 'Concept Cards', 'Direct instruction: six skills, the 10-module class rhythm, the portfolio promise, and the trust compact.'],
     ['65-80', 'AP Skill Builder', 'Try each of the six skills once with a short warm-up prompt.'],
     ['80-90', 'Baseline Checkpoint', 'Write your Historian\'s Pledge, the opening line of your portfolio.']
   ],
@@ -209,7 +209,7 @@ window.FOUNDATION_TOPIC = {
       bullets: [
         'Every lesson uses the **same 10 modules** in the same order. The rhythm is the pedagogy.',
         '**01 Map**, geographic context. **02 First & 10**, the day\'s narrative reading.',
-        '**03 Content Delivery**, direct instruction on the lecture cards. **04 BeSurreal**, one memorable everyday detail.',
+        '**03 Content Delivery**, direct instruction on the concept cards. **04 BeSurreal**, one memorable everyday detail.',
         '**05 Skill Builder**, one AP skill on today\'s content. **06 Checkpoint 1**, your thinking captured early.',
         '**07 Evidence Lab**, visuals as evidence, not decoration. **08 Primary Source** (AI Coach in Foundations), sourcing practice.',
         '**09 BeInTheRoom**, you decide in the moment. **10 Checkpoint 2**, synthesis across the whole lesson.'

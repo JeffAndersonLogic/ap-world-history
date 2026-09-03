@@ -358,18 +358,18 @@ const blockPlan=T.blockPlan||[
   ['0-10','Launch Question','Students answer the essential question in one sentence, then revise after the lesson.'],
   ['10-25','Map & Context','Use the map module to build geographic or regional context.'],
   ['25-45','First & 10','Read the narrative foundation and mark one claim, one evidence detail, and one confusion.'],
-  ['45-65','Lecture Cards','Use projection-friendly lecture cards for direct instruction and discussion.'],
+  ['45-65','Concept Cards','Use projection-friendly concept cards for direct instruction and discussion.'],
   ['65-80','AP Skill Builder','Practice the day\'s AP thinking skill with a short written response.'],
   ['80-90','Checkpoint','Complete the exit ticket and confidence reflection.']
 ];
 const _targets=byId('inline-targets')||byId('targets');if(_targets)_targets.innerHTML=`<div class="target-strip"><article class="foundation-card"><h3>Learning Targets</h3><ol class="target-list">${T.learningTargets.map(x=>`<li>${x}</li>`).join('')}</ol></article><article class="foundation-card"><h3>Success Criteria</h3><ol class="target-list">${T.successCriteria.map(x=>`<li>${x}</li>`).join('')}</ol></article></div>`;
-const _roadmap=byId('block-plan-roadmap');if(_roadmap)_roadmap.innerHTML=`<div class="roadmap-step"><strong>1. Build Context</strong>Review the targets, examine the map, and read the First &amp; 10 narrative.</div><div class="roadmap-step"><strong>2. Learn &amp; Practice</strong>Use the module cards, then move into the main lecture-card section.</div><div class="roadmap-step"><strong>3. Check Understanding</strong>Complete checkpoints with self-check and response tools.</div>`;
+const _roadmap=byId('block-plan-roadmap');if(_roadmap)_roadmap.innerHTML=`<div class="roadmap-step"><strong>1. Build Context</strong>Review the targets, examine the map, and read the First &amp; 10 narrative.</div><div class="roadmap-step"><strong>2. Learn &amp; Practice</strong>Use the module cards, then move into the main concept-card section.</div><div class="roadmap-step"><strong>3. Check Understanding</strong>Complete checkpoints with self-check and response tools.</div>`;
 const command=document.querySelector('#command .foundations-grid');
 if(command){command.insertAdjacentHTML('afterend',`<article class="foundation-card block-plan-card"><h3>90-Minute Block Plan</h3><table class="mini-table"><tr><th>Time</th><th>Move</th><th>Purpose</th></tr>${blockPlan.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</table></article>`);}
 const modules=[
   {id:'map',label:'Module 01',title:'Map & Geography Check',desc:T.map.desc||'Connect geography to the historical development of this topic.',img:T.map.url,render:renderMap},
   {id:'first10',label:'Module 02',title:'First & 10 Reading',desc:'Narrative foundation for today\'s Foundations topic.',img:T.heroImage,render:renderFirst10},
-  {id:'contentdelivery',label:'Module 03',title:'Content Delivery',desc:'Jump down to the main lecture-card section.',img:T.heroImage,jump:'#lecture'},
+  {id:'contentdelivery',label:'Module 03',title:'Content Delivery',desc:'Jump down to the main concept-card section.',img:T.heroImage,jump:'#lecture'},
   {id:'besurreal',label:'Module 04',title:'BeSurreal',desc:(beSurreal&&beSurreal.desc)||'A memorable everyday-life detail from this historical moment.',img:T.heroImage,render:renderBeSurreal},
   {id:'skill',label:'Module 05',title:T.skill.title,desc:T.skill.desc,img:T.heroImage,render:renderSkill},
   {id:'checkpoint1',label:'Module 06',title:'Checkpoint 1',desc:T.checkpoint.title||'First checkpoint for this Foundations topic.',img:T.heroImage,render:renderCheckpoint1},
@@ -410,7 +410,7 @@ if(_lectureClose&&!byId('lecture-to-modules')){
 // place that knows the shape, and guarded on its own id the way the lecture
 // controls are, or a re-render doubles the card.
 //
-// It sits AFTER the lecture cards on purpose. The cards are the path everyone
+// It sits AFTER the concept cards on purpose. The cards are the path everyone
 // walks; this is depth on top of them. Given the IEP and 504 load in this room,
 // a 1,200-words-per-empire reading placed above the cards reads as required
 // work, and the wording below says optional twice for the same reason.

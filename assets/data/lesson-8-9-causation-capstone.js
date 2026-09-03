@@ -202,7 +202,7 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "Unit 8 Synthesis: Cold War Effects Across Two Hemispheres",
-    intro: "Use these lecture cards to frame the four effect categories of KC-6.2.IV.C before completing the Hemispheric Effects Matrix and your LEQ thesis.",
+    intro: "Use these concept cards to frame the four effect categories of KC-6.2.IV.C before completing the Hemispheric Effects Matrix and your LEQ thesis.",
     segments: [
       {
         title: "The Four Effect Categories: Economic, Political, Social, Cultural",

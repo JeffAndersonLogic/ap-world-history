@@ -295,7 +295,7 @@
       id: 'contentdelivery',
       label: 'Module 02',
       title: 'Content Delivery',
-      desc: 'Jump to the lecture cards: four effect categories, Eastern Hemisphere patterns, Western Hemisphere patterns, and how to write the extent thesis.',
+      desc: 'Jump to the concept cards: four effect categories, Eastern Hemisphere patterns, Western Hemisphere patterns, and how to write the extent thesis.',
       img: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
       jump: '#lecture'
     },

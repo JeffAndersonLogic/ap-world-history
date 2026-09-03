@@ -3,7 +3,7 @@
 //
 // wire-foundations-1-lecture-art.js
 //
-// Points Foundations 1's first two lecture cards at the local photographs in
+// Points Foundations 1's first two concept cards at the local photographs in
 // assets/images/lecture/foundations-1/, once those files exist.
 //
 // Card 1 has no picture at all today and falls back to generated brand artwork.

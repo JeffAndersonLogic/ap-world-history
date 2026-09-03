@@ -50,7 +50,7 @@ const LIBRARY = {
   // now that all ten volumes are complete. renderLibrary derives that from the
   // contents rather than taking it on trust, so this text cannot outlive the
   // gaps it explains and does not have to be remembered when one reopens.
-  note: `Volumes are added as they are written. A topic listed as not written yet has its First &amp; 10 reading and its lecture cards on the lesson page already; what it does not have yet is a chapter here.`
+  note: `Volumes are added as they are written. A topic listed as not written yet has its First &amp; 10 reading and its concept cards on the lesson page already; what it does not have yet is a chapter here.`
 };
 
 const VOLUMES = [

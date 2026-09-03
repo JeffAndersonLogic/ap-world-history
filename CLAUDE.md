@@ -252,7 +252,7 @@ checked against a contract it was never meant to satisfy. Hence
 
 **Both renderers inject the card and hide the feature entirely when absent**, the
 same way the video block does, so the topics without one show no empty frame. It
-sits *after* the lecture cards on purpose: the cards are the path everyone walks
+sits *after* the concept cards on purpose: the cards are the path everyone walks
 and this is depth on top of them. A reading this long placed above the cards reads
 as required work rather than as an offer, which is why it sits below them and why
 the card says optional twice. `renderDeepReading()` in the unit renderer mirrors
@@ -845,12 +845,12 @@ Videos are an **optional resource**, not part of the ten-module path and not par
 of the lecture deck. Only 27 of the 71 unit topics have a clip at all (units 1, 2,
 8 and 9, plus 3.1 and 3.4); most Foundations topics have two, and Foundations 2
 has seven, one per belief system it teaches. That coverage is why they are not
-folded into the lecture cards: it would leave 44 topics' cards with an empty
+folded into the concept cards: it would leave 44 topics' cards with an empty
 slot, and nothing in the data maps a clip to a particular card.
 
 - The block **introduces itself** when clips exist and **hides entirely** when
   they do not. An empty `#content-video-clips` used to leave a gap under the
-  lecture cards on 44 topics, which reads as something failing to load.
+  concept cards on 44 topics, which reads as something failing to load.
 - Keep the container in the shell either way. `validate.js` requires the
   `content-video-clips` id; the renderer sets `hidden` on it.
 - A clip card is headed by **its title**. It used to be headed "Video Clip" with
@@ -1338,7 +1338,7 @@ Every lesson page (Unit and Foundations) **must** display the same three-card Cl
 ```html
 <div class="lesson-roadmap">
   <div class="roadmap-step"><strong>1. Build Context</strong>Review the targets, examine the map, and read the First &amp; 10 narrative.</div>
-  <div class="roadmap-step"><strong>2. Learn &amp; Practice</strong>Use the module cards, then move into the main lecture-card section.</div>
+  <div class="roadmap-step"><strong>2. Learn &amp; Practice</strong>Use the module cards, then move into the main concept-card section.</div>
   <div class="roadmap-step"><strong>3. Check Understanding</strong>Complete checkpoints with self-check and response tools.</div>
 </div>
 ```

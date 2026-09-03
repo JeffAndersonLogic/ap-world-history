@@ -12,7 +12,7 @@ window.FOUNDATION_TOPIC = {
     ['0-10', 'Launch Question', 'Students write: What besides goods could travel along a trade route? List as many things as you can in 60 seconds.'],
     ['10-25', 'Map Check', 'Use the Map Module: students identify the three major Afro-Eurasian trade systems and one port city or oasis on each route.'],
     ['25-42', 'First & 10', 'Read the Battle of Talas narrative hook. Students identify one technology transfer, one mechanism of diffusion, and one unintended consequence.'],
-    ['42-65', 'Lecture Cards', 'Six cards, built on Key Concept 2.3: why empires raised the volume of trade, the two land routes, the two sea lanes, the technologies (saddle, stirrup, yoke, lateen sail) that made distance cheap, the crops, irrigation, and disease that moved without being sold, and how Buddhism, Christianity, and Hinduism were transformed as they spread.'],
+    ['42-65', 'Concept Cards', 'Six cards, built on Key Concept 2.3: why empires raised the volume of trade, the two land routes, the two sea lanes, the technologies (saddle, stirrup, yoke, lateen sail) that made distance cheap, the crops, irrigation, and disease that moved without being sold, and how Buddhism, Christianity, and Hinduism were transformed as they spread.'],
     ['65-80', 'AP Skill Builder', 'Students write a complexity paragraph explaining how one trade network caused simultaneous changes across multiple regions.'],
     ['80-90', 'Checkpoint', 'Exit ticket and confidence reflection.']
   ],
@@ -61,7 +61,7 @@ window.FOUNDATION_TOPIC = {
     prompt: 'Choose one trade network, Silk Roads, Indian Ocean, trans-Saharan, or Mediterranean. Identify one chokepoint or junction city on that network and explain why its geographic position made it economically or politically powerful.'
   },
 
-  // The optional push-further layer, rendered under the lecture cards by
+  // The optional push-further layer, rendered under the concept cards by
   // foundations-topic-renderer.js. The page is generated from
   // scripts/lib/deep-reading-content/foundations-4.js; never hand-edit it.
   // Omit this field entirely and the whole feature disappears from the page.

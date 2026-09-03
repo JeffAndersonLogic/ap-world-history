@@ -12,7 +12,7 @@ window.FOUNDATION_TOPIC = {
     ['0-10', 'Launch Question', 'Students write: What does a belief system actually do for a society, beyond telling people what to believe?'],
     ['10-25', 'Map Check', 'Use the Map Module: students trace how Buddhism spread as a model for how all six belief systems diffused, identifying routes and mechanisms. The map colour-codes Theravada, Mahayana, and Vajrayana, so push students to read the arrows rather than the labels, and to notice that the dates mark establishment, not dominance.'],
     ['25-42', 'First & 10', 'Read the survey of the six belief systems. Students identify the core idea of each and one example of syncretism.'],
-    ['42-65', 'Lecture Cards', 'Eight cards: Confucianism in two (the five relationships, then the civil service exam), then Daoism, Hinduism, Buddhism, Judaism, Christianity, and Islam, core ideas, institutional roles, and how each spread and adapted.'],
+    ['42-65', 'Concept Cards', 'Eight cards: Confucianism in two (the five relationships, then the civil service exam), then Daoism, Hinduism, Buddhism, Judaism, Christianity, and Islam, core ideas, institutional roles, and how each spread and adapted.'],
     ['65-80', 'AP Skill Builder', 'Students write a comparison paragraph: how did two of the six belief systems function in their societies?'],
     ['80-90', 'Checkpoint', 'SAQ-style exit ticket and confidence reflection.']
   ],

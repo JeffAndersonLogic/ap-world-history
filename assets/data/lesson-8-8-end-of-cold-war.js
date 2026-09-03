@@ -94,7 +94,7 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "End of the Cold War",
-    intro: "KC-6.2.IV.E identifies three causal strands that led to the end of the Cold War. The AP skill is not to list them but to explain how each one operated, what it produced, why it mattered, and how the three strands compounded each other. Use these lecture cards to build a causal argument, not just a chronology.",
+    intro: "KC-6.2.IV.E identifies three causal strands that led to the end of the Cold War. The AP skill is not to list them but to explain how each one operated, what it produced, why it mattered, and how the three strands compounded each other. Use these concept cards to build a causal argument, not just a chronology.",
     videos: [
       {
         title: "The END of the COLD WAR [AP World History Review, Unit 8 Topic 8]",

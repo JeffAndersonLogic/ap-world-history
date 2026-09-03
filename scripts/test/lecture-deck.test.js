@@ -25,7 +25,7 @@
  *     focus on a real card rather than at the top of the document.
  *   - The video block, which introduces itself when a topic has clips and
  *     disappears when it does not. 44 of the 71 unit topics have no clip, and an
- *     empty container left a gap under the lecture cards that reads as something
+ *     empty container left a gap under the concept cards that reads as something
  *     failing to load.
  *
  * Three pages, chosen for what differs: a Foundations topic (six shells, its own

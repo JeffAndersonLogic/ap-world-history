@@ -205,7 +205,7 @@ window.BEHISTORICAL_LESSON = {
 
   evidenceLab: {
     title: "Evidence Lab: Causes and Consequences Across Cases",
-    task: "Choose one mass atrocity from the illustrative examples and identify the specific evidence, the regime in power, the ideology, the targeted population, and the consequences, that supports the Key Concept's claim that extremist groups in power led to the attempted destruction of specific populations. Use evidence from the lecture cards.",
+    task: "Choose one mass atrocity from the illustrative examples and identify the specific evidence, the regime in power, the ideology, the targeted population, and the consequences, that supports the Key Concept's claim that extremist groups in power led to the attempted destruction of specific populations. Use evidence from the concept cards.",
     prompt: "The [case] illustrates the Key Concept because... The extremist group in power was... The targeted population was... The specific cause was... The consequence was... This is evidence that..."
   },
 
@@ -215,7 +215,7 @@ window.BEHISTORICAL_LESSON = {
     text: "In the present Convention, genocide means any of the following acts committed with intent to destroy, in whole or in part, a national, ethnical, racial or religious group, as such: (a) Killing members of the group; (b) Causing serious bodily or mental harm to members of the group; (c) Deliberately inflicting on the group conditions of life calculated to bring about its physical destruction in whole or in part; (d) Imposing measures intended to prevent births within the group; (e) Forcibly transferring children of the group to another group.",
     questions: [
       "The Convention defines genocide by intent, 'committed with intent to destroy, in whole or in part.' Why does the definition focus on intent rather than on the number of victims? How does this legal definition help distinguish genocide from other forms of mass violence?",
-      "Apply Article II to one of the illustrative examples (the Holocaust, the Armenian Genocide, the Holodomor, Cambodia, or Rwanda). Which specific clause, (a) through (e), most directly describes what happened in your chosen case? Use evidence from the lecture cards.",
+      "Apply Article II to one of the illustrative examples (the Holocaust, the Armenian Genocide, the Holodomor, Cambodia, or Rwanda). Which specific clause, (a) through (e), most directly describes what happened in your chosen case? Use evidence from the concept cards.",
       "The Genocide Convention was adopted in 1948, after the Holocaust. But the Armenian Genocide occurred decades earlier, and the Rwandan Genocide occurred decades later. What does the gap between the Convention's adoption and the continued occurrence of genocide suggest about the relationship between international law and the prevention of mass atrocities?"
     ]
   }

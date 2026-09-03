@@ -280,7 +280,7 @@ window.renderCausationMatrix = function () {
       id: 'contentdelivery',
       label: 'Module 03',
       title: 'Content Delivery',
-      desc: 'Jump to the lecture cards, six synthesis and skill cards for Unit 7.',
+      desc: 'Jump to the concept cards, six synthesis and skill cards for Unit 7.',
       img: si.contentDelivery,
       jump: '#lecture'
     },

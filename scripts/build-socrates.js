@@ -90,7 +90,7 @@ function moduleTable() {
 const MODULE_PURPOSE = {
   map: 'locating the topic, so geography is not decoration',
   first10: 'the narrative reading, with three questions. Its answers are what reach Canvas from this module',
-  contentdelivery: 'the lecture cards, read on the page rather than in a pop-out',
+  contentdelivery: 'the concept cards, read on the page rather than in a pop-out',
   besurreal: 'one concrete everyday detail, used to make the period feel inhabited',
   skill: 'practice on one AP historical thinking skill',
   checkpoint1: 'the first written checkpoint',

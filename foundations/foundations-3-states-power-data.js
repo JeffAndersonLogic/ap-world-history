@@ -12,7 +12,7 @@ window.FOUNDATION_TOPIC = {
     ['0-10', 'Launch Question', 'Students write: What problem is a state trying to solve? List as many specific problems as you can in 60 seconds.'],
     ['10-25', 'Map Check', 'Use the Map Module: locate Rome, Han China, and Persia (Parthia) c.200 CE and name one tool of rule each classical state used.'],
     ['25-42', 'First & 10', 'Read the four-civilization survey. Students identify how Persia, Han China, Greece, and Rome each organized power and one limit of each.'],
-    ['42-65', 'Lecture Cards', 'Five cards: Achaemenid Persia, Han China, classical Greece, Rome, and a comparison/resistance synthesis.'],
+    ['42-65', 'Concept Cards', 'Five cards: Achaemenid Persia, Han China, classical Greece, Rome, and a comparison/resistance synthesis.'],
     ['65-80', 'AP Skill Builder', 'Students write a comparison paragraph on how two of the four classical states organized power.'],
     ['80-90', 'Checkpoint', 'SAQ-style exit ticket and confidence reflection.']
   ],
@@ -99,7 +99,7 @@ window.FOUNDATION_TOPIC = {
     ]
   },
 
-  // The optional push-further layer, rendered under the lecture cards by
+  // The optional push-further layer, rendered under the concept cards by
   // foundations-topic-renderer.js. The page is generated from
   // scripts/lib/deep-reading-content/foundations-3.js; never hand-edit it.
   // Omit this field entirely and the whole feature disappears from the page.

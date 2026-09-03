@@ -272,7 +272,7 @@ function jsonAssignmentValue(value) {
 
 // Media contract for Unit 6.
 //
-// Every topic used to point all ten module slots, all three lecture cards, and
+// Every topic used to point all ten module slots, all three concept cards, and
 // all three evidence cards at one picture, which meant a photograph of a rubber
 // tapper captioned as a map of Egyptian cotton. Now each topic declares:
 //   map      the Map & Geography image (a local instructional map, or a real map)

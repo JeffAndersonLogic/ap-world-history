@@ -36,7 +36,7 @@ one analytical category**. A student cannot infer a mechanism from a name, and
 950 words has no room to supply one.
 
 A deep reading is the optional push-further layer that supplies it. It is linked
-from the topic's lesson page under the lecture cards, and it is also compiled
+from the topic's lesson page under the concept cards, and it is also compiled
 into a course eBook. Same source file, two surfaces.
 
 ### The content model, which is the thing to respect most
@@ -421,7 +421,7 @@ Reading questions:
 - **Q2 (Continuity & Change).** Choose one syncretism example (Buddhism blending with Daoism in China, Islam in Mali, Christianity in Ethiopia). Identify one thing that continued and one that changed.
 - **Q3 (Argumentation).** Evaluate: "Before c.1200, the major belief systems shaped how ordinary people actually lived more than kings and armies did."
 
-Lecture cards cover eight traditions, note that **Judaism is taught** even though the subtitle says six: Confucianism (two cards, the Five Relationships and then philosophy becoming the state), Daoism, Hinduism, Buddhism, Judaism, Christianity, Islam.
+Concept cards cover eight traditions, note that **Judaism is taught** even though the subtitle says six: Confucianism (two cards, the Five Relationships and then philosophy becoming the state), Daoism, Hinduism, Buddhism, Judaism, Christianity, Islam.
 
 Notes for the writer. This is the largest chapter. Give every tradition the same
 skeleton: core idea, how it functioned as an institution, how it spread or why it

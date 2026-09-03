@@ -99,7 +99,7 @@ window.BEHISTORICAL_LESSON = {
   },
   lecture: {
     title: 'Lecture: States, Faith, and Trade',
-    intro: 'Use these five lecture cards to follow how South and Southeast Asian states used belief systems, trade networks, and geography to build and maintain power c. 1200–1450.',
+    intro: 'Use these five concept cards to follow how South and Southeast Asian states used belief systems, trade networks, and geography to build and maintain power c. 1200–1450.',
     segments: [
       {
         title: 'Belief Systems as Social Forces: Hinduism, Buddhism, Islam',
