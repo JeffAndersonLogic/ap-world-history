@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeHistorical | Student Deck 1.4</title>
+<style>
+html,body{margin:0;height:100%;overflow:hidden;background:#0d0e0f}
+iframe{border:0;width:100%;height:100%;display:block;background:#0d0e0f}
+</style>
+</head>
+<body>
+<iframe id="deck" src="deck-topic-1-4-americas-student.html" title="Topic 1.4 Student Slide Deck" allowfullscreen></iframe>
+<script>
+(function(){
+  'use strict';
+  var frame = document.getElementById('deck');
+  var imageUrl = 'https://commons.wikimedia.org/wiki/Special:FilePath/Templo%20Mayor%20(reconstruction)%20Tenochtitl%C3%A1n%2C%201375-1520.png';
+
+  function patchSlideSeven(){
+    var doc;
+    try { doc = frame.contentDocument || frame.contentWindow.document; }
+    catch (e) { return false; }
+    if (!doc) return false;
+    var slides = doc.querySelectorAll('.slide');
+    var slide = slides[6];
+    if (!slide) return false;
+    var img = slide.querySelector('.hero-wrap img');
+    if (!img) return false;
+    img.src = imageUrl;
+    img.alt = 'Rendering of the Templo Mayor, the twin-temple ceremonial center of Tenochtitlan';
+    var cardTag = slide.querySelector('.hero-card .tag');
+    if (cardTag) cardTag.textContent = 'Templo Mayor';
+    var cardText = slide.querySelector('.hero-card p:not(.tag)');
+    if (cardText) cardText.innerHTML = 'A rendering of the <b>Templo Mayor</b>, the twin-temple ceremonial center at the heart of Tenochtitlan.';
+    return true;
+  }
+
+  frame.addEventListener('load', function(){
+    patchSlideSeven();
+    var tries = 0;
+    var timer = setInterval(function(){
+      tries += 1;
+      if (patchSlideSeven() || tries > 20) clearInterval(timer);
+    }, 150);
+  });
+})();
+</script>
+</body>
+</html>
