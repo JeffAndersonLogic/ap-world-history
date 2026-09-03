@@ -105,7 +105,7 @@ function main() {
   const kb = f => Math.round(fs.statSync(path.join(DIR, f)).size / 1024);
   CARDS.forEach(c => console.log(`  ${c.file.padEnd(30)} ${kb(c.file)} KB`));
   console.log(`\nwired ${wired}, already wired ${already}`);
-  console.log('Next: node scripts/validate.js && node scripts/build-canvas-packets.js');
+  console.log('Next: node scripts/validate.js');
 }
 
 main();

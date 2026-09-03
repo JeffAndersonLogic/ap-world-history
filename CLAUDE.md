@@ -1345,6 +1345,13 @@ Anderson's classroom.
 > it does not use either renderer, and it answers to a different course's gate. Do
 > not rebuild it here.
 
+> **Canvas Packets retired 2026-09-03,** on Jeff's word that they are no longer
+> necessary. `canvas/` and its two generators moved to
+> `archive/canvas-packets/`, which carries the provenance and, separately, the
+> pre-existing bug that had already made the generator unusable (it expected a
+> First & 10 capture wrapper shape that stopped existing on 2026-08-31). Do not
+> rebuild this here without first reading that README.
+
 Standard unit lessons are thin HTML shells plus a topic data file, a renderer-config file, and `assets/js/behistorical-topic-renderer-v1.js`. Foundations uses `foundations/foundations-topic-renderer.js`. First & 10 readings are standalone pages embedded through capture wrappers. BeInTheRoom simulations live under `beintheroom/unit-N/` and must pass the theme-alignment gate in `docs/beintheroom-scenario-blueprint.md` before they are linked.
 
 ## 10-Module Structure Standard

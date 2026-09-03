@@ -26,5 +26,5 @@ lecture card's `caption`.
   file renamed `.jpg` fails the build.
 - Keep any attribution that is printed inside the image itself, and repeat the
   credit in the card's `caption` so it survives when the picture does not load.
-- After adding or replacing a file here, run `node scripts/validate.js` and then
-  `node scripts/build-canvas-packets.js` so the Canvas packets pick up the change.
+- After adding or replacing a file here, run `node scripts/validate.js`.
+  (Canvas packets were retired 2026-09-03; see `archive/canvas-packets/README.md`.)
