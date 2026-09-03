@@ -68,16 +68,9 @@
   (function () {
     'use strict';
 
-    /* ---------------------------------------------------------------
-       Data, with a shape that survives a half finished edit. Any
-       missing list becomes an empty list rather than a broken board.
-       --------------------------------------------------------------- */
     var RAW = window.BEHISTORICAL_ANNOUNCEMENTS || null;
     var DATA = {
       settings: (RAW && RAW.settings) || {},
-      // Generated from scripts/lib/cohorts.js. This object is a whitelist, so
-      // a key added to announcements.js and not added here arrives as
-      // undefined and the feature reading it silently does nothing.
       cohorts: (RAW && RAW.cohorts) || {},
       days: (RAW && Array.isArray(RAW.days)) ? RAW.days : [],
       assessments: (RAW && Array.isArray(RAW.assessments)) ? RAW.assessments : [],
@@ -89,10 +82,6 @@
     var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
                   'July', 'August', 'September', 'October', 'November', 'December'];
 
-    /* ---------------------------------------------------------------
-       Dates. Everything is anchored at local noon so a timezone offset
-       can never push a due date onto the wrong calendar day.
-       --------------------------------------------------------------- */
     function parseYMD(value) {
       var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value || '').trim());
       if (!m) return null;
@@ -113,10 +102,6 @@
       return Math.round((date - todayNoon()) / 86400000);
     }
 
-    /* ---------------------------------------------------------------
-       Small DOM helpers. Text always goes in through textContent, so a
-       stray angle bracket in an announcement stays an angle bracket.
-       --------------------------------------------------------------- */
     function el(tag, className, text) {
       var node = document.createElement(tag);
       if (className) node.className = className;
@@ -133,21 +118,6 @@
       return el('section', 'slide' + (extraClass ? ' ' + extraClass : ''));
     }
 
-    /* ---------------------------------------------------------------
-       Slide builders
-       --------------------------------------------------------------- */
-    /* ---------------------------------------------------------------
-       Green and Silver
-
-       Colour is never the only signal. The seal carries the colour, the
-       letter, and a shape: Green is a filled disc, Silver an open ring.
-       Any one of the three survives a washed-out projector, a grayscale
-       print, or a reader who cannot separate the two hues.
-
-       It sits in the masthead rather than only on the title card, so a
-       slide seen four minutes into the loop still answers which room is
-       in front of you.
-       --------------------------------------------------------------- */
     function cohortOf(day) {
       var key = day && has(day.cohort) ? day.cohort.trim().toLowerCase() : '';
       var table = DATA.cohorts || {};
@@ -182,7 +152,6 @@
       var mark = el('div', 'wordmark-big');
       mark.innerHTML =
         'Be<span class="hero-h">H</span>ist<span class="globe-o" role="img" aria-label="o as a globe">o</span>rical';
-      // The globe O is a decorative letter, keep it out of the accessible name.
       mark.classList.add('logo-title');
       s.appendChild(mark);
 
@@ -248,8 +217,6 @@
       return s;
     }
 
-    // Targets and criteria accept either a plain string or { text, label }.
-    // The generated file uses the object form to carry the AP theme.
     function normalizeEntries(list) {
       return (list || []).map(function (entry) {
         if (has(entry)) return { text: entry.trim(), label: '' };
@@ -260,9 +227,6 @@
       }).filter(Boolean);
     }
 
-    // These slides carry curriculum prose, which varies from one line to a
-    // paragraph, so the type steps down as the slide fills rather than
-    // letting a long day overflow the screen.
     function densityClass(entries) {
       var chars = entries.reduce(function (sum, e) { return sum + e.text.length; }, 0);
       if (chars > 430 || entries.length > 4) return ' is-tight';
@@ -270,22 +234,19 @@
       return '';
     }
 
-    // Homework is a list of entries. An entry is one line of text, and a
-    // reading entry also carries `items`, the sections, which print as their
-    // own bullets rather than being packed into the sentence.
-    //
-    // Bulleted, not numbered. The count still matters, so it moved to the
-    // eyebrow ("Tonight, two things") where it is read once instead of being
-    // re-derived from a column of digits at the back of the room.
     var COUNT_WORDS = ['', 'one thing', 'two things', 'three things', 'four things'];
+
+    function cleanHomeworkText(text) {
+      return String(text || '').trim().replace(/\s*\(ebook\/[^)]+\.html\)(?=\.)/i, '');
+    }
 
     function normalizeHomework(day) {
       var raw = Array.isArray(day.homework) ? day.homework : [day.homework];
       return raw.map(function (entry) {
-        if (has(entry)) return { text: entry.trim(), due: '', items: [], note: '' };
+        if (has(entry)) return { text: cleanHomeworkText(entry), due: '', items: [], note: '' };
         if (entry && has(entry.text)) {
           return {
-            text: entry.text.trim(),
+            text: cleanHomeworkText(entry.text),
             due: has(entry.due) ? entry.due.trim() : '',
             note: has(entry.note) ? entry.note.trim() : '',
             items: Array.isArray(entry.items) ? entry.items.filter(function (b) {
@@ -311,7 +272,7 @@
       var dense = (items.length + sections) > 4;
 
       var list = el('ul', 'homework-list' + (dense ? ' is-dense' : ''));
-      items.forEach(function (entry, i) {
+      items.forEach(function (entry) {
         var item = el('li', 'homework-item');
         var body = el('div', 'homework-body');
         body.appendChild(el('span', 'homework-text', entry.text));
@@ -332,10 +293,6 @@
 
         if (has(entry.note)) body.appendChild(el('span', 'homework-note', entry.note));
 
-        // A per-item due date only prints when it differs from the night's,
-        // which is what an override in the schedule means. Everything sharing
-        // the same date is covered by the single chip under the list; a chip
-        // repeated on every line stops being read after the first one.
         if (has(entry.due) && entry.due !== day.homeworkDue) {
           body.appendChild(el('span', 'chip solid homework-due', 'Due ' + entry.due));
         }
@@ -352,8 +309,6 @@
       return s;
     }
 
-    // Learning targets are a set, not a sequence, so they carry a rule rather
-    // than the numbering the agenda uses.
     function buildTargetsSlide(day) {
       var targets = normalizeEntries(day.learningTargets);
       if (!targets.length) return null;
@@ -373,8 +328,6 @@
       return s;
     }
 
-    // Success criteria are things a student ticks off, so they get checkboxes.
-    // The mark is drawn in CSS, no glyph and no font dependency.
     function buildCriteriaSlide(day) {
       var criteria = normalizeEntries(day.successCriteria);
       if (!criteria.length) return null;
@@ -397,8 +350,6 @@
       return s;
     }
 
-    // A topic taught across two block days is one row, not two. 'Aug 10 & 11'
-    // reads as one thing coming up, which is what it is.
     function formatDateGroup(dates) {
       if (dates.length === 1) {
         return MONTHS[dates[0].getMonth()].slice(0, 3) + ' ' + dates[0].getDate();
@@ -413,8 +364,6 @@
       }).join(' & ');
     }
 
-    // Upcoming topics build themselves out of the day entries already filed,
-    // so a week typed on Sunday populates this slide with no extra work.
     function buildAheadSlide(days) {
       var s = slide();
       s.appendChild(eyebrow('Looking Ahead'));
@@ -458,8 +407,6 @@
 
       var list = el('ul', 'due-list');
       items.forEach(function (entry) {
-        // An assessment you have announced but not dated still belongs on the
-        // board, so students know it is coming.
         var count = entry.tbd
           ? { text: 'Date TBD', style: 'quiet', row: '' }
           : countdownFor(entry.days);
@@ -521,9 +468,6 @@
       return s;
     }
 
-    /* ---------------------------------------------------------------
-       Assemble the deck for whatever day it is right now.
-       --------------------------------------------------------------- */
     function buildDeck() {
       var slides = [];
       var now = new Date();
@@ -543,9 +487,6 @@
       }
 
       paintCohort(day);
-
-      // Today first: the topic, then what you are learning, then how you know
-      // you have learned it, then what leaves the room with you.
       slides.push(buildTitleCard(day, now));
 
       if (day) {
@@ -576,17 +517,6 @@
           'assets/data/announcements.js'));
       }
 
-      // Then what is ahead: the next topics, then the next assessments.
-      //
-      // Filtered to the cohort sitting in the room. Every topic is taught
-      // twice, on two dates, and the other cohort's date is not this room's
-      // class: an unfiltered list showed a Green class "Dar al-Islam, Monday
-      // August 31" on the afternoon they had already had it, because Monday
-      // is Silver's. A student reading their own next class off the board has
-      // to be reading their own calendar.
-      //
-      // With no cohort on today's entry there is nothing to filter by, so the
-      // list stays as it was rather than emptying.
       var todaysCohort = day && has(day.cohort) ? day.cohort.trim().toLowerCase() : '';
       var future = DATA.days
         .map(function (entry) {
@@ -599,7 +529,6 @@
         .filter(function (entry) { return entry && entry.days > 0; })
         .sort(function (a, b) { return a.date - b.date; });
 
-      // Collapse a topic that runs across consecutive class days into one row.
       var ahead = [];
       future.forEach(function (entry) {
         var last = ahead[ahead.length - 1];
@@ -650,18 +579,6 @@
       return slides;
     }
 
-    /* ---------------------------------------------------------------
-       Player
-       --------------------------------------------------------------- */
-    // Two ways to read the same board.
-    //
-    //   Board mode  a projector kiosk: one panel at a time, auto advancing.
-    //   Page mode   a phone or a laptop: every panel stacked on one
-    //               scrollable page, no timer, nothing to wait for.
-    //
-    // The stylesheet does the layout half of this at the same breakpoint.
-    // Here it only stops the clock, so a student reading on a phone is never
-    // scrolled out from under.
     var PAGE_MODE = window.matchMedia('(max-width: 900px)');
     function isPageMode() { return PAGE_MODE.matches; }
 
@@ -720,7 +637,6 @@
       var dt = stamp - lastFrame;
       lastFrame = stamp;
 
-      // Page mode shows everything at once, so there is nothing to advance.
       if (isPageMode()) {
         elapsed = 0;
         requestAnimationFrame(tick);
@@ -741,10 +657,6 @@
       board.classList.toggle('is-paused', paused);
     }
 
-    /* ---------------------------------------------------------------
-       Masthead clock, and the date rollover that lets the board run
-       overnight without anyone touching it.
-       --------------------------------------------------------------- */
     var clockTime = document.getElementById('clock-time');
     var clockDate = document.getElementById('clock-date');
 
@@ -778,9 +690,6 @@
       document.getElementById('masthead-course').textContent = DATA.settings.courseName;
     }
 
-    /* ---------------------------------------------------------------
-       Keyboard, help card, and the idle cursor hide
-       --------------------------------------------------------------- */
     var overlay = document.getElementById('help-overlay');
     var hint = document.getElementById('help-hint');
 
@@ -791,7 +700,6 @@
     }
 
     document.addEventListener('keydown', function (event) {
-      // In page mode the arrows belong to the scrollbar, not to us.
       if (isPageMode()) return;
       switch (event.key) {
         case ' ': case 'Spacebar':
@@ -818,9 +726,6 @@
 
     overlay.addEventListener('click', function () { toggleHelp(false); });
 
-    // The controls hint is for whoever is driving the board, so it appears
-    // only once someone touches the mouse or a key. A class watching the
-    // screen never sees it, and it is meaningless in page mode anyway.
     var idleTimer = null;
     function wake() {
       if (isPageMode()) return;
@@ -836,11 +741,6 @@
       document.addEventListener(name, wake, { passive: true });
     });
 
-    /* ---------------------------------------------------------------
-       Start
-       --------------------------------------------------------------- */
-    // Rotating a phone, or dragging a window across the breakpoint, swaps the
-    // two readings cleanly rather than leaving a half-played slideshow.
     var onModeChange = function () {
       document.body.classList.remove('is-idle');
       hint.classList.add('is-hidden');
