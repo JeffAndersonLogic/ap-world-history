@@ -348,6 +348,21 @@ table.matrix td .pct{display:block;font-size:10.5px;font-weight:600;opacity:.85}
 .norming-item{border-top:1px solid var(--gunmetal-gray);padding-top:14px;margin-top:14px}
 .norming-item:first-child{border-top:0;padding-top:0;margin-top:0}
 
+/* ── Fast read ──────────────────────────────────────────────────────────────
+   The keyboard-driven one-card-at-a-time norming flow. Reuses .response-box,
+   .prompt-box and .fact from the regular norming dialog on purpose, so a card
+   here and a card there are visually the same object, just presented one at a
+   time instead of stacked. */
+.tagbtn{display:inline-flex;align-items:center;gap:6px}
+.tagbtn kbd{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:10px;
+  background:rgba(0,0,0,.35);border:1px solid var(--gunmetal-gray);border-radius:4px;padding:1px 5px;color:var(--text-primary)}
+.tagbtn .tally{font-family:var(--ui);font-size:11px;font-weight:800;color:var(--text-muted);
+  background:rgba(0,0,0,.3);border-radius:999px;padding:1px 7px}
+.tagbtn.on{border-color:var(--status-good);color:#a9e6a9}
+.tagbtn.on .tally{color:#a9e6a9}
+.tag-badge{display:inline-block;font-family:var(--ui);font-size:11px;font-weight:800;
+  padding:4px 10px;border-radius:999px;background:rgba(12,163,12,.2);color:#a9e6a9;margin-bottom:4px}
+
 /* ── Export ─────────────────────────────────────────────────────────────── */
 textarea.export{
   width:100%;min-height:320px;margin-top:12px;background:var(--surface-inset);color:var(--text-primary);
@@ -18535,6 +18550,39 @@ function renderConfidence() {
     if (risky.length > 120) out.push('<p class="lede">Showing 120 of ' + risky.length + '. Narrow by period or module to see the rest.</p>');
   }
 
+  // The mirror image of the group above: a student's own rating undersells
+  // writing that already clears the bar. Missing this one is the opposite
+  // failure to missing "Confident and thin", and just as invisible in a
+  // word-count-only view.
+  const promising = rows.filter(r => r.confidence != null && r.confidence <= 2 && !r.blank).filter(r => {
+    if (r.words >= sc.thresh) return true;
+    const m = slotMeta(r.topic, r.slot);
+    if (m && m.terms && m.terms.length) return termsIn(r.norm, m.terms).hit.length > 0;
+    return false;
+  });
+  out.push('<h3>Better than they think</h3>');
+  out.push('<p class="lede">Rated 1 or 2, and either cleared your ' + sc.thresh + ' word bar or used at least one evidence term authored for that slot. This is the student whose self-doubt does not match their writing. Saying so out loud is a thirty-second conversation and it is the other group on this page worth pulling aside by name.</p>');
+  if (!promising.length) {
+    out.push('<p class="lede">Nobody in this scope is in that group.</p>');
+  } else {
+    out.push('<div class="hero-figure"><span class="value">' + promising.length + '</span><span class="of">of ' +
+      rated.filter(r => r.confidence <= 2).length + ' responses rated 1 or 2</span>' +
+      '<span class="cap">Written by ' + new Set(promising.map(r => r.studentKey)).size + ' distinct students.</span></div>');
+    out.push('<div class="table-scroll"><table class="data"><caption>Click a row to read the response with its prompt.</caption>' +
+      '<thead><tr><th>Student</th><th>Code</th><th>Module</th><th class="num">Words</th><th class="num">Confidence</th><th>Terms used</th></tr></thead><tbody>' +
+      promising.slice(0, 120).map(r => {
+        const st = S.students.get(r.studentKey);
+        const m = slotMeta(r.topic, r.slot);
+        const ts = (m && m.terms && m.terms.length) ? termsIn(r.norm, m.terms) : null;
+        return '<tr><th scope="row"><button class="sortbtn" type="button" data-open="' + esc(r.studentKey) + '|' + esc(r.topic) + '|' + esc(r.slot) +
+          '" style="color:var(--text-primary);text-decoration:underline dotted;font-weight:600">' + esc(st ? st.display : r.studentKey) + '</button></th>' +
+          '<td>' + esc(st ? st.code : '') + '</td><td>' + esc(r.topic + '  ' + (m ? m.module : r.slot)) + '</td>' +
+          '<td class="num">' + r.words + '</td><td class="num">' + r.confidence + ' of 5</td>' +
+          '<td>' + (ts ? ofStr(ts.hit.length, m.terms.length) : 'no terms authored') + '</td></tr>';
+      }).join('') + '</tbody></table></div>');
+    if (promising.length > 120) out.push('<p class="lede">Showing 120 of ' + promising.length + '. Narrow by period or module to see the rest.</p>');
+  }
+
   el.innerHTML = out.join('');
 }
 
@@ -18546,7 +18594,7 @@ function renderReadMode() {
   const el = $('panel-read');
   const out = [];
   out.push('<p class="section-label">Panel 07</p><h2>Read mode</h2>');
-  out.push('<p class="lede">Pick a prompt and read every answer to it in a row. This is the norming view: it is faster to calibrate a bar by reading thirty answers to one question than by reading one student\'s nine.</p>');
+  out.push('<p class="lede">Pick a prompt and read every answer to it in a row. This is the norming view: it is faster to calibrate a bar by reading thirty answers to one question than by reading one student\'s nine. Once open, "Fast read (keyboard)" switches to one answer at a time, sorted thinnest evidence first, with J and K to move and 1 to 4 to tag as Reteach, Exemplar, Conference or Fine, no mouse required.</p>');
 
   const prompts = [];
   sc.knownTopics.forEach(t => {
@@ -19134,6 +19182,7 @@ function closeDialog() {
   const top = dlgStack.pop();
   if (!top) return;
   if (dlgStack.length) { paintDialog(); return; }
+  inFastMode = false;
   $('scrim').hidden = true;
   $('dialog-body').innerHTML = '';
   if (top.launcher && document.contains(top.launcher)) top.launcher.focus();
@@ -19142,6 +19191,13 @@ $('dialog-close').addEventListener('click', closeDialog);
 $('scrim').addEventListener('mousedown', (e) => { if (e.target === $('scrim')) closeDialog(); });
 document.addEventListener('keydown', (e) => {
   if ($('scrim').hidden) return;
+  if (inFastMode && !e.metaKey && !e.ctrlKey && !e.altKey) {
+    const k = e.key.toLowerCase();
+    if (k === 'j' || e.key === 'ArrowDown') { e.preventDefault(); fastMove(1); return; }
+    if (k === 'k' || e.key === 'ArrowUp') { e.preventDefault(); fastMove(-1); return; }
+    const tagDef = TAG_DEFS.find(t => t.key === e.key);
+    if (tagDef) { e.preventDefault(); fastTag(tagDef.id); return; }
+  }
   if (e.key === 'Escape') { e.preventDefault(); closeDialog(); return; }
   if (e.key !== 'Tab') return;
   const nodes = Array.from($('dialog').querySelectorAll(FOCUSABLE)).filter(n => n.offsetParent !== null || n === document.activeElement);
@@ -19209,6 +19265,7 @@ let lastNorm = null;
    the grid cell that opened it instead of to a second copy of the same list. */
 function openNorming(topic, slot, launcher, highlightTerm, replace) {
   lastNorm = { topic, slot, launcher, highlightTerm };
+  inFastMode = false;
   if (replace) dlgStack.pop();
   const sc = scope();
   const m = slotMeta(topic, slot);
@@ -19220,12 +19277,144 @@ function openNorming(topic, slot, launcher, highlightTerm, replace) {
     '<p class="lede">' + ofStr(filtered.length, sc.students.length) + ' responses in the current filter scope' +
     (highlightTerm ? ', limited to the ones using "' + esc(highlightTerm) + '"' : '') + '. ' +
     'Names are hidden by default so you can norm on the writing.</p>' +
-    '<button class="btn quiet small" type="button" id="norm-names">' + (normShowNames ? 'Hide names' : 'Show names') + '</button>';
+    '<button class="btn quiet small" type="button" id="norm-names">' + (normShowNames ? 'Hide names' : 'Show names') + '</button> ' +
+    (filtered.length ? '<button class="btn secondary small" type="button" id="norm-fast">Fast read (keyboard)</button>' : '');
   const body = head + (filtered.length
     ? filtered.map(r => '<div class="norming-item">' + responseCard(r, normShowNames) + '</div>').join('')
     : '<p class="empty-state">No responses match.</p>');
   openDialog((m ? m.module : slot) + ', all responses', esc('Topic ' + topic + (highlightTerm ? '  term: ' + highlightTerm : '')),
     body, '<span></span>', launcher);
+}
+
+/* ==========================================================================
+   FAST READ
+   The norming dialog above is every answer stacked in one scroll, which is
+   right for skimming a whole set at once. This is the other read: one answer
+   at a time, keyboard-only, so tagging thirty responses costs thirty
+   keystrokes and zero trips to the mouse. J/K move, 1-4 tag and advance.
+
+   Sorted weakest evidence first (fewest authored terms hit, then fewest
+   words), because that is the direction worth your attention: the thin
+   answers are where a reteach or a pulled-aside conversation pays off, and
+   the strong ones at the end are the ones to read aloud as exemplars.
+
+   Tags live in one in-memory Map, TAGS, for the whole session, keyed the same
+   way S.byKey is. Nothing here writes to localStorage; "Save tags as CSV" is
+   the only way a tag leaves this tab, the same Blob-download pattern saveCsv
+   already uses, and the file never carries a real name, only the per-session
+   code. Reloading the page or dropping a new file clears TAGS, same as every
+   other in-memory thing on this page. ========================================================================== */
+const TAG_DEFS = [
+  { key: '1', id: 'reteach',    label: 'Reteach' },
+  { key: '2', id: 'exemplar',   label: 'Exemplar' },
+  { key: '3', id: 'conference', label: 'Conference' },
+  { key: '4', id: 'fine',       label: 'Fine' }
+];
+const TAGS = new Map();
+let fastRows = [];
+let fastIdx = 0;
+let fastTopic = '', fastSlot = '';
+let inFastMode = false;
+
+function termHitCountFor(r) {
+  const m = slotMeta(r.topic, r.slot);
+  if (!m || !m.terms || !m.terms.length) return 0;
+  return termsIn(r.norm, m.terms).hit.length;
+}
+
+function openFastRead(topic, slot, launcher, replace) {
+  if (replace) dlgStack.pop();
+  fastTopic = topic; fastSlot = slot; inFastMode = true;
+  const sc = scope();
+  fastRows = sc.rows.filter(r => r.topic === topic && r.slot === slot)
+    .slice()
+    .sort((a, b) => termHitCountFor(a) - termHitCountFor(b) || a.words - b.words);
+  fastIdx = 0;
+  const m = slotMeta(topic, slot);
+  openDialog((m ? m.module : slot) + ', fast read', esc('Topic ' + topic + '  J/K move  1-4 tag'),
+    paintFastBody(), paintFastFoot(), launcher);
+}
+
+function paintFastBody() {
+  if (!fastRows.length) return '<p class="empty-state">No responses match.</p>';
+  const r = fastRows[fastIdx];
+  const rec = TAGS.get(r.studentKey + '|' + r.topic + '|' + r.slot);
+  const tagLabel = rec && TAG_DEFS.find(t => t.id === rec.id);
+  return '<p class="lede">Response ' + (fastIdx + 1) + ' of ' + fastRows.length +
+    ', sorted thinnest evidence first. Names are hidden so you can norm on the writing.</p>' +
+    (tagLabel ? '<span class="tag-badge">' + esc(tagLabel.label) + '</span>' : '') +
+    responseCard(r, normShowNames);
+}
+
+function paintFastFoot() {
+  const counts = {};
+  TAG_DEFS.forEach(t => { counts[t.id] = 0; });
+  fastRows.forEach(r => {
+    const rec = TAGS.get(r.studentKey + '|' + r.topic + '|' + r.slot);
+    if (rec && Object.prototype.hasOwnProperty.call(counts, rec.id)) counts[rec.id]++;
+  });
+  const cur = fastRows[fastIdx];
+  const curTag = cur && TAGS.get(cur.studentKey + '|' + cur.topic + '|' + cur.slot);
+  return '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+    TAG_DEFS.map(t => '<button class="btn small tagbtn' + (curTag && curTag.id === t.id ? ' on' : '') +
+      '" type="button" data-fasttag="' + t.id + '"><kbd>' + t.key + '</kbd>' + esc(t.label) +
+      '<span class="tally">' + counts[t.id] + '</span></button>').join('') +
+    '</div>' +
+    '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+    '<button class="btn quiet small" type="button" data-fastexport="1">Save tags as CSV</button>' +
+    '<button class="btn quiet small" type="button" data-fastback="1">Back to full list</button>' +
+    '</div>';
+}
+
+function fastRefresh() {
+  const top = dlgStack[dlgStack.length - 1];
+  if (!top) return;
+  top.bodyHtml = paintFastBody();
+  top.footHtml = paintFastFoot();
+  paintDialog();
+}
+
+function fastMove(delta) {
+  if (!fastRows.length) return;
+  fastIdx = Math.max(0, Math.min(fastRows.length - 1, fastIdx + delta));
+  fastRefresh();
+}
+
+function fastTag(id) {
+  if (!fastRows.length) return;
+  const r = fastRows[fastIdx];
+  const key = r.studentKey + '|' + r.topic + '|' + r.slot;
+  const cur = TAGS.get(key);
+  if (cur && cur.id === id) TAGS.delete(key);
+  else TAGS.set(key, { id: id, at: new Date().toISOString() });
+  if (fastIdx < fastRows.length - 1) fastIdx++;
+  fastRefresh();
+}
+
+/* code, never a name; a teacher who wants the name back already has the
+   Skills Lens open and can look the code up there. */
+function fastExport() {
+  if (!TAGS.size) return;
+  const headers = ['code', 'topic', 'module', 'tag', 'words', 'confidence', 'tagged_at'];
+  const rows = [];
+  TAGS.forEach((rec, key) => {
+    const parts = key.split('|');
+    const studentKey = parts[0], topic = parts[1], slot = parts[2];
+    const r = S.byKey.get(key);
+    const s = S.students.get(studentKey);
+    const m = slotMeta(topic, slot);
+    rows.push({
+      code: s ? s.code : '', topic: topic, module: m ? m.module : slot, tag: rec.id,
+      words: r ? r.words : '', confidence: r && r.confidence != null ? r.confidence : '',
+      tagged_at: rec.at
+    });
+  });
+  const text = CANVAS.toCsv(headers, rows);
+  const url = URL.createObjectURL(new Blob([text], { type: 'text/csv' }));
+  const a = document.createElement('a');
+  a.href = url; a.download = 'read-mode-tags.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 /* ==========================================================================
@@ -19277,6 +19466,17 @@ document.addEventListener('click', (e) => {
   if (t.id === 'norm-names') {
     normShowNames = !normShowNames;
     if (lastNorm) openNorming(lastNorm.topic, lastNorm.slot, lastNorm.launcher, lastNorm.highlightTerm, true);
+    return;
+  }
+  if (t.id === 'norm-fast') {
+    if (lastNorm) openFastRead(lastNorm.topic, lastNorm.slot, lastNorm.launcher, true);
+    return;
+  }
+  const fastTagBtn = t.closest('[data-fasttag]');
+  if (fastTagBtn) { fastTag(fastTagBtn.getAttribute('data-fasttag')); return; }
+  if (t.closest('[data-fastexport]')) { fastExport(); return; }
+  if (t.closest('[data-fastback]')) {
+    if (lastNorm) openNorming(fastTopic, fastSlot, lastNorm.launcher, undefined, true);
     return;
   }
   if (t.id === 'x-build') { doBuild(); return; }
