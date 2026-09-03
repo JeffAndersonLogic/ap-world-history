@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeHistorical | Class Presentation 1.4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   BeHistorical Teach Mode, Topic 1.4
+
+   Same house rules as Topic 1.3: reading slides are paper under ink, dark is
+   reserved for the cover and part dividers, gold is a dark-surface colour
+   (--oxidized is its paper-safe equivalent), and one WRITE THIS DOWN box per
+   slide is the only thing a student copies.
+
+   This deck adds four layout patterns 1.3 did not need, so the two empires
+   do not read as the same six slides twice: .hero (a full-bleed photograph
+   with a floating caption card), .stat-grid (big numbers or big words in a
+   row of tiles), .spotlight (one image beside a short list of facts), and
+   .orgchart (a hierarchy diagram, used where no real photograph exists for
+   the concept rather than forcing a picture that does not fit).
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root{
+  --steel:#1a1c1d; --charcoal:#2b2f31; --gunmetal:#3e4447; --iron:#5a5f5c;
+  --sandstone:#d2b48c; --bronze:#8c5a2b; --rust:#a8652d; --oxidized:#6b3e1f;
+  --gold:#c9a46a; --paper:#f5f0e7; --clean:#fffdf7; --ink:#151718;
+  --rule:#ddd2be; --rule-soft:#e8dfd0;
+  --font-display:'Cinzel','Trajan Pro',Georgia,serif;
+  --font-body:'Libre Baskerville',Georgia,'Times New Roman',serif;
+  --font-ui:'Montserrat',Arial,Helvetica,sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#0d0e0f}
+body{font-family:var(--font-body);color:var(--ink)}
+
+/* ── The stage ────────────────────────────────────────────────────────────
+   A fixed 1280x720 board scaled to fit the window, rather than a fluid
+   layout, so what fits at your desk is what lands on the wall. */
+#viewport{position:fixed;inset:0;display:grid;place-items:center;background:#0d0e0f}
+#stage{
+  width:1280px;height:720px;position:relative;flex:none;
+  transform:scale(var(--scale,1));transform-origin:center center;
+  box-shadow:0 40px 120px rgba(0,0,0,.6);
+}
+
+.slide{
+  position:absolute;inset:0;display:none;
+  padding:64px 76px;overflow:hidden;
+  background:var(--paper);color:var(--ink);
+}
+.slide.active{display:flex;flex-direction:column}
+
+.slide.dark{background:var(--steel);color:var(--paper)}
+.slide.dark .eyebrow{color:var(--gold)}
+.slide.dark h1,.slide.dark h2{color:var(--clean)}
+
+/* ── Typography ───────────────────────────────────────────────────────── */
+.eyebrow{
+  font-family:var(--font-ui);font-weight:800;font-size:15px;
+  letter-spacing:.20em;text-transform:uppercase;color:var(--oxidized);
+  margin:0 0 14px;
+}
+h1{font-family:var(--font-display);font-weight:900;font-size:64px;line-height:1.06;margin:0 0 18px;letter-spacing:.01em}
+h2{font-family:var(--font-display);font-weight:800;font-size:44px;line-height:1.12;margin:0 0 8px;color:var(--steel)}
+h3{font-family:var(--font-ui);font-weight:800;font-size:21px;line-height:1.25;margin:0 0 10px;color:var(--oxidized);letter-spacing:.01em}
+.deck-sub{font-size:22px;line-height:1.45;color:var(--gunmetal);margin:0 0 26px;font-style:italic}
+.slide.dark .deck-sub{color:var(--sandstone)}
+p{font-size:20px;line-height:1.55;margin:0 0 16px}
+b,strong{color:var(--oxidized);font-weight:700}
+.slide.dark b,.slide.dark strong{color:var(--gold)}
+
+.rule{height:3px;background:var(--bronze);width:96px;border-radius:2px;margin:0 0 26px}
+.slide.dark .rule{background:var(--gold)}
+
+.body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
+.body.top{justify-content:flex-start}
+
+/* ── Bullets ──────────────────────────────────────────────────────────── */
+ul.points{list-style:none;margin:0;padding:0}
+ul.points li{
+  position:relative;padding-left:38px;margin-bottom:20px;
+  font-size:22px;line-height:1.5;
+}
+ul.points li::before{
+  content:"";position:absolute;left:0;top:.52em;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--bronze);box-shadow:0 0 0 4px rgba(140,90,43,.16);
+}
+.slide.dark ul.points li::before{background:var(--gold);box-shadow:0 0 0 4px rgba(201,164,106,.18)}
+
+/* ── Reveals ──────────────────────────────────────────────────────────── */
+[data-step]{opacity:0;transform:translateY(10px);transition:opacity .28s ease,transform .28s ease}
+[data-step].shown{opacity:1;transform:none}
+
+/* ── Column layouts ───────────────────────────────────────────────────── */
+.cols{display:grid;gap:26px;flex:1;min-height:0}
+.cols.c2{grid-template-columns:1fr 1fr}
+.cols.c3{grid-template-columns:repeat(3,1fr)}
+.cols.c4{grid-template-columns:repeat(4,1fr)}
+.cols.split{grid-template-columns:1.05fr .95fr;align-items:center}
+
+.panel{
+  background:var(--clean);border:1px solid var(--rule);border-radius:10px;
+  padding:24px 26px;border-top:5px solid var(--bronze);
+  display:flex;flex-direction:column;min-height:0;
+}
+.panel.gold{border-top-color:var(--gold)}
+.panel.rust{border-top-color:var(--rust)}
+.panel.iron{border-top-color:var(--iron)}
+.panel p{font-size:18px;line-height:1.5;margin:0 0 12px}
+.panel p:last-child{margin-bottom:0}
+.panel .tag{
+  font-family:var(--font-ui);font-size:12px;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--iron);margin:0 0 6px;
+}
+
+/* ── Figures ──────────────────────────────────────────────────────────── */
+figure{margin:0;display:flex;flex-direction:column;min-height:0;height:100%}
+figure img{
+  width:100%;flex:1;min-height:0;object-fit:cover;border-radius:8px;
+  background:var(--charcoal);border:1px solid var(--rule);
+}
+figure.contain img{object-fit:contain;background:var(--clean);padding:8px}
+figure img.is-fallback{object-fit:contain;background:var(--clean);padding:14px}
+figcaption{
+  font-family:var(--font-ui);font-size:13px;line-height:1.45;color:var(--iron);
+  margin-top:10px;font-weight:500;
+}
+/* A failed image says so, loudly, instead of quietly looking like a design
+   choice. This is the fix for a corrupted or unreachable URL passing as
+   "just plain artwork" until someone happens to ask why a slide looks weak. */
+.img-broken{outline:3px dashed var(--rust);outline-offset:-3px}
+.warn{color:var(--oxidized)}
+
+/* ── Hero: a full-bleed photograph with a floating caption card ─────────
+   Used where the picture IS the point (Tenochtitlan, Machu Picchu) rather
+   than an illustration beside the prose. */
+.hero-wrap{position:relative;flex:1;min-height:0;border-radius:10px;overflow:hidden;border:1px solid var(--rule)}
+.hero-wrap img{width:100%;height:100%;object-fit:cover;display:block;background:var(--charcoal)}
+.hero-wrap img.is-fallback{object-fit:contain;background:var(--clean);padding:26px}
+.hero-card{
+  position:absolute;left:26px;right:26px;bottom:26px;
+  background:rgba(21,23,24,.88);color:var(--paper);border-left:6px solid var(--gold);
+  border-radius:8px;padding:18px 26px;
+}
+.hero-card .tag{font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.hero-card p{margin:0;font-size:19px;line-height:1.4;color:var(--paper)}
+.hero-card b{color:var(--gold)}
+.hero-warn{position:absolute;left:26px;top:26px;right:26px;background:rgba(168,101,45,.95);color:var(--clean);
+  font-family:var(--font-ui);font-weight:700;font-size:14px;border-radius:8px;padding:10px 16px;display:none}
+.hero-wrap.is-broken .hero-warn{display:block}
+
+/* ── Stat grid: big numbers or big words, four to a row ──────────────── */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;flex:1;min-height:0}
+.stat-tile{
+  background:var(--clean);border:1px solid var(--rule);border-top:5px solid var(--bronze);
+  border-radius:10px;padding:20px 16px;display:flex;flex-direction:column;
+  justify-content:center;text-align:center;min-height:0;
+}
+.stat-tile.gold{border-top-color:var(--gold)}
+.stat-tile.rust{border-top-color:var(--rust)}
+.stat-tile.iron{border-top-color:var(--iron)}
+.stat-tile .num{font-family:var(--font-display);font-weight:900;font-size:34px;color:var(--oxidized);line-height:1.05}
+.stat-tile .lbl{font-family:var(--font-ui);font-weight:700;font-size:14px;color:var(--iron);margin-top:10px;line-height:1.32}
+
+/* ── Spotlight: one image beside a short stack of facts ──────────────── */
+.spotlight{display:flex;gap:34px;flex:1;min-height:0;align-items:stretch}
+.spotlight figure{flex:0 0 40%}
+.spotlight .facts{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;min-width:0}
+.spotlight .fact{padding-left:20px;border-left:3px solid var(--bronze)}
+.spotlight .fact b{display:block;color:var(--oxidized);font-family:var(--font-ui);font-size:12px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:4px}
+.spotlight .fact p{margin:0;font-size:19px;line-height:1.42}
+
+/* ── Org chart: a hierarchy diagram, for a concept with no honest photo ── */
+.orgchart{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:14px 30px;font-family:var(--font-ui);font-weight:800;font-size:19px;letter-spacing:.03em}
+.org-line{width:2px;height:24px;background:var(--rule)}
+.org-row{display:flex;gap:20px;justify-content:center}
+.org-branch{display:flex;flex-direction:column;align-items:center;width:200px}
+.org-node{background:var(--clean);border:2px solid var(--bronze);border-radius:8px;padding:12px 16px;
+  font-family:var(--font-ui);font-weight:800;font-size:16px;color:var(--oxidized);text-align:center;width:100%}
+.org-sub{font-size:14px;color:var(--iron);margin-top:8px;text-align:center;font-family:var(--font-ui);line-height:1.4}
+
+/* ── Flow: a numbered pipeline with connectors, for a mechanism ──────── */
+.flow{display:flex;align-items:stretch;gap:0;flex:1;min-height:0}
+.flow .panel{flex:1}
+.flow .arrow{display:flex;align-items:center;justify-content:center;width:34px;flex:none;
+  color:var(--bronze);font-size:26px;font-weight:900}
+
+/* ── Comparison table ─────────────────────────────────────────────────
+   Row padding stays tight; Cinzel runs about 50% wider than the Georgia
+   fallback and a table that fits at your desk can overflow the fixed
+   board once the real fonts load. Re-measure before loosening this. */
+table.compare{width:100%;border-collapse:collapse;font-size:18px}
+table.compare th,table.compare td{
+  text-align:left;padding:10px 16px;border-bottom:1px solid var(--rule);vertical-align:top;
+}
+table.compare thead th{
+  font-family:var(--font-ui);font-size:15px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--clean);background:var(--gunmetal);
+  border-bottom:none;
+}
+table.compare thead th:first-child{background:var(--steel);border-radius:8px 0 0 0}
+table.compare thead th:last-child{border-radius:0 8px 0 0}
+table.compare tbody th{
+  font-family:var(--font-ui);font-size:16px;font-weight:800;color:var(--oxidized);
+  letter-spacing:.06em;text-transform:uppercase;width:172px;background:var(--tint,#f6efe1);
+}
+table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border-bottom:none}
+
+/* ── The one thing to write down ─────────────────────────────────────── */
+.writethis{
+  margin-top:20px;background:var(--steel);color:var(--paper);
+  border-radius:10px;padding:15px 24px;border-left:6px solid var(--gold);
+}
+.writethis .tag{
+  font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 5px;
+}
+.writethis p{margin:0;font-size:21px;line-height:1.35;color:var(--paper)}
+.writethis b,.writethis strong{color:var(--gold)}
+
+/* ── Term chips ───────────────────────────────────────────────────────── */
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:4px}
+.chip{
+  font-family:var(--font-ui);font-size:15px;font-weight:700;letter-spacing:.02em;
+  background:#f6efe1;color:var(--oxidized);border:1px solid var(--rule);
+  border-radius:999px;padding:7px 15px;
+}
+.slide.dark .chip{background:rgba(201,164,106,.14);color:var(--gold);border-color:rgba(201,164,106,.38)}
+
+/* ── Cover ────────────────────────────────────────────────────────────── */
+.cover{
+  justify-content:center;
+  background:
+    radial-gradient(ellipse at 22% 18%, rgba(201,164,106,.16) 0%, transparent 58%),
+    linear-gradient(145deg,#1a1c1d 0%,#22262a 55%,#151718 100%);
+}
+.cover .kicker{
+  font-family:var(--font-ui);font-weight:800;font-size:16px;letter-spacing:.30em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 22px;
+}
+.cover h1{font-size:72px;max-width:19ch}
+.cover .dates{
+  font-family:var(--font-ui);font-weight:700;font-size:19px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sandstone);margin:14px 0 0;
+}
+.cover .brandline{
+  position:absolute;left:76px;bottom:56px;
+  font-family:var(--font-display);font-weight:800;font-size:20px;
+  letter-spacing:.06em;color:var(--gold);
+}
+
+/* ── Divider ──────────────────────────────────────────────────────────── */
+.divider{justify-content:center;background:linear-gradient(135deg,#1a1c1d 0%,#2b2f31 100%)}
+.divider .part{
+  font-family:var(--font-ui);font-weight:800;font-size:15px;letter-spacing:.30em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 18px;
+}
+.divider h1{font-size:60px;max-width:20ch}
+.divider .lede{font-size:23px;line-height:1.5;color:var(--sandstone);max-width:62ch;margin:20px 0 0;font-style:italic}
+
+/* ── Slide furniture ──────────────────────────────────────────────────── */
+.slideno{
+  position:absolute;right:34px;bottom:26px;
+  font-family:var(--font-ui);font-weight:800;font-size:12px;letter-spacing:.16em;
+  color:var(--iron);
+}
+.slide.dark .slideno{color:rgba(210,180,140,.55)}
+.topicmark{
+  position:absolute;left:76px;bottom:26px;
+  font-family:var(--font-ui);font-weight:700;font-size:12px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--iron);
+}
+.slide.dark .topicmark{color:rgba(210,180,140,.55)}
+
+/* ── Progress ─────────────────────────────────────────────────────────── */
+#progress{position:fixed;left:0;top:0;height:4px;background:var(--gold);width:0;z-index:40;transition:width .25s ease}
+
+/* ── Controls ─────────────────────────────────────────────────────────── */
+#hud{
+  position:fixed;right:16px;bottom:14px;z-index:45;display:flex;gap:8px;align-items:center;
+  font-family:var(--font-ui);opacity:.28;transition:opacity .2s ease;
+}
+#hud:hover,#hud:focus-within{opacity:1}
+#hud button{
+  font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:.08em;
+  background:rgba(245,240,231,.10);color:var(--paper);border:1px solid rgba(245,240,231,.26);
+  border-radius:6px;padding:7px 11px;cursor:pointer;
+}
+#hud button:hover{background:rgba(201,164,106,.24);border-color:var(--gold)}
+#hud button:focus-visible,#overview button:focus-visible,#notes button:focus-visible{
+  outline:3px solid var(--gold);outline-offset:2px;
+}
+#counter{font-size:12px;font-weight:800;letter-spacing:.10em;color:var(--sandstone);padding:0 6px}
+
+/* ── Overview ─────────────────────────────────────────────────────────── */
+#overview{
+  position:fixed;inset:0;z-index:60;background:rgba(13,14,15,.97);
+  display:none;padding:34px 40px;overflow-y:auto;
+}
+#overview.show{display:block}
+#overview h2{font-family:var(--font-ui);font-size:14px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 22px}
+#ovgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+#ovgrid button{
+  text-align:left;background:var(--paper);border:2px solid transparent;border-radius:8px;
+  padding:14px 16px;cursor:pointer;font-family:var(--font-ui);color:var(--ink);
+  display:flex;flex-direction:column;gap:6px;min-height:92px;
+}
+#ovgrid button.dk{background:var(--charcoal);color:var(--paper)}
+#ovgrid button:hover{border-color:var(--gold)}
+#ovgrid button.here{border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,164,106,.22)}
+#ovgrid .n{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--iron)}
+#ovgrid button.dk .n{color:var(--sandstone)}
+#ovgrid .t{font-size:14px;font-weight:700;line-height:1.3}
+
+/* ── Help ─────────────────────────────────────────────────────────────── */
+#help{
+  position:fixed;inset:0;z-index:80;background:rgba(13,14,15,.96);display:none;
+  place-items:center;font-family:var(--font-ui);color:var(--paper);
+}
+#help.show{display:grid}
+#help .box{max-width:560px;padding:34px 40px}
+#help h2{font-family:var(--font-display);font-size:30px;color:var(--gold);margin:0 0 20px}
+#help dl{display:grid;grid-template-columns:auto 1fr;gap:12px 20px;margin:0;font-size:15px}
+#help dt{font-weight:800;color:var(--gold);letter-spacing:.06em}
+#help dd{margin:0;color:var(--sandstone)}
+#help .close{margin-top:26px;font-size:13px;color:var(--iron)}
+</style>
+</head>
+<body>
+
+<script>
+/* A dead or unreachable image degrades to this topic's local artwork, the
+   same as the rest of the site, but it also FLAGS the caption instead of
+   letting a fallback quietly pass as the finished design. That is the
+   direct fix for a corrupted image file silently looking like weak
+   artwork with nobody noticing why. */
+function onImgFail(el, localSrc) {
+  el.onerror = null;
+  el.src = localSrc;
+  el.classList.add('is-fallback');
+  el.classList.add('img-broken');
+  var wrap = el.closest('.hero-wrap');
+  if (wrap) wrap.classList.add('is-broken');
+  var fig = el.closest('figure');
+  var cap = fig ? fig.querySelector('figcaption') : null;
+  if (cap && !cap.dataset.flagged) {
+    cap.dataset.flagged = '1';
+    cap.innerHTML = '<b class="warn">Image did not load, needs a working URL.</b> Was meant to show: ' + cap.textContent;
+  }
+}
+</script>
+
+<div id="progress"></div>
+
+<div id="viewport">
+<div id="stage">
+
+<!-- ═════ 01 COVER ═════════════════════════════════════════════════════════ -->
+<section class="slide dark cover" data-title="Cover">
+  <p class="kicker">AP World History &middot; Unit 1 &middot; Topic 1.4</p>
+  <h1>State Building in the Americas</h1>
+  <p class="dates">States and Societies in the Americas &middot; c. 1200 to c. 1450</p>
+  <div class="brandline">BeHistorical</div>
+</section>
+
+<!-- ═════ 02 THE QUESTION ══════════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="The Question">
+  <p class="part">The Question</p>
+  <h1>How do you rule an empire with no wheels, no horses, and no alphabet?</h1>
+  <ul class="points" style="margin-top:20px;max-width:56ch">
+    <li data-step="1">The <b>Inca</b> did it with roads and labor</li>
+    <li data-step="2">The <b>Mexica</b> did it with tribute and religion</li>
+    <li data-step="3"><b>Geography</b> decided which solution worked</li>
+  </ul>
+</section>
+
+<!-- ═════ 03 THE MAP ═══════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Two Regions, Two Solutions">
+  <p class="eyebrow">Where in the World</p>
+  <h2>Two regions, two solutions</h2>
+  <div class="rule"></div>
+  <div class="cols c2">
+    <figure class="contain">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Basin_of_Mexico_1519_map-en.svg"
+           alt="Map of the Basin of Mexico around 1519, showing the lakes and cities of the Mexica heartland"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/map.svg')">
+      <figcaption>The Basin of Mexico, heart of the Mexica tribute empire.</figcaption>
+    </figure>
+    <figure class="contain" data-step="1">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Inca%20road%20system%20map-en.svg"
+           alt="Map of the Inca road system running the length of the Andes mountains"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/map.svg')">
+      <figcaption>The Inca road network, spanning nearly 3,000 miles of mountains.</figcaption>
+    </figure>
+  </div>
+  <div class="writethis" data-step="2">
+    <p class="tag">Write this down</p>
+    <p>Same problem, different geography: <b>how do you govern people you cannot quickly reach?</b></p>
+  </div>
+</section>
+
+<!-- ═════ 04 FOUR SYSTEMS ══════════════════════════════════════════════════ -->
+<section class="slide" data-title="Four Systems, One Framework">
+  <p class="eyebrow">The Four Case Studies</p>
+  <h2>Four systems, one framework</h2>
+  <div class="rule"></div>
+  <div class="cols c4">
+    <div class="panel">
+      <p class="tag">Mesoamerica</p>
+      <h3>Maya</h3>
+      <p>Independent, <b>competing</b> city-states</p>
+    </div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">Central Mexico</p>
+      <h3>Mexica</h3>
+      <p><b>Tribute</b> from conquered peoples</p>
+    </div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">The Andes</p>
+      <h3>Inca</h3>
+      <p><b>Labor</b>, roads, and record-keeping</p>
+    </div>
+    <div class="panel iron" data-step="3">
+      <p class="tag">North America</p>
+      <h3>Cahokia, Chaco, Mesa Verde</h3>
+      <p><b>Regional</b> centers of trade and authority</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Write this down</p>
+    <p>Continuity, innovation, diversity, expansion. <b>Find all four before this lesson ends.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 05 DIVIDER: PART ONE ═════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part One: Mesoamerica">
+  <p class="part">Part One</p>
+  <h1>Mesoamerica</h1>
+  <p class="lede">Independent city-states, a lake city, and an empire built on tribute.</p>
+</section>
+
+<!-- ═════ 06 MAYA ══════════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Maya City-States">
+  <p class="eyebrow">Case One &middot; Southern Mesoamerica</p>
+  <h2>Maya city-states: power without a center</h2>
+  <div class="rule"></div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <p class="num" style="font-size:26px">No single ruler</p>
+      <p class="lbl">Independent, competing city-states</p>
+    </div>
+    <div class="stat-tile gold" data-step="1">
+      <p class="num" style="font-size:26px">Hieroglyphs</p>
+      <p class="lbl">A full writing system</p>
+    </div>
+    <div class="stat-tile rust" data-step="2">
+      <p class="num" style="font-size:26px">A precise calendar</p>
+      <p class="lbl">Astronomy tracked across centuries</p>
+    </div>
+    <div class="stat-tile iron" data-step="3">
+      <p class="num" style="font-size:26px">Monuments</p>
+      <p class="lbl">Built with no single treasury</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Write this down</p>
+    <p>Political power was local. <b>No one Maya king ever ruled all Maya people.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 07 TENOCHTITLAN ══════════════════════════════════════════════════ -->
+<section class="slide" data-title="Tenochtitlan">
+  <p class="eyebrow">Case Two &middot; Central Mexico</p>
+  <h2>Tenochtitlan: an island capital</h2>
+  <div class="rule"></div>
+  <div class="hero-wrap">
+    <div class="hero-warn">Image did not load, needs a working URL.</div>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Reconstruction_of_Tenochtitlan2006.jpg"
+         alt="Reconstruction of Tenochtitlan, showing the island city, its causeways, and canals"
+         onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/lecture-03.svg')">
+    <div class="hero-card">
+      <p class="tag">Founded 1325</p>
+      <p>Built on an island in <b>Lake Texcoco</b>, reached by causeways and threaded with canals. By 1519, likely home to <b>200,000 people</b>.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="1">
+    <p class="tag">Write this down</p>
+    <p>An island city, built by hand, <b>connected by causeways</b>.</p>
+  </div>
+</section>
+
+<!-- ═════ 08 CHINAMPAS ═════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Chinampas">
+  <p class="eyebrow">How They Fed the City</p>
+  <h2>Chinampas: farming the lake</h2>
+  <div class="rule"></div>
+  <div class="cols split">
+    <div>
+      <ul class="points">
+        <li>Raised fields built up from the <b>lakebed</b></li>
+        <li data-step="1">Layered mud, reeds, and staked <b>willow trees</b></li>
+        <li data-step="2">Watered on <b>all four sides</b>, at once</li>
+      </ul>
+      <div class="writethis" data-step="3">
+        <p class="tag">Write this down</p>
+        <p>Chinampas turned a lake into farmland, and <b>farmland into a capital</b>.</p>
+      </div>
+    </div>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chinampas%20Xochimilco.jpg"
+           alt="Chinampas, raised agricultural fields, at Xochimilco near Mexico City"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/lecture-01.svg')">
+      <figcaption>Chinampas at Xochimilco, the same system that once fed Tenochtitlan.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ═════ 09 CALPULLI ══════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Calpulli">
+  <p class="eyebrow">How They Organized the City</p>
+  <h2>Calpulli: the neighborhood unit</h2>
+  <div class="rule"></div>
+  <div class="orgchart">
+    <div class="org-top">Tenochtitlan</div>
+    <div class="org-line"></div>
+    <div class="org-row">
+      <div class="org-branch">
+        <div class="org-node">Calpulli</div>
+        <div class="org-sub" data-step="1">Land, temple, school, militia</div>
+      </div>
+      <div class="org-branch">
+        <div class="org-node">Calpulli</div>
+        <div class="org-sub" data-step="1">Land, temple, school, militia</div>
+      </div>
+      <div class="org-branch">
+        <div class="org-node">Calpulli</div>
+        <div class="org-sub" data-step="1">Land, temple, school, militia</div>
+      </div>
+    </div>
+  </div>
+  <div class="writethis" data-step="2">
+    <p class="tag">Write this down</p>
+    <p>A calpulli was land, kinship, and duty to the state, <b>bundled into one unit</b>.</p>
+  </div>
+</section>
+
+<!-- ═════ 10 CALENDAR AND TEMPLE ═══════════════════════════════════════════ -->
+<section class="slide" data-title="Time, Temple, and Tribute">
+  <p class="eyebrow">Religion and the State</p>
+  <h2>Time, temple, and tribute</h2>
+  <div class="rule"></div>
+  <div class="spotlight">
+    <figure class="contain">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Piedra_del_Sol.jpg"
+           alt="The Piedra del Sol, the Aztec calendar stone, at the National Museum of Anthropology in Mexico City"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/lecture-04.svg')">
+      <figcaption>The Piedra del Sol, tracking two calendars at once.</figcaption>
+    </figure>
+    <div class="facts">
+      <div class="fact">
+        <b>Two calendars</b>
+        <p>A 260-day ritual cycle, a 365-day solar year</p>
+      </div>
+      <div class="fact" data-step="1">
+        <b>The Templo Mayor</b>
+        <p>The empire's <b>ceremonial center</b></p>
+      </div>
+      <div class="fact" data-step="2">
+        <b>One system</b>
+        <p>War, sacrifice, and tribute, <b>justifying each other</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="writethis" data-step="3">
+    <p class="tag">Write this down</p>
+    <p>Religion was not separate from Mexica power. <b>It was how power was justified.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 11 DIVIDER: PART TWO ═════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Two: The Andes">
+  <p class="part">Part Two</p>
+  <h1>The Andes</h1>
+  <p class="lede">One empire, run by roads, labor, and knotted cords.</p>
+</section>
+
+<!-- ═════ 12 INCA BY THE NUMBERS ═══════════════════════════════════════════ -->
+<section class="slide" data-title="The Inca by the Numbers">
+  <p class="eyebrow">Case Three &middot; The Andes</p>
+  <h2>The Inca: empire by the numbers</h2>
+  <div class="rule"></div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <p class="num">~24,000 mi</p>
+      <p class="lbl">Of road, through the Andes</p>
+    </div>
+    <div class="stat-tile gold" data-step="1">
+      <p class="num">4 suyu</p>
+      <p class="lbl">Regions, meeting at Cusco</p>
+    </div>
+    <div class="stat-tile rust" data-step="2">
+      <p class="num">0</p>
+      <p class="lbl">Wheels or draft animals</p>
+    </div>
+    <div class="stat-tile iron" data-step="3">
+      <p class="num">1</p>
+      <p class="lbl">Shared language: Quechua</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Write this down</p>
+    <p>The largest empire in the pre-Columbian Americas, <b>and it ran without wheels, horses, or writing</b>.</p>
+  </div>
+</section>
+
+<!-- ═════ 13 SAPA INCA ═════════════════════════════════════════════════════ -->
+<section class="slide" data-title="The Sapa Inca">
+  <p class="eyebrow">Who Ruled</p>
+  <h2>The Sapa Inca: son of the sun</h2>
+  <div class="rule"></div>
+  <div class="spotlight">
+    <figure class="contain">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Pachacutic,_9th_Shapa_Inka_(1438%E2%80%931471),_1615.jpg"
+           alt="A 1615 illustration of Pachacuti, the ninth Sapa Inca, from Guaman Poma de Ayala's chronicle"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/lecture-05.svg')">
+      <figcaption>Pachacuti, illustrated in 1615.</figcaption>
+    </figure>
+    <div class="facts">
+      <div class="fact">
+        <b>Divine descent</b>
+        <p>Believed to descend from <b>Inti</b>, the sun</p>
+      </div>
+      <div class="fact" data-step="1">
+        <b>Pachacuti</b>
+        <p>Began the empire's expansion, <b>c. 1438</b></p>
+      </div>
+      <div class="fact" data-step="2">
+        <b>An ocean away</b>
+        <p>Same claim as Angkor's <b>devaraja</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="writethis" data-step="3">
+    <p class="tag">Write this down</p>
+    <p>Divine kingship was not unique to the Khmer. <b>The Inca built one too.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 14 MIT'A ═════════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Mit'a">
+  <p class="eyebrow">The Machine Behind the Empire</p>
+  <h2>Mit&rsquo;a: labor instead of taxes</h2>
+  <div class="rule"></div>
+  <div class="flow">
+    <div class="panel">
+      <p class="tag">Step 1</p>
+      <h3>Owe</h3>
+      <p>Communities owe <b>labor</b>, not goods</p>
+    </div>
+    <div class="arrow">&rarr;</div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">Step 2</p>
+      <h3>Build</h3>
+      <p>Roads, terraces, <b>storehouses</b></p>
+    </div>
+    <div class="arrow" data-step="1">&rarr;</div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">Step 3</p>
+      <h3>Move</h3>
+      <p>Officials, armies, and goods <b>travel fast</b></p>
+    </div>
+    <div class="arrow" data-step="2">&rarr;</div>
+    <div class="panel iron" data-step="3">
+      <p class="tag">Step 4</p>
+      <h3>Rule</h3>
+      <p>The state reaches <b>every valley</b></p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Write this down</p>
+    <p>The Mexica taxed things. <b>The Inca taxed time.</b> That is what mit&rsquo;a means.</p>
+  </div>
+</section>
+
+<!-- ═════ 15 MACHU PICCHU ══════════════════════════════════════════════════ -->
+<section class="slide" data-title="Machu Picchu">
+  <p class="eyebrow">Case Four &middot; The Sacred Landscape</p>
+  <h2>Machu Picchu: a royal estate in the clouds</h2>
+  <div class="rule"></div>
+  <div class="hero-wrap">
+    <div class="hero-warn">Image did not load, needs a working URL.</div>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Machu%20Picchu%2C%20Peru.jpg"
+         alt="Machu Picchu, the Inca royal estate in the Andes mountains of Peru"
+         onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/source.svg')">
+    <div class="hero-card">
+      <p class="tag">Built c. 1450</p>
+      <p>Likely a <b>royal estate</b> for Pachacuti, not a hidden capital. It was never lost, and the Spanish never found it.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="1">
+    <p class="tag">Write this down</p>
+    <p>Not a capital. <b>A retreat, built high enough to answer to no one.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 16 QUIPU ═════════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Quipu">
+  <p class="eyebrow">How They Kept Records</p>
+  <h2>Quipu: recording without writing</h2>
+  <div class="rule"></div>
+  <div class="cols split">
+    <div>
+      <ul class="points">
+        <li><b>Knotted cords</b>, not letters</li>
+        <li data-step="1">Tracked <b>tribute, population, and labor</b></li>
+        <li data-step="2">Read by trained specialists, <b>quipucamayocs</b></li>
+      </ul>
+      <div class="writethis" data-step="3">
+        <p class="tag">Write this down</p>
+        <p>No alphabet. <b>A full administrative record system anyway.</b></p>
+      </div>
+    </div>
+    <figure class="contain">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Quipu.png"
+           alt="A quipu, the knotted cord record-keeping device used by Inca administrators"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/evidence-01.svg')">
+      <figcaption>A quipu. Position, knot type, and color encoded numbers across a professional record-keeping system.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ═════ 17 DIVIDER: PART THREE ═══════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Three: Beyond Two Empires">
+  <p class="part">Part Three</p>
+  <h1>Beyond Two Empires</h1>
+  <p class="lede">Complex states did not require a Tenochtitlan or a Cusco.</p>
+</section>
+
+<!-- ═════ 18 NORTH AMERICA ═════════════════════════════════════════════════ -->
+<section class="slide" data-title="Cahokia, Chaco, and Mesa Verde">
+  <p class="eyebrow">Diversity in North America</p>
+  <h2>Three centers, one continent</h2>
+  <div class="rule"></div>
+  <div class="cols c3">
+    <div class="panel">
+      <figure style="height:120px;margin-bottom:12px">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Monks%20Mound%20in%20July.JPG"
+             alt="Monks Mound at Cahokia, the largest earthwork in the pre-Columbian Americas north of Mexico"
+             onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/lecture-01.svg')">
+      </figure>
+      <p class="tag">Mississippi River</p>
+      <h3>Cahokia</h3>
+      <p>The <b>largest city</b> north of Mexico</p>
+    </div>
+    <div class="panel gold" data-step="1">
+      <figure style="height:120px;margin-bottom:12px">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pueblo_Bonito_-_Chaco_Canyon_(IMG_0738).jpg"
+             alt="Pueblo Bonito, a great house in Chaco Canyon, New Mexico"
+             onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/lecture-02.svg')">
+      </figure>
+      <p class="tag">The Southwest</p>
+      <h3>Chaco Canyon</h3>
+      <p><b>Trade and ceremony</b> in the desert</p>
+    </div>
+    <div class="panel rust" data-step="2">
+      <figure style="height:120px;margin-bottom:12px">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cliff_Palace-Colorado-Mesa_Verde_NP.jpg"
+             alt="Cliff Palace, the cliff dwellings of Mesa Verde, Colorado"
+             onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/lecture-03.svg')">
+      </figure>
+      <p class="tag">Colorado</p>
+      <h3>Mesa Verde</h3>
+      <p><b>Cliff dwellings</b>, engineered farming</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="3">
+    <p class="tag">Write this down</p>
+    <p>Complex, organized societies <b>were not limited to the Mexica or the Inca</b>.</p>
+  </div>
+</section>
+
+<!-- ═════ 19 COMPARISON ════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Comparing American State Systems">
+  <p class="eyebrow">The Core Comparison</p>
+  <h2>Comparing American state systems</h2>
+  <div class="rule"></div>
+  <table class="compare">
+    <thead>
+      <tr><th></th><th>Mexica</th><th>Inca</th><th>North America</th></tr>
+    </thead>
+    <tbody>
+      <tr><th>Power base</th><td>Tribute from conquest</td><td>Labor, not goods</td><td>Trade and ceremony</td></tr>
+      <tr data-step="1"><th>Records</th><td>Pictorial codices</td><td>Quipu, knotted cords</td><td>Oral tradition</td></tr>
+      <tr data-step="2"><th>Religion does</th><td>Justifies conquest</td><td>Justifies the Sapa Inca</td><td>Organizes ceremony</td></tr>
+      <tr data-step="3"><th>Expansion by</th><td>Military conquest</td><td>Roads, administration</td><td>Regional trade</td></tr>
+    </tbody>
+  </table>
+  <div class="writethis" data-step="4">
+    <p class="tag">Write this down &middot; the grid is in your eBook, do not copy it</p>
+    <p>Continuity, innovation, diversity, expansion. <b>Every row is evidence for all four.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 20 TAKEAWAY ══════════════════════════════════════════════════════ -->
+<section class="slide" data-title="AP Takeaway">
+  <p class="eyebrow">What You Must Be Able To Do</p>
+  <h2>The takeaway</h2>
+  <div class="rule"></div>
+  <div class="body top">
+    <p class="tag" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized)">Checkpoint 1 &middot; Evidence for state systems</p>
+    <div class="chips">
+      <span class="chip">Maya city-states</span>
+      <span class="chip">Mexica</span>
+      <span class="chip">Inca</span>
+      <span class="chip">Chaco</span>
+      <span class="chip">Mesa Verde</span>
+      <span class="chip">Cahokia</span>
+    </div>
+    <p class="tag" data-step="1" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized);margin-top:22px">Checkpoint 2 &middot; Continuity, innovation, diversity, expansion</p>
+    <div class="chips" data-step="1">
+      <span class="chip">Chinampas</span>
+      <span class="chip">Calpulli</span>
+      <span class="chip">Mit&rsquo;a</span>
+      <span class="chip">Quipu</span>
+      <span class="chip">Sapa Inca &harr; devaraja</span>
+    </div>
+  </div>
+  <div class="writethis" data-step="2">
+    <p class="tag">Write this down &middot; both checkpoints</p>
+    <p>Pick <b>one</b> system. Name <b>specific</b> evidence. Explain <b>what it proves</b>.</p>
+  </div>
+</section>
+
+</div><!-- /stage -->
+</div><!-- /viewport -->
+
+<div id="hud">
+  <button id="btn-prev" type="button" aria-label="Previous slide">&larr;</button>
+  <span id="counter">1 / 20</span>
+  <button id="btn-next" type="button" aria-label="Next slide">&rarr;</button>
+  <button id="btn-ov"  type="button">All slides</button>
+  <button id="btn-fs"  type="button">Full screen</button>
+  <button id="btn-hp"  type="button" aria-label="Keyboard help">?</button>
+</div>
+
+<div id="overview" role="dialog" aria-modal="true" aria-label="All slides">
+  <h2>All slides, click to jump</h2>
+  <div id="ovgrid"></div>
+</div>
+
+<div id="help" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts">
+  <div class="box">
+    <h2>Teach Mode controls</h2>
+    <dl>
+      <dt>&rarr; &darr; Space</dt><dd>Next step, then next slide</dd>
+      <dt>&larr; &uarr;</dt><dd>Back</dd>
+      <dt>Home / End</dt><dd>First / last slide</dd>
+      <dt>O</dt><dd>All slides, click to jump</dd>
+      <dt>F</dt><dd>Full screen</dd>
+      <dt>?</dt><dd>This panel</dd>
+    </dl>
+    <p class="close">Press Escape or ? to close.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var stage    = document.getElementById('stage');
+  var slides   = Array.prototype.slice.call(stage.querySelectorAll('.slide'));
+  var progress = document.getElementById('progress');
+  var counter  = document.getElementById('counter');
+  var overview = document.getElementById('overview');
+  var ovgrid   = document.getElementById('ovgrid');
+  var help     = document.getElementById('help');
+
+  var i = 0;    // current slide
+  var step = 0; // steps revealed on the current slide
+
+  function stepsOf(slide) {
+    var seen = {}, out = [];
+    Array.prototype.forEach.call(slide.querySelectorAll('[data-step]'), function (el) {
+      var n = parseInt(el.getAttribute('data-step'), 10);
+      if (!isNaN(n) && !seen[n]) { seen[n] = 1; out.push(n); }
+    });
+    return out.sort(function (a, b) { return a - b; });
+  }
+
+  function paintSteps() {
+    var order = stepsOf(slides[i]);
+    var upto  = order.slice(0, step);
+    Array.prototype.forEach.call(slides[i].querySelectorAll('[data-step]'), function (el) {
+      var n = parseInt(el.getAttribute('data-step'), 10);
+      el.classList.toggle('shown', upto.indexOf(n) !== -1);
+    });
+  }
+
+  function show(n, revealAll) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function (s, k) { s.classList.toggle('active', k === i); });
+    step = revealAll ? stepsOf(slides[i]).length : 0;
+    paintSteps();
+    counter.textContent = (i + 1) + ' / ' + slides.length;
+    progress.style.width = ((i + 1) / slides.length * 100) + '%';
+    if (overview.classList.contains('show')) markHere();
+  }
+
+  function next() {
+    if (step < stepsOf(slides[i]).length) { step++; paintSteps(); return; }
+    if (i < slides.length - 1) show(i + 1, false);
+  }
+
+  function prev() {
+    if (step > 0) { step--; paintSteps(); return; }
+    if (i > 0) show(i - 1, true);
+  }
+
+  function fit() {
+    var pad = 0;
+    var s = Math.min(
+      (window.innerWidth  - pad) / 1280,
+      (window.innerHeight - pad) / 720
+    );
+    stage.style.setProperty('--scale', s);
+  }
+  window.addEventListener('resize', fit);
+
+  function buildOverview() {
+    slides.forEach(function (s, k) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      if (s.classList.contains('dark')) b.className = 'dk';
+      b.innerHTML = '<span class="n">' + String(k + 1).padStart(2, '0') + '</span>' +
+                    '<span class="t"></span>';
+      b.querySelector('.t').textContent = s.getAttribute('data-title') || ('Slide ' + (k + 1));
+      b.addEventListener('click', function () { toggleOverview(false); show(k, false); });
+      ovgrid.appendChild(b);
+    });
+  }
+  function markHere() {
+    Array.prototype.forEach.call(ovgrid.children, function (b, k) {
+      b.classList.toggle('here', k === i);
+    });
+  }
+  function toggleOverview(on) {
+    var want = (typeof on === 'boolean') ? on : !overview.classList.contains('show');
+    overview.classList.toggle('show', want);
+    if (want) markHere();
+  }
+
+  function toggleFs() {
+    if (!document.fullscreenElement) {
+      if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+    } else if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var k = e.key;
+
+    if (k === 'Escape') {
+      if (help.classList.contains('show'))     { help.classList.remove('show');     e.preventDefault(); return; }
+      if (overview.classList.contains('show')) { toggleOverview(false);             e.preventDefault(); return; }
+      return;
+    }
+
+    switch (k) {
+      case 'ArrowRight': case 'ArrowDown': case ' ': case 'PageDown':
+        next(); e.preventDefault(); break;
+      case 'ArrowLeft': case 'ArrowUp': case 'Backspace': case 'PageUp':
+        prev(); e.preventDefault(); break;
+      case 'Home': show(0, false); e.preventDefault(); break;
+      case 'End':  show(slides.length - 1, true); e.preventDefault(); break;
+      case 'o': case 'O': toggleOverview(); e.preventDefault(); break;
+      case 'f': case 'F': toggleFs(); e.preventDefault(); break;
+      case '?': help.classList.toggle('show'); e.preventDefault(); break;
+    }
+  });
+
+  document.getElementById('viewport').addEventListener('click', function (e) {
+    if (overview.classList.contains('show') || help.classList.contains('show')) return;
+    (e.clientX < window.innerWidth * 0.24 ? prev : next)();
+  });
+  help.addEventListener('click', function () { help.classList.remove('show'); });
+
+  var tx = null;
+  document.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].clientX; }, { passive: true });
+  document.addEventListener('touchend', function (e) {
+    if (tx === null) return;
+    var dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 45) (dx < 0 ? next : prev)();
+    tx = null;
+  }, { passive: true });
+
+  document.getElementById('btn-prev').addEventListener('click', function (e) { e.stopPropagation(); prev(); });
+  document.getElementById('btn-next').addEventListener('click', function (e) { e.stopPropagation(); next(); });
+  document.getElementById('btn-ov').addEventListener('click',   function (e) { e.stopPropagation(); toggleOverview(); });
+  document.getElementById('btn-fs').addEventListener('click',   function (e) { e.stopPropagation(); toggleFs(); });
+  document.getElementById('btn-hp').addEventListener('click',   function (e) { e.stopPropagation(); help.classList.toggle('show'); });
+
+  slides.forEach(function (s, k) {
+    var mark = document.createElement('div');
+    mark.className = 'topicmark';
+    mark.textContent = 'Topic 1.4 · The Americas';
+    var no = document.createElement('div');
+    no.className = 'slideno';
+    no.textContent = String(k + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+    if (!s.classList.contains('cover')) s.appendChild(mark);
+    s.appendChild(no);
+  });
+
+  buildOverview();
+  fit();
+  show(0, false);
+})();
+</script>
+</body>
+</html>

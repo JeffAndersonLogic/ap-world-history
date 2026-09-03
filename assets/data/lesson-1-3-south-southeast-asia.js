@@ -86,6 +86,11 @@ window.BEHISTORICAL_LESSON = {
     ],
     prompt: 'Using the maps and what you know, explain how geographic features of South and Southeast Asia helped create the religious and political diversity of this region between 1200 and 1450.'
   },
+  classPresentation: {
+    title: 'Class Slides: South and Southeast Asia',
+    desc: 'Follow along during class on your own device, or reopen these slides anytime to review the lecture on belief systems, temple states, and the maritime world.',
+    url: 'deck-topic-1-3-south-southeast-asia-student.html'
+  },
   deepReading: {
     title: 'Rice, Water, and the Strait',
     desc: 'A textbook-depth companion on land states and sea states side by side: Vijayanagara and Angkor on water and rice, Srivijaya, Majapahit and Melaka on the monsoon and the strait, and what religion did for each. Optional, and the fastest way to be ready for the comparison this topic asks for.',

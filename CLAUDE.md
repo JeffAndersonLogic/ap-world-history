@@ -100,6 +100,7 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-foundations-readings.js`, rebuild the six Foundations First & 10 readings from `scripts/lib/foundations-f10-content.js`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit `foundations/first-and-10-foundations-*.html`; they are generated.
 - `node scripts/build-deep-readings.js`, rebuild the deep readings from `scripts/lib/deep-reading-content/`. `--check` fails on drift without writing, which is what the offline suite runs. Never hand-edit a generated `deep-reading-*.html`, in `foundations/` or in any `unit-N/`. See "Deep Readings" below.
 - `node scripts/build-ebook.js`, compile the deep readings for a volume into `ebook/<volume>.html`. `--check` fails on drift without writing, which is what the offline suite runs. See "The eBook" below.
+- `node scripts/build-student-decks.js`, generate the student-facing copy of each Teach Mode slide deck from its teacher deck, with every presenter note and the Blackout control removed from the file's actual bytes rather than hidden with CSS. `--check` fails on drift without writing, wired into `scripts/test/readings-reproducible.test.js` in the offline suite. See "Class Presentations" below.
 - `node scripts/test/ebook-a11y.test.js`, drive the library and every volume in
   `VOLUMES` in Chromium and assert the WCAG 2.1 AA contract: skip link first and visible,
   one `<main>` with the footer outside it, a focus ring on every interactive
@@ -838,6 +839,45 @@ The test is **polarity-agnostic**: it asserts contrast, not lightness, so flippi
 back to dark stays a design call. What it will not allow is a half-done flip. Gold
 headings on paper are 2.1:1, so changing the panel without the headings leaves the
 title unreadable with every structural check still green.
+
+## Class Presentations
+
+Some topics also carry a live, projector-first slide deck (`unit-N/deck-topic-X-X-*.html`,
+built to the Teach Mode shell: fixed 1280x720 board, reveal steps, presenter notes,
+a Notes panel, and a Blackout control). It is the artifact actually taught from,
+in the room, that day, which is a different thing from either a lecture card or a
+video clip.
+
+**A slide deck's presenter notes are written like a coach talking to the teacher
+about the room**, and there is no server here to withhold them: this is static
+files on GitHub Pages, so a `?mode=student` URL still downloads the identical
+bytes notes included, and hiding the Notes button with CSS still ships the notes
+to anyone who opens dev tools. The only way to make them genuinely absent from
+what a student's browser receives is a second file that never contains them.
+
+**`scripts/build-student-decks.js` generates that second file.** `DECKS` in that
+script is the one place a deck is declared, the same reason `VOLUMES` is declared
+in `build-ebook.js`: which decks exist is an editorial fact. It strips every
+`data-notes` attribute, the Notes button and panel and its N shortcut, and the
+Blackout control and its B shortcut and CSS, from the teacher deck's own bytes,
+verifying by exact literal match rather than a loose regex so a shape it does not
+recognize fails loud instead of silently shipping something half-stripped.
+**Never hand-edit a `-student.html` file.** Edit the teacher deck and rebuild.
+`--check` fails on drift without writing, wired into
+`scripts/test/readings-reproducible.test.js` in the offline suite.
+
+**The student deck is reached from a callout above the concept cards, not from
+where a video clip sits.** `renderClassPresentation()` in the unit renderer reads
+a topic's `classPresentation: { title, desc, url }` field and injects the callout
+via `main-lecture-grid.insertAdjacentHTML('beforebegin', ...)`, guarded on its own
+id the way `renderDeepReading()` is, so a re-render never doubles the card. A
+topic with no `classPresentation` field shows no trace of it, the same
+self-hiding contract as the video block and the deep-reading banner. It sits
+*above* the cards and gets its own label, "In-Class Presentation", rather than
+being grouped with video clips, because a video is outside supplementary media
+and this is the primary artifact for the student who sat in the room; folding it
+into the video block would misdescribe what it is. `classPresentation.url` must
+always point at the generated `-student.html` file, never at the teacher deck.
 
 ## Video Clips
 

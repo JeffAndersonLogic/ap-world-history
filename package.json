@@ -33,6 +33,7 @@
     "build:foundations": "node scripts/build-foundations-readings.js",
     "build:deep-readings": "node scripts/build-deep-readings.js",
     "build:ebook": "node scripts/build-ebook.js",
+    "build:student-decks": "node scripts/build-student-decks.js",
     "extract:foundations": "node scripts/extract-foundations-content.js",
     "build:readings": "node scripts/build-unit-readings.js",
     "extract:readings": "node scripts/extract-unit-content.js",

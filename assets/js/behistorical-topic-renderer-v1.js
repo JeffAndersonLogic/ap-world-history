@@ -456,6 +456,7 @@ if (L) {
 
   renderCollegeBoardFramework();
   renderLectureCards();
+  renderClassPresentation();
   wireLectureControls();
   renderDeepReading();
   renderVideoClips();
@@ -517,6 +518,39 @@ function renderLectureCards() {
       <h3>${seg.title}</h3>
       <ul class="lecture-list">${seg.bullets.map(b => `<li>${md(b)}</li>`).join('')}</ul>
     </article>`).join('');
+}
+
+// ── Class Presentation ──────────────────────────────────────────────────────────
+
+// The slide deck actually taught in class, distinct from a video clip: this is
+// not outside supplementary media, it is the primary artifact for a student who
+// sat in the room. It sits ABOVE the concept cards, not beside the video block,
+// because burying it among "extra resources" would misdescribe what it is.
+//
+// Injected rather than added to the 71 unit shells, the same reason
+// renderDeepReading() is, and guarded on its own id so a re-render never
+// doubles the card.
+//
+// A topic with no classPresentation field shows no trace of this, the same way
+// the video block and the deep-reading banner hide themselves.
+//
+// The URL here must always point at a generated "-student.html" deck (see
+// scripts/build-student-decks.js), never at the teacher deck directly: the
+// teacher file's presenter notes are plain text in the page, readable by
+// anyone who opens the Notes button, so pointing a student here at that file
+// would hand every student the same coaching language written for the teacher.
+function renderClassPresentation() {
+  const cp = L.classPresentation;
+  const grid = byId('main-lecture-grid');
+  if (!cp || !cp.url || !grid || byId('class-presentation-banner')) return;
+
+  grid.insertAdjacentHTML('beforebegin', `
+    <article class="card class-presentation-banner" id="class-presentation-banner" style="margin-bottom:1.5rem">
+      <div class="eyebrow">In-Class Presentation</div>
+      <h3>${cp.title || 'Follow Along or Review'}</h3>
+      <p>${cp.desc || 'Follow along during class on your own device, or reopen these slides anytime to review what was taught.'}</p>
+      <a class="btn" href="${cp.url}">Open Presentation</a>
+    </article>`);
 }
 
 // ── Deep reading ──────────────────────────────────────────────────────────────

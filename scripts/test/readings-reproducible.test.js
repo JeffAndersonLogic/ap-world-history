@@ -32,7 +32,8 @@ const SUITES = [
   ['scripts/build-unit6.js', 'Unit 6 readings, data, shells and rooms'],
   ['scripts/build-unit9.js', 'Unit 9 readings, data, shells and rooms'],
   ['scripts/build-deep-readings.js', 'deep readings vs scripts/lib/deep-reading-content/*'],
-  ['scripts/build-ebook.js', 'eBook volumes vs the same chapter modules']
+  ['scripts/build-ebook.js', 'eBook volumes vs the same chapter modules'],
+  ['scripts/build-student-decks.js', 'student decks vs their teacher decks, notes stripped']
 ];
 
 let failed = 0;
