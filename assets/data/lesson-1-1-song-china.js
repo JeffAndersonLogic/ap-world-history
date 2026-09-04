@@ -156,7 +156,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Primary Source: Fan Zhongyan's Memorial on Reform (1043 CE)",
     intro: "Political memorial, a formal written proposal from a high-ranking official to the emperor recommending policy changes. Fan Zhongyan was a Song scholar-official who rose through the civil service examination system and submitted this memorial to Emperor Renzong in 1043 CE.",
     text: "\"I humbly suggest that the court should order the prefectures and districts to recommend scholars of talent and virtue, and that the examination system should be restored to its proper rigor. Officials who gained their posts through purchase or hereditary privilege lack the learning to distinguish between the worthy and the unworthy. How then can they be expected to govern the people or select subordinates with care?\"",
-    attribution: "Adapted from Fan Zhongyan, 'Memorial to the Throne on Ten Matters of Reform' (Shitiao Shu), presented to Emperor Renzong, 1043 CE",
+    attribution: "Fan Zhongyan, memorial to Emperor Renzong, \"Memorial to the Throne on Ten Matters of Reform\" (Shitiao Shu), 1043 CE",
     questions: ["Use HIPP analysis (Historical situation, Intended audience, Purpose, Point of view) to explain what this document reveals about how Song officials justified the civil service examination system. What problem is Fan Zhongyan trying to solve, and what does his solution tell you about Song values?"]
   }
 };

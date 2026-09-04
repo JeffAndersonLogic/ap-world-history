@@ -188,7 +188,8 @@ window.BEHISTORICAL_LESSON = {
   primarySource: {
     title: "Primary Source: Marco Polo on the Silk Roads",
     intro: "Marco Polo traveled the Silk Roads in the late 13th century and recorded observations about trade, cities, and commerce across Central Asia and China. This adapted passage reflects his account of Kublai Khan's domains.",
-    text: "The Great Khan has established a system of posts throughout his lands. At every twenty-five miles there stands a station where fresh horses await any messenger who carries the Khan's seal. In this way the Khan receives news from the most distant places in only a few days. Along the roads between the great cities, travelers find rest houses called caravanserais, where merchants may sleep and feed their animals. The roads are safe under the Khan's protection, and merchants carry great quantities of silk, spices, and gems from one end of the empire to the other.",
+    text: "\"The Great Khan has established a system of posts throughout his lands. At every twenty-five miles there stands a station where fresh horses await any messenger who carries the Khan's seal. In this way the Khan receives news from the most distant places in only a few days. Along the roads between the great cities, travelers find rest houses called caravanserais, where merchants may sleep and feed their animals. The roads are safe under the Khan's protection, and merchants carry great quantities of silk, spices, and gems from one end of the empire to the other.\"",
+    attribution: "Marco Polo, The Travels of Marco Polo (Il Milione), describing the domains of Kublai Khan, dictated c. 1298",
     questions: [
       "What specific infrastructure does Marco Polo describe, and how does it help explain why Silk Road trade expanded under Mongol rule?",
       "What does this source reveal about the relationship between political power and commercial exchange?",

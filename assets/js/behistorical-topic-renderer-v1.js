@@ -1192,11 +1192,14 @@ function renderEvidence() {
 // ── Primary Source ────────────────────────────────────────────────────────────
 
 function renderPrimarySource() {
+  const attribution = L.primarySource.attribution;
   return `
     <div class="pop-grid">
       <article class="card pop-two-third">
         <h3>${L.primarySource.title}</h3>
         <p>${L.primarySource.intro}</p>
+        <p class="pq-doc-label">Document</p>
+        ${attribution ? `<p class="pq-source-line"><em>Source: ${attribution}.</em></p>` : ''}
         <blockquote>${L.primarySource.text}</blockquote>
       </article>
       <aside class="card pop-third">
