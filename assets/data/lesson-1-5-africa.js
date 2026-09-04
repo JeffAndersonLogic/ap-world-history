@@ -4,17 +4,21 @@ runOfShow:{
   apEmphasis:'Causation + governance + comparison',
   ced:'KC-3.2.I.D.ii',
   apSkill:'Causation',
-  totalMinutes:80,
+  totalMinutes:92,
   endTarget:'African states developed around different geographic and economic circumstances. Great Zimbabwe drew power from gold and Indian Ocean connections, Ethiopia combined Christian legitimacy with strategic geography and trade, and Hausa city-states benefited from trans-Saharan commerce and Islamic administrative connections. Trade, geography, and religion were not separate topics — they were mechanisms of state power.',
   phases:[
     {id:'beready',label:'BeReady',range:'0–5 min',minutes:5,
       retrieval:['What resource did Mexica rulers demand from conquered peoples?','How did mit’a strengthen the Inca state?','Give one example of geography influencing political organization in the Americas.'],
       bridge:'Yesterday geography helped determine how American states exercised power. Today we’re going to test whether that pattern also appears in Africa.'},
-    {id:'map',label:'Map',range:'5–11 min',minutes:6,
+    {id:'map',label:'Map',range:'5–12 min',minutes:7,
       anchors:[{label:'Great Zimbabwe',detail:'Southern African interior → gold → Swahili Coast → Indian Ocean'},{label:'Ethiopia',detail:'Highlands + Red Sea connections, Christian state'},{label:'Hausa kingdoms',detail:'West African city-states → trans-Saharan commercial networks'}],
-      teacherPrompt:'Before we learn anything else, which of these states looks most dependent upon trade?',
-      note:'Let students predict. You don’t need the right answer yet.'},
-    {id:'content',label:'Content',range:'11–32 min',minutes:21,
+      note:'Independent work, done alongside First & 10. Both submit through Gather All My Work to Canvas. Circulate and answer questions rather than leading a discussion.',
+      takeaway:'Geography helps explain the state-building choices coming up in today’s lecture.'},
+    {id:'first10',label:'First & 10',range:'12–23 min',minutes:11,module:'first10',
+      why:'Independent work, done alongside the Map module. This is the reading and its three response questions, the background students need before today’s lecture. It submits through Gather All My Work to Canvas.',
+      target:'Students can name at least one specific piece of evidence about African state-building from the reading, in their own words.',
+      teacherPrompt:'Circulate rather than lead a discussion. A student who finishes both Map and First & 10 early can preview Checkpoint 1’s framing question.'},
+    {id:'content',label:'Content',range:'23–44 min',minutes:21,
       intro:'Where can states get power? Resources, trade, religion/legitimacy, geographic position, labor/organization. Today we are looking for combinations of these — not memorizing kingdoms.',
       slides:[
         {id:'framework',title:'The Mechanism',minutes:2,
@@ -40,23 +44,49 @@ runOfShow:{
           keyPoint:'The result was a distinctive African Islam, shaped by geography and governance needs, not one uniform pattern.',
           apMove:'Don’t accept “Islam spread to Africa.” Push toward: trade contact → selective adoption → each state converting religious connection into its own governance tool.'}
       ]},
-    {id:'checkpoint1',label:'Checkpoint 1',range:'32–41 min',minutes:9,
+    {id:'checkpoint1',label:'Checkpoint 1',range:'44–53 min',minutes:9,
       listenFor:{weak:'Great Zimbabwe traded gold.',strong:'Great Zimbabwe’s control of interior gold connected it to Swahili and Indian Ocean trade, producing wealth that supported political authority and large-scale construction.'},
       lookFor:'fact → mechanism → state power'},
-    {id:'apApplication',label:'AP Skill Builder: Causation',range:'41–56 min',minutes:15,module:'skill',
+    {id:'apApplication',label:'AP Skill Builder: Causation',range:'53–68 min',minutes:15,module:'skill',
       why:'The existing Skill Builder is unusually well aligned to the learning objective: identify a cause → connect evidence → explain the effect.',
       target:'Access to Indian Ocean trade contributed to Great Zimbabwe’s growth because gold exports created wealth. That wealth increased rulers’ ability to organize labor and reinforce political authority. Not “Trade caused Great Zimbabwe.”'},
-    {id:'synthesis',label:'Cross-Regional Synthesis',range:'56–65 min',minutes:9,
+    {id:'synthesis',label:'Cross-Regional Synthesis',range:'68–77 min',minutes:9,
       table:[{state:'Great Zimbabwe',source:'Gold + Indian Ocean trade'},{state:'Ethiopia',source:'Christian legitimacy + strategic geography'},{state:'Hausa kingdoms',source:'Trans-Saharan trade + Islam'}],
       teacherPrompt:'Which factor seems most important across all three — geography, trade, or religion?',
       complicate:'Could any one of these factors really operate completely independently?',
       target:'Students start seeing systems (geography → trade → wealth → political power; trade → religious/cultural connections → legitimacy/administration) rather than vocabulary.'},
-    {id:'checkpoint2',label:'Checkpoint 2',range:'65–77 min',minutes:12,
+    {id:'checkpoint2',label:'Checkpoint 2',range:'77–89 min',minutes:12,
       note:'The existing CP2 is appropriately more demanding: at least two African examples, explaining how and why states developed and changed. Protect this time.'},
-    {id:'exit',label:'Exit',range:'77–80 min',minutes:3,
+    {id:'exit',label:'Exit',range:'89–92 min',minutes:3,
       prompt:'Trade created _____. Religion created _____. Geography created _____.',
       seed:'Tomorrow, we’re going to see whether Europe solves state-building problems the same way.'}
   ],
+  mustHaves:{
+    title:'What this lesson must cover',
+    intro:'The must-know facts and language for Topic 1.5, independent of which modules a given class actually reaches. Useful for a second teacher covering this topic, or for checking your own pacing at a glance.',
+    groups:[
+      {label:'Great Zimbabwe',items:[
+        {term:'Gold and Indian Ocean trade',detail:'interior gold connected Great Zimbabwe to the Swahili Coast and Indian Ocean trade networks'},
+        'The stone enclosures, built without mortar, are evidence of organized labor and political authority, not just architecture.'
+      ]},
+      {label:'Ethiopia',items:[
+        {term:'Solomonic dynasty',detail:'Christian legitimacy defined political authority'},
+        'Shared belief gave Ethiopia the legitimacy to resist outside pressure and maintain independence; it is not enough to say “Ethiopia was Christian.”'
+      ]},
+      {label:'Hausa kingdoms',items:[
+        'Independent city-states linked by trans-Saharan trade; no single, unified Hausa empire.',
+        {term:'Islam as an administrative tool',detail:'connected rulers to commercial, literate, legal, and political networks, not only a personal faith'}
+      ]},
+      {label:'AP language that must land',items:[
+        {term:'KC-3.2.I.D.ii',detail:'causation: how geography, trade, and religion combined to produce state power in each case'},
+        {term:'Skill: Causation',detail:'a strong answer connects a cause to evidence to an effect, not just “trade caused Great Zimbabwe”'}
+      ]},
+      {label:'Common misconceptions to correct',items:[
+        'Trade alone did not build these states; the mechanism is trade → wealth → organized labor → political authority.',
+        'Islam’s spread here was through trade contact and selective adoption, not conquest, and it produced a distinctive African Islam rather than one uniform pattern.'
+      ]}
+    ]
+  },
   assignmentStatus:{first10:'Required',map:'Class Use',classPresentation:'Class Use once completed',checkpoint1:'Required',skill:'Required',checkpoint2:'Required',evidence:'Support / alternate AP application',video:'Support',deepReading:'Support',source:'Extension',beSurreal:'Extension',beInTheRoom:'Extension / separate activity'},
   pacing:{
     protect:['Checkpoint 1','Checkpoint 2'],

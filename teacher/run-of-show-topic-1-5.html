@@ -47,6 +47,21 @@ button{font-family:var(--ui);cursor:pointer}
 .ros-tab[aria-current="true"] .lbl,.ros-tab[aria-current="true"] .rng{color:var(--ink)}
 .ros-tab.done .n::before{content:'✓ '}
 
+/* Must-Haves: a reference tab, not a timed phase, so it sits apart from the
+   strip's sequence rather than blending into it or getting its own timer
+   row. It survives independent seatwork with no teacher pacing it, and it
+   is what a second teacher opens first to know what this day has to cover. */
+.ros-tab.musthaves{background:var(--oxidized-brown);border:1px solid var(--rust-copper)}
+.ros-tab.musthaves .lbl{color:var(--clean-paper)}
+.ros-tab.musthaves[aria-current="true"]{background:var(--antique-gold);border-color:var(--antique-gold)}
+.ros-tab.musthaves[aria-current="true"] .lbl{color:var(--ink)}
+.ros-musthaves-intro{font-size:.95rem;color:var(--gunmetal-gray);margin:.3rem 0 1.1rem}
+.ros-musthave-group{margin-bottom:1.2rem}
+.ros-musthave-group h3{font-family:var(--ui);font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--rust-copper);margin:0 0 .5rem;padding-bottom:.35rem;border-bottom:1px solid #d8cbb9}
+.ros-musthave-group ul{margin:0;padding-left:1.2rem}
+.ros-musthave-group li{margin-bottom:.55rem;font-size:.95rem;line-height:1.5}
+.ros-musthave-group li strong{color:var(--oxidized-brown)}
+
 /* Body layout */
 .ros-body{flex:1;display:grid;grid-template-columns:1fr 320px;gap:1rem;padding:1rem 1.4rem 2rem;align-items:start}
 @media (max-width:860px){.ros-body{grid-template-columns:1fr}}
@@ -122,6 +137,15 @@ button{font-family:var(--ui);cursor:pointer}
 .ros-status-table{width:100%;font-size:.78rem;border-collapse:collapse}
 .ros-status-table td{padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
 .ros-status-table td:last-child{text-align:right;font-family:var(--ui);font-weight:700;font-size:.68rem;text-transform:uppercase;color:var(--muted-sandstone)}
+.ros-timelog-table th{font-family:var(--ui);font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-sandstone);text-align:left;padding-bottom:.3rem;border-bottom:1px solid rgba(255,255,255,.18);font-weight:700}
+.ros-timelog-table th:not(:first-child),.ros-timelog-table td:not(:first-child){text-align:right}
+.ros-timelog-table td{font-family:var(--ui);font-size:.72rem}
+.ros-timelog-table td.current{color:var(--antique-gold)}
+.ros-timelog-table td.log-actual{text-transform:none;letter-spacing:0;font-weight:700}
+.ros-timelog-table td.log-under{color:var(--muted-sandstone)}
+.ros-timelog-table td.log-good{color:#7FD37F}
+.ros-timelog-table td.log-over{color:#F0977A}
+.ros-timelog-table tfoot td{border-bottom:0;border-top:1px solid rgba(255,255,255,.18);padding-top:.4rem;font-weight:700}
 .ros-toggle{background:none;border:1px solid var(--aged-iron);color:var(--muted-sandstone);border-radius:6px;padding:.4rem .6rem;font-size:.72rem;width:100%}
 .ros-notes textarea{width:100%;min-height:90px;background:var(--ink);color:var(--warm-paper);border:1px solid var(--gunmetal-gray);border-radius:6px;padding:.5rem;font-family:var(--body);font-size:.85rem;resize:vertical}
 
@@ -165,8 +189,12 @@ button{font-family:var(--ui);cursor:pointer}
         <div class="ros-timer-whole">Whole class elapsed: <span id="ros-elapsed">00:00</span></div>
         <div class="ros-timer-controls">
           <button type="button" id="ros-timer-toggle">Start</button>
-          <button type="button" id="ros-timer-reset">Reset phase</button>
+          <button type="button" id="ros-timer-reset">Reset this phase's time</button>
         </div>
+      </div>
+      <div class="ros-panel ros-widget">
+        <h4>Time Log <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--muted-sandstone);font-size:.68rem">(this session only)</span></h4>
+        <table class="ros-status-table ros-timelog-table" id="ros-timelog-table"></table>
       </div>
       <div class="ros-panel ros-widget">
         <h4>At a Glance</h4>
@@ -192,13 +220,13 @@ button{font-family:var(--ui);cursor:pointer}
   <p class="ros-footer-note">Prototype only &mdash; not linked from any student page, not wired into the site's automated checks. Content above is pulled live from this topic's own lesson data file (runOfShow block), so editing that file is the only way to change what this page says.</p>
 </div>
 
-<script id="ros-data" type="application/json">{"meta":{"course":"AP WORLD HISTORY","unit":"Unit 1: The Global Tapestry","topic":"Topic 1.5","title":"State Building in Africa","subtitle":"Africa, c. 1200 to c. 1450","feedbackToolUrl":"https://student.magicschool.ai/s/login?joinCode=czwb9Q","canvasSubmissionNote":"Organize your thinking here, submit your final work in Canvas."},"runOfShow":{"question":"Why did different African states develop power in different ways?","apEmphasis":"Causation + governance + comparison","ced":"KC-3.2.I.D.ii","apSkill":"Causation","totalMinutes":80,"endTarget":"African states developed around different geographic and economic circumstances. Great Zimbabwe drew power from gold and Indian Ocean connections, Ethiopia combined Christian legitimacy with strategic geography and trade, and Hausa city-states benefited from trans-Saharan commerce and Islamic administrative connections. Trade, geography, and religion were not separate topics — they were mechanisms of state power.","phases":[{"id":"beready","label":"BeReady","range":"0–5 min","minutes":5,"retrieval":["What resource did Mexica rulers demand from conquered peoples?","How did mit’a strengthen the Inca state?","Give one example of geography influencing political organization in the Americas."],"bridge":"Yesterday geography helped determine how American states exercised power. Today we’re going to test whether that pattern also appears in Africa."},{"id":"map","label":"Map","range":"5–11 min","minutes":6,"anchors":[{"label":"Great Zimbabwe","detail":"Southern African interior → gold → Swahili Coast → Indian Ocean"},{"label":"Ethiopia","detail":"Highlands + Red Sea connections, Christian state"},{"label":"Hausa kingdoms","detail":"West African city-states → trans-Saharan commercial networks"}],"teacherPrompt":"Before we learn anything else, which of these states looks most dependent upon trade?","note":"Let students predict. You don’t need the right answer yet."},{"id":"content","label":"Content","range":"11–32 min","minutes":21,"intro":"Where can states get power? Resources, trade, religion/legitimacy, geographic position, labor/organization. Today we are looking for combinations of these — not memorizing kingdoms.","slides":[{"id":"framework","title":"The Mechanism","minutes":2,"landTheseIdeas":["States derive power from resources, trade, religion/legitimacy, geographic position, and labor/organization."]},{"id":"greatZimbabwe","title":"Great Zimbabwe","minutes":5,"landTheseIdeas":["Gold from the interior connected Great Zimbabwe to Swahili Coast and Indian Ocean trade.","Massive stone enclosures, built without mortar, demonstrate organized labor and political authority."],"teacherPrompt":"If a government can organize enough labor to build this, what can historians reasonably infer about political authority?","apMove":"Don’t accept “Great Zimbabwe traded gold.” Push toward: trade → wealth → labor organization → state capacity.","avoid":["detailed masonry techniques","exact dates of construction","architectural style comparisons"],"acrossTheWorld":{"comparisonTopic":"1.3 Srivijaya (maritime states)","teacherPrompt":"What do Great Zimbabwe and maritime Southeast Asian states have in common even though one is inland and one is maritime?","target":"Strategic access to trade networks can generate wealth and strengthen states."}},{"id":"ethiopia","title":"Ethiopia","minutes":5,"landTheseIdeas":["The Solomonic dynasty and Christian legitimacy defined political authority.","Lalibela and Red Sea connections supported political independence."],"teacherPrompt":"What does Ethiopia reveal about the relationship between belief systems and political authority?","keyPoint":"Not “Ethiopia was Christian” — Christian identity helped legitimize political authority and define the state.","apMove":"Don’t accept “Ethiopia was Christian.” Push toward: shared belief → legitimacy → the ability to resist outside pressure and maintain independence.","acrossTheWorld":{"comparisonTopic":"1.1 Song China: Confucian political legitimacy","teacherPrompt":"What do Confucian China and Christian Ethiopia reveal about belief systems and state power?","target":"Governments often connect political authority to larger belief systems."}},{"id":"hausa","title":"Hausa Kingdoms","minutes":5,"landTheseIdeas":["City-states linked by trans-Saharan trade, market centers, and no unified Hausa empire.","Islam functioned as an administrative and legitimacy tool."],"keyPoint":"Not “Hausa = Muslim kingdom” — Islam connected rulers to commercial, literate, legal, and political networks.","apMove":"Don’t accept “the Hausa were Muslim traders.” Push toward: religious network membership → administrative tools (law, literacy) → control over diverse urban populations."},{"id":"islam","title":"Islam as a Governance Tool","minutes":4,"landTheseIdeas":["Islam spread through trade networks, not conquest.","African rulers selectively adopted Islam: some converted fully, others used Islamic practice to strengthen trade relationships while preserving local customs."],"keyPoint":"The result was a distinctive African Islam, shaped by geography and governance needs, not one uniform pattern.","apMove":"Don’t accept “Islam spread to Africa.” Push toward: trade contact → selective adoption → each state converting religious connection into its own governance tool."}]},{"id":"checkpoint1","label":"Checkpoint 1","range":"32–41 min","minutes":9,"listenFor":{"weak":"Great Zimbabwe traded gold.","strong":"Great Zimbabwe’s control of interior gold connected it to Swahili and Indian Ocean trade, producing wealth that supported political authority and large-scale construction."},"lookFor":"fact → mechanism → state power"},{"id":"apApplication","label":"AP Skill Builder: Causation","range":"41–56 min","minutes":15,"module":"skill","why":"The existing Skill Builder is unusually well aligned to the learning objective: identify a cause → connect evidence → explain the effect.","target":"Access to Indian Ocean trade contributed to Great Zimbabwe’s growth because gold exports created wealth. That wealth increased rulers’ ability to organize labor and reinforce political authority. Not “Trade caused Great Zimbabwe.”"},{"id":"synthesis","label":"Cross-Regional Synthesis","range":"56–65 min","minutes":9,"table":[{"state":"Great Zimbabwe","source":"Gold + Indian Ocean trade"},{"state":"Ethiopia","source":"Christian legitimacy + strategic geography"},{"state":"Hausa kingdoms","source":"Trans-Saharan trade + Islam"}],"teacherPrompt":"Which factor seems most important across all three — geography, trade, or religion?","complicate":"Could any one of these factors really operate completely independently?","target":"Students start seeing systems (geography → trade → wealth → political power; trade → religious/cultural connections → legitimacy/administration) rather than vocabulary."},{"id":"checkpoint2","label":"Checkpoint 2","range":"65–77 min","minutes":12,"note":"The existing CP2 is appropriately more demanding: at least two African examples, explaining how and why states developed and changed. Protect this time."},{"id":"exit","label":"Exit","range":"77–80 min","minutes":3,"prompt":"Trade created _____. Religion created _____. Geography created _____.","seed":"Tomorrow, we’re going to see whether Europe solves state-building problems the same way."}],"assignmentStatus":{"first10":"Required","map":"Class Use","classPresentation":"Class Use once completed","checkpoint1":"Required","skill":"Required","checkpoint2":"Required","evidence":"Support / alternate AP application","video":"Support","deepReading":"Support","source":"Extension","beSurreal":"Extension","beInTheRoom":"Extension / separate activity"},"pacing":{"protect":["Checkpoint 1","Checkpoint 2"],"condensed":{"label":"60 minutes","route":"BeReady → map → condensed instruction → CP1 → Causation Builder → CP2."},"emergency":{"label":"45 minutes","route":"BeReady → three-state content core → CP1 → verbal causation comparison → CP2."},"skipFirst":["video","BeSurreal","Primary Source","Evidence Lab","extended map work","Mali if it distracts from the actual 1.5 illustrative examples","Mansa Musa biography","detailed Swahili Coast history","detailed religious doctrine","Great Zimbabwe construction methods","lists of Hausa cities","Ethiopian dynastic chronology"]}},"links":[{"label":"Open Lesson Page","url":"../unit-1/lesson-1-5-africa.html"},{"label":"Open Map Source","url":"../assets/images/instructional-maps/topic-1-5.svg"},{"label":"Open First & 10","url":"../unit-1/first-and-10-topic-1-5-africa-capture.html"},{"label":"Open Deep Reading","url":"../unit-1/deep-reading-topic-1-5-africa.html"},{"label":"Open BeInTheRoom","url":"../beintheroom/unit-1/great-zimbabwe-court.html"}]}</script>
+<script id="ros-data" type="application/json">{"meta":{"course":"AP WORLD HISTORY","unit":"Unit 1: The Global Tapestry","topic":"Topic 1.5","title":"State Building in Africa","subtitle":"Africa, c. 1200 to c. 1450","feedbackToolUrl":"https://student.magicschool.ai/s/login?joinCode=czwb9Q","canvasSubmissionNote":"Organize your thinking here, submit your final work in Canvas."},"runOfShow":{"question":"Why did different African states develop power in different ways?","apEmphasis":"Causation + governance + comparison","ced":"KC-3.2.I.D.ii","apSkill":"Causation","totalMinutes":92,"endTarget":"African states developed around different geographic and economic circumstances. Great Zimbabwe drew power from gold and Indian Ocean connections, Ethiopia combined Christian legitimacy with strategic geography and trade, and Hausa city-states benefited from trans-Saharan commerce and Islamic administrative connections. Trade, geography, and religion were not separate topics — they were mechanisms of state power.","phases":[{"id":"beready","label":"BeReady","range":"0–5 min","minutes":5,"retrieval":["What resource did Mexica rulers demand from conquered peoples?","How did mit’a strengthen the Inca state?","Give one example of geography influencing political organization in the Americas."],"bridge":"Yesterday geography helped determine how American states exercised power. Today we’re going to test whether that pattern also appears in Africa."},{"id":"map","label":"Map","range":"5–12 min","minutes":7,"anchors":[{"label":"Great Zimbabwe","detail":"Southern African interior → gold → Swahili Coast → Indian Ocean"},{"label":"Ethiopia","detail":"Highlands + Red Sea connections, Christian state"},{"label":"Hausa kingdoms","detail":"West African city-states → trans-Saharan commercial networks"}],"note":"Independent work, done alongside First & 10. Both submit through Gather All My Work to Canvas. Circulate and answer questions rather than leading a discussion.","takeaway":"Geography helps explain the state-building choices coming up in today’s lecture."},{"id":"first10","label":"First & 10","range":"12–23 min","minutes":11,"module":"first10","why":"Independent work, done alongside the Map module. This is the reading and its three response questions, the background students need before today’s lecture. It submits through Gather All My Work to Canvas.","target":"Students can name at least one specific piece of evidence about African state-building from the reading, in their own words.","teacherPrompt":"Circulate rather than lead a discussion. A student who finishes both Map and First & 10 early can preview Checkpoint 1’s framing question."},{"id":"content","label":"Content","range":"23–44 min","minutes":21,"intro":"Where can states get power? Resources, trade, religion/legitimacy, geographic position, labor/organization. Today we are looking for combinations of these — not memorizing kingdoms.","slides":[{"id":"framework","title":"The Mechanism","minutes":2,"landTheseIdeas":["States derive power from resources, trade, religion/legitimacy, geographic position, and labor/organization."]},{"id":"greatZimbabwe","title":"Great Zimbabwe","minutes":5,"landTheseIdeas":["Gold from the interior connected Great Zimbabwe to Swahili Coast and Indian Ocean trade.","Massive stone enclosures, built without mortar, demonstrate organized labor and political authority."],"teacherPrompt":"If a government can organize enough labor to build this, what can historians reasonably infer about political authority?","apMove":"Don’t accept “Great Zimbabwe traded gold.” Push toward: trade → wealth → labor organization → state capacity.","avoid":["detailed masonry techniques","exact dates of construction","architectural style comparisons"],"acrossTheWorld":{"comparisonTopic":"1.3 Srivijaya (maritime states)","teacherPrompt":"What do Great Zimbabwe and maritime Southeast Asian states have in common even though one is inland and one is maritime?","target":"Strategic access to trade networks can generate wealth and strengthen states."}},{"id":"ethiopia","title":"Ethiopia","minutes":5,"landTheseIdeas":["The Solomonic dynasty and Christian legitimacy defined political authority.","Lalibela and Red Sea connections supported political independence."],"teacherPrompt":"What does Ethiopia reveal about the relationship between belief systems and political authority?","keyPoint":"Not “Ethiopia was Christian” — Christian identity helped legitimize political authority and define the state.","apMove":"Don’t accept “Ethiopia was Christian.” Push toward: shared belief → legitimacy → the ability to resist outside pressure and maintain independence.","acrossTheWorld":{"comparisonTopic":"1.1 Song China: Confucian political legitimacy","teacherPrompt":"What do Confucian China and Christian Ethiopia reveal about belief systems and state power?","target":"Governments often connect political authority to larger belief systems."}},{"id":"hausa","title":"Hausa Kingdoms","minutes":5,"landTheseIdeas":["City-states linked by trans-Saharan trade, market centers, and no unified Hausa empire.","Islam functioned as an administrative and legitimacy tool."],"keyPoint":"Not “Hausa = Muslim kingdom” — Islam connected rulers to commercial, literate, legal, and political networks.","apMove":"Don’t accept “the Hausa were Muslim traders.” Push toward: religious network membership → administrative tools (law, literacy) → control over diverse urban populations."},{"id":"islam","title":"Islam as a Governance Tool","minutes":4,"landTheseIdeas":["Islam spread through trade networks, not conquest.","African rulers selectively adopted Islam: some converted fully, others used Islamic practice to strengthen trade relationships while preserving local customs."],"keyPoint":"The result was a distinctive African Islam, shaped by geography and governance needs, not one uniform pattern.","apMove":"Don’t accept “Islam spread to Africa.” Push toward: trade contact → selective adoption → each state converting religious connection into its own governance tool."}]},{"id":"checkpoint1","label":"Checkpoint 1","range":"44–53 min","minutes":9,"listenFor":{"weak":"Great Zimbabwe traded gold.","strong":"Great Zimbabwe’s control of interior gold connected it to Swahili and Indian Ocean trade, producing wealth that supported political authority and large-scale construction."},"lookFor":"fact → mechanism → state power"},{"id":"apApplication","label":"AP Skill Builder: Causation","range":"53–68 min","minutes":15,"module":"skill","why":"The existing Skill Builder is unusually well aligned to the learning objective: identify a cause → connect evidence → explain the effect.","target":"Access to Indian Ocean trade contributed to Great Zimbabwe’s growth because gold exports created wealth. That wealth increased rulers’ ability to organize labor and reinforce political authority. Not “Trade caused Great Zimbabwe.”"},{"id":"synthesis","label":"Cross-Regional Synthesis","range":"68–77 min","minutes":9,"table":[{"state":"Great Zimbabwe","source":"Gold + Indian Ocean trade"},{"state":"Ethiopia","source":"Christian legitimacy + strategic geography"},{"state":"Hausa kingdoms","source":"Trans-Saharan trade + Islam"}],"teacherPrompt":"Which factor seems most important across all three — geography, trade, or religion?","complicate":"Could any one of these factors really operate completely independently?","target":"Students start seeing systems (geography → trade → wealth → political power; trade → religious/cultural connections → legitimacy/administration) rather than vocabulary."},{"id":"checkpoint2","label":"Checkpoint 2","range":"77–89 min","minutes":12,"note":"The existing CP2 is appropriately more demanding: at least two African examples, explaining how and why states developed and changed. Protect this time."},{"id":"exit","label":"Exit","range":"89–92 min","minutes":3,"prompt":"Trade created _____. Religion created _____. Geography created _____.","seed":"Tomorrow, we’re going to see whether Europe solves state-building problems the same way."}],"mustHaves":{"title":"What this lesson must cover","intro":"The must-know facts and language for Topic 1.5, independent of which modules a given class actually reaches. Useful for a second teacher covering this topic, or for checking your own pacing at a glance.","groups":[{"label":"Great Zimbabwe","items":[{"term":"Gold and Indian Ocean trade","detail":"interior gold connected Great Zimbabwe to the Swahili Coast and Indian Ocean trade networks"},"The stone enclosures, built without mortar, are evidence of organized labor and political authority, not just architecture."]},{"label":"Ethiopia","items":[{"term":"Solomonic dynasty","detail":"Christian legitimacy defined political authority"},"Shared belief gave Ethiopia the legitimacy to resist outside pressure and maintain independence; it is not enough to say “Ethiopia was Christian.”"]},{"label":"Hausa kingdoms","items":["Independent city-states linked by trans-Saharan trade; no single, unified Hausa empire.",{"term":"Islam as an administrative tool","detail":"connected rulers to commercial, literate, legal, and political networks, not only a personal faith"}]},{"label":"AP language that must land","items":[{"term":"KC-3.2.I.D.ii","detail":"causation: how geography, trade, and religion combined to produce state power in each case"},{"term":"Skill: Causation","detail":"a strong answer connects a cause to evidence to an effect, not just “trade caused Great Zimbabwe”"}]},{"label":"Common misconceptions to correct","items":["Trade alone did not build these states; the mechanism is trade → wealth → organized labor → political authority.","Islam’s spread here was through trade contact and selective adoption, not conquest, and it produced a distinctive African Islam rather than one uniform pattern."]}]},"assignmentStatus":{"first10":"Required","map":"Class Use","classPresentation":"Class Use once completed","checkpoint1":"Required","skill":"Required","checkpoint2":"Required","evidence":"Support / alternate AP application","video":"Support","deepReading":"Support","source":"Extension","beSurreal":"Extension","beInTheRoom":"Extension / separate activity"},"pacing":{"protect":["Checkpoint 1","Checkpoint 2"],"condensed":{"label":"60 minutes","route":"BeReady → map → condensed instruction → CP1 → Causation Builder → CP2."},"emergency":{"label":"45 minutes","route":"BeReady → three-state content core → CP1 → verbal causation comparison → CP2."},"skipFirst":["video","BeSurreal","Primary Source","Evidence Lab","extended map work","Mali if it distracts from the actual 1.5 illustrative examples","Mansa Musa biography","detailed Swahili Coast history","detailed religious doctrine","Great Zimbabwe construction methods","lists of Hausa cities","Ethiopian dynastic chronology"]}},"links":[{"label":"Open Lesson Page","url":"../unit-1/lesson-1-5-africa.html"},{"label":"Open Map Source","url":"../assets/images/instructional-maps/topic-1-5.svg"},{"label":"Open First & 10","url":"../unit-1/first-and-10-topic-1-5-africa-capture.html"},{"label":"Open Deep Reading","url":"../unit-1/deep-reading-topic-1-5-africa.html"},{"label":"Open BeInTheRoom","url":"../beintheroom/unit-1/great-zimbabwe-court.html"}]}</script>
 <script>
 (function(){
   var DATA = JSON.parse(document.getElementById('ros-data').textContent);
   var RS = DATA.runOfShow;
   var phases = RS.phases;
-  var state = { phaseIndex: 0, slideIndex: 0, pacing: 'normal', running: false, phaseSeconds: 0, elapsed: 0 };
+  var state = { phaseIndex: 0, slideIndex: 0, pacing: 'normal', running: false, phaseSecondsByIndex: phases.map(function(){ return 0; }), elapsed: 0, view: 'phase' };
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   function mmss(sec){ sec = Math.max(0, Math.round(sec)); var m = Math.floor(sec/60), s = sec%60; return (m<10?'0':'')+m+':'+(s<10?'0':'')+s; }
@@ -206,14 +234,52 @@ button{font-family:var(--ui);cursor:pointer}
 
   function renderStrip(){
     var strip = document.getElementById('ros-strip');
-    strip.innerHTML = phases.map(function(p, i){
-      var cls = 'ros-tab' + (i < state.phaseIndex ? ' done' : '');
-      return '<button type="button" class="'+cls+'" data-phase="'+i+'" aria-current="'+(i===state.phaseIndex?'true':'false')+'">'
+    var html = phases.map(function(p, i){
+      var cls = 'ros-tab' + (i < state.phaseIndex && state.view === 'phase' ? ' done' : '');
+      var current = (state.view === 'phase' && i === state.phaseIndex);
+      return '<button type="button" class="'+cls+'" data-phase="'+i+'" aria-current="'+(current?'true':'false')+'">'
         + '<span class="n">'+(i+1)+'</span><span class="lbl">'+esc(p.label)+'</span><span class="rng">'+esc(p.range)+'</span></button>';
     }).join('');
+    if (RS.mustHaves) {
+      html += '<button type="button" class="ros-tab musthaves" id="ros-musthaves-tab" aria-current="'+(state.view==='mustHaves'?'true':'false')+'">'
+        + '<span class="n">Whole Lesson</span><span class="lbl">'+esc(RS.mustHaves.label || 'Must-Haves')+'</span></button>';
+    }
+    strip.innerHTML = html;
     Array.prototype.forEach.call(strip.querySelectorAll('[data-phase]'), function(btn){
       btn.addEventListener('click', function(){ goToPhase(Number(btn.getAttribute('data-phase'))); });
     });
+    var mhTab = document.getElementById('ros-musthaves-tab');
+    if (mhTab) mhTab.addEventListener('click', showMustHaves);
+  }
+
+  // Must-Haves is a reference view, not a phase: it carries no timer, no
+  // pace badge, and no Time Log row, because "read this before or during
+  // independent work" is not a duration to pace against. It exists for the
+  // class period a teacher lets students work through Map and First & 10
+  // on their own, with no phase timer running at all, and for a second
+  // teacher covering the same topic who needs the whole day's must-cover
+  // list at a glance rather than clicking through every phase to find it.
+  function renderMustHaves(){
+    var mh = RS.mustHaves;
+    var card = document.getElementById('ros-phase');
+    var groups = (mh.groups || []).map(function(g){
+      return '<div class="ros-musthave-group"><h3>'+esc(g.label)+'</h3><ul>' + g.items.map(function(item){
+        if (typeof item === 'string') return '<li>'+esc(item)+'</li>';
+        return '<li>' + (item.term ? '<strong>'+esc(item.term)+':</strong> ' : '') + esc(item.detail || '') + '</li>';
+      }).join('') + '</ul></div>';
+    }).join('');
+    card.innerHTML = '<div class="ros-kicker">Must-Haves &middot; Whole Lesson</div>'
+      + '<h2 class="ros-phase-title">'+esc(mh.title || 'What this lesson must cover')+'</h2>'
+      + (mh.intro ? '<p class="ros-musthaves-intro">'+esc(mh.intro)+'</p>' : '')
+      + groups
+      + '<div class="ros-nav"><button type="button" class="primary" id="ros-back-to-phase">&larr; Back to &ldquo;'+esc(phases[state.phaseIndex].label)+'&rdquo;</button></div>';
+    document.getElementById('ros-back-to-phase').addEventListener('click', function(){ goToPhase(state.phaseIndex); });
+  }
+
+  function showMustHaves(){
+    state.view = 'mustHaves';
+    renderStrip();
+    renderMustHaves();
   }
 
   function acrossTheWorldBox(a){
@@ -303,7 +369,7 @@ button{font-family:var(--ui);cursor:pointer}
     if (nextBtn) nextBtn.addEventListener('click', function(){ state.slideIndex++; renderPhase(); });
     document.getElementById('ros-prev-phase').addEventListener('click', function(){ goToPhase(state.phaseIndex-1); });
     document.getElementById('ros-next-phase').addEventListener('click', function(){ goToPhase(state.phaseIndex+1); });
-    resetPhaseTimer();
+    updateTimerDisplay();
   }
 
   function renderGlance(){
@@ -359,7 +425,7 @@ button{font-family:var(--ui);cursor:pointer}
 
   function goToPhase(i){
     if (i < 0 || i >= phases.length) return;
-    state.phaseIndex = i; state.slideIndex = 0;
+    state.phaseIndex = i; state.slideIndex = 0; state.view = 'phase';
     renderStrip(); renderPhase(); renderGlance();
   }
 
@@ -367,6 +433,14 @@ button{font-family:var(--ui);cursor:pointer}
   // a countdown reads as pressure ("18:42 remaining"); "you're at 4:20 of a
   // ~6 min target" reads as a status check. The pace badge is the only
   // urgency signal, and only fires once the target is actually passed.
+  //
+  // Time is kept PER PHASE and does not reset when you move to another tab
+  // (Next Phase, Previous Phase, or clicking a phase directly): each phase
+  // has its own running total, so leaving Content and coming back to it
+  // later resumes from what was already spent there rather than from zero.
+  // The point is the Time Log below, built from these same per-phase
+  // totals: a real record of where the actual class went long or short,
+  // to look back on after the bell rather than only in the moment.
   var timerHandle = null;
   function paceStatus(phaseSeconds, targetSeconds){
     if (targetSeconds <= 0) return { cls: 'on-pace', label: 'On Pace' };
@@ -375,23 +449,40 @@ button{font-family:var(--ui);cursor:pointer}
     if (ratio >= 0.85) return { cls: 'wrapping-up', label: 'Wrapping Up' };
     return { cls: 'on-pace', label: 'On Pace' };
   }
-  function resetPhaseTimer(){
-    state.phaseSeconds = 0;
+  function resetCurrentPhaseTime(){
+    state.phaseSecondsByIndex[state.phaseIndex] = 0;
     updateTimerDisplay();
   }
   function updateTimerDisplay(){
     var phase = phases[state.phaseIndex];
     var target = phase.minutes * 60;
-    document.getElementById('ros-phase-elapsed').textContent = mmss(state.phaseSeconds);
+    var spent = state.phaseSecondsByIndex[state.phaseIndex];
+    document.getElementById('ros-phase-elapsed').textContent = mmss(spent);
     document.getElementById('ros-phase-target').textContent = 'Target: ~' + phase.minutes + ' min';
     document.getElementById('ros-elapsed').textContent = mmss(state.elapsed);
-    var pace = paceStatus(state.phaseSeconds, target);
+    var pace = paceStatus(spent, target);
     var badge = document.getElementById('ros-pace');
     badge.className = 'ros-pace ' + pace.cls;
     badge.textContent = pace.label;
+    renderTimeLog();
+  }
+  function renderTimeLog(){
+    var t = document.getElementById('ros-timelog-table');
+    var totalSpent = 0;
+    var rows = phases.map(function(p, i){
+      var spent = state.phaseSecondsByIndex[i];
+      totalSpent += spent;
+      var target = p.minutes * 60;
+      var cls = spent === 0 ? 'log-under' : (spent > target ? 'log-over' : 'log-good');
+      return '<tr><td class="'+(i===state.phaseIndex?'current':'')+'">'+esc(p.label)+'</td>'
+        + '<td>~'+p.minutes+' min</td>'
+        + '<td class="log-actual '+cls+'">'+(spent === 0 ? '\u2014' : mmss(spent))+'</td></tr>';
+    }).join('');
+    var foot = '<tfoot><tr><td>Total</td><td>~'+RS.totalMinutes+' min</td><td class="log-actual">'+mmss(totalSpent)+'</td></tr></tfoot>';
+    t.innerHTML = '<thead><tr><th>Phase</th><th>Target</th><th>Actual</th></tr></thead><tbody>'+rows+'</tbody>'+foot;
   }
   function tick(){
-    state.phaseSeconds += 1;
+    state.phaseSecondsByIndex[state.phaseIndex] += 1;
     state.elapsed += 1;
     updateTimerDisplay();
   }
@@ -401,7 +492,7 @@ button{font-family:var(--ui);cursor:pointer}
     if (state.running) { timerHandle = setInterval(tick, 1000); }
     else { clearInterval(timerHandle); }
   });
-  document.getElementById('ros-timer-reset').addEventListener('click', resetPhaseTimer);
+  document.getElementById('ros-timer-reset').addEventListener('click', resetCurrentPhaseTime);
 
   // Pacing mode
   Array.prototype.forEach.call(document.querySelectorAll('[data-pacing]'), function(btn){

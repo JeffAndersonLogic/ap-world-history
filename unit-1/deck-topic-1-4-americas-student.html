@@ -61,16 +61,16 @@ body{font-family:var(--font-body);color:var(--ink)}
 
 /* ── Typography ───────────────────────────────────────────────────────── */
 .eyebrow{
-  font-family:var(--font-ui);font-weight:800;font-size:15px;
+  font-family:var(--font-ui);font-weight:800;font-size:16px;
   letter-spacing:.20em;text-transform:uppercase;color:var(--oxidized);
   margin:0 0 14px;
 }
 h1{font-family:var(--font-display);font-weight:900;font-size:64px;line-height:1.06;margin:0 0 18px;letter-spacing:.01em}
 h2{font-family:var(--font-display);font-weight:800;font-size:44px;line-height:1.12;margin:0 0 8px;color:var(--steel)}
-h3{font-family:var(--font-ui);font-weight:800;font-size:21px;line-height:1.25;margin:0 0 10px;color:var(--oxidized);letter-spacing:.01em}
+h3{font-family:var(--font-ui);font-weight:800;font-size:23px;line-height:1.25;margin:0 0 10px;color:var(--oxidized);letter-spacing:.01em}
 .deck-sub{font-size:22px;line-height:1.45;color:var(--gunmetal);margin:0 0 26px;font-style:italic}
 .slide.dark .deck-sub{color:var(--sandstone)}
-p{font-size:20px;line-height:1.55;margin:0 0 16px}
+p{font-size:22px;line-height:1.55;margin:0 0 16px}
 b,strong{color:var(--oxidized);font-weight:700}
 .slide.dark b,.slide.dark strong{color:var(--gold)}
 
@@ -84,7 +84,7 @@ b,strong{color:var(--oxidized);font-weight:700}
 ul.points{list-style:none;margin:0;padding:0}
 ul.points li{
   position:relative;padding-left:38px;margin-bottom:20px;
-  font-size:22px;line-height:1.5;
+  font-size:24px;line-height:1.5;
 }
 ul.points li::before{
   content:"";position:absolute;left:0;top:.52em;
@@ -106,16 +106,16 @@ ul.points li::before{
 
 .panel{
   background:var(--clean);border:1px solid var(--rule);border-radius:10px;
-  padding:24px 26px;border-top:5px solid var(--bronze);
-  display:flex;flex-direction:column;min-height:0;
+  padding:28px 28px;border-top:5px solid var(--bronze);
+  display:flex;flex-direction:column;justify-content:center;min-height:0;
 }
 .panel.gold{border-top-color:var(--gold)}
 .panel.rust{border-top-color:var(--rust)}
 .panel.iron{border-top-color:var(--iron)}
-.panel p{font-size:18px;line-height:1.5;margin:0 0 12px}
+.panel p{font-size:20px;line-height:1.5;margin:0 0 12px}
 .panel p:last-child{margin-bottom:0}
 .panel .tag{
-  font-family:var(--font-ui);font-size:12px;font-weight:800;letter-spacing:.14em;
+  font-family:var(--font-ui);font-size:13px;font-weight:800;letter-spacing:.14em;
   text-transform:uppercase;color:var(--iron);margin:0 0 6px;
 }
 
@@ -128,7 +128,7 @@ figure img{
 figure.contain img{object-fit:contain;background:var(--clean);padding:8px}
 figure img.is-fallback{object-fit:contain;background:var(--clean);padding:14px}
 figcaption{
-  font-family:var(--font-ui);font-size:13px;line-height:1.45;color:var(--iron);
+  font-family:var(--font-ui);font-size:15px;line-height:1.45;color:var(--iron);
   margin-top:10px;font-weight:500;
 }
 /* A failed image says so, loudly, instead of quietly looking like a design
@@ -153,8 +153,8 @@ figcaption{
   background:rgba(21,23,24,.95);color:var(--paper);border-left:6px solid var(--gold);
   border-radius:0;padding:16px 26px;
 }
-.hero-card .tag{font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
-.hero-card p{margin:0;font-size:19px;line-height:1.4;color:var(--paper)}
+.hero-card .tag{font-family:var(--font-ui);font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.hero-card p{margin:0;font-size:21px;line-height:1.4;color:var(--paper)}
 .hero-card b{color:var(--gold)}
 .hero-warn{position:absolute;left:26px;top:26px;right:26px;background:rgba(168,101,45,.95);color:var(--clean);
   font-family:var(--font-ui);font-weight:700;font-size:14px;border-radius:8px;padding:10px 16px;display:none}
@@ -170,26 +170,26 @@ figcaption{
 .stat-tile.gold{border-top-color:var(--gold)}
 .stat-tile.rust{border-top-color:var(--rust)}
 .stat-tile.iron{border-top-color:var(--iron)}
-.stat-tile .num{font-family:var(--font-display);font-weight:900;font-size:34px;color:var(--oxidized);line-height:1.05}
-.stat-tile .lbl{font-family:var(--font-ui);font-weight:700;font-size:14px;color:var(--iron);margin-top:10px;line-height:1.32}
+.stat-tile .num{font-family:var(--font-display);font-weight:900;font-size:38px;color:var(--oxidized);line-height:1.05}
+.stat-tile .lbl{font-family:var(--font-ui);font-weight:700;font-size:16px;color:var(--iron);margin-top:10px;line-height:1.32}
 
 /* ── Spotlight: one image beside a short stack of facts ──────────────── */
 .spotlight{display:flex;gap:34px;flex:1;min-height:0;align-items:stretch}
 .spotlight figure{flex:0 0 40%}
-.spotlight .facts{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;min-width:0}
+.spotlight .facts{flex:1;display:flex;flex-direction:column;justify-content:center;gap:20px;min-width:0}
 .spotlight .fact{padding-left:20px;border-left:3px solid var(--bronze)}
-.spotlight .fact > b{display:block;color:var(--oxidized);font-family:var(--font-ui);font-size:12px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:4px}
-.spotlight .fact p{margin:0;font-size:19px;line-height:1.42}
+.spotlight .fact > b{display:block;color:var(--oxidized);font-family:var(--font-ui);font-size:13px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:4px}
+.spotlight .fact p{margin:0;font-size:21px;line-height:1.42}
 
 /* ── Org chart: a hierarchy diagram, for a concept with no honest photo ── */
-.orgchart{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:14px 30px;font-family:var(--font-ui);font-weight:800;font-size:19px;letter-spacing:.03em}
-.org-line{width:2px;height:24px;background:var(--rule)}
-.org-row{display:flex;gap:20px;justify-content:center}
-.org-branch{display:flex;flex-direction:column;align-items:center;width:200px}
-.org-node{background:var(--clean);border:2px solid var(--bronze);border-radius:8px;padding:12px 16px;
-  font-family:var(--font-ui);font-weight:800;font-size:16px;color:var(--oxidized);text-align:center;width:100%}
-.org-sub{font-size:14px;color:var(--iron);margin-top:8px;text-align:center;font-family:var(--font-ui);line-height:1.4}
+.orgchart{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}
+.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:20px 38px;font-family:var(--font-ui);font-weight:800;font-size:25px;letter-spacing:.03em}
+.org-line{width:2px;height:40px;background:var(--rule)}
+.org-row{display:flex;gap:28px;justify-content:center}
+.org-branch{display:flex;flex-direction:column;align-items:center;width:220px}
+.org-node{background:var(--clean);border:2px solid var(--bronze);border-radius:8px;padding:18px 20px;
+  font-family:var(--font-ui);font-weight:800;font-size:21px;color:var(--oxidized);text-align:center;width:100%}
+.org-sub{font-size:17px;color:var(--iron);margin-top:12px;text-align:center;font-family:var(--font-ui);line-height:1.4}
 
 /* ── Flow: a numbered pipeline with connectors, for a mechanism ──────── */
 .flow{display:flex;align-items:stretch;gap:0;flex:1;min-height:0}
@@ -201,19 +201,19 @@ figcaption{
    Row padding stays tight; Cinzel runs about 50% wider than the Georgia
    fallback and a table that fits at your desk can overflow the fixed
    board once the real fonts load. Re-measure before loosening this. */
-table.compare{width:100%;border-collapse:collapse;font-size:18px}
+table.compare{width:100%;border-collapse:collapse;font-size:19px}
 table.compare th,table.compare td{
-  text-align:left;padding:10px 16px;border-bottom:1px solid var(--rule);vertical-align:top;
+  text-align:left;padding:12px 16px;border-bottom:1px solid var(--rule);vertical-align:top;
 }
 table.compare thead th{
-  font-family:var(--font-ui);font-size:15px;font-weight:800;letter-spacing:.12em;
+  font-family:var(--font-ui);font-size:16px;font-weight:800;letter-spacing:.12em;
   text-transform:uppercase;color:var(--clean);background:var(--gunmetal);
   border-bottom:none;
 }
 table.compare thead th:first-child{background:var(--steel);border-radius:8px 0 0 0}
 table.compare thead th:last-child{border-radius:0 8px 0 0}
 table.compare tbody th{
-  font-family:var(--font-ui);font-size:16px;font-weight:800;color:var(--oxidized);
+  font-family:var(--font-ui);font-size:17px;font-weight:800;color:var(--oxidized);
   letter-spacing:.06em;text-transform:uppercase;width:172px;background:var(--tint,#f6efe1);
 }
 table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border-bottom:none}
@@ -221,13 +221,13 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 /* ── The one thing to write down ─────────────────────────────────────── */
 .writethis{
   margin-top:20px;background:var(--steel);color:var(--paper);
-  border-radius:10px;padding:15px 24px;border-left:6px solid var(--gold);
+  border-radius:10px;padding:18px 26px;border-left:6px solid var(--gold);
 }
 .writethis .tag{
-  font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.16em;
+  font-family:var(--font-ui);font-size:13px;font-weight:800;letter-spacing:.16em;
   text-transform:uppercase;color:var(--gold);margin:0 0 5px;
 }
-.writethis p{margin:0;font-size:21px;line-height:1.35;color:var(--paper)}
+.writethis p{margin:0;font-size:24px;line-height:1.35;color:var(--paper)}
 .writethis b,.writethis strong{color:var(--gold)}
 
 /* ── Term chips ───────────────────────────────────────────────────────── */
@@ -393,10 +393,10 @@ function onImgFail(el, localSrc) {
   <div class="rule"></div>
   <div class="cols c2">
     <figure class="contain">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Basin_of_Mexico_1519_map-en.svg"
-           alt="Map of the Basin of Mexico around 1519, showing the lakes and cities of the Mexica heartland"
+      <img src="../assets/images/lecture/unit-1/topic-1-4/mesoamerica-empires-map-bentley.webp"
+           alt="Map of the Aztec, Toltec, and Maya empires in Mesoamerica, with an inset of Lake Texcoco showing Tenochtitlan, Tlatelolco, and Teotihuacan"
            onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-4/map.svg')">
-      <figcaption>The Basin of Mexico, heart of the Mexica tribute empire.</figcaption>
+      <figcaption>Mesoamerica's empires, with Lake Texcoco and Tenochtitlan in the inset. <cite>Bentley, Traditions &amp; Encounters, 7th ed.</cite></figcaption>
     </figure>
     <figure class="contain" data-step="1">
       <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Inca%20road%20system%20map-en.svg"
@@ -796,20 +796,22 @@ function onImgFail(el, localSrc) {
   <p class="eyebrow">The Core Comparison</p>
   <h2>Comparing American state systems</h2>
   <div class="rule"></div>
-  <table class="compare">
-    <thead>
-      <tr><th></th><th>Mexica</th><th>Inca</th><th>North America</th></tr>
-    </thead>
-    <tbody>
-      <tr><th>Power base</th><td>Tribute from conquest</td><td>Labor, not goods</td><td>Trade and ceremony</td></tr>
-      <tr data-step="1"><th>Records</th><td>Pictorial codices</td><td>Quipu, knotted cords</td><td>Oral tradition</td></tr>
-      <tr data-step="2"><th>Religion does</th><td>Justifies conquest</td><td>Justifies the Sapa Inca</td><td>Organizes ceremony</td></tr>
-      <tr data-step="3"><th>Expansion by</th><td>Military conquest</td><td>Roads, administration</td><td>Regional trade</td></tr>
-    </tbody>
-  </table>
-  <div class="writethis" data-step="4">
-    <p class="tag">Key Takeaway &middot; the grid is in your eBook, do not copy it</p>
-    <p>Continuity, innovation, diversity, expansion. <b>Every row is evidence for all four.</b></p>
+  <div class="body">
+    <table class="compare">
+      <thead>
+        <tr><th></th><th>Mexica</th><th>Inca</th><th>North America</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>Power base</th><td>Tribute from conquest</td><td>Labor, not goods</td><td>Trade and ceremony</td></tr>
+        <tr data-step="1"><th>Records</th><td>Pictorial codices</td><td>Quipu, knotted cords</td><td>Oral tradition</td></tr>
+        <tr data-step="2"><th>Religion does</th><td>Justifies conquest</td><td>Justifies the Sapa Inca</td><td>Organizes ceremony</td></tr>
+        <tr data-step="3"><th>Expansion by</th><td>Military conquest</td><td>Roads, administration</td><td>Regional trade</td></tr>
+      </tbody>
+    </table>
+    <div class="writethis" data-step="4">
+      <p class="tag">Key Takeaway &middot; the grid is in your eBook, do not copy it</p>
+      <p>Continuity, innovation, diversity, expansion. <b>Every row is evidence for all four.</b></p>
+    </div>
   </div>
 </section>
 
@@ -818,7 +820,7 @@ function onImgFail(el, localSrc) {
   <p class="eyebrow">What You Must Be Able To Do</p>
   <h2>The takeaway</h2>
   <div class="rule"></div>
-  <div class="body top">
+  <div class="body">
     <p class="tag" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized)">Checkpoint 1 &middot; Evidence for state systems</p>
     <div class="chips">
       <span class="chip">Maya city-states</span>
