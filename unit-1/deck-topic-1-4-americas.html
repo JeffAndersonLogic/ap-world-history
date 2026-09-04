@@ -137,16 +137,21 @@ figcaption{
 .img-broken{outline:3px dashed var(--rust);outline-offset:-3px}
 .warn{color:var(--oxidized)}
 
-/* ── Hero: a full-bleed photograph with a floating caption card ─────────
+/* ── Hero: a photograph with a caption card stacked below it ────────────
    Used where the picture IS the point (Tenochtitlan, Machu Picchu) rather
-   than an illustration beside the prose. */
-.hero-wrap{position:relative;flex:1;min-height:0;border-radius:10px;overflow:hidden;border:1px solid var(--rule)}
-.hero-wrap img{width:100%;height:100%;object-fit:cover;display:block;background:var(--charcoal)}
+   than an illustration beside the prose. The caption used to float on top
+   of the photo's bottom edge; on a busy image (Tenochtitlan's dense city
+   grid, for one) that overlay sat directly over the content the picture
+   was there to show. Stacking the card below the photo, in normal flow
+   instead of an absolute overlay, keeps the same look without ever
+   covering the image. */
+.hero-wrap{position:relative;flex:1;min-height:0;display:flex;flex-direction:column;border-radius:10px;overflow:hidden;border:1px solid var(--rule)}
+.hero-wrap img{width:100%;flex:1;min-height:0;object-fit:cover;display:block;background:var(--charcoal)}
 .hero-wrap img.is-fallback{object-fit:contain;background:var(--clean);padding:26px}
 .hero-card{
-  position:absolute;left:26px;right:26px;bottom:26px;
-  background:rgba(21,23,24,.88);color:var(--paper);border-left:6px solid var(--gold);
-  border-radius:8px;padding:18px 26px;
+  position:relative;flex:none;
+  background:rgba(21,23,24,.95);color:var(--paper);border-left:6px solid var(--gold);
+  border-radius:0;padding:16px 26px;
 }
 .hero-card .tag{font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
 .hero-card p{margin:0;font-size:19px;line-height:1.4;color:var(--paper)}
