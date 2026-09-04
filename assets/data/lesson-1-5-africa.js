@@ -61,6 +61,32 @@ runOfShow:{
       prompt:'Trade created _____. Religion created _____. Geography created _____.',
       seed:'Tomorrow, we’re going to see whether Europe solves state-building problems the same way.'}
   ],
+  mustHaves:{
+    title:'What this lesson must cover',
+    intro:'The must-know facts and language for Topic 1.5, independent of which modules a given class actually reaches. Useful for a second teacher covering this topic, or for checking your own pacing at a glance.',
+    groups:[
+      {label:'Great Zimbabwe',items:[
+        {term:'Gold and Indian Ocean trade',detail:'interior gold connected Great Zimbabwe to the Swahili Coast and Indian Ocean trade networks'},
+        'The stone enclosures, built without mortar, are evidence of organized labor and political authority, not just architecture.'
+      ]},
+      {label:'Ethiopia',items:[
+        {term:'Solomonic dynasty',detail:'Christian legitimacy defined political authority'},
+        'Shared belief gave Ethiopia the legitimacy to resist outside pressure and maintain independence; it is not enough to say “Ethiopia was Christian.”'
+      ]},
+      {label:'Hausa kingdoms',items:[
+        'Independent city-states linked by trans-Saharan trade; no single, unified Hausa empire.',
+        {term:'Islam as an administrative tool',detail:'connected rulers to commercial, literate, legal, and political networks, not only a personal faith'}
+      ]},
+      {label:'AP language that must land',items:[
+        {term:'KC-3.2.I.D.ii',detail:'causation: how geography, trade, and religion combined to produce state power in each case'},
+        {term:'Skill: Causation',detail:'a strong answer connects a cause to evidence to an effect, not just “trade caused Great Zimbabwe”'}
+      ]},
+      {label:'Common misconceptions to correct',items:[
+        'Trade alone did not build these states; the mechanism is trade → wealth → organized labor → political authority.',
+        'Islam’s spread here was through trade contact and selective adoption, not conquest, and it produced a distinctive African Islam rather than one uniform pattern.'
+      ]}
+    ]
+  },
   assignmentStatus:{first10:'Required',map:'Class Use',classPresentation:'Class Use once completed',checkpoint1:'Required',skill:'Required',checkpoint2:'Required',evidence:'Support / alternate AP application',video:'Support',deepReading:'Support',source:'Extension',beSurreal:'Extension',beInTheRoom:'Extension / separate activity'},
   pacing:{
     protect:['Checkpoint 1','Checkpoint 2'],

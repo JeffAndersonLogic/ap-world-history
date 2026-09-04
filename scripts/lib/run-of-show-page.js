@@ -66,6 +66,21 @@ button{font-family:var(--ui);cursor:pointer}
 .ros-tab[aria-current="true"] .lbl,.ros-tab[aria-current="true"] .rng{color:var(--ink)}
 .ros-tab.done .n::before{content:'✓ '}
 
+/* Must-Haves: a reference tab, not a timed phase, so it sits apart from the
+   strip's sequence rather than blending into it or getting its own timer
+   row. It survives independent seatwork with no teacher pacing it, and it
+   is what a second teacher opens first to know what this day has to cover. */
+.ros-tab.musthaves{background:var(--oxidized-brown);border:1px solid var(--rust-copper)}
+.ros-tab.musthaves .lbl{color:var(--clean-paper)}
+.ros-tab.musthaves[aria-current="true"]{background:var(--antique-gold);border-color:var(--antique-gold)}
+.ros-tab.musthaves[aria-current="true"] .lbl{color:var(--ink)}
+.ros-musthaves-intro{font-size:.95rem;color:var(--gunmetal-gray);margin:.3rem 0 1.1rem}
+.ros-musthave-group{margin-bottom:1.2rem}
+.ros-musthave-group h3{font-family:var(--ui);font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--rust-copper);margin:0 0 .5rem;padding-bottom:.35rem;border-bottom:1px solid #d8cbb9}
+.ros-musthave-group ul{margin:0;padding-left:1.2rem}
+.ros-musthave-group li{margin-bottom:.55rem;font-size:.95rem;line-height:1.5}
+.ros-musthave-group li strong{color:var(--oxidized-brown)}
+
 /* Body layout */
 .ros-body{flex:1;display:grid;grid-template-columns:1fr 320px;gap:1rem;padding:1rem 1.4rem 2rem;align-items:start}
 @media (max-width:860px){.ros-body{grid-template-columns:1fr}}
@@ -277,7 +292,7 @@ function renderRunOfShow(L, opts) {
   var DATA = JSON.parse(document.getElementById('ros-data').textContent);
   var RS = DATA.runOfShow;
   var phases = RS.phases;
-  var state = { phaseIndex: 0, slideIndex: 0, pacing: 'normal', running: false, phaseSecondsByIndex: phases.map(function(){ return 0; }), elapsed: 0 };
+  var state = { phaseIndex: 0, slideIndex: 0, pacing: 'normal', running: false, phaseSecondsByIndex: phases.map(function(){ return 0; }), elapsed: 0, view: 'phase' };
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   function mmss(sec){ sec = Math.max(0, Math.round(sec)); var m = Math.floor(sec/60), s = sec%60; return (m<10?'0':'')+m+':'+(s<10?'0':'')+s; }
@@ -285,14 +300,52 @@ function renderRunOfShow(L, opts) {
 
   function renderStrip(){
     var strip = document.getElementById('ros-strip');
-    strip.innerHTML = phases.map(function(p, i){
-      var cls = 'ros-tab' + (i < state.phaseIndex ? ' done' : '');
-      return '<button type="button" class="'+cls+'" data-phase="'+i+'" aria-current="'+(i===state.phaseIndex?'true':'false')+'">'
+    var html = phases.map(function(p, i){
+      var cls = 'ros-tab' + (i < state.phaseIndex && state.view === 'phase' ? ' done' : '');
+      var current = (state.view === 'phase' && i === state.phaseIndex);
+      return '<button type="button" class="'+cls+'" data-phase="'+i+'" aria-current="'+(current?'true':'false')+'">'
         + '<span class="n">'+(i+1)+'</span><span class="lbl">'+esc(p.label)+'</span><span class="rng">'+esc(p.range)+'</span></button>';
     }).join('');
+    if (RS.mustHaves) {
+      html += '<button type="button" class="ros-tab musthaves" id="ros-musthaves-tab" aria-current="'+(state.view==='mustHaves'?'true':'false')+'">'
+        + '<span class="n">Whole Lesson</span><span class="lbl">'+esc(RS.mustHaves.label || 'Must-Haves')+'</span></button>';
+    }
+    strip.innerHTML = html;
     Array.prototype.forEach.call(strip.querySelectorAll('[data-phase]'), function(btn){
       btn.addEventListener('click', function(){ goToPhase(Number(btn.getAttribute('data-phase'))); });
     });
+    var mhTab = document.getElementById('ros-musthaves-tab');
+    if (mhTab) mhTab.addEventListener('click', showMustHaves);
+  }
+
+  // Must-Haves is a reference view, not a phase: it carries no timer, no
+  // pace badge, and no Time Log row, because "read this before or during
+  // independent work" is not a duration to pace against. It exists for the
+  // class period a teacher lets students work through Map and First & 10
+  // on their own, with no phase timer running at all, and for a second
+  // teacher covering the same topic who needs the whole day's must-cover
+  // list at a glance rather than clicking through every phase to find it.
+  function renderMustHaves(){
+    var mh = RS.mustHaves;
+    var card = document.getElementById('ros-phase');
+    var groups = (mh.groups || []).map(function(g){
+      return '<div class="ros-musthave-group"><h3>'+esc(g.label)+'</h3><ul>' + g.items.map(function(item){
+        if (typeof item === 'string') return '<li>'+esc(item)+'</li>';
+        return '<li>' + (item.term ? '<strong>'+esc(item.term)+':</strong> ' : '') + esc(item.detail || '') + '</li>';
+      }).join('') + '</ul></div>';
+    }).join('');
+    card.innerHTML = '<div class="ros-kicker">Must-Haves &middot; Whole Lesson</div>'
+      + '<h2 class="ros-phase-title">'+esc(mh.title || 'What this lesson must cover')+'</h2>'
+      + (mh.intro ? '<p class="ros-musthaves-intro">'+esc(mh.intro)+'</p>' : '')
+      + groups
+      + '<div class="ros-nav"><button type="button" class="primary" id="ros-back-to-phase">&larr; Back to &ldquo;'+esc(phases[state.phaseIndex].label)+'&rdquo;</button></div>';
+    document.getElementById('ros-back-to-phase').addEventListener('click', function(){ goToPhase(state.phaseIndex); });
+  }
+
+  function showMustHaves(){
+    state.view = 'mustHaves';
+    renderStrip();
+    renderMustHaves();
   }
 
   function acrossTheWorldBox(a){
@@ -438,7 +491,7 @@ function renderRunOfShow(L, opts) {
 
   function goToPhase(i){
     if (i < 0 || i >= phases.length) return;
-    state.phaseIndex = i; state.slideIndex = 0;
+    state.phaseIndex = i; state.slideIndex = 0; state.view = 'phase';
     renderStrip(); renderPhase(); renderGlance();
   }
 

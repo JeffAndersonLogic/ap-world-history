@@ -60,6 +60,36 @@ runOfShow:{
     {id:'exit',label:'Exit Retrieval',range:'88–93 min',minutes:5,
       prompt:'Complete this sentence: “States become powerful when they can __________ because __________.” Take 2–3 responses. Done.'}
   ],
+  mustHaves:{
+    title:'What this lesson must cover',
+    intro:'The must-know facts and language for Topic 1.4, independent of which modules a given class actually reaches. Useful for a second teacher covering this topic, or for checking your own pacing at a glance.',
+    groups:[
+      {label:'Mexica (Aztec)',items:[
+        {term:'Tenochtitlan',detail:'the island capital in Lake Texcoco, founded 1325'},
+        {term:'Tribute empire',detail:'military conquest, then tribute in goods and labor from conquered peoples, rather than direct rule'},
+        {term:'Chinampas',detail:'raised lake-bed fields that fed a city of roughly 200,000'},
+        'Religion, warfare, and tribute functioned as one system, not three separate topics.'
+      ]},
+      {label:'Inca',items:[
+        {term:'Mit’a',detail:'a rotational labor obligation; the Inca state taxed time and labor, not goods'},
+        {term:'Qhapaq Ñan',detail:'the road network that moved officials, armies, and goods across the Andes'},
+        {term:'Quipu',detail:'knotted-cord record-keeping; no alphabetic writing was needed for sophisticated administration'},
+        'The Sapa Inca claimed descent from Inti, the sun, the same divine-king logic as the Khmer devaraja from Topic 1.3.'
+      ]},
+      {label:'Maya and North America',items:[
+        'Maya city-states were independent and competing; no single ruler ever governed all Maya people.',
+        'Cahokia, Chaco, and Mesa Verde show complex, organized societies existed in the Americas beyond the Mexica and Inca.'
+      ]},
+      {label:'AP language that must land',items:[
+        {term:'KC-3.2.I.D.i',detail:'continuity, innovation, diversity, and expansion in scope and reach; every case study is evidence for at least one of these'},
+        {term:'Skill: Evidence in Sources',detail:'a strong answer names a specific piece of evidence, not a general summary'}
+      ]},
+      {label:'Common misconceptions to correct',items:[
+        'The Maya did not disappear; correct toward continued Maya societies after the Classic-period decline.',
+        'No alphabetic writing does not mean unsophisticated government; point to quipu, roads, and mit’a.'
+      ]}
+    ]
+  },
   assignmentStatus:{first10:'Required',classPresentation:'Class Use',map:'Class Use',checkpoint1:'Required',evidence:'Required',checkpoint2:'Required',video:'Support',deepReading:'Support',skill:'Support / use if Evidence Lab isn’t used',source:'Extension',beSurreal:'Extension',beInTheRoom:'Separate Extension / Optional'},
   pacing:{
     protect:['Checkpoint 2'],
