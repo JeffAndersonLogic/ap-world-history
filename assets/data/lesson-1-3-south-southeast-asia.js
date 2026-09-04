@@ -289,6 +289,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Primary Source: Ibn Battuta on India and the Indian Ocean World',
     intro: 'Ibn Battuta (1304–c. 1368/1369) was a Moroccan scholar and traveler who spent decades crossing the Islamic world, including an extended visit to the Delhi Sultanate. This adapted excerpt reflects his observations about religious diversity, trade, and the Indian Ocean world.',
     text: '"In the city of Calicut are merchants of all nations. In one quarter live the merchants from the lands of Islam; in another are those who follow the way of the Hindu kings. The sea-road brings wealth to every shore it touches, and the winds that blow from south to north carry with them not only goods but prayers, customs, and the names of God spoken in many tongues. I have seen mosques rising beside temples, and heard the call to prayer echo across markets where every kind of merchant gathers. The ruler who governs these ports must be wise enough to welcome all, for his power rests on the merchants who pass through."',
+    attribution: 'Ibn Battuta, Rihla (translated as The Travels of Ibn Battuta, 1325–1354), describing Calicut on the Malabar Coast',
     questions: [
       'What does Ibn Battuta\'s account suggest about the relationship between trade and religion in the Indian Ocean world?',
       'Why would port cities like Calicut be important sites of cultural exchange between different belief systems?',

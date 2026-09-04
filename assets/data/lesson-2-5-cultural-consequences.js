@@ -200,13 +200,14 @@ window.BEHISTORICAL_LESSON = {
   },
 
   primarySource: {
-    title: 'Primary Source: Ibn Battuta Describes Cultural Mixing in the Indian Ocean World',
-    intro: 'Ibn Battuta (1304–c.1368) was a Moroccan scholar who traveled more than 75,000 miles across the known world, visiting trade cities from West Africa to China. This adapted passage describes what he observed in Calicut, one of the great Indian Ocean port cities, and in Quanzhou, China\'s southern trade port.',
-    text: 'The city of Calicut is one of the great ports of the Indian Ocean. Ships come to it from China, Java, Ceylon, the Maldives, Yemen, and Persia. The merchants of every nation are found here, Hindus from the interior, Arab traders from Aden and Hormuz, and Malays from the eastern islands. Each nation has its own quarter, its own customs house, its own place of worship. The Sultan of Calicut is a Hindu, but he extends hospitality to merchants of all faiths, for trade brings greater wealth than any single religion. In Quanzhou, I found a city of remarkable size and commerce. There were four separate districts for Muslim merchants alone, each with its own Friday mosque. The Chinese merchants bowed to the great ships with a reverence that reminded me of prayer. In the harbor, the great junks of China sat beside the dhows of Arabia as if they had always been neighbors. I thought: here is where the world touches itself.',
+    title: 'Primary Source: Ibn Battuta Describes the Port of Zaytun (Quanzhou)',
+    intro: 'Ibn Battuta (1304–c. 1368) was a Moroccan scholar who traveled more than 75,000 miles across the known world. In 1345–1346, he reached the Chinese port that Arab and Persian sailors called Zaytun, known today as Quanzhou, one of the busiest harbors on the maritime Silk Road.',
+    text: '"The port of Zaytun is one of the largest in the world, or perhaps the very largest. I saw in it about a hundred large junks; as for small junks, they could not be counted for multitude. It is one of the greatest havens in the world for commerce."',
+    attribution: 'Ibn Battuta, Rihla (translated as The Travels of Ibn Battuta, 1325–1354), describing the port of Zaytun (Quanzhou), 1345–1346',
     questions: [
-      'What evidence does Ibn Battuta provide that Calicut and Quanzhou were sites of cultural mixing and exchange? List at least three specific details.',
-      'What does the Sultan of Calicut\'s behavior reveal about the relationship between trade and religion in Indian Ocean port cities? What does this suggest about how Islam spread through the region?',
-      'How does Ibn Battuta\'s account support the claim that trade routes were "cultural highways"? What are the limitations of this source for understanding cultural diffusion across all three Afro-Eurasian trade networks?'
+      'What evidence does Ibn Battuta provide that Zaytun (Quanzhou) was a major hub connecting the Indian Ocean and Silk Roads networks? List at least two specific details.',
+      'Why would a Moroccan scholar, thousands of miles from home, be both a valuable and a limited witness to describe a Chinese port?',
+      'What are the limitations of one traveler\'s account for understanding cultural diffusion across the Silk Roads, Indian Ocean, and trans-Saharan networks as a whole?'
     ]
   }
 };
