@@ -441,34 +441,33 @@ function onImgFail(el, localSrc) {
 <!-- ═════ 06 FEUDALISM ═════════════════════════════════════════════════════ -->
 <section class="slide" data-title="Feudalism: Land for Loyalty">
   <p class="eyebrow">The Political System</p>
-  <h2>Land for loyalty, four steps down</h2>
+  <h2>One hierarchy, four ranks</h2>
   <div class="rule"></div>
-  <div class="flow">
-    <div class="panel">
-      <p class="tag">Step 1</p>
-      <h3>Grant</h3>
-      <p>A king grants <b>land</b> to a warrior</p>
+  <div class="orgchart">
+    <div class="org-top">The King</div>
+    <div class="org-line" style="height:14px"></div>
+    <div class="org-row">
+      <div class="org-branch" style="width:420px">
+        <div class="org-node">Great Lords &amp; Nobles</div>
+        <div class="org-sub">Granted land for sworn loyalty and military service</div>
+      </div>
     </div>
-    <div class="arrow">&rarr;</div>
-    <div class="panel gold" data-step="1">
-      <p class="tag">Step 2</p>
-      <h3>Swear</h3>
-      <p>The warrior owes <b>loyalty and service</b></p>
+    <div class="org-line" data-step="1" style="height:14px"></div>
+    <div class="org-row" data-step="1">
+      <div class="org-branch" style="width:420px">
+        <div class="org-node">Knights</div>
+        <div class="org-sub">Land re-granted beneath them, on the same terms</div>
+      </div>
     </div>
-    <div class="arrow" data-step="1">&rarr;</div>
-    <div class="panel rust" data-step="2">
-      <p class="tag">Step 3</p>
-      <h3>Subdivide</h3>
-      <p>He grants land to <b>knights</b> beneath him</p>
-    </div>
-    <div class="arrow" data-step="2">&rarr;</div>
-    <div class="panel iron" data-step="3">
-      <p class="tag">Step 4</p>
-      <h3>Work</h3>
-      <p><b>Serfs</b> farm the manor underneath it all</p>
+    <div class="org-line" data-step="2" style="height:14px"></div>
+    <div class="org-row" data-step="2">
+      <div class="org-branch" style="width:420px">
+        <div class="org-node">Serfs</div>
+        <div class="org-sub">Work the manor, owing dues and labor for protection</div>
+      </div>
     </div>
   </div>
-  <div class="writethis" data-step="4">
+  <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
     <p>A serf is bound to the land. <b>A serf is not a slave, and that difference matters later.</b></p>
   </div>
@@ -479,27 +478,24 @@ function onImgFail(el, localSrc) {
   <p class="eyebrow">The Economic System</p>
   <h2>Manorialism: the quiet engine</h2>
   <div class="rule"></div>
-  <div class="stat-grid">
-    <div class="stat-tile">
-      <p class="num" style="font-size:24px">Heavy plow</p>
-      <p class="lbl">Turned the wet clay soils of the north</p>
+  <div class="cols split">
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Plan_mediaeval_manor.jpg"
+           alt="A plan of a medieval manor, showing the lord's demesne, the open fields worked in strips, the village, and the shared woodland and pasture at the edges"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/lecture-01.svg')">
+      <figcaption>A medieval manor, laid out: the lord's demesne, open fields worked in strips, the village, and shared woodland at the edges.</figcaption>
+    </figure>
+    <div>
+      <ul class="points">
+        <li>The <b>heavy plow</b> turned the wet clay soils of the north</li>
+        <li data-step="1">The <b>horse collar</b> made a faster animal usable for plowing</li>
+        <li data-step="2">The <b>three-field system</b> left only a third of the land idle</li>
+      </ul>
+      <div class="writethis" data-step="3">
+        <p class="tag">Key Takeaway</p>
+        <p>The manor was not stagnant. <b>It roughly doubled a continent's population before it broke anything.</b></p>
+      </div>
     </div>
-    <div class="stat-tile gold" data-step="1">
-      <p class="num" style="font-size:24px">Horse collar</p>
-      <p class="lbl">A faster animal, usable for plowing</p>
-    </div>
-    <div class="stat-tile rust" data-step="2">
-      <p class="num" style="font-size:24px">Three-field system</p>
-      <p class="lbl">Only a third of the land idle, not half</p>
-    </div>
-    <div class="stat-tile iron" data-step="3">
-      <p class="num">2x</p>
-      <p class="lbl">Europe's population, in three centuries</p>
-    </div>
-  </div>
-  <div class="writethis" data-step="4">
-    <p class="tag">Key Takeaway</p>
-    <p>The manor was not stagnant. <b>It doubled a continent's population before it broke anything.</b></p>
   </div>
 </section>
 
@@ -615,24 +611,27 @@ function onImgFail(el, localSrc) {
   <p class="eyebrow">Case Three &middot; What a Town Bought</p>
   <h2>&ldquo;Town air makes you free&rdquo;</h2>
   <div class="rule"></div>
-  <div class="cols split">
-    <div>
-      <ul class="points">
-        <li>A charter, often <b>purchased</b>, granted a market, a court, and self-government</li>
-        <li data-step="1">A serf inside the walls, unclaimed <b>a year and a day</b>, became free</li>
-        <li data-step="2"><b>Guilds</b> trained, priced, and increasingly gate-kept each craft</li>
-      </ul>
-      <div class="writethis" data-step="3">
-        <p class="tag">Key Takeaway</p>
-        <p>A lord sold legal freedom <b>for a payment he could actually count on</b>.</p>
-      </div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <p class="num" style="font-size:22px">Market &amp; Court</p>
+      <p class="lbl">A charter, often purchased, granted self-government</p>
     </div>
-    <figure>
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Plan_mediaeval_manor.jpg"
-           alt="A plan of a medieval manor, showing the fields, lord's demesne, and village that a town charter operated outside of"
-           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/lecture-01.svg')">
-      <figcaption>A medieval manor plan. A chartered town was a jurisdiction that sat entirely outside this order.</figcaption>
-    </figure>
+    <div class="stat-tile gold" data-step="1">
+      <p class="num" style="font-size:22px">A Year and a Day</p>
+      <p class="lbl">A serf inside the walls, unclaimed, became free</p>
+    </div>
+    <div class="stat-tile rust" data-step="2">
+      <p class="num" style="font-size:22px">Guilds</p>
+      <p class="lbl">Trained, priced, and increasingly gate-kept each craft</p>
+    </div>
+    <div class="stat-tile iron" data-step="3">
+      <p class="num" style="font-size:22px">Town Air</p>
+      <p class="lbl">A German legal fact, not a slogan</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>A lord sold legal freedom <b>for a payment he could actually count on</b>.</p>
   </div>
 </section>
 
