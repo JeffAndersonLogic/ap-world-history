@@ -69,6 +69,17 @@ button{font-family:var(--ui);cursor:pointer}
 .ros-box.good{background:#dfe9d8;border-left:4px solid var(--status-good)}
 .ros-box.connect{background:#e5dcf0;border-left:4px solid #7B4F9E}
 .ros-box.note{background:#e9e2d3;border-left:4px solid var(--aged-iron)}
+.ros-box.apmove{background:#f0e6cf;border-left:4px solid var(--antique-gold);font-size:.9rem}
+.ros-box.apmove .tag{font-family:var(--ui);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--oxidized-brown);font-weight:700;display:block;margin-bottom:.2rem}
+
+/* Secondary guidance (Avoid, Across the World, notes) is one click away, not
+   competing with Land/Ask/Listen for the teacher's glance at the screen. */
+.ros-more{margin-top:.7rem;border:1px solid #d8cbb9;border-radius:8px;background:#efe5d6}
+.ros-more summary{cursor:pointer;padding:.55rem .8rem;font-family:var(--ui);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--oxidized-brown);list-style:none}
+.ros-more summary::-webkit-details-marker{display:none}
+.ros-more summary::before{content:'▸ ';display:inline-block}
+.ros-more[open] summary::before{content:'▾ '}
+.ros-more .ros-more-body{padding:0 .8rem .8rem}
 
 .ros-listen{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:.6rem}
 @media (max-width:640px){.ros-listen{grid-template-columns:1fr}}
@@ -96,6 +107,12 @@ button{font-family:var(--ui);cursor:pointer}
 .ros-timer{font-family:var(--ui);font-size:2.1rem;font-weight:700;color:var(--clean-paper);letter-spacing:.02em}
 .ros-timer-label{font-size:.68rem;color:var(--muted-sandstone);text-transform:uppercase;letter-spacing:.08em}
 .ros-timer-row{display:flex;justify-content:space-between;align-items:baseline;margin-top:.3rem}
+.ros-timer-target{font-family:var(--ui);font-size:.85rem;color:var(--muted-sandstone)}
+.ros-pace{display:inline-block;margin-top:.6rem;font-family:var(--ui);font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .6rem;border-radius:999px}
+.ros-pace.on-pace{background:rgba(12,163,12,.18);color:#7FD37F}
+.ros-pace.wrapping-up{background:rgba(185,121,10,.2);color:#E0A845}
+.ros-pace.move-on{background:rgba(181,69,31,.25);color:#F0977A}
+.ros-timer-whole{font-size:.68rem;color:var(--muted-sandstone);margin-top:.5rem}
 .ros-timer-controls{display:flex;gap:.5rem;margin-top:.7rem}
 .ros-timer-controls button{flex:1;border:1px solid var(--aged-iron);background:var(--gunmetal-gray);color:var(--warm-paper);border-radius:6px;padding:.4rem;font-size:.72rem;font-weight:700}
 .ros-glance dt{font-family:var(--ui);font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted-sandstone);margin-top:.5rem}
@@ -142,10 +159,10 @@ button{font-family:var(--ui);cursor:pointer}
     <aside>
       <div class="ros-panel ros-widget" id="ros-timer-widget">
         <h4>Class Timer</h4>
-        <div class="ros-timer-row"><span class="ros-timer" id="ros-remaining">00:00</span></div>
-        <div class="ros-timer-label">remaining in this phase</div>
-        <div class="ros-timer-row" style="margin-top:.5rem"><span style="font-family:var(--ui);font-size:1.1rem" id="ros-elapsed">00:00</span></div>
-        <div class="ros-timer-label">elapsed, whole class</div>
+        <div class="ros-timer-row"><span class="ros-timer" id="ros-phase-elapsed">0:00</span><span class="ros-timer-target" id="ros-phase-target">Target: ~0 min</span></div>
+        <div class="ros-timer-label">you're at, this phase</div>
+        <span class="ros-pace on-pace" id="ros-pace">On Pace</span>
+        <div class="ros-timer-whole">Whole class elapsed: <span id="ros-elapsed">00:00</span></div>
         <div class="ros-timer-controls">
           <button type="button" id="ros-timer-toggle">Start</button>
           <button type="button" id="ros-timer-reset">Reset phase</button>
@@ -175,13 +192,13 @@ button{font-family:var(--ui);cursor:pointer}
   <p class="ros-footer-note">Prototype only &mdash; not linked from any student page, not wired into the site's automated checks. Content above is pulled live from this topic's own lesson data file (runOfShow block), so editing that file is the only way to change what this page says.</p>
 </div>
 
-<script id="ros-data" type="application/json">{"meta":{"course":"AP WORLD HISTORY","unit":"Unit 1: The Global Tapestry","topic":"Topic 1.4","title":"State Building in the Americas","subtitle":"States and Societies in the Americas, c. 1200 to c. 1450","feedbackToolUrl":"https://student.magicschool.ai/s/login?joinCode=czwb9Q","canvasSubmissionNote":"Organize your thinking here, submit your final work in Canvas."},"runOfShow":{"question":"How did states in the Americas organize people, resources, labor, and territory to build power?","apEmphasis":"Governance + evidence + comparison","ced":"KC-3.2.I.D.i","totalMinutes":80,"endTarget":"American states developed different systems of political control, but all needed mechanisms for organizing people and extracting resources. The Mexica relied heavily on military expansion and tribute, while the Inca relied on centralized administration, mit’a labor, roads, and record keeping.","phases":[{"id":"beready","label":"BeReady","range":"0–5 min","minutes":5,"retrieval":["How did Song China maintain political control over a large population?","What happened politically when Abbasid authority weakened?","Name one state from South or Southeast Asia and one way it maintained power."],"teacherMove":"Do not reteach 1.1–1.3. Take answers quickly, no notes for the first 60–90 seconds.","bridge":"Different societies keep solving the same problem: how do you control people, resources, and territory? Today we move to the Americas."},{"id":"map","label":"Map","range":"5–10 min","minutes":5,"anchors":[{"label":"Mesoamerica","detail":"Maya city-states, Mexica"},{"label":"Andes","detail":"Inca"},{"label":"North America","detail":"Cahokia, Chaco, Mesa Verde"}],"teacherPrompt":"How might mountains, lakes, and enormous distances produce different solutions to governing?","takeaway":"Geography helps explain state-building choices. Don’t spend ten minutes labeling geography."},{"id":"content","label":"Content","range":"10–31 min","minutes":21,"intro":"Four conceptual movements, not three separate mini-lectures.","slides":[{"id":"framework","title":"What Does State Building Require?","minutes":2,"landTheseIdeas":["States need to organize people, acquire resources, move information, control territory, and justify authority.","Every piece of content today fits into one of those five needs."]},{"id":"maya","title":"Maya City-States","minutes":3,"landTheseIdeas":["Independent city-states across Mesoamerica — no single ruler governed all Maya people.","By c. 1200, Classic Maya centers in the southern lowlands had declined, but Maya civilization continued in the Yucatán and highlands."],"avoid":["detailed Maya chronology","lists of rulers"]},{"id":"mexica","title":"Mexica","minutes":6,"landTheseIdeas":["Tenochtitlan, military expansion, and tribute from conquered peoples.","Chinampas supported dense urban food production.","Religion and ritual reinforced political authority."],"teacherPrompt":"How did this help the state function?","avoid":["letting human sacrifice consume the discussion","chinampa construction mechanics"]},{"id":"inca","title":"Inca","minutes":7,"landTheseIdeas":["Centralized control across thousands of miles of the Andes.","The Qhapaq Ñan (road system) moved officials, armies, and goods.","Mit’a converted labor obligations into state power; quipu tracked tribute and population without alphabetic writing."],"note":"This should receive the greatest attention — the mechanisms of governance are the most visible here.","avoid":["technical details of quipu encoding"],"acrossTheWorld":{"comparisonTopic":"1.1 Song China: the Grand Canal","teacherPrompt":"What political problem did both governments solve with infrastructure?","listenFor":["resources","officials","military movement","communication","integration of territory"],"target":"Infrastructure can function as a tool of state power."}},{"id":"northAmerica","title":"Diversity Beyond Two Empires","minutes":3,"landTheseIdeas":["Maya city-states, Cahokia, and Chaco/Mesa Verde show American political organization did not take one form."],"avoid":["covering every North American society equally"],"acrossTheWorld":{"comparisonTopic":"Mexica tribute vs. Inca mit’a","teacherPrompt":"What is similar about these systems even though what the state extracted was different?","target":"Both converted the productive capacity of subjects into state power."}}]},{"id":"checkpoint1","label":"Checkpoint 1","range":"31–39 min","minutes":8,"teacherRole":"Circulate and diagnose.","listenFor":{"weak":"The Inca had roads.","developing":"The Inca built roads to connect the empire.","strong":"The Inca road network allowed officials, armies, and resources to move across the Andes, helping the central government control distant territory."},"lookFor":"evidence → mechanism → power"},{"id":"apApplication","label":"Evidence Lab","range":"39–55 min","minutes":16,"module":"evidence","why":"CP1 and the lesson’s skill work already emphasize identifying evidence used to support historical claims.","target":"Move from “I know what quipu are” to “Quipu provide evidence of sophisticated Inca administration because…”"},{"id":"synthesis","label":"Debrief","range":"55–64 min","minutes":9,"teacherPrompt":"Which state had greater direct control over its population — the Mexica or Inca? Defend your answer with one piece of evidence.","note":"There is room for disagreement. Push students to distinguish claim from evidence."},{"id":"checkpoint2","label":"Checkpoint 2","range":"64–75 min","minutes":11,"note":"This is the actual CED-level measurement. Protect this time."},{"id":"exit","label":"Exit Retrieval","range":"75–80 min","minutes":5,"prompt":"Complete this sentence: “States become powerful when they can __________ because __________.” Take 2–3 responses. Done."}],"assignmentStatus":{"first10":"Required","classPresentation":"Class Use","map":"Class Use","checkpoint1":"Required","evidence":"Required","checkpoint2":"Required","video":"Support","deepReading":"Support","skill":"Support / use if Evidence Lab isn’t used","source":"Extension","beSurreal":"Extension","beInTheRoom":"Separate Extension / Optional"},"pacing":{"protect":["Checkpoint 2"],"condensed":{"label":"60 minutes","route":"Retrieval → abbreviated deck → CP1 → Evidence Lab → CP2."},"emergency":{"label":"45 minutes","route":"Retrieval → Mexica/Inca deck core → CP1 → verbal comparison → CP2."},"skipFirst":["detailed Maya chronology","lists of rulers","chinampa construction mechanics","human sacrifice detail","technical quipu encoding","equal coverage of every North American society"]},"misconceptions":[{"claim":"The Maya disappeared.","correction":"Correct toward continued Maya societies despite the decline of earlier Classic centers."},{"claim":"No alphabetic writing means unsophisticated government.","correction":"Use quipu, roads, officials, and mit’a to destroy that assumption."},{"claim":"All American states were centralized empires.","correction":"Maya city-states and Cahokia broaden the picture."}]},"links":[{"label":"Open Lesson Page","url":"../unit-1/lesson-1-4-americas.html"},{"label":"Open Student Deck","url":"../unit-1/deck-topic-1-4-americas-student.html"},{"label":"Open Map Source","url":"https://commons.wikimedia.org/wiki/File:Inca_road_system_map-en.svg"},{"label":"Open First & 10","url":"../unit-1/first-and-10-topic-1-4-americas-capture.html?v=response-id-fix-v1"},{"label":"Open Deep Reading","url":"../unit-1/deep-reading-topic-1-4-americas.html"},{"label":"Open BeInTheRoom","url":"../beintheroom/unit-1/inca-court.html"}]}</script>
+<script id="ros-data" type="application/json">{"meta":{"course":"AP WORLD HISTORY","unit":"Unit 1: The Global Tapestry","topic":"Topic 1.4","title":"State Building in the Americas","subtitle":"States and Societies in the Americas, c. 1200 to c. 1450","feedbackToolUrl":"https://student.magicschool.ai/s/login?joinCode=czwb9Q","canvasSubmissionNote":"Organize your thinking here, submit your final work in Canvas."},"runOfShow":{"question":"How did states in the Americas organize people, resources, labor, and territory to build power?","apEmphasis":"Governance + evidence + comparison","ced":"KC-3.2.I.D.i","apSkill":"Evidence in Sources","totalMinutes":80,"endTarget":"American states developed different systems of political control, but all needed mechanisms for organizing people and extracting resources. The Mexica relied heavily on military expansion and tribute, while the Inca relied on centralized administration, mit’a labor, roads, and record keeping.","phases":[{"id":"beready","label":"BeReady","range":"0–5 min","minutes":5,"retrieval":["How did Song China maintain political control over a large population?","What happened politically when Abbasid authority weakened?","Name one state from South or Southeast Asia and one way it maintained power."],"teacherMove":"Do not reteach 1.1–1.3. Take answers quickly, no notes for the first 60–90 seconds.","bridge":"Different societies keep solving the same problem: how do you control people, resources, and territory? Today we move to the Americas."},{"id":"map","label":"Map","range":"5–10 min","minutes":5,"anchors":[{"label":"Mesoamerica","detail":"Maya city-states, Mexica"},{"label":"Andes","detail":"Inca"},{"label":"North America","detail":"Cahokia, Chaco, Mesa Verde"}],"teacherPrompt":"How might mountains, lakes, and enormous distances produce different solutions to governing?","takeaway":"Geography helps explain state-building choices. Don’t spend ten minutes labeling geography."},{"id":"content","label":"Content","range":"10–31 min","minutes":21,"intro":"Four conceptual movements, not three separate mini-lectures.","slides":[{"id":"framework","title":"What Does State Building Require?","minutes":2,"landTheseIdeas":["States need to organize people, acquire resources, move information, control territory, and justify authority.","Every piece of content today fits into one of those five needs."]},{"id":"maya","title":"Maya City-States","minutes":3,"landTheseIdeas":["Independent city-states across Mesoamerica — no single ruler governed all Maya people.","By c. 1200, Classic Maya centers in the southern lowlands had declined, but Maya civilization continued in the Yucatán and highlands."],"apMove":"Don’t accept “the Maya were city-states.” Push toward: decentralized power is still a state system — KC-3.2.I.D.i names diversity, not just scale.","avoid":["detailed Maya chronology","lists of rulers"]},{"id":"mexica","title":"Mexica","minutes":6,"landTheseIdeas":["Tenochtitlan, military expansion, and tribute from conquered peoples.","Chinampas supported dense urban food production.","Religion and ritual reinforced political authority."],"teacherPrompt":"How did this help the state function?","apMove":"Don’t accept “the Mexica conquered people.” Push toward: military expansion → tribute → resource extraction → state capacity.","avoid":["letting human sacrifice consume the discussion","chinampa construction mechanics"]},{"id":"inca","title":"Inca","minutes":7,"landTheseIdeas":["Centralized control across thousands of miles of the Andes.","The Qhapaq Ñan (road system) moved officials, armies, and goods.","Mit’a converted labor obligations into state power; quipu tracked tribute and population without alphabetic writing."],"note":"This should receive the greatest attention — the mechanisms of governance are the most visible here.","apMove":"Don’t accept “the Inca had roads.” Push toward: infrastructure → movement of officials, goods, and armies → control of distant territory.","avoid":["technical details of quipu encoding"],"acrossTheWorld":{"comparisonTopic":"1.1 Song China: the Grand Canal","teacherPrompt":"What political problem did both governments solve with infrastructure?","listenFor":["resources","officials","military movement","communication","integration of territory"],"target":"Infrastructure can function as a tool of state power."}},{"id":"northAmerica","title":"Diversity Beyond Two Empires","minutes":3,"landTheseIdeas":["Maya city-states, Cahokia, and Chaco/Mesa Verde show American political organization did not take one form."],"apMove":"Don’t accept “Cahokia was a big city.” Push toward: organizing labor at this scale is evidence of political authority, even with no written record.","avoid":["covering every North American society equally"],"acrossTheWorld":{"comparisonTopic":"Mexica tribute vs. Inca mit’a","teacherPrompt":"What is similar about these systems even though what the state extracted was different?","target":"Both converted the productive capacity of subjects into state power."}}]},{"id":"checkpoint1","label":"Checkpoint 1","range":"31–39 min","minutes":8,"teacherRole":"Circulate and diagnose.","listenFor":{"weak":"The Inca had roads.","developing":"The Inca built roads to connect the empire.","strong":"The Inca road network allowed officials, armies, and resources to move across the Andes, helping the central government control distant territory."},"lookFor":"evidence → mechanism → power"},{"id":"apApplication","label":"Evidence Lab","range":"39–55 min","minutes":16,"module":"evidence","why":"CP1 and the lesson’s skill work already emphasize identifying evidence used to support historical claims.","target":"Move from “I know what quipu are” to “Quipu provide evidence of sophisticated Inca administration because…”"},{"id":"synthesis","label":"Debrief","range":"55–64 min","minutes":9,"teacherPrompt":"Which state had greater direct control over its population — the Mexica or Inca? Defend your answer with one piece of evidence.","note":"There is room for disagreement. Push students to distinguish claim from evidence."},{"id":"checkpoint2","label":"Checkpoint 2","range":"64–75 min","minutes":11,"note":"This is the actual CED-level measurement. Protect this time."},{"id":"exit","label":"Exit Retrieval","range":"75–80 min","minutes":5,"prompt":"Complete this sentence: “States become powerful when they can __________ because __________.” Take 2–3 responses. Done."}],"assignmentStatus":{"first10":"Required","classPresentation":"Class Use","map":"Class Use","checkpoint1":"Required","evidence":"Required","checkpoint2":"Required","video":"Support","deepReading":"Support","skill":"Support / use if Evidence Lab isn’t used","source":"Extension","beSurreal":"Extension","beInTheRoom":"Separate Extension / Optional"},"pacing":{"protect":["Checkpoint 2"],"condensed":{"label":"60 minutes","route":"Retrieval → abbreviated deck → CP1 → Evidence Lab → CP2."},"emergency":{"label":"45 minutes","route":"Retrieval → Mexica/Inca deck core → CP1 → verbal comparison → CP2."},"skipFirst":["detailed Maya chronology","lists of rulers","chinampa construction mechanics","human sacrifice detail","technical quipu encoding","equal coverage of every North American society"]},"misconceptions":[{"claim":"The Maya disappeared.","correction":"Correct toward continued Maya societies despite the decline of earlier Classic centers."},{"claim":"No alphabetic writing means unsophisticated government.","correction":"Use quipu, roads, officials, and mit’a to destroy that assumption."},{"claim":"All American states were centralized empires.","correction":"Maya city-states and Cahokia broaden the picture."}]},"links":[{"label":"Open Lesson Page","url":"../unit-1/lesson-1-4-americas.html"},{"label":"Open Student Deck","url":"../unit-1/deck-topic-1-4-americas-student.html"},{"label":"Open Map Source","url":"https://commons.wikimedia.org/wiki/File:Inca_road_system_map-en.svg"},{"label":"Open First & 10","url":"../unit-1/first-and-10-topic-1-4-americas-capture.html?v=response-id-fix-v1"},{"label":"Open Deep Reading","url":"../unit-1/deep-reading-topic-1-4-americas.html"},{"label":"Open BeInTheRoom","url":"../beintheroom/unit-1/inca-court.html"}]}</script>
 <script>
 (function(){
   var DATA = JSON.parse(document.getElementById('ros-data').textContent);
   var RS = DATA.runOfShow;
   var phases = RS.phases;
-  var state = { phaseIndex: 0, slideIndex: 0, pacing: 'normal', running: false, remaining: 0, elapsed: 0 };
+  var state = { phaseIndex: 0, slideIndex: 0, pacing: 'normal', running: false, phaseSeconds: 0, elapsed: 0 };
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   function mmss(sec){ sec = Math.max(0, Math.round(sec)); var m = Math.floor(sec/60), s = sec%60; return (m<10?'0':'')+m+':'+(s<10?'0':'')+s; }
@@ -210,11 +227,14 @@ button{font-family:var(--ui);cursor:pointer}
   function slideBody(slide){
     var h = '';
     if (slide.landTheseIdeas) h += '<div class="ros-section"><h3>Land These Ideas</h3>'+list(slide.landTheseIdeas)+'</div>';
+    if (slide.apMove) h += '<div class="ros-box apmove"><span class="tag">AP Move'+(RS.apSkill?' \u2014 '+esc(RS.apSkill):'')+'</span>'+esc(slide.apMove)+'</div>';
     if (slide.teacherPrompt) h += '<div class="ros-box prompt"><strong>Teacher Prompt</strong><p style="margin:.3rem 0 0">'+esc(slide.teacherPrompt)+'</p></div>';
     if (slide.keyPoint) h += '<div class="ros-box good"><strong>Land this distinction</strong><p style="margin:.3rem 0 0">'+esc(slide.keyPoint)+'</p></div>';
-    if (slide.note) h += '<div class="ros-box note">'+esc(slide.note)+'</div>';
-    if (slide.avoid) h += '<div class="ros-box avoid"><strong>Avoid / Don\'t Get Pulled Into</strong>'+list(slide.avoid)+'</div>';
-    if (slide.acrossTheWorld) h += acrossTheWorldBox(slide.acrossTheWorld);
+    var more = '';
+    if (slide.note) more += '<div class="ros-box note">'+esc(slide.note)+'</div>';
+    if (slide.avoid) more += '<div class="ros-box avoid"><strong>Avoid / Don\'t Get Pulled Into</strong>'+list(slide.avoid)+'</div>';
+    if (slide.acrossTheWorld) more += acrossTheWorldBox(slide.acrossTheWorld);
+    if (more) h += '<details class="ros-more"><summary>More for this slide</summary><div class="ros-more-body">'+more+'</div></details>';
     return h;
   }
 
@@ -343,19 +363,35 @@ button{font-family:var(--ui);cursor:pointer}
     renderStrip(); renderPhase(); renderGlance();
   }
 
-  // Timer
+  // Timer. Counts UP against a target rather than counting down, on purpose:
+  // a countdown reads as pressure ("18:42 remaining"); "you're at 4:20 of a
+  // ~6 min target" reads as a status check. The pace badge is the only
+  // urgency signal, and only fires once the target is actually passed.
   var timerHandle = null;
+  function paceStatus(phaseSeconds, targetSeconds){
+    if (targetSeconds <= 0) return { cls: 'on-pace', label: 'On Pace' };
+    var ratio = phaseSeconds / targetSeconds;
+    if (ratio >= 1) return { cls: 'move-on', label: 'Consider Moving On' };
+    if (ratio >= 0.85) return { cls: 'wrapping-up', label: 'Wrapping Up' };
+    return { cls: 'on-pace', label: 'On Pace' };
+  }
   function resetPhaseTimer(){
-    var phase = phases[state.phaseIndex];
-    state.remaining = phase.minutes * 60;
+    state.phaseSeconds = 0;
     updateTimerDisplay();
   }
   function updateTimerDisplay(){
-    document.getElementById('ros-remaining').textContent = mmss(state.remaining);
+    var phase = phases[state.phaseIndex];
+    var target = phase.minutes * 60;
+    document.getElementById('ros-phase-elapsed').textContent = mmss(state.phaseSeconds);
+    document.getElementById('ros-phase-target').textContent = 'Target: ~' + phase.minutes + ' min';
     document.getElementById('ros-elapsed').textContent = mmss(state.elapsed);
+    var pace = paceStatus(state.phaseSeconds, target);
+    var badge = document.getElementById('ros-pace');
+    badge.className = 'ros-pace ' + pace.cls;
+    badge.textContent = pace.label;
   }
   function tick(){
-    state.remaining = Math.max(0, state.remaining - 1);
+    state.phaseSeconds += 1;
     state.elapsed += 1;
     updateTimerDisplay();
   }

@@ -88,6 +88,17 @@ button{font-family:var(--ui);cursor:pointer}
 .ros-box.good{background:#dfe9d8;border-left:4px solid var(--status-good)}
 .ros-box.connect{background:#e5dcf0;border-left:4px solid #7B4F9E}
 .ros-box.note{background:#e9e2d3;border-left:4px solid var(--aged-iron)}
+.ros-box.apmove{background:#f0e6cf;border-left:4px solid var(--antique-gold);font-size:.9rem}
+.ros-box.apmove .tag{font-family:var(--ui);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--oxidized-brown);font-weight:700;display:block;margin-bottom:.2rem}
+
+/* Secondary guidance (Avoid, Across the World, notes) is one click away, not
+   competing with Land/Ask/Listen for the teacher's glance at the screen. */
+.ros-more{margin-top:.7rem;border:1px solid #d8cbb9;border-radius:8px;background:#efe5d6}
+.ros-more summary{cursor:pointer;padding:.55rem .8rem;font-family:var(--ui);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--oxidized-brown);list-style:none}
+.ros-more summary::-webkit-details-marker{display:none}
+.ros-more summary::before{content:'▸ ';display:inline-block}
+.ros-more[open] summary::before{content:'▾ '}
+.ros-more .ros-more-body{padding:0 .8rem .8rem}
 
 .ros-listen{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:.6rem}
 @media (max-width:640px){.ros-listen{grid-template-columns:1fr}}
@@ -115,6 +126,12 @@ button{font-family:var(--ui);cursor:pointer}
 .ros-timer{font-family:var(--ui);font-size:2.1rem;font-weight:700;color:var(--clean-paper);letter-spacing:.02em}
 .ros-timer-label{font-size:.68rem;color:var(--muted-sandstone);text-transform:uppercase;letter-spacing:.08em}
 .ros-timer-row{display:flex;justify-content:space-between;align-items:baseline;margin-top:.3rem}
+.ros-timer-target{font-family:var(--ui);font-size:.85rem;color:var(--muted-sandstone)}
+.ros-pace{display:inline-block;margin-top:.6rem;font-family:var(--ui);font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .6rem;border-radius:999px}
+.ros-pace.on-pace{background:rgba(12,163,12,.18);color:#7FD37F}
+.ros-pace.wrapping-up{background:rgba(185,121,10,.2);color:#E0A845}
+.ros-pace.move-on{background:rgba(181,69,31,.25);color:#F0977A}
+.ros-timer-whole{font-size:.68rem;color:var(--muted-sandstone);margin-top:.5rem}
 .ros-timer-controls{display:flex;gap:.5rem;margin-top:.7rem}
 .ros-timer-controls button{flex:1;border:1px solid var(--aged-iron);background:var(--gunmetal-gray);color:var(--warm-paper);border-radius:6px;padding:.4rem;font-size:.72rem;font-weight:700}
 .ros-glance dt{font-family:var(--ui);font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted-sandstone);margin-top:.5rem}
@@ -208,10 +225,10 @@ function renderRunOfShow(L, opts) {
     <aside>
       <div class="ros-panel ros-widget" id="ros-timer-widget">
         <h4>Class Timer</h4>
-        <div class="ros-timer-row"><span class="ros-timer" id="ros-remaining">00:00</span></div>
-        <div class="ros-timer-label">remaining in this phase</div>
-        <div class="ros-timer-row" style="margin-top:.5rem"><span style="font-family:var(--ui);font-size:1.1rem" id="ros-elapsed">00:00</span></div>
-        <div class="ros-timer-label">elapsed, whole class</div>
+        <div class="ros-timer-row"><span class="ros-timer" id="ros-phase-elapsed">0:00</span><span class="ros-timer-target" id="ros-phase-target">Target: ~0 min</span></div>
+        <div class="ros-timer-label">you're at, this phase</div>
+        <span class="ros-pace on-pace" id="ros-pace">On Pace</span>
+        <div class="ros-timer-whole">Whole class elapsed: <span id="ros-elapsed">00:00</span></div>
         <div class="ros-timer-controls">
           <button type="button" id="ros-timer-toggle">Start</button>
           <button type="button" id="ros-timer-reset">Reset phase</button>
@@ -247,7 +264,7 @@ function renderRunOfShow(L, opts) {
   var DATA = JSON.parse(document.getElementById('ros-data').textContent);
   var RS = DATA.runOfShow;
   var phases = RS.phases;
-  var state = { phaseIndex: 0, slideIndex: 0, pacing: 'normal', running: false, remaining: 0, elapsed: 0 };
+  var state = { phaseIndex: 0, slideIndex: 0, pacing: 'normal', running: false, phaseSeconds: 0, elapsed: 0 };
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   function mmss(sec){ sec = Math.max(0, Math.round(sec)); var m = Math.floor(sec/60), s = sec%60; return (m<10?'0':'')+m+':'+(s<10?'0':'')+s; }
@@ -276,11 +293,14 @@ function renderRunOfShow(L, opts) {
   function slideBody(slide){
     var h = '';
     if (slide.landTheseIdeas) h += '<div class="ros-section"><h3>Land These Ideas</h3>'+list(slide.landTheseIdeas)+'</div>';
+    if (slide.apMove) h += '<div class="ros-box apmove"><span class="tag">AP Move'+(RS.apSkill?' \\u2014 '+esc(RS.apSkill):'')+'</span>'+esc(slide.apMove)+'</div>';
     if (slide.teacherPrompt) h += '<div class="ros-box prompt"><strong>Teacher Prompt</strong><p style="margin:.3rem 0 0">'+esc(slide.teacherPrompt)+'</p></div>';
     if (slide.keyPoint) h += '<div class="ros-box good"><strong>Land this distinction</strong><p style="margin:.3rem 0 0">'+esc(slide.keyPoint)+'</p></div>';
-    if (slide.note) h += '<div class="ros-box note">'+esc(slide.note)+'</div>';
-    if (slide.avoid) h += '<div class="ros-box avoid"><strong>Avoid / Don\\'t Get Pulled Into</strong>'+list(slide.avoid)+'</div>';
-    if (slide.acrossTheWorld) h += acrossTheWorldBox(slide.acrossTheWorld);
+    var more = '';
+    if (slide.note) more += '<div class="ros-box note">'+esc(slide.note)+'</div>';
+    if (slide.avoid) more += '<div class="ros-box avoid"><strong>Avoid / Don\\'t Get Pulled Into</strong>'+list(slide.avoid)+'</div>';
+    if (slide.acrossTheWorld) more += acrossTheWorldBox(slide.acrossTheWorld);
+    if (more) h += '<details class="ros-more"><summary>More for this slide</summary><div class="ros-more-body">'+more+'</div></details>';
     return h;
   }
 
@@ -409,19 +429,35 @@ function renderRunOfShow(L, opts) {
     renderStrip(); renderPhase(); renderGlance();
   }
 
-  // Timer
+  // Timer. Counts UP against a target rather than counting down, on purpose:
+  // a countdown reads as pressure ("18:42 remaining"); "you're at 4:20 of a
+  // ~6 min target" reads as a status check. The pace badge is the only
+  // urgency signal, and only fires once the target is actually passed.
   var timerHandle = null;
+  function paceStatus(phaseSeconds, targetSeconds){
+    if (targetSeconds <= 0) return { cls: 'on-pace', label: 'On Pace' };
+    var ratio = phaseSeconds / targetSeconds;
+    if (ratio >= 1) return { cls: 'move-on', label: 'Consider Moving On' };
+    if (ratio >= 0.85) return { cls: 'wrapping-up', label: 'Wrapping Up' };
+    return { cls: 'on-pace', label: 'On Pace' };
+  }
   function resetPhaseTimer(){
-    var phase = phases[state.phaseIndex];
-    state.remaining = phase.minutes * 60;
+    state.phaseSeconds = 0;
     updateTimerDisplay();
   }
   function updateTimerDisplay(){
-    document.getElementById('ros-remaining').textContent = mmss(state.remaining);
+    var phase = phases[state.phaseIndex];
+    var target = phase.minutes * 60;
+    document.getElementById('ros-phase-elapsed').textContent = mmss(state.phaseSeconds);
+    document.getElementById('ros-phase-target').textContent = 'Target: ~' + phase.minutes + ' min';
     document.getElementById('ros-elapsed').textContent = mmss(state.elapsed);
+    var pace = paceStatus(state.phaseSeconds, target);
+    var badge = document.getElementById('ros-pace');
+    badge.className = 'ros-pace ' + pace.cls;
+    badge.textContent = pace.label;
   }
   function tick(){
-    state.remaining = Math.max(0, state.remaining - 1);
+    state.phaseSeconds += 1;
     state.elapsed += 1;
     updateTimerDisplay();
   }
