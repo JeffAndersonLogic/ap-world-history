@@ -141,6 +141,15 @@ button{font-family:var(--ui);cursor:pointer}
 .ros-status-table{width:100%;font-size:.78rem;border-collapse:collapse}
 .ros-status-table td{padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
 .ros-status-table td:last-child{text-align:right;font-family:var(--ui);font-weight:700;font-size:.68rem;text-transform:uppercase;color:var(--muted-sandstone)}
+.ros-timelog-table th{font-family:var(--ui);font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-sandstone);text-align:left;padding-bottom:.3rem;border-bottom:1px solid rgba(255,255,255,.18);font-weight:700}
+.ros-timelog-table th:not(:first-child),.ros-timelog-table td:not(:first-child){text-align:right}
+.ros-timelog-table td{font-family:var(--ui);font-size:.72rem}
+.ros-timelog-table td.current{color:var(--antique-gold)}
+.ros-timelog-table td.log-actual{text-transform:none;letter-spacing:0;font-weight:700}
+.ros-timelog-table td.log-under{color:var(--muted-sandstone)}
+.ros-timelog-table td.log-good{color:#7FD37F}
+.ros-timelog-table td.log-over{color:#F0977A}
+.ros-timelog-table tfoot td{border-bottom:0;border-top:1px solid rgba(255,255,255,.18);padding-top:.4rem;font-weight:700}
 .ros-toggle{background:none;border:1px solid var(--aged-iron);color:var(--muted-sandstone);border-radius:6px;padding:.4rem .6rem;font-size:.72rem;width:100%}
 .ros-notes textarea{width:100%;min-height:90px;background:var(--ink);color:var(--warm-paper);border:1px solid var(--gunmetal-gray);border-radius:6px;padding:.5rem;font-family:var(--body);font-size:.85rem;resize:vertical}
 
@@ -231,8 +240,12 @@ function renderRunOfShow(L, opts) {
         <div class="ros-timer-whole">Whole class elapsed: <span id="ros-elapsed">00:00</span></div>
         <div class="ros-timer-controls">
           <button type="button" id="ros-timer-toggle">Start</button>
-          <button type="button" id="ros-timer-reset">Reset phase</button>
+          <button type="button" id="ros-timer-reset">Reset this phase's time</button>
         </div>
+      </div>
+      <div class="ros-panel ros-widget">
+        <h4>Time Log <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--muted-sandstone);font-size:.68rem">(this session only)</span></h4>
+        <table class="ros-status-table ros-timelog-table" id="ros-timelog-table"></table>
       </div>
       <div class="ros-panel ros-widget">
         <h4>At a Glance</h4>
@@ -264,7 +277,7 @@ function renderRunOfShow(L, opts) {
   var DATA = JSON.parse(document.getElementById('ros-data').textContent);
   var RS = DATA.runOfShow;
   var phases = RS.phases;
-  var state = { phaseIndex: 0, slideIndex: 0, pacing: 'normal', running: false, phaseSeconds: 0, elapsed: 0 };
+  var state = { phaseIndex: 0, slideIndex: 0, pacing: 'normal', running: false, phaseSecondsByIndex: phases.map(function(){ return 0; }), elapsed: 0 };
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   function mmss(sec){ sec = Math.max(0, Math.round(sec)); var m = Math.floor(sec/60), s = sec%60; return (m<10?'0':'')+m+':'+(s<10?'0':'')+s; }
@@ -369,7 +382,7 @@ function renderRunOfShow(L, opts) {
     if (nextBtn) nextBtn.addEventListener('click', function(){ state.slideIndex++; renderPhase(); });
     document.getElementById('ros-prev-phase').addEventListener('click', function(){ goToPhase(state.phaseIndex-1); });
     document.getElementById('ros-next-phase').addEventListener('click', function(){ goToPhase(state.phaseIndex+1); });
-    resetPhaseTimer();
+    updateTimerDisplay();
   }
 
   function renderGlance(){
@@ -433,6 +446,14 @@ function renderRunOfShow(L, opts) {
   // a countdown reads as pressure ("18:42 remaining"); "you're at 4:20 of a
   // ~6 min target" reads as a status check. The pace badge is the only
   // urgency signal, and only fires once the target is actually passed.
+  //
+  // Time is kept PER PHASE and does not reset when you move to another tab
+  // (Next Phase, Previous Phase, or clicking a phase directly): each phase
+  // has its own running total, so leaving Content and coming back to it
+  // later resumes from what was already spent there rather than from zero.
+  // The point is the Time Log below, built from these same per-phase
+  // totals: a real record of where the actual class went long or short,
+  // to look back on after the bell rather than only in the moment.
   var timerHandle = null;
   function paceStatus(phaseSeconds, targetSeconds){
     if (targetSeconds <= 0) return { cls: 'on-pace', label: 'On Pace' };
@@ -441,23 +462,40 @@ function renderRunOfShow(L, opts) {
     if (ratio >= 0.85) return { cls: 'wrapping-up', label: 'Wrapping Up' };
     return { cls: 'on-pace', label: 'On Pace' };
   }
-  function resetPhaseTimer(){
-    state.phaseSeconds = 0;
+  function resetCurrentPhaseTime(){
+    state.phaseSecondsByIndex[state.phaseIndex] = 0;
     updateTimerDisplay();
   }
   function updateTimerDisplay(){
     var phase = phases[state.phaseIndex];
     var target = phase.minutes * 60;
-    document.getElementById('ros-phase-elapsed').textContent = mmss(state.phaseSeconds);
+    var spent = state.phaseSecondsByIndex[state.phaseIndex];
+    document.getElementById('ros-phase-elapsed').textContent = mmss(spent);
     document.getElementById('ros-phase-target').textContent = 'Target: ~' + phase.minutes + ' min';
     document.getElementById('ros-elapsed').textContent = mmss(state.elapsed);
-    var pace = paceStatus(state.phaseSeconds, target);
+    var pace = paceStatus(spent, target);
     var badge = document.getElementById('ros-pace');
     badge.className = 'ros-pace ' + pace.cls;
     badge.textContent = pace.label;
+    renderTimeLog();
+  }
+  function renderTimeLog(){
+    var t = document.getElementById('ros-timelog-table');
+    var totalSpent = 0;
+    var rows = phases.map(function(p, i){
+      var spent = state.phaseSecondsByIndex[i];
+      totalSpent += spent;
+      var target = p.minutes * 60;
+      var cls = spent === 0 ? 'log-under' : (spent > target ? 'log-over' : 'log-good');
+      return '<tr><td class="'+(i===state.phaseIndex?'current':'')+'">'+esc(p.label)+'</td>'
+        + '<td>~'+p.minutes+' min</td>'
+        + '<td class="log-actual '+cls+'">'+(spent === 0 ? '\\u2014' : mmss(spent))+'</td></tr>';
+    }).join('');
+    var foot = '<tfoot><tr><td>Total</td><td>~'+RS.totalMinutes+' min</td><td class="log-actual">'+mmss(totalSpent)+'</td></tr></tfoot>';
+    t.innerHTML = '<thead><tr><th>Phase</th><th>Target</th><th>Actual</th></tr></thead><tbody>'+rows+'</tbody>'+foot;
   }
   function tick(){
-    state.phaseSeconds += 1;
+    state.phaseSecondsByIndex[state.phaseIndex] += 1;
     state.elapsed += 1;
     updateTimerDisplay();
   }
@@ -467,7 +505,7 @@ function renderRunOfShow(L, opts) {
     if (state.running) { timerHandle = setInterval(tick, 1000); }
     else { clearInterval(timerHandle); }
   });
-  document.getElementById('ros-timer-reset').addEventListener('click', resetPhaseTimer);
+  document.getElementById('ros-timer-reset').addEventListener('click', resetCurrentPhaseTime);
 
   // Pacing mode
   Array.prototype.forEach.call(document.querySelectorAll('[data-pacing]'), function(btn){
