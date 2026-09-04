@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeHistorical | Class Presentation 1.5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   BeHistorical Teach Mode, Topic 1.5
+
+   Same house rules as Topics 1.3 and 1.4: reading slides are paper under ink,
+   dark is reserved for the cover and part dividers, gold is a dark-surface
+   colour (--oxidized is its paper-safe equivalent), and one KEY TAKEAWAY box
+   per slide is the only thing a student copies.
+
+   This deck reuses 1.4's five layout patterns (.hero, .stat-grid, .spotlight,
+   .orgchart, .flow) but points them at new jobs so the three case studies do
+   not read as four systems twice: .orgchart draws a royal genealogy for the
+   Solomonic claim as well as a headless city-state cluster for the Hausa, and
+   .stat-grid becomes a manifest of what archaeologists actually dug out of
+   the ground at Great Zimbabwe. No new CSS, three new uses for it.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root{
+  --steel:#1a1c1d; --charcoal:#2b2f31; --gunmetal:#3e4447; --iron:#5a5f5c;
+  --sandstone:#d2b48c; --bronze:#8c5a2b; --rust:#a8652d; --oxidized:#6b3e1f;
+  --gold:#c9a46a; --paper:#f5f0e7; --clean:#fffdf7; --ink:#151718;
+  --rule:#ddd2be; --rule-soft:#e8dfd0;
+  --font-display:'Cinzel','Trajan Pro',Georgia,serif;
+  --font-body:'Libre Baskerville',Georgia,'Times New Roman',serif;
+  --font-ui:'Montserrat',Arial,Helvetica,sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#0d0e0f}
+body{font-family:var(--font-body);color:var(--ink)}
+
+/* ── The stage ────────────────────────────────────────────────────────────
+   A fixed 1280x720 board scaled to fit the window, rather than a fluid
+   layout, so what fits at your desk is what lands on the wall. */
+#viewport{position:fixed;inset:0;display:grid;place-items:center;background:#0d0e0f}
+#stage{
+  width:1280px;height:720px;position:relative;flex:none;
+  transform:scale(var(--scale,1));transform-origin:center center;
+  box-shadow:0 40px 120px rgba(0,0,0,.6);
+}
+
+.slide{
+  position:absolute;inset:0;display:none;
+  padding:64px 76px;overflow:hidden;
+  background:var(--paper);color:var(--ink);
+}
+.slide.active{display:flex;flex-direction:column}
+
+.slide.dark{background:var(--steel);color:var(--paper)}
+.slide.dark .eyebrow{color:var(--gold)}
+.slide.dark h1,.slide.dark h2{color:var(--clean)}
+
+/* ── Typography ───────────────────────────────────────────────────────── */
+.eyebrow{
+  font-family:var(--font-ui);font-weight:800;font-size:15px;
+  letter-spacing:.20em;text-transform:uppercase;color:var(--oxidized);
+  margin:0 0 14px;
+}
+h1{font-family:var(--font-display);font-weight:900;font-size:64px;line-height:1.06;margin:0 0 18px;letter-spacing:.01em}
+h2{font-family:var(--font-display);font-weight:800;font-size:44px;line-height:1.12;margin:0 0 8px;color:var(--steel)}
+h3{font-family:var(--font-ui);font-weight:800;font-size:21px;line-height:1.25;margin:0 0 10px;color:var(--oxidized);letter-spacing:.01em}
+.deck-sub{font-size:22px;line-height:1.45;color:var(--gunmetal);margin:0 0 26px;font-style:italic}
+.slide.dark .deck-sub{color:var(--sandstone)}
+p{font-size:20px;line-height:1.55;margin:0 0 16px}
+b,strong{color:var(--oxidized);font-weight:700}
+.slide.dark b,.slide.dark strong{color:var(--gold)}
+
+.rule{height:3px;background:var(--bronze);width:96px;border-radius:2px;margin:0 0 26px}
+.slide.dark .rule{background:var(--gold)}
+
+.body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
+.body.top{justify-content:flex-start}
+
+/* ── Bullets ──────────────────────────────────────────────────────────── */
+ul.points{list-style:none;margin:0;padding:0}
+ul.points li{
+  position:relative;padding-left:38px;margin-bottom:20px;
+  font-size:22px;line-height:1.5;
+}
+ul.points li::before{
+  content:"";position:absolute;left:0;top:.52em;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--bronze);box-shadow:0 0 0 4px rgba(140,90,43,.16);
+}
+.slide.dark ul.points li::before{background:var(--gold);box-shadow:0 0 0 4px rgba(201,164,106,.18)}
+
+/* ── Reveals ──────────────────────────────────────────────────────────── */
+[data-step]{opacity:0;transform:translateY(10px);transition:opacity .28s ease,transform .28s ease}
+[data-step].shown{opacity:1;transform:none}
+
+/* ── Column layouts ───────────────────────────────────────────────────── */
+.cols{display:grid;gap:26px;flex:1;min-height:0}
+.cols.c2{grid-template-columns:1fr 1fr}
+.cols.c3{grid-template-columns:repeat(3,1fr)}
+.cols.c4{grid-template-columns:repeat(4,1fr)}
+.cols.split{grid-template-columns:1.05fr .95fr;align-items:center}
+
+.panel{
+  background:var(--clean);border:1px solid var(--rule);border-radius:10px;
+  padding:24px 26px;border-top:5px solid var(--bronze);
+  display:flex;flex-direction:column;min-height:0;
+}
+.panel.gold{border-top-color:var(--gold)}
+.panel.rust{border-top-color:var(--rust)}
+.panel.iron{border-top-color:var(--iron)}
+.panel p{font-size:18px;line-height:1.5;margin:0 0 12px}
+.panel p:last-child{margin-bottom:0}
+.panel .tag{
+  font-family:var(--font-ui);font-size:12px;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--iron);margin:0 0 6px;
+}
+
+/* ── Figures ──────────────────────────────────────────────────────────── */
+figure{margin:0;display:flex;flex-direction:column;min-height:0;height:100%}
+figure img{
+  width:100%;flex:1;min-height:0;object-fit:cover;border-radius:8px;
+  background:var(--charcoal);border:1px solid var(--rule);
+}
+figure.contain img{object-fit:contain;background:var(--clean);padding:8px}
+figure img.is-fallback{object-fit:contain;background:var(--clean);padding:14px}
+figcaption{
+  font-family:var(--font-ui);font-size:13px;line-height:1.45;color:var(--iron);
+  margin-top:10px;font-weight:500;
+}
+/* A failed image says so, loudly, instead of quietly looking like a design
+   choice. This is the fix for a corrupted or unreachable URL passing as
+   "just plain artwork" until someone happens to ask why a slide looks weak. */
+.img-broken{outline:3px dashed var(--rust);outline-offset:-3px}
+.warn{color:var(--oxidized)}
+
+/* ── Hero: a photograph with a caption card stacked below it ──────────── */
+.hero-wrap{position:relative;flex:1;min-height:0;display:flex;flex-direction:column;border-radius:10px;overflow:hidden;border:1px solid var(--rule)}
+.hero-wrap img{width:100%;flex:1;min-height:0;object-fit:cover;display:block;background:var(--charcoal)}
+.hero-wrap img.is-fallback{object-fit:contain;background:var(--clean);padding:26px}
+.hero-card{
+  position:relative;flex:none;
+  background:rgba(21,23,24,.95);color:var(--paper);border-left:6px solid var(--gold);
+  border-radius:0;padding:16px 26px;
+}
+.hero-card .tag{font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.hero-card p{margin:0;font-size:19px;line-height:1.4;color:var(--paper)}
+.hero-card b{color:var(--gold)}
+.hero-warn{position:absolute;left:26px;top:26px;right:26px;background:rgba(168,101,45,.95);color:var(--clean);
+  font-family:var(--font-ui);font-weight:700;font-size:14px;border-radius:8px;padding:10px 16px;display:none}
+.hero-wrap.is-broken .hero-warn{display:block}
+
+/* ── Stat grid: big numbers or big words, four to a row ──────────────── */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;flex:1;min-height:0}
+.stat-tile{
+  background:var(--clean);border:1px solid var(--rule);border-top:5px solid var(--bronze);
+  border-radius:10px;padding:20px 16px;display:flex;flex-direction:column;
+  justify-content:center;text-align:center;min-height:0;
+}
+.stat-tile.gold{border-top-color:var(--gold)}
+.stat-tile.rust{border-top-color:var(--rust)}
+.stat-tile.iron{border-top-color:var(--iron)}
+.stat-tile .num{font-family:var(--font-display);font-weight:900;font-size:34px;color:var(--oxidized);line-height:1.05}
+.stat-tile .lbl{font-family:var(--font-ui);font-weight:700;font-size:14px;color:var(--iron);margin-top:10px;line-height:1.32}
+
+/* ── Spotlight: one image beside a short stack of facts ──────────────── */
+.spotlight{display:flex;gap:34px;flex:1;min-height:0;align-items:stretch}
+.spotlight figure{flex:0 0 40%}
+.spotlight .facts{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;min-width:0}
+.spotlight .fact{padding-left:20px;border-left:3px solid var(--bronze)}
+.spotlight .fact > b{display:block;color:var(--oxidized);font-family:var(--font-ui);font-size:12px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:4px}
+.spotlight .fact p{margin:0;font-size:19px;line-height:1.42}
+
+/* ── Org chart: a hierarchy diagram, for a concept with no honest photo ── */
+.orgchart{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:14px 30px;font-family:var(--font-ui);font-weight:800;font-size:19px;letter-spacing:.03em}
+.org-line{width:2px;height:24px;background:var(--rule)}
+.org-row{display:flex;gap:20px;justify-content:center}
+.org-branch{display:flex;flex-direction:column;align-items:center;width:200px}
+.org-node{background:var(--clean);border:2px solid var(--bronze);border-radius:8px;padding:12px 16px;
+  font-family:var(--font-ui);font-weight:800;font-size:16px;color:var(--oxidized);text-align:center;width:100%}
+.org-sub{font-size:14px;color:var(--iron);margin-top:8px;text-align:center;font-family:var(--font-ui);line-height:1.4}
+
+/* ── Flow: a numbered pipeline with connectors, for a mechanism ──────── */
+.flow{display:flex;align-items:stretch;gap:0;flex:1;min-height:0}
+.flow .panel{flex:1}
+.flow .arrow{display:flex;align-items:center;justify-content:center;width:34px;flex:none;
+  color:var(--bronze);font-size:26px;font-weight:900}
+
+/* ── Comparison table ─────────────────────────────────────────────────
+   Row padding stays tight; Cinzel runs about 50% wider than the Georgia
+   fallback and a table that fits at your desk can overflow the fixed
+   board once the real fonts load. Re-measure before loosening this. */
+table.compare{width:100%;border-collapse:collapse;font-size:18px}
+table.compare th,table.compare td{
+  text-align:left;padding:10px 16px;border-bottom:1px solid var(--rule);vertical-align:top;
+}
+table.compare thead th{
+  font-family:var(--font-ui);font-size:15px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--clean);background:var(--gunmetal);
+  border-bottom:none;
+}
+table.compare thead th:first-child{background:var(--steel);border-radius:8px 0 0 0}
+table.compare thead th:last-child{border-radius:0 8px 0 0}
+table.compare tbody th{
+  font-family:var(--font-ui);font-size:16px;font-weight:800;color:var(--oxidized);
+  letter-spacing:.06em;text-transform:uppercase;width:172px;background:var(--tint,#f6efe1);
+}
+table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border-bottom:none}
+
+/* ── The one thing to write down ─────────────────────────────────────── */
+.writethis{
+  margin-top:20px;background:var(--steel);color:var(--paper);
+  border-radius:10px;padding:15px 24px;border-left:6px solid var(--gold);
+}
+.writethis .tag{
+  font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 5px;
+}
+.writethis p{margin:0;font-size:21px;line-height:1.35;color:var(--paper)}
+.writethis b,.writethis strong{color:var(--gold)}
+
+/* ── Term chips ───────────────────────────────────────────────────────── */
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:4px}
+.chip{
+  font-family:var(--font-ui);font-size:15px;font-weight:700;letter-spacing:.02em;
+  background:#f6efe1;color:var(--oxidized);border:1px solid var(--rule);
+  border-radius:999px;padding:7px 15px;
+}
+.slide.dark .chip{background:rgba(201,164,106,.14);color:var(--gold);border-color:rgba(201,164,106,.38)}
+
+/* ── Cover ────────────────────────────────────────────────────────────── */
+.cover{
+  justify-content:center;
+  background:
+    radial-gradient(ellipse at 22% 18%, rgba(201,164,106,.16) 0%, transparent 58%),
+    linear-gradient(145deg,#1a1c1d 0%,#22262a 55%,#151718 100%);
+}
+.cover .kicker{
+  font-family:var(--font-ui);font-weight:800;font-size:16px;letter-spacing:.30em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 22px;
+}
+.cover h1{font-size:72px;max-width:19ch}
+.cover .dates{
+  font-family:var(--font-ui);font-weight:700;font-size:19px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sandstone);margin:14px 0 0;
+}
+.cover .brandline{
+  position:absolute;left:76px;bottom:56px;
+  font-family:var(--font-display);font-weight:800;font-size:20px;
+  letter-spacing:.06em;color:var(--gold);
+}
+
+/* ── Divider ──────────────────────────────────────────────────────────── */
+.divider{justify-content:center;background:linear-gradient(135deg,#1a1c1d 0%,#2b2f31 100%)}
+.divider .part{
+  font-family:var(--font-ui);font-weight:800;font-size:15px;letter-spacing:.30em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 18px;
+}
+.divider h1{font-size:60px;max-width:20ch}
+.divider .lede{font-size:23px;line-height:1.5;color:var(--sandstone);max-width:62ch;margin:20px 0 0;font-style:italic}
+
+/* ── Slide furniture ──────────────────────────────────────────────────── */
+.slideno{
+  position:absolute;right:34px;bottom:26px;
+  font-family:var(--font-ui);font-weight:800;font-size:12px;letter-spacing:.16em;
+  color:var(--iron);
+}
+.slide.dark .slideno{color:rgba(210,180,140,.55)}
+.topicmark{
+  position:absolute;left:76px;bottom:26px;
+  font-family:var(--font-ui);font-weight:700;font-size:12px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--iron);
+}
+.slide.dark .topicmark{color:rgba(210,180,140,.55)}
+
+/* ── Progress ─────────────────────────────────────────────────────────── */
+#progress{position:fixed;left:0;top:0;height:4px;background:var(--gold);width:0;z-index:40;transition:width .25s ease}
+
+/* ── Controls ─────────────────────────────────────────────────────────── */
+#hud{
+  position:fixed;right:16px;bottom:14px;z-index:45;display:flex;gap:8px;align-items:center;
+  font-family:var(--font-ui);opacity:.28;transition:opacity .2s ease;
+}
+#hud:hover,#hud:focus-within{opacity:1}
+#hud button{
+  font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:.08em;
+  background:rgba(245,240,231,.10);color:var(--paper);border:1px solid rgba(245,240,231,.26);
+  border-radius:6px;padding:7px 11px;cursor:pointer;
+}
+#hud button:hover{background:rgba(201,164,106,.24);border-color:var(--gold)}
+#hud button:focus-visible,#overview button:focus-visible,#notes button:focus-visible{
+  outline:3px solid var(--gold);outline-offset:2px;
+}
+#counter{font-size:12px;font-weight:800;letter-spacing:.10em;color:var(--sandstone);padding:0 6px}
+
+/* ── Overview ─────────────────────────────────────────────────────────── */
+#overview{
+  position:fixed;inset:0;z-index:60;background:rgba(13,14,15,.97);
+  display:none;padding:34px 40px;overflow-y:auto;
+}
+#overview.show{display:block}
+#overview h2{font-family:var(--font-ui);font-size:14px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 22px}
+#ovgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+#ovgrid button{
+  text-align:left;background:var(--paper);border:2px solid transparent;border-radius:8px;
+  padding:14px 16px;cursor:pointer;font-family:var(--font-ui);color:var(--ink);
+  display:flex;flex-direction:column;gap:6px;min-height:92px;
+}
+#ovgrid button.dk{background:var(--charcoal);color:var(--paper)}
+#ovgrid button:hover{border-color:var(--gold)}
+#ovgrid button.here{border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,164,106,.22)}
+#ovgrid .n{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--iron)}
+#ovgrid button.dk .n{color:var(--sandstone)}
+#ovgrid .t{font-size:14px;font-weight:700;line-height:1.3}
+
+/* ── Help ─────────────────────────────────────────────────────────────── */
+#help{
+  position:fixed;inset:0;z-index:80;background:rgba(13,14,15,.96);display:none;
+  place-items:center;font-family:var(--font-ui);color:var(--paper);
+}
+#help.show{display:grid}
+#help .box{max-width:560px;padding:34px 40px}
+#help h2{font-family:var(--font-display);font-size:30px;color:var(--gold);margin:0 0 20px}
+#help dl{display:grid;grid-template-columns:auto 1fr;gap:12px 20px;margin:0;font-size:15px}
+#help dt{font-weight:800;color:var(--gold);letter-spacing:.06em}
+#help dd{margin:0;color:var(--sandstone)}
+#help .close{margin-top:26px;font-size:13px;color:var(--iron)}
+</style>
+</head>
+<body>
+
+<script>
+/* A dead or unreachable image degrades to this topic's local artwork, the
+   same as the rest of the site, but it also FLAGS the caption instead of
+   letting a fallback quietly pass as the finished design. That is the
+   direct fix for a corrupted image file silently looking like weak
+   artwork with nobody noticing why. */
+function onImgFail(el, localSrc) {
+  el.onerror = null;
+  el.src = localSrc;
+  el.classList.add('is-fallback');
+  el.classList.add('img-broken');
+  var wrap = el.closest('.hero-wrap');
+  if (wrap) wrap.classList.add('is-broken');
+  var fig = el.closest('figure');
+  var cap = fig ? fig.querySelector('figcaption') : null;
+  if (cap && !cap.dataset.flagged) {
+    cap.dataset.flagged = '1';
+    cap.innerHTML = '<b class="warn">Image did not load, needs a working URL.</b> Was meant to show: ' + cap.textContent;
+  }
+}
+</script>
+
+<div id="progress"></div>
+
+<div id="viewport">
+<div id="stage">
+
+<!-- ═════ 01 COVER ═════════════════════════════════════════════════════════ -->
+<section class="slide dark cover" data-title="Cover">
+  <p class="kicker">AP World History &middot; Unit 1 &middot; Topic 1.5</p>
+  <h1>State Building in Africa</h1>
+  <p class="dates">Governance, Trade, and Religion in Africa &middot; c. 1200 to c. 1450</p>
+  <div class="brandline">BeHistorical</div>
+</section>
+
+<!-- ═════ 02 THE QUESTION ══════════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="The Question">
+  <p class="part">The Question</p>
+  <h1>Why did different African states build power in completely different ways?</h1>
+  <ul class="points" style="margin-top:20px;max-width:58ch">
+    <li data-step="1"><b>Great Zimbabwe</b> answered with gold and stone</li>
+    <li data-step="2"><b>Ethiopia</b> answered with descent and doctrine</li>
+    <li data-step="3">The <b>Hausa kingdoms</b> answered with law and literacy</li>
+  </ul>
+</section>
+
+<!-- ═════ 03 THE MAP ═══════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Three States, One Continent">
+  <p class="eyebrow">Where in the World</p>
+  <h2>Three states, one continent</h2>
+  <div class="rule"></div>
+  <div class="spotlight">
+    <figure class="contain">
+      <img src="../assets/images/instructional-maps/topic-1-5.svg"
+           alt="Map of African states and trade routes around 1200 to 1450, showing Great Zimbabwe in the south, Ethiopia in the east, and the Hausa kingdoms in the west"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-5/map.svg')">
+      <figcaption>Three African state-building stories on one map: gold moving to the Indian Ocean, a Christian highland guarding the Red Sea, and a cluster of trading cities in the Sahel.</figcaption>
+    </figure>
+    <div class="facts">
+      <div class="fact">
+        <b>Great Zimbabwe</b>
+        <p>Interior gold, moved to <b>Sofala</b> and the Indian Ocean</p>
+      </div>
+      <div class="fact" data-step="1">
+        <b>Ethiopia</b>
+        <p>Highlands and the <b>Red Sea</b> trade routes</p>
+      </div>
+      <div class="fact" data-step="2">
+        <b>Hausa kingdoms</b>
+        <p>Savanna city-states astride <b>trans-Saharan</b> trade</p>
+      </div>
+    </div>
+  </div>
+  <div class="writethis" data-step="3">
+    <p class="tag">Key Takeaway</p>
+    <p>Three different resources, three different states. <b>Geography decided the starting materials.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 04 THE MECHANISM ═════════════════════════════════════════════════ -->
+<section class="slide" data-title="Five Ingredients of Power">
+  <p class="eyebrow">How States Build Power</p>
+  <h2>Five ingredients, three case studies</h2>
+  <div class="rule"></div>
+  <div class="body top">
+    <ul class="points">
+      <li><b>Resources</b> a state can control, gold, cattle, land</li>
+      <li data-step="1"><b>Trade</b> connecting it to wealth beyond its borders</li>
+      <li data-step="2"><b>Religion or legitimacy</b> justifying who rules</li>
+      <li data-step="3"><b>Geographic position</b> deciding what is available at all</li>
+      <li data-step="4"><b>Labor or organization</b>, the capacity to build and fight</li>
+    </ul>
+  </div>
+  <div class="writethis" data-step="5">
+    <p class="tag">Key Takeaway</p>
+    <p>Every case study today is <b>some combination of these five</b>, never all of them equally.</p>
+  </div>
+</section>
+
+<!-- ═════ 05 THREE STATES, ONE FRAMEWORK ═══════════════════════════════════ -->
+<section class="slide" data-title="Three States, One Framework">
+  <p class="eyebrow">The Three Case Studies</p>
+  <h2>Three states, one framework</h2>
+  <div class="rule"></div>
+  <div class="cols c3">
+    <div class="panel">
+      <p class="tag">Southern Africa</p>
+      <h3>Great Zimbabwe</h3>
+      <p><b>Gold and stone</b>, resources plus organized labor</p>
+    </div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">The Highlands</p>
+      <h3>Ethiopia</h3>
+      <p><b>Faith and descent</b>, legitimacy that answers to no one</p>
+    </div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">The Sahel</p>
+      <h3>Hausa Kingdoms</h3>
+      <p><b>Trade and law</b>, an administration imported by choice</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="3">
+    <p class="tag">Key Takeaway</p>
+    <p>Same five ingredients. <b>Three completely different recipes.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 06 DIVIDER: PART ONE ═════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part One: Great Zimbabwe">
+  <p class="part">Part One</p>
+  <h1>Great Zimbabwe</h1>
+  <p class="lede">A city of stone, financed by cattle and gold, that took the trade and left the religion behind.</p>
+</section>
+
+<!-- ═════ 07 THE WALLS ═════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Great Zimbabwe: The Walls">
+  <p class="eyebrow">Case One &middot; Southern Africa</p>
+  <h2>The walls that needed no mortar</h2>
+  <div class="rule"></div>
+  <div class="hero-wrap">
+    <div class="hero-warn">Image did not load, needs a working URL.</div>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_of_the_great_enclosure%2C_Great_Zimbabwe.JPG"
+         alt="The wall of the Great Enclosure at Great Zimbabwe, built from carefully fitted granite blocks without mortar"
+         onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-5/lecture-01.svg')">
+    <div class="hero-card">
+      <p class="tag">c. 1100 to 1450</p>
+      <p>Granite blocks, shaped and stacked with <b>no mortar at all</b>. Held by precision cutting and weight alone.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="1">
+    <p class="tag">Key Takeaway</p>
+    <p>No document explains who built this. <b>The wall is the document.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 08 CATTLE AND GOLD ═══════════════════════════════════════════════ -->
+<section class="slide" data-title="Great Zimbabwe: Cattle and Gold">
+  <p class="eyebrow">What Paid For It</p>
+  <h2>Cattle, gold, and what was found in the ground</h2>
+  <div class="rule"></div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <p class="num" style="font-size:24px">Cattle</p>
+      <p class="lbl">Wealth, status, and a ruler's following</p>
+    </div>
+    <div class="stat-tile gold" data-step="1">
+      <p class="num" style="font-size:24px">Gold</p>
+      <p class="lbl">Mined on the plateau, sold through Sofala</p>
+    </div>
+    <div class="stat-tile rust" data-step="2">
+      <p class="num" style="font-size:24px">Chinese celadon</p>
+      <p class="lbl">Excavated at the site, in the fourteenth century</p>
+    </div>
+    <div class="stat-tile iron" data-step="3">
+      <p class="num" style="font-size:24px">Persian glass</p>
+      <p class="lbl">Proof of an Indian Ocean connection</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>Chinese pottery, buried in southern Africa. <b>That is what &ldquo;integration&rdquo; looks like as evidence.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 09 THE PUZZLE THAT WASN'T ════════════════════════════════════════ -->
+<section class="slide" data-title="Great Zimbabwe: A Puzzle That Wasn't">
+  <p class="eyebrow">The Evidence, and Who Argued With It</p>
+  <h2>Trade without conversion, and an answer denied for decades</h2>
+  <div class="rule"></div>
+  <div class="cols c2">
+    <div class="panel">
+      <p class="tag">What the trade did not do</p>
+      <h3>No conversion</h3>
+      <p>Deep in a Muslim-dominated trade network, Great Zimbabwe <b>kept its own religious tradition</b>, stone towers and carved soapstone birds.</p>
+    </div>
+    <div class="panel rust" data-step="1">
+      <p class="tag">1905 to the 1970s</p>
+      <h3>An answer, denied</h3>
+      <p>Excavation proved an <b>African origin</b> in 1905 and 1929. A government pressured historians to deny it for decades anyway.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="2">
+    <p class="tag">Key Takeaway</p>
+    <p>Trade transmits religion only where a state has a use for it, and evidence can be <b>politically inconvenient and still true</b>.</p>
+  </div>
+</section>
+
+<!-- ═════ 10 DIVIDER: PART TWO ═════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Two: Ethiopia">
+  <p class="part">Part Two</p>
+  <h1>Ethiopia</h1>
+  <p class="lede">A Christian kingdom that made its own independence a matter of descent.</p>
+</section>
+
+<!-- ═════ 11 THE SOLOMONIC CLAIM ═══════════════════════════════════════════ -->
+<section class="slide" data-title="Ethiopia: The Solomonic Claim"font-style:italic\">Kebra Nagast</span>, the Glory of Kings, compiled in the fourteenth century.<br><br>Walk the mechanism, because this is exactly what the learning target is asking for: <b>this genealogy makes the dynasty's legitimacy independent of any outside authority.</b> No patriarch elsewhere has to crown this king. No recognition from Constantinople or Rome is required. No Muslim or Christian neighbor can argue against a lineage that runs to the Old Testament.<br><br>If you taught Topic 1.4, this is the direct opposite move from the Sapa Inca's divine descent from the sun: <b>same tool, legitimacy through ancestry, but here it is aimed specifically at making outside approval unnecessary.</b>">
+  <p class="eyebrow">Case Two &middot; The Highlands</p>
+  <h2>A royal bloodline that answers to no one</h2>
+  <div class="rule"></div>
+  <div class="orgchart">
+    <div class="org-top">Solomon &amp; the Queen of Sheba</div>
+    <div class="org-line"></div>
+    <div class="org-row">
+      <div class="org-branch">
+        <div class="org-node">Menelik</div>
+        <div class="org-sub" data-step="1">Brought the Ark of the Covenant, tradition says</div>
+      </div>
+    </div>
+    <div class="org-line" data-step="2"></div>
+    <div class="org-row" data-step="2">
+      <div class="org-branch">
+        <div class="org-node">Solomonic Dynasty, 1270</div>
+        <div class="org-sub">Legitimacy that needs no outside approval</div>
+      </div>
+    </div>
+  </div>
+  <div class="writethis" data-step="3">
+    <p class="tag">Key Takeaway</p>
+    <p>A bloodline to the Old Testament, <b>and no neighbor can argue with it</b>.</p>
+  </div>
+</section>
+
+<!-- ═════ 12 LALIBELA ══════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Lalibela">
+  <p class="eyebrow">What the Highlands Could Command</p>
+  <h2>Lalibela: churches carved, not built</h2>
+  <div class="rule"></div>
+  <div class="hero-wrap">
+    <div class="hero-warn">Image did not load, needs a working URL.</div>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bete_Giyorgis_01.jpg"
+         alt="Bete Giyorgis, one of the eleven rock-hewn churches at Lalibela, Ethiopia, carved downward out of solid volcanic rock"
+         onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-5/lecture-02.svg')">
+    <div class="hero-card">
+      <p class="tag">Carved c. 1200</p>
+      <p>Eleven churches, <b>cut downward out of one piece of bedrock</b>, built as a pilgrimage destination and still in use today.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="1">
+    <p class="tag">Key Takeaway</p>
+    <p>Not construction. <b>Subtraction, on a scale that has no rival in this course.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 13 LAND, CHURCH, AND CROWN ═══════════════════════════════════════ -->
+<section class="slide" data-title="Land, Church, and Crown">
+  <p class="eyebrow">How the Kingdom Actually Ran</p>
+  <h2>Land, church, and crown, bound together</h2>
+  <div class="rule"></div>
+  <div class="flow">
+    <div class="panel">
+      <p class="tag">Step 1</p>
+      <h3>Grant</h3>
+      <p>The crown grants <b>gult</b>, land revenue, to churches and nobles</p>
+    </div>
+    <div class="arrow">&rarr;</div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">Step 2</p>
+      <h3>Owe</h3>
+      <p>Grantees owe <b>service, prayer, and loyalty</b> in return</p>
+    </div>
+    <div class="arrow" data-step="1">&rarr;</div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">Step 3</p>
+      <h3>Bind</h3>
+      <p>Monasteries settle new land and <b>convert new territory</b></p>
+    </div>
+    <div class="arrow" data-step="2">&rarr;</div>
+    <div class="panel iron" data-step="3">
+      <p class="tag">Step 4</p>
+      <h3>Move</h3>
+      <p>A mobile court keeps the crown <b>present everywhere</b></p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>Not isolated, mountainous. <b>Connected to Egypt, Arabia, and the Red Sea the whole time.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 14 DIVIDER: PART THREE ═══════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Three: The Hausa Kingdoms">
+  <p class="part">Part Three</p>
+  <h1>The Hausa Kingdoms</h1>
+  <p class="lede">Seven walled cities, one trade network, and no single ruler over any of it.</p>
+</section>
+
+<!-- ═════ 15 POWER WITHOUT A CAPITAL ═══════════════════════════════════════ -->
+<section class="slide" data-title="Hausa Kingdoms: Power Without a Capital">
+  <p class="eyebrow">Case Three &middot; The Sahel</p>
+  <h2>Seven cities, no single ruler</h2>
+  <div class="rule"></div>
+  <div class="orgchart">
+    <div class="org-top">No Empire, No Capital</div>
+    <div class="org-line"></div>
+    <div class="org-row">
+      <div class="org-branch">
+        <div class="org-node">Kano</div>
+        <div class="org-sub" data-step="1">Walls, indigo dye, trans-Saharan trade</div>
+      </div>
+      <div class="org-branch">
+        <div class="org-node">Katsina</div>
+        <div class="org-sub" data-step="1">Independent, competing for the same routes</div>
+      </div>
+      <div class="org-branch">
+        <div class="org-node">Zazzau</div>
+        <div class="org-sub" data-step="1">Walled city, own ruler, own market</div>
+      </div>
+    </div>
+  </div>
+  <div class="writethis" data-step="2">
+    <p class="tag">Key Takeaway</p>
+    <p>Fragmentation is usually a weakness. <b>Here, it was the system.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 16 ISLAM AS ADMINISTRATIVE TECHNOLOGY ════════════════════════════ -->
+<section class="slide" data-title="Islam as Administrative Technology">
+  <p class="eyebrow">Religion as a Governance Tool</p>
+  <h2>What conversion actually delivered</h2>
+  <div class="rule"></div>
+  <div class="flow">
+    <div class="panel">
+      <p class="tag">Step 1</p>
+      <h3>Contact</h3>
+      <p>Islam arrives with <b>merchants</b>, not armies</p>
+    </div>
+    <div class="arrow">&rarr;</div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">Step 2</p>
+      <h3>Adopt</h3>
+      <p>Rulers and elites <b>selectively convert</b></p>
+    </div>
+    <div class="arrow" data-step="1">&rarr;</div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">Step 3</p>
+      <h3>Acquire</h3>
+      <p>Scribes, <b>Sharia</b>, a shared calendar and diplomatic language</p>
+    </div>
+    <div class="arrow" data-step="2">&rarr;</div>
+    <div class="panel iron" data-step="3">
+      <p class="tag">Step 4</p>
+      <h3>Govern</h3>
+      <p>Diverse city populations, <b>administered</b></p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>Not a description of belief. <b>A description of imported infrastructure.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 17 COMPARISON ════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Comparing African State Systems">
+  <p class="eyebrow">The Core Comparison</p>
+  <h2>Comparing African state systems</h2>
+  <div class="rule"></div>
+  <table class="compare">
+    <thead>
+      <tr><th></th><th>Great Zimbabwe</th><th>Ethiopia</th><th>Hausa Kingdoms</th></tr>
+    </thead>
+    <tbody>
+      <tr><th>Power base</th><td>Gold and cattle</td><td>Sacred descent</td><td>Trade and law</td></tr>
+      <tr data-step="1"><th>Evidence</th><td>Stone enclosures</td><td>Kebra Nagast, Lalibela</td><td>City walls, Sharia courts</td></tr>
+      <tr data-step="2"><th>Religion's role</th><td>Kept separate</td><td>The whole foundation</td><td>Imported toolkit</td></tr>
+      <tr data-step="3"><th>Structure</th><td>One state</td><td>One dynasty</td><td>Seven rival cities</td></tr>
+    </tbody>
+  </table>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway &middot; the grid is in your eBook, do not copy it</p>
+    <p>Same five ingredients, recombined three ways. <b>That recombination is the argument.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 18 AP TAKEAWAY ═══════════════════════════════════════════════════ -->
+<section class="slide" data-title="AP Takeaway">
+  <p class="eyebrow">What You Must Be Able To Do</p>
+  <h2>The takeaway</h2>
+  <div class="rule"></div>
+  <div class="body top">
+    <p class="tag" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized)">Checkpoint 1 &middot; How one state built power</p>
+    <div class="chips">
+      <span class="chip">Great Zimbabwe</span>
+      <span class="chip">Ethiopia</span>
+      <span class="chip">Hausa kingdoms</span>
+    </div>
+    <p class="tag" data-step="1" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized);margin-top:22px">Checkpoint 2 &middot; How and why states developed and changed</p>
+    <div class="chips" data-step="1">
+      <span class="chip">Stone enclosures</span>
+      <span class="chip">Solomonic dynasty</span>
+      <span class="chip">Sharia and scribes</span>
+      <span class="chip">Trans-Saharan trade</span>
+      <span class="chip">Indian Ocean trade</span>
+    </div>
+  </div>
+  <div class="writethis" data-step="2">
+    <p class="tag">Key Takeaway &middot; both checkpoints</p>
+    <p>Pick <b>one or two</b> states. Name <b>specific</b> evidence. Explain <b>what it proves</b>.</p>
+  </div>
+</section>
+
+</div><!-- /stage -->
+</div><!-- /viewport -->
+
+<div id="hud">
+  <button id="btn-prev" type="button" aria-label="Previous slide">&larr;</button>
+  <span id="counter">1 / 18</span>
+  <button id="btn-next" type="button" aria-label="Next slide">&rarr;</button>
+  <button id="btn-ov"  type="button">All slides</button>
+  <button id="btn-fs"  type="button">Full screen</button>
+  <button id="btn-hp"  type="button" aria-label="Keyboard help">?</button>
+</div>
+
+<div id="overview" role="dialog" aria-modal="true" aria-label="All slides">
+  <h2>All slides, click to jump</h2>
+  <div id="ovgrid"></div>
+</div>
+
+<div id="help" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts">
+  <div class="box">
+    <h2>Teach Mode controls</h2>
+    <dl>
+      <dt>&rarr; &darr; Space</dt><dd>Next step, then next slide</dd>
+      <dt>&larr; &uarr;</dt><dd>Back</dd>
+      <dt>Home / End</dt><dd>First / last slide</dd>
+      <dt>O</dt><dd>All slides, click to jump</dd>
+      <dt>F</dt><dd>Full screen</dd>
+      <dt>?</dt><dd>This panel</dd>
+    </dl>
+    <p class="close">Press Escape or ? to close.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var stage    = document.getElementById('stage');
+  var slides   = Array.prototype.slice.call(stage.querySelectorAll('.slide'));
+  var progress = document.getElementById('progress');
+  var counter  = document.getElementById('counter');
+  var overview = document.getElementById('overview');
+  var ovgrid   = document.getElementById('ovgrid');
+  var help     = document.getElementById('help');
+
+  var i = 0;    // current slide
+  var step = 0; // steps revealed on the current slide
+
+  function stepsOf(slide) {
+    var seen = {}, out = [];
+    Array.prototype.forEach.call(slide.querySelectorAll('[data-step]'), function (el) {
+      var n = parseInt(el.getAttribute('data-step'), 10);
+      if (!isNaN(n) && !seen[n]) { seen[n] = 1; out.push(n); }
+    });
+    return out.sort(function (a, b) { return a - b; });
+  }
+
+  function paintSteps() {
+    var order = stepsOf(slides[i]);
+    var upto  = order.slice(0, step);
+    Array.prototype.forEach.call(slides[i].querySelectorAll('[data-step]'), function (el) {
+      var n = parseInt(el.getAttribute('data-step'), 10);
+      el.classList.toggle('shown', upto.indexOf(n) !== -1);
+    });
+  }
+
+  function show(n, revealAll) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function (s, k) { s.classList.toggle('active', k === i); });
+    step = revealAll ? stepsOf(slides[i]).length : 0;
+    paintSteps();
+    counter.textContent = (i + 1) + ' / ' + slides.length;
+    progress.style.width = ((i + 1) / slides.length * 100) + '%';
+    if (overview.classList.contains('show')) markHere();
+  }
+
+  function next() {
+    if (step < stepsOf(slides[i]).length) { step++; paintSteps(); return; }
+    if (i < slides.length - 1) show(i + 1, false);
+  }
+
+  function prev() {
+    if (step > 0) { step--; paintSteps(); return; }
+    if (i > 0) show(i - 1, true);
+  }
+
+  function fit() {
+    var pad = 0;
+    var s = Math.min(
+      (window.innerWidth  - pad) / 1280,
+      (window.innerHeight - pad) / 720
+    );
+    stage.style.setProperty('--scale', s);
+  }
+  window.addEventListener('resize', fit);
+
+  function buildOverview() {
+    slides.forEach(function (s, k) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      if (s.classList.contains('dark')) b.className = 'dk';
+      b.innerHTML = '<span class="n">' + String(k + 1).padStart(2, '0') + '</span>' +
+                    '<span class="t"></span>';
+      b.querySelector('.t').textContent = s.getAttribute('data-title') || ('Slide ' + (k + 1));
+      b.addEventListener('click', function () { toggleOverview(false); show(k, false); });
+      ovgrid.appendChild(b);
+    });
+  }
+  function markHere() {
+    Array.prototype.forEach.call(ovgrid.children, function (b, k) {
+      b.classList.toggle('here', k === i);
+    });
+  }
+  function toggleOverview(on) {
+    var want = (typeof on === 'boolean') ? on : !overview.classList.contains('show');
+    overview.classList.toggle('show', want);
+    if (want) markHere();
+  }
+
+  function toggleFs() {
+    if (!document.fullscreenElement) {
+      if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+    } else if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var k = e.key;
+
+    if (k === 'Escape') {
+      if (help.classList.contains('show'))     { help.classList.remove('show');     e.preventDefault(); return; }
+      if (overview.classList.contains('show')) { toggleOverview(false);             e.preventDefault(); return; }
+      return;
+    }
+
+    switch (k) {
+      case 'ArrowRight': case 'ArrowDown': case ' ': case 'PageDown':
+        next(); e.preventDefault(); break;
+      case 'ArrowLeft': case 'ArrowUp': case 'Backspace': case 'PageUp':
+        prev(); e.preventDefault(); break;
+      case 'Home': show(0, false); e.preventDefault(); break;
+      case 'End':  show(slides.length - 1, true); e.preventDefault(); break;
+      case 'o': case 'O': toggleOverview(); e.preventDefault(); break;
+      case 'f': case 'F': toggleFs(); e.preventDefault(); break;
+      case '?': help.classList.toggle('show'); e.preventDefault(); break;
+    }
+  });
+
+  document.getElementById('viewport').addEventListener('click', function (e) {
+    if (overview.classList.contains('show') || help.classList.contains('show')) return;
+    (e.clientX < window.innerWidth * 0.24 ? prev : next)();
+  });
+  help.addEventListener('click', function () { help.classList.remove('show'); });
+
+  var tx = null;
+  document.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].clientX; }, { passive: true });
+  document.addEventListener('touchend', function (e) {
+    if (tx === null) return;
+    var dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 45) (dx < 0 ? next : prev)();
+    tx = null;
+  }, { passive: true });
+
+  document.getElementById('btn-prev').addEventListener('click', function (e) { e.stopPropagation(); prev(); });
+  document.getElementById('btn-next').addEventListener('click', function (e) { e.stopPropagation(); next(); });
+  document.getElementById('btn-ov').addEventListener('click',   function (e) { e.stopPropagation(); toggleOverview(); });
+  document.getElementById('btn-fs').addEventListener('click',   function (e) { e.stopPropagation(); toggleFs(); });
+  document.getElementById('btn-hp').addEventListener('click',   function (e) { e.stopPropagation(); help.classList.toggle('show'); });
+
+  slides.forEach(function (s, k) {
+    var mark = document.createElement('div');
+    mark.className = 'topicmark';
+    mark.textContent = 'Topic 1.5 · State Building in Africa';
+    var no = document.createElement('div');
+    no.className = 'slideno';
+    no.textContent = String(k + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+    if (!s.classList.contains('cover')) s.appendChild(mark);
+    s.appendChild(no);
+  });
+
+  buildOverview();
+  fit();
+  show(0, false);
+})();
+</script>
+</body>
+</html>

@@ -29,6 +29,8 @@ const ROOT = path.join(__dirname, '..');
 const DECKS = [
   { teacher: 'unit-1/deck-topic-1-3-south-southeast-asia.html', student: 'unit-1/deck-topic-1-3-south-southeast-asia-student.html' },
   { teacher: 'unit-1/deck-topic-1-4-americas.html', student: 'unit-1/deck-topic-1-4-americas-student.html' },
+  { teacher: 'unit-1/deck-topic-1-5-africa.html', student: 'unit-1/deck-topic-1-5-africa-student.html' },
+  { teacher: 'unit-1/deck-topic-1-6-europe.html', student: 'unit-1/deck-topic-1-6-europe-student.html' },
 ];
 
 // Literal blocks lifted verbatim from the shared Teach Mode shell. Matched as

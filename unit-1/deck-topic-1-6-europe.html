@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeHistorical | Teach Mode 1.6</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   BeHistorical Teach Mode, Topic 1.6
+
+   Same house rules as Topics 1.3 through 1.5: reading slides are paper under
+   ink, dark is reserved for the cover and part dividers, gold is a
+   dark-surface colour (--oxidized is its paper-safe equivalent), and one KEY
+   TAKEAWAY box per slide is the only thing a student copies.
+
+   This deck reuses the five layout patterns from 1.4 and 1.5 (.hero,
+   .stat-grid, .spotlight, .orgchart, .flow) and adds one new job for
+   .cols.split: a before/after wage-and-rent panel for the Black Death slide,
+   built entirely from panels that already exist. No new CSS anywhere in this
+   deck, five old tools pointed at a fragmented continent none of them have
+   drawn before.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root{
+  --steel:#1a1c1d; --charcoal:#2b2f31; --gunmetal:#3e4447; --iron:#5a5f5c;
+  --sandstone:#d2b48c; --bronze:#8c5a2b; --rust:#a8652d; --oxidized:#6b3e1f;
+  --gold:#c9a46a; --paper:#f5f0e7; --clean:#fffdf7; --ink:#151718;
+  --rule:#ddd2be; --rule-soft:#e8dfd0;
+  --font-display:'Cinzel','Trajan Pro',Georgia,serif;
+  --font-body:'Libre Baskerville',Georgia,'Times New Roman',serif;
+  --font-ui:'Montserrat',Arial,Helvetica,sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#0d0e0f}
+body{font-family:var(--font-body);color:var(--ink)}
+
+/* ── The stage ────────────────────────────────────────────────────────────
+   A fixed 1280x720 board scaled to fit the window, rather than a fluid
+   layout, so what fits at your desk is what lands on the wall. */
+#viewport{position:fixed;inset:0;display:grid;place-items:center;background:#0d0e0f}
+#stage{
+  width:1280px;height:720px;position:relative;flex:none;
+  transform:scale(var(--scale,1));transform-origin:center center;
+  box-shadow:0 40px 120px rgba(0,0,0,.6);
+}
+
+.slide{
+  position:absolute;inset:0;display:none;
+  padding:64px 76px;overflow:hidden;
+  background:var(--paper);color:var(--ink);
+}
+.slide.active{display:flex;flex-direction:column}
+
+.slide.dark{background:var(--steel);color:var(--paper)}
+.slide.dark .eyebrow{color:var(--gold)}
+.slide.dark h1,.slide.dark h2{color:var(--clean)}
+
+/* ── Typography ───────────────────────────────────────────────────────── */
+.eyebrow{
+  font-family:var(--font-ui);font-weight:800;font-size:15px;
+  letter-spacing:.20em;text-transform:uppercase;color:var(--oxidized);
+  margin:0 0 14px;
+}
+h1{font-family:var(--font-display);font-weight:900;font-size:64px;line-height:1.06;margin:0 0 18px;letter-spacing:.01em}
+h2{font-family:var(--font-display);font-weight:800;font-size:44px;line-height:1.12;margin:0 0 8px;color:var(--steel)}
+h3{font-family:var(--font-ui);font-weight:800;font-size:21px;line-height:1.25;margin:0 0 10px;color:var(--oxidized);letter-spacing:.01em}
+.deck-sub{font-size:22px;line-height:1.45;color:var(--gunmetal);margin:0 0 26px;font-style:italic}
+.slide.dark .deck-sub{color:var(--sandstone)}
+p{font-size:20px;line-height:1.55;margin:0 0 16px}
+b,strong{color:var(--oxidized);font-weight:700}
+.slide.dark b,.slide.dark strong{color:var(--gold)}
+
+.rule{height:3px;background:var(--bronze);width:96px;border-radius:2px;margin:0 0 26px}
+.slide.dark .rule{background:var(--gold)}
+
+.body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
+.body.top{justify-content:flex-start}
+
+/* ── Bullets ──────────────────────────────────────────────────────────── */
+ul.points{list-style:none;margin:0;padding:0}
+ul.points li{
+  position:relative;padding-left:38px;margin-bottom:20px;
+  font-size:22px;line-height:1.5;
+}
+ul.points li::before{
+  content:"";position:absolute;left:0;top:.52em;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--bronze);box-shadow:0 0 0 4px rgba(140,90,43,.16);
+}
+.slide.dark ul.points li::before{background:var(--gold);box-shadow:0 0 0 4px rgba(201,164,106,.18)}
+
+/* ── Reveals ──────────────────────────────────────────────────────────── */
+[data-step]{opacity:0;transform:translateY(10px);transition:opacity .28s ease,transform .28s ease}
+[data-step].shown{opacity:1;transform:none}
+
+/* ── Column layouts ───────────────────────────────────────────────────── */
+.cols{display:grid;gap:26px;flex:1;min-height:0}
+.cols.c2{grid-template-columns:1fr 1fr}
+.cols.c3{grid-template-columns:repeat(3,1fr)}
+.cols.c4{grid-template-columns:repeat(4,1fr)}
+.cols.split{grid-template-columns:1.05fr .95fr;align-items:center}
+
+.panel{
+  background:var(--clean);border:1px solid var(--rule);border-radius:10px;
+  padding:24px 26px;border-top:5px solid var(--bronze);
+  display:flex;flex-direction:column;min-height:0;
+}
+.panel.gold{border-top-color:var(--gold)}
+.panel.rust{border-top-color:var(--rust)}
+.panel.iron{border-top-color:var(--iron)}
+.panel p{font-size:18px;line-height:1.5;margin:0 0 12px}
+.panel p:last-child{margin-bottom:0}
+.panel .tag{
+  font-family:var(--font-ui);font-size:12px;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--iron);margin:0 0 6px;
+}
+
+/* ── Figures ──────────────────────────────────────────────────────────── */
+figure{margin:0;display:flex;flex-direction:column;min-height:0;height:100%}
+figure img{
+  width:100%;flex:1;min-height:0;object-fit:cover;border-radius:8px;
+  background:var(--charcoal);border:1px solid var(--rule);
+}
+figure.contain img{object-fit:contain;background:var(--clean);padding:8px}
+figure img.is-fallback{object-fit:contain;background:var(--clean);padding:14px}
+figcaption{
+  font-family:var(--font-ui);font-size:13px;line-height:1.45;color:var(--iron);
+  margin-top:10px;font-weight:500;
+}
+/* A failed image says so, loudly, instead of quietly looking like a design
+   choice. This is the fix for a corrupted or unreachable URL passing as
+   "just plain artwork" until someone happens to ask why a slide looks weak. */
+.img-broken{outline:3px dashed var(--rust);outline-offset:-3px}
+.warn{color:var(--oxidized)}
+
+/* ── Hero: a photograph with a caption card stacked below it ──────────── */
+.hero-wrap{position:relative;flex:1;min-height:0;display:flex;flex-direction:column;border-radius:10px;overflow:hidden;border:1px solid var(--rule)}
+.hero-wrap img{width:100%;flex:1;min-height:0;object-fit:cover;display:block;background:var(--charcoal)}
+.hero-wrap img.is-fallback{object-fit:contain;background:var(--clean);padding:26px}
+.hero-card{
+  position:relative;flex:none;
+  background:rgba(21,23,24,.95);color:var(--paper);border-left:6px solid var(--gold);
+  border-radius:0;padding:16px 26px;
+}
+.hero-card .tag{font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.hero-card p{margin:0;font-size:19px;line-height:1.4;color:var(--paper)}
+.hero-card b{color:var(--gold)}
+.hero-warn{position:absolute;left:26px;top:26px;right:26px;background:rgba(168,101,45,.95);color:var(--clean);
+  font-family:var(--font-ui);font-weight:700;font-size:14px;border-radius:8px;padding:10px 16px;display:none}
+.hero-wrap.is-broken .hero-warn{display:block}
+
+/* ── Stat grid: big numbers or big words, four to a row ──────────────── */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;flex:1;min-height:0}
+.stat-tile{
+  background:var(--clean);border:1px solid var(--rule);border-top:5px solid var(--bronze);
+  border-radius:10px;padding:20px 16px;display:flex;flex-direction:column;
+  justify-content:center;text-align:center;min-height:0;
+}
+.stat-tile.gold{border-top-color:var(--gold)}
+.stat-tile.rust{border-top-color:var(--rust)}
+.stat-tile.iron{border-top-color:var(--iron)}
+.stat-tile .num{font-family:var(--font-display);font-weight:900;font-size:34px;color:var(--oxidized);line-height:1.05}
+.stat-tile .lbl{font-family:var(--font-ui);font-weight:700;font-size:14px;color:var(--iron);margin-top:10px;line-height:1.32}
+
+/* ── Spotlight: one image beside a short stack of facts ──────────────── */
+.spotlight{display:flex;gap:34px;flex:1;min-height:0;align-items:stretch}
+.spotlight figure{flex:0 0 40%}
+.spotlight .facts{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;min-width:0}
+.spotlight .fact{padding-left:20px;border-left:3px solid var(--bronze)}
+.spotlight .fact > b{display:block;color:var(--oxidized);font-family:var(--font-ui);font-size:12px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:4px}
+.spotlight .fact p{margin:0;font-size:19px;line-height:1.42}
+
+/* ── Org chart: a hierarchy diagram, for a concept with no honest photo ── */
+.orgchart{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:14px 30px;font-family:var(--font-ui);font-weight:800;font-size:19px;letter-spacing:.03em}
+.org-line{width:2px;height:24px;background:var(--rule)}
+.org-row{display:flex;gap:20px;justify-content:center}
+.org-branch{display:flex;flex-direction:column;align-items:center;width:200px}
+.org-node{background:var(--clean);border:2px solid var(--bronze);border-radius:8px;padding:12px 16px;
+  font-family:var(--font-ui);font-weight:800;font-size:16px;color:var(--oxidized);text-align:center;width:100%}
+.org-sub{font-size:14px;color:var(--iron);margin-top:8px;text-align:center;font-family:var(--font-ui);line-height:1.4}
+
+/* ── Flow: a numbered pipeline with connectors, for a mechanism ──────── */
+.flow{display:flex;align-items:stretch;gap:0;flex:1;min-height:0}
+.flow .panel{flex:1}
+.flow .arrow{display:flex;align-items:center;justify-content:center;width:34px;flex:none;
+  color:var(--bronze);font-size:26px;font-weight:900}
+
+/* ── Comparison table ─────────────────────────────────────────────────
+   Row padding stays tight; Cinzel runs about 50% wider than the Georgia
+   fallback and a table that fits at your desk can overflow the fixed
+   board once the real fonts load. Re-measure before loosening this. */
+table.compare{width:100%;border-collapse:collapse;font-size:18px}
+table.compare th,table.compare td{
+  text-align:left;padding:10px 16px;border-bottom:1px solid var(--rule);vertical-align:top;
+}
+table.compare thead th{
+  font-family:var(--font-ui);font-size:15px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--clean);background:var(--gunmetal);
+  border-bottom:none;
+}
+table.compare thead th:first-child{background:var(--steel);border-radius:8px 0 0 0}
+table.compare thead th:last-child{border-radius:0 8px 0 0}
+table.compare tbody th{
+  font-family:var(--font-ui);font-size:16px;font-weight:800;color:var(--oxidized);
+  letter-spacing:.06em;text-transform:uppercase;width:172px;background:var(--tint,#f6efe1);
+}
+table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border-bottom:none}
+
+/* ── The one thing to write down ─────────────────────────────────────── */
+.writethis{
+  margin-top:20px;background:var(--steel);color:var(--paper);
+  border-radius:10px;padding:15px 24px;border-left:6px solid var(--gold);
+}
+.writethis .tag{
+  font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 5px;
+}
+.writethis p{margin:0;font-size:21px;line-height:1.35;color:var(--paper)}
+.writethis b,.writethis strong{color:var(--gold)}
+
+/* ── Term chips ───────────────────────────────────────────────────────── */
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:4px}
+.chip{
+  font-family:var(--font-ui);font-size:15px;font-weight:700;letter-spacing:.02em;
+  background:#f6efe1;color:var(--oxidized);border:1px solid var(--rule);
+  border-radius:999px;padding:7px 15px;
+}
+.slide.dark .chip{background:rgba(201,164,106,.14);color:var(--gold);border-color:rgba(201,164,106,.38)}
+
+/* ── Cover ────────────────────────────────────────────────────────────── */
+.cover{
+  justify-content:center;
+  background:
+    radial-gradient(ellipse at 22% 18%, rgba(201,164,106,.16) 0%, transparent 58%),
+    linear-gradient(145deg,#1a1c1d 0%,#22262a 55%,#151718 100%);
+}
+.cover .kicker{
+  font-family:var(--font-ui);font-weight:800;font-size:16px;letter-spacing:.30em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 22px;
+}
+.cover h1{font-size:72px;max-width:19ch}
+.cover .dates{
+  font-family:var(--font-ui);font-weight:700;font-size:19px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sandstone);margin:14px 0 0;
+}
+.cover .brandline{
+  position:absolute;left:76px;bottom:56px;
+  font-family:var(--font-display);font-weight:800;font-size:20px;
+  letter-spacing:.06em;color:var(--gold);
+}
+
+/* ── Divider ──────────────────────────────────────────────────────────── */
+.divider{justify-content:center;background:linear-gradient(135deg,#1a1c1d 0%,#2b2f31 100%)}
+.divider .part{
+  font-family:var(--font-ui);font-weight:800;font-size:15px;letter-spacing:.30em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 18px;
+}
+.divider h1{font-size:60px;max-width:20ch}
+.divider .lede{font-size:23px;line-height:1.5;color:var(--sandstone);max-width:62ch;margin:20px 0 0;font-style:italic}
+
+/* ── Slide furniture ──────────────────────────────────────────────────── */
+.slideno{
+  position:absolute;right:34px;bottom:26px;
+  font-family:var(--font-ui);font-weight:800;font-size:12px;letter-spacing:.16em;
+  color:var(--iron);
+}
+.slide.dark .slideno{color:rgba(210,180,140,.55)}
+.topicmark{
+  position:absolute;left:76px;bottom:26px;
+  font-family:var(--font-ui);font-weight:700;font-size:12px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--iron);
+}
+.slide.dark .topicmark{color:rgba(210,180,140,.55)}
+
+/* ── Progress ─────────────────────────────────────────────────────────── */
+#progress{position:fixed;left:0;top:0;height:4px;background:var(--gold);width:0;z-index:40;transition:width .25s ease}
+
+/* ── Controls ─────────────────────────────────────────────────────────── */
+#hud{
+  position:fixed;right:16px;bottom:14px;z-index:45;display:flex;gap:8px;align-items:center;
+  font-family:var(--font-ui);opacity:.28;transition:opacity .2s ease;
+}
+#hud:hover,#hud:focus-within{opacity:1}
+#hud button{
+  font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:.08em;
+  background:rgba(245,240,231,.10);color:var(--paper);border:1px solid rgba(245,240,231,.26);
+  border-radius:6px;padding:7px 11px;cursor:pointer;
+}
+#hud button:hover{background:rgba(201,164,106,.24);border-color:var(--gold)}
+#hud button:focus-visible,#overview button:focus-visible,#notes button:focus-visible{
+  outline:3px solid var(--gold);outline-offset:2px;
+}
+#counter{font-size:12px;font-weight:800;letter-spacing:.10em;color:var(--sandstone);padding:0 6px}
+
+/* ── Overview ─────────────────────────────────────────────────────────── */
+#overview{
+  position:fixed;inset:0;z-index:60;background:rgba(13,14,15,.97);
+  display:none;padding:34px 40px;overflow-y:auto;
+}
+#overview.show{display:block}
+#overview h2{font-family:var(--font-ui);font-size:14px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 22px}
+#ovgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+#ovgrid button{
+  text-align:left;background:var(--paper);border:2px solid transparent;border-radius:8px;
+  padding:14px 16px;cursor:pointer;font-family:var(--font-ui);color:var(--ink);
+  display:flex;flex-direction:column;gap:6px;min-height:92px;
+}
+#ovgrid button.dk{background:var(--charcoal);color:var(--paper)}
+#ovgrid button:hover{border-color:var(--gold)}
+#ovgrid button.here{border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,164,106,.22)}
+#ovgrid .n{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--iron)}
+#ovgrid button.dk .n{color:var(--sandstone)}
+#ovgrid .t{font-size:14px;font-weight:700;line-height:1.3}
+
+/* ── Presenter notes ──────────────────────────────────────────────────── */
+#notes{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--steel);
+  color:var(--paper);border-top:3px solid var(--gold);padding:20px 26px 22px;
+  display:none;max-height:36vh;overflow-y:auto;
+}
+#notes.show{display:block}
+#notes .tag{font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.20em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+#notes .txt{font-family:var(--font-ui);font-size:15px;line-height:1.6;max-width:112ch}
+#notes .txt b{color:var(--gold)}
+
+/* ── Blackout ─────────────────────────────────────────────────────────── */
+#black{position:fixed;inset:0;background:#000;z-index:70;display:none}
+#black.show{display:block}
+
+/* ── Help ─────────────────────────────────────────────────────────────── */
+#help{
+  position:fixed;inset:0;z-index:80;background:rgba(13,14,15,.96);display:none;
+  place-items:center;font-family:var(--font-ui);color:var(--paper);
+}
+#help.show{display:grid}
+#help .box{max-width:560px;padding:34px 40px}
+#help h2{font-family:var(--font-display);font-size:30px;color:var(--gold);margin:0 0 20px}
+#help dl{display:grid;grid-template-columns:auto 1fr;gap:12px 20px;margin:0;font-size:15px}
+#help dt{font-weight:800;color:var(--gold);letter-spacing:.06em}
+#help dd{margin:0;color:var(--sandstone)}
+#help .close{margin-top:26px;font-size:13px;color:var(--iron)}
+</style>
+</head>
+<body>
+
+<script>
+/* A dead or unreachable image degrades to this topic's local artwork, the
+   same as the rest of the site, but it also FLAGS the caption instead of
+   letting a fallback quietly pass as the finished design. That is the
+   direct fix for a corrupted image file silently looking like weak
+   artwork with nobody noticing why. */
+function onImgFail(el, localSrc) {
+  el.onerror = null;
+  el.src = localSrc;
+  el.classList.add('is-fallback');
+  el.classList.add('img-broken');
+  var wrap = el.closest('.hero-wrap');
+  if (wrap) wrap.classList.add('is-broken');
+  var fig = el.closest('figure');
+  var cap = fig ? fig.querySelector('figcaption') : null;
+  if (cap && !cap.dataset.flagged) {
+    cap.dataset.flagged = '1';
+    cap.innerHTML = '<b class="warn">Image did not load, needs a working URL.</b> Was meant to show: ' + cap.textContent;
+  }
+}
+</script>
+
+<div id="progress"></div>
+
+<div id="viewport">
+<div id="stage">
+
+<!-- ═════ 01 COVER ═════════════════════════════════════════════════════════ -->
+<section class="slide dark cover" data-title="Cover"
+  data-notes="Open cold. Ask the room one question and leave it hanging: <b>&ldquo;Rome fell in the west around 476. Song China rebuilt a centralized empire. Why did Europe never rebuild one?&rdquo;</b> Take two or three guesses, write nothing down, then advance. The whole block is the answer, and the answer is not &ldquo;Europe was behind.&rdquo;<br><br><b>Restate the note-taking rule.</b> Every slide has one dark box marked KEY TAKEAWAY. That box is the only thing they copy. Everything else on the wall is there so they can follow what you are saying.">
+  <p class="kicker">AP World History &middot; Unit 1 &middot; Topic 1.6</p>
+  <h1>Developments in Europe</h1>
+  <p class="dates">Political, Social, and Religious Structures &middot; c. 1200 to c. 1450</p>
+  <div class="brandline">BeHistorical</div>
+</section>
+
+<!-- ═════ 02 THE QUESTION ══════════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="The Question"
+  data-notes="Land the question again, then unpack it fast. Every other region in this unit produced at least one large centralized state. Europe produced <b>hundreds of small ones</b>, and one institution that outranked all of them without ruling any of them.<br><br>Say the turn out loud: <b>this was never a story about falling behind.</b> It is a story about what grows in the space where a big empire does not exist: a church that ran its own courts, a chartered town that bought its own freedom, and a king who had to bargain for every coin he spent. That bargain is the whole lesson.">
+  <p class="part">The Question</p>
+  <h1>Why did Europe never rebuild a Rome, and what filled the space instead?</h1>
+  <ul class="points" style="margin-top:20px;max-width:58ch">
+    <li data-step="1">No cash, so lords <b>paid in land</b></li>
+    <li data-step="2">No single crown, so the <b>Church</b> filled the gap</li>
+    <li data-step="3">No king could <b>tax without asking first</b></li>
+  </ul>
+</section>
+
+<!-- ═════ 03 THE MAP ═══════════════════════════════════════════════════════ -->
+<section class="slide" data-title="A Fragmented, Faithful Map"
+  data-notes="This is the Hereford Mappa Mundi, a medieval European world map, and the point is not accuracy, the point is worldview. Jerusalem sits at the center. Europe is a small piece at the edge. <b>The map is Christian theology drawn as geography, not a navigation tool.</b><br><br>Say what it is evidence for: kingdoms, principalities, Church lands and local lordships covered Europe, and no single political map could unify it, but <b>one religious map could</b>. The Roman Catholic Church connected people across every one of those borders. Trade and towns were also growing, especially in northern Italy and Flanders, which is the change this deck gets to later.<br><br>Set the contrast up early: <b>political fragmentation, religious unity.</b> Nearly every slide from here on is one of those two words.">
+  <p class="eyebrow">Where in the World</p>
+  <h2>A fragmented map, a shared faith</h2>
+  <div class="rule"></div>
+  <div class="spotlight">
+    <figure class="contain">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hereford-Karte.jpg"
+           alt="The Hereford Mappa Mundi, a medieval European world map centered on Jerusalem"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/map.svg')">
+      <figcaption>The Hereford Mappa Mundi, a medieval European world map. Geography drawn as theology, with Jerusalem at the center.</figcaption>
+    </figure>
+    <div class="facts">
+      <div class="fact">
+        <b>Politically</b>
+        <p>Kingdoms, nobles, and <b>Church lands</b>, divided</p>
+      </div>
+      <div class="fact" data-step="1">
+        <b>Religiously</b>
+        <p>One <b>Roman Catholic Church</b>, crossing every border</p>
+      </div>
+      <div class="fact" data-step="2">
+        <b>Economically</b>
+        <p>Towns and trade <b>growing</b>, especially in Italy and Flanders</p>
+      </div>
+    </div>
+  </div>
+  <div class="writethis" data-step="3">
+    <p class="tag">Key Takeaway</p>
+    <p>Fragmented politics. <b>One faith, holding the pieces together anyway.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 04 THE MECHANISM ═════════════════════════════════════════════════ -->
+<section class="slide" data-title="A State With No Cash"
+  data-notes="This is the slide that tells them how to read the whole block, so do not rush it. After Rome, and after generations of Viking, Magyar and Muslim raiding, western Europe had <b>almost no tax system, almost no coined money in circulation, and no salaried administration.</b> Defense had to be local because nothing else could respond fast enough, and defense meant armored cavalry, ruinously expensive, roughly a whole village's output for one warhorse, its armor, and years of training.<br><br>Say the mechanism out loud, because it explains everything else today: <b>a ruler who cannot pay that bill in coin pays it in land.</b> He grants an estate to a warrior who swears loyalty and owes service in return. That is <b>feudalism</b>. The peasants who work that land under it are <b>manorialism</b>, the economic system underneath the political one.<br><br>Land the irony before moving on: <b>every grant made the granting king weaker, not stronger, in the long run.</b> That irony is the reason Europe's monarchy took three centuries to rebuild anything.">
+  <p class="eyebrow">The Mechanism Behind Everything Today</p>
+  <h2>A state with no cash</h2>
+  <div class="rule"></div>
+  <div class="body top">
+    <ul class="points">
+      <li>Almost <b>no tax system</b> and almost no coined money in circulation</li>
+      <li data-step="1">A ruler who cannot pay in coin <b>pays in land</b></li>
+      <li data-step="2">Land for loyalty and service is <b>feudalism</b></li>
+      <li data-step="3">The economic system running underneath it is <b>manorialism</b></li>
+    </ul>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>If you cannot pay a soldier in coin, you pay him in land, <b>and a soldier with land is no longer entirely yours</b>.</p>
+  </div>
+</section>
+
+<!-- ═════ 05 DIVIDER: PART ONE ═════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part One: Fragmentation"
+  data-notes="Short transition. Feudalism and manorialism are the starting condition everything else in this lesson reacts against: the Church fills a gap this system left open, towns buy their way out of it, and kings spend three centuries trying to reverse it.">
+  <p class="part">Part One</p>
+  <h1>Fragmentation</h1>
+  <p class="lede">Land granted for loyalty, and a farm that fed the whole system.</p>
+</section>
+
+<!-- ═════ 06 FEUDALISM ═════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Feudalism: Land for Loyalty"
+  data-notes="Walk this as a machine, four steps, the same way the mit'a slide worked in Topic 1.4. A king or great lord <b>grants</b> an estate to a warrior. In exchange, that warrior <b>swears</b> loyalty and owes military service. That warrior often <b>subdivides</b>, granting part of his own land to knights beneath him on the same terms. And underneath all of it, <b>peasants work</b> the manor that actually produces anything.<br><br>Say the caution clearly, because it is worth a sentence on any essay: <b>&ldquo;feudalism&rdquo; is a word invented long after this period, and historians argue it flattens real variation.</b> The course expects the term. Use it, and a sentence noting it worked differently in England, Saxony, and Catalonia is a mark of a strong answer, not a hedge.<br><br>And the one non-negotiable correction: <b>a serf is not a slave.</b> A serf was bound to the land, but he could not be sold away from it, and he kept what he grew beyond his obligations. That distinction is exactly what makes the Black Death slide, coming later, make sense.">
+  <p class="eyebrow">The Political System</p>
+  <h2>Land for loyalty, four steps down</h2>
+  <div class="rule"></div>
+  <div class="flow">
+    <div class="panel">
+      <p class="tag">Step 1</p>
+      <h3>Grant</h3>
+      <p>A king grants <b>land</b> to a warrior</p>
+    </div>
+    <div class="arrow">&rarr;</div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">Step 2</p>
+      <h3>Swear</h3>
+      <p>The warrior owes <b>loyalty and service</b></p>
+    </div>
+    <div class="arrow" data-step="1">&rarr;</div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">Step 3</p>
+      <h3>Subdivide</h3>
+      <p>He grants land to <b>knights</b> beneath him</p>
+    </div>
+    <div class="arrow" data-step="2">&rarr;</div>
+    <div class="panel iron" data-step="3">
+      <p class="tag">Step 4</p>
+      <h3>Work</h3>
+      <p><b>Serfs</b> farm the manor underneath it all</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>A serf is bound to the land. <b>A serf is not a slave, and that difference matters later.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 07 MANORIALISM ═══════════════════════════════════════════════════ -->
+<section class="slide" data-title="Manorialism: The Farm That Fed the System"
+  data-notes="This is where students undersell Europe, so slow down. Between roughly 1000 and 1300, Europe assembled a package of real agricultural improvements. The <b>heavy plow</b> with a mold board could turn the wet clay soils of northern Europe that a light Mediterranean plow only scratched. The <b>horse collar</b> let a horse pull from its shoulders instead of its throat, making a faster animal usable for plowing. The <b>three-field system</b> rotated a winter crop, a spring legume, and fallow, leaving only a third of the land idle each year instead of half.<br><br>Land the number: the result was a <b>European population that roughly doubled</b> across those three centuries. Tell them why this matters for two slides they have not seen yet: this growth is what filled the towns coming in Part Four, and it is what pushed farming onto marginal land, which is what made the famine in Part Five so severe.">
+  <p class="eyebrow">The Economic System</p>
+  <h2>Manorialism: the quiet engine</h2>
+  <div class="rule"></div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <p class="num" style="font-size:24px">Heavy plow</p>
+      <p class="lbl">Turned the wet clay soils of the north</p>
+    </div>
+    <div class="stat-tile gold" data-step="1">
+      <p class="num" style="font-size:24px">Horse collar</p>
+      <p class="lbl">A faster animal, usable for plowing</p>
+    </div>
+    <div class="stat-tile rust" data-step="2">
+      <p class="num" style="font-size:24px">Three-field system</p>
+      <p class="lbl">Only a third of the land idle, not half</p>
+    </div>
+    <div class="stat-tile iron" data-step="3">
+      <p class="num">2x</p>
+      <p class="lbl">Europe's population, in three centuries</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>The manor was not stagnant. <b>It doubled a continent's population before it broke anything.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 08 DIVIDER: PART TWO ═════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Two: The Church"
+  data-notes="Transition. Say it directly: feudalism left a gap, no single ruler, no shared bureaucracy, no shared law. The Church is what filled that gap, and it did it well enough to occasionally out-power the kings themselves.">
+  <p class="part">Part Two</p>
+  <h1>The Church</h1>
+  <p class="lede">The institution that did the jobs a state was not there to do.</p>
+</section>
+
+<!-- ═════ 09 THE CHURCH AS THE STATE ═══════════════════════════════════════ -->
+<section class="slide" data-title="The Church: The State Europe Did Not Have"
+  data-notes="Four facts, stacked, so the scale hits at once. The <b>tithe</b> claimed a tenth of production from the faithful, the only universal tax collected anywhere in Europe. <b>Canon law</b> governed marriage, wills, oaths, and heresy, in the Church's own courts, where clergy answered to the Church instead of the king. It was the <b>largest landholder</b> in Europe, monasteries alone controlling vast estates. And it <b>trained the clerks</b>: Latin was the language of law and administration, and for a long time the Church trained nearly everyone who could use it, which is why a king's chancellery was staffed by clergy.<br><br>Add the honest nuance: say <b>&ldquo;for a long time,&rdquo; not &ldquo;always.&rdquo;</b> By the fourteenth century, Italian towns had professional notaries and lay literacy was spreading through courts and commerce. The Church's grip on the written word was the largest single fact about European administration in 1200, and it was already loosening by 1450.">
+  <p class="eyebrow">Case One &middot; An Institution, Not a Building</p>
+  <h2>The one institution every kingdom answered to</h2>
+  <div class="rule"></div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <p class="num" style="font-size:26px">The tithe</p>
+      <p class="lbl">A tenth of production, the only universal tax</p>
+    </div>
+    <div class="stat-tile gold" data-step="1">
+      <p class="num" style="font-size:26px">Canon law</p>
+      <p class="lbl">Its own courts, its own code</p>
+    </div>
+    <div class="stat-tile rust" data-step="2">
+      <p class="num" style="font-size:26px">Largest landholder</p>
+      <p class="lbl">Monasteries controlled vast estates</p>
+    </div>
+    <div class="stat-tile iron" data-step="3">
+      <p class="num" style="font-size:26px">Trained the clerks</p>
+      <p class="lbl">Latin literacy, for a long time, was the Church's</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>A comparison of European power that skips the Church <b>is measuring the wrong institution</b>.</p>
+  </div>
+</section>
+
+<!-- ═════ 10 THE WEAPON A KING COULD NOT ANSWER ════════════════════════════ -->
+<section class="slide" data-title="The Weapon a King Could Not Answer"
+  data-notes="Let the picture set the scale, then name the weapon. This is the kind of cathedral a diocese could command, and behind it stood a spiritual sanction no king had a tool against. <b>Excommunication</b> cut a person off from the sacraments. <b>Interdict</b> suspended them across an entire kingdom, closing churches and denying burial to everyone. Applied to a monarch, a pope could go further and release his subjects from their oaths of loyalty, a direct invitation to rebellion in a society built on oaths.<br><br>Name the test case: the <b>Investiture Controversy</b>, a fight over who appoints bishops, which is really a fight over who controls the land and personnel a bishopric commands. Under <b>Innocent III</b>, around 1200, the papacy forced kings of England and France to yield on major disputes.<br><br>Land it plainly: <b>no other region in this unit contains an institution that could do this to its own rulers.</b>">
+  <p class="eyebrow">Spiritual Sanction as Political Power</p>
+  <h2>A weapon no army could stop</h2>
+  <div class="rule"></div>
+  <div class="hero-wrap">
+    <div class="hero-warn">Image did not load, needs a working URL.</div>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_Notre-Dame_of_Rodez_09.jpg"
+         alt="A Gothic cathedral, the kind of institution the medieval Latin Church could command across Europe"
+         onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/lecture-03.svg')">
+    <div class="hero-card">
+      <p class="tag">c. 1200 &middot; Pope Innocent III</p>
+      <p>Excommunication and interdict, applied to a king, could <b>release his subjects from their oaths of loyalty</b>.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="1">
+    <p class="tag">Key Takeaway</p>
+    <p>No army, no treasury. <b>Just a sanction no ruler could cut off from its own funding.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 11 DIVIDER: PART THREE ═══════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Three: The Monarchies"
+  data-notes="Transition. Say the connection out loud: kings spent this whole period trying to rebuild what feudalism had given away. Every step required money they could only get by asking, and what they gave away for that money is the origin of the parliament.">
+  <p class="part">Part Three</p>
+  <h1>The Monarchies</h1>
+  <p class="lede">Every step toward a stronger crown required money a king had to ask for.</p>
+</section>
+
+<!-- ═════ 12 THE PRICE OF MONEY ════════════════════════════════════════════ -->
+<section class="slide" data-title="Magna Carta and the Price of Money"
+  data-notes="Walk this as a machine, the mechanism the whole section is built on, and the most transferable idea in the topic. War was getting vastly more expensive, and a king's ordinary revenue from his own lands could not pay for it, so he <b>needs</b> more money than he has. Because he has no standing bureaucracy to assess and collect a new tax against anyone's will, he must <b>summon</b> the nobles, bishops, and eventually the knights and townsmen who could actually deliver it. They <b>grant</b> the tax, in exchange for redress of grievances and confirmed privileges. And over time, that exchange becomes a settled <b>principle</b>: taxation requires their consent.<br><br>Name the landmarks: <b>Magna Carta, 1215</b>, barons forcing King John to accept written limits on arbitrary taxation. Read the correction slowly, because this is the single most common error on this topic: <b>Magna Carta was a peace treaty between a defeated king and his barons, not a bill of rights for everyone</b>, and John repudiated it within months. By <b>1295</b> the English Parliament included shire and town representatives. France's Estates General followed in 1302.<br><br>Land the comparison: <b>a Song emperor never had to bargain like this, because he had an examined bureaucracy that collected on his own authority. A European king had to ask, and the parliament is the residue of a state too weak to tax without help.</b>">
+  <p class="eyebrow">Case Two &middot; How a King Rebuilds Power</p>
+  <h2>The bargain that produced parliaments</h2>
+  <div class="rule"></div>
+  <div class="flow">
+    <div class="panel">
+      <p class="tag">Step 1</p>
+      <h3>Need</h3>
+      <p>War costs more than a king's <b>own revenue</b> can cover</p>
+    </div>
+    <div class="arrow">&rarr;</div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">Step 2</p>
+      <h3>Summon</h3>
+      <p>Nobles, clergy, and towns are called to <b>grant</b> it</p>
+    </div>
+    <div class="arrow" data-step="1">&rarr;</div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">Step 3</p>
+      <h3>Bargain</h3>
+      <p>They grant it for <b>confirmed privileges</b> in return</p>
+    </div>
+    <div class="arrow" data-step="2">&rarr;</div>
+    <div class="panel iron" data-step="3">
+      <p class="tag">Step 4</p>
+      <h3>Settle</h3>
+      <p>Consent becomes a <b>required principle</b>, Magna Carta, 1215</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>Magna Carta was a treaty with the barons, not a bill of rights. <b>The parliament is the residue of a weak treasury.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 13 DIVIDER: PART FOUR ═════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Four: Towns and Trade"
+  data-notes="Transition. Say the connection to Part One directly: the same cash shortage that produced feudalism is about to produce the towns that eventually dissolve it. A lord short on coin will sell away his own authority for a reliable annual payment.">
+  <p class="part">Part Four</p>
+  <h1>Towns and Trade</h1>
+  <p class="lede">A place where a lord's authority stopped, and money outranked land.</p>
+</section>
+
+<!-- ═════ 14 THE CHARTERED TOWN ════════════════════════════════════════════ -->
+<section class="slide" data-title="The Chartered Town"
+  data-notes="Ask the question out loud before answering it: why would a lord sell away his own authority? Because a chartered town paid <b>in cash, annually, reliably</b>, and cash was exactly what a landed noble could not otherwise get. The same shortage that produced feudalism produced the institution that would eventually dissolve it.<br><br>Name what a charter actually bought: the right to hold a <b>market</b>, run its <b>own court</b>, elect its own officers, tax itself, and, most strikingly, grant freedom to a serf who lived inside its walls unclaimed for <b>a year and a day</b>. There was a German saying for it: <b>town air makes you free.</b> It was a legal fact, not a slogan.<br><br>Then name the guild, one sentence: it trained apprentices and fixed prices and wages, and by the fifteenth century mastership increasingly ran in families. It was a welfare institution and a cartel, and the honest answer says both.">
+  <p class="eyebrow">Case Three &middot; What a Town Bought</p>
+  <h2>&ldquo;Town air makes you free&rdquo;</h2>
+  <div class="rule"></div>
+  <div class="cols split">
+    <div>
+      <ul class="points">
+        <li>A charter, often <b>purchased</b>, granted a market, a court, and self-government</li>
+        <li data-step="1">A serf inside the walls, unclaimed <b>a year and a day</b>, became free</li>
+        <li data-step="2"><b>Guilds</b> trained, priced, and increasingly gate-kept each craft</li>
+      </ul>
+      <div class="writethis" data-step="3">
+        <p class="tag">Key Takeaway</p>
+        <p>A lord sold legal freedom <b>for a payment he could actually count on</b>.</p>
+      </div>
+    </div>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Plan_mediaeval_manor.jpg"
+           alt="A plan of a medieval manor, showing the fields, lord's demesne, and village that a town charter operated outside of"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/lecture-01.svg')">
+      <figcaption>A medieval manor plan. A chartered town was a jurisdiction that sat entirely outside this order.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ═════ 15 GUILDS, BANKS, AND THE HANSE ══════════════════════════════════ -->
+<section class="slide" data-title="Guilds, Banks, and the Hanseatic League"
+  data-notes="Three commercial technologies, and each solved a problem distance creates. The <b>bill of exchange</b> let a merchant pay in Florence and have an agent collect it in Bruges in another currency, moving value without moving coin, and quietly hiding interest inside the exchange rate at a time the Church prohibited lending at interest. <b>Double-entry bookkeeping</b> made a large firm auditable. The <b>Hanseatic League</b>, a confederation of northern German and Baltic towns led by Lubeck, monopolized the northern trade in fish, grain, timber, and wool, and was strong enough to fight and win a war against the king of Denmark.<br><br>Name the archive that proves this in extraordinary detail: one Tuscan merchant, <b>Francesco Datini</b>, who died in 1410, left behind roughly one hundred and fifty thousand letters, account books, and contracts, because he willed his estate to a charity that kept the building. That is why European commerce of this period is so well documented compared with, say, the Wangara traders of the Sahel: <b>the difference is in what survived, not in what was happening.</b>">
+  <p class="eyebrow">The Instruments of Distance</p>
+  <h2>Moving money without moving coin</h2>
+  <div class="rule"></div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <p class="num" style="font-size:22px">Bill of exchange</p>
+      <p class="lbl">Value moved between cities, no coin traveling</p>
+    </div>
+    <div class="stat-tile gold" data-step="1">
+      <p class="num" style="font-size:22px">Double-entry books</p>
+      <p class="lbl">A large trading firm, made auditable</p>
+    </div>
+    <div class="stat-tile rust" data-step="2">
+      <p class="num" style="font-size:22px">Hanseatic League</p>
+      <p class="lbl">A confederation of towns, with its own navy</p>
+    </div>
+    <div class="stat-tile iron" data-step="3">
+      <p class="num">150,000</p>
+      <p class="lbl">Letters left by one Tuscan merchant, Datini</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>Money learned to travel faster than coin. <b>The instruments, not the gold, are the innovation.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 16 DIVIDER: PART FIVE ═════════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Five: The Fourteenth Century"
+  data-notes="Transition. Say what is coming plainly: a disease that traveled the same trade routes just described is about to do more to change European society than any king, rebellion, or philosopher managed across the previous three centuries.">
+  <p class="part">Part Five</p>
+  <h1>The Fourteenth Century</h1>
+  <p class="lede">Famine, plague, and revolt, arriving inside forty years of each other.</p>
+</section>
+
+<!-- ═════ 17 THE BLACK DEATH ═══════════════════════════════════════════════ -->
+<section class="slide" data-title="The Black Death"
+  data-notes="Three centuries of population growth had pushed farming onto poor, marginal soils, so by 1300 much of Europe lived close to the edge of what its land could support. Torrential rain from 1315 to 1317 ruined harvests repeatedly, and the <b>Great Famine</b> killed roughly a tenth of northern Europe's population and left the survivors weakened.<br><br>Then say the mechanism, slowly, because it is the connective tissue of the whole unit: the <b>Black Death arrived in Sicily in 1347</b> aboard ships from a Genoese trading post on the Black Sea, and it swept Europe over four years, killing somewhere between a third and a half of the population. <b>It was a product of connection.</b> The same Eurasian trade network that carried silk, paper, and Arabic mathematics westward carried the disease along with them.<br><br>Land the line that ties Units 1 and 2 together: <b>integration has costs, and this is the largest one in the course.</b>">
+  <p class="eyebrow">The Shock</p>
+  <h2>A cost of connection</h2>
+  <div class="rule"></div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <p class="num">1315&ndash;17</p>
+      <p class="lbl">The Great Famine, ruined harvests</p>
+    </div>
+    <div class="stat-tile gold" data-step="1">
+      <p class="num">1347</p>
+      <p class="lbl">Plague arrives in Sicily, by Genoese ship</p>
+    </div>
+    <div class="stat-tile rust" data-step="2">
+      <p class="num">&frac13; to &frac12;</p>
+      <p class="lbl">Of Europe's population, dead within four years</p>
+    </div>
+    <div class="stat-tile iron" data-step="3">
+      <p class="num" style="font-size:22px">The same network</p>
+      <p class="lbl">That carried silk and mathematics westward</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>The plague traveled the same routes as silk and paper. <b>Integration transmits everything, not only what traders intended.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 18 WHAT A LABOR SHORTAGE DOES ════════════════════════════════════ -->
+<section class="slide" data-title="What a Labor Shortage Does"
+  data-notes="This is the mechanism the entire topic is built on, so walk it as economics, not tragedy. Killing a third of the people does not destroy the land, the tools, or the mills. Afterward there is the same amount of farmland and far fewer people to work it: <b>labor becomes scarce and expensive, land becomes abundant and cheap.</b> Wages rose, rents fell, and a peasant who did not like his terms could walk to the next manor.<br><br>Say what landlords tried: England's <b>Statute of Labourers, 1351</b>, attempted to freeze wages at pre-plague levels. It failed, because <b>a law cannot repeal a shortage</b>, and the attempt fed the grievances behind the English rising of 1381, which demanded the abolition of serfdom outright. It was suppressed, and its demand arrived anyway: serfdom in western Europe faded across the following century.<br><br>Add the correction that turns this into the strongest causation argument in the unit: <b>the same shock hardened serfdom in eastern Europe</b>, where peasants could not move and landlords held more leverage over weaker monarchies. Same shock, opposite outcome, because the underlying structure differed.">
+  <p class="eyebrow">The Mechanism</p>
+  <h2>Before and after the plague, on one manor</h2>
+  <div class="rule"></div>
+  <div class="cols c2">
+    <div class="panel iron">
+      <p class="tag">Before, c. 1340</p>
+      <h3>Labor is cheap</h3>
+      <p>Land is <b>scarce</b>. Workers are <b>abundant</b>. A lord sets the terms.</p>
+    </div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">After, c. 1360</p>
+      <h3>Labor is dear</h3>
+      <p>Land is <b>abundant</b>. Workers are <b>scarce</b>. A peasant can walk away and be hired.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="2">
+    <p class="tag">Key Takeaway</p>
+    <p>Serfdom faded in the west, and <b>hardened in the east</b>, from the exact same shock.</p>
+  </div>
+</section>
+
+<!-- ═════ 19 COMPARISON ════════════════════════════════════════════════════ -->
+<section class="slide" data-title="Comparing Europe and Song China"
+  data-notes="This table is the comparison the checkpoint actually wants, and the trap to avoid is ranking rather than explaining. Walk it row by row. <b>Taxation</b>: China's examined bureaucracy collected on its own authority, Europe's king had to summon and bargain. <b>Legitimacy</b>: Confucian scholars were the state's own officials, the Church was a rival corporation with its own courts and income. <b>Cities</b>: Kaifeng and Hangzhou were larger and richer, run by imperial officials, European towns bought their own legal independence. <b>Shock response</b>: Champa rice gave Song China a labor surplus, the plague gave Europe a labor shortage running the opposite direction.<br><br>Say the line that should end every essay on this topic: <b>ranking one region above another earns nothing on this exam. Explaining why the difference existed earns everything.</b>">
+  <p class="eyebrow">The Comparison the Checkpoint Wants</p>
+  <h2>Comparing Europe and Song China</h2>
+  <div class="rule"></div>
+  <table class="compare">
+    <thead>
+      <tr><th></th><th>Europe</th><th>Song China</th></tr>
+    </thead>
+    <tbody>
+      <tr><th>Taxation</th><td>Bargained, by consent</td><td>Collected, by imperial officials</td></tr>
+      <tr data-step="1"><th>Legitimacy</th><td>A rival Church</td><td>The state's own scholars</td></tr>
+      <tr data-step="2"><th>Cities</th><td>Bought their own freedom</td><td>Run by imperial officials</td></tr>
+      <tr data-step="3"><th>Labor shock</th><td>Plague, a shortage</td><td>Champa rice, a surplus</td></tr>
+    </tbody>
+  </table>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway &middot; the grid is in your eBook, do not copy it</p>
+    <p>Ranking earns nothing. <b>Explaining why the difference existed earns everything.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 20 AP TAKEAWAY ═══════════════════════════════════════════════════ -->
+<section class="slide" data-title="AP Takeaway"
+  data-notes="Close on the two checkpoints, because that is literally what gets graded. Checkpoint 1 asks how feudalism or the power of nobles produced political fragmentation, so make them name ONE mechanism, land for loyalty or a weak crown, rather than describing the whole period.<br><br>Checkpoint 2 asks how Christianity unified Europe while towns, trade, or universities showed change over time. Point at the chips and say directly: <b>one religious-unity point plus one specific change-over-time example beats a broad summary of the whole lesson.</b><br><br>Last line, said slowly: <b>Europe never rebuilt a Rome, and in the space where one did not exist, a church, a chartered town, and a bargaining assembly grew instead.</b> That comparison is worth more on the exam than any king's biography.">
+  <p class="eyebrow">What You Must Be Able To Do</p>
+  <h2>The takeaway</h2>
+  <div class="rule"></div>
+  <div class="body top">
+    <p class="tag" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized)">Checkpoint 1 &middot; Fragmented power</p>
+    <div class="chips">
+      <span class="chip">Feudalism</span>
+      <span class="chip">Vassals and nobles</span>
+      <span class="chip">Decentralization</span>
+    </div>
+    <p class="tag" data-step="1" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized);margin-top:22px">Checkpoint 2 &middot; The Church, and change over time</p>
+    <div class="chips" data-step="1">
+      <span class="chip">Roman Catholic Church</span>
+      <span class="chip">Cathedrals and monasteries</span>
+      <span class="chip">Chartered towns</span>
+      <span class="chip">Guilds</span>
+      <span class="chip">Universities</span>
+    </div>
+  </div>
+  <div class="writethis" data-step="2">
+    <p class="tag">Key Takeaway &middot; both checkpoints</p>
+    <p>Name <b>one</b> mechanism. Use <b>specific</b> evidence. Explain <b>why</b>, not only what.</p>
+  </div>
+</section>
+
+</div><!-- /stage -->
+</div><!-- /viewport -->
+
+<div id="hud">
+  <button id="btn-prev" type="button" aria-label="Previous slide">&larr;</button>
+  <span id="counter">1 / 20</span>
+  <button id="btn-next" type="button" aria-label="Next slide">&rarr;</button>
+  <button id="btn-ov"  type="button">All slides</button>
+  <button id="btn-nt"  type="button">Notes</button>
+  <button id="btn-fs"  type="button">Full screen</button>
+  <button id="btn-hp"  type="button" aria-label="Keyboard help">?</button>
+</div>
+
+<div id="overview" role="dialog" aria-modal="true" aria-label="All slides">
+  <h2>All slides, click to jump</h2>
+  <div id="ovgrid"></div>
+</div>
+
+<div id="notes" aria-live="polite">
+  <p class="tag">Presenter notes</p>
+  <div class="txt" id="notes-txt"></div>
+</div>
+
+<div id="black"></div>
+
+<div id="help" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts">
+  <div class="box">
+    <h2>Teach Mode controls</h2>
+    <dl>
+      <dt>&rarr; &darr; Space</dt><dd>Next step, then next slide</dd>
+      <dt>&larr; &uarr;</dt><dd>Back</dd>
+      <dt>Home / End</dt><dd>First / last slide</dd>
+      <dt>O</dt><dd>All slides, click to jump</dd>
+      <dt>N</dt><dd>Presenter notes</dd>
+      <dt>B</dt><dd>Blackout, for eyes on you</dd>
+      <dt>F</dt><dd>Full screen</dd>
+      <dt>?</dt><dd>This panel</dd>
+    </dl>
+    <p class="close">Press Escape or ? to close.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var stage    = document.getElementById('stage');
+  var slides   = Array.prototype.slice.call(stage.querySelectorAll('.slide'));
+  var progress = document.getElementById('progress');
+  var counter  = document.getElementById('counter');
+  var overview = document.getElementById('overview');
+  var ovgrid   = document.getElementById('ovgrid');
+  var notes    = document.getElementById('notes');
+  var notesTxt = document.getElementById('notes-txt');
+  var black    = document.getElementById('black');
+  var help     = document.getElementById('help');
+
+  var i = 0;    // current slide
+  var step = 0; // steps revealed on the current slide
+
+  function stepsOf(slide) {
+    var seen = {}, out = [];
+    Array.prototype.forEach.call(slide.querySelectorAll('[data-step]'), function (el) {
+      var n = parseInt(el.getAttribute('data-step'), 10);
+      if (!isNaN(n) && !seen[n]) { seen[n] = 1; out.push(n); }
+    });
+    return out.sort(function (a, b) { return a - b; });
+  }
+
+  function paintSteps() {
+    var order = stepsOf(slides[i]);
+    var upto  = order.slice(0, step);
+    Array.prototype.forEach.call(slides[i].querySelectorAll('[data-step]'), function (el) {
+      var n = parseInt(el.getAttribute('data-step'), 10);
+      el.classList.toggle('shown', upto.indexOf(n) !== -1);
+    });
+  }
+
+  function show(n, revealAll) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function (s, k) { s.classList.toggle('active', k === i); });
+    step = revealAll ? stepsOf(slides[i]).length : 0;
+    paintSteps();
+    counter.textContent = (i + 1) + ' / ' + slides.length;
+    progress.style.width = ((i + 1) / slides.length * 100) + '%';
+    notesTxt.innerHTML = slides[i].getAttribute('data-notes') || '<em>No notes for this slide.</em>';
+    if (overview.classList.contains('show')) markHere();
+  }
+
+  function next() {
+    if (step < stepsOf(slides[i]).length) { step++; paintSteps(); return; }
+    if (i < slides.length - 1) show(i + 1, false);
+  }
+
+  function prev() {
+    if (step > 0) { step--; paintSteps(); return; }
+    if (i > 0) show(i - 1, true);
+  }
+
+  function fit() {
+    var pad = 0;
+    var s = Math.min(
+      (window.innerWidth  - pad) / 1280,
+      (window.innerHeight - pad) / 720
+    );
+    stage.style.setProperty('--scale', s);
+  }
+  window.addEventListener('resize', fit);
+
+  function buildOverview() {
+    slides.forEach(function (s, k) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      if (s.classList.contains('dark')) b.className = 'dk';
+      b.innerHTML = '<span class="n">' + String(k + 1).padStart(2, '0') + '</span>' +
+                    '<span class="t"></span>';
+      b.querySelector('.t').textContent = s.getAttribute('data-title') || ('Slide ' + (k + 1));
+      b.addEventListener('click', function () { toggleOverview(false); show(k, false); });
+      ovgrid.appendChild(b);
+    });
+  }
+  function markHere() {
+    Array.prototype.forEach.call(ovgrid.children, function (b, k) {
+      b.classList.toggle('here', k === i);
+    });
+  }
+  function toggleOverview(on) {
+    var want = (typeof on === 'boolean') ? on : !overview.classList.contains('show');
+    overview.classList.toggle('show', want);
+    if (want) markHere();
+  }
+
+  function toggleFs() {
+    if (!document.fullscreenElement) {
+      if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+    } else if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var k = e.key;
+
+    if (k === 'Escape') {
+      if (help.classList.contains('show'))     { help.classList.remove('show');     e.preventDefault(); return; }
+      if (overview.classList.contains('show')) { toggleOverview(false);             e.preventDefault(); return; }
+      if (black.classList.contains('show'))    { black.classList.remove('show');    e.preventDefault(); return; }
+      return;
+    }
+    if (black.classList.contains('show')) {
+      if (k === 'b' || k === 'B') { black.classList.remove('show'); e.preventDefault(); }
+      return;
+    }
+
+    switch (k) {
+      case 'ArrowRight': case 'ArrowDown': case ' ': case 'PageDown':
+        next(); e.preventDefault(); break;
+      case 'ArrowLeft': case 'ArrowUp': case 'Backspace': case 'PageUp':
+        prev(); e.preventDefault(); break;
+      case 'Home': show(0, false); e.preventDefault(); break;
+      case 'End':  show(slides.length - 1, true); e.preventDefault(); break;
+      case 'o': case 'O': toggleOverview(); e.preventDefault(); break;
+      case 'n': case 'N': notes.classList.toggle('show'); e.preventDefault(); break;
+      case 'b': case 'B': black.classList.add('show'); e.preventDefault(); break;
+      case 'f': case 'F': toggleFs(); e.preventDefault(); break;
+      case '?': help.classList.toggle('show'); e.preventDefault(); break;
+    }
+  });
+
+  document.getElementById('viewport').addEventListener('click', function (e) {
+    if (overview.classList.contains('show') || help.classList.contains('show')) return;
+    (e.clientX < window.innerWidth * 0.24 ? prev : next)();
+  });
+  black.addEventListener('click', function () { black.classList.remove('show'); });
+  help.addEventListener('click', function () { help.classList.remove('show'); });
+
+  var tx = null;
+  document.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].clientX; }, { passive: true });
+  document.addEventListener('touchend', function (e) {
+    if (tx === null) return;
+    var dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 45) (dx < 0 ? next : prev)();
+    tx = null;
+  }, { passive: true });
+
+  document.getElementById('btn-prev').addEventListener('click', function (e) { e.stopPropagation(); prev(); });
+  document.getElementById('btn-next').addEventListener('click', function (e) { e.stopPropagation(); next(); });
+  document.getElementById('btn-ov').addEventListener('click',   function (e) { e.stopPropagation(); toggleOverview(); });
+  document.getElementById('btn-nt').addEventListener('click',   function (e) { e.stopPropagation(); notes.classList.toggle('show'); });
+  document.getElementById('btn-fs').addEventListener('click',   function (e) { e.stopPropagation(); toggleFs(); });
+  document.getElementById('btn-hp').addEventListener('click',   function (e) { e.stopPropagation(); help.classList.toggle('show'); });
+
+  slides.forEach(function (s, k) {
+    var mark = document.createElement('div');
+    mark.className = 'topicmark';
+    mark.textContent = 'Topic 1.6 · Developments in Europe';
+    var no = document.createElement('div');
+    no.className = 'slideno';
+    no.textContent = String(k + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+    if (!s.classList.contains('cover')) s.appendChild(mark);
+    s.appendChild(no);
+  });
+
+  buildOverview();
+  fit();
+  show(0, false);
+})();
+</script>
+</body>
+</html>
