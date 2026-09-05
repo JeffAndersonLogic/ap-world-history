@@ -50,8 +50,8 @@
     },
     {
       title: 'Bete Giyorgis, Lalibela, Ethiopia',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bete_Giyorgis_01.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bete_Giyorgis_Lalibela.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_Lalibela.jpg',
       caption: 'Ethiopian evidence. Bete Giyorgis is one of the rock-hewn churches at Lalibela, carved into living stone around the beginning of the period studied in Topic 1.5.',
       prompt: 'NOTICE one feature of the church\'s construction. What can you INFER about skilled labor, resources, and Christian state identity? How could this support a claim about religious legitimacy?'
     },
