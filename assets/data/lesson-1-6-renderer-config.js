@@ -48,4 +48,41 @@
     ],
     prompt: 'Choose ONE category from the chart. In 3–4 sentences, compare Europe and Song China using specific evidence from both societies. Explain one meaningful similarity OR difference and why that pattern existed.'
   };
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Reconstructing Medieval European Society',
+    task: 'Choose TWO cards from different categories: political relationships, Church authority, or labor/economic life. For each, record one detail you can actually see before making an inference. Some evidence predates c. 1200; when it does, use it as a continuity baseline rather than pretending it documents the entire period.',
+    prompt: 'Using two evidence cards, make one claim about how medieval Europe remained politically fragmented while still developing shared religious and social institutions. Cite one observed detail from each card and explain what each detail allows you to infer.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Bayeux Tapestry',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bayeux_Tapestry.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry.jpg',
+      caption: 'Political continuity evidence. The Bayeux Tapestry was made in the 11th century, before Topic 1.6, and depicts elite warfare, mounted nobles, and contests over rulership.',
+      prompt: 'NOTICE one detail about warriors, leaders, or military service. What can you INFER about elite political relationships that continued into the period after c. 1200? What can this earlier source not prove about later medieval Europe by itself?'
+    },
+    {
+      title: 'Plan of a Medieval Manor',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Plan_mediaeval_manor.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Plan_mediaeval_manor.jpg',
+      caption: 'Economic-organization evidence. A schematic plan of a medieval manor showing fields, village spaces, and land organized around a lordly estate.',
+      prompt: 'NOTICE how land and settlement are arranged. What can you INFER about the relationship among agriculture, local lordship, and political decentralization? What does a schematic plan simplify?'
+    },
+    {
+      title: 'March, Très Riches Heures',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg',
+      caption: 'Labor evidence. A 15th-century calendar image commissioned for an elite manuscript depicts peasants performing seasonal agricultural work below a noble residence.',
+      prompt: 'NOTICE the relationship between workers, land, and elite architecture. What can you INFER about the economic foundation of medieval society? How might the elite patron who commissioned the manuscript shape what is shown?'
+    },
+    {
+      title: 'Chartres Cathedral',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chartres-Cathedral-0006.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chartres-Cathedral-0006.jpg',
+      caption: 'Religious and urban evidence. Chartres Cathedral was largely rebuilt in the late 12th and early 13th centuries and became a major center of worship and pilgrimage.',
+      prompt: 'NOTICE one feature of scale or design. What can you INFER about the resources and authority of the Church and urban communities? How could Christian institutions create shared culture across politically fragmented kingdoms?'
+    }
+  ];
 })();
