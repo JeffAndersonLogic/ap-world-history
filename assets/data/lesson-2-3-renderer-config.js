@@ -92,14 +92,16 @@
 
   lesson.skillBuilder = {
     label: 'Contextualization practice',
-    title: 'Place Indian Ocean Trade in the Bigger Picture',
-    intro: 'Contextualization means explaining the broader historical setting around a topic. For Indian Ocean trade, that means connecting it to the wider patterns of Afro-Eurasian exchange, the spread of Islam, and the role of technology in enabling commerce.',
+    title: 'AP Skill Builder: Put Indian Ocean Trade in Context',
+    intro: 'Contextualization explains the broader setting that existed before or around the development you are analyzing. It is not the same as your thesis or your evidence. For Indian Ocean trade, build the setting first, then bridge that setting to the growth and effects of exchange from c. 1200–1450.',
     steps: [
-      { label: 'Before c. 1200', text: 'Indian Ocean trade had existed for centuries, connecting Rome, Arabia, India, and China through seasonal monsoon voyages.' },
-      { label: 'c. 1200–1450', text: 'Trade intensified as port cities grew, Islamic merchant networks expanded, and demand for luxury goods increased across Afro-Eurasia.' },
-      { label: 'Effects on societies', text: 'Port cities like Kilwa and Malacca grew wealthy; Islam spread through merchant diasporas; cultural blending produced Swahili civilization.' }
+      { label: '1. Choose a broader context', text: '<strong>Preexisting trade:</strong> Indian Ocean exchange connected Rome, Arabia, India, and China long before c. 1200.<br><strong>Environmental knowledge:</strong> sailors had learned predictable monsoon wind patterns.<br><strong>Cultural networks:</strong> Islam and merchant communities linked ports across Afro-Eurasia.' },
+      { label: '2. Explain what was already true', text: 'Give the reader one or two sentences of setting before you discuss the specific growth of trade after c. 1200.' },
+      { label: '3. Bridge context to the topic', text: 'Explain how the earlier network made later intensification possible. Example: because merchants already understood monsoon winds and established port connections, expanding demand and improved ships could increase the scale of exchange.' },
+      { label: '4. Do not turn context into the thesis', text: 'Context answers “what larger historical setting helps explain this?” Your thesis or claim answers the actual question about Indian Ocean trade.' },
+      { label: 'Response frame', text: '<strong>Before c. 1200</strong>, ___. This broader setting mattered because ___. <strong>From c. 1200–1450</strong>, ___.' }
     ],
-    prompt: 'Write two contextualization sentences that explain the broader setting for Indian Ocean trade before making a claim about its effects.'
+    prompt: 'Write 2–3 contextualization sentences for an argument about Indian Ocean trade. Establish one broader historical setting, explain why it mattered, and bridge it directly to the expansion or effects of trade from c. 1200–1450.'
   };
 
   lesson.checkpoints = [
