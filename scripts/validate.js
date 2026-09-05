@@ -1456,8 +1456,8 @@ section('Remote image URLs are well formed');
 // hand-authored file no rebuild can reproduce.
 section('Run of Show pacing tool');
 {
-  let ROS_TOPICS = null;
-  try { ({ TOPICS: ROS_TOPICS } = require('./build-run-of-show.js')); } catch (e) { ROS_TOPICS = null; }
+  let ROS_TOPICS = null, ROS_INDEX_OUT = null;
+  try { ({ TOPICS: ROS_TOPICS, INDEX_OUT: ROS_INDEX_OUT } = require('./build-run-of-show.js')); } catch (e) { ROS_TOPICS = null; }
   totalChecks++;
   if (!ROS_TOPICS) {
     err(path.join(ROOT, 'scripts', 'build-run-of-show.js'), 'does not load or export TOPICS');
@@ -1481,10 +1481,33 @@ section('Run of Show pacing tool');
       }
     }
 
+    // The index is a topic's page's sibling on disk, not one of TOPICS'
+    // entries, so it is excluded here rather than reported as an orphan the
+    // way a hand-authored page would be.
     for (const found of glob(path.join(ROOT, 'teacher'), /^run-of-show-.*\.html$/)) {
+      const base = path.basename(found);
+      if (base === ROS_INDEX_OUT) continue;
       totalChecks++;
-      if (!declared.has(path.basename(found))) {
+      if (!declared.has(base)) {
         err(found, 'Run of Show page has no entry in build-run-of-show.js TOPICS, a rebuild cannot reproduce it');
+      }
+    }
+
+    // The index carries reachability for every topic behind it, the same
+    // reason index.html linking ebook/index.html matters: if a topic's page
+    // is generated but the index does not link it, a teacher browsing the
+    // index has no way to find it.
+    const indexPath = path.join(ROOT, 'teacher', ROS_INDEX_OUT || 'run-of-show-index.html');
+    totalChecks++;
+    const indexSrc = read(indexPath);
+    if (!indexSrc) {
+      err(indexPath, 'Run of Show index missing, run: node scripts/build-run-of-show.js');
+    } else {
+      for (const topic of ROS_TOPICS) {
+        totalChecks++;
+        if (!indexSrc.includes(topic.out)) {
+          err(indexPath, `does not link ${topic.out}, so a teacher browsing the index cannot find it`);
+        }
       }
     }
 
@@ -1497,7 +1520,7 @@ section('Run of Show pacing tool');
       }
     }
   }
-  sectionDone(`${ROS_TOPICS ? ROS_TOPICS.length : 0} Run of Show topic(s) generated and unlinked from student pages`);
+  sectionDone(`${ROS_TOPICS ? ROS_TOPICS.length : 0} Run of Show topic(s) generated, indexed, and unlinked from student pages`);
 }
 
 //

@@ -24,7 +24,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
-const { renderRunOfShow } = require('./lib/run-of-show-page');
+const { renderRunOfShow, renderRunOfShowIndex } = require('./lib/run-of-show-page');
 
 const ROOT = path.join(__dirname, '..');
 const CHECK = process.argv.includes('--check');
@@ -35,7 +35,8 @@ const TOPICS = [
   { dataFile: 'lesson-1-6-europe.js', lessonFile: 'lesson-1-6-europe.html', unitDir: 'unit-1', out: 'run-of-show-topic-1-6.html' },
 ];
 
-module.exports = { TOPICS };
+const INDEX_OUT = 'run-of-show-index.html';
+module.exports = { TOPICS, INDEX_OUT };
 if (require.main !== module) return;
 
 function sandbox() {
@@ -57,9 +58,14 @@ function loadLesson(dataFile) {
 }
 
 let drift = false;
+const indexEntries = [];
 for (const topic of TOPICS) {
   const L = loadLesson(topic.dataFile);
   L.__lessonFile = topic.lessonFile;
+  indexEntries.push({
+    topic: L.meta.topic, title: L.meta.title, unit: L.meta.unit,
+    question: L.runOfShow.question, totalMinutes: L.runOfShow.totalMinutes, out: topic.out,
+  });
   const html = renderRunOfShow(L, { unitDir: topic.unitDir });
   const outPath = path.join(ROOT, 'teacher', topic.out);
   if (CHECK) {
@@ -74,6 +80,24 @@ for (const topic of TOPICS) {
     fs.writeFileSync(outPath, html);
     console.log(`Wrote teacher/${topic.out}`);
   }
+}
+
+// The index: the one stable URL a teacher bookmarks instead of one per
+// topic. See renderRunOfShowIndex for why it carries no placeholder rows for
+// topics that don't have a Run of Show yet.
+const indexPath = path.join(ROOT, 'teacher', INDEX_OUT);
+const indexHtml = renderRunOfShowIndex(indexEntries);
+if (CHECK) {
+  const existing = fs.existsSync(indexPath) ? fs.readFileSync(indexPath, 'utf8') : null;
+  if (existing !== indexHtml) {
+    console.error(`DRIFT: teacher/${INDEX_OUT} does not match TOPICS. Run: node scripts/build-run-of-show.js`);
+    drift = true;
+  } else {
+    console.log(`OK: teacher/${INDEX_OUT}`);
+  }
+} else {
+  fs.writeFileSync(indexPath, indexHtml);
+  console.log(`Wrote teacher/${INDEX_OUT}`);
 }
 
 if (CHECK && drift) process.exit(1);

@@ -643,4 +643,89 @@ function renderRunOfShow(L, opts) {
 `;
 }
 
-module.exports = { renderRunOfShow };
+// The index CSS is scoped to its own classes, appended alongside BRAND_CSS
+// rather than folded into it, so a Run of Show topic page and the index that
+// links to it stay visually the same tool without one bleeding rules into
+// the other.
+const INDEX_CSS = `
+.ros-index-body{flex:1;padding:1.4rem 1.4rem 2rem;max-width:920px;margin:0 auto;width:100%}
+.ros-index-intro{color:var(--muted-sandstone);font-size:.92rem;line-height:1.5;margin:0 0 1.4rem}
+.ros-index-unit{font-family:var(--ui);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--antique-gold);margin:1.6rem 0 .8rem;padding-bottom:.4rem;border-bottom:1px solid var(--gunmetal-gray)}
+.ros-index-unit:first-child{margin-top:0}
+.ros-index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:1rem}
+.ros-index-card{display:block;background:var(--warm-paper);color:var(--ink);border-radius:10px;padding:1rem 1.15rem;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.ros-index-card:hover{background:var(--clean-paper)}
+.ros-index-topic{font-family:var(--ui);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--oxidized-brown);font-weight:700}
+.ros-index-card h3{font-family:var(--title);font-size:1.1rem;margin:.25rem 0 .5rem}
+.ros-index-question{font-size:.88rem;line-height:1.45;margin:0 0 .6rem;color:var(--gunmetal-gray)}
+.ros-index-meta{font-family:var(--ui);font-size:.72rem;color:var(--aged-iron);margin:0}
+`;
+
+/**
+ * The Run of Show library: the one stable URL a teacher bookmarks instead of
+ * one per topic, the same reason ebook/index.html exists rather than making
+ * students remember a volume filename. Generated from the same TOPICS list
+ * build-run-of-show.js writes the pages from, so it cannot list a topic that
+ * does not exist or miss one that does.
+ *
+ * Unlike the eBook's library, this carries no "not written yet" placeholders
+ * for topics without a Run of Show. The eBook commits to one chapter per
+ * topic in a volume, a fixed shape worth marking gaps in. Run of Show makes
+ * no such commitment, coverage grows one authored topic at a time the way
+ * deep readings do, so a full 71-topic roster of pending rows would be
+ * inventing a course-wide plan nobody has actually made.
+ *
+ * @param {object[]} entries [{ topic, title, unit, question, totalMinutes, out }],
+ *        one per entry in build-run-of-show.js's TOPICS, in declared order.
+ */
+function renderRunOfShowIndex(entries) {
+  let lastUnit = null;
+  const groups = [];
+  for (const e of entries) {
+    if (e.unit !== lastUnit) { groups.push({ unit: e.unit, items: [] }); lastUnit = e.unit; }
+    groups[groups.length - 1].items.push(e);
+  }
+
+  const sections = groups.map(g => {
+    const cards = g.items.map(e => (
+      `      <a class="ros-index-card" href="${esc(e.out)}">\n` +
+      `        <div class="ros-index-topic">${esc(e.topic)}</div>\n` +
+      `        <h3>${esc(e.title)}</h3>\n` +
+      `        <p class="ros-index-question">${esc(e.question)}</p>\n` +
+      `        <p class="ros-index-meta">~${e.totalMinutes} min</p>\n` +
+      `      </a>\n`
+    )).join('');
+    return `    <h2 class="ros-index-unit">${esc(g.unit)}</h2>\n    <div class="ros-index-grid">\n${cards}    </div>\n`;
+  }).join('');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Run of Show | BeHistorical Teacher Tools</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>${BRAND_CSS}${INDEX_CSS}</style>
+</head>
+<body>
+<div class="ros-shell">
+  <header class="ros-header">
+    <span class="ros-brand">BeHistorical</span>
+    <div class="ros-titles">
+      <div class="ros-eyebrow">RUN OF SHOW &middot; Teacher Pacing Tool</div>
+      <h1 class="ros-title">Every topic with a Run of Show</h1>
+    </div>
+  </header>
+  <main class="ros-index-body">
+    <p class="ros-index-intro">Coverage grows one topic at a time as each is authored, the same way the eBook's volumes do. A topic with no card here still has its full lesson page and modules; what it doesn't have yet is this pacing view.</p>
+${sections}  </main>
+  <p class="ros-footer-note">Teacher tool &mdash; never linked from a student page. Generated from scripts/build-run-of-show.js's TOPICS list; run node scripts/build-run-of-show.js after adding a topic.</p>
+</div>
+</body>
+</html>
+`;
+}
+
+module.exports = { renderRunOfShow, renderRunOfShowIndex };
