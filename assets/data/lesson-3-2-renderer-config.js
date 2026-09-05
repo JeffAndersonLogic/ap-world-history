@@ -118,4 +118,48 @@
       focus: ['Describe at least two distinct administrative systems from two different empires.', 'Explain how each system solved the loyalty or revenue problem.', 'Take a position on accommodation: strength or weakness? Support it with evidence.']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: How Rulers Made Empire Visible',
+    task: 'Choose TWO cards from different empires. Classify each as evidence primarily about administration, elite incorporation, legitimacy, or imperial scale. Then move from observation to inference. Visual and geographic evidence can reveal how rulers represented power or the problems they faced; it cannot by itself explain every tax or bureaucratic rule.',
+    prompt: 'Using two evidence cards from different empires, make one claim about how rulers maintained centralized control over large, diverse populations. Cite one concrete detail from each source, explain why each detail supports your claim, and identify one important limit of the visual or geographic evidence.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Court of Akbar, Akbarnama',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg',
+      caption: 'Mughal court evidence. A court painting from the Akbarnama represents Emperor Akbar surrounded by officials and elites in an imperial setting.',
+      prompt: 'NOTICE how Akbar and the people around him are arranged. What can you INFER about hierarchy, access to the ruler, and incorporation of elites? What does a court-sponsored image likely emphasize or hide?'
+    },
+    {
+      title: 'Mughal Empire, c. 1700',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png',
+      caption: 'Administrative-scale evidence. A secondary map shows the geographic extent of Mughal rule near its height.',
+      prompt: 'NOTICE the size and diversity of the territory. What administrative problem does this scale create? How could systems such as mansab rank, jagir assignments, and provincial government answer that problem? What does the map not prove about whether those systems worked well?'
+    },
+    {
+      title: 'Topkapı Palace and the Bosphorus',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Bosphorus.JPG',
+      caption: 'Ottoman institutional and legitimacy evidence. Topkapı Palace served as an imperial residence and administrative center overlooking a strategic waterway.',
+      prompt: 'NOTICE the palace\'s scale and location. What can you INFER about the concentration of imperial authority and the symbolic value of place? What would you need written records to establish about devshirme, tax farming, or daily administration?'
+    },
+    {
+      title: 'Shah Abbas I',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Shah_Abbas_I.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Shah_Abbas_I.jpg',
+      caption: 'Safavid legitimacy evidence. A royal portrait represents Shah Abbas I, a ruler associated with military and administrative consolidation of the Safavid state.',
+      prompt: 'NOTICE how the shah is presented. What can you INFER about royal authority and the political use of image? What can a portrait not tell you about how taxes were collected or provincial officials were managed?'
+    },
+    {
+      title: 'Qianlong Emperor',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg',
+      caption: 'Qing legitimacy evidence. An imperial portrait of the Qianlong Emperor represents Manchu rule over a large, predominantly Han Chinese empire.',
+      prompt: 'NOTICE clothing, posture, and visual conventions of rulership. What can you INFER about how the Qing presented imperial legitimacy? What additional evidence would you need to explain Banner institutions or the civil service bureaucracy?'
+    }
+  ];
 })();
