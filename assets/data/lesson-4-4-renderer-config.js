@@ -126,4 +126,48 @@
       focus: ['Explain how joint-stock companies spread risk and mobilized private capital for empire.', 'Give one specific example of VOC power (military, legal, or commercial).', 'Identify one similarity and one difference between the joint-stock model and one other model, with specific evidence.']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Three Maritime Empire Models',
+    task: 'Choose TWO cards from different maritime empires and compare the same problem: controlling routes, claiming territory, or organizing commercial power. Identify the source type first. A monument, company emblem/document, map, and colonial painting each reveal different parts of empire and carry different limitations.',
+    prompt: 'Using two evidence cards from different maritime empires, make one comparison claim about how Europeans built overseas power. Cite one concrete detail from each source, explain a similarity OR difference in imperial strategy, and explain how geography, finance, or state capacity helps account for the pattern.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Vasco da Gama Pillar — Portuguese Trading-Post Model',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Pillar_of_Vasco_da_Gama.jpg',
+      caption: 'Portuguese evidence. A coastal monument at Malindi reflects the route-marking, diplomacy, and strategic port orientation of Portuguese expansion in the Indian Ocean.',
+      prompt: 'NOTICE the coastal location and imperial/religious symbolism. What can you INFER about a strategy based on ports and sea lanes rather than large inland conquest? What local African or Asian perspective is missing?'
+    },
+    {
+      title: 'Estado da Índia and Maritime Chokepoints',
+      url: '../assets/images/instructional-maps/topic-4-4.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-4-4.svg',
+      caption: 'Secondary geographic evidence. The BeHistorical map reconstructs Portuguese, Spanish, and Dutch/British imperial nodes and routes.',
+      prompt: 'NOTICE where Portuguese power clusters around chokepoints and ports. Compare that pattern with Spanish territorial holdings or Dutch commercial nodes. What does geography suggest about why empire models differed?'
+    },
+    {
+      title: 'Columbus Taking Possession — Spanish Territorial Claim',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Columbus_Taking_Possession.jpg',
+      caption: 'Later Spanish-imperial memory. A later representation depicts formal possession-taking in the Caribbean, centering crown authority over inhabited territory.',
+      prompt: 'NOTICE the ritual of claiming land and the people placed at the edges of the scene. What can you INFER about the logic of territorial empire? Why is later imperial art weaker evidence for the exact events of 1492?'
+    },
+    {
+      title: 'Dutch East India Company (VOC)',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Voc.jpg',
+      caption: 'Joint-stock/company evidence. The VOC operated under a state charter with commercial and military powers, mobilizing private capital for long-distance trade and empire.',
+      prompt: 'NOTICE the corporate identity and state-linked character represented by the VOC. What can you INFER about how a joint-stock model differed from direct royal territorial administration? What financial evidence would strengthen the claim?'
+    },
+    {
+      title: 'Casta Painting — Consequence of Spanish Territorial Empire',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Casta_painting_all.jpg',
+      caption: 'Colonial-society evidence. Casta painting represents a social world created by long-term Spanish territorial settlement, coerced labor, migration, and racial classification in the Americas.',
+      prompt: 'NOTICE how people are categorized and ranked. What can you INFER about the depth of territorial colonial rule compared with a trading-post empire? What does this elite genre simplify about real colonial society?'
+    }
+  ];
 })();
