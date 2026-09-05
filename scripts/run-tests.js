@@ -2,10 +2,10 @@
 'use strict';
 
 /**
- * One command that runs the checks, so nobody has to remember eleven of them.
+ * One command that runs the checks, so nobody has to remember all of them.
  *
  *   node scripts/run-tests.js offline    validate.js + the dependency-free tests
- *   node scripts/run-tests.js browser    the seven Chromium tests
+ *   node scripts/run-tests.js browser    the Chromium tests
  *   node scripts/run-tests.js all        both suites
  *
  * The exit codes here are the point. Every browser test in this repo exits 2
@@ -36,6 +36,7 @@ const W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 const SUITES = {
   offline: [
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
+    ['scripts/check-module07-units5-7.js', 'Units 5-7 Module 07 evidence pools and live shell wiring'],
     ['scripts/test/canvas-paragraphs.test.js', 'Canvas blank-line round trip'],
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
@@ -117,7 +118,7 @@ if (names.some(n => !SUITES[n])) {
 
 const results = [];
 
-// Resolved once, not per test, so the seven browser tests cannot disagree about
+// Resolved once, not per test, so the browser tests cannot disagree about
 // which binary they are driving.
 const childEnv = { ...process.env };
 if (names.includes('browser')) {

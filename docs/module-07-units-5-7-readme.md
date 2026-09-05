@@ -1,0 +1,1 @@
+This file intentionally points readers to `module-07-units-5-7-audit.md` for the full pedagogical audit, `module-07-units-5-7-scorecard.md` for the benchmark result, and `module-07-units-5-7-validation.md` for validation requirements.
