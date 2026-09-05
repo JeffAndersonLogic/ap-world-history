@@ -90,4 +90,41 @@
       focus: ['Name at least two specific policies Akbar used to manage religious diversity.', 'Name at least one policy Aurangzeb used to enforce religious conformity.', 'Explain the political consequences, what did each approach produce in terms of loyalty or rebellion?']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Belief as Reform, Rivalry, and Political Strategy',
+    task: 'Choose TWO cards from different religious settings. Decide what each source actually reveals before deciding what historical claim it can support. Pay attention to when the image was created: a contemporary court image and a later devotional portrait do different kinds of historical work.',
+    prompt: 'Using two evidence cards from different religious settings, make one claim about how belief systems changed, divided communities, or became tools of political authority from c. 1450 to c. 1750. Cite one concrete detail from each source and explain one limitation or perspective issue that affects your interpretation.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Martin Luther, c. 1530',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lucas_Cranach_-_Portrait_of_Martin_Luther%2C_circa_1530.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lucas_Cranach_-_Portrait_of_Martin_Luther,_circa_1530.jpg',
+      caption: 'Reformation evidence. A portrait produced in the circle of Lucas Cranach the Elder represents Martin Luther during the early decades of the Protestant Reformation.',
+      prompt: 'NOTICE how Luther is represented as an individual religious authority. What can you INFER about the visibility of reform leaders in an age of print and confessional conflict? What can a portrait not prove about why ordinary people adopted Protestant ideas?'
+    },
+    {
+      title: 'Battle of Chaldiran, Selim-nama, 1524',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma%2C_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB%2C_1524_%28National_Library_of_Israel%2C_Ms._Yah._Ar._1116%29.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma,_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB,_1524_(National_Library_of_Israel,_Ms._Yah._Ar._1116).jpg',
+      caption: 'Ottoman-Safavid rivalry evidence. An Ottoman manuscript miniature made about a decade after the 1514 battle depicts the conflict between the Sunni Ottoman and Shia Safavid empires.',
+      prompt: 'NOTICE how the battle and opposing forces are represented. What can you INFER about the importance of the conflict in Ottoman political memory? Why should a historian be cautious about using an Ottoman victory narrative as neutral evidence about the Safavids?'
+    },
+    {
+      title: 'Court of Akbar, Akbarnama',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg',
+      caption: 'Mughal accommodation evidence. A Mughal court image represents Akbar at the center of a diverse imperial elite during a reign associated with religious accommodation and debate.',
+      prompt: 'NOTICE who is gathered around the emperor and how hierarchy is organized. What can you INFER about Akbar\'s strategy of incorporating varied elites? What written policy evidence would you need before claiming the image proves religious tolerance by itself?'
+    },
+    {
+      title: 'Guru Nanak, 19th-Century Devotional Portrait',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Guru_Nanak.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Portrait_of_Guru_Nanak.png',
+      caption: 'Later Sikh memory. This 19th-century portrait depicts Guru Nanak, the first Sikh Guru, whose teachings emerged in 15th- and 16th-century Punjab amid sustained Hindu-Muslim interaction.',
+      prompt: 'NOTICE the devotional presentation of Guru Nanak. What can you INFER about his long-term importance to Sikh identity? Why is this later portrait evidence of memory and devotion rather than direct evidence of what Nanak looked like or how Sikhism first developed?'
+    }
+  ];
 })();

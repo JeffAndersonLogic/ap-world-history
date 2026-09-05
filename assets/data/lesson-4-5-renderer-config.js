@@ -131,4 +131,41 @@
       focus: ['Explain the Manila Galleon trade: route, commodities exchanged, why Chinese demand drove it.', 'Describe the Atlantic silver route through Seville and explain the global price revolution.', 'Identify one continuity: what existing trade network did the silver economy build upon?']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Labor, Silver, and the First Global Economy',
+    task: 'Choose TWO cards that trace different links in an economic chain: coerced labor, commodity extraction, global circulation, or corporate/mercantilist organization. Observe the source first, then explain the mechanism connecting it to the larger system. A painting of a mine or plantation can reveal production and social order, but it does not by itself quantify output or prove every labor condition.',
+    prompt: 'Using two evidence cards, build one causal claim about how labor systems and global demand sustained maritime empires from c. 1450 to c. 1750. Cite one concrete detail from each source, explain the mechanism connecting the evidence, and identify one limit in either source.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Cerro Rico at Potosí, 1552',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cerro_de_Potos%C3%AD._Grabado_en_madera%2C_del_libro_Cr%C3%B3nica_del_Per%C3%BA%2C_1552%2C_de_Pedro_Cieza_de_Le%C3%B3n.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Cerro_de_Potos%C3%AD._Grabado_en_madera,_del_libro_Cr%C3%B3nica_del_Per%C3%BA,_1552,_de_Pedro_Cieza_de_Le%C3%B3n.jpg',
+      caption: 'Silver-production evidence. A mid-16th-century woodcut represents Cerro Rico shortly after Potosí became a major Spanish mining center.',
+      prompt: 'NOTICE how the mountain and settlement are represented. What can you INFER about the concentration of colonial investment around silver? What written evidence would you need to establish the scale and coercion of mita labor?'
+    },
+    {
+      title: 'Brazilian Sugar Mill and Casa Grande, 1661',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frans_Post_-_Planta%C3%A7%C3%A3o_de_a%C3%A7%C3%BAcar%2C_1661.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Frans_Post_-_Planta%C3%A7%C3%A3o_de_a%C3%A7%C3%BAcar,_1661.jpg',
+      caption: 'Plantation-economy evidence. Frans Post\'s 1661 painting depicts a sugar mill and elite residence in colonial Brazil, where sugar production depended heavily on enslaved African labor.',
+      prompt: 'NOTICE the relationship among production space, residence, land, and workers. What can you INFER about plantation organization and wealth? How might an elite European artist sanitize or omit coercion?'
+    },
+    {
+      title: 'Global Silver and Manila Galleon Routes',
+      url: '../assets/images/instructional-maps/topic-4-5.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-4-5.svg',
+      caption: 'Secondary systems evidence. The BeHistorical map traces silver from the Americas toward Europe and Asia, including the Manila Galleon connection to Chinese markets.',
+      prompt: 'NOTICE where American silver travels and where major demand centers sit. What can you INFER about why a mine in the Andes mattered to merchants in Manila and China? What can a route map not show about prices or individual transactions?'
+    },
+    {
+      title: 'Dutch East India Company (VOC)',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Voc.jpg',
+      caption: 'Commercial-organization evidence. The VOC symbolizes the joint-stock company model through which states and merchants mobilized capital for long-distance commerce and imperial competition.',
+      prompt: 'NOTICE the company identity and state connection. What can you INFER about how finance and monopoly privileges supported maritime empire? What accounting or charter evidence would you need to demonstrate actual profits or legal powers?'
+    }
+  ];
 })();

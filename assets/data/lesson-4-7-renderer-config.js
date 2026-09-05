@@ -102,4 +102,48 @@
       focus: ['Identify one specific continuity from pre-colonial social structure with evidence.', 'Identify one genuine change that colonialism introduced, a category or institution with no pre-colonial equivalent.', 'Explain gender intersection: one specific example of how indigenous or African women experienced both racial and gender dimensions of colonial hierarchy.']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Hierarchy Is Represented, Enforced, and Contested',
+    task: 'Choose TWO cards from different imperial or colonial settings. Ask what social hierarchy the image represents, whose authority produced that representation, and who is missing. By Unit 4, do not stop at “this shows inequality.” Explain how political power, ancestry, religion, gender, or economic function shaped rank.',
+    prompt: 'Using two evidence cards from different settings, make one comparison claim about how early modern empires organized social hierarchy. Cite one concrete detail from each source, explain one similarity OR difference, and evaluate one way the source creator or genre may distort the hierarchy it represents.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Casta Painting Series — Spanish America',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Casta_painting_all.jpg',
+      caption: 'Colonial classification evidence. Casta paintings systematically categorized family combinations by ancestry and status in Spanish America.',
+      prompt: 'NOTICE the labels, clothing, occupations, and ordering. What can you INFER about elite attempts to make ancestry legible as social rank? What does this genre hide about people who crossed or manipulated categories?'
+    },
+    {
+      title: 'Brazilian Sugar Mill and Casa Grande, 1661',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frans_Post_-_Planta%C3%A7%C3%A3o_de_a%C3%A7%C3%BAcar%2C_1661.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Frans_Post_-_Planta%C3%A7%C3%A3o_de_a%C3%A7%C3%BAcar,_1661.jpg',
+      caption: 'Portuguese Brazil / plantation hierarchy. Frans Post depicts a sugar-producing estate where landownership, race, and coerced labor structured social power.',
+      prompt: 'NOTICE the spatial separation of elite residence, production, land, and workers. What can you INFER about hierarchy built around plantation wealth? How might the painting minimize violence or forced labor?'
+    },
+    {
+      title: 'Qianlong Emperor — Qing China',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg',
+      caption: 'Imperial-elite evidence. A Manchu emperor is presented through Chinese imperial visual traditions while ruling a majority-Han population under Qing institutions.',
+      prompt: 'NOTICE clothing, pose, and symbols of office. What can you INFER about how a conquering minority presented legitimate hierarchy? What written evidence would you need to explain restrictions on Han elites or Banner privileges?'
+    },
+    {
+      title: 'Suleiman the Magnificent — Ottoman Empire',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
+      caption: 'Imperial-elite evidence. A portrait of Suleiman represents Ottoman dynastic authority over a multiethnic and multireligious empire that used differentiated legal and communal status.',
+      prompt: 'NOTICE symbols of rulership and elite dress. What can you INFER about dynastic hierarchy? What can a ruler portrait not reveal about the millet system, women of different classes, or the status of religious minorities?'
+    },
+    {
+      title: 'Dutch East India Company (VOC) — Commercial Elite Power',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Voc.jpg',
+      caption: 'Commercial-elite evidence. The VOC represents a new form of political-economic elite power built around chartered companies, capital, and imperial trade.',
+      prompt: 'NOTICE the corporate identity and state connection. What can you INFER about how global trade created new elites? Compare that economic route to status with ancestry-based or dynastic hierarchy in another card.'
+    }
+  ];
 })();
