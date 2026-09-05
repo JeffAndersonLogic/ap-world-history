@@ -1,5 +1,13 @@
 # Module 07 Evidence Lab Audit — Units 8–9
 
+> **Revision, 2026-09-05 (same day).** These grades are provisional. The audit
+> scored reasoning design and did not weigh evidence authenticity heavily enough:
+> every Unit 8 and Unit 9 Evidence Lab currently offers zero pictures, because the
+> registry runtime replaces `lesson.images` at load. The rule that would have
+> caught it is the authenticity gate in `docs/module-07-scaffolding-standard.md`,
+> and the repair, piloted on Unit 7, is in `docs/module-07-unit-7-conversion.md`.
+> Run `node scripts/report-evidence-authenticity.js 8` to see the current state.
+
 ## Scope
 
 This pass audits every **active** Module 07 Evidence Lab in Units 8 and 9 against `docs/module-07-scaffolding-standard.md`.

@@ -1,5 +1,13 @@
 # Module 07 Units 8–9 Scorecard
 
+> **Revision, 2026-09-05 (same day).** These grades are provisional. The audit
+> scored reasoning design and did not weigh evidence authenticity heavily enough:
+> every Unit 8 and Unit 9 Evidence Lab currently offers zero pictures, because the
+> registry runtime replaces `lesson.images` at load. The rule that would have
+> caught it is the authenticity gate in `docs/module-07-scaffolding-standard.md`,
+> and the repair, piloted on Unit 7, is in `docs/module-07-unit-7-conversion.md`.
+> Run `node scripts/report-evidence-authenticity.js 8` to see the current state.
+
 A-grade threshold: **12/14 or higher, with no zero in any rubric category**.
 
 | Unit | Active Module 07s | A-grade topics | Exception |

@@ -162,9 +162,21 @@ function foundationsTopics() {
 //            so the student still has something to read closely.
 //   summary  no picture and no trace: the author's own sentences about what
 //            happened. Nothing left for a student to observe.
+// A picture is a picture wherever it is served from. Units 1 and 2 point several
+// evidence cards at the generated instructional maps in assets/images/, which are
+// every bit as much an object to read as a photograph on Commons; an http-only
+// test called six of them summaries. A data: URI is excluded on purpose: that is
+// a text plate this repo drew from a card's own sourceText, so it is counted as
+// the record it is rather than as a picture.
+function isPicture(url) {
+  const value = String(url || '');
+  if (!value || /^data:/i.test(value)) return false;
+  return /^https?:/i.test(value) || /\.(svg|png|jpe?g|gif|webp|avif)$/i.test(value.split('?')[0]);
+}
+
 function classify(card) {
   const url = String((card && card.url) || '');
-  if (/^https?:/i.test(url)) return 'object';
+  if (isPicture(url)) return 'object';
   const body = [].concat(card.sourceText || []).join(' ');
   if (/["“”]/.test(body)) return 'record';
   if (/\d/.test(body)) return 'record';
@@ -177,4 +189,4 @@ function tally(cards) {
   return counts;
 }
 
-module.exports = { ROOT, unitTopics, foundationsTopics, resolveUnitPool, shellFor, classify, tally, literalAfter };
+module.exports = { ROOT, unitTopics, foundationsTopics, resolveUnitPool, shellFor, classify, isPicture, tally, literalAfter };

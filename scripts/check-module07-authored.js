@@ -27,7 +27,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { ROOT, unitTopics, resolveUnitPool } = require('./lib/evidence-pools');
+const { ROOT, unitTopics, resolveUnitPool, isPicture } = require('./lib/evidence-pools');
 
 const CONVERTED = [7];
 const TEXT_CARD_MODULE = 'assets/js/behistorical-evidence-text-card.js';
@@ -73,7 +73,7 @@ for (const unit of CONVERTED) {
       if (!card.caption) fail(`${label}: no caption identifying the object`);
       if (!card.prompt || String(card.prompt).length < 35) fail(`${label}: prompt is missing or too thin`);
 
-      const hasImage = /^https?:/i.test(String(card.url || ''));
+      const hasImage = isPicture(card.url);
       const text = Array.isArray(card.sourceText) ? card.sourceText : [];
       if (hasImage) {
         objects += 1;
