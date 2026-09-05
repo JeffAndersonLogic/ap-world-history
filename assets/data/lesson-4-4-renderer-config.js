@@ -156,11 +156,16 @@
       prompt: 'NOTICE the ritual of claiming land and the people placed at the edges of the scene. What can you INFER about the logic of territorial empire? Why is later imperial art weaker evidence for the exact events of 1492?'
     },
     {
-      title: 'Dutch East India Company (VOC)',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Voc.jpg',
-      caption: 'Joint-stock/company evidence. The VOC operated under a state charter with commercial and military powers, mobilizing private capital for long-distance trade and empire.',
-      prompt: 'NOTICE the corporate identity and state-linked character represented by the VOC. What can you INFER about how a joint-stock model differed from direct royal territorial administration? What financial evidence would strengthen the claim?'
+      title: 'Dutch East India Company charter, 1602',
+      label: 'Charter record · Dutch Republic, 20 March 1602',
+      sourceText: [
+        'The States General chartered the VOC with a 21-year monopoly',
+        'on Dutch trade east of the Cape of Good Hope.',
+        'The charter granted powers to build forts, keep troops,',
+        'and make treaties with local rulers.'
+      ],
+      caption: 'The founding charter of a trading company, granting it powers a state would normally keep for itself.',
+      prompt: 'NOTICE which powers in this charter are commercial and which are ones you would expect only a government to hold. INFER how a company could come to govern territory. How does this differ from direct royal administration, and what would you need to show it worked that way in practice?'
     },
     {
       title: 'Casta Painting — Consequence of Spanish Territorial Empire',

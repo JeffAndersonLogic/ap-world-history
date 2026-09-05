@@ -155,11 +155,16 @@
       prompt: 'NOTICE the trans-Pacific and trans-Atlantic connections. What mechanism made this circuit genuinely new? How did it build on older Asian markets rather than replace them?'
     },
     {
-      title: 'CHANGE — Dutch East India Company (VOC)',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Voc.jpg',
-      caption: 'Institutional-change evidence. The VOC represents the chartered joint-stock company model that mobilized private capital and state power for long-distance commerce.',
-      prompt: 'NOTICE the corporate identity and relationship to imperial commerce. What changed in the organization of European long-distance trade? What older Asian commercial practices continued underneath or alongside this institution?'
+      title: 'CHANGE — Dutch East India Company charter, 1602',
+      label: 'Charter record · Dutch Republic, 20 March 1602',
+      sourceText: [
+        'The States General chartered the VOC with a 21-year monopoly',
+        'on Dutch trade east of the Cape of Good Hope.',
+        'The charter granted powers to build forts, keep troops,',
+        'and make treaties with local rulers.'
+      ],
+      caption: 'The chartered joint-stock company set out in a legal document: a genuinely new way to organize long-distance trade.',
+      prompt: 'NOTICE what is new here compared with a merchant family or a royal fleet. INFER what changed in how European long-distance trade was organized. Which older Asian commercial practices continued underneath this institution rather than being replaced by it?'
     }
   ];
 })();

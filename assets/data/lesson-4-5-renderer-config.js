@@ -161,11 +161,16 @@
       prompt: 'NOTICE where American silver travels and where major demand centers sit. What can you INFER about why a mine in the Andes mattered to merchants in Manila and China? What can a route map not show about prices or individual transactions?'
     },
     {
-      title: 'Dutch East India Company (VOC)',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Voc.jpg',
-      caption: 'Commercial-organization evidence. The VOC symbolizes the joint-stock company model through which states and merchants mobilized capital for long-distance commerce and imperial competition.',
-      prompt: 'NOTICE the company identity and state connection. What can you INFER about how finance and monopoly privileges supported maritime empire? What accounting or charter evidence would you need to demonstrate actual profits or legal powers?'
+      title: 'Dutch East India Company charter, 1602',
+      label: 'Charter record · Dutch Republic, 20 March 1602',
+      sourceText: [
+        'The States General chartered the VOC with a 21-year monopoly',
+        'on Dutch trade east of the Cape of Good Hope.',
+        'The charter granted powers to build forts, keep troops,',
+        'and make treaties with local rulers.'
+      ],
+      caption: 'The legal instrument behind Dutch commercial power in the Indian Ocean: a monopoly, plus the means to enforce it.',
+      prompt: 'NOTICE that the monopoly and the right to keep armed forces sit in the same document. INFER how enforcement and profit depended on one another. What shipping or accounting evidence would you need before claiming the model actually paid?'
     }
   ];
 })();

@@ -68,6 +68,20 @@ module owns is *evidence object -> observation -> inference -> claim*. Handing a
 student the observation and keeping the inference is not a harder task, it is a
 shorter one, and it is the half the other nine modules already do.
 
+### A ruler portrait can be an object. A press photograph of a leader usually is not.
+
+Unit 7 cut its portraits of Hitler, Chamberlain, Churchill, Stalin and Gandhi as decorative. Units 3 and 4 keep portraits of Suleiman, Qianlong, Shah Abbas, Peter the Great, Luther and Guru Nanak. That is not drift, and the line between them is worth stating because it will come up again.
+
+**State portraiture was an instrument of rule.** A commissioned portrait of an early modern sovereign is a deliberate claim about legitimacy, made in regalia, posture, setting and dress by people who chose every element of it. "How does this ruler want to be seen, and by whom" is a real sourcing question with a real answer in the frame. A twentieth-century press photograph of a head of state is a different object: nobody composed it as an argument, and the prompts attached to those Unit 7 cards asked nothing of the image.
+
+**So the test is the prompt, not the genre.** A portrait earns its place when the card asks the student to read the self-presentation and says what the portrait cannot show. Every Unit 3 and 4 portrait does: they name clothing, posture and symbols of rank, and each one closes on what a portrait cannot prove about taxation, bureaucracy, or how ordinary people actually behaved. A portrait card whose prompt could be answered without looking at the picture is decoration, and should be cut or rewritten.
+
+### An emblem is not an object either
+
+Topic 4.4 through 4.8 each carried a card whose picture was the Dutch East India Company's monogram and whose caption said it "symbolizes the joint-stock company model". The student was asked to notice "the corporate identity and state connection" in a trademark. That passes the machine check, because a logo is a picture, and it fails this gate, because the caption was carrying the entire argument.
+
+All five became the company's actual 1602 charter: a 21-year monopoly east of the Cape, and powers to build forts, keep troops and make treaties. A student can read those powers and work out for themselves how a company came to behave like a state. That is the same defect as the Topic 7.2 alliance card wearing different clothes, and the machine could not catch either one.
+
 ### The machine half, and its limit
 
 `node scripts/report-evidence-authenticity.js [unit] [--summaries]` sorts every

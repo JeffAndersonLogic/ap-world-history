@@ -121,11 +121,11 @@
 
   lesson.images = [
     {
-      title: 'Ottoman Expansion — Geographic Scale',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
-      caption: 'Ottoman / geographic scale. A secondary reconstruction shows the Ottoman state expanding from Anatolia across the Balkans, Southwest Asia, and North Africa.',
-      prompt: 'NOTICE the empire\'s multi-regional reach. What governance or military problems would that scale create? Compare with another geographic-scale card and explain one meaningful similarity or difference.'
+      title: 'Suleiman the Magnificent — Ruler Representation',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
+      caption: 'Ottoman / ruler representation. A portrait of Suleiman presents dynastic authority over a multiethnic, multireligious empire.',
+      prompt: 'NOTICE the symbols of rank and the dress. INFER what claim to authority the image is making. Set it beside the Qianlong and Peter the Great cards: what do three very different empires share in how their rulers chose to be seen?'
     },
     {
       title: 'Safavid Empire, c. 1630 — Geographic Scale',

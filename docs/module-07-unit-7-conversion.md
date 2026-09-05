@@ -111,12 +111,16 @@ useless within a term.
 
 ## Next
 
+**Units 3 and 4 are done**, on the same day. They were the worse problem: twelve
+topics whose Evidence Lab rendered zero evidence cards of any kind, because their
+data files carried `evidenceLab.items` and no `images` array. The unmerged
+`module7-audit-units3-4` branch turned out to hold most of the work already, in
+the right shape, so it was merged rather than rewritten and then brought up to
+this standard. See `docs/module-07-units-3-4-audit.md` for what changed on the way
+in, and note the thirteen unverified Commons files listed there.
+
 Units 5, 6, 8 and 9 still run the registry-plus-runtime path, and the report shows
-them at 0 pictures across 44 topics. Units 3 and 4 are worse and are a separate
-problem: twelve topics whose Evidence Lab renders zero evidence cards of any kind,
-because their data files carry `evidenceLab.items` and no `images` array, which
-the renderer does not read. An unmerged `module7-audit-units3-4` branch exists on
-the remote and may already address it.
+them at 0 pictures across 44 topics.
 
 Convert one unit at a time, add it to `CONVERTED` in
 `scripts/check-module07-authored.js`, and when the last one lands delete the

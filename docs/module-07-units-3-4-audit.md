@@ -1,5 +1,46 @@
 # Module 07 Evidence Lab Audit — Units 3-4
 
+> **Revision, 2026-09-05, on landing.** This branch was written before the
+> authenticity gate existed and was merged after it. Three changes were made on
+> the way in, and the grades below should be read with them.
+>
+> **The VOC card was replaced on all five topics that carried it (4.4 to 4.8).**
+> Its picture was the company monogram and its caption said the logo "symbolizes
+> the joint-stock company model", so the student was asked to notice a trademark
+> while the caption carried the argument. It is now the company's actual 1602
+> charter: the 21-year monopoly east of the Cape and the powers to build forts,
+> keep troops and make treaties. That is a document a student can read.
+>
+> **The animated Ottoman GIF was replaced on 3.1 and 3.4.** It spanned 1300 to
+> 1923 in topics about c. 1450 to 1750, and an animation cannot be examined for
+> one detail. Topic 3.1 gets the dated record of the 1453 siege, which is on
+> point for gunpowder empires and honest that its troop numbers are estimates
+> from later chronicles. Topic 3.4 gets a portrait of Suleiman, which turns its
+> comparison set into three ruler representations: Suleiman, Qianlong and Peter.
+>
+> **The ruler portraits were kept, deliberately**, though Unit 7's portraits were
+> cut. The rule that separates them is now written down under "A ruler portrait
+> can be an object" in the standard: every portrait here asks the student to read
+> the self-presentation and names what a portrait cannot prove.
+>
+> **Thirteen of these files are new to the repository and none has been verified
+> to resolve.** Everything else in these pools was already live elsewhere on the
+> site. `validate.js` only knows that a filename is well formed. Run
+> `node scripts/check-image-urls.js` from a network that can reach
+> commons.wikimedia.org before this reaches `main`, and check these first:
+>
+> `Great_Turkish_Bombard_at_Fort_Nelson.JPG`,
+> `1526-First_Battle_of_Panipat-Ibrahim_Lodhi_and_Babur.jpg`,
+> `Lucas_Cranach_-_Portrait_of_Martin_Luther,_circa_1530.jpg`,
+> `Battle_of_Chaldiran_miniature._Selīm-nāma...jpg`,
+> `Portrait_of_Guru_Nanak.png`, `Peter_the_Great,_Tsar_of_Russia.jpg`,
+> `Caravela_de_armada_of_Joao_Serrao.jpg`, `MHS_52528_Astrolabe.jpg`,
+> `15th_century_Portolan_chart_by_Petrus_Roselli...jpg`,
+> `Cerro_de_Potosí._Grabado_en_madera...1552...jpg`,
+> `Frans_Post_-_Plantação_de_açúcar,_1661.jpg`,
+> `Mapa_da_Capitania_de_Pernambuco...(1647).jpg`,
+> `Zumbi_dos_palmares.jpg`.
+
 Audit standard: `docs/module-07-scaffolding-standard.md`.
 
 An A grade requires at least **12/14** on the seven-part rubric, with no category scored zero:

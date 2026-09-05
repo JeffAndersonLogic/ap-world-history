@@ -745,8 +745,8 @@ images across those units was still in its data file, shadowed, and nothing on
 the page or in any check could say which pool a student had read. That is the
 same failure as two coach prompt builders or an MP3 beside a chapter, and it is
 why `scripts/check-module07-authored.js` fails the push if a converted topic
-grows a second pool or its shell re-loads the runtime. Unit 7 is converted;
-Units 5, 6, 8 and 9 are not yet. **When the last one lands, delete
+grows a second pool or its shell re-loads the runtime. Units 3, 4 and 7 are
+converted; Units 5, 6, 8 and 9 are not yet. **When the last one lands, delete
 `assets/js/module-07-evidence-runtime.js` and the remaining registries** rather
 than leaving a dormant override for someone to rediscover.
 
@@ -774,9 +774,11 @@ people to bolt a numeral onto a summary until the report went quiet. Six Unit 7
 cards are flagged today and were deliberately left alone; the reasons are in
 `docs/module-07-unit-7-conversion.md`.
 
-**`evidenceLab.items` is not rendered by anything.** Units 3 and 4, twelve
-topics, carry an items bank and no `images` array, so their Evidence Lab draws
-its task and zero evidence cards. The report is what surfaced that.
+**`evidenceLab.items` is not rendered by anything.** It is prose in a data file
+that no renderer reads. Units 3 and 4 carried an items bank and no `images`
+array, so for twelve topics the Evidence Lab drew its task and zero evidence
+cards; the report is what surfaced that, and both units are now converted. If a
+topic's evidence looks good in the data file and thin on the page, this is why.
 
 **Verify the pictures resolve before certifying a batch.** `validate.js` only
 knows whether a filename is well formed. Topic 1.5 was graded A at 11:30 on

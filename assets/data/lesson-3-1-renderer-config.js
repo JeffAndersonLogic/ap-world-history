@@ -128,11 +128,16 @@
       prompt: 'NOTICE how troops, commanders, or weapons are represented. What can you INFER about how the Mughal court remembered military conquest? Why is a later court painting not a photograph of the 1526 battle?'
     },
     {
-      title: 'Ottoman Expansion, 1300–1923',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
-      caption: 'Secondary geographic reconstruction. The map visualizes the expansion of Ottoman territory from a small Anatolian principality into a multi-continental empire.',
-      prompt: 'NOTICE the direction and scale of expansion after 1453. What can you INFER about the political significance of controlling Constantinople and surrounding regions? What cannot a map prove about WHY each conquest succeeded?'
+      title: 'The siege of Constantinople',
+      label: 'Event record · 6 April to 29 May 1453',
+      sourceText: [
+        'Mehmed II besieged the city for about seven weeks.',
+        'Ottoman gunners deployed bombards cast for the siege.',
+        'Modern estimates put the defenders near 7,000,',
+        'against an Ottoman army many times that size.'
+      ],
+      caption: 'The dated record of the siege, with the figures historians most commonly give. Troop numbers for 1453 are estimates drawn from later chronicles, not counts.',
+      prompt: 'NOTICE the length of the siege and the imbalance in numbers. INFER what seven weeks suggests about how well the walls held against the new artillery. Which claim does this support better: that gunpowder decided the outcome, or that it made the outcome possible?'
     },
     {
       title: 'Mughal Empire, c. 1700',

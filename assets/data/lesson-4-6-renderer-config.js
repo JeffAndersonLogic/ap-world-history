@@ -128,11 +128,16 @@
       prompt: 'NOTICE how Zumbi is presented as a public hero. What can this tell you about the long-term memory of maroon resistance? Why is a modern monument not evidence for Zumbi\'s physical appearance or the exact organization of Palmares?'
     },
     {
-      title: 'Dutch East India Company (VOC)',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Voc.jpg',
-      caption: 'External-rivalry evidence. The VOC represents the heavily capitalized joint-stock competitor that challenged Portuguese positions across the Indian Ocean.',
-      prompt: 'NOTICE the corporate identity and connection to long-distance trade. What can you INFER about why Portuguese chokepoints were vulnerable to a richer maritime rival? What financial or military records would you need to demonstrate that advantage directly?'
+      title: 'Dutch East India Company charter, 1602',
+      label: 'Charter record · Dutch Republic, 20 March 1602',
+      sourceText: [
+        'The States General chartered the VOC with a 21-year monopoly',
+        'on Dutch trade east of the Cape of Good Hope.',
+        'The charter granted powers to build forts, keep troops,',
+        'and make treaties with local rulers.'
+      ],
+      caption: 'The charter that created the heavily capitalized rival which challenged Portuguese positions across the Indian Ocean.',
+      prompt: 'NOTICE what this charter let the VOC do that no single merchant could. INFER why Portuguese chokepoints were vulnerable to a competitor organized this way. This is a challenge from outside: how does it compare with the challenges from within in the other cards?'
     }
   ];
 })();

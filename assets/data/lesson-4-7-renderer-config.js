@@ -139,11 +139,16 @@
       prompt: 'NOTICE symbols of rulership and elite dress. What can you INFER about dynastic hierarchy? What can a ruler portrait not reveal about the millet system, women of different classes, or the status of religious minorities?'
     },
     {
-      title: 'Dutch East India Company (VOC) — Commercial Elite Power',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Voc.jpg',
-      caption: 'Commercial-elite evidence. The VOC represents a new form of political-economic elite power built around chartered companies, capital, and imperial trade.',
-      prompt: 'NOTICE the corporate identity and state connection. What can you INFER about how global trade created new elites? Compare that economic route to status with ancestry-based or dynastic hierarchy in another card.'
+      title: 'Dutch East India Company charter, 1602 — Commercial Elite Power',
+      label: 'Charter record · Dutch Republic, 20 March 1602',
+      sourceText: [
+        'The States General chartered the VOC with a 21-year monopoly',
+        'on Dutch trade east of the Cape of Good Hope.',
+        'The charter granted powers to build forts, keep troops,',
+        'and make treaties with local rulers.'
+      ],
+      caption: 'A charter that made a new kind of elite possible: authority and wealth derived from a company rather than from birth or a crown.',
+      prompt: 'NOTICE that these powers are granted to directors and shareholders rather than to a noble house. INFER how long-distance trade created status outside older hierarchies. Compare that route to power with the dynastic hierarchy in another card.'
     }
   ];
 })();
