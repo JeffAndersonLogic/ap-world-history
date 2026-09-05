@@ -3,109 +3,49 @@
   if (!lesson) return;
 
   lesson.collegeBoardKeyConcepts = [
-    {
-      "code": "KC-3.2.I.B.iii",
-      "theme": "Governance",
-      "text": "Empires collapsed in different regions of the world and in some areas were replaced by new imperial states, including the Mongol khanates.",
-      "illustrativeExamples": []
-    },
-    {
-      "code": "KC-3.1.I.E.i",
-      "theme": "Economic Systems",
-      "text": "The expansion of empires—including the Mongols—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.",
-      "illustrativeExamples": []
-    },
-    {
-      "code": "KC-3.2.II.A.ii",
-      "theme": "Cultural Developments and Interactions",
-      "text": "Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers.",
-      "illustrativeExamples": [
-        "Transfer of Greco–Islamic medical knowledge to western Europe",
-        "Transfer of numbering systems to Europe",
-        "Adoption of Uyghur script"
-      ]
-    }
+    {"code":"KC-3.2.I.B.iii","theme":"Governance","text":"Empires collapsed in different regions of the world and in some areas were replaced by new imperial states, including the Mongol khanates.","illustrativeExamples":[]},
+    {"code":"KC-3.1.I.E.i","theme":"Economic Systems","text":"The expansion of empires—including the Mongols—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.","illustrativeExamples":[]},
+    {"code":"KC-3.2.II.A.ii","theme":"Cultural Developments and Interactions","text":"Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers.","illustrativeExamples":["Transfer of Greco–Islamic medical knowledge to western Europe","Transfer of numbering systems to Europe","Adoption of Uyghur script"]}
   ];
 
-  lesson.first10 = {
-    ...lesson.first10,
-    title: 'First & 10: The World the Mongols Made',
-    embedUrl: 'first-and-10-topic-2-2-mongol-empire-capture.html',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 2.2 lesson path.'
-  };
+  lesson.first10 = { ...lesson.first10, title: 'First & 10: The World the Mongols Made', embedUrl: 'first-and-10-topic-2-2-mongol-empire-capture.html', note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 2.2 lesson path.' };
+  lesson.map = { ...lesson.map, key: [
+    { label: 'Extent of the Mongol Empire', detail: 'At its height the Mongol Empire stretched from the Pacific coast of China to Eastern Europe.' },
+    { label: 'The four khanates', detail: 'The empire was eventually divided into four khanates, Yuan, Ilkhanate, Golden Horde, and Chagatai, each governing a vast region.' },
+    { label: 'Trade corridors', detail: 'The Pax Mongolica made Silk Road travel safer, enabling merchants, diplomats, and missionaries to cross Eurasia.' },
+    { label: 'Geographic takeaway', detail: 'Mongol control of overland routes from China to Persia and beyond created an unprecedented transregional network.' }
+  ]};
 
-  lesson.map = {
-    ...lesson.map,
-    key: [
-      { label: 'Extent of the Mongol Empire', detail: 'At its height the Mongol Empire stretched from the Pacific coast of China to Eastern Europe.' },
-      { label: 'The four khanates', detail: 'The empire was eventually divided into four khanates, Yuan, Ilkhanate, Golden Horde, and Chagatai, each governing a vast region.' },
-      { label: 'Trade corridors', detail: 'The Pax Mongolica made Silk Road travel safer, enabling merchants, diplomats, and missionaries to cross Eurasia.' },
-      { label: 'Geographic takeaway', detail: 'Mongol control of overland routes from China to Persia and beyond created an unprecedented transregional network.' }
-    ]
-  };
-
-  lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
-    first10: '../assets/images/module-art/unit-2/topic-2-2/first10.svg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    beSurreal: '../assets/images/module-art/unit-2/topic-2-2/besurreal.svg',
-    skill: '../assets/images/module-art/unit-2/topic-2-2/skill.svg',
-    checkpoint1: '../assets/images/module-art/unit-2/topic-2-2/checkpoint1.svg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
-    source: '../assets/images/module-art/unit-2/topic-2-2/source.svg',
-    beInTheRoom: '../assets/images/module-art/unit-2/topic-2-2/beintheroom.svg',
-    checkpoint2: '../assets/images/module-art/unit-2/topic-2-2/checkpoint2.svg'
-  };
-
-  lesson.beInTheRoom = {
-    url: '../beintheroom/unit-2/mongol-court.html',
-    desc: 'Enter the Mongol court of Kublai Khan. You are a foreign diplomat or merchant, navigate the court, negotiate trade access, and report back to your home ruler.'
-  };
-
-  lesson.beSurreal = {
-    title: 'BeSurreal: Marco Polo\'s Kublai Khan',
-    text: 'Marco Polo spent 17 years in Kublai Khan\'s court and returned to describe marvels that Europeans dismissed as fantasy: paper money, coal as fuel, cities of millions, and postal relay stations every 25 miles. His account reveals the scale of the Mongol Empire and why the Pax Mongolica made it possible for a Venetian merchant to travel from Italy to China.',
-    prompt: 'What does Marco Polo\'s experience reveal about what the Pax Mongolica made possible that had never existed before?'
-  };
+  lesson.stableImages = { map:'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg', first10:'../assets/images/module-art/unit-2/topic-2-2/first10.svg', contentDelivery:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg', beSurreal:'../assets/images/module-art/unit-2/topic-2-2/besurreal.svg', skill:'../assets/images/module-art/unit-2/topic-2-2/skill.svg', checkpoint1:'../assets/images/module-art/unit-2/topic-2-2/checkpoint1.svg', evidence:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg', source:'../assets/images/module-art/unit-2/topic-2-2/source.svg', beInTheRoom:'../assets/images/module-art/unit-2/topic-2-2/beintheroom.svg', checkpoint2:'../assets/images/module-art/unit-2/topic-2-2/checkpoint2.svg' };
+  lesson.beInTheRoom = { url:'../beintheroom/unit-2/mongol-court.html', desc:'Enter the Mongol court of Kublai Khan. You are a foreign diplomat or merchant, navigate the court, negotiate trade access, and report back to your home ruler.' };
+  lesson.beSurreal = { title:'BeSurreal: Marco Polo\'s Kublai Khan', text:'Marco Polo spent 17 years in Kublai Khan\'s court and returned to describe marvels that Europeans dismissed as fantasy: paper money, coal as fuel, cities of millions, and postal relay stations every 25 miles. His account reveals the scale of the Mongol Empire and why the Pax Mongolica made it possible for a Venetian merchant to travel from Italy to China.', prompt:'What does Marco Polo\'s experience reveal about what the Pax Mongolica made possible that had never existed before?' };
 
   lesson.skillBuilder = {
-    label: 'Continuity and Change practice',
-    title: 'AP Skill Builder: What Changed — and What Continued — Under the Mongols?',
-    intro: 'CCOT requires a baseline. First establish what existed before the Mongols, then track the SAME category through Mongol rule and after political fragmentation. A continuity is something that persisted; a change is something meaningfully transformed. Both need evidence and an explanation of why the pattern occurred.',
-    steps: [
-      { label: '1. Choose one category to track', text: 'Strong choices: long-distance trade, political control of routes, cultural/technological diffusion, or movement of disease.' },
-      { label: '2. Establish the baseline', text: '<strong>Before Mongol rule:</strong> Silk Road exchange already existed, but political fragmentation increased risk and transaction costs.' },
-      { label: '3. Identify a continuity', text: '<strong>Possible continuity:</strong> merchants still used older overland routes; luxury goods and ideas continued moving between regions; regional cultures remained distinct even within a larger empire.' },
-      { label: '4. Identify a change', text: '<strong>Possible change:</strong> Pax Mongolica lowered political barriers and increased the speed and scale of trade, diplomacy, technology transfer, and plague transmission.' },
-      { label: '5. Explain why', text: 'Connect the pattern to Mongol political control, relay systems, protection of merchants, or later fragmentation of the khanates.' },
-      { label: 'Response frame', text: '<strong>Although</strong> ___ continued across the Mongol period, ___ changed because ___. This change mattered because ___.' }
-    ],
-    prompt: 'Write 3–4 sentences about ONE category across the Mongol period. Identify one continuity and one change, use specific evidence for each, and explain why the change occurred or why the continuity persisted.'
+    label:'Continuity and Change practice', title:'AP Skill Builder: What Changed — and What Continued — Under the Mongols?', intro:'CCOT requires a baseline. First establish what existed before the Mongols, then track the SAME category through Mongol rule and after political fragmentation. A continuity is something that persisted; a change is something meaningfully transformed. Both need evidence and an explanation of why the pattern occurred.',
+    steps:[
+      {label:'1. Choose one category to track',text:'Strong choices: long-distance trade, political control of routes, cultural/technological diffusion, or movement of disease.'},
+      {label:'2. Establish the baseline',text:'<strong>Before Mongol rule:</strong> Silk Road exchange already existed, but political fragmentation increased risk and transaction costs.'},
+      {label:'3. Identify a continuity',text:'<strong>Possible continuity:</strong> merchants still used older overland routes; luxury goods and ideas continued moving between regions; regional cultures remained distinct even within a larger empire.'},
+      {label:'4. Identify a change',text:'<strong>Possible change:</strong> Pax Mongolica lowered political barriers and increased the speed and scale of trade, diplomacy, technology transfer, and plague transmission.'},
+      {label:'5. Explain why',text:'Connect the pattern to Mongol political control, relay systems, protection of merchants, or later fragmentation of the khanates.'},
+      {label:'Response frame',text:'<strong>Although</strong> ___ continued across the Mongol period, ___ changed because ___. This change mattered because ___.'}
+    ], prompt:'Write 3–4 sentences about ONE category across the Mongol period. Identify one continuity and one change, use specific evidence for each, and explain why the change occurred or why the continuity persisted.'
   };
 
   lesson.checkpoints = [
-    {
-      title: 'Checkpoint 1: Mongol Conquest and Administration',
-      subtitle: 'Checks Learning Target 1 and Success Criteria 1.',
-      cardDesc: 'Military tactics, governance, religious tolerance, and administration.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Explain how the Mongols conquered and administered their vast empire. Use specific evidence such as military tactics, the khanate system, or religious tolerance.',
-      responseType: 'Checkpoint 1',
-      terms: ['Genghis Khan', 'khanate', 'Pax Mongolica', 'Yam', 'siege warfare', 'cavalry', 'religious tolerance'],
-      focus: ['Describe at least one military method.', 'Describe at least one administrative method.', 'Explain how these methods helped hold together a vast, diverse empire.']
-    },
-    {
-      title: 'Checkpoint 2: The Pax Mongolica and Its Consequences',
-      subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'Trade, exchange, plague, and the effects of connectivity.',
-      learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain two effects of the Pax Mongolica on Afro-Eurasian exchange. Consider both positive effects (trade, diplomacy) and negative effects (plague).',
-      responseType: 'Checkpoint 2',
-      skill: 'Causation',
-      terms: ['Pax Mongolica', 'trade', 'diplomacy', 'plague', 'Black Death', 'Marco Polo', 'Ibn Battuta', 'connectivity'],
-      focus: ['Name at least two distinct effects.', 'Explain whether each effect was connective, destructive, or both.', 'Connect the Pax Mongolica to wider Afro-Eurasian patterns of exchange and disruption.']
-    }
+    {title:'Checkpoint 1: Mongol Conquest and Administration',subtitle:'Checks Learning Target 1 and Success Criteria 1.',cardDesc:'Military tactics, governance, religious tolerance, and administration.',learningTargets:[lesson.learningTargets[0].target],successCriteria:[lesson.successCriteria[0].criteria],prompt:'Explain how the Mongols conquered and administered their vast empire. Use specific evidence such as military tactics, the khanate system, or religious tolerance.',responseType:'Checkpoint 1',terms:['Genghis Khan','khanate','Pax Mongolica','Yam','siege warfare','cavalry','religious tolerance'],focus:['Describe at least one military method.','Describe at least one administrative method.','Explain how these methods helped hold together a vast, diverse empire.']},
+    {title:'Checkpoint 2: The Pax Mongolica and Its Consequences',subtitle:'Checks Learning Targets 2–3 and Success Criteria 2–3.',cardDesc:'Trade, exchange, plague, and the effects of connectivity.',learningTargets:[lesson.learningTargets[1].target,lesson.learningTargets[2].target],successCriteria:[lesson.successCriteria[1].criteria,lesson.successCriteria[2].criteria],prompt:'Explain two effects of the Pax Mongolica on Afro-Eurasian exchange. Consider both positive effects (trade, diplomacy) and negative effects (plague).',responseType:'Checkpoint 2',skill:'Causation',terms:['Pax Mongolica','trade','diplomacy','plague','Black Death','Marco Polo','Ibn Battuta','connectivity'],focus:['Name at least two distinct effects.','Explain whether each effect was connective, destructive, or both.','Connect the Pax Mongolica to wider Afro-Eurasian patterns of exchange and disruption.']}
+  ];
+
+  lesson.evidenceLab = {
+    title:'Evidence Lab: Empire, Distance, and Connection',
+    task:'Use the evidence to test what Mongol rule changed. Choose TWO cards. Begin with a concrete feature, infer what it suggests about conquest, governing distance, or connectivity, and identify what that evidence cannot establish alone.',
+    prompt:'Using two evidence cards, make one claim about how Mongol imperial expansion changed Eurasian political control or exchange. Cite one concrete detail from each card, explain the connection to your claim, and identify one limitation in the evidence.'
+  };
+  lesson.images = [
+    {title:'Mongol Empire and Khanates',url:'../assets/images/instructional-maps/topic-2-2.svg',sourceUrl:'../assets/images/instructional-maps/topic-2-2.svg',caption:'Secondary geographic evidence. The BeHistorical reference map reconstructs the enormous territorial reach of Mongol rule and the later division into regional khanates.',prompt:'NOTICE the scale and geographic spread. What can you INFER about the administrative problem of distance and the reason for regional khanates or relay systems? What can a map not tell you about how rule felt locally?'},
+    {title:'Genghis Khan, Yuan-Era Portrait',url:'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg',caption:'Political-memory evidence. A later Yuan dynasty portrait representing Genghis Khan as founder of the Mongol imperial tradition.',prompt:'NOTICE how the founder is represented. What can you INFER about later Mongol political memory or legitimacy? Why is this a weak source for reconstructing his actual appearance or battlefield methods?'},
+    {title:'Silk Roads Under a Continental Empire',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',caption:'Secondary network evidence. A modern map reconstructing the overland routes that crossed territories brought under Mongol control.',prompt:'NOTICE how many routes cross Mongol-controlled Eurasia. What can you INFER about why political protection, relay stations, and standardized permissions could affect trade? What does the map not prove about actual trade volume?'},
+    {title:'Silk Road Network at the Start of the Mongol Era',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_(c.1200_CE).jpg',caption:'Baseline evidence. A secondary reconstruction of exchange routes around c. 1200, useful for establishing that long-distance trade existed before the Pax Mongolica.',prompt:'NOTICE that routes existed before Mongol unification. What continuity does this establish? What change would you need additional evidence to demonstrate under Mongol rule?'}
   ];
 })();
