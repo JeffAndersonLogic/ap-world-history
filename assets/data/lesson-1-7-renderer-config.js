@@ -58,4 +58,55 @@
     ],
     prompt: 'Choose two Unit 1 societies from the chart and ONE shared category. Using specific evidence from both, write a 3–4 sentence comparison claim that explains one meaningful similarity OR difference and why that pattern existed.'
   };
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Unit 1 Comparison Gallery',
+    task: 'Choose TWO evidence cards from different regions that can be compared through the SAME category: administration, legitimacy, labor, trade, or political organization. First record one concrete detail from each card. Then infer what each detail suggests before deciding whether the pattern is similar or different.',
+    prompt: 'Using two evidence cards from different Unit 1 regions, write one comparison claim about the same historical category. Cite one observed detail from each card, explain the similarity OR difference, and explain one historical reason that pattern existed.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Song Imperial Examination — East Asia',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG',
+      caption: 'Administration evidence. The Song state used examinations and a scholar-official bureaucracy as part of a centralized imperial system.',
+      prompt: 'NOTICE one detail about the examination setting. What does it suggest about how the Song selected officials? Which other card could you compare with this on administration or political organization?'
+    },
+    {
+      title: 'Governor of Maragha — Dar al-Islam',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_06_the_Governor_of_Maraghah.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqama_06_the_Governor_of_Maraghah.jpg',
+      caption: 'Regional-authority evidence. A 13th-century Maqamat illustration depicts a governor and courtly setting in the politically fragmented Islamic world.',
+      prompt: 'NOTICE one detail about the ruler or attendants. What can you infer about regional political authority? Which other card could you compare with this on centralization or legitimacy?'
+    },
+    {
+      title: 'Angkor Wat — South & Southeast Asia',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
+      caption: 'Legitimacy and labor evidence. The Khmer monumental complex linked sacred kingship to a state capable of mobilizing large amounts of labor and resources.',
+      prompt: 'NOTICE one feature of scale or design. What can you infer about legitimacy or labor mobilization? Which other card gives a useful comparison on monumental or ideological power?'
+    },
+    {
+      title: 'Inca Quipu — Americas',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Quipu.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Quipu.png',
+      caption: 'Administration evidence. Quipu helped Inca officials record quantities and organize information across a large Andean empire.',
+      prompt: 'NOTICE the structure of the recording device. What can you infer about the administrative problems the Inca had to solve? Compare it with another state\'s method of organizing information or officials.'
+    },
+    {
+      title: 'Great Enclosure — Africa',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great-Zimbabwe-2.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great-Zimbabwe-2.jpg',
+      caption: 'State-capacity evidence. Great Zimbabwe\'s monumental stone construction stood at a center linked to regional and Indian Ocean exchange.',
+      prompt: 'NOTICE one feature of construction or scale. What can you infer about labor and authority? Which card from another region could you compare on state capacity or trade-supported power?'
+    },
+    {
+      title: 'Plan of a Medieval Manor — Europe',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Plan_mediaeval_manor.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Plan_mediaeval_manor.jpg',
+      caption: 'Land-and-labor evidence. A schematic manor plan shows rural production organized around local lordship rather than a centralized imperial bureaucracy.',
+      prompt: 'NOTICE how land and settlement are organized. What can you infer about local political and economic power? Compare this with another region on centralization, labor, or administration.'
+    }
+  ];
 })();

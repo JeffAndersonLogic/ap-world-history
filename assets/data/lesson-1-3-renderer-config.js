@@ -68,4 +68,41 @@
     ],
     prompt: 'Write 2–3 sentences explaining one continuity AND one change in how a single belief system, state-building strategy, or trade process shaped South or Southeast Asia from c. 1200 to c. 1450. Use specific evidence and explain why the change occurred or why the continuity persisted.'
   };
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Religion, Trade, and State Power',
+    task: 'Choose TWO cards that let you compare the same historical category: religious legitimacy, maritime trade, or state power. Start with a visible detail, make an inference, then connect the inference to a claim. Do not treat the caption as the answer.',
+    prompt: 'Use two evidence cards to make one claim about how religion OR trade helped rulers build power in South or Southeast Asia. Include one specific observed detail from each card and explain why the evidence supports your claim.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Angkor Wat',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
+      caption: 'Monumental-architecture evidence. Angkor Wat was built by the Khmer state in the 12th century and remained an important sacred and political landscape into the period c. 1200–1450.',
+      prompt: 'NOTICE one feature of scale, design, or setting. What can you INFER about the labor and authority required to create and maintain a monument like this? What claim about religion and kingship could it support?'
+    },
+    {
+      title: 'Borobudur Ship Relief',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur%20ship.JPG',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Borobudur_ship.JPG',
+      caption: 'Maritime evidence. A ship carved into the Buddhist monument at Borobudur in Java, reflecting seafaring in a region tied to Indian Ocean and Southeast Asian exchange.',
+      prompt: 'NOTICE details of the vessel. What can you INFER about the importance of maritime movement in island Southeast Asia? How might this evidence support a claim about trade and cultural exchange?'
+    },
+    {
+      title: 'Qutb Minar, Delhi',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qutb_Minar_2022.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qutb_Minar_2022.jpg',
+      caption: 'Political-religious evidence. Construction of the Qutb Minar complex began under rulers of the Delhi Sultanate, an Islamic state governing a religiously diverse South Asian population.',
+      prompt: 'NOTICE one feature of the monument or complex. What can you INFER about how a new ruling dynasty projected authority? What can this building show about political power that it cannot show about ordinary religious practice?'
+    },
+    {
+      title: 'Srivijaya Empire Reference Map',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Srivijaya_Empire.svg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Srivijaya_Empire.svg',
+      caption: 'Geographic evidence. A modern reference map locating Srivijaya around the Strait of Malacca, a major maritime chokepoint linking the Indian Ocean and South China Sea.',
+      prompt: 'NOTICE the state\'s position relative to sea lanes and straits. What can you INFER about how geography could create political and commercial power? What additional evidence would you need to prove how rulers used that advantage?'
+    }
+  ];
 })();

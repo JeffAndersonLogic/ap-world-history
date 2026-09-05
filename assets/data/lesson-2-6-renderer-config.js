@@ -2,94 +2,28 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
-  lesson.collegeBoardKeyConcepts = [
-    {
-      "code": "KC-3.1.IV",
-      "theme": "Humans and the Environment",
-      "text": "There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes.",
-      "illustrativeExamples": [
-        "Bananas in Africa",
-        "New rice varieties in East Asia",
-        "Spread of citrus in the Mediterranean"
-      ]
-    }
+  lesson.collegeBoardKeyConcepts=[{"code":"KC-3.1.IV","theme":"Humans and the Environment","text":"There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes.","illustrativeExamples":["Bananas in Africa","New rice varieties in East Asia","Spread of citrus in the Mediterranean"]}];
+  lesson.first10={...lesson.first10,title:'First & 10: The World the Plague Remade',embedUrl:'first-and-10-topic-2-6-environmental-consequences-capture.html',note:'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 2.6 lesson path.'};
+  lesson.map={...lesson.map,key:[
+    {label:'Plague origin region',detail:'Bubonic plague was endemic in rodent populations in Central Asia, the Mongol trade routes gave it a highway westward.'},
+    {label:'Spread through trade routes',detail:'The plague followed overland Silk Road routes into Southwest Asia, then maritime routes into the Mediterranean and northern Europe.'},
+    {label:'Areas of devastation',detail:'Europe lost 30–60% of its population; similar demographic collapse struck the Middle East and parts of Central Asia.'},
+    {label:'Geographic takeaway',detail:'The same connectivity that enriched Afro-Eurasian societies also accelerated the most catastrophic pandemic in premodern history.'}
+  ]};
+  lesson.stableImages={map:'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',first10:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',contentDelivery:'../assets/images/module-art/unit-2/topic-2-6/contentdelivery.svg',beSurreal:'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',skill:'../assets/images/module-art/unit-2/topic-2-6/skill.svg',checkpoint1:'../assets/images/module-art/unit-2/topic-2-6/checkpoint1.svg',evidence:'../assets/images/module-art/unit-2/topic-2-6/evidence.svg',source:'../assets/images/module-art/unit-2/topic-2-6/source.svg',beInTheRoom:'../assets/images/module-art/unit-2/topic-2-6/beintheroom.svg',checkpoint2:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg'};
+  lesson.beInTheRoom={url:'../beintheroom/unit-2/plague-europe.html',desc:'It is 1347. You are a city official in an Italian port city as the first plague ships arrive. What do you know? What decisions do you face? What will you do?'};
+  lesson.beSurreal={title:'BeSurreal: The Plague Doctor\'s Mask',text:'The iconic plague doctor\'s beak mask, filled with herbs and spices, was a 17th-century invention, not a medieval one. But it captures something real: medieval Europeans had no idea what caused the plague. Some blamed bad air (miasma theory). Some blamed Jews. Some blamed the alignment of planets. The Black Death killed roughly 25 million people in Europe, and societies struggled for decades to explain why their world had fallen apart.',prompt:'What does the confusion and fear around the Black Death reveal about the limits of medieval knowledge and the social consequences of epidemic disease?'};
+  lesson.skillBuilder={label:'Causation practice',title:'How Did Trade Routes Cause Environmental and Demographic Catastrophe?',intro:'Causation means tracing WHY something happened through a chain of causes. The Black Death had an environmental cause (rodent reservoir), a structural cause (trade route connectivity), and cascading social and demographic effects.',steps:[{label:'Environmental cause',text:'Bubonic plague was endemic in Central Asian rodent populations, it was a pre-existing ecological reality waiting for a new pathway.'},{label:'Structural cause',text:'Mongol trade routes and Indian Ocean maritime networks created the connectivity that allowed plague to travel faster and farther than ever before.'},{label:'Social effects',text:'Demographic collapse caused labor shortages, weakened feudal and Church institutions, and prompted long-term social and economic reorganization.'}],prompt:'Trace the chain of causation from rodent populations in Central Asia to the weakening of feudalism in Europe in 3-4 sentences.'};
+  lesson.checkpoints=[
+    {title:'Checkpoint 1: How Disease Spread Along Trade Routes',subtitle:'Checks Learning Target 1 and Success Criteria 1.',cardDesc:'Plague origins, transmission, and the role of trade connectivity.',learningTargets:[lesson.learningTargets[0].target],successCriteria:[lesson.successCriteria[0].criteria],prompt:'Explain how trade routes enabled the spread of epidemic disease. Use specific evidence about the bubonic plague, its origins, and how it traveled.',responseType:'Checkpoint 1',terms:['bubonic plague','Yersinia pestis','Black Death','rodents','fleas','Central Asia','Silk Roads','maritime routes'],focus:['Explain where plague originated.','Explain the mechanism by which it spread along trade routes.','Describe the geographic pattern of its spread.']},
+    {title:'Checkpoint 2: Demographic and Social Consequences',subtitle:'Checks Learning Targets 2–3 and Success Criteria 2–3.',cardDesc:'Population loss, social upheaval, and long-term consequences.',learningTargets:[lesson.learningTargets[1].target,lesson.learningTargets[2].target],successCriteria:[lesson.successCriteria[1].criteria,lesson.successCriteria[2].criteria],prompt:'Explain two consequences of the Black Death on Afro-Eurasian societies. Consider demographic, social, political, or ecological effects.',responseType:'Checkpoint 2',terms:['demographic collapse','labor shortage','feudalism','Church authority','mortality','population','ecological change'],focus:['Name at least two distinct consequences.','Explain how each consequence changed a society or institution.','Connect the demographic collapse to longer-term social or political change.']}
   ];
 
-  lesson.first10 = {
-    ...lesson.first10,
-    title: 'First & 10: The World the Plague Remade',
-    embedUrl: 'first-and-10-topic-2-6-environmental-consequences-capture.html',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 2.6 lesson path.'
-  };
-
-  lesson.map = {
-    ...lesson.map,
-    key: [
-      { label: 'Plague origin region', detail: 'Bubonic plague was endemic in rodent populations in Central Asia, the Mongol trade routes gave it a highway westward.' },
-      { label: 'Spread through trade routes', detail: 'The plague followed overland Silk Road routes into Southwest Asia, then maritime routes into the Mediterranean and northern Europe.' },
-      { label: 'Areas of devastation', detail: 'Europe lost 30–60% of its population; similar demographic collapse struck the Middle East and parts of Central Asia.' },
-      { label: 'Geographic takeaway', detail: 'The same connectivity that enriched Afro-Eurasian societies also accelerated the most catastrophic pandemic in premodern history.' }
-    ]
-  };
-
-  lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    contentDelivery: '../assets/images/module-art/unit-2/topic-2-6/contentdelivery.svg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    skill: '../assets/images/module-art/unit-2/topic-2-6/skill.svg',
-    checkpoint1: '../assets/images/module-art/unit-2/topic-2-6/checkpoint1.svg',
-    evidence: '../assets/images/module-art/unit-2/topic-2-6/evidence.svg',
-    source: '../assets/images/module-art/unit-2/topic-2-6/source.svg',
-    beInTheRoom: '../assets/images/module-art/unit-2/topic-2-6/beintheroom.svg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg'
-  };
-
-  lesson.beInTheRoom = {
-    url: '../beintheroom/unit-2/plague-europe.html',
-    desc: 'It is 1347. You are a city official in an Italian port city as the first plague ships arrive. What do you know? What decisions do you face? What will you do?'
-  };
-
-  lesson.beSurreal = {
-    title: 'BeSurreal: The Plague Doctor\'s Mask',
-    text: 'The iconic plague doctor\'s beak mask, filled with herbs and spices, was a 17th-century invention, not a medieval one. But it captures something real: medieval Europeans had no idea what caused the plague. Some blamed bad air (miasma theory). Some blamed Jews. Some blamed the alignment of planets. The Black Death killed roughly 25 million people in Europe, and societies struggled for decades to explain why their world had fallen apart.',
-    prompt: 'What does the confusion and fear around the Black Death reveal about the limits of medieval knowledge and the social consequences of epidemic disease?'
-  };
-
-  lesson.skillBuilder = {
-    label: 'Causation practice',
-    title: 'How Did Trade Routes Cause Environmental and Demographic Catastrophe?',
-    intro: 'Causation means tracing WHY something happened through a chain of causes. The Black Death had an environmental cause (rodent reservoir), a structural cause (trade route connectivity), and cascading social and demographic effects.',
-    steps: [
-      { label: 'Environmental cause', text: 'Bubonic plague was endemic in Central Asian rodent populations, it was a pre-existing ecological reality waiting for a new pathway.' },
-      { label: 'Structural cause', text: 'Mongol trade routes and Indian Ocean maritime networks created the connectivity that allowed plague to travel faster and farther than ever before.' },
-      { label: 'Social effects', text: 'Demographic collapse caused labor shortages, weakened feudal and Church institutions, and prompted long-term social and economic reorganization.' }
-    ],
-    prompt: 'Trace the chain of causation from rodent populations in Central Asia to the weakening of feudalism in Europe in 3-4 sentences.'
-  };
-
-  lesson.checkpoints = [
-    {
-      title: 'Checkpoint 1: How Disease Spread Along Trade Routes',
-      subtitle: 'Checks Learning Target 1 and Success Criteria 1.',
-      cardDesc: 'Plague origins, transmission, and the role of trade connectivity.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Explain how trade routes enabled the spread of epidemic disease. Use specific evidence about the bubonic plague, its origins, and how it traveled.',
-      responseType: 'Checkpoint 1',
-      terms: ['bubonic plague', 'Yersinia pestis', 'Black Death', 'rodents', 'fleas', 'Central Asia', 'Silk Roads', 'maritime routes'],
-      focus: ['Explain where plague originated.', 'Explain the mechanism by which it spread along trade routes.', 'Describe the geographic pattern of its spread.']
-    },
-    {
-      title: 'Checkpoint 2: Demographic and Social Consequences',
-      subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'Population loss, social upheaval, and long-term consequences.',
-      learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain two consequences of the Black Death on Afro-Eurasian societies. Consider demographic, social, political, or ecological effects.',
-      responseType: 'Checkpoint 2',
-      terms: ['demographic collapse', 'labor shortage', 'feudalism', 'Church authority', 'mortality', 'population', 'ecological change'],
-      focus: ['Name at least two distinct consequences.', 'Explain how each consequence changed a society or institution.', 'Connect the demographic collapse to longer-term social or political change.']
-    }
+  lesson.evidenceLab={title:'Evidence Lab: Reconstructing a Pandemic from Different Evidence',task:'No single source can explain a pandemic. Choose TWO cards of different types—geographic reconstruction, trade-network map, visual culture, or social/labor evidence. Ask what each source can establish and what it cannot before combining them into a claim.',prompt:'Using two different kinds of evidence, make one claim about how connectivity shaped the spread OR consequences of the Black Death. Cite a specific detail from each source and explain why the two-source combination is stronger than either source alone.'};
+  lesson.images=[
+    {title:'Spread of the Black Death, c. 1340–1353',url:'../assets/images/instructional-maps/topic-2-6.svg',sourceUrl:'../assets/images/instructional-maps/topic-2-6.svg',caption:'Secondary geographic reconstruction. The map plots the plague\'s movement across trade corridors, coastlines, and densely connected regions.',prompt:'NOTICE the sequence and direction of spread. What can you INFER about connectivity? What can a reconstructed map show about pattern that it cannot establish about individual transmission events?'},
+    {title:'Silk Roads Across Afro-Eurasia',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',caption:'Secondary network evidence. A modern route map shows the exchange corridors that connected Central Asia with Southwest Asia and Europe.',prompt:'NOTICE where the trade corridors overlap with plague-spread regions. What causal hypothesis does that support? Why does correlation between routes and disease spread still require other evidence?'},
+    {title:'Danse Macabre, Michael Wolgemut, 1493',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Danse_macabre_by_Michael_Wolgemut.png',sourceUrl:'https://commons.wikimedia.org/wiki/File:Danse_macabre_by_Michael_Wolgemut.png',caption:'Later cultural-memory evidence. This 1493 print belongs to the post-Black Death European tradition of the “dance of death,” in which death reaches people across social ranks.',prompt:'NOTICE who is represented alongside death. What can you INFER about the cultural memory of mass mortality? Why is a 1493 image evidence of memory rather than a direct eyewitness image of 1348?'},
+    {title:'March, Très Riches Heures, c. 1410s',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg',caption:'Post-plague labor evidence. An elite 15th-century calendar manuscript depicts agricultural workers and a noble estate decades after the Black Death.',prompt:'NOTICE the organization of labor and land. What can you cautiously INFER about the persistence of agricultural hierarchy after the plague? What would wage, rent, or court records be better evidence for?' }
   ];
 })();
