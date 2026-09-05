@@ -1170,6 +1170,18 @@ function copyCheckpointPrompt(responseId) {
 
 // ── Evidence Lab ──────────────────────────────────────────────────────────────
 
+// An evidence card only gets an "Open source/image" link when there is somewhere
+// real to send the student. Two cards have nowhere: one with an empty `url`,
+// which the Image Contract explicitly allows and which was rendering
+// `href=""`, so clicking it reloaded the lesson; and a text-evidence plate,
+// whose `url` is a data URI this repo drew itself and is not a source.
+function evidenceSourceLink(img) {
+  const href = img.sourceUrl || (/^https?:/i.test(String(img.url || '')) ? img.url : '');
+  return href
+    ? `<a class="source-link" href="${href}" target="_blank" rel="noopener">Open source/image</a>`
+    : '';
+}
+
 function renderEvidence() {
   return `
     <div class="component-note"><strong>${L.evidenceLab.title}</strong><br>${L.evidenceLab.task}</div>
@@ -1182,7 +1194,7 @@ function renderEvidence() {
                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(${i})}" ${mediaFallbackAttrs(`evidence-${String(i + 1).padStart(2, '0')}`)}>
           <div class="image-caption">
             <strong>${img.title}</strong><br>${img.caption}<br><em>${img.prompt}</em><br>
-            <a class="source-link" href="${img.sourceUrl || img.url}" target="_blank" rel="noopener">Open source/image</a>
+            ${evidenceSourceLink(img)}
           </div>
         </article>`).join('')}
     </div>

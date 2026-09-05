@@ -1,5 +1,16 @@
 # Module 07 Evidence Lab Audit — Units 5–7
 
+> **Revision, 2026-09-05 (same day).** The Unit 7 grades below are withdrawn. This
+> audit scored reasoning design and did not weigh evidence authenticity heavily
+> enough: on 33 topics across Units 5 to 9, including eight of nine in Unit 7, the
+> registry runtime replaced authentic historical images with author-written text
+> cards, and a card with nothing to observe cannot be an A no matter how good the
+> question attached to it is. Unit 7 has been converted to one authored evidence
+> pool per topic and re-graded; see `docs/module-07-unit-7-conversion.md`. Units 5
+> and 6 still run the registry path and their grades here should be read as
+> provisional pending the same conversion. The rule that would have caught this is
+> now the authenticity gate in `docs/module-07-scaffolding-standard.md`.
+
 ## Scope
 
 This audit covers all 27 Module 07 Evidence Labs in Units 5–7:

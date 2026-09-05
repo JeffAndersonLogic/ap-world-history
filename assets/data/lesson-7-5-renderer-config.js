@@ -116,4 +116,69 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: "Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.",
+    prompt: 'Build a claim about why the settlement after World War I failed to resolve political tensions. Use at least two cards and explain a specific contradiction between a stated principle and an actual outcome.'
+  };
+
+  lesson.images = [
+    {
+      title: 'The Council of Four, Paris Peace Conference, 1919',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Big_four.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Big_four.jpg',
+      caption: 'Photograph of Lloyd George, Orlando, Clemenceau and Wilson at Versailles, the four leaders who settled the terms.',
+      prompt: 'NOTICE who is present in this photograph. Now INFER, from who is absent, whose interests the settlement was most likely to serve. What claim about self-determination does the composition of this room complicate?'
+    },
+    {
+      title: 'Sykes-Picot Agreement map, signed 8 May 1916',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg',
+      caption: 'The signed Anglo-French map dividing Ottoman territory into zones of influence, agreed secretly in 1916, two years before the war ended.',
+      prompt: 'NOTICE how the lines are drawn and what they ignore. INFER what the signatories assumed about the people living there. Given the 1916 date, what does this prove about the sincerity of the self-determination language used in 1919?'
+    },
+    {
+      title: 'League of Nations mandates',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_league_of_nations_mandate.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_league_of_nations_mandate.png',
+      caption: 'Reference map of the mandate territories assigned after 1919, drawn from the League\'s own assignments.',
+      prompt: 'NOTICE which powers administer the mandates. INFER how far the mandate system differed in practice from the empire it replaced. What would you need beyond a map to decide whether it was administration or annexation?'
+    },
+    {
+      title: 'Covenant of the League of Nations, Article 22',
+      label: 'Primary-source excerpt · League Covenant, 1919',
+      sourceText: [
+        'Mandated territories are described as inhabited by peoples',
+        '"not yet able to stand by themselves under the strenuous',
+        'conditions of the modern world."'
+      ],
+      caption: 'The wording by which the League justified placing former Ottoman and German territories under European administration.',
+      prompt: 'What exact contradiction sits between this wording and the principle of self-determination announced at the same conference? Whose perspective is absent from the sentence itself?'
+    },
+    {
+      title: 'Treaty of Versailles, Article 231',
+      label: 'Treaty record · signed 28 June 1919',
+      sourceText: [
+        'Germany accepts responsibility for the loss and damage caused',
+        'by "the aggression of Germany and her allies."',
+        'The article became the legal basis for reparations.'
+      ],
+      caption: 'The war-guilt clause, the article on which the financial settlement rested.',
+      prompt: 'How does this card support a claim about German resentment? What additional evidence would you need before claiming that resentment caused the next war?'
+    },
+    {
+      title: 'Japan\'s racial equality proposal',
+      label: 'Diplomatic record · Paris Peace Conference, 1919',
+      sourceText: [
+        'Japan proposed a racial-equality clause for the League Covenant.',
+        'A majority of delegates voted in favor.',
+        'The chair ruled that the amendment required unanimity, and it was not adopted.'
+      ],
+      caption: 'A proposal by one of the victorious allies, defeated on a procedural ruling at the conference.',
+      prompt: 'How could this rejection contribute to grievances against an order that called itself universal? What should you avoid claiming about Japanese motives from this record alone?'
+    }
+  ];
+
 })();

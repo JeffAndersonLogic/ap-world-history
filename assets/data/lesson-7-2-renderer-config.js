@@ -105,4 +105,65 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: "Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.",
+    prompt: 'Construct a causal explanation for World War I. Use evidence for a long-term cause and for the immediate mechanism, rank their significance, and explain why the assassination alone is not sufficient.'
+  };
+
+  lesson.images = [
+    {
+      title: 'European alliances, 1914',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_Europe_alliances_1914-en.svg',
+      caption: 'Reference map of the Triple Alliance and Triple Entente blocs on the eve of war.',
+      prompt: 'NOTICE which states sit between the two blocs geographically. INFER what that position does to a local crisis in the Balkans. Does this map explain why a crisis spread, why a crisis began, or both? Be precise.'
+    },
+    {
+      title: 'The Rhodes Colossus',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png',
+      caption: 'Cartoon published in the British magazine Punch, 1892, showing Cecil Rhodes astride Africa. A commentary made for a British readership, not a neutral record.',
+      prompt: 'NOTICE what the cartoonist has exaggerated and what he leaves out of the frame. INFER what British readers were expected to find plausible about imperial ambition. What does a cartoon evidence well, and what can it not measure?'
+    },
+    {
+      title: 'The assassination at Sarajevo',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/DC-1914-27-d-Sarajevo.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:DC-1914-27-d-Sarajevo.jpg',
+      caption: 'Contemporary illustration of the assassination of Archduke Franz Ferdinand, 28 June 1914. An artist\'s reconstruction published for a mass audience, not a photograph of the event.',
+      prompt: 'NOTICE how the illustrator has staged the moment. INFER why this event was worth depicting across Europe within days. What can this card explain that the alliance map cannot, and what can it not explain by itself?'
+    },
+    {
+      title: 'Empires and colonies of the world, 1898',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png',
+      caption: 'Reference map of the colonial holdings the great powers were competing over at the turn of the century.',
+      prompt: 'NOTICE where the unclaimed and contested territory sits by 1898. INFER what happens to imperial competition when little is left to claim. How would you use this to argue that a European war had causes outside Europe?'
+    },
+    {
+      title: 'The naval race in numbers',
+      label: 'Quantitative record · dreadnought-type battleships, 1906 to 1914',
+      sourceText: [
+        'Britain launched HMS Dreadnought in 1906, making earlier battleships obsolete.',
+        'By 1914 Britain had roughly 29 dreadnought-type battleships to Germany\'s 17.',
+        'Figures are the standard rounded counts used by historians.'
+      ],
+      caption: 'The naval competition between Britain and Germany, stated as ship counts rather than as a description of rivalry.',
+      prompt: 'How strong is a fleet count as evidence for militarism? What would weaken a claim that the naval race made war inevitable, given that Britain won the race?'
+    },
+    {
+      title: 'The July Crisis, day by day',
+      label: 'Dated diplomatic sequence · 28 June to 4 August 1914',
+      sourceText: [
+        '28 June: Franz Ferdinand assassinated. 23 July: Austrian ultimatum to Serbia.',
+        '28 July: Austria-Hungary declares war on Serbia. 30 July: Russia mobilizes.',
+        '1 August: Germany declares war on Russia. 3 to 4 August: Belgium invaded, Britain enters.'
+      ],
+      caption: 'The documented sequence of decisions between the assassination and general war, five weeks in all.',
+      prompt: 'Which single decision in this sequence best connects long-term tension to general war? Defend your choice, and explain what the chronology cannot tell you about why each decision was made.'
+    }
+  ];
+
 })();

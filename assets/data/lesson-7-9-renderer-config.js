@@ -341,4 +341,54 @@ window.renderCausationMatrix = function () {
       render: function () { return renderCheckpoint(window.BEHISTORICAL_LESSON.checkpoints[1], 'checkpoint-two-response'); }
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: "Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.",
+    prompt: 'Construct and qualify an argument about the most important causes of global conflict in the first half of the twentieth century. Use evidence from both world wars and explain one continuity and one difference in causation.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Empires and colonies of the world, 1898',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png',
+      caption: 'Reference map of imperial holdings before the First World War.',
+      prompt: 'NOTICE which empires hold the most territory. Hold this card beside the 1936 map. INFER what changed and what did not between them. Which of those two facts, the change or the continuity, better explains renewed conflict?'
+    },
+    {
+      title: 'World empires and territories, c. 1936',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png',
+      caption: 'Reference map of imperial holdings between the wars. The Ottoman, Russian, Austro-Hungarian and Qing empires have gone; the maritime empires have not.',
+      prompt: 'NOTICE which empires survived the first war intact. INFER what that survival implies about whether the 1919 settlement resolved imperial competition. What does a map of borders not show about the pressures inside them?'
+    },
+    {
+      title: 'Migrant Mother, 1936',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lange-MigrantMother02.jpg',
+      caption: 'Dorothea Lange, 1936, made for a US federal relief agency. Evidence of the Depression in one country, by a photographer sent to document it.',
+      prompt: 'NOTICE that this is American and commissioned. INFER how far you may generalize from it to a global economic crisis. Why is this stronger evidence for the causes of the second war than of the first?'
+    },
+    {
+      title: 'Atomic bombing of Nagasaki, 1945',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nagasakibomb.jpg',
+      caption: 'Photograph of the Nagasaki cloud, 9 August 1945, the end point of four decades of industrialized warfare.',
+      prompt: 'NOTICE the scale relative to the aircraft\'s vantage point. INFER what had changed in the relationship between technology and civilian populations since 1914. Is this evidence of a cause, or of a consequence? Defend the placement.'
+    },
+    {
+      title: 'Expansion, 1931 to 1939',
+      label: 'Dated event sequence · eight years',
+      sourceText: [
+        '1931 Manchuria. 1935 Ethiopia. 1936 Rhineland.',
+        '1938 Austria, then the Sudetenland. 1939 Czechoslovakia, then Poland.',
+        'Each was met with condemnation, negotiation, or nothing.'
+      ],
+      caption: 'The documented sequence of territorial seizures across the decade before the second war.',
+      prompt: 'Where does this sequence belong in a causal hierarchy: motive, enabling condition, or immediate mechanism? Defend the placement, then name the card above that would most weaken your argument.'
+    }
+  ];
+
 })();

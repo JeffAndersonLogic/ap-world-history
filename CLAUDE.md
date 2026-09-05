@@ -129,6 +129,21 @@ Every script below also has an `npm run` alias; see `package.json`.
   has just stopped saying anything. Expect a high false-positive rate by design;
   see `docs/STYLE.md` for how to triage a hit, and note that the usual repair is
   a narrower **concrete** claim rather than a softer one.
+- `node scripts/report-evidence-authenticity.js [unit] [--summaries]`, sort every
+  Module 07 evidence card in the course into **object** (a real picture),
+  **record** (no picture, but the words carry a quotation or figures) and
+  **summary** (neither, so the student has nothing to observe). **Deliberately
+  not in any suite, and exits 0 always**, same reasoning as `report-absolutes.js`:
+  the classifier is a proxy and whether a card is really a historical object is a
+  judgment about teaching. Read a flag as a question, is there a real object here
+  we are not using, not a verdict. See "Module 07, the Evidence Lab" below.
+- `node scripts/check-module07-authored.js`, the offline contract for a Module 07
+  unit converted to one authored evidence pool: no registry, no runtime, 4 to 6
+  cards, and every card either a picture or declared `sourceText`. `CONVERTED` in
+  that file is the declared list of converted units. In the offline suite.
+- `node scripts/check-module07-units5-6.js` and
+  `node scripts/check-module07-units8-9.js`, the contract for the units still on
+  the registry-plus-runtime path. Both retire as their units convert.
 - `node scripts/report-skill-alignment.js [topic] [--flagged]`, list each topic's
   AP reasoning skill beside what its Checkpoint 2 actually asks for, and flag the
   ones whose prompt contains none of that skill's language. **Deliberately not in
@@ -716,6 +731,59 @@ which earns another 429. That bug was written and then caught by the test.
 Rate limiting is a property of the host, so the backoff has to be too. Backing
 off one request while five others kept going is what turned one 429 into a
 cascade.
+
+## Module 07, the Evidence Lab
+
+The full standard is `docs/module-07-scaffolding-standard.md`. Three things about
+it belong here, because each one was learned by shipping the opposite.
+
+**A topic declares its evidence in exactly one place, `lesson.images`, and
+nothing overwrites it at load.** On 2026-09-05 Units 5 to 9 gained a second pool,
+`assets/data/module-07-evidence-unit-N.js`, plus a runtime that replaced
+`lesson.images` wholesale on every page load. Every one of the 85 authentic
+images across those units was still in its data file, shadowed, and nothing on
+the page or in any check could say which pool a student had read. That is the
+same failure as two coach prompt builders or an MP3 beside a chapter, and it is
+why `scripts/check-module07-authored.js` fails the push if a converted topic
+grows a second pool or its shell re-loads the runtime. Unit 7 is converted;
+Units 5, 6, 8 and 9 are not yet. **When the last one lands, delete
+`assets/js/module-07-evidence-runtime.js` and the remaining registries** rather
+than leaving a dormant override for someone to rediscover.
+
+**An author's summary is not evidence, however good the question attached to it
+is.** The module's sequence is *object -> observation -> inference -> claim*, and
+a card that reads "Triple Alliance: Germany, Austria-Hungary, Italy" has already
+done the observing. That card shipped on Topic 7.2 while the topic's own 1914
+alliance map sat shadowed in its data file. The authenticity gate in the standard
+is the rule; the automatic downgrade is that a summary standing in for an
+available object costs the A outright. When the evidence genuinely is text, a
+law, a treaty clause, a run of figures, the card declares `sourceText` and a
+`label` and `assets/js/behistorical-evidence-text-card.js` draws it as a plate.
+That module only fills in a card that asked to be filled in and never replaces an
+authored `url`.
+
+**Two checks and a report, and the split is the point.**
+`check-module07-authored.js` is in the offline suite and enforces only what is
+not a judgment call: on a converted unit, every card is a picture or declares
+`sourceText`. `node scripts/report-evidence-authenticity.js [unit] [--summaries]`
+sorts every card in the course into object, record and summary and is
+**deliberately not in any suite, exiting 0 always**, the same as
+`report-absolutes.js`: its classifier is a proxy, whether a card is really a
+historical object is a teaching judgment, and a gate over it would only teach
+people to bolt a numeral onto a summary until the report went quiet. Six Unit 7
+cards are flagged today and were deliberately left alone; the reasons are in
+`docs/module-07-unit-7-conversion.md`.
+
+**`evidenceLab.items` is not rendered by anything.** Units 3 and 4, twelve
+topics, carry an items bank and no `images` array, so their Evidence Lab draws
+its task and zero evidence cards. The report is what surfaced that.
+
+**Verify the pictures resolve before certifying a batch.** `validate.js` only
+knows whether a filename is well formed. Topic 1.5 was graded A at 11:30 on
+2026-09-05 with two dead Commons links in its pool and was fixed at 13:28 and
+14:06 the same day. Run `check-image-urls.js` from a network that can reach
+commons.wikimedia.org; an authentic image that 404s is worse than a text card,
+because the student gets fallback artwork and no evidence at all.
 
 ## Image Contract
 

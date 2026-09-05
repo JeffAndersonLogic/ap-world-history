@@ -36,7 +36,8 @@ const W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 const SUITES = {
   offline: [
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
-    ['scripts/check-module07-units5-7.js', 'Units 5-7 Module 07 evidence pools and live shell wiring'],
+    ['scripts/check-module07-units5-6.js', 'Units 5-6 Module 07 evidence pools and live shell wiring'],
+    ['scripts/check-module07-authored.js', 'Units converted to one authored Module 07 evidence pool'],
     ['scripts/check-module07-units8-9.js', 'Units 8-9 Module 07 evidence pools and live shell wiring'],
     ['scripts/test/canvas-paragraphs.test.js', 'Canvas blank-line round trip'],
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],

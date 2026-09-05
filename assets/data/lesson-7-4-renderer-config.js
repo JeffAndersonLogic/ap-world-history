@@ -119,4 +119,68 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: "Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.",
+    prompt: 'Compare government responses to interwar economic crisis. Use evidence from at least two political systems and explain what the responses reveal about changing expectations of the state.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Crowd outside the New York Stock Exchange, October 1929',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Crowd_outside_nyse.jpg',
+      caption: 'Photograph taken on Wall Street during the October 1929 crash.',
+      prompt: 'NOTICE who has gathered and what they appear to be doing. INFER what the crowd suggests about confidence in financial institutions. Why is a crash photograph weak evidence for the causes of a decade-long depression?'
+    },
+    {
+      title: 'Migrant Mother, 1936',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lange-MigrantMother02.jpg',
+      caption: 'Dorothea Lange, 1936, photographed for the US Farm Security Administration, a federal agency documenting rural poverty to build support for relief programs.',
+      prompt: 'NOTICE the composition and where the photographer stood. INFER what a government agency wanted this image to accomplish. How does knowing the commissioner change what the photograph is good evidence for?'
+    },
+    {
+      title: 'Signing of the Social Security Act, 1935',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Signing_Of_The_Social_Security_Act.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Signing_Of_The_Social_Security_Act.jpg',
+      caption: 'Photograph of President Roosevelt signing the Social Security Act, 14 August 1935, surrounded by legislators.',
+      prompt: 'NOTICE who is arranged around the desk and how the moment is staged. INFER what the ceremony was meant to communicate about the state\'s new role. What does the signing of a law not tell you about whom it actually reached?'
+    },
+    {
+      title: 'German hyperinflation',
+      label: 'Quantitative record · Germany, 1923',
+      sourceText: [
+        'In January 1923 the mark traded near 18,000 to the US dollar.',
+        'By November 1923 it had fallen to roughly 4.2 trillion to the dollar.',
+        'Savings, pensions and fixed incomes lost their value.'
+      ],
+      caption: 'Exchange-rate figures across a single year, the standard rounded values used by historians.',
+      prompt: 'What political argument could this economic evidence support? What should you avoid reading backward into 1923 from what happened in Germany ten years later?'
+    },
+    {
+      title: 'US unemployment',
+      label: 'Quantitative record · United States, 1933',
+      sourceText: [
+        'Unemployment reached roughly one quarter of the labor force in 1933.',
+        'Thousands of banks had failed in the preceding three years.'
+      ],
+      caption: 'The scale of the American crisis at its deepest point, stated as a share of the workforce.',
+      prompt: 'How strong is this as evidence that expanded government intervention was necessary? Which of the other cards must be paired with it before that argument holds?'
+    },
+    {
+      title: 'Soviet Five-Year Plans',
+      label: 'State-planning record · first plan, 1928 to 1932',
+      sourceText: [
+        'Investment was directed by the state toward heavy industry.',
+        'Output targets were set centrally and enforced through the party.',
+        'Agriculture was collectivized, at severe human cost.'
+      ],
+      caption: 'The Soviet response to industrial backwardness, run through central planning rather than markets.',
+      prompt: 'How does this response differ in goals and political structure from the New Deal evidence above? Build the comparison without treating all state economic action as the same thing.'
+    }
+  ];
+
 })();

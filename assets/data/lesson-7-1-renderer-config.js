@@ -117,4 +117,67 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  // One authored pool. Real objects first; a text plate only where the evidence
+  // itself is a treaty or a state record with no picture to show.
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: "Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.",
+    prompt: 'Build a defensible claim about shifting state power after 1900. Use at least two cards from different regions, explain whether they show imperial decline, revolutionary state-building, or the rise of a new power, and qualify the claim with one limitation.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Empires and colonies of the world, 1898',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png',
+      caption: 'Reference map of imperial holdings at the turn of the twentieth century. A modern reconstruction from historical borders, not a map drawn in 1898.',
+      prompt: 'NOTICE which powers hold territory on more than one continent. INFER what that distribution implies about where power sat in 1900. What claim can this map anchor, and what can a snapshot of one year not show about direction of change?'
+    },
+    {
+      title: 'The Boxer Rebellion',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Boxer_Rebellion.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Boxer_Rebellion.jpg',
+      caption: 'Contemporary image of the Boxer Uprising, 1899 to 1901, an anti-foreign movement in Qing China that an eight-nation force put down.',
+      prompt: 'NOTICE who is depicted acting and who is depicted as the target. INFER what the uprising and its defeat each suggest about Qing authority. Which of the two, the uprising or the defeat, better supports a claim about imperial decline?'
+    },
+    {
+      title: 'Demonstrators on Nevsky Prospekt, Petrograd, 1917',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',
+      caption: 'Photograph taken on Nevsky Prospekt in Petrograd, July 1917, as crowds scatter under fire between the February and October revolutions.',
+      prompt: 'NOTICE what the crowd is doing and what the street looks like. INFER what this suggests about who controlled public order in mid-1917. What does a single street photograph not tell you about why the Provisional Government fell?'
+    },
+    {
+      title: 'Emiliano Zapata, 1914',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emiliano_Zapata,_1914.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Emiliano_Zapata,_1914.jpg',
+      caption: 'Studio photograph of Emiliano Zapata during the Mexican Revolution. A posed self-presentation, chosen by its subject, rather than a candid record.',
+      prompt: 'NOTICE how Zapata has chosen to be dressed and equipped. INFER what audience that self-presentation is aimed at and what claim to authority it makes. Why does a posed portrait carry weaker evidence about land reform than about leadership?'
+    },
+    {
+      title: 'Treaty of Portsmouth',
+      label: 'Treaty record · signed 5 September 1905',
+      sourceText: [
+        'Japan defeated Russia in the war of 1904 to 1905.',
+        'Russia ceded southern Sakhalin and transferred its Liaodong lease',
+        'and South Manchuria railway rights to Japan.'
+      ],
+      caption: 'Terms of the treaty ending the Russo-Japanese War, mediated by the United States at Portsmouth, New Hampshire.',
+      prompt: 'Use or reject this card for a claim that the global balance of power was shifting away from Europe. What does one war, settled by treaty, not establish about the decades after it?'
+    },
+    {
+      title: 'The Qing abdication',
+      label: 'State record · abdication edict, 12 February 1912',
+      sourceText: [
+        'The Wuchang uprising of October 1911 spread across the provinces.',
+        'The Qing court abdicated and handed authority to Yuan Shikai',
+        'to organize a provisional republican government.'
+      ],
+      caption: 'The record of how imperial rule in China ended: not by conquest from outside, but by abdication and transfer to a general.',
+      prompt: 'How does this record both support and complicate a claim about successful revolutionary state-building? Which later evidence would you need before calling 1912 a completed revolution?'
+    }
+  ];
+
 })();

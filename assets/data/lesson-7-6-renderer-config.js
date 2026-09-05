@@ -112,4 +112,73 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: "Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.",
+    prompt: 'Evaluate the causes of World War II. Use at least two cards from different causal levels, background conditions, expansion, diplomatic failure, or immediate trigger, and rank their significance.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Treaty of Versailles, English version',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Treaty_of_Versailles,_English_version.jpg',
+      caption: 'The 1919 treaty document itself, in its English printing.',
+      prompt: 'NOTICE that this is a bound legal instrument rather than a proclamation. INFER what kind of obligations a document of this form creates and how they might be resisted. How far back can a cause of the 1939 war reasonably be pushed, and what does that risk?'
+    },
+    {
+      title: 'Flag of Manchukuo',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Manchukuo.svg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Flag_of_Manchukuo.svg',
+      caption: 'The flag of the state Japan established in occupied Manchuria in 1932. Its colors were presented as the harmony of five peoples under one rule.',
+      prompt: 'NOTICE that an occupying power designed a flag rather than announcing annexation. INFER why conquest was dressed as a new state. What does this artifact reveal about the limits of international condemnation?'
+    },
+    {
+      title: 'Japan occupies Manchuria',
+      label: 'Expansion record · from September 1931',
+      sourceText: [
+        'Japanese forces seized Manchuria after an explosion on a railway',
+        'they controlled, and established Manchukuo in 1932.',
+        'The League condemned the action; Japan withdrew from the League in 1933.'
+      ],
+      caption: 'The first major seizure of territory by a League member against another member state.',
+      prompt: 'Is this stronger evidence for aggression or for the weakness of international institutions? Commit to one and defend it against the other reading.'
+    },
+    {
+      title: 'Italy invades Ethiopia',
+      label: 'Expansion record · October 1935',
+      sourceText: [
+        'Fascist Italy invaded Ethiopia, a fellow League member.',
+        'The League imposed limited sanctions that excluded oil.',
+        'Italy completed the conquest in 1936.'
+      ],
+      caption: 'The second test of collective security, four years after the first.',
+      prompt: 'How does this corroborate the Manchuria evidence? Name the pattern that becomes defensible with both cards that neither supports alone.'
+    },
+    {
+      title: 'The Munich Agreement',
+      label: 'Diplomatic record · 30 September 1938',
+      sourceText: [
+        'Britain and France accepted German annexation of the Sudetenland.',
+        'Czechoslovakia was not a party to the agreement.',
+        'Germany occupied the remainder of Czechoslovakia in March 1939.'
+      ],
+      caption: 'The agreement, and what happened to it within six months.',
+      prompt: 'How do you use this evidence without reducing the war\'s cause to appeasement? Which deeper condition would you pair it with to keep the explanation honest?'
+    },
+    {
+      title: 'The Nazi-Soviet Pact and Poland',
+      label: 'Diplomatic and trigger record · August to September 1939',
+      sourceText: [
+        '23 August 1939: Germany and the USSR sign a nonaggression pact',
+        'with secret protocols dividing eastern Europe.',
+        '1 September 1939: Germany invades Poland. Britain and France declare war.'
+      ],
+      caption: 'The removal of the last obstacle to invasion, and the invasion, nine days apart.',
+      prompt: 'What does this explain about timing that the background cards cannot? Which long-term cause is still necessary for a full explanation, and why?'
+    }
+  ];
+
 })();

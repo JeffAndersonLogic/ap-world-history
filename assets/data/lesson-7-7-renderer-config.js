@@ -130,4 +130,68 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  // Authenticity note: this pool carries one photograph and four records. See
+  // docs/module-07-unit-7-conversion.md, "Where the pool is still thin".
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: "Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.",
+    prompt: 'Develop a claim about how World War II was fought as a global and total war. Use evidence from at least two theaters or forms of mobilization, and explain one continuity with World War I and one escalation beyond it.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Atomic bombing of Nagasaki, 1945',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nagasakibomb.jpg',
+      caption: 'Photograph of the mushroom cloud over Nagasaki, 9 August 1945, taken from an accompanying aircraft.',
+      prompt: 'NOTICE where the photographer is and what is therefore not visible. INFER how the vantage point shapes what this image records and what it hides. Which claims about the bomb can a photograph taken from the air support, and which require other evidence entirely?'
+    },
+    {
+      title: 'Blitzkrieg in Poland',
+      label: 'Operational record · September 1939',
+      sourceText: [
+        'German forces coordinated armor, aircraft and mobile infantry.',
+        'Poland was overrun in roughly five weeks.',
+        'Soviet forces entered from the east on 17 September.'
+      ],
+      caption: 'The opening campaign, and the speed at which it ended.',
+      prompt: 'What changed from the trench stalemate of 1916? What continuity in industrial military power sits underneath the change?'
+    },
+    {
+      title: 'Soviet wartime mobilization',
+      label: 'Economic and military record · 1941 to 1945',
+      sourceText: [
+        'More than 1,500 factories were relocated east of the Urals in 1941 to 1942.',
+        'Production was reorganized around weapons output.',
+        'Women entered industrial and agricultural labor in large numbers.'
+      ],
+      caption: 'How a state that lost its western industrial region in months went on to out-produce the invader.',
+      prompt: 'How does this show that battlefield outcomes depended on production systems? Which other card corroborates a total-war claim, and which one complicates it?'
+    },
+    {
+      title: 'Strategic bombing',
+      label: 'Military and civilian record · Europe and Asia, 1940 to 1945',
+      sourceText: [
+        'Air forces targeted industrial systems, transport and cities.',
+        'Raids on Hamburg, Dresden and Tokyo each killed tens of thousands of civilians.',
+        'Both alliances practiced it.'
+      ],
+      caption: 'The deliberate extension of the battlefield to civilian populations, by every major belligerent.',
+      prompt: 'How does this complicate a claim that the war was fought between armies? What evidence would you need to evaluate whether it worked?'
+    },
+    {
+      title: 'The atomic bombings',
+      label: 'Event record · Hiroshima and Nagasaki, August 1945',
+      sourceText: [
+        '6 August: Hiroshima. 9 August: Nagasaki.',
+        '8 August: the USSR declares war on Japan and invades Manchuria.',
+        '15 August: Japan announces surrender.'
+      ],
+      caption: 'The nine days at the end of the war, in order, including the Soviet entry that fell between the two bombs.',
+      prompt: 'How can this chronology support a claim about technological escalation without collapsing into a single-cause explanation for the surrender? What does the order of the dates make harder to argue?'
+    }
+  ];
+
 })();

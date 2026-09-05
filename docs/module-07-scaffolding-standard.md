@@ -26,6 +26,69 @@ Score each category 0-2. An A-grade Evidence Lab scores at least **12/14 with no
 6. **Scaffolding** — The task makes the reasoning sequence visible at the appropriate point in the course.
 7. **Module distinctiveness** — Module 07 does evidence work that is meaningfully different from Checkpoint 1 and Primary Source.
 
+## The authenticity gate
+
+**This gate is applied before the rubric is scored, and it can veto an A on its
+own.** Added 2026-09-05, after the Units 5-9 pass produced 44 labs whose reasoning
+tasks were excellent and whose evidence was not evidence.
+
+> An Evidence Lab cannot receive an A unless a substantial majority of what
+> students analyze is authentic historical evidence, or a meaningful reproduction
+> of it.
+
+Authentic evidence includes: photographs, political cartoons, maps, paintings,
+posters, advertisements, artifacts, architecture, laws, treaties and treaty
+clauses, speeches, letters, diaries, newspaper excerpts, tables and statistics,
+government and administrative records, contemporary diagrams, and clearly
+identified secondary quantitative or geographic reconstructions.
+
+An author-written historical summary may still appear. It belongs as **context
+for** evidence, not **as** the evidence.
+
+**The automatic downgrade:** if an author-written summary stands in for a
+historical object that was available, and performs the observation the student
+was supposed to make, the lab cannot earn an A regardless of how sophisticated
+the question underneath it is.
+
+The case that produced this rule is Topic 7.2. The lab asked a genuinely good
+question, "does this evidence explain why a crisis spread, why a crisis began, or
+both?", about a card whose entire body read:
+
+> Triple Alliance: Germany, Austria-Hungary, Italy
+> Triple Entente: France, Russia, Britain
+
+That is useful instructional information and it is not an object. There is
+nothing in it for a student to notice, because the noticing has already been
+done. Meanwhile the topic's own 1914 alliance map, its Punch cartoon of Rhodes,
+and a contemporary illustration of the Sarajevo assassination were sitting in its
+data file, shadowed at load by the registry runtime.
+
+**Why the reasoning task cannot buy back the missing object.** The sequence this
+module owns is *evidence object -> observation -> inference -> claim*. Handing a
+student the observation and keeping the inference is not a harder task, it is a
+shorter one, and it is the half the other nine modules already do.
+
+### The machine half, and its limit
+
+`node scripts/report-evidence-authenticity.js [unit] [--summaries]` sorts every
+card in the course into **object** (a real picture), **record** (no picture, but
+the words carry a quotation or figures) and **summary** (neither). It is
+**deliberately not in any suite and exits 0 always**, the same as
+`report-absolutes.js` and `report-skill-alignment.js`.
+
+The classifier is a proxy: a URL, a quotation mark, a numeral. Whether a card is
+really a historical object is a judgment about teaching, and a gate that failed a
+push over it would teach exactly one behavior, which is bolting a numeral onto a
+summary until the report goes quiet. **Read a flag as a question**, not a verdict:
+*is there a real object available for this card that we are not using?* On Topic
+7.8 the answer is no, and its documentary pool of laws and administrative records
+is correct. On Topic 7.2 the answer was yes.
+
+`scripts/check-module07-authored.js` **is** in the offline suite, and it enforces
+only the part that is not a judgment call: on a converted unit, every card is
+either a picture or declares `sourceText`. A card that is neither is an author's
+summary with nothing to observe, and it fails the push.
+
 ## Evidence-card writing rules
 
 Each card should contain:
@@ -80,6 +143,22 @@ When an image or map is modern, reconstructed, or later than the period, label i
 
 The current Unit-topic renderer builds Module 07 cards from `lesson.images`. The `evidenceLab.items` arrays that exist in several older topic data files are not, by themselves, rendered as Evidence Lab cards.
 
-Therefore, an Evidence Lab is not complete merely because `evidenceLab.items` contains rich prose. The active combined lesson object must provide a usable `images` array with evidence-card prompts. Renderer configs may amend/replace `lesson.images` when the base data does not yet meet this standard.
+Therefore, an Evidence Lab is not complete merely because `evidenceLab.items` contains rich prose. **Do not assume an item bank visible in the data file is visible to students.** Units 3 and 4 are the live case: twelve topics carry `evidenceLab.items` and no `images` array at all, so their Evidence Lab renders its task and zero evidence cards.
 
-This contract should be preserved or deliberately migrated in a future shared-renderer refactor; do not assume an item bank visible in the data file is visible to students.
+### One authored pool per topic
+
+**A topic declares its evidence in exactly one place: `lesson.images`, in its renderer config** (or its data file, for topics that have always kept it there). Nothing may overwrite that at load.
+
+This is a rule because it was broken. The Units 5-9 pass shipped a second pool, `assets/data/module-07-evidence-unit-N.js`, and a runtime that replaced `lesson.images` wholesale on every page load. Two pools with one silently winning is the failure this repository refuses everywhere else, the same shape as two coach prompt builders or an MP3 beside a chapter: a teacher editing a caption in the data file would have seen no change on the page and no failing check.
+
+Units converted to the single-pool shape are listed in `CONVERTED` in `scripts/check-module07-authored.js`, which fails the push if a converted topic grows a second pool or a shell re-loads the runtime. **When the last unit is converted, delete `assets/js/module-07-evidence-runtime.js` and the remaining `module-07-evidence-unit-*.js` registries** rather than leaving a dormant override layer for someone to rediscover.
+
+### Text evidence
+
+When the evidence genuinely is text, a law, a treaty clause, a run of figures, a card declares `sourceText` (an array of lines) and a `label` naming the kind of record, and leaves `url` empty. `assets/js/behistorical-evidence-text-card.js` draws those words as a branded plate. It only ever fills in a card that asked to be filled in, and never replaces an authored `url`.
+
+A text plate is for evidence that has no picture. It is **not** a way to render a summary and call it an object; see the authenticity gate above.
+
+### Verify that the pictures resolve
+
+`validate.js` checks offline that an image filename is well formed. It cannot tell you whether the file exists. **Run `node scripts/check-image-urls.js` from a network that can reach commons.wikimedia.org before certifying any Evidence Lab batch.** Topic 1.5 was graded 13/14 A at 11:30 on 2026-09-05 with two dead Commons links in its pool, fixed at 13:28 and 14:06 the same day. An authentic image that 404s is worse than a text card: the student gets fallback artwork and no evidence at all.

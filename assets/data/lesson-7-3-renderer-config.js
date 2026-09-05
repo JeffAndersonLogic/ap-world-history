@@ -114,4 +114,65 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: "Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.",
+    prompt: 'Develop a claim about how World War I became a total war. Use at least two cards from different categories, military, political, economic, or imperial, and explain how they corroborate or complicate one another.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Lord Kitchener recruitment poster',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kitchener-Britons.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Kitchener-Britons.jpg',
+      caption: '\'Britons: Lord Kitchener Wants You\' (1914), a British recruitment poster produced before conscription began.',
+      prompt: 'NOTICE the direction of the gaze and the wording of the demand. INFER what the state assumed would move a volunteer. Which mobilization strategy from KC-6.2.IV.A.i does this document, and what does a poster not prove about how many enlisted?'
+    },
+    {
+      title: 'British trench on the Somme, 1916',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Cheshire_Regiment_trench_Somme_1916.jpg',
+      caption: 'Photograph of men of the Cheshire Regiment in a trench on the Somme, 1916. Official photography, taken with army permission.',
+      prompt: 'NOTICE the construction of the position and the posture of the men. INFER what this tells you about how the front had settled. What did official permission make more likely to be photographed, and less likely?'
+    },
+    {
+      title: 'Indian bicycle troops on the Somme, 1916',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg',
+      caption: 'Indian troops at a crossroads on the Somme, 1916. More than a million soldiers from British India served overseas during the war.',
+      prompt: 'NOTICE who is in the frame and where they are. INFER what colonial manpower did for European belligerents. How does this support the claim that governments mobilized populations in the home countries and the colonies, and what would you need to argue about consequences for the colonies?'
+    },
+    {
+      title: 'Gassed, by John Singer Sargent',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg',
+      caption: 'Painted in 1919 on a British government commission, after the war ended. Later memory of the conflict rather than a record made during it.',
+      prompt: 'NOTICE how the figures move and what the background shows. INFER what the commissioning government was willing to have represented. This is both state-commissioned art and a record of chemical weapons: which claim does each of those facts support?'
+    },
+    {
+      title: 'The Somme in numbers',
+      label: 'Quantitative battle record · 1 July to 18 November 1916',
+      sourceText: [
+        'The Battle of the Somme produced over one million combined casualties.',
+        'Roughly 57,000 British casualties fell on the first day alone.',
+        'The front moved by about six miles over four and a half months.'
+      ],
+      caption: 'Casualty and ground figures for a single battle, the standard rounded counts used by historians.',
+      prompt: 'What claim about industrialized warfare do these three figures together support that any one of them alone does not? What does casualty scale not reveal about strategy or about the experience of the men in it?'
+    },
+    {
+      title: 'Defence of the Realm Act',
+      label: 'Legal record · Britain, passed 8 August 1914',
+      sourceText: [
+        'Passed four days after Britain entered the war.',
+        'Gave the government powers to censor publications, requisition',
+        'land and factories, and control labor and alcohol.'
+      ],
+      caption: 'A statute, in force for the duration of the war, extending state power over civilian life.',
+      prompt: 'How does this card move the argument beyond battlefield technology? Note that it is one state\'s law: what limit should you attach when generalizing from Britain to total war everywhere?'
+    }
+  ];
+
 })();

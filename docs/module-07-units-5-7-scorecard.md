@@ -1,5 +1,10 @@
 # Module 07 Units 5–7 Scorecard
 
+> **Revision, 2026-09-05 (same day).** Unit 7's 9/9 is withdrawn; see the revision
+> note in `docs/module-07-units-5-7-audit.md` and the conversion record in
+> `docs/module-07-unit-7-conversion.md`. Units 5 and 6 are provisional pending the
+> same conversion.
+
 A-grade threshold: 12/14 or higher, with no zero in any rubric category.
 
 | Unit | Topics audited | A-grade topics |

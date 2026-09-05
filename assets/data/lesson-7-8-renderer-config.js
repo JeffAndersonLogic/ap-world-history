@@ -181,4 +181,74 @@
     { id: 'checkpoint2', label: 'Module 10', title: 'Checkpoint 2', desc: (lesson.checkpoints && lesson.checkpoints[1] && lesson.checkpoints[1].cardDesc) || 'Final checkpoint.', img: lesson.map.url, render: function() { return renderCheckpoint(lesson.checkpoints[1], 'checkpoint-two-response'); } }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  // Authenticity note: this pool is entirely documentary. Laws, state orders and
+  // administrative records ARE the evidence for how atrocity was organized, and
+  // no photograph is required to make it authentic. Photographs of atrocity are
+  // deliberately not used here. See docs/module-07-unit-7-conversion.md.
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: "Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.",
+    prompt: 'Explain one mechanism by which states or political movements produced mass atrocities after 1900. Corroborate across two cases, or compare two mechanisms, and identify one limitation in the surviving evidence.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Armenian deportations',
+      label: 'State-order record · Ottoman Empire, from April 1915',
+      sourceText: [
+        'The Tehcir Law of May 1915 authorized deportation of Armenian civilians.',
+        'Columns were marched toward the Syrian desert.',
+        'Killing, starvation and exposure produced mass death along the routes.'
+      ],
+      caption: 'A wartime deportation carried out under a law, by a state, against its own subjects.',
+      prompt: 'Which mechanism is most visible here: classification, removal, wartime emergency, or organized violence? What kind of evidence would be needed to establish intent rather than consequence?'
+    },
+    {
+      title: 'The Nuremberg Laws',
+      label: 'Legal record · Nazi Germany, September 1935',
+      sourceText: [
+        'Citizenship was redefined by descent, stripping German Jews of it.',
+        'Marriage and relations between Jews and other Germans were prohibited.',
+        'Persecution was written into law six years before mass killing began.'
+      ],
+      caption: 'Exclusion enacted through ordinary legislative machinery, published and enforceable.',
+      prompt: 'How can legal exclusion function as a stage in a longer process? What does this law, on its own, not prove about the killing policy that came later?'
+    },
+    {
+      title: 'The Wannsee Conference',
+      label: 'Administrative record · Berlin, 20 January 1942',
+      sourceText: [
+        'Senior officials met to coordinate the deportation of European Jews.',
+        'The surviving minutes assign roles to ministries and agencies.',
+        'Killing had already been under way in the east for months.'
+      ],
+      caption: 'A set of meeting minutes: the paperwork of coordination between government departments.',
+      prompt: 'How does bureaucratic coordination change the explanatory claim you can make about responsibility? What earlier evidence is required to show the process did not begin in this room?'
+    },
+    {
+      title: 'Cambodia under the Khmer Rouge',
+      label: 'Demographic and political record · 1975 to 1979',
+      sourceText: [
+        'Cities were emptied and populations forced into rural labor.',
+        'Perceived political, ethnic and educated classes were targeted.',
+        'Roughly 1.5 to 2 million people died, out of a population near 8 million.'
+      ],
+      caption: 'Mass death produced by forced relocation, labor, imprisonment and execution, stated as a share of the population.',
+      prompt: 'Which mechanism here resembles an earlier case and which differs? Build the comparison without treating every genocide as the same event with different names.'
+    },
+    {
+      title: 'Rwanda',
+      label: 'Demographic and political record · April to July 1994',
+      sourceText: [
+        'Organized killing targeted Tutsi civilians and moderate Hutu.',
+        'Roughly 800,000 people were killed in about one hundred days.',
+        'State radio broadcast identification and incitement.'
+      ],
+      caption: 'The speed of the killing, and the role of a state broadcaster in directing it.',
+      prompt: 'What does the speed suggest about organization before April 1994? What evidence would you need about local participation versus state direction before making that claim?'
+    }
+  ];
+
 })();

@@ -4,7 +4,11 @@ const path = require('path');
 const vm = require('vm');
 
 const root = path.resolve(__dirname, '..');
-const units = { 5: 10, 6: 8, 7: 9 };
+// Unit 7 is not here any more: it was converted to one authored evidence pool
+// per topic and is covered by scripts/check-module07-authored.js. Units 5, 6, 8
+// and 9 still run the registry-plus-runtime path and keep this contract until
+// they are converted too.
+const units = { 5: 10, 6: 8 };
 let failures = 0;
 
 function fail(message) {
@@ -49,4 +53,4 @@ for (const [unitText, count] of Object.entries(units)) {
 }
 
 if (failures) process.exit(1);
-console.log('Module 07 Units 5-7 contract: 27/27 topics have substantive evidence pools and live shell wiring.');
+console.log('Module 07 Units 5-6 contract: 18/18 topics have substantive evidence pools and live shell wiring.');
