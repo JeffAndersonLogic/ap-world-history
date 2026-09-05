@@ -112,4 +112,55 @@
       "illustrativeExamples": []
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Comparing Land Empires with Matched Evidence',
+    task: 'Choose TWO cards from different empires and compare the SAME category. Cards are labeled as geographic scale, court/elite organization, or ruler representation. Do not compare an empire\'s territorial map with another empire\'s portrait unless your claim explicitly explains why those different source types answer the same question. Use observation, inference, and source limits before writing the comparison.',
+    prompt: 'Using two evidence cards from different land-based empires, make one comparison claim about imperial scale, elite organization, or political legitimacy. Cite one concrete detail from each source, explain the similarity OR difference, and explain one historical reason the pattern existed.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Ottoman Expansion — Geographic Scale',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
+      caption: 'Ottoman / geographic scale. A secondary reconstruction shows the Ottoman state expanding from Anatolia across the Balkans, Southwest Asia, and North Africa.',
+      prompt: 'NOTICE the empire\'s multi-regional reach. What governance or military problems would that scale create? Compare with another geographic-scale card and explain one meaningful similarity or difference.'
+    },
+    {
+      title: 'Safavid Empire, c. 1630 — Geographic Scale',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_the_Safavid_Empire,_circa_1630.png',
+      caption: 'Safavid / geographic scale. A secondary map locates a Persian-centered empire between Ottoman, Mughal, and Central Asian rivals.',
+      prompt: 'NOTICE the Safavid frontier position. What can you INFER about external rivalry and the political value of a distinct Shia identity? What does a map alone not prove about internal religious policy?'
+    },
+    {
+      title: 'Court of Akbar — Elite Organization',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg',
+      caption: 'Mughal / court and elite organization. A Mughal court painting depicts Akbar at the center of an imperial elite drawn from varied backgrounds.',
+      prompt: 'NOTICE the visual hierarchy and composition of the court. What can you INFER about incorporating elites around the emperor? Compare with a ruler-representation or court card only if your category is legitimacy or elite organization.'
+    },
+    {
+      title: 'Qianlong Emperor — Ruler Representation',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg',
+      caption: 'Qing / ruler representation. An imperial portrait presents a Manchu emperor ruling a vast multiethnic state while drawing on Chinese traditions of emperorship.',
+      prompt: 'NOTICE clothing, pose, and visual conventions. What can you INFER about Qing legitimacy and adaptation? Compare with another ruler-representation card and explain how political context shaped the image.'
+    },
+    {
+      title: 'Peter the Great — Ruler Representation',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Peter_the_Great%2C_Tsar_of_Russia.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Peter_the_Great,_Tsar_of_Russia.jpg',
+      caption: 'Russia / ruler representation. An early-18th-century portrait by Gustav von Mardefeld presents Peter I in the visual language of European monarchy.',
+      prompt: 'NOTICE clothing, posture, and symbols of rank. What can you INFER about Peter\'s presentation of Russian imperial authority? Compare with the Qianlong card on how rulers used visual culture to legitimize very different empires.'
+    },
+    {
+      title: 'Mughal Empire, c. 1700 — Geographic Scale',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png',
+      caption: 'Mughal / geographic scale. A secondary reconstruction shows the Mughal Empire near its territorial height across much of the Indian subcontinent.',
+      prompt: 'NOTICE the size and internal geographic diversity. What can you INFER about why rulers needed ranked officials, revenue systems, and accommodation of local elites? Compare with another geographic-scale card.'
+    }
+  ];
 })();
