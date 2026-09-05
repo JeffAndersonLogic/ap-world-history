@@ -105,4 +105,48 @@
       focus: ['Name at least two land-based empires and describe specific regions they conquered.', 'Explain at least two reasons why the 1453 conquest of Constantinople mattered.', 'Connect the fall of Constantinople to broader changes in Eurasian trade or politics.']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Gunpowder, Conquest, and Imperial Scale',
+    task: 'Choose TWO evidence cards that address the same question: how did early modern land empires gain or hold territory? Start with what the source directly shows, then infer what it suggests about military technology, geographic expansion, or imperial power. A map or portrait can show scale or political memory, but it cannot prove a causal mechanism by itself.',
+    prompt: 'Using two evidence cards, make one claim about how land-based empires expanded after c. 1450. Cite one concrete detail from each source, explain how the evidence supports your claim, and identify one limitation in either source.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Dardanelles Gun, Ottoman Empire, 1464',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Turkish_Bombard_at_Fort_Nelson.JPG',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Turkish_Bombard_at_Fort_Nelson.JPG',
+      caption: 'Material military evidence. This surviving Ottoman bronze bombard was cast in 1464, shortly after the conquest of Constantinople, and represents the heavy siege-artillery tradition used by Ottoman rulers.',
+      prompt: 'NOTICE the gun\'s physical scale and construction. What can you INFER about the resources, specialists, and logistics required to deploy artillery like this? What can the surviving weapon not prove about the exact siege of 1453?'
+    },
+    {
+      title: 'First Battle of Panipat, 1526, Baburnama Illustration',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/1526-First_Battle_of_Panipat-Ibrahim_Lodhi_and_Babur.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:1526-First_Battle_of_Panipat-Ibrahim_Lodhi_and_Babur.jpg',
+      caption: 'Later Mughal visual evidence. A late-16th-century Baburnama illustration commemorates Babur\'s 1526 victory at Panipat, where field artillery and firearms helped establish Mughal rule in northern India.',
+      prompt: 'NOTICE how troops, commanders, or weapons are represented. What can you INFER about how the Mughal court remembered military conquest? Why is a later court painting not a photograph of the 1526 battle?'
+    },
+    {
+      title: 'Ottoman Expansion, 1300–1923',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
+      caption: 'Secondary geographic reconstruction. The map visualizes the expansion of Ottoman territory from a small Anatolian principality into a multi-continental empire.',
+      prompt: 'NOTICE the direction and scale of expansion after 1453. What can you INFER about the political significance of controlling Constantinople and surrounding regions? What cannot a map prove about WHY each conquest succeeded?'
+    },
+    {
+      title: 'Mughal Empire, c. 1700',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png',
+      caption: 'Secondary geographic evidence. A reference map shows the territorial scale of the Mughal Empire near its greatest extent.',
+      prompt: 'NOTICE the geographic reach of Mughal rule. What can you INFER about the challenge of conquering and governing such a large territory? What additional evidence would you need to connect this scale specifically to gunpowder weapons?'
+    },
+    {
+      title: 'Safavid Empire, c. 1630',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_the_Safavid_Empire,_circa_1630.png',
+      caption: 'Secondary geographic evidence. A reference map locates the Safavid Empire between major Ottoman, Mughal, and Central Asian powers.',
+      prompt: 'NOTICE the Safavid state\'s position between rival empires. What can you INFER about why military technology and frontier defense mattered? What evidence would be needed to prove how religion affected those rivalries?'
+    }
+  ];
 })();
