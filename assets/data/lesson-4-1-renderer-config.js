@@ -95,4 +95,41 @@
       focus: ['Explain how the printing press changed the distribution of geographic knowledge.', 'Give one specific example of a cartographic innovation and explain its significance.', 'Explain the Portuguese model: how state sponsorship connected technology to systematic, cumulative exploration.']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Solving the Problems of Oceanic Navigation',
+    task: 'Choose TWO cards that solve different navigation problems: ship design, measuring position, charting coastlines, or organizing new geographic knowledge. Identify what each object directly shows, then infer what practical problem it helped solve. Do not treat a later model or map as direct eyewitness evidence without saying what kind of source it is.',
+    prompt: 'Using two evidence cards, make one claim about why sustained transoceanic voyaging became more feasible after c. 1450. Cite one concrete detail from each source, explain the mechanism each technology or knowledge tool addressed, and identify one source limitation.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Portuguese Caravela in the Livro das Armadas, c. 1566',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravela_de_armada_of_Joao_Serrao.jpg',
+      caption: 'Ship-design evidence. A 16th-century Portuguese illustration depicts a caravela de armada associated with the early Portuguese Indian Ocean voyages.',
+      prompt: 'NOTICE hull shape, sails, or rigging. What can you INFER about maneuverability and oceanic travel? What would you need engineering or voyage records to prove about actual performance at sea?'
+    },
+    {
+      title: 'European Astrolabe, 1500–1550',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MHS_52528_Astrolabe.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:MHS_52528_Astrolabe.jpg',
+      caption: 'Navigation-instrument evidence. A brass astrolabe dated to the first half of the 16th century, from a navigational tradition with deep Classical and Islamic roots.',
+      prompt: 'NOTICE the graduated circular design. What navigation problem could an instrument like this help solve? What does the object itself reveal about technological transfer, and what does it not tell you about who taught sailors to use it?'
+    },
+    {
+      title: 'Petrus Roselli Portolan Chart, 15th Century',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
+      caption: 'Cartographic baseline evidence. A 15th-century portolan chart represents detailed coastlines and sailing directions developed before and during the opening of Atlantic exploration.',
+      prompt: 'NOTICE coastline detail and navigation lines. What can you INFER about cumulative maritime knowledge before c. 1500? How does this support continuity as well as innovation in European navigation?'
+    },
+    {
+      title: 'Waldseemüller World Map, 1507',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg',
+      caption: 'Knowledge-infrastructure evidence. The 1507 Waldseemüller map incorporated information from recent Atlantic voyages into a printed representation of the world.',
+      prompt: 'NOTICE how newly encountered lands are represented alongside older geographic knowledge. What can you INFER about how exploration changed mapmaking? Why does a printed map show knowledge circulation better than it shows how accurate every voyage report was?'
+    }
+  ];
 })();
