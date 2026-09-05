@@ -9,7 +9,7 @@
     beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
     skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
     checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Zimbabwe_Bird.jpg',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Soapstone_birds_on_pedestals.jpg',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg',
     beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
     checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Mali_Empire.png'
@@ -42,11 +42,11 @@
       prompt: 'NOTICE one feature of scale or construction. What can you INFER about organized labor and political authority? What additional evidence would you need to connect the walls specifically to gold and Indian Ocean trade?'
     },
     {
-      title: 'Zimbabwe Bird',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Zimbabwe_Bird.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Zimbabwe_Bird.jpg',
-      caption: 'Material-culture evidence. Soapstone bird sculptures were found at Great Zimbabwe and are associated with the site\'s elite and ritual spaces.',
-      prompt: 'NOTICE what kind of object this is and where it was found. What can you cautiously INFER about elite identity or sacred authority? What can this artifact not prove about the state\'s economy by itself?'
+      title: 'Zimbabwe Birds',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Soapstone_birds_on_pedestals.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Soapstone_birds_on_pedestals.jpg',
+      caption: 'Material-culture evidence. This 1892 photograph documents soapstone bird sculptures from Great Zimbabwe, objects associated with the site\'s elite and ritual spaces.',
+      prompt: 'NOTICE what kind of objects these are and where they were found. What can you cautiously INFER about elite identity or sacred authority? What can these artifacts not prove about the state\'s economy by themselves?'
     },
     {
       title: 'Bete Giyorgis, Lalibela, Ethiopia',
