@@ -34,7 +34,8 @@ const SUITES = [
   ['scripts/build-deep-readings.js', 'deep readings vs scripts/lib/deep-reading-content/*'],
   ['scripts/build-ebook.js', 'eBook volumes vs the same chapter modules'],
   ['scripts/build-student-decks.js', 'student decks vs their teacher decks, notes stripped'],
-  ['scripts/build-run-of-show.js', 'Run of Show pacing pages vs each topic\'s runOfShow block']
+  ['scripts/build-run-of-show.js', 'Run of Show pacing pages vs each topic\'s runOfShow block'],
+  ['scripts/build-teacher-index.js', 'teacher command center vs its declared tools and Run of Show topics']
 ];
 
 let failed = 0;

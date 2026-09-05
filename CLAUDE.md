@@ -173,8 +173,10 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-skills-lens.js`, inline `scripts/lib/canvas-parse-core.js` and `scripts/lib/canvas-zip.js` into `teacher/skills-lens.html`. Run it after editing either lib. `--check` fails without writing, which is what `validate.js` runs. Never hand-edit between the `BEGIN INLINED LIBS` sentinels.
 - `node scripts/test/canvas-zip.test.js`, offline check of the browser zip reader against archives written by real tools, plus the parity assertion that a dropped zip and the CLI emit byte-identical `responses.csv`.
 - `node scripts/test/skills-lens-zip.test.js`, drop a real Canvas zip on the real Lens in Chromium and assert the panels populate, the CSP still blocks the network, and the saved CSV matches the CLI byte for byte.
+- `node scripts/build-run-of-show.js`, generate the Run of Show teacher-cockpit pacing page for each topic in its `TOPICS` list, plus `teacher/run-of-show-index.html`, the one stable URL linking every topic that has one. `--check` fails on drift without writing, wired into `scripts/test/readings-reproducible.test.js` in the offline suite. `validate.js` checks reachability both ways: a declared topic missing its `runOfShow` block or its generated page, and a generated page the index does not link. See "Run of Show" below.
+- `node scripts/build-teacher-index.js`, generate `teacher/index.html`, the teacher command center: one bookmark linking every teacher-only tool (Run of Show, Skills Lens), plus a Today panel that reads the schedule live in the browser and surfaces the Run of Show for whatever topic is being taught right now, when one exists. `--check` fails on drift without writing, in the offline suite. `validate.js` checks that the page links every declared tool and is not linked from a student page. See "Run of Show" below.
 
-The student entry point is `index.html`. The project inventory is `docs/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file. The Google Form and the old Teacher Hub are both retired; see `docs/FORM-CONTRACT.md` and `docs/TEACHER-HUB.md`. Student work reaches the teacher through Canvas only, and the Skills Lens is the analysis surface.
+The student entry point is `index.html`. The project inventory is `docs/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file. The Google Form and the old Teacher Hub are both retired; see `docs/FORM-CONTRACT.md` and `docs/TEACHER-HUB.md`. Student work reaches the teacher through Canvas only, and the Skills Lens and the teacher command center are the teacher-facing surfaces.
 
 ## The Content Model
 
@@ -897,6 +899,66 @@ slot, and nothing in the data maps a clip to a particular card.
   the real title demoted to a paragraph.
 - Each clip's `prompt` is the guiding question. It is what makes a clip usable as
   homework rather than filler, so never add a clip without one.
+
+## Run of Show
+
+A teacher-only "cockpit" view of a lesson's pacing, one per topic that has
+authored one: retrieval prompts, teacher moves, an AP Move line per slide, a
+per-phase class timer, a Must-Haves reference tab, and a pacing panel for a
+condensed or emergency-length class. Rendered by
+`scripts/lib/run-of-show-page.js` entirely from that topic's own `runOfShow`
+block in its lesson data file, the same reason a deep reading's content lives
+in its own module rather than in the renderer: a hand-typed pacing script that
+quoted checkpoint wording directly would be a second copy of lesson content.
+
+Validated by real classroom use on Topic 1.4 (2026-09-05), and now a permanent
+teacher tool, the same kind of surface as `teacher/skills-lens.html`: never
+linked from a lesson page, but covered by its own `validate.js` reachability
+check and wired into the offline suite. Coverage of the other topics is
+separate, ongoing content work, the same shape as the eBook's volumes: one
+topic's `runOfShow` block authored and added to `TOPICS` in
+`scripts/build-run-of-show.js` at a time, not all 71 at once.
+
+**The class timer persists per topic to `localStorage`.** A reload mid-class
+does not lose the Time Log. It never persists as "running": a reopened page
+always starts paused, so time spent with the tab closed is never silently
+counted. Because Green and Silver see the same topic in two different class
+periods on the same day (see "Green and Silver" below), the **New Class**
+button clears the saved state entirely, for switching cohorts rather than
+only recovering a lost tab.
+
+**`teacher/run-of-show-index.html` is the one stable URL**, the same reason
+`ebook/index.html` exists rather than making a teacher remember a filename
+per topic. Generated from the same `TOPICS` list the per-topic pages come
+from, grouped by unit, so it cannot list a topic that does not exist or miss
+one that does. Unlike the eBook's library, it carries no "not written yet"
+placeholder rows: the eBook commits to one chapter per topic in a volume, a
+fixed shape worth marking gaps in, and Run of Show makes no such commitment.
+
+**`teacher/index.html` is the teacher command center**, one bookmark linking
+every teacher-only tool (Run of Show, Skills Lens), built by
+`scripts/build-teacher-index.js` from a declared `TOOLS` list, the same
+editorial-list shape as `VOLUMES` in `build-ebook.js`. Its Today panel is a
+router, not a dashboard: it stores nothing of its own. At page load it reads
+`assets/data/announcements-schedule.js` live in the browser, finds the day
+matching the browser's local date, and if that topic has a Run of Show,
+surfaces a direct link to it; otherwise it says so plainly rather than
+guessing at a lesson-page URL it has no way to derive correctly. The cohort
+label shown there comes from `scripts/lib/cohorts.js`'s `COHORTS`, embedded at
+build time, because the raw schedule file (unlike the generated
+`announcements.js`) carries no label of its own, and a second schedule file
+loaded just for that would be a second place for the label to fall out of
+agreement with the one everything else reads.
+
+**Both generated pages get the same two-way reachability check deep readings
+and the eBook do.** `validate.js` confirms every topic `TOPICS` declares still
+has a `runOfShow` block and a generated page, that no `teacher/run-of-show-*`
+file on disk is missing from `TOPICS`, that the index links every declared
+topic, that the command center links every declared tool, and that none of
+it is linked from a student-facing page. `--check` on both builders is wired
+into `scripts/test/readings-reproducible.test.js` in the offline suite, so a
+hand-edit to any of the three generated files fails the push instead of being
+silently reverted by the next rebuild.
 
 ## Socrates, the AI Coach
 

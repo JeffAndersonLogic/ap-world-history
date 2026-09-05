@@ -1523,6 +1523,43 @@ section('Run of Show pacing tool');
   sectionDone(`${ROS_TOPICS ? ROS_TOPICS.length : 0} Run of Show topic(s) generated, indexed, and unlinked from student pages`);
 }
 
+// The teacher command center is the one bookmark linking every teacher-only
+// tool (Run of Show, Skills Lens), the same reachability guarantee as the
+// Run of Show index and the eBook library: a tool the page does not link is
+// as unreachable as if it did not exist, no matter how correctly it builds.
+section('Teacher command center');
+{
+  let TC_TOOLS = null;
+  try { ({ TOOLS: TC_TOOLS } = require('./build-teacher-index.js')); } catch (e) { TC_TOOLS = null; }
+  totalChecks++;
+  if (!TC_TOOLS) {
+    err(path.join(ROOT, 'scripts', 'build-teacher-index.js'), 'does not load or export TOOLS');
+  } else {
+    const indexPath = path.join(ROOT, 'teacher', 'index.html');
+    totalChecks++;
+    const src = read(indexPath);
+    if (!src) {
+      err(indexPath, 'Teacher command center missing, run: node scripts/build-teacher-index.js');
+    } else {
+      for (const tool of TC_TOOLS) {
+        totalChecks++;
+        if (!src.includes(tool.href)) {
+          err(indexPath, `does not link ${tool.label} (${tool.href})`);
+        }
+      }
+      // A teacher tool, never linked from anything a student opens.
+      for (const file of [...lessonShells, ...unitFirst10, ...fHtmlFiles]) {
+        const page = read(file);
+        totalChecks++;
+        if (page && page.includes('teacher/index.html')) {
+          err(file, 'links the teacher command center from a student-facing page');
+        }
+      }
+    }
+  }
+  sectionDone(`${TC_TOOLS ? TC_TOOLS.length : 0} teacher tool(s) linked from the command center, unlinked from student pages`);
+}
+
 //
 // The Lens reads a Canvas zip in the browser, using the identical parser the
 // command line uses. "Identical" is only true while the inlined copy matches
