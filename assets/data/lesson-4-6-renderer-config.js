@@ -98,4 +98,41 @@
       focus: ['Choose one specific example of European rivalry and explain it with specific evidence.', 'Explain how this rivalry tested the stability of the empire being challenged.', 'Connect to Topic 4.4: what weakness in the Portuguese, Spanish, or Dutch model did rival European powers exploit?']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Resistance, Refuge, and Imperial Vulnerability',
+    task: 'Choose TWO cards that represent different kinds of challenge: coordinated Indigenous revolt, autonomous maroon settlement, or European commercial rivalry. Decide whether each source is contemporary, later memory, or secondary reconstruction. Then infer what made resistance possible rather than treating resistance as an automatic response to oppression.',
+    prompt: 'Using two evidence cards, make one claim about the conditions that made resistance to imperial rule possible. Cite one concrete detail from each source, compare the strategies or vulnerabilities shown, and identify one source limitation that affects your conclusion.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Pueblo Revolt Mural, Installed 1936',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
+      caption: 'Later memory of Indigenous resistance. Loren Mozley\'s 1936 mural commemorates the 1680 Pueblo Revolt rather than documenting it directly.',
+      prompt: 'NOTICE which people and actions the mural emphasizes. What can you INFER about how the revolt was remembered in the 20th century? Why must you use other evidence to reconstruct the actual causes and events of 1680?'
+    },
+    {
+      title: 'Palmares on a Dutch Map of Pernambuco, 1647',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mapa_da_Capitania_de_Pernambuco%2C_com_representa%C3%A7%C3%A3o_do_Quilombo_dos_Palmares_%281647%29.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mapa_da_Capitania_de_Pernambuco,_com_representa%C3%A7%C3%A3o_do_Quilombo_dos_Palmares_(1647).jpg',
+      caption: 'Contemporary geographic evidence. A Dutch map of Pernambuco includes a representation of Palmares, the large maroon community that resisted colonial control in Brazil.',
+      prompt: 'NOTICE Palmares\'s location relative to colonial settlements and terrain. What can you INFER about how geography supported autonomy? What does a map made by colonial outsiders fail to reveal about life inside Palmares?'
+    },
+    {
+      title: 'Zumbi dos Palmares Memorial Statue',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Zumbi_dos_palmares.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Zumbi_dos_palmares.jpg',
+      caption: 'Modern public memory. A bronze monument in Salvador commemorates Zumbi, the late-17th-century leader associated with resistance at Palmares.',
+      prompt: 'NOTICE how Zumbi is presented as a public hero. What can this tell you about the long-term memory of maroon resistance? Why is a modern monument not evidence for Zumbi\'s physical appearance or the exact organization of Palmares?'
+    },
+    {
+      title: 'Dutch East India Company (VOC)',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Voc.jpg',
+      caption: 'External-rivalry evidence. The VOC represents the heavily capitalized joint-stock competitor that challenged Portuguese positions across the Indian Ocean.',
+      prompt: 'NOTICE the corporate identity and connection to long-distance trade. What can you INFER about why Portuguese chokepoints were vulnerable to a richer maritime rival? What financial or military records would you need to demonstrate that advantage directly?'
+    }
+  ];
 })();
