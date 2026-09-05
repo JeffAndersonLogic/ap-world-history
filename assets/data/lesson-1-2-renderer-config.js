@@ -61,4 +61,18 @@
       prompt: 'Watch for how Sufi beliefs, practices, and personal religious networks helped Islam spread across diverse societies.'
     });
   }
+
+  lesson.skillBuilder = {
+    label: 'Causation practice',
+    title: 'AP Skill Builder: Build a Causal Explanation',
+    intro: 'Causation means more than naming what happened first. A strong AP response identifies a specific cause, explains the mechanism that connects it to an outcome, and supports that connection with historical evidence. For Topic 1.2, start with Abbasid fragmentation and then show what that political change produced.',
+    steps: [
+      { label: '1. Choose a cause', text: 'Start with one precise cause, such as weakening Abbasid political authority, the rise of Turkic military power, or the growth of merchant and Sufi networks.' },
+      { label: '2. Explain the mechanism', text: 'Ask HOW the cause produced change. Example: weakened Abbasid authority created space for regional military leaders to build independent states.' },
+      { label: '3. Add specific evidence', text: '<strong>Political evidence:</strong> Seljuk Empire, Mamluk Sultanate, Delhi Sultanate.<br><strong>Cultural evidence:</strong> merchants, missionaries, Sufis, Islamic law and shared religious institutions.<br><strong>Intellectual evidence:</strong> paper-making, translation, mathematics, medicine, astronomy, scholarly networks.' },
+      { label: '4. State the effect and why it matters', text: 'Name what changed, then explain its significance. Political fragmentation created multiple centers of power without ending the wider religious and intellectual connections of Dar al-Islam.' },
+      { label: 'Response frame', text: '<strong>Because</strong> ___, ___. <strong>This led to</strong> ___ <strong>because</strong> ___. This mattered because ___.' }
+    ],
+    prompt: 'Write 2–3 sentences explaining one cause of the rise of new Islamic states and one effect on Dar al-Islam. Use at least one specific state or network as evidence, and explain the mechanism connecting the cause to the effect.'
+  };
 })();
