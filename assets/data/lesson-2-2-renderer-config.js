@@ -70,14 +70,17 @@
 
   lesson.skillBuilder = {
     label: 'Continuity and Change practice',
-    title: 'What Did the Mongols Change — and What Stayed the Same?',
-    intro: 'Continuity and Change Over Time (CCOT) asks what transformed and what persisted. The Mongol conquests disrupted many societies while also continuing and intensifying existing patterns of exchange.',
+    title: 'AP Skill Builder: What Changed — and What Continued — Under the Mongols?',
+    intro: 'CCOT requires a baseline. First establish what existed before the Mongols, then track the SAME category through Mongol rule and after political fragmentation. A continuity is something that persisted; a change is something meaningfully transformed. Both need evidence and an explanation of why the pattern occurred.',
     steps: [
-      { label: 'Before the Mongols', text: 'The Silk Roads already existed, but political fragmentation made long-distance travel dangerous and expensive.' },
-      { label: 'During Mongol rule', text: 'The Pax Mongolica reduced political barriers to travel; trade, diplomacy, and disease all moved faster.' },
-      { label: 'After the Mongol collapse', text: 'The khanates fragmented, but trade networks, the bubonic plague, and cultural exchanges they enabled persisted.' }
+      { label: '1. Choose one category to track', text: 'Strong choices: long-distance trade, political control of routes, cultural/technological diffusion, or movement of disease.' },
+      { label: '2. Establish the baseline', text: '<strong>Before Mongol rule:</strong> Silk Road exchange already existed, but political fragmentation increased risk and transaction costs.' },
+      { label: '3. Identify a continuity', text: '<strong>Possible continuity:</strong> merchants still used older overland routes; luxury goods and ideas continued moving between regions; regional cultures remained distinct even within a larger empire.' },
+      { label: '4. Identify a change', text: '<strong>Possible change:</strong> Pax Mongolica lowered political barriers and increased the speed and scale of trade, diplomacy, technology transfer, and plague transmission.' },
+      { label: '5. Explain why', text: 'Connect the pattern to Mongol political control, relay systems, protection of merchants, or later fragmentation of the khanates.' },
+      { label: 'Response frame', text: '<strong>Although</strong> ___ continued across the Mongol period, ___ changed because ___. This change mattered because ___.' }
     ],
-    prompt: 'Write two sentences: one describing a continuity in Afro-Eurasian exchange across the Mongol period, and one describing a significant change.'
+    prompt: 'Write 3–4 sentences about ONE category across the Mongol period. Identify one continuity and one change, use specific evidence for each, and explain why the change occurred or why the continuity persisted.'
   };
 
   lesson.checkpoints = [
