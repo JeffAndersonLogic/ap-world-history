@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   wire-and-regenerate:
-    if: github.actor != 'github-actions[bot]' || contains(github.event.head_commit.message, 'Trigger Unit 8-9 Evidence Lab wiring')
+    if: github.actor != 'github-actions[bot]' || contains(github.event.head_commit.message, 'Retry Unit 8-9 Evidence Lab wiring')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
           const sets = {
             8: [
               'lesson-8-1-cold-war-stage.html',
-              'lesson-8-2-cold-war.html',
+              'lesson-8-2-the-cold-war.html',
               'lesson-8-3-effects-cold-war.html',
               'lesson-8-4-spread-of-communism.html',
               'lesson-8-5-decolonization.html',
