@@ -37,6 +37,7 @@ const SUITES = {
   offline: [
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
     ['scripts/check-module07-units5-7.js', 'Units 5-7 Module 07 evidence pools and live shell wiring'],
+    ['scripts/check-module07-units8-9.js', 'Units 8-9 Module 07 evidence pools and live shell wiring'],
     ['scripts/test/canvas-paragraphs.test.js', 'Canvas blank-line round trip'],
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
