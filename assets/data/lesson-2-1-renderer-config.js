@@ -73,14 +73,16 @@
 
   lesson.skillBuilder = {
     label: 'Causation practice',
-    title: 'Cause and Effect Along the Silk Roads',
-    intro: 'Causation means identifying WHY something happened and WHAT it caused. For the Silk Roads, you need to explain both what enabled long-distance trade AND what resulted from it.',
+    title: 'AP Skill Builder: Build a Silk Roads Cause-and-Effect Chain',
+    intro: 'Causation asks WHY a development occurred, HOW a cause produced an outcome, and WHAT effects followed. For the Silk Roads, separate enabling causes from effects, then make the connection between them explicit. Do not simply list one cause and one effect as unrelated facts.',
     steps: [
-      { label: 'Enabling causes', text: 'State-building, pastoral nomads as intermediaries, caravanserais, and demand for luxury goods drove Silk Road exchange.' },
-      { label: 'Immediate effects', text: 'Luxury goods, technology, religions, and disease moved across Afro-Eurasia through merchant and traveler networks.' },
-      { label: 'Long-term consequences', text: 'Urbanization along routes, wealth accumulation in intermediary states, plague spread, and technology diffusion reshaped societies.' }
+      { label: '1. Choose an enabling cause', text: '<strong>Possible causes:</strong> state protection, pastoral nomad intermediaries, caravanserais and relay stations, credit and money economies, or rising demand for luxury goods.' },
+      { label: '2. Explain the mechanism', text: 'Ask what problem the cause solved. Example: caravanserais reduced the risk and cost of long-distance travel by giving merchants secure places to rest, trade, and resupply.' },
+      { label: '3. Choose an effect', text: '<strong>Immediate effects:</strong> movement of luxury goods, religions, technologies, and disease.<br><strong>Longer-term effects:</strong> growth of trading cities, wealth for intermediary states, wider cultural diffusion, and vulnerability to plague.' },
+      { label: '4. Connect cause to effect', text: 'Use causal language such as <strong>because</strong>, <strong>therefore</strong>, <strong>which allowed</strong>, or <strong>as a result</strong>. The connection is the reasoning.' },
+      { label: 'Response frame', text: 'Because ___ made long-distance exchange ___, ___. <strong>As a result</strong>, ___, which changed ___ by ___.' }
     ],
-    prompt: 'Identify one cause of Silk Road growth and one effect, then explain the connection between them in 2-3 sentences.'
+    prompt: 'Write 2–3 sentences identifying one cause of Silk Road growth and one effect. Use specific evidence and explain the mechanism connecting the cause to the effect.'
   };
 
   lesson.checkpoints = [

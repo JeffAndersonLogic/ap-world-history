@@ -76,14 +76,16 @@
 
   lesson.skillBuilder = {
     label: 'Continuity and Change practice',
-    title: 'What Changed — and What Stayed the Same — As Ideas Spread?',
-    intro: 'Cultural diffusion along trade routes rarely produced exact copies of originals. Religions, technologies, and ideas adapted as they moved. CCOT helps you track what changed and what remained recognizable.',
+    title: 'AP Skill Builder: Track What Stayed the Same and What Changed as Ideas Spread',
+    intro: 'CCOT is easier when you track ONE religion, technology, or cultural practice across time and space. First identify what remained recognizable; then identify what changed as the idea entered a new region. Finally, explain why adaptation or continuity occurred.',
     steps: [
-      { label: 'What stayed the same', text: 'Core doctrines of Buddhism and Islam remained recognizable across regions even as they adapted to local contexts.' },
-      { label: 'What changed', text: 'Buddhism developed distinct branches (Mahayana in East Asia, Theravada in Southeast Asia, Tibetan in the Himalayas) as it diffused along trade routes.' },
-      { label: 'Technology diffusion pattern', text: 'Technologies like paper and printing diffused from east to west, but their applications and social effects varied by region.' }
+      { label: '1. Choose one thing to track', text: '<strong>Religion choices:</strong> Buddhism or Islam.<br><strong>Technology choices:</strong> paper, printing, gunpowder, compass.<br><strong>Traveler/network choices:</strong> merchant diasporas or travel writing.' },
+      { label: '2. Identify a continuity', text: '<strong>Buddhism:</strong> core teachings remained recognizable across regions.<br><strong>Islam:</strong> core beliefs and practices remained recognizable even as local customs differed.<br><strong>Technology:</strong> the basic function of paper, printing, or gunpowder persisted as it moved.' },
+      { label: '3. Identify a change', text: '<strong>Buddhism:</strong> regional branches such as Mahayana, Theravada, and Tibetan traditions developed.<br><strong>Islam:</strong> local cultural practices blended with Islamic institutions in Africa and Southeast Asia.<br><strong>Technology:</strong> societies adapted imported technologies to new military, administrative, or commercial uses.' },
+      { label: '4. Explain why', text: 'Ask what caused the change or preserved the continuity: local traditions, political needs, merchant communities, religious institutions, or the practical usefulness of the technology.' },
+      { label: 'Response frame', text: '<strong>As ___ spread</strong>, ___ remained consistent because ___. <strong>However</strong>, ___ changed when/in ___ because ___.' }
     ],
-    prompt: 'Choose one religion or technology that spread along trade routes. Write two sentences: one about what stayed the same and one about what changed as it spread.'
+    prompt: 'Choose ONE religion or technology that spread along trade routes. Write 3–4 sentences identifying one continuity and one change, using specific regional evidence and explaining why the change occurred or why the continuity persisted.'
   };
 
   lesson.checkpoints = [

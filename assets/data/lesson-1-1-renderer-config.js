@@ -92,14 +92,16 @@
 
   lesson.skillBuilder = {
     label: 'Contextualization practice',
-    title: 'Place Song China in the Bigger Historical Picture',
-    intro: 'Contextualization means explaining the broader historical setting around a topic. For Song China, that means connecting the dynasty to long-standing Chinese traditions and to wider Afro-Eurasian patterns of trade, technology, urbanization, and state power.',
+    title: 'AP Skill Builder: Place Song China in the Bigger Historical Picture',
+    intro: 'Contextualization explains the broader historical setting that helps a reader understand your argument. It is not just another fact about Song China. Good context begins before the specific claim, establishes a larger pattern, and then bridges that pattern to the topic you are about to explain.',
     steps: [
-      { label: 'Before', text: 'Earlier Chinese dynasties had already used Confucian ideas, imperial rule, bureaucracy, and the Mandate of Heaven.' },
-      { label: 'During', text: 'The Song expanded scholar-official government while agriculture, canals, printing, paper money, and cities strengthened the economy.' },
-      { label: 'Beyond China', text: 'Song products, technologies, and commercial activity connected East Asia to wider Afro-Eurasian trade networks.' }
+      { label: '1. Choose a broader setting', text: '<strong>Earlier Chinese tradition:</strong> imperial rule, Confucianism, bureaucracy, Mandate of Heaven.<br><strong>Wider East Asian setting:</strong> Chinese cultural influence, Buddhism, neighboring states.<br><strong>Afro-Eurasian setting:</strong> expanding trade, urbanization, technology, and commercial exchange.' },
+      { label: '2. Explain the context', text: 'Write what was already happening before or around the Song period. Do not jump immediately to your main Song evidence.' },
+      { label: '3. Bridge to Song China', text: 'Show how the broader pattern helps explain the specific topic. Example: earlier Chinese governments already used Confucian bureaucracy; the Song expanded and deepened that tradition through scholar-official government.' },
+      { label: '4. Keep context separate from the claim', text: 'Context sets the stage. Your claim answers the question. A strong response uses context to make the claim easier to understand, not to replace it.' },
+      { label: 'Response frame', text: '<strong>Before c. 1200</strong>, ___. This broader pattern mattered because ___. <strong>By the Song period</strong>, ___.' }
     ],
-    prompt: 'Write two contextualization sentences that explain the broader setting for Song China before making a claim about its power or prosperity.'
+    prompt: 'Write 2–3 contextualization sentences for a claim about Song China. Establish one broader historical pattern, explain why it matters, and bridge it directly to Song political power, cultural influence, or economic prosperity.'
   };
 
   lesson.checkpoints = [
