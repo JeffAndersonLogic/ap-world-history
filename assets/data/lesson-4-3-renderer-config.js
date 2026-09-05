@@ -112,4 +112,41 @@
       focus: ['Explain the concept of virgin soil epidemic and why indigenous Americans had no immunity.', 'Trace the causal chain: disease → collapse → labor shortage → slave trade.', 'Explain how American silver disrupted global trade and what regions it connected.']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Unequal Exchanges and Unequal Consequences',
+    task: 'Choose TWO cards that represent different dimensions of the Columbian Exchange: biological movement, epidemic disease, extractive labor, or colonial social change. First establish what each source directly shows. Then build a causal or consequence claim without treating one image as proof of an entire Atlantic system.',
+    prompt: 'Using two evidence cards of different types, make one claim about how the Columbian Exchange transformed populations, environments, labor systems, or colonial society. Cite one concrete detail from each source and explain why the two pieces of evidence together support a stronger claim than either source alone.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Columbian Exchange Reference Map',
+      url: '../assets/images/instructional-maps/topic-4-3.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-4-3.svg',
+      caption: 'Secondary systems evidence. The BeHistorical reference map traces major movements of crops, animals, people, and disease between hemispheres.',
+      prompt: 'NOTICE which exchanges move in each direction and which do not. What broad pattern can you INFER about asymmetry in the Columbian Exchange? What can a systems map not reveal about individual experiences?'
+    },
+    {
+      title: 'Smallpox in the Florentine Codex, 16th Century',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:FlorentineCodex_BK12_F54_smallpox.jpg',
+      caption: 'Indigenous-centered epidemic evidence. A panel in the Florentine Codex, compiled in the 16th century with Nahua informants, depicts people suffering from smallpox in central Mexico.',
+      prompt: 'NOTICE the bodily and social effects shown. What can you INFER about the human impact of epidemic disease? What perspective makes this different from a European conquest narrative?'
+    },
+    {
+      title: 'Cerro Rico at Potosí, 1552',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cerro_de_Potos%C3%AD._Grabado_en_madera%2C_del_libro_Cr%C3%B3nica_del_Per%C3%BA%2C_1552%2C_de_Pedro_Cieza_de_Le%C3%B3n.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Cerro_de_Potos%C3%AD._Grabado_en_madera,_del_libro_Cr%C3%B3nica_del_Per%C3%BA,_1552,_de_Pedro_Cieza_de_Le%C3%B3n.jpg',
+      caption: 'Extractive-economy evidence. A 1552 woodcut from Pedro Cieza de León\'s Crónica del Perú represents Cerro Rico, the silver mountain around which colonial Potosí developed.',
+      prompt: 'NOTICE how the mountain and settlement are represented. What can you INFER about the scale of colonial interest in mineral extraction? What labor-system evidence would you need to connect the image specifically to mita coercion?'
+    },
+    {
+      title: 'Casta Painting Series',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Casta_painting_all.jpg',
+      caption: 'Later colonial social-order evidence. Casta paintings from Spanish America categorized families by ancestry and status, reflecting elite efforts to represent colonial hierarchy.',
+      prompt: 'NOTICE the systematic labeling and ordering of people. What can you INFER about how colonial society racialized ancestry after sustained Atlantic mixing? What does an elite genre of painting hide about everyday mobility and resistance?'
+    }
+  ];
 })();
