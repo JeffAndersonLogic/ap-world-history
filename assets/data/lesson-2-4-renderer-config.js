@@ -69,14 +69,16 @@
 
   lesson.skillBuilder = {
     label: 'Causation practice',
-    title: 'What Caused Trans-Saharan Trade to Grow?',
-    intro: 'Causation means identifying the factors that made something possible or caused it to change. For trans-Saharan trade, you need to explain both the technological and environmental causes AND the economic and cultural causes of growth.',
+    title: 'AP Skill Builder: Explain Why Trans-Saharan Trade Grew',
+    intro: 'Strong causation usually involves more than one factor. For trans-Saharan trade, technology made the route possible, economic demand made the route worthwhile, and states helped protect and profit from exchange. Your job is to explain how those causes worked together.',
     steps: [
-      { label: 'Technology as cause', text: 'The improved camel saddle allowed camels to carry heavier loads more efficiently, making large-scale trans-Saharan caravans viable.' },
-      { label: 'Economic cause', text: 'Demand for gold in the Islamic world and Mediterranean economies, combined with West African need for salt, created the economic logic for trans-Saharan exchange.' },
-      { label: 'State-building effect', text: 'Trans-Saharan trade generated enormous wealth that funded powerful West African states like Ghana and Mali, which in turn protected and expanded trade routes.' }
+      { label: '1. Choose two different causes', text: '<strong>Technology:</strong> improved camel saddles and organized caravans.<br><strong>Economic demand:</strong> Mediterranean/Islamic demand for gold and West African demand for salt.<br><strong>Political support:</strong> states such as Mali taxed, protected, and benefited from trade.' },
+      { label: '2. Explain each mechanism', text: 'Do not write “camels caused trade.” Explain that camel technology let merchants carry heavy loads across long, dry distances where other pack animals struggled.' },
+      { label: '3. Show the causes interacting', text: 'Technology alone would not create a major trade network without valuable goods to exchange; demand alone would not matter if merchants could not cross the Sahara. Strong causation explains the combination.' },
+      { label: '4. Connect to an effect', text: 'Trade wealth helped states such as Mali grow stronger, supported cities such as Timbuktu, and deepened Islamic cultural connections across West Africa.' },
+      { label: 'Response frame', text: 'Trans-Saharan trade grew because ___ made exchange possible while ___ made it profitable. These factors worked together because ___. As a result, ___.' }
     ],
-    prompt: 'Write two sentences explaining how camel technology and economic demand together caused the growth of trans-Saharan trade.'
+    prompt: 'Write 3–4 sentences explaining how TWO causes worked together to expand trans-Saharan trade. Use specific evidence such as camel technology, gold/salt demand, or state support, and connect the causes to one effect on West Africa.'
   };
 
   lesson.checkpoints = [
