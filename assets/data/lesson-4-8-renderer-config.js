@@ -118,4 +118,48 @@
       focus: ['Name two specific continuities (Indian Ocean trade, Chinese dominance, Islamic networks) with specific evidence.', 'Explain the structural factors that sustained each continuity despite European expansion.', 'Write a synthesis statement: more change or more continuity? Defend with evidence from BOTH sides.']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Prove Both Change and Continuity',
+    task: 'A CCOT claim needs evidence for both sides. Choose at least ONE change card and ONE continuity card. Establish what each source shows, explain the mechanism behind the pattern, and make sure your continuity is not merely “trade still existed.” By Unit 4, your evidence should also acknowledge source limits and uneven regional change.',
+    prompt: 'Using one change card and one continuity card, write a CCOT claim about global exchange from c. 1450 to c. 1750. Cite one concrete detail from each source, explain the mechanism behind the change and the continuity, and defend whether the period represents more transformation or more persistence overall.'
+  };
+
+  lesson.images = [
+    {
+      title: 'CONTINUITY — Indian Ocean Monsoon Trade',
+      url: '../assets/images/maps/foundations-4/indian-ocean-monsoon-trade.jpg',
+      sourceUrl: '../assets/images/maps/foundations-4/indian-ocean-monsoon-trade.jpg',
+      caption: 'Secondary baseline evidence. The Indian Ocean trade system and monsoon knowledge predated European arrival and continued to structure Asian, African, and Middle Eastern commerce after c. 1450.',
+      prompt: 'NOTICE the seasonal routes and dense regional connections. What structural features could make this network persist despite Portuguese and Dutch intrusion? What additional merchant records would strengthen a continuity claim?'
+    },
+    {
+      title: 'CONTINUITY — Silk Roads and Established Afro-Eurasian Corridors',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',
+      caption: 'Secondary baseline evidence. Long-distance Afro-Eurasian exchange corridors existed before Atlantic integration and remained part of a wider commercial world after 1450.',
+      prompt: 'NOTICE how overland corridors connect major production and consumption regions. What can persist even when the relative importance of routes changes? What does a route map not tell you about changing trade volume?'
+    },
+    {
+      title: 'CHANGE — Waldseemüller World Map, 1507',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg',
+      caption: 'New-hemispheric-connection evidence. The printed map incorporated recent Atlantic voyages and represented lands unknown to most European mapmakers before 1492.',
+      prompt: 'NOTICE the addition of Atlantic lands to an older Afro-Eurasian geographic framework. What kind of change in knowledge and connectivity does this document? What does it not prove about economic integration by itself?'
+    },
+    {
+      title: 'CHANGE — Global Silver and Manila Galleon Routes',
+      url: '../assets/images/instructional-maps/topic-4-5.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-4-5.svg',
+      caption: 'Secondary systems evidence. The map traces new Atlantic and Pacific silver circuits that linked American mines, European markets, Manila, and Chinese demand.',
+      prompt: 'NOTICE the trans-Pacific and trans-Atlantic connections. What mechanism made this circuit genuinely new? How did it build on older Asian markets rather than replace them?'
+    },
+    {
+      title: 'CHANGE — Dutch East India Company (VOC)',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Voc.jpg',
+      caption: 'Institutional-change evidence. The VOC represents the chartered joint-stock company model that mobilized private capital and state power for long-distance commerce.',
+      prompt: 'NOTICE the corporate identity and relationship to imperial commerce. What changed in the organization of European long-distance trade? What older Asian commercial practices continued underneath or alongside this institution?'
+    }
+  ];
 })();
