@@ -75,4 +75,41 @@
     ],
     prompt: 'Write 2–3 sentences explaining one cause of the rise of new Islamic states and one effect on Dar al-Islam. Use at least one specific state or network as evidence, and explain the mechanism connecting the cause to the effect.'
   };
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Fragmented States, Connected World',
+    task: 'Use TWO evidence cards to test the idea that Dar al-Islam could be politically fragmented while remaining culturally and intellectually connected. For each card, separate what you can directly observe from what you infer. The card context identifies the object; it does not supply the historical conclusion.',
+    prompt: 'Make one claim about continuity and change in Dar al-Islam after Abbasid political fragmentation. Use a specific detail from two evidence cards, explain what each detail suggests, and state one thing the evidence cannot prove by itself.'
+  };
+
+  lesson.images = [
+    {
+      title: "Al-Idrisi's Tabula Rogeriana, 1154",
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:TabulaRogeriana.jpg',
+      caption: 'Intellectual-network evidence. Al-Idrisi, a Muslim geographer, produced this world map in Sicily in 1154 for the Norman king Roger II, shortly before the period studied in Topic 1.2.',
+      prompt: 'NOTICE one feature showing the geographic range of knowledge represented here. What can you INFER about scholarly exchange across political and religious boundaries? How could this establish continuity into c. 1200–1450?'
+    },
+    {
+      title: 'Governor of Maragha, Maqamat Manuscript',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_06_the_Governor_of_Maraghah.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqama_06_the_Governor_of_Maraghah.jpg',
+      caption: 'Political and social evidence. An illustration from a 13th-century Maqamat manuscript depicting a governor and courtly setting in the Islamic world.',
+      prompt: 'NOTICE a detail about the ruler, attendants, or court setting. What can you INFER about regional political authority after Abbasid fragmentation? What claim would require additional evidence about the Seljuks, Mamluks, or Delhi Sultanate?'
+    },
+    {
+      title: 'Maqamat of al-Hariri, Baghdad, 1237',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
+      caption: 'Literary and urban evidence. A manuscript illustration produced in Baghdad in 1237, during a period of political fragmentation in the wider Islamic world.',
+      prompt: 'NOTICE one detail that suggests literacy, artistic production, travel, or urban life. What does that allow you to INFER about cultural vitality despite political fragmentation?'
+    },
+    {
+      title: 'Mansa Musa in the Catalan Atlas, 1375',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
+      caption: 'Network evidence. A European-produced map from 1375 depicts the Muslim ruler Mansa Musa of Mali holding gold, showing how information about Islamic West Africa circulated far beyond Mali.',
+      prompt: 'NOTICE how Mansa Musa is represented. What can you INFER about the reach of trade, Islam, and reputation networks? What does the European origin of the map mean you should be cautious about claiming?'
+    }
+  ];
 })();
