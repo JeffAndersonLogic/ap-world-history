@@ -129,4 +129,41 @@
       focus: ['Use one cultural example.', 'Use one economic or technological example.', 'Explain the connection to East Asian influence, population growth, commercial expansion, or trade networks.']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: From Observation to Historical Claim',
+    task: 'Choose TWO evidence cards from different categories. For each card: (1) notice one concrete detail, (2) infer what that detail suggests, and (3) connect the inference to a historical claim. The caption gives only identification and context; your job is to decide what the evidence proves.',
+    prompt: 'Using two pieces of evidence from different categories, make one claim about how Song China organized power, sustained cultural traditions, or built a commercial economy. Name a specific detail from each piece of evidence and explain how each detail supports your claim.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Song Imperial Examination',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG',
+      caption: 'Governance evidence. A depiction of candidates participating in the imperial examination system associated with scholar-official government.',
+      prompt: 'NOTICE one detail about the examination setting or participants. INFER what that detail suggests about how officials were selected. What claim about Song government could this evidence support?'
+    },
+    {
+      title: 'Confucius Portrait, Tang Dynasty',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg',
+      caption: 'Cultural continuity evidence. This portrait predates the Song and represents the long-standing prestige of Confucius and Confucian learning in China.',
+      prompt: 'NOTICE that this evidence comes from before the Song period. What can its continued relevance help you INFER about cultural continuity? What would you need other evidence to prove about change under the Song?'
+    },
+    {
+      title: 'Jiaozi Paper Money',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg',
+      caption: 'Economic evidence. Jiaozi was an early form of paper currency used in Song China as commercial exchange expanded.',
+      prompt: 'NOTICE what kind of economic tool this is. INFER what problem paper money could solve in a large commercial economy. What claim about commercialization could this support?'
+    },
+    {
+      title: 'Grand Canal Route',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Modern_Course_of_Grand_Canal_of_China.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Modern_Course_of_Grand_Canal_of_China.png',
+      caption: 'Infrastructure evidence. A reference map of the Grand Canal system linking major regions of eastern China; parts of the system were expanded and heavily used under the Song.',
+      prompt: 'NOTICE which regions the canal links. INFER how moving grain, taxes, and goods through this corridor could strengthen both government and commerce. What claim could the map support, and what can it not prove by itself?'
+    }
+  ];
 })();
