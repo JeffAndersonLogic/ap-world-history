@@ -101,4 +101,41 @@
       focus: ['Describe at least two specific voyages with routes and outcomes.', 'Explain the Treaty of Tordesillas and what European assumptions it reflects.', 'Describe the experience of at least one non-European group during the era of exploration.']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Voyages, Claims, and the Map of a New Oceanic World',
+    task: 'Choose TWO cards that help answer why exploration mattered, not just where explorers went. Distinguish contemporary traces, later commemorations, and secondary maps. Look for evidence of state sponsorship, territorial claiming, route knowledge, or changing geographic understanding, then identify what each source leaves out.',
+    prompt: 'Using two evidence cards, make one claim about how state-sponsored exploration changed European geographic knowledge or imperial ambitions after c. 1450. Cite one concrete detail from each source, explain how it supports your claim, and identify one perspective or chronology limitation.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Vasco da Gama Pillar, Malindi',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Pillar_of_Vasco_da_Gama.jpg',
+      caption: 'Portuguese route-and-claim evidence. The pillar at Malindi on the East African coast commemorates the Portuguese presence along the route da Gama used toward India.',
+      prompt: 'NOTICE the monument\'s placement and Christian/royal symbolism. What can you INFER about how Portuguese voyages combined navigation, diplomacy, and territorial claims? What can the monument not tell you about how local rulers viewed the Portuguese?'
+    },
+    {
+      title: 'Columbus Taking Possession',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Columbus_Taking_Possession.jpg',
+      caption: 'Later imperial-memory evidence. A later European representation depicts Columbus formally claiming land in the Caribbean for the Spanish crown.',
+      prompt: 'NOTICE who performs the claim, who witnesses it, and whose authority is visually centered. What can you INFER about European assumptions of sovereignty? Why is a later commemorative image not neutral eyewitness evidence of 1492?'
+    },
+    {
+      title: 'Waldseemüller World Map, 1507',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg',
+      caption: 'Changing-knowledge evidence. The printed Waldseemüller map incorporated recent Atlantic information and famously applied the name America to lands across the Atlantic.',
+      prompt: 'NOTICE how the Atlantic world is represented relative to older map traditions. What can you INFER about the speed at which voyage reports changed European geographic knowledge? What uncertainties remain visible?'
+    },
+    {
+      title: 'Exploration Routes and Treaty of Tordesillas',
+      url: '../assets/images/instructional-maps/topic-4-2.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-4-2.svg',
+      caption: 'Secondary geographic reconstruction. The BeHistorical map compares Portuguese and Spanish routes and marks the Treaty of Tordesillas division.',
+      prompt: 'NOTICE how routes and the treaty line divide oceanic space. What can you INFER about state rivalry and imperial ambition? What does a modern reconstruction not show about Indigenous sovereignty or local knowledge?'
+    }
+  ];
 })();
