@@ -1,44 +1,13 @@
-'use strict';
-
-/**
- * The one renderer for Run of Show: a teacher-only "cockpit" view of a
- * lesson's pacing, built entirely from that topic's own `runOfShow` block in
- * its lesson data file (assets/data/lesson-N-N-*.js).
- *
- * Validated by real classroom use on Topic 1.4 (2026-09-05) and now a
- * permanent teacher tool, the same kind of surface as
- * teacher/skills-lens.html: not linked from any lesson page, but covered by
- * its own validate.js reachability check and wired into the offline suite
- * via scripts/test/readings-reproducible.test.js. Coverage of the other 71
- * topics is separate, ongoing content work, the same shape as the eBook's
- * volumes: one topic's runOfShow block authored and added to TOPICS at a
- * time, in scripts/build-run-of-show.js.
- *
- * The class timer persists per topic to localStorage (see saveState/loadState
- * below), so a reload mid-class does not lose pacing progress. It never
- * persists as "running": a reopened page always starts paused, so time spent
- * with the tab closed is never silently counted. Because Green and Silver
- * see the same topic in two different class periods on the same day (see
- * "Green and Silver" in CLAUDE.md), the New Class button clears the saved
- * state entirely, for switching cohorts rather than only recovering a lost
- * tab.
- *
- * Deliberately built the way the rest of this repo builds everything:
- * content lives in the topic's own data file, this file only renders it.
- * A hand-typed pacing script that quoted checkpoint wording or evidence
- * lists directly in a template would be a second copy of lesson content,
- * exactly the failure mode CLAUDE.md describes for the capture block and
- * the skill labels, at the interface layer instead of the content layer.
- *
- * The renderer does not hardcode which phase ids exist. It reads whatever
- * fields a phase happens to carry (retrieval list, map anchors, slides,
- * listenFor weak/strong pairs, a synthesis table, an AP-application card)
- * and renders whichever apply, the same reason the eBook's narration walks
- * DOM structure instead of a list of known class names: a future topic's
- * runOfShow block should not need this file edited to render correctly.
- */
-
-const BRAND_CSS = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Run of Show | Topic 1.6 | BeHistorical Teacher Tools</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
 :root{
   --blackened-steel:#1A1C1D; --charcoal-steel:#2B2F31; --gunmetal-gray:#3E4447;
   --aged-iron:#5A5F5C; --muted-sandstone:#D2B48C; --burnished-bronze:#8C5A2B;
@@ -190,67 +159,20 @@ button{font-family:var(--ui);cursor:pointer}
 .ros-pacing-panel ul{margin:.3rem 0 0;padding-left:1.1rem;font-size:.82rem}
 
 .ros-footer-note{padding:.6rem 1.4rem;font-family:var(--ui);font-size:.68rem;color:var(--muted-sandstone);border-top:1px solid var(--gunmetal-gray)}
-`;
-
-function esc(s) {
-  return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-}
-
-function buildLinks(L, unitDir) {
-  const links = [];
-  const lessonFile = L.__lessonFile;
-  if (lessonFile) links.push({ label: 'Open Lesson Page', url: `../${unitDir}/${lessonFile}` });
-  if (L.classPresentation && L.classPresentation.url) {
-    links.push({ label: 'Open Student Deck', url: `../${unitDir}/${L.classPresentation.url}` });
-  }
-  if (L.map && L.map.sourceUrl) links.push({ label: 'Open Map Source', url: L.map.sourceUrl });
-  if (L.first10 && L.first10.embedUrl) {
-    links.push({ label: 'Open First & 10', url: `../${unitDir}/${L.first10.embedUrl}` });
-  }
-  if (L.deepReading && L.deepReading.url) {
-    links.push({ label: 'Open Deep Reading', url: `../${unitDir}/${L.deepReading.url}` });
-  }
-  if (L.beInTheRoom && L.beInTheRoom.url) {
-    links.push({ label: 'Open BeInTheRoom', url: L.beInTheRoom.url });
-  }
-  return links;
-}
-
-function renderRunOfShow(L, opts) {
-  const RS = L.runOfShow;
-  if (!RS) throw new Error('renderRunOfShow: lesson has no runOfShow block');
-  const unitDir = opts.unitDir;
-  const links = buildLinks(L, unitDir);
-  const payload = {
-    meta: L.meta,
-    runOfShow: RS,
-    links,
-  };
-  const json = JSON.stringify(payload).replace(/</g, '\\u003c');
-
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Run of Show | ${esc(L.meta.topic)} | BeHistorical Teacher Tools</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>${BRAND_CSS}</style>
+</style>
 </head>
 <body>
 <div class="ros-shell">
   <header class="ros-header">
     <span class="ros-brand">BeHistorical</span>
     <div class="ros-titles">
-      <div class="ros-eyebrow">${esc(L.meta.topic)} &middot; RUN OF SHOW (Teacher View, prototype)</div>
-      <h1 class="ros-title">${esc(L.meta.title)}</h1>
+      <div class="ros-eyebrow">Topic 1.6 &middot; RUN OF SHOW (Teacher View, prototype)</div>
+      <h1 class="ros-title">Developments in Europe</h1>
     </div>
     <div class="ros-pacing" role="group" aria-label="Pacing mode">
       <button type="button" data-pacing="normal" aria-pressed="true">Normal</button>
-      <button type="button" data-pacing="condensed" aria-pressed="false">${esc((RS.pacing && RS.pacing.condensed && RS.pacing.condensed.label) || 'Condensed')}</button>
-      <button type="button" class="emergency" data-pacing="emergency" aria-pressed="false">${esc((RS.pacing && RS.pacing.emergency && RS.pacing.emergency.label) || 'Emergency')}</button>
+      <button type="button" data-pacing="condensed" aria-pressed="false">60 minutes</button>
+      <button type="button" class="emergency" data-pacing="emergency" aria-pressed="false">45 minutes</button>
     </div>
   </header>
 
@@ -301,7 +223,7 @@ function renderRunOfShow(L, opts) {
   <p class="ros-footer-note">Teacher tool, like the Skills Lens &mdash; never linked from a student page. Content above is pulled live from this topic's own lesson data file (runOfShow block), so editing that file is the only way to change what this page says. Pacing progress is saved to this browser only; use New Class to clear it before the next cohort.</p>
 </div>
 
-<script id="ros-data" type="application/json">${json}</script>
+<script id="ros-data" type="application/json">{"meta":{"course":"AP WORLD HISTORY","unit":"Unit 1: The Global Tapestry","topic":"Topic 1.6","title":"Developments in Europe","subtitle":"Political, Social, and Religious Structures in Europe, c. 1200 to c. 1450","feedbackToolUrl":"https://student.magicschool.ai/s/login?joinCode=czwb9Q","canvasSubmissionNote":"Organize your thinking here, submit your final work in Canvas."},"runOfShow":{"question":"Why did Europe stay politically fragmented instead of forming one large state like Song China?","apEmphasis":"Governance + comparison + continuity and change","ced":"KC-3.2.I.B.ii","apSkill":"Comparison","totalMinutes":93,"endTarget":"Europe never formed a single centralized state in this period. Political power stayed local and personal, distributed among monarchs, nobles, and the Church through feudalism and manorialism, while towns, guilds, and universities slowly built a different kind of power outside that system. Compared with Song China’s centralized bureaucracy, Europe organized authority through personal bonds of loyalty and land rather than an appointed administrative class.","phases":[{"id":"beready","label":"BeReady","range":"0–5 min","minutes":5,"retrieval":["What gave the Hausa Sarki religious and administrative legitimacy?","How did Ethiopia use Christianity to resist outside pressure?","Name one way geography shaped African state power."],"teacherMove":"Do not reteach 1.1–1.5. Take answers quickly, no notes for the first 60–90 seconds.","bridge":"Every region so far has organized state power differently, some centralized, some built on trade and religion. Today we look at a region that stayed deliberately fragmented, and ask why."},{"id":"map","label":"Map","range":"5–12 min","minutes":7,"anchors":[{"label":"Fragmented states","detail":"Kingdoms, principalities, and Church lands, with no single ruler over all of Europe"},{"label":"Christian unity","detail":"The Roman Catholic Church connected people across political borders"},{"label":"Towns and trade","detail":"Growing towns in northern Italy and Flanders, signaling economic and intellectual change"}],"note":"Independent work, done alongside First & 10. Both submit through Gather All My Work to Canvas. Circulate and answer questions rather than leading a discussion.","takeaway":"Europe’s fragmentation is itself the thing to explain today, not a gap to fill before “real” history starts."},{"id":"first10","label":"First & 10","range":"12–23 min","minutes":11,"module":"first10","why":"Independent work, done alongside the Map module. This is the reading and its three response questions, the background students need before today’s lecture. It submits through Gather All My Work to Canvas.","target":"Students can name at least one specific piece of evidence about feudalism, manorialism, or the Church from the reading, in their own words.","teacherPrompt":"Circulate rather than lead a discussion. A student who finishes both Map and First & 10 early can preview Checkpoint 1’s framing question."},{"id":"content","label":"Content","range":"23–45 min","minutes":22,"intro":"Four systems filled the space where a centralized state would otherwise be: feudalism, manorialism, the Church, and towns. Treat them as one system, not four mini-lectures.","slides":[{"id":"framework","title":"Fragmented but Not Weak","minutes":2,"landTheseIdeas":["Europe never formed one centralized empire in this period, power stayed local, personal, and overlapping.","Feudalism, manorialism, the Church, and towns are each evidence for KC-3.2.I.B.ii, not separate topics."]},{"id":"feudalism","title":"Feudalism: Loyalty as Governance","minutes":5,"landTheseIdeas":["Kings depended on nobles, and nobles depended on vassals, for land and military service.","Political power ran through personal relationships of loyalty, not through an appointed bureaucracy."],"apMove":"Don’t accept “kings were in charge.” Push toward: a king’s power depended on the loyalty of nobles he could not fully control, that dependence is the fragmentation.","avoid":["exhaustive vassal-contract details"]},{"id":"manorialism","title":"Manorialism: Power Over Land and Labor","minutes":4,"landTheseIdeas":["Manorialism organized the rural economy: peasants worked land controlled by a lord in exchange for protection.","Most people in medieval Europe lived and worked inside this system, it is the economic floor under feudal politics."],"apMove":"Don’t accept “peasants farmed for lords.” Push toward: manorialism is what let a noble afford horses, arms, and loyalty in the first place.","avoid":["serfdom legal technicalities"]},{"id":"church","title":"The Church: The One Institution Everyone Shared","minutes":5,"landTheseIdeas":["The Roman Catholic Church was the one authority that crossed every political border in Europe.","Popes, bishops, and monasteries held real political and economic power, not only religious authority."],"keyPoint":"Not “the Church was just religion.” The Church collected its own revenue, held land, and could challenge kings, it functioned as a second government.","acrossTheWorld":{"comparisonTopic":"1.5 Ethiopia and the Hausa kingdoms","teacherPrompt":"What do a Christian Church crossing European borders and Islam crossing Hausa trade networks have in common as tools of state power?","listenFor":["shared belief","legitimacy","institution","administration"],"target":"A shared religious institution can unify a politically fragmented region."}},{"id":"towns","title":"Towns, Guilds, and Universities: A Different Kind of Power","minutes":4,"landTheseIdeas":["Growing towns, especially in northern Italy and Flanders, built wealth and organization outside the feudal system.","Guilds regulated trade and craft; universities produced a new class of educated administrators and scholars."],"apMove":"Don’t accept “towns grew.” Push toward: towns generated wealth and expertise that neither a king nor the Church fully controlled, a third source of power.","avoid":["guild structures in exhaustive detail","a list of specific universities"]}]},{"id":"checkpoint1","label":"Checkpoint 1","range":"45–53 min","minutes":8,"teacherRole":"Circulate and diagnose.","listenFor":{"weak":"Kings ruled Europe.","developing":"Kings shared power with nobles who owed them loyalty.","strong":"A king’s power depended on nobles who owed him military service in exchange for land, so real political power was distributed and personal rather than centralized."},"lookFor":"structure → who holds power → why it is fragmented"},{"id":"apApplication","label":"AP Skill Builder: Comparison","range":"53–68 min","minutes":15,"module":"skill","why":"The existing Skill Builder is built for exactly this: naming one European feature and one Song China feature and explaining why the difference matters.","target":"Europe organized authority through personal, overlapping bonds among kings, nobles, and the Church, while Song China organized authority through a centralized bureaucracy staffed by examination. Not just “they were different,” the mechanism of the comparison must be named."},{"id":"synthesis","label":"Debrief","range":"68–77 min","minutes":9,"table":[{"state":"Europe","source":"Feudal loyalty + manorial land control + Church authority"},{"state":"Song China","source":"Centralized bureaucracy + civil service examinations"}],"teacherPrompt":"If Song China’s approach was more centralized, was it more effective? Defend your answer with a specific piece of evidence.","complicate":"Fragmentation let towns and universities grow in gaps a more centralized state might have controlled more tightly, is that a weakness or a tradeoff?","target":"Students should leave seeing fragmentation as a different solution to governing people and territory, not a failed attempt at centralization."},{"id":"checkpoint2","label":"Checkpoint 2","range":"77–88 min","minutes":11,"note":"This is the actual CED-level measurement, and it is the one that requires both the Church’s unifying role and change over time in towns, trade, or universities. Protect this time."},{"id":"exit","label":"Exit Retrieval","range":"88–93 min","minutes":5,"prompt":"Complete this sentence: “Europe organized power through __________ instead of a centralized bureaucracy because __________.”","seed":"Tomorrow we put every region from this unit side by side and ask which kind of state power actually held up best."}],"mustHaves":{"title":"What this lesson must cover","intro":"The must-know facts and language for Topic 1.6, independent of which modules a given class actually reaches. Useful for a second teacher covering this topic, or for checking your own pacing at a glance.","groups":[{"label":"Feudalism and Manorialism","items":[{"term":"Feudalism","detail":"political power organized through personal bonds of loyalty and military service between kings, nobles, and vassals"},{"term":"Manorialism","detail":"the rural economic system of lords and peasants that supported feudal politics"},"Political power in Europe ran through personal relationships, not an appointed administrative class."]},{"label":"The Church","items":[{"term":"Roman Catholic Church","detail":"the one institution that crossed every political border in Europe, and held real political and economic power"},"The Church could challenge kings; it functioned as a second government, not only a belief system."]},{"label":"Towns and Universities","items":[{"term":"Guilds","detail":"organizations that regulated craft production and trade in growing towns, especially in northern Italy and Flanders"},{"term":"Universities","detail":"produced a new educated class outside feudal and Church hierarchies"}]},{"label":"Comparison with Song China","items":[{"term":"KC-3.2.I.B.ii","detail":"Europe was politically fragmented: decentralized monarchies, feudalism, and the manorial system"},{"term":"Skill: Comparison","detail":"a strong answer names one specific European feature and one specific Song China feature and explains why the difference matters"}]},{"label":"Common misconceptions to correct","items":["Feudalism and manorialism are not the same system; one is political and military, the other is economic.","Political fragmentation does not mean Europe was “behind” more centralized states; it is a different organizational choice with its own tradeoffs."]}]},"assignmentStatus":{"first10":"Required","map":"Class Use","classPresentation":"Class Use","checkpoint1":"Required","skill":"Required","checkpoint2":"Required","evidence":"Support","video":"Support","deepReading":"Support","source":"Extension","beSurreal":"Extension","beInTheRoom":"Extension / Optional"},"pacing":{"protect":["Checkpoint 2"],"condensed":{"label":"60 minutes","route":"BeReady → condensed deck (feudalism, manorialism, Church only) → CP1 → Comparison Builder → CP2."},"emergency":{"label":"45 minutes","route":"BeReady → feudalism + Church core → CP1 → verbal comparison → CP2."},"skipFirst":["exhaustive vassal-contract details","serfdom legal technicalities","guild structures in exhaustive detail","a list of specific universities","Fulbert biography","detailed manorial court records"]},"misconceptions":[{"claim":"Feudalism and manorialism are the same thing.","correction":"Feudalism is political and military, loyalty, land, and service between elites. Manorialism is economic, peasant labor on land controlled by a lord. Keep them distinct."},{"claim":"Europe was less advanced than more centralized states.","correction":"Fragmentation is a different way of organizing power, not a failed attempt at centralization; it let towns, guilds, and universities grow in ways a tighter, more centralized state might have restricted."},{"claim":"The Church only had religious authority.","correction":"The Church held land, collected its own revenue, and could challenge kings directly, function as a second government."}]},"links":[{"label":"Open Lesson Page","url":"../unit-1/lesson-1-6-europe.html"},{"label":"Open Student Deck","url":"../unit-1/deck-topic-1-6-europe-student.html"},{"label":"Open Map Source","url":"https://commons.wikimedia.org/wiki/File:Hereford-Karte.jpg"},{"label":"Open First & 10","url":"../unit-1/first-and-10-topic-1-6-europe-capture.html?v=response-id-fix-v1"},{"label":"Open Deep Reading","url":"../unit-1/deep-reading-topic-1-6-europe.html"},{"label":"Open BeInTheRoom","url":"../beintheroom/unit-1/feudal-manor.html"}]}</script>
 <script>
 (function(){
   var DATA = JSON.parse(document.getElementById('ros-data').textContent);
@@ -316,7 +238,7 @@ function renderRunOfShow(L, opts) {
   // periods on the same day (see "Green and Silver" in CLAUDE.md), so this is
   // reload recovery, not a same-day carryover; New Class below is what clears
   // it between cohorts.
-  var stateKey = 'behistorical-run-of-show-state-' + (DATA.meta.topic || '').replace(/\s+/g, '-');
+  var stateKey = 'behistorical-run-of-show-state-' + (DATA.meta.topic || '').replace(/s+/g, '-');
   function loadState(){
     var saved;
     try { saved = JSON.parse(localStorage.getItem(stateKey)); } catch (e) { return; }
@@ -409,12 +331,12 @@ function renderRunOfShow(L, opts) {
   function slideBody(slide){
     var h = '';
     if (slide.landTheseIdeas) h += '<div class="ros-section"><h3>Land These Ideas</h3>'+list(slide.landTheseIdeas)+'</div>';
-    if (slide.apMove) h += '<div class="ros-box apmove"><span class="tag">AP Move'+(RS.apSkill?' \\u2014 '+esc(RS.apSkill):'')+'</span>'+esc(slide.apMove)+'</div>';
+    if (slide.apMove) h += '<div class="ros-box apmove"><span class="tag">AP Move'+(RS.apSkill?' \u2014 '+esc(RS.apSkill):'')+'</span>'+esc(slide.apMove)+'</div>';
     if (slide.teacherPrompt) h += '<div class="ros-box prompt"><strong>Teacher Prompt</strong><p style="margin:.3rem 0 0">'+esc(slide.teacherPrompt)+'</p></div>';
     if (slide.keyPoint) h += '<div class="ros-box good"><strong>Land this distinction</strong><p style="margin:.3rem 0 0">'+esc(slide.keyPoint)+'</p></div>';
     var more = '';
     if (slide.note) more += '<div class="ros-box note">'+esc(slide.note)+'</div>';
-    if (slide.avoid) more += '<div class="ros-box avoid"><strong>Avoid / Don\\'t Get Pulled Into</strong>'+list(slide.avoid)+'</div>';
+    if (slide.avoid) more += '<div class="ros-box avoid"><strong>Avoid / Don\'t Get Pulled Into</strong>'+list(slide.avoid)+'</div>';
     if (slide.acrossTheWorld) more += acrossTheWorldBox(slide.acrossTheWorld);
     if (more) h += '<details class="ros-more"><summary>More for this slide</summary><div class="ros-more-body">'+more+'</div></details>';
     return h;
@@ -594,7 +516,7 @@ function renderRunOfShow(L, opts) {
       var cls = spent === 0 ? 'log-under' : (spent > target ? 'log-over' : 'log-good');
       return '<tr><td class="'+(i===state.phaseIndex?'current':'')+'">'+esc(p.label)+'</td>'
         + '<td>~'+p.minutes+' min</td>'
-        + '<td class="log-actual '+cls+'">'+(spent === 0 ? '\\u2014' : mmss(spent))+'</td></tr>';
+        + '<td class="log-actual '+cls+'">'+(spent === 0 ? '\u2014' : mmss(spent))+'</td></tr>';
     }).join('');
     var foot = '<tfoot><tr><td>Total</td><td>~'+RS.totalMinutes+' min</td><td class="log-actual">'+mmss(totalSpent)+'</td></tr></tfoot>';
     t.innerHTML = '<thead><tr><th>Phase</th><th>Target</th><th>Actual</th></tr></thead><tbody>'+rows+'</tbody>'+foot;
@@ -626,7 +548,7 @@ function renderRunOfShow(L, opts) {
   document.getElementById('ros-timer-newclass').addEventListener('click', startNewClass);
 
   // Notes, saved locally only
-  var notesKey = 'behistorical-run-of-show-notes-' + (DATA.meta.topic || '').replace(/\\s+/g, '-');
+  var notesKey = 'behistorical-run-of-show-notes-' + (DATA.meta.topic || '').replace(/\s+/g, '-');
   var notesEl = document.getElementById('ros-notes');
   try { notesEl.value = localStorage.getItem(notesKey) || ''; } catch (e) {}
   notesEl.addEventListener('input', function(){ try { localStorage.setItem(notesKey, notesEl.value); } catch (e) {} });
@@ -640,7 +562,3 @@ function renderRunOfShow(L, opts) {
 </script>
 </body>
 </html>
-`;
-}
-
-module.exports = { renderRunOfShow };

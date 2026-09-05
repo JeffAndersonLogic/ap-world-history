@@ -1442,6 +1442,64 @@ section('Remote image URLs are well formed');
   sectionDone(`${scanFiles.length} pages and scripts scanned for remote image URLs`);
 }
 
+// Run of Show is a teacher-only pacing cockpit, generated per topic from that
+// topic's own runOfShow block (see scripts/lib/run-of-show-page.js). The
+// declared list lives in scripts/build-run-of-show.js's TOPICS, the same
+// editorial-list shape as VOLUMES in build-ebook.js and DECKS in
+// build-student-decks.js: which topics have one is a fact to declare, not
+// something to discover by globbing every lesson data file for a runOfShow
+// key most of them don't have yet.
+//
+// Both directions are checked, the same reason deep readings are: a declared
+// topic whose data file lost its runOfShow block is a dead build, and a
+// teacher/run-of-show-*.html on disk that TOPICS does not name is a
+// hand-authored file no rebuild can reproduce.
+section('Run of Show pacing tool');
+{
+  let ROS_TOPICS = null;
+  try { ({ TOPICS: ROS_TOPICS } = require('./build-run-of-show.js')); } catch (e) { ROS_TOPICS = null; }
+  totalChecks++;
+  if (!ROS_TOPICS) {
+    err(path.join(ROOT, 'scripts', 'build-run-of-show.js'), 'does not load or export TOPICS');
+  } else {
+    const declared = new Set();
+    for (const topic of ROS_TOPICS) {
+      totalChecks++;
+      declared.add(topic.out);
+      const dataPath = path.join(ROOT, 'assets', 'data', topic.dataFile);
+      const src = read(dataPath);
+      if (!src) {
+        err(dataPath, `Run of Show declares ${topic.out} from this data file, but it does not exist`);
+        continue;
+      }
+      if (!/\brunOfShow\s*:/.test(src)) {
+        err(dataPath, `Run of Show declares ${topic.out} from this data file, but it has no runOfShow block`);
+      }
+      const outPath = path.join(ROOT, 'teacher', topic.out);
+      if (!exists(outPath)) {
+        err(outPath, 'Run of Show page missing, run: node scripts/build-run-of-show.js');
+      }
+    }
+
+    for (const found of glob(path.join(ROOT, 'teacher'), /^run-of-show-.*\.html$/)) {
+      totalChecks++;
+      if (!declared.has(path.basename(found))) {
+        err(found, 'Run of Show page has no entry in build-run-of-show.js TOPICS, a rebuild cannot reproduce it');
+      }
+    }
+
+    // A teacher tool, never linked from anything a student opens.
+    for (const file of [...lessonShells, ...unitFirst10, ...fHtmlFiles]) {
+      const page = read(file);
+      totalChecks++;
+      if (page && page.includes('run-of-show')) {
+        err(file, 'links the teacher Run of Show tool from a student-facing page');
+      }
+    }
+  }
+  sectionDone(`${ROS_TOPICS ? ROS_TOPICS.length : 0} Run of Show topic(s) generated and unlinked from student pages`);
+}
+
 //
 // The Lens reads a Canvas zip in the browser, using the identical parser the
 // command line uses. "Identical" is only true while the inlined copy matches

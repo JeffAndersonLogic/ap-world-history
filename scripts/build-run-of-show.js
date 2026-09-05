@@ -1,14 +1,23 @@
 #!/usr/bin/env node
 /*
- * Build the Run of Show teacher-cockpit prototype for the topics that have
- * authored one. PROTOTYPE ONLY: not linked from any student page, not part
- * of validate.js or any npm test. See scripts/lib/run-of-show-page.js for
- * why the content lives in each topic's lesson data file rather than here.
+ * Build the Run of Show teacher-cockpit view for the topics that have
+ * authored one. A teacher tool, like teacher/skills-lens.html: never linked
+ * from a student page, but a permanent surface with its own validate.js
+ * reachability check and a place in the offline suite (see
+ * scripts/test/readings-reproducible.test.js). See scripts/lib/run-of-show-page.js
+ * for why the content lives in each topic's lesson data file rather than here.
  *
  * TOPICS below is the one declared list, the same shape as VOLUMES in
  * build-ebook.js and DECKS in build-student-decks.js: which topics have a
  * Run of Show is an editorial fact, not something to discover by globbing
  * every lesson data file for a runOfShow key that most don't have yet.
+ * Coverage grows the same way the eBook's does, one authored topic at a
+ * time, not all 71 at once.
+ *
+ * Exports TOPICS before running, and guards the run with
+ * `if (require.main !== module) return`, the same reason build-ebook.js
+ * does: validate.js requires this file purely to read the list, and a
+ * require that silently rebuilt the thing being validated could never fail.
  */
 'use strict';
 
@@ -23,7 +32,11 @@ const CHECK = process.argv.includes('--check');
 const TOPICS = [
   { dataFile: 'lesson-1-4-americas.js', lessonFile: 'lesson-1-4-americas.html', unitDir: 'unit-1', out: 'run-of-show-topic-1-4.html' },
   { dataFile: 'lesson-1-5-africa.js', lessonFile: 'lesson-1-5-africa.html', unitDir: 'unit-1', out: 'run-of-show-topic-1-5.html' },
+  { dataFile: 'lesson-1-6-europe.js', lessonFile: 'lesson-1-6-europe.html', unitDir: 'unit-1', out: 'run-of-show-topic-1-6.html' },
 ];
+
+module.exports = { TOPICS };
+if (require.main !== module) return;
 
 function sandbox() {
   return {
