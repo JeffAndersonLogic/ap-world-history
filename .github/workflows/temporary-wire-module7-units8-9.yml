@@ -1,0 +1,75 @@
+name: Temporary wire Module 07 Units 8-9
+
+on:
+  push:
+    branches:
+      - module7-audit-units8-9
+
+permissions:
+  contents: write
+
+jobs:
+  wire-and-regenerate:
+    if: github.actor != 'github-actions[bot]' || contains(github.event.head_commit.message, 'Trigger Unit 8-9 Evidence Lab wiring')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: module7-audit-units8-9
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Wire active Evidence Lab registries
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const root = process.cwd();
+          const sets = {
+            8: [
+              'lesson-8-1-cold-war-stage.html',
+              'lesson-8-2-cold-war.html',
+              'lesson-8-3-effects-cold-war.html',
+              'lesson-8-4-spread-of-communism.html',
+              'lesson-8-5-decolonization.html',
+              'lesson-8-6-newly-independent-states.html',
+              'lesson-8-7-global-resistance.html',
+              'lesson-8-8-end-of-cold-war.html'
+            ],
+            9: [
+              'lesson-9-1-technology-exchange.html',
+              'lesson-9-2-disease.html',
+              'lesson-9-3-environment.html'
+            ]
+          };
+          for (const [unitText, names] of Object.entries(sets)) {
+            const unit = Number(unitText);
+            for (const name of names) {
+              const file = path.join(root, `unit-${unit}`, name);
+              let html = fs.readFileSync(file, 'utf8');
+              const registry = `../assets/data/module-07-evidence-unit-${unit}.js`;
+              if (html.includes(registry)) continue;
+              const marker = /<script src="\.\.\/assets\/js\/behistorical-topic-renderer-v1\.js[^\"]*"><\/script>/;
+              const match = html.match(marker);
+              if (!match) throw new Error(`Renderer marker not found in ${file}`);
+              const inject = `<script src="${registry}?v=20260905-b"></script><script src="../assets/js/module-07-evidence-runtime.js?v=20260905-b"></script>`;
+              html = html.replace(match[0], inject + match[0]);
+              fs.writeFileSync(file, html);
+              console.log(`wired ${file}`);
+            }
+          }
+          NODE
+      - name: Regenerate deterministic Unit 9 outputs
+        run: node scripts/build-unit9.js
+      - name: Commit generated wiring
+        run: |
+          if git diff --quiet; then
+            echo "No generated changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add unit-8 unit-9 assets/data beintheroom/unit-9
+          git commit -m "Wire Units 8-9 Module 07 Evidence Labs"
+          git push origin HEAD:module7-audit-units8-9
