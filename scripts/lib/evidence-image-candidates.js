@@ -82,20 +82,11 @@ module.exports = [
   {
     topic: '5.4',
     replaces: 'Russia builds the Trans-Siberian',
-    file: 'Tomioka_Silk_Mill_1872.jpg',
+    file: 'Tomioka_Silk_Mill.JPG',
     search: 'Tomioka silk',
     title: 'Tomioka Silk Mill',
-    caption: 'The Japanese government’s model silk filature, opened in 1872 with French machinery and a largely female workforce.',
-    prompt: 'NOTICE the machines, the building, and who is operating them. INFER what the Meiji state wanted this mill to demonstrate, beyond producing silk. What does a picture of the model factory not tell you about the ordinary ones?'
-  },
-  {
-    topic: '5.4',
-    replaces: null,
-    file: 'Yokohama_Railway.jpg',
-    search: 'Tokyo Yokohama railway ukiyo-e',
-    title: 'The Tokyo–Yokohama line in a woodblock print',
-    caption: 'A Japanese print of the railway opened in 1872, sold to a domestic audience in the year the line began running.',
-    prompt: 'NOTICE how the train is drawn and what has been placed around it. INFER what the print is selling to the people who bought it. How is a commercial print different as evidence from an official photograph of the same line?'
+    caption: 'The Japanese government’s model silk filature, opened in 1872 with French machinery, a French engineer and a largely female workforce. The building survives and is photographed here as it stands.',
+    prompt: 'NOTICE the construction: the brick, the window rhythm, the length of the range. INFER what the Meiji state was importing besides machinery, and what it wanted the mill to demonstrate beyond producing silk. This is the model factory, photographed long after: what does it not tell you about the ordinary ones?'
   },
 
   // ── Topic 5.5, technology of the second industrial revolution ───────────
