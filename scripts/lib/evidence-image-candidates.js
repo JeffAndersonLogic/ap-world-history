@@ -55,12 +55,17 @@
 // tapestry is hosted there as individual numbered scene photographs, not one
 // composite file, so a plausible single filename was never real, the same
 // shape of bug as Topic 1.5's Zimbabwe_Bird.jpg on 2026-09-05.
+//
+// The first guessed filename was also wrong; the search fallback below found
+// the real one, `Bayeux_Tapestry_scene51_Battle_of_Hastings_Norman_knights_
+// and_archers.jpg`, which is the scene the caption already describes: mounted
+// knights and archers at Hastings.
 
 module.exports = [
   {
     topic: '1.6',
     replaces: 'Bayeux Tapestry',
-    file: 'Tapisserie de Bayeux - Scene 51 -52 Norman knights and archers at the Battle of Hastings.jpg',
+    file: 'Bayeux_Tapestry_scene51_Battle_of_Hastings_Norman_knights_and_archers.jpg',
     search: 'Bayeux Tapestry knights battle Hastings scene',
     title: 'Bayeux Tapestry',
     caption: 'Political continuity evidence. The Bayeux Tapestry was embroidered in the 11th century, before Topic 1.6, and depicts elite warfare, mounted nobles, and contests over rulership.',
