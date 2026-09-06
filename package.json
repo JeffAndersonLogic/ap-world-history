@@ -47,7 +47,8 @@
     "check:schedule": "node scripts/test/schedule-cohorts.test.js",
     "build:wordmark": "node scripts/build-wordmark.js",
     "check:module07": "node scripts/check-module07-authored.js",
-    "report:evidence": "node scripts/report-evidence-authenticity.js"
+    "report:evidence": "node scripts/report-evidence-authenticity.js",
+    "source:images": "node scripts/source-evidence-images.js"
   },
   "devDependencies": {
     "playwright": "^1.49.0"

@@ -313,63 +313,9 @@ async function checkWithRetries(url, expectImage) {
 // and it rotates because a fixed sample verifies the same corner forever.
 const API_BATCH = Number(process.env.IMAGE_CHECK_API_BATCH || 50);
 const SAMPLE_SIZE = Number(process.env.IMAGE_CHECK_SAMPLE || 25);
-const COMMONS_API = process.env.IMAGE_CHECK_API
-  || 'https://commons.wikimedia.org/w/api.php';
-
-// The file title inside a Commons URL, or null when this is not one.
-function commonsTitle(url) {
-  const m = String(url).match(/\/(?:Special:(?:FilePath|Redirect)\/(?:file\/)?|wiki\/File:)([^?#]+)/i);
-  if (!m) return null;
-  try { return decodeURIComponent(m[1]).replace(/_/g, ' ').trim(); }
-  catch { return m[1].replace(/_/g, ' ').trim(); }
-}
-
-function getJson(url) {
-  return new Promise((resolve) => {
-    const agent = url.startsWith('http://') ? http : https;
-    const request = agent.request(url, { method: 'GET', headers: {
-      'User-Agent': 'BeHistorical-image-check/2.0 (AP World History course validator)',
-      Accept: 'application/json'
-    } }, (response) => {
-      if (response.statusCode !== 200) { response.resume(); return resolve(null); }
-      let body = '';
-      response.setEncoding('utf8');
-      response.on('data', (c) => { body += c; });
-      response.on('end', () => { try { resolve(JSON.parse(body)); } catch { resolve(null); } });
-    });
-    request.setTimeout(TIMEOUT_MS, () => { request.destroy(); resolve(null); });
-    request.on('error', () => resolve(null));
-    request.end();
-  });
-}
-
-/**
- * Asks Commons about a batch of titles. Returns a Map of title -> true/false
- * for the ones it answered about, and an empty Map when the call failed, which
- * leaves every URL to the direct path rather than guessing.
- */
-async function askCommons(titles, endpoint) {
-  const known = new Map();
-  const query = `${endpoint || COMMONS_API}?action=query&format=json&formatversion=2&prop=imageinfo`
-    + `&iiprop=url|mime&titles=${encodeURIComponent(titles.map(t => `File:${t}`).join('|'))}`;
-  const data = await getJson(query);
-  const pages = data && data.query && data.query.pages;
-  if (!Array.isArray(pages)) return known;
-
-  // Commons rewrites titles it normalized or followed a redirect for, so the
-  // answer has to be mapped back to what was asked rather than matched by name.
-  const back = new Map();
-  for (const kind of ['normalized', 'redirects']) {
-    for (const row of (data.query[kind] || [])) back.set(row.to, row.from);
-  }
-  const asked = new Set(titles.map(t => `File:${t}`));
-  for (const page of pages) {
-    let title = page.title;
-    while (back.has(title) && !asked.has(title)) title = back.get(title);
-    known.set(String(title).replace(/^File:/, ''), !page.missing);
-  }
-  return known;
-}
+// commonsTitle, getJson and askCommons live in scripts/lib/commons-api.js so
+// that the sourcing tool asks Commons the same way this sweep does.
+const { COMMONS_API, commonsTitle, askCommons } = require('./lib/commons-api');
 
 function prettyName(url) {
   return decodeURIComponent(url.replace(/^.*\/(?:Special:(?:FilePath|Redirect)\/(?:file\/)?|File:)?/, ''));
@@ -394,7 +340,7 @@ async function sweep(urls, kindOf, opts) {
     const titles = [...new Set(titleFor.values())];
     for (let i = 0; i < titles.length; i += API_BATCH) {
       if (remainingBudget() <= 0) break;
-      const answered = await askCommons(titles.slice(i, i + API_BATCH), apiEndpoint);
+      const answered = await askCommons(titles.slice(i, i + API_BATCH), apiEndpoint, TIMEOUT_MS);
       for (const [title, exists] of answered) apiAnswered.set(title, exists);
     }
   }

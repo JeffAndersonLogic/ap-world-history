@@ -79,6 +79,20 @@ Every script below also has an `npm run` alias; see `package.json`.
   PASS, FAIL, or SKIP per check and exits 1 if anything failed.
 - `node scripts/check-image-urls.js`, verify every remote Commons image URL actually resolves. Needs internet access to `commons.wikimedia.org`; `validate.js` stays offline on purpose and cannot do this. **It separates "gone" from "not verified"**, see "Rate limiting is not a broken image" below. Exit 1 means a picture is genuinely missing, exit 2 means nothing could be checked at all.
 - `node scripts/test/image-check-throttle.test.js`, prove that separation against a local server that rate-limits on demand: `Retry-After` obeyed in both its forms, a 429 pausing every worker on that host rather than one request, a throttled URL that later answers reported as fine, a permanent 429 or a proxy 403 reported as unverified rather than broken, and a real 404 still failing the run. Offline and in the push gate, because the real host cannot be a test fixture.
+- `node scripts/source-evidence-images.js [topic] [--apply]`, verify staged Module
+  07 image candidates against Commons and apply only the ones that resolve.
+  Candidates live in `scripts/lib/evidence-image-candidates.js` and are loaded by
+  nothing; a candidate reaches a lesson page only on a live answer in that run. A
+  dead filename prints the files Commons actually has for its search query, to
+  choose from by eye. **Exit 2 means it verified nothing** because Commons could
+  not be reached, which is not a pass. Refuses Units 6 and 9, whose pools their
+  generators own. See "Sourcing images" in
+  `docs/module-07-units-5-6-8-9-conversion.md`.
+- `node scripts/test/evidence-image-surgery.test.js`, drive the real config
+  splice against a config carrying the two traps that have bitten it: a card
+  title that also appears in `stableImages`, and a bracket inside a caption. In
+  the offline suite, because the corruption it prevents is silent, every page
+  still renders and every structural check stays green.
 - `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
 - `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets and success criteria out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand. `--check` fails on drift, which is what the offline suite runs.
@@ -792,6 +806,17 @@ that no renderer reads. Units 3 and 4 carried an items bank and no `images`
 array, so for twelve topics the Evidence Lab drew its task and zero evidence
 cards; the report is what surfaced that, and both units are now converted. If a
 topic's evidence looks good in the data file and thin on the page, this is why.
+
+**Never write a Commons filename straight into a lesson.** A filename from memory
+is indistinguishable from a correct one until something fetches it: the name is
+well formed, `validate.js` passes, the page renders, and the student gets local
+fallback artwork and no evidence. Stage it in
+`scripts/lib/evidence-image-candidates.js`, run `node
+scripts/source-evidence-images.js`, and let the tool apply only what Commons
+actually served in that run. The machine answers "does this exist"; whether it is
+the right picture is still a person's call, which is why a dead candidate prints
+real search results instead of taking the top hit. Delete a candidate from the
+staging file once it lands.
 
 **Verify the pictures resolve before certifying a batch.** `validate.js` only
 knows whether a filename is well formed. Topic 1.5 was graded A at 11:30 on

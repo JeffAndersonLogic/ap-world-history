@@ -146,6 +146,13 @@
       prompt: 'What political principle is visible here? What additional evidence would you need before claiming the Revolution transformed social equality?'
     },
     {
+      title: 'The Bastille falls, 14 July 1789',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Prise_de_la_Bastille.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille.jpg',
+      caption: 'Gouache by Jean-Pierre Houël, made in 1789, the year of the event. The Bastille was a royal prison and armoury holding seven prisoners that day.',
+      prompt: 'NOTICE who is shown doing the fighting, and what kind of building is under attack. INFER what the attackers wanted from this particular target rather than from the monarchy in general. What can a picture made in the same year show you that a painting produced fifty years later could not?'
+    },
+    {
       title: 'French rights declaration',
       label: 'Primary-source excerpt · Declaration of the Rights of Man and of the Citizen, 1789',
       sourceText: [

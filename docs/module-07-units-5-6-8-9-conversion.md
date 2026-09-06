@@ -85,6 +85,18 @@ spread of industrialization, technology, state-led industry, finance and labor
 reform is the next real content job. It is not done here because this conversion
 does not invent Commons filenames.
 
+**2026-09-06, what was done about that.** Two things, and neither of them is
+"typed some filenames in".
+
+The repository owned exactly one period picture that was not already placed:
+`Prise_de_la_Bastille.jpg`, Houël's gouache of July 1789, which has been on the
+front door as the Unit 5 hub card photograph all along. It is now also Topic
+5.2's second object. Nothing about it needed verifying that was not already
+being verified every time a student loads `index.html`.
+
+Everything else needs a network, so the sourcing job became a tool rather than a
+guess. See "Sourcing images" below.
+
 **Unit 5's module-card artwork is from the wrong period.** Topics 5.1 to 5.8 point
 their `stableImages` at Columbus, Magellan, Vasco da Gama, a casta painting and
 the Florentine Codex, which are Unit 4 images on a unit that starts in 1750. That
@@ -119,3 +131,72 @@ two contract checks that guarded that path. Nothing in the repository can
 overwrite a topic's evidence at load. If a future topic's evidence looks wrong on
 the page, it is wrong in that topic's renderer config, or in the generator that
 writes it, and nowhere else.
+
+## Sourcing images
+
+Sourcing pictures is the one job in this repository that cannot be done from
+knowledge, and the reason is worth stating plainly: **a Commons filename written
+from memory is indistinguishable from a correct one until something fetches it.**
+`validate.js` confirms the name is well formed. Every structural check passes.
+The lesson page renders. The student gets local fallback artwork and no evidence
+at all. Topic 1.5 was graded A at 11:30 on 2026-09-05 with two dead Commons links
+in its pool and was fixed at 13:28 and 14:06 the same afternoon.
+
+So candidates are staged, not written straight into a lesson.
+
+- `scripts/lib/evidence-image-candidates.js` is the staging area. Nothing in it
+  is loaded by any page. Each entry carries the proposed filename, a **search
+  query to fall back on when that filename is wrong**, and the card as it should
+  read: title, caption, prompt.
+- `node scripts/source-evidence-images.js [topic]` asks Commons whether each
+  file exists, then fetches the URL a student's browser would actually hit,
+  because those are two different questions: a thumbnail name handed to
+  `Special:FilePath` earns HTTP 400 while the underlying file is fine. It prints
+  what it found and applies nothing.
+- `--apply` writes the verified ones into their topics' renderer configs, and
+  only the verified ones.
+- A candidate that turns out not to exist prints the files Commons really has for
+  that search, with their page URLs, to look at and choose from.
+
+**The split is the same one the authenticity report and the authored-pool check
+already draw.** The machine decides whether a picture exists; a person decides
+whether it is the right picture. A file can resolve perfectly and show the wrong
+thing, and the Image Contract is explicit that an empty `url` beats a picture
+that does not match its caption. That is why a dead candidate prints search
+results rather than quietly taking the top hit.
+
+**Three outcomes, and the last two are not the same.** *Verified*, the host
+served image bytes. *Missing*, the host answered and the answer was no.
+*Unverified*, the host declined to answer: a proxy 403, a 429, a timeout, a
+network that cannot reach Commons. A decline reported as missing would mean a
+blocked network reads as a dozen pictures that do not exist, which is the defect
+that made the nightly image report worth skimming before it was split the same
+way.
+
+**A run that verified nothing exits 2, not 0.** Same convention as a skipped
+browser test: a run that applied nothing because it could not reach Commons must
+never look like a run that found nothing to do. This matters more than it sounds,
+because the environment that cannot reach Commons is the sandbox this work is
+done in, which is precisely where nobody is watching for it.
+
+**`scripts/test/evidence-image-surgery.test.js` is in the offline suite**,
+covering the half that can corrupt a file silently. Editing a renderer config by
+text is dangerous and has already gone wrong here: while converting Units 3 and
+4, a matcher looking for a card by title found `stableImages` first and replaced
+a map-key entry on Topics 3.1 and 3.4. Both files still parsed, both pages still
+rendered, and every structural check stayed green. The test drives the real
+splice against exactly that shape.
+
+**A candidate that lands gets deleted from the staging file.** It is a staging
+area, not a record of what the course uses. A landed candidate left there is a
+second copy of a card whose first copy is the renderer config, and the two can
+then disagree with nothing to report it.
+
+**Units 6 and 9 are refused.** Their pools are written by `build-unit6.js` and
+`build-unit9.js`, so a card belongs in that generator's `MODULE07_EVIDENCE` map;
+editing the renderer config would survive until the next rebuild. The tool
+derives that list from the generators rather than keeping its own.
+
+Twelve candidates for Units 5.1 and 5.3 to 5.8 are staged and **not one of them
+is verified**, because this sandbox cannot reach commons.wikimedia.org. Run the
+tool from a real network before believing any of them.
