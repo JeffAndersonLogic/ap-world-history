@@ -49,20 +49,21 @@
 //              and never supplies the conclusion; the prompt runs
 //              NOTICE -> INFER, per docs/module-07-scaffolding-standard.md.
 //
-// The Unit 5 batch below is the first use. Unit 5 is the weakest unit in the
-// course on authenticity: seven of its ten topics carry one object, their own
-// instructional map, because the pictures for the Enlightenment, the Atlantic
-// revolutions and industrialization were never in this repository to recover.
-// See docs/module-07-units-5-6-8-9-conversion.md.
+// **2026-09-06, Topic 1.6.** A teacher reported the Bayeux Tapestry card
+// rendering as blank fallback art. `--describe 1.6` confirmed why:
+// `Bayeux_Tapestry.jpg` does not exist on Commons at all, "(no title)". The
+// tapestry is hosted there as individual numbered scene photographs, not one
+// composite file, so a plausible single filename was never real, the same
+// shape of bug as Topic 1.5's Zimbabwe_Bird.jpg on 2026-09-05.
 
-// **Empty, and that is the resting state.** The Unit 5 batch of 2026-09-06 has
-// landed and its entries are deleted, per the rule above. Twelve candidates
-// went in, eight of the twelve filenames were wrong, four rounds of search
-// resolved eleven, and one was dropped unresolved: a period woodblock print of
-// the Tokyo to Yokohama railway of 1872, for Topic 5.4, which three searches
-// could not find. That is recorded in
-// docs/module-07-units-5-6-8-9-conversion.md as outstanding rather than left
-// staged here, because a candidate with no working filename and no working
-// search reports "missing" forever and teaches people to ignore the report.
-
-module.exports = [];
+module.exports = [
+  {
+    topic: '1.6',
+    replaces: 'Bayeux Tapestry',
+    file: 'Tapisserie de Bayeux - Scene 51 -52 Norman knights and archers at the Battle of Hastings.jpg',
+    search: 'Bayeux Tapestry knights battle Hastings scene',
+    title: 'Bayeux Tapestry',
+    caption: 'Political continuity evidence. The Bayeux Tapestry was embroidered in the 11th century, before Topic 1.6, and depicts elite warfare, mounted nobles, and contests over rulership.',
+    prompt: 'NOTICE one detail about warriors, leaders, or military service. What can you INFER about elite political relationships that continued into the period after c. 1200? What can this earlier source not prove about later medieval Europe by itself?'
+  }
+];
