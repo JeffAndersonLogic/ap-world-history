@@ -143,8 +143,8 @@
       title: 'Tomioka Silk Mill',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tomioka_Silk_Mill.JPG?width=1200',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Tomioka_Silk_Mill.JPG',
-      caption: 'The Japanese government’s model silk filature, opened in 1872 with French machinery, a French engineer and a largely female workforce. The building survives and is photographed here as it stands.',
-      prompt: 'NOTICE the construction: the brick, the window rhythm, the length of the range. INFER what the Meiji state was importing besides machinery, and what it wanted the mill to demonstrate beyond producing silk. This is the model factory, photographed long after: what does it not tell you about the ordinary ones?'
+      caption: 'The Japanese government’s model silk filature, opened in 1872 with French machinery, a French engineer and a largely female workforce. Photographed during the Meiji era by the Imperial Household Ministry.',
+      prompt: 'NOTICE the construction: the brick, the window rhythm, the length of the range. INFER what the Meiji state was importing besides machinery, and what it wanted the mill to demonstrate beyond producing silk. The government commissioned this photograph of its own model factory: what would it not tell you about the ordinary ones?'
     }
   ];
 

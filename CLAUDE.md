@@ -813,7 +813,11 @@ well formed, `validate.js` passes, the page renders, and the student gets local
 fallback artwork and no evidence. Stage it in
 `scripts/lib/evidence-image-candidates.js`, run `node
 scripts/source-evidence-images.js`, and let the tool apply only what Commons
-actually served in that run. The machine answers "does this exist"; whether it is
+actually served in that run. **Then run `--describe <unit>` and read what
+Commons says each picture is against the caption written for it**: a file that
+resolves is not the same thing as the right picture. On Unit 5 that caught a
+commemorative medal captioned as a photograph of the Suez opening procession,
+which had passed every other check in the repository. The machine answers "does this exist"; whether it is
 the right picture is still a person's call, which is why a dead candidate prints
 real search results instead of taking the top hit. Delete a candidate from the
 staging file once it lands.

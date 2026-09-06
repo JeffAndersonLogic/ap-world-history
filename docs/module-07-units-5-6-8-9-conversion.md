@@ -238,6 +238,39 @@ recorded here rather than left in the staging file, because a candidate with no
 working filename and no working search reports "missing" forever, and a report
 that is permanently red for something nobody can fix is one people stop reading.
 
+### Existence is not identity, and the second check found a real one
+
+A file that resolves is not the same thing as the right picture. The Image
+Contract already says an empty `url` beats a picture that does not match its
+caption, and after the eleven landed there was no way to tell whether they did:
+the fetch proves a URL serves bytes and says nothing about what is in them.
+
+So `--describe` asks Commons what a topic's pictures actually are, and prints
+each file's own title, date, artist and description beside the caption written
+for it. Run against Unit 5's seventeen pictures, it found four cards to fix and
+one of them was wrong outright:
+
+- **The Suez file is a commemorative medal, not the opening procession.** Commons
+  records it as numismatics, by the medallist Charles Trotin, 7.3 cm across. The
+  caption described a scene that is not in the picture. The card is now about the
+  medal, which is the better card anyway: what a commemorative object leaves out
+  is the lesson, and this one leaves out the Egyptian labour that dug the canal.
+- **The Tomioka photograph is Meiji-era**, credited to the Imperial Household
+  Ministry, not a modern picture of the surviving building as the caption
+  claimed. That card was underselling itself.
+- Houël's Bastille is a **watercolour**, not a gouache.
+- The Punch cartoon can now cite **R. J. Hamerton, July to December 1843, page
+  49**, because Commons carries it.
+
+**The Suez one is the case that justifies the check.** It resolved. It rendered.
+It would have passed every gate in this repository, and a student would have been
+asked to notice whose ships were at the centre of a scene that was a medal.
+
+This is where the split ends: the machine can answer whether a file exists, and
+it can put in front of a person what that file claims to be. It cannot decide
+whether that matches the teaching. **Read the describe output against your own
+captions after any batch lands.**
+
 **Unit 5's module-card artwork is still from the wrong period.** Topics 5.1 to
 5.8 point their `stableImages` at Columbus, Magellan, Vasco da Gama, a casta
 painting and the Florentine Codex. That is Module 07's neighbour rather than

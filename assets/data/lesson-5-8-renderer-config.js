@@ -148,7 +148,7 @@
       title: '“Capital and Labour”, Punch, 1843',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_1843_-_Reichtum_und_Armut.png?width=1200',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Punch_1843_-_Reichtum_und_Armut.png',
-      caption: 'A Punch cartoon contrasting a wealthy household above ground with the mine workings beneath it, published the year after the Mines Act barred women and young children underground.',
+      caption: 'R. J. Hamerton in Punch, July to December 1843, page 49, contrasting a wealthy household above ground with the mine workings beneath it. Published the year after the Mines Act barred women and young children underground.',
       prompt: 'NOTICE what is happening in the upper half and the lower half, and how the two are joined. INFER the argument the cartoonist is making about where wealth comes from. What does a satirical magazine tell you about its readers as well as its subject?'
     }
   ];

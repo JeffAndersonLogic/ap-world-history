@@ -128,11 +128,11 @@
       prompt: 'What historical process becomes possible when information outruns physical travel? How could you connect this to trade or empire?'
     },
     {
-      title: 'The Suez Canal opens, 1869',
+      title: 'A medal struck for the opening of the Suez Canal',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Inauguration_et_ouverture_%C3%A0_la_navigation_du_Canal_de_Suez%2C_17_novembre_1869%2C_ND314.jpg?width=1200',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Inauguration_et_ouverture_%C3%A0_la_navigation_du_Canal_de_Suez%2C_17_novembre_1869%2C_ND314.jpg',
-      caption: 'The opening procession of November 1869. The canal was cut through Egyptian territory with Egyptian labour and controlled by a French company.',
-      prompt: 'NOTICE whose ships and whose dignitaries are at the centre of this scene. INFER who the canal was built to serve. What is missing from a picture of an opening ceremony that you would need to judge the cost?'
+      caption: 'A commemorative medal by the French medallist Charles Trotin, about 1869, 7.3 cm across. Struck to mark the inauguration of 17 November 1869.',
+      prompt: 'NOTICE what is shown on the medal, and what language it is inscribed in. INFER who had it struck, for whom, and whose achievement it says the canal was. The canal was cut through Egyptian territory by Egyptian labour: what does an object like this leave out, and why would it?'
     },
     {
       title: 'Electric power enters the city',
