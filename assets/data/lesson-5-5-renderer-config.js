@@ -111,14 +111,11 @@
       prompt: 'NOTICE which chokepoints and cables the map marks. INFER what controlling one of them would be worth. What does a map of infrastructure not show about who paid for it?'
     },
     {
-      title: 'Bessemer process',
-      label: 'Patent and process record · 1856',
-      sourceText: [
-        'Air blown through molten iron removed impurities.',
-        'Steel became cheaper to produce at large scale.'
-      ],
-      caption: 'A process patent of 1856: the change that made steel cheap.',
-      prompt: 'What industries could change when steel became cheaper? What evidence would you need to measure how quickly the process spread?'
+      title: 'A Bessemer converter in operation',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bessemer_converter.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bessemer_converter.jpg',
+      caption: 'The vessel that made bulk steel cheap by blowing air through molten iron. Steel fell from a specialty metal to a structural one within a generation.',
+      prompt: 'NOTICE the scale of the vessel against the people working near it. INFER what changed about what could now be built, and about what the work was like. What does the photograph not show you about who owned it?'
     },
     {
       title: 'Permanent transatlantic telegraph',
@@ -131,14 +128,11 @@
       prompt: 'What historical process becomes possible when information outruns physical travel? How could you connect this to trade or empire?'
     },
     {
-      title: 'Suez Canal opens',
-      label: 'Infrastructure record · 1869',
-      sourceText: [
-        'Mediterranean connected directly to the Red Sea.',
-        'Europe–Asia sea routes became much shorter.'
-      ],
-      caption: 'A canal opened in 1869, and what it did to the distance between Europe and Asia.',
-      prompt: 'What claim about steamship-era trade could this support? What does route distance alone fail to show about control or cost?'
+      title: 'The Suez Canal opens, 1869',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Inauguration_et_ouverture_%C3%A0_la_navigation_du_Canal_de_Suez%2C_17_novembre_1869%2C_ND314.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Inauguration_et_ouverture_%C3%A0_la_navigation_du_Canal_de_Suez%2C_17_novembre_1869%2C_ND314.jpg',
+      caption: 'The opening procession of November 1869. The canal was cut through Egyptian territory with Egyptian labour and controlled by a French company.',
+      prompt: 'NOTICE whose ships and whose dignitaries are at the centre of this scene. INFER who the canal was built to serve. What is missing from a picture of an opening ceremony that you would need to judge the cost?'
     },
     {
       title: 'Electric power enters the city',

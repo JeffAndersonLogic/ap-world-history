@@ -127,14 +127,11 @@
       prompt: 'How could limited liability increase the amount of capital available to firms? What does the law not prove about who benefited?'
     },
     {
-      title: 'Standard Oil scales up',
-      label: 'Business record · United States, founded 1870',
-      sourceText: [
-        'Refining, transport, and distribution were coordinated at enormous scale.',
-        'Competitors faced a much larger integrated firm.'
-      ],
-      caption: 'One firm coordinating refining, transport and distribution, founded in 1870.',
-      prompt: 'What claim about concentration or economies of scale could this support? What additional evidence is needed before calling market power a monopoly?'
+      title: 'Standard Oil as an octopus',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Standard_oil_octopus_loc_color.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Standard_oil_octopus_loc_color.jpg',
+      caption: 'Udo Keppler in Puck, 1904, published two years before the federal antitrust suit against Standard Oil.',
+      prompt: 'NOTICE what the tentacles are holding and what one of them is reaching towards. INFER what the cartoonist believed vertical integration had reached beyond the oil business. This was drawn after 1900: how does that change what it can be evidence for in this unit?'
     },
     {
       title: 'Transnational banking',
@@ -147,14 +144,11 @@
       prompt: 'How did banking reduce barriers to long-distance business? What political context shaped where this finance could operate?'
     },
     {
-      title: 'Commodity exchanges and price information',
-      label: 'Market institution · nineteenth-century exchanges',
-      sourceText: [
-        'Standardized contracts linked distant producers and buyers.',
-        'Telegraphy made price information move quickly.'
-      ],
-      caption: 'Standardized contracts and fast price information, which together change what a distant producer can know.',
-      prompt: 'How could standardized contracts and rapid information reduce uncertainty? What kinds of producers might still remain vulnerable?'
+      title: '“The Bosses of the Senate”, 1889',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg',
+      caption: 'Joseph Keppler in Puck, 1889. The trusts are drawn as figures in the Senate chamber; the public entrance is marked closed.',
+      prompt: 'NOTICE the relative size of the figures and what the two doors are labelled. INFER what claim the cartoonist is making about corporate scale and government. A cartoon is an accusation: what evidence would you need to test it?'
     }
   ];
 

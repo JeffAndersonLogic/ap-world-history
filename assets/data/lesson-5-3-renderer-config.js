@@ -132,14 +132,11 @@
       prompt: 'Which observable features distinguish factory production from household production? What claim can this card support about organization of labor?'
     },
     {
-      title: 'Coal and iron near transport routes',
-      label: 'Secondary map reconstruction · Britain, late 1700s',
-      sourceText: [
-        'Coalfields clustered near industrial districts.',
-        'Canals and ports linked fuel, factories, and markets.'
-      ],
-      caption: 'The geographic argument stated as a claim that can be tested against the map above.',
-      prompt: 'How could geography lower production costs? What non-geographic cause would you pair with this evidence to avoid environmental determinism?'
+      title: 'Coalbrookdale by Night, 1801',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Philipp_Jakob_Loutherbourg_d._J._002.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Philipp_Jakob_Loutherbourg_d._J._002.jpg',
+      caption: 'Philip James de Loutherbourg, 1801, showing the Bedlam Furnaces in the Severn Gorge. Painted while the works were running.',
+      prompt: 'NOTICE what is producing the light in this picture, and what time of day it is. INFER what changed about when and how long work could happen. What would this painter have gained by making the scene more dramatic than it was?'
     }
   ];
 

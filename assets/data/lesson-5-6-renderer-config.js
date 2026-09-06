@@ -135,14 +135,11 @@
       prompt: 'What does the sequence state-build then private-sale suggest about government’s role? What would count as evidence of private initiative?'
     },
     {
-      title: 'Iwakura Mission',
-      label: 'Diplomatic and study mission · 1871–1873',
-      sourceText: [
-        'Officials inspected schools, factories, armies, and legal systems abroad.',
-        'Knowledge gathering became state policy.'
-      ],
-      caption: 'A two-year official mission abroad, undertaken by a government at the start of its reforms.',
-      prompt: 'How can observation abroad become an industrial policy mechanism? What does a study mission not prove about domestic results?'
+      title: 'The Iwakura Mission, 1872',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Iwakura_mission.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Iwakura_mission.jpg',
+      caption: 'Five leaders of the Meiji government photographed abroad during a two-year study tour of the United States and Europe. Iwakura Tomomi is in Japanese dress; the others are not.',
+      prompt: 'NOTICE what each man is wearing and where he is standing. INFER what decision about Japan’s future the photograph is making visible. A posed photograph is an argument: what is this one arguing?'
     },
     {
       title: 'Witte and Russian rail finance',
@@ -155,14 +152,11 @@
       prompt: 'How does this mix of state direction and foreign capital complicate a simple state-versus-market comparison?'
     },
     {
-      title: 'Muhammad Ali’s Egyptian factories',
-      label: 'State industrial experiment · Egypt, early 1800s',
-      sourceText: [
-        'The state monopolized key crops and funded textile and arms production.',
-        'Many projects depended on coercive taxation and labor.'
-      ],
-      caption: 'State-led industry built on monopolized crops and coerced labor, and it did not last.',
-      prompt: 'What does this example suggest about the costs of state-led industrialization? Why did state sponsorship not guarantee sustained industrial growth?'
+      title: 'Muhammad Ali of Egypt',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/ModernEgypt%2C_Muhammad_Ali_by_Auguste_Couder%2C_BAP_17996.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:ModernEgypt%2C_Muhammad_Ali_by_Auguste_Couder%2C_BAP_17996.jpg',
+      caption: 'A commissioned portrait of the Ottoman governor who built state arms factories, textile mills and a conscript army in Egypt from the 1810s.',
+      prompt: 'NOTICE how the sitter is dressed, seated and lit, and what he is holding. INFER what claim about his authority the portrait is composed to make. A ruler chooses how a commissioned portrait shows him: how does that make it evidence rather than decoration?'
     }
   ];
 

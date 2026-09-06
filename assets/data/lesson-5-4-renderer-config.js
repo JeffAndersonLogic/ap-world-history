@@ -140,14 +140,11 @@
       prompt: 'How could market integration accelerate industrialization? What would you need to show that policy caused industrial growth rather than merely accompanying it?'
     },
     {
-      title: 'Russia builds the Trans-Siberian',
-      label: 'Infrastructure record · construction began 1891',
-      sourceText: [
-        'State-backed railway construction crossed Eurasia.',
-        'The line linked resources, settlers, and markets to the imperial core.'
-      ],
-      caption: 'A state building a railway across a continent, begun in 1891 with foreign borrowing.',
-      prompt: 'How does this card differ from a laissez-faire model of industrialization? What costs or limits are invisible in an infrastructure record?'
+      title: 'Tomioka Silk Mill',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tomioka_Silk_Mill.JPG?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Tomioka_Silk_Mill.JPG',
+      caption: 'The Japanese government’s model silk filature, opened in 1872 with French machinery, a French engineer and a largely female workforce. The building survives and is photographed here as it stands.',
+      prompt: 'NOTICE the construction: the brick, the window rhythm, the length of the range. INFER what the Meiji state was importing besides machinery, and what it wanted the mill to demonstrate beyond producing silk. This is the model factory, photographed long after: what does it not tell you about the ordinary ones?'
     }
   ];
 

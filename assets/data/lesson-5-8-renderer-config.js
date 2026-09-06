@@ -138,24 +138,18 @@
       prompt: 'What does regulation suggest about changing ideas of state responsibility? What labor problems remained outside the law?'
     },
     {
-      title: 'Trade Union Act of 1871',
-      label: 'Legal record · Britain',
-      sourceText: [
-        'Trade unions gained clearer legal recognition.',
-        'Collective organization became more secure.'
-      ],
-      caption: 'Legal recognition in 1871, which is a different response from either revolution or charity.',
-      prompt: 'How does legal recognition differ from revolutionary socialism as a response to industrial inequality?'
+      title: 'The Chartist meeting at Kennington Common, 1848',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/William_Edward_Kilburn_-_View_of_the_Great_Chartist_Meeting_on_Kennington_Common_-_Google_Art_Project.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:William_Edward_Kilburn_-_View_of_the_Great_Chartist_Meeting_on_Kennington_Common_-_Google_Art_Project.jpg',
+      caption: 'A daguerreotype of the Chartist gathering of 10 April 1848, one of the earliest photographs of a crowd. The Chartists were demanding the vote for working men.',
+      prompt: 'NOTICE how many people are present and how they are dressed. INFER what kind of movement this was and who was in it. The photographer was working for the Crown: how does knowing that change how you read the picture?'
     },
     {
-      title: 'Bismarck’s social insurance',
-      label: 'Policy record · Germany, 1883–1889',
-      sourceText: [
-        'Health, accident, and old-age insurance programs were created.',
-        'Conservative government adopted social welfare measures.'
-      ],
-      caption: 'Social insurance introduced by a conservative government that had just outlawed the socialist party.',
-      prompt: 'How can this evidence support a claim that states adapted to labor pressure without abandoning capitalism?'
+      title: '“Capital and Labour”, Punch, 1843',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_1843_-_Reichtum_und_Armut.png?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Punch_1843_-_Reichtum_und_Armut.png',
+      caption: 'A Punch cartoon contrasting a wealthy household above ground with the mine workings beneath it, published the year after the Mines Act barred women and young children underground.',
+      prompt: 'NOTICE what is happening in the upper half and the lower half, and how the two are joined. INFER the argument the cartoonist is making about where wealth comes from. What does a satirical magazine tell you about its readers as well as its subject?'
     }
   ];
 

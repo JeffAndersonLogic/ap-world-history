@@ -197,6 +197,48 @@ then disagree with nothing to report it.
 editing the renderer config would survive until the next rebuild. The tool
 derives that list from the generators rather than keeping its own.
 
-Twelve candidates for Units 5.1 and 5.3 to 5.8 are staged and **not one of them
-is verified**, because this sandbox cannot reach commons.wikimedia.org. Run the
-tool from a real network before believing any of them.
+### The first real run, and what it proved
+
+Twelve candidates were staged for Units 5.1 and 5.3 to 5.8 on 2026-09-06 and
+checked from a GitHub runner. **Eight of the twelve filenames did not exist.**
+Every one of the eight was written by someone who was confident about it, and
+every one of the eight would have passed `validate.js`, rendered a lesson page,
+and shown a student local fallback artwork instead of evidence. That is the
+whole argument for this pipeline, made in one run.
+
+The fallback search resolved seven of the eight over three further rounds, and
+the corrections are not the sort of thing anyone guesses:
+
+| Wanted | Actually on Commons |
+|---|---|
+| Muhammad Ali portrait | `ModernEgypt, Muhammad Ali by Auguste Couder, BAP 17996.jpg` |
+| Standard Oil octopus | `Standard oil octopus loc color.jpg` |
+| Chartist daguerreotype | the Google Art Project scan of Kilburn's original |
+| Coalbrookdale by Night | `Philipp Jakob Loutherbourg d. J. 002.jpg`, by painter not painting |
+| Suez opening | `Inauguration et ouverture à la navigation du Canal de Suez, 17 novembre 1869, ND314.jpg` |
+| Punch, "Capital and Labour" | `Punch 1843 - Reichtum und Armut.png`, filed under its German title |
+
+Two more things the run taught, both about the searches rather than the files.
+**A search written as a description of the picture returns nothing**: five
+queries of six or seven words all came back empty and all found something once
+cut to two or three. And **a search can return a different picture than the one
+asked for, which is a content decision, not a correction**: Tomioka came back as
+a photograph of the surviving mill rather than the Meiji print that was wanted,
+so the card's caption and prompt were rewritten to be about the building. Fitting
+a found file to a caption written for a different picture is exactly the defect
+the Image Contract names.
+
+Eleven of the twelve landed. Unit 5 went from 15 objects across 52 cards, with
+seven topics carrying a single object and five flagged "mostly author summary",
+to **27 objects across 53, every topic green and none flagged**.
+
+**One is still outstanding**: a period woodblock print of the Tokyo to Yokohama
+railway of 1872, for Topic 5.4, which three searches could not find. It is
+recorded here rather than left in the staging file, because a candidate with no
+working filename and no working search reports "missing" forever, and a report
+that is permanently red for something nobody can fix is one people stop reading.
+
+**Unit 5's module-card artwork is still from the wrong period.** Topics 5.1 to
+5.8 point their `stableImages` at Columbus, Magellan, Vasco da Gama, a casta
+painting and the Florentine Codex. That is Module 07's neighbour rather than
+Module 07, untouched here, and now the largest remaining Unit 5 defect.

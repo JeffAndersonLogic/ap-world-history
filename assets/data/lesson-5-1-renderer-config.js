@@ -165,6 +165,13 @@
       ],
       caption: 'A direct rewrite of the revolutionary declaration of 1789, published two years later. Its author was executed in 1793.',
       prompt: 'What contradiction does this evidence make visible? How would you use it to qualify a claim that revolutionary rights were universal?'
+    },
+    {
+      title: 'An Enlightenment salon',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Salon_de_Madame_Geoffrin.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Salon_de_Madame_Geoffrin.jpg',
+      caption: 'Anicet Charles Gabriel Lemonnier, painted in 1812, reconstructing a reading in Madame Geoffrin’s Paris salon of the 1750s. A later picture of an earlier room.',
+      prompt: 'NOTICE who is in the room, who is seated where, and who is not present. INFER what kind of space Enlightenment argument actually happened in. This was painted about sixty years after the scene: what does that cost you as evidence?'
     }
   ];
 
