@@ -49,17 +49,31 @@
 //              and never supplies the conclusion; the prompt runs
 //              NOTICE -> INFER, per docs/module-07-scaffolding-standard.md.
 //
-// The Unit 5 batch of 2026-09-06 was the first use, described in
-// docs/module-07-units-5-6-8-9-conversion.md. Twelve candidates went in, eight
-// of the twelve filenames were wrong, four rounds of search resolved eleven,
-// and one was dropped unresolved.
-//
-// **Empty, and that is the resting state.** Topic 1.6's Bayeux Tapestry card
-// landed the same day: a teacher-reported blank Evidence Lab card traced to
-// `Bayeux_Tapestry.jpg`, a filename that never existed on Commons. The tool's
-// search fallback found the real file (`..._scene51_Battle_of_Hastings_...`)
-// on the first correction. A candidate that lands gets deleted, per the rule
-// above, so this file goes back to empty rather than accumulating a history
-// of what has already shipped.
+// **2026-09-06, a site-wide check-image-urls.js run found two genuinely dead
+// pictures, both in Unit 6, which build-unit6.js generates.** These two
+// candidates exist ONLY to run the search fallback and find the real
+// filenames; Units 6 and 9 are refused by source-evidence-images.js's --apply
+// (their pools belong to the generator's own MODULE07_EVIDENCE map), so once
+// the real filenames are confirmed here, the fix has to be hand-applied to
+// scripts/build-unit6.js and the unit rebuilt, never applied by this tool.
 
-module.exports = [];
+module.exports = [
+  {
+    topic: '6.3',
+    replaces: 'Yaa Asantewaa',
+    file: 'Yaa_Asantewaa.jpg',
+    search: 'Yaa Asantewaa Asante queen mother Golden Stool',
+    title: 'Yaa Asantewaa',
+    caption: 'Photograph of the Asante queen mother who led the 1900 War of the Golden Stool against British forces.',
+    prompt: 'NOTICE how she is dressed and presented. INFER what authority she is claiming in the image. What does a portrait not tell you about how many followed her, or why?'
+  },
+  {
+    topic: '6.7',
+    replaces: 'Chinatown, San Francisco, 1880',
+    file: 'Chinatown_San_Francisco_1880.jpg',
+    search: 'Chinatown San Francisco 1880 photograph street',
+    title: 'Chinatown, San Francisco, 1880',
+    caption: 'Photograph of a migrant neighbourhood two years before Chinese immigration was restricted by federal law.',
+    prompt: 'NOTICE what the street shows about how the community organized itself. INFER what institutions a migrant population builds when the surrounding society excludes it. What does an outsider\'s photograph of a neighbourhood risk missing?'
+  }
+];
