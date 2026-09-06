@@ -72,7 +72,7 @@ module.exports = [
     topic: '5.3',
     replaces: 'Coal and iron near transport routes',
     file: 'Coalbrookdale_by_Night.jpg',
-    search: 'Coalbrookdale by Night Loutherbourg 1801 Bedlam Furnaces',
+    search: 'Coalbrookdale night',
     title: 'Coalbrookdale by Night, 1801',
     caption: 'Philip James de Loutherbourg, 1801, showing the Bedlam Furnaces in the Severn Gorge. Painted while the works were running.',
     prompt: 'NOTICE what is producing the light in this picture, and what time of day it is. INFER what changed about when and how long work could happen. What would this painter have gained by making the scene more dramatic than it was?'
@@ -83,7 +83,7 @@ module.exports = [
     topic: '5.4',
     replaces: 'Russia builds the Trans-Siberian',
     file: 'Tomioka_Silk_Mill.jpg',
-    search: 'Tomioka silk mill woodblock print Meiji 1873 female workers',
+    search: 'Tomioka silk mill',
     title: 'Tomioka Silk Mill',
     caption: 'The Japanese government’s model silk filature, opened in 1872 with French machinery and a largely female workforce.',
     prompt: 'NOTICE the machines, the building, and who is operating them. INFER what the Meiji state wanted this mill to demonstrate, beyond producing silk. What does a picture of the model factory not tell you about the ordinary ones?'
@@ -92,7 +92,7 @@ module.exports = [
     topic: '5.4',
     replaces: null,
     file: 'Tokyo_Takanawa_Tetsudo_Jokisha_Soko_Zenzu.jpg',
-    search: 'Takanawa railway steam train ukiyo-e 1872 Tokyo Yokohama Hiroshige',
+    search: 'Takanawa railway',
     title: 'The Tokyo–Yokohama line in a woodblock print',
     caption: 'A Japanese print of the railway opened in 1872, sold to a domestic audience in the year the line began running.',
     prompt: 'NOTICE how the train is drawn and what has been placed around it. INFER what the print is selling to the people who bought it. How is a commercial print different as evidence from an official photograph of the same line?'
@@ -103,7 +103,7 @@ module.exports = [
     topic: '5.5',
     replaces: 'Suez Canal opens',
     file: 'Opening_of_the_Suez_Canal.jpg',
-    search: 'opening of the Suez Canal 1869 ceremony Ismailia procession ships',
+    search: 'Suez Canal 1869 opening',
     title: 'The Suez Canal opens, 1869',
     caption: 'The opening procession of November 1869. The canal was cut through Egyptian territory with Egyptian labour and controlled by a French company.',
     prompt: 'NOTICE whose ships and whose dignitaries are at the centre of this scene. INFER who the canal was built to serve. What is missing from a picture of an opening ceremony that you would need to judge the cost?'
@@ -131,7 +131,7 @@ module.exports = [
   {
     topic: '5.6',
     replaces: 'Muhammad Ali’s Egyptian factories',
-    file: 'Muhammad_Ali_by_Auguste_Couder.jpg',
+    file: 'ModernEgypt,_Muhammad_Ali_by_Auguste_Couder,_BAP_17996.jpg',
     search: 'Muhammad Ali Pasha of Egypt portrait Auguste Couder 1841',
     title: 'Muhammad Ali of Egypt',
     caption: 'A commissioned portrait of the Ottoman governor who built state arms factories, textile mills and a conscript army in Egypt from the 1810s.',
@@ -151,7 +151,7 @@ module.exports = [
   {
     topic: '5.7',
     replaces: 'Standard Oil scales up',
-    file: 'Standard_oil_octopus_loc.jpg',
+    file: 'Standard_oil_octopus_loc_color.jpg',
     search: 'Standard Oil octopus Puck cartoon Udo Keppler 1904',
     title: 'Standard Oil as an octopus',
     caption: 'Udo Keppler in Puck, 1904, published two years before the federal antitrust suit against Standard Oil.',
@@ -162,7 +162,7 @@ module.exports = [
   {
     topic: '5.8',
     replaces: 'Trade Union Act of 1871',
-    file: 'Chartist_meeting_on_Kennington_Common.jpg',
+    file: 'William_Edward_Kilburn_-_View_of_the_Great_Chartist_Meeting_on_Kennington_Common_-_Google_Art_Project.jpg',
     search: 'Chartist meeting Kennington Common 1848 daguerreotype William Kilburn',
     title: 'The Chartist meeting at Kennington Common, 1848',
     caption: 'A daguerreotype of the Chartist gathering of 10 April 1848, one of the earliest photographs of a crowd. The Chartists were demanding the vote for working men.',
@@ -172,7 +172,7 @@ module.exports = [
     topic: '5.8',
     replaces: 'Bismarck’s social insurance',
     file: 'Punch_Capital_and_Labour.jpg',
-    search: 'Punch Capital and Labour 1843 cartoon mine children',
+    search: 'Punch Capital and Labour',
     title: '“Capital and Labour”, Punch, 1843',
     caption: 'A Punch cartoon contrasting a wealthy household above ground with the mine workings beneath it, published the year after the Mines Act barred women and young children underground.',
     prompt: 'NOTICE what is happening in the upper half and the lower half, and how the two are joined. INFER the argument the cartoonist is making about where wealth comes from. What does a satirical magazine tell you about its readers as well as its subject?'
