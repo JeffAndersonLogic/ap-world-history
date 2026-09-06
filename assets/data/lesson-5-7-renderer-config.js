@@ -100,4 +100,62 @@
       focus: ['Explain why Britain advocated free trade and why other industrializing countries rejected it.', 'Explain the specific mechanism of economic imperialism in one case, how debt or investment created dependency.', 'Synthesize: is economic imperialism fundamentally different from formal colonialism?']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
+    prompt: 'Build a claim about how capitalism and new business/financial institutions changed the scale of industrial economic activity. Use at least two different kinds of evidence and explain how risk, capital, or market power changed.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Capital, firms and markets',
+      url: '../assets/images/instructional-maps/topic-5-7.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-5-7.svg',
+      caption: 'BeHistorical reference map. Secondary geographic reconstruction of financial centres, exchanges and the networks between them.',
+      prompt: 'NOTICE where the marked centres are and what they connect. INFER what a producer far from any of them is exposed to. What does a map of finance not show about who bears the risk?'
+    },
+    {
+      title: 'Limited liability becomes law',
+      label: 'Legal record · Britain, Limited Liability Act, 1855',
+      sourceText: [
+        'Shareholders’ losses were limited to their investment.',
+        'Large ventures became less personally risky for investors.'
+      ],
+      caption: 'A statute of 1855 that changed what an investor stood to lose.',
+      prompt: 'How could limited liability increase the amount of capital available to firms? What does the law not prove about who benefited?'
+    },
+    {
+      title: 'Standard Oil scales up',
+      label: 'Business record · United States, founded 1870',
+      sourceText: [
+        'Refining, transport, and distribution were coordinated at enormous scale.',
+        'Competitors faced a much larger integrated firm.'
+      ],
+      caption: 'One firm coordinating refining, transport and distribution, founded in 1870.',
+      prompt: 'What claim about concentration or economies of scale could this support? What additional evidence is needed before calling market power a monopoly?'
+    },
+    {
+      title: 'Transnational banking',
+      label: 'Institutional record · HSBC founded 1865',
+      sourceText: [
+        'A bank organized finance between Asian ports and British markets.',
+        'Credit moved through imperial and commercial networks.'
+      ],
+      caption: 'A bank founded in 1865 to move credit between Asian ports and British markets.',
+      prompt: 'How did banking reduce barriers to long-distance business? What political context shaped where this finance could operate?'
+    },
+    {
+      title: 'Commodity exchanges and price information',
+      label: 'Market institution · nineteenth-century exchanges',
+      sourceText: [
+        'Standardized contracts linked distant producers and buyers.',
+        'Telegraphy made price information move quickly.'
+      ],
+      caption: 'Standardized contracts and fast price information, which together change what a distant producer can know.',
+      prompt: 'How could standardized contracts and rapid information reduce uncertainty? What kinds of producers might still remain vulnerable?'
+    }
+  ];
+
 })();

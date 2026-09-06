@@ -114,4 +114,66 @@
       focus: ['Open with a clear claim about how human activity caused environmental change after 1900.', 'Address at least one form of environmental degradation with its cause and effect.', 'Address the climate debate, explain how greenhouse gas emissions contributed to debates about climate change.', 'Explain the causal mechanism, how and why the human activity produced the environmental change, not just that it did.']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Explain the causes and effects of environmental change after 1900. Use at least one measured environmental change and one policy or debate card, and explain the causal chain rather than simply listing problems.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Deforestation in Rondônia, Brazil',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
+      caption: 'Satellite image of deforestation in the Brazilian state of Rondônia, large-scale clearing for cattle ranching and agriculture transformed the landscape.',
+      prompt: 'What human activities caused this deforestation, and what environmental effects would follow from clearing this much forest?'
+    },
+    {
+      title: 'The Aral Sea, 1989 vs. 2014',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/AralSea1989_2014.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:AralSea1989_2014.jpg',
+      caption: 'The Aral Sea shrank dramatically after Soviet-era irrigation projects diverted its feeder rivers, an extreme example of freshwater consumption reshaping the environment.',
+      prompt: 'What human activity caused the Aral Sea to shrink, and what were the environmental and social effects on the communities that depended on it?'
+    },
+    {
+      title: 'Global Greenhouse Gas Emissions by Sector',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Greenhouse_Gas_by_Sector.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Greenhouse_Gas_by_Sector.png',
+      caption: 'Greenhouse gas emissions from energy, industry, agriculture, and transportation contributed to debates about the causes of climate change.',
+      prompt: 'How does this data help explain why the climate debate was so contentious, and why different nations had different views on who should bear the cost of reducing emissions?'
+    },
+    {
+      title: 'The Keeling Curve',
+      label: 'Atmospheric measurement series · Mauna Loa Observatory, 1958 onward',
+      sourceText: [
+        'Direct measurements recorded a long-term rise in atmospheric carbon dioxide concentration.',
+        'The record also shows a repeating seasonal cycle superimposed on the upward trend.'
+      ],
+      caption: 'One instrument on one Hawaiian mountain, measuring the same thing continuously since 1958. The longest direct atmospheric record there is.',
+      prompt: 'What does this measurement establish, and what does it not establish by itself about the causes or effects of climate change?'
+    },
+    {
+      title: 'Kyoto Protocol',
+      label: 'International-policy record · adopted 1997',
+      sourceText: [
+        'The treaty created binding greenhouse-gas targets for many industrialized countries under a differentiated responsibility framework.',
+        'Participation and implementation varied, and major emitters did not all accept the same obligations.'
+      ],
+      caption: 'The first treaty to set binding emissions targets, and the differentiated framework that made it contentious.',
+      prompt: 'How does this policy record prove that climate change became an international political debate? What does treaty adoption not prove about emissions outcomes?'
+    },
+    {
+      title: 'Freshwater competition in the Colorado River basin',
+      label: 'Water-allocation record · United States and Mexico, 20th-21st centuries',
+      sourceText: [
+        'Dams, irrigation, cities, and agriculture allocated nearly all of the river\'s flow before it reached the sea in many years.',
+        'States, tribes, farmers, cities, and Mexico negotiated over limited water supplies.'
+      ],
+      caption: 'A single river basin allocated among states, tribes, farmers and cities until, in many years, none of it reaches the sea.',
+      prompt: 'What connection between consumption and resource competition is visible here? What climate evidence would be needed to separate demand pressure from drought?'
+    }
+  ];
+
 })();

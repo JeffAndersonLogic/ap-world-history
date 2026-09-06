@@ -108,4 +108,62 @@
       focus: ['Compare British parliamentary reform and German social insurance, different approaches to the same industrial social problems.', 'Explain the motivation behind each approach: moral concern, fear of revolution, or political calculation?', "Explain why industrialization generated a women's suffrage movement, what contradiction made it logical?"]
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
+    prompt: 'Evaluate the role of governments in industrialization. Use evidence from at least two states and decide whether state action was mainly an accelerator, a substitute for private capital, or both.'
+  };
+
+  lesson.images = [
+    {
+      title: 'States and industrialization',
+      url: '../assets/images/instructional-maps/topic-5-6.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-5-6.svg',
+      caption: 'BeHistorical reference map. Secondary geographic reconstruction of state-led industrial projects across several regions.',
+      prompt: 'NOTICE how widely spread the marked projects are. INFER what problem the states involved shared. What does a map of projects not show about whether any of them worked?'
+    },
+    {
+      title: 'Meiji state-sponsored industry',
+      label: 'Policy record · Japan, 1870s',
+      sourceText: [
+        'Government built model factories and shipyards.',
+        'Many enterprises were later sold to private business groups.'
+      ],
+      caption: 'A sequence rather than a policy: the state built, then sold. Both halves are the evidence.',
+      prompt: 'What does the sequence state-build then private-sale suggest about government’s role? What would count as evidence of private initiative?'
+    },
+    {
+      title: 'Iwakura Mission',
+      label: 'Diplomatic and study mission · 1871–1873',
+      sourceText: [
+        'Officials inspected schools, factories, armies, and legal systems abroad.',
+        'Knowledge gathering became state policy.'
+      ],
+      caption: 'A two-year official mission abroad, undertaken by a government at the start of its reforms.',
+      prompt: 'How can observation abroad become an industrial policy mechanism? What does a study mission not prove about domestic results?'
+    },
+    {
+      title: 'Witte and Russian rail finance',
+      label: 'State policy record · Russia, 1890s',
+      sourceText: [
+        'Finance Minister Sergei Witte promoted railroads and heavy industry.',
+        'Foreign capital and protective tariffs supported expansion.'
+      ],
+      caption: 'State direction and foreign capital in the same programme, which is what makes Russia hard to file.',
+      prompt: 'How does this mix of state direction and foreign capital complicate a simple state-versus-market comparison?'
+    },
+    {
+      title: 'Muhammad Ali’s Egyptian factories',
+      label: 'State industrial experiment · Egypt, early 1800s',
+      sourceText: [
+        'The state monopolized key crops and funded textile and arms production.',
+        'Many projects depended on coercive taxation and labor.'
+      ],
+      caption: 'State-led industry built on monopolized crops and coerced labor, and it did not last.',
+      prompt: 'What does this example suggest about the costs of state-led industrialization? Why did state sponsorship not guarantee sustained industrial growth?'
+    }
+  ];
+
 })();

@@ -119,4 +119,62 @@
       focus: ['Define nationalism clearly, how is it different from loyalty to a dynasty or a religion?', 'Explain the causal chain: how did Atlantic Revolutions produce nationalism as an ideology?', 'Give one specific nationalist movement, the empire it challenged, and the outcome, be concrete.']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
+    prompt: 'Make a defensible claim about one similarity or difference among Atlantic revolutions, or about how Enlightenment ideas and nationalism shaped revolutionary movements. Use evidence from at least two different revolutions.'
+  };
+
+  lesson.images = [
+    {
+      title: 'The Atlantic revolutions',
+      url: '../assets/images/instructional-maps/topic-5-2.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-5-2.svg',
+      caption: 'BeHistorical reference map. Secondary geographic reconstruction of the revolutions of the period and their sequence.',
+      prompt: 'NOTICE the order in which the marked revolutions occur and where they sit relative to one another. INFER what travelled between them. What would you need beyond a map to prove influence rather than coincidence?'
+    },
+    {
+      title: 'American independence language',
+      label: 'Primary-source excerpt · Declaration of Independence, 1776',
+      sourceText: [
+        '“all men are created equal”',
+        'Government derives “just powers” from consent'
+      ],
+      caption: 'The founding text of a revolution led largely by slave-owning property holders.',
+      prompt: 'What political principle is visible here? What additional evidence would you need before claiming the Revolution transformed social equality?'
+    },
+    {
+      title: 'French rights declaration',
+      label: 'Primary-source excerpt · Declaration of the Rights of Man and of the Citizen, 1789',
+      sourceText: [
+        '“Men are born and remain free and equal in rights.”',
+        'Sovereignty resides in the nation.'
+      ],
+      caption: 'Adopted in August 1789, six weeks after the fall of the Bastille.',
+      prompt: 'How does this evidence resemble or differ from American revolutionary language? What claim about popular sovereignty could it support?'
+    },
+    {
+      title: 'Haiti abolishes the plantation order',
+      label: 'Legal record · Haitian independence 1804 and Constitution 1805',
+      sourceText: [
+        'Independence followed the only successful large-scale slave revolt.',
+        'The new state rejected legal racial slavery.'
+      ],
+      caption: 'The only one of these revolutions led by the enslaved, and the only one to abolish slavery outright.',
+      prompt: 'What makes Haiti a stronger test of Enlightenment universalism than a revolution led by property-owning colonists? What evidence would you need about postrevolutionary equality?'
+    },
+    {
+      title: 'Bolívar on a distinct American identity',
+      label: 'Primary-source excerpt · Jamaica Letter, 1815',
+      sourceText: [
+        '“We are neither Indians nor Europeans…”',
+        'A new political identity is argued into existence.'
+      ],
+      caption: 'Written in exile in 1815, arguing that Spanish America was neither Spain nor its indigenous past.',
+      prompt: 'How can this phrase support a claim about nationalism in Latin American independence? What groups remain blurred by Bolívar’s “we”?'
+    }
+  ];
+
 })();

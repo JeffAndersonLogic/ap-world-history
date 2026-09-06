@@ -29,4 +29,53 @@
       "illustrativeExamples": []
     }
   ];
+  lesson.evidenceLab = {
+    "title": "Evidence Lab: Build and Test a Claim",
+    "task": "Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.",
+    "prompt": "Rank the causes of imperial expansion after 1750 and defend the ranking. Use at least two cards, state your criterion for importance before you rank, and name the evidence that most weakens your answer."
+  };
+  lesson.images = [
+    {
+      "title": "The Rhodes Colossus",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png",
+      "caption": "Punch cartoon, 1892. Ambition and competition between powers, drawn for a domestic audience.",
+      "prompt": "NOTICE the pose and the scale. INFER which cause of expansion this image is arguing for. Is a cartoon evidence of a cause, or of how a cause was talked about?"
+    },
+    {
+      "title": "Rubber tapping",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg",
+      "caption": "Photograph of latex extraction, the point where industrial demand met colonial labor.",
+      "prompt": "NOTICE the labor the process requires. INFER which cause of expansion this image supports. What does it evidence better than the cartoon does, and worse?"
+    },
+    {
+      "title": "Yaa Asantewaa",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yaa_Asantewaa.jpg",
+      "caption": "Photograph of the Asante leader of the 1900 War of the Golden Stool.",
+      "prompt": "NOTICE that this is a card about response rather than cause. INFER what a ranking of causes leaves out if it never accounts for resistance. Where does this belong in a causal argument?"
+    },
+    {
+      "title": "Industrial demand for raw materials",
+      "label": "Economic causal evidence · nineteenth century",
+      "sourceText": [
+        "Factories demanded cotton, rubber, metals, oils and other inputs.",
+        "Overseas markets also attracted exporters and investors."
+      ],
+      "caption": "The economic case, stated as demand rather than as greed, so that it can be tested against the other cards.",
+      "prompt": "Does demand explain where empires expanded, when they expanded, or both? Name a case from this unit that demand alone does not explain."
+    },
+    {
+      "title": "Technology lowers the cost of conquest",
+      "label": "Technological causal evidence · late nineteenth century",
+      "sourceText": [
+        "Steam transport, quinine, telegraphy and modern firearms",
+        "widened military and logistical advantages.",
+        "States could project force further and hold it longer."
+      ],
+      "caption": "The enabling condition rather than the motive: what made expansion cheap enough to attempt.",
+      "prompt": "An enabling condition is not a motive. Explain the difference using this card and the demand card, then say which belongs higher in your ranking and why."
+    }
+  ];
 })();

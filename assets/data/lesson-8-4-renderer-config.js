@@ -122,4 +122,66 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Explain either the causes and consequences of China\'s adoption of communism or the causes and effects of post-1900 resource redistribution movements. Use at least two cards, and test whether the same causal explanation works across cases.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Great Leap Forward propaganda poster, 1958',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Brave_the_wind_and_the_waves.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Brave_the_wind_and_the_waves.jpg',
+      caption: 'A Great Leap Forward propaganda poster (1958) celebrates the simultaneous drive for agricultural and industrial production, imagery that contrasted sharply with the famine unfolding in Chinese villages.',
+      prompt: 'What does this propaganda poster reveal about how the CCP government exercised control of the national economy during the Great Leap Forward? How does the imagery relate to the CED\'s description of \'repressive policies with negative repercussions for the population\'?'
+    },
+    {
+      title: 'Ho Chi Minh and Viet Minh forces, 1950s',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_1946.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_1946.jpg',
+      caption: 'Ho Chi Minh led the Viet Minh in combining anti-colonial nationalism with communist land redistribution promises, mobilizing Vietnamese peasants against French colonial rule.',
+      prompt: 'How does the Vietnamese case illustrate the relationship between communist revolution and land redistribution? What made redistribution promises an effective tool for building rural support for the Viet Minh?'
+    },
+    {
+      title: 'Shah Mohammad Reza Pahlavi announces White Revolution, 1963',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Iranian_women_voting_during_White_Revolution.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Iranian_women_voting_during_White_Revolution.jpg',
+      caption: 'Shah Mohammad Reza Pahlavi launched the White Revolution in 1963, a top-down land reform program that redistributed holdings from large landlords, partly to preempt communist organizing and satisfy American pressure for modernization.',
+      prompt: 'How does the White Revolution in Iran differ from redistribution in Vietnam or Kerala? What does a monarchical, top-down path to land reform reveal about the range of motivations and methods behind resource redistribution movements?'
+    },
+    {
+      title: 'People\'s Republic of China proclaimed',
+      label: 'Political record · Chinese Communist victory, 1949',
+      sourceText: [
+        'The Chinese Communist Party defeated the Nationalist government after years of civil war and Japanese invasion.',
+        'Mao Zedong proclaimed the People\'s Republic of China on October 1, 1949.'
+      ],
+      caption: 'The end of the Chinese civil war, dated.',
+      prompt: 'Which cause of communist victory is visible here and which is only implied? What additional evidence would separate the effects of civil war from Japanese aggression?'
+    },
+    {
+      title: 'Ethiopia nationalizes rural land',
+      label: 'Legal record · Derg land proclamation, Ethiopia, 1975',
+      sourceText: [
+        'The military government abolished private ownership of rural land and transferred land to state control.',
+        'The policy attacked the landlord system under the slogan \'land to the tiller.\''
+      ],
+      caption: 'Land redistribution imposed by a military government that had taken power the year before.',
+      prompt: 'What cause of redistribution is suggested by this legal change? How would you test whether redistribution improved rural living conditions?'
+    },
+    {
+      title: 'Kerala limits landlord power',
+      label: 'Legislative record · Kerala land reform laws, India, 1960s-1970',
+      sourceText: [
+        'Kerala legislation imposed ceilings on landholdings and strengthened the position of many tenants.',
+        'The reforms were pursued through elected state institutions rather than a communist revolution.'
+      ],
+      caption: 'Land redistribution legislated by an elected state government inside a parliamentary democracy.',
+      prompt: 'How does Kerala complicate a claim that redistribution after 1900 required violent revolution? What evidence would you need about who gained land?'
+    }
+  ];
+
 })();

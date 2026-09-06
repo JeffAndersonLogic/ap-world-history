@@ -93,4 +93,62 @@
       focus: ['Explain the specific colonial mechanism that blocked Indian industrialization, not vague, but the actual policy tool.', 'Explain the sovereignty argument, why Germany could do what India could not.', 'Make a supported synthesis claim: natural disadvantages or colonial policy?']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
+    prompt: 'Compare how industrialization spread beyond Britain. Use evidence from two states and explain one similarity or difference in the role of governments, infrastructure, or access to capital and technology.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Industrialization spreads',
+      url: '../assets/images/instructional-maps/topic-5-4.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-5-4.svg',
+      caption: 'BeHistorical reference map. Secondary geographic reconstruction of industrial regions beyond Britain and the routes between them.',
+      prompt: 'NOTICE which regions industrialize and in what order. INFER what the later ones could do that Britain could not. What does a map not show about how the knowledge actually travelled?'
+    },
+    {
+      title: 'Meiji Charter Oath',
+      label: 'Primary-source excerpt · Japan, 1868',
+      sourceText: [
+        '“Knowledge shall be sought throughout the world”',
+        'to strengthen imperial rule.'
+      ],
+      caption: 'A statement of policy issued by a new government in 1868, in the year it took power.',
+      prompt: 'How can this source support a claim about state-directed borrowing of foreign knowledge? What does it not tell you about implementation?'
+    },
+    {
+      title: 'Japan’s first railway',
+      label: 'Infrastructure record · Tokyo–Yokohama line, 1872',
+      sourceText: [
+        'Japan opened its first railway in 1872.',
+        'Rail construction expanded rapidly under Meiji rule.'
+      ],
+      caption: 'The date and the line, so that the pace of state-directed building can be measured rather than described.',
+      prompt: 'What does state-backed transport infrastructure suggest about the mechanism of Japanese industrialization?'
+    },
+    {
+      title: 'Germany’s integrated market',
+      label: 'Policy record · Zollverein, 1834 onward',
+      sourceText: [
+        'Many German states removed internal customs barriers.',
+        'Railways later tied the enlarged market together.'
+      ],
+      caption: 'A customs union among states that were not yet one country, which is the fact to reason from.',
+      prompt: 'How could market integration accelerate industrialization? What would you need to show that policy caused industrial growth rather than merely accompanying it?'
+    },
+    {
+      title: 'Russia builds the Trans-Siberian',
+      label: 'Infrastructure record · construction began 1891',
+      sourceText: [
+        'State-backed railway construction crossed Eurasia.',
+        'The line linked resources, settlers, and markets to the imperial core.'
+      ],
+      caption: 'A state building a railway across a continent, begun in 1891 with foreign borrowing.',
+      prompt: 'How does this card differ from a laissez-faire model of industrialization? What costs or limits are invisible in an infrastructure record?'
+    }
+  ];
+
 })();

@@ -94,4 +94,62 @@
       focus: ['Describe the specific labor system, who worked, under what conditions, who benefited.', 'Connect the extraction system to specific industrial demand in Europe or North America.', 'Make a supported claim: who bore the costs of industrialization, and who captured its benefits?']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
+    prompt: 'Make a claim about how new technologies changed production, transportation, or communication in the Industrial Age. Use evidence from at least two sectors and explain the mechanism of change.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Technology and the shrinking world',
+      url: '../assets/images/instructional-maps/topic-5-5.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-5-5.svg',
+      caption: 'BeHistorical reference map. Secondary geographic reconstruction of cables, canals and rail and steamship routes.',
+      prompt: 'NOTICE which chokepoints and cables the map marks. INFER what controlling one of them would be worth. What does a map of infrastructure not show about who paid for it?'
+    },
+    {
+      title: 'Bessemer process',
+      label: 'Patent and process record · 1856',
+      sourceText: [
+        'Air blown through molten iron removed impurities.',
+        'Steel became cheaper to produce at large scale.'
+      ],
+      caption: 'A process patent of 1856: the change that made steel cheap.',
+      prompt: 'What industries could change when steel became cheaper? What evidence would you need to measure how quickly the process spread?'
+    },
+    {
+      title: 'Permanent transatlantic telegraph',
+      label: 'Infrastructure record · cable completed 1866',
+      sourceText: [
+        'Messages crossed the Atlantic in minutes rather than weeks.',
+        'Markets and governments could react much faster.'
+      ],
+      caption: 'The date a message first crossed the Atlantic in minutes rather than weeks, and stayed working.',
+      prompt: 'What historical process becomes possible when information outruns physical travel? How could you connect this to trade or empire?'
+    },
+    {
+      title: 'Suez Canal opens',
+      label: 'Infrastructure record · 1869',
+      sourceText: [
+        'Mediterranean connected directly to the Red Sea.',
+        'Europe–Asia sea routes became much shorter.'
+      ],
+      caption: 'A canal opened in 1869, and what it did to the distance between Europe and Asia.',
+      prompt: 'What claim about steamship-era trade could this support? What does route distance alone fail to show about control or cost?'
+    },
+    {
+      title: 'Electric power enters the city',
+      label: 'Infrastructure record · Pearl Street Station, New York, 1882',
+      sourceText: [
+        'Central-station electric power served paying customers.',
+        'Lighting and motors reduced dependence on daylight and line shafts.'
+      ],
+      caption: 'One central station in one city in 1882, which is both the point and the limit of the card.',
+      prompt: 'How might electric power change factory location or working time? Why should one city installation not be treated as universal adoption?'
+    }
+  ];
+
 })();

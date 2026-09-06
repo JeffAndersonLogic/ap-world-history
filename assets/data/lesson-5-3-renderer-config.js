@@ -88,4 +88,59 @@
       focus: ['Describe two specific changes from domestic to factory work, what exactly was different?', 'Explain the Luddite position accurately, not anti-technology, but what specifically?', 'Make a supported argumentation claim: benefit or harm for the first generation of workers?']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
+    prompt: 'Explain why industrialization began in Britain. Use evidence from at least two different causal categories—resources, technology, labor, capital, markets, or institutions—and explain how the causes worked together.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Powerloom weaving, 1835',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg',
+      caption: 'Engraving of a powerloom weaving shed, published in 1835. An idealized illustration made for a book about the factory system, not a photograph.',
+      prompt: 'NOTICE how the room is arranged and who is working in it. INFER what the arrangement requires of the workers\' day. The image was made to present the system favourably: what would that have left out?'
+    },
+    {
+      title: 'Why industrialization began in Britain',
+      url: '../assets/images/instructional-maps/topic-5-3.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-5-3.svg',
+      caption: 'BeHistorical reference map. Secondary geographic reconstruction of coalfields, industrial districts, canals and ports.',
+      prompt: 'NOTICE what sits close to what. INFER how proximity of fuel, factory and port lowers a cost. What non-geographic cause must you pair with this to avoid arguing that geography alone decided it?'
+    },
+    {
+      title: 'Steam power becomes commercially useful',
+      label: 'Technology record · James Watt patent, 1769',
+      sourceText: [
+        'Watt patented a separate condenser.',
+        'Steam engines used fuel more efficiently than earlier designs.'
+      ],
+      caption: 'A patent record: the improvement that made steam efficient enough to be worth installing.',
+      prompt: 'What production or location constraint did improved steam power reduce? Why is an invention alone insufficient to explain industrialization?'
+    },
+    {
+      title: 'Cromford factory system',
+      label: 'Industrial site record · Richard Arkwright, Cromford Mill, 1771',
+      sourceText: [
+        'Water-powered spinning machinery',
+        'Workers and machines concentrated under one roof'
+      ],
+      caption: 'A single mill of 1771, and the arrangement of people and machines that made it a new kind of workplace.',
+      prompt: 'Which observable features distinguish factory production from household production? What claim can this card support about organization of labor?'
+    },
+    {
+      title: 'Coal and iron near transport routes',
+      label: 'Secondary map reconstruction · Britain, late 1700s',
+      sourceText: [
+        'Coalfields clustered near industrial districts.',
+        'Canals and ports linked fuel, factories, and markets.'
+      ],
+      caption: 'The geographic argument stated as a claim that can be tested against the map above.',
+      prompt: 'How could geography lower production costs? What non-geographic cause would you pair with this evidence to avoid environmental determinism?'
+    }
+  ];
+
 })();

@@ -123,4 +123,56 @@
       focus: ['Open with a clear claim about how environmental factors affected human populations through disease.', 'Draw from at least two of the three disease categories.', 'For each disease, explain the specific environmental or population factor that shaped its impact.', 'Explain the causal mechanism, how and why the environmental factor shaped the disease outcome, not just that it did.']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Explain how environmental and population factors shaped disease after 1900. Use evidence from at least two disease categories and distinguish what the evidence shows about transmission, vulnerability, and social impact.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Emergency Hospital, Camp Funston, Kansas, 1918',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Emergency_hospital_during_Influenza_epidemic,_Camp_Funston,_Kansas_-_NCP_1603.jpg',
+      caption: 'Crowded military camps during World War I became transmission accelerators for the 1918 influenza pandemic, density and movement shaped the epidemic\'s catastrophic spread.',
+      prompt: 'What environmental and population factors visible in this image help explain why the 1918 influenza spread so rapidly among military populations?'
+    },
+    {
+      title: 'Malaria Prevention — Insecticide-Treated Net',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Anopheles_albimanus_mosquito.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Anopheles_albimanus_mosquito.jpg',
+      caption: 'Malaria persisted wherever tropical climates, standing water, and poverty intersected, environmental conditions that sustained the mosquito vectors carrying the disease.',
+      prompt: 'Why has malaria persisted as a major killer in some regions while being eliminated in others? What environmental and economic factors explain the difference?'
+    },
+    {
+      title: 'Global Life Expectancy Trends',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Life_expectancy_by_world_region%2C_from_1770_to_2018.svg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Life_expectancy_by_world_region,_from_1770_to_2018.svg',
+      caption: 'Rising life expectancy shifted the disease burden toward non-communicable conditions, heart disease and Alzheimer\'s, that earlier generations rarely survived to experience.',
+      prompt: 'How does rising life expectancy create new public health challenges? What is the connection between longer lives and the diseases of longevity?'
+    },
+    {
+      title: 'HIV/AIDS becomes a global epidemic',
+      label: 'Epidemiological and social record · HIV/AIDS, 1980s onward',
+      sourceText: [
+        'HIV spread through sexual contact, blood exposure, and mother-to-child transmission across increasingly connected societies.',
+        'The epidemic produced major mortality, stigma, political activism, and later large-scale treatment campaigns.'
+      ],
+      caption: 'An epidemic that moved along the same connections as trade and travel, and the responses it provoked.',
+      prompt: 'What makes this useful evidence for both disease spread and social disruption? What cultural or policy evidence would be needed to explain different national outcomes?'
+    },
+    {
+      title: 'Cholera follows unsafe water',
+      label: 'Public-health reconstruction · cholera and water systems after 1900',
+      sourceText: [
+        'Cholera transmission remains strongly associated with water contaminated by human waste.',
+        'Outbreak risk rises where sanitation infrastructure is weak or disrupted by poverty, war, or disaster.'
+      ],
+      caption: 'A disease whose distribution tracks sanitation infrastructure rather than climate. Labeled a reconstruction: this is the pattern historians and epidemiologists draw from many local records.',
+      prompt: 'What environmental mechanism is directly supported here? What evidence would you need before claiming poverty alone causes cholera?'
+    }
+  ];
+
 })();

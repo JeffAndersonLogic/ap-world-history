@@ -29,7 +29,7 @@ const fs = require('fs');
 const path = require('path');
 const { ROOT, unitTopics, resolveUnitPool, isPicture } = require('./lib/evidence-pools');
 
-const CONVERTED = [3, 4, 7];
+const CONVERTED = [3, 4, 5, 6, 7, 8, 9];
 const TEXT_CARD_MODULE = 'assets/js/behistorical-evidence-text-card.js';
 
 let failures = 0;

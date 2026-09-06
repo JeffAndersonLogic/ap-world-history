@@ -122,4 +122,66 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Explain the range of reactions to established power structures after 1900. Use cards from at least two different reaction categories, compare their methods or targets, and reject any evidence that does not fit your specific claim.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Gandhi leading the Salt March, 1930',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Salt_March.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Gandhi_Salt_March.jpg',
+      caption: 'Mohandas Gandhi leading the Salt March, March 1930, a 240-mile walk to the sea to make salt illegally in defiance of British colonial tax law. Gandhi\'s strategic nonviolence was designed to make the cost of colonial authority higher than the cost of political concessions.',
+      prompt: 'What does Gandhi\'s choice to march to make salt reveal about how nonviolence works as a political strategy? How does this image illustrate the difference between nonviolence as moral stance and nonviolence as deliberate method for producing political change?'
+    },
+    {
+      title: 'Nelson Mandela released from Victor Verster Prison, 1990',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Niall_Andrews_and_Nelson_Mandela%2C_June_1990_%28cropped%29.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Niall_Andrews_and_Nelson_Mandela%2C_June_1990_%28cropped%29.jpg',
+      caption: 'Nelson Mandela leaving Victor Verster Prison on February 11, 1990, after 27 years of imprisonment. Mandela\'s release marked the beginning of negotiations that ended apartheid and led to South Africa\'s first democratic elections in 1994.',
+      prompt: 'How does Mandela\'s release after 27 years of imprisonment illustrate the long-term logic of resistance, that political change can be achieved through sustained pressure over decades rather than immediate victory? What does this suggest about nonviolence as a strategy for change against a deeply entrenched power structure?'
+    },
+    {
+      title: 'Eisenhower\'s farewell address, January 1961',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Eisenhower_farewell.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Eisenhower_farewell.jpg',
+      caption: 'President Dwight D. Eisenhower delivering his farewell address on January 17, 1961, in which he coined the phrase \'military-industrial complex\' and warned of the dangers of an arms economy that gave institutional interests an incentive to perpetuate conflict.',
+      prompt: 'Why is it significant that the warning about the military-industrial complex came from a five-star general and former Supreme Allied Commander? What does Eisenhower\'s perspective reveal about how structural forces can intensify conflict even when individual leaders seek peace?'
+    },
+    {
+      title: 'Birmingham Campaign',
+      label: 'Movement record · U.S. civil rights movement, 1963',
+      sourceText: [
+        'Activists used marches, boycotts, sit-ins, and deliberate arrest to challenge segregation in Birmingham, Alabama.',
+        'Images of police repression spread nationally and internationally.'
+      ],
+      caption: 'Nonviolent mass protest met with force, in a country that was not a colony.',
+      prompt: 'How does this evidence corroborate or differ from the Salt March as a theory of nonviolent pressure? What would outcome evidence need to show?'
+    },
+    {
+      title: 'Chile under Pinochet',
+      label: 'State-power record · Chile, 1973 onward',
+      sourceText: [
+        'A military coup overthrew President Salvador Allende in 1973 and installed Augusto Pinochet\'s dictatorship.',
+        'The regime used detention, torture, disappearances, and military institutions to suppress opposition.'
+      ],
+      caption: 'The state as the source of the violence rather than its target.',
+      prompt: 'How does this evidence fit the CED category of militarized states intensifying conflict? What Cold War context would help explain outside support and opposition?'
+    },
+    {
+      title: 'Shining Path targets civilians',
+      label: 'Secondary truth-commission record · Peru, 1980s-1990s',
+      sourceText: [
+        'The Maoist Shining Path insurgency attacked state targets and civilians in an effort to destroy the existing political order.',
+        'Peru\'s Truth and Reconciliation Commission attributed a large share of conflict deaths to the organization.'
+      ],
+      caption: 'Findings of a national truth commission about a movement that claimed to act for the poor.',
+      prompt: 'What distinguishes this method from nonviolent resistance? What limitation should you note when using a later truth-commission reconstruction?'
+    }
+  ];
+
 })();

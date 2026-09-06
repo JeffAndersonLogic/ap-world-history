@@ -114,4 +114,67 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Build a contextualization claim explaining how World War II and earlier demands for self-government created the conditions for both decolonization and the Cold War after 1945. Use at least two cards from different categories and explain what each can and cannot prove.'
+  };
+
+  lesson.images = [
+    {
+      title: 'League of Nations Mandate Map',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_league_of_nations_mandate.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_league_of_nations_mandate.png',
+      caption: 'The League of Nations Mandate System divided Germany\'s former colonies among the victorious Allied powers, principally Britain and France.',
+      prompt: 'How does this map challenge Wilson\'s promise of self-determination? What does it reveal about the difference between the rhetoric of 1918 and the reality of 1919?'
+    },
+    {
+      title: 'Clement Attlee\'s Cabinet, 1945',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Clement_Attlee.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Clement_Attlee.jpg',
+      caption: 'Britain\'s Labour government under Clement Attlee inherited a bankrupted empire in 1945 and faced simultaneous independence crises across Asia and the Middle East.',
+      prompt: 'What does a government\'s financial situation reveal about its ability to maintain imperial commitments? How does treasury exhaustion act as an internal factor in imperial decline?'
+    },
+    {
+      title: 'The Marshall Plan, 1948',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marshall_Plan.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Marshall_Plan.png',
+      caption: 'The Marshall Plan (1948) committed $13 billion in U.S. aid to rebuild Western Europe, and to anchor it within the American sphere of influence.',
+      prompt: 'Is the Marshall Plan better evidence of American generosity or American strategic interest? Can it be both?'
+    },
+    {
+      title: 'Atlantic Charter and self-government',
+      label: 'Primary-source excerpt · Atlantic Charter, 1941',
+      sourceText: [
+        'The signatories "respect the right of all peoples to choose',
+        'the form of government under which they will live."',
+        'Colonial nationalists quoted the clause back at them.'
+      ],
+      caption: 'The third clause of the Anglo-American war-aims declaration of August 1941, issued while both signatories held colonies.',
+      prompt: 'What claim about rising anti-imperialist expectations can this language support? What additional evidence would you need to show how colonial peoples interpreted it?'
+    },
+    {
+      title: 'Britain needs a postwar loan',
+      label: 'Financial-policy record · Anglo-American Loan Agreement, 1946',
+      sourceText: [
+        'The United States approved a $3.75 billion loan to Britain after wartime Lend-Lease ended.',
+        'Britain entered the postwar era with severe balance-of-payments and imperial financing problems.'
+      ],
+      caption: 'The terms on which Britain financed itself once wartime Lend-Lease stopped.',
+      prompt: 'How could this evidence support a claim that World War II weakened Britain\'s capacity to sustain empire? What does one loan not prove about every decolonization case?'
+    },
+    {
+      title: 'India becomes independent',
+      label: 'Legal record · Indian Independence Act, 1947',
+      sourceText: [
+        'British law created the independent dominions of India and Pakistan in August 1947.',
+        'The act ended direct British rule while also formalizing partition.'
+      ],
+      caption: 'The statute that ended British rule in South Asia, passed by the parliament that had governed it.',
+      prompt: 'How does this record connect imperial withdrawal to the restructuring of states? What evidence would you need to explain why Britain accepted withdrawal at this moment?'
+    }
+  ];
+
 })();

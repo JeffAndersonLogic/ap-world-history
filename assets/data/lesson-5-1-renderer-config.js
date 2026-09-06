@@ -110,4 +110,62 @@
       focus: ['Describe two specific mechanisms of spread, be concrete (Encyclopédie, salons, coffeehouses).', 'Identify two excluded groups and explain the structural reasons for each exclusion, be specific.', 'Write a synthesis: was Enlightenment universalism genuine, hypocritical, or complex? Defend with evidence.']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
+    prompt: 'Build a claim about how Enlightenment ideas challenged traditional authority OR about the limits of Enlightenment universalism. Use at least two cards and explain how the evidence supports, complicates, or limits your claim.'
+  };
+
+  lesson.images = [
+    {
+      title: 'The Enlightenment world',
+      url: '../assets/images/instructional-maps/topic-5-1.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-5-1.svg',
+      caption: 'BeHistorical reference map. Secondary geographic reconstruction of the centres and circulation of Enlightenment thought.',
+      prompt: 'NOTICE where the marked centres cluster. INFER what a network of cities, presses and correspondence made possible that a single court could not. What does a map of centres not show about who was reading?'
+    },
+    {
+      title: 'Locke on political consent',
+      label: 'Primary-source excerpt · John Locke, Two Treatises of Government, 1689',
+      sourceText: [
+        '“Men being by nature all free, equal, and independent…”',
+        'Political power requires consent.'
+      ],
+      caption: 'Written in 1689, in the year after a king had been removed from the English throne.',
+      prompt: 'Which phrase is most useful for a claim about legitimate government? What does the passage not reveal about who Locke imagined as fully included?'
+    },
+    {
+      title: 'Wollstonecraft turns rights toward women',
+      label: 'Primary-source excerpt · A Vindication of the Rights of Woman, 1792',
+      sourceText: [
+        '“I do not wish them to have power over men;',
+        'but over themselves.”'
+      ],
+      caption: 'Published in 1792, arguing from inside Enlightenment logic against the people making it.',
+      prompt: 'How could this excerpt extend Enlightenment logic while exposing a limit in earlier versions of universal rights?'
+    },
+    {
+      title: 'The Encyclopédie as a print network',
+      label: 'Publication record · Encyclopédie, 1751–1772',
+      sourceText: [
+        '17 volumes of text + 11 volumes of plates',
+        'Printed, banned, reprinted, and circulated across Europe'
+      ],
+      caption: 'The publication record of a work that was banned and printed anyway, over twenty-one years.',
+      prompt: 'What can the scale and persistence of publication support about diffusion? What can publication numbers not prove about how ordinary people interpreted the ideas?'
+    },
+    {
+      title: 'de Gouges rewrites the declaration',
+      label: 'Primary-source excerpt · Declaration of the Rights of Woman, 1791',
+      sourceText: [
+        '“Woman is born free and remains equal to man in rights.”',
+        'A direct rewrite of revolutionary rights language.'
+      ],
+      caption: 'A direct rewrite of the revolutionary declaration of 1789, published two years later. Its author was executed in 1793.',
+      prompt: 'What contradiction does this evidence make visible? How would you use it to qualify a claim that revolutionary rights were universal?'
+    }
+  ];
+
 })();

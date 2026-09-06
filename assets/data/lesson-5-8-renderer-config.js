@@ -101,4 +101,62 @@
       focus: ['Explain the structural connection between industrial capitalism and slavery through the cotton economy.', 'Describe two non-labor reform movements and their specific arguments and targets.', 'Synthesize: did reform movements challenge or stabilize industrial capitalism?']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
+    prompt: 'Evaluate reactions to industrial capitalism. Use at least two cards representing different responses—revolutionary, union, reformist, or state welfare—and explain what problem each response identified.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Responses to industrial capitalism',
+      url: '../assets/images/instructional-maps/topic-5-8.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-5-8.svg',
+      caption: 'BeHistorical reference map. Secondary geographic reconstruction of labor movements, reform legislation and socialist organization.',
+      prompt: 'NOTICE which responses appear where. INFER what conditions a reform response needs that a revolutionary one does not. What does the map not show about which response workers preferred?'
+    },
+    {
+      title: 'Communist Manifesto',
+      label: 'Primary-source excerpt · Marx and Engels, 1848',
+      sourceText: [
+        '“Workers of the world, unite!”',
+        'Class conflict is presented as the engine of history.'
+      ],
+      caption: 'Published in 1848, the year revolutions broke out across Europe, by two men in their twenties and thirties.',
+      prompt: 'What diagnosis of industrial society is embedded in this language? What would you need to show that workers actually accepted it?'
+    },
+    {
+      title: 'Factory Act of 1833',
+      label: 'Legal record · Britain',
+      sourceText: [
+        'Restricted factory work by young children.',
+        'Created inspectors to enforce parts of the law.'
+      ],
+      caption: 'The law, and the inspectors: a state taking responsibility for conditions inside private workplaces.',
+      prompt: 'What does regulation suggest about changing ideas of state responsibility? What labor problems remained outside the law?'
+    },
+    {
+      title: 'Trade Union Act of 1871',
+      label: 'Legal record · Britain',
+      sourceText: [
+        'Trade unions gained clearer legal recognition.',
+        'Collective organization became more secure.'
+      ],
+      caption: 'Legal recognition in 1871, which is a different response from either revolution or charity.',
+      prompt: 'How does legal recognition differ from revolutionary socialism as a response to industrial inequality?'
+    },
+    {
+      title: 'Bismarck’s social insurance',
+      label: 'Policy record · Germany, 1883–1889',
+      sourceText: [
+        'Health, accident, and old-age insurance programs were created.',
+        'Conservative government adopted social welfare measures.'
+      ],
+      caption: 'Social insurance introduced by a conservative government that had just outlawed the socialist party.',
+      prompt: 'How can this evidence support a claim that states adapted to labor pressure without abandoning capitalism?'
+    }
+  ];
+
 })();

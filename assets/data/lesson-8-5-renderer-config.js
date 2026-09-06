@@ -117,4 +117,66 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Compare the processes by which peoples pursued independence after 1900. Use at least one negotiated case and one armed-struggle case, then use a boundary or identity card to qualify a simple success-versus-failure story.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Mahatma Gandhi, Salt March, 1930',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Salt_March.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Gandhi_Salt_March.jpg',
+      caption: 'Gandhi leads the Salt March in 1930, a 240-mile walk to the sea to collect salt illegally, defying British tax law. The march was a mass act of nonviolent civil disobedience that galvanized Indian independence and drew global attention.',
+      prompt: 'How does the Salt March illustrate the INC\'s strategy for pursuing independence? What does it reveal about how Gandhi sought to challenge British imperial rule without armed violence, and why that strategy was effective?'
+    },
+    {
+      title: 'Gamal Abdel Nasser after Suez Canal nationalization, 1956',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gamal_Abd_El-Nasser_1956.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Gamal_Abd_El-Nasser_1956.png',
+      caption: 'Nasser after announcing the nationalization of the Suez Canal in 1956. The nationalization triggered the Suez Crisis, Britain and France invaded, but U.S. pressure forced their withdrawal, demonstrating the limits of European imperial power in the postwar world.',
+      prompt: 'What does Nasser\'s nationalization of the Suez Canal reveal about how decolonization extended beyond formal political independence? How does the Suez Crisis illustrate the role of Cold War superpower pressure in accelerating European decolonization?'
+    },
+    {
+      title: 'Biafra, Nigerian Civil War, 1967–1970',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Food_aid_Nigeria.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Food_aid_Nigeria.png',
+      caption: 'The Biafran War (1967–1970): the secessionist movement of the Igbo-majority southeast challenged Nigeria\'s colonial-era boundaries. An estimated 1–3 million people died, many from the famine produced by the Nigerian blockade of Biafra.',
+      prompt: 'How does the Biafra secessionist movement illustrate the argument that inherited imperial boundaries became fault lines after independence? What does the Biafran War reveal about the relationship between colonial boundary-drawing and postcolonial conflict?'
+    },
+    {
+      title: 'Indian Independence Act',
+      label: 'Legal record · British Parliament, 1947',
+      sourceText: [
+        'The act created the independent dominions of India and Pakistan in August 1947.',
+        'It followed decades of mass politics, negotiation, civil disobedience, and wartime pressure on Britain.'
+      ],
+      caption: 'Independence arriving by statute, after decades of mass politics and a war that had exhausted the imperial power.',
+      prompt: 'Why is this evidence useful for a negotiated-independence claim but insufficient by itself to explain the process that forced negotiation?'
+    },
+    {
+      title: 'Algerian war and the Evian Accords',
+      label: 'Conflict and treaty record · Algeria, 1954-1962',
+      sourceText: [
+        'The FLN fought French forces in an eight-year war for independence.',
+        'The 1962 Evian Accords ended the war and led to Algerian independence.'
+      ],
+      caption: 'Independence arriving after eight years of war, ended by treaty at Evian in 1962.',
+      prompt: 'What evidence makes Algeria an armed-struggle case rather than a negotiated case only? Which colonial condition might help explain the difference from Ghana?'
+    },
+    {
+      title: 'Muslim League and the demand for Pakistan',
+      label: 'Political-platform record · Lahore Resolution, 1940',
+      sourceText: [
+        'The Muslim League called for autonomous or independent political units in Muslim-majority areas of British India.',
+        'Partition in 1947 created Pakistan and redrew the inherited imperial map.'
+      ],
+      caption: 'The 1940 resolution whose demand shaped what independence in South Asia would look like seven years later.',
+      prompt: 'How can this evidence qualify a claim that decolonization simply restored precolonial political boundaries? What evidence would be needed to explain popular support and opposition?'
+    }
+  ];
+
 })();

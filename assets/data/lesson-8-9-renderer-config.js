@@ -335,4 +335,48 @@
   // Retain the topic-specific review and matrix renderers, but let the shared
   // renderer provide the standard ten-module path used across BeHistorical.
   delete lesson.modules;
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Choose two examples from different hemispheres. Explain one structural similarity and one consequential difference, and say which of the two better supports a claim about how superpower rivalry was actually experienced.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Cold War alignments and proxy conflicts',
+      url: '../assets/images/instructional-maps/topic-8-9.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-8-9.svg',
+      caption: 'BeHistorical reference map. Secondary geographic reconstruction of alignments and the places where the rivalry was fought.',
+      prompt: 'NOTICE where the marked conflicts sit relative to Washington and Moscow. INFER what that distance meant for who bore the cost. What does a map of alignments not show about why a particular country aligned as it did?'
+    },
+    {
+      title: 'Reagan and Gorbachev, Geneva, 1985',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_%281985%29.jpg',
+      caption: 'Photograph of the first meeting between the two leaders, November 1985.',
+      prompt: 'NOTICE how the two men are positioned and what the setting is doing. INFER what the photograph was meant to communicate to each domestic audience. How can a bilateral meeting be evidence about effects felt in countries not in the room?'
+    },
+    {
+      title: 'Berliners at the Brandenburg Gate, 1989',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
+      caption: 'Photograph of East and West Germans at the Brandenburg Gate after the border opened, November 1989.',
+      prompt: 'NOTICE who is in the crowd and what they are doing. INFER which effects of the Cold War\'s end this image can carry: political, social, or cultural. Which of the three does it evidence least well?'
+    },
+    {
+      title: 'The Cold War ends, in order',
+      label: 'Dated event sequence · 1989 to 1991',
+      sourceText: [
+        'February 1989: the last Soviet troops leave Afghanistan.',
+        'June 1989: Solidarity wins Poland\'s partly free election.',
+        'November 1989: the Berlin border opens.',
+        'December 1991: the Soviet Union dissolves.'
+      ],
+      caption: 'The documented sequence, so that the order of events is available rather than assumed.',
+      prompt: 'Which event in this sequence is the best candidate for a cause of the others, and which is best read as a consequence? Defend the placement, then name the card above that most complicates it.'
+    }
+  ];
+
 })();

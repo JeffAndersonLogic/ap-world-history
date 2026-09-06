@@ -96,4 +96,67 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Explain the causes and effects of the Cold War\'s ideological struggle. Build a claim with evidence from at least two different types of Cold War activity, and use one card to test or complicate a simple two-bloc interpretation.'
+  };
+
+  lesson.images = [
+    {
+      title: 'The Marshall Plan, 1948',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marshall_Plan.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Marshall_Plan.png',
+      caption: 'The Marshall Plan (1948) committed $13 billion in U.S. aid to rebuild Western Europe, and to anchor it within the American sphere of influence.',
+      prompt: 'Is the Marshall Plan best understood as American generosity, American strategy, or both? What does this source reveal about how the U.S. used economic power as an instrument of Cold War competition?'
+    },
+    {
+      title: 'The Berlin Wall, 1961',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Berlinermauer.jpg',
+      caption: 'The Berlin Wall, built in 1961, became the most visible symbol of the Iron Curtain, dividing communist East Germany from capitalist West Berlin.',
+      prompt: 'What does the Berlin Wall reveal about the nature of the Cold War divide? How does a physical wall embody the ideological conflict between capitalism and communism?'
+    },
+    {
+      title: 'Kwame Nkrumah, Ghana, 1957',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah.jpg',
+      caption: 'Kwame Nkrumah led Ghana to independence in 1957 and became one of the founding voices of the Non-Aligned Movement.',
+      prompt: 'How does Nkrumah\'s background, colonial subject, pan-Africanist, leader of the first sub-Saharan African independent state, shape his position on Cold War superpower rivalry?'
+    },
+    {
+      title: 'Truman Doctrine',
+      label: 'Primary-source excerpt · President Harry Truman, 1947',
+      sourceText: [
+        'Truman asked Congress to "support free peoples who are resisting',
+        'attempted subjugation by armed minorities or by outside pressures."',
+        'The speech framed containment as a global commitment.'
+      ],
+      caption: 'The American framing of the conflict, addressed to Congress in March 1947.',
+      prompt: 'What ideological assumption is visible in this policy language? What evidence would you need before treating the speech as a complete explanation of U.S. motives?'
+    },
+    {
+      title: 'Zhdanov\'s two camps',
+      label: 'Primary-source excerpt · Andrei Zhdanov, Cominform speech, 1947',
+      sourceText: [
+        'Zhdanov divided the postwar world into an \'imperialist\' camp and an \'anti-imperialist\' camp.',
+        'The speech presented Soviet leadership as the alternative to U.S.-led capitalism.'
+      ],
+      caption: 'The Soviet framing of the same conflict, delivered to the founding meeting of the Cominform months later.',
+      prompt: 'How does this evidence corroborate or complicate the Truman Doctrine as evidence of ideological polarization? What is still missing about state behavior?'
+    },
+    {
+      title: 'Bandung refuses a forced choice',
+      label: 'Conference record · Bandung Conference, Indonesia, 1955',
+      sourceText: [
+        'Delegates from 29 Asian and African states discussed sovereignty, anti-colonialism, and cooperation.',
+        'The conference helped establish the political foundations of later non-alignment.'
+      ],
+      caption: 'A third answer, from states that declined both camps, meeting in Indonesia in 1955.',
+      prompt: 'How does Bandung complicate a claim that the Cold War divided every state neatly into two camps? Which Cold War pressure would you pair with it to explain why non-alignment emerged?'
+    }
+  ];
+
 })();

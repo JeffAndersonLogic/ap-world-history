@@ -141,9 +141,6 @@ Every script below also has an `npm run` alias; see `package.json`.
   unit converted to one authored evidence pool: no registry, no runtime, 4 to 6
   cards, and every card either a picture or declared `sourceText`. `CONVERTED` in
   that file is the declared list of converted units. In the offline suite.
-- `node scripts/check-module07-units5-6.js` and
-  `node scripts/check-module07-units8-9.js`, the contract for the units still on
-  the registry-plus-runtime path. Both retire as their units convert.
 - `node scripts/report-skill-alignment.js [topic] [--flagged]`, list each topic's
   AP reasoning skill beside what its Checkpoint 2 actually asks for, and flag the
   ones whose prompt contains none of that skill's language. **Deliberately not in
@@ -745,10 +742,21 @@ images across those units was still in its data file, shadowed, and nothing on
 the page or in any check could say which pool a student had read. That is the
 same failure as two coach prompt builders or an MP3 beside a chapter, and it is
 why `scripts/check-module07-authored.js` fails the push if a converted topic
-grows a second pool or its shell re-loads the runtime. Units 3, 4 and 7 are
-converted; Units 5, 6, 8 and 9 are not yet. **When the last one lands, delete
-`assets/js/module-07-evidence-runtime.js` and the remaining registries** rather
-than leaving a dormant override for someone to rediscover.
+grows a second pool or its shell re-loads the runtime.
+
+**All 57 topics are converted as of 2026-09-06**, and the registries, the
+override runtime and the two checks that guarded that path are deleted. If a
+topic's evidence is wrong on the page it is wrong in that topic's renderer
+config, or in the generator that writes it, and nowhere else. Do not build a
+second pool again.
+
+**Units 6 and 9 keep their pools in their generators**, in a
+`MODULE07_EVIDENCE` map beside `DEEP_READINGS`, because `build-unit6.js` writes
+every Unit 6 renderer config (6.1's included) and `build-unit9.js` writes 9.4 to
+9.9. Hand-editing one of those configs survives exactly until the next rebuild,
+and `readings-reproducible.test.js` runs `--check` on both, so the push fails
+first. Both generators derive their lesson shells from a template shell, 6.1 and
+9.3, so a script tag added to the template reaches every generated shell.
 
 **An author's summary is not evidence, however good the question attached to it
 is.** The module's sequence is *object -> observation -> inference -> claim*, and
@@ -765,14 +773,19 @@ authored `url`.
 **Two checks and a report, and the split is the point.**
 `check-module07-authored.js` is in the offline suite and enforces only what is
 not a judgment call: on a converted unit, every card is a picture or declares
-`sourceText`. `node scripts/report-evidence-authenticity.js [unit] [--summaries]`
+`sourceText`. `CONVERTED` in that file now lists every unit, and should stay
+that way. `node scripts/report-evidence-authenticity.js [unit] [--summaries]`
 sorts every card in the course into object, record and summary and is
 **deliberately not in any suite, exiting 0 always**, the same as
 `report-absolutes.js`: its classifier is a proxy, whether a card is really a
 historical object is a teaching judgment, and a gate over it would only teach
-people to bolt a numeral onto a summary until the report went quiet. Six Unit 7
-cards are flagged today and were deliberately left alone; the reasons are in
-`docs/module-07-unit-7-conversion.md`.
+people to bolt a numeral onto a summary until the report went quiet. Thirteen topics are flagged
+today and were deliberately left alone; most are the classifier's own blind spot,
+which reads a card's body and not its label. The reasons are in
+`docs/module-07-unit-7-conversion.md` and
+`docs/module-07-units-5-6-8-9-conversion.md`. **Do not move dates into card
+bodies to quiet the report**; that is the numeral-bolting it exists to
+discourage.
 
 **`evidenceLab.items` is not rendered by anything.** It is prose in a data file
 that no renderer reads. Units 3 and 4 carried an items bank and no `images`

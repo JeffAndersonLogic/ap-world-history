@@ -60,6 +60,231 @@ const TOPIC_ART = '';
  *
  *  A topic with no entry here simply gets no card, so this list grows as
  *  chapters are written rather than needing a placeholder per topic. */
+// Module 07 evidence pools for the generated topics, declared here for the same
+// reason DEEP_READINGS is: these renderer configs are written by this script, so
+// a hand edit to one survives exactly until the next rebuild. One authored pool
+// per topic, and every card is either a picture or declared text evidence. See
+// the authenticity gate in docs/module-07-scaffolding-standard.md.
+const COMMONS = name => `https://commons.wikimedia.org/wiki/Special:FilePath/${name}`;
+const COMMONS_PAGE = name => `https://commons.wikimedia.org/wiki/File:${name}`;
+const picture = (name, title, caption, prompt) => ({ title, url: COMMONS(name), sourceUrl: COMMONS_PAGE(name), caption, prompt });
+const localMap = (file, title, caption, prompt) => ({ title, url: `../assets/images/instructional-maps/${file}`, sourceUrl: `../assets/images/instructional-maps/${file}`, caption, prompt });
+
+const MODULE07_TASK = 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.';
+
+const MODULE07_EVIDENCE = {
+  '9.4': {
+    prompt: 'Make a claim about what changed in the global economy after 1945 and what continued. Use at least two cards, name the mechanism that carried the change, and identify who is not visible in the evidence you chose.',
+    cards: [
+      picture('Container_ship_Hanjin_Taipei.jpg', 'Container ship under way',
+        'Photograph of a loaded container ship. Standardized boxes are the physical form the late twentieth-century trading system took.',
+        'NOTICE how the cargo is packed and what that implies about handling it. INFER what changes for a port, and for the people who used to unload ships. What does a photograph of a ship not tell you about who owns the cargo or where the profit lands?'),
+      localMap('topic-9-4.svg', 'Global production and trade in the late twentieth century',
+        'BeHistorical reference map. Secondary geographic reconstruction of major manufacturing regions and trade routes.',
+        'NOTICE which regions the map marks as producing and which as consuming. INFER what that division implies about wages and bargaining power. What would you need beyond a map to show the arrangement was chosen rather than natural?'),
+      { title: 'Shenzhen becomes a Special Economic Zone',
+        label: 'State-policy record · China, 1980',
+        sourceText: [
+          'China designated Shenzhen and other coastal areas as zones',
+          'open to foreign investment and market experimentation.',
+          'The Communist Party retained political control throughout.'
+        ],
+        caption: 'A decision by a communist state to admit foreign capital in defined places, and to keep everything else.',
+        prompt: 'Is this evidence of a market economy replacing a planned one, or of a state using markets for its own ends? Defend the reading, and name what evidence would settle it.' },
+      { title: 'NAFTA links three national markets',
+        label: 'Trade-agreement record · North American Free Trade Agreement, 1994',
+        sourceText: [
+          'Canada, Mexico and the United States reduced many barriers',
+          'to trade and investment across their borders.',
+          'Production chains increasingly crossed those borders.'
+        ],
+        caption: 'A treaty that made a single production region out of three countries with very different wage levels.',
+        prompt: 'What does a trade agreement change that a shipping technology cannot, and what can it not change on its own? Pair this with one other card and say which does more explanatory work.' },
+      { title: 'The World Trade Organization begins',
+        label: 'Institutional record · WTO, 1995',
+        sourceText: [
+          'The WTO replaced the GATT framework with a permanent body',
+          'for trade rules and binding dispute settlement.',
+          'Member governments accepted common procedures.'
+        ],
+        caption: 'The point at which trade rules acquired a standing institution and an enforcement mechanism.',
+        prompt: 'Why might a permanent court for trade disputes matter more to a small economy than to a large one? What evidence would you need before claiming the WTO favored either?' }
+    ]
+  },
+  '9.5': {
+    prompt: 'Build a claim about how rights expanded after 1900, and qualify it. Use at least two cards, distinguish a formal legal change from a lived outcome, and say which of your cards is evidence for which.',
+    cards: [
+      picture('Wangari_Maathai.jpg', 'Wangari Maathai',
+        'Photograph of the founder of Kenya\'s Green Belt Movement, which organized women to plant trees and to defend community access to land.',
+        'NOTICE that this is a portrait of an organizer rather than of an official. INFER where the pressure for reform in this case originated. What can a portrait not show about whether the movement changed anything?'),
+      localMap('topic-9-5.svg', 'Reform movements and rights claims after 1900',
+        'BeHistorical reference map. Secondary geographic reconstruction locating the movements this topic studies.',
+        'NOTICE how widely spread the marked movements are. INFER what that distribution suggests about whether rights claims were exported or arrived independently. What does a map of locations not show about what each movement actually won?'),
+      { title: 'Universal Declaration of Human Rights',
+        label: 'International rights document · United Nations, 1948',
+        sourceText: [
+          'The declaration states that all human beings are born free',
+          'and equal in dignity and rights.',
+          'It is a declaration, not a treaty, and it binds no one.'
+        ],
+        caption: 'The text most later rights claims were argued from, adopted three years after the United Nations was founded.',
+        prompt: 'What can a document with no enforcement mechanism still do? Use one other card to test whether the declaration made any difference to it.' },
+      { title: 'Women gain the vote, by country and year',
+        label: 'Comparative legal timeline · twentieth century',
+        sourceText: [
+          'United States 1920, Brazil 1932, Turkey 1934,',
+          'Japan 1945, India 1947, Morocco 1963.',
+          'Each date is a change in law, not in practice.'
+        ],
+        caption: 'Six national dates, so the sequence can be read rather than assumed. The spread of the dates is itself the evidence.',
+        prompt: 'What pattern do these dates make, and what does the pattern suggest about the causes? Name a country whose date would complicate the pattern you see.' },
+      { title: 'Apartheid ends in South Africa',
+        label: 'Political and legal record · South Africa, 1990 to 1994',
+        sourceText: [
+          'Apartheid laws were dismantled and banned organizations',
+          'including the ANC were legalized.',
+          'South Africa held its first election with universal franchise in 1994.'
+        ],
+        caption: 'The dismantling of a legal racial order, dated, after decades of internal resistance and external pressure.',
+        prompt: 'This card shows a formal legal change. What evidence would you need to know whether lived conditions changed with it, and why is that a different question?' }
+    ]
+  },
+  '9.6': {
+    prompt: 'Make a claim about global culture after 1900. Use at least two cards to test whether the pattern is homogenization, hybridization, or local adaptation, and explain which your evidence actually supports.',
+    cards: [
+      picture('2006_Olympics_Opening_Ceremony.jpg', 'Olympic opening ceremony, Turin, 2006',
+        'Photograph of an opening ceremony staged for a worldwide television audience. The spectacle is designed to be watched elsewhere.',
+        'NOTICE what the ceremony is doing for the camera rather than for the stadium. INFER who the intended audience is. Does a globally broadcast national spectacle evidence homogenization or its opposite?'),
+      localMap('topic-9-6.svg', 'Circuits of global culture',
+        'BeHistorical reference map. Secondary geographic reconstruction of the routes along which media, music and film travelled.',
+        'NOTICE which directions the marked circuits run. INFER whether cultural traffic in this period moved one way or several. What would you need beyond a map of routes to know what audiences did with what arrived?'),
+      { title: 'Reggae travels beyond Jamaica',
+        label: 'Music-distribution record · Jamaica and global markets, 1960s to 1980s',
+        sourceText: [
+          'Reggae developed from Jamaican traditions and spread through',
+          'records, touring, radio and diaspora communities.',
+          'Audiences outside Jamaica adapted it into local forms.'
+        ],
+        caption: 'A music from a small island becoming a global form, by a route that ran outward rather than inward.',
+        prompt: 'Which direction does this card send cultural influence, and why does that matter for a claim about globalization? What does it complicate about a story of American or European dominance?' },
+      { title: 'Bollywood reaches transnational audiences',
+        label: 'Film-distribution record · Indian cinema, late twentieth century onward',
+        sourceText: [
+          'Hindi-language films circulated through cinemas, satellite',
+          'television, video and streaming.',
+          'Diaspora audiences were a substantial part of the market.'
+        ],
+        caption: 'A film industry with a global audience that is not primarily Western.',
+        prompt: 'Set this beside the reggae card. What claim do the two together support that neither supports alone? What would weaken it?' },
+      { title: 'Alibaba expands online commerce',
+        label: 'Digital-commerce record · China, founded 1999',
+        sourceText: [
+          'Alibaba built online marketplaces linking sellers and buyers',
+          'through digital payment and logistics systems.',
+          'A platform developed in China became globally significant.'
+        ],
+        caption: 'A commercial platform, included here because commerce carries culture: what people buy, and from whom.',
+        prompt: 'Is a shopping platform cultural evidence? Argue it either way, then say what a historian would need to settle it.' }
+    ]
+  },
+  '9.7': {
+    prompt: 'Explain why people opposed globalization, and show that the opposition was not one thing. Use at least two cards from different kinds of grievance, and identify what each set of protesters actually wanted.',
+    cards: [
+      picture('WTO_Protests-Seattle-Marchers-29Nov1999.jpg', 'Marchers at the WTO ministerial, Seattle, 1999',
+        'Photograph of the Seattle protests, November 1999. Labor unions, environmental groups and human-rights organizations marched together.',
+        'NOTICE what the banners and the marchers indicate about who turned out. INFER what such different groups thought they shared. What does a photograph of a march not tell you about whether it achieved anything?'),
+      localMap('topic-9-7.svg', 'Where opposition to globalization arose',
+        'BeHistorical reference map. Secondary geographic reconstruction of major protests and movements against globalized economic policy.',
+        'NOTICE whether the marked protests cluster in wealthy or poorer economies, or both. INFER what that says about who felt the costs. What does the map not distinguish between: a protest about wages and a protest about water?'),
+      { title: 'Anti-IMF structural-adjustment protests',
+        label: 'Movement record · debt-crisis states, 1980s to 2000s',
+        sourceText: [
+          'Protests in several countries opposed austerity, subsidy cuts,',
+          'privatization and currency reforms tied to IMF adjustment programs.',
+          'The programs were conditions attached to loans.'
+        ],
+        caption: 'Opposition in borrowing countries to conditions set by lenders, which is a grievance about sovereignty as much as about prices.',
+        prompt: 'How does this grievance differ from the one on display in Seattle? Which of the two is better evidence that globalization distributed its costs unevenly?' },
+      { title: 'The Cochabamba Water War',
+        label: 'Local protest and policy record · Bolivia, 2000',
+        sourceText: [
+          'Mass protests opposed a privatized water concession',
+          'after prices and access became political issues.',
+          'The government cancelled the concession.'
+        ],
+        caption: 'A single city, a single utility, and a protest that reversed the policy. The smallest scale in this pool and the only clear win.',
+        prompt: 'Why might opposition succeed here and not at the WTO? What does the difference in scale explain, and what does it not?' },
+      { title: 'Weibo as a locally developed platform',
+        label: 'Technology and cultural-policy record · China, launched 2009',
+        sourceText: [
+          'Sina Weibo became a major Chinese social-media platform',
+          'inside a nationally regulated internet.',
+          'Users joined global-style digital culture on national terms.'
+        ],
+        caption: 'Not a protest: an alternative. A state and a market building their own version rather than refusing the technology.',
+        prompt: 'Is building your own platform a form of resistance to globalization, or a form of participating in it? Use this card to complicate a claim built from the protest cards.' }
+    ]
+  },
+  '9.8': {
+    prompt: 'Build a claim about what international institutions could and could not do after 1945. Use at least two cards, name the mechanism that gave an institution power in one case, and the one that failed in another.',
+    cards: [
+      picture('UN_General_Assembly_hall.jpg', 'The United Nations General Assembly hall',
+        'Photograph of the Assembly chamber, where every member state holds one vote regardless of size.',
+        'NOTICE how the room is arranged and what that arrangement asserts about the members. INFER what kind of authority a body organized this way can claim. What does the room not show about which decisions are binding?'),
+      localMap('topic-9-8.svg', 'International organizations and their reach',
+        'BeHistorical reference map. Secondary geographic reconstruction of membership and major operations.',
+        'NOTICE where operations are marked and where they are not. INFER what determines whether an institution acts in a given place. What would you need beyond a map to explain a case where it did not act?'),
+      { title: 'The Security Council veto',
+        label: 'Institutional design record · United Nations, 1945 onward',
+        sourceText: [
+          'The United States, the Soviet Union and then Russia, China,',
+          'Britain and France hold permanent seats.',
+          'A negative vote by any one of them blocks substantive action.'
+        ],
+        caption: 'The rule, written into the founding charter, that decides when the organization can act at all.',
+        prompt: 'This design was a condition of the great powers joining at all. Use it to explain one case where the U.N. acted and one where it did not, then say whether the rule is a flaw or the price of the institution existing.' },
+      { title: 'The first United Nations Emergency Force',
+        label: 'Peacekeeping record · Suez Crisis, 1956',
+        sourceText: [
+          'The U.N. deployed its first large armed peacekeeping force',
+          'to supervise the end of fighting after the Suez Crisis.',
+          'Peacekeepers operated with the consent of the host state.'
+        ],
+        caption: 'The invention of peacekeeping, in a crisis where two permanent members were themselves the aggressors.',
+        prompt: 'What made action possible here despite the veto? What does the consent requirement mean for cases where a government is the source of the violence?' },
+      { title: 'Rwanda exposes institutional limits',
+        label: 'U.N. self-review and conflict record · Rwanda, 1994; review published 1999',
+        sourceText: [
+          'A peacekeeping mission was present as the genocide unfolded,',
+          'with a mandate and resources that were sharply limited.',
+          'A later U.N. inquiry criticized the organization\'s response.'
+        ],
+        caption: 'The organization\'s own inquiry into its worst failure, which makes this a rare piece of evidence: an institution assessing itself.',
+        prompt: 'Which of the design features in the other cards best explains this outcome? Note that this is a self-review: how does the author of a document change what you can conclude from it?' }
+    ]
+  },
+  '9.9': {
+    prompt: 'Argue about the extent of change in the twentieth and twenty-first centuries. Use at least one card for change and one for continuity, set out the criteria you are judging extent by, and qualify the claim.',
+    cards: [
+      picture('Apollo_11_Launch2.jpg', 'Apollo 11 launch, 16 July 1969',
+        'Photograph of the launch. A single state\'s programme, photographed as a national achievement and watched worldwide.',
+        'NOTICE the scale of the vehicle and the fact that it was photographed at all. INFER what it took, institutionally, to put this on a launch pad. Is this better evidence of technological change, of state capacity, or of Cold War competition?'),
+      picture('Life_expectancy_by_world_region%2C_from_1770_to_2018.svg', 'Life expectancy by world region, 1770 to 2018',
+        'Charted series compiled from national statistics. A long measured record rather than a snapshot.',
+        'NOTICE where the lines start, where they converge and where they do not. INFER which is the bigger story: the rise, or the persistent gaps. Which reading better supports a claim about the extent of change?'),
+      picture('Greenhouse_Gas_by_Sector.png', 'Global greenhouse gas emissions by sector',
+        'Charted breakdown of emissions by economic sector. Secondary compilation from reported national data.',
+        'NOTICE which sectors carry the largest shares. INFER what that implies about which parts of modern life are hardest to change. What does a global total conceal about who emitted it?'),
+      picture('AralSea1989_2014.jpg', 'The Aral Sea, 1989 and 2014',
+        'Two satellite images of the same place, twenty-five years apart.',
+        'NOTICE what is different between the two frames. INFER what sustained human decision-making it took to produce that difference. Is this evidence of change, of continuity in how states treat resources, or of both?'),
+      localMap('topic-9-9.svg', 'The globalized world, c. 2000',
+        'BeHistorical reference map. Secondary geographic reconstruction of the networks this unit has studied.',
+        'NOTICE which connections the map shows and which regions sit off the main lines. INFER what "global" means for a place that is not on them. Use this to qualify any claim you build from the other cards.')
+    ]
+  }
+};
+
 const DEEP_READINGS = {
   '9.4': {
     title: 'Who Captured the Savings',
@@ -438,11 +663,21 @@ function dataFile(topic) {
   return `(() => {\n  const brandCss = '../assets/css/behistorical-brand-lock.css';\n  if (!document.querySelector(\`link[href="\${brandCss}"]\`)) {\n    const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = brandCss; document.head.appendChild(link);\n  }\n})();\n\nwindow.BEHISTORICAL_LESSON = ${jsObject(buildLesson(topic))};\n`;
 }
 
+// Module 07's authored pool, emitted into the generated renderer config. A topic
+// with no entry emits nothing, the same self-hiding contract the video block and
+// the deep-reading banner use.
+function module07Block(topic) {
+  const pool = MODULE07_EVIDENCE[topic.id];
+  if (!pool) return '';
+  const lab = { title: 'Evidence Lab: Build and Test a Claim', task: MODULE07_TASK, prompt: pool.prompt };
+  return `\n  lesson.evidenceLab = ${jsonAssignmentValue(lab)};\n  lesson.images = ${jsonAssignmentValue(pool.cards)};`;
+}
+
 function rendererConfig(topic) {
   const scenario = topic.scenario
     ? { url: `../beintheroom/unit-9/${topic.scenario.file}`, desc: topic.scenario.dilemma }
     : { url: '', desc: 'The Unit 9 synthesis capstone uses the full evidence set instead of a separate simulation.' };
-  return `// Topic ${topic.id}, runtime-authoritative CED alignment, effective Fall 2026.\n(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.collegeBoardKeyConcepts = ${jsonAssignmentValue(conceptArray(topic))};\n  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-${topic.id.replace('.', '-')}-${topic.slug}-capture.html' };\n  lesson.beInTheRoom = ${jsObject(scenario)};\n})();\n`;
+  return `// Topic ${topic.id}, runtime-authoritative CED alignment, effective Fall 2026.\n(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.collegeBoardKeyConcepts = ${jsonAssignmentValue(conceptArray(topic))};\n  lesson.first10 = { ...lesson.first10, embedUrl: 'first-and-10-topic-${topic.id.replace('.', '-')}-${topic.slug}-capture.html' };\n  lesson.beInTheRoom = ${jsObject(scenario)};${module07Block(topic)}\n})();\n`;
 }
 
 function lessonShell(topic) {

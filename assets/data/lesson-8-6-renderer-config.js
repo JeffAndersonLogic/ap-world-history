@@ -137,4 +137,66 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Explain how decolonization produced territorial and demographic change while also creating economic continuities. Use evidence from at least two categories and make clear whether the cards corroborate or complicate one another.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Jawaharlal Nehru and Lord Mountbatten, August 1947',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15%2C_1947.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15%2C_1947.jpg',
+      caption: 'India\'s first Prime Minister Jawaharlal Nehru with Lord Mountbatten, the last British Viceroy of India, at independence. The handoff of power was negotiated, but the Partition it accompanied produced one of the largest humanitarian crises of the 20th century.',
+      prompt: 'What does this image reveal about the relationship between negotiated independence and the human costs of boundary redrawing? How does Nehru\'s presence here connect to his role in managing the Partition crisis as head of a weeks-old government?'
+    },
+    {
+      title: 'Julius Nyerere signs the Arusha Declaration, 1967',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Julius_Nyerere.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Julius_Nyerere.jpg',
+      caption: 'Julius Nyerere, President of Tanzania, at the time of the 1967 Arusha Declaration, which committed Tanzania to African socialism (ujamaa) and nationalization of banks and major industries as the path to postcolonial development.',
+      prompt: 'What does Nyerere\'s African socialist development model reveal about the economic choices newly independent states faced? How does ujamaa compare to Nasser\'s model in Egypt or Indira Gandhi\'s in India, what do they share as an approach to postcolonial development?'
+    },
+    {
+      title: 'South Asian immigrants arriving in Britain, 1960s',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Passenger_list_header_M.V._%22Empire_Windrush%22%2C_Tilbury_June_1948.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Passenger_list_header_M.V._%22Empire_Windrush%22%2C_Tilbury_June_1948.jpg',
+      caption: 'South Asian Commonwealth citizens arriving in Britain during the 1960s, one of the three CED migration examples illustrating how former colonial subjects moved to imperial metropoles, maintaining cultural and economic ties after independence.',
+      prompt: 'How does the migration of South Asians to Britain illustrate KC-6.2.III.B? What does it reveal about the economic relationship between former colonies and former colonizers that persisted after formal independence? What \'continuities\' does this migration represent?'
+    },
+    {
+      title: 'Radcliffe Line and Partition',
+      label: 'Boundary and demographic record · British India, 1947',
+      sourceText: [
+        'A new boundary divided Punjab and Bengal between India and Pakistan at the end of British rule.',
+        'Millions of Hindus, Muslims, and Sikhs crossed the new borders amid widespread violence.'
+      ],
+      caption: 'A boundary drawn through Punjab and Bengal by a commission, and what followed it.',
+      prompt: 'What territorial change and demographic consequence are directly supported here? What evidence would you need before assigning responsibility for the violence to one cause?'
+    },
+    {
+      title: 'UN Partition Plan and the creation of Israel',
+      label: 'International and demographic record · Palestine/Israel, 1947-1949',
+      sourceText: [
+        'U.N. General Assembly Resolution 181 proposed separate Arab and Jewish states in 1947.',
+        'War followed Israel\'s 1948 declaration of independence, and about 700,000 Palestinian Arabs became refugees or were displaced.'
+      ],
+      caption: 'A partition proposed by international vote, the war that followed, and the displacement counted afterward.',
+      prompt: 'How does this evidence connect boundary decisions to state creation and displacement? What additional evidence is necessary to explain the competing national claims?'
+    },
+    {
+      title: 'Commonwealth citizenship and migration to Britain',
+      label: 'Legal and migration record · British Nationality Act, 1948 and postwar migration',
+      sourceText: [
+        'The 1948 law recognized citizenship rights across Britain and much of the Commonwealth.',
+        'Large numbers of people from the Caribbean and South Asia migrated to Britain in the following decades.'
+      ],
+      caption: 'The statute that made citizens of the former empire able to enter Britain, and the migration that followed.',
+      prompt: 'How can this card support a continuity claim about ties between former colonies and the metropole? What economic data would strengthen that claim?'
+    }
+  ];
+
 })();

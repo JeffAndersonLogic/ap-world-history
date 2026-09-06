@@ -59,6 +59,355 @@ const SUBMIT_NOTE = 'Organize your thinking here, submit your final work in Canv
  * A topic absent from this map simply shows no deep-reading card, which is how
  * the feature stays optional.
  */
+// Module 07 evidence pools for Unit 6, declared here for the same reason
+// DEEP_READINGS is: this script writes every Unit 6 renderer config, including
+// Topic 6.1's, so a hand edit to one survives exactly until the next rebuild.
+// One authored pool per topic, every card a picture or declared text evidence.
+// See the authenticity gate in docs/module-07-scaffolding-standard.md.
+const COMMONS = name => `https://commons.wikimedia.org/wiki/Special:FilePath/${name}`;
+const COMMONS_PAGE = name => `https://commons.wikimedia.org/wiki/File:${name}`;
+const picture = (name, title, caption, prompt) => ({ title, url: COMMONS(name), sourceUrl: COMMONS_PAGE(name), caption, prompt });
+const localMap = (file, title, caption, prompt) => ({ title, url: `../assets/images/instructional-maps/${file}`, sourceUrl: `../assets/images/instructional-maps/${file}`, caption, prompt });
+
+// Unit 6 sits at "guided independence" in the progressive-release scale, so the
+// task still names the moves. Units 7 to 9 drop the procedural wording.
+const MODULE07_TASK = 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.';
+
+const MODULE07_EVIDENCE = {
+  '6.1': {
+    prompt: 'Build a claim about why Europeans and others justified imperial expansion after 1750. Use at least two cards, distinguish a stated justification from an underlying cause, and explain how you can tell them apart.',
+    cards: [
+      picture('Punch_Rhodes_Colossus.png', 'The Rhodes Colossus',
+        'Cartoon published in the British magazine Punch, 1892, showing Cecil Rhodes astride Africa. Commentary made for a British readership.',
+        'NOTICE what the cartoonist exaggerates and what sits outside the frame. INFER what British readers were expected to find plausible. Is a cartoon evidence of what people believed, or of what a magazine thought would sell?'),
+      picture('Kongokonferenz.jpg', 'The Berlin Conference, 1884 to 1885',
+        'Contemporary depiction of the conference at which European powers set rules for claims in Africa. No African state was represented.',
+        'NOTICE who is in the room. INFER, from who is absent, what the conference assumed about the territory being divided. What does a picture of a meeting not tell you about what happened on the ground afterward?'),
+      localMap('topic-6-1.svg', 'Imperial claims after 1870',
+        'BeHistorical reference map. Secondary geographic reconstruction of imperial holdings and claims.',
+        'NOTICE how much of the map is claimed and by how few states. INFER what that leaves for a latecomer. How does scarcity of unclaimed land help explain the timing of the scramble?'),
+      { title: 'Rhodes on race and empire',
+        label: 'Primary-source excerpt · Cecil Rhodes, 1877',
+        sourceText: [
+          '“We are the finest race in the world.”',
+          'Expansion is framed as a racial and national mission.'
+        ],
+        caption: 'Written by one of the men who did the expanding, in a private confession of faith rather than a public speech.',
+        prompt: 'What kind of justification is this: economic, strategic, or ideological? What would you need to show that the belief caused the expansion rather than decorating it?' },
+      { title: 'Kipling and imperial duty',
+        label: 'Primary-source excerpt · “The White Man’s Burden,” 1899',
+        sourceText: [
+          '“Take up the White Man’s burden…”',
+          'Rule is presented as sacrifice and obligation rather than gain.'
+        ],
+        caption: 'A poem addressed to the United States on its acquisition of the Philippines, urging it to take up empire.',
+        prompt: 'How does presenting rule as a burden change what the argument has to answer for? Set it beside the Rhodes card: are these the same justification or two different ones?' },
+      { title: 'The Berlin Act and effective occupation',
+        label: 'Diplomatic record · General Act of the Berlin Conference, 1885',
+        sourceText: [
+          'European powers set rules for claims and for navigation.',
+          '“Effective occupation” rewarded actual control on the ground.',
+          'A claim on paper was not enough to hold territory.'
+        ],
+        caption: 'The rule that turned mapmaking into occupation: to keep a claim, a power had to administer it.',
+        prompt: 'What behaviour does a rule like this encourage? Use it to explain the pace of conquest after 1885, and say what other evidence you would need.' }
+    ]
+  },
+  '6.2': {
+    prompt: 'Make a claim about how states expanded their power after 1750. Use at least two cards from different mechanisms, and explain what each mechanism required that the others did not.',
+    cards: [
+      picture('Kongokonferenz.jpg', 'The Berlin Conference, 1884 to 1885',
+        'Contemporary depiction of the conference at which European powers agreed rules for claiming African territory.',
+        'NOTICE that this is a negotiation between claimants. INFER what kind of expansion begins in a conference room rather than on a battlefield. What does the image not show about how the claims were enforced?'),
+      localMap('topic-6-2.svg', 'State expansion after 1750',
+        'BeHistorical reference map. Secondary geographic reconstruction of the expansions this topic studies.',
+        'NOTICE which expansions are contiguous with the expanding state and which are overseas. INFER what difference that makes to how a territory is governed. What does the map not show about local collaboration or resistance?'),
+      { title: 'The British Raj replaces company rule',
+        label: 'Administrative record · India, 1858',
+        sourceText: [
+          'After the 1857 rebellion, rule transferred from the',
+          'East India Company to the Crown.',
+          'A company empire became a directly governed one.'
+        ],
+        caption: 'A change of ruler without a change of ruled: the same territory, administered by a state instead of a corporation.',
+        prompt: 'What does this transfer suggest about the limits of governing through a company? Which other card shows a power making the opposite choice?' },
+      { title: 'The Congo Free State',
+        label: 'Sovereignty record · 1885 to 1908',
+        sourceText: [
+          'Leopold II held the Congo as a personal domain,',
+          'not as a Belgian colony.',
+          'Belgium annexed it as a formal colony in 1908.'
+        ],
+        caption: 'Territory held by a monarch in a private capacity, and then taken over by his own country after reports of atrocity.',
+        prompt: 'What does private ownership of a territory change about accountability? Note the 1908 date: what does the annexation itself tell you?' },
+      { title: 'Japan takes Taiwan',
+        label: 'Treaty record · Treaty of Shimonoseki, 1895',
+        sourceText: [
+          'Qing China ceded Taiwan after defeat in war.',
+          'Japan joined the ranks of overseas imperial powers.'
+        ],
+        caption: 'An Asian state acquiring an overseas colony from another Asian state, by treaty after a war.',
+        prompt: 'How does this card complicate a claim that imperialism was European? What would you need to show that Japanese rule worked like, or unlike, European rule?' },
+      { title: 'The United States annexes Hawai‘i',
+        label: 'Legal and political record · 1893 and 1898',
+        sourceText: [
+          'The Hawaiian monarchy was overthrown in 1893',
+          'by settlers and business interests with U.S. support.',
+          'The United States formally annexed the islands in 1898.'
+        ],
+        caption: 'Five years between the overthrow and the annexation, which is itself part of the evidence.',
+        prompt: 'What does the gap between 1893 and 1898 suggest about how this expansion was justified at home? Compare the mechanism here with the treaty in the Taiwan card.' }
+    ]
+  },
+  '6.3': {
+    prompt: 'Explain why some resistance to imperial expansion succeeded and most did not. Use at least two cards, name the conditions each case had, and avoid concluding that resistance was either futile or uniform.',
+    cards: [
+      picture('Yaa_Asantewaa.jpg', 'Yaa Asantewaa',
+        'Photograph of the Asante queen mother who led the 1900 War of the Golden Stool against British forces.',
+        'NOTICE how she is dressed and presented. INFER what authority she is claiming in the image. What does a portrait not tell you about how many followed her, or why?'),
+      localMap('topic-6-3.svg', 'Resistance to state expansion',
+        'BeHistorical reference map. Secondary geographic reconstruction locating the major resistance movements of this period.',
+        'NOTICE where sustained resistance occurred. INFER what those places might have had in common. What does location alone fail to explain about success or defeat?'),
+      { title: 'The Indian Rebellion of 1857',
+        label: 'Rebellion record · South Asia, 1857 to 1858',
+        sourceText: [
+          'A cartridge controversy helped trigger mutiny among sepoys.',
+          'Grievances included annexation, pay, land and religion.',
+          'The rebellion was defeated and rule passed to the Crown.'
+        ],
+        caption: 'A rebellion inside the imperial army itself, defeated, and followed by a reorganization of the empire that faced it.',
+        prompt: 'Was this a failure? Use the outcome to argue both ways, then say which reading the evidence better supports.' },
+      { title: 'Ethiopia at Adwa',
+        label: 'Battle record · 1 March 1896',
+        sourceText: [
+          'Ethiopian forces defeated an invading Italian army.',
+          'Menelik II combined diplomacy, imported modern weapons',
+          'and mass mobilization.'
+        ],
+        caption: 'The one decisive defeat of a European invasion in this period, and the three things the victor had assembled first.',
+        prompt: 'Which of the three factors named here do the other cards lack? Build a claim about the conditions for successful resistance and name what would disprove it.' },
+      { title: 'Samory Touré’s resistance',
+        label: 'Military and political record · West Africa, 1880s to 1898',
+        sourceText: [
+          'Samory built a mobile state and acquired modern firearms.',
+          'He resisted French forces for well over a decade.',
+          'French forces eventually defeated and captured him.'
+        ],
+        caption: 'Sustained, organized, modern-armed resistance that still ended in defeat, which is what makes it useful beside Adwa.',
+        prompt: 'Samory had weapons and organization and still lost. What does that do to a simple technology explanation? What was different at Adwa?' },
+      { title: 'The Mahdist state in Sudan',
+        label: 'Religious and political resistance · 1881 to 1898',
+        sourceText: [
+          'A religiously framed revolt defeated Egyptian and British forces',
+          'and governed a state for over a decade.',
+          'Anglo-Egyptian armies reconquered Sudan in 1898.'
+        ],
+        caption: 'Resistance that became a functioning state before it was destroyed, seventeen years later.',
+        prompt: 'What does the length of this case add that a single battle cannot? Compare the basis of authority here with the Asante and Ethiopian cases.' }
+    ]
+  },
+  '6.4': {
+    prompt: 'Build a claim about how industrial demand reshaped economies outside the industrial core. Use at least two commodities, name the mechanism in each, and identify who captured the value.',
+    cards: [
+      picture('Rubber_tapping.jpg', 'Rubber tapping',
+        'Photograph of latex being tapped from a rubber tree. The technique is simple; the demand behind it was industrial.',
+        'NOTICE what the work itself involves. INFER what determines how much a tapper can produce in a day, and what a quota would therefore require. What does the photograph not show about who set the quota?'),
+      localMap('topic-6-4.svg', 'Commodity production and export routes',
+        'BeHistorical reference map. Secondary geographic reconstruction of major export commodities and the routes carrying them.',
+        'NOTICE which direction the routes run and what they connect. INFER what an economy organized around one export is exposed to. What does a route map not show about prices?'),
+      { title: 'The Egyptian cotton boom',
+        label: 'Commodity record · Egypt, 1860s',
+        sourceText: [
+          'Disruption from the U.S. Civil War raised demand for Egyptian cotton.',
+          'Expansion tied growers and the state more tightly to foreign markets and credit.'
+        ],
+        caption: 'A boom caused by a war on another continent, and the debt that followed it.',
+        prompt: 'What happens to this economy when the American supply returns? Use the card to explain a vulnerability rather than a benefit.' },
+      { title: 'Congo rubber quotas',
+        label: 'Labor and commodity record · 1890s to 1900s',
+        sourceText: [
+          'Rubber demand produced coercive collection quotas.',
+          'Concession companies used violence to enforce output.'
+        ],
+        caption: 'The point at which a commodity boom becomes a labor system enforced by force.',
+        prompt: 'Set this beside the tapping photograph. What does the record tell you that the image cannot, and what does the image tell you that the record cannot?' },
+      { title: 'Peruvian guano exports',
+        label: 'Commodity record · mid-nineteenth century',
+        sourceText: [
+          'Guano fertilizer became a major export.',
+          'State revenue became unusually dependent on one resource.'
+        ],
+        caption: 'A case outside Africa and Asia, and a state budget resting on a single deposit.',
+        prompt: 'What does this add to a claim built only from colonial cases? Peru was independent: does that change the pattern or confirm it?' },
+      { title: 'West African palm oil',
+        label: 'Commodity record · nineteenth century',
+        sourceText: [
+          'Palm oil exports expanded with European industrial demand.',
+          'African producers and merchants often remained important',
+          'in production and trade.'
+        ],
+        caption: 'The card that complicates the others: expanding export demand did not always displace local ownership.',
+        prompt: 'Why does this case not fit a simple extraction story? What would you need to know before deciding whether it is the exception or the rule?' }
+    ]
+  },
+  '6.5': {
+    prompt: 'Explain economic imperialism without conquest. Use at least two cards to show how a state could lose control of its own economy, and say what distinguishes this from colonial rule.',
+    cards: [
+      picture('Buenos_Aires_Port.jpg', 'The port of Buenos Aires',
+        'Photograph of the port built out with British capital, in a country that was never a colony.',
+        'NOTICE the scale of the infrastructure and what it is built to move. INFER whose interests the layout serves. What does a port photograph not show about who owns it or who holds the debt?'),
+      localMap('topic-6-5.svg', 'Economic imperialism and financial control',
+        'BeHistorical reference map. Secondary geographic reconstruction of investment, debt and treaty-port arrangements.',
+        'NOTICE which states appear here that do not appear on a map of colonies. INFER what kind of control does not require a flag. What would you need beyond a map to show that control was real?'),
+      { title: 'The Treaty of Nanjing',
+        label: 'Treaty record · China and Britain, 1842',
+        sourceText: [
+          'China opened treaty ports and paid an indemnity.',
+          'Hong Kong was ceded to Britain.',
+          'China remained a sovereign state throughout.'
+        ],
+        caption: 'Terms imposed after defeat on a state that was never colonized, which is what makes it the clearest case of this topic.',
+        prompt: 'What is taken here and what is left? Use the card to define economic imperialism against colonial rule.' },
+      { title: 'The Ottoman Public Debt Administration',
+        label: 'Financial institution · established 1881',
+        sourceText: [
+          'Foreign creditors gained control over selected Ottoman revenues.',
+          'Debt repayment became an international governance mechanism.'
+        ],
+        caption: 'A creditors\' body collecting an empire\'s own taxes, inside that empire, with its consent on paper.',
+        prompt: 'How much sovereignty is left when foreign creditors collect the taxes? Compare this mechanism with the treaty in the Nanjing card.' },
+      { title: 'Egypt, debt and occupation',
+        label: 'Financial and political sequence · 1870s to 1882',
+        sourceText: [
+          'Debt gave European creditors growing leverage over Egyptian finances.',
+          'Britain occupied Egypt militarily in 1882.'
+        ],
+        caption: 'The case where financial control ended in troops, which is the boundary this topic sits on.',
+        prompt: 'Does this card belong in economic imperialism or in conquest? Argue the placement, and say what the sequence implies about the relationship between the two.' },
+      { title: 'British capital in Argentine railways',
+        label: 'Investment record · late nineteenth century',
+        sourceText: [
+          'Foreign capital financed major railway expansion.',
+          'Routes linked export-producing regions to Atlantic ports.'
+        ],
+        caption: 'Infrastructure built by outside investors, laid out to serve export rather than internal connection.',
+        prompt: 'Read the route pattern as evidence of intent. What would an internally focused railway network look like instead, and how would you check?' }
+    ]
+  },
+  '6.6': {
+    prompt: 'Make a claim about what caused mass migration after 1750. Use at least two cards, separate a push from a pull, and explain what made the movement physically possible.',
+    cards: [
+      picture('Indian_indenture_ship.jpg', 'An indenture ship',
+        'Photograph of a vessel carrying indentured labourers. The contract and the passage were parts of the same system.',
+        'NOTICE the conditions the vessel implies for a voyage of weeks. INFER what a recruiter would have to promise to fill it. What does the ship not tell you about what awaited at the other end?'),
+      localMap('topic-6-6.svg', 'Global migration flows after 1750',
+        'BeHistorical reference map. Secondary geographic reconstruction of the major migration streams of the period.',
+        'NOTICE which flows are voluntary, which are contracted, and which are coerced. INFER what the map is flattening by drawing them all as arrows. Which distinction matters most for causation?'),
+      { title: 'The Great Famine and Irish migration',
+        label: 'Demographic record · Ireland, 1845 to 1852',
+        sourceText: [
+          'Crop failure combined with poverty and insecure land tenure.',
+          'Mass death and mass emigration followed.'
+        ],
+        caption: 'A push factor with a cause behind it: the blight was natural, the vulnerability was not.',
+        prompt: 'Which part of this is the cause of the migration: the crop failure, or the land system? Defend the answer and say what evidence would settle it.' },
+      { title: 'The Indian indenture contract',
+        label: 'Labor-system record · after 1834',
+        sourceText: [
+          'Workers signed fixed-term contracts for overseas plantation labor.',
+          'Recruitment expanded after the abolition of slavery',
+          'in the British empire.'
+        ],
+        caption: 'A labor system that appeared where another had just been abolished, which is the fact to reason from.',
+        prompt: 'What does the timing suggest about what indenture was for? Is a signed contract sufficient evidence that the movement was voluntary?' },
+      { title: 'Chinese migration to the Pacific world',
+        label: 'Migration record · 1850s to 1870s',
+        sourceText: [
+          'Gold rushes, railroads and port labor created demand abroad.',
+          'Steamship routes connected southern China to Pacific destinations.'
+        ],
+        caption: 'A pull factor and a route, in one card. Demand alone does not move anyone.',
+        prompt: 'Separate the pull from the means in this card. Which of the two would you rank as the more important cause, and what would change your mind?' },
+      { title: 'Steamship passage',
+        label: 'Transport reconstruction · nineteenth century',
+        sourceText: [
+          'Regular steamship service reduced travel time and uncertainty.',
+          'Cheaper, more predictable passage made repeat and',
+          'return migration possible for the first time.'
+        ],
+        caption: 'Labeled a reconstruction: the pattern historians draw from shipping schedules and passenger records rather than a single document.',
+        prompt: 'Return migration is the detail to notice here. How does the possibility of going home change what migration means, and which other card does it most complicate?' }
+    ]
+  },
+  '6.7': {
+    prompt: 'Build a claim about the effects of migration on receiving and sending societies. Use at least two cards, and make sure your claim accounts for a place migrants left as well as one they arrived in.',
+    cards: [
+      picture('Chinatown_San_Francisco_1880.jpg', 'Chinatown, San Francisco, 1880',
+        'Photograph of a migrant neighbourhood two years before Chinese immigration was restricted by federal law.',
+        'NOTICE what the street shows about how the community organized itself. INFER what institutions a migrant population builds when the surrounding society excludes it. What does an outsider\'s photograph of a neighbourhood risk missing?'),
+      localMap('topic-6-7.svg', 'Diasporas and receiving societies',
+        'BeHistorical reference map. Secondary geographic reconstruction of major diaspora communities and their origins.',
+        'NOTICE the pairing of origin and destination. INFER what a sending region loses and gains at the same time. What does the map show nothing at all about?'),
+      { title: 'The Chinese Exclusion Act',
+        label: 'Legal record · United States, 1882',
+        sourceText: [
+          'Federal law suspended the immigration of Chinese laborers.',
+          'Migration became explicitly regulated by national origin.'
+        ],
+        caption: 'The first American law to bar a group by nationality, passed while the community in the photograph was already established.',
+        prompt: 'What does a law like this tell you about the receiving society rather than about the migrants? Read it beside the photograph: which comes first, the community or the exclusion?' },
+      { title: 'The White Australia policy',
+        label: 'Legal record · Immigration Restriction Act, 1901',
+        sourceText: [
+          'A dictation test provided the mechanism for racial exclusion.',
+          'The policy followed decades of anti-Chinese restriction.'
+        ],
+        caption: 'Exclusion written so that the racial purpose is not stated in the text: the test could be given in any European language.',
+        prompt: 'Why would a government write a law this way? What does the gap between the mechanism and the purpose tell you about how such policies were justified?' },
+      { title: 'Remittances and absent workers',
+        label: 'Household and economic reconstruction · sending regions',
+        sourceText: [
+          'Migrants sent earnings home across long distances.',
+          'Male-selective migration could alter household labor',
+          'and gender roles in the villages they left.'
+        ],
+        caption: 'The only card here about the places migrants came from, and labeled a reconstruction rather than a record.',
+        prompt: 'Build the sending-society half of your claim from this card. What kind of source would give you direct evidence for it, and why is that evidence scarce?' }
+    ]
+  },
+  '6.8': {
+    prompt: 'Rank the causes of imperial expansion after 1750 and defend the ranking. Use at least two cards, state your criterion for importance before you rank, and name the evidence that most weakens your answer.',
+    cards: [
+      picture('Punch_Rhodes_Colossus.png', 'The Rhodes Colossus',
+        'Punch cartoon, 1892. Ambition and competition between powers, drawn for a domestic audience.',
+        'NOTICE the pose and the scale. INFER which cause of expansion this image is arguing for. Is a cartoon evidence of a cause, or of how a cause was talked about?'),
+      picture('Rubber_tapping.jpg', 'Rubber tapping',
+        'Photograph of latex extraction, the point where industrial demand met colonial labor.',
+        'NOTICE the labor the process requires. INFER which cause of expansion this image supports. What does it evidence better than the cartoon does, and worse?'),
+      picture('Yaa_Asantewaa.jpg', 'Yaa Asantewaa',
+        'Photograph of the Asante leader of the 1900 War of the Golden Stool.',
+        'NOTICE that this is a card about response rather than cause. INFER what a ranking of causes leaves out if it never accounts for resistance. Where does this belong in a causal argument?'),
+      { title: 'Industrial demand for raw materials',
+        label: 'Economic causal evidence · nineteenth century',
+        sourceText: [
+          'Factories demanded cotton, rubber, metals, oils and other inputs.',
+          'Overseas markets also attracted exporters and investors.'
+        ],
+        caption: 'The economic case, stated as demand rather than as greed, so that it can be tested against the other cards.',
+        prompt: 'Does demand explain where empires expanded, when they expanded, or both? Name a case from this unit that demand alone does not explain.' },
+      { title: 'Technology lowers the cost of conquest',
+        label: 'Technological causal evidence · late nineteenth century',
+        sourceText: [
+          'Steam transport, quinine, telegraphy and modern firearms',
+          'widened military and logistical advantages.',
+          'States could project force further and hold it longer.'
+        ],
+        caption: 'The enabling condition rather than the motive: what made expansion cheap enough to attempt.',
+        prompt: 'An enabling condition is not a motive. Explain the difference using this card and the demand card, then say which belongs higher in your ranking and why.' }
+    ]
+  }
+};
+
 const DEEP_READINGS = {
   '6.2': {
     title: 'What Conquest Started to Cost',
@@ -497,6 +846,15 @@ function dataFile(topic) {
   return `(() => {\n  const brandCss = '../assets/css/behistorical-brand-lock.css';\n  if (!document.querySelector(\`link[href="\${brandCss}"]\`)) {\n    const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = brandCss; document.head.appendChild(link);\n  }\n})();\n\nwindow.BEHISTORICAL_LESSON = ${jsObject(buildLesson(topic))};\n`;
 }
 
+// Module 07's authored pool, emitted into a generated renderer config. A topic
+// with no entry emits nothing.
+function module07Block(topicId) {
+  const pool = MODULE07_EVIDENCE[topicId];
+  if (!pool) return '';
+  const lab = { title: 'Evidence Lab: Build and Test a Claim', task: MODULE07_TASK, prompt: pool.prompt };
+  return `\n  lesson.evidenceLab = ${jsonAssignmentValue(lab)};\n  lesson.images = ${jsonAssignmentValue(pool.cards)};`;
+}
+
 function rendererConfig(topic) {
   const concepts = alignTopicConcepts(topic.id, topic.kc.map(([code, text]) => ({
     code,
@@ -504,7 +862,7 @@ function rendererConfig(topic) {
     text,
     illustrativeExamples: topic.cases
   })));
-  return `(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.collegeBoardKeyConcepts = ${jsonAssignmentValue(concepts)};\n})();\n`;
+  return `(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.collegeBoardKeyConcepts = ${jsonAssignmentValue(concepts)};${module07Block(topic.id)}\n})();\n`;
 }
 
 function first10Page(topic) {
@@ -609,7 +967,7 @@ for (const topic of topics) {
 write(path.join(ROOM, scenario61.file), scenarioPage(scenario61));
 
 // Recovered Topic 6.1 already has rich lesson data and First & 10 content; wire its scenario and current submission language.
-write(path.join(DATA, 'lesson-6-1-renderer-config.js'), `(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.beInTheRoom = {\n    url: '../beintheroom/unit-6/${scenario61.file}',\n    desc: '${scenario61.dilemma.replace(/'/g, "\\'")}'\n  };\n})();\n`);
+write(path.join(DATA, 'lesson-6-1-renderer-config.js'), `(() => {\n  const lesson = window.BEHISTORICAL_LESSON;\n  if (!lesson) return;\n  lesson.meta.canvasSubmissionNote = '${SUBMIT_NOTE}';\n  lesson.meta.feedbackToolUrl = '${COACH_URL}';\n  lesson.beInTheRoom = {\n    url: '../beintheroom/unit-6/${scenario61.file}',\n    desc: '${scenario61.dilemma.replace(/'/g, "\\'")}'\n  };${module07Block('6.1')}\n})();\n`);
 
 updateHub();
 console.log('Built Unit 6 Topics 6.2–6.8, wired Topic 6.1, and generated seven BeInTheRoom scenarios.');

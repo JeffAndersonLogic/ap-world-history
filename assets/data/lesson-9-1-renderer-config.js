@@ -132,4 +132,66 @@
       focus: ['Open with a clear claim about how technology changed the world after 1900.', 'Use at least one intended consequence and one unintended consequence as evidence.', 'Draw from at least two categories of technology (communication/transport, energy/agriculture, medicine/birth control).', 'Explain the causal mechanism, how and why the change happened, not just what changed.']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Evaluate how new technologies changed the world after 1900. Use evidence from at least two technological categories, explain the mechanism of change, and use one card to qualify the argument with an unintended consequence or uneven effect.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Early Radio Broadcast, 1920s',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atwater_Kent_Radios_-1927A.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Atwater_Kent_Radios_-1927A.jpg',
+      caption: 'Radio brought news, entertainment, and government messages into millions of homes for the first time, collapsing the distance between states and citizens.',
+      prompt: 'How did radio change the relationship between governments and the people they governed? What new possibilities, and risks, did instant mass communication create?'
+    },
+    {
+      title: 'Green Revolution Wheat Field, India',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Norman_Borlaug.jpg',
+      caption: 'Norman Borlaug\'s high-yield wheat varieties transformed Indian agriculture, but at the cost of chemical dependence and the displacement of smallholder farmers.',
+      prompt: 'What is the strongest evidence that the Green Revolution succeeded? What is the strongest evidence that it created problems it did not intend to create?'
+    },
+    {
+      title: 'Chernobyl Nuclear Power Plant',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_Nuclear_Power_Plant%2C_April_1997.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chernobyl_Nuclear_Power_Plant%2C_April_1997.jpg',
+      caption: 'The Chernobyl disaster (1986) exposed the catastrophic risks of nuclear power, an energy technology that had promised abundant, clean electricity.',
+      prompt: 'How does Chernobyl illustrate the TEC thematic focus, that technological advances shape human development with both intended and unintended consequences?'
+    },
+    {
+      title: 'Standardized container shipping',
+      label: 'Transportation record · containerization, 1950s-1960s',
+      sourceText: [
+        'Standardized metal containers could move between ships, trucks, and trains without unloading individual cargo pieces.',
+        'Ports reorganized around cranes, large container terminals, and faster cargo transfer.'
+      ],
+      caption: 'A change in how cargo was packed rather than in what was carried, and what it did to ports.',
+      prompt: 'What specific problem of distance or handling did containerization reduce? What evidence would you need to show who benefited and who lost from the change?'
+    },
+    {
+      title: 'TCP/IP links computer networks',
+      label: 'Technology record · ARPANET transition to TCP/IP, 1983',
+      sourceText: [
+        'ARPANET adopted TCP/IP as a common networking protocol in 1983.',
+        'Common protocols allowed previously separate computer networks to exchange data.'
+      ],
+      caption: 'The date separate computer networks agreed on a common protocol, which is what made them one network.',
+      prompt: 'How can this evidence support a claim about reduced communication distance? What later evidence would be necessary before claiming mass global access?'
+    },
+    {
+      title: 'Oral contraception and fertility control',
+      label: 'Medical and demographic record · oral contraceptive pill, approved in the United States in 1960',
+      sourceText: [
+        'Reliable hormonal contraception gave many women greater control over the timing and number of births.',
+        'Fertility rates later declined in many regions for multiple economic, social, and medical reasons.'
+      ],
+      caption: 'A medical technology with a demographic effect, approved in the United States in 1960.',
+      prompt: 'How could this evidence support a claim about changing reproductive practices? What prevents you from attributing global fertility decline to one technology alone?'
+    }
+  ];
+
 })();

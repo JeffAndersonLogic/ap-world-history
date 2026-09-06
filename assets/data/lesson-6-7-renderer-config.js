@@ -31,4 +31,56 @@
       ]
     }
   ];
+  lesson.evidenceLab = {
+    "title": "Evidence Lab: Build and Test a Claim",
+    "task": "Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.",
+    "prompt": "Build a claim about the effects of migration on receiving and sending societies. Use at least two cards, and make sure your claim accounts for a place migrants left as well as one they arrived in."
+  };
+  lesson.images = [
+    {
+      "title": "Chinatown, San Francisco, 1880",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinatown_San_Francisco_1880.jpg",
+      "caption": "Photograph of a migrant neighbourhood two years before Chinese immigration was restricted by federal law.",
+      "prompt": "NOTICE what the street shows about how the community organized itself. INFER what institutions a migrant population builds when the surrounding society excludes it. What does an outsider's photograph of a neighbourhood risk missing?"
+    },
+    {
+      "title": "Diasporas and receiving societies",
+      "url": "../assets/images/instructional-maps/topic-6-7.svg",
+      "sourceUrl": "../assets/images/instructional-maps/topic-6-7.svg",
+      "caption": "BeHistorical reference map. Secondary geographic reconstruction of major diaspora communities and their origins.",
+      "prompt": "NOTICE the pairing of origin and destination. INFER what a sending region loses and gains at the same time. What does the map show nothing at all about?"
+    },
+    {
+      "title": "The Chinese Exclusion Act",
+      "label": "Legal record · United States, 1882",
+      "sourceText": [
+        "Federal law suspended the immigration of Chinese laborers.",
+        "Migration became explicitly regulated by national origin."
+      ],
+      "caption": "The first American law to bar a group by nationality, passed while the community in the photograph was already established.",
+      "prompt": "What does a law like this tell you about the receiving society rather than about the migrants? Read it beside the photograph: which comes first, the community or the exclusion?"
+    },
+    {
+      "title": "The White Australia policy",
+      "label": "Legal record · Immigration Restriction Act, 1901",
+      "sourceText": [
+        "A dictation test provided the mechanism for racial exclusion.",
+        "The policy followed decades of anti-Chinese restriction."
+      ],
+      "caption": "Exclusion written so that the racial purpose is not stated in the text: the test could be given in any European language.",
+      "prompt": "Why would a government write a law this way? What does the gap between the mechanism and the purpose tell you about how such policies were justified?"
+    },
+    {
+      "title": "Remittances and absent workers",
+      "label": "Household and economic reconstruction · sending regions",
+      "sourceText": [
+        "Migrants sent earnings home across long distances.",
+        "Male-selective migration could alter household labor",
+        "and gender roles in the villages they left."
+      ],
+      "caption": "The only card here about the places migrants came from, and labeled a reconstruction rather than a record.",
+      "prompt": "Build the sending-society half of your claim from this card. What kind of source would give you direct evidence for it, and why is that evidence scarce?"
+    }
+  ];
 })();

@@ -27,6 +27,15 @@
 // available for this card that we are not using? On Topic 7.8 the answer is no,
 // and its documentary pool is correct. On Topic 7.2 the answer was yes, and the
 // alliance map had been sitting in the data file, shadowed, the whole time.
+//
+// **One known blind spot, stated rather than tuned away.** The classifier reads
+// only a card's body, not its `label`, so a treaty record whose date lives in
+// "Treaty record · North Atlantic Treaty, 1949" and not in the sentences below it
+// counts as a summary. The student sees the label on the plate, so the card is
+// not actually weaker; the report just cannot see it. That is why several Unit 6,
+// 8 and 9 records are flagged. The fix is NOT to move dates into bodies to quiet
+// the report: that is the numeral-bolting this header warns about, and it would
+// cost the report its meaning. Read the flagged card and judge it.
 
 const { unitTopics, foundationsTopics, resolveUnitPool, classify } = require('./lib/evidence-pools');
 

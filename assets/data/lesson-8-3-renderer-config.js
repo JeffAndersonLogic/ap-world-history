@@ -91,4 +91,56 @@
     }
   ];
 
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Work this as an evidence pool, not a worksheet. Choose at least two cards that genuinely fit the claim you want to make, name a specific detail in each, explain the inference you draw from that detail, and say whether your cards corroborate or complicate one another. Reject a card that does not fit rather than forcing it in, and state one limitation of the evidence you kept. Captions identify the object and its provenance. The conclusion is yours.',
+    prompt: 'Compare how the United States and Soviet Union maintained influence during the Cold War. Use evidence from at least two settings and make one explicit similarity or difference in method, then identify a limit to your comparison.'
+  };
+
+  lesson.images = [
+    {
+      title: 'NATO founding ceremony, 1949',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Truman_signing_North_Atlantic_Treaty.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Truman_signing_North_Atlantic_Treaty.jpg',
+      caption: 'The signing of the North Atlantic Treaty, April 4, 1949, formalizing the Western military alliance under American leadership as the primary U.S. instrument for maintaining influence in Europe.',
+      prompt: 'Who signed NATO, and who did not? What does the treaty\'s membership reveal about how the United States used the alliance system to extend its influence beyond its own borders?'
+    },
+    {
+      title: 'Cuban troops in Angola, 1975',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cuito_Cuanavale_Montage.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Cuito_Cuanavale_Montage.jpg',
+      caption: 'Cuban combat troops deployed to Angola in 1975 at the request of the Soviet-backed MPLA, one of the most direct forms of proxy war intervention in Cold War Africa.',
+      prompt: 'What does Cuba\'s military deployment to Angola reveal about how the Soviet bloc used local clients and third-party forces to pursue Cold War objectives? How is this similar to or different from U.S. methods in Nicaragua?'
+    },
+    {
+      title: 'Sandinista soldiers, Nicaragua, 1980s',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Revoluci%C3%B3n_sandinista.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Revoluci%C3%B3n_sandinista.png',
+      caption: 'Sandinista fighters in Nicaragua during the 1980s Contra conflict, a proxy war in which the U.S. funded insurgents to destabilize a Soviet-aligned government.',
+      prompt: 'How does the Nicaraguan conflict illustrate the comparison AP LO C demands? What methods did the U.S. use to maintain influence, and how did those compare to Soviet methods in Angola or Korea?'
+    },
+    {
+      title: 'Warsaw Pact and Soviet control',
+      label: 'Alliance record · Warsaw Pact, founded 1955',
+      sourceText: [
+        'The Soviet Union and Eastern European communist states formed a collective military alliance.',
+        'Soviet forces later participated in interventions in Hungary in 1956 and Czechoslovakia in 1968.'
+      ],
+      caption: 'The Eastern alliance, and what its forces were used for inside its own bloc.',
+      prompt: 'How does this evidence compare with NATO as a mechanism of influence? Which detail is most useful for arguing a difference in coercion or member autonomy?'
+    },
+    {
+      title: 'Korea as a proxy battlefield',
+      label: 'Conflict record · Korean War, 1950-1953',
+      sourceText: [
+        'The United States supplied the largest share of U.N. combat forces supporting South Korea.',
+        'China intervened directly for North Korea while the Soviet Union provided weapons, advisers, and support.'
+      ],
+      caption: 'Who actually fought in Korea, listed by the side each power supported.',
+      prompt: 'What similarity in superpower behavior can you infer from this conflict? What feature prevents Korea from being a perfectly symmetrical comparison?'
+    }
+  ];
+
 })();

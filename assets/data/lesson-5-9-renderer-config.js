@@ -96,4 +96,66 @@
       focus: ['Explain two challenges of rapid urbanization AND why rapid growth caused each.', 'Contrast working-class and middle-class women\'s roles and the economic reason behind the difference.', 'Support both parts with specific evidence.']
     }
   ];
+
+  // ── Module 07, Evidence Lab ───────────────────────────────────────────────
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Build and Test a Claim',
+    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
+    prompt: 'Make a claim about how industrialization changed social life. Use evidence from at least two categories—urbanization, class, gender, family, public health, or labor—and explain one continuity or uneven effect.'
+  };
+
+  lesson.images = [
+    {
+      title: 'Manchester from Kersal Moor',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
+      caption: 'Painting by William Wyld, 1852, commissioned view of Manchester from the moor: goats and shepherds in the foreground, the city\'s chimneys behind.',
+      prompt: 'NOTICE what the painter has put in the foreground and what he has put on the horizon. INFER what a patron in 1852 wanted this city to look like. What does a commissioned landscape not show about living in it?'
+    },
+    {
+      title: '“A Court for King Cholera”',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png',
+      caption: 'Cartoon published in Punch, 1852, depicting a slum courtyard during a cholera epidemic. Satire aimed at a middle-class readership.',
+      prompt: 'NOTICE what the cartoonist chooses to show about the courtyard. INFER what its readers were being asked to feel, and to do. Set it beside the Wyld painting: same decade, same country, opposite argument. Which is evidence of what?'
+    },
+    {
+      title: 'Industrial society',
+      url: '../assets/images/instructional-maps/topic-5-9.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-5-9.svg',
+      caption: 'BeHistorical reference map. Secondary geographic reconstruction of urbanization and industrial districts.',
+      prompt: 'NOTICE the concentration the map shows. INFER what services a place growing that fast would struggle to provide. Which of the two pictures above does the map support?'
+    },
+    {
+      title: 'Manchester urban growth',
+      label: 'Quantitative record · rounded estimates, 1770–1851',
+      sourceText: [
+        'c. 25,000 people around 1770',
+        'more than 300,000 by the mid-nineteenth century'
+      ],
+      caption: 'The same city as the painting above, counted rather than depicted.',
+      prompt: 'What social problems might rapid urban growth create? Which of those problems would require separate evidence rather than inference from population alone?'
+    },
+    {
+      title: 'Mines Act of 1842',
+      label: 'Legal record · Britain',
+      sourceText: [
+        'Women and girls were barred from underground mine work.',
+        'Boys under age ten were also barred.'
+      ],
+      caption: 'A law of 1842 barring women, girls and boys under ten from underground work, which tells you what had been usual.',
+      prompt: 'What does the law reveal about gender, childhood, and industrial labor? Why might a reform law also indicate that the prohibited practice had been common?'
+    },
+    {
+      title: 'Public Health Act of 1848',
+      label: 'Legal and administrative record · Britain',
+      sourceText: [
+        'Government gained new tools to address sanitation.',
+        'Urban disease became a public-policy problem.'
+      ],
+      caption: 'A law of 1848, the year of the epidemic the cartoon above was drawn about.',
+      prompt: 'How does this evidence show industrial urbanization changing the role of government? What does the law not reveal about enforcement?'
+    }
+  ];
+
 })();
