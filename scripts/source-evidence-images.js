@@ -208,6 +208,36 @@ if (require.main !== module) return;
   const topics = new Map(unitTopics().map(t => [t.key, t]));
   const generated = generatedTopics();
 
+  // Pre-flight, before any network. A candidate naming a card that is not in the
+  // pool, or one that would push the pool past the contract's ceiling, is a
+  // staging mistake, and finding it after a network run is finding it late.
+  const staging = [];
+  const appends = new Map();
+  for (const c of wanted) {
+    for (const field of ['topic', 'file', 'search', 'title', 'caption', 'prompt']) {
+      if (!c[field]) staging.push(`${c.topic || '?'}: candidate is missing ${field}`);
+    }
+    const topic = topics.get(c.topic);
+    if (!topic) { staging.push(`${c.topic}: no such topic`); continue; }
+    const cards = resolveUnitPool(topic).cards;
+    if (c.replaces) {
+      const hits = cards.filter(card => card.title === c.replaces).length;
+      if (hits !== 1) staging.push(`${c.topic}: "${c.replaces}" matches ${hits} cards in lesson.images, expected exactly 1`);
+    } else {
+      appends.set(c.topic, (appends.get(c.topic) || 0) + 1);
+    }
+  }
+  for (const [key, n] of appends) {
+    const size = resolveUnitPool(topics.get(key)).cards.length + n;
+    if (size > MAX_CARDS) staging.push(`${key}: ${n} append(s) would reach ${size} cards, over the ceiling of ${MAX_CARDS}. Name a card to replace.`);
+  }
+  if (staging.length) {
+    console.error(`\n${R}${W}Staging errors, nothing was checked or applied:${X}`);
+    staging.forEach(line => console.error(`  ${R}${line}${X}`));
+    console.error('');
+    return process.exit(1);
+  }
+
   console.log(`\n${W}Sourcing Module 07 images${X}  ${D}${wanted.length} staged candidate(s)${X}`);
   console.log(`${D}Nothing is applied on an argument. Commons has to answer in this run.${X}\n`);
 
