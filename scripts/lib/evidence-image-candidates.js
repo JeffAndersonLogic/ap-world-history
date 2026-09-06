@@ -71,8 +71,8 @@ module.exports = [
   {
     topic: '5.3',
     replaces: 'Coal and iron near transport routes',
-    file: 'Coalbrookdale_by_Night.jpg',
-    search: 'Coalbrookdale night',
+    file: 'Philipp_Jakob_Loutherbourg_d._J._002.jpg',
+    search: 'Loutherbourg Coalbrookdale',
     title: 'Coalbrookdale by Night, 1801',
     caption: 'Philip James de Loutherbourg, 1801, showing the Bedlam Furnaces in the Severn Gorge. Painted while the works were running.',
     prompt: 'NOTICE what is producing the light in this picture, and what time of day it is. INFER what changed about when and how long work could happen. What would this painter have gained by making the scene more dramatic than it was?'
@@ -82,8 +82,8 @@ module.exports = [
   {
     topic: '5.4',
     replaces: 'Russia builds the Trans-Siberian',
-    file: 'Tomioka_Silk_Mill.jpg',
-    search: 'Tomioka silk mill',
+    file: 'Tomioka_Silk_Mill_1872.jpg',
+    search: 'Tomioka silk',
     title: 'Tomioka Silk Mill',
     caption: 'The Japanese government’s model silk filature, opened in 1872 with French machinery and a largely female workforce.',
     prompt: 'NOTICE the machines, the building, and who is operating them. INFER what the Meiji state wanted this mill to demonstrate, beyond producing silk. What does a picture of the model factory not tell you about the ordinary ones?'
@@ -91,8 +91,8 @@ module.exports = [
   {
     topic: '5.4',
     replaces: null,
-    file: 'Tokyo_Takanawa_Tetsudo_Jokisha_Soko_Zenzu.jpg',
-    search: 'Takanawa railway',
+    file: 'Yokohama_Railway.jpg',
+    search: 'Tokyo Yokohama railway ukiyo-e',
     title: 'The Tokyo–Yokohama line in a woodblock print',
     caption: 'A Japanese print of the railway opened in 1872, sold to a domestic audience in the year the line began running.',
     prompt: 'NOTICE how the train is drawn and what has been placed around it. INFER what the print is selling to the people who bought it. How is a commercial print different as evidence from an official photograph of the same line?'
@@ -102,7 +102,7 @@ module.exports = [
   {
     topic: '5.5',
     replaces: 'Suez Canal opens',
-    file: 'Opening_of_the_Suez_Canal.jpg',
+    file: 'Inauguration_et_ouverture_à_la_navigation_du_Canal_de_Suez,_17_novembre_1869,_ND314.jpg',
     search: 'Suez Canal 1869 opening',
     title: 'The Suez Canal opens, 1869',
     caption: 'The opening procession of November 1869. The canal was cut through Egyptian territory with Egyptian labour and controlled by a French company.',
@@ -171,7 +171,7 @@ module.exports = [
   {
     topic: '5.8',
     replaces: 'Bismarck’s social insurance',
-    file: 'Punch_Capital_and_Labour.jpg',
+    file: 'Punch_1843_-_Reichtum_und_Armut.png',
     search: 'Punch Capital and Labour',
     title: '“Capital and Labour”, Punch, 1843',
     caption: 'A Punch cartoon contrasting a wealthy household above ground with the mine workings beneath it, published the year after the Mines Act barred women and young children underground.',
