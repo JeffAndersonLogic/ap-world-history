@@ -62,7 +62,7 @@ module.exports = [
     topic: '6.3',
     replaces: 'Yaa Asantewaa',
     file: 'Yaa_Asantewaa.jpg',
-    search: 'Yaa Asantewaa Asante queen mother Golden Stool',
+    search: 'Yaa Asantewaa',
     title: 'Yaa Asantewaa',
     caption: 'Photograph of the Asante queen mother who led the 1900 War of the Golden Stool against British forces.',
     prompt: 'NOTICE how she is dressed and presented. INFER what authority she is claiming in the image. What does a portrait not tell you about how many followed her, or why?'
@@ -71,7 +71,7 @@ module.exports = [
     topic: '6.7',
     replaces: 'Chinatown, San Francisco, 1880',
     file: 'Chinatown_San_Francisco_1880.jpg',
-    search: 'Chinatown San Francisco 1880 photograph street',
+    search: 'Chinatown San Francisco',
     title: 'Chinatown, San Francisco, 1880',
     caption: 'Photograph of a migrant neighbourhood two years before Chinese immigration was restricted by federal law.',
     prompt: 'NOTICE what the street shows about how the community organized itself. INFER what institutions a migrant population builds when the surrounding society excludes it. What does an outsider\'s photograph of a neighbourhood risk missing?'
