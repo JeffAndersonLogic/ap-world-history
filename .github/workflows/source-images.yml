@@ -1,0 +1,69 @@
+name: Source images
+
+# Runs the staged Module 07 image candidates against Commons and reports what is
+# real. Manual only: this is a content job someone chooses to do, not something
+# that should happen on a schedule.
+#
+# It is here because of where the work actually gets done. Writing candidates
+# needs knowledge of the topic; verifying them needs a network that can reach
+# commons.wikimedia.org, and the sandboxes this course is authored in generally
+# cannot: CONNECT to commons.wikimedia.org is refused by policy. A GitHub runner
+# can. So the two halves of the job happen in the two places that can do them,
+# and neither has to pretend it did the other's.
+#
+# **It reports and never writes.** No --apply, no commit, no push. The output is
+# a list: which candidates resolve, which do not exist, and for the ones that do
+# not, the files Commons actually has for that search. Applying is a decision
+# about whether a picture shows what its caption claims, and that stays with a
+# person. See "Sourcing images" in docs/module-07-units-5-6-8-9-conversion.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 'Topic key to check, e.g. 5.3. Leave blank for every staged candidate.'
+        required: false
+        default: ''
+      search_all:
+        description: 'Also print Commons search results for candidates that DID resolve, to compare against.'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  source:
+    name: Verify staged image candidates
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Exit 2 is the repo's "skipped, not passed" convention: the runner could
+      # not reach Commons, so nothing was verified. That is a notice rather than
+      # a failure, for the same reason the nightly image check treats it that
+      # way. A third party being unreachable is not a broken repository, and a
+      # job that goes red for it is a job people stop reading.
+      - name: Check candidates against Commons
+        env:
+          TOPIC: ${{ inputs.topic }}
+          SEARCH_ALL: ${{ inputs.search_all }}
+        run: |
+          args=()
+          if [ -n "$TOPIC" ]; then args+=("$TOPIC"); fi
+          if [ "$SEARCH_ALL" = "true" ]; then args+=(--search-all); fi
+          set +e
+          node scripts/source-evidence-images.js "${args[@]}"
+          code=$?
+          set -e
+          if [ "$code" -eq 2 ]; then
+            echo "::notice::Commons was unreachable, so no candidate was verified. Not a failure, but nothing was learned either."
+            exit 0
+          fi
+          exit $code
