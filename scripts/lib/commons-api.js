@@ -108,4 +108,36 @@ async function searchFiles(query, limit, endpoint, timeoutMs) {
   });
 }
 
-module.exports = { COMMONS_API, USER_AGENT, commonsTitle, getJson, askCommons, searchFiles };
+/**
+ * What Commons says a file IS: its own title, the date of the work, and the
+ * first line of its description. Returns a Map of file -> {name, date, desc}.
+ *
+ * This closes the one gap the fetch cannot: a filename that resolves is not the
+ * same thing as the picture a caption claims. Verifying existence and verifying
+ * identity are different questions, and only the first can be automated. Printing
+ * what Commons calls the file puts the second question in front of a person in
+ * the same output, instead of leaving it to be noticed by a student.
+ */
+async function describeFiles(files, endpoint, timeoutMs) {
+  const out = new Map();
+  const query = `${endpoint || COMMONS_API}?action=query&format=json&formatversion=2&prop=imageinfo`
+    + '&iiprop=extmetadata&iiextmetadatafilter=ObjectName|ImageDescription|DateTimeOriginal|Artist'
+    + `&titles=${encodeURIComponent(files.map(t => `File:${t}`).join('|'))}`;
+  const data = await getJson(query, timeoutMs);
+  const pages = data && data.query && data.query.pages;
+  if (!Array.isArray(pages)) return out;
+  const strip = html => String(html || '').replace(/<[^>]*>/g, ' ').replace(/&[a-z]+;/gi, ' ').replace(/\s+/g, ' ').trim();
+  for (const page of pages) {
+    const meta = (page.imageinfo && page.imageinfo[0] && page.imageinfo[0].extmetadata) || {};
+    const value = key => strip(meta[key] && meta[key].value);
+    out.set(String(page.title).replace(/^File:/, ''), {
+      name: value('ObjectName'),
+      artist: value('Artist'),
+      date: value('DateTimeOriginal'),
+      desc: value('ImageDescription').slice(0, 220)
+    });
+  }
+  return out;
+}
+
+module.exports = { COMMONS_API, USER_AGENT, commonsTitle, getJson, askCommons, searchFiles, describeFiles };

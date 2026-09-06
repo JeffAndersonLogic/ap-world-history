@@ -38,7 +38,7 @@
 const fs = require('fs');
 const path = require('path');
 const { ROOT, unitTopics, resolveUnitPool } = require('./lib/evidence-pools');
-const { askCommons, searchFiles } = require('./lib/commons-api');
+const { askCommons, searchFiles, describeFiles, commonsTitle } = require('./lib/commons-api');
 const { checkWithRetries, isDecline } = require('./check-image-urls');
 
 const CANDIDATES = require(process.env.EVIDENCE_IMAGE_CANDIDATES || './lib/evidence-image-candidates');
@@ -55,6 +55,7 @@ const args = process.argv.slice(2);
 const APPLY = args.includes('--apply');
 const SEARCH_ALL = args.includes('--search-all');
 const onlyTopic = args.find(a => /^\d+\.\d+$/.test(a));
+const DESCRIBE = args.includes('--describe');
 
 const G = '\x1b[32m', Y = '\x1b[33m', R = '\x1b[31m', D = '\x1b[2m', W = '\x1b[1m', X = '\x1b[0m';
 
@@ -197,8 +198,46 @@ module.exports = { imagesRegion, cardSpan, renderCard, applyCandidate, generated
 
 if (require.main !== module) return;
 
+// ── Describe what is already on a topic ──────────────────────────────────────
+// Not about candidates at all: it reads the pictures a topic already ships and
+// prints what Commons says each one is. The reason it exists is the same reason
+// the verified list is described above. Existence is checkable by machine and
+// identity is not, so identity has to be put in front of a person, and the
+// pictures most worth a second look are the ones already on a lesson page.
+async function describePool(filter) {
+  const rows = [];
+  for (const topic of unitTopics()) {
+    if (filter && topic.key !== filter && String(topic.unit) !== filter) continue;
+    for (const card of resolveUnitPool(topic).cards) {
+      const title = commonsTitle(card.url || '');
+      if (title) rows.push({ topic: topic.key, card, title });
+    }
+  }
+  if (!rows.length) {
+    console.log(`\nNo Commons pictures found${filter ? ` on ${filter}` : ''}.\n`);
+    return process.exit(0);
+  }
+  console.log(`\n${W}What Commons says these ${rows.length} picture(s) are${X}`);
+  console.log(`${D}Read each Commons line against the caption beneath it. A file that resolves is not the same thing as the right picture, and only a person can tell those apart.${X}`);
+  const described = await describeFiles([...new Set(rows.map(r => r.title))], process.env.IMAGE_CHECK_API);
+  if (!described.size) {
+    console.error(`\n${R}Commons did not answer, so nothing was described.${X}\n`);
+    return process.exit(2);
+  }
+  for (const row of rows) {
+    const info = described.get(row.title) || {};
+    console.log(`\n  ${W}${row.topic}${X} ${row.card.title}`);
+    console.log(`       Commons: ${info.name || '(no title)'}${info.date ? `  [${info.date}]` : ''}${info.artist ? `  by ${info.artist}` : ''}`);
+    if (info.desc) console.log(`       ${D}${info.desc}${X}`);
+    console.log(`       ${D}caption: ${row.card.caption}${X}`);
+  }
+  console.log('');
+  return process.exit(0);
+}
+
 // ── Verify, then act ─────────────────────────────────────────────────────────
 (async () => {
+  if (DESCRIBE) return describePool(onlyTopic || args.find(a => /^\d+$/.test(a)));
   const wanted = CANDIDATES.filter(c => !onlyTopic || c.topic === onlyTopic);
   if (!wanted.length) {
     console.log(`\nNo staged candidates${onlyTopic ? ` for topic ${onlyTopic}` : ''}. scripts/lib/evidence-image-candidates.js is where they go.\n`);
@@ -267,6 +306,21 @@ if (require.main !== module) return;
   for (const { candidate, state, detail } of results) {
     const colour = state === 'verified' ? G : state === 'missing' ? R : Y;
     console.log(`  ${colour}${state.padEnd(10)}${X} ${candidate.topic.padEnd(5)} ${candidate.file}  ${D}${detail}${X}`);
+  }
+
+  // What Commons says each verified file IS. The fetch proved the URL serves
+  // bytes; it cannot prove those bytes are the picture the caption describes.
+  // That second question is a person's, and it is asked here rather than left
+  // for a student to answer by looking at the wrong picture in class.
+  if (verified.length) {
+    const described = await describeFiles(verified.map(r => r.candidate.file.replace(/_/g, ' ')), process.env.IMAGE_CHECK_API);
+    console.log(`\n${W}What Commons says these files are${X}  ${D}read each line against the caption you wrote. A file that resolves is not the same thing as the right picture.${X}`);
+    for (const { candidate } of verified) {
+      const info = described.get(candidate.file.replace(/_/g, ' ')) || {};
+      console.log(`\n  ${W}${candidate.topic}${X} your caption: ${D}${candidate.title}${X}`);
+      console.log(`       Commons: ${info.name || '(no title)'}${info.date ? `  [${info.date}]` : ''}${info.artist ? `  by ${info.artist}` : ''}`);
+      if (info.desc) console.log(`       ${D}${info.desc}${X}`);
+    }
   }
 
   // A dead guess is a query, not a dead end.
