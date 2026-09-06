@@ -58,9 +58,9 @@
   lesson.images = [
     {
       title: 'Bayeux Tapestry',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bayeux_Tapestry.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry.jpg',
-      caption: 'Political continuity evidence. The Bayeux Tapestry was made in the 11th century, before Topic 1.6, and depicts elite warfare, mounted nobles, and contests over rulership.',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bayeux_Tapestry_scene51_Battle_of_Hastings_Norman_knights_and_archers.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_scene51_Battle_of_Hastings_Norman_knights_and_archers.jpg',
+      caption: 'Political continuity evidence. The Bayeux Tapestry was embroidered in the 11th century, before Topic 1.6, and depicts elite warfare, mounted nobles, and contests over rulership.',
       prompt: 'NOTICE one detail about warriors, leaders, or military service. What can you INFER about elite political relationships that continued into the period after c. 1200? What can this earlier source not prove about later medieval Europe by itself?'
     },
     {

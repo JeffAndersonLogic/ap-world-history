@@ -49,26 +49,17 @@
 //              and never supplies the conclusion; the prompt runs
 //              NOTICE -> INFER, per docs/module-07-scaffolding-standard.md.
 //
-// **2026-09-06, Topic 1.6.** A teacher reported the Bayeux Tapestry card
-// rendering as blank fallback art. `--describe 1.6` confirmed why:
-// `Bayeux_Tapestry.jpg` does not exist on Commons at all, "(no title)". The
-// tapestry is hosted there as individual numbered scene photographs, not one
-// composite file, so a plausible single filename was never real, the same
-// shape of bug as Topic 1.5's Zimbabwe_Bird.jpg on 2026-09-05.
+// The Unit 5 batch of 2026-09-06 was the first use, described in
+// docs/module-07-units-5-6-8-9-conversion.md. Twelve candidates went in, eight
+// of the twelve filenames were wrong, four rounds of search resolved eleven,
+// and one was dropped unresolved.
 //
-// The first guessed filename was also wrong; the search fallback below found
-// the real one, `Bayeux_Tapestry_scene51_Battle_of_Hastings_Norman_knights_
-// and_archers.jpg`, which is the scene the caption already describes: mounted
-// knights and archers at Hastings.
+// **Empty, and that is the resting state.** Topic 1.6's Bayeux Tapestry card
+// landed the same day: a teacher-reported blank Evidence Lab card traced to
+// `Bayeux_Tapestry.jpg`, a filename that never existed on Commons. The tool's
+// search fallback found the real file (`..._scene51_Battle_of_Hastings_...`)
+// on the first correction. A candidate that lands gets deleted, per the rule
+// above, so this file goes back to empty rather than accumulating a history
+// of what has already shipped.
 
-module.exports = [
-  {
-    topic: '1.6',
-    replaces: 'Bayeux Tapestry',
-    file: 'Bayeux_Tapestry_scene51_Battle_of_Hastings_Norman_knights_and_archers.jpg',
-    search: 'Bayeux Tapestry knights battle Hastings scene',
-    title: 'Bayeux Tapestry',
-    caption: 'Political continuity evidence. The Bayeux Tapestry was embroidered in the 11th century, before Topic 1.6, and depicts elite warfare, mounted nobles, and contests over rulership.',
-    prompt: 'NOTICE one detail about warriors, leaders, or military service. What can you INFER about elite political relationships that continued into the period after c. 1200? What can this earlier source not prove about later medieval Europe by itself?'
-  }
-];
+module.exports = [];
