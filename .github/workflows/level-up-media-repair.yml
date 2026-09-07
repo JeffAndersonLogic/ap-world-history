@@ -1,0 +1,92 @@
+name: Level Up Media Repair
+
+on:
+  push:
+    branches:
+      - level-up/nightly-media-repair-2026-09-07
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: level-up/nightly-media-repair-2026-09-07
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Repair verified dead Commons references
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          def replace(path, old, new, count=None):
+              p = Path(path)
+              text = p.read_text()
+              found = text.count(old)
+              if found == 0:
+                  raise SystemExit(f'{path}: expected text not found: {old}')
+              if count is not None and found != count:
+                  raise SystemExit(f'{path}: expected {count} occurrence(s), found {found}: {old}')
+              p.write_text(text.replace(old, new))
+              print(f'{path}: replaced {found} occurrence(s)')
+
+          # Unit 6 canonical generator. Generated lesson/config files are rebuilt below.
+          replace(
+              'scripts/build-unit6.js',
+              'Buenos_Aires_Port.jpg',
+              'Archivo_General_de_la_Nación_Argentina_1890_aprox_Buenos_Aires,_Puerto_de_Buenos_Aires.jpg'
+          )
+          replace(
+              'scripts/build-unit6.js',
+              'Indian_indenture_ship.jpg',
+              'Indentured_Indian_workers.jpeg'
+          )
+          replace(
+              'scripts/build-unit6.js',
+              'Photograph of a vessel carrying indentured labourers. The contract and the passage were parts of the same system.',
+              'Historical artwork depicting indentured Indian workers aboard a sailing vessel. The contract and the passage were parts of the same system.',
+              1
+          )
+          replace(
+              'scripts/build-unit6.js',
+              'NOTICE the conditions the vessel implies for a voyage of weeks. INFER what a recruiter would have to promise to fill it. What does the ship not tell you about what awaited at the other end?',
+              'NOTICE what the artwork emphasizes about the voyage. INFER what a recruiter would have to promise to persuade workers to make it. What must be verified from contracts or passenger records rather than inferred from a modern reconstruction?',
+              1
+          )
+
+          # Standalone BeInTheRoom background and Unit 8 evidence map.
+          replace(
+              'beintheroom/unit-2/silk-road-scholar.html',
+              'Silk_Road_in_7th_century_AD.png',
+              'Asia_600ad_2.jpg',
+              1
+          )
+          replace(
+              'assets/data/lesson-8-1-cold-war-stage.js',
+              'World_1945_empires_colonies_territory.png',
+              'Colonization_1945.png'
+          )
+          PY
+
+      - name: Rebuild canonical Unit 6 outputs
+        run: node scripts/build-unit6.js
+
+      - name: Verify offline contracts
+        run: node scripts/run-tests.js offline --strict
+
+      - name: Commit repair to draft branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/build-unit6.js assets/data/lesson-6-5-economic-imperialism.js assets/data/lesson-6-5-renderer-config.js assets/data/lesson-6-6-causes-of-migration.js assets/data/lesson-6-6-renderer-config.js beintheroom/unit-2/silk-road-scholar.html assets/data/lesson-8-1-cold-war-stage.js
+          git diff --cached --check
+          git commit -m "Repair dead Commons media references"
+          git push origin HEAD:level-up/nightly-media-repair-2026-09-07
