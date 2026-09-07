@@ -44,10 +44,10 @@
   lesson.images = [
     {
       "title": "An indenture ship",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_indenture_ship.jpg",
-      "caption": "Photograph of a vessel carrying indentured labourers. The contract and the passage were parts of the same system.",
-      "prompt": "NOTICE the conditions the vessel implies for a voyage of weeks. INFER what a recruiter would have to promise to fill it. What does the ship not tell you about what awaited at the other end?"
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Indentured_Indian_workers.jpeg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indentured_Indian_workers.jpeg",
+      "caption": "Historical artwork depicting indentured Indian workers aboard a sailing vessel. The contract and the passage were parts of the same system.",
+      "prompt": "NOTICE what the artwork emphasizes about the voyage. INFER what a recruiter would have to promise to persuade workers to make it. What must be verified from contracts or passenger records rather than inferred from a modern reconstruction?"
     },
     {
       "title": "Global migration flows after 1750",
