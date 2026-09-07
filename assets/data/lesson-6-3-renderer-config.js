@@ -43,11 +43,14 @@
   };
   lesson.images = [
     {
-      "title": "Yaa Asantewaa",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yaa_Asantewaa.jpg",
-      "caption": "Photograph of the Asante queen mother who led the 1900 War of the Golden Stool against British forces.",
-      "prompt": "NOTICE how she is dressed and presented. INFER what authority she is claiming in the image. What does a portrait not tell you about how many followed her, or why?"
+      "title": "Yaa Asantewaa and the Golden Stool",
+      "label": "Colonial record · War of the Golden Stool, 1900 to 1901",
+      "sourceText": [
+        "Yaa Asantewaa, queen mother of Ejisu, led Asante forces against British demands to surrender the Golden Stool.",
+        "The uprising was defeated; she was captured and exiled to the Seychelles in 1901, where she died in 1921."
+      ],
+      "caption": "No verified photograph of Yaa Asantewaa herself could be sourced from Commons; this record states the outcome rather than showing the person.",
+      "prompt": "NOTICE the outcome: defeat and exile, not negotiation. INFER what that outcome suggests about how the British treated this uprising compared with other responses to expansion in this unit. What would a photograph add here that a record of dates cannot?"
     },
     {
       "title": "Resistance to state expansion",

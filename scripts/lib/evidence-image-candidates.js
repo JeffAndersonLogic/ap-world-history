@@ -49,31 +49,22 @@
 //              and never supplies the conclusion; the prompt runs
 //              NOTICE -> INFER, per docs/module-07-scaffolding-standard.md.
 //
-// **2026-09-06, a site-wide check-image-urls.js run found two genuinely dead
-// pictures, both in Unit 6, which build-unit6.js generates.** These two
-// candidates exist ONLY to run the search fallback and find the real
-// filenames; Units 6 and 9 are refused by source-evidence-images.js's --apply
-// (their pools belong to the generator's own MODULE07_EVIDENCE map), so once
-// the real filenames are confirmed here, the fix has to be hand-applied to
-// scripts/build-unit6.js and the unit rebuilt, never applied by this tool.
+// **Empty, and that is the resting state.** The Unit 5 batch of 2026-09-06 is
+// described in docs/module-07-units-5-6-8-9-conversion.md.
+//
+// **2026-09-06/07, a site-wide check-image-urls.js run found two genuinely
+// dead pictures, both in Unit 6.** Yaa_Asantewaa.jpg (Topics 6.3, 6.8) and
+// Chinatown_San_Francisco_1880.jpg (Topic 6.7) both 404. This tool was used
+// only to run the search fallback and find real filenames; because Unit 6's
+// pools belong to build-unit6.js's own MODULE07_EVIDENCE and MEDIA maps, the
+// actual fix landed by hand in that generator and was rebuilt, never applied
+// by this tool (which correctly refuses to touch Units 6 and 9).
+//
+// Chinatown resolved: a genuine Harper's Weekly illustration dated exactly
+// 1880-03-20, a stronger fit than a plain photograph would have been. Five
+// search rounds found no verified Commons photograph of Yaa Asantewaa herself
+// under any name or spelling tried, only a modern museum building and family
+// house; that card became a documentary text record of her exile instead of a
+// forced or unverified picture, the correct outcome per the Image Contract.
 
-module.exports = [
-  {
-    topic: '6.3',
-    replaces: 'Yaa Asantewaa',
-    file: 'Yaa_Asantewaa.jpg',
-    search: 'Asantewaa Ashanti queen',
-    title: 'Yaa Asantewaa',
-    caption: 'Photograph of the Asante queen mother who led the 1900 War of the Golden Stool against British forces.',
-    prompt: 'NOTICE how she is dressed and presented. INFER what authority she is claiming in the image. What does a portrait not tell you about how many followed her, or why?'
-  },
-  {
-    topic: '6.7',
-    replaces: 'Chinatown, San Francisco, 1880',
-    file: 'A_Holiday_in_Chinatown,_San_Francisco_(P._Frenzeny,_Harper\'s,_1880-03-20).jpg',
-    search: 'Chinatown San Francisco 1880s',
-    title: 'Chinatown, San Francisco, 1880',
-    caption: 'Photograph of a migrant neighbourhood two years before Chinese immigration was restricted by federal law.',
-    prompt: 'NOTICE what the street shows about how the community organized itself. INFER what institutions a migrant population builds when the surrounding society excludes it. What does an outsider\'s photograph of a neighbourhood risk missing?'
-  }
-];
+module.exports = [];

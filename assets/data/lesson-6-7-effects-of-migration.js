@@ -99,10 +99,10 @@ window.BEHISTORICAL_LESSON = {
           '**Anchor the pattern:** Chinese communities across the Pacific and Americas and Indian communities in Africa, the Caribbean, and Southeast Asia show how a global development took different institutional forms.'
         ],
         image: {
-          title: 'Chinatown, San Francisco, 1880',
-          caption: 'Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chinatown_San_Francisco_1880.jpg'
+          title: "Chinatown, San Francisco, Harper's Weekly, 1880",
+          caption: "An illustration from Harper's Weekly, March 1880. Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Holiday_in_Chinatown,_San_Francisco_%28P._Frenzeny,_Harper's,_1880-03-20%29.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Holiday_in_Chinatown,_San_Francisco_%28P._Frenzeny,_Harper's,_1880-03-20%29.jpg"
         }
       },
       {
@@ -291,8 +291,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Chinese communities across the Pacific and Americas',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chinatown_San_Francisco_1880.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chinatown_San_Francisco_1880.jpg',
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Holiday_in_Chinatown,_San_Francisco_%28P._Frenzeny,_Harper's,_1880-03-20%29.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Holiday_in_Chinatown,_San_Francisco_%28P._Frenzeny,_Harper's,_1880-03-20%29.jpg",
       caption: 'Chinese communities across the Pacific and Americas helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Chinese communities across the Pacific and Americas support or complicate a claim about effects of migration?'
     },

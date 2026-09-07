@@ -50,10 +50,13 @@
       "prompt": "NOTICE the labor the process requires. INFER which cause of expansion this image supports. What does it evidence better than the cartoon does, and worse?"
     },
     {
-      "title": "Yaa Asantewaa",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yaa_Asantewaa.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yaa_Asantewaa.jpg",
-      "caption": "Photograph of the Asante leader of the 1900 War of the Golden Stool.",
+      "title": "Yaa Asantewaa and the Golden Stool",
+      "label": "Colonial record · War of the Golden Stool, 1900 to 1901",
+      "sourceText": [
+        "Yaa Asantewaa led Asante forces against British demands to surrender the Golden Stool.",
+        "She was captured and exiled to the Seychelles in 1901, where she died in 1921."
+      ],
+      "caption": "This card is a response rather than a cause, and no verified photograph of her could be sourced from Commons.",
       "prompt": "NOTICE that this is a card about response rather than cause. INFER what a ranking of causes leaves out if it never accounts for resistance. Where does this belong in a causal argument?"
     },
     {

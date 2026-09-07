@@ -64,8 +64,12 @@ const SUBMIT_NOTE = 'Organize your thinking here, submit your final work in Canv
 // Topic 6.1's, so a hand edit to one survives exactly until the next rebuild.
 // One authored pool per topic, every card a picture or declared text evidence.
 // See the authenticity gate in docs/module-07-scaffolding-standard.md.
-const COMMONS = name => `https://commons.wikimedia.org/wiki/Special:FilePath/${name}`;
-const COMMONS_PAGE = name => `https://commons.wikimedia.org/wiki/File:${name}`;
+// Parentheses are the CSS url() delimiter itself, so an unescaped one in a
+// filename breaks it; validate.js fails the push over exactly this. Every
+// other Commons filename in this file has none, so this is a no-op for them.
+const escapeParens = name => name.replace(/\(/g, '%28').replace(/\)/g, '%29');
+const COMMONS = name => `https://commons.wikimedia.org/wiki/Special:FilePath/${escapeParens(name)}`;
+const COMMONS_PAGE = name => `https://commons.wikimedia.org/wiki/File:${escapeParens(name)}`;
 const picture = (name, title, caption, prompt) => ({ title, url: COMMONS(name), sourceUrl: COMMONS_PAGE(name), caption, prompt });
 const localMap = (file, title, caption, prompt) => ({ title, url: `../assets/images/instructional-maps/${file}`, sourceUrl: `../assets/images/instructional-maps/${file}`, caption, prompt });
 
@@ -162,9 +166,14 @@ const MODULE07_EVIDENCE = {
   '6.3': {
     prompt: 'Explain why some resistance to imperial expansion succeeded and most did not. Use at least two cards, name the conditions each case had, and avoid concluding that resistance was either futile or uniform.',
     cards: [
-      picture('Yaa_Asantewaa.jpg', 'Yaa Asantewaa',
-        'Photograph of the Asante queen mother who led the 1900 War of the Golden Stool against British forces.',
-        'NOTICE how she is dressed and presented. INFER what authority she is claiming in the image. What does a portrait not tell you about how many followed her, or why?'),
+      { title: 'Yaa Asantewaa and the Golden Stool',
+        label: 'Colonial record \u00b7 War of the Golden Stool, 1900 to 1901',
+        sourceText: [
+          'Yaa Asantewaa, queen mother of Ejisu, led Asante forces against British demands to surrender the Golden Stool.',
+          'The uprising was defeated; she was captured and exiled to the Seychelles in 1901, where she died in 1921.'
+        ],
+        caption: 'No verified photograph of Yaa Asantewaa herself could be sourced from Commons; this record states the outcome rather than showing the person.',
+        prompt: 'NOTICE the outcome: defeat and exile, not negotiation. INFER what that outcome suggests about how the British treated this uprising compared with other responses to expansion in this unit. What would a photograph add here that a record of dates cannot?' },
       localMap('topic-6-3.svg', 'Resistance to state expansion',
         'BeHistorical reference map. Secondary geographic reconstruction locating the major resistance movements of this period.',
         'NOTICE where sustained resistance occurred. INFER what those places might have had in common. What does location alone fail to explain about success or defeat?'),
@@ -342,9 +351,9 @@ const MODULE07_EVIDENCE = {
   '6.7': {
     prompt: 'Build a claim about the effects of migration on receiving and sending societies. Use at least two cards, and make sure your claim accounts for a place migrants left as well as one they arrived in.',
     cards: [
-      picture('Chinatown_San_Francisco_1880.jpg', 'Chinatown, San Francisco, 1880',
-        'Photograph of a migrant neighbourhood two years before Chinese immigration was restricted by federal law.',
-        'NOTICE what the street shows about how the community organized itself. INFER what institutions a migrant population builds when the surrounding society excludes it. What does an outsider\'s photograph of a neighbourhood risk missing?'),
+      picture('A_Holiday_in_Chinatown,_San_Francisco_(P._Frenzeny,_Harper\'s,_1880-03-20).jpg', 'Chinatown, San Francisco, 1880',
+        'An illustration published in Harper\'s Weekly, March 1880, two years before Chinese immigration was restricted by federal law. The accompanying article argued the community would not assimilate.',
+        'NOTICE what the street shows about how the community organized itself, and who this was drawn for. INFER what institutions a migrant population builds when the surrounding society excludes it. What does an illustration made for a national magazine reveal about its own audience, not just its subject?'),
       localMap('topic-6-7.svg', 'Diasporas and receiving societies',
         'BeHistorical reference map. Secondary geographic reconstruction of major diaspora communities and their origins.',
         'NOTICE the pairing of origin and destination. INFER what a sending region loses and gains at the same time. What does the map show nothing at all about?'),
@@ -384,9 +393,14 @@ const MODULE07_EVIDENCE = {
       picture('Rubber_tapping.jpg', 'Rubber tapping',
         'Photograph of latex extraction, the point where industrial demand met colonial labor.',
         'NOTICE the labor the process requires. INFER which cause of expansion this image supports. What does it evidence better than the cartoon does, and worse?'),
-      picture('Yaa_Asantewaa.jpg', 'Yaa Asantewaa',
-        'Photograph of the Asante leader of the 1900 War of the Golden Stool.',
-        'NOTICE that this is a card about response rather than cause. INFER what a ranking of causes leaves out if it never accounts for resistance. Where does this belong in a causal argument?'),
+      { title: 'Yaa Asantewaa and the Golden Stool',
+        label: 'Colonial record \u00b7 War of the Golden Stool, 1900 to 1901',
+        sourceText: [
+          'Yaa Asantewaa led Asante forces against British demands to surrender the Golden Stool.',
+          'She was captured and exiled to the Seychelles in 1901, where she died in 1921.'
+        ],
+        caption: 'This card is a response rather than a cause, and no verified photograph of her could be sourced from Commons.',
+        prompt: 'NOTICE that this is a card about response rather than cause. INFER what a ranking of causes leaves out if it never accounts for resistance. Where does this belong in a causal argument?' },
       { title: 'Industrial demand for raw materials',
         label: 'Economic causal evidence · nineteenth century',
         sourceText: [
@@ -630,8 +644,8 @@ function jsonAssignmentValue(value) {
 //   onEvidence  which Evidence Lab item the photograph actually depicts (0 = none)
 // Any slot the photograph does not belong in renders the generated per-slot
 // artwork for that topic, which is always on-topic and can never 404.
-const commons = (file) => `https://commons.wikimedia.org/wiki/Special:FilePath/${file}`;
-const commonsSource = (file) => `https://commons.wikimedia.org/wiki/File:${file}`;
+const commons = (file) => `https://commons.wikimedia.org/wiki/Special:FilePath/${escapeParens(file)}`;
+const commonsSource = (file) => `https://commons.wikimedia.org/wiki/File:${escapeParens(file)}`;
 const instructionalMap = (id) => `../assets/images/instructional-maps/topic-${id.replace('.', '-')}.svg`;
 const moduleArt = (id, slot) => `../assets/images/module-art/unit-6/topic-${id.replace('.', '-')}/${slot}.svg`;
 const TOPIC_ART = '';
@@ -646,10 +660,12 @@ const MEDIA = {
     photoCaption: 'Twenty-five years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.'
   },
   '6.3': {
+    // No verified Commons photograph of Yaa Asantewaa herself exists; five
+    // searches returned only a modern museum building and a family house. The
+    // lecture card and Evidence Lab both fall back to generated topic art
+    // rather than a wrong or unverified picture, the same as 6.8.
     map: instructionalMap('6.3'),
-    photo: 'Yaa_Asantewaa.jpg', onCard: 1, onEvidence: 1,
-    photoTitle: 'Yaa Asantewaa, c. 1900',
-    photoCaption: 'Yaa Asantewaa led Asante resistance in the War of the Golden Stool. Indigenous responses to expansion included organized armed defence, not only accommodation.'
+    photo: null, onCard: 0, onEvidence: 0
   },
   '6.4': {
     map: instructionalMap('6.4'),
@@ -671,9 +687,9 @@ const MEDIA = {
   },
   '6.7': {
     map: instructionalMap('6.7'),
-    photo: 'Chinatown_San_Francisco_1880.jpg', onCard: 1, onEvidence: 1,
-    photoTitle: 'Chinatown, San Francisco, 1880',
-    photoCaption: 'Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.'
+    photo: 'A_Holiday_in_Chinatown,_San_Francisco_(P._Frenzeny,_Harper\'s,_1880-03-20).jpg', onCard: 1, onEvidence: 1,
+    photoTitle: 'Chinatown, San Francisco, Harper\'s Weekly, 1880',
+    photoCaption: 'An illustration from Harper\'s Weekly, March 1880. Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.'
   },
   '6.8': {
     map: commons('World_1898_empires_colonies_territory.png'),
