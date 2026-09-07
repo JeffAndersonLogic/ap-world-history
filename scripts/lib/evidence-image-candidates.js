@@ -62,7 +62,7 @@ module.exports = [
     topic: '6.3',
     replaces: 'Yaa Asantewaa',
     file: 'Yaa_Asantewaa.jpg',
-    search: 'Yaa Asantewa Ejisu',
+    search: 'Asantewaa Ashanti queen',
     title: 'Yaa Asantewaa',
     caption: 'Photograph of the Asante queen mother who led the 1900 War of the Golden Stool against British forces.',
     prompt: 'NOTICE how she is dressed and presented. INFER what authority she is claiming in the image. What does a portrait not tell you about how many followed her, or why?'
