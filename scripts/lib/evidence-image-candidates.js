@@ -62,7 +62,7 @@ module.exports = [
     topic: '6.3',
     replaces: 'Yaa Asantewaa',
     file: 'Yaa_Asantewaa.jpg',
-    search: 'Yaa Asantewaa 1900 portrait',
+    search: 'Yaa Asantewa Ejisu',
     title: 'Yaa Asantewaa',
     caption: 'Photograph of the Asante queen mother who led the 1900 War of the Golden Stool against British forces.',
     prompt: 'NOTICE how she is dressed and presented. INFER what authority she is claiming in the image. What does a portrait not tell you about how many followed her, or why?'
@@ -70,7 +70,7 @@ module.exports = [
   {
     topic: '6.7',
     replaces: 'Chinatown, San Francisco, 1880',
-    file: 'Chinatown_San_Francisco_1880.jpg',
+    file: 'A_Holiday_in_Chinatown,_San_Francisco_(P._Frenzeny,_Harper\'s,_1880-03-20).jpg',
     search: 'Chinatown San Francisco 1880s',
     title: 'Chinatown, San Francisco, 1880',
     caption: 'Photograph of a migrant neighbourhood two years before Chinese immigration was restricted by federal law.',
