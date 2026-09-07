@@ -163,7 +163,7 @@ window.BEHISTORICAL_LESSON = {
   map: {
     title: "The World in 1945: Colonial Empires and Rising Superpowers",
     url: "",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1945_empires_colonies_territory.png",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Colonization_1945.png",
     caption: "The global political order in 1945, colonial empires at their peak extent, with two new superpowers emerging.",
     intro: "Use the map to identify where colonial empires still extended, and where the U.S. and Soviet Union held power. The map shows the world at a turning point: the old imperial order intact on the map, but already under pressure from exhaustion, nationalist movements, and superpower rivalry.",
     prompt: "What does the map suggest about the tension between the old colonial order and the new superpower world? Identify two areas where you would predict major change in the next two decades.",
