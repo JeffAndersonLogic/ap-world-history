@@ -59,7 +59,7 @@
         <dt>H or ?</dt><dd>Open and close this card</dd>
         <dt>Esc</dt><dd>Close this card</dd>
       </dl>
-      <p>Everything on this board comes from <code>assets/data/announcements.js</code>. Edit that one file to change the day, the due dates, and the reminders. The board rebuilds itself when the date rolls over, so it can stay up overnight.</p>
+      <p>Everything on this board comes from <code>assets/data/announcements.js</code>. Edit that one file to change the day, the due dates, and the reminders. The board re-reads that file and rebuilds itself when the date rolls over, so it can stay up overnight and still be right in the morning. To pick up a change made earlier the same day, press <strong>R</strong>.</p>
     </div>
   </div>
 
@@ -688,6 +688,96 @@
     var clockTime = document.getElementById('clock-time');
     var clockDate = document.getElementById('clock-date');
 
+    /* ---------------------------------------------------------
+       RE-READING THE FILE WHEN THE DAY ROLLS OVER
+
+       This board is built to stay up overnight: updateClock ticks
+       every second and re-renders when the date key changes. What it
+       re-rendered FROM was the copy of announcements.js the browser
+       downloaded when the tab was opened, because the file arrives
+       through a plain <script src> and was never read again.
+
+       So a board left running across a schedule change kept
+       projecting the old day, correctly and confidently, with nothing
+       on screen to say it was stale. That is the same shape as every
+       other silent disagreement this repo guards against: both copies
+       render, and nothing can tell you which one the room read. It is
+       how Topic 1.5 stayed on ten modules on the wall after the fix
+       had already shipped to Pages.
+
+       So the rollover re-fetches the file first. A fresh <script> with
+       a cache-busting query is a real download rather than the
+       ten-minute Pages copy, and re-running it reassigns
+       window.BEHISTORICAL_ANNOUNCEMENTS, which is the same mechanism
+       the page already uses at load. No fetch, no eval, no parser here.
+
+       THE BOARD NEVER GOES BLANK OVER THIS, and never stalls on it. A
+       classroom is exactly where the wifi drops, so a refresh that
+       fails, times out, or returns something unusable keeps the data
+       already in hand and rolls the day over anyway. A projector
+       showing yesterday's file is a far smaller problem than a
+       projector showing nothing, or one stuck on yesterday's date
+       because a request never came back.
+
+       This covers the overnight case, which is the one the page was
+       designed for. A change pushed while the board is already up and
+       the date has not moved still needs R, because nothing here polls.
+       --------------------------------------------------------- */
+    var REFRESH_TIMEOUT_MS = 10000;
+    var refreshing = false;
+
+    /* Adopt a newly loaded file only if it is usable. A file that arrived
+       empty, truncated, or as an error page served with status 200 must not
+       replace a good day with a Board Not Loaded slide, so the shape is
+       checked before anything is swapped in. */
+    function adoptRaw(next) {
+      if (!next || !Array.isArray(next.days) || !next.days.length) return false;
+      RAW = next;
+      DATA = {
+        settings: next.settings || {},
+        cohorts: next.cohorts || {},
+        days: next.days,
+        assessments: Array.isArray(next.assessments) ? next.assessments : [],
+        reminders: Array.isArray(next.reminders) ? next.reminders : []
+      };
+      SLIDE_MS = Math.max(4, Number(DATA.settings.slideSeconds) || 15) * 1000;
+      return true;
+    }
+
+    function refreshData(done) {
+      var script = document.createElement('script');
+      var settled = false;
+      var timer = setTimeout(function () { finish(false); }, REFRESH_TIMEOUT_MS);
+
+      function finish(ok) {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        if (script.parentNode) script.parentNode.removeChild(script);
+        done(ok);
+      }
+
+      script.src = 'assets/data/announcements.js?t=' + Date.now();
+      script.onload = function () { finish(true); };
+      script.onerror = function () { finish(false); };
+      document.head.appendChild(script);
+    }
+
+    /* One rollover, one refresh. builtFor is advanced BEFORE the request goes
+       out, so a slow or dead network cannot make this fire again every second
+       for the rest of the day. */
+    function rollOver() {
+      if (refreshing) return;
+      refreshing = true;
+      builtFor = todayKey();
+      refreshData(function (ok) {
+        refreshing = false;
+        if (ok) adoptRaw(window.BEHISTORICAL_ANNOUNCEMENTS);
+        render();
+        updateFooter();
+      });
+    }
+
     function updateClock() {
       var now = new Date();
       var hours = now.getHours();
@@ -697,7 +787,7 @@
       clockDate.textContent = WEEKDAYS[now.getDay()] + ', ' +
         MONTHS[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
 
-      if (todayKey() !== builtFor) render();
+      if (todayKey() !== builtFor) rollOver();
     }
 
     function updateFooter() {

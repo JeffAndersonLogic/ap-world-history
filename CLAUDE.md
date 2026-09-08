@@ -104,6 +104,7 @@ Every script below also has an `npm run` alias; see `package.json`.
   in Georgia when the font does not arrive. `--check` fails on drift. See "The
   wordmark in Canvas" below.
 - `node scripts/build-canvas-events.js`, rebuild both paste-ready Canvas documents from the same schedule: the calendar events in `docs/canvas/calendar-events.md`, one per class day, and the assignment bodies in `docs/canvas/assignments.md`, one per topic. `--check` fails on drift in either. One generator, because the two objects share the masthead, the overview, the targets, the criteria, the cohort seals and the row markup, and two scripts would mean two copies of all of it. See "Green and Silver" and "Today's Required Modules" below.
+- `node scripts/test/announcements-refresh.test.js`, prove the classroom board re-reads `announcements.js` when the date rolls over, re-fetches once rather than once per clock tick, and keeps the day it has when the network is down or the file comes back unusable. In the browser suite. See "Today's Required Modules" below.
 - `node scripts/test/schedule-cohorts.test.js`, prove the alternating block contract: every day names a cohort, cohorts alternate, every topic is scheduled for both, and every due date is the assigning cohort's own next meeting. In the offline suite.
 - `node scripts/generate-status-manifest.js`, refresh the teacher command-center inventory after adding or removing deliverables.
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios. `--check` fails on drift without writing.
@@ -1394,6 +1395,47 @@ printing a module the cards do not have. A topic that declares its own
 `lesson.modules`, which Topics 7.8, 7.9 and 8.9 do, is read from that list, so a
 substituted module such as the Causes and Consequences Matrix is named correctly
 with no special case.
+
+**The board re-reads its file when the day rolls over.** `announcements.html`
+ticks every second and re-renders when the date key changes, which is what lets
+it stay up overnight. What it re-rendered *from*, until 2026-09-08, was the copy
+of `announcements.js` the browser downloaded whenever the tab was opened,
+because the file arrives through a plain `<script src>` and was never read
+again. So a board left running across a schedule change kept projecting the old
+day, correctly and confidently, with nothing on screen to say it was stale. That
+is how Topic 1.5 stayed on ten required modules on the wall for two hours after
+the corrected file was already live on Pages, which is the same silent
+disagreement as any other in this repo: both copies render and nothing can tell
+you which one the room read.
+
+The rollover now re-fetches first, by injecting a fresh `<script>` with a
+cache-busting query, which is a real download rather than the ten-minute Pages
+copy and reassigns `window.BEHISTORICAL_ANNOUNCEMENTS` through the same
+mechanism the page already uses at load. No `fetch`, no `eval`, no second
+parser.
+
+**The board never goes blank over this and never stalls on it.** A classroom is
+exactly where the wifi drops, so a refresh that fails, times out at ten seconds,
+or comes back with no `days` keeps the data already in hand and rolls the day
+over anyway; `adoptRaw` checks the shape before swapping anything in, so an
+error page served with status 200 cannot replace a good day with a Board Not
+Loaded slide. `builtFor` is advanced *before* the request goes out, so a dead
+network cannot make the refresh fire again every second for the rest of the day.
+
+**It covers the overnight case only, deliberately.** Nothing polls, so a change
+pushed while the board is up and the date has not moved still needs `R`, which
+the help card now says. A poll would be a request every few minutes, for the
+whole school year, to catch something that happens a few times a term.
+
+`scripts/test/announcements-refresh.test.js` is the gate, in the browser suite,
+and it has to be a browser test: the behaviour is the passage of midnight in a
+long-lived tab against a file that changed underneath it, and no DOM stub
+re-executes a `<script>` tag. It drives a fake clock across two midnights
+against a fixture server whose answer for the data file changes mid-test, and
+asserts the four things that matter, each proved to fail without the fix:
+rollover picks up the changed file, it re-fetches once rather than once per
+tick, a dead network still rolls over on the data in hand, and an unusable 200
+does not blank the board.
 
 **It is a mirror, and the mirror is checked.** The real list is built inside each
 renderer's `defaultModules()`, where the cards get their render functions and
