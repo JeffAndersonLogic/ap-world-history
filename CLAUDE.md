@@ -103,7 +103,7 @@ Every script below also has an `npm run` alias; see `package.json`.
   it exits 2 when playwright-core is absent and **fails** rather than rendering
   in Georgia when the font does not arrive. `--check` fails on drift. See "The
   wordmark in Canvas" below.
-- `node scripts/build-canvas-events.js`, rebuild the paste-ready Canvas calendar events in `docs/canvas/calendar-events.md`, one per class day, from the same schedule. `--check` fails on drift. See "Green and Silver" below.
+- `node scripts/build-canvas-events.js`, rebuild both paste-ready Canvas documents from the same schedule: the calendar events in `docs/canvas/calendar-events.md`, one per class day, and the assignment bodies in `docs/canvas/assignments.md`, one per topic. `--check` fails on drift in either. One generator, because the two objects share the masthead, the overview, the targets, the criteria, the cohort seals and the row markup, and two scripts would mean two copies of all of it. See "Green and Silver" and "Today's Required Modules" below.
 - `node scripts/test/schedule-cohorts.test.js`, prove the alternating block contract: every day names a cohort, cohorts alternate, every topic is scheduled for both, and every due date is the assigning cohort's own next meeting. In the offline suite.
 - `node scripts/generate-status-manifest.js`, refresh the teacher command-center inventory after adding or removing deliverables.
 - `node scripts/build-unit6.js`, deterministically rebuild Unit 6 Topics 6.2–6.8 and their BeInTheRoom scenarios. `--check` fails on drift without writing.
@@ -1366,16 +1366,34 @@ and named, under the heading a student reads on the wall rather than in Canvas.
 The Canvas assignment for a topic already names them; this is the second place,
 for the student who is in the room and has not opened Canvas yet.
 
-**The list is derived, never typed.** `scripts/lib/module-list.js` answers "what
-modules does this topic run" and `build-announcements.js` writes the answer into
-each day. A topic that declares its own `lesson.modules`, which Topics 7.8, 7.9
-and 8.9 do, is read from that list, so a substituted module such as the Causes
-and Consequences Matrix is named correctly with no special case.
+**The required list is a subset, and it is typed once.** A topic runs ten module
+cards and its Canvas assignment collects some of them: Topic 1.5 requires six,
+Topic 1.6 requires five and no Map module at all. Which ones is a teaching
+decision about a 90-minute block, so nothing in this repository derives it. It
+is the `modules` field on that topic's days in `announcements-schedule.js`, read
+off the DO THESE N row of the assignment as it stands in Canvas, and **that one
+field is read by both `build-announcements.js` and `build-canvas-events.js`**, so
+the wall and the graded assignment cannot name different work.
 
-**A short day lists numbers, not names.** `modules: ['01', '02', '06']` in a
-schedule entry keeps only those, and the names still come from the lesson, so a
-module cannot be renamed on the board and nowhere else. A number that topic does
-not run fails the build rather than printing a module the cards do not have.
+**That failure shipped, and every check was green.** Until 2026-09-08 no schedule
+day carried the field, so the board listed all ten while the assignment asked for
+six, and a student who correctly did the six opened Gather All My Work to four
+empty answers with nothing to explain them. Nothing offline could see it: the
+board was naming modules the lesson page really does show, just not the ones due.
+The field was written, documented and tested, and never fed. `modules` is not the
+short-day exception the comment in that file used to call it; a subset is the
+norm, and `schedule-cohorts.test.js` now fails a topic whose two cohort days name
+different modules, a topic whose assignment prints a list the schedule does not
+name, and a board day that disagrees with the schedule.
+
+**The names still come from the lesson, never from the schedule.**
+`scripts/lib/module-list.js` answers "what modules does this topic run" and the
+`modules` field only filters that answer, so a module cannot be renamed on the
+board and nowhere else. A number a topic does not run fails the build rather than
+printing a module the cards do not have. A topic that declares its own
+`lesson.modules`, which Topics 7.8, 7.9 and 8.9 do, is read from that list, so a
+substituted module such as the Causes and Consequences Matrix is named correctly
+with no special case.
 
 **It is a mirror, and the mirror is checked.** The real list is built inside each
 renderer's `defaultModules()`, where the cards get their render functions and

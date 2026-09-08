@@ -48,7 +48,7 @@ function load(file, globalName) {
 /* ---- 1. the generated files still match their sources ---- */
 for (const [script, label] of [
   ['scripts/build-announcements.js', 'assets/data/announcements.js'],
-  ['scripts/build-canvas-events.js', 'docs/canvas/calendar-events.md']
+  ['scripts/build-canvas-events.js', 'docs/canvas/calendar-events.md and assignments.md']
 ]) {
   try {
     execFileSync('node', [path.join(ROOT, script), '--check'], { cwd: ROOT, stdio: 'pipe' });
@@ -199,6 +199,82 @@ for (const h of topicHeadings) {
 }
 if (missingRows.length) fail(missingRows.join('; '));
 else ok('every event names both sections in its Assign to table');
+
+/* ---- 8. the required module list, board against Canvas assignment ----
+
+   A topic runs ten module cards and its assignment collects a subset. That
+   subset is the `modules` field on the schedule day, and it is read by two
+   generators: the announcements board prints it on the wall as "Today's
+   Required Modules", and the Canvas assignment prints it as DO THESE N.
+
+   The failure this catches is the one that shipped: no day carried the field
+   at all, so the board listed all ten while the assignment in Canvas asked
+   for six. Nothing was red. The board was naming modules the lesson page
+   really does show, just not the ones due. */
+const assignments = fs.readFileSync(path.join(ROOT, 'docs', 'canvas', 'assignments.md'), 'utf8');
+
+// Both rooms sit the same assignment, because Canvas has one per topic. A
+// topic whose two days name different modules cannot be expressed as one
+// object, and the assignment would silently print the first room's list.
+const requiredByTopic = new Map();
+for (const d of days) {
+  const key = String(d.topic || '').trim();
+  if (!key) continue;
+  const list = d.modules ? [].concat(d.modules).map((m) => String(m).trim().padStart(2, '0')).join(',') : '';
+  if (!requiredByTopic.has(key)) requiredByTopic.set(key, []);
+  requiredByTopic.get(key).push({ date: d.date, list });
+}
+const listDisagree = [];
+for (const [key, entries] of requiredByTopic) {
+  const first = entries[0].list;
+  for (const e of entries) {
+    if (e.list !== first) listDisagree.push(`${key} (${e.date} lists ${e.list || 'all'}, ${entries[0].date} lists ${first || 'all'})`);
+  }
+}
+if (listDisagree.length) {
+  fail('a topic names different required modules on its two days: ' + listDisagree.join('; '));
+} else {
+  ok(`all ${requiredByTopic.size} scheduled topics name the same required modules to both cohorts`);
+}
+
+// Every topic with a required list must have an assignment printed, and every
+// module it names must appear in that assignment's DO THESE row. A list the
+// generator silently dropped is a student told to do less than is graded.
+const topicsWithList = [...requiredByTopic].filter(([, e]) => e[0].list);
+const listNotPrinted = [];
+for (const [key, entries] of topicsWithList) {
+  const heading = `## Topic ${key}`;
+  const alt = `## Foundations ${key.replace(/^F/i, '')}`;
+  const at = assignments.includes(heading) ? assignments.indexOf(heading)
+    : assignments.indexOf(alt);
+  if (at < 0) { listNotPrinted.push(`${key} has a required list but no assignment block`); continue; }
+  const block = assignments.slice(at, assignments.indexOf('```\n', assignments.indexOf('```html', at)));
+  const wanted = entries[0].list.split(',');
+  const shown = [];
+  const numRe = /<strong style="font-family: Montserrat[^"]*">(\d\d)<\/strong>/g;
+  let hit;
+  while ((hit = numRe.exec(block))) shown.push(hit[1]);
+  if (shown.join(',') !== wanted.join(',')) {
+    listNotPrinted.push(`${key} schedules ${wanted.join(',')} but its assignment shows ${shown.join(',') || 'nothing'}`);
+  }
+}
+if (listNotPrinted.length) fail(listNotPrinted.join('; '));
+else ok(`all ${topicsWithList.length} topics with a required list print exactly that list in Canvas`);
+
+// The board and the assignment have to agree, which is the whole point of
+// sharing one field. Read it back out of the generated board rather than
+// trusting that both generators read the same thing.
+const board = load(path.join(ROOT, 'assets', 'data', 'announcements.js'), 'BEHISTORICAL_ANNOUNCEMENTS');
+const boardListMismatch = [];
+for (const day of (board && board.days) || []) {
+  const sched = days.find((d) => d.date === day.date);
+  if (!sched || !sched.modules) continue;
+  const wanted = [].concat(sched.modules).map((m) => String(m).trim().padStart(2, '0')).join(',');
+  const shown = (day.modules || []).map((m) => m.number).join(',');
+  if (shown !== wanted) boardListMismatch.push(`${day.date} board shows ${shown}, schedule says ${wanted}`);
+}
+if (boardListMismatch.length) fail(boardListMismatch.join('; '));
+else ok('the announcements board prints the same required modules the schedule names');
 
 console.log('');
 if (failures) {

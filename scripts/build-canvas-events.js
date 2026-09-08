@@ -60,9 +60,11 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 const { cohort: lookupCohort } = require('./lib/cohorts.js');
+const { unitModules, foundationsModules } = require('./lib/module-list.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'docs', 'canvas', 'calendar-events.md');
+const OUT_ASSIGNMENTS = path.join(ROOT, 'docs', 'canvas', 'assignments.md');
 const SCHEDULE = path.join(ROOT, 'assets', 'data', 'announcements-schedule.js');
 const BASE_URL = 'https://jeffandersonlogic.github.io/ap-world-history';
 
@@ -86,6 +88,9 @@ const GOLD = '#c9a46a';
 const OXIDIZED = '#6b3e1f';
 const RULE = '#ddd2be';
 const MUTED = '#57544c';
+/* One step darker than OXIDIZED, for the small module number inside a list
+   item where the label-row bronze reads washed out at 12px. */
+const DEEP_BRONZE = '#4a2a15';
 
 const DISPLAY = "Cinzel, 'Trajan Pro', Georgia, serif";
 
@@ -155,9 +160,97 @@ const OVERVIEWS = {
 };
 
 /* ---------------------------------------------------------
+   OVERVIEW prose, the assignment's own
+
+   A calendar event and an assignment are read at different
+   moments and legitimately open differently: "Today you follow
+   all four" on the event a student sees in the morning,
+   "This assignment asks you to follow all four" on the thing
+   they open that night. Jeff's Canvas assignments also drop the
+   event's closing meta-sentence, the one that says what the
+   topic is a lesson about.
+
+   So an entry here overrides OVERVIEWS for the assignment only,
+   and a topic without one uses the event's prose unchanged.
+
+   THIS IS THE ONE PLACE IN THIS FILE WHERE THE SAME PARAGRAPH
+   EXISTS TWICE, and that is a real cost, not a free choice:
+   revise a topic's overview above and this copy goes stale
+   silently, because both still render. It is accepted only
+   because the difference is the opening clause, which no
+   mechanical transformation can apply to arbitrary prose
+   without mangling the topic whose paragraph is shaped
+   differently. Keep the list as short as the wording actually
+   requires, and when you edit one, edit both.
+
+   The one guard a machine can offer is below: an entry that has
+   become identical to its OVERVIEWS text is a dead override and
+   warns, because that is the shape the drift takes when someone
+   pastes the event prose in here by mistake.
+   --------------------------------------------------------- */
+const ASSIGNMENT_OVERVIEWS = {
+  '1.5': 'African states in this period were built on connection, not isolation. Mali and the Hausa city-states sat on the trans-Saharan routes, the Swahili coast on the Indian Ocean monsoon, Great Zimbabwe on gold moving toward that coast, and Ethiopia on a Christianity older than most of Europe\'s. This assignment asks you to learn how each used trade, religion, and architecture to build authority, and you meet a case where the archaeology itself was pressured to produce a politically convenient answer about who built Great Zimbabwe.',
+
+  '1.6': 'Europe is this period\'s case of a region that did not centralize, and the useful question is what grew in the space where a large state did not. A Church with its own courts, its own revenue, and the power to excommunicate a king. Chartered towns that bought their independence. Guilds. Assemblies that traded money for a say in how it was spent. This assignment asks you to follow all four, and then the plague, which did more to end serfdom than any monarch managed.'
+};
+
+/* ---------------------------------------------------------
+   MODULE DESCRIPTIONS, AUTHORED
+
+   Where the derived line above is not the line Jeff wrote in
+   Canvas, his wording wins and lives here. Two reasons a topic
+   needs an entry:
+
+   1. Nothing in the lesson data is a one-line description of
+      that module. Module 01's map block carries a long intro
+      and a discussion prompt; module 03 is a jump link.
+   2. The derived line is close but not his. Topic 1.5's Skill
+      Builder card reads 'Causation in African State Building'
+      in title case and 1.6's renderer config renames its card
+      to 'Compare Europe with Song China'. Both are correct as
+      card headings; neither is the sentence he wrote for a
+      student reading Canvas the night before.
+
+   Authored prose, trusted raw, exactly like OVERVIEWS above, so
+   an entry may carry <strong> or <em>. Everything derived from
+   the lesson data is escaped.
+
+   Keep this list SHORT. An entry here is a line no longer
+   answerable from the lesson, so a topic whose card wording is
+   simply wrong should have its data file fixed instead. See
+   docs/canvas/CANVAS-BUILD-GUIDE.md, Section 12.
+   --------------------------------------------------------- */
+const MODULE_NOTES = {
+  '1.5': {
+    '01': 'Where African states sat relative to trade routes, and why that geography helped decide which ones grew powerful.',
+    '05': 'Causation in African state building.',
+    '08': 'Ibn Battuta on African governance, from his 1352 visit to Mali.'
+  },
+  '1.6': {
+    '05': 'Comparison with Song China.',
+    '09': 'Enter a feudal manor in crisis and debate how it should respond to the Black Death. Your final <strong>step out of character</strong> reflection is the part that is collected.'
+  }
+};
+
+/* Spelled out, because 'DO THESE 6' reads like a form field and this is a
+   heading a student reads. Ten is the ceiling by the module standard. */
+const COUNT_WORDS = ['zero', 'one', 'two', 'three', 'four', 'five',
+  'six', 'seven', 'eight', 'nine', 'ten'];
+function countWord(n) {
+  return COUNT_WORDS[n] || String(n);
+}
+
+/* ---------------------------------------------------------
    Loading
    --------------------------------------------------------- */
-function runFile(file, globalName) {
+/* `alsoLoad` runs more files in the SAME sandbox, after the first. A lesson's
+   renderer config is the second half of its data: it runs against
+   window.BEHISTORICAL_LESSON and can add the BeInTheRoom link or replace the
+   module list outright. Reading the data file alone reports Topic 7.8 running
+   nine modules and no Causes & Consequences Matrix, because both of those are
+   declared in the config. A config that will not run is the page's problem,
+   not this document's, so it is skipped rather than fatal. */
+function runFile(file, globalName, alsoLoad) {
   const src = fs.readFileSync(file, 'utf8');
   const sandbox = { window: {} };
   const any = new Proxy(function () {}, {
@@ -173,7 +266,73 @@ function runFile(file, globalName) {
   } catch (err) {
     return null;
   }
+  for (const extra of alsoLoad || []) {
+    if (!fs.existsSync(extra)) continue;
+    try {
+      vm.runInContext(fs.readFileSync(extra, 'utf8'), sandbox, { filename: path.basename(extra) });
+    } catch (err) { /* see above */ }
+  }
   return globalName ? sandbox.window[globalName] : sandbox.window;
+}
+
+/* ---------------------------------------------------------
+   MODULE DESCRIPTIONS, DERIVED
+
+   The DO THESE N row on an assignment names each required
+   module and says in one line what it is. Almost all of those
+   lines are already in the lesson data, because they are the
+   same sentence the module card on the page carries: a
+   checkpoint's cardDesc, the Skill Builder's own title, the
+   reading's title. So they are read from there rather than
+   retyped, for the reason every other list in this repo is
+   derived: a second copy is a second place to fall out of
+   agreement with the lesson, and the student reading Canvas
+   would never know which one was current.
+
+   Two modules have no such line in the data. Module 01's map
+   block carries a long intro and a discussion prompt, neither
+   of which is a one-line description, and module 03 is a jump
+   link with only a lecture title. Those are authored in
+   MODULE_NOTES below, the same way OVERVIEWS above is authored,
+   and a required module with neither a derived line nor an
+   authored one prints as its bare name and warns. Nothing is
+   invented to fill the row.
+   --------------------------------------------------------- */
+function sentence(text) {
+  const t = String(text || '').trim();
+  if (!t) return '';
+  return /[.!?]$/.test(t) ? t : t + '.';
+}
+
+/* 'AP Skill Builder: Comparison with Song China' is the card heading, and the
+   assignment already prints the module name, so the prefix would read twice. */
+function stripLabel(text, label) {
+  return String(text || '').replace(new RegExp('^\\s*' + label + '\\s*:\\s*', 'i'), '').trim();
+}
+
+function deriveModuleDescs(data) {
+  const out = {};
+  const put = (num, text) => { const t = sentence(text); if (t) out[num] = t; };
+
+  if (data.first10 && data.first10.title) {
+    out['02'] = `<em>${esc(data.first10.title)}</em>, plus all three check questions inside the reading.`;
+  }
+  if (data.beSurreal) put('04', stripLabel(data.beSurreal.title, 'BeSurreal'));
+  if (data.skillBuilder) put('05', stripLabel(data.skillBuilder.title, 'AP Skill Builder'));
+  if (data.evidenceLab) put('07', data.evidenceLab.task);
+  if (data.primarySource) put('08', stripLabel(data.primarySource.title, 'Primary Source'));
+  if (data.beInTheRoom) put('09', data.beInTheRoom.desc);
+
+  /* Checkpoint 2 is module 09 on a topic with no BeInTheRoom field at all, so
+     the number comes from the module list rather than from the position, the
+     same rule module-list.js follows. */
+  const checks = Array.isArray(data.checkpoints) ? data.checkpoints : [];
+  if (checks.length) {
+    put('06', checks[0].cardDesc);
+    const last = checks[checks.length - 1];
+    if (last !== checks[0]) put(data.beInTheRoom ? '10' : '09', last.cardDesc);
+  }
+  return out;
 }
 
 function buildIndex() {
@@ -183,7 +342,9 @@ function buildIndex() {
   for (const name of fs.readdirSync(lessonDir)) {
     if (!/^lesson-\d+-\d+-/.test(name)) continue;
     if (/renderer-config|standards-addon/.test(name)) continue;
-    const data = runFile(path.join(lessonDir, name), 'BEHISTORICAL_LESSON');
+    const config = path.join(lessonDir,
+      name.replace(/\.js$/, '').replace(/^(lesson-\d+-\d+)-.*$/, '$1') + '-renderer-config.js');
+    const data = runFile(path.join(lessonDir, name), 'BEHISTORICAL_LESSON', [config]);
     if (!data || !data.meta) continue;
     const key = String(data.meta.topic || '').replace(/^Topic\s*/i, '').trim();
     if (!key) continue;
@@ -195,6 +356,8 @@ function buildIndex() {
       subtitle: data.meta.subtitle || '',
       learningTargets: (data.learningTargets || []).map((t) => t.target || t).filter(Boolean),
       successCriteria: (data.successCriteria || []).map((c) => c.criteria || c).filter(Boolean),
+      modules: unitModules(data),
+      moduleDescs: deriveModuleDescs(data),
       href: `${BASE_URL}/unit-${unitNum}/${name.replace(/^lesson-/, 'lesson-').replace(/\.js$/, '.html')}`,
       linkText: `Topic ${key} - ${data.meta.title || ''}`
     });
@@ -216,6 +379,8 @@ function buildIndex() {
       subtitle: data.subtitle || '',
       learningTargets: (data.learningTargets || []).map((t) => t.target || t).filter(Boolean),
       successCriteria: (data.successCriteria || []).map((c) => c.criteria || c).filter(Boolean),
+      modules: foundationsModules(),
+      moduleDescs: deriveModuleDescs(data),
       href: `${BASE_URL}/foundations/${shell}`,
       linkText: `Foundations ${num} - ${data.title || ''}`
     });
@@ -398,6 +563,133 @@ function buildEvent(topic) {
 }
 
 /* ---------------------------------------------------------
+   THE ASSIGNMENT BODY
+
+   A Canvas assignment is a different object from a Canvas
+   calendar event, and this is deliberately not a copy of one.
+   They share the masthead, the overview, the targets, the
+   criteria and the lesson link, and they share them by calling
+   the same functions above rather than by having the markup
+   twice.
+
+   Where they differ is what each is for. The event answers
+   "what is today", so it carries Tonight's Work and points at
+   the assignment. The assignment answers "what do I hand in",
+   so it carries the required module list and the submission
+   path, and its due chips are the whole DUE row rather than a
+   footer under the homework.
+
+   THE REQUIRED LIST IS THE POINT. A topic runs ten module cards
+   and an assignment collects a subset: Topic 1.5 requires six
+   and 1.6 requires five. That subset is a teaching decision,
+   nothing in the repo can derive it, and it lives in the same
+   place the board reads it from, the `modules` field on the
+   schedule day. So the wall board and the Canvas assignment
+   cannot name different work.
+   --------------------------------------------------------- */
+function moduleLine(topic, m) {
+  const authored = (MODULE_NOTES[topic.code] || {})[m.number];
+  const derived = (topic.moduleDescs || {})[m.number];
+  const desc = authored || derived || '';
+  if (!desc) {
+    warn(`${topic.code}: module ${m.number} (${m.title}) is required but has no ` +
+      `description in the lesson data. It prints as its name alone. ` +
+      `Add an entry to MODULE_NOTES in scripts/build-canvas-events.js.`);
+  }
+  return (
+    `                    <li style="margin: 0 0 6px 0;">` +
+    `<strong style="font-family: ${UI}; font-size: 12px; color: ${DEEP_BRONZE};">${esc(m.number)}</strong> ` +
+    `<strong>${esc(m.title)}.</strong>${desc ? ' ' + desc : ''}</li>`
+  );
+}
+
+function requiredCell(topic) {
+  const req = topic.required;
+  const out = [];
+  if (!req.length) {
+    out.push(`                <p style="font-family: ${BODY}; font-size: 15px; color: ${MUTED}; margin: 0;">` +
+      `No required list in the schedule. Do not paste this assignment.</p>`);
+    return out.join('\n');
+  }
+  const others = topic.modules.length - req.length;
+  out.push(`                <p style="font-family: ${UI}; font-size: 13px; font-weight: bold; color: ${OXIDIZED}; margin: 0 0 10px 0;">` +
+    `Only these ${countWord(req.length)} modules are required for ${esc(topic.heading.split(':')[0])}.</p>`);
+  out.push(`                <ul style="margin: 0 0 0 18px; padding: 0; font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK};">`);
+  req.forEach((m) => out.push(moduleLine(topic, m)));
+  out.push('                </ul>');
+
+  /* The reassurance is not padding. Gather All My Work collects every box on
+     the page, so a student who correctly did only the required six opens their
+     submission and finds four empty answers. Without this line that reads as
+     something they got wrong. */
+  if (others > 0) {
+    out.push(`                <p style="font-family: ${BODY}; font-size: 14px; color: ${MUTED}; margin: 10px 0 0 0;">` +
+      `The other ${countWord(others)} module${others === 1 ? '' : 's'} stay${others === 1 ? 's' : ''} open on the lesson page and ` +
+      `${others === 1 ? 'is' : 'are'} worth your time, but ${others === 1 ? 'it is' : 'they are'} <strong>not</strong> required and ` +
+      `${others === 1 ? 'is' : 'are'} not graded here. Gather All My Work collects every box on the page, so ` +
+      `${others === 1 ? 'that one' : 'those ' + countWord(others)} will come through empty. That is expected, not a mistake.</p>`);
+  }
+  return out.join('\n');
+}
+
+/* The submission path, from Section 8 of CANVAS-BUILD-GUIDE.md. Step 1 is
+   where students lose work, so the autosave sentence is in the step itself
+   rather than in a note underneath it. */
+function submitCell(topic) {
+  const n = topic.required.length;
+  const work = n ? `Work the ${countWord(n)} modules above in BeHistorical.` : 'Work the lesson in BeHistorical.';
+  return [
+    `                <ol style="margin: 0 0 0 18px; padding: 0; font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK};">`,
+    `                    <li style="margin: 0 0 8px 0;">${work} <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>`,
+    `                    <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>`,
+    `                    <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>`,
+    `                    <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>`,
+    '                </ol>',
+    `                <p style="font-family: ${BODY}; font-size: 14px; color: ${MUTED}; margin: 10px 0 0 0;">The First &amp; 10 answers are the fragile ones. The reading opens in its own window, so if you never open it, those three slots come through blank.</p>`
+  ].join('\n');
+}
+
+/* The DUE row is the same per-cohort chips the event carries under Tonight's
+   Work, printed on their own. Same seal, same three signals: colour, letter
+   and shape. */
+function dueCell(topic) {
+  const out = ['                <p style="margin: 0;">'];
+  topic.meetings.forEach((m) => {
+    if (!m.due) return;
+    const c = m.cohort;
+    out.push(
+      `                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: ${UI}; ` +
+      `font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: ${c.ink}; ` +
+      `border: 1px solid ${c.mark}; border-radius: 2px; padding: 4px 9px;">` +
+      `${seal(c)}<span style="padding-left: 7px;">${esc(c.short)} due ${esc(m.due)}</span></span>`
+    );
+  });
+  if (out.length === 1) {
+    out.push(`                    <span style="font-family: ${BODY}; font-size: 15px; color: ${MUTED};">No later meeting in the schedule, so no due date is derived.</span>`);
+  }
+  out.push('                </p>');
+  return out.join('\n');
+}
+
+function buildAssignment(topic) {
+  return [
+    band(topic),
+    `<table style="border-collapse: collapse; width: 100%; border-color: ${RULE}; border-style: solid;" border="1" cellpadding="10">`,
+    '    <tbody>',
+    row('OVERVIEW', `                <p style="font-family: ${BODY}; font-size: 15px; line-height: 1.55; color: ${INK}; margin: 0;">${topic.assignmentOverview}</p>`),
+    row(`DO THESE ${countWord(topic.required.length).toUpperCase()}`, requiredCell(topic)),
+    row('LEARNING TARGETS', bulletList(topic.targets, topic.noTargetsMessage)),
+    row('SUCCESS CRITERIA', bulletList(topic.criteria, topic.noCriteriaMessage)),
+    row('HOW TO SUBMIT', submitCell(topic)),
+    row('BeHistorical Link',
+      `                <p style="font-family: ${UI}; font-size: 14px; margin: 0;"><a class="inline_disabled" href="${topic.href}" target="_blank" rel="noopener" style="color: ${OXIDIZED}; font-weight: bold;">${esc(topic.linkText)}</a></p>`),
+    row('DUE', dueCell(topic)),
+    '    </tbody>',
+    '</table>'
+  ].join('\n');
+}
+
+/* ---------------------------------------------------------
    Assemble
    --------------------------------------------------------- */
 function build() {
@@ -448,6 +740,23 @@ function build() {
     if (isTopicDay && !targets.length) warn(`${entry.date} (${code}): no learning targets.`);
     if (isTopicDay && !criteria.length) warn(`${entry.date} (${code}): no success criteria.`);
 
+    /* The required subset, read off the same `modules` field on the schedule
+       day that the announcements board reads. Deriving it here instead would
+       be a second answer to "what is due", and the two surfaces could then
+       name different work with every structural check still green. */
+    const allModules = found ? found.modules : [];
+    let required = allModules;
+    if (entry.modules) {
+      const wanted = (Array.isArray(entry.modules) ? entry.modules : [entry.modules])
+        .map((m) => String(m).trim().padStart(2, '0'));
+      const missing = wanted.filter((n) => !allModules.some((m) => m.number === n));
+      if (missing.length) {
+        warn(`${entry.date} (${code}): module ${missing.join(', ')} is not in this ` +
+          `topic's module list. It runs ${allModules.map((m) => m.number).join(', ')}.`);
+      }
+      required = wanted.map((n) => allModules.find((m) => m.number === n)).filter(Boolean);
+    }
+
     // Homework, built the same way the announcements builder builds it, so a
     // student reading Canvas and a student reading the projector see the
     // same assignment with the same due date.
@@ -487,6 +796,10 @@ function build() {
       title: entry.topicTitle || (found ? found.title : ''),
       targets,
       criteria,
+      modules: allModules,
+      required,
+      hasRequired: Boolean(entry.modules),
+      moduleDescs: found ? found.moduleDescs : {},
       homework,
       due: homework.length ? due : '',
       href: found ? found.href : `${BASE_URL}/`,
@@ -518,8 +831,13 @@ function build() {
           ? `Topic ${day.code}${day.title ? ': ' + day.title : ''}`
           : (day.title || day.code),
         overview,
+        assignmentOverview: ASSIGNMENT_OVERVIEWS[day.code] || overview,
         targets: day.targets,
         criteria: day.criteria,
+        modules: day.modules,
+        required: day.required,
+        hasRequired: day.hasRequired,
+        moduleDescs: day.moduleDescs,
         homework: day.homework,
         href: day.href,
         linkText: day.linkText,
@@ -538,6 +856,17 @@ function build() {
     // Both rooms get the same work; only the date differs. If they ever do
     // not, say so rather than merging two lists into one that is wrong for
     // somebody, and keep the first cohort's, which is Green's.
+    /* Canvas has one assignment per topic, so a topic whose two rooms are
+       assigned different modules cannot be expressed as one. Say so rather
+       than printing one room's list under both their names. */
+    if (topic.meetings.length &&
+        topic.required.map((m) => m.number).join(',') !== day.required.map((m) => m.number).join(',')) {
+      warn(`${topic.code}: ${day.cohort.label} is assigned different modules from ` +
+        `${topic.meetings[0].cohort.label}. The assignment prints ` +
+        `${topic.meetings[0].cohort.label}'s. Make the schedule agree, or split ` +
+        'them into two Canvas assignments.');
+    }
+
     const a = JSON.stringify(topic.homework);
     const b = JSON.stringify(day.homework);
     if (topic.meetings.length && a !== b) {
@@ -550,6 +879,19 @@ function build() {
   }
 
   for (const topic of topics) {
+    if (ASSIGNMENT_OVERVIEWS[topic.code] === topic.overview) {
+      warn(`${topic.code}: its ASSIGNMENT_OVERVIEWS entry is identical to its ` +
+        'OVERVIEWS entry, so it overrides nothing. Delete it, or it is a second ' +
+        'copy of the same paragraph waiting to fall out of agreement.');
+    }
+
+    /* Warned per topic, not per class day: a topic is taught twice and the
+       list is a property of the assignment, so twice would be twice. */
+    if (topic.meetings.length && !topic.hasRequired && topic.modules.length) {
+      warn(`${topic.code}: no required module list in the schedule, so no assignment ` +
+        'is printed for it. Read the DO THESE N row off the Canvas assignment and add ' +
+        'a `modules` field to both of its schedule days.');
+    }
     if (topic.meetings.length < 2) {
       warn(`${topic.code}: only ${topic.meetings.length} meeting in the schedule. ` +
         `A topic is normally taught to both cohorts.`);
@@ -636,14 +978,122 @@ function build() {
     `${days.filter((d) => d.cohort.key === 'silver').length} silver).`);
   out.push('');
 
-  return out.join('\n');
+  /* ---- the assignment document ---- */
+  const built = topics.filter((t) => t.hasRequired && t.required.length);
+  const pending = topics.filter((t) => !(t.hasRequired && t.required.length));
+
+  const asg = [];
+  asg.push('# Canvas Assignment Bodies, Paste-Ready');
+  asg.push('');
+  asg.push('**Generated by `scripts/build-canvas-events.js`. Do not hand-edit.**');
+  asg.push('');
+  asg.push('One assignment per topic, the graded companion to the calendar event in');
+  asg.push('`calendar-events.md`. Both are generated from the same schedule and the same');
+  asg.push('lesson data by the same code, so the two Canvas objects for a topic cannot');
+  asg.push('disagree about its targets, its criteria, its dates, or its required work.');
+  asg.push('');
+  asg.push('```bash');
+  asg.push('node scripts/build-canvas-events.js          # write');
+  asg.push('node scripts/build-canvas-events.js --check  # fail on drift, write nothing');
+  asg.push('```');
+  asg.push('');
+  asg.push('## The required module list');
+  asg.push('');
+  asg.push('**A topic runs ten module cards and its assignment collects a subset.** Topic');
+  asg.push('1.5 requires six, 1.6 requires five. Which ones is a teaching decision, so it');
+  asg.push('is not derived from anything: it is the `modules` field on that topic\'s days in');
+  asg.push('`assets/data/announcements-schedule.js`, read off the DO THESE N row of the');
+  asg.push('assignment as it stands in Canvas today.');
+  asg.push('');
+  asg.push('That is the **same field the announcements board reads** for its "Today\'s');
+  asg.push('Required Modules" slide. One field, two surfaces, so the wall and Canvas cannot');
+  asg.push('name different work. A topic with no list is not printed below; it is listed as');
+  asg.push('pending instead, because an assignment that asked for all ten when the real one');
+  asg.push('asks for six is worse than no assignment at all.');
+  asg.push('');
+  asg.push('Each module\'s one-line description comes from the lesson data wherever the');
+  asg.push('lesson data has one, a checkpoint\'s `cardDesc`, the reading\'s title, the Skill');
+  asg.push('Builder\'s. Where the Canvas wording differs from the card wording, it is');
+  asg.push('authored in `MODULE_NOTES` in the builder, the same way OVERVIEWS is.');
+  asg.push('');
+  asg.push('## How to paste one of these');
+  asg.push('');
+  asg.push('1. Canvas, Assignments, the assignment for this topic, **Edit**.');
+  asg.push('2. In the Rich Content Editor, click the **`</>`** icon to open the HTML editor.');
+  asg.push('   **Never paste this into the visual editor.** Pasting rendered HTML there');
+  asg.push('   injects wrapper `<div>`s and inline font declarations that collapse the table.');
+  asg.push('3. Paste the whole block, the masthead `<div>` and the `<table>` together.');
+  asg.push('4. In **Assign to**, add one row per section using the table printed with the');
+  asg.push('   assignment, and remove the Everyone row so no student inherits the wrong date.');
+  asg.push('5. Save.');
+  asg.push('');
+  asg.push('**The assignment name is not generated.** It has to be identical in Canvas and');
+  asg.push('PowerSchool, character for character, and ASCII only. See Section 2 of');
+  asg.push('`CANVAS-BUILD-GUIDE.md`; the topic code and full title are printed with each');
+  asg.push('block so the short name can be written from them, not guessed at here.');
+  asg.push('');
+  asg.push('---');
+  asg.push('');
+
+  for (const topic of built) {
+    asg.push(`## ${topic.heading}`);
+    asg.push('');
+    asg.push(`**Topic:** \`${topic.code}\`  **Full title:** ${topic.title || '(none)'}`);
+    asg.push('');
+    asg.push(`**Required:** ${topic.required.length} of ${topic.modules.length} modules, ` +
+      `${topic.required.map((m) => m.number).join(', ')}`);
+    asg.push('');
+    asg.push('**Assign to, one row per section:**');
+    asg.push('');
+    asg.push('| Section | Taught | Due |');
+    asg.push('| --- | --- | --- |');
+    for (const m of topic.meetings) {
+      asg.push(`| ${m.cohort.label} | ${longDate(m.date)} | ${m.due || 'no later meeting'} |`);
+    }
+    asg.push('');
+    asg.push('```html');
+    asg.push(buildAssignment(topic));
+    asg.push('```');
+    asg.push('');
+  }
+
+  /* Pending topics are listed in teaching order rather than collected out of
+     sight, the same reason the eBook library lists an unwritten chapter in
+     place: someone looking for Topic 1.3 looks between 1.2 and 1.4, and
+     finding it marked "no required list yet" answers the question, while
+     finding nothing does not. */
+  if (pending.length) {
+    asg.push('---');
+    asg.push('');
+    asg.push('## Not built yet');
+    asg.push('');
+    asg.push('These topics have no `modules` field on their schedule days, so the required');
+    asg.push('subset is unknown and no assignment is printed. Read the DO THESE N row off');
+    asg.push('each one as it stands in Canvas, add the numbers to both of that topic\'s days');
+    asg.push('in `announcements-schedule.js`, and rerun.');
+    asg.push('');
+    asg.push('| Topic | Title | Modules it runs |');
+    asg.push('| --- | --- | --- |');
+    for (const t of pending) {
+      asg.push(`| ${t.code} | ${t.title || '(none)'} | ${t.modules.map((m) => m.number).join(', ') || 'none'} |`);
+    }
+    asg.push('');
+  }
+
+  asg.push('---');
+  asg.push('');
+  asg.push(`${built.length} assignments built, ${pending.length} pending, ` +
+    `out of ${topics.length} topics in the schedule.`);
+  asg.push('');
+
+  return { events: out.join('\n'), assignments: asg.join('\n') };
 }
 
 function main() {
   const check = process.argv.includes('--check');
-  let text;
+  let docs;
   try {
-    text = build();
+    docs = build();
   } catch (err) {
     console.error(`build-canvas-events: ${err.message}`);
     process.exit(1);
@@ -651,20 +1101,37 @@ function main() {
 
   warnings.forEach((w) => console.error(`WARNING  ${w}`));
 
+  /* Two documents, one generator, one --check. Splitting them into two scripts
+     would mean two copies of the index, the dates, the cohort seals and the
+     row markup, which is the drift this repo spends most of its checks
+     refusing. See the header of buildAssignment. */
+  const files = [
+    { path: OUT, text: docs.events, label: 'docs/canvas/calendar-events.md' },
+    { path: OUT_ASSIGNMENTS, text: docs.assignments, label: 'docs/canvas/assignments.md' }
+  ];
+
   if (check) {
-    const current = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : null;
-    if (current !== text) {
-      console.error('FAIL  docs/canvas/calendar-events.md is out of date.');
+    let stale = false;
+    for (const f of files) {
+      const current = fs.existsSync(f.path) ? fs.readFileSync(f.path, 'utf8') : null;
+      if (current !== f.text) {
+        console.error(`FAIL  ${f.label} is out of date.`);
+        stale = true;
+      }
+    }
+    if (stale) {
       console.error('      Run: node scripts/build-canvas-events.js');
       process.exit(1);
     }
-    console.log('OK  calendar-events.md matches the schedule and the lesson data.');
+    console.log('OK  calendar-events.md and assignments.md match the schedule and the lesson data.');
     return;
   }
 
-  fs.mkdirSync(path.dirname(OUT), { recursive: true });
-  fs.writeFileSync(OUT, text);
-  console.log(`Wrote docs/canvas/calendar-events.md (${text.split('\n').length} lines)`);
+  for (const f of files) {
+    fs.mkdirSync(path.dirname(f.path), { recursive: true });
+    fs.writeFileSync(f.path, f.text);
+    console.log(`Wrote ${f.label} (${f.text.split('\n').length} lines)`);
+  }
 }
 
 main();

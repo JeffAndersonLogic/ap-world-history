@@ -71,13 +71,26 @@
                           recommended: ['05 ...']      // optional
                         }
 
-       modules      optional. Leave it out and the board lists every
-                    module that topic's lesson page shows, in order,
-                    under "Today's Required Modules". A short day
-                    lists the numbers it actually covers and nothing
-                    else, so the names still come from the lesson:
+       modules      the modules this topic's Canvas assignment
+                    actually requires, read off its DO THESE N row.
+                    A topic runs ten cards and the assignment
+                    collects a subset, so this is the normal case,
+                    not a short-day exception:
 
-                        modules: ['01', '02', '03', '06']
+                        modules: ['01', '02', '05', '06', '08', '10']
+
+                    Only the numbers. The names still come from the
+                    lesson, so a module cannot be renamed on the
+                    board and nowhere else, and a number the topic
+                    does not run fails the build.
+
+                    BOTH of a topic's days must name the same list.
+                    Canvas has one assignment per topic and splits
+                    only the dates, so two rooms with two lists
+                    cannot be expressed as one object.
+
+                    Leave it out and the board lists all ten and no
+                    Canvas assignment is generated for that topic.
 
        homeworkDue  optional override, e.g. 'Friday'. Leave it out
                     and the builder uses this cohort's next meeting.

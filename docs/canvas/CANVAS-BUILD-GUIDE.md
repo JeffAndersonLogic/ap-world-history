@@ -622,9 +622,109 @@ content have diverged.
 
 ---
 
+## Section 12, The assignment body, and the required module list
+
+Sections 3 and 4 describe the **calendar event**. This section describes the
+**assignment**, the other Canvas object a topic has, and the one thing in it
+that no part of this repository can work out on its own.
+
+### A topic runs ten modules and its assignment collects a subset
+
+Topic 1.5 requires six of its ten modules (01, 02, 05, 06, 08, 10). Topic 1.6
+requires five (02, 05, 06, 09, 10), and no Map module at all. Which ones is a
+teaching decision about a 90-minute block, so nothing derives it. It is typed
+once, as the `modules` field on that topic's days in
+`assets/data/announcements-schedule.js`:
+
+```js
+{
+  date: '2026-09-08',
+  cohort: 'green',
+  topic: '1.5',
+  modules: ['01', '02', '05', '06', '08', '10'],
+}
+```
+
+**That is the same field the classroom announcements board reads** for its
+"Today's Required Modules" slide. One field, two surfaces, so the wall and
+Canvas cannot name different work. Both cohorts must carry the same list,
+because Canvas has one assignment per topic and splits only the dates; a topic
+whose two days disagree fails `scripts/test/schedule-cohorts.test.js`.
+
+**The failure this prevents already shipped.** No schedule day carried the
+field at all, so the board listed all ten modules while the Canvas assignment
+asked for six, and a student who correctly did the six saw four empty answers
+in Gather All My Work with nothing to explain them. Every structural check
+stayed green: the board was naming modules the lesson page really does show,
+just not the ones due.
+
+### Where the DO THESE N row's wording comes from
+
+Each module's one-line description is read out of the lesson data, because it is
+the same sentence the module card on the page already carries:
+
+| Module | Field |
+|---|---|
+| 02 First & 10 Reading | `first10.title`, wrapped in `<em>`, plus a fixed tail |
+| 04 BeSurreal | `beSurreal.title`, minus its label prefix |
+| 05 AP Skill Builder | `skillBuilder.title`, minus its label prefix |
+| 06 Checkpoint 1 | `checkpoints[0].cardDesc` |
+| 07 Evidence Lab | `evidenceLab.task` |
+| 08 Primary Source | `primarySource.title`, minus its label prefix |
+| 09 BeInTheRoom | `beInTheRoom.desc` |
+| 10 Checkpoint 2 | the last checkpoint's `cardDesc` |
+
+Modules 01 and 03 have no such line. The map block carries a long intro and a
+discussion prompt, neither of which is a one-line description, and module 03 is
+a jump link with only a lecture title.
+
+So those, **and any module whose Canvas wording differs from its card wording**,
+are authored in `MODULE_NOTES` in `scripts/build-canvas-events.js`, exactly the
+way `OVERVIEWS` is authored there. Topic 1.5's Skill Builder card reads
+"Causation in African State Building" in title case and 1.6's renderer config
+renames its card to "Compare Europe with Song China"; both are correct as card
+headings and neither is the sentence written for a student reading Canvas the
+night before.
+
+**Keep `MODULE_NOTES` short.** An entry is a line no longer answerable from the
+lesson data, so a topic whose card wording is simply wrong should have its data
+file fixed instead of an override added here.
+
+### The overview is the one paragraph that exists twice
+
+`ASSIGNMENT_OVERVIEWS` overrides `OVERVIEWS` for the assignment only. An event
+opens "Today you follow all four" and an assignment opens "This assignment asks
+you to follow all four", and the assignment drops the event's closing
+meta-sentence.
+
+**That is a real cost, not a free choice.** Revise a topic's overview and the
+override goes stale silently, because both still render. It is accepted only
+because the difference is the opening clause, and no mechanical transformation
+applies that to arbitrary prose without mangling the topic whose paragraph is
+shaped differently. Edit one, edit both. An override that has become identical
+to its `OVERVIEWS` text is a dead override and the run warns, because that is
+the shape the drift takes.
+
+### What is not generated
+
+**The assignment name.** It must be identical in Canvas and PowerSchool,
+character for character, ASCII only, and short enough for PowerSchool's cap. See
+Section 2. The topic code and full title are printed above each block so the
+short name can be written from them rather than guessed at by a script.
+
+### Pending topics are listed, not hidden
+
+A topic with no `modules` field gets no assignment block. It appears in a "Not
+built yet" table at the end of `docs/canvas/assignments.md` instead, with the
+modules it runs, and the run warns. Printing an all-ten assignment for it would
+be worse than printing nothing, because it would look finished and be wrong.
+
+---
+
 ## Related documents
 
 - `docs/canvas/calendar-events.md`, the paste-ready events, one per class day, generated
+- `docs/canvas/assignments.md`, the paste-ready assignment bodies, one per topic, generated
 - `scripts/build-canvas-events.js`, the generator
 - `scripts/lib/cohorts.js`, the one definition of Green and Silver
 - `assets/data/announcements-schedule.js`, the calendar both the events and the
