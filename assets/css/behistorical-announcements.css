@@ -254,6 +254,44 @@ body::before{
 .agenda-list.is-long .agenda-num{font-size:clamp(.95rem,1.85vw,2.3rem)}
 .agenda-list.is-long{gap:clamp(6px,1vh,14px)}
 
+/* ---------- Today's modules ----------
+   The ten module cards a student will work through, in order, so the room can
+   read the day's path off the wall instead of opening the Canvas assignment.
+   Two columns, because ten single-file rows either run off the bottom of a
+   720p projector or shrink to a size the back row cannot read. */
+/* Columns rather than a two-track grid, because a grid fills across and this
+   list is a sequence: 01 to 05 down the left and 06 to 10 down the right is
+   the order a student works in, where a grid would print 01 02 across the top
+   row. Columns also reflow for any count without being told how many rows. */
+.module-list{
+  list-style:none; margin:0; padding:0;
+  column-count:2; column-gap:clamp(12px,1.8vw,32px);
+}
+/* Five or fewer, a short day, goes back to one wide column. */
+.module-list.is-single{column-count:1}
+.module-item{
+  display:flex; align-items:baseline; gap:clamp(9px,1.15vw,20px);
+  break-inside:avoid; -webkit-column-break-inside:avoid;
+  margin-bottom:clamp(6px,1.1vh,15px);
+  padding:clamp(7px,1.15vh,16px) clamp(12px,1.5vw,26px);
+  background:linear-gradient(90deg, rgba(245,240,231,.07), rgba(245,240,231,.015));
+  border-left:clamp(4px,.4vw,8px) solid var(--burnished-bronze);
+}
+.module-num{
+  flex:0 0 auto;
+  font-family:var(--ui); font-weight:900;
+  font-size:clamp(.85rem,1.5vw,1.85rem);
+  line-height:1.2; color:var(--antique-gold);
+  font-variant-numeric:tabular-nums;
+}
+.module-name{
+  font-family:var(--body);
+  font-size:clamp(.85rem,1.5vw,1.9rem);
+  line-height:1.25; color:var(--clean-paper); text-wrap:pretty;
+}
+.module-list.is-single .module-num{font-size:clamp(1.05rem,2.1vw,2.6rem)}
+.module-list.is-single .module-name{font-size:clamp(1.05rem,2.05vw,2.6rem)}
+
 /* ---------- Homework ----------
    Bulleted, not numbered. The count moved to the eyebrow, where it is read
    once, instead of being re-derived from a column of digits at the back of
@@ -716,6 +754,10 @@ body::before{
   }
   .criteria-mark,
   .criteria-list.is-tight .criteria-mark{width:20px; height:20px; margin-top:.1em}
+  .module-list,.module-list.is-single{column-count:1}
+  .module-item{padding:12px 14px; margin-bottom:10px}
+  .module-num,.module-list.is-single .module-num,
+  .module-name,.module-list.is-single .module-name{font-size:1rem; line-height:1.4}
   .homework-item::before{width:.5rem; height:.5rem; margin-top:.42rem}
   .reading-item,
   .homework-list.is-dense .reading-item{font-size:.86rem; line-height:1.4}

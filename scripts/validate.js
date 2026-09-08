@@ -1619,6 +1619,69 @@ section('Skills Lens inlined libraries');
   }
 }
 
+// ── The announcements board's module list ─────────────────────────────────────
+// The board tells the room which modules today's lesson runs. Those names come
+// from scripts/lib/module-list.js, which is a second copy of a list that lives
+// for real inside each renderer's defaultModules(), where the cards are built
+// with their render functions and their artwork.
+//
+// Two copies of anything is the failure this repository keeps paying for, so
+// the copy is checked rather than trusted: rename a module card in a renderer
+// and this fails, instead of the board going on naming a module that no longer
+// exists on the page a student is looking at. It cannot run the renderers,
+// which are browser code, so it reads their source and asserts every name is
+// still in it.
+section('Announcements board names the same modules the lesson pages do');
+{
+  const modulesLib = path.join(ROOT, 'scripts', 'lib', 'module-list.js');
+  totalChecks++;
+  if (!exists(modulesLib)) {
+    err(modulesLib, 'missing; the announcements board cannot list a day\'s modules without it');
+  } else {
+    const { UNIT_MODULES, FOUNDATIONS_MODULES } = require(modulesLib);
+    const renderers = [
+      { file: path.join(ROOT, 'assets', 'js', 'behistorical-topic-renderer-v1.js'), names: UNIT_MODULES },
+      { file: path.join(ROOT, 'foundations', 'foundations-topic-renderer.js'), names: FOUNDATIONS_MODULES }
+    ];
+    for (const { file, names } of renderers) {
+      const src = read(file);
+      totalChecks++;
+      if (!src) { err(file, 'renderer not found, cannot confirm the board names its modules'); continue; }
+      for (const name of names) {
+        if (!src.includes(`'${name}'`)) {
+          err(file, `no module card titled "${name}", but scripts/lib/module-list.js still puts it on the board`);
+        }
+      }
+    }
+
+    // Both halves of the board, because each failure is silent on its own: a
+    // generated file carrying module lists that the page never draws, and a
+    // page ready to draw them from a file that stopped carrying any.
+    const board = path.join(ROOT, 'announcements.html');
+    const generated = path.join(ROOT, 'assets', 'data', 'announcements.js');
+    const boardSrc = read(board);
+    totalChecks++;
+    if (boardSrc && !/buildModulesSlide/.test(boardSrc)) {
+      err(board, 'no longer builds the Today\'s Required Modules slide');
+    }
+    const generatedSrc = read(generated);
+    totalChecks++;
+    if (generatedSrc) {
+      // Every day built from a lesson carries that lesson's modules. A day the
+      // schedule writes by hand, an assessment or an activity with no topic
+      // number, has no lesson to read them from and says so in its own header
+      // comment, so it is skipped rather than reported as a missing list.
+      const days = generatedSrc.split(/\n    \/\* \d{4}-\d{2}-\d{2}/).slice(1);
+      const bare = days.filter(d => /<- {2}lesson-|<- {2}foundations-/.test(d)
+        && /topic: '[^']+'/.test(d) && !/modules: \[/.test(d));
+      if (bare.length) {
+        err(generated, `${bare.length} class day(s) name a topic but carry no module list. Run: node scripts/build-announcements.js`);
+      }
+    }
+  }
+  sectionDone('module names match both renderers, and every scheduled topic carries its list');
+}
+
 // ── Summary ───────────────────────────────────────────────────────────────────
 console.log(`\n${'─'.repeat(60)}`);
 console.log(`${W}Summary${X}  |  ${totalChecks} files checked`);

@@ -42,6 +42,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can walk a family member through the 10 modules we use every class and say why each one exists.' },
         { text: 'I can describe in one sentence what my end-of-year portfolio will contain and who sees it, and write one paragraph in my own voice that captures who I am as a historical thinker on Day 1.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: [
         { text: 'Complete your F0 responses and submit them in Canvas.', due: 'Monday, August 10' },
         { text: 'Read Theme 1, page 18, in the eBook.', due: 'Monday, August 10' }
@@ -64,6 +76,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can list the six skills (contextualization, comparison, causation, continuity/change, argumentation, sourcing) and give a plain-language definition of each.' },
         { text: 'I can walk a family member through the 10 modules we use every class and say why each one exists.' },
         { text: 'I can describe in one sentence what my end-of-year portfolio will contain and who sees it, and write one paragraph in my own voice that captures who I am as a historical thinker on Day 1.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
         { text: 'Complete your F0 responses and submit them in Canvas.', due: 'Tuesday, August 11' },
@@ -88,6 +112,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can trace the causal chain from agricultural surplus to at least three characteristics of civilization.' },
         { text: 'I can write a contextualization sentence that identifies a geographic condition and explains how it shaped the shift to farming or the rise of a civilization.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: [
         { text: 'Finish the Foundations 1 modules for Geography Shapes Civilization.', due: 'Wednesday, August 12' },
         { text: 'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.', due: 'Wednesday, August 12' }
@@ -110,6 +146,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can describe how hunter-forager life differed from settled agricultural life, and name a specific geographic feature, a river, fertile soil, a domesticable species, that made the beginning of agriculture possible.' },
         { text: 'I can trace the causal chain from agricultural surplus to at least three characteristics of civilization.' },
         { text: 'I can write a contextualization sentence that identifies a geographic condition and explains how it shaped the shift to farming or the rise of a civilization.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
         { text: 'Finish the Foundations 1 modules for Geography Shapes Civilization.', due: 'Thursday, August 13' },
@@ -134,6 +182,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can identify a specific institutional function of a belief system, education, law, welfare, legitimacy, social order, and give a concrete historical example.' },
         { text: 'I can explain at least one mechanism by which a belief system spread, trade route, state adoption, missionary, civil service exam, or monastic network, and give a specific example of syncretism that shows how belief systems change as they travel.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: []
     },
     /* 2026-08-13  <-  foundations-2-belief-systems-data.js */
@@ -151,6 +211,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can state the central idea of each of the six belief systems and where it originated.' },
         { text: 'I can identify a specific institutional function of a belief system, education, law, welfare, legitimacy, social order, and give a concrete historical example.' },
         { text: 'I can explain at least one mechanism by which a belief system spread, trade route, state adoption, missionary, civil service exam, or monastic network, and give a specific example of syncretism that shows how belief systems change as they travel.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: []
     },
@@ -170,6 +242,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain one example of resistance or exclusion (the Yellow Turbans, Spartacus, Greek or Roman exclusion of non-citizens) and connect it to a limit of state power.' },
         { text: 'I can compare two of the four states by explaining how each answered the same problem differently, using a specific mechanism, not just "it helped the ruler" but how and why.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: []
     },
     /* 2026-08-17  <-  foundations-3-states-power-data.js */
@@ -187,6 +271,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can name a specific tool of rule from one of the four classical civilizations, give an example, and explain the governance problem it solved.' },
         { text: 'I can explain one example of resistance or exclusion (the Yellow Turbans, Spartacus, Greek or Roman exclusion of non-citizens) and connect it to a limit of state power.' },
         { text: 'I can compare two of the four states by explaining how each answered the same problem differently, using a specific mechanism, not just "it helped the ruler" but how and why.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: []
     },
@@ -206,6 +302,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can name one pack-animal technology and one maritime technology with a date, and I can give at least two specific examples of non-goods traveling the networks, with dates and locations, including one religious tradition that was changed by the journey.' },
         { text: 'I can write a complexity paragraph that identifies multiple effects of a single trade network and explains how they connected across regions.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: []
     },
     /* 2026-08-19  <-  foundations-4-trade-networks-data.js */
@@ -223,6 +331,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can name all four required routes, give at least three specific port cities or oasis towns and explain each one\'s geographic function, and describe how the Indian Ocean monsoon worked, which months, which directions, which sailing routes.' },
         { text: 'I can name one pack-animal technology and one maritime technology with a date, and I can give at least two specific examples of non-goods traveling the networks, with dates and locations, including one religious tradition that was changed by the journey.' },
         { text: 'I can write a complexity paragraph that identifies multiple effects of a single trade network and explains how they connected across regions.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: []
     },
@@ -242,6 +362,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain each AP historical thinking skill in my own words and identify where it appeared in Foundations Days 1–4.' },
         { text: 'I can write an SAQ paragraph with a defensible claim in the first sentence, at least two specific pieces of historical evidence, and a reasoning sentence that explains the connection.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: []
     },
     /* 2026-08-21  <-  foundations-5-world-at-1200-data.js */
@@ -259,6 +391,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can write one specific sentence about each of the six AP World regions at c.1200 that names a specific feature, institution, trade connection, or belief system, and explain which Foundations theme mattered most, using evidence from at least two days.' },
         { text: 'I can explain each AP historical thinking skill in my own words and identify where it appeared in Foundations Days 1–4.' },
         { text: 'I can write an SAQ paragraph with a defensible claim in the first sentence, at least two specific pieces of historical evidence, and a reasoning sentence that explains the connection.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Reasoning Prompts' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: []
     },
@@ -318,6 +462,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how Confucianism, Buddhism, and Chinese cultural traditions continued or changed as they shaped societies in East Asia.', label: 'Culture' },
         { text: 'I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.', label: 'Economics' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: [
         { text: 'Required eBook reading for Topic 1.2, Developments in Dar al-Islam (ebook/unit-1.html).', kind: 'reading', due: 'Friday, August 28',
           items: [
@@ -348,6 +504,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how Confucianism, Buddhism, and Chinese cultural traditions continued or changed as they shaped societies in East Asia.', label: 'Culture' },
         { text: 'I can connect Champa rice, the Grand Canal, paper money, trade, and production to population growth, urbanization, and commercial expansion.', label: 'Economics' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: [
         { text: 'Required eBook reading for Topic 1.2, Developments in Dar al-Islam (ebook/unit-1.html).', kind: 'reading', due: 'Monday, August 31',
           items: [
@@ -377,6 +545,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can describe how Islamic states changed after Abbasid fragmentation and identify examples such as the Seljuk Empire, Mamluk Sultanate, and Delhi Sultanate.' },
         { text: 'I can explain how Islam spread through military expansion, merchants, missionaries, and Sufi networks.' },
         { text: 'I can connect scholarship, translation, paper-making, mathematics, medicine, astronomy, and geography to intellectual exchange.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
         { text: 'Finish BeInTheRoom, the scholars council, if it did not fit in the block.', due: 'Tuesday, September 1' },
@@ -409,6 +589,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how Islam spread through military expansion, merchants, missionaries, and Sufi networks.' },
         { text: 'I can connect scholarship, translation, paper-making, mathematics, medicine, astronomy, and geography to intellectual exchange.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: [
         { text: 'Finish BeInTheRoom, the scholars council, if it did not fit in the block.', due: 'Wednesday, September 2' },
         { text: 'Required eBook reading for Topic 1.3, Developments in South and Southeast Asia (ebook/unit-1.html).', kind: 'reading', due: 'Wednesday, September 2',
@@ -440,6 +632,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can compare how land-based states (Vijayanagara, Khmer) and maritime states (Srivijaya, Majapahit) used religion and geography to build power.' },
         { text: 'I can connect trade routes, ports, monsoon winds, and merchant communities to political and cultural change in South and Southeast Asia.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: [
         { text: 'Required eBook reading for Topic 1.4, State Building in the Americas (ebook/unit-1.html).', kind: 'reading', due: 'Thursday, September 3',
           items: [
@@ -469,6 +673,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can use specific evidence about Hinduism, Buddhism, Islam, temples, rulers, and merchants to explain how belief systems shaped society.' },
         { text: 'I can compare how land-based states (Vijayanagara, Khmer) and maritime states (Srivijaya, Majapahit) used religion and geography to build power.' },
         { text: 'I can connect trade routes, ports, monsoon winds, and merchant communities to political and cultural change in South and Southeast Asia.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
         { text: 'Required eBook reading for Topic 1.4, State Building in the Americas (ebook/unit-1.html).', kind: 'reading', due: 'Friday, September 4',
@@ -500,6 +716,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain continuity, innovation, diversity, or expansion in American state systems.' },
         { text: 'I can identify evidence used in a source to support an argument about American state building.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: [
         { text: 'Required eBook reading for Topic 1.5, State Building in Africa (ebook/unit-1.html).', kind: 'reading', due: 'Tuesday, September 8',
           items: [
@@ -529,6 +757,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can use evidence about Maya city-states, Mexica, Inca, Chaco, Mesa Verde, or Cahokia to explain state systems in the Americas.' },
         { text: 'I can explain continuity, innovation, diversity, or expansion in American state systems.' },
         { text: 'I can identify evidence used in a source to support an argument about American state building.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
         { text: 'Required eBook reading for Topic 1.5, State Building in Africa (ebook/unit-1.html).', kind: 'reading', due: 'Wednesday, September 9',
@@ -560,6 +800,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how Ethiopia\'s Solomonic dynasty used Christianity and control of Red Sea trade to maintain independence and legitimacy.', label: 'Governance' },
         { text: 'I can describe how Hausa city-states used trans-Saharan trade and Islamic administration to build and exercise power.', label: 'Governance' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: [
         { text: 'Required eBook reading for Topic 1.6, Developments in Europe (ebook/unit-1.html).', kind: 'reading', due: 'Thursday, September 10',
           items: [
@@ -589,6 +841,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can use specific evidence about Great Zimbabwe\'s stone enclosures, gold trade, and Indian Ocean connections to explain how it built power.', label: 'Governance' },
         { text: 'I can explain how Ethiopia\'s Solomonic dynasty used Christianity and control of Red Sea trade to maintain independence and legitimacy.', label: 'Governance' },
         { text: 'I can describe how Hausa city-states used trans-Saharan trade and Islamic administration to build and exercise power.', label: 'Governance' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
         { text: 'Required eBook reading for Topic 1.6, Developments in Europe (ebook/unit-1.html).', kind: 'reading', due: 'Friday, September 11',
@@ -620,6 +884,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain the roles of feudalism, manorialism, towns, guilds, and trade in European society.' },
         { text: 'I can compare Europe with Song China, Dar al-Islam, Africa, the Americas, or South and Southeast Asia.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
       homework: [
         { text: 'Required eBook reading for Topic 1.7, Comparison in the Period from c. 1200 to c. 1450 (ebook/unit-1.html).', kind: 'reading', due: 'Monday, September 14', note: 'Sections 02 to 04 are reference material for building your comparison, not required reading.',
           items: [
@@ -646,6 +922,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can use evidence about monarchies, nobles, the Church, and decentralized power to explain European politics.' },
         { text: 'I can explain the roles of feudalism, manorialism, towns, guilds, and trade in European society.' },
         { text: 'I can compare Europe with Song China, Dar al-Islam, Africa, the Americas, or South and Southeast Asia.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
         { text: 'Required eBook reading for Topic 1.7, Comparison in the Period from c. 1200 to c. 1450 (ebook/unit-1.html).', kind: 'reading', due: 'Tuesday, September 15', note: 'Sections 02 to 04 are reference material for building your comparison, not required reading.',
@@ -674,6 +962,17 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can support each comparison with specific evidence such as Song bureaucracy, Dar al-Islam scholarship, Mali trade, Inca roads, or European feudalism.' },
         { text: 'I can explain why the similarity or difference existed instead of only naming it.' }
       ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'Checkpoint 2' }
+      ],
       homework: []
     },
     /* 2026-09-15  <-  lesson-1-7-comparison.js */
@@ -691,6 +990,17 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can identify one meaningful similarity and one meaningful difference between two Unit 1 regions.' },
         { text: 'I can support each comparison with specific evidence such as Song bureaucracy, Dar al-Islam scholarship, Mali trade, Inca roads, or European feudalism.' },
         { text: 'I can explain why the similarity or difference existed instead of only naming it.' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'Checkpoint 2' }
       ],
       homework: []
     }

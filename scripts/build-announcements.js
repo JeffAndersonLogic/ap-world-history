@@ -24,6 +24,7 @@
 const fs = require('fs');
 const path = require('path');
 const { COHORTS, cohort: lookupCohort, nextCohortKey } = require('./lib/cohorts.js');
+const { unitModules, foundationsModules } = require('./lib/module-list.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'assets', 'data', 'announcements.js');
@@ -38,7 +39,7 @@ const anyObject = new Proxy(function () {}, {
   construct: () => anyObject
 });
 
-function loadGlobals(file) {
+function loadGlobals(file, alsoLoad) {
   global.document = anyObject;
   global.location = anyObject;
   global.navigator = anyObject;
@@ -48,6 +49,21 @@ function loadGlobals(file) {
     require(file);
   } catch (err) {
     return null;
+  }
+  /* A renderer config is the second half of a topic's data: it runs against
+     window.BEHISTORICAL_LESSON and can add the BeInTheRoom link or replace the
+     module list outright. Reading the data file alone would report Topic 7.8
+     running nine modules and no Causes & Consequences Matrix, because both of
+     those are declared in the config. */
+  for (const extra of alsoLoad || []) {
+    if (!fs.existsSync(extra)) continue;
+    try {
+      delete require.cache[require.resolve(extra)];
+      require(extra);
+    } catch (err) {
+      /* A config that will not run is the page's problem, not the board's.
+         The topic still gets its targets, criteria and its default modules. */
+    }
   }
   return global.window;
 }
@@ -150,7 +166,8 @@ function buildIndex() {
     if (!/^lesson-\d+-\d+-/.test(name)) continue;
     if (/renderer-config|standards-addon/.test(name)) continue;
 
-    const win = loadGlobals(path.join(lessonDir, name));
+    const config = path.join(lessonDir, name.replace(/\.js$/, '').replace(/^(lesson-\d+-\d+)-.*$/, '$1') + '-renderer-config.js');
+    const win = loadGlobals(path.join(lessonDir, name), [config]);
     const data = win && win.BEHISTORICAL_LESSON;
     if (!data || !data.meta) continue;
 
@@ -164,6 +181,7 @@ function buildIndex() {
       subtitle: data.meta.subtitle || '',
       learningTargets: collect(data.learningTargets, 'target'),
       successCriteria: collect(data.successCriteria, 'criteria'),
+      modules: unitModules(data),
       source: name
     });
   }
@@ -188,6 +206,7 @@ function buildIndex() {
       subtitle: data.subtitle || '',
       learningTargets: collect(data.learningTargets, 'target'),
       successCriteria: collect(data.successCriteria, 'criteria'),
+      modules: foundationsModules(),
       source: name
     });
   }
@@ -223,6 +242,13 @@ function emitHomework(items, indent) {
     block += ' }';
     return block;
   }).join(',\n');
+}
+
+function emitModules(modules, indent) {
+  const pad = ' '.repeat(indent);
+  return modules.map((m) => (
+    pad + '{ number: ' + quote(m.number) + ', title: ' + quote(m.title) + ' }'
+  )).join(',\n');
 }
 
 function emitEntries(entries, indent) {
@@ -314,6 +340,24 @@ function main() {
       criteria = criteria.slice(0, MAX_ITEMS);
     }
 
+    /* The ten modules of the day, straight off the lesson the schedule names.
+       A short day can list the numbers it actually covers, and only the
+       numbers: the names still come from the lesson, so a module cannot be
+       renamed on the board and nowhere else. */
+    let modules = found ? found.modules : [];
+    if (entry.modules) {
+      const wanted = (Array.isArray(entry.modules) ? entry.modules : [entry.modules])
+        .map((m) => String(m).trim().padStart(2, '0'));
+      const missing = wanted.filter((n) => !modules.some((m) => m.number === n));
+      if (missing.length) {
+        const topicName = found ? `Topic ${found.key}` : `"${entry.topic}"`;
+        problems.push(`${entry.date}: module ${missing.join(', ')} is not in ${topicName}'s module list. It runs ${modules.map((m) => m.number).join(', ')}.`);
+      }
+      modules = wanted
+        .map((n) => modules.find((m) => m.number === n))
+        .filter(Boolean);
+    }
+
     for (const item of targets.concat(criteria)) {
       if (item.text.length > LONG_TEXT) {
         notes.push(`${entry.date} (${wanted}): a ${item.text.length} character line will project small`);
@@ -349,6 +393,7 @@ function main() {
       topic: entry.topicTitle || (found ? found.title : ''),
       targets,
       criteria,
+      modules,
       homework,
       // A day with nothing assigned carries no due date. Emitting one anyway
       // is invisible on the board, because the homework slide does not build,
@@ -415,6 +460,9 @@ function main() {
     }
     if (day.criteria.length) {
       block += '      successCriteria: [\n' + emitEntries(day.criteria, 8) + '\n      ],\n';
+    }
+    if (day.modules.length) {
+      block += '      modules: [\n' + emitModules(day.modules, 8) + '\n      ],\n';
     }
     if (day.homework.length) {
       block += '      homework: [\n' + emitHomework(day.homework, 8) + '\n      ]';

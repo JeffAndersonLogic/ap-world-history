@@ -95,7 +95,7 @@ Every script below also has an `npm run` alias; see `package.json`.
   still renders and every structural check stays green.
 - `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
-- `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets and success criteria out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand. `--check` fails on drift, which is what the offline suite runs.
+- `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets, success criteria and module list out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand. `--check` fails on drift, which is what the offline suite runs. See "Today's Required Modules" below.
 - `node scripts/build-wordmark.js`, render the BeHistorical wordmark to
   `assets/logos/behistorical-wordmark-{light,dark}.png` from the same markup and
   the same `behistorical-brand-lock.css` the site draws it with. Needs
@@ -1358,6 +1358,37 @@ board also appears in a Canvas event. That last one caught the board emitting a
 due date on days with nothing assigned, which is invisible on the projector and
 is exactly the quiet disagreement between two surfaces this section exists to
 prevent.
+
+### Today's Required Modules
+
+The board carries one slide listing the modules today's lesson runs, numbered
+and named, under the heading a student reads on the wall rather than in Canvas.
+The Canvas assignment for a topic already names them; this is the second place,
+for the student who is in the room and has not opened Canvas yet.
+
+**The list is derived, never typed.** `scripts/lib/module-list.js` answers "what
+modules does this topic run" and `build-announcements.js` writes the answer into
+each day. A topic that declares its own `lesson.modules`, which Topics 7.8, 7.9
+and 8.9 do, is read from that list, so a substituted module such as the Causes
+and Consequences Matrix is named correctly with no special case.
+
+**A short day lists numbers, not names.** `modules: ['01', '02', '06']` in a
+schedule entry keeps only those, and the names still come from the lesson, so a
+module cannot be renamed on the board and nowhere else. A number that topic does
+not run fails the build rather than printing a module the cards do not have.
+
+**It is a mirror, and the mirror is checked.** The real list is built inside each
+renderer's `defaultModules()`, where the cards get their render functions and
+their artwork, so the names live in two places. `validate.js` asserts every name
+in `module-list.js` still appears in the renderer that draws it, and that every
+scheduled topic day carries a list, and that `announcements.html` still builds
+the slide. Rename a module card and the push fails here, rather than the board
+going on naming a module that no longer exists on the page in front of a
+student. The number rules are mirrored exactly too, BeInTheRoom only when the
+topic has a scenario to link, Checkpoint 2 numbered from whether the topic
+carries a `beInTheRoom` field at all: those are two different tests in the
+renderer, a topic with the field and no url really does show a Module 10 after a
+Module 08, and quietly renumbering it here would stop matching the cards.
 
 ### The wordmark in Canvas
 

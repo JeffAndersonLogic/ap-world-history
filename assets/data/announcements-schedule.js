@@ -71,6 +71,14 @@
                           recommended: ['05 ...']      // optional
                         }
 
+       modules      optional. Leave it out and the board lists every
+                    module that topic's lesson page shows, in order,
+                    under "Today's Required Modules". A short day
+                    lists the numbers it actually covers and nothing
+                    else, so the names still come from the lesson:
+
+                        modules: ['01', '02', '03', '06']
+
        homeworkDue  optional override, e.g. 'Friday'. Leave it out
                     and the builder uses this cohort's next meeting.
        note         optional one line callout ('Bring your Chromebook')

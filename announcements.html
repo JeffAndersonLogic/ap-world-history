@@ -217,6 +217,31 @@
       return s;
     }
 
+    /* The modules a student works through today, in order. The list is
+       generated from the lesson itself, so the board names exactly what the
+       Canvas assignment names and neither can be edited into disagreeing with
+       the module cards on the lesson page. */
+    function buildModulesSlide(day) {
+      var modules = (day.modules || []).filter(function (m) {
+        return m && has(m.number) && has(m.title);
+      });
+      if (!modules.length) return null;
+
+      var s = slide();
+      s.appendChild(eyebrow('In Class Today'));
+      s.appendChild(el('h2', 'slide-title', "Today's Required Modules"));
+
+      var list = el('ul', 'module-list' + (modules.length > 5 ? '' : ' is-single'));
+      modules.forEach(function (m) {
+        var item = el('li', 'module-item');
+        item.appendChild(el('span', 'module-num', m.number.trim()));
+        item.appendChild(el('span', 'module-name', m.title.trim()));
+        list.appendChild(item);
+      });
+      s.appendChild(list);
+      return s;
+    }
+
     function normalizeEntries(list) {
       return (list || []).map(function (entry) {
         if (has(entry)) return { text: entry.trim(), label: '' };
@@ -504,6 +529,9 @@
 
         var criteria = buildCriteriaSlide(day);
         if (criteria) slides.push(criteria);
+
+        var modules = buildModulesSlide(day);
+        if (modules) slides.push(modules);
 
         var agenda = buildAgendaSlide(day);
         if (agenda) slides.push(agenda);
