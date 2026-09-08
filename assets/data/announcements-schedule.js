@@ -350,6 +350,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-08',
       cohort: 'green',
       topic: '1.5',
+      modules: ['01', '02', '05', '06', '08', '10'],
       reading: {
         for: '1.6',
         where: 'ebook/unit-1.html',
@@ -366,6 +367,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-09',
       cohort: 'silver',
       topic: '1.5',
+      modules: ['01', '02', '05', '06', '08', '10'],
       reading: {
         for: '1.6',
         where: 'ebook/unit-1.html',
@@ -380,13 +382,13 @@ window.BEHISTORICAL_SCHEDULE = {
     },
 
     /* ---- Topic 1.6, Europe ------------------------------ */
-    // NOTE: 9/10 and 9/11 follow the same alternating pattern as every block
-    // above, but are not yet confirmed against the Canvas calendar the way
-    // 1.1 to 1.5 were. Check these two dates before the board goes live.
+    // 9/10 and 9/11 confirmed against the Canvas assignment for 1.6, which
+    // names Green Thursday September 10 and Silver Friday September 11.
     {
       date: '2026-09-10',
       cohort: 'green',
       topic: '1.6',
+      modules: ['02', '05', '06', '09', '10'],
       reading: {
         for: '1.7',
         where: 'ebook/unit-1.html',
@@ -401,6 +403,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-11',
       cohort: 'silver',
       topic: '1.6',
+      modules: ['02', '05', '06', '09', '10'],
       reading: {
         for: '1.7',
         where: 'ebook/unit-1.html',

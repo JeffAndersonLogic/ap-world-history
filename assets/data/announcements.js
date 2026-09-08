@@ -803,13 +803,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       modules: [
         { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
         { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -845,13 +841,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       modules: [
         { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
         { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -885,14 +877,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can compare Europe with Song China, Dar al-Islam, Africa, the Americas, or South and Southeast Asia.' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
@@ -924,14 +911,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can compare Europe with Song China, Dar al-Islam, Africa, the Americas, or South and Southeast Asia.' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
