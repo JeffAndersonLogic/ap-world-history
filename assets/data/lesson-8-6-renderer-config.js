@@ -126,7 +126,7 @@
     },
     {
       title: 'Checkpoint 2: Political Changes → Territorial, Demographic, and Nationalist Developments',
-      subtitle: 'Checks Learning Targets 1 and 2 (LO G).',
+      subtitle: 'Checks Learning Targets 1 and 2: how political change produced new borders, displaced people, and new national identities.',
       cardDesc: 'AP-style explanation: how political changes at decolonization led to new state creation, conflict, and mass displacement.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],

@@ -89,7 +89,7 @@ window.BEHISTORICAL_LESSON = {
         title: "The Capstone Question",
         bullets: [
           "You have studied seven topics in Unit 7, from the collapse of empires in **Topic 7.1** to conducting World War II in **Topic 7.7.** This lesson asks a different question: not **what** caused global conflict, but **which causes mattered most.**",
-          "The Learning Objective is **Unit 7 LO I**: 'Explain the **relative significance** of the causes of global conflict in the period 1900 to the present.' Relative significance means making an **argument**, historians don't just list causes, they rank them.",
+          "The Learning Objective for this topic is: 'Explain the **relative significance** of the causes of global conflict in the period 1900 to the present.' Relative significance means making an **argument**, historians don't just list causes, they rank them.",
           "The CED itself modeled this once. Look at the **WWII Key Concept** (Topic 7.6 callback): 'the causes of World War II included… and **especially** the rise to power of fascist and totalitarian regimes.' The word **especially** is a significance claim. Your job in this capstone is to build your own.",
           "Two vocabulary moves: **underlying causes**, long-term structural factors that created conditions for conflict, versus **immediate triggers**, the specific events that set conflict in motion. Both appear in the evidence, but they don't carry equal weight in a strong argument."
         ],

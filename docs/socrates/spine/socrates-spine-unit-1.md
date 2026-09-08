@@ -105,7 +105,7 @@ Strong answer checklist: Use KC-3.2.I.D.i language. Use one specific illustrativ
 Strong answer checklist: Name the specific state you are explaining. Use at least two specific pieces of evidence. Explain how, not just what, the state did to build power.
 
 **Checkpoint 2 prompt.** Explain how and why states in Africa developed and changed from c. 1200 to c. 1450. Use at least two of the following as evidence: Great Zimbabwe, Ethiopia, Hausa kingdoms.
-Strong answer checklist: Use at least two specific African examples. Explain both HOW AND WHY, this is what LO J requires. Show change over time or continuity across the c. 1200–1450 period.
+Strong answer checklist: Use at least two specific African examples. Explain both HOW AND WHY states in Africa changed, that is what the learning objective asks for. Show change over time or continuity across the c. 1200–1450 period.
 
 ## 1.6 Developments in Europe
 

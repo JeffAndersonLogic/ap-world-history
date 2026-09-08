@@ -99,7 +99,7 @@
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: The Nonviolent Challenge to Power Structures',
-      subtitle: 'Checks Learning Target 1 (LO I / KC-6.2.V.A).',
+      subtitle: 'Checks Learning Target 1: explaining various reactions to existing power structures after 1900 (KC-6.2.V.A).',
       cardDesc: 'Explain how at least two of the three named individuals promoted nonviolence as a way to bring about political change, and why nonviolence was a deliberate strategic choice.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
@@ -110,7 +110,7 @@
     },
     {
       title: 'Checkpoint 2: Various Reactions to Existing Power Structures After 1900',
-      subtitle: 'Checks all three Learning Targets (LO I — full synthesis).',
+      subtitle: 'Checks all three Learning Targets: various reactions to existing power structures after 1900, full synthesis.',
       cardDesc: 'AP-style synthesis: explain the range of reactions to existing power structures after 1900, using evidence from at least two of the three CED categories.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
@@ -118,7 +118,7 @@
       responseType: 'Checkpoint 2',
       skill: 'Comparison',
       terms: ['gandhi', 'mlk', 'mandela', 'nonviolence', 'pinochet', 'chile', 'coup', 'franco', 'spain', 'amin', 'uganda', 'military-industrial', 'weapons', 'shining path', 'peru', 'al-qaeda', 'terrorism', 'civilians', 'intensify', 'conflict', 'state', 'repression', 'reaction', 'power structure', 'various', 'compare', 'contrast', 'method', 'target', 'political aim', 'distinguish', 'category'],
-      focus: ['Use at least two categories (not two examples from the same category). LO I asks for \'various\' reactions, the skill is showing the range.', 'For each example, explain the mechanism: not just "Gandhi was nonviolent" but HOW nonviolent resistance created political pressure and what conditions made it effective in that context.', 'The comparison at the end is the analytical payoff: how do the two reactions you chose differ, and what does the difference reveal about how power structures can be challenged (or reinforced)?']
+      focus: ['Use at least two categories (not two examples from the same category). The learning objective asks for \'various\' reactions, the skill is showing the range.', 'For each example, explain the mechanism: not just "Gandhi was nonviolent" but HOW nonviolent resistance created political pressure and what conditions made it effective in that context.', 'The comparison at the end is the analytical payoff: how do the two reactions you chose differ, and what does the difference reveal about how power structures can be challenged (or reinforced)?']
     }
   ];
 

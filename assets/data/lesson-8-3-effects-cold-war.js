@@ -205,7 +205,7 @@ window.BEHISTORICAL_LESSON = {
       url: "https://commons.wikimedia.org/wiki/Special:FilePath/Revoluci%C3%B3n_sandinista.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Revoluci%C3%B3n_sandinista.png",
       caption: "Sandinista fighters in Nicaragua during the 1980s Contra conflict, a proxy war in which the U.S. funded insurgents to destabilize a Soviet-aligned government.",
-      prompt: "How does the Nicaraguan conflict illustrate the comparison AP LO C demands? What methods did the U.S. use to maintain influence, and how did those compare to Soviet methods in Angola or Korea?"
+      prompt: "How does the Nicaraguan conflict illustrate the comparison the learning objective demands, comparing the ways the United States and the Soviet Union each sought to maintain influence? What methods did the U.S. use to maintain influence, and how did those compare to Soviet methods in Angola or Korea?"
     }
   ],
 

@@ -233,7 +233,7 @@
     }
 
     var html =
-      '<div class="component-note"><strong>Hemispheric Effects Matrix, LO K</strong><br>Complete each row using evidence from Topics 8.1–8.8. Record specific examples for each hemisphere, rate the row, and justify in one sentence. After all four rows, draft your extent thesis in the Synthesis field. Use the Save Row button to preserve your work.</div>' +
+      '<div class="component-note"><strong>Hemispheric Effects Matrix</strong><br>Complete each row using evidence from Topics 8.1–8.8. Record specific examples for each hemisphere, rate the row, and justify in one sentence. After all four rows, draft your extent thesis in the Synthesis field. Use the Save Row button to preserve your work.</div>' +
 
       '<div style="background:#2B2F31;border-left:3px solid #C9A46A;padding:.9rem 1.1rem;margin:1rem 0;font-family:\'Montserrat\',sans-serif;font-size:.78rem;color:#D2B48C;line-height:1.65;">' +
         '<strong style="color:#C9A46A;">Row ratings:</strong> <em>Largely Similar</em> = effects in both hemispheres share the same mechanism or pattern. <em>Mixed</em> = some overlap but with meaningful differences. <em>Largely Different</em> = the effect category operated distinctly across hemispheres. Your row ratings build toward your thesis degree claim.' +
@@ -265,7 +265,7 @@
 
       '<section style="margin:1.5rem 0;border:2px solid #C9A46A;border-radius:3px;padding:1.25rem;">' +
         '<div style="font-family:\'Cinzel\',serif;font-size:1rem;font-weight:700;color:#C9A46A;margin-bottom:.7rem;">Synthesis: Evaluate the Extent</div>' +
-        '<p style="font-family:\'Montserrat\',sans-serif;font-size:.78rem;line-height:1.6;color:#D2B48C;margin-bottom:.8rem;">Using your four row ratings, draft a thesis that answers LO K: "Evaluate the extent to which the effects of the Cold War were similar in the Eastern and Western Hemispheres." Your thesis must make a degree claim, to a great, moderate, or limited extent, and name the specific patterns that support it.</p>' +
+        '<p style="font-family:\'Montserrat\',sans-serif;font-size:.78rem;line-height:1.6;color:#D2B48C;margin-bottom:.8rem;">Using your four row ratings, draft a thesis that answers the learning objective: "Evaluate the extent to which the effects of the Cold War were similar in the Eastern and Western Hemispheres." Your thesis must make a degree claim, to a great, moderate, or limited extent, and name the specific patterns that support it.</p>' +
         '<textarea id="matrix-synthesis" class="response-area" placeholder="Draft your extent thesis: To a [great/moderate/limited] extent, the effects of the Cold War were [similar/different] in the Eastern and Western Hemispheres because..." style="' + synTaStyle + '"></textarea>' +
         '<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.75rem;">' +
           '<button class="btn secondary" type="button" onclick="saveMatrixSynthesis89()">Save Synthesis</button>' +
@@ -327,7 +327,7 @@
       id: 'checkpoint2',
       label: 'Module 06',
       title: 'Checkpoint 2',
-      desc: 'Full AP-style LEQ aligned to LO K: evaluate the extent to which Cold War effects were similar across both hemispheres.',
+      desc: 'Full AP-style LEQ aligned to the learning objective: evaluate the extent to which Cold War effects were similar across both hemispheres.',
       img: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
       render: function () { return renderCheckpoint(lesson.checkpoints[0], 'checkpoint-two-response'); }
     }

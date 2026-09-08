@@ -206,7 +206,7 @@ window.BEHISTORICAL_LESSON = {
   checkpoints: [
     {
       title: 'Checkpoint 1: Belief and State Power',
-      subtitle: 'Checks religious and cultural developments — LO G.',
+      subtitle: 'Checks the learning objective on how belief systems and practices in South and Southeast Asia affected society.',
       prompt: 'Explain how rulers in South or Southeast Asia used religion or monumental architecture to strengthen political authority between c. 1200 and c. 1450.',
       responseType: 'Checkpoint 1',
       learningTargets: ['I can explain how belief systems shaped society and state power in South and Southeast Asia.'],
@@ -221,7 +221,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'Checkpoint 2: Trade, Geography, and Cultural Exchange',
-      subtitle: 'Checks trade, geography, and political power — LO H.',
+      subtitle: 'Checks the learning objective on how and why states in South and Southeast Asia developed and changed.',
       prompt: 'Explain how Indian Ocean trade helped spread goods, religions, and cultural practices in South and Southeast Asia between c. 1200 and c. 1450.',
       responseType: 'Checkpoint 2',
       skill: 'Causation',

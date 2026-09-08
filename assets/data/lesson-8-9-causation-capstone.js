@@ -72,7 +72,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       criteria: "I can write an 'evaluate the extent' thesis that makes a defensible degree claim about Cold War effects and defends it with at least two specific pieces of historical evidence from both hemispheres.",
-      kc: "Argumentation; LO K",
+      kc: "Argumentation; evaluate the extent",
       theme: "Historical Developments"
     }
   ],
@@ -274,7 +274,7 @@ window.BEHISTORICAL_LESSON = {
 
   skillBuilder: {
     title: "AP Skill Builder: Build the LEQ — Evaluate the Extent",
-    label: "LEQ construction, evaluate the extent (LO K)",
+    label: "LEQ construction, evaluate the extent",
     intro: "Use your completed Hemispheric Effects Matrix to plan each component of the AP 'evaluate the extent' LEQ before writing your full response in Checkpoint 2.",
     steps: [
       {
@@ -315,7 +315,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: "Checkpoint 2: Evaluate the Extent — Full LEQ",
-      subtitle: "Checks all three Learning Targets (LO K — full 'evaluate the extent' synthesis).",
+      subtitle: "Checks all three Learning Targets: the full 'evaluate the extent' synthesis.",
       cardDesc: "AP-style LEQ: evaluate the extent to which Cold War effects were similar in the Eastern and Western Hemispheres, using evidence from at least two effect categories and both hemispheres.",
       learningTargets: [
         "I can explain how the Cold War extended beyond ideology to have economic, political, social, and cultural effects globally.",

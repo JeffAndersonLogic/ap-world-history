@@ -367,7 +367,7 @@ module.exports = {
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track two things as you read: (1) how each superpower used alliances, arms, and proxy forces to maintain influence, and (2) where their methods were similar and where they differed. AP LO C asks you to compare, not just describe, so focus on the structural patterns that appear across Korea, Angola, and Nicaragua.",
+      "beforeYouRead": "Track two things as you read: (1) how each superpower used alliances, arms, and proxy forces to maintain influence, and (2) where their methods were similar and where they differed. The learning objective asks you to compare, not just describe, so focus on the structural patterns that appear across Korea, Angola, and Nicaragua.",
       "readingTarget": "By the end, you should be able to compare the ways the United States and the Soviet Union sought to maintain influence, identifying at least one similarity and one difference in their methods, with evidence from at least two of the three CED proxy-war examples."
     },
     "vocabulary": [
@@ -463,7 +463,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "The Cold War produced three interconnected effects: new military alliances (NATO and the Warsaw Pact) that extended superpower influence across the globe; nuclear proliferation and MAD that deterred direct conflict while redirecting competition into proxy methods; and proxy wars in Korea, Angola, and Nicaragua where local forces fought Cold War battles with superpower arms, funding, and backing. Both the United States and Soviet Union used the same structural tools, alliances, arms, advisors, local clients, but differed in how they framed their involvement and how directly they intervened. Comparing these methods, not just cataloguing them, is what AP LO C requires.",
+    "takeaway": "The Cold War produced three interconnected effects: new military alliances (NATO and the Warsaw Pact) that extended superpower influence across the globe; nuclear proliferation and MAD that deterred direct conflict while redirecting competition into proxy methods; and proxy wars in Korea, Angola, and Nicaragua where local forces fought Cold War battles with superpower arms, funding, and backing. Both the United States and Soviet Union used the same structural tools, alliances, arms, advisors, local clients, but differed in how they framed their involvement and how directly they intervened. Comparing these methods, not just cataloguing them, is what the learning objective requires.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -525,7 +525,7 @@ module.exports = {
       "Continuity and Change Over Time"
     ],
     "supportCards": {
-      "beforeYouRead": "This topic has two distinct learning objectives: LO D covers China (causes and consequences of communist seizure of power) and LO E covers redistribution movements across Africa, Asia, and Latin America. Track both as you read. For China, trace the two causes the CED specifies: internal tension AND Japanese aggression. For the redistribution cases, note what drove each movement and what effect it produced.",
+      "beforeYouRead": "This topic has two distinct learning objectives: one covers China, the causes and consequences of the communist seizure of power, and the other covers movements to redistribute economic resources across Africa, Asia, and Latin America. Track both as you read. For China, trace the two causes the CED specifies: internal tension AND Japanese aggression. For the redistribution cases, note what drove each movement and what effect it produced.",
       "readingTarget": "By the end, you should be able to: (1) explain the two causes of China's communist revolution and the consequences of the Great Leap Forward; and (2) explain the causes and effects of at least two of the four CED redistribution examples, Vietnam, Ethiopia, Kerala/India, and Iran."
     },
     "vocabulary": [
@@ -548,7 +548,7 @@ module.exports = {
     "sections": [
       {
         "number": "1",
-        "label": "Causation, KC-6.2.I.i / LO D",
+        "label": "Causation, KC-6.2.I.i, communism in China",
         "heading": "How China Turned Communist: Two Causes",
         "blocks": [
           {
@@ -575,7 +575,7 @@ module.exports = {
       },
       {
         "number": "2",
-        "label": "Causation, KC-6.3.I.A.ii / LO D",
+        "label": "Causation, KC-6.3.I.A.ii, communism in China",
         "heading": "The Great Leap Forward: State Control and Its Consequences",
         "blocks": [
           {
@@ -602,7 +602,7 @@ module.exports = {
       },
       {
         "number": "3",
-        "label": "Causation / Comparison, KC-6.2.II.D.i / LO E",
+        "label": "Causation / Comparison, KC-6.2.II.D.i, redistribution movements",
         "heading": "Four Paths to Redistribution: Vietnam, Ethiopia, India, and Iran",
         "blocks": [
           {
@@ -628,11 +628,11 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Comparison",
-          "raw": "<p>These four cases cover revolutionary (Vietnam), military-junta (Ethiopia), democratic-electoral (Kerala/India), and monarchical top-down (Iran) paths to redistribution. <strong>The causes differ; so do the effects. AP LO E asks you to explain causes AND effects. Use the cases comparatively: identify where causes overlapped (colonial inequality, rural land hunger) and where effects diverged (independence vs. civil war vs. democratic reform vs. revolution against the reformer).</strong></p>"
+          "raw": "<p>These four cases cover revolutionary (Vietnam), military-junta (Ethiopia), democratic-electoral (Kerala/India), and monarchical top-down (Iran) paths to redistribution. <strong>The causes differ; so do the effects. The learning objective asks you to explain causes AND effects. Use the cases comparatively: identify where causes overlapped (colonial inequality, rural land hunger) and where effects diverged (independence vs. civil war vs. democratic reform vs. revolution against the reformer).</strong></p>"
         }
       }
     ],
-    "takeaway": "Two learning objectives, one topic. LO D: China turned communist because of internal tension (warlordism, KMT failure, land inequality) AND Japanese aggression, both causes are required. The Great Leap Forward shows what communist state control of the economy looks like at catastrophic scale: collectivization, backyard steel furnaces, inflated production reporting, grain extraction based on fake numbers, and a famine that killed tens of millions. LO E: redistribution movements in Vietnam (revolutionary), Ethiopia (military junta), Kerala/India (democratic election), and Iran (monarchical decree) show four different causes and four different effects, use the comparison to show the range, not just to list the cases.",
+    "takeaway": "Two learning objectives, one topic. China: it turned communist because of internal tension (warlordism, KMT failure, land inequality) AND Japanese aggression, both causes are required. The Great Leap Forward shows what communist state control of the economy looks like at catastrophic scale: collectivization, backyard steel furnaces, inflated production reporting, grain extraction based on fake numbers, and a famine that killed tens of millions. Redistribution: movements in Vietnam (revolutionary), Ethiopia (military junta), Kerala/India (democratic election), and Iran (monarchical decree) show four different causes and four different effects, use the comparison to show the range, not just to list the cases.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -694,7 +694,7 @@ module.exports = {
       "Continuity and Change Over Time"
     ],
     "supportCards": {
-      "beforeYouRead": "Track three threads as you read: (1) the strategies nationalist leaders used, what made them effective in their specific colonial context; (2) what conditions pushed a colony toward negotiated independence vs. armed struggle; (3) how inherited colonial boundaries produced conflicts that outlasted colonial rule. AP LO F asks you to compare these processes, so focus on what made paths similar and different, not just on memorizing case names.",
+      "beforeYouRead": "Track three threads as you read: (1) the strategies nationalist leaders used, what made them effective in their specific colonial context; (2) what conditions pushed a colony toward negotiated independence vs. armed struggle; (3) how inherited colonial boundaries produced conflicts that outlasted colonial rule. The learning objective asks you to compare these processes, so focus on what made paths similar and different, not just on memorizing case names.",
       "readingTarget": "By the end, you should be able to: explain the strategy of at least two CED nationalist leaders/parties; compare at least one negotiated-independence case with one armed-struggle case, explaining one factor that accounts for the difference; and explain how at least one regional, religious, or ethnic movement challenged inherited imperial boundaries."
     },
     "vocabulary": [
@@ -743,7 +743,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Comparison",
-          "raw": "<p>All four CED examples involve nationalist leaders seeking independence, but their strategies differ significantly. <strong>The INC and CPP used nonviolent mass mobilization; Ho Chi Minh used armed resistance; Nasser used state power and economic nationalization. AP LO F asks you to compare processes, so the comparison question is not just who succeeded, but why each chose the strategy they did, and what conditions made each strategy work (or fail to work) in its specific context.</strong></p>"
+          "raw": "<p>All four CED examples involve nationalist leaders seeking independence, but their strategies differ significantly. <strong>The INC and CPP used nonviolent mass mobilization; Ho Chi Minh used armed resistance; Nasser used state power and economic nationalization. The learning objective asks you to compare processes, so the comparison question is not just who succeeded, but why each chose the strategy they did, and what conditions made each strategy work (or fail to work) in its specific context.</strong></p>"
         }
       },
       {
@@ -801,7 +801,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "Three things to carry forward from this reading. First, nationalist leaders used different strategies, nonviolent mass mobilization (Gandhi, Nkrumah), armed resistance (Ho Chi Minh), state power and economic nationalism (Nasser), each calibrated to its specific colonial context. Second, the key comparison for AP LO F: negotiated independence happened where the colonial power calculated withdrawal was less costly than occupation; armed struggle happened where the stakes were too high to negotiate, especially settler presence, metropole politics, and Cold War framing. Third, inherited imperial boundaries were the fault lines of postcolonial conflict: Partition, Québec, Biafra, three very different cases, one structural cause: colonizers drew borders for themselves, and the people who lived inside them were left with those borders when empire ended.",
+    "takeaway": "Three things to carry forward from this reading. First, nationalist leaders used different strategies, nonviolent mass mobilization (Gandhi, Nkrumah), armed resistance (Ho Chi Minh), state power and economic nationalism (Nasser), each calibrated to its specific colonial context. Second, the key comparison the learning objective asks for: negotiated independence happened where the colonial power calculated withdrawal was less costly than occupation; armed struggle happened where the stakes were too high to negotiate, especially settler presence, metropole politics, and Cold War framing. Third, inherited imperial boundaries were the fault lines of postcolonial conflict: Partition, Québec, Biafra, three very different cases, one structural cause: colonizers drew borders for themselves, and the people who lived inside them were left with those borders when empire ended.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -862,7 +862,7 @@ module.exports = {
       "Continuity and Change Over Time"
     ],
     "supportCards": {
-      "beforeYouRead": "Track two threads as you read: (1) the political thread, how colonial withdrawal produced new states, and why those new states' boundaries generated conflict and displacement; and (2) the economic thread, what changed (who controls the economy) and what continued (migration ties, trade dependencies) after formal independence. AP LO G and LO H are both active here, you need both threads to answer the checkpoint questions.",
+      "beforeYouRead": "Track two threads as you read: (1) the political thread, how colonial withdrawal produced new states, and why those new states' boundaries generated conflict and displacement; and (2) the economic thread, what changed (who controls the economy) and what continued (migration ties, trade dependencies) after formal independence. Both of this topic's learning objectives are active here, one on the political changes that led to territorial, demographic, and nationalist developments, the other on the economic changes and continuities that followed decolonization. You need both threads to answer the checkpoint questions.",
       "readingTarget": "By the end, you should be able to: explain how boundary redrawing created at least two of the three CED new states (Israel, Cambodia, Pakistan); explain the conflict and displacement resulting from the Partition of India or creation of Israel; and explain at least two CED examples of governments guiding economic life plus at least one migration continuity example."
     },
     "vocabulary": [
@@ -970,7 +970,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p>LO H asks for both economic changes AND continuities. <strong>What changed: who controls the economy. Newly independent governments nationalized key industries and directed economic development, replacing colonial firms with state-owned enterprises and ending the automatic preference for metropolitan interests. What continued: migration corridors and trade dependencies. Former colonial subjects moved to the metropole's cities, sending remittances home; trade patterns often still ran through the former colonizer. Economic independence was harder to achieve than political independence, the structures of the colonial economy persisted even after the colonial flag came down.</strong></p>"
+          "raw": "<p>The learning objective asks for both economic changes AND continuities. <strong>What changed: who controls the economy. Newly independent governments nationalized key industries and directed economic development, replacing colonial firms with state-owned enterprises and ending the automatic preference for metropolitan interests. What continued: migration corridors and trade dependencies. Former colonial subjects moved to the metropole's cities, sending remittances home; trade patterns often still ran through the former colonizer. Economic independence was harder to achieve than political independence, the structures of the colonial economy persisted even after the colonial flag came down.</strong></p>"
         }
       }
     ],
@@ -1240,7 +1240,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>The mechanism matters for AP credit. \"The U.S. had a strong military\" is a fact. \"U.S. technological development, specifically SDI and the shift toward microelectronics, created pressure the Soviet economy could not match because Soviet industrial capacity was strongest in heavy manufacturing and weakest in computing, so the arms race moved into terrain where the Soviets were structurally outmatched\" is a causal explanation. LO J asks you to explain causes, which means explaining mechanisms, not just listing events.</strong></p>"
+          "raw": "<p><strong>The mechanism matters for AP credit. \"The U.S. had a strong military\" is a fact. \"U.S. technological development, specifically SDI and the shift toward microelectronics, created pressure the Soviet economy could not match because Soviet industrial capacity was strongest in heavy manufacturing and weakest in computing, so the arms race moved into terrain where the Soviets were structurally outmatched\" is a causal explanation. The learning objective asks you to explain the causes of the end of the Cold War, which means explaining mechanisms, not just listing events.</strong></p>"
         }
       },
       {
@@ -1294,7 +1294,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change Over Time",
-          "raw": "<p><strong>The Soviet economic crisis was not new in 1985, the structural problems had been building since at least the 1970s. What changed was Gorbachev's decision to respond with reform rather than repression. CCOT for LO J: the continuity was chronic economic weakness; the change was glasnost releasing the public discontent that weakness had been generating for decades. The 1989 revolutions and the 1991 dissolution were not sudden, they were the accumulated result of structural weakness intersecting with a reform response that released pressures the system could not absorb.</strong></p>"
+          "raw": "<p><strong>The Soviet economic crisis was not new in 1985, the structural problems had been building since at least the 1970s. What changed was Gorbachev's decision to respond with reform rather than repression. CCOT for the end of the Cold War: the continuity was chronic economic weakness; the change was glasnost releasing the public discontent that weakness had been generating for decades. The 1989 revolutions and the 1991 dissolution were not sudden, they were the accumulated result of structural weakness intersecting with a reform response that released pressures the system could not absorb.</strong></p>"
         }
       }
     ],
@@ -1360,12 +1360,12 @@ module.exports = {
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "LO K asks you to evaluate the <em>extent</em> to which Cold War effects were <em>similar</em> across hemispheres. This means you need two things: a catalog of effects across both hemispheres (what the Hemispheric Effects Matrix will give you), and a degree claim (were effects <em>largely</em> similar, <em>largely</em> different, or <em>mixed</em>?). As you read, track which hemisphere each effect falls in, and start forming a hypothesis about the dominant pattern.",
+      "beforeYouRead": "The learning objective asks you to evaluate the <em>extent</em> to which Cold War effects were <em>similar</em> across hemispheres. This means you need two things: a catalog of effects across both hemispheres (what the Hemispheric Effects Matrix will give you), and a degree claim (were effects <em>largely</em> similar, <em>largely</em> different, or <em>mixed</em>?). As you read, track which hemisphere each effect falls in, and start forming a hypothesis about the dominant pattern.",
       "readingTarget": "By the end, you should be able to: name the four effect categories from KC-6.2.IV.C (economic, political, social, cultural) and give at least one example per category for each hemisphere; explain why Cold War competition had global effects rather than staying in postwar Europe; and draft a preliminary claim about the extent of similarity, what pattern dominates your evidence?"
     },
     "vocabulary": [
       "KC-6.2.IV.C",
-      "LO K",
+      "Hemispheric Comparison",
       "Eastern Hemisphere",
       "Western Hemisphere",
       "Evaluate the Extent",
@@ -1398,7 +1398,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation and Comparison",
-          "raw": "<p><strong>The four effect categories (KC-6.2.IV.C) are your analytical framework for LO K. Before you can evaluate the \"extent\" of similarity, you need to populate the matrix with specific evidence in each category for each hemisphere. A pattern that holds across all four categories points toward \"largely similar.\" A pattern that diverges sharply in two or more categories points toward \"mixed\" or \"largely different.\" Your thesis will name which pattern dominates your evidence.</strong></p>"
+          "raw": "<p><strong>The four effect categories (KC-6.2.IV.C) are your analytical framework for the learning objective. Before you can evaluate the \"extent\" of similarity, you need to populate the matrix with specific evidence in each category for each hemisphere. A pattern that holds across all four categories points toward \"largely similar.\" A pattern that diverges sharply in two or more categories points toward \"mixed\" or \"largely different.\" Your thesis will name which pattern dominates your evidence.</strong></p>"
         }
       },
       {
@@ -1452,7 +1452,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "The Cold War shaped every corner of the world, but not always in the same way. KC-6.2.IV.C's four categories (economic, political, social, cultural) give you the framework. LO K asks you to evaluate how much overlap there was. Your thesis needs a degree claim: \"to a great extent,\" \"to a moderate extent,\" or \"to a limited extent.\" The matrix builds your evidence. The thesis commits to your interpretation of it.",
+    "takeaway": "The Cold War shaped every corner of the world, but not always in the same way. KC-6.2.IV.C's four categories (economic, political, social, cultural) give you the framework. The learning objective asks you to evaluate how much overlap there was. Your thesis needs a degree claim: \"to a great extent,\" \"to a moderate extent,\" or \"to a limited extent.\" The matrix builds your evidence. The thesis commits to your interpretation of it.",
     "checkBadge": "Comprehension Check",
     "checkTitle": "Three Questions, Answer Before Moving On",
     "questions": [
