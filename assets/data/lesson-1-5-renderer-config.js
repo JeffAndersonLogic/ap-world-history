@@ -27,6 +27,29 @@
     }
   ];
 
+  lesson.lecture = lesson.lecture || {};
+  const existingVideos = lesson.lecture.videos || [];
+  const videoAdditions = [
+    {
+      title: 'Great Zimbabwe, Zimbabwe | Africa’s Cultural Landmarks',
+      url: 'https://youtu.be/G-6uKth3JQ0',
+      youtubeId: 'G-6uKth3JQ0',
+      previewImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great-Zimbabwe-2.jpg',
+      prompt: 'Watch for how Great Zimbabwe’s stone architecture, control of resources, and trade connections reveal organized state power.'
+    },
+    {
+      title: 'Inside Lalibela, the Mysterious Holy Site Visited by Ethiopian Christians',
+      url: 'https://youtu.be/excYNB26fhs',
+      youtubeId: 'excYNB26fhs',
+      previewImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bete_Giyorgis_Lalibela.jpg',
+      prompt: 'Watch for how Lalibela’s rock-hewn churches connect Christianity, monumental construction, and political legitimacy in medieval Ethiopia.'
+    }
+  ];
+  lesson.lecture.videos = [
+    ...existingVideos,
+    ...videoAdditions.filter(video => !existingVideos.some(existing => existing.youtubeId === video.youtubeId))
+  ];
+
   lesson.evidenceLab = {
     title: 'Evidence Lab: Three African Paths to State Power',
     task: 'Compare evidence from at least TWO African states. Separate observation from inference: first identify what the object, building, or map actually shows; then explain what it suggests about labor, trade, religion, geography, or political authority. Do not assume every African state built power in the same way.',
