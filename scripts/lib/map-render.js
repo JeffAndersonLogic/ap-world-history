@@ -196,20 +196,34 @@ function renderMap(spec) {
   }).join('\n    ');
 
   const highlightLayer = highlights.map((h) => {
-    const [lon, lat, , rLat] = zone(h.zone);
-    const [cx] = project(lon, lat);
+    const [lon, lat, rLon, rLat] = zone(h.zone);
+    const [cx, cy] = project(lon, lat);
     const [, edge] = project(lon, lat - rLat);
     const palette = tone(h.tone);
     const shape = ellipse(h.zone, h.tone, h.opacity == null ? 0.5 : h.opacity);
     if (!h.label) return shape;
     const labelLines = wrap(h.label, 16);
     const width = Math.max(...labelLines.map((line) => line.length)) * 13 + 12;
-    const baseline = placer.place(cx, Math.min(edge + 26, HEIGHT - 150), width, labelLines.length * 25);
+    let labelX = cx;
+    let labelY = Math.min(edge + 26, HEIGHT - 150);
+    let anchor = 'middle';
+    if (h.labelSide === 'right') {
+      [labelX] = project(lon + rLon, lat);
+      labelX += 18;
+      labelY = cy + 7;
+      anchor = 'start';
+    } else if (h.labelSide === 'left') {
+      [labelX] = project(lon - rLon, lat);
+      labelX -= 18;
+      labelY = cy + 7;
+      anchor = 'end';
+    }
+    const baseline = placer.place(labelX, labelY, width, labelLines.length * 25, anchor);
     const label = labelLines
-      .map((line, index) => `<tspan x="${cx.toFixed(1)}" dy="${index === 0 ? 0 : 25}">${esc(line)}</tspan>`)
+      .map((line, index) => `<tspan x="${labelX.toFixed(1)}" dy="${index === 0 ? 0 : 25}">${esc(line)}</tspan>`)
       .join('');
     return `${shape}
-    <text class="region halo" x="${cx.toFixed(1)}" y="${baseline.toFixed(1)}" text-anchor="middle" fill="${palette.text}">${label}</text>`;
+    <text class="region halo" x="${labelX.toFixed(1)}" y="${baseline.toFixed(1)}" text-anchor="${anchor}" fill="${palette.text}">${label}</text>`;
   }).join('\n    ');
 
   const flowLayer = flows.map((f, index) => {

@@ -71,7 +71,7 @@
     <ellipse cx="973.3" cy="450.0" rx="22.2" ry="27.8" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
     <text class="region halo" x="973.3" y="479.8" text-anchor="middle" fill="#1A1C1D"><tspan x="973.3" dy="0">ETHIOPIA</tspan></text>
     <ellipse cx="977.8" cy="544.4" rx="17.8" ry="55.6" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="977.8" y="650.0" text-anchor="middle" fill="#1A1C1D"><tspan x="977.8" dy="0">SWAHILI COAST</tspan></text>
+    <text class="region halo" x="1013.6" y="551.4" text-anchor="start" fill="#1A1C1D"><tspan x="1013.6" dy="0">SWAHILI COAST</tspan></text>
     <ellipse cx="911.1" cy="638.9" rx="53.3" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
     <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">GREAT ZIMBABWE</tspan></text>
   </g>
@@ -80,8 +80,8 @@
     <circle class="badge" cx="829.7" cy="326.9" r="17"/>
     <text class="badgenum" x="829.7" y="333.9" text-anchor="middle">1</text>
     <path class="flow" d="M911.1,638.9 Q972.8,611.7 977.8,544.4" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="958.6" cy="745.7" r="17"/>
-    <text class="badgenum" x="958.6" y="752.7" text-anchor="middle">2</text>
+    <circle class="badge" cx="958.6" cy="601.7" r="17"/>
+    <text class="badgenum" x="958.6" y="608.7" text-anchor="middle">2</text>
     <path class="flow" d="M977.8,544.4 Q1092.2,491.5 1146.7,377.8" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="1077.2" cy="476.3" r="17"/>
     <text class="badgenum" x="1077.2" y="483.3" text-anchor="middle">3</text>

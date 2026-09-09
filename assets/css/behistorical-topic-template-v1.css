@@ -184,3 +184,122 @@
   object-fit: cover;
   background: var(--charcoal-steel);
 }
+
+/* AP Practice Lab, Units 1 and 2 */
+.ap-alignment {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 12px;
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  border: 1px solid rgba(107, 62, 31, .18);
+  border-radius: 999px;
+  background: #f6efe3;
+  color: var(--ink);
+  font-size: .9rem;
+}
+
+.ap-alignment strong {
+  color: var(--oxidized-brown);
+  font-family: "Montserrat", Inter, Arial, sans-serif;
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.ap-quality-check {
+  margin-top: 16px;
+  padding: 16px 18px;
+  border-left: 6px solid var(--aged-iron);
+  border-radius: 14px;
+  background: #f6efe3;
+}
+
+.ap-quality-check h4 {
+  margin: 0 0 8px;
+  color: var(--oxidized-brown);
+  font-family: "Montserrat", Inter, Arial, sans-serif;
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.ap-quality-check ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.evidence-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 18px 0;
+}
+
+.evidence-entry {
+  border-left: 6px solid var(--aged-iron);
+}
+
+.evidence-entry h3 {
+  margin-top: 6px;
+}
+
+.source-attribution {
+  margin: 12px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(26, 28, 29, .14);
+  font-size: .88rem;
+}
+
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin-top: 10px;
+  font-size: .84rem;
+}
+
+.source-links strong {
+  color: var(--oxidized-brown);
+  font-family: "Montserrat", Inter, Arial, sans-serif;
+  font-size: .7rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.source-links a {
+  color: var(--aged-iron);
+  font-weight: 800;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.source-links a::after {
+  content: " ↗";
+}
+
+.source-integrity {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-left: 5px solid var(--burnished-bronze);
+  border-radius: 12px;
+  background: #f6efe3;
+  font-size: .9rem;
+}
+
+.source-integrity strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--oxidized-brown);
+  font-family: "Montserrat", Inter, Arial, sans-serif;
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .evidence-entry-grid { grid-template-columns: 1fr; }
+  .ap-alignment { border-radius: 14px; }
+}

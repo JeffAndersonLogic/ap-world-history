@@ -105,7 +105,7 @@ Strong answer checklist: My first sentence states a defensible claim that direct
 
 **Expected evidence terms.** bureaucracy, civil service exams, scholar-officials, Confucianism, Neo-Confucianism, Mandate of Heaven, Buddhism, Champa rice, Grand Canal, paper money, commercialization, urbanization, printing, Indian Ocean trade networks, Silk Road connections.
 
-**AP skill focus.** Contextualization practice.
+**AP skill focus.** Contextualization (Skill 4.A) and Continuity and Change.
 
 **Checkpoint 1 prompt.** Explain how Song China used Confucianism, imperial bureaucracy, and/or civil service exams to maintain and justify rule.
 Strong answer checklist: Name at least one governing institution. Name at least one belief system or political idea. Explain how the institution or belief helped rulers maintain order, legitimacy, or control.
@@ -125,7 +125,7 @@ Strong answer checklist: Use one cultural example. Use one economic or technolog
 
 **Expected evidence terms.** Abbasid Caliphate, fragmentation, Seljuk Empire, Mamluk Sultanate, Delhi Sultanate, Turkic peoples, legitimacy, merchants, missionaries, Sufis, Indian Ocean, House of Wisdom, translation, paper-making, mathematics, medicine, astronomy, Nasir al-Din al-Tusi.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Developments and Processes (Skill 1.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how the fragmentation of the Abbasid Caliphate led to the rise of new Islamic states. Use at least two specific examples.
 Strong answer checklist: Explain WHY the Abbasid Caliphate fragmented. Name at least two new Islamic states as evidence. Explain what changed and what continued in terms of Islamic political authority.
@@ -143,7 +143,7 @@ Strong answer checklist: Explain how each agent (merchants, Sufis, scholars) con
 
 **Expected evidence terms.** Delhi Sultanate, Vijayanagara, Khmer Empire, Angkor Wat, Hinduism, Buddhism, Islam, Bhakti, Sufism, temples, devaraja, Indian Ocean, monsoon winds, merchants, Srivijaya, Majapahit, Strait of Malacca, ports, trade routes, maritime.
 
-**AP skill focus.** CCOT practice, belief systems and state power.
+**AP skill focus.** Claims and Evidence in Sources (Skill 3.A) and Comparison.
 
 **Checkpoint 1 prompt.** Explain how rulers in South or Southeast Asia used religion or monumental architecture to strengthen political authority between c. 1200 and c. 1450.
 Strong answer checklist: Name a specific belief system, Hinduism, Buddhism, or Islam. Use at least one South or Southeast Asian state as evidence. Explain HOW belief shaped society or legitimized state power, not just what happened.
@@ -160,7 +160,7 @@ Strong answer checklist: Name a trade network or maritime state, Srivijaya or Ma
 
 **Expected evidence terms.** Maya city-states, Mexica, Inca, Chaco, Mesa Verde, Cahokia, state systems, evidence, continuity, innovation, diversity, expanded in scope and reach.
 
-**AP skill focus.** Claims and evidence practice.
+**AP skill focus.** Claims and Evidence in Sources (Skill 3.B) and Continuity and Change.
 
 **Checkpoint 1 prompt.** Identify one specific piece of evidence about a state system in the Americas and explain how it supports an argument about state building.
 Strong answer checklist: Name one American state system. Identify specific evidence. Explain how the evidence supports an argument.
@@ -177,7 +177,7 @@ Strong answer checklist: Use KC-3.2.I.D.i language. Use one specific illustrativ
 
 **Expected evidence terms.** Great Zimbabwe, stone enclosures, gold trade, Swahili Coast, Ethiopia, Solomonic dynasty, Lalibela, Hausa kingdoms, trans-Saharan trade, Islam, Sarki, continuity, change, trade routes, Christianity, KC-3.2.I.D.ii, Indian Ocean trade.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Developments and Processes (Skill 1.B) and Continuity and Change.
 
 **Checkpoint 1 prompt.** Choose one: Great Zimbabwe, Ethiopia, or a Hausa kingdom. Explain how it used trade, religion, or architecture to build and maintain state power from c. 1200 to c. 1450.
 Strong answer checklist: Name the specific state you are explaining. Use at least two specific pieces of evidence. Explain how, not just what, the state did to build power.
@@ -196,7 +196,7 @@ Strong answer checklist: Use at least two specific African examples. Explain bot
 
 **Expected evidence terms.** feudalism, vassals, nobles, kings, decentralization, land, military service, Roman Catholic Church, pope, cathedrals, monasteries, towns, guilds, universities, trade.
 
-**AP skill focus.** Comparison practice.
+**AP skill focus.** Developments and Processes (Skill 1.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how feudalism or the power of nobles contributed to political fragmentation in medieval Europe.
 Strong answer checklist: Identify feudalism or nobles. Explain fragmentation. Use evidence and reasoning.
@@ -218,7 +218,7 @@ Strong answer checklist: Explain the Church’s role. Use one change over time e
 
 **Expected evidence terms.** Song China, Dar al-Islam, Mali, Europe, Inca, Mexica, religion, bureaucracy, trade, tribute, similarity, difference, because, evidence, state building, belief systems, labor.
 
-**AP skill focus.** Comparison writing.
+**AP skill focus.** Argumentation (Skill 6.A) and Comparison.
 
 **Checkpoint 1 prompt.** Choose two Unit 1 regions and explain one similarity in how they built or justified power.
 Strong answer checklist: Name two regions. Explain one similarity. Use evidence and explanation.
@@ -237,7 +237,7 @@ Strong answer checklist: Use two societies. Include similarity and difference. E
 
 **Expected evidence terms.** caravanserai, pastoral nomads, relay stations, merchants, luxury goods, state-building, silk, porcelain, spices, paper, gunpowder, Buddhism, Islam, plague, Black Death, diffusion.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Contextualization (Skill 4.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain two causes of growth in Silk Road exchange. Use specific evidence such as state support, pastoral nomads, or caravanserais.
 Strong answer checklist: Name at least two factors that enabled Silk Road trade. Explain how each factor supported long-distance exchange. Connect your evidence to the broader pattern of Afro-Eurasian connectivity.
@@ -256,7 +256,7 @@ Strong answer checklist: Identify at least two distinct effects. Use specific ev
 
 **Expected evidence terms.** Genghis Khan, khanate, Pax Mongolica, Yam, siege warfare, cavalry, religious tolerance, trade, diplomacy, plague, Black Death, Marco Polo, Ibn Battuta, connectivity.
 
-**AP skill focus.** Continuity and Change practice.
+**AP skill focus.** Making Connections (Skill 5.A) and Continuity and Change.
 
 **Checkpoint 1 prompt.** Explain how the Mongols conquered and administered their vast empire. Use specific evidence such as military tactics, the khanate system, or religious tolerance.
 Strong answer checklist: Describe at least one military method. Describe at least one administrative method. Explain how these methods helped hold together a vast, diverse empire.
@@ -278,7 +278,7 @@ Strong answer checklist: Name at least two distinct effects. Explain whether eac
 
 **Expected evidence terms.** monsoon, dhow, compass, lateen sail, navigation, seasonal winds, spices, textiles, gold, ivory, diaspora, Islam, Kilwa, Calicut, Swahili, port city.
 
-**AP skill focus.** Contextualization practice.
+**AP skill focus.** Making Connections (Skill 5.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how maritime technology and knowledge of monsoon winds enabled Indian Ocean trade. Use at least two specific examples.
 Strong answer checklist: Name at least two pieces of technology or environmental knowledge. Explain how each enabled long-distance sea trade. Connect the technology to the broader pattern of Indian Ocean exchange.
@@ -297,7 +297,7 @@ Strong answer checklist: Name at least two effects. Use specific place names or 
 
 **Expected evidence terms.** camel, camel saddle, caravan, gold, salt, Taghaza, Wangara, oasis, Mali Empire, Mansa Musa, Timbuktu, Islam, hajj, mosque, scholarship.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Developments and Processes (Skill 1.B) and Causation.
 
 **Checkpoint 1 prompt.** Explain how camel technology and demand for specific goods made trans-Saharan trade possible. Use specific evidence.
 Strong answer checklist: Explain the role of camels or camel technology. Name the main goods traded and why each was valuable. Connect the technology and goods to why this trade route existed.
@@ -316,7 +316,7 @@ Strong answer checklist: Name at least two effects of trans-Saharan trade on Wes
 
 **Expected evidence terms.** Islam, Buddhism, Christianity, merchant, diaspora, mosque, diffusion, trade route, paper, printing, gunpowder, compass, cotton, sugar, citrus, technology transfer.
 
-**AP skill focus.** Continuity and Change practice.
+**AP skill focus.** Sourcing and Situation (Skill 2.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how one religion spread along trade networks between c. 1200 and c. 1450. Use specific evidence about where, how, and through whom it spread.
 Strong answer checklist: Name a specific religion. Explain the mechanism of spread, who carried it and along which routes. Describe where it spread and what effect it had on receiving societies.
@@ -333,7 +333,7 @@ Strong answer checklist: Name a specific technology or crop. Explain where it or
 
 **Expected evidence terms.** bubonic plague, Yersinia pestis, Black Death, rodents, fleas, Central Asia, Silk Roads, maritime routes, demographic collapse, labor shortage, feudalism, Church authority, mortality, population, ecological change.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Making Connections (Skill 5.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how trade routes enabled the spread of epidemic disease. Use specific evidence about the bubonic plague, its origins, and how it traveled.
 Strong answer checklist: Explain where plague originated. Explain the mechanism by which it spread along trade routes. Describe the geographic pattern of its spread.
@@ -354,7 +354,7 @@ Strong answer checklist: Name at least two distinct consequences. Explain how ea
 
 **Expected evidence terms.** similarity, luxury goods, religion, diaspora, connectivity, merchant community, cultural diffusion, difference, technology, geography, goods, camel, dhow, monsoon, silk, gold, spices.
 
-**AP skill focus.** Comparison practice.
+**AP skill focus.** Argumentation (Skill 6.B) and Comparison.
 
 **Checkpoint 1 prompt.** Identify two similarities between any two of the three main trade networks (Silk Roads, Indian Ocean, trans-Saharan). Use specific evidence for each similarity.
 Strong answer checklist: State each similarity directly and clearly. Use specific evidence from two different networks. Explain why the similarity reveals a broader pattern of Afro-Eurasian connectivity.

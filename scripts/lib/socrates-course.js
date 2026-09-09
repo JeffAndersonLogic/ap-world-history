@@ -43,6 +43,7 @@ const { buildCoachPrompt, unitPeriod } = require('../../assets/js/behistorical-c
 const ROOT = path.join(__dirname, '..', '..');
 const DATA = path.join(ROOT, 'assets', 'data');
 const FOUND = path.join(ROOT, 'foundations');
+const AP_PRACTICE = path.join(DATA, 'ap-practice-units-1-2.js');
 
 const problems = [];
 const problem = m => problems.push(m);
@@ -92,6 +93,7 @@ function unitTopics() {
       const cfg = path.join(DATA, `lesson-${m[1]}-${m[2]}-renderer-config.js`);
       if (fs.existsSync(cfg)) runFile(ctx, cfg);
       else problem(`${base}: no renderer config, so its checkpoints are missing`);
+      if (fs.existsSync(AP_PRACTICE)) runFile(ctx, AP_PRACTICE);
       const addon = path.join(DATA, `lesson-${m[1]}-${m[2]}-standards-addon.js`);
       if (fs.existsSync(addon)) runFile(ctx, addon);
     } catch (e) {

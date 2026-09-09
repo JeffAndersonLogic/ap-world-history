@@ -44,6 +44,7 @@ const SUITES = {
     ['scripts/test/readings-golden.js', '58 unit readings vs the hand-authored originals'],
     ['scripts/test/socrates-contract.test.js', 'AI coach kit reproducible, persona unit-agnostic'],
     ['scripts/test/readings-parse.test.js', '77 reading script blocks are valid JavaScript'],
+    ['scripts/test/ap-practice-units12.test.js', 'Units 1-2 AP practice rigor and CED alignment'],
     ['scripts/check-style.js', 'American English, date form, note labels'],
     ['scripts/test/image-check-throttle.test.js', 'rate limiting is not reported as a broken image'],
     ['scripts/test/evidence-image-surgery.test.js', 'Module 07 image candidates splice the right bytes'],

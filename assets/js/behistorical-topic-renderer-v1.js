@@ -1025,11 +1025,17 @@ function renderSkill() {
   return `
     <article class="card">
       <h3>${s.title}</h3>
+      ${s.label ? `<div class="ap-alignment"><strong>AP alignment</strong>${s.label}</div>` : ''}
       <p>${s.intro}</p>
       <div class="skill-steps">
         ${(s.steps || []).map(step => `<div class="skill-step"><strong>${step.label}</strong>${step.text}</div>`).join('')}
       </div>
       <div class="question"><strong>Skill Practice</strong><br>${s.prompt}</div>
+      ${(s.criteria || []).length ? `
+        <div class="ap-quality-check">
+          <h4>Before You Submit</h4>
+          <ul>${s.criteria.map(item => `<li>${item}</li>`).join('')}</ul>
+        </div>` : ''}
     </article>
     ${draftBlock('skill-builder-response', s.prompt, 'AP Skill Builder')}`;
 }
@@ -1223,10 +1229,14 @@ function evidenceSourceLink(img) {
 }
 
 function renderEvidence() {
+  const lab = L.evidenceLab || {};
+  const images = L.images || [];
+  const entries = lab.items || [];
   return `
-    <div class="component-note"><strong>${L.evidenceLab.title}</strong><br>${L.evidenceLab.task}</div>
-    <div class="pop-grid">
-      ${(L.images || []).map((img, i) => `
+    <div class="component-note"><strong>${lab.title}</strong><br>${lab.task || lab.intro || ''}</div>
+    ${lab.skill ? `<div class="ap-alignment"><strong>AP alignment</strong>${lab.skill}</div>` : ''}
+    ${images.length ? `<div class="pop-grid">
+      ${images.map((img, i) => `
         <article class="card image-card pop-half">
           <img src="${evidenceImageUrl(i)}" alt="${img.title}" role="button" tabindex="0"
                aria-label="Enlarge image: ${img.title}"
@@ -1237,29 +1247,50 @@ function renderEvidence() {
             ${evidenceSourceLink(img)}
           </div>
         </article>`).join('')}
-    </div>
-    ${draftBlock('evidence-response', L.evidenceLab.prompt, 'Evidence Lab')}`;
+    </div>` : ''}
+    ${entries.length ? `<div class="evidence-entry-grid">
+      ${entries.map((entry, i) => `
+        <article class="card evidence-entry">
+          <div class="eyebrow">Evidence ${String.fromCharCode(65 + i)}</div>
+          <h3>${entry.title}</h3>
+          <p>${entry.detail}</p>
+        </article>`).join('')}
+    </div>` : ''}
+    ${(lab.criteria || []).length ? `
+      <div class="ap-quality-check">
+        <h4>Evidence Standard</h4>
+        <ul>${lab.criteria.map(item => `<li>${item}</li>`).join('')}</ul>
+      </div>` : ''}
+    ${draftBlock('evidence-response', lab.prompt, 'Evidence Lab')}`;
 }
 
 // ── Primary Source ────────────────────────────────────────────────────────────
 
 function renderPrimarySource() {
-  const attribution = L.primarySource.attribution;
+  const s = L.primarySource || {};
+  const responsePrompt = s.responsePrompt || (s.questions || []).join(' ');
+  const attribution = s.attribution;
   return `
+    ${s.skill ? `<div class="ap-alignment"><strong>AP alignment</strong>${s.skill}</div>` : ''}
     <div class="pop-grid">
       <article class="card pop-two-third">
-        <h3>${L.primarySource.title}</h3>
-        <p>${L.primarySource.intro}</p>
+        <h3>${s.title}</h3>
+        <p>${s.intro}</p>
         <p class="pq-doc-label">Document</p>
         ${attribution ? `<p class="pq-source-line"><em>Source: ${attribution}.</em></p>` : ''}
-        <blockquote>${L.primarySource.text}</blockquote>
+        <blockquote>${s.text}</blockquote>
+        ${(s.sourceLinks || []).length ? `<div class="source-links">
+          <strong>Trace the source</strong>
+          ${(s.sourceLinks || []).map(link => `<a href="${link.url}" target="_blank" rel="noopener noreferrer">${link.label}</a>`).join('')}
+        </div>` : ''}
+        ${s.sourceNote ? `<div class="source-integrity"><strong>How to read this source</strong>${s.sourceNote}</div>` : ''}
       </article>
       <aside class="card pop-third">
-        <h3>Discussion Questions</h3>
-        ${L.primarySource.questions.map((q, i) => `<div class="question"><strong>${i + 1}</strong><br>${q}</div>`).join('')}
+        <h3>AP Source Task</h3>
+        ${(s.questions || []).map(q => `<div class="question">${q}</div>`).join('')}
       </aside>
     </div>
-    ${draftBlock('primary-source-response', L.primarySource.questions.join(' '), 'Primary Source')}`;
+    ${draftBlock('primary-source-response', responsePrompt, 'Primary Source')}`;
 }
 
 // ── Shared response/draft blocks ──────────────────────────────────────────────

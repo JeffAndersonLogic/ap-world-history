@@ -52,6 +52,7 @@ const DATA = path.join(ROOT, 'assets/data');
 const FOUNDATIONS = path.join(ROOT, 'foundations');
 const UNIT_RENDERER = path.join(ROOT, 'assets/js/behistorical-topic-renderer-v1.js');
 const FOUNDATION_RENDERER = path.join(FOUNDATIONS, 'foundations-topic-renderer.js');
+const AP_PRACTICE = path.join(DATA, 'ap-practice-units-1-2.js');
 const OUT_PATH = path.join(DATA, 'skills-map.js');
 const SCHEMA = 1;
 
@@ -260,6 +261,7 @@ function buildUnitTopic(dataFile, workRows) {
     runFile(ctx, dataFile);
     if (fs.existsSync(cfgFile)) runFile(ctx, cfgFile);
     else problem(`${base}: no renderer config ${cfgName}, so skillBuilder and checkpoints are missing`);
+    if (fs.existsSync(AP_PRACTICE)) runFile(ctx, AP_PRACTICE);
   } catch (e) {
     problem(`${base}: failed to evaluate, ${e.message}`);
     return null;
@@ -300,10 +302,19 @@ function buildUnitTopic(dataFile, workRows) {
       skillFrom: 'skillBuilder.label'
     },
     'map-check-response': { prompt: L.map && L.map.prompt },
-    'evidence-response': { prompt: L.evidenceLab && L.evidenceLab.prompt },
+    'evidence-response': {
+      prompt: L.evidenceLab && L.evidenceLab.prompt,
+      skillRaw: L.evidenceLab && L.evidenceLab.skill,
+      skillFrom: 'evidenceLab.skill',
+      terms: L.evidenceLab && L.evidenceLab.terms,
+      criteria: L.evidenceLab && L.evidenceLab.criteria
+    },
     'primary-source-response': {
       prompt: L.primarySource && Array.isArray(L.primarySource.questions)
-        ? L.primarySource.questions.join(' ') : ''
+        ? (L.primarySource.responsePrompt || L.primarySource.questions.join(' ')) : '',
+      skillRaw: L.primarySource && L.primarySource.skill,
+      skillFrom: 'primarySource.skill',
+      terms: L.primarySource && L.primarySource.terms
     },
     'checkpoint-one-response': {
       prompt: cp[0] && cp[0].prompt, terms: cp[0] && cp[0].terms, criteria: cp[0] && cp[0].focus,

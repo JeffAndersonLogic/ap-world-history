@@ -27,7 +27,7 @@ wins. The block came from the lesson they are actually sitting in.
 
 **Expected evidence terms.** bureaucracy, civil service exams, scholar-officials, Confucianism, Neo-Confucianism, Mandate of Heaven, Buddhism, Champa rice, Grand Canal, paper money, commercialization, urbanization, printing, Indian Ocean trade networks, Silk Road connections.
 
-**AP skill focus.** Contextualization practice.
+**AP skill focus.** Contextualization (Skill 4.A) and Continuity and Change.
 
 **Checkpoint 1 prompt.** Explain how Song China used Confucianism, imperial bureaucracy, and/or civil service exams to maintain and justify rule.
 Strong answer checklist: Name at least one governing institution. Name at least one belief system or political idea. Explain how the institution or belief helped rulers maintain order, legitimacy, or control.
@@ -47,7 +47,7 @@ Strong answer checklist: Use one cultural example. Use one economic or technolog
 
 **Expected evidence terms.** Abbasid Caliphate, fragmentation, Seljuk Empire, Mamluk Sultanate, Delhi Sultanate, Turkic peoples, legitimacy, merchants, missionaries, Sufis, Indian Ocean, House of Wisdom, translation, paper-making, mathematics, medicine, astronomy, Nasir al-Din al-Tusi.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Developments and Processes (Skill 1.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how the fragmentation of the Abbasid Caliphate led to the rise of new Islamic states. Use at least two specific examples.
 Strong answer checklist: Explain WHY the Abbasid Caliphate fragmented. Name at least two new Islamic states as evidence. Explain what changed and what continued in terms of Islamic political authority.
@@ -65,7 +65,7 @@ Strong answer checklist: Explain how each agent (merchants, Sufis, scholars) con
 
 **Expected evidence terms.** Delhi Sultanate, Vijayanagara, Khmer Empire, Angkor Wat, Hinduism, Buddhism, Islam, Bhakti, Sufism, temples, devaraja, Indian Ocean, monsoon winds, merchants, Srivijaya, Majapahit, Strait of Malacca, ports, trade routes, maritime.
 
-**AP skill focus.** CCOT practice, belief systems and state power.
+**AP skill focus.** Claims and Evidence in Sources (Skill 3.A) and Comparison.
 
 **Checkpoint 1 prompt.** Explain how rulers in South or Southeast Asia used religion or monumental architecture to strengthen political authority between c. 1200 and c. 1450.
 Strong answer checklist: Name a specific belief system, Hinduism, Buddhism, or Islam. Use at least one South or Southeast Asian state as evidence. Explain HOW belief shaped society or legitimized state power, not just what happened.
@@ -82,7 +82,7 @@ Strong answer checklist: Name a trade network or maritime state, Srivijaya or Ma
 
 **Expected evidence terms.** Maya city-states, Mexica, Inca, Chaco, Mesa Verde, Cahokia, state systems, evidence, continuity, innovation, diversity, expanded in scope and reach.
 
-**AP skill focus.** Claims and evidence practice.
+**AP skill focus.** Claims and Evidence in Sources (Skill 3.B) and Continuity and Change.
 
 **Checkpoint 1 prompt.** Identify one specific piece of evidence about a state system in the Americas and explain how it supports an argument about state building.
 Strong answer checklist: Name one American state system. Identify specific evidence. Explain how the evidence supports an argument.
@@ -99,7 +99,7 @@ Strong answer checklist: Use KC-3.2.I.D.i language. Use one specific illustrativ
 
 **Expected evidence terms.** Great Zimbabwe, stone enclosures, gold trade, Swahili Coast, Ethiopia, Solomonic dynasty, Lalibela, Hausa kingdoms, trans-Saharan trade, Islam, Sarki, continuity, change, trade routes, Christianity, KC-3.2.I.D.ii, Indian Ocean trade.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Developments and Processes (Skill 1.B) and Continuity and Change.
 
 **Checkpoint 1 prompt.** Choose one: Great Zimbabwe, Ethiopia, or a Hausa kingdom. Explain how it used trade, religion, or architecture to build and maintain state power from c. 1200 to c. 1450.
 Strong answer checklist: Name the specific state you are explaining. Use at least two specific pieces of evidence. Explain how, not just what, the state did to build power.
@@ -118,7 +118,7 @@ Strong answer checklist: Use at least two specific African examples. Explain bot
 
 **Expected evidence terms.** feudalism, vassals, nobles, kings, decentralization, land, military service, Roman Catholic Church, pope, cathedrals, monasteries, towns, guilds, universities, trade.
 
-**AP skill focus.** Comparison practice.
+**AP skill focus.** Developments and Processes (Skill 1.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how feudalism or the power of nobles contributed to political fragmentation in medieval Europe.
 Strong answer checklist: Identify feudalism or nobles. Explain fragmentation. Use evidence and reasoning.
@@ -140,7 +140,7 @@ Strong answer checklist: Explain the Church’s role. Use one change over time e
 
 **Expected evidence terms.** Song China, Dar al-Islam, Mali, Europe, Inca, Mexica, religion, bureaucracy, trade, tribute, similarity, difference, because, evidence, state building, belief systems, labor.
 
-**AP skill focus.** Comparison writing.
+**AP skill focus.** Argumentation (Skill 6.A) and Comparison.
 
 **Checkpoint 1 prompt.** Choose two Unit 1 regions and explain one similarity in how they built or justified power.
 Strong answer checklist: Name two regions. Explain one similarity. Use evidence and explanation.

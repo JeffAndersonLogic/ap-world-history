@@ -150,11 +150,11 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    title: "The Mongol Empire and Its Khanates",
-    url: "../assets/images/instructional-maps/topic-2-2.svg",
-    sourceUrl: "../assets/images/instructional-maps/topic-2-2.svg",
-    caption: "The Mongol Empire at its height spanned from the Pacific coast of China to Eastern Europe, the largest contiguous land empire in history.",
-    intro: "Use the map context to trace the geographic scope of Mongol expansion and identify the four khanates that governed different regions after Genghis Khan's death.",
+    title: "Map of the Four Khanates of the Mongol Empire, c. 1300",
+    url: "https://www.worldhistory.org/uploads/images/20677.png?v=1763692145-1752588003",
+    sourceUrl: "https://www.worldhistory.org/image/20677/map-of-the-four-khanates-of-the-mongol-empire-c-13/",
+    caption: "Map by Simeon Netchev, World History Encyclopedia (2025), licensed CC BY-NC-ND 4.0. It shows the four Mongol successor khanates in the early 1300s.",
+    intro: "Use the map to locate the four successor khanates, compare the regions they governed, and trace the geographic reach of Mongol rule across Eurasia.",
     prompt: "How did the geography of the Eurasian steppe make Mongol expansion possible, and how did the sheer size of the empire create challenges for unified governance?",
     notes: [
       "The Mongol Empire stretched across steppe, desert, forest, and farmland, a diversity of environments that required flexible strategies for conquest and administration.",

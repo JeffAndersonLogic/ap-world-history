@@ -93,7 +93,7 @@ module.exports = [
     highlights: [
       { zone: 'westAfrica', label: 'MALI & HAUSA STATES', tone: 'gold', legend: 'West African states on trans-Saharan routes' },
       { zone: 'ethiopia', label: 'ETHIOPIA', tone: 'bronze', legend: 'Christian Ethiopian highlands' },
-      { zone: 'swahiliCoast', label: 'SWAHILI COAST', tone: 'sage', legend: 'Swahili city-states on the Indian Ocean' },
+      { zone: 'swahiliCoast', label: 'SWAHILI COAST', labelSide: 'right', tone: 'sage', legend: 'Swahili city-states on the Indian Ocean' },
       { zone: 'southernAfrica', label: 'GREAT ZIMBABWE', tone: 'sand', legend: 'Great Zimbabwe: interior gold plateau' }
     ],
     flows: [

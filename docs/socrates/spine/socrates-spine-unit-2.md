@@ -25,7 +25,7 @@ wins. The block came from the lesson they are actually sitting in.
 
 **Expected evidence terms.** caravanserai, pastoral nomads, relay stations, merchants, luxury goods, state-building, silk, porcelain, spices, paper, gunpowder, Buddhism, Islam, plague, Black Death, diffusion.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Contextualization (Skill 4.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain two causes of growth in Silk Road exchange. Use specific evidence such as state support, pastoral nomads, or caravanserais.
 Strong answer checklist: Name at least two factors that enabled Silk Road trade. Explain how each factor supported long-distance exchange. Connect your evidence to the broader pattern of Afro-Eurasian connectivity.
@@ -44,7 +44,7 @@ Strong answer checklist: Identify at least two distinct effects. Use specific ev
 
 **Expected evidence terms.** Genghis Khan, khanate, Pax Mongolica, Yam, siege warfare, cavalry, religious tolerance, trade, diplomacy, plague, Black Death, Marco Polo, Ibn Battuta, connectivity.
 
-**AP skill focus.** Continuity and Change practice.
+**AP skill focus.** Making Connections (Skill 5.A) and Continuity and Change.
 
 **Checkpoint 1 prompt.** Explain how the Mongols conquered and administered their vast empire. Use specific evidence such as military tactics, the khanate system, or religious tolerance.
 Strong answer checklist: Describe at least one military method. Describe at least one administrative method. Explain how these methods helped hold together a vast, diverse empire.
@@ -66,7 +66,7 @@ Strong answer checklist: Name at least two distinct effects. Explain whether eac
 
 **Expected evidence terms.** monsoon, dhow, compass, lateen sail, navigation, seasonal winds, spices, textiles, gold, ivory, diaspora, Islam, Kilwa, Calicut, Swahili, port city.
 
-**AP skill focus.** Contextualization practice.
+**AP skill focus.** Making Connections (Skill 5.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how maritime technology and knowledge of monsoon winds enabled Indian Ocean trade. Use at least two specific examples.
 Strong answer checklist: Name at least two pieces of technology or environmental knowledge. Explain how each enabled long-distance sea trade. Connect the technology to the broader pattern of Indian Ocean exchange.
@@ -85,7 +85,7 @@ Strong answer checklist: Name at least two effects. Use specific place names or 
 
 **Expected evidence terms.** camel, camel saddle, caravan, gold, salt, Taghaza, Wangara, oasis, Mali Empire, Mansa Musa, Timbuktu, Islam, hajj, mosque, scholarship.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Developments and Processes (Skill 1.B) and Causation.
 
 **Checkpoint 1 prompt.** Explain how camel technology and demand for specific goods made trans-Saharan trade possible. Use specific evidence.
 Strong answer checklist: Explain the role of camels or camel technology. Name the main goods traded and why each was valuable. Connect the technology and goods to why this trade route existed.
@@ -104,7 +104,7 @@ Strong answer checklist: Name at least two effects of trans-Saharan trade on Wes
 
 **Expected evidence terms.** Islam, Buddhism, Christianity, merchant, diaspora, mosque, diffusion, trade route, paper, printing, gunpowder, compass, cotton, sugar, citrus, technology transfer.
 
-**AP skill focus.** Continuity and Change practice.
+**AP skill focus.** Sourcing and Situation (Skill 2.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how one religion spread along trade networks between c. 1200 and c. 1450. Use specific evidence about where, how, and through whom it spread.
 Strong answer checklist: Name a specific religion. Explain the mechanism of spread, who carried it and along which routes. Describe where it spread and what effect it had on receiving societies.
@@ -121,7 +121,7 @@ Strong answer checklist: Name a specific technology or crop. Explain where it or
 
 **Expected evidence terms.** bubonic plague, Yersinia pestis, Black Death, rodents, fleas, Central Asia, Silk Roads, maritime routes, demographic collapse, labor shortage, feudalism, Church authority, mortality, population, ecological change.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Making Connections (Skill 5.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how trade routes enabled the spread of epidemic disease. Use specific evidence about the bubonic plague, its origins, and how it traveled.
 Strong answer checklist: Explain where plague originated. Explain the mechanism by which it spread along trade routes. Describe the geographic pattern of its spread.
@@ -142,7 +142,7 @@ Strong answer checklist: Name at least two distinct consequences. Explain how ea
 
 **Expected evidence terms.** similarity, luxury goods, religion, diaspora, connectivity, merchant community, cultural diffusion, difference, technology, geography, goods, camel, dhow, monsoon, silk, gold, spices.
 
-**AP skill focus.** Comparison practice.
+**AP skill focus.** Argumentation (Skill 6.B) and Comparison.
 
 **Checkpoint 1 prompt.** Identify two similarities between any two of the three main trade networks (Silk Roads, Indian Ocean, trans-Saharan). Use specific evidence for each similarity.
 Strong answer checklist: State each similarity directly and clearly. Use specific evidence from two different networks. Explain why the similarity reveals a broader pattern of Afro-Eurasian connectivity.
