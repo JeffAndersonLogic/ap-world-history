@@ -112,4 +112,60 @@ function foundationsModules() {
   return numbered(FOUNDATIONS_MODULES);
 }
 
-module.exports = { UNIT_MODULES, FOUNDATIONS_MODULES, unitModules, foundationsModules };
+
+/* =========================================================
+   WHICH OF THOSE MODULES THE ASSIGNMENT ACTUALLY REQUIRES
+
+   A topic runs ten cards and its Canvas assignment collects a
+   subset, so the schedule day carries a `modules` field naming
+   the numbers due. This resolves that field against the list
+   above, and it lives here rather than in either builder
+   because both the announcements board and the Canvas assignment
+   have to get the same answer. It was two copies of the same
+   filter until 2026-09-09.
+
+   'all' IS NOT THE SAME AS LEAVING THE FIELD OUT, and that
+   distinction is the reason this function exists.
+
+   A day with no field is UNDECLARED: nobody has said what its
+   assignment requires. The board falls back to listing every
+   module, which is the safe render, and the Canvas generator
+   refuses to emit an assignment at all, because an all-ten
+   assignment that should have asked for six looks finished and
+   is wrong.
+
+   `modules: 'all'` is a DECLARATION that the full load is
+   deliberate. F0 through F5, 1.1 and 1.2 really do assign every
+   module; reduction started at Topic 1.3. Those two states
+   render identically on the wall, so without a way to say
+   "all, on purpose" the schedule cannot tell a topic nobody has
+   audited from one that was audited and came back full.
+
+   'all' rather than a typed-out list of ten, for the same reason
+   the names come from the lesson: a literal ['01'...'10'] is a
+   second copy of the module list, it is wrong the moment a topic
+   runs nine (Topic 1.7 has no BeInTheRoom scenario, so it runs
+   nine), and nothing would report it.
+   ========================================================= */
+function requiredModules(runs, declared) {
+  const all = Array.isArray(runs) ? runs : [];
+
+  if (declared === undefined || declared === null || declared === '') {
+    return { modules: all, missing: [], declared: false };
+  }
+
+  if (typeof declared === 'string' && declared.trim().toLowerCase() === 'all') {
+    return { modules: all, missing: [], declared: true };
+  }
+
+  const wanted = (Array.isArray(declared) ? declared : [declared])
+    .map((m) => String(m).trim().padStart(2, '0'));
+
+  return {
+    modules: wanted.map((n) => all.find((m) => m.number === n)).filter(Boolean),
+    missing: wanted.filter((n) => !all.some((m) => m.number === n)),
+    declared: true
+  };
+}
+
+module.exports = { UNIT_MODULES, FOUNDATIONS_MODULES, unitModules, foundationsModules, requiredModules };

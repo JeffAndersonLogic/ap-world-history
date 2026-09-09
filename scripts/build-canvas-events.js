@@ -60,7 +60,7 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 const { cohort: lookupCohort } = require('./lib/cohorts.js');
-const { unitModules, foundationsModules } = require('./lib/module-list.js');
+const { unitModules, foundationsModules, requiredModules } = require('./lib/module-list.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'docs', 'canvas', 'calendar-events.md');
@@ -314,13 +314,38 @@ function deriveModuleDescs(data) {
   const out = {};
   const put = (num, text) => { const t = sentence(text); if (t) out[num] = t; };
 
-  if (data.first10 && data.first10.title) {
-    out['02'] = `<em>${esc(data.first10.title)}</em>, plus all three check questions inside the reading.`;
+  /* A UNIT topic and a FOUNDATIONS topic hold the same facts under different
+     names, because they are read by two different renderers: a unit lesson has
+     skillBuilder / checkpoints / evidenceLab / primarySource, a Foundations
+     topic has skill / checkpoint / evidence / aiCoach. Both are read here
+     rather than only the unit shape, which is why the six Foundations topics
+     used to come out with eight of their ten rows as bare module names. */
+
+  // 02, the reading. Foundations titles carry the label, units do not.
+  const first10 = data.first10 && data.first10.title;
+  if (first10) {
+    out['02'] = `<em>${esc(stripLabel(first10, 'First &amp; 10') || stripLabel(first10, 'First & 10'))}</em>, ` +
+      'plus all three check questions inside the reading.';
   }
-  if (data.beSurreal) put('04', stripLabel(data.beSurreal.title, 'BeSurreal'));
-  if (data.skillBuilder) put('05', stripLabel(data.skillBuilder.title, 'AP Skill Builder'));
-  if (data.evidenceLab) put('07', data.evidenceLab.task);
+
+  // 04. Foundations authors a real one-line desc; a unit topic has only a title.
+  if (data.beSurreal) put('04', data.beSurreal.desc || stripLabel(data.beSurreal.title, 'BeSurreal'));
+
+  // 05. Same, and the desc is the better sentence where it exists.
+  const skill = data.skillBuilder || data.skill;
+  if (skill) put('05', skill.desc || stripLabel(skill.title, 'AP Skill Builder'));
+
+  /* 07. The title, not the task. `task` is the module's full instructions and
+     runs to several sentences, which is a paragraph in a row built for a
+     clause. Neither Topic 1.5 nor 1.6 requires module 07, so this change moves
+     no byte of the two assignments already verified against Jeff's own. */
+  const evidence = data.evidenceLab || data.evidence;
+  if (evidence) put('07', stripLabel(evidence.title, 'Evidence Lab') || evidence.task);
+
+  // 08 is Primary Source on a unit topic and Reasoning Prompts on Foundations.
   if (data.primarySource) put('08', stripLabel(data.primarySource.title, 'Primary Source'));
+  else if (data.aiCoach) put('08', data.aiCoach.desc || stripLabel(data.aiCoach.title, 'Reasoning Prompts'));
+
   if (data.beInTheRoom) put('09', data.beInTheRoom.desc);
 
   /* Checkpoint 2 is module 09 on a topic with no BeInTheRoom field at all, so
@@ -331,6 +356,12 @@ function deriveModuleDescs(data) {
     put('06', checks[0].cardDesc);
     const last = checks[checks.length - 1];
     if (last !== checks[0]) put(data.beInTheRoom ? '10' : '09', last.cardDesc);
+  } else if (data.checkpoint) {
+    /* Foundations holds ONE checkpoint object, and the renderer uses it for
+       module 06 only: renderCheckpoint2 heads its card with the literal
+       "Synthesis Checkpoint" and carries no authored per-topic line, so module
+       10 is deliberately left to warn rather than be given 06's sentence. */
+    put('06', stripLabel(data.checkpoint.title, 'Exit Ticket'));
   }
   return out;
 }
@@ -612,8 +643,14 @@ function requiredCell(topic) {
     return out.join('\n');
   }
   const others = topic.modules.length - req.length;
+  /* A deliberate full load reads wrong as "only these ten": nothing is being
+     excluded, so nothing should sound excluded. F0 through F5, 1.1 and 1.2 are
+     full loads; reduction started at Topic 1.3. */
+  const lead = others > 0
+    ? `Only these ${countWord(req.length)} modules are required for ${esc(topic.heading.split(':')[0])}.`
+    : `All ${countWord(req.length)} modules are required for ${esc(topic.heading.split(':')[0])}.`;
   out.push(`                <p style="font-family: ${UI}; font-size: 13px; font-weight: bold; color: ${OXIDIZED}; margin: 0 0 10px 0;">` +
-    `Only these ${countWord(req.length)} modules are required for ${esc(topic.heading.split(':')[0])}.</p>`);
+    `${lead}</p>`);
   out.push(`                <ul style="margin: 0 0 0 18px; padding: 0; font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK};">`);
   req.forEach((m) => out.push(moduleLine(topic, m)));
   out.push('                </ul>');
@@ -637,7 +674,10 @@ function requiredCell(topic) {
    rather than in a note underneath it. */
 function submitCell(topic) {
   const n = topic.required.length;
-  const work = n ? `Work the ${countWord(n)} modules above in BeHistorical.` : 'Work the lesson in BeHistorical.';
+  const full = n && n === topic.modules.length;
+  const work = !n ? 'Work the lesson in BeHistorical.'
+    : full ? `Work all ${countWord(n)} modules above in BeHistorical.`
+    : `Work the ${countWord(n)} modules above in BeHistorical.`;
   return [
     `                <ol style="margin: 0 0 0 18px; padding: 0; font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK};">`,
     `                    <li style="margin: 0 0 8px 0;">${work} <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>`,
@@ -677,7 +717,9 @@ function buildAssignment(topic) {
     `<table style="border-collapse: collapse; width: 100%; border-color: ${RULE}; border-style: solid;" border="1" cellpadding="10">`,
     '    <tbody>',
     row('OVERVIEW', `                <p style="font-family: ${BODY}; font-size: 15px; line-height: 1.55; color: ${INK}; margin: 0;">${topic.assignmentOverview}</p>`),
-    row(`DO THESE ${countWord(topic.required.length).toUpperCase()}`, requiredCell(topic)),
+    row(topic.required.length === topic.modules.length
+      ? `DO ALL ${countWord(topic.required.length).toUpperCase()}`
+      : `DO THESE ${countWord(topic.required.length).toUpperCase()}`, requiredCell(topic)),
     row('LEARNING TARGETS', bulletList(topic.targets, topic.noTargetsMessage)),
     row('SUCCESS CRITERIA', bulletList(topic.criteria, topic.noCriteriaMessage)),
     row('HOW TO SUBMIT', submitCell(topic)),
@@ -745,17 +787,12 @@ function build() {
        be a second answer to "what is due", and the two surfaces could then
        name different work with every structural check still green. */
     const allModules = found ? found.modules : [];
-    let required = allModules;
-    if (entry.modules) {
-      const wanted = (Array.isArray(entry.modules) ? entry.modules : [entry.modules])
-        .map((m) => String(m).trim().padStart(2, '0'));
-      const missing = wanted.filter((n) => !allModules.some((m) => m.number === n));
-      if (missing.length) {
-        warn(`${entry.date} (${code}): module ${missing.join(', ')} is not in this ` +
-          `topic's module list. It runs ${allModules.map((m) => m.number).join(', ')}.`);
-      }
-      required = wanted.map((n) => allModules.find((m) => m.number === n)).filter(Boolean);
+    const req = requiredModules(allModules, entry.modules);
+    if (req.missing.length) {
+      warn(`${entry.date} (${code}): module ${req.missing.join(', ')} is not in this ` +
+        `topic's module list. It runs ${allModules.map((m) => m.number).join(', ')}.`);
     }
+    const required = req.modules;
 
     // Homework, built the same way the announcements builder builds it, so a
     // student reading Canvas and a student reading the projector see the
@@ -798,7 +835,7 @@ function build() {
       criteria,
       modules: allModules,
       required,
-      hasRequired: Boolean(entry.modules),
+      hasRequired: req.declared,
       moduleDescs: found ? found.moduleDescs : {},
       homework,
       due: homework.length ? due : '',
@@ -980,7 +1017,10 @@ function build() {
 
   /* ---- the assignment document ---- */
   const built = topics.filter((t) => t.hasRequired && t.required.length);
-  const pending = topics.filter((t) => !(t.hasRequired && t.required.length));
+  /* A day with no topic is an assessment or a flex day: no lesson, no module
+     cards, so no assignment to generate and nothing anyone needs to declare.
+     Listing it as pending would be a permanent row nobody can ever clear. */
+  const pending = topics.filter((t) => !(t.hasRequired && t.required.length) && t.modules.length);
 
   const asg = [];
   asg.push('# Canvas Assignment Bodies, Paste-Ready');

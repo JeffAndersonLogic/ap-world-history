@@ -89,8 +89,23 @@
                     only the dates, so two rooms with two lists
                     cannot be expressed as one object.
 
-                    Leave it out and the board lists all ten and no
-                    Canvas assignment is generated for that topic.
+                    modules: 'all' says the full load is DELIBERATE.
+                    F0 to F5, 1.1 and 1.2 really do assign every
+                    module; reduction started at Topic 1.3. Write
+                    'all' rather than listing ten numbers: a literal
+                    list is a second copy of the module list and is
+                    wrong the moment a topic runs nine, which Topic
+                    1.7 does, having no BeInTheRoom scenario.
+
+                    LEAVING IT OUT IS NOT THE SAME AS 'all'. No field
+                    means nobody has said yet. The board still lists
+                    every module, which is the safe render, but no
+                    Canvas assignment is generated, because an
+                    all-ten assignment that should have asked for six
+                    looks finished and is wrong. The two states look
+                    identical on the wall, so 'all' is how the
+                    schedule records that a topic was checked and came
+                    back full.
 
        homeworkDue  optional override, e.g. 'Friday'. Leave it out
                     and the builder uses this cohort's next meeting.
@@ -128,6 +143,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-08-06',
       cohort: 'green',
       topic: 'F0',
+      modules: 'all',
       homework: [
         'Complete your F0 responses and submit them in Canvas.',
         'Read Theme 1, page 18, in the eBook.'
@@ -137,6 +153,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-08-07',
       cohort: 'silver',
       topic: 'F0',
+      modules: 'all',
       homework: [
         'Complete your F0 responses and submit them in Canvas.',
         'Read Theme 1, page 18, in the eBook.'
@@ -148,6 +165,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-08-10',
       cohort: 'green',
       topic: 'F1',
+      modules: 'all',
       homework: [
         'Finish the Foundations 1 modules for Geography Shapes Civilization.',
         'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.'
@@ -157,6 +175,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-08-11',
       cohort: 'silver',
       topic: 'F1',
+      modules: 'all',
       homework: [
         'Finish the Foundations 1 modules for Geography Shapes Civilization.',
         'Read Theme 2, Cultural Developments and Interactions, pages 19 and 20, in the eBook.'
@@ -164,20 +183,20 @@ window.BEHISTORICAL_SCHEDULE = {
     },
 
     /* ---- Foundations 2 ---------------------------------- */
-    { date: '2026-08-12', cohort: 'green',  topic: 'F2', homework: '' },
-    { date: '2026-08-13', cohort: 'silver', topic: 'F2', homework: '' },
+    { date: '2026-08-12', cohort: 'green',  topic: 'F2', modules: 'all', homework: '' },
+    { date: '2026-08-13', cohort: 'silver', topic: 'F2', modules: 'all', homework: '' },
 
     /* ---- Foundations 3 ---------------------------------- */
-    { date: '2026-08-14', cohort: 'green',  topic: 'F3', homework: '' },
-    { date: '2026-08-17', cohort: 'silver', topic: 'F3', homework: '' },
+    { date: '2026-08-14', cohort: 'green',  topic: 'F3', modules: 'all', homework: '' },
+    { date: '2026-08-17', cohort: 'silver', topic: 'F3', modules: 'all', homework: '' },
 
     /* ---- Foundations 4 ---------------------------------- */
-    { date: '2026-08-18', cohort: 'green',  topic: 'F4', homework: '' },
-    { date: '2026-08-19', cohort: 'silver', topic: 'F4', homework: '' },
+    { date: '2026-08-18', cohort: 'green',  topic: 'F4', modules: 'all', homework: '' },
+    { date: '2026-08-19', cohort: 'silver', topic: 'F4', modules: 'all', homework: '' },
 
     /* ---- Foundations 5 ---------------------------------- */
-    { date: '2026-08-20', cohort: 'green',  topic: 'F5', homework: '' },
-    { date: '2026-08-21', cohort: 'silver', topic: 'F5', homework: '' },
+    { date: '2026-08-20', cohort: 'green',  topic: 'F5', modules: 'all', homework: '' },
+    { date: '2026-08-21', cohort: 'silver', topic: 'F5', modules: 'all', homework: '' },
 
     /* ---- Foundations Assessment ------------------------- */
     // The Topic 1.1 reading is assigned at the end of each cohort's own
@@ -223,6 +242,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-08-26',
       cohort: 'green',
       topic: '1.1',
+      modules: 'all',
       reading: {
         for: '1.2',
         where: 'ebook/unit-1.html',
@@ -239,6 +259,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-08-27',
       cohort: 'silver',
       topic: '1.1',
+      modules: 'all',
       reading: {
         for: '1.2',
         where: 'ebook/unit-1.html',
@@ -257,6 +278,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-08-28',
       cohort: 'green',
       topic: '1.2',
+      modules: 'all',
       homework: 'Finish BeInTheRoom, the scholars council, if it did not fit in the block.',
       reading: {
         for: '1.3',
@@ -274,6 +296,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-08-31',
       cohort: 'silver',
       topic: '1.2',
+      modules: 'all',
       homework: 'Finish BeInTheRoom, the scholars council, if it did not fit in the block.',
       reading: {
         for: '1.3',

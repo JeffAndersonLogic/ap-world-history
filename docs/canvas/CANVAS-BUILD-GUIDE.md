@@ -651,6 +651,15 @@ Canvas cannot name different work. Both cohorts must carry the same list,
 because Canvas has one assignment per topic and splits only the dates; a topic
 whose two days disagree fails `scripts/test/schedule-cohorts.test.js`.
 
+**`modules: 'all'` is a third state, and it is not the same as leaving the field
+out.** No field means undeclared: the board still lists everything, and no
+assignment is generated. `'all'` means the full load is deliberate, which is
+true of F0 through F5, 1.1 and 1.2; reduction started at Topic 1.3. Write
+`'all'` rather than ten numbers, because a literal list is a second copy of the
+module list and is wrong the moment a topic runs nine, which Topic 1.7 does. A
+full load prints as DO ALL TEN and "All ten modules are required", with no
+"the other N are not required" paragraph, because nothing is being excluded.
+
 **The failure this prevents already shipped.** No schedule day carried the
 field at all, so the board listed all ten modules while the Canvas assignment
 asked for six, and a student who correctly did the six saw four empty answers
@@ -663,20 +672,34 @@ just not the ones due.
 Each module's one-line description is read out of the lesson data, because it is
 the same sentence the module card on the page already carries:
 
-| Module | Field |
-|---|---|
-| 02 First & 10 Reading | `first10.title`, wrapped in `<em>`, plus a fixed tail |
-| 04 BeSurreal | `beSurreal.title`, minus its label prefix |
-| 05 AP Skill Builder | `skillBuilder.title`, minus its label prefix |
-| 06 Checkpoint 1 | `checkpoints[0].cardDesc` |
-| 07 Evidence Lab | `evidenceLab.task` |
-| 08 Primary Source | `primarySource.title`, minus its label prefix |
-| 09 BeInTheRoom | `beInTheRoom.desc` |
-| 10 Checkpoint 2 | the last checkpoint's `cardDesc` |
+**A unit topic and a Foundations topic hold the same facts under different
+names,** because two different renderers read them, so both shapes are read:
 
-Modules 01 and 03 have no such line. The map block carries a long intro and a
-discussion prompt, neither of which is a one-line description, and module 03 is
-a jump link with only a lecture title.
+| Module | Unit field | Foundations field |
+|---|---|---|
+| 02 First & 10 Reading | `first10.title` | `first10.title`, minus its label prefix |
+| 04 BeSurreal | `beSurreal.title`, minus prefix | `beSurreal.desc` |
+| 05 AP Skill Builder | `skillBuilder.title`, minus prefix | `skill.desc` |
+| 06 Checkpoint 1 | `checkpoints[0].cardDesc` | `checkpoint.title`, minus prefix |
+| 07 Evidence Lab | `evidenceLab.title`, minus prefix | `evidence.title`, minus prefix |
+| 08 | `primarySource.title`, minus prefix | `aiCoach.title`, minus prefix |
+| 09 BeInTheRoom | `beInTheRoom.desc` | absent on all six |
+| 10 Checkpoint 2 | the last checkpoint's `cardDesc` | none authored |
+
+Reading only the unit shape is why the six Foundations topics first came out
+with eight of their ten rows as bare module names.
+
+**Module 07 takes the title, not the task.** `task` is the module's full
+instructions and runs to several sentences, which is a paragraph in a row built
+for a clause.
+
+**Four rows have no authored one-liner anywhere and print as the bare module
+name, with a warning per topic.** Module 01, because the map block carries a
+long intro and a discussion prompt rather than a description; module 03, a jump
+link with only a lecture title; and on Foundations, module 09, which has no
+scenario at all, and module 10, whose card the renderer heads with the literal
+"Synthesis Checkpoint" and which carries no per-topic line. Those are left to
+warn rather than be given a neighbouring module's sentence.
 
 So those, **and any module whose Canvas wording differs from its card wording**,
 are authored in `MODULE_NOTES` in `scripts/build-canvas-events.js`, exactly the

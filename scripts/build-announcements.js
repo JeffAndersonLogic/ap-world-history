@@ -24,7 +24,7 @@
 const fs = require('fs');
 const path = require('path');
 const { COHORTS, cohort: lookupCohort, nextCohortKey } = require('./lib/cohorts.js');
-const { unitModules, foundationsModules } = require('./lib/module-list.js');
+const { unitModules, foundationsModules, requiredModules } = require('./lib/module-list.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'assets', 'data', 'announcements.js');
@@ -340,23 +340,18 @@ function main() {
       criteria = criteria.slice(0, MAX_ITEMS);
     }
 
-    /* The ten modules of the day, straight off the lesson the schedule names.
-       A short day can list the numbers it actually covers, and only the
-       numbers: the names still come from the lesson, so a module cannot be
-       renamed on the board and nowhere else. */
-    let modules = found ? found.modules : [];
-    if (entry.modules) {
-      const wanted = (Array.isArray(entry.modules) ? entry.modules : [entry.modules])
-        .map((m) => String(m).trim().padStart(2, '0'));
-      const missing = wanted.filter((n) => !modules.some((m) => m.number === n));
-      if (missing.length) {
-        const topicName = found ? `Topic ${found.key}` : `"${entry.topic}"`;
-        problems.push(`${entry.date}: module ${missing.join(', ')} is not in ${topicName}'s module list. It runs ${modules.map((m) => m.number).join(', ')}.`);
-      }
-      modules = wanted
-        .map((n) => modules.find((m) => m.number === n))
-        .filter(Boolean);
+    /* The modules the day's assignment requires, resolved by the one shared
+       helper in scripts/lib/module-list.js so the board and the Canvas
+       assignment cannot answer "what is due" differently. Only the numbers
+       come from the schedule: the names still come from the lesson, so a
+       module cannot be renamed on the board and nowhere else. */
+    const runs = found ? found.modules : [];
+    const req = requiredModules(runs, entry.modules);
+    if (req.missing.length) {
+      const topicName = found ? `Topic ${found.key}` : `"${entry.topic}"`;
+      problems.push(`${entry.date}: module ${req.missing.join(', ')} is not in ${topicName}'s module list. It runs ${runs.map((m) => m.number).join(', ')}.`);
     }
+    const modules = req.modules;
 
     for (const item of targets.concat(criteria)) {
       if (item.text.length > LONG_TEXT) {

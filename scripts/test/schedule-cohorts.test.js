@@ -212,6 +212,7 @@ else ok('every event names both sections in its Assign to table');
    for six. Nothing was red. The board was naming modules the lesson page
    really does show, just not the ones due. */
 const assignments = fs.readFileSync(path.join(ROOT, 'docs', 'canvas', 'assignments.md'), 'utf8');
+const board = load(path.join(ROOT, 'assets', 'data', 'announcements.js'), 'BEHISTORICAL_ANNOUNCEMENTS');
 
 // Both rooms sit the same assignment, because Canvas has one per topic. A
 // topic whose two days name different modules cannot be expressed as one
@@ -220,7 +221,13 @@ const requiredByTopic = new Map();
 for (const d of days) {
   const key = String(d.topic || '').trim();
   if (!key) continue;
-  const list = d.modules ? [].concat(d.modules).map((m) => String(m).trim().padStart(2, '0')).join(',') : '';
+  /* 'all' is a declaration that the full load is deliberate, not a list of
+     numbers, so it compares as itself. Padding it would produce 'all' and then
+     fail against the assignment's real numbers. */
+  const raw = d.modules;
+  const list = !raw ? ''
+    : (typeof raw === 'string' && raw.trim().toLowerCase() === 'all') ? 'all'
+    : [].concat(raw).map((m) => String(m).trim().padStart(2, '0')).join(',');
   if (!requiredByTopic.has(key)) requiredByTopic.set(key, []);
   requiredByTopic.get(key).push({ date: d.date, list });
 }
@@ -249,7 +256,12 @@ for (const [key, entries] of topicsWithList) {
     : assignments.indexOf(alt);
   if (at < 0) { listNotPrinted.push(`${key} has a required list but no assignment block`); continue; }
   const block = assignments.slice(at, assignments.indexOf('```\n', assignments.indexOf('```html', at)));
-  const wanted = entries[0].list.split(',');
+  /* A topic declaring 'all' must print every module it runs, so the expected
+     list is read back off the board rather than off the schedule string. */
+  const boardDay = ((board && board.days) || []).find((x) => x.date === entries[0].date);
+  const wanted = entries[0].list === 'all'
+    ? ((boardDay && boardDay.modules) || []).map((m) => m.number)
+    : entries[0].list.split(',');
   const shown = [];
   const numRe = /<strong style="font-family: Montserrat[^"]*">(\d\d)<\/strong>/g;
   let hit;
@@ -264,11 +276,12 @@ else ok(`all ${topicsWithList.length} topics with a required list print exactly 
 // The board and the assignment have to agree, which is the whole point of
 // sharing one field. Read it back out of the generated board rather than
 // trusting that both generators read the same thing.
-const board = load(path.join(ROOT, 'assets', 'data', 'announcements.js'), 'BEHISTORICAL_ANNOUNCEMENTS');
 const boardListMismatch = [];
 for (const day of (board && board.days) || []) {
   const sched = days.find((d) => d.date === day.date);
   if (!sched || !sched.modules) continue;
+  const isAll = typeof sched.modules === 'string' && sched.modules.trim().toLowerCase() === 'all';
+  if (isAll) continue;  // 'all' is whatever the topic runs, checked by the pair above
   const wanted = [].concat(sched.modules).map((m) => String(m).trim().padStart(2, '0')).join(',');
   const shown = (day.modules || []).map((m) => m.number).join(',');
   if (shown !== wanted) boardListMismatch.push(`${day.date} board shows ${shown}, schedule says ${wanted}`);

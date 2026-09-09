@@ -1387,6 +1387,21 @@ norm, and `schedule-cohorts.test.js` now fails a topic whose two cohort days nam
 different modules, a topic whose assignment prints a list the schedule does not
 name, and a board day that disagrees with the schedule.
 
+**`modules: 'all'` and a missing field are different statements.** A day with no
+field is UNDECLARED: nobody has said what its assignment requires. The board
+falls back to listing every module, which is the safe render, and no Canvas
+assignment is generated, because an all-ten assignment that should have asked
+for six looks finished and is wrong. `modules: 'all'` says the full load is
+DELIBERATE. F0 through F5, 1.1 and 1.2 really do assign every module; reduction
+started at Topic 1.3. Those two states render identically on the wall, so
+without a way to say "all, on purpose" the schedule cannot tell a topic nobody
+has audited from one that was audited and came back full. Write `'all'` rather
+than listing ten numbers: a literal list is a second copy of the module list,
+and it is wrong the moment a topic runs nine, which Topic 1.7 does, having no
+BeInTheRoom scenario. `requiredModules` in `scripts/lib/module-list.js` is the
+one resolver for all three states, called by both builders; it was two copies of
+the same filter until 2026-09-09.
+
 **The names still come from the lesson, never from the schedule.**
 `scripts/lib/module-list.js` answers "what modules does this topic run" and the
 `modules` field only filters that answer, so a module cannot be renamed on the
