@@ -151,7 +151,9 @@ function stripPresenterMode(html, teacherPath) {
 function buildOne(deck, opts) {
   const teacherPath = path.join(ROOT, deck.teacher);
   const studentPath = path.join(ROOT, deck.student);
-  const teacherHtml = fs.readFileSync(teacherPath, 'utf8');
+  // Git may materialize tracked HTML with CRLF on Windows. Normalize the
+  // template before applying the exact, LF-authored presenter-mode removals.
+  const teacherHtml = fs.readFileSync(teacherPath, 'utf8').replace(/\r\n/g, '\n');
   const studentHtml = stripPresenterMode(teacherHtml, deck.teacher);
 
   if (studentHtml.includes('data-notes') || studentHtml.includes('Presenter notes') || studentHtml.includes('btn-nt')) {
