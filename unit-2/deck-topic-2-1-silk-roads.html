@@ -22,8 +22,9 @@
    the al-Idrisi map), .orgchart for two things with no honest photograph, the
    caravan's payroll and a caravanserai's floor plan, and .flow for the two
    mechanisms, risk-spreading and the qirad/ortoq credit chain. Two content
-   slides also reuse the plain .cols.c2 panel grid as a myth-versus-evidence
-   pair, which needed no new CSS at all.
+   slides use a single wide .panel as a "How we know" or "Common mistake to
+   avoid" callout, the same two labels the deep readings already use, rather
+   than inventing a new contrastive device; see docs/DECK-VOICE.md.
    ═══════════════════════════════════════════════════════════════════════════ */
 
 :root{
@@ -390,14 +391,14 @@ function onImgFail(el, localSrc) {
 </section>
 
 <!-- ═════ 02 THE QUESTION ══════════════════════════════════════════════════ -->
-<section class="slide dark divider" data-title="The Question"
-  data-notes="Land the question again, slower. <b>5,000 miles</b>, roughly Khanbaliq to the Mediterranean, and no single government, company, or currency runs the whole distance. Every answer in the next twenty minutes is somebody's solution to one piece of that problem.<br><br>Walk the three bullets as a preview, not an answer: camels are <b>capital</b>, owned by someone with money at risk. Risk has no insurance industry behind it, so merchants built other tools instead. Money changes hands and changes form, coin to paper to credit, and someone has to make that conversion trustworthy.<br><br>Say it plainly: <b>the Silk Roads worked because merchants solved problems no government was solving for them.</b> That is the whole lesson.">
-  <p class="part">The Question</p>
-  <h1>How do you run a 5,000-mile supply chain that no government owns?</h1>
+<section class="slide dark divider" data-title="The Problem"
+  data-notes="State the claim, then unpack it. Overland trade across roughly 5,000 miles, Khanbaliq to the Mediterranean, crossed territory no single government, company, or currency controlled. Every idea in this lesson is a solution merchants built to one piece of that problem.<br><br>Walk the three bullets as a preview, not an answer: camels were <b>capital</b>, owned by someone with money at risk. No insurance industry existed, so merchants built other tools instead. Money changed form, coin to paper to credit, and someone had to make that conversion trustworthy.<br><br>State the thesis plainly: <b>the Silk Roads functioned because merchants solved problems no government was solving for them.</b> That is the argument the rest of this lesson supports.">
+  <p class="part">The Problem</p>
+  <h1>Overland trade required solutions no single government provided</h1>
   <ul class="points" style="margin-top:20px;max-width:58ch">
-    <li data-step="1">Someone owns the <b>camels</b>, and they are not free</li>
-    <li data-step="2">Someone insures the <b>risk</b>, with no insurance company</li>
-    <li data-step="3">Someone changes the <b>money</b>, with no shared currency</li>
+    <li data-step="1">Camels were expensive <b>capital</b>, not free transportation</li>
+    <li data-step="2">No insurance industry existed to cover the <b>risk</b> of loss</li>
+    <li data-step="3">No single <b>currency</b> was shared across the whole route</li>
   </ul>
 </section>
 
@@ -424,24 +425,18 @@ function onImgFail(el, localSrc) {
 </section>
 
 <!-- ═════ 04 HOW GOOD WAS THE ROAD ═════════════════════════════════════════ -->
-<section class="slide" data-title="How Good Was the Road, Really?"
-  data-notes="This is a &ldquo;how we know&rdquo; slide, and it is worth slowing down for, because it is exactly the move a strong AP answer makes. Marco Polo's platter-of-gold boast is the line every textbook quotes, and it is precisely the kind of claim you should teach students to distrust: <b>it is rhetoric, not measurement.</b><br><br>The better evidence is duller on purpose: merchant handbooks like Pegolotti's, which Topic 2.7 uses directly, dated traveler accounts that can be cross-checked against each other, and archaeology of the caravan cities themselves, foundations, storerooms, coin hoards.<br><br>Land the transferable skill: <b>a dramatic quotation is not automatically the strongest evidence.</b> When a checkpoint asks them to evaluate a source, this is the habit of mind they are practicing.">
+<section class="slide" data-title="Evaluating the Road's Reputation"
+  data-notes="This is a &ldquo;how we know&rdquo; slide, and it is worth slowing down for, because it is exactly the move a strong AP answer makes. Marco Polo's platter-of-gold claim is the line every textbook quotes, and it is precisely the kind of claim you should teach students to evaluate rather than accept: <b>it describes a reputation, not a measurement.</b><br><br>The stronger evidence is less dramatic on purpose: merchant handbooks like Pegolotti's, which Topic 2.7 uses directly, dated traveler accounts that can be cross-checked against each other, and archaeology of the caravan cities themselves, foundations, storerooms, coin hoards.<br><br>Land the transferable skill: <b>a dramatic quotation is not automatically the strongest evidence.</b> When a checkpoint asks them to evaluate a source, this is the habit of mind they are practicing.">
   <p class="eyebrow">How We Know</p>
-  <h2>How good was the road, really?</h2>
+  <h2>The road's reputation exceeded the evidence for it</h2>
   <div class="rule"></div>
-  <div class="cols c2">
-    <div class="panel rust">
-      <p class="tag">The Boast</p>
-      <p>Marco Polo claimed a virgin could walk the whole route with a platter of gold on her head <b>and never be robbed</b>.</p>
-    </div>
-    <div class="panel gold" data-step="1">
-      <p class="tag">The Evidence</p>
-      <p>Duller, and more trustworthy: <b>merchant handbooks, dated traveler accounts, and the archaeology</b> of caravan cities.</p>
-    </div>
+  <div class="panel gold" style="flex:1">
+    <p class="tag">How We Know</p>
+    <p>Marco Polo claimed a traveler could carry a platter of gold across the entire route and never be robbed. That line describes a reputation, not a measurement. <b>Merchant handbooks, dated traveler accounts that can be cross-checked against each other, and the archaeology of caravan cities</b> provide more reliable evidence of how safe the route actually was.</p>
   </div>
-  <div class="writethis" data-step="2">
+  <div class="writethis" data-step="1">
     <p class="tag">Key Takeaway</p>
-    <p>A boast is not proof of safety. <b>Merchant handbooks and dated accounts are.</b></p>
+    <p>A dramatic claim is not proof by itself. <b>Evaluate a source's reliability before using it as evidence.</b></p>
   </div>
 </section>
 
@@ -450,7 +445,7 @@ function onImgFail(el, localSrc) {
   data-notes="Transition line: everything up to now has been about the road as infrastructure. Everything from here is about <b>who ran the traffic on it</b>, and the answer is going to sound less like an adventure story and more like a business.">
   <p class="part">Part Two</p>
   <h1>The Caravan as a Firm</h1>
-  <p class="lede">Not a convoy. A business, with a payroll, an owner, and a cost structure.</p>
+  <p class="lede">A caravan operated as a business, with an owner, paid staff, and a fixed cost structure.</p>
 </section>
 
 <!-- ═════ 06 THE COST STRUCTURE ════════════════════════════════════════════ -->
@@ -479,7 +474,7 @@ function onImgFail(el, localSrc) {
   </div>
   <div class="writethis" data-step="4">
     <p class="tag">Key Takeaway</p>
-    <p>Fixed cost per camel means <b>only high-value, low-weight goods make the trip</b>. That is why silk rode and grain did not.</p>
+    <p>Fixed cost per camel means <b>only high-value, low-weight goods make the trip</b>. Silk was worth carrying; grain was not.</p>
   </div>
 </section>
 
@@ -487,7 +482,7 @@ function onImgFail(el, localSrc) {
 <section class="slide" data-title="Who Was on the Payroll"
   data-notes="Draw this like a business, because that is what it was. A <b>leader</b> owned the venture and carried a <b>paiza</b>, a Mongol safe-conduct tablet that functioned like an official passport, guaranteeing fresh horses and safe passage along Mongol-controlled stretches. <b>Drivers and guards</b> were paid staff, not partners in some romantic brotherhood. A <b>broker</b> at each stop arranged the next relay and took a fee for it.<br><br>Here is the common mistake to correct directly: <b>most merchants never traveled the whole 5,000 miles.</b> A merchant based in Samarkand worked the Samarkand-to-Kashgar segment, handed goods to a different merchant, and went home. Marco Polo and Ibn Battuta are famous precisely because they were the rare through-travelers, not because that was normal practice.<br><br>Say it directly: <b>relay, not marathon, is the real model.</b> That correction alone fixes most students' mental picture of how this system worked.">
   <p class="eyebrow">The Caravan as a Firm</p>
-  <h2>Who was on the payroll</h2>
+  <h2>The caravan's payroll</h2>
   <div class="rule"></div>
   <div class="orgchart">
     <div class="org-top">The Caravan</div>
@@ -546,14 +541,14 @@ function onImgFail(el, localSrc) {
   data-notes="Transition. Part Two was about people and risk. Part Three is about the two pieces of infrastructure, one physical, one financial, that made the whole system reliable enough to run at scale.">
   <p class="part">Part Three</p>
   <h1>Caravanserai and Credit</h1>
-  <p class="lede">A building every day's march, and a contract that lets money travel without a person.</p>
+  <p class="lede">A network of fortified lodging houses and a form of credit contract together made large-scale trade possible.</p>
 </section>
 
 <!-- ═════ 10 THE CARAVANSERAI ══════════════════════════════════════════════ -->
 <section class="slide" data-title="What a Caravanserai Actually Did"
   data-notes="No good photograph exists for this one, on purpose skip looking for a picture and draw the structure instead, because a caravanserai is best understood as a design, not a monument. Picture a fortified rectangle with a single gate, spaced roughly a <b>day's march</b> apart along the busiest stretches, so a caravan always had a safe stop before dark.<br><br>Walk the layout: a central <b>courtyard</b> for animals and unloading, <b>stabling on the ground floor</b>, <b>merchant lodging above it</b>. Most were funded through <b>waqf</b>, a permanent Islamic charitable endowment, which is why a merchant could typically stay about <b>three days free</b> before paying.<br><br>Draw one careful distinction so students do not conflate two different systems: the Mongol <b>yam</b> relay stations, coming up in a moment, were for official messengers, not merchants. A caravanserai served merchants. A yam station served the state.">
   <p class="eyebrow">The Physical Infrastructure</p>
-  <h2>What a caravanserai actually did</h2>
+  <h2>The caravanserai's design and function</h2>
   <div class="rule"></div>
   <div class="orgchart">
     <div class="org-top">Caravanserai</div>
@@ -617,14 +612,14 @@ function onImgFail(el, localSrc) {
   data-notes="Transition, and callback the value-density slide from Part Two directly: <b>everything on the next three slides is either high value for its weight, alive, or riding along in someone's head or lungs.</b> That is the organizing idea for the whole section.">
   <p class="part">Part Four</p>
   <h1>What Moved, and What Could Not</h1>
-  <p class="lede">The goods list is not a matter of taste. It is a matter of arithmetic.</p>
+  <p class="lede">Which goods traveled the Silk Roads was determined by cost, not by preference or custom.</p>
 </section>
 
 <!-- ═════ 13 A TECHNOLOGY YOU CAN DATE ═════════════════════════════════════ -->
 <section class="slide" data-title="A Technology You Can Date"
   data-notes="This is the picture, jiaozi, Song China's paper currency, and it earns its spot because paper is the single cleanest diffusion story in this whole unit, since you can actually date it, city by city: <b>Samarkand in the 8th century, Baghdad by the 790s, Muslim Spain (Xativa) by the 12th century, Italy (Fabriano) by the 1270s.</b><br><br>Make the skill point explicit, because Topic 2.5 builds directly on it: <b>a traceable chain of dates and places is stronger evidence than the phrase &ldquo;ideas spread along the Silk Roads.&rdquo;</b> Any answer that names two dated points in a chain like this one is doing better work than an answer that only gestures at diffusion in general.<br><br>Briefly name the other travelers in this same category so the room has the list: gunpowder, the compass, the stern-post rudder, and printing all moved along some version of this same relay.">
   <p class="eyebrow">What Traveled Without Being Cargo</p>
-  <h2>A technology you can date, city to city</h2>
+  <h2>Papermaking spread along a traceable, datable route</h2>
   <div class="rule"></div>
   <div class="spotlight">
     <figure class="contain">
@@ -650,7 +645,7 @@ function onImgFail(el, localSrc) {
   </div>
   <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
-    <p>A traceable chain of dates and cities <b>beats &ldquo;ideas spread&rdquo; every time you write it</b>.</p>
+    <p>A traceable chain of dates and cities <b>is stronger evidence than a general claim that ideas spread</b>.</p>
   </div>
 </section>
 
@@ -658,7 +653,7 @@ function onImgFail(el, localSrc) {
 <section class="slide" data-title="The Goods List, Explained by Weight"
   data-notes="Four tiles, and the point is that all four are explained by the same arithmetic from Part Two. <b>Silk</b> functioned as both a luxury good and, at times, a form of currency. <b>Jade, glass, furs, and porcelain</b> are all classic high-value-density cargo.<br><br><b>Horses</b> are the deliberate exception, worth naming out loud: a horse is the one good that carries itself, so the value-density math does not apply the same way, and that is exactly why horse trading is such a large and separate business in this period.<br><br>Do not soften the fourth tile. <b>Enslaved people</b> moved these same corridors, boys purchased on the Kipchak steppe who were transported through Genoese Black Sea colonies and became the mamluk soldiers of Egypt. That is not a footnote, it is a real and documented part of what this network carried, and naming it specifically is stronger than a vague reference to &ldquo;other goods.&rdquo;">
   <p class="eyebrow">Cargo and Its Logic</p>
-  <h2>The goods list, explained by weight</h2>
+  <h2>Cost explains the cargo list</h2>
   <div class="rule"></div>
   <div class="stat-grid">
     <div class="stat-tile">
@@ -680,15 +675,15 @@ function onImgFail(el, localSrc) {
   </div>
   <div class="writethis" data-step="4">
     <p class="tag">Key Takeaway</p>
-    <p>High value per kilogram, alive, or free-riding. <b>That is the whole list.</b></p>
+    <p>A good needed high value relative to its weight, needed to move under its own power, or needed no separate transport at all. <b>Those three conditions explain the entire list.</b></p>
   </div>
 </section>
 
-<!-- ═════ 15 A MAP OLDER THAN THIS STORY ═══════════════════════════════════ -->
-<section class="slide" data-title="A Map Older Than This Story"
+<!-- ═════ 15 EXCHANGE PREDATES THE PERIOD ══════════════════════════════════ -->
+<section class="slide" data-title="Exchange Networks Predated This Period"
   data-notes="This is al-Idrisi's 1154 world map, compiled in Sicily from the accounts of travelers and merchants drawing on Islamic, Byzantine, and older geographic traditions. Point at how much of Afro-Eurasia it already covers, more than a century before this topic's own starting date.<br><br>Use it to correct a real misconception: <b>the Silk Roads did not begin the exchange of goods, people, and ideas across Eurasia.</b> That exchange was already underway. What Part One's Pax Mongolica did was accelerate and stabilize a network that already existed.<br><br>Name the belief systems moving in this specific window without going deep, since Topic 2.5 owns the full treatment: Buddhism had already spread earlier; Islam is now moving eastward into Central Asia; Church of the East Christian communities maintain a real, often overlooked presence along these same routes. Tell them plainly this list gets a whole topic to itself soon.">
   <p class="eyebrow">Knowledge on the Move</p>
-  <h2>A map older than this story</h2>
+  <h2>Exchange networks predated this period</h2>
   <div class="rule"></div>
   <div class="spotlight">
     <figure class="contain">
@@ -714,45 +709,39 @@ function onImgFail(el, localSrc) {
   </div>
   <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
-    <p>The Silk Roads did not start the exchange of ideas. <b>They accelerated an exchange already underway.</b></p>
+    <p>The Silk Roads did not begin the exchange of ideas across Eurasia. <b>They intensified an exchange already underway.</b></p>
   </div>
 </section>
 
 <!-- ═════ 16 DIVIDER: PART FIVE ════════════════════════════════════════════ -->
 <section class="slide dark divider" data-title="Part Five: Why It Faded"
-  data-notes="Transition, and warn them directly: the next two slides correct the single most common wrong answer about this topic. Almost every student walks in already believing something closed the Silk Roads on purpose. Nobody did.">
+  data-notes="Transition, and state directly what the next two slides correct: the single most common wrong answer about this topic. Most students walk in already believing something closed the Silk Roads on purpose. Nothing did.">
   <p class="part">Part Five</p>
   <h1>Why It Faded</h1>
-  <p class="lede">Nobody closed the Silk Roads. Something else got cheaper.</p>
+  <p class="lede">Overland trade declined for economic and political reasons, not because any single power closed the routes.</p>
 </section>
 
 <!-- ═════ 17 NOBODY CLOSED THE SILK ROADS ══════════════════════════════════ -->
-<section class="slide" data-title="Nobody Closed the Silk Roads"
-  data-notes="This is the correction to make explicitly, because it is the single most common wrong answer this topic produces. <b>The Ottomans did not close the Silk Roads in 1453.</b> A conquering power that just took control of one of the richest trade cities on earth had every reason to keep the customs revenue flowing, and they did.<br><br>Give them the replacement sentence to actually write on a checkpoint: <b>&ldquo;the overland routes became more costly and less reliable while the sea became cheaper,&rdquo;</b> not &ldquo;someone closed the road.&rdquo; That is a causation claim instead of a single dramatic event, and it is exactly the kind of reasoning Skill 3 rewards.<br><br>Set up the next slide directly: <b>three real things did happen at once, and none of them is a closure.</b>">
+<section class="slide" data-title="A Common Misconception About 1453"
+  data-notes="This is the correction to make explicitly, because it is the single most common wrong answer this topic produces. <b>The Ottomans did not close the Silk Roads in 1453.</b> A conquering power that just took control of one of the richest trade cities on earth had every reason to keep the customs revenue flowing, and they did.<br><br>Give them the replacement sentence to actually write on a checkpoint: <b>&ldquo;the overland routes became more costly and less reliable while the sea became cheaper,&rdquo;</b> not &ldquo;someone closed the road.&rdquo; That is a causation claim instead of a single dramatic event, and it is exactly the kind of reasoning Skill 3 rewards.<br><br>Set up the next slide directly: <b>three real developments happened at once, and none of them is a closure.</b>">
   <p class="eyebrow">Common Mistake to Avoid</p>
-  <h2>Nobody closed the Silk Roads</h2>
+  <h2>No single power closed the Silk Roads</h2>
   <div class="rule"></div>
-  <div class="cols c2">
-    <div class="panel rust">
-      <p class="tag">The Myth</p>
-      <p>&ldquo;The Ottomans closed the Silk Roads when Constantinople fell in <b>1453</b>.&rdquo;</p>
-    </div>
-    <div class="panel gold" data-step="1">
-      <p class="tag">The Reality</p>
-      <p>The Ottomans wanted the <b>customs revenue</b>, and kept trading. Nobody had a reason to close a profitable road.</p>
-    </div>
+  <div class="panel rust" style="flex:1">
+    <p class="tag">Common Mistake to Avoid</p>
+    <p>Students often assume the Ottoman conquest of Constantinople in <b>1453</b> closed the Silk Roads. Ottoman rulers had a strong financial incentive to keep trade flowing through territory they now controlled, and they did. <b>The overland routes became more costly and less reliable while sea routes became cheaper; no single event closed them.</b></p>
   </div>
-  <div class="writethis" data-step="2">
+  <div class="writethis" data-step="1">
     <p class="tag">Key Takeaway</p>
-    <p>Write <b>&ldquo;routes became more costly and less reliable while the sea got cheaper,&rdquo;</b> never &ldquo;someone closed the road.&rdquo;</p>
+    <p>Explain the decline as a <b>shift in relative cost over time</b>, not as a single closure event.</p>
   </div>
 </section>
 
 <!-- ═════ 18 THREE THINGS AT ONCE ══════════════════════════════════════════ -->
 <section class="slide" data-title="Three Things, at Once"
   data-notes="Walk the three tiles as simultaneous causes, not a sequence, because the causation move here is that they reinforced each other. <b>Political fragmentation</b>: the Ilkhanate disintegrates after 1335, the Yuan falls to the Ming in 1368, the Chagatai Khanate fractures, and then Timur's campaigns disrupt the same corridors further. <b>The plague</b>, which gets its own full topic in 2.6, killed a large share of the population that had sustained caravan towns as functioning economies. <b>The sea got cheaper</b>: after 1368 Ming China increasingly reoriented toward its own coast rather than subsidizing the overland route westward.<br><br>Land the causation lesson explicitly: <b>a strong answer names all three and explains how they reinforced each other</b>, rather than picking the single most dramatic one and treating it as the whole explanation. What survived is just as telling as what declined: Samarkand, Bukhara, and Tabriz stayed wealthy, cosmopolitan cities, and under Timur, Samarkand and Herat became genuine centers of astronomy and manuscript painting. <b>A network that moves goods moves everything else along the same path, permanently.</b>">
-  <p class="eyebrow">What Actually Happened, 1335&ndash;1450</p>
-  <h2>Three things, at once</h2>
+  <p class="eyebrow">What Happened, 1335&ndash;1450</p>
+  <h2>Three causes combined to reduce overland trade</h2>
   <div class="rule"></div>
   <div class="stat-grid" style="grid-template-columns:repeat(3,1fr)">
     <div class="stat-tile">
@@ -770,7 +759,7 @@ function onImgFail(el, localSrc) {
   </div>
   <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
-    <p>Three causes, together, <b>not one villain</b>. That is a stronger claim than any single-event story.</p>
+    <p>Political fragmentation, plague mortality, and cheaper sea routes combined to reduce overland trade. <b>No single cause explains the decline alone.</b></p>
   </div>
 </section>
 
