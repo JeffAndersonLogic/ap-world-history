@@ -106,6 +106,11 @@ ul.points li::before{
 
 /* ── Column layouts ───────────────────────────────────────────────────── */
 .cols{display:grid;gap:26px;flex:1;min-height:0}
+/* A panel row stretched to fill the slide leaves a lot of empty card below
+   short bullet text. These rows size to their tallest panel and centre in the
+   space between the rule and the KEY TAKEAWAY box instead, so the panels stay
+   the same height as each other and their headings stay on one line. */
+.cols.c2,.cols.c3{flex:0 0 auto;margin-block:auto}
 .cols.c2{grid-template-columns:1fr 1fr}
 .cols.c3{grid-template-columns:repeat(3,1fr)}
 .cols.c4{grid-template-columns:repeat(4,1fr)}
@@ -192,7 +197,7 @@ figcaption{
 .org-sub{font-size:14px;color:var(--iron);margin-top:6px;text-align:center;font-family:var(--font-ui);line-height:1.4}
 
 /* ── Flow: a numbered pipeline with connectors, for a mechanism ──────── */
-.flow{display:flex;align-items:stretch;gap:0;flex:1;min-height:0}
+.flow{display:flex;align-items:stretch;gap:0;flex:0 0 auto;margin-block:auto;min-height:0}
 .flow .panel{flex:1}
 .flow .arrow{display:flex;align-items:center;justify-content:center;width:34px;flex:none;
   color:var(--bronze);font-size:26px;font-weight:900}
@@ -443,9 +448,9 @@ function onImgFail(el, localSrc) {
   <p class="part">The Question</p>
   <h1>When Rome was gone, who was in charge?</h1>
   <ul class="points" style="margin-top:20px;max-width:62ch">
-    <li data-step="1">The <b>political</b> problem, who protects us, was answered by <b>feudalism</b></li>
-    <li data-step="2">The <b>economic</b> problem, who feeds us, was answered by <b>manorialism</b></li>
-    <li data-step="3">The <b>social</b> problem, what do we share, was answered by <b>the Church</b></li>
+    <li data-step="1">Who protects us? <b>Feudalism</b></li>
+    <li data-step="2">Who feeds us? <b>Manorialism</b></li>
+    <li data-step="3">What do we share? <b>The Church</b></li>
   </ul>
 </section>
 
@@ -460,26 +465,26 @@ function onImgFail(el, localSrc) {
       <img src="../assets/maps/unit1-6-roman-empire-c400.gif"
            alt="Map of the Roman Empire c. 400 CE showing the Eastern Roman Empire in blue and the Western Roman Empire in tan, divided by the line of division, with Rome, Milan, Ravenna, Carthage, London, Constantinople, Athens, Alexandria and Jerusalem marked"
            onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/map.svg')">
-      <figcaption>The Roman Empire, c. 400 CE. The dotted line is the working border between the eastern and western imperial governments.</figcaption>
+      <figcaption>The Roman Empire, c. 400 CE.</figcaption>
     </figure>
     <div class="facts">
       <div class="fact">
-        <b>The West, in tan</b>
-        <p>Rome, Milan, Carthage, London. Imperial government here <b>broke down during the 400s</b>.</p>
+        <b>West, in tan</b>
+        <p><b>Collapses</b>, 400s</p>
       </div>
       <div class="fact" data-step="1">
-        <b>The East, in blue</b>
-        <p>Ruled from <b>Constantinople</b>, and it kept going for roughly another <b>thousand years</b>.</p>
+        <b>East, in blue</b>
+        <p><b>Survives 1,000 years</b>, from Constantinople</p>
       </div>
       <div class="fact" data-step="2">
-        <b>What survived in the east</b>
-        <p>Written <b>Roman law</b>, <b>Greek learning</b>, and the wealth of the largest Christian city in the world.</p>
+        <b>Kept in the east</b>
+        <p>Roman law &middot; Greek learning &middot; wealth</p>
       </div>
     </div>
   </div>
   <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
-    <p>Rome did not vanish. It <b>collapsed in the west and survived in the east</b>, and medieval Europe means the western half.</p>
+    <p>Rome <b>collapsed in the west, survived in the east.</b> Medieval Europe is the western half.</p>
   </div>
 </section>
 
@@ -487,38 +492,38 @@ function onImgFail(el, localSrc) {
 <section class="slide" data-title="What Disappeared With Rome"
   data-notes="Do not let this become a list to memorize. Run it as a thought experiment about their own lives.<br><br>Read the left panel and ask, item by item, <b>who does that for you today?</b> Police and the military. The IRS. Courts. The Treasury printing money. The interstate system. They will get there fast.<br><br>Then reveal the right panel and ask the harder version: <b>what is it actually like when all five of those stop at once?</b> Push past &ldquo;it would be bad.&rdquo; The specific answer you want is that <b>every one of those services was really about safety</b>, and with them gone a person's problem is not inconvenience, it is that a raiding party can arrive and no one is coming to help.<br><br><b>The honesty note, for you, not for the slide.</b> This did not happen in one year. The western emperor is deposed in 476, but the system on the next few slides is not fully in place until roughly the year 1000. In between: Charlemagne briefly reassembles much of the west around 800, his empire is divided among his grandsons in 843, and then Viking, Magyar and Muslim raids hit through the 800s and 900s, arriving far faster than any king's army could respond. <b>That</b> is what finally pushes people to buy protection locally. If a sharp student asks why it took so long, that is your answer. Do not put it on the wall, it costs four minutes you do not have.">
   <p class="eyebrow">The Problem</p>
-  <h2>What a government does, and what happened when it stopped</h2>
+  <h2>What stopped working</h2>
   <div class="rule"></div>
   <div class="cols c2">
     <div class="panel iron">
-      <p class="tag">While Rome governed the west</p>
-      <h3>Someone did these jobs</h3>
-      <p>One <b>army</b>, paid and posted along the borders</p>
-      <p><b>Taxes</b> collected across the whole empire</p>
-      <p><b>Courts</b> and a single written law</p>
-      <p><b>Coined money</b> everyone accepted</p>
-      <p><b>Roads</b>, and trade that could travel them safely</p>
+      <p class="tag">Rome provided</p>
+      <h3>Before</h3>
+      <p>An <b>army</b></p>
+      <p><b>Taxes</b></p>
+      <p><b>Courts</b>, written law</p>
+      <p><b>Coins</b></p>
+      <p>Safe <b>roads</b></p>
     </div>
     <div class="panel rust" data-step="1">
-      <p class="tag">After it stopped, in the west</p>
-      <h3>Nobody did</h3>
-      <p>No army that could <b>reach you in time</b></p>
-      <p>No tax system, so <b>no way to pay soldiers</b></p>
-      <p>No court above the <b>local</b> one</p>
-      <p>Very few coins, so people <b>paid in goods and labor</b></p>
-      <p>Roads unsafe, so trade shrank to <b>the next village</b></p>
+      <p class="tag">Nobody provided</p>
+      <h3>After</h3>
+      <p><b>No one comes</b></p>
+      <p>No way to <b>pay soldiers</b></p>
+      <p><b>Local</b> courts only</p>
+      <p>Pay in <b>goods and labor</b></p>
+      <p>Trade dies</p>
     </div>
   </div>
   <div class="writethis" data-step="2">
     <p class="tag">Key Takeaway</p>
-    <p>Take all of that away and one problem stands above the rest. <b>Nobody could keep you safe.</b> Everything today is a response to that.</p>
+    <p>One problem left: <b>nobody could keep you safe.</b></p>
   </div>
 </section>
 
 <!-- ═════ 05 DECENTRALIZATION ══════════════════════════════════════════════ -->
 <section class="slide" data-title="Decentralization"
   data-notes="This is the most important vocabulary word in Topic 1.6, and it is the one the AP prompt will use. Spend the full two minutes.<br><br>Point at the left block. <b>Centralized</b>: one government, one law, one tax system, and an order from the center reaches a village a thousand miles away. That is Song China, which they studied in 1.1. Ask someone to name the people who carried those orders, you want <b>scholar-officials</b>.<br><br>Point at the right grid. <b>Decentralized</b>: the same amount of territory, but the power is cut into hundreds of pieces, and each piece has its own lord, its own court and its own soldiers. Then say the sentence that does the work: <b>there is no square on this side that is in charge of the other squares.</b><br><br><b>The misconception to kill, out loud.</b> Decentralized does not mean weak, backward, or chaotic. Each of those little squares is often governed tightly. What is missing is anyone above them. Europe is not failing at being China. It is organized on a different principle.<br><br>If you have a strong group, ask: which system is better at collecting taxes, and which is better at surviving a bad ruler? That question is doing AP causation work for free.">
-  <p class="eyebrow">The Word for What Replaced It</p>
+  <p class="eyebrow">The Key Word</p>
   <h2>Centralized power, and decentralized power</h2>
   <div class="rule"></div>
   <div class="contrast">
@@ -529,7 +534,7 @@ function onImgFail(el, localSrc) {
         <span>ONE law</span>
         <span>ONE tax system</span>
       </div>
-      <p class="cnote">An order from the emperor reaches a village a thousand miles away, carried by officials he appointed.</p>
+      <p class="cnote">One order travels 1,000 miles.</p>
     </div>
     <div class="cblock" data-step="1">
       <p class="clabel">Decentralized &middot; Medieval Europe</p>
@@ -539,12 +544,12 @@ function onImgFail(el, localSrc) {
         <i class="b"></i><i></i><i class="a"></i><i></i><i class="c"></i><i></i><i></i>
         <i></i><i class="a"></i><i></i><i class="b"></i><i></i><i class="a"></i><i class="c"></i>
       </div>
-      <p class="cnote">Hundreds of separate lords, each with his own land, his own court, and his own soldiers.</p>
+      <p class="cnote">Hundreds of lords. Each with his own land, court, soldiers.</p>
     </div>
   </div>
   <div class="writethis" data-step="2">
     <p class="tag">Key Takeaway</p>
-    <p><b>Decentralization</b> is power broken into many small local pieces instead of held by one government. Not weak. Just <b>not gathered in one place</b>.</p>
+    <p><b>Decentralization:</b> power in many small local pieces. <b>Not weak. Not gathered.</b></p>
   </div>
 </section>
 
@@ -553,7 +558,7 @@ function onImgFail(el, localSrc) {
   data-notes="Ten seconds, not more. Point back at slide 2. Three problems, three systems, and you are now walking them in order. Say which one is coming: <b>feudalism, the political answer</b>.">
   <p class="part">The Answer</p>
   <h1>Three problems, three systems</h1>
-  <p class="lede">Feudalism held the politics together. Manorialism held the economy together. The Church held society together.</p>
+  <p class="lede">Each needed its own answer.</p>
   <div class="chips" style="margin-top:26px">
     <span class="chip">Feudalism &middot; political</span>
     <span class="chip">Manorialism &middot; economic</span>
@@ -564,19 +569,19 @@ function onImgFail(el, localSrc) {
 <!-- ═════ 07 FEUDALISM DEFINED ═════════════════════════════════════════════ -->
 <section class="slide" data-title="Feudalism: Land for Loyalty"
   data-notes="Start with the money problem, because feudalism is an answer to it and makes no sense without it. <b>A king with no tax system cannot pay an army in coin.</b> Ask the room what he pays them with instead. Someone will say land. Correct, and that is the whole system.<br><br>Walk the four terms slowly and make them say them back. These four words are what the AP prompt means when it says feudalism, and a student who can only say &ldquo;knights and castles&rdquo; has not got it.<br><br><b>Homage is worth its own beat.</b> There is no filing cabinet, no registry, no signed contract that a court will enforce, because there is no court above these two men. The public ceremony <b>is</b> the enforcement. Everyone watched, everyone remembers, and breaking it costs you your reputation among the only people who matter. That is why it was a ceremony and not paperwork.<br><br>Land the takeaway hard, because slide 8 depends on it: <b>this is a private deal between two individuals</b>, not a national law. Two people, one promise.">
-  <p class="eyebrow">Part One &middot; The Political System</p>
+  <p class="eyebrow">Part One &middot; Political</p>
   <h2>Feudalism: land traded for loyalty</h2>
   <div class="rule"></div>
-  <p style="font-size:19px;margin:0 0 18px;color:var(--gunmetal)">A ruler with no tax system cannot pay soldiers in money. So he pays them with the one thing he does have.</p>
+  <p style="font-size:20px;margin:0 0 20px;color:var(--gunmetal)">No taxes, so no coin. <b>Pay in land instead.</b></p>
   <dl class="defs">
-    <div class="def"><dt>Fief</dt><dd>The grant of <b>land</b>, and the income from that land, handed over in exchange for service.</dd></div>
-    <div class="def" data-step="1"><dt>Lord</dt><dd>The person who <b>grants</b> the fief.</dd></div>
-    <div class="def" data-step="1"><dt>Vassal</dt><dd>The person who <b>receives</b> it, and who owes military service in return.</dd></div>
-    <div class="def" data-step="2"><dt>Homage</dt><dd>The public ceremony where a vassal knelt and swore loyalty. There was no court above these two men to enforce a contract, so <b>the ceremony was the enforcement</b>.</dd></div>
+    <div class="def"><dt>Fief</dt><dd>The <b>land</b>, granted for service</dd></div>
+    <div class="def" data-step="1"><dt>Lord</dt><dd><b>Grants</b> the fief</dd></div>
+    <div class="def" data-step="1"><dt>Vassal</dt><dd><b>Receives</b> it. Owes military service</dd></div>
+    <div class="def" data-step="2"><dt>Homage</dt><dd>The public oath. No court above them, so <b>the ceremony <em>was</em> the contract</b></dd></div>
   </dl>
   <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
-    <p>Feudalism is <b>a private agreement between two people</b>, not a national law. That one fact explains the next slide.</p>
+    <p><b>A private deal between two people.</b> Not a law.</p>
   </div>
 </section>
 
@@ -589,17 +594,17 @@ function onImgFail(el, localSrc) {
   <div class="orgchart">
     <div class="org-top">THE KING</div>
     <div class="org-exchange">
-      <span><b>&darr;</b> land and protection</span>
-      <span>loyalty and armed service <b>&uarr;</b></span>
+      <span><b>&darr;</b> land</span>
+      <span>loyalty and service <b>&uarr;</b></span>
     </div>
     <div class="org-row">
       <div class="org-branch" style="width:290px">
         <div class="org-node">Great Lord</div>
-        <div class="org-sub">Holds a large fief from the king. Owes him knights in wartime.</div>
+        <div class="org-sub">A large fief from the king</div>
       </div>
       <div class="org-branch" style="width:290px">
         <div class="org-node">Great Lord</div>
-        <div class="org-sub">Runs his own courts and castles on that land.</div>
+        <div class="org-sub">Own courts and castles</div>
       </div>
     </div>
     <div class="org-exchange" data-step="1">
@@ -609,42 +614,40 @@ function onImgFail(el, localSrc) {
     <div class="org-row" data-step="1">
       <div class="org-branch" style="width:228px">
         <div class="org-node">Knight</div>
-        <div class="org-sub">A smaller fief, from a lord</div>
       </div>
       <div class="org-branch" style="width:228px">
         <div class="org-node">Knight</div>
-        <div class="org-sub">Owes armed service to that lord</div>
       </div>
       <div class="org-branch" style="width:228px">
         <div class="org-node">Knight</div>
-        <div class="org-sub">Not to the king, to his own lord</div>
+        <div class="org-sub">Sworn to his lord, not the king</div>
       </div>
     </div>
     <div class="org-divide" data-step="2"><span>Feudalism stops here &middot; manorialism begins</span></div>
-    <div class="org-base" data-step="2">PEASANTS AND SERFS &middot; hold no fief, swear no homage, are nobody&rsquo;s vassal</div>
+    <div class="org-base" data-step="2">PEASANTS AND SERFS &middot; no fief &middot; no homage</div>
   </div>
   <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
-    <p>A king could not order a knight he had never met, because that knight had promised nothing to him. <b>Fragmentation is feudalism working, not feudalism failing.</b></p>
+    <p>The king cannot order that knight. <b>Fragmentation is feudalism working.</b></p>
   </div>
 </section>
 
 <!-- ═════ 09 MANORIALISM DEFINED ═══════════════════════════════════════════ -->
 <section class="slide" data-title="Manorialism: The Economic System"
   data-notes="Open with the connection, or this becomes a separate topic in their notes: <b>feudalism explains who commands. Manorialism explains who eats.</b> A knight's armor, warhorse and training were enormously expensive, and there was no salary. What paid for all of it was a manor full of people farming.<br><br>Walk the four terms. <b>Demesne</b> is the one they will misread, so be concrete: these are the lord's own fields, and the labor on them is unpaid work owed by the peasants, on top of farming their own strips.<br><br><b>The serf and slave distinction is the takeaway and it matters twice.</b> Once because it is simply accurate, and once because Unit 4 will ask them to compare coerced labor systems across the world, and a student who thinks serf equals slave will get that comparison wrong. Give them the three concrete differences on the slide: not property, not sellable apart from the land, holds his own land, has customary rights.<br><br>Then be honest so it does not read as a defense of serfdom: a serf was <b>not free</b>. He could not leave, he could not marry off the manor without permission, and he owed labor he did not agree to. Unfree is not the same thing as enslaved, and both are true at once.">
-  <p class="eyebrow">Part Two &middot; The Economic System</p>
+  <p class="eyebrow">Part Two &middot; Economic</p>
   <h2>Manorialism: the farm underneath the politics</h2>
   <div class="rule"></div>
-  <p style="font-size:19px;margin:0 0 18px;color:var(--gunmetal)">Feudalism explains who commands. Manorialism explains who eats. A lord could afford a warhorse, armor and knights only because a manor was feeding him.</p>
+  <p style="font-size:20px;margin:0 0 20px;color:var(--gunmetal)">Feudalism: <b>who commands.</b> Manorialism: <b>who eats.</b></p>
   <dl class="defs">
-    <div class="def"><dt>Manor</dt><dd>A large estate run as one unit: fields, a village, a church, a mill, pasture and woodland.</dd></div>
-    <div class="def" data-step="1"><dt>Demesne</dt><dd>The fields the lord <b>kept for himself</b>, worked by peasant labor he did not pay for.</dd></div>
-    <div class="def" data-step="1"><dt>Serf</dt><dd>A peasant <b>bound to the manor</b>. Not free to leave it, and not free to marry off it without permission.</dd></div>
-    <div class="def" data-step="2"><dt>Obligations</dt><dd>The labor, the share of the harvest and the fees a serf owed, in exchange for land to farm and protection.</dd></div>
+    <div class="def"><dt>Manor</dt><dd>Fields, village, church, mill, woodland</dd></div>
+    <div class="def" data-step="1"><dt>Demesne</dt><dd>The lord&rsquo;s <b>own fields</b>. Unpaid labor</dd></div>
+    <div class="def" data-step="1"><dt>Serf</dt><dd><b>Bound to the manor.</b> Not free to leave</dd></div>
+    <div class="def" data-step="2"><dt>Obligations</dt><dd>Labor, harvest, fees. For land and protection</dd></div>
   </dl>
   <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
-    <p>A serf was unfree, but <b>a serf was not a slave</b>. He was not property, could not be sold away from the land, farmed his own strips, and had customary rights a lord was expected to honor.</p>
+    <p>Unfree, but <b>not a slave.</b> Not property. Not sellable.</p>
   </div>
 </section>
 
@@ -655,8 +658,8 @@ function onImgFail(el, localSrc) {
      uses .spotlight with figure.contain and hands the figure two thirds of the
      width, which renders it about 475px tall instead of a 240px letterbox. -->
 <section class="slide" data-title="One Manor, Mapped"
-  data-notes="Give this picture time, it is the densest thing on the wall today. Do not narrate every label. <b>Pick five and point</b>: the lord&rsquo;s private fields at the top left, the church, the village houses, the grist mill on the river, and the woodland at the edge.<br><br>Then run the question that makes the slide worth the minute: <b>what on this picture had to be bought from somewhere else?</b> Almost nothing. Grain is grown here, ground at the mill here, baked here. Wool, leather, timber, honey, fish, all here. Salt and iron are the honest exceptions, and a student who spots that is thinking well.<br><br>Two details worth naming, because they are about power rather than farming. The mill and the oven <b>belonged to the lord</b>. A peasant paid a fee to use them and was often forbidden to grind grain at home, so the lord took a cut of the food supply at the one point everyone had to pass through. Second, find the <b>tithe barn</b> at the top: that is the Church&rsquo;s tenth, stored on site. The Church is already standing in this picture, before you get to Part Three.<br><br>Close on <b>self-sufficient</b>, and be clear it is not a virtue. It is a symptom. This is what an economy looks like when the roads are unsafe and there are almost no coins.<br><br><b>One caution if you zoom in.</b> The spring field label on the rotation inset misspells Barley, and the collar&rsquo;s &ldquo;3x&rdquo; figure is the contested one from slide 11. If a student reads either off the wall, both are worth thirty seconds.">
-  <p class="eyebrow">Part Two &middot; One Manor, Mapped</p>
+  data-notes="Give this picture time, it is the densest thing on the wall today. Do not narrate every label. <b>Pick five and point</b>: the lord&rsquo;s private fields at the top left, the church, the village houses, the grist mill on the river, and the woodland at the edge.<br><br>Then run the question that makes the slide worth the minute: <b>what on this picture had to be bought from somewhere else?</b> Almost nothing. Grain is grown here, ground at the mill here, baked here. Wool, leather, timber, honey, fish, all here. Salt and iron are the honest exceptions, and a student who spots that is thinking well.<br><br>One detail worth naming, because it is about power rather than farming. The mill and the oven <b>belonged to the lord</b>. A peasant paid a fee to use them and was often forbidden to grind grain at home, so the lord took a cut of the food supply at the one point everyone had to pass through.<br><br>Close on <b>self-sufficient</b>, and be clear it is not a virtue. It is a symptom. This is what an economy looks like when the roads are unsafe and there are almost no coins.<br><br><b>One caution if you zoom in.</b> The spring field label on the rotation inset misspells Barley, and the collar&rsquo;s &ldquo;3x&rdquo; figure is the contested one from slide 11. If a student reads either off the wall, both are worth thirty seconds.">
+  <p class="eyebrow">Part Two &middot; Economic</p>
   <h2>One manor, one economy</h2>
   <div class="rule"></div>
   <div class="spotlight">
@@ -664,20 +667,20 @@ function onImgFail(el, localSrc) {
       <img src="../assets/images/unit-1/topic-1-6/manor-diagram.jpg"
            alt="Illustrated plan of a self-sufficient medieval manor showing the lord's private fields, a tithe barn, church, castle, village houses, blacksmith, bakery, grist mill on the river, open fields worked in strips, orchards, woodland and pasture, with labels for the heavy plow, the horse collar and the three-field crop rotation"
            onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/lecture-01.svg')">
-      <figcaption>A manor laid out as one economic unit, with the three-field rotation shown at lower left.</figcaption>
+      <figcaption>One manor. Three-field rotation at lower left.</figcaption>
     </figure>
     <div class="facts">
       <div class="fact">
-        <b>The mill and the oven were the lord&rsquo;s</b>
-        <p>Using them cost a fee. He took his cut at the one point <b>everyone had to pass through</b>.</p>
+        <b>Made here</b>
+        <p>Grain, wool, timber, fish. <b>Salt and iron</b> come in.</p>
       </div>
       <div class="fact" data-step="1">
-        <b>The tithe barn</b>
-        <p>The <b>Church&rsquo;s tenth</b>, stored on site. The Church is already in this picture.</p>
+        <b>The mill and oven</b>
+        <p>The lord&rsquo;s. Using them <b>cost a fee</b>.</p>
       </div>
       <div class="writethis" data-step="2">
         <p class="tag">Key Takeaway</p>
-        <p>Close to <b>self-sufficient</b>. Not a virtue, but what an economy looks like when roads are unsafe.</p>
+        <p>Close to <b>self-sufficient.</b> What you get when roads are unsafe.</p>
       </div>
     </div>
   </div>
@@ -686,32 +689,32 @@ function onImgFail(el, localSrc) {
 <!-- ═════ 11 THREE TECHNOLOGIES ════════════════════════════════════════════ -->
 <section class="slide" data-title="Three Technologies"
   data-notes="Frame it before the panels: these three are on the AP CED because together they are why the population of Europe roughly doubled between about 1000 and 1300. Technology is not a side story here, it is the cause.<br><br><b>Heavy plow.</b> Contrast it with the scratch plow used around the Mediterranean, which just breaks the surface of light dry soil. Northern soil is wet, heavy clay, and it needs to be cut and turned over, not scratched. The coulter cuts, the moldboard turns. This is why northern Europe, which had been the poor half, becomes the productive half.<br><b>Horse collar.</b> The older harness pulled against a horse&rsquo;s windpipe, so it choked before it could pull hard. A rigid padded collar moves the load onto the shoulders. A horse then works faster and longer than an ox, though it eats more, which is why the next panel matters.<br><b>Three-field system.</b> Autumn grain, spring grain and legumes, one field resting. Land in use goes from about half to about two thirds. The legumes put nitrogen back, and the oats from the spring field are what feeds the horse. <b>The three technologies are one system.</b><br><br><b>One number to avoid.</b> You may see a claim that the collar tripled a horse&rsquo;s pulling power. That figure comes from a single 1910 experiment by a French officer, Lefebvre des No&euml;ttes, and archaeologists now think his reconstruction of the older harness was unfairly bad. Teach the mechanism, skip the multiplier. If it is printed on a chart in the room, that is a genuinely excellent thirty-second lesson in sourcing.<br><br>Finish on the chain, and say it as a chain: more food, then more people, then more people than the fields need, and those people go to towns. That is the bridge to the reading.">
-  <p class="eyebrow">Part Two &middot; Why the Manor Produced a Surplus</p>
-  <h2>Three technologies that fed a growing continent</h2>
+  <p class="eyebrow">Part Two &middot; Economic</p>
+  <h2>Three technologies</h2>
   <div class="rule"></div>
   <div class="cols c3">
     <div class="panel">
       <p class="tag">Technology one</p>
       <h3>The heavy plow</h3>
-      <p>A <b>coulter</b> cuts the soil and a <b>moldboard</b> turns it over.</p>
-      <p>Northern Europe&rsquo;s wet, heavy clay could finally be farmed. The old scratch plow only worked on light Mediterranean soil.</p>
+      <p><b>Coulter</b> cuts. <b>Moldboard</b> turns.</p>
+      <p>Northern <b>clay</b> can be farmed.</p>
     </div>
     <div class="panel gold" data-step="1">
       <p class="tag">Technology two</p>
       <h3>The horse collar</h3>
-      <p>A rigid padded collar rests on the <b>shoulders</b> instead of pressing on the windpipe.</p>
-      <p>A horse can now pull hard without choking, and it works faster and longer than an ox, though it eats more.</p>
+      <p>Sits on the <b>shoulders</b>, not the windpipe.</p>
+      <p>Pulls hard. Faster than an ox.</p>
     </div>
     <div class="panel rust" data-step="2">
       <p class="tag">Technology three</p>
       <h3>The three-field system</h3>
-      <p>Autumn grain, then spring grain and <b>legumes</b>, then one field resting.</p>
-      <p>Land in use rises from about a half to about <b>two thirds</b>. The legumes restore the soil, and the oats feed the horse.</p>
+      <p>Autumn grain &middot; spring <b>legumes</b> &middot; one resting.</p>
+      <p>Land in use: half &rarr; <b>two thirds</b>.</p>
     </div>
   </div>
   <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
-    <p>More food, then more people, then more people than the fields need. <b>That surplus is what makes towns possible.</b></p>
+    <p>More food &rarr; more people &rarr; a surplus. <b>Surplus makes towns.</b></p>
   </div>
 </section>
 
@@ -720,80 +723,82 @@ function onImgFail(el, localSrc) {
   data-notes="Ten seconds. Point back at the three-part frame. Politics is handled, the economy is handled, and the question left is what a person in Ireland and a person in Poland could possibly have in common when there are hundreds of borders between them.">
   <p class="part">Part Three</p>
   <h1>The Church</h1>
-  <p class="lede">The one institution that crossed every border, in a place that had hundreds of them.</p>
+  <p class="lede">One institution, crossing hundreds of borders.</p>
 </section>
 
 <!-- ═════ 13 THE CHURCH AS THE GLUE ════════════════════════════════════════ -->
 <section class="slide" data-title="The Church: Social Stability"
   data-notes="The framing question, asked out loud first: <b>what did a farmer in Ireland and a farmer in Poland actually have in common?</b> Not a ruler, not a language, not a currency, not a law. One thing: the same Church.<br><br>Reveal the tiles and make each one concrete rather than abstract.<br><b>One language.</b> The mass was in Latin everywhere, so an educated person could travel a thousand miles and still function. That is closer to what English does today than to anything about religion.<br><b>The parish.</b> In most villages the church was the only institution of any kind, and it kept the only records that a person&rsquo;s birth, marriage and death ever appeared in. If you want to know who lived somewhere in 1300, you are reading a parish register.<br><b>Monasteries.</b> Schools, hospitals, farms, and the copying of books. Almost all Latin literacy ran through them. Every literate clerk a king employed was trained by the Church.<br><b>Canon law and the tithe.</b> Its own written law, its own courts trying its own people, and a tenth of production, which was the closest thing to a tax that reached everyone in Europe.<br><br><b>The takeaway is the whole point of Part Three, so land it explicitly:</b> unifying does not mean everyone believed the same thing. It means one institution was <b>doing the jobs a government does</b>, across a continent that did not have one. Records, courts, schools, hospitals, revenue.<br><br>If you taught 1.5, this is the moment for the callback: what does a Church crossing European borders have in common with Islam crossing Hausa trade networks? Shared belief as an <b>administrative tool</b>.">
-  <p class="eyebrow">Part Three &middot; Social Stability</p>
-  <h2>What made one Church a unifying force</h2>
+  <p class="eyebrow">Part Three &middot; Social</p>
+  <h2>What made it unifying</h2>
   <div class="rule"></div>
   <div class="stat-grid">
     <div class="stat-tile">
       <p class="num" style="font-size:24px">One language</p>
-      <p class="lbl">The same Latin mass in Ireland and in Poland. An educated person could travel and still be understood.</p>
+      <p class="lbl">The same Latin mass everywhere</p>
     </div>
     <div class="stat-tile gold" data-step="1">
       <p class="num" style="font-size:24px">The parish</p>
-      <p class="lbl">In most villages, the only institution of any kind. Birth, marriage and death were recorded nowhere else.</p>
+      <p class="lbl">The only institution in the village. Kept the records</p>
     </div>
     <div class="stat-tile rust" data-step="2">
       <p class="num" style="font-size:24px">Monasteries</p>
-      <p class="lbl">Schools, hospitals, farms, and the copying of books. Nearly all Latin literacy ran through them.</p>
+      <p class="lbl">Schools, hospitals, books, nearly all literacy</p>
     </div>
     <div class="stat-tile iron" data-step="3">
-      <p class="num" style="font-size:24px">Canon law &amp; the tithe</p>
-      <p class="lbl">Its own written law and its own courts, plus a tenth of production. The closest thing to a tax that reached everyone.</p>
+      <p class="num" style="font-size:24px">Law &amp; the tithe</p>
+      <p class="lbl">Its own courts. A tenth of everything</p>
     </div>
   </div>
   <div class="writethis" data-step="4">
     <p class="tag">Key Takeaway</p>
-    <p>Unifying does not mean everyone agreed. It means one institution <b>did the jobs a government does</b>, across a continent that did not have one.</p>
+    <p>One institution <b>doing a government&rsquo;s jobs.</b> On a continent with no government.</p>
   </div>
 </section>
 
 <!-- ═════ 14 THE CHURCH ABOVE KINGS ════════════════════════════════════════ -->
 <section class="slide" data-title="What Happened When a King Said No"
   data-notes="Tell this one as a story, because it is a story, and it proves the point better than any list.<br><br>King John of England refuses to accept the pope&rsquo;s choice of Archbishop of Canterbury. Innocent III responds in stages, and each stage is worse than the last.<br><br><b>1208, the interdict.</b> The churches of England close. No mass, no marriage, no burial in consecrated ground, for everyone in the kingdom. Make them sit with that for a second: this punishes <b>every person in England</b> in order to pressure one man, and it worked because people genuinely believed their families&rsquo; souls were at stake. It ran for over six years.<br><b>1209, excommunication.</b> John himself is cut off, and here is the part that matters for this lesson: the pope <b>formally released John&rsquo;s subjects from their oaths of loyalty</b>.<br><b>1213, submission.</b> Facing invasion with barons who would not back him, John gives in, and hands England to the pope to hold as a fief. The King of England becomes, on paper, the pope&rsquo;s vassal.<br><b>1215.</b> The barons force Magna Carta on him in June, and Innocent III declares it invalid ten weeks later, in August.<br><br><b>Now connect it straight back to slide 8, which is why this slide exists here.</b> The pope sent no army to England. He did not need one. Feudalism runs on sworn personal oaths, and the Church was the institution that made an oath binding, so the Church could <b>dissolve</b> them. A king whose vassals are released from their promises has nothing left. That is spiritual authority converted directly into political power.">
-  <p class="eyebrow">Part Three &middot; Spiritual Authority as Political Power</p>
+  <p class="eyebrow">Part Three &middot; Social</p>
   <h2>What happened when a king said no</h2>
   <div class="rule"></div>
   <div class="flow">
     <div class="panel">
       <p class="tag">1208</p>
       <h3>Interdict</h3>
-      <p>The pope <b>closes the churches of England</b>. No mass, no marriage, no burial in holy ground, for the whole kingdom. It lasted over six years.</p>
+      <p><b>Every church closes.</b></p>
+      <p>No mass. No marriage. No burial.</p>
     </div>
     <div class="arrow">&rarr;</div>
     <div class="panel gold" data-step="1">
       <p class="tag">1209</p>
       <h3>Excommunication</h3>
-      <p>John is cut off from the Church, and his subjects are <b>formally released from their oaths of loyalty</b> to him.</p>
+      <p>Subjects <b>released from their oaths</b>.</p>
     </div>
     <div class="arrow" data-step="1">&rarr;</div>
     <div class="panel rust" data-step="2">
       <p class="tag">1213</p>
       <h3>Submission</h3>
-      <p>Facing invasion and barons who will not back him, John gives in and <b>hands England to the pope</b> to hold as a fief.</p>
+      <p><b>England becomes a papal fief.</b></p>
     </div>
     <div class="arrow" data-step="2">&rarr;</div>
     <div class="panel iron" data-step="3">
       <p class="tag">1215</p>
       <h3>And again</h3>
-      <p>The barons force <b>Magna Carta</b> on John in June. Innocent III declares it invalid <b>ten weeks later</b>.</p>
+      <p><b>Magna Carta</b>, June.</p>
+      <p>The pope <b>voids it</b>, August.</p>
     </div>
   </div>
   <div class="writethis" data-step="4">
     <p class="tag">Key Takeaway</p>
-    <p>The pope sent no army. He did not need one. <b>Feudalism ran on sworn oaths, and the Church could dissolve them.</b></p>
+    <p>No army needed. <b>Feudalism ran on oaths. The Church could dissolve them.</b></p>
   </div>
 </section>
 
 <!-- ═════ 15 COMPARISON ════════════════════════════════════════════════════ -->
 <section class="slide" data-title="Comparing Europe and Song China"
   data-notes="This grid is in their eBook chapter, so <b>tell them not to copy it</b>. Read the rows across and spend the time on the reasoning instead.<br><br>Work one row properly rather than all four thinly. <b>Who staffs the government</b> is the best one: in Song China you get the job by passing an exam, and in Europe you get it by being born to the right father or by joining the Church. Ask what each system produces. An exam produces officials loyal to the state that appointed them. Inheritance produces nobles loyal to their own family and their own land.<br><br><b>The trap to name out loud.</b> An answer that says Song China was more advanced earns nothing, and it is also not a historical claim. The AP question is always <b>why the difference existed</b>, and today they have the causal answer in their hands: Rome&rsquo;s collapse in the west removed the tax system, and without tax revenue you cannot pay officials, so you pay in land, and land makes the people you paid independent of you.<br><br>That single sentence is a complete comparison response. Say it slowly enough that they can write it.">
-  <p class="eyebrow">The Comparison Your Checkpoint Wants</p>
+  <p class="eyebrow">The Comparison</p>
   <h2>Europe and Song China, side by side</h2>
   <div class="rule"></div>
   <table class="compare">
@@ -801,26 +806,26 @@ function onImgFail(el, localSrc) {
       <tr><th></th><th>Medieval Europe</th><th>Song China</th></tr>
     </thead>
     <tbody>
-      <tr><th>Who collects taxes</th><td>A lord collects locally. A king has to ask.</td><td>Salaried officials collect for the emperor.</td></tr>
-      <tr data-step="1"><th>Who staffs it</th><td>Nobles who inherited land, and churchmen.</td><td>Scholars who passed an exam.</td></tr>
-      <tr data-step="2"><th>What binds it</th><td>Personal oaths, and a shared Church.</td><td>A bureaucracy reporting to the center.</td></tr>
-      <tr data-step="3"><th>Where power sits</th><td><b>Decentralized</b>, in hundreds of places.</td><td><b>Centralized</b>, in one.</td></tr>
+      <tr><th>Taxes</th><td>Lords collect. Kings ask.</td><td>Officials collect.</td></tr>
+      <tr data-step="1"><th>Who staffs it</th><td>Born to it, or the Church.</td><td>Passed an exam.</td></tr>
+      <tr data-step="2"><th>What binds it</th><td>Oaths. A shared Church.</td><td>A bureaucracy.</td></tr>
+      <tr data-step="3"><th>Power sits</th><td><b>Decentralized.</b> Hundreds of places.</td><td><b>Centralized.</b> One place.</td></tr>
     </tbody>
   </table>
   <div class="writethis" data-step="4">
     <p class="tag">Key Takeaway &middot; this grid is in your eBook, do not copy it</p>
-    <p>Ranking them earns nothing. <b>Explaining why the difference existed earns everything.</b></p>
+    <p>Ranking earns nothing. <b>Explaining why earns everything.</b></p>
   </div>
 </section>
 
 <!-- ═════ 16 AP TAKEAWAY ═══════════════════════════════════════════════════ -->
 <section class="slide" data-title="AP Takeaway"
   data-notes="Close by naming the two checkpoints and what each one is actually asking for.<br><br><b>Checkpoint 1</b> is the fragmentation question, and it is unaided on purpose, no Socrates. It is your diagnostic: can they show this without help. The strongest short answer runs land for loyalty, then a private promise between two people, then a king who cannot command a knight who never promised him anything.<br><br><b>Checkpoint 2</b> has two halves and students routinely answer only the first. The Church half they got today. <b>The change over time half is in their First &amp; 10 reading and their eBook chapter</b>, which is where towns, guilds and universities live, so say that out loud and point at the chips. A student who writes only about the Church has written half an answer.<br><br>Last line, and it is the one that moves scores: <b>name one system, use one specific piece of evidence, and explain why rather than only what.</b>">
-  <p class="eyebrow">What You Must Be Able To Do</p>
+  <p class="eyebrow">The Takeaway</p>
   <h2>The takeaway</h2>
   <div class="rule"></div>
   <div class="body top">
-    <p class="tag" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized)">Checkpoint 1 &middot; Fragmented power, and no coach</p>
+    <p class="tag" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized)">Checkpoint 1 &middot; Fragmented power &middot; no coach</p>
     <div class="chips">
       <span class="chip">Decentralization</span>
       <span class="chip">Feudalism</span>
@@ -836,11 +841,11 @@ function onImgFail(el, localSrc) {
       <span class="chip">Guilds</span>
       <span class="chip">Universities</span>
     </div>
-    <p data-step="1" style="font-size:17px;margin:14px 0 0;color:var(--iron)">Today covered the Church. <b>Towns, guilds and universities are in your First &amp; 10 reading and your eBook chapter</b>, and Checkpoint 2 needs both halves.</p>
+    <p data-step="1" style="font-size:18px;margin:16px 0 0;color:var(--iron)">Towns, guilds, universities: <b>your reading and eBook</b>.</p>
   </div>
   <div class="writethis" data-step="2">
     <p class="tag">Key Takeaway &middot; both checkpoints</p>
-    <p>Name <b>one</b> system. Use <b>specific</b> evidence. Explain <b>why</b>, not only what.</p>
+    <p>Name <b>one</b> system. Use <b>specific</b> evidence. Explain <b>why</b>.</p>
   </div>
 </section>
 
