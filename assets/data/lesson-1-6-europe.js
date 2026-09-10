@@ -54,9 +54,13 @@ runOfShow:{
         {id:'church',title:'The Church: The One Institution Everyone Shared',minutes:2,
           landTheseIdeas:['One Latin liturgy, the parish as the only village institution and the only keeper of records, monasteries as schools and hospitals, canon law and its own courts, and the tithe.','Unifying does not mean everyone agreed. It means one institution did a government’s jobs across a continent that had no government.'],
           acrossTheWorld:{comparisonTopic:'1.5 Ethiopia and the Hausa kingdoms',teacherPrompt:'What do a Christian Church crossing European borders and Islam crossing Hausa trade networks have in common as tools of state power?',listenFor:['shared belief','legitimacy','institution','administration'],target:'A shared religious institution can unify a politically fragmented region.'}},
-        {id:'church-power',title:'What Happened When a King Said No',minutes:3,
-          landTheseIdeas:['England under interdict in 1208, John excommunicated in 1209 with his subjects formally released from their oaths, his submission in 1213, and Magna Carta annulled ten weeks after it was sealed in 1215.','The pope sent no army because he did not need one: feudalism ran on sworn oaths and the Church could dissolve them.'],
-          apMove:'This is the slide that converts “the Church was powerful” into a mechanism. Make them state how spiritual authority became political power.'}
+        {id:'church-power-1',title:'When a King Said No',minutes:2,
+          landTheseIdeas:['John refuses the pope’s choice of archbishop, so England goes under interdict in 1208: every church shut, no weddings and no funerals, for over six years.','Excommunication in 1209 formally released John’s subjects from their oaths of loyalty to him.'],
+          apMove:'Ask it before advancing: if your nobles are told their promises to you no longer count, what do you actually have left? That question is the next slide.'},
+        {id:'church-power-2',title:'The King Gives In',minutes:1,
+          landTheseIdeas:['John submits in 1213 and holds England from the pope as a fief, which makes the king of England somebody’s vassal, the same word slide 8 taught.','The barons force Magna Carta in June 1215 and the pope declares it invalid ten weeks later.'],
+          keyPoint:'The pope sent no soldiers because he did not need any: feudalism ran on sworn oaths and the Church could cancel them. That is spiritual authority converted into political power, and it is the strongest single piece of evidence for Checkpoint 2.',
+          avoid:['Magna Carta as a bill of rights for ordinary people; it was a deal between a king and his barons about their own rights']}
       ]},
     {id:'checkpoint1',label:'Checkpoint 1',range:'48–56 min',minutes:8,
       teacherRole:'Circulate and diagnose.',

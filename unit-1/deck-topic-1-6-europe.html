@@ -74,7 +74,7 @@ body{font-family:var(--font-body);color:var(--ink)}
 }
 h1{font-family:var(--font-display);font-weight:900;font-size:64px;line-height:1.06;margin:0 0 18px;letter-spacing:.01em}
 h2{font-family:var(--font-display);font-weight:800;font-size:44px;line-height:1.12;margin:0 0 8px;color:var(--steel)}
-h3{font-family:var(--font-ui);font-weight:800;font-size:21px;line-height:1.25;margin:0 0 10px;color:var(--oxidized);letter-spacing:.01em}
+h3{font-family:var(--font-ui);font-weight:800;font-size:24px;line-height:1.25;margin:0 0 10px;color:var(--oxidized);letter-spacing:.01em}
 .deck-sub{font-size:22px;line-height:1.45;color:var(--gunmetal);margin:0 0 26px;font-style:italic}
 .slide.dark .deck-sub{color:var(--sandstone)}
 p{font-size:20px;line-height:1.55;margin:0 0 16px}
@@ -91,7 +91,7 @@ b,strong{color:var(--oxidized);font-weight:700}
 ul.points{list-style:none;margin:0;padding:0}
 ul.points li{
   position:relative;padding-left:38px;margin-bottom:20px;
-  font-size:22px;line-height:1.5;
+  font-size:25px;line-height:1.5;
 }
 ul.points li::before{
   content:"";position:absolute;left:0;top:.52em;
@@ -124,11 +124,11 @@ ul.points li::before{
 .panel.gold{border-top-color:var(--gold)}
 .panel.rust{border-top-color:var(--rust)}
 .panel.iron{border-top-color:var(--iron)}
-.panel p{font-size:18px;line-height:1.5;margin:0 0 12px}
+.panel p{font-size:21px;line-height:1.5;margin:0 0 13px}
 .panel p:last-child{margin-bottom:0}
 .panel .tag{
-  font-family:var(--font-ui);font-size:12px;font-weight:800;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--iron);margin:0 0 6px;
+  font-family:var(--font-ui);font-size:14px;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--iron);margin:0 0 7px;
 }
 
 /* ── Figures ──────────────────────────────────────────────────────────── */
@@ -140,7 +140,7 @@ figure img{
 figure.contain img{object-fit:contain;background:var(--clean);padding:8px}
 figure img.is-fallback{object-fit:contain;background:var(--clean);padding:14px}
 figcaption{
-  font-family:var(--font-ui);font-size:13px;line-height:1.45;color:var(--iron);
+  font-family:var(--font-ui);font-size:15px;line-height:1.45;color:var(--iron);
   margin-top:10px;font-weight:500;
 }
 /* A failed image says so, loudly, instead of quietly looking like a design
@@ -159,7 +159,7 @@ figcaption{
   border-radius:0;padding:16px 26px;
 }
 .hero-card .tag{font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
-.hero-card p{margin:0;font-size:19px;line-height:1.4;color:var(--paper)}
+.hero-card p{margin:0;font-size:21px;line-height:1.4;color:var(--paper)}
 .hero-card b{color:var(--gold)}
 .hero-warn{position:absolute;left:26px;top:26px;right:26px;background:rgba(168,101,45,.95);color:var(--clean);
   font-family:var(--font-ui);font-weight:700;font-size:14px;border-radius:8px;padding:10px 16px;display:none}
@@ -176,25 +176,25 @@ figcaption{
 .stat-tile.rust{border-top-color:var(--rust)}
 .stat-tile.iron{border-top-color:var(--iron)}
 .stat-tile .num{font-family:var(--font-display);font-weight:900;font-size:34px;color:var(--oxidized);line-height:1.05}
-.stat-tile .lbl{font-family:var(--font-ui);font-weight:700;font-size:14px;color:var(--iron);margin-top:10px;line-height:1.32}
+.stat-tile .lbl{font-family:var(--font-ui);font-weight:700;font-size:17px;color:var(--iron);margin-top:10px;line-height:1.32}
 
 /* ── Spotlight: one image beside a short stack of facts ──────────────── */
 .spotlight{display:flex;gap:34px;flex:1;min-height:0;align-items:stretch}
 .spotlight figure{flex:0 0 40%}
 .spotlight .facts{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;min-width:0}
 .spotlight .fact{padding-left:20px;border-left:3px solid var(--bronze)}
-.spotlight .fact > b{display:block;color:var(--oxidized);font-family:var(--font-ui);font-size:12px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:4px}
-.spotlight .fact p{margin:0;font-size:19px;line-height:1.42}
+.spotlight .fact > b{display:block;color:var(--oxidized);font-family:var(--font-ui);font-size:14px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:4px}
+.spotlight .fact p{margin:0;font-size:21px;line-height:1.42}
 
 /* ── Org chart: a hierarchy diagram, for a concept with no honest photo ── */
 .orgchart{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:12px 30px;font-family:var(--font-ui);font-weight:800;font-size:19px;letter-spacing:.03em}
+.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:12px 30px;font-family:var(--font-ui);font-weight:800;font-size:21px;letter-spacing:.03em}
 .org-line{width:2px;height:24px;background:var(--rule)}
 .org-row{display:flex;gap:20px;justify-content:center}
 .org-branch{display:flex;flex-direction:column;align-items:center;width:200px}
 .org-node{background:var(--clean);border:2px solid var(--bronze);border-radius:8px;padding:12px 16px;
-  font-family:var(--font-ui);font-weight:800;font-size:16px;color:var(--oxidized);text-align:center;width:100%}
-.org-sub{font-size:14px;color:var(--iron);margin-top:6px;text-align:center;font-family:var(--font-ui);line-height:1.4}
+  font-family:var(--font-ui);font-weight:800;font-size:19px;color:var(--oxidized);text-align:center;width:100%}
+.org-sub{font-size:16px;color:var(--iron);margin-top:6px;text-align:center;font-family:var(--font-ui);line-height:1.4}
 
 /* ── Flow: a numbered pipeline with connectors, for a mechanism ──────── */
 .flow{display:flex;align-items:stretch;gap:0;flex:0 0 auto;margin-block:auto;min-height:0}
@@ -206,20 +206,20 @@ figcaption{
    Row padding stays tight; Cinzel runs about 50% wider than the Georgia
    fallback and a table that fits at your desk can overflow the fixed
    board once the real fonts load. Re-measure before loosening this. */
-table.compare{width:100%;border-collapse:collapse;font-size:18px}
+table.compare{width:100%;border-collapse:collapse;font-size:21px;margin-block:auto}
 table.compare th,table.compare td{
-  text-align:left;padding:10px 16px;border-bottom:1px solid var(--rule);vertical-align:top;
+  text-align:left;padding:14px 18px;border-bottom:1px solid var(--rule);vertical-align:top;
 }
 table.compare thead th{
-  font-family:var(--font-ui);font-size:15px;font-weight:800;letter-spacing:.12em;
+  font-family:var(--font-ui);font-size:16px;font-weight:800;letter-spacing:.12em;
   text-transform:uppercase;color:var(--clean);background:var(--gunmetal);
   border-bottom:none;
 }
 table.compare thead th:first-child{background:var(--steel);border-radius:8px 0 0 0}
 table.compare thead th:last-child{border-radius:0 8px 0 0}
 table.compare tbody th{
-  font-family:var(--font-ui);font-size:16px;font-weight:800;color:var(--oxidized);
-  letter-spacing:.06em;text-transform:uppercase;width:172px;background:var(--tint,#f6efe1);
+  font-family:var(--font-ui);font-size:17px;font-weight:800;color:var(--oxidized);
+  letter-spacing:.06em;text-transform:uppercase;width:220px;background:var(--tint,#f6efe1);
 }
 table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border-bottom:none}
 
@@ -229,18 +229,18 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
   border-radius:10px;padding:15px 24px;border-left:6px solid var(--gold);
 }
 .writethis .tag{
-  font-family:var(--font-ui);font-size:11px;font-weight:800;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--gold);margin:0 0 5px;
+  font-family:var(--font-ui);font-size:13px;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 6px;
 }
-.writethis p{margin:0;font-size:21px;line-height:1.35;color:var(--paper)}
+.writethis p{margin:0;font-size:23px;line-height:1.35;color:var(--paper)}
 .writethis b,.writethis strong{color:var(--gold)}
 
 /* ── Term chips ───────────────────────────────────────────────────────── */
 .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:4px}
 .chip{
-  font-family:var(--font-ui);font-size:15px;font-weight:700;letter-spacing:.02em;
+  font-family:var(--font-ui);font-size:17px;font-weight:700;letter-spacing:.02em;
   background:#f6efe1;color:var(--oxidized);border:1px solid var(--rule);
-  border-radius:999px;padding:7px 15px;
+  border-radius:999px;padding:8px 17px;
 }
 .slide.dark .chip{background:rgba(201,164,106,.14);color:var(--gold);border-color:rgba(201,164,106,.38)}
 
@@ -366,20 +366,20 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 .def{display:grid;grid-template-columns:196px 1fr;gap:24px;align-items:baseline;
   padding-bottom:10px;border-bottom:1px solid var(--rule-soft)}
 .def:last-child{border-bottom:none;padding-bottom:0}
-.def dt{font-family:var(--font-ui);font-weight:800;font-size:19px;color:var(--oxidized)}
-.def dd{margin:0;font-size:19px;line-height:1.44}
+.def dt{font-family:var(--font-ui);font-weight:800;font-size:22px;color:var(--oxidized)}
+.def dd{margin:0;font-size:22px;line-height:1.44}
 
 /* ── Contrast: one whole against many pieces ──────────────────────────
    The decentralization slide. "Power broken into hundreds of small local
    pieces" is a shape, and a student who sees the shape keeps the word. */
 .contrast{display:grid;grid-template-columns:1fr 1fr;gap:38px;flex:1;min-height:0}
 .cblock{display:flex;flex-direction:column;min-height:0}
-.cblock .clabel{font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.16em;
+.cblock .clabel{font-family:var(--font-ui);font-weight:800;font-size:15px;letter-spacing:.16em;
   text-transform:uppercase;color:var(--oxidized);margin:0 0 10px}
-.cblock .cnote{font-family:var(--font-ui);font-size:16px;line-height:1.4;color:var(--iron);margin:12px 0 0}
+.cblock .cnote{font-family:var(--font-ui);font-size:18px;line-height:1.4;color:var(--iron);margin:12px 0 0}
 .one-whole{flex:1;min-height:0;background:var(--gunmetal);border-radius:10px;
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;
-  color:var(--paper);font-family:var(--font-ui);font-weight:800;font-size:18px;
+  color:var(--paper);font-family:var(--font-ui);font-weight:800;font-size:21px;
   letter-spacing:.03em;text-align:center;padding:18px}
 .many-pieces{flex:1;min-height:0;display:grid;grid-template-columns:repeat(7,1fr);
   grid-auto-rows:1fr;gap:6px}
@@ -393,7 +393,7 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
    file: putting serfs on the feudal ladder is the error it replaces. */
 .org-bar{height:2px;background:var(--rule);border-radius:2px}
 .org-exchange{display:flex;align-items:center;justify-content:center;gap:26px;margin:6px 0 7px}
-.org-exchange span{font-family:var(--font-ui);font-weight:800;font-size:12px;letter-spacing:.09em;
+.org-exchange span{font-family:var(--font-ui);font-weight:800;font-size:14px;letter-spacing:.09em;
   text-transform:uppercase;color:var(--iron);white-space:nowrap}
 .org-exchange span b{color:var(--bronze);font-size:14px}
 .org-divide{display:flex;align-items:center;gap:15px;width:82%;margin:11px 0 9px}
@@ -401,7 +401,7 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 .org-divide span{font-family:var(--font-ui);font-weight:800;font-size:12px;letter-spacing:.13em;
   text-transform:uppercase;color:var(--rust);white-space:nowrap}
 .org-base{background:#f6efe1;border:2px solid var(--iron);border-radius:8px;padding:9px 26px;
-  font-family:var(--font-ui);font-weight:800;font-size:17px;color:var(--gunmetal);text-align:center}
+  font-family:var(--font-ui);font-weight:800;font-size:19px;color:var(--gunmetal);text-align:center}
 </style>
 </head>
 <body>
@@ -756,46 +756,63 @@ function onImgFail(el, localSrc) {
   </div>
 </section>
 
-<!-- ═════ 14 THE CHURCH ABOVE KINGS ════════════════════════════════════════ -->
-<section class="slide" data-title="What Happened When a King Said No"
-  data-notes="Tell this one as a story, because it is a story, and it proves the point better than any list.<br><br>King John of England refuses to accept the pope&rsquo;s choice of Archbishop of Canterbury. Innocent III responds in stages, and each stage is worse than the last.<br><br><b>1208, the interdict.</b> The churches of England close. No mass, no marriage, no burial in consecrated ground, for everyone in the kingdom. Make them sit with that for a second: this punishes <b>every person in England</b> in order to pressure one man, and it worked because people genuinely believed their families&rsquo; souls were at stake. It ran for over six years.<br><b>1209, excommunication.</b> John himself is cut off, and here is the part that matters for this lesson: the pope <b>formally released John&rsquo;s subjects from their oaths of loyalty</b>.<br><b>1213, submission.</b> Facing invasion with barons who would not back him, John gives in, and hands England to the pope to hold as a fief. The King of England becomes, on paper, the pope&rsquo;s vassal.<br><b>1215.</b> The barons force Magna Carta on him in June, and Innocent III declares it invalid ten weeks later, in August.<br><br><b>Now connect it straight back to slide 8, which is why this slide exists here.</b> The pope sent no army to England. He did not need one. Feudalism runs on sworn personal oaths, and the Church was the institution that made an oath binding, so the Church could <b>dissolve</b> them. A king whose vassals are released from their promises has nothing left. That is spiritual authority converted directly into political power.">
+<!-- ═════ 14 THE CHURCH ABOVE KINGS, PART ONE ══════════════════════════
+     Four dated panels plus a setup line does not fit one board once the card
+     type is sized for a projector, so the story runs across two slides: the
+     punishment, then the surrender. -->
+<section class="slide" data-title="When a King Said No"
+  data-notes="Tell this as a story. It proves the Church&rsquo;s power better than any list can.<br><br><b>The setup.</b> King John of England refuses to accept the pope&rsquo;s choice of Archbishop of Canterbury. Pope Innocent III does not send an army. He escalates, in stages, and each stage is worse than the last.<br><br><b>1208, the interdict.</b> Every church in England shuts. No mass, no weddings, no funerals in holy ground, for everyone in the country. Make them sit with it: this punishes <b>every person in England</b> to pressure one man, and it worked because people genuinely believed their families&rsquo; souls were at stake. It ran over six years.<br><br><b>1209, excommunication.</b> John himself is thrown out of the Church, and here is the part that matters for today: the pope <b>formally released John&rsquo;s subjects from their oaths of loyalty</b>. Point back at slide 8 while you say it.<br><br>Ask before you advance: <b>if your nobles are told their promises to you do not count any more, what do you actually have left?</b> The answer is nothing, and that is the next slide.">
   <p class="eyebrow">Part Three &middot; Social</p>
-  <h2>What happened when a king said no</h2>
+  <h2>When a king said no</h2>
   <div class="rule"></div>
-  <div class="flow">
+  <p style="font-size:22px;margin:0 0 22px;color:var(--gunmetal)">King John refused the pope&rsquo;s choice of archbishop. The pope did not send an army. He did this instead.</p>
+  <div class="cols c2">
     <div class="panel">
       <p class="tag">1208</p>
       <h3>Interdict</h3>
-      <p><b>Every church closes.</b></p>
-      <p>No mass. No marriage. No burial.</p>
+      <p>The pope <b>closes every church in England</b>.</p>
+      <p>No weddings. No funerals. No services. For six years.</p>
     </div>
-    <div class="arrow">&rarr;</div>
     <div class="panel gold" data-step="1">
       <p class="tag">1209</p>
       <h3>Excommunication</h3>
-      <p>Subjects <b>released from their oaths</b>.</p>
-    </div>
-    <div class="arrow" data-step="1">&rarr;</div>
-    <div class="panel rust" data-step="2">
-      <p class="tag">1213</p>
-      <h3>Submission</h3>
-      <p><b>England becomes a papal fief.</b></p>
-    </div>
-    <div class="arrow" data-step="2">&rarr;</div>
-    <div class="panel iron" data-step="3">
-      <p class="tag">1215</p>
-      <h3>And again</h3>
-      <p><b>Magna Carta</b>, June.</p>
-      <p>The pope <b>voids it</b>, August.</p>
+      <p>John is <b>thrown out of the Church</b>.</p>
+      <p>His nobles are told their <b>oaths to him no longer count</b>.</p>
     </div>
   </div>
-  <div class="writethis" data-step="4">
+  <div class="writethis" data-step="2">
     <p class="tag">Key Takeaway</p>
-    <p>No army needed. <b>Feudalism ran on oaths. The Church could dissolve them.</b></p>
+    <p>The pope punished <b>an entire country</b> to pressure one man, and it worked.</p>
   </div>
 </section>
 
-<!-- ═════ 15 COMPARISON ════════════════════════════════════════════════════ -->
+<!-- ═════ 15 THE CHURCH ABOVE KINGS, PART TWO ══════════════════════════ -->
+<section class="slide" data-title="The King Gives In"
+  data-notes="Finish the story fast, then land the mechanism.<br><br><b>1213.</b> Facing a French invasion and barons who will not fight for him, John gives in. He hands England to the pope and receives it back to hold as a fief. Say the consequence plainly, because it is the callback that makes the whole block hang together: <b>the King of England is now somebody&rsquo;s vassal.</b> Point at slide 8 again.<br><br><b>1215.</b> The barons force Magna Carta on John in June. Innocent III declares it invalid in August, ten weeks later. Worth one line: Magna Carta was a deal between a king and his barons about <b>their</b> rights, not a bill of rights for ordinary people. That misreading is extremely common.<br><br><b>Now the takeaway, and it is the point of Part Three.</b> Ask: how many soldiers did the pope send to England? None. He did not need any. Feudalism ran on <b>sworn oaths</b>, the Church was the institution that made an oath binding, so the Church could switch them off. That is spiritual authority converted straight into political power, and it is the strongest single piece of evidence for Checkpoint 2.">
+  <p class="eyebrow">Part Three &middot; Social</p>
+  <h2>The king gives in</h2>
+  <div class="rule"></div>
+  <div class="cols c2">
+    <div class="panel rust">
+      <p class="tag">1213</p>
+      <h3>Surrender</h3>
+      <p>John hands England to the pope and gets it back as a <b>fief</b>.</p>
+      <p>The king of England is now a <b>vassal</b>.</p>
+    </div>
+    <div class="panel iron" data-step="1">
+      <p class="tag">1215</p>
+      <h3>Magna Carta</h3>
+      <p>Nobles force John to sign away some of his power.</p>
+      <p>The pope <b>cancels it ten weeks later</b>.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="2">
+    <p class="tag">Key Takeaway</p>
+    <p>The pope sent no soldiers. He did not need to. <b>Feudalism ran on oaths, and the Church could cancel them.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 16 COMPARISON ════════════════════════════════════════════════════ -->
 <section class="slide" data-title="Comparing Europe and Song China"
   data-notes="This grid is in their eBook chapter, so <b>tell them not to copy it</b>. Read the rows across and spend the time on the reasoning instead.<br><br>Work one row properly rather than all four thinly. <b>Who staffs the government</b> is the best one: in Song China you get the job by passing an exam, and in Europe you get it by being born to the right father or by joining the Church. Ask what each system produces. An exam produces officials loyal to the state that appointed them. Inheritance produces nobles loyal to their own family and their own land.<br><br><b>The trap to name out loud.</b> An answer that says Song China was more advanced earns nothing, and it is also not a historical claim. The AP question is always <b>why the difference existed</b>, and today they have the causal answer in their hands: Rome&rsquo;s collapse in the west removed the tax system, and without tax revenue you cannot pay officials, so you pay in land, and land makes the people you paid independent of you.<br><br>That single sentence is a complete comparison response. Say it slowly enough that they can write it.">
   <p class="eyebrow">The Comparison</p>
@@ -814,11 +831,11 @@ function onImgFail(el, localSrc) {
   </table>
   <div class="writethis" data-step="4">
     <p class="tag">Key Takeaway &middot; this grid is in your eBook, do not copy it</p>
-    <p>Ranking earns nothing. <b>Explaining why earns everything.</b></p>
+    <p>Do not argue that one was better. <b>Explain why the two turned out so differently.</b></p>
   </div>
 </section>
 
-<!-- ═════ 16 AP TAKEAWAY ═══════════════════════════════════════════════════ -->
+<!-- ═════ 17 AP TAKEAWAY ═══════════════════════════════════════════════════ -->
 <section class="slide" data-title="AP Takeaway"
   data-notes="Close by naming the two checkpoints and what each one is actually asking for.<br><br><b>Checkpoint 1</b> is the fragmentation question, and it is unaided on purpose, no Socrates. It is your diagnostic: can they show this without help. The strongest short answer runs land for loyalty, then a private promise between two people, then a king who cannot command a knight who never promised him anything.<br><br><b>Checkpoint 2</b> has two halves and students routinely answer only the first. The Church half they got today. <b>The change over time half is in their First &amp; 10 reading and their eBook chapter</b>, which is where towns, guilds and universities live, so say that out loud and point at the chips. A student who writes only about the Church has written half an answer.<br><br>Last line, and it is the one that moves scores: <b>name one system, use one specific piece of evidence, and explain why rather than only what.</b>">
   <p class="eyebrow">The Takeaway</p>
@@ -854,7 +871,7 @@ function onImgFail(el, localSrc) {
 
 <div id="hud">
   <button id="btn-prev" type="button" aria-label="Previous slide">&larr;</button>
-  <span id="counter">1 / 16</span>
+  <span id="counter">1 / 17</span>
   <button id="btn-next" type="button" aria-label="Next slide">&rarr;</button>
   <button id="btn-ov"  type="button">All slides</button>
   <button id="btn-nt"  type="button">Notes</button>
