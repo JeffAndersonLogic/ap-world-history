@@ -188,13 +188,13 @@ figcaption{
 
 /* ── Org chart: a hierarchy diagram, for a concept with no honest photo ── */
 .orgchart{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:12px 30px;font-family:var(--font-ui);font-weight:800;font-size:21px;letter-spacing:.03em}
+.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:8px 30px;font-family:var(--font-ui);font-weight:800;font-size:21px;letter-spacing:.03em}
 .org-line{width:2px;height:24px;background:var(--rule)}
 .org-row{display:flex;gap:20px;justify-content:center}
 .org-branch{display:flex;flex-direction:column;align-items:center;width:200px}
-.org-node{background:var(--clean);border:2px solid var(--bronze);border-radius:8px;padding:12px 16px;
+.org-node{background:var(--clean);border:2px solid var(--bronze);border-radius:8px;padding:9px 16px;
   font-family:var(--font-ui);font-weight:800;font-size:19px;color:var(--oxidized);text-align:center;width:100%}
-.org-sub{font-size:16px;color:var(--iron);margin-top:6px;text-align:center;font-family:var(--font-ui);line-height:1.4}
+.org-sub{font-size:16px;color:var(--iron);margin-top:4px;text-align:center;font-family:var(--font-ui);line-height:1.4}
 
 /* ── Flow: a numbered pipeline with connectors, for a mechanism ──────── */
 .flow{display:flex;align-items:stretch;gap:0;flex:0 0 auto;margin-block:auto;min-height:0}
@@ -392,15 +392,15 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
    .org-divide is where feudalism stops. See the note at the top of this
    file: putting serfs on the feudal ladder is the error it replaces. */
 .org-bar{height:2px;background:var(--rule);border-radius:2px}
-.org-exchange{display:flex;align-items:center;justify-content:center;gap:26px;margin:6px 0 7px}
+.org-exchange{display:flex;align-items:center;justify-content:center;gap:26px;margin:3px 0 4px}
 .org-exchange span{font-family:var(--font-ui);font-weight:800;font-size:14px;letter-spacing:.09em;
   text-transform:uppercase;color:var(--iron);white-space:nowrap}
 .org-exchange span b{color:var(--bronze);font-size:14px}
-.org-divide{display:flex;align-items:center;gap:15px;width:82%;margin:11px 0 9px}
+.org-divide{display:flex;align-items:center;gap:15px;width:82%;margin:6px 0 5px}
 .org-divide::before,.org-divide::after{content:"";flex:1;height:0;border-top:2px dashed var(--rust)}
 .org-divide span{font-family:var(--font-ui);font-weight:800;font-size:12px;letter-spacing:.13em;
   text-transform:uppercase;color:var(--rust);white-space:nowrap}
-.org-base{background:#f6efe1;border:2px solid var(--iron);border-radius:8px;padding:9px 26px;
+.org-base{background:#f6efe1;border:2px solid var(--iron);border-radius:8px;padding:7px 26px;
   font-family:var(--font-ui);font-weight:800;font-size:19px;color:var(--gunmetal);text-align:center}
 </style>
 </head>
@@ -507,7 +507,7 @@ function onImgFail(el, localSrc) {
     <div class="panel rust" data-step="1">
       <p class="tag">Nobody provided</p>
       <h3>After</h3>
-      <p><b>No one comes</b></p>
+      <p><b>No army</b> to defend you</p>
       <p>No way to <b>pay soldiers</b></p>
       <p><b>Local</b> courts only</p>
       <p>Pay in <b>goods and labor</b></p>
@@ -609,7 +609,7 @@ function onImgFail(el, localSrc) {
     </div>
     <div class="org-exchange" data-step="1">
       <span><b>&darr;</b> a smaller fief</span>
-      <span>service to <em>that</em> lord <b>&uarr;</b></span>
+      <span>service to <em>his own lord</em>, not the king <b>&uarr;</b></span>
     </div>
     <div class="org-row" data-step="1">
       <div class="org-branch" style="width:228px">
@@ -620,7 +620,6 @@ function onImgFail(el, localSrc) {
       </div>
       <div class="org-branch" style="width:228px">
         <div class="org-node">Knight</div>
-        <div class="org-sub">Sworn to his lord, not the king</div>
       </div>
     </div>
     <div class="org-divide" data-step="2"><span>Feudalism stops here &middot; manorialism begins</span></div>
@@ -628,7 +627,7 @@ function onImgFail(el, localSrc) {
   </div>
   <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
-    <p>The king cannot order that knight. <b>Fragmentation is feudalism working.</b></p>
+    <p>Royal authority reached only a king&rsquo;s direct vassals. <b>Fragmentation was not a flaw in feudalism. It was its design.</b></p>
   </div>
 </section>
 
