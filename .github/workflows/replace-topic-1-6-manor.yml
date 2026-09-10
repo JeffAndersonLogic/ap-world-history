@@ -1,0 +1,90 @@
+name: Replace Topic 1.6 slide 7 manor image
+
+on:
+  push:
+    branches:
+      - chatgpt/replace-1-6-slide-7-manorialism
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  replace-manor-image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out working branch
+        uses: actions/checkout@v4
+        with:
+          ref: chatgpt/replace-1-6-slide-7-manorialism
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Reconstruct instructor-supplied manor image
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const crypto = require('crypto');
+          const dir = '.tmp/manor-image';
+          const out = 'assets/images/module-art/unit-1/topic-1-6/manorialism-self-sufficient-manor.jpg';
+          const chunks = fs.readdirSync(dir)
+            .filter((name) => /^chunk\d+\.txt$/.test(name))
+            .sort()
+            .map((name) => fs.readFileSync(`${dir}/${name}`, 'utf8').trim())
+            .join('');
+          const bytes = Buffer.from(chunks, 'base64');
+          const sha = crypto.createHash('sha256').update(bytes).digest('hex');
+          const expected = 'db339190369acd99ab7bef3716edf54b57a465a56e8c2dbb945d54a00cb0f651';
+          if (sha !== expected) {
+            throw new Error(`manor image sha mismatch: ${sha}`);
+          }
+          fs.mkdirSync(require('path').dirname(out), { recursive: true });
+          fs.writeFileSync(out, bytes);
+          console.log(`${out}: ${bytes.length} bytes, sha256 ${sha}`);
+          NODE
+
+      - name: Patch slide 7 in teacher deck
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'unit-1/deck-topic-1-6-europe.html';
+          let html = fs.readFileSync(path, 'utf8');
+          const before = /    <figure>\n      <img src="https:\/\/commons\.wikimedia\.org\/wiki\/Special:FilePath\/Plan_mediaeval_manor\.jpg"\n           alt="A plan of a medieval manor, showing the lord's demesne, the open fields worked in strips, the village, and the shared woodland and pasture at the edges"\n           onerror="onImgFail\(this,'\.\.\/assets\/images\/module-art\/unit-1\/topic-1-6\/lecture-01\.svg'\)">\n      <figcaption>A medieval manor, laid out: the lord's demesne, open fields worked in strips, the village, and shared woodland at the edges\.<\/figcaption>\n    <\/figure>/;
+          const after = `    <figure class="contain">
+      <img src="../assets/images/module-art/unit-1/topic-1-6/manorialism-self-sufficient-manor.jpg"
+           alt="Illustrated diagram of a self-sufficient medieval manor showing the lord's fields, village labor, Church spaces, craft production, the heavy plow and moldboard, horse collar, grist mill, woodland, fishery, orchard, and three-field crop rotation"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/lecture-01.svg')">
+      <figcaption>A self-sufficient medieval manor: fields, village labor, Church spaces, craft production, and the key technologies that raised agricultural output.</figcaption>
+    </figure>`;
+          if (!before.test(html)) {
+            throw new Error('expected slide 7 manor figure block was not found');
+          }
+          html = html.replace(before, after);
+          fs.writeFileSync(path, html);
+          NODE
+
+      - name: Rebuild student deck
+        run: node scripts/build-student-decks.js
+
+      - name: Run offline test suite
+        run: npm test
+
+      - name: Remove one-off staging files
+        run: |
+          rm -rf .tmp/manor-image
+          rm -f .github/workflows/replace-topic-1-6-manor.yml
+
+      - name: Commit completed deck update
+        run: |
+          git config user.name "ChatGPT"
+          git config user.email "noreply@openai.com"
+          git add assets/images/module-art/unit-1/topic-1-6/manorialism-self-sufficient-manor.jpg \
+                  unit-1/deck-topic-1-6-europe.html \
+                  unit-1/deck-topic-1-6-europe-student.html \
+                  .tmp/manor-image \
+                  .github/workflows/replace-topic-1-6-manor.yml
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Replace Topic 1.6 slide 7 manorialism image"
+          git push origin HEAD:chatgpt/replace-1-6-slide-7-manorialism
