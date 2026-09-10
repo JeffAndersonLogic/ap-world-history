@@ -16,12 +16,19 @@
    dark-surface colour (--oxidized is its paper-safe equivalent), and one KEY
    TAKEAWAY box per slide is the only thing a student copies.
 
-   This deck reuses the five layout patterns from 1.4 and 1.5 (.hero,
-   .stat-grid, .spotlight, .orgchart, .flow) and adds one new job for
-   .cols.split: a before/after wage-and-rent panel for the Black Death slide,
-   built entirely from panels that already exist. No new CSS anywhere in this
-   deck, five old tools pointed at a fragmented continent none of them have
-   drawn before.
+   This deck reuses the layout patterns from 1.4 and 1.5 (.hero, .stat-grid,
+   .spotlight, .orgchart, .flow) and adds two of its own, both because the
+   idea is a shape rather than a sentence: .contrast draws one whole against
+   many pieces, which is what decentralization means, and .defs puts an
+   academic term beside its plain meaning so a ninth grader meets fief,
+   demesne and tithe with the definition already on the wall.
+
+   The org chart also gained .org-bar and .org-divide. The divide is the
+   substantive fix: this deck used to list serfs as the fourth rank of the
+   feudal ladder. Serfs hold no fief, swear no homage, and are not vassals.
+   Feudalism is the bargain among the armed nobility; manorialism is the
+   bargain between a lord and the people who farm for him. Drawing them as
+   one ladder taught the conflation the AP reader is listening for.
    ═══════════════════════════════════════════════════════════════════════════ */
 
 :root{
@@ -176,13 +183,13 @@ figcaption{
 
 /* ── Org chart: a hierarchy diagram, for a concept with no honest photo ── */
 .orgchart{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:14px 30px;font-family:var(--font-ui);font-weight:800;font-size:19px;letter-spacing:.03em}
+.org-top{background:var(--steel);color:var(--paper);border-radius:8px;padding:12px 30px;font-family:var(--font-ui);font-weight:800;font-size:19px;letter-spacing:.03em}
 .org-line{width:2px;height:24px;background:var(--rule)}
 .org-row{display:flex;gap:20px;justify-content:center}
 .org-branch{display:flex;flex-direction:column;align-items:center;width:200px}
 .org-node{background:var(--clean);border:2px solid var(--bronze);border-radius:8px;padding:12px 16px;
   font-family:var(--font-ui);font-weight:800;font-size:16px;color:var(--oxidized);text-align:center;width:100%}
-.org-sub{font-size:14px;color:var(--iron);margin-top:8px;text-align:center;font-family:var(--font-ui);line-height:1.4}
+.org-sub{font-size:14px;color:var(--iron);margin-top:6px;text-align:center;font-family:var(--font-ui);line-height:1.4}
 
 /* ── Flow: a numbered pipeline with connectors, for a mechanism ──────── */
 .flow{display:flex;align-items:stretch;gap:0;flex:1;min-height:0}
@@ -329,6 +336,52 @@ table.compare tbody tr:last-child th,table.compare tbody tr:last-child td{border
 #help dt{font-weight:800;color:var(--gold);letter-spacing:.06em}
 #help dd{margin:0;color:var(--sandstone)}
 #help .close{margin-top:26px;font-size:13px;color:var(--iron)}
+
+/* ── Definitions: an academic term beside its plain meaning ───────────
+   Topic 1.6 asks a ninth grader to hold fief, vassal, demesne, tithe and
+   decentralization in one block. A term defined out loud once is a term
+   that is gone by the checkpoint, so the definition goes on the wall
+   beside the word and stays there while it is being used. */
+.defs{display:flex;flex-direction:column;gap:11px;flex:1;min-height:0;justify-content:center;margin:0}
+.def{display:grid;grid-template-columns:196px 1fr;gap:24px;align-items:baseline;
+  padding-bottom:10px;border-bottom:1px solid var(--rule-soft)}
+.def:last-child{border-bottom:none;padding-bottom:0}
+.def dt{font-family:var(--font-ui);font-weight:800;font-size:19px;color:var(--oxidized)}
+.def dd{margin:0;font-size:19px;line-height:1.44}
+
+/* ── Contrast: one whole against many pieces ──────────────────────────
+   The decentralization slide. "Power broken into hundreds of small local
+   pieces" is a shape, and a student who sees the shape keeps the word. */
+.contrast{display:grid;grid-template-columns:1fr 1fr;gap:38px;flex:1;min-height:0}
+.cblock{display:flex;flex-direction:column;min-height:0}
+.cblock .clabel{font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--oxidized);margin:0 0 10px}
+.cblock .cnote{font-family:var(--font-ui);font-size:16px;line-height:1.4;color:var(--iron);margin:12px 0 0}
+.one-whole{flex:1;min-height:0;background:var(--gunmetal);border-radius:10px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;
+  color:var(--paper);font-family:var(--font-ui);font-weight:800;font-size:18px;
+  letter-spacing:.03em;text-align:center;padding:18px}
+.many-pieces{flex:1;min-height:0;display:grid;grid-template-columns:repeat(7,1fr);
+  grid-auto-rows:1fr;gap:6px}
+.many-pieces i{border:1px solid var(--rule);border-radius:3px;display:block;background:#f6efe1}
+.many-pieces i.a{background:#e9dcc4}
+.many-pieces i.b{background:#e2e5e1}
+.many-pieces i.c{background:#efe0cd}
+
+/* ── Org chart additions ──────────────────────────────────────────────
+   .org-divide is where feudalism stops. See the note at the top of this
+   file: putting serfs on the feudal ladder is the error it replaces. */
+.org-bar{height:2px;background:var(--rule);border-radius:2px}
+.org-exchange{display:flex;align-items:center;justify-content:center;gap:26px;margin:6px 0 7px}
+.org-exchange span{font-family:var(--font-ui);font-weight:800;font-size:12px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--iron);white-space:nowrap}
+.org-exchange span b{color:var(--bronze);font-size:14px}
+.org-divide{display:flex;align-items:center;gap:15px;width:82%;margin:11px 0 9px}
+.org-divide::before,.org-divide::after{content:"";flex:1;height:0;border-top:2px dashed var(--rust)}
+.org-divide span{font-family:var(--font-ui);font-weight:800;font-size:12px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--rust);white-space:nowrap}
+.org-base{background:#f6efe1;border:2px solid var(--iron);border-radius:8px;padding:9px 26px;
+  font-family:var(--font-ui);font-weight:800;font-size:17px;color:var(--gunmetal);text-align:center}
 </style>
 </head>
 <body>
@@ -371,404 +424,392 @@ function onImgFail(el, localSrc) {
 <!-- ═════ 02 THE QUESTION ══════════════════════════════════════════════════ -->
 <section class="slide dark divider" data-title="The Question">
   <p class="part">The Question</p>
-  <h1>Why did Europe never rebuild a Rome, and what filled the space instead?</h1>
-  <ul class="points" style="margin-top:20px;max-width:58ch">
-    <li data-step="1">No cash, so lords <b>paid in land</b></li>
-    <li data-step="2">No single crown, so the <b>Church</b> filled the gap</li>
-    <li data-step="3">No king could <b>tax without asking first</b></li>
+  <h1>When Rome was gone, who was in charge?</h1>
+  <ul class="points" style="margin-top:20px;max-width:62ch">
+    <li data-step="1">The <b>political</b> problem, who protects us, was answered by <b>feudalism</b></li>
+    <li data-step="2">The <b>economic</b> problem, who feeds us, was answered by <b>manorialism</b></li>
+    <li data-step="3">The <b>social</b> problem, what do we share, was answered by <b>the Church</b></li>
   </ul>
 </section>
 
 <!-- ═════ 03 THE MAP ═══════════════════════════════════════════════════════ -->
-<section class="slide" data-title="A Divided Empire, a Shared Faith">
+<section class="slide" data-title="One Empire, Two Halves">
   <p class="eyebrow">Where in the World</p>
-  <h2>A divided empire, a shared faith</h2>
+  <h2>One empire, two halves, two fates</h2>
   <div class="rule"></div>
   <div class="spotlight">
     <figure class="contain">
-      <img src="../assets/maps/unit1-6-roman-empire-c400.png"
-           alt="Map of the Roman Empire c. 400 CE showing the Eastern Roman Empire in blue and the Western Roman Empire in tan, with major cities including Rome, Milan, Ravenna, Constantinople, Alexandria, Jerusalem, and Carthage"
+      <img src="../assets/maps/unit1-6-roman-empire-c400.gif"
+           alt="Map of the Roman Empire c. 400 CE showing the Eastern Roman Empire in blue and the Western Roman Empire in tan, divided by the line of division, with Rome, Milan, Ravenna, Carthage, London, Constantinople, Athens, Alexandria and Jerusalem marked"
            onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/map.svg')">
-      <figcaption>The Roman Empire, c. 400 CE, divided into eastern and western halves. The western imperial government collapsed during the fifth century; the eastern empire endured.</figcaption>
+      <figcaption>The Roman Empire, c. 400 CE. The dotted line is the working border between the eastern and western imperial governments.</figcaption>
     </figure>
     <div class="facts">
       <div class="fact">
-        <b>Politically</b>
-        <p>Kingdoms, nobles, and <b>Church lands</b>, divided</p>
+        <b>The West, in tan</b>
+        <p>Rome, Milan, Carthage, London. Imperial government here <b>broke down during the 400s</b>.</p>
       </div>
       <div class="fact" data-step="1">
-        <b>Religiously</b>
-        <p>One <b>Roman Catholic Church</b>, crossing every border</p>
+        <b>The East, in blue</b>
+        <p>Ruled from <b>Constantinople</b>, and it kept going for roughly another <b>thousand years</b>.</p>
       </div>
       <div class="fact" data-step="2">
-        <b>Economically</b>
-        <p>Towns and trade <b>growing</b>, especially in Italy and Flanders</p>
+        <b>What survived in the east</b>
+        <p>Written <b>Roman law</b>, <b>Greek learning</b>, and the wealth of the largest Christian city in the world.</p>
       </div>
     </div>
   </div>
   <div class="writethis" data-step="3">
     <p class="tag">Key Takeaway</p>
-    <p>Fragmented politics. <b>One faith, holding the pieces together anyway.</b></p>
+    <p>Rome did not vanish. It <b>collapsed in the west and survived in the east</b>, and medieval Europe means the western half.</p>
   </div>
 </section>
 
-<!-- ═════ 04 THE MECHANISM ═════════════════════════════════════════════════ -->
-<section class="slide" data-title="A State With No Cash">
-  <p class="eyebrow">The Mechanism Behind Everything Today</p>
-  <h2>A state with no cash</h2>
-  <div class="rule"></div>
-  <div class="body top">
-    <ul class="points">
-      <li>Almost <b>no tax system</b> and almost no coined money in circulation</li>
-      <li data-step="1">A ruler who cannot pay in coin <b>pays in land</b></li>
-      <li data-step="2">Land for loyalty and service is <b>feudalism</b></li>
-      <li data-step="3">The economic system running underneath it is <b>manorialism</b></li>
-    </ul>
-  </div>
-  <div class="writethis" data-step="4">
-    <p class="tag">Key Takeaway</p>
-    <p>If you cannot pay a soldier in coin, you pay him in land, <b>and a soldier with land is no longer entirely yours</b>.</p>
-  </div>
-</section>
-
-<!-- ═════ 05 DIVIDER: PART ONE ═════════════════════════════════════════════ -->
-<section class="slide dark divider" data-title="Part One: Fragmentation">
-  <p class="part">Part One</p>
-  <h1>Fragmentation</h1>
-  <p class="lede">Land granted for loyalty, and a farm that fed the whole system.</p>
-</section>
-
-<!-- ═════ 06 FEUDALISM ═════════════════════════════════════════════════════ -->
-<section class="slide" data-title="Feudalism: Land for Loyalty">
-  <p class="eyebrow">The Political System</p>
-  <h2>One hierarchy, four ranks</h2>
-  <div class="rule"></div>
-  <div class="orgchart">
-    <div class="org-top">The King</div>
-    <div class="org-line" style="height:14px"></div>
-    <div class="org-row">
-      <div class="org-branch" style="width:420px">
-        <div class="org-node">Great Lords &amp; Nobles</div>
-        <div class="org-sub">Granted land for sworn loyalty and military service</div>
-      </div>
-    </div>
-    <div class="org-line" data-step="1" style="height:14px"></div>
-    <div class="org-row" data-step="1">
-      <div class="org-branch" style="width:420px">
-        <div class="org-node">Knights</div>
-        <div class="org-sub">Land re-granted beneath them, on the same terms</div>
-      </div>
-    </div>
-    <div class="org-line" data-step="2" style="height:14px"></div>
-    <div class="org-row" data-step="2">
-      <div class="org-branch" style="width:420px">
-        <div class="org-node">Serfs</div>
-        <div class="org-sub">Work the manor, owing dues and labor for protection</div>
-      </div>
-    </div>
-  </div>
-  <div class="writethis" data-step="3">
-    <p class="tag">Key Takeaway</p>
-    <p>A serf is bound to the land. <b>A serf is not a slave, and that difference matters later.</b></p>
-  </div>
-</section>
-
-<!-- ═════ 07 MANORIALISM ═══════════════════════════════════════════════════ -->
-<section class="slide" data-title="Manorialism: The Farm That Fed the System">
-  <p class="eyebrow">The Economic System</p>
-  <h2>Manorialism: the quiet engine</h2>
-  <div class="rule"></div>
-  <div class="cols split">
-    <figure>
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Plan_mediaeval_manor.jpg"
-           alt="A plan of a medieval manor, showing the lord's demesne, the open fields worked in strips, the village, and the shared woodland and pasture at the edges"
-           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/lecture-01.svg')">
-      <figcaption>A medieval manor, laid out: the lord's demesne, open fields worked in strips, the village, and shared woodland at the edges.</figcaption>
-    </figure>
-    <div>
-      <ul class="points">
-        <li>The <b>heavy plow</b> turned the wet clay soils of the north</li>
-        <li data-step="1">The <b>horse collar</b> made a faster animal usable for plowing</li>
-        <li data-step="2">The <b>three-field system</b> left only a third of the land idle</li>
-      </ul>
-      <div class="writethis" data-step="3">
-        <p class="tag">Key Takeaway</p>
-        <p>The manor was not stagnant. <b>It roughly doubled a continent's population before it broke anything.</b></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═════ 08 DIVIDER: PART TWO ═════════════════════════════════════════════ -->
-<section class="slide dark divider" data-title="Part Two: The Church">
-  <p class="part">Part Two</p>
-  <h1>The Church</h1>
-  <p class="lede">The institution that did the jobs a state was not there to do.</p>
-</section>
-
-<!-- ═════ 09 THE CHURCH AS THE STATE ═══════════════════════════════════════ -->
-<section class="slide" data-title="The Church: The State Europe Did Not Have">
-  <p class="eyebrow">Case One &middot; An Institution, Not a Building</p>
-  <h2>The one institution every kingdom answered to</h2>
-  <div class="rule"></div>
-  <div class="stat-grid">
-    <div class="stat-tile">
-      <p class="num" style="font-size:26px">The tithe</p>
-      <p class="lbl">A tenth of production, the only universal tax</p>
-    </div>
-    <div class="stat-tile gold" data-step="1">
-      <p class="num" style="font-size:26px">Canon law</p>
-      <p class="lbl">Its own courts, its own code</p>
-    </div>
-    <div class="stat-tile rust" data-step="2">
-      <p class="num" style="font-size:26px">Largest landholder</p>
-      <p class="lbl">Monasteries controlled vast estates</p>
-    </div>
-    <div class="stat-tile iron" data-step="3">
-      <p class="num" style="font-size:26px">Trained the clerks</p>
-      <p class="lbl">Latin literacy, for a long time, was the Church's</p>
-    </div>
-  </div>
-  <div class="writethis" data-step="4">
-    <p class="tag">Key Takeaway</p>
-    <p>A comparison of European power that skips the Church <b>is measuring the wrong institution</b>.</p>
-  </div>
-</section>
-
-<!-- ═════ 10 THE WEAPON A KING COULD NOT ANSWER ════════════════════════════ -->
-<section class="slide" data-title="The Weapon a King Could Not Answer">
-  <p class="eyebrow">Spiritual Sanction as Political Power</p>
-  <h2>A weapon no army could stop</h2>
-  <div class="rule"></div>
-  <div class="hero-wrap">
-    <div class="hero-warn">Image did not load, needs a working URL.</div>
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_Notre-Dame_of_Rodez_09.jpg"
-         alt="A Gothic cathedral, the kind of institution the medieval Latin Church could command across Europe"
-         onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/lecture-03.svg')">
-    <div class="hero-card">
-      <p class="tag">c. 1200 &middot; Pope Innocent III</p>
-      <p>Excommunication and interdict, applied to a king, could <b>release his subjects from their oaths of loyalty</b>.</p>
-    </div>
-  </div>
-  <div class="writethis" data-step="1">
-    <p class="tag">Key Takeaway</p>
-    <p>No army, no treasury. <b>Just a sanction no ruler could cut off from its own funding.</b></p>
-  </div>
-</section>
-
-<!-- ═════ 11 DIVIDER: PART THREE ═══════════════════════════════════════════ -->
-<section class="slide dark divider" data-title="Part Three: The Monarchies">
-  <p class="part">Part Three</p>
-  <h1>The Monarchies</h1>
-  <p class="lede">Every step toward a stronger crown required money a king had to ask for.</p>
-</section>
-
-<!-- ═════ 12 THE PRICE OF MONEY ════════════════════════════════════════════ -->
-<section class="slide" data-title="Magna Carta and the Price of Money">
-  <p class="eyebrow">Case Two &middot; How a King Rebuilds Power</p>
-  <h2>The bargain that produced parliaments</h2>
-  <div class="rule"></div>
-  <div class="flow">
-    <div class="panel">
-      <p class="tag">Step 1</p>
-      <h3>Need</h3>
-      <p>War costs more than a king's <b>own revenue</b> can cover</p>
-    </div>
-    <div class="arrow">&rarr;</div>
-    <div class="panel gold" data-step="1">
-      <p class="tag">Step 2</p>
-      <h3>Summon</h3>
-      <p>Nobles, clergy, and towns are called to <b>grant</b> it</p>
-    </div>
-    <div class="arrow" data-step="1">&rarr;</div>
-    <div class="panel rust" data-step="2">
-      <p class="tag">Step 3</p>
-      <h3>Bargain</h3>
-      <p>They grant it for <b>confirmed privileges</b> in return</p>
-    </div>
-    <div class="arrow" data-step="2">&rarr;</div>
-    <div class="panel iron" data-step="3">
-      <p class="tag">Step 4</p>
-      <h3>Settle</h3>
-      <p>Consent becomes a <b>required principle</b>, Magna Carta, 1215</p>
-    </div>
-  </div>
-  <div class="writethis" data-step="4">
-    <p class="tag">Key Takeaway</p>
-    <p>Magna Carta was a treaty with the barons, not a bill of rights. <b>The parliament is the residue of a weak treasury.</b></p>
-  </div>
-</section>
-
-<!-- ═════ 13 DIVIDER: PART FOUR ═════════════════════════════════════════════ -->
-<section class="slide dark divider" data-title="Part Four: Towns and Trade">
-  <p class="part">Part Four</p>
-  <h1>Towns and Trade</h1>
-  <p class="lede">A place where a lord's authority stopped, and money outranked land.</p>
-</section>
-
-<!-- ═════ 14 THE CHARTERED TOWN ════════════════════════════════════════════ -->
-<section class="slide" data-title="The Chartered Town">
-  <p class="eyebrow">Case Three &middot; What a Town Bought</p>
-  <h2>&ldquo;Town air makes you free&rdquo;</h2>
-  <div class="rule"></div>
-  <div class="stat-grid">
-    <div class="stat-tile">
-      <p class="num" style="font-size:22px">Market &amp; Court</p>
-      <p class="lbl">A charter, often purchased, granted self-government</p>
-    </div>
-    <div class="stat-tile gold" data-step="1">
-      <p class="num" style="font-size:22px">A Year and a Day</p>
-      <p class="lbl">A serf inside the walls, unclaimed, became free</p>
-    </div>
-    <div class="stat-tile rust" data-step="2">
-      <p class="num" style="font-size:22px">Guilds</p>
-      <p class="lbl">Trained, priced, and increasingly gate-kept each craft</p>
-    </div>
-    <div class="stat-tile iron" data-step="3">
-      <p class="num" style="font-size:22px">Town Air</p>
-      <p class="lbl">A German legal fact, not a slogan</p>
-    </div>
-  </div>
-  <div class="writethis" data-step="4">
-    <p class="tag">Key Takeaway</p>
-    <p>A lord sold legal freedom <b>for a payment he could actually count on</b>.</p>
-  </div>
-</section>
-
-<!-- ═════ 15 GUILDS, BANKS, AND THE HANSE ══════════════════════════════════ -->
-<section class="slide" data-title="Guilds, Banks, and the Hanseatic League">
-  <p class="eyebrow">The Instruments of Distance</p>
-  <h2>Moving money without moving coin</h2>
-  <div class="rule"></div>
-  <div class="stat-grid">
-    <div class="stat-tile">
-      <p class="num" style="font-size:22px">Bill of exchange</p>
-      <p class="lbl">Value moved between cities, no coin traveling</p>
-    </div>
-    <div class="stat-tile gold" data-step="1">
-      <p class="num" style="font-size:22px">Double-entry books</p>
-      <p class="lbl">A large trading firm, made auditable</p>
-    </div>
-    <div class="stat-tile rust" data-step="2">
-      <p class="num" style="font-size:22px">Hanseatic League</p>
-      <p class="lbl">A confederation of towns, with its own navy</p>
-    </div>
-    <div class="stat-tile iron" data-step="3">
-      <p class="num">150,000</p>
-      <p class="lbl">Letters left by one Tuscan merchant, Datini</p>
-    </div>
-  </div>
-  <div class="writethis" data-step="4">
-    <p class="tag">Key Takeaway</p>
-    <p>Money learned to travel faster than coin. <b>The instruments, not the gold, are the innovation.</b></p>
-  </div>
-</section>
-
-<!-- ═════ 16 DIVIDER: PART FIVE ═════════════════════════════════════════════ -->
-<section class="slide dark divider" data-title="Part Five: The Fourteenth Century">
-  <p class="part">Part Five</p>
-  <h1>The Fourteenth Century</h1>
-  <p class="lede">Famine, plague, and revolt, arriving inside forty years of each other.</p>
-</section>
-
-<!-- ═════ 17 THE BLACK DEATH ═══════════════════════════════════════════════ -->
-<section class="slide" data-title="The Black Death">
-  <p class="eyebrow">The Shock</p>
-  <h2>A cost of connection</h2>
-  <div class="rule"></div>
-  <div class="stat-grid">
-    <div class="stat-tile">
-      <p class="num">1315&ndash;17</p>
-      <p class="lbl">The Great Famine, ruined harvests</p>
-    </div>
-    <div class="stat-tile gold" data-step="1">
-      <p class="num">1347</p>
-      <p class="lbl">Plague arrives in Sicily, by Genoese ship</p>
-    </div>
-    <div class="stat-tile rust" data-step="2">
-      <p class="num">&frac13; to &frac12;</p>
-      <p class="lbl">Of Europe's population, dead within four years</p>
-    </div>
-    <div class="stat-tile iron" data-step="3">
-      <p class="num" style="font-size:22px">The same network</p>
-      <p class="lbl">That carried silk and mathematics westward</p>
-    </div>
-  </div>
-  <div class="writethis" data-step="4">
-    <p class="tag">Key Takeaway</p>
-    <p>The plague traveled the same routes as silk and paper. <b>Integration transmits everything, not only what traders intended.</b></p>
-  </div>
-</section>
-
-<!-- ═════ 18 WHAT A LABOR SHORTAGE DOES ════════════════════════════════════ -->
-<section class="slide" data-title="What a Labor Shortage Does">
-  <p class="eyebrow">The Mechanism</p>
-  <h2>Before and after the plague, on one manor</h2>
+<!-- ═════ 04 WHAT DISAPPEARED ══════════════════════════════════════════════ -->
+<section class="slide" data-title="What Disappeared With Rome">
+  <p class="eyebrow">The Problem</p>
+  <h2>What a government does, and what happened when it stopped</h2>
   <div class="rule"></div>
   <div class="cols c2">
     <div class="panel iron">
-      <p class="tag">Before, c. 1340</p>
-      <h3>Labor is cheap</h3>
-      <p>Land is <b>scarce</b>. Workers are <b>abundant</b>. A lord sets the terms.</p>
+      <p class="tag">While Rome governed the west</p>
+      <h3>Someone did these jobs</h3>
+      <p>One <b>army</b>, paid and posted along the borders</p>
+      <p><b>Taxes</b> collected across the whole empire</p>
+      <p><b>Courts</b> and a single written law</p>
+      <p><b>Coined money</b> everyone accepted</p>
+      <p><b>Roads</b>, and trade that could travel them safely</p>
     </div>
-    <div class="panel gold" data-step="1">
-      <p class="tag">After, c. 1360</p>
-      <h3>Labor is dear</h3>
-      <p>Land is <b>abundant</b>. Workers are <b>scarce</b>. A peasant can walk away and be hired.</p>
+    <div class="panel rust" data-step="1">
+      <p class="tag">After it stopped, in the west</p>
+      <h3>Nobody did</h3>
+      <p>No army that could <b>reach you in time</b></p>
+      <p>No tax system, so <b>no way to pay soldiers</b></p>
+      <p>No court above the <b>local</b> one</p>
+      <p>Very few coins, so people <b>paid in goods and labor</b></p>
+      <p>Roads unsafe, so trade shrank to <b>the next village</b></p>
     </div>
   </div>
   <div class="writethis" data-step="2">
     <p class="tag">Key Takeaway</p>
-    <p>Serfdom faded in the west, and <b>hardened in the east</b>, from the exact same shock.</p>
+    <p>Take all of that away and one problem stands above the rest. <b>Nobody could keep you safe.</b> Everything today is a response to that.</p>
   </div>
 </section>
 
-<!-- ═════ 19 COMPARISON ════════════════════════════════════════════════════ -->
+<!-- ═════ 05 DECENTRALIZATION ══════════════════════════════════════════════ -->
+<section class="slide" data-title="Decentralization">
+  <p class="eyebrow">The Word for What Replaced It</p>
+  <h2>Centralized power, and decentralized power</h2>
+  <div class="rule"></div>
+  <div class="contrast">
+    <div class="cblock">
+      <p class="clabel">Centralized &middot; Song China</p>
+      <div class="one-whole">
+        <span>ONE government</span>
+        <span>ONE law</span>
+        <span>ONE tax system</span>
+      </div>
+      <p class="cnote">An order from the emperor reaches a village a thousand miles away, carried by officials he appointed.</p>
+    </div>
+    <div class="cblock" data-step="1">
+      <p class="clabel">Decentralized &middot; Medieval Europe</p>
+      <div class="many-pieces">
+        <i class="a"></i><i></i><i class="b"></i><i></i><i class="c"></i><i class="a"></i><i></i>
+        <i></i><i class="c"></i><i></i><i class="a"></i><i></i><i></i><i class="b"></i>
+        <i class="b"></i><i></i><i class="a"></i><i></i><i class="c"></i><i></i><i></i>
+        <i></i><i class="a"></i><i></i><i class="b"></i><i></i><i class="a"></i><i class="c"></i>
+      </div>
+      <p class="cnote">Hundreds of separate lords, each with his own land, his own court, and his own soldiers.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="2">
+    <p class="tag">Key Takeaway</p>
+    <p><b>Decentralization</b> is power broken into many small local pieces instead of held by one government. Not weak. Just <b>not gathered in one place</b>.</p>
+  </div>
+</section>
+
+<!-- ═════ 06 DIVIDER: THREE ANSWERS ════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Three Problems, Three Systems">
+  <p class="part">The Answer</p>
+  <h1>Three problems, three systems</h1>
+  <p class="lede">Feudalism held the politics together. Manorialism held the economy together. The Church held society together.</p>
+  <div class="chips" style="margin-top:26px">
+    <span class="chip">Feudalism &middot; political</span>
+    <span class="chip">Manorialism &middot; economic</span>
+    <span class="chip">The Church &middot; social</span>
+  </div>
+</section>
+
+<!-- ═════ 07 FEUDALISM DEFINED ═════════════════════════════════════════════ -->
+<section class="slide" data-title="Feudalism: Land for Loyalty">
+  <p class="eyebrow">Part One &middot; The Political System</p>
+  <h2>Feudalism: land traded for loyalty</h2>
+  <div class="rule"></div>
+  <p style="font-size:19px;margin:0 0 18px;color:var(--gunmetal)">A ruler with no tax system cannot pay soldiers in money. So he pays them with the one thing he does have.</p>
+  <dl class="defs">
+    <div class="def"><dt>Fief</dt><dd>The grant of <b>land</b>, and the income from that land, handed over in exchange for service.</dd></div>
+    <div class="def" data-step="1"><dt>Lord</dt><dd>The person who <b>grants</b> the fief.</dd></div>
+    <div class="def" data-step="1"><dt>Vassal</dt><dd>The person who <b>receives</b> it, and who owes military service in return.</dd></div>
+    <div class="def" data-step="2"><dt>Homage</dt><dd>The public ceremony where a vassal knelt and swore loyalty. There was no court above these two men to enforce a contract, so <b>the ceremony was the enforcement</b>.</dd></div>
+  </dl>
+  <div class="writethis" data-step="3">
+    <p class="tag">Key Takeaway</p>
+    <p>Feudalism is <b>a private agreement between two people</b>, not a national law. That one fact explains the next slide.</p>
+  </div>
+</section>
+
+<!-- ═════ 08 THE ORG CHART ═════════════════════════════════════════════════ -->
+<section class="slide" data-title="Feudalism: Who Owed What to Whom">
+  <p class="eyebrow">Part One &middot; The Structure</p>
+  <h2>Who owed what to whom</h2>
+  <div class="rule"></div>
+  <div class="orgchart">
+    <div class="org-top">THE KING</div>
+    <div class="org-exchange">
+      <span><b>&darr;</b> land and protection</span>
+      <span>loyalty and armed service <b>&uarr;</b></span>
+    </div>
+    <div class="org-row">
+      <div class="org-branch" style="width:290px">
+        <div class="org-node">Great Lord</div>
+        <div class="org-sub">Holds a large fief from the king. Owes him knights in wartime.</div>
+      </div>
+      <div class="org-branch" style="width:290px">
+        <div class="org-node">Great Lord</div>
+        <div class="org-sub">Runs his own courts and castles on that land.</div>
+      </div>
+    </div>
+    <div class="org-exchange" data-step="1">
+      <span><b>&darr;</b> a smaller fief</span>
+      <span>service to <em>that</em> lord <b>&uarr;</b></span>
+    </div>
+    <div class="org-row" data-step="1">
+      <div class="org-branch" style="width:228px">
+        <div class="org-node">Knight</div>
+        <div class="org-sub">A smaller fief, from a lord</div>
+      </div>
+      <div class="org-branch" style="width:228px">
+        <div class="org-node">Knight</div>
+        <div class="org-sub">Owes armed service to that lord</div>
+      </div>
+      <div class="org-branch" style="width:228px">
+        <div class="org-node">Knight</div>
+        <div class="org-sub">Not to the king, to his own lord</div>
+      </div>
+    </div>
+    <div class="org-divide" data-step="2"><span>Feudalism stops here &middot; manorialism begins</span></div>
+    <div class="org-base" data-step="2">PEASANTS AND SERFS &middot; hold no fief, swear no homage, are nobody&rsquo;s vassal</div>
+  </div>
+  <div class="writethis" data-step="3">
+    <p class="tag">Key Takeaway</p>
+    <p>A king could not order a knight he had never met, because that knight had promised nothing to him. <b>Fragmentation is feudalism working, not feudalism failing.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 09 MANORIALISM DEFINED ═══════════════════════════════════════════ -->
+<section class="slide" data-title="Manorialism: The Economic System">
+  <p class="eyebrow">Part Two &middot; The Economic System</p>
+  <h2>Manorialism: the farm underneath the politics</h2>
+  <div class="rule"></div>
+  <p style="font-size:19px;margin:0 0 18px;color:var(--gunmetal)">Feudalism explains who commands. Manorialism explains who eats. A lord could afford a warhorse, armor and knights only because a manor was feeding him.</p>
+  <dl class="defs">
+    <div class="def"><dt>Manor</dt><dd>A large estate run as one unit: fields, a village, a church, a mill, pasture and woodland.</dd></div>
+    <div class="def" data-step="1"><dt>Demesne</dt><dd>The fields the lord <b>kept for himself</b>, worked by peasant labor he did not pay for.</dd></div>
+    <div class="def" data-step="1"><dt>Serf</dt><dd>A peasant <b>bound to the manor</b>. Not free to leave it, and not free to marry off it without permission.</dd></div>
+    <div class="def" data-step="2"><dt>Obligations</dt><dd>The labor, the share of the harvest and the fees a serf owed, in exchange for land to farm and protection.</dd></div>
+  </dl>
+  <div class="writethis" data-step="3">
+    <p class="tag">Key Takeaway</p>
+    <p>A serf was unfree, but <b>a serf was not a slave</b>. He was not property, could not be sold away from the land, farmed his own strips, and had customary rights a lord was expected to honor.</p>
+  </div>
+</section>
+
+<!-- ═════ 10 THE MANOR, MAPPED ═════════════════════════════════════════════
+     The image is 1286x832, and .hero-wrap crops with object-fit:cover, which
+     cut the title, the castle, the church and the whole three-field inset off
+     this diagram. A dense labelled illustration has to be shown whole, so this
+     uses .spotlight with figure.contain and hands the figure two thirds of the
+     width, which renders it about 475px tall instead of a 240px letterbox. -->
+<section class="slide" data-title="One Manor, Mapped">
+  <p class="eyebrow">Part Two &middot; One Manor, Mapped</p>
+  <h2>One manor, one economy</h2>
+  <div class="rule"></div>
+  <div class="spotlight">
+    <figure class="contain" style="flex:0 0 70%">
+      <img src="../assets/images/unit-1/topic-1-6/manor-diagram.jpg"
+           alt="Illustrated plan of a self-sufficient medieval manor showing the lord's private fields, a tithe barn, church, castle, village houses, blacksmith, bakery, grist mill on the river, open fields worked in strips, orchards, woodland and pasture, with labels for the heavy plow, the horse collar and the three-field crop rotation"
+           onerror="onImgFail(this,'../assets/images/module-art/unit-1/topic-1-6/lecture-01.svg')">
+      <figcaption>A manor laid out as one economic unit, with the three-field rotation shown at lower left.</figcaption>
+    </figure>
+    <div class="facts">
+      <div class="fact">
+        <b>The mill and the oven were the lord&rsquo;s</b>
+        <p>Using them cost a fee. He took his cut at the one point <b>everyone had to pass through</b>.</p>
+      </div>
+      <div class="fact" data-step="1">
+        <b>The tithe barn</b>
+        <p>The <b>Church&rsquo;s tenth</b>, stored on site. The Church is already in this picture.</p>
+      </div>
+      <div class="writethis" data-step="2">
+        <p class="tag">Key Takeaway</p>
+        <p>Close to <b>self-sufficient</b>. Not a virtue, but what an economy looks like when roads are unsafe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ 11 THREE TECHNOLOGIES ════════════════════════════════════════════ -->
+<section class="slide" data-title="Three Technologies">
+  <p class="eyebrow">Part Two &middot; Why the Manor Produced a Surplus</p>
+  <h2>Three technologies that fed a growing continent</h2>
+  <div class="rule"></div>
+  <div class="cols c3">
+    <div class="panel">
+      <p class="tag">Technology one</p>
+      <h3>The heavy plow</h3>
+      <p>A <b>coulter</b> cuts the soil and a <b>moldboard</b> turns it over.</p>
+      <p>Northern Europe&rsquo;s wet, heavy clay could finally be farmed. The old scratch plow only worked on light Mediterranean soil.</p>
+    </div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">Technology two</p>
+      <h3>The horse collar</h3>
+      <p>A rigid padded collar rests on the <b>shoulders</b> instead of pressing on the windpipe.</p>
+      <p>A horse can now pull hard without choking, and it works faster and longer than an ox, though it eats more.</p>
+    </div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">Technology three</p>
+      <h3>The three-field system</h3>
+      <p>Autumn grain, then spring grain and <b>legumes</b>, then one field resting.</p>
+      <p>Land in use rises from about a half to about <b>two thirds</b>. The legumes restore the soil, and the oats feed the horse.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="3">
+    <p class="tag">Key Takeaway</p>
+    <p>More food, then more people, then more people than the fields need. <b>That surplus is what makes towns possible.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 12 DIVIDER: THE CHURCH ═══════════════════════════════════════════ -->
+<section class="slide dark divider" data-title="Part Three: The Church">
+  <p class="part">Part Three</p>
+  <h1>The Church</h1>
+  <p class="lede">The one institution that crossed every border, in a place that had hundreds of them.</p>
+</section>
+
+<!-- ═════ 13 THE CHURCH AS THE GLUE ════════════════════════════════════════ -->
+<section class="slide" data-title="The Church: Social Stability">
+  <p class="eyebrow">Part Three &middot; Social Stability</p>
+  <h2>What made one Church a unifying force</h2>
+  <div class="rule"></div>
+  <div class="stat-grid">
+    <div class="stat-tile">
+      <p class="num" style="font-size:24px">One language</p>
+      <p class="lbl">The same Latin mass in Ireland and in Poland. An educated person could travel and still be understood.</p>
+    </div>
+    <div class="stat-tile gold" data-step="1">
+      <p class="num" style="font-size:24px">The parish</p>
+      <p class="lbl">In most villages, the only institution of any kind. Birth, marriage and death were recorded nowhere else.</p>
+    </div>
+    <div class="stat-tile rust" data-step="2">
+      <p class="num" style="font-size:24px">Monasteries</p>
+      <p class="lbl">Schools, hospitals, farms, and the copying of books. Nearly all Latin literacy ran through them.</p>
+    </div>
+    <div class="stat-tile iron" data-step="3">
+      <p class="num" style="font-size:24px">Canon law &amp; the tithe</p>
+      <p class="lbl">Its own written law and its own courts, plus a tenth of production. The closest thing to a tax that reached everyone.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>Unifying does not mean everyone agreed. It means one institution <b>did the jobs a government does</b>, across a continent that did not have one.</p>
+  </div>
+</section>
+
+<!-- ═════ 14 THE CHURCH ABOVE KINGS ════════════════════════════════════════ -->
+<section class="slide" data-title="What Happened When a King Said No">
+  <p class="eyebrow">Part Three &middot; Spiritual Authority as Political Power</p>
+  <h2>What happened when a king said no</h2>
+  <div class="rule"></div>
+  <div class="flow">
+    <div class="panel">
+      <p class="tag">1208</p>
+      <h3>Interdict</h3>
+      <p>The pope <b>closes the churches of England</b>. No mass, no marriage, no burial in holy ground, for the whole kingdom. It lasted over six years.</p>
+    </div>
+    <div class="arrow">&rarr;</div>
+    <div class="panel gold" data-step="1">
+      <p class="tag">1209</p>
+      <h3>Excommunication</h3>
+      <p>John is cut off from the Church, and his subjects are <b>formally released from their oaths of loyalty</b> to him.</p>
+    </div>
+    <div class="arrow" data-step="1">&rarr;</div>
+    <div class="panel rust" data-step="2">
+      <p class="tag">1213</p>
+      <h3>Submission</h3>
+      <p>Facing invasion and barons who will not back him, John gives in and <b>hands England to the pope</b> to hold as a fief.</p>
+    </div>
+    <div class="arrow" data-step="2">&rarr;</div>
+    <div class="panel iron" data-step="3">
+      <p class="tag">1215</p>
+      <h3>And again</h3>
+      <p>The barons force <b>Magna Carta</b> on John in June. Innocent III declares it invalid <b>ten weeks later</b>.</p>
+    </div>
+  </div>
+  <div class="writethis" data-step="4">
+    <p class="tag">Key Takeaway</p>
+    <p>The pope sent no army. He did not need one. <b>Feudalism ran on sworn oaths, and the Church could dissolve them.</b></p>
+  </div>
+</section>
+
+<!-- ═════ 15 COMPARISON ════════════════════════════════════════════════════ -->
 <section class="slide" data-title="Comparing Europe and Song China">
-  <p class="eyebrow">The Comparison the Checkpoint Wants</p>
-  <h2>Comparing Europe and Song China</h2>
+  <p class="eyebrow">The Comparison Your Checkpoint Wants</p>
+  <h2>Europe and Song China, side by side</h2>
   <div class="rule"></div>
   <table class="compare">
     <thead>
-      <tr><th></th><th>Europe</th><th>Song China</th></tr>
+      <tr><th></th><th>Medieval Europe</th><th>Song China</th></tr>
     </thead>
     <tbody>
-      <tr><th>Taxation</th><td>Bargained, by consent</td><td>Collected, by imperial officials</td></tr>
-      <tr data-step="1"><th>Legitimacy</th><td>A rival Church</td><td>The state's own scholars</td></tr>
-      <tr data-step="2"><th>Cities</th><td>Bought their own freedom</td><td>Run by imperial officials</td></tr>
-      <tr data-step="3"><th>Labor shock</th><td>Plague, a shortage</td><td>Champa rice, a surplus</td></tr>
+      <tr><th>Who collects taxes</th><td>A lord collects locally. A king has to ask.</td><td>Salaried officials collect for the emperor.</td></tr>
+      <tr data-step="1"><th>Who staffs it</th><td>Nobles who inherited land, and churchmen.</td><td>Scholars who passed an exam.</td></tr>
+      <tr data-step="2"><th>What binds it</th><td>Personal oaths, and a shared Church.</td><td>A bureaucracy reporting to the center.</td></tr>
+      <tr data-step="3"><th>Where power sits</th><td><b>Decentralized</b>, in hundreds of places.</td><td><b>Centralized</b>, in one.</td></tr>
     </tbody>
   </table>
   <div class="writethis" data-step="4">
-    <p class="tag">Key Takeaway &middot; the grid is in your eBook, do not copy it</p>
-    <p>Ranking earns nothing. <b>Explaining why the difference existed earns everything.</b></p>
+    <p class="tag">Key Takeaway &middot; this grid is in your eBook, do not copy it</p>
+    <p>Ranking them earns nothing. <b>Explaining why the difference existed earns everything.</b></p>
   </div>
 </section>
 
-<!-- ═════ 20 AP TAKEAWAY ═══════════════════════════════════════════════════ -->
+<!-- ═════ 16 AP TAKEAWAY ═══════════════════════════════════════════════════ -->
 <section class="slide" data-title="AP Takeaway">
   <p class="eyebrow">What You Must Be Able To Do</p>
   <h2>The takeaway</h2>
   <div class="rule"></div>
   <div class="body top">
-    <p class="tag" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized)">Checkpoint 1 &middot; Fragmented power</p>
+    <p class="tag" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized)">Checkpoint 1 &middot; Fragmented power, and no coach</p>
     <div class="chips">
-      <span class="chip">Feudalism</span>
-      <span class="chip">Vassals and nobles</span>
       <span class="chip">Decentralization</span>
+      <span class="chip">Feudalism</span>
+      <span class="chip">Fief and vassal</span>
+      <span class="chip">Nobles</span>
+      <span class="chip">Manorialism</span>
     </div>
-    <p class="tag" data-step="1" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized);margin-top:22px">Checkpoint 2 &middot; The Church, and change over time</p>
+    <p class="tag" data-step="1" style="font-family:var(--font-ui);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--oxidized);margin-top:22px">Checkpoint 2 &middot; The Church, <em>and</em> change over time</p>
     <div class="chips" data-step="1">
       <span class="chip">Roman Catholic Church</span>
-      <span class="chip">Cathedrals and monasteries</span>
+      <span class="chip">Monasteries</span>
       <span class="chip">Chartered towns</span>
       <span class="chip">Guilds</span>
       <span class="chip">Universities</span>
     </div>
+    <p data-step="1" style="font-size:17px;margin:14px 0 0;color:var(--iron)">Today covered the Church. <b>Towns, guilds and universities are in your First &amp; 10 reading and your eBook chapter</b>, and Checkpoint 2 needs both halves.</p>
   </div>
   <div class="writethis" data-step="2">
     <p class="tag">Key Takeaway &middot; both checkpoints</p>
-    <p>Name <b>one</b> mechanism. Use <b>specific</b> evidence. Explain <b>why</b>, not only what.</p>
+    <p>Name <b>one</b> system. Use <b>specific</b> evidence. Explain <b>why</b>, not only what.</p>
   </div>
 </section>
 
@@ -777,7 +818,7 @@ function onImgFail(el, localSrc) {
 
 <div id="hud">
   <button id="btn-prev" type="button" aria-label="Previous slide">&larr;</button>
-  <span id="counter">1 / 20</span>
+  <span id="counter">1 / 16</span>
   <button id="btn-next" type="button" aria-label="Next slide">&rarr;</button>
   <button id="btn-ov"  type="button">All slides</button>
   <button id="btn-fs"  type="button">Full screen</button>
