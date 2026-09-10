@@ -24,12 +24,19 @@
 // It deliberately does NOT score teaching quality. The authenticity ratio is a
 // judgment call and lives in scripts/report-evidence-authenticity.js, which
 // exits 0 always.
+//
+// Units 1 and 2 were absent from CONVERTED until 2026-09-10 while CLAUDE.md
+// said every unit was converted. Both already satisfied this contract in full,
+// so nothing about them changed to add them: the list had simply never caught
+// up, and the two topic sets it silently skipped were the two a new teacher
+// opens first. That is the failure mode this file's own header warns about, a
+// declared list quietly reporting green over units nobody had checked.
 
 const fs = require('fs');
 const path = require('path');
 const { ROOT, unitTopics, resolveUnitPool, isPicture } = require('./lib/evidence-pools');
 
-const CONVERTED = [3, 4, 5, 6, 7, 8, 9];
+const CONVERTED = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const TEXT_CARD_MODULE = 'assets/js/behistorical-evidence-text-card.js';
 
 let failures = 0;

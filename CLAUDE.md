@@ -760,7 +760,8 @@ same failure as two coach prompt builders or an MP3 beside a chapter, and it is
 why `scripts/check-module07-authored.js` fails the push if a converted topic
 grows a second pool or its shell re-loads the runtime.
 
-**All 57 topics are converted as of 2026-09-06**, and the registries, the
+**All 71 topics are converted**, units 3 to 9 on 2026-09-06 and units 1 and 2
+added to `CONVERTED` on 2026-09-10, and the registries, the
 override runtime and the two checks that guarded that path are deleted. If a
 topic's evidence is wrong on the page it is wrong in that topic's renderer
 config, or in the generator that writes it, and nowhere else. Do not build a
