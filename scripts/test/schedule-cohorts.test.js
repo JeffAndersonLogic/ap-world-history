@@ -184,7 +184,10 @@ const perCohort = headings.filter((h) => /Green Day|Silver Day/.test(h));
 if (perCohort.length) {
   fail('Canvas events are split per cohort: ' + perCohort.join(', '));
 } else {
-  ok(`${headings.length - 2} Canvas events, one per topic, none split by cohort`);
+  // Section headings that introduce a group of events rather than naming one.
+  const STRUCTURAL = ['## Green and Silver', '## How to paste one of these', '## Quizzes and Exams'];
+  const eventHeadings = headings.filter((h) => !STRUCTURAL.includes(h.trim()));
+  ok(`${eventHeadings.length} Canvas events, one per topic, none split by cohort`);
 }
 
 // Every topic's event must carry a row for both sections, or one room is

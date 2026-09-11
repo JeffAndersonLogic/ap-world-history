@@ -473,6 +473,7 @@ window.BEHISTORICAL_SCHEDULE = {
       cohort: 'green',
       topic: '2.1',
       modules: ['01', '02', '06', '10'],
+      note: 'Unit 1 Quiz at the start of class today.',
       reading: {
         for: '2.2',
         where: 'ebook/unit-2.html',
@@ -489,6 +490,7 @@ window.BEHISTORICAL_SCHEDULE = {
       cohort: 'silver',
       topic: '2.1',
       modules: ['01', '02', '06', '10'],
+      note: 'Unit 1 Quiz at the start of class today.',
       reading: {
         for: '2.2',
         where: 'ebook/unit-2.html',
@@ -702,6 +704,15 @@ window.BEHISTORICAL_SCHEDULE = {
      Past dates drop off the board on their own.
      Leave `date` empty and the board shows it as Date TBD, which is
      how you announce something before you have scheduled it.
+
+     greenDate / silverDate are optional. Add both and
+     build-canvas-events.js also emits a real, paste-ready Canvas
+     calendar event for this entry (its own masthead and Assign to
+     table, one row per cohort), appended after the topic events in
+     docs/canvas/calendar-events.md. Without them, the entry still
+     shows on the board's Quizzes & Exams slide, exactly like
+     Foundations Assessment above, it just gets no Canvas event
+     built from it.
      --------------------------------------------------------- */
   assessments: [
     {
@@ -711,6 +722,25 @@ window.BEHISTORICAL_SCHEDULE = {
       title: 'Foundations Assessment',
       detail: 'Covers Foundations 0 to 5, in class Monday, August 24 for Green and Tuesday, August 25 for Silver',
       type: 'Test'
+    },
+    {
+      // Shares its class day with Topic 2.1, not a separate day: the quiz
+      // runs at the start of that block, then the lesson continues. See
+      // the `note` on Topic 2.1's two schedule days below.
+      date: '2026-09-17',
+      title: 'Unit 1 Quiz',
+      detail: 'Covers Topics 1.1 to 1.7, state building and societal organization across six Unit 1 regions, c. 1200 to c. 1450. Given at the start of the block on the same day Topic 2.1 begins, Wednesday, September 16 for Green and Thursday, September 17 for Silver, not on a separate day.',
+      type: 'Quiz',
+      greenDate: '2026-09-16',
+      silverDate: '2026-09-17'
+    },
+    {
+      date: '2026-10-07',
+      title: 'Eras 2 Exam, c. 1200 to c. 1450',
+      detail: 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences.',
+      type: 'Exam',
+      greenDate: '2026-10-06',
+      silverDate: '2026-10-07'
     }
   ],
 

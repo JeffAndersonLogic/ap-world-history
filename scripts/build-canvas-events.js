@@ -595,6 +595,43 @@ function buildEvent(topic) {
   ].join('\n');
 }
 
+/* A quiz or exam is not a lesson topic: no learning targets of its own, no
+   BeHistorical page to link, no Canvas assignment (Canvas grades it
+   directly as its own Quiz or graded event). So it gets a much smaller
+   event than buildEvent() produces, band plus one OVERVIEW row, rather
+   than reusing buildEvent() and printing a fake lesson link and a fake
+   "[INSERT ASSIGNMENT LINK]" placeholder that names nothing real. */
+function buildAssessmentEvent(topic) {
+  return [
+    band(topic),
+    `<table style="border-collapse: collapse; width: 100%; border-color: ${RULE}; border-style: solid;" border="1" cellpadding="10">`,
+    '    <tbody>',
+    row('OVERVIEW', `                <p style="font-family: ${BODY}; font-size: 15px; line-height: 1.55; color: ${INK}; margin: 0;">${esc(topic.overview)}</p>`),
+    '    </tbody>',
+    '</table>'
+  ].join('\n');
+}
+
+/* One of these per `assessments` entry that names both cohort dates. Built
+   straight from the schedule, the same way a topic event is, so a quiz or
+   exam date only ever needs to change in one place. */
+function assessmentEventTopic(entry, courseName) {
+  const green = lookupCohort('green');
+  const silver = lookupCohort('silver');
+  return {
+    code: entry.title,
+    courseName,
+    unit: entry.type || '',
+    heading: entry.title,
+    title: '',
+    overview: entry.detail || '',
+    meetings: [
+      { date: entry.greenDate, cohort: green },
+      { date: entry.silverDate, cohort: silver }
+    ]
+  };
+}
+
 /* ---------------------------------------------------------
    THE ASSIGNMENT BODY
 
@@ -978,6 +1015,10 @@ function build() {
     }
   }
 
+  const assessmentEvents = (schedule.assessments || [])
+    .filter((a) => a && a.greenDate && a.silverDate)
+    .map((a) => assessmentEventTopic(a, courseName));
+
   /* ---- the document ---- */
   const out = [];
   out.push('# Canvas Calendar Events, Paste-Ready');
@@ -1051,11 +1092,41 @@ function build() {
     out.push('');
   }
 
+  if (assessmentEvents.length) {
+    out.push('## Quizzes and Exams');
+    out.push('');
+    out.push('Not a lesson topic, so a much smaller event: a masthead and one');
+    out.push('OVERVIEW row, no BeHistorical link and no assignment placeholder,');
+    out.push('because neither exists for a quiz or exam. Built from the same');
+    out.push('`assessments` entry that puts it on the announcements board\'s');
+    out.push('Quizzes & Exams slide.');
+    out.push('');
+    for (const topic of assessmentEvents) {
+      out.push(`## ${topic.heading}`);
+      out.push('');
+      out.push(`**Event title:** \`APW - ${topic.code}\``);
+      out.push('');
+      out.push('**Assign to, one row per section:**');
+      out.push('');
+      out.push('| Section | Date |');
+      out.push('| --- | --- |');
+      for (const m of topic.meetings) {
+        out.push(`| ${m.cohort.label} | ${longDate(m.date)} |`);
+      }
+      out.push('');
+      out.push('```html');
+      out.push(buildAssessmentEvent(topic));
+      out.push('```');
+      out.push('');
+    }
+  }
+
   out.push('---');
   out.push('');
   out.push(`${topics.length} events, built from ${days.length} class days ` +
     `(${days.filter((d) => d.cohort.key === 'green').length} green, ` +
-    `${days.filter((d) => d.cohort.key === 'silver').length} silver).`);
+    `${days.filter((d) => d.cohort.key === 'silver').length} silver)` +
+    (assessmentEvents.length ? `, plus ${assessmentEvents.length} quiz/exam event(s)` : '') + '.');
   out.push('');
 
   /* ---- the assignment document ---- */
