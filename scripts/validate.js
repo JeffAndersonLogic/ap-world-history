@@ -1104,6 +1104,34 @@ section('BeInTheRoom scenario links and v2 quality contract');
       if (linkedTargets.has(filePath) && !source.includes('behistorical-beintheroom-capture.js')) {
         err(filePath, 'v1 BeInTheRoom scenario does not load the BeInTheRoom capture bridge, its AP reflection would never reach Gather All My Work');
       }
+
+      // Loading the bridge is not the same as using it correctly, and the
+      // difference cost students their work. Until 2026-09-11 each of these 23
+      // files carried its own copy of the wiring, and that copy synced the
+      // reflection box to storage at page load. A v1 scenario saves its own
+      // draft only when a student clicks Save Draft, so reopening or
+      // refreshing the page meant an empty box overwriting a real answer:
+      // Gather All My Work then showed every module except BeInTheRoom, which
+      // is how a teacher found this on Topic 1.6. The behaviour now lives in
+      // the bridge's wire(), which restores rather than overwrites, so what
+      // these files must carry is the call to it. See
+      // scripts/wire-beintheroom-work-capture.js, and
+      // scripts/test/beintheroom-capture.test.js for the half only a browser
+      // can see.
+      //
+      // The unit-6/unit-9 generated scenarios are excluded because their
+      // generator writes its own persistence: they restore the reflection from
+      // their saved state at load and never write at load, so they never had
+      // this failure.
+      const generated = source.includes("var KEY='behistorical-room-'");
+      if (linkedTargets.has(filePath) && !generated) {
+        if (!source.includes('BHBeInTheRoomCapture.wire(')) {
+          err(filePath, 'v1 BeInTheRoom scenario does not call BHBeInTheRoomCapture.wire(), so a reopened scenario can overwrite the student\'s stored reflection with an empty box');
+        }
+        if (source.includes('function sync(){var text=ids.map(')) {
+          err(filePath, 'v1 BeInTheRoom scenario still carries the pre-2026-09-11 inline capture snippet, which erases a stored reflection on page load; re-run scripts/wire-beintheroom-work-capture.js');
+        }
+      }
     }
   }
 

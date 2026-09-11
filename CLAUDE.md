@@ -185,7 +185,8 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-coach-prompt.js`, inline `assets/js/behistorical-coach-prompt.js` into **both** renderers between their sentinels. That file is the one implementation of the AI coach paste contract, shared by the checkpoint bridge, all 77 generated readings, and the Node side. `--check` fails on drift, which is what `validate.js` runs. Never hand-edit between the sentinels.
 - `node scripts/build-classroom-config.js`, regenerate `assets/js/behistorical-classroom.js` from `scripts/lib/classroom-config.js`, and inline it into both renderers and `behistorical-room-v2.js` between sentinels. `--check` fails on drift, which is what the offline suite runs. Never hand-edit between the sentinels or the generated file. See "Two Classrooms, One Site" below.
 - `node scripts/wire-beintheroom-magicschool.js [--dry-run]`, one-time sweep that gives every v1 BeInTheRoom scenario's MagicSchool button the same classroom-aware wiring. Idempotent; run it again after adding a new hand-authored (non-v2) scenario with its own MagicSchool button.
-- `node scripts/wire-beintheroom-work-capture.js [--dry-run]`, one-time sweep that gives every hand-authored v1 BeInTheRoom scenario the same wiring to `assets/js/behistorical-beintheroom-capture.js`, so its AP reflection reaches Gather All My Work. Idempotent; run it again after adding a new hand-authored scenario. See "BeInTheRoom reflections reach Canvas" below.
+- `node scripts/wire-beintheroom-work-capture.js [--dry-run]`, one-time sweep that gives every hand-authored v1 BeInTheRoom scenario the same wiring to `assets/js/behistorical-beintheroom-capture.js`, so its AP reflection reaches Gather All My Work. Idempotent; run it again after adding a new hand-authored scenario. What it writes is a single `BHBeInTheRoomCapture.wire(...)` call, never the logic itself, because the version that wrote the logic put 23 copies of it in the repo and every copy had the same bug. See "BeInTheRoom reflections reach Canvas" below.
+- `node scripts/test/beintheroom-capture.test.js`, drive a real hand-authored scenario in Chromium, type an AP reflection, reopen the page the way a student does, and assert the reflection is still in the box, still in storage, and still collected by the real lesson page's Gather All My Work. In the browser suite. It reads its scenario list off the lesson data files, so a scenario added later is covered by existing. See "BeInTheRoom reflections reach Canvas" below.
 - `node scripts/wire-beintheroom-coach-prompt.js [--dry-run]`, normalize what a hand-authored BeInTheRoom scenario pastes into Socrates: name him rather than a second coach, drop the restated persona rule, and replace the six-stage walk with the bounded ask. Idempotent, skips the generated unit-6 and unit-9 scenarios because their generators own them, and preserves each scenario's own revision target and step-out-of-character question. Run it after writing a new hand-authored scenario. See "What a scenario pastes" below.
 - `node scripts/test/readings-parse.test.js`, compile the trailing `<script>` of all 77 readings and fail if any is not valid JavaScript. In the offline suite. Ten readings once shipped with a stray `});` that threw a SyntaxError, which discards the whole script element: the AI prompt buttons, the confidence scale, and the answer capture all died at once, with every structural check green because the capture block was present and byte-identical. It was simply unreachable.
 - `node scripts/test/coach-prompt.test.js`, drive a real lesson page in Chromium and assert the checkpoint paste is byte-identical to what `scripts/lib/socrates-course.js` produces. In the browser suite. It is the only check that the renderer actually *calls* the shared builder with the right fields.
@@ -1143,6 +1144,41 @@ persona still tells a simulation student the roleplay itself is not collected.
 (`abbasid-fragmentation.html`, `cahokia-council.html`, `khmer-court.html`) sit
 unlinked from any lesson data file and were left alone, the same as the v2
 "linked from its lesson data/config" check already treats an unlinked scenario.
+
+**`behistorical-beintheroom-<TOPIC_KEY>` is the store, not a copy of one, and
+treating it as a copy cost students their work.** Until 2026-09-11 the sweep
+wrote the wiring logic into each scenario rather than a call to it, so there
+were 23 copies, and every copy synced the reflection box to storage at page
+load. A v1 scenario saves its own draft only when a student clicks Save Draft,
+which nothing requires them to do, so on a second visit the box was empty and
+that load-time sync erased a real answer. The student came back to an empty box
+and a Gather All My Work panel carrying every other module and no BeInTheRoom.
+**Every structural check was green through all of it**: the snippet was present
+and byte-identical in all 23 files, and nothing offline can see a page clear a
+storage key on load. A teacher found it on Topic 1.6, which was never a 1.6
+problem, it was 23 topics across Units 1, 2, 8 and 9.
+
+So two rules, both in `wire()` in the bridge and nowhere else. **A page load
+restores from this key rather than writing to it**, which is also why a
+reopened scenario now shows the student their own reflection back. And **only a
+real edit can empty it**: an empty box at load is a page nobody has filled in
+yet, never an instruction to erase what is stored. The payload carries an
+optional `parts` array so a scenario with three reflection boxes comes back box
+for box; both renderers read `a` and nothing else, so a payload written before
+`parts` existed stays readable.
+
+**v2 and the unit-6/unit-9 generated scenarios never had this**, because both
+restore their reflection from their own saved state at load and neither writes
+at load. They are excluded from the checks below for that reason, not
+overlooked.
+
+**Two checks, because the failure was silent in both directions.**
+`validate.js` proves offline that every linked hand-authored scenario calls
+`BHBeInTheRoomCapture.wire()` and carries none of the old snippet, which is
+what catches a hand-revert or a new scenario wired by copy and paste.
+`scripts/test/beintheroom-capture.test.js` proves in Chromium what only a
+browser knows: that a typed reflection survives the reopen, comes back in the
+box, and is still there in Gather All My Work on the lesson page.
 
 ### The reasoning skill in the Checkpoint 2 paste
 
