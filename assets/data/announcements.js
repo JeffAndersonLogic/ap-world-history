@@ -955,7 +955,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '08', title: 'Primary Source' },
         { number: '09', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Required eBook reading for Topic 2.1, The Silk Roads: Exchange Across Afro-Eurasia (ebook/unit-2.html).', kind: 'reading', due: 'Wednesday, September 16',
+          items: [
+            { text: '01 Not One Road, But Many: What the Silk Roads Were' },
+            { text: '02 Infrastructure: Caravanserais and Relay Stations' },
+            { text: '03 What Moved Along the Routes' },
+            { text: '04 Disease: The Unintended Consequence' }
+          ]
+         }
+      ],
+      homeworkDue: 'Wednesday, September 16',
+      dueDate: '2026-09-16'
     },
     /* 2026-09-15  <-  lesson-1-7-comparison.js */
     {
@@ -983,6 +994,539 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '07', title: 'Evidence Lab' },
         { number: '08', title: 'Primary Source' },
         { number: '09', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.1, The Silk Roads: Exchange Across Afro-Eurasia (ebook/unit-2.html).', kind: 'reading', due: 'Thursday, September 17',
+          items: [
+            { text: '01 Not One Road, But Many: What the Silk Roads Were' },
+            { text: '02 Infrastructure: Caravanserais and Relay Stations' },
+            { text: '03 What Moved Along the Routes' },
+            { text: '04 Disease: The Unintended Consequence' }
+          ]
+         }
+      ],
+      homeworkDue: 'Thursday, September 17',
+      dueDate: '2026-09-17'
+    },
+    /* 2026-09-16  <-  lesson-2-1-silk-roads.js */
+    {
+      date: '2026-09-16',
+      cohort: 'green',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'The Silk Roads: Exchange Across Afro-Eurasia',
+      learningTargets: [
+        { text: 'I can explain the causes of Silk Road growth, including state-building, pastoral nomads, and merchant networks that created and maintained overland routes.', label: 'Economics' },
+        { text: 'I can describe the goods and ideas exchanged along the Silk Roads, including silk, spices, paper, gunpowder, Buddhism, Islam, and plague.', label: 'Economics' },
+        { text: 'I can explain the effects of Silk Road trade on societies along the routes, including wealth accumulation, urbanization, and the spread of disease.', label: 'Economics' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence, relay stations, pastoral nomads, caravanserais, or state protection, to explain what made overland trade across Afro-Eurasia possible.', label: 'Economics' },
+        { text: 'I can identify both goods (silk, spices, porcelain, paper, gunpowder) and ideas (Buddhism, Islam, Christianity, plague) that moved along the Silk Roads and explain their significance.', label: 'Economics' },
+        { text: 'I can connect Silk Road exchange to specific effects on societies, including wealth, urban growth along routes, and the devastating spread of the Black Death.', label: 'Economics' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.2, The Mongol Empire: Conquest, Connection, and the Pax Mongolica (ebook/unit-2.html).', kind: 'reading', due: 'Friday, September 18',
+          items: [
+            { text: '01 From the Steppe to the World: Mongol Conquest' },
+            { text: '02 Governing a Vast Empire: Khanates and Religious Tolerance' },
+            { text: '03 The Pax Mongolica: Peace and Trade' },
+            { text: '04 Destruction and Connectivity Together: The Paradox' }
+          ]
+         }
+      ],
+      homeworkDue: 'Friday, September 18',
+      dueDate: '2026-09-18'
+    },
+    /* 2026-09-17  <-  lesson-2-1-silk-roads.js */
+    {
+      date: '2026-09-17',
+      cohort: 'silver',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'The Silk Roads: Exchange Across Afro-Eurasia',
+      learningTargets: [
+        { text: 'I can explain the causes of Silk Road growth, including state-building, pastoral nomads, and merchant networks that created and maintained overland routes.', label: 'Economics' },
+        { text: 'I can describe the goods and ideas exchanged along the Silk Roads, including silk, spices, paper, gunpowder, Buddhism, Islam, and plague.', label: 'Economics' },
+        { text: 'I can explain the effects of Silk Road trade on societies along the routes, including wealth accumulation, urbanization, and the spread of disease.', label: 'Economics' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence, relay stations, pastoral nomads, caravanserais, or state protection, to explain what made overland trade across Afro-Eurasia possible.', label: 'Economics' },
+        { text: 'I can identify both goods (silk, spices, porcelain, paper, gunpowder) and ideas (Buddhism, Islam, Christianity, plague) that moved along the Silk Roads and explain their significance.', label: 'Economics' },
+        { text: 'I can connect Silk Road exchange to specific effects on societies, including wealth, urban growth along routes, and the devastating spread of the Black Death.', label: 'Economics' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.2, The Mongol Empire: Conquest, Connection, and the Pax Mongolica (ebook/unit-2.html).', kind: 'reading', due: 'Monday, September 21',
+          items: [
+            { text: '01 From the Steppe to the World: Mongol Conquest' },
+            { text: '02 Governing a Vast Empire: Khanates and Religious Tolerance' },
+            { text: '03 The Pax Mongolica: Peace and Trade' },
+            { text: '04 Destruction and Connectivity Together: The Paradox' }
+          ]
+         }
+      ],
+      homeworkDue: 'Monday, September 21',
+      dueDate: '2026-09-21'
+    },
+    /* 2026-09-18  <-  lesson-2-2-mongol-empire.js */
+    {
+      date: '2026-09-18',
+      cohort: 'green',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'The Mongol Empire: Conquest, Connection, and the Pax Mongolica',
+      learningTargets: [
+        { text: 'I can explain how the Mongols conquered and administered a vast empire spanning from China to Eastern Europe.', label: 'Governance' },
+        { text: 'I can explain how the Pax Mongolica facilitated trade, travel, and exchange across Eurasia.', label: 'Economics' },
+        { text: 'I can describe the effects of Mongol rule, both destructive consequences and the connective networks it created.', label: 'Governance' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence, cavalry tactics, siege warfare, Genghis Khan\'s unification of the steppe, or the khanate system, to explain how the Mongols built and governed their empire.', label: 'Governance' },
+        { text: 'I can explain how the Pax Mongolica created conditions for expanded trade and cultural exchange, using evidence such as the Yam postal system, protection of merchants, and the travels of Marco Polo or Ibn Battuta.', label: 'Economics' },
+        { text: 'I can identify both destructive effects (massacre, depopulation, destruction of Baghdad) and connective effects (trade, plague transmission, cultural exchange) of Mongol conquest and rule.', label: 'Governance' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.3, Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection (ebook/unit-2.html).', kind: 'reading', due: 'Tuesday, September 22',
+          items: [
+            { text: '01 Wind as Technology: The Monsoon System' },
+            { text: '02 Who Traded and What They Carried' },
+            { text: '03 Port Cities and Diasporic Communities' },
+            { text: '04 Islam and the Indian Ocean' }
+          ]
+         }
+      ],
+      homeworkDue: 'Tuesday, September 22',
+      dueDate: '2026-09-22'
+    },
+    /* 2026-09-21  <-  lesson-2-2-mongol-empire.js */
+    {
+      date: '2026-09-21',
+      cohort: 'silver',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'The Mongol Empire: Conquest, Connection, and the Pax Mongolica',
+      learningTargets: [
+        { text: 'I can explain how the Mongols conquered and administered a vast empire spanning from China to Eastern Europe.', label: 'Governance' },
+        { text: 'I can explain how the Pax Mongolica facilitated trade, travel, and exchange across Eurasia.', label: 'Economics' },
+        { text: 'I can describe the effects of Mongol rule, both destructive consequences and the connective networks it created.', label: 'Governance' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence, cavalry tactics, siege warfare, Genghis Khan\'s unification of the steppe, or the khanate system, to explain how the Mongols built and governed their empire.', label: 'Governance' },
+        { text: 'I can explain how the Pax Mongolica created conditions for expanded trade and cultural exchange, using evidence such as the Yam postal system, protection of merchants, and the travels of Marco Polo or Ibn Battuta.', label: 'Economics' },
+        { text: 'I can identify both destructive effects (massacre, depopulation, destruction of Baghdad) and connective effects (trade, plague transmission, cultural exchange) of Mongol conquest and rule.', label: 'Governance' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.3, Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection (ebook/unit-2.html).', kind: 'reading', due: 'Wednesday, September 23',
+          items: [
+            { text: '01 Wind as Technology: The Monsoon System' },
+            { text: '02 Who Traded and What They Carried' },
+            { text: '03 Port Cities and Diasporic Communities' },
+            { text: '04 Islam and the Indian Ocean' }
+          ]
+         }
+      ],
+      homeworkDue: 'Wednesday, September 23',
+      dueDate: '2026-09-23'
+    },
+    /* 2026-09-22  <-  lesson-2-3-indian-ocean.js */
+    {
+      date: '2026-09-22',
+      cohort: 'green',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection',
+      learningTargets: [
+        { text: 'I can explain how technology and environmental knowledge, including dhow ships, the magnetic compass, and monsoon wind patterns, enabled Indian Ocean trade.', label: 'Technology' },
+        { text: 'I can describe the goods and peoples exchanged across the Indian Ocean, including spices, textiles, gold, ivory, and merchants from Arabia, India, China, and the Swahili coast.', label: 'Economics' },
+        { text: 'I can explain the effects of Indian Ocean trade, including the growth of port cities, the formation of diasporic merchant communities, and the spread of Islam.', label: 'Cultural Developments and Interactions' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence, monsoon winds, dhow construction, or the magnetic compass, to explain how environmental knowledge and technology made Indian Ocean maritime trade possible.', label: 'Technology' },
+        { text: 'I can identify the major goods (spices, textiles, gold, ivory) and merchant communities (Arab, Indian, Chinese, Swahili, Persian) that participated in Indian Ocean exchange and explain what made their participation significant.', label: 'Economics' },
+        { text: 'I can connect Indian Ocean trade to specific effects: cosmopolitan port cities like Kilwa, Calicut, Quanzhou, and Malacca; diasporic merchant communities; and the spread of Islam along maritime routes.', label: 'Cultural Developments and Interactions' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.4, Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam (ebook/unit-2.html).', kind: 'reading', due: 'Thursday, September 24',
+          items: [
+            { text: '01 The Camel: A Technology That Crossed a Desert' },
+            { text: '02 Gold and Salt: The Perfect Trade' },
+            { text: '03 The Mali Empire: Wealth from Trade' },
+            { text: '04 Islam Crosses the Sahara' }
+          ]
+         }
+      ],
+      homeworkDue: 'Thursday, September 24',
+      dueDate: '2026-09-24'
+    },
+    /* 2026-09-23  <-  lesson-2-3-indian-ocean.js */
+    {
+      date: '2026-09-23',
+      cohort: 'silver',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection',
+      learningTargets: [
+        { text: 'I can explain how technology and environmental knowledge, including dhow ships, the magnetic compass, and monsoon wind patterns, enabled Indian Ocean trade.', label: 'Technology' },
+        { text: 'I can describe the goods and peoples exchanged across the Indian Ocean, including spices, textiles, gold, ivory, and merchants from Arabia, India, China, and the Swahili coast.', label: 'Economics' },
+        { text: 'I can explain the effects of Indian Ocean trade, including the growth of port cities, the formation of diasporic merchant communities, and the spread of Islam.', label: 'Cultural Developments and Interactions' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence, monsoon winds, dhow construction, or the magnetic compass, to explain how environmental knowledge and technology made Indian Ocean maritime trade possible.', label: 'Technology' },
+        { text: 'I can identify the major goods (spices, textiles, gold, ivory) and merchant communities (Arab, Indian, Chinese, Swahili, Persian) that participated in Indian Ocean exchange and explain what made their participation significant.', label: 'Economics' },
+        { text: 'I can connect Indian Ocean trade to specific effects: cosmopolitan port cities like Kilwa, Calicut, Quanzhou, and Malacca; diasporic merchant communities; and the spread of Islam along maritime routes.', label: 'Cultural Developments and Interactions' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.4, Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam (ebook/unit-2.html).', kind: 'reading', due: 'Friday, September 25',
+          items: [
+            { text: '01 The Camel: A Technology That Crossed a Desert' },
+            { text: '02 Gold and Salt: The Perfect Trade' },
+            { text: '03 The Mali Empire: Wealth from Trade' },
+            { text: '04 Islam Crosses the Sahara' }
+          ]
+         }
+      ],
+      homeworkDue: 'Friday, September 25',
+      dueDate: '2026-09-25'
+    },
+    /* 2026-09-24  <-  lesson-2-4-trans-saharan.js */
+    {
+      date: '2026-09-24',
+      cohort: 'green',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam',
+      learningTargets: [
+        { text: 'I can explain how technology, especially the camel and caravan organization, made trans-Saharan trade possible across one of the world\'s most hostile environments.', label: 'Technology' },
+        { text: 'I can describe the goods exchanged across the Sahara, especially gold from West Africa and salt from Saharan mines, and explain why this exchange was mutually necessary.', label: 'Economics' },
+        { text: 'I can explain the effects of trans-Saharan trade: the growth of the Mali Empire, the wealth and fame of Mansa Musa, and the spread of Islam across West Africa.', label: 'Cultural Developments and Interactions' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence, the camel\'s physiological advantages, the redesigned saddle, caravan organization, and oases, to explain what made crossing the Sahara commercially viable.', label: 'Technology' },
+        { text: 'I can explain the gold-salt exchange: where each commodity came from, why each side needed what the other had, and how this complementary demand drove the trans-Saharan trade system.', label: 'Economics' },
+        { text: 'I can connect trans-Saharan trade to the rise of Mali, Mansa Musa\'s 1324 hajj and its global significance, the growth of Timbuktu as a center of Islamic learning, and the spread of Islam through merchant and scholarly networks across West Africa.', label: 'Cultural Developments and Interactions' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.5, Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move (ebook/unit-2.html).', kind: 'reading', due: 'Monday, September 28',
+          items: [
+            { text: '01 Religion Follows the Merchant' },
+            { text: '02 Technology Moves East to West' },
+            { text: '03 Agricultural and Crop Diffusion' },
+            { text: '04 Artistic and Intellectual Diffusion' }
+          ]
+         }
+      ],
+      homeworkDue: 'Monday, September 28',
+      dueDate: '2026-09-28'
+    },
+    /* 2026-09-25  <-  lesson-2-4-trans-saharan.js */
+    {
+      date: '2026-09-25',
+      cohort: 'silver',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam',
+      learningTargets: [
+        { text: 'I can explain how technology, especially the camel and caravan organization, made trans-Saharan trade possible across one of the world\'s most hostile environments.', label: 'Technology' },
+        { text: 'I can describe the goods exchanged across the Sahara, especially gold from West Africa and salt from Saharan mines, and explain why this exchange was mutually necessary.', label: 'Economics' },
+        { text: 'I can explain the effects of trans-Saharan trade: the growth of the Mali Empire, the wealth and fame of Mansa Musa, and the spread of Islam across West Africa.', label: 'Cultural Developments and Interactions' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence, the camel\'s physiological advantages, the redesigned saddle, caravan organization, and oases, to explain what made crossing the Sahara commercially viable.', label: 'Technology' },
+        { text: 'I can explain the gold-salt exchange: where each commodity came from, why each side needed what the other had, and how this complementary demand drove the trans-Saharan trade system.', label: 'Economics' },
+        { text: 'I can connect trans-Saharan trade to the rise of Mali, Mansa Musa\'s 1324 hajj and its global significance, the growth of Timbuktu as a center of Islamic learning, and the spread of Islam through merchant and scholarly networks across West Africa.', label: 'Cultural Developments and Interactions' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.5, Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move (ebook/unit-2.html).', kind: 'reading', due: 'Tuesday, September 29',
+          items: [
+            { text: '01 Religion Follows the Merchant' },
+            { text: '02 Technology Moves East to West' },
+            { text: '03 Agricultural and Crop Diffusion' },
+            { text: '04 Artistic and Intellectual Diffusion' }
+          ]
+         }
+      ],
+      homeworkDue: 'Tuesday, September 29',
+      dueDate: '2026-09-29'
+    },
+    /* 2026-09-28  <-  lesson-2-5-cultural-consequences.js */
+    {
+      date: '2026-09-28',
+      cohort: 'green',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move',
+      learningTargets: [
+        { text: 'I can explain how major religions, Buddhism, Islam, Christianity, and Hinduism, spread along trade routes from c. 1200 to c. 1450.', label: 'Culture and Society' },
+        { text: 'I can describe how key technologies, paper, printing, gunpowder, the compass, and the stirrup, diffused across Afro-Eurasia through trade networks.', label: 'Science and Technology' },
+        { text: 'I can explain how crops, architectural styles, artistic motifs, and literary traditions diffused across Afro-Eurasia as a consequence of trade connectivity.', label: 'Culture and Society' }
+      ],
+      successCriteria: [
+        { text: 'I can identify at least two specific religions and explain how each spread along a named trade route, Silk Roads, Indian Ocean, or trans-Saharan.', label: 'Culture and Society' },
+        { text: 'I can name at least two technologies that diffused through trade networks and explain where they originated and where they spread.', label: 'Science and Technology' },
+        { text: 'I can use specific evidence, a crop, an architectural style, or a cultural tradition, to explain how trade produced cultural exchange and transformation.', label: 'Culture and Society' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.6, Environmental Consequences of Connectivity: Disease, Death, and Ecological Change (ebook/unit-2.html).', kind: 'reading', due: 'Wednesday, September 30',
+          items: [
+            { text: '01 The Plague\'s Origins: From Ecology to Pandemic' },
+            { text: '02 How the Plague Traveled' },
+            { text: '03 Demographic Catastrophe: The Scale of Death' },
+            { text: '04 Social and Institutional Consequences' }
+          ]
+         }
+      ],
+      homeworkDue: 'Wednesday, September 30',
+      dueDate: '2026-09-30'
+    },
+    /* 2026-09-29  <-  lesson-2-5-cultural-consequences.js */
+    {
+      date: '2026-09-29',
+      cohort: 'silver',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move',
+      learningTargets: [
+        { text: 'I can explain how major religions, Buddhism, Islam, Christianity, and Hinduism, spread along trade routes from c. 1200 to c. 1450.', label: 'Culture and Society' },
+        { text: 'I can describe how key technologies, paper, printing, gunpowder, the compass, and the stirrup, diffused across Afro-Eurasia through trade networks.', label: 'Science and Technology' },
+        { text: 'I can explain how crops, architectural styles, artistic motifs, and literary traditions diffused across Afro-Eurasia as a consequence of trade connectivity.', label: 'Culture and Society' }
+      ],
+      successCriteria: [
+        { text: 'I can identify at least two specific religions and explain how each spread along a named trade route, Silk Roads, Indian Ocean, or trans-Saharan.', label: 'Culture and Society' },
+        { text: 'I can name at least two technologies that diffused through trade networks and explain where they originated and where they spread.', label: 'Science and Technology' },
+        { text: 'I can use specific evidence, a crop, an architectural style, or a cultural tradition, to explain how trade produced cultural exchange and transformation.', label: 'Culture and Society' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.6, Environmental Consequences of Connectivity: Disease, Death, and Ecological Change (ebook/unit-2.html).', kind: 'reading', due: 'Thursday, October 1',
+          items: [
+            { text: '01 The Plague\'s Origins: From Ecology to Pandemic' },
+            { text: '02 How the Plague Traveled' },
+            { text: '03 Demographic Catastrophe: The Scale of Death' },
+            { text: '04 Social and Institutional Consequences' }
+          ]
+         }
+      ],
+      homeworkDue: 'Thursday, October 1',
+      dueDate: '2026-10-01'
+    },
+    /* 2026-09-30  <-  lesson-2-6-environmental-consequences.js */
+    {
+      date: '2026-09-30',
+      cohort: 'green',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'Environmental Consequences of Connectivity: Disease, Death, and Ecological Change',
+      learningTargets: [
+        { text: 'I can explain how trade routes spread epidemic disease across Afro-Eurasia, with a focus on the bubonic plague and the role of the Mongol trade network.', label: 'Environment and Geography' },
+        { text: 'I can describe the demographic and social consequences of the Black Death in Eurasia and North Africa, including population loss, labor shortages, and challenges to traditional authority.', label: 'Social Structures' },
+        { text: 'I can explain the ecological consequences of increased connectivity, including deforestation, agricultural intensification, and the movement of invasive species along trade routes.', label: 'Environment and Geography' }
+      ],
+      successCriteria: [
+        { text: 'I can trace the path of the bubonic plague from its origins in Central Asia to its spread across Eurasia and North Africa, naming at least one specific mechanism of transmission.', label: 'Environment and Geography' },
+        { text: 'I can use specific evidence, population statistics, labor shortages, or social upheaval, to explain how the Black Death transformed societies across Eurasia.', label: 'Social Structures' },
+        { text: 'I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.', label: 'Environment and Geography' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.7, Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks (ebook/unit-2.html).', kind: 'reading', due: 'Friday, October 2',
+          items: [
+            { text: '01 What All Three Networks Shared' },
+            { text: '02 How the Networks Differed: Technology and Goods' },
+            { text: '03 Cultural Differences: Which Religions Spread Where' },
+            { text: '04 How to Write AP Comparison' }
+          ]
+         }
+      ],
+      homeworkDue: 'Friday, October 2',
+      dueDate: '2026-10-02'
+    },
+    /* 2026-10-01  <-  lesson-2-6-environmental-consequences.js */
+    {
+      date: '2026-10-01',
+      cohort: 'silver',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'Environmental Consequences of Connectivity: Disease, Death, and Ecological Change',
+      learningTargets: [
+        { text: 'I can explain how trade routes spread epidemic disease across Afro-Eurasia, with a focus on the bubonic plague and the role of the Mongol trade network.', label: 'Environment and Geography' },
+        { text: 'I can describe the demographic and social consequences of the Black Death in Eurasia and North Africa, including population loss, labor shortages, and challenges to traditional authority.', label: 'Social Structures' },
+        { text: 'I can explain the ecological consequences of increased connectivity, including deforestation, agricultural intensification, and the movement of invasive species along trade routes.', label: 'Environment and Geography' }
+      ],
+      successCriteria: [
+        { text: 'I can trace the path of the bubonic plague from its origins in Central Asia to its spread across Eurasia and North Africa, naming at least one specific mechanism of transmission.', label: 'Environment and Geography' },
+        { text: 'I can use specific evidence, population statistics, labor shortages, or social upheaval, to explain how the Black Death transformed societies across Eurasia.', label: 'Social Structures' },
+        { text: 'I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.', label: 'Environment and Geography' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Required eBook reading for Topic 2.7, Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks (ebook/unit-2.html).', kind: 'reading', due: 'Monday, October 5',
+          items: [
+            { text: '01 What All Three Networks Shared' },
+            { text: '02 How the Networks Differed: Technology and Goods' },
+            { text: '03 Cultural Differences: Which Religions Spread Where' },
+            { text: '04 How to Write AP Comparison' }
+          ]
+         }
+      ],
+      homeworkDue: 'Monday, October 5',
+      dueDate: '2026-10-05'
+    },
+    /* 2026-10-02  <-  lesson-2-7-comparison.js */
+    {
+      date: '2026-10-02',
+      cohort: 'green',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks',
+      learningTargets: [
+        { text: 'I can identify similarities across all three Afro-Eurasian trade networks, Silk Roads, Indian Ocean, and trans-Saharan, including long-distance exchange, the movement of goods and ideas, and cultural diffusion.', label: 'Economics' },
+        { text: 'I can identify key differences between the three trade networks in geography, transportation technology, dominant goods, and cultural effects.', label: 'Economics' },
+        { text: 'I can explain how comparing the three networks reveals broader patterns of Afro-Eurasian connectivity and supports AP-style comparison arguments with evidence.', label: 'Economics' }
+      ],
+      successCriteria: [
+        { text: 'I can state at least two specific similarities shared by all three trade networks and support each with a concrete historical example.', label: 'Economics' },
+        { text: 'I can explain at least two meaningful differences between any two of the three networks, using specific evidence about geography, technology, or goods exchanged.', label: 'Economics' },
+        { text: 'I can use a comparison of trade networks to build a historical argument that includes a claim, evidence, and reasoning connecting to a broader pattern of Afro-Eurasian exchange.', label: 'Economics' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-10-05  <-  lesson-2-7-comparison.js */
+    {
+      date: '2026-10-05',
+      cohort: 'silver',
+      unit: 'Unit 2: Networks of Exchange',
+      topic: 'Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks',
+      learningTargets: [
+        { text: 'I can identify similarities across all three Afro-Eurasian trade networks, Silk Roads, Indian Ocean, and trans-Saharan, including long-distance exchange, the movement of goods and ideas, and cultural diffusion.', label: 'Economics' },
+        { text: 'I can identify key differences between the three trade networks in geography, transportation technology, dominant goods, and cultural effects.', label: 'Economics' },
+        { text: 'I can explain how comparing the three networks reveals broader patterns of Afro-Eurasian connectivity and supports AP-style comparison arguments with evidence.', label: 'Economics' }
+      ],
+      successCriteria: [
+        { text: 'I can state at least two specific similarities shared by all three trade networks and support each with a concrete historical example.', label: 'Economics' },
+        { text: 'I can explain at least two meaningful differences between any two of the three networks, using specific evidence about geography, technology, or goods exchanged.', label: 'Economics' },
+        { text: 'I can use a comparison of trade networks to build a historical argument that includes a claim, evidence, and reasoning connecting to a broader pattern of Afro-Eurasian exchange.', label: 'Economics' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '10', title: 'Checkpoint 2' }
       ],
       homework: []
     }

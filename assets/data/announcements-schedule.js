@@ -431,8 +431,269 @@ window.BEHISTORICAL_SCHEDULE = {
     /* ---- Topic 1.7, Comparison -------------------------- */
     // NOTE: same caveat as 1.6, 9/14 and 9/15 are extrapolated from the
     // alternating pattern, not confirmed against the Canvas calendar.
-    { date: '2026-09-14', cohort: 'green',  topic: '1.7', homework: '' },
-    { date: '2026-09-15', cohort: 'silver', topic: '1.7', homework: '' }
+    {
+      date: '2026-09-14',
+      cohort: 'green',
+      topic: '1.7',
+      reading: {
+        for: '2.1',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 Not One Road, But Many: What the Silk Roads Were',
+          '02 Infrastructure: Caravanserais and Relay Stations',
+          '03 What Moved Along the Routes',
+          '04 Disease: The Unintended Consequence'
+        ]
+      }
+    },
+    {
+      date: '2026-09-15',
+      cohort: 'silver',
+      topic: '1.7',
+      reading: {
+        for: '2.1',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 Not One Road, But Many: What the Silk Roads Were',
+          '02 Infrastructure: Caravanserais and Relay Stations',
+          '03 What Moved Along the Routes',
+          '04 Disease: The Unintended Consequence'
+        ]
+      }
+    },
+
+    /* ---- Topic 2.1, Silk Roads --------------------------- */
+    // NOTE: dates extrapolated from the alternating pattern, not confirmed
+    // against the Canvas calendar. modules is a placeholder default (every
+    // module except 01 Map and 03 Content Delivery, which is a jump link
+    // with nothing to grade) until the real Canvas assignment names a
+    // DO THESE N subset; edit it once that exists.
+    {
+      date: '2026-09-16',
+      cohort: 'green',
+      topic: '2.1',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.2',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 From the Steppe to the World: Mongol Conquest',
+          '02 Governing a Vast Empire: Khanates and Religious Tolerance',
+          '03 The Pax Mongolica: Peace and Trade',
+          '04 Destruction and Connectivity Together: The Paradox'
+        ]
+      }
+    },
+    {
+      date: '2026-09-17',
+      cohort: 'silver',
+      topic: '2.1',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.2',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 From the Steppe to the World: Mongol Conquest',
+          '02 Governing a Vast Empire: Khanates and Religious Tolerance',
+          '03 The Pax Mongolica: Peace and Trade',
+          '04 Destruction and Connectivity Together: The Paradox'
+        ]
+      }
+    },
+
+    /* ---- Topic 2.2, Mongol Empire ------------------------ */
+    {
+      date: '2026-09-18',
+      cohort: 'green',
+      topic: '2.2',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.3',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 Wind as Technology: The Monsoon System',
+          '02 Who Traded and What They Carried',
+          '03 Port Cities and Diasporic Communities',
+          '04 Islam and the Indian Ocean'
+        ]
+      }
+    },
+    {
+      date: '2026-09-21',
+      cohort: 'silver',
+      topic: '2.2',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.3',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 Wind as Technology: The Monsoon System',
+          '02 Who Traded and What They Carried',
+          '03 Port Cities and Diasporic Communities',
+          '04 Islam and the Indian Ocean'
+        ]
+      }
+    },
+
+    /* ---- Topic 2.3, Indian Ocean -------------------------- */
+    {
+      date: '2026-09-22',
+      cohort: 'green',
+      topic: '2.3',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.4',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 The Camel: A Technology That Crossed a Desert',
+          '02 Gold and Salt: The Perfect Trade',
+          '03 The Mali Empire: Wealth from Trade',
+          '04 Islam Crosses the Sahara'
+        ]
+      }
+    },
+    {
+      date: '2026-09-23',
+      cohort: 'silver',
+      topic: '2.3',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.4',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 The Camel: A Technology That Crossed a Desert',
+          '02 Gold and Salt: The Perfect Trade',
+          '03 The Mali Empire: Wealth from Trade',
+          '04 Islam Crosses the Sahara'
+        ]
+      }
+    },
+
+    /* ---- Topic 2.4, Trans-Saharan Trade ------------------- */
+    {
+      date: '2026-09-24',
+      cohort: 'green',
+      topic: '2.4',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.5',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 Religion Follows the Merchant',
+          '02 Technology Moves East to West',
+          '03 Agricultural and Crop Diffusion',
+          '04 Artistic and Intellectual Diffusion'
+        ]
+      }
+    },
+    {
+      date: '2026-09-25',
+      cohort: 'silver',
+      topic: '2.4',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.5',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 Religion Follows the Merchant',
+          '02 Technology Moves East to West',
+          '03 Agricultural and Crop Diffusion',
+          '04 Artistic and Intellectual Diffusion'
+        ]
+      }
+    },
+
+    /* ---- Topic 2.5, Cultural Consequences ----------------- */
+    {
+      date: '2026-09-28',
+      cohort: 'green',
+      topic: '2.5',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.6',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 The Plague\'s Origins: From Ecology to Pandemic',
+          '02 How the Plague Traveled',
+          '03 Demographic Catastrophe: The Scale of Death',
+          '04 Social and Institutional Consequences'
+        ]
+      }
+    },
+    {
+      date: '2026-09-29',
+      cohort: 'silver',
+      topic: '2.5',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.6',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 The Plague\'s Origins: From Ecology to Pandemic',
+          '02 How the Plague Traveled',
+          '03 Demographic Catastrophe: The Scale of Death',
+          '04 Social and Institutional Consequences'
+        ]
+      }
+    },
+
+    /* ---- Topic 2.6, Environmental Consequences ------------ */
+    {
+      date: '2026-09-30',
+      cohort: 'green',
+      topic: '2.6',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.7',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 What All Three Networks Shared',
+          '02 How the Networks Differed: Technology and Goods',
+          '03 Cultural Differences: Which Religions Spread Where',
+          '04 How to Write AP Comparison'
+        ]
+      }
+    },
+    {
+      date: '2026-10-01',
+      cohort: 'silver',
+      topic: '2.6',
+      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      reading: {
+        for: '2.7',
+        where: 'ebook/unit-2.html',
+        required: [
+          '01 What All Three Networks Shared',
+          '02 How the Networks Differed: Technology and Goods',
+          '03 Cultural Differences: Which Religions Spread Where',
+          '04 How to Write AP Comparison'
+        ]
+      }
+    },
+
+    /* ---- Topic 2.7, Comparison ----------------------------- */
+    // No reading assigned here: Topic 3.1 exists but is not yet in this
+    // schedule, so there is no next meeting to derive a due date from. Add
+    // the 3.1 reading here once Unit 3 gets dated class days.
+    // No module 09: 2.7's beInTheRoom has no url, so the renderer shows a
+    // coming-soon placeholder rather than a real Module 09 card, and
+    // module-list.js's unitModules() drops the number entirely instead of
+    // renumbering Checkpoint 2 down (that only happens with no beInTheRoom
+    // field at all). This topic really runs 01-08 and 10, nine modules.
+    {
+      date: '2026-10-02',
+      cohort: 'green',
+      topic: '2.7',
+      modules: ['02', '04', '05', '06', '07', '08', '10'],
+      homework: ''
+    },
+    {
+      date: '2026-10-05',
+      cohort: 'silver',
+      topic: '2.7',
+      modules: ['02', '04', '05', '06', '07', '08', '10'],
+      homework: ''
+    }
   ],
 
   /* ---------------------------------------------------------

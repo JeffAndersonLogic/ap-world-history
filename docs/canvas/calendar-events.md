@@ -1244,8 +1244,8 @@ deleted row in the schedule and every affected date moves with it.
 
 | Section | Taught | Work due |
 | --- | --- | --- |
-| Green Day | Monday, September 14 | nothing assigned |
-| Silver Day | Tuesday, September 15 | nothing assigned |
+| Green Day | Monday, September 14 | Wednesday, September 16 |
+| Silver Day | Tuesday, September 15 | Thursday, September 17 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
@@ -1296,7 +1296,20 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.1, The Silk Roads: Exchange Across Afro-Eurasia (ebook/unit-2.html).
+                        <ul style="margin: 6px 0 0 18px; padding: 0;">
+                            <li style="margin: 0 0 4px 0;">01 Not One Road, But Many: What the Silk Roads Were</li>
+                            <li style="margin: 0 0 4px 0;">02 Infrastructure: Caravanserais and Relay Stations</li>
+                            <li style="margin: 0 0 4px 0;">03 What Moved Along the Routes</li>
+                            <li style="margin: 0 0 4px 0;">04 Disease: The Unintended Consequence</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Wednesday, September 16</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Thursday, September 17</span></span>
+                </p>
             </td>
         </tr>
         <tr>
@@ -1319,6 +1332,665 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
+## Topic 2.1: The Silk Roads: Exchange Across Afro-Eurasia
+
+**Event title:** `APW - 2.1 - The Silk Roads: Exchange Across Afro-Eurasia`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Wednesday, September 16 | Friday, September 18 |
+| Silver Day | Thursday, September 17 | Monday, September 21 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.1: The Silk Roads: Exchange Across Afro-Eurasia</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, September 16</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, September 17</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Silk Roads were never one road. They were a shifting network of caravan trails, relay stations, and caravanserais, held together by pastoral nomads who worked the routes and by the states willing to protect merchants along their stretch of them. Today you follow what made overland Afro-Eurasian trade possible, what actually moved along it, silk and spices, but also paper, gunpowder, Buddhism, and Islam, and the one traveler nobody invited: the disease that moved as easily as the goods.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain the causes of Silk Road growth, including state-building, pastoral nomads, and merchant networks that created and maintained overland routes.</li>
+                    <li style="margin: 0 0 6px 0;">I can describe the goods and ideas exchanged along the Silk Roads, including silk, spices, paper, gunpowder, Buddhism, Islam, and plague.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain the effects of Silk Road trade on societies along the routes, including wealth accumulation, urbanization, and the spread of disease.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can use specific evidence, relay stations, pastoral nomads, caravanserais, or state protection, to explain what made overland trade across Afro-Eurasia possible.</li>
+                    <li style="margin: 0 0 6px 0;">I can identify both goods (silk, spices, porcelain, paper, gunpowder) and ideas (Buddhism, Islam, Christianity, plague) that moved along the Silk Roads and explain their significance.</li>
+                    <li style="margin: 0 0 6px 0;">I can connect Silk Road exchange to specific effects on societies, including wealth, urban growth along routes, and the devastating spread of the Black Death.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.2, The Mongol Empire: Conquest, Connection, and the Pax Mongolica (ebook/unit-2.html).
+                        <ul style="margin: 6px 0 0 18px; padding: 0;">
+                            <li style="margin: 0 0 4px 0;">01 From the Steppe to the World: Mongol Conquest</li>
+                            <li style="margin: 0 0 4px 0;">02 Governing a Vast Empire: Khanates and Religious Tolerance</li>
+                            <li style="margin: 0 0 4px 0;">03 The Pax Mongolica: Peace and Trade</li>
+                            <li style="margin: 0 0 4px 0;">04 Destruction and Connectivity Together: The Paradox</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Friday, September 18</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Monday, September 21</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-1-silk-roads.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.1 - The Silk Roads: Exchange Across Afro-Eurasia</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 2.2: The Mongol Empire: Conquest, Connection, and the Pax Mongolica
+
+**Event title:** `APW - 2.2 - The Mongol Empire: Conquest, Connection, and the Pax Mongolica`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Friday, September 18 | Tuesday, September 22 |
+| Silver Day | Monday, September 21 | Wednesday, September 23 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.2: The Mongol Empire: Conquest, Connection, and the Pax Mongolica</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, September 18</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, September 21</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Mongols conquered more territory in a single generation than any empire before them, and the useful question is not only how they took it but how they held it. Today you follow the khanate system that governed a realm running from China to Eastern Europe, the Pax Mongolica that let a merchant or a missionary cross that same distance under one guarantee of safe passage, and the paradox at the center of it: a conquest built on massacre and depopulation that also built the safest trade corridor Afro-Eurasia had ever seen.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how the Mongols conquered and administered a vast empire spanning from China to Eastern Europe.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the Pax Mongolica facilitated trade, travel, and exchange across Eurasia.</li>
+                    <li style="margin: 0 0 6px 0;">I can describe the effects of Mongol rule, both destructive consequences and the connective networks it created.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can use specific evidence, cavalry tactics, siege warfare, Genghis Khan's unification of the steppe, or the khanate system, to explain how the Mongols built and governed their empire.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the Pax Mongolica created conditions for expanded trade and cultural exchange, using evidence such as the Yam postal system, protection of merchants, and the travels of Marco Polo or Ibn Battuta.</li>
+                    <li style="margin: 0 0 6px 0;">I can identify both destructive effects (massacre, depopulation, destruction of Baghdad) and connective effects (trade, plague transmission, cultural exchange) of Mongol conquest and rule.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.3, Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection (ebook/unit-2.html).
+                        <ul style="margin: 6px 0 0 18px; padding: 0;">
+                            <li style="margin: 0 0 4px 0;">01 Wind as Technology: The Monsoon System</li>
+                            <li style="margin: 0 0 4px 0;">02 Who Traded and What They Carried</li>
+                            <li style="margin: 0 0 4px 0;">03 Port Cities and Diasporic Communities</li>
+                            <li style="margin: 0 0 4px 0;">04 Islam and the Indian Ocean</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Tuesday, September 22</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Wednesday, September 23</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-2-mongol-empire.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.2 - The Mongol Empire: Conquest, Connection, and the Pax Mongolica</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 2.3: Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection
+
+**Event title:** `APW - 2.3 - Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Tuesday, September 22 | Thursday, September 24 |
+| Silver Day | Wednesday, September 23 | Friday, September 25 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.3: Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, September 22</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, September 23</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Indian Ocean ran on wind, not on borders. A ship that understood the monsoon could sail east on one half of the year and home on the other, and that single piece of environmental knowledge, more than any navy, built the trade world connecting Arabia, India, China, and the Swahili coast. Today you follow the dhow and the compass that made the crossing possible, the goods and the diasporic merchant communities that crossing produced, and the faith that appeared in nearly every port it touched.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how technology and environmental knowledge, including dhow ships, the magnetic compass, and monsoon wind patterns, enabled Indian Ocean trade.</li>
+                    <li style="margin: 0 0 6px 0;">I can describe the goods and peoples exchanged across the Indian Ocean, including spices, textiles, gold, ivory, and merchants from Arabia, India, China, and the Swahili coast.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain the effects of Indian Ocean trade, including the growth of port cities, the formation of diasporic merchant communities, and the spread of Islam.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can use specific evidence, monsoon winds, dhow construction, or the magnetic compass, to explain how environmental knowledge and technology made Indian Ocean maritime trade possible.</li>
+                    <li style="margin: 0 0 6px 0;">I can identify the major goods (spices, textiles, gold, ivory) and merchant communities (Arab, Indian, Chinese, Swahili, Persian) that participated in Indian Ocean exchange and explain what made their participation significant.</li>
+                    <li style="margin: 0 0 6px 0;">I can connect Indian Ocean trade to specific effects: cosmopolitan port cities like Kilwa, Calicut, Quanzhou, and Malacca; diasporic merchant communities; and the spread of Islam along maritime routes.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.4, Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam (ebook/unit-2.html).
+                        <ul style="margin: 6px 0 0 18px; padding: 0;">
+                            <li style="margin: 0 0 4px 0;">01 The Camel: A Technology That Crossed a Desert</li>
+                            <li style="margin: 0 0 4px 0;">02 Gold and Salt: The Perfect Trade</li>
+                            <li style="margin: 0 0 4px 0;">03 The Mali Empire: Wealth from Trade</li>
+                            <li style="margin: 0 0 4px 0;">04 Islam Crosses the Sahara</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Thursday, September 24</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Friday, September 25</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-3-indian-ocean.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.3 - Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 2.4: Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam
+
+**Event title:** `APW - 2.4 - Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Thursday, September 24 | Monday, September 28 |
+| Silver Day | Friday, September 25 | Tuesday, September 29 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.4: Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, September 24</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, September 25</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Sahara is not empty of history, and the camel is why. Today you follow the animal and the caravan organization that turned one of the world's most hostile environments into a trade corridor, the gold-salt exchange that gave West Africa and North Africa something the other side needed and had none of, and the empire, Mali, that grew wealthy enough to make its ruler's 1324 pilgrimage an event other continents were still discussing decades later.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how technology, especially the camel and caravan organization, made trans-Saharan trade possible across one of the world's most hostile environments.</li>
+                    <li style="margin: 0 0 6px 0;">I can describe the goods exchanged across the Sahara, especially gold from West Africa and salt from Saharan mines, and explain why this exchange was mutually necessary.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain the effects of trans-Saharan trade: the growth of the Mali Empire, the wealth and fame of Mansa Musa, and the spread of Islam across West Africa.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can use specific evidence, the camel's physiological advantages, the redesigned saddle, caravan organization, and oases, to explain what made crossing the Sahara commercially viable.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain the gold-salt exchange: where each commodity came from, why each side needed what the other had, and how this complementary demand drove the trans-Saharan trade system.</li>
+                    <li style="margin: 0 0 6px 0;">I can connect trans-Saharan trade to the rise of Mali, Mansa Musa's 1324 hajj and its global significance, the growth of Timbuktu as a center of Islamic learning, and the spread of Islam through merchant and scholarly networks across West Africa.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.5, Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move (ebook/unit-2.html).
+                        <ul style="margin: 6px 0 0 18px; padding: 0;">
+                            <li style="margin: 0 0 4px 0;">01 Religion Follows the Merchant</li>
+                            <li style="margin: 0 0 4px 0;">02 Technology Moves East to West</li>
+                            <li style="margin: 0 0 4px 0;">03 Agricultural and Crop Diffusion</li>
+                            <li style="margin: 0 0 4px 0;">04 Artistic and Intellectual Diffusion</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Monday, September 28</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Tuesday, September 29</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-4-trans-saharan.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.4 - Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 2.5: Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move
+
+**Event title:** `APW - 2.5 - Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Monday, September 28 | Wednesday, September 30 |
+| Silver Day | Tuesday, September 29 | Thursday, October 1 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.5: Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, September 28</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, September 29</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Trade never moves only goods. Today you follow what rode along with the silk and the gold: Buddhism, Islam, Christianity, and Hinduism spreading through the same networks that carried spices; paper, printing, gunpowder, the compass, and the stirrup diffusing from where they were invented to wherever a caravan or a ship could reach; and crops, architecture, and art remaking the places connectivity touched. None of Unit 2's three networks is only an economic story.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how major religions, Buddhism, Islam, Christianity, and Hinduism, spread along trade routes from c. 1200 to c. 1450.</li>
+                    <li style="margin: 0 0 6px 0;">I can describe how key technologies, paper, printing, gunpowder, the compass, and the stirrup, diffused across Afro-Eurasia through trade networks.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how crops, architectural styles, artistic motifs, and literary traditions diffused across Afro-Eurasia as a consequence of trade connectivity.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can identify at least two specific religions and explain how each spread along a named trade route, Silk Roads, Indian Ocean, or trans-Saharan.</li>
+                    <li style="margin: 0 0 6px 0;">I can name at least two technologies that diffused through trade networks and explain where they originated and where they spread.</li>
+                    <li style="margin: 0 0 6px 0;">I can use specific evidence, a crop, an architectural style, or a cultural tradition, to explain how trade produced cultural exchange and transformation.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.6, Environmental Consequences of Connectivity: Disease, Death, and Ecological Change (ebook/unit-2.html).
+                        <ul style="margin: 6px 0 0 18px; padding: 0;">
+                            <li style="margin: 0 0 4px 0;">01 The Plague's Origins: From Ecology to Pandemic</li>
+                            <li style="margin: 0 0 4px 0;">02 How the Plague Traveled</li>
+                            <li style="margin: 0 0 4px 0;">03 Demographic Catastrophe: The Scale of Death</li>
+                            <li style="margin: 0 0 4px 0;">04 Social and Institutional Consequences</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Wednesday, September 30</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Thursday, October 1</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-5-cultural-consequences.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.5 - Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 2.6: Environmental Consequences of Connectivity: Disease, Death, and Ecological Change
+
+**Event title:** `APW - 2.6 - Environmental Consequences of Connectivity: Disease, Death, and Ecological Change`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Wednesday, September 30 | Friday, October 2 |
+| Silver Day | Thursday, October 1 | Monday, October 5 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.6: Environmental Consequences of Connectivity: Disease, Death, and Ecological Change</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, September 30</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, October 1</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Connectivity cut both ways. The same network that let a merchant cross Eurasia safely also let the bubonic plague make the same trip, and today you follow the Black Death from its origins in Central Asia through the trade routes that carried it into Europe and North Africa, the demographic collapse and labor shortages it left behind, and the wider ecological cost of a world more connected than it had ever been: deforestation, agricultural intensification, and species moving to places they had never been.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how trade routes spread epidemic disease across Afro-Eurasia, with a focus on the bubonic plague and the role of the Mongol trade network.</li>
+                    <li style="margin: 0 0 6px 0;">I can describe the demographic and social consequences of the Black Death in Eurasia and North Africa, including population loss, labor shortages, and challenges to traditional authority.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain the ecological consequences of increased connectivity, including deforestation, agricultural intensification, and the movement of invasive species along trade routes.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can trace the path of the bubonic plague from its origins in Central Asia to its spread across Eurasia and North Africa, naming at least one specific mechanism of transmission.</li>
+                    <li style="margin: 0 0 6px 0;">I can use specific evidence, population statistics, labor shortages, or social upheaval, to explain how the Black Death transformed societies across Eurasia.</li>
+                    <li style="margin: 0 0 6px 0;">I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.7, Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks (ebook/unit-2.html).
+                        <ul style="margin: 6px 0 0 18px; padding: 0;">
+                            <li style="margin: 0 0 4px 0;">01 What All Three Networks Shared</li>
+                            <li style="margin: 0 0 4px 0;">02 How the Networks Differed: Technology and Goods</li>
+                            <li style="margin: 0 0 4px 0;">03 Cultural Differences: Which Religions Spread Where</li>
+                            <li style="margin: 0 0 4px 0;">04 How to Write AP Comparison</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Friday, October 2</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Monday, October 5</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-6-environmental-consequences.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.6 - Environmental Consequences of Connectivity: Disease, Death, and Ecological Change</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 2.7: Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks
+
+**Event title:** `APW - 2.7 - Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Friday, October 2 | nothing assigned |
+| Silver Day | Monday, October 5 | nothing assigned |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.7: Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, October 2</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, October 5</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Three networks, one question asked three times: what made this trade possible, what moved along it, what did it change. Today you set the Silk Roads, the Indian Ocean, and trans-Saharan trade beside each other and look for the pattern all three share, long-distance exchange, overlapping religions, cultural diffusion. Then you look for where they genuinely differ, in geography, in transportation technology, in which goods dominated, and you build an AP-style comparison argument out of both halves rather than only listing facts about two places.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can identify similarities across all three Afro-Eurasian trade networks, Silk Roads, Indian Ocean, and trans-Saharan, including long-distance exchange, the movement of goods and ideas, and cultural diffusion.</li>
+                    <li style="margin: 0 0 6px 0;">I can identify key differences between the three trade networks in geography, transportation technology, dominant goods, and cultural effects.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how comparing the three networks reveals broader patterns of Afro-Eurasian connectivity and supports AP-style comparison arguments with evidence.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can state at least two specific similarities shared by all three trade networks and support each with a concrete historical example.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain at least two meaningful differences between any two of the three networks, using specific evidence about geography, technology, or goods exchanged.</li>
+                    <li style="margin: 0 0 6px 0;">I can use a comparison of trade networks to build a historical argument that includes a claim, evidence, and reasoning connecting to a broader pattern of Afro-Eurasian exchange.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-7-comparison.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.7 - Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
 ---
 
-14 events, built from 28 class days (14 green, 14 silver).
+21 events, built from 42 class days (21 green, 21 silver).
