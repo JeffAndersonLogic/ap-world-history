@@ -247,6 +247,21 @@ const MODULE_NOTES = {
   '1.6': {
     '05': 'Comparison with Song China.',
     '09': 'Enter a feudal manor in crisis and debate how it should respond to the Black Death. Your final <strong>step out of character</strong> reflection is the part that is collected.'
+  },
+  '2.1': {
+    '01': 'The overland routes, relay stations, and pastoral intermediaries that made Silk Road trade possible.'
+  },
+  '2.2': {
+    '01': 'How far the Mongol Empire and its four khanates stretched, and why that reach mattered for trade.'
+  },
+  '2.3': {
+    '01': 'The monsoon winds and port cities that turned the Indian Ocean into a highway rather than a barrier.'
+  },
+  '2.4': {
+    '01': 'The caravan routes, goldfields, and salt mines that made trans-Saharan trade mutually necessary.'
+  },
+  '2.6': {
+    '01': 'Where the plague originated, and the trade routes that carried it from Central Asia into Europe and North Africa.'
   }
 };
 

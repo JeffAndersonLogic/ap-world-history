@@ -207,6 +207,7 @@ window.BEHISTORICAL_LESSON = {
     questions: [
       'What evidence does Ibn Battuta provide that Zaytun (Quanzhou) was a major hub connecting the Indian Ocean and Silk Roads networks? List at least two specific details.',
       'Why would a Moroccan scholar, thousands of miles from home, be both a valuable and a limited witness to describe a Chinese port?',
+      'HIPP this source: what was Ibn Battuta\'s point of view as a Muslim scholar and qadi, his purpose in writing the Rihla, and his likely audience? How does his historical situation, a traveler reporting from memory years after the visit, change how confidently you can use this passage as evidence?',
       'What are the limitations of one traveler\'s account for understanding cultural diffusion across the Silk Roads, Indian Ocean, and trans-Saharan networks as a whole?'
     ]
   }

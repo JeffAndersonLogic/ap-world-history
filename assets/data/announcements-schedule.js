@@ -472,7 +472,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-16',
       cohort: 'green',
       topic: '2.1',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['01', '02', '06', '10'],
       reading: {
         for: '2.2',
         where: 'ebook/unit-2.html',
@@ -488,7 +488,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-17',
       cohort: 'silver',
       topic: '2.1',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['01', '02', '06', '10'],
       reading: {
         for: '2.2',
         where: 'ebook/unit-2.html',
@@ -506,7 +506,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-18',
       cohort: 'green',
       topic: '2.2',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['01', '02', '05', '06', '09', '10'],
       reading: {
         for: '2.3',
         where: 'ebook/unit-2.html',
@@ -522,7 +522,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-21',
       cohort: 'silver',
       topic: '2.2',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['01', '02', '05', '06', '09', '10'],
       reading: {
         for: '2.3',
         where: 'ebook/unit-2.html',
@@ -540,7 +540,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-22',
       cohort: 'green',
       topic: '2.3',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['01', '02', '06', '07', '09', '10'],
       reading: {
         for: '2.4',
         where: 'ebook/unit-2.html',
@@ -556,7 +556,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-23',
       cohort: 'silver',
       topic: '2.3',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['01', '02', '06', '07', '09', '10'],
       reading: {
         for: '2.4',
         where: 'ebook/unit-2.html',
@@ -574,7 +574,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-24',
       cohort: 'green',
       topic: '2.4',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['01', '02', '05', '06', '10'],
       reading: {
         for: '2.5',
         where: 'ebook/unit-2.html',
@@ -590,7 +590,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-25',
       cohort: 'silver',
       topic: '2.4',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['01', '02', '05', '06', '10'],
       reading: {
         for: '2.5',
         where: 'ebook/unit-2.html',
@@ -608,7 +608,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-28',
       cohort: 'green',
       topic: '2.5',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['02', '06', '08', '10'],
       reading: {
         for: '2.6',
         where: 'ebook/unit-2.html',
@@ -624,7 +624,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-29',
       cohort: 'silver',
       topic: '2.5',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['02', '06', '08', '10'],
       reading: {
         for: '2.6',
         where: 'ebook/unit-2.html',
@@ -642,7 +642,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-30',
       cohort: 'green',
       topic: '2.6',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['01', '02', '06', '09', '10'],
       reading: {
         for: '2.7',
         where: 'ebook/unit-2.html',
@@ -658,7 +658,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-10-01',
       cohort: 'silver',
       topic: '2.6',
-      modules: ['02', '04', '05', '06', '07', '08', '09', '10'],
+      modules: ['01', '02', '06', '09', '10'],
       reading: {
         for: '2.7',
         where: 'ebook/unit-2.html',
@@ -684,14 +684,14 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-10-02',
       cohort: 'green',
       topic: '2.7',
-      modules: ['02', '04', '05', '06', '07', '08', '10'],
+      modules: ['05', '06', '07', '10'],
       homework: ''
     },
     {
       date: '2026-10-05',
       cohort: 'silver',
       topic: '2.7',
-      modules: ['02', '04', '05', '06', '07', '08', '10'],
+      modules: ['05', '06', '07', '10'],
       homework: ''
     }
   ],

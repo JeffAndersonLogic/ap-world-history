@@ -1025,13 +1025,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can connect Silk Road exchange to specific effects on societies, including wealth, urban growth along routes, and the devastating spread of the Black Death.', label: 'Economics' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
-        { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1064,13 +1060,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can connect Silk Road exchange to specific effects on societies, including wealth, urban growth along routes, and the devastating spread of the Black Death.', label: 'Economics' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
-        { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1103,12 +1095,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can identify both destructive effects (massacre, depopulation, destruction of Baghdad) and connective effects (trade, plague transmission, cultural exchange) of Mongol conquest and rule.', label: 'Governance' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
@@ -1142,12 +1132,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can identify both destructive effects (massacre, depopulation, destruction of Baghdad) and connective effects (trade, plague transmission, cultural exchange) of Mongol conquest and rule.', label: 'Governance' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
@@ -1181,12 +1169,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can connect Indian Ocean trade to specific effects: cosmopolitan port cities like Kilwa, Calicut, Quanzhou, and Malacca; diasporic merchant communities; and the spread of Islam along maritime routes.', label: 'Cultural Developments and Interactions' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
-        { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
@@ -1220,12 +1206,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can connect Indian Ocean trade to specific effects: cosmopolitan port cities like Kilwa, Calicut, Quanzhou, and Malacca; diasporic merchant communities; and the spread of Islam along maritime routes.', label: 'Cultural Developments and Interactions' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
-        { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
@@ -1259,13 +1243,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can connect trans-Saharan trade to the rise of Mali, Mansa Musa\'s 1324 hajj and its global significance, the growth of Timbuktu as a center of Islamic learning, and the spread of Islam through merchant and scholarly networks across West Africa.', label: 'Cultural Developments and Interactions' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1298,13 +1279,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can connect trans-Saharan trade to the rise of Mali, Mansa Musa\'s 1324 hajj and its global significance, the growth of Timbuktu as a center of Islamic learning, and the spread of Islam through merchant and scholarly networks across West Africa.', label: 'Cultural Developments and Interactions' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1338,12 +1316,8 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       ],
       modules: [
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
-        { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
         { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1377,12 +1351,8 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       ],
       modules: [
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
-        { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
         { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1415,12 +1385,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.', label: 'Environment and Geography' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
-        { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
@@ -1454,12 +1421,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.', label: 'Environment and Geography' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
-        { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
@@ -1493,12 +1457,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can use a comparison of trade networks to build a historical argument that includes a claim, evidence, and reasoning connecting to a broader pattern of Afro-Eurasian exchange.', label: 'Economics' }
       ],
       modules: [
-        { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: []
@@ -1520,12 +1481,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can use a comparison of trade networks to build a historical argument that includes a claim, evidence, and reasoning connecting to a broader pattern of Afro-Eurasian exchange.', label: 'Economics' }
       ],
       modules: [
-        { number: '02', title: 'First & 10 Reading' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: []
