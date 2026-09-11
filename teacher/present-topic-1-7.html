@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeHistorical | Topic 1.7 Presentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--steel:#1A1C1D;--charcoal:#2B2F31;--gunmetal:#3E4447;--sand:#D2B48C;--gold:#C9A46A;--paper:#F5F0E7;--ink:#151718;--title:'Cinzel',Georgia,serif;--body:'Libre Baskerville',Georgia,serif;--ui:'Montserrat',system-ui,sans-serif}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#101213;color:var(--paper);font-family:var(--body)}
+#stage{width:100vw;height:100vh}.slide{width:100%;height:100%;padding:6vh 6vw;display:flex;flex-direction:column;justify-content:center;position:relative;background:linear-gradient(135deg,#1a1c1d 0%,#272b2d 100%)}.slide-eyebrow{font:800 clamp(.7rem,1vw,1rem) var(--ui);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8vh}.slide h2{font:700 clamp(2.5rem,5.2vw,5.8rem)/1.05 var(--title);margin:0;max-width:90vw}.subtitle{font-size:clamp(1.2rem,2vw,2.3rem);max-width:82vw;margin:2.2vh 0 0;color:#ded7ca;line-height:1.45}.footer{margin-top:2.6vh;font:700 clamp(.75rem,1.15vw,1.15rem) var(--ui);color:var(--sand);letter-spacing:.03em}.slide ul{font-size:clamp(1.15rem,2vw,2.2rem);line-height:1.6;margin:3vh 0 0;padding-left:2.2vw}.hero.has-image,.image-slide{padding:0}.hero-copy{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:6vh 6vw;background:linear-gradient(transparent,rgba(0,0,0,.9) 36%)}.hero-copy h2{font-size:clamp(3rem,6.3vw,7rem)}.slide-visual{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.image-slide .slide-visual{object-fit:contain;background:#101213;padding:4vh 4vw}.image-copy{position:absolute;z-index:2;left:3vw;top:3vh;background:rgba(15,17,18,.9);padding:2vh 2vw;border-left:5px solid var(--gold);max-width:60vw}.image-copy h2{font-size:clamp(1.8rem,3vw,3.4rem)}.grid-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5vw;margin-top:3.2vh}.grid-card{border:1px solid #666;padding:2vh 1.5vw;border-radius:12px;background:rgba(255,255,255,.045)}.grid-card h3{font:700 clamp(1.1rem,1.7vw,2rem) var(--title);color:var(--gold);margin:0 0 .8vh}.grid-card p{font-size:clamp(.95rem,1.4vw,1.55rem);margin:0;color:#eee7da;line-height:1.45}.contrast-grid,.comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:2vw;margin-top:3.2vh}.contrast-box{padding:2.5vh 2vw;border-radius:12px;background:rgba(255,255,255,.055);border-top:5px solid #666}.contrast-box.good{border-top-color:var(--gold)}.contrast-box .label,.compare-copy .label{font:800 clamp(.75rem,1.1vw,1.1rem) var(--ui);letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}.contrast-box p{font-size:clamp(1.2rem,2vw,2.2rem);line-height:1.5}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4vw;margin-top:3.2vh}.step{background:rgba(255,255,255,.05);padding:2.1vh 1.5vw;border:1px solid #565b5d;border-radius:11px}.step .num{font:800 clamp(1.4rem,2vw,2.2rem) var(--ui);color:var(--gold)}.step p{font-size:clamp(.95rem,1.35vw,1.5rem);line-height:1.45}.compare-side{background:rgba(255,255,255,.045);border-radius:14px;overflow:hidden;border:1px solid #555}.compare-side img{width:100%;height:30vh;object-fit:cover;background:#111}.compare-copy{padding:2vh 1.6vw}.compare-copy p{margin:.8vh 0 0;font-size:clamp(1rem,1.45vw,1.6rem);line-height:1.45}.action-link{display:none}.hint{position:fixed;right:1vw;bottom:1vh;z-index:8;font:600 .65rem var(--ui);color:rgba(255,255,255,.38)}
+@media(max-width:900px){.grid-cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.comparison-grid,.contrast-grid{gap:1vw}.compare-side img{height:25vh}}
+</style>
+</head>
+<body>
+<div id="stage"></div><div class="hint">← → to navigate · F for fullscreen</div>
+<script src="../assets/data/lesson-1-7-comparison.js?v=response-id-fix-v1"></script>
+<script src="../assets/data/lesson-1-7-renderer-config.js?v=response-id-fix-v1"></script>
+<script src="data/topic-1-7-teaching.js"></script>
+<script>
+(function(){
+'use strict';
+const L=window.BEHISTORICAL_LESSON||{},T=window.BEHISTORICAL_TEACHING,$=s=>document.querySelector(s);
+if(!T){$('#stage').textContent='Presentation data failed to load.';return;}
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function visualUrl(v){if(!v)return'';if(v.type==='map')return(L.map&&L.map.url)||'../assets/images/instructional-maps/topic-1-7.svg';if(v.type==='evidence'&&L.images&&L.images[v.index])return L.images[v.index].url||'';return v.url||'';}
+function visualAlt(v){if(!v)return'';if(v.type==='map')return'Unit 1 comparison map';if(v.type==='evidence'&&L.images&&L.images[v.index])return L.images[v.index].title||'Historical evidence';return v.alt||'';}
+function bullets(items){return items&&items.length?'<ul>'+items.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'';}
+function render(s){const eyebrow='<div class="slide-eyebrow">'+esc(s.eyebrow||'')+'</div>',footer=s.footer?'<div class="footer">'+esc(s.footer)+'</div>':'';
+if(s.kind==='hero'){const u=visualUrl(s.visual);return'<div class="slide hero '+(u?'has-image':'')+'">'+(u?'<img class="slide-visual" src="'+esc(u)+'" alt="'+esc(visualAlt(s.visual))+'">':'')+'<div class="hero-copy">'+eyebrow+'<h2>'+esc(s.title)+'</h2>'+(s.subtitle?'<div class="subtitle">'+esc(s.subtitle)+'</div>':'')+'</div></div>';}
+if(s.kind==='image'){const u=visualUrl(s.visual);return'<div class="slide image-slide">'+(u?'<img class="slide-visual" src="'+esc(u)+'" alt="'+esc(visualAlt(s.visual))+'">':'')+'<div class="image-copy">'+eyebrow+'<h2>'+esc(s.title)+'</h2>'+footer+'</div></div>';}
+if(s.kind==='grid')return'<div class="slide">'+eyebrow+'<h2>'+esc(s.title)+'</h2><div class="grid-cards">'+(s.cards||[]).map(c=>'<div class="grid-card"><h3>'+esc(c.title)+'</h3><p>'+esc(c.text)+'</p></div>').join('')+'</div>'+footer+'</div>';
+if(s.kind==='contrast')return'<div class="slide">'+eyebrow+'<h2>'+esc(s.title)+'</h2><div class="contrast-grid"><div class="contrast-box"><div class="label">'+esc(s.left.label)+'</div><p>'+esc(s.left.text)+'</p></div><div class="contrast-box good"><div class="label">'+esc(s.right.label)+'</div><p>'+esc(s.right.text)+'</p></div></div>'+footer+'</div>';
+if(s.kind==='process')return'<div class="slide">'+eyebrow+'<h2>'+esc(s.title)+'</h2><div class="steps">'+(s.steps||[]).map(st=>'<div class="step"><div class="num">'+esc(st.label)+'</div><p>'+esc(st.text)+'</p></div>').join('')+'</div>'+footer+'</div>';
+if(s.kind==='comparison-image'){function side(x){const u=visualUrl(x.visual);return'<div class="compare-side">'+(u?'<img src="'+esc(u)+'" alt="'+esc(visualAlt(x.visual))+'">':'')+'<div class="compare-copy"><div class="label">'+esc(x.label)+'</div><p>'+esc(x.text)+'</p></div></div>';}return'<div class="slide">'+eyebrow+'<h2>'+esc(s.title)+'</h2><div class="comparison-grid">'+side(s.left)+side(s.right)+'</div>'+footer+'</div>';}
+return'<div class="slide">'+eyebrow+'<h2>'+esc(s.title)+'</h2>'+(s.subtitle?'<div class="subtitle">'+esc(s.subtitle)+'</div>':'')+bullets(s.bullets)+footer+'</div>';}
+let current=0,key=T.projection.storageKey;
+try{const saved=JSON.parse(localStorage.getItem(key)||'{}');if(Number.isInteger(saved.index))current=Math.max(0,Math.min(T.slides.length-1,saved.index));}catch(e){}
+function show(i){current=Math.max(0,Math.min(T.slides.length-1,Number(i)||0));$('#stage').innerHTML=render(T.slides[current]);try{localStorage.setItem(key,JSON.stringify({index:current,at:Date.now()}));}catch(e){}}
+window.addEventListener('storage',e=>{if(e.key!==key||!e.newValue)return;try{const d=JSON.parse(e.newValue);if(Number.isInteger(d.index)&&d.index!==current)show(d.index);}catch(err){}});
+window.addEventListener('message',e=>{if(e.origin!==location.origin||!e.data||e.data.type!=='behistorical-slide')return;show(e.data.index);});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();show(current+1);}if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(current-1);}if(e.key==='Home')show(0);if(e.key==='End')show(T.slides.length-1);if(e.key==='f'||e.key==='F'){if(!document.fullscreenElement)document.documentElement.requestFullscreen().catch(()=>{});else document.exitFullscreen().catch(()=>{});}});
+show(current);
+})();
+</script>
+</body>
+</html>
