@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeHistorical | Style Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   STYLE PROTOTYPE, not a deck. Four slides only, testing one new visual
+   language against the reference Jeff sent: full-bleed real photography,
+   text overlaid directly on the image rather than beside it in a card, one
+   bold headline with a hand-drawn-style accent mark under a single word,
+   quiet corner branding (wordmark, a small numbered badge, a footer tag),
+   and an abstract pattern slide standing in for a photo where no photo
+   exists. BeHistorical's own type (Cinzel/Libre Baskerville/Montserrat) and
+   palette (steel/gold/oxidized/bronze) carry the brand instead of copying
+   the reference's own colors.
+
+   Nothing here is final. It exists to get one thing confirmed before a
+   whole deck gets rebuilt a fourth time: is THIS the visual language, before
+   any slide's actual history content gets written against it.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root{
+  --steel:#1a1c1d; --charcoal:#2b2f31; --gunmetal:#3e4447; --iron:#5a5f5c;
+  --sandstone:#d2b48c; --bronze:#8c5a2b; --rust:#a8652d; --oxidized:#6b3e1f;
+  --gold:#c9a46a; --paper:#f5f0e7; --clean:#fffdf7; --ink:#151718;
+  --font-display:'Cinzel','Trajan Pro',Georgia,serif;
+  --font-body:'Libre Baskerville',Georgia,'Times New Roman',serif;
+  --font-ui:'Montserrat',Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#0d0e0f}
+body{font-family:var(--font-body)}
+
+#viewport{position:fixed;inset:0;display:grid;place-items:center;background:#0d0e0f}
+#stage{width:1280px;height:720px;position:relative;flex:none;transform:scale(var(--scale,1));transform-origin:center center;box-shadow:0 40px 120px rgba(0,0,0,.6)}
+
+.slide{position:absolute;inset:0;display:none;overflow:hidden;background:#000}
+.slide.active{display:block}
+
+/* ── Full-bleed photo, text lives on top of it, not beside it ─────────── */
+.bg-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.scrim-bottom{position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,10,10,.05) 0%, rgba(10,10,10,.10) 42%, rgba(10,10,10,.90) 100%)}
+.scrim-top{position:absolute;inset:0;background:linear-gradient(0deg, rgba(10,10,10,.05) 0%, rgba(10,10,10,.12) 42%, rgba(10,10,10,.86) 100%)}
+
+.brand-mark{position:absolute;top:34px;left:40px;z-index:2}
+.brand-mark img{height:24px;display:block;opacity:.96;filter:drop-shadow(0 1px 6px rgba(0,0,0,.5))}
+
+.topic-badge{
+  position:absolute;bottom:30px;right:34px;z-index:2;width:46px;height:46px;border-radius:50%;
+  background:rgba(21,23,24,.55);border:1.5px solid rgba(201,164,106,.75);color:var(--gold);
+  font-family:var(--font-ui);font-weight:800;font-size:14px;letter-spacing:.02em;
+  display:flex;align-items:center;justify-content:center;backdrop-filter:blur(2px);
+}
+
+.footer-tag{
+  position:absolute;bottom:42px;left:40px;z-index:2;font-family:var(--font-ui);font-weight:700;
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,240,231,.78);
+}
+
+.photo-content{position:absolute;left:44px;right:120px;bottom:88px;z-index:2}
+.photo-content.top{bottom:auto;top:82px;right:180px}
+
+.eyebrow-on-photo{
+  font-family:var(--font-ui);font-weight:800;font-size:14px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 14px;text-shadow:0 1px 8px rgba(0,0,0,.5);
+}
+.headline{
+  font-family:var(--font-display);font-weight:900;font-size:52px;line-height:1.08;
+  color:var(--clean);margin:0 0 16px;text-shadow:0 2px 20px rgba(0,0,0,.45);max-width:16ch;
+}
+.headline .mark{position:relative;display:inline-block;white-space:nowrap}
+.headline .mark::after{
+  content:"";position:absolute;left:-3%;right:-3%;bottom:.08em;height:.30em;
+  background:var(--gold);opacity:.55;transform:rotate(-1.6deg);z-index:-1;border-radius:2px;
+}
+.sub-on-photo{
+  font-family:var(--font-body);font-style:italic;font-size:20px;line-height:1.5;
+  color:rgba(245,240,231,.88);max-width:52ch;margin:0;text-shadow:0 1px 10px rgba(0,0,0,.5);
+}
+
+/* ── Pattern slide: the stand-in for a photo where no photo exists ────── */
+.pattern-slide{background:linear-gradient(155deg,#1a1c1d 0%,#241f19 55%,#1a1c1d 100%);position:relative}
+.pattern-shapes{position:absolute;inset:0;opacity:.9}
+.pattern-shapes .dot{position:absolute;border-radius:50%}
+.pattern-content{position:absolute;left:52px;top:100px;right:220px;z-index:2}
+.pattern-kicker{font-family:var(--font-ui);font-weight:800;font-size:14px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin:0 0 16px}
+.pattern-headline{font-family:var(--font-display);font-weight:900;font-size:56px;line-height:1.08;color:var(--clean);margin:0 0 14px}
+.pattern-sub{font-family:var(--font-ui);font-size:16px;letter-spacing:.03em;color:rgba(210,180,140,.85);max-width:44ch;margin:0}
+
+#hud{position:fixed;right:16px;bottom:14px;z-index:45;display:flex;gap:8px;align-items:center;font-family:var(--font-ui);opacity:.35;transition:opacity .2s ease}
+#hud:hover{opacity:1}
+#hud button{font-size:12px;font-weight:700;background:rgba(245,240,231,.10);color:#fff;border:1px solid rgba(245,240,231,.26);border-radius:6px;padding:7px 11px;cursor:pointer}
+#counter{font-size:12px;font-weight:800;color:var(--sandstone);padding:0 6px;font-family:var(--font-ui)}
+</style>
+</head>
+<body>
+<div id="viewport"><div id="stage">
+
+<!-- 01 COVER: bottom-anchored headline over the route map -->
+<section class="slide active">
+  <img class="bg-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg" alt="Overland and maritime Silk Road routes across Afro-Eurasia">
+  <div class="scrim-bottom"></div>
+  <div class="brand-mark"><img src="../assets/logos/behistorical-wordmark-light.png" alt="BeHistorical"></div>
+  <div class="photo-content">
+    <p class="eyebrow-on-photo">Unit 2 &middot; Topic 2.1</p>
+    <h1 class="headline">A <span class="mark">Business</span>, Not Just a Road</h1>
+    <p class="sub-on-photo">The Silk Roads, c. 1200 to c. 1450.</p>
+  </div>
+  <div class="topic-badge">2.1</div>
+</section>
+
+<!-- 02 PATTERN DIVIDER: abstract mosaic stand-in for a photo -->
+<section class="slide">
+  <div class="pattern-slide" style="position:absolute;inset:0">
+    <div class="pattern-shapes">
+      <div class="dot" style="width:340px;height:340px;left:-60px;top:-80px;background:radial-gradient(circle,var(--bronze) 0%,transparent 70%);opacity:.5"></div>
+      <div class="dot" style="width:220px;height:220px;left:640px;top:60px;background:radial-gradient(circle,var(--gold) 0%,transparent 70%);opacity:.35"></div>
+      <div class="dot" style="width:180px;height:180px;left:920px;top:380px;background:radial-gradient(circle,var(--rust) 0%,transparent 70%);opacity:.4"></div>
+      <div class="dot" style="width:420px;height:420px;left:820px;top:-140px;background:radial-gradient(circle,var(--sandstone) 0%,transparent 72%);opacity:.18"></div>
+      <div class="dot" style="width:150px;height:150px;left:60px;top:460px;background:radial-gradient(circle,var(--gold) 0%,transparent 70%);opacity:.3"></div>
+    </div>
+  </div>
+  <div class="brand-mark"><img src="../assets/logos/behistorical-wordmark-light.png" alt="BeHistorical"></div>
+  <div class="pattern-content">
+    <p class="pattern-kicker">Part Two</p>
+    <h1 class="pattern-headline">The Caravan as a <span class="mark">Firm</span></h1>
+    <p class="pattern-sub">A business, with an owner, paid staff, and a fixed cost structure.</p>
+  </div>
+  <div class="topic-badge">2.1</div>
+</section>
+
+<!-- 03 CONTENT PHOTO, top-anchored headline -->
+<section class="slide">
+  <img class="bg-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg" alt="Al-Idrisi's 1154 world map, compiled in Sicily from travelers' accounts">
+  <div class="scrim-top"></div>
+  <div class="brand-mark"><img src="../assets/logos/behistorical-wordmark-light.png" alt="BeHistorical"></div>
+  <div class="photo-content top">
+    <p class="eyebrow-on-photo">Knowledge on the Move</p>
+    <h1 class="headline">Exchange <span class="mark">Predated</span> This Story</h1>
+    <p class="sub-on-photo">Al-Idrisi's map, 1154, a century before this topic even begins.</p>
+  </div>
+  <div class="footer-tag">Unit 2 &middot; Networks of Exchange</div>
+  <div class="topic-badge">2.1</div>
+</section>
+
+<!-- 04 CONTENT PHOTO, bottom-anchored, accent mark on the key term -->
+<section class="slide">
+  <img class="bg-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg" alt="Jiaozi, paper currency issued in Song dynasty China">
+  <div class="scrim-bottom"></div>
+  <div class="brand-mark"><img src="../assets/logos/behistorical-wordmark-light.png" alt="BeHistorical"></div>
+  <div class="photo-content">
+    <p class="eyebrow-on-photo">What Traveled Without Being Cargo</p>
+    <h1 class="headline">A Route You Can <span class="mark">Date</span></h1>
+    <p class="sub-on-photo">Samarkand to Baghdad to Spain to Italy, 8th century to the 1270s.</p>
+  </div>
+  <div class="footer-tag">Unit 2 &middot; Networks of Exchange</div>
+  <div class="topic-badge">2.1</div>
+</section>
+
+</div></div>
+
+<div id="hud">
+  <button id="p" type="button">&larr;</button>
+  <span id="counter">1 / 4</span>
+  <button id="n" type="button">&rarr;</button>
+</div>
+
+<script>
+(function(){
+  var slides=Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var i=0;
+  function show(k){ i=(k+slides.length)%slides.length; slides.forEach(function(s,j){s.classList.toggle('active',j===i)}); document.getElementById('counter').textContent=(i+1)+' / '+slides.length; }
+  function fit(){ var s=Math.min(window.innerWidth/1280, window.innerHeight/720); document.getElementById('stage').style.setProperty('--scale',s); }
+  window.addEventListener('resize',fit);
+  document.getElementById('p').addEventListener('click',function(e){e.stopPropagation();show(i-1)});
+  document.getElementById('n').addEventListener('click',function(e){e.stopPropagation();show(i+1)});
+  document.getElementById('viewport').addEventListener('click',function(e){ show(e.clientX<window.innerWidth*0.24 ? i-1 : i+1) });
+  document.addEventListener('keydown',function(e){ if(e.key==='ArrowRight'||e.key===' ')show(i+1); if(e.key==='ArrowLeft')show(i-1); });
+  fit(); show(0);
+})();
+</script>
+</body>
+</html>
