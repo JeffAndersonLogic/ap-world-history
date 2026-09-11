@@ -658,10 +658,28 @@ in Gather All My Work with nothing to explain them. Every structural check
 stayed green: the board was naming modules the lesson page really does show,
 just not the ones due.
 
-### Where the DO THESE N row's wording comes from
+### Required Work and Optional Support / Go Deeper
 
-Each module's one-line description is read out of the lesson data, because it is
-the same sentence the module card on the page already carries:
+The assignment splits a topic's ten modules into two rows, never one flat
+list. **Required Work** opens with a fixed sentence, "Today you are
+responsible only for the modules listed under Required Work. You are welcome
+to use the other BeHistorical modules for review, support, or enrichment, but
+they are not required unless your teacher tells you otherwise.", then lists
+the required modules by number and name. Every module the topic runs but does
+not require follows in its own **Optional Support / Go Deeper** row, using
+the same "available if you need more explanation, practice, or review"
+language rather than anything that reads as quietly required. A topic that
+requires everything it runs prints no Optional Support row.
+
+Both constants, the opening sentence and the Optional Support reassurance,
+live once in `scripts/build-canvas-events.js` (`OPENING_MESSAGE` and the
+reassurance text in `optionalCell()`), not retyped per topic.
+
+### Where a module's one-line description comes from
+
+Each module's one-line description, in either row, is read out of the lesson
+data, because it is the same sentence the module card on the page already
+carries:
 
 | Module | Field |
 |---|---|
@@ -686,9 +704,24 @@ renames its card to "Compare Europe with Song China"; both are correct as card
 headings and neither is the sentence written for a student reading Canvas the
 night before.
 
+**A required module with no description warns; an optional one does not.**
+Printing an optional module's bare name and nothing else is not a defect the
+way it would be for a module a student is actually told to do.
+
 **Keep `MODULE_NOTES` short.** An entry is a line no longer answerable from the
 lesson data, so a topic whose card wording is simply wrong should have its data
 file fixed instead of an override added here.
+
+### The deadline policy is stated once, not typed per topic
+
+The **DUE** row now opens with a fixed sentence describing the course-wide
+policy: most work is meant to finish in class, the next class meeting is the
+normal soft deadline, and the hard deadline is before the next unit exam
+unless the teacher says otherwise. That sentence, `DEADLINE_POLICY` in
+`scripts/build-canvas-events.js`, is true of every topic and is never a fact
+to type onto a schedule day. The per-cohort due chips below it still carry the
+real **derived** date, since "the next class meeting" is a description of
+that date, not a replacement for computing it.
 
 ### The overview is the one paragraph that exists twice
 

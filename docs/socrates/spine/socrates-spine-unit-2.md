@@ -119,15 +119,15 @@ Strong answer checklist: Name a specific technology or crop. Explain where it or
 **College Board key concepts.**
 - KC-3.1.IV (Humans and the Environment): There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes. Illustrative examples: Bananas in Africa, New rice varieties in East Asia, Spread of citrus in the Mediterranean.
 
-**Expected evidence terms.** bubonic plague, Yersinia pestis, Black Death, rodents, fleas, Central Asia, Silk Roads, maritime routes, demographic collapse, labor shortage, feudalism, Church authority, mortality, population, ecological change.
+**Expected evidence terms.** bubonic plague, Yersinia pestis, Black Death, rodents, fleas, Central Asia, Silk Roads, maritime routes, demographic collapse, labor shortage, feudalism, Church authority, mortality, population, crop diffusion, bananas, new rice varieties, citrus.
 
 **AP skill focus.** Making Connections (Skill 5.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how trade routes enabled the spread of epidemic disease. Use specific evidence about the bubonic plague, its origins, and how it traveled.
 Strong answer checklist: Explain where plague originated. Explain the mechanism by which it spread along trade routes. Describe the geographic pattern of its spread.
 
-**Checkpoint 2 prompt.** Explain two consequences of the Black Death on Afro-Eurasian societies. Consider demographic, social, political, or ecological effects.
-Strong answer checklist: Name at least two distinct consequences. Explain how each consequence changed a society or institution. Connect the demographic collapse to longer-term social or political change.
+**Checkpoint 2 prompt.** Explain one demographic or social consequence of the Black Death, and one crop or agricultural practice (such as bananas, new rice varieties, or citrus) that trade networks diffused in this same period. Use specific evidence for each.
+Strong answer checklist: Name one demographic or social consequence of the plague and explain how it changed a society or institution. Name one crop or agricultural practice that diffused along a trade network and explain how it changed farming, diet, or land use in its new region. Treat disease and crop diffusion as two separate consequences of the same connectivity, not one combined effect.
 
 ## 2.7 Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks
 

@@ -17,7 +17,7 @@ node scripts/build-canvas-events.js --check  # fail on drift, write nothing
 **A topic runs ten module cards and its assignment collects a subset.** Topic
 1.5 requires six, 1.6 requires five. Which ones is a teaching decision, so it
 is not derived from anything: it is the `modules` field on that topic's days in
-`assets/data/announcements-schedule.js`, read off the DO THESE N row of the
+`assets/data/announcements-schedule.js`, read off the Required Work row of the
 assignment as it stands in Canvas today.
 
 That is the **same field the announcements board reads** for its "Today's
@@ -26,10 +26,18 @@ name different work. A topic with no list is not printed below; it is listed as
 pending instead, because an assignment that asked for all ten when the real one
 asks for six is worse than no assignment at all.
 
-Each module's one-line description comes from the lesson data wherever the
-lesson data has one, a checkpoint's `cardDesc`, the reading's title, the Skill
-Builder's. Where the Canvas wording differs from the card wording, it is
-authored in `MODULE_NOTES` in the builder, the same way OVERVIEWS is.
+Every module the topic runs but does not require prints under its own
+**Optional Support / Go Deeper** row instead, by number and name, with language
+that says the work is available rather than quietly expected. A topic that
+requires everything it runs prints no Optional Support row at all.
+
+Each module's one-line description, required or optional, comes from the
+lesson data wherever the lesson data has one, a checkpoint's `cardDesc`, the
+reading's title, the Skill Builder's. Where the Canvas wording differs from the
+card wording, it is authored in `MODULE_NOTES` in the builder, the same way
+OVERVIEWS is. An optional module missing a description prints its bare name
+rather than warning, since only a required module with no instructions is a
+defect.
 
 ## How to paste one of these
 
@@ -84,10 +92,10 @@ block so the short name can be written from them, not guessed at here.
         </tr>
         <tr>
             <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DO THESE SIX</h3>
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #6b3e1f; margin: 0 0 10px 0;">Only these six modules are required for Topic 1.5.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong> Where African states sat relative to trade routes, and why that geography helped decide which ones grew powerful.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>The Weight of the Walls</em>, plus all three check questions inside the reading.</li>
@@ -96,7 +104,20 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Ibn Battuta on African governance, from his 1352 visit to Mali.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> AP argument: two examples, change, causation.</li>
                 </ul>
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The other four modules stay open on the lesson page and are worth your time, but they are <strong>not</strong> required and are not graded here. Gather All My Work collects every box on the page, so those four will come through empty. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Walls That Spoke for Kings.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Compare evidence from at least TWO African states. Separate observation from inference: first identify what the object, building, or map actually shows; then explain what it suggests about labor, trade, religion, geography, or political authority. Do not assume every African state built power in the same way.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Enter the Great Zimbabwe court. Choose your role, king, gold trader, Swahili merchant, or regional chief, and advise the court on how to maintain power in a changing world.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
         </tr>
         <tr>
@@ -150,6 +171,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
                 <p style="margin: 0;">
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Thursday, September 10</span></span>
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Friday, September 11</span></span>
@@ -195,10 +217,10 @@ block so the short name can be written from them, not guessed at here.
         </tr>
         <tr>
             <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DO THESE FIVE</h3>
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #6b3e1f; margin: 0 0 10px 0;">Only these five modules are required for Topic 1.6.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>The Edge of the World</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Comparison with Song China.</li>
@@ -206,7 +228,21 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Enter a feudal manor in crisis and debate how it should respond to the Black Death. Your final <strong>step out of character</strong> reflection is the part that is collected.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> Christianity, towns, and change.</li>
                 </ul>
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The other five modules stay open on the lesson page and are worth your time, but they are <strong>not</strong> required and are not graded here. Gather All My Work collects every box on the page, so those five will come through empty. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> A Calendar of Labor.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards from different categories: political relationships, Church authority, or labor/economic life. For each, record one detail you can actually see before making an inference. Some evidence predates c. 1200; when it does, use it as a continuity baseline rather than pretending it documents the entire period.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Bishop Fulbert of Chartres on the Duties of a Vassal.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
         </tr>
         <tr>
@@ -260,6 +296,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
                 <p style="margin: 0;">
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Monday, September 14</span></span>
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Tuesday, September 15</span></span>
@@ -305,17 +342,32 @@ block so the short name can be written from them, not guessed at here.
         </tr>
         <tr>
             <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DO THESE FOUR</h3>
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #6b3e1f; margin: 0 0 10px 0;">Only these four modules are required for Topic 2.1.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong> The overland routes, relay stations, and pastoral intermediaries that made Silk Road trade possible.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Roads of Silk and Exchange</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> State-building, pastoral nomads, merchants, and trade infrastructure.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> Goods, ideas, technology, disease, and social effects.</li>
                 </ul>
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The other six modules stay open on the lesson page and are worth your time, but they are <strong>not</strong> required and are not graded here. Gather All My Work collects every box on the page, so those six will come through empty. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Noodles, Pasta, and Global Food.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Build a Silk Roads Cause-and-Effect Chain.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Use the cards as evidence, not as answers. Choose TWO cards. For each, identify a visible or concrete feature, infer what it suggests about exchange, and state what the source cannot establish by itself. Then connect the two pieces to one historical claim.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Marco Polo on the Silk Roads.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Become a Silk Road merchant in the 13th century, negotiate with caravanserai owners, and decide which goods to carry across Central Asia.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
         </tr>
         <tr>
@@ -369,6 +421,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
                 <p style="margin: 0;">
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Friday, September 18</span></span>
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Monday, September 21</span></span>
@@ -414,10 +467,10 @@ block so the short name can be written from them, not guessed at here.
         </tr>
         <tr>
             <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DO THESE SIX</h3>
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #6b3e1f; margin: 0 0 10px 0;">Only these six modules are required for Topic 2.2.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong> How far the Mongol Empire and its four khanates stretched, and why that reach mattered for trade.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: The World the Mongols Made</em>, plus all three check questions inside the reading.</li>
@@ -426,7 +479,20 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Enter the Mongol court of Kublai Khan. You are a foreign diplomat or merchant, navigate the court, negotiate trade access, and report back to your home ruler.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> Trade, exchange, plague, and the effects of connectivity.</li>
                 </ul>
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The other four modules stay open on the lesson page and are worth your time, but they are <strong>not</strong> required and are not graded here. Gather All My Work collects every box on the page, so those four will come through empty. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Marco Polo's Kublai Khan.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Use the evidence to test what Mongol rule changed. Choose TWO cards. Begin with a concrete feature, infer what it suggests about conquest, governing distance, or connectivity, and identify what that evidence cannot establish alone.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> William of Rubruck on Mongol Administration.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
         </tr>
         <tr>
@@ -480,6 +546,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
                 <p style="margin: 0;">
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Tuesday, September 22</span></span>
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Wednesday, September 23</span></span>
@@ -525,10 +592,10 @@ block so the short name can be written from them, not guessed at here.
         </tr>
         <tr>
             <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DO THESE SIX</h3>
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #6b3e1f; margin: 0 0 10px 0;">Only these six modules are required for Topic 2.3.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong> The monsoon winds and port cities that turned the Indian Ocean into a highway rather than a barrier.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: The Ocean That Connected the World</em>, plus all three check questions inside the reading.</li>
@@ -537,7 +604,20 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> You arrive in Kilwa, the great Swahili port city, as a merchant from Arabia. Navigate the market, negotiate with local rulers, and decide which goods to load for the return voyage.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> Trade goods, merchant diasporas, port cities, and the spread of Islam.</li>
                 </ul>
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The other four modules stay open on the lesson page and are worth your time, but they are <strong>not</strong> required and are not graded here. Gather All My Work collects every box on the page, so those four will come through empty. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Ibn Battuta's 75,000-Mile Journey.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Put Indian Ocean Trade in Context.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Ibn Battuta on the Port Cities of the Indian Ocean.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
         </tr>
         <tr>
@@ -591,6 +671,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
                 <p style="margin: 0;">
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Thursday, September 24</span></span>
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Friday, September 25</span></span>
@@ -636,10 +717,10 @@ block so the short name can be written from them, not guessed at here.
         </tr>
         <tr>
             <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DO THESE FIVE</h3>
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #6b3e1f; margin: 0 0 10px 0;">Only these five modules are required for Topic 2.4.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong> The caravan routes, goldfields, and salt mines that made trans-Saharan trade mutually necessary.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Gold, Salt, and the Desert Road</em>, plus all three check questions inside the reading.</li>
@@ -647,7 +728,21 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Camel technology, caravan organization, gold, and salt.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> Mali Empire, Islam, Timbuktu, and Mansa Musa.</li>
                 </ul>
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The other five modules stay open on the lesson page and are worth your time, but they are <strong>not</strong> required and are not graded here. Gather All My Work collects every box on the page, so those five will come through empty. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Mansa Musa's Hajj and the Price of Gold.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards that illuminate different parts of the same system: desert transportation, commodity exchange, state wealth, or cultural change. Observe first, infer second, then connect the evidence to a historical claim. Distinguish contemporary evidence from modern reconstruction.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Ibn Battuta on Mali and the Trans-Saharan World.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> You are a merchant arriving in Mali's capital. Negotiate with royal officials, observe the court of Mansa Musa, and decide how to present your goods and intentions.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
         </tr>
         <tr>
@@ -701,6 +796,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
                 <p style="margin: 0;">
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Monday, September 28</span></span>
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Tuesday, September 29</span></span>
@@ -746,17 +842,32 @@ block so the short name can be written from them, not guessed at here.
         </tr>
         <tr>
             <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DO THESE FOUR</h3>
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #6b3e1f; margin: 0 0 10px 0;">Only these four modules are required for Topic 2.5.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Ideas on the Move</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Islam, Buddhism, Christianity, and how religions spread via trade.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Ibn Battuta Describes the Port of Zaytun (Quanzhou).</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> Paper, printing, gunpowder, compass, and crop diffusion.</li>
                 </ul>
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The other six modules stay open on the lesson page and are worth your time, but they are <strong>not</strong> required and are not graded here. Gather All My Work collects every box on the page, so those six will come through empty. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> How Paper Changed Everything.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Track What Stayed the Same and What Changed as Ideas Spread.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose a PAIR of cards that traces the movement of one idea, religion, or technology across regions. The strongest evidence of diffusion comes from a pattern across places, not from one object alone. Record what each source directly shows, then explain the connection without assuming that trade was the only possible cause.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> You are a scholar traveling between Baghdad and Chang'an. What knowledge do you carry? What will you bring back? Navigate the intellectual exchange of the Abbasid and Tang/Song worlds.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
         </tr>
         <tr>
@@ -810,6 +921,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
                 <p style="margin: 0;">
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Wednesday, September 30</span></span>
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Thursday, October 1</span></span>
@@ -850,23 +962,37 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Connectivity cut both ways. The same network that let a merchant cross Eurasia safely also let the bubonic plague make the same trip, and today you follow the Black Death from its origins in Central Asia through the trade routes that carried it into Europe and North Africa, the demographic collapse and labor shortages it left behind, and the wider ecological cost of a world more connected than it had ever been: deforestation, agricultural intensification, and species moving to places they had never been.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Connectivity cut both ways, and not only toward catastrophe. The same network that let a merchant cross Eurasia safely also let the bubonic plague make the same trip, and today you follow the Black Death from its origins in Central Asia through the trade routes that carried it into Europe and North Africa, and the demographic collapse and labor shortages it left behind. But those same routes carried something else at the same time: bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean. Connectivity is not only a story about what it destroys.</p>
             </td>
         </tr>
         <tr>
             <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DO THESE FIVE</h3>
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #6b3e1f; margin: 0 0 10px 0;">Only these five modules are required for Topic 2.6.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong> Where the plague originated, and the trade routes that carried it from Central Asia into Europe and North Africa.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: The World the Plague Remade</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Plague origins, transmission, and the role of trade connectivity.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> It is 1347. You are a city official in an Italian port city as the first plague ships arrive. What do you know? What decisions do you face? What will you do?</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> Population loss, social upheaval, and long-term consequences.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> Population loss and social upheaval from the plague, and the crops that trade networks diffused alongside it.</li>
                 </ul>
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The other five modules stay open on the lesson page and are worth your time, but they are <strong>not</strong> required and are not graded here. Gather All My Work collects every box on the page, so those five will come through empty. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> The Plague Doctor's Mask.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> How Did Trade Routes Cause Environmental and Demographic Catastrophe?</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> No single source can explain a pandemic. Choose TWO cards of different types—geographic reconstruction, trade-network map, visual culture, or social/labor evidence. Ask what each source can establish and what it cannot before combining them into a claim.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Giovanni Boccaccio Describes the Black Death in Florence, 1348.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
         </tr>
         <tr>
@@ -877,7 +1003,7 @@ block so the short name can be written from them, not guessed at here.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;">I can explain how trade routes spread epidemic disease across Afro-Eurasia, with a focus on the bubonic plague and the role of the Mongol trade network.</li>
                     <li style="margin: 0 0 6px 0;">I can describe the demographic and social consequences of the Black Death in Eurasia and North Africa, including population loss, labor shortages, and challenges to traditional authority.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain the ecological consequences of increased connectivity, including deforestation, agricultural intensification, and the movement of invasive species along trade routes.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how trade networks diffused crops and agricultural practices across Afro-Eurasia, such as bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean, alongside other ecological consequences of connectivity such as deforestation and the movement of invasive species.</li>
                 </ul>
             </td>
         </tr>
@@ -889,7 +1015,7 @@ block so the short name can be written from them, not guessed at here.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;">I can trace the path of the bubonic plague from its origins in Central Asia to its spread across Eurasia and North Africa, naming at least one specific mechanism of transmission.</li>
                     <li style="margin: 0 0 6px 0;">I can use specific evidence, population statistics, labor shortages, or social upheaval, to explain how the Black Death transformed societies across Eurasia.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.</li>
+                    <li style="margin: 0 0 6px 0;">I can name at least one crop or agricultural practice that diffused along Afro-Eurasian trade networks (such as bananas, new rice varieties, or citrus) and explain how that diffusion changed farming, diet, or land use in its new region.</li>
                 </ul>
             </td>
         </tr>
@@ -920,6 +1046,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
                 <p style="margin: 0;">
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Friday, October 2</span></span>
                     <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Monday, October 5</span></span>
@@ -965,17 +1092,31 @@ block so the short name can be written from them, not guessed at here.
         </tr>
         <tr>
             <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DO THESE FOUR</h3>
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #6b3e1f; margin: 0 0 10px 0;">Only these four modules are required for Topic 2.7.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Compare the Trade Networks.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> What the Silk Roads, Indian Ocean, and trans-Saharan routes shared.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards from DIFFERENT networks that address the SAME category. Do not compare a map on one side with an unrelated object on the other. Use each card to make an observation and inference, then decide whether the evidence supports a similarity or difference.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> What distinguished the Silk Roads, Indian Ocean, and trans-Saharan routes from each other.</li>
                 </ul>
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The other five modules stay open on the lesson page and are worth your time, but they are <strong>not</strong> required and are not graded here. Gather All My Work collects every box on the page, so those five will come through empty. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Comparing the Networks</em>, plus all three check questions inside the reading.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Ibn Battuta Compared All Three.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Pegolotti's Merchant Handbook on the Road to Cathay.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
         </tr>
         <tr>
@@ -1029,6 +1170,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
                 <p style="margin: 0;">
                     <span style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c;">No later meeting in the schedule, so no due date is derived.</span>
                 </p>

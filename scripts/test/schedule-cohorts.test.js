@@ -249,11 +249,22 @@ for (const [key, entries] of topicsWithList) {
     : assignments.indexOf(alt);
   if (at < 0) { listNotPrinted.push(`${key} has a required list but no assignment block`); continue; }
   const block = assignments.slice(at, assignments.indexOf('```\n', assignments.indexOf('```html', at)));
+  // The assignment also prints an Optional Support list with the same
+  // numbered-module markup, so the required row has to be isolated from it,
+  // or every optional module reads as an extra required one.
+  const reqStart = block.indexOf('REQUIRED WORK');
+  const reqBoundary = ['OPTIONAL SUPPORT', 'LEARNING TARGETS']
+    .map((h) => block.indexOf(h, reqStart < 0 ? 0 : reqStart))
+    .filter((i) => i >= 0)
+    .sort((a, b) => a - b)[0];
+  const requiredBlock = reqStart >= 0
+    ? block.slice(reqStart, reqBoundary >= 0 ? reqBoundary : block.length)
+    : block;
   const wanted = entries[0].list.split(',');
   const shown = [];
   const numRe = /<strong style="font-family: Montserrat[^"]*">(\d\d)<\/strong>/g;
   let hit;
-  while ((hit = numRe.exec(block))) shown.push(hit[1]);
+  while ((hit = numRe.exec(requiredBlock))) shown.push(hit[1]);
   if (shown.join(',') !== wanted.join(',')) {
     listNotPrinted.push(`${key} schedules ${wanted.join(',')} but its assignment shows ${shown.join(',') || 'nothing'}`);
   }

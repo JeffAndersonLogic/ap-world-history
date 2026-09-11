@@ -172,7 +172,7 @@ const OVERVIEWS = {
 
   '2.5': 'Trade never moves only goods. Today you follow what rode along with the silk and the gold: Buddhism, Islam, Christianity, and Hinduism spreading through the same networks that carried spices; paper, printing, gunpowder, the compass, and the stirrup diffusing from where they were invented to wherever a caravan or a ship could reach; and crops, architecture, and art remaking the places connectivity touched. None of Unit 2\'s three networks is only an economic story.',
 
-  '2.6': 'Connectivity cut both ways. The same network that let a merchant cross Eurasia safely also let the bubonic plague make the same trip, and today you follow the Black Death from its origins in Central Asia through the trade routes that carried it into Europe and North Africa, the demographic collapse and labor shortages it left behind, and the wider ecological cost of a world more connected than it had ever been: deforestation, agricultural intensification, and species moving to places they had never been.',
+  '2.6': 'Connectivity cut both ways, and not only toward catastrophe. The same network that let a merchant cross Eurasia safely also let the bubonic plague make the same trip, and today you follow the Black Death from its origins in Central Asia through the trade routes that carried it into Europe and North Africa, and the demographic collapse and labor shortages it left behind. But those same routes carried something else at the same time: bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean. Connectivity is not only a story about what it destroys.',
 
   '2.7': 'Three networks, one question asked three times: what made this trade possible, what moved along it, what did it change. Today you set the Silk Roads, the Indian Ocean, and trans-Saharan trade beside each other and look for the pattern all three share, long-distance exchange, overlapping religions, cultural diffusion. Then you look for where they genuinely differ, in geography, in transportation technology, in which goods dominated, and you build an AP-style comparison argument out of both halves rather than only listing facts about two places.'
 };
@@ -311,7 +311,7 @@ function runFile(file, globalName, alsoLoad) {
 /* ---------------------------------------------------------
    MODULE DESCRIPTIONS, DERIVED
 
-   The DO THESE N row on an assignment names each required
+   The Required Work row on an assignment names each required
    module and says in one line what it is. Almost all of those
    lines are already in the lesson data, because they are the
    same sentence the module card on the page carries: a
@@ -636,32 +636,59 @@ function moduleLine(topic, m) {
   );
 }
 
+/* The exact opening line Jeff's build brief specifies, so a student reads the
+   same framing sentence on every topic rather than a paraphrase that could
+   drift topic to topic. */
+const OPENING_MESSAGE =
+  `Today you are responsible only for the modules listed under <strong>Required Work</strong>. ` +
+  `You are welcome to use the other BeHistorical modules for review, support, or enrichment, ` +
+  `but they are not required unless your teacher tells you otherwise.`;
+
 function requiredCell(topic) {
   const req = topic.required;
   const out = [];
+  out.push(`                <p style="font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK}; margin: 0 0 12px;">${OPENING_MESSAGE}</p>`);
   if (!req.length) {
     out.push(`                <p style="font-family: ${BODY}; font-size: 15px; color: ${MUTED}; margin: 0;">` +
       `No required list in the schedule. Do not paste this assignment.</p>`);
     return out.join('\n');
   }
-  const others = topic.modules.length - req.length;
-  out.push(`                <p style="font-family: ${UI}; font-size: 13px; font-weight: bold; color: ${OXIDIZED}; margin: 0 0 10px 0;">` +
-    `Only these ${countWord(req.length)} modules are required for ${esc(topic.heading.split(':')[0])}.</p>`);
   out.push(`                <ul style="margin: 0 0 0 18px; padding: 0; font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK};">`);
   req.forEach((m) => out.push(moduleLine(topic, m)));
   out.push('                </ul>');
+  return out.join('\n');
+}
 
-  /* The reassurance is not padding. Gather All My Work collects every box on
-     the page, so a student who correctly did only the required six opens their
-     submission and finds four empty answers. Without this line that reads as
-     something they got wrong. */
-  if (others > 0) {
-    out.push(`                <p style="font-family: ${BODY}; font-size: 14px; color: ${MUTED}; margin: 10px 0 0 0;">` +
-      `The other ${countWord(others)} module${others === 1 ? '' : 's'} stay${others === 1 ? 's' : ''} open on the lesson page and ` +
-      `${others === 1 ? 'is' : 'are'} worth your time, but ${others === 1 ? 'it is' : 'they are'} <strong>not</strong> required and ` +
-      `${others === 1 ? 'is' : 'are'} not graded here. Gather All My Work collects every box on the page, so ` +
-      `${others === 1 ? 'that one' : 'those ' + countWord(others)} will come through empty. That is expected, not a mistake.</p>`);
-  }
+/* Optional Support / Go Deeper. Same modules a student already sees on the
+   lesson page, named so they know what each one is without being told to do
+   it. Never "you should also" language, per the build brief: these modules
+   are available, not quietly required. No warning on a missing description
+   here, unlike moduleLine() above, because an optional module printing as
+   its bare name is not a defect the way a required one with no instructions
+   would be. */
+function optionalModuleLine(topic, m) {
+  const authored = (MODULE_NOTES[topic.code] || {})[m.number];
+  const derived = (topic.moduleDescs || {})[m.number];
+  const desc = authored || derived || '';
+  return (
+    `                    <li style="margin: 0 0 6px 0;">` +
+    `<strong style="font-family: ${UI}; font-size: 12px; color: ${DEEP_BRONZE};">${esc(m.number)}</strong> ` +
+    `<strong>${esc(m.title)}.</strong>${desc ? ' ' + desc : ''}</li>`
+  );
+}
+
+function optionalCell(topic) {
+  const reqNums = new Set(topic.required.map((m) => m.number));
+  const optional = topic.modules.filter((m) => !reqNums.has(m.number));
+  if (!optional.length) return '';
+  const out = [];
+  out.push(`                <ul style="margin: 0 0 0 18px; padding: 0; font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK};">`);
+  optional.forEach((m) => out.push(optionalModuleLine(topic, m)));
+  out.push('                </ul>');
+  out.push(`                <p style="font-family: ${BODY}; font-size: 14px; color: ${MUTED}; margin: 10px 0 0 0;">` +
+    `These resources are available if you need more explanation, practice, or review. ` +
+    `Gather All My Work collects every box on the page, so these will come through empty ` +
+    `if you skip them. That is expected, not a mistake.</p>`);
   return out.join('\n');
 }
 
@@ -685,8 +712,21 @@ function submitCell(topic) {
 /* The DUE row is the same per-cohort chips the event carries under Tonight's
    Work, printed on their own. Same seal, same three signals: colour, letter
    and shape. */
+/* The course-wide policy on when work is due, stated once here and never
+   typed onto a schedule day: it is true of every topic, not a fact about
+   this one. The exact per-cohort chips below still carry the real derived
+   date, since "the next block period" is a description of that date, not a
+   replacement for it. */
+const DEADLINE_POLICY =
+  `Most of this work is meant to be completed during class. If it is not finished in the block, ` +
+  `the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, ` +
+  `unless your teacher tells you otherwise.`;
+
 function dueCell(topic) {
-  const out = ['                <p style="margin: 0;">'];
+  const out = [
+    `                <p style="font-family: ${BODY}; font-size: 14px; color: ${MUTED}; margin: 0 0 10px;">${DEADLINE_POLICY}</p>`,
+    '                <p style="margin: 0;">'
+  ];
   topic.meetings.forEach((m) => {
     if (!m.due) return;
     const c = m.cohort;
@@ -697,7 +737,7 @@ function dueCell(topic) {
       `${seal(c)}<span style="padding-left: 7px;">${esc(c.short)} due ${esc(m.due)}</span></span>`
     );
   });
-  if (out.length === 1) {
+  if (out.length === 2) {
     out.push(`                    <span style="font-family: ${BODY}; font-size: 15px; color: ${MUTED};">No later meeting in the schedule, so no due date is derived.</span>`);
   }
   out.push('                </p>');
@@ -705,18 +745,25 @@ function dueCell(topic) {
 }
 
 function buildAssignment(topic) {
-  return [
-    band(topic),
-    `<table style="border-collapse: collapse; width: 100%; border-color: ${RULE}; border-style: solid;" border="1" cellpadding="10">`,
-    '    <tbody>',
+  const rows = [
     row('OVERVIEW', `                <p style="font-family: ${BODY}; font-size: 15px; line-height: 1.55; color: ${INK}; margin: 0;">${topic.assignmentOverview}</p>`),
-    row(`DO THESE ${countWord(topic.required.length).toUpperCase()}`, requiredCell(topic)),
+    row('REQUIRED WORK', requiredCell(topic))
+  ];
+  const optional = optionalCell(topic);
+  if (optional) rows.push(row('OPTIONAL SUPPORT / GO DEEPER', optional));
+  rows.push(
     row('LEARNING TARGETS', bulletList(topic.targets, topic.noTargetsMessage)),
     row('SUCCESS CRITERIA', bulletList(topic.criteria, topic.noCriteriaMessage)),
     row('HOW TO SUBMIT', submitCell(topic)),
     row('BeHistorical Link',
       `                <p style="font-family: ${UI}; font-size: 14px; margin: 0;"><a class="inline_disabled" href="${topic.href}" target="_blank" rel="noopener" style="color: ${OXIDIZED}; font-weight: bold;">${esc(topic.linkText)}</a></p>`),
-    row('DUE', dueCell(topic)),
+    row('DUE', dueCell(topic))
+  );
+  return [
+    band(topic),
+    `<table style="border-collapse: collapse; width: 100%; border-color: ${RULE}; border-style: solid;" border="1" cellpadding="10">`,
+    '    <tbody>',
+    ...rows,
     '    </tbody>',
     '</table>'
   ].join('\n');
@@ -922,7 +969,7 @@ function build() {
        list is a property of the assignment, so twice would be twice. */
     if (topic.meetings.length && !topic.hasRequired && topic.modules.length) {
       warn(`${topic.code}: no required module list in the schedule, so no assignment ` +
-        'is printed for it. Read the DO THESE N row off the Canvas assignment and add ' +
+        'is printed for it. Read the required-modules row off the Canvas assignment and add ' +
         'a `modules` field to both of its schedule days.');
     }
     if (topic.meetings.length < 2) {
@@ -1035,7 +1082,7 @@ function build() {
   asg.push('**A topic runs ten module cards and its assignment collects a subset.** Topic');
   asg.push('1.5 requires six, 1.6 requires five. Which ones is a teaching decision, so it');
   asg.push('is not derived from anything: it is the `modules` field on that topic\'s days in');
-  asg.push('`assets/data/announcements-schedule.js`, read off the DO THESE N row of the');
+  asg.push('`assets/data/announcements-schedule.js`, read off the Required Work row of the');
   asg.push('assignment as it stands in Canvas today.');
   asg.push('');
   asg.push('That is the **same field the announcements board reads** for its "Today\'s');
@@ -1044,10 +1091,18 @@ function build() {
   asg.push('pending instead, because an assignment that asked for all ten when the real one');
   asg.push('asks for six is worse than no assignment at all.');
   asg.push('');
-  asg.push('Each module\'s one-line description comes from the lesson data wherever the');
-  asg.push('lesson data has one, a checkpoint\'s `cardDesc`, the reading\'s title, the Skill');
-  asg.push('Builder\'s. Where the Canvas wording differs from the card wording, it is');
-  asg.push('authored in `MODULE_NOTES` in the builder, the same way OVERVIEWS is.');
+  asg.push('Every module the topic runs but does not require prints under its own');
+  asg.push('**Optional Support / Go Deeper** row instead, by number and name, with language');
+  asg.push('that says the work is available rather than quietly expected. A topic that');
+  asg.push('requires everything it runs prints no Optional Support row at all.');
+  asg.push('');
+  asg.push('Each module\'s one-line description, required or optional, comes from the');
+  asg.push('lesson data wherever the lesson data has one, a checkpoint\'s `cardDesc`, the');
+  asg.push('reading\'s title, the Skill Builder\'s. Where the Canvas wording differs from the');
+  asg.push('card wording, it is authored in `MODULE_NOTES` in the builder, the same way');
+  asg.push('OVERVIEWS is. An optional module missing a description prints its bare name');
+  asg.push('rather than warning, since only a required module with no instructions is a');
+  asg.push('defect.');
   asg.push('');
   asg.push('## How to paste one of these');
   asg.push('');

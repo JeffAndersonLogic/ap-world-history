@@ -1377,12 +1377,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       learningTargets: [
         { text: 'I can explain how trade routes spread epidemic disease across Afro-Eurasia, with a focus on the bubonic plague and the role of the Mongol trade network.', label: 'Environment and Geography' },
         { text: 'I can describe the demographic and social consequences of the Black Death in Eurasia and North Africa, including population loss, labor shortages, and challenges to traditional authority.', label: 'Social Structures' },
-        { text: 'I can explain the ecological consequences of increased connectivity, including deforestation, agricultural intensification, and the movement of invasive species along trade routes.', label: 'Environment and Geography' }
+        { text: 'I can explain how trade networks diffused crops and agricultural practices across Afro-Eurasia, such as bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean, alongside other ecological consequences of connectivity such as deforestation and the movement of invasive species.', label: 'Environment and Geography' }
       ],
       successCriteria: [
         { text: 'I can trace the path of the bubonic plague from its origins in Central Asia to its spread across Eurasia and North Africa, naming at least one specific mechanism of transmission.', label: 'Environment and Geography' },
         { text: 'I can use specific evidence, population statistics, labor shortages, or social upheaval, to explain how the Black Death transformed societies across Eurasia.', label: 'Social Structures' },
-        { text: 'I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.', label: 'Environment and Geography' }
+        { text: 'I can name at least one crop or agricultural practice that diffused along Afro-Eurasian trade networks (such as bananas, new rice varieties, or citrus) and explain how that diffusion changed farming, diet, or land use in its new region.', label: 'Environment and Geography' }
       ],
       modules: [
         { number: '01', title: 'Map & Geography Check' },
@@ -1413,12 +1413,12 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       learningTargets: [
         { text: 'I can explain how trade routes spread epidemic disease across Afro-Eurasia, with a focus on the bubonic plague and the role of the Mongol trade network.', label: 'Environment and Geography' },
         { text: 'I can describe the demographic and social consequences of the Black Death in Eurasia and North Africa, including population loss, labor shortages, and challenges to traditional authority.', label: 'Social Structures' },
-        { text: 'I can explain the ecological consequences of increased connectivity, including deforestation, agricultural intensification, and the movement of invasive species along trade routes.', label: 'Environment and Geography' }
+        { text: 'I can explain how trade networks diffused crops and agricultural practices across Afro-Eurasia, such as bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean, alongside other ecological consequences of connectivity such as deforestation and the movement of invasive species.', label: 'Environment and Geography' }
       ],
       successCriteria: [
         { text: 'I can trace the path of the bubonic plague from its origins in Central Asia to its spread across Eurasia and North Africa, naming at least one specific mechanism of transmission.', label: 'Environment and Geography' },
         { text: 'I can use specific evidence, population statistics, labor shortages, or social upheaval, to explain how the Black Death transformed societies across Eurasia.', label: 'Social Structures' },
-        { text: 'I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.', label: 'Environment and Geography' }
+        { text: 'I can name at least one crop or agricultural practice that diffused along Afro-Eurasian trade networks (such as bananas, new rice varieties, or citrus) and explain how that diffusion changed farming, diet, or land use in its new region.', label: 'Environment and Geography' }
       ],
       modules: [
         { number: '01', title: 'Map & Geography Check' },

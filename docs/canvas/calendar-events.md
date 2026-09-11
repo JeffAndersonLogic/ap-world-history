@@ -1840,7 +1840,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Connectivity cut both ways. The same network that let a merchant cross Eurasia safely also let the bubonic plague make the same trip, and today you follow the Black Death from its origins in Central Asia through the trade routes that carried it into Europe and North Africa, the demographic collapse and labor shortages it left behind, and the wider ecological cost of a world more connected than it had ever been: deforestation, agricultural intensification, and species moving to places they had never been.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Connectivity cut both ways, and not only toward catastrophe. The same network that let a merchant cross Eurasia safely also let the bubonic plague make the same trip, and today you follow the Black Death from its origins in Central Asia through the trade routes that carried it into Europe and North Africa, and the demographic collapse and labor shortages it left behind. But those same routes carried something else at the same time: bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean. Connectivity is not only a story about what it destroys.</p>
             </td>
         </tr>
         <tr>
@@ -1851,7 +1851,7 @@ deleted row in the schedule and every affected date moves with it.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;">I can explain how trade routes spread epidemic disease across Afro-Eurasia, with a focus on the bubonic plague and the role of the Mongol trade network.</li>
                     <li style="margin: 0 0 6px 0;">I can describe the demographic and social consequences of the Black Death in Eurasia and North Africa, including population loss, labor shortages, and challenges to traditional authority.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain the ecological consequences of increased connectivity, including deforestation, agricultural intensification, and the movement of invasive species along trade routes.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how trade networks diffused crops and agricultural practices across Afro-Eurasia, such as bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean, alongside other ecological consequences of connectivity such as deforestation and the movement of invasive species.</li>
                 </ul>
             </td>
         </tr>
@@ -1863,7 +1863,7 @@ deleted row in the schedule and every affected date moves with it.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;">I can trace the path of the bubonic plague from its origins in Central Asia to its spread across Eurasia and North Africa, naming at least one specific mechanism of transmission.</li>
                     <li style="margin: 0 0 6px 0;">I can use specific evidence, population statistics, labor shortages, or social upheaval, to explain how the Black Death transformed societies across Eurasia.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.</li>
+                    <li style="margin: 0 0 6px 0;">I can name at least one crop or agricultural practice that diffused along Afro-Eurasian trade networks (such as bananas, new rice varieties, or citrus) and explain how that diffusion changed farming, diet, or land use in its new region.</li>
                 </ul>
             </td>
         </tr>

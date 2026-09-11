@@ -829,7 +829,7 @@ module.exports = {
     "showFooterNote": false,
     "headerSubtitle": "Topic 2.6, Environmental Consequences of Connectivity &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "The World the <em>Plague</em> Remade",
-    "deck": "Trade routes carried disease as efficiently as they carried goods. In the mid-14th century, the bubonic plague traveled along the trade networks of Afro-Eurasia and killed tens of millions of people, demonstrating that connectivity has consequences beyond commerce.",
+    "deck": "Trade routes carried disease as efficiently as they carried goods, and just as easily carried crops and farming knowledge the other way. In the mid-14th century, the bubonic plague traveled along the trade networks of Afro-Eurasia and killed tens of millions of people, while those same networks spread bananas, new rice varieties, and citrus to farmers who had never grown them before. Connectivity's consequences ran in more than one direction.",
     "skillTags": [
       "Causation",
       "Continuity & Change",
@@ -837,7 +837,7 @@ module.exports = {
     ],
     "supportCards": {
       "beforeYouRead": "Track how the plague spread and what it destroyed. Notice that there are both immediate causes (the disease itself) and structural causes (the trade routes that carried it). Strong historians explain both.",
-      "readingTarget": "By the end, you should be able to explain how trade routes enabled the Black Death's spread, describe its demographic and social consequences, and evaluate whether trade networks brought both prosperity and catastrophe."
+      "readingTarget": "By the end, you should be able to explain how trade routes enabled the Black Death's spread, describe its demographic and social consequences, explain how those same networks diffused crops such as bananas, new rice varieties, and citrus, and evaluate whether trade networks brought both prosperity and catastrophe."
     },
     "vocabulary": [
       "Black Death",
@@ -847,7 +847,7 @@ module.exports = {
       "Demographic Collapse",
       "Serfdom",
       "Miasma Theory",
-      "Deforestation",
+      "Crop Diffusion",
       "Messina 1347"
     ],
     "sections": [
@@ -912,7 +912,7 @@ module.exports = {
       {
         "number": "4",
         "label": "Key Concept",
-        "heading": "Social and Institutional Consequences",
+        "heading": "Social, Institutional, and Ecological Consequences",
         "blocks": [
           {
             "type": "p",
@@ -920,7 +920,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The Church, which had no explanation for the disaster and no power to stop it, suffered severe damage to its authority. When priests and bishops died alongside peasants, and prayers offered no protection, some survivors began to question institutional religion. The plague contributed to long-term spiritual and intellectual disruption that shaped later European history, context that students will need when examining post-1450 transformations."
+            "html": "The Church, which had no explanation for the disaster and no power to stop it, suffered severe damage to its authority, and some survivors began to question institutional religion when priests and bishops died alongside peasants and prayers offered no protection. Connectivity's consequences were not only catastrophic: the same trade networks also carried crops the other way, bananas continuing to spread into East Africa, new rice varieties reaching East Asia, and citrus becoming established around the Mediterranean, proof that a trade network moves more than one kind of cargo."
           }
         ],
         "callout": {
@@ -929,7 +929,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "The Black Death originated in Central Asian rodent populations and traveled along Mongol trade routes westward. It killed 30–60% of Europe's population, causing demographic collapse, labor shortages that weakened serfdom, and damage to Church authority. The central AP lesson: the same networks that carried silk and spices also carried plague, connectivity creates both prosperity and vulnerability, and the two cannot be separated.",
+    "takeaway": "The Black Death originated in Central Asian rodent populations and traveled along Mongol trade routes westward. It killed 30–60% of Europe's population, causing demographic collapse, labor shortages that weakened serfdom, and damage to Church authority. The same networks also diffused crops, bananas into East Africa, new rice varieties into East Asia, citrus around the Mediterranean, proof that connectivity's consequences were not only catastrophic. The central AP lesson: the same networks that carried silk and spices also carried plague and produce, connectivity creates both prosperity and vulnerability, and the two cannot be separated.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -942,8 +942,8 @@ module.exports = {
       {
         "num": "02",
         "skill": "Continuity & Change",
-        "text": "Explain two social or institutional consequences of the Black Death. Use specific evidence.",
-        "placeholder": "Two consequences of the Black Death were..."
+        "text": "Explain two consequences of Afro-Eurasian connectivity in this period, one related to the spread of disease and one related to the diffusion of crops or agricultural practices. Use specific evidence for each.",
+        "placeholder": "One consequence, the spread of disease, was... A second consequence, the diffusion of crops, was..."
       },
       {
         "num": "03",

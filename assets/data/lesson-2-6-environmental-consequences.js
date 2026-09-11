@@ -48,7 +48,7 @@ window.BEHISTORICAL_LESSON = {
       theme: 'Social Structures'
     },
     {
-      target: 'I can explain the ecological consequences of increased connectivity, including deforestation, agricultural intensification, and the movement of invasive species along trade routes.',
+      target: 'I can explain how trade networks diffused crops and agricultural practices across Afro-Eurasia, such as bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean, alongside other ecological consequences of connectivity such as deforestation and the movement of invasive species.',
       kc: 'KC-3.1.IV',
       theme: 'Environment and Geography'
     }
@@ -66,7 +66,7 @@ window.BEHISTORICAL_LESSON = {
       theme: 'Social Structures'
     },
     {
-      criteria: 'I can identify at least two ecological changes associated with expanding trade networks and explain their long-term environmental significance.',
+      criteria: 'I can name at least one crop or agricultural practice that diffused along Afro-Eurasian trade networks (such as bananas, new rice varieties, or citrus) and explain how that diffusion changed farming, diet, or land use in its new region.',
       kc: 'KC-3.1.IV',
       theme: 'Environment and Geography'
     }

@@ -50,6 +50,17 @@ if (!fromDisk) {
  */
 const LO_LETTERS_REMOVED = 'the AP learning objective letters were replaced with what each objective actually says, 2026-09-08. "LO J" told a student nothing; the letter is a CED index and never appears on the exam.';
 
+/**
+ * Topic 2.6's own Key Concept (KC-3.1.IV) names crop diffusion, bananas in
+ * Africa, new rice varieties in East Asia, citrus in the Mediterranean, as
+ * an environmental consequence of connectivity, alongside the plague. The
+ * reading, the learning targets, and Checkpoint 2 covered only the plague.
+ * Jeff's 2026-09-11 build brief flagged the gap; this folds crop diffusion
+ * into the existing sections and questions rather than adding new ones, so
+ * the reading keeps its four sections and three check questions.
+ */
+const CROP_DIFFUSION_2_6 = 'Topic 2.6\'s reading, targets, and Checkpoint 2 covered only the plague; its own Key Concept also names crop diffusion (bananas in Africa, new rice varieties in East Asia, citrus in the Mediterranean) as an environmental consequence of connectivity, added 2026-09-11.';
+
 const INTENTIONAL = [
   { field: 'footerNote',
     after: 'Organize your thinking here, submit your final work in Canvas.',
@@ -130,7 +141,44 @@ const INTENTIONAL = [
     why: LO_LETTERS_REMOVED },
   { field: "takeaway",
     after: "The Cold War shaped every corner of the world, but not always in the same way. KC-6.2.IV.C's four categories (economic, political, social, cultural) give you the framework. The learning objective asks you to evaluate how much overlap there was. Your thesis needs a degree claim: \"to a great extent,\" \"to a moderate extent,\" or \"to a limited extent.\" The matrix builds your evidence. The thesis commits to your interpretation of it.",
-    why: LO_LETTERS_REMOVED }
+    why: LO_LETTERS_REMOVED },
+
+  /**
+   * Topic 2.6's own Key Concept (KC-3.1.IV) names crop diffusion, bananas in
+   * Africa, new rice varieties in East Asia, citrus in the Mediterranean, as
+   * an environmental consequence of connectivity, alongside the plague. The
+   * reading, the learning targets, and Checkpoint 2 covered only the plague.
+   * Jeff's 2026-09-11 build brief flagged the gap; this folds crop diffusion
+   * into the existing sections and questions rather than adding new ones, so
+   * the reading keeps its four sections and three check questions.
+   */
+  { field: "band.deck",
+    after: "Trade routes carried disease as efficiently as they carried goods, and just as easily carried crops and farming knowledge the other way. In the mid-14th century, the bubonic plague traveled along the trade networks of Afro-Eurasia and killed tens of millions of people, while those same networks spread bananas, new rice varieties, and citrus to farmers who had never grown them before. Connectivity's consequences ran in more than one direction.",
+    why: CROP_DIFFUSION_2_6 },
+  { field: "support[].body",
+    after: "By the end, you should be able to explain how trade routes enabled the Black Death's spread, describe its demographic and social consequences, explain how those same networks diffused crops such as bananas, new rice varieties, and citrus, and evaluate whether trade networks brought both prosperity and catastrophe.",
+    why: CROP_DIFFUSION_2_6 },
+  { field: "vocab[]",
+    after: "Crop Diffusion",
+    why: CROP_DIFFUSION_2_6 },
+  { field: "sections[].heading",
+    after: "Social, Institutional, and Ecological Consequences",
+    why: CROP_DIFFUSION_2_6 },
+  { field: "sections[].paragraphs[].text",
+    after: "The Church, which had no explanation for the disaster and no power to stop it, suffered severe damage to its authority, and some survivors began to question institutional religion when priests and bishops died alongside peasants and prayers offered no protection. Connectivity's consequences were not only catastrophic: the same trade networks also carried crops the other way, bananas continuing to spread into East Africa, new rice varieties reaching East Asia, and citrus becoming established around the Mediterranean, proof that a trade network moves more than one kind of cargo.",
+    why: CROP_DIFFUSION_2_6 },
+  { field: "sections[].blocks[].text",
+    after: "The Church, which had no explanation for the disaster and no power to stop it, suffered severe damage to its authority, and some survivors began to question institutional religion when priests and bishops died alongside peasants and prayers offered no protection. Connectivity's consequences were not only catastrophic: the same trade networks also carried crops the other way, bananas continuing to spread into East Africa, new rice varieties reaching East Asia, and citrus becoming established around the Mediterranean, proof that a trade network moves more than one kind of cargo.",
+    why: CROP_DIFFUSION_2_6 },
+  { field: "takeaway",
+    after: "The Black Death originated in Central Asian rodent populations and traveled along Mongol trade routes westward. It killed 30–60% of Europe's population, causing demographic collapse, labor shortages that weakened serfdom, and damage to Church authority. The same networks also diffused crops, bananas into East Africa, new rice varieties into East Asia, citrus around the Mediterranean, proof that connectivity's consequences were not only catastrophic. The central AP lesson: the same networks that carried silk and spices also carried plague and produce, connectivity creates both prosperity and vulnerability, and the two cannot be separated.",
+    why: CROP_DIFFUSION_2_6 },
+  { field: "check.questions[].text",
+    after: "Explain two consequences of Afro-Eurasian connectivity in this period, one related to the spread of disease and one related to the diffusion of crops or agricultural practices. Use specific evidence for each.",
+    why: CROP_DIFFUSION_2_6 },
+  { field: "check.questions[].placeholder",
+    after: "One consequence, the spread of disease, was... A second consequence, the diffusion of crops, was...",
+    why: CROP_DIFFUSION_2_6 }
 ];
 
 /** Parse one diff line back into field, before, after. */
