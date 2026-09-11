@@ -62,6 +62,41 @@ fact and move on.
 | Panels tagged The Myth / The Reality | One panel, tag `Common mistake to avoid`, stating the misconception and the correction in one paragraph |
 | "Not a convoy. A business, with a payroll, an owner, and a cost structure." | "A caravan operated as a business, with an owner, paid staff, and a fixed cost structure." |
 | "The goods list is not a matter of taste. It is a matter of arithmetic." | "Which goods traveled the Silk Roads was determined by cost, not by preference or custom." |
+| An org-chart of boxes and arrows for "who ran a caravan" | A `.stat-grid` of four short facts: One Leader, Paid Staff, One Segment Each, Shared Risk |
+| A "How we know" panel stating the claim, the correction, and two supporting sentences | A "How we know" panel stating the claim and the correction in one sentence; the supporting detail moves to `data-notes` |
+| A slide linking out to a YouTube clip | A `.video-wrap` slide, the clip embedded and playing on the board itself |
+
+## Structure and density
+
+Added after the second-draft rejection: the first fix (wording) was correct
+but not the whole problem. The deeper issue was structural, and it is a
+separate failure mode from voice.
+
+**7. A slide carries an image, or a short list, never a paragraph.** The
+"How we know" and "Common mistake to avoid" panels from rule 3 are ONE
+sentence on the slide, not a paragraph. If the point needs more than one
+sentence to state, the rest of it is what the teacher says out loud, in
+`data-notes`, not more text on the board. A student who is copying a
+paragraph off a screen is not listening to the teacher, and copying is not
+the point of a slide anyway, per the deck's own existing design: the
+KEY TAKEAWAY box is the only thing meant to be copied.
+
+**8. No org-chart or flow-pipeline diagrams.** They read as a corporate
+deck, not a history lecture, however accurate the content inside the boxes
+is. Prefer, in order: a real photograph as a full-bleed `.hero` slide when
+one is available and verified; a `.stat-grid` of short facts (a number, a
+name, three or four words) when the content is genuinely list-shaped; a
+table when the content is genuinely a structured comparison. A concept with
+no honest photograph is not an excuse to draw boxes and arrows instead, it
+is a reason to compress it into a `.stat-grid` tile the way Topic 1.4 did
+for Maya city-states, a concept with no photograph either.
+
+**9. A video clip plays on the slide, never links out.** The way Jeff has
+always taught, a clip is part of the room the same way an image or a map
+is: play it, then keep talking. A slide that only links to YouTube breaks
+that rhythm and moves the room's attention off the projector and onto
+whoever's device opens the tab. Embed it full-frame, one caption line at
+most, the same restraint as `.hero`.
 
 ## Not yet a machine check
 
