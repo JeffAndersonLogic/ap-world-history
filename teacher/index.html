@@ -54,6 +54,10 @@ a{color:inherit}
         <h3>Run of Show</h3>
         <p>A minute-by-minute pacing cockpit for a class period: retrieval prompts, teacher moves, a class timer, and a Must-Haves reference.</p>
       </a>
+      <a class="tc-card" href="command-center-topic-1-7.html">
+        <h3>Topic 1.7 Interactive Lesson</h3>
+        <p>The Unit 1 synthesis pilot: Teacher Command Center + integrated Presentation Mode for comparison and argumentation.</p>
+      </a>
       <a class="tc-card" href="skills-lens.html">
         <h3>Skills Lens</h3>
         <p>Drop a Canvas submissions zip to see completion, response quality, and AP skill trends across the year.</p>
@@ -64,6 +68,7 @@ a{color:inherit}
   <p class="tc-footer-note">Teacher tool &mdash; never linked from a student page. Generated from scripts/build-teacher-index.js; the Today panel reads assets/data/announcements-schedule.js live in the browser, so it is never a stale snapshot.</p>
 </div>
 <script id="tc-ros-data" type="application/json">[{"key":"1.4","out":"run-of-show-topic-1-4.html"},{"key":"1.5","out":"run-of-show-topic-1-5.html"},{"key":"1.6","out":"run-of-show-topic-1-6.html"}]</script>
+<script id="tc-interactive-data" type="application/json">[{"key":"1.7","out":"command-center-topic-1-7.html"}]</script>
 <script id="tc-cohort-data" type="application/json">{"green":{"key":"green","label":"Green Day","short":"Green","letter":"G","metal":"verdigris","mark":"#2F5C46","ink":"#2F5C46","tint":"#E7EFE9","onDark":"#7FB496","filled":true},"silver":{"key":"silver","label":"Silver Day","short":"Silver","letter":"S","metal":"pewter","mark":"#8A9298","ink":"#545B5F","tint":"#ECEEEF","onDark":"#B9C1C6","filled":false}}</script>
 <script src="../assets/data/announcements-schedule.js"></script>
 <script>
@@ -71,6 +76,7 @@ a{color:inherit}
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
   var ROS = JSON.parse(document.getElementById('tc-ros-data').textContent);
+  var INTERACTIVE = JSON.parse(document.getElementById('tc-interactive-data').textContent);
   var COHORTS = JSON.parse(document.getElementById('tc-cohort-data').textContent);
   var box = document.getElementById('tc-today');
   var sched = window.BEHISTORICAL_SCHEDULE;
@@ -88,16 +94,21 @@ a{color:inherit}
   }
 
   var cohortInfo = COHORTS[day.cohort] || { label: day.cohort };
-  var match = ROS.filter(function(t){ return t.key === day.topic; })[0];
+  var interactive = INTERACTIVE.filter(function(t){ return t.key === day.topic; })[0];
+  var runOfShow = ROS.filter(function(t){ return t.key === day.topic; })[0];
 
-  if (match) {
+  if (interactive) {
+    box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
+      + '<p>Topic ' + esc(day.topic) + ' &middot; Interactive Lesson</p>'
+      + '<a class="tc-today-open" href="' + esc(interactive.out) + '">Open today&rsquo;s Teacher Command Center &rarr;</a>';
+  } else if (runOfShow) {
     box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
       + '<p>Topic ' + esc(day.topic) + '</p>'
-      + '<a class="tc-today-open" href="' + esc(match.out) + '">Open today&rsquo;s Run of Show &rarr;</a>';
+      + '<a class="tc-today-open" href="' + esc(runOfShow.out) + '">Open today&rsquo;s Run of Show &rarr;</a>';
   } else {
     box.className = 'tc-today empty';
     box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
-      + '<p>Topic ' + esc(day.topic) + ' does not have a Run of Show yet.</p>';
+      + '<p>Topic ' + esc(day.topic) + ' does not have a teacher command surface yet.</p>';
   }
 })();
 </script>
