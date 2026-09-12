@@ -59,7 +59,8 @@ window.BEHISTORICAL_TEACHING = {
     { label: 'Student Lesson 2.1', url: '../unit-2/lesson-2-1-silk-roads.html' },
     { label: 'First & 10', url: '../unit-2/first-and-10-topic-2-1-silk-roads-capture.html?v=response-id-fix-v1' },
     { label: 'Full Heimler Review', url: 'https://youtu.be/daiQ6aChKfk' },
-    { label: 'BeInTheRoom', url: '../beintheroom/unit-2/silk-road-merchant.html' }
+    { label: 'BeInTheRoom', url: '../beintheroom/unit-2/silk-road-merchant.html' },
+    { label: 'Caravanserai Reconstruction', url: 'https://www.canva.com/d/gBexzatsmhMDKh4' }
   ],
 
   projection: {
@@ -157,13 +158,20 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'causes', kind: 'question', eyebrow: 'Cause 2',
+      phase: 'causes', kind: 'embed', eyebrow: 'Cause 2',
       title: 'Distance needs infrastructure.', subtitle: 'Caravanserais turn one impossible journey into manageable stages.',
+      embed: {
+        url: 'https://www.canva.com/design/DAHU8YGxw5k/view?embed',
+        fallback: 'https://www.canva.com/d/gBexzatsmhMDKh4',
+        label: 'Photorealistic caravanserai reconstruction, c. 1250 CE'
+      },
+      footer: 'Historical reconstruction · Canva AI generated',
       notes: {
         minutes: 4,
-        land: ['Caravanserais provided rest, water, food, shelter, security, markets, and information.', 'The important idea is not “roadside hotel.” The historical significance is that infrastructure lowers transaction and travel costs.', 'States and local rulers had an incentive to support trade infrastructure because commerce could be taxed.'],
+        land: ['Use the reconstruction as the visual anchor: food, water, shelter, security, animal care, protected storage, and information exchange are all visible parts of the system.', 'Caravanserais provided rest, water, food, shelter, security, markets, and information.', 'The important idea is not “roadside hotel.” The historical significance is that infrastructure lowers transaction and travel costs.', 'States and local rulers had an incentive to support trade infrastructure because commerce could be taxed.'],
         ask: 'What problem does a caravanserai solve?',
-        listenFor: 'Resupply, security, rest, animals, information, predictable stopping points.'
+        listenFor: 'Resupply, security, rest, animals, information, predictable stopping points.',
+        avoid: 'Treat this as an interpretive reconstruction, not as a surviving primary-source image.'
       }
     },
     {
