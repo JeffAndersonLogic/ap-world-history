@@ -3,40 +3,20 @@
 /**
  * The teacher command center: one page linking every teacher-only tool
  * BeHistorical has, plus a Today panel that reads the schedule live in the
- * browser and surfaces the Run of Show for whatever topic is being taught
- * right now, when one exists.
+ * browser and surfaces the best available teacher view for the current topic.
  *
- * A router, not a dashboard: nothing here stores its own state. TOOLS and
- * ROS_TOPICS are baked in at build time (which tools exist, which topics
- * have a Run of Show, are editorial facts, the same as VOLUMES in
- * build-ebook.js), but the Today panel itself is inert markup until the
- * browser loads assets/data/announcements-schedule.js and evaluates
- * "today" against it. A schedule change or a newly authored Run of Show
- * topic reaches this page on its next load, not its next rebuild.
- *
- * Never linked from a student page, the same as teacher/skills-lens.html
- * and teacher/run-of-show-index.html; validate.js checks all three the
- * same way.
+ * A router, not a dashboard: nothing here stores its own state. TOOLS,
+ * ROS_TOPICS, and INTERACTIVE_TOPICS are baked in at build time because the
+ * surfaces that exist are editorial facts. The Today panel itself evaluates
+ * the live schedule in the browser. Interactive lessons take precedence over
+ * legacy Run of Show pages when both exist.
  */
 
 function esc(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-/**
- * @param {object[]} tools     [{ label, desc, href }], the declared list of
- *        teacher-only tools this hub links to.
- * @param {object[]} rosTopics [{ key, out }], one per Run of Show topic,
- *        `key` being the bare topic number ('1.4') the schedule uses.
- * @param {object} cohorts     the COHORTS map from scripts/lib/cohorts.js,
- *        `{ green: { label, ... }, silver: { label, ... } }`. The raw
- *        schedule file (unlike the generated announcements.js) carries no
- *        cohort labels of its own, and this page reads that raw file for
- *        its topic keys, so the label has to come from here instead of a
- *        second schedule file, keeping cohorts.js the one place the two
- *        cohorts are defined.
- */
-function renderTeacherIndex(tools, rosTopics, cohorts) {
+function renderTeacherIndex(tools, rosTopics, cohorts, interactiveTopics = []) {
   const toolCards = tools.map(t => (
     `      <a class="tc-card" href="${esc(t.href)}">\n` +
     `        <h3>${esc(t.label)}</h3>\n` +
@@ -45,6 +25,7 @@ function renderTeacherIndex(tools, rosTopics, cohorts) {
   )).join('');
 
   const rosData = JSON.stringify(rosTopics).replace(/</g, '\\u003c');
+  const interactiveData = JSON.stringify(interactiveTopics).replace(/</g, '\\u003c');
   const cohortData = JSON.stringify(cohorts).replace(/</g, '\\u003c');
 
   return `<!DOCTYPE html>
@@ -105,6 +86,7 @@ ${toolCards}      </div>
   <p class="tc-footer-note">Teacher tool &mdash; never linked from a student page. Generated from scripts/build-teacher-index.js; the Today panel reads assets/data/announcements-schedule.js live in the browser, so it is never a stale snapshot.</p>
 </div>
 <script id="tc-ros-data" type="application/json">${rosData}</script>
+<script id="tc-interactive-data" type="application/json">${interactiveData}</script>
 <script id="tc-cohort-data" type="application/json">${cohortData}</script>
 <script src="../assets/data/announcements-schedule.js"></script>
 <script>
@@ -112,6 +94,7 @@ ${toolCards}      </div>
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
   var ROS = JSON.parse(document.getElementById('tc-ros-data').textContent);
+  var INTERACTIVE = JSON.parse(document.getElementById('tc-interactive-data').textContent);
   var COHORTS = JSON.parse(document.getElementById('tc-cohort-data').textContent);
   var box = document.getElementById('tc-today');
   var sched = window.BEHISTORICAL_SCHEDULE;
@@ -129,16 +112,21 @@ ${toolCards}      </div>
   }
 
   var cohortInfo = COHORTS[day.cohort] || { label: day.cohort };
-  var match = ROS.filter(function(t){ return t.key === day.topic; })[0];
+  var interactive = INTERACTIVE.filter(function(t){ return t.key === day.topic; })[0];
+  var runOfShow = ROS.filter(function(t){ return t.key === day.topic; })[0];
 
-  if (match) {
+  if (interactive) {
+    box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
+      + '<p>Topic ' + esc(day.topic) + ' &middot; Interactive Lesson</p>'
+      + '<a class="tc-today-open" href="' + esc(interactive.out) + '">Open today&rsquo;s Teacher Command Center &rarr;</a>';
+  } else if (runOfShow) {
     box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
       + '<p>Topic ' + esc(day.topic) + '</p>'
-      + '<a class="tc-today-open" href="' + esc(match.out) + '">Open today&rsquo;s Run of Show &rarr;</a>';
+      + '<a class="tc-today-open" href="' + esc(runOfShow.out) + '">Open today&rsquo;s Run of Show &rarr;</a>';
   } else {
     box.className = 'tc-today empty';
     box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
-      + '<p>Topic ' + esc(day.topic) + ' does not have a Run of Show yet.</p>';
+      + '<p>Topic ' + esc(day.topic) + ' does not have a teacher command surface yet.</p>';
   }
 })();
 </script>
