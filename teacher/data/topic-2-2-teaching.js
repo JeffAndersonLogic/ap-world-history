@@ -49,11 +49,11 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'check1', label: 'Checkpoint 1', range: '49–55', minutes: 6, teacher: 'Look for one military method + one administrative method + explanation.', students: 'Explain conquest and administration with specific evidence.', slide: 12 },
     { id: 'clip2', label: 'Clip: After Genghis', range: '55–57', minutes: 2, teacher: 'Use succession and regional rule to set up the khanates and fragmentation.', students: 'Watch for what happens when one empire becomes multiple Mongol states.', slide: 13 },
     { id: 'pax', label: 'Pax Mongolica', range: '57–68', minutes: 11, teacher: 'Explain lower political barriers, merchant protection, relay systems, and increased movement.', students: 'Distinguish continuity of routes from change in the conditions of exchange.', slide: 14 },
-    { id: 'clip3', label: 'Clip: The Paradox', range: '68–70', minutes: 2, teacher: 'Use the clip to put connective and destructive effects in the same frame.', students: 'Watch for benefits and costs of Mongol rule.', slide: 16 },
-    { id: 'room', label: 'BeInTheRoom', range: '70–81', minutes: 11, teacher: 'Launch roles quickly; keep the focus on evidence-based choices under Mongol rule.', students: 'Choose a role, policy, and evidence; defend a position.', slide: 17 },
-    { id: 'skill', label: 'AP Skill Builder', range: '81–86', minutes: 5, teacher: 'Force a baseline-before/change move.', students: 'Write a short CCOT claim about trade or political control.', slide: 18 },
-    { id: 'check2', label: 'Final Checkpoint', range: '86–89', minutes: 3, teacher: 'Use as an exit response if time is tight.', students: 'Explain two effects of the Pax Mongolica.', slide: 19 },
-    { id: 'close', label: 'Close + Bridge', range: '89–90', minutes: 1, teacher: 'Land the paradox and bridge to the Indian Ocean.', students: 'Leave with the Unit 2 network idea.', slide: 20 }
+    { id: 'clip3', label: 'Clip: The Cost', range: '68–70', minutes: 2, teacher: 'Use the clip to reinforce the destructive side of the Mongol paradox.', students: 'Watch for the costs of conquest.', slide: 17 },
+    { id: 'room', label: 'BeInTheRoom', range: '70–81', minutes: 11, teacher: 'Launch roles quickly; keep the focus on evidence-based choices under Mongol rule.', students: 'Choose a role, policy, and evidence; defend a position.', slide: 18 },
+    { id: 'skill', label: 'AP Skill Builder', range: '81–86', minutes: 5, teacher: 'Force a baseline-before/change move.', students: 'Write a short CCOT claim about trade or political control.', slide: 19 },
+    { id: 'check2', label: 'Final Checkpoint', range: '86–89', minutes: 3, teacher: 'Use as an exit response if time is tight.', students: 'Explain two effects of the Pax Mongolica.', slide: 20 },
+    { id: 'close', label: 'Close + Bridge', range: '89–90', minutes: 1, teacher: 'Land the paradox and bridge to the Indian Ocean.', students: 'Leave with the Unit 2 network idea.', slide: 21 }
   ],
 
   quickLaunch: [
@@ -265,15 +265,15 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'clip3', kind: 'video', eyebrow: 'Watch · ~1:30',
-      title: 'Connection and destruction in the same empire.',
-      video: { youtubeId: 'szxPar0BcMo', start: 414, end: 510, label: 'Crash Course World History #17: Five Reasons the Mongols Were Awesome' },
-      footer: 'Listen for evidence — not a verdict.',
+      phase: 'clip3', kind: 'video', eyebrow: 'Watch · ~1 Minute',
+      title: 'What did conquest cost?',
+      video: { youtubeId: 'szxPar0BcMo', start: 510, end: 570, label: 'Crash Course World History #17: Costs of Mongol Conquest' },
+      footer: 'Add evidence to the destructive side of the paradox.',
       notes: {
         minutes: 2,
-        land: ['Crash Course intentionally frames this section as a debate. Use it as evidence collection, not as the lesson conclusion.', 'Ask students to separate claims about exchange, tolerance, and administration from moral judgment.'],
-        ask: 'Which claim from the clip belongs in an AP explanation of Mongol effects?',
-        listenFor: 'Trade/connectivity, tolerance, movement of ideas/technology, administrative consequences.'
+        land: ['This section shifts to the costs of Mongol rule and gives students a counterweight to the connectivity story.', 'Use it as evidence collection, not as a moral verdict.'],
+        ask: 'Which destructive effect belongs in an AP explanation of Mongol rule?',
+        listenFor: 'Violence, destruction of cities, demographic loss, political disruption.'
       }
     },
     {
