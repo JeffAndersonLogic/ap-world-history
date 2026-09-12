@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /*
  * Build the teacher command center: one page linking every teacher-only
- * tool BeHistorical has (Run of Show, Skills Lens), plus a Today panel
- * that surfaces the Run of Show for whatever topic is being taught right
- * now, when one exists.
+ * tool BeHistorical has (Run of Show, Skills Lens, interactive lesson pilots),
+ * plus a Today panel that surfaces the Run of Show for whatever topic is being
+ * taught right now, when one exists.
  *
  *   node scripts/build-teacher-index.js            write teacher/index.html
  *   node scripts/build-teacher-index.js --check    fail on drift, write nothing
@@ -37,6 +37,7 @@ const CHECK = process.argv.includes('--check');
 
 const TOOLS = [
   { label: 'Run of Show', desc: 'A minute-by-minute pacing cockpit for a class period: retrieval prompts, teacher moves, a class timer, and a Must-Haves reference.', href: ROS_INDEX_OUT },
+  { label: 'Topic 1.7 Interactive Lesson', desc: 'The Unit 1 synthesis pilot: Teacher Command Center + integrated Presentation Mode for comparison and argumentation.', href: 'command-center-topic-1-7.html' },
   { label: 'Skills Lens', desc: 'Drop a Canvas submissions zip to see completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
 ];
 
