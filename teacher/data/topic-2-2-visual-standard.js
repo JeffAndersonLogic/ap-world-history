@@ -31,19 +31,22 @@
     }
   };
 
+  // Use absolute raw GitHub URLs so reconstruction images remain stable regardless of
+  // presentation route depth, GitHub Pages base-path behavior, or stale asset routing.
+  const RECONSTRUCTION_BASE = 'https://raw.githubusercontent.com/JeffAndersonLogic/ap-world-history/main/assets/images/reconstructions/';
   const RECONSTRUCTIONS = {
     mountedArchers: {
-      url: '../assets/images/reconstructions/topic-2-2-mounted-archers.webp',
+      url: RECONSTRUCTION_BASE + 'topic-2-2-mounted-archers.webp',
       alt: 'Historical reconstruction of coordinated Mongol mounted archers on the steppe',
       credit: 'Historical reconstruction · AI generated'
     },
     yamRelay: {
-      url: '../assets/images/reconstructions/topic-2-2-yam-relay.webp',
+      url: RECONSTRUCTION_BASE + 'topic-2-2-yam-relay.webp',
       alt: 'Historical reconstruction of a mounted Mongol courier approaching a Yam relay station',
       credit: 'Historical reconstruction · AI generated'
     },
     protectedCaravan: {
-      url: '../assets/images/reconstructions/topic-2-2-protected-caravan.webp',
+      url: RECONSTRUCTION_BASE + 'topic-2-2-protected-caravan.webp',
       alt: 'Historical reconstruction of a protected caravan moving through Mongol-controlled territory',
       credit: 'Historical reconstruction · AI generated'
     }
