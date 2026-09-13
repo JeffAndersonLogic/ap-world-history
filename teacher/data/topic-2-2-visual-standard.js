@@ -1,4 +1,4 @@
-/* Topic 2.2 visual standard: high-resolution maps, clear provenance, and no map text overlays. */
+/* Topic 2.2 visual standard: high-resolution maps, reconstruction anchors, clear provenance, and no text over evidence. */
 (function(){
   'use strict';
   const T = window.BEHISTORICAL_TEACHING;
@@ -31,6 +31,24 @@
     }
   };
 
+  const RECONSTRUCTIONS = {
+    mountedArchers: {
+      url: 'https://www.canva.com/design/DAHVCSUFRwU/view?embed',
+      fallback: 'https://www.canva.com/d/b3Pe4OtW22JL-_J',
+      label: 'Photorealistic historical reconstruction of Mongol mounted archers'
+    },
+    yamRelay: {
+      url: 'https://www.canva.com/design/DAHVCfViZgE/view?embed',
+      fallback: 'https://www.canva.com/d/pFVU4ELWp9bF7c0',
+      label: 'Photorealistic historical reconstruction of a Mongol Yam relay station'
+    },
+    protectedCaravan: {
+      url: 'https://www.canva.com/design/DAHVCV0w_ig/view?embed',
+      fallback: 'https://www.canva.com/d/c1KHdc5IIsVdrl_',
+      label: 'Photorealistic historical reconstruction of a protected caravan under Mongol rule'
+    }
+  };
+
   // Scale: keep the strongest vector map, but render it as an unobstructed map rather than an image with text on top.
   if (T.slides[1]) {
     T.slides[1].kind = 'map';
@@ -56,6 +74,26 @@
     ];
   }
 
+  // Conquest: replace the repeated Chinggis portrait with a reconstruction that visualizes coordinated mounted warfare.
+  if (T.slides[4]) {
+    T.slides[4].kind = 'reconstruction';
+    T.slides[4].eyebrow = 'Conquest 1 · Organization';
+    T.slides[4].title = 'Temüjin turns steppe warriors into a system.';
+    T.slides[4].subtitle = 'Loyalty shifts from lineage to command.';
+    T.slides[4].embed = RECONSTRUCTIONS.mountedArchers;
+    delete T.slides[4].visual;
+    T.slides[4].notes = {
+      minutes: 3,
+      land: [
+        'This reconstruction is interpretive, not primary-source evidence. Use it to visualize coordinated mounted warfare while you teach the organizational change.',
+        'Genghis Khan unified competing steppe groups by 1206 and reorganized military loyalty around command rather than simply preserving old clan hierarchies.',
+        'The military advantage came from organization as much as horsemanship: units could coordinate, communicate, and act under a larger command structure.'
+      ],
+      ask: 'Why would reorganizing loyalty make a conquering army more effective?',
+      listenFor: 'Reduced clan rivalry, stronger coordination, competence, loyalty to the larger command system.'
+    };
+  }
+
   // Governance: use the clean khanate map again, now for the administrative argument.
   if (T.slides[9]) {
     T.slides[9].kind = 'map';
@@ -63,6 +101,27 @@
     T.slides[9].mapLabel = 'SUCCESSOR KHANATES · c. 1300';
     T.slides[9].title = 'Regional rule solves distance — and creates rivalry.';
     T.slides[9].footer = 'Decentralization makes rule more practical while weakening unified control.';
+  }
+
+  // Governance infrastructure: visualize the Yam mechanism while preserving the paiza as authentic artifact evidence in teacher explanation.
+  if (T.slides[11]) {
+    T.slides[11].kind = 'reconstruction';
+    T.slides[11].eyebrow = 'Governance 4 · Yam Relay';
+    T.slides[11].title = 'Information moves at horse speed.';
+    T.slides[11].subtitle = 'Relay stations turn distance into a governable problem.';
+    T.slides[11].embed = RECONSTRUCTIONS.yamRelay;
+    delete T.slides[11].visual;
+    T.slides[11].footer = '';
+    T.slides[11].notes = {
+      minutes: 3,
+      land: [
+        'This reconstruction visualizes the Yam relay system: messengers could change horses and move dispatches through a chain of stations rather than exhausting one rider and one horse across the empire.',
+        'Pair the reconstruction verbally with the surviving Yuan paiza as authentic material evidence of imperial permission, protected movement, and enforceable authority.',
+        'The larger political point is simple: an empire cannot reliably govern territory it cannot communicate across.'
+      ],
+      ask: 'Why is communication infrastructure a form of political power?',
+      listenFor: 'Orders, intelligence, taxation, military response, coordination, and travel permissions.'
+    };
   }
 
   // Pax Mongolica: make CCOT visible geographically rather than replacing geography with a text diagram.
@@ -87,5 +146,26 @@
     };
   }
 
+  // Pax Mongolica in human terms: show protected movement without implying that travel was universally safe or violence disappeared.
+  if (T.slides[15]) {
+    T.slides[15].kind = 'reconstruction';
+    T.slides[15].eyebrow = 'Pax Mongolica · Movement';
+    T.slides[15].title = 'Protection changes movement.';
+    T.slides[15].subtitle = 'Merchants and envoys move through a more politically connected Eurasia.';
+    T.slides[15].embed = RECONSTRUCTIONS.protectedCaravan;
+    delete T.slides[15].visual;
+    T.slides[15].notes = {
+      minutes: 4,
+      land: [
+        'This reconstruction is a mechanism visual, not evidence that every caravan was safe everywhere.',
+        'Mongol rule could reduce some political barriers, protect favored merchants and envoys, and connect long stretches of overland movement through shared imperial systems.',
+        'The same network carried more than merchandise: travelers, diplomatic information, techniques, religious ideas, and disease could move through connected routes.'
+      ],
+      ask: 'Why does political protection matter even when the physical route itself already existed?',
+      listenFor: 'Lower risk, fewer political barriers, greater predictability, protected movement, and more long-distance connection.'
+    };
+  }
+
   window.BEHISTORICAL_TOPIC_2_2_MAPS = MAPS;
+  window.BEHISTORICAL_TOPIC_2_2_RECONSTRUCTIONS = RECONSTRUCTIONS;
 })();
