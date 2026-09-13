@@ -1,4 +1,4 @@
-/* Topic 2.2 visual standard: high-resolution maps, reconstruction anchors, clear provenance, and no text over evidence. */
+/* Topic 2.2 visual standard: high-resolution maps, local reconstruction anchors, clear provenance, and no text over evidence. */
 (function(){
   'use strict';
   const T = window.BEHISTORICAL_TEACHING;
@@ -33,23 +33,23 @@
 
   const RECONSTRUCTIONS = {
     mountedArchers: {
-      url: 'https://www.canva.com/design/DAHVCSUFRwU/view?embed',
-      fallback: 'https://www.canva.com/d/b3Pe4OtW22JL-_J',
-      label: 'Photorealistic historical reconstruction of Mongol mounted archers'
+      url: '../assets/images/reconstructions/topic-2-2-mounted-archers.webp',
+      alt: 'Historical reconstruction of coordinated Mongol mounted archers on the steppe',
+      credit: 'Historical reconstruction · AI generated'
     },
     yamRelay: {
-      url: 'https://www.canva.com/design/DAHVCfViZgE/view?embed',
-      fallback: 'https://www.canva.com/d/pFVU4ELWp9bF7c0',
-      label: 'Photorealistic historical reconstruction of a Mongol Yam relay station'
+      url: '../assets/images/reconstructions/topic-2-2-yam-relay.webp',
+      alt: 'Historical reconstruction of a mounted Mongol courier approaching a Yam relay station',
+      credit: 'Historical reconstruction · AI generated'
     },
     protectedCaravan: {
-      url: 'https://www.canva.com/design/DAHVCV0w_ig/view?embed',
-      fallback: 'https://www.canva.com/d/c1KHdc5IIsVdrl_',
-      label: 'Photorealistic historical reconstruction of a protected caravan under Mongol rule'
+      url: '../assets/images/reconstructions/topic-2-2-protected-caravan.webp',
+      alt: 'Historical reconstruction of a protected caravan moving through Mongol-controlled territory',
+      credit: 'Historical reconstruction · AI generated'
     }
   };
 
-  // Scale: keep the strongest vector map, but render it as an unobstructed map rather than an image with text on top.
+  // Scale: render the vector expansion map unobstructed.
   if (T.slides[1]) {
     T.slides[1].kind = 'map';
     T.slides[1].visual = MAPS.expansion;
@@ -74,14 +74,14 @@
     ];
   }
 
-  // Conquest: replace the repeated Chinggis portrait with a reconstruction that visualizes coordinated mounted warfare.
+  // Conquest: replace repeated ruler portraiture with a mechanism visual.
   if (T.slides[4]) {
     T.slides[4].kind = 'reconstruction';
     T.slides[4].eyebrow = 'Conquest 1 · Organization';
     T.slides[4].title = 'Temüjin turns steppe warriors into a system.';
     T.slides[4].subtitle = 'Loyalty shifts from lineage to command.';
-    T.slides[4].embed = RECONSTRUCTIONS.mountedArchers;
-    delete T.slides[4].visual;
+    T.slides[4].visual = RECONSTRUCTIONS.mountedArchers;
+    delete T.slides[4].embed;
     T.slides[4].notes = {
       minutes: 3,
       land: [
@@ -94,7 +94,7 @@
     };
   }
 
-  // Governance: use the clean khanate map again, now for the administrative argument.
+  // Governance: use the clean khanate map for the administrative argument.
   if (T.slides[9]) {
     T.slides[9].kind = 'map';
     T.slides[9].visual = MAPS.khanates;
@@ -103,14 +103,14 @@
     T.slides[9].footer = 'Decentralization makes rule more practical while weakening unified control.';
   }
 
-  // Governance infrastructure: visualize the Yam mechanism while preserving the paiza as authentic artifact evidence in teacher explanation.
+  // Governance infrastructure: visualize the Yam mechanism while keeping the paiza as authentic supporting evidence in the teacher explanation.
   if (T.slides[11]) {
     T.slides[11].kind = 'reconstruction';
     T.slides[11].eyebrow = 'Governance 4 · Yam Relay';
     T.slides[11].title = 'Information moves at horse speed.';
     T.slides[11].subtitle = 'Relay stations turn distance into a governable problem.';
-    T.slides[11].embed = RECONSTRUCTIONS.yamRelay;
-    delete T.slides[11].visual;
+    T.slides[11].visual = RECONSTRUCTIONS.yamRelay;
+    delete T.slides[11].embed;
     T.slides[11].footer = '';
     T.slides[11].notes = {
       minutes: 3,
@@ -146,14 +146,14 @@
     };
   }
 
-  // Pax Mongolica in human terms: show protected movement without implying that travel was universally safe or violence disappeared.
+  // Pax Mongolica in human terms: show protected movement without implying universal safety.
   if (T.slides[15]) {
     T.slides[15].kind = 'reconstruction';
     T.slides[15].eyebrow = 'Pax Mongolica · Movement';
     T.slides[15].title = 'Protection changes movement.';
     T.slides[15].subtitle = 'Merchants and envoys move through a more politically connected Eurasia.';
-    T.slides[15].embed = RECONSTRUCTIONS.protectedCaravan;
-    delete T.slides[15].visual;
+    T.slides[15].visual = RECONSTRUCTIONS.protectedCaravan;
+    delete T.slides[15].embed;
     T.slides[15].notes = {
       minutes: 4,
       land: [
