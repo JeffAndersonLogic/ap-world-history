@@ -435,6 +435,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-14',
       cohort: 'green',
       topic: '1.7',
+      modules: ['02', '05', '06', '07', '09'],
       reading: {
         for: '2.1',
         where: 'ebook/unit-2.html',
@@ -450,6 +451,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-09-15',
       cohort: 'silver',
       topic: '1.7',
+      modules: ['02', '05', '06', '07', '09'],
       reading: {
         for: '2.1',
         where: 'ebook/unit-2.html',

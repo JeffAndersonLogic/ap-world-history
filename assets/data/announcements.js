@@ -945,14 +945,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain why the similarity or difference existed instead of only naming it.' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '09', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -985,14 +981,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain why the similarity or difference existed instead of only naming it.' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '09', title: 'Checkpoint 2' }
       ],
       homework: [
