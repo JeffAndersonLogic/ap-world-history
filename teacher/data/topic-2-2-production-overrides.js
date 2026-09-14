@@ -1,14 +1,16 @@
-/* Topic 2.2 production overrides: durable reconstruction assets + premium documentary clips. */
+/* Topic 2.2 production overrides: stable same-origin reconstruction assets + premium documentary clips. */
 (function(){
   'use strict';
   const T = window.BEHISTORICAL_TEACHING;
   if (!T || !Array.isArray(T.slides)) return;
 
-  const RAW = 'https://raw.githubusercontent.com/JeffAndersonLogic/ap-world-history/main/assets/images/reconstructions/';
+  // Keep reconstruction assets on the same GitHub Pages origin. Raw GitHub URLs
+  // created an unnecessary external dependency and were the source of live drift.
+  const RECON_BASE = '../assets/images/reconstructions/';
   const reconstructions = {
-    mountedArchers: RAW + 'topic-2-2-mounted-archers.webp?v=production-v4',
-    yamRelay: RAW + 'topic-2-2-yam-relay.webp?v=production-v4',
-    protectedCaravan: RAW + 'topic-2-2-protected-caravan.webp?v=production-v4'
+    mountedArchers: RECON_BASE + 'topic-2-2-mounted-archers.webp?v=production-v5',
+    yamRelay: RECON_BASE + 'topic-2-2-yam-relay.webp?v=production-v5',
+    protectedCaravan: RECON_BASE + 'topic-2-2-protected-caravan.webp?v=production-v5'
   };
 
   if (T.slides[4]) {
