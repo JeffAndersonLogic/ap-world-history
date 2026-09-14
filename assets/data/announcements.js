@@ -1486,8 +1486,8 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
 
   assessments: [
     { date: '2026-08-25', title: 'Foundations Assessment', detail: 'Covers Foundations 0 to 5, in class Monday, August 24 for Green and Tuesday, August 25 for Silver', type: 'Test' },
-    { date: '2026-09-17', title: 'Unit 1 Quiz', detail: 'Covers Topics 1.1 to 1.7, state building and societal organization across six Unit 1 regions, c. 1200 to c. 1450. Given at the start of the block on the same day Topic 2.1 begins, Wednesday, September 16 for Green and Thursday, September 17 for Silver, not on a separate day.', type: 'Quiz' },
-    { date: '2026-10-07', title: 'Eras 2 Exam, c. 1200 to c. 1450', detail: 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences.', type: 'Exam' }
+    { date: '2026-09-17', title: 'Unit 1 Quiz', detail: 'Covers Topics 1.1 to 1.7, state building and societal organization across six Unit 1 regions, c. 1200 to c. 1450. Given at the start of the block on the same day Topic 2.1 begins, Wednesday, September 16 for Green and Thursday, September 17 for Silver, not on a separate day.', type: 'Quiz', greenDate: '2026-09-16', silverDate: '2026-09-17' },
+    { date: '2026-10-07', title: 'Eras 2 Exam, c. 1200 to c. 1450', detail: 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences.', type: 'Exam', greenDate: '2026-10-06', silverDate: '2026-10-07' }
   ],
 
   reminders: [

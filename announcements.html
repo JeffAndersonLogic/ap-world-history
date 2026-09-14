@@ -434,12 +434,25 @@
       items.forEach(function (entry) {
         var count = entry.tbd
           ? { text: 'Date TBD', style: 'quiet', row: '' }
-          : countdownFor(entry.days);
+          : countdownFor(entry.nextDays === null ? entry.days : entry.nextDays);
         var row = el('li', 'due-item' + (count.row ? ' ' + count.row : ''));
 
-        var when = el('div', 'due-when');
+        var when = el('div', 'due-when' + (entry.split ? ' is-split' : ''));
         if (entry.tbd) {
           when.appendChild(el('div', 'due-tbd', 'TBD'));
+        } else if (entry.split) {
+          entry.split.forEach(function (c) {
+            var info = (DATA.cohorts || {})[c.key] || {};
+            var line = el('div', 'due-split-row');
+            var disc = el('span', 'cohort-disc' + (info.filled === true ? ' is-filled' : ''),
+              info.letter || c.key.charAt(0).toUpperCase());
+            disc.style.setProperty('--cohort', info.onDark || info.mark || '');
+            line.appendChild(disc);
+            line.appendChild(el('span', 'due-split-weekday', WEEKDAYS[c.date.getDay()].slice(0, 3)));
+            line.appendChild(el('span', 'due-split-daynum', String(c.date.getDate())));
+            when.appendChild(line);
+          });
+          when.appendChild(el('div', 'due-month', MONTHS[entry.split[0].date.getMonth()].slice(0, 3)));
         } else {
           when.appendChild(el('div', 'due-weekday', WEEKDAYS[entry.date.getDay()].slice(0, 3)));
           when.appendChild(el('div', 'due-daynum', String(entry.date.getDate())));
@@ -571,10 +584,27 @@
         .map(function (entry) {
           if (!entry || !has(entry.title)) return null;
           var date = parseYMD(entry.date);
+          /* Two sittings, one slide. The entry is dated on the later cohort so
+             it stays on the board through both meetings, which is what `days`
+             still sorts and filters on. `nextDays` is the countdown chip: the
+             next room to sit it, so nobody reads a longer runway than they
+             have. Both cohort dates are shown with their own seal rather than
+             one date standing in for two. */
+          var green = parseYMD(entry.greenDate);
+          var silver = parseYMD(entry.silverDate);
+          var split = (green && silver) ? [
+            { key: 'green', date: green },
+            { key: 'silver', date: silver }
+          ] : null;
+          var upcoming = (split || [])
+            .map(function (c) { return daysUntil(c.date); })
+            .filter(function (n) { return n >= 0; });
           return {
             date: date,
             tbd: !date,
             days: date ? daysUntil(date) : Infinity,
+            nextDays: upcoming.length ? Math.min.apply(null, upcoming) : null,
+            split: split,
             title: entry.title,
             detail: entry.detail,
             tag: entry.type

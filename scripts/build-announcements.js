@@ -480,12 +480,22 @@ function main() {
   // An assessment with no date, or date: 'TBD', still reaches the board and
   // projects as Date TBD. Announced but not scheduled is a real state.
   out += '  assessments: [\n';
-  out += (schedule.assessments || []).map((a) => (
-    '    { date: ' + quote(/^\d{4}-\d{2}-\d{2}$/.test(String(a.date || '').trim()) ? a.date : '') +
-    ', title: ' + quote(a.title || '') +
-    ', detail: ' + quote(a.detail || '') +
-    ', type: ' + quote(a.type || 'Quiz') + ' }'
-  )).join(',\n');
+  out += (schedule.assessments || []).map((a) => {
+    const ymd = (v) => (/^\d{4}-\d{2}-\d{2}$/.test(String(v || '').trim()) ? String(v).trim() : '');
+    let line = '    { date: ' + quote(ymd(a.date)) +
+      ', title: ' + quote(a.title || '') +
+      ', detail: ' + quote(a.detail || '') +
+      ', type: ' + quote(a.type || 'Quiz');
+    // Both cohort dates reach the board so the Quizzes & Exams slide can show
+    // the two sittings rather than one. Emitted only when both are present:
+    // one alone would put a lone seal on the slide and leave the other room
+    // reading a date that is not theirs.
+    if (ymd(a.greenDate) && ymd(a.silverDate)) {
+      line += ', greenDate: ' + quote(ymd(a.greenDate)) +
+              ', silverDate: ' + quote(ymd(a.silverDate));
+    }
+    return line + ' }';
+  }).join(',\n');
   out += '\n  ],\n\n';
 
   out += '  reminders: [\n';
