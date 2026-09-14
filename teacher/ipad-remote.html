@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BeHistorical | iPad Teacher Remote</title>
+<style>
+:root{--bg:#151718;--panel:#24282a;--line:#5a5f5c;--gold:#c9a46a;--paper:#f5f0e7;--ok:#75b777;--warn:#d6a95e;font-family:Montserrat,system-ui,sans-serif}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--paper);overflow:hidden}.shell{display:grid;grid-template-rows:auto 1fr;height:100dvh}.pair{display:flex;align-items:center;gap:9px;padding:9px max(10px,env(safe-area-inset-right)) 9px max(10px,env(safe-area-inset-left));background:var(--panel);border-bottom:2px solid var(--gold)}.brand{font-weight:900;color:var(--gold);white-space:nowrap}.pair input{width:105px;text-transform:uppercase;letter-spacing:.16em;font-weight:900;background:#0f1112;color:white;border:1px solid var(--line);border-radius:8px;padding:9px}.btn{border:1px solid var(--line);border-radius:8px;background:#3e4447;color:#fff;padding:9px 11px;font-weight:800}.btn.gold{background:var(--gold);color:#151718;border-color:var(--gold)}.status{font-size:.78rem;font-weight:800;color:var(--warn)}.status.ok{color:var(--ok)}.spacer{flex:1}.controls{display:flex;gap:6px}.content{position:relative;min-height:0}.content iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#202426}.offline{position:absolute;inset:0;display:grid;place-items:center;background:#17191a;padding:25px;text-align:center;z-index:3}.offline.hidden{display:none}.offline h1{color:var(--gold);margin:.1rem 0 .7rem}.offline p{max-width:560px;line-height:1.5;color:#ddd5c8}.slidebadge{position:fixed;right:12px;bottom:12px;z-index:5;background:rgba(15,17,18,.9);border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-weight:800;font-size:.72rem;color:var(--gold);pointer-events:none}@media(max-width:840px){.brand{font-size:.8rem}.pair{flex-wrap:wrap}.status{order:5;width:100%}.spacer{display:none}.controls{margin-left:auto}.btn{padding:8px 9px}.pair input{width:92px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="pair">
+    <div class="brand">BeHistorical · Teacher Remote</div>
+    <input id="code" maxlength="6" autocomplete="off" autocapitalize="characters" placeholder="CODE" aria-label="Pairing code">
+    <button class="btn gold" id="connect">Connect</button>
+    <div id="status" class="status">Enter the laptop pairing code</div>
+    <div class="spacer"></div>
+    <div class="controls">
+      <button class="btn" id="back">←</button>
+      <button class="btn gold" id="next">Next →</button>
+    </div>
+  </div>
+  <div class="content">
+    <div id="offline" class="offline"><div><h1>Your iPad is the Teacher Command Center</h1><p>Open the BeHistorical remote host on the Windows laptop, enter its six-character pairing code above, and this screen will mirror the teacher controls while the projector remains student-facing.</p></div></div>
+    <iframe id="command" title="Teacher Command Center"></iframe>
+  </div>
+</div>
+<div id="slidebadge" class="slidebadge"></div>
+<script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.5/dist/peerjs.min.js"></script>
+<script>
+(function(){
+'use strict';
+const params=new URLSearchParams(location.search);
+const topic=(params.get('topic')||'2-2').replace(/[^0-9-]/g,'');
+const frame=document.getElementById('command');
+const codeInput=document.getElementById('code');
+const status=document.getElementById('status');
+const offline=document.getElementById('offline');
+const badge=document.getElementById('slidebadge');
+frame.src='command-center-topic-'+topic+'.html';
+if(params.get('code'))codeInput.value=params.get('code').slice(0,6).toUpperCase();
+let peer=null,conn=null,suppress=false,lastHostIndex=0;
+function setStatus(text,ok){status.textContent=text;status.className='status'+(ok?' ok':'');}
+function frameDoc(){try{return frame.contentDocument||frame.contentWindow.document;}catch(e){return null;}}
+function readIndex(){const d=frameDoc(),c=d&&d.querySelector('#count');if(!c)return 0;const m=(c.textContent||'').match(/(\d+)\s*\//);return m?Math.max(0,Number(m[1])-1):0;}
+function localGoto(target){target=Math.max(0,Number(target)||0);const d=frameDoc();if(!d)return;const current=readIndex(),delta=target-current;if(!delta)return;suppress=true;const key=delta>0?'ArrowRight':'ArrowLeft';for(let i=0;i<Math.abs(delta);i++)d.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));setTimeout(()=>suppress=false,100);}
+function send(type,extra){if(!conn||!conn.open)return;conn.send(Object.assign({type},extra||{}));}
+function bindFrame(){const d=frameDoc();if(!d)return;d.addEventListener('click',e=>{if(suppress||!conn||!conn.open)return;const target=e.target.closest&&e.target.closest('#next,#prev,#start,#toggleTimer,#resetTimer,.flow-card');if(!target)return;if(target.id==='next')send('next');else if(target.id==='prev')send('prev');else if(target.id==='start')send('start');else if(target.id==='toggleTimer')send('timer-toggle');else if(target.id==='resetTimer')send('timer-reset');else if(target.classList.contains('flow-card'))send('goto',{index:Number(target.dataset.slide)||0});},true);
+ d.addEventListener('keydown',e=>{if(suppress||!conn||!conn.open)return;if(e.key==='ArrowRight'||e.key==='PageDown')send('next');else if(e.key==='ArrowLeft'||e.key==='PageUp')send('prev');else if(e.key==='Home')send('start');},true);
+}
+frame.addEventListener('load',bindFrame);
+function disconnect(){if(conn){try{conn.close();}catch(e){}}if(peer){try{peer.destroy();}catch(e){}}conn=null;peer=null;offline.classList.remove('hidden');setStatus('Disconnected — reconnect with the laptop code',false);}
+function connect(){const code=codeInput.value.trim().toLowerCase();if(code.length!==6){setStatus('Enter the six-character laptop code',false);return;}disconnect();setStatus('Connecting…',false);peer=new Peer();peer.on('open',()=>{conn=peer.connect('bh-'+code,{reliable:true});conn.on('open',()=>{offline.classList.add('hidden');setStatus('Connected to classroom laptop',true);send('sync');});conn.on('data',data=>{if(!data||data.type!=='state')return;lastHostIndex=Number(data.index)||0;localGoto(lastHostIndex);badge.textContent=(data.count||'')+(data.timer?' · '+data.timer:'');});conn.on('close',disconnect);conn.on('error',()=>setStatus('Connection error — try the code again',false));});peer.on('error',()=>setStatus('Could not reach the laptop — check the code/network',false));}
+document.getElementById('connect').addEventListener('click',connect);codeInput.addEventListener('keydown',e=>{if(e.key==='Enter')connect();});document.getElementById('next').addEventListener('click',()=>{send('next');localGoto(lastHostIndex+1);});document.getElementById('back').addEventListener('click',()=>{send('prev');localGoto(Math.max(0,lastHostIndex-1));});
+if(codeInput.value.length===6)connect();
+})();
+</script>
+</body>
+</html>
