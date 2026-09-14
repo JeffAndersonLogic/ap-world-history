@@ -14,7 +14,7 @@
   <div class="brand">BeHistorical · iPad Remote</div>
   <div class="status">Pairing code</div>
   <div class="code" id="code">------</div>
-  <div id="connection" class="waiting">Waiting for iPad</div>
+  <div id="connection" class="waiting">Starting remote link…</div>
   <div class="spacer"></div>
   <button class="btn" id="openProjection">Open Projection</button>
   <button class="btn gold" id="showQr">Scan iPad QR</button>
@@ -46,6 +46,7 @@ const connEl=document.getElementById('connection');
 const qrBackdrop=document.getElementById('qrBackdrop');
 const qrCode=document.getElementById('qrCode');
 const qrPairCode=document.getElementById('qrPairCode');
+const PEER_OPTIONS={debug:1,config:{iceServers:[{urls:'stun:stun.l.google.com:19302'},{urls:'stun:stun.cloudflare.com:3478'}],sdpSemantics:'unified-plan'}};
 frame.src='command-center-topic-'+topic+'.html';
 let peer=null,conn=null,lastState='',ipadUrl='';
 function makeCode(){return Math.random().toString(36).slice(2,8).toUpperCase().padEnd(6,'X');}
@@ -58,8 +59,9 @@ function readState(){const d=frameDoc();if(!d)return null;const count=d.querySel
 function sendState(force){if(!conn||!conn.open)return;const state=readState();if(!state)return;const sig=JSON.stringify({i:state.index,t:state.timer,n:state.notesText});if(force||sig!==lastState){lastState=sig;conn.send(state);}}
 function gotoIndex(target){target=Math.max(0,Number(target)||0);const current=readIndex();const delta=target-current;if(!delta)return;const key=delta>0?'ArrowRight':'ArrowLeft';for(let i=0;i<Math.abs(delta);i++){frame.contentWindow.document.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));}}
 function handle(data){if(!data||typeof data!=='object')return;switch(data.type){case'next':click('#next');break;case'prev':click('#prev');break;case'start':click('#start');break;case'goto':gotoIndex(data.index);break;case'timer-toggle':click('#toggleTimer');break;case'timer-reset':click('#resetTimer');break;case'projection':click('#openProjection');break;case'sync':break;}setTimeout(()=>sendState(true),80);}
-function attach(c){if(conn&&conn.open){try{conn.close();}catch(e){}}conn=c;connEl.textContent='Connecting…';connEl.className='waiting';c.on('open',()=>{connEl.textContent='iPad connected';connEl.className='connected';qrBackdrop.classList.add('hidden');sendState(true);});c.on('data',handle);c.on('close',()=>{connEl.textContent='Waiting for iPad';connEl.className='waiting';});c.on('error',()=>{connEl.textContent='Connection error';connEl.className='waiting';});}
-function startPeer(){const short=makeCode(),id='bh-'+short.toLowerCase();codeEl.textContent=short;peer=new Peer(id);peer.on('open',()=>renderQr(short));peer.on('connection',attach);peer.on('error',err=>{if(err&&err.type==='unavailable-id'){try{peer.destroy();}catch(e){}startPeer();}else{connEl.textContent='Pairing unavailable';connEl.className='waiting';}});}
+function describeError(err){const type=err&&err.type||'unknown';if(type==='network'||type==='socket-error'||type==='socket-closed'||type==='server-error')return 'Network blocked remote signaling ('+type+')';if(type==='webrtc')return 'School network blocked WebRTC — try Windows Mobile Hotspot';return 'Remote error ('+type+')';}
+function attach(c){if(conn&&conn.open){try{conn.close();}catch(e){}}conn=c;connEl.textContent='iPad found — establishing direct link…';connEl.className='waiting';c.on('open',()=>{connEl.textContent='iPad connected';connEl.className='connected';qrBackdrop.classList.add('hidden');sendState(true);});c.on('data',handle);c.on('close',()=>{connEl.textContent='iPad disconnected — rescan QR';connEl.className='waiting';});c.on('error',err=>{connEl.textContent=describeError(err);connEl.className='waiting';});}
+function startPeer(){const short=makeCode(),id='bh-'+short.toLowerCase();codeEl.textContent=short;peer=new Peer(id,PEER_OPTIONS);peer.on('open',()=>{connEl.textContent='Waiting for iPad';connEl.className='waiting';renderQr(short);});peer.on('connection',attach);peer.on('disconnected',()=>{connEl.textContent='Remote signaling disconnected';connEl.className='waiting';});peer.on('error',err=>{if(err&&err.type==='unavailable-id'){try{peer.destroy();}catch(e){}startPeer();}else{connEl.textContent=describeError(err);connEl.className='waiting';}});}
 async function copyIpadLink(button){const url=ipadUrl||buildIpadUrl(codeEl.textContent.trim());try{await navigator.clipboard.writeText(url);const old=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=old,1200);}catch(e){prompt('Open this on the iPad:',url);}}
 frame.addEventListener('load',()=>{setInterval(()=>sendState(false),400);});
 document.getElementById('openProjection').addEventListener('click',()=>click('#openProjection'));
