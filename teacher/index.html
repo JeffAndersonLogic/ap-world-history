@@ -58,6 +58,14 @@ a{color:inherit}
         <h3>Topic 1.7 Interactive Lesson</h3>
         <p>The Unit 1 synthesis pilot: Teacher Command Center + integrated Presentation Mode for comparison and argumentation.</p>
       </a>
+      <a class="tc-card" href="command-center-topic-2-1.html">
+        <h3>Topic 2.1 Interactive Lesson</h3>
+        <p>The Silk Roads: Teacher Command Center + integrated Presentation Mode for causation and economic systems.</p>
+      </a>
+      <a class="tc-card" href="command-center-topic-2-2.html">
+        <h3>Topic 2.2 Interactive Lesson</h3>
+        <p>The Mongol Empire: Teacher Command Center + integrated Presentation Mode for continuity and change, governance, and exchange.</p>
+      </a>
       <a class="tc-card" href="skills-lens.html">
         <h3>Skills Lens</h3>
         <p>Drop a Canvas submissions zip to see completion, response quality, and AP skill trends across the year.</p>
@@ -68,10 +76,39 @@ a{color:inherit}
   <p class="tc-footer-note">Teacher tool &mdash; never linked from a student page. Generated from scripts/build-teacher-index.js; the Today panel reads assets/data/announcements-schedule.js live in the browser, so it is never a stale snapshot.</p>
 </div>
 <script id="tc-ros-data" type="application/json">[{"key":"1.4","out":"run-of-show-topic-1-4.html"},{"key":"1.5","out":"run-of-show-topic-1-5.html"},{"key":"1.6","out":"run-of-show-topic-1-6.html"}]</script>
-<script id="tc-interactive-data" type="application/json">[{"key":"1.7","out":"command-center-topic-1-7.html"}]</script>
+<script id="tc-interactive-data" type="application/json">[{"key":"1.7","out":"command-center-topic-1-7.html"},{"key":"2.1","out":"command-center-topic-2-1.html"},{"key":"2.2","out":"command-center-topic-2-2.html"}]</script>
 <script id="tc-cohort-data" type="application/json">{"green":{"key":"green","label":"Green Day","short":"Green","letter":"G","metal":"verdigris","mark":"#2F5C46","ink":"#2F5C46","tint":"#E7EFE9","onDark":"#7FB496","filled":true},"silver":{"key":"silver","label":"Silver Day","short":"Silver","letter":"S","metal":"pewter","mark":"#8A9298","ink":"#545B5F","tint":"#ECEEEF","onDark":"#B9C1C6","filled":false}}</script>
 <script src="../assets/data/announcements-schedule.js"></script>
 <script>
+/* scripts/lib/teacher-today.js, embedded from its own source at build time.
+   Edit that file and run: node scripts/build-teacher-index.js */
+function resolveTeacherSurface(today, schedule, interactiveTopics, rosTopics) {
+  if (!schedule || !schedule.days) return { kind: 'noschedule' };
+
+  var days = schedule.days, day = null, i;
+  for (i = 0; i < days.length; i++) {
+    if (days[i].date === today) { day = days[i]; break; }
+  }
+  if (!day) return { kind: 'noclass', date: today };
+
+  var cohort = day.cohort || '';
+  var topic = (day.topic || '').replace(/^Topic\s+/i, '').trim();
+  if (!topic) return { kind: 'nolesson', date: today, cohort: cohort };
+
+  /* Interactive lessons win over Run of Show when a topic has both: the
+     command center is the integrated surface and carries the pacing inside
+     it, so falling through to the older page would be a downgrade. */
+  var lists = [['interactive', interactiveTopics || []], ['runofshow', rosTopics || []]];
+  for (i = 0; i < lists.length; i++) {
+    var kind = lists[i][0], entries = lists[i][1];
+    for (var j = 0; j < entries.length; j++) {
+      if (String(entries[j].key).replace(/^Topic\s+/i, '').trim() === topic) {
+        return { kind: kind, date: today, cohort: cohort, topic: topic, href: entries[j].out };
+      }
+    }
+  }
+  return { kind: 'none', date: today, cohort: cohort, topic: topic };
+}
 (function(){
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
@@ -85,30 +122,29 @@ a{color:inherit}
   var now = new Date();
   var pad = function(n){ return (n < 10 ? '0' : '') + n; };
   var today = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate());
-  var day = (sched.days || []).filter(function(d){ return d.date === today; })[0];
 
-  if (!day) {
+  var found = resolveTeacherSurface(today, sched, INTERACTIVE, ROS);
+  var cohortInfo = COHORTS[found.cohort] || { label: found.cohort };
+  var head = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>';
+
+  if (found.kind === 'noclass') {
     box.className = 'tc-today empty';
-    box.innerHTML = '<h2>Today</h2><p>No class day is scheduled for ' + esc(today) + '.</p>';
-    return;
-  }
-
-  var cohortInfo = COHORTS[day.cohort] || { label: day.cohort };
-  var interactive = INTERACTIVE.filter(function(t){ return t.key === day.topic; })[0];
-  var runOfShow = ROS.filter(function(t){ return t.key === day.topic; })[0];
-
-  if (interactive) {
-    box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
-      + '<p>Topic ' + esc(day.topic) + ' &middot; Interactive Lesson</p>'
-      + '<a class="tc-today-open" href="' + esc(interactive.out) + '">Open today&rsquo;s Teacher Command Center &rarr;</a>';
-  } else if (runOfShow) {
-    box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
-      + '<p>Topic ' + esc(day.topic) + '</p>'
-      + '<a class="tc-today-open" href="' + esc(runOfShow.out) + '">Open today&rsquo;s Run of Show &rarr;</a>';
+    box.innerHTML = '<h2>Today</h2><p>No class day is scheduled for ' + esc(found.date) + '.</p>';
+  } else if (found.kind === 'nolesson') {
+    box.className = 'tc-today empty';
+    box.innerHTML = head + '<p>A class day with no topic lesson scheduled.</p>';
+  } else if (found.kind === 'interactive') {
+    box.innerHTML = head
+      + '<p>Topic ' + esc(found.topic) + ' &middot; Interactive Lesson</p>'
+      + '<a class="tc-today-open" href="' + esc(found.href) + '">Open today&rsquo;s Teacher Command Center &rarr;</a>';
+  } else if (found.kind === 'runofshow') {
+    box.innerHTML = head
+      + '<p>Topic ' + esc(found.topic) + '</p>'
+      + '<a class="tc-today-open" href="' + esc(found.href) + '">Open today&rsquo;s Run of Show &rarr;</a>';
   } else {
     box.className = 'tc-today empty';
-    box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
-      + '<p>Topic ' + esc(day.topic) + ' does not have a teacher command surface yet.</p>';
+    box.innerHTML = head
+      + '<p>Topic ' + esc(found.topic) + ' does not have a teacher command surface yet.</p>';
   }
 })();
 </script>

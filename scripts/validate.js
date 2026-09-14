@@ -1557,8 +1557,9 @@ section('Run of Show pacing tool');
 // as unreachable as if it did not exist, no matter how correctly it builds.
 section('Teacher command center');
 {
-  let TC_TOOLS = null;
-  try { ({ TOOLS: TC_TOOLS } = require('./build-teacher-index.js')); } catch (e) { TC_TOOLS = null; }
+  let TC_TOOLS = null, TC_INTERACTIVE = null;
+  try { ({ TOOLS: TC_TOOLS, INTERACTIVE_TOPICS: TC_INTERACTIVE } = require('./build-teacher-index.js')); }
+  catch (e) { TC_TOOLS = null; }
   totalChecks++;
   if (!TC_TOOLS) {
     err(path.join(ROOT, 'scripts', 'build-teacher-index.js'), 'does not load or export TOOLS');
@@ -1584,8 +1585,44 @@ section('Teacher command center');
         }
       }
     }
+
+    //
+    // Reachability, both directions, the same shape Run of Show and the eBook
+    // already have. The forward direction above can only say that the page
+    // links what the list declares, which is a list checked against itself:
+    // Topics 2.1 and 2.2 had working command centers on disk for weeks while
+    // INTERACTIVE_TOPICS named the 1.7 pilot alone, and this section reported
+    // every declared tool linked, truthfully, the whole time. An interactive
+    // lesson nobody registers is reachable only by typing its filename, and
+    // the Today panel on its own teaching morning says the topic has no
+    // teacher surface.
+    //
+    const interactive = TC_INTERACTIVE || [];
+    const declaredPages = new Set(interactive.map(t => t.out));
+    for (const entry of interactive) {
+      totalChecks++;
+      const outPath = path.join(ROOT, 'teacher', entry.out);
+      if (!exists(outPath)) {
+        err(outPath, `INTERACTIVE_TOPICS declares Topic ${entry.key} here, but the page does not exist`);
+      }
+      // Routable on its teaching day but absent from the grid means a teacher
+      // can only reach it on that one morning, which is the half-registered
+      // version of the same failure.
+      totalChecks++;
+      if (!TC_TOOLS.some(tool => tool.href === entry.out)) {
+        err(path.join(ROOT, 'scripts', 'build-teacher-index.js'),
+          `Topic ${entry.key} is routable from the Today panel but has no TOOLS entry, so it is missing from the command center grid`);
+      }
+    }
+    for (const found of glob(path.join(ROOT, 'teacher'), /^command-center-.*\.html$/)) {
+      const base = path.basename(found);
+      totalChecks++;
+      if (!declaredPages.has(base)) {
+        err(found, 'interactive lesson has no entry in build-teacher-index.js INTERACTIVE_TOPICS, so the Today panel can never route to it');
+      }
+    }
   }
-  sectionDone(`${TC_TOOLS ? TC_TOOLS.length : 0} teacher tool(s) linked from the command center, unlinked from student pages`);
+  sectionDone(`${TC_TOOLS ? TC_TOOLS.length : 0} teacher tool(s) linked from the command center, ${TC_INTERACTIVE ? TC_INTERACTIVE.length : 0} interactive lesson(s) registered both ways, unlinked from student pages`);
 }
 
 //

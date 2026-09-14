@@ -27,11 +27,25 @@ const CHECK = process.argv.includes('--check');
 const TOOLS = [
   { label: 'Run of Show', desc: 'A minute-by-minute pacing cockpit for a class period: retrieval prompts, teacher moves, a class timer, and a Must-Haves reference.', href: ROS_INDEX_OUT },
   { label: 'Topic 1.7 Interactive Lesson', desc: 'The Unit 1 synthesis pilot: Teacher Command Center + integrated Presentation Mode for comparison and argumentation.', href: 'command-center-topic-1-7.html' },
+  { label: 'Topic 2.1 Interactive Lesson', desc: 'The Silk Roads: Teacher Command Center + integrated Presentation Mode for causation and economic systems.', href: 'command-center-topic-2-1.html' },
+  { label: 'Topic 2.2 Interactive Lesson', desc: 'The Mongol Empire: Teacher Command Center + integrated Presentation Mode for continuity and change, governance, and exchange.', href: 'command-center-topic-2-2.html' },
   { label: 'Skills Lens', desc: 'Drop a Canvas submissions zip to see completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
 ];
 
+/*
+ * Every interactive lesson that exists, so the Today panel can route to it.
+ * This list is what makes a built surface reachable: 2.1 and 2.2 sat on disk
+ * from the day they were written, fully working, and the Today panel could
+ * not find either, because the only thing that decides is this array and it
+ * still named the 1.7 pilot alone. Nothing looked wrong, the command center
+ * reported "all tools linked", and it was telling the truth about a list that
+ * had fallen behind the repository. validate.js now reads the other
+ * direction too, so a command-center page with no entry here fails the push.
+ */
 const INTERACTIVE_TOPICS = [
   { key: '1.7', out: 'command-center-topic-1-7.html' },
+  { key: '2.1', out: 'command-center-topic-2-1.html' },
+  { key: '2.2', out: 'command-center-topic-2-2.html' },
 ];
 
 module.exports = { TOOLS, INTERACTIVE_TOPICS };

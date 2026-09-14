@@ -1,5 +1,7 @@
 'use strict';
 
+const { resolveTeacherSurface } = require('./teacher-today');
+
 /**
  * The teacher command center: one page linking every teacher-only tool
  * BeHistorical has, plus a Today panel that reads the schedule live in the
@@ -10,6 +12,11 @@
  * surfaces that exist are editorial facts. The Today panel itself evaluates
  * the live schedule in the browser. Interactive lessons take precedence over
  * legacy Run of Show pages when both exist.
+ *
+ * The Today panel does not carry its own copy of the routing decision. It
+ * embeds scripts/lib/teacher-today.js's own source with String(), so the
+ * browser runs the same bytes the offline test drives. This page formats the
+ * result; it never decides it.
  */
 
 function esc(s) {
@@ -90,6 +97,9 @@ ${toolCards}      </div>
 <script id="tc-cohort-data" type="application/json">${cohortData}</script>
 <script src="../assets/data/announcements-schedule.js"></script>
 <script>
+/* scripts/lib/teacher-today.js, embedded from its own source at build time.
+   Edit that file and run: node scripts/build-teacher-index.js */
+${String(resolveTeacherSurface)}
 (function(){
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
@@ -103,30 +113,29 @@ ${toolCards}      </div>
   var now = new Date();
   var pad = function(n){ return (n < 10 ? '0' : '') + n; };
   var today = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate());
-  var day = (sched.days || []).filter(function(d){ return d.date === today; })[0];
 
-  if (!day) {
+  var found = resolveTeacherSurface(today, sched, INTERACTIVE, ROS);
+  var cohortInfo = COHORTS[found.cohort] || { label: found.cohort };
+  var head = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>';
+
+  if (found.kind === 'noclass') {
     box.className = 'tc-today empty';
-    box.innerHTML = '<h2>Today</h2><p>No class day is scheduled for ' + esc(today) + '.</p>';
-    return;
-  }
-
-  var cohortInfo = COHORTS[day.cohort] || { label: day.cohort };
-  var interactive = INTERACTIVE.filter(function(t){ return t.key === day.topic; })[0];
-  var runOfShow = ROS.filter(function(t){ return t.key === day.topic; })[0];
-
-  if (interactive) {
-    box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
-      + '<p>Topic ' + esc(day.topic) + ' &middot; Interactive Lesson</p>'
-      + '<a class="tc-today-open" href="' + esc(interactive.out) + '">Open today&rsquo;s Teacher Command Center &rarr;</a>';
-  } else if (runOfShow) {
-    box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
-      + '<p>Topic ' + esc(day.topic) + '</p>'
-      + '<a class="tc-today-open" href="' + esc(runOfShow.out) + '">Open today&rsquo;s Run of Show &rarr;</a>';
+    box.innerHTML = '<h2>Today</h2><p>No class day is scheduled for ' + esc(found.date) + '.</p>';
+  } else if (found.kind === 'nolesson') {
+    box.className = 'tc-today empty';
+    box.innerHTML = head + '<p>A class day with no topic lesson scheduled.</p>';
+  } else if (found.kind === 'interactive') {
+    box.innerHTML = head
+      + '<p>Topic ' + esc(found.topic) + ' &middot; Interactive Lesson</p>'
+      + '<a class="tc-today-open" href="' + esc(found.href) + '">Open today&rsquo;s Teacher Command Center &rarr;</a>';
+  } else if (found.kind === 'runofshow') {
+    box.innerHTML = head
+      + '<p>Topic ' + esc(found.topic) + '</p>'
+      + '<a class="tc-today-open" href="' + esc(found.href) + '">Open today&rsquo;s Run of Show &rarr;</a>';
   } else {
     box.className = 'tc-today empty';
-    box.innerHTML = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>'
-      + '<p>Topic ' + esc(day.topic) + ' does not have a teacher command surface yet.</p>';
+    box.innerHTML = head
+      + '<p>Topic ' + esc(found.topic) + ' does not have a teacher command surface yet.</p>';
   }
 })();
 </script>
