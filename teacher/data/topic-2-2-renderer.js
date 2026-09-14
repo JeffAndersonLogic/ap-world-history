@@ -46,7 +46,7 @@
       return '<div class="slide reconstruction-slide">'+
         '<div class="reconstruction-header">'+eyebrow+'<h2>'+esc(s.title)+'</h2>'+sub+'</div>'+
         '<div class="reconstruction-canvas">'+renderVisual(s.visual,L,'reconstruction-img')+'</div>'+
-        '<div class="reconstruction-footer"><span>Historical reconstruction · AI generated</span>'+
+        '<div class="reconstruction-footer"><span>Historical reconstruction — AI generated</span>'+
         (credit(s.visual)?'<span class="credit">'+credit(s.visual)+'</span>':'')+
         '</div></div>';
     }
