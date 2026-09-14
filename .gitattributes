@@ -1,0 +1,34 @@
+# Line endings, declared rather than left to each machine's git config.
+#
+# Every generated file in this repository is checked byte for byte against what
+# its builder produces, and several tests compare a generated page to a committed
+# fixture. On a Windows checkout with core.autocrlf=true, git hands those files
+# to Node with CRLF line endings, the comparison fails on whitespace alone, and
+# the failure reads as content drift in a page nobody touched. Declaring the
+# endings here means the working tree matches the blob on every platform, so a
+# fresh clone verifies the same way everywhere.
+#
+# No normalization diff is expected from adding this: nothing committed here
+# carried CRLF when it was written (2026-09-14).
+
+* text=auto eol=lf
+
+# Shell and hooks must be LF regardless of anything above; a CRLF shebang line
+# is not executable.
+*.sh            text eol=lf
+.githooks/*     text eol=lf
+
+# Binary, so git never rewrites a byte of them. An image with a mangled newline
+# fails validate.js's magic-byte check, which is the right outcome but a
+# confusing way to discover a line-ending setting.
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.gif           binary
+*.webp          binary
+*.pdf           binary
+*.zip           binary
+*.woff          binary
+*.woff2         binary
+*.ttf           binary
+*.otf           binary

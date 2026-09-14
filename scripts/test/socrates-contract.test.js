@@ -211,6 +211,76 @@ const contract = fs.readFileSync(path.join(DOCS, 'socrates-paste-contract.md'), 
   else fail(`contract does not name ${f}, so a change there has nothing pointing at it`);
 });
 
+// ── 5. The README describes the coach that exists ────────────────────────────
+//
+// docs/socrates/README.md is hand-authored, unlike everything else in that
+// folder, so nothing regenerates it and nothing noticed when it fell two
+// surfaces behind the persona. On 2026-09-14 it still opened by telling the
+// reader students reach Socrates "from the Build Your AI Coach Prompt button in
+// every First & 10 reading", a button removed on 2026-08-31, and still headed a
+// section "The four surfaces" listing Checkpoint 1 as coached when Checkpoint 1
+// is the lesson's deliberately unaided diagnostic.
+//
+// That is worse than an out-of-date note. It is the document a person reads
+// before touching any of this, it reads as authoritative, and the repair it
+// invites is to build a removed surface back. So the count is DERIVED from the
+// persona rather than typed here: the persona says how many assignments reach
+// him, and the README has to agree.
+//
+console.log('\nThe README agrees with the persona about which surfaces exist');
+const readme = fs.readFileSync(path.join(DOCS, 'README.md'), 'utf8');
+
+const COUNT_WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six'];
+const declared = /Exactly (\w+) assignments? reach you/i.exec(FLAT);
+if (!declared) {
+  fail('the persona no longer states how many assignments reach Socrates, so nothing can check the README against it');
+} else {
+  const word = declared[1].toLowerCase();
+  // Read the list off the persona's own source, not off FLAT: FLAT collapses
+  // whitespace, so a line-anchored list match there silently finds nothing and
+  // this check would report a confident zero.
+  const after = PERSONA.slice(PERSONA.search(/Exactly \w+ assignments? reach you/i));
+  const named = [];
+  for (const line of after.split('\n').slice(1)) {
+    const m = /^\s*\d+\.\s+\*\*(.+?)\*\*/.exec(line);
+    if (m) named.push(m[1]);
+    else if (line.trim() && named.length) break;
+  }
+  const n = COUNT_WORDS.indexOf(word);
+
+  if (n === -1) fail(`the persona states "${word}" assignments, which is not a number this check understands`);
+  else if (named.length !== n) {
+    fail(`the persona says ${word} assignments reach Socrates but lists ${named.length}: ${named.join(', ')}`);
+  } else {
+    ok(`the persona states ${word} surfaces and lists ${named.length}: ${named.join(', ')}`);
+  }
+
+  if (readme.includes(`serves exactly ${word} assignment`)) {
+    ok(`the README states the same count, ${word}`);
+  } else {
+    fail(`the README does not state "serves exactly ${word} assignments"; the persona says ${word}, `
+      + 'so update docs/socrates/README.md rather than this check');
+  }
+
+  for (const surface of named) {
+    if (readme.includes(surface)) ok(`the README names the ${surface} surface`);
+    else fail(`the README does not name ${surface}, a surface the persona serves`);
+  }
+
+  // The two removed surfaces, asserted absent from the README's *current*
+  // description rather than from the whole file: the file keeps the history of
+  // why they went, and should, because a rule separated from its reason is the
+  // first thing someone optimizes away.
+  const current = readme.slice(0, readme.indexOf('**There were four until'));
+  for (const gone of ['Build Your AI Coach Prompt', 'The four surfaces']) {
+    if (current.includes(gone)) {
+      fail(`the README still describes "${gone}" as current; that surface was removed on 2026-08-31`);
+    } else {
+      ok(`the README no longer presents "${gone}" as current`);
+    }
+  }
+}
+
 // ── Report ───────────────────────────────────────────────────────────────────
 
 if (failures) {

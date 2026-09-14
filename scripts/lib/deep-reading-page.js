@@ -17,7 +17,7 @@
  *     none of the four-files-must-agree failure modes that come with them. A
  *     deep reading has nothing to submit; the modules remain the only path by
  *     which student writing reaches Canvas.
- *   - No coach bridge. Socrates is told about exactly four assignments, and
+ *   - No coach bridge. Socrates is told about exactly two assignments, and
  *     adding a fifth surface silently would mean the coach meets work it was
  *     told does not exist. See the Socrates section of CLAUDE.md.
  *   - No <script> at all. A page with no script cannot ship a SyntaxError that

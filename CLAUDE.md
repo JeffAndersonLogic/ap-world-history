@@ -17,10 +17,17 @@
 
 The contracts below are enforced by machine, not by memory.
 
-- `npm test`, the gate. Runs `validate.js` plus the two dependency-free tests in
-  about five seconds. This is what the pre-push hook and CI both run, and it is
-  the only command you need to remember.
-- `npm run test:browser`, the seven Chromium tests. Needs `npm i playwright-core`.
+- `npm test`, the gate. Runs `validate.js` plus every other dependency-free
+  check, in a few seconds. This is what the pre-push hook and CI both run, and it
+  is the only command you need to remember.
+- `npm run test:browser`, the Chromium contracts. Needs `npm i playwright-core`.
+
+**No count is written down here on purpose.** `SUITES` in `scripts/run-tests.js`
+is the list, the runner prints how many it is about to run, and a number typed
+into prose stops being true the first time a check is added and says nothing when
+it does. This file said "the two dependency-free tests" and "the seven Chromium
+tests" until 2026-09-14, when the real figures were 14 and 13. Read the count off
+a run.
 - `npm run test:all`, both suites.
 - `npm run hooks:install`, point git at `.githooks/` so `npm test` runs before
   every push. `npm install` does this automatically. Override once with
@@ -60,8 +67,8 @@ branch, let Validate go green on it, then fast-forward `main` to that same
 commit.
 
 The wait is smaller than it looks. Both jobs run in parallel and the slow one is
-`browser` at about two minutes, 27s of that installing Chromium and 82s running
-the seven tests; `structure` finishes in 8 seconds. Required checks also bind to
+`browser` at roughly two minutes, about 27s of that installing Chromium and the
+rest running the suite; `structure` finishes in seconds. Required checks also bind to
 the commit SHA rather than the branch, so once they are green on a working
 branch, fast-forwarding `main` to that same commit is accepted straight away.
 The two minutes runs alongside whatever you are doing, not in front of it.
@@ -203,7 +210,8 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/test/canvas-zip.test.js`, offline check of the browser zip reader against archives written by real tools, plus the parity assertion that a dropped zip and the CLI emit byte-identical `responses.csv`.
 - `node scripts/test/skills-lens-zip.test.js`, drop a real Canvas zip on the real Lens in Chromium and assert the panels populate, the CSP still blocks the network, and the saved CSV matches the CLI byte for byte.
 - `node scripts/build-run-of-show.js`, generate the Run of Show teacher-cockpit pacing page for each topic in its `TOPICS` list, plus `teacher/run-of-show-index.html`, the one stable URL linking every topic that has one. `--check` fails on drift without writing, wired into `scripts/test/readings-reproducible.test.js` in the offline suite. `validate.js` checks reachability both ways: a declared topic missing its `runOfShow` block or its generated page, and a generated page the index does not link. See "Run of Show" below.
-- `node scripts/build-teacher-index.js`, generate `teacher/index.html`, the teacher command center: one bookmark linking every teacher-only tool (Run of Show, Skills Lens), plus a Today panel that reads the schedule live in the browser and surfaces the Run of Show for whatever topic is being taught right now, when one exists. `--check` fails on drift without writing, in the offline suite. `validate.js` checks that the page links every declared tool and is not linked from a student page. See "Run of Show" below.
+- `node scripts/build-teacher-index.js`, generate `teacher/index.html`, the teacher command center: one bookmark linking every teacher-only tool (Run of Show, the interactive lessons, Skills Lens), plus a Today panel that reads the schedule live in the browser and surfaces the best teacher surface for whatever topic is being taught right now. `--check` fails on drift without writing, in the offline suite. `validate.js` checks the registry **both ways**: the page links every declared tool, every declared interactive lesson exists and is in the tool grid, no `teacher/command-center-*.html` on disk is missing from `INTERACTIVE_TOPICS`, and none of it is linked from a student page. See "Run of Show" below.
+- `node scripts/test/teacher-today.test.js`, prove the Today panel routes a real date to the right teacher surface, against the real schedule and the real registry: every registered lesson on both its cohort days, a Run of Show topic still resolving, interactive outranking Run of Show, and a holiday, a topic-less class day and an unbuilt topic each answering honestly rather than offering a dead link. In the offline suite. See "Run of Show" below.
 
 The student entry point is `index.html`. The project inventory is `docs/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file. The Google Form and the old Teacher Hub are both retired; see `docs/FORM-CONTRACT.md` and `docs/TEACHER-HUB.md`. Student work reaches the teacher through Canvas only, and the Skills Lens and the teacher command center are the teacher-facing surfaces.
 
@@ -269,9 +277,9 @@ point:
   four-files-must-agree failure modes.** Nothing is submitted from a deep
   reading. The ten modules remain the only path by which student writing reaches
   Canvas.
-- **No coach bridge.** Socrates is told about exactly four assignments. A fifth
-  surface that grew a coach button silently would mean the coach meets work it
-  was told does not exist.
+- **No coach bridge.** Socrates is told about exactly two assignments,
+  Checkpoint 2 and BeInTheRoom. A third surface that grew a coach button
+  silently would mean the coach meets work it was told does not exist.
 - **No `<script>` at all.** A page with no script cannot ship a SyntaxError that
   discards its own behaviour, which is the failure `readings-parse.test.js`
   exists to catch on the 77.
@@ -544,8 +552,24 @@ model exists to refuse, and it would be worse here, because a stale recording
 sounds exactly as authoritative as a current one. A paid TTS service adds the
 second failure on top of the first: it would mean the reading, and eventually a
 student's page, leaving the device. `window.speechSynthesis` is the browser's
-own engine, it costs nothing, and nothing is sent anywhere. The single stored
-value is the playback rate, a number, under `behistorical-listen-rate`.
+own engine and it costs nothing. The single stored value is the playback rate, a
+number, under `behistorical-listen-rate`.
+
+**This repository has no speech backend, which is not the same as "nothing
+leaves the device", and the difference is worth stating precisely.** The voice
+ranking below deliberately prefers a network voice, Chrome's Google voices and
+Edge's Natural ones, because they are the difference between narration a student
+uses and narration a student turns off after one paragraph. A network voice means
+the browser sends the text it is speaking to that vendor's own service. What is
+sent is **the published chapter**, which is already public on GitHub Pages, and
+never a student's writing: no student response is on an eBook page, the pages
+carry no capture block, and narration reads only the rendered chapter DOM. So the
+guarantee to make in writing is the narrow one: **no student work is transmitted,
+and this repository sends nothing anywhere itself.** Do not restore "nothing is
+sent anywhere", which is what this said until 2026-09-14 and is not true of a
+network voice. If on-device-only ever becomes the requirement, it is a one-line
+change to the scoring in `assets/js/behistorical-listen.js` and a real cost in
+voice quality, so make it a decision rather than a cleanup.
 
 **One section speaks at a time, page-wide.** Starting anywhere cancels
 everywhere, playback stops on `pagehide`, and there is never more than one
@@ -1052,19 +1076,30 @@ placeholder rows: the eBook commits to one chapter per topic in a volume, a
 fixed shape worth marking gaps in, and Run of Show makes no such commitment.
 
 **`teacher/index.html` is the teacher command center**, one bookmark linking
-every teacher-only tool (Run of Show, Skills Lens), built by
-`scripts/build-teacher-index.js` from a declared `TOOLS` list, the same
+every teacher-only tool (Run of Show, each interactive lesson, Skills Lens),
+built by `scripts/build-teacher-index.js` from a declared `TOOLS` list, the same
 editorial-list shape as `VOLUMES` in `build-ebook.js`. Its Today panel is a
 router, not a dashboard: it stores nothing of its own. At page load it reads
-`assets/data/announcements-schedule.js` live in the browser, finds the day
-matching the browser's local date, and if that topic has a Run of Show,
-surfaces a direct link to it; otherwise it says so plainly rather than
-guessing at a lesson-page URL it has no way to derive correctly. The cohort
+`assets/data/announcements-schedule.js` live in the browser and finds the day
+matching the browser's local date. **An interactive lesson outranks a Run of
+Show** for the same topic, because the command center is the integrated surface
+and carries the pacing inside it, so falling through would be a downgrade. With
+neither, it says so plainly rather than guessing at a lesson-page URL it has no
+way to derive correctly. The cohort
 label shown there comes from `scripts/lib/cohorts.js`'s `COHORTS`, embedded at
 build time, because the raw schedule file (unlike the generated
 `announcements.js`) carries no label of its own, and a second schedule file
 loaded just for that would be a second place for the label to fall out of
 agreement with the one everything else reads.
+
+**The routing decision is one function and the page does not own a copy.**
+`scripts/lib/teacher-today.js` decides; `teacher-index-page.js` embeds its
+source with `String()` and only formats the result. That is the same reason the
+coach prompt has one builder and the Skills Lens inlines the real parser: a
+second copy is a second answer to the same question, with nothing to say which
+one the teacher read. It also makes the decision testable offline, which is why
+`scripts/test/teacher-today.test.js` is in the push gate rather than the browser
+suite.
 
 **Both generated pages get the same two-way reachability check deep readings
 and the eBook do.** `validate.js` confirms every topic `TOPICS` declares still
@@ -1075,6 +1110,19 @@ it is linked from a student-facing page. `--check` on both builders is wired
 into `scripts/test/readings-reproducible.test.js` in the offline suite, so a
 hand-edit to any of the three generated files fails the push instead of being
 silently reverted by the next rebuild.
+
+**An interactive lesson is registered in two places and the check reads both
+directions.** `INTERACTIVE_TOPICS` is what the Today panel routes on and `TOOLS`
+is what the grid lists, so `validate.js` fails on a declared lesson whose page is
+missing, on a lesson routable from Today but absent from the grid, and on a
+`teacher/command-center-*.html` sitting on disk with no `INTERACTIVE_TOPICS`
+entry at all. **That last one is the failure this check was written for.** Topics
+2.1 and 2.2 had complete command centers, teaching data and projection pages, and
+the registry still named the 1.7 pilot alone, so the Today panel would have told
+a teacher those topics had no teacher surface on the mornings they were taught.
+Nothing reported it, because the old check compared the page against the declared
+list and the declared list was internally consistent. A list checked only against
+itself can fall behind the repository and stay green forever.
 
 ## Socrates, the AI Coach
 
@@ -1626,13 +1674,21 @@ Anderson's classroom.
 > and the table and never a position. Every point carries its n on the axis, and
 > a point under n=5 is drawn hollow and flagged rather than suppressed.
 >
-> **The evidence-term measure currently has nothing to plot, and that is a fact
-> about the lesson data.** No slot in the course carries both an AP skill tag and
-> authored evidence terms: the tags sit on the First & 10 questions and the Skill
-> Builder, the terms sit on the checkpoints and the Evidence Lab. The panel says
-> so and points at Panels 05 and 08 rather than inventing an association the
-> lesson author never made. To make it plot, name a skill on the checkpoints that
-> carry terms and re-run `node scripts/build-skills-map.js`.
+> **The evidence-term measure plots Units 1 and 2 only, and that is a fact about
+> the lesson data.** Of 701 response slots across 77 topics in
+> `assets/data/skills-map.js`, 28 carry both an AP skill tag and authored evidence
+> terms, and all 28 are in Units 1 and 2, where
+> `assets/data/ap-practice-units-1-2.js` names a skill on the modules that also
+> carry terms. Everywhere else the two still sit apart: the tags on the First & 10
+> questions and the Skill Builder, the terms on the checkpoints and the Evidence
+> Lab. So the measure is real but thin, and the panel should say which units it
+> covers rather than implying the course. **This said "no slot in the course"
+> until 2026-09-14, which was true when the panel was written and stopped being
+> true when Units 1 and 2 were revised**, with nothing to report the change. To
+> widen it, name a skill on the checkpoints that carry terms in another unit and
+> re-run `node scripts/build-skills-map.js`. Read a thin n as thin, not as a
+> finding: the "point under n=5 is drawn hollow" rule above is doing real work
+> here.
 
 > **Before touching the Gather All My Work panel or its record footer, read
 > `docs/CANVAS-CAPTURE.md`.** Both renderers emit the footer and one parser reads
@@ -1723,8 +1779,8 @@ Every First & 10 reading **must** follow the Topic 1.1 structure exactly. This r
 ### Delivery pattern
 
 Every First & 10 must use the **embedded iframe** pattern:
-- **Standalone reading file** (`first-and-10-topic-X-X-SLUG.html`), contains all reading content, check section, and builder sections
-- **Capture wrapper** (`first-and-10-topic-X-X-SLUG-capture.html`), thin iframe wrapper that intercepts "Open MagicSchool" button clicks
+- **Standalone reading file** (`first-and-10-topic-X-X-SLUG.html`), contains all reading content and the check section. No builder section: `validate.js` prohibits one, per point 5 above.
+- **Capture wrapper** (`first-and-10-topic-X-X-SLUG-capture.html`), thin iframe wrapper. It intercepted "Open MagicSchool" clicks until 2026-08-31; the reading has no coach button now, so there is nothing left to intercept and the wrapper is just the iframe. See "Capture wrapper pattern" below.
 - **Lesson data file**, `first10.embedUrl` must point to the capture wrapper (e.g., `'first-and-10-topic-1-1-song-china-capture.html'`)
 
 ### CSS class names (canonical)

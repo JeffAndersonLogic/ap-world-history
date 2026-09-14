@@ -480,6 +480,11 @@ const fDataFiles = glob(foundationsDir, /^foundations.*-data\.js$/);
 for (const f of fDataFiles) checkFoundationsData(f);
 sectionDone(`${fDataFiles.length} foundations data files`);
 
+// What the README's "Current build" section is allowed to claim. Filled by the
+// sections that already count these things, so the front of the repository
+// cannot state a figure nothing produced. See the last section in this file.
+const INVENTORY = { unitTopics: dataFiles.length, foundations: fDataFiles.length };
+
 // 5b. Foundations 10-module structure
 section('Foundations renderer, 10-module standard');
 {
@@ -907,7 +912,7 @@ section('eBook narration is generated and shared');
 // Topic field on six lessons and every Student Response for an unknown period.
 // MagicSchool is not a capture channel and must survive: it is where students
 // take their thinking to be questioned.
-section('Google Form retirement and MagicSchool wiring');
+section('Google Form retirement and coach-route removal');
 {
   const banned = [
     ['docs.google.com/forms', 'a Google Form URL'],
@@ -958,8 +963,10 @@ section('Google Form retirement and MagicSchool wiring');
 
   // embedUrl must name the capture wrapper, not the reading. Seven Unit 2 topics
   // pointed straight at the reading because their renderer-config overrode the
-  // data file's correct value, and the config loads second. The wrapper is what
-  // intercepts MagicSchool, so those seven buttons opened a blank tab.
+  // data file's correct value, and the config loads second. The wrapper was what
+  // intercepted MagicSchool then, so those seven buttons opened a blank tab; the
+  // wrapper is now just the iframe, and the rule stands because embedUrl is the
+  // delivery pattern and a config override is still the way it breaks.
   [...dataFiles, ...rcFiles].forEach(filePath => {
     const src = read(filePath);
     if (!src) return;
@@ -1002,7 +1009,11 @@ section('Google Form retirement and MagicSchool wiring');
     }
   }
 
-  sectionDone(`${surfaces.length} surfaces clean of the form; ${wrappers.length} wrappers keep MagicSchool; ${readings.length} readings carry no coach route`);
+  // This message said "wrappers keep MagicSchool" until 2026-09-14, which is
+  // the exact opposite of what the loop above asserts: a wrapper carrying
+  // MagicSchool wiring is an error. A green line that describes the inverse of
+  // its own check is worse than no line, because it is read as confirmation.
+  sectionDone(`${surfaces.length} surfaces clean of the form; ${wrappers.length} wrappers embed their reading and carry no coach wiring; ${readings.length} readings carry no coach route`);
 }
 
 // 11. BeInTheRoom links and v2 scenario contract
@@ -1186,6 +1197,7 @@ section('BeInTheRoom scenario links and v2 quality contract');
     }
   }
 
+  INVENTORY.scenarios = linkedTargets.size;
   sectionDone(`${linkedTargets.size} linked scenarios; ${v2Files.length} v2 scenarios; ${v1Wired} v1 scenarios classroom-aware; ${pasteChecked} pastes clean of version 1 coach wording`);
 }
 
@@ -1745,6 +1757,52 @@ section('Announcements board names the same modules the lesson pages do');
     }
   }
   sectionDone('module names match both renderers, and every scheduled topic carries its list');
+}
+
+//
+// The README's current inventory, checked against what this run counted.
+//
+// README.md is the first thing anyone reads and it had drifted quietly: on
+// 2026-09-14 it advertised "35 non-capstone BeInTheRoom scenarios" and "five
+// complete pre-course topic stacks" while this validator was counting 61 linked
+// scenarios and six Foundations stacks. Nobody had done anything wrong; the
+// repository had simply grown and the front page had not, and no check existed
+// that could tell the difference between a current figure and a remembered one.
+//
+// So the README states counts in a fixed, greppable form and this section is
+// what keeps them honest. It is deliberately not a generator: the README is
+// prose a person writes, and the goal is to fail a stale number, not to take
+// the writing away from them. Note the denominators, because three different
+// ones have been used for scenarios over time: this counts scenarios LINKED
+// from a lesson, which is not the same as scenario files on disk (some sit
+// unlinked, see "BeInTheRoom reflections reach Canvas" in CLAUDE.md) and not
+// the same as the old "non-capstone" count.
+//
+section('README current inventory');
+{
+  const readmePath = path.join(ROOT, 'README.md');
+  const src = read(readmePath);
+  totalChecks++;
+  if (!src) {
+    err(readmePath, 'README.md is missing');
+  } else {
+    const claims = [
+      ['unitTopics', `<!--count:unit-topics-->${INVENTORY.unitTopics}`, 'AP topic lesson stacks'],
+      ['foundations', `<!--count:foundations-->${INVENTORY.foundations}`, 'Foundations topic stacks'],
+      ['scenarios', `<!--count:linked-scenarios-->${INVENTORY.scenarios}`, 'BeInTheRoom scenarios linked from a lesson']
+    ];
+    for (const [key, marker, what] of claims) {
+      totalChecks++;
+      const tag = marker.slice(0, marker.indexOf('-->') + 3);
+      if (!src.includes(tag)) {
+        err(readmePath, `has no ${tag} marker, so its count of ${what} cannot be checked`);
+      } else if (!src.includes(marker)) {
+        const found = new RegExp(tag.replace(/[-[\]{}()*+?.,\\^$|#]/g, '\\$&') + '(\\d+)').exec(src);
+        err(readmePath, `says ${found ? found[1] : '?'} ${what}; this run counted ${INVENTORY[key]}`);
+      }
+    }
+  }
+  sectionDone(`README inventory matches this run: ${INVENTORY.unitTopics} unit topics, ${INVENTORY.foundations} Foundations stacks, ${INVENTORY.scenarios} linked scenarios`);
 }
 
 // ── Summary ───────────────────────────────────────────────────────────────────

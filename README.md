@@ -4,11 +4,22 @@ BeHistorical is a static AP World History: Modern lesson platform built around a
 
 ## Current build
 
-- All 71 AP topic lesson stacks are present on disk.
+Every count below carries an HTML comment marker, and `scripts/validate.js`
+fails the push if one of them stops matching what that run actually counted.
+This list said 35 scenarios and five Foundations stacks until 2026-09-14, when
+the real figures were 61 and six: the repository had grown and the front page
+had not, and nothing existed that could tell a current figure from a remembered
+one. Update the number, not the marker.
+
+- All <!--count:unit-topics-->71 AP topic lesson stacks are present on disk.
 - Unit 9 Topics 9.4–9.9 are built, CED-aligned, and linked.
-- 35 non-capstone BeInTheRoom scenarios are connected to lesson modules.
-- Foundations includes five complete pre-course topic stacks.
+- <!--count:linked-scenarios-->61 BeInTheRoom scenarios are linked from a lesson module. That is the denominator to quote: scenario *files* on disk is a larger number, because a few sit unlinked on purpose, and "non-capstone" was a third count used in an earlier version of this list.
+- Foundations includes <!--count:foundations-->6 complete pre-course topic stacks.
 - The repository validator currently reports zero deployment-blocking errors.
+
+A count is not a quality claim. "Linked" means a lesson module points at it and
+the link resolves; whether the history in it is any good is a separate judgment
+that no check in this repository makes.
 
 Open `index.html` through a local static server to explore the student site. Open `docs/command-center.html` for the generated project inventory.
 

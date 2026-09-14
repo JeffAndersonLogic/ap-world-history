@@ -2,6 +2,16 @@
 
 > Note: this file did not exist before 2026-06-12; it was created during the BeInTheRoom theme-alignment audit session. Earlier project history is in `git log`.
 
+> **This is a dated change history, not current state.** Every entry below is
+> true as of the date on its heading and was not revised afterwards, which is the
+> point of keeping it: the reasoning behind a decision is worth more than a
+> tidied-up summary of where things ended up. It also means a count here is a
+> count from that day. The line about "the 23 scenarios currently referenced by
+> Unit 2-7 lessons but not yet built" was accurate on 2026-06-12 and is **not a
+> current backlog**; `scripts/validate.js` counted 61 linked scenarios on
+> 2026-09-14. For current state read the README's Current build section, which is
+> checked against a validator run, or run `node scripts/validate.js` yourself.
+
 ## BeInTheRoom
 
 ### Theme-Alignment Hard Rule (codified 2026-06-12)

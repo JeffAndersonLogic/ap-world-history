@@ -1,8 +1,8 @@
 # Socrates, the course-wide AI coach
 
 Socrates is the MagicSchool chatbot behind join code `czwb9Q`. Students reach him
-from the AI Coach bridge on every checkpoint and from the Build Your AI Coach
-Prompt button in every First & 10 reading.
+from exactly two places: the AI Coach bridge on Checkpoint 2, and each
+BeInTheRoom scenario's own paste. See "The two surfaces" below.
 
 **He is already course-wide in the plumbing.** All 77 topics link to the same
 join code, and `meta.feedbackToolUrl` in every lesson data file points at it. What
@@ -289,20 +289,34 @@ teacher preview:
 Step 4 is the one that cannot be moved into the repo, because it is the only
 question whose answer depends on MagicSchool's retrieval working.
 
-## The four surfaces
+## The two surfaces
 
-Socrates serves exactly four assignments, and the persona names them so he can
+Socrates serves exactly two assignments, and the persona names them so he can
 orient from the student's own words:
 
 | Surface | Reached from | Coverage |
 |---|---|---|
-| First & 10 Reflection | the Open MagicSchool button in each reading | all 77 |
-| Checkpoint 1 | the checkpoint bridge in both renderers | all 77 |
-| Checkpoint 2 | the same bridge | all 77 |
+| Checkpoint 2 | the checkpoint bridge in both renderers | all 77 |
 | BeInTheRoom | each scenario's own payload builder | 38 of 64 scenarios |
 
+`scripts/lib/socrates-persona.js` is the source of that number, and
+`scripts/test/socrates-contract.test.js` fails the push if this document and the
+persona stop agreeing about it. A document claiming a surface the coach has never
+heard of is worse than no document: it reads as authoritative, and the repair an
+agent would make from it is to build the surface back.
+
+**There were four until 2026-08-31, and two were removed deliberately.** The
+First & 10 Reflection lost its coach builder because coaching the lowest-stakes
+writing in the lesson cost a vendor round trip and bought little, and Checkpoint 1
+became the lesson's unaided diagnostic, because coaching a diagnostic before it is
+captured measures the coaching. Both are described in CLAUDE.md under "Checkpoint 1
+is independent", and `validate.js` now prohibits the reading's coach route in the
+inverted form of the checks that used to require it. **Do not restore either one
+from this paragraph.** It is here so the next person knows the removal was a
+decision rather than a regression.
+
 Foundations checkpoints had no bridge at all until 2026-08-12, so on those six
-topics two of the four surfaces were dead ends while Module 08 was titled
+topics the checkpoint surfaces were dead ends while Module 08 was titled
 "Socrates AI Coach" and offered three static prompts with no button. Both
 renderers now share one builder and one bridge shape, asserted by
 `scripts/test/coach-prompt.test.js` against a real Foundations page in Chromium.
@@ -336,11 +350,12 @@ would rather send none.
 
 ## Resolved, and what it cost
 
-**The paste is enriched and live on all 77 topics.** Both surfaces now emit the
-full contract from one implementation in
-`assets/js/behistorical-coach-prompt.js`: the checkpoint bridge in the shared
-renderer, and all 77 generated First & 10 readings. Measured medians are 3,103
-characters for a checkpoint and 3,331 for a reading, roughly 520 and 555 words.
+**The paste is enriched and live on all 77 topics.** It comes from one
+implementation, `assets/js/behistorical-coach-prompt.js`, reached by the
+checkpoint bridge in both renderers and by each BeInTheRoom scenario's payload.
+The measured medians below are from when the readings still built a paste too,
+3,103 characters for a checkpoint and 3,331 for a reading, roughly 520 and 555
+words; the reading figure is history, since a reading no longer sends anything.
 `scripts/test/coach-prompt.test.js` drives a real lesson page in Chromium and
 asserts the built paste is byte-identical to the Node contract.
 
