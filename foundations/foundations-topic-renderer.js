@@ -557,9 +557,12 @@ function renderCheckpoint2(){return `<article class="dark-callout"><h3>Synthesis
 //
 // Foundations had no way to reach Socrates from either checkpoint. Both
 // checkpoints rendered a draft box and stopped, so on these six topics two of
-// the four assignments that are supposed to reach the coach were dead ends,
+// the four assignments that reached the coach at the time were dead ends,
 // while Module 08 was titled "Socrates AI Coach" and offered three static
-// prompts with no button.
+// prompts with no button. (Four was the count until 2026-08-31; it is two now,
+// Checkpoint 2 and BeInTheRoom, and Checkpoint 1 is deliberately unaided. The
+// sentence above is the state this bridge was written to fix, not the current
+// contract.)
 //
 // Deliberately the same markup and the same shared builder as the unit
 // renderer's bridge, so the two cannot drift into giving Socrates different
