@@ -429,8 +429,8 @@ window.BEHISTORICAL_SCHEDULE = {
     },
 
     /* ---- Topic 1.7, Comparison -------------------------- */
-    // NOTE: same caveat as 1.6, 9/14 and 9/15 are extrapolated from the
-    // alternating pattern, not confirmed against the Canvas calendar.
+    // 9/14 and 9/15 confirmed by Jeff on 2026-09-14: Green Monday
+    // September 14, Silver Tuesday September 15.
     {
       date: '2026-09-14',
       cohort: 'green',
