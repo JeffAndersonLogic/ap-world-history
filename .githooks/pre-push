@@ -14,8 +14,15 @@
 # To push past it once, when you know what you are doing:
 #   git push --no-verify
 
+# No node means no checks ran. Say so at full volume rather than in passing: the
+# quiet version of this line read like a routine skip, and a push that verified
+# nothing is not routine. It still exits 0, because this hook is a convenience
+# and CI plus the branch rule are what actually gate main, but nobody should be
+# able to read this output and think the suite passed.
 if ! command -v node >/dev/null 2>&1; then
-  echo "pre-push: node not found, skipping checks" >&2
+  echo "pre-push: node not found. NOTHING WAS CHECKED." >&2
+  echo "pre-push: this push has not run validate.js or any test." >&2
+  echo "pre-push: CI will run them; watch the Validate job before you rely on it." >&2
   exit 0
 fi
 

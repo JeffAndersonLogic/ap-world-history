@@ -3,8 +3,21 @@
  * lightbox-sweep.js
  *
  * Opens the Map and Evidence Lab modules on every lesson page, Unit and
- * Foundations, and asserts that each enlargeable image is an operable button
- * that actually opens the lightbox. Prints only failures; silence is a pass.
+ * Foundations, and asserts that every image ALREADY MARKED as a button really
+ * opens the lightbox. Prints only failures; silence is a pass.
+ *
+ * Read that limit precisely, because it is easy to over-claim from a green run.
+ * The selector below is `#pop-body img[role="button"]`, so an image that lost
+ * its role is not a failure here, it is invisible: the module reports zero
+ * enlargeable images, and zero is accepted, because a module with no pictures
+ * is a real and correct state on several topics (Topic 1.1 carries no Evidence
+ * Lab images, Topic 1.3's map is an embedded iframe). A page that silently
+ * stopped marking its images would pass this sweep 77 times.
+ *
+ * The other half is offline, in validate.js under "Enlargeable images are
+ * operable buttons": the five renderer templates that produce every enlargeable
+ * picture in the course must each carry role, tabindex, an aria-label and a key
+ * handler. Together they cover the contract; neither does alone.
  *
  * Why a sweep and not a single-page test: the two spot-checked topics turned out
  * not to be representative. Topic 1.1 carries no Evidence Lab images at all, and

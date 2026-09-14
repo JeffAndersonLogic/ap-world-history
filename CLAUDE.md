@@ -33,6 +33,12 @@ a run.
   every push. `npm install` does this automatically. Override once with
   `git push --no-verify`.
 
+**The hook is a convenience, not the enforcement.** It has to be installed, it
+is one flag away from being skipped, and on a machine with no `node` on PATH it
+prints a line and exits 0, so a push from there runs nothing at all. CI and the
+branch rule are what actually gate `main`; the hook exists to save you the round
+trip, not to be relied on.
+
 **Exit code 2 means skipped, not passed.** Every browser test exits 2 when
 playwright-core is absent, because `validate.js` must stay runnable on a bare
 checkout and the browser dependency is never installed by default.
@@ -202,7 +208,7 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/sync-first10-capture.js`, install the canonical First & 10 answer-capture block from `scripts/lib/first10-capture-block.js` into all 77 readings. That block is the only path by which the three reading answers and their confidence ratings reach Canvas, and it has gone missing silently twice. `validate.js` now fails if the block is absent **or** if any of the four files that must agree on the `behistorical-first10-<TOPIC_KEY>` storage key stops using it, which is the version of this failure that leaves every structural check green.
 - `node scripts/test/skills-lens.test.js` and `node scripts/test/confidence.test.js`, browser tests for the Skills Lens panels and the confidence scale.
 - `node scripts/test/ap-practice-units12.test.js`, validate the 42 revised AP Skill Builder, Evidence Lab, and Primary Source modules in Units 1-2 against the fall 2026 CED skill/reasoning progression, source-transparency contract, evidence availability, and lesson-shell load order. The live content is centralized in `assets/data/ap-practice-units-1-2.js`; load it after the topic renderer config and before the shared renderer.
-- `node scripts/test/lightbox-sweep.js`, open the Map and Evidence Lab modules on all 77 lesson pages and confirm every enlargeable image is an operable button. Prints only failures. Two exceptions are legitimate and the test allows them: a module with no images at all, which covers the topics with no Evidence Lab pictures and Topic 1.3, whose Map module is the course's only embedded iframe map.
+- `node scripts/test/lightbox-sweep.js`, open the Map and Evidence Lab modules on all 77 lesson pages and confirm every image **already marked** as a button really opens the lightbox. Prints only failures. A module with no images at all is legitimate and allowed, which covers the topics with no Evidence Lab pictures and Topic 1.3, whose Map module is the course's only embedded iframe map. **That tolerance is also the sweep's blind spot**: it selects `img[role="button"]`, so an image that lost its role reports as zero images rather than as a failure, and would pass on all 77 pages. `validate.js` covers the other half offline, asserting the five renderer templates that produce every enlargeable picture each carry `role`, `tabindex`, an `aria-label` and an Enter/Space handler.
 - `node scripts/verify-canvas-check.js <parsed-dir>`, diff a real Canvas round trip character by character against the text that was typed. The one thing that cannot be tested from inside the repo is what Canvas does to a pasted document. See `docs/CANVAS-CHECK.md`.
 - `node scripts/test/canvas-paragraphs.test.js`, offline check that every markup shape Canvas emits for a blank line parses back into two paragraphs, and that a soft `<br>` does not. Paragraph structure is the one corruption the manifest hash cannot catch, because the hash normalizes whitespace on purpose.
 - `node scripts/parse-canvas-submissions.js <dir>`, turn an unzipped Canvas "Download Submissions" folder into `responses.csv` (one row per student per module response) and `exceptions.csv`. Reads and writes local files only, never the network. See `docs/CANVAS-CAPTURE.md`. The teacher's normal route is now dropping the zip straight on the Skills Lens; this is for a folder or a script.

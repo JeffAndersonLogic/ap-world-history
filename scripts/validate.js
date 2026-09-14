@@ -1760,6 +1760,58 @@ section('Announcements board names the same modules the lesson pages do');
 }
 
 //
+// An image that opens the lightbox is a button, asserted at the source.
+//
+// scripts/test/lightbox-sweep.js is the behavioural half of this and it cannot
+// cover the half that matters most. It selects `#pop-body img[role="button"]`,
+// so an image that LOST its role is not a failure there, it is invisible: the
+// module reports zero enlargeable images, which the sweep accepts as
+// legitimate, because a module with no pictures is a real and correct state on
+// several topics. So the sweep proves that the images which are marked as
+// buttons really open the lightbox on all 77 pages, and it cannot prove that
+// every image which should be marked, is.
+//
+// This section is that other half, and it is offline and in the push gate
+// because the renderers are where the answer lives: five template literals
+// across the two of them produce every enlargeable picture in the course. An
+// onclick on its own is mouse-only, which is how the lightbox stayed
+// unreachable by keyboard on every topic once already.
+//
+section('Enlargeable images are operable buttons');
+{
+  const required = [
+    [/role="button"/, 'role="button"'],
+    [/tabindex="0"/, 'tabindex="0"'],
+    [/aria-label=/, 'an aria-label naming the picture'],
+    [/onkeydown=/, 'an Enter/Space handler']
+  ];
+  let wired = 0;
+  for (const rel of ['assets/js/behistorical-topic-renderer-v1.js', 'foundations/foundations-topic-renderer.js']) {
+    const file = path.join(ROOT, rel);
+    const src = read(file);
+    totalChecks++;
+    if (!src) { err(file, 'renderer is missing'); continue; }
+    const tags = (src.match(/<img\b[^>]*>/g) || []).filter(t => /onclick="[^"]*[Ll]ightbox/.test(t));
+    totalChecks++;
+    if (!tags.length) {
+      err(file, 'no image template opens the lightbox; either the renderer changed shape or this check has stopped looking in the right place');
+      continue;
+    }
+    for (const tag of tags) {
+      wired++;
+      const alt = /alt="([^"]*)"/.exec(tag);
+      for (const [re, what] of required) {
+        totalChecks++;
+        if (!re.test(tag)) {
+          err(file, `an image wired to the lightbox is missing ${what}, so it is mouse-only${alt ? ` (alt: ${alt[1].slice(0, 40)})` : ''}`);
+        }
+      }
+    }
+  }
+  sectionDone(`${wired} lightbox-wired image template(s) carry role, tabindex, a label and a key handler`);
+}
+
+//
 // The README's current inventory, checked against what this run counted.
 //
 // README.md is the first thing anyone reads and it had drifted quietly: on
