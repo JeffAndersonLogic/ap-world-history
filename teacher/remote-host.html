@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeHistorical | iPad Remote Host</title>
+<style>
+:root{--bg:#17191a;--panel:#24282a;--line:#5a5f5c;--gold:#c9a46a;--paper:#f5f0e7;--ok:#75b777;--warn:#d6a95e;font-family:Montserrat,system-ui,sans-serif}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--paper);overflow:hidden}.bar{height:58px;display:flex;align-items:center;gap:12px;padding:8px 14px;background:var(--panel);border-bottom:2px solid var(--gold)}.brand{font-weight:900;color:var(--gold);white-space:nowrap}.status{font-size:.78rem}.code{font-weight:900;letter-spacing:.18em;background:#0f1112;border:1px solid var(--line);border-radius:8px;padding:8px 11px;color:#fff}.spacer{flex:1}.btn{border:1px solid var(--line);border-radius:8px;background:#3e4447;color:#fff;padding:8px 11px;font-weight:800;cursor:pointer}.btn:hover{background:#555d60}.connected{color:var(--ok);font-weight:800}.waiting{color:var(--warn);font-weight:800}iframe{display:block;width:100%;height:calc(100vh - 58px);border:0;background:#202426}@media(max-width:780px){.status{display:none}.brand{font-size:.85rem}.bar{gap:7px;padding:7px 8px}.code{font-size:.82rem}}
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="brand">BeHistorical · iPad Remote</div>
+  <div class="status">Pairing code</div>
+  <div class="code" id="code">------</div>
+  <div id="connection" class="waiting">Waiting for iPad</div>
+  <div class="spacer"></div>
+  <button class="btn" id="openProjection">Open Projection</button>
+  <button class="btn" id="copyLink">Copy iPad Link</button>
+</div>
+<iframe id="command" title="Teacher Command Center"></iframe>
+<script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.5/dist/peerjs.min.js"></script>
+<script>
+(function(){
+'use strict';
+const params=new URLSearchParams(location.search);
+const topic=(params.get('topic')||'2-2').replace(/[^0-9-]/g,'');
+const frame=document.getElementById('command');
+const codeEl=document.getElementById('code');
+const connEl=document.getElementById('connection');
+frame.src='command-center-topic-'+topic+'.html';
+let peer=null,conn=null,lastState='';
+function makeCode(){return Math.random().toString(36).slice(2,8).toUpperCase().padEnd(6,'X');}
+function frameDoc(){try{return frame.contentDocument||frame.contentWindow.document;}catch(e){return null;}}
+function click(sel){const d=frameDoc(),el=d&&d.querySelector(sel);if(el){el.click();return true;}return false;}
+function readIndex(){const d=frameDoc(),c=d&&d.querySelector('#count');if(!c)return 0;const m=(c.textContent||'').match(/(\d+)\s*\//);return m?Math.max(0,Number(m[1])-1):0;}
+function readState(){const d=frameDoc();if(!d)return null;const count=d.querySelector('#count'),timer=d.querySelector('#timer'),notes=d.querySelector('#notes'),title=d.querySelector('#headerTitle');return{type:'state',topic,index:readIndex(),count:count?count.textContent:'',timer:timer?timer.textContent:'',title:title?title.textContent:'',notesText:notes?notes.innerText:'',at:Date.now()};}
+function sendState(force){if(!conn||!conn.open)return;const state=readState();if(!state)return;const sig=JSON.stringify({i:state.index,t:state.timer,n:state.notesText});if(force||sig!==lastState){lastState=sig;conn.send(state);}}
+function gotoIndex(target){target=Math.max(0,Number(target)||0);const current=readIndex();const delta=target-current;if(!delta)return;const key=delta>0?'ArrowRight':'ArrowLeft';for(let i=0;i<Math.abs(delta);i++){frame.contentWindow.document.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));}}
+function handle(data){if(!data||typeof data!=='object')return;switch(data.type){case'next':click('#next');break;case'prev':click('#prev');break;case'start':click('#start');break;case'goto':gotoIndex(data.index);break;case'timer-toggle':click('#toggleTimer');break;case'timer-reset':click('#resetTimer');break;case'projection':click('#openProjection');break;case'sync':break;}setTimeout(()=>sendState(true),80);}
+function attach(c){if(conn&&conn.open){try{conn.close();}catch(e){}}conn=c;connEl.textContent='Connecting…';connEl.className='waiting';c.on('open',()=>{connEl.textContent='iPad connected';connEl.className='connected';sendState(true);});c.on('data',handle);c.on('close',()=>{connEl.textContent='Waiting for iPad';connEl.className='waiting';});c.on('error',()=>{connEl.textContent='Connection error';connEl.className='waiting';});}
+function startPeer(){const short=makeCode(),id='bh-'+short.toLowerCase();codeEl.textContent=short;peer=new Peer(id);peer.on('connection',attach);peer.on('error',err=>{if(err&&err.type==='unavailable-id'){try{peer.destroy();}catch(e){}startPeer();}else{connEl.textContent='Pairing unavailable';connEl.className='waiting';}});}
+frame.addEventListener('load',()=>{setInterval(()=>sendState(false),400);});
+document.getElementById('openProjection').addEventListener('click',()=>click('#openProjection'));
+document.getElementById('copyLink').addEventListener('click',async()=>{const code=codeEl.textContent.trim();const url=new URL('ipad-remote.html',location.href);url.searchParams.set('topic',topic);url.searchParams.set('code',code);try{await navigator.clipboard.writeText(url.href);const b=document.getElementById('copyLink');const old=b.textContent;b.textContent='Copied';setTimeout(()=>b.textContent=old,1200);}catch(e){prompt('Open this on the iPad:',url.href);}});
+startPeer();
+})();
+</script>
+</body>
+</html>
