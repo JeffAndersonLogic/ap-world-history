@@ -17,13 +17,10 @@
     <button class="btn gold" id="connect">Connect</button>
     <div id="status" class="status">Enter the laptop pairing code</div>
     <div class="spacer"></div>
-    <div class="controls">
-      <button class="btn" id="back">←</button>
-      <button class="btn gold" id="next">Next →</button>
-    </div>
+    <div class="controls"><button class="btn" id="back">←</button><button class="btn gold" id="next">Next →</button></div>
   </div>
   <div class="content">
-    <div id="offline" class="offline"><div><h1>Your iPad is the Teacher Command Center</h1><p id="offlineText">Scan the QR code on the classroom laptop. If the school Wi-Fi blocks device-to-device WebRTC traffic, turn on Windows Mobile Hotspot, connect the iPad to that hotspot, and scan the QR code again.</p></div></div>
+    <div id="offline" class="offline"><div><h1>Your iPad is the Teacher Command Center</h1><p id="offlineText">Scan the QR code on the classroom laptop. The remote will connect automatically.</p></div></div>
     <iframe id="command" title="Teacher Command Center"></iframe>
   </div>
 </div>
@@ -40,7 +37,6 @@ const status=document.getElementById('status');
 const offline=document.getElementById('offline');
 const offlineText=document.getElementById('offlineText');
 const badge=document.getElementById('slidebadge');
-const PEER_OPTIONS={debug:1,config:{iceServers:[{urls:'stun:stun.l.google.com:19302'},{urls:'stun:stun.cloudflare.com:3478'}],sdpSemantics:'unified-plan'}};
 frame.src='command-center-topic-'+topic+'.html';
 if(params.get('code'))codeInput.value=params.get('code').slice(0,6).toUpperCase();
 let peer=null,conn=null,suppress=false,lastHostIndex=0,connectTimer=null;
@@ -49,15 +45,17 @@ function setOffline(text){if(text)offlineText.textContent=text;offline.classList
 function frameDoc(){try{return frame.contentDocument||frame.contentWindow.document;}catch(e){return null;}}
 function readIndex(){const d=frameDoc(),c=d&&d.querySelector('#count');if(!c)return 0;const m=(c.textContent||'').match(/(\d+)\s*\//);return m?Math.max(0,Number(m[1])-1):0;}
 function localGoto(target){target=Math.max(0,Number(target)||0);const d=frameDoc();if(!d)return;const current=readIndex(),delta=target-current;if(!delta)return;suppress=true;const key=delta>0?'ArrowRight':'ArrowLeft';for(let i=0;i<Math.abs(delta);i++)d.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));setTimeout(()=>suppress=false,100);}
-function send(type,extra){if(!conn||!conn.open)return;conn.send(Object.assign({type},extra||{}));}
-function bindFrame(){const d=frameDoc();if(!d)return;d.addEventListener('click',e=>{if(suppress||!conn||!conn.open)return;const target=e.target.closest&&e.target.closest('#next,#prev,#start,#toggleTimer,#resetTimer,.flow-card');if(!target)return;if(target.id==='next')send('next');else if(target.id==='prev')send('prev');else if(target.id==='start')send('start');else if(target.id==='toggleTimer')send('timer-toggle');else if(target.id==='resetTimer')send('timer-reset');else if(target.classList.contains('flow-card'))send('goto',{index:Number(target.dataset.slide)||0});},true);
- d.addEventListener('keydown',e=>{if(suppress||!conn||!conn.open)return;if(e.key==='ArrowRight'||e.key==='PageDown')send('next');else if(e.key==='ArrowLeft'||e.key==='PageUp')send('prev');else if(e.key==='Home')send('start');},true);
-}
+function send(type,extra){if(conn&&conn.open)conn.send(Object.assign({type},extra||{}));}
+function bindFrame(){const d=frameDoc();if(!d)return;d.addEventListener('click',e=>{if(suppress||!conn||!conn.open)return;const target=e.target.closest&&e.target.closest('#next,#prev,#start,#toggleTimer,#resetTimer,.flow-card');if(!target)return;if(target.id==='next')send('next');else if(target.id==='prev')send('prev');else if(target.id==='start')send('start');else if(target.id==='toggleTimer')send('timer-toggle');else if(target.id==='resetTimer')send('timer-reset');else if(target.classList.contains('flow-card'))send('goto',{index:Number(target.dataset.slide)||0});},true);}
 frame.addEventListener('load',bindFrame);
-function cleanup(showMessage){if(connectTimer){clearTimeout(connectTimer);connectTimer=null;}if(conn){try{conn.close();}catch(e){}}if(peer){try{peer.destroy();}catch(e){}}conn=null;peer=null;if(showMessage){setOffline('Disconnected. Rescan the laptop QR code. If this keeps happening on school Wi-Fi, connect the iPad to the Windows laptop Mobile Hotspot and try again.');setStatus('Disconnected',false);}}
-function peerErrorMessage(err){const type=err&&err.type||'unknown';if(type==='peer-unavailable')return 'Laptop session not found — rescan the newest QR code.';if(type==='network'||type==='socket-error'||type==='socket-closed'||type==='server-error')return 'School/network connection blocked PeerJS signaling ('+type+').';if(type==='webrtc')return 'WebRTC blocked by this network. Try the Windows laptop Mobile Hotspot.';return 'Connection failed ('+type+'). Try the Windows laptop Mobile Hotspot.';}
-function connect(){const code=codeInput.value.trim().toLowerCase();if(code.length!==6){setStatus('Enter the six-character laptop code',false);return;}cleanup(false);setStatus('Connecting…',false);setOffline('Connecting to the classroom laptop…');peer=new Peer(PEER_OPTIONS);peer.on('open',()=>{conn=peer.connect('bh-'+code,{reliable:true});connectTimer=setTimeout(()=>{if(!conn||!conn.open){setStatus('Direct connection blocked — try Windows Mobile Hotspot',false);setOffline('The laptop was found, but the network is blocking the browser-to-browser connection. On Windows, open Settings → Network & internet → Mobile hotspot, turn it on, connect the iPad to that hotspot, then rescan the laptop QR code.');}},9000);conn.on('open',()=>{if(connectTimer){clearTimeout(connectTimer);connectTimer=null;}offline.classList.add('hidden');setStatus('Connected to classroom laptop',true);send('sync');});conn.on('data',data=>{if(!data||data.type!=='state')return;lastHostIndex=Number(data.index)||0;localGoto(lastHostIndex);badge.textContent=(data.count||'')+(data.timer?' · '+data.timer:'');});conn.on('close',()=>cleanup(true));conn.on('error',err=>{setStatus(peerErrorMessage(err),false);setOffline('The laptop session exists, but the WebRTC data channel failed. This is commonly caused by managed Wi-Fi blocking device-to-device traffic. Connect the iPad to the Windows laptop Mobile Hotspot and rescan the QR code.');});});peer.on('error',err=>{setStatus(peerErrorMessage(err),false);setOffline(peerErrorMessage(err)+' Rescan the QR code after changing networks if needed.');});}
-document.getElementById('connect').addEventListener('click',connect);codeInput.addEventListener('keydown',e=>{if(e.key==='Enter')connect();});document.getElementById('next').addEventListener('click',()=>{send('next');localGoto(lastHostIndex+1);});document.getElementById('back').addEventListener('click',()=>{send('prev');localGoto(Math.max(0,lastHostIndex-1));});
+function cleanup(showMessage){if(connectTimer){clearTimeout(connectTimer);connectTimer=null;}if(conn){try{conn.close();}catch(e){}}if(peer){try{peer.destroy();}catch(e){}}conn=null;peer=null;if(showMessage){setStatus('Disconnected',false);setOffline('Disconnected. Rescan the newest QR code from the laptop.');}}
+function errorText(err){const type=err&&err.type||'unknown';if(type==='peer-unavailable')return 'Laptop session not found — rescan the newest QR code.';if(type==='network'||type==='socket-error'||type==='socket-closed'||type==='server-error')return 'Could not reach the PeerJS signaling service ('+type+').';if(type==='webrtc')return 'WebRTC negotiation failed ('+type+').';return 'Connection failed ('+type+').';}
+function iceState(){try{return conn&&conn.peerConnection&&conn.peerConnection.iceConnectionState||'unknown';}catch(e){return'unknown';}}
+function connect(){const code=codeInput.value.trim().toLowerCase();if(code.length!==6){setStatus('Enter the six-character laptop code',false);return;}cleanup(false);setStatus('Connecting…',false);setOffline('Connecting to the classroom laptop…');peer=new Peer({debug:1});peer.on('open',()=>{conn=peer.connect('bh-'+code,{serialization:'json',reliable:false});connectTimer=setTimeout(()=>{if(!conn||!conn.open){setStatus('Connection did not open',false);setOffline('Connection did not open. ICE state: '+iceState()+'. Rescan the laptop QR code and try once more.');}},10000);conn.on('open',()=>{if(connectTimer){clearTimeout(connectTimer);connectTimer=null;}offline.classList.add('hidden');setStatus('Connected to classroom laptop',true);send('sync');});conn.on('data',data=>{if(!data||data.type!=='state')return;lastHostIndex=Number(data.index)||0;localGoto(lastHostIndex);badge.textContent=(data.count||'')+(data.timer?' · '+data.timer:'');});conn.on('close',()=>cleanup(true));conn.on('error',err=>{setStatus(errorText(err),false);setOffline(errorText(err)+' ICE state: '+iceState());});});peer.on('error',err=>{setStatus(errorText(err),false);setOffline(errorText(err));});}
+document.getElementById('connect').addEventListener('click',connect);
+codeInput.addEventListener('keydown',e=>{if(e.key==='Enter')connect();});
+document.getElementById('next').addEventListener('click',()=>{send('next');localGoto(lastHostIndex+1);});
+document.getElementById('back').addEventListener('click',()=>{send('prev');localGoto(Math.max(0,lastHostIndex-1));});
 if(codeInput.value.length===6)connect();
 })();
 </script>
