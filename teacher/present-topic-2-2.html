@@ -15,16 +15,12 @@
 <body>
 <div id="stage"></div>
 <div class="hint">← → navigate · F fullscreen</div>
-<script src="../assets/data/lesson-2-2-mongol-empire.js?v=response-id-fix-v1"></script>
-<script src="../assets/data/lesson-2-2-renderer-config.js?v=response-id-fix-v1"></script>
 <script src="data/topic-2-2-teaching.js?v=production-v5"></script>
-<script src="data/topic-2-2-visual-standard.js?v=production-v5"></script>
-<script src="data/topic-2-2-production-overrides.js?v=production-v5"></script>
 <script src="data/topic-2-2-renderer.js?v=production-v5"></script>
 <script>
 (function(){
 'use strict';
-const T=window.BEHISTORICAL_TEACHING,L=window.BEHISTORICAL_LESSON||{},R=window.BH22_RENDERER,$=s=>document.querySelector(s);
+const T=window.BEHISTORICAL_TEACHING,L={},R=window.BH22_RENDERER,$=s=>document.querySelector(s);
 if(!T||!R)return;
 const style=document.createElement('style');style.textContent=R.styles();document.head.appendChild(style);
 let cur=0,key=T.projection.storageKey;
