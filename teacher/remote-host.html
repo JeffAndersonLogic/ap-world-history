@@ -6,7 +6,7 @@
 <title>BeHistorical | iPad Remote Host</title>
 <style>
 :root{--bg:#17191a;--panel:#24282a;--line:#5a5f5c;--gold:#c9a46a;--paper:#f5f0e7;--ok:#75b777;--warn:#d6a95e;font-family:Montserrat,system-ui,sans-serif}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--paper);overflow:hidden}.bar{height:58px;display:flex;align-items:center;gap:12px;padding:8px 14px;background:var(--panel);border-bottom:2px solid var(--gold)}.brand{font-weight:900;color:var(--gold);white-space:nowrap}.status{font-size:.78rem}.code{font-weight:900;letter-spacing:.18em;background:#0f1112;border:1px solid var(--line);border-radius:8px;padding:8px 11px;color:#fff}.spacer{flex:1}.btn{border:1px solid var(--line);border-radius:8px;background:#3e4447;color:#fff;padding:8px 11px;font-weight:800;cursor:pointer}.btn:hover{background:#555d60}.connected{color:var(--ok);font-weight:800}.waiting{color:var(--warn);font-weight:800}iframe{display:block;width:100%;height:calc(100vh - 58px);border:0;background:#202426}@media(max-width:780px){.status{display:none}.brand{font-size:.85rem}.bar{gap:7px;padding:7px 8px}.code{font-size:.82rem}}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--paper);overflow:hidden}.bar{height:58px;display:flex;align-items:center;gap:12px;padding:8px 14px;background:var(--panel);border-bottom:2px solid var(--gold)}.brand{font-weight:900;color:var(--gold);white-space:nowrap}.status{font-size:.78rem}.code{font-weight:900;letter-spacing:.18em;background:#0f1112;border:1px solid var(--line);border-radius:8px;padding:8px 11px;color:#fff}.spacer{flex:1}.btn{border:1px solid var(--line);border-radius:8px;background:#3e4447;color:#fff;padding:8px 11px;font-weight:800;cursor:pointer}.btn:hover{background:#555d60}.btn.gold{background:var(--gold);color:#151718;border-color:var(--gold)}.connected{color:var(--ok);font-weight:800}.waiting{color:var(--warn);font-weight:800}iframe{display:block;width:100%;height:calc(100vh - 58px);border:0;background:#202426}.qr-backdrop{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:rgba(0,0,0,.68);padding:24px}.qr-backdrop.hidden{display:none}.qr-card{width:min(440px,94vw);background:var(--paper);color:#151718;border-radius:18px;padding:24px;box-shadow:0 20px 70px rgba(0,0,0,.45);text-align:center}.qr-card h2{margin:.1rem 0 .35rem;font-size:1.45rem}.qr-card p{margin:.35rem auto 1rem;max-width:340px;line-height:1.45;color:#444}.qr-code{display:inline-grid;place-items:center;min-width:244px;min-height:244px;padding:12px;background:#fff;border:1px solid #ddd;border-radius:12px;margin:8px auto 14px}.qr-code img,.qr-code canvas{display:block}.qr-pair{font-size:.78rem;color:#666}.qr-pair strong{display:block;margin-top:3px;font-size:1.2rem;letter-spacing:.16em;color:#151718}.qr-actions{display:flex;justify-content:center;gap:8px;margin-top:16px}.qr-actions .btn{font-size:.78rem}.qr-close{background:#fff;color:#151718;border-color:#aaa}@media(max-width:780px){.status{display:none}.brand{font-size:.85rem}.bar{gap:7px;padding:7px 8px}.code{font-size:.82rem}}
 </style>
 </head>
 <body>
@@ -17,9 +17,23 @@
   <div id="connection" class="waiting">Waiting for iPad</div>
   <div class="spacer"></div>
   <button class="btn" id="openProjection">Open Projection</button>
+  <button class="btn gold" id="showQr">Scan iPad QR</button>
   <button class="btn" id="copyLink">Copy iPad Link</button>
 </div>
 <iframe id="command" title="Teacher Command Center"></iframe>
+<div class="qr-backdrop hidden" id="qrBackdrop" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+  <div class="qr-card">
+    <h2 id="qrTitle">Connect Your iPad</h2>
+    <p>Open the Camera app on your iPad and scan this code. Safari will open the correct topic and connect automatically.</p>
+    <div class="qr-code" id="qrCode" aria-label="iPad remote QR code"></div>
+    <div class="qr-pair">Backup pairing code<strong id="qrPairCode">------</strong></div>
+    <div class="qr-actions">
+      <button class="btn qr-close" id="closeQr">Close</button>
+      <button class="btn" id="copyQrLink">Copy Link</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.5/dist/peerjs.min.js"></script>
 <script>
 (function(){
@@ -29,9 +43,14 @@ const topic=(params.get('topic')||'2-2').replace(/[^0-9-]/g,'');
 const frame=document.getElementById('command');
 const codeEl=document.getElementById('code');
 const connEl=document.getElementById('connection');
+const qrBackdrop=document.getElementById('qrBackdrop');
+const qrCode=document.getElementById('qrCode');
+const qrPairCode=document.getElementById('qrPairCode');
 frame.src='command-center-topic-'+topic+'.html';
-let peer=null,conn=null,lastState='';
+let peer=null,conn=null,lastState='',ipadUrl='';
 function makeCode(){return Math.random().toString(36).slice(2,8).toUpperCase().padEnd(6,'X');}
+function buildIpadUrl(code){const url=new URL('ipad-remote.html',location.href);url.searchParams.set('topic',topic);url.searchParams.set('code',code);return url.href;}
+function renderQr(code){ipadUrl=buildIpadUrl(code);qrPairCode.textContent=code;qrCode.innerHTML='';if(window.QRCode){new QRCode(qrCode,{text:ipadUrl,width:220,height:220,correctLevel:QRCode.CorrectLevel.M});}else{qrCode.textContent='QR code unavailable. Use Copy Link instead.';}qrBackdrop.classList.remove('hidden');}
 function frameDoc(){try{return frame.contentDocument||frame.contentWindow.document;}catch(e){return null;}}
 function click(sel){const d=frameDoc(),el=d&&d.querySelector(sel);if(el){el.click();return true;}return false;}
 function readIndex(){const d=frameDoc(),c=d&&d.querySelector('#count');if(!c)return 0;const m=(c.textContent||'').match(/(\d+)\s*\//);return m?Math.max(0,Number(m[1])-1):0;}
@@ -39,11 +58,17 @@ function readState(){const d=frameDoc();if(!d)return null;const count=d.querySel
 function sendState(force){if(!conn||!conn.open)return;const state=readState();if(!state)return;const sig=JSON.stringify({i:state.index,t:state.timer,n:state.notesText});if(force||sig!==lastState){lastState=sig;conn.send(state);}}
 function gotoIndex(target){target=Math.max(0,Number(target)||0);const current=readIndex();const delta=target-current;if(!delta)return;const key=delta>0?'ArrowRight':'ArrowLeft';for(let i=0;i<Math.abs(delta);i++){frame.contentWindow.document.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));}}
 function handle(data){if(!data||typeof data!=='object')return;switch(data.type){case'next':click('#next');break;case'prev':click('#prev');break;case'start':click('#start');break;case'goto':gotoIndex(data.index);break;case'timer-toggle':click('#toggleTimer');break;case'timer-reset':click('#resetTimer');break;case'projection':click('#openProjection');break;case'sync':break;}setTimeout(()=>sendState(true),80);}
-function attach(c){if(conn&&conn.open){try{conn.close();}catch(e){}}conn=c;connEl.textContent='Connecting…';connEl.className='waiting';c.on('open',()=>{connEl.textContent='iPad connected';connEl.className='connected';sendState(true);});c.on('data',handle);c.on('close',()=>{connEl.textContent='Waiting for iPad';connEl.className='waiting';});c.on('error',()=>{connEl.textContent='Connection error';connEl.className='waiting';});}
-function startPeer(){const short=makeCode(),id='bh-'+short.toLowerCase();codeEl.textContent=short;peer=new Peer(id);peer.on('connection',attach);peer.on('error',err=>{if(err&&err.type==='unavailable-id'){try{peer.destroy();}catch(e){}startPeer();}else{connEl.textContent='Pairing unavailable';connEl.className='waiting';}});}
+function attach(c){if(conn&&conn.open){try{conn.close();}catch(e){}}conn=c;connEl.textContent='Connecting…';connEl.className='waiting';c.on('open',()=>{connEl.textContent='iPad connected';connEl.className='connected';qrBackdrop.classList.add('hidden');sendState(true);});c.on('data',handle);c.on('close',()=>{connEl.textContent='Waiting for iPad';connEl.className='waiting';});c.on('error',()=>{connEl.textContent='Connection error';connEl.className='waiting';});}
+function startPeer(){const short=makeCode(),id='bh-'+short.toLowerCase();codeEl.textContent=short;peer=new Peer(id);peer.on('open',()=>renderQr(short));peer.on('connection',attach);peer.on('error',err=>{if(err&&err.type==='unavailable-id'){try{peer.destroy();}catch(e){}startPeer();}else{connEl.textContent='Pairing unavailable';connEl.className='waiting';}});}
+async function copyIpadLink(button){const url=ipadUrl||buildIpadUrl(codeEl.textContent.trim());try{await navigator.clipboard.writeText(url);const old=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=old,1200);}catch(e){prompt('Open this on the iPad:',url);}}
 frame.addEventListener('load',()=>{setInterval(()=>sendState(false),400);});
 document.getElementById('openProjection').addEventListener('click',()=>click('#openProjection'));
-document.getElementById('copyLink').addEventListener('click',async()=>{const code=codeEl.textContent.trim();const url=new URL('ipad-remote.html',location.href);url.searchParams.set('topic',topic);url.searchParams.set('code',code);try{await navigator.clipboard.writeText(url.href);const b=document.getElementById('copyLink');const old=b.textContent;b.textContent='Copied';setTimeout(()=>b.textContent=old,1200);}catch(e){prompt('Open this on the iPad:',url.href);}});
+document.getElementById('showQr').addEventListener('click',()=>renderQr(codeEl.textContent.trim()));
+document.getElementById('closeQr').addEventListener('click',()=>qrBackdrop.classList.add('hidden'));
+qrBackdrop.addEventListener('click',e=>{if(e.target===qrBackdrop)qrBackdrop.classList.add('hidden');});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')qrBackdrop.classList.add('hidden');});
+document.getElementById('copyLink').addEventListener('click',e=>copyIpadLink(e.currentTarget));
+document.getElementById('copyQrLink').addEventListener('click',e=>copyIpadLink(e.currentTarget));
 startPeer();
 })();
 </script>
