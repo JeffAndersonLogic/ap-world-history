@@ -291,11 +291,11 @@
       ),
       evidenceLab: evidence(
         'Evidence Lab: Test a Comparison Before You Write It',
-        'Use both artifacts to test a comparison claim about state formation. Evidence should make the claim narrower and more defensible, not merely decorate it.',
-        'Compare Song examination culture with the Catalan Atlas representation of Mansa Musa. Develop a defensible claim about how states constructed or communicated legitimate authority. Use one specific detail from each artifact and explain how both details support the same comparison. Then qualify the argument by explaining how differences in the artifacts\' purposes or forms limit what can be concluded.',
+        'Choose two cards from different Unit 1 regions and use them to test a comparison claim about state formation. Evidence should make the claim narrower and more defensible, not merely decorate it.',
+        'Choose two evidence cards from different Unit 1 regions. Develop a defensible claim about how those two states constructed or communicated legitimate authority. Use one specific detail from each card and explain how both details support the same comparison. Then qualify the argument by explaining how differences in the cards\' purposes or forms limit what can be concluded.',
         'Argumentation and Comparison (Skills 6.A, 6.B, and 6.D)',
-        ['Song Dynasty', 'civil service examinations', 'Mali', 'Mansa Musa', 'political legitimacy', 'state formation'],
-        ['Makes a defensible comparative claim in one shared category.', 'Uses a specific detail from both artifacts.', 'Explains how each detail supports the comparison.', 'Qualifies the argument using the artifacts\' purposes, forms, or evidentiary limits.']
+        ['state formation', 'political legitimacy', 'centralization', 'administration', 'labor mobilization', 'comparison'],
+        ['Makes a defensible comparative claim in one shared category.', 'Uses a specific detail from each of the two chosen cards.', 'Explains how each detail supports the comparison.', 'Qualifies the argument using the cards\' purposes, forms, or evidentiary limits.']
       ),
       primarySource: source(
         'Paired Primary Sources: Royal Authority in Mali and England',
