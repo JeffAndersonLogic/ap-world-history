@@ -25,16 +25,12 @@ body.present-here .topbar,body.present-here main>section:not(.presenter-section)
 <div class="section-head"><div><div class="eyebrow">Integrated Presentation</div><h2>Teach from the notes. Project the evidence.</h2></div><p>Maps reserve dedicated text bands so labels never cover geography.</p></div>
 <section class="presenter-section"><div class="presenter"><div class="stage"><div class="toolbar"><button class="btn" id="prev">← Back</button><button class="btn gold" id="next">Next →</button><button class="btn" id="start">Start</button><span class="count" id="count"></span></div><div class="preview" id="preview"></div></div><aside class="card notes" id="notes"></aside></div><div class="kbd">← → slides · P projection · F present here · Esc exit</div></section>
 </main>
-<script src="../assets/data/lesson-2-2-mongol-empire.js?v=response-id-fix-v1"></script>
-<script src="../assets/data/lesson-2-2-renderer-config.js?v=response-id-fix-v1"></script>
 <script src="data/topic-2-2-teaching.js?v=production-v5"></script>
-<script src="data/topic-2-2-visual-standard.js?v=production-v5"></script>
-<script src="data/topic-2-2-production-overrides.js?v=production-v5"></script>
 <script src="data/topic-2-2-renderer.js?v=production-v5"></script>
 <script>
 (function(){
 'use strict';
-const T=window.BEHISTORICAL_TEACHING,L=window.BEHISTORICAL_LESSON||{},R=window.BH22_RENDERER,$=s=>document.querySelector(s);if(!T||!R)return;
+const T=window.BEHISTORICAL_TEACHING,L={},R=window.BH22_RENDERER,$=s=>document.querySelector(s);if(!T||!R)return;
 const style=document.createElement('style');style.textContent=R.styles();document.head.appendChild(style);
 $('#headerTitle').textContent='Topic '+T.meta.topic+' · '+T.meta.title;$('#heroTitle').textContent=T.meta.title;$('#essentialQuestion').textContent=T.meta.essentialQuestion;$('#endTarget').textContent=T.meta.endTarget;$('#datePill').textContent=T.meta.date;$('#apPill').textContent=T.meta.apFocus;
 $('#quick').innerHTML=(T.quickLaunch||[]).map(x=>'<a class="btn" target="_blank" href="'+R.esc(x.url)+'">'+R.esc(x.label)+'</a>').join('');
