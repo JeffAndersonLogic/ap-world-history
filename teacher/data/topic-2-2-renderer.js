@@ -18,6 +18,30 @@
   }
   function credit(v){ return v && v.credit ? esc(v.credit) : ''; }
 
+  const reconstructionEmbeds = {
+    'topic-2-2-mounted-archers.webp': {
+      url: 'https://www.canva.com/design/DAHVCSUFRwU/view?embed',
+      fallback: 'https://www.canva.com/d/2ztGvvGEeGAp1Pu',
+      label: 'Historical reconstruction of coordinated Mongol mounted archers on the steppe'
+    },
+    'topic-2-2-yam-relay.webp': {
+      url: 'https://www.canva.com/design/DAHVCfViZgE/view?embed',
+      fallback: 'https://www.canva.com/d/ojwRXCKjMeXuSOj',
+      label: 'Historical reconstruction of a mounted Mongol courier approaching a Yam relay station'
+    },
+    'topic-2-2-protected-caravan.webp': {
+      url: 'https://www.canva.com/design/DAHVCV0w_ig/view?embed',
+      fallback: 'https://www.canva.com/d/y5DY_EyYWEyY2U9',
+      label: 'Historical reconstruction of a protected caravan moving through Mongol-controlled territory'
+    }
+  };
+
+  function reconstructionEmbed(v){
+    const u = String((v && v.url) || '');
+    const key = Object.keys(reconstructionEmbeds).find(k => u.indexOf(k) !== -1);
+    return key ? reconstructionEmbeds[key] : null;
+  }
+
   function renderVisual(v, L, cls){
     const u = vurl(v, L);
     if (!u) return '<div class="visual-missing">Visual unavailable</div>';
@@ -43,9 +67,14 @@
     }
 
     if (s.kind === 'reconstruction') {
+      const x = reconstructionEmbed(s.visual);
+      const media = x
+        ? '<div class="reconstruction-embed-wrap"><iframe class="reconstruction-embed-frame" src="'+esc(x.url)+'" title="'+esc(x.label||s.title)+'" allow="fullscreen" allowfullscreen></iframe>'+
+          (x.fallback?'<a class="reconstruction-embed-fallback" target="_blank" rel="noreferrer" href="'+esc(x.fallback)+'">Open reconstruction</a>':'')+'</div>'
+        : renderVisual(s.visual,L,'reconstruction-img');
       return '<div class="slide reconstruction-slide">'+
         '<div class="reconstruction-header">'+eyebrow+'<h2>'+esc(s.title)+'</h2>'+sub+'</div>'+
-        '<div class="reconstruction-canvas">'+renderVisual(s.visual,L,'reconstruction-img')+'</div>'+
+        '<div class="reconstruction-canvas">'+media+'</div>'+
         '<div class="reconstruction-footer"><span>Historical reconstruction — AI generated</span>'+
         (credit(s.visual)?'<span class="credit">'+credit(s.visual)+'</span>':'')+
         '</div></div>';
@@ -106,7 +135,7 @@
 
       .evidence-slide{display:grid;grid-template-rows:minmax(0,1fr) auto;background:#0b0d0e}.evidence-visual{min-height:0;padding:2.2vh 2.2vw;display:grid;place-items:center}.evidence-img{width:100%;height:100%;object-fit:contain}.evidence-band{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,.35fr);gap:2vw;align-items:end;padding:2.1vh 4vw 2.4vh;background:#151819;border-top:1px solid #3E4447}.evidence-band .slide-eyebrow{margin-bottom:.7vh}.evidence-band h2{font-size:clamp(1.7rem,3vw,3.4rem);max-width:75vw}.evidence-band .footer-copy{margin-top:.7vh}.evidence-band .credit{text-align:right}
 
-      .reconstruction-slide{display:grid;grid-template-rows:auto minmax(0,1fr) auto;background:#0b0d0e}.reconstruction-header{padding:2vh 4vw 1.45vh;background:#151819;border-bottom:1px solid #3E4447}.reconstruction-header .slide-eyebrow{margin-bottom:.55vh}.reconstruction-header h2{font-size:clamp(1.7rem,3vw,3.45rem);max-width:88vw}.reconstruction-header .subtitle{font-size:clamp(.9rem,1.25vw,1.3rem);max-width:82vw;margin-top:.8vh}.reconstruction-canvas{min-height:0;background:#000;overflow:hidden;display:grid;place-items:center;padding:0}.reconstruction-img{width:100%;height:100%;object-fit:contain;display:block;background:#000}.reconstruction-footer{display:flex;justify-content:space-between;align-items:center;gap:2vw;padding:1vh 4vw 1.2vh;background:#151819;border-top:1px solid #3E4447;font:800 clamp(.52rem,.7vw,.74rem) var(--ui);letter-spacing:.08em;text-transform:uppercase;color:#D2B48C}.reconstruction-footer .credit{text-align:right;text-transform:none;letter-spacing:0}
+      .reconstruction-slide{display:grid;grid-template-rows:auto minmax(0,1fr) auto;background:#0b0d0e}.reconstruction-header{padding:2vh 4vw 1.45vh;background:#151819;border-bottom:1px solid #3E4447}.reconstruction-header .slide-eyebrow{margin-bottom:.55vh}.reconstruction-header h2{font-size:clamp(1.7rem,3vw,3.45rem);max-width:88vw}.reconstruction-header .subtitle{font-size:clamp(.9rem,1.25vw,1.3rem);max-width:82vw;margin-top:.8vh}.reconstruction-canvas{min-height:0;background:#000;overflow:hidden;display:grid;place-items:center;padding:0}.reconstruction-img{width:100%;height:100%;object-fit:contain;display:block;background:#000}.reconstruction-embed-wrap{position:relative;width:100%;height:100%;min-height:0;background:#000}.reconstruction-embed-frame{display:block;width:100%;height:100%;border:0;background:#000}.reconstruction-embed-fallback{position:absolute;right:12px;bottom:12px;z-index:2;padding:7px 10px;border-radius:999px;background:rgba(0,0,0,.74);color:#C9A46A;text-decoration:none;font:800 .58rem var(--ui);letter-spacing:.04em;text-transform:uppercase}.reconstruction-footer{display:flex;justify-content:space-between;align-items:center;gap:2vw;padding:1vh 4vw 1.2vh;background:#151819;border-top:1px solid #3E4447;font:800 clamp(.52rem,.7vw,.74rem) var(--ui);letter-spacing:.08em;text-transform:uppercase;color:#D2B48C}.reconstruction-footer .credit{text-align:right;text-transform:none;letter-spacing:0}
 
       .map-slide,.compare-slide{display:grid;grid-template-rows:auto minmax(0,1fr) auto;background:#0b0d0e}.map-header{position:relative;padding:2.2vh 4vw 1.6vh;background:#151819;border-bottom:1px solid #3E4447}.map-header .slide-eyebrow{margin-bottom:.55vh}.map-header h2{font-size:clamp(1.75rem,3.25vw,3.7rem);max-width:86vw}.map-label{position:absolute;right:4vw;top:50%;transform:translateY(-20%);font:800 clamp(.58rem,.75vw,.78rem) var(--ui);letter-spacing:.12em;color:#D2B48C;text-transform:uppercase}.map-canvas{min-height:0;padding:1.4vh 2vw;display:grid;place-items:center}.map-img{width:100%;height:100%;object-fit:contain}.map-footer{display:flex;justify-content:space-between;align-items:center;gap:2vw;padding:1.2vh 4vw 1.5vh;background:#151819;border-top:1px solid #3E4447}.map-footer .credit{text-align:right;max-width:44vw}
 
