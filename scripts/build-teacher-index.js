@@ -28,7 +28,7 @@ const TOOLS = [
   { label: 'Run of Show', desc: 'A minute-by-minute pacing cockpit for a class period: retrieval prompts, teacher moves, a class timer, and a Must-Haves reference.', href: ROS_INDEX_OUT },
   { label: 'Topic 1.7 Interactive Lesson', desc: 'The Unit 1 synthesis pilot: Teacher Command Center + integrated Presentation Mode for comparison and argumentation.', href: 'command-center-topic-1-7.html' },
   { label: 'Topic 2.1 Interactive Lesson', desc: 'The Silk Roads: Teacher Command Center + integrated Presentation Mode for causation and economic systems.', href: 'command-center-topic-2-1.html' },
-  { label: 'Topic 2.2 Interactive Lesson', desc: 'The Mongol Empire: Teacher Command Center + integrated Presentation Mode for continuity and change, governance, and exchange.', href: 'command-center-topic-2-2.html' },
+  { label: 'Topic 2.2 Teaching OS', desc: 'The Mongol Empire: cinematic projection, run of show, teacher intelligence, AP reasoning, and iPad control in one surface.', href: 'topic-2-2-os.html' },
   { label: 'Skills Lens', desc: 'Drop a Canvas submissions zip to see completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
 ];
 
@@ -45,7 +45,7 @@ const TOOLS = [
 const INTERACTIVE_TOPICS = [
   { key: '1.7', out: 'command-center-topic-1-7.html' },
   { key: '2.1', out: 'command-center-topic-2-1.html' },
-  { key: '2.2', out: 'command-center-topic-2-2.html' },
+  { key: '2.2', out: 'topic-2-2-os.html' },
 ];
 
 module.exports = { TOOLS, INTERACTIVE_TOPICS };
