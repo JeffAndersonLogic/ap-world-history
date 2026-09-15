@@ -2,7 +2,8 @@
 'use strict';
 
 /**
- * Generated readings must match the content model that produces them.
+ * Generated readings and derived classroom artifacts must match the content
+ * model that produces them.
  *
  *   node scripts/test/readings-reproducible.test.js
  *
@@ -12,11 +13,6 @@
  * the intended one.
  *
  * Offline and dependency-free, so it runs in the push gate.
- *
- * Covers every generated reading: Foundations, the 58 unit readings, and Units 6
- * and 9. For Units 6 and 9 it also covers the lesson data, shells and BeInTheRoom
- * scenarios those scripts produce, because intercepting their write helper
- * catches every file they touch, not just the readings.
  */
 
 const { spawnSync } = require('child_process');
@@ -33,13 +29,14 @@ const SUITES = [
   ['scripts/build-unit9.js', 'Unit 9 readings, data, shells and rooms'],
   ['scripts/build-deep-readings.js', 'deep readings vs scripts/lib/deep-reading-content/*'],
   ['scripts/build-ebook.js', 'eBook volumes vs the same chapter modules'],
-  ['scripts/build-student-decks.js', 'student decks vs their teacher decks, notes stripped'],
+  ['scripts/build-student-decks.js', 'legacy Teach Mode student decks vs their teacher decks, notes stripped'],
+  ['scripts/build-teaching-os-student-decks.js', 'Teaching OS student decks vs canonical teacher presentation data'],
   ['scripts/build-run-of-show.js', 'Run of Show pacing pages vs each topic\'s runOfShow block'],
   ['scripts/build-teacher-index.js', 'teacher command center vs its declared tools and Run of Show topics']
 ];
 
 let failed = 0;
-console.log(`\n${W}Generated readings match their content model${X}\n`);
+console.log(`\n${W}Generated artifacts match their content model${X}\n`);
 
 for (const [script, label] of SUITES) {
   const run = spawnSync(process.execPath, [script, '--check'], { cwd: ROOT, encoding: 'utf8' });
@@ -60,4 +57,4 @@ if (failed) {
   console.log(`${R}${W}${failed} generated set(s) drifted from the content model.${X}`);
   process.exit(1);
 }
-console.log(`${G}${W}All generated readings match the content model.${X}`);
+console.log(`${G}${W}All generated artifacts match the content model.${X}`);
