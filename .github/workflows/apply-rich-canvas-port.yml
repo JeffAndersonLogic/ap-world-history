@@ -1,0 +1,45 @@
+name: Apply Rich Canvas Clipboard Port
+
+on:
+  push:
+    branches:
+      - feature/behistorical-rich-canvas-clipboard
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/behistorical-rich-canvas-clipboard
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Apply canonical renderer changes
+        run: node scripts/apply-rich-canvas-clipboard-port.js
+
+      - name: Run offline suite before committing
+        run: node scripts/run-tests.js offline
+
+      - name: Commit migrated sources
+        run: |
+          if git diff --quiet; then
+            echo "No migration changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/behistorical-topic-renderer-v1.js \
+                  foundations/foundations-topic-renderer.js \
+                  scripts/run-tests.js \
+                  docs/CANVAS-CAPTURE.md
+          git commit -m "Port rich Canvas submission formatting across BeHistorical"
+          git push origin HEAD:feature/behistorical-rich-canvas-clipboard
