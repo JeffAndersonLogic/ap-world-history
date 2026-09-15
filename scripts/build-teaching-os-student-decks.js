@@ -120,7 +120,7 @@ function topic21Slides(teaching) {
   const slides = teaching.slides.map(src => {
     const s = baseStudentSlide(src);
     if (src.kind === 'reconstruction') s.kind = 'hero';
-    if (src.kind === 'image') { s.kind = 'hero'; s.position = s.position || 'left'; }
+    if (src.kind === 'image') s.kind = 'map';
     if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
 
     const mechanism = src.phase === 'causes' ? topic21Mechanism(src.title) : null;
@@ -134,6 +134,8 @@ function topic21Slides(teaching) {
     return s;
   });
 
+  // The teacher OS inserts this network-node visual immediately before the
+  // Buddhism clip. Keep the student deck in the exact same instructional order.
   const citySlide = {
     kind: 'nodes',
     eyebrow: 'Network Nodes',
@@ -165,7 +167,7 @@ function topic22Slides(teaching) {
 
     // Student pages are intentionally local-asset-first. Historical visuals that
     // exist only as remote teacher references become clean text-led slides.
-    if (s.kind === 'hero' && s.visual && /^https?:/.test(s.visual.url)) {
+    if ((s.kind === 'hero' || s.kind === 'map') && s.visual && /^https?:/.test(s.visual.url)) {
       s.kind = 'prompt';
       delete s.visual;
       delete s.position;
