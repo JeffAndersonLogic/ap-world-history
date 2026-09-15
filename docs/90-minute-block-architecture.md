@@ -1,8 +1,9 @@
 # The 90-Minute Block: Evaluating the Five-Phase Redesign
 
 **Date:** 2026-09-15
-**Status:** Evaluation complete. Three recommendations adopted in principle, two
-rejected. No code changed by this document.
+**Status:** Evaluation complete, revised 2026-09-15 after a second round. Four
+recommendations adopted in principle, two rejected. No code changed by this
+document.
 **Prompted by:** A ChatGPT assessment proposing that BeHistorical's default lesson
 be rebuilt around five phases (HOOK, TEACH, INVESTIGATE, SYNTHESIZE, PROVE) on the
 grounds that the current design spends most of a 90-minute block on presentation.
@@ -131,6 +132,77 @@ course optimizes the wrong variable.
 
 ---
 
+## Second round, and three corrections it forces
+
+The proposal's author reviewed the measurements above and withdrew the redesign,
+converging on the same three recommendations. Two additions from that round are
+adopted; three facts checked afterwards correct the plan as it stood.
+
+### Adopted: Teacher Orchestration Count
+
+Minutes are the wrong unit on their own. A block can be 60% student-working time
+and still exhaust the teacher, because what costs the teacher is **initiating**
+something new: explaining directions, switching the window, regrouping the room.
+So count teacher-initiated launches, not phases. Concurrent work counts once:
+Topic 1.4 launches Map and First & 10 together, so those two phases are one
+launch.
+
+| Topic | Phases | Concurrent | Orchestration count |
+|---|---|---|---|
+| 1.4 Americas | 9 | Map with First & 10 | 8 |
+| 1.5 Africa | 9 | Map with First & 10 | 8 |
+| 1.6 Europe | 9 | Map with First & 10 | 8 |
+| 1.7 Comparison | 10 | none | 10 |
+
+**Target: 5 to 7 launches per block.** Every authored topic today is over it, and
+1.7, the newest, is the worst. The consolidation in the appendix lands at 6.
+
+### Adopted: an explicit flex reserve, which means 80 authored minutes
+
+A 90-minute period yields about 85 usable minutes once attendance, settling and
+packing up are gone. A lesson authored to exactly 85 still has no room for a
+Canvas outage, a long question, or a fire drill, so the reserve has to be
+explicit rather than assumed.
+
+**The numbers are therefore: 90 scheduled, 85 usable, 80 authored, 5 held in
+reserve.** The budget check, when built, should fail above 80 rather than 85.
+The reserve is taken out of every phase except the investigation, which is
+protected.
+
+This tightens the overrun considerably. Against 80 authored, Topics 1.4, 1.5,
+1.6 and 1.7 are 13, 12, 16 and 10 minutes over.
+
+### Correction: Topic 1.4 cannot be the pilot
+
+The pilot's success criteria are all classroom observations: did students stay
+engaged longer, did the room need less transitioning, did the block finish
+without rushing. Those require teaching it.
+
+**Topic 1.4 was taught in early September and the course is past it.** As of
+2026-09-15 the schedule has Silver on 1.7 today, then 2.1 on the 16th and 17th,
+2.2 on the 18th and 21st, 2.3 on the 22nd and 23rd. A restructured 1.4 could be
+written but not tested until next year.
+
+**Topic 2.3 is the recommended pilot instead.** Three reasons. It is seven days
+out, which is enough time to author and not enough to gold-plate. Its Canvas
+assignment already requires Module 07, so the cross-document Evidence Lab
+question has somewhere to land. And it has **neither** a Run of Show nor a
+command center, which makes it the right test: the open question is whether
+topics 2.3 through 9.9 can inherit the standard, and a pilot on a topic that
+already has a bespoke surface answers a question nobody is asking.
+
+Topic 1.4 stays useful as the paper exercise that defines the target shape,
+because it is the one fully authored pacing block with a real overrun. It just
+cannot be the thing that validates it.
+
+### Not verified
+
+The second round characterizes recent presentation, image-handling, remote
+control and deployment work as too technically ambitious and fragile. That claim
+was not audited for this document and is neither endorsed nor rejected here. The
+most recent commit does replace a newly added iPad remote transport, which is
+consistent with churn, but one commit is not evidence of fragility.
+
 ## Decisions
 
 **Adopted in principle.** No implementation authorized by this document.
@@ -141,55 +213,68 @@ course optimizes the wrong variable.
    seven without losing a single Canvas artifact.
 2. **One cross-document question per Evidence Lab**, replacing "choose one
    card." Content work across topics, starting with 5.1, which is ready today.
-3. **A hard budget of 85 usable minutes**, enforced by a machine check in the
+3. **A hard budget of 80 authored minutes**, enforced by a machine check in the
    offline suite, so a Run of Show cannot be authored past the bell again.
+4. **Teacher Orchestration Count as a second budget**, targeting 5 to 7
+   teacher-initiated launches per block, measured with concurrent work counted
+   once.
 
 **Rejected.**
 
-4. **The five phase names.** The existing vocabulary is shared by students, the
+5. **The five phase names.** The existing vocabulary is shared by students, the
    Canvas assignments, the announcements board and the Skills Lens. Renaming it
    costs all of that and buys nothing the consolidation principle does not
    already buy.
-5. **Retreating from the command centers.** They are the current direction and
+6. **Retreating from the command centers.** They are the current direction and
    they carry the pacing inside the teaching surface. Run of Show remains the
    fallback for topics without one.
 
 **Parameters set.**
 
-- **Usable class time is 85 minutes**, not 90. Roughly five minutes go to
-  settling and packing up. Budget checks and authored pacing use 85.
-- **The pilot topic is 1.4 Americas**, when a pilot is authorized. It has an
-  authored Run of Show that has been taught from, so the pilot restructures
-  something validated rather than inventing one, and at 93 minutes it carries
-  the second-worst overrun.
+- **90 scheduled, 85 usable, 80 authored, 5 in reserve.** Budget checks use 80.
+- **The pilot topic is 2.3**, not 1.4, because the course is already past 1.4 and
+  a pilot that cannot be taught cannot be evaluated. See the correction above.
 
 ## What is not decided
 
-Whether the consolidation generalizes past Topic 1.4. Whether the 85-minute
-budget check should fail a push or only warn. Whether the cross-document Evidence
-Lab rewrite is a per-topic authoring pass or a template change. None of these
-should be settled before the 1.4 pilot has been taught.
+Whether the consolidation generalizes past one topic. Whether the budget checks
+should fail a push or only warn. Whether the cross-document Evidence Lab rewrite
+is a per-topic authoring pass or a template change. Whether the architecture
+freezes after one pilot or two. None of these should be settled before the pilot
+has been taught in a real block.
+
+The larger question the second round raises and this document does not answer:
+six of 77 topics have a teacher pacing surface, and the development pattern has
+been to deepen those six rather than widen to the other 71. Whatever comes out of
+the pilot is only worth having if topics 2.4 through 9.9 inherit it without being
+individually authored.
 
 ---
 
-## Appendix: an illustrative consolidation of Topic 1.4
+## Appendix: an illustrative consolidation, using Topic 1.4 as the worked case
 
-Not a decision, a starting point for the pilot. Current design left, consolidated
-right.
+Not a decision, and not the pilot (see the correction above). Topic 1.4 is used
+here because it is the one fully authored pacing block with a real overrun, so it
+shows what the target shape costs. Current design left, consolidated right.
 
-| Current (93 min, 9 phases) | Consolidated (85 min, 7 phases) |
+| Current (93 min, 9 phases, 8 launches) | Consolidated (80 min, 7 phases, 6 launches) |
 |---|---|
 | BeReady 5 | BeReady 5 |
-| Map 7 + First & 10 11 | Map and First & 10 16 |
-| Content 21 | Content 18 |
-| Checkpoint 1 8 | **Investigate 25** (Evidence Lab, with Checkpoint 1 as its closing capture) |
-| Evidence Lab 16 | Debrief 8 |
+| Map 7 + First & 10 11 | Map and First & 10 15, launched together |
+| Content 21 | Content 16 |
+| Checkpoint 1 8 | **Investigate 25, protected** (Evidence Lab, with Checkpoint 1 as its closing capture) |
+| Evidence Lab 16 | Debrief 7 |
 | Debrief 9 | Checkpoint 2 10 |
-| Checkpoint 2 11 | Exit Retrieval 3 |
+| Checkpoint 2 11 | Exit Retrieval 2 |
 | Exit Retrieval 5 | |
 
-Average phase length moves from 10.3 to 12.1 minutes, the longest unbroken
-student block from 18 to 25, and the total comes inside the bell with nothing
-dropped. Checkpoint 1 stops being a standalone mode switch and becomes the thing
+Orchestration count moves from 8 launches to 6, inside the 5 to 7 target. The
+longest unbroken student block moves from 18 minutes to 25. The total comes in at
+80 with 5 minutes held in reserve, and nothing is dropped: every Canvas artifact
+survives. Checkpoint 1 stops being a standalone mode switch and becomes the thing
 a student writes at the end of the investigation, which is closer to what it was
 always for.
+
+The 13 minutes come out of Content (5), the opening independent work (1), Debrief
+(2), Exit (3) and the reserve (5 of the original 8 over). The investigation is
+the one phase that never gives minutes back.
