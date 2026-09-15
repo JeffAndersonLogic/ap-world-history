@@ -39,6 +39,12 @@
   lesson.beInTheRoom = { url: '../beintheroom/unit-2/silk-road-merchant.html', desc: 'Become a Silk Road merchant in the 13th century, negotiate with caravanserai owners, and decide which goods to carry across Central Asia.' };
   lesson.beSurreal = { title: 'BeSurreal: Noodles, Pasta, and Global Food', text: 'Historians debate whether pasta traveled westward from China along Silk Road routes, or whether it developed independently in the Mediterranean world. Either way, the Silk Roads carried food crops, cooking techniques, and agricultural knowledge across Afro-Eurasia. Cotton, citrus, and sugarcane all moved along these networks, reshaping diets and landscapes.', prompt: 'What does the movement of crops and food ideas along trade routes reveal about connectivity that luxury goods alone cannot?' };
 
+  lesson.classPresentation = {
+    title: 'Class Slides: The Silk Roads',
+    desc: 'Follow along during class on your own device, or reopen these slides anytime to review the systems that made Silk Road exchange possible and the effects of greater connectivity.',
+    url: 'presentation-topic-2-1-student.html'
+  };
+
   lesson.skillBuilder = {
     label: 'Causation practice', title: 'AP Skill Builder: Build a Silk Roads Cause-and-Effect Chain', intro: 'Causation asks WHY a development occurred, HOW a cause produced an outcome, and WHAT effects followed. For the Silk Roads, separate enabling causes from effects, then make the connection between them explicit. Do not simply list one cause and one effect as unrelated facts.',
     steps: [

@@ -86,9 +86,32 @@ css.textContent=`
 .map-canvas,.compare-image{overflow:hidden!important}
 .map-canvas img[src*="Map%20of%20the%20Khanates"],.compare-image img[src*="Map%20of%20the%20Khanates"]{width:auto!important;height:auto!important;max-width:100%!important;max-height:100%!important;min-width:0!important;min-height:0!important;object-fit:contain!important;object-position:center center!important;display:block!important}
 
+/* Teacher surface: prioritize the stage and readable quick-reference intelligence. */
+body:not(.project-mode) .cockpit{max-width:1860px!important;grid-template-columns:minmax(0,1fr) 430px!important;gap:16px!important}
+body:not(.project-mode) .timeline{display:none!important}
+body.ros-open:not(.project-mode) .cockpit{grid-template-columns:240px minmax(0,1fr) 430px!important}
+body.ros-open:not(.project-mode) .timeline{display:flex!important}
+body:not(.project-mode) .intel-top{padding:16px 17px!important}
+body:not(.project-mode) .intel-top .phase{font-size:.62rem!important}
+body:not(.project-mode) .intel-top h2{font-size:1.18rem!important;line-height:1.18!important}
+body:not(.project-mode) .intel-scroll{padding:13px 15px 17px!important}
+body:not(.project-mode) .cue{padding:13px 14px!important;margin-bottom:10px!important}
+body:not(.project-mode) .cue b{font-size:.62rem!important;margin-bottom:7px!important}
+body:not(.project-mode) .cue p,body:not(.project-mode) .cue li{font-size:.89rem!important;line-height:1.52!important}
+body:not(.project-mode) .cue.source a{font-size:.76rem!important}
+body:not(.project-mode) .mission .question{font-size:.9rem!important;line-height:1.4!important}
+body:not(.project-mode) .flow-card .name{font-size:.75rem!important}
+body:not(.project-mode) .flow-card .range{font-size:.55rem!important}
+.project-mode #runOfShowToggle{display:none!important}
+@media(max-width:1320px){body:not(.project-mode) .cockpit{grid-template-columns:minmax(0,1fr) 390px!important}body.ros-open:not(.project-mode) .cockpit{grid-template-columns:215px minmax(0,1fr) 390px!important}body:not(.project-mode) .cue p,body:not(.project-mode) .cue li{font-size:.84rem!important}}
+
 /* Slide 1: keep the title in the upper-left of the image. */
 .hero-slide:has(img[src*="Steppes%20of%20Asia"]) .copy{left:4.2%!important;top:5.2%!important;bottom:auto!important;width:min(52%,780px)!important}
 .hero-slide:has(img[src*="Steppes%20of%20Asia"]) .veil{background:linear-gradient(135deg,rgba(3,5,6,.90) 0%,rgba(3,5,6,.63) 35%,rgba(3,5,6,.14) 66%,rgba(3,5,6,.06) 100%)!important}
+
+/* Slide 5: keep the museum as the focal point; move the organization text to the right. */
+.hero-slide:has(img[src$="Chinggis%20Museum.jpg"]) .copy{left:auto!important;right:4%!important;bottom:10%!important;width:min(42%,700px)!important}
+.hero-slide:has(img[src$="Chinggis%20Museum.jpg"]) .veil{background:linear-gradient(270deg,rgba(3,5,6,.94) 0%,rgba(3,5,6,.73) 33%,rgba(3,5,6,.16) 59%,rgba(3,5,6,.02) 78%)!important}
 
 /* Slide 6: the archers belong to mobility. Put the text on the right so the far-left archer stays visible. */
 .hero-slide:has(img[src*="Cinematic%20Mongol%20Archers"]) .copy{left:auto!important;right:4%!important;bottom:11%!important;width:min(41%,690px)!important}
@@ -117,6 +140,7 @@ css.textContent=`
 .project-mode .hero-slide:has(img[src*="assets/images/topics/2-2/"]) .copy{width:min(50%,900px);padding:1.5rem 1.7rem}
 .project-mode .hero-slide:has(img[src*="assets/images/topics/2-2/"]) h2{font-size:clamp(4rem,5.4vw,6.4rem)}
 .project-mode .hero-slide:has(img[src*="Steppes%20of%20Asia"]) .copy{left:4%!important;top:4.5%!important;bottom:auto!important;width:min(48%,900px)!important}
+.project-mode .hero-slide:has(img[src$="Chinggis%20Museum.jpg"]) .copy{left:auto!important;right:4%!important;bottom:9%!important;width:min(40%,780px)!important}
 .project-mode .hero-slide:has(img[src*="Cinematic%20Mongol%20Archers"]) .copy{left:auto!important;right:4%!important;bottom:10%!important;width:min(40%,760px)!important}
 .project-mode .hero-slide:has(img[src*="Cinematic%20Mongol%20city%20gate"]) .copy{left:0!important;right:0!important;top:0!important;bottom:auto!important;width:auto!important;height:30%!important;min-height:0!important;padding:1.4vh 4vw!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
 .project-mode .hero-slide:has(img[src*="Cinematic%20Mongol%20city%20gate"]) .copy h2{font-size:clamp(3rem,4.15vw,5rem)!important;line-height:.95!important}
@@ -129,4 +153,18 @@ css.textContent=`
 .project-mode .hero-slide:has(img[src*="Chinggis%20Museum%20Donoho"]) .copy .sub{font-size:clamp(1.3rem,1.65vw,1.9rem)!important}
 `;
 document.head.appendChild(css);
+
+function installTeacherReadability(){
+  const bar=document.querySelector('.appbar');
+  if(!bar||document.getElementById('runOfShowToggle'))return;
+  const btn=document.createElement('button');
+  btn.className='btn';btn.id='runOfShowToggle';btn.type='button';btn.textContent='Run of Show';btn.setAttribute('aria-pressed','false');
+  const anchor=document.getElementById('briefingBtn');
+  if(anchor)bar.insertBefore(btn,anchor);else bar.appendChild(btn);
+  btn.addEventListener('click',()=>{
+    const open=document.body.classList.toggle('ros-open');
+    btn.textContent=open?'Hide Run of Show':'Run of Show';btn.setAttribute('aria-pressed',String(open));
+  });
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',installTeacherReadability);else installTeacherReadability();
 })();

@@ -76,8 +76,8 @@ async function heroGeometry(page){return page.locator('.hero-slide').evaluate(el
     await page.locator('#rail button[data-i="4"]').click();await page.waitForTimeout(60);
     await verifyContainedImage(page,'img[src*="Silk%20Road%20Map.png"]','2.1 detailed Silk Road map');
 
+    await page.locator('#runOfShowToggle').click();
     const cause=page.locator('.flow-card').filter({hasText:'Teach Causes'});await cause.click();await page.waitForTimeout(40);check('2.1 merchant-relay cause remains an intentional mechanism view',await page.locator('.mechanism-slide .mechanism-node').count()===4,'nodes='+await page.locator('.mechanism-slide .mechanism-node').count());
-
     await page.locator('#rail button[data-i="8"]').click();await page.waitForTimeout(60);
     await verifyContainedImage(page,'img[src*="Caravanserai%20Reconstruction"]','2.1 caravanserai reconstruction');await verifyHeroOverlay(page,'2.1 caravanserai reconstruction');
     check('2.1 caravanserai is local and no Canva iframe remains',await page.locator('iframe[src*="canva"]').count()===0);

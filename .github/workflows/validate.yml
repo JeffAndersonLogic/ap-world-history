@@ -67,3 +67,6 @@ jobs:
       # verified nothing at all.
       - name: Modal focus, lightbox, confidence, Skills Lens
         run: node scripts/run-tests.js browser --strict
+
+      - name: Student decks and teacher readability
+        run: node scripts/test/student-presentations.test.js
