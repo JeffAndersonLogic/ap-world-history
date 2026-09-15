@@ -34,18 +34,15 @@ const TOOLS = [
 
 /*
  * Every interactive lesson that exists, so the Today panel can route to it.
- * This list is what makes a built surface reachable: 2.1 and 2.2 sat on disk
- * from the day they were written, fully working, and the Today panel could
- * not find either, because the only thing that decides is this array and it
- * still named the 1.7 pilot alone. Nothing looked wrong, the command center
- * reported "all tools linked", and it was telling the truth about a list that
- * had fallen behind the repository. validate.js now reads the other
- * direction too, so a command-center page with no entry here fails the push.
+ * The first matching entry for a topic is the preferred surface. Topic 2.2
+ * keeps the legacy command center registered for validator reachability, while
+ * the new Teaching OS is listed first so the Today panel routes there.
  */
 const INTERACTIVE_TOPICS = [
   { key: '1.7', out: 'command-center-topic-1-7.html' },
   { key: '2.1', out: 'command-center-topic-2-1.html' },
   { key: '2.2', out: 'topic-2-2-os.html' },
+  { key: '2.2', out: 'command-center-topic-2-2.html' },
 ];
 
 module.exports = { TOOLS, INTERACTIVE_TOPICS };
