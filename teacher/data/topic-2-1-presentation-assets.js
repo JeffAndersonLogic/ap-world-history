@@ -25,6 +25,7 @@ if(networkMap){
 const caravanserai=byTitle('Distance needs infrastructure');
 if(caravanserai){
   caravanserai.kind='hero';
+  caravanserai.position='right';
   caravanserai.visual=visual('2.1 - Caravanserai Reconstruction.png','Historical reconstruction of a caravanserai serving long-distance merchants','HISTORICAL RECONSTRUCTION — AI GENERATED');
   caravanserai.footer='';
   caravanserai.notes=caravanserai.notes||{};
