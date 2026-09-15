@@ -67,6 +67,26 @@ css.textContent=`
 .hero-slide:has(img[src*="Kashgar"]) .copy{width:min(40%,620px);padding:1rem 1.15rem}
 .hero-slide:has(img[src*="Kashgar"]) h2{font-size:clamp(1.75rem,3vw,3.4rem)}
 .hero-slide:has(img[src*="Kashgar"]) .sub{font-size:clamp(.8rem,1.1vw,1.1rem)}
+
+/* Teacher surface: more stage, larger quick-reference text, Run of Show on demand. */
+body:not(.project-mode) .cockpit{max-width:1860px!important;grid-template-columns:minmax(0,1fr) 430px!important;gap:16px!important}
+body:not(.project-mode) .timeline{display:none!important}
+body.ros-open:not(.project-mode) .cockpit{grid-template-columns:240px minmax(0,1fr) 430px!important}
+body.ros-open:not(.project-mode) .timeline{display:flex!important}
+body:not(.project-mode) .intel-top{padding:16px 17px!important}
+body:not(.project-mode) .intel-top .phase{font-size:.62rem!important}
+body:not(.project-mode) .intel-top h2{font-size:1.18rem!important;line-height:1.18!important}
+body:not(.project-mode) .intel-scroll{padding:13px 15px 17px!important}
+body:not(.project-mode) .cue{padding:13px 14px!important;margin-bottom:10px!important}
+body:not(.project-mode) .cue b{font-size:.62rem!important;margin-bottom:7px!important}
+body:not(.project-mode) .cue p,body:not(.project-mode) .cue li{font-size:.89rem!important;line-height:1.52!important}
+body:not(.project-mode) .cue.source a{font-size:.76rem!important}
+body:not(.project-mode) .mission .question{font-size:.9rem!important;line-height:1.4!important}
+body:not(.project-mode) .flow-card .name{font-size:.75rem!important}
+body:not(.project-mode) .flow-card .range{font-size:.55rem!important}
+.project-mode #runOfShowToggle{display:none!important}
+@media(max-width:1320px){body:not(.project-mode) .cockpit{grid-template-columns:minmax(0,1fr) 390px!important}body.ros-open:not(.project-mode) .cockpit{grid-template-columns:215px minmax(0,1fr) 390px!important}body:not(.project-mode) .cue p,body:not(.project-mode) .cue li{font-size:.84rem!important}}
+
 .project-mode .hero-slide:has(img[src*="assets/images/topics/2-1/"]) .copy{width:min(50%,900px);padding:1.5rem 1.7rem}
 .project-mode .hero-slide:has(img[src*="assets/images/topics/2-1/"]) h2{font-size:clamp(4rem,5.4vw,6.4rem)}
 .project-mode .hero-slide:has(img[src*="Kashgar"]) .copy{width:min(42%,800px);padding:1.3rem 1.5rem}
@@ -74,4 +94,18 @@ css.textContent=`
 .project-mode .hero-slide:has(img[src*="Kashgar"]) .sub{font-size:clamp(1.3rem,1.7vw,2rem)}
 `;
 document.head.appendChild(css);
+
+function installTeacherReadability(){
+  const bar=document.querySelector('.appbar');
+  if(!bar||document.getElementById('runOfShowToggle'))return;
+  const btn=document.createElement('button');
+  btn.className='btn';btn.id='runOfShowToggle';btn.type='button';btn.textContent='Run of Show';btn.setAttribute('aria-pressed','false');
+  const anchor=document.getElementById('briefingBtn');
+  if(anchor)bar.insertBefore(btn,anchor);else bar.appendChild(btn);
+  btn.addEventListener('click',()=>{
+    const open=document.body.classList.toggle('ros-open');
+    btn.textContent=open?'Hide Run of Show':'Run of Show';btn.setAttribute('aria-pressed',String(open));
+  });
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',installTeacherReadability);else installTeacherReadability();
 })();
