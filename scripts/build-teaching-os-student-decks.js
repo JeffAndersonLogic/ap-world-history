@@ -204,10 +204,6 @@ function readExisting(file) {
   return sandbox.window.BEHISTORICAL_STUDENT_DECK;
 }
 
-function stable(value) {
-  return JSON.stringify(value);
-}
-
 function diffValues(actual, expected, at = '$', out = []) {
   if (out.length >= 80) return out;
   if (Object.is(actual, expected)) return out;
@@ -241,9 +237,10 @@ function buildOne(deck, check) {
       return false;
     }
     const actual = readExisting(out);
-    if (stable(actual) !== stable(expected)) {
+    const diffs = diffValues(actual, expected);
+    if (diffs.length) {
       console.log(`  DRIFT  ${deck.student} does not match canonical Teaching OS data`);
-      for (const line of diffValues(actual, expected)) console.log(`         ${line}`);
+      for (const line of diffs) console.log(`         ${line}`);
       return false;
     }
     console.log(`  ok     ${deck.student} matches canonical Teaching OS data`);
