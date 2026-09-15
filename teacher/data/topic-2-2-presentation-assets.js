@@ -9,6 +9,7 @@ const byTitle=needle=>T.slides.find(s=>String(s.title||'').toLowerCase().include
 
 const open=T.slides.find(s=>s.phase==='open'&&s.kind==='hero');
 if(open){
+  open.position='upper-left';
   open.visual=visual('2.2 - Steppes of Asia.jpg','Wide view of the Asian steppe used to frame Mongol mobility and scale','Topic 2.2 classroom visual · Steppes of Asia');
   open.notes=open.notes||{};
   open.notes.land=[
