@@ -40,7 +40,7 @@ for(const [label,lesson,deck,asset] of [
   const lessonPage=await localPage(browser,origin,lesson);await lessonPage.page.waitForSelector('#class-presentation-banner');
   console.log(`\n  Topic ${label} Content Delivery handoff`);
   check(`${label} Content Delivery shows the In-Class Presentation callout`,await lessonPage.page.locator('#class-presentation-banner').count()===1);
-  const href=await lessonPage.page.locator('#class-presentation-banner a').getAttribute('href');check(`${label} callout points to the student-safe deck`,href&&href.includes(`presentation-topic-${label}-student.html`),href||'missing href');
+  const href=await lessonPage.page.locator('#class-presentation-banner a').getAttribute('href');const expectedDeck=deck.split('/').pop();check(`${label} callout points to the student-safe deck`,href===expectedDeck||Boolean(href&&href.endsWith('/'+expectedDeck)),href||'missing href');
   check(`${label} old Content Cards remain in Content Delivery`,await lessonPage.page.locator('#main-lecture-grid .card').count()>0,'cards='+await lessonPage.page.locator('#main-lecture-grid .card').count());await lessonPage.page.close();
 
   const {page,errors}=await localPage(browser,origin,deck,{width:1440,height:900});await page.waitForSelector('#stage .slide');
