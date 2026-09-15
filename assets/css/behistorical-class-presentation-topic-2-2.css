@@ -1,0 +1,17 @@
+.topic-2-2 .hero-slide:has(img[src*="Chinggis%20Museum.jpg"]) .copy{
+  left:auto!important;
+  right:4%!important;
+  top:auto!important;
+  bottom:10%!important;
+  width:min(41%,700px)!important;
+  border-left:0!important;
+  border-right:3px solid var(--gold)!important;
+}
+.topic-2-2 .hero-slide:has(img[src*="Chinggis%20Museum.jpg"]) .veil{
+  background:linear-gradient(270deg,rgba(3,5,6,.94) 0%,rgba(3,5,6,.74) 31%,rgba(3,5,6,.23) 57%,rgba(3,5,6,.03) 78%)!important;
+}
+body.fullscreen.topic-2-2 .hero-slide:has(img[src*="Chinggis%20Museum.jpg"]) .copy{
+  right:4%!important;
+  bottom:9%!important;
+  width:min(40%,780px)!important;
+}
