@@ -4,33 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BeHistorical | Topic 2.2 Presentation</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{--steel:#1A1C1D;--charcoal:#2B2F31;--gunmetal:#3E4447;--sand:#D2B48C;--gold:#C9A46A;--paper:#F5F0E7;--ink:#151718;--title:'Cinzel',Georgia,serif;--body:'Libre Baskerville',Georgia,serif;--ui:'Montserrat',system-ui,sans-serif}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#0d0f10;color:var(--paper);font-family:var(--body)}#stage{width:100vw;height:100vh}.hint{position:fixed;right:1vw;bottom:1vh;font:600 .65rem var(--ui);color:rgba(255,255,255,.32);z-index:5;pointer-events:none}
-</style>
+<meta http-equiv="refresh" content="0;url=topic-2-2-os.html?mode=project">
+<script>location.replace('topic-2-2-os.html?mode=project'+location.hash);</script>
 </head>
 <body>
-<div id="stage"></div>
-<div class="hint">← → navigate · F fullscreen</div>
-<script src="data/topic-2-2-teaching.js?v=production-v5"></script>
-<script src="data/topic-2-2-renderer.js?v=production-v6"></script>
-<script>
-(function(){
-'use strict';
-const T=window.BEHISTORICAL_TEACHING,L={},R=window.BH22_RENDERER,$=s=>document.querySelector(s);
-if(!T||!R)return;
-const style=document.createElement('style');style.textContent=R.styles();document.head.appendChild(style);
-let cur=0,key=T.projection.storageKey;
-try{const d=JSON.parse(localStorage.getItem(key)||'{}');if(Number.isInteger(d.index))cur=Math.max(0,Math.min(T.slides.length-1,d.index));}catch(e){}
-function show(i){cur=Math.max(0,Math.min(T.slides.length-1,Number(i)||0));$('#stage').innerHTML=R.render(T.slides[cur],L);try{localStorage.setItem(key,JSON.stringify({index:cur,at:Date.now()}));}catch(e){}}
-window.addEventListener('storage',e=>{if(e.key!==key||!e.newValue)return;try{const d=JSON.parse(e.newValue);if(Number.isInteger(d.index)&&d.index!==cur)show(d.index);}catch(err){}});
-window.addEventListener('message',e=>{if(e.origin!==location.origin||!e.data||e.data.type!=='behistorical-slide')return;show(e.data.index);});
-document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();show(cur+1);}if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(cur-1);}if(e.key==='Home')show(0);if(e.key==='End')show(T.slides.length-1);if(e.key==='f'||e.key==='F'){if(!document.fullscreenElement)document.documentElement.requestFullscreen().catch(()=>{});else document.exitFullscreen().catch(()=>{});}});
-show(cur);
-})();
-</script>
+<p>Opening the Topic 2.2 projection… <a href="topic-2-2-os.html?mode=project">Continue</a></p>
 </body>
 </html>
