@@ -59,8 +59,9 @@ css.textContent=`
 .hero-slide:has(img[src*="Caravanserai"])::before{content:'HISTORICAL RECONSTRUCTION — AI GENERATED';position:absolute;z-index:5;right:2.2%;top:2.3%;padding:.48rem .65rem;border:1px solid rgba(201,164,106,.78);background:rgba(4,6,7,.82);font:800 clamp(.5rem,.66vw,.72rem) var(--ui);letter-spacing:.09em;color:var(--gold)}
 .image-canvas{overflow:hidden!important}
 .image-canvas img[src*="assets/images/topics/2-1/"]{width:auto!important;height:auto!important;max-width:100%!important;max-height:100%!important;min-width:0!important;min-height:0!important;object-fit:contain!important;object-position:center center!important;display:block!important}
-.node-field .city-node:first-child{background-image:linear-gradient(180deg,rgba(5,7,8,.24),rgba(5,7,8,.82)),url('${assetPath('2.1 - Samarkand.webp')}')!important;background-size:contain!important;background-repeat:no-repeat!important;background-position:center!important;background-color:#060808!important}
-.node-field .city-node:nth-child(2){background-image:linear-gradient(180deg,rgba(5,7,8,.24),rgba(5,7,8,.82)),url('${assetPath('2.1 - Kashgar.jpg')}')!important;background-size:contain!important;background-repeat:no-repeat!important;background-position:center!important;background-color:#060808!important}
+.node-field .city-node{overflow:hidden!important;background-color:#060808!important;background-repeat:no-repeat!important;background-position:center center!important;background-size:cover!important}
+.node-field .city-node:first-child{background-image:linear-gradient(180deg,rgba(5,7,8,.16),rgba(5,7,8,.78)),url('${assetPath('2.1 - Samarkand.webp')}')!important}
+.node-field .city-node:nth-child(2){background-image:linear-gradient(180deg,rgba(5,7,8,.16),rgba(5,7,8,.78)),url('${assetPath('2.1 - Kashgar.jpg')}')!important}
 .node-field .city-node h3,.node-field .city-node p{position:relative;z-index:2;text-shadow:0 2px 16px rgba(0,0,0,.95)}
 .node-field .city-node .dot{position:relative;z-index:2}
 .hero-slide:has(img[src*="Kashgar"]) .copy{width:min(40%,620px);padding:1rem 1.15rem}
