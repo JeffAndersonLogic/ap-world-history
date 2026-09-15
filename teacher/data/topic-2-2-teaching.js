@@ -4,3 +4,4 @@
  */
 document.write('<script src="data/topic-2-2-teaching-base.js"><\/script>');
 document.write('<script src="data/topic-2-2-visual-assets.js?v=visuals-v2"><\/script>');
+document.write('<script src="data/topic-2-2-slide-5-layout.js?v=slide5-right-v1"><\/script>');
