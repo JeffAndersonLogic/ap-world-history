@@ -33,8 +33,8 @@
   lesson.images = [
     {
       "title": "The port of Buenos Aires",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buenos_Aires_Port.jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archivo_General_de_la_Nación_Argentina_1890_aprox_Buenos_Aires,_Puerto_de_Buenos_Aires.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Archivo_General_de_la_Nación_Argentina_1890_aprox_Buenos_Aires,_Puerto_de_Buenos_Aires.jpg",
       "caption": "Photograph of the port built out with British capital, in a country that was never a colony.",
       "prompt": "NOTICE the scale of the infrastructure and what it is built to move. INFER whose interests the layout serves. What does a port photograph not show about who owns it or who holds the debt?"
     },
