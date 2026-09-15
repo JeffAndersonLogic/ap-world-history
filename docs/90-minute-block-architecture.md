@@ -165,7 +165,8 @@ Canvas outage, a long question, or a fire drill, so the reserve has to be
 explicit rather than assumed.
 
 **The numbers are therefore: 90 scheduled, 85 usable, 80 authored, 5 held in
-reserve.** The budget check, when built, should fail above 80 rather than 85.
+reserve**, confirmed by Jeff on 2026-09-15. The budget check, when built, should
+fail above 80 rather than 85.
 The reserve is taken out of every phase except the investigation, which is
 protected.
 
@@ -183,7 +184,7 @@ without rushing. Those require teaching it.
 2.2 on the 18th and 21st, 2.3 on the 22nd and 23rd. A restructured 1.4 could be
 written but not tested until next year.
 
-**Topic 2.3 is the recommended pilot instead.** Three reasons. It is seven days
+**Topic 2.3 is the nearest pilot candidate instead.** Three reasons. It is seven days
 out, which is enough time to author and not enough to gold-plate. Its Canvas
 assignment already requires Module 07, so the cross-document Evidence Lab
 question has somewhere to land. And it has **neither** a Run of Show nor a
@@ -194,6 +195,29 @@ already has a bespoke surface answers a question nobody is asking.
 Topic 1.4 stays useful as the paper exercise that defines the target shape,
 because it is the one fully authored pacing block with a real overrun. It just
 cannot be the thing that validates it.
+
+**The pilot window is rolling, not closing.** Every topic on the calendar is a
+chance to run one, so deferring costs a week rather than the term. The two worth
+naming: **2.3 on September 22 and 23**, the nearest, and **2.5 on September 28
+and 29**, which requires modules 02, 06, 08 and 10 and therefore has **no
+Evidence Lab at all**. Its evidence module is 08, Primary Source. That makes 2.5
+the natural second pilot, because it is the first topic that tests whether the
+standard survives a different module shape. See the generalization risk below.
+
+### Correction: the investigation is not "the Evidence Lab"
+
+The consolidation was stated as Evidence Lab plus Skill Builder plus Checkpoint 1
+collapsing into one investigation. That does not generalize. Topic 2.5 requires
+no Module 07, and it is nine class days away.
+
+The standard has to be **one protected investigation of 25 to 30 minutes built on
+whichever evidence module the topic actually requires**, with the topic's first
+checkpoint as its closing capture. On 2.3 that is Module 07. On 2.5 it is Module
+08. Written the other way it breaks on the first topic with a different mix, and
+it breaks quietly, because the pacing would still render.
+
+That is also why one pilot is not enough to freeze on. Two, with different module
+shapes, is the minimum.
 
 ### Not verified
 
@@ -228,6 +252,11 @@ consistent with churn, but one commit is not evidence of fragility.
 6. **Retreating from the command centers.** They are the current direction and
    they carry the pacing inside the teaching surface. Run of Show remains the
    fallback for topics without one.
+
+**Held, 2026-09-15.** No implementation authorized. The budget checks were
+offered and declined for now, which defers the 2.3 window to a later topic. This
+is a deliberate hold, not an oversight: the cost is one pilot cycle, and the
+benefit is that nothing gets built before the standard is settled.
 
 **Parameters set.**
 
