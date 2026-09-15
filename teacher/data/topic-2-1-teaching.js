@@ -1,9 +1,13 @@
-/* Topic 2.1 presentation uniformity layer.
- * Keeps the canonical teaching data in topic-2-1-teaching-base.js, then adds
- * projector-focused visual normalization without changing lesson content.
+/* Topic 2.1 canonical teaching pipeline.
+ * Base = authored instructional content.
+ * Presentation assets = data-only local visual substitutions, safe for Node generation.
+ * Visual assets = topic-specific slide composition only.
+ * Teaching OS shared = common teacher-cockpit behavior/readability.
  */
 document.write('<script src="data/topic-2-1-teaching-base.js"><\/script>');
-document.write('<script src="data/topic-2-1-visual-assets.js?v=visuals-v3"><\/script>');
+document.write('<script src="data/topic-2-1-presentation-assets.js?v=data-v1"><\/script>');
+document.write('<script src="data/topic-2-1-visual-assets.js?v=visuals-v4"><\/script>');
+document.write('<script src="teaching-os-shared.js?v=shared-v1"><\/script>');
 document.write('<style id="topic21-uniformity">\
 .museum-head{text-align:center!important;padding:2.7% 4.4% 2.2%!important}.museum-head h2{margin:.35rem auto 0!important}.museum-head .sub{margin:.65rem auto 0!important;max-width:62rem!important}.museum-foot{justify-content:center!important;text-align:center!important}\
 .process-track{grid-template-columns:repeat(4,1fr)!important;gap:1.2vw!important;align-items:stretch!important;padding:4% 5%!important}.process-track::before{left:7%!important;right:7%!important;top:50%!important;height:2px!important;background:linear-gradient(90deg,transparent,var(--gold),var(--gold),transparent)!important;opacity:.45!important}.process-node{display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;min-height:180px!important;padding:1.5vw!important;border:1px solid #425054!important;background:rgba(9,12,13,.94)!important;text-align:center!important}.process-node .circle{width:clamp(48px,4.4vw,70px)!important;height:clamp(48px,4.4vw,70px)!important;margin:0 auto 1rem!important}.process-node h3,.mechanism-node b{font-size:clamp(.72rem,1vw,1rem)!important;margin:0 0 .7rem!important}.process-node p,.mechanism-node span{font-size:clamp(.95rem,1.25vw,1.25rem)!important;line-height:1.4!important}.mechanism-node{display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;text-align:center!important}\
