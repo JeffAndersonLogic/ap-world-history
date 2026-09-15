@@ -32,17 +32,11 @@ const TOOLS = [
   { label: 'Skills Lens', desc: 'Drop a Canvas submissions zip to see completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
 ];
 
-/*
- * Every interactive lesson that exists, so the Today panel can route to it.
- * The first matching entry for a topic is the preferred surface. Topic 2.2
- * keeps the legacy command center registered for validator reachability, while
- * the new Teaching OS is listed first so the Today panel routes there.
- */
+/* Every integrated teacher surface that the Today panel may route to. */
 const INTERACTIVE_TOPICS = [
   { key: '1.7', out: 'command-center-topic-1-7.html' },
   { key: '2.1', out: 'command-center-topic-2-1.html' },
   { key: '2.2', out: 'topic-2-2-os.html' },
-  { key: '2.2', out: 'command-center-topic-2-2.html' },
 ];
 
 module.exports = { TOOLS, INTERACTIVE_TOPICS };
