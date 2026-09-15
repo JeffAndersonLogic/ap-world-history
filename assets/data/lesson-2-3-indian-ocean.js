@@ -181,12 +181,6 @@ window.BEHISTORICAL_LESSON = {
     ]
   },
 
-  classPresentation: {
-    title: 'Class Slides: Exchange in the Indian Ocean',
-    desc: 'The slides from class. Follow along on your own device, or reopen them any time to review the lecture.',
-    url: 'present-topic-2-3-indian-ocean.html'
-  },
-
   deepReading: {
     title: 'The Ocean That Carried Everything',
     desc: 'A textbook-depth companion on the ships and navigation, the bulk cargo that makes this ocean different from the Silk Roads, the port cities and their harbor masters, the merchant diasporas, and what Zheng He was actually for. Optional, and the fastest way to be ready for the Unit 2 comparison.',
