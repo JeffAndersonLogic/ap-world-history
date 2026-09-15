@@ -111,6 +111,90 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
+    /* Projected slide text for the Class Presentation (Module 03).
+     *
+     * This is NOT a duplicate of lecture.segments[].bullets and must not be
+     * derived from them. Those bullets are the reading version: full sentences
+     * a student takes in on a card at arm's length. These are the projected
+     * version: phrases a student copies into notes while the teacher talks.
+     * Splitting the prose into smaller prose was tried and is what this
+     * replaces, because a forty-word sentence set in forty-point type is still
+     * a paragraph on the wall.
+     *
+     * House shape, matching the hand-built Teach Mode decks in unit-1: a
+     * headline that makes a claim rather than naming a category, then three or
+     * four phrases revealed one at a time. A phrase written as "Term -> gloss"
+     * renders as a card with the term in bronze, the way "Maya / Independent,
+     * competing city-states" reads in the 1.4 deck.
+     *
+     * scripts/validate.js caps a headline at 44 characters and a point at 64,
+     * and rejects a point carrying more than one sentence. That is the machine
+     * check for the defect that shipped on 2026-09-15.
+     *
+     * Images: only slide 1 has one, because Topic 2.3 owns exactly one real
+     * picture (the CIA basin map, also used by the Map module). The other four
+     * are text-only by necessity, not by design. Source real pictures for them
+     * with scripts/source-evidence-images.js from a network that can reach
+     * commons.wikimedia.org, then add an `image` to the slide. Never type a
+     * Commons filename from memory: it will look well formed, pass every check
+     * and ship fallback art to a student.
+     */
+    slides: [
+      {
+        eyebrow: 'Technology and wind',
+        headline: 'The ocean ran on a timetable',
+        image: {
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png',
+          caption: 'The Indian Ocean basin, the water the monsoon crosses twice a year.',
+          credit: 'CIA World Factbook, via Wikimedia Commons'
+        },
+        points: [
+          'Monsoon winds -> reverse twice a year',
+          'Dhow -> stitched planks, lateen sail',
+          'Compass from China -> course far from land'
+        ]
+      },
+      {
+        eyebrow: 'Who traded',
+        headline: 'Three merchant worlds, one ocean',
+        points: [
+          'Arab and Persian -> East Africa to India',
+          'Gujarat and Malabar -> the hinge',
+          'Chinese junks -> Southeast Asia and the South China Sea'
+        ]
+      },
+      {
+        eyebrow: 'What was exchanged',
+        headline: 'What moved',
+        points: [
+          'Spices -> Southeast Asia, priced like treasure',
+          'Indian textiles -> used as currency',
+          'Gold and ivory -> out of East Africa',
+          'Enslaved people -> East Africa to Arabia and the Gulf'
+        ]
+      },
+      {
+        eyebrow: 'Port cities',
+        headline: 'Ports became cities of strangers',
+        points: [
+          'Kilwa -> gold and ivory',
+          'Calicut -> pepper',
+          'Quanzhou -> among the largest on earth',
+          'Malacca -> the chokepoint'
+        ]
+      },
+      {
+        eyebrow: 'Diasporic communities',
+        headline: 'Merchants settled and stayed',
+        points: [
+          'Own quarters, own law',
+          'Family and faith held the network',
+          'Islam followed the routes',
+          'Rulers converted for access'
+        ]
+      }
+    ],
     title: "Indian Ocean Trade: Technology, Exchange, and Cultural Connection",
     intro: "Use these cards to explain how technology and environmental knowledge made Indian Ocean maritime trade possible, who participated and what they exchanged, and how this network transformed the port cities and cultures it connected from c. 1200 to c. 1450.",
     videos: [
@@ -179,6 +263,12 @@ window.BEHISTORICAL_LESSON = {
       "The monsoon system created a rhythmic calendar of departure and arrival that structured the entire commercial year for Indian Ocean merchants.",
       "Port cities grew at natural geographic nodes, straits, river mouths, and coastal plains, where merchants were forced to stop, unload, and resupply, creating opportunities for exchange and cultural interaction."
     ]
+  },
+
+  classPresentation: {
+    title: 'Class Slides: Exchange in the Indian Ocean',
+    desc: 'The slides from class. Follow along on your own device, or reopen them any time to review the lecture.',
+    url: 'present-topic-2-3-indian-ocean.html'
   },
 
   deepReading: {
