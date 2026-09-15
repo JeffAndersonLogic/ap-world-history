@@ -66,6 +66,40 @@ Two renderers emit the manifest and they must stay in lockstep:
 The parser reads both, plus the plain-text clipboard fallback, plus submissions
 gathered before the manifest existed.
 
+## SUBMISSION FORMATTING CONTRACT
+
+The human-readable part of the clipboard document has a fixed hierarchy. These
+sizes live **inside the copied HTML as inline styles**; page CSS does not count,
+because Canvas and Word receive the clipboard payload rather than BeHistorical's
+stylesheet.
+
+- course/topic metadata: **10 pt**
+- document/topic title: **24 pt**
+- module/activity/question-group heading: **16 pt**
+- question/prompt: **11 pt, bold**
+- `My response:` label: **10.5 pt, bold**
+- student response: **11 pt**
+- copied timestamp: **10 pt**
+
+The plain-text document is a separate compatibility contract and keeps the same
+labels, prompt/response markers, manifest, hashes, expected counts and slot IDs.
+Presentation changes must never change that grammar.
+
+Copying is rich-first in three layers:
+
+1. `ClipboardItem` writes both `text/html` and `text/plain`.
+2. If that API is unavailable or blocked, a temporary off-screen rich HTML node
+   is selected and copied with `document.execCommand('copy')`.
+3. Only if rich copying fails does the code use `navigator.clipboard.writeText`
+   with the parser-safe plain document. If clipboard access is blocked entirely,
+   the rendered rich output remains selectable for a manual Ctrl-C/Cmd-C.
+
+This contract is implemented in both canonical emitters below, so it applies to
+all current and future unit-topic and Foundations assignments that use Gather All
+My Work.
+
+---
+
 ---
 
 ## THE RECORD FORMAT

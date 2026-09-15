@@ -38,6 +38,7 @@ const SUITES = {
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
     ['scripts/check-module07-authored.js', 'Units converted to one authored Module 07 evidence pool'],
     ['scripts/test/canvas-paragraphs.test.js', 'Canvas blank-line round trip'],
+    ['scripts/test/canvas-rich-clipboard.test.js', 'Canvas rich hierarchy + HTML/plain clipboard contract'],
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
     ['scripts/test/foundations-golden.js', 'Foundations content vs the hand-authored originals'],
@@ -54,6 +55,7 @@ const SUITES = {
   browser: [
     ['scripts/test/modal-focus.unit.js', 'unit lesson modal focus contract'],
     ['scripts/test/modal-focus.foundations.js', 'foundations modal focus contract'],
+    ['scripts/test/canvas-rich-clipboard.browser.js', 'Canvas rich clipboard end-to-end on Topic 1.1'],
     ['scripts/test/lecture-deck.test.js', 'lecture deck flow, scroll lock, video block'],
     ['scripts/test/lightbox-sweep.js', 'enlargeable images operable on all 77'],
     ['scripts/test/confidence.test.js', 'confidence scale'],

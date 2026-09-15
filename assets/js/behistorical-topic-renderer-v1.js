@@ -1793,22 +1793,27 @@ function buildWorkDocument() {
   const isoStamp = now.toISOString();
   const manifest = buildRecordManifest(work, workTopicId(), isoStamp);
 
+  // Clipboard formatting is deliberately inline. Browser CSS does not reliably
+  // survive a paste into Canvas or Word; these sizes are part of the submission
+  // document itself so assignment structure, prompts and student writing remain
+  // visually distinct after the browser is gone.
   const html = ['<div>',
-    '<p><strong>' + escapeWorkHtml(head.line1) + '</strong>',
-    head.line2 ? '<br><strong>' + escapeWorkHtml(head.line2) + '</strong>' : '',
-    '</p>',
-    '<p><em>Student work, copied ' + escapeWorkHtml(stamp) + '</em></p>',
+    '<p style="font-size:10pt;font-weight:700;margin:0 0 4pt;">' + escapeWorkHtml(head.line1) + '</p>',
+    head.line2 ? '<h1 style="font-size:24pt;line-height:1.15;margin:0 0 8pt;">' + escapeWorkHtml(head.line2) + '</h1>' : '',
+    '<p style="font-size:10pt;margin:0 0 12pt;"><em>Student work, copied ' + escapeWorkHtml(stamp) + '</em></p>',
     '<hr>'
   ].join('');
 
   const body = work.map(w => {
     const prompt = plainPrompt(w.prompt);
-    return '<p><strong>' + escapeWorkHtml(w.label) + '</strong></p>'
-      + (prompt ? '<p><strong>Question:</strong> <em>' + escapeWorkHtml(prompt) + '</em></p>' : '')
-      + '<p><strong>My response:</strong></p>'
-      + paragraphsHtml(w.text);
+    return '<h2 style="font-size:16pt;line-height:1.2;margin:16pt 0 6pt;">' + escapeWorkHtml(w.label) + '</h2>'
+      + (prompt ? '<p style="font-size:11pt;line-height:1.4;margin:0 0 6pt;"><strong>Question: ' + escapeWorkHtml(prompt) + '</strong></p>' : '')
+      + '<p style="font-size:10.5pt;margin:0 0 4pt;"><strong>My response:</strong></p>'
+      + '<div style="font-size:11pt;line-height:1.45;margin:0 0 8pt;">' + paragraphsHtml(w.text) + '</div>';
   }).join('<hr>');
 
+  // Plain text is intentionally unchanged. The Canvas parser grammar, labels,
+  // hashes and manifest are a data contract independent of presentation.
   const plain = [head.line1.toUpperCase(), head.line2, 'Student work, copied ' + stamp, '']
     .filter(Boolean)
     .concat(work.map(w => {
@@ -1857,8 +1862,9 @@ function gatherAllWork() {
   return doc;
 }
 
-// Selecting the rendered block first means that even when the clipboard API is
-// blocked, a manual Ctrl-C copies the formatted version rather than nothing.
+// Selecting the rendered block is the manual last resort when every clipboard
+// API is blocked. The automatic rich fallback below selects a temporary HTML
+// node first so execCommand copies formatting rather than flattened text.
 function selectWorkOutput(out) {
   try {
     const range = document.createRange();
@@ -1880,32 +1886,60 @@ function copyAllWork() {
   if (!doc) return;
 
   const say = m => { if (result) result.textContent = m; };
-  selectWorkOutput(out);
 
-  // Write both flavours so Canvas keeps the bold and plain-text targets still work.
+  // Preferred path: one clipboard write with both MIME flavors. Canvas and Word
+  // take text/html; plain-text targets still receive the parser-safe transcript.
   if (window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) {
-    navigator.clipboard.write([new ClipboardItem({
-      'text/html': new Blob([doc.html], { type: 'text/html' }),
-      'text/plain': new Blob([doc.plain], { type: 'text/plain' })
-    })])
-      .then(() => say('Copied with formatting. Paste it into the Canvas assignment.'))
-      .catch(() => copyWorkFallback(say));
+    try {
+      const item = new ClipboardItem({
+        'text/html': new Blob([doc.html], { type: 'text/html' }),
+        'text/plain': new Blob([doc.plain], { type: 'text/plain' })
+      });
+      navigator.clipboard.write([item])
+        .then(() => say('Copied with formatting. Paste it into the Canvas assignment.'))
+        .catch(() => copyWorkRichFallback(doc.html, doc.plain, say));
+    } catch (e) {
+      copyWorkRichFallback(doc.html, doc.plain, say);
+    }
   } else {
-    copyWorkFallback(say);
+    copyWorkRichFallback(doc.html, doc.plain, say);
   }
 }
 
-// execCommand is deprecated but still the only way to put formatted text on the
-// clipboard when ClipboardItem is unavailable, and it copies the live selection,
-// which is the rendered block, so the bolding survives.
-function copyWorkFallback(say) {
+// ClipboardItem can be unavailable or blocked on managed student devices. The
+// next-best path is an off-screen rich DOM selection copied with execCommand.
+// Only after that fails do we fall all the way back to writeText(plain).
+function copyWorkRichFallback(html, plain, say) {
+  const host = document.createElement('div');
+  host.setAttribute('contenteditable', 'true');
+  host.setAttribute('aria-hidden', 'true');
+  host.style.position = 'fixed';
+  host.style.left = '-10000px';
+  host.style.top = '0';
+  host.innerHTML = html;
+  document.body.appendChild(host);
+
+  const sel = window.getSelection();
   let copied = false;
-  try { copied = document.execCommand('copy'); } catch (e) { copied = false; }
-  if (copied) { say('Copied with formatting. Paste it into the Canvas assignment.'); return; }
+  try {
+    const range = document.createRange();
+    range.selectNodeContents(host);
+    sel.removeAllRanges();
+    sel.addRange(range);
+    copied = document.execCommand('copy');
+  } catch (e) { copied = false; }
+  try { sel.removeAllRanges(); } catch (e) { /* selection cleanup is best effort */ }
+  host.remove();
+
+  if (copied) {
+    say('Copied with formatting. Paste it into the Canvas assignment.');
+    return;
+  }
 
   const out = byId(WORK_EXPORT_ID);
-  if (navigator.clipboard && navigator.clipboard.writeText && out) {
-    navigator.clipboard.writeText(out.dataset.plain || out.textContent || '')
+  if (out) selectWorkOutput(out);
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(plain || (out ? out.textContent || '' : ''))
       .then(() => say('Copied as plain text. Paste it into the Canvas assignment.'))
       .catch(() => say('Copy is blocked on this device. Your work is selected, press Ctrl-C or Cmd-C.'));
   } else {

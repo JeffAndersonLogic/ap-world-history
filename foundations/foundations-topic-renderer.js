@@ -957,17 +957,21 @@ function buildWorkDocument(){
   const stamp=now.toLocaleString();
   const manifest=buildRecordManifest(work,FOUNDATION_TOPIC_KEY||T.id||'',now.toISOString());
 
-  const head='<div><p><strong>'+escapeWorkHtml(line1)+'</strong>'
-    +(line2?'<br><strong>'+escapeWorkHtml(line2)+'</strong>':'')+'</p>'
-    +'<p><em>Student work, copied '+escapeWorkHtml(stamp)+'</em></p><hr>';
+  // Inline styles are the clipboard contract. Page CSS is not dependable once
+  // this document is pasted into Canvas or Word.
+  const head='<div><p style="font-size:10pt;font-weight:700;margin:0 0 4pt;">'+escapeWorkHtml(line1)+'</p>'
+    +(line2?'<h1 style="font-size:24pt;line-height:1.15;margin:0 0 8pt;">'+escapeWorkHtml(line2)+'</h1>':'')
+    +'<p style="font-size:10pt;margin:0 0 12pt;"><em>Student work, copied '+escapeWorkHtml(stamp)+'</em></p><hr>';
 
   const body=work.map(w=>{
     const prompt=plainPrompt(w.prompt);
-    return '<p><strong>'+escapeWorkHtml(w.label)+'</strong></p>'
-      +(prompt?'<p><strong>Question:</strong> <em>'+escapeWorkHtml(prompt)+'</em></p>':'')
-      +'<p><strong>My response:</strong></p>'+paragraphsHtml(w.text);
+    return '<h2 style="font-size:16pt;line-height:1.2;margin:16pt 0 6pt;">'+escapeWorkHtml(w.label)+'</h2>'
+      +(prompt?'<p style="font-size:11pt;line-height:1.4;margin:0 0 6pt;"><strong>Question: '+escapeWorkHtml(prompt)+'</strong></p>':'')
+      +'<p style="font-size:10.5pt;margin:0 0 4pt;"><strong>My response:</strong></p>'
+      +'<div style="font-size:11pt;line-height:1.45;margin:0 0 8pt;">'+paragraphsHtml(w.text)+'</div>';
   }).join('<hr>');
 
+  // Keep the plain grammar byte-for-byte in the same shape the parser expects.
   const plain=[line1.toUpperCase(),line2,'Student work, copied '+stamp,''].filter(Boolean)
     .concat(work.map(w=>{
       const prompt=plainPrompt(w.prompt);
@@ -1000,8 +1004,8 @@ function gatherAllWork(){
   return doc;
 }
 
-// Selecting the rendered block first means a manual Ctrl-C still copies the
-// formatted version when the clipboard API is blocked.
+// Selecting the rendered block is the manual last resort when every clipboard
+// API is blocked. The automatic fallback first selects temporary rich HTML.
 function selectWorkOutput(out){
   try{
     const range=document.createRange();range.selectNodeContents(out);
@@ -1017,25 +1021,44 @@ function copyAllWork(){
   if(!doc)doc=gatherAllWork();
   if(!doc)return;
   const say=m=>{if(result)result.textContent=m;};
-  selectWorkOutput(out);
   if(window.ClipboardItem&&navigator.clipboard&&navigator.clipboard.write){
-    navigator.clipboard.write([new ClipboardItem({
-      'text/html':new Blob([doc.html],{type:'text/html'}),
-      'text/plain':new Blob([doc.plain],{type:'text/plain'})
-    })]).then(()=>say('Copied with formatting. Paste it into the Canvas assignment.'))
-        .catch(()=>copyWorkFallback(say));
-  }else{copyWorkFallback(say);}
+    try{
+      const item=new ClipboardItem({
+        'text/html':new Blob([doc.html],{type:'text/html'}),
+        'text/plain':new Blob([doc.plain],{type:'text/plain'})
+      });
+      navigator.clipboard.write([item])
+        .then(()=>say('Copied with formatting. Paste it into the Canvas assignment.'))
+        .catch(()=>copyWorkRichFallback(doc.html,doc.plain,say));
+    }catch(e){copyWorkRichFallback(doc.html,doc.plain,say);}
+  }else{copyWorkRichFallback(doc.html,doc.plain,say);}
 }
 
-// execCommand is deprecated but still the only way to put formatted text on the
-// clipboard without ClipboardItem, and it copies the live selection.
-function copyWorkFallback(say){
+// Managed browsers can block ClipboardItem. Select a temporary rich DOM node
+// and use execCommand before falling back to parser-safe plain text.
+function copyWorkRichFallback(html,plain,say){
+  const host=document.createElement('div');
+  host.setAttribute('contenteditable','true');
+  host.setAttribute('aria-hidden','true');
+  host.style.position='fixed';
+  host.style.left='-10000px';
+  host.style.top='0';
+  host.innerHTML=html;
+  document.body.appendChild(host);
+  const sel=window.getSelection();
   let copied=false;
-  try{copied=document.execCommand('copy');}catch(e){copied=false;}
+  try{
+    const range=document.createRange();range.selectNodeContents(host);
+    sel.removeAllRanges();sel.addRange(range);
+    copied=document.execCommand('copy');
+  }catch(e){copied=false;}
+  try{sel.removeAllRanges();}catch(e){/* best effort */}
+  host.remove();
   if(copied){say('Copied with formatting. Paste it into the Canvas assignment.');return;}
   const out=byId(WORK_EXPORT_ID);
-  if(navigator.clipboard&&navigator.clipboard.writeText&&out){
-    navigator.clipboard.writeText(out.dataset.plain||out.textContent||'')
+  if(out)selectWorkOutput(out);
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(plain||(out?out.textContent||'':''))
       .then(()=>say('Copied as plain text. Paste it into the Canvas assignment.'))
       .catch(()=>say('Copy is blocked on this device. Your work is selected, press Ctrl-C or Cmd-C.'));
   }else{say('Your work is selected, press Ctrl-C or Cmd-C to copy.');}
