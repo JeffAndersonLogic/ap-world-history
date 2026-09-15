@@ -68,7 +68,8 @@ css.textContent=`
 .hero-slide:has(img[src*="assets/images/topics/2-2/"]) .copy{width:min(54%,820px);padding:1.2rem 1.35rem;background:rgba(4,6,7,.38);border-left:3px solid var(--gold);backdrop-filter:blur(3px);text-shadow:0 2px 18px rgba(0,0,0,.72)}
 .hero-slide:has(img[src*="assets/images/topics/2-2/"]) .credit-row{max-width:52%;padding:.5rem .7rem;border:1px solid rgba(201,164,106,.45);background:rgba(4,6,7,.78);backdrop-filter:blur(3px)}
 .hero-slide:has(img[src*="assets/images/topics/2-2/"]) .credit-row .slide-credit{color:#efe4d0;font-size:clamp(.52rem,.64vw,.7rem);letter-spacing:.06em}
-.map-slide img[src*="Map%20of%20the%20Khanates"],.compare-slide img[src*="Map%20of%20the%20Khanates"]{object-fit:contain!important;object-position:center center!important}
+.map-canvas,.compare-image{overflow:hidden!important}
+.map-canvas img[src*="Map%20of%20the%20Khanates"],.compare-image img[src*="Map%20of%20the%20Khanates"]{width:auto!important;height:auto!important;max-width:100%!important;max-height:100%!important;min-width:0!important;min-height:0!important;object-fit:contain!important;object-position:center center!important;display:block!important}
 .project-mode .hero-slide:has(img[src*="assets/images/topics/2-2/"]) .copy{width:min(50%,900px);padding:1.5rem 1.7rem}
 .project-mode .hero-slide:has(img[src*="assets/images/topics/2-2/"]) h2{font-size:clamp(4rem,5.4vw,6.4rem)}
 `;
