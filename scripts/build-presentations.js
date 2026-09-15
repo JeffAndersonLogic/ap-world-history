@@ -57,9 +57,9 @@ function loadLesson(dataFile) {
   vm.runInContext(fs.readFileSync(file, 'utf8'), box, { filename: dataFile });
   const L = box.window.BEHISTORICAL_LESSON;
   if (!L) throw new Error(`${dataFile}: did not set window.BEHISTORICAL_LESSON`);
-  const segments = (L.lecture && L.lecture.segments) || [];
-  if (!segments.length) {
-    throw new Error(`${dataFile}: has no lecture.segments, there is nothing to present`);
+
+  if (!((L.lecture && L.lecture.slides) || []).length) {
+    throw new Error(`${dataFile}: has no lecture.slides, so there is nothing to project. Slide text is authored, never derived from lecture.segments.`);
   }
   return L;
 }

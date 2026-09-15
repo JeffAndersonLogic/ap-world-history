@@ -1,48 +1,44 @@
 'use strict';
 /*
  * Renders a topic's Class Presentation: the projector surface for Content
- * Delivery (Module 03), and the same page a student reopens at 11pm.
+ * Delivery (Module 03), and the same page a student reopens to review.
  *
- * ── Why one file serves both ──────────────────────────────────────────────
+ * ── Where the words come from, and why not from lecture.segments ──────────
  *
- * This page carries NO presenter notes, deliberately and permanently. The
- * site is static files on GitHub Pages, so there is no server deciding who
- * sees what: anything in the file reaches every browser that opens it, and
- * hiding a panel with CSS ships the words anyway. The existing Teach Mode
- * decks answer that with a second generated file that has the notes removed
- * from its actual bytes (see scripts/build-student-decks.js). This answers it
- * the other way, by never having them: a page with no notes cannot leak
- * notes, there is no stripping step to get wrong, and there is only one URL
- * to give out.
+ * Slides come from `lecture.slides`, authored as slide text. They are NOT
+ * derived from `lecture.segments[].bullets`, and a future version must not
+ * try. Those bullets are full sentences written to be read on a card at arm's
+ * length; the first version of this file split them one-per-slide and set
+ * them at 40px, which is a paragraph on a wall and produced notes no student
+ * could copy. There is no transformation that turns "The Maya built an
+ * enduring civilization of independent city-states across Mesoamerica, no
+ * single ruler governed all Maya people" into "Independent, competing
+ * city-states". A person writes that.
  *
- * The teacher's notes live in the command center (teacher/index.html and the
- * per-topic pages), which is already the surface Jeff teaches from and which
- * is already gated as teacher-only. Do not add a notes panel, a data-notes
- * attribute, or a ?mode= parameter here. Any of those turns one safe URL back
- * into two files that can disagree, which is the failure the content model in
- * CLAUDE.md exists to refuse.
+ * The house shape is the hand-built Teach Mode decks in unit-1: a headline
+ * that makes a claim, then three or four short phrases revealed one at a
+ * time. A phrase written "Term -> gloss" becomes a card with the term in
+ * bronze, matching how the 1.4 deck renders "Maya / Independent, competing
+ * city-states".
  *
- * ── Why the content is not authored here ──────────────────────────────────
+ * ── Why there are no presenter notes, ever ────────────────────────────────
  *
- * Every slide comes from that topic's own `lecture.segments`, the same array
- * the on-page lecture deck renders from. All 71 topics already have one. A
- * presentation authored separately would be a second copy of the lecture with
- * nothing able to say which one a student read, the same reason the eBook
- * renders the deep-reading modules rather than restating them.
- *
- * ── Why one bullet per slide ──────────────────────────────────────────────
- *
- * A lecture segment's bullets are full sentences, often over 250 characters,
- * because they were written for a card a student reads at arm's length. Three
- * of those on one projected slide is a wall of text nobody in row four can
- * read. Splitting them gives a legible slide and, incidentally, a better
- * lecture rhythm: a topic with 3 segments of 3 bullets becomes 13 slides
- * rather than 3, which is about right for the 16 to 20 minutes Content
- * Delivery gets in an 85-minute block.
+ * One URL serves the projector and the student. The site is static files on
+ * GitHub Pages, so anything in the file reaches every browser that opens it
+ * and hiding a panel with CSS ships the words anyway. build-student-decks.js
+ * answers that by stripping a second file; this answers it by having nothing
+ * to strip. The teacher's notes stay in the command center, which is already
+ * teacher-gated. Do not add a notes panel, a data-notes attribute or a
+ * ?mode= parameter. validate.js fails the push on all of those.
  */
 
 const GOOGLE_FONTS_HREF =
   'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap';
+
+/* The limits validate.js enforces. Exported so the check and the renderer
+ * cannot disagree about what "short enough to project" means. */
+const MAX_HEADLINE = 44;
+const MAX_POINT = 64;
 
 function esc(s) {
   return String(s == null ? '' : s)
@@ -50,115 +46,71 @@ function esc(s) {
     .replace(/"/g, '&quot;');
 }
 
-/* Bullets carry **bold** for key terms and nothing else. Escape first, then
- * promote the markers, so a term containing an angle bracket cannot open a
- * tag. Any stray marker is left visible rather than guessed at. */
-function inline(s) {
-  return esc(s).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-}
-
-/* Slide text is one bullet, and bullets vary from about 90 to over 300
- * characters. A single type size either wastes half the board or overflows
- * it, so the size is chosen from the length. Three steps, not a continuous
- * scale, because a generated page has to be reproducible byte for byte and a
- * measured fit is not. */
-function sizeClass(text) {
-  const n = String(text || '').replace(/\*\*/g, '').length;
-  if (n <= 140) return 'sz-l';
-  if (n <= 260) return 'sz-m';
-  return 'sz-s';
-}
-
-function artworkPath(topicLabel, id) {
-  const m = String(topicLabel || '').match(/(\d+)\.(\d+)/);
-  if (!m) return '../assets/images/media-fallback.svg';
-  return `../assets/images/module-art/unit-${m[1]}/topic-${m[1]}-${m[2]}/${id}.svg`;
-}
-
-/* An empty url is a valid authored choice, per the Image Contract in
- * CLAUDE.md: it means "draw this slot's local artwork". The onerror is the
- * second half of the same contract, for a remote file that stops resolving. */
-function segmentImage(seg, index, topicLabel) {
-  const fallback = artworkPath(topicLabel, `lecture-${String(index + 1).padStart(2, '0')}`);
-  const url = (seg.image && seg.image.url) || '';
+/* "Kilwa -> gold and ivory" becomes a term and a gloss. A phrase with no
+ * arrow is a statement in its own right ("Own quarters, own law") and stays
+ * whole. Splitting on the first arrow only, so a gloss may contain one. */
+function splitPoint(text) {
+  const i = String(text).indexOf('->');
+  if (i < 0) return { term: null, gloss: String(text).trim() };
   return {
-    authored: !!url,
-    src: url || fallback,
-    fallback,
-    alt: (seg.image && (seg.image.title || seg.image.caption)) || seg.title || '',
-    caption: (seg.image && seg.image.caption) || ''
+    term: String(text).slice(0, i).trim(),
+    gloss: String(text).slice(i + 2).trim()
   };
 }
 
-function imgTag(img, cls) {
-  return `<img class="${cls}" src="${esc(img.src)}" alt="${esc(img.alt)}"`
-    + ` onerror="this.onerror=null;this.src='${esc(img.fallback)}'">`;
+function imgTag(image, cls, fallback) {
+  return `<img class="${cls}" src="${esc(image.url)}" alt="${esc(image.caption || '')}"`
+    + ` onerror="this.onerror=null;this.closest('.slide').classList.add('noart')"`
+    + `${fallback ? ` data-fallback="${esc(fallback)}"` : ''}>`;
 }
 
-/* One flat list of slides, built before any markup, so the deck's shape is
- * inspectable and the overview and the counter cannot disagree with it. */
-function buildSlides(lesson) {
-  const meta = lesson.meta || {};
-  const topicLabel = meta.topic || '';
-  const segments = (lesson.lecture && lesson.lecture.segments) || [];
-  const slides = [{
-    kind: 'title',
-    title: meta.title || topicLabel,
-    eyebrow: meta.unit || '',
-    sub: meta.subtitle || ''
-  }];
-  segments.forEach((seg, i) => {
-    const img = segmentImage(seg, i, topicLabel);
-    slides.push({
-      kind: 'section', title: seg.title || `Part ${i + 1}`,
-      eyebrow: `Part ${i + 1} of ${segments.length}`, img
-    });
-    (seg.bullets || []).forEach(b => {
-      slides.push({ kind: 'point', eyebrow: seg.title || '', body: b, img });
-    });
-  });
-  return slides;
+function pointCard(text, step) {
+  const { term, gloss } = splitPoint(text);
+  const body = term
+    ? `<span class="term">${esc(term)}</span><span class="gloss">${esc(gloss)}</span>`
+    : `<span class="plain">${esc(gloss)}</span>`;
+  return `<li class="pt" data-step="${step}">${body}</li>`;
 }
 
-function slideMarkup(s, i) {
-  const n = String(i + 1);
-  const title = s.kind === 'point'
-    ? String(s.body || '').replace(/\*\*/g, '').slice(0, 70)
-    : (s.title || '');
-  const head = `<section class="slide ${s.kind}${s.kind === 'point' ? ' ' + sizeClass(s.body) : ''}"`
-    + ` id="s${n}" data-title="${esc(title)}" role="group"`
-    + ` aria-roledescription="slide" aria-label="Slide ${n}" hidden>`;
+function slideMarkup(s, i, total) {
+  const points = s.points || [];
+  const hasArt = !!(s.image && s.image.url);
+  const cls = 'slide content' + (hasArt ? ' figure' : ' cards');
+  const n = i + 1;
 
-  if (s.kind === 'title') {
-    return head
-      + (s.eyebrow ? `<p class="eyebrow">${esc(s.eyebrow)}</p>` : '')
-      + `<h1>${esc(s.title)}</h1>`
-      + (s.sub ? `<p class="sub">${esc(s.sub)}</p>` : '')
-      + `</section>`;
-  }
-  if (s.kind === 'section') {
-    // A section divider full-bleeds its picture, which is the right treatment
-    // for a real photograph and the wrong one for the local fallback artwork:
-    // that art is a small on-topic mark, and blown up to 1280x720 on a wall it
-    // reads as a generic graphic nobody can place. So a segment with no
-    // authored picture gets the plain steel treatment instead, and a picture
-    // that fails to load at runtime drops to the same thing rather than
-    // enlarging the fallback. `.noart` is what both paths land on.
-    return head.replace('class="slide section', 'class="slide section' + (s.img.authored ? '' : ' noart'))
-      + (s.img.authored
-        ? `<div class="sec-art"><img class="full" src="${esc(s.img.src)}" alt="${esc(s.img.alt)}"`
-          + ` onerror="this.onerror=null;this.closest('.slide').classList.add('noart')"></div>`
+  const fig = hasArt
+    ? `<figure class="art">${imgTag(s.image, 'shot')}`
+      + (s.image.caption || s.image.credit
+        ? `<figcaption>${esc(s.image.caption || '')}`
+          + (s.image.credit ? ` <cite>${esc(s.image.credit)}</cite>` : '')
+          + `</figcaption>`
         : '')
-      + `<div class="sec-txt"><p class="eyebrow">${esc(s.eyebrow)}</p>`
-      + `<h2>${esc(s.title)}</h2></div>`
-      + `</section>`;
-  }
-  return head
-    + `<p class="eyebrow">${esc(s.eyebrow)}</p>`
-    + `<div class="pt-row"><p class="body">${inline(s.body)}</p>`
-    + `<figure class="pt-fig">${imgTag(s.img, 'thumb')}`
-    + (s.img.caption ? `<figcaption>${esc(s.img.caption)}</figcaption>` : '')
-    + `</figure></div>`
+      + `</figure>`
+    : '';
+
+  return `<section class="${cls}" id="s${n}" data-steps="${points.length}"`
+    + ` data-title="${esc(s.headline || '')}" role="group"`
+    + ` aria-roledescription="slide" aria-label="Slide ${n} of ${total}" hidden>`
+    + `<header>`
+    + (s.eyebrow ? `<p class="eyebrow">${esc(s.eyebrow)}</p>` : '')
+    + `<h2>${esc(s.headline || '')}</h2>`
+    + `</header>`
+    + `<div class="body">`
+    + fig
+    + `<ul class="pts n${points.length}">`
+    + points.map((p, k) => pointCard(p, k + 1)).join('')
+    + `</ul>`
+    + `</div>`
+    + `</section>`;
+}
+
+function titleMarkup(meta, total) {
+  return `<section class="slide title" id="s0" data-steps="0"`
+    + ` data-title="${esc(meta.title || '')}" role="group"`
+    + ` aria-roledescription="slide" aria-label="Title slide" hidden>`
+    + (meta.unit ? `<p class="eyebrow">${esc(meta.unit)}</p>` : '')
+    + `<h1>${esc(meta.title || meta.topic || '')}</h1>`
+    + (meta.subtitle ? `<p class="sub">${esc(meta.subtitle)}</p>` : '')
     + `</section>`;
 }
 
@@ -179,57 +131,67 @@ html,body{margin:0;padding:0;height:100%;background:#0d0e0f;color:var(--ink)}
 .skip:focus{transform:none}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 
-/* A fixed board scaled to fit, so what fits at the desk is what lands on the
-   wall, and so a phone gets the same slide shrunk rather than reflowed. */
+/* A fixed board scaled to fit: what fits at the desk is what lands on the
+   wall, and a phone gets the same slide shrunk rather than reflowed. */
 #viewport{position:fixed;inset:0;display:grid;place-items:center;overflow:hidden}
 #stage{width:1280px;height:720px;position:relative;flex:none;
   transform:scale(var(--scale,1));transform-origin:center center;
   background:var(--paper);box-shadow:0 30px 90px rgba(0,0,0,.55)}
 
-.slide{position:absolute;inset:0;padding:60px 76px;overflow:hidden;
+.slide{position:absolute;inset:0;padding:56px 72px 64px;overflow:hidden;
   background:var(--paper);color:var(--ink);font-family:var(--font-body)}
 .slide[hidden]{display:none!important}
-.slide.on{display:flex;flex-direction:column;justify-content:center}
+.slide.on{display:flex;flex-direction:column}
 
-.eyebrow{margin:0 0 18px;font-family:var(--font-ui);font-weight:700;
-  font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--oxidized)}
+.eyebrow{margin:0 0 12px;font-family:var(--font-ui);font-weight:700;
+  font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:var(--oxidized)}
 
-.slide.title{background:var(--steel);color:var(--clean);text-align:left}
+/* Title */
+.slide.title{background:var(--steel);color:var(--clean);justify-content:center}
 .slide.title .eyebrow{color:var(--gold)}
 .slide.title h1{margin:0;font-family:var(--font-display);font-weight:700;
-  font-size:64px;line-height:1.1;color:var(--clean);overflow-wrap:break-word}
-.slide.title .sub{margin:26px 0 0;font-size:24px;line-height:1.5;
-  color:#d8d2c6;max-width:60ch}
+  font-size:62px;line-height:1.1;color:var(--clean);overflow-wrap:break-word}
+.slide.title .sub{margin:24px 0 0;font-size:23px;line-height:1.5;
+  color:#d8d2c6;max-width:58ch}
 
-.slide.section{padding:0;display:block}
-.slide.section.on{display:block}
-.slide.section .sec-art{position:absolute;inset:0}
-.slide.section .sec-art .full{width:100%;height:100%;object-fit:cover;display:block}
-.slide.section .sec-txt{position:absolute;inset:auto 0 0 0;padding:52px 76px 56px;
-  background:linear-gradient(to top,rgba(21,23,24,.94) 55%,rgba(21,23,24,0))}
-.slide.section.noart{background:var(--steel)}
-.slide.section.noart .sec-art{display:none}
-.slide.section.noart .sec-txt{position:static;padding:0;background:none;
-  display:flex;flex-direction:column;justify-content:center;height:100%;
-  padding-left:76px;padding-right:76px}
-.slide.section .eyebrow{color:var(--gold);margin-bottom:10px}
-.slide.section h2{margin:0;font-family:var(--font-display);font-weight:700;
-  font-size:52px;line-height:1.14;color:var(--clean);overflow-wrap:break-word}
+/* Headline: a claim, with the bronze rule under its first words. */
+.slide.content header{flex:none;margin-bottom:34px}
+.slide.content h2{margin:0;font-family:var(--font-display);font-weight:700;
+  font-size:50px;line-height:1.12;color:var(--ink);overflow-wrap:break-word;
+  display:inline-block;border-bottom:5px solid var(--bronze);padding-bottom:10px}
 
-.pt-row{display:grid;grid-template-columns:1fr 400px;gap:52px;align-items:center}
-.pt-row .body{margin:0;line-height:1.5}
-.slide.sz-l .body{font-size:40px}
-.slide.sz-m .body{font-size:32px}
-.slide.sz-s .body{font-size:26px}
-.body strong{font-weight:700;color:var(--oxidized)}
-.pt-fig{margin:0}
-.pt-fig .thumb{width:100%;height:300px;object-fit:cover;display:block;
-  background:var(--charcoal);border:1px solid var(--rule)}
-.pt-fig figcaption{margin-top:12px;font-family:var(--font-ui);font-size:14px;
-  line-height:1.45;color:var(--iron)}
+.slide .body{flex:1;display:flex;gap:46px;align-items:center;min-height:0}
 
-/* The bar is chrome, not content: it never carries anything a student should
-   not see, and it prints nothing to the wall that is not on the slide. */
+/* Points. Revealed one at a time: hidden ones keep their space so nothing
+   jumps as the teacher advances. */
+.pts{list-style:none;margin:0;padding:0;display:flex;gap:18px}
+.slide.cards .pts{flex-direction:row;flex:1;align-items:stretch}
+.slide.figure .pts{flex-direction:column;width:440px;flex:none}
+.pt{visibility:hidden;background:var(--clean);border:1px solid var(--rule);
+  border-top:5px solid var(--bronze);border-radius:7px;padding:26px 26px;
+  display:flex;flex-direction:column;justify-content:center;gap:10px;flex:1}
+.slide.cards .pt{min-height:210px}
+.pt.shown{visibility:visible}
+.term{font-family:var(--font-ui);font-weight:700;color:var(--bronze);
+  font-size:27px;line-height:1.15}
+.gloss{font-size:22px;line-height:1.35;color:var(--ink)}
+.plain{font-size:25px;line-height:1.3;color:var(--ink)}
+.slide.cards .pts.n4 .term{font-size:24px}
+.slide.cards .pts.n4 .gloss{font-size:20px}
+.slide.cards .pts.n4 .plain{font-size:22px}
+
+/* Figure slides: the picture carries the slide, the cards sit beside it. */
+.art{margin:0;flex:1;display:flex;flex-direction:column;gap:12px;min-width:0}
+.art .shot{width:100%;height:404px;object-fit:cover;display:block;
+  border:1px solid var(--rule);background:var(--charcoal)}
+.art figcaption{font-family:var(--font-ui);font-size:14px;line-height:1.45;
+  color:var(--iron)}
+.art cite{font-style:normal;color:#8a8275}
+/* A picture that fails in the room must not leave a hole: the cards take the
+   slide and the figure is removed outright, never swapped for generic art. */
+.slide.noart .art{display:none}
+.slide.noart .pts{flex-direction:row;width:auto;flex:1}
+
 #bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;
   align-items:center;gap:10px;padding:10px 14px;
   background:rgba(13,14,15,.93);font-family:var(--font-ui)}
@@ -247,13 +209,13 @@ html,body{margin:0;padding:0;height:100%;background:#0d0e0f;color:var(--ink)}
 #ov .grid{display:grid;gap:14px;
   grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))}
 #ov button{display:block;width:100%;text-align:left;font-family:var(--font-ui);
-  font-size:13px;line-height:1.4;color:var(--clean);background:#22282a;
-  border:1px solid #3b4245;border-radius:5px;padding:12px 14px;cursor:pointer}
+  font-size:14px;line-height:1.4;color:var(--clean);background:#22282a;
+  border:1px solid #3b4245;border-radius:5px;padding:13px 15px;cursor:pointer}
 #ov button:hover{background:#2e3538}
 #ov .n{display:block;font-weight:700;color:var(--gold);margin-bottom:5px;
   letter-spacing:.1em;font-size:11px}
 
-@media print{#bar,#ov,.skip{display:none!important}}
+@media print{#bar,#ov,.skip{display:none!important}.pt{visibility:visible}}
 `;
 
 const SCRIPT = `
@@ -262,7 +224,9 @@ const SCRIPT = `
   var slides = [].slice.call(document.querySelectorAll('.slide'));
   var count = document.getElementById('count');
   var ov = document.getElementById('ov');
-  var i = 0;
+  var i = 0, step = 0;
+
+  function steps(n) { return parseInt(slides[n].getAttribute('data-steps'), 10) || 0; }
 
   function fit() {
     stage.style.setProperty('--scale', Math.min(
@@ -271,17 +235,37 @@ const SCRIPT = `
     ));
   }
 
-  function show(n) {
-    i = Math.max(0, Math.min(slides.length - 1, n));
+  function paint() {
     slides.forEach(function (s, k) {
       var on = k === i;
       s.hidden = !on;
       s.classList.toggle('on', on);
     });
+    var pts = slides[i].querySelectorAll('.pt');
+    [].forEach.call(pts, function (p, k) { p.classList.toggle('shown', k < step); });
     count.textContent = (i + 1) + ' / ' + slides.length;
     if (location.hash !== '#s' + (i + 1)) {
       history.replaceState(null, '', '#s' + (i + 1));
     }
+  }
+
+  /* Forward reveals the next point, then moves on. Backward un-reveals, then
+     lands on the previous slide fully revealed, which is what a presenter
+     stepping back to re-explain actually wants to see. */
+  function fwd() {
+    if (step < steps(i)) { step++; }
+    else if (i < slides.length - 1) { i++; step = 0; }
+    paint();
+  }
+  function back() {
+    if (step > 0) { step--; }
+    else if (i > 0) { i--; step = steps(i); }
+    paint();
+  }
+  function go(n, full) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    step = full ? steps(i) : 0;
+    paint();
   }
 
   function overview(open) {
@@ -289,8 +273,8 @@ const SCRIPT = `
     if (open) { var b = ov.querySelector('button'); if (b) b.focus(); }
   }
 
-  document.getElementById('prev').onclick = function () { show(i - 1); };
-  document.getElementById('next').onclick = function () { show(i + 1); };
+  document.getElementById('prev').onclick = back;
+  document.getElementById('next').onclick = fwd;
   document.getElementById('btn-ov').onclick = function () { overview(ov.hidden); };
   document.getElementById('btn-fs').onclick = function () {
     if (document.fullscreenElement) { document.exitFullscreen(); }
@@ -299,18 +283,20 @@ const SCRIPT = `
     }
   };
 
-  ov.querySelectorAll('button').forEach(function (b, k) {
-    b.onclick = function () { overview(false); show(k); };
+  [].forEach.call(ov.querySelectorAll('button'), function (b, k) {
+    b.onclick = function () { overview(false); go(k, true); };
   });
 
   document.addEventListener('keydown', function (e) {
     if (e.target.matches('input,textarea')) return;
     var k = e.key;
     if (k === 'Escape' && !ov.hidden) { overview(false); return; }
-    if (k === 'ArrowRight' || k === 'PageDown' || k === ' ') { e.preventDefault(); show(i + 1); }
-    else if (k === 'ArrowLeft' || k === 'PageUp') { e.preventDefault(); show(i - 1); }
-    else if (k === 'Home') { e.preventDefault(); show(0); }
-    else if (k === 'End') { e.preventDefault(); show(slides.length - 1); }
+    if (k === 'ArrowRight' || k === 'PageDown' || k === ' ') { e.preventDefault(); fwd(); }
+    else if (k === 'ArrowLeft' || k === 'PageUp') { e.preventDefault(); back(); }
+    else if (k === 'ArrowDown') { e.preventDefault(); go(i + 1, false); }
+    else if (k === 'ArrowUp') { e.preventDefault(); go(i - 1, false); }
+    else if (k === 'Home') { e.preventDefault(); go(0, false); }
+    else if (k === 'End') { e.preventDefault(); go(slides.length - 1, true); }
     else if (k === 'o' || k === 'O') { overview(ov.hidden); }
     else if (k === 'f' || k === 'F') { document.getElementById('btn-fs').click(); }
   });
@@ -318,26 +304,31 @@ const SCRIPT = `
   window.addEventListener('resize', fit);
   fit();
 
+  /* A student arriving at #s4 wants to read slide 4, not click through it. */
   var m = (location.hash || '').match(/^#s(\\d+)$/);
-  show(m ? parseInt(m[1], 10) - 1 : 0);
+  go(m ? parseInt(m[1], 10) - 1 : 0, !!m);
 })();
 `;
 
 /**
  * @param {object} lesson  window.BEHISTORICAL_LESSON for the topic
  * @param {object} opts    { lessonFile } the lesson shell to link back to
- * @returns {string} the complete page
  */
 function renderPresentation(lesson, opts) {
   const o = opts || {};
   const meta = lesson.meta || {};
-  const slides = buildSlides(lesson);
+  const slides = (lesson.lecture && lesson.lecture.slides) || [];
+  const total = slides.length + 1;
   const title = `${meta.topic || 'BeHistorical'} Class Slides | ${meta.title || ''}`.trim();
 
-  const overview = slides.map((s, k) =>
-    `<button type="button"><span class="n">${String(k + 1).padStart(2, '0')}</span>`
-    + `${esc(s.kind === 'title' ? s.title : (s.kind === 'section' ? s.title : s.eyebrow))}</button>`
-  ).join('\n      ');
+  const body = [titleMarkup(meta, total)]
+    .concat(slides.map((s, i) => slideMarkup(s, i, total)));
+
+  const overview = [`<button type="button"><span class="n">01</span>${esc(meta.title || '')}</button>`]
+    .concat(slides.map((s, k) =>
+      `<button type="button"><span class="n">${String(k + 2).padStart(2, '0')}</span>`
+      + `${esc(s.headline || '')}</button>`))
+    .join('\n      ');
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -355,7 +346,7 @@ function renderPresentation(lesson, opts) {
   <a class="skip" href="#stage">Skip to the slides</a>
   <main id="viewport">
     <div id="stage" tabindex="-1">
-${slides.map(slideMarkup).map(s => '      ' + s).join('\n')}
+${body.map(s => '      ' + s).join('\n')}
     </div>
   </main>
 
@@ -371,7 +362,7 @@ ${slides.map(slideMarkup).map(s => '      ' + s).join('\n')}
     <button id="btn-ov" type="button">All slides</button>
     <button id="btn-fs" type="button">Full screen</button>
     <a class="home" href="${esc(o.lessonFile || '../index.html')}">Back to the lesson</a>
-    <span id="count">1 / ${slides.length}</span>
+    <span id="count">1 / ${total}</span>
   </nav>
 
   <script>${SCRIPT}</script>
@@ -380,4 +371,4 @@ ${slides.map(slideMarkup).map(s => '      ' + s).join('\n')}
 `;
 }
 
-module.exports = { renderPresentation, buildSlides };
+module.exports = { renderPresentation, splitPoint, MAX_HEADLINE, MAX_POINT };

@@ -1520,8 +1520,29 @@ section('Remote image URLs are well formed');
 // teacher data file to get them. See scripts/lib/presentation-page.js.
 section('Class Presentations');
 {
-  let CP_TOPICS = null;
-  try { ({ TOPICS: CP_TOPICS } = require('./build-presentations.js')); } catch (e) { CP_TOPICS = null; }
+  let CP_TOPICS = null, CP_MAX_HEADLINE = 44, CP_MAX_POINT = 64;
+  try {
+    ({ TOPICS: CP_TOPICS } = require('./build-presentations.js'));
+    ({ MAX_HEADLINE: CP_MAX_HEADLINE, MAX_POINT: CP_MAX_POINT } = require('./lib/presentation-page.js'));
+  } catch (e) { CP_TOPICS = null; }
+
+  // Parsed rather than grepped, because the limits below are about the text a
+  // student reads off a wall, not about whether a key is present.
+  function cpLoadLesson(dataFile) {
+    const box = {
+      window: {},
+      document: {
+        querySelector: () => null,
+        createElement: () => ({ setAttribute() {}, style: {} }),
+        head: { appendChild() {} }
+      },
+      console: { log() {}, warn() {}, error() {} }
+    };
+    vm.createContext(box);
+    vm.runInContext(fs.readFileSync(path.join(ROOT, 'assets', 'data', dataFile), 'utf8'),
+      box, { filename: dataFile });
+    return box.window.BEHISTORICAL_LESSON;
+  }
 
   totalChecks++;
   if (!Array.isArray(CP_TOPICS)) {
@@ -1539,12 +1560,47 @@ section('Class Presentations');
         continue;
       }
 
-      // The slides are derived from lecture.segments, so a data file that
-      // lost them builds an empty deck rather than failing loudly.
+      // Slide text is authored as lecture.slides. It is never derived from
+      // lecture.segments: those are full reading sentences, and the version
+      // of this that split them one per slide put a forty-word paragraph on
+      // the wall at forty points. See scripts/lib/presentation-page.js.
       totalChecks++;
-      if (!/\bsegments\s*:/.test(dataSrc)) {
-        err(dataPath, `Class Presentation declares ${topic.out} from this data file, but it has no lecture segments`);
+      let L = null;
+      try { L = cpLoadLesson(topic.dataFile); } catch (e) {
+        err(dataPath, `Class Presentation cannot load this data file: ${e.message}`);
       }
+      const cpSlides = (L && L.lecture && L.lecture.slides) || [];
+      if (!cpSlides.length) {
+        err(dataPath, `Class Presentation declares ${topic.out} from this data file, but it has no lecture.slides. Slide text is authored, never derived from lecture.segments`);
+      }
+
+      // The projected-text contract, and the reason it is a machine check: a
+      // slide carrying a reading sentence renders perfectly and is useless in
+      // a room. A student cannot copy it, which is the whole point of the
+      // surface. Caps are deliberately generous; they catch a pasted sentence,
+      // not a slightly long phrase.
+      cpSlides.forEach((sl, k) => {
+        const where = `${topic.out} slide ${k + 1}`;
+        totalChecks++;
+        if (String(sl.headline || '').length > CP_MAX_HEADLINE) {
+          err(dataPath, `${where}: headline is ${String(sl.headline).length} characters, over the ${CP_MAX_HEADLINE} cap. A headline makes a short claim, it does not summarize the slide`);
+        }
+        totalChecks++;
+        if (!(sl.points || []).length) {
+          err(dataPath, `${where}: has no points`);
+        }
+        (sl.points || []).forEach((pt, j) => {
+          const t = String(pt);
+          totalChecks++;
+          if (t.length > CP_MAX_POINT) {
+            err(dataPath, `${where} point ${j + 1}: ${t.length} characters, over the ${CP_MAX_POINT} cap. Projected points are phrases a student copies, not sentences: "${t.slice(0, 50)}..."`);
+          }
+          totalChecks++;
+          if (/[.!?]\s+\S/.test(t)) {
+            err(dataPath, `${where} point ${j + 1}: carries more than one sentence. One phrase per point`);
+          }
+        });
+      });
 
       // The student's only route in.
       totalChecks++;
