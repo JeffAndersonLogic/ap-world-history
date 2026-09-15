@@ -20,6 +20,12 @@
   lesson.beInTheRoom = { url:'../beintheroom/unit-2/mongol-court.html', desc:'Enter the Mongol court of Kublai Khan. You are a foreign diplomat or merchant, navigate the court, negotiate trade access, and report back to your home ruler.' };
   lesson.beSurreal = { title:'BeSurreal: Marco Polo\'s Kublai Khan', text:'Marco Polo spent 17 years in Kublai Khan\'s court and returned to describe marvels that Europeans dismissed as fantasy: paper money, coal as fuel, cities of millions, and postal relay stations every 25 miles. His account reveals the scale of the Mongol Empire and why the Pax Mongolica made it possible for a Venetian merchant to travel from Italy to China.', prompt:'What does Marco Polo\'s experience reveal about what the Pax Mongolica made possible that had never existed before?' };
 
+  lesson.classPresentation = {
+    title:'Class Slides: The Mongol Empire',
+    desc:'Follow along during class on your own device, or reopen these slides anytime to review Mongol conquest, governance, the Pax Mongolica, and the destructive/connective paradox of Mongol rule.',
+    url:'presentation-topic-2-2-student.html'
+  };
+
   lesson.skillBuilder = {
     label:'Continuity and Change practice', title:'AP Skill Builder: What Changed — and What Continued — Under the Mongols?', intro:'CCOT requires a baseline. First establish what existed before the Mongols, then track the SAME category through Mongol rule and after political fragmentation. A continuity is something that persisted; a change is something meaningfully transformed. Both need evidence and an explanation of why the pattern occurred.',
     steps:[
