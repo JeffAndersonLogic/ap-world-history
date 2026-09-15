@@ -41,6 +41,7 @@ const SUITES = {
     ['scripts/test/canvas-rich-clipboard.test.js', 'Canvas rich hierarchy + HTML/plain clipboard contract'],
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
+    ['scripts/test/teaching-os-architecture.test.js', 'Teaching OS shared architecture and student-deck source of truth'],
     ['scripts/test/foundations-golden.js', 'Foundations content vs the hand-authored originals'],
     ['scripts/test/readings-golden.js', '58 unit readings vs the hand-authored originals'],
     ['scripts/test/socrates-contract.test.js', 'AI coach kit reproducible, persona unit-agnostic'],
@@ -142,14 +143,9 @@ for (const suite of names) {
 
   for (const [rel, blurb] of SUITES[suite]) {
     const started = Date.now();
-    // stdio inherit: a failing check's own output is the useful part, and these
-    // scripts already print well. Swallowing it to re-print a summary would
-    // lose the file and line every one of them reports.
     const run = spawnSync(process.execPath, [rel], { cwd: ROOT, stdio: 'inherit', env: childEnv });
     const secs = ((Date.now() - started) / 1000).toFixed(1);
 
-    // spawnSync reports a failure to launch through .error, and a signal kill
-    // through .signal, in both of which cases status is null. Neither is a pass.
     let code;
     if (run.error) code = 1;
     else if (run.status === null) code = 1;
@@ -164,7 +160,6 @@ for (const suite of names) {
   }
 }
 
-// ── summary ───────────────────────────────────────────────────────────────────
 const failed = results.filter(r => r.state === 'FAIL');
 const skipped = results.filter(r => r.state === 'SKIP');
 const passed = results.filter(r => r.state === 'PASS');
