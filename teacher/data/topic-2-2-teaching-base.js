@@ -1,10 +1,6 @@
 /*
  * Teacher-only orchestration for Topic 2.2.
- *
- * Canonical production source: slide definitions, maps, reconstructions,
- * documentary clips, notes, and projection metadata live here.
- * The shared renderer only renders these definitions; no visual override layer
- * is required.
+ * CED spine: build/fragment the Mongol states -> facilitate exchange -> transfer knowledge.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -12,49 +8,46 @@ window.BEHISTORICAL_TEACHING = {
     date: 'Friday, September 18, 2026',
     cohort: 'Green',
     minutes: 90,
-    title: 'The Mongol Empire: Conquest, Connection, and the Pax Mongolica',
-    subtitle: 'How do conquerors turn speed into a system?',
-    essentialQuestion: 'How did the Mongols conquer and govern such a vast empire, and how did Mongol rule reshape Afro-Eurasian exchange?',
-    apFocus: 'CCOT + Governance + Economic Systems',
-    endTarget: 'Students can explain how Mongol conquest and administration changed Eurasian political control and exchange while recognizing important continuities and the destructive/connective paradox of Mongol rule.'
+    title: 'The Mongol Empire',
+    subtitle: 'Build. Fragment. Connect. Transfer.',
+    essentialQuestion: 'How did Mongol expansion change states, exchange, and the movement of knowledge across Eurasia?',
+    apFocus: 'CCOT + Governance + Economic Systems + Cultural Transfer',
+    endTarget: 'Students can explain Mongol state building and fragmentation, how imperial expansion facilitated trade and communication, and how interregional contact transferred knowledge and cultural practices.'
   },
 
   priorities: {
     must: [
-      'Students explain HOW Mongol military methods produced conquest, not merely name cavalry or Genghis Khan.',
-      'Students distinguish conquest from governance: taking territory and holding territory are different historical problems.',
-      'Students understand khanates, religious tolerance, and the Yam as administrative solutions to governing distance and diversity.',
-      'Students explain the Pax Mongolica as a change in the conditions of exchange, not as the beginning of Silk Road trade.',
-      'Students leave with the paradox: Mongol rule was simultaneously destructive and connective.'
+      'Teach all three CED dimensions: Mongol state change, facilitated exchange, and technological/cultural transfer.',
+      'Students explain HOW military organization and adaptation produced conquest rather than naming tactics.',
+      'Students explain WHY unified Mongol political control fragmented into regional khanates.',
+      'Students understand that the Silk Roads predated Mongol rule; Mongol expansion changed political conditions on existing networks.',
+      'Explicitly teach the CED transfer examples: Greco-Islamic medical knowledge to western Europe, numbering systems to Europe, and adoption of Uyghur script.'
     ],
     should: [
-      'Use large historical images as evidence and atmosphere rather than filling the screen with notes.',
-      'Make Mongol borrowing visible: siege specialists, administrators, scribes, and local expertise mattered.',
-      'Use the map to make scale and fragmentation concrete before explaining the khanates.',
-      'Use CCOT language explicitly: trade routes continued; political conditions and scale of movement changed.'
+      'Use the map twice: first for the problem of governing scale, then for the opportunity of connecting Eurasia.',
+      'Keep conquest visually memorable but do not let violence displace the required exchange and transfer content.',
+      'Use CCOT language explicitly: routes continued; political integration, protection, communication, and scale of movement changed.',
+      'Treat plague as a bridge to 2.6, not a core 2.2 teaching strand.'
     ],
     could: [
-      'Use the William of Rubruck primary source if the class needs evidence of religious diversity and administrative reach.',
-      'Use the Evidence Lab as reinforcement or homework rather than forcing it into this block.',
-      'Use the full Heimler 2.2 review as retrieval/review, not as primary content delivery.'
+      'Use BeInTheRoom if time allows after the CED core is secure.',
+      'Use the full Heimler 2.2 review only as retrieval or reinforcement.',
+      'Use William of Rubruck as source evidence for diversity, communication, and movement.'
     ]
   },
 
   flow: [
-    { id: 'open', label: 'Hook + Scale', range: '0–6', minutes: 6, teacher: 'Make the size problem visible before giving the solutions.', students: 'Identify what makes conquest and governance difficult at continental scale.', slide: 0 },
-    { id: 'map', label: 'Map the Empire', range: '6–12', minutes: 6, teacher: 'Locate the four khanates and the trade corridors they overlapped.', students: 'See distance, diversity, and fragmentation as governance problems.', slide: 2 },
-    { id: 'first10', label: 'First & 10', range: '12–22', minutes: 10, teacher: 'Listen for the distinction between conquest, administration, and exchange.', students: 'Read and respond.', slide: 3 },
-    { id: 'conquest', label: 'Teach Conquest', range: '22–34', minutes: 12, teacher: 'Teach unification, mobility, deception, intelligence, and siege adaptation as a system.', students: 'Track what problem each military method solved.', slide: 4 },
-    { id: 'clip1', label: 'Clip: Genghis', range: '34–36', minutes: 2, teacher: 'Use the clip as a visual reset, not as a substitute for explanation.', students: 'Watch for why Temüjin built a different kind of steppe army.', slide: 7 },
-    { id: 'govern', label: 'Teach Governance', range: '36–49', minutes: 13, teacher: 'Shift from taking territory to ruling distance and diversity.', students: 'Connect khanates, tolerance, local officials, and the Yam to administrative problems.', slide: 8 },
-    { id: 'check1', label: 'Checkpoint 1', range: '49–55', minutes: 6, teacher: 'Look for one military method + one administrative method + explanation.', students: 'Explain conquest and administration with specific evidence.', slide: 12 },
-    { id: 'clip2', label: 'Clip: After Genghis', range: '55–57', minutes: 2, teacher: 'Use succession and regional rule to reinforce fragmentation.', students: 'Watch for what happens when one empire becomes multiple Mongol states.', slide: 13 },
-    { id: 'pax', label: 'Pax Mongolica', range: '57–68', minutes: 11, teacher: 'Explain lower political barriers, merchant protection, relay systems, and movement.', students: 'Distinguish continuity of routes from change in conditions of exchange.', slide: 14 },
-    { id: 'clip3', label: 'Clip: The Cost', range: '68–70', minutes: 2, teacher: 'Reinforce the destructive side of the Mongol paradox.', students: 'Watch for the costs of conquest.', slide: 17 },
-    { id: 'room', label: 'BeInTheRoom', range: '70–81', minutes: 11, teacher: 'Launch roles quickly; keep the focus on evidence-based choices under Mongol rule.', students: 'Choose a role, policy, and evidence; defend a position.', slide: 18 },
-    { id: 'skill', label: 'AP Skill Builder', range: '81–86', minutes: 5, teacher: 'Force a baseline-before-change move.', students: 'Write a short CCOT claim about trade or political control.', slide: 19 },
-    { id: 'check2', label: 'Final Checkpoint', range: '86–89', minutes: 3, teacher: 'Use as an exit response if time is tight.', students: 'Explain two effects of the Pax Mongolica.', slide: 20 },
-    { id: 'close', label: 'Close + Bridge', range: '89–90', minutes: 1, teacher: 'Land the paradox and bridge to the Indian Ocean.', students: 'Leave with the Unit 2 network idea.', slide: 21 }
+    { id: 'open', label: 'Hook + Big Argument', range: '0–6', minutes: 6, teacher: 'Frame the lesson as four moves: build, fragment, connect, transfer.', students: 'Write the four-part story.', slide: 0 },
+    { id: 'map', label: 'Scale + Khanates', range: '6–13', minutes: 7, teacher: 'Use the map to show both imperial reach and the problem of governing distance.', students: 'Locate the successor khanates and identify why unity became difficult.', slide: 2 },
+    { id: 'first10', label: 'First & 10', range: '13–23', minutes: 10, teacher: 'Listen for state change, exchange, and transfer.', students: 'Read for the three required CED dimensions.', slide: 3 },
+    { id: 'conquest', label: 'Build the Empire', range: '23–35', minutes: 12, teacher: 'Teach organization, mobility, and adaptation as a conquest system.', students: 'Track what problem each military method solved.', slide: 4 },
+    { id: 'govern', label: 'Govern + Fragment', range: '35–49', minutes: 14, teacher: 'Pivot from conquest to rule, then explain why regional khanates emerge.', students: 'Connect administration and succession to fragmentation.', slide: 7 },
+    { id: 'check1', label: 'Checkpoint 1', range: '49–55', minutes: 6, teacher: 'Require one conquest mechanism and one fragmentation mechanism.', students: 'Explain build + decline with evidence.', slide: 11 },
+    { id: 'exchange', label: 'Facilitate Exchange', range: '55–66', minutes: 11, teacher: 'Teach continuity of routes and change in political conditions.', students: 'Explain how protection and communication affected movement.', slide: 12 },
+    { id: 'transfer', label: 'Transfer Knowledge', range: '66–76', minutes: 10, teacher: 'Teach all three required CED transfer examples explicitly.', students: 'Sort each example as borrowed, transmitted, or adapted knowledge.', slide: 14 },
+    { id: 'skill', label: 'AP Skill Builder', range: '76–83', minutes: 7, teacher: 'Build a CCOT + connection argument from the full lesson.', students: 'Write baseline, change, and significance.', slide: 16 },
+    { id: 'check2', label: 'Final Checkpoint', range: '83–88', minutes: 5, teacher: 'Require all three CED dimensions in a concise response.', students: 'Explain state change, exchange, and transfer.', slide: 17 },
+    { id: 'close', label: 'Close + Bridge', range: '88–90', minutes: 2, teacher: 'Bridge from overland political integration to Indian Ocean environmental systems.', students: 'Carry the network idea into 2.3.', slide: 18 }
   ],
 
   quickLaunch: [
@@ -73,7 +66,7 @@ window.BEHISTORICAL_TEACHING = {
   slides: [
     {
       phase: 'open', kind: 'hero', eyebrow: 'AP World History · Topic 2.2',
-      title: 'The Mongol Empire', subtitle: 'How do conquerors turn speed into a system?',
+      title: 'The Mongol Empire', subtitle: 'Build. Fragment. Connect. Transfer.',
       visual: {
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
         alt: 'Yuan dynasty portrait of Genghis Khan',
@@ -81,89 +74,75 @@ window.BEHISTORICAL_TEACHING = {
         credit: 'Yuan dynasty imperial portrait album · National Palace Museum · public domain'
       },
       notes: {
-        minutes: 2,
-        land: ['Topic 2.1 showed why Silk Road exchange could grow. Topic 2.2 asks what happens when Mongol rulers control enormous portions of those overland routes.', 'This is a later Yuan imperial portrait of Genghis Khan. Treat it as political memory, not a photographic likeness.'],
-        ask: 'Which is harder: taking a city or governing thousands of miles after you take it?',
-        listenFor: 'Conquest and administration require different tools.'
+        minutes: 3,
+        land: ['Give students the entire story before details: the Mongols built a vast empire, political unity fragmented, Mongol expansion facilitated exchange, and intensified contact transferred knowledge.', 'Topic 2.2 is not only a conquest story.'],
+        ask: 'What changes when one political system stretches across much of Eurasia?',
+        listenFor: 'Government, communication, trade, travel, and movement of ideas.'
       }
     },
     {
-      phase: 'open', kind: 'map', eyebrow: 'The Scale Problem',
-      title: 'Horse speed wins battles. What governs distance?',
-      mapLabel: 'MONGOL EXPANSION · 1206–1294',
-      visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Expansion_of_the_Mongol_Empire.svg',
-        alt: 'Vector map showing the expansion of the Mongol Empire from 1206 to 1294',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Expansion_of_the_Mongol_Empire.svg',
-        credit: 'Expansion of the Mongol Empire · Wikimedia Commons · CC BY-SA 4.0'
-      },
-      footer: 'Conquest is only the first problem.',
-      notes: {
-        minutes: 4,
-        land: ['Let the map do the work. The visual point is speed and scale.', 'A fast army can seize territory faster than a government can organize it.'],
-        ask: 'What breaks first when an empire becomes this large?',
-        listenFor: 'Communication, succession, supply, taxation, local resistance, language, religion, distance.'
-      }
-    },
-    {
-      phase: 'map', kind: 'mapCompare', eyebrow: 'Geographic Grounding',
-      title: 'One empire becomes four Mongol states.',
-      maps: [
-        {
-          label: 'HIGH-RESOLUTION HISTORICAL ATLAS · c. 1290',
-          visual: {
-            url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Asia_under_the_Mongols_1290_AD.jpg',
-            alt: 'High-resolution historical atlas map of Asia under Mongol rule around 1290',
-            sourceUrl: 'https://commons.wikimedia.org/wiki/File:Asia_under_the_Mongols_1290_AD.jpg',
-            credit: 'Asia under the Mongols, 1290 A.D. · Herrmann & Westermann, 1935 · public domain · 6810×6009'
-          }
-        },
-        {
-          label: 'SUCCESSOR KHANATES · c. 1300',
-          visual: {
-            url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MongolEmpireDivisions1300.png',
-            alt: 'Map of the Golden Horde, Chagatai Khanate, Ilkhanate, and Yuan dynasty around 1300',
-            sourceUrl: 'https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png',
-            credit: 'Mongol imperial subdivisions c. 1300 · Wikimedia Commons · CC BY 3.0'
-          }
-        }
+      phase: 'open', kind: 'process', eyebrow: 'The Whole Lesson',
+      title: 'Four moves. One connected story.',
+      steps: [
+        { label: 'BUILD', text: 'Organization + adaptation create conquest' },
+        { label: 'FRAGMENT', text: 'Distance + succession strengthen regional khanates' },
+        { label: 'CONNECT', text: 'Imperial systems facilitate trade + communication' },
+        { label: 'TRANSFER', text: 'Knowledge crosses cultural boundaries' }
       ],
+      footer: 'Do not leave class with only cavalry and Genghis Khan.',
+      notes: {
+        minutes: 3,
+        land: ['This is the CED spine. Return to it after every section.'],
+        ask: 'Which of these four moves is easiest to forget?',
+        listenFor: 'Transfer is usually the missing piece.'
+      }
+    },
+    {
+      phase: 'map', kind: 'map', eyebrow: 'Scale + Fragmentation',
+      title: 'One empire becomes four Mongol states.',
+      mapLabel: 'SUCCESSOR KHANATES · c. 1300',
+      visual: {
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MongolEmpireDivisions1300.png',
+        alt: 'Map of the Golden Horde, Chagatai Khanate, Ilkhanate, and Yuan dynasty around 1300',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png',
+        credit: 'Mongol imperial subdivisions c. 1300 · Wikimedia Commons · CC BY 3.0'
+      },
       footer: 'Golden Horde · Chagatai · Ilkhanate · Yuan',
       notes: {
-        minutes: 6,
-        land: ['Use the left map for scale, routes, and geographic texture; use the right map for clean successor-state boundaries.', 'Locate the Golden Horde, Chagatai Khanate, Ilkhanate, and Yuan dynasty. Then point out the Silk Road corridors that pass through multiple Mongol-controlled regions.', 'The point is not memorizing every border. The point is seeing why regional rule became attractive and why political unity became harder to maintain.'],
-        ask: 'Why might one political center struggle to govern this entire map?',
-        listenFor: 'Distance, environmental variety, diverse populations, communication, succession, regional interests.'
+        minutes: 7,
+        land: ['Locate the four major successor khanates.', 'Use the map to make the tension visible: continental reach creates both extraordinary connectivity and enormous governance problems.', 'Regional khanates are evidence of continuity of Mongol rule but decline of unified imperial control.'],
+        ask: 'Why might regional rule become more practical as the empire expands?',
+        listenFor: 'Distance, succession, local interests, different populations, communication limits.'
       }
     },
     {
       phase: 'first10', kind: 'action', eyebrow: 'First & 10 · 10 Minutes',
-      title: 'Read for three systems.', subtitle: 'Conquest. Governance. Exchange.',
+      title: 'Read for three CED dimensions.', subtitle: 'State change. Exchange. Transfer.',
       action: { label: 'Open First & 10', url: '../unit-2/first-and-10-topic-2-2-mongol-empire-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 10,
-        land: ['The detailed narrative belongs in First & 10. The projector only gives the reading lens.', 'Circulate and check whether students can separate military from administrative methods.'],
-        ask: 'Which example belongs under conquest? Which belongs under governance?',
-        listenFor: 'Cavalry/siege warfare under conquest; khanates/tolerance/Yam under governance.'
+        land: ['Students should not read for random Mongol facts. Give them the three categories before they begin.'],
+        ask: 'Where does your evidence fit: state change, exchange, or transfer?',
+        listenFor: 'Students can categorize evidence and explain why it matters.'
       }
     },
     {
-      phase: 'conquest', kind: 'reconstruction', eyebrow: 'Conquest 1 · Organization',
-      title: 'Temüjin turns steppe warriors into a system.', subtitle: 'Loyalty shifts from lineage to command.',
+      phase: 'conquest', kind: 'hero', eyebrow: 'Build 1 · Organization',
+      title: 'Temüjin turns steppe warriors into a system.', subtitle: 'Coordination matters as much as horsemanship.',
       visual: {
         url: '../assets/images/reconstructions/topic-2-2-mounted-archers.webp?v=production-v5',
         alt: 'Historical reconstruction of coordinated Mongol mounted archers on the steppe',
         credit: 'Historical reconstruction · AI generated'
       },
       notes: {
-        minutes: 3,
-        land: ['This reconstruction is interpretive, not primary-source evidence. Use it to visualize coordinated mounted warfare while you teach the organizational change.', 'Genghis Khan unified competing steppe groups by 1206 and reorganized military loyalty around command rather than simply preserving old clan hierarchies.', 'The military advantage came from organization as much as horsemanship: units could coordinate, communicate, and act under a larger command structure.'],
-        ask: 'Why would reorganizing loyalty make a conquering army more effective?',
-        listenFor: 'Reduced clan rivalry, stronger coordination, competence, loyalty to the larger command system.'
+        minutes: 4,
+        land: ['Genghis Khan unified competing steppe groups and reorganized military loyalty around a larger command structure.', 'Organization reduced clan rivalry and allowed coordinated campaigns across large distances.'],
+        ask: 'Why is organization a military technology?',
+        listenFor: 'It improves coordination, obedience, communication, and scale.'
       }
     },
     {
-      phase: 'conquest', kind: 'hero', eyebrow: 'Conquest 2',
+      phase: 'conquest', kind: 'hero', eyebrow: 'Build 2 · Mobility',
       title: 'Mobility is a weapon.', subtitle: 'Mounted archery + speed + feigned retreat.',
       visual: {
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Anonymous_-_Mongol_with_Horse_and_Camel_-_47.18.139_-_Metropolitan_Museum_of_Art.jpg',
@@ -172,15 +151,15 @@ window.BEHISTORICAL_TEACHING = {
         credit: 'The Metropolitan Museum of Art · Yuan dynasty · Open Access/Public Domain'
       },
       notes: {
-        minutes: 3,
-        land: ['Use the image to keep horses and mobility physically present in the story.', 'Mongol cavalry could move quickly, coordinate across wide spaces, attack from distance, and use feigned retreat to break formations.'],
-        ask: 'Why is a feigned retreat more than “running away and coming back”?',
-        listenFor: 'It manipulates the enemy into abandoning formation or defensive position.'
+        minutes: 4,
+        land: ['Mounted archers could move quickly, attack at range, coordinate over open terrain, and manipulate enemy formations with feigned retreat.'],
+        ask: 'How does speed become a strategic advantage rather than just a physical one?',
+        listenFor: 'Surprise, intelligence, choice of battlefield, supply, and control of tempo.'
       }
     },
     {
-      phase: 'conquest', kind: 'hero', eyebrow: 'Conquest 3',
-      title: 'The Mongols borrowed what worked.', subtitle: 'Siege engineers turn mobility into city conquest.',
+      phase: 'conquest', kind: 'hero', eyebrow: 'Build 3 · Adaptation',
+      title: 'The Mongols borrowed what worked.', subtitle: 'Siege specialists turn mobility into city conquest.',
       visual: {
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bagdad1258.jpg',
         alt: 'Medieval manuscript depiction of the Mongol siege of Baghdad in 1258',
@@ -189,231 +168,193 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
-        land: ['Steppe cavalry alone could not reliably take fortified cities.', 'The Mongols incorporated siege specialists and techniques from conquered or recruited peoples.', 'This image depicts Baghdad 1258; use it as visual evidence of siege warfare and the destructive capacity of adaptation.'],
-        ask: 'What does borrowing siege technology tell us about Mongol military culture?',
-        listenFor: 'Pragmatism, adaptation, willingness to use conquered specialists.'
+        land: ['Steppe cavalry could not solve every military problem.', 'Mongol rulers recruited or compelled specialists from conquered peoples and adopted siege techniques that allowed them to take fortified cities.', 'Borrowing expertise is a recurring Mongol pattern that will matter again when we discuss cultural transfer.'],
+        ask: 'What does military borrowing reveal about Mongol state building?',
+        listenFor: 'Pragmatism and willingness to adopt useful expertise.'
       }
     },
     {
-      phase: 'clip1', kind: 'video', eyebrow: 'Watch · ~1 Minute',
-      title: 'How does Temüjin become Chinggis Khan?',
-      video: { youtubeId: 'nMJkWvEnuDU', start: 0, end: 95, label: 'National Geographic · The Rise of Genghis Khan (2026)' },
-      footer: 'Watch for rivalry, survival, unification, and the making of political authority.',
+      phase: 'govern', kind: 'prompt', eyebrow: 'Governance Pivot',
+      title: 'Conquest creates a new problem.', subtitle: 'How do you rule thousands of miles of diversity?',
       notes: {
         minutes: 2,
-        land: ['Use this as a cinematic reset after the conquest system. National Geographic frames Temüjin’s rise through rivalry, defeat, recovery, and consolidation rather than as a list of military tricks.'],
-        ask: 'What is changing about Temüjin’s power as he moves from survivor to ruler?',
-        listenFor: 'Alliance-building, consolidation, loyalty, control of rival groups, and political authority.'
+        land: ['Mark the pivot. Taking territory and governing it are different historical processes.'],
+        ask: 'What does an empire need that an army does not?',
+        listenFor: 'Records, administrators, taxation, communication, legitimacy, local cooperation.'
       }
     },
     {
-      phase: 'govern', kind: 'hero', eyebrow: 'Governance 1',
-      title: 'Conquest ≠ governance.', subtitle: 'Winning territory creates new problems.',
-      visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumKhubilaiPortrait.jpg',
-        alt: 'Yuan dynasty portrait of Kublai Khan',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumKhubilaiPortrait.jpg',
-        credit: 'Yuan dynasty imperial portrait album · National Palace Museum · public domain'
-      },
-      notes: {
-        minutes: 2,
-        land: ['Mark the pivot explicitly: a conqueror now has to become a ruler.', 'Kublai Khan is a useful visual anchor for the transition from expansion to governing a settled imperial society.'],
-        ask: 'What does an emperor need that an army commander does not?',
-        listenFor: 'Administrators, records, taxation, communication, legitimacy, local cooperation.'
-      }
-    },
-    {
-      phase: 'govern', kind: 'map', eyebrow: 'Governance 2',
+      phase: 'govern', kind: 'map', eyebrow: 'Fragmentation',
       title: 'Regional rule solves distance — and creates rivalry.',
       mapLabel: 'SUCCESSOR KHANATES · c. 1300',
       visual: {
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MongolEmpireDivisions1300.png',
-        alt: 'Map of the Golden Horde, Chagatai Khanate, Ilkhanate, and Yuan dynasty around 1300',
+        alt: 'Map of the Mongol successor khanates',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png',
         credit: 'Mongol imperial subdivisions c. 1300 · Wikimedia Commons · CC BY 3.0'
       },
-      footer: 'Decentralization makes rule more practical while weakening unified control.',
+      footer: 'Regional flexibility ↑ · Unified political control ↓',
       notes: {
-        minutes: 3,
-        land: ['Reusing the map is intentional: now students read it as a governance solution rather than as geography.', 'Regional rule shortened chains of command but strengthened regional interests and succession rivalries.'],
-        ask: 'How can decentralization help an empire and also threaten it?',
-        listenFor: 'Local flexibility, but stronger regional power and rivalry.'
+        minutes: 4,
+        land: ['Regional khanates shortened chains of command and adapted to local conditions.', 'But succession disputes and regional interests weakened a single unified Mongol political center.'],
+        ask: 'How can decentralization be both a solution and a cause of decline?',
+        listenFor: 'It improves local rule while strengthening regional independence.'
       }
     },
     {
-      phase: 'govern', kind: 'hero', eyebrow: 'Governance 3',
-      title: 'Tolerance can be political technology.', subtitle: 'Rule diverse peoples without demanding one faith.',
+      phase: 'govern', kind: 'hero', eyebrow: 'Governance',
+      title: 'Tolerance can be political technology.', subtitle: 'Diversity is easier to rule when cooperation is useful.',
       visual: {
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/HetoumIAtMongolCourt1254.JPG',
         alt: 'Medieval manuscript depiction of Armenian king Hetoum I at the Mongol court',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:HetoumIAtMongolCourt1254.JPG',
-        credit: 'Manuscript image dated 1307 depicting Hetoum I at the Mongol court · public domain'
+        credit: 'Manuscript image dated 1307 · public domain'
       },
       notes: {
         minutes: 3,
-        land: ['This later manuscript scene depicts the Christian Armenian king Hetoum I at the Mongol court — a concrete visual of diplomatic and religious plurality.', 'Do not romanticize Mongol tolerance as modern pluralism. It was also a practical governing strategy for diversity.'],
-        ask: 'Why might a conqueror choose tolerance instead of forced conversion?',
-        listenFor: 'Reduced resistance, local cooperation, access to skilled administrators, easier rule over diversity.'
+        land: ['Religious tolerance helped Mongol rulers gain cooperation from diverse populations and skilled administrators.', 'Do not romanticize this as modern pluralism; it was also a practical governing strategy.'],
+        ask: 'Why might a conqueror protect multiple religious communities?',
+        listenFor: 'Cooperation, expertise, lower resistance, easier administration.'
       }
     },
     {
-      phase: 'govern', kind: 'reconstruction', eyebrow: 'Governance 4 · Yam Relay',
-      title: 'Information moves at horse speed.', subtitle: 'Relay stations turn distance into a governable problem.',
+      phase: 'govern', kind: 'hero', eyebrow: 'Governance + Communication',
+      title: 'Information moves at horse speed.', subtitle: 'The Yam turns distance into a governable problem.',
       visual: {
         url: '../assets/images/reconstructions/topic-2-2-yam-relay.webp?v=production-v5',
         alt: 'Historical reconstruction of a mounted Mongol courier approaching a Yam relay station',
         credit: 'Historical reconstruction · AI generated'
       },
-      footer: '',
       notes: {
         minutes: 3,
-        land: ['This reconstruction visualizes the Yam relay system: messengers could change horses and move dispatches through a chain of stations rather than exhausting one rider and one horse across the empire.', 'Pair the reconstruction verbally with the surviving Yuan paiza as authentic material evidence of imperial permission, protected movement, and enforceable authority.', 'The larger political point is simple: an empire cannot reliably govern territory it cannot communicate across.'],
-        ask: 'Why is communication infrastructure a form of political power?',
-        listenFor: 'Orders, intelligence, taxation, military response, coordination, and travel permissions.'
+        land: ['The Yam relay system let messengers change horses at stations and move orders and information across enormous distances.', 'The same infrastructure that strengthened government also supported protected movement and communication.'],
+        ask: 'Why is communication infrastructure a form of state power?',
+        listenFor: 'Orders, intelligence, taxation, military response, coordination.'
       }
     },
     {
-      phase: 'check1', kind: 'action', eyebrow: 'Checkpoint 1 · 6 Minutes',
-      title: 'How did the Mongols conquer — and govern?',
-      subtitle: 'One military method. One administrative method. Explain how each worked.',
-      action: { label: 'Open Checkpoint 1', url: '../unit-2/lesson-2-2-mongol-empire.html#modules' },
+      phase: 'check1', kind: 'action', eyebrow: 'Checkpoint 1 · Build + Fragment',
+      title: 'How did the Mongols build power — and why did unity weaken?',
+      subtitle: 'One conquest mechanism. One fragmentation mechanism.',
+      action: { label: 'Open Checkpoint', url: '../unit-2/lesson-2-2-mongol-empire.html#modules' },
       notes: {
         minutes: 6,
-        land: ['This is the first proof point. A list is not enough.'],
-        ask: 'Where is the sentence that explains HOW?',
-        listenFor: 'Specific evidence + mechanism + effect.'
+        land: ['Require mechanism, not vocabulary.'],
+        ask: 'Where is your because sentence?',
+        listenFor: 'Evidence + mechanism + political result.'
       }
     },
     {
-      phase: 'clip2', kind: 'video', eyebrow: 'Watch · ~1 Minute',
-      title: 'What happens when the founder dies?',
-      video: { youtubeId: 'PdFwMDuAnS4', start: 12807, end: 12892, label: 'Fall of Civilizations · The Mongols: Terror of the Steppe (2025) · Succession' },
-      footer: 'Watch for succession, regional interests, and the problem of holding one empire together.',
-      notes: {
-        minutes: 2,
-        land: ['This clip begins at the documentary’s Succession chapter. Use it to make fragmentation a governance problem, not just a map fact.'],
-        ask: 'Why does succession become more dangerous as the empire grows?',
-        listenFor: 'Competing branches of the family, regional power bases, distance, and different political interests.'
-      }
-    },
-    {
-      phase: 'pax', kind: 'mapCompare', eyebrow: 'Pax Mongolica · CCOT',
+      phase: 'exchange', kind: 'mapCompare', eyebrow: 'Exchange · CCOT',
       title: 'The routes were older. The political conditions changed.',
       maps: [
         {
           label: 'OLDER SILK ROAD CORRIDORS · BASELINE',
           visual: {
             url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_the_I_century_AD_-_en.svg',
-            alt: 'Vector map of Silk Road and other caravan routes across Eurasia in the first century CE',
+            alt: 'Map of older Silk Road routes across Eurasia',
             sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_Road_in_the_I_century_AD_-_en.svg',
-            credit: 'Silk Road and caravan routes · Wikimedia Commons · CC BY-SA 4.0 · vector baseline map'
+            credit: 'Wikimedia Commons · CC BY-SA 4.0'
           }
         },
         {
           label: 'MONGOL POLITICAL CONTROL · 1206–1294',
           visual: {
             url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Expansion_of_the_Mongol_Empire.svg',
-            alt: 'Vector map showing the expansion of the Mongol Empire from 1206 to 1294',
+            alt: 'Map showing expansion of Mongol political control',
             sourceUrl: 'https://commons.wikimedia.org/wiki/File:Expansion_of_the_Mongol_Empire.svg',
-            credit: 'Expansion of the Mongol Empire · Wikimedia Commons · CC BY-SA 4.0'
+            credit: 'Wikimedia Commons · CC BY-SA 4.0'
           }
         }
       ],
-      footer: 'Continuity: overland routes · Change: control, protection, relay systems, and movement',
+      footer: 'Continuity: routes existed · Change: political integration + communication + protection',
       notes: {
         minutes: 5,
-        land: ['Read the two maps left to right. The left map is deliberately an earlier baseline: the major overland corridors existed long before Mongol rule.', 'The right map shows the change in thirteenth-century political conditions as Mongol power came to control enormous stretches of Eurasia.', 'Do not say the Mongols created the Silk Roads. The AP move is continuity of routes plus change in political integration, protection, communication, and the scale of movement.'],
-        ask: 'What existed before the Mongols — and what changed under Mongol rule?',
-        listenFor: 'Continuity: long-distance routes and luxury exchange. Change: broader political control, lower political barriers in some regions, protected travel, relay communication, and increased connectivity.'
+        land: ['The Silk Roads existed long before Mongol expansion.', 'Mongol political control changed conditions across large stretches of Eurasia by reducing some political barriers and strengthening communication and protected movement.'],
+        ask: 'What continued, and what changed?',
+        listenFor: 'Routes and exchange continued; political control, protection, communication, and scale changed.'
       }
     },
     {
-      phase: 'pax', kind: 'reconstruction', eyebrow: 'Pax Mongolica · Movement',
-      title: 'Protection changes movement.', subtitle: 'Merchants and envoys move through a more politically connected Eurasia.',
+      phase: 'exchange', kind: 'hero', eyebrow: 'Exchange Mechanism',
+      title: 'Protection changes movement.', subtitle: 'Merchants, envoys, and information move more predictably.',
       visual: {
         url: '../assets/images/reconstructions/topic-2-2-protected-caravan.webp?v=production-v5',
         alt: 'Historical reconstruction of a protected caravan moving through Mongol-controlled territory',
         credit: 'Historical reconstruction · AI generated'
       },
       notes: {
-        minutes: 4,
-        land: ['This reconstruction is a mechanism visual, not evidence that every caravan was safe everywhere.', 'Mongol rule could reduce some political barriers, protect favored merchants and envoys, and connect long stretches of overland movement through shared imperial systems.', 'The same network carried more than merchandise: travelers, diplomatic information, techniques, religious ideas, and disease could move through connected routes.'],
-        ask: 'Why does political protection matter even when the physical route itself already existed?',
-        listenFor: 'Lower risk, fewer political barriers, greater predictability, protected movement, and more long-distance connection.'
+        minutes: 6,
+        land: ['Mongol expansion drew more people into connected imperial economies and could lower political barriers for favored merchants and envoys.', 'The Yam and merchant protection matter because they made communication and movement more predictable across long distances.', 'This is KC-3.1.I.E.i: empire expansion facilitated Afro-Eurasian trade and communication.'],
+        ask: 'Why does political protection matter when the road already exists?',
+        listenFor: 'Lower risk, predictability, fewer barriers, more movement.'
       }
     },
     {
-      phase: 'pax', kind: 'hero', eyebrow: 'The Paradox',
-      title: 'The same empire can destroy cities and connect continents.', subtitle: 'Both things are true.',
-      visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/DiezAlbumsFallOfBaghdad.jpg',
-        alt: 'Fourteenth-century manuscript depiction associated with the fall of Baghdad',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:DiezAlbumsFallOfBaghdad.jpg',
-        credit: 'Rashid al-Din manuscript tradition · 14th century · public domain'
-      },
-      notes: {
-        minutes: 2,
-        land: ['The sack of Baghdad in 1258 and destruction in Central Asian cities illustrate the violence of conquest.', 'Pax Mongolica, merchant protection, and transregional movement illustrate connective effects.', 'Do not force a good/bad verdict. The historical argument is that imperial violence and connectivity coexisted.'],
-        ask: 'Why is “Were the Mongols good or bad?” the wrong historical question?',
-        listenFor: 'Effects differed by place/group and destructive/connective processes happened together.'
-      }
-    },
-    {
-      phase: 'clip3', kind: 'video', eyebrow: 'Watch · ~1 Minute',
-      title: 'What did conquest cost?',
-      video: { youtubeId: 'PdFwMDuAnS4', start: 10962, end: 11047, label: 'Fall of Civilizations · The Mongols: Terror of the Steppe (2025) · Persia' },
-      footer: 'Use the evidence to complicate the idea of “Pax Mongolica.”',
-      notes: {
-        minutes: 2,
-        land: ['This clip begins at the documentary’s Persia chapter. Treat the destruction as historical evidence for the same empire that also intensified long-distance connection.'],
-        ask: 'How can the same imperial system produce both greater connectivity and catastrophic local destruction?',
-        listenFor: 'Effects vary by place and group; conquest and exchange can operate at the same time.'
-      }
-    },
-    {
-      phase: 'room', kind: 'action', eyebrow: 'BeInTheRoom · 11 Minutes',
-      title: 'After the conquest: what do you do now?',
-      subtitle: 'Choose a role. Choose a policy. Defend it with evidence.',
-      action: { label: 'Open BeInTheRoom', url: '../beintheroom/unit-2/mongol-court.html' },
-      notes: {
-        minutes: 11,
-        land: ['Keep the launch fast. Students should use at least two pieces of evidence and articulate a tradeoff.'],
-        ask: 'What does your role gain from cooperation — and what might it lose?',
-        listenFor: 'Role-specific reasoning tied to tolerance, administration, trade access, local institutions, or political risk.'
-      }
-    },
-    {
-      phase: 'skill', kind: 'process', eyebrow: 'AP Skill Builder · CCOT',
-      title: 'Baseline → Continuity → Change → Why',
-      steps: [
-        { label: 'BASELINE', text: 'Silk Road exchange existed before Mongol rule' },
-        { label: 'CONTINUITY', text: 'Older routes + luxury exchange persisted' },
-        { label: 'CHANGE', text: 'Political control + protection increased connectivity' }
+      phase: 'transfer', kind: 'grid', eyebrow: 'CED Must-Know · Cultural + Technological Transfer',
+      title: 'Connection moves knowledge.',
+      cards: [
+        { title: 'MEDICINE', text: 'Greco-Islamic medical knowledge -> western Europe' },
+        { title: 'MATHEMATICS', text: 'Numbering systems -> Europe' },
+        { title: 'WRITING', text: 'Mongols adopt the Uyghur script' },
+        { title: 'MECHANISM', text: 'Conquest + travel + specialists create contact' }
       ],
-      footer: 'No baseline = no CCOT.',
+      footer: 'These three examples are explicitly named by the CED.',
       notes: {
-        minutes: 5,
-        land: ['This second intentionally text-led screen makes the AP reasoning move visible.', 'Students should track one category only: trade, political control, diffusion, or disease.'],
-        ask: 'What existed BEFORE the Mongols that prevents us from saying they “created” Silk Road trade?',
-        listenFor: 'The routes and long-distance exchange already existed.'
+        minutes: 7,
+        land: ['Teach all three examples explicitly.', 'The significance is not that the Mongols invented these things. Interregional contact helped knowledge cross political and cultural boundaries.', 'The Uyghur script example also shows transfer moving into the Mongol state itself: conquerors borrowed from conquered or neighboring peoples.'],
+        ask: 'What is the common mechanism behind all three examples?',
+        listenFor: 'Contact, movement of specialists and texts, borrowing, adaptation, wider communication.'
       }
     },
     {
-      phase: 'check2', kind: 'action', eyebrow: 'Final Checkpoint · 3 Minutes',
-      title: 'What changed because of the Pax Mongolica?',
-      subtitle: 'Two effects. Explain whether each was connective, destructive, or both.',
-      action: { label: 'Open Final Checkpoint', url: '../unit-2/lesson-2-2-mongol-empire.html#modules' },
+      phase: 'transfer', kind: 'process', eyebrow: 'Transfer Mechanism',
+      title: 'Contact -> Borrowing -> Adaptation -> Wider Reach',
+      steps: [
+        { label: 'CONTACT', text: 'Empires bring societies into repeated interaction' },
+        { label: 'BORROW', text: 'Useful knowledge crosses cultural boundaries' },
+        { label: 'ADAPT', text: 'Receiving societies apply it to local needs' },
+        { label: 'SPREAD', text: 'Connected routes carry it farther' }
+      ],
       notes: {
         minutes: 3,
-        land: ['Treat this as an exit response if time is tight.'],
-        ask: 'Can the same effect be both connective and destructive?',
-        listenFor: 'Plague transmission is the clearest example.'
+        land: ['This is the reasoning students need, not just the three examples.'],
+        ask: 'Why is the Uyghur script a particularly useful example?',
+        listenFor: 'It shows Mongols themselves borrowing and adapting another culture\'s system.'
       }
     },
     {
-      phase: 'close', kind: 'hero', eyebrow: 'Unit 2 Bridge',
-      title: 'Networks do not need one empire.',
-      subtitle: 'Next: the Indian Ocean runs on monsoons, merchants, and port cities.',
+      phase: 'skill', kind: 'process', eyebrow: 'AP Skill Builder · CCOT + Connection',
+      title: 'Baseline -> Change -> Evidence -> Significance',
+      steps: [
+        { label: 'BASELINE', text: 'Silk Road exchange existed before Mongol rule' },
+        { label: 'CHANGE', text: 'Mongol expansion alters political conditions' },
+        { label: 'EVIDENCE', text: 'Yam + protection + transfer examples' },
+        { label: 'WHY IT MATTERS', text: 'Exchange and knowledge move more widely' }
+      ],
+      notes: {
+        minutes: 7,
+        land: ['Have students connect the state story to the network story instead of treating them as separate chapters.'],
+        ask: 'How does political change create an economic or cultural effect?',
+        listenFor: 'Imperial systems change movement, which changes contact and transfer.'
+      }
+    },
+    {
+      phase: 'check2', kind: 'action', eyebrow: 'Final Checkpoint',
+      title: 'Explain Mongol significance in three moves.',
+      subtitle: 'State change · exchange · transfer',
+      action: { label: 'Open Final Checkpoint', url: '../unit-2/lesson-2-2-mongol-empire.html#modules' },
+      notes: {
+        minutes: 5,
+        land: ['A strong response contains one accurate piece of evidence for all three CED dimensions.'],
+        ask: 'Did you explain transfer, or only conquest and trade?',
+        listenFor: 'Khanates + Yam/protection + one named transfer example.'
+      }
+    },
+    {
+      phase: 'close', kind: 'hero', eyebrow: 'Topic 2.2 · Landing Sentence',
+      title: 'Empire changed the conditions of connection.',
+      subtitle: 'The Mongols built and fragmented states while facilitating exchange and accelerating cross-cultural transfer.',
       visual: {
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravane_Marco_Polo.jpg',
         alt: 'Marco Polo caravan depicted in the Catalan Atlas of 1375',
@@ -421,8 +362,8 @@ window.BEHISTORICAL_TEACHING = {
         credit: 'Catalan Atlas, 1375 · public domain'
       },
       notes: {
-        minutes: 1,
-        land: ['The 1375 Catalan Atlas image keeps the class inside the world of long-distance networks as you transition out of the Mongol story.', 'Next, compare this politically integrated overland network with an Indian Ocean system driven by monsoons, merchants, ports, and diasporas.']
+        minutes: 2,
+        land: ['Bridge to 2.3: the Indian Ocean produces enormous connectivity without one empire controlling the whole network.', 'Tomorrow the environment itself — especially monsoon winds — becomes part of the explanation.']
       }
     }
   ]
