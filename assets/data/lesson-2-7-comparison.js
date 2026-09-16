@@ -25,50 +25,49 @@
 })();
 
 window.BEHISTORICAL_LESSON = {
-
   meta: {
     course: 'AP WORLD HISTORY',
     unit: 'Unit 2: Networks of Exchange',
     topic: 'Topic 2.7',
-    title: 'Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks',
-    subtitle: 'Analyzing continuities and differences across Afro-Eurasian trade networks c. 1200–1450',
+    title: 'Comparison of Economic Exchange',
+    subtitle: 'Comparing how the Silk Roads, Indian Ocean, and trans-Saharan networks solved similar exchange problems in different ways c. 1200–1450',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
 
   learningTargets: [
     {
-      target: 'I can identify similarities across all three Afro-Eurasian trade networks, Silk Roads, Indian Ocean, and trans-Saharan, including long-distance exchange, the movement of goods and ideas, and cultural diffusion.',
-      kc: 'KC-3.1',
-      theme: 'Economics'
+      target: 'I can explain similarities among the Silk Roads, Indian Ocean, and trans-Saharan networks in why trade expanded and what expanding exchange changed.',
+      kc: 'KC-3.1 + KC-3.3',
+      theme: 'Networks of Exchange'
     },
     {
-      target: 'I can identify key differences between the three trade networks in geography, transportation technology, dominant goods, and cultural effects.',
-      kc: 'KC-3.1.I.C.i',
-      theme: 'Economics'
+      target: 'I can explain differences among the three networks in geography, transportation, commercial practices, and political support.',
+      kc: 'KC-3.1.I.A.i + KC-3.1.I.C.i',
+      theme: 'Networks of Exchange'
     },
     {
-      target: 'I can explain how comparing the three networks reveals broader patterns of Afro-Eurasian connectivity and supports AP-style comparison arguments with evidence.',
-      kc: 'KC-3.3',
-      theme: 'Economics'
+      target: 'I can compare how luxury demand and expanding exchange stimulated productive capacity and broader cultural, technological, and biological diffusion.',
+      kc: 'KC-3.3.I.B + KC-3.1',
+      theme: 'Networks of Exchange'
     }
   ],
 
   successCriteria: [
     {
-      criteria: 'I can state at least two specific similarities shared by all three trade networks and support each with a concrete historical example.',
+      criteria: 'I can state a meaningful similarity shared by all three networks and support it with specific evidence from at least two networks.',
       kc: 'KC-3.1',
-      theme: 'Economics'
+      theme: 'Networks of Exchange'
     },
     {
-      criteria: 'I can explain at least two meaningful differences between any two of the three networks, using specific evidence about geography, technology, or goods exchanged.',
-      kc: 'KC-3.1.I.C.i',
-      theme: 'Economics'
+      criteria: 'I can explain how different environments required different transportation or commercial solutions, such as caravanserai and credit on the Silk Roads, monsoon knowledge and maritime technology in the Indian Ocean, and camel saddles and caravans across the Sahara.',
+      kc: 'KC-3.1.I.A.i + KC-3.1.I.C.i',
+      theme: 'Networks of Exchange'
     },
     {
-      criteria: 'I can use a comparison of trade networks to build a historical argument that includes a claim, evidence, and reasoning connecting to a broader pattern of Afro-Eurasian exchange.',
-      kc: 'KC-3.3',
-      theme: 'Economics'
+      criteria: 'I can connect demand and expanding trade to greater production, stronger trading cities or states, and wider diffusion across Afro-Eurasia.',
+      kc: 'KC-3.3 + KC-3.3.I.B',
+      theme: 'Networks of Exchange'
     }
   ],
 
@@ -106,80 +105,94 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: 'Lecture: Comparing Silk Roads, Indian Ocean, and Trans-Saharan Trade Networks',
-    intro: 'Topic 2.7 is the comparison topic for Unit 2, and it is one of the most AP-tested skills in the course. You must be able to state specific similarities AND specific differences across the three networks with evidence. Use these segments to build both sides of that comparison.',
+    title: 'One Exchange Problem, Three Different Systems',
+    intro: 'Topic 2.7 should synthesize the unit rather than add a new pile of facts. All three networks expanded because demand made exchange profitable and people developed systems that reduced the cost and risk of distance. Geography determined which solutions worked best.',
     videos: [
       {
         title: 'AP World UNIT 2 REVIEW (Everything You NEED to KNOW!)',
         url: 'https://youtu.be/TPQQnXFsUmU',
         youtubeId: 'TPQQnXFsUmU',
-        prompt: 'Use the review to compare the causes, technologies, goods, participants, and consequences of the major exchange networks.'
+        prompt: 'Compare each network using the same categories: environment, transportation, commercial practices, goods and demand, political support, and effects.'
       }
     ],
     segments: [
       {
-        title: 'What All Three Networks Shared',
+        title: 'Big Similarity: All Three Reduced the Cost of Distance',
         bullets: [
-          'All three networks moved **luxury goods** across vast distances, silk and porcelain on the Silk Roads, spices and textiles across the Indian Ocean, gold and salt across the Sahara, and in all three cases, wealthy intermediary states grew rich by taxing and protecting that traffic.',
-          'Merchants in all three systems built **diaspora communities** in foreign cities: Muslim traders established permanent settlements from East Africa to Southeast Asia; Jewish merchants maintained networks across the Mediterranean and Indian Ocean; Chinese traders created quarters in Southeast Asian port cities.',
-          '**Religion and ideas spread through commerce** in all three systems, Islam was the most striking case, spreading along all three networks simultaneously carried by merchants, scholars, and Sufi missionaries, making it the most widely distributed religion in the Afro-Eurasian world by c. 1450.'
+          'The **Silk Roads, Indian Ocean, and trans-Saharan networks** all connected distant regions because merchants could earn profits from goods that were valuable enough to justify long-distance exchange.',
+          'Each system depended on specialized knowledge, infrastructure, technology, and political or commercial arrangements that made movement safer, more predictable, or more efficient.',
+          'As exchange intensified, all three networks helped deepen Afro-Eurasian cultural, technological, and biological diffusion.'
         ],
         image: {
-          title: 'Comparing three networks',
-          caption: 'BeHistorical topic artwork for this card. Compare the three networks on what they carried, who organized them, and what technology made them possible.',
-          url: '',
-          sourceUrl: ''
+          title: 'Three connected exchange systems',
+          caption: 'Different surfaces, similar economic problem: make long-distance exchange possible and profitable.',
+          url: '../assets/images/instructional-maps/topic-2-7.svg',
+          sourceUrl: '../assets/images/instructional-maps/topic-2-7.svg'
         }
       },
       {
-        title: 'How the Networks Differed',
+        title: 'Big Difference: Geography Changed the Solution',
         bullets: [
-          'The **Silk Roads** relied on overland camel caravans, relay stations, and caravanserais across desert and steppe; the **Indian Ocean** network was driven by seasonal **monsoon winds** that made maritime trade predictable and efficient using dhows and junks; the **trans-Saharan** routes required specialized **Bactrian and dromedary camel** technology to cross the world\'s largest desert, with oasis towns as rest and resupply points.',
-          'The dominant **trade goods** differed: the Silk Roads carried silk, porcelain, and paper westward; the Indian Ocean moved spices, cotton textiles, and precious stones; the trans-Saharan routes specialized in gold and salt, with salt moving south from Saharan deposits and gold moving north from West African kingdoms such as Mali.',
-          'The **dominant religion** carried by each network reflected its geography: **Islam** spread most powerfully via the Indian Ocean and trans-Saharan routes through merchant networks; **Buddhism** traveled primarily the overland Silk Roads into East and Southeast Asia; **Christianity** expanded through European overland and Mediterranean maritime networks, reflecting how geography shaped which cultural traditions each system carried.'
+          'The **Silk Roads** crossed steppe, desert, and mountain terrain, so merchants relied on caravanserai, relay exchange, pack animals, and commercial practices such as credit and money economies.',
+          'The **Indian Ocean** depended on knowledge of monsoon winds plus the compass, astrolabe, and larger ship designs, making maritime bulk transport more efficient over long distances.',
+          'The **trans-Saharan network** depended on camel saddles, caravans, oases, and desert knowledge to make movement across the Sahara commercially viable.'
         ],
         image: {
-          title: 'Silk Road Routes Across Afro-Eurasia',
-          caption: 'The overland Silk Roads connected China to the Mediterranean through Central Asia, a fundamentally different geography, technology, and set of trade goods from the Indian Ocean maritime network or the trans-Saharan camel routes.',
+          title: 'Environment shapes exchange',
+          caption: 'Transportation technologies differed because each network faced a different physical environment.',
+          url: '../assets/images/instructional-maps/topic-2-7.svg',
+          sourceUrl: '../assets/images/instructional-maps/topic-2-7.svg'
+        }
+      },
+      {
+        title: 'Big Similarity: Trade Built Powerful Nodes and States',
+        bullets: [
+          'Silk Roads cities such as **Kashgar and Samarkand** grew where merchants, services, and routes converged.',
+          'Indian Ocean commerce strengthened port cities and states such as the **Swahili Coast city-states, Gujarat, and Malacca**, while trans-Saharan trade strengthened **Mali** and important commercial centers in West Africa.',
+          'Across all three networks, political authorities had incentives to protect, tax, and participate in trade because exchange generated wealth and connected rulers to wider economies.'
+        ],
+        image: {
+          title: 'Networks create nodes',
+          caption: 'Trade concentrated wealth where routes, ports, and political authority intersected.',
+          url: '../assets/images/instructional-maps/topic-2-7.svg',
+          sourceUrl: '../assets/images/instructional-maps/topic-2-7.svg'
+        }
+      },
+      {
+        title: 'Big Effect: Demand and Trade Increased Productive Capacity',
+        bullets: [
+          'Growing **luxury demand** encouraged Chinese, Persian, and Indian artisans and merchants to expand textile and porcelain production for export; Chinese iron and steel production also expanded.',
+          'Trade networks did not simply redistribute existing goods. Expanding markets could stimulate producers to make more goods specifically for distant consumers.',
+          'This is the unit-level economic chain: **demand + better exchange systems -> more trade -> stronger commercial nodes + greater productive capacity -> wider diffusion and environmental effects**.'
+        ],
+        image: {
+          title: 'Demand changes production',
+          caption: 'Expanding exchange networks stimulated production as well as movement.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
-        }
-      },
-      {
-        title: 'Why Comparison Matters for AP Writing',
-        bullets: [
-          'AP comparison questions ask you to **explain a similarity AND a difference** and connect both to a broader historical argument, not just list facts. A strong comparison states a claim ("although all three networks shared X, they differed significantly in Y because Z"), uses specific evidence, and explains the historical significance.',
-          'The most powerful comparisons in Unit 2 connect to **causation**: why did the Indian Ocean network carry different religions than the Silk Roads? Because monsoon winds created different merchant communities with different cultural backgrounds. Why did the trans-Saharan routes produce different state structures? Because controlling desert access created different political incentives than controlling maritime ports.',
-          'Knowing the differences across networks also prepares you for **continuity and change over time (CCOT)** arguments: after 1450, the Indian Ocean network would be transformed by Portuguese intrusion, the trans-Saharan routes would face competition from Atlantic alternatives, and the Silk Roads would decline, but the patterns of diaspora, exchange, and cultural diffusion established in this era would continue in new forms.'
-        ],
-        image: {
-          title: 'Indian Ocean CIA World Factbook Map',
-          caption: 'The Indian Ocean network, driven by predictable monsoon winds, was the most geographically expansive of the three systems, connecting East Africa, Arabia, South Asia, and Southeast Asia into a single commercial zone.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
         }
       }
     ]
   },
 
   map: {
-    title: 'Map: All Three Afro-Eurasian Trade Networks, c. 1200–1450',
+    title: 'Map: Comparing the Three Afro-Eurasian Exchange Networks',
     url: '../assets/images/instructional-maps/topic-2-7.svg',
     sourceUrl: '../assets/images/instructional-maps/topic-2-7.svg',
-    caption: 'The world map shows the geographic scope of all three Afro-Eurasian trade networks, overland Silk Roads, Indian Ocean maritime routes, and trans-Saharan caravan routes, that together linked the known world from West Africa to China.',
-    intro: 'This topic asks you to compare three separate trade systems, but looking at a world map reveals that they were not truly separate. The Indian Ocean network connected to the Silk Roads through Persian Gulf and Red Sea ports. The trans-Saharan routes connected to the Mediterranean world and, through it, to both the Silk Roads and the Indian Ocean network. Together, they formed a single integrated Afro-Eurasian exchange system.',
-    prompt: 'Using the world map, identify where you think the three networks overlapped or connected. What cities or regions served as nodes connecting more than one network? How does this geographic overlap challenge the idea that these were three separate systems rather than one integrated one?',
+    caption: 'The Silk Roads, Indian Ocean, and trans-Saharan networks used different environments and technologies but together formed an increasingly connected Afro-Eurasian exchange system.',
+    intro: 'Use the same questions for every network: What environment did merchants face? What technology or commercial practice reduced risk? What goods justified the trip? Which cities or states benefited? What cultural or environmental effects followed?',
+    prompt: 'Choose two networks. Explain one meaningful similarity in how they expanded and one meaningful difference caused by geography or technology.',
     notes: [
-      'The **Silk Roads** extended from Chang\'an (Xi\'an) in China westward through Central Asia to Persia, Anatolia, and the Mediterranean, primarily an overland system operating across steppe and desert terrain.',
-      'The **Indian Ocean network** connected the East African Swahili Coast, the Arabian Peninsula, South Asia, and Southeast Asia via seasonal monsoon winds, a maritime system spanning the entire rim of the Indian Ocean.',
-      'The **trans-Saharan routes** connected sub-Saharan West African kingdoms (Mali, Songhai) to North Africa and the Mediterranean via a network of oasis towns across the Sahara Desert.',
-      'Key **connector cities** where networks overlapped included Cairo (Indian Ocean and trans-Saharan), Hormuz (Silk Roads and Indian Ocean), and Guangzhou/Quanzhou (Silk Roads and Indian Ocean maritime).'
+      'Silk Roads: overland routes, caravanserai, credit and money economies, Kashgar and Samarkand.',
+      'Indian Ocean: monsoon winds, maritime navigation and larger ships, port states and merchant diasporas.',
+      'Trans-Saharan: camel saddle, caravans and oases, Mali and gold-salt exchange.',
+      'All three: increased long-distance exchange, stronger commercial nodes, wider diffusion, and connections between demand and productive capacity.'
     ]
   },
 
   deepReading: {
     title: 'One System, Three Surfaces',
-    desc: 'A textbook-depth companion that puts the three networks under one set of questions, names the single cost mechanism behind most of their differences, and shows what a comparison paragraph has to contain. No new content, one new skill. Optional.',
+    desc: 'A textbook-depth companion that compares the three networks using one consistent framework: environment, transportation, commercial practice, demand, political support, productive capacity, and effects. Optional.',
     url: 'deep-reading-topic-2-7-comparison.html'
   },
 
@@ -189,39 +202,26 @@ window.BEHISTORICAL_LESSON = {
   },
 
   evidenceLab: {
-    title: 'Evidence Lab: Comparing the Three Trade Networks',
-    intro: 'Comparison requires evidence from multiple networks. Each item below represents a different trade network and a different dimension of exchange, goods, technology, religion, or state structure. Use them to build the similarity and difference arguments you will need for AP comparison writing.',
-    prompt: 'Choose two items from different trade networks. Explain one similarity and one difference they reveal. Then state a broader historical argument that your comparison supports.',
+    title: 'Evidence Lab: Build a CED-Level Comparison',
+    intro: 'A strong comparison uses the same analytical categories across networks rather than listing unrelated facts.',
+    prompt: 'Choose two networks. Explain one similarity and one difference using evidence about transportation, commercial practices, demand, state or city growth, productive capacity, or diffusion.',
     items: [
-      {
-        title: 'Mali Empire and the Trans-Saharan Gold Trade',
-        detail: 'The Mali Empire (c. 1235–1600) controlled the gold-producing regions of West Africa and taxed all gold and salt moving across the Sahara. Mansa Musa\'s 1324 pilgrimage demonstrated Mali\'s extraordinary wealth to the Islamic world. The trans-Saharan routes that enriched Mali depended on specialized camel technology, oasis town infrastructure, and Berber merchants who knew the desert routes, a fundamentally different system from either the Silk Roads or the Indian Ocean network.'
-      },
-      {
-        title: 'Swahili Coast City-States and the Indian Ocean Network',
-        detail: 'The Swahili Coast city-states, Kilwa, Mombasa, Zanzibar, Sofala, were East African trading cities that became wealthy by connecting the interior of Africa to the Indian Ocean trade network. They exported gold, ivory, and enslaved people in exchange for Indian cotton textiles, Persian ceramics, and Chinese porcelain. Their culture was a blend of Bantu African, Arab, and Persian influences, a direct product of Indian Ocean commercial integration. Like trans-Saharan traders, Swahili merchants used Islam as a commercial language and networking tool.'
-      },
-      {
-        title: 'Central Asian Oasis Cities on the Silk Roads',
-        detail: 'Cities like Samarkand, Kashgar, and Dunhuang sat at the nodes of the overland Silk Roads, growing wealthy by taxing and supplying caravans. Their populations reflected the cosmopolitan character of the routes: merchants, scholars, and pilgrims from China, Persia, India, and the Mediterranean all passed through. The destruction of many oasis cities during the Mongol conquests of the 13th century, followed by the relative stability of the Pax Mongolica, demonstrates how political conditions shaped trade volumes on overland routes in ways that monsoon-driven maritime trade was less vulnerable to.'
-      },
-      {
-        title: 'Abu-Abdullah Ibn Battuta — Traveler Across All Three Networks',
-        detail: 'Ibn Battuta (1304–c.1368) traveled approximately 75,000 miles over three decades, crossing the trans-Saharan routes, the Indian Ocean network, and parts of the overland Silk Roads. His account, the Rihla, reveals both the unity and the diversity of the Afro-Eurasian world: everywhere he found Muslim merchants and scholars, but the goods traded, the ships and animals used, and the political structures he encountered differed dramatically between West Africa, the Indian Ocean rim, and Central Asia. The Rihla is itself evidence that a single individual could navigate all three networks using Islam and Arabic as common cultural tools.'
-      }
+      { title: 'Silk Roads', detail: 'Caravanserai, credit, money economies, Kashgar and Samarkand, luxury demand, textiles, porcelain, iron, and steel.' },
+      { title: 'Indian Ocean', detail: 'Monsoon knowledge, compass, astrolabe, larger ships, Swahili Coast states, Gujarat, Malacca, and diasporic merchant communities.' },
+      { title: 'Trans-Saharan', detail: 'Camel saddle, caravans, oases, Mali, and long-distance gold-salt exchange.' },
+      { title: 'Shared Consequences', detail: 'Expanded trade volume and range, growth of commercial nodes, cultural and technological diffusion, crop and pathogen movement, and increased productive capacity.' }
     ]
   },
 
   primarySource: {
     title: 'Primary Source: Pegolotti\'s Merchant Handbook on the Road to Cathay',
-    intro: 'Francesco Balducci Pegolotti was a Florentine merchant-banker who worked for the Bardi banking house. Around 1340, he compiled a practical handbook, La Pratica della Mercatura, to guide Italian merchants trading across Eurasia, including advice on the overland route from the Black Sea to China that passed through Mongol-controlled territory.',
-    text: '"The road you travel from Tana to Cathay is perfectly safe, whether by day or by night, according to what the merchants say who have used it... Only if the merchant, in going or coming, should die upon the road, everything belonging to him will become the perquisite of the lord of the country in which he dies... But if his brother be with him, or an intimate friend and comrade calling himself his brother, then to such an one they will surrender the property of the deceased."',
-    attribution: 'Francesco Balducci Pegolotti, La Pratica della Mercatura (The Practice of Commerce), a merchant handbook, c. 1340',
+    intro: 'Francesco Balducci Pegolotti was a Florentine merchant-banker who compiled practical advice for merchants trading across Eurasia. His handbook is useful evidence for the commercial conditions that supported long-distance exchange.',
+    text: '"The road you travel from Tana to Cathay is perfectly safe, whether by day or by night, according to what the merchants say who have used it."',
+    attribution: 'Francesco Balducci Pegolotti, La Pratica della Mercatura, c. 1340',
     questions: [
-      'What does Pegolotti\'s advice suggest about the conditions that made overland Silk Roads trade possible in this period? What political development explains the safety he describes?',
-      'Why would a merchant handbook include a warning about what happens to a trader\'s goods if he dies along the way? What does this reveal about the risks and legal customs of long-distance trade?',
-      'Pegolotti never mentions the Indian Ocean or trans-Saharan networks. Using what you have learned in this unit, explain one way overland Silk Roads trade differed from a maritime or camel-based network, and one way its underlying purpose was the same.'
+      'What commercial condition does Pegolotti identify as important for long-distance trade?',
+      'How would this condition compare with the environmental and technological conditions that supported Indian Ocean or trans-Saharan exchange?',
+      'How could this source support a comparison argument about similarities and differences among Unit 2 trade networks?'
     ]
   }
-
 };
