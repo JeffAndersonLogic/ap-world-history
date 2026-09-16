@@ -29,45 +29,45 @@ window.BEHISTORICAL_LESSON = {
     course: 'AP WORLD HISTORY',
     unit: 'Unit 2: Networks of Exchange',
     topic: 'Topic 2.5',
-    title: 'Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move',
-    subtitle: 'How trade networks spread religion, technology, crops, and artistic traditions c. 1200–1450',
+    title: 'Cultural Consequences of Connectivity',
+    subtitle: 'How exchange networks moved beliefs and technologies, reshaped cities, and produced new travel accounts c. 1200–1450',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
 
   learningTargets: [
     {
-      target: 'I can explain how major religions, Buddhism, Islam, Christianity, and Hinduism, spread along trade routes from c. 1200 to c. 1450.',
+      target: 'I can explain how expanding exchange networks spread cultural traditions and technological innovations across Afro-Eurasia.',
       kc: 'KC-3.1.III.D',
-      theme: 'Culture and Society'
+      theme: 'Cultural Developments and Interactions'
     },
     {
-      target: 'I can describe how key technologies, paper, printing, gunpowder, the compass, and the stirrup, diffused across Afro-Eurasia through trade networks.',
-      kc: 'KC-3.1.III.D',
-      theme: 'Science and Technology'
+      target: 'I can explain why expanding trade networks produced both increased urbanization and periods of decline in connected cities.',
+      kc: 'KC-3.3.II',
+      theme: 'Cultural Developments and Interactions'
     },
     {
-      target: 'I can explain how crops, architectural styles, artistic motifs, and literary traditions diffused across Afro-Eurasia as a consequence of trade connectivity.',
-      kc: 'KC-3.1.III.D',
-      theme: 'Culture and Society'
+      target: 'I can explain why intensified exchange produced more written travel accounts and use Ibn Battuta, Margery Kempe, and Marco Polo as evidence.',
+      kc: 'KC-3.1.III.C',
+      theme: 'Cultural Developments and Interactions'
     }
   ],
 
   successCriteria: [
     {
-      criteria: 'I can identify at least two specific religions and explain how each spread along a named trade route, Silk Roads, Indian Ocean, or trans-Saharan.',
+      criteria: 'I can use Buddhism, Hinduism, Islam, gunpowder, or paper to explain how a cultural tradition or technological innovation moved through an exchange network.',
       kc: 'KC-3.1.III.D',
-      theme: 'Culture and Society'
+      theme: 'Cultural Developments and Interactions'
     },
     {
-      criteria: 'I can name at least two technologies that diffused through trade networks and explain where they originated and where they spread.',
-      kc: 'KC-3.1.III.D',
-      theme: 'Science and Technology'
+      criteria: 'I can connect rising productivity and expanding trade to urban growth while recognizing that warfare, political change, or disrupted routes could also cause urban decline.',
+      kc: 'KC-3.3.II',
+      theme: 'Cultural Developments and Interactions'
     },
     {
-      criteria: 'I can use specific evidence, a crop, an architectural style, or a cultural tradition, to explain how trade produced cultural exchange and transformation.',
-      kc: 'KC-3.1.III.D',
-      theme: 'Culture and Society'
+      criteria: 'I can use Ibn Battuta, Margery Kempe, and Marco Polo to show how intensified connectivity increased travel and the written record of cross-cultural encounters.',
+      kc: 'KC-3.1.III.C',
+      theme: 'Cultural Developments and Interactions'
     }
   ],
 
@@ -93,80 +93,94 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: 'Lecture: Religion, Technology, and Culture on the Move',
-    intro: 'Trade routes did not only move goods, they moved ideas, beliefs, technologies, and agricultural practices. Use these segments to understand what diffused, where it went, and why it mattered for AP World History.',
+    title: 'Cultural Consequences: What Connectivity Changed',
+    intro: 'This lesson is about consequences. As exchange networks intensified, beliefs and technologies crossed regions, connected cities grew or declined with changing trade conditions, and travelers left written accounts of a more interconnected Afro-Eurasian world.',
     videos: [
       {
         title: 'CULTURAL Effects of Connectivity [AP World Review—Unit 2 Topic 5]',
         url: 'https://youtu.be/buccc2fFw4U',
         youtubeId: 'buccc2fFw4U',
-        prompt: 'Track how long-distance exchange spread belief systems, technologies, languages, and cultural practices.'
+        prompt: 'Track three consequences of connectivity: diffusion, changing cities, and travel accounts.'
       }
     ],
     segments: [
       {
-        title: 'Religion on the Move',
+        title: 'Big Rock 1: Cultural Traditions Moved',
         bullets: [
-          '**Islam** spread most rapidly through the Indian Ocean and trans-Saharan networks, Muslim merchants established diaspora communities in coastal trading cities from East Africa to Southeast Asia, and local rulers converted to gain access to wider commercial networks.',
-          '**Buddhism** traveled the overland Silk Roads into Central Asia, China, Korea, and Southeast Asia; rulers adopted it as a legitimating force, and monasteries became centers of literacy, scholarship, and trade-route hospitality.',
-          '**Christianity** expanded through European trade networks and missionary activity into Central Asia, while **Hinduism** spread through Indian Ocean merchant communities into South and Southeast Asia, shaping the religious architecture and court culture of kingdoms such as the Khmer Empire.'
+          '**Buddhism** continued to shape East Asia and spread into Southeast Asia through merchant, pilgrim, and monastic networks connected to long-distance exchange.',
+          '**Hinduism and Buddhism** influenced Southeast Asian societies, while **Islam** spread through merchant and scholarly networks into sub-Saharan Africa and across Asia.',
+          'The AP reasoning move is diffusion: repeated contact through trade networks allowed beliefs and cultural practices to move far beyond their places of origin.'
         ],
         image: {
-          title: 'Silk Road Trade Route Map, 7th Century AD',
-          caption: 'The overland and maritime routes of the Silk Roads served as the primary corridors for the spread of Buddhism, Islam, and other cultural traditions across Afro-Eurasia.',
+          title: 'Afro-Eurasian exchange routes',
+          caption: 'Trade routes carried cultural traditions as well as commodities.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_%28c.1200_CE%29.jpg'
         }
       },
       {
-        title: 'Technology Diffusion',
+        title: 'Big Rock 2: Technologies Moved',
         bullets: [
-          'Chinese **paper and printing** technology diffused westward through the Islamic world by the 8th–9th centuries and eventually reached Europe, transforming literacy, scholarship, and the preservation of knowledge.',
-          'The **magnetic compass** and **gunpowder**, both Chinese inventions, spread through trade contacts into the Islamic world and then Europe, revolutionizing navigation and warfare across Afro-Eurasia.',
-          'The **stirrup** spread across Eurasia, enabling cavalry-based military power and reshaping warfare; agricultural technologies including irrigation methods and new crop varieties diffused along the same routes that carried merchants and missionaries.'
+          '**Paper**, originating in China, moved west through exchange networks and made recordkeeping, administration, scholarship, and the circulation of written knowledge easier.',
+          '**Gunpowder**, also developed in China, diffused across Afro-Eurasia and eventually transformed military technology far from its place of origin.',
+          'The key idea is not a list of inventions. Connectivity accelerated the transfer and adaptation of scientific and technological knowledge between societies.'
         ],
         image: {
-          title: 'Yuan Emperor Genghis Khan Portrait',
-          caption: 'Mongol rulers presided over a vast network, the Pax Mongolica, that accelerated the movement of people, goods, and technologies across Eurasia in the 13th and 14th centuries.',
+          title: 'Mongol-era Eurasian connectivity',
+          caption: 'Political and commercial connections across Eurasia accelerated technological transfer.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg'
         }
       },
       {
-        title: 'Crops, Art, and Ideas',
+        title: 'Big Rock 3: Connected Cities Rose and Fell',
         bullets: [
-          '**Sugar, citrus, and cotton** diffused across Afro-Eurasia through Indian Ocean and trans-Saharan trade, sugar cultivation spread from South Asia to the Mediterranean world, transforming agricultural economies and later fueling demand in European markets.',
-          'Trade port cities like Kilwa, Calicut, and Quanzhou became sites of **architectural blending**, where mosques, Hindu temples, and Buddhist structures stood alongside each other, reflecting the cultural diversity of diaspora merchant communities.',
-          'Mathematical and scientific knowledge, including **Arabic numerals**, **algebra**, and advances in astronomy, moved from the Islamic world into Europe through Mediterranean trade networks, fueling the intellectual developments of the later medieval period.'
+          'Expanding trade and rising productivity supported **urbanization** because merchants, artisans, services, and tax revenue concentrated at important network nodes.',
+          'Cities tied to major routes could grow rapidly when trade intensified, but cities could also **decline** when warfare, political fragmentation, or changing routes disrupted the traffic that supported them.',
+          'The CED point is variation: connectivity did not make every city grow forever. A city\'s fortunes depended on the strength and location of the networks around it.'
         ],
         image: {
-          title: 'Indian Ocean CIA World Factbook Map',
-          caption: 'The Indian Ocean trade network connected East Africa, Arabia, South Asia, and Southeast Asia into a single commercial zone that carried not only goods but crops, artistic traditions, and religious practices.',
+          title: 'Indian Ocean port networks',
+          caption: 'Ports and inland trading cities rose when expanding networks concentrated people, goods, and services.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+        }
+      },
+      {
+        title: 'Big Rock 4: Travelers Documented the Connected World',
+        bullets: [
+          '**Ibn Battuta** traveled across North Africa, West Africa, the Indian Ocean world, South Asia, and China and recorded observations about the societies he encountered.',
+          '**Marco Polo** described travel across Mongol-ruled Eurasia, while **Margery Kempe** recorded pilgrimage and travel across parts of Europe and the Mediterranean world.',
+          'Their accounts are themselves evidence of intensified exchange: more people could move through long-distance networks, and some of those travelers created written records of cross-cultural contact.'
+        ],
+        image: {
+          title: 'Travel through connected Afro-Eurasia',
+          caption: 'Travel accounts turned movement through exchange networks into historical evidence.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
         }
       }
     ]
   },
 
   map: {
-    title: 'Map: Silk Road Routes and Cultural Diffusion, c. 1200–1450',
+    title: 'Map: Networks of Cultural Diffusion, c. 1200–1450',
     url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_%28c.1200_CE%29.jpg',
-    caption: 'The Silk Road network, overland and maritime, served as the primary corridor for the spread of religion, technology, and cultural practices across Afro-Eurasia from c. 1200 to c. 1450.',
-    intro: 'Trade routes were cultural highways. Every caravan that carried silk and spices also carried merchants who prayed differently, wrote in different scripts, and ate different foods. Use this map to trace which routes carried which cultural traditions, and why geography determined what spread where.',
-    prompt: 'Choose one religion and one technology. Using the map, trace the most likely route each one traveled between c. 1200 and c. 1450. What geographic features or human settlements made that route possible?',
+    caption: 'Overland and maritime exchange networks created corridors for cultural traditions, technologies, and travelers to move across Afro-Eurasia.',
+    intro: 'Use the map as a network map rather than a route-memorization exercise. Trace how a belief, a technology, or a traveler could move through connected cities and regions.',
+    prompt: 'Choose one cultural tradition, one technology, and one traveler. Which network made each movement possible, and what does that reveal about the consequences of connectivity?',
     notes: [
-      'The **overland Silk Roads** connected China to Central Asia, Persia, and the Mediterranean, the primary corridor for Buddhism, paper, printing, and gunpowder moving westward.',
-      'The **Indian Ocean network** linked East Africa, Arabia, South Asia, and Southeast Asia, Islam and Hinduism traveled primarily through this maritime system carried by merchant diaspora communities.',
-      'The **trans-Saharan routes** connected sub-Saharan Africa to North Africa and the Mediterranean, Islam spread southward while gold, salt, and enslaved people moved northward.',
-      'The **Pax Mongolica** (c. 1250–1350) temporarily unified much of Eurasia under Mongol rule, dramatically accelerating the movement of people, technology, and disease across the overland network.'
+      'The **Silk Roads** linked East Asia, Central Asia, Southwest Asia, and the Mediterranean, enabling the movement of Buddhism, paper, gunpowder, and travelers such as Marco Polo.',
+      'The **Indian Ocean network** connected East Africa, Arabia, South Asia, Southeast Asia, and China, helping Islam and other cultural traditions move with merchants and travelers such as Ibn Battuta.',
+      'The **trans-Saharan routes** connected West Africa to North Africa and the wider Islamic world, helping Islam, scholarship, and travelers move across the desert.',
+      'Cities located at network nodes could gain population and wealth, while cities bypassed or damaged by changing political and commercial conditions could decline.'
     ]
   },
 
   deepReading: {
     title: 'What Traveled Without Paying Freight',
-    desc: 'A textbook-depth companion on how a belief or a technique actually moves, with traceable chains: papermaking city by city, the crops that carried the plantation model to the Atlantic, and one porcelain dish that contains the whole Eurasian system. Optional.',
+    desc: 'A textbook-depth companion on cultural and technological diffusion, changing urban fortunes, and the travel accounts that reveal how connected Afro-Eurasia had become. Optional.',
     url: 'deep-reading-topic-2-5-cultural-consequences.html'
   },
 
@@ -176,39 +190,38 @@ window.BEHISTORICAL_LESSON = {
   },
 
   evidenceLab: {
-    title: 'Evidence Lab: Tracing Cultural Diffusion',
-    intro: 'Cultural diffusion leaves traces, in architectural styles, in religious practices, in the foods people eat, in the mathematics they use. Each piece of evidence below comes from a different trade network and a different type of exchange.',
-    prompt: 'Choose one item from the evidence list. Explain: (1) where it originated, (2) how it spread along trade networks, and (3) what its spread reveals about the consequences of connectivity for AP World History Topic 2.5.',
+    title: 'Evidence Lab: Proving the Cultural Consequences of Connectivity',
+    intro: 'Use evidence from the three required developments: diffusion, changing cities, and written travel accounts.',
+    prompt: 'Choose one piece of evidence and explain how it demonstrates an intellectual or cultural consequence of expanding Afro-Eurasian exchange networks from c. 1200 to c. 1450.',
     items: [
       {
-        title: 'The Spread of Islam to Southeast Asia',
-        detail: 'By c. 1300, Muslim merchant communities had established mosques and trading networks in coastal cities across Southeast Asia, Malacca, Ternate, Sulu. Local rulers converted not through conquest but through commercial relationships with Muslim merchants from the Indian Ocean world. Within 200 years, Islam had become the dominant religion across the Malay Peninsula and Indonesian archipelago.'
+        title: 'Buddhism, Hinduism, and Islam',
+        detail: 'Evidence that repeated movement through trade networks diffused cultural and religious traditions across East Asia, Southeast Asia, sub-Saharan Africa, and Asia.'
       },
       {
-        title: 'Paper and Printing Moving West',
-        detail: 'Chinese papermaking technology was captured when Arab armies defeated a Chinese force at the Battle of Talas (751 CE). By the 9th century, paper mills operated in Baghdad, Cairo, and eventually across the Islamic world. European papermaking began in the 13th century. The spread of paper transformed literacy, scholarship, and governance across Afro-Eurasia.'
+        title: 'Paper and Gunpowder from China',
+        detail: 'Evidence that exchange networks transferred technologies and scientific knowledge across regional boundaries.'
       },
       {
-        title: 'Sugar Across the Islamic World and into Europe',
-        detail: 'Sugar cane originated in New Guinea and spread to South Asia, then to Persia and the Mediterranean through the expansion of the Islamic world. By c. 1200, sugar was cultivated across North Africa and the Middle East. Crusaders encountered it in the Levant and brought a taste for it back to Europe, where demand eventually drove the plantation economies of the Atlantic world.'
+        title: 'Urban Growth and Decline',
+        detail: 'Evidence that the fate of cities depended on expanding productivity and trade but could reverse when political or commercial conditions changed.'
       },
       {
-        title: 'Buddhist Architecture in Southeast Asia',
-        detail: 'Angkor Wat in Cambodia (completed c. 1150) was originally a Hindu temple built for the Khmer king Suryavarman II, representing Mount Meru, the home of the gods. Within two centuries it had been converted to Buddhist use, reflecting the broader spread of Buddhism through Indian Ocean merchant networks and court patronage across mainland and island Southeast Asia.'
+        title: 'Ibn Battuta, Margery Kempe, and Marco Polo',
+        detail: 'Evidence that intensified exchange networks supported long-distance travel and produced more written accounts of cross-cultural encounters.'
       }
     ]
   },
 
   primarySource: {
     title: 'Primary Source: Ibn Battuta Describes the Port of Zaytun (Quanzhou)',
-    intro: 'Ibn Battuta (1304–c. 1368) was a Moroccan scholar who traveled more than 75,000 miles across the known world. In 1345–1346, he reached the Chinese port that Arab and Persian sailors called Zaytun, known today as Quanzhou, one of the busiest harbors on the maritime Silk Road.',
+    intro: 'Ibn Battuta was one of the travelers whose writing survives because Afro-Eurasian exchange networks made long-distance movement increasingly possible. His description of Zaytun provides evidence both of urban connectivity and of the growing travel literature of the period.',
     text: '"The port of Zaytun is one of the largest in the world, or perhaps the very largest. I saw in it about a hundred large junks; as for small junks, they could not be counted for multitude. It is one of the greatest havens in the world for commerce."',
     attribution: 'Ibn Battuta, Rihla (translated as The Travels of Ibn Battuta, 1325–1354), describing the port of Zaytun (Quanzhou), 1345–1346',
     questions: [
-      'What evidence does Ibn Battuta provide that Zaytun (Quanzhou) was a major hub connecting the Indian Ocean and Silk Roads networks? List at least two specific details.',
-      'Why would a Moroccan scholar, thousands of miles from home, be both a valuable and a limited witness to describe a Chinese port?',
-      'HIPP this source: what was Ibn Battuta\'s point of view as a Muslim scholar and qadi, his purpose in writing the Rihla, and his likely audience? How does his historical situation, a traveler reporting from memory years after the visit, change how confidently you can use this passage as evidence?',
-      'What are the limitations of one traveler\'s account for understanding cultural diffusion across the Silk Roads, Indian Ocean, and trans-Saharan networks as a whole?'
+      'What evidence in the passage shows that Zaytun was a major urban node in an expanding exchange network?',
+      'How does Ibn Battuta\'s presence in China support the CED claim that intensified exchange produced more long-distance travelers?',
+      'What can a travel account reveal about cross-cultural interaction, and what are its limitations as historical evidence?'
     ]
   }
 };
