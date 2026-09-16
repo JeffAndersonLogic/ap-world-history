@@ -1,0 +1,60 @@
+name: Finalize Topic 2.3 Teaching OS Once
+
+on:
+  push:
+    branches: [topic-2-3-teaching-os]
+    paths:
+      - '.github/workflows/finalize-topic-2-3-os-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Wire remote routing and teacher index
+        shell: python
+        run: |
+          from pathlib import Path
+
+          for name in ['teacher/remote-host.html', 'teacher/ipad-remote.html']:
+              path = Path(name)
+              text = path.read_text(encoding='utf-8')
+              old = "(topic==='2-2'||topic==='2-1')"
+              new = "(topic==='2-2'||topic==='2-1'||topic==='2-3')"
+              if old not in text:
+                  raise SystemExit(f'Expected remote routing expression not found in {name}')
+              path.write_text(text.replace(old, new, 1), encoding='utf-8')
+
+          path = Path('scripts/build-teacher-index.js')
+          text = path.read_text(encoding='utf-8')
+          card = "  { label: 'Topic 2.2 Teaching OS', desc: 'The Mongol Empire: cinematic projection, run of show, teacher intelligence, AP reasoning, and iPad control in one surface.', href: 'topic-2-2-os.html' },"
+          add_card = card + "\n  { label: 'Topic 2.3 Teaching OS', desc: 'Indian Ocean exchange: monsoon systems, maritime technology, port cities, diasporic communities, contextualization, and iPad control in one surface.', href: 'topic-2-3-os.html' },"
+          if "Topic 2.3 Teaching OS" not in text:
+              if card not in text:
+                  raise SystemExit('Could not find Topic 2.2 teacher tool card')
+              text = text.replace(card, add_card, 1)
+          route = "  { key: '2.2', out: 'topic-2-2-os.html' },"
+          add_route = route + "\n  { key: '2.3', out: 'topic-2-3-os.html' },"
+          if "{ key: '2.3', out: 'topic-2-3-os.html' }" not in text:
+              if route not in text:
+                  raise SystemExit('Could not find Topic 2.2 interactive route')
+              text = text.replace(route, add_route, 1)
+          path.write_text(text, encoding='utf-8')
+      - name: Regenerate teacher home
+        run: node scripts/build-teacher-index.js
+      - name: Commit generated wiring and remove one-time workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm .github/workflows/finalize-topic-2-3-os-once.yml
+          git config user.name "BeHistorical Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add teacher/remote-host.html teacher/ipad-remote.html scripts/build-teacher-index.js teacher/index.html .github/workflows/finalize-topic-2-3-os-once.yml
+          git commit -m "Finalize Topic 2.3 Teaching OS routing"
+          git push
