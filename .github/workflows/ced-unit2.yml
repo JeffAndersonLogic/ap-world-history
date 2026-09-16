@@ -1,0 +1,31 @@
+name: CED Unit 2 Contract
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/lesson-2-*.js'
+      - 'teacher/data/topic-2-*.js'
+      - 'scripts/lib/ced-unit2-contract.js'
+      - 'scripts/test/ced-unit2-contract.test.js'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/lesson-2-*.js'
+      - 'teacher/data/topic-2-*.js'
+      - 'scripts/lib/ced-unit2-contract.js'
+      - 'scripts/test/ced-unit2-contract.test.js'
+
+permissions:
+  contents: read
+
+jobs:
+  ced-unit-2:
+    name: Unit 2 CED >=95%
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Audit Unit 2 instructional alignment
+        run: node scripts/test/ced-unit2-contract.test.js
