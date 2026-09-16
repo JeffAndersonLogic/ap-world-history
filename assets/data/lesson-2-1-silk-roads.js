@@ -36,7 +36,7 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: 'I can explain why Silk Roads trade expanded after 1200 by connecting demand, commercial practices, and transportation infrastructure.',
+      target: 'I can explain why Silk Roads trade expanded after 1200 by connecting demand, commercial practices, transportation infrastructure, and supporting political stability.',
       kc: 'KC-3.1.I.A.i + KC-3.1.I.C.i',
       theme: 'Economic Systems'
     },
@@ -54,7 +54,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: 'I can build a cause-and-effect chain: demand plus improved trade systems lowered cost and risk, which increased trade volume and geographic reach.',
+      criteria: 'I can build a cause-and-effect chain: demand plus improved trade systems and lower political risk increased trade volume and geographic reach.',
       kc: 'KC-3.1.I.A.i',
       theme: 'Economic Systems'
     },
@@ -99,7 +99,7 @@ window.BEHISTORICAL_LESSON = {
         title: 'The SILK ROADS [AP World Review - Unit 2 Topic 1]',
         url: 'https://youtu.be/daiQ6aChKfk',
         youtubeId: 'daiQ6aChKfk',
-        prompt: 'Watch for demand, commercial innovations, trading cities, and production for export.'
+        prompt: 'Watch for demand, commercial innovations, trading cities, production for export, and political conditions that reduced merchant risk.'
       }
     ],
     segments: [
@@ -108,6 +108,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           '**Silk Roads trade expanded after 1200 because demand for luxury goods increased and merchants had better systems for moving goods and money.**',
           'The important AP move is not memorizing terms. Students must explain the mechanism: how each system lowered risk, cost, or distance problems.',
+          'Relative **political stability and state protection** could further reduce merchant risk; under Mongol rule this supporting condition became especially important across large stretches of Eurasia.',
           'The result was greater trade volume, wider geographic reach, growth of trading cities, and expanded production for export.'
         ],
         image: {
@@ -136,7 +137,8 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           '**Caravanserai** made overland trade more practical by providing rest, water, food, animal care, storage, protection, markets, and information.',
           '**Bills of exchange** and **banking houses** reduced the danger of carrying large amounts of money overland.',
-          '**Paper money** and money economies made transactions easier, allowing trade to move through multiple cities and merchants.'
+          '**Paper money** and money economies made transactions easier, allowing trade to move through multiple cities and merchants.',
+          'Political stability did not replace these systems, but it could make them work across wider areas by lowering the risk of conflict, banditry, and repeated political barriers.'
         ],
         image: {
           title: 'Caravanserai courtyard',
@@ -167,18 +169,19 @@ window.BEHISTORICAL_LESSON = {
     url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',
     caption: 'The overland Silk Roads connected East Asia, Central Asia, Southwest Asia, and the Mediterranean through a network of routes and cities.',
-    intro: 'Use the map to show why Central Asian nodes mattered. Do not teach the map as a line to memorize. Teach it as a system of routes, stopping points, cities, and exchanges.',
-    prompt: 'Why would cities located at crossroads, oases, and route junctions become wealthy and powerful?',
+    intro: 'Use the map to show why Central Asian nodes mattered. Do not teach the map as a line to memorize. Teach it as a system of routes, stopping points, cities, commercial practices, and political jurisdictions.',
+    prompt: 'Why would cities located at crossroads, oases, and route junctions become wealthy and powerful, especially when political conditions made movement safer?',
     notes: [
       'Kashgar and Samarkand were not random names; they were trade nodes where routes, merchants, services, and information converged.',
       'Geography shaped the network by forcing merchants through usable corridors across deserts, mountains, and steppe.',
-      'The map helps students see why commercial infrastructure and credit systems mattered: distance created risk, and trade systems reduced that risk.'
+      'The map helps students see why commercial infrastructure and credit systems mattered: distance created risk, and trade systems reduced that risk.',
+      'Relative political stability could lower a different kind of risk. Topic 2.2 develops the Mongol example in depth.'
     ]
   },
 
   deepReading: {
     title: 'The Business of the Road',
-    desc: 'A textbook-depth companion on how overland trade actually worked: caravanserai, commercial partnerships, credit, money, production, and the cities that grew from exchange.',
+    desc: 'A textbook-depth companion on how overland trade actually worked: caravanserai, commercial partnerships, credit, money, political conditions, production, and the cities that grew from exchange.',
     url: 'deep-reading-topic-2-1-silk-roads.html'
   },
 
@@ -194,6 +197,7 @@ window.BEHISTORICAL_LESSON = {
     items: [
       { title: 'Caravanserai', detail: 'Evidence that transportation infrastructure reduced the cost and risk of overland trade.' },
       { title: 'Bills of exchange and banking houses', detail: 'Evidence that commercial practices made long-distance transactions safer and easier.' },
+      { title: 'Political stability and state protection', detail: 'Supporting evidence that lower political risk could help merchants move more predictably across larger stretches of the network.' },
       { title: 'Kashgar and Samarkand', detail: 'Evidence that increased trade promoted the growth of powerful trading cities.' },
       { title: 'Porcelain, textiles, iron, and steel', detail: 'Evidence that demand for luxury goods encouraged expanded production for export.' }
     ]
