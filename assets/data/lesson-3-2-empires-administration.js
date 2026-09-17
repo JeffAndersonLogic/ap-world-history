@@ -100,7 +100,7 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "Governing Land-Based Empires: Systems of Control and Accommodation",
-    intro: "Use these cards to understand the central problem of imperial governance, how to rule vast, diverse territories without enough trusted officials, and the distinctive solutions each empire developed.",
+    intro: "Use these cards to track three connected methods rulers used to consolidate power: loyal bureaucratic or military personnel, religious or visual legitimation, and revenue systems that funded the state and further expansion.",
     videos: [],
     segments: [
       {
@@ -144,6 +144,20 @@ window.BEHISTORICAL_LESSON = {
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg"
         }
+      },
+      {
+        title: "Legitimacy and Revenue: Why Obey, and Who Pays?",
+        bullets: [
+          "Rulers used **religious ideas, art, and monumental architecture** to make authority appear legitimate. European monarchs invoked **divine right**; Mughal emperors sponsored mosques and **mausolea**; Qing rulers used imperial portraiture; Louis XIV made **Versailles** a stage for royal power.",
+          "Rulers also needed dependable revenue. Mughal **zamindars** collected land taxes, Ottoman **tax farming** converted collection rights into immediate state income, Mexica tribute moved goods toward the capital, and Ming rulers increasingly demanded taxes in hard currency.",
+          "These methods worked together: loyal personnel extended central control, legitimacy made rule easier to accept, and revenue paid the armies, officials, courts, and projects that sustained imperial power and expansion."
+        ],
+        image: {
+          title: "Taj Mahal and Mughal imperial patronage",
+          caption: "Monumental architecture made dynastic wealth, religious patronage, and imperial authority visible.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal_in_March_2004.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_March_2004.jpg"
+        }
       }
     ]
   },
@@ -176,7 +190,7 @@ window.BEHISTORICAL_LESSON = {
   evidenceLab: {
     title: "Evidence Lab: Administrative Systems Across Empires",
     intro: "Use the evidence below to connect specific administrative systems to broader arguments about how land-based empires maintained control, extracted revenue, and managed diverse populations.",
-    prompt: "Choose one piece of evidence and explain how it supports a claim about how empires solved the problem of governing large, diverse territories.",
+    prompt: "Choose one piece of evidence and explain how it supports a claim about one Topic 3.2 method: creating loyal personnel, legitimizing authority, or generating revenue for state power.",
     items: [
       {
         title: "The Devshirme System",
