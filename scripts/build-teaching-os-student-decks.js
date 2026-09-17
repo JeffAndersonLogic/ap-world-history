@@ -4,7 +4,7 @@
 /*
  * Generate the student-facing companions for the data-driven Teaching OS.
  * Teacher base + presentation-assets files are the source of truth.
- * Teacher-only notes are stripped; authored projected content is preserved.
+ * Teacher-only notes and preflight slides are stripped; authored projected content is preserved.
  */
 
 const fs = require('fs');
@@ -83,26 +83,28 @@ function baseStudentSlide(s) {
   return out;
 }
 
+function projectedSlides(teaching) {
+  return teaching.slides.filter(src => src.phase !== 'preflight');
+}
+
 function ensureWhy(slide, text) {
   if (slide.kind !== 'process' || !Array.isArray(slide.steps) || slide.steps.length !== 3) return;
   slide.steps.push({ label: 'WHY', text });
 }
 
 function topic21Slides(teaching) {
-  return teaching.slides
-    .filter(src => src.phase !== 'preflight')
-    .map(src => {
-      const s = baseStudentSlide(src);
-      if (src.kind === 'reconstruction') s.kind = 'hero';
-      if (src.kind === 'image') s.kind = 'map';
-      if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
-      ensureWhy(s, 'State why the mechanism changes exchange');
-      return s;
-    });
+  return projectedSlides(teaching).map(src => {
+    const s = baseStudentSlide(src);
+    if (src.kind === 'reconstruction') s.kind = 'hero';
+    if (src.kind === 'image') s.kind = 'map';
+    if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
+    ensureWhy(s, 'State why the mechanism changes exchange');
+    return s;
+  });
 }
 
 function topic22Slides(teaching) {
-  return teaching.slides.map(src => {
+  return projectedSlides(teaching).map(src => {
     const s = baseStudentSlide(src);
     if (src.kind === 'reconstruction') s.kind = 'hero';
     if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';

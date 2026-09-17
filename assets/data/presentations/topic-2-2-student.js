@@ -10,7 +10,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "hero",
       "eyebrow": "AP World History · Topic 2.2",
       "title": "The Mongol Empire",
-      "subtitle": "Build. Fragment. Connect. Transfer.",
+      "subtitle": "How did Mongol expansion change states, exchange, and the movement of knowledge across Eurasia?",
       "position": "upper-left",
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Steppes%20of%20Asia.jpg",
@@ -19,32 +19,33 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "process",
-      "eyebrow": "The Whole Lesson",
-      "title": "Four moves. One connected story.",
-      "footer": "Do not leave class with only cavalry and Genghis Khan.",
-      "steps": [
+      "kind": "grid",
+      "eyebrow": "What Students Must Know",
+      "title": "Three Big Rocks",
+      "subtitle": "Every example in Topic 2.2 belongs to one of these ideas.",
+      "footer": "State change -> connection -> transfer = the Topic 2.2 significance argument.",
+      "cards": [
         {
-          "label": "BUILD",
-          "text": "Organization + adaptation create conquest"
+          "title": "1 · STATE CHANGE",
+          "text": "Mongols build a vast empire, then unified political control fragments into regional khanates."
         },
         {
-          "label": "FRAGMENT",
-          "text": "Distance + succession strengthen regional khanates"
+          "title": "2 · CONNECTION",
+          "text": "Mongol rule changes political conditions on exchange networks that already existed."
         },
         {
-          "label": "CONNECT",
-          "text": "Imperial systems facilitate trade + communication"
+          "title": "3 · TRANSFER",
+          "text": "Greater contact moves knowledge and cultural practices across regions."
         },
         {
-          "label": "TRANSFER",
-          "text": "Knowledge crosses cultural boundaries"
+          "title": "AP SKILL",
+          "text": "Explain the mechanism and significance, not just the Mongol fact."
         }
       ]
     },
     {
       "kind": "map",
-      "eyebrow": "Scale + Fragmentation",
+      "eyebrow": "Big Rock 1 · State Change",
       "title": "One empire becomes four Mongol states.",
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Map%20of%20the%20Khanates.png",
@@ -65,7 +66,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "hero",
-      "eyebrow": "Build 1 · Organization",
+      "eyebrow": "Big Rock 1 · State Change · Build",
       "title": "Temüjin turns steppe warriors into a system.",
       "subtitle": "Coordination matters as much as horsemanship.",
       "position": "right",
@@ -73,11 +74,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "url": "../assets/images/topics/2-2/2.2%20-%20Chinggis%20Museum.jpg",
         "alt": "Chinggis Khan museum visual used to frame Mongol military organization",
         "credit": "Topic 2.2 classroom visual · Chinggis Museum"
-      }
+      },
+      "footer": "Mechanism: organization makes conquest scalable."
     },
     {
       "kind": "hero",
-      "eyebrow": "Build 2 · Mobility",
+      "eyebrow": "Big Rock 1 · State Change · Build",
       "title": "Mobility is a weapon.",
       "subtitle": "Mounted archery + speed + feigned retreat.",
       "position": "right",
@@ -85,11 +87,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "url": "../assets/images/topics/2-2/2.2%20-%20Cinematic%20Mongol%20Archers.png",
         "alt": "Historical reconstruction of coordinated Mongol mounted archers on the steppe",
         "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
-      }
+      },
+      "footer": "Mechanism: mobility increases speed, surprise, and operational range."
     },
     {
       "kind": "hero",
-      "eyebrow": "Build 3 · Adaptation",
+      "eyebrow": "Big Rock 1 · State Change · Build",
       "title": "The Mongols borrowed what worked.",
       "subtitle": "Siege specialists turn mobility into city conquest.",
       "position": "top",
@@ -97,7 +100,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "url": "../assets/images/topics/2-2/2.2%20-%20Cinematic%20Mongol%20city%20gate.png",
         "alt": "Historical reconstruction of Mongol forces confronting a fortified city",
         "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
-      }
+      },
+      "footer": "Mechanism: adaptation lets a steppe army conquer fortified cities."
     },
     {
       "kind": "prompt",
@@ -107,7 +111,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "map",
-      "eyebrow": "Fragmentation",
+      "eyebrow": "Big Rock 1 · State Change · Fragment",
       "title": "Regional rule solves distance — and creates rivalry.",
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Map%20of%20the%20Khanates.png",
@@ -124,20 +128,21 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "hero",
-      "eyebrow": "Governance + Communication",
+      "eyebrow": "Bridge · State Power Becomes Connection",
       "title": "Information moves at horse speed.",
       "subtitle": "The Yam turns distance into a governable problem.",
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Mongol%20Yam%20Relay%20Across%20the%20Steppe.png",
         "alt": "Historical reconstruction of the Mongol Yam relay system across the steppe",
         "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
-      }
+      },
+      "footer": "The same infrastructure that helps rule an empire also helps connect it."
     },
     {
       "kind": "action",
-      "eyebrow": "Checkpoint 1 · Build + Fragment",
-      "title": "How did the Mongols build power — and why did unity weaken?",
-      "subtitle": "One conquest mechanism. One fragmentation mechanism.",
+      "eyebrow": "Big Rock 1 · Checkpoint",
+      "title": "Explain state change in two mechanisms.",
+      "subtitle": "How was the empire built, and why did unified control weaken?",
       "action": {
         "label": "Open Checkpoint",
         "url": "lesson-2-2-mongol-empire.html#modules"
@@ -145,7 +150,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "process",
-      "eyebrow": "Exchange · CCOT",
+      "eyebrow": "Big Rock 2 · Connection · CCOT",
       "title": "The routes were older. The political conditions changed.",
       "footer": "Continuity: routes existed · Change: political integration + communication + protection",
       "steps": [
@@ -169,7 +174,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "hero",
-      "eyebrow": "Exchange Mechanism",
+      "eyebrow": "Big Rock 2 · Connection · Mechanism",
       "title": "Protection changes movement.",
       "subtitle": "Merchants, envoys, and information move more predictably.",
       "position": "bottom",
@@ -181,9 +186,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "grid",
-      "eyebrow": "CED Must-Know · Cultural + Technological Transfer",
+      "eyebrow": "Big Rock 3 · Transfer · CED Must-Know",
       "title": "Connection moves knowledge.",
-      "footer": "These three examples are explicitly named by the CED.",
+      "footer": "Medicine · numbering systems · Uyghur script = evidence that connection moved knowledge.",
       "cards": [
         {
           "title": "MEDICINE",
@@ -205,7 +210,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "process",
-      "eyebrow": "Transfer Mechanism",
+      "eyebrow": "Big Rock 3 · Transfer · Mechanism",
       "title": "Contact -> Borrowing -> Adaptation -> Wider Reach",
       "steps": [
         {
@@ -228,32 +233,32 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "process",
-      "eyebrow": "AP Skill Builder · CCOT + Connection",
-      "title": "Baseline -> Change -> Evidence -> Significance",
+      "eyebrow": "AP Synthesis · Answer the Topic Theme",
+      "title": "State Change -> Connection -> Transfer -> Significance",
       "steps": [
         {
-          "label": "BASELINE",
-          "text": "Silk Road exchange existed before Mongol rule"
+          "label": "STATE CHANGE",
+          "text": "Build a vast empire; unified rule fragments"
         },
         {
-          "label": "CHANGE",
-          "text": "Mongol expansion alters political conditions"
+          "label": "CONNECTION",
+          "text": "Political conditions on older routes change"
         },
         {
-          "label": "EVIDENCE",
-          "text": "Yam + protection + transfer examples"
+          "label": "TRANSFER",
+          "text": "Knowledge crosses cultural boundaries"
         },
         {
-          "label": "WHY IT MATTERS",
-          "text": "Exchange and knowledge move more widely"
+          "label": "SIGNIFICANCE",
+          "text": "Eurasia becomes more politically and culturally interconnected"
         }
       ]
     },
     {
       "kind": "action",
-      "eyebrow": "Final Checkpoint",
-      "title": "Explain Mongol significance in three moves.",
-      "subtitle": "State change · exchange · transfer",
+      "eyebrow": "Final Checkpoint · Topic Theme",
+      "title": "Answer Topic 2.2 in three moves.",
+      "subtitle": "State change · connection · transfer",
       "action": {
         "label": "Open Final Checkpoint",
         "url": "lesson-2-2-mongol-empire.html#modules"
@@ -261,9 +266,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "prompt",
-      "eyebrow": "Topic 2.2 · Landing Sentence",
-      "title": "Empire changed the conditions of connection.",
-      "subtitle": "The Mongols built and fragmented states while facilitating exchange and accelerating cross-cultural transfer."
+      "eyebrow": "Topic 2.2 · Answer",
+      "title": "Mongol significance was bigger than conquest.",
+      "subtitle": "Mongol expansion changed states, altered political conditions on older exchange networks, and intensified cross-cultural transfer across Eurasia."
     }
   ]
 };

@@ -10,6 +10,7 @@ const TYPES={'.html':'text/html','.js':'text/javascript','.css':'text/css','.svg
 const server=http.createServer((req,res)=>{const rel=decodeURIComponent(req.url.split('?')[0]).replace(/^\/+/, '');const file=path.join(ROOT,rel);if(!file.startsWith(ROOT)||!fs.existsSync(file)||fs.statSync(file).isDirectory()){res.writeHead(404);res.end('nope');return;}res.writeHead(200,{'Content-Type':TYPES[path.extname(file).toLowerCase()]||'application/octet-stream'});res.end(fs.readFileSync(file));});
 const results=[];function check(name,pass,detail){results.push({name,pass});console.log(`  ${pass?'PASS':'FAIL'}  ${name}${detail?'  ('+detail+')':''}`);}
 async function localPage(browser,origin,pathName,viewport={width:1600,height:950}){const page=await browser.newPage({viewport});const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.route('**/*',r=>r.request().url().startsWith(origin.origin)?r.continue():r.abort());await page.goto(new URL(pathName,origin).href,{waitUntil:'domcontentloaded'});return{page,errors};}
+async function goToTeacherTitle(page,needle){const index=await page.evaluate(n=>(window.BEHISTORICAL_TEACHING?.slides||[]).findIndex(s=>String(s.title||'').toLowerCase().includes(String(n).toLowerCase())),needle);if(index<0)throw new Error(`Could not find teacher slide: ${needle}`);await page.locator(`#rail button[data-i="${index}"]`).click();await page.waitForTimeout(70);return index;}
 (async()=>{await new Promise(r=>server.listen(0,r));const origin=new URL(`http://127.0.0.1:${server.address().port}/`);const browser=await chromium.launch({executablePath:EXE,args:['--no-sandbox']});
 
 for(const [label,pathName] of [['2.1','teacher/topic-2-1-story-os.html'],['2.2','teacher/topic-2-2-os.html']]){
@@ -24,13 +25,13 @@ for(const [label,pathName] of [['2.1','teacher/topic-2-1-story-os.html'],['2.2',
 }
 
 {
-  const {page,errors}=await localPage(browser,origin,'teacher/topic-2-2-os.html');await page.waitForSelector('#stage .slide');await page.locator('#rail button[data-i="4"]').click();await page.waitForTimeout(70);
-  console.log('\n  Topic 2.2 slide 5 museum composition');
+  const {page,errors}=await localPage(browser,origin,'teacher/topic-2-2-os.html');await page.waitForSelector('#stage .slide');const index=await goToTeacherTitle(page,'Temüjin turns steppe warriors into a system');
+  console.log('\n  Topic 2.2 Chinggis Museum composition');
   const g=await page.locator('.hero-slide').evaluate(el=>{const r=el.getBoundingClientRect(),c=el.querySelector('.copy').getBoundingClientRect();return{left:(c.left-r.left)/r.width,right:(c.right-r.left)/r.width,width:c.width/r.width};});
-  check('2.2 slide 5 places the text panel on the right half',g.left>0.5&&g.right<=1.01,JSON.stringify(g));
+  check('2.2 organization slide places the text panel on the right half',g.left>0.5&&g.right<=1.01,`slide=${index+1} ${JSON.stringify(g)}`);
   const img=page.locator('img[src*="Chinggis%20Museum.jpg"]');const st=await img.evaluate(el=>({complete:el.complete,w:el.naturalWidth,h:el.naturalHeight,fit:getComputedStyle(el).objectFit}));
-  check('2.2 slide 5 museum image decodes and remains uncropped',st.complete&&st.w>0&&st.h>0&&st.fit==='contain',`${st.w}x${st.h}, fit=${st.fit}`);
-  check('2.2 slide 5 has no JavaScript errors',errors.length===0,errors.join('; ')||'none');await page.close();
+  check('2.2 museum image decodes and remains uncropped',st.complete&&st.w>0&&st.h>0&&st.fit==='contain',`${st.w}x${st.h}, fit=${st.fit}`);
+  check('2.2 organization slide has no JavaScript errors',errors.length===0,errors.join('; ')||'none');await page.close();
 }
 
 for(const [label,lesson,deck,asset] of [

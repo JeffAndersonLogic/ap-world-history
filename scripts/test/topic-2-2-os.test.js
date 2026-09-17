@@ -109,6 +109,8 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
   check('2.1 teacher preflight does not leak into student projection', !(student21?.slides || []).some(s => /teacher preflight/i.test(`${s.eyebrow || ''} ${s.title || ''}`)));
   check('2.1 student deck preserves the rebuilt economic spine', (student21?.slides || []).some(s => /demand \+ systems/i.test(s.title || '')) && (student21?.slides || []).some(s => /trade networks create powerful nodes/i.test(s.title || '')));
   check('2.2 student deck remains The Mongol Empire', student22?.meta?.title === 'The Mongol Empire', student22?.meta?.title);
+  check('2.2 teacher preflight does not leak into student projection', !(student22?.slides || []).some(s => /teacher preflight/i.test(`${s.eyebrow || ''} ${s.title || ''}`)));
+  check('2.2 student deck exposes the three Big Rocks', (student22?.slides || []).some(s => /three big rocks/i.test(s.title || '')));
   check('2.2 student deck teaches the transfer requirement', (student22?.slides || []).some(s => /connection moves knowledge/i.test(s.title || '')));
   check('2.2 student deck does not expose teacher notes', !JSON.stringify(student22 || {}).includes('listenFor') && !JSON.stringify(student22 || {}).includes('avoid'));
 
@@ -121,17 +123,19 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
     const { page, errors } = await localPage(browser, origin, 'teacher/topic-2-2-os.html');
     console.log('\n  Topic 2.2 teacher Teaching OS');
     const data = await teachingData(page);
-    check('2.2 renders the rebuilt 19-slide CED sequence', data.slides.length === 19, `slides=${data.slides.length}`);
-    check('2.2 run of show covers the lesson', data.flow.length >= 10, `flow=${data.flow.length}`);
+    check('2.2 renders teacher preflight plus the 19-slide CED sequence', data.slides.length === 20, `slides=${data.slides.length}`);
+    check('2.2 run of show covers the lesson', data.flow.length >= 11, `flow=${data.flow.length}`);
     for (const title of [
-      'Four moves. One connected story.',
+      'Do not teach the Mongols as a conquest story.',
+      'Three Big Rocks',
       'One empire becomes four Mongol states.',
       'Temüjin turns steppe warriors into a system.',
       'Regional rule solves distance',
       'The routes were older. The political conditions changed.',
       'Connection moves knowledge.',
       'Contact -> Borrowing -> Adaptation -> Wider Reach',
-      'Explain Mongol significance in three moves.'
+      'State Change -> Connection -> Transfer -> Significance',
+      'Answer Topic 2.2 in three moves.'
     ]) check(`2.2 includes “${title}”`, data.titles.some(t => t.includes(title)));
 
     const transfer = data.slides.find(s => /connection moves knowledge/i.test(s.title || ''));
