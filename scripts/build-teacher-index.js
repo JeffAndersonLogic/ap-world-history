@@ -29,6 +29,7 @@ const TOOLS = [
   { label: 'Topic 1.7 Interactive Lesson', desc: 'The Unit 1 synthesis pilot: Teacher Command Center + integrated Presentation Mode for comparison and argumentation.', href: 'command-center-topic-1-7.html' },
   { label: 'Topic 2.1 Interactive Lesson', desc: 'The Silk Roads: Teacher Command Center + integrated Presentation Mode for causation and economic systems.', href: 'command-center-topic-2-1.html' },
   { label: 'Topic 2.2 Teaching OS', desc: 'The Mongol Empire: cinematic projection, run of show, teacher intelligence, AP reasoning, and iPad control in one surface.', href: 'topic-2-2-os.html' },
+  { label: 'Topic 2.3 Teaching OS', desc: 'Indian Ocean exchange: monsoon systems, maritime technology, port cities, diasporic communities, contextualization, and iPad control in one surface.', href: 'topic-2-3-os.html' },
   { label: 'Skills Lens', desc: 'Drop a Canvas submissions zip to see completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
 ];
 
@@ -37,6 +38,7 @@ const INTERACTIVE_TOPICS = [
   { key: '1.7', out: 'command-center-topic-1-7.html' },
   { key: '2.1', out: 'command-center-topic-2-1.html' },
   { key: '2.2', out: 'topic-2-2-os.html' },
+  { key: '2.3', out: 'topic-2-3-os.html' },
 ];
 
 module.exports = { TOOLS, INTERACTIVE_TOPICS };
