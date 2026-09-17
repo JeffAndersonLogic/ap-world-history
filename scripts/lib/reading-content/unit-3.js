@@ -677,7 +677,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "The major land-based empires increased influence through overlapping methods: military expansion, administrative and revenue systems, incorporation of elites, and religious or cultural legitimation. Their exact solutions differed because they governed different populations, territories, and rivalries. For AP Comparison, keep one method constant, identify a meaningful similarity or difference, provide evidence from both empires, and explain how the method increased influence and why the pattern existed."why\" is what makes it an argument.",
+    "takeaway": "The major land-based empires increased influence through overlapping methods: military expansion, administrative and revenue systems, incorporation of elites, and religious or cultural legitimation. Their exact solutions differed because they governed different populations, territories, and rivalries. For AP Comparison, keep one method constant, identify a meaningful similarity or difference, provide evidence from both empires, and explain how the method increased influence and why the pattern existed.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
