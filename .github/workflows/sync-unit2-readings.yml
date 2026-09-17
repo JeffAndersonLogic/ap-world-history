@@ -1,0 +1,42 @@
+name: Sync Unit 2 First & 10
+
+on:
+  push:
+    branches:
+      - fix-topic-2-1-content-structure
+    paths:
+      - scripts/lib/reading-content/unit-2.js
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix-topic-2-1-content-structure
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Rebuild Unit 2 First & 10 readings
+        run: node scripts/build-unit-readings.js unit-2
+
+      - name: Commit regenerated readings
+        shell: bash
+        run: |
+          if git diff --quiet -- unit-2/first-and-10-topic-2-*.html; then
+            echo "Unit 2 First & 10 readings are already synchronized."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add unit-2/first-and-10-topic-2-*.html
+          git commit -m "Regenerate Unit 2 First & 10 readings"
+          git push origin HEAD:fix-topic-2-1-content-structure
