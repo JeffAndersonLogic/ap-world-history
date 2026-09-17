@@ -22,7 +22,7 @@ permissions:
 
 jobs:
   ced-unit-2:
-    name: Unit 2 CED >=95%
+    name: Unit 2 CED 100%
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
