@@ -94,7 +94,7 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "Empires Expand: Gunpowder, Conquest, and the New Imperial Age",
-    intro: "Use these cards to explain how gunpowder transformed military conquest after c. 1450, identify the major land-based empires and their geographic reach, and analyze why the Ottoman conquest of Constantinople in 1453 mattered for Eurasian history.",
+    intro: "Use these cards to explain how gunpowder transformed military conquest after c. 1450, identify the major land-based empires and their geographic reach, and explain how political and religious disputes produced interstate rivalries."
     videos: [
       {
         title: "Empires Expand [AP World History Review] Unit 3, Topic 1",
@@ -136,7 +136,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Why Constantinople Mattered: 1453",
         bullets: [
           "On May 29, 1453, Ottoman forces under Sultan **Mehmed II** breached the walls of Constantinople using massive bombard cannons. The city fell after a seven-week siege, ending the **Byzantine Empire**, the eastern successor of Rome, which had survived for over a thousand years.",
-          "For Christian Europe, the fall of Constantinople was a profound shock. It closed a major overland trade route and accelerated European interest in finding **maritime routes** to Asia, directly contributing to the Age of Exploration. For the Ottomans, controlling Constantinople (renamed Istanbul) gave them control over the **Bosphorus strait**, the gateway between the Black Sea and the Mediterranean.",
+          "For the Ottomans, taking Constantinople gave Mehmed II control of the **Bosphorus strait**, a strategic gateway between the Black Sea and the Mediterranean, and provided a powerful new imperial capital. European maritime expansion had multiple causes; the 1453 conquest is best treated as part of a wider shift in Eurasian political and commercial conditions, not as a single direct cause of oceanic exploration.",
           "Sultan Mehmed II claimed the title of **Caesar (Kayser-i Rum)**, Emperor of Rome, asserting Ottoman legitimacy as the successors of both the Roman Empire and the Islamic caliphate. The conquest demonstrated what gunpowder artillery could accomplish and announced that a new era of imperial power had arrived in Eurasia."
         ],
         image: {
