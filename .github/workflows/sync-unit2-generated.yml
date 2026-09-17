@@ -1,0 +1,46 @@
+name: Sync Unit 2 Generated Artifacts
+
+on:
+  push:
+    branches:
+      - fix-topic-2-1-content-structure
+    paths:
+      - '.github/workflows/sync-unit2-generated.yml'
+      - 'assets/data/lesson-2-*.js'
+      - 'teacher/data/topic-2-*.js'
+      - 'scripts/build-teaching-os-student-decks.js'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix-topic-2-1-content-structure
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Rebuild dependent generated artifacts
+        run: |
+          node scripts/build-teaching-os-student-decks.js
+          node scripts/build-socrates.js
+          node scripts/build-announcements.js
+          node scripts/build-canvas-events.js
+      - name: Commit generated outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/data/presentations/topic-2-1-student.js assets/data/presentations/topic-2-2-student.js
+          git add docs/socrates
+          git add assets/data/announcements.js docs/canvas/calendar-events.md docs/canvas/assignments.md
+          if git diff --cached --quiet; then
+            echo 'Generated artifacts already synchronized.'
+            exit 0
+          fi
+          git commit -m 'Regenerate Unit 2 dependent artifacts'
+          git push origin HEAD:fix-topic-2-1-content-structure
