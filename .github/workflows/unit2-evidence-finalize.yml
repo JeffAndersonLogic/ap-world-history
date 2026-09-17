@@ -23,6 +23,11 @@ jobs:
       - name: Finalize Unit 2 Evidence Labs
         run: |
           node scripts/finalize-unit2-evidence.js || echo "Helper verification counted a spread reference; continuing to the authored-pool validator."
+          for f in unit-2/lesson-2-2-mongol-empire.html unit-2/lesson-2-3-indian-ocean.html unit-2/lesson-2-5-cultural-consequences.html; do
+            if ! grep -q 'behistorical-evidence-text-card.js' "$f"; then
+              sed -i 's#<script src="../assets/data/lesson-2-\([235]\)-renderer-config.js?v=response-id-fix-v1"></script>#<script src="../assets/js/behistorical-evidence-text-card.js?v=20260917-unit2"></script>&#' "$f"
+            fi
+          done
           node scripts/check-module07-authored.js
       - name: Commit final evidence repairs and remove helpers
         run: |
