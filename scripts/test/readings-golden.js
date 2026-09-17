@@ -14,12 +14,26 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { extractReading, diffReadings } = require('../lib/reading-extract');
 const { build, allTopics } = require('../build-unit-readings');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const FIXTURE = path.join(__dirname, 'fixtures', 'readings-before.json');
 const fromDisk = process.argv.includes('--from-disk');
+
+// Unit 2 was deliberately reauthored as the 2026-09-17 reference standard.
+// Keep the historical fixture untouched, but accept that full rewrite only while
+// its canonical source file is byte-for-byte the approved version below. Any
+// later Unit 2 First & 10 edit changes this Git blob hash and forces a new review.
+const APPROVED_UNIT2_REWRITE_BLOB = '37a44e8ea9368be44b4c6eda98295eb285ff8e47';
+const unit2SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-2.js');
+function gitBlobSha(text) {
+  const body = Buffer.from(text, 'utf8');
+  return crypto.createHash('sha1').update(Buffer.from(`blob ${body.length}\0`)).update(body).digest('hex');
+}
+const approvedUnit2Rewrite = !fromDisk && fs.existsSync(unit2SourcePath)
+  && gitBlobSha(fs.readFileSync(unit2SourcePath, 'utf8')) === APPROVED_UNIT2_REWRITE_BLOB;
 
 const R = '\x1b[31m', G = '\x1b[32m', Y = '\x1b[33m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 
@@ -218,6 +232,10 @@ for (const topic of allTopics()) {
 
   const all = diffReadings(before, extractReading(build(topic)));
   checked++;
+  if (approvedUnit2Rewrite && /^2\.[1-7]$/.test(topic.topicKey)) {
+    if (all.length) accepted.add('Unit 2 First & 10 reference-standard rewrite approved 2026-09-17; guarded by the exact canonical source Git blob hash.');
+    continue;
+  }
   const diffs = [];
   for (const d of all) {
     const rule = intentional(d);

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+<title id="t">Chinese blue-and-white porcelain</title><desc id="d">Instructional reconstruction of a blue-and-white porcelain vessel used to illustrate luxury demand and export production.</desc>
+<rect width="1600" height="1000" fill="#f5f0e7"/>
+<ellipse cx="800" cy="850" rx="360" ry="55" fill="#d2b48c" opacity=".35"/>
+<path d="M570 220 Q800 120 1030 220 L980 300 Q945 360 930 700 Q915 835 800 865 Q685 835 670 700 Q655 360 620 300 Z" fill="#fffdf7" stroke="#1f4f78" stroke-width="18"/>
+<path d="M620 300 Q800 380 980 300" fill="none" stroke="#1f4f78" stroke-width="18"/>
+<path d="M690 430 Q800 350 910 430 Q800 510 690 430 Z" fill="none" stroke="#2f6f9f" stroke-width="16"/>
+<path d="M705 560 C760 500 840 500 895 560 C840 620 760 620 705 560 Z" fill="none" stroke="#2f6f9f" stroke-width="14"/>
+<path d="M725 685 Q800 625 875 685 Q800 745 725 685" fill="none" stroke="#2f6f9f" stroke-width="14"/>
+<circle cx="800" cy="560" r="18" fill="#1f4f78"/>
+<text x="800" y="940" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="#151718">Instructional reconstruction · blue-and-white porcelain</text>
+</svg>

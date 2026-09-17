@@ -1,0 +1,45 @@
+name: Unit 2 Instructional Coherence
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/lesson-2-*.js'
+      - 'scripts/lib/reading-content/unit-2.js'
+      - 'unit-2/first-and-10-topic-2-*.html'
+      - 'unit-2/deep-reading-topic-2-*.html'
+      - 'beintheroom/unit-2/**'
+      - 'scripts/lib/unit2-coherence-contract.js'
+      - 'scripts/test/unit2-instructional-coherence.test.js'
+      - '.github/workflows/unit2-coherence.yml'
+  push:
+    branches:
+      - main
+      - fix-topic-2-1-content-structure
+    paths:
+      - 'assets/data/lesson-2-*.js'
+      - 'scripts/lib/reading-content/unit-2.js'
+      - 'unit-2/first-and-10-topic-2-*.html'
+      - 'unit-2/deep-reading-topic-2-*.html'
+      - 'beintheroom/unit-2/**'
+      - 'scripts/lib/unit2-coherence-contract.js'
+      - 'scripts/test/unit2-instructional-coherence.test.js'
+      - '.github/workflows/unit2-coherence.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  coherence:
+    name: Unit 2 ecosystem traceability
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Verify cross-surface instructional coherence
+        run: node scripts/test/unit2-instructional-coherence.test.js

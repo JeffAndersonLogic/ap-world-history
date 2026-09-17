@@ -1,65 +1,59 @@
 /*
  * Teacher-only orchestration for Topic 2.1.
- *
- * Design rule: teacher view is dense; projected view is sparse.
- * Student-facing historical detail still lives in the normal 2.1 lesson,
- * First & 10, checkpoints, and evidence modules.
+ * Rebuilt around a visible AP economic causation spine:
+ * demand + trade systems -> lower risk/cost -> expanded exchange -> cities and production grow.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
     topic: '2.1',
-    date: 'Wednesday, September 16, 2026',
+    date: 'Thursday, September 17, 2026',
     cohort: 'Green',
     minutes: 90,
-    title: 'The Silk Roads: Exchange Across Afro-Eurasia',
-    subtitle: 'Connection is a system, not a road.',
-    essentialQuestion: 'What made long-distance Silk Road exchange possible, and what happened because Afro-Eurasia became more connected?',
+    title: 'The Silk Roads',
+    subtitle: 'Demand + trade systems made overland exchange expand after 1200.',
+    essentialQuestion: 'Why did Silk Roads trade grow after 1200, and what changed because it did?',
     apFocus: 'Causation + Economic Systems',
-    endTarget: 'Students can explain causes and effects of Silk Road exchange with specific evidence and a clear causal mechanism.'
+    endTarget: 'Students can explain how demand, caravanserai, credit, banking houses, paper money, and trading cities fit into one cause-and-effect chain.'
   },
 
   priorities: {
     must: [
-      'Silk Roads = a network, not one road.',
-      'Students explain WHY trade expanded, not merely name caravanserais, nomads, or states.',
-      'Students distinguish causes from effects.',
-      'Students use specific evidence in both checkpoints.',
-      'Projected text stays sparse; the explanation comes from the teacher.'
+      'Teach this as one economic argument, not a tour of interesting Silk Road facts.',
+      'Anchor every slide to the causal chain: demand + systems lower risk/cost, which expands trade.',
+      'Use caravanserai, bills of exchange, banking houses, and paper money as mechanisms, not vocabulary.',
+      'Use Kashgar and Samarkand as evidence that trade networks create powerful urban nodes.',
+      'Use porcelain, textiles, iron, and steel as evidence that demand changed production.'
     ],
     should: [
-      'Use the relay-system story to explain how goods crossed enormous distances.',
-      'Connect caravanserais to the problems they solved: distance, risk, supplies, information, and security.',
-      'Make Central Asian pastoral peoples part of the system rather than background scenery.',
-      'End on the tension: connectivity creates opportunity and vulnerability.'
+      'Return to the causal chain every few slides so students never lose the big picture.',
+      'Keep Cinzel for big slide headlines only; explanatory text stays clean and readable.',
+      'Preview Mongols only as tomorrow’s bridge, not as today’s main lesson.'
     ],
     could: [
-      'Use the full Heimler 2.1 review only if the class needs a later retrieval/review pass.',
-      'Use Evidence Lab after class or on a reinforcement day.',
-      'Use BeInTheRoom as an extension rather than forcing it into this block.'
+      'Use the video only as review after the causal framework is clear.',
+      'Save cultural diffusion and plague for later Unit 2 topics unless students ask.'
     ]
   },
 
   flow: [
-    { id: 'quiz', label: 'Unit 1 Quiz', range: '0–15', minutes: 15, teacher: 'Protect the quiz window.', students: 'Complete Unit 1 quiz.', slide: 1 },
-    { id: 'frame', label: 'Frame the Problem', range: '15–21', minutes: 6, teacher: 'Make students feel the difficulty of overland trade before naming the solutions.', students: 'Identify the obstacles to long-distance exchange.', slide: 2 },
-    { id: 'map', label: 'Map + Network', range: '21–28', minutes: 7, teacher: 'Trace the system, not every route.', students: 'See Central Asia as the geographic middle.', slide: 4 },
-    { id: 'clip1', label: 'Clip: Traders', range: '28–30', minutes: 2, teacher: 'Use the clip to make relays and intermediaries concrete.', students: 'Watch for who actually moves goods.', slide: 5 },
-    { id: 'first10', label: 'First & 10', range: '30–40', minutes: 10, teacher: 'Circulate; listen for cause/effect confusion.', students: 'Read and respond.', slide: 6 },
-    { id: 'causes', label: 'Teach Causes', range: '40–58', minutes: 18, teacher: 'Explain relay systems, infrastructure, intermediaries, state protection, and demand.', students: 'Track the problem each cause solved.', slide: 7 },
-    { id: 'check1', label: 'Checkpoint 1', range: '58–64', minutes: 6, teacher: 'Look for mechanism, not lists.', students: 'Explain two causes.', slide: 12 },
-    { id: 'exchange', label: 'What Moved', range: '64–75', minutes: 11, teacher: 'Move from causes to exchange: goods, technology, beliefs, information.', students: 'Sort examples by what moved.', slide: 13 },
-    { id: 'clip2', label: 'Clip: Buddhism', range: '75–77', minutes: 2, teacher: 'Use the clip as evidence that trade networks move ideas too.', students: 'Watch for how belief travels through merchant networks.', slide: 14 },
-    { id: 'effects', label: 'Effects + Plague', range: '77–84', minutes: 7, teacher: 'Land cities, wealth, diffusion, and disease.', students: 'Explain how connectivity changes societies.', slide: 15 },
-    { id: 'clip3', label: 'Clip: Disease', range: '84–86', minutes: 2, teacher: 'Use the final clip to sharpen opportunity vs vulnerability.', students: 'Watch for the network effect of disease.', slide: 17 },
-    { id: 'check2', label: 'Checkpoint 2', range: '86–89', minutes: 3, teacher: 'Use as an exit-style response if time is tight.', students: 'Explain two effects.', slide: 18 },
-    { id: 'close', label: 'Close', range: '89–90', minutes: 1, teacher: 'Land one sentence and bridge to the Mongols.', students: 'Leave with the Unit 2 thesis.', slide: 19 }
+    { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'Read the brief and lock onto the causal chain.', students: 'Not projected.', slide: 1 },
+    { id: 'launch', label: 'Launch the Argument', range: '0-6', minutes: 6, teacher: 'Tell students the lesson in one sentence before details.', students: 'Write the one-sentence argument.', slide: 2 },
+    { id: 'targets', label: 'Targets + Key Concepts', range: '6-10', minutes: 4, teacher: 'Show what AP expects and what evidence proves it.', students: 'Identify the three big rocks.', slide: 3 },
+    { id: 'problem', label: 'The Trade Problem', range: '10-16', minutes: 6, teacher: 'Make distance feel like a real economic problem.', students: 'Name risks merchants faced.', slide: 4 },
+    { id: 'spine', label: 'Causal Spine', range: '16-21', minutes: 5, teacher: 'Build the causal chain visually.', students: 'Track cause -> mechanism -> effect.', slide: 5 },
+    { id: 'demand', label: 'Big Rock 1: Demand', range: '21-31', minutes: 10, teacher: 'Explain why luxury goods were worth moving.', students: 'Connect demand to production.', slide: 6 },
+    { id: 'systems', label: 'Big Rock 2: Trade Systems', range: '31-48', minutes: 17, teacher: 'Explain how each system lowers cost or risk.', students: 'Complete mechanism sentences.', slide: 7 },
+    { id: 'cities', label: 'Big Rock 3: Cities', range: '48-60', minutes: 12, teacher: 'Make Kashgar and Samarkand meaningful evidence.', students: 'Explain why cities grew.', slide: 10 },
+    { id: 'map', label: 'Visual Map Check', range: '60-66', minutes: 6, teacher: 'Use geography to reinforce nodes and routes.', students: 'Find why the middle matters.', slide: 11 },
+    { id: 'checkpoint', label: 'Checkpoint Writing', range: '66-78', minutes: 12, teacher: 'Coach mechanism, not longer answers.', students: 'Write the AP explanation.', slide: 12 },
+    { id: 'debrief', label: 'Debrief + Common Trap', range: '78-86', minutes: 8, teacher: 'Separate facts from reasoning.', students: 'Fix weak explanations.', slide: 13 },
+    { id: 'close', label: 'Bridge to 2.2', range: '86-90', minutes: 4, teacher: 'End with one sentence and preview Mongols.', students: 'Say the lesson in one sentence.', slide: 14 }
   ],
 
   quickLaunch: [
     { label: 'Student Lesson 2.1', url: '../unit-2/lesson-2-1-silk-roads.html' },
     { label: 'First & 10', url: '../unit-2/first-and-10-topic-2-1-silk-roads-capture.html?v=response-id-fix-v1' },
     { label: 'Full Heimler Review', url: 'https://youtu.be/daiQ6aChKfk' },
-    { label: 'BeInTheRoom', url: '../beintheroom/unit-2/silk-road-merchant.html' },
     { label: 'Caravanserai Reconstruction', url: 'https://www.canva.com/d/gBexzatsmhMDKh4' }
   ],
 
@@ -71,237 +65,267 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'open', kind: 'hero', eyebrow: 'AP World History · Topic 2.1',
-      title: 'The Silk Roads', subtitle: 'Connection is a system, not a road.',
-      visual: { type: 'map' },
-      notes: {
-        minutes: 1,
-        land: ['Unit 1 focused on regional states. Unit 2 changes the scale to connections among those regions.', 'The Silk Roads were a network of routes, markets, stopping points, states, and intermediaries.'],
-        ask: 'What has to exist before valuable goods can cross thousands of miles?',
-        listenFor: 'Safety, demand, supplies, routes, guides, money, stable political conditions.'
-      }
-    },
-    {
-      phase: 'quiz', kind: 'prompt', eyebrow: 'Unit 1 Quiz',
-      title: 'Finish Unit 1.', subtitle: 'Then we connect it.',
-      notes: { minutes: 15, land: ['Protect the quiz window.'], avoid: 'Do not begin 2.1 content while students are still testing.' }
-    },
-    {
-      phase: 'frame', kind: 'question', eyebrow: 'The Problem',
-      title: '4,000 miles.', subtitle: 'No trucks. No railroad. No single government.',
-      notes: {
-        minutes: 3,
-        land: ['Make the logistical problem feel real before giving students vocabulary.', 'Long-distance exchange requires systems that lower risk and make profit possible.'],
-        ask: 'What would stop you from sending a $100,000 shipment across this world?',
-        listenFor: 'Theft, water, food, animals, weather, language, information, trust, border crossings.'
-      }
-    },
-    {
-      phase: 'frame', kind: 'process', eyebrow: 'Today’s Logic',
-      title: 'Risk ↓  →  Reach ↑  →  Exchange ↑',
-      steps: [
-        { label: 'CAUSE', text: 'Make trade safer or easier' },
-        { label: 'NETWORK', text: 'More movement across distance' },
-        { label: 'EFFECT', text: 'Societies change' }
-      ],
-      notes: {
-        minutes: 3,
-        land: ['This is the causal spine for the lesson.', 'Students do not need to copy it word for word; they need to understand the logic.'],
-        ask: 'Which part of this chain is the mechanism?',
-        listenFor: 'The way a cause reduces risk / makes exchange practical.'
-      }
-    },
-    {
-      phase: 'map', kind: 'image', eyebrow: 'A Network, Not a Road',
-      title: 'East Asia ↔ Central Asia ↔ Southwest Asia ↔ Mediterranean',
-      visual: { type: 'map' },
-      footer: 'Look at the middle.',
-      notes: {
-        minutes: 7,
-        land: ['Do not trace every line. Trace the big east-west system and stop in Central Asia.', 'Oases, steppe corridors, and trading cities mattered because geography forced movement through usable routes.', 'Samarkand and Kashgar are nodes, not random vocabulary.'],
-        ask: 'Why does the middle of the map matter?',
-        listenFor: 'Intermediaries, local knowledge, oasis cities, route control, exchange points.'
-      }
-    },
-    {
-      phase: 'clip1', kind: 'video', eyebrow: 'Watch · 1:05',
-      title: 'Who actually moves the goods?',
-      video: { youtubeId: 'vfe-eNq-Qyg', start: 211, end: 276, label: 'Crash Course: Nomads, Caravans, and Traders' },
-      footer: 'Watch for relays, caravans, and intermediaries.',
+      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      title: 'Do not teach the road. Teach the system.',
+      subtitle: 'Demand + better trade systems lowered risk and cost, so exchange expanded and cities and production grew.',
       notes: {
         minutes: 2,
-        land: ['This Crash Course section gives a fast visual model of nomads, caravans, and traders.', 'Frame it as background continuity: the network predates 1200; our AP period asks why exchange intensifies and what changes from c. 1200–1450.'],
-        ask: 'Did one merchant usually carry a product from China all the way to Europe?',
-        listenFor: 'No. Goods moved in stages through multiple merchants and intermediaries.',
-        avoid: 'Do not let the clip substitute for the 1200–1450 explanation.'
+        land: [
+          'The story today is not: here are things on the Silk Road.',
+          'The story is: after 1200, demand for luxury goods and improved commercial systems made long-distance exchange easier and more profitable.',
+          'Everything today must serve that causal chain: demand, systems, cities, production.'
+        ],
+        ask: 'What is the single economic mechanism I am proving today?',
+        listenFor: 'Systems reduce risk/cost, which expands trade.',
+        avoid: 'Do not let Buddhism, plague, Marco Polo, or the Mongols become today’s main lesson.'
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'First & 10 · 10 Minutes',
-      title: 'Read for two things.', subtitle: 'What made exchange possible? What changed because of it?',
-      action: { label: 'Open First & 10', url: '../unit-2/first-and-10-topic-2-1-silk-roads-capture.html?v=response-id-fix-v1' },
+      phase: 'launch', kind: 'hero', eyebrow: 'AP World History · Topic 2.1',
+      title: 'The Silk Roads', subtitle: 'Why did trade grow after 1200?',
+      visual: { type: 'map' },
       notes: {
-        minutes: 10,
-        land: ['Students already have detailed text in BeHistorical. The projection does not need to reproduce it.', 'Circulate and look specifically for cause/effect confusion.'],
-        ask: 'Which sentence in your response actually explains WHY?',
-        listenFor: 'Because, reduced, allowed, made possible, therefore.'
+        minutes: 3,
+        land: [
+          'Unit 1 studied regions. Unit 2 studies connections among regions.',
+          'Today is an economic systems lesson. Students need to explain why exchange expanded after 1200.'
+        ],
+        ask: 'What would have to be true for goods to move thousands of miles overland?',
+        listenFor: 'Demand, safety, money, rest stops, routes, merchants, cities.'
       }
     },
     {
-      phase: 'causes', kind: 'question', eyebrow: 'Cause 1',
-      title: 'Merchants work in relays.', subtitle: 'The product travels farther than the person.',
+      phase: 'launch', kind: 'process', eyebrow: 'The Lesson in One Chain',
+      title: 'Demand + Systems -> Trade Growth',
+      steps: [
+        { label: 'DEMAND', text: 'Luxury goods are worth moving' },
+        { label: 'SYSTEMS', text: 'Risk and cost go down' },
+        { label: 'EXCHANGE', text: 'Volume and range increase' },
+        { label: 'EFFECTS', text: 'Cities and production grow' }
+      ],
+      footer: 'This is the whole lesson. Every example fits here.',
+      notes: {
+        minutes: 3,
+        land: [
+          'Show students the full structure before any examples.',
+          'Tell them they are not collecting facts. They are proving this chain.'
+        ],
+        ask: 'Which box explains WHY trade expands?',
+        listenFor: 'Systems lower risk/cost; demand gives incentive.'
+      }
+    },
+    {
+      phase: 'targets', kind: 'grid', eyebrow: 'What Students Must Know',
+      title: 'Three Big Rocks',
+      cards: [
+        { title: '1 · DEMAND', text: 'Luxury goods drove long-distance trade.' },
+        { title: '2 · SYSTEMS', text: 'Caravanserai, credit, banking, paper money lowered risk.' },
+        { title: '3 · EFFECTS', text: 'Trade cities and export production grew.' },
+        { title: 'AP SKILL', text: 'Explain the mechanism, not just the term.' }
+      ],
       notes: {
         minutes: 4,
-        land: ['Most merchants did not travel the entire network.', 'Goods moved through successive markets and hands. Each merchant specialized in a smaller geographic zone.', 'Relay exchange lowers the knowledge, language, and travel burden placed on any one trader.'],
-        ask: 'Why is a relay system more practical than one end-to-end merchant?',
-        listenFor: 'Local knowledge, specialization, lower risk, regional contacts, languages, shorter journeys.'
+        land: [
+          'These match the three required AP key concepts for 2.1.',
+          'The evidence set is concise: caravanserai, bills of exchange, banking houses, paper money, Kashgar, Samarkand, porcelain, textiles, iron, steel.'
+        ],
+        ask: 'Which of these is a cause? Which is an effect?',
+        listenFor: 'Demand and systems are causes; cities and production are effects.'
       }
     },
     {
-      phase: 'causes', kind: 'embed', eyebrow: 'Cause 2',
-      title: 'Distance needs infrastructure.', subtitle: 'Caravanserais turn one impossible journey into manageable stages.',
+      phase: 'problem', kind: 'question', eyebrow: 'The Economic Problem',
+      title: 'A luxury good is valuable only if it survives the journey.',
+      subtitle: 'Distance creates risk. Risk creates cost. Cost limits trade.',
+      notes: {
+        minutes: 6,
+        land: [
+          'Start with the merchant problem: water, animals, theft, weather, language, storage, trust, currency, and information.',
+          'The Silk Roads grew when systems developed that made this problem more manageable.'
+        ],
+        ask: 'What could make a merchant decide the journey is worth the risk?',
+        listenFor: 'High profit, safer routes, rest stops, credit, trusted markets, cities.'
+      }
+    },
+    {
+      phase: 'spine', kind: 'process', eyebrow: 'Causation Spine',
+      title: 'The AP Explanation Formula',
+      steps: [
+        { label: 'NAME', text: 'Caravanserai' },
+        { label: 'FUNCTION', text: 'Rest, storage, water, safety' },
+        { label: 'MECHANISM', text: 'Lowered risk and cost' },
+        { label: 'RESULT', text: 'More long-distance trade' }
+      ],
+      footer: 'The third box is the reasoning students usually miss.',
+      notes: {
+        minutes: 5,
+        land: [
+          'Model this sentence: Caravanserai helped Silk Roads trade grow because they gave merchants predictable places to rest, resupply, protect goods, and exchange information, lowering the risk of long-distance travel.',
+          'This formula works for credit, banking houses, and paper money too.'
+        ],
+        ask: 'What happens if an answer only names caravanserai?',
+        listenFor: 'It lacks the mechanism.'
+      }
+    },
+    {
+      phase: 'demand', kind: 'image', eyebrow: 'Big Rock 1 · Demand',
+      title: 'Luxury goods made distance worth it.',
+      visual: {
+        type: 'image',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Blue%20and%20white%20porcelain%20dish%20with%20three%20friends%20of%20winter%2C%20Yuan%20dynasty.JPG',
+        alt: 'Blue and white porcelain dish from the Yuan dynasty'
+      },
+      footer: 'Porcelain · textiles · silk · spices · iron · steel',
+      notes: {
+        minutes: 10,
+        land: [
+          'Luxury goods are high-value and portable, which makes long-distance trade worthwhile.',
+          'AP evidence: demand increased in Afro-Eurasia; Chinese, Persian, and Indian artisans and merchants expanded production of textiles and porcelains for export; manufacture of iron and steel expanded in China.',
+          'Do not just say goods moved. Say demand caused production and exchange to expand.'
+        ],
+        ask: 'Why would porcelain or silk be more likely to move long distance than grain?',
+        listenFor: 'High value, portable, elite demand, profit margin.'
+      }
+    },
+    {
+      phase: 'systems', kind: 'embed', eyebrow: 'Big Rock 2 · Transportation Infrastructure',
+      title: 'Caravanserai made distance manageable.',
       embed: {
         url: 'https://www.canva.com/design/DAHU8YGxw5k/view?embed',
         fallback: 'https://www.canva.com/d/gBexzatsmhMDKh4',
-        label: 'Photorealistic caravanserai reconstruction, c. 1250 CE'
+        label: 'Caravanserai reconstruction'
       },
-      footer: 'Historical reconstruction · Canva AI generated',
+      footer: 'Rest · water · animals · storage · safety · information',
       notes: {
-        minutes: 4,
-        land: ['Use the reconstruction as the visual anchor: food, water, shelter, security, animal care, protected storage, and information exchange are all visible parts of the system.', 'Caravanserais provided rest, water, food, shelter, security, markets, and information.', 'The important idea is not “roadside hotel.” The historical significance is that infrastructure lowers transaction and travel costs.', 'States and local rulers had an incentive to support trade infrastructure because commerce could be taxed.'],
-        ask: 'What problem does a caravanserai solve?',
-        listenFor: 'Resupply, security, rest, animals, information, predictable stopping points.',
-        avoid: 'Treat this as an interpretive reconstruction, not as a surviving primary-source image.'
+        minutes: 7,
+        land: [
+          'Use the image as a checklist. Students should see the function: rest, resupply, animal care, protected storage, security, markets, and information.',
+          'Caravanserai did not cause trade because they were buildings. They mattered because they reduced the practical risk and cost of moving goods.'
+        ],
+        ask: 'Which part of this scene lowers risk for merchants?',
+        listenFor: 'Water, walls, guards, rooms, animals, other merchants, market activity.'
       }
     },
     {
-      phase: 'causes', kind: 'question', eyebrow: 'Cause 3',
-      title: 'Who owns the middle?', subtitle: 'Pastoral peoples know the terrain settled merchants do not.',
-      notes: {
-        minutes: 4,
-        land: ['Central Asian pastoral nomads were guides, guards, traders, translators, intermediaries, and sometimes threats.', 'Their mobility and geographic knowledge made them central to the network.', 'This corrects the common student assumption that nomads were peripheral to civilization and trade.'],
-        ask: 'Why can mobility become an economic advantage?',
-        listenFor: 'Knowledge of routes, seasonal conditions, water, animals, protection, contact between regions.'
-      }
-    },
-    {
-      phase: 'causes', kind: 'question', eyebrow: 'Cause 4',
-      title: 'Safe trade is profitable.', subtitle: 'States protect routes because commerce produces wealth.',
-      notes: {
-        minutes: 3,
-        land: ['Political stability and state protection change the merchant calculation of risk versus reward.', 'Commercial practices such as credit, paper money, and money economies make transactions easier.', 'Demand for high-value goods makes the risk of long-distance transport worthwhile.'],
-        ask: 'Why would a ruler spend resources protecting merchants?',
-        listenFor: 'Taxes, tolls, urban growth, political wealth, access to desired goods.'
-      }
-    },
-    {
-      phase: 'causes', kind: 'process', eyebrow: 'The AP Move',
-      title: 'Cause ≠ vocabulary.',
-      steps: [
-        { label: 'NAME', text: 'Caravanserais' },
-        { label: 'EXPLAIN', text: 'Reduced risk + resupply problems' },
-        { label: 'CONNECT', text: 'Long-distance trade became more practical' }
+      phase: 'systems', kind: 'grid', eyebrow: 'Big Rock 2 · Commercial Practices',
+      title: 'Merchants also needed financial systems.',
+      cards: [
+        { title: 'BILLS OF EXCHANGE', text: 'A safer written promise of payment.' },
+        { title: 'BANKING HOUSES', text: 'Institutions that handled money and credit.' },
+        { title: 'PAPER MONEY', text: 'Portable currency for easier transactions.' },
+        { title: 'MONEY ECONOMIES', text: 'More exchange through accepted currency.' }
       ],
-      footer: 'The middle box earns the reasoning.',
       notes: {
-        minutes: 3,
-        land: ['Students tend to name factors and stop. The mechanism is the reasoning.', 'Model one sentence aloud: Because caravanserais reduced risk and resupply problems, merchants could travel farther and more predictably.'],
-        ask: 'Which box is missing when an answer is only a list?',
-        listenFor: 'Explain / mechanism.'
+        minutes: 7,
+        land: [
+          'The point is not financial vocabulary. The point is that merchants needed ways to trade without carrying all their wealth across dangerous routes.',
+          'Credit and banking reduced the danger of robbery and made long-distance transactions more practical.'
+        ],
+        ask: 'Why is carrying paper or credit safer than carrying metal money?',
+        listenFor: 'Less theft risk, easier transport, easier payment across distance.'
       }
     },
     {
-      phase: 'check1', kind: 'action', eyebrow: 'Checkpoint 1',
-      title: 'Why did Silk Road exchange grow?', subtitle: 'Two causes. Specific evidence. Explain how each one helped.',
-      action: { label: 'Open Checkpoint 1', url: '../unit-2/lesson-2-1-silk-roads.html#modules' },
+      phase: 'systems', kind: 'process', eyebrow: 'Put the Cause Together',
+      title: 'Demand alone is not enough.',
+      steps: [
+        { label: 'WANT', text: 'People want luxury goods' },
+        { label: 'PROBLEM', text: 'Distance is risky and expensive' },
+        { label: 'SOLUTION', text: 'Infrastructure + credit' },
+        { label: 'OUTCOME', text: 'Trade expands' }
+      ],
+      notes: {
+        minutes: 3,
+        land: [
+          'This is the moment to restate the big picture before moving into effects.',
+          'Students should understand that growth required both demand and practical systems.'
+        ],
+        ask: 'Why would demand without systems not be enough?',
+        listenFor: 'People may want goods, but merchants still need safe and profitable ways to move them.'
+      }
+    },
+    {
+      phase: 'cities', kind: 'image', eyebrow: 'Big Rock 3 · Trading Cities',
+      title: 'Trade networks create powerful nodes.',
+      visual: {
+        type: 'image',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Registan%20square%20Samarkand.jpg',
+        alt: 'Registan square in Samarkand'
+      },
+      footer: 'Kashgar and Samarkand are evidence, not trivia.',
+      notes: {
+        minutes: 8,
+        land: [
+          'Improved commercial practices expanded trade volume and geographic range. That promoted the growth of trading cities.',
+          'Kashgar and Samarkand grew because they sat at strategic crossroads where merchants exchanged goods, money, animals, languages, and information.',
+          'A trading city is not just a market. It becomes a service center, cultural meeting place, and source of tax revenue.'
+        ],
+        ask: 'Why does a city at a route junction become wealthier than a city away from the route?',
+        listenFor: 'Traffic, services, taxes, merchants, storage, exchange, information.'
+      }
+    },
+    {
+      phase: 'map', kind: 'image', eyebrow: 'Map Check',
+      title: 'Follow the nodes, not just the line.',
+      visual: { type: 'map' },
+      footer: 'Central Asia matters because routes, cities, and intermediaries converged there.',
       notes: {
         minutes: 6,
-        land: ['This is the first proof point.', 'Confer only on missing mechanism or weak evidence.'],
-        ask: 'How did that factor actually increase exchange?',
-        listenFor: 'Cause + evidence + mechanism.'
+        land: [
+          'Do not trace every route. Stop at Central Asia and ask why cities there matter.',
+          'Use the map to reinforce geographic range, trading-city growth, and the need for infrastructure.'
+        ],
+        ask: 'Where would you expect cities, inns, and markets to grow? Why?',
+        listenFor: 'Junctions, oases, mountain passes, desert edges, places where merchants must stop.'
       }
     },
     {
-      phase: 'exchange', kind: 'grid', eyebrow: 'What Moves?',
-      title: 'Goods. Technology. Beliefs. Disease.',
+      phase: 'checkpoint', kind: 'action', eyebrow: 'Checkpoint Writing',
+      title: 'Explain why Silk Roads trade grew after 1200.',
+      subtitle: 'Use two specific pieces of evidence and explain the mechanism for each.',
+      action: { label: 'Open Student Lesson', url: '../unit-2/lesson-2-1-silk-roads.html#modules' },
+      notes: {
+        minutes: 12,
+        land: [
+          'Require the mechanism. A list of terms is not enough.',
+          'Strong answer pattern: Evidence -> function -> reduced risk/cost -> expanded trade.'
+        ],
+        ask: 'Where is your “because” sentence?',
+        listenFor: 'Because caravanserai/credit/banking/paper money made trade safer, easier, or more profitable.'
+      }
+    },
+    {
+      phase: 'debrief', kind: 'grid', eyebrow: 'Common Trap',
+      title: 'Fact piles are not explanations.',
       cards: [
-        { title: 'GOODS', text: 'silk · porcelain · spices · horses' },
-        { title: 'TECH', text: 'paper · printing · gunpowder · compass' },
-        { title: 'BELIEF', text: 'Buddhism · Islam · Christianity' },
-        { title: 'DISEASE', text: 'plague' }
+        { title: 'WEAK', text: 'Caravanserai, bills of exchange, and Samarkand helped trade.' },
+        { title: 'BETTER', text: 'Caravanserai lowered travel risk by giving merchants rest and resupply points.' },
+        { title: 'WEAK', text: 'Luxury goods moved on the Silk Roads.' },
+        { title: 'BETTER', text: 'Demand for luxury goods encouraged expanded production and long-distance trade.' }
       ],
       notes: {
-        minutes: 5,
-        land: ['Keep this visual sparse. Give the examples verbally.', 'The larger concept is diffusion: networks move non-material things as effectively as goods.', 'Paper, printing, gunpowder, and compass technologies spread outward from East Asia across Afro-Eurasia.'],
-        ask: 'Which category is easiest to overlook when students think “trade”?',
-        listenFor: 'Beliefs / technology / disease.'
+        minutes: 8,
+        land: [
+          'Have students revise one sentence from weak to better.',
+          'The correction is not more detail. It is clearer reasoning.'
+        ],
+        ask: 'Which sentence proves cause and effect?',
+        listenFor: 'The sentence with lowered, encouraged, expanded, reduced, increased, promoted.'
       }
     },
     {
-      phase: 'clip2', kind: 'video', eyebrow: 'Watch · ~1 Minute',
-      title: 'Trade routes move beliefs.',
-      video: { youtubeId: 'vfe-eNq-Qyg', start: 400, end: 455, label: 'Crash Course: The Silk Road and Buddhism' },
-      footer: 'Listen for the relationship between merchants and Buddhism.',
-      notes: {
-        minutes: 2,
-        land: ['Use this as a visual example of cultural diffusion through merchant networks.', 'Then return immediately to the AP period: the pattern continues into c. 1200–1450 alongside Islam and other belief systems.'],
-        ask: 'Why are merchants effective carriers of religion?',
-        listenFor: 'Mobility, repeated contact, diaspora communities, shared institutions and networks.'
-      }
-    },
-    {
-      phase: 'effects', kind: 'question', eyebrow: 'Effects',
-      title: 'Connection changes places.', subtitle: 'Cities grow. Wealth concentrates. Ideas spread.',
-      notes: {
-        minutes: 4,
-        land: ['Trading cities such as Samarkand and Kashgar grew wealthy and cosmopolitan because they sat at key network nodes.', 'States and cities accumulated wealth through taxes, tolls, services, and commerce.', 'Cultural and technological diffusion changed societies far from the original source.'],
-        ask: 'Why does a city at a trade node become more than a marketplace?',
-        listenFor: 'People, languages, religions, technology, information, wealth, services.'
-      }
-    },
-    {
-      phase: 'effects', kind: 'question', eyebrow: 'The Cost of Connection',
-      title: 'The network does not care what it carries.', subtitle: 'Silk can move. So can plague.',
-      notes: {
-        minutes: 3,
-        land: ['The same connectivity that creates prosperity also creates vulnerability.', 'The Black Death is not a random add-on. It is evidence of the power of the network.', 'Avoid reducing plague transmission to a single simplistic route; emphasize interconnected movement across Eurasian exchange networks.'],
-        ask: 'Why is disease an especially powerful example of a trade-network effect?',
-        listenFor: 'It spreads through the same movement of people, animals, goods, and connected cities.'
-      }
-    },
-    {
-      phase: 'clip3', kind: 'video', eyebrow: 'Watch · ~1 Minute',
-      title: 'Disease follows connection.',
-      video: { youtubeId: 'vfe-eNq-Qyg', start: 500, end: 562, label: 'Crash Course: The Silk Road and Disease' },
-      footer: 'One network. Opposite outcomes.',
-      notes: {
-        minutes: 2,
-        land: ['Use this as the final visual proof of the connectivity argument.', 'The lesson should end with tension, not “trade was good.”'],
-        ask: 'Does stronger connectivity make societies safer or more vulnerable?',
-        listenFor: 'Both — greater access and prosperity, but faster transmission of disruption and disease.'
-      }
-    },
-    {
-      phase: 'check2', kind: 'action', eyebrow: 'Checkpoint 2',
-      title: 'What changed because of exchange?', subtitle: 'Two effects. Specific evidence. Explain the change.',
-      action: { label: 'Open Checkpoint 2', url: '../unit-2/lesson-2-1-silk-roads.html#modules' },
-      notes: {
-        minutes: 3,
-        land: ['If short on time, treat this as the exit response and finish in Canvas as needed.'],
-        ask: 'What changed in a society because that moved?',
-        listenFor: 'Effect + evidence + explanation of change.'
-      }
-    },
-    {
-      phase: 'close', kind: 'hero', eyebrow: 'Topic 2.1 · The Argument',
-      title: 'Connectivity creates opportunity — and vulnerability.',
-      subtitle: 'Next: What happens when the Mongols control much of the network?',
+      phase: 'close', kind: 'hero', eyebrow: 'Topic 2.1 · Landing Sentence',
+      title: 'Demand plus systems expanded exchange.',
+      subtitle: 'After 1200, luxury demand and better commercial practices increased Silk Roads trade, helping cities and export production grow.',
       visual: { type: 'map' },
       notes: {
-        minutes: 1,
-        land: ['This is the sentence to carry into 2.2.', 'Mongol rule matters because political control can alter the risk environment of an existing exchange network.'],
-        ask: 'If one empire controlled much of this map, what might happen to trade?',
-        listenFor: 'More security, movement, exchange, diffusion — and potentially disease.'
+        minutes: 4,
+        land: [
+          'Students should leave with this exact argument.',
+          'Bridge to 2.2: tomorrow, the Mongols matter because political control can make these networks safer, faster, and more connected.'
+        ],
+        ask: 'What happens if one empire controls much of this network?',
+        listenFor: 'More safety, more trade, faster communication, wider exchange.'
       }
     }
   ]

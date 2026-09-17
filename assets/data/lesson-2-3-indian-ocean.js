@@ -24,50 +24,49 @@
 })();
 
 window.BEHISTORICAL_LESSON = {
-
   meta: {
-    course: "AP WORLD HISTORY",
-    unit: "Unit 2: Networks of Exchange",
-    topic: "Topic 2.3",
-    title: "Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection",
-    subtitle: "Monsoon winds, merchant communities, and Afro-Eurasian maritime exchange c. 1200–1450",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
+    course: 'AP WORLD HISTORY',
+    unit: 'Unit 2: Networks of Exchange',
+    topic: 'Topic 2.3',
+    title: 'Exchange in the Indian Ocean',
+    subtitle: 'Monsoons, maritime technology, trading states, diasporas, and Zheng He c. 1200–1450',
+    feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
 
   learningTargets: [
     {
-      target: "I can explain how technology and environmental knowledge, including dhow ships, the magnetic compass, and monsoon wind patterns, enabled Indian Ocean trade.",
-      kc: 'KC-3.1.I.C.ii; KC-3.1.II.A.i',
-      theme: "Technology"
+      target: 'I can explain how monsoon knowledge, the compass, astrolabe, and larger ship designs helped Indian Ocean trade expand after 1200.',
+      kc: 'KC-3.1.I.C.ii + KC-3.1.II.A.i',
+      theme: 'Economic Systems / Humans and the Environment'
     },
     {
-      target: "I can describe the goods and peoples exchanged across the Indian Ocean, including spices, textiles, gold, ivory, and merchants from Arabia, India, China, and the Swahili coast.",
-      kc: 'KC-3.1.III.B',
-      theme: "Economics"
+      target: 'I can explain how expanded Indian Ocean trade promoted powerful trading cities and states such as the Swahili Coast city-states, Gujarat, and the Sultanate of Malacca.',
+      kc: 'KC-3.1.I.A.ii + KC-3.1.I.A.iii',
+      theme: 'Economic Systems'
     },
     {
-      target: "I can explain the effects of Indian Ocean trade, including the growth of port cities, the formation of diasporic merchant communities, and the spread of Islam.",
-      kc: 'KC-3.1.I.A.ii; KC-3.1.I.A.iii',
-      theme: "Cultural Developments and Interactions"
+      target: 'I can explain how diasporic merchant communities and Zheng He\'s voyages demonstrate the cultural and technological effects of intensified Indian Ocean exchange.',
+      kc: 'KC-3.1.III.B + KC-3.2.II.A.iii',
+      theme: 'Cultural Developments and Interactions'
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can use specific evidence, monsoon winds, dhow construction, or the magnetic compass, to explain how environmental knowledge and technology made Indian Ocean maritime trade possible.",
-      kc: 'KC-3.1.I.C.ii; KC-3.1.II.A.i',
-      theme: "Technology"
+      criteria: 'I can explain how predictable monsoon winds and navigational or shipbuilding innovations lowered the risk and increased the range of maritime trade.',
+      kc: 'KC-3.1.I.C.ii + KC-3.1.II.A.i',
+      theme: 'Economic Systems / Humans and the Environment'
     },
     {
-      criteria: "I can identify the major goods (spices, textiles, gold, ivory) and merchant communities (Arab, Indian, Chinese, Swahili, Persian) that participated in Indian Ocean exchange and explain what made their participation significant.",
-      kc: 'KC-3.1.III.B',
-      theme: "Economics"
+      criteria: 'I can use the Swahili Coast, Gujarat, and Malacca to explain how trade fostered state growth and powerful commercial centers.',
+      kc: 'KC-3.1.I.A.ii + KC-3.1.I.A.iii',
+      theme: 'Economic Systems'
     },
     {
-      criteria: "I can connect Indian Ocean trade to specific effects: cosmopolitan port cities like Kilwa, Calicut, Quanzhou, and Malacca; diasporic merchant communities; and the spread of Islam along maritime routes.",
-      kc: 'KC-3.1.I.A.ii; KC-3.1.I.A.iii',
-      theme: "Cultural Developments and Interactions"
+      criteria: 'I can use Arab and Persian communities in East Africa, Chinese merchant communities in Southeast Asia, Malay communities in the Indian Ocean basin, and Zheng He as evidence of cross-cultural interaction.',
+      kc: 'KC-3.1.III.B + KC-3.2.II.A.iii',
+      theme: 'Cultural Developments and Interactions'
     }
   ],
 
@@ -111,79 +110,94 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Indian Ocean Trade: Technology, Exchange, and Cultural Connection",
-    intro: "Use these cards to explain how technology and environmental knowledge made Indian Ocean maritime trade possible, who participated and what they exchanged, and how this network transformed the port cities and cultures it connected from c. 1200 to c. 1450.",
+    title: 'Indian Ocean Trade: Wind, Technology, States, and Communities',
+    intro: 'The Indian Ocean network expanded because sailors combined environmental knowledge with better maritime technology. That growth strengthened trading cities and states, created diasporic merchant communities, and enabled major voyages such as those led by Zheng He.',
     videos: [
       {
         title: 'The INDIAN OCEAN TRADE Network, Explained [AP World History Review—Unit 2 Topic 3]',
         url: 'https://youtu.be/r-D9F2TiirY',
         youtubeId: 'r-D9F2TiirY',
-        prompt: 'Track the causes of expansion, diaspora communities, and cultural and technological transfers around the Indian Ocean.'
+        prompt: 'Track the CED chain: monsoon knowledge + maritime technology -> more trade -> stronger states and diaspora communities -> wider cultural transfer.'
       }
     ],
     segments: [
       {
-        title: "Technology and wind patterns",
+        title: 'Big Rock 1: Winds and Technology Made Trade Expand',
         bullets: [
-          "**Monsoon winds**, seasonal winds that reverse direction twice a year, functioned as a reliable calendar for Indian Ocean mariners: sail northeast in winter, sail southwest in summer, making predictable round-trip voyages across thousands of miles of open ocean.",
-          "**Dhow ships**, built with planks stitched together with coconut fiber rather than nailed, were flexible enough to survive open-ocean conditions; combined with **lateen (triangular) sails** that could catch wind from multiple angles, they were ideally suited to Indian Ocean conditions.",
-          "The **magnetic compass**, diffused from China, gave navigators the ability to maintain course far from land, while accumulated knowledge of stars, currents, and coastlines, passed down through generations of Arab, Indian, and Malay sailors, made the ocean a navigable highway rather than a barrier."
+          '**Monsoon winds** reverse direction seasonally, giving sailors a predictable calendar for round-trip voyages across the Indian Ocean.',
+          'The **magnetic compass** and **astrolabe** improved navigation, while **larger ship designs** allowed merchants to carry more cargo across longer distances.',
+          'Environmental knowledge and maritime technology worked together: they lowered risk, increased carrying capacity, and expanded the volume and geographic range of trade.'
         ],
         image: {
-          title: "Indian Ocean — CIA World Factbook map",
-          caption: "The Indian Ocean basin connected East Africa, Arabia, India, Southeast Asia, and China through seasonal monsoon wind patterns.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png"
+          title: 'Indian Ocean basin',
+          caption: 'Seasonal winds and maritime technologies turned the ocean into a predictable exchange system.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
         }
       },
       {
-        title: "Who traded and what they exchanged",
+        title: 'Big Rock 2: Trade Built Cities and States',
         bullets: [
-          "**Arab and Persian merchants** dominated the western Indian Ocean, trading between East Africa, Arabia, and India; **Indian merchants** from Gujarat and the Malabar Coast linked the western and eastern halves of the network; **Chinese merchants** and junks connected Southeast Asia and South China Sea ports to the broader system.",
-          "Goods flowed in multiple directions: **spices** (pepper, cloves, nutmeg) from Southeast Asia commanded enormous prices in Europe and the Middle East; **textiles** from India served as currency across the network; **gold and ivory** from East Africa moved northward and eastward in exchange for porcelain, cloth, and manufactured goods.",
-          "**Enslaved people** were also among the commodities exchanged, East African enslaved individuals were transported to the Arabian Peninsula and Persian Gulf, while enslaved people moved across many nodes of the Indian Ocean system, reflecting the brutal dimension of this commercial network."
+          'As trade volume increased, ports became powerful commercial nodes where rulers could tax exchange, provide services, and attract merchants and artisans.',
+          'The **city-states of the Swahili Coast**, **Gujarat**, and the **Sultanate of Malacca** are CED examples of political power strengthened by Indian Ocean commerce.',
+          'Goods such as spices, textiles, gold, ivory, and porcelain mattered because the flow of valuable products generated revenue and political leverage for states controlling strategic ports and routes.'
         ],
         image: {
-          title: "Silk Road routes across Afro-Eurasia",
-          caption: "Overland and maritime routes worked together: Indian Ocean ports connected to overland networks moving goods into the interior of Afro-Eurasia.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Silk_route.jpg"
+          title: 'Indian Ocean trade routes',
+          caption: 'Commercial nodes became political nodes because states could tax and protect exchange.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
         }
       },
       {
-        title: "Port cities and diasporic communities",
+        title: 'Big Rock 3: Diasporic Communities Changed Port Cultures',
         bullets: [
-          "Major port cities became cosmopolitan centers: **Kilwa** (East Africa) grew wealthy from gold and ivory transit; **Calicut** (India) served as a hub for spice trade; **Quanzhou** (China) was one of the world's largest ports; **Malacca** (Southeast Asia) became a strategic chokepoint where merchants from a dozen cultures mingled.",
-          "**Diasporic merchant communities**, Arab merchants in India, Indian merchants in Southeast Asia, Chinese merchants in the Malay world, settled permanently in port cities, creating neighborhoods governed by their own legal customs and maintaining long-distance commercial networks through family and religious ties.",
-          "Islam spread powerfully along Indian Ocean routes: **Muslim merchants** from Arabia and the Persian Gulf carried their faith to port cities across East Africa and Southeast Asia, where rulers often converted to gain commercial advantages and access to Islamic legal and scholarly networks, the Swahili coast and the sultanates of Southeast Asia reflect this maritime spread of Islam."
+          '**Arab and Persian communities in East Africa** established long-term merchant settlements that blended commercial and cultural practices with local societies.',
+          '**Chinese merchant communities in Southeast Asia** and **Malay communities in the Indian Ocean basin** likewise maintained connections to home regions while adapting to local environments.',
+          'Diasporic communities were more than temporary visitors: they created durable networks of trust, family, religion, language, and commercial knowledge across the ocean.'
         ],
         image: {
-          title: "Monsoon winds and maritime commerce",
-          caption: "BeHistorical topic artwork for this card. The Indian Ocean ran on a predictable wind cycle, which made long-distance trade plannable rather than lucky.",
-          url: "",
-          sourceUrl: ""
+          title: 'Port-city cultural interaction',
+          caption: 'Diasporic communities made Indian Ocean ports centers of sustained cross-cultural interaction.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+        }
+      },
+      {
+        title: 'Big Rock 4: Zheng He Shows the Scale of Maritime Contact',
+        bullets: [
+          'During the early 15th century, Ming admiral **Zheng He** led large Chinese fleets through Southeast Asia and across the Indian Ocean to South Asia, Arabia, and East Africa.',
+          'The voyages projected Ming prestige and participated in existing commercial and diplomatic networks rather than creating Indian Ocean trade from scratch.',
+          'Zheng He\'s expeditions demonstrate how intensified interregional contact encouraged **technological and cultural transfers** across a maritime world already tied together by trade.'
+        ],
+        image: {
+          title: 'Indian Ocean maritime reach',
+          caption: 'Zheng He\'s voyages operated within an already mature Indian Ocean exchange system.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
         }
       }
     ]
   },
 
   map: {
-    title: "Indian Ocean Trade Routes",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png",
-    caption: "The Indian Ocean basin connected East Africa, the Arabian Peninsula, South Asia, Southeast Asia, and China through maritime trade routes guided by monsoon winds.",
-    intro: "Use the map to trace the major routes of Indian Ocean exchange and identify the port cities that served as commercial and cultural hubs.",
-    prompt: "How did the geography of the Indian Ocean, its size, its seasonal winds, and the coastlines that bordered it, shape who participated in trade and which cities became wealthy?",
+    title: 'Indian Ocean Trade Routes',
+    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png',
+    caption: 'The Indian Ocean basin connected East Africa, Arabia, South Asia, Southeast Asia, and China through maritime routes shaped by seasonal monsoon winds.',
+    intro: 'Use the map to connect environment, technology, state growth, diaspora communities, and Zheng He to one maritime system.',
+    prompt: 'Why would predictable winds and strategic port locations create both commercial wealth and cultural diversity?',
     notes: [
-      "The Indian Ocean is not one body of water but a system of interconnected seas, the Arabian Sea, the Bay of Bengal, and the South China Sea, each with its own wind patterns and commercial character.",
-      "The monsoon system created a rhythmic calendar of departure and arrival that structured the entire commercial year for Indian Ocean merchants.",
-      "Port cities grew at natural geographic nodes, straits, river mouths, and coastal plains, where merchants were forced to stop, unload, and resupply, creating opportunities for exchange and cultural interaction."
+      'Monsoon knowledge made long-distance sailing predictable enough to plan departures and returns.',
+      'The Swahili Coast, Gujarat, and Malacca gained political and economic power because they sat at major commercial nodes.',
+      'Diasporic merchant communities formed where sailors and merchants stayed for extended periods while waiting for winds, building durable cross-cultural relationships.',
+      'Zheng He\'s voyages demonstrate the geographic reach and political importance of the Indian Ocean network by the early 1400s.'
     ]
   },
 
   deepReading: {
     title: 'The Ocean That Carried Everything',
-    desc: 'A textbook-depth companion on the ships and navigation, the bulk cargo that makes this ocean different from the Silk Roads, the port cities and their harbor masters, the merchant diasporas, and what Zheng He was actually for. Optional, and the fastest way to be ready for the Unit 2 comparison.',
+    desc: 'A textbook-depth companion on monsoon knowledge, navigation and ship design, trading states, merchant diasporas, and what Zheng He\'s voyages reveal about the mature Indian Ocean system. Optional.',
     url: 'deep-reading-topic-2-3-indian-ocean.html'
   },
 
@@ -193,26 +207,26 @@ window.BEHISTORICAL_LESSON = {
   },
 
   evidenceLab: {
-    title: "Evidence Lab: Reading Indian Ocean Trade Through Evidence",
-    intro: "Use the evidence below to connect Indian Ocean exchange to broader historical arguments about technology, commercial networks, and cultural transformation.",
-    prompt: "Choose one piece of evidence and explain how it supports a claim about what made Indian Ocean trade possible, who participated, or how it changed the societies it connected.",
+    title: 'Evidence Lab: Proving Indian Ocean Expansion and Effects',
+    intro: 'Each piece of evidence belongs to one part of the CED story: causes of expansion, state growth, diasporic communities, or wider transfer.',
+    prompt: 'Choose one piece of evidence and explain the mechanism connecting it to the growth or effects of Indian Ocean exchange after 1200.',
     items: [
-      { title: "Monsoon wind patterns", detail: "Evidence of how environmental knowledge transformed the Indian Ocean from a barrier into a highway, merchants who understood the monsoon could plan predictable, profitable voyages." },
-      { title: "Kilwa and the East African gold trade", detail: "Evidence of how Indian Ocean trade created wealthy, cosmopolitan port cities on the Swahili coast, Kilwa's wealth from gold transit made it one of the richest cities in the world by the 14th century." },
-      { title: "Spread of Islam to Southeast Asia", detail: "Evidence of how commercial networks carried cultural and religious change: Muslim merchants from Arabia and India brought Islam to port cities across the Malay world, where rulers converted to access Islamic commercial and legal networks." }
+      { title: 'Monsoon Winds + Compass + Astrolabe + Larger Ships', detail: 'Evidence that environmental knowledge and maritime technologies increased predictability, range, and carrying capacity.' },
+      { title: 'Swahili Coast, Gujarat, and Malacca', detail: 'Evidence that expanding maritime exchange fostered the growth of states and powerful commercial centers.' },
+      { title: 'Arab, Persian, Chinese, and Malay Diasporas', detail: 'Evidence that long-distance merchants established communities that blended local and foreign cultural traditions.' },
+      { title: 'Zheng He', detail: 'Evidence that intensified maritime contact supported large-scale diplomatic voyages and cultural and technological transfer.' }
     ]
   },
 
   primarySource: {
-    title: "Primary Source: Ibn Battuta on the Port Cities of the Indian Ocean",
-    intro: "Ibn Battuta, the Moroccan scholar and traveler, visited Indian Ocean port cities during his journeys of 1325–1354. His account, the Rihla, is one of the most detailed descriptions of Indian Ocean commercial society in this period. This adapted passage reflects his observations of Kilwa on the East African coast.",
-    text: "\"We arrived at Kilwa, one of the most beautiful and well-constructed towns in the world. The whole of it is elegantly built. The roofs are built with mangrove poles. There is very much rain there. The people are engaged in a holy war, for their country lies next to the pagan Zanj. The sultan at this time was Abu al-Mawahib al-Hasan ibn Sulaiman, who was noted for his gifts and generosity. He used to give the clothes off his back as gifts. The country of Kilwa is one of the finest and most fertile in the world. Bananas and coconuts are abundant, and the people eat qadid meat, dried meat and millet, mixed with butter. It is reached by sea from Aden in twenty-three days.\"",
-    attribution: "Ibn Battuta, Rihla (translated as The Travels of Ibn Battuta, 1325–1354), describing Kilwa on the East African coast",
+    title: 'Primary Source: Ibn Battuta on Kilwa',
+    intro: 'Ibn Battuta visited Indian Ocean port cities during his travels. His description of Kilwa can be used as evidence of the wealth, political authority, Islamic culture, and interregional connections of a Swahili Coast city-state.',
+    text: '"We arrived at Kilwa, one of the most beautiful and well-constructed towns in the world. The whole of it is elegantly built. The roofs are built with mangrove poles. There is very much rain there. The people are engaged in a holy war, for their country lies next to the pagan Zanj. The sultan at this time was Abu al-Mawahib al-Hasan ibn Sulaiman, who was noted for his gifts and generosity. He used to give the clothes off his back as gifts. The country of Kilwa is one of the finest and most fertile in the world. Bananas and coconuts are abundant, and the people eat qadid meat, dried meat and millet, mixed with butter. It is reached by sea from Aden in twenty-three days."',
+    attribution: 'Ibn Battuta, Rihla (translated as The Travels of Ibn Battuta, 1325–1354), describing Kilwa on the East African coast',
     questions: [
-      "What evidence in Ibn Battuta's description suggests that Kilwa was a cosmopolitan city connected to wider Indian Ocean networks?",
-      "How does the reference to travel time from Aden help explain the structure of Indian Ocean trade routes and the role of port cities?",
-      "What does Ibn Battuta's emphasis on the sultan's generosity and piety reveal about the relationship between Islam and political authority in Indian Ocean port cities?"
+      'What evidence suggests that Kilwa was a prosperous Indian Ocean trading state?',
+      'How does Ibn Battuta\'s presence in Kilwa demonstrate the connectivity of the Indian Ocean network?',
+      'What does the source reveal about the relationship between trade, Islam, and political authority on the Swahili Coast?'
     ]
   }
-
 };

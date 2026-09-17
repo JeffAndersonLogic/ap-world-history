@@ -1297,12 +1297,12 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.1, The Silk Roads: Exchange Across Afro-Eurasia (ebook/unit-2.html).
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.1, The Silk Roads (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 Not One Road, But Many: What the Silk Roads Were</li>
-                            <li style="margin: 0 0 4px 0;">02 Infrastructure: Caravanserais and Relay Stations</li>
-                            <li style="margin: 0 0 4px 0;">03 What Moved Along the Routes</li>
-                            <li style="margin: 0 0 4px 0;">04 Disease: The Unintended Consequence</li>
+                            <li style="margin: 0 0 4px 0;">01 The Road at Its Peak</li>
+                            <li style="margin: 0 0 4px 0;">02 The Caravan as a Firm</li>
+                            <li style="margin: 0 0 4px 0;">03 Caravanserai and Credit</li>
+                            <li style="margin: 0 0 4px 0;">04 Demand and Productive Response</li>
                         </ul>
                     </li>
                 </ul>
@@ -1332,9 +1332,9 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
-## Topic 2.1: The Silk Roads: Exchange Across Afro-Eurasia
+## Topic 2.1: The Silk Roads
 
-**Event title:** `APW - 2.1 - The Silk Roads: Exchange Across Afro-Eurasia`
+**Event title:** `APW - 2.1 - The Silk Roads`
 
 **Assign to, one row per section:**
 
@@ -1347,7 +1347,7 @@ deleted row in the schedule and every affected date moves with it.
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.1: The Silk Roads: Exchange Across Afro-Eurasia</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.1: The Silk Roads</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, September 16</span></span>
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, September 17</span></span>
@@ -1360,7 +1360,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Silk Roads were never one road. They were a shifting network of caravan trails, relay stations, and caravanserais, held together by pastoral nomads who worked the routes and by the states willing to protect merchants along their stretch of them. Today you follow what made overland Afro-Eurasian trade possible, what actually moved along it, silk and spices, but also paper, gunpowder, Buddhism, and Islam, and the one traveler nobody invited: the disease that moved as easily as the goods.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Long-distance Silk Roads trade expanded after 1200 because rising demand for luxury goods made the journey worth financing while caravanserais, credit, banking houses, paper money, and periods of relative political stability reduced merchant risk and cost. Today you follow that economic chain from demand to easier exchange to the growth of trading cities such as Kashgar and Samarkand, then to producers in China, Persia, and India expanding output for distant markets.</p>
             </td>
         </tr>
         <tr>
@@ -1369,9 +1369,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain the causes of Silk Road growth, including state-building, pastoral nomads, and merchant networks that created and maintained overland routes.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe the goods and ideas exchanged along the Silk Roads, including silk, spices, paper, gunpowder, Buddhism, Islam, and plague.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain the effects of Silk Road trade on societies along the routes, including wealth accumulation, urbanization, and the spread of disease.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain why Silk Roads trade expanded after 1200 by connecting demand, commercial practices, transportation infrastructure, and supporting political stability.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how caravanserai, credit, banking houses, and paper money reduced the risk and difficulty of long-distance trade.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how demand for luxury goods increased production and helped trading cities such as Kashgar and Samarkand grow.</li>
                 </ul>
             </td>
         </tr>
@@ -1381,9 +1381,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence, relay stations, pastoral nomads, caravanserais, or state protection, to explain what made overland trade across Afro-Eurasia possible.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify both goods (silk, spices, porcelain, paper, gunpowder) and ideas (Buddhism, Islam, Christianity, plague) that moved along the Silk Roads and explain their significance.</li>
-                    <li style="margin: 0 0 6px 0;">I can connect Silk Road exchange to specific effects on societies, including wealth, urban growth along routes, and the devastating spread of the Black Death.</li>
+                    <li style="margin: 0 0 6px 0;">I can build a cause-and-effect chain: demand plus improved trade systems and lower political risk increased trade volume and geographic reach.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain what caravanserai, bills of exchange, banking houses, and paper money actually did for merchants instead of only defining the terms.</li>
+                    <li style="margin: 0 0 6px 0;">I can use Kashgar, Samarkand, Chinese porcelain, Persian and Indian textiles, and Chinese iron and steel as evidence of economic change.</li>
                 </ul>
             </td>
         </tr>
@@ -1393,12 +1393,12 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.2, The Mongol Empire: Conquest, Connection, and the Pax Mongolica (ebook/unit-2.html).
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.2, The Mongol Empire (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 From the Steppe to the World: Mongol Conquest</li>
-                            <li style="margin: 0 0 4px 0;">02 Governing a Vast Empire: Khanates and Religious Tolerance</li>
-                            <li style="margin: 0 0 4px 0;">03 The Pax Mongolica: Peace and Trade</li>
-                            <li style="margin: 0 0 4px 0;">04 Destruction and Connectivity Together: The Paradox</li>
+                            <li style="margin: 0 0 4px 0;">01 The Steppe Problem, and What Temujin Changed</li>
+                            <li style="margin: 0 0 4px 0;">02 How They Won</li>
+                            <li style="margin: 0 0 4px 0;">03 How They Ruled</li>
+                            <li style="margin: 0 0 4px 0;">04 What Moved Under Them</li>
                         </ul>
                     </li>
                 </ul>
@@ -1413,7 +1413,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-1-silk-roads.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.1 - The Silk Roads: Exchange Across Afro-Eurasia</a></p>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-1-silk-roads.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.1 - The Silk Roads</a></p>
             </td>
         </tr>
         <tr>
@@ -1428,9 +1428,9 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
-## Topic 2.2: The Mongol Empire: Conquest, Connection, and the Pax Mongolica
+## Topic 2.2: The Mongol Empire
 
-**Event title:** `APW - 2.2 - The Mongol Empire: Conquest, Connection, and the Pax Mongolica`
+**Event title:** `APW - 2.2 - The Mongol Empire`
 
 **Assign to, one row per section:**
 
@@ -1443,7 +1443,7 @@ deleted row in the schedule and every affected date moves with it.
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.2: The Mongol Empire: Conquest, Connection, and the Pax Mongolica</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.2: The Mongol Empire</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, September 18</span></span>
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, September 21</span></span>
@@ -1456,7 +1456,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Mongols conquered more territory in a single generation than any empire before them, and the useful question is not only how they took it but how they held it. Today you follow the khanate system that governed a realm running from China to Eastern Europe, the Pax Mongolica that let a merchant or a missionary cross that same distance under one guarantee of safe passage, and the paradox at the center of it: a conquest built on massacre and depopulation that also built the safest trade corridor Afro-Eurasia had ever seen.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Mongols first built an enormous Eurasian empire, then divided it into khanates, but their expansion still reshaped exchange across the continent. Today you follow how Mongol rule facilitated trade and communication and how intensified contact transferred knowledge and practices across regions, including Greco-Islamic medical knowledge toward western Europe, numbering systems into Europe, and the adoption of the Uyghur script by the Mongols.</p>
             </td>
         </tr>
         <tr>
@@ -1465,9 +1465,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how the Mongols conquered and administered a vast empire spanning from China to Eastern Europe.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how the Pax Mongolica facilitated trade, travel, and exchange across Eurasia.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe the effects of Mongol rule, both destructive consequences and the connective networks it created.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the Mongols built a vast Eurasian empire and why that empire fragmented into regional khanates over time.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how Mongol expansion facilitated Afro-Eurasian trade and communication without treating the Silk Roads as a new Mongol invention.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how Mongol-era interregional contact encouraged technological and cultural transfers across Eurasia.</li>
                 </ul>
             </td>
         </tr>
@@ -1477,9 +1477,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence, cavalry tactics, siege warfare, Genghis Khan's unification of the steppe, or the khanate system, to explain how the Mongols built and governed their empire.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how the Pax Mongolica created conditions for expanded trade and cultural exchange, using evidence such as the Yam postal system, protection of merchants, and the travels of Marco Polo or Ibn Battuta.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify both destructive effects (massacre, depopulation, destruction of Baghdad) and connective effects (trade, plague transmission, cultural exchange) of Mongol conquest and rule.</li>
+                    <li style="margin: 0 0 6px 0;">I can connect Mongol military organization and adaptation to conquest, then connect succession, distance, and regional interests to fragmentation into the Yuan, Ilkhanate, Chagatai Khanate, and Golden Horde.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how merchant protection, reduced political barriers, and the Yam relay system improved trade and communication across Mongol-controlled Eurasia.</li>
+                    <li style="margin: 0 0 6px 0;">I can use Greco-Islamic medical knowledge, numbering systems, and the adoption of the Uyghur script as evidence of cultural and technological transfer.</li>
                 </ul>
             </td>
         </tr>
@@ -1489,12 +1489,12 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.3, Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection (ebook/unit-2.html).
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.3, Exchange in the Indian Ocean (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 Wind as Technology: The Monsoon System</li>
-                            <li style="margin: 0 0 4px 0;">02 Who Traded and What They Carried</li>
-                            <li style="margin: 0 0 4px 0;">03 Port Cities and Diasporic Communities</li>
-                            <li style="margin: 0 0 4px 0;">04 Islam and the Indian Ocean</li>
+                            <li style="margin: 0 0 4px 0;">01 The Ships and the Sky</li>
+                            <li style="margin: 0 0 4px 0;">02 What a Shipload Changes</li>
+                            <li style="margin: 0 0 4px 0;">03 The Port City, and Trade Without a Policeman</li>
+                            <li style="margin: 0 0 4px 0;">04 The Merchant Communities</li>
                         </ul>
                     </li>
                 </ul>
@@ -1509,7 +1509,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-2-mongol-empire.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.2 - The Mongol Empire: Conquest, Connection, and the Pax Mongolica</a></p>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-2-mongol-empire.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.2 - The Mongol Empire</a></p>
             </td>
         </tr>
         <tr>
@@ -1524,9 +1524,9 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
-## Topic 2.3: Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection
+## Topic 2.3: Exchange in the Indian Ocean
 
-**Event title:** `APW - 2.3 - Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection`
+**Event title:** `APW - 2.3 - Exchange in the Indian Ocean`
 
 **Assign to, one row per section:**
 
@@ -1539,7 +1539,7 @@ deleted row in the schedule and every affected date moves with it.
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.3: Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.3: Exchange in the Indian Ocean</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, September 22</span></span>
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, September 23</span></span>
@@ -1552,7 +1552,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Indian Ocean ran on wind, not on borders. A ship that understood the monsoon could sail east on one half of the year and home on the other, and that single piece of environmental knowledge, more than any navy, built the trade world connecting Arabia, India, China, and the Swahili coast. Today you follow the dhow and the compass that made the crossing possible, the goods and the diasporic merchant communities that crossing produced, and the faith that appeared in nearly every port it touched.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Indian Ocean exchange expanded because merchants learned to use predictable monsoon winds and improved maritime technologies such as the compass, astrolabe, and larger ship designs. Today you follow how that expanding system strengthened trading states and cities including the Swahili Coast, Gujarat, and Malacca, created diasporic merchant communities, and connected regions strongly enough for voyages such as Zheng He's to operate across an already mature network.</p>
             </td>
         </tr>
         <tr>
@@ -1561,9 +1561,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how technology and environmental knowledge, including dhow ships, the magnetic compass, and monsoon wind patterns, enabled Indian Ocean trade.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe the goods and peoples exchanged across the Indian Ocean, including spices, textiles, gold, ivory, and merchants from Arabia, India, China, and the Swahili coast.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain the effects of Indian Ocean trade, including the growth of port cities, the formation of diasporic merchant communities, and the spread of Islam.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how monsoon knowledge, the compass, astrolabe, and larger ship designs helped Indian Ocean trade expand after 1200.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how expanded Indian Ocean trade promoted powerful trading cities and states such as the Swahili Coast city-states, Gujarat, and the Sultanate of Malacca.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how diasporic merchant communities and Zheng He's voyages demonstrate the cultural and technological effects of intensified Indian Ocean exchange.</li>
                 </ul>
             </td>
         </tr>
@@ -1573,9 +1573,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence, monsoon winds, dhow construction, or the magnetic compass, to explain how environmental knowledge and technology made Indian Ocean maritime trade possible.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify the major goods (spices, textiles, gold, ivory) and merchant communities (Arab, Indian, Chinese, Swahili, Persian) that participated in Indian Ocean exchange and explain what made their participation significant.</li>
-                    <li style="margin: 0 0 6px 0;">I can connect Indian Ocean trade to specific effects: cosmopolitan port cities like Kilwa, Calicut, Quanzhou, and Malacca; diasporic merchant communities; and the spread of Islam along maritime routes.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how predictable monsoon winds and navigational or shipbuilding innovations lowered the risk and increased the range of maritime trade.</li>
+                    <li style="margin: 0 0 6px 0;">I can use the Swahili Coast, Gujarat, and Malacca to explain how trade fostered state growth and powerful commercial centers.</li>
+                    <li style="margin: 0 0 6px 0;">I can use Arab and Persian communities in East Africa, Chinese merchant communities in Southeast Asia, Malay communities in the Indian Ocean basin, and Zheng He as evidence of cross-cultural interaction.</li>
                 </ul>
             </td>
         </tr>
@@ -1585,12 +1585,12 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.4, Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam (ebook/unit-2.html).
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.4, Trans-Saharan Trade Routes (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 The Camel: A Technology That Crossed a Desert</li>
-                            <li style="margin: 0 0 4px 0;">02 Gold and Salt: The Perfect Trade</li>
-                            <li style="margin: 0 0 4px 0;">03 The Mali Empire: Wealth from Trade</li>
-                            <li style="margin: 0 0 4px 0;">04 Islam Crosses the Sahara</li>
+                            <li style="margin: 0 0 4px 0;">01 The Desert, and the Animal That Solved It</li>
+                            <li style="margin: 0 0 4px 0;">02 Gold and Salt</li>
+                            <li style="margin: 0 0 4px 0;">03 The Caravan Cities, and Who Took a Cut</li>
+                            <li style="margin: 0 0 4px 0;">04 What Islam Did for the Trade</li>
                         </ul>
                     </li>
                 </ul>
@@ -1605,7 +1605,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-3-indian-ocean.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.3 - Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection</a></p>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-3-indian-ocean.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.3 - Exchange in the Indian Ocean</a></p>
             </td>
         </tr>
         <tr>
@@ -1620,9 +1620,9 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
-## Topic 2.4: Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam
+## Topic 2.4: Trans-Saharan Trade Routes
 
-**Event title:** `APW - 2.4 - Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam`
+**Event title:** `APW - 2.4 - Trans-Saharan Trade Routes`
 
 **Assign to, one row per section:**
 
@@ -1635,7 +1635,7 @@ deleted row in the schedule and every affected date moves with it.
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.4: Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.4: Trans-Saharan Trade Routes</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, September 24</span></span>
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, September 25</span></span>
@@ -1648,7 +1648,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Sahara is not empty of history, and the camel is why. Today you follow the animal and the caravan organization that turned one of the world's most hostile environments into a trade corridor, the gold-salt exchange that gave West Africa and North Africa something the other side needed and had none of, and the empire, Mali, that grew wealthy enough to make its ruler's 1324 pilgrimage an event other continents were still discussing decades later.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Trans-Saharan trade grew because camel technology and organized caravans made regular long-distance movement across the desert possible. Today you follow how complementary demand for goods such as gold and salt increased the volume and geographic range of exchange and how Mali used its position in that network to facilitate trade, collect wealth, and project power across West Africa.</p>
             </td>
         </tr>
         <tr>
@@ -1657,9 +1657,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how technology, especially the camel and caravan organization, made trans-Saharan trade possible across one of the world's most hostile environments.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe the goods exchanged across the Sahara, especially gold from West Africa and salt from Saharan mines, and explain why this exchange was mutually necessary.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain the effects of trans-Saharan trade: the growth of the Mali Empire, the wealth and fame of Mansa Musa, and the spread of Islam across West Africa.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the camel saddle and caravan organization made sustained trans-Saharan exchange possible.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain why improved transportation increased the volume and geographic range of trans-Saharan trade, using gold and salt as evidence of the exchange system.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the expansion of Mali facilitated trade and communication by drawing more people into West African and Afro-Eurasian exchange networks.</li>
                 </ul>
             </td>
         </tr>
@@ -1669,9 +1669,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence, the camel's physiological advantages, the redesigned saddle, caravan organization, and oases, to explain what made crossing the Sahara commercially viable.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain the gold-salt exchange: where each commodity came from, why each side needed what the other had, and how this complementary demand drove the trans-Saharan trade system.</li>
-                    <li style="margin: 0 0 6px 0;">I can connect trans-Saharan trade to the rise of Mali, Mansa Musa's 1324 hajj and its global significance, the growth of Timbuktu as a center of Islamic learning, and the spread of Islam through merchant and scholarly networks across West Africa.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the camel saddle, caravans, desert guides, and oases solved the transportation problems of crossing the Sahara.</li>
+                    <li style="margin: 0 0 6px 0;">I can connect transportation improvements and complementary demand for gold and salt to increased trade volume and longer-distance exchange.</li>
+                    <li style="margin: 0 0 6px 0;">I can use Mali and Mansa Musa as evidence that imperial expansion could facilitate commerce, communication, and connections to the wider Islamic world.</li>
                 </ul>
             </td>
         </tr>
@@ -1681,12 +1681,12 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.5, Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move (ebook/unit-2.html).
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.5, Cultural Consequences of Connectivity (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 Religion Follows the Merchant</li>
-                            <li style="margin: 0 0 4px 0;">02 Technology Moves East to West</li>
-                            <li style="margin: 0 0 4px 0;">03 Agricultural and Crop Diffusion</li>
-                            <li style="margin: 0 0 4px 0;">04 Artistic and Intellectual Diffusion</li>
+                            <li style="margin: 0 0 4px 0;">01 How a Thing Travels</li>
+                            <li style="margin: 0 0 4px 0;">02 Religions in Motion</li>
+                            <li style="margin: 0 0 4px 0;">03 Techniques, With Dates</li>
+                            <li style="margin: 0 0 4px 0;">04 Cities Rise, Cities Decline</li>
                         </ul>
                     </li>
                 </ul>
@@ -1701,7 +1701,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-4-trans-saharan.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.4 - Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam</a></p>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-4-trans-saharan.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.4 - Trans-Saharan Trade Routes</a></p>
             </td>
         </tr>
         <tr>
@@ -1716,9 +1716,9 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
-## Topic 2.5: Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move
+## Topic 2.5: Cultural Consequences of Connectivity
 
-**Event title:** `APW - 2.5 - Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move`
+**Event title:** `APW - 2.5 - Cultural Consequences of Connectivity`
 
 **Assign to, one row per section:**
 
@@ -1731,7 +1731,7 @@ deleted row in the schedule and every affected date moves with it.
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.5: Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.5: Cultural Consequences of Connectivity</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, September 28</span></span>
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, September 29</span></span>
@@ -1744,7 +1744,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Trade never moves only goods. Today you follow what rode along with the silk and the gold: Buddhism, Islam, Christianity, and Hinduism spreading through the same networks that carried spices; paper, printing, gunpowder, the compass, and the stirrup diffusing from where they were invented to wherever a caravan or a ship could reach; and crops, architecture, and art remaking the places connectivity touched. None of Unit 2's three networks is only an economic story.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Expanded exchange networks changed culture as well as commerce. Today you follow three connected consequences: religions, artistic traditions, and technologies such as paper and gunpowder diffused across regions; the fortunes of cities rose or fell with changing patterns of trade and urbanization; and a more connected Afro-Eurasia produced more written travel accounts from observers such as Ibn Battuta, Marco Polo, and Margery Kempe.</p>
             </td>
         </tr>
         <tr>
@@ -1753,9 +1753,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how major religions, Buddhism, Islam, Christianity, and Hinduism, spread along trade routes from c. 1200 to c. 1450.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe how key technologies, paper, printing, gunpowder, the compass, and the stirrup, diffused across Afro-Eurasia through trade networks.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how crops, architectural styles, artistic motifs, and literary traditions diffused across Afro-Eurasia as a consequence of trade connectivity.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how expanding exchange networks spread cultural traditions and technological innovations across Afro-Eurasia.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain why expanding trade networks produced both increased urbanization and periods of decline in connected cities.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain why intensified exchange produced more written travel accounts and use Ibn Battuta, Margery Kempe, and Marco Polo as evidence.</li>
                 </ul>
             </td>
         </tr>
@@ -1765,9 +1765,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can identify at least two specific religions and explain how each spread along a named trade route, Silk Roads, Indian Ocean, or trans-Saharan.</li>
-                    <li style="margin: 0 0 6px 0;">I can name at least two technologies that diffused through trade networks and explain where they originated and where they spread.</li>
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence, a crop, an architectural style, or a cultural tradition, to explain how trade produced cultural exchange and transformation.</li>
+                    <li style="margin: 0 0 6px 0;">I can use Buddhism, Hinduism, Islam, gunpowder, or paper to explain how a cultural tradition or technological innovation moved through an exchange network.</li>
+                    <li style="margin: 0 0 6px 0;">I can connect rising productivity and expanding trade to urban growth while recognizing that warfare, political change, or disrupted routes could also cause urban decline.</li>
+                    <li style="margin: 0 0 6px 0;">I can use Ibn Battuta, Margery Kempe, and Marco Polo to show how intensified connectivity increased travel and the written record of cross-cultural encounters.</li>
                 </ul>
             </td>
         </tr>
@@ -1777,12 +1777,12 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.6, Environmental Consequences of Connectivity: Disease, Death, and Ecological Change (ebook/unit-2.html).
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.6, Environmental Consequences of Connectivity (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 The Plague's Origins: From Ecology to Pandemic</li>
-                            <li style="margin: 0 0 4px 0;">02 How the Plague Traveled</li>
-                            <li style="margin: 0 0 4px 0;">03 Demographic Catastrophe: The Scale of Death</li>
-                            <li style="margin: 0 0 4px 0;">04 Social and Institutional Consequences</li>
+                            <li style="margin: 0 0 4px 0;">01 The Pathway</li>
+                            <li style="margin: 0 0 4px 0;">02 The Same Mortality, Opposite Results</li>
+                            <li style="margin: 0 0 4px 0;">03 Three Required Crop Diffusion Cases</li>
+                            <li style="margin: 0 0 4px 0;">04 Living Things on the Move</li>
                         </ul>
                     </li>
                 </ul>
@@ -1797,7 +1797,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-5-cultural-consequences.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.5 - Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move</a></p>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-5-cultural-consequences.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.5 - Cultural Consequences of Connectivity</a></p>
             </td>
         </tr>
         <tr>
@@ -1812,9 +1812,9 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
-## Topic 2.6: Environmental Consequences of Connectivity: Disease, Death, and Ecological Change
+## Topic 2.6: Environmental Consequences of Connectivity
 
-**Event title:** `APW - 2.6 - Environmental Consequences of Connectivity: Disease, Death, and Ecological Change`
+**Event title:** `APW - 2.6 - Environmental Consequences of Connectivity`
 
 **Assign to, one row per section:**
 
@@ -1827,7 +1827,7 @@ deleted row in the schedule and every affected date moves with it.
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.6: Environmental Consequences of Connectivity: Disease, Death, and Ecological Change</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.6: Environmental Consequences of Connectivity</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, September 30</span></span>
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, October 1</span></span>
@@ -1840,7 +1840,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Connectivity cut both ways, and not only toward catastrophe. The same network that let a merchant cross Eurasia safely also let the bubonic plague make the same trip, and today you follow the Black Death from its origins in Central Asia through the trade routes that carried it into Europe and North Africa, and the demographic collapse and labor shortages it left behind. But those same routes carried something else at the same time: bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean. Connectivity is not only a story about what it destroys.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The same exchange networks that moved merchants and goods also moved living things. Today you trace two environmental consequences together: crops such as bananas, new rice varieties, and citrus diffused into new regions and affected production and population, while pathogens such as bubonic plague traveled along trade routes and produced enormous demographic and social disruption.</p>
             </td>
         </tr>
         <tr>
@@ -1849,9 +1849,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how trade routes spread epidemic disease across Afro-Eurasia, with a focus on the bubonic plague and the role of the Mongol trade network.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe the demographic and social consequences of the Black Death in Eurasia and North Africa, including population loss, labor shortages, and challenges to traditional authority.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how trade networks diffused crops and agricultural practices across Afro-Eurasia, such as bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean, alongside other ecological consequences of connectivity such as deforestation and the movement of invasive species.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how exchange networks diffused crops across Afro-Eurasia and changed food supplies, farming, and population patterns.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how exchange networks spread epidemic disease, especially the bubonic plague, across connected regions.</li>
+                    <li style="margin: 0 0 6px 0;">I can compare the environmental effects of crop diffusion and pathogen diffusion as two consequences of increased connectivity.</li>
                 </ul>
             </td>
         </tr>
@@ -1861,9 +1861,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can trace the path of the bubonic plague from its origins in Central Asia to its spread across Eurasia and North Africa, naming at least one specific mechanism of transmission.</li>
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence, population statistics, labor shortages, or social upheaval, to explain how the Black Death transformed societies across Eurasia.</li>
-                    <li style="margin: 0 0 6px 0;">I can name at least one crop or agricultural practice that diffused along Afro-Eurasian trade networks (such as bananas, new rice varieties, or citrus) and explain how that diffusion changed farming, diet, or land use in its new region.</li>
+                    <li style="margin: 0 0 6px 0;">I can use bananas in Africa, new rice varieties in East Asia, and citrus in the Mediterranean as evidence of crop diffusion through exchange networks.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the bubonic plague moved through trade routes and why increased connectivity accelerated its spread.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one beneficial environmental effect of connectivity through crop diffusion and one destructive effect through pathogen diffusion.</li>
                 </ul>
             </td>
         </tr>
@@ -1873,12 +1873,12 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.7, Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks (ebook/unit-2.html).
+                    <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.7, Comparison of Economic Exchange (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 What All Three Networks Shared</li>
-                            <li style="margin: 0 0 4px 0;">02 How the Networks Differed: Technology and Goods</li>
-                            <li style="margin: 0 0 4px 0;">03 Cultural Differences: Which Religions Spread Where</li>
-                            <li style="margin: 0 0 4px 0;">04 How to Write AP Comparison</li>
+                            <li style="margin: 0 0 4px 0;">01 The Three Profiles</li>
+                            <li style="margin: 0 0 4px 0;">02 What All Three Shared</li>
+                            <li style="margin: 0 0 4px 0;">03 What Differed, and the One Mechanism Behind It</li>
+                            <li style="margin: 0 0 4px 0;">04 Consequences Compared</li>
                         </ul>
                     </li>
                 </ul>
@@ -1893,7 +1893,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-6-environmental-consequences.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.6 - Environmental Consequences of Connectivity: Disease, Death, and Ecological Change</a></p>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-6-environmental-consequences.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.6 - Environmental Consequences of Connectivity</a></p>
             </td>
         </tr>
         <tr>
@@ -1908,9 +1908,9 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
-## Topic 2.7: Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks
+## Topic 2.7: Comparison of Economic Exchange
 
-**Event title:** `APW - 2.7 - Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks`
+**Event title:** `APW - 2.7 - Comparison of Economic Exchange`
 
 **Assign to, one row per section:**
 
@@ -1923,7 +1923,7 @@ deleted row in the schedule and every affected date moves with it.
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 2: Networks of Exchange</div>
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.7: Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 2.7: Comparison of Economic Exchange</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, October 2</span></span>
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, October 5</span></span>
@@ -1936,7 +1936,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Three networks, one question asked three times: what made this trade possible, what moved along it, what did it change. Today you set the Silk Roads, the Indian Ocean, and trans-Saharan trade beside each other and look for the pattern all three share, long-distance exchange, overlapping religions, cultural diffusion. Then you look for where they genuinely differ, in geography, in transportation technology, in which goods dominated, and you build an AP-style comparison argument out of both halves rather than only listing facts about two places.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Comparison asks you to explain the networks together rather than retell them one at a time. Today you compare the Silk Roads, Indian Ocean, and trans-Saharan systems through the same categories: environment and transportation, commercial practices and finance, demand and productive capacity, the role of states and cities, and the cultural or environmental effects of exchange. The goal is an AP-style argument built from both meaningful similarities and meaningful differences.</p>
             </td>
         </tr>
         <tr>
@@ -1945,9 +1945,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can identify similarities across all three Afro-Eurasian trade networks, Silk Roads, Indian Ocean, and trans-Saharan, including long-distance exchange, the movement of goods and ideas, and cultural diffusion.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify key differences between the three trade networks in geography, transportation technology, dominant goods, and cultural effects.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how comparing the three networks reveals broader patterns of Afro-Eurasian connectivity and supports AP-style comparison arguments with evidence.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain similarities among the Silk Roads, Indian Ocean, and trans-Saharan networks in why trade expanded and what expanding exchange changed.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain differences among the three networks in geography, transportation, commercial practices, and political support.</li>
+                    <li style="margin: 0 0 6px 0;">I can compare how luxury demand and expanding exchange stimulated productive capacity and broader cultural, technological, and biological diffusion.</li>
                 </ul>
             </td>
         </tr>
@@ -1957,9 +1957,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can state at least two specific similarities shared by all three trade networks and support each with a concrete historical example.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain at least two meaningful differences between any two of the three networks, using specific evidence about geography, technology, or goods exchanged.</li>
-                    <li style="margin: 0 0 6px 0;">I can use a comparison of trade networks to build a historical argument that includes a claim, evidence, and reasoning connecting to a broader pattern of Afro-Eurasian exchange.</li>
+                    <li style="margin: 0 0 6px 0;">I can state a meaningful similarity shared by all three networks and support it with specific evidence from at least two networks.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how different environments required different transportation or commercial solutions, such as caravanserai and credit on the Silk Roads, monsoon knowledge and maritime technology in the Indian Ocean, and camel saddles and caravans across the Sahara.</li>
+                    <li style="margin: 0 0 6px 0;">I can connect demand and expanding trade to greater production, stronger trading cities or states, and wider diffusion across Afro-Eurasia.</li>
                 </ul>
             </td>
         </tr>
@@ -1976,7 +1976,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-7-comparison.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.7 - Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks</a></p>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-2/lesson-2-7-comparison.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 2.7 - Comparison of Economic Exchange</a></p>
             </td>
         </tr>
         <tr>

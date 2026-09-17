@@ -2,34 +2,96 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
-  lesson.collegeBoardKeyConcepts = [
-    {"code":"KC-3.1","theme":"Networks of Exchange","text":"A deepening and widening of networks of human interaction within and across regions contributed to cultural, technological, and biological diffusion within and between various societies.","illustrativeExamples":[]},
-    {"code":"KC-3.1.I.A.i","theme":"Networks of Exchange","text":"Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.","illustrativeExamples":[]},
-    {"code":"KC-3.1.I.C.i","theme":"Networks of Exchange","text":"The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.","illustrativeExamples":[]},
-    {"code":"KC-3.3","theme":"Networks of Exchange","text":"Changes in trade networks resulted from and stimulated increasing productive capacity, with important implications for social and gender structures and environmental processes.","illustrativeExamples":[]},
-    {"code":"KC-3.3.I.B","theme":"Networks of Exchange","text":"Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.","illustrativeExamples":[]}
+  lesson.first10 = {
+    ...lesson.first10,
+    title: 'First & 10: Same Problems, Different Trade Systems',
+    embedUrl: 'first-and-10-topic-2-7-comparison-capture.html',
+    note: 'Compare the networks using the same categories: environment, transportation, commercial practices, demand, states/cities, productive capacity, and diffusion.'
+  };
+
+  lesson.map = {
+    ...lesson.map,
+    key: [
+      { label: 'Silk Roads', detail: 'Overland exchange relied on caravan infrastructure, credit/money economies, trading cities, and political protection.' },
+      { label: 'Indian Ocean', detail: 'Maritime exchange relied on monsoon knowledge, navigation technology, larger ships, port states, and merchant diasporas.' },
+      { label: 'Trans-Saharan', detail: 'Desert exchange relied on camel technology, caravan organization, oasis routes, and states such as Mali.' },
+      { label: 'Shared economic pattern', detail: 'All three networks responded to demand, lowered the cost or risk of exchange, stimulated cities/states, and linked producers to distant consumers.' },
+      { label: 'Different solutions', detail: 'Geography created different transportation and institutional problems, so each network developed different solutions.' }
+    ]
+  };
+
+  lesson.stableImages = {
+    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+    first10: '../assets/images/module-art/unit-2/topic-2-7/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-2/topic-2-7/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-2/topic-2-7/besurreal.svg',
+    skill: '../assets/images/module-art/unit-2/topic-2-7/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-2/topic-2-7/checkpoint1.svg',
+    evidence: '../assets/images/module-art/unit-2/topic-2-7/evidence.svg',
+    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+    beInTheRoom: '../assets/images/module-art/unit-2/topic-2-7/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-2/topic-2-7/checkpoint2.svg'
+  };
+
+  lesson.beInTheRoom = {
+    url: '../beintheroom/unit-2/trade-network-comparison.html',
+    desc: 'Act as a historian advising a ruler. Compare two exchange networks using balanced evidence and decide which difference or similarity mattered most.'
+  };
+
+  lesson.beSurreal = {
+    title: 'BeSurreal: Three Networks, One Economic Problem',
+    text: 'Silk Roads merchants faced long overland distances. Indian Ocean merchants faced winds and open water. Trans-Saharan merchants faced a vast desert. Each network had to solve the same basic problem: how do you move valuable goods far enough, safely enough, and cheaply enough to make exchange worthwhile?',
+    prompt: 'How can different technologies and institutions produce a similar economic result?'
+  };
+
+  lesson.skillBuilder = {
+    label: 'Comparison practice',
+    title: 'AP Skill Builder: Compare the Networks with One Shared Matrix',
+    intro: 'Comparison works only when you compare the same category on both sides. Use the matrix to avoid writing separate mini-essays about each network.',
+    steps: [
+      { label: '1. Choose two networks', text: '<strong>Silk Roads | Indian Ocean | Trans-Saharan</strong>' },
+      { label: '2. Choose one shared category', text: '<strong>Environment</strong> · <strong>Transportation</strong> · <strong>Commercial practices/finance</strong> · <strong>Demand</strong> · <strong>States/cities</strong> · <strong>Productive capacity</strong> · <strong>Cultural/environmental diffusion</strong>' },
+      { label: '3. Gather balanced evidence', text: 'Use one specific piece of evidence from each network in the SAME category.' },
+      { label: '4. State the similarity or difference', text: 'Example: both networks lowered merchant risk, but the Silk Roads emphasized caravanserais and credit while Indian Ocean trade depended more heavily on monsoon timing and maritime technology.' },
+      { label: '5. Explain why it existed', text: 'Connect the pattern to geography, technology, commercial institutions, demand, or state support.' },
+      { label: 'Response frame', text: 'Both ___ and ___ ___. <strong>However</strong>, ___ while ___ because ___.' }
+    ],
+    prompt: 'Compare TWO trade networks using ONE shared category. Use specific evidence from both and explain why the similarity or difference existed.'
+  };
+
+  lesson.checkpoints = [
+    {
+      title: 'Checkpoint 1: A Meaningful Similarity',
+      subtitle: 'Checks balanced comparison.',
+      cardDesc: 'Compare the same economic or environmental category across two networks.',
+      learningTargets: [lesson.learningTargets[0].target],
+      successCriteria: [lesson.successCriteria[0].criteria],
+      prompt: 'Identify ONE meaningful similarity between two exchange networks. Use balanced evidence from both. Your comparison must address transportation, commercial practices, demand/productive capacity, states/cities, or diffusion.',
+      responseType: 'Checkpoint 1',
+      terms: ['similarity', 'commercial practices', 'transportation', 'demand', 'production', 'states', 'cities', 'diffusion'],
+      focus: ['Use the same category on both sides.', 'Provide evidence from both networks.', 'Explain why the similarity existed.']
+    },
+    {
+      title: 'Checkpoint 2: A Meaningful Difference',
+      subtitle: 'Checks explanation of difference.',
+      cardDesc: 'Different geography produced different solutions to long-distance exchange.',
+      learningTargets: [lesson.learningTargets[0].target],
+      successCriteria: [lesson.successCriteria[0].criteria],
+      prompt: 'Identify ONE meaningful difference between two exchange networks. Use balanced evidence and explain why geography, technology, commercial systems, state support, or demand produced the difference.',
+      responseType: 'Checkpoint 2',
+      skill: 'Comparison',
+      terms: ['difference', 'caravanserai', 'credit', 'monsoon', 'compass', 'astrolabe', 'camel saddle', 'caravan', 'productive capacity'],
+      focus: ['Use the same category on both sides.', 'Use specific evidence from both networks.', 'Explain the cause of the difference.']
+    }
   ];
 
-  lesson.first10={...lesson.first10,title:'First & 10: Comparing the Networks',embedUrl:'first-and-10-topic-2-7-comparison-capture.html',note:'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 2.7 lesson path.'};
-  lesson.map={...lesson.map,key:[{label:'Silk Roads (overland)',detail:'Stretched from China through Central Asia and Persia to the Mediterranean; used camels and relay stations.'},{label:'Indian Ocean (maritime)',detail:'Connected East Africa, Arabia, India, and Southeast Asia using seasonal monsoon winds and dhow ships.'},{label:'Trans-Saharan (desert)',detail:'Linked West Africa to North Africa and the Mediterranean using camel caravans and oasis towns.'},{label:'Geographic takeaway',detail:'All three networks overlapped at key nodes like Cairo and Aden, creating an integrated Afro-Eurasian exchange system.'}]};
-  lesson.stableImages={map:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',first10:'../assets/images/module-art/unit-2/topic-2-7/first10.svg',contentDelivery:'../assets/images/module-art/unit-2/topic-2-7/contentdelivery.svg',beSurreal:'../assets/images/module-art/unit-2/topic-2-7/besurreal.svg',skill:'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',checkpoint1:'../assets/images/module-art/unit-2/topic-2-7/checkpoint1.svg',evidence:'../assets/images/module-art/unit-2/topic-2-7/evidence.svg',source:'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',beInTheRoom:'../assets/images/module-art/unit-2/topic-2-7/beintheroom.svg',checkpoint2:'../assets/images/module-art/unit-2/topic-2-7/checkpoint2.svg'};
-  lesson.beInTheRoom={url:'',desc:'You are a historian writing a comparative analysis of trade networks for a sultan\'s library. Use primary sources from three networks to build your argument about similarities and differences.'};
-  lesson.beSurreal={title:'BeSurreal: Ibn Battuta Compared All Three',text:'Ibn Battuta of Morocco traveled on all three trade networks, he crossed the Sahara to Mali, sailed the Indian Ocean from East Africa to India and Southeast Asia, and traveled overland through Persia and Central Asia. No one in the 14th century had a better comparative view of Afro-Eurasian trade. His accounts reveal that the three networks were connected nodes in a single interlocking system, not isolated routes.',prompt:'If you could travel all three networks as Ibn Battuta did, what single most important similarity and one most important difference would you report?'};
+  lesson.evidenceLab = {
+    ...lesson.evidenceLab,
+    title: 'Evidence Lab: Compare Like with Like',
+    task: 'Choose TWO cards from different networks that address the SAME category. Balance the evidence before writing the comparison.',
+    prompt: 'Write one comparison claim using two networks and one shared category. Cite one concrete detail from each source and explain why the similarity or difference existed.'
+  };
 
-  lesson.skillBuilder={label:'Comparison practice',title:'AP Skill Builder: Compare the Trade Networks',intro:'Comparison is strongest when you choose TWO networks and compare the SAME category in both. Use the matrix to select a category, collect balanced evidence, state a similarity or difference, and then explain why the pattern existed. Do not write three separate network summaries.',steps:[
-    {label:'1. Choose two networks and one category',text:'<div style="overflow-x:auto;margin-top:.6rem"><table style="width:100%;border-collapse:collapse;font-size:.88rem"><thead><tr><th style="padding:.5rem;border:1px solid #999;text-align:left">Category</th><th style="padding:.5rem;border:1px solid #999;text-align:left">Silk Roads</th><th style="padding:.5rem;border:1px solid #999;text-align:left">Indian Ocean</th><th style="padding:.5rem;border:1px solid #999;text-align:left">Trans-Saharan</th></tr></thead><tbody><tr><td style="padding:.5rem;border:1px solid #999"><strong>Geography</strong></td><td style="padding:.5rem;border:1px solid #999">Overland; steppe and deserts</td><td style="padding:.5rem;border:1px solid #999">Maritime; seasonal monsoon winds</td><td style="padding:.5rem;border:1px solid #999">Desert crossing; Sahara and Sahel</td></tr><tr><td style="padding:.5rem;border:1px solid #999"><strong>Transportation / technology</strong></td><td style="padding:.5rem;border:1px solid #999">Camels, caravans, caravanserais</td><td style="padding:.5rem;border:1px solid #999">Dhows/larger ships, compass, astrolabe, monsoon knowledge</td><td style="padding:.5rem;border:1px solid #999">Camels, improved saddles, caravans, oases</td></tr><tr><td style="padding:.5rem;border:1px solid #999"><strong>Major goods</strong></td><td style="padding:.5rem;border:1px solid #999">Silk, porcelain, luxury goods</td><td style="padding:.5rem;border:1px solid #999">Spices, textiles, gold, porcelain</td><td style="padding:.5rem;border:1px solid #999">Gold, salt, textiles</td></tr><tr><td style="padding:.5rem;border:1px solid #999"><strong>Cultural diffusion</strong></td><td style="padding:.5rem;border:1px solid #999">Buddhism, Islam, technology, plague</td><td style="padding:.5rem;border:1px solid #999">Islam, merchant diasporas, blended port cultures</td><td style="padding:.5rem;border:1px solid #999">Islam, scholarship, Arabic literacy</td></tr><tr><td style="padding:.5rem;border:1px solid #999"><strong>States / cities</strong></td><td style="padding:.5rem;border:1px solid #999">Mongol khanates, Samarkand, Kashgar</td><td style="padding:.5rem;border:1px solid #999">Kilwa, Calicut, Malacca</td><td style="padding:.5rem;border:1px solid #999">Mali, Timbuktu</td></tr></tbody></table></div>'},
-    {label:'2. Gather balanced evidence',text:'Use one specific piece of evidence from each network in the SAME row/category. A comparison needs evidence on both sides.'},
-    {label:'3. State the similarity or difference',text:'Be precise. Example: both routes depended on specialized transportation, but Indian Ocean trade relied on seasonal wind knowledge while trans-Saharan trade relied on camel technology and oasis networks.'},
-    {label:'4. Explain why',text:'Connect the pattern to geography, technology, demand, political support, or cultural networks. This is what turns a list of facts into historical comparison.'},
-    {label:'Response frame',text:'Both ___ and ___ ___. <strong>However</strong>, ___ while ___ <strong>because</strong> ___.'}
-  ],prompt:'Choose TWO trade networks and ONE category from the matrix. Write 3–4 sentences identifying one meaningful similarity OR difference, using specific evidence from both networks and explaining why the pattern existed.'};
-
-  lesson.checkpoints=[
-    {title:'Checkpoint 1: Similarities Across Trade Networks',subtitle:'Checks Learning Target 1 and Success Criteria 1.',cardDesc:'What the Silk Roads, Indian Ocean, and trans-Saharan routes shared.',learningTargets:[lesson.learningTargets[0].target],successCriteria:[lesson.successCriteria[0].criteria],prompt:'Identify two similarities between any two of the three main trade networks (Silk Roads, Indian Ocean, trans-Saharan). Use specific evidence for each similarity.',responseType:'Checkpoint 1',terms:['similarity','luxury goods','religion','diaspora','connectivity','merchant community','cultural diffusion'],focus:['State each similarity directly and clearly.','Use specific evidence from two different networks.','Explain why the similarity reveals a broader pattern of Afro-Eurasian connectivity.']},
-    {title:'Checkpoint 2: Differences Between Trade Networks',subtitle:'Checks Learning Targets 2–3 and Success Criteria 2–3.',cardDesc:'What distinguished the Silk Roads, Indian Ocean, and trans-Saharan routes from each other.',learningTargets:[lesson.learningTargets[1].target,lesson.learningTargets[2].target],successCriteria:[lesson.successCriteria[1].criteria,lesson.successCriteria[2].criteria],prompt:'Identify two differences between any two of the three trade networks. Use specific evidence and explain why each difference mattered historically.',responseType:'Checkpoint 2',terms:['difference','technology','geography','goods','camel','dhow','monsoon','silk','gold','spices'],focus:['State each difference directly and clearly.','Use specific evidence, technology, goods, or cultural effects.','Explain the historical significance of each difference.']}
-  ];
-
-  lesson.evidenceLab={title:'Evidence Lab: Compare the Networks with Balanced Evidence',task:'Choose TWO cards from DIFFERENT networks that address the SAME category. Do not compare a map on one side with an unrelated object on the other. Use each card to make an observation and inference, then decide whether the evidence supports a similarity or difference.',prompt:'Using two evidence cards from different trade networks and one shared category, write one comparison claim. Cite one concrete detail from each source, explain the similarity OR difference, and explain why geography, technology, political support, or demand produced that pattern.'};
   lesson.images=[
     {title:'Silk Roads — Overland Route Map',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',caption:'Silk Roads / geography. A modern reconstruction of major overland corridors and trading nodes.',prompt:'NOTICE the land distances and oasis corridors. What does this suggest about transport and relay infrastructure? Compare with another network on geography or transportation.'},
     {title:'Silk Roads — Jiaozi Paper Money',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg',caption:'Silk Roads / commercial systems. Song paper currency represents the sophisticated money economy at one major eastern production center.',prompt:'NOTICE the use of portable paper currency. What can you infer about commercial complexity? Compare with another network on commercial tools, goods, or state support.'},

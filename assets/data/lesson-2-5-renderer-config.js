@@ -2,41 +2,99 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
-  lesson.collegeBoardKeyConcepts = [
-    {"code":"KC-3.1.III.D","theme":"Cultural Developments and Interactions","text":"Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations.","illustrativeExamples":["The influence of Buddhism in East Asia","The spread of Hinduism and Buddhism into Southeast Asia","The spread of Islam in sub-Saharan Africa and Asia","Gunpowder from China","Paper from China"]},
-    {"code":"KC-3.3.II","theme":"Cultural Developments and Interactions","text":"The fate of cities varied greatly, with periods of significant decline and periods of increased urbanization, buoyed by rising productivity and expanding trade networks.","illustrativeExamples":[]},
-    {"code":"KC-3.1.III.C","theme":"Cultural Developments and Interactions","text":"As exchange networks intensified, an increasing number of travelers within Afro-Eurasia wrote about their travels.","illustrativeExamples":["Ibn Battuta","Margery Kempe","Marco Polo"]}
+  lesson.first10 = {
+    ...lesson.first10,
+    title: 'First & 10: Ideas, Cities, and Travelers',
+    embedUrl: 'first-and-10-topic-2-5-cultural-consequences-capture.html',
+    note: 'Read for three consequences of intensified exchange: cultural/technological diffusion, changing urban fortunes, and more travelers recording what they encountered.'
+  };
+
+  lesson.map = {
+    ...lesson.map,
+    key: [
+      { label: 'Cultural diffusion', detail: 'Buddhism, Hinduism, and Islam spread or deepened their influence through exchange networks.' },
+      { label: 'Technology diffusion', detail: 'Paper and gunpowder moved across Afro-Eurasia as merchants, scholars, states, and travelers connected regions.' },
+      { label: 'Changing cities', detail: 'Expanding trade could strengthen commercial cities, while shifts in routes, warfare, or political power could contribute to urban decline.' },
+      { label: 'Travel accounts', detail: 'Ibn Battuta, Marco Polo, Margery Kempe, and other travelers recorded observations from an increasingly connected Afro-Eurasian world.' },
+      { label: 'Geographic takeaway', detail: 'The same networks that moved goods also changed culture, urban life, and what people knew about distant societies.' }
+    ]
+  };
+
+  lesson.stableImages = {
+    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
+    first10: '../assets/images/module-art/unit-2/topic-2-5/first10.svg',
+    contentDelivery: '../assets/images/module-art/unit-2/topic-2-5/contentdelivery.svg',
+    beSurreal: '../assets/images/module-art/unit-2/topic-2-5/besurreal.svg',
+    skill: '../assets/images/module-art/unit-2/topic-2-5/skill.svg',
+    checkpoint1: '../assets/images/module-art/unit-2/topic-2-5/checkpoint1.svg',
+    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+    source: '../assets/images/module-art/unit-2/topic-2-5/source.svg',
+    beInTheRoom: '../assets/images/module-art/unit-2/topic-2-5/beintheroom.svg',
+    checkpoint2: '../assets/images/module-art/unit-2/topic-2-5/checkpoint2.svg'
+  };
+
+  lesson.beInTheRoom = {
+    url: '../beintheroom/unit-2/silk-road-scholar.html',
+    desc: 'Travel through a connected intellectual world and decide what knowledge to preserve, translate, carry, and record for audiences far from where you encountered it.'
+  };
+
+  lesson.beSurreal = {
+    title: 'BeSurreal: The Medieval World Through Travelers\' Eyes',
+    text: 'Ibn Battuta, Marco Polo, and Margery Kempe traveled for very different reasons, but each left written accounts that exposed readers to places, peoples, institutions, and customs far from home. Intensified networks did not just move people; they generated new written evidence about a connected world.',
+    prompt: 'How does the growth of travel writing itself serve as evidence that Afro-Eurasian networks were intensifying?'
+  };
+
+  lesson.skillBuilder = {
+    label: 'Continuity and Change practice',
+    title: 'AP Skill Builder: Track a Cultural Consequence of Connectivity',
+    intro: 'Choose one of the topic\'s three CED lenses and explain both what changed and why intensified exchange mattered.',
+    steps: [
+      { label: 'Lens 1: Ideas and technologies', text: '<strong>Examples:</strong> Buddhism in East Asia; Hinduism and Buddhism in Southeast Asia; Islam in sub-Saharan Africa and Asia; paper; gunpowder.' },
+      { label: 'Lens 2: Cities', text: 'Explain how rising productivity and expanding trade networks could support urbanization, while route shifts, political disruption, or conflict could contribute to decline.' },
+      { label: 'Lens 3: Travelers', text: '<strong>Examples:</strong> Ibn Battuta, Marco Polo, and Margery Kempe. Ask what their written accounts reveal about intensified movement and contact.' },
+      { label: 'Explain the mechanism', text: 'Do not merely state that something spread or a traveler moved. Show how exchange networks made the cultural consequence possible.' },
+      { label: 'Response frame', text: 'As exchange networks intensified, ___. This occurred because ___. One example is ___, which demonstrates ___.' }
+    ],
+    prompt: 'Write 3–4 sentences explaining one intellectual or cultural consequence of intensified exchange. Use a specific CED example and explain the mechanism.'
+  };
+
+  lesson.checkpoints = [
+    {
+      title: 'Checkpoint 1: Cultural and Technological Diffusion',
+      subtitle: 'Checks how ideas and innovations moved.',
+      cardDesc: 'Religion, paper, and gunpowder across Afro-Eurasia.',
+      learningTargets: [lesson.learningTargets[0].target],
+      successCriteria: [lesson.successCriteria[0].criteria],
+      prompt: 'Explain how ONE cultural tradition or technology diffused through Afro-Eurasian exchange networks from c. 1200 to c. 1450. Use a specific CED example and explain how the network enabled movement.',
+      responseType: 'Checkpoint 1',
+      terms: ['Buddhism', 'Hinduism', 'Islam', 'paper', 'gunpowder', 'diffusion'],
+      focus: ['Name a specific tradition or innovation.', 'Identify where it moved.', 'Explain how intensified exchange enabled the diffusion.']
+    },
+    {
+      title: 'Checkpoint 2: Cities and Travelers',
+      subtitle: 'Checks the other two cultural consequences of connectivity.',
+      cardDesc: 'Urban fortunes and written travel accounts.',
+      learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
+      prompt: 'Explain ONE way intensified exchange affected cities and ONE way it increased written knowledge about distant societies. Use a traveler such as Ibn Battuta, Marco Polo, or Margery Kempe as evidence.',
+      responseType: 'Checkpoint 2',
+      skill: 'Causation',
+      terms: ['urbanization', 'city decline', 'trade networks', 'Ibn Battuta', 'Marco Polo', 'Margery Kempe', 'travel account'],
+      focus: ['Explain a change in urban fortunes.', 'Use a named traveler.', 'Connect both developments to intensified exchange.']
+    }
   ];
 
-  lesson.first10 = {...lesson.first10,title:'First & 10: Ideas on the Move',embedUrl:'first-and-10-topic-2-5-cultural-consequences-capture.html',note:'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 2.5 lesson path.'};
-  lesson.map = {...lesson.map,key:[
-    {label:'Silk Roads cultural corridor',detail:'The overland routes carried not only goods but Buddhism, Islam, paper, printing, and gunpowder across Afro-Eurasia.'},
-    {label:'Islam\'s spread via trade',detail:'Muslim merchants carried their faith along Indian Ocean and trans-Saharan routes into Southeast Asia, East Africa, and West Africa.'},
-    {label:'Technology diffusion direction',detail:'Many technologies moved from east to west: Chinese paper and printing reached the Islamic world, then Europe.'},
-    {label:'Geographic takeaway',detail:'Cultural diffusion followed the same routes as goods, trade networks were also highways for religion, technology, and ideas.'}
-  ]};
-  lesson.stableImages={map:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',first10:'../assets/images/module-art/unit-2/topic-2-5/first10.svg',contentDelivery:'../assets/images/module-art/unit-2/topic-2-5/contentdelivery.svg',beSurreal:'../assets/images/module-art/unit-2/topic-2-5/besurreal.svg',skill:'../assets/images/module-art/unit-2/topic-2-5/skill.svg',checkpoint1:'../assets/images/module-art/unit-2/topic-2-5/checkpoint1.svg',evidence:'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',source:'../assets/images/module-art/unit-2/topic-2-5/source.svg',beInTheRoom:'../assets/images/module-art/unit-2/topic-2-5/beintheroom.svg',checkpoint2:'../assets/images/module-art/unit-2/topic-2-5/checkpoint2.svg'};
-  lesson.beInTheRoom={url:'../beintheroom/unit-2/silk-road-scholar.html',desc:'You are a scholar traveling between Baghdad and Chang\'an. What knowledge do you carry? What will you bring back? Navigate the intellectual exchange of the Abbasid and Tang/Song worlds.'};
-  lesson.beSurreal={title:'BeSurreal: How Paper Changed Everything',text:'Paper was invented in China roughly 2,000 years ago. It reached the Islamic world through the Silk Roads by the 8th century, where scholars in Baghdad\'s House of Wisdom used it to preserve and translate Greek, Indian, and Persian texts. By the 11th century paper reached Europe. Without the Silk Roads, the Islamic Golden Age, and later the European Renaissance, would have been slower, harder, and very different.',prompt:'How did a single material traveling across trade routes change the history of human knowledge? What does this reveal about how cultural diffusion works?'};
+  lesson.evidenceLab = {
+    ...lesson.evidenceLab,
+    title: 'Evidence Lab: Traces of a More Connected World',
+    task: 'Choose TWO cards that illuminate different consequences of connectivity: cultural/technological diffusion, urban change, or travel writing.',
+    prompt: 'Make one claim about how intensified exchange changed Afro-Eurasian culture or knowledge. Use two pieces of evidence and explain what each can and cannot establish.'
+  };
 
-  lesson.skillBuilder={label:'Continuity and Change practice',title:'AP Skill Builder: Track What Stayed the Same and What Changed as Ideas Spread',intro:'CCOT is easier when you track ONE religion, technology, or cultural practice across time and space. First identify what remained recognizable; then identify what changed as the idea entered a new region. Finally, explain why adaptation or continuity occurred.',steps:[
-    {label:'1. Choose one thing to track',text:'<strong>Religion choices:</strong> Buddhism or Islam.<br><strong>Technology choices:</strong> paper, printing, gunpowder, compass.<br><strong>Traveler/network choices:</strong> merchant diasporas or travel writing.'},
-    {label:'2. Identify a continuity',text:'<strong>Buddhism:</strong> core teachings remained recognizable across regions.<br><strong>Islam:</strong> core beliefs and practices remained recognizable even as local customs differed.<br><strong>Technology:</strong> the basic function of paper, printing, or gunpowder persisted as it moved.'},
-    {label:'3. Identify a change',text:'<strong>Buddhism:</strong> regional branches such as Mahayana, Theravada, and Tibetan traditions developed.<br><strong>Islam:</strong> local cultural practices blended with Islamic institutions in Africa and Southeast Asia.<br><strong>Technology:</strong> societies adapted imported technologies to new military, administrative, or commercial uses.'},
-    {label:'4. Explain why',text:'Ask what caused the change or preserved the continuity: local traditions, political needs, merchant communities, religious institutions, or the practical usefulness of the technology.'},
-    {label:'Response frame',text:'<strong>As ___ spread</strong>, ___ remained consistent because ___. <strong>However</strong>, ___ changed when/in ___ because ___.'}
-  ],prompt:'Choose ONE religion or technology that spread along trade routes. Write 3–4 sentences identifying one continuity and one change, using specific regional evidence and explaining why the change occurred or why the continuity persisted.'};
-
-  lesson.checkpoints=[
-    {title:'Checkpoint 1: Religion and Cultural Diffusion',subtitle:'Checks Learning Target 1 and Success Criteria 1.',cardDesc:'Islam, Buddhism, Christianity, and how religions spread via trade.',learningTargets:[lesson.learningTargets[0].target],successCriteria:[lesson.successCriteria[0].criteria],prompt:'Explain how one religion spread along trade networks between c. 1200 and c. 1450. Use specific evidence about where, how, and through whom it spread.',responseType:'Checkpoint 1',terms:['Islam','Buddhism','Christianity','merchant','diaspora','mosque','diffusion','trade route'],focus:['Name a specific religion.','Explain the mechanism of spread, who carried it and along which routes.','Describe where it spread and what effect it had on receiving societies.']},
-    {title:'Checkpoint 2: Technology and Agricultural Diffusion',subtitle:'Checks Learning Targets 2–3 and Success Criteria 2–3.',cardDesc:'Paper, printing, gunpowder, compass, and crop diffusion.',learningTargets:[lesson.learningTargets[1].target,lesson.learningTargets[2].target],successCriteria:[lesson.successCriteria[1].criteria,lesson.successCriteria[2].criteria],prompt:'Explain how one technology or crop diffused along trade routes and affected societies. Use specific evidence.',responseType:'Checkpoint 2',skill:'Causation',terms:['paper','printing','gunpowder','compass','cotton','sugar','citrus','diffusion','technology transfer'],focus:['Name a specific technology or crop.','Explain where it originated and where it spread to.','Explain how it changed the society that received it.']}
-  ];
-
-  lesson.evidenceLab={title:'Evidence Lab: Traces of Diffusion',task:'Choose a PAIR of cards that traces the movement of one idea, religion, or technology across regions. The strongest evidence of diffusion comes from a pattern across places, not from one object alone. Record what each source directly shows, then explain the connection without assuming that trade was the only possible cause.',prompt:'Using two evidence cards, make one claim about cultural or technological diffusion across Afro-Eurasia. Cite one concrete detail from each card, explain how the pair supports your claim, and identify one alternative explanation or limitation you would need to rule out.'};
-  lesson.images=[
-    {title:'Great Buddha at the Mogao Caves, Dunhuang',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha,_Cave_96,_Mogao_Caves.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Great_Buddha,_Cave_96,_Mogao_Caves.jpg',caption:'Religious-diffusion evidence. The Mogao cave complex at the Silk Road oasis of Dunhuang preserves centuries of Buddhist patronage along an overland exchange corridor.',prompt:'NOTICE the scale and religious imagery. What can you INFER about Buddhism\'s presence at a trade-route oasis? What evidence would you need to prove that merchants, rather than rulers or monks alone, caused its spread?'},
-    {title:'Great Mosque of Djenné',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenn%C3%A9_2.jpg',caption:'Religious-continuity evidence. The present mosque is a later reconstruction on a long-standing Islamic site in a West African trading city tied to trans-Saharan exchange.',prompt:'NOTICE the public scale of the religious site. What can you cautiously INFER about Islam\'s durable place in a trade city? Why is the current structure not direct evidence for its exact medieval form?'},
-    {title:'Jiaozi Paper Money in Song China',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg',caption:'Technology-origin evidence. Paper and printing were established technologies in China before their wider diffusion westward.',prompt:'NOTICE the use of paper for a complex economic purpose. What does this establish about the technology at its eastern origin? What does it NOT prove about the route by which papermaking later spread?'},
-    {title:'Maqamat Manuscript, Baghdad, 1237',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',caption:'Technology-reception evidence. A richly illustrated paper manuscript produced in Baghdad in 1237 demonstrates the mature use of paper in the Islamic world centuries after papermaking spread west from China.',prompt:'NOTICE the sophisticated manuscript culture. Paired with Chinese paper evidence, what diffusion claim becomes possible? What additional dating or workshop evidence would strengthen the chain between the two regions?'}
-  ];
+  lesson.images = [
+  { title: 'Great Buddha at the Mogao Caves, Dunhuang', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha,_Cave_96,_Mogao_Caves.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Buddha,_Cave_96,_Mogao_Caves.jpg', caption: 'Religious-diffusion evidence. The Mogao cave complex at the Silk Road oasis of Dunhuang preserves centuries of Buddhist patronage along an overland exchange corridor.', prompt: 'NOTICE the scale and religious imagery. What can you INFER about Buddhism’s presence at a trade-route oasis? What evidence would you need to prove how merchants, rulers, and monks each contributed to diffusion?' },
+  { title: 'Jiaozi Paper Money in Song China', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg', caption: 'Technology-origin evidence. Paper and printing were established technologies in China before their wider diffusion westward.', prompt: 'NOTICE the sophisticated use of paper. What does this establish about the technology at its eastern origin? What does it not prove about the route by which papermaking later spread?' },
+  { title: 'Urban-Fortunes Evidence — Cities Rise and Decline', label: 'CED historical development · Topic 2.5', sourceText: ['The fate of cities varied as productivity, trade routes, political power, and conflict changed.', 'Some places experienced increased urbanization while others declined as networks and political conditions shifted.'], caption: 'CED-aligned historical-development anchor, paraphrased rather than quoted from a primary source.', prompt: 'Why can the same era of expanding interregional trade produce growth in some cities and decline in others? What city-level evidence would you seek to test the claim?' },
+  { title: 'Travel-Account Evidence — A More Connected World', label: 'CED illustrative examples · Topic 2.5', sourceText: ['More travelers moved through intensified exchange networks and left written accounts of distant societies.', 'Ibn Battuta, Marco Polo, and Margery Kempe provide three different examples of travel writing from the wider period.'], caption: 'CED-aligned travel-account anchor. The wording is a synthesis, not a quotation from any traveler.', prompt: 'How does the growth of travel writing itself provide evidence of connectivity? What limits would you place on using one traveler’s account to generalize about an entire society?' }
+];
 })();

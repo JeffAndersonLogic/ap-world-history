@@ -24,50 +24,49 @@
 })();
 
 window.BEHISTORICAL_LESSON = {
-
   meta: {
-    course: "AP WORLD HISTORY",
-    unit: "Unit 2: Networks of Exchange",
-    topic: "Topic 2.2",
-    title: "The Mongol Empire: Conquest, Connection, and the Pax Mongolica",
-    subtitle: "Expansion, administration, and transregional exchange c. 1200–1450",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
+    course: 'AP WORLD HISTORY',
+    unit: 'Unit 2: Networks of Exchange',
+    topic: 'Topic 2.2',
+    title: 'The Mongol Empire',
+    subtitle: 'State building, fragmentation, exchange, and cultural transfer across Eurasia c. 1200–1450',
+    feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
 
   learningTargets: [
     {
-      target: "I can explain how the Mongols conquered and administered a vast empire spanning from China to Eastern Europe.",
+      target: 'I can explain how the Mongols built a vast Eurasian empire and why that empire fragmented into regional khanates over time.',
       kc: 'KC-3.2.I.B.iii',
-      theme: "Governance"
+      theme: 'Governance'
     },
     {
-      target: "I can explain how the Pax Mongolica facilitated trade, travel, and exchange across Eurasia.",
+      target: 'I can explain how Mongol expansion facilitated Afro-Eurasian trade and communication without treating the Silk Roads as a new Mongol invention.',
       kc: 'KC-3.1.I.E.i',
-      theme: "Economics"
+      theme: 'Economic Systems'
     },
     {
-      target: "I can describe the effects of Mongol rule, both destructive consequences and the connective networks it created.",
+      target: 'I can explain how Mongol-era interregional contact encouraged technological and cultural transfers across Eurasia.',
       kc: 'KC-3.2.II.A.ii',
-      theme: "Governance"
+      theme: 'Cultural Developments and Interactions'
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can use specific evidence, cavalry tactics, siege warfare, Genghis Khan's unification of the steppe, or the khanate system, to explain how the Mongols built and governed their empire.",
+      criteria: 'I can connect Mongol military organization and adaptation to conquest, then connect succession, distance, and regional interests to fragmentation into the Yuan, Ilkhanate, Chagatai Khanate, and Golden Horde.',
       kc: 'KC-3.2.I.B.iii',
-      theme: "Governance"
+      theme: 'Governance'
     },
     {
-      criteria: "I can explain how the Pax Mongolica created conditions for expanded trade and cultural exchange, using evidence such as the Yam postal system, protection of merchants, and the travels of Marco Polo or Ibn Battuta.",
+      criteria: 'I can explain how merchant protection, reduced political barriers, and the Yam relay system improved trade and communication across Mongol-controlled Eurasia.',
       kc: 'KC-3.1.I.E.i',
-      theme: "Economics"
+      theme: 'Economic Systems'
     },
     {
-      criteria: "I can identify both destructive effects (massacre, depopulation, destruction of Baghdad) and connective effects (trade, plague transmission, cultural exchange) of Mongol conquest and rule.",
+      criteria: 'I can use Greco-Islamic medical knowledge, numbering systems, and the adoption of the Uyghur script as evidence of cultural and technological transfer.',
       kc: 'KC-3.2.II.A.ii',
-      theme: "Governance"
+      theme: 'Cultural Developments and Interactions'
     }
   ],
 
@@ -93,79 +92,94 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "The Mongol Empire: Conquest, Administration, and the Pax Mongolica",
-    intro: "Use these cards to explain how the Mongols built the largest contiguous land empire in world history, how they governed it, and how Mongol rule transformed Eurasian networks of trade and exchange from c. 1200 to c. 1450.",
+    title: 'The Mongols: Build, Fragment, Connect, Transfer',
+    intro: 'Topic 2.2 is not just a conquest story. Students need to explain how Mongol states were built and fragmented, how imperial expansion changed the conditions of trade and communication, and how intensified contact moved knowledge and cultural practices across Eurasia.',
     videos: [
       {
         title: 'The MONGOL Empire, Explained [AP World History Review—Unit 2 Topic 2]',
         url: 'https://youtu.be/KHJLZBXUyzo',
         youtubeId: 'KHJLZBXUyzo',
-        prompt: 'Track how Mongol rule changed economic exchange and accelerated cultural transfers across Eurasia.'
+        prompt: 'Track four moves: state building, fragmentation, exchange, and cultural or technological transfer.'
       }
     ],
     segments: [
       {
-        title: "How the Mongols built their empire",
+        title: 'Big Rock 1: Build the Empire',
         bullets: [
-          "**Genghis Khan** (Temüjin) unified the fractured Mongolian steppe tribes by 1206 through a combination of military victories, strategic marriages, and a new merit-based army structure that broke traditional clan loyalties.",
-          "Mongol armies combined devastating **cavalry tactics**, speed, feigned retreats, and mounted archery, with advanced **siege warfare** techniques learned from conquered peoples, making them effective against both nomadic and settled opponents.",
-          "Expansion under Genghis Khan and his successors swept across Central Asia, northern China, Persia, and into Eastern Europe, creating the largest **contiguous land empire** in world history by the mid-13th century."
+          '**Genghis Khan** unified competing steppe groups and reorganized military loyalty around a larger command system, helping create a highly coordinated conquering force.',
+          'Mongol armies combined **mounted mobility, archery, intelligence, feigned retreat, and siege technologies borrowed from conquered peoples**, allowing them to defeat both nomadic and settled opponents.',
+          'The result was a vast land empire stretching across much of Eurasia, but conquest created a second problem: how to govern enormous distances and diverse populations.'
         ],
         image: {
-          title: "Portrait of Genghis Khan",
-          caption: "A Yuan dynasty portrait of Genghis Khan, founder of the Mongol Empire, from the National Palace Museum, Taiwan.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg"
+          title: 'Genghis Khan',
+          caption: 'A later Yuan dynasty portrait of the founder of the Mongol Empire.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg'
         }
       },
       {
-        title: "Governing a vast empire",
+        title: 'Big Rock 2: Govern, Then Fragment',
         bullets: [
-          "After Genghis Khan's death, the empire was divided among his sons into four regional **khanates**, the Yuan (China), Ilkhanate (Persia), Chagatai (Central Asia), and Golden Horde (Russia/Eastern Europe), each with distinct character but shared Mongol identity.",
-          "The Mongols practiced **religious tolerance**, allowing Islam, Buddhism, Christianity, and other faiths to coexist within their domains, which helped them govern diverse conquered populations and attract skilled administrators from many backgrounds.",
-          "The **Yam postal relay system**, a network of horse stations spaced a day's ride apart, allowed rapid communication across thousands of miles, enabling the Khan to administer distant territories and supporting the movement of merchants and diplomats."
+          'Mongol rulers used **regional administration, religious tolerance, local officials, and the Yam relay system** to govern distance and diversity.',
+          'After Genghis Khan, succession disputes, regional interests, distance, and adaptation to local societies weakened political unity.',
+          'The empire fragmented into major **Mongol khanates**, including the Yuan dynasty, Ilkhanate, Chagatai Khanate, and Golden Horde. Mongol rule continued, but as multiple regional states rather than one unified empire.'
         ],
         image: {
-          title: "Silk Road routes across Afro-Eurasia",
-          caption: "Under the Pax Mongolica, the overland routes of the Silk Roads experienced a period of relative safety and expanded trade.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Silk_route.jpg"
+          title: 'Mongol successor khanates',
+          caption: 'Fragmentation demonstrates both continuity of Mongol rule and decline of unified imperial control.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MongolEmpireDivisions1300.png',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png'
         }
       },
       {
-        title: "The Pax Mongolica and its effects",
+        title: 'Big Rock 3: Empire Facilitated Exchange',
         bullets: [
-          "The **Pax Mongolica** (Mongol Peace), roughly 1250–1350, created conditions for unprecedented long-distance travel: merchants, missionaries, and diplomats like Marco Polo crossed Eurasia under Mongol protection, generating new records of cross-cultural encounter.",
-          "Mongol rule had **devastating consequences** as well: the sack of Baghdad in 1258 ended the Abbasid Caliphate and killed hundreds of thousands, while the destruction of Central Asian cities like Merv and Samarkand reduced some populations by a majority.",
-          "The same trade routes that enabled the Pax Mongolica also transmitted the **Black Death**, bubonic plague spread westward along Silk Road routes from Central Asia in the 1340s, killing an estimated one-third of Europe's population and millions more across Afro-Eurasia."
+          'Mongol expansion drew more people into connected imperial economies and lowered some political barriers across long stretches of Eurasia.',
+          'Merchant protection and the **Yam postal relay system** improved communication and made long-distance movement more predictable across Mongol-controlled territory.',
+          'The **Pax Mongolica** did not create the Silk Roads. It changed the conditions on existing routes, helping trade, diplomacy, travel, and communication intensify.'
         ],
         image: {
-          title: "The Pax Mongolica as a system",
-          caption: "BeHistorical topic artwork for this card. Mongol rule lowered the cost of moving goods, people, and ideas across Eurasia, and raised the cost of resisting.",
-          url: "",
-          sourceUrl: ""
+          title: 'Silk Road routes across Eurasia',
+          caption: 'Mongol rule altered the political conditions along established overland exchange networks.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
+        }
+      },
+      {
+        title: 'Big Rock 4: Contact Transferred Knowledge',
+        bullets: [
+          'Mongol-era interregional contact helped **Greco-Islamic medical knowledge** circulate toward western Europe through wider Eurasian connections.',
+          '**Numbering systems** and mathematical knowledge moved across cultural boundaries into Europe through intensified interregional exchange.',
+          'The Mongols **adopted the Uyghur script** for administrative purposes, showing that conquerors also borrowed useful cultural practices from peoples they encountered.'
+        ],
+        image: {
+          title: 'Transfer across a connected Eurasia',
+          caption: 'The Mongol Empire mattered not only for movement of goods but for the transfer and adaptation of knowledge.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
         }
       }
     ]
   },
 
   map: {
-    title: "Map of the Four Khanates of the Mongol Empire, c. 1300",
-    url: "https://www.worldhistory.org/uploads/images/20677.png?v=1763692145-1752588003",
-    sourceUrl: "https://www.worldhistory.org/image/20677/map-of-the-four-khanates-of-the-mongol-empire-c-13/",
-    caption: "Map by Simeon Netchev, World History Encyclopedia (2025), licensed CC BY-NC-ND 4.0. It shows the four Mongol successor khanates in the early 1300s.",
-    intro: "Use the map to locate the four successor khanates, compare the regions they governed, and trace the geographic reach of Mongol rule across Eurasia.",
-    prompt: "How did the geography of the Eurasian steppe make Mongol expansion possible, and how did the sheer size of the empire create challenges for unified governance?",
+    title: 'Map of the Mongol Empire and Successor Khanates',
+    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MongolEmpireDivisions1300.png',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png',
+    caption: 'By c. 1300, Mongol political control had fragmented into regional khanates even as long-distance connections across Eurasia remained powerful.',
+    intro: 'Use the map twice: first to explain why governing continental scale was difficult, and then to explain why the same geographic reach could facilitate trade, communication, and knowledge transfer.',
+    prompt: 'How can the same geographic scale help explain both Mongol political fragmentation and increased interregional exchange?',
     notes: [
-      "The Mongol Empire stretched across steppe, desert, forest, and farmland, a diversity of environments that required flexible strategies for conquest and administration.",
-      "The four khanates that emerged after 1260 maintained Mongol identity while adapting to local conditions: the Yuan adopted Chinese administrative traditions, while the Ilkhanate eventually converted to Islam.",
-      "Key trade cities, Samarkand, Beijing, Tabriz, and Caffa on the Black Sea, became nodes in the Pax Mongolica exchange network and later transmission points for the Black Death."
+      'The empire\'s scale made unified rule difficult, contributing to regional khanates and political fragmentation.',
+      'Those khanates still overlapped with major overland exchange corridors, allowing merchants, officials, diplomats, and specialists to move across Eurasia.',
+      'The **Yuan**, **Ilkhanate**, **Chagatai Khanate**, and **Golden Horde** adapted to different regional conditions while preserving forms of Mongol political identity.',
+      'The map should support both required stories: **state building and decline** and **expanded trade and communication**.'
     ]
   },
 
   deepReading: {
     title: 'The Empire of the Relay',
-    desc: 'A textbook-depth companion on the decimal army that dissolved tribal loyalty, how the sieges were won with borrowed engineers, the yam and the khanates, the specialists and sciences that moved under Mongol rule, and how to write the destructive and connective effects in one paragraph instead of two. Optional.',
+    desc: 'A textbook-depth companion on Mongol conquest, regional khanates, the Yam, merchant protection, and the specialists, scripts, medical knowledge, and mathematical ideas that moved through a more connected Eurasia. Optional.',
     url: 'deep-reading-topic-2-2-mongol-empire.html'
   },
 
@@ -175,26 +189,26 @@ window.BEHISTORICAL_LESSON = {
   },
 
   evidenceLab: {
-    title: "Evidence Lab: Reading the Mongol Empire Through Evidence",
-    intro: "Use the evidence below to connect Mongol conquest and administration to broader historical arguments about power, exchange, and the consequences of empire.",
-    prompt: "Choose one piece of evidence and explain how it supports a claim about how the Mongols built their empire, governed it, or shaped the world through the Pax Mongolica.",
+    title: 'Evidence Lab: Proving Mongol Significance',
+    intro: 'Use evidence for all three CED dimensions of Topic 2.2: state change, exchange, and cultural or technological transfer.',
+    prompt: 'Choose one piece of evidence and explain whether it best demonstrates Mongol state building or decline, increased trade and communication, or technological and cultural transfer.',
     items: [
-      { title: "The Yam postal system", detail: "Evidence of sophisticated imperial administration, the relay network enabled both military communication and the commercial travel that defined the Pax Mongolica." },
-      { title: "The sack of Baghdad, 1258", detail: "Evidence of the destructive power of Mongol conquest, the end of the Abbasid Caliphate reshaped the Islamic world and demonstrated the costs of resistance." },
-      { title: "Marco Polo's travels, 1271–1295", detail: "Evidence of the connectivity the Pax Mongolica enabled, a Venetian merchant could cross Eurasia under Mongol protection and produce the most detailed European account of Asia to that point." }
+      { title: 'The Four Mongol Khanates', detail: 'Evidence that a unified empire fragmented into regional Mongol states as succession, distance, and regional interests weakened centralized control.' },
+      { title: 'The Yam Relay System', detail: 'Evidence that imperial administration also facilitated communication, travel, and commerce across enormous distances.' },
+      { title: 'Greco-Islamic Medical Knowledge and Numbering Systems', detail: 'Evidence that intensified interregional contact encouraged knowledge to move across cultural and geographic boundaries.' },
+      { title: 'Adoption of the Uyghur Script', detail: 'Evidence that the Mongols borrowed and adapted useful cultural practices from peoples within the connected Eurasian world.' }
     ]
   },
 
   primarySource: {
-    title: "Primary Source: William of Rubruck on Mongol Administration",
-    intro: "William of Rubruck was a Flemish Franciscan friar who traveled to the court of the Mongol Khan Möngke in 1253–1255. His account, written for King Louis IX of France, is one of the most detailed European descriptions of the Mongol Empire. This adapted passage reflects his observations of Mongol governance and religious tolerance.",
-    text: "\"The Khan's court was a place of many nations and many tongues. I saw there men of Russia, of Armenia, of Georgia, of Hungary, and of the Latin church, as well as followers of Muhammad and of the Buddha. The Khan himself questioned me about the faith of the Franks, and I answered him as best I could. He told me that he respected all who prayed to God sincerely, whatever their manner. His scribes kept records in several languages, and his messengers could travel the length of his empire with fresh horses waiting at every station. No merchant traveled without the Khan's seal of permission, but those who carried it moved freely and in safety.\"",
-    attribution: "William of Rubruck, Itinerarium, an account of his journey to the court of Khan Möngke written for King Louis IX of France, 1253–1255",
+    title: 'Primary Source: William of Rubruck on Mongol Administration and Connectivity',
+    intro: 'William of Rubruck traveled to the court of Möngke Khan in the 1250s. His observations are useful evidence for the diversity, communication systems, and mobility that existed within Mongol-ruled Eurasia.',
+    text: '"The Khan\'s court was a place of many nations and many tongues. I saw there men of Russia, of Armenia, of Georgia, of Hungary, and of the Latin church, as well as followers of Muhammad and of the Buddha. The Khan himself questioned me about the faith of the Franks, and I answered him as best I could. He told me that he respected all who prayed to God sincerely, whatever their manner. His scribes kept records in several languages, and his messengers could travel the length of his empire with fresh horses waiting at every station. No merchant traveled without the Khan\'s seal of permission, but those who carried it moved freely and in safety."',
+    attribution: 'William of Rubruck, Itinerarium, an account of his journey to the court of Khan Möngke written for King Louis IX of France, 1253–1255',
     questions: [
-      "What does William of Rubruck's account reveal about how the Mongols governed a multiethnic, multireligious empire?",
-      "How does the Yam postal system described in this source help explain the functioning of the Pax Mongolica?",
-      "What is William's perspective as a European Christian friar, and how might that shape what he notices and what he leaves out?"
+      'What does this account reveal about Mongol strategies for governing a diverse empire?',
+      'How does the relay system described here help explain increased communication and movement?',
+      'What details suggest that Mongol rule could also create conditions for cultural and technological transfer?'
     ]
   }
-
 };

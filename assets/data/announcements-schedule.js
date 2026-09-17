@@ -440,10 +440,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.1',
         where: 'ebook/unit-2.html',
         required: [
-          '01 Not One Road, But Many: What the Silk Roads Were',
-          '02 Infrastructure: Caravanserais and Relay Stations',
-          '03 What Moved Along the Routes',
-          '04 Disease: The Unintended Consequence'
+          "01 The Road at Its Peak",
+          "02 The Caravan as a Firm",
+          "03 Caravanserai and Credit",
+          "04 Demand and Productive Response"
         ]
       }
     },
@@ -456,20 +456,16 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.1',
         where: 'ebook/unit-2.html',
         required: [
-          '01 Not One Road, But Many: What the Silk Roads Were',
-          '02 Infrastructure: Caravanserais and Relay Stations',
-          '03 What Moved Along the Routes',
-          '04 Disease: The Unintended Consequence'
+          "01 The Road at Its Peak",
+          "02 The Caravan as a Firm",
+          "03 Caravanserai and Credit",
+          "04 Demand and Productive Response"
         ]
       }
     },
 
     /* ---- Topic 2.1, Silk Roads --------------------------- */
-    // NOTE: dates extrapolated from the alternating pattern, not confirmed
-    // against the Canvas calendar. modules is a placeholder default (every
-    // module except 01 Map and 03 Content Delivery, which is a jump link
-    // with nothing to grade) until the real Canvas assignment names a
-    // DO THESE N subset; edit it once that exists.
+    // Unit 2 dates and required-module subsets are the current Canvas schedule.
     {
       date: '2026-09-16',
       cohort: 'green',
@@ -480,10 +476,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.2',
         where: 'ebook/unit-2.html',
         required: [
-          '01 From the Steppe to the World: Mongol Conquest',
-          '02 Governing a Vast Empire: Khanates and Religious Tolerance',
-          '03 The Pax Mongolica: Peace and Trade',
-          '04 Destruction and Connectivity Together: The Paradox'
+          "01 The Steppe Problem, and What Temujin Changed",
+          "02 How They Won",
+          "03 How They Ruled",
+          "04 What Moved Under Them"
         ]
       }
     },
@@ -497,10 +493,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.2',
         where: 'ebook/unit-2.html',
         required: [
-          '01 From the Steppe to the World: Mongol Conquest',
-          '02 Governing a Vast Empire: Khanates and Religious Tolerance',
-          '03 The Pax Mongolica: Peace and Trade',
-          '04 Destruction and Connectivity Together: The Paradox'
+          "01 The Steppe Problem, and What Temujin Changed",
+          "02 How They Won",
+          "03 How They Ruled",
+          "04 What Moved Under Them"
         ]
       }
     },
@@ -515,10 +511,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.3',
         where: 'ebook/unit-2.html',
         required: [
-          '01 Wind as Technology: The Monsoon System',
-          '02 Who Traded and What They Carried',
-          '03 Port Cities and Diasporic Communities',
-          '04 Islam and the Indian Ocean'
+          "01 The Ships and the Sky",
+          "02 What a Shipload Changes",
+          "03 The Port City, and Trade Without a Policeman",
+          "04 The Merchant Communities"
         ]
       }
     },
@@ -531,10 +527,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.3',
         where: 'ebook/unit-2.html',
         required: [
-          '01 Wind as Technology: The Monsoon System',
-          '02 Who Traded and What They Carried',
-          '03 Port Cities and Diasporic Communities',
-          '04 Islam and the Indian Ocean'
+          "01 The Ships and the Sky",
+          "02 What a Shipload Changes",
+          "03 The Port City, and Trade Without a Policeman",
+          "04 The Merchant Communities"
         ]
       }
     },
@@ -549,10 +545,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.4',
         where: 'ebook/unit-2.html',
         required: [
-          '01 The Camel: A Technology That Crossed a Desert',
-          '02 Gold and Salt: The Perfect Trade',
-          '03 The Mali Empire: Wealth from Trade',
-          '04 Islam Crosses the Sahara'
+          "01 The Desert, and the Animal That Solved It",
+          "02 Gold and Salt",
+          "03 The Caravan Cities, and Who Took a Cut",
+          "04 What Islam Did for the Trade"
         ]
       }
     },
@@ -565,10 +561,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.4',
         where: 'ebook/unit-2.html',
         required: [
-          '01 The Camel: A Technology That Crossed a Desert',
-          '02 Gold and Salt: The Perfect Trade',
-          '03 The Mali Empire: Wealth from Trade',
-          '04 Islam Crosses the Sahara'
+          "01 The Desert, and the Animal That Solved It",
+          "02 Gold and Salt",
+          "03 The Caravan Cities, and Who Took a Cut",
+          "04 What Islam Did for the Trade"
         ]
       }
     },
@@ -583,10 +579,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.5',
         where: 'ebook/unit-2.html',
         required: [
-          '01 Religion Follows the Merchant',
-          '02 Technology Moves East to West',
-          '03 Agricultural and Crop Diffusion',
-          '04 Artistic and Intellectual Diffusion'
+          "01 How a Thing Travels",
+          "02 Religions in Motion",
+          "03 Techniques, With Dates",
+          "04 Cities Rise, Cities Decline"
         ]
       }
     },
@@ -599,10 +595,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.5',
         where: 'ebook/unit-2.html',
         required: [
-          '01 Religion Follows the Merchant',
-          '02 Technology Moves East to West',
-          '03 Agricultural and Crop Diffusion',
-          '04 Artistic and Intellectual Diffusion'
+          "01 How a Thing Travels",
+          "02 Religions in Motion",
+          "03 Techniques, With Dates",
+          "04 Cities Rise, Cities Decline"
         ]
       }
     },
@@ -617,10 +613,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.6',
         where: 'ebook/unit-2.html',
         required: [
-          '01 The Plague\'s Origins: From Ecology to Pandemic',
-          '02 How the Plague Traveled',
-          '03 Demographic Catastrophe: The Scale of Death',
-          '04 Social and Institutional Consequences'
+          "01 The Pathway",
+          "02 The Same Mortality, Opposite Results",
+          "03 Three Required Crop Diffusion Cases",
+          "04 Living Things on the Move"
         ]
       }
     },
@@ -633,10 +629,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.6',
         where: 'ebook/unit-2.html',
         required: [
-          '01 The Plague\'s Origins: From Ecology to Pandemic',
-          '02 How the Plague Traveled',
-          '03 Demographic Catastrophe: The Scale of Death',
-          '04 Social and Institutional Consequences'
+          "01 The Pathway",
+          "02 The Same Mortality, Opposite Results",
+          "03 Three Required Crop Diffusion Cases",
+          "04 Living Things on the Move"
         ]
       }
     },
@@ -651,10 +647,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.7',
         where: 'ebook/unit-2.html',
         required: [
-          '01 What All Three Networks Shared',
-          '02 How the Networks Differed: Technology and Goods',
-          '03 Cultural Differences: Which Religions Spread Where',
-          '04 How to Write AP Comparison'
+          "01 The Three Profiles",
+          "02 What All Three Shared",
+          "03 What Differed, and the One Mechanism Behind It",
+          "04 Consequences Compared"
         ]
       }
     },
@@ -667,10 +663,10 @@ window.BEHISTORICAL_SCHEDULE = {
         for: '2.7',
         where: 'ebook/unit-2.html',
         required: [
-          '01 What All Three Networks Shared',
-          '02 How the Networks Differed: Technology and Goods',
-          '03 Cultural Differences: Which Religions Spread Where',
-          '04 How to Write AP Comparison'
+          "01 The Three Profiles",
+          "02 What All Three Shared",
+          "03 What Differed, and the One Mechanism Behind It",
+          "04 Consequences Compared"
         ]
       }
     },
@@ -679,10 +675,8 @@ window.BEHISTORICAL_SCHEDULE = {
     // No reading assigned here: Topic 3.1 exists but is not yet in this
     // schedule, so there is no next meeting to derive a due date from. Add
     // the 3.1 reading here once Unit 3 gets dated class days.
-    // No module 09: 2.7's beInTheRoom has no url, so the renderer shows a
-    // coming-soon placeholder rather than a real Module 09 card, and
-    // module-list.js's unitModules() drops the number entirely instead of
-    // renumbering Checkpoint 2 down (that only happens with no beInTheRoom
+    // Module 09 now exists for 2.7, but the Canvas required-work subset intentionally
+    // remains 05, 06, 07, and 10. BeInTheRoom is available as optional enrichment.
     // field at all). This topic really runs 01-08 and 10, nine modules.
     {
       date: '2026-10-02',

@@ -24,50 +24,49 @@
 })();
 
 window.BEHISTORICAL_LESSON = {
-
   meta: {
-    course: "AP WORLD HISTORY",
-    unit: "Unit 2: Networks of Exchange",
-    topic: "Topic 2.1",
-    title: "The Silk Roads: Exchange Across Afro-Eurasia",
-    subtitle: "Overland trade, luxury goods, and the spread of goods, ideas, and disease c. 1200–1450",
-    feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
-    canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
+    course: 'AP WORLD HISTORY',
+    unit: 'Unit 2: Networks of Exchange',
+    topic: 'Topic 2.1',
+    title: 'The Silk Roads',
+    subtitle: 'Why overland exchange expanded after 1200, and what changed because it did',
+    feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
+    canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
 
   learningTargets: [
     {
-      target: "I can explain the causes of Silk Road growth, including state-building, pastoral nomads, and merchant networks that created and maintained overland routes.",
-      kc: 'KC-3.1.I.A.i',
-      theme: "Economics"
+      target: 'I can explain why Silk Roads trade expanded after 1200 by connecting demand, commercial practices, transportation infrastructure, and supporting political stability.',
+      kc: 'KC-3.1.I.A.i + KC-3.1.I.C.i',
+      theme: 'Economic Systems'
     },
     {
-      target: "I can describe the goods and ideas exchanged along the Silk Roads, including silk, spices, paper, gunpowder, Buddhism, Islam, and plague.",
-      kc: 'KC-3.3.I.B',
-      theme: "Economics"
-    },
-    {
-      target: "I can explain the effects of Silk Road trade on societies along the routes, including wealth accumulation, urbanization, and the spread of disease.",
+      target: 'I can explain how caravanserai, credit, banking houses, and paper money reduced the risk and difficulty of long-distance trade.',
       kc: 'KC-3.1.I.C.i',
-      theme: "Economics"
+      theme: 'Economic Systems'
+    },
+    {
+      target: 'I can explain how demand for luxury goods increased production and helped trading cities such as Kashgar and Samarkand grow.',
+      kc: 'KC-3.1.I.A.i + KC-3.3.I.B',
+      theme: 'Economic Systems'
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can use specific evidence, relay stations, pastoral nomads, caravanserais, or state protection, to explain what made overland trade across Afro-Eurasia possible.",
+      criteria: 'I can build a cause-and-effect chain: demand plus improved trade systems and lower political risk increased trade volume and geographic reach.',
       kc: 'KC-3.1.I.A.i',
-      theme: "Economics"
+      theme: 'Economic Systems'
     },
     {
-      criteria: "I can identify both goods (silk, spices, porcelain, paper, gunpowder) and ideas (Buddhism, Islam, Christianity, plague) that moved along the Silk Roads and explain their significance.",
-      kc: 'KC-3.3.I.B',
-      theme: "Economics"
-    },
-    {
-      criteria: "I can connect Silk Road exchange to specific effects on societies, including wealth, urban growth along routes, and the devastating spread of the Black Death.",
+      criteria: 'I can explain what caravanserai, bills of exchange, banking houses, and paper money actually did for merchants instead of only defining the terms.',
       kc: 'KC-3.1.I.C.i',
-      theme: "Economics"
+      theme: 'Economic Systems'
+    },
+    {
+      criteria: 'I can use Kashgar, Samarkand, Chinese porcelain, Persian and Indian textiles, and Chinese iron and steel as evidence of economic change.',
+      kc: 'KC-3.1.I.A.i + KC-3.3.I.B',
+      theme: 'Economic Systems'
     }
   ],
 
@@ -93,79 +92,96 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "The Silk Roads: Infrastructure, Exchange, and Impact",
-    intro: "Use these cards to explain what made the Silk Roads function, what moved along them, and how overland trade transformed the societies it connected from c. 1200 to c. 1450.",
+    title: 'The Silk Roads: Demand, Infrastructure, and Urban Growth',
+    intro: 'This lesson is an economic causation lesson. Students should leave able to explain why Silk Roads trade expanded after 1200 and how that expansion changed production and trading cities.',
     videos: [
       {
-        title: 'The SILK ROADS [AP World Review—Unit 2 Topic 1]',
+        title: 'The SILK ROADS [AP World Review - Unit 2 Topic 1]',
         url: 'https://youtu.be/daiQ6aChKfk',
         youtubeId: 'daiQ6aChKfk',
-        prompt: 'Track the commercial innovations, trading cities, and cultural diffusion that expanded Silk Road exchange.'
+        prompt: 'Watch for demand, commercial innovations, trading cities, production for export, and political conditions that reduced merchant risk.'
       }
     ],
     segments: [
       {
-        title: "What made the Silk Roads possible",
+        title: 'The Big Argument',
         bullets: [
-          "**Caravanserais**, government-sponsored rest stops spaced roughly a day's travel apart, provided water, food, lodging, and security for merchants and their animals.",
-          "**Pastoral nomads**, especially Turkic and Mongol peoples of Central Asia, served as intermediaries and guides, profiting from fees and tolls while connecting settled civilizations.",
-          "State protection and political stability were essential: when empires like the Mongol khanates guaranteed safe passage, trade volumes surged along the routes."
+          '**Silk Roads trade expanded after 1200 because demand for luxury goods increased and merchants had better systems for moving goods and money.**',
+          'The important AP move is not memorizing terms. Students must explain the mechanism: how each system lowered risk, cost, or distance problems.',
+          'Relative **political stability and state protection** could further reduce merchant risk; under Mongol rule this supporting condition became especially important across large stretches of Eurasia.',
+          'The result was greater trade volume, wider geographic reach, growth of trading cities, and expanded production for export.'
         ],
         image: {
-          title: "Silk Road routes across Afro-Eurasia",
-          caption: "A map of the overland Silk Roads connecting China, Central Asia, Southwest Asia, and the Mediterranean world.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Silk_route.jpg"
+          title: 'Silk Road routes across Afro-Eurasia',
+          caption: 'The Silk Roads were a network of routes, nodes, markets, and stopping points, not one continuous road.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
         }
       },
       {
-        title: "What moved along the Silk Roads",
+        title: 'Cause: Demand for Luxury Goods',
         bullets: [
-          "Luxury goods such as **silk**, spices, porcelain, and glassware moved from East to West, while horses, wool, gold, and silver moved in return, trade was rarely balanced but always mutually beneficial.",
-          "Technologies including **paper**, printing, gunpowder, and the magnetic compass spread westward from China, reshaping warfare, communication, and navigation across Afro-Eurasia.",
-          "Religions and ideas also traveled: **Buddhism** spread from India into Central and East Asia, **Islam** reached Central Asian merchants and communities, and epidemic disease, including the **Black Death**, moved along the same routes as goods."
+          '**Luxury goods** were high-value products that were worth moving across long distances because elites were willing to pay for them.',
+          'Chinese artisans and merchants expanded production of **porcelain** and textiles for export; Persian and Indian merchants expanded textile production; Chinese iron and steel production also expanded.',
+          'Demand gave merchants the incentive to solve the problem of distance. Without demand, the network would not intensify.'
         ],
         image: {
-          title: "Silk Road routes in the 7th century",
-          caption: "Overland and maritime routes connecting Afro-Eurasian civilizations. By c. 1200 these routes were well established.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_%28c.1200_CE%29.jpg"
+          title: 'Chinese porcelain for export',
+          caption: 'Porcelain is useful evidence because it shows both demand and expanded production for long-distance trade.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Blue%20and%20white%20porcelain%20dish%20with%20three%20friends%20of%20winter%2C%20Yuan%20dynasty.JPG',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Blue_and_white_porcelain_dish_with_three_friends_of_winter,_Yuan_dynasty.JPG'
         }
       },
       {
-        title: "How the Silk Roads changed societies",
+        title: 'Cause: Transportation and Commercial Systems',
         bullets: [
-          "Oasis cities along the routes, Samarkand, Kashgar, Dunhuang, grew wealthy and cosmopolitan as **trade hubs**, attracting merchants, scholars, and craftspeople from across Afro-Eurasia.",
-          "Societies that controlled key nodes accumulated enormous **wealth** through taxes, tolls, and direct commerce, fueling state power and cultural patronage.",
-          "The **Black Death** (bubonic plague), carried by fleas on rodents transported along trade routes, devastated populations across Eurasia in the mid-14th century, demonstrating that connectivity accelerated both prosperity and catastrophe."
+          '**Caravanserai** made overland trade more practical by providing rest, water, food, animal care, storage, protection, markets, and information.',
+          '**Bills of exchange** and **banking houses** reduced the danger of carrying large amounts of money overland.',
+          '**Paper money** and money economies made transactions easier, allowing trade to move through multiple cities and merchants.',
+          'Political stability did not replace these systems, but it could make them work across wider areas by lowering the risk of conflict, banditry, and repeated political barriers.'
         ],
         image: {
-          title: "Jiaozi paper money — Song China",
-          caption: "Paper money reflects the commercialized economy that powered demand for Silk Road luxury goods.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg"
+          title: 'Caravanserai courtyard',
+          caption: 'Caravanserai were trade infrastructure: they turned long journeys into manageable stages.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravanserai%20of%20Saad%20al-Saltaneh%20Qazvin%2004.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravanserai_of_Saad_al-Saltaneh_Qazvin_04.jpg'
+        }
+      },
+      {
+        title: 'Effect: Cities and Production Grew',
+        bullets: [
+          'Improved commercial practices increased trade volume and expanded the geographic range of the Silk Roads.',
+          '**Kashgar** and **Samarkand** grew because they sat at strategic network nodes where merchants exchanged goods, money, languages, and information.',
+          'The demand for luxury goods pushed producers in China, Persia, and India to expand production for export markets.'
+        ],
+        image: {
+          title: 'Samarkand as a Silk Roads hub',
+          caption: 'Samarkand matters because it is evidence that trade networks create powerful urban nodes.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Registan%20square%20Samarkand.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Registan_square_Samarkand.jpg'
         }
       }
     ]
   },
 
   map: {
-    title: "Silk Road Routes Across Afro-Eurasia",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Silk_route.jpg",
-    caption: "The overland Silk Roads connected China to the Mediterranean through Central Asia and Southwest Asia.",
-    intro: "Use the map to trace how goods, people, and ideas moved across thousands of miles of steppe, desert, and mountain terrain.",
-    prompt: "How did geography, deserts, mountains, and steppe, shape which routes merchants used and which communities became wealthy trade hubs?",
+    title: 'Silk Road Routes Across Afro-Eurasia',
+    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',
+    caption: 'The overland Silk Roads connected East Asia, Central Asia, Southwest Asia, and the Mediterranean through a network of routes and cities.',
+    intro: 'Use the map to show why Central Asian nodes mattered. Do not teach the map as a line to memorize. Teach it as a system of routes, stopping points, cities, commercial practices, and political jurisdictions.',
+    prompt: 'Why would cities located at crossroads, oases, and route junctions become wealthy and powerful, especially when political conditions made movement safer?',
     notes: [
-      "The routes were not a single road but a network of paths across multiple environments, requiring local knowledge and intermediaries.",
-      "Central Asian pastoral peoples occupied the geographic middle of the system and profited as guides, guards, and traders.",
-      "Cities on the routes, Samarkand, Kashgar, Dunhuang, reflected the cosmopolitan wealth generated by centuries of exchange."
+      'Kashgar and Samarkand were not random names; they were trade nodes where routes, merchants, services, and information converged.',
+      'Geography shaped the network by forcing merchants through usable corridors across deserts, mountains, and steppe.',
+      'The map helps students see why commercial infrastructure and credit systems mattered: distance created risk, and trade systems reduced that risk.',
+      'Relative political stability could lower a different kind of risk. Topic 2.2 develops the Mongol example in depth.'
     ]
   },
 
   deepReading: {
     title: 'The Business of the Road',
-    desc: 'A textbook-depth companion treating the overland routes as a business: what a caravan cost to run, what a caravanserai did, the partnership contracts and Mongol-financed merchant associations that paid for it, and why the traffic faded without anyone closing it. Optional, and useful when a checkpoint asks how something actually worked.',
+    desc: 'A textbook-depth companion on how overland trade actually worked: caravanserai, commercial partnerships, credit, money, political conditions, production, and the cities that grew from exchange.',
     url: 'deep-reading-topic-2-1-silk-roads.html'
   },
 
@@ -175,26 +191,27 @@ window.BEHISTORICAL_LESSON = {
   },
 
   evidenceLab: {
-    title: "Evidence Lab: Reading the Silk Roads Through Evidence",
-    intro: "Use the evidence below to connect Silk Road exchange to broader historical arguments about trade, technology, and the consequences of connectivity.",
-    prompt: "Choose one piece of evidence and explain how it supports a claim about what made the Silk Roads possible, what moved along them, or how they changed societies.",
+    title: 'Evidence Lab: Proving the Silk Roads Argument',
+    intro: 'Every piece of evidence should support the same claim: after 1200, demand and improved trade systems expanded overland exchange and changed cities and production.',
+    prompt: 'Choose one piece of evidence and explain how it supports the claim that Silk Roads trade expanded after 1200.',
     items: [
-      { title: "Caravanserais", detail: "Evidence of state investment in trade infrastructure and the conditions that made long-distance commerce practical." },
-      { title: "Paper and gunpowder moving westward", detail: "Evidence of technology transfer along the Silk Roads and its transformative effects on societies far from China." },
-      { title: "The Black Death, 1340s–1350s", detail: "Evidence that the same networks enabling commercial exchange also accelerated the spread of epidemic disease across Afro-Eurasia." }
+      { title: 'Caravanserai', detail: 'Evidence that transportation infrastructure reduced the cost and risk of overland trade.' },
+      { title: 'Bills of exchange and banking houses', detail: 'Evidence that commercial practices made long-distance transactions safer and easier.' },
+      { title: 'Political stability and state protection', detail: 'Supporting evidence that lower political risk could help merchants move more predictably across larger stretches of the network.' },
+      { title: 'Kashgar and Samarkand', detail: 'Evidence that increased trade promoted the growth of powerful trading cities.' },
+      { title: 'Porcelain, textiles, iron, and steel', detail: 'Evidence that demand for luxury goods encouraged expanded production for export.' }
     ]
   },
 
   primarySource: {
-    title: "Primary Source: Marco Polo on the Silk Roads",
-    intro: "Marco Polo traveled the Silk Roads in the late 13th century and recorded observations about trade, cities, and commerce across Central Asia and China. This adapted passage reflects his account of Kublai Khan's domains.",
-    text: "\"The Great Khan has established a system of posts throughout his lands. At every twenty-five miles there stands a station where fresh horses await any messenger who carries the Khan's seal. In this way the Khan receives news from the most distant places in only a few days. Along the roads between the great cities, travelers find rest houses called caravanserais, where merchants may sleep and feed their animals. The roads are safe under the Khan's protection, and merchants carry great quantities of silk, spices, and gems from one end of the empire to the other.\"",
-    attribution: "Marco Polo, The Travels of Marco Polo (Il Milione), describing the domains of Kublai Khan, dictated c. 1298",
+    title: 'Primary Source: Marco Polo on Money and Exchange',
+    intro: 'Marco Polo described paper money in the Yuan Dynasty. Use this as evidence of the commercial systems that helped large economies support exchange.',
+    text: 'The Khan causes the bark of mulberry trees to be made into something like paper, but black. These pieces are issued with great solemnity, and merchants accept them throughout the Khan\'s dominions. With this paper money, people buy and sell all kinds of goods.',
+    attribution: 'Adapted from Marco Polo, The Travels of Marco Polo, dictated c. 1298',
     questions: [
-      "What specific infrastructure does Marco Polo describe, and how does it help explain why Silk Road trade expanded under Mongol rule?",
-      "What does this source reveal about the relationship between political power and commercial exchange?",
-      "What might this source leave out or misrepresent about the experience of ordinary merchants or peoples along the routes?"
+      'What commercial practice is described in this passage?',
+      'How would paper money make trade easier than relying only on metal coins?',
+      'How does this source support the claim that commercial practices helped trade expand?'
     ]
   }
-
 };
