@@ -42,17 +42,28 @@ A module does **not** need to repeat the entire CED. It needs a defined job in t
 
 Enrichment is allowed and encouraged. It is classified as supporting or enrichment only when it does not displace the protected core or consume another topic's instructional job.
 
+## Source-of-truth rules
+
+Generated student surfaces must never become independent curriculum copies.
+
+- Unit 2 First & 10 content is authored in `scripts/lib/reading-content/unit-2.js`; the student HTML pages are generated from that source.
+- Deep Reading content is authored in `scripts/lib/deep-reading-content/topic-2-x.js`.
+- The standalone Deep Reading page and `ebook/unit-2.html` are two generated surfaces of the **same Deep Reading source object**. A correction to one must therefore appear in both after regeneration.
+- `scripts/test/readings-reproducible.test.js` runs both `build-deep-readings.js --check` and `build-ebook.js --check`, so a hand-edit to either generated surface fails validation.
+- Renderer configs may enrich a topic's module experience, but they may not replace or contradict the canonical topic story.
+
 ## Automated safeguards
 
 - `scripts/lib/ced-unit2-contract.js` + `scripts/test/ced-unit2-contract.test.js` protect canonical CED coverage at a 100% merge requirement.
 - `scripts/lib/unit2-coherence-contract.js` + `scripts/test/unit2-instructional-coherence.test.js` protect cross-surface traceability and checkpoint alignment.
 - `scripts/run-tests.js offline` runs both contracts with the repository's existing structural and reproducibility tests.
 - Generated First & 10 pages are rebuilt from `scripts/lib/reading-content/unit-2.js` so authored source and student pages cannot silently diverge.
+- Deep Reading chapters and the Unit 2 eBook are rebuilt from `scripts/lib/deep-reading-content/topic-2-x.js`, eliminating the generated-HTML drift discovered during the second audit.
 - Unit 2 renderer configs no longer re-inject the stale topic architecture over corrected canonical lesson data.
 
 ## Current implementation scope
 
-The second-audit repair has now been applied to all seven Unit 2 renderer configs and all seven First & 10 authored readings. Topics 2.2, 2.5, 2.6, and 2.7 also received targeted Deep Reading repairs where the audit identified required concepts being buried or displaced. Topic 2.7 now has a functioning comparative BeInTheRoom scenario.
+The second-audit repair has now been applied to all seven Unit 2 renderer configs and all seven First & 10 authored readings. Deep Reading repairs are now stored in the canonical source modules rather than patched into generated HTML: Topic 2.1 was re-centered on demand, commercial systems, trading cities, and productive response; Topic 2.2 explicitly protects the three CED transfer examples; Topic 2.5 now protects urban change and travel writing; Topic 2.6 makes the required crop examples coequal with pathogen diffusion; and Topic 2.7 explicitly compares demand and productive capacity. The standalone chapters and Unit 2 eBook were regenerated from those same sources. Topic 2.7 now also has a functioning comparative BeInTheRoom scenario.
 
 The branch should not be certified or merged solely because these edits exist. The final certification sequence is:
 
