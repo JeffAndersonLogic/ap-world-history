@@ -1,0 +1,35 @@
+name: Unit 2 evidence finalize
+
+on:
+  push:
+    branches:
+      - fix-topic-2-1-content-structure
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix-topic-2-1-content-structure
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Finalize Unit 2 Evidence Labs
+        run: |
+          node scripts/finalize-unit2-evidence.js
+          node scripts/check-module07-authored.js
+      - name: Commit final evidence repairs and remove helpers
+        run: |
+          rm .github/workflows/unit2-evidence-finalize.yml
+          rm scripts/finalize-unit2-evidence.js
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Finalize Unit 2 Evidence Labs" || exit 0
+          git push origin HEAD:fix-topic-2-1-content-structure
