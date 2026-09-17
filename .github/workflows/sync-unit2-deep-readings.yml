@@ -6,6 +6,7 @@ on:
       - fix-topic-2-1-content-structure
     paths:
       - scripts/repair-unit2-deep-readings.js
+      - .github/workflows/sync-unit2-deep-readings.yml
 
 permissions:
   contents: write
