@@ -94,15 +94,15 @@
       focus: ['Name at least one specific gunpowder weapon and explain how it changed warfare.', 'Connect the military technology to territorial expansion by at least one empire.', 'Explain what advantage gunpowder weapons gave empires over their opponents.']
     },
     {
-      title: 'Checkpoint 2: Empires and Constantinople',
+      title: 'Checkpoint 2: Empires and Rivalries',
       subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'Major empires, their geographic expansion, and the significance of 1453.',
+      cardDesc: 'Major land empires, geographic expansion, and political or religious rivalry.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Describe the geographic expansion of at least TWO land-based empires after c. 1450. Then explain why the Ottoman conquest of Constantinople in 1453 was historically significant. Use specific evidence.',
+      prompt: 'Describe the geographic expansion of at least TWO land-based empires after c. 1450. Then explain ONE interstate rivalry named by the CED, either the Safavid–Mughal conflict or Songhai\'s conflict with Morocco, showing how political or religious disputes fueled the conflict.',
       responseType: 'Checkpoint 2',
-      terms: ['Ottoman Empire', 'Safavid Empire', 'Mughal Empire', 'Qing Dynasty', 'Constantinople', 'Istanbul', 'Byzantine Empire', 'Mehmed II', 'Bosphorus', 'trade routes'],
-      focus: ['Name at least two land-based empires and describe specific regions they conquered.', 'Explain at least two reasons why the 1453 conquest of Constantinople mattered.', 'Connect the fall of Constantinople to broader changes in Eurasian trade or politics.']
+      terms: ['Ottoman Empire', 'Safavid Empire', 'Mughal Empire', 'Qing Dynasty', 'Manchu', 'Safavid–Mughal conflict', 'Kandahar', 'Songhai', 'Morocco', 'Tondibi', 'Sunni', 'Shia', 'rivalry'],
+      focus: ['Name at least two land-based empires and describe specific regions they conquered.', 'Name one CED state rivalry and identify the states involved.', 'Explain how a political or religious dispute helped produce or intensify the conflict.']
     }
   ];
 
