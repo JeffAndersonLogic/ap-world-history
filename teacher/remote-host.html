@@ -45,7 +45,7 @@ const connEl=document.getElementById('connection');
 const qrBackdrop=document.getElementById('qrBackdrop');
 const qrCode=document.getElementById('qrCode');
 const qrPairCode=document.getElementById('qrPairCode');
-frame.src=(topic==='2-2'||topic==='2-1'||topic==='2-3')?'topic-'+topic+'-os.html':'command-center-topic-'+topic+'.html';
+frame.src=(topic==='2-2'||topic==='2-1'||topic==='2-3'||topic==='2-4')?'topic-'+topic+'-os.html':'command-center-topic-'+topic+'.html';
 let ipadUrl='',source=null,lastRemoteIndex=-1,reconnectTimer=null,lastIpadSeen=0,hasOpenedRelay=false;
 function makeToken(){const a=new Uint8Array(18);crypto.getRandomValues(a);return Array.from(a,b=>b.toString(16).padStart(2,'0')).join('');}
 const sessionKey='behistorical-remote-session-'+topic;
