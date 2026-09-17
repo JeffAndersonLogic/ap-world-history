@@ -226,9 +226,9 @@ Strong answer checklist: Name two regions. Explain one similarity. Use evidence 
 **Checkpoint 2 prompt.** Write a short comparison paragraph that explains one similarity and one difference between two Unit 1 societies.
 Strong answer checklist: Use two societies. Include similarity and difference. Explain why the pattern existed.
 
-## 2.1 The Silk Roads: Exchange Across Afro-Eurasia
+## 2.1 The Silk Roads
 
-**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Overland trade, luxury goods, and the spread of goods, ideas, and disease c. 1200–1450
+**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Why overland exchange expanded after 1200, and what changed because it did
 
 **College Board key concepts.**
 - KC-3.1.I.A.i (Economic Systems): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities. Illustrative examples: Kashgar, Samarkand.
@@ -245,9 +245,9 @@ Strong answer checklist: Name at least two factors that enabled Silk Road trade.
 **Checkpoint 2 prompt.** Explain two effects of Silk Road exchange on societies along the routes. Use specific evidence such as trade goods, religions, technology, or plague.
 Strong answer checklist: Identify at least two distinct effects. Use specific evidence, name a good, technology, religion, or disease. Explain how the effect changed a society or region along the routes.
 
-## 2.2 The Mongol Empire: Conquest, Connection, and the Pax Mongolica
+## 2.2 The Mongol Empire
 
-**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Expansion, administration, and transregional exchange c. 1200–1450
+**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. State building, fragmentation, exchange, and cultural transfer across Eurasia c. 1200–1450
 
 **College Board key concepts.**
 - KC-3.2.I.B.iii (Governance): Empires collapsed in different regions of the world and in some areas were replaced by new imperial states, including the Mongol khanates.
@@ -264,9 +264,9 @@ Strong answer checklist: Describe at least one military method. Describe at leas
 **Checkpoint 2 prompt.** Explain two effects of the Pax Mongolica on Afro-Eurasian exchange. Consider both positive effects (trade, diplomacy) and negative effects (plague).
 Strong answer checklist: Name at least two distinct effects. Explain whether each effect was connective, destructive, or both. Connect the Pax Mongolica to wider Afro-Eurasian patterns of exchange and disruption.
 
-## 2.3 Exchange in the Indian Ocean: Maritime Commerce and Cultural Connection
+## 2.3 Exchange in the Indian Ocean
 
-**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Monsoon winds, merchant communities, and Afro-Eurasian maritime exchange c. 1200–1450
+**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Monsoons, maritime technology, trading states, diasporas, and Zheng He c. 1200–1450
 
 **College Board key concepts.**
 - KC-3.1.I.A.ii (Economic Systems): Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Indian Ocean, promoting the growth of powerful new trading cities.
@@ -286,9 +286,9 @@ Strong answer checklist: Name at least two pieces of technology or environmental
 **Checkpoint 2 prompt.** Explain two effects of Indian Ocean trade on the societies connected by these routes. Use specific evidence such as goods traded, diasporic communities, or the spread of Islam.
 Strong answer checklist: Name at least two effects. Use specific place names or goods as evidence. Explain how the effect changed societies along the Indian Ocean world.
 
-## 2.4 Trans-Saharan Trade Routes: Gold, Salt, and the Spread of Islam
+## 2.4 Trans-Saharan Trade Routes
 
-**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. West African states, camel caravans, and cultural exchange across the Sahara c. 1200–1450
+**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Camel technology, expanding exchange, and Mali's role in Afro-Eurasian trade c. 1200–1450
 
 **College Board key concepts.**
 - KC-3.1.II.A.ii (Technology and Innovation): The growth of interregional trade was encouraged by innovations in existing transportation technologies. Illustrative examples: Camel saddle, Caravans.
@@ -305,9 +305,9 @@ Strong answer checklist: Explain the role of camels or camel technology. Name th
 **Checkpoint 2 prompt.** Explain two effects of trans-Saharan trade on West African societies. Use specific evidence such as the Mali Empire, Mansa Musa, or the spread of Islam.
 Strong answer checklist: Name at least two effects of trans-Saharan trade on West Africa. Use specific evidence, a ruler, city, religion, or institution. Explain how each effect changed West African society or its connections to the wider world.
 
-## 2.5 Cultural Consequences of Connectivity: Religion, Technology, and Ideas on the Move
+## 2.5 Cultural Consequences of Connectivity
 
-**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How trade networks spread religion, technology, crops, and artistic traditions c. 1200–1450
+**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How exchange networks moved beliefs and technologies, reshaped cities, and produced new travel accounts c. 1200–1450
 
 **College Board key concepts.**
 - KC-3.1.III.D (Cultural Developments and Interactions): Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations. Illustrative examples: The influence of Buddhism in East Asia, The spread of Hinduism and Buddhism into Southeast Asia, The spread of Islam in sub-Saharan Africa and Asia, Gunpowder from China, Paper from China.
@@ -324,9 +324,9 @@ Strong answer checklist: Name a specific religion. Explain the mechanism of spre
 **Checkpoint 2 prompt.** Explain how one technology or crop diffused along trade routes and affected societies. Use specific evidence.
 Strong answer checklist: Name a specific technology or crop. Explain where it originated and where it spread to. Explain how it changed the society that received it.
 
-## 2.6 Environmental Consequences of Connectivity: Disease, Death, and Ecological Change
+## 2.6 Environmental Consequences of Connectivity
 
-**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How trade routes spread the Black Death and transformed ecosystems c. 1200–1450
+**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How exchange networks spread crops and pathogens across Afro-Eurasia c. 1200–1450
 
 **College Board key concepts.**
 - KC-3.1.IV (Humans and the Environment): There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes. Illustrative examples: Bananas in Africa, New rice varieties in East Asia, Spread of citrus in the Mediterranean.
@@ -341,9 +341,9 @@ Strong answer checklist: Explain where plague originated. Explain the mechanism 
 **Checkpoint 2 prompt.** Explain one demographic or social consequence of the Black Death, and one crop or agricultural practice (such as bananas, new rice varieties, or citrus) that trade networks diffused in this same period. Use specific evidence for each.
 Strong answer checklist: Name one demographic or social consequence of the plague and explain how it changed a society or institution. Name one crop or agricultural practice that diffused along a trade network and explain how it changed farming, diet, or land use in its new region. Treat disease and crop diffusion as two separate consequences of the same connectivity, not one combined effect.
 
-## 2.7 Comparison of Economic Exchange: Silk Roads, Indian Ocean, and Trans-Saharan Networks
+## 2.7 Comparison of Economic Exchange
 
-**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Analyzing continuities and differences across Afro-Eurasian trade networks c. 1200–1450
+**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Comparing how the Silk Roads, Indian Ocean, and trans-Saharan networks solved similar exchange problems in different ways c. 1200–1450
 
 **College Board key concepts.**
 - KC-3.1 (Networks of Exchange): A deepening and widening of networks of human interaction within and across regions contributed to cultural, technological, and biological diffusion within and between various societies.
