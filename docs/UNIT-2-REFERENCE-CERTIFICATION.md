@@ -57,6 +57,8 @@ Where a card presents a CED historical-development anchor rather than a historic
 
 ## Technical-integrity rule
 
+**Final validation baseline:** Canvas schedule artifacts were regenerated after the certification review. The required CI gates must pass on this exact commit before merge.
+
 **This certification is valid for merge only when the required GitHub CI gates are green on the exact PR head.** In particular, the Unit 2 CED contract, Unit 2 instructional-coherence contract, and the complete Validate workflow (offline/structure plus browser contracts) must all pass. A later content change invalidates the technical-integrity portion until those checks run again.
 
 ## Scaling rule
