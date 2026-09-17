@@ -46,9 +46,15 @@ const qrBackdrop=document.getElementById('qrBackdrop');
 const qrCode=document.getElementById('qrCode');
 const qrPairCode=document.getElementById('qrPairCode');
 frame.src=(topic==='2-2'||topic==='2-1'||topic==='2-3')?'topic-'+topic+'-os.html':'command-center-topic-'+topic+'.html';
-let ipadUrl='',source=null,lastRemoteIndex=-1;
+let ipadUrl='',source=null,lastRemoteIndex=-1,reconnectTimer=null,lastIpadSeen=0,hasOpenedRelay=false;
 function makeToken(){const a=new Uint8Array(18);crypto.getRandomValues(a);return Array.from(a,b=>b.toString(16).padStart(2,'0')).join('');}
-const session=makeToken();
+const sessionKey='behistorical-remote-session-'+topic;
+let session='';
+try{session=sessionStorage.getItem(sessionKey)||'';}catch(e){}
+if(!/^[a-f0-9]{36}$/i.test(session)){
+  session=makeToken();
+  try{sessionStorage.setItem(sessionKey,session);}catch(e){}
+}
 const label=session.slice(0,6).toUpperCase();
 const relayTopic='behistorical-remote-'+session;
 const relayUrl='https://ntfy.sh/'+relayTopic;
@@ -59,13 +65,20 @@ function frameDoc(){try{return frame.contentDocument||frame.contentWindow.docume
 function click(sel){const d=frameDoc(),el=d&&d.querySelector(sel);if(el){el.click();return true;}return false;}
 function readIndex(){const d=frameDoc(),c=d&&d.querySelector('#count');if(!c)return 0;const m=(c.textContent||'').match(/(\d+)\s*\//);return m?Math.max(0,Number(m[1])-1):0;}
 function readState(){const d=frameDoc();if(!d)return null;const count=d.querySelector('#count'),title=d.querySelector('#appTitle,#headerTitle,#noteTitle');return{type:'state',index:readIndex(),count:count?count.textContent:'',title:title?title.textContent:'',sender:'host',ts:Date.now()};}
-async function publish(payload){try{await fetch(relayUrl,{method:'POST',body:JSON.stringify(Object.assign({sender:'host',ts:Date.now()},payload))});return true;}catch(e){connEl.textContent='Relay send failed — check internet';connEl.className='waiting';return false;}}
+async function publish(payload){try{const r=await fetch(relayUrl,{method:'POST',body:JSON.stringify(Object.assign({sender:'host',ts:Date.now()},payload))});if(!r.ok)throw new Error('HTTP '+r.status);return true;}catch(e){connEl.textContent='Relay send failed — retrying';connEl.className='waiting';scheduleReconnect();return false;}}
 function sendState(){const state=readState();if(state)publish(state);}
 function gotoIndex(target){target=Math.max(0,Number(target)||0);const current=readIndex(),delta=target-current;if(!delta)return;const key=delta>0?'ArrowRight':'ArrowLeft';for(let i=0;i<Math.abs(delta);i++){frame.contentWindow.document.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));}}
-function handle(data){if(!data||data.sender!=='ipad')return;connEl.textContent='iPad connected';connEl.className='connected';qrBackdrop.classList.add('hidden');switch(data.type){case'hello':sendState();return;case'next':click('#next');break;case'prev':click('#prev');break;case'start':click('#start');break;case'goto':gotoIndex(data.index);break;case'timer-toggle':click('#toggleTimer');break;case'timer-reset':click('#resetTimer');break;}setTimeout(sendState,100);}
+function handle(data){if(!data||data.sender!=='ipad')return;lastIpadSeen=Date.now();connEl.textContent='iPad connected';connEl.className='connected';qrBackdrop.classList.add('hidden');switch(data.type){case'hello':case'ping':sendState();return;case'next':click('#next');break;case'prev':click('#prev');break;case'start':click('#start');break;case'goto':gotoIndex(data.index);break;case'timer-toggle':click('#toggleTimer');break;case'timer-reset':click('#resetTimer');break;}setTimeout(sendState,100);}
 function parseRelayEvent(event){try{const outer=JSON.parse(event.data);if(outer.event!=='message'||!outer.message)return;handle(JSON.parse(outer.message));}catch(e){}}
-function startRelay(){source=new EventSource(relayUrl+'/sse');source.onopen=()=>{connEl.textContent='Waiting for iPad';connEl.className='waiting';renderQr();};source.onmessage=parseRelayEvent;source.onerror=()=>{connEl.textContent='Relay reconnecting…';connEl.className='waiting';};}
-frame.addEventListener('load',()=>{lastRemoteIndex=readIndex();setInterval(()=>{const i=readIndex();if(i!==lastRemoteIndex){lastRemoteIndex=i;if(connEl.classList.contains('connected'))sendState();}},1000);});
+function stopRelay(){if(source){try{source.close();}catch(e){}source=null;}}
+function scheduleReconnect(){if(reconnectTimer||document.visibilityState==='hidden')return;reconnectTimer=setTimeout(()=>{reconnectTimer=null;startRelay(false);},1800);}
+function startRelay(showQr){stopRelay();connEl.textContent=lastIpadSeen?'Reconnecting iPad…':'Starting secure relay…';connEl.className='waiting';source=new EventSource(relayUrl+'/sse');source.onopen=()=>{const firstOpen=!hasOpenedRelay;hasOpenedRelay=true;connEl.textContent=lastIpadSeen?'iPad connected':'Waiting for iPad';connEl.className=lastIpadSeen?'connected':'waiting';if((showQr||firstOpen)&&!lastIpadSeen)renderQr();if(lastIpadSeen)sendState();};source.onmessage=parseRelayEvent;source.onerror=()=>{stopRelay();connEl.textContent='Relay reconnecting…';connEl.className='waiting';scheduleReconnect();};}
+function recoverRelay(){if(document.visibilityState==='hidden'||!navigator.onLine)return;startRelay(false);}
+frame.addEventListener('load',()=>{lastRemoteIndex=readIndex();setInterval(()=>{const i=readIndex();if(i!==lastRemoteIndex){lastRemoteIndex=i;if(lastIpadSeen)sendState();}},1000);});
+setInterval(()=>{if(!lastIpadSeen)return;const age=Date.now()-lastIpadSeen;if(age>55000){connEl.textContent='iPad connection stale — recovering…';connEl.className='waiting';recoverRelay();return;}sendState();},20000);
+window.addEventListener('online',recoverRelay);
+window.addEventListener('pageshow',recoverRelay);
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')recoverRelay();});
 document.getElementById('openProjection').addEventListener('click',()=>click('#openProjection'));
 document.getElementById('showQr').addEventListener('click',renderQr);
 document.getElementById('closeQr').addEventListener('click',()=>qrBackdrop.classList.add('hidden'));
@@ -74,7 +87,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')qrBackdrop.classList
 async function copyIpadLink(button){const url=ipadUrl||buildIpadUrl();try{await navigator.clipboard.writeText(url);const old=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=old,1200);}catch(e){prompt('Open this on the iPad:',url);}}
 document.getElementById('copyLink').addEventListener('click',e=>copyIpadLink(e.currentTarget));
 document.getElementById('copyQrLink').addEventListener('click',e=>copyIpadLink(e.currentTarget));
-startRelay();
+startRelay(true);
 })();
 </script>
 </body>
