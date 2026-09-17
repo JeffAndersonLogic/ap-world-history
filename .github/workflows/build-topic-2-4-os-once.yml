@@ -1,0 +1,75 @@
+name: Build Topic 2.4 Teaching OS Once
+
+on:
+  push:
+    branches: [topic-2-4-teaching-os]
+    paths:
+      - '.github/workflows/build-topic-2-4-os-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: topic-2-4-teaching-os
+      - name: Build Topic 2.4 shell and routing
+        shell: python
+        run: |
+          from pathlib import Path
+
+          # Clone the current 2.3 Teaching OS shell so 2.4 inherits the same
+          # cockpit, projection, timer, briefing, run-of-show, and remote contract.
+          src = Path('teacher/topic-2-3-os.html').read_text()
+          out = src
+          out = out.replace('Topic 2.3', 'Topic 2.4')
+          out = out.replace('topic-2-3', 'topic-2-4')
+          out = out.replace('topic=2-3', 'topic=2-4')
+          out = out.replace('../unit-2/lesson-2-3-indian-ocean.html', '../unit-2/lesson-2-4-trans-saharan.html')
+          Path('teacher/topic-2-4-os.html').write_text(out)
+
+          # Projection wrapper.
+          present = Path('teacher/present-topic-2-3.html').read_text()
+          present = present.replace('Topic 2.3', 'Topic 2.4').replace('topic-2-3', 'topic-2-4')
+          Path('teacher/present-topic-2-4.html').write_text(present)
+
+          # Register the new Teaching OS in the generated teacher homepage and Today router.
+          p = Path('scripts/build-teacher-index.js')
+          text = p.read_text()
+          if "Topic 2.4 Teaching OS" not in text:
+            text = text.replace(
+              "  { label: 'Skills Lens',",
+              "  { label: 'Topic 2.4 Teaching OS', desc: 'Trans-Saharan trade: camel technology, caravan organization, expanded exchange, Mali, causation, and iPad control in one surface.', href: 'topic-2-4-os.html' },\n  { label: 'Skills Lens',"
+            )
+          if "{ key: '2.4', out: 'topic-2-4-os.html' }" not in text:
+            text = text.replace(
+              "  { key: '2.3', out: 'topic-2-3-os.html' },\n];",
+              "  { key: '2.3', out: 'topic-2-3-os.html' },\n  { key: '2.4', out: 'topic-2-4-os.html' },\n];"
+            )
+          p.write_text(text)
+
+          # Allow both halves of the iPad remote to load the 2.4 Teaching OS shell.
+          for name in ['teacher/remote-host.html', 'teacher/ipad-remote.html']:
+            p = Path(name)
+            text = p.read_text()
+            old = "(topic==='2-2'||topic==='2-1'||topic==='2-3')"
+            new = "(topic==='2-2'||topic==='2-1'||topic==='2-3'||topic==='2-4')"
+            if old not in text and new not in text:
+              raise SystemExit(f'Expected remote routing contract not found in {name}')
+            p.write_text(text.replace(old, new))
+
+      - name: Regenerate teacher home
+        run: node scripts/build-teacher-index.js
+      - name: Verify generated teacher home
+        run: node scripts/build-teacher-index.js --check
+      - name: Remove one-time workflow and commit
+        run: |
+          rm .github/workflows/build-topic-2-4-os-once.yml
+          git config user.name "JeffAndersonLogic"
+          git config user.email "jeff@andersonlogic.net"
+          git add teacher/topic-2-4-os.html teacher/present-topic-2-4.html teacher/data/topic-2-4-teaching.js teacher/remote-host.html teacher/ipad-remote.html scripts/build-teacher-index.js teacher/index.html .github/workflows/build-topic-2-4-os-once.yml
+          git commit -m "Build Topic 2.4 Teaching OS"
+          git push origin HEAD:topic-2-4-teaching-os
