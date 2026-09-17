@@ -29,8 +29,8 @@ window.BEHISTORICAL_LESSON = {
     course: "AP WORLD HISTORY",
     unit: "Unit 3: Land-Based Empires",
     topic: "Topic 3.3",
-    title: "Empires and Belief Systems",
-    subtitle: "How rulers of land-based empires used religion to legitimize authority, manage diversity, and wage sectarian conflict c. 1450–c. 1750",
+    title: "Empires: Belief Systems",
+    subtitle: "Continuity and change in Christianity, Islam, and South Asian belief systems, c. 1450–c. 1750",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -93,53 +93,53 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "God and Empire: Religion as a Tool of Rule",
-    intro: "Use these cards to explain how the Ottoman, Safavid, Mughal, Qing, and European rulers of c. 1450–c. 1750 used religion to claim legitimacy, manage diversity, and wage religious conflict, and why some approaches succeeded while others provoked resistance.",
+    title: "Belief Systems in Motion: Reformation, Rivalry, and New Traditions",
+    intro: "Use these cards to explain continuity and change within belief systems from c. 1450 to c. 1750: Christianity changed through Protestant and Catholic reform, Ottoman-Safavid rivalry intensified the Sunni-Shia divide, and Sikhism developed in South Asia amid sustained interaction between Hinduism and Islam.",
     videos: [],
     segments: [
       {
-        title: "God and the Emperor: Using Religion to Rule",
+        title: "Christianity Changes: Protestant and Catholic Reformations",
         bullets: [
-          "**Ottoman sultans** claimed the title of **Caliph**, protector of Sunni Islam worldwide, giving their authority a religious dimension that extended beyond the empire's borders. The sultans also controlled Mecca and Medina, the two holiest sites in Islam, strengthening their claim to Islamic leadership and drawing pilgrims and scholars to their capital.",
-          "**Shah Ismail I** of the Safavid Empire forcibly converted Persia from Sunni to **Shia Islam** beginning in 1501, creating a state religion that distinguished the Safavid realm from Ottoman Sunni Islam and demanded loyalty through shared sectarian identity. The Shah positioned himself as both political and religious leader, divinely guided by the Shia Imams.",
-          "**Akbar** (r. 1556–1605) of the Mughal Empire pursued a policy of **religious tolerance**, incorporating Hindu Rajput nobles into the imperial administration, abolishing the jizya (poll tax on non-Muslims), and developing the **Din-i-Ilahi**, a syncretic spiritual movement drawing on Islam, Hinduism, Zoroastrianism, and Christianity to create an inclusive imperial identity.",
-          "The **Qing Dynasty** adopted **Confucian** ceremonial roles to satisfy Han Chinese subjects while simultaneously patronizing **Tibetan Buddhism** and its lamas, performing rituals from multiple traditions to signal legitimacy across their ethnically and religiously diverse empire."
+          "In 1517, **Martin Luther** challenged practices and claims of authority within the Catholic Church. The Protestant Reformation broke the institutional unity of western Christianity and helped produce new Protestant churches and confessional communities.",
+          "The Reformation represented **change**, but Christianity itself remained a major belief system. Protestant communities retained core Christian beliefs even as they rejected or reinterpreted Catholic institutions and practices.",
+          "The **Catholic Reformation** responded through renewed discipline, education, missionary activity, and reforms associated with the Council of Trent and religious orders such as the Jesuits.",
+          "The CED's key point is not simply that Christianity divided. Both Protestant and Catholic reform movements contributed to Christianity's continued growth and wider reach."
         ],
         image: {
-          title: "The Safavid Empire and the Ottoman-Safavid frontier",
-          caption: "The Safavid Empire at its height. The western frontier with the Ottoman Empire was both a military and a religious boundary, Sunni and Shia state power facing each other across contested terrain.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png"
+          title: "Martin Luther, c. 1530",
+          caption: "A reform leader whose challenge to Church authority became part of a major break within western Christianity.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lucas_Cranach_-_Portrait_of_Martin_Luther%2C_circa_1530.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Lucas_Cranach_-_Portrait_of_Martin_Luther,_circa_1530.jpg"
         }
       },
       {
-        title: "The Sunni-Shia Divide: Ottoman vs. Safavid",
+        title: "Islamic Continuity and Change: Ottoman-Safavid Rivalry",
         bullets: [
-          "The **Sunni-Shia split** dates to the death of the Prophet Muhammad in 632 CE and the question of succession. Sunnis accepted elected caliphs from the broader Muslim community; Shias believed authority should pass through the Prophet's family, specifically to Ali. By the 16th century, this theological divide had become a geopolitical fault line between two empires.",
-          "When **Shah Ismail I** conquered Persia and forced conversion to **Shia Islam**, he created a Shia state on the Ottoman empire's eastern border. The Ottomans saw Safavid Shiism as heresy, a direct challenge to their claim as defenders of Sunni Islam and the natural leaders of the Muslim world.",
-          "The **Battle of Chaldiran (1514)** was the defining military confrontation. Ottoman Sultan **Selim I** framed the invasion as a campaign against heresy as much as a war for territory. Ottoman artillery and infantry devastated the Safavid cavalry. Though the Ottomans won decisively, they could not hold Safavid territory, the Safavid state survived, and the rivalry defined the Ottoman-Safavid border for two centuries.",
-          "The **cuius regio, eius religio** principle, whose realm, his religion, applied not only to European states after the **Peace of Augsburg (1555)** but reflected the same logic used by both Ottoman and Safavid rulers: the ruler's faith defined the state's identity and the loyalty demanded of its subjects."
+          "The **Sunni-Shia division** within Islam long predated the Ottoman and Safavid empires. What changed in the early modern period was the way a political rivalry between two powerful states intensified that religious divide.",
+          "The Ottoman Empire identified strongly with **Sunni Islam**, while the Safavid state established **Twelver Shia Islam** as the dominant state tradition in Iran. Religious identity became intertwined with imperial competition and border politics.",
+          "At the **Battle of Chaldiran (1514)**, Ottoman and Safavid forces fought over political power and territory in a conflict also shaped by sectarian identity. The rivalry did not create the Sunni-Shia split, but it hardened and intensified it.",
+          "This is the continuity-and-change mechanism to remember: an existing religious division continued, while imperial rivalry increased its political significance."
         ],
         image: {
-          title: "Sultan Ahmed Mosque, Istanbul",
-          caption: "Ottoman rulers built Sunni legitimacy into the skyline of their capital, one answer to the question of how a state uses religion.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sultan_Ahmed_Mosque_Istanbul_Turkey_retouched.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Sultan_Ahmed_Mosque_Istanbul_Turkey_retouched.jpg"
+          title: "Battle of Chaldiran, 1514",
+          caption: "Ottoman-Safavid rivalry made an existing Sunni-Shia division more politically consequential.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma%2C_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB%2C_1524_%28National_Library_of_Israel%2C_Ms._Yah._Ar._1116%29.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma,_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB,_1524_(National_Library_of_Israel,_Ms._Yah._Ar._1116).jpg"
         }
       },
       {
-        title: "Accommodation vs. Enforcement: Akbar and Aurangzeb",
+        title: "Sikhism Develops in South Asia",
         bullets: [
-          "**Akbar** (r. 1556–1605) governed an empire where Muslims were a ruling minority over a Hindu majority. His response was systematic **accommodation**: he incorporated Hindu Rajput rulers through marriage alliances, abolished the jizya, opened the highest offices to men of every faith, and at his court at **Fatehpur Sikri** hosted weekly debates among Muslim, Hindu, Jain, Zoroastrian, and Christian scholars.",
-          "The **Din-i-Ilahi**, Akbar's 'Divine Faith', was a personal spiritual synthesis that drew on the best of every tradition he had studied. It never attracted more than a few dozen followers, but it signaled Akbar's rejection of religious exclusivism as a governing principle. In an empire of extraordinary diversity, tolerance was not weakness, it was strategy.",
-          "**Aurangzeb** (r. 1658–1707) reversed course. He reimposed the **jizya** on non-Muslims, ordered the destruction of Hindu temples and Sikh shrines, and enforced strict Sunni orthodoxy. His campaigns in the Deccan and against Sikh and Rajput leaders provoked rebellions across the subcontinent that drained imperial resources and weakened the empire's administrative coherence.",
-          "The comparison of Akbar and Aurangzeb is one of the most productive in AP World History: both were capable rulers of the same empire, a century apart. **Akbar's tolerance expanded the empire by drawing diverse elites into a shared imperial project. Aurangzeb's enforcement narrowed the empire's base of loyalty and fueled the rebellions that accelerated Mughal decline.**"
+          "**Guru Nanak** (1469–1539) taught in Punjab, a region where Hindu and Muslim communities had interacted for centuries through trade, migration, political rule, and devotional traditions.",
+          "Sikhism developed in that context of **Hindu-Muslim interaction**, but it became a distinct religious tradition with its own teachings, gurus, community practices, and institutions.",
+          "Nanak emphasized devotion to one God, ethical living, service, and the spiritual equality of people while rejecting rigid social and ritual boundaries.",
+          "Avoid reducing Sikhism to a simple 'blend' of Hinduism and Islam. The historical point is contextual: interaction helped shape the environment in which a new, distinct tradition developed."
         ],
         image: {
-          title: "Akbar receiving nobles at the Mughal court",
-          caption: "Akbar governed a mostly Hindu population as a Muslim ruler, and experimented with religious toleration as a tool of empire.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg"
+          title: "Guru Nanak, later devotional portrait",
+          caption: "A later devotional image of Guru Nanak, whose teachings helped form a distinct Sikh tradition in Punjab.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Guru_Nanak.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Portrait_of_Guru_Nanak.png"
         }
       }
     ]
