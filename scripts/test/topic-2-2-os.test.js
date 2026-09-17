@@ -111,7 +111,11 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
   check('2.2 student deck remains The Mongol Empire', student22?.meta?.title === 'The Mongol Empire', student22?.meta?.title);
   check('2.2 teacher preflight does not leak into student projection', !(student22?.slides || []).some(s => /teacher preflight/i.test(`${s.eyebrow || ''} ${s.title || ''}`)));
   check('2.2 student deck exposes the three Big Rocks', (student22?.slides || []).some(s => /three big rocks/i.test(s.title || '')));
-  check('2.2 student deck teaches the transfer requirement', (student22?.slides || []).some(s => /connection moves knowledge/i.test(s.title || '')));
+  const student22Text = JSON.stringify(student22?.slides || []);
+  check('2.2 student deck teaches KC-3.2.II.A.ii in dedicated example slides',
+    /Medical knowledge moves west/i.test(student22Text) &&
+    /Number systems move across cultures/i.test(student22Text) &&
+    /The Mongols borrow a writing system/i.test(student22Text));
   check('2.2 student deck does not expose teacher notes', !JSON.stringify(student22 || {}).includes('listenFor') && !JSON.stringify(student22 || {}).includes('avoid'));
 
   await new Promise(resolve => server.listen(0, resolve));
@@ -123,7 +127,7 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
     const { page, errors } = await localPage(browser, origin, 'teacher/topic-2-2-os.html');
     console.log('\n  Topic 2.2 teacher Teaching OS');
     const data = await teachingData(page);
-    check('2.2 renders teacher preflight plus the 19-slide CED sequence', data.slides.length === 20, `slides=${data.slides.length}`);
+    check('2.2 renders teacher preflight plus the 22-slide CED sequence', data.slides.length === 23, `slides=${data.slides.length}`);
     check('2.2 run of show covers the lesson', data.flow.length >= 11, `flow=${data.flow.length}`);
     for (const title of [
       'Do not teach the Mongols as a conquest story.',
@@ -133,16 +137,18 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
       'Regional rule solves distance',
       'The routes were older. The political conditions changed.',
       'Connection moves knowledge.',
+      'Medical knowledge moves west.',
+      'Number systems move across cultures.',
+      'The Mongols borrow a writing system.',
       'Contact -> Borrowing -> Adaptation -> Wider Reach',
       'State Change -> Connection -> Transfer -> Significance',
       'Answer Topic 2.2 in three moves.'
     ]) check(`2.2 includes “${title}”`, data.titles.some(t => t.includes(title)));
 
-    const transfer = data.slides.find(s => /connection moves knowledge/i.test(s.title || ''));
-    const transferText = JSON.stringify(transfer || {});
-    check('2.2 explicitly teaches Greco-Islamic medical transfer', /Greco-Islamic medical knowledge/i.test(transferText));
-    check('2.2 explicitly teaches numbering-system transfer', /Numbering systems/i.test(transferText));
-    check('2.2 explicitly teaches adoption of Uyghur script', /Uyghur script/i.test(transferText));
+    const transferText = JSON.stringify(data.slides.filter(s => s.phase === 'transfer'));
+    check('2.2 explicitly teaches Greco-Islamic medical transfer', /Greco-Islamic medical knowledge/i.test(transferText) && /GREEK TRADITIONS/i.test(transferText) && /WESTERN EUROPE/i.test(transferText));
+    check('2.2 explicitly teaches numbering-system transfer', /Numbering systems/i.test(transferText) && /SOUTH ASIA/i.test(transferText) && /ISLAMIC WORLD/i.test(transferText));
+    check('2.2 explicitly teaches adoption of Uyghur script', /Uyghur script/i.test(transferText) && /MONGOL ADOPTION/i.test(transferText) && /STATE USE/i.test(transferText));
 
     await verifyLocalVisual(page, 'The Mongol Empire', 'Steppes%20of%20Asia', '2.2 opening');
     await verifyLocalVisual(page, 'One empire becomes four Mongol states', 'Map%20of%20the%20Khanates', '2.2 khanates map');
