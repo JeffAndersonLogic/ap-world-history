@@ -90,4 +90,16 @@
     task: 'Choose TWO pieces of evidence. At least one must represent crop diffusion or agricultural change; the other may represent crop or pathogen movement.',
     prompt: 'Make one claim about how exchange networks changed Afro-Eurasian environments or populations. Use two pieces of evidence and explain whether each represents crop diffusion, pathogen diffusion, or both.'
   };
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: Crops and Pathogens on the Move',
+    task: 'Use the evidence to compare two environmental consequences of connectivity. Choose at least one crop-diffusion card and one pathogen/connectivity card. Observe first, infer second, and keep the two causal branches distinct.',
+    prompt: 'Using evidence from both crop diffusion and pathogen diffusion, explain how expanding exchange networks changed environments or populations. Cite one concrete detail from each card and explain one limitation of either source.'
+  };
+  lesson.images = [
+    { title: 'Crop Diffusion Across Afro-Eurasia', url: '../assets/images/instructional-maps/topic-2-6-crops.svg', sourceUrl: '../assets/images/instructional-maps/topic-2-6-crops.svg', caption: 'Secondary geographic reconstruction. The map traces the CED examples of bananas into Africa, new rice varieties into East Asia, and citrus around the Mediterranean.', prompt: 'NOTICE the three different crop movements. What can you INFER about how trade networks changed food production in receiving regions? What can a reconstruction not prove about the exact date or route of each transfer?' },
+    { title: 'Spread of the Black Death, c. 1340–1353', url: '../assets/images/instructional-maps/topic-2-6.svg', sourceUrl: '../assets/images/instructional-maps/topic-2-6.svg', caption: 'Secondary geographic reconstruction. The map plots the plague’s movement across trade corridors, coastlines, and densely connected regions.', prompt: 'NOTICE the sequence and direction of spread. What can you INFER about connectivity? What can a reconstructed map show about pattern that it cannot establish about individual transmission events?' },
+    { title: 'Silk Roads Across Afro-Eurasia', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg', caption: 'Secondary network evidence. A modern route map shows the exchange corridors that connected Central Asia with Southwest Asia and Europe.', prompt: 'NOTICE how exchange corridors linked regions. How could the same infrastructure move useful crops and dangerous pathogens? Why does a route map alone not prove what moved on a particular journey?' },
+    { title: 'Danse Macabre, Michael Wolgemut, 1493', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Danse_macabre_by_Michael_Wolgemut.png', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Danse_macabre_by_Michael_Wolgemut.png', caption: 'Later cultural-memory evidence. This 1493 print belongs to the post-Black Death European tradition of the “dance of death,” in which death reaches people across social ranks.', prompt: 'NOTICE who is represented alongside death. What can you INFER about the cultural memory of mass mortality? Why is a 1493 image evidence of memory rather than a direct eyewitness image of 1348?' }
+  ];
 })();

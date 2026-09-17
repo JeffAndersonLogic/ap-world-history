@@ -20,7 +20,7 @@ if(open){
 
 const demand=byTitle('Luxury goods made distance worth it');
 if(demand){
-  demand.visual=visual('2.1 - Chinese Porcelain.jpg','Chinese porcelain used as evidence of luxury demand and export production','Topic 2.1 classroom artifact visual');
+  demand.visual=visual('2.1 - Chinese Porcelain.svg','Chinese porcelain used as evidence of luxury demand and export production','INSTRUCTIONAL RECONSTRUCTION — BEHISTORICAL');
 }
 
 const caravanserai=byTitle('Caravanserai made distance manageable');

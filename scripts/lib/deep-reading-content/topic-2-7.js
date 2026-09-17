@@ -265,7 +265,7 @@ module.exports = {
             {
               "note": {
                 "kind": "howknow",
-                "label": "Comparison checkpoint",
+                "label": "How we know: comparison checkpoint",
                 "html": "Ask the same question of both networks: what did distant consumers demand, and how did producers or commercial institutions respond? That keeps demand, finance and production inside the comparison instead of reducing the unit to transportation technology."
               }
             }

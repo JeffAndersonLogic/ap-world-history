@@ -297,7 +297,7 @@ module.exports = {
             {
               "note": {
                 "kind": "howknow",
-                "label": "AP evidence checkpoint",
+                "label": "How we know: AP evidence checkpoint",
                 "html": "If a prompt asks for the significance of Mongol connectivity, avoid the generic phrase “ideas spread.” Name a transfer, give its direction, and explain what intensified contact made possible."
               }
             }

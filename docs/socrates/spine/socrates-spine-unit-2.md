@@ -19,19 +19,19 @@ wins. The block came from the lesson they are actually sitting in.
 **Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. Why overland exchange expanded after 1200, and what changed because it did
 
 **College Board key concepts.**
-- KC-3.1.I.A.i (Economic Systems): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities. Illustrative examples: Kashgar, Samarkand.
+- KC-3.1.I.A.i (Economic Systems): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Silk Roads, promoting the growth of powerful new trading cities. Illustrative examples: Kashgar, Samarkand.
 - KC-3.1.I.C.i (Economic Systems): The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies. Illustrative examples: Bills of exchange, Banking houses, Use of paper money.
 - KC-3.3.I.B (Economic Systems): Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.
 
-**Expected evidence terms.** caravanserai, pastoral nomads, relay stations, merchants, luxury goods, state-building, silk, porcelain, spices, paper, gunpowder, Buddhism, Islam, plague, Black Death, diffusion.
+**Expected evidence terms.** luxury goods, caravanserai, credit, bills of exchange, banking houses, paper money, Pax Mongolica, Kashgar, Samarkand, textiles, porcelain, iron, steel, production, trade volume.
 
 **AP skill focus.** Contextualization (Skill 4.A) and Causation.
 
-**Checkpoint 1 prompt.** Explain two causes of growth in Silk Road exchange. Use specific evidence such as state support, pastoral nomads, or caravanserais.
-Strong answer checklist: Name at least two factors that enabled Silk Road trade. Explain how each factor supported long-distance exchange. Connect your evidence to the broader pattern of Afro-Eurasian connectivity.
+**Checkpoint 1 prompt.** Explain how TWO factors increased Silk Roads trade after 1200. At least one factor must be a transportation or commercial practice. Explain the mechanism for each.
+Strong answer checklist: Name two causes. Explain how each lowered cost/risk or increased incentive. Connect the causes to greater trade volume or geographic range.
 
-**Checkpoint 2 prompt.** Explain two effects of Silk Road exchange on societies along the routes. Use specific evidence such as trade goods, religions, technology, or plague.
-Strong answer checklist: Identify at least two distinct effects. Use specific evidence, name a good, technology, religion, or disease. Explain how the effect changed a society or region along the routes.
+**Checkpoint 2 prompt.** Explain TWO effects of expanded Silk Roads trade after 1200. Use specific evidence from trading cities and/or production.
+Strong answer checklist: Identify two effects. Use specific CED-aligned evidence. Explain how expanding trade produced each effect.
 
 ## 2.2 The Mongol Empire
 
@@ -39,18 +39,18 @@ Strong answer checklist: Identify at least two distinct effects. Use specific ev
 
 **College Board key concepts.**
 - KC-3.2.I.B.iii (Governance): Empires collapsed in different regions of the world and in some areas were replaced by new imperial states, including the Mongol khanates.
-- KC-3.1.I.E.i (Economic Systems): The expansion of empires—including the Mongols—facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.
-- KC-3.2.II.A.ii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers. Illustrative examples: Transfer of Greco–Islamic medical knowledge to western Europe, Transfer of numbering systems to Europe, Adoption of Uyghur script.
+- KC-3.1.I.E.i (Economic Systems): The expansion of empires, including the Mongols, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.
+- KC-3.2.II.A.ii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers. Illustrative examples: Transfer of Greco-Islamic medical knowledge to western Europe, Transfer of numbering systems to Europe, Adoption of Uyghur script.
 
-**Expected evidence terms.** Genghis Khan, khanate, Pax Mongolica, Yam, siege warfare, cavalry, religious tolerance, trade, diplomacy, plague, Black Death, Marco Polo, Ibn Battuta, connectivity.
+**Expected evidence terms.** Genghis Khan, khanates, Yuan Dynasty, Ilkhanate, Golden Horde, administration, Pax Mongolica, trade, communication, Greco-Islamic medical knowledge, numbering systems, Uyghur script.
 
 **AP skill focus.** Making Connections (Skill 5.A) and Continuity and Change.
 
-**Checkpoint 1 prompt.** Explain how the Mongols conquered and administered their vast empire. Use specific evidence such as military tactics, the khanate system, or religious tolerance.
-Strong answer checklist: Describe at least one military method. Describe at least one administrative method. Explain how these methods helped hold together a vast, diverse empire.
+**Checkpoint 1 prompt.** Explain how the Mongols built a vast Eurasian empire and why that empire later fragmented into regional khanates. Use specific evidence for both parts.
+Strong answer checklist: Explain one method of state building. Identify the khanate pattern. Explain why governing distance contributed to fragmentation.
 
-**Checkpoint 2 prompt.** Explain two effects of the Pax Mongolica on Afro-Eurasian exchange. Consider both positive effects (trade, diplomacy) and negative effects (plague).
-Strong answer checklist: Name at least two distinct effects. Explain whether each effect was connective, destructive, or both. Connect the Pax Mongolica to wider Afro-Eurasian patterns of exchange and disruption.
+**Checkpoint 2 prompt.** Explain how Mongol expansion affected Eurasian trade and communication, then use ONE specific example of cultural or technological transfer to show why that connectivity mattered.
+Strong answer checklist: Explain how imperial expansion facilitated exchange. Use one required transfer example. Connect the example to a larger pattern of Eurasian interaction.
 
 ## 2.3 Exchange in the Indian Ocean
 
@@ -61,18 +61,18 @@ Strong answer checklist: Name at least two distinct effects. Explain whether eac
 - KC-3.1.I.C.ii (Economic Systems): The growth of interregional trade in luxury goods was encouraged by significant innovations in previously existing transportation and commercial technologies, including the use of the compass, the astrolabe, and larger ship designs.
 - KC-3.1.I.A.iii (Economic Systems): The Indian Ocean trading network fostered the growth of states. Illustrative examples: City-states of the Swahili Coast, Gujarat, Sultanate of Malacca.
 - KC-3.1.III.B (Cultural Developments and Interactions): In key places along important trade routes, merchants set up diasporic communities where they introduced their own cultural traditions into the indigenous cultures and, in turn, indigenous cultures influenced merchant cultures. Illustrative examples: Arab and Persian communities in East Africa, Chinese merchant communities in Southeast Asia, Malay communities in the Indian Ocean basin.
-- KC-3.2.II.A.iii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers, including during Chinese maritime activity led by Ming Admiral Zheng He.
+- KC-3.2.II.A.iii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers, including during Chinese maritime activity led by Ming admiral Zheng He.
 - KC-3.1.II.A.i (Humans and the Environment): The expansion and intensification of long-distance trade routes often depended on environmental knowledge, including advanced knowledge of the monsoon winds.
 
-**Expected evidence terms.** monsoon, dhow, compass, lateen sail, navigation, seasonal winds, spices, textiles, gold, ivory, diaspora, Islam, Kilwa, Calicut, Swahili, port city.
+**Expected evidence terms.** monsoon winds, compass, astrolabe, larger ship designs, Swahili Coast, Gujarat, Malacca, Arab and Persian merchants, Chinese merchants, Malay communities, Zheng He.
 
 **AP skill focus.** Making Connections (Skill 5.A) and Causation.
 
-**Checkpoint 1 prompt.** Explain how maritime technology and knowledge of monsoon winds enabled Indian Ocean trade. Use at least two specific examples.
-Strong answer checklist: Name at least two pieces of technology or environmental knowledge. Explain how each enabled long-distance sea trade. Connect the technology to the broader pattern of Indian Ocean exchange.
+**Checkpoint 1 prompt.** Explain how knowledge of monsoon winds and TWO maritime technologies helped expand Indian Ocean trade after 1200.
+Strong answer checklist: Explain the environmental factor. Use two technologies. Connect both to increased volume or geographic range of exchange.
 
-**Checkpoint 2 prompt.** Explain two effects of Indian Ocean trade on the societies connected by these routes. Use specific evidence such as goods traded, diasporic communities, or the spread of Islam.
-Strong answer checklist: Name at least two effects. Use specific place names or goods as evidence. Explain how the effect changed societies along the Indian Ocean world.
+**Checkpoint 2 prompt.** Explain TWO effects of expanded Indian Ocean trade. Your response must use one state-growth example and either a diasporic-community example or Zheng He.
+Strong answer checklist: Use one state-growth example. Use one diaspora or Zheng He example. Explain how trade growth produced the effect.
 
 ## 2.4 Trans-Saharan Trade Routes
 
@@ -80,37 +80,37 @@ Strong answer checklist: Name at least two effects. Use specific place names or 
 
 **College Board key concepts.**
 - KC-3.1.II.A.ii (Technology and Innovation): The growth of interregional trade was encouraged by innovations in existing transportation technologies. Illustrative examples: Camel saddle, Caravans.
-- KC-3.1.I.A.iv (Technology and Innovation): Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the trans-Saharan trade network.
-- KC-3.1.I.E.ii (Governance): The expansion of empires—including Mali in West Africa–facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.
+- KC-3.1.I.A.iv (Economic Systems): Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the trans-Saharan trade network.
+- KC-3.1.I.E.ii (Governance): The expansion of empires, including Mali in West Africa, facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.
 
-**Expected evidence terms.** camel, camel saddle, caravan, gold, salt, Taghaza, Wangara, oasis, Mali Empire, Mansa Musa, Timbuktu, Islam, hajj, mosque, scholarship.
+**Expected evidence terms.** camel saddle, caravan, gold, salt, trade volume, geographic range, Mali, Mansa Musa, Timbuktu, taxation, protection, trade, communication.
 
 **AP skill focus.** Developments and Processes (Skill 1.B) and Causation.
 
-**Checkpoint 1 prompt.** Explain how camel technology and demand for specific goods made trans-Saharan trade possible. Use specific evidence.
-Strong answer checklist: Explain the role of camels or camel technology. Name the main goods traded and why each was valuable. Connect the technology and goods to why this trade route existed.
+**Checkpoint 1 prompt.** Explain how camel technology and caravan organization increased the volume and geographic range of trans-Saharan trade. Use gold and/or salt as supporting evidence.
+Strong answer checklist: Explain the transportation innovation. Explain why exchange was profitable. Connect both to increased trade.
 
-**Checkpoint 2 prompt.** Explain two effects of trans-Saharan trade on West African societies. Use specific evidence such as the Mali Empire, Mansa Musa, or the spread of Islam.
-Strong answer checklist: Name at least two effects of trans-Saharan trade on West Africa. Use specific evidence, a ruler, city, religion, or institution. Explain how each effect changed West African society or its connections to the wider world.
+**Checkpoint 2 prompt.** Explain how Mali both benefited from and facilitated trans-Saharan trade and communication. Use at least two specific pieces of evidence.
+Strong answer checklist: Explain how Mali gained from trade. Explain how Mali helped sustain the network. Connect state power to wider exchange.
 
 ## 2.5 Cultural Consequences of Connectivity
 
 **Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How exchange networks moved beliefs and technologies, reshaped cities, and produced new travel accounts c. 1200–1450
 
 **College Board key concepts.**
-- KC-3.1.III.D (Cultural Developments and Interactions): Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations. Illustrative examples: The influence of Buddhism in East Asia, The spread of Hinduism and Buddhism into Southeast Asia, The spread of Islam in sub-Saharan Africa and Asia, Gunpowder from China, Paper from China.
+- KC-3.1.III.D (Cultural Developments and Interactions): Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations. Illustrative examples: Influence of Buddhism in East Asia, Spread of Hinduism and Buddhism into Southeast Asia, Spread of Islam in sub-Saharan Africa and Asia, Gunpowder from China, Paper from China.
 - KC-3.3.II (Cultural Developments and Interactions): The fate of cities varied greatly, with periods of significant decline and periods of increased urbanization, buoyed by rising productivity and expanding trade networks.
 - KC-3.1.III.C (Cultural Developments and Interactions): As exchange networks intensified, an increasing number of travelers within Afro-Eurasia wrote about their travels. Illustrative examples: Ibn Battuta, Margery Kempe, Marco Polo.
 
-**Expected evidence terms.** Islam, Buddhism, Christianity, merchant, diaspora, mosque, diffusion, trade route, paper, printing, gunpowder, compass, cotton, sugar, citrus, technology transfer.
+**Expected evidence terms.** Buddhism, Hinduism, Islam, paper, gunpowder, diffusion, urbanization, city decline, trade networks, Ibn Battuta, Marco Polo, Margery Kempe, travel account.
 
 **AP skill focus.** Sourcing and Situation (Skill 2.A) and Causation.
 
-**Checkpoint 1 prompt.** Explain how one religion spread along trade networks between c. 1200 and c. 1450. Use specific evidence about where, how, and through whom it spread.
-Strong answer checklist: Name a specific religion. Explain the mechanism of spread, who carried it and along which routes. Describe where it spread and what effect it had on receiving societies.
+**Checkpoint 1 prompt.** Explain how ONE cultural tradition or technology diffused through Afro-Eurasian exchange networks from c. 1200 to c. 1450. Use a specific CED example and explain how the network enabled movement.
+Strong answer checklist: Name a specific tradition or innovation. Identify where it moved. Explain how intensified exchange enabled the diffusion.
 
-**Checkpoint 2 prompt.** Explain how one technology or crop diffused along trade routes and affected societies. Use specific evidence.
-Strong answer checklist: Name a specific technology or crop. Explain where it originated and where it spread to. Explain how it changed the society that received it.
+**Checkpoint 2 prompt.** Explain ONE way intensified exchange affected cities and ONE way it increased written knowledge about distant societies. Use a traveler such as Ibn Battuta, Marco Polo, or Margery Kempe as evidence.
+Strong answer checklist: Explain a change in urban fortunes. Use a named traveler. Connect both developments to intensified exchange.
 
 ## 2.6 Environmental Consequences of Connectivity
 
@@ -119,15 +119,15 @@ Strong answer checklist: Name a specific technology or crop. Explain where it or
 **College Board key concepts.**
 - KC-3.1.IV (Humans and the Environment): There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes. Illustrative examples: Bananas in Africa, New rice varieties in East Asia, Spread of citrus in the Mediterranean.
 
-**Expected evidence terms.** bubonic plague, Yersinia pestis, Black Death, rodents, fleas, Central Asia, Silk Roads, maritime routes, demographic collapse, labor shortage, feudalism, Church authority, mortality, population, crop diffusion, bananas, new rice varieties, citrus.
+**Expected evidence terms.** bananas, new rice varieties, citrus, crop diffusion, agricultural productivity, population, bubonic plague, Black Death, trade routes, mortality, population decline, labor shortage.
 
 **AP skill focus.** Making Connections (Skill 5.A) and Causation.
 
-**Checkpoint 1 prompt.** Explain how trade routes enabled the spread of epidemic disease. Use specific evidence about the bubonic plague, its origins, and how it traveled.
-Strong answer checklist: Explain where plague originated. Explain the mechanism by which it spread along trade routes. Describe the geographic pattern of its spread.
+**Checkpoint 1 prompt.** Choose ONE required crop example—bananas in Africa, new rice varieties in East Asia, or citrus in the Mediterranean. Explain how exchange networks spread it and what environmental or demographic effect followed.
+Strong answer checklist: Name the crop and destination. Explain how connectivity enabled diffusion. Explain the resulting environmental or demographic effect.
 
-**Checkpoint 2 prompt.** Explain one demographic or social consequence of the Black Death, and one crop or agricultural practice (such as bananas, new rice varieties, or citrus) that trade networks diffused in this same period. Use specific evidence for each.
-Strong answer checklist: Name one demographic or social consequence of the plague and explain how it changed a society or institution. Name one crop or agricultural practice that diffused along a trade network and explain how it changed farming, diet, or land use in its new region. Treat disease and crop diffusion as two separate consequences of the same connectivity, not one combined effect.
+**Checkpoint 2 prompt.** Explain how trade networks contributed to the spread of bubonic plague and identify one demographic or social consequence of that spread.
+Strong answer checklist: Explain the network mechanism. Identify the demographic effect. Connect greater connectivity to greater vulnerability.
 
 ## 2.7 Comparison of Economic Exchange
 
@@ -135,17 +135,17 @@ Strong answer checklist: Name one demographic or social consequence of the plagu
 
 **College Board key concepts.**
 - KC-3.1 (Networks of Exchange): A deepening and widening of networks of human interaction within and across regions contributed to cultural, technological, and biological diffusion within and between various societies.
-- KC-3.1.I.A.i (Networks of Exchange): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes—including the Silk Roads—promoting the growth of powerful new trading cities.
+- KC-3.1.I.A.i (Networks of Exchange): Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Silk Roads, promoting the growth of powerful new trading cities.
 - KC-3.1.I.C.i (Networks of Exchange): The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.
 - KC-3.3 (Networks of Exchange): Changes in trade networks resulted from and stimulated increasing productive capacity, with important implications for social and gender structures and environmental processes.
 - KC-3.3.I.B (Networks of Exchange): Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.
 
-**Expected evidence terms.** similarity, luxury goods, religion, diaspora, connectivity, merchant community, cultural diffusion, difference, technology, geography, goods, camel, dhow, monsoon, silk, gold, spices.
+**Expected evidence terms.** similarity, commercial practices, transportation, demand, production, states, cities, diffusion, difference, caravanserai, credit, monsoon, compass, astrolabe, camel saddle, caravan, productive capacity.
 
 **AP skill focus.** Argumentation (Skill 6.B) and Comparison.
 
-**Checkpoint 1 prompt.** Identify two similarities between any two of the three main trade networks (Silk Roads, Indian Ocean, trans-Saharan). Use specific evidence for each similarity.
-Strong answer checklist: State each similarity directly and clearly. Use specific evidence from two different networks. Explain why the similarity reveals a broader pattern of Afro-Eurasian connectivity.
+**Checkpoint 1 prompt.** Identify ONE meaningful similarity between two exchange networks. Use balanced evidence from both. Your comparison must address transportation, commercial practices, demand/productive capacity, states/cities, or diffusion.
+Strong answer checklist: Use the same category on both sides. Provide evidence from both networks. Explain why the similarity existed.
 
-**Checkpoint 2 prompt.** Identify two differences between any two of the three trade networks. Use specific evidence and explain why each difference mattered historically.
-Strong answer checklist: State each difference directly and clearly. Use specific evidence, technology, goods, or cultural effects. Explain the historical significance of each difference.
+**Checkpoint 2 prompt.** Identify ONE meaningful difference between two exchange networks. Use balanced evidence and explain why geography, technology, commercial systems, state support, or demand produced the difference.
+Strong answer checklist: Use the same category on both sides. Use specific evidence from both networks. Explain the cause of the difference.

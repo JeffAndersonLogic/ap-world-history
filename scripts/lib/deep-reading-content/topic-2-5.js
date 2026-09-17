@@ -352,7 +352,7 @@ module.exports = {
             {
               "note": {
                 "kind": "howknow",
-                "label": "How to source the traveler",
+                "label": "How we know: source the traveler",
                 "html": "Ask purpose, audience and route. A Muslim jurist, Venetian traveler and English pilgrim did not see the same world in the same way, even when they used overlapping networks."
               }
             }

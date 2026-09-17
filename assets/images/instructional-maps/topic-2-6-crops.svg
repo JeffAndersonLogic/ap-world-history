@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Crop diffusion across Afro-Eurasia, c. 1200–1450</title><desc id="d">Instructional map-style reconstruction showing bananas moving into Africa, new rice varieties into East Asia, and citrus around the Mediterranean.</desc>
+<rect width="1600" height="900" fill="#f5f0e7"/>
+<text x="80" y="95" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#151718">Crop Diffusion Across Afro-Eurasia</text>
+<text x="82" y="145" font-family="Arial,sans-serif" font-size="25" fill="#5a5f5c">CED examples · c. 1200–1450 · secondary reconstruction</text>
+<g font-family="Arial,sans-serif" font-size="28" fill="#151718">
+<rect x="90" y="255" width="420" height="160" rx="18" fill="#fffdf7" stroke="#8c5a2b" stroke-width="5"/><text x="125" y="315" font-weight="700">BANANAS</text><text x="125" y="360">South/Southeast Asian origins</text><text x="125" y="400">→ wider diffusion into Africa</text>
+<rect x="590" y="255" width="420" height="160" rx="18" fill="#fffdf7" stroke="#8c5a2b" stroke-width="5"/><text x="625" y="315" font-weight="700">NEW RICE VARIETIES</text><text x="625" y="360">Higher-yield strains</text><text x="625" y="400">→ spread within East Asia</text>
+<rect x="1090" y="255" width="420" height="160" rx="18" fill="#fffdf7" stroke="#8c5a2b" stroke-width="5"/><text x="1125" y="315" font-weight="700">CITRUS</text><text x="1125" y="360">Asian origins</text><text x="1125" y="400">→ Mediterranean cultivation</text>
+</g>
+<g stroke="#a8652d" stroke-width="12" fill="none" marker-end="url(#a)"><path d="M300 500 C430 600 520 650 650 700"/><path d="M800 500 C900 600 1030 650 1170 700"/><path d="M1300 500 C1180 590 1040 630 910 700"/></g>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#a8652d"/></marker></defs>
+<text x="80" y="835" font-family="Arial,sans-serif" font-size="27" fill="#3e4447">Connectivity moved useful crops as well as pathogens. The arrows show broad diffusion patterns, not exact single routes.</text>
+</svg>

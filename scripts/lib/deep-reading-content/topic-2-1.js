@@ -352,7 +352,7 @@ module.exports = {
             {
               "note": {
                 "kind": "howknow",
-                "label": "AP synthesis",
+                "label": "How we know: AP synthesis",
                 "html": "If your explanation can be written as demand → lower friction → more exchange → city growth → productive response, and each arrow has a mechanism, you have the topic. Everything else is supporting evidence or a bridge to the later Unit 2 consequences."
               }
             }

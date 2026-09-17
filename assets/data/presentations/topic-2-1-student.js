@@ -99,9 +99,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Big Rock 1 · Demand",
       "title": "Luxury goods made distance worth it.",
       "visual": {
-        "url": "../assets/images/topics/2-1/2.1%20-%20Chinese%20Porcelain.jpg",
+        "url": "../assets/images/topics/2-1/2.1%20-%20Chinese%20Porcelain.svg",
         "alt": "Chinese porcelain used as evidence of luxury demand and export production",
-        "credit": "Topic 2.1 classroom artifact visual"
+        "credit": "INSTRUCTIONAL RECONSTRUCTION — BEHISTORICAL"
       },
       "footer": "Porcelain · textiles · silk · spices · iron · steel"
     },

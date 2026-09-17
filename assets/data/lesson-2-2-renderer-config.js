@@ -96,4 +96,16 @@
     task: 'Use TWO evidence cards to test what Mongol rule changed. Distinguish political control from the movement of merchants, specialists, knowledge, and technologies.',
     prompt: 'Make one claim about how Mongol expansion changed Eurasian exchange or cultural/technological transfer. Cite two pieces of evidence and explain how they support the claim.'
   };
+
+  lesson.evidenceLab = {
+    title:'Evidence Lab: Empire, Distance, and Connection',
+    task:'Use the evidence to test what Mongol rule changed. Choose TWO cards. Begin with a concrete feature, infer what it suggests about conquest, governing distance, or connectivity, and identify what that evidence cannot establish alone.',
+    prompt:'Using two evidence cards, make one claim about how Mongol imperial expansion changed Eurasian political control or exchange. Cite one concrete detail from each card, explain the connection to your claim, and identify one limitation in the evidence.'
+  };
+  lesson.images = [
+    {title:'Mongol Empire and Khanates',url:'../assets/images/instructional-maps/topic-2-2.svg',sourceUrl:'../assets/images/instructional-maps/topic-2-2.svg',caption:'Secondary geographic evidence. The BeHistorical reference map reconstructs the enormous territorial reach of Mongol rule and the later division into regional khanates.',prompt:'NOTICE the scale and geographic spread. What can you INFER about the administrative problem of distance and the reason for regional khanates or relay systems? What can a map not tell you about how rule felt locally?'},
+    {title:'Genghis Khan, Yuan-Era Portrait',url:'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg',caption:'Political-memory evidence. A later Yuan dynasty portrait representing Genghis Khan as founder of the Mongol imperial tradition.',prompt:'NOTICE how the founder is represented. What can you INFER about later Mongol political memory or legitimacy? Why is this a weak source for reconstructing his actual appearance or battlefield methods?'},
+    {title:'Silk Roads Under a Continental Empire',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',caption:'Secondary network evidence. A modern map reconstructing the overland routes that crossed territories brought under Mongol control.',prompt:'NOTICE how many routes cross Mongol-controlled Eurasia. What can you INFER about why political protection, relay stations, and standardized permissions could affect trade? What does the map not prove about actual trade volume?'},
+    {title:'Silk Road Network at the Start of the Mongol Era',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_(c.1200_CE).jpg',caption:'Baseline evidence. A secondary reconstruction of exchange routes around c. 1200, useful for establishing that long-distance trade existed before the Pax Mongolica.',prompt:'NOTICE that routes existed before Mongol unification. What continuity does this establish? What change would you need additional evidence to demonstrate under Mongol rule?'}
+  ];
 })();

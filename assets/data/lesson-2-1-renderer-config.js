@@ -91,4 +91,18 @@
       focus: ['Identify two effects.', 'Use specific CED-aligned evidence.', 'Explain how expanding trade produced each effect.']
     }
   ];
+
+  lesson.evidenceLab = {
+    title: 'Evidence Lab: What Made the Silk Roads Work?',
+    task: 'Use the cards as evidence, not as answers. Choose TWO cards. For each, identify a visible or concrete feature, infer what it suggests about exchange, and state what the source cannot establish by itself. Then connect the two pieces to one historical claim.',
+    prompt: 'Using two evidence cards, make one claim about what made Silk Road exchange possible OR one consequence of that exchange. Cite one specific detail from each card, explain how each supports your claim, and identify one limitation of either piece of evidence.'
+  };
+
+  lesson.images = [
+    { title: 'Silk Roads Across Afro-Eurasia', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg', caption: 'Secondary geographic evidence. A modern reference map reconstructing major overland and maritime exchange routes across Afro-Eurasia.', prompt: 'NOTICE where routes cluster around Central Asian cities and corridors. What can you INFER about geography and trading nodes? What can a modern route map not prove about the experience of a merchant?' },
+    { title: 'Jiaozi Paper Money', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg', caption: 'Commercial evidence. Paper currency circulated in Song China, one of the major production centers connected to long-distance Asian trade.', prompt: 'NOTICE what kind of commercial tool this is. What problem could portable currency help solve? What claim about growing money economies or trade could it support, and what does it not prove about Silk Road volume by itself?' },
+    { title: 'Al-Idrisi World Map, 1154', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:TabulaRogeriana.jpg', caption: 'Knowledge-network evidence. The Muslim geographer al-Idrisi compiled information from travelers and geographic traditions across Afro-Eurasia shortly before the period of Topic 2.1.', prompt: 'NOTICE the geographic breadth represented. What can you INFER about the circulation of travel knowledge before c. 1200? How can this serve as context for later exchange without proving that every mapped region traded directly?' },
+    { title: 'Silk Road Trade, c. 1200 CE', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_(c.1200_CE).jpg', caption: 'Secondary network evidence. A reference map showing exchange routes at the opening of the period studied in Unit 2.', prompt: 'NOTICE which regions are connected and which are separated by long overland stretches. What can you INFER about why caravan infrastructure, intermediaries, and political protection mattered?'
+    }
+  ];
 })();
