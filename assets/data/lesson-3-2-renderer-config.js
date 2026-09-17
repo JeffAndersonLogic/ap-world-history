@@ -107,15 +107,15 @@
       focus: ['Name at least two specific administrative or military systems.', 'Explain how each system extracted resources or maintained loyalty.', 'Connect your examples to the broader challenge of governing diverse, large territories.']
     },
     {
-      title: 'Checkpoint 2: Specific Systems and Accommodation',
+      title: 'Checkpoint 2: Legitimacy and Revenue',
       subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'Devshirme, mansabdar, millet, and the strategy of incorporating local elites.',
+      cardDesc: 'How rulers made authority legitimate and paid for imperial power.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Describe two specific administrative systems from different empires. Then explain why rulers sometimes chose to accommodate local elites rather than impose direct control, and whether accommodation was a sign of strength or weakness.',
+      prompt: 'Explain TWO different methods rulers used to legitimize and consolidate power: (1) one example involving religious ideas, art, or monumental architecture, and (2) one example involving tribute, tax farming, or an innovative tax-collection system. Explain how each method strengthened the ruler or state.',
       responseType: 'Checkpoint 2',
-      terms: ['devshirme', 'mansabdar', 'millet system', 'Akbar', 'Rajput', 'jagir', 'co-optation', 'accommodation', 'centralization', 'loyalty'],
-      focus: ['Describe at least two distinct administrative systems from two different empires.', 'Explain how each system solved the loyalty or revenue problem.', 'Take a position on accommodation: strength or weakness? Support it with evidence.']
+      terms: ['divine right', 'Songhai promotion of Islam', 'Qing imperial portraits', 'Mughal mausolea', 'Versailles', 'zamindar', 'Ottoman tax farming', 'Mexica tribute', 'Ming hard-currency taxes', 'legitimacy', 'revenue'],
+      focus: ['Use one specific religious, artistic, or architectural example and explain how it legitimized rule.', 'Use one specific revenue system and explain how it generated resources for state power or expansion.', 'Connect both methods to the larger problem of consolidating authority across a large empire.']
     }
   ];
 
