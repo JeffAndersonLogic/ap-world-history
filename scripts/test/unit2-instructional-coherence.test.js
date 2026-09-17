@@ -26,6 +26,10 @@ function missingClusters(text, clusters) {
   return clusters.filter(cluster => !cluster.some(term => contains(text, term)));
 }
 
+function topicFileKey(topic) {
+  return String(topic).replace('.', '-');
+}
+
 function sandbox() {
   const box = {
     window: {},
@@ -41,8 +45,9 @@ function sandbox() {
 
 function loadLesson(topic, slug) {
   const ctx = sandbox();
-  const lessonPath = path.join(ROOT, 'assets', 'data', `lesson-${topic}-${slug}.js`);
-  const rendererPath = path.join(ROOT, 'assets', 'data', `lesson-${topic}-renderer-config.js`);
+  const key = topicFileKey(topic);
+  const lessonPath = path.join(ROOT, 'assets', 'data', `lesson-${key}-${slug}.js`);
+  const rendererPath = path.join(ROOT, 'assets', 'data', `lesson-${key}-renderer-config.js`);
   vm.runInContext(fs.readFileSync(lessonPath, 'utf8'), ctx, { filename: lessonPath });
   vm.runInContext(fs.readFileSync(rendererPath, 'utf8'), ctx, { filename: rendererPath });
   return ctx.window.BEHISTORICAL_LESSON || {};
@@ -57,11 +62,12 @@ console.log('Scope: traceability + assessment alignment across canonical lesson,
 console.log('Human instructional review remains a separate requirement.\n');
 
 for (const [topic, spec] of Object.entries(contract.topics)) {
-  const first10Rel = `unit-2/first-and-10-topic-${topic}-${spec.slug}.html`;
-  const deepRel = `unit-2/deep-reading-topic-${topic}-${spec.slug}.html`;
+  const key = topicFileKey(topic);
+  const first10Rel = `unit-2/first-and-10-topic-${key}-${spec.slug}.html`;
+  const deepRel = `unit-2/deep-reading-topic-${key}-${spec.slug}.html`;
   const requiredFiles = [
-    `assets/data/lesson-${topic}-${spec.slug}.js`,
-    `assets/data/lesson-${topic}-renderer-config.js`,
+    `assets/data/lesson-${key}-${spec.slug}.js`,
+    `assets/data/lesson-${key}-renderer-config.js`,
     first10Rel,
     deepRel
   ];
