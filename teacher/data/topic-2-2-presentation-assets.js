@@ -165,13 +165,101 @@ if(pax){
 
 const transfer=byTitle('Connection moves knowledge');
 if(transfer){
-  transfer.eyebrow='Big Rock 3 · Transfer · CED Must-Know';
-  transfer.footer='Medicine · numbering systems · Uyghur script = evidence that connection moved knowledge.';
+  transfer.eyebrow='Big Rock 3 · Transfer · KC-3.2.II.A.ii';
+  transfer.subtitle='Interregional contact and conflict encouraged significant technological and cultural transfers.';
+  transfer.footer='Medicine · numbering systems · Uyghur script = three CED examples students should be able to explain.';
+  transfer.notes=transfer.notes||{};
+  transfer.notes.minutes=2;
+  transfer.notes.land=[
+    'Name KC-3.2.II.A.ii explicitly: interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers.',
+    'The next three slides teach the three CED illustrative examples one at a time.',
+    'Do not imply the Mongols invented these ideas or personally carried every text. The key concept is interregional transfer.'
+  ];
+  transfer.notes.ask='What has to happen before a society can borrow knowledge from another society?';
+  transfer.notes.listenFor='Contact, movement of people or texts, communication, and a reason to adopt or adapt the knowledge.';
+}
+
+if(transfer&&!byTitle('Medical knowledge moves west.')){
+  const transferIndex=T.slides.indexOf(transfer);
+  const transferExamples=[
+    {
+      phase:'transfer',kind:'process',eyebrow:'Big Rock 3 · Transfer Example 1 · Medicine',
+      title:'Medical knowledge moves west.',
+      subtitle:'Greco-Islamic medical knowledge -> western Europe',
+      steps:[
+        {label:'GREEK TRADITIONS',text:'Greek medical learning forms part of the knowledge base'},
+        {label:'ISLAMIC WORLD',text:'Scholars preserve, translate, debate, and develop it'},
+        {label:'WESTERN EUROPE',text:'Medical learning moves into Latin Europe through interregional contact'},
+        {label:'AP POINT',text:'Contact transfers knowledge across political and cultural boundaries'}
+      ],
+      footer:'Broader Eurasian transfer system — not “the Mongols personally delivered every text.”',
+      notes:{
+        minutes:2,
+        land:[
+          'This is the CED illustrative example: transfer of Greco-Islamic medical knowledge to western Europe.',
+          'Greek medical learning was preserved, translated, debated, and extended in the Islamic world before circulating into western Europe.',
+          'Use this as evidence of a broader Eurasian transfer system. The AP claim is interregional contact -> knowledge transfer.'
+        ],
+        ask:'What moved here: a product, a person, or a body of knowledge?',
+        listenFor:'A body of medical knowledge carried through scholars, texts, translation, and contact.'
+      }
+    },
+    {
+      phase:'transfer',kind:'process',eyebrow:'Big Rock 3 · Transfer Example 2 · Mathematics',
+      title:'Number systems move across cultures.',
+      subtitle:'South Asia -> Islamic world -> Europe',
+      steps:[
+        {label:'SOUTH ASIA',text:'Positional numerals and place-value mathematics develop'},
+        {label:'ISLAMIC WORLD',text:'Mathematicians adopt, use, and transmit the system'},
+        {label:'EUROPE',text:'Merchants and scholars increasingly use the numerals'},
+        {label:'AP POINT',text:'Connected trade and scholarly networks move mathematical knowledge'}
+      ],
+      footer:'The numbers are not Mongol inventions; they illustrate cross-regional transfer in the period.',
+      notes:{
+        minutes:2,
+        land:[
+          'This is the CED illustrative example: transfer of numbering systems to Europe.',
+          'The pathway matters: South Asian mathematical notation moved through the Islamic world and was increasingly adopted in Europe.',
+          'Keep the emphasis on transmission and adoption, not on memorizing a single inventor.'
+        ],
+        ask:'Why is a numbering system a technology even though it is not a machine?',
+        listenFor:'It is a tool for calculation, record keeping, commerce, and communication.'
+      }
+    },
+    {
+      phase:'transfer',kind:'process',eyebrow:'Big Rock 3 · Transfer Example 3 · Writing',
+      title:'The Mongols borrow a writing system.',
+      subtitle:'Adoption of the Uyghur script',
+      steps:[
+        {label:'UYGHUR SCRIPT',text:'A neighboring scribal tradition provides a usable writing system'},
+        {label:'MONGOL ADOPTION',text:'Mongol rulers adopt the script for writing Mongolian'},
+        {label:'ADAPTATION',text:'The script is adapted to fit Mongolian language and use'},
+        {label:'STATE USE',text:'Writing supports administration and long-distance communication'}
+      ],
+      footer:'Direct Mongol example: conquerors borrow and adapt useful cultural technology.',
+      notes:{
+        minutes:2,
+        land:[
+          'This is the clearest direct Mongol example in KC-3.2.II.A.ii: adoption of the Uyghur script.',
+          'The direction of transfer matters. The conquerors themselves borrowed a useful cultural technology from another people.',
+          'Connect this back to the larger Mongol pattern: use specialists and systems that work, regardless of origin.'
+        ],
+        ask:'Why is this example especially useful for disproving the idea that transfer only moves from conqueror to conquered?',
+        listenFor:'The Mongols are the borrowers; cultural transfer can move in multiple directions.'
+      }
+    }
+  ];
+  T.slides.splice(transferIndex+1,0,...transferExamples);
+  if(Array.isArray(T.flow)){
+    T.flow=T.flow.map(item=>({...item,slide:Number.isFinite(item.slide)&&item.slide>transferIndex?item.slide+transferExamples.length:item.slide}));
+  }
 }
 
 const transferMechanism=byTitle('Contact -> Borrowing -> Adaptation -> Wider Reach');
 if(transferMechanism){
   transferMechanism.eyebrow='Big Rock 3 · Transfer · Mechanism';
+  transferMechanism.notes=transferMechanism.notes||{};
+  transferMechanism.notes.minutes=2;
 }
 
 const skill=byTitle('Baseline -> Change -> Evidence -> Significance');
@@ -219,7 +307,7 @@ if(Array.isArray(T.flow)){
   patchFlow('govern',{label:'State Change: Govern + Fragment',range:'34–45',minutes:11,teacher:'Explain governance, regionalization, and why unified control weakened.',students:'Connect scale and succession to fragmentation.'});
   patchFlow('check1',{label:'Big Rock 1 Check',range:'45–50',minutes:5,teacher:'Require one build mechanism and one fragmentation mechanism.',students:'Explain state change in two mechanisms.'});
   patchFlow('exchange',{label:'Big Rock 2: Connection',range:'50–63',minutes:13,teacher:'Teach continuity of routes and change in political conditions.',students:'Explain how communication and protection affected movement.'});
-  patchFlow('transfer',{label:'Big Rock 3: Transfer',range:'63–75',minutes:12,teacher:'Teach all three required CED transfer examples and the contact mechanism.',students:'Explain how connection moves knowledge.'});
+  patchFlow('transfer',{label:'Big Rock 3: Transfer',range:'63–75',minutes:12,teacher:'Teach KC-3.2.II.A.ii through the three CED examples: medicine, numbering systems, and Uyghur script.',students:'Trace each transfer pathway and explain why contact mattered.'});
   patchFlow('skill',{label:'AP Synthesis',range:'75–84',minutes:9,teacher:'Build the full state change -> connection -> transfer argument.',students:'Write the topic significance chain.'});
   patchFlow('check2',{label:'Answer the Topic Theme',range:'84–88',minutes:4,teacher:'Require all three Big Rocks in a concise response.',students:'Answer Topic 2.2 in three moves.'});
   patchFlow('close',{label:'Landing + Bridge',range:'88–90',minutes:2,teacher:'Land the significance sentence, then bridge to Indian Ocean environmental systems.',students:'Say the Topic 2.2 answer in one sentence.'});
