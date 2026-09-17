@@ -34,8 +34,8 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: 'Travel across three empires and compare how rulers solved the same problems of expansion, administration, and religious diversity, then build a comparison argument from your observations.'
+    url: '../beintheroom/unit-3/imperial-influence-comparison.html',
+    desc: 'Act as a historical adviser. Compare one shared method across two land-based empires and explain how it increased imperial influence.'
   };
 
   lesson.skillBuilder = {
