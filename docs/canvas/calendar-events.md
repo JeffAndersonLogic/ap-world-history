@@ -1299,10 +1299,10 @@ deleted row in the schedule and every affected date moves with it.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.1, The Silk Roads (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 Not One Road, But Many: What the Silk Roads Were</li>
-                            <li style="margin: 0 0 4px 0;">02 Infrastructure: Caravanserais and Relay Stations</li>
-                            <li style="margin: 0 0 4px 0;">03 What Moved Along the Routes</li>
-                            <li style="margin: 0 0 4px 0;">04 Disease: The Unintended Consequence</li>
+                            <li style="margin: 0 0 4px 0;">01 The Road at Its Peak</li>
+                            <li style="margin: 0 0 4px 0;">02 The Caravan as a Firm</li>
+                            <li style="margin: 0 0 4px 0;">03 Caravanserai and Credit</li>
+                            <li style="margin: 0 0 4px 0;">04 Demand and Productive Response</li>
                         </ul>
                     </li>
                 </ul>
@@ -1360,7 +1360,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Silk Roads were never one road. They were a shifting network of caravan trails, relay stations, and caravanserais, held together by pastoral nomads who worked the routes and by the states willing to protect merchants along their stretch of them. Today you follow what made overland Afro-Eurasian trade possible, what actually moved along it, silk and spices, but also paper, gunpowder, Buddhism, and Islam, and the one traveler nobody invited: the disease that moved as easily as the goods.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Long-distance Silk Roads trade expanded after 1200 because rising demand for luxury goods made the journey worth financing while caravanserais, credit, banking houses, paper money, and periods of relative political stability reduced merchant risk and cost. Today you follow that economic chain from demand to easier exchange to the growth of trading cities such as Kashgar and Samarkand, then to producers in China, Persia, and India expanding output for distant markets.</p>
             </td>
         </tr>
         <tr>
@@ -1395,10 +1395,10 @@ deleted row in the schedule and every affected date moves with it.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.2, The Mongol Empire (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 From the Steppe to the World: Mongol Conquest</li>
-                            <li style="margin: 0 0 4px 0;">02 Governing a Vast Empire: Khanates and Religious Tolerance</li>
-                            <li style="margin: 0 0 4px 0;">03 The Pax Mongolica: Peace and Trade</li>
-                            <li style="margin: 0 0 4px 0;">04 Destruction and Connectivity Together: The Paradox</li>
+                            <li style="margin: 0 0 4px 0;">01 The Steppe Problem, and What Temujin Changed</li>
+                            <li style="margin: 0 0 4px 0;">02 How They Won</li>
+                            <li style="margin: 0 0 4px 0;">03 How They Ruled</li>
+                            <li style="margin: 0 0 4px 0;">04 What Moved Under Them</li>
                         </ul>
                     </li>
                 </ul>
@@ -1456,7 +1456,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Mongols conquered more territory in a single generation than any empire before them, and the useful question is not only how they took it but how they held it. Today you follow the khanate system that governed a realm running from China to Eastern Europe, the Pax Mongolica that let a merchant or a missionary cross that same distance under one guarantee of safe passage, and the paradox at the center of it: a conquest built on massacre and depopulation that also built the safest trade corridor Afro-Eurasia had ever seen.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Mongols first built an enormous Eurasian empire, then divided it into khanates, but their expansion still reshaped exchange across the continent. Today you follow how Mongol rule facilitated trade and communication and how intensified contact transferred knowledge and practices across regions, including Greco-Islamic medical knowledge toward western Europe, numbering systems into Europe, and the adoption of the Uyghur script by the Mongols.</p>
             </td>
         </tr>
         <tr>
@@ -1491,10 +1491,10 @@ deleted row in the schedule and every affected date moves with it.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.3, Exchange in the Indian Ocean (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 Wind as Technology: The Monsoon System</li>
-                            <li style="margin: 0 0 4px 0;">02 Who Traded and What They Carried</li>
-                            <li style="margin: 0 0 4px 0;">03 Port Cities and Diasporic Communities</li>
-                            <li style="margin: 0 0 4px 0;">04 Islam and the Indian Ocean</li>
+                            <li style="margin: 0 0 4px 0;">01 The Ships and the Sky</li>
+                            <li style="margin: 0 0 4px 0;">02 What a Shipload Changes</li>
+                            <li style="margin: 0 0 4px 0;">03 The Port City, and Trade Without a Policeman</li>
+                            <li style="margin: 0 0 4px 0;">04 The Merchant Communities</li>
                         </ul>
                     </li>
                 </ul>
@@ -1552,7 +1552,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Indian Ocean ran on wind, not on borders. A ship that understood the monsoon could sail east on one half of the year and home on the other, and that single piece of environmental knowledge, more than any navy, built the trade world connecting Arabia, India, China, and the Swahili coast. Today you follow the dhow and the compass that made the crossing possible, the goods and the diasporic merchant communities that crossing produced, and the faith that appeared in nearly every port it touched.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Indian Ocean exchange expanded because merchants learned to use predictable monsoon winds and improved maritime technologies such as the compass, astrolabe, and larger ship designs. Today you follow how that expanding system strengthened trading states and cities including the Swahili Coast, Gujarat, and Malacca, created diasporic merchant communities, and connected regions strongly enough for voyages such as Zheng He's to operate across an already mature network.</p>
             </td>
         </tr>
         <tr>
@@ -1587,10 +1587,10 @@ deleted row in the schedule and every affected date moves with it.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.4, Trans-Saharan Trade Routes (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 The Camel: A Technology That Crossed a Desert</li>
-                            <li style="margin: 0 0 4px 0;">02 Gold and Salt: The Perfect Trade</li>
-                            <li style="margin: 0 0 4px 0;">03 The Mali Empire: Wealth from Trade</li>
-                            <li style="margin: 0 0 4px 0;">04 Islam Crosses the Sahara</li>
+                            <li style="margin: 0 0 4px 0;">01 The Desert, and the Animal That Solved It</li>
+                            <li style="margin: 0 0 4px 0;">02 Gold and Salt</li>
+                            <li style="margin: 0 0 4px 0;">03 The Caravan Cities, and Who Took a Cut</li>
+                            <li style="margin: 0 0 4px 0;">04 What Islam Did for the Trade</li>
                         </ul>
                     </li>
                 </ul>
@@ -1648,7 +1648,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The Sahara is not empty of history, and the camel is why. Today you follow the animal and the caravan organization that turned one of the world's most hostile environments into a trade corridor, the gold-salt exchange that gave West Africa and North Africa something the other side needed and had none of, and the empire, Mali, that grew wealthy enough to make its ruler's 1324 pilgrimage an event other continents were still discussing decades later.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Trans-Saharan trade grew because camel technology and organized caravans made regular long-distance movement across the desert possible. Today you follow how complementary demand for goods such as gold and salt increased the volume and geographic range of exchange and how Mali used its position in that network to facilitate trade, collect wealth, and project power across West Africa.</p>
             </td>
         </tr>
         <tr>
@@ -1683,10 +1683,10 @@ deleted row in the schedule and every affected date moves with it.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.5, Cultural Consequences of Connectivity (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 Religion Follows the Merchant</li>
-                            <li style="margin: 0 0 4px 0;">02 Technology Moves East to West</li>
-                            <li style="margin: 0 0 4px 0;">03 Agricultural and Crop Diffusion</li>
-                            <li style="margin: 0 0 4px 0;">04 Artistic and Intellectual Diffusion</li>
+                            <li style="margin: 0 0 4px 0;">01 How a Thing Travels</li>
+                            <li style="margin: 0 0 4px 0;">02 Religions in Motion</li>
+                            <li style="margin: 0 0 4px 0;">03 Techniques, With Dates</li>
+                            <li style="margin: 0 0 4px 0;">04 Cities Rise, Cities Decline</li>
                         </ul>
                     </li>
                 </ul>
@@ -1744,7 +1744,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Trade never moves only goods. Today you follow what rode along with the silk and the gold: Buddhism, Islam, Christianity, and Hinduism spreading through the same networks that carried spices; paper, printing, gunpowder, the compass, and the stirrup diffusing from where they were invented to wherever a caravan or a ship could reach; and crops, architecture, and art remaking the places connectivity touched. None of Unit 2's three networks is only an economic story.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Expanded exchange networks changed culture as well as commerce. Today you follow three connected consequences: religions, artistic traditions, and technologies such as paper and gunpowder diffused across regions; the fortunes of cities rose or fell with changing patterns of trade and urbanization; and a more connected Afro-Eurasia produced more written travel accounts from observers such as Ibn Battuta, Marco Polo, and Margery Kempe.</p>
             </td>
         </tr>
         <tr>
@@ -1779,10 +1779,10 @@ deleted row in the schedule and every affected date moves with it.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.6, Environmental Consequences of Connectivity (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 The Plague's Origins: From Ecology to Pandemic</li>
-                            <li style="margin: 0 0 4px 0;">02 How the Plague Traveled</li>
-                            <li style="margin: 0 0 4px 0;">03 Demographic Catastrophe: The Scale of Death</li>
-                            <li style="margin: 0 0 4px 0;">04 Social and Institutional Consequences</li>
+                            <li style="margin: 0 0 4px 0;">01 The Pathway</li>
+                            <li style="margin: 0 0 4px 0;">02 The Same Mortality, Opposite Results</li>
+                            <li style="margin: 0 0 4px 0;">03 Three Required Crop Diffusion Cases</li>
+                            <li style="margin: 0 0 4px 0;">04 Living Things on the Move</li>
                         </ul>
                     </li>
                 </ul>
@@ -1840,7 +1840,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Connectivity cut both ways, and not only toward catastrophe. The same network that let a merchant cross Eurasia safely also let the bubonic plague make the same trip, and today you follow the Black Death from its origins in Central Asia through the trade routes that carried it into Europe and North Africa, and the demographic collapse and labor shortages it left behind. But those same routes carried something else at the same time: bananas reaching East Africa, new rice varieties reaching East Asia, and citrus spreading around the Mediterranean. Connectivity is not only a story about what it destroys.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">The same exchange networks that moved merchants and goods also moved living things. Today you trace two environmental consequences together: crops such as bananas, new rice varieties, and citrus diffused into new regions and affected production and population, while pathogens such as bubonic plague traveled along trade routes and produced enormous demographic and social disruption.</p>
             </td>
         </tr>
         <tr>
@@ -1875,10 +1875,10 @@ deleted row in the schedule and every affected date moves with it.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 8px 0;">Required eBook reading for Topic 2.7, Comparison of Economic Exchange (ebook/unit-2.html).
                         <ul style="margin: 6px 0 0 18px; padding: 0;">
-                            <li style="margin: 0 0 4px 0;">01 What All Three Networks Shared</li>
-                            <li style="margin: 0 0 4px 0;">02 How the Networks Differed: Technology and Goods</li>
-                            <li style="margin: 0 0 4px 0;">03 Cultural Differences: Which Religions Spread Where</li>
-                            <li style="margin: 0 0 4px 0;">04 How to Write AP Comparison</li>
+                            <li style="margin: 0 0 4px 0;">01 The Three Profiles</li>
+                            <li style="margin: 0 0 4px 0;">02 What All Three Shared</li>
+                            <li style="margin: 0 0 4px 0;">03 What Differed, and the One Mechanism Behind It</li>
+                            <li style="margin: 0 0 4px 0;">04 Consequences Compared</li>
                         </ul>
                     </li>
                 </ul>
@@ -1936,7 +1936,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Three networks, one question asked three times: what made this trade possible, what moved along it, what did it change. Today you set the Silk Roads, the Indian Ocean, and trans-Saharan trade beside each other and look for the pattern all three share, long-distance exchange, overlapping religions, cultural diffusion. Then you look for where they genuinely differ, in geography, in transportation technology, in which goods dominated, and you build an AP-style comparison argument out of both halves rather than only listing facts about two places.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Comparison asks you to explain the networks together rather than retell them one at a time. Today you compare the Silk Roads, Indian Ocean, and trans-Saharan systems through the same categories: environment and transportation, commercial practices and finance, demand and productive capacity, the role of states and cities, and the cultural or environmental effects of exchange. The goal is an AP-style argument built from both meaningful similarities and meaningful differences.</p>
             </td>
         </tr>
         <tr>

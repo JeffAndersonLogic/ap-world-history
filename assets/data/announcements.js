@@ -954,10 +954,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.1, The Silk Roads (ebook/unit-2.html).', kind: 'reading', due: 'Wednesday, September 16',
           items: [
-            { text: '01 Not One Road, But Many: What the Silk Roads Were' },
-            { text: '02 Infrastructure: Caravanserais and Relay Stations' },
-            { text: '03 What Moved Along the Routes' },
-            { text: '04 Disease: The Unintended Consequence' }
+            { text: '01 The Road at Its Peak' },
+            { text: '02 The Caravan as a Firm' },
+            { text: '03 Caravanserai and Credit' },
+            { text: '04 Demand and Productive Response' }
           ]
          }
       ],
@@ -990,10 +990,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.1, The Silk Roads (ebook/unit-2.html).', kind: 'reading', due: 'Thursday, September 17',
           items: [
-            { text: '01 Not One Road, But Many: What the Silk Roads Were' },
-            { text: '02 Infrastructure: Caravanserais and Relay Stations' },
-            { text: '03 What Moved Along the Routes' },
-            { text: '04 Disease: The Unintended Consequence' }
+            { text: '01 The Road at Its Peak' },
+            { text: '02 The Caravan as a Firm' },
+            { text: '03 Caravanserai and Credit' },
+            { text: '04 Demand and Productive Response' }
           ]
          }
       ],
@@ -1025,10 +1025,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.2, The Mongol Empire (ebook/unit-2.html).', kind: 'reading', due: 'Friday, September 18',
           items: [
-            { text: '01 From the Steppe to the World: Mongol Conquest' },
-            { text: '02 Governing a Vast Empire: Khanates and Religious Tolerance' },
-            { text: '03 The Pax Mongolica: Peace and Trade' },
-            { text: '04 Destruction and Connectivity Together: The Paradox' }
+            { text: '01 The Steppe Problem, and What Temujin Changed' },
+            { text: '02 How They Won' },
+            { text: '03 How They Ruled' },
+            { text: '04 What Moved Under Them' }
           ]
          }
       ],
@@ -1061,10 +1061,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.2, The Mongol Empire (ebook/unit-2.html).', kind: 'reading', due: 'Monday, September 21',
           items: [
-            { text: '01 From the Steppe to the World: Mongol Conquest' },
-            { text: '02 Governing a Vast Empire: Khanates and Religious Tolerance' },
-            { text: '03 The Pax Mongolica: Peace and Trade' },
-            { text: '04 Destruction and Connectivity Together: The Paradox' }
+            { text: '01 The Steppe Problem, and What Temujin Changed' },
+            { text: '02 How They Won' },
+            { text: '03 How They Ruled' },
+            { text: '04 What Moved Under Them' }
           ]
          }
       ],
@@ -1099,10 +1099,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.3, Exchange in the Indian Ocean (ebook/unit-2.html).', kind: 'reading', due: 'Tuesday, September 22',
           items: [
-            { text: '01 Wind as Technology: The Monsoon System' },
-            { text: '02 Who Traded and What They Carried' },
-            { text: '03 Port Cities and Diasporic Communities' },
-            { text: '04 Islam and the Indian Ocean' }
+            { text: '01 The Ships and the Sky' },
+            { text: '02 What a Shipload Changes' },
+            { text: '03 The Port City, and Trade Without a Policeman' },
+            { text: '04 The Merchant Communities' }
           ]
          }
       ],
@@ -1136,10 +1136,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.3, Exchange in the Indian Ocean (ebook/unit-2.html).', kind: 'reading', due: 'Wednesday, September 23',
           items: [
-            { text: '01 Wind as Technology: The Monsoon System' },
-            { text: '02 Who Traded and What They Carried' },
-            { text: '03 Port Cities and Diasporic Communities' },
-            { text: '04 Islam and the Indian Ocean' }
+            { text: '01 The Ships and the Sky' },
+            { text: '02 What a Shipload Changes' },
+            { text: '03 The Port City, and Trade Without a Policeman' },
+            { text: '04 The Merchant Communities' }
           ]
          }
       ],
@@ -1173,10 +1173,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.4, Trans-Saharan Trade Routes (ebook/unit-2.html).', kind: 'reading', due: 'Thursday, September 24',
           items: [
-            { text: '01 The Camel: A Technology That Crossed a Desert' },
-            { text: '02 Gold and Salt: The Perfect Trade' },
-            { text: '03 The Mali Empire: Wealth from Trade' },
-            { text: '04 Islam Crosses the Sahara' }
+            { text: '01 The Desert, and the Animal That Solved It' },
+            { text: '02 Gold and Salt' },
+            { text: '03 The Caravan Cities, and Who Took a Cut' },
+            { text: '04 What Islam Did for the Trade' }
           ]
          }
       ],
@@ -1210,10 +1210,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.4, Trans-Saharan Trade Routes (ebook/unit-2.html).', kind: 'reading', due: 'Friday, September 25',
           items: [
-            { text: '01 The Camel: A Technology That Crossed a Desert' },
-            { text: '02 Gold and Salt: The Perfect Trade' },
-            { text: '03 The Mali Empire: Wealth from Trade' },
-            { text: '04 Islam Crosses the Sahara' }
+            { text: '01 The Desert, and the Animal That Solved It' },
+            { text: '02 Gold and Salt' },
+            { text: '03 The Caravan Cities, and Who Took a Cut' },
+            { text: '04 What Islam Did for the Trade' }
           ]
          }
       ],
@@ -1246,10 +1246,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.5, Cultural Consequences of Connectivity (ebook/unit-2.html).', kind: 'reading', due: 'Monday, September 28',
           items: [
-            { text: '01 Religion Follows the Merchant' },
-            { text: '02 Technology Moves East to West' },
-            { text: '03 Agricultural and Crop Diffusion' },
-            { text: '04 Artistic and Intellectual Diffusion' }
+            { text: '01 How a Thing Travels' },
+            { text: '02 Religions in Motion' },
+            { text: '03 Techniques, With Dates' },
+            { text: '04 Cities Rise, Cities Decline' }
           ]
          }
       ],
@@ -1282,10 +1282,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.5, Cultural Consequences of Connectivity (ebook/unit-2.html).', kind: 'reading', due: 'Tuesday, September 29',
           items: [
-            { text: '01 Religion Follows the Merchant' },
-            { text: '02 Technology Moves East to West' },
-            { text: '03 Agricultural and Crop Diffusion' },
-            { text: '04 Artistic and Intellectual Diffusion' }
+            { text: '01 How a Thing Travels' },
+            { text: '02 Religions in Motion' },
+            { text: '03 Techniques, With Dates' },
+            { text: '04 Cities Rise, Cities Decline' }
           ]
          }
       ],
@@ -1317,10 +1317,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.6, Environmental Consequences of Connectivity (ebook/unit-2.html).', kind: 'reading', due: 'Wednesday, September 30',
           items: [
-            { text: '01 The Plague\'s Origins: From Ecology to Pandemic' },
-            { text: '02 How the Plague Traveled' },
-            { text: '03 Demographic Catastrophe: The Scale of Death' },
-            { text: '04 Social and Institutional Consequences' }
+            { text: '01 The Pathway' },
+            { text: '02 The Same Mortality, Opposite Results' },
+            { text: '03 Three Required Crop Diffusion Cases' },
+            { text: '04 Living Things on the Move' }
           ]
          }
       ],
@@ -1352,10 +1352,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.6, Environmental Consequences of Connectivity (ebook/unit-2.html).', kind: 'reading', due: 'Thursday, October 1',
           items: [
-            { text: '01 The Plague\'s Origins: From Ecology to Pandemic' },
-            { text: '02 How the Plague Traveled' },
-            { text: '03 Demographic Catastrophe: The Scale of Death' },
-            { text: '04 Social and Institutional Consequences' }
+            { text: '01 The Pathway' },
+            { text: '02 The Same Mortality, Opposite Results' },
+            { text: '03 Three Required Crop Diffusion Cases' },
+            { text: '04 Living Things on the Move' }
           ]
          }
       ],
@@ -1388,10 +1388,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.7, Comparison of Economic Exchange (ebook/unit-2.html).', kind: 'reading', due: 'Friday, October 2',
           items: [
-            { text: '01 What All Three Networks Shared' },
-            { text: '02 How the Networks Differed: Technology and Goods' },
-            { text: '03 Cultural Differences: Which Religions Spread Where' },
-            { text: '04 How to Write AP Comparison' }
+            { text: '01 The Three Profiles' },
+            { text: '02 What All Three Shared' },
+            { text: '03 What Differed, and the One Mechanism Behind It' },
+            { text: '04 Consequences Compared' }
           ]
          }
       ],
@@ -1424,10 +1424,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Required eBook reading for Topic 2.7, Comparison of Economic Exchange (ebook/unit-2.html).', kind: 'reading', due: 'Monday, October 5',
           items: [
-            { text: '01 What All Three Networks Shared' },
-            { text: '02 How the Networks Differed: Technology and Goods' },
-            { text: '03 Cultural Differences: Which Religions Spread Where' },
-            { text: '04 How to Write AP Comparison' }
+            { text: '01 The Three Profiles' },
+            { text: '02 What All Three Shared' },
+            { text: '03 What Differed, and the One Mechanism Behind It' },
+            { text: '04 Consequences Compared' }
           ]
          }
       ],
