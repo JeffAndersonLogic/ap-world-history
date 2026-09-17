@@ -1,0 +1,31 @@
+name: Final Course Audit Sync Once
+on:
+  push:
+    branches:
+      - course-wide-audit-diagnostic
+    paths:
+      - '.github/workflows/final-course-audit-sync-once.yml'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: course-wide-audit-diagnostic
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Regenerate calibrated structural diagnostic
+        run: |
+          node scripts/audit-course.js
+          node scripts/audit-course.js --check
+      - name: Commit report and remove workflow
+        run: |
+          rm .github/workflows/final-course-audit-sync-once.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/COURSE-WIDE-DIAGNOSTIC.md docs/course-wide-diagnostic.json .github/workflows/final-course-audit-sync-once.yml
+          git commit -m "Finalize course-wide audit reports"
+          git push
