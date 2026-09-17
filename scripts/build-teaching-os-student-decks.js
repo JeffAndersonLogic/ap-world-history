@@ -3,15 +3,8 @@
 
 /*
  * Generate the student-facing companions for the data-driven Teaching OS.
- *
- * The teacher base + presentation-assets files are the source of truth. This
- * builder evaluates those data-only files, removes every teacher-only note,
- * applies the small student-view normalization rules below, and writes the
- * public student data file. No student slide content should be hand-maintained.
- *
- * This is intentionally separate from build-student-decks.js, which owns the
- * older hand-authored Teach Mode HTML decks. Both builders are enforced by the
- * generated-content reproducibility gate.
+ * Teacher base + presentation-assets files are the source of truth.
+ * Teacher-only notes are stripped; authored projected content is preserved.
  */
 
 const fs = require('fs');
@@ -95,66 +88,17 @@ function ensureWhy(slide, text) {
   slide.steps.push({ label: 'WHY', text });
 }
 
-function topic21Mechanism(title) {
-  const t = String(title || '').toLowerCase();
-  if (t.includes('merchants work')) {
-    return [
-      { label: 'REGIONAL MERCHANT', text: 'Knows one part of the route' },
-      { label: 'EXCHANGE MARKET', text: 'Goods change hands' },
-      { label: 'NEW MERCHANT', text: 'Local language + contacts' },
-      { label: 'GREATER REACH', text: 'Product travels farther than the person' }
-    ];
-  }
-  if (t.includes('who owns the middle')) {
-    return [
-      { label: 'MOBILITY', text: 'Pastoral peoples move through the steppe' },
-      { label: 'LOCAL KNOWLEDGE', text: 'Routes, water, animals, seasons' },
-      { label: 'INTERMEDIARY', text: 'Guide, guard, trader, translator' },
-      { label: 'NETWORK EFFECT', text: 'Distant markets become easier to connect' }
-    ];
-  }
-  return null;
-}
-
 function topic21Slides(teaching) {
-  const slides = teaching.slides.map(src => {
-    const s = baseStudentSlide(src);
-    if (src.kind === 'reconstruction') s.kind = 'hero';
-    if (src.kind === 'image') s.kind = 'map';
-    if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
-
-    const mechanism = src.phase === 'causes' ? topic21Mechanism(src.title) : null;
-    if (mechanism) {
-      s.kind = 'process';
-      s.steps = mechanism;
-      delete s.subtitle;
-    }
-
-    ensureWhy(s, 'State why the mechanism changes exchange');
-    return s;
-  });
-
-  const citySlide = {
-    kind: 'nodes',
-    eyebrow: 'Network Nodes',
-    title: 'Connection changes cities.',
-    subtitle: 'Samarkand and Kashgar become wealthy because routes converge there.',
-    nodes: [
-      {
-        title: 'SAMARKAND',
-        text: 'Crossroads city where merchants, languages, beliefs, and services concentrate.',
-        visual: { url: '../assets/images/topics/2-1/2.1%20-%20Samarkand.webp' }
-      },
-      {
-        title: 'KASHGAR',
-        text: 'Oasis node connecting routes through Central Asia and turning geography into wealth.',
-        visual: { url: '../assets/images/topics/2-1/2.1%20-%20Kashgar.jpg' }
-      }
-    ]
-  };
-  const insertAt = slides.findIndex(s => s.eyebrow === 'Watch · ~1 Minute' && s.title === 'Trade routes move beliefs.');
-  slides.splice(insertAt < 0 ? Math.max(0, slides.length - 1) : insertAt, 0, citySlide);
-  return slides;
+  return teaching.slides
+    .filter(src => src.phase !== 'preflight')
+    .map(src => {
+      const s = baseStudentSlide(src);
+      if (src.kind === 'reconstruction') s.kind = 'hero';
+      if (src.kind === 'image') s.kind = 'map';
+      if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
+      ensureWhy(s, 'State why the mechanism changes exchange');
+      return s;
+    });
 }
 
 function topic22Slides(teaching) {
@@ -163,6 +107,8 @@ function topic22Slides(teaching) {
     if (src.kind === 'reconstruction') s.kind = 'hero';
     if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
 
+    // Remote imagery is intentionally omitted from the public student companion.
+    // Local, audited classroom assets remain available.
     if ((s.kind === 'hero' || s.kind === 'map') && s.visual && /^https?:/.test(s.visual.url)) {
       s.kind = 'prompt';
       delete s.visual;
