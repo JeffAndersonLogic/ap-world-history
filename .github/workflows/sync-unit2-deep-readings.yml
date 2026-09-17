@@ -5,7 +5,8 @@ on:
     branches:
       - fix-topic-2-1-content-structure
     paths:
-      - scripts/repair-unit2-deep-readings.js
+      - scripts/align-unit2-deep-reading-sources.js
+      - scripts/lib/deep-reading-content/topic-2-*.js
       - .github/workflows/sync-unit2-deep-readings.yml
 
 permissions:
@@ -26,18 +27,24 @@ jobs:
         with:
           node-version: 20
 
-      - name: Repair Unit 2 deep readings
-        run: node scripts/repair-unit2-deep-readings.js
+      - name: Align canonical Unit 2 Deep Reading sources
+        run: node scripts/align-unit2-deep-reading-sources.js
 
-      - name: Commit repaired deep readings
+      - name: Rebuild standalone Deep Readings
+        run: npm run build:deep-readings
+
+      - name: Rebuild Unit eBooks
+        run: npm run build:ebook
+
+      - name: Commit canonical sources and regenerated outputs
         shell: bash
         run: |
-          if git diff --quiet -- unit-2/deep-reading-topic-2-*.html; then
-            echo "Unit 2 deep readings are already synchronized."
+          if git diff --quiet -- scripts/lib/deep-reading-content/topic-2-*.js unit-2/deep-reading-topic-2-*.html ebook/unit-2.html; then
+            echo "Unit 2 Deep Readings and eBook are already synchronized."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add unit-2/deep-reading-topic-2-*.html
-          git commit -m "Align Unit 2 deep readings to CED spines"
+          git add scripts/lib/deep-reading-content/topic-2-*.js unit-2/deep-reading-topic-2-*.html ebook/unit-2.html
+          git commit -m "Align Unit 2 Deep Reading sources and eBook"
           git push origin HEAD:fix-topic-2-1-content-structure
