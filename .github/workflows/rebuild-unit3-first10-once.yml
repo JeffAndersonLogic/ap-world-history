@@ -1,0 +1,31 @@
+name: Rebuild Unit 3 First10 Once
+on:
+  push:
+    branches:
+      - repair-unit-3-ced-alignment
+    paths:
+      - '.github/workflows/rebuild-unit3-first10-once.yml'
+permissions:
+  contents: write
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: repair-unit-3-ced-alignment
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Rebuild authored First and 10 pages
+        run: npm run build:readings
+      - name: Verify generated reading contract
+        run: node scripts/test/readings-reproducible.test.js
+      - name: Commit generated Unit 3 readings and remove workflow
+        run: |
+          rm .github/workflows/rebuild-unit3-first10-once.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add unit-3/first-and-10-topic-3-*.html .github/workflows/rebuild-unit3-first10-once.yml
+          git commit -m "Regenerate Unit 3 First and 10 readings"
+          git push
