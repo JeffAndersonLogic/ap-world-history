@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      code: 'Unit 3: Learning Objective A',
+      theme: 'Learning Objective',
+      text: 'Explain how and why various land-based empires developed and expanded from 1450 to 1750.',
+      illustrativeExamples: []
+    },
+    {
       "code": "KC-4.3.II",
       "theme": "Governance",
       "text": "Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.",
