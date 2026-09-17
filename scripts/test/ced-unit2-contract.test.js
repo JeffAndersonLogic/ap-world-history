@@ -8,7 +8,9 @@ const contract = require('../lib/ced-unit2-contract');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const DATA = path.join(ROOT, 'assets', 'data');
-const MIN = contract.minimumScore || 95;
+// Unit 2 has now been repaired to full contract coverage. Keep 100% as the
+// merge requirement so future edits cannot quietly reintroduce instructional drift.
+const MIN = 100;
 const failures = [];
 
 function sandbox() {
@@ -53,7 +55,7 @@ function ratio(found, total) {
 }
 
 console.log('\nUnit 2 CED instructional contract');
-console.log(`Minimum passing score: ${MIN}%`);
+console.log(`Required score: ${MIN}%`);
 
 for (const [topic, spec] of Object.entries(contract.topics)) {
   const file = path.join(DATA, spec.file);
@@ -105,8 +107,8 @@ for (const [topic, spec] of Object.entries(contract.topics)) {
 if (failures.length) {
   console.error(`\nUnit 2 CED gate failed (${failures.length} topic issue${failures.length === 1 ? '' : 's'}).`);
   failures.forEach(item => console.error(`  - ${item}`));
-  console.error('\nA topic below 95% may not merge. Repair the lesson or update the locked contract only when the CED itself changes.');
+  console.error(`\nA Topic 2 lesson below ${MIN}% may not merge. Repair the lesson or update the locked contract only when the CED itself changes.`);
   process.exit(1);
 }
 
-console.log('\nUnit 2 CED gate passed: every topic is at least 95% aligned to its locked instructional contract.');
+console.log(`\nUnit 2 CED gate passed: every topic satisfies ${MIN}% of its locked instructional contract.`);
