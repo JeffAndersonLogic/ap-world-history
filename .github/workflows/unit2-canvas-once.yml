@@ -1,0 +1,32 @@
+name: Unit 2 Canvas regenerate one-shot
+
+on:
+  push:
+    branches:
+      - fix-topic-2-1-content-structure
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix-topic-2-1-content-structure
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Regenerate Canvas schedule artifacts
+        run: node scripts/build-canvas-events.js
+      - name: Commit generated artifacts and remove one-shot workflow
+        run: |
+          rm .github/workflows/unit2-canvas-once.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Regenerate Canvas schedule artifacts"
+          git push origin HEAD:fix-topic-2-1-content-structure
