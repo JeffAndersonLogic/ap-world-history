@@ -26,7 +26,9 @@ module.exports = {
         ['paper money'], ['Kashgar'], ['Samarkand'], ['Pax Mongolica'], ['porcelain'], ['iron', 'steel']
       ],
       deepReadingRequired: [
-        ['caravanserai'], ['credit'], ['paper money'], ['Kashgar', 'Samarkand'], ['Pax Mongolica']
+        ['luxury demand', 'demand'], ['caravanserai'], ['credit'], ['paper money'],
+        ['Kashgar'], ['Samarkand'], ['Pax Mongolica'], ['productive capacity', 'production'],
+        ['porcelain'], ['iron', 'steel']
       ],
       assessmentRequired: [
         ['luxury goods', 'demand'], ['caravanserai', 'credit', 'paper money'],
@@ -125,7 +127,7 @@ module.exports = {
         ['commercial practices'], ['demand'], ['productive capacity']
       ],
       deepReadingRequired: [
-        ['partnership contract', 'credit'], ['Demand and Productive Capacity'], ['productive capacity'], ['comparison']
+        ['partnership contract', 'credit'], ['Demand and productive capacity', 'Demand and Productive Capacity'], ['productive capacity'], ['comparison']
       ],
       assessmentRequired: [
         ['similarity'], ['difference'], ['commercial practices', 'finance'], ['demand', 'productive capacity', 'production']
