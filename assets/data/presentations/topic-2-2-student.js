@@ -186,9 +186,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "grid",
-      "eyebrow": "Big Rock 3 · Transfer · CED Must-Know",
+      "eyebrow": "Big Rock 3 · Transfer · KC-3.2.II.A.ii",
       "title": "Connection moves knowledge.",
-      "footer": "Medicine · numbering systems · Uyghur script = evidence that connection moved knowledge.",
+      "subtitle": "Interregional contact and conflict encouraged significant technological and cultural transfers.",
+      "footer": "Medicine · numbering systems · Uyghur script = three CED examples students should be able to explain.",
       "cards": [
         {
           "title": "MEDICINE",
@@ -205,6 +206,81 @@ window.BEHISTORICAL_STUDENT_DECK = {
         {
           "title": "MECHANISM",
           "text": "Conquest + travel + specialists create contact"
+        }
+      ]
+    },
+    {
+      "kind": "process",
+      "eyebrow": "Big Rock 3 · Transfer Example 1 · Medicine",
+      "title": "Medical knowledge moves west.",
+      "subtitle": "Greco-Islamic medical knowledge -> western Europe",
+      "footer": "Broader Eurasian transfer system — not “the Mongols personally delivered every text.”",
+      "steps": [
+        {
+          "label": "GREEK TRADITIONS",
+          "text": "Greek medical learning forms part of the knowledge base"
+        },
+        {
+          "label": "ISLAMIC WORLD",
+          "text": "Scholars preserve, translate, debate, and develop it"
+        },
+        {
+          "label": "WESTERN EUROPE",
+          "text": "Medical learning moves into Latin Europe through interregional contact"
+        },
+        {
+          "label": "AP POINT",
+          "text": "Contact transfers knowledge across political and cultural boundaries"
+        }
+      ]
+    },
+    {
+      "kind": "process",
+      "eyebrow": "Big Rock 3 · Transfer Example 2 · Mathematics",
+      "title": "Number systems move across cultures.",
+      "subtitle": "South Asia -> Islamic world -> Europe",
+      "footer": "The numbers are not Mongol inventions; they illustrate cross-regional transfer in the period.",
+      "steps": [
+        {
+          "label": "SOUTH ASIA",
+          "text": "Positional numerals and place-value mathematics develop"
+        },
+        {
+          "label": "ISLAMIC WORLD",
+          "text": "Mathematicians adopt, use, and transmit the system"
+        },
+        {
+          "label": "EUROPE",
+          "text": "Merchants and scholars increasingly use the numerals"
+        },
+        {
+          "label": "AP POINT",
+          "text": "Connected trade and scholarly networks move mathematical knowledge"
+        }
+      ]
+    },
+    {
+      "kind": "process",
+      "eyebrow": "Big Rock 3 · Transfer Example 3 · Writing",
+      "title": "The Mongols borrow a writing system.",
+      "subtitle": "Adoption of the Uyghur script",
+      "footer": "Direct Mongol example: conquerors borrow and adapt useful cultural technology.",
+      "steps": [
+        {
+          "label": "UYGHUR SCRIPT",
+          "text": "A neighboring scribal tradition provides a usable writing system"
+        },
+        {
+          "label": "MONGOL ADOPTION",
+          "text": "Mongol rulers adopt the script for writing Mongolian"
+        },
+        {
+          "label": "ADAPTATION",
+          "text": "The script is adapted to fit Mongolian language and use"
+        },
+        {
+          "label": "STATE USE",
+          "text": "Writing supports administration and long-distance communication"
         }
       ]
     },
