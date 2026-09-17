@@ -166,7 +166,7 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
     check('2.1 teacher sequence includes political stability as a supporting condition', /political stability/i.test(JSON.stringify(causal || {})));
 
     await verifyLocalVisual(page, 'The Silk Roads', 'Silk%20Road%20Map%202', '2.1 launch');
-    await verifyLocalVisual(page, 'Luxury goods made distance worth it', 'Chinese%20Porcelain', '2.1 luxury demand');
+    await verifyLocalVisual(page, 'Luxury goods made distance worth it', 'Porcelain%20silk%20luxury%20goods', '2.1 luxury demand');
     await verifyLocalVisual(page, 'Caravanserai made distance manageable', 'Caravanserai%20Reconstruction', '2.1 caravanserai');
     await verifyLocalVisual(page, 'Trade networks create powerful nodes', 'Samarkand', '2.1 Samarkand');
     check('2.1 teacher surface has no JavaScript errors', errors.length === 0, errors.join('; ') || 'none');
