@@ -23,10 +23,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Demand + Systems -> Trade Growth",
       "footer": "This is the whole lesson. Every example fits here.",
       "steps": [
-        {"label": "DEMAND", "text": "Luxury goods are worth moving"},
-        {"label": "SYSTEMS", "text": "Risk and cost go down"},
-        {"label": "EXCHANGE", "text": "Volume and range increase"},
-        {"label": "EFFECTS", "text": "Cities and production grow"}
+        {
+          "label": "DEMAND",
+          "text": "Luxury goods are worth moving"
+        },
+        {
+          "label": "SYSTEMS",
+          "text": "Risk and cost go down"
+        },
+        {
+          "label": "EXCHANGE",
+          "text": "Volume and range increase"
+        },
+        {
+          "label": "EFFECTS",
+          "text": "Cities and production grow"
+        }
       ]
     },
     {
@@ -34,10 +46,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "What Students Must Know",
       "title": "Three Big Rocks",
       "cards": [
-        {"title": "1 · DEMAND", "text": "Luxury goods drove long-distance trade."},
-        {"title": "2 · SYSTEMS", "text": "Caravanserai, credit, banking, paper money lowered risk."},
-        {"title": "3 · EFFECTS", "text": "Trade cities and export production grew."},
-        {"title": "AP SKILL", "text": "Explain the mechanism, not just the term."}
+        {
+          "title": "1 · DEMAND",
+          "text": "Luxury goods drove long-distance trade."
+        },
+        {
+          "title": "2 · SYSTEMS",
+          "text": "Caravanserai, credit, banking, paper money lowered risk."
+        },
+        {
+          "title": "3 · EFFECTS",
+          "text": "Trade cities and export production grew."
+        },
+        {
+          "title": "AP SKILL",
+          "text": "Explain the mechanism, not just the term."
+        }
       ]
     },
     {
@@ -52,10 +76,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "The AP Explanation Formula",
       "footer": "The third box is the reasoning students usually miss.",
       "steps": [
-        {"label": "NAME", "text": "Caravanserai"},
-        {"label": "FUNCTION", "text": "Rest, storage, water, safety"},
-        {"label": "MECHANISM", "text": "Lowered risk and cost"},
-        {"label": "RESULT", "text": "More long-distance trade"}
+        {
+          "label": "NAME",
+          "text": "Caravanserai"
+        },
+        {
+          "label": "FUNCTION",
+          "text": "Rest, storage, water, safety"
+        },
+        {
+          "label": "MECHANISM",
+          "text": "Lowered risk and cost"
+        },
+        {
+          "label": "RESULT",
+          "text": "More long-distance trade"
+        }
       ]
     },
     {
@@ -87,10 +123,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Merchants also needed financial systems.",
       "footer": "Commercial tools reduced financial risk; political stability could reduce route risk.",
       "cards": [
-        {"title": "BILLS OF EXCHANGE", "text": "A safer written promise of payment."},
-        {"title": "BANKING HOUSES", "text": "Institutions that handled money and credit."},
-        {"title": "PAPER MONEY", "text": "Portable currency for easier transactions."},
-        {"title": "MONEY ECONOMIES", "text": "More exchange through accepted currency."}
+        {
+          "title": "BILLS OF EXCHANGE",
+          "text": "A safer written promise of payment."
+        },
+        {
+          "title": "BANKING HOUSES",
+          "text": "Institutions that handled money and credit."
+        },
+        {
+          "title": "PAPER MONEY",
+          "text": "Portable currency for easier transactions."
+        },
+        {
+          "title": "MONEY ECONOMIES",
+          "text": "More exchange through accepted currency."
+        }
       ]
     },
     {
@@ -98,10 +146,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Put the Cause Together",
       "title": "Demand alone is not enough.",
       "steps": [
-        {"label": "WANT", "text": "People want luxury goods"},
-        {"label": "PROBLEM", "text": "Distance is risky and expensive"},
-        {"label": "SOLUTION", "text": "Infrastructure + credit + political stability"},
-        {"label": "OUTCOME", "text": "Trade expands"}
+        {
+          "label": "WANT",
+          "text": "People want luxury goods"
+        },
+        {
+          "label": "PROBLEM",
+          "text": "Distance is risky and expensive"
+        },
+        {
+          "label": "SOLUTION",
+          "text": "Infrastructure + credit + political stability"
+        },
+        {
+          "label": "OUTCOME",
+          "text": "Trade expands"
+        }
       ]
     },
     {
@@ -126,17 +186,32 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Checkpoint Writing",
       "title": "Explain why Silk Roads trade grew after 1200.",
       "subtitle": "Use two specific pieces of evidence and explain the mechanism for each.",
-      "action": {"label": "Open Student Lesson", "url": "lesson-2-1-silk-roads.html#modules"}
+      "action": {
+        "label": "Open Student Lesson",
+        "url": "lesson-2-1-silk-roads.html#modules"
+      }
     },
     {
       "kind": "grid",
       "eyebrow": "Common Trap",
       "title": "Fact piles are not explanations.",
       "cards": [
-        {"title": "WEAK", "text": "Caravanserai, bills of exchange, and Samarkand helped trade."},
-        {"title": "BETTER", "text": "Caravanserai lowered travel risk by giving merchants rest and resupply points."},
-        {"title": "WEAK", "text": "Luxury goods moved on the Silk Roads."},
-        {"title": "BETTER", "text": "Demand for luxury goods encouraged expanded production and long-distance trade."}
+        {
+          "title": "WEAK",
+          "text": "Caravanserai, bills of exchange, and Samarkand helped trade."
+        },
+        {
+          "title": "BETTER",
+          "text": "Caravanserai lowered travel risk by giving merchants rest and resupply points."
+        },
+        {
+          "title": "WEAK",
+          "text": "Luxury goods moved on the Silk Roads."
+        },
+        {
+          "title": "BETTER",
+          "text": "Demand for luxury goods encouraged expanded production and long-distance trade."
+        }
       ]
     },
     {
