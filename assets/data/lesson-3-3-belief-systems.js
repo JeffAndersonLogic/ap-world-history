@@ -73,6 +73,12 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
+      code: 'Unit 3: Learning Objective C',
+      theme: 'Learning Objective',
+      text: 'Explain continuity and change within the various belief systems during the period from 1450 to 1750.',
+      illustrativeExamples: []
+    },
+    {
       code: 'KC-4.1.VI.i',
       theme: 'Cultural Developments and Interactions',
       text: 'The Protestant Reformation marked a break with existing Christian traditions, and both the Protestant and Catholic reformations contributed to the growth of Christianity.',
