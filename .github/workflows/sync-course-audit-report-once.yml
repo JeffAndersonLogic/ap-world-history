@@ -1,0 +1,28 @@
+name: Sync Course Audit Report Once
+on:
+  push:
+    branches:
+      - course-wide-audit-diagnostic
+    paths:
+      - '.github/workflows/sync-course-audit-report-once.yml'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: course-wide-audit-diagnostic
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/audit-course.js
+      - name: Commit and remove workflow
+        run: |
+          rm .github/workflows/sync-course-audit-report-once.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/COURSE-WIDE-DIAGNOSTIC.md docs/course-wide-diagnostic.json .github/workflows/sync-course-audit-report-once.yml
+          git commit -m "Sync course audit report"
+          git push
