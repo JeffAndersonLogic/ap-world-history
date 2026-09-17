@@ -7,12 +7,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
   },
   "slides": [
     {
-      "kind": "prompt",
-      "eyebrow": "Teacher Preflight · 2 Minutes",
-      "title": "Do not teach the road. Teach the system.",
-      "subtitle": "Demand + better trade systems lowered risk and cost, so exchange expanded and cities and production grew."
-    },
-    {
       "kind": "hero",
       "eyebrow": "AP World History · Topic 2.1",
       "title": "The Silk Roads",
@@ -217,28 +211,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
         {
           "title": "BETTER",
           "text": "Demand for luxury goods encouraged expanded production and long-distance trade."
-        }
-      ]
-    },
-    {
-      "kind": "nodes",
-      "eyebrow": "Network Nodes",
-      "title": "Connection changes cities.",
-      "subtitle": "Samarkand and Kashgar become wealthy because routes converge there.",
-      "nodes": [
-        {
-          "title": "SAMARKAND",
-          "text": "Crossroads city where merchants, languages, beliefs, and services concentrate.",
-          "visual": {
-            "url": "../assets/images/topics/2-1/2.1%20-%20Samarkand.webp"
-          }
-        },
-        {
-          "title": "KASHGAR",
-          "text": "Oasis node connecting routes through Central Asia and turning geography into wealth.",
-          "visual": {
-            "url": "../assets/images/topics/2-1/2.1%20-%20Kashgar.jpg"
-          }
         }
       ]
     },
