@@ -7,7 +7,7 @@
 // historical developments, or illustrative examples disappear from the lesson.
 
 module.exports = {
-  minimumScore: 95,
+  minimumScore: 100,
   topics: {
     '2.1': {
       file: 'lesson-2-1-silk-roads.js',
