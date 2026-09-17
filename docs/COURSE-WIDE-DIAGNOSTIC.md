@@ -9,30 +9,30 @@ Known-good control: certified Unit 2 must return CLEAN on all seven topics. Cont
 | Topic | Status | Red flags | Review flags |
 |---|---|---:|---:|
 | 3.2 Empires: Administration | CLEAN | 0 | 0 |
-| 8.4 Spread of Communism After 1900 | REVIEW | 0 | 1 |
+| 8.4 Spread of Communism After 1900 | CLEAN | 0 | 0 |
 
 ## Course heat map
 
-**Totals:** 71 topics · 0 Rebuild · 0 Repair · 38 Review · 33 Clean
+**Totals:** 71 topics · 0 Rebuild · 0 Repair · 10 Review · 61 Clean
 
 | Unit | Topics | Rebuild | Repair | Review | Clean |
 |---:|---:|---:|---:|---:|---:|
-| 1 | 7 | 0 | 0 | 3 | 4 |
+| 1 | 7 | 0 | 0 | 1 | 6 |
 | 2 | 7 | 0 | 0 | 0 | 7 |
-| 3 | 4 | 0 | 0 | 2 | 2 |
-| 4 | 8 | 0 | 0 | 6 | 2 |
-| 5 | 10 | 0 | 0 | 8 | 2 |
+| 3 | 4 | 0 | 0 | 1 | 3 |
+| 4 | 8 | 0 | 0 | 2 | 6 |
+| 5 | 10 | 0 | 0 | 1 | 9 |
 | 6 | 8 | 0 | 0 | 1 | 7 |
-| 7 | 9 | 0 | 0 | 7 | 2 |
-| 8 | 9 | 0 | 0 | 8 | 1 |
-| 9 | 9 | 0 | 0 | 3 | 6 |
+| 7 | 9 | 0 | 0 | 2 | 7 |
+| 8 | 9 | 0 | 0 | 1 | 8 |
+| 9 | 9 | 0 | 0 | 1 | 8 |
 
 ## Topic-by-topic diagnostic
 
 | Topic | Title | Status | Main findings | Reading trace |
 |---|---|---|---|---:|
-| 1.1 | Song China: Power, Prosperity, and the Scholar's World | **REVIEW** | Review: renderer changes canonical CED metadata | 36% |
-| 1.2 | Developments in Dar al-Islam | **REVIEW** | Review: renderer changes canonical CED metadata | 0% |
+| 1.1 | Song China: Power, Prosperity, and the Scholar's World | **CLEAN** | No automated structural flags | 36% |
+| 1.2 | Developments in Dar al-Islam | **CLEAN** | No automated structural flags | 0% |
 | 1.3 | Developments in South and Southeast Asia | **CLEAN** | No automated structural flags | 50% |
 | 1.4 | State Building in the Americas | **CLEAN** | No automated structural flags | 100% |
 | 1.5 | State Building in Africa | **CLEAN** | No automated structural flags | 67% |
@@ -47,25 +47,25 @@ Known-good control: certified Unit 2 must return CLEAN on all seven topics. Cont
 | 2.7 | Comparison of Economic Exchange | **CLEAN** | No automated structural flags | 100% |
 | 3.1 | Empires Expand | **CLEAN** | No automated structural flags | 0% |
 | 3.2 | Empires: Administration | **CLEAN** | No automated structural flags | 8% |
-| 3.3 | Empires and Belief Systems | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
-| 3.4 | Comparison in Land-Based Empires | **REVIEW** | Review: renderer changes canonical CED metadata; Review: no BeInTheRoom scenario linked | 100% |
-| 4.1 | Technological Innovations | **REVIEW** | Review: renderer changes canonical CED metadata | 83% |
+| 3.3 | Empires and Belief Systems | **CLEAN** | No automated structural flags | 100% |
+| 3.4 | Comparison in Land-Based Empires | **REVIEW** | Review: no BeInTheRoom scenario linked | 100% |
+| 4.1 | Technological Innovations | **CLEAN** | No automated structural flags | 83% |
 | 4.2 | Exploration: Causes and Events | **CLEAN** | No automated structural flags | 100% |
-| 4.3 | Columbian Exchange | **REVIEW** | Review: renderer changes canonical CED metadata | 80% |
+| 4.3 | Columbian Exchange | **CLEAN** | No automated structural flags | 80% |
 | 4.4 | Maritime Empires Established | **CLEAN** | No automated structural flags | 0% |
-| 4.5 | Maritime Empires Maintained and Developed | **REVIEW** | Review: renderer changes canonical CED metadata | 0% |
+| 4.5 | Maritime Empires Maintained and Developed | **CLEAN** | No automated structural flags | 0% |
 | 4.6 | Internal and External Challenges to State Power | **REVIEW** | Review: target/criteria KC not in runtime CED: KC-4.3.III.ii | 0% |
-| 4.7 | Changing Social Hierarchies | **REVIEW** | Review: renderer changes canonical CED metadata | 0% |
-| 4.8 | Continuity and Change in the Period from c. 1450 to c. 1750 | **REVIEW** | Review: renderer changes canonical CED metadata; Review: no BeInTheRoom scenario linked | 100% |
-| 5.1 | The Enlightenment | **REVIEW** | Review: renderer changes canonical CED metadata | 0% |
-| 5.2 | Nationalism and Revolutions | **REVIEW** | Review: renderer changes canonical CED metadata | 17% |
-| 5.3 | The Industrial Revolution Begins | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
-| 5.4 | Industrialization Spreads | **REVIEW** | Review: renderer changes canonical CED metadata | 0% |
+| 4.7 | Changing Social Hierarchies | **CLEAN** | No automated structural flags | 0% |
+| 4.8 | Continuity and Change in the Period from c. 1450 to c. 1750 | **REVIEW** | Review: no BeInTheRoom scenario linked | 100% |
+| 5.1 | The Enlightenment | **CLEAN** | No automated structural flags | 0% |
+| 5.2 | Nationalism and Revolutions | **CLEAN** | No automated structural flags | 17% |
+| 5.3 | The Industrial Revolution Begins | **CLEAN** | No automated structural flags | 100% |
+| 5.4 | Industrialization Spreads | **CLEAN** | No automated structural flags | 0% |
 | 5.5 | Technology of Industrialization | **CLEAN** | No automated structural flags | 100% |
-| 5.6 | Industrialization: Government and Society | **REVIEW** | Review: renderer changes canonical CED metadata | 0% |
-| 5.7 | Economic Developments and Innovations | **REVIEW** | Review: renderer changes canonical CED metadata | 50% |
+| 5.6 | Industrialization: Government and Society | **CLEAN** | No automated structural flags | 0% |
+| 5.7 | Economic Developments and Innovations | **CLEAN** | No automated structural flags | 50% |
 | 5.8 | Reactions to the Industrial Economy | **CLEAN** | No automated structural flags | 100% |
-| 5.9 | Society and the Industrial Age | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
+| 5.9 | Society and the Industrial Age | **CLEAN** | No automated structural flags | 100% |
 | 5.10 | Continuity and Change in the Industrial Age | **REVIEW** | Review: no BeInTheRoom scenario linked | 100% |
 | 6.1 | Rationales for Imperialism | **CLEAN** | No automated structural flags | 100% |
 | 6.2 | State Expansion | **CLEAN** | No automated structural flags | 0% |
@@ -75,26 +75,26 @@ Known-good control: certified Unit 2 must return CLEAN on all seven topics. Cont
 | 6.6 | Causes of Migration | **CLEAN** | No automated structural flags | 0% |
 | 6.7 | Effects of Migration | **CLEAN** | No automated structural flags | 33% |
 | 6.8 | Causation in the Imperial Age | **REVIEW** | Review: no BeInTheRoom scenario linked | 100% |
-| 7.1 | Shifting Power After 1900 | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
+| 7.1 | Shifting Power After 1900 | **CLEAN** | No automated structural flags | 100% |
 | 7.2 | Causes of World War I | **CLEAN** | No automated structural flags | 100% |
 | 7.3 | Conducting World War I | **CLEAN** | No automated structural flags | 100% |
-| 7.4 | Economy in the Interwar Period | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
-| 7.5 | Unresolved Tensions After World War I | **REVIEW** | Review: renderer changes canonical CED metadata | 25% |
-| 7.6 | Causes of World War II | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
-| 7.7 | Conducting World War II | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
-| 7.8 | Mass Atrocities After 1900 | **REVIEW** | Review: renderer changes canonical KC code set; Review: renderer changes canonical CED metadata; Review: no BeInTheRoom scenario linked | 100% |
+| 7.4 | Economy in the Interwar Period | **CLEAN** | No automated structural flags | 100% |
+| 7.5 | Unresolved Tensions After World War I | **CLEAN** | No automated structural flags | 25% |
+| 7.6 | Causes of World War II | **CLEAN** | No automated structural flags | 100% |
+| 7.7 | Conducting World War II | **CLEAN** | No automated structural flags | 100% |
+| 7.8 | Mass Atrocities After 1900 | **REVIEW** | Review: renderer changes canonical KC code set; Review: no BeInTheRoom scenario linked | 100% |
 | 7.9 | Causation in Global Conflict | **REVIEW** | Review: no BeInTheRoom scenario linked | 100% |
 | 8.1 | Setting the Stage for the Cold War and Decolonization | **CLEAN** | No automated structural flags | 100% |
-| 8.2 | The Cold War | **REVIEW** | Review: renderer changes canonical CED metadata | 0% |
-| 8.3 | Effects of the Cold War | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
-| 8.4 | Spread of Communism After 1900 | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
-| 8.5 | Decolonization After 1900 | **REVIEW** | Review: renderer changes canonical CED metadata | 46% |
-| 8.6 | Newly Independent States | **REVIEW** | Review: renderer changes canonical CED metadata | 60% |
-| 8.7 | Global Resistance to Established Power Structures After 1900 | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
-| 8.8 | End of the Cold War | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
+| 8.2 | The Cold War | **CLEAN** | No automated structural flags | 0% |
+| 8.3 | Effects of the Cold War | **CLEAN** | No automated structural flags | 100% |
+| 8.4 | Spread of Communism After 1900 | **CLEAN** | No automated structural flags | 100% |
+| 8.5 | Decolonization After 1900 | **CLEAN** | No automated structural flags | 46% |
+| 8.6 | Newly Independent States | **CLEAN** | No automated structural flags | 60% |
+| 8.7 | Global Resistance to Established Power Structures After 1900 | **CLEAN** | No automated structural flags | 100% |
+| 8.8 | End of the Cold War | **CLEAN** | No automated structural flags | 100% |
 | 8.9 | Causation in the Age of the Cold War and Decolonization | **REVIEW** | Review: no BeInTheRoom scenario linked | 100% |
-| 9.1 | Advances in Technology and Exchange After 1900 | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
-| 9.2 | Technological Advances and Limitations After 1900: Disease | **REVIEW** | Review: renderer changes canonical CED metadata | 100% |
+| 9.1 | Advances in Technology and Exchange After 1900 | **CLEAN** | No automated structural flags | 100% |
+| 9.2 | Technological Advances and Limitations After 1900: Disease | **CLEAN** | No automated structural flags | 100% |
 | 9.3 | Technological Advances—Debates About the Environment After 1900 | **CLEAN** | No automated structural flags | 100% |
 | 9.4 | Economics in the Global Age | **CLEAN** | No automated structural flags | 76% |
 | 9.5 | Calls for Reform and Responses After 1900 | **CLEAN** | No automated structural flags | 33% |
