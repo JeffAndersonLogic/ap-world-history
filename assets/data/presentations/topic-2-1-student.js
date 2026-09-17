@@ -99,9 +99,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Big Rock 1 · Demand",
       "title": "Luxury goods made distance worth it.",
       "visual": {
-        "url": "../assets/images/topics/2-1/2.1%20-%20Chinese%20Porcelain.svg",
-        "alt": "Chinese porcelain used as evidence of luxury demand and export production",
-        "credit": "INSTRUCTIONAL RECONSTRUCTION — BEHISTORICAL"
+        "url": "../assets/images/topics/2-1/2.1%20-%20Porcelain%20silk%20luxury%20goods.jpeg",
+        "alt": "Porcelain and silk representing high-value luxury goods traded across Afro-Eurasia",
+        "credit": "Topic 2.1 classroom visual · Luxury goods"
       },
       "footer": "Porcelain · textiles · silk · spices · iron · steel"
     },
@@ -169,7 +169,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Big Rock 3 · Trading Cities",
       "title": "Trade networks create powerful nodes.",
       "visual": {
-        "url": "../assets/images/topics/2-1/2.1%20-%20Samarkand.webp",
+        "url": "../assets/images/topics/2-1/2.1%20-%20Samarkand.jpg",
         "alt": "Samarkand as a major Silk Road trading city",
         "credit": "Topic 2.1 classroom visual · Samarkand"
       },
