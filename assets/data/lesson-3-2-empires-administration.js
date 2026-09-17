@@ -73,6 +73,12 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
+      code: 'Unit 3: Learning Objective B',
+      theme: 'Learning Objective',
+      text: 'Explain how rulers used a variety of methods to legitimize and consolidate their power in land-based empires from 1450 to 1750.',
+      illustrativeExamples: []
+    },
+    {
       code: 'KC-4.3.I.C',
       theme: 'Governance',
       text: 'Recruitment and use of bureaucratic elites, as well as the development of military professionals, became more common among rulers who wanted to maintain centralized control over their populations and resources.',
