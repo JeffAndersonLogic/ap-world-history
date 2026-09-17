@@ -2,7 +2,7 @@
 
 **Audit baseline:** AP World History: Modern Course and Exam Description, Effective Fall 2026  
 **Audit model:** BeHistorical Course Audit Standard, calibrated against the certified Unit 2 reference implementation.  
-**Status:** Diagnostic complete; repair not yet certified.
+**Status:** Audit repairs implemented on `repair-unit-3-ced-alignment`; locked CED and coherence contracts added. Final CI and merge review remain the certification gate.
 
 ## Executive finding
 
@@ -139,3 +139,16 @@ Unit 3 should not be labeled reference-standard complete until all five gates pa
 **CED Coverage PASS -> Instructional Coherence PASS -> Assessment Alignment PASS -> Technical Integrity PASS -> Human Instructional Review PASS**
 
 After repairs, create locked Unit 3 CED and coherence contracts modeled on Unit 2 and add them to CI.
+
+
+## Repair implementation status
+
+The audit findings above have now been implemented in the repair branch:
+
+- **3.1:** rivalry assessment restored and the over-strong 1453 trade-route causal shortcut qualified.
+- **3.2:** formal assessment and lecture coverage now include legitimacy through religion/art/architecture and revenue systems.
+- **3.3:** lesson story, First & 10, skill work, and checkpoints now follow the Reformation -> Ottoman-Safavid Sunni/Shia -> Sikhism continuity/change spine.
+- **3.4:** targets, First & 10, skill work, checkpoints, and a comparison BeInTheRoom now answer the exact “methods by which empires increased their influence” objective.
+- **Regression protection:** Unit 3 now has locked CED and cross-surface coherence contracts in offline CI, modeled on the Unit 2 reference implementation.
+
+Human instructional review remains distinct from automated certification; final merge requires the repository's normal structure and browser contracts to pass on the exact repair head.
