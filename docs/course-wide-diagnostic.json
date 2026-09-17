@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-09-17T23:06:55.775Z",
+  "generatedAt": "2026-09-17T23:08:02.915Z",
+  "referenceBaselinePass": true,
   "calibrationPass": true,
   "counts": {
     "REBUILD": 0,
-    "REPAIR": 1,
-    "REVIEW": 54,
-    "CLEAN": 16
+    "REPAIR": 0,
+    "REVIEW": 38,
+    "CLEAN": 33
   },
   "units": {
     "1": {
@@ -18,37 +19,37 @@
     "2": {
       "topics": 7,
       "REBUILD": 0,
-      "REPAIR": 1,
-      "REVIEW": 3,
-      "CLEAN": 3
+      "REPAIR": 0,
+      "REVIEW": 0,
+      "CLEAN": 7
     },
     "3": {
       "topics": 4,
       "REBUILD": 0,
       "REPAIR": 0,
-      "REVIEW": 3,
-      "CLEAN": 1
+      "REVIEW": 2,
+      "CLEAN": 2
     },
     "4": {
       "topics": 8,
       "REBUILD": 0,
       "REPAIR": 0,
-      "REVIEW": 8,
-      "CLEAN": 0
+      "REVIEW": 6,
+      "CLEAN": 2
     },
     "5": {
       "topics": 10,
       "REBUILD": 0,
       "REPAIR": 0,
-      "REVIEW": 9,
-      "CLEAN": 1
+      "REVIEW": 8,
+      "CLEAN": 2
     },
     "6": {
       "topics": 8,
       "REBUILD": 0,
       "REPAIR": 0,
-      "REVIEW": 8,
-      "CLEAN": 0
+      "REVIEW": 1,
+      "CLEAN": 7
     },
     "7": {
       "topics": 9,
@@ -68,8 +69,8 @@
       "topics": 9,
       "REBUILD": 0,
       "REPAIR": 0,
-      "REVIEW": 5,
-      "CLEAN": 4
+      "REVIEW": 3,
+      "CLEAN": 6
     }
   },
   "results": [
@@ -84,12 +85,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "target/criteria KC not in runtime CED: KC-3.1.III.D.i · KC-3.1.III.D.ii",
-        "target/criteria KC not in runtime CED: KC-3.3.III.A.i · KC-3.1.I.D"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 36% (4/11)"
+        "reading example trace 36% (4/11); informational only"
       ],
       "codes": [
         "KC-3.2.I.A",
@@ -133,11 +132,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 0% (0/9)"
+        "reading example trace 0% (0/9); informational only"
       ],
       "codes": [
         "KC-3.1.III.D.iii",
@@ -179,7 +177,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 50% (5/10)"
+        "reading example trace 50% (5/10); informational only"
       ],
       "codes": [
         "KC-3.1.III.D.iv",
@@ -220,7 +218,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 100% (6/6)"
+        "reading example trace 100% (6/6); informational only"
       ],
       "codes": [
         "KC-3.2.I.D.i"
@@ -256,7 +254,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 67% (2/3)"
+        "reading example trace 67% (2/3); informational only"
       ],
       "codes": [
         "KC-3.2.I.D.ii"
@@ -289,7 +287,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-3.1.III.D.v",
@@ -322,7 +320,7 @@
         "no BeInTheRoom scenario linked"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-3.2",
@@ -352,14 +350,11 @@
       "lessonPath": "assets/data/lesson-2-1-silk-roads.js",
       "rendererPath": "assets/data/lesson-2-1-renderer-config.js",
       "shell": "unit-2/lesson-2-1-silk-roads.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "target/criteria KC not in runtime CED: KC-3.1.I.A.i + KC-3.1.I.C.i",
-        "target/criteria KC not in runtime CED: KC-3.1.I.A.i + KC-3.3.I.B"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 80% (4/5)"
+        "reading example trace 80% (4/5); informational only"
       ],
       "codes": [
         "KC-3.1.I.A.i",
@@ -392,13 +387,11 @@
       "lessonPath": "assets/data/lesson-2-2-mongol-empire.js",
       "rendererPath": "assets/data/lesson-2-2-renderer-config.js",
       "shell": "unit-2/lesson-2-2-mongol-empire.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 0% (0/3)"
+        "reading example trace 0% (0/3); informational only"
       ],
       "codes": [
         "KC-3.2.I.B.iii",
@@ -429,15 +422,11 @@
       "lessonPath": "assets/data/lesson-2-3-indian-ocean.js",
       "rendererPath": "assets/data/lesson-2-3-renderer-config.js",
       "shell": "unit-2/lesson-2-3-indian-ocean.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "target/criteria KC not in runtime CED: KC-3.1.I.C.ii + KC-3.1.II.A.i",
-        "target/criteria KC not in runtime CED: KC-3.1.I.A.ii + KC-3.1.I.A.iii",
-        "target/criteria KC not in runtime CED: KC-3.1.III.B + KC-3.2.II.A.iii"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 67% (4/6)"
+        "reading example trace 67% (4/6); informational only"
       ],
       "codes": [
         "KC-3.1.I.A.ii",
@@ -478,7 +467,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 100% (2/2)"
+        "reading example trace 100% (2/2); informational only"
       ],
       "codes": [
         "KC-3.1.II.A.ii",
@@ -512,7 +501,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 38% (3/8)"
+        "reading example trace 38% (3/8); informational only"
       ],
       "codes": [
         "KC-3.1.III.D",
@@ -552,7 +541,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 67% (2/3)"
+        "reading example trace 67% (2/3); informational only"
       ],
       "codes": [
         "KC-3.1.IV"
@@ -581,16 +570,11 @@
       "lessonPath": "assets/data/lesson-2-7-comparison.js",
       "rendererPath": "assets/data/lesson-2-7-renderer-config.js",
       "shell": "unit-2/lesson-2-7-comparison.html",
-      "status": "REPAIR",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "target/criteria KC not in runtime CED: KC-3.1 + KC-3.3",
-        "target/criteria KC not in runtime CED: KC-3.1.I.A.i + KC-3.1.I.C.i",
-        "target/criteria KC not in runtime CED: KC-3.3.I.B + KC-3.1",
-        "target/criteria KC not in runtime CED: KC-3.3 + KC-3.3.I.B"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-3.1",
@@ -623,7 +607,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 0% (0/2)"
+        "reading example trace 0% (0/2); informational only"
       ],
       "codes": [
         "KC-4.3.II",
@@ -653,13 +637,11 @@
       "lessonPath": "assets/data/lesson-3-2-empires-administration.js",
       "rendererPath": "assets/data/lesson-3-2-renderer-config.js",
       "shell": "unit-3/lesson-3-2-empires-administration.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (8%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 8% (1/13)"
+        "reading example trace 8% (1/13); informational only"
       ],
       "codes": [
         "KC-4.3.I.C",
@@ -706,7 +688,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-4.1.VI.i",
@@ -740,7 +722,7 @@
         "no BeInTheRoom scenario linked"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-4.1",
@@ -776,7 +758,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 83% (5/6)"
+        "reading example trace 83% (5/6); informational only"
       ],
       "codes": [
         "KC-4.1.II",
@@ -809,13 +791,11 @@
       "lessonPath": "assets/data/lesson-4-2-exploration.js",
       "rendererPath": "assets/data/lesson-4-2-renderer-config.js",
       "shell": "unit-4/lesson-4-2-exploration.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "target/criteria KC not in runtime CED: KC-4.1.III.A; KC-4.1.III.B"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-4.1.III",
@@ -846,11 +826,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "target/criteria KC not in runtime CED: KC-4.1.V.B; KC-4.1.V.C"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 80% (4/5)"
+        "reading example trace 80% (4/5); informational only"
       ],
       "codes": [
         "KC-4.1.V",
@@ -885,13 +864,11 @@
       "lessonPath": "assets/data/lesson-4-4-maritime-empires-established.js",
       "rendererPath": "assets/data/lesson-4-4-renderer-config.js",
       "shell": "unit-4/lesson-4-4-maritime-empires-established.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 0% (0/6)"
+        "reading example trace 0% (0/6); informational only"
       ],
       "codes": [
         "KC-4.3.II.A.i",
@@ -932,12 +909,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "target/criteria KC not in runtime CED: KC-4.1.IV.D.i; KC-4.1.IV.D.ii",
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 0% (0/5)"
+        "reading example trace 0% (0/5); informational only"
       ],
       "codes": [
         "KC-4.1.IV.C",
@@ -978,11 +953,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "target/criteria KC not in runtime CED: KC-4.3.III.ii",
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
+        "target/criteria KC not in runtime CED: KC-4.3.III.ii"
       ],
       "notes": [
-        "reading example trace 0% (0/8)"
+        "reading example trace 0% (0/8); informational only"
       ],
       "codes": [
         "KC-4.3.III.iii",
@@ -1020,11 +994,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 0% (0/6)"
+        "reading example trace 0% (0/6); informational only"
       ],
       "codes": [
         "KC-4.3.I.B",
@@ -1065,7 +1038,7 @@
         "no BeInTheRoom scenario linked"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-4.1",
@@ -1099,11 +1072,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 0% (0/3)"
+        "reading example trace 0% (0/3); informational only"
       ],
       "codes": [
         "KC-5.3.I.A",
@@ -1139,11 +1111,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "low illustrative-example traceability in First & 10/Deep Reading (17%)"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 17% (1/6)"
+        "reading example trace 17% (1/6); informational only"
       ],
       "codes": [
         "KC-5.3.II.ii",
@@ -1186,7 +1157,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-5.1.I.A",
@@ -1215,11 +1186,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 0% (0/3)"
+        "reading example trace 0% (0/3); informational only"
       ],
       "codes": [
         "KC-5.1.II.B",
@@ -1249,13 +1219,11 @@
       "lessonPath": "assets/data/lesson-5-5-technology-of-industrialization.js",
       "rendererPath": "assets/data/lesson-5-5-renderer-config.js",
       "shell": "unit-5/lesson-5-5-technology-of-industrialization.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "target/criteria KC not in runtime CED: KC-5.1.I.E; KC-5.1.IV"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-5.1.I.B",
@@ -1288,7 +1256,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 0% (0/1)"
+        "reading example trace 0% (0/1); informational only"
       ],
       "codes": [
         "KC-5.1.V.C",
@@ -1325,7 +1293,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 50% (2/4)"
+        "reading example trace 50% (2/4); informational only"
       ],
       "codes": [
         "KC-5.1.III.A",
@@ -1361,7 +1329,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-5.1.V.D",
@@ -1395,7 +1363,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-5.1.VI.A",
@@ -1428,7 +1396,7 @@
         "no BeInTheRoom scenario linked"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-5.1",
@@ -1458,15 +1426,11 @@
       "lessonPath": "assets/data/lesson-6-1-rationales-for-imperialism.js",
       "rendererPath": "assets/data/lesson-6-1-renderer-config.js",
       "shell": "unit-6/lesson-6-1-rationales-for-imperialism.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "target/criteria KC not in runtime CED: KC-5.2.III, Cultural, religious, and racial ideologies of imperialism",
-        "target/criteria KC not in runtime CED: KC-5.2.III, Nationalism and the civilizing mission",
-        "target/criteria KC not in runtime CED: KC-5.2.III, Religious conversion as imperial justification"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-5.2.III"
@@ -1491,13 +1455,11 @@
       "lessonPath": "assets/data/lesson-6-2-state-expansion.js",
       "rendererPath": "assets/data/lesson-6-2-renderer-config.js",
       "shell": "unit-6/lesson-6-2-state-expansion.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 0% (0/6)"
+        "reading example trace 0% (0/6); informational only"
       ],
       "codes": [
         "KC-5.2.I.A",
@@ -1533,13 +1495,11 @@
       "lessonPath": "assets/data/lesson-6-3-indigenous-responses-to-state-expansion.js",
       "rendererPath": "assets/data/lesson-6-3-renderer-config.js",
       "shell": "unit-6/lesson-6-3-indigenous-responses-to-state-expansion.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (9%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 9% (1/11)"
+        "reading example trace 9% (1/11); informational only"
       ],
       "codes": [
         "KC-5.3.III.D",
@@ -1578,13 +1538,11 @@
       "lessonPath": "assets/data/lesson-6-4-global-economic-development.js",
       "rendererPath": "assets/data/lesson-6-4-renderer-config.js",
       "shell": "unit-6/lesson-6-4-global-economic-development.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 0% (0/6)"
+        "reading example trace 0% (0/6); informational only"
       ],
       "codes": [
         "KC-5.1.II.A"
@@ -1616,13 +1574,11 @@
       "lessonPath": "assets/data/lesson-6-5-economic-imperialism.js",
       "rendererPath": "assets/data/lesson-6-5-renderer-config.js",
       "shell": "unit-6/lesson-6-5-economic-imperialism.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 0% (0/6)"
+        "reading example trace 0% (0/6); informational only"
       ],
       "codes": [
         "KC-5.2.I.E",
@@ -1655,13 +1611,11 @@
       "lessonPath": "assets/data/lesson-6-6-causes-of-migration.js",
       "rendererPath": "assets/data/lesson-6-6-renderer-config.js",
       "shell": "unit-6/lesson-6-6-causes-of-migration.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 0% (0/5)"
+        "reading example trace 0% (0/5); informational only"
       ],
       "codes": [
         "KC-5.4.I",
@@ -1695,13 +1649,11 @@
       "lessonPath": "assets/data/lesson-6-7-effects-of-migration.js",
       "rendererPath": "assets/data/lesson-6-7-renderer-config.js",
       "shell": "unit-6/lesson-6-7-effects-of-migration.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (33%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 33% (2/6)"
+        "reading example trace 33% (2/6); informational only"
       ],
       "codes": [
         "KC-5.4.III.A",
@@ -1741,7 +1693,7 @@
         "no BeInTheRoom scenario linked"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "KC-5.1",
@@ -1775,7 +1727,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -1808,7 +1760,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -1839,7 +1791,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Thematic Focus, Technology and Innovation (TEC)",
@@ -1873,7 +1825,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (3/3)"
+        "reading example trace 100% (3/3); informational only"
       ],
       "codes": [
         "Thematic Focus, Economic Systems (ECN)",
@@ -1908,11 +1860,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "low illustrative-example traceability in First & 10/Deep Reading (25%)"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 25% (1/4)"
+        "reading example trace 25% (1/4); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -1950,7 +1901,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -1983,7 +1934,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (4/4)"
+        "reading example trace 100% (4/4); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -2024,7 +1975,7 @@
         "no BeInTheRoom scenario linked"
       ],
       "notes": [
-        "reading example trace 100% (4/4)"
+        "reading example trace 100% (4/4); informational only"
       ],
       "codes": [
         "Thematic Focus, Social Interactions and Organization (SIO)",
@@ -2062,7 +2013,7 @@
         "no BeInTheRoom scenario linked"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Unit 7: Learning Objective I",
@@ -2103,7 +2054,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -2137,7 +2088,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 0% (0/2)"
+        "reading example trace 0% (0/2); informational only"
       ],
       "codes": [
         "Thematic Focus, Cultural Developments and Interactions (CDI)",
@@ -2174,7 +2125,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (3/3)"
+        "reading example trace 100% (3/3); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -2211,7 +2162,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (4/4)"
+        "reading example trace 100% (4/4); informational only"
       ],
       "codes": [
         "Thematic Focus, Economic Systems (ECN)",
@@ -2253,7 +2204,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 46% (6/13)"
+        "reading example trace 46% (6/13); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -2299,11 +2250,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "target/criteria KC not in runtime CED: KC-6.3.I.C / KC-6.2.III.B"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 60% (6/10)"
+        "reading example trace 60% (6/10); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -2352,7 +2302,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (6/6)"
+        "reading example trace 100% (6/6); informational only"
       ],
       "codes": [
         "Thematic Focus, Cultural Developments and Interactions (CDI)",
@@ -2395,7 +2345,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -2428,7 +2378,7 @@
         "no BeInTheRoom scenario linked"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Unit 8: Learning Objective K",
@@ -2461,12 +2411,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "renderer changes canonical CED metadata",
-        "target/criteria KC not in runtime CED: KC-6.1.I.D; KC-6.1.I.B",
-        "target/criteria KC not in runtime CED: KC-6.1.I.C; KC-6.1.III.B"
+        "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Thematic Focus, Technology and Innovation (TEC)",
@@ -2503,7 +2451,7 @@
         "renderer changes canonical CED metadata"
       ],
       "notes": [
-        "reading example trace 100% (8/8)"
+        "reading example trace 100% (8/8); informational only"
       ],
       "codes": [
         "Thematic Focus, Humans and the Environment (ENV)",
@@ -2544,7 +2492,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Thematic Focus, Humans and the Environment (ENV)",
@@ -2576,7 +2524,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 76% (13/17)"
+        "reading example trace 76% (13/17); informational only"
       ],
       "codes": [
         "Thematic Focus, Economic Systems (ECN)",
@@ -2623,13 +2571,11 @@
       "lessonPath": "assets/data/lesson-9-5-calls-for-reform-responses.js",
       "rendererPath": "assets/data/lesson-9-5-renderer-config.js",
       "shell": "unit-9/lesson-9-5-calls-for-reform-responses.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (33%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 33% (4/12)"
+        "reading example trace 33% (4/12); informational only"
       ],
       "codes": [
         "Thematic Focus, Social Interactions and Organization (SIO)",
@@ -2671,13 +2617,11 @@
       "lessonPath": "assets/data/lesson-9-6-globalized-culture.js",
       "rendererPath": "assets/data/lesson-9-6-renderer-config.js",
       "shell": "unit-9/lesson-9-6-globalized-culture.html",
-      "status": "REVIEW",
+      "status": "CLEAN",
       "red": [],
-      "yellow": [
-        "low illustrative-example traceability in First & 10/Deep Reading (0%)"
-      ],
+      "yellow": [],
       "notes": [
-        "reading example trace 0% (0/7)"
+        "reading example trace 0% (0/7); informational only"
       ],
       "codes": [
         "Thematic Focus, Cultural Developments and Interactions (CDI)",
@@ -2718,7 +2662,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 50% (1/2)"
+        "reading example trace 50% (1/2); informational only"
       ],
       "codes": [
         "Thematic Focus, Cultural Developments and Interactions (CDI)",
@@ -2752,7 +2696,7 @@
       "red": [],
       "yellow": [],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Thematic Focus, Governance (GOV)",
@@ -2782,11 +2726,10 @@
       "status": "REVIEW",
       "red": [],
       "yellow": [
-        "target/criteria KC not in runtime CED: KC-6.3.IV.i–iii",
         "no BeInTheRoom scenario linked"
       ],
       "notes": [
-        "reading example trace 100% (0/0)"
+        "reading example trace 100% (0/0); informational only"
       ],
       "codes": [
         "Thematic Focus, Unit 9 Synthesis (SYN)",
