@@ -12,7 +12,7 @@ This generalizes the Unit 2 reference implementation without pretending that aut
 
 ## Calibration rule
 
-Before generalizing a new audit rule, test it against at least one near-term topic and one substantially later topic with a different instructional shape. The initial course-wide calibration topics are 3.2 and 8.4.
+Before generalizing a new audit rule, it must first reproduce the known-good Unit 2 reference implementation without false repair/rebuild flags. Then test it against at least one near-term topic and one substantially later topic with a different instructional shape. The initial outside calibration topics are 3.2 and 8.4.
 
 ## Diagnostic vs. certification
 
