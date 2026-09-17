@@ -26,21 +26,22 @@ for (const topic of topics) {
     { title: 'Danse Macabre, Michael Wolgemut, 1493', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Danse_macabre_by_Michael_Wolgemut.png', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Danse_macabre_by_Michael_Wolgemut.png', caption: 'Later cultural-memory evidence. This 1493 print belongs to the post-Black Death European tradition of the “dance of death,” in which death reaches people across social ranks.', prompt: 'NOTICE who is represented alongside death. What can you INFER about the cultural memory of mass mortality? Why is a 1493 image evidence of memory rather than a direct eyewitness image of 1348?' }
   ];`;
   }
-  current = current.replace(/\n\}\)\(\);\s*$/, `\n\n  ${block}\n})();\n`);
-  fs.writeFileSync(file, current);
+  const updated = current.replace(/\n\}\)\(\);\s*$/, `\n\n  ${block}\n})();\n`);
+  if (!/lesson\.images\s*=/.test(updated)) throw new Error(`Evidence pool insertion failed for ${file}`);
+  fs.writeFileSync(file, updated);
 }
 
 const styleFixes = [
-  ['scripts/lib/deep-reading-content/topic-2-1.js', /label\s*:\s*['"]AP synthesis['"]/, "label: 'How we know: AP synthesis'"],
-  ['scripts/lib/deep-reading-content/topic-2-2.js', /label\s*:\s*['"]AP evidence checkpoint['"]/, "label: 'How we know: AP evidence checkpoint'"],
-  ['scripts/lib/deep-reading-content/topic-2-5.js', /label\s*:\s*['"]How to source the traveler['"]/, "label: 'How we know: source the traveler'"],
-  ['scripts/lib/deep-reading-content/topic-2-7.js', /label\s*:\s*['"]Comparison checkpoint['"]/, "label: 'How we know: comparison checkpoint'"]
+  ['scripts/lib/deep-reading-content/topic-2-1.js', 'AP synthesis', 'How we know: AP synthesis'],
+  ['scripts/lib/deep-reading-content/topic-2-2.js', 'AP evidence checkpoint', 'How we know: AP evidence checkpoint'],
+  ['scripts/lib/deep-reading-content/topic-2-5.js', 'How to source the traveler', 'How we know: source the traveler'],
+  ['scripts/lib/deep-reading-content/topic-2-7.js', 'Comparison checkpoint', 'How we know: comparison checkpoint']
 ];
-for (const [file, pattern, replacement] of styleFixes) {
+for (const [file, from, to] of styleFixes) {
   const before = fs.readFileSync(file, 'utf8');
-  const after = before.replace(pattern, replacement);
-  if (after === before) throw new Error(`Style label not found in ${file}`);
-  fs.writeFileSync(file, after);
+  if (before.includes(to)) continue;
+  if (!before.includes(from)) throw new Error(`Style label not found in ${file}: ${from}`);
+  fs.writeFileSync(file, before.replace(from, to));
 }
 
 const roomFile = 'beintheroom/unit-2/trade-network-comparison.html';
@@ -51,6 +52,7 @@ fs.writeFileSync(roomFile, room);
 const assetsFile = 'teacher/data/topic-2-1-presentation-assets.js';
 let assets = fs.readFileSync(assetsFile, 'utf8');
 assets = assets.replace('2.1 - Chinese Porcelain.jpg', '2.1 - Chinese Porcelain.svg');
+assets = assets.replace("'Topic 2.1 classroom artifact visual'", "'INSTRUCTIONAL RECONSTRUCTION — BEHISTORICAL'");
 fs.writeFileSync(assetsFile, assets);
 
 const porcelainSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
