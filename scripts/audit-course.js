@@ -107,7 +107,7 @@ for (const id of Object.keys(grouped).sort((a,b)=>{
   const codes=unique(kcs.map(x=>x&&x.code));
   const baseCodes=unique(baseKcs.map(x=>x&&x.code));
   if(baseCodes.length && JSON.stringify(baseCodes)!==JSON.stringify(codes)) yellow.push('renderer changes canonical KC code set');
-  if(baseKcs.length && JSON.stringify(baseKcs)!==JSON.stringify(kcs)) yellow.push('renderer changes canonical CED metadata');
+  if(baseKcs.length && JSON.stringify(baseKcs)!==JSON.stringify(kcs)) notes.push('renderer overrides canonical CED metadata; informational unless KC codes change');
 
   const targets=Array.isArray(L.learningTargets)?L.learningTargets:[];
   const criteria=Array.isArray(L.successCriteria)?L.successCriteria:[];
