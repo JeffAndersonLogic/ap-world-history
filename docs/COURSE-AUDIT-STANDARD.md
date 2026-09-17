@@ -29,4 +29,4 @@ scripts/audit-course.js is a **diagnostic**. It is allowed to over-flag a topic 
 
 ## Efficiency rule
 
-Use the course-wide diagnostic to identify where reasoning time belongs. Do not deep-audit every generated surface equally. Deep-audit Unit 3 first, then all REBUILD/REPAIR topics, then REVIEW topics in teaching order.
+Use the course-wide diagnostic to identify where reasoning time belongs. Do not deep-audit every generated surface equally. The initial deep audit is now complete for Units 1 and 3–9, with Unit 2 as the reference control. During repair, prioritize topic-role and assessment mismatches, then lock each repaired unit with CED/coherence contracts.
