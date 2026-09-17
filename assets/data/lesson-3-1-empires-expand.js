@@ -100,7 +100,7 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "Empires Expand: Gunpowder, Conquest, and the New Imperial Age",
-    intro: "Use these cards to explain how gunpowder transformed military conquest after c. 1450, identify the major land-based empires and their geographic reach, and explain how political and religious disputes produced interstate rivalries."
+    intro: "Use these cards to explain how gunpowder transformed military conquest after c. 1450, identify the major land-based empires and their geographic reach, and explain how political and religious disputes produced interstate rivalries.",
     videos: [
       {
         title: "Empires Expand [AP World History Review] Unit 3, Topic 1",
@@ -183,7 +183,7 @@ window.BEHISTORICAL_LESSON = {
   evidenceLab: {
     title: "Evidence Lab: Reading Imperial Expansion Through Evidence",
     intro: "Use the evidence below to connect the rise of land-based empires to broader historical arguments about gunpowder technology, military recruitment, and the reorganization of Eurasian power after c. 1450.",
-    prompt: "Choose one piece of evidence and explain how it supports a claim about how land-based empires expanded, what made their military power distinctive, or why the conquest of Constantinople mattered.",
+    prompt: "Choose one piece of evidence and explain how it supports a claim about how land-based empires expanded, what made their military power distinctive, or how expansion and competing claims produced interstate rivalry.",
     items: [
       {
         title: "The Janissary Corps",
