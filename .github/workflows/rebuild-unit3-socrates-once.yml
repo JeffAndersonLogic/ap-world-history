@@ -1,0 +1,31 @@
+name: Rebuild Socrates for Unit 3 Once
+on:
+  push:
+    branches:
+      - repair-unit-3-ced-alignment
+    paths:
+      - '.github/workflows/rebuild-unit3-socrates-once.yml'
+permissions:
+  contents: write
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: repair-unit-3-ced-alignment
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Regenerate Socrates kit
+        run: npm run build:socrates
+      - name: Verify Socrates reproducibility
+        run: node scripts/build-socrates.js --check
+      - name: Commit generated coach files and remove workflow
+        run: |
+          rm .github/workflows/rebuild-unit3-socrates-once.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/socrates .github/workflows/rebuild-unit3-socrates-once.yml
+          git commit -m "Regenerate Socrates after Unit 3 repair"
+          git push
