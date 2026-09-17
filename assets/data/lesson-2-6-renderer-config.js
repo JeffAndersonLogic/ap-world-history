@@ -85,17 +85,11 @@
   ];
 
   lesson.evidenceLab = {
-    ...lesson.evidenceLab,
-    title: 'Evidence Lab: Living Things in Motion',
-    task: 'Choose TWO pieces of evidence. At least one must represent crop diffusion or agricultural change; the other may represent crop or pathogen movement.',
-    prompt: 'Make one claim about how exchange networks changed Afro-Eurasian environments or populations. Use two pieces of evidence and explain whether each represents crop diffusion, pathogen diffusion, or both.'
-  };
-
-  lesson.evidenceLab = {
     title: 'Evidence Lab: Crops and Pathogens on the Move',
     task: 'Use the evidence to compare two environmental consequences of connectivity. Choose at least one crop-diffusion card and one pathogen/connectivity card. Observe first, infer second, and keep the two causal branches distinct.',
     prompt: 'Using evidence from both crop diffusion and pathogen diffusion, explain how expanding exchange networks changed environments or populations. Cite one concrete detail from each card and explain one limitation of either source.'
   };
+
   lesson.images = [
     { title: 'Crop Diffusion Across Afro-Eurasia', url: '../assets/images/instructional-maps/topic-2-6-crops.svg', sourceUrl: '../assets/images/instructional-maps/topic-2-6-crops.svg', caption: 'Secondary geographic reconstruction. The map traces the CED examples of bananas into Africa, new rice varieties into East Asia, and citrus around the Mediterranean.', prompt: 'NOTICE the three different crop movements. What can you INFER about how trade networks changed food production in receiving regions? What can a reconstruction not prove about the exact date or route of each transfer?' },
     { title: 'Spread of the Black Death, c. 1340–1353', url: '../assets/images/instructional-maps/topic-2-6.svg', sourceUrl: '../assets/images/instructional-maps/topic-2-6.svg', caption: 'Secondary geographic reconstruction. The map plots the plague’s movement across trade corridors, coastlines, and densely connected regions.', prompt: 'NOTICE the sequence and direction of spread. What can you INFER about connectivity? What can a reconstructed map show about pattern that it cannot establish about individual transmission events?' },
