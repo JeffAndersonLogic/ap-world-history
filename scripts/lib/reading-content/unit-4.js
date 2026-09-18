@@ -227,13 +227,16 @@ module.exports = {
     ],
     "supportCards": {
       "beforeYouRead": "As you read, track the THREE types of motivation behind European exploration, religious, economic, and political. For each voyage mentioned, ask yourself: who paid for it, what did they expect to gain, and what did they actually find? The motive and the outcome are often different things.",
-      "readingTarget": "By the end, you should be able to explain at least TWO causes of European maritime exploration with specific evidence, describe the Portuguese model of systematic exploration versus the Spanish model, and explain what Columbus's 1492 voyage meant from multiple perspectives."
+      "readingTarget": "By the end, you should be able to explain why states sponsored maritime exploration, trace major Portuguese and Spanish voyages, and explain how English, French, and Dutch sponsorship extended northern Atlantic exploration in search of routes and commercial opportunities."
     },
     "vocabulary": [
       "Prince Henry the Navigator",
       "Vasco da Gama",
       "Christopher Columbus",
       "Ferdinand Magellan",
+      "John Cabot",
+      "Jacques Cartier",
+      "Dutch Northern Voyages",
       "Reconquista",
       "Treaty of Tordesillas",
       "Cape of Good Hope",
@@ -351,9 +354,32 @@ module.exports = {
           "label": "AP Thinking, Continuity &amp; Change",
           "raw": "<p>Before 1492, no regular contact existed between the Eastern and Western Hemispheres. After Magellan's circumnavigation, the globe had been connected for the first time in human history. <strong>This was one of the most significant changes in world history, it created the preconditions for the Columbian Exchange, the Atlantic slave trade, and global capitalism.</strong> Identifying the scale and permanence of this change, and connecting it to subsequent developments, is the core CCOT skill for this period.</p>"
         }
+      },
+      {
+        "number": "5",
+        "label": "Key Concept",
+        "heading": "The Latecomers Go North: England, France, and the Dutch",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Portugal and Spain were not the only states willing to finance risky oceanic exploration. <span class=\"kt\">England</span> backed John Cabot's 1497 crossing to the North Atlantic, where fishing grounds and claims in the Newfoundland region became economically important. <span class=\"kt\">France</span> sponsored Verrazzano and <span class=\"kt\">Jacques Cartier</span>, whose voyages along the North American coast and St. Lawrence connected exploration to fisheries, fur trading, and later colonial claims."
+          },
+          {
+            "type": "p",
+            "html": "English and <span class=\"kt\">Dutch</span> expeditions also searched for Northwest and Northeast Passages to Asia. These routes did not become dependable early modern commercial highways because Arctic conditions made them impractical for wooden sailing fleets, but the voyages expanded geographic knowledge and helped states identify other Atlantic commercial opportunities."
+          },
+          {
+            "type": "p",
+            "html": "The economic logic links the whole topic: states spent money on exploration because direct routes, fisheries, fur markets, and access to Asian trade promised revenue and strategic advantage. Voyages that failed at their original goal could still produce maps, claims, and commercial knowledge that made later trade and colonization possible."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p>For every voyage, connect <strong>state sponsorship -> economic or political motive -> route -> commercial or geographic effect</strong>. That causal chain is more useful than memorizing explorer names by themselves.</p>"
+        }
       }
     ],
-    "takeaway": "European exploration after c. 1450 was driven by THREE sets of motives, God (converting souls, crusading), Glory (national prestige, competition with rivals), and Gold (profit from trade, especially spices), and made possible by THREE enabling factors: maritime technology (caravel, compass, astrolabe), state sponsorship (royal patronage), and existing geographic knowledge (portolan charts, Arab navigational traditions). The Portuguese went east around Africa; the Spanish went west and found continents no European knew existed.",
+    "takeaway": "European maritime exploration was state-supported and driven by overlapping economic, religious, and political motives. Portugal developed the Cape route to Africa and Asia; Spain sponsored Columbus and the Magellan expedition across the Atlantic and Pacific; England, France, and the Dutch sponsored northern Atlantic voyages such as those of John Cabot, Jacques Cartier, and Dutch Arctic navigators. The economic pattern matters: rulers invested in voyages to gain more direct access to commodities and trade, and the resulting routes, maps, fisheries, fur markets, and claims expanded later commercial opportunities.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -366,14 +392,14 @@ module.exports = {
       {
         "num": "02",
         "skill": "Continuity & Change",
-        "text": "How did the Treaty of Tordesillas (1494) reflect European assumptions about power and the non-European world? What did those assumptions reveal about continuity with earlier European attitudes?",
-        "placeholder": "The Treaty of Tordesillas assumed... This reflected continuity with earlier attitudes because..."
+        "text": "Choose ONE English, French, or Dutch-sponsored northern Atlantic voyage. Explain the route, the economic or commercial goal, and one effect even if the voyage did not find a usable passage to Asia.",
+        "placeholder": "The state sponsored... The voyage followed... Its economic goal was... One effect was..."
       },
       {
         "num": "03",
         "skill": "Argumentation",
-        "text": "Was Columbus's 1492 voyage a \"discovery\"? Write a one-sentence claim that takes a position, then provide one piece of evidence to support it.",
-        "placeholder": "Columbus's 1492 voyage was / was not a 'discovery' because... Evidence: ..."
+        "text": "Compare ONE Iberian voyage with ONE English, French, or Dutch-sponsored voyage. What economic motive did they share, and what difference in route or outcome mattered?",
+        "placeholder": "Both voyages were motivated by... They differed because... That difference mattered because..."
       }
     ],
     "builderBody": "After answering the three questions, build a prompt for your AI Coach. The prompt will include your responses and ask the coach to give feedback on your historical thinking, pointing out gaps, suggesting stronger evidence, and asking a follow-up question.",
