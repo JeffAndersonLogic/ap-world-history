@@ -37,26 +37,36 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how industrial capitalism developed new financial institutions, joint-stock companies with limited liability, investment banking, and stock exchanges, and analyze how these institutions made large-scale industrial and infrastructure investment economically possible.",
+      target: "I can explain how Western European economies moved away from mercantilism toward free trade and laissez-faire ideas associated with Adam Smith.",
+      kc: "KC-5.1.III.A",
+      theme: "Economic Systems"
+    },
+    {
+      target: "I can explain how transnational businesses used stock markets, limited-liability corporations, banks, and other financial practices to mobilize capital for large-scale industrial and global enterprise.",
       kc: "KC-5.1.III.B",
       theme: "Economic Systems"
     },
     {
-      target: "I can explain how free trade ideology and the gold standard created an integrated global economy in the 19th century, and analyze how economic imperialism, debt, investment, and trade relationships, extended industrial power over regions that were not directly colonized.",
-      kc: "KC-5.1.III.A",
+      target: "I can explain how industrial capitalism increased standards of living for some people and made manufactured consumer goods more available, affordable, and varied, while benefits remained unevenly distributed.",
+      kc: "KC-5.1",
       theme: "Economic Systems"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can define joint-stock company, limited liability, stock exchange, and investment banking, and explain how each institution changed the economics of industrial investment. I can explain the specific mechanism of limited liability: before it, investors faced unlimited personal liability for company debts, which limited investment to those who could afford total loss; after it, investors risked only what they invested, enabling mass participation in industrial enterprise. I can identify the UK Companies Act of 1862 as the key legal turning point. I can give at least one specific example of an investment bank (House of Morgan, Deutsche Bank, Rothschilds) and explain its role in financing industrial enterprise.",
+      criteria: "I can explain why free-trade arguments challenged mercantilist restrictions and use Adam Smith, laissez-faire, or a policy such as the repeal of the Corn Laws as evidence.",
+      kc: "KC-5.1.III.A",
+      theme: "Economic Systems"
+    },
+    {
+      criteria: "I can explain how at least two financial or business innovations—such as limited liability, stock markets, investment banking, HSBC, or large transnational firms—reduced risk, pooled capital, or financed long-distance industrial activity.",
       kc: "KC-5.1.III.B",
       theme: "Economic Systems"
     },
     {
-      criteria: "I can explain the argument for free trade (comparative advantage, David Ricardo) and its political context: Britain, as the most advanced industrial economy, benefited from free trade because it could undersell domestic producers in every market; countries that were still industrializing used protective tariffs to shield infant industries. I can explain the Corn Laws (1846 repeal) as the defining moment of British free trade policy. I can explain the gold standard as a mechanism for global financial integration and its effect on government economic policy. I can give at least two specific examples of economic imperialism, Latin American debt dependency, Ottoman debt crisis and the Ottoman Public Debt Administration, China's treaty port system, and explain how financial instruments achieved colonial-like control without formal annexation.",
-      kc: "KC-5.1.III.A",
+      criteria: "I can explain one way industrial capitalism raised standards of living for some people and use specific evidence showing how improved manufacturing increased the availability, affordability, or variety of consumer goods, while also qualifying who benefited.",
+      kc: "KC-5.1",
       theme: "Economic Systems"
     }
   ],
@@ -83,55 +93,64 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "The Architecture of Industrial Capitalism: Finance, Free Trade, and Economic Power",
-    intro: "Industrialization required more than technology, it required new ways of organizing and mobilizing capital. The financial innovations of the 19th century, limited liability corporations, stock exchanges, investment banking, the gold standard, were as important as the railroad and the Bessemer process for understanding how industrial capitalism worked. And the ideology of free trade, which Britain promoted globally as the 19th century's dominant industrial power, was simultaneously an economic argument and a tool of economic imperialism. Understanding Topic 5.7 means understanding how the financial architecture of industrial capitalism was built, and how it served some interests more than others.",
+    title: "Industrial Capitalism: Free Markets, Big Finance, Mass Consumption",
+    intro: "Industrialization changed not only factories but the rules and institutions of economic life. Western European states increasingly embraced free trade, firms grew beyond national borders with help from new banking and corporate practices, and improved manufacturing put a wider range of goods within reach of more consumers. Topic 5.7 asks how those economic systems, ideologies, and institutions produced change.",
     videos: [],
     segments: [
       {
-        title: "The Architecture of Industrial Capital: Corporations, Banks, and Markets",
+        title: "From Mercantilism to Free Trade",
         bullets: [
-          "**The fundamental problem of industrial capitalism**: industrial enterprises, factories, railroads, steamship lines, required more capital than any individual could supply. A single textile factory in Manchester in the 1840s might require £50,000 to build and equip; a railroad line from Liverpool to Manchester required millions. Individual investors could not provide this capital alone, and even partnerships were limited by the wealth of their members. Industrial capitalism required institutions that could pool capital from thousands of investors and direct it toward productive enterprise.",
-          "**The joint-stock company** solved the pooling problem: investors bought 'shares' of a company, entitling them to a proportional share of profits (dividends). The company could thus raise capital from hundreds or thousands of investors rather than relying on a single owner or small partnership. The **Dutch East India Company (VOC, 1602)** and British East India Company had pioneered joint-stock financing in the 17th century. By the early 19th century, joint-stock companies were common in banking and insurance, but still limited by the problem of unlimited liability.",
-          "**Limited liability** was the critical legal innovation. Before limited liability, an investor in a joint-stock company who was personally liable for company debts. If the company went bankrupt owing £1 million, creditors could pursue the personal assets of every shareholder, their house, their savings, everything, until the debt was paid. This was catastrophic in practice and severely limited investment: only those who could afford to lose everything they owned would invest in risky industrial ventures. The **UK Companies Act of 1862** established general limited liability: investors could only lose what they had invested. Their personal assets were protected. This single legal change transformed the economics of industrial investment: millions of middle-class investors with modest savings could now safely participate in large enterprises because their maximum loss was defined and bounded.",
-          "**The stock exchange** solved the liquidity problem. Even with limited liability, investors were reluctant to commit capital to enterprises they could not exit. A factory, once built, could not easily be sold; a railroad bond locked capital up for decades. The stock exchange, a regulated market for buying and selling shares and bonds, made industrial investment liquid. An investor could buy shares in a Lancashire cotton mill on Monday and sell them on Friday if needed. The **London Stock Exchange** (formalized 1801) and **New York Stock Exchange** (organized 1817) became the world's dominant capital markets. By 1850, thousands of railroad, mining, and manufacturing companies were listed; by 1900, billions of dollars of securities changed hands daily.",
-          "**Investment banks** were the connective tissue of industrial capitalism: they underwrote new securities issues (guaranteeing a price to corporations while selling shares to investors), organized mergers and acquisitions, and provided long-term financing for infrastructure. The **House of Morgan** (J.P. Morgan & Co.) financed American railroad consolidation in the 1870s–1890s, eventually controlling one-sixth of American railroad mileage. **Deutsche Bank** (founded 1870) specifically to finance German foreign trade and industrial development, the model of German-style bank-industry partnership that produced Germany's rapid industrialization. The **Rothschild family** network, banking houses in London, Paris, Frankfurt, Vienna, and Naples, financed European governments and railroads across the continent. By 1900, a handful of investment banks exerted more influence over industrial economies than many governments."
+          "Mercantilism had used tariffs, monopolies, and state regulation to direct trade for national power. During the industrial era, influential thinkers such as **Adam Smith** argued that freer markets and **laissez-faire** policies would allow specialization and competition to increase wealth.",
+          "Britain became a leading advocate of free trade as its industrial producers sought cheaper food and raw materials and wider markets. The repeal of the **Corn Laws in 1846** became a major symbol of the shift away from protection of landed agricultural interests.",
+          "Free trade was an economic ideology and a policy choice, not an automatic result of industrialization. Different states adopted or rejected it according to their own stage of development and political interests."
         ],
         image: {
-          title: "Corporations, banks, and stock markets",
-          caption: "BeHistorical topic artwork for this card. Limited liability and joint-stock ownership let firms raise sums no family fortune could match.",
-          url: "",
-          sourceUrl: ""
+          title: "Industrial trade and financial networks",
+          caption: "Industrial capitalism connected production, finance, and trade across national borders.",
+          url: "../assets/images/instructional-maps/topic-5-7.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-7.svg"
         }
       },
       {
-        title: "Free Trade and the Gold Standard: Global Economic Integration",
+        title: "Finance Makes Industrial Scale Possible",
         bullets: [
-          "**The free trade argument**: The economist David Ricardo (1817) formalized the argument for free trade through the principle of **comparative advantage**: even if one country could produce everything more efficiently than another, both countries benefit from specializing in what they produce most efficiently (relative to other goods) and trading. Britain could produce both cloth and wine more efficiently than Portugal, but if Britain focused on cloth (where its comparative advantage was greatest) and Portugal focused on wine (where its comparative disadvantage was least), total production increases and both benefit from trade. The policy implication: remove tariffs and barriers; let each country specialize; global wealth increases.",
-          "**The political context**: Free trade served British interests specifically. By the 1840s, Britain was the world's most advanced industrial economy, producing manufactured goods more cheaply than any competitor. **Free trade meant British goods could penetrate every market** without tariff barriers, while British consumers could buy cheap foreign food. Countries that were still industrializing, Germany, the United States, had strong reason to use protective tariffs to shield their infant industries from British competition (and did). The free trade argument was not wrong, but its benefits were distributed unequally: Britain gained dominance of global manufactured goods markets; agricultural and resource-exporting countries got cheaper British manufactured goods but could not easily develop their own industrial capacity.",
-          "**The Corn Laws and their repeal**: The **Corn Laws** were British tariffs on imported grain, protecting British landowners (who dominated Parliament) from cheap foreign competition. Manufacturers and middle-class reformers, led by Richard Cobden's **Anti-Corn Law League**, argued that the Corn Laws raised bread prices for workers (forcing higher wages) and enriched landowners at everyone else's expense. After a decade of political campaigning and the Irish Famine (which made the case for cheap food imports dramatically), Prime Minister Robert Peel pushed through **repeal of the Corn Laws in 1846**. The repeal opened Britain to cheap American, Canadian, and eventually Argentine and Russian grain, transforming British agriculture and cementing Britain's commitment to free trade for the rest of the 19th century.",
-          "**The gold standard**: The gold standard, linking a currency to a fixed weight of gold, solved the exchange rate problem of international trade. When multiple currencies existed with floating exchange rates, international trade involved currency risk: prices agreed today might be paid in a different effective value tomorrow. The gold standard made exchange rates fixed and predictable. Britain adopted the gold standard in 1821; the United States adopted it effectively after the Civil War (officially 1900); most major European economies joined in the 1870s–1880s. By 1890, the international gold standard had created the first genuinely integrated global financial system. Its costs: governments could not print money to stimulate the economy without gold reserves to back it, which meant economic downturns produced deflation and unemployment rather than inflation. The burden fell on workers (through wage cuts) rather than creditors (through inflation). The gold standard was a system that systematically protected financial assets over labor."
+          "Factories, railroads, mines, shipping lines, and global trading firms required far more capital than most individual owners could provide. **Stock markets and joint-stock firms** pooled money from many investors.",
+          "**Limited liability** reduced investor risk by limiting losses to the amount invested, making participation in large enterprises more attractive. Banks and investment houses moved credit between savers, firms, governments, and distant markets.",
+          "Transnational institutions such as **HSBC**, founded in 1865 to finance trade between Asian ports and British markets, show how industrial business increasingly operated across borders and depended on sophisticated finance."
         ],
         image: {
-          title: "Free trade and the gold standard",
-          caption: "BeHistorical topic artwork for this card. A shared monetary standard and falling tariffs knitted distant economies into one price system.",
-          url: "",
-          sourceUrl: ""
+          title: "Transnational banking and finance",
+          caption: "Banking and corporate innovations made it possible to mobilize capital across regions and oceans.",
+          url: "../assets/images/instructional-maps/topic-5-7.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-7.svg"
         }
       },
       {
-        title: "Economic Imperialism: Power Without Formal Colonialism",
+        title: "Industrial Capitalism Creates a Consumer Economy",
         bullets: [
-          "**Economic imperialism** is the extension of economic control over a country through debt, investment, and trade relationships rather than formal political annexation. It was often more efficient than direct colonialism: it extracted profits without the costs of colonial administration, military occupation, and the political backlash that formal colonialism generated. But it could achieve the same coercive effects: forcing debtor countries to restructure their economies in creditors' interests, removing their ability to use protective tariffs, and prioritizing debt repayment over domestic development.",
-          "**Latin America**: After independence from Spain and Portugal (1810s–1820s), Latin American governments needed capital to build infrastructure and pay their armies. They borrowed heavily from British banks, often at unfavorable terms, with customs revenue pledged as collateral. When governments defaulted (as many did in the 1820s and 1830s), British creditors demanded control over customs revenue to ensure repayment. By 1900, British investment in Latin America totaled approximately £1 billion: British banks financed Argentina's railroad system; British companies owned Chilean copper and nitrate mines; British investors held Brazilian government bonds. Latin American economies were formally independent but functionally integrated into the British financial system as raw material exporters and capital importers. This 'informal empire' was enforced not by the British army but by the threat of financial exclusion, default meant inability to borrow, which meant inability to build infrastructure or fund government.",
-          "**The Ottoman Empire**: The Ottoman government, trying to modernize its military and infrastructure to resist European pressure, borrowed heavily from European banks through the 1850s–1870s. Interest payments consumed growing shares of government revenue. In 1875, the Ottoman government defaulted. After negotiation, the **Ottoman Public Debt Administration** (1881) was established: a body controlled by European creditors (primarily British, French, German, and Dutch bondholders) that directly administered the collection of six Ottoman revenue sources (customs duties, salt and tobacco taxes, stamp duties, fishing rights) to guarantee debt repayment. The Ottoman government ceded control of major revenue streams to foreign creditors, a form of financial sovereignty loss that stopped short of formal colonialism but achieved similar effects.",
-          "**China's treaty port system**: After Britain defeated China in the First Opium War (1839–1842), the **Treaty of Nanking** (1842) forced China to open five treaty ports to British trade, cede Hong Kong, pay an indemnity, and grant British merchants **extraterritoriality** (exemption from Chinese law). Subsequent treaties after the Second Opium War (1856–1860) extended these provisions and opened more ports. Foreign merchants in treaty ports operated under their home country's law rather than Chinese law, a profound violation of Chinese sovereignty. British, French, German, and American businesses established factories, warehouses, and banks in treaty ports; foreign gunboats patrolled Chinese rivers to protect foreign property. China was not formally colonized, but its ability to regulate foreign economic activity within its own territory was severely constrained.",
-          "**The key argument**: Economic imperialism reveals that the line between 'free trade' and 'coercion' is less clear than free trade ideology suggests. When Britain demanded that China open its ports under threat of naval bombardment, or when Latin American governments accepted British creditor control over their customs revenue as the price of continued access to capital markets, these were not voluntary agreements between equals. Economic relationships can be as coercive as military relationships, and in many cases, the economic relationship was enforced by the implicit or explicit threat of military force."
+          "Improved machinery, larger factories, cheaper transportation, and standardized production increased the **quantity and variety of manufactured goods**. Mass production lowered the cost of many textiles, household goods, tools, and other consumer products.",
+          "For some workers and especially expanding middle classes, rising real incomes and cheaper manufactured goods contributed to **higher standards of living** over the course of the 19th century. Consumers could purchase goods that earlier generations had made at home or could not afford.",
+          "The gains were **uneven**. Early industrial workers often endured low wages and poor conditions, and colonized or resource-producing regions did not share equally in industrial wealth. Topic 5.7 requires explaining both the increased availability of goods and the qualified nature of rising living standards."
         ],
         image: {
-          title: "The port of Buenos Aires",
-          caption: "British capital built Argentina's railways and docks. Economic imperialism could control an economy without ever raising a flag.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Port_of_Buenos_Aires.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Port_of_Buenos_Aires.jpg"
+          title: "Mass production and consumer goods",
+          caption: "Industrial manufacturing increased the availability, affordability, and variety of consumer goods for many people.",
+          url: "../assets/images/instructional-maps/topic-5-7.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-7.svg"
+        }
+      },
+      {
+        title: "Connect the System: Ideology, Capital, Production, Consumption",
+        bullets: [
+          "Free-trade ideas encouraged wider markets; financial institutions mobilized investment; improved manufacturing expanded output; and larger markets made mass production more profitable.",
+          "The system was mutually reinforcing: **capital -> industrial expansion -> more goods -> larger consumer markets -> new investment opportunities**.",
+          "Economic imperialism, debt dependency, and unequal trade relationships are important extensions of this story, but the formal Topic 5.7 job is the development of free-market ideas, transnational finance/business, and industrial capitalism's effects on goods and living standards."
+        ],
+        image: {
+          title: "The industrial-capitalist cycle",
+          caption: "Finance, production, trade, and consumption reinforced one another as industrial capitalism expanded.",
+          url: "../assets/images/instructional-maps/topic-5-7.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-7.svg"
         }
       }
     ]
