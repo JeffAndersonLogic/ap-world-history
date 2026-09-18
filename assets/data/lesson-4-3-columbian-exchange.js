@@ -47,7 +47,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Humans and the Environment"
     },
     {
-      target: "I can analyze the economic, social, and environmental consequences of the Columbian Exchange, including the origins of the Atlantic slave trade and global silver flows, and connect them to the demographic collapse of indigenous American peoples.",
+      target: "I can explain the two-way biological and environmental consequences of the Columbian Exchange, including disease vectors and diseases, Afro-Eurasian crops and animals introduced to the Americas, foods carried by enslaved Africans, and the nutritional effects of American crops in Afro-Eurasia.",
       kc: 'KC-4.1.V',
       theme: "Humans and the Environment"
     }
@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Humans and the Environment"
     },
     {
-      criteria: "I can connect the demographic collapse of indigenous American populations to the origins of the Atlantic slave trade, and explain how American silver affected global trade patterns.",
+      criteria: "I can identify disease vectors as well as diseases, explain at least two Old World-to-Americas transfers including a crop, animal, or food carried by enslaved Africans, and explain how American staple crops affected nutrition or population in Afro-Eurasia.",
       kc: 'KC-4.1.V',
       theme: "Humans and the Environment"
     }
@@ -106,7 +106,7 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "The Great Exchange: Crops, Disease, and Global Transformation",
-    intro: "Use these cards to explain how the biological contact between the Eastern and Western Hemispheres after 1492 produced three interconnected transformations: a global exchange of crops and animals that changed diets and populations worldwide, a catastrophic epidemic that killed the majority of the indigenous American population, and economic and social consequences that created the conditions for the Atlantic slave trade and global capitalism.",
+    intro: "Use these cards to explain the Columbian Exchange as a two-way biological process: crops, animals, disease vectors, and diseases moved between hemispheres, producing unequal but far-reaching demographic, nutritional, and environmental consequences.",
     videos: [],
     segments: [
       {
@@ -140,18 +140,18 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "Consequences: Silver, Slavery, and a Transformed World",
+        title: "Two Hemispheres, Unequal Biological Consequences",
         bullets: [
-          "The demographic collapse created an immediate **labor crisis** for European colonists: they needed workers to operate mines and plantations but the indigenous populations they had planned to exploit had been decimated. The **encomienda system**, which had granted Spanish colonists rights to indigenous labor, became unworkable as populations collapsed.",
-          "The solution was the **Atlantic slave trade**. Beginning with the Portuguese in the 1440s, European slavers transported approximately **12 million enslaved Africans** to the Americas between c. 1500 and c. 1850, one of the largest forced migrations in human history. The primary driver was labor demand in sugar, tobacco, cotton, and silver-mining operations that required intensive work that colonists themselves were unwilling to perform and that epidemic disease had made indigenous populations unable to provide.",
-          "**American silver**, particularly from the enormous silver deposits at **Potosí** in modern Bolivia (discovered 1545), transformed global trade. Spanish silver flowed eastward through trade networks to China, which needed silver to pay taxes under the Ming fiscal system, creating a global trade circuit connecting the Americas, Europe, Africa, and Asia. The influx of American silver caused significant inflation across the Spanish Empire and disrupted the monetary systems of much of the Old World.",
-          "**Environmental transformation** accompanied human demographic change: introduced livestock overgrazed native vegetation; introduced Old World weeds and plants replaced native species; the depopulation of previously farmed land allowed forest regrowth across vast areas of the Americas. European observers in the 17th and 18th centuries who described 'virgin wilderness' were often looking at land that had been actively farmed and managed for centuries before epidemic disease had removed its human inhabitants."
+          "Disease transfer included not only pathogens such as **smallpox, measles, and malaria** but also disease vectors such as **mosquitoes and rats**. Indigenous American populations suffered catastrophic losses because many communities had no previous exposure to these diseases.",
+          "Afro-Eurasian transfers to the Americas included **horses, cattle, pigs, wheat, sugar, rice, and fruit trees**. Enslaved Africans also carried foodways and crops such as **okra and rice**, helping reshape agriculture and cuisine in the Americas.",
+          "American foods moving east — including **maize, potatoes, cassava, and sweet potatoes** — increased dietary diversity and calorie availability in parts of Europe, Africa, and Asia, supporting population growth in some regions.",
+          "Keep the Topic 4.3 mechanism biological and environmental: **transfer -> adaptation or vulnerability -> demographic, nutritional, or ecological consequence**. Silver circulation and the detailed organization of Atlantic labor belong in later Unit 4 topics."
         ],
         image: {
-          title: "Casta Painting — Colonial Social Hierarchy",
-          caption: "A casta painting from colonial Mexico, depicting the elaborate racial hierarchy that developed from the mixture of European, indigenous, and African peoples in colonial Spanish America, itself a direct consequence of the demographic and social transformations set in motion by the Columbian Exchange.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
+          title: "Columbian Exchange reference map",
+          caption: "The exchange moved crops, animals, people, disease vectors, and diseases in both directions, but the consequences were highly unequal.",
+          url: "../assets/images/instructional-maps/topic-4-3.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-4-3.svg"
         }
       }
     ]
