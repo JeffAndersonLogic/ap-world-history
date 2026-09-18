@@ -253,6 +253,11 @@ module.exports = {
     intro: `Each card is a full argument: the claim, the specific evidence, and the reason. The second and third are the pair the success criteria ask for, so learn them together.`,
     pairs: [
       {
+        category: 'Long-term effects',
+        title: 'Universal rights language became a weapon for 19th-century reform',
+        body: `Enlightenment and religious ideals outlived the first Atlantic revolutions. Reformers used claims about liberty, equality and moral obligation to press for <span class="kt">expanded suffrage</span>, the <span class="kt">abolition of slavery</span>, and the <span class="kt">end of serfdom</span>. The logic was cumulative: if legitimate government rests on consent and people possess rights not granted by rulers, exclusions based on property, legal status or birth require justification. The women&rsquo;s-rights movement made the same move. Mary Wollstonecraft argued that rational beings cannot be denied education and independence without manufacturing the inequality used to justify exclusion; Olympe de Gouges rewrote the French declaration to expose the contradiction directly; and the <span class="kt">Seneca Falls Conference</span> of 1848 used natural-rights language to organize demands for women&rsquo;s political equality. The limit of Enlightenment universalism therefore became one of the engines of its long-term impact: excluded groups could take the principle seriously even when its original authors did not.`
+      },
+      {
         category: 'Causation',
         title: 'Conditional authority is what makes revolution arguable',
         body: `Divine right made resistance a sin, because the ruler&rsquo;s authority came from God. Locke&rsquo;s Two Treatises of 1689 grounded government in an agreement to protect rights people already hold, which makes legitimacy depend on performance rather than origin, so a government that violates those rights may be replaced. Rousseau went further in 1762: sovereignty belongs to the people as a body and cannot be permanently given away, so no constitution or dynasty binds them. Montesquieu in 1748 supplied the design, dividing power so power checks power. The American Declaration borrows Locke&rsquo;s structure and the United States Constitution borrows Montesquieu&rsquo;s, which is why these are attacks rather than opinions.`
