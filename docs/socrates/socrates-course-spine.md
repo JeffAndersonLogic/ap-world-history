@@ -254,7 +254,7 @@ Strong answer checklist: Identify two effects. Use specific CED-aligned evidence
 - KC-3.1.I.E.i (Economic Systems): The expansion of empires, including the Mongols, facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors’ economies and trade networks.
 - KC-3.2.II.A.ii (Cultural Developments and Interactions): Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers. Illustrative examples: Transfer of Greco-Islamic medical knowledge to western Europe, Transfer of numbering systems to Europe, Adoption of Uyghur script.
 
-**Expected evidence terms.** Genghis Khan, khanates, Yuan Dynasty, Ilkhanate, Golden Horde, administration, Pax Mongolica, trade, communication, Greco-Islamic medical knowledge, numbering systems, Uyghur script.
+**Expected evidence terms.** Chinggis Khan, khanates, Yuan Dynasty, Ilkhanate, Golden Horde, administration, Pax Mongolica, trade, communication, Greco-Islamic medical knowledge, numbering systems, Uyghur script.
 
 **AP skill focus.** Making Connections (Skill 5.A) and Continuity and Change.
 
