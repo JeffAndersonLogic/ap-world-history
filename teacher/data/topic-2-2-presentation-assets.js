@@ -112,7 +112,7 @@ if(whole&&!byTitle('Who were the Mongols?')){
       phase:'open',kind:'hero',eyebrow:'Context · Why the Steppe Matters',
       title:'Steppe life shaped Mongol strengths.',
       subtitle:'Mobility was a way of life before it became a military advantage.',
-      position:'right',
+      position:'bottom',
       visual:visual('2.2 - Mongol Camp Life.jpg','Mongol camp life on the Central Asian steppe','Topic 2.2 classroom visual · Mongol Camp Life'),
       footer:'Environment -> horse culture -> mobility -> military potential',
       notes:{
