@@ -84,15 +84,15 @@
       focus: ['Name at least three specific technologies.', 'For each, explain the specific navigation problem it solved.', 'Connect the technologies to the capability for extended oceanic voyaging.']
     },
     {
-      title: 'Checkpoint 2: Maps, Printing, and State Sponsorship',
+      title: 'Checkpoint 2: Borrowed Knowledge, Ship Design, Winds, and Currents',
       subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'Portolan charts, Waldseemüller map, printing press, and the Portuguese model of systematic exploration.',
+      cardDesc: 'Cross-cultural diffusion plus practical technologies and environmental knowledge.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain how cartographic innovations (portolan charts, Waldseemüller map) and the printing press contributed to European exploration. Then explain how state sponsorship, especially the Portuguese model pioneered by Prince Henry, connected technology to organized, sustained exploration. Use specific evidence.',
+      prompt: 'Explain how European navigators drew on knowledge or technology from TWO earlier traditions — Classical, Islamic, or Asian — and then explain how ONE ship-design innovation and ONE piece of wind/current knowledge made transoceanic travel more reliable. Build the causal chain from adopted knowledge to oceanic capability.',
       responseType: 'Checkpoint 2',
-      terms: ['portolan chart', 'Waldseemüller map', 'printing press', 'Prince Henry', 'Sagres', 'cartography', 'latitude', 'geographic knowledge', 'state sponsorship', 'cosmographer'],
-      focus: ['Explain how the printing press changed the distribution of geographic knowledge.', 'Give one specific example of a cartographic innovation and explain its significance.', 'Explain the Portuguese model: how state sponsorship connected technology to systematic, cumulative exploration.']
+      terms: ['magnetic compass', 'China', 'astrolabe', 'Islamic astronomy', 'lateen sail', 'caravel', 'carrack', 'volta do mar', 'trade winds', 'currents', 'cross-cultural diffusion'],
+      focus: ['Use two specific examples of cross-cultural knowledge or technology transfer.', 'Explain one ship-design innovation and the problem it solved.', 'Explain one wind/current pattern and how sailors used it to complete long voyages.']
     }
   ];
 
