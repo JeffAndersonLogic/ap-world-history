@@ -127,5 +127,12 @@
       caption: 'Modern public memory. A bronze monument in Salvador commemorates Zumbi, the late-17th-century leader associated with resistance at Palmares.',
       prompt: 'NOTICE how Zumbi is presented as a public hero. What can this tell you about the long-term memory of maroon resistance? Why is a modern monument not evidence for Zumbi\'s physical appearance or the exact organization of Palmares?'
     },
+    {
+      title: 'Resistance Geography — Pueblo Country and Colonial Frontiers',
+      url: '../assets/images/instructional-maps/topic-4-6.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-4-6.svg',
+      caption: 'Secondary geographic reconstruction. The Topic 4.6 map places resistance in frontier landscapes where distance, terrain, and dispersed colonial authority shaped what local communities could organize.',
+      prompt: 'NOTICE distance from colonial centers and the relationship between settlements and terrain. What can geography help explain about the possibilities for coordinated revolt or autonomous refuge? What cannot a map prove about motives or lived experience?'
+    },
   ];
 })();
