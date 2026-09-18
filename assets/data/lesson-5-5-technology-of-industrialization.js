@@ -29,7 +29,7 @@ window.BEHISTORICAL_LESSON = {
     course: "AP WORLD HISTORY",
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.5",
-    title: "Technology of Industrialization",
+    title: "Technology of the Industrial Age",
     subtitle: "How the railroad, telegraph, Bessemer process, and other technologies transformed economic life — and how industrial demand reshaped environments and extracted resources from colonized regions",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
@@ -37,26 +37,36 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how railroads, the telegraph, the Bessemer process, and electricity transformed industrial economies in the 19th century, and analyze the specific mechanisms by which these technologies accelerated industrial production and market integration.",
-      kc: "KC-5.1.I.E; KC-5.1.IV",
+      target: "I can explain how steam engines and internal combustion engines allowed societies to use coal and oil on a much larger scale, greatly increasing the energy available for industrial production and transportation.",
+      kc: "KC-5.1.I.B",
       theme: "Technology and Innovation"
     },
     {
-      target: "I can explain the environmental and social consequences of industrial technology, including coal pollution and resource extraction, particularly the extraction of rubber, guano, and timber from colonized regions, and analyze how industrial demand reshaped global environments and labor systems.",
-      kc: "KC-5.1.I.B",
+      target: "I can explain how second-industrial technologies in steel, chemicals, electricity, and precision machinery increased productive capacity and changed what industries could make at scale.",
+      kc: "KC-5.1.I.E",
+      theme: "Technology and Innovation"
+    },
+    {
+      target: "I can explain how railroads, steamships, and the telegraph reduced the economic effects of distance, opened interior regions, and increased trade and migration.",
+      kc: "KC-5.1.IV",
       theme: "Technology and Innovation"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can explain how railroads created national markets by lowering transportation costs and connecting interior regions to ports. I can describe the Bessemer process (1856) as a technology that made mass production of steel possible, and explain how cheap steel enabled railroads, bridges, and industrial machinery at scale. I can explain how the telegraph (1844–1860s) enabled real-time commercial coordination across continents. I can give at least two specific examples of how 19th-century technologies were interdependent, one technology enabling another (e.g., steam engines enabling railroads, Bessemer steel enabling railroad track production at scale, railroads enabling the coal industry by transporting coal cheaply).",
-      kc: "KC-5.1.I.E; KC-5.1.IV",
+      criteria: "I can connect steam power to coal and internal combustion to oil, and explain how concentrated fossil-fuel energy made factories and transportation less dependent on human, animal, wind, water, or wood energy.",
+      kc: "KC-5.1.I.B",
       theme: "Technology and Innovation"
     },
     {
-      criteria: "I can describe the environmental consequences of industrialization, including coal pollution in British industrial cities and large-scale deforestation. I can explain how industrial demand for rubber (for machine belts, tires, insulation) drove resource extraction in the Congo (Belgian) and Amazon (Brazilian/Peruvian), using coercive labor systems. I can explain how guano (seabird excrement used as fertilizer) became an industrial-scale resource extracted from Peru's Pacific coast, sustaining European agriculture that fed industrial workers. I can make the connection between industrial technology in Europe and environmental and labor transformation in colonized or semi-colonized regions.",
-      kc: "KC-5.1.I.B",
+      criteria: "I can use at least two examples from steel, chemicals, electricity, or precision machinery and explain the production problem each innovation solved or the new scale of production it enabled.",
+      kc: "KC-5.1.I.E",
+      theme: "Technology and Innovation"
+    },
+    {
+      criteria: "I can explain the distinct economic role of railroads, steamships, and telegraph networks and connect at least two of them to increased trade, migration, resource development, or market integration.",
+      kc: "KC-5.1.IV",
       theme: "Technology and Innovation"
     }
   ],
@@ -83,56 +93,64 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Iron Roads and Global Resources: The Technologies of Industrialization",
-    intro: "The Industrial Revolution was not driven by one technology but by a cascade of interdependent innovations. Understanding how these technologies worked together, and how they transformed both producing and resource-supplying regions of the world, is the analytical core of Topic 5.5. The railroad was the era's signature technology, but it depended on steam power, coal, iron and then steel, the Bessemer process, and the railroad workers (many of them migrants or the colonized) who built it. And the industrial system as a whole depended on raw materials, rubber, guano, timber, cotton, extracted from regions that experienced industrialization's consequences without its benefits.",
+    title: "More Energy, More Production, Less Distance",
+    intro: "Topic 5.5 asks a technology-to-production question. The important story is not that the 19th century invented many impressive machines; it is how new energy sources and industrial technologies increased productive capacity, while railroads, steamships, and telegraphs made larger markets and greater movement economically possible.",
     videos: [],
     segments: [
       {
-        title: "The Railroad: Market Integration and Industrial Acceleration",
+        title: "The Fossil-Fuel Revolution: Coal, Steam, Oil, and Internal Combustion",
         bullets: [
-          "**The railroad is the central technology of the Industrial Revolution**, not because it was the first steam-powered innovation (Watt's steam engine preceded it by 50 years) but because it integrated markets at continental scale. Before railroads, moving goods overland was expensive, slow, and limited by road quality and animal power. A horse-drawn wagon moved perhaps two tons at 4 mph; a railroad locomotive moved several hundred tons at 30–40 mph. This was not a marginal improvement, it was a transformation in the economics of distance.",
-          "**Stephenson's Rocket** (1829): The first successful steam locomotive, which reached 36 mph in the Rainhill Trials, faster than any land vehicle in human history to that point. The Liverpool and Manchester Railway (1830) was the first intercity passenger railroad. By the 1840s, railroad mania had gripped Britain: Parliament authorized 8,000 miles of railroad in 1844–1846 alone. By 1850, Britain had 6,000 miles of track; by 1870, the British railroad network was essentially complete.",
-          "**Railroads created national markets.** Before railroads, prices varied dramatically by region, coal was cheap near coal mines and expensive 50 miles away; grain was cheap in agricultural regions and expensive in cities. Railroads eliminated these price gaps by making long-distance transport economical. A factory in Manchester could now sell its cloth in Birmingham, London, and Glasgow at competitive prices. A farm in the American Midwest could now send wheat to New York in days. National markets replaced regional ones, and national markets meant industrial-scale production became profitable.",
-          "**The transcontinental railroad** (United States, 1869): The Union Pacific (building west from Omaha) and Central Pacific (building east from Sacramento) met at Promontory Summit, Utah, in May 1869. The Central Pacific was built largely by approximately 10,000 Chinese immigrant laborers, who were paid less than white workers, given the most dangerous work (blasting through the Sierra Nevada with nitroglycerin), and excluded from the commemorative photograph at the golden spike ceremony. The transcontinental railroad integrated the American continental market and enabled the agricultural settlement of the Great Plains, which itself displaced Native American nations and their bison-based economies.",
-          "**The Trans-Siberian Railroad** (Russia, 1891–1916): Stretching 5,772 miles from Moscow to Vladivostok, this was the longest railroad in the world when completed. Built by Russian state investment, using Chinese and Korean labor in addition to Russian, the Trans-Siberian Railroad allowed Russia to project military power to the Pacific (including to fight Japan in 1904–1905), opened Siberian land to agricultural settlement, and integrated the Russian empire's vast interior into the market economy. Like the American transcontinental, it was simultaneously a feat of engineering, a national integration project, and a colonial project that displaced indigenous Siberian peoples.",
-          "**Railroads drove industrial demand.** The railroad industry itself was the largest consumer of iron and steel in the 19th century. In the 1840s–1860s, building 10,000 miles of railroad required millions of tons of iron rails, which required more iron foundries, more coal mines, more blast furnaces. The railroad was the flywheel of the industrial economy: it required iron, coal, and engineering on a scale that pushed every related industry to expand. Then cheap transportation made it economical to ship those industrial products to distant markets, which justified further investment in production capacity."
+          "The steam engine made it possible to convert the chemical energy stored in **coal** into reliable mechanical power. Factories no longer had to sit beside fast-flowing rivers, mines could pump water from deeper shafts, and locomotives and steamships could move heavy loads with far more energy than human or animal power.",
+          "By the late 19th century, the **internal combustion engine** made **oil** increasingly useful as a concentrated fuel for mobile machinery and transportation. Coal remained dominant, but oil opened a second major fossil-fuel path.",
+          "The key mechanism is **more concentrated energy -> more mechanical power -> greater productive and transport capacity**. That energy revolution is the formal KC-5.1.I.B job."
         ],
         image: {
-          title: "Railroads and market integration",
-          caption: "BeHistorical topic artwork for this card. Rail collapsed the cost of moving heavy goods overland, which changed what was worth producing and where.",
-          url: "",
-          sourceUrl: ""
+          title: "Steam power and fossil-fuel energy",
+          caption: "Steam engines converted coal into continuous mechanical power for factories, mines, railroads, and ships.",
+          url: "../assets/images/instructional-maps/topic-5-5.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-5.svg"
         }
       },
       {
-        title: "Beyond Railroads: Telegraph, Steel, and Electricity",
+        title: "The Second Industrial Revolution: Steel, Chemicals, Electricity, Precision",
         bullets: [
-          "**The telegraph** was the first technology to separate communication from transportation. Before the telegraph, information traveled at the speed of the fastest horse or ship. A telegraph message traveled at the speed of electricity, effectively instantaneous over continental distances. Samuel Morse demonstrated the electromagnetic telegraph in 1844; within a decade, telegraph lines stretched across the United States, Europe, and India. The transatlantic telegraph cable (1866) connected Europe and North America in real time for the first time in history. The commercial applications were immediate: commodity prices, shipping schedules, currency exchange rates, and news could now be coordinated in real time across continents. The New York Stock Exchange and the Chicago Board of Trade both depended on the telegraph to function at scale.",
-          "**The Bessemer process** (1856) was the single most important metallurgical innovation of the 19th century. Before Bessemer, making steel, the stronger, more flexible alloy of iron, was slow and expensive. The Bessemer converter blasted cold air through molten iron, burning out impurities in 15–20 minutes and producing steel that previously would have taken hours or days to produce. This reduced the cost of steel by 80% between 1860 and 1880. Cheap steel meant: railroad rails that lasted longer than iron; bridges strong enough to span wide rivers (Brooklyn Bridge, 1883); steel-frame skyscrapers (Chicago, 1880s); high-pressure steam boilers for more powerful engines; armor plate for naval warships. The Bessemer process transformed steel from a specialty material into the structural material of the industrial age.",
-          "**Electricity** arrived as an industrial force in the 1870s–1880s. Thomas Edison's electric light bulb (1879) and his Pearl Street Station (1882), the first commercial electric power station, in New York City, began replacing gas lighting. But electric light was less important than **electric motors**: factories no longer needed a central steam engine powering all machinery through elaborate belt-and-shaft systems. Electric motors allowed machines to be placed wherever needed and powered independently. The AC/DC conflict between Nikola Tesla (alternating current, backing Westinghouse) and Thomas Edison (direct current) was resolved in favor of AC by the early 1890s because AC power could be transmitted over longer distances without loss. By 1900, electric streetcars were transforming city transportation; electric power was transforming factory production; the telephone (1876) was transforming business communication.",
-          "**Technological interdependence** is the key analytical concept for Topic 5.5. These technologies did not develop independently, they required each other. Steam engines enabled railroads; railroads required iron and then steel; cheap steel (Bessemer) enabled railroad expansion at continental scale; railroads moved coal cheaply, making coal power economical; coal powered the factories producing steel and the locomotives running on steel rails. Electricity depended on copper wire (extracted from mines, many in colonized regions), steam turbines to generate it, and steel infrastructure to transmit it. The industrial system was a web of interdependent technologies, each enabling others, and all of them depending on raw materials extracted from mines and fields across the globe."
+          "The **Bessemer process** and related methods made steel cheaper and more abundant, allowing rail networks, bridges, larger machines, ships, and urban structures to expand at new scale.",
+          "The chemical industry produced dyes, fertilizers, explosives, medicines, and industrial inputs. **Electricity** enabled lighting and electric motors, while **precision machinery** improved the standardization and speed of complex manufacturing.",
+          "These technologies mattered because they changed production itself: **cheaper materials + new forms of power + standardized machinery -> greater output, new products, and more complex industrial systems**."
         ],
         image: {
-          title: "Telegraph, steel, and electricity",
-          caption: "BeHistorical topic artwork for this card. The second industrial revolution ran on cheap steel, instant communication, and electrical power.",
-          url: "",
-          sourceUrl: ""
+          title: "Bessemer converter",
+          caption: "Cheap mass steel became a foundational material of the second industrial revolution.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bessemer_converter.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Bessemer_converter.jpg"
         }
       },
       {
-        title: "Environmental and Social Costs: Rubber, Guano, Coal, and the Global Reach of Industry",
+        title: "Railroads and Steamships: Moving Goods and People",
         bullets: [
-          "**Coal pollution** was the most immediate environmental consequence of industrialization. Industrial cities in Britain, Manchester, Birmingham, Sheffield, Leeds, burned enormous quantities of coal for factory steam engines, home heating, and gas lighting. The resulting air pollution was unprecedented in human history. Thick coal smoke ('London Particular,' 'pea soup fog') reduced visibility, coated buildings in black soot, and contributed to chronic respiratory disease. Life expectancy in Manchester in the 1840s was 28–29 years, lower than in many pre-industrial societies. The pollution was understood at the time; it was largely accepted as the cost of industrial production.",
-          "**The rubber boom** is one of the starkest cases of industrial demand driving colonial violence. Natural rubber, from the sap of Hevea brasiliensis trees, was essential for industrial machinery: machine belts, gaskets, waterproofing, and (after Charles Goodyear's vulcanization process, 1844) pneumatic tires. Demand for rubber drove two simultaneous booms. In the **Amazon basin**, rubber tappers (often debt-bonded Brazilian and indigenous workers) collected rubber in dangerous jungle conditions; Manaus, Brazil, became briefly one of the wealthiest cities in the world. In the **Congo Free State** (King Leopold II of Belgium's personal colony, not a Belgian government colony), a forced labor system required every man in rubber-producing territories to deliver a quota of raw rubber, enforced by the Force Publique militia, which mutilated or killed those who failed to meet their quotas. The Congo rubber regime killed an estimated 1–10 million people. When synthetic rubber was developed in the early 20th century, the Congo rubber system collapsed, but not before producing one of the most documented cases of colonial violence in history.",
-          "**Guano** (seabird and bat excrement, rich in nitrogen and phosphorus) was the primary fertilizer of the 19th century before synthetic fertilizers. The Chincha Islands off Peru's Pacific coast were covered with deposits up to 150 feet deep, the accumulated excrement of millennia of seabird nesting. Beginning in the 1840s, Peru began exporting guano to Britain and the United States in enormous quantities. The work of extracting guano was done largely by **Chinese contract laborers** (enganchados) and Peruvian workers under conditions resembling slavery: workers were often illiterate, could not speak Spanish, were locked into debt, and faced brutal treatment for failure to meet quotas. The guano trade made Peru briefly wealthy (the Guano Era), funded a Peruvian government debt binge, and collapsed in the 1870s when the deposits ran low, leaving Peru with a debt crisis and a War of the Pacific (1879–1884) over nitrate deposits in neighboring Bolivia and Chile.",
-          "**Deforestation and land transformation** followed industrial demand globally. Railroads required enormous quantities of timber for railroad ties (sleepers), a single mile of track required approximately 2,500–3,000 wooden ties, replaced every 5–10 years. American and European forests were stripped for railroad construction. In colonial regions, deforestation served agricultural conversion: forests cleared for cotton in India, sugar in the Caribbean and Brazil, coffee in Latin America and Southeast Asia, rubber plantations in Southeast Asia (replacing natural rubber extraction). The scale of environmental transformation in colonized regions was often far greater than in industrializing countries.",
-          "**The key analytical argument for Topic 5.5**: Industrial technologies transformed both producing regions (by reorganizing factory labor, creating pollution, building cities) and resource-supplying regions (by driving extraction of rubber, guano, cotton, coal, and copper through labor systems ranging from wage labor to debt peonage to forced labor). Understanding industrialization requires understanding both halves of this system: the industrial core and the resource periphery are one system, not two separate stories."
+          "**Railroads** dramatically lowered overland transport costs and connected mines, farms, factories, cities, and ports. Interior regions could now participate more directly in national and global markets.",
+          "**Steamships** made maritime transportation faster, more regular, and less dependent on wind patterns. Combined with canals and port infrastructure, they increased the volume and predictability of long-distance trade and passenger movement.",
+          "Transport technology changed economic geography: places that had been too distant or expensive to reach could now be developed for agriculture, mining, settlement, or trade, helping increase both **commerce and migration**."
         ],
         image: {
-          title: "Rubber tapping",
-          caption: "Industrial demand reached deep into tropical forests. Rubber, guano, and coal show the environmental and human costs of industrial supply chains.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg"
+          title: "Industrial transport networks",
+          caption: "Railroads and steamships reduced the cost and uncertainty of moving people and goods across long distances.",
+          url: "../assets/images/instructional-maps/topic-5-5.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-5.svg"
+        }
+      },
+      {
+        title: "The Telegraph: Information Moves Faster Than People",
+        bullets: [
+          "The **telegraph** separated communication speed from transportation speed. Prices, orders, political instructions, and news could travel across long distances far faster than physical goods or people.",
+          "Telegraph lines and undersea cables allowed firms to coordinate production and trade across regions, governments to communicate across empires, and markets to react more quickly to changing supply and demand.",
+          "Together, railroad, steamship, and telegraph networks compressed economic distance: **faster movement + faster information -> larger integrated markets -> increased trade, development, and migration**."
+        ],
+        image: {
+          title: "Transatlantic telegraph connection",
+          caption: "By the late 19th century, information could move across oceans in minutes rather than weeks.",
+          url: "../assets/images/instructional-maps/topic-5-5.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-5.svg"
         }
       }
     ]
