@@ -170,7 +170,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "Expanding demand for consumer goods intensified **peasant and artisan labor**: wool and linen production in western Europe, cotton textiles in India, and silk production in China all expanded while older labor forms continued.",
           "The Atlantic trade in enslaved people produced major demographic effects in parts of Africa. Because the trade often removed large numbers of young adults, it could alter local sex ratios, household labor, marriage patterns, and family responsibilities.",
-          "Across the Atlantic world, forced migration also contributed to cultural mixing among African, American, and European peoples. Economic exchange therefore changed social life far beyond prices and profits."
+          "Across the Atlantic world, forced migration also contributed to **cultural synthesis** and cultural mixing among African, American, and European peoples. Economic exchange therefore changed social life far beyond prices and profits."
         ],
         image: {
           title: "Indian cotton textile production",
