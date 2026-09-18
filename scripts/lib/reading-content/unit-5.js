@@ -1136,7 +1136,7 @@ module.exports = {
         "callout":{"label":"BeReady: 10-Second Takeaway","raw":"<p><strong>Late industrializers often used government power to catch up.</strong> Egypt and Japan both intervened; Japan’s broader institutional reforms and greater policy autonomy produced a more durable industrial transformation.</p>"}
       }
     ],
-    "takeaway": "Topic 5.6 is about state economic strategy. Muhammad Ali’s Egypt used cotton, monopolies, irrigation, imported expertise, and state factories to try to build military and industrial independence. Meiji Japan used taxation, education, infrastructure, model enterprises, imported technology, and later private firms to accelerate industrialization. Both were responses to the power gap created by the Industrial Revolution, but Japan’s broader institutional reforms and greater policy autonomy helped it become a regional industrial power."separate spheres\" ideology and fueling the women's suffrage movement. By 1900, the social question, who benefits from industrial wealth?, remained the central political question of the century.",
+    "takeaway": "Topic 5.6 is about state economic strategy. Muhammad Ali’s Egypt used cotton, monopolies, irrigation, imported expertise, and state factories to try to build military and industrial independence. Meiji Japan used taxation, education, infrastructure, model enterprises, imported technology, and later private firms to accelerate industrialization. Both were responses to the power gap created by the Industrial Revolution, but Japan’s broader institutional reforms and greater policy autonomy helped it become a regional industrial power.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Three AP Skills",
     "questions": [
