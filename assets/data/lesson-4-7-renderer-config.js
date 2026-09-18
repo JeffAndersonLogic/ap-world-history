@@ -80,32 +80,32 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Casta System in Spanish America',
-      subtitle: 'Checks Learning Targets 1 and 2 — racial hierarchy and the casta system.',
-      cardDesc: 'Peninsulares, creoles, mestizos, mulattos, indigenous peoples, enslaved Africans, and casta paintings.',
+      title: 'Checkpoint 1: Diversity Policy and New Elites',
+      subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
+      cardDesc: 'Accommodation/suppression of groups plus new political and economic elites such as the casta hierarchy.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain the casta system in Spanish colonial America. Name at least four of the major casta categories and describe their legal status (tribute, office-holding rights, etc.). Then explain WHY the Spanish colonial system created this elaborate racial classification, what economic and social purposes did the casta serve? Use at least one specific piece of evidence (e.g., casta paintings, audiencia records, gracia al sacar).',
+      prompt: 'Give ONE example of a state accommodating an ethnic or religious group and ONE example of a state suppressing or restricting a group. Explain why each policy served the state. Then explain how imperial conquest or global economic opportunity produced a new elite or hierarchy, using the casta system or Qing transition as specific evidence.',
       responseType: 'Checkpoint 1',
-      terms: ['casta', 'peninsulares', 'creoles', 'mestizos', 'mulattos', 'limpieza de sangre', 'tribute', 'office-holding', 'casta paintings', 'gracia al sacar'],
-      focus: ['Name and describe at least four casta categories with their specific legal status.', 'Explain the economic purpose of the casta: it organized who owed tribute, who could be enslaved, who could hold office.', 'Use at least one specific piece of evidence (casta paintings, gracia al sacar, audiencia records).']
+      terms: ['Ottoman Empire', 'Jews', 'millet', 'Mughal', 'Qing', 'Han Chinese', 'accommodation', 'suppression', 'casta', 'peninsulares', 'creoles', 'new elites'],
+      focus: ['Use one specific accommodation example and explain the state interest behind it.', 'Use one specific suppression/restriction example and explain the state interest behind it.', 'Explain how conquest or economic opportunity produced a new elite or hierarchy.']
     },
     {
-      title: 'Checkpoint 2: Continuity, Change, and Comparison',
-      subtitle: 'Checks Learning Target 3 — continuity, change, and gender in colonial hierarchies.',
-      cardDesc: 'Pre-colonial structures, social mobility, gender roles, and comparing colonial hierarchies.',
+      title: 'Checkpoint 2: Existing Elites Under Centralizing States',
+      subtitle: 'Checks Learning Target 3 and Success Criterion 3.',
+      cardDesc: 'Timar holders, Russian boyars, European nobility, and the changing power of older elites.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Identify one CONTINUITY from pre-colonial social structures that persisted into the colonial period (e.g., indigenous nobility retained some status). Then identify one genuine CHANGE that colonialism introduced (e.g., mestizo and mulatto as new categories; racialization of enslaved status). Finally, explain how gender intersected with racial hierarchy, give one specific example of how an indigenous or African woman\'s experience reflected both racial and gender dimensions of colonial hierarchy.',
+      prompt: 'Explain how the power of TWO existing elite groups changed as states centralized from c. 1450 to c. 1750. Use two examples such as Ottoman timar holders, Russian boyars, or European nobility. For each, explain what power the elite had before, what the ruler or state changed, and whether the elite lost influence, adapted through state service, or gained a new route to status.',
       responseType: 'Checkpoint 2',
-      terms: ['continuity', 'change', 'indigenous nobility', 'kuracas', 'mestizo', 'mulatto', 'racialization', 'gender', 'manumission', 'colonial social mobility'],
-      focus: ['Identify one specific continuity from pre-colonial social structure with evidence.', 'Identify one genuine change that colonialism introduced, a category or institution with no pre-colonial equivalent.', 'Explain gender intersection: one specific example of how indigenous or African women experienced both racial and gender dimensions of colonial hierarchy.']
+      terms: ['timar', 'Ottoman elites', 'boyars', 'Peter the Great', 'European nobility', 'centralization', 'court', 'state service', 'elite power'],
+      focus: ['Use two specific existing-elite examples from different states.', 'Explain the mechanism by which centralization altered elite power.', 'Distinguish loss of independent power from adaptation into court or state service.']
     }
   ];
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: Hierarchy Is Represented, Enforced, and Contested',
-    task: 'Choose TWO cards from different imperial or colonial settings. Ask what social hierarchy the image represents, whose authority produced that representation, and who is missing. By Unit 4, do not stop at “this shows inequality.” Explain how political power, ancestry, religion, gender, or economic function shaped rank.',
+    task: 'Choose TWO cards from different settings and decide which Topic 4.7 process each best shows: accommodation/suppression of diversity, formation of new elites, or changing power of existing elites. Ask whose authority produced the hierarchy and who is missing.',
     prompt: 'Using two evidence cards from different settings, make one comparison claim about how early modern empires organized social hierarchy. Cite one concrete detail from each source, explain one similarity OR difference, and evaluate one way the source creator or genre may distort the hierarchy it represents.'
   };
 
