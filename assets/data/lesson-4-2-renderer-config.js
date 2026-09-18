@@ -89,16 +89,15 @@
       focus: ['Name at least two distinct motivations (religious, economic, and/or political).', 'For each, explain the specific historical context that made it a motivation (not just a label).', 'Connect each motivation to a specific Portuguese or Spanish action.']
     },
     {
-      title: 'Checkpoint 2: Key Voyages and Multiple Perspectives',
+      title: 'Checkpoint 2: Voyages, Routes, and Economic Effects',
       subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'Da Gama to India, Columbus to the Caribbean, Magellan\'s circumnavigation, and the Treaty of Tordesillas.',
+      cardDesc: 'Portuguese and Spanish routes plus English, French, and Dutch northern Atlantic exploration.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Describe at least TWO key European voyages of exploration, including what route they followed and what they found or established. Then explain what the Treaty of Tordesillas reveals about European assumptions regarding non-European peoples, and briefly describe how at least one non-European group experienced European exploration.',
+      prompt: 'Describe ONE Portuguese or Spanish voyage and ONE English, French, or Dutch-sponsored northern Atlantic voyage. For each, identify the route and state sponsor. Then explain one economic cause that motivated the voyage and one economic or commercial effect it produced or made possible.',
       responseType: 'Checkpoint 2',
-      skill: '',
-      terms: ['Vasco da Gama', 'Columbus', 'Magellan', 'Cape of Good Hope', 'Caribbean', 'circumnavigation', 'Treaty of Tordesillas', 'Taíno', 'encomienda', 'indigenous peoples'],
-      focus: ['Describe at least two specific voyages with routes and outcomes.', 'Explain the Treaty of Tordesillas and what European assumptions it reflects.', 'Describe the experience of at least one non-European group during the era of exploration.']
+      terms: ['Vasco da Gama', 'Columbus', 'Magellan', 'John Cabot', 'Jacques Cartier', 'Dutch exploration', 'Cape of Good Hope', 'Caribbean', 'St. Lawrence', 'fisheries', 'fur trade', 'state sponsorship', 'trade routes'],
+      focus: ['Use one Iberian voyage and one northern Atlantic voyage with specific route evidence.', 'Identify the state sponsor and economic motivation for each.', 'Explain an economic or commercial effect such as expanded trade access, fisheries, fur commerce, geographic knowledge, or later claims.']
     }
   ];
 
