@@ -65,17 +65,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Environment -> horse culture -> mobility -> military potential"
     },
     {
-      "kind": "map",
-      "eyebrow": "Big Rock 1 · State Change",
-      "title": "One empire becomes four Mongol states.",
-      "visual": {
-        "url": "../assets/images/topics/2-2/2.2%20-%20Map%20of%20the%20Khanates.png",
-        "alt": "Map of the four major Mongol successor khanates",
-        "credit": "Topic 2.2 classroom map · successor khanates"
-      },
-      "footer": "Golden Horde · Chagatai · Ilkhanate · Yuan"
-    },
-    {
       "kind": "action",
       "eyebrow": "First & 10 · 10 Minutes",
       "title": "Read for three CED dimensions.",
@@ -99,30 +88,30 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Mechanism: organization makes conquest scalable."
     },
     {
-      "kind": "hero",
+      "kind": "grid",
       "eyebrow": "Big Rock 1 · State Change · Build",
-      "title": "Mobility is a weapon.",
-      "subtitle": "Mounted archery + speed + feigned retreat.",
-      "position": "bottom",
+      "title": "Why Mongol conquest worked.",
+      "subtitle": "Mobility, deception, and adaptation worked together.",
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Cinematic%20Mongol%20Archers.png",
         "alt": "Historical reconstruction of coordinated Mongol mounted archers on the steppe",
         "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
       },
-      "footer": "Mechanism: mobility increases speed, surprise, and operational range."
-    },
-    {
-      "kind": "hero",
-      "eyebrow": "Big Rock 1 · State Change · Build",
-      "title": "The Mongols borrowed what worked.",
-      "subtitle": "Siege specialists turn mobility into city conquest.",
-      "position": "bottom",
-      "visual": {
-        "url": "../assets/images/topics/2-2/2.2%20-%20Mongols%20Borrow%20Siege%20Technology.jpeg",
-        "alt": "Mongol forces using borrowed siege technology against a fortified city",
-        "credit": "Topic 2.2 classroom visual"
-      },
-      "footer": "Mechanism: adaptation lets a steppe army conquer fortified cities."
+      "footer": "Organization + mobility + adaptation make conquest scalable.",
+      "cards": [
+        {
+          "title": "MOBILITY",
+          "text": "Mounted archers move fast and fight at range."
+        },
+        {
+          "title": "DECEPTION",
+          "text": "Feigned retreat pulls enemies out of position."
+        },
+        {
+          "title": "ADAPTATION",
+          "text": "Borrowed siege specialists solve problems cavalry cannot."
+        }
+      ]
     },
     {
       "kind": "prompt",
@@ -133,48 +122,34 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "map",
       "eyebrow": "Big Rock 1 · State Change · Fragment",
-      "title": "Regional rule solves distance — and creates rivalry.",
+      "title": "One empire becomes four Mongol states.",
+      "subtitle": "Regional rule solves distance — and weakens unified control.",
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Map%20of%20the%20Khanates.png",
         "alt": "Map of the Golden Horde, Chagatai Khanate, Ilkhanate, and Yuan dynasty",
         "credit": "Topic 2.2 classroom map · successor khanates"
       },
-      "footer": "Regional flexibility ↑ · Unified political control ↓"
-    },
-    {
-      "kind": "prompt",
-      "eyebrow": "Governance",
-      "title": "Tolerance can be political technology.",
-      "subtitle": "Diversity is easier to rule when cooperation is useful."
+      "footer": "Golden Horde · Chagatai · Ilkhanate · Yuan"
     },
     {
       "kind": "hero",
-      "eyebrow": "Bridge · State Power Becomes Connection",
+      "eyebrow": "Governance -> Connection",
       "title": "Information moves at horse speed.",
       "subtitle": "The Yam turns distance into a governable problem.",
+      "position": "bottom",
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Mongol%20Yam%20Relay%20Across%20the%20Steppe.png",
         "alt": "Historical reconstruction of the Mongol Yam relay system across the steppe",
         "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
       },
-      "footer": "The same infrastructure that helps rule an empire also helps connect it.",
-      "position": "bottom"
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Big Rock 1 · Checkpoint",
-      "title": "Explain state change in two mechanisms.",
-      "subtitle": "How was the empire built, and why did unified control weaken?",
-      "action": {
-        "label": "Open Checkpoint",
-        "url": "lesson-2-2-mongol-empire.html#modules"
-      }
+      "footer": "The same infrastructure that helps rule an empire also helps connect it."
     },
     {
       "kind": "process",
       "eyebrow": "Big Rock 2 · Connection · CCOT",
       "title": "The routes were older. The political conditions changed.",
-      "footer": "Continuity: routes existed · Change: political integration + communication + protection",
+      "subtitle": "The Silk Roads already existed. Mongol rule changed the political conditions around movement.",
+      "footer": "Continuity: old routes · Change: political integration + communication + protection",
       "steps": [
         {
           "label": "BASELINE",
@@ -195,23 +170,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "hero",
-      "eyebrow": "Big Rock 2 · Connection · Mechanism",
-      "title": "Protection changes movement.",
-      "subtitle": "Merchants, envoys, and information move more predictably.",
-      "position": "bottom",
-      "visual": {
-        "url": "../assets/images/topics/2-2/2.2%20-%20Cinematic%20Mongol%20Caravan.png",
-        "alt": "Historical reconstruction of a protected caravan moving through Mongol-controlled territory",
-        "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
-      }
-    },
-    {
       "kind": "grid",
-      "eyebrow": "Big Rock 3 · Transfer · KC-3.2.II.A.ii",
+      "eyebrow": "Big Rock 3 · Transfer",
       "title": "Connection moves knowledge.",
-      "subtitle": "Interregional contact and conflict encouraged significant technological and cultural transfers.",
-      "footer": "Medicine · numbering systems · Uyghur script = three CED examples students should be able to explain.",
+      "subtitle": "Connection moves more than goods. It moves knowledge.",
+      "visual": {
+        "url": "../assets/images/topics/2-2/2.2%20-%20Knowledge%20Shared.jpg",
+        "alt": "Knowledge moving across cultures through Mongol-era Eurasian connections",
+        "credit": "Topic 2.2 classroom visual · Knowledge Shared"
+      },
+      "footer": "Three CED examples. One idea: contact moves knowledge across cultures.",
       "cards": [
         {
           "title": "MEDICINE",
@@ -224,71 +192,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
         {
           "title": "WRITING",
           "text": "Mongols adopt the Uyghur script"
-        },
-        {
-          "title": "MECHANISM",
-          "text": "Conquest + travel + specialists create contact"
-        }
-      ],
-      "visual": {
-        "url": "../assets/images/topics/2-2/2.2%20-%20Knowledge%20Shared.jpg",
-        "alt": "Knowledge moving across cultures through Mongol-era Eurasian connections",
-        "credit": "Topic 2.2 classroom visual · Knowledge Shared"
-      },
-    },
-    {
-      "kind": "process",
-      "eyebrow": "Big Rock 3 · Transfer Example 1 · Medicine",
-      "title": "Medical knowledge moves west.",
-      "subtitle": "Greco-Islamic medical knowledge -> western Europe",
-      "footer": "Broader Eurasian transfer system — not “the Mongols personally delivered every text.”",
-      "steps": [
-        {
-          "label": "GREEK TRADITIONS",
-          "text": "Greek medical learning forms part of the knowledge base"
-        },
-        {
-          "label": "ISLAMIC WORLD",
-          "text": "Scholars preserve, translate, debate, and develop it"
-        },
-        {
-          "label": "WESTERN EUROPE",
-          "text": "Medical learning moves into Latin Europe through interregional contact"
-        },
-        {
-          "label": "AP POINT",
-          "text": "Contact transfers knowledge across political and cultural boundaries"
-        }
-      ]
-    },
-    {
-      "kind": "process",
-      "eyebrow": "Big Rock 3 · Transfer Example 2 · Mathematics",
-      "title": "Number systems move across cultures.",
-      "subtitle": "South Asia -> Islamic world -> Europe",
-      "footer": "The numbers are not Mongol inventions; they illustrate cross-regional transfer in the period.",
-      "steps": [
-        {
-          "label": "SOUTH ASIA",
-          "text": "Positional numerals and place-value mathematics develop"
-        },
-        {
-          "label": "ISLAMIC WORLD",
-          "text": "Mathematicians adopt, use, and transmit the system"
-        },
-        {
-          "label": "EUROPE",
-          "text": "Merchants and scholars increasingly use the numerals"
-        },
-        {
-          "label": "AP POINT",
-          "text": "Connected trade and scholarly networks move mathematical knowledge"
         }
       ]
     },
     {
       "kind": "hero",
-      "eyebrow": "Big Rock 3 · Transfer Example 3 · Writing",
+      "eyebrow": "Big Rock 3 · Transfer · Direct Mongol Example",
       "title": "The Mongols borrow a writing system.",
       "subtitle": "Uyghur script -> Mongol adoption -> adaptation -> state use",
       "position": "right",
@@ -319,31 +228,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "process",
-      "eyebrow": "Big Rock 3 · Transfer · Mechanism",
-      "title": "Contact -> Borrowing -> Adaptation -> Wider Reach",
-      "steps": [
-        {
-          "label": "CONTACT",
-          "text": "Empires bring societies into repeated interaction"
-        },
-        {
-          "label": "BORROW",
-          "text": "Useful knowledge crosses cultural boundaries"
-        },
-        {
-          "label": "ADAPT",
-          "text": "Receiving societies apply it to local needs"
-        },
-        {
-          "label": "SPREAD",
-          "text": "Connected routes carry it farther"
-        }
-      ]
-    },
-    {
-      "kind": "process",
-      "eyebrow": "AP Synthesis · Answer the Topic Theme",
+      "eyebrow": "AP Synthesis",
       "title": "State Change -> Connection -> Transfer -> Significance",
+      "footer": "If students can explain this chain, they understand Topic 2.2.",
       "steps": [
         {
           "label": "STATE CHANGE",
@@ -364,20 +251,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "action",
-      "eyebrow": "Final Checkpoint · Topic Theme",
-      "title": "Answer Topic 2.2 in three moves.",
-      "subtitle": "State change · connection · transfer",
-      "action": {
-        "label": "Open Final Checkpoint",
-        "url": "lesson-2-2-mongol-empire.html#modules"
-      }
-    },
-    {
       "kind": "prompt",
       "eyebrow": "Topic 2.2 · Answer",
       "title": "Mongol significance was bigger than conquest.",
-      "subtitle": "Mongol expansion changed states, altered political conditions on older exchange networks, and intensified cross-cultural transfer across Eurasia."
+      "subtitle": "Mongol expansion changed states, altered conditions on older exchange networks, and intensified cross-cultural transfer across Eurasia."
     }
   ]
 };
