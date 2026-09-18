@@ -75,39 +75,41 @@
   };
 
   lesson.skillBuilder = {
-    label: 'Causation practice',
-    title: 'Tracing the Intellectual Causes of the Atlantic Revolutions',
-    intro: 'Causation for Topic 5.1 requires explaining how Enlightenment ideas caused the Atlantic Revolutions, and also recognizing that ideas alone are never sufficient causes. Every Atlantic Revolution required both Enlightenment ideas (which provided the vocabulary and the justification) AND structural conditions (which created the crisis that made revolution possible). The most common AP error is treating Enlightenment ideas as the sole cause without explaining the structural conditions that made those ideas explosive.',
+    label: 'Causation and continuity/change practice',
+    title: 'Ideas -> Revolution -> Reform',
+    intro: 'Topic 5.1 has two time horizons. First, Enlightenment ideas challenged traditional authority and supplied political language for Atlantic revolutions. Second, those same rights claims continued to be used by reformers who pushed political and social rights further during the 19th century.',
     steps: [
-      { label: 'Identify the intellectual cause and its mechanism', text: 'Intellectual cause: Enlightenment thinkers articulated the concept of natural rights, the idea that all humans possess inherent rights (life, liberty, property) that government cannot legitimately violate. The mechanism: when a government imposed taxation without consent (Britain in the American colonies), or maintained a hereditary aristocracy immune from taxation (France), or maintained a plantation system based on racial slavery (Saint-Domingue), the natural rights framework provided a vocabulary for describing these conditions as illegitimate. Without natural rights theory, the same conditions might have produced rebellion or reform; with it, they produced revolution, because natural rights theory claimed that the existing order was not merely unjust but fundamentally illegitimate.' },
-      { label: 'Identify the structural cause and its mechanism', text: 'Structural cause: The Seven Years War (1756–1763) created a fiscal crisis that destabilized both the British Empire (leading to new colonial taxation) and the French monarchy (leading to the conditions for the French Revolution). Britain\'s attempt to tax its colonies to pay war debts created the immediate grievance that activated Locke\'s natural rights theory. France\'s near-bankruptcy after supporting the American Revolution forced the Crown to call the Estates-General (1789), the first time it had done so in 175 years, which created the political opening for the French Revolution. Structural conditions without Enlightenment ideas produce different outcomes; ideas without structural conditions produce books, not revolutions.' },
-      { label: 'Connect intellectual and structural causes in an argument', text: 'A strong causation argument explains how intellectual causes and structural causes interacted: "The American Revolution was caused by the combination of Enlightenment natural rights theory AND British fiscal policy after the Seven Years War. Enlightenment ideas provided the framework (government requires consent; taxation without representation violates natural rights), while British fiscal policy provided the specific grievance that made those ideas politically explosive. Without both, without the ideas AND the crisis, the Revolution would not have happened when and how it did." This two-part causal argument is stronger than attributing the revolution to either ideas or structural conditions alone.' }
+      { label: 'Name the idea', text: 'Use a precise Enlightenment idea such as natural rights, social contract, popular sovereignty, separation of powers, religious tolerance, or reason. Identify the thinker when useful.' },
+      { label: 'Explain the challenge to authority', text: 'Show which older institution or assumption the idea challenged: divine-right monarchy, hereditary privilege, religious authority, or political exclusion.' },
+      { label: 'Trace the effect into reform', text: 'Connect rights language to a later reform movement: expanded suffrage, abolition, ending serfdom, or women’s rights. Explain how reformers extended Enlightenment logic to groups previously excluded.' },
+      { label: 'Add complexity', text: 'Recognize that Enlightenment universalism was incomplete in practice. The contradiction between universal rights language and exclusion became a source of later reform pressure.' }
     ],
-    prompt: 'In 3–4 sentences, explain how Enlightenment ideas caused the American or French Revolution. Identify one specific Enlightenment idea and one specific structural condition. Explain how the two interacted, how the structural condition gave the Enlightenment idea its political force. End with a statement about what this reveals about the relationship between intellectual change and political revolution.'
+    prompt: 'Choose one Enlightenment idea and trace it through two stages: first, how it challenged traditional authority or justified revolution; second, how reformers later used the same logic to expand rights. Use at least two specific pieces of evidence.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Philosophes and Their Core Ideas',
-      subtitle: 'Checks Learning Target 1 — Enlightenment ideas and their challenge to traditional authority.',
-      cardDesc: 'Natural rights, social contract, popular sovereignty, separation of powers, and the philosophes who articulated them.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Name three Enlightenment philosophes and explain the core idea each contributed to political thought. For each, explain how their idea challenged one of the traditional pillars of European authority (divine right of kings, hereditary aristocracy, or Church authority). Then explain why Locke\'s idea, that government derives authority from the consent of the governed, was the most directly influential for the Atlantic Revolutions.',
+      title: 'Checkpoint 1: Enlightenment Ideas and the Challenge to Authority',
+      subtitle: 'Checks Learning Targets 1–2 — ideas, diffusion, and political challenge.',
+      cardDesc: 'Reason, natural rights, social contract, popular sovereignty, separation of powers, and diffusion.',
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
+      prompt: 'Explain THREE Enlightenment ideas using specific thinkers when appropriate. For each idea, explain how it challenged an older source of authority such as divine-right monarchy, hereditary privilege, or religious authority. Then explain ONE mechanism by which Enlightenment ideas spread and how that diffusion helped provide ideological justification for revolution or new political identity.',
       responseType: 'Checkpoint 1',
-      terms: ['natural rights', 'social contract', 'popular sovereignty', 'separation of powers', 'Locke', 'Rousseau', 'Montesquieu', 'Voltaire', 'Wollstonecraft', 'divine right of kings'],
-      focus: ['Name three philosophes and their core ideas, be specific about each person\'s contribution.', 'Explain how each idea challenged traditional authority, which pillar (divine right, aristocracy, Church) and how.', 'Explain why Locke\'s consent of the governed was the most directly influential for the Atlantic Revolutions.']
+      terms: ['reason', 'empiricism', 'natural rights', 'social contract', 'popular sovereignty', 'separation of powers', 'Locke', 'Rousseau', 'Montesquieu', 'Voltaire', 'print culture', 'salons', 'nationalism'],
+      focus: ['Explain three ideas precisely rather than listing names.', 'Connect each idea to the authority it challenged.', 'Explain one diffusion mechanism and its political effect.']
     },
     {
-      title: 'Checkpoint 2: The Spread and Limits of Enlightenment Universalism',
-      subtitle: 'Checks Learning Target 2 — how Enlightenment ideas spread and why their universalism was limited.',
-      cardDesc: 'Print culture, salons, the Encyclopédie, and the exclusion of women, enslaved people, and colonial subjects.',
-      learningTargets: [lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: 'Describe two mechanisms by which Enlightenment ideas spread (print culture, salons, coffeehouses, universities). Then identify two groups that Enlightenment universalism excluded, women, enslaved Africans, or colonized peoples, and explain the specific structural reasons for each exclusion. End with a synthesis: was Enlightenment universalism a genuine breakthrough for human rights, a hypocritical façade, or something more complex? Defend your position with specific evidence.',
+      title: 'Checkpoint 2: Enlightenment Ideas Become Reform Movements',
+      subtitle: 'Checks Learning Target 3 — reform, expanded rights, and feminism.',
+      cardDesc: 'Suffrage, abolition, serfdom, Wollstonecraft, de Gouges, and Seneca Falls.',
+      learningTargets: [lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[2].criteria],
+      prompt: 'Explain how Enlightenment or religious ideals influenced TWO reform movements from expanded suffrage, abolition of slavery, or the end of serfdom. Then explain how demands for women’s rights used the logic of Enlightenment equality to challenge gender hierarchy. Use at least ONE specific example from Mary Wollstonecraft, Olympe de Gouges, or the Seneca Falls Conference. End by explaining how the exclusion of some groups from early universal-rights claims helped create later reform pressure.',
       responseType: 'Checkpoint 2',
-      terms: ['Encyclopédie', 'salons', 'print culture', 'Republic of Letters', 'Wollstonecraft', 'Royal African Company', 'universalism', 'exclusion', 'contradiction'],
-      focus: ['Describe two specific mechanisms of spread, be concrete (Encyclopédie, salons, coffeehouses).', 'Identify two excluded groups and explain the structural reasons for each exclusion, be specific.', 'Write a synthesis: was Enlightenment universalism genuine, hypocritical, or complex? Defend with evidence.']
+      skill: 'Causation and continuity/change',
+      terms: ['expanded suffrage', 'abolition', 'end of serfdom', 'women’s suffrage', 'feminism', 'Mary Wollstonecraft', 'Olympe de Gouges', 'Seneca Falls', 'natural rights', 'equality'],
+      focus: ['Use two specific reform movements and explain the idea-to-reform mechanism.', 'Use one named women’s-rights example.', 'Explain how earlier exclusion generated pressure to extend rights.']
     }
   ];
 
@@ -115,7 +117,7 @@
   lesson.evidenceLab = {
     title: 'Evidence Lab: Build and Test a Claim',
     task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
-    prompt: 'Build a claim about how Enlightenment ideas challenged traditional authority OR about the limits of Enlightenment universalism. Use at least two cards and explain how the evidence supports, complicates, or limits your claim.'
+    prompt: 'Build a claim about how Enlightenment ideas challenged traditional authority and continued to shape reform movements. Use at least two cards, including one piece of evidence about rights expansion or women’s rights, and explain the causal connection.'
   };
 
   lesson.images = [
