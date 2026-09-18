@@ -441,7 +441,7 @@ module.exports = {
     ],
     "supportCards": {
       "beforeYouRead": "As you read, track the exchange in BOTH directions, from the New World to the Old and from the Old World to the New. The consequences were radically different depending on direction. Disease went one way with catastrophic results; crops went both ways with transformative effects. Keep a mental ledger of what went where and what changed as a result.",
-      "readingTarget": "By the end, you should be able to explain why indigenous Americans were so vulnerable to Old World diseases, name at least TWO crops transferred in each direction and their long-term effects, and explain the connection between demographic collapse and the Atlantic slave trade."
+      "readingTarget": "By the end, you should be able to explain why Indigenous American populations were vulnerable to Eastern Hemisphere diseases, trace biological transfers in both directions, and explain demographic, nutritional, and environmental consequences including foods carried by enslaved Africans."
     },
     "vocabulary": [
       "Columbian Exchange",
@@ -452,8 +452,10 @@ module.exports = {
       "Potatoes",
       "Maize",
       "Cassava",
-      "Atlantic Slave Trade",
-      "Silver",
+      "Disease Vectors",
+      "Okra",
+      "Rice",
+      "Nutrition",
       "Ecological Imperialism",
       "Tenochtitlan",
       "Conquistador"
@@ -501,7 +503,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Moving from the <span class=\"kt\">Old World to the New</span>: the effects were equally profound but took different forms. <span class=\"kt\">Horses</span>, introduced to North America by the Spanish in the 16th century, transformed the cultures of the Plains Indians within a century or two. Peoples like the <span class=\"kt\">Comanche</span>, the Sioux, and the Cheyenne built entire civilizations around equestrian buffalo hunting, cultures that did not exist before the horse arrived. Cattle, pigs, and sheep provided new protein sources for indigenous and colonial populations but also consumed native vegetation and competed with indigenous grazing animals. <span class=\"kt\">Sugarcane</span>, transplanted to the Caribbean and Brazil, became the economic engine of the Atlantic plantation economy, a crop that required intensive labor under brutal tropical conditions and drove the demand for enslaved African workers."
+            "html": "Moving from the <span class=\"kt\">Old World to the New</span>: the effects were equally profound but took different forms. <span class=\"kt\">Horses</span>, cattle, pigs, wheat, sugar, and fruit trees transformed transportation, land use, diets, and colonial production. Enslaved Africans also carried foodways and crops across the Atlantic, including <span class=\"kt\">okra</span> and <span class=\"kt\">rice</span>, which became important parts of agricultural and culinary life in parts of the Americas. These transfers show that the Columbian Exchange was not only a European movement of species; forced African migration also moved ecological knowledge and food traditions."
           },
           {
             "type": "p",
@@ -568,7 +570,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "The Columbian Exchange was the transfer of plants, animals, diseases, and people between the Eastern and Western Hemispheres after 1492. Its most catastrophic consequence was disease: Old World pathogens (especially smallpox) killed an estimated 50–90% of the indigenous American population because they had no prior immunity. Its long-term economic consequence was silver, enormous American silver deposits funded global trade and created the conditions for early modern capitalism. Its social consequence was the Atlantic slave trade, labor shortages created by demographic collapse drove demand for enslaved African workers.",
+    "takeaway": "The Columbian Exchange was a two-way biological exchange of plants, animals, disease vectors, diseases, and people after 1492. Eastern Hemisphere diseases such as smallpox devastated many Indigenous American populations, while animals and crops such as horses, cattle, wheat, sugar, rice, and okra reshaped American environments and diets. American staple crops such as potatoes, maize, and cassava increased dietary diversity and calorie supplies in parts of Europe, Africa, and Asia, contributing to population growth. The strongest Topic 4.3 explanation follows transfer -> vulnerability or adaptation -> demographic, nutritional, economic, or environmental consequence.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -581,14 +583,14 @@ module.exports = {
       {
         "num": "02",
         "skill": "Continuity & Change",
-        "text": "Identify ONE crop transferred from the New World to the Old and ONE crop transferred from the Old World to the New. For each, explain the long-term consequence of that transfer.",
+        "text": "Identify ONE American crop transferred to Afro-Eurasia and ONE crop, animal, or foodway transferred to the Americas, including an example such as rice or okra carried by enslaved Africans. Explain one long-term consequence of each transfer.",
         "placeholder": "New World to Old World: [crop]. Long-term consequence: ... Old World to New World: [crop]. Long-term consequence: ..."
       },
       {
         "num": "03",
         "skill": "Argumentation",
-        "text": "A historian argues: \"The Columbian Exchange was the most significant event in world history since the agricultural revolution.\" Write a one-sentence claim responding to this argument, then support it with one specific piece of evidence.",
-        "placeholder": "The Columbian Exchange was / was not the most significant event since the agricultural revolution because... Evidence: ..."
+        "text": "Explain how the Columbian Exchange produced unequal demographic effects in the two hemispheres. Use disease evidence from the Americas and nutritional or population evidence from an American crop introduced to Afro-Eurasia.",
+        "placeholder": "The effects were unequal because... In the Americas... In Afro-Eurasia..."
       }
     ],
     "builderBody": "After answering the three questions, build a prompt for your AI Coach. The prompt will include your responses and ask the coach to give feedback on your historical thinking, pointing out gaps, suggesting stronger evidence, and asking a follow-up question.",
