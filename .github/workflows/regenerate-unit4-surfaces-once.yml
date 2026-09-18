@@ -1,0 +1,37 @@
+name: Regenerate Unit 4 Surfaces Once
+on:
+  push:
+    branches:
+      - repair-unit-4-ced-alignment
+    paths:
+      - '.github/workflows/regenerate-unit4-surfaces-once.yml'
+permissions:
+  contents: write
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: repair-unit-4-ced-alignment
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Rebuild First and 10
+        run: npm run build:readings
+      - name: Rebuild Deep Readings
+        run: npm run build:deep-readings
+      - name: Rebuild Socrates
+        run: npm run build:socrates
+      - name: Verify reproducible generated surfaces
+        run: |
+          node scripts/test/readings-reproducible.test.js
+          node scripts/build-socrates.js --check
+      - name: Commit generated Unit 4 surfaces and remove workflow
+        run: |
+          rm .github/workflows/regenerate-unit4-surfaces-once.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add unit-4/first-and-10-topic-4-*.html unit-4/deep-reading-topic-4-*.html docs/socrates .github/workflows/regenerate-unit4-surfaces-once.yml
+          git commit -m "Regenerate repaired Unit 4 learning surfaces"
+          git push
