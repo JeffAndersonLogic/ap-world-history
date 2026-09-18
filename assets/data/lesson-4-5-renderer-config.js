@@ -96,46 +96,47 @@
   };
 
   lesson.skillBuilder = {
-    label: 'Causation practice',
-    title: 'Tracing the Silver Economy: From Mine to Market',
-    intro: 'Causation practice for Topic 4.5 requires tracing how one factor, silver extraction at Potosí, caused changes across multiple systems: labor, administration, and global trade. A strong causation argument identifies specific causes and effects, uses specific evidence, and explains the mechanism by which cause produced effect. Avoid vague claims like "silver caused change", explain HOW the silver flowed, WHO it affected, and WHAT specifically changed.',
+    label: 'Causation and comparison practice',
+    title: 'Four Moves That Maintained Maritime Empires',
+    intro: 'Topic 4.5 is broader than silver or colonial administration. Build the argument in four moves: state economic strategy, exchange-network continuity/change, social effects, and belief-system effects.',
     steps: [
-      { label: 'Identify the cause', text: 'The mita system at Potosí forced indigenous labor to extract silver at industrial scale. The cause is specific: the combination of Spanish colonial demand for revenue, Chinese fiscal demand for silver (Single Whip Tax Reform, 1581), and the forced labor of mita workers who had no alternative because tribute obligations required silver payment.' },
-      { label: 'Trace the effects', text: 'Silver flowing from Potosí through Acapulco to Manila (Manila Galleon) and through Veracruz to Seville (Atlantic route) created the first genuinely global trade circuit. Chinese merchants in Manila received silver in exchange for silk and porcelain; European merchants received silver that funded expansion; and the enormous silver influx caused the global price revolution, inflation across Europe and Asia.' },
-      { label: 'Explain the mechanism', text: 'The mechanism connecting cause and effect was demand. Chinese demand for silver created the pull that made the Manila Galleon profitable; Spanish crown demand for revenue created the push that forced the mita; indigenous workers had no choice because their tribute obligations required silver they could only earn by mining it. Understanding the mechanism, not just the fact of silver flow, is what makes a causation argument strong.' }
+      { label: 'Economic strategy', text: 'Explain how mercantilism and chartered companies linked private capital to state competition. Use a specific company or policy and explain how it strengthened imperial trade or territorial claims.' },
+      { label: 'Exchange networks', text: 'Trace one new transoceanic connection such as silver or Atlantic trade, then identify one regional Afro-Eurasian market or commercial practice that continued.' },
+      { label: 'Social effects', text: 'Connect expanding demand to intensified peasant/artisan labor or to demographic, gender, and family changes associated with the Atlantic slave trade.' },
+      { label: 'Belief-system effects', text: 'Compare two different religious outcomes of increased interaction: expansion of an existing religion, religious conflict, or development of a syncretic practice.' }
     ],
-    prompt: 'In 3–4 sentences, write a causation argument: explain how the extraction of silver at Potosí, using the mita labor system, caused changes in global trade networks. Use specific evidence (Potosí, Manila Galleon, Seville, Chinese demand for silver) and explain the mechanism by which silver extraction transformed global commerce.'
+    prompt: 'Choose TWO of the four Topic 4.5 moves and explain each with specific evidence. At least one explanation must show a mechanism — how the economic or cultural process produced the effect.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Labor Systems and Colonial Administration',
-      subtitle: 'Checks Learning Targets 1 and 2 — labor systems and colonial administration.',
-      cardDesc: 'Encomienda, mita, chattel slavery, viceroyalties, audiencias, and the Catholic Church.',
+      title: 'Checkpoint 1: Economic Strategy and Exchange Networks',
+      subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
+      cardDesc: 'Mercantilism, chartered companies, silver, Atlantic exchange, and regional-market continuity.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain how the mita system worked at Potosí and describe the conditions it created for indigenous workers. Then explain how the viceregal system and Catholic Church maintained colonial administration across vast distances. Use specific evidence for each and explain ONE key similarity between the encomienda and mita systems.',
+      prompt: 'Explain how ONE mercantilist policy or chartered company helped a European state compete for overseas wealth or territory. Then explain one major change in exchange networks, such as global silver or Atlantic trade, AND one important continuity in Afro-Eurasian regional markets or commercial practices.',
       responseType: 'Checkpoint 1',
-      terms: ['encomienda', 'mita', 'Potosí', 'chattel slavery', 'viceroyalty', 'audiencia', 'Jesuit missions', 'las Casas', 'New Spain', 'Peru'],
-      focus: ['Explain the mita system: origins, conscription zone, conditions at Potosí, and why death rates were so high.', 'Describe how the viceregal system and Church maintained colonial order, use specific institutional names.', 'Identify one key similarity between the encomienda and mita (e.g., both used coercion; both served colonial extraction goals).']
+      terms: ['mercantilism', 'VOC', 'British EIC', 'chartered company', 'monopoly', 'silver', 'Potosí', 'Manila Galleon', 'Atlantic trade', 'regional markets', 'Indian Ocean'],
+      focus: ['Explain how a state economic strategy increased competitive power.', 'Explain one change in global/transoceanic exchange with specific evidence.', 'Explain one regional commercial continuity and why it persisted.']
     },
     {
-      title: 'Checkpoint 2: Silver and Global Trade',
-      subtitle: 'Checks Learning Target 3 — the silver economy and global price revolution.',
-      cardDesc: 'Potosí, Manila Galleon, Seville, Chinese demand for silver, and the global price revolution.',
-      learningTargets: [lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Explain how silver from Potosí connected the Americas, Europe, and Asia into a global trade network. Describe at least two trade routes (Manila Galleon and Atlantic crossing) and explain how Chinese demand for silver drove the entire system. Then identify one continuity: what pre-existing trade networks did the silver economy build upon or incorporate?',
+      title: 'Checkpoint 2: Social and Belief-System Effects',
+      subtitle: 'Checks Learning Targets 3–4 and Success Criteria 3–4.',
+      cardDesc: 'Labor intensification, African demographic/family change, cultural mixing, religious expansion, conflict, and syncretism.',
+      learningTargets: [lesson.learningTargets[2].target, lesson.learningTargets[3].target],
+      successCriteria: [lesson.successCriteria[2].criteria, lesson.successCriteria[3].criteria],
+      prompt: 'Explain TWO effects of expanding global exchange from 1450 to 1750: (1) one social effect involving intensified peasant/artisan labor OR demographic, gender, or family changes associated with the trade of enslaved people; and (2) one belief-system effect involving religious expansion, conflict, or syncretism. Use a specific example for each and explain the mechanism.',
       responseType: 'Checkpoint 2',
-      terms: ['Potosí', 'Manila Galleon', 'Casa de Contratación', 'global price revolution', 'Chinese demand', 'silver economy', 'Seville', 'Single Whip Tax Reform'],
-      focus: ['Explain the Manila Galleon trade: route, commodities exchanged, why Chinese demand drove it.', 'Describe the Atlantic silver route through Seville and explain the global price revolution.', 'Identify one continuity: what existing trade network did the silver economy build upon?']
+      terms: ['peasant labor', 'artisan labor', 'Indian cotton', 'Chinese silk', 'Atlantic slave trade', 'gender', 'family', 'cultural synthesis', 'missionaries', 'religious conflict', 'Vodun', 'Santería', 'syncretism'],
+      focus: ['Use one specific social-effect example and explain how exchange produced it.', 'Use one specific belief-system example and explain how interaction produced it.', 'Keep economic/social and religious effects distinct before connecting them.']
     }
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Labor, Silver, and the First Global Economy',
-    task: 'Choose TWO cards that trace different links in an economic chain: coerced labor, commodity extraction, global circulation, or corporate/mercantilist organization. Observe the source first, then explain the mechanism connecting it to the larger system. A painting of a mine or plantation can reveal production and social order, but it does not by itself quantify output or prove every labor condition.',
-    prompt: 'Using two evidence cards, build one causal claim about how labor systems and global demand sustained maritime empires from c. 1450 to c. 1750. Cite one concrete detail from each source, explain the mechanism connecting the evidence, and identify one limit in either source.'
+    title: 'Evidence Lab: Strategy, Exchange, Society, and Belief',
+    task: 'Choose TWO cards that illuminate different Topic 4.5 moves: economic strategy, exchange networks, social effects, or belief-system effects. Explain what each source can show and connect it to the larger process rather than treating the image as self-explanatory.',
+    prompt: 'Using two evidence cards, make one claim about how expanding maritime exchange changed or sustained a state, market, social structure, or belief system. Cite concrete details, explain the mechanism, and identify one source limitation.'
   };
 
   lesson.images = [
