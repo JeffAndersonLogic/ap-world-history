@@ -18,9 +18,10 @@ for(const [topic,spec] of Object.entries(contract.topics)){
    const codes=d.map(k=>String(k.code||''));
    spec.keyConcepts.forEach(k=>{if(!codes.includes(k))misses.push(`${scope} KC ${k}`);});
  }
- const targets=JSON.stringify([x.runtime.learningTargets||[],x.runtime.successCriteria||[]]);
- spec.targetCodes.forEach(k=>{if(!has(targets,k))misses.push(`target/criteria ${k}`);});
- (spec.forbiddenTargetCodes||[]).forEach(k=>{if(has(targets,k))misses.push(`forbidden target/criteria ${k}`);});
+ const targetItems=[...(x.runtime.learningTargets||[]),...(x.runtime.successCriteria||[])];
+ const targetCodes=targetItems.flatMap(item=>String(item.kc||'').split(';').map(code=>code.trim()).filter(Boolean));
+ spec.targetCodes.forEach(k=>{if(!targetCodes.includes(k))misses.push(`target/criteria ${k}`);});
+ (spec.forbiddenTargetCodes||[]).forEach(k=>{if(targetCodes.includes(k))misses.push(`forbidden target/criteria ${k}`);});
  const it=instruction(x.runtime);
  spec.evidence.forEach(c=>{if(!c.some(t=>has(it,t)))misses.push(`instruction ${c.join(' / ')}`);});
  console.log(`  ${topic} ${misses.length?'FAIL':'PASS'}${misses.length?' - '+misses.join('; '):''}`);
