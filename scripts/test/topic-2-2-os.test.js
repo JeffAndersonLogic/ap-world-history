@@ -119,10 +119,13 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
     /TRANSFER/i.test(JSON.stringify(bigRocksStudent.cards)) &&
     !/Topic 2\.2/i.test(bigRocksStudent?.subtitle || ''));
   const student22Text = JSON.stringify(student22?.slides || []);
-  check('2.2 student deck teaches KC-3.2.II.A.ii in dedicated example slides',
-    /Medical knowledge moves west/i.test(student22Text) &&
-    /Number systems move across cultures/i.test(student22Text) &&
-    /The Mongols borrow a writing system/i.test(student22Text));
+  check('2.2 student deck is the lean 15-slide sequence', (student22?.slides || []).length === 15, `slides=${(student22?.slides || []).length}`);
+  check('2.2 student deck keeps all three KC-3.2.II.A.ii examples without separate medicine/math chain slides',
+    /Greco-Islamic medical knowledge/i.test(student22Text) &&
+    /Numbering systems/i.test(student22Text) &&
+    /The Mongols borrow a writing system/i.test(student22Text) &&
+    !/Medical knowledge moves west/i.test(student22Text) &&
+    !/Number systems move across cultures/i.test(student22Text));
   check('2.2 student deck does not expose teacher notes', !JSON.stringify(student22 || {}).includes('listenFor') && !JSON.stringify(student22 || {}).includes('avoid'));
 
   await new Promise(resolve => server.listen(0, resolve));
@@ -134,34 +137,40 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
     const { page, errors } = await localPage(browser, origin, 'teacher/topic-2-2-os.html');
     console.log('\n  Topic 2.2 teacher Teaching OS');
     const data = await teachingData(page);
-    check('2.2 renders teacher preflight plus the 24-slide CED sequence', data.slides.length === 25, `slides=${data.slides.length}`);
-    check('2.2 run of show covers the lesson', data.flow.length >= 11, `flow=${data.flow.length}`);
+    check('2.2 renders the lean 15-slide CED sequence', data.slides.length === 15, `slides=${data.slides.length}`);
+    check('2.2 run of show matches the lean narrative', data.flow.length === 8, `flow=${data.flow.length}`);
     for (const title of [
-      'Do not teach the Mongols as a conquest story.',
+      'The Mongol Empire',
       'Three Big Rocks',
       'Who were the Mongols?',
       'Steppe life shaped Mongol strengths.',
-      'One empire becomes four Mongol states.',
+      'Read for three CED dimensions.',
       'Chinggis Khan turns steppe warriors into a system.',
-      'Regional rule solves distance',
+      'Why Mongol conquest worked.',
+      'Conquest creates a new problem.',
+      'One empire becomes four Mongol states.',
+      'Information moves at horse speed.',
       'The routes were older. The political conditions changed.',
       'Connection moves knowledge.',
-      'Medical knowledge moves west.',
-      'Number systems move across cultures.',
       'The Mongols borrow a writing system.',
-      'Contact -> Borrowing -> Adaptation -> Wider Reach',
       'State Change -> Connection -> Transfer -> Significance',
-      'Answer Topic 2.2 in three moves.'
+      'Mongol significance was bigger than conquest.'
     ]) check(`2.2 includes “${title}”`, data.titles.some(t => t.includes(title)));
 
+    check('2.2 removes the repetitive medicine/math/mechanism chain slides',
+      !data.titles.some(t => /Medical knowledge moves west/i.test(t)) &&
+      !data.titles.some(t => /Number systems move across cultures/i.test(t)) &&
+      !data.titles.some(t => /Contact -> Borrowing -> Adaptation -> Wider Reach/i.test(t)) &&
+      !data.titles.some(t => /Answer Topic 2\.2 in three moves/i.test(t)));
+
     const transferText = JSON.stringify(data.slides.filter(s => s.phase === 'transfer'));
-    check('2.2 explicitly teaches Greco-Islamic medical transfer', /Greco-Islamic medical knowledge/i.test(transferText) && /GREEK TRADITIONS/i.test(transferText) && /WESTERN EUROPE/i.test(transferText));
-    check('2.2 explicitly teaches numbering-system transfer', /Numbering systems/i.test(transferText) && /SOUTH ASIA/i.test(transferText) && /ISLAMIC WORLD/i.test(transferText));
-    check('2.2 explicitly teaches adoption of Uyghur script', /Uyghur script/i.test(transferText) && /MONGOL ADOPTION/i.test(transferText) && /STATE USE/i.test(transferText));
+    check('2.2 explicitly teaches Greco-Islamic medical transfer', /Greco-Islamic medical knowledge/i.test(transferText) && /western Europe/i.test(transferText));
+    check('2.2 explicitly teaches numbering-system transfer', /Numbering systems/i.test(transferText) && /Europe/i.test(transferText));
+    check('2.2 explicitly teaches adoption of Uyghur script', /Uyghur script/i.test(transferText) && /adopt/i.test(transferText));
 
     await goToTitle(page, 'Three Big Rocks');
     const bigRocksText = await page.locator('#stage').innerText();
-    check('2.2 slide 3 visibly lists the three Big Rocks',
+    check('2.2 slide 2 visibly lists the three Big Rocks',
       await page.locator('#stage .grid-card').count() === 3 &&
       /STATE CHANGE/i.test(bigRocksText) &&
       /CONNECTION/i.test(bigRocksText) &&
@@ -172,14 +181,12 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
     await verifyLocalVisual(page, 'Who were the Mongols', 'Who%20were%20the%20mongols', '2.2 Mongol context');
     await verifyLocalVisual(page, 'Steppe life shaped Mongol strengths', 'Mongol%20Camp%20Life', '2.2 steppe context');
     await verifyLocalVisual(page, 'One empire becomes four Mongol states', 'Map%20of%20the%20Khanates', '2.2 khanates map');
-    await verifyLocalVisual(page, 'Mobility is a weapon', 'Cinematic%20Mongol%20Archers', '2.2 mobility');
-    await verifyLocalVisual(page, 'The Mongols borrowed what worked', 'Mongols%20Borrow%20Siege%20Technology', '2.2 siege technology');
+    await verifyLocalVisual(page, 'Why Mongol conquest worked', 'Cinematic%20Mongol%20Archers', '2.2 conquest synthesis');
     await verifyLocalVisual(page, 'The Mongols borrow a writing system', 'Cinematic%20Mongol%20city%20gate', '2.2 Uyghur transfer');
     await verifyLocalVisual(page, 'Information moves at horse speed', 'Mongol%20Yam%20Relay', '2.2 Yam');
-    await verifyLocalVisual(page, 'Protection changes movement', 'Cinematic%20Mongol%20Caravan', '2.2 protected caravan');
     await verifyLocalVisual(page, 'Connection moves knowledge', 'Knowledge%20Shared', '2.2 knowledge transfer');
 
-    for (const title of ['Steppe life shaped Mongol strengths', 'Mobility is a weapon', 'The Mongols borrowed what worked', 'Information moves at horse speed', 'Protection changes movement']) {
+    for (const title of ['Steppe life shaped Mongol strengths', 'Information moves at horse speed']) {
       await goToTitle(page, title);
       const geometry = await page.locator('#stage .hero-slide').evaluate(el => {
         const slide = el.getBoundingClientRect();

@@ -364,4 +364,177 @@ if(Array.isArray(T.flow)){
   patchFlow('check2',{label:'Answer the Topic Theme',range:'84–88',minutes:4,teacher:'Require all three Big Rocks in a concise response.',students:'Answer Topic 2.2 in three moves.'});
   patchFlow('close',{label:'Landing + Bridge',range:'88–90',minutes:2,teacher:'Land the significance sentence, then bridge to Indian Ocean environmental systems.',students:'Say the Topic 2.2 answer in one sentence.'});
 }
+
+/* Lean 15-slide rebuild: keep the narrative spine visible and move repeated
+ * mechanism/detail into teacher notes instead of additional projected slides.
+ * This is the canonical Topic 2.2 sequence for both teacher and student decks.
+ */
+const leanOpen=byTitle('The Mongol Empire');
+const leanBigRocks=byTitle('Three Big Rocks');
+const leanWho=byTitle('Who were the Mongols?');
+const leanSteppe=byTitle('Steppe life shaped Mongol strengths.');
+const leanFirst10=byTitle('Read for three CED dimensions.');
+const leanOrganization=byTitle('Chinggis Khan turns steppe warriors into a system.');
+const leanConquest=byTitle('Mobility is a weapon.');
+const leanGovernPivot=byTitle('Conquest creates a new problem.');
+const leanFragment=byTitle('Regional rule solves distance');
+const leanYam=byTitle('Information moves at horse speed.');
+const leanRoutes=byTitle('The routes were older. The political conditions changed.');
+const leanTransfer=byTitle('Connection moves knowledge.');
+const leanWriting=byTitle('The Mongols borrow a writing system.');
+const leanSynthesis=byTitle('State Change -> Connection -> Transfer -> Significance');
+const leanLanding=byTitle('Mongol significance was bigger than conquest.');
+
+if(leanConquest){
+  leanConquest.kind='grid';
+  leanConquest.eyebrow='Big Rock 1 · State Change · Build';
+  leanConquest.title='Why Mongol conquest worked.';
+  leanConquest.subtitle='Mobility, deception, and adaptation worked together.';
+  delete leanConquest.position;
+  leanConquest.cards=[
+    {title:'MOBILITY',text:'Mounted archers move fast and fight at range.'},
+    {title:'DECEPTION',text:'Feigned retreat pulls enemies out of position.'},
+    {title:'ADAPTATION',text:'Borrowed siege specialists solve problems cavalry cannot.'}
+  ];
+  leanConquest.footer='Organization + mobility + adaptation make conquest scalable.';
+  leanConquest.notes={
+    minutes:6,
+    land:[
+      'Compress the military story. Students need the mechanism, not a catalog of battles.',
+      'Mobility gave Mongol forces speed, range, and surprise. Feigned retreat could disrupt enemy formations.',
+      'Cavalry alone could not reliably take fortified cities, so Mongol rulers recruited or compelled siege specialists and borrowed techniques from other peoples.',
+      'The recurring Mongol pattern is pragmatic adaptation: use the system or expertise that solves the problem.'
+    ],
+    ask:'Why is “the Mongols had horses” an incomplete explanation for conquest?',
+    listenFor:'Organization, deception, specialist knowledge, siege technology, and adaptation.'
+  };
+}
+
+if(leanFragment){
+  leanFragment.eyebrow='Big Rock 1 · State Change · Fragment';
+  leanFragment.title='One empire becomes four Mongol states.';
+  leanFragment.subtitle='Regional rule solves distance — and weakens unified control.';
+  leanFragment.footer='Golden Horde · Chagatai · Ilkhanate · Yuan';
+  leanFragment.notes=leanFragment.notes||{};
+  leanFragment.notes.land=[
+    'Use the map here, after students understand how the empire was built.',
+    'Regional khanates shortened chains of command and adapted to local conditions.',
+    'Succession disputes, distance, and regional interests weakened a single unified political center.',
+    'The result is continued Mongol rule in several regional states rather than one unified empire.'
+  ];
+  leanFragment.notes.ask='How can regional rule solve one problem and create another?';
+  leanFragment.notes.listenFor='It improves local governance while strengthening regional independence and rivalry.';
+}
+
+if(leanYam){
+  leanYam.eyebrow='Governance -> Connection';
+  leanYam.notes=leanYam.notes||{};
+  leanYam.notes.land=[
+    'Fold governance into one story rather than another slide: Mongol rulers used local officials, pragmatic religious tolerance, and communication systems to manage diversity and distance.',
+    'The Yam relay system let couriers change horses at stations and move orders and information across enormous distances.',
+    'The key bridge is this: infrastructure built to govern the empire also helps connect it.'
+  ];
+  leanYam.notes.ask='Why is a communication network both a governing tool and an exchange tool?';
+  leanYam.notes.listenFor='It moves orders, intelligence, officials, envoys, and information more predictably.';
+}
+
+if(leanRoutes){
+  leanRoutes.eyebrow='Big Rock 2 · Connection · CCOT';
+  leanRoutes.subtitle='The Silk Roads already existed. Mongol rule changed the political conditions around movement.';
+  leanRoutes.footer='Continuity: old routes · Change: political integration + communication + protection';
+  leanRoutes.notes=leanRoutes.notes||{};
+  leanRoutes.notes.land=[
+    'The Silk Roads existed long before Mongol expansion. Do not credit the Mongols with inventing the routes.',
+    'Mongol political control changed conditions across large stretches of Eurasia by reducing some political barriers, strengthening communication, and protecting favored merchants and envoys.',
+    'Fold the old “Protection changes movement” slide into this explanation: lower risk and greater predictability can increase movement even when the road itself is old.',
+    'This is KC-3.1.I.E.i: imperial expansion facilitated Afro-Eurasian trade and communication.'
+  ];
+  leanRoutes.notes.ask='What continued, and what changed under Mongol rule?';
+  leanRoutes.notes.listenFor='The routes continued; political control, communication, protection, and predictability changed.';
+}
+
+if(leanTransfer){
+  leanTransfer.eyebrow='Big Rock 3 · Transfer';
+  leanTransfer.subtitle='Connection moves more than goods. It moves knowledge.';
+  leanTransfer.cards=[
+    {title:'MEDICINE',text:'Greco-Islamic medical knowledge -> western Europe'},
+    {title:'MATHEMATICS',text:'Numbering systems -> Europe'},
+    {title:'WRITING',text:'Mongols adopt the Uyghur script'}
+  ];
+  leanTransfer.footer='Three CED examples. One idea: contact moves knowledge across cultures.';
+  leanTransfer.notes={
+    minutes:5,
+    land:[
+      'Keep these examples together instead of turning each into a separate chain slide.',
+      'Medicine: Greco-Islamic medical knowledge circulated into western Europe through broader interregional contact.',
+      'Mathematics: numbering systems developed in South Asia, moved through the Islamic world, and were increasingly adopted in Europe.',
+      'Writing: the Mongols themselves adopted and adapted the Uyghur script.',
+      'The significance is not that Mongols invented these ideas. Interregional contact helped knowledge cross political and cultural boundaries.'
+    ],
+    ask:'What is the common mechanism behind all three examples?',
+    listenFor:'Contact, travel, specialists, texts, borrowing, and adaptation.'
+  };
+}
+
+if(leanWriting){
+  leanWriting.eyebrow='Big Rock 3 · Transfer · Direct Mongol Example';
+  leanWriting.notes=leanWriting.notes||{};
+  leanWriting.notes.land=[
+    'Use this as the one transfer example worth slowing down for because the Mongols themselves are the borrowers.',
+    'A neighboring Uyghur scribal tradition provided a usable writing system.',
+    'Mongol rulers adopted and adapted it for Mongolian and state administration.',
+    'This disproves the idea that cultural transfer only moves from conqueror to conquered.'
+  ];
+}
+
+if(leanSynthesis){
+  leanSynthesis.eyebrow='AP Synthesis';
+  leanSynthesis.footer='If students can explain this chain, they understand Topic 2.2.';
+  leanSynthesis.notes=leanSynthesis.notes||{};
+  leanSynthesis.notes.land=[
+    'This is the only synthesis chain students need to see.',
+    'State change: build a vast empire, then fragment into regional khanates.',
+    'Connection: political conditions on older routes change.',
+    'Transfer: knowledge crosses cultural boundaries.',
+    'Significance: Eurasia becomes more politically and culturally interconnected.'
+  ];
+}
+
+if(leanLanding){
+  leanLanding.eyebrow='Topic 2.2 · Answer';
+  leanLanding.subtitle='Mongol expansion changed states, altered conditions on older exchange networks, and intensified cross-cultural transfer across Eurasia.';
+}
+
+T.meta.subtitle='State change. Connection. Transfer.';
+T.meta.endTarget='Students can explain Topic 2.2 as one story: Mongol state building and fragmentation changed political conditions across Eurasia, helping facilitate exchange and cross-cultural transfer.';
+
+T.slides=[
+  leanOpen,
+  leanBigRocks,
+  leanWho,
+  leanSteppe,
+  leanFirst10,
+  leanOrganization,
+  leanConquest,
+  leanGovernPivot,
+  leanFragment,
+  leanYam,
+  leanRoutes,
+  leanTransfer,
+  leanWriting,
+  leanSynthesis,
+  leanLanding
+].filter(Boolean);
+
+T.flow=[
+  {id:'open',label:'Launch + Mongol Context',range:'0–10',minutes:10,teacher:'Give the three Big Rocks, then establish who the Mongols were and why steppe life mattered.',students:'Connect steppe life to mobility and the three-part significance frame.',slide:0},
+  {id:'first10',label:'First & 10',range:'10–20',minutes:10,teacher:'Read only for evidence that fits the three Big Rocks.',students:'Sort evidence into state change, connection, or transfer.',slide:4},
+  {id:'conquest',label:'Build the Empire',range:'20–35',minutes:15,teacher:'Teach organization, mobility, deception, and adaptation as one conquest system.',students:'Explain why conquest required more than horses.',slide:5},
+  {id:'govern',label:'Govern + Fragment',range:'35–50',minutes:15,teacher:'Pivot from conquest to rule; explain regionalization, tolerance, communication, and fragmentation.',students:'Explain how scale created a governance problem.',slide:7},
+  {id:'exchange',label:'Big Rock 2: Connection',range:'50–64',minutes:14,teacher:'Use the Yam and CCOT comparison to show how old routes operated under new political conditions.',students:'Explain how communication and protection affected movement.',slide:9},
+  {id:'transfer',label:'Big Rock 3: Transfer',range:'64–76',minutes:12,teacher:'Teach the three CED examples together, then slow down only for Uyghur script.',students:'Explain how contact moved knowledge across cultures.',slide:11},
+  {id:'skill',label:'AP Synthesis',range:'76–86',minutes:10,teacher:'Build the single state change -> connection -> transfer argument.',students:'Explain the full significance chain.',slide:13},
+  {id:'close',label:'Land the Story',range:'86–90',minutes:4,teacher:'End on why Mongol significance was bigger than conquest.',students:'State Topic 2.2 in one sentence.',slide:14}
+];
+
 })();
