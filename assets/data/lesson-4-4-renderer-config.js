@@ -91,46 +91,48 @@
   };
 
   lesson.skillBuilder = {
-    label: 'Comparison practice',
-    title: 'Comparing Three Models of Maritime Empire',
-    intro: 'Comparison requires identifying both similarities and differences and explaining WHY the patterns exist. For Topic 4.4, you need to compare three distinct models of European maritime empire: the Portuguese trading post empire, the Spanish territorial colonial empire, and the Dutch/British joint-stock company model. A strong comparison argument identifies one similarity and one meaningful difference, provides specific evidence, and explains what the comparison reveals about how different states approached empire.',
+    label: 'Continuity and change practice',
+    title: 'What Changed When Maritime Empires Expanded?',
+    intro: 'Topic 4.4 is best organized as a continuity-and-change problem. New maritime empires and states grew, but older Indian Ocean commerce and older forms of labor and enslavement did not simply disappear.',
     steps: [
-      { label: 'Identify the similarity', text: 'All three models were driven by the same ultimate goal: extracting profit from global trade and resources. The Portuguese wanted spice profits from Indian Ocean trade; the Spanish wanted gold, silver, and agricultural surplus from the Americas; the Dutch and British wanted commercial profit from Asian goods. The goal was common, the methods differed.' },
-      { label: 'Identify the meaningful difference', text: 'The methods reflected each state\'s capacity and geography. Portugal (population ~1 million) could not govern vast territories, so it controlled chokepoints. Spain had crusading institutions and found territories with enormous populations and resources, so it conquered and governed. The Dutch and British had sophisticated financial markets, so they used private capital and joint-stock companies.' },
-      { label: 'Explain what the comparison reveals', text: 'The comparison reveals that "European empire" was not a single model but a range of strategies shaped by the specific goals, capacities, and opportunities available to each state. Understanding this diversity is essential for AP comparison, avoid treating all European empires as identical.' }
+      { label: 'State power', text: 'Use one European maritime empire and one African state such as Kongo or Asante to show how participation in expanding trade networks could increase political influence in different ways.' },
+      { label: 'Trade continuity', text: 'Identify one European disruption in the Indian Ocean, then explain why intra-Asian commerce and merchants such as Gujaratis, Omanis, Swahili Arabs, or Javanese continued.' },
+      { label: 'Labor continuity and change', text: 'Compare an adapted older labor system such as the Incan mit’a with a new or expanded colonial system such as encomienda, hacienda, indentured servitude, or chattel slavery.' },
+      { label: 'Slavery continuity and change', text: 'Distinguish older African/Mediterranean/Indian Ocean forms of enslavement from the much larger plantation-driven Atlantic demand for enslaved labor.' }
     ],
-    prompt: 'In 3–4 sentences, write a comparison argument about two of the three models of European maritime empire (Portuguese trading post, Spanish colonial, or Dutch/British joint-stock). Identify one meaningful similarity and one meaningful difference, provide specific evidence for each, and explain what the comparison reveals about how different states approached empire-building.'
+    prompt: 'Choose TWO Topic 4.4 developments and write a continuity-and-change explanation for each. Use specific evidence and explain the mechanism behind the change or persistence.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Estado da India and Spanish Conquest',
-      subtitle: 'Checks Learning Targets 1 and 2 — Portuguese and Spanish models of empire.',
-      cardDesc: 'Fortified ports, sea lane control, conquest, encomienda, and viceroyalties.',
+      title: 'Checkpoint 1: Maritime States and Indian Ocean Continuity',
+      subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
+      cardDesc: 'European maritime empire, African state growth, and continuity inside Indian Ocean trade.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain how the Portuguese Estado da India established control over Asian trade routes. Then describe how Spain established colonial rule in the Americas after the Aztec and Inca conquests. Use specific evidence for each empire, and explain ONE key difference between the two models.',
+      prompt: 'Explain how expanding maritime trade increased the power of ONE European maritime empire and ONE African state such as Kongo or Asante. Then explain one important continuity in Indian Ocean trade despite Portuguese or Dutch disruption, using a specific merchant group or intra-Asian trade example.',
       responseType: 'Checkpoint 1',
-      terms: ['Estado da India', 'Goa', 'Malacca', 'cartaz', 'feitoria', 'Cortés', 'Pizarro', 'encomienda', 'viceroyalty', 'Las Casas'],
-      focus: ['Explain the Estado da India model: fortified ports at chokepoints, cartaz system, naval coercion.', 'Describe Spanish conquest and the encomienda system using specific examples.', 'Identify one key difference between the Portuguese and Spanish approaches to empire.']
+      terms: ['Estado da Índia', 'Spanish Empire', 'Kongo', 'Asante', 'trading posts', 'Indian Ocean', 'intra-Asian trade', 'Gujaratis', 'Omanis', 'Swahili Arabs', 'Javanese'],
+      focus: ['Use one specific European state-building example.', 'Use one specific African state-growth example.', 'Explain one Indian Ocean continuity and why European arrival did not erase it.']
     },
     {
-      title: 'Checkpoint 2: The Joint-Stock Company and Comparing Models',
-      subtitle: 'Checks Learning Target 3 — Dutch/British model and comparison across all three.',
-      cardDesc: 'VOC, British EIC, joint-stock companies, and comparing three models of maritime empire.',
-      learningTargets: [lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Explain what a joint-stock company was and how the Dutch VOC used this model to build a maritime empire. Then write a comparison argument: identify one similarity and one difference between the joint-stock company model and either the Portuguese or Spanish model. Explain what the comparison reveals about European empire-building strategies.',
+      title: 'Checkpoint 2: Labor and Slavery — Continuity and Change',
+      subtitle: 'Checks Learning Targets 3–4 and Success Criteria 3–4.',
+      cardDesc: 'Mit’a, encomienda, hacienda, indentured servitude, chattel slavery, and older forms of enslavement.',
+      learningTargets: [lesson.learningTargets[2].target, lesson.learningTargets[3].target],
+      successCriteria: [lesson.successCriteria[2].criteria, lesson.successCriteria[3].criteria],
+      prompt: 'Explain one continuity and one change in labor systems in the Americas after 1500. Then explain one continuity and one change in slavery across Africa, the Indian Ocean, and the Atlantic world. Use at least THREE specific terms or examples and make clear what persisted versus what expanded or changed.',
       responseType: 'Checkpoint 2',
-      terms: ['VOC', 'Dutch East India Company', 'joint-stock company', 'British EIC', 'Batavia', 'Spice Islands', 'private capital', 'shared risk', 'charter', 'comparison'],
-      focus: ['Explain how joint-stock companies spread risk and mobilized private capital for empire.', 'Give one specific example of VOC power (military, legal, or commercial).', 'Identify one similarity and one difference between the joint-stock model and one other model, with specific evidence.']
+      skill: 'Continuity and Change Over Time',
+      terms: ['Incan mit’a', 'mita', 'encomienda', 'hacienda', 'indentured servitude', 'chattel slavery', 'plantation economy', 'African enslavement', 'Mediterranean', 'Indian Ocean', 'Atlantic slave trade'],
+      focus: ['Compare an older/adapted labor system with a new or expanded colonial labor system.', 'Explain that enslavement in Africa predated Atlantic expansion.', 'Explain how plantation demand changed the scale, destination, and social effects of enslaved labor.']
     }
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Three Maritime Empire Models',
-    task: 'Choose TWO cards from different maritime empires and compare the same problem: controlling routes, claiming territory, or organizing commercial power. Identify the source type first. A monument, company emblem/document, map, and colonial painting each reveal different parts of empire and carry different limitations.',
-    prompt: 'Using two evidence cards from different maritime empires, make one comparison claim about how Europeans built overseas power. Cite one concrete detail from each source, explain a similarity OR difference in imperial strategy, and explain how geography, finance, or state capacity helps account for the pattern.'
+    title: 'Evidence Lab: State Power, Trade Continuity, and Labor Change',
+    task: 'Choose TWO cards that illuminate different Topic 4.4 developments: state expansion, Indian Ocean continuity, colonial labor, or slavery. Identify what each source can show and what it cannot before using it as evidence.',
+    prompt: 'Using two evidence cards, make one claim about continuity and change as maritime empires expanded. Cite concrete details from both sources, explain the historical mechanism, and identify one source limitation.'
   };
 
   lesson.images = [
