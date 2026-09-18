@@ -56,7 +56,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Context · Why the Steppe Matters",
       "title": "Steppe life shaped Mongol strengths.",
       "subtitle": "Mobility was a way of life before it became a military advantage.",
-      "position": "right",
+      "position": "bottom",
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Mongol%20Camp%20Life.jpg",
         "alt": "Mongol camp life on the Central Asian steppe",
