@@ -69,7 +69,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'The Mongol Empire', subtitle: 'Build. Fragment. Connect. Transfer.',
       visual: {
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
-        alt: 'Yuan dynasty portrait of Genghis Khan',
+        alt: 'Yuan dynasty portrait of Chinggis Khan',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg',
         credit: 'Yuan dynasty imperial portrait album · National Palace Museum · public domain'
       },
@@ -89,7 +89,7 @@ window.BEHISTORICAL_TEACHING = {
         { label: 'CONNECT', text: 'Imperial systems facilitate trade + communication' },
         { label: 'TRANSFER', text: 'Knowledge crosses cultural boundaries' }
       ],
-      footer: 'Do not leave class with only cavalry and Genghis Khan.',
+      footer: 'Do not leave class with only cavalry and Chinggis Khan.',
       notes: {
         minutes: 3,
         land: ['This is the CED spine. Return to it after every section.'],

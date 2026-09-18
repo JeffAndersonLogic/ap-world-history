@@ -123,7 +123,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Mughal Empire</span> was established in 1526 when <span class=\"kt\">Babur</span>, a Central Asian ruler descended from both Timur and Genghis Khan, used artillery to defeat the much larger army of the Delhi Sultanate at the <span class=\"kt\">First Battle of Panipat</span>. His army was outnumbered but possessed field artillery, which devastated the Sultanate's war elephants and infantry. The Mughals subsequently conquered most of the Indian subcontinent over the next century, reaching their greatest extent under <span class=\"kt\">Aurangzeb</span> (r. 1658–1707). At its height, the Mughal Empire controlled a population of perhaps 150 million people, among the most populous empires in world history."
+            "html": "The <span class=\"kt\">Mughal Empire</span> was established in 1526 when <span class=\"kt\">Babur</span>, a Central Asian ruler descended from both Timur and Chinggis Khan, used artillery to defeat the much larger army of the Delhi Sultanate at the <span class=\"kt\">First Battle of Panipat</span>. His army was outnumbered but possessed field artillery, which devastated the Sultanate's war elephants and infantry. The Mughals subsequently conquered most of the Indian subcontinent over the next century, reaching their greatest extent under <span class=\"kt\">Aurangzeb</span> (r. 1658–1707). At its height, the Mughal Empire controlled a population of perhaps 150 million people, among the most populous empires in world history."
           }
         ],
         "callout": {
