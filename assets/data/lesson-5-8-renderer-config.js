@@ -31,7 +31,7 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Rising',
+    title: 'First & 10: Four Reactions',
     embedUrl: 'first-and-10-topic-5-8-reactions-to-industrial-economy-capture.html?v=response-id-fix-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.8 lesson path.'
   };
@@ -39,10 +39,10 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'The geography of labor organizing', detail: 'Labor organizing in the 19th century was concentrated in specific industrial regions: Lancashire and Yorkshire textile districts, the South Wales coal fields, and the Tyne and Clyde shipbuilding centers in Britain; the Pittsburgh steel district, New England textile mills, and Chicago railroad yards in the United States. These concentrations were not accidental, industrial geography created the conditions for collective action. Workers in the same industry, living in the same company town or urban neighborhood, sharing the same grievances and the same employers, could organize more easily than dispersed agricultural workers. The factory system thus simultaneously created the working class whose exploitation drove profit and the concentration of workers that made collective action possible. Karl Marx understood this: the factory was not just a site of production, it was a school of solidarity.' },
-      { label: 'The geography of abolition', detail: 'Abolitionist movements were strongest in the industrial regions of Britain and the American Northeast, paradoxically, the regions most economically connected to slavery through the cotton trade. Lancashire textile workers whose mills depended on slave-grown American cotton were among the most vocal British abolitionists; New England merchants who traded with Southern planters produced abolitionist newspapers and financed anti-slavery campaigns. This geographic pattern reveals an important tension: industrial capitalism both depended on slave-produced raw materials and generated the ideological and organizational resources for abolition. The humanitarian and evangelical Protestant religious culture of industrial Britain and the American Northeast produced both the most committed abolitionists and the most sophisticated industrial economy. The connection between industrial capitalism and abolitionism was not simple cause-and-effect, it was a tension within the same economic and cultural world.' },
-      { label: 'The Cotton Famine zone and global cotton restructuring', detail: 'The Union naval blockade of Confederate ports during the American Civil War (1861–1865) cut Lancashire\'s cotton supply, producing the Cotton Famine. British mills turned to alternative sources: Egyptian cotton (Nile valley fields converted to cotton production on a large scale), Indian cotton (Bombay presidency cotton exports expanded dramatically), and eventually Brazilian and West African sources. These substitutions had lasting consequences: Egypt\'s agricultural economy was restructured around cotton export, making it dependent on the global cotton market for decades; Indian cotton fields expanded at the expense of food crops. The geographic map of global cotton production in 1870 looked radically different from 1860, the Civil War had permanently diversified cotton sourcing away from the American South, reducing the Confederate states\' leverage over British policy.' },
-      { label: 'Reform movements: geography of early public health victories', detail: 'Public health reform spread unevenly through industrial cities. London\'s Great Stink (1858) and subsequent Bazalgette sewer system represented the most dramatic case: a single catastrophic event producing political will for large-scale infrastructure investment. Other British industrial cities, Manchester, Birmingham, Liverpool, followed with their own sewer systems and clean water supplies through the 1860s–1880s. American cities lagged: New York began building a comprehensive sewer system in the 1860s; Chicago\'s sewer system, dramatically reversing the Chicago River\'s flow direction (1900), became an engineering marvel. The geographic spread of public sewer systems closely tracks the spread of germ theory acceptance and political capacity to finance infrastructure, larger, wealthier cities with stronger municipal governments built sewers first; smaller, poorer cities with weaker governments waited, and their populations continued to die from waterborne diseases in the interim.' }
+      { label: 'Industrial worker organization', detail: 'Trade unions, strikes, and worker parties developed where factory labor concentrated workers with shared grievances. Their effectiveness depended on legal recognition, collective discipline, and the willingness of governments or employers to negotiate rather than repress.' },
+      { label: 'Reform inside industrial states', detail: 'Factory laws, public education, sanitation, housing reform, and urban infrastructure were attempts to reduce industrial social costs without abandoning capitalism. Reform often combined humanitarian motives with fear of unrest and demand for healthier, more disciplined workers.' },
+      { label: 'Socialist and communist alternatives', detail: 'Marxist and socialist movements argued that class inequality was produced by ownership of the means of production. They differed from liberal reformers by questioning whether private industrial capitalism could be fixed at all.' },
+      { label: 'Ottoman and Qing modernization', detail: 'Industrial military pressure pushed Ottoman and Qing leaders toward military, administrative, technological, and educational reform. Tanzimat and Self-Strengthening efforts show both the urgency of modernization and the limits imposed by elite resistance, fiscal weakness, and foreign pressure.' }
     ]
   };
 
@@ -65,40 +65,41 @@
   };
 
   lesson.skillBuilder = {
-    label: 'Comparison practice',
-    title: 'Comparing Reactions to Industrial Capitalism: Labor Organizing vs. Reform Movements',
-    intro: 'Comparison for Topic 5.8 requires identifying both what labor organizing and reform movements share and where they fundamentally differed, and synthesizing what the comparison reveals about responses to industrial capitalism. The most common AP error is treating "reactions to industrialization" as a single category rather than identifying the specific differences in strategy, target, and ideology between labor organizing and broader reform movements.',
+    label: 'Comparison and causation practice',
+    title: 'Four Ways to React to Industrial Disruption',
+    intro: 'Topic 5.8 makes more sense when responses are sorted by what they were trying to change: workplace bargaining power, social conditions, the capitalist system itself, or the economic-military weakness of a state.',
     steps: [
-      { label: 'Identify a meaningful similarity', text: 'Similarity: Both trade union organizing and broader reform movements (abolitionism, public education, public health, temperance) responded to specific social dislocations that industrial capitalism created or intensified. Both used collective organization, meetings, petitions, political pressure, sometimes direct action, to change conditions that individuals could not change alone. Both drew on Enlightenment language about rights, dignity, and human welfare to make their claims. And both faced resistance from interests that benefited from the status quo: factory owners opposed unions; slaveholders opposed abolition; urban property owners sometimes opposed the costs of public health infrastructure; alcohol producers opposed temperance. The shared challenge was mobilizing collective political power against organized resistance from economically powerful interests.' },
-      { label: 'Identify a meaningful difference (scope and strategy)', text: 'Difference: Labor organizing and reform movements differed fundamentally in what they targeted and what they demanded. Labor organizing targeted the specific employment relationship: wages, hours, working conditions, and the right to collective bargaining. It challenged industrial capitalism directly, at the point of production, by organizing those with the most immediate stake in changing conditions, workers themselves. Reform movements, by contrast, targeted the social environment around industrial capitalism (education, sanitation, alcohol), often with middle-class leaders advocating on behalf of working-class populations rather than those populations organizing themselves. Temperance, for example, was largely a middle-class Protestant reform aimed at working-class behavior, not at the wages that made alcohol a tempting escape from industrial misery. The critical difference: labor organizing was adversarial to industrial capitalism at its core; most reform movements sought to manage and humanize capitalism\'s social consequences without challenging its fundamental structure.' },
-      { label: 'Write the synthesis statement', text: 'Synthesis: Comparing labor organizing and reform movements reveals that 19th-century industrial capitalism generated two distinct types of response: challenges to the structure of industrial production (labor organizing, and, at its limit, socialist politics) and efforts to manage or mitigate the social consequences of that structure (education reform, public health, temperance). Both were genuine reactions to real industrial-era suffering. But they had different political implications: labor organizing, if successful at scale, would have restructured the relationship between capital and labor; most reform movements stabilized industrial capitalism by addressing its most destabilizing social effects without questioning the underlying economic system. The history of 20th-century labor and social policy is largely a story of which type of reaction proved more durable, and in most Western democracies, the answer was: welfare-state reform rather than socialist structural transformation.' }
+      { label: 'Workers organize', text: 'Explain how unions, strikes, or political movements converted individual grievances into collective leverage. Use a named labor event or organization.' },
+      { label: 'Reformers regulate', text: 'Connect one industrial problem—child labor, disease, illiteracy, overcrowding—to a specific political, educational, public-health, or urban reform.' },
+      { label: 'Socialists challenge capitalism', text: 'Explain the Marxist diagnosis of class conflict and distinguish revolutionary socialism/communism from reforms that leave private capitalism in place.' },
+      { label: 'States modernize', text: 'Compare Ottoman and Qing responses to industrial powers. Identify what each tried to modernize and explain how elite resistance or foreign pressure limited reform.' }
     ],
-    prompt: 'In 3–4 sentences, compare trade union organizing and one other reform movement from the industrial era (options: abolitionism, public education reform, public health reform, temperance). Identify one meaningful similarity and one meaningful difference in how each movement responded to industrial capitalism. End with a synthesis: what does comparing these two responses reveal about the relationship between industrial capitalism and the reform movements that responded to it?'
+    prompt: 'Choose TWO different reactions to industrialization from worker organization, social reform, socialist/communist ideology, or Ottoman/Qing modernization. Explain the problem each response addressed, the mechanism it used, and one result or limit.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Labor Movement — Organizing, Strikes, and Suppression',
-      subtitle: 'Checks Learning Target 1 — trade unions, major strikes, and labor movement development.',
-      cardDesc: 'Legal framework, Great Railroad Strike 1877, Haymarket 1886, Pullman Strike 1894, AFL.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Explain why trade unions were illegal under early industrial-era law, what specific legal doctrine made collective bargaining a criminal act, and what assumptions about the employment relationship did this doctrine reflect? Then choose two of the three major labor events (Great Railroad Strike 1877, Haymarket affair 1886, Pullman Strike 1894) and explain: what did each event demonstrate about both workers\' collective power and the government\'s response? End with a synthesis: what does the pattern of labor organizing and government suppression in the 19th century reveal about whose interests the industrial-era state primarily served?',
+      title: 'Checkpoint 1: Organize and Reform',
+      subtitle: 'Checks Learning Targets 1–2 — worker organization and reform inside industrial societies.',
+      cardDesc: 'Unions, strikes, labor parties, factory law, education, sanitation, and urban reform.',
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
+      prompt: 'Explain how industrial workers used collective organization to improve their position. Use at least ONE specific union, strike, or political movement and explain how employers or governments responded. Then explain ONE political, social, educational, public-health, or urban reform and connect it to the specific industrial problem it was designed to address.',
       responseType: 'Checkpoint 1',
-      terms: ['Combination Acts', 'criminal conspiracy doctrine', 'trade union', 'collective bargaining', 'Great Railroad Strike', 'Haymarket affair', 'Pullman Strike', 'Eugene Debs', 'American Federation of Labor', 'May Day'],
-      focus: ['Explain the legal framework, what made unions illegal, and what assumptions did this reflect?', 'Explain two major strikes and what they demonstrated about power and government response.', 'Synthesize: whose interests did the industrial-era state serve?']
+      terms: ['trade union', 'collective bargaining', 'strike', 'Chartism', 'Great Railroad Strike', 'Haymarket', 'Pullman', 'Factory Act', 'public education', 'sanitation', 'public health', 'urban reform'],
+      focus: ['Use a specific worker organization or labor conflict.', 'Explain how collective action changed bargaining or political pressure.', 'Connect one named reform to a specific industrial problem.']
     },
     {
-      title: 'Checkpoint 2: Abolition and Reform Movements',
-      subtitle: 'Checks Learning Target 2 — abolitionism, education, public health, and temperance.',
-      cardDesc: 'British abolition 1833, Frederick Douglass, Cotton Famine, Forster Act, Chadwick, Bazalgette, WCTU.',
-      learningTargets: [lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: 'Explain the structural connection between industrial capitalism and American slavery, how were they economically linked through the cotton economy, and what did this connection mean for the abolitionist movement\'s political challenge? Then describe how two non-labor reform movements (choose two: public education reform, public health reform, temperance) addressed specific social dislocations created by industrialization. For each, explain: what specific industrial-era problem did this reform address, and what argument did reformers make for it? End with a synthesis: did these reform movements challenge industrial capitalism or stabilize it?',
+      title: 'Checkpoint 2: Replace or Modernize?',
+      subtitle: 'Checks Learning Targets 3–4 — socialism/communism and Ottoman/Qing modernization.',
+      cardDesc: 'Marx, class conflict, socialism, communism, Tanzimat, Self-Strengthening, and elite resistance.',
+      learningTargets: [lesson.learningTargets[2].target, lesson.learningTargets[3].target],
+      successCriteria: [lesson.successCriteria[2].criteria, lesson.successCriteria[3].criteria],
+      prompt: 'First explain why Marx and other socialists believed industrial capitalism produced structural class conflict, and distinguish a socialist/communist alternative from reforming capitalism. Then compare ONE Ottoman modernization effort with ONE Qing modernization effort. Explain the industrial or military pressure each state faced and one reason reform was limited or resisted.',
       responseType: 'Checkpoint 2',
-      skill: 'Causation',
-      terms: ['abolitionism', 'Baptist War', 'Frederick Douglass', 'Thirteenth Amendment', 'Cotton Famine', 'Forster Act', 'Edwin Chadwick', 'germ theory', 'Bazalgette sewer', 'WCTU'],
-      focus: ['Explain the structural connection between industrial capitalism and slavery through the cotton economy.', 'Describe two non-labor reform movements and their specific arguments and targets.', 'Synthesize: did reform movements challenge or stabilize industrial capitalism?']
+      skill: 'Comparison and causation',
+      terms: ['Karl Marx', 'socialism', 'communism', 'class conflict', 'means of production', 'Tanzimat', 'Ottoman Empire', 'Self-Strengthening Movement', 'Qing China', 'modernization', 'elite resistance'],
+      focus: ['Explain the Marxist/socialist critique, not just define socialism.', 'Use one specific Ottoman and one specific Qing reform effort.', 'Explain a concrete source of resistance or limitation in each modernization effort.']
     }
   ];
 
