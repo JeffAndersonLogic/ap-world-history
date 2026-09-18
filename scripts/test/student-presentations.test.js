@@ -25,7 +25,7 @@ for(const [label,pathName] of [['2.1','teacher/topic-2-1-story-os.html'],['2.2',
 }
 
 {
-  const {page,errors}=await localPage(browser,origin,'teacher/topic-2-2-os.html');await page.waitForSelector('#stage .slide');const index=await goToTeacherTitle(page,'Temüjin turns steppe warriors into a system');
+  const {page,errors}=await localPage(browser,origin,'teacher/topic-2-2-os.html');await page.waitForSelector('#stage .slide');const index=await goToTeacherTitle(page,'Chinggis Khan turns steppe warriors into a system');
   console.log('\n  Topic 2.2 Chinggis Museum composition');
   const g=await page.locator('.hero-slide').evaluate(el=>{const r=el.getBoundingClientRect(),c=el.querySelector('.copy').getBoundingClientRect();return{left:(c.left-r.left)/r.width,right:(c.right-r.left)/r.width,width:c.width/r.width};});
   check('2.2 organization slide places the text panel on the right half',g.left>0.5&&g.right<=1.01,`slide=${index+1} ${JSON.stringify(g)}`);

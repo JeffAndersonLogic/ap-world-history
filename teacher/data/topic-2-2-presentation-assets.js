@@ -30,7 +30,7 @@ if(!T.slides.some(s=>s.phase==='preflight')){
       ],
       ask:'What is the single historical significance argument I am proving today?',
       listenFor:'Mongol expansion changed states and the conditions of Eurasian connection, which increased movement and transfer.',
-      avoid:'Do not let cavalry, violence, or Genghis Khan become the whole lesson.'
+      avoid:'Do not let cavalry, violence, or Chinggis Khan become the whole lesson.'
     }
   });
 
@@ -85,6 +85,55 @@ if(whole){
   whole.notes.listenFor='Connection or transfer.';
 }
 
+
+if(whole&&!byTitle('Who were the Mongols?')){
+  const wholeIndex=T.slides.indexOf(whole);
+  const contextSlides=[
+    {
+      phase:'open',kind:'hero',eyebrow:'Context · Who Are the Mongols?',
+      title:'Who were the Mongols?',
+      subtitle:'Pastoral nomads of the Central Asian steppe.',
+      position:'lower-left',
+      visual:visual('2.2 - Steppes of Asia.jpg','Wide view of the Central Asian steppe used to establish the Mongol pastoral environment','Topic 2.2 classroom visual · Steppes of Asia'),
+      footer:'Herding · horses · mobility · kinship',
+      notes:{
+        minutes:2,
+        land:[
+          'Before students meet the empire, establish the people and environment.',
+          'Mongol communities lived primarily as mobile pastoralists on the Central Asian steppe, moving with herds rather than building life around dense settled cities.',
+          'Horses were central to transportation, herding, communication, wealth, and warfare.',
+          'Kinship and clan ties shaped political organization, but alliances and rivalries could shift. Chinggis Khan will turn that fragmented steppe world into a larger political and military system.'
+        ],
+        ask:'What skills would daily life on this landscape reward?',
+        listenFor:'Mobility, horsemanship, endurance, navigation across distance, cooperation, and adaptability.'
+      }
+    },
+    {
+      phase:'open',kind:'hero',eyebrow:'Context · Why the Steppe Matters',
+      title:'Steppe life shaped Mongol strengths.',
+      subtitle:'Mobility was a way of life before it became a military advantage.',
+      position:'right',
+      visual:visual('2.2 - Cinematic Mongol Archers.png','Historical reconstruction of Mongol mounted archers used to connect steppe life to military mobility','HISTORICAL RECONSTRUCTION — AI GENERATED'),
+      footer:'Environment -> horse culture -> mobility -> military potential',
+      notes:{
+        minutes:2,
+        land:[
+          'Connect environment to capability rather than treating Mongol military success as mysterious.',
+          'A mobile pastoral economy required skill with horses, movement across long distances, and flexible use of resources.',
+          'Mounted warfare and archery built on abilities that already mattered in steppe life.',
+          'The next slide is the pivot: Chinggis Khan did not invent steppe horsemanship; he organized existing strengths into a disciplined conquest system.'
+        ],
+        ask:'What is the difference between having skilled horsemen and having an empire-building army?',
+        listenFor:'Organization, command, discipline, coordination, shared objectives, and scalable systems.'
+      }
+    }
+  ];
+  T.slides.splice(wholeIndex+1,0,...contextSlides);
+  if(Array.isArray(T.flow)){
+    T.flow=T.flow.map(item=>({...item,slide:Number.isFinite(item.slide)&&item.slide>wholeIndex?item.slide+contextSlides.length:item.slide}));
+  }
+}
+
 const geo=byTitle('One empire becomes four Mongol states');
 if(geo){
   geo.kind='map';
@@ -93,7 +142,7 @@ if(geo){
   geo.visual=visual('2.2 - Map of the Khanates.png','Map of the four major Mongol successor khanates','Topic 2.2 classroom map · successor khanates');
 }
 
-const organization=byTitle('Temüjin turns steppe warriors into a system');
+const organization=byTitle('Chinggis Khan turns steppe warriors into a system');
 if(organization){
   organization.kind='hero';
   organization.eyebrow='Big Rock 1 · State Change · Build';
@@ -301,7 +350,7 @@ if(Array.isArray(T.flow)){
     const item=T.flow.find(x=>x.id===id);
     if(item)Object.assign(item,patch);
   };
-  patchFlow('open',{label:'Launch Theme + Big Rocks',range:'0–8',minutes:8,teacher:'Give the topic answer frame first: state change, connection, transfer.',students:'Write the three-part significance frame.'});
+  patchFlow('open',{label:'Launch Theme + Mongol Context',range:'0–8',minutes:8,teacher:'Give the three Big Rocks, then use the two context slides to establish who the Mongols were and why steppe life mattered.',students:'Write the three-part significance frame and connect steppe life to mobility.'});
   patchFlow('map',{label:'Big Rock 1: State Change',range:'8–13',minutes:5,teacher:'Use scale and successor khanates to frame build + fragmentation.',students:'Identify the state-change problem.'});
   patchFlow('first10',{range:'13–23',minutes:10,teacher:'Read only for evidence that fits the three Big Rocks.',students:'Sort evidence into state change, connection, or transfer.'});
   patchFlow('conquest',{label:'State Change: Build',range:'23–34',minutes:11,teacher:'Compress conquest into three mechanisms: organization, mobility, adaptation.',students:'Explain how each mechanism solved a conquest problem.'});

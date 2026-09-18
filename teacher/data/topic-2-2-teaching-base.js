@@ -128,7 +128,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'conquest', kind: 'hero', eyebrow: 'Build 1 · Organization',
-      title: 'Temüjin turns steppe warriors into a system.', subtitle: 'Coordination matters as much as horsemanship.',
+      title: 'Chinggis Khan turns steppe warriors into a system.', subtitle: 'Coordination matters as much as horsemanship.',
       visual: {
         url: '../assets/images/reconstructions/topic-2-2-mounted-archers.webp?v=production-v5',
         alt: 'Historical reconstruction of coordinated Mongol mounted archers on the steppe',
@@ -136,7 +136,7 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
-        land: ['Genghis Khan unified competing steppe groups and reorganized military loyalty around a larger command structure.', 'Organization reduced clan rivalry and allowed coordinated campaigns across large distances.'],
+        land: ['Chinggis Khan unified competing steppe groups and reorganized military loyalty around a larger command structure.', 'Organization reduced clan rivalry and allowed coordinated campaigns across large distances.'],
         ask: 'Why is organization a military technology?',
         listenFor: 'It improves coordination, obedience, communication, and scale.'
       }
