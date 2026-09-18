@@ -48,7 +48,7 @@ module.exports = {
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Section 01 is the legal frame, and it explains the tactics in every section after it. Section 02 is the three American strikes the success criteria name. Section 03 is the comparative question they pose. Section 04 is abolition and the other reform movements, which share a cause with the labor movement even though they look unrelated.`,
+    intro: `Sections 01–03 preserve the strong labor-movement analysis. Section 04 remains useful for reform, but Topic 5.8 also requires two additional responses to industrial power: Marxist/socialist/communist alternatives to capitalism and Ottoman/Qing attempts to modernize economies and militaries under foreign pressure. The closing cards make those missing branches explicit.`,
     steps: [
       `<b>01 Why organizing was a crime:</b> the Combination Acts, criminal conspiracy, and what that leaves a worker.`,
       `<b>02 Three strikes:</b> 1877, Haymarket 1886, Pullman 1894, and who broke them.`,
@@ -247,6 +247,16 @@ module.exports = {
     navLabel: 'Building a comparison',
     intro: `Each card is a full argument: the claim, the specific evidence, and the reason. The first explains most of the rest of the chapter, so start there.`,
     pairs: [
+      {
+        category: 'Ideology',
+        title: 'Marxism treats exploitation as structural, not as an abuse to regulate',
+        body: `For <span class="kt">Karl Marx</span> and Friedrich Engels, industrial poverty followed from the ownership structure of capitalism: the bourgeoisie owned the means of production while the proletariat had to sell labor for wages, so class interests were opposed even if every employer obeyed the law. That diagnosis separated revolutionary <span class="kt">socialism</span> and <span class="kt">communism</span> from reform movements. Factory legislation assumes capitalism can be improved through rules; Marxism argues that private ownership of the means of production reproduces exploitation and therefore must ultimately be replaced. The difference is a difference in diagnosis before it is a difference in tactics.`
+      },
+      {
+        category: 'State response',
+        title: 'Ottoman and Qing reformers modernized because industrial weakness had become military weakness',
+        body: `The <span class="kt">Ottoman Empire</span> used the Tanzimat reform program to reorganize administration, law, education and military institutions in a world increasingly dominated by industrial powers. In <span class="kt">Qing China</span>, the <span class="kt">Self-Strengthening Movement</span> built arsenals and shipyards, imported machinery and expertise, and promoted foreign-language and technical learning while trying to preserve the dynasty&rsquo;s political order. Both programs were responses to industrial and military pressure; both were limited by fiscal weakness, foreign intervention, bureaucratic conflict and <span class="kt">elite resistance</span>. Modernization required changing institutions, not simply purchasing a few Western weapons.`
+      },
       {
         category: 'Structure',
         title: 'A symmetrical rule between unequal parties is not neutral',
