@@ -262,7 +262,7 @@ const MODULE07_EVIDENCE = {
   '6.5': {
     prompt: 'Explain economic imperialism without conquest. Use at least two cards to show how a state could lose control of its own economy, and say what distinguishes this from colonial rule.',
     cards: [
-      picture('Buenos_Aires_Port.jpg', 'The port of Buenos Aires',
+      picture('Archivo_General_de_la_Nación_Argentina_1890_aprox_Buenos_Aires,_Puerto_de_Buenos_Aires.jpg', 'The port of Buenos Aires',
         'Photograph of the port built out with British capital, in a country that was never a colony.',
         'NOTICE the scale of the infrastructure and what it is built to move. INFER whose interests the layout serves. What does a port photograph not show about who owns it or who holds the debt?'),
       localMap('topic-6-5.svg', 'Economic imperialism and financial control',
@@ -306,9 +306,9 @@ const MODULE07_EVIDENCE = {
   '6.6': {
     prompt: 'Make a claim about what caused mass migration after 1750. Use at least two cards, separate a push from a pull, and explain what made the movement physically possible.',
     cards: [
-      picture('Indian_indenture_ship.jpg', 'An indenture ship',
-        'Photograph of a vessel carrying indentured labourers. The contract and the passage were parts of the same system.',
-        'NOTICE the conditions the vessel implies for a voyage of weeks. INFER what a recruiter would have to promise to fill it. What does the ship not tell you about what awaited at the other end?'),
+      picture('Indentured_Indian_workers.jpeg', 'An indenture ship',
+        'Historical artwork depicting indentured Indian workers aboard a sailing vessel. The contract and the passage were parts of the same system.',
+        'NOTICE what the artwork emphasizes about the voyage. INFER what a recruiter would have to promise to persuade workers to make it. What must be verified from contracts or passenger records rather than inferred from a modern reconstruction?'),
       localMap('topic-6-6.svg', 'Global migration flows after 1750',
         'BeHistorical reference map. Secondary geographic reconstruction of the major migration streams of the period.',
         'NOTICE which flows are voluntary, which are contracted, and which are coerced. INFER what the map is flattening by drawing them all as arrows. Which distinction matters most for causation?'),
@@ -675,13 +675,13 @@ const MEDIA = {
   },
   '6.5': {
     map: instructionalMap('6.5'),
-    photo: 'Buenos_Aires_Port.jpg', onCard: 1, onEvidence: 2,
+    photo: 'Archivo_General_de_la_Nación_Argentina_1890_aprox_Buenos_Aires,_Puerto_de_Buenos_Aires.jpg', onCard: 1, onEvidence: 2,
     photoTitle: 'The port of Buenos Aires',
     photoCaption: 'British capital financed Argentina\'s docks and railways. Economic imperialism could direct an economy without formal colonial rule.'
   },
   '6.6': {
     map: instructionalMap('6.6'),
-    photo: 'Indian_indenture_ship.jpg', onCard: 1, onEvidence: 2,
+    photo: 'Indentured_Indian_workers.jpeg', onCard: 1, onEvidence: 2,
     photoTitle: 'An indenture ship carrying Indian laborers',
     photoCaption: 'After abolition, plantations recruited indentured workers from India and China under contracts that limited pay, movement, and return.'
   },
