@@ -624,15 +624,15 @@ module.exports = {
     "showFooterNote": true,
     "headerSubtitle": "Topic 4.4, Maritime Empires Established &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "Building Empires at <em>Sea</em>",
-    "deck": "After 1500, European states began building empires across the globe, but \"empire\" meant different things to different powers. The Portuguese wanted to control trade routes; the Spanish wanted to conquer territory and extract resources; the Dutch and British wanted to make money through private commercial companies. These three models competed, overlapped, and transformed the world in different ways.",
+    "deck": "After 1500, expanding maritime trade changed state power and labor systems without erasing the older world it entered. European empires seized ports and territories, African states such as Kongo and Asante gained influence through new trading connections, Asian merchants kept Indian Ocean commerce moving, and colonial economies adapted old labor obligations while expanding new forms of coerced labor and slavery.",
     "skillTags": [
       "Causation",
       "Comparison",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track the differences between the three models of European maritime empire. The AP will ask you to compare, so you need to be able to articulate not just what each empire did, but what the specific logic was behind each model, what problem it was solving, and what made it different from the others.",
-      "readingTarget": "By the end, you should be able to explain the Estado da India (Portuguese trading post model), describe Spanish conquest and colonial administration (encomienda, viceroyalties), and explain the joint-stock company model (VOC, British EIC), and identify one meaningful similarity and one meaningful difference between any two of these."
+      "beforeYouRead": "Track continuity and change in four places: state power, Indian Ocean trade, labor systems, and slavery. The key question is not simply which European empire used which model; it is what changed when maritime empires expanded and what older systems continued.",
+      "readingTarget": "By the end, you should be able to explain how maritime trade increased the influence of European and African states, identify continuity in Indian Ocean trade, compare older and newer colonial labor systems, and explain how older forms of enslavement continued while plantation demand expanded Atlantic chattel slavery."
     },
     "vocabulary": [
       "Estado da India",
@@ -646,124 +646,66 @@ module.exports = {
       "Joint-Stock Company",
       "Batavia",
       "British EIC",
-      "Spice Islands"
+      "Spice Islands",
+      "Kingdom of Kongo",
+      "Asante",
+      "Intra-Asian Trade",
+      "Mit’a / Mita",
+      "Hacienda",
+      "Indentured Servitude",
+      "Plantation Economy",
+      "Chattel Slavery"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "A World of Existing Trade: What Europeans Entered",
+        "label": "State Building",
+        "heading": "Maritime Trade Creates New Opportunities for State Power",
         "blocks": [
-          {
-            "type": "p",
-            "html": "Before any European ship arrived in the Indian Ocean, one of the world's most sophisticated trade systems was already operating across it. <span class=\"kt\">Arab</span>, <span class=\"kt\">Indian</span>, <span class=\"kt\">Chinese</span>, <span class=\"kt\">Malay</span>, and <span class=\"kt\">Swahili</span> merchants had been trading spices, silk, cotton textiles, gold, and porcelain across the Indian Ocean for centuries. The seasonal <span class=\"kt\">monsoon winds</span>, blowing northeast in winter, southwest in summer, gave these sailors a reliable, predictable system for sailing across vast stretches of open water. The Swahili city-states of East Africa, the Sultanate of Malacca, the Calicut trade, and the spice-producing islands of the <span class=\"kt\">Maluku archipelago</span> were all nodes in a dense, profitable commercial network that functioned without European involvement."
-          },
-          {
-            "type": "p",
-            "html": "When the Portuguese arrived in the Indian Ocean after 1498, they did not \"discover\" this trade, they arrived as armed outsiders and forced their way into an existing system. The Portuguese had one advantage that mattered enormously: their <span class=\"kt\">heavily armed carracks</span> were the most powerful warships that had ever appeared in the Indian Ocean. Arab dhows, Chinese junks, and Indian trading vessels were built for cargo, not warfare. Portuguese carracks were built for both, and when they arrived at the ports of Calicut, Hormuz, and Malacca, they had the firepower to demand what they wanted."
-          },
-          {
-            "type": "p",
-            "html": "This context matters for understanding why the Portuguese model of empire looked the way it did, and why the Spanish, Dutch, and British models looked different. Each empire entered a different geographic and commercial context, with different tools and different goals. European maritime empires were not a single phenomenon but a range of strategies shaped by those specific contexts."
-          }
+          {"type":"p","html":"Portugal built the <span class=\"kt\">Estado da India</span> around fortified ports and sea lanes, while Spain conquered and governed large American territories. Dutch, French, and British maritime power also expanded. But expanding trade did not strengthen only European states."},
+          {"type":"p","html":"In Africa, participation in Atlantic commerce helped states such as the <span class=\"kt\">Kingdom of Kongo</span> and <span class=\"kt\">Asante</span> gain access to revenue, weapons, and new diplomatic relationships. The effects were uneven and could become destabilizing, but the important AP point is that maritime networks redistributed political opportunity."}
         ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Maritime empires did not emerge in empty space, they inserted themselves into existing trade networks, political systems, and societies. <strong>The Portuguese Estado da India was not a new trade system but an armed overlay on an existing one. The Spanish colonial empire conquered civilizations that had already organized millions of people. The Dutch VOC competed in markets that Arab and Chinese merchants had dominated for centuries.</strong> Contextualization requires understanding what already existed before European empires arrived.</p>"
-        }
+        "callout":{"label":"AP Thinking, Causation","raw":"<p>State growth followed a mechanism: <strong>access to trade -> access to revenue or strategic goods -> greater political influence</strong>. Apply that mechanism to both European and African cases.</p>"}
       },
       {
         "number": "2",
-        "label": "Key Concept",
-        "heading": "The Portuguese Trading Post Empire: Estado da India",
+        "label": "Continuity",
+        "heading": "Indian Ocean Trade Changes Without Being Replaced",
         "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">Estado da India</span>, \"State of India\", was Portugal's maritime empire in Asia and Africa. It was not a territorial empire in the way the Spanish or later British empires would be. Portugal was a small country with a population of roughly one million. It could not govern tens of millions of Asian subjects. What it could do was seize and fortify the strategic chokepoints through which the Indian Ocean's trade flowed, and extract profit from anyone who wanted to pass through them."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Afonso de Albuquerque</span>, the military architect of the Estado da India, identified three geographic chokepoints as the keys to Indian Ocean trade: <span class=\"kt\">Goa</span> on India's western coast (seized 1510), <span class=\"kt\">Malacca</span> at the strait between the Indian Ocean and the South China Sea (seized 1511), and <span class=\"kt\">Hormuz</span> at the entrance to the Persian Gulf (seized 1515). Whoever controlled these three points, with naval guns pointed at everything that passed, could extract tolls from the entire Indian Ocean system. Every ship that wanted to trade legally had to obtain a Portuguese <span class=\"kt\">cartaz</span> (trading license) and submit to inspection. Ships without a cartaz could be seized."
-          },
-          {
-            "type": "p",
-            "html": "The Estado da India worked, but it had structural weaknesses. It depended on maintaining naval superiority in waters thousands of miles from Portugal, with garrisons that were chronically understaffed and underfunded. It never achieved genuine control of Asian trade, Chinese and Arab merchants continued to operate throughout the Indian Ocean, often successfully evading Portuguese tolls. And when the <span class=\"kt\">Dutch VOC</span> arrived in the early 1600s with far greater financial resources and organizational capacity, the Portuguese could not match the competition. Within a generation, the Dutch had displaced the Portuguese across much of the Indian Ocean."
-          }
+          {"type":"p","html":"Portuguese and Dutch merchants disrupted parts of the Indian Ocean system by seizing ports, demanding passes, and attempting monopolies. Yet <span class=\"kt\">intra-Asian trade</span> continued to flourish."},
+          {"type":"p","html":"Gujarati, Omani, Swahili Arab, Javanese, Indian, Chinese, and other merchants kept moving goods through commercial networks that long predated European arrival. European armed commerce became an important new layer, but it did not erase the local knowledge, credit relationships, or regional demand that sustained Asian trade."}
         ],
-        "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>The Portuguese chose the trading post model for specific causal reasons: <strong>Portugal's small population made territorial governance of Asia impossible; the Indian Ocean's geographic structure (with key straits) made chokepoint control viable; and Portuguese naval technology (heavily armed carracks) gave them the firepower to coerce existing traders without needing to replace them.</strong> Causation requires explaining why a specific model was chosen, not just describing what it was.</p>"
-        }
+        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Change:</strong> Europeans inserted armed trading-post empires and monopoly pressure. <strong>Continuity:</strong> Asian, African, and Middle Eastern merchants continued to dominate much regional exchange.</p>"}
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "The Spanish Colonial Empire: Conquest and Administration",
+        "label": "Labor",
+        "heading": "Colonial Economies Adapt Old Labor and Expand New Systems",
         "blocks": [
-          {
-            "type": "p",
-            "html": "The Spanish model was fundamentally different: conquest and territorial governance of large populations. The <span class=\"kt\">Aztec Empire</span> (conquered 1521 by <span class=\"kt\">Hernán Cortés</span>) and the <span class=\"kt\">Inca Empire</span> (conquered 1532 by <span class=\"kt\">Francisco Pizarro</span>) were the two wealthiest and most populous states in the Western Hemisphere. Their conquest gave Spain control over millions of people and enormous mineral resources, but it also required governing those people, which the Portuguese in Asia had carefully avoided."
-          },
-          {
-            "type": "p",
-            "html": "Conquest was made possible by a combination of factors. Spanish military technology, steel weapons, horses, firearms, provided advantages. Indigenous alliances mattered enormously: the Tlaxcalans, enemies of the Aztec, fought alongside Cortés; the Inca were in the middle of a devastating civil war when Pizarro arrived. But the decisive factor was <span class=\"kt\">disease</span>. Smallpox and other epidemics preceded and accompanied conquest, killing an estimated 50–90% of the indigenous population. Military superiority alone could not have overthrown empires of tens of millions; disease did the decisive work."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">encomienda system</span> organized colonial labor: Spanish colonists were granted the right to the labor and tribute of a designated indigenous population. In practice, this was forced labor under conditions that caused mass death. The Dominican friar <span class=\"kt\">Bartolomé de las Casas</span> documented its abuses in his <em>Short Account of the Destruction of the Indies</em> (1542), demanding reform, and sparking the first significant European debate about the ethics of colonialism. The <span class=\"kt\">viceroyalties of New Spain</span> (established 1535) and <span class=\"kt\">Peru</span> (1542) provided a formal administrative structure, with royal appointees governing in the name of the Spanish crown. The <span class=\"kt\">Catholic Church</span>, through missionaries, convents, hospitals, and schools, served as the ideological institution of empire, converting souls and justifying colonial rule."
-          }
+          {"type":"p","html":"Colonial economies depended on agriculture and extraction, and rulers often adapted institutions that already existed. The Spanish colonial <span class=\"kt\">mita</span>, for example, drew on the Incan <span class=\"kt\">mit’a</span> labor obligation but redirected it toward colonial mining and imperial revenue."},
+          {"type":"p","html":"At the same time, colonial societies expanded or introduced systems such as <span class=\"kt\">encomienda</span>, hacienda labor, <span class=\"kt\">indentured servitude</span>, and chattel slavery. These systems differed legally, but all organized workers for agricultural or extractive production."}
         ],
-        "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>The Spanish and Portuguese models differed in almost every dimension: goal (territorial extraction vs. commercial chokepoint control), method (conquest and governance vs. naval coercion), scale (millions of subjects vs. fortified ports), and institutional structure (viceroyalties, Church vs. feitorias and cartaz system). <strong>A strong comparison argument explains WHY the differences existed, Portugal's small population and Asia's geographic structure made the trading post model rational; Spain's crusading institutions and the Americas' wealth made territorial conquest rational.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Comparison","raw":"<p>Compare labor systems by the same variables: who owed labor, for how long, under what legal status, and who captured the output.</p>"}
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "The Northern Challenge: Joint-Stock Companies",
+        "label": "Slavery",
+        "heading": "Older Enslavement Continues as Atlantic Plantation Slavery Expands",
         "blocks": [
-          {
-            "type": "p",
-            "html": "By c. 1600, the Dutch, British, and French had entered the competition for global trade, and they introduced a new organizational model: the <span class=\"kt\">joint-stock company</span>. Instead of the royal treasury funding voyages directly, joint-stock companies sold shares to private investors who shared in both profits and losses. This allowed far more capital to be mobilized than any single state could provide, and it spread the financial risk of extremely expensive and dangerous long-distance trade among hundreds or thousands of investors."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">Dutch East India Company</span> (<span class=\"kt\">VOC</span>, founded 1602) was the most powerful expression of this model. Given a monopoly on Dutch trade east of the Cape of Good Hope, the VOC had its own army, navy, and the legal authority to sign treaties, wage war, and govern territories, powers normally reserved for sovereign states. Its headquarters at <span class=\"kt\">Batavia</span> (modern Jakarta, established 1619) controlled the <span class=\"kt\">Spice Islands</span> (Maluku archipelago), the source of cloves and nutmeg. The VOC displaced the Portuguese from much of the Indian Ocean within a generation, using superior capital and organizational efficiency rather than just military force."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">British East India Company</span> (EIC, founded 1600) established trading posts at <span class=\"kt\">Surat, Madras, Bombay</span>, and <span class=\"kt\">Calcutta</span>. Over the 17th and 18th centuries, what began as a commercial operation gradually acquired territorial and military power, eventually becoming the governing authority over much of the Indian subcontinent by the mid-18th century. The joint-stock model had produced an empire almost without planning for it: the commercial logic of the company continually pushed it to acquire more territory to protect its commercial interests."
-          }
+          {"type":"p","html":"Enslavement in Africa did not begin with the Atlantic system. Older forms continued, including incorporation of enslaved persons into households and export through Mediterranean and Indian Ocean routes."},
+          {"type":"p","html":"The major change was the scale and destination of forced migration. Expanding <span class=\"kt\">plantation economies</span> in the Americas created enormous demand for enslaved African labor and strengthened hereditary, racialized <span class=\"kt\">chattel slavery</span>."}
         ],
-        "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was the joint-stock company model fundamentally different from the Portuguese and Spanish models, or just a variation? A strong argument considers: <strong>All three models aimed to profit from global trade, but joint-stock companies used private capital rather than state funds, spread risk among shareholders rather than concentrating it in the crown, and were explicitly organized around commercial profit rather than religious mission or territorial sovereignty.</strong> These differences matter for how the empires behaved, a company optimizing shareholder returns will make different choices than a monarch pursuing religious conversion or territorial glory.</p>"
-        }
+        "callout":{"label":"Common Mistake to Avoid","raw":"<p>Do not write that slavery was invented after 1500. Explain both continuity in older forms of enslavement and change in the scale, destination, and racialization of Atlantic plantation slavery.</p>"}
       }
     ],
-    "takeaway": "European maritime empires after c. 1500 took three distinct forms. The <strong>Portuguese Estado da India</strong> controlled trade through fortified ports at key straits and chokepoints, commercial coercion without territorial conquest. The <strong>Spanish colonial empire</strong> conquered and governed large territories, using the encomienda system for forced labor and viceroyalties for administration, territorial extraction enabled by disease and indigenous alliances. The <strong>Dutch/British/French joint-stock companies</strong> mobilized private capital to fund commercial empire, spreading financial risk among shareholders and blurring the line between corporation and colonial state. All three competed for control of the same profitable Asian and Atlantic trade networks, and their competition shaped the global economy of c. 1450–c. 1750.",
+    "takeaway": "Topic 4.4 is a continuity-and-change story. Maritime expansion increased the influence of European empires and also created opportunities for African states such as Kongo and Asante. Portuguese and Dutch intrusion disrupted Indian Ocean commerce, but intra-Asian trade and merchants such as Gujaratis, Omanis, Swahili Arabs, and Javanese continued. Colonial economies adapted older labor systems such as the Incan mit’a while expanding encomienda, hacienda, indentured servitude, and chattel slavery. Older forms of enslavement continued in Africa and the Indian Ocean world, while plantation demand dramatically expanded Atlantic slavery.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Three AP Skills",
     "questions": [
-      {
-        "num": "1",
-        "skill": "Causation",
-        "text": "Explain why the Portuguese chose the trading post model (Estado da India) rather than territorial conquest in Asia. Identify at least two specific factors, geographic, demographic, or military, that made the trading post model more rational than territorial governance for Portugal.",
-        "placeholder": "Explain the causal logic behind the Estado da India model..."
-      },
-      {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare the Spanish and Portuguese models of empire. Identify one meaningful similarity and one meaningful difference. Then explain WHY the difference existed, what specific factors caused Portugal and Spain to build different kinds of empires?",
-        "placeholder": "Identify a similarity and a difference, then explain why the difference existed..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Was the joint-stock company model (Dutch VOC, British EIC) a fundamentally new approach to empire, or was it just a variation on existing European models? Write a one-sentence claim taking a position, then provide one specific piece of evidence that supports your argument.",
-        "placeholder": "State your claim, then provide specific evidence..."
-      }
+      {"num":"1","skill":"Causation","text":"Explain how expanding maritime trade increased the influence of ONE European empire and ONE African state such as Kongo or Asante.","placeholder":"The European state gained influence because... The African state gained influence because..."},
+      {"num":"2","skill":"Continuity & Change","text":"Explain one change and one continuity in Indian Ocean trade after European arrival. Use a specific merchant group or trade pattern as evidence for the continuity.","placeholder":"One change was... One continuity was... It persisted because..."},
+      {"num":"3","skill":"Continuity & Change","text":"Explain one continuity and one change in labor or slavery after 1500. Use at least two specific systems such as mit’a/mita, encomienda, hacienda, indentured servitude, older African enslavement, or plantation chattel slavery.","placeholder":"A continuity was... A change was... Evidence: ..."}
+
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
