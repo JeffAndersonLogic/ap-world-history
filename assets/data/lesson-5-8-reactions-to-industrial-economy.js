@@ -37,27 +37,47 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how workers organized through trade unions, strikes, and political parties to improve wages and working conditions, and analyze how government and employer responses, including violent suppression, shaped the development of the labor movement in Britain and the United States.",
+      target: "I can explain how industrial workers organized through unions, strikes, and political movements to improve wages, hours, working conditions, and political influence.",
       kc: "KC-5.1.V.A",
       theme: "Social Interactions and Organization"
     },
     {
-      target: "I can explain how abolitionism challenged slavery's structural connection to the industrial cotton economy, and how reform movements, including public education, public health reform, and temperance, responded to the social dislocations of industrialization.",
+      target: "I can explain how governments, organizations, and reformers responded to industrial problems through political, social, educational, public-health, and urban reforms.",
       kc: "KC-5.1.V.D",
       theme: "Social Interactions and Organization"
+    },
+    {
+      target: "I can explain how Marxism, socialism, and communism developed as ideological reactions to industrial capitalism and how they differed from reformist approaches.",
+      kc: "KC-5.3.IV.A.ii",
+      theme: "Social Interactions and Organization"
+    },
+    {
+      target: "I can compare Ottoman and Qing reform efforts to modernize economies and militaries in response to expanding industrial powers, including resistance from established elites.",
+      kc: "KC-5.1.V.B",
+      theme: "Governance"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can explain why trade unions were illegal under early industrial-era law (Combination Acts in Britain; criminal conspiracy doctrine in the US) and how this legal framework shaped what forms of collective action were available to workers. I can describe three specific labor events and their significance: the Great Railroad Strike of 1877 (first major US labor uprising, broken by state and federal troops); the Haymarket affair of 1886 (bomb at eight-hour workday rally, used to criminalize labor radicalism); and the Pullman Strike of 1894 (nationwide solidarity strike broken by federal troops, Eugene Debs imprisoned). I can explain how the American Federation of Labor (1886) chose 'pure and simple unionism' over political radicalism, and why. I can compare British and American labor movements: why did Britain develop a Labour Party while the United States did not?",
+      criteria: "I can use at least two specific labor examples—such as trade unions, collective bargaining, Chartism, the Great Railroad Strike, Haymarket, Pullman, or the AFL—to explain how workers built collective power and how governments or employers responded.",
       kc: "KC-5.1.V.A",
       theme: "Social Interactions and Organization"
     },
     {
-      criteria: "I can explain the structural connection between industrial capitalism (specifically the textile industry) and American slavery through the cotton economy, and how abolitionists used this connection in their arguments. I can describe the British abolition of slavery (1833, effective 1838) and the role of the abolitionist movement and the 1831–32 Baptist War. I can explain how the American Cotton Famine (1861–1865) forced British textile mills to diversify cotton sources, restructuring global cotton supply chains. I can give at least two examples of industrial-era reform movements beyond labor and abolitionism (public education reform, Forster Act 1870, mandatory schooling; public health reform, Edwin Chadwick's 1842 report, germ theory, Great Stink/Bazalgette sewers; temperance, WCTU 1874) and explain the connection between each reform and the social dislocations of industrialization.",
+      criteria: "I can explain at least two reform responses to industrial social problems, such as factory legislation, expanded education, sanitation/public health, housing or urban infrastructure, and connect each reform to the industrial condition it addressed.",
       kc: "KC-5.1.V.D",
       theme: "Social Interactions and Organization"
+    },
+    {
+      criteria: "I can explain Marx's class-conflict critique of capitalism, identify a socialist or communist alternative to private industrial capitalism, and distinguish revolutionary socialism from reformist efforts to improve capitalism.",
+      kc: "KC-5.3.IV.A.ii",
+      theme: "Social Interactions and Organization"
+    },
+    {
+      criteria: "I can compare one Ottoman reform effort and one Qing reform effort, explain the industrial/military pressure each state faced, and explain how resistance from officials or established elites limited reform.",
+      kc: "KC-5.1.V.B",
+      theme: "Governance"
     }
   ],
 
@@ -89,54 +109,64 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Rising Up: Labor, Abolition, and Reform in the Industrial Era",
-    intro: "Industrialization created the conditions for some of the most powerful social movements in modern history. Workers who had no individual bargaining power discovered collective power, and paid for it with arrests, beatings, and deaths. Abolitionists who challenged slavery's deep structural connection to industrial capitalism eventually prevailed, in Britain in 1833, in the United States in 1865, after decades of organizing and, in the American case, a catastrophic civil war. Reformers who confronted the sanitation disaster of industrial cities saved millions of lives by building sewers. Understanding Topic 5.8 means understanding that the industrial age was not simply imposed on people, it was contested, reformed, and resisted, with real consequences.",
+    title: "Reactions to Industrial Capitalism: Organize, Reform, Replace, Modernize",
+    intro: "Industrialization generated more than factories and growth. It created harsh labor conditions, crowded cities, new class conflict, and a widening power gap between industrial and nonindustrial states. Topic 5.8 is the response topic: workers organized, reformers tried to fix industrial society, socialists proposed alternatives to capitalism, and vulnerable states tried to modernize before industrial powers overwhelmed them.",
     videos: [],
     segments: [
       {
-        title: "The Labor Movement: From Illegal Conspiracy to Political Power",
+        title: "Workers Organize: Unions, Strikes, and Political Movements",
         bullets: [
-          "**The legal framework workers faced**: In Britain, the **Combination Acts** (1799, 1800) made it illegal for workers to combine to demand higher wages or better conditions, trade unions were criminal conspiracies. In the United States, courts used the common law doctrine of criminal conspiracy to prosecute union organizers through most of the 19th century. The legal framework treated employment as a free contract between individuals: any collective action to change that contract was coercion. This was not neutral law, it treated the grossly unequal power relationship between a factory owner and an individual worker as if they were equals negotiating freely, while making collective equalization of that power illegal.",
-          "**Britain's path**: The Combination Acts were repealed in 1824, legalizing union organizing, though courts continued to restrict strike action. **Craft unions**, organizing skilled workers by trade, grew through the 1850s–1870s. The **Trades Union Congress** (TUC, 1868) created a national federation. By the 1880s–1890s, 'new unionism' organized less-skilled workers in docks, gas works, and general labor. The **Dockers' Strike of 1889**, won after enormous public sympathy and a five-week stoppage, demonstrated unskilled workers' collective power. The **British Labour Party** (1900) grew from TUC support for parliamentary candidates; by 1906, it had 29 MPs. Britain's path to labor political power ran through the trade union movement and eventually produced a Labour government in 1924.",
-          "**The Great Railroad Strike (1877)** was the first major labor uprising in the United States. Railroad workers walked off the job across multiple states in response to a 10% wage cut, the second cut in a year, by the Baltimore & Ohio Railroad. The strike spread to the Pennsylvania, Erie, and New York Central railroads within days, paralyzing rail traffic in a dozen states. State militias were called in; in Pittsburgh, militia fired on crowds, killing more than 20 people. President Hayes deployed federal troops, the first significant use of federal military force against domestic labor action. The strike was broken after two weeks. Its significance: it demonstrated workers' ability to shut down the industrial economy, and it demonstrated the government's willingness to use military force to protect railroad company property.",
-          "**The Haymarket affair (1886)** began as a rally in Chicago's Haymarket Square in support of an eight-hour workday, called the day after police killed two workers at a strike at the McCormick Reaper Works. As police advanced on the crowd, someone threw a bomb; seven police officers were killed, along with four workers. Eight anarchist labor organizers, only one of whom was even present at the rally, were tried for murder in a proceeding widely condemned as unjust; four were hanged. **Haymarket** became a defining moment: for labor radicals, the four executed men were martyrs; for employers and governments, the affair confirmed that union organizing led to violence and must be suppressed. **International Workers' Day (May Day)** was established in 1889 by the Second International to commemorate the Haymarket events, it became a global labor holiday observed everywhere except the United States and Canada.",
-          "**The Pullman Strike (1894)**: After the Pullman Palace Car Company cut wages during the depression of 1893 without reducing rents in its company-owned town, workers went on strike. Eugene Debs's American Railway Union organized a nationwide boycott: members refused to handle any train with Pullman cars. Railroad traffic across the Midwest stopped. President Cleveland, over the objection of the Illinois governor, sent federal troops; a federal judge issued an injunction against the boycott. Debs was imprisoned for contempt of court. After his release, he read widely in socialist literature and concluded that reform within capitalism was insufficient, he became the Socialist Party of America's presidential candidate in 1900, 1904, 1908, 1912, and 1920. The Pullman Strike demonstrated that 'pure and simple unionism' within capitalism was vulnerable to federal power, a lesson that pushed some labor activists toward political radicalism."
+          "Industrial workers had little bargaining power as individuals, so they built **collective power** through trade unions, strikes, mutual-aid societies, and political movements. Their central demands were higher wages, shorter hours, safer conditions, and eventually greater political representation.",
+          "Employers and governments often treated collective action as dangerous or illegal. Britain’s Combination Acts and American conspiracy doctrines restricted unions; major confrontations such as the Great Railroad Strike, Haymarket, and Pullman showed that states could use police, courts, or troops against organized labor.",
+          "The key AP mechanism is: **industrial conditions -> worker organization -> pressure on employers/governments -> partial reform, repression, or political mobilization**."
         ],
         image: {
-          title: "Power-loom weaving, 1835",
-          caption: "The factory floor is where the labor movement began: shared hours, shared grievances, and enough workers in one room to organize.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg"
+          title: "Workers and mass political organization",
+          caption: "Industrial workers increasingly used collective action to turn economic grievances into political demands.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/William_Edward_Kilburn_-_View_of_the_Great_Chartist_Meeting_on_Kennington_Common_-_Google_Art_Project.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:William_Edward_Kilburn_-_View_of_the_Great_Chartist_Meeting_on_Kennington_Common_-_Google_Art_Project.jpg"
         }
       },
       {
-        title: "Abolitionism and the Industrial Cotton Connection",
+        title: "Reform the System: Labor Law, Education, and Public Health",
         bullets: [
-          "**The structural connection between industrial capitalism and slavery**: The textile mills of Lancashire and the cotton mills of Lowell, Massachusetts, ran on American cotton. In 1850, cotton was the United States' largest export, providing two-thirds of American export earnings. This cotton was grown by enslaved people on Southern plantations. The Industrial Revolution in Britain and the expansion of American slavery were not separate phenomena, they were parts of the same economic system. British industrialists who bought American cotton knew it was produced by enslaved labor; the question abolitionists forced was whether that knowledge created moral responsibility.",
-          "**The Baptist War (1831–32)**, also called the Sam Sharpe Rebellion, was the largest slave revolt in British Caribbean history: approximately 60,000 enslaved people in Jamaica, led by a Baptist deacon named Sam Sharpe, organized a general strike that escalated into armed resistance. British forces suppressed it; 14 white colonists and approximately 500 enslaved people were killed, with hundreds more executed afterward. The rebellion's significance for British abolition: it demonstrated that the slave system was inherently unstable and that enslaved people were actively resisting their condition. Combined with the abolitionist movement's political organizing, 1.3 million petition signatures presented to Parliament in 1833, the Baptist War helped produce the **Slavery Abolition Act of 1833**, which abolished slavery throughout most of the British Empire (effective 1838). Crucially, the Act included **£20 million in compensation to slaveholders**, not to formerly enslaved people.",
-          "**Frederick Douglass**, born into slavery in Maryland, escaped in 1838, became the most powerful public voice of the American abolitionist movement. His autobiography (Narrative of the Life of Frederick Douglass, 1845) was one of the most widely read books of the 19th century. Douglass was a brilliant rhetorician: his famous speech 'What to the Slave is the Fourth of July?' (1852) systematically dismantled the contradiction between American revolutionary ideals and American slavery. Douglass worked with William Lloyd Garrison (publisher of The Liberator), Sojourner Truth, and Harriet Tubman. When the Civil War began, Douglass immediately understood its potential as an emancipation war and lobbied Lincoln to make abolition its explicit goal, which Lincoln eventually did with the Emancipation Proclamation (1863) and the Thirteenth Amendment (1865).",
-          "**The Cotton Famine (1861–1865)**: The Union naval blockade of Confederate ports during the Civil War cut off American cotton to British mills. The **Lancashire Cotton Famine**, as British workers experienced it, put approximately 500,000 textile workers out of work, with millions more affected. In a remarkable political moment, Lancashire workers held public meetings declaring their support for the Union cause and opposing Confederate recognition, even at the cost of their own employment. Their calculation: recognizing the Confederacy would mean prolonging slavery; they would not do it. Abraham Lincoln wrote a letter of thanks to the workers of Manchester in 1863, calling their stand 'an instance of sublime Christian heroism which has not been surpassed in any age or in any country.' The Cotton Famine forced British mills to diversify cotton sources, turning to Egypt, India, and eventually other regions, which restructured global cotton supply chains and transformed the agricultural economies of Egypt and India in ways that shaped those countries for decades."
+          "Some governments and reformers tried to **improve industrial society without abolishing capitalism**. Factory legislation restricted child labor and working hours; expanded public education aimed to create literate citizens and workers; sanitation projects addressed epidemics and overcrowded cities.",
+          "Urban public-health campaigns grew from the realization that disease did not stay confined to poor neighborhoods. Sewer systems, clean-water projects, housing rules, and municipal infrastructure turned industrial social problems into matters of public policy.",
+          "These reforms had mixed motives: humanitarian concern mattered, but governments also wanted social stability, healthier workers, reduced unrest, and more orderly cities."
         ],
         image: {
-          title: "Abolition and the industrial cotton connection",
-          caption: "BeHistorical topic artwork for this card. Britain abolished the slave trade while its mills ran on cotton grown by enslaved people in the American South.",
-          url: "",
-          sourceUrl: ""
-        }
-      },
-      {
-        title: "Reform Movements: Education, Public Health, and Temperance",
-        bullets: [
-          "**Public education reform**: Industrial capitalism both created the conditions that made child labor common and generated the arguments for eliminating it. Factory commissioners' reports documenting children working from age five, and parliamentary acts limiting and eventually prohibiting child factory labor, created pressure for alternatives. Where would children be if not in factories? Schools. **Britain's Education Act of 1870** (the **Forster Act**) established publicly funded elementary schools wherever church schools were inadequate; subsequent legislation (1880) made attendance compulsory for children aged 5–10; the 1891 act made state elementary schools free. In the United States, Massachusetts was the first state to require school attendance (1852); by 1918, all states had compulsory education laws. The argument for mandatory education combined humanitarian concern (children should learn, not work) with industrial-era economic logic (an industrial economy needed workers who could read safety instructions, do basic arithmetic, and follow written rules) and political logic (democratic governments needed literate citizens).",
-          "**Public health reform** emerged from the catastrophic sanitation conditions of industrial cities. Before germ theory, no one understood that cholera, typhoid, and other epidemic diseases spread through contaminated water. Edwin Chadwick's **Report on the Sanitary Condition of the Labouring Population of Great Britain** (1842) documented the direct empirical connection between poor sanitation and early death, even without understanding the mechanism: working-class districts with no sewers had dramatically shorter life expectancies than middle-class districts with better drainage. The average age of death for laborers in Liverpool was 15; for gentry in nearby rural areas, 35. Chadwick argued that good drainage would save money (by reducing disease-related poverty) even before humanitarian arguments convinced anyone.",
-          "**The Great Stink (1858)**: A heat wave in the summer of 1858 caused the Thames, London's primary water source and primary sewer, to produce odors so powerful that Parliament, meeting on the riverbank, was nearly unable to function. Members of Parliament fled meetings with handkerchiefs soaked in chloride of lime pressed to their faces. The direct experience of the smell of London's waste water, by the people with political power to fund a solution, produced immediate legislative action. Civil engineer Joseph Bazalgette's sewer system, 1,100 miles of sewers carrying waste away from the Thames, was authorized and funded. When it was completed (1875), cholera deaths in London fell dramatically. Germ theory (Pasteur, Koch, 1860s–1870s) later provided the scientific explanation for what Chadwick and Bazalgette had documented empirically: sanitation prevented disease because bacteria in contaminated water caused it. Public sewer systems and clean water supplies spread through industrial cities across Europe and North America through the late 19th and early 20th centuries, producing the most dramatic sustained decline in urban mortality in human history.",
-          "**The temperance movement** was one of the largest mass movements of the industrial era, especially in the United States, where the **Women's Christian Temperance Union** (WCTU, founded 1874) became the largest women's organization in 19th-century America. Temperance advocates argued that alcohol consumption destroyed working-class family life: wages spent on drink rather than food; husbands returning home violent; children neglected. The argument had force in an era when industrial wages were low, working hours long, and alcohol cheap, and when legal protections for women and children in the household were minimal. The WCTU, under Frances Willard's leadership, expanded its mission beyond temperance to women's suffrage, labor reform, and social welfare, making 'Do Everything' its motto. The temperance movement ultimately achieved prohibition in the United States (Eighteenth Amendment, 1919), a significant policy win that also proved deeply problematic in practice, fueling organized crime and eventually being repealed (Twenty-First Amendment, 1933)."
-        ],
-        image: {
-          title: "A Court for King Cholera, Punch, 1852",
-          caption: "Public-health reform grew directly out of scenes like this one: reformers argued that epidemics were a policy failure, not fate.",
+          title: "Industrial public-health reform",
+          caption: "Sanitation reform turned the costs of industrial urbanization into a problem governments could no longer ignore.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png"
+        }
+      },
+      {
+        title: "Replace the System: Marx, Socialism, and Communism",
+        bullets: [
+          "**Karl Marx and Friedrich Engels** argued that industrial capitalism was built on class conflict between owners of the means of production and workers who sold their labor. In this view, exploitation was structural, not an accidental abuse that a few reforms could remove.",
+          "Socialist thinkers proposed greater collective or public control over production and a more equal distribution of wealth. Marxist communism predicted that class conflict would eventually produce proletarian revolution and the abolition of private ownership of the means of production.",
+          "This creates a crucial comparison: **reformers asked how capitalism could be improved; revolutionary socialists asked whether capitalism itself was the problem**."
+        ],
+        image: {
+          title: "Industrial inequality and class conflict",
+          caption: "Socialist critiques grew from the visible contrast between industrial wealth and working-class poverty.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_1843_-_Reichtum_und_Armut.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch_1843_-_Reichtum_und_Armut.png"
+        }
+      },
+      {
+        title: "Modernize the State: Ottoman and Qing Reform",
+        bullets: [
+          "Industrial power also created an international problem. The **Ottoman Empire** and **Qing China** faced militarily stronger industrial states and responded with attempts to modernize armies, administration, education, technology, and selected industries.",
+          "Ottoman reform efforts such as the Tanzimat reorganized law, administration, military institutions, and education. Qing reformers pursued military and technological strengthening through efforts such as the Self-Strengthening Movement.",
+          "Reform was constrained by **established elites, bureaucratic resistance, fiscal weakness, political conflict, and foreign pressure**. Topic 5.8 therefore includes both social reactions inside industrial societies and state modernization responses outside the first industrial core."
+        ],
+        image: {
+          title: "Industrial pressure and modernization responses",
+          caption: "Ottoman and Qing reformers tried to strengthen states without surrendering political control to industrial powers.",
+          url: "../assets/images/instructional-maps/topic-5-8.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-8.svg"
         }
       }
     ]
