@@ -2,7 +2,39 @@
 
 **Audit baseline:** AP World History: Modern Course and Exam Description, Effective Fall 2026  
 **Audit model:** BeHistorical Course Audit Standard, calibrated against the certified Unit 2 reference implementation.  
-**Status:** Diagnostic complete; repair not yet certified.
+**Status:** **REPAIRED AND CERTIFIED — 2026-09-18.**
+
+## Repair certification — 2026-09-18
+
+Unit 4 has been repaired against the protected Fall 2026 instructional spine in this audit. The repair was completed at branch `repair-unit-4-ced-alignment` and validated before merge.
+
+### Final certification gates
+
+| Gate | Result | Evidence |
+|---|---|---|
+| CED Coverage | **PASS** | Locked `ced-unit4-contract` verifies canonical/runtime KC coverage and required evidence for Topics 4.1–4.8. |
+| Instructional Coherence | **PASS** | Locked Unit 4 coherence contract verifies lesson, First & 10, Deep Reading, checkpoints, and BeInTheRoom traceability. |
+| Assessment Alignment | **PASS** | Topic checkpoints were rewritten where needed to assess the actual protected topic jobs rather than adjacent-topic enrichment. |
+| Technical Integrity | **PASS** | Exact-head offline suite: **23/23 passed**; exact-head browser contracts: **PASS** for modal focus/lightbox/confidence/Skills Lens and student-deck/teacher-readability contracts. |
+| Manual Instructional Review | **PASS** | Repaired targets, lecture spines, readings, and checkpoints were reviewed topic-by-topic against the protected spine below. |
+
+**Validated head before this certification note:** `0c7101914823841803c52a5e3778865034bff70a`  
+**Validation workflow:** run `35293850837` — offline tests **success**, browser contracts **success**.
+
+### Certified repair outcomes
+
+- **4.1:** centers cross-cultural diffusion of Classical/Islamic/Asian knowledge, navigation tools, ship design, and wind/current knowledge.
+- **4.2:** preserves state sponsorship and economic cause/effect across Portuguese, Spanish, English, French, and Dutch exploration; the 1453 causal shortcut is qualified.
+- **4.3:** remains a Columbian Exchange topic: plants, animals, disease vectors/diseases, foods carried by enslaved Africans, and demographic/nutritional/environmental effects.
+- **4.4:** protects maritime state expansion, Kongo/Asante, Indian Ocean continuity, labor-system continuity/change, and slavery continuity/change.
+- **4.5:** explicitly teaches and assesses the four required moves: economic strategy -> exchange-network continuity/change -> social effects -> belief-system effects.
+- **4.6:** removes the adjacent European-rivalry branch and assesses local resistance plus organized resistance by enslaved people.
+- **4.7:** protects accommodation/suppression of diversity, formation of new elites/casta, and changing power of existing elites.
+- **4.8:** is rebuilt around Learning Objective N: **economic developments -> effects on social structures over time**, using Unit 4 evidence for continuity-and-change argumentation.
+
+### Generated surfaces regenerated from source
+
+The repair also regenerated the Unit 4 First & 10 pages, affected Deep Readings, Unit 4 eBook, and Socrates course spine from their authored source models. The Unit 4 First & 10 rewrite is protected by an exact Git-blob review guard so later source edits cannot silently move the accepted baseline.
 
 ## Executive finding
 
