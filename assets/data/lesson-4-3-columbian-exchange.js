@@ -48,7 +48,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       target: "I can explain the two-way biological and environmental consequences of the Columbian Exchange, including disease vectors and diseases, Afro-Eurasian crops and animals introduced to the Americas, foods carried by enslaved Africans, and the nutritional effects of American crops in Afro-Eurasia.",
-      kc: 'KC-4.1.V',
+      kc: 'KC-4.1.V; KC-4.1.V.C; KC-4.1.V.D',
       theme: "Humans and the Environment"
     }
   ],
@@ -66,7 +66,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       criteria: "I can identify disease vectors as well as diseases, explain at least two Old World-to-Americas transfers including a crop, animal, or food carried by enslaved Africans, and explain how American staple crops affected nutrition or population in Afro-Eurasia.",
-      kc: 'KC-4.1.V',
+      kc: 'KC-4.1.V; KC-4.1.V.C; KC-4.1.V.D',
       theme: "Humans and the Environment"
     }
   ],
