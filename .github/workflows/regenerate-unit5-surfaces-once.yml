@@ -1,5 +1,5 @@
 name: Regenerate Unit 5 Surfaces Once
-# retry after source syntax repair
+# retry after source boundary repair
 on:
   push:
     branches:
