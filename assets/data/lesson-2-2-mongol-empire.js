@@ -100,6 +100,12 @@ window.BEHISTORICAL_LESSON = {
         url: 'https://youtu.be/KHJLZBXUyzo',
         youtubeId: 'KHJLZBXUyzo',
         prompt: 'Track four moves: state building, fragmentation, exchange, and cultural or technological transfer.'
+      },
+      {
+        title: 'The Rise and Fall of the Mongol Empire — Anne F. Broadbridge',
+        url: 'https://youtu.be/wUVvTqvjUaM',
+        youtubeId: 'wUVvTqvjUaM',
+        prompt: 'Use this five-minute overview to reinforce how the Mongols rose from the steppe, built a vast empire, and eventually fragmented into regional khanates.'
       }
     ],
     segments: [
