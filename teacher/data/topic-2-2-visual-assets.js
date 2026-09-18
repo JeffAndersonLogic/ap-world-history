@@ -60,7 +60,7 @@ css.textContent=`
 .project-mode .hero-slide:has(img[src*="Chinggis%20Museum%20Donoho"]) .copy .sub{font-size:clamp(1.3rem,1.65vw,1.9rem)!important}
 
 /* Requested bottom-caption treatment: teacher slides 9, 10, and 14 match slide 17. */
-.hero-slide.bottom .copy{
+.hero-slide.bottom:has(img[src*="assets/images/topics/2-2/"]) .copy{
   left:0!important;right:0!important;bottom:0!important;top:auto!important;
   width:auto!important;height:25%!important;min-height:0!important;box-sizing:border-box!important;
   padding:1.25% 4%!important;display:grid!important;
@@ -69,24 +69,24 @@ css.textContent=`
   background:rgba(4,6,7,.84)!important;border-left:0!important;
   border-top:2px solid rgba(201,164,106,.75)!important;backdrop-filter:blur(3px)!important
 }
-.hero-slide.bottom .copy .slide-kicker{grid-column:1 / -1!important}
-.hero-slide.bottom .copy h2{
+.hero-slide.bottom:has(img[src*="assets/images/topics/2-2/"]) .copy .slide-kicker{grid-column:1 / -1!important}
+.hero-slide.bottom:has(img[src*="assets/images/topics/2-2/"]) .copy h2{
   font-size:clamp(1.55rem,2.65vw,3.3rem)!important;line-height:1!important;
   margin:.2rem 0 0!important;align-self:center!important
 }
-.hero-slide.bottom .copy .sub{
+.hero-slide.bottom:has(img[src*="assets/images/topics/2-2/"]) .copy .sub{
   font-size:clamp(.9rem,1.3vw,1.35rem)!important;line-height:1.25!important;
   margin:.2rem 0 0!important;align-self:center!important;max-width:none!important
 }
-.hero-slide.bottom .veil{
+.hero-slide.bottom:has(img[src*="assets/images/topics/2-2/"]) .veil{
   background:linear-gradient(0deg,rgba(3,5,6,.22),rgba(3,5,6,.04) 60%,transparent)!important
 }
-.project-mode .hero-slide.bottom .copy{
+.project-mode .hero-slide.bottom:has(img[src*="assets/images/topics/2-2/"]) .copy{
   left:0!important;right:0!important;bottom:0!important;top:auto!important;
   width:auto!important;height:25%!important;padding:1.4vh 4vw!important
 }
-.project-mode .hero-slide.bottom .copy h2{font-size:clamp(2.6rem,3.5vw,4.2rem)!important}
-.project-mode .hero-slide.bottom .copy .sub{font-size:clamp(1.3rem,1.65vw,1.9rem)!important}
+.project-mode .hero-slide.bottom:has(img[src*="assets/images/topics/2-2/"]) .copy h2{font-size:clamp(2.6rem,3.5vw,4.2rem)!important}
+.project-mode .hero-slide.bottom:has(img[src*="assets/images/topics/2-2/"]) .copy .sub{font-size:clamp(1.3rem,1.65vw,1.9rem)!important}
 `;
 document.head.appendChild(css);
 })();
