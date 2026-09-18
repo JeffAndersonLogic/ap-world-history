@@ -37,27 +37,37 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how Enlightenment thinkers used reason to challenge traditional authority and articulate new ideas about natural rights, the social contract, and popular sovereignty.",
-      kc: "KC-5.3.I.A",
+      target: "I can explain the intellectual and ideological context in which Atlantic revolutions developed, including reason, empiricism, natural rights, the social contract, and popular sovereignty.",
+      kc: "KC-5.3.I.A; KC-5.3.I",
       theme: "Cultural Developments and Interactions"
     },
     {
-      target: "I can analyze how Enlightenment ideas spread through print culture and institutions, and evaluate the significant limits of Enlightenment universalism, particularly regarding women, enslaved people, and colonized peoples.",
-      kc: "KC-5.3.I",
+      target: "I can analyze how Enlightenment ideas challenged traditional political and religious authority and how their diffusion helped provide justification for revolutions and new forms of political identity, including nationalism.",
+      kc: "KC-5.3.I; KC-5.3.II.i",
       theme: "Cultural Developments and Interactions"
+    },
+    {
+      target: "I can evaluate how Enlightenment and religious ideals influenced reform movements that expanded rights, including suffrage, abolition, the end of serfdom, women’s rights, and emergent feminism.",
+      kc: "KC-5.3.I.C; KC-5.3.IV.B",
+      theme: "Social Interactions and Organization"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can identify at least three Enlightenment philosophes and explain their core ideas (Locke: natural rights and consent of the governed; Rousseau: social contract and popular sovereignty; Montesquieu: separation of powers; Voltaire: religious tolerance; Wollstonecraft: rights of women; Smith: free market). I can explain how these ideas challenged the divine right of kings, hereditary aristocracy, and Church authority.",
+      criteria: "I can explain the core ideas of at least three Enlightenment thinkers—including natural rights, social contract, popular sovereignty, separation of powers, or religious tolerance—and connect those ideas to reason and empiricism.",
       kc: "KC-5.3.I.A",
       theme: "Cultural Developments and Interactions"
     },
     {
-      criteria: "I can describe two mechanisms by which Enlightenment ideas spread (print culture, newspapers, encyclopédies, pamphlets; Parisian salons; coffeehouses). I can identify at least two groups excluded from Enlightenment universalism and explain the structural reasons for their exclusion: women (Rousseau's claim that women's sphere was domestic); enslaved Africans and colonial subjects (Locke's investment in the Royal African Company; the philosophes' racist writings).",
-      kc: "KC-5.3.I",
+      criteria: "I can explain how Enlightenment ideas challenged divine-right monarchy, hereditary privilege, or religious authority and describe at least one mechanism of diffusion such as print culture, salons, coffeehouses, or correspondence.",
+      kc: "KC-5.3.I; KC-5.3.II.i",
       theme: "Cultural Developments and Interactions"
+    },
+    {
+      criteria: "I can connect Enlightenment or religious ideals to at least two reforms from expanded suffrage, abolition of slavery, end of serfdom, or women’s rights, and use Mary Wollstonecraft, Olympe de Gouges, or the Seneca Falls Conference as specific evidence for challenges to gender hierarchy.",
+      kc: "KC-5.3.I.C; KC-5.3.IV.B",
+      theme: "Social Interactions and Organization"
     }
   ],
 
@@ -95,55 +105,64 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Reason, Rights, and Authority: The Enlightenment",
-    intro: "The Enlightenment (c. 1680–c. 1800) was an intellectual revolution before the political ones. By applying the methods of the Scientific Revolution to human society, Enlightenment thinkers created a vocabulary, natural rights, social contract, popular sovereignty, separation of powers, that revolutionaries in France, America, Haiti, and Latin America would use to justify overthrowing the established order. Understanding the Enlightenment means understanding both its radical promise and its profound limitations.",
+    title: "Reason, Rights, Revolution, Reform",
+    intro: "The Enlightenment matters because it changed the language people used to judge authority. Reason, natural rights, social contract, and popular sovereignty gave critics of monarchy, privilege, and religious authority a new standard: institutions should be justified by what they do for people, not simply by tradition. Those ideas helped justify revolutions, but their effects continued into reform movements that widened political and social rights.",
     videos: [],
     segments: [
       {
-        title: "What Was the Enlightenment? Origins and Context",
+        title: "A New Standard: Reason and Empiricism",
         bullets: [
-          "The **Enlightenment** (c. 1680–c. 1800) was an intellectual movement centered in Western Europe, especially France, Britain, and Scotland, that argued reason, not tradition, scripture, or inherited authority, should be the basis for understanding the world and organizing society. Its intellectual ancestors were the Scientific Revolution (Newton's discovery of natural laws governing the physical world) and Renaissance humanism (the rediscovery of classical learning about human potential).",
-          "The Enlightenment challenged three traditional pillars of European authority: the **divine right of kings** (monarchs derive their authority directly from God, not from the consent of the governed); **hereditary aristocracy** (birth determines social and political status permanently); and **Church authority** (the Church interprets God's will for both spiritual and political life, and is immune from rational criticism).",
-          "For AP purposes, the Enlightenment is most important as a **cause of the Atlantic Revolutions** (Topic 5.2). Revolutionaries in America, France, Haiti, and Latin America used Enlightenment vocabulary, natural rights, popular sovereignty, social contract, to justify their actions. Understanding which philosophe said what allows you to trace the causal chain from 18th-century salon debate to 19th-century revolution.",
-          "The Enlightenment also produced **economic ideas** (Adam Smith's free market theory) and **scientific advances** (systematic botany, chemistry, physics), but for the AP exam, the political and social ideas are the most heavily tested. The primary skill being assessed is causation: how did Enlightenment ideas cause the Atlantic Revolutions?"
+          "Enlightenment thinkers applied **reason and empiricism**—methods associated with the Scientific Revolution—to human society. If nature operated according to discoverable laws, many thinkers argued that government, law, religion, and social institutions could also be examined and improved through reason.",
+          "This approach weakened the assumption that tradition itself proved legitimacy. **Inherited authority had to be defended**, not merely accepted.",
+          "The intellectual shift created a powerful habit of questioning: Who has rights? Where does government authority come from? What is religion’s proper role in public life? Can unequal social institutions be justified rationally?"
         ],
         image: {
-          title: "Reason applied to human society",
-          caption: "BeHistorical topic artwork for this card. The Enlightenment took the method of the Scientific Revolution and turned it on government, religion, and law.",
-          url: "",
-          sourceUrl: ""
+          title: "The Enlightenment world",
+          caption: "Print, correspondence, salons, and urban intellectual networks helped circulate a new language of reason and rights.",
+          url: "../assets/images/instructional-maps/topic-5-1.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-1.svg"
         }
       },
       {
-        title: "The Philosophes and Their Core Ideas",
+        title: "New Political Ideas Challenge Old Authority",
         bullets: [
-          "**John Locke** (1632–1704): The most influential Enlightenment thinker for the Atlantic Revolutions. In *Two Treatises of Government* (1689), Locke argued that all humans possess **natural rights**, life, liberty, and property, that exist prior to and independent of any government. Government derives its legitimacy from the **consent of the governed**; a government that violates natural rights forfeits its authority and the people have the right to overthrow it. This argument directly inspired the American Declaration of Independence (1776) and the French Declaration of the Rights of Man (1789).",
-          "**Montesquieu** (1689–1755): In *The Spirit of the Laws* (1748), argued for the **separation of powers**, that executive, legislative, and judicial functions should be divided among separate institutions to prevent any single person or body from accumulating tyrannical power. His analysis of the British constitutional system (which he somewhat idealized) directly influenced the architects of the U.S. Constitution, particularly the tripartite structure of Congress, the President, and the Supreme Court.",
-          "**Rousseau** (1712–1778): In *The Social Contract* (1762), argued that government is legitimate only if it reflects the **general will** of the people, **popular sovereignty**. Unlike Locke (who focused on protecting individual rights from government), Rousseau focused on collective self-governance. His ideas influenced the more radical phase of the French Revolution, which prioritized the collective good over individual rights. Importantly, Rousseau explicitly argued that women's natural sphere was the household, not politics, a contradiction that Mary Wollstonecraft directly challenged.",
-          "**Voltaire** (1694–1778): The most famous and widely read philosophe, known for his wit and his attacks on religious intolerance, Church corruption, and the arbitrary cruelty of traditional authority. *Candide* (1759) mocked the optimism of those who justified suffering as part of God's plan. Voltaire believed in freedom of conscience and the separation of Church and state, but his writing also contained racist descriptions of non-European peoples that contradicted his universal claims.",
-          "**Mary Wollstonecraft** (1759–1797): In *A Vindication of the Rights of Woman* (1792), applied the logic of natural rights to argue that women should have the same political and educational rights as men. If natural rights belong to all rational beings, they must include women. This was a direct challenge to Rousseau and to most male philosophes who assumed women's subordination. Wollstonecraft is the clearest example of how the Enlightenment's internal logic could be turned against its own limits.",
-          "**Adam Smith** (1723–1790): In *The Wealth of Nations* (1776), argued that the **free market**, the 'invisible hand' of supply and demand, allocates resources more efficiently than government intervention or mercantilist monopolies. Smith challenged the mercantilist assumptions of European colonial empires (that trade should be tightly controlled for national advantage) and provided intellectual foundations for industrial capitalism. For the AP exam, Smith is primarily important as background to the economic transformations of Topics 5.3–5.7."
+          "**John Locke** argued for natural rights and government by consent; **Rousseau** emphasized the social contract and popular sovereignty; **Montesquieu** argued for separation of powers; **Voltaire** defended religious tolerance and criticized clerical intolerance.",
+          "These ideas challenged the **divine right of kings**, hereditary privilege, and unchecked religious authority. A government that violated rights could now be described not just as harsh but as **illegitimate**.",
+          "The Enlightenment did not mechanically cause revolution. It supplied the **vocabulary and justification** that revolutionaries could use when fiscal crises, colonial grievances, inequality, or political breakdown created an opening for rebellion."
         ],
         image: {
-          title: "The philosophes and their core claims",
-          caption: "BeHistorical topic artwork for this card. Natural rights, the social contract, separation of powers, and religious toleration: ideas with obvious political consequences.",
-          url: "",
-          sourceUrl: ""
+          title: "Locke and political consent",
+          caption: "Natural-rights theory made consent, rather than divine appointment, a standard for legitimate government.",
+          url: "../assets/images/instructional-maps/topic-5-1.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-1.svg"
         }
       },
       {
-        title: "How the Enlightenment Spread — and Its Limits",
+        title: "Ideas Spread — and Political Identity Changes",
         bullets: [
-          "**Print culture**: By the 18th century, expanded literacy and cheap printing made it possible for ideas to circulate rapidly across Europe and the Atlantic world. The **Encyclopédie** (1751–1772), edited by Denis Diderot and Jean le Rond d'Alembert, was the Enlightenment's most ambitious project, a systematic account of all human knowledge organized by reason rather than theology. It was banned by the French Crown and the Catholic Church (its existence proving the very point it was making about censorship), but 25,000 copies circulated across Europe.",
-          "**Salons**: Intellectual gatherings hosted primarily by women in Paris provided spaces for philosophes to debate, refine, and publicize their ideas. Women like **Marie-Thérèse Rodet Geoffrin**, **Julie de Lespinasse**, and **Suzanne Necker** were central organizers and patrons of the Enlightenment network, they were, in effect, the institutional infrastructure of the movement. The deep irony: the same philosophes they hosted and financed generally excluded women from the political rights they were arguing for.",
-          "**Coffeehouses** (especially in Britain) and **universities** (especially in Scotland, Edinburgh, Glasgow, and the Netherlands) were additional nodes of Enlightenment circulation. The **Republic of Letters**, an informal network of correspondence among scholars across Europe, enabled ideas to travel faster than political censorship could suppress them.",
-          "**The limits of universalism**: Enlightenment universalism was deeply contradictory in practice. **Rousseau** explicitly argued that women's natural sphere was domestic, not political, his *Emile* (1762) described the ideal education for girls as preparation for obedience and charm, not citizenship. **Locke** invested in the Royal African Company, which transported enslaved Africans across the Atlantic, his natural rights theory had no mechanism to explain why enslaved people were excluded. **Voltaire** wrote explicitly racist descriptions of Africans and Asians. These limits are not peripheral to the Enlightenment, they reveal that 'universal' rights were conceived primarily by European men for European men, and that the struggle to actually universalize them would define the next two centuries of Atlantic history."
+          "Books, pamphlets, newspapers, the **Encyclopédie**, salons, coffeehouses, universities, and correspondence networks spread Enlightenment arguments across the Atlantic world.",
+          "The diffusion of rights language preceded and shaped revolutions in North America, France, Haiti, and Latin America. It also interacted with the growing force of **nationalism**, as people increasingly imagined political community through shared language, culture, territory, or citizenship.",
+          "The universal language of rights contained major contradictions. Women, enslaved people, and colonized subjects were often excluded in practice. Those exclusions became arguments for extending Enlightenment principles further rather than evidence that the ideas had no effect."
         ],
         image: {
-          title: "How far the ideas travelled, and how far they did not",
-          caption: "BeHistorical topic artwork for this card. Print culture and salons spread these claims quickly, while the same writers often exempted women, the enslaved, and the colonized.",
-          url: "",
-          sourceUrl: ""
+          title: "Print and discussion networks",
+          caption: "Enlightenment ideas became politically significant because they circulated beyond individual philosophers.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Salon_de_Madame_Geoffrin.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Salon_de_Madame_Geoffrin.jpg"
+        }
+      },
+      {
+        title: "From Revolutionary Rights to Reform Movements",
+        bullets: [
+          "Enlightenment and religious ideals helped inspire movements that expanded **suffrage**, attacked **slavery**, and contributed to the **end of serfdom**. These reforms show that the Enlightenment’s effects continued after the first Atlantic revolutions.",
+          "**Mary Wollstonecraft** used Enlightenment logic to argue that women were rational beings entitled to education and rights. **Olympe de Gouges** rewrote revolutionary rights language to expose women’s exclusion from French political equality.",
+          "At **Seneca Falls in 1848**, Elizabeth Cady Stanton and Lucretia Mott helped turn natural-rights language toward organized demands for women’s political equality. The long-term causal pattern is: **new ideas -> critique of exclusion -> organized reform -> expanded rights**."
+        ],
+        image: {
+          title: "Rights language extended to women",
+          caption: "Women’s-rights advocates used the logic of universal rights to challenge political and gender hierarchies.",
+          url: "../assets/images/instructional-maps/topic-5-1.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-5-1.svg"
         }
       }
     ]
