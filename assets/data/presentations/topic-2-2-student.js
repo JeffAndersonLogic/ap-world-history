@@ -39,6 +39,32 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
+      "kind": "hero",
+      "eyebrow": "Context · Who Are the Mongols?",
+      "title": "Who were the Mongols?",
+      "subtitle": "Pastoral nomads of the Central Asian steppe.",
+      "position": "lower-left",
+      "visual": {
+        "url": "../assets/images/topics/2-2/2.2%20-%20Steppes%20of%20Asia.jpg",
+        "alt": "Wide view of the Central Asian steppe used to establish the Mongol pastoral environment",
+        "credit": "Topic 2.2 classroom visual · Steppes of Asia"
+      },
+      "footer": "Herding · horses · mobility · kinship"
+    },
+    {
+      "kind": "hero",
+      "eyebrow": "Context · Why the Steppe Matters",
+      "title": "Steppe life shaped Mongol strengths.",
+      "subtitle": "Mobility was a way of life before it became a military advantage.",
+      "position": "right",
+      "visual": {
+        "url": "../assets/images/topics/2-2/2.2%20-%20Cinematic%20Mongol%20Archers.png",
+        "alt": "Historical reconstruction of Mongol mounted archers used to connect steppe life to military mobility",
+        "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
+      },
+      "footer": "Environment -> horse culture -> mobility -> military potential"
+    },
+    {
       "kind": "map",
       "eyebrow": "Big Rock 1 · State Change",
       "title": "One empire becomes four Mongol states.",
@@ -62,7 +88,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "hero",
       "eyebrow": "Big Rock 1 · State Change · Build",
-      "title": "Temüjin turns steppe warriors into a system.",
+      "title": "Chinggis Khan turns steppe warriors into a system.",
       "subtitle": "Coordination matters as much as horsemanship.",
       "position": "right",
       "visual": {
