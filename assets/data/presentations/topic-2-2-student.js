@@ -235,7 +235,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Knowledge moving across cultures through Mongol-era Eurasian connections",
         "credit": "Topic 2.2 classroom visual · Knowledge Shared"
       },
-      "layout": "visual"
     },
     {
       "kind": "process",
