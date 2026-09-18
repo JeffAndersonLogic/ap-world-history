@@ -46,7 +46,7 @@ module.exports = {
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Sections 01 and 02 are the interdependence the success criteria ask you to demonstrate, written as a chain of bottlenecks rather than a list of inventions. Sections 03 and 04 are the environmental half, first where the factories were and then where the raw materials came from, which is the connection the criteria explicitly want made.`,
+    intro: `Sections 01–02 explain technological interdependence and the collapse of transport and communication costs. Keep the environmental material as useful consequence/context, but the formal Topic 5.5 frame is energy and production: coal and steam, oil and internal combustion, second-industrial steel/chemicals/electricity/precision machinery, and railroads/steamships/telegraph connecting interior regions to trade and migration.`,
     steps: [
       `<b>01 The railway:</b> what falling freight costs do to a country, and what the railway needed in return.`,
       `<b>02 Steel and wire:</b> Bessemer in 1856, the telegraph, and information moving faster than goods.`,
@@ -244,6 +244,16 @@ module.exports = {
     navLabel: 'Building a comparison',
     intro: `Each card is a full argument: the claim, the specific evidence, and the reason. The first demonstrates the interdependence the success criteria ask for; the last two are the environmental half.`,
     pairs: [
+      {
+        category: 'Energy and production',
+        title: 'The fossil-fuel revolution came before the transport network could scale',
+        body: `The steam engine converted the concentrated chemical energy in <span class="kt">coal</span> into reliable mechanical work, freeing factories from exclusive dependence on water sites and allowing mines, railroads and <span class="kt">steamships</span> to move loads at a scale muscle, wind and wood could not sustain. Late in the century the <span class="kt">internal combustion engine</span> opened a growing role for <span class="kt">oil</span> as a portable fuel. The second industrial revolution then multiplied what that energy could produce: cheap <span class="kt">steel</span>, industrial <span class="kt">chemicals</span>, <span class="kt">electricity</span>, and <span class="kt">precision machinery</span> increased output and enabled new products. The CED mechanism is therefore energy -> mechanical power -> new production methods -> larger productive capacity.`
+      },
+      {
+        category: 'Distance',
+        title: 'Railroads, steamships and telegraphs solved different parts of the same problem',
+        body: `Railroads reduced the cost of moving heavy goods overland and opened interior farms, mines and cities to national markets. Steamships made oceanic schedules faster and more regular by reducing dependence on wind. The telegraph did something neither transport technology could do: it let prices, orders and political instructions travel faster than people or cargo. Together the three made interior development, long-distance trade and <span class="kt">migration</span> more feasible because physical movement and information could now be coordinated across enormous distances.`
+      },
       {
         category: 'Interdependence',
         title: 'Each technology solved a bottleneck the last one created',
