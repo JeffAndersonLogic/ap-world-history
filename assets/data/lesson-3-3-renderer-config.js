@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      code: 'Unit 3: Learning Objective C',
+      theme: 'Learning Objective',
+      text: 'Explain continuity and change within the various belief systems during the period from 1450 to 1750.',
+      illustrativeExamples: []
+    },
+    {
       "code": "KC-4.1.VI.i",
       "theme": "Cultural Developments and Interactions",
       "text": "The Protestant Reformation marked a break with existing Christian traditions and both the Protestant and Catholic reformations contributed to the growth of Christianity.",
@@ -54,47 +60,47 @@
   };
 
   lesson.skillBuilder = {
-    label: 'Argumentation practice',
-    title: 'Was Religious Tolerance or Enforcement a More Effective Tool for Empire?',
-    intro: 'Argumentation means making a claim and supporting it with specific evidence. AP World History regularly asks you to evaluate historical strategies, not just describe what rulers did, but assess whether it worked and why.',
+    label: 'Sourcing and situation practice',
+    title: 'How Context Shapes Evidence About Religious Change',
+    intro: 'Topic 3.3 pairs belief-system change with AP sourcing. A source does not speak for an entire religion by itself. Ask who produced it, for whom, in what historical situation, and for what purpose before using it to explain continuity or change.',
     steps: [
-      { label: 'Identify the strategies', text: 'Akbar used tolerance, abolishing jizya, including Hindu elites, developing Din-i-Ilahi. Aurangzeb used enforcement, reimposing jizya, destroying temples, enforcing Sunni law. Shah Ismail used coercive conversion, creating a Shia identity state.' },
-      { label: 'Evaluate the outcomes', text: 'Akbar expanded Mughal power by drawing diverse elites into the imperial project. Aurangzeb\'s enforcement provoked rebellions that weakened Mughal authority. Shah Ismail\'s Shia identity strengthened internal loyalty but intensified Ottoman-Safavid conflict.' },
-      { label: 'Build your argument', text: 'A strong argument acknowledges complexity: neither tolerance nor enforcement was universally effective. The key is explaining which conditions made each approach more or less viable, empire size, religious composition of the population, and external threats all mattered.' }
+      { label: 'Identify the source situation', text: 'A Luther portrait from the Reformation, an Ottoman victory manuscript about Chaldiran, and a later devotional portrait of Guru Nanak were produced in very different historical situations.' },
+      { label: 'Explain perspective or purpose', text: 'Ask what the creator or patron wanted an audience to see. A court victory image can glorify a ruler; a devotional image can preserve religious memory; a reform-era portrait can elevate a religious leader.' },
+      { label: 'Connect sourcing to the historical claim', text: 'Use the sourcing factor to qualify what the source can prove. Then connect it to the Topic 3.3 question: what changed, what continued, and how did political or cultural interaction shape that development?' }
     ],
-    prompt: 'Write a claim (one sentence) that evaluates whether religious tolerance or religious enforcement was more effective as an imperial governing strategy. Then support your claim with at least two pieces of specific evidence from c. 1450–c. 1750.'
+    prompt: 'Choose one Topic 3.3 evidence source. Explain one relevant sourcing factor (point of view, purpose, historical situation, or audience) and how that factor affects the source\'s usefulness for explaining continuity or change in a belief system from 1450 to 1750.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Religion, Legitimacy, and Conflict',
-      subtitle: 'Checks Learning Targets 1 and 2 — religion as legitimacy tool and Ottoman-Safavid conflict.',
-      cardDesc: 'Divine authority, caliphate, Sunni-Shia divide, Chaldiran.',
-      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain how the Ottoman and Safavid empires used religion to legitimize their authority, and how religious difference drove conflict between them. Use specific evidence such as the Ottoman claim to the caliphate, Shah Ismail\'s forced conversions, and the Battle of Chaldiran (1514).',
+      title: 'Checkpoint 1: Reformation — Change Within Christianity',
+      subtitle: 'Checks Learning Target 1 and Success Criterion 1.',
+      cardDesc: 'Protestant break, Catholic reform, and the continued growth of Christianity.',
+      learningTargets: [lesson.learningTargets[0].target],
+      successCriteria: [lesson.successCriteria[0].criteria],
+      prompt: 'Explain one major change produced by the Protestant Reformation and one way the Catholic Reformation responded. Then explain how both Protestant and Catholic reform movements contributed to the continued growth of Christianity.',
       responseType: 'Checkpoint 1',
-      terms: ['Caliph', 'Sultan', 'Shah', 'Sunni', 'Shia', 'Chaldiran', 'legitimacy', 'Selim I', 'Shah Ismail'],
-      focus: ['Explain at least one specific religious claim or role used by Ottoman or Safavid rulers.', 'Explain how the Sunni-Shia divide made the Ottoman-Safavid rivalry both religious and political.', 'Connect the Battle of Chaldiran (1514) to the broader pattern of religion driving imperial conflict.']
+      terms: ['Martin Luther', 'Protestant Reformation', 'Catholic Reformation', 'Council of Trent', 'Jesuits', 'Church authority', 'denominations', 'continuity', 'change'],
+      focus: ['Name a specific Protestant Reformation change.', 'Name a specific Catholic reform or response.', 'Explain both change within Christianity and continuity in Christianity\'s wider growth or influence.']
     },
     {
-      title: 'Checkpoint 2: Accommodation vs. Enforcement — Mughal Approaches',
-      subtitle: 'Checks Learning Target 3 — Mughal religious approaches and their consequences.',
-      cardDesc: 'Akbar, Aurangzeb, Din-i-Ilahi, jizya, tolerance vs. enforcement.',
-      learningTargets: [lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Compare Akbar\'s approach to religious diversity with Aurangzeb\'s. What specific policies did each ruler adopt? What were the political consequences of each approach? Use evidence to explain what the contrast reveals about how rulers used religion as a governing tool.',
+      title: 'Checkpoint 2: Rivalry and New Religious Development',
+      subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
+      cardDesc: 'Ottoman-Safavid rivalry, the Sunni-Shia divide, and Sikhism in South Asia.',
+      learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
+      prompt: 'Explain TWO developments in belief systems from 1450 to 1750: (1) how Ottoman-Safavid political rivalry intensified the existing Sunni-Shia split within Islam, and (2) how Sikhism developed in South Asia in a context of interaction between Hinduism and Islam. Use specific evidence for both.',
       responseType: 'Checkpoint 2',
-      skill: 'Comparison',
-      terms: ['Akbar', 'Aurangzeb', 'Din-i-Ilahi', 'jizya', 'Fatehpur Sikri', 'tolerance', 'enforcement', 'Rajput', 'syncretic'],
-      focus: ['Name at least two specific policies Akbar used to manage religious diversity.', 'Name at least one policy Aurangzeb used to enforce religious conformity.', 'Explain the political consequences, what did each approach produce in terms of loyalty or rebellion?']
+      skill: 'Continuity and Change',
+      terms: ['Ottoman', 'Safavid', 'Sunni', 'Shia', 'Chaldiran', 'political rivalry', 'Guru Nanak', 'Punjab', 'Sikhism', 'Hinduism', 'Islam', 'interaction'],
+      focus: ['Make clear that Ottoman-Safavid rivalry intensified an existing Sunni-Shia division rather than creating it.', 'Use Chaldiran or another specific rivalry detail as evidence.', 'Explain the Hindu-Muslim interaction context of Sikhism while recognizing Sikhism as a distinct religious tradition.']
     }
   ];
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: Belief as Reform, Rivalry, and Political Strategy',
     task: 'Choose TWO cards from different religious settings. Decide what each source actually reveals before deciding what historical claim it can support. Pay attention to when the image was created: a contemporary court image and a later devotional portrait do different kinds of historical work.',
-    prompt: 'Using two evidence cards from different religious settings, make one claim about how belief systems changed, divided communities, or became tools of political authority from c. 1450 to c. 1750. Cite one concrete detail from each source and explain one limitation or perspective issue that affects your interpretation.'
+    prompt: 'Using two evidence cards from different religious settings, make one claim about continuity or change within belief systems from c. 1450 to c. 1750. Cite one concrete detail from each source, explain how political or cultural interaction shaped the development, and explain one limitation or perspective issue that affects your interpretation.'
   };
 
   lesson.images = [

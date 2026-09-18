@@ -19,63 +19,67 @@ wins. The block came from the lesson they are actually sitting in.
 **Where this sits.** Unit 3: Land-Based Empires, c. 1450 to c. 1750. Gunpowder weapons, military conquest, and the rise of land-based empires c. 1450–c. 1750
 
 **College Board key concepts.**
+- Unit 3: Learning Objective A (Learning Objective): Explain how and why various land-based empires developed and expanded from 1450 to 1750.
 - KC-4.3.II (Governance): Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.
 - KC-4.3.II.B (Governance): Land empires included the Manchu in Central and East Asia; the Mughal in South and Central Asia; the Ottoman in Southern Europe, the Middle East, and North Africa; and the Safavids in the Middle East.
 - KC-4.3.III.i (Governance): Political and religious disputes led to rivalries and conflict between states. Illustrative examples: Safavid–Mughal conflict, Songhai Empire’s conflict with Morocco.
 
-**Expected evidence terms.** gunpowder, cannon, matchlock, bombard, Janissaries, devshirme, Ottoman, Mughal, Safavid, Qing, Ottoman Empire, Safavid Empire, Mughal Empire, Qing Dynasty, Constantinople, Istanbul, Byzantine Empire, Mehmed II, Bosphorus, trade routes.
+**Expected evidence terms.** gunpowder, cannon, matchlock, bombard, Janissaries, devshirme, Ottoman, Mughal, Safavid, Qing, Ottoman Empire, Safavid Empire, Mughal Empire, Qing Dynasty, Manchu, Safavid–Mughal conflict, Kandahar, Songhai, Morocco, Tondibi, Sunni, Shia, rivalry.
 
 **AP skill focus.** Causation practice.
 
 **Checkpoint 1 prompt.** Explain how gunpowder technology changed warfare and enabled land-based empires to expand their territories after c. 1450. Use specific evidence, name a specific weapon, empire, or military event.
 Strong answer checklist: Name at least one specific gunpowder weapon and explain how it changed warfare. Connect the military technology to territorial expansion by at least one empire. Explain what advantage gunpowder weapons gave empires over their opponents.
 
-**Checkpoint 2 prompt.** Describe the geographic expansion of at least TWO land-based empires after c. 1450. Then explain why the Ottoman conquest of Constantinople in 1453 was historically significant. Use specific evidence.
-Strong answer checklist: Name at least two land-based empires and describe specific regions they conquered. Explain at least two reasons why the 1453 conquest of Constantinople mattered. Connect the fall of Constantinople to broader changes in Eurasian trade or politics.
+**Checkpoint 2 prompt.** Describe the geographic expansion of at least TWO land-based empires after c. 1450. Then explain ONE interstate rivalry named by the CED, either the Safavid–Mughal conflict or Songhai's conflict with Morocco, showing how political or religious disputes fueled the conflict.
+Strong answer checklist: Name at least two land-based empires and describe specific regions they conquered. Name one CED state rivalry and identify the states involved. Explain how a political or religious dispute helped produce or intensify the conflict.
 
 ## 3.2 Empires: Administration
 
 **Where this sits.** Unit 3: Land-Based Empires, c. 1450 to c. 1750. How land-based empires organized power, collected revenue, and governed diverse peoples, c. 1450–c. 1750
 
 **College Board key concepts.**
+- Unit 3: Learning Objective B (Learning Objective): Explain how rulers used a variety of methods to legitimize and consolidate their power in land-based empires from 1450 to 1750.
 - KC-4.3.I.C (Governance): Recruitment and use of bureaucratic elites, as well as the development of military professionals, became more common among rulers who wanted to maintain centralized control over their populations and resources. Illustrative examples: Ottoman devshirme, Salaried samurai.
 - KC-4.3.I.A (Governance): Rulers continued to use religious ideas, art, and monumental architecture to legitimize their rule. Illustrative examples: Mexica practice of human sacrifice, European notions of divine right, Songhai promotion of Islam, Qing imperial portraits, Incan sun temple of Cuzco, Mughal mausolea and mosques, European palaces, such as Versailles.
 - KC-4.3.I.D (Governance): Rulers used tribute collection, tax farming, and innovative tax-collection systems to generate revenue in order to forward state power and expansion. Illustrative examples: Mughal zamindar tax collection, Ottoman tax farming, Mexica tribute lists, Ming practice of collecting taxes in hard currency.
 
-**Expected evidence terms.** devshirme, mansabdar, jagir, timar, tax farming, tribute, civil service examination, Banner system, janissary, grand vizier, millet system, Akbar, Rajput, co-optation, accommodation, centralization, loyalty.
+**Expected evidence terms.** devshirme, mansabdar, jagir, timar, tax farming, tribute, civil service examination, Banner system, janissary, grand vizier, divine right, Songhai promotion of Islam, Qing imperial portraits, Mughal mausolea, Versailles, zamindar, Ottoman tax farming, Mexica tribute, Ming hard-currency taxes, legitimacy, revenue.
 
 **AP skill focus.** Comparison practice.
 
 **Checkpoint 1 prompt.** Explain how land-based empires used bureaucracies, taxation systems, or military recruitment to consolidate power over diverse populations. Use at least two specific examples.
 Strong answer checklist: Name at least two specific administrative or military systems. Explain how each system extracted resources or maintained loyalty. Connect your examples to the broader challenge of governing diverse, large territories.
 
-**Checkpoint 2 prompt.** Describe two specific administrative systems from different empires. Then explain why rulers sometimes chose to accommodate local elites rather than impose direct control, and whether accommodation was a sign of strength or weakness.
-Strong answer checklist: Describe at least two distinct administrative systems from two different empires. Explain how each system solved the loyalty or revenue problem. Take a position on accommodation: strength or weakness? Support it with evidence.
+**Checkpoint 2 prompt.** Explain TWO different methods rulers used to legitimize and consolidate power: (1) one example involving religious ideas, art, or monumental architecture, and (2) one example involving tribute, tax farming, or an innovative tax-collection system. Explain how each method strengthened the ruler or state.
+Strong answer checklist: Use one specific religious, artistic, or architectural example and explain how it legitimized rule. Use one specific revenue system and explain how it generated resources for state power or expansion. Connect both methods to the larger problem of consolidating authority across a large empire.
 
-## 3.3 Empires and Belief Systems
+## 3.3 Empires: Belief Systems
 
-**Where this sits.** Unit 3: Land-Based Empires, c. 1450 to c. 1750. How rulers of land-based empires used religion to legitimize authority, manage diversity, and wage sectarian conflict c. 1450–c. 1750
+**Where this sits.** Unit 3: Land-Based Empires, c. 1450 to c. 1750. Continuity and change in Christianity, Islam, and South Asian belief systems, c. 1450–c. 1750
 
 **College Board key concepts.**
+- Unit 3: Learning Objective C (Learning Objective): Explain continuity and change within the various belief systems during the period from 1450 to 1750.
 - KC-4.1.VI.i (Cultural Developments and Interactions): The Protestant Reformation marked a break with existing Christian traditions and both the Protestant and Catholic reformations contributed to the growth of Christianity.
 - KC-4.1.VI.ii (Cultural Developments and Interactions): Political rivalries between the Ottoman and Safavid empires intensified the split within Islam between Sunni and Shi’a.
 - KC-4.1.VI.iii (Cultural Developments and Interactions): Sikhism developed in South Asia in a context of interactions between Hinduism and Islam.
 
-**Expected evidence terms.** Caliph, Sultan, Shah, Sunni, Shia, Chaldiran, legitimacy, Selim I, Shah Ismail, Akbar, Aurangzeb, Din-i-Ilahi, jizya, Fatehpur Sikri, tolerance, enforcement, Rajput, syncretic.
+**Expected evidence terms.** Martin Luther, Protestant Reformation, Catholic Reformation, Council of Trent, Jesuits, Church authority, denominations, continuity, change, Ottoman, Safavid, Sunni, Shia, Chaldiran, political rivalry, Guru Nanak, Punjab, Sikhism, Hinduism, Islam, interaction.
 
-**AP skill focus.** Argumentation practice.
+**AP skill focus.** Sourcing and situation practice.
 
-**Checkpoint 1 prompt.** Explain how the Ottoman and Safavid empires used religion to legitimize their authority, and how religious difference drove conflict between them. Use specific evidence such as the Ottoman claim to the caliphate, Shah Ismail's forced conversions, and the Battle of Chaldiran (1514).
-Strong answer checklist: Explain at least one specific religious claim or role used by Ottoman or Safavid rulers. Explain how the Sunni-Shia divide made the Ottoman-Safavid rivalry both religious and political. Connect the Battle of Chaldiran (1514) to the broader pattern of religion driving imperial conflict.
+**Checkpoint 1 prompt.** Explain one major change produced by the Protestant Reformation and one way the Catholic Reformation responded. Then explain how both Protestant and Catholic reform movements contributed to the continued growth of Christianity.
+Strong answer checklist: Name a specific Protestant Reformation change. Name a specific Catholic reform or response. Explain both change within Christianity and continuity in Christianity's wider growth or influence.
 
-**Checkpoint 2 prompt.** Compare Akbar's approach to religious diversity with Aurangzeb's. What specific policies did each ruler adopt? What were the political consequences of each approach? Use evidence to explain what the contrast reveals about how rulers used religion as a governing tool.
-Strong answer checklist: Name at least two specific policies Akbar used to manage religious diversity. Name at least one policy Aurangzeb used to enforce religious conformity. Explain the political consequences, what did each approach produce in terms of loyalty or rebellion?
+**Checkpoint 2 prompt.** Explain TWO developments in belief systems from 1450 to 1750: (1) how Ottoman-Safavid political rivalry intensified the existing Sunni-Shia split within Islam, and (2) how Sikhism developed in South Asia in a context of interaction between Hinduism and Islam. Use specific evidence for both.
+Strong answer checklist: Make clear that Ottoman-Safavid rivalry intensified an existing Sunni-Shia division rather than creating it. Use Chaldiran or another specific rivalry detail as evidence. Explain the Hindu-Muslim interaction context of Sikhism while recognizing Sikhism as a distinct religious tradition.
 
 ## 3.4 Comparison in Land-Based Empires
 
-**Where this sits.** Unit 3: Land-Based Empires, c. 1450 to c. 1750. Using the AP Comparison skill to analyze similarities and differences across the Ottoman, Safavid, Mughal, Qing, and Russian empires, c. 1450–c. 1750
+**Where this sits.** Unit 3: Land-Based Empires, c. 1450 to c. 1750. Compare the methods by which land-based empires increased their influence from 1450 to 1750
 
 **College Board key concepts.**
+- Unit 3: Learning Objective D (Learning Objective): Compare the methods by which various empires increased their influence from 1450 to 1750.
 - KC-4.1 (Land-Based Empires): The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.
 - KC-4.1.VI (Land-Based Empires): In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.
 - KC-4.3 (Land-Based Empires): Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.
@@ -83,12 +87,12 @@ Strong answer checklist: Name at least two specific policies Akbar used to manag
 - KC-4.3.II.B (Land-Based Empires): Land empires included the Manchu in Central and East Asia; the Mughal in South and Central Asia; the Ottoman in Southern Europe, the Middle East, and North Africa; and the Safavids in the Middle East.
 - KC-4.3.III.i (Land-Based Empires): Political and religious disputes led to rivalries and conflict between states.
 
-**Expected evidence terms.** gunpowder, devshirme, mansabdar, Banner system, caliphate, legitimacy, bureaucracy, loyalty, conquest, Janissary, comparison, similarity, difference, religious policy, millet system, Din-i-Ilahi, Akbar, Aurangzeb, Ottoman, Mughal, Qing.
+**Expected evidence terms.** gunpowder, devshirme, mansabdar, Banner system, tax farming, tribute, monumental architecture, religious legitimation, elite incorporation, imperial influence, comparison, similarity, difference, qualification, administration, revenue, legitimation, religious policy, Ottoman, Safavid, Mughal, Qing, Russian.
 
-**AP skill focus.** Comparison practice.
+**AP skill focus.** Comparison and argumentation practice.
 
-**Checkpoint 1 prompt.** Identify one meaningful similarity shared by at least two of the major land-based empires (Ottoman, Safavid, Mughal, Qing, or Russian). Use specific evidence from each empire and explain why the similarity existed, what shared challenge produced the shared response?
-Strong answer checklist: Name the similarity and identify the two or more empires it applies to. Provide specific evidence from each empire. Explain why similar conditions produced similar responses across different empires.
+**Checkpoint 1 prompt.** Choose TWO land-based empires and compare ONE method they used to increase their influence from 1450 to 1750. Identify one meaningful similarity or difference, use specific evidence from both empires, and explain how the method increased influence.
+Strong answer checklist: Keep one shared comparison category. Use specific evidence from both empires. Explain how the method increased territorial, political, economic, or cultural influence.
 
-**Checkpoint 2 prompt.** Write a comparison argument that addresses both a similarity and a difference across at least two land-based empires. Your response must include: (1) a clear comparison claim, (2) specific evidence from at least two empires, and (3) a statement explaining what the comparison reveals about the nature of imperial rule c. 1450–c. 1750.
-Strong answer checklist: State a clear comparison claim (similarity AND difference). Use specific evidence from at least two different empires. Explain what the comparison reveals, connect it to a broader historical argument about imperial rule.
+**Checkpoint 2 prompt.** Compare the methods by which various empires increased their influence from 1450 to 1750. Write a short argument that includes a defensible comparison claim, at least two specific pieces of evidence from different empires, and explanation of how the evidence supports your claim. Include both a similarity and a difference or a meaningful qualification.
+Strong answer checklist: Answer the exact increased-influence question. Use relevant evidence from at least two different empires. Explain how the evidence supports the comparison, not just what each empire did.

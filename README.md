@@ -13,7 +13,7 @@ one. Update the number, not the marker.
 
 - All <!--count:unit-topics-->71 AP topic lesson stacks are present on disk.
 - Unit 9 Topics 9.4–9.9 are built, CED-aligned, and linked.
-- <!--count:linked-scenarios-->62 BeInTheRoom scenarios are linked from a lesson module. That is the denominator to quote: scenario *files* on disk is a larger number, because a few sit unlinked on purpose, and "non-capstone" was a third count used in an earlier version of this list.
+- <!--count:linked-scenarios-->63 BeInTheRoom scenarios are linked from a lesson module. That is the denominator to quote: scenario *files* on disk is a larger number, because a few sit unlinked on purpose, and "non-capstone" was a third count used in an earlier version of this list.
 - Foundations includes <!--count:foundations-->6 complete pre-course topic stacks.
 - The repository validator currently reports zero deployment-blocking errors.
 

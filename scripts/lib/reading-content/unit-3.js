@@ -39,7 +39,7 @@ module.exports = {
     ],
     "supportCards": {
       "beforeYouRead": "Track how gunpowder technology changed what empires could do militarily, specifically what it allowed rulers to attack and defend. Strong AP historians connect military technology to political outcomes: a cannon is not just a weapon, it is a political fact.",
-      "readingTarget": "By the end, you should be able to explain how gunpowder weapons enabled imperial expansion, identify at least two major land-based empires with specific geographic evidence, and explain why the Ottoman conquest of Constantinople in 1453 mattered for Eurasian history."
+      "readingTarget": "By the end, you should be able to explain how gunpowder enabled land-based imperial expansion, identify major land empires with geographic evidence, and explain how political or religious disputes fueled a specific rivalry such as Safavid–Mughal conflict or Songhai–Morocco conflict."
     },
     "vocabulary": [
       "Gunpowder Empire",
@@ -53,7 +53,9 @@ module.exports = {
       "Byzantine Empire",
       "Cannon",
       "Matchlock",
-      "Pax Mongolica"
+      "Pax Mongolica",
+      "Safavid–Mughal Rivalry",
+      "Songhai–Morocco Rivalry"
     ],
     "sections": [
       {
@@ -132,36 +134,27 @@ module.exports = {
       {
         "number": "4",
         "label": "Key Concept",
-        "heading": "Why Constantinople Mattered: 1453 as a Turning Point",
+        "heading": "Expansion Meets Rivalry: Kandahar and Tondibi",
         "blocks": [
           {
             "type": "p",
-            "html": "On April 6, 1453, the Ottoman army under Sultan Mehmed II began its siege of Constantinople. The city's population had shrunk from perhaps 400,000 in its Byzantine heyday to fewer than 50,000. The Byzantine emperor <span class=\"kt\">Constantine XI Palaiologos</span> had approximately 7,000 soldiers to defend fourteen miles of walls. Facing him was an Ottoman army of perhaps 80,000, backed by more than 60 cannons, including the enormous Hungarian-built bombards commissioned specifically for this siege."
+            "html": "Expansion did not occur into empty space. As land empires grew, they collided with other states that wanted the same territory, trade routes, or political influence. The CED names two rivalries that make this mechanism visible: the <span class=\"kt\">Safavid–Mughal conflict</span> and the <span class=\"kt\">Songhai Empire's conflict with Morocco</span>."
           },
           {
             "type": "p",
-            "html": "For seven weeks the cannons fired. The great Theodosian Walls, which had withstood Arab sieges in the 7th and 8th centuries, Bulgar sieges in the 9th and 10th, and Crusader siege in 1204, began to crumble. By May 29, the Ottomans had created multiple breaches. The final assault began before dawn. <span class=\"kt\">Constantine XI died fighting</span> in the final hours, the last emperor of the Eastern Roman Empire, a state that traced its unbroken history back to Augustus Caesar, was gone. Mehmed II entered the city that afternoon and went directly to the <span class=\"kt\">Hagia Sofia</span>, the greatest church in Christendom, which was converted to a mosque."
+            "html": "The Safavids and Mughals repeatedly contested <span class=\"kt\">Kandahar</span>, a strategic city linking Iran, Central Asia, and the Indian subcontinent. The rivalry was political and territorial, and it unfolded in a region where the Safavid Shia state bordered the largely Sunni Mughal ruling elite. The important point is not that sectarian identity alone caused every battle; it is that political and religious difference could reinforce interstate rivalry."
           },
           {
             "type": "p",
-            "html": "Why did this matter? For <span class=\"kt\">Christian Europe</span>, the fall of Constantinople was a shock that reverberated for decades. The Byzantine Empire had been the eastern bulwark of Christendom for a thousand years, even in its diminished state, it had symbolic and strategic significance. Many Byzantine scholars fled to Italy, bringing classical Greek texts that contributed to the Italian Renaissance. But there was also a practical consequence: the Ottoman control of Constantinople meant Ottoman control of the <span class=\"kt\">Bosphorus strait</span>, the narrow waterway connecting the Black Sea to the Mediterranean. Trade between Europe and the Black Sea now flowed through Ottoman hands."
-          },
-          {
-            "type": "p",
-            "html": "For the <span class=\"kt\">Ottoman Empire</span>, the conquest was transformative in multiple ways. Mehmed II claimed the title of <em>Kayser-i Rum</em>, Caesar of Rome, asserting that the Ottomans were the legitimate successors of the Roman Empire, not merely a Muslim sultanate. Istanbul (as Constantinople was renamed) became the Ottoman capital and one of the great cities of the world, resettled by Mehmed with populations drawn from across the empire. The conquest also demonstrated, definitively, what Ottoman military power, and specifically Ottoman gunpowder artillery, could achieve."
-          },
-          {
-            "type": "pull",
-            "html": "\"The conquest of Constantinople ended a thousand-year empire in weeks. Every ruler in Eurasia took note.\""
+            "html": "Farther west, Morocco invaded the <span class=\"kt\">Songhai Empire</span> in 1591. Moroccan forces equipped with firearms defeated Songhai at the <span class=\"kt\">Battle of Tondibi</span>, helping fracture a major West African empire and demonstrating again that gunpowder advantage mattered when expanding states collided over wealth and trade."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was 1453 a turning point? To argue it was, you need evidence of significant change, in trade, in politics, in religion, in military practice. The fall of Constantinople changed the balance of power in the eastern Mediterranean, reshaped trade routes, ended the Byzantine state, and demonstrated the decisive power of gunpowder artillery. <strong>But was it the cause of these changes, or did it accelerate changes already underway?</strong> Strong AP argumentation considers the evidence for both sides, then commits to a position with evidence.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p>Do not stop at saying two states fought. Explain the mechanism: <strong>expansion created overlapping claims; political or religious disputes intensified the rivalry; military capacity determined what each state could do about it.</strong> That causal chain is the Topic 3.1 job.</p>"
         }
-      }
-    ],
-    "takeaway": "By 1450, gunpowder weapons, especially large-caliber cannons, allowed land-based empires to conquer territory at unprecedented speed by making traditional fortifications vulnerable. The Ottoman, Safavid, Mughal, Qing, and Russian empires all used gunpowder technology to expand. The Ottomans' 1453 conquest of Constantinople demonstrated what the new military technology could achieve, ending a thousand-year empire in weeks. Understanding how these empires expanded requires seeing both the military technology and the state power needed to deploy it.",
+      }    ],
+    "takeaway": "Land empires expanded through gunpowder weapons, organized armies, and the state resources needed to sustain them. Ottoman, Safavid, Mughal, Qing/Manchu, and other land empires grew across Eurasia, but expansion also created rivalries when states competed for territory, wealth, and legitimacy. Safavid–Mughal conflict and Songhai–Morocco conflict show the full mechanism: expansion created overlapping claims, political or religious disputes intensified conflict, and military technology shaped the outcome.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -180,8 +173,8 @@ module.exports = {
       {
         "num": "03",
         "skill": "Argumentation",
-        "text": "Was the conquest of Constantinople in 1453 a turning point in world history? Use evidence from the reading to support your argument.",
-        "placeholder": "The conquest of Constantinople in 1453 was / was not a turning point because..."
+        "text": "Choose either the Safavid–Mughal rivalry or Songhai's conflict with Morocco. Explain how a political or religious dispute contributed to the conflict, and use one specific piece of evidence.",
+        "placeholder": "The rivalry between ___ and ___ intensified because... Evidence that shows this is..."
       }
     ],
     "builderBody": "After answering the three questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.",
@@ -223,7 +216,7 @@ module.exports = {
     ],
     "supportCards": {
       "beforeYouRead": "Track the specific administrative systems each empire used, devshirme, mansabdar, civil service examination, and ask why each system looked the way it did. Strong historians connect the design of an institution to the specific problem it was meant to solve.",
-      "readingTarget": "By the end, you should be able to explain how at least two land-based empires used administrative systems to maintain loyalty and extract resources, and why rulers sometimes chose accommodation over direct control when governing diverse populations."
+      "readingTarget": "By the end, you should be able to explain three methods rulers used to legitimize and consolidate power: recruiting bureaucratic or military elites, using religious ideas/art/monumental architecture to legitimize rule, and using tribute or tax systems to generate revenue."
     },
     "vocabulary": [
       "Devshirme",
@@ -237,7 +230,11 @@ module.exports = {
       "Civil Service Examination",
       "Banner System",
       "Grand Vizier",
-      "Vizier"
+      "Vizier",
+      "Divine Right",
+      "Monumental Architecture",
+      "Versailles",
+      "Zamindar"
     ],
     "sections": [
       {
@@ -320,52 +317,47 @@ module.exports = {
       {
         "number": "4",
         "label": "Key Concept",
-        "heading": "Accommodation: Working With Local Elites",
+        "heading": "Legitimacy and Revenue: Making Rule Believable and Sustainable",
         "blocks": [
           {
             "type": "p",
-            "html": "Direct imperial control was impossible across the full geographic extent of any early modern empire. There were simply not enough trained administrators, enough loyal officials, or enough imperial soldiers to replace every local lord, tribal leader, religious authority, and community elder with someone directly answerable to the emperor. The practical response was accommodation, incorporating existing local elites into the imperial system rather than eliminating them."
+            "html": "Administration alone could not make subjects accept a ruler's authority. Rulers also used <span class=\"kt\">religious ideas, art, and monumental architecture</span> to make power look legitimate. European monarchs invoked <span class=\"kt\">divine right</span>; Mughal rulers sponsored mosques and mausolea; Qing emperors used imperial portraiture and Confucian political ritual; Louis XIV made <span class=\"kt\">Versailles</span> a stage on which royal power was impossible to ignore."
           },
           {
             "type": "p",
-            "html": "The most striking example is <span class=\"kt\">Akbar's</span> treatment of Rajput Hindu nobles in the Mughal Empire. The Mughals were Muslim rulers governing a majority-Hindu population. Aurangzeb, Akbar's great-grandson, would later impose strict Islamic governance, reimposing the jizya tax on non-Muslims and destroying Hindu temples, and his reign was marked by rebellion and instability. Akbar took the opposite approach. He abolished the jizya, married into Rajput royal families, recruited Rajput nobles into the mansabdar system at high ranks, and allowed them to maintain their Hindu religious practices. The result was that many of the most effective Mughal military commanders were Hindu Rajputs, loyal to the Mughal emperor not because they were forced to be but because the system gave them status, revenue, and a stake in imperial success."
+            "html": "Legitimacy answered 'why obey?' Revenue answered 'how can the state keep operating?' Empires collected <span class=\"kt\">tribute</span>, used <span class=\"kt\">tax farming</span>, or built new tax systems. Mughal <span class=\"kt\">zamindars</span> collected land revenue; Ottoman tax farmers advanced money to the state in return for collection rights; Mexica tribute lists recorded payments from conquered provinces; Ming rulers increasingly demanded taxes in hard currency."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Ottoman millet system</span> operated on a similar principle of structured accommodation. The Ottomans recognized several non-Muslim religious communities, Greek Orthodox Christians, Armenian Christians, and Jews, as semi-autonomous millets with the right to govern their own internal affairs. Each millet maintained its own courts, religious schools, charitable institutions, and community leaders. In exchange, millet leaders were responsible for collecting taxes from their communities and maintaining order. The Ottomans gained stability across an enormously diverse population without having to directly administer millions of non-Muslim subjects; the communities gained protection, self-governance, and religious freedom that was often greater than what they had experienced under previous rulers."
-          },
-          {
-            "type": "pull",
-            "html": "\"The most stable empires were not necessarily the most directly controlled, they were the ones that made local elites into stakeholders in imperial success.\""
+            "html": "These methods reinforced each other. Bureaucrats and military professionals extended the center's reach; religious and visual legitimation made authority credible; revenue paid the armies, officials, courts, and building projects that kept the empire powerful. Topic 3.2 is the interaction of all three, not administration by itself."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was accommodation a sign of imperial strength or weakness? Strong AP responses engage this question directly. <strong>Accommodation could be strength: it maintained stability across vast territories without the cost of direct control. It could also be weakness: it meant surrendering real power to local elites who might defect if conditions changed.</strong> The best arguments acknowledge both possibilities and use specific evidence, Akbar versus Aurangzeb, or Ottoman millet stability versus later challenges, to support a clear claim.</p>"
+          "label": "AP Thinking, Comparison",
+          "raw": "<p>Compare functions, not vocabulary. A Janissary, a Mughal tax collector, and Versailles look unrelated until you ask the shared question: <strong>how did this help a ruler consolidate authority?</strong> One creates loyal personnel, one generates revenue, and one turns royal power into a public political claim.</p>"
         }
-      }
-    ],
-    "takeaway": "The empires of c. 1450–1750 faced a common problem: how to govern millions of diverse subjects without enough reliable administrators and soldiers. Each empire developed distinctive solutions, the Ottomans recruited enslaved administrators through devshirme, the Mughals ranked nobles through mansabdar, the Qing relied on a Confucian examination bureaucracy. All three combined coercion with accommodation, recognizing that incorporating existing elites was often more effective than replacing them. The key AP skill: connect the design of each system to the specific problem, loyalty, revenue, or stability, it was built to solve.",
+      }    ],
+    "takeaway": "Land-based rulers consolidated power through three connected strategies. They recruited bureaucratic elites and military professionals to create loyal personnel; they used religion, art, and monumental architecture to legitimize authority; and they collected tribute or taxes to fund the state and further expansion. The key AP move is to explain the mechanism: who or what each method controlled, why subjects or elites responded to it, and how it strengthened central power.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
         "num": "01",
         "skill": "Causation",
-        "text": "Explain why land-based empires developed specialized administrative systems like devshirme or mansabdar. What problem were rulers trying to solve?",
-        "placeholder": "Rulers developed systems like devshirme and mansabdar because..."
+        "text": "Explain how one bureaucratic or military recruitment system, such as devshirme or mansabdar service, helped a ruler maintain centralized control.",
+        "placeholder": "The ___ system strengthened centralized control because..."
       },
       {
         "num": "02",
         "skill": "Comparison",
-        "text": "How did the Ottoman devshirme system and the Mughal mansabdar system each create loyalty to the emperor? What did they have in common, and how did they differ?",
-        "placeholder": "Both the devshirme and mansabdar systems created loyalty by..."
+        "text": "Choose one example of religious ideas, art, or monumental architecture. Explain how it helped legitimize a ruler's authority.",
+        "placeholder": "The ruler used ___ to legitimize authority by..."
       },
       {
         "num": "03",
-        "skill": "Argumentation",
-        "text": "Explain whether accommodation of local elites was a sign of imperial strength or weakness. Use specific evidence, such as Akbar and the Rajputs or the Ottoman millet system, to support your argument.",
-        "placeholder": "Accommodation of local elites was a sign of [strength/weakness] because..."
+        "skill": "Causation",
+        "text": "Explain how one revenue system, such as zamindar tax collection, Ottoman tax farming, Mexica tribute, or Ming hard-currency taxation, strengthened state power or expansion.",
+        "placeholder": "The revenue system strengthened the state because..."
       }
     ],
     "builderBody": "After answering the three questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.",
@@ -384,10 +376,10 @@ module.exports = {
   },
   "3.3": {
     "topicKey": "3.3",
-    "topicLabel": "3.3 - Empires and Belief Systems",
+    "topicLabel": "3.3 - Empires: Belief Systems",
     "sourceFile": "first-and-10-topic-3-3-belief-systems.html",
     "unitDir": "unit-3",
-    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 3.3 Empires and Belief Systems",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 3.3 Empires: Belief Systems",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
@@ -397,151 +389,144 @@ module.exports = {
     },
     "showFooter": true,
     "showFooterNote": false,
-    "headerSubtitle": "Topic 3.3, Empires and Belief Systems &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "God and <em>Empire</em>",
-    "deck": "Between c. 1450 and c. 1750, every major land-based empire used religion to legitimize authority, manage diversity, and wage political conflict. The Ottoman sultan claimed the caliphate. Shah Ismail I forced Persia to convert to Shia Islam. Akbar built a syncretic court philosophy at Fatehpur Sikri. Religion was never merely private belief, it was a governing tool, a source of legitimacy, and a cause of war.",
+    "headerSubtitle": "Topic 3.3, Empires: Belief Systems &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "Belief Systems <em>in Motion</em>",
+    "deck": "Between c. 1450 and c. 1750, belief systems did not simply disappear or get replaced. Christianity changed through Protestant and Catholic reform, Ottoman-Safavid political rivalry intensified an older Sunni-Shia divide, and Sikhism developed in Punjab amid sustained interaction between Hindu and Muslim communities. The AP task is continuity and change: identify what persisted, what changed, and what historical interaction explains the change.",
     "skillTags": [
+      "Continuity & Change",
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Sourcing"
     ],
     "supportCards": {
-      "beforeYouRead": "Track how each ruler used religion differently, and ask why. Was it to legitimize rule? To distinguish the empire from rivals? To manage a religiously diverse population? The reason behind the religious policy matters more than the policy itself.",
-      "readingTarget": "By the end, you should be able to explain how at least two different rulers used religion to legitimize authority or manage conflict, and compare Akbar's approach to religious diversity with at least one other ruler's approach, with specific evidence."
+      "beforeYouRead": "Do not treat every religious development as a ruler's policy. Track the belief system itself: what existed before 1450, what changed after 1450, and what political or cultural interaction helped produce that change.",
+      "readingTarget": "By the end, you should be able to explain the Protestant and Catholic Reformations, how Ottoman-Safavid rivalry intensified the Sunni-Shia split, and how Sikhism developed in South Asia in a context of Hindu-Muslim interaction."
     },
     "vocabulary": [
-      "Caliph",
+      "Protestant Reformation",
+      "Catholic Reformation",
+      "Martin Luther",
+      "Council of Trent",
+      "Jesuits",
       "Sunni",
       "Shia",
-      "Legitimacy",
-      "Din-i-Ilahi",
-      "Jizya",
-      "Syncretic",
-      "Sectarian",
-      "Shah",
-      "Chaldiran",
-      "Rajput",
-      "Aurangzeb"
+      "Ottoman Empire",
+      "Safavid Empire",
+      "Battle of Chaldiran",
+      "Sikhism",
+      "Guru Nanak",
+      "Punjab"
     ],
     "sections": [
       {
         "number": "1",
         "label": "Contextualization",
-        "heading": "Religion as a Tool of Rule",
+        "heading": "Continuity and Change, Not Religion as a Static List",
         "blocks": [
           {
             "type": "p",
-            "html": "In most of the world between c. 1450 and c. 1750, religion and political authority were inseparable. A ruler who claimed divine backing was not just making a spiritual statement, he was asserting that loyalty to him was a religious duty, that rebellion was not merely treason but heresy. Across the Ottoman, Safavid, Mughal, and Qing empires, religion shaped how rulers legitimized their power, organized their courts, and responded to the diverse populations they governed."
+            "html": "The major religions of Afro-Eurasia had existed for centuries before 1450. Christianity already stretched across Europe and parts of Africa and Asia; Islam linked communities from West Africa to Southeast Asia; Hindu and Muslim communities had interacted in South Asia for generations. Topic 3.3 therefore begins with <span class=\"kt\">continuity</span>: old belief systems remained powerful."
           },
           {
             "type": "p",
-            "html": "But religion was not simply a tool rulers picked up and set down at will. It could bind diverse subjects together, or divide them into factions. It could legitimize expansion as holy war, or justify resistance to a foreign conqueror. The most successful rulers understood that religion needed to be managed: used strategically to extend power, deployed carefully to maintain stability, and sometimes modified or synthesized to accommodate subjects who did not share the ruler's faith."
-          },
-          {
-            "type": "p",
-            "html": "Topic 3.3 examines three patterns: (1) rulers using religious titles and institutions to claim authority, (2) religious difference driving imperial conflict, and (3) rulers choosing between accommodation and enforcement when governing religiously diverse populations. All three patterns appear repeatedly on AP World History exams."
+            "html": "The historical question is what changed inside those traditions or in the relationships among them. Reform movements challenged institutions, political rivalries made religious divisions more consequential, and sustained interaction created the context in which new religious communities formed. A strong answer always names both the continuity and the change."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Before analyzing specific religious policies, place them in context: all rulers between c. 1450 and c. 1750 faced the challenge of governing diverse subjects without modern instruments of control. <strong>Religion was one of the most powerful available tools, for legitimacy, loyalty, and social cohesion, which is why rulers invested in it so heavily.</strong> Religious policy was political strategy, not just personal faith.</p>"
+          "label": "AP Thinking, Continuity &amp; Change",
+          "raw": "<p>Use the same sentence frame all day: <strong>___ continued, but ___ changed because ___.</strong> That keeps the topic centered on historical development rather than on memorizing beliefs.</p>"
         }
       },
       {
         "number": "2",
         "label": "Key Concept",
-        "heading": "Claiming Divine Authority: The Ottoman and Safavid Models",
+        "heading": "Christianity Changes: Protestant and Catholic Reformations",
         "blocks": [
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Ottoman sultans</span> built their religious legitimacy around the claim to the <span class=\"kt\">caliphate</span>, the political and spiritual leadership of the Sunni Muslim world. After the conquest of Egypt in 1517, the Ottoman sultan assumed the title of Caliph, positioning himself as the successor of the Prophet Muhammad and the protector of Mecca, Medina, and the entire Sunni Muslim community. This claim was not just symbolic. It drew pilgrims and scholars to Istanbul, gave the sultan authority to declare jihad, and projected Ottoman influence across the Muslim world well beyond the empire's borders."
+            "html": "In <span class=\"num\">1517</span>, <span class=\"kt\">Martin Luther</span> publicly challenged the sale of indulgences and, over time, the authority structure of the Roman Catholic Church. His arguments helped launch the <span class=\"kt\">Protestant Reformation</span>, which broke the institutional unity of western Christianity and contributed to new Protestant churches and confessional communities."
           },
           {
             "type": "p",
-            "html": "On the Ottoman empire's eastern border, the <span class=\"kt\">Safavid Shah Ismail I</span> took a radically different approach. When Ismail conquered Persia beginning in 1501, most of the population was Sunni Muslim. He forced conversion to <span class=\"kt\">Shia Islam</span>, executing those who refused and importing Shia scholars from across the Muslim world to staff his mosques and schools. The Shah positioned himself as both political and religious leader, descended from Shia imams and divinely guided by the line of Ali, the Prophet's cousin and the founding figure of Shia Islam."
+            "html": "The change was major, but Christianity did not cease to be Christianity. Protestant groups retained core Christian beliefs even as they rejected or reinterpreted Catholic institutions and practices. That is the continuity side of the story."
           },
           {
             "type": "p",
-            "html": "The strategic logic of Safavid Shia identity was clear: it created a religious boundary between the Safavid state and the Ottoman Sunni empire. If you lived in Persia, your religious identity, Shia, was inseparable from your political loyalty to the Shah. If you were Sunni, you were not merely heterodox; you were potentially loyal to the Ottomans, the empire's existential enemy. <span class=\"kt\">Forced conversion</span> was brutal, but it built an internal unity the Safavid state needed to survive between two larger Sunni powers."
+            "html": "Catholic leaders responded through the <span class=\"kt\">Catholic Reformation</span>. The Council of Trent reaffirmed Catholic doctrine while addressing abuses and improving clerical training; the Jesuits became influential educators and missionaries. The CED's important claim is that <strong>both Protestant and Catholic reform movements contributed to the continued growth and wider reach of Christianity</strong>."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Why did Shah Ismail force conversion to Shia Islam? <strong>Not primarily for theological reasons, but for political ones.</strong> A Shia Persian identity distinguished the Safavid state from Sunni Ottoman rivals, created internal cohesion, and made religious identity synonymous with political loyalty. When you explain Safavid religious policy on an AP exam, connect the cause (political survival) to the choice (forced conversion).</p>"
+          "raw": "<p>Do not write 'Luther caused religious freedom.' A stronger chain is: <strong>challenge to Church authority → institutional break and new denominations → Catholic reform and renewed missionary effort → Christianity continues but in changed forms.</strong></p>"
         }
       },
       {
         "number": "3",
         "label": "Key Concept",
-        "heading": "The Sunni-Shia Divide and the Battle of Chaldiran",
+        "heading": "An Old Divide Becomes a State Rivalry: Sunni and Shia",
         "blocks": [
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Sunni-Shia split</span> originated in the 7th century CE, immediately after the death of the Prophet Muhammad in 632. The core question was succession: who should lead the Muslim community? Sunnis accepted elected caliphs from the broader community. Shias believed authority should pass through the Prophet's family, specifically to his cousin and son-in-law Ali. Over centuries, theological and ritual differences deepened the divide, but it remained a primarily internal Muslim debate. By the early 16th century, the Ottoman-Safavid rivalry transformed it into a geopolitical fault line between two empires."
+            "html": "The <span class=\"kt\">Sunni-Shia split</span> began centuries before the Ottoman and Safavid empires, so the division itself is a continuity. The early modern change was political: the Ottoman state identified strongly with Sunni Islam while the Safavid state established Twelver Shia Islam as the dominant tradition in Iran."
           },
           {
             "type": "p",
-            "html": "The Ottoman Sultan <span class=\"kt\">Selim I</span> framed his invasion of Safavid territory in 1514 as a war against heresy as much as a territorial conquest. His fatwa, a religious ruling, declared Shia Muslims to be apostates deserving death. Ottoman artillery and disciplined Janissary infantry devastated the Safavid cavalry at the <span class=\"kt\">Battle of Chaldiran</span> in August 1514. The Safavid forces, relying on traditional cavalry tactics, were no match for Ottoman gunpowder weapons. Selim won decisively and briefly occupied the Safavid capital, Tabriz."
+            "html": "Political competition over territory and influence made sectarian identity more important. At the <span class=\"kt\">Battle of Chaldiran</span> in <span class=\"num\">1514</span>, Ottoman and Safavid forces fought a war that was both geopolitical and shaped by religious identity. The battle did not create the Sunni-Shia split; the rivalry <strong>intensified</strong> an existing division."
           },
           {
             "type": "p",
-            "html": "Yet the Ottomans could not hold Safavid territory. The Safavid state survived, regrouped, and maintained its Shia identity. The Ottoman-Safavid border shifted repeatedly across the 16th and 17th centuries as both empires won and lost territory in a series of costly wars, but neither side achieved decisive victory. The Sunni-Shia divide remained a permanent feature of the frontier, religious difference sustaining military rivalry across two centuries."
+            "html": "That distinction matters. If you write that the Ottomans and Safavids 'started' Sunni and Shia Islam, the chronology is wrong. If you write that political rivalry hardened and politicized an older religious division, you have the continuity-and-change mechanism the topic asks for."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>The Battle of Chaldiran (1514) is one of the most AP-tested events in Unit 3. <strong>Know both the military cause (Ottoman gunpowder advantage) and the religious cause (Sunni-Shia sectarian conflict framing the war as a holy crusade).</strong> The battle illustrates how religious difference was not just background context but an active driver of imperial conflict, the AP Causation skill in action.</p>"
+          "label": "AP Thinking, Historical Development",
+          "raw": "<p><strong>Continuity:</strong> Sunni and Shia traditions already existed. <strong>Change:</strong> rivalry between powerful Ottoman and Safavid states made that division a major geopolitical boundary.</p>"
         }
       },
       {
         "number": "4",
         "label": "Key Concept",
-        "heading": "Accommodation vs. Enforcement: Akbar and Aurangzeb",
+        "heading": "Sikhism Develops in Punjab",
         "blocks": [
           {
             "type": "p",
-            "html": "The Mughal Empire presented a different religious challenge. The Mughals were Muslim rulers, a minority, governing a predominantly Hindu majority across the Indian subcontinent. How should they manage their subjects' faith? The contrast between <span class=\"kt\">Akbar</span> (r. 1556–1605) and his great-grandson <span class=\"kt\">Aurangzeb</span> (r. 1658–1707) is one of the most productive comparisons in AP World History: two capable rulers of the same empire, separated by a century, who chose opposite approaches."
+            "html": "<span class=\"kt\">Guru Nanak</span> (1469–1539) taught in Punjab, a region where Hindu and Muslim communities had interacted for generations through trade, migration, political rule, devotional movements, and everyday life. Sikhism developed in this setting of sustained <span class=\"kt\">Hindu-Muslim interaction</span>."
           },
           {
             "type": "p",
-            "html": "Akbar pursued systematic accommodation. He abolished the <span class=\"kt\">jizya</span>, the poll tax on non-Muslims, which had been a standard feature of Islamic governance that marked Hindus as second-class subjects. He married Hindu Rajput noblewomen, incorporating their families into the Mughal court and military structure. He opened the highest imperial offices to men of every faith who proved themselves capable. At his court at <span class=\"kt\">Fatehpur Sikri</span>, he hosted weekly debates, the Ibadat Khana (House of Worship), among Muslim scholars, Hindu Brahmins, Jain monks, Zoroastrian priests, and Jesuit missionaries from Goa. From these conversations he developed the <span class=\"kt\">Din-i-Ilahi</span>, a personal spiritual synthesis drawing on the best of every tradition. It attracted few formal adherents but signaled Akbar's governing philosophy: in a diverse empire, no single faith could be the exclusive basis of imperial identity."
+            "html": "Nanak emphasized devotion to one God, ethical living, service, and spiritual equality while rejecting rigid ritual and social boundaries. Later gurus developed a distinctive Sikh community with its own institutions, scripture, practices, and identity."
           },
           {
             "type": "p",
-            "html": "Aurangzeb reversed course. He reimposed the jizya on non-Muslims, ordered the destruction of Hindu temples and Sikh shrines, dismissed non-Muslims from high office, and pursued strict Sunni orthodoxy across the empire. His decades-long campaign to subdue the Deccan Plateau, combined with revolts from Rajput nobles and Sikh communities who had once been loyal Mughal partners, drained imperial resources and accelerated the fragmentation of Mughal power. Aurangzeb died in 1707 leaving an empire already in decline."
-          },
-          {
-            "type": "pull",
-            "html": "\"Akbar's tolerance expanded the empire by drawing diverse elites into a shared imperial project. Aurangzeb's enforcement narrowed the empire's base of loyalty and fueled the rebellions that accelerated Mughal decline.\""
+            "html": "Be precise: Sikhism is not simply a mixture of Hinduism and Islam. The historical claim is contextual. Interaction among Hindu and Muslim communities helped shape the environment in which a <strong>new and distinct religious tradition</strong> developed."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>The Akbar-Aurangzeb comparison is a classic AP argumentation prompt. <strong>The evidence supports a clear claim: Akbar's accommodation was more effective as an imperial governing strategy because it expanded the empire's base of loyalty, while Aurangzeb's enforcement narrowed it, with measurable consequences.</strong> But strong AP responses also acknowledge complexity: Akbar's tolerance had limits, and Aurangzeb's enforcement reflected genuine religious conviction as well as political calculation.</p>"
+          "label": "Common Mistake to Avoid",
+          "raw": "<p>Do not call Sikhism a 'blend' and stop there. Explain the context of interaction, then recognize Sikhism as a distinct tradition that developed through the teachings of the gurus and the institutions of the Sikh community.</p>"
         }
       }
     ],
-    "takeaway": "Rulers between c. 1450 and c. 1750 used religion as a governing tool, to claim legitimacy, distinguish their state from rivals, and manage or enforce loyalty among diverse subjects. The Ottoman Sultan claimed the Sunni caliphate; Shah Ismail forced Shia conversion to build a distinct Safavid identity; Akbar built a syncretic court philosophy to govern a Hindu majority. The Sunni-Shia divide drove the Ottoman-Safavid conflict, climaxing at Chaldiran (1514). Akbar's accommodation expanded Mughal power; Aurangzeb's enforcement narrowed it. The key AP skill: connect the religious policy to the political problem it was meant to solve.",
+    "takeaway": "From 1450 to 1750, major belief systems showed both continuity and change. Christianity remained a major world religion but changed through Protestant and Catholic reform. The Sunni-Shia split continued from earlier centuries, but Ottoman-Safavid political rivalry intensified its geopolitical importance. In South Asia, sustained Hindu-Muslim interaction formed the context in which Sikhism developed as a distinct religious tradition. The AP move is always the same: name what continued, name what changed, and explain the interaction or conflict that produced the change.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
         "num": "01",
-        "skill": "Causation",
-        "text": "Explain why Shah Ismail I forced Persia to convert to Shia Islam. What problem was he trying to solve, and how did religious identity help solve it?",
-        "placeholder": "Shah Ismail forced conversion to Shia Islam because..."
+        "skill": "Continuity & Change",
+        "text": "Explain one major change caused by the Protestant Reformation and one way the Catholic Reformation responded. How did Christianity also show continuity?",
+        "placeholder": "Christianity changed because... It also continued because..."
       },
       {
         "num": "02",
-        "skill": "Causation",
-        "text": "Explain what caused the Battle of Chaldiran (1514). What were both the military and religious dimensions of this conflict?",
-        "placeholder": "The Battle of Chaldiran was caused by both military and religious factors. Militarily..."
+        "skill": "Continuity & Change",
+        "text": "Explain how Ottoman-Safavid political rivalry intensified an existing Sunni-Shia division. Make clear what already existed and what changed.",
+        "placeholder": "The Sunni-Shia division already existed, but Ottoman-Safavid rivalry changed..."
       },
       {
         "num": "03",
-        "skill": "Argumentation",
-        "text": "Was Akbar's approach to religious diversity more effective than Aurangzeb's? Use specific evidence to support your argument.",
-        "placeholder": "Akbar's approach was [more/less] effective because..."
+        "skill": "Contextualization",
+        "text": "Explain how Sikhism developed in South Asia in a context of interaction between Hinduism and Islam while becoming a distinct religious tradition.",
+        "placeholder": "Sikhism developed in a context where... It became distinct through..."
       }
     ],
     "builderBody": "After answering the three questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.",
@@ -556,7 +541,7 @@ module.exports = {
       "label": "Content Delivery &#8594;"
     },
     "lessonFile": "../unit-3/lesson-3-2-empires-administration.html",
-    "padQuestionNumbers": true,
+    "padQuestionNumbers": true
   },
   "3.4": {
     "topicKey": "3.4",
@@ -575,15 +560,15 @@ module.exports = {
     "showFooterNote": false,
     "headerSubtitle": "Topic 3.4, Comparison in Land-Based Empires &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "Comparing the <em>Empires</em>",
-    "deck": "Five major land-based empires, Ottoman, Safavid, Mughal, Qing, and Russian, dominated Afro-Eurasia between c. 1450 and c. 1750. They arose in different places, governed different peoples, and practiced different religions. Yet they shared striking patterns: gunpowder military technology, innovative administrative systems that bypassed hereditary nobles, and the use of religion to legitimize imperial authority. Understanding both the similarities and the differences is the core AP Comparison skill for Unit 3.",
+    "deck": "Five major land-based empires, Ottoman, Safavid, Mughal, Qing, and Russian, increased their influence between c. 1450 and c. 1750 through military expansion, administrative and revenue systems, and political or religious legitimation. Topic 3.4 asks you to compare those methods, not simply compare the empires as lists of features.",
     "skillTags": [
       "Comparison",
       "Argumentation",
       "Contextualization"
     ],
     "supportCards": {
-      "beforeYouRead": "Build a mental comparison chart as you read. For each empire, ask: What military technology? What administrative system? How did religion legitimize rule? What was the approach to governing non-dominant groups? Then ask: which of these are shared patterns, and which are distinctive?",
-      "readingTarget": "By the end, you should be able to state one meaningful similarity and one meaningful difference across at least two land-based empires, with specific evidence, and explain what the comparison reveals about imperial rule."
+      "beforeYouRead": "Build a comparison chart around one question: how did this empire increase its influence? Track military expansion, administration and revenue, elite incorporation, and religious or cultural legitimation. Compare the same category across empires.",
+      "readingTarget": "By the end, you should be able to compare the methods by which at least two empires increased their influence from 1450 to 1750, using specific evidence and explaining why the similarity or difference existed."
     },
     "vocabulary": [
       "Comparison",
@@ -692,27 +677,27 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "The five major land-based empires, Ottoman, Safavid, Mughal, Qing, and Russian, shared three patterns: gunpowder military expansion, administrative systems that bypassed hereditary nobles (devshirme, mansabdar, Banner system, Table of Ranks), and religion as legitimacy. They differed most sharply in religious policy, Safavid enforcement, Mughal accommodation, Ottoman millet, because different demographic realities demanded different solutions. For AP Comparison, always state the similarity or difference, provide evidence from two or more empires, and explain why the pattern existed. The \"why\" is what makes it an argument.",
+    "takeaway": "The major land-based empires increased influence through overlapping methods: military expansion, administrative and revenue systems, incorporation of elites, and religious or cultural legitimation. Their exact solutions differed because they governed different populations, territories, and rivalries. For AP Comparison, keep one method constant, identify a meaningful similarity or difference, provide evidence from both empires, and explain how the method increased influence and why the pattern existed.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
         "num": "01",
         "skill": "Comparison",
-        "text": "Identify one meaningful similarity between two of the major land-based empires in how they solved the administrative loyalty problem. Use specific evidence from each empire and explain why the similarity existed.",
-        "placeholder": "One similarity between the [Empire A] and [Empire B] in their administrative systems is..."
+        "text": "Choose two empires and compare one military method they used to increase influence. Identify a similarity or difference and explain how the method expanded or protected imperial power.",
+        "placeholder": "Both the ___ and ___ increased influence through military power by..."
       },
       {
         "num": "02",
         "skill": "Comparison",
-        "text": "Identify one meaningful difference between two empires in their approach to religious policy. Use specific evidence from each empire and explain what different conditions account for the difference.",
-        "placeholder": "[Empire A] and [Empire B] differed in their religious policies because..."
+        "text": "Choose two empires and compare one nonmilitary method, administration, revenue, elite incorporation, or legitimation, that they used to increase influence. Explain why their approaches were similar or different.",
+        "placeholder": "The ___ and ___ differed in how they increased influence through ___ because..."
       },
       {
         "num": "03",
         "skill": "Argumentation",
-        "text": "Write a comparison argument (2–3 sentences) that identifies either a similarity or a difference across two land-based empires and states what the comparison reveals about the nature of imperial rule c. 1450–c. 1750.",
-        "placeholder": "Write a comparison argument: [Empire A] and [Empire B] were [similar/different] in that... This comparison reveals that..."
+        "text": "Write a short argument answering the College Board question: compare the methods by which various empires increased their influence from 1450 to 1750. Use evidence from at least two empires.",
+        "placeholder": "Empires increased influence in similar/different ways because... Evidence from ___ and ___ shows..."
       }
     ],
     "builderBody": "After answering the three questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.",

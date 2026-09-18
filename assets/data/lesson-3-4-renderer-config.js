@@ -34,47 +34,56 @@
   };
 
   lesson.beInTheRoom = {
-    url: '',
-    desc: 'Travel across three empires and compare how rulers solved the same problems of expansion, administration, and religious diversity, then build a comparison argument from your observations.'
+    url: '../beintheroom/unit-3/imperial-influence-comparison.html',
+    desc: 'Act as a historical adviser. Compare one shared method across two land-based empires and explain how it increased imperial influence.'
   };
 
   lesson.skillBuilder = {
-    label: 'Comparison practice',
-    title: 'Writing a Comparison Argument: Land-Based Empires',
-    intro: 'A strong AP comparison argument is not a list. It requires a claim, evidence from at least two cases, and an explanation of what the comparison reveals. Topic 3.4 is the comparison topic, you need to be able to identify both similarities and differences across empires and explain why those patterns existed.',
+    label: 'Comparison and argumentation practice',
+    title: 'Comparing Methods of Increasing Imperial Influence',
+    intro: 'Topic 3.4 has one governing question: how did different empires increase their influence from 1450 to 1750? Choose a shared category, compare at least two empires, and explain how specific evidence supports the comparison rather than listing features.',
     steps: [
-      { label: 'Choose a dimension to compare', text: 'Religious policy, administrative systems, military recruitment, or treatment of conquered populations are the strongest comparison dimensions for Unit 3. Pick one and stick to it.' },
-      { label: 'Build the comparison', text: 'Name the similarity or difference, provide specific evidence from at least two empires, and explain why the pattern existed. The "why" is what separates description from historical analysis.' },
-      { label: 'Connect to a larger claim', text: 'The best comparison arguments conclude with a statement about what the comparison reveals, about the nature of imperial rule, the role of religion, or the challenge of governing diverse populations.' }
+      { label: 'Choose the method', text: 'Strong categories include military expansion, administrative or revenue systems, incorporation of elites, and religious or cultural legitimation.' },
+      { label: 'Build the comparison', text: 'Identify a meaningful similarity or difference, then use specific evidence from at least two empires. Keep the category constant so you are comparing the same process.' },
+      { label: 'Tie every example to influence', text: 'Do not stop at naming devshirme, mansabdars, monuments, or gunpowder. Explain how the method helped the empire expand, consolidate authority, command resources, win loyalty, or project legitimacy.' },
+      { label: 'Explain why the pattern existed', text: 'Finish by explaining why the similarity or difference makes historical sense given each empire\'s geography, population, rivalries, or governing problem.' }
     ],
-    prompt: 'Write a comparison argument (3–4 sentences) that identifies one meaningful similarity and one meaningful difference across at least two land-based empires from c. 1450–c. 1750. Include specific evidence and explain what the comparison reveals about imperial rule.'
+    prompt: 'Compare the methods by which at least two empires increased their influence from 1450 to 1750. Make a defensible comparison claim, use specific evidence from both empires, and explain how each method increased imperial influence.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Similarities Across Land-Based Empires',
-      subtitle: 'Checks Learning Target 1 — identifying and explaining shared patterns across empires.',
-      cardDesc: 'Gunpowder, loyalty systems, religious legitimation, shared patterns across five empires.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Identify one meaningful similarity shared by at least two of the major land-based empires (Ottoman, Safavid, Mughal, Qing, or Russian). Use specific evidence from each empire and explain why the similarity existed, what shared challenge produced the shared response?',
+      title: 'Checkpoint 1: Shared Methods of Increasing Influence',
+      subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
+      cardDesc: 'Compare one method two empires used to expand or consolidate influence.',
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
+      prompt: 'Choose TWO land-based empires and compare ONE method they used to increase their influence from 1450 to 1750. Identify one meaningful similarity or difference, use specific evidence from both empires, and explain how the method increased influence.',
       responseType: 'Checkpoint 1',
-      terms: ['gunpowder', 'devshirme', 'mansabdar', 'Banner system', 'caliphate', 'legitimacy', 'bureaucracy', 'loyalty', 'conquest', 'Janissary'],
-      focus: ['Name the similarity and identify the two or more empires it applies to.', 'Provide specific evidence from each empire.', 'Explain why similar conditions produced similar responses across different empires.']
+      terms: ['gunpowder', 'devshirme', 'mansabdar', 'Banner system', 'tax farming', 'tribute', 'monumental architecture', 'religious legitimation', 'elite incorporation', 'imperial influence'],
+      focus: ['Keep one shared comparison category.', 'Use specific evidence from both empires.', 'Explain how the method increased territorial, political, economic, or cultural influence.']
     },
     {
-      title: 'Checkpoint 2: Writing a Full Comparison Argument',
-      subtitle: 'Checks Learning Targets 2–3 — differences and constructing a supported argument.',
-      cardDesc: 'Religious policy, administration, and the skill of writing a full comparison argument.',
-      learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Write a comparison argument that addresses both a similarity and a difference across at least two land-based empires. Your response must include: (1) a clear comparison claim, (2) specific evidence from at least two empires, and (3) a statement explaining what the comparison reveals about the nature of imperial rule c. 1450–c. 1750.',
+      title: 'Checkpoint 2: Full Unit 3 Comparison Argument',
+      subtitle: 'Checks all Topic 3.4 learning targets and success criteria.',
+      cardDesc: 'A supported argument answering the College Board comparison objective.',
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target, lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
+      prompt: 'Compare the methods by which various empires increased their influence from 1450 to 1750. Write a short argument that includes a defensible comparison claim, at least two specific pieces of evidence from different empires, and explanation of how the evidence supports your claim. Include both a similarity and a difference or a meaningful qualification.',
       responseType: 'Checkpoint 2',
-      terms: ['comparison', 'similarity', 'difference', 'religious policy', 'millet system', 'Din-i-Ilahi', 'devshirme', 'mansabdar', 'Banner system', 'Akbar', 'Aurangzeb', 'Ottoman', 'Mughal', 'Qing'],
-      focus: ['State a clear comparison claim (similarity AND difference).', 'Use specific evidence from at least two different empires.', 'Explain what the comparison reveals, connect it to a broader historical argument about imperial rule.']
+      skill: 'Comparison and Argumentation',
+      terms: ['comparison', 'similarity', 'difference', 'qualification', 'gunpowder', 'administration', 'revenue', 'legitimation', 'religious policy', 'Ottoman', 'Safavid', 'Mughal', 'Qing', 'Russian'],
+      focus: ['Answer the exact increased-influence question.', 'Use relevant evidence from at least two different empires.', 'Explain how the evidence supports the comparison, not just what each empire did.']
     }
   ];
+
   lesson.collegeBoardKeyConcepts = [
+    {
+      "code": "Unit 3: Learning Objective D",
+      "theme": "Learning Objective",
+      "text": "Compare the methods by which various empires increased their influence from 1450 to 1750.",
+      "illustrativeExamples": []
+    },
     {
       "code": "KC-4.1",
       "theme": "Land-Based Empires",

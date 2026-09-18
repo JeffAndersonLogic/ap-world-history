@@ -31,48 +31,54 @@ window.BEHISTORICAL_LESSON = {
     unit: 'Unit 3: Land-Based Empires',
     topic: 'Topic 3.4',
     title: 'Comparison in Land-Based Empires',
-    subtitle: 'Using the AP Comparison skill to analyze similarities and differences across the Ottoman, Safavid, Mughal, Qing, and Russian empires, c. 1450–c. 1750',
+    subtitle: 'Compare the methods by which land-based empires increased their influence from 1450 to 1750',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
 
   learningTargets: [
     {
-      target: 'I can compare how at least two land-based empires expanded, identifying one key similarity and one key difference in their methods or contexts.',
-      kc: 'KC-4.3.II',
+      target: 'I can compare the methods by which various empires increased their influence from 1450 to 1750.',
+      kc: 'Unit 3: Learning Objective D',
       theme: 'Governance'
     },
     {
-      target: 'I can compare how at least two land-based empires administered their territories, explaining what their different approaches reveal about the challenges of governing diverse populations.',
+      target: 'I can compare specific methods of increasing influence, including military expansion, administration, revenue, and religious or cultural legitimation, across at least two empires.',
       kc: 'KC-4.3',
       theme: 'Governance'
     },
     {
-      target: 'I can construct a supported historical argument that compares land-based empires, using specific evidence to explain both similarities and differences.',
-      kc: 'KC-4.1.VI',
+      target: 'I can construct a supported comparison argument using specific Unit 3 evidence and explain how that evidence supports my claim.',
+      kc: 'Unit 3: Learning Objective D',
       theme: 'Argumentation'
     }
   ],
 
   successCriteria: [
     {
-      criteria: 'I can identify a specific similarity across two empires (e.g., both used conquered or foreign peoples as administrators) and explain why this similarity existed.',
-      kc: 'KC-4.3.II',
+      criteria: 'I can identify one meaningful similarity or difference in the methods two empires used to increase their influence and explain why the pattern existed.',
+      kc: 'Unit 3: Learning Objective D',
       theme: 'Governance'
     },
     {
-      criteria: 'I can identify a specific difference (e.g., Mughal accommodation vs. Ottoman enforcement of Sunni orthodoxy on conquered populations) and explain what accounts for it.',
+      criteria: 'I can use specific evidence about expansion, administration, revenue, or religious and cultural legitimation from at least two empires and connect each example to increased imperial influence.',
       kc: 'KC-4.3',
       theme: 'Governance'
     },
     {
-      criteria: 'I can write a comparison argument that includes: a claim, at least two pieces of evidence from different empires, and a statement that explains the significance of the comparison.',
-      kc: 'KC-4.1.VI',
+      criteria: 'I can write a comparison argument with a defensible claim, evidence from at least two empires, and explanation of how the evidence supports the comparison.',
+      kc: 'Unit 3: Learning Objective D',
       theme: 'Argumentation'
     }
   ],
 
   collegeBoardKeyConcepts: [
+    {
+      code: 'Unit 3: Learning Objective D',
+      theme: 'Learning Objective',
+      text: 'Compare the methods by which various empires increased their influence from 1450 to 1750.',
+      illustrativeExamples: []
+    },
     {
       code: 'KC-4.1',
       theme: 'Land-Based Empires',
