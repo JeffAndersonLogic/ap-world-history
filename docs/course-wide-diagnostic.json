@@ -1,0 +1,2735 @@
+{
+  "generatedAt": "2026-09-17T23:29:39.748Z",
+  "referenceBaselinePass": true,
+  "calibrationPass": true,
+  "counts": {
+    "REBUILD": 0,
+    "REPAIR": 0,
+    "REVIEW": 10,
+    "CLEAN": 61
+  },
+  "units": {
+    "1": {
+      "topics": 7,
+      "REBUILD": 0,
+      "REPAIR": 0,
+      "REVIEW": 1,
+      "CLEAN": 6
+    },
+    "2": {
+      "topics": 7,
+      "REBUILD": 0,
+      "REPAIR": 0,
+      "REVIEW": 0,
+      "CLEAN": 7
+    },
+    "3": {
+      "topics": 4,
+      "REBUILD": 0,
+      "REPAIR": 0,
+      "REVIEW": 1,
+      "CLEAN": 3
+    },
+    "4": {
+      "topics": 8,
+      "REBUILD": 0,
+      "REPAIR": 0,
+      "REVIEW": 2,
+      "CLEAN": 6
+    },
+    "5": {
+      "topics": 10,
+      "REBUILD": 0,
+      "REPAIR": 0,
+      "REVIEW": 1,
+      "CLEAN": 9
+    },
+    "6": {
+      "topics": 8,
+      "REBUILD": 0,
+      "REPAIR": 0,
+      "REVIEW": 1,
+      "CLEAN": 7
+    },
+    "7": {
+      "topics": 9,
+      "REBUILD": 0,
+      "REPAIR": 0,
+      "REVIEW": 2,
+      "CLEAN": 7
+    },
+    "8": {
+      "topics": 9,
+      "REBUILD": 0,
+      "REPAIR": 0,
+      "REVIEW": 1,
+      "CLEAN": 8
+    },
+    "9": {
+      "topics": 9,
+      "REBUILD": 0,
+      "REPAIR": 0,
+      "REVIEW": 1,
+      "CLEAN": 8
+    }
+  },
+  "results": [
+    {
+      "id": "1.1",
+      "unit": 1,
+      "topic": 1,
+      "title": "Song China: Power, Prosperity, and the Scholar's World",
+      "lessonPath": "assets/data/lesson-1-1-song-china.js",
+      "rendererPath": "assets/data/lesson-1-1-renderer-config.js",
+      "shell": "unit-1/lesson-1-1-song-china.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 36% (4/11); informational only"
+      ],
+      "codes": [
+        "KC-3.2.I.A",
+        "KC-3.1.III.D.i",
+        "KC-3.1.III.D.ii",
+        "KC-3.3.III.A.i",
+        "KC-3.1.I.D"
+      ],
+      "examples": [
+        "Filial piety in East Asia",
+        "Influence of Neo-Confucianism and Buddhism in East Asia",
+        "Confucian traditions of both respect for and expected deference from women",
+        "Chinese literary and scholarly traditions and their spread to Heian Japan and Korea",
+        "Theravada",
+        "Mahayana",
+        "Tibetan",
+        "Champa rice",
+        "Transportation innovations, like the Grand Canal expansion",
+        "Steel and iron production",
+        "Textiles and porcelains for export"
+      ],
+      "trace": 36,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "1.2",
+      "unit": 1,
+      "topic": 2,
+      "title": "Developments in Dar al-Islam",
+      "lessonPath": "assets/data/lesson-1-2-dar-al-islam.js",
+      "rendererPath": "assets/data/lesson-1-2-renderer-config.js",
+      "shell": "unit-1/lesson-1-2-dar-al-islam.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 0% (0/9); informational only"
+      ],
+      "codes": [
+        "KC-3.1.III.D.iii",
+        "KC-3.2.I",
+        "KC-3.1.III.A",
+        "KC-3.2.II.A.i"
+      ],
+      "examples": [
+        "Seljuk Empire",
+        "Mamluk sultanate of Egypt",
+        "Delhi sultanates",
+        "Advances in mathematics (Nasir al-Din al-Tusi)",
+        "Advances in literature ('A'ishah al-Ba'uniyyah)",
+        "Advances in medicine",
+        "Preservation and commentaries on Greek moral and natural philosophy",
+        "House of Wisdom in Abbasid Bagdad",
+        "Scholarly and cultural transfers in Muslim and Christian Spain"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "1.3",
+      "unit": 1,
+      "topic": 3,
+      "title": "Developments in South and Southeast Asia",
+      "lessonPath": "assets/data/lesson-1-3-south-southeast-asia.js",
+      "rendererPath": "assets/data/lesson-1-3-renderer-config.js",
+      "shell": "unit-1/lesson-1-3-south-southeast-asia.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 50% (5/10); informational only"
+      ],
+      "codes": [
+        "KC-3.1.III.D.iv",
+        "KC-3.2.I.B.i"
+      ],
+      "examples": [
+        "Bhakti movement",
+        "Sufism",
+        "Buddhist monasticism",
+        "Vijayanagara Empire",
+        "Srivijaya Empire",
+        "Rajput kingdoms",
+        "Khmer Empire",
+        "Majapahit",
+        "Sukhothai kingdom",
+        "Sinhala dynasties"
+      ],
+      "trace": 50,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "1.4",
+      "unit": 1,
+      "topic": 4,
+      "title": "State Building in the Americas",
+      "lessonPath": "assets/data/lesson-1-4-americas.js",
+      "rendererPath": "assets/data/lesson-1-4-renderer-config.js",
+      "shell": "unit-1/lesson-1-4-americas.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (6/6); informational only"
+      ],
+      "codes": [
+        "KC-3.2.I.D.i"
+      ],
+      "examples": [
+        "Maya city-states",
+        "Mexica",
+        "Inca",
+        "Chaco",
+        "Mesa Verde",
+        "Cahokia"
+      ],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "1.5",
+      "unit": 1,
+      "topic": 5,
+      "title": "State Building in Africa",
+      "lessonPath": "assets/data/lesson-1-5-africa.js",
+      "rendererPath": "assets/data/lesson-1-5-renderer-config.js",
+      "shell": "unit-1/lesson-1-5-africa.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 67% (2/3); informational only"
+      ],
+      "codes": [
+        "KC-3.2.I.D.ii"
+      ],
+      "examples": [
+        "Great Zimbabwe",
+        "Ethiopia",
+        "Hausa kingdoms"
+      ],
+      "trace": 67,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "1.6",
+      "unit": 1,
+      "topic": 6,
+      "title": "Developments in Europe",
+      "lessonPath": "assets/data/lesson-1-6-europe.js",
+      "rendererPath": "assets/data/lesson-1-6-renderer-config.js",
+      "shell": "unit-1/lesson-1-6-europe.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-3.1.III.D.v",
+        "KC-3.2.I.B.ii",
+        "KC-3.3.III.C"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "1.7",
+      "unit": 1,
+      "topic": 7,
+      "title": "Comparison in the Period from c. 1200 to c. 1450",
+      "lessonPath": "assets/data/lesson-1-7-comparison.js",
+      "rendererPath": "assets/data/lesson-1-7-renderer-config.js",
+      "shell": "unit-1/lesson-1-7-comparison.html",
+      "status": "REVIEW",
+      "red": [],
+      "yellow": [
+        "no BeInTheRoom scenario linked"
+      ],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-3.2",
+        "KC-3.2.I",
+        "KC-3.2.I.A",
+        "KC-3.2.I.B.i",
+        "KC-3.2.I.D.i",
+        "KC-3.2.I.D.ii"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": false,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "2.1",
+      "unit": 2,
+      "topic": 1,
+      "title": "The Silk Roads",
+      "lessonPath": "assets/data/lesson-2-1-silk-roads.js",
+      "rendererPath": "assets/data/lesson-2-1-renderer-config.js",
+      "shell": "unit-2/lesson-2-1-silk-roads.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 80% (4/5); informational only"
+      ],
+      "codes": [
+        "KC-3.1.I.A.i",
+        "KC-3.1.I.C.i",
+        "KC-3.3.I.B"
+      ],
+      "examples": [
+        "Kashgar",
+        "Samarkand",
+        "Bills of exchange",
+        "Banking houses",
+        "Use of paper money"
+      ],
+      "trace": 80,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "2.2",
+      "unit": 2,
+      "topic": 2,
+      "title": "The Mongol Empire",
+      "lessonPath": "assets/data/lesson-2-2-mongol-empire.js",
+      "rendererPath": "assets/data/lesson-2-2-renderer-config.js",
+      "shell": "unit-2/lesson-2-2-mongol-empire.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 0% (0/3); informational only"
+      ],
+      "codes": [
+        "KC-3.2.I.B.iii",
+        "KC-3.1.I.E.i",
+        "KC-3.2.II.A.ii"
+      ],
+      "examples": [
+        "Transfer of Greco-Islamic medical knowledge to western Europe",
+        "Transfer of numbering systems to Europe",
+        "Adoption of Uyghur script"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "2.3",
+      "unit": 2,
+      "topic": 3,
+      "title": "Exchange in the Indian Ocean",
+      "lessonPath": "assets/data/lesson-2-3-indian-ocean.js",
+      "rendererPath": "assets/data/lesson-2-3-renderer-config.js",
+      "shell": "unit-2/lesson-2-3-indian-ocean.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 67% (4/6); informational only"
+      ],
+      "codes": [
+        "KC-3.1.I.A.ii",
+        "KC-3.1.I.C.ii",
+        "KC-3.1.I.A.iii",
+        "KC-3.1.III.B",
+        "KC-3.2.II.A.iii",
+        "KC-3.1.II.A.i"
+      ],
+      "examples": [
+        "City-states of the Swahili Coast",
+        "Gujarat",
+        "Sultanate of Malacca",
+        "Arab and Persian communities in East Africa",
+        "Chinese merchant communities in Southeast Asia",
+        "Malay communities in the Indian Ocean basin"
+      ],
+      "trace": 67,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "2.4",
+      "unit": 2,
+      "topic": 4,
+      "title": "Trans-Saharan Trade Routes",
+      "lessonPath": "assets/data/lesson-2-4-trans-saharan.js",
+      "rendererPath": "assets/data/lesson-2-4-renderer-config.js",
+      "shell": "unit-2/lesson-2-4-trans-saharan.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (2/2); informational only"
+      ],
+      "codes": [
+        "KC-3.1.II.A.ii",
+        "KC-3.1.I.A.iv",
+        "KC-3.1.I.E.ii"
+      ],
+      "examples": [
+        "Camel saddle",
+        "Caravans"
+      ],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "2.5",
+      "unit": 2,
+      "topic": 5,
+      "title": "Cultural Consequences of Connectivity",
+      "lessonPath": "assets/data/lesson-2-5-cultural-consequences.js",
+      "rendererPath": "assets/data/lesson-2-5-renderer-config.js",
+      "shell": "unit-2/lesson-2-5-cultural-consequences.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 38% (3/8); informational only"
+      ],
+      "codes": [
+        "KC-3.1.III.D",
+        "KC-3.3.II",
+        "KC-3.1.III.C"
+      ],
+      "examples": [
+        "Influence of Buddhism in East Asia",
+        "Spread of Hinduism and Buddhism into Southeast Asia",
+        "Spread of Islam in sub-Saharan Africa and Asia",
+        "Gunpowder from China",
+        "Paper from China",
+        "Ibn Battuta",
+        "Margery Kempe",
+        "Marco Polo"
+      ],
+      "trace": 38,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "2.6",
+      "unit": 2,
+      "topic": 6,
+      "title": "Environmental Consequences of Connectivity",
+      "lessonPath": "assets/data/lesson-2-6-environmental-consequences.js",
+      "rendererPath": "assets/data/lesson-2-6-renderer-config.js",
+      "shell": "unit-2/lesson-2-6-environmental-consequences.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 67% (2/3); informational only"
+      ],
+      "codes": [
+        "KC-3.1.IV"
+      ],
+      "examples": [
+        "Bananas in Africa",
+        "New rice varieties in East Asia",
+        "Spread of citrus in the Mediterranean"
+      ],
+      "trace": 67,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "2.7",
+      "unit": 2,
+      "topic": 7,
+      "title": "Comparison of Economic Exchange",
+      "lessonPath": "assets/data/lesson-2-7-comparison.js",
+      "rendererPath": "assets/data/lesson-2-7-renderer-config.js",
+      "shell": "unit-2/lesson-2-7-comparison.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-3.1",
+        "KC-3.1.I.A.i",
+        "KC-3.1.I.C.i",
+        "KC-3.3",
+        "KC-3.3.I.B"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "3.1",
+      "unit": 3,
+      "topic": 1,
+      "title": "Empires Expand",
+      "lessonPath": "assets/data/lesson-3-1-empires-expand.js",
+      "rendererPath": "assets/data/lesson-3-1-renderer-config.js",
+      "shell": "unit-3/lesson-3-1-empires-expand.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 0% (0/2); informational only"
+      ],
+      "codes": [
+        "KC-4.3.II",
+        "KC-4.3.II.B",
+        "KC-4.3.III.i"
+      ],
+      "examples": [
+        "Safavid–Mughal conflict",
+        "Songhai Empire’s conflict with Morocco"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "3.2",
+      "unit": 3,
+      "topic": 2,
+      "title": "Empires: Administration",
+      "lessonPath": "assets/data/lesson-3-2-empires-administration.js",
+      "rendererPath": "assets/data/lesson-3-2-renderer-config.js",
+      "shell": "unit-3/lesson-3-2-empires-administration.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 8% (1/13); informational only"
+      ],
+      "codes": [
+        "KC-4.3.I.C",
+        "KC-4.3.I.A",
+        "KC-4.3.I.D"
+      ],
+      "examples": [
+        "Ottoman devshirme",
+        "Salaried samurai",
+        "Mexica practice of human sacrifice",
+        "European notions of divine right",
+        "Songhai promotion of Islam",
+        "Qing imperial portraits",
+        "Incan sun temple of Cuzco",
+        "Mughal mausolea and mosques",
+        "European palaces, such as Versailles",
+        "Mughal zamindar tax collection",
+        "Ottoman tax farming",
+        "Mexica tribute lists",
+        "Ming practice of collecting taxes in hard currency"
+      ],
+      "trace": 8,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "3.3",
+      "unit": 3,
+      "topic": 3,
+      "title": "Empires and Belief Systems",
+      "lessonPath": "assets/data/lesson-3-3-belief-systems.js",
+      "rendererPath": "assets/data/lesson-3-3-renderer-config.js",
+      "shell": "unit-3/lesson-3-3-belief-systems.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-4.1.VI.i",
+        "KC-4.1.VI.ii",
+        "KC-4.1.VI.iii"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "3.4",
+      "unit": 3,
+      "topic": 4,
+      "title": "Comparison in Land-Based Empires",
+      "lessonPath": "assets/data/lesson-3-4-comparison.js",
+      "rendererPath": "assets/data/lesson-3-4-renderer-config.js",
+      "shell": "unit-3/lesson-3-4-comparison.html",
+      "status": "REVIEW",
+      "red": [],
+      "yellow": [
+        "no BeInTheRoom scenario linked"
+      ],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-4.1",
+        "KC-4.1.VI",
+        "KC-4.3",
+        "KC-4.3.II",
+        "KC-4.3.II.B",
+        "KC-4.3.III.i"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": false,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "4.1",
+      "unit": 4,
+      "topic": 1,
+      "title": "Technological Innovations",
+      "lessonPath": "assets/data/lesson-4-1-technological-innovations.js",
+      "rendererPath": "assets/data/lesson-4-1-renderer-config.js",
+      "shell": "unit-4/lesson-4-1-technological-innovations.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 83% (5/6); informational only"
+      ],
+      "codes": [
+        "KC-4.1.II",
+        "KC-4.1.II.A"
+      ],
+      "examples": [
+        "Caravel",
+        "Carrack",
+        "Fluyt",
+        "Lateen sail",
+        "Compass",
+        "Astronomical charts"
+      ],
+      "trace": 83,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "4.2",
+      "unit": 4,
+      "topic": 2,
+      "title": "Exploration: Causes and Events",
+      "lessonPath": "assets/data/lesson-4-2-exploration.js",
+      "rendererPath": "assets/data/lesson-4-2-renderer-config.js",
+      "shell": "unit-4/lesson-4-2-exploration.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-4.1.III",
+        "KC-4.1.III.A",
+        "KC-4.1.III.B",
+        "KC-4.1.III.C"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "4.3",
+      "unit": 4,
+      "topic": 3,
+      "title": "Columbian Exchange",
+      "lessonPath": "assets/data/lesson-4-3-columbian-exchange.js",
+      "rendererPath": "assets/data/lesson-4-3-renderer-config.js",
+      "shell": "unit-4/lesson-4-3-columbian-exchange.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 80% (4/5); informational only"
+      ],
+      "codes": [
+        "KC-4.1.V",
+        "KC-4.1.V.A",
+        "KC-4.1.V.B",
+        "KC-4.1.V.C",
+        "KC-4.1.V.D"
+      ],
+      "examples": [
+        "Horses",
+        "Pigs",
+        "Cattle",
+        "Okra",
+        "Rice"
+      ],
+      "trace": 80,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "4.4",
+      "unit": 4,
+      "topic": 4,
+      "title": "Maritime Empires Established",
+      "lessonPath": "assets/data/lesson-4-4-maritime-empires-established.js",
+      "rendererPath": "assets/data/lesson-4-4-renderer-config.js",
+      "shell": "unit-4/lesson-4-4-maritime-empires-established.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 0% (0/6); informational only"
+      ],
+      "codes": [
+        "KC-4.3.II.A.i",
+        "KC-4.3.II.C",
+        "KC-4.3.II.A.ii",
+        "KC-4.3.II.A.iii",
+        "KC-4.2.II.D",
+        "KC-4.2.II.B",
+        "KC-4.2.II.C"
+      ],
+      "examples": [
+        "Ming China",
+        "Tokugawa Japan",
+        "Swahili Arabs",
+        "Omanis",
+        "Gujaratis",
+        "Javanese"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "4.5",
+      "unit": 4,
+      "topic": 5,
+      "title": "Maritime Empires Maintained and Developed",
+      "lessonPath": "assets/data/lesson-4-5-maritime-empires-maintained.js",
+      "rendererPath": "assets/data/lesson-4-5-renderer-config.js",
+      "shell": "unit-4/lesson-4-5-maritime-empires-maintained.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 0% (0/5); informational only"
+      ],
+      "codes": [
+        "KC-4.1.IV.C",
+        "KC-4.3.III.ii",
+        "KC-4.1.IV.D.i",
+        "KC-4.1.IV",
+        "KC-4.2.II.A",
+        "KC-4.2.III.C",
+        "KC-4.1.IV.D.ii",
+        "KC-4.1.VI"
+      ],
+      "examples": [
+        "Muslim–European rivalry in the Indian Ocean",
+        "Moroccan conflict with the Songhai Empire",
+        "Western Europe—wool and linen",
+        "India—cotton",
+        "China—silk"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "4.6",
+      "unit": 4,
+      "topic": 6,
+      "title": "Internal and External Challenges to State Power",
+      "lessonPath": "assets/data/lesson-4-6-internal-external-challenges.js",
+      "rendererPath": "assets/data/lesson-4-6-renderer-config.js",
+      "shell": "unit-4/lesson-4-6-internal-external-challenges.html",
+      "status": "REVIEW",
+      "red": [],
+      "yellow": [
+        "target/criteria KC not in runtime CED: KC-4.3.III.ii"
+      ],
+      "notes": [
+        "reading example trace 0% (0/8); informational only"
+      ],
+      "codes": [
+        "KC-4.3.III.iii",
+        "KC-5.3.III.C"
+      ],
+      "examples": [
+        "Pueblo Revolts",
+        "Fronde",
+        "Cossack revolts",
+        "Maratha conflict with Mughals",
+        "Ana Nzinga’s resistance (as ruler of Ndongo and Matamba)",
+        "Metacom’s War (King Philip’s War)",
+        "Establishment of Maroon societies in the Caribbean and Brazil",
+        "Resistance of enslaved persons in North America"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "4.7",
+      "unit": 4,
+      "topic": 7,
+      "title": "Changing Social Hierarchies",
+      "lessonPath": "assets/data/lesson-4-7-changing-social-hierarchies.js",
+      "rendererPath": "assets/data/lesson-4-7-renderer-config.js",
+      "shell": "unit-4/lesson-4-7-changing-social-hierarchies.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 0% (0/6); informational only"
+      ],
+      "codes": [
+        "KC-4.3.I.B",
+        "KC-4.2.III.A",
+        "KC-4.2.III.B"
+      ],
+      "examples": [
+        "Expulsion of Jews from Spain and Portugal; the acceptance of Jews in the Ottoman Empire",
+        "Restrictive policies against Han Chinese in Qing China",
+        "Varying status of different classes of women within the Ottoman Empire",
+        "Ottoman timars",
+        "Russian boyars",
+        "European nobility"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "4.8",
+      "unit": 4,
+      "topic": 8,
+      "title": "Continuity and Change in the Period from c. 1450 to c. 1750",
+      "lessonPath": "assets/data/lesson-4-8-continuity-and-change.js",
+      "rendererPath": "assets/data/lesson-4-8-renderer-config.js",
+      "shell": "unit-4/lesson-4-8-continuity-and-change.html",
+      "status": "REVIEW",
+      "red": [],
+      "yellow": [
+        "no BeInTheRoom scenario linked"
+      ],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-4.1",
+        "KC-4.1.II",
+        "KC-4.1.II.A",
+        "KC-4.2",
+        "KC-4.2.II",
+        "KC-4.3",
+        "KC-4.3.III.ii"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": false,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "5.1",
+      "unit": 5,
+      "topic": 1,
+      "title": "The Enlightenment",
+      "lessonPath": "assets/data/lesson-5-1-enlightenment.js",
+      "rendererPath": "assets/data/lesson-5-1-renderer-config.js",
+      "shell": "unit-5/lesson-5-1-enlightenment.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 0% (0/3); informational only"
+      ],
+      "codes": [
+        "KC-5.3.I.A",
+        "KC-5.3.I",
+        "KC-5.3.II.i",
+        "KC-5.3.I.C",
+        "KC-5.3.IV.B"
+      ],
+      "examples": [
+        "Mary Wollstonecraft’s A Vindication of the Rights of Woman",
+        "Olympe de Gouges’s Declaration of the Rights of Woman and of the Female Citizen",
+        "Seneca Falls Conference (1848) organized by Elizabeth Cady Stanton and Lucretia Mott"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "5.2",
+      "unit": 5,
+      "topic": 2,
+      "title": "Nationalism and Revolutions",
+      "lessonPath": "assets/data/lesson-5-2-nationalism-and-revolutions.js",
+      "rendererPath": "assets/data/lesson-5-2-renderer-config.js",
+      "shell": "unit-5/lesson-5-2-nationalism-and-revolutions.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 17% (1/6); informational only"
+      ],
+      "codes": [
+        "KC-5.3.II.ii",
+        "KC-5.3",
+        "KC-5.3.IV.A.i",
+        "KC-5.3.III.B",
+        "KC-5.3.I.B",
+        "KC-5.3.II.iii"
+      ],
+      "examples": [
+        "Propaganda Movement in the Philippines",
+        "Maori nationalism and the New Zealand wars in New Zealand",
+        "Puerto Rico—writings of Lola Rodríguez de Tió",
+        "German and Italian unifications",
+        "Balkan nationalisms",
+        "Ottomanism"
+      ],
+      "trace": 17,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "5.3",
+      "unit": 5,
+      "topic": 3,
+      "title": "The Industrial Revolution Begins",
+      "lessonPath": "assets/data/lesson-5-3-industrial-revolution-begins.js",
+      "rendererPath": "assets/data/lesson-5-3-renderer-config.js",
+      "shell": "unit-5/lesson-5-3-industrial-revolution-begins.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-5.1.I.A",
+        "KC-5.1.I.C"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "5.4",
+      "unit": 5,
+      "topic": 4,
+      "title": "Industrialization Spreads",
+      "lessonPath": "assets/data/lesson-5-4-industrialization-spreads.js",
+      "rendererPath": "assets/data/lesson-5-4-renderer-config.js",
+      "shell": "unit-5/lesson-5-4-industrialization-spreads.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 0% (0/3); informational only"
+      ],
+      "codes": [
+        "KC-5.1.II.B",
+        "KC-5.1.I.D"
+      ],
+      "examples": [
+        "Shipbuilding in India and Southeast Asia",
+        "Iron works in India",
+        "Textile production in India and Egypt"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "5.5",
+      "unit": 5,
+      "topic": 5,
+      "title": "Technology of Industrialization",
+      "lessonPath": "assets/data/lesson-5-5-technology-of-industrialization.js",
+      "rendererPath": "assets/data/lesson-5-5-renderer-config.js",
+      "shell": "unit-5/lesson-5-5-technology-of-industrialization.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-5.1.I.B",
+        "KC-5.1.I.E",
+        "KC-5.1.IV"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "5.6",
+      "unit": 5,
+      "topic": 6,
+      "title": "Industrialization: Government and Society",
+      "lessonPath": "assets/data/lesson-5-6-industrialization-government-and-society.js",
+      "rendererPath": "assets/data/lesson-5-6-renderer-config.js",
+      "shell": "unit-5/lesson-5-6-industrialization-government-and-society.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 0% (0/1); informational only"
+      ],
+      "codes": [
+        "KC-5.1.V.C",
+        "KC-5.2.II.A",
+        "KC-5.1.VI.A",
+        "KC-5.1.VI.B",
+        "KC-5.1.VI.C"
+      ],
+      "examples": [
+        "Muhammad Ali’s development of a cotton textile industry in Egypt"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "5.7",
+      "unit": 5,
+      "topic": 7,
+      "title": "Economic Developments and Innovations",
+      "lessonPath": "assets/data/lesson-5-7-economic-developments-and-innovations.js",
+      "rendererPath": "assets/data/lesson-5-7-renderer-config.js",
+      "shell": "unit-5/lesson-5-7-economic-developments-and-innovations.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 50% (2/4); informational only"
+      ],
+      "codes": [
+        "KC-5.1.III.A",
+        "KC-5.1.III.B",
+        "KC-5.1"
+      ],
+      "examples": [
+        "Hong Kong and Shanghai Banking Corporation (HSBC)",
+        "Unilever based in England and the Netherlands and operating in British West Africa and the Belgian Congo",
+        "Stock markets",
+        "Limited-liability corporations"
+      ],
+      "trace": 50,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "5.8",
+      "unit": 5,
+      "topic": 8,
+      "title": "Reactions to the Industrial Economy",
+      "lessonPath": "assets/data/lesson-5-8-reactions-to-industrial-economy.js",
+      "rendererPath": "assets/data/lesson-5-8-renderer-config.js",
+      "shell": "unit-5/lesson-5-8-reactions-to-industrial-economy.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-5.1.V.D",
+        "KC-5.1.V.A",
+        "KC-5.3.IV.A.ii",
+        "KC-5.1.V.B"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "5.9",
+      "unit": 5,
+      "topic": 9,
+      "title": "Society and the Industrial Age",
+      "lessonPath": "assets/data/lesson-5-9-society-and-the-industrial-age.js",
+      "rendererPath": "assets/data/lesson-5-9-renderer-config.js",
+      "shell": "unit-5/lesson-5-9-society-and-the-industrial-age.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-5.1.VI.A",
+        "KC-5.1.VI.B",
+        "KC-5.1.VI.C"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "5.10",
+      "unit": 5,
+      "topic": 10,
+      "title": "Continuity and Change in the Industrial Age",
+      "lessonPath": "assets/data/lesson-5-10-continuity-and-change-in-the-industrial-age.js",
+      "rendererPath": "assets/data/lesson-5-10-renderer-config.js",
+      "shell": "unit-5/lesson-5-10-continuity-and-change-in-the-industrial-age.html",
+      "status": "REVIEW",
+      "red": [],
+      "yellow": [
+        "no BeInTheRoom scenario linked"
+      ],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-5.1",
+        "KC-5.1.IV",
+        "KC-5.3",
+        "KC-5.3.I.A",
+        "KC-5.3.I",
+        "KC-5.3.II.i"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": false,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "6.1",
+      "unit": 6,
+      "topic": 1,
+      "title": "Rationales for Imperialism",
+      "lessonPath": "assets/data/lesson-6-1-rationales-for-imperialism.js",
+      "rendererPath": "assets/data/lesson-6-1-renderer-config.js",
+      "shell": "unit-6/lesson-6-1-rationales-for-imperialism.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-5.2.III"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "6.2",
+      "unit": 6,
+      "topic": 2,
+      "title": "State Expansion",
+      "lessonPath": "assets/data/lesson-6-2-state-expansion.js",
+      "rendererPath": "assets/data/lesson-6-2-renderer-config.js",
+      "shell": "unit-6/lesson-6-2-state-expansion.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 0% (0/6); informational only"
+      ],
+      "codes": [
+        "KC-5.2.I.A",
+        "KC-5.2.I.B",
+        "KC-5.2.I.C",
+        "KC-5.2.I.D",
+        "KC-5.2.II.B"
+      ],
+      "examples": [
+        "Shift from the private ownership of the Congo by King Leopold II to the Belgium government",
+        "Shift from the Dutch East India Company to Dutch government control in Indonesia and Southeast Asia",
+        "Britain in West Africa",
+        "Belgium in the Congo",
+        "French in West Africa",
+        "New Zealand"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "6.3",
+      "unit": 6,
+      "topic": 3,
+      "title": "Indigenous Responses to State Expansion",
+      "lessonPath": "assets/data/lesson-6-3-indigenous-responses-to-state-expansion.js",
+      "rendererPath": "assets/data/lesson-6-3-renderer-config.js",
+      "shell": "unit-6/lesson-6-3-indigenous-responses-to-state-expansion.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 9% (1/11); informational only"
+      ],
+      "codes": [
+        "KC-5.3.III.D",
+        "KC-5.2.II.C",
+        "KC-5.3.III.E"
+      ],
+      "examples": [
+        "Túpac Amaru II’s rebellion in Peru",
+        "Samory Touré’s military battles in West Africa",
+        "Yaa Asantewaa War in West Africa",
+        "1857 rebellion in India",
+        "Establishment of independent states in the Balkans",
+        "Sokoto Caliphate in modern-day Nigeria",
+        "Cherokee Nation",
+        "Zulu Kingdom",
+        "Ghost Dance in the U.S.",
+        "Xhosa Cattle-Killing Movement in Southern Africa",
+        "Mahdist wars in Sudan"
+      ],
+      "trace": 9,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "6.4",
+      "unit": 6,
+      "topic": 4,
+      "title": "Global Economic Development",
+      "lessonPath": "assets/data/lesson-6-4-global-economic-development.js",
+      "rendererPath": "assets/data/lesson-6-4-renderer-config.js",
+      "shell": "unit-6/lesson-6-4-global-economic-development.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 0% (0/6); informational only"
+      ],
+      "codes": [
+        "KC-5.1.II.A"
+      ],
+      "examples": [
+        "Cotton production in Egypt",
+        "Rubber extraction in the Amazon and the Congo basin",
+        "The palm oil trade in West Africa",
+        "The guano industries in Peru and Chile",
+        "Meat from Argentina and Uruguay",
+        "Diamonds from Africa"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "6.5",
+      "unit": 6,
+      "topic": 5,
+      "title": "Economic Imperialism",
+      "lessonPath": "assets/data/lesson-6-5-economic-imperialism.js",
+      "rendererPath": "assets/data/lesson-6-5-renderer-config.js",
+      "shell": "unit-6/lesson-6-5-economic-imperialism.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 0% (0/6); informational only"
+      ],
+      "codes": [
+        "KC-5.2.I.E",
+        "KC-5.1.II.C"
+      ],
+      "examples": [
+        "Britain and France expanding their influence in China through the Opium Wars",
+        "The construction of the Port of Buenos Aires with the support of British firms",
+        "Opium produced in the Middle East or South Asia and exported to China",
+        "Cotton grown in South Asia and Egypt and exported to Great Britain and other European countries",
+        "Palm oil produced in sub-Saharan Africa and exported to European countries",
+        "Copper extracted in Chile"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "6.6",
+      "unit": 6,
+      "topic": 6,
+      "title": "Causes of Migration",
+      "lessonPath": "assets/data/lesson-6-6-causes-of-migration.js",
+      "rendererPath": "assets/data/lesson-6-6-renderer-config.js",
+      "shell": "unit-6/lesson-6-6-causes-of-migration.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 0% (0/5); informational only"
+      ],
+      "codes": [
+        "KC-5.4.I",
+        "KC-5.4.I.B",
+        "KC-5.4.II.A",
+        "KC-5.4.II.B"
+      ],
+      "examples": [
+        "Japanese agricultural workers in the Pacific",
+        "Lebanese merchants in the Americas",
+        "Italian industrial workers in Argentina",
+        "Irish to the United States",
+        "British engineers and geologists to South Asia and Africa"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "6.7",
+      "unit": 6,
+      "topic": 7,
+      "title": "Effects of Migration",
+      "lessonPath": "assets/data/lesson-6-7-effects-of-migration.js",
+      "rendererPath": "assets/data/lesson-6-7-renderer-config.js",
+      "shell": "unit-6/lesson-6-7-effects-of-migration.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 33% (2/6); informational only"
+      ],
+      "codes": [
+        "KC-5.4.III.A",
+        "KC-5.4.III.B",
+        "KC-5.4.III.C"
+      ],
+      "examples": [
+        "Chinese in Southeast Asia, the Caribbean, South America, and North America",
+        "Indians in East and Southern Africa, the Caribbean, and Southeast Asia",
+        "Irish in North America",
+        "Italians in North and South America",
+        "Chinese Exclusion Act",
+        "White Australia policy"
+      ],
+      "trace": 33,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "6.8",
+      "unit": 6,
+      "topic": 8,
+      "title": "Causation in the Imperial Age",
+      "lessonPath": "assets/data/lesson-6-8-causation-in-the-imperial-age.js",
+      "rendererPath": "assets/data/lesson-6-8-renderer-config.js",
+      "shell": "unit-6/lesson-6-8-causation-in-the-imperial-age.html",
+      "status": "REVIEW",
+      "red": [],
+      "yellow": [
+        "no BeInTheRoom scenario linked"
+      ],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "KC-5.1",
+        "KC-5.2",
+        "KC-5.3",
+        "KC-5.4"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": false,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "7.1",
+      "unit": 7,
+      "topic": 1,
+      "title": "Shifting Power After 1900",
+      "lessonPath": "assets/data/lesson-7-1-shifting-power.js",
+      "rendererPath": "assets/data/lesson-7-1-renderer-config.js",
+      "shell": "unit-7/lesson-7-1-shifting-power.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 7: Learning Objective A",
+        "KC-6.2.I",
+        "KC-6.2.I.A",
+        "KC-6.2.II.D"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "7.2",
+      "unit": 7,
+      "topic": 2,
+      "title": "Causes of World War I",
+      "lessonPath": "assets/data/lesson-7-2-causes-wwi.js",
+      "rendererPath": "assets/data/lesson-7-2-renderer-config.js",
+      "shell": "unit-7/lesson-7-2-causes-wwi.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 7: Learning Objective B",
+        "KC-6.2.IV.B.i"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "7.3",
+      "unit": 7,
+      "topic": 3,
+      "title": "Conducting World War I",
+      "lessonPath": "assets/data/lesson-7-3-conducting-wwi.js",
+      "rendererPath": "assets/data/lesson-7-3-renderer-config.js",
+      "shell": "unit-7/lesson-7-3-conducting-wwi.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Technology and Innovation (TEC)",
+        "Unit 7: Learning Objective C",
+        "KC-6.2.IV.A.i",
+        "KC-6.1.III.C.i"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "7.4",
+      "unit": 7,
+      "topic": 4,
+      "title": "Economy in the Interwar Period",
+      "lessonPath": "assets/data/lesson-7-4-interwar-economy.js",
+      "rendererPath": "assets/data/lesson-7-4-renderer-config.js",
+      "shell": "unit-7/lesson-7-4-interwar-economy.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (3/3); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Economic Systems (ECN)",
+        "Unit 7: Learning Objective D",
+        "KC-6.3.I.B",
+        "KC-6.3.I.A.i"
+      ],
+      "examples": [
+        "The New Deal",
+        "The fascist corporatist economy",
+        "Governments with strong popular support in Brazil and Mexico"
+      ],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "7.5",
+      "unit": 7,
+      "topic": 5,
+      "title": "Unresolved Tensions After World War I",
+      "lessonPath": "assets/data/lesson-7-5-unresolved-tensions.js",
+      "rendererPath": "assets/data/lesson-7-5-renderer-config.js",
+      "shell": "unit-7/lesson-7-5-unresolved-tensions.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 25% (1/4); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 7: Learning Objective E",
+        "KC-6.2.I.B"
+      ],
+      "examples": [
+        "Transfer of former German colonies to Great Britain and France under the system of League of Nations mandates",
+        "Manchukuo/Greater East Asia Co-Prosperity Sphere",
+        "Indian National Congress",
+        "West African resistance (strikes/congresses) to French rule"
+      ],
+      "trace": 25,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "7.6",
+      "unit": 7,
+      "topic": 6,
+      "title": "Causes of World War II",
+      "lessonPath": "assets/data/lesson-7-6-causes-wwii.js",
+      "rendererPath": "assets/data/lesson-7-6-renderer-config.js",
+      "shell": "unit-7/lesson-7-6-causes-wwii.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 7: Learning Objective F",
+        "KC-6.2.IV.B.ii"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "7.7",
+      "unit": 7,
+      "topic": 7,
+      "title": "Conducting World War II",
+      "lessonPath": "assets/data/lesson-7-7-conducting-wwii.js",
+      "rendererPath": "assets/data/lesson-7-7-renderer-config.js",
+      "shell": "unit-7/lesson-7-7-conducting-wwii.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (4/4); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 7: Learning Objective G",
+        "KC-6.2.IV.A.ii",
+        "KC-6.1.III.C.ii"
+      ],
+      "examples": [
+        "Great Britain under Winston Churchill",
+        "United States under Franklin Roosevelt",
+        "Germany under Adolf Hitler",
+        "USSR under Joseph Stalin"
+      ],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "7.8",
+      "unit": 7,
+      "topic": 8,
+      "title": "Mass Atrocities After 1900",
+      "lessonPath": "assets/data/lesson-7-8-mass-atrocities.js",
+      "rendererPath": "assets/data/lesson-7-8-renderer-config.js",
+      "shell": "unit-7/lesson-7-8-mass-atrocities.html",
+      "status": "REVIEW",
+      "red": [],
+      "yellow": [
+        "renderer changes canonical KC code set",
+        "no BeInTheRoom scenario linked"
+      ],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (4/4); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Social Interactions and Organization (SIO)",
+        "Unit 7: Learning Objective H",
+        "KC-6.2.III.C"
+      ],
+      "examples": [
+        "Armenians in the Ottoman Empire during and after World War I",
+        "Cambodia during the late 1970s",
+        "Tutsi in Rwanda in the 1990s",
+        "Ukraine in the Soviet Union in the 1920s and 1930s"
+      ],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": false,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "7.9",
+      "unit": 7,
+      "topic": 9,
+      "title": "Causation in Global Conflict",
+      "lessonPath": "assets/data/lesson-7-9-causation-global-conflict.js",
+      "rendererPath": "assets/data/lesson-7-9-renderer-config.js",
+      "shell": "unit-7/lesson-7-9-causation-global-conflict.html",
+      "status": "REVIEW",
+      "red": [],
+      "yellow": [
+        "no BeInTheRoom scenario linked"
+      ],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Unit 7: Learning Objective I",
+        "KC-6.1",
+        "KC-6.2",
+        "KC-6.2.I",
+        "KC-6.2.I.A",
+        "KC-6.2.II.D",
+        "KC-6.2.IV.B.i",
+        "KC-6.2.IV.B.ii",
+        "KC-6.2.IV.A.i",
+        "KC-6.2.IV.A.ii",
+        "KC-6.1.III.C.i",
+        "KC-6.1.III.C.ii",
+        "KC-6.2.III.C"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": false,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "8.1",
+      "unit": 8,
+      "topic": 1,
+      "title": "Setting the Stage for the Cold War and Decolonization",
+      "lessonPath": "assets/data/lesson-8-1-cold-war-stage.js",
+      "rendererPath": "assets/data/lesson-8-1-renderer-config.js",
+      "shell": "unit-8/lesson-8-1-cold-war-stage.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 8: Learning Objective A",
+        "KC-6.2.II",
+        "KC-6.2.IV.C.i"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "8.2",
+      "unit": 8,
+      "topic": 2,
+      "title": "The Cold War",
+      "lessonPath": "assets/data/lesson-8-2-the-cold-war.js",
+      "rendererPath": "assets/data/lesson-8-2-renderer-config.js",
+      "shell": "unit-8/lesson-8-2-the-cold-war.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 0% (0/2); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Cultural Developments and Interactions (CDI)",
+        "Unit 8: Learning Objective B",
+        "KC-6.2.IV.C.ii",
+        "KC-6.2.V.B"
+      ],
+      "examples": [
+        "Sukarno in Indonesia",
+        "Kwame Nkrumah in Ghana"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "8.3",
+      "unit": 8,
+      "topic": 3,
+      "title": "Effects of the Cold War",
+      "lessonPath": "assets/data/lesson-8-3-effects-cold-war.js",
+      "rendererPath": "assets/data/lesson-8-3-renderer-config.js",
+      "shell": "unit-8/lesson-8-3-effects-cold-war.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (3/3); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 8: Learning Objective C",
+        "KC-6.2.IV.D"
+      ],
+      "examples": [
+        "Korean War",
+        "Angolan Civil War",
+        "Sandinista-Contras conflict in Nicaragua"
+      ],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "8.4",
+      "unit": 8,
+      "topic": 4,
+      "title": "Spread of Communism After 1900",
+      "lessonPath": "assets/data/lesson-8-4-spread-of-communism.js",
+      "rendererPath": "assets/data/lesson-8-4-renderer-config.js",
+      "shell": "unit-8/lesson-8-4-spread-of-communism.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (4/4); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Economic Systems (ECN)",
+        "Unit 8: Learning Objective D",
+        "KC-6.2.I.i",
+        "KC-6.3.I.A.ii",
+        "Thematic Focus, Social Interactions and Organization (SIO)",
+        "Unit 8: Learning Objective E",
+        "KC-6.2.II.D.i"
+      ],
+      "examples": [
+        "Communist Revolution for Vietnamese independence",
+        "Mengistu Haile Mariam in Ethiopia",
+        "Land reform in Kerala and other states within India",
+        "White Revolution in Iran"
+      ],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "8.5",
+      "unit": 8,
+      "topic": 5,
+      "title": "Decolonization After 1900",
+      "lessonPath": "assets/data/lesson-8-5-decolonization.js",
+      "rendererPath": "assets/data/lesson-8-5-renderer-config.js",
+      "shell": "unit-8/lesson-8-5-decolonization.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 46% (6/13); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 8: Learning Objective F",
+        "KC-6.2.II.A",
+        "KC-6.2.II.B",
+        "KC-6.2.I.C"
+      ],
+      "examples": [
+        "Indian National Congress",
+        "Ho Chi Minh in French Indochina (Vietnam)",
+        "Kwame Nkrumah in British Gold Coast (Ghana)",
+        "Gamal Abdel Nasser in Egypt",
+        "Muslim League in British India",
+        "Québécois separatist movement in Canada",
+        "Biafra secessionist movement in Nigeria",
+        "India from the British Empire",
+        "The Gold Coast from the British Empire",
+        "French West Africa",
+        "Algeria from the French empire",
+        "Angola from the Portuguese empire",
+        "Vietnam from the French empire"
+      ],
+      "trace": 46,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "8.6",
+      "unit": 8,
+      "topic": 6,
+      "title": "Newly Independent States",
+      "lessonPath": "assets/data/lesson-8-6-newly-independent-states.js",
+      "rendererPath": "assets/data/lesson-8-6-renderer-config.js",
+      "shell": "unit-8/lesson-8-6-newly-independent-states.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 60% (6/10); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 8: Learning Objective G",
+        "KC-6.2.III.A.i",
+        "KC-6.2.III.A.ii",
+        "Thematic Focus, Economic Systems (ECN)",
+        "Unit 8: Learning Objective H",
+        "KC-6.3.I.C",
+        "KC-6.2.III.B"
+      ],
+      "examples": [
+        "Israel",
+        "Cambodia",
+        "Pakistan",
+        "Gamal Abdel Nasser’s promotion of economic development in Egypt",
+        "Indira Gandhi's economic policies in India",
+        "Julius Nyerere’s modernization in Tanzania",
+        "Sirimavo Bandaranaike’s economic policies in Sri Lanka",
+        "South Asians to Britain",
+        "Algerians to France",
+        "Filipinos to the United States"
+      ],
+      "trace": 60,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "8.7",
+      "unit": 8,
+      "topic": 7,
+      "title": "Global Resistance to Established Power Structures After 1900",
+      "lessonPath": "assets/data/lesson-8-7-global-resistance.js",
+      "rendererPath": "assets/data/lesson-8-7-renderer-config.js",
+      "shell": "unit-8/lesson-8-7-global-resistance.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (6/6); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Cultural Developments and Interactions (CDI)",
+        "Unit 8: Learning Objective I",
+        "KC-6.2.V",
+        "KC-6.2.V.A",
+        "KC-6.2.V.C",
+        "KC-6.2.V.D"
+      ],
+      "examples": [
+        "Chile under Augusto Pinochet",
+        "Spain under Francisco Franco",
+        "Uganda under Idi Amin",
+        "The buildup of the military–industrial complex and weapons trading",
+        "Shining Path",
+        "Al-Qaeda"
+      ],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "8.8",
+      "unit": 8,
+      "topic": 8,
+      "title": "End of the Cold War",
+      "lessonPath": "assets/data/lesson-8-8-end-of-cold-war.js",
+      "rendererPath": "assets/data/lesson-8-8-renderer-config.js",
+      "shell": "unit-8/lesson-8-8-end-of-cold-war.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 8: Learning Objective J",
+        "KC-6.2.IV.E"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "8.9",
+      "unit": 8,
+      "topic": 9,
+      "title": "Causation in the Age of the Cold War and Decolonization",
+      "lessonPath": "assets/data/lesson-8-9-causation-capstone.js",
+      "rendererPath": "assets/data/lesson-8-9-renderer-config.js",
+      "shell": "unit-8/lesson-8-9-causation-capstone.html",
+      "status": "REVIEW",
+      "red": [],
+      "yellow": [
+        "no BeInTheRoom scenario linked"
+      ],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Unit 8: Learning Objective K",
+        "KC-6.2",
+        "KC-6.2.II",
+        "KC-6.2.IV.C",
+        "KC-6.3",
+        "KC-6.3.I"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": false,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "9.1",
+      "unit": 9,
+      "topic": 1,
+      "title": "Advances in Technology and Exchange After 1900",
+      "lessonPath": "assets/data/lesson-9-1-technology-exchange.js",
+      "rendererPath": "assets/data/lesson-9-1-renderer-config.js",
+      "shell": "unit-9/lesson-9-1-technology-exchange.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Technology and Innovation (TEC)",
+        "Unit 9: Learning Objective A",
+        "KC-6.1.I.A",
+        "KC-6.1.I.D",
+        "KC-6.1.III.B",
+        "KC-6.1.I.B",
+        "KC-6.1.I.C"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "9.2",
+      "unit": 9,
+      "topic": 2,
+      "title": "Technological Advances and Limitations After 1900: Disease",
+      "lessonPath": "assets/data/lesson-9-2-disease.js",
+      "rendererPath": "assets/data/lesson-9-2-renderer-config.js",
+      "shell": "unit-9/lesson-9-2-disease.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "renderer overrides canonical CED metadata; informational unless KC codes change",
+        "reading example trace 100% (8/8); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Humans and the Environment (ENV)",
+        "Unit 9: Learning Objective B",
+        "KC-6.1.III",
+        "KC-6.1.III.A"
+      ],
+      "examples": [
+        "Malaria",
+        "Tuberculosis",
+        "Cholera",
+        "1918 influenza pandemic",
+        "Ebola",
+        "HIV/AIDS",
+        "Heart disease",
+        "Alzheimer’s disease"
+      ],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "9.3",
+      "unit": 9,
+      "topic": 3,
+      "title": "Technological Advances—Debates About the Environment After 1900",
+      "lessonPath": "assets/data/lesson-9-3-environment.js",
+      "rendererPath": "assets/data/lesson-9-3-renderer-config.js",
+      "shell": "unit-9/lesson-9-3-environment.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Humans and the Environment (ENV)",
+        "Unit 9: Learning Objective C",
+        "KC-6.1.II.A",
+        "KC-6.1.II.B"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "9.4",
+      "unit": 9,
+      "topic": 4,
+      "title": "Economics in the Global Age",
+      "lessonPath": "assets/data/lesson-9-4-economics-global-age.js",
+      "rendererPath": "assets/data/lesson-9-4-renderer-config.js",
+      "shell": "unit-9/lesson-9-4-economics-global-age.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 76% (13/17); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Economic Systems (ECN)",
+        "Unit 9: Learning Objective D",
+        "KC-6.3.I.D",
+        "KC-6.3.I.E",
+        "KC-6.3.II.B"
+      ],
+      "examples": [
+        "The United States under Ronald Reagan",
+        "Britain under Margaret Thatcher",
+        "China under Deng Xiaoping",
+        "Chile under Augusto Pinochet",
+        "Finland",
+        "Japan",
+        "U.S.",
+        "Vietnam",
+        "Bangladesh",
+        "Mexico",
+        "Honduras",
+        "World Trade Organization (WTO)",
+        "North American Free Trade Agreement (NAFTA)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Nestlé",
+        "Nissan",
+        "Mahindra and Mahindra"
+      ],
+      "trace": 76,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "9.5",
+      "unit": 9,
+      "topic": 5,
+      "title": "Calls for Reform and Responses After 1900",
+      "lessonPath": "assets/data/lesson-9-5-calls-for-reform-responses.js",
+      "rendererPath": "assets/data/lesson-9-5-renderer-config.js",
+      "shell": "unit-9/lesson-9-5-calls-for-reform-responses.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 33% (4/12); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Social Interactions and Organization (SIO)",
+        "Unit 9: Learning Objective E",
+        "KC-6.3.III.i",
+        "KC-6.3.III.ii",
+        "KC-6.3.II.C"
+      ],
+      "examples": [
+        "The U.N. Universal Declaration of Human Rights, especially as it sought to protect the rights of children, women, and refugees",
+        "Global feminism movements",
+        "Negritude movement",
+        "Liberation theology in Latin America",
+        "The right to vote and/or to hold public office granted to women in the United States (1920), Brazil (1932), Turkey (1934), Japan (1945), India (1947), and Morocco (1963)",
+        "The rising rate of female literacy and the increasing numbers of women in higher education, in most parts of the world",
+        "The U.S. Civil Rights Act of 1965",
+        "The end of apartheid",
+        "Caste reservation in India",
+        "Greenpeace",
+        "Professor Wangari Maathai’s Green Belt Movement in Kenya",
+        "World Fair Trade Organization"
+      ],
+      "trace": 33,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "9.6",
+      "unit": 9,
+      "topic": 6,
+      "title": "Globalized Culture After 1900",
+      "lessonPath": "assets/data/lesson-9-6-globalized-culture.js",
+      "rendererPath": "assets/data/lesson-9-6-renderer-config.js",
+      "shell": "unit-9/lesson-9-6-globalized-culture.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 0% (0/7); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Cultural Developments and Interactions (CDI)",
+        "Unit 9: Learning Objective F",
+        "KC-6.3.IV.i",
+        "KC-6.3.IV.ii",
+        "KC-6.3.IV.iii"
+      ],
+      "examples": [
+        "Music: Reggae",
+        "Movies: Bollywood",
+        "Social media: Facebook, Twitter",
+        "Television: BBC",
+        "Sports: World Cup soccer, the Olympics",
+        "Online commerce: Alibaba, eBay",
+        "Global brands: Toyota, Coca-Cola"
+      ],
+      "trace": 0,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "9.7",
+      "unit": 9,
+      "topic": 7,
+      "title": "Resistance to Globalization After 1900",
+      "lessonPath": "assets/data/lesson-9-7-resistance-globalization.js",
+      "rendererPath": "assets/data/lesson-9-7-renderer-config.js",
+      "shell": "unit-9/lesson-9-7-resistance-globalization.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 50% (1/2); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Cultural Developments and Interactions (CDI)",
+        "Unit 9: Learning Objective G",
+        "KC-6.3.IV.iv"
+      ],
+      "examples": [
+        "Anti-IMF and anti-World Bank activism",
+        "Advent of locally developed social media (Weibo in China)"
+      ],
+      "trace": 50,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "9.8",
+      "unit": 9,
+      "topic": 8,
+      "title": "Institutions Developing in a Globalized World",
+      "lessonPath": "assets/data/lesson-9-8-institutions-globalized-world.js",
+      "rendererPath": "assets/data/lesson-9-8-renderer-config.js",
+      "shell": "unit-9/lesson-9-8-institutions-globalized-world.html",
+      "status": "CLEAN",
+      "red": [],
+      "yellow": [],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Governance (GOV)",
+        "Unit 9: Learning Objective H",
+        "KC-6.3.II.A"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": true,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    },
+    {
+      "id": "9.9",
+      "unit": 9,
+      "topic": 9,
+      "title": "Continuity and Change in a Globalized World",
+      "lessonPath": "assets/data/lesson-9-9-continuity-change-globalized-world.js",
+      "rendererPath": "assets/data/lesson-9-9-renderer-config.js",
+      "shell": "unit-9/lesson-9-9-continuity-change-globalized-world.html",
+      "status": "REVIEW",
+      "red": [],
+      "yellow": [
+        "no BeInTheRoom scenario linked"
+      ],
+      "notes": [
+        "reading example trace 100% (0/0); informational only"
+      ],
+      "codes": [
+        "Thematic Focus, Unit 9 Synthesis (SYN)",
+        "Unit 9: Learning Objective I",
+        "KC-6.1",
+        "KC-6.1.I.A",
+        "KC-6.1.I.D",
+        "KC-6.1.III.B",
+        "KC-6.1.I.B",
+        "KC-6.1.I.C",
+        "KC-6.3.I",
+        "KC-6.3.III.i",
+        "KC-6.3.III.ii",
+        "KC-6.3.IV.i",
+        "KC-6.3.IV.ii",
+        "KC-6.3.IV.iii"
+      ],
+      "examples": [],
+      "trace": 100,
+      "surfaces": {
+        "lessonShell": true,
+        "renderer": true,
+        "first10": true,
+        "deepReading": true,
+        "beInTheRoom": false,
+        "readingSource": true,
+        "deepReadingSource": true
+      }
+    }
+  ]
+}
