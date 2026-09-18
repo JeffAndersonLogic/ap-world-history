@@ -4,46 +4,58 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
-      "code": "KC-4.1",
-      "theme": "Transoceanic Interconnections",
-      "text": "The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.",
-      "illustrativeExamples": []
+      code: 'Unit 4: Learning Objective N',
+      theme: 'Learning Objective',
+      text: 'Explain how economic developments from 1450 to 1750 affected social structures over time.',
+      illustrativeExamples: []
     },
     {
-      "code": "KC-4.1.II",
-      "theme": "Transoceanic Interconnections",
-      "text": "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.",
-      "illustrativeExamples": []
+      code: 'KC-4.1.IV',
+      theme: 'Economic Systems',
+      text: 'Global circulation of goods and silver expanded while regional Afro-Eurasian markets continued.',
+      illustrativeExamples: []
     },
     {
-      "code": "KC-4.1.II.A",
-      "theme": "Transoceanic Interconnections",
-      "text": "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible.",
-      "illustrativeExamples": []
+      code: 'KC-4.2.II',
+      theme: 'Economic Systems',
+      text: 'Growing global demand intensified labor, expanded plantations, and contributed to the Atlantic slave trade.',
+      illustrativeExamples: []
     },
     {
-      "code": "KC-4.2",
-      "theme": "Transoceanic Interconnections",
-      "text": "Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes.",
-      "illustrativeExamples": []
+      code: 'KC-4.2.II.A',
+      theme: 'Economic Systems',
+      text: 'Peasant and artisan labor continued and intensified in many regions.',
+      illustrativeExamples: ['Western Europe wool and linen', 'India cotton', 'China silk']
     },
     {
-      "code": "KC-4.2.II",
-      "theme": "Transoceanic Interconnections",
-      "text": "The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified.",
-      "illustrativeExamples": []
+      code: 'KC-4.2.II.C',
+      theme: 'Social Interactions and Organization',
+      text: 'Plantation growth increased demand for enslaved labor and produced demographic, social, and cultural change.',
+      illustrativeExamples: []
     },
     {
-      "code": "KC-4.3",
-      "theme": "Transoceanic Interconnections",
-      "text": "Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.",
-      "illustrativeExamples": []
+      code: 'KC-4.2.II.D',
+      theme: 'Economic Systems',
+      text: 'Colonial American economies used existing labor systems and introduced new forms including chattel slavery, indentured servitude, encomienda, and hacienda.',
+      illustrativeExamples: ['Incan mit’a']
     },
     {
-      "code": "KC-4.3.III.ii",
-      "theme": "Transoceanic Interconnections",
-      "text": "Economic disputes led to rivalries and conflict between states.",
-      "illustrativeExamples": []
+      code: 'KC-4.2.III.A',
+      theme: 'Social Interactions and Organization',
+      text: 'Imperial conquest and widening economic opportunity contributed to new political and economic elites.',
+      illustrativeExamples: ['Casta system']
+    },
+    {
+      code: 'KC-4.2.III.B',
+      theme: 'Social Interactions and Organization',
+      text: 'The power of existing political and economic elites fluctuated as rulers centralized power.',
+      illustrativeExamples: ['Ottoman timars', 'Russian boyars', 'European nobility']
+    },
+    {
+      code: 'KC-4.2.III.C',
+      theme: 'Social Interactions and Organization',
+      text: 'Gender and family structures changed in some regions, including demographic changes in Africa associated with the trade of enslaved persons.',
+      illustrativeExamples: []
     }
   ];
 
@@ -57,10 +69,10 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Silver routes (the change)', detail: 'Two routes define the global trade transformation: the Manila Galleon (Acapulco → Manila → Acapulco, annually 1565–1815), carrying Mexican silver west for Chinese goods; and the Atlantic system (Potosí → Portobelo/Veracruz → Seville), carrying Andean silver east into European money markets. Both routes were genuinely new, nothing like them existed before c. 1565.' },
-      { label: 'Indian Ocean trade (the continuity)', detail: 'The Indian Ocean trade system had operated for over a millennium before any European ship arrived. By c. 1700, it was larger in volume than in c. 1450, European demand had added to it. Arab, Indian, Chinese, Malay, and Swahili merchants continued to operate throughout the Indian Ocean alongside European trading companies. The VOC displaced the Portuguese at key chokepoints but could not replace the dense network of Asian merchants.' },
-      { label: 'China as economic engine', detail: 'China was the world\'s largest economy throughout c. 1450–1750, producing the most silk, porcelain, and cotton textiles, and demanding the most silver. Chinese demand for silver (driven by the Single Whip Tax Reform of 1581) was the engine that made the Manila Galleon trade profitable. Without Chinese demand, Mexican silver would not have crossed the Pacific. This makes Chinese fiscal policy a key cause of global economic transformation.' },
-      { label: 'Geographic takeaway', detail: 'The most important CCOT insight: the Americas were connected to an existing global economy, not the other way around. European ships were the connective tissue; Asian demand was the engine; American silver was the commodity. Understanding this geography prevents the common error of treating European expansion as the sole driver of global economic change in c. 1450–1750.' }
+      { label: 'Silver and state revenue', detail: 'American silver linked coerced mining labor to imperial finance and global exchange. Track how extraction concentrated wealth while increasing pressure on indigenous labor communities.' },
+      { label: 'Plantation zones', detail: 'Sugar and other plantation commodities tied Atlantic demand to expanding chattel slavery. The economic geography of plantations became a social geography of racialized status and forced migration.' },
+      { label: 'Manufacturing regions', detail: 'Indian cotton, Chinese silk, and European wool and linen show a major continuity: peasant and artisan labor often intensified rather than disappearing as global demand grew.' },
+      { label: 'Social-structure takeaway', detail: 'Economic integration did not produce one universal social outcome. It expanded some old labor systems, created or intensified others, shifted elite power, and altered demographic and family patterns differently by region.' }
     ]
   };
 
@@ -83,46 +95,48 @@
   };
 
   lesson.skillBuilder = {
-    label: 'CCOT practice',
-    title: 'Continuity and Change in Global Trade, c. 1450–c. 1750',
-    intro: 'CCOT (Continuity and Change Over Time) for Topic 4.8 requires identifying BOTH what changed AND what persisted across the period, and explaining the mechanisms that drove each. The most common error is focusing only on change, or using "it continued" without explaining why. This practice walks through a model CCOT argument for global trade from c. 1450 to c. 1750.',
+    label: 'CCOT and causation practice',
+    title: 'From Economic Change to Social Structure',
+    intro: 'Topic 4.8 asks a specific synthesis question: how did economic developments affect social structures over time? A strong answer connects an economic development to a social mechanism, then weighs that change against a meaningful continuity.',
     steps: [
-      { label: 'Identify a specific change (with mechanism)', text: 'Change: American silver created the first genuinely global trade network connecting the Americas to Europe and Asia. The mechanism: Chinese demand for silver (Single Whip Tax Reform, 1581) created a pull that made the Manila Galleon trade profitable; Spanish colonial demand for revenue created the push that forced mita labor at Potosí. The combination of Asian demand and colonial labor extraction drove a genuinely new global circuit that had not existed before c. 1565.' },
-      { label: 'Identify a specific continuity (with mechanism)', text: 'Continuity: The Indian Ocean trade persisted and grew throughout the period. The mechanism: the dense network of Arab, Indian, Chinese, Malay, and Swahili merchants who dominated Indian Ocean trade had established relationships, credit networks, and local knowledge that European companies could not quickly replicate. The Portuguese and Dutch could control chokepoints, but they could not replace the underlying commercial network, which was too large, too distributed, and too locally embedded to be displaced.' },
-      { label: 'Write the synthesis statement', text: 'A strong CCOT argument ends with synthesis: what does the balance of change and continuity reveal? The period c. 1450–1750 connected the Americas to existing global networks rather than replacing those networks. European maritime expansion was transformative, it created the silver economy, caused demographic catastrophe in the Americas, and established new colonial hierarchies, but it did not displace Asian economic dominance, replace the Indian Ocean trade, or fundamentally restructure the underlying logic of long-distance commerce.' }
+      { label: 'Start with the economic development', text: 'Choose a development such as plantation expansion, silver extraction, mercantilism, chartered companies, or intensified textile production. State what changed economically before describing the social effect.' },
+      { label: 'Explain the social mechanism', text: 'Show how the development changed labor demand, legal status, wealth, family patterns, or elite power. Example: plantation demand increased the scale of Atlantic chattel slavery, which made ancestry and enslaved status more tightly connected in colonial societies.' },
+      { label: 'Add a continuity', text: 'Identify something that persisted, such as peasant/artisan production, older forms of coerced labor, or existing elites who adapted to new states. Explain why the economic system still depended on that continuity.' },
+      { label: 'Make the degree claim', text: 'Finish with a defensible CCOT judgment about social structures: substantial change in some regions and categories, alongside persistent labor and elite structures elsewhere.' }
     ],
-    prompt: 'In 3–4 sentences, write a CCOT argument about global trade networks from c. 1450 to c. 1750. Identify one specific change (with evidence and mechanism) and one specific continuity (with evidence and mechanism). End with a synthesis statement: overall, did this period represent more change or more continuity in global trade, and what does your answer reveal about the nature of European maritime expansion?'
+    prompt: 'Explain how one economic development from 1450 to 1750 affected a social structure. Then identify one meaningful continuity in social structure and explain why it persisted. Use specific Unit 4 evidence for both.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: What Changed — Silver, Demography, and Environment',
-      subtitle: 'Checks Learning Targets 1 and 2 — economic and demographic changes.',
-      cardDesc: 'Silver economy, global price revolution, Columbian Exchange, and demographic collapse.',
+      title: 'Checkpoint 1: Economic Development -> Social Consequence',
+      subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
+      cardDesc: 'Connect economic change to labor, hierarchy, elite power, or family structure.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain how American silver from Potosí created a genuinely global trade network. Describe at least two routes (Manila Galleon and Atlantic) and explain the role of Chinese demand. Then explain ONE demographic or environmental change caused by the Columbian Exchange, be specific about what changed, what caused it, and what its long-term consequences were.',
+      prompt: 'Choose TWO economic developments from c. 1450–c. 1750, such as plantation growth, silver extraction, mercantilism, or intensified textile production. For each, explain one specific effect on social structure. Your two effects must come from different categories such as labor status, racial/casta hierarchy, elite power, or gender/family patterns.',
       responseType: 'Checkpoint 1',
-      terms: ['Potosí', 'Manila Galleon', 'global price revolution', 'Chinese demand', 'Single Whip Tax Reform', 'demographic collapse', 'Columbian Exchange', 'smallpox', 'potato', 'maize'],
-      focus: ['Explain the Manila Galleon trade: route, commodities, and why Chinese demand drove it.', 'Explain the global price revolution: cause (silver influx), effects (inflation, economic disruption).', 'Choose one demographic or environmental change: explain what changed, what caused it, and its long-term consequences.']
+      terms: ['plantation economy', 'chattel slavery', 'mit’a', 'encomienda', 'hacienda', 'Potosí', 'mercantilism', 'artisan labor', 'casta', 'elites', 'gender', 'family'],
+      focus: ['Name two specific economic developments.', 'Explain the mechanism connecting each economic development to a social consequence.', 'Use social evidence from at least two different categories.']
     },
     {
-      title: 'Checkpoint 2: What Continued — and the Overall Takeaway',
-      subtitle: 'Checks Learning Target 3 — continuities and CCOT synthesis.',
-      cardDesc: 'Indian Ocean trade, Chinese economic dominance, Islamic networks, and CCOT synthesis.',
+      title: 'Checkpoint 2: Unit 4 CCOT — Social Structures Over Time',
+      subtitle: 'Checks Learning Target 3 and the governing Topic 4.8 learning objective.',
+      cardDesc: 'A supported continuity-and-change argument about economic effects on social structure.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Identify two specific continuities from c. 1450 that persisted through c. 1750. For each, explain what structural factors sustained it despite European maritime expansion. Then write a synthesis statement: overall, did c. 1450–1750 represent more change than continuity in global trade, or more continuity than change? Defend your position with specific evidence from both sides.',
+      prompt: 'Explain how economic developments from 1450 to 1750 affected social structures over time. Write a short CCOT argument that includes one meaningful social change, one meaningful social continuity, specific evidence from at least THREE earlier Unit 4 topics, and an explanation of why the change and continuity occurred.',
       responseType: 'Checkpoint 2',
-      terms: ['Indian Ocean trade', 'Chinese manufacturing', 'Islamic commercial networks', 'continuity', 'CCOT synthesis', 'Sangleys', 'Asian demand', 'hawala'],
-      focus: ['Name two specific continuities (Indian Ocean trade, Chinese dominance, Islamic networks) with specific evidence.', 'Explain the structural factors that sustained each continuity despite European expansion.', 'Write a synthesis statement: more change or more continuity? Defend with evidence from BOTH sides.']
+      skill: 'Continuity and Change Over Time',
+      terms: ['economic developments', 'social structures', 'continuity', 'change', 'plantation', 'slavery', 'casta', 'peasant labor', 'artisan labor', 'elites', 'gender', 'family'],
+      focus: ['Answer the exact economic-developments -> social-structures question.', 'Use at least three specific pieces of Unit 4 evidence.', 'Explain why one social structure changed and why another persisted.']
     }
   ];
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: Prove Both Change and Continuity',
-    task: 'A CCOT claim needs evidence for both sides. Choose at least ONE change card and ONE continuity card. Establish what each source shows, explain the mechanism behind the pattern, and make sure your continuity is not merely “trade still existed.” By Unit 4, your evidence should also acknowledge source limits and uneven regional change.',
-    prompt: 'Using one change card and one continuity card, write a CCOT claim about global exchange from c. 1450 to c. 1750. Cite one concrete detail from each source, explain the mechanism behind the change and the continuity, and defend whether the period represents more transformation or more persistence overall.'
+    task: 'Choose evidence that connects an economic development to a social consequence, then pair it with evidence for a meaningful continuity. Your claim must be about social structure — labor, hierarchy, family, or elite power — rather than trade alone.',
+    prompt: 'Using one change card and one continuity card, write a CCOT claim about how economic developments affected social structures from c. 1450 to c. 1750. Cite concrete evidence, explain the economic-to-social mechanism, and explain why the continuity persisted.'
   };
 
   lesson.images = [
