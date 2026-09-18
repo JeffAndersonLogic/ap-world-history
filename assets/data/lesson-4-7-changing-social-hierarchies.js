@@ -47,7 +47,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Social Interactions and Organization"
     },
     {
-      target: "I can evaluate continuities and changes in social structures in areas affected by European expansion, including the role of gender in colonial hierarchies.",
+      target: "I can explain how the power of existing political and economic elites changed as they confronted increasingly powerful monarchs and imperial states.",
       kc: 'KC-4.2.III.B',
       theme: "Social Interactions and Organization"
     }
@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Social Interactions and Organization"
     },
     {
-      criteria: "I can identify one continuity from pre-colonial social structures (indigenous nobility, existing slavery) and one genuine change (racialization of status, new mixed-race categories), and explain how gender intersected with racial hierarchy in colonial societies.",
+      criteria: "I can use specific examples such as Ottoman timar holders, Russian boyars, or European nobility to explain how existing elites gained, lost, or renegotiated power as states centralized.",
       kc: 'KC-4.2.III.B',
       theme: "Social Interactions and Organization"
     }
@@ -94,22 +94,22 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "New Hierarchies: Race, Caste, and Colonial Social Order",
-    intro: "European colonialism did not just extract wealth, it reorganized the social order wherever it reached. Understanding how colonial hierarchies were built, what they built on, and what made them new is essential for AP comparison and CCOT arguments about the period c. 1450–1750.",
+    intro: "Topic 4.7 tracks three related changes in hierarchy: states accommodated or suppressed diverse groups, new political and economic elites formed, and the power of existing elites rose or fell as rulers centralized. Casta is one important case, not the whole topic.",
     videos: [],
     segments: [
       {
-        title: "Why Colonialism Created New Racial Hierarchies",
+        title: "Accommodation and Suppression of Diversity",
         bullets: [
-          "European colonialism created new racial hierarchies for a specific reason: **labor coercion requires legal justification**. If you are going to force people to work without pay, own them as property, or deny them legal rights, you need a legal framework that defines who can be treated this way. Race provided that framework, it made the distinction between free and enslaved, between those who could hold office and those who could not, appear natural and permanent rather than arbitrary and imposed.",
-          "**Limpieza de sangre** ('purity of blood') was a concept developed in 15th-century Spain to distinguish 'Old Christians' (those with no Jewish or Muslim ancestry) from 'New Christians' (recent converts). This concept traveled to the Americas and was adapted into the casta system, a mechanism for classifying the mixed-race population that emerged from the colonial encounter between Spanish, indigenous, and African peoples.",
-          "The **racialization of slavery**, making Black African ancestry the legal basis for enslaved status, was a 17th-century development, not a feature of earlier European slavery. In early colonial Virginia, African workers were sometimes held as **indentured servants** (like white workers) rather than chattel slaves. The transformation to hereditary racial chattel slavery occurred across the 1640s–1680s as planters sought a permanently subordinate labor force that could be distinguished from free workers.",
-          "The AP key point: colonial social hierarchies were **constructed**, not natural. They emerged from specific historical conditions (labor demand, demographic collapse, racial mixing) and were maintained by specific legal and institutional mechanisms (the casta, the slave code, the audiencia). They were also contested, as the Pueblo Revolt and maroon communities demonstrate."
+          "Early modern states governed populations divided by religion, ethnicity, legal status, and region. Some rulers **accommodated diversity** when local communities or elites could provide taxes, military service, commercial expertise, or political stability.",
+          "The **Ottoman Empire** accepted many Jews expelled from Spain and Portugal and governed recognized religious communities through differentiated institutions. Mughal rulers at times incorporated Hindu elites into imperial service.",
+          "Other states **restricted or suppressed groups**. Qing rulers maintained privileges for Manchus and imposed limits in some political and military roles on Han Chinese; Iberian states expelled or pressured Jewish and Muslim communities.",
+          "The AP move is functional: explain why a state accommodated one group or restricted another and how the policy affected social roles and access to power."
         ],
         image: {
-          title: "Casta Painting — New Spain, 18th Century",
-          caption: "Casta paintings documented the elaborate racial classification system of Spanish colonial America. Each combination of ancestry was assigned a name and a legal status. The paintings reflect colonial anxiety about managing a society that was mixing faster than the law could classify.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
+          title: "Suleiman the Magnificent",
+          caption: "Multiethnic empires often used differentiated legal and communal arrangements to govern diverse subjects.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg"
         }
       },
       {
@@ -128,18 +128,18 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "Continuity, Change, and Gender in Colonial Hierarchies",
+        title: "Existing Elites: Winners, Losers, and Bargains with Centralizing States",
         bullets: [
-          "Colonial social hierarchies built on **pre-existing structures** while transforming them. Some indigenous nobles retained legal status under Spanish colonial law: descendants of Aztec and Inca rulers were sometimes recognized as nobles, given land grants, and exempted from tribute. **Kuracas** (Andean regional leaders) who cooperated with the Spanish retained their community authority while serving as the lowest rung of the colonial administrative system. This represents continuity: existing hierarchies were incorporated into the colonial order, not simply destroyed.",
-          "The genuine **change** was the introduction of new categories that had no pre-colonial equivalent: the mestizo, the mulatto, and the elaborate racial classification of the casta. These categories emerged from the specific conditions of colonial society, conquest, demographic collapse, forced migration of Africans, and the sexual coercion that produced mixed-race populations. They represent a new social logic that pre-colonial societies did not need and had not invented.",
-          "**Gender** intersected with racial hierarchy in complex ways. Spanish women who emigrated to the colonies found their legal status shaped by casta and marital position, elite creole women could own property and manage businesses as widows, but were excluded from public office and formal education. **Indigenous women** in frontier regions often became the mothers of the mestizo population through coercive relationships. **Enslaved African women** experienced the deepest intersection of racial and gender exploitation: subject to the same labor demands as men, plus sexual exploitation, plus the grief of bearing children who were legally enslaved from birth.",
-          "**Free Black and mixed-race women** in Brazil and the Caribbean occupied a distinctive social position, often working as market vendors, healers, and domestic workers, with more economic agency than enslaved women but fundamentally constrained by the racial hierarchy around them. **Portuguese Brazil** had higher manumission rates (the formal freeing of enslaved people) than British or French colonies, creating a larger free Black population, but this did not dismantle the fundamental racial hierarchy."
+          "Centralizing rulers did not only create new elites; they also changed the power of **existing elites**. Some groups preserved influence by entering state service, while others lost independent military, tax, or political authority.",
+          "In the Ottoman Empire, changes in the **timar** system altered the position of provincial military elites. In Russia, rulers such as Peter the Great pushed **boyars** into state service and tied status more closely to imperial rank.",
+          "Across Europe, monarchs challenged parts of the traditional nobility while still depending on aristocrats at court, in armies, and in provincial administration. Centralization often meant renegotiating elite power rather than simply eliminating elites.",
+          "This is the third Topic 4.7 move: **new elites formed while existing elites gained, lost, or adapted their influence**."
         ],
         image: {
-          title: "World Map, c. 1700",
-          caption: "By c. 1700, racial and social hierarchies organized colonial societies across three continents. The casta in Spanish America, the plantation hierarchy in Portuguese Brazil and the Caribbean, and the racial classifications of Dutch and British colonies all reflected the same underlying logic: race as the legal basis for labor extraction.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG"
+          title: "European court nobility",
+          caption: "Centralizing rulers could constrain noble independence while making court access and state service new sources of elite power.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Louis_XIV_of_France.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Louis_XIV_of_France.jpg"
         }
       }
     ]
