@@ -48,7 +48,7 @@ module.exports = {
     heading: 'How to Use This',
     intro: `Sections 01 to 03 are the three cases the success criteria name, each written so you can give the grievance, the mechanism and the outcome rather than the label. Section 04 is what they have in common, which is the part that turns three examples into an argument.`,
     steps: [
-      `<b>01 The Pueblo Revolt:</b> the grievances, Pope&rsquo;s organizing problem, and what Spain changed afterward.`,
+      `<b>01 The Pueblo Revolt:</b> the grievances, Popé&rsquo;s organizing problem, and what Spain changed afterward.`,
       `<b>02 Maroons:</b> Palmares as a state, and the limit that came with the success.`,
       `<b>03 Rivals:</b> how the Dutch took the Portuguese network, and what a privateer was for.`,
       `<b>04 Why maritime empires crack:</b> thin lines, long distances, and borrowed force.`,
@@ -71,7 +71,7 @@ module.exports = {
           heading: 'Three grievances, and why they arrived together',
           blocks: [
             { p: `Spanish New Mexico was a poor, remote colony, valuable to the crown mainly as a mission field, and its pressure on the Pueblo peoples came in three forms that a good answer names separately.` },
-            { p: `<b>Religious suppression</b> was the sharpest. Franciscan missionaries did not merely preach; they raided <span class="kt">kivas</span>, the underground ceremonial chambers at the center of Pueblo religious life, destroyed masks and sacred objects, and prosecuted ceremonial practice as idolatry. In <span class="num">1675</span> the governor had forty-seven Pueblo religious leaders arrested, three hanged and the rest publicly whipped. One of those whipped was a Tewa man from Ohkay Owingeh named <span class="kt">Pope</span>.` },
+            { p: `<b>Religious suppression</b> was the sharpest. Franciscan missionaries did not merely preach; they raided <span class="kt">kivas</span>, the underground ceremonial chambers at the center of Pueblo religious life, destroyed masks and sacred objects, and prosecuted ceremonial practice as idolatry. In <span class="num">1675</span> the governor had forty-seven Pueblo religious leaders arrested, three hanged and the rest publicly whipped. One of those whipped was a Tewa man from Ohkay Owingeh named <span class="kt">Popé</span>.` },
             { p: `<b>Labor and tribute</b> were the second. The encomienda and repartimiento of the Topic 4.4 chapter reached New Mexico as demands for woven cloth, maize and labor on Spanish fields and in Spanish households, extracted from communities that farmed a marginal, arid landscape with no surplus to spare.` },
             { p: `<b>Drought and its consequences</b> were the third, and the timing is what made the other two intolerable. A severe drought through the <span class="num">1660</span>s and <span class="num">1670</span>s brought famine, and famine brought intensified Apache and Navajo raiding on weakened towns. Spanish authorities could not protect the Pueblos from the raids and would not reduce the tribute, which broke the one argument colonial rule had in its favor. And because Pueblo religion is centrally concerned with rain and agricultural cycles, the drought was itself evidence: the ceremonies had been suppressed, and the rain had stopped.` }
           ]
@@ -79,9 +79,9 @@ module.exports = {
         {
           heading: 'The organizing problem',
           blocks: [
-            { p: `Here is what Pope actually had to do. There were roughly two dozen or more autonomous Pueblo towns spread across several hundred miles, speaking languages from at least four distinct families, some of them mutually unintelligible, with their own histories of rivalry, and with no tradition of unified political authority. There was no confederation to activate. Several towns had Spanish garrisons or resident priests, and there were Pueblo individuals who had converted sincerely and might warn them.` },
+            { p: `Here is what Popé actually had to do. There were roughly two dozen or more autonomous Pueblo towns spread across several hundred miles, speaking languages from at least four distinct families, some of them mutually unintelligible, with their own histories of rivalry, and with no tradition of unified political authority. There was no confederation to activate. Several towns had Spanish garrisons or resident priests, and there were Pueblo individuals who had converted sincerely and might warn them.` },
             { p: `The solution was a communications technology and a piece of security design at once. Runners carried <b>cords knotted with a number of knots</b> to each participating town. Each day, one knot was untied. When the last knot was gone, everyone rose. No date had to be spoken aloud, no writing existed to be intercepted and read, and a captured runner carried an object whose meaning was useless without the instruction that came with it.` },
-            { p: `It nearly failed, which is the detail that proves the design. Two runners were captured and interrogated shortly before the appointed day, so Pope moved the rising forward. On <span class="num">10 August 1680</span> the Pueblos rose more or less together, killed around four hundred colonists including twenty-one of the thirty-three Franciscans, besieged Santa Fe and cut its water supply, and drove roughly two thousand survivors down the Rio Grande to El Paso.` },
+            { p: `It nearly failed, which is the detail that proves the design. Two runners were captured and interrogated shortly before the appointed day, so Popé moved the rising forward. On <span class="num">10 August 1680</span> the Pueblos rose more or less together, killed around four hundred colonists including twenty-one of the thirty-three Franciscans, besieged Santa Fe and cut its water supply, and drove roughly two thousand survivors down the Rio Grande to El Paso.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: an inquiry designed to assign blame',
@@ -92,7 +92,7 @@ module.exports = {
         {
           heading: 'What happened next, and what Spain changed',
           blocks: [
-            { p: `Twelve years of independence followed, and they were not easy. Pope reportedly ordered the removal of everything Spanish, including crops and livestock that the Pueblos had adopted and depended on, which was unpopular. The alliance that had held for one day did not hold for a decade; old rivalries reasserted themselves, the drought continued, and raiding did not stop. Pope died before the reconquest.` },
+            { p: `Twelve years of independence followed, and they were not easy. Popé reportedly ordered the removal of everything Spanish, including crops and livestock that the Pueblos had adopted and depended on, which was unpopular. The alliance that had held for one day did not hold for a decade; old rivalries reasserted themselves, the drought continued, and raiding did not stop. Popé died before the reconquest.` },
             { p: `Diego de Vargas returned in <span class="num">1692</span> and re-established Spanish authority over several years, with fighting rather than the bloodless reconquest Spanish accounts claimed. But the colony that returned was materially different, and this is the part the success criteria ask for. <b>Encomienda was not restored in New Mexico.</b> Tribute demands were reduced. And, most tellingly, missionaries largely stopped raiding kivas and tolerated the continuation of Pueblo ceremonial life alongside Catholic practice, which is why Pueblo religion survived into the present in a way it did not in many other mission regions.` },
             { p: `That is the argument to write: the revolt was militarily reversed and politically successful. Spain won the territory back and lost the ability to govern it the way it had. A rebellion that changes the terms of rule has accomplished something even when the flag goes back up.` }
           ]
@@ -105,7 +105,7 @@ module.exports = {
       },
       terms: [
         ['Pueblo Revolt', 'The 1680 rising that expelled Spain from New Mexico for twelve years, the most successful Indigenous revolt in North America.'],
-        ['Pope', 'The Tewa religious leader from Ohkay Owingeh, publicly whipped in 1675, who organized the coordinated rising.'],
+        ['Popé', 'The Tewa religious leader from Ohkay Owingeh, publicly whipped in 1675, who organized the coordinated rising.'],
         ['Kiva', 'The underground ceremonial chamber at the center of Pueblo religious life, raided and destroyed by missionaries before the revolt.'],
         ['Knotted cord', 'The runner-carried schedule, one knot untied per day, which synchronized towns speaking unrelated languages.'],
         ['Reconquest', 'Vargas\'s re-establishment of Spanish rule from 1692, on materially reduced terms with no encomienda and tolerated ceremonial practice.']
@@ -257,7 +257,7 @@ module.exports = {
       {
         category: 'Causation',
         title: 'Three grievances arrived at once, and a knotted cord synchronized the answer',
-        body: `Franciscans in New Mexico raided kivas and destroyed sacred objects, and in 1675 the governor hanged three Pueblo religious leaders and had forty-seven whipped, one of them Pope. Encomienda and repartimiento demanded cloth, maize and labor from an arid landscape with no surplus. Severe drought through the 1660s and 1670s brought famine and intensified Apache raiding that Spain could not stop while refusing to reduce tribute. Pope coordinated more than two dozen autonomous towns speaking languages from several families by sending runners with knotted cords, one knot untied per day, so no date was written or spoken. On 10 August 1680 they rose, killed about four hundred colonists and drove two thousand survivors to El Paso.`
+        body: `Franciscans in New Mexico raided kivas and destroyed sacred objects, and in 1675 the governor hanged three Pueblo religious leaders and had forty-seven whipped, one of them Popé. Encomienda and repartimiento demanded cloth, maize and labor from an arid landscape with no surplus. Severe drought through the 1660s and 1670s brought famine and intensified Apache raiding that Spain could not stop while refusing to reduce tribute. Popé coordinated more than two dozen autonomous towns speaking languages from several families by sending runners with knotted cords, one knot untied per day, so no date was written or spoken. On 10 August 1680 they rose, killed about four hundred colonists and drove two thousand survivors to El Paso.`
       },
       {
         category: 'Evaluation',
