@@ -303,6 +303,11 @@ module.exports = {
     intro: `Each card is a full explanation or comparison: the claim, the specific evidence, and the reason. The last one is the correction that separates a good Unit 4 essay from an average one.`,
     pairs: [
       {
+        category: 'Social effects',
+        title: 'Global demand intensified ordinary labor as well as coerced labor',
+        body: `The expansion of oceanic exchange did not replace the older work that produced most goods. It intensified <span class="kt">peasant and artisan labor</span>: wool and linen production expanded in western Europe, Indian cotton weaving supplied enormous regional and overseas markets, and Chinese silk producers served both domestic and long-distance demand. That continuity matters because it shows that the new global economy grew by pulling more output from existing households and workshops as well as by creating plantations and mines.`
+      },
+      {
         category: 'Causation',
         title: 'A Chinese tax reform decided what was worth mining in Bolivia',
         body: `Ming China abandoned paper currency after inflation and consolidated its taxes into a single silver payment, obliging well over a hundred million people to obtain a metal China produced little of. That set the price of silver in China at roughly twice the European level. Spain opened Potosi in 1545 and worked it with mita labor and mercury amalgamation, and the Manila galleon from 1571 carried Acapulco silver across the Pacific to Fujianese merchants in exchange for silk and porcelain. Something like a third or more of all American silver ended in China. The demand came first and the supply followed it, which is the direction of causation most answers get backward.`
