@@ -88,7 +88,7 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "The Tools of the Age of Exploration",
-    intro: "Use these cards to explain how maritime technologies, cartographic innovations, and the printing press transformed European sailors from coastal navigators into oceanic explorers, and how state sponsorship connected these technologies to sustained, systematic voyaging.",
+    intro: "Use these cards to explain how cross-cultural diffusion of Classical, Islamic, and Asian knowledge combined with new navigation tools, ship designs, and practical knowledge of winds and currents to make sustained transoceanic travel possible.",
     videos: [],
     segments: [
       {
@@ -122,18 +122,18 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "Maps, Printing, and the Knowledge Revolution",
+        title: "Cross-Cultural Knowledge and the Ocean Environment",
         bullets: [
-          "**Portolan charts**, detailed navigational maps of coastlines developed in the Mediterranean by the 13th century, showed harbors, headlands, and compass bearings between ports with unprecedented accuracy. As Portuguese explorers mapped the African coast section by section, each voyage's discoveries were added to updated portolan charts brought back to Lisbon, creating a cumulative record that served as the basis for the next expedition.",
-          "**Johannes Gutenberg's printing press** (c. 1440s) transformed the circulation of geographic knowledge. Maps, sailing guides, and geographic descriptions that had previously been rare handwritten manuscripts could now be printed in hundreds of copies and distributed widely. Geographic knowledge shifted from the exclusive possession of royal courts to a commodity available to merchants, competing states, and scholars across Europe.",
-          "The **Waldseemüller map** (1507) was printed in an initial run of approximately 1,000 copies, the first printed world map to use the name 'America.' Within decades, multiple competing printed maps circulated throughout Europe, each incorporating the latest discoveries. No previous generation had had access to such rapid, widespread distribution of geographic discoveries.",
-          "The cumulative effect was a **geographic knowledge infrastructure**: by c. 1500, a navigator preparing for a long voyage could consult printed sailing guides, study portolan charts of known coasts, and compare multiple world maps. This infrastructure made sustained, state-sponsored exploration rational, each voyage could build systematically on what previous voyages had documented."
+          "European maritime innovation was **cumulative and cross-cultural**. The magnetic compass originated in China; the astrolabe drew on Classical and especially Islamic astronomical traditions; the lateen sail had long been used around the Mediterranean and Indian Ocean.",
+          "Sailors also needed practical environmental knowledge. Portuguese mariners learned the **volta do mar** — using Atlantic wind systems and currents to sail away from the African coast before turning back toward Europe — because the shortest-looking route was not always the navigable route.",
+          "Ship design combined technologies for different conditions. The **caravel** paired maneuverability and lateen rigging with an ocean-capable hull, while larger carracks carried more cargo and provisions on long voyages.",
+          "The causal chain is the Topic 4.1 job: **borrowed knowledge + improved tools + ship design + wind/current knowledge -> more reliable transoceanic travel and trade**."
         ],
         image: {
-          title: "Waldseemüller World Map, 1507",
-          caption: "The Waldseemüller map of 1507, the first printed world map to show the Americas as separate continents and use the name 'America.' Produced in ~1,000 copies, it demonstrates how the printing press transformed geographic knowledge from rare manuscript to widely distributed information.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
+          title: "Atlantic wind and current systems",
+          caption: "Oceanic voyaging depended on environmental knowledge as much as on instruments.",
+          url: "../assets/images/instructional-maps/topic-4-1.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-4-1.svg"
         }
       }
     ]
