@@ -134,13 +134,15 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
     const { page, errors } = await localPage(browser, origin, 'teacher/topic-2-2-os.html');
     console.log('\n  Topic 2.2 teacher Teaching OS');
     const data = await teachingData(page);
-    check('2.2 renders teacher preflight plus the 22-slide CED sequence', data.slides.length === 23, `slides=${data.slides.length}`);
+    check('2.2 renders teacher preflight plus the 24-slide CED sequence', data.slides.length === 25, `slides=${data.slides.length}`);
     check('2.2 run of show covers the lesson', data.flow.length >= 11, `flow=${data.flow.length}`);
     for (const title of [
       'Do not teach the Mongols as a conquest story.',
       'Three Big Rocks',
+      'Who were the Mongols?',
+      'Steppe life shaped Mongol strengths.',
       'One empire becomes four Mongol states.',
-      'Temüjin turns steppe warriors into a system.',
+      'Chinggis Khan turns steppe warriors into a system.',
       'Regional rule solves distance',
       'The routes were older. The political conditions changed.',
       'Connection moves knowledge.',
@@ -167,6 +169,8 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
       !/Every example in Topic 2\.2/i.test(bigRocksText));
 
     await verifyLocalVisual(page, 'The Mongol Empire', 'Steppes%20of%20Asia', '2.2 opening');
+    await verifyLocalVisual(page, 'Who were the Mongols', 'Steppes%20of%20Asia', '2.2 Mongol context');
+    await verifyLocalVisual(page, 'Steppe life shaped Mongol strengths', 'Cinematic%20Mongol%20Archers', '2.2 steppe context');
     await verifyLocalVisual(page, 'One empire becomes four Mongol states', 'Map%20of%20the%20Khanates', '2.2 khanates map');
     await verifyLocalVisual(page, 'Mobility is a weapon', 'Cinematic%20Mongol%20Archers', '2.2 mobility');
     await verifyLocalVisual(page, 'The Mongols borrowed what worked', 'Mongols%20Borrow%20Siege%20Technology', '2.2 siege technology');
