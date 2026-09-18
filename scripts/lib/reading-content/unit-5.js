@@ -985,7 +985,9 @@ module.exports = {
       "steamship",
       "telegraph",
       "market integration",
-      "migra    "sections": [
+      "migration"
+    ],
+    "sections": [
       {
         "number":"01","label":"Energy","heading":"Coal and Oil Multiply the Energy Available to Society",
         "blocks":[
@@ -1087,7 +1089,9 @@ module.exports = {
       "telegraph",
       "zaibatsu",
       "regional power",
-      "state c    "sections": [
+      "state capacity"
+    ],
+    "sections": [
       {
         "number": "01",
         "label": "The Problem",
@@ -1197,7 +1201,10 @@ module.exports = {
       "industrial capitalism",
       "mass production",
       "consumer goods",
-      "standards of    "sections": [
+      "standards of living",
+      "real wages"
+    ],
+    "sections": [
       {
         "number":"01","label":"Ideology","heading":"Free Trade Challenges the Mercantilist Rulebook",
         "blocks":[
@@ -1300,7 +1307,11 @@ module.exports = {
       "Tanzimat",
       "Self-Strengthening Movement",
       "Ottoman Empire",
-          "sections": [
+      "Qing China",
+      "modernization",
+      "elite resistance"
+    ],
+    "sections": [
       {
         "number":"01","label":"Organize","heading":"Workers Build Collective Power",
         "blocks":[
