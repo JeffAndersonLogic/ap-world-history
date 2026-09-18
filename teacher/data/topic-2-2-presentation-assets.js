@@ -68,15 +68,14 @@ if(whole){
   whole.kind='grid';
   whole.eyebrow='What Students Must Know';
   whole.title='Three Big Rocks';
-  whole.subtitle='Every example in Topic 2.2 belongs to one of these ideas.';
+  delete whole.subtitle;
   delete whole.steps;
   whole.cards=[
-    {title:'1 · STATE CHANGE',text:'Mongols build a vast empire, then unified political control fragments into regional khanates.'},
-    {title:'2 · CONNECTION',text:'Mongol rule changes political conditions on exchange networks that already existed.'},
-    {title:'3 · TRANSFER',text:'Greater contact moves knowledge and cultural practices across regions.'},
-    {title:'AP SKILL',text:'Explain the mechanism and significance, not just the Mongol fact.'}
+    {title:'1 · STATE CHANGE',text:'Build a vast empire, then fragment into regional khanates.'},
+    {title:'2 · CONNECTION',text:'Change political conditions on exchange networks that already existed.'},
+    {title:'3 · TRANSFER',text:'Move knowledge and cultural practices across regions.'}
   ];
-  whole.footer='State change -> connection -> transfer = the Topic 2.2 significance argument.';
+  whole.footer='State change -> connection -> transfer.';
   whole.notes=whole.notes||{};
   whole.notes.land=[
     'These are the three required dimensions of the lesson.',
@@ -117,7 +116,7 @@ if(siege){
   siege.kind='hero';
   siege.eyebrow='Big Rock 1 · State Change · Build';
   siege.position='top';
-  siege.visual=visual('2.2 - Cinematic Mongol city gate.png','Historical reconstruction of Mongol forces confronting a fortified city','HISTORICAL RECONSTRUCTION — AI GENERATED');
+  siege.visual=visual('2.2 - Mongols Borrow Siege Technology.jpeg','Mongol forces using borrowed siege technology against a fortified city','Topic 2.2 classroom visual');
   siege.footer='Mechanism: adaptation lets a steppe army conquer fortified cities.';
   siege.notes=siege.notes||{};
   siege.notes.land=[
@@ -227,9 +226,11 @@ if(transfer&&!byTitle('Medical knowledge moves west.')){
       }
     },
     {
-      phase:'transfer',kind:'process',eyebrow:'Big Rock 3 · Transfer Example 3 · Writing',
+      phase:'transfer',kind:'hero',eyebrow:'Big Rock 3 · Transfer Example 3 · Writing',
       title:'The Mongols borrow a writing system.',
-      subtitle:'Adoption of the Uyghur script',
+      subtitle:'Uyghur script -> Mongol adoption -> adaptation -> state use',
+      position:'right',
+      visual:visual('2.2 - Cinematic Mongol city gate.png','Mongol representatives at a fortified city, reused here as a visual for Mongol borrowing and adaptation','HISTORICAL RECONSTRUCTION — AI GENERATED'),
       steps:[
         {label:'UYGHUR SCRIPT',text:'A neighboring scribal tradition provides a usable writing system'},
         {label:'MONGOL ADOPTION',text:'Mongol rulers adopt the script for writing Mongolian'},
