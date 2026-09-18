@@ -30,7 +30,7 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Free Market',
+    title: 'First & 10: The Consumer Economy',
     embedUrl: 'first-and-10-topic-5-7-economic-developments-and-innovations-capture.html?v=response-id-fix-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.7 lesson path.'
   };
@@ -38,10 +38,10 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'London as the center of global finance', detail: 'By 1870, London was the uncontested center of the global financial system. The Bank of England set interest rates that influenced borrowing costs worldwide; the London Stock Exchange listed securities from across the British Empire and beyond; Lloyd\'s of London insured shipping globally; and British investment banks, Baring Brothers, Rothschild & Sons, and others, financed governments and railroads on six continents. The City of London\'s dominance rested on several foundations: sterling\'s gold-backed stability made it the global reserve currency; Britain\'s extensive colonial network provided both investment opportunities and guaranteed markets; and a century of industrial leadership had accumulated the capital that needed to be invested. By 1900, Britain had invested approximately £4 billion overseas, more than France and Germany combined, generating investment income that helped finance Britain\'s trade deficit in manufactured goods.' },
-      { label: 'The web of British overseas investment', detail: 'British capital flowed across the globe through three main channels. The first was formal empire: railroads in India (the largest railroad network in Asia, financed by British capital and guaranteed by the Indian government), mining and agriculture in South Africa, Australia, and Canada. The second was informal empire in Latin America: British banks financed Argentine railroads, Chilean mining, and Brazilian government bonds; British companies built port infrastructure and telegraph lines across the continent. The third was penetration of formally sovereign but financially dependent states: the Ottoman Empire, Persia, and China all received British (and other European) investment under conditions that limited their economic sovereignty. The pattern reveals that British capital went where returns were highest and risk was manageable, which generally meant where British political and military power could protect investors if governments defaulted.' },
-      { label: 'The gold standard zone and its boundaries', detail: 'By 1900, most major economies had adopted the gold standard, creating a zone of fixed exchange rates that dramatically simplified international trade and investment. Within this zone, Britain, Germany, France, United States, most of Europe, Japan, and British dominions, international transactions were predictable: exchange rates were fixed, there was no currency risk, and contracts could be written with confidence about future payment values. Outside this zone, China (on a silver standard), many smaller economies, international transactions were more complex and expensive. The gold standard\'s geographic spread thus determined which economies were integrated into the global industrial financial system and which were at its margins. Joining the gold standard required holding gold reserves, which meant smaller economies had to run trade surpluses or borrow from gold-standard banks, either way, they became more dependent on the financial centers.' },
-      { label: 'Economic imperialism without formal colonialism', detail: 'The most analytically important geographic pattern for Topic 5.7 is the region between formal British colonies (colored in pink on maps of the era) and fully independent economies: the zone of economic imperialism. Latin America, formally independent since the 1820s, was economically dependent on British capital and trade: British banks held government bonds, British companies owned railroads and mines, and the region\'s export economy was structured around supplying industrial Britain with raw materials. The Ottoman Empire, formally sovereign throughout the 19th century, ceded control of its tax revenues to European creditors through the Ottoman Public Debt Administration. China, never formally colonized, had its treaty ports opened by gunboat diplomacy and its tariff rates set by unequal treaties. This intermediate zone, formally sovereign but economically penetrated, reveals that formal colonialism was one mechanism of industrial-era power, not the only one.' }
+      { label: 'Free trade and industrial markets', detail: 'Western European economies increasingly challenged mercantilist restrictions with laissez-faire and free-trade arguments. Britain’s repeal of the Corn Laws in 1846 is a useful policy marker for this shift.' },
+      { label: 'Transnational business and finance', detail: 'Industrial-scale enterprise required pooled capital, limited liability, stock markets, and banks capable of moving credit across borders. Institutions such as HSBC connected Asian commercial centres to British and global financial networks.' },
+      { label: 'Mass production and consumer goods', detail: 'Improved manufacturing methods increased the volume and variety of textiles, household goods, tools, and other products while lowering many prices. Industrial capitalism therefore changed everyday consumption, not just factory ownership.' },
+      { label: 'Standards of living: improvement with limits', detail: 'Over the 19th century, rising real incomes and cheaper goods improved material living standards for some workers and especially middle-class consumers. Those gains were uneven by class, region, gender, and imperial position, so the evidence supports a qualified rather than universal claim.' }
     ]
   };
 
@@ -64,40 +64,41 @@
   };
 
   lesson.skillBuilder = {
-    label: 'Argumentation practice',
-    title: 'Was Free Trade a Universal Good or a Tool of British Power? Constructing a Supported Argument',
-    intro: 'Argumentation for Topic 5.7 requires taking a position and defending it with specific evidence. The free trade debate is ideal for AP argumentation practice because both sides have legitimate evidence: free trade did increase total global trade and lower consumer prices; it also did concentrate benefits in the most advanced industrial economy. A strong argument does not pretend the other side has no evidence, it acknowledges the strongest counter-evidence and explains why, on balance, the argument still holds.',
+    label: 'Causation practice',
+    title: 'How Industrial Capitalism Scaled',
+    intro: 'Topic 5.7 is a system-building problem. Explain how an economic idea, a financial institution, and improved manufacturing reinforced one another rather than treating free trade, finance, and consumer goods as unrelated facts.',
     steps: [
-      { label: 'Establish your claim (thesis)', text: 'Before writing, choose your position: (A) Free trade ideology primarily served British industrial interests and extended economic inequality, despite its universalist rhetoric; OR (B) Free trade ideology genuinely increased global prosperity and integration, even if the benefits were distributed unequally. Both positions can be defended, the key is defending yours with specific evidence. Your thesis should be specific about the mechanism: not just "free trade was good/bad" but "free trade worked by [specific mechanism] and this produced [specific outcome] because [specific reason]." Example thesis for position A: "Britain\'s free trade ideology primarily served British industrial interests by forcing open foreign markets to British manufactured goods while preventing developing economies from using protective tariffs to build their own industries, as demonstrated by British opposition to Egyptian and Indian industrial development." Example thesis for position B: "Although free trade benefited Britain disproportionately as the most advanced industrial economy, the resulting global trade expansion also created economic growth in raw material-exporting regions, as demonstrated by the Argentine and Australian economic booms of the 1870s–1900s."' },
-      { label: 'Select and use specific evidence', text: 'For position A (free trade as British power): the Corn Laws repeal benefited British manufacturers who needed cheap food for low-wage workers; British opposition to Muhammad Ali\'s Egyptian industrialization and to Indian protective tariffs; the Ottoman Public Debt Administration as the consequence of accepting British financial terms. For position B (free trade as global growth): the dramatic expansion of global trade volume 1850–1900; falling consumer prices for manufactured goods in trade-integrated economies; Argentine and Australian agricultural export booms funded infrastructure and population growth. For either position: acknowledge the strongest counter-evidence. If arguing A, acknowledge that trade volume did increase and some non-British economies did grow. If arguing B, acknowledge that India\'s textile industry was deindustrialized and that Egypt\'s industrialization was blocked.' },
-      { label: 'Write the synthesis (what does the debate reveal?)', text: 'The most sophisticated AP arguments end with synthesis: what does the free trade debate reveal about the relationship between economic ideology and power? Synthesis statement: The 19th-century free trade debate reveals that economic ideologies are never politically neutral, they reflect and serve the interests of those who formulate them, even when they contain genuine economic insight. Britain\'s comparative advantage argument was economically valid; it was also politically convenient for the economy that stood to benefit most from open markets. The fact that the countries that successfully industrialized (Germany, United States, Japan) rejected British free trade advice and used protective tariffs reveals that free trade, as practiced in the 19th century, was not a universally applicable development strategy, it was a strategy appropriate for the most advanced industrial economy, promoted by that economy to the advantage of its manufacturers.' }
+      { label: 'Begin with economic ideology', text: 'Explain how laissez-faire/free-trade ideas challenged mercantilist restrictions and widened markets for industrial producers.' },
+      { label: 'Add financial infrastructure', text: 'Explain how limited liability, stock markets, banks, or transnational firms reduced risk and pooled enough capital for large industrial or commercial ventures.' },
+      { label: 'Connect to production and consumption', text: 'Show how improved manufacturing increased output and reduced prices, expanding the availability and variety of consumer goods.' },
+      { label: 'Qualify the living-standard effect', text: 'Explain that standards of living increased for some rather than all people. Identify a class, region, or period where benefits were limited or delayed.' }
     ],
-    prompt: 'In 3–4 sentences, construct an argument about whether 19th-century free trade ideology primarily served British industrial interests or was a genuine universal good. Take a clear position, support it with at least two specific pieces of evidence (one should be a named event, treaty, or policy), and acknowledge the strongest counter-evidence to your position. End with a synthesis statement about what the free trade debate reveals about the relationship between economic ideology and power.'
+    prompt: 'Build a causal chain from free-market ideology to finance/business institutions to industrial production and consumer goods. Explain one way standards of living improved and one reason the improvement was uneven.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Financial Institutions and Industrial Capitalism',
-      subtitle: 'Checks Learning Target 1 — corporations, investment banking, stock markets, and how they enabled industrial investment.',
-      cardDesc: 'Joint-stock companies, limited liability, stock exchanges, and investment banking.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Explain how limited liability corporations changed the economics of industrial investment. What specific mechanism did limited liability create, what could investors now safely do that they could not do before? Then explain the role of investment banking in industrial capitalism: what did investment banks do, and why was their function necessary rather than just convenient? End with a synthesis: what does the development of these financial institutions reveal about the relationship between legal and financial innovation and industrial economic growth?',
+      title: 'Checkpoint 1: Free Trade and Transnational Finance',
+      subtitle: 'Checks Learning Targets 1–2 — economic ideology, business scale, and financial institutions.',
+      cardDesc: 'Adam Smith, laissez-faire, Corn Laws, limited liability, stock markets, banking, and HSBC.',
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
+      prompt: 'Explain how free-trade and laissez-faire ideas challenged mercantilist economic policies. Use Adam Smith or the repeal of the Corn Laws as specific evidence. Then explain how TWO financial or business innovations—such as limited liability, stock markets, investment banking, HSBC, or another transnational firm—made larger industrial or global enterprise possible. Explain the mechanism for each innovation.',
       responseType: 'Checkpoint 1',
-      terms: ['joint-stock company', 'limited liability', 'Companies Act 1862', 'stock exchange', 'London Stock Exchange', 'New York Stock Exchange', 'investment bank', 'House of Morgan', 'Deutsche Bank', 'dividend'],
-      focus: ['Explain the specific mechanism of limited liability, what changed, and why it mattered for investment behavior.', 'Explain investment banking\'s role, what did they do that markets alone could not?', 'Synthesize: what does financial innovation reveal about the conditions necessary for industrial capitalism?']
+      terms: ['Adam Smith', 'laissez-faire', 'free trade', 'mercantilism', 'Corn Laws', 'limited liability', 'stock market', 'banking', 'HSBC', 'transnational business'],
+      focus: ['Explain the ideological shift away from mercantilism.', 'Use two financial/business innovations.', 'Explain how each innovation reduced risk, pooled capital, or enabled cross-border enterprise.']
     },
     {
-      title: 'Checkpoint 2: Free Trade and Economic Imperialism',
-      subtitle: 'Checks Learning Target 2 — Corn Laws, gold standard, and how economic relationships extended industrial power.',
-      cardDesc: 'Free trade ideology, the 1846 Corn Laws repeal, gold standard, and economic imperialism in Latin America and the Ottoman Empire.',
-      learningTargets: [lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: 'Explain the political context of British free trade advocacy: why did Britain promote free trade so aggressively in the 19th century, and why did Germany and the United States reject British free trade advice while industrializing? Then explain economic imperialism: choose one case (Latin America, Ottoman Empire, or China) and explain specifically how economic relationships, debt, investment, or trade, achieved colonial-like control without formal annexation. What specific mechanism created the dependency? End with a synthesis: is economic imperialism fundamentally different from political imperialism, or does it achieve the same results through different means?',
+      title: 'Checkpoint 2: Industrial Capitalism and the Consumer',
+      subtitle: 'Checks Learning Target 3 — living standards and consumer-goods availability.',
+      cardDesc: 'Mass production, cheaper goods, greater variety, rising living standards for some, and uneven benefits.',
+      learningTargets: [lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[2].criteria],
+      prompt: 'Explain how improved industrial manufacturing changed consumer life from 1750 to 1900. Use at least TWO specific examples of goods, industries, or production changes to show how manufactured products became more available, affordable, or varied. Then explain one way standards of living improved for some people and one important qualification showing why the improvement was not universal.',
       responseType: 'Checkpoint 2',
-      skill: 'Causation and contextualization',
-      terms: ['comparative advantage', 'Corn Laws', 'Anti-Corn Law League', 'gold standard', 'economic imperialism', 'Ottoman Public Debt Administration', 'Latin American debt dependency', 'treaty ports', 'extraterritoriality', 'informal empire'],
-      focus: ['Explain why Britain advocated free trade and why other industrializing countries rejected it.', 'Explain the specific mechanism of economic imperialism in one case, how debt or investment created dependency.', 'Synthesize: is economic imperialism fundamentally different from formal colonialism?']
+      skill: 'Causation and qualification',
+      terms: ['industrial capitalism', 'mass production', 'consumer goods', 'availability', 'affordability', 'variety', 'standards of living', 'real wages', 'middle class', 'working class'],
+      focus: ['Connect manufacturing improvements to cheaper or more abundant goods.', 'Explain a specific living-standard improvement.', 'Qualify who benefited, where, or when.']
     }
   ];
 
@@ -105,7 +106,7 @@
   lesson.evidenceLab = {
     title: 'Evidence Lab: Build and Test a Claim',
     task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
-    prompt: 'Build a claim about how capitalism and new business/financial institutions changed the scale of industrial economic activity. Use at least two different kinds of evidence and explain how risk, capital, or market power changed.'
+    prompt: 'Build a claim about how economic ideology, finance, and industrial production changed economic life. Use at least two different kinds of evidence and include an effect on consumer goods or standards of living.'
   };
 
   lesson.images = [
