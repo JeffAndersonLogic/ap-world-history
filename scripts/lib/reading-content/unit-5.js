@@ -39,7 +39,7 @@ module.exports = {
     ],
     "supportCards": {
       "beforeYouRead": "Track both the big ideas AND their limits. The AP will not just ask what Enlightenment thinkers believed, it will ask you to evaluate who benefited from those ideas, who was excluded, and what the ideas caused. Pay close attention to the contradictions within Enlightenment thought.",
-      "readingTarget": "By the end, you should be able to explain natural rights, the social contract, and popular sovereignty; name at least three philosophes and describe their specific contributions; and explain at least one major limit of Enlightenment universalism (women, enslaved people, colonial subjects)."
+      "readingTarget": "Explain the Enlightenment’s core ideas and how they challenged traditional authority, then trace how Enlightenment and religious ideals influenced expanded suffrage, abolition, the end of serfdom, women’s rights, and emergent feminism."
     },
     "vocabulary": [
       "Natural Rights",
@@ -174,30 +174,28 @@ module.exports = {
           "label": "AP Thinking, Argumentation",
           "raw": "<p>Was the Enlightenment genuinely revolutionary, or was it a rationalization of existing privilege? <strong>A strong argument acknowledges both sides: the Enlightenment produced real ideas about rights and equality that genuinely threatened existing hierarchies, and that were used by enslaved people, women, and colonial subjects to demand inclusion. But the Enlightenment also produced sophisticated intellectual justifications for racial hierarchy, gender exclusion, and colonial domination.</strong> The most powerful insight: the contradiction between Enlightenment universalism and Enlightenment exclusions was itself a source of future radicalization.</p>"
         }
+      },
+      {
+        "number": "05",
+        "label": "Long-Term Effects",
+        "heading": "Rights Claims Become Reform Movements",
+        "blocks": [
+          {"type":"p","html":"The Enlightenment’s effects did not end with the Atlantic Revolutions. During the 19th century, reformers repeatedly took the language of natural rights and equality and asked why it stopped at existing political and social boundaries."},
+          {"type":"p","html":"Movements for <span class=\"kt\">expanded suffrage</span>, the <span class=\"kt\">abolition of slavery</span>, and the <span class=\"kt\">end of serfdom</span> drew from Enlightenment and religious arguments about liberty, equality, moral obligation, and legitimate authority."},
+          {"type":"p","html":"Women’s-rights advocates made the contradiction especially clear. <span class=\"kt\">Mary Wollstonecraft</span> argued that women were rational beings entitled to education and independence; <span class=\"kt\">Olympe de Gouges</span> rewrote revolutionary rights language to include women; and the <span class=\"kt\">Seneca Falls Conference</span> of 1848 turned natural-rights language into an organized demand for political equality."},
+          {"type":"p","html":"This is the long-term causal pattern: <strong>universal rights claim -> visible exclusion -> reform movement -> expansion of rights</strong>. The fact that Enlightenment rights were incomplete in practice did not make them historically irrelevant; it gave later reformers a language with which to attack the exclusions."}
+        ],
+        "callout":{"label":"BeReady: 10-Second Takeaway","raw":"<p><strong>The Enlightenment challenged authority twice:</strong> first by justifying revolution, then by giving later reformers a language for extending rights to people the first revolutions had excluded.</p>"}
       }
     ],
-    "takeaway": "The Enlightenment (c. 1650–1800) challenged traditional authority through three key ideas: <strong>natural rights</strong> (Locke, individuals are born with rights government cannot take away), <strong>social contract</strong> (Locke and Rousseau, government derives authority from the people, not from God), and <strong>popular sovereignty</strong> (the people are the ultimate source of political authority). These ideas were spread through print culture, the Encyclopédie, pamphlets, novels, and salons, to educated elites across the Atlantic world. But Enlightenment universalism had profound limits: women were mostly excluded (Wollstonecraft being the major exception); enslaved people were excluded by most white philosophes despite the logical implications of natural rights; colonial subjects were rationalized as not yet capable of self-governance. These contradictions would fuel the most radical revolution of the era, the Haitian Revolution, and shape political debate for centuries.",
+    "takeaway": "The Enlightenment challenged traditional authority through reason, natural rights, social contract, popular sovereignty, separation of powers, and religious tolerance. Those ideas helped justify Atlantic revolutions, but their effects continued through 19th-century reform movements. Expanded suffrage, abolition, the end of serfdom, and women’s-rights activism all drew on claims about liberty and equality. Wollstonecraft, Olympe de Gouges, and the Seneca Falls Convention show how groups excluded from early universal-rights claims used Enlightenment logic to demand that those rights be applied more consistently.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Three AP Skills",
     "questions": [
-      {
-        "num": "1",
-        "skill": "Causation",
-        "text": "Explain how the Scientific Revolution and printing press were preconditions for the Enlightenment. What specifically did each contribute, and why were both necessary, not just one of them?",
-        "placeholder": "Explain what each precondition contributed and why both were necessary..."
-      },
-      {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare Locke's and Rousseau's versions of the social contract. What did they agree on? What did they disagree on? Explain WHY the difference existed, what different problems were each trying to solve?",
-        "placeholder": "Identify agreements and disagreements, then explain why the difference existed..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Was the Enlightenment's claim to universalism genuine or hypocritical? Write a one-sentence claim taking a position, then provide one specific piece of evidence that supports your argument.",
-        "placeholder": "State your claim, then provide specific evidence..."
-      }
+      {"num":"1","skill":"Causation","text":"Choose one Enlightenment idea and explain how it challenged a specific traditional authority. Then explain how the idea could provide justification for revolution.","placeholder":"The idea challenged... because... It justified revolution by..."},
+      {"num":"2","skill":"Continuity & Change","text":"Explain how Enlightenment or religious ideals influenced TWO reforms from expanded suffrage, abolition, or the end of serfdom.","placeholder":"The ideals influenced reform one by... Reform two by..."},
+      {"num":"3","skill":"Argumentation","text":"How did women’s-rights advocates turn the limits of Enlightenment universalism into an argument for expanded rights? Use Wollstonecraft, Olympe de Gouges, or Seneca Falls as evidence.","placeholder":"The earlier contradiction was... The reformer/event used rights language by..."}
+
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
