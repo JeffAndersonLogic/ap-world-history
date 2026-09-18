@@ -37,37 +37,47 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how European rulers used mercantilist policies and joint-stock companies to expand and control their economies and claim overseas territories.",
-      kc: 'KC-4.1.IV.C',
+      target: "I can explain how rulers used mercantilism, chartered monopoly companies, and economic rivalry to maintain and develop maritime empires.",
+      kc: 'KC-4.1.IV.C; KC-4.3.III.ii',
       theme: "Governance"
     },
     {
-      target: "I can explain how the global circulation of goods, driven by chartered European monopoly companies and the global flow of silver from the Americas, reshaped networks of exchange across Afro-Eurasia.",
-      kc: 'KC-4.1.IV',
+      target: "I can explain continuity and change in exchange networks, including global silver flows, chartered companies, Atlantic trade, and the continued importance of regional Afro-Eurasian markets.",
+      kc: 'KC-4.1.IV; KC-4.1.IV.D.i',
       theme: "Economic Systems"
     },
     {
-      target: "I can explain how the Atlantic trading system moved goods, wealth, and enslaved laborers, and produced a mixing of African, American, and European cultures and peoples.",
-      kc: 'KC-4.1.IV.D.i; KC-4.1.IV.D.ii',
+      target: "I can explain political, economic, and social effects of expanding exchange, including intensified peasant/artisan labor and changes to gender and family patterns in Africa associated with the trade of enslaved persons.",
+      kc: 'KC-4.2.II.A; KC-4.2.III.C; KC-4.1.IV.D.ii',
       theme: "Social Interactions and Organization"
+    },
+    {
+      target: "I can compare how expanding global interactions affected belief systems, including the spread of existing religions, religious conflict, and the development of syncretic practices.",
+      kc: 'KC-4.1.VI',
+      theme: "Cultural Developments and Interactions"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can describe mercantilism and the joint-stock company (e.g., the Dutch VOC) and explain how European rulers used them to compete for wealth and overseas territory.",
-      kc: 'KC-4.1.IV.C',
+      criteria: "I can explain how mercantilist rules and joint-stock companies such as the VOC or British EIC helped states mobilize capital, protect monopolies, and compete for overseas trade and territory.",
+      kc: 'KC-4.1.IV.C; KC-4.3.III.ii',
       theme: "Governance"
     },
     {
-      criteria: "I can trace how the global flow of silver, especially from Spanish America, and chartered monopoly companies linked the Americas, Europe, and Asia, while regional Afro-Eurasian markets continued to flourish.",
-      kc: 'KC-4.1.IV',
+      criteria: "I can trace silver and Atlantic exchange across hemispheres while also explaining one important continuity in established Afro-Eurasian regional markets or commercial practices.",
+      kc: 'KC-4.1.IV; KC-4.1.IV.D.i',
       theme: "Economic Systems"
     },
     {
-      criteria: "I can explain how the Atlantic trading system moved enslaved laborers and goods and produced a cultural synthesis among African, American, and European peoples.",
-      kc: 'KC-4.1.IV.D.i; KC-4.1.IV.D.ii',
+      criteria: "I can explain how growing demand intensified peasant or artisan labor in Europe, India, or China and how the Atlantic slave trade reshaped demographic, gender, family, and cultural patterns in parts of Africa and the Americas.",
+      kc: 'KC-4.2.II.A; KC-4.2.III.C; KC-4.1.IV.D.ii',
       theme: "Social Interactions and Organization"
+    },
+    {
+      criteria: "I can use at least two specific examples to compare different religious effects of global interaction, including missionary expansion, conflict, or syncretic traditions such as Vodun or Santería.",
+      kc: 'KC-4.1.VI',
+      theme: "Cultural Developments and Interactions"
     }
   ],
 
@@ -123,53 +133,64 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Labor, Administration, and Silver: Maintaining Maritime Empires",
-    intro: "European maritime empires after c. 1500 were sustained by three interlocking systems: forced labor that extracted resources from colonies, bureaucratic administration that maintained imperial order, and global trade networks that channeled wealth back to Europe. Understanding how these systems worked together, and how each depended on the others, is essential for Topic 4.5.",
+    title: "Maintaining Maritime Empires: Money, Markets, Society, and Belief",
+    intro: "Topic 4.5 asks four connected questions. How did rulers organize economic competition? What changed and continued in exchange networks? What social effects followed expanding production and Atlantic exchange? And how did intensified contact affect belief systems? Keep those four moves distinct, then connect them.",
     videos: [],
     segments: [
       {
-        title: "Forced Labor Systems: Encomienda, Mita, and Chattel Slavery",
+        title: "Economic Strategy: Mercantilism and Chartered Companies",
         bullets: [
-          "The **encomienda system** organized the basic relationship between Spanish colonists and indigenous peoples: the crown granted a colonist (*encomendero*) the right to extract labor and tribute from a designated indigenous community, supposedly in exchange for Christian instruction and military protection. In practice, it concentrated enormous power in individual colonists and created conditions of extreme exploitation that Bartolomé de las Casas documented in his *Short Account* (1542).",
-          "As disease killed 50–90% of the indigenous population in the century after contact, the encomienda became inadequate, there were not enough workers. The **mita system** filled the gap at Potosí: adapted from the Inca *mit'a*, it required indigenous communities to supply rotating labor drafts to the silver mines. Workers traveled weeks to reach Potosí, descended into lethal conditions underground, and were exposed to mercury poisoning used in silver processing. Death rates were catastrophic.",
-          "**Chattel slavery** developed as the plantation economy demanded a labor force in coastal zones where the mita did not reach. The Portuguese introduced enslaved Africans to Brazil's sugar plantations in the 1530s; the Spanish, Dutch, British, and French followed in the Caribbean and Atlantic coast. Chattel slavery was hereditary, racially defined, and gave enslaved people no legal recourse, qualitatively more absolute than the mita or encomienda.",
-          "The three systems coexisted and complemented each other geographically: the mita dominated the highland mining zones of the Andes; the encomienda persisted in agricultural regions; chattel slavery dominated coastal plantations. Each was matched to the economic function of the region it served."
+          "**Mercantilism** treated overseas trade as a tool of state power. Rulers used tariffs, navigation laws, colonial monopolies, and exclusive trading rights to keep wealth and strategic commodities inside their own imperial systems.",
+          "Chartered joint-stock companies such as the **Dutch VOC** and **British EIC** pooled private capital while receiving state-backed monopoly rights. They could trade, negotiate, build forts, and sometimes wage war, making commercial organizations instruments of imperial competition.",
+          "Because states pursued the same profitable routes and markets, **economic disputes produced interstate rivalry**. Commercial strategy and geopolitical conflict were connected rather than separate stories."
         ],
         image: {
-          title: "Florentine Codex — Disease and Labor",
-          caption: "The demographic collapse caused by disease, documented in sources like the Florentine Codex, was the fundamental cause of the shift from encomienda to mita and chattel slavery. When the indigenous labor supply collapsed, colonial labor systems evolved to find replacements.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
+          title: "Dutch East India Company emblem",
+          caption: "The VOC combined private investment with state-backed monopoly and coercive power.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/VOC.svg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:VOC.svg"
         }
       },
       {
-        title: "Colonial Administration: Governing at a Distance",
+        title: "Exchange Networks: New Global Circulation, Old Regional Strength",
         bullets: [
-          "The Spanish colonial empire governed enormous territories across two continents from a capital thousands of miles away. The **viceregal system** placed royal governors, viceroys, at the head of each major territorial unit: the **Viceroyalty of New Spain** (capital: Mexico City, established 1535) and the **Viceroyalty of Peru** (capital: Lima, established 1542). Viceroys were appointed by the crown, served limited terms, and were subject to review (*residencia*) at the end of their tenure.",
-          "**Audiencias**, royal courts with combined judicial, legislative, and administrative functions, provided day-to-day governance across the colonies. There were eventually twelve audiencias across Spanish America, each serving as the primary mechanism of colonial law and order. Indigenous peoples could bring complaints to the audiencias, though access was limited and outcomes often unfavorable.",
-          "The **Catholic Church** was the most pervasive institution of colonial rule. **Franciscan, Dominican, and Jesuit missionaries** established missions across the Americas, converting indigenous peoples, running schools and hospitals, and serving as the only European presence in many frontier regions. The Church justified colonial rule theologically, conquest and colonization were framed as a Christian duty to bring salvation to indigenous peoples. Missionaries like Las Casas challenged the brutality of this project from within, but the Church as an institution remained deeply embedded in colonial power.",
-          "The **Casa de Contratación** in Seville controlled all trade between Spain and its colonies, functioning as the commercial backbone of the empire. It registered ships, trained pilots, administered the trading monopoly, and regulated the flow of silver from the Americas to Spain. This commercial monopoly channeled wealth through Seville and gave the Spanish crown direct revenue from colonial trade."
+          "American **silver** moved through Atlantic routes to Europe and across the Pacific through Manila, where it purchased Asian goods and responded to strong Chinese demand. Chartered monopoly companies helped move goods through these expanding transoceanic circuits.",
+          "The **Atlantic trading system** moved goods, wealth, and labor, including enslaved people, among Africa, Europe, and the Americas. These routes created new connections between previously separate hemispheric systems.",
+          "At the same time, established **Afro-Eurasian regional markets continued to flourish**. Asian, African, and Middle Eastern merchants retained commercial knowledge, credit practices, and local networks that European companies entered rather than simply replacing."
         ],
         image: {
-          title: "Casta Painting — Colonial Social Order",
-          caption: "Casta paintings documented the elaborate racial classification system of Spanish colonial America. The hierarchy, peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans, was maintained and enforced by the administrative institutions of the viceregal system.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
+          title: "World trade routes, c. 1700",
+          caption: "New transoceanic routes became layered onto older regional commercial systems.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:1700_CE_world_map.PNG"
         }
       },
       {
-        title: "Silver and the Global Economy: Potosí to Manila to Seville",
+        title: "Social Effects: Labor Intensification and Family Change",
         bullets: [
-          "**Potosí** (modern Bolivia) was the engine of the Spanish colonial economy and the most important single source of silver in the world from c. 1550 to c. 1700. By 1600 it was the largest city in the Western Hemisphere, roughly 160,000 people, sustained entirely by silver extraction. The **mita system** conscripted indigenous workers from a radius of hundreds of miles. Mercury, imported from Huancavelica, was used to amalgamate silver from ore, a process that caused severe neurological damage in workers exposed to mercury fumes.",
-          "The **Manila Galleon trade** (1565–1815) was the first regularly scheduled transoceanic trade route. Silver mined at Potosí was transported to Mexico City and then to Acapulco, where it was loaded onto galleons for the trans-Pacific crossing to Manila. In Manila, silver was exchanged for Chinese silk, porcelain, lacquerware, and spices, then carried back to Acapulco and overland to Veracruz for the Atlantic crossing to Seville. This circuit was driven by **Chinese demand for silver** to pay taxes under the Single Whip Tax Reform (1581), which required payment in silver rather than grain or labor.",
-          "The **global price revolution** was the economic consequence of this silver flood. The enormous increase in the silver supply caused inflation across Europe and Asia, prices roughly tripled in Western Europe between 1500 and 1650. This disrupted established economic relationships, accelerated the decline of feudal arrangements, and benefited merchants and debtors while harming creditors and those on fixed incomes. Spain itself was paradoxically weakened: the silver influx allowed Spanish monarchs to fund wars without fiscal discipline, and inflation eroded the competitiveness of Spanish industry.",
-          "The Manila Galleon trade illustrates a key theme for AP World History: **existing trade networks adapted to incorporate new commodities and routes rather than being replaced by them**. Chinese merchants, Portuguese intermediaries, and indigenous traders all participated in the silver economy. The Indian Ocean trade continued; Arab and Chinese merchants continued to dominate their sectors; the new global network built on and through the old."
+          "Expanding demand for consumer goods intensified **peasant and artisan labor**: wool and linen production in western Europe, cotton textiles in India, and silk production in China all expanded while older labor forms continued.",
+          "The Atlantic trade in enslaved people produced major demographic effects in parts of Africa. Because the trade often removed large numbers of young adults, it could alter local sex ratios, household labor, marriage patterns, and family responsibilities.",
+          "Across the Atlantic world, forced migration also contributed to cultural mixing among African, American, and European peoples. Economic exchange therefore changed social life far beyond prices and profits."
         ],
         image: {
-          title: "VOC — Global Trade Networks",
-          caption: "By the early 17th century, the global trade networks created by American silver connected European colonial powers, Asian manufacturers, and African labor into a single economic system, one in which the Dutch VOC, British EIC, and Portuguese Estado da India all competed for position.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg"
+          title: "Indian cotton textile production",
+          caption: "Global demand often intensified existing artisan production instead of replacing it.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_weaver.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_weaver.jpg"
+        }
+      },
+      {
+        title: "Belief Systems: Expansion, Conflict, and Syncretism",
+        bullets: [
+          "Increased interaction expanded the geographic reach of existing religions through migration, missionary activity, conquest, and trade. Catholic missions in the Americas and Asia are one example of older religions entering new settings.",
+          "Religious interaction could produce **conflict** when imperial authorities tried to suppress local practices or when rival confessional identities became tied to political power.",
+          "It also produced **syncretic belief systems and practices**. Traditions such as **Vodun** in Haiti and **Santería** in Cuba combined West and Central African religious practices with elements of Christianity under colonial conditions. Compare the effects: global contact could spread, contest, or blend religious traditions."
+        ],
+        image: {
+          title: "Colonial religious interaction",
+          caption: "Global connections could expand established religions while also producing conflict and syncretic practice.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Our_Lady_of_Guadalupe.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Our_Lady_of_Guadalupe.jpg"
         }
       }
     ]
