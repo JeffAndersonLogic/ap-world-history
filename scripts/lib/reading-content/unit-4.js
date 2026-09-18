@@ -738,15 +738,15 @@ module.exports = {
     "showFooterNote": true,
     "headerSubtitle": "Topic 4.5, Maritime Empires Maintained &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "The <em>Labor</em> of Empire",
-    "deck": "After 1500, European maritime empires depended on one thing above all: workers. The Spanish colonial empire used the encomienda system, the mita, and chattel slavery to extract silver, sugar, and agricultural wealth from the Americas. The silver those workers produced at Potosí flowed across the Pacific and Atlantic to transform the global economy, connecting the Americas, Europe, and Asia into a single trade network for the first time.",
+    "deck": "Maintaining maritime empires required more than workers and silver. Rulers used mercantilism and chartered companies to compete for wealth; new transoceanic routes grew alongside older regional markets; expanding demand intensified peasant and artisan labor and altered families and communities; and global contact spread religions while producing conflict and syncretic practices.",
     "skillTags": [
       "Causation",
       "Continuity & Change",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track the connections between labor systems, colonial administration, and the silver economy. The AP will ask you to explain how labor systems sustained European maritime empires, so you need to connect specific labor practices (mita, encomienda, chattel slavery) to specific economic goals (silver extraction, sugar production, tribute collection).",
-      "readingTarget": "By the end, you should be able to describe the encomienda and mita systems, explain how the viceregal system and Church maintained colonial administration, and trace how silver from Potosí connected the Americas to Europe and Asia through the Manila Galleon trade and global price revolution."
+      "beforeYouRead": "Track four moves: economic strategy, exchange networks, social effects, and belief-system effects. Keep them distinct enough to explain each one, then connect them into a larger story about how maritime empires were maintained.",
+      "readingTarget": "By the end, you should be able to explain mercantilism and chartered companies, identify change and continuity in exchange networks, explain social effects including intensified peasant/artisan labor and African gender/family change, and compare religious expansion, conflict, and syncretism."
     },
     "vocabulary": [
       "Encomienda",
@@ -760,120 +760,61 @@ module.exports = {
       "Casa de Contratación",
       "Global Price Revolution",
       "Indentured Servitude",
-      "Las Casas"
+      "Las Casas",
+      "Mercantilism",
+      "VOC",
+      "Regional Markets",
+      "Peasant and Artisan Labor",
+      "Gender and Family Change",
+      "Cultural Synthesis",
+      "Vodun",
+      "Santería",
+      "Syncretism"
     ],
     "sections": [
       {
-        "number": "1",
-        "label": "Contextualization",
-        "heading": "Why Empires Need Workers",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "European maritime empires after c. 1500 were, at their core, extraction enterprises, built to move wealth from colonies to the mother country. But extraction required labor: someone had to mine the silver at <span class=\"kt\">Potosí</span>, harvest the sugar in Brazil, tend the cochineal dye plants in Oaxaca, and carry goods across the mountains and coasts of the colonial world."
-          },
-          {
-            "type": "p",
-            "html": "The Spanish empire inherited several different labor traditions when it conquered the Americas. The <span class=\"kt\">Aztec</span> and <span class=\"kt\">Inca</span> empires had both operated extensive labor tribute systems, requiring subject peoples to contribute periodic labor to state projects. The Spanish colonial system adapted and intensified these existing practices, combining them with new European commercial logic and religious justification. The result was a set of interlocking labor systems that drove the colonial economy and caused enormous human suffering."
-          }
+        "number":"1","label":"Economic Strategy","heading":"Mercantilism and Chartered Companies",
+        "blocks":[
+          {"type":"p","html":"European rulers used <span class=\"kt\">mercantilism</span> to treat overseas commerce as a source of state power. Tariffs, navigation laws, colonial monopolies, and exclusive trading rights were designed to keep valuable trade inside imperial systems and weaken rival states."},
+          {"type":"p","html":"Chartered companies such as the Dutch <span class=\"kt\">VOC</span> and British EIC pooled private investment while receiving state-backed monopolies and, in some cases, authority to negotiate, build forts, and wage war. Commercial organizations became tools of interstate competition."}
         ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>European maritime empires did not create forced labor from nothing, they inserted themselves into existing labor extraction systems. <strong>The Spanish mita was explicitly modeled on the Inca mit'a. The encomienda combined Spanish feudal traditions with indigenous tribute systems. Understanding what pre-existing structures the Spanish adapted, and how they transformed them, is essential for contextualization questions.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Causation","raw":"<p>Explain the mechanism: <strong>mercantilist rule or company charter -> concentrated capital and protected trade -> greater state or imperial power</strong>.</p>"}
       },
       {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "Encomienda and Mita: Coerced Indigenous Labor",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">encomienda system</span> organized the basic relationship between Spanish colonists and indigenous peoples: the crown granted a colonist (encomendero) the right to extract labor and tribute from a designated indigenous community, in exchange for providing Christian instruction and military service. In practice, the encomienda concentrated enormous power in the hands of individual colonists and created conditions of extreme exploitation."
-          },
-          {
-            "type": "p",
-            "html": "As the indigenous population collapsed, from roughly 50–90% mortality in the century after contact, driven primarily by disease, the encomienda system became increasingly inadequate. There simply were not enough surviving indigenous people to meet labor demands. The <span class=\"kt\">mita system</span> partially filled the gap: adapted from the Inca mit'a, the mita required indigenous communities to supply rotating labor drafts to Spanish mines and public works. At <span class=\"kt\">Potosí</span>, the world's largest silver mine, located in modern Bolivia's highlands, the mita conscripted indigenous workers from a vast radius, forcing them into the dangerous and often lethal conditions of underground silver extraction."
-          },
-          {
-            "type": "p",
-            "html": "The Dominican friar <span class=\"kt\">Bartolomé de las Casas</span> documented the abuses of both systems, arguing that Spanish colonial labor practices violated natural law. His writings, especially the <em>Short Account of the Destruction of the Indies</em> (1542), sparked the <span class=\"kt\">New Laws of 1542</span>, which attempted to reform the encomienda system. In practice, colonists resisted enforcement, and coercive labor continued."
-          }
+        "number":"2","label":"Exchange Networks","heading":"New Global Circuits Layered onto Older Regional Markets",
+        "blocks":[
+          {"type":"p","html":"American <span class=\"kt\">silver</span> moved across the Atlantic and through Manila into Asian markets, while the Atlantic trading system moved goods, wealth, and enslaved labor among Africa, Europe, and the Americas."},
+          {"type":"p","html":"Yet <span class=\"kt\">regional markets</span> in Afro-Eurasia continued to flourish. Indian Ocean, Asian, African, and Middle Eastern merchants retained local knowledge and commercial relationships that European companies entered rather than simply replacing."}
         ],
-        "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>The collapse of the encomienda system was itself caused by the demographic catastrophe of the Columbian Exchange. Disease killed the labor supply. <strong>This forced the Spanish colonial system to evolve: the mita replaced encomienda in mining regions, and the Atlantic slave trade brought enslaved Africans to replace indigenous labor in coastal plantation zones. Understanding causation here means tracing a chain: disease → demographic collapse → labor shortage → evolution of labor systems → Atlantic slave trade.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Change:</strong> new transoceanic routes linked hemispheres. <strong>Continuity:</strong> established regional markets and commercial practices remained essential.</p>"}
       },
       {
-        "number": "3",
-        "label": "Key Concept",
-        "heading": "Chattel Slavery and the Atlantic Trade",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "As the indigenous population collapsed, European colonizers, first the Portuguese in Brazil, then the Spanish, Dutch, and British across the Caribbean and Atlantic coast, turned to enslaved Africans as a labor source. <span class=\"kt\">Chattel slavery</span>, the legal ownership of human beings as property, inheritable and transferable, became the dominant labor system in plantation agriculture across the Atlantic world."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">Atlantic slave trade</span> transported an estimated 12 million enslaved Africans to the Americas between c. 1500 and c. 1800, with the largest numbers going to Brazil (Portuguese) and the Caribbean (Dutch, British, French). The plantation system, organized around sugar, tobacco, cotton, and indigo, demanded an enormous and constantly renewed labor force because the brutal conditions of plantation work caused extremely high mortality. This created a self-perpetuating demand: death required replacement, which drove continued enslavement."
-          },
-          {
-            "type": "p",
-            "html": "Chattel slavery was qualitatively different from the mita and encomienda: it was hereditary (children of enslaved people were born enslaved), racially defined (Africanness became equated with enslaved status in colonial law), and entirely outside any reciprocal obligation. The encomendero at least owed his indigenous laborers Christian instruction and military protection, legal fictions, but fictions that gave indigenous peoples a basis for appeal. The enslaved person in a chattel system had no such legal basis."
-          }
+        "number":"3","label":"Social Effects","heading":"More Demand Means More Work — and Social Change",
+        "blocks":[
+          {"type":"p","html":"Growing demand intensified existing <span class=\"kt\">peasant and artisan labor</span>. Wool and linen production expanded in western Europe, cotton textiles in India, and silk production in China. Globalization often increased older forms of work rather than replacing them."},
+          {"type":"p","html":"The Atlantic trade in enslaved people also reshaped demographics in parts of Africa. The removal of many young adults could alter sex ratios, household labor, marriage patterns, and <span class=\"kt\">gender and family</span> responsibilities."},
+          {"type":"p","html":"Forced migration and colonial contact also produced <span class=\"kt\">cultural synthesis</span> among African, American, and European peoples, showing that economic networks transformed social and cultural life as well as prices."}
         ],
-        "callout": {
-          "label": "AP Thinking, Continuity and Change",
-          "raw": "<p>The Atlantic slave trade represented a significant change in global labor systems, creating a new, racially defined form of chattel slavery that had not previously existed on this scale. <strong>But it also built on continuities: the Islamic world had operated large-scale slave trade networks across the Sahara and Indian Ocean for centuries before European expansion. European colonizers were not inventing slavery, they were scaling it, racializing it, and connecting it to Atlantic plantation agriculture in new ways.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Effects","raw":"<p>Do not stop at 'trade increased.' Ask who worked more, who moved, whose household changed, and which new cultural forms emerged because of those economic connections.</p>"}
       },
       {
-        "number": "4",
-        "label": "Key Concept",
-        "heading": "Silver and the Global Economy",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The most economically transformative product of the Spanish colonial empire was silver, and the most important source was <span class=\"kt\">Potosí</span>, in modern Bolivia, which produced roughly 60% of the world's silver during the 16th and 17th centuries. The silver extracted by mita workers at Potosí flowed through two major channels: the <span class=\"kt\">Manila Galleon trade</span> across the Pacific, and the Seville trading system across the Atlantic."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">Manila Galleon trade</span> (1565–1815) was the world's first regularly scheduled transoceanic trade route. Mexican silver traveled from Acapulco to Manila, where it was exchanged for Chinese silk, porcelain, and spices. This worked because China, the world's largest economy, demanded silver to pay taxes under the <span class=\"kt\">Single Whip Tax Reform</span> (1581), which required payment in silver. Chinese demand pulled silver across the Pacific and drove the entire global trade system."
-          },
-          {
-            "type": "p",
-            "html": "The Atlantic silver route channeled Peruvian and Mexican silver through the <span class=\"kt\">Casa de Contratación</span> in Seville, which held a monopoly on colonial trade. Silver flowed from Seville into European money markets, paying for Spanish military campaigns and triggering a <span class=\"kt\">global price revolution</span>: the massive increase in silver supply caused inflation across Europe and Asia, disrupting existing economic relationships and accelerating the transition to market economies."
-          }
+        "number":"4","label":"Belief Systems","heading":"Religion Spreads, Conflicts, and Blends",
+        "blocks":[
+          {"type":"p","html":"Expanded interaction carried existing religions into new regions through migration, conquest, and missionary activity. Catholic Christianity, for example, spread widely in the Americas and established missions in parts of Asia."},
+          {"type":"p","html":"Interaction could also intensify <span class=\"kt\">religious conflict</span> when imperial authorities suppressed local beliefs or when political rivalry became tied to confessional identity."},
+          {"type":"p","html":"Under colonial conditions, communities also developed <span class=\"kt\">syncretic</span> practices. <span class=\"kt\">Vodun</span> in Haiti and <span class=\"kt\">Santería</span> in Cuba combined West and Central African traditions with elements of Christianity. Global contact could spread, contest, and blend belief systems."}
         ],
-        "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was silver from the Americas the primary cause of global economic change in c. 1450–1750? <strong>A strong argument considers: silver connected previously isolated economies (Americas, Europe, Asia) for the first time; it caused the global price revolution; it drove Chinese fiscal reform and Pacific trade. But counter-argument: the Indian Ocean trade, Islamic commercial networks, and Chinese manufacturing had already created a sophisticated global economy before silver arrived. Silver accelerated and connected existing systems, it did not create them from nothing.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Comparison","raw":"<p>Compare religious effects by category: expansion of an existing religion, conflict over belief, or development of a syncretic practice.</p>"}
       }
     ],
-    "takeaway": "European maritime empires after c. 1500 depended on three interlocking labor systems: the <strong>encomienda</strong> (Spanish colonists extracting tribute from indigenous peoples), the <strong>mita</strong> (indigenous labor drafts for the silver mines at Potosí), and <strong>chattel slavery</strong> (enslaved Africans on Atlantic plantations). The silver extracted by mita workers at Potosí connected the Americas, Europe, and Asia through the Manila Galleon trade and Seville's Atlantic system, causing a global price revolution. Colonial administration, viceroyalties, audiencias, and the Catholic Church, maintained imperial order across enormous distances. These systems sustained European maritime empires for nearly three centuries and transformed the global economy.",
+    "takeaway": "Maritime empires were maintained through four connected processes. Mercantilism and chartered companies such as the VOC linked commerce to state competition. Silver and Atlantic exchange created new transoceanic circuits while regional Afro-Eurasian markets continued. Global demand intensified peasant and artisan labor and the Atlantic slave trade altered demographic, gender, family, and cultural patterns. Increased interaction also affected belief systems through missionary expansion, religious conflict, and syncretic practices such as Vodun and Santería.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Three AP Skills",
     "questions": [
-      {
-        "num": "1",
-        "skill": "Causation",
-        "text": "Explain why the mita system emerged at Potosí. What caused the Spanish to rely on conscripted indigenous labor rather than wage labor for silver extraction? Identify at least two specific factors in your explanation.",
-        "placeholder": "Explain the causal factors behind the mita system at Potosí..."
-      },
-      {
-        "num": "2",
-        "skill": "Continuity & Change",
-        "text": "Explain one way the Spanish colonial labor system represented CONTINUITY with pre-colonial indigenous practices, and one way it represented CHANGE. Be specific: name the pre-colonial practice and explain what the Spanish adapted versus what they transformed.",
-        "placeholder": "Identify one continuity and one change, with specific examples..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Was silver from Potosí the primary cause of the global price revolution, or were there other significant causes? Write a one-sentence claim taking a position, then provide one specific piece of evidence that supports your argument.",
-        "placeholder": "State your claim, then provide specific evidence..."
-      }
+      {"num":"1","skill":"Causation","text":"Explain how mercantilism or a chartered company such as the VOC helped a state compete for overseas wealth or territory. Explain the mechanism, not just the definition.","placeholder":"The strategy strengthened the state because..."},
+      {"num":"2","skill":"Continuity & Change","text":"Identify one change in global exchange networks and one continuity in regional Afro-Eurasian markets. Use specific evidence for each.","placeholder":"One change was... One continuity was..."},
+      {"num":"3","skill":"Comparison","text":"Explain one social effect of expanding exchange and one belief-system effect. Use specific evidence such as intensified artisan labor, African gender/family change, missionary expansion, Vodun, or Santería.","placeholder":"One social effect was... One belief-system effect was..."}
+
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
