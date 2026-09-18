@@ -110,7 +110,14 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
   check('2.1 student deck preserves the rebuilt economic spine', (student21?.slides || []).some(s => /demand \+ systems/i.test(s.title || '')) && (student21?.slides || []).some(s => /trade networks create powerful nodes/i.test(s.title || '')));
   check('2.2 student deck remains The Mongol Empire', student22?.meta?.title === 'The Mongol Empire', student22?.meta?.title);
   check('2.2 teacher preflight does not leak into student projection', !(student22?.slides || []).some(s => /teacher preflight/i.test(`${s.eyebrow || ''} ${s.title || ''}`)));
-  check('2.2 student deck exposes the three Big Rocks', (student22?.slides || []).some(s => /three big rocks/i.test(s.title || '')));
+  const bigRocksStudent = (student22?.slides || []).find(s => /three big rocks/i.test(s.title || ''));
+  check('2.2 student deck exposes exactly the three Big Rocks',
+    Array.isArray(bigRocksStudent?.cards) &&
+    bigRocksStudent.cards.length === 3 &&
+    /STATE CHANGE/i.test(JSON.stringify(bigRocksStudent.cards)) &&
+    /CONNECTION/i.test(JSON.stringify(bigRocksStudent.cards)) &&
+    /TRANSFER/i.test(JSON.stringify(bigRocksStudent.cards)) &&
+    !/Topic 2\.2/i.test(bigRocksStudent?.subtitle || ''));
   const student22Text = JSON.stringify(student22?.slides || []);
   check('2.2 student deck teaches KC-3.2.II.A.ii in dedicated example slides',
     /Medical knowledge moves west/i.test(student22Text) &&
@@ -150,9 +157,20 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
     check('2.2 explicitly teaches numbering-system transfer', /Numbering systems/i.test(transferText) && /SOUTH ASIA/i.test(transferText) && /ISLAMIC WORLD/i.test(transferText));
     check('2.2 explicitly teaches adoption of Uyghur script', /Uyghur script/i.test(transferText) && /MONGOL ADOPTION/i.test(transferText) && /STATE USE/i.test(transferText));
 
+    await goToTitle(page, 'Three Big Rocks');
+    const bigRocksText = await page.locator('#stage').innerText();
+    check('2.2 slide 3 visibly lists the three Big Rocks',
+      await page.locator('#stage .grid-card').count() === 3 &&
+      /STATE CHANGE/i.test(bigRocksText) &&
+      /CONNECTION/i.test(bigRocksText) &&
+      /TRANSFER/i.test(bigRocksText) &&
+      !/Every example in Topic 2\.2/i.test(bigRocksText));
+
     await verifyLocalVisual(page, 'The Mongol Empire', 'Steppes%20of%20Asia', '2.2 opening');
     await verifyLocalVisual(page, 'One empire becomes four Mongol states', 'Map%20of%20the%20Khanates', '2.2 khanates map');
     await verifyLocalVisual(page, 'Mobility is a weapon', 'Cinematic%20Mongol%20Archers', '2.2 mobility');
+    await verifyLocalVisual(page, 'The Mongols borrowed what worked', 'Mongols%20Borrow%20Siege%20Technology', '2.2 siege technology');
+    await verifyLocalVisual(page, 'The Mongols borrow a writing system', 'Cinematic%20Mongol%20city%20gate', '2.2 Uyghur transfer');
     await verifyLocalVisual(page, 'Information moves at horse speed', 'Mongol%20Yam%20Relay', '2.2 Yam');
     await verifyLocalVisual(page, 'Protection changes movement', 'Cinematic%20Mongol%20Caravan', '2.2 protected caravan');
 
