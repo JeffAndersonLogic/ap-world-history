@@ -169,14 +169,25 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
       !/Every example in Topic 2\.2/i.test(bigRocksText));
 
     await verifyLocalVisual(page, 'The Mongol Empire', 'Steppes%20of%20Asia', '2.2 opening');
-    await verifyLocalVisual(page, 'Who were the Mongols', 'Steppes%20of%20Asia', '2.2 Mongol context');
-    await verifyLocalVisual(page, 'Steppe life shaped Mongol strengths', 'Cinematic%20Mongol%20Archers', '2.2 steppe context');
+    await verifyLocalVisual(page, 'Who were the Mongols', 'Who%20were%20the%20mongols', '2.2 Mongol context');
+    await verifyLocalVisual(page, 'Steppe life shaped Mongol strengths', 'Mongol%20Camp%20Life', '2.2 steppe context');
     await verifyLocalVisual(page, 'One empire becomes four Mongol states', 'Map%20of%20the%20Khanates', '2.2 khanates map');
     await verifyLocalVisual(page, 'Mobility is a weapon', 'Cinematic%20Mongol%20Archers', '2.2 mobility');
     await verifyLocalVisual(page, 'The Mongols borrowed what worked', 'Mongols%20Borrow%20Siege%20Technology', '2.2 siege technology');
     await verifyLocalVisual(page, 'The Mongols borrow a writing system', 'Cinematic%20Mongol%20city%20gate', '2.2 Uyghur transfer');
     await verifyLocalVisual(page, 'Information moves at horse speed', 'Mongol%20Yam%20Relay', '2.2 Yam');
     await verifyLocalVisual(page, 'Protection changes movement', 'Cinematic%20Mongol%20Caravan', '2.2 protected caravan');
+    await verifyLocalVisual(page, 'Connection moves knowledge', 'Knowledge%20Shared', '2.2 knowledge transfer');
+
+    for (const title of ['Mobility is a weapon', 'The Mongols borrowed what worked', 'Information moves at horse speed', 'Protection changes movement']) {
+      await goToTitle(page, title);
+      const geometry = await page.locator('#stage .hero-slide').evaluate(el => {
+        const slide = el.getBoundingClientRect();
+        const copy = el.querySelector('.copy').getBoundingClientRect();
+        return { left: copy.left - slide.left, right: slide.right - copy.right, bottom: slide.bottom - copy.bottom };
+      });
+      check(`2.2 “${title}” uses the full-width bottom caption treatment`, geometry.left < 2 && geometry.right < 2 && geometry.bottom < 2, JSON.stringify(geometry));
+    }
 
     await page.locator('#briefingBtn').click();
     check('2.2 briefing drawer opens', await page.locator('#drawer').evaluate(el => el.classList.contains('open')));

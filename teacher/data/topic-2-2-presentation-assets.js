@@ -94,7 +94,7 @@ if(whole&&!byTitle('Who were the Mongols?')){
       title:'Who were the Mongols?',
       subtitle:'Pastoral nomads of the Central Asian steppe.',
       position:'lower-left',
-      visual:visual('2.2 - Steppes of Asia.jpg','Wide view of the Central Asian steppe used to establish the Mongol pastoral environment','Topic 2.2 classroom visual · Steppes of Asia'),
+      visual:visual('2.2 - Who were the mongols.jpg','Mongol pastoral life on the Central Asian steppe','Topic 2.2 classroom visual · Who were the Mongols'),
       footer:'Herding · horses · mobility · kinship',
       notes:{
         minutes:2,
@@ -113,7 +113,7 @@ if(whole&&!byTitle('Who were the Mongols?')){
       title:'Steppe life shaped Mongol strengths.',
       subtitle:'Mobility was a way of life before it became a military advantage.',
       position:'right',
-      visual:visual('2.2 - Cinematic Mongol Archers.png','Historical reconstruction of Mongol mounted archers used to connect steppe life to military mobility','HISTORICAL RECONSTRUCTION — AI GENERATED'),
+      visual:visual('2.2 - Mongol Camp Life.jpg','Mongol camp life on the Central Asian steppe','Topic 2.2 classroom visual · Mongol Camp Life'),
       footer:'Environment -> horse culture -> mobility -> military potential',
       notes:{
         minutes:2,
@@ -157,14 +157,14 @@ if(mobility){
   mobility.eyebrow='Big Rock 1 · State Change · Build';
   mobility.visual=visual('2.2 - Cinematic Mongol Archers.png','Historical reconstruction of coordinated Mongol mounted archers on the steppe','HISTORICAL RECONSTRUCTION — AI GENERATED');
   mobility.footer='Mechanism: mobility increases speed, surprise, and operational range.';
-  mobility.position='right';
+  mobility.position='bottom';
 }
 
 const siege=byTitle('The Mongols borrowed what worked');
 if(siege){
   siege.kind='hero';
   siege.eyebrow='Big Rock 1 · State Change · Build';
-  siege.position='top';
+  siege.position='bottom';
   siege.visual=visual('2.2 - Mongols Borrow Siege Technology.jpeg','Mongol forces using borrowed siege technology against a fortified city','Topic 2.2 classroom visual');
   siege.footer='Mechanism: adaptation lets a steppe army conquer fortified cities.';
   siege.notes=siege.notes||{};
@@ -188,6 +188,7 @@ if(yam){
   yam.eyebrow='Bridge · State Power Becomes Connection';
   yam.visual=visual('2.2 - Mongol Yam Relay Across the Steppe.png','Historical reconstruction of the Mongol Yam relay system across the steppe','HISTORICAL RECONSTRUCTION — AI GENERATED');
   yam.footer='The same infrastructure that helps rule an empire also helps connect it.';
+  yam.position='bottom';
 }
 
 const checkpoint1=byTitle('How did the Mongols build power');
@@ -216,6 +217,7 @@ if(transfer){
   transfer.eyebrow='Big Rock 3 · Transfer · KC-3.2.II.A.ii';
   transfer.subtitle='Interregional contact and conflict encouraged significant technological and cultural transfers.';
   transfer.footer='Medicine · numbering systems · Uyghur script = three CED examples students should be able to explain.';
+  transfer.visual=visual('2.2 - Knowledge Shared.jpg','Knowledge moving across cultures through Mongol-era Eurasian connections','Topic 2.2 classroom visual · Knowledge Shared');
   transfer.notes=transfer.notes||{};
   transfer.notes.minutes=2;
   transfer.notes.land=[

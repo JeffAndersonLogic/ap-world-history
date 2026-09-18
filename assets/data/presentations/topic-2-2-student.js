@@ -45,9 +45,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "Pastoral nomads of the Central Asian steppe.",
       "position": "lower-left",
       "visual": {
-        "url": "../assets/images/topics/2-2/2.2%20-%20Steppes%20of%20Asia.jpg",
-        "alt": "Wide view of the Central Asian steppe used to establish the Mongol pastoral environment",
-        "credit": "Topic 2.2 classroom visual · Steppes of Asia"
+        "url": "../assets/images/topics/2-2/2.2%20-%20Who%20were%20the%20mongols.jpg",
+        "alt": "Mongol pastoral life on the Central Asian steppe",
+        "credit": "Topic 2.2 classroom visual · Who were the Mongols"
       },
       "footer": "Herding · horses · mobility · kinship"
     },
@@ -58,9 +58,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "Mobility was a way of life before it became a military advantage.",
       "position": "right",
       "visual": {
-        "url": "../assets/images/topics/2-2/2.2%20-%20Cinematic%20Mongol%20Archers.png",
-        "alt": "Historical reconstruction of Mongol mounted archers used to connect steppe life to military mobility",
-        "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
+        "url": "../assets/images/topics/2-2/2.2%20-%20Mongol%20Camp%20Life.jpg",
+        "alt": "Mongol camp life on the Central Asian steppe",
+        "credit": "Topic 2.2 classroom visual · Mongol Camp Life"
       },
       "footer": "Environment -> horse culture -> mobility -> military potential"
     },
@@ -103,7 +103,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Big Rock 1 · State Change · Build",
       "title": "Mobility is a weapon.",
       "subtitle": "Mounted archery + speed + feigned retreat.",
-      "position": "right",
+      "position": "bottom",
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Cinematic%20Mongol%20Archers.png",
         "alt": "Historical reconstruction of coordinated Mongol mounted archers on the steppe",
@@ -116,7 +116,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Big Rock 1 · State Change · Build",
       "title": "The Mongols borrowed what worked.",
       "subtitle": "Siege specialists turn mobility into city conquest.",
-      "position": "top",
+      "position": "bottom",
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Mongols%20Borrow%20Siege%20Technology.jpeg",
         "alt": "Mongol forces using borrowed siege technology against a fortified city",
@@ -157,7 +157,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Historical reconstruction of the Mongol Yam relay system across the steppe",
         "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
       },
-      "footer": "The same infrastructure that helps rule an empire also helps connect it."
+      "footer": "The same infrastructure that helps rule an empire also helps connect it.",
+      "position": "bottom"
     },
     {
       "kind": "action",
@@ -228,7 +229,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "title": "MECHANISM",
           "text": "Conquest + travel + specialists create contact"
         }
-      ]
+      ],
+      "visual": {
+        "url": "../assets/images/topics/2-2/2.2%20-%20Knowledge%20Shared.jpg",
+        "alt": "Knowledge moving across cultures through Mongol-era Eurasian connections",
+        "credit": "Topic 2.2 classroom visual · Knowledge Shared"
+      },
     },
     {
       "kind": "process",
