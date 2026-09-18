@@ -42,14 +42,14 @@ console.log('\n  Topic 2.2 lean Teaching OS contract');
 check('2.2 teacher deck has 15 projected slides', titles.length === 15, `slides=${titles.length}`);
 check('2.2 student deck mirrors the 15-slide sequence', studentTitles.length === 15 && JSON.stringify(titles) === JSON.stringify(studentTitles), `student=${studentTitles.length}`);
 check('2.2 removes the routes-are-older slide', !titles.some(t => /The routes were older/i.test(t)));
-check('2.2 adds the siege-technology slide', titles.some(t => /Mongols stole what worked/i.test(t)) && /Mongols Borrow Siege Technology\.jpeg/i.test(all));
+check('2.2 adds the siege-technology slide', titles.some(t => /Mongols stole what worked/i.test(t)) && /Mongols%20Borrow%20Siege%20Technology\.jpeg/i.test(all));
 check('2.2 final slide names Pax Mongolica', /Pax Mongolica/i.test(titles[titles.length - 1] + ' ' + (teaching.slides[titles.length - 1].subtitle || '')));
-check('2.2 final slide uses the Mongol caravan image', /Cinematic Mongol Caravan\.png/i.test(JSON.stringify(teaching.slides[titles.length - 1].visual || {})));
+check('2.2 final slide uses the Mongol caravan image', /Cinematic%20Mongol%20Caravan\.png/i.test(JSON.stringify(teaching.slides[titles.length - 1].visual || {})));
 check('2.2 student deck keeps Pax Mongolica language', /Pax Mongolica/i.test(studentAll));
 check('2.2 student deck keeps siege technology image', /Mongols%20Borrow%20Siege%20Technology\.jpeg/i.test(studentAll));
 check('2.2 student deck does not expose teacher notes', !studentAll.includes('listenFor') && !studentAll.includes('avoid'));
 check('2.2 still teaches required transfer examples together', /Greco-Islamic medical knowledge/i.test(all) && /Numbering systems/i.test(all) && /Uyghur script/i.test(all));
-check('2.2 keeps the core state-change map', /Map of the Khanates\.png/i.test(all));
+check('2.2 keeps the core state-change map', /Map%20of%20the%20Khanates\.png/i.test(all));
 
 if (failures) {
   console.error(`\n${failures} Topic 2.2 contract(s) failed`);
