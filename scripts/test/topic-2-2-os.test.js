@@ -179,7 +179,7 @@ async function verifyLocalVisual(page, titleNeedle, srcNeedle, label) {
     await verifyLocalVisual(page, 'Protection changes movement', 'Cinematic%20Mongol%20Caravan', '2.2 protected caravan');
     await verifyLocalVisual(page, 'Connection moves knowledge', 'Knowledge%20Shared', '2.2 knowledge transfer');
 
-    for (const title of ['Mobility is a weapon', 'The Mongols borrowed what worked', 'Information moves at horse speed', 'Protection changes movement']) {
+    for (const title of ['Steppe life shaped Mongol strengths', 'Mobility is a weapon', 'The Mongols borrowed what worked', 'Information moves at horse speed', 'Protection changes movement']) {
       await goToTitle(page, title);
       const geometry = await page.locator('#stage .hero-slide').evaluate(el => {
         const slide = el.getBoundingClientRect();
