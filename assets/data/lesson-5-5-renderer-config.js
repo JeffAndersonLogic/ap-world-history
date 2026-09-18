@@ -25,7 +25,7 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Iron Road',
+    title: 'First & 10: The Energy Machine',
     embedUrl: 'first-and-10-topic-5-5-technology-of-industrialization-capture.html?v=response-id-fix-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.5 lesson path.'
   };
@@ -60,38 +60,40 @@
 
   lesson.skillBuilder = {
     label: 'Causation practice',
-    title: 'How Railroads Caused Industrialization to Accelerate: Tracing the Causal Mechanism',
-    intro: 'Causation for Topic 5.5 requires identifying not just that railroads caused industrial growth, but specifically how, the mechanism by which one thing caused another. The most common AP error is writing "railroads caused industrial growth" without explaining the causal mechanism. A strong causation argument answers: what specifically changed, and through exactly what process did the change occur?',
+    title: 'Technology -> Production -> Exchange',
+    intro: 'Topic 5.5 rewards mechanism. Name the technology, identify the physical or economic constraint it changed, then trace the effect into production, transportation, communication, trade, or migration.',
     steps: [
-      { label: 'Identify the direct effect (first-order cause)', text: 'Railroads\' most direct effect was reducing transportation costs. Moving one ton of goods 100 miles by railroad in the 1850s cost approximately 2–3 cents; the same journey by wagon cost 15–20 cents. This 80–90% reduction in transportation costs was the immediate, direct effect of railroad construction. But cost reduction is not the same as industrial acceleration, the causal chain has more steps. Why did cheaper transportation lead to more industrial production? Because cheaper transportation expanded the geographic market for any given product. A Manchester textile manufacturer who could previously sell only within a 50-mile radius (the economical range for horse-drawn transport) could now sell across all of Britain, then across Europe, and eventually, via steam-powered ocean shipping, across the world. Bigger markets justified larger factories, which justified more machinery, which required more coal and iron.' },
-      { label: 'Identify the indirect effects (second- and third-order causes)', text: 'Second-order effect: expanded markets justified large-scale factory production. Third-order effect: large-scale production created demand for iron, then steel (Bessemer process), coal, and engineering labor, which drove the expansion of mining, steel production, and engineering industries. Fourth-order effect: the railroad industry itself was the largest single consumer of iron and steel in the mid-19th century, building 10,000 miles of track required millions of tons of iron rails, creating demand that pushed metallurgical industries to expand and innovate. So railroads caused industrial acceleration not just by expanding markets but by directly creating demand for the foundational industries of industrialization. This is technological interdependence: railroads required iron and coal; iron and coal production required railroads to ship their products; the industries created each other\'s conditions of existence.' },
-      { label: 'Write the causation argument', text: 'A strong causation argument for Topic 5.5 uses this structure: "The railroad caused industrial acceleration through [specific mechanism]. This led to [specific second-order effect], which in turn [specific third-order effect], revealing the broader pattern that [synthesis statement about technology and economic change]." Example: "The railroad caused industrial acceleration primarily by reducing transportation costs, which expanded the geographic market for manufactured goods, which justified investment in larger factories and more machinery, which drove demand for coal and iron, which pushed metallurgical industries to innovate, producing the Bessemer process and cheap steel, which in turn enabled more railroad construction at lower cost. This self-reinforcing cycle reveals that the Industrial Revolution was not driven by any single technology but by the interdependence of technologies: each innovation created conditions that made other innovations necessary and profitable."' }
+      { label: 'Start with energy', text: 'Explain what changed when steam engines used coal or internal combustion engines used oil. The important effect is not the machine name but the increase in reliable, concentrated mechanical energy.' },
+      { label: 'Move into production', text: 'Use steel, chemicals, electricity, or precision machinery to explain a production change: cheaper material, new product, longer operating time, or more standardized output.' },
+      { label: 'Move across distance', text: 'Use railroad, steamship, or telegraph networks to explain how lower transport costs or faster information expanded markets and opened interior regions.' },
+      { label: 'Finish with the economic effect', text: 'Connect the technological chain to increased production, trade, migration, or resource development. Do not stop at “it made things faster.”' }
     ],
-    prompt: 'In 3–4 sentences, write a causation argument about how one industrial technology (railroad, telegraph, or Bessemer process) caused changes in at least two other aspects of industrial society or the global economy. Be specific about the mechanism, explain exactly how the cause produced the effect, not just that it did. End with a synthesis statement about what this causal chain reveals about the nature of technological change during industrialization.'
+    prompt: 'Choose one energy technology, one production technology, and one transport/communication technology. Build a causal chain showing how they worked together to reshape economic production or exchange.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Technologies of Industrialization',
-      subtitle: 'Checks Learning Target 1 — how industrial technologies transformed economic life.',
-      cardDesc: 'Railroads, telegraph, Bessemer steel, electricity, and their interdependence.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Choose two of the following technologies: railroad, telegraph, Bessemer process, electricity. For each, explain one specific mechanism by which it transformed industrial economies, not just "it was important" but exactly how it changed production, markets, or coordination. Then explain the interdependence between your two chosen technologies: how did each one require or enable the other? End with a synthesis: what does the interdependence of industrial technologies reveal about how technological change works?',
+      title: 'Checkpoint 1: Energy and the Second Industrial Revolution',
+      subtitle: 'Checks Learning Targets 1–2 — fossil-fuel energy and new production technologies.',
+      cardDesc: 'Steam, coal, internal combustion, oil, steel, chemicals, electricity, and precision machinery.',
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
+      prompt: 'Explain how ONE engine-energy pair—steam engine + coal OR internal combustion engine + oil—increased the energy available for economic production or transportation. Then choose TWO second-industrial technologies from steel, chemicals, electricity, or precision machinery and explain the specific production change each one enabled. Build at least one causal connection between the energy revolution and the new production technology.',
       responseType: 'Checkpoint 1',
-      terms: ["Stephenson's Rocket", 'transcontinental railroad', 'Trans-Siberian Railroad', 'Morse telegraph', 'transatlantic cable', 'Bessemer process', 'surplus value', 'technological interdependence', 'national market integration', 'steam power'],
-      focus: ['Explain the specific mechanism for each technology, how exactly did it change economic life?', 'Explain the interdependence between your two chosen technologies.', 'Synthesize: what does technological interdependence reveal about how industrial change worked?']
+      terms: ['steam engine', 'coal', 'internal combustion engine', 'oil', 'fossil fuels', 'Bessemer process', 'steel', 'chemicals', 'electricity', 'precision machinery', 'Second Industrial Revolution'],
+      focus: ['Explain the energy mechanism, not just identify the fuel.', 'Use two specific second-industrial technologies.', 'Connect increased energy to changed productive capacity.']
     },
     {
-      title: 'Checkpoint 2: Environmental and Social Costs of Industrialization',
-      subtitle: 'Checks Learning Target 2 — how industrial demand transformed environments and labor in colonized regions.',
-      cardDesc: 'Coal pollution, rubber extraction, guano, deforestation, and the global reach of industrial demand.',
-      learningTargets: [lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: 'Choose one specific example of industrial resource extraction from colonized or semi-colonized regions (options: rubber extraction in the Congo or Amazon; guano extraction in Peru; cotton production in India or the American South; deforestation for railroad construction). Describe the specific labor system used in your chosen example, who did the work, under what conditions, and who benefited from the proceeds. Then explain the connection between this extraction system and industrial technology in Europe or North America: what specific industrial demand drove this extraction? End with a broader claim: what does this example reveal about who bore the environmental and labor costs of industrialization, and who captured its economic benefits?',
+      title: 'Checkpoint 2: Transportation, Communication, Trade, and Migration',
+      subtitle: 'Checks Learning Target 3 — how infrastructure changed the economics of distance.',
+      cardDesc: 'Railroads, steamships, telegraph, interior development, trade, and migration.',
+      learningTargets: [lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[2].criteria],
+      prompt: 'Explain the distinct role of railroads, steamships, and the telegraph in reducing the economic effects of distance. For at least TWO of the three technologies, explain a specific mechanism connecting the technology to increased trade, migration, or development of an interior region. End by explaining why faster information and faster physical transport were complementary rather than interchangeable.',
       responseType: 'Checkpoint 2',
-      terms: ['Congo rubber extraction', 'Force Publique', 'guano', 'Chincha Islands', 'debt peonage', 'coercive labor', 'deindustrialization', 'resource periphery', 'industrial core', 'environmental transformation'],
-      focus: ['Describe the specific labor system, who worked, under what conditions, who benefited.', 'Connect the extraction system to specific industrial demand in Europe or North America.', 'Make a supported claim: who bore the costs of industrialization, and who captured its benefits?']
+      skill: 'Causation',
+      terms: ['railroad', 'steamship', 'telegraph', 'transatlantic cable', 'interior development', 'market integration', 'trade', 'migration', 'transport costs', 'communication'],
+      focus: ['Distinguish transportation from communication.', 'Explain two specific technology-to-economic-effect mechanisms.', 'Connect infrastructure to increased trade, migration, or interior development.']
     }
   ];
 
