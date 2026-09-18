@@ -22,15 +22,15 @@ wins. The block came from the lesson they are actually sitting in.
 - KC-4.1.II (Technology and Innovation): Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.
 - KC-4.1.II.A (Technology and Innovation): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible. Illustrative examples: Caravel, Carrack, Fluyt, Lateen sail, Compass, Astronomical charts.
 
-**Expected evidence terms.** compass, astrolabe, lateen sail, caravel, dead reckoning, latitude, portolan chart, cross-staff, quadrant, square sail, Waldseemüller map, printing press, Prince Henry, Sagres, cartography, geographic knowledge, state sponsorship, cosmographer.
+**Expected evidence terms.** compass, astrolabe, lateen sail, caravel, dead reckoning, latitude, portolan chart, cross-staff, quadrant, square sail, magnetic compass, China, Islamic astronomy, carrack, volta do mar, trade winds, currents, cross-cultural diffusion.
 
 **AP skill focus.** Causation practice.
 
 **Checkpoint 1 prompt.** Identify at least THREE specific maritime technologies that enabled European oceanic exploration after c. 1450. For each technology, explain what specific navigation problem it solved and how it contributed to making extended oceanic voyaging possible.
 Strong answer checklist: Name at least three specific technologies. For each, explain the specific navigation problem it solved. Connect the technologies to the capability for extended oceanic voyaging.
 
-**Checkpoint 2 prompt.** Explain how cartographic innovations (portolan charts, Waldseemüller map) and the printing press contributed to European exploration. Then explain how state sponsorship, especially the Portuguese model pioneered by Prince Henry, connected technology to organized, sustained exploration. Use specific evidence.
-Strong answer checklist: Explain how the printing press changed the distribution of geographic knowledge. Give one specific example of a cartographic innovation and explain its significance. Explain the Portuguese model: how state sponsorship connected technology to systematic, cumulative exploration.
+**Checkpoint 2 prompt.** Explain how European navigators drew on knowledge or technology from TWO earlier traditions — Classical, Islamic, or Asian — and then explain how ONE ship-design innovation and ONE piece of wind/current knowledge made transoceanic travel more reliable. Build the causal chain from adopted knowledge to oceanic capability.
+Strong answer checklist: Use two specific examples of cross-cultural knowledge or technology transfer. Explain one ship-design innovation and the problem it solved. Explain one wind/current pattern and how sailors used it to complete long voyages.
 
 ## 4.2 Exploration: Causes and Events
 
@@ -42,15 +42,15 @@ Strong answer checklist: Explain how the printing press changed the distribution
 - KC-4.1.III.B (Economic Systems): Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade.
 - KC-4.1.III.C (Economic Systems): Northern Atlantic crossings were undertaken under English, French, and Dutch sponsorship, often with the goal of finding alternative sailing routes to Asia.
 
-**Expected evidence terms.** Reconquista, spice trade, Prince Henry, crusading, God Glory Gold, state sponsorship, Ottoman Empire, Lisbon, feitorias, cartography, Vasco da Gama, Columbus, Magellan, Cape of Good Hope, Caribbean, circumnavigation, Treaty of Tordesillas, Taíno, encomienda, indigenous peoples.
+**Expected evidence terms.** Reconquista, spice trade, Prince Henry, crusading, God Glory Gold, state sponsorship, Ottoman Empire, Lisbon, feitorias, cartography, Vasco da Gama, Columbus, Magellan, John Cabot, Jacques Cartier, Dutch exploration, Cape of Good Hope, Caribbean, St. Lawrence, fisheries, fur trade, trade routes.
 
 **AP skill focus.** Causation practice.
 
 **Checkpoint 1 prompt.** Explain at least TWO motivations behind European maritime exploration after c. 1450. For each motivation, explain what drove it specifically (not just a label like "gold" but what specific economic reality made profit-seeking a motive), and connect it to a specific state action or voyage.
 Strong answer checklist: Name at least two distinct motivations (religious, economic, and/or political). For each, explain the specific historical context that made it a motivation (not just a label). Connect each motivation to a specific Portuguese or Spanish action.
 
-**Checkpoint 2 prompt.** Describe at least TWO key European voyages of exploration, including what route they followed and what they found or established. Then explain what the Treaty of Tordesillas reveals about European assumptions regarding non-European peoples, and briefly describe how at least one non-European group experienced European exploration.
-Strong answer checklist: Describe at least two specific voyages with routes and outcomes. Explain the Treaty of Tordesillas and what European assumptions it reflects. Describe the experience of at least one non-European group during the era of exploration.
+**Checkpoint 2 prompt.** Describe ONE Portuguese or Spanish voyage and ONE English, French, or Dutch-sponsored northern Atlantic voyage. For each, identify the route and state sponsor. Then explain one economic cause that motivated the voyage and one economic or commercial effect it produced or made possible.
+Strong answer checklist: Use one Iberian voyage and one northern Atlantic voyage with specific route evidence. Identify the state sponsor and economic motivation for each. Explain an economic or commercial effect such as expanded trade access, fisheries, fur commerce, geographic knowledge, or later claims.
 
 ## 4.3 Columbian Exchange
 
@@ -63,15 +63,15 @@ Strong answer checklist: Describe at least two specific voyages with routes and 
 - KC-4.1.V.C (Humans and the Environment): Afro-Eurasian fruit trees, grains, sugar, and domesticated animals were brought by Europeans to the Americas, while other foods were brought by African enslaved persons. Illustrative examples: Horses, Pigs, Cattle, Okra, Rice.
 - KC-4.1.V.D (Humans and the Environment): Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops.
 
-**Expected evidence terms.** potato, maize, tomato, cacao, tobacco, horse, cattle, sugarcane, wheat, cassava, smallpox, virgin soil epidemic, demographic collapse, encomienda, Atlantic slave trade, Potosí, silver, labor shortage, Tenochtitlan, Cuitláhuac.
+**Expected evidence terms.** potato, maize, tomato, cacao, tobacco, horse, cattle, sugarcane, wheat, cassava, smallpox, measles, malaria, mosquitoes, rats, demographic collapse, horses, sugar, rice, okra, nutrition.
 
 **AP skill focus.** Causation practice.
 
 **Checkpoint 1 prompt.** Identify at least TWO crops transferred from the New World to the Old World and ONE animal or crop transferred from the Old World to the New World. For each, explain the long-term consequence of the transfer, what changed in the receiving region, and why?
 Strong answer checklist: Name at least two New World crops moving east and one Old World introduction moving west. For each, explain the specific long-term consequence in the receiving region. Explain WHY the transfer had that consequence, connect crop to demographic or economic outcome.
 
-**Checkpoint 2 prompt.** Explain why Old World diseases were so catastrophic for indigenous American populations. Then trace the causal chain from demographic collapse to the origins of the Atlantic slave trade. Finally, explain how American silver (especially from Potosí) affected global trade. Use specific evidence throughout.
-Strong answer checklist: Explain the concept of virgin soil epidemic and why indigenous Americans had no immunity. Trace the causal chain: disease → collapse → labor shortage → slave trade. Explain how American silver disrupted global trade and what regions it connected.
+**Checkpoint 2 prompt.** Explain why Eastern Hemisphere diseases were catastrophic for many Indigenous American populations, including the role of disease vectors or lack of prior exposure. Then explain TWO additional Columbian Exchange consequences: one Old World-to-Americas transfer, such as horses, cattle, sugar, rice, or okra, and one American crop moving to Afro-Eurasia. For each transfer, explain a demographic, nutritional, economic, or environmental effect.
+Strong answer checklist: Explain disease vulnerability and include a disease vector or specific pathogen. Explain one Old World-to-Americas transfer and its consequence. Explain one American crop moving east and its nutritional or demographic consequence.
 
 ## 4.4 Maritime Empires Established
 
@@ -86,15 +86,15 @@ Strong answer checklist: Explain the concept of virgin soil epidemic and why ind
 - KC-4.2.II.B (Social Interactions and Organization): Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions.
 - KC-4.2.II.C (Social Interactions and Organization): The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes.
 
-**Expected evidence terms.** Estado da India, Goa, Malacca, cartaz, feitoria, Cortés, Pizarro, encomienda, viceroyalty, Las Casas, VOC, Dutch East India Company, joint-stock company, British EIC, Batavia, Spice Islands, private capital, shared risk, charter, comparison.
+**Expected evidence terms.** Estado da Índia, Spanish Empire, Kongo, Asante, trading posts, Indian Ocean, intra-Asian trade, Gujaratis, Omanis, Swahili Arabs, Javanese, Incan mit’a, mita, encomienda, hacienda, indentured servitude, chattel slavery, plantation economy, African enslavement, Mediterranean, Atlantic slave trade.
 
-**AP skill focus.** Comparison practice.
+**AP skill focus.** Continuity and change practice.
 
-**Checkpoint 1 prompt.** Explain how the Portuguese Estado da India established control over Asian trade routes. Then describe how Spain established colonial rule in the Americas after the Aztec and Inca conquests. Use specific evidence for each empire, and explain ONE key difference between the two models.
-Strong answer checklist: Explain the Estado da India model: fortified ports at chokepoints, cartaz system, naval coercion. Describe Spanish conquest and the encomienda system using specific examples. Identify one key difference between the Portuguese and Spanish approaches to empire.
+**Checkpoint 1 prompt.** Explain how expanding maritime trade increased the power of ONE European maritime empire and ONE African state such as Kongo or Asante. Then explain one important continuity in Indian Ocean trade despite Portuguese or Dutch disruption, using a specific merchant group or intra-Asian trade example.
+Strong answer checklist: Use one specific European state-building example. Use one specific African state-growth example. Explain one Indian Ocean continuity and why European arrival did not erase it.
 
-**Checkpoint 2 prompt.** Explain what a joint-stock company was and how the Dutch VOC used this model to build a maritime empire. Then write a comparison argument: identify one similarity and one difference between the joint-stock company model and either the Portuguese or Spanish model. Explain what the comparison reveals about European empire-building strategies.
-Strong answer checklist: Explain how joint-stock companies spread risk and mobilized private capital for empire. Give one specific example of VOC power (military, legal, or commercial). Identify one similarity and one difference between the joint-stock model and one other model, with specific evidence.
+**Checkpoint 2 prompt.** Explain one continuity and one change in labor systems in the Americas after 1500. Then explain one continuity and one change in slavery across Africa, the Indian Ocean, and the Atlantic world. Use at least THREE specific terms or examples and make clear what persisted versus what expanded or changed.
+Strong answer checklist: Compare an older/adapted labor system with a new or expanded colonial labor system. Explain that enslavement in Africa predated Atlantic expansion. Explain how plantation demand changed the scale, destination, and social effects of enslaved labor.
 
 ## 4.5 Maritime Empires Maintained and Developed
 
@@ -110,17 +110,17 @@ Strong answer checklist: Explain how joint-stock companies spread risk and mobil
 - KC-4.1.IV.D.ii (Social Interactions and Organization): The Atlantic trading system involved the movement of labor—including enslaved persons and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis.
 - KC-4.1.VI (Cultural Developments and Interactions): In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.
 
-**Expected evidence terms.** encomienda, mita, Potosí, chattel slavery, viceroyalty, audiencia, Jesuit missions, las Casas, New Spain, Peru, Manila Galleon, Casa de Contratación, global price revolution, Chinese demand, silver economy, Seville, Single Whip Tax Reform.
+**Expected evidence terms.** mercantilism, VOC, British EIC, chartered company, monopoly, silver, Potosí, Manila Galleon, Atlantic trade, regional markets, Indian Ocean, peasant labor, artisan labor, Indian cotton, Chinese silk, Atlantic slave trade, gender, family, cultural synthesis, missionaries, religious conflict, Vodun, Santería, syncretism.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Causation and comparison practice.
 
-**Checkpoint 1 prompt.** Explain how the mita system worked at Potosí and describe the conditions it created for indigenous workers. Then explain how the viceregal system and Catholic Church maintained colonial administration across vast distances. Use specific evidence for each and explain ONE key similarity between the encomienda and mita systems.
-Strong answer checklist: Explain the mita system: origins, conscription zone, conditions at Potosí, and why death rates were so high. Describe how the viceregal system and Church maintained colonial order, use specific institutional names. Identify one key similarity between the encomienda and mita (e.g., both used coercion; both served colonial extraction goals).
+**Checkpoint 1 prompt.** Explain how ONE mercantilist policy or chartered company helped a European state compete for overseas wealth or territory. Then explain one major change in exchange networks, such as global silver or Atlantic trade, AND one important continuity in Afro-Eurasian regional markets or commercial practices.
+Strong answer checklist: Explain how a state economic strategy increased competitive power. Explain one change in global/transoceanic exchange with specific evidence. Explain one regional commercial continuity and why it persisted.
 
-**Checkpoint 2 prompt.** Explain how silver from Potosí connected the Americas, Europe, and Asia into a global trade network. Describe at least two trade routes (Manila Galleon and Atlantic crossing) and explain how Chinese demand for silver drove the entire system. Then identify one continuity: what pre-existing trade networks did the silver economy build upon or incorporate?
-Strong answer checklist: Explain the Manila Galleon trade: route, commodities exchanged, why Chinese demand drove it. Describe the Atlantic silver route through Seville and explain the global price revolution. Identify one continuity: what existing trade network did the silver economy build upon?
+**Checkpoint 2 prompt.** Explain TWO effects of expanding global exchange from 1450 to 1750: (1) one social effect involving intensified peasant/artisan labor OR demographic, gender, or family changes associated with the trade of enslaved people; and (2) one belief-system effect involving religious expansion, conflict, or syncretism. Use a specific example for each and explain the mechanism.
+Strong answer checklist: Use one specific social-effect example and explain how exchange produced it. Use one specific belief-system example and explain how interaction produced it. Keep economic/social and religious effects distinct before connecting them.
 
-## 4.6 Internal and External Challenges to State Power
+## 4.6 Internal Challenges to State Power
 
 **Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How colonized peoples, enslaved Africans, and rival European powers challenged maritime empires from within and without
 
@@ -128,15 +128,15 @@ Strong answer checklist: Explain the Manila Galleon trade: route, commodities ex
 - KC-4.3.III.iii (Governance): State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level. Illustrative examples: Pueblo Revolts, Fronde, Cossack revolts, Maratha conflict with Mughals, Ana Nzinga’s resistance (as ruler of Ndongo and Matamba), Metacom’s War (King Philip’s War).
 - KC-5.3.III.C (Governance): Enslaved persons challenged existing authorities in the Americas through organized resistance. Illustrative examples: Establishment of Maroon societies in the Caribbean and Brazil, Resistance of enslaved persons in North America.
 
-**Expected evidence terms.** Pueblo Revolt, Popé, Tewa, kiva, religious suppression, maroon communities, Palmares, Zumbi, quilombo, resistance, VOC, Estado da India, piracy, privateering, Sir Francis Drake, Seven Years War, Dutch competition, external challenge.
+**Expected evidence terms.** Pueblo Revolt, Popé, Tewa, kiva, religious suppression, labor demands, drought, Spanish colonial rule, resistance, maroon communities, Palmares, Zumbi, quilombo, escape, autonomy, geography, organized resistance.
 
 **AP skill focus.** Causation practice.
 
-**Checkpoint 1 prompt.** Explain the causes and outcome of the Pueblo Revolt of 1680. Then describe maroon communities as a form of African resistance, using Palmares as a specific example. Finally, compare these two forms of resistance: identify one meaningful similarity and one meaningful difference, and explain what the difference reveals about the strategies available to different groups resisting colonial rule.
-Strong answer checklist: Explain Pueblo Revolt causes: religious suppression, labor demands, drought, Popé's organization. Describe maroon communities: definition, Palmares as example, why they represent a different resistance strategy. Compare the two: one similarity (both were responses to colonial coercion), one difference (military expulsion vs. autonomous exit), explain what the difference reveals.
+**Checkpoint 1 prompt.** Explain why the Pueblo Revolt of 1680 occurred, how Popé and Pueblo communities organized collective resistance, and what the revolt changed in the short term. Your answer must connect specific colonial policies or pressures to the decision to resist.
+Strong answer checklist: Identify at least two specific grievances caused by colonial expansion or centralization. Explain how Popé and Pueblo networks made coordinated resistance possible. Explain the short-term outcome and at least one limit of the revolt.
 
-**Checkpoint 2 prompt.** Explain how competition between European powers created external challenges to maritime empires. Use one specific example (Dutch displacement of Portuguese in the Indian Ocean, OR privateering in the Atlantic, OR the Seven Years War) to explain how European rivalry tested the stability of colonial empires. Then connect to Topic 4.4: how does European rivalry reveal a weakness in the specific model of empire that was being challenged?
-Strong answer checklist: Choose one specific example of European rivalry and explain it with specific evidence. Explain how this rivalry tested the stability of the empire being challenged. Connect to Topic 4.4: what weakness in the Portuguese, Spanish, or Dutch model did rival European powers exploit?
+**Checkpoint 2 prompt.** Explain how maroon communities represented organized resistance by enslaved Africans. Use Palmares as a specific example and explain how geography, community organization, and the weaknesses of colonial control helped resistance survive. Then compare this strategy with the Pueblo Revolt in one sentence.
+Strong answer checklist: Define maroon resistance and use Palmares as specific evidence. Explain why geography and community organization mattered. Make one meaningful comparison between maroon autonomy and Pueblo collective revolt.
 
 ## 4.7 Changing Social Hierarchies
 
@@ -147,35 +147,37 @@ Strong answer checklist: Choose one specific example of European rivalry and exp
 - KC-4.2.III.A (Social Interactions and Organization): Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system.
 - KC-4.2.III.B (Social Interactions and Organization): The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders. Illustrative examples: Ottoman timars, Russian boyars, European nobility.
 
-**Expected evidence terms.** casta, peninsulares, creoles, mestizos, mulattos, limpieza de sangre, tribute, office-holding, casta paintings, gracia al sacar, continuity, change, indigenous nobility, kuracas, mestizo, mulatto, racialization, gender, manumission, colonial social mobility.
+**Expected evidence terms.** Ottoman Empire, Jews, millet, Mughal, Qing, Han Chinese, accommodation, suppression, casta, peninsulares, creoles, new elites, timar, Ottoman elites, boyars, Peter the Great, European nobility, centralization, court, state service, elite power.
 
 **AP skill focus.** Comparison practice.
 
-**Checkpoint 1 prompt.** Explain the casta system in Spanish colonial America. Name at least four of the major casta categories and describe their legal status (tribute, office-holding rights, etc.). Then explain WHY the Spanish colonial system created this elaborate racial classification, what economic and social purposes did the casta serve? Use at least one specific piece of evidence (e.g., casta paintings, audiencia records, gracia al sacar).
-Strong answer checklist: Name and describe at least four casta categories with their specific legal status. Explain the economic purpose of the casta: it organized who owed tribute, who could be enslaved, who could hold office. Use at least one specific piece of evidence (casta paintings, gracia al sacar, audiencia records).
+**Checkpoint 1 prompt.** Give ONE example of a state accommodating an ethnic or religious group and ONE example of a state suppressing or restricting a group. Explain why each policy served the state. Then explain how imperial conquest or global economic opportunity produced a new elite or hierarchy, using the casta system or Qing transition as specific evidence.
+Strong answer checklist: Use one specific accommodation example and explain the state interest behind it. Use one specific suppression/restriction example and explain the state interest behind it. Explain how conquest or economic opportunity produced a new elite or hierarchy.
 
-**Checkpoint 2 prompt.** Identify one CONTINUITY from pre-colonial social structures that persisted into the colonial period (e.g., indigenous nobility retained some status). Then identify one genuine CHANGE that colonialism introduced (e.g., mestizo and mulatto as new categories; racialization of enslaved status). Finally, explain how gender intersected with racial hierarchy, give one specific example of how an indigenous or African woman's experience reflected both racial and gender dimensions of colonial hierarchy.
-Strong answer checklist: Identify one specific continuity from pre-colonial social structure with evidence. Identify one genuine change that colonialism introduced, a category or institution with no pre-colonial equivalent. Explain gender intersection: one specific example of how indigenous or African women experienced both racial and gender dimensions of colonial hierarchy.
+**Checkpoint 2 prompt.** Explain how the power of TWO existing elite groups changed as states centralized from c. 1450 to c. 1750. Use two examples such as Ottoman timar holders, Russian boyars, or European nobility. For each, explain what power the elite had before, what the ruler or state changed, and whether the elite lost influence, adapted through state service, or gained a new route to status.
+Strong answer checklist: Use two specific existing-elite examples from different states. Explain the mechanism by which centralization altered elite power. Distinguish loss of independent power from adaptation into court or state service.
 
 ## 4.8 Continuity and Change in the Period from c. 1450 to c. 1750
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. What changed — and what stayed the same — in global trade, demography, and social organization across three centuries of European maritime expansion
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How economic developments from 1450 to 1750 changed social structures — and what persisted despite those changes
 
 **College Board key concepts.**
-- KC-4.1 (Transoceanic Interconnections): The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.
-- KC-4.1.II (Transoceanic Interconnections): Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.
-- KC-4.1.II.A (Transoceanic Interconnections): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible.
-- KC-4.2 (Transoceanic Interconnections): Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes.
-- KC-4.2.II (Transoceanic Interconnections): The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified.
-- KC-4.3 (Transoceanic Interconnections): Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.
-- KC-4.3.III.ii (Transoceanic Interconnections): Economic disputes led to rivalries and conflict between states.
+- Unit 4: Learning Objective N (Learning Objective): Explain how economic developments from 1450 to 1750 affected social structures over time.
+- KC-4.1.IV (Economic Systems): Global circulation of goods and silver expanded while regional Afro-Eurasian markets continued.
+- KC-4.2.II (Economic Systems): Growing global demand intensified labor, expanded plantations, and contributed to the Atlantic slave trade.
+- KC-4.2.II.A (Economic Systems): Peasant and artisan labor continued and intensified in many regions. Illustrative examples: Western Europe wool and linen, India cotton, China silk.
+- KC-4.2.II.C (Social Interactions and Organization): Plantation growth increased demand for enslaved labor and produced demographic, social, and cultural change.
+- KC-4.2.II.D (Economic Systems): Colonial American economies used existing labor systems and introduced new forms including chattel slavery, indentured servitude, encomienda, and hacienda. Illustrative examples: Incan mit’a.
+- KC-4.2.III.A (Social Interactions and Organization): Imperial conquest and widening economic opportunity contributed to new political and economic elites. Illustrative examples: Casta system.
+- KC-4.2.III.B (Social Interactions and Organization): The power of existing political and economic elites fluctuated as rulers centralized power. Illustrative examples: Ottoman timars, Russian boyars, European nobility.
+- KC-4.2.III.C (Social Interactions and Organization): Gender and family structures changed in some regions, including demographic changes in Africa associated with the trade of enslaved persons.
 
-**Expected evidence terms.** Potosí, Manila Galleon, global price revolution, Chinese demand, Single Whip Tax Reform, demographic collapse, Columbian Exchange, smallpox, potato, maize, Indian Ocean trade, Chinese manufacturing, Islamic commercial networks, continuity, CCOT synthesis, Sangleys, Asian demand, hawala.
+**Expected evidence terms.** plantation economy, chattel slavery, mit’a, encomienda, hacienda, Potosí, mercantilism, artisan labor, casta, elites, gender, family, economic developments, social structures, continuity, change, plantation, slavery, peasant labor.
 
-**AP skill focus.** CCOT practice.
+**AP skill focus.** CCOT and causation practice.
 
-**Checkpoint 1 prompt.** Explain how American silver from Potosí created a genuinely global trade network. Describe at least two routes (Manila Galleon and Atlantic) and explain the role of Chinese demand. Then explain ONE demographic or environmental change caused by the Columbian Exchange, be specific about what changed, what caused it, and what its long-term consequences were.
-Strong answer checklist: Explain the Manila Galleon trade: route, commodities, and why Chinese demand drove it. Explain the global price revolution: cause (silver influx), effects (inflation, economic disruption). Choose one demographic or environmental change: explain what changed, what caused it, and its long-term consequences.
+**Checkpoint 1 prompt.** Choose TWO economic developments from c. 1450–c. 1750, such as plantation growth, silver extraction, mercantilism, or intensified textile production. For each, explain one specific effect on social structure. Your two effects must come from different categories such as labor status, racial/casta hierarchy, elite power, or gender/family patterns.
+Strong answer checklist: Name two specific economic developments. Explain the mechanism connecting each economic development to a social consequence. Use social evidence from at least two different categories.
 
-**Checkpoint 2 prompt.** Identify two specific continuities from c. 1450 that persisted through c. 1750. For each, explain what structural factors sustained it despite European maritime expansion. Then write a synthesis statement: overall, did c. 1450–1750 represent more change than continuity in global trade, or more continuity than change? Defend your position with specific evidence from both sides.
-Strong answer checklist: Name two specific continuities (Indian Ocean trade, Chinese dominance, Islamic networks) with specific evidence. Explain the structural factors that sustained each continuity despite European expansion. Write a synthesis statement: more change or more continuity? Defend with evidence from BOTH sides.
+**Checkpoint 2 prompt.** Explain how economic developments from 1450 to 1750 affected social structures over time. Write a short CCOT argument that includes one meaningful social change, one meaningful social continuity, specific evidence from at least THREE earlier Unit 4 topics, and an explanation of why the change and continuity occurred.
+Strong answer checklist: Answer the exact economic-developments -> social-structures question. Use at least three specific pieces of Unit 4 evidence. Explain why one social structure changed and why another persisted.
