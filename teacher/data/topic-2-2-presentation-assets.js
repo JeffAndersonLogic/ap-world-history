@@ -218,7 +218,6 @@ if(transfer){
   transfer.subtitle='Interregional contact and conflict encouraged significant technological and cultural transfers.';
   transfer.footer='Medicine · numbering systems · Uyghur script = three CED examples students should be able to explain.';
   transfer.visual=visual('2.2 - Knowledge Shared.jpg','Knowledge moving across cultures through Mongol-era Eurasian connections','Topic 2.2 classroom visual · Knowledge Shared');
-  transfer.layout='visual';
   transfer.notes=transfer.notes||{};
   transfer.notes.minutes=2;
   transfer.notes.land=[
