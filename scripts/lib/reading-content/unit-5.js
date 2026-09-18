@@ -1147,158 +1147,84 @@ module.exports = {
     "showFooter": true,
     "showFooterNote": true,
     "headerSubtitle": "Topic 5.6, Industrialization: Government and Society &nbsp;|&nbsp; AP World History",
-    "titleHtml": "The <em>Class</em> Question",
-    "deck": "How industrialization created new social classes, new political ideologies, and new demands for reform, and why the question of who benefits from industrial wealth has never been fully answered",
+    "titleHtml": "When the <em>State Steps In</em>",
+    "deck": "Britain industrialized first, but later states faced a different problem: industrial powers already controlled stronger factories, weapons, capital, and trade networks. Egypt under Muhammad Ali and Meiji Japan show what happened when governments decided that industrialization was too important to leave to chance.",
     "skillTags": [
       "Causation",
       "Comparison",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Industrialization didn't just change how goods were made, it transformed social order. It created new classes (factory owners and factory workers), new ideologies (liberalism, socialism, Marxism), and new demands for political representation, labor rights, and social welfare. Governments responded, slowly, unevenly, often only under pressure.",
-      "readingTarget": "Explain how industrialization created new social classes and the ideologies that emerged to address class conflict; analyze government responses and the role of women in industrial society."
+      "beforeYouRead": "Track the same three questions for Egypt and Japan: Why did the government intervene? What did it actually do? What result or limit followed? This is a state-strategy topic, not a social-class topic.",
+      "readingTarget": "Explain why governments promoted state-sponsored industrialization, use Muhammad Ali’s Egypt and Meiji Japan as evidence, and compare how state capacity and external pressure shaped their different outcomes."
     },
     "vocabulary": [
-      "bourgeoisie",
-      "proletariat",
-      "class conflict",
-      "liberalism",
-      "conservatism",
-      "socialism",
-      "Marxism",
-      "Communist Manifesto",
-      "Reform Acts",
-      "Factory Acts",
-      "Chartism",
-      "Bismarck",
-      "social insurance",
-      "women's suffrage",
-      "class consciousness"
-    ],
-    "sections": [
+      "state-sponsored industrialization",
+      "Muhammad Ali",
+      "cotton textile industry",
+      "state monopoly",
+      "import substitution",
+      "irrigation",
+      "Meiji Restoration",
+      "Iwakura Mission",
+      "model factory",
+      "railroad",
+      "telegraph",
+      "zaibatsu",
+      "regional power",
+      "state c    "sections": [
       {
-        "number": "1",
-        "label": "Contextualization",
-        "heading": "Social Order Before Industrialization",
+        "number": "01",
+        "label": "The Problem",
+        "heading": "Industrialization Becomes a Question of State Survival",
         "blocks": [
-          {
-            "type": "p",
-            "html": "Pre-industrial social order in Europe was based on <span class=\"kt\">hereditary status</span>: the three estates (nobility, clergy, commoners) or equivalent hierarchies. A person's social position was fixed at birth. <span class=\"kt\">Guilds</span> organized skilled trades and controlled access to craft knowledge. Most people were peasants or agricultural workers."
-          },
-          {
-            "type": "p",
-            "html": "The middle class existed in pre-industrial societies (merchants, lawyers, physicians) but was relatively small and politically subordinate to the <span class=\"kt\">landed aristocracy</span>."
-          },
-          {
-            "type": "p",
-            "html": "Industrialization shattered this order: it created new forms of wealth (<span class=\"kt\">industrial capital</span>) that competed with land; it created a massive urban working class with no pre-industrial equivalent; and it made old aristocratic justifications for power, birth, land, military service, increasingly irrelevant."
-          }
+          {"type":"p","html":"Britain’s industrial lead changed the rules for every state that followed. Steam-powered factories, railroads, modern weapons, and deep pools of private capital gave industrial powers economic and military advantages that were difficult to match gradually."},
+          {"type":"p","html":"Some rulers therefore treated industrialization as a problem of <span class=\"kt\">sovereignty</span>. If private investors, skilled workers, infrastructure, or technical knowledge were too weak, the government could try to provide them directly. The core mechanism was <strong>strategic weakness -> state intervention -> industrial capacity -> greater national power</strong>."}
         ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Understanding what industrialization changed about social order requires knowing what social order looked like BEFORE. <strong>The key change: from a society where status was inherited to a society where status was increasingly tied to economic position, but where economic position was determined by ownership of capital (bourgeoisie) or by the sale of labor (proletariat), not by birth.</strong> Effective contextualization identifies this shift from hereditary to economic hierarchy as the foundation of 19th-century class conflict.</p>"
-        }
+        "callout":{"label":"AP Thinking, Causation","raw":"<p>Do not write that governments industrialized because industrialization was “good.” Identify the pressure they faced and explain how a specific state policy was supposed to solve it.</p>"}
       },
       {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "The New Social Classes: Bourgeoisie and Proletariat",
+        "number": "02",
+        "label": "Egypt",
+        "heading": "Muhammad Ali Tries to Build Industry from the Top",
         "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">bourgeoisie</span> (industrial middle class, from French \"town-dweller\"): factory owners, merchants, bankers, lawyers, doctors, engineers, people who earned their social position through accumulated capital and market success, not inherited land. By mid-19th century, the bourgeoisie was economically dominant in industrial societies, though political power (especially in Britain) still rested partly with the landed aristocracy. The bourgeoisie had its own internal stratifications: the great industrialists (iron masters, cotton manufacturers) at the top; the smaller shopkeepers and craftsmen at the bottom."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">industrial proletariat</span> (from Latin \"proletarii\", those who contribute only their children to the state): factory workers, mine workers, urban day laborers, people who owned nothing but their labor power and had to sell it for wages. The proletariat was created by <span class=\"kt\">enclosure</span> (which drove peasants off common land), by the destruction of artisan crafts (by factory competition), and by immigration to industrial cities. By mid-century, the urban proletariat was the largest class in industrialized countries."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Class consciousness</span> and conflict: Marx argued that the proletariat's shared conditions of exploitation would eventually produce class consciousness, the recognition that workers share common interests against the owning class. Whether or not Marx was right about the inevitability of revolution, <span class=\"kt\">class conflict</span> was real: strikes, union organizing, political reform movements, and revolutionary uprisings (Paris Commune, 1871) defined 19th-century industrial politics."
-          }
+          {"type":"p","html":"In early 19th-century Egypt, <span class=\"kt\">Muhammad Ali</span> tried to strengthen the state and military by reorganizing agriculture and production. His government expanded irrigation and cotton cultivation, created state monopolies, imported machinery and experts, and built textile and military factories."},
+          {"type":"p","html":"The <span class=\"kt\">cotton textile industry</span> mattered because it linked raw-material production to domestic manufacturing. Instead of exporting all raw cotton and importing finished cloth, the state tried to capture more of the value inside Egypt and supply its own military."},
+          {"type":"p","html":"The strategy had limits. It depended heavily on coercive taxation and labor, lacked the depth of private capital found in Britain, and faced European pressure against protected monopoly systems. State intervention could accelerate industrial activity, but it could not erase the international power imbalance surrounding Egypt."}
         ],
-        "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>Explaining WHY industrialization created these two classes requires tracing specific mechanisms. <strong>The bourgeoisie emerged because industrial capital (factories, machines) could generate wealth without land, anyone who could invest in machines could become wealthy. The proletariat emerged because enclosure, artisan displacement, and urban migration created a large population with no property and no choice but to sell labor for wages.</strong> Both classes were PRODUCTS of industrialization, not pre-existing groups.</p>"
-        }
+        "callout":{"label":"AP Thinking, Evidence","raw":"<p>Use Egypt to show what state-sponsored industrialization looks like in practice: monopoly, infrastructure, factories, military demand, and imported expertise.</p>"}
       },
       {
-        "number": "3",
-        "label": "Key Concept",
-        "heading": "Competing Ideologies: Liberalism, Conservatism, Socialism, and Marxism",
+        "number": "03",
+        "label": "Japan",
+        "heading": "Meiji Japan Builds Institutions Before Private Industry Is Ready",
         "blocks": [
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Liberalism</span> (Adam Smith, John Stuart Mill): freedom of the individual from government interference; free market economics; representative government based on property rights; individual civil liberties. Liberals believed that the market, left to itself, would produce wealth and freedom. They were generally opposed to government regulation of industry. Late 19th-century \"New Liberals\" accepted some social reform (public education, public health) as compatible with individual liberty."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Conservatism</span> (Edmund Burke, Metternich): respect for tradition, established institutions (monarchy, Church, aristocracy), and gradual rather than radical change. Conservatives were alarmed by the French Revolution and skeptical of Enlightenment rationalism. In the industrial age, some conservatives (like Disraeli's \"Tory Democracy\" in Britain) accepted reform as a way to prevent revolution, giving the working class enough improvement to keep them loyal to the existing order."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Utopian Socialism</span> (Robert Owen, Charles Fourier, Saint-Simon): early socialists believed that industrial society should be reorganized on cooperative rather than competitive principles. Robert Owen built model factory communities (New Lanark, Scotland) with decent housing, schools, and regulated working hours; he believed that improving workers' conditions would increase productivity and that a model community could transform society through example. Utopian socialists rejected private ownership of production but believed in peaceful, gradual transformation."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Marxism</span> (Karl Marx and Friedrich Engels): Marx's <em>Communist Manifesto</em> (1848) and <em>Das Kapital</em> (1867) provided the most systematic critique of industrial capitalism. Key claims: history is driven by <span class=\"kt\">class conflict</span> (historical materialism); the bourgeoisie exploits the proletariat by extracting surplus value from their labor; capitalism contains inherent contradictions that will produce economic crises; the proletariat will eventually become class-conscious and overthrow the bourgeoisie through revolution; a communist society without classes or private property will follow. By 1900, Marxist political parties (Social Democrats) were major forces in German, French, and Russian politics."
-          }
+          {"type":"p","html":"Japan’s leaders faced a similar catch-up problem after Western gunboat diplomacy exposed Tokugawa weakness. After the <span class=\"kt\">Meiji Restoration</span> of 1868, the government centralized taxation, expanded education, hired foreign specialists, sent the Iwakura Mission abroad, and built railroads, telegraphs, shipyards, arsenals, and model factories."},
+          {"type":"p","html":"The state did not intend to own every enterprise forever. Many model industries were later sold to private business groups, helping create large firms that could expand production with government-built infrastructure already in place. The sequence was <strong>state build -> transfer or support -> private scale</strong>."},
+          {"type":"p","html":"By the 1890s, industrial and military reform had changed Japan’s regional position. Victory in the Sino-Japanese War showed that economic modernization had become military and diplomatic power."}
         ],
-        "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Comparing liberalism and socialism as responses to industrialization reveals different diagnoses of the same problem. <strong>Liberals diagnosed the problem as TOO MUCH government interference (restrictions on trade, monopolies, aristocratic privilege), their prescription was less government and more market. Socialists diagnosed the problem as the WRONG KIND of property relations (private ownership of production), their prescription was collective ownership of the means of production.</strong> Both were responding to the same industrial conditions; they disagreed about the cause of inequality and therefore about the remedy.</p>"
-        }
+        "callout":{"label":"AP Thinking, Causation","raw":"<p>The Meiji story is not “Japan copied the West.” Explain the state strategy: identify the institution or investment, then trace how it built economic or military capacity.</p>"}
       },
       {
-        "number": "4",
-        "label": "Key Concept",
-        "heading": "Government Response and the Women's Question",
+        "number": "04",
+        "label": "Comparison",
+        "heading": "Same Strategy, Different Outcomes",
         "blocks": [
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Political reform</span>: British <span class=\"kt\">Reform Acts</span> of 1832, 1867, and 1884 progressively expanded voting rights (from 400,000 voters to ~5 million between 1832 and 1884). <span class=\"kt\">Chartism</span> (1838–1857) demanded universal male suffrage, secret ballot, annual parliaments, and payment for MPs, all eventually enacted. By 1900, universal male suffrage existed in Germany (1871), France (1875), and the United States (formally, with severe suppression of Black voters in the South). The pressure for political reform came primarily from working-class and middle-class movements, not from voluntary elite generosity."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Labor legislation</span>: <span class=\"kt\">Factory Acts</span> (1833, 1844, 1847) restricted child labor, limited women's and children's hours, and established factory inspectors. Public Health Acts (1848, 1875) created sanitation standards for industrial cities. The Ten Hours Act (1847) limited the working day for women and children to 10 hours, which effectively limited men's hours too since factories couldn't run with only half the workforce."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Bismarckian social insurance</span>: Germany under <span class=\"kt\">Bismarck</span> introduced the world's first modern social insurance system: health insurance (1883), accident insurance (1884), old-age and disability insurance (1889). Motivation was explicitly conservative, Bismarck wanted to reduce support for socialist parties by making the state the source of social welfare rather than socialist unions. This model became the template for the 20th-century welfare state."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Women and industrialization</span>: Women and children entered factory work in large numbers, initially because they accepted lower wages. Women's factory work had contradictory effects: it gave women economic independence (their own wages) while subjecting them to exploitation and dangerous conditions. <span class=\"kt\">Separate spheres ideology</span> (the belief that women's proper role was domestic) coexisted uncomfortably with the reality of working-class women laboring in factories. The <span class=\"kt\">women's suffrage</span> movement (beginning at Seneca Falls, 1848, in the US; building momentum in Britain through the 1860s–1900s) drew on the contradiction between universal rights claims and women's political exclusion, the same contradiction Mary Wollstonecraft had identified in 1792."
-          }
+          {"type":"p","html":"Egypt and Japan shared a central idea: the state could substitute for missing private capital and accelerate industrialization before foreign powers made economic weakness permanent."},
+          {"type":"p","html":"Their outcomes differed because the surrounding conditions differed. Meiji Japan combined industrial policy with broader tax, education, military, and administrative reforms and gradually handed many enterprises to private owners. Egypt faced stronger European constraints and relied more heavily on coercive monopolies and a narrower fiscal base."},
+          {"type":"p","html":"A strong comparison therefore avoids “Japan succeeded, Egypt failed.” It explains <span class=\"kt\">why</span> different state capacities, policy packages, and external pressures made one program more durable."}
         ],
-        "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Did governments respond adequately to the social problems of industrialization in the 19th century? <strong>A strong argument requires defining \"adequate\", adequate by whose standard, and compared to what alternative? Defenders of government response can point to real achievements: child labor restricted, hours limited, public health improved, voting rights expanded. Critics can point to the slow pace, the inadequacy of early reforms, and the suffering that could have been prevented.</strong> A nuanced argument acknowledges both and explains which outweighs the other.</p>"
-        }
+        "callout":{"label":"BeReady: 10-Second Takeaway","raw":"<p><strong>Late industrializers often used government power to catch up.</strong> Egypt and Japan both intervened; Japan’s broader institutional reforms and greater policy autonomy produced a more durable industrial transformation.</p>"}
       }
     ],
-    "takeaway": "Industrialization created two new defining classes: the <strong>bourgeoisie</strong> (factory owners, merchants, professionals, those who owned capital) and the <strong>proletariat</strong> (factory workers, miners, urban laborers, those who owned only their labor). Four competing ideologies emerged to explain and address this transformation: <strong>liberalism</strong> (free market, individual rights, less government) diagnosed the problem as too much restriction; <strong>conservatism</strong> (tradition, order, gradual change) warned against rapid transformation; <strong>utopian socialism</strong> (Robert Owen) proposed cooperative communities as alternatives; and <strong>Marxism</strong> (<em>Communist Manifesto</em>, 1848) argued that class conflict would inevitably produce revolution and a classless society. Governments responded slowly but eventually: the British Reform Acts expanded voting rights; Factory Acts restricted child labor and limited hours; Bismarck's Germany created the first social insurance system. Women entered industrial work in large numbers, complicating \"separate spheres\" ideology and fueling the women's suffrage movement. By 1900, the social question, who benefits from industrial wealth?, remained the central political question of the century.",
+    "takeaway": "Topic 5.6 is about state economic strategy. Muhammad Ali’s Egypt used cotton, monopolies, irrigation, imported expertise, and state factories to try to build military and industrial independence. Meiji Japan used taxation, education, infrastructure, model enterprises, imported technology, and later private firms to accelerate industrialization. Both were responses to the power gap created by the Industrial Revolution, but Japan’s broader institutional reforms and greater policy autonomy helped it become a regional industrial power."separate spheres\" ideology and fueling the women's suffrage movement. By 1900, the social question, who benefits from industrial wealth?, remained the central political question of the century.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Three AP Skills",
     "questions": [
-      {
-        "num": "1",
-        "skill": "Causation",
-        "text": "Explain why industrialization created two new social classes, the bourgeoisie and the proletariat. For each class, identify the specific industrial conditions that produced it: what specific changes caused the bourgeoisie to emerge as a class? What specific changes created the proletariat? Be concrete about the mechanisms.",
-        "placeholder": "For each class, identify the specific mechanisms that caused it to emerge..."
-      },
-      {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare liberalism and socialism as ideological responses to industrialization. Identify what each ideology diagnoses as the fundamental problem of industrial society, and what each prescribes as the remedy. Then explain: what does the difference in diagnosis reveal about what each ideology values most, individual freedom or collective welfare?",
-        "placeholder": "Identify each ideology's diagnosis, remedy, and underlying value..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Did 19th-century governments respond adequately to the social problems created by industrialization? Then provide two specific pieces of evidence, one that supports your claim and one that complicates it. End with a sentence explaining why, on balance, your claim is correct.",
-        "placeholder": "State your claim, provide supporting and complicating evidence, then explain your judgment..."
-      }
+      {"num":"Q1","skill":"Causation","text":"Why did late-industrializing governments sometimes intervene directly in the economy? Explain the catch-up problem and one mechanism by which state action could accelerate industrialization.","placeholder":"The state intervened because... The policy accelerated industrialization by..."},
+      {"num":"Q2","skill":"Comparison","text":"Compare Muhammad Ali’s Egypt and Meiji Japan. Identify one shared state strategy and one important difference in policy or outcome.","placeholder":"Both states... They differed because..."},
+      {"num":"Q3","skill":"Argumentation","text":"Which mattered more to successful state-sponsored industrialization: the amount of government intervention or the government’s broader institutional capacity? Make a claim using Egypt and Japan as evidence.","placeholder":"The more important factor was... Evidence from Egypt/Japan shows..."}
+
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
