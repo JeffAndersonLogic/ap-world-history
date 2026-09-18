@@ -1015,15 +1015,15 @@ module.exports = {
     "showFooterNote": true,
     "headerSubtitle": "Topic 4.7, Changing Social Hierarchies &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "New <em>Hierarchies</em>",
-    "deck": "European colonialism did not just extract wealth, it reorganized the social order wherever it reached. In Spanish colonial America, a new racial classification system called the casta sorted people into dozens of legal categories based on ancestry, determining their legal rights, labor obligations, and social opportunities. Similar, but different, hierarchies emerged in Portuguese Brazil, Dutch colonies, and British America. Understanding these hierarchies, how they were built, and what persisted from earlier societies is essential for AP comparison and CCOT.",
+    "deck": "Early modern empires changed hierarchy in three ways at once. States sometimes accommodated diverse groups and sometimes restricted them; conquest and global commerce created new political and economic elites such as the casta hierarchy; and centralizing rulers forced older elites such as Ottoman timar holders, Russian boyars, and European nobles to defend, lose, or renegotiate their power.",
     "skillTags": [
       "Comparison",
       "Continuity & Change",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track both what is being compared (casta system vs. other colonial hierarchies vs. pre-colonial social orders) and what changed vs. what continued. The AP will ask you to compare, so you need specific evidence from at least two colonial contexts, not just a description of the casta system alone.",
-      "readingTarget": "By the end, you should be able to explain the casta system in Spanish America (categories, legal effects, how it worked), describe at least one other colonial social hierarchy for comparison, and identify one continuity from pre-colonial social structures."
+      "beforeYouRead": "Track three processes rather than one hierarchy: accommodation or suppression of diversity, formation of new elites, and changing power of existing elites under centralizing states. Ask what each policy or hierarchy did for the state.",
+      "readingTarget": "By the end, you should be able to explain one accommodation policy and one suppression policy, explain how conquest or commerce produced new elites such as the casta hierarchy, and explain how centralization changed the power of existing elites such as timar holders, boyars, or European nobility."
     },
     "vocabulary": [
       "Casta",
@@ -1037,120 +1037,49 @@ module.exports = {
       "Plantation Hierarchy",
       "Gender Norms",
       "Indigenous Nobility",
-      "Free Blacks"
+      "Free Blacks",
+      "Accommodation",
+      "Suppression",
+      "Millet",
+      "Timar",
+      "Boyars",
+      "Nobility",
+      "Centralization"
     ],
     "sections": [
       {
-        "number": "1",
-        "label": "Contextualization",
-        "heading": "Before the Casta: Pre-Colonial Social Orders",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "European colonialism did not arrive in a social vacuum. Both the Americas and Africa had complex social hierarchies of their own before European contact. The <span class=\"kt\">Aztec Empire</span> had a highly stratified society: nobles (<span class=\"kt\">pipiltin</span>) held legal privileges, owned land, and held political office; commoners (<span class=\"kt\">macehualtin</span>) paid tribute and provided labor; slaves existed at the bottom of the hierarchy. The <span class=\"kt\">Inca Empire</span> similarly distinguished between the Inca nobility, regional elites incorporated through conquest, and the mass of tribute-paying commoners. In West Africa, kingdoms like <span class=\"kt\">Songhai</span> and <span class=\"kt\">Benin</span> maintained hereditary aristocracies, occupational castes, and enslaved populations."
-          },
-          {
-            "type": "p",
-            "html": "What European colonialism did was not create hierarchy from nothing, it destroyed, reorganized, and partly preserved these existing hierarchies while adding entirely new dimensions based on race and colonial origin. Some indigenous nobility retained legal status under Spanish colonial law: the descendants of Aztec and Inca rulers were sometimes recognized as nobles, given land grants, and exempted from tribute. But the Aztec <span class=\"kt\">pipiltin</span> or Inca <span class=\"kt\">kuracas</span> who survived conquest found their authority drastically reduced and restructured through Spanish legal categories."
-          }
+        "number":"1","label":"Diversity Policy","heading":"Accommodation and Suppression Are Both Tools of Rule",
+        "blocks":[
+          {"type":"p","html":"Empires governed populations divided by religion, ethnicity, language, and legal status. States sometimes <span class=\"kt\">accommodated</span> groups when their taxes, military service, trade connections, or local authority helped the state govern."},
+          {"type":"p","html":"The Ottoman Empire accepted many Jews expelled from Spain and Portugal and governed recognized religious communities through differentiated institutions. Mughal rulers at times incorporated Hindu elites into imperial service. In other cases, states <span class=\"kt\">suppressed</span> or restricted groups, including Qing limits on some Han Chinese roles and Iberian pressure on Jewish and Muslim communities."}
         ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Effective contextualization for Topic 4.7 requires noting that social hierarchy pre-existed European colonialism in every region colonizers entered. <strong>The casta system was not simply imposed on a blank slate, it interacted with existing hierarchies, incorporating some (indigenous nobility), displacing others (Aztec priest class), and creating entirely new categories (mestizo, mulatto) that had no pre-colonial equivalent.</strong> Understanding what pre-existed colonialism is the foundation for explaining what changed.</p>"
-        }
+        "callout":{"label":"AP Thinking, Causation","raw":"<p>Ask the functional question: <strong>why did the state accommodate or restrict this group, and how did the policy affect access to power?</strong></p>"}
       },
       {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "The Casta System in Spanish America",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">casta system</span> was the elaborate racial classification system developed in Spanish colonial America to organize legal and social status based on ancestry. At its peak in the 17th and 18th centuries, it included dozens of named categories, though the primary divisions were: <span class=\"kt\">peninsulares</span> (Spanish-born in Spain), <span class=\"kt\">criollos</span> or creoles (Spanish descent, born in the Americas), <span class=\"kt\">mestizos</span> (Spanish and indigenous ancestry), <span class=\"kt\">mulattos</span> (Spanish and African ancestry), indigenous peoples, and enslaved Africans."
-          },
-          {
-            "type": "p",
-            "html": "These categories had real legal consequences. Peninsulares held the highest offices, only they could serve as viceroys, archbishops, or senior judges. Creoles were legally Spanish but resented being excluded from the highest offices; this resentment would later fuel independence movements. Mestizos occupied a middle position that varied enormously based on whether they had been raised in Spanish or indigenous culture, whether they were acknowledged by their Spanish father, and what economic resources they had access to. Indigenous peoples owed tribute and were exempt from Inquisition jurisdiction but also from many legal protections. Enslaved Africans had no legal personhood at all."
-          },
-          {
-            "type": "p",
-            "html": "The casta was also a visual system: <span class=\"kt\">casta paintings</span>, a genre of colonial art from the 18th century, depicted the offspring of different racial combinations, labeling each category. These paintings reflected colonial anxiety about racial mixture and the desire to classify and stabilize a society that was rapidly becoming too mixed to control. In reality, racial categories were more fluid than the paintings suggested: people of mixed ancestry could sometimes \"pass\" as members of higher-status categories, especially if they had money, education, or church support."
-          }
+        "number":"2","label":"New Elites","heading":"Conquest and Commerce Create New Routes to Status",
+        "blocks":[
+          {"type":"p","html":"Imperial conquest and widening economic opportunity created <span class=\"kt\">new elites</span>. In Spanish America, the <span class=\"kt\">casta</span> hierarchy classified ancestry and helped organize access to office, tribute obligations, labor status, and social prestige."},
+          {"type":"p","html":"Commercial expansion also created wealthy merchant and company elites whose influence came from long-distance trade and state charters rather than only hereditary landholding. New systems of power could therefore sit alongside older aristocracies."}
         ],
-        "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>The casta system was more elaborate than social hierarchies in other European colonial contexts. In the British Caribbean, the primary social division was binary: enslaved (legally property) or free (with varying degrees of rights). Freed people of color occupied an uncertain middle position without the named categories of the casta. In Portuguese Brazil, a more fluid gradation existed, with a larger free Black and mixed-race population than in British colonies, but still organized around racial ancestry and slave status. <strong>The difference reveals different colonial logics: Spanish colonial law was obsessively categorical; British colonial law was more binary; Portuguese practice was more flexible in practice if not in theory.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Social Structure","raw":"<p>New elites are evidence of change only when you explain the new source of status: conquest, ancestry classification, commerce, or service to an expanding state.</p>"}
       },
       {
-        "number": "3",
-        "label": "Key Concept",
-        "heading": "Social Hierarchy in Other Colonial Contexts",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The casta system was specific to Spanish colonial America, but similar hierarchies emerged wherever European colonialism took root. In <span class=\"kt\">Portuguese Brazil</span>, the plantation economy created a social order organized around: Portuguese-born planters and officials at the top; Brazilian-born whites (analogous to creoles) below them; a large population of freed Africans and mixed-race people in the middle; and enslaved Africans, the majority of the population in sugar-producing regions, at the bottom. Brazil was distinctive in having a higher rate of <span class=\"kt\">manumission</span> (freeing of enslaved people) than British or French colonies, creating a larger free Black population but not dismantling the fundamental hierarchy."
-          },
-          {
-            "type": "p",
-            "html": "In the <span class=\"kt\">Dutch VOC</span> territories in Asia, especially Java and the Spice Islands, a different kind of hierarchy emerged: Dutch merchants and colonial officials at the top; Chinese merchants (who served as tax farmers and commercial intermediaries) below them; indigenous Javanese elites who cooperated with the VOC; and Javanese commoners who owed labor obligations. The VOC's commercial logic produced a hierarchy organized around commercial function and ethnic origin rather than Spanish-style racial classification."
-          },
-          {
-            "type": "p",
-            "html": "In <span class=\"kt\">British North America</span> and the Caribbean, racial categories hardened through the 17th century as planters sought to create a legally permanent enslaved class. The transformation of African labor from indenture to <span class=\"kt\">chattel slavery</span> was accompanied by laws that defined \"Black\" as a slave status, a process that was explicitly racial in ways that earlier English colonial hierarchies had not been."
-          }
+        "number":"3","label":"Existing Elites","heading":"Centralizing States Reshape Older Elite Power",
+        "blocks":[
+          {"type":"p","html":"Older elites did not simply disappear. Their power <span class=\"kt\">fluctuated</span> as rulers centralized. Changes to Ottoman <span class=\"kt\">timar</span> arrangements altered the role of provincial military elites, while Russian rulers pushed <span class=\"kt\">boyars</span> toward state service and imperial rank."},
+          {"type":"p","html":"European <span class=\"kt\">nobility</span> also faced stronger monarchies. Aristocrats could lose independent military or provincial authority while gaining status through court access, offices, and state service. Centralization often changed the route to elite power rather than eliminating elites altogether."}
         ],
-        "callout": {
-          "label": "AP Thinking, Continuity and Change",
-          "raw": "<p>A significant continuity across all colonial social hierarchies: European colonialism everywhere preserved or created a distinction between those who could own property and those who could be property. Pre-colonial societies had enslaved people; colonial societies had enslaved people. <strong>The change was the racialization of that status, making Blackness the legal basis for slavery in ways that had not existed before. The casta system also introduced an entirely new category (mestizo, mulatto) that pre-colonial societies had no need for, because racial mixture across previously separated populations was itself a product of colonialism.</strong></p>"
-        }
-      },
-      {
-        "number": "4",
-        "label": "Key Concept",
-        "heading": "Gender and Family in Colonial Societies",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "Colonial social hierarchies also organized gender in new ways. In Spanish colonial America, Spanish women who emigrated to the colonies found their legal status defined by their casta and marital position. Elite creole women were expected to maintain household honor and manage large domestic establishments; they could own property in their own name and participate in colonial commerce as widows. But they were excluded from public office, the Church hierarchy above lay positions, and most formal education."
-          },
-          {
-            "type": "p",
-            "html": "The casta system intersected with gender in complex ways. Indigenous women in frontier regions became the mothers of the <span class=\"kt\">mestizo</span> population, often through coercive relationships with Spanish soldiers and colonists. The category of \"mestizo\" was gendered from its origin: the mestizo was typically the child of a Spanish father and indigenous mother, not the reverse. Indigenous women in settled colonial regions managed their households according to a combination of Spanish and indigenous law, sometimes successfully petitioning colonial courts for land rights or protection from abusive husbands or encomenderos."
-          },
-          {
-            "type": "p",
-            "html": "Enslaved African women experienced the intersection of racial and gender exploitation most acutely: they were subject to the same labor demands as enslaved men, plus sexual exploitation by enslavers and the particular grief of bearing children who were legally enslaved from birth. <span class=\"kt\">Free Black</span> and mixed-race women in Brazil and the Caribbean occupied a distinctive social position, often working as market vendors, healers, or domestic servants, that gave them economic agency that enslaved women did not have."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was the colonial casta system primarily a product of racial ideology, or primarily a tool for labor extraction and social control? A strong argument considers: the casta organized who owed tribute, who could be enslaved, who could hold office, all questions of labor and power, not just ideology. But the obsessive racial categories of casta paintings suggest that colonizers were also trying to manage the social anxiety produced by a society that was racially mixing faster than the law could classify. <strong>The strongest arguments show how racial ideology and economic function reinforced each other.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Continuity:</strong> elites remained powerful. <strong>Change:</strong> rulers increasingly made elite status depend on court access or state service rather than independent local power.</p>"}
       }
     ],
-    "takeaway": "European colonialism created new social hierarchies wherever it reached. In Spanish colonial America, the <strong>casta system</strong> organized legal and social status into dozens of categories based on ancestry, from peninsulares at the top to enslaved Africans at the bottom. The casta had legal consequences: it determined who could hold office, who owed tribute, and who could be enslaved. Similar but different hierarchies emerged in Portuguese Brazil (more fluid manumission), Dutch colonial Asia (organized around commercial function), and British colonies (increasingly binary free/enslaved). These hierarchies also organized gender: indigenous and African women experienced the intersection of racial and gender exploitation most directly. The key for AP: these were new hierarchies built partly on pre-colonial structures, partly on the specific logics of colonial extraction.",
+    "takeaway": "Topic 4.7 has three jobs. States accommodated or suppressed diverse groups depending on what best served rule. Imperial conquest and global commerce created new elites and hierarchies, including the casta system in Spanish America. At the same time, the power of existing elites changed as centralizing rulers challenged or redirected older sources of authority: Ottoman timar holders, Russian boyars, and European nobility often retained status by adapting to state service and court politics.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Three AP Skills",
     "questions": [
-      {
-        "num": "1",
-        "skill": "Comparison",
-        "text": "Compare the casta system in Spanish colonial America to the social hierarchy in ONE other colonial context (Portuguese Brazil, Dutch colonial Asia, or British Caribbean). Identify one meaningful similarity and one meaningful difference. Explain WHY the difference existed.",
-        "placeholder": "Identify a similarity and a difference, then explain why the difference existed..."
-      },
-      {
-        "num": "2",
-        "skill": "Continuity & Change",
-        "text": "Identify one way colonial social hierarchies CONTINUED pre-colonial social structures in the Americas, and one way they represented genuine CHANGE. Be specific: name the pre-colonial practice and explain what the Spanish adapted versus what they introduced that was new.",
-        "placeholder": "Name the pre-colonial practice, then explain what continued and what changed..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Was the casta system primarily a tool of economic control, or primarily an expression of racial ideology? Then provide one specific piece of evidence that supports your argument.",
-        "placeholder": "State your one-sentence claim, then provide specific evidence..."
-      }
+      {"num":"1","skill":"Causation","text":"Give one example of a state accommodating a diverse group and one example of suppression or restriction. Explain why each policy served the state.","placeholder":"The state accommodated... because... It restricted... because..."},
+      {"num":"2","skill":"Continuity & Change","text":"Explain how conquest or global economic opportunity created a new elite or hierarchy. Use the casta system or another specific example.","placeholder":"A new elite formed because..."},
+      {"num":"3","skill":"Comparison","text":"Compare how centralization changed the power of TWO existing elite groups such as Ottoman timar holders, Russian boyars, or European nobility.","placeholder":"Both groups faced... They differed because..."}
+
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
