@@ -101,21 +101,21 @@
       focus: ['Name at least two New World crops moving east and one Old World introduction moving west.', 'For each, explain the specific long-term consequence in the receiving region.', 'Explain WHY the transfer had that consequence, connect crop to demographic or economic outcome.']
     },
     {
-      title: 'Checkpoint 2: Disease, Collapse, and Global Consequences',
+      title: 'Checkpoint 2: Disease, Two-Way Transfer, and Demographic Effects',
       subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'Virgin soil epidemics, demographic collapse, Atlantic slave trade, Potosí silver, the catastrophic and global consequences of hemispheric contact.',
+      cardDesc: 'Disease vectors, epidemic vulnerability, Old World introductions, African foodways, and American staple crops.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain why Old World diseases were so catastrophic for indigenous American populations. Then trace the causal chain from demographic collapse to the origins of the Atlantic slave trade. Finally, explain how American silver (especially from Potosí) affected global trade. Use specific evidence throughout.',
+      prompt: 'Explain why Eastern Hemisphere diseases were catastrophic for many Indigenous American populations, including the role of disease vectors or lack of prior exposure. Then explain TWO additional Columbian Exchange consequences: one Old World-to-Americas transfer, such as horses, cattle, sugar, rice, or okra, and one American crop moving to Afro-Eurasia. For each transfer, explain a demographic, nutritional, economic, or environmental effect.',
       responseType: 'Checkpoint 2',
-      terms: ['smallpox', 'virgin soil epidemic', 'demographic collapse', 'encomienda', 'Atlantic slave trade', 'Potosí', 'silver', 'labor shortage', 'Tenochtitlan', 'Cuitláhuac'],
-      focus: ['Explain the concept of virgin soil epidemic and why indigenous Americans had no immunity.', 'Trace the causal chain: disease → collapse → labor shortage → slave trade.', 'Explain how American silver disrupted global trade and what regions it connected.']
+      terms: ['smallpox', 'measles', 'malaria', 'mosquitoes', 'rats', 'demographic collapse', 'horses', 'cattle', 'sugar', 'rice', 'okra', 'maize', 'potato', 'cassava', 'nutrition'],
+      focus: ['Explain disease vulnerability and include a disease vector or specific pathogen.', 'Explain one Old World-to-Americas transfer and its consequence.', 'Explain one American crop moving east and its nutritional or demographic consequence.']
     }
   ];
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: Unequal Exchanges and Unequal Consequences',
-    task: 'Choose TWO cards that represent different dimensions of the Columbian Exchange: biological movement, epidemic disease, extractive labor, or colonial social change. First establish what each source directly shows. Then build a causal or consequence claim without treating one image as proof of an entire Atlantic system.',
+    task: 'Choose TWO cards that represent different dimensions of the Columbian Exchange: crop/animal movement, epidemic disease, or environmental and demographic change. First establish what each source directly shows, then build a causal or consequence claim about biological exchange.',
     prompt: 'Using two evidence cards of different types, make one claim about how the Columbian Exchange transformed populations, environments, labor systems, or colonial society. Cite one concrete detail from each source and explain why the two pieces of evidence together support a stronger claim than either source alone.'
   };
 

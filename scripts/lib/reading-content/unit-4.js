@@ -227,13 +227,16 @@ module.exports = {
     ],
     "supportCards": {
       "beforeYouRead": "As you read, track the THREE types of motivation behind European exploration, religious, economic, and political. For each voyage mentioned, ask yourself: who paid for it, what did they expect to gain, and what did they actually find? The motive and the outcome are often different things.",
-      "readingTarget": "By the end, you should be able to explain at least TWO causes of European maritime exploration with specific evidence, describe the Portuguese model of systematic exploration versus the Spanish model, and explain what Columbus's 1492 voyage meant from multiple perspectives."
+      "readingTarget": "By the end, you should be able to explain why states sponsored maritime exploration, trace major Portuguese and Spanish voyages, and explain how English, French, and Dutch sponsorship extended northern Atlantic exploration in search of routes and commercial opportunities."
     },
     "vocabulary": [
       "Prince Henry the Navigator",
       "Vasco da Gama",
       "Christopher Columbus",
       "Ferdinand Magellan",
+      "John Cabot",
+      "Jacques Cartier",
+      "Dutch Northern Voyages",
       "Reconquista",
       "Treaty of Tordesillas",
       "Cape of Good Hope",
@@ -351,9 +354,32 @@ module.exports = {
           "label": "AP Thinking, Continuity &amp; Change",
           "raw": "<p>Before 1492, no regular contact existed between the Eastern and Western Hemispheres. After Magellan's circumnavigation, the globe had been connected for the first time in human history. <strong>This was one of the most significant changes in world history, it created the preconditions for the Columbian Exchange, the Atlantic slave trade, and global capitalism.</strong> Identifying the scale and permanence of this change, and connecting it to subsequent developments, is the core CCOT skill for this period.</p>"
         }
+      },
+      {
+        "number": "5",
+        "label": "Key Concept",
+        "heading": "The Latecomers Go North: England, France, and the Dutch",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Portugal and Spain were not the only states willing to finance risky oceanic exploration. <span class=\"kt\">England</span> backed John Cabot's 1497 crossing to the North Atlantic, where fishing grounds and claims in the Newfoundland region became economically important. <span class=\"kt\">France</span> sponsored Verrazzano and <span class=\"kt\">Jacques Cartier</span>, whose voyages along the North American coast and St. Lawrence connected exploration to fisheries, fur trading, and later colonial claims."
+          },
+          {
+            "type": "p",
+            "html": "English and <span class=\"kt\">Dutch</span> expeditions also searched for Northwest and Northeast Passages to Asia. These routes did not become dependable early modern commercial highways because Arctic conditions made them impractical for wooden sailing fleets, but the voyages expanded geographic knowledge and helped states identify other Atlantic commercial opportunities."
+          },
+          {
+            "type": "p",
+            "html": "The economic logic links the whole topic: states spent money on exploration because direct routes, fisheries, fur markets, and access to Asian trade promised revenue and strategic advantage. Voyages that failed at their original goal could still produce maps, claims, and commercial knowledge that made later trade and colonization possible."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p>For every voyage, connect <strong>state sponsorship -> economic or political motive -> route -> commercial or geographic effect</strong>. That causal chain is more useful than memorizing explorer names by themselves.</p>"
+        }
       }
     ],
-    "takeaway": "European exploration after c. 1450 was driven by THREE sets of motives, God (converting souls, crusading), Glory (national prestige, competition with rivals), and Gold (profit from trade, especially spices), and made possible by THREE enabling factors: maritime technology (caravel, compass, astrolabe), state sponsorship (royal patronage), and existing geographic knowledge (portolan charts, Arab navigational traditions). The Portuguese went east around Africa; the Spanish went west and found continents no European knew existed.",
+    "takeaway": "European maritime exploration was state-supported and driven by overlapping economic, religious, and political motives. Portugal developed the Cape route to Africa and Asia; Spain sponsored Columbus and the Magellan expedition across the Atlantic and Pacific; England, France, and the Dutch sponsored northern Atlantic voyages such as those of John Cabot, Jacques Cartier, and Dutch Arctic navigators. The economic pattern matters: rulers invested in voyages to gain more direct access to commodities and trade, and the resulting routes, maps, fisheries, fur markets, and claims expanded later commercial opportunities.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -366,14 +392,14 @@ module.exports = {
       {
         "num": "02",
         "skill": "Continuity & Change",
-        "text": "How did the Treaty of Tordesillas (1494) reflect European assumptions about power and the non-European world? What did those assumptions reveal about continuity with earlier European attitudes?",
-        "placeholder": "The Treaty of Tordesillas assumed... This reflected continuity with earlier attitudes because..."
+        "text": "Choose ONE English, French, or Dutch-sponsored northern Atlantic voyage. Explain the route, the economic or commercial goal, and one effect even if the voyage did not find a usable passage to Asia.",
+        "placeholder": "The state sponsored... The voyage followed... Its economic goal was... One effect was..."
       },
       {
         "num": "03",
         "skill": "Argumentation",
-        "text": "Was Columbus's 1492 voyage a \"discovery\"? Write a one-sentence claim that takes a position, then provide one piece of evidence to support it.",
-        "placeholder": "Columbus's 1492 voyage was / was not a 'discovery' because... Evidence: ..."
+        "text": "Compare ONE Iberian voyage with ONE English, French, or Dutch-sponsored voyage. What economic motive did they share, and what difference in route or outcome mattered?",
+        "placeholder": "Both voyages were motivated by... They differed because... That difference mattered because..."
       }
     ],
     "builderBody": "After answering the three questions, build a prompt for your AI Coach. The prompt will include your responses and ask the coach to give feedback on your historical thinking, pointing out gaps, suggesting stronger evidence, and asking a follow-up question.",
@@ -415,7 +441,7 @@ module.exports = {
     ],
     "supportCards": {
       "beforeYouRead": "As you read, track the exchange in BOTH directions, from the New World to the Old and from the Old World to the New. The consequences were radically different depending on direction. Disease went one way with catastrophic results; crops went both ways with transformative effects. Keep a mental ledger of what went where and what changed as a result.",
-      "readingTarget": "By the end, you should be able to explain why indigenous Americans were so vulnerable to Old World diseases, name at least TWO crops transferred in each direction and their long-term effects, and explain the connection between demographic collapse and the Atlantic slave trade."
+      "readingTarget": "By the end, you should be able to explain why Indigenous American populations were vulnerable to Eastern Hemisphere diseases, trace biological transfers in both directions, and explain demographic, nutritional, and environmental consequences including foods carried by enslaved Africans."
     },
     "vocabulary": [
       "Columbian Exchange",
@@ -426,8 +452,10 @@ module.exports = {
       "Potatoes",
       "Maize",
       "Cassava",
-      "Atlantic Slave Trade",
-      "Silver",
+      "Disease Vectors",
+      "Okra",
+      "Rice",
+      "Nutrition",
       "Ecological Imperialism",
       "Tenochtitlan",
       "Conquistador"
@@ -475,7 +503,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Moving from the <span class=\"kt\">Old World to the New</span>: the effects were equally profound but took different forms. <span class=\"kt\">Horses</span>, introduced to North America by the Spanish in the 16th century, transformed the cultures of the Plains Indians within a century or two. Peoples like the <span class=\"kt\">Comanche</span>, the Sioux, and the Cheyenne built entire civilizations around equestrian buffalo hunting, cultures that did not exist before the horse arrived. Cattle, pigs, and sheep provided new protein sources for indigenous and colonial populations but also consumed native vegetation and competed with indigenous grazing animals. <span class=\"kt\">Sugarcane</span>, transplanted to the Caribbean and Brazil, became the economic engine of the Atlantic plantation economy, a crop that required intensive labor under brutal tropical conditions and drove the demand for enslaved African workers."
+            "html": "Moving from the <span class=\"kt\">Old World to the New</span>: the effects were equally profound but took different forms. <span class=\"kt\">Horses</span>, cattle, pigs, wheat, sugar, and fruit trees transformed transportation, land use, diets, and colonial production. Enslaved Africans also carried foodways and crops across the Atlantic, including <span class=\"kt\">okra</span> and <span class=\"kt\">rice</span>, which became important parts of agricultural and culinary life in parts of the Americas. These transfers show that the Columbian Exchange was not only a European movement of species; forced African migration also moved ecological knowledge and food traditions."
           },
           {
             "type": "p",
@@ -542,7 +570,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "The Columbian Exchange was the transfer of plants, animals, diseases, and people between the Eastern and Western Hemispheres after 1492. Its most catastrophic consequence was disease: Old World pathogens (especially smallpox) killed an estimated 50–90% of the indigenous American population because they had no prior immunity. Its long-term economic consequence was silver, enormous American silver deposits funded global trade and created the conditions for early modern capitalism. Its social consequence was the Atlantic slave trade, labor shortages created by demographic collapse drove demand for enslaved African workers.",
+    "takeaway": "The Columbian Exchange was a two-way biological exchange of plants, animals, disease vectors, diseases, and people after 1492. Eastern Hemisphere diseases such as smallpox devastated many Indigenous American populations, while animals and crops such as horses, cattle, wheat, sugar, rice, and okra reshaped American environments and diets. American staple crops such as potatoes, maize, and cassava increased dietary diversity and calorie supplies in parts of Europe, Africa, and Asia, contributing to population growth. The strongest Topic 4.3 explanation follows transfer -> vulnerability or adaptation -> demographic, nutritional, economic, or environmental consequence.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -555,14 +583,14 @@ module.exports = {
       {
         "num": "02",
         "skill": "Continuity & Change",
-        "text": "Identify ONE crop transferred from the New World to the Old and ONE crop transferred from the Old World to the New. For each, explain the long-term consequence of that transfer.",
+        "text": "Identify ONE American crop transferred to Afro-Eurasia and ONE crop, animal, or foodway transferred to the Americas, including an example such as rice or okra carried by enslaved Africans. Explain one long-term consequence of each transfer.",
         "placeholder": "New World to Old World: [crop]. Long-term consequence: ... Old World to New World: [crop]. Long-term consequence: ..."
       },
       {
         "num": "03",
         "skill": "Argumentation",
-        "text": "A historian argues: \"The Columbian Exchange was the most significant event in world history since the agricultural revolution.\" Write a one-sentence claim responding to this argument, then support it with one specific piece of evidence.",
-        "placeholder": "The Columbian Exchange was / was not the most significant event since the agricultural revolution because... Evidence: ..."
+        "text": "Explain how the Columbian Exchange produced unequal demographic effects in the two hemispheres. Use disease evidence from the Americas and nutritional or population evidence from an American crop introduced to Afro-Eurasia.",
+        "placeholder": "The effects were unequal because... In the Americas... In Afro-Eurasia..."
       }
     ],
     "builderBody": "After answering the three questions, build a prompt for your AI Coach. The prompt will include your responses and ask the coach to give feedback on your historical thinking, pointing out gaps, suggesting stronger evidence, and asking a follow-up question.",
@@ -596,15 +624,15 @@ module.exports = {
     "showFooterNote": true,
     "headerSubtitle": "Topic 4.4, Maritime Empires Established &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "Building Empires at <em>Sea</em>",
-    "deck": "After 1500, European states began building empires across the globe, but \"empire\" meant different things to different powers. The Portuguese wanted to control trade routes; the Spanish wanted to conquer territory and extract resources; the Dutch and British wanted to make money through private commercial companies. These three models competed, overlapped, and transformed the world in different ways.",
+    "deck": "After 1500, expanding maritime trade changed state power and labor systems without erasing the older world it entered. European empires seized ports and territories, African states such as Kongo and Asante gained influence through new trading connections, Asian merchants kept Indian Ocean commerce moving, and colonial economies adapted old labor obligations while expanding new forms of coerced labor and slavery.",
     "skillTags": [
       "Causation",
       "Comparison",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track the differences between the three models of European maritime empire. The AP will ask you to compare, so you need to be able to articulate not just what each empire did, but what the specific logic was behind each model, what problem it was solving, and what made it different from the others.",
-      "readingTarget": "By the end, you should be able to explain the Estado da India (Portuguese trading post model), describe Spanish conquest and colonial administration (encomienda, viceroyalties), and explain the joint-stock company model (VOC, British EIC), and identify one meaningful similarity and one meaningful difference between any two of these."
+      "beforeYouRead": "Track continuity and change in four places: state power, Indian Ocean trade, labor systems, and slavery. The key question is not simply which European empire used which model; it is what changed when maritime empires expanded and what older systems continued.",
+      "readingTarget": "By the end, you should be able to explain how maritime trade increased the influence of European and African states, identify continuity in Indian Ocean trade, compare older and newer colonial labor systems, and explain how older forms of enslavement continued while plantation demand expanded Atlantic chattel slavery."
     },
     "vocabulary": [
       "Estado da India",
@@ -618,124 +646,66 @@ module.exports = {
       "Joint-Stock Company",
       "Batavia",
       "British EIC",
-      "Spice Islands"
+      "Spice Islands",
+      "Kingdom of Kongo",
+      "Asante",
+      "Intra-Asian Trade",
+      "Mit’a / Mita",
+      "Hacienda",
+      "Indentured Servitude",
+      "Plantation Economy",
+      "Chattel Slavery"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "A World of Existing Trade: What Europeans Entered",
+        "label": "State Building",
+        "heading": "Maritime Trade Creates New Opportunities for State Power",
         "blocks": [
-          {
-            "type": "p",
-            "html": "Before any European ship arrived in the Indian Ocean, one of the world's most sophisticated trade systems was already operating across it. <span class=\"kt\">Arab</span>, <span class=\"kt\">Indian</span>, <span class=\"kt\">Chinese</span>, <span class=\"kt\">Malay</span>, and <span class=\"kt\">Swahili</span> merchants had been trading spices, silk, cotton textiles, gold, and porcelain across the Indian Ocean for centuries. The seasonal <span class=\"kt\">monsoon winds</span>, blowing northeast in winter, southwest in summer, gave these sailors a reliable, predictable system for sailing across vast stretches of open water. The Swahili city-states of East Africa, the Sultanate of Malacca, the Calicut trade, and the spice-producing islands of the <span class=\"kt\">Maluku archipelago</span> were all nodes in a dense, profitable commercial network that functioned without European involvement."
-          },
-          {
-            "type": "p",
-            "html": "When the Portuguese arrived in the Indian Ocean after 1498, they did not \"discover\" this trade, they arrived as armed outsiders and forced their way into an existing system. The Portuguese had one advantage that mattered enormously: their <span class=\"kt\">heavily armed carracks</span> were the most powerful warships that had ever appeared in the Indian Ocean. Arab dhows, Chinese junks, and Indian trading vessels were built for cargo, not warfare. Portuguese carracks were built for both, and when they arrived at the ports of Calicut, Hormuz, and Malacca, they had the firepower to demand what they wanted."
-          },
-          {
-            "type": "p",
-            "html": "This context matters for understanding why the Portuguese model of empire looked the way it did, and why the Spanish, Dutch, and British models looked different. Each empire entered a different geographic and commercial context, with different tools and different goals. European maritime empires were not a single phenomenon but a range of strategies shaped by those specific contexts."
-          }
+          {"type":"p","html":"Portugal built the <span class=\"kt\">Estado da India</span> around fortified ports and sea lanes, while Spain conquered and governed large American territories. Dutch, French, and British maritime power also expanded. But expanding trade did not strengthen only European states."},
+          {"type":"p","html":"In Africa, participation in Atlantic commerce helped states such as the <span class=\"kt\">Kingdom of Kongo</span> and <span class=\"kt\">Asante</span> gain access to revenue, weapons, and new diplomatic relationships. The effects were uneven and could become destabilizing, but the important AP point is that maritime networks redistributed political opportunity."}
         ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Maritime empires did not emerge in empty space, they inserted themselves into existing trade networks, political systems, and societies. <strong>The Portuguese Estado da India was not a new trade system but an armed overlay on an existing one. The Spanish colonial empire conquered civilizations that had already organized millions of people. The Dutch VOC competed in markets that Arab and Chinese merchants had dominated for centuries.</strong> Contextualization requires understanding what already existed before European empires arrived.</p>"
-        }
+        "callout":{"label":"AP Thinking, Causation","raw":"<p>State growth followed a mechanism: <strong>access to trade -> access to revenue or strategic goods -> greater political influence</strong>. Apply that mechanism to both European and African cases.</p>"}
       },
       {
         "number": "2",
-        "label": "Key Concept",
-        "heading": "The Portuguese Trading Post Empire: Estado da India",
+        "label": "Continuity",
+        "heading": "Indian Ocean Trade Changes Without Being Replaced",
         "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">Estado da India</span>, \"State of India\", was Portugal's maritime empire in Asia and Africa. It was not a territorial empire in the way the Spanish or later British empires would be. Portugal was a small country with a population of roughly one million. It could not govern tens of millions of Asian subjects. What it could do was seize and fortify the strategic chokepoints through which the Indian Ocean's trade flowed, and extract profit from anyone who wanted to pass through them."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Afonso de Albuquerque</span>, the military architect of the Estado da India, identified three geographic chokepoints as the keys to Indian Ocean trade: <span class=\"kt\">Goa</span> on India's western coast (seized 1510), <span class=\"kt\">Malacca</span> at the strait between the Indian Ocean and the South China Sea (seized 1511), and <span class=\"kt\">Hormuz</span> at the entrance to the Persian Gulf (seized 1515). Whoever controlled these three points, with naval guns pointed at everything that passed, could extract tolls from the entire Indian Ocean system. Every ship that wanted to trade legally had to obtain a Portuguese <span class=\"kt\">cartaz</span> (trading license) and submit to inspection. Ships without a cartaz could be seized."
-          },
-          {
-            "type": "p",
-            "html": "The Estado da India worked, but it had structural weaknesses. It depended on maintaining naval superiority in waters thousands of miles from Portugal, with garrisons that were chronically understaffed and underfunded. It never achieved genuine control of Asian trade, Chinese and Arab merchants continued to operate throughout the Indian Ocean, often successfully evading Portuguese tolls. And when the <span class=\"kt\">Dutch VOC</span> arrived in the early 1600s with far greater financial resources and organizational capacity, the Portuguese could not match the competition. Within a generation, the Dutch had displaced the Portuguese across much of the Indian Ocean."
-          }
+          {"type":"p","html":"Portuguese and Dutch merchants disrupted parts of the Indian Ocean system by seizing ports, demanding passes, and attempting monopolies. Yet <span class=\"kt\">intra-Asian trade</span> continued to flourish."},
+          {"type":"p","html":"Gujarati, Omani, Swahili Arab, Javanese, Indian, Chinese, and other merchants kept moving goods through commercial networks that long predated European arrival. European armed commerce became an important new layer, but it did not erase the local knowledge, credit relationships, or regional demand that sustained Asian trade."}
         ],
-        "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>The Portuguese chose the trading post model for specific causal reasons: <strong>Portugal's small population made territorial governance of Asia impossible; the Indian Ocean's geographic structure (with key straits) made chokepoint control viable; and Portuguese naval technology (heavily armed carracks) gave them the firepower to coerce existing traders without needing to replace them.</strong> Causation requires explaining why a specific model was chosen, not just describing what it was.</p>"
-        }
+        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Change:</strong> Europeans inserted armed trading-post empires and monopoly pressure. <strong>Continuity:</strong> Asian, African, and Middle Eastern merchants continued to dominate much regional exchange.</p>"}
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "The Spanish Colonial Empire: Conquest and Administration",
+        "label": "Labor",
+        "heading": "Colonial Economies Adapt Old Labor and Expand New Systems",
         "blocks": [
-          {
-            "type": "p",
-            "html": "The Spanish model was fundamentally different: conquest and territorial governance of large populations. The <span class=\"kt\">Aztec Empire</span> (conquered 1521 by <span class=\"kt\">Hernán Cortés</span>) and the <span class=\"kt\">Inca Empire</span> (conquered 1532 by <span class=\"kt\">Francisco Pizarro</span>) were the two wealthiest and most populous states in the Western Hemisphere. Their conquest gave Spain control over millions of people and enormous mineral resources, but it also required governing those people, which the Portuguese in Asia had carefully avoided."
-          },
-          {
-            "type": "p",
-            "html": "Conquest was made possible by a combination of factors. Spanish military technology, steel weapons, horses, firearms, provided advantages. Indigenous alliances mattered enormously: the Tlaxcalans, enemies of the Aztec, fought alongside Cortés; the Inca were in the middle of a devastating civil war when Pizarro arrived. But the decisive factor was <span class=\"kt\">disease</span>. Smallpox and other epidemics preceded and accompanied conquest, killing an estimated 50–90% of the indigenous population. Military superiority alone could not have overthrown empires of tens of millions; disease did the decisive work."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">encomienda system</span> organized colonial labor: Spanish colonists were granted the right to the labor and tribute of a designated indigenous population. In practice, this was forced labor under conditions that caused mass death. The Dominican friar <span class=\"kt\">Bartolomé de las Casas</span> documented its abuses in his <em>Short Account of the Destruction of the Indies</em> (1542), demanding reform, and sparking the first significant European debate about the ethics of colonialism. The <span class=\"kt\">viceroyalties of New Spain</span> (established 1535) and <span class=\"kt\">Peru</span> (1542) provided a formal administrative structure, with royal appointees governing in the name of the Spanish crown. The <span class=\"kt\">Catholic Church</span>, through missionaries, convents, hospitals, and schools, served as the ideological institution of empire, converting souls and justifying colonial rule."
-          }
+          {"type":"p","html":"Colonial economies depended on agriculture and extraction, and rulers often adapted institutions that already existed. The Spanish colonial <span class=\"kt\">mita</span>, for example, drew on the Incan <span class=\"kt\">mit’a</span> labor obligation but redirected it toward colonial mining and imperial revenue."},
+          {"type":"p","html":"At the same time, colonial societies expanded or introduced systems such as <span class=\"kt\">encomienda</span>, hacienda labor, <span class=\"kt\">indentured servitude</span>, and chattel slavery. These systems differed legally, but all organized workers for agricultural or extractive production."}
         ],
-        "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>The Spanish and Portuguese models differed in almost every dimension: goal (territorial extraction vs. commercial chokepoint control), method (conquest and governance vs. naval coercion), scale (millions of subjects vs. fortified ports), and institutional structure (viceroyalties, Church vs. feitorias and cartaz system). <strong>A strong comparison argument explains WHY the differences existed, Portugal's small population and Asia's geographic structure made the trading post model rational; Spain's crusading institutions and the Americas' wealth made territorial conquest rational.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Comparison","raw":"<p>Compare labor systems by the same variables: who owed labor, for how long, under what legal status, and who captured the output.</p>"}
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "The Northern Challenge: Joint-Stock Companies",
+        "label": "Slavery",
+        "heading": "Older Enslavement Continues as Atlantic Plantation Slavery Expands",
         "blocks": [
-          {
-            "type": "p",
-            "html": "By c. 1600, the Dutch, British, and French had entered the competition for global trade, and they introduced a new organizational model: the <span class=\"kt\">joint-stock company</span>. Instead of the royal treasury funding voyages directly, joint-stock companies sold shares to private investors who shared in both profits and losses. This allowed far more capital to be mobilized than any single state could provide, and it spread the financial risk of extremely expensive and dangerous long-distance trade among hundreds or thousands of investors."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">Dutch East India Company</span> (<span class=\"kt\">VOC</span>, founded 1602) was the most powerful expression of this model. Given a monopoly on Dutch trade east of the Cape of Good Hope, the VOC had its own army, navy, and the legal authority to sign treaties, wage war, and govern territories, powers normally reserved for sovereign states. Its headquarters at <span class=\"kt\">Batavia</span> (modern Jakarta, established 1619) controlled the <span class=\"kt\">Spice Islands</span> (Maluku archipelago), the source of cloves and nutmeg. The VOC displaced the Portuguese from much of the Indian Ocean within a generation, using superior capital and organizational efficiency rather than just military force."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">British East India Company</span> (EIC, founded 1600) established trading posts at <span class=\"kt\">Surat, Madras, Bombay</span>, and <span class=\"kt\">Calcutta</span>. Over the 17th and 18th centuries, what began as a commercial operation gradually acquired territorial and military power, eventually becoming the governing authority over much of the Indian subcontinent by the mid-18th century. The joint-stock model had produced an empire almost without planning for it: the commercial logic of the company continually pushed it to acquire more territory to protect its commercial interests."
-          }
+          {"type":"p","html":"Enslavement in Africa did not begin with the Atlantic system. Older forms continued, including incorporation of enslaved persons into households and export through Mediterranean and Indian Ocean routes."},
+          {"type":"p","html":"The major change was the scale and destination of forced migration. Expanding <span class=\"kt\">plantation economies</span> in the Americas created enormous demand for enslaved African labor and strengthened hereditary, racialized <span class=\"kt\">chattel slavery</span>."}
         ],
-        "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was the joint-stock company model fundamentally different from the Portuguese and Spanish models, or just a variation? A strong argument considers: <strong>All three models aimed to profit from global trade, but joint-stock companies used private capital rather than state funds, spread risk among shareholders rather than concentrating it in the crown, and were explicitly organized around commercial profit rather than religious mission or territorial sovereignty.</strong> These differences matter for how the empires behaved, a company optimizing shareholder returns will make different choices than a monarch pursuing religious conversion or territorial glory.</p>"
-        }
+        "callout":{"label":"Common Mistake to Avoid","raw":"<p>Do not write that slavery was invented after 1500. Explain both continuity in older forms of enslavement and change in the scale, destination, and racialization of Atlantic plantation slavery.</p>"}
       }
     ],
-    "takeaway": "European maritime empires after c. 1500 took three distinct forms. The <strong>Portuguese Estado da India</strong> controlled trade through fortified ports at key straits and chokepoints, commercial coercion without territorial conquest. The <strong>Spanish colonial empire</strong> conquered and governed large territories, using the encomienda system for forced labor and viceroyalties for administration, territorial extraction enabled by disease and indigenous alliances. The <strong>Dutch/British/French joint-stock companies</strong> mobilized private capital to fund commercial empire, spreading financial risk among shareholders and blurring the line between corporation and colonial state. All three competed for control of the same profitable Asian and Atlantic trade networks, and their competition shaped the global economy of c. 1450–c. 1750.",
+    "takeaway": "Topic 4.4 is a continuity-and-change story. Maritime expansion increased the influence of European empires and also created opportunities for African states such as Kongo and Asante. Portuguese and Dutch intrusion disrupted Indian Ocean commerce, but intra-Asian trade and merchants such as Gujaratis, Omanis, Swahili Arabs, and Javanese continued. Colonial economies adapted older labor systems such as the Incan mit’a while expanding encomienda, hacienda, indentured servitude, and chattel slavery. Older forms of enslavement continued in Africa and the Indian Ocean world, while plantation demand dramatically expanded Atlantic slavery.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Three AP Skills",
     "questions": [
-      {
-        "num": "1",
-        "skill": "Causation",
-        "text": "Explain why the Portuguese chose the trading post model (Estado da India) rather than territorial conquest in Asia. Identify at least two specific factors, geographic, demographic, or military, that made the trading post model more rational than territorial governance for Portugal.",
-        "placeholder": "Explain the causal logic behind the Estado da India model..."
-      },
-      {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare the Spanish and Portuguese models of empire. Identify one meaningful similarity and one meaningful difference. Then explain WHY the difference existed, what specific factors caused Portugal and Spain to build different kinds of empires?",
-        "placeholder": "Identify a similarity and a difference, then explain why the difference existed..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Was the joint-stock company model (Dutch VOC, British EIC) a fundamentally new approach to empire, or was it just a variation on existing European models? Write a one-sentence claim taking a position, then provide one specific piece of evidence that supports your argument.",
-        "placeholder": "State your claim, then provide specific evidence..."
-      }
+      {"num":"1","skill":"Causation","text":"Explain how expanding maritime trade increased the influence of ONE European empire and ONE African state such as Kongo or Asante.","placeholder":"The European state gained influence because... The African state gained influence because..."},
+      {"num":"2","skill":"Continuity & Change","text":"Explain one change and one continuity in Indian Ocean trade after European arrival. Use a specific merchant group or trade pattern as evidence for the continuity.","placeholder":"One change was... One continuity was... It persisted because..."},
+      {"num":"3","skill":"Continuity & Change","text":"Explain one continuity and one change in labor or slavery after 1500. Use at least two specific systems such as mit’a/mita, encomienda, hacienda, indentured servitude, older African enslavement, or plantation chattel slavery.","placeholder":"A continuity was... A change was... Evidence: ..."}
+
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
@@ -768,15 +738,15 @@ module.exports = {
     "showFooterNote": true,
     "headerSubtitle": "Topic 4.5, Maritime Empires Maintained &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "The <em>Labor</em> of Empire",
-    "deck": "After 1500, European maritime empires depended on one thing above all: workers. The Spanish colonial empire used the encomienda system, the mita, and chattel slavery to extract silver, sugar, and agricultural wealth from the Americas. The silver those workers produced at Potosí flowed across the Pacific and Atlantic to transform the global economy, connecting the Americas, Europe, and Asia into a single trade network for the first time.",
+    "deck": "Maintaining maritime empires required more than workers and silver. Rulers used mercantilism and chartered companies to compete for wealth; new transoceanic routes grew alongside older regional markets; expanding demand intensified peasant and artisan labor and altered families and communities; and global contact spread religions while producing conflict and syncretic practices.",
     "skillTags": [
       "Causation",
       "Continuity & Change",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track the connections between labor systems, colonial administration, and the silver economy. The AP will ask you to explain how labor systems sustained European maritime empires, so you need to connect specific labor practices (mita, encomienda, chattel slavery) to specific economic goals (silver extraction, sugar production, tribute collection).",
-      "readingTarget": "By the end, you should be able to describe the encomienda and mita systems, explain how the viceregal system and Church maintained colonial administration, and trace how silver from Potosí connected the Americas to Europe and Asia through the Manila Galleon trade and global price revolution."
+      "beforeYouRead": "Track four moves: economic strategy, exchange networks, social effects, and belief-system effects. Keep them distinct enough to explain each one, then connect them into a larger story about how maritime empires were maintained.",
+      "readingTarget": "By the end, you should be able to explain mercantilism and chartered companies, identify change and continuity in exchange networks, explain social effects including intensified peasant/artisan labor and African gender/family change, and compare religious expansion, conflict, and syncretism."
     },
     "vocabulary": [
       "Encomienda",
@@ -790,120 +760,61 @@ module.exports = {
       "Casa de Contratación",
       "Global Price Revolution",
       "Indentured Servitude",
-      "Las Casas"
+      "Las Casas",
+      "Mercantilism",
+      "VOC",
+      "Regional Markets",
+      "Peasant and Artisan Labor",
+      "Gender and Family Change",
+      "Cultural Synthesis",
+      "Vodun",
+      "Santería",
+      "Syncretism"
     ],
     "sections": [
       {
-        "number": "1",
-        "label": "Contextualization",
-        "heading": "Why Empires Need Workers",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "European maritime empires after c. 1500 were, at their core, extraction enterprises, built to move wealth from colonies to the mother country. But extraction required labor: someone had to mine the silver at <span class=\"kt\">Potosí</span>, harvest the sugar in Brazil, tend the cochineal dye plants in Oaxaca, and carry goods across the mountains and coasts of the colonial world."
-          },
-          {
-            "type": "p",
-            "html": "The Spanish empire inherited several different labor traditions when it conquered the Americas. The <span class=\"kt\">Aztec</span> and <span class=\"kt\">Inca</span> empires had both operated extensive labor tribute systems, requiring subject peoples to contribute periodic labor to state projects. The Spanish colonial system adapted and intensified these existing practices, combining them with new European commercial logic and religious justification. The result was a set of interlocking labor systems that drove the colonial economy and caused enormous human suffering."
-          }
+        "number":"1","label":"Economic Strategy","heading":"Mercantilism and Chartered Companies",
+        "blocks":[
+          {"type":"p","html":"European rulers used <span class=\"kt\">mercantilism</span> to treat overseas commerce as a source of state power. Tariffs, navigation laws, colonial monopolies, and exclusive trading rights were designed to keep valuable trade inside imperial systems and weaken rival states."},
+          {"type":"p","html":"Chartered companies such as the Dutch <span class=\"kt\">VOC</span> and British EIC pooled private investment while receiving state-backed monopolies and, in some cases, authority to negotiate, build forts, and wage war. Commercial organizations became tools of interstate competition."}
         ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>European maritime empires did not create forced labor from nothing, they inserted themselves into existing labor extraction systems. <strong>The Spanish mita was explicitly modeled on the Inca mit'a. The encomienda combined Spanish feudal traditions with indigenous tribute systems. Understanding what pre-existing structures the Spanish adapted, and how they transformed them, is essential for contextualization questions.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Causation","raw":"<p>Explain the mechanism: <strong>mercantilist rule or company charter -> concentrated capital and protected trade -> greater state or imperial power</strong>.</p>"}
       },
       {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "Encomienda and Mita: Coerced Indigenous Labor",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">encomienda system</span> organized the basic relationship between Spanish colonists and indigenous peoples: the crown granted a colonist (encomendero) the right to extract labor and tribute from a designated indigenous community, in exchange for providing Christian instruction and military service. In practice, the encomienda concentrated enormous power in the hands of individual colonists and created conditions of extreme exploitation."
-          },
-          {
-            "type": "p",
-            "html": "As the indigenous population collapsed, from roughly 50–90% mortality in the century after contact, driven primarily by disease, the encomienda system became increasingly inadequate. There simply were not enough surviving indigenous people to meet labor demands. The <span class=\"kt\">mita system</span> partially filled the gap: adapted from the Inca mit'a, the mita required indigenous communities to supply rotating labor drafts to Spanish mines and public works. At <span class=\"kt\">Potosí</span>, the world's largest silver mine, located in modern Bolivia's highlands, the mita conscripted indigenous workers from a vast radius, forcing them into the dangerous and often lethal conditions of underground silver extraction."
-          },
-          {
-            "type": "p",
-            "html": "The Dominican friar <span class=\"kt\">Bartolomé de las Casas</span> documented the abuses of both systems, arguing that Spanish colonial labor practices violated natural law. His writings, especially the <em>Short Account of the Destruction of the Indies</em> (1542), sparked the <span class=\"kt\">New Laws of 1542</span>, which attempted to reform the encomienda system. In practice, colonists resisted enforcement, and coercive labor continued."
-          }
+        "number":"2","label":"Exchange Networks","heading":"New Global Circuits Layered onto Older Regional Markets",
+        "blocks":[
+          {"type":"p","html":"American <span class=\"kt\">silver</span> moved across the Atlantic and through Manila into Asian markets, while the Atlantic trading system moved goods, wealth, and enslaved labor among Africa, Europe, and the Americas."},
+          {"type":"p","html":"Yet <span class=\"kt\">regional markets</span> in Afro-Eurasia continued to flourish. Indian Ocean, Asian, African, and Middle Eastern merchants retained local knowledge and commercial relationships that European companies entered rather than simply replacing."}
         ],
-        "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>The collapse of the encomienda system was itself caused by the demographic catastrophe of the Columbian Exchange. Disease killed the labor supply. <strong>This forced the Spanish colonial system to evolve: the mita replaced encomienda in mining regions, and the Atlantic slave trade brought enslaved Africans to replace indigenous labor in coastal plantation zones. Understanding causation here means tracing a chain: disease → demographic collapse → labor shortage → evolution of labor systems → Atlantic slave trade.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Change:</strong> new transoceanic routes linked hemispheres. <strong>Continuity:</strong> established regional markets and commercial practices remained essential.</p>"}
       },
       {
-        "number": "3",
-        "label": "Key Concept",
-        "heading": "Chattel Slavery and the Atlantic Trade",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "As the indigenous population collapsed, European colonizers, first the Portuguese in Brazil, then the Spanish, Dutch, and British across the Caribbean and Atlantic coast, turned to enslaved Africans as a labor source. <span class=\"kt\">Chattel slavery</span>, the legal ownership of human beings as property, inheritable and transferable, became the dominant labor system in plantation agriculture across the Atlantic world."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">Atlantic slave trade</span> transported an estimated 12 million enslaved Africans to the Americas between c. 1500 and c. 1800, with the largest numbers going to Brazil (Portuguese) and the Caribbean (Dutch, British, French). The plantation system, organized around sugar, tobacco, cotton, and indigo, demanded an enormous and constantly renewed labor force because the brutal conditions of plantation work caused extremely high mortality. This created a self-perpetuating demand: death required replacement, which drove continued enslavement."
-          },
-          {
-            "type": "p",
-            "html": "Chattel slavery was qualitatively different from the mita and encomienda: it was hereditary (children of enslaved people were born enslaved), racially defined (Africanness became equated with enslaved status in colonial law), and entirely outside any reciprocal obligation. The encomendero at least owed his indigenous laborers Christian instruction and military protection, legal fictions, but fictions that gave indigenous peoples a basis for appeal. The enslaved person in a chattel system had no such legal basis."
-          }
+        "number":"3","label":"Social Effects","heading":"More Demand Means More Work — and Social Change",
+        "blocks":[
+          {"type":"p","html":"Growing demand intensified existing <span class=\"kt\">peasant and artisan labor</span>. Wool and linen production expanded in western Europe, cotton textiles in India, and silk production in China. Globalization often increased older forms of work rather than replacing them."},
+          {"type":"p","html":"The Atlantic trade in enslaved people also reshaped demographics in parts of Africa. The removal of many young adults could alter sex ratios, household labor, marriage patterns, and <span class=\"kt\">gender and family</span> responsibilities."},
+          {"type":"p","html":"Forced migration and colonial contact also produced <span class=\"kt\">cultural synthesis</span> among African, American, and European peoples, showing that economic networks transformed social and cultural life as well as prices."}
         ],
-        "callout": {
-          "label": "AP Thinking, Continuity and Change",
-          "raw": "<p>The Atlantic slave trade represented a significant change in global labor systems, creating a new, racially defined form of chattel slavery that had not previously existed on this scale. <strong>But it also built on continuities: the Islamic world had operated large-scale slave trade networks across the Sahara and Indian Ocean for centuries before European expansion. European colonizers were not inventing slavery, they were scaling it, racializing it, and connecting it to Atlantic plantation agriculture in new ways.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Effects","raw":"<p>Do not stop at 'trade increased.' Ask who worked more, who moved, whose household changed, and which new cultural forms emerged because of those economic connections.</p>"}
       },
       {
-        "number": "4",
-        "label": "Key Concept",
-        "heading": "Silver and the Global Economy",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The most economically transformative product of the Spanish colonial empire was silver, and the most important source was <span class=\"kt\">Potosí</span>, in modern Bolivia, which produced roughly 60% of the world's silver during the 16th and 17th centuries. The silver extracted by mita workers at Potosí flowed through two major channels: the <span class=\"kt\">Manila Galleon trade</span> across the Pacific, and the Seville trading system across the Atlantic."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">Manila Galleon trade</span> (1565–1815) was the world's first regularly scheduled transoceanic trade route. Mexican silver traveled from Acapulco to Manila, where it was exchanged for Chinese silk, porcelain, and spices. This worked because China, the world's largest economy, demanded silver to pay taxes under the <span class=\"kt\">Single Whip Tax Reform</span> (1581), which required payment in silver. Chinese demand pulled silver across the Pacific and drove the entire global trade system."
-          },
-          {
-            "type": "p",
-            "html": "The Atlantic silver route channeled Peruvian and Mexican silver through the <span class=\"kt\">Casa de Contratación</span> in Seville, which held a monopoly on colonial trade. Silver flowed from Seville into European money markets, paying for Spanish military campaigns and triggering a <span class=\"kt\">global price revolution</span>: the massive increase in silver supply caused inflation across Europe and Asia, disrupting existing economic relationships and accelerating the transition to market economies."
-          }
+        "number":"4","label":"Belief Systems","heading":"Religion Spreads, Conflicts, and Blends",
+        "blocks":[
+          {"type":"p","html":"Expanded interaction carried existing religions into new regions through migration, conquest, and missionary activity. Catholic Christianity, for example, spread widely in the Americas and established missions in parts of Asia."},
+          {"type":"p","html":"Interaction could also intensify <span class=\"kt\">religious conflict</span> when imperial authorities suppressed local beliefs or when political rivalry became tied to confessional identity."},
+          {"type":"p","html":"Under colonial conditions, communities also developed <span class=\"kt\">syncretic</span> practices. <span class=\"kt\">Vodun</span> in Haiti and <span class=\"kt\">Santería</span> in Cuba combined West and Central African traditions with elements of Christianity. Global contact could spread, contest, and blend belief systems."}
         ],
-        "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was silver from the Americas the primary cause of global economic change in c. 1450–1750? <strong>A strong argument considers: silver connected previously isolated economies (Americas, Europe, Asia) for the first time; it caused the global price revolution; it drove Chinese fiscal reform and Pacific trade. But counter-argument: the Indian Ocean trade, Islamic commercial networks, and Chinese manufacturing had already created a sophisticated global economy before silver arrived. Silver accelerated and connected existing systems, it did not create them from nothing.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Comparison","raw":"<p>Compare religious effects by category: expansion of an existing religion, conflict over belief, or development of a syncretic practice.</p>"}
       }
     ],
-    "takeaway": "European maritime empires after c. 1500 depended on three interlocking labor systems: the <strong>encomienda</strong> (Spanish colonists extracting tribute from indigenous peoples), the <strong>mita</strong> (indigenous labor drafts for the silver mines at Potosí), and <strong>chattel slavery</strong> (enslaved Africans on Atlantic plantations). The silver extracted by mita workers at Potosí connected the Americas, Europe, and Asia through the Manila Galleon trade and Seville's Atlantic system, causing a global price revolution. Colonial administration, viceroyalties, audiencias, and the Catholic Church, maintained imperial order across enormous distances. These systems sustained European maritime empires for nearly three centuries and transformed the global economy.",
+    "takeaway": "Maritime empires were maintained through four connected processes. Mercantilism and chartered companies such as the VOC linked commerce to state competition. Silver and Atlantic exchange created new transoceanic circuits while regional Afro-Eurasian markets continued. Global demand intensified peasant and artisan labor and the Atlantic slave trade altered demographic, gender, family, and cultural patterns. Increased interaction also affected belief systems through missionary expansion, religious conflict, and syncretic practices such as Vodun and Santería.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Three AP Skills",
     "questions": [
-      {
-        "num": "1",
-        "skill": "Causation",
-        "text": "Explain why the mita system emerged at Potosí. What caused the Spanish to rely on conscripted indigenous labor rather than wage labor for silver extraction? Identify at least two specific factors in your explanation.",
-        "placeholder": "Explain the causal factors behind the mita system at Potosí..."
-      },
-      {
-        "num": "2",
-        "skill": "Continuity & Change",
-        "text": "Explain one way the Spanish colonial labor system represented CONTINUITY with pre-colonial indigenous practices, and one way it represented CHANGE. Be specific: name the pre-colonial practice and explain what the Spanish adapted versus what they transformed.",
-        "placeholder": "Identify one continuity and one change, with specific examples..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Was silver from Potosí the primary cause of the global price revolution, or were there other significant causes? Write a one-sentence claim taking a position, then provide one specific piece of evidence that supports your argument.",
-        "placeholder": "State your claim, then provide specific evidence..."
-      }
+      {"num":"1","skill":"Causation","text":"Explain how mercantilism or a chartered company such as the VOC helped a state compete for overseas wealth or territory. Explain the mechanism, not just the definition.","placeholder":"The strategy strengthened the state because..."},
+      {"num":"2","skill":"Continuity & Change","text":"Identify one change in global exchange networks and one continuity in regional Afro-Eurasian markets. Use specific evidence for each.","placeholder":"One change was... One continuity was..."},
+      {"num":"3","skill":"Comparison","text":"Explain one social effect of expanding exchange and one belief-system effect. Use specific evidence such as intensified artisan labor, African gender/family change, missionary expansion, Vodun, or Santería.","placeholder":"One social effect was... One belief-system effect was..."}
+
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
@@ -1104,15 +1015,15 @@ module.exports = {
     "showFooterNote": true,
     "headerSubtitle": "Topic 4.7, Changing Social Hierarchies &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "New <em>Hierarchies</em>",
-    "deck": "European colonialism did not just extract wealth, it reorganized the social order wherever it reached. In Spanish colonial America, a new racial classification system called the casta sorted people into dozens of legal categories based on ancestry, determining their legal rights, labor obligations, and social opportunities. Similar, but different, hierarchies emerged in Portuguese Brazil, Dutch colonies, and British America. Understanding these hierarchies, how they were built, and what persisted from earlier societies is essential for AP comparison and CCOT.",
+    "deck": "Early modern empires changed hierarchy in three ways at once. States sometimes accommodated diverse groups and sometimes restricted them; conquest and global commerce created new political and economic elites such as the casta hierarchy; and centralizing rulers forced older elites such as Ottoman timar holders, Russian boyars, and European nobles to defend, lose, or renegotiate their power.",
     "skillTags": [
       "Comparison",
       "Continuity & Change",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track both what is being compared (casta system vs. other colonial hierarchies vs. pre-colonial social orders) and what changed vs. what continued. The AP will ask you to compare, so you need specific evidence from at least two colonial contexts, not just a description of the casta system alone.",
-      "readingTarget": "By the end, you should be able to explain the casta system in Spanish America (categories, legal effects, how it worked), describe at least one other colonial social hierarchy for comparison, and identify one continuity from pre-colonial social structures."
+      "beforeYouRead": "Track three processes rather than one hierarchy: accommodation or suppression of diversity, formation of new elites, and changing power of existing elites under centralizing states. Ask what each policy or hierarchy did for the state.",
+      "readingTarget": "By the end, you should be able to explain one accommodation policy and one suppression policy, explain how conquest or commerce produced new elites such as the casta hierarchy, and explain how centralization changed the power of existing elites such as timar holders, boyars, or European nobility."
     },
     "vocabulary": [
       "Casta",
@@ -1126,120 +1037,49 @@ module.exports = {
       "Plantation Hierarchy",
       "Gender Norms",
       "Indigenous Nobility",
-      "Free Blacks"
+      "Free Blacks",
+      "Accommodation",
+      "Suppression",
+      "Millet",
+      "Timar",
+      "Boyars",
+      "Nobility",
+      "Centralization"
     ],
     "sections": [
       {
-        "number": "1",
-        "label": "Contextualization",
-        "heading": "Before the Casta: Pre-Colonial Social Orders",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "European colonialism did not arrive in a social vacuum. Both the Americas and Africa had complex social hierarchies of their own before European contact. The <span class=\"kt\">Aztec Empire</span> had a highly stratified society: nobles (<span class=\"kt\">pipiltin</span>) held legal privileges, owned land, and held political office; commoners (<span class=\"kt\">macehualtin</span>) paid tribute and provided labor; slaves existed at the bottom of the hierarchy. The <span class=\"kt\">Inca Empire</span> similarly distinguished between the Inca nobility, regional elites incorporated through conquest, and the mass of tribute-paying commoners. In West Africa, kingdoms like <span class=\"kt\">Songhai</span> and <span class=\"kt\">Benin</span> maintained hereditary aristocracies, occupational castes, and enslaved populations."
-          },
-          {
-            "type": "p",
-            "html": "What European colonialism did was not create hierarchy from nothing, it destroyed, reorganized, and partly preserved these existing hierarchies while adding entirely new dimensions based on race and colonial origin. Some indigenous nobility retained legal status under Spanish colonial law: the descendants of Aztec and Inca rulers were sometimes recognized as nobles, given land grants, and exempted from tribute. But the Aztec <span class=\"kt\">pipiltin</span> or Inca <span class=\"kt\">kuracas</span> who survived conquest found their authority drastically reduced and restructured through Spanish legal categories."
-          }
+        "number":"1","label":"Diversity Policy","heading":"Accommodation and Suppression Are Both Tools of Rule",
+        "blocks":[
+          {"type":"p","html":"Empires governed populations divided by religion, ethnicity, language, and legal status. States sometimes <span class=\"kt\">accommodated</span> groups when their taxes, military service, trade connections, or local authority helped the state govern."},
+          {"type":"p","html":"The Ottoman Empire accepted many Jews expelled from Spain and Portugal and governed recognized religious communities through differentiated institutions. Mughal rulers at times incorporated Hindu elites into imperial service. In other cases, states <span class=\"kt\">suppressed</span> or restricted groups, including Qing limits on some Han Chinese roles and Iberian pressure on Jewish and Muslim communities."}
         ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Effective contextualization for Topic 4.7 requires noting that social hierarchy pre-existed European colonialism in every region colonizers entered. <strong>The casta system was not simply imposed on a blank slate, it interacted with existing hierarchies, incorporating some (indigenous nobility), displacing others (Aztec priest class), and creating entirely new categories (mestizo, mulatto) that had no pre-colonial equivalent.</strong> Understanding what pre-existed colonialism is the foundation for explaining what changed.</p>"
-        }
+        "callout":{"label":"AP Thinking, Causation","raw":"<p>Ask the functional question: <strong>why did the state accommodate or restrict this group, and how did the policy affect access to power?</strong></p>"}
       },
       {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "The Casta System in Spanish America",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">casta system</span> was the elaborate racial classification system developed in Spanish colonial America to organize legal and social status based on ancestry. At its peak in the 17th and 18th centuries, it included dozens of named categories, though the primary divisions were: <span class=\"kt\">peninsulares</span> (Spanish-born in Spain), <span class=\"kt\">criollos</span> or creoles (Spanish descent, born in the Americas), <span class=\"kt\">mestizos</span> (Spanish and indigenous ancestry), <span class=\"kt\">mulattos</span> (Spanish and African ancestry), indigenous peoples, and enslaved Africans."
-          },
-          {
-            "type": "p",
-            "html": "These categories had real legal consequences. Peninsulares held the highest offices, only they could serve as viceroys, archbishops, or senior judges. Creoles were legally Spanish but resented being excluded from the highest offices; this resentment would later fuel independence movements. Mestizos occupied a middle position that varied enormously based on whether they had been raised in Spanish or indigenous culture, whether they were acknowledged by their Spanish father, and what economic resources they had access to. Indigenous peoples owed tribute and were exempt from Inquisition jurisdiction but also from many legal protections. Enslaved Africans had no legal personhood at all."
-          },
-          {
-            "type": "p",
-            "html": "The casta was also a visual system: <span class=\"kt\">casta paintings</span>, a genre of colonial art from the 18th century, depicted the offspring of different racial combinations, labeling each category. These paintings reflected colonial anxiety about racial mixture and the desire to classify and stabilize a society that was rapidly becoming too mixed to control. In reality, racial categories were more fluid than the paintings suggested: people of mixed ancestry could sometimes \"pass\" as members of higher-status categories, especially if they had money, education, or church support."
-          }
+        "number":"2","label":"New Elites","heading":"Conquest and Commerce Create New Routes to Status",
+        "blocks":[
+          {"type":"p","html":"Imperial conquest and widening economic opportunity created <span class=\"kt\">new elites</span>. In Spanish America, the <span class=\"kt\">casta</span> hierarchy classified ancestry and helped organize access to office, tribute obligations, labor status, and social prestige."},
+          {"type":"p","html":"Commercial expansion also created wealthy merchant and company elites whose influence came from long-distance trade and state charters rather than only hereditary landholding. New systems of power could therefore sit alongside older aristocracies."}
         ],
-        "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>The casta system was more elaborate than social hierarchies in other European colonial contexts. In the British Caribbean, the primary social division was binary: enslaved (legally property) or free (with varying degrees of rights). Freed people of color occupied an uncertain middle position without the named categories of the casta. In Portuguese Brazil, a more fluid gradation existed, with a larger free Black and mixed-race population than in British colonies, but still organized around racial ancestry and slave status. <strong>The difference reveals different colonial logics: Spanish colonial law was obsessively categorical; British colonial law was more binary; Portuguese practice was more flexible in practice if not in theory.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Social Structure","raw":"<p>New elites are evidence of change only when you explain the new source of status: conquest, ancestry classification, commerce, or service to an expanding state.</p>"}
       },
       {
-        "number": "3",
-        "label": "Key Concept",
-        "heading": "Social Hierarchy in Other Colonial Contexts",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The casta system was specific to Spanish colonial America, but similar hierarchies emerged wherever European colonialism took root. In <span class=\"kt\">Portuguese Brazil</span>, the plantation economy created a social order organized around: Portuguese-born planters and officials at the top; Brazilian-born whites (analogous to creoles) below them; a large population of freed Africans and mixed-race people in the middle; and enslaved Africans, the majority of the population in sugar-producing regions, at the bottom. Brazil was distinctive in having a higher rate of <span class=\"kt\">manumission</span> (freeing of enslaved people) than British or French colonies, creating a larger free Black population but not dismantling the fundamental hierarchy."
-          },
-          {
-            "type": "p",
-            "html": "In the <span class=\"kt\">Dutch VOC</span> territories in Asia, especially Java and the Spice Islands, a different kind of hierarchy emerged: Dutch merchants and colonial officials at the top; Chinese merchants (who served as tax farmers and commercial intermediaries) below them; indigenous Javanese elites who cooperated with the VOC; and Javanese commoners who owed labor obligations. The VOC's commercial logic produced a hierarchy organized around commercial function and ethnic origin rather than Spanish-style racial classification."
-          },
-          {
-            "type": "p",
-            "html": "In <span class=\"kt\">British North America</span> and the Caribbean, racial categories hardened through the 17th century as planters sought to create a legally permanent enslaved class. The transformation of African labor from indenture to <span class=\"kt\">chattel slavery</span> was accompanied by laws that defined \"Black\" as a slave status, a process that was explicitly racial in ways that earlier English colonial hierarchies had not been."
-          }
+        "number":"3","label":"Existing Elites","heading":"Centralizing States Reshape Older Elite Power",
+        "blocks":[
+          {"type":"p","html":"Older elites did not simply disappear. Their power <span class=\"kt\">fluctuated</span> as rulers centralized. Changes to Ottoman <span class=\"kt\">timar</span> arrangements altered the role of provincial military elites, while Russian rulers pushed <span class=\"kt\">boyars</span> toward state service and imperial rank."},
+          {"type":"p","html":"European <span class=\"kt\">nobility</span> also faced stronger monarchies. Aristocrats could lose independent military or provincial authority while gaining status through court access, offices, and state service. Centralization often changed the route to elite power rather than eliminating elites altogether."}
         ],
-        "callout": {
-          "label": "AP Thinking, Continuity and Change",
-          "raw": "<p>A significant continuity across all colonial social hierarchies: European colonialism everywhere preserved or created a distinction between those who could own property and those who could be property. Pre-colonial societies had enslaved people; colonial societies had enslaved people. <strong>The change was the racialization of that status, making Blackness the legal basis for slavery in ways that had not existed before. The casta system also introduced an entirely new category (mestizo, mulatto) that pre-colonial societies had no need for, because racial mixture across previously separated populations was itself a product of colonialism.</strong></p>"
-        }
-      },
-      {
-        "number": "4",
-        "label": "Key Concept",
-        "heading": "Gender and Family in Colonial Societies",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "Colonial social hierarchies also organized gender in new ways. In Spanish colonial America, Spanish women who emigrated to the colonies found their legal status defined by their casta and marital position. Elite creole women were expected to maintain household honor and manage large domestic establishments; they could own property in their own name and participate in colonial commerce as widows. But they were excluded from public office, the Church hierarchy above lay positions, and most formal education."
-          },
-          {
-            "type": "p",
-            "html": "The casta system intersected with gender in complex ways. Indigenous women in frontier regions became the mothers of the <span class=\"kt\">mestizo</span> population, often through coercive relationships with Spanish soldiers and colonists. The category of \"mestizo\" was gendered from its origin: the mestizo was typically the child of a Spanish father and indigenous mother, not the reverse. Indigenous women in settled colonial regions managed their households according to a combination of Spanish and indigenous law, sometimes successfully petitioning colonial courts for land rights or protection from abusive husbands or encomenderos."
-          },
-          {
-            "type": "p",
-            "html": "Enslaved African women experienced the intersection of racial and gender exploitation most acutely: they were subject to the same labor demands as enslaved men, plus sexual exploitation by enslavers and the particular grief of bearing children who were legally enslaved from birth. <span class=\"kt\">Free Black</span> and mixed-race women in Brazil and the Caribbean occupied a distinctive social position, often working as market vendors, healers, or domestic servants, that gave them economic agency that enslaved women did not have."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was the colonial casta system primarily a product of racial ideology, or primarily a tool for labor extraction and social control? A strong argument considers: the casta organized who owed tribute, who could be enslaved, who could hold office, all questions of labor and power, not just ideology. But the obsessive racial categories of casta paintings suggest that colonizers were also trying to manage the social anxiety produced by a society that was racially mixing faster than the law could classify. <strong>The strongest arguments show how racial ideology and economic function reinforced each other.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Continuity:</strong> elites remained powerful. <strong>Change:</strong> rulers increasingly made elite status depend on court access or state service rather than independent local power.</p>"}
       }
     ],
-    "takeaway": "European colonialism created new social hierarchies wherever it reached. In Spanish colonial America, the <strong>casta system</strong> organized legal and social status into dozens of categories based on ancestry, from peninsulares at the top to enslaved Africans at the bottom. The casta had legal consequences: it determined who could hold office, who owed tribute, and who could be enslaved. Similar but different hierarchies emerged in Portuguese Brazil (more fluid manumission), Dutch colonial Asia (organized around commercial function), and British colonies (increasingly binary free/enslaved). These hierarchies also organized gender: indigenous and African women experienced the intersection of racial and gender exploitation most directly. The key for AP: these were new hierarchies built partly on pre-colonial structures, partly on the specific logics of colonial extraction.",
+    "takeaway": "Topic 4.7 has three jobs. States accommodated or suppressed diverse groups depending on what best served rule. Imperial conquest and global commerce created new elites and hierarchies, including the casta system in Spanish America. At the same time, the power of existing elites changed as centralizing rulers challenged or redirected older sources of authority: Ottoman timar holders, Russian boyars, and European nobility often retained status by adapting to state service and court politics.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Three AP Skills",
     "questions": [
-      {
-        "num": "1",
-        "skill": "Comparison",
-        "text": "Compare the casta system in Spanish colonial America to the social hierarchy in ONE other colonial context (Portuguese Brazil, Dutch colonial Asia, or British Caribbean). Identify one meaningful similarity and one meaningful difference. Explain WHY the difference existed.",
-        "placeholder": "Identify a similarity and a difference, then explain why the difference existed..."
-      },
-      {
-        "num": "2",
-        "skill": "Continuity & Change",
-        "text": "Identify one way colonial social hierarchies CONTINUED pre-colonial social structures in the Americas, and one way they represented genuine CHANGE. Be specific: name the pre-colonial practice and explain what the Spanish adapted versus what they introduced that was new.",
-        "placeholder": "Name the pre-colonial practice, then explain what continued and what changed..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Was the casta system primarily a tool of economic control, or primarily an expression of racial ideology? Then provide one specific piece of evidence that supports your argument.",
-        "placeholder": "State your one-sentence claim, then provide specific evidence..."
-      }
+      {"num":"1","skill":"Causation","text":"Give one example of a state accommodating a diverse group and one example of suppression or restriction. Explain why each policy served the state.","placeholder":"The state accommodated... because... It restricted... because..."},
+      {"num":"2","skill":"Continuity & Change","text":"Explain how conquest or global economic opportunity created a new elite or hierarchy. Use the casta system or another specific example.","placeholder":"A new elite formed because..."},
+      {"num":"3","skill":"Comparison","text":"Compare how centralization changed the power of TWO existing elite groups such as Ottoman timar holders, Russian boyars, or European nobility.","placeholder":"Both groups faced... They differed because..."}
+
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
@@ -1271,16 +1111,16 @@ module.exports = {
     "showFooter": true,
     "showFooterNote": true,
     "headerSubtitle": "Topic 4.8, Continuity and Change &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "The <em>Connected</em> World",
-    "deck": "By c. 1750, the world looked very different from c. 1450. New trade networks connected the Americas to Europe and Asia for the first time. American silver had caused inflation across three continents. Disease had killed tens of millions of people in the Americas. New crops had transformed agriculture on every inhabited continent. But not everything changed: the Indian Ocean trade continued; Asian manufacturers, especially China, dominated global production; Islamic commercial networks persisted. The AP CCOT skill requires identifying both what changed AND what stayed the same, and explaining why.",
+    "titleHtml": "Economic Change, <em>Social Consequence</em>",
+    "deck": "Topic 4.8 asks one synthesis question: how did economic developments from c. 1450 to c. 1750 affect social structures over time? Plantation growth, silver extraction, mercantilism, and intensified production changed demand for labor, created or reshaped hierarchies, altered elite power, and affected families — while older peasant, artisan, and elite structures also persisted.",
     "skillTags": [
       "Continuity & Change",
       "Causation",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track BOTH changes and continuities. The most common CCOT error is focusing only on what changed. This reading gives you equal attention to both sides. Pay close attention to why things continued, \"it continued\" is not a sufficient explanation; you need to identify what structural factors sustained continuities.",
-      "readingTarget": "By the end, you should be able to explain two major changes (silver economy and demographic collapse), identify two major continuities (Indian Ocean trade, Asian economic dominance), and write a CCOT argument that includes both sides with specific evidence."
+      "beforeYouRead": "For every economic development, ask what happened to people and hierarchy: who had to work, who gained wealth or status, whose family or community changed, and which older structures remained useful enough to survive.",
+      "readingTarget": "By the end, you should be able to connect specific economic developments to changes in labor, slavery, casta and elite power, or gender/family patterns, then write a continuity-and-change argument explaining why some social structures changed while others persisted."
     },
     "vocabulary": [
       "Global Price Revolution",
@@ -1294,124 +1134,59 @@ module.exports = {
       "Ecological Transformation",
       "Islamic Commercial Networks",
       "CCOT",
-      "Synthesis"
+      "Synthesis",
+      "Social Structure",
+      "Plantation Economy",
+      "Chattel Slavery",
+      "Casta",
+      "Peasant Labor",
+      "Artisan Labor",
+      "Elite Power",
+      "Gender and Family"
     ],
     "sections": [
       {
-        "number": "1",
-        "label": "Contextualization",
-        "heading": "The World at c. 1450: What Already Existed",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "Before c. 1450, the world was not disconnected, it was connected through existing networks that had operated for centuries. The <span class=\"kt\">Indian Ocean trade</span> system had carried silk, spices, cotton textiles, gold, and porcelain across Asia, Africa, and the Middle East since at least 500 CE. The <span class=\"kt\">Silk Roads</span> had connected China to the Mediterranean through Central Asia for over a millennium. The <span class=\"kt\">trans-Saharan trade routes</span> moved gold, enslaved people, salt, and manufactured goods between sub-Saharan Africa and North Africa and the Mediterranean. Mongol-facilitated connections in the 13th century had briefly knitted these networks into an almost-global system before the Black Death disrupted them."
-          },
-          {
-            "type": "p",
-            "html": "What was missing by c. 1450 was any connection between the Eastern Hemisphere and the Western Hemisphere. The Americas, home to 50–100 million people, two of the world's largest empires (<span class=\"kt\">Aztec</span> and <span class=\"kt\">Inca</span>), and sophisticated agricultural and craft economies, were entirely isolated from the rest of the world. This is the key contextual point: European maritime expansion after c. 1450 connected the Americas to existing networks, rather than creating global trade from nothing."
-          }
+        "number":"1","label":"Economic Development","heading":"A Larger Economy Creates New Demands",
+        "blocks":[
+          {"type":"p","html":"From c. 1450 to c. 1750, global <span class=\"kt\">silver</span> flows, mercantilist competition, chartered companies, plantation agriculture, and growing demand for textiles and other consumer goods expanded production and moved wealth through new channels."},
+          {"type":"p","html":"Those economic developments mattered socially because they changed who needed labor, who controlled revenue, and who could convert economic advantage into political or social privilege. Topic 4.8 is about that <strong>economic development -> social structure</strong> mechanism."}
         ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>CCOT arguments require identifying the baseline, what existed BEFORE the change. <strong>The Indian Ocean trade, Silk Roads, and trans-Saharan routes were all well-established by c. 1450. European expansion did not create global commerce; it connected the Americas to a global commerce that already existed.</strong> This distinction matters for causation: European states were motivated partly by wanting to access existing networks (especially Indian Ocean spice trade), not solely by a desire to create new ones.</p>"
-        }
+        "callout":{"label":"AP Thinking, Causation","raw":"<p>Do not list an economic change and a social change separately. Explain the connecting mechanism: <strong>new demand or revenue -> changed labor, status, family, or elite power</strong>.</p>"}
       },
       {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "What Changed: Silver and the Global Trade Network",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The most economically significant change of c. 1450–1750 was the creation of a genuinely global trade network, one that connected the Americas to the Eastern Hemisphere for the first time. The engine of this network was <span class=\"kt\">American silver</span>, especially from <span class=\"kt\">Potosí</span> in modern Bolivia."
-          },
-          {
-            "type": "p",
-            "html": "Silver from Potosí flowed in two directions. Westward across the Pacific via the <span class=\"kt\">Manila Galleon</span> trade (1565–1815): Mexican silver traveled from Acapulco to Manila, where Chinese merchants exchanged it for silk, porcelain, and spices. This route worked because China, the world's largest economy, needed silver to pay taxes after the <span class=\"kt\">Single Whip Tax Reform</span> (1581), which required payment in silver. Eastward across the Atlantic through the Seville system: silver flowed through Spain's <span class=\"kt\">Casa de Contratación</span> into European money markets, funding Spanish military campaigns and entering global circulation."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">global price revolution</span> was the economic consequence: the enormous increase in silver supply caused inflation across Europe and Asia, roughly tripling prices in Western Europe between 1500 and 1650. This disrupted established economic relationships, accelerated the decline of feudal arrangements, and benefited merchants and creditors while harming those on fixed incomes. Spain itself was paradoxically weakened, the silver influx allowed monarchs to fund wars without fiscal discipline, ultimately leading to state bankruptcy."
-          }
+        "number":"2","label":"Labor and Slavery","heading":"Plantations and Extraction Reshape Labor Status",
+        "blocks":[
+          {"type":"p","html":"Expanding <span class=\"kt\">plantation economies</span> increased demand for enslaved labor in the Americas, expanding hereditary racialized <span class=\"kt\">chattel slavery</span>. Silver mining and colonial agriculture also relied on systems such as the mita, encomienda, and hacienda."},
+          {"type":"p","html":"At the same time, older <span class=\"kt\">peasant</span> and <span class=\"kt\">artisan labor</span> continued and often intensified in Europe, India, and China as global demand for wool, linen, cotton, silk, food, and manufactured goods grew."}
         ],
-        "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>The silver economy was not simply a European phenomenon, it was driven by Asian demand. <strong>Chinese fiscal demand for silver created the pull that made the Manila Galleon trade profitable; without it, Mexican silver would not have crossed the Pacific. This makes Chinese economic policy (the Single Whip Tax Reform) a key cause of global trade transformation, an example of how Asian states shaped global economic history even as European states built the ships.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Change:</strong> Atlantic plantation slavery expanded dramatically. <strong>Continuity:</strong> most production still depended on peasant and artisan labor, often working harder for larger markets.</p>"}
       },
       {
-        "number": "3",
-        "label": "Key Concept",
-        "heading": "What Changed: Demographic and Environmental Transformation",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">Columbian Exchange</span>, the transfer of plants, animals, diseases, and people between the Eastern and Western Hemispheres, was the most dramatic demographic and environmental transformation of the period. Its effects were asymmetric: the Americas suffered catastrophically; the Eastern Hemisphere benefited, at least in agricultural terms."
-          },
-          {
-            "type": "p",
-            "html": "Disease was the decisive change. Smallpox, measles, influenza, and other Old World diseases killed an estimated 50–90% of the indigenous population of the Americas in the century after 1492. This <span class=\"kt\">demographic collapse</span>, from perhaps 50–100 million people to as few as 5–10 million, was the largest population loss in human history. It was the enabling condition for European conquest (collapsing indigenous defenses), the cause of the <span class=\"kt\">Atlantic slave trade</span> (creating a labor vacuum), and a profound environmental transformation (abandonment of agricultural land created secondary forest that early European visitors mistook for \"wilderness\")."
-          },
-          {
-            "type": "p",
-            "html": "The Eastern Hemisphere received new crops from the Americas that transformed agriculture globally: maize (corn), potatoes, sweet potatoes, cassava (manioc), tomatoes, and chili peppers. Potatoes became a staple in Ireland and northern Europe, enabling population growth that would not have been possible otherwise. Maize spread across Africa, China, and southern Europe. These crops did not immediately transform diets, adoption took a century or more in most regions, but by c. 1750 they were contributing to population growth in several world regions."
-          }
+        "number":"3","label":"Hierarchy","heading":"Economic Change Creates New Elites and Reworks Old Ones",
+        "blocks":[
+          {"type":"p","html":"Colonial conquest and extraction contributed to new hierarchies such as the Spanish American <span class=\"kt\">casta</span> system, where ancestry, legal status, wealth, and access to office became intertwined."},
+          {"type":"p","html":"Existing <span class=\"kt\">elites</span> also adapted. Local nobles, merchants, landowners, company directors, and state servants could gain or lose influence depending on how well they fit new imperial and commercial systems. Centralizing rulers sometimes weakened independent elites while creating new routes to status through service or court access."}
         ],
-        "callout": {
-          "label": "AP Thinking, Continuity and Change",
-          "raw": "<p>The Columbian Exchange represents genuine change, new species in new hemispheres, permanent demographic transformation, ecological disruption. <strong>But it also built on continuities: human beings had been moving crops, animals, and diseases across the Old World for millennia; what the Columbian Exchange added was the hemispheric connection that had been missing. The CCOT skill requires distinguishing what was genuinely new from what was an intensification of existing patterns.</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, Social Structure","raw":"<p>Economic opportunity creates hierarchy when wealth or access to revenue becomes a route to status — and when states write those differences into law or officeholding.</p>"}
       },
       {
-        "number": "4",
-        "label": "Key Concept",
-        "heading": "What Continued: Asian and Islamic Commercial Networks",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The most important CCOT insight for Topic 4.8 is this: despite the transformations of c. 1450–1750, the <span class=\"kt\">Indian Ocean trade</span> system, Asian manufacturing dominance, and <span class=\"kt\">Islamic commercial networks</span> all continued, and in many respects grew stronger."
-          },
-          {
-            "type": "p",
-            "html": "The Indian Ocean trade did not stop when Portuguese ships arrived. Arab, Indian, Chinese, Malay, and Swahili merchants continued to trade throughout the Indian Ocean; the Portuguese <span class=\"kt\">Estado da India</span> extracted tolls from this trade but never replaced it. The Dutch <span class=\"kt\">VOC</span> disrupted the Portuguese but did not displace Asian merchants from their networks. By c. 1700, the Indian Ocean trade was larger in volume than it had been in c. 1450, European demand had added to it, not replaced it."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">China</span> remained the world's largest economy throughout this period, producing the most silk, porcelain, and cotton textiles, attracting the most silver, and driving the most trade. Chinese manufacturing dominance was a continuity that c. 1450–1750 did not break. In fact, Chinese demand for silver was the engine that drove the global trade network, which means that China's economic size was a cause of the very changes the period is known for."
-          },
-          {
-            "type": "p",
-            "html": "Islamic commercial networks similarly persisted. <span class=\"kt\">Ottoman</span>, <span class=\"kt\">Safavid</span>, and <span class=\"kt\">Mughal</span> merchants operated across the Indian Ocean and Silk Road networks; Islamic commercial law (the <span class=\"kt\">hawala</span> credit system) facilitated long-distance trade; and Muslim traders remained important intermediaries in the Indian Ocean system even as European powers competed for control of key ports."
-          }
+        "number":"4","label":"Family and Synthesis","heading":"Demography Changes Families — but Not Everywhere in the Same Way",
+        "blocks":[
+          {"type":"p","html":"The Atlantic trade in enslaved people changed demographics in parts of Africa and could alter <span class=\"kt\">gender and family</span> responsibilities, household labor, and marriage patterns. Forced migration also created new communities and cultural synthesis in the Americas."},
+          {"type":"p","html":"But the period did not produce one universal social transformation. Older labor systems, patriarchal institutions, village structures, and elite groups persisted because expanding states and markets often still depended on them."},
+          {"type":"p","html":"A strong Unit 4 synthesis therefore argues for uneven change: economic developments transformed slavery, colonial hierarchy, and some family patterns while intensifying or adapting older peasant, artisan, and elite structures."}
         ],
-        "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Did c. 1450–1750 represent more change than continuity in global trade, or more continuity than change? <strong>A strong argument acknowledges both sides: silver created genuinely new connections (Americas to Eastern Hemisphere); demographic collapse was unprecedented; these are real changes. But Asian economic dominance persisted; Indian Ocean trade grew without being replaced; Islamic commercial networks continued. The answer depends partly on what you are measuring, the structure of trade (mostly continued), or the geographic reach of trade (significantly expanded).</strong></p>"
-        }
+        "callout":{"label":"AP Thinking, CCOT","raw":"<p>The governing claim should answer degree: <strong>where did economic change produce major social restructuring, and where did older structures persist because the new economy still needed them?</strong></p>"}
       }
     ],
-    "takeaway": "The period c. 1450–1750 was genuinely transformative, but it was not the replacement of one global order with another. <strong>What changed</strong>: American silver created the first genuinely global trade network, connecting the Americas to Europe and Asia; the Columbian Exchange caused demographic catastrophe in the Americas and agricultural transformation globally; European maritime empires established new political and commercial structures across three oceans. <strong>What continued</strong>: the Indian Ocean trade system grew without being replaced; Chinese manufacturing dominance persisted and Chinese demand drove the global economy; Islamic commercial networks remained important intermediaries; existing social hierarchies adapted rather than disappearing. The AP key: CCOT requires evidence on BOTH sides, and an explanation of WHY each thing changed or continued.",
+    "takeaway": "Economic developments from 1450 to 1750 affected social structures unevenly. Plantation growth and extractive economies expanded coerced labor and Atlantic chattel slavery; colonial conquest and commerce helped create new casta and merchant elites; the slave trade altered gender and family patterns in parts of Africa. At the same time, peasant and artisan labor continued and intensified, and many existing elites adapted to centralizing states and expanding markets. The Unit 4 CCOT answer is therefore both change and continuity, explained through the economic mechanisms that made each possible.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Three AP Skills",
     "questions": [
-      {
-        "num": "1",
-        "skill": "Continuity & Change",
-        "text": "Identify one major CHANGE in global trade networks from c. 1450 to c. 1750, and one major CONTINUITY. For each, provide one specific piece of evidence and explain the mechanism, what drove the change, and what sustained the continuity?",
-        "placeholder": "Identify your change and continuity, provide evidence for each, and explain the mechanism..."
-      },
-      {
-        "num": "2",
-        "skill": "Causation",
-        "text": "Explain the role of Chinese demand for silver in the global trade transformation of c. 1450–1750. How did China's domestic fiscal policy (the Single Whip Tax Reform) connect to the Manila Galleon trade and the silver economy? What does this reveal about Asia's role in driving global economic change?",
-        "placeholder": "Trace the causal chain from Chinese fiscal policy to global silver flows..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Did c. 1450–1750 represent more change than continuity in global trade networks, or more continuity than change? Then provide one specific piece of evidence that supports your claim.",
-        "placeholder": "State your one-sentence claim, then provide specific supporting evidence..."
-      }
+      {"num":"1","skill":"Causation","text":"Choose one economic development such as plantation growth, silver extraction, mercantilism, or intensified production. Explain one specific effect on social structure.","placeholder":"The economic development changed social structure because..."},
+      {"num":"2","skill":"Continuity & Change","text":"Identify one major social change and one major social continuity from c. 1450 to c. 1750. Use specific evidence from two different Unit 4 topics.","placeholder":"One change was... One continuity was..."},
+      {"num":"3","skill":"Argumentation","text":"Write a one-sentence claim answering the Topic 4.8 question: how did economic developments affect social structures over time? Include both change and continuity in your claim.","placeholder":"Economic developments substantially changed... while... continued because..."}
+
     ],
     "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",

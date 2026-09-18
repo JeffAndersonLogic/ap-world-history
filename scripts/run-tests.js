@@ -51,6 +51,8 @@ const SUITES = {
     ['scripts/test/unit2-instructional-coherence.test.js', 'Unit 2 cross-surface traceability + assessment alignment'],
     ['scripts/test/ced-unit3-contract.test.js', 'Unit 3 canonical/runtime CED coverage =100%'],
     ['scripts/test/unit3-instructional-coherence.test.js', 'Unit 3 cross-surface traceability + assessment alignment'],
+    ['scripts/test/ced-unit4-contract.test.js', 'Unit 4 canonical/runtime CED coverage'],
+    ['scripts/test/unit4-instructional-coherence.test.js', 'Unit 4 cross-surface traceability + assessment alignment'],
     ['scripts/check-style.js', 'American English, date form, note labels'],
     ['scripts/test/image-check-throttle.test.js', 'rate limiting is not reported as a broken image'],
     ['scripts/test/evidence-image-surgery.test.js', 'Module 07 image candidates splice the right bytes'],

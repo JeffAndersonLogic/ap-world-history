@@ -47,7 +47,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Economic Systems"
     },
     {
-      target: "I can explain how English, French, and Dutch states sponsored northern Atlantic crossings in search of alternative routes to Asia, and how the Treaty of Tordesillas (1494) shaped that competition.",
+      target: "I can explain how English, French, and Dutch states sponsored northern Atlantic crossings in search of alternative routes and trading opportunities, and connect those voyages to the economic causes and effects of exploration.",
       kc: 'KC-4.1.III.C',
       theme: "Economic Systems"
     }
@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Economic Systems"
     },
     {
-      criteria: "I can explain how the Treaty of Tordesillas (1494) divided the non-European world between Spain and Portugal, and how English, French, and Dutch states responded by seeking alternative northern routes to Asia.",
+      criteria: "I can use specific English, French, and Dutch exploration examples to show how northern Atlantic sponsorship expanded routes, geographic knowledge, fishing or fur-trade opportunities, and competition for commerce.",
       kc: 'KC-4.1.III.C',
       theme: "Economic Systems"
     }
@@ -106,7 +106,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Why Europe? Motives, the Reconquista, and the Disrupted Trade Routes",
         bullets: [
-          "By c. 1450, the **Ottoman conquest of Constantinople** (1453) had disrupted overland trade routes through which Asian spices, silk, and luxury goods reached Europe through Arab and Byzantine middlemen. Spices, pepper, cloves, nutmeg, cinnamon, were enormously valuable in Europe for food preservation, medicine, and luxury consumption. But every spice bought in Europe had passed through layers of middlemen, each taking a share. Finding a direct sea route to Asian spice markets would allow European merchants to bypass the entire system.",
+          "Asian spices, silk, and luxury goods were highly profitable in European markets, but long-distance commerce passed through multiple established Mediterranean and Asian networks and intermediaries. European rulers and merchants therefore had strong incentives to seek direct maritime access to profitable markets. The **Ottoman conquest of Constantinople (1453)** changed the political setting of eastern Mediterranean trade, but it did not simply close all overland trade or single-handedly cause oceanic exploration; the search for maritime routes had broader economic, political, religious, and technological causes.",
           "**Portugal and Spain** had both just completed the **Reconquista**, the centuries-long campaign to expel Muslims from the Iberian Peninsula (completed 1492 in Spain). That campaign had produced military institutions, a warrior nobility, and a crusading religious ideology that could be redirected toward Atlantic expansion. Exploring and 'discovering' new lands offered the Spanish and Portuguese crowns a way to convert souls, claim territory, and project power without the constraints of established European politics.",
           "**Prince Henry the Navigator** (1394–1460) organized Portuguese exploration of the African coast from his court at Sagres, not sailing himself but systematically sponsoring voyages year by year, gathering geographic and commercial intelligence. His motives combined the commercial (find gold and spice routes), the religious (find the legendary Christian kingdom of Prester John as an ally against Islam), and the political (establish Portuguese maritime dominance). The Portuguese model was state-sponsored, systematic, and cumulative.",
           "The shorthand **'God, Glory, and Gold'** captures the three overlapping European motivations: religious conversion and crusading ideology, national prestige and competition between states, and commercial profit from trade and extraction. In practice, these motivations reinforced each other: conquering territory could bring both souls to convert and wealth to extract."
@@ -146,6 +146,21 @@ window.BEHISTORICAL_LESSON = {
           caption: "The Waldseemüller map of 1507 shows the Americas as separate continents for the first time, the direct result of Spanish and Portuguese voyages from 1492 onward. Notice the vast unknown Pacific Ocean to the west of America.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
+        }
+      },
+      {
+        title: "Northern Atlantic Exploration: English, French, and Dutch Routes",
+        bullets: [
+          "**England** sponsored John Cabot's 1497 Atlantic crossing, which strengthened English claims and knowledge of North Atlantic coastlines and fisheries while pursuing an alternative route toward Asia.",
+          "**France** sponsored explorers such as Jacques Cartier in the St. Lawrence region, tying state-supported exploration to fisheries, fur-trade opportunities, geographic knowledge, and later colonial claims.",
+          "The **Dutch Republic** combined maritime expertise, commercial finance, and state-backed companies as Dutch navigators pursued northern passages and entered Atlantic and Asian trade networks.",
+          "The economic reasoning is central: states sponsored voyages because new routes could open direct access to commodities and commercial opportunities; successful voyages then expanded knowledge and made future trade and colonization more feasible."
+        ],
+        image: {
+          title: "Northern Atlantic exploration routes",
+          caption: "English, French, and Dutch sponsorship extended exploration beyond the Iberian routes.",
+          url: "../assets/images/instructional-maps/topic-4-2.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-4-2.svg"
         }
       }
     ]

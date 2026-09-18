@@ -76,33 +76,33 @@
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Indigenous and African Resistance',
-      subtitle: 'Checks Learning Targets 1 and 2 — Pueblo Revolt and maroon communities.',
-      cardDesc: 'Pueblo Revolt, Popé, maroon communities, Palmares, and forms of African resistance.',
-      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain the causes and outcome of the Pueblo Revolt of 1680. Then describe maroon communities as a form of African resistance, using Palmares as a specific example. Finally, compare these two forms of resistance: identify one meaningful similarity and one meaningful difference, and explain what the difference reveals about the strategies available to different groups resisting colonial rule.',
+      title: 'Checkpoint 1: Local Resistance — Pueblo Revolt',
+      subtitle: 'Checks Learning Target 1 and Success Criterion 1.',
+      cardDesc: 'State expansion, local grievances, Popé, coordination, and the limits of Spanish control.',
+      learningTargets: [lesson.learningTargets[0].target],
+      successCriteria: [lesson.successCriteria[0].criteria],
+      prompt: 'Explain why the Pueblo Revolt of 1680 occurred, how Popé and Pueblo communities organized collective resistance, and what the revolt changed in the short term. Your answer must connect specific colonial policies or pressures to the decision to resist.',
       responseType: 'Checkpoint 1',
-      terms: ['Pueblo Revolt', 'Popé', 'Tewa', 'kiva', 'religious suppression', 'maroon communities', 'Palmares', 'Zumbi', 'quilombo', 'resistance'],
-      focus: ['Explain Pueblo Revolt causes: religious suppression, labor demands, drought, Popé\'s organization.', 'Describe maroon communities: definition, Palmares as example, why they represent a different resistance strategy.', 'Compare the two: one similarity (both were responses to colonial coercion), one difference (military expulsion vs. autonomous exit), explain what the difference reveals.']
+      terms: ['Pueblo Revolt', 'Popé', 'Tewa', 'kiva', 'religious suppression', 'labor demands', 'drought', 'Spanish colonial rule', 'resistance'],
+      focus: ['Identify at least two specific grievances caused by colonial expansion or centralization.', 'Explain how Popé and Pueblo networks made coordinated resistance possible.', 'Explain the short-term outcome and at least one limit of the revolt.']
     },
     {
-      title: 'Checkpoint 2: European Rivalries and External Challenges',
-      subtitle: 'Checks Learning Target 3 — European competition and external challenges.',
-      cardDesc: 'Dutch displacement of the Portuguese, piracy, privateering, and the Seven Years War.',
-      learningTargets: [lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Explain how competition between European powers created external challenges to maritime empires. Use one specific example (Dutch displacement of Portuguese in the Indian Ocean, OR privateering in the Atlantic, OR the Seven Years War) to explain how European rivalry tested the stability of colonial empires. Then connect to Topic 4.4: how does European rivalry reveal a weakness in the specific model of empire that was being challenged?',
+      title: 'Checkpoint 2: Organized Resistance by Enslaved People',
+      subtitle: 'Checks Learning Target 2 and Success Criterion 2.',
+      cardDesc: 'Maroon communities, Palmares, escape, autonomous organization, and colonial vulnerability.',
+      learningTargets: [lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[1].criteria],
+      prompt: 'Explain how maroon communities represented organized resistance by enslaved Africans. Use Palmares as a specific example and explain how geography, community organization, and the weaknesses of colonial control helped resistance survive. Then compare this strategy with the Pueblo Revolt in one sentence.',
       responseType: 'Checkpoint 2',
-      terms: ['VOC', 'Estado da India', 'piracy', 'privateering', 'Sir Francis Drake', 'Seven Years War', 'Dutch competition', 'external challenge'],
-      focus: ['Choose one specific example of European rivalry and explain it with specific evidence.', 'Explain how this rivalry tested the stability of the empire being challenged.', 'Connect to Topic 4.4: what weakness in the Portuguese, Spanish, or Dutch model did rival European powers exploit?']
+      terms: ['maroon communities', 'Palmares', 'Zumbi', 'quilombo', 'escape', 'autonomy', 'geography', 'organized resistance', 'Pueblo Revolt'],
+      focus: ['Define maroon resistance and use Palmares as specific evidence.', 'Explain why geography and community organization mattered.', 'Make one meaningful comparison between maroon autonomy and Pueblo collective revolt.']
     }
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Resistance, Refuge, and Imperial Vulnerability',
-    task: 'Choose TWO cards that represent different kinds of challenge: coordinated Indigenous revolt, autonomous maroon settlement, or European commercial rivalry. Decide whether each source is contemporary, later memory, or secondary reconstruction. Then infer what made resistance possible rather than treating resistance as an automatic response to oppression.',
-    prompt: 'Using two evidence cards, make one claim about the conditions that made resistance to imperial rule possible. Cite one concrete detail from each source, compare the strategies or vulnerabilities shown, and identify one source limitation that affects your conclusion.'
+    title: 'Evidence Lab: Resistance, Organization, and Imperial Limits',
+    task: 'Choose TWO cards that represent Indigenous or enslaved resistance. Decide whether each source is contemporary, later memory, or secondary reconstruction. Then infer what made organized resistance possible rather than treating resistance as an automatic response to oppression.',
+    prompt: 'Using two evidence cards, make one claim about the conditions that made local or enslaved resistance to expanding state power possible. Cite concrete details, compare resistance strategies, and identify one source limitation.'
   };
 
   lesson.images = [
@@ -128,16 +128,11 @@
       prompt: 'NOTICE how Zumbi is presented as a public hero. What can this tell you about the long-term memory of maroon resistance? Why is a modern monument not evidence for Zumbi\'s physical appearance or the exact organization of Palmares?'
     },
     {
-      title: 'Dutch East India Company charter, 1602',
-      label: 'Charter record · Dutch Republic, 20 March 1602',
-      sourceText: [
-        'The States General chartered the VOC with a 21-year monopoly',
-        'on Dutch trade east of the Cape of Good Hope.',
-        'The charter granted powers to build forts, keep troops,',
-        'and make treaties with local rulers.'
-      ],
-      caption: 'The charter that created the heavily capitalized rival which challenged Portuguese positions across the Indian Ocean.',
-      prompt: 'NOTICE what this charter let the VOC do that no single merchant could. INFER why Portuguese chokepoints were vulnerable to a competitor organized this way. This is a challenge from outside: how does it compare with the challenges from within in the other cards?'
-    }
+      title: 'Resistance Geography — Pueblo Country and Colonial Frontiers',
+      url: '../assets/images/instructional-maps/topic-4-6.svg',
+      sourceUrl: '../assets/images/instructional-maps/topic-4-6.svg',
+      caption: 'Secondary geographic reconstruction. The Topic 4.6 map places resistance in frontier landscapes where distance, terrain, and dispersed colonial authority shaped what local communities could organize.',
+      prompt: 'NOTICE distance from colonial centers and the relationship between settlements and terrain. What can geography help explain about the possibilities for coordinated revolt or autonomous refuge? What cannot a map prove about motives or lived experience?'
+    },
   ];
 })();

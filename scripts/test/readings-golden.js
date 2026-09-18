@@ -44,6 +44,15 @@ const unit3SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'un
 const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
   && gitBlobSha(fs.readFileSync(unit3SourcePath, 'utf8')) === APPROVED_UNIT3_REWRITE_BLOB;
 
+// Unit 4 was deliberately realigned to the Fall 2026 CED after the course-wide
+// audit. Accept the reviewed First & 10 rewrite only while the authored Unit 4
+// source remains byte-for-byte this approved Git blob. Any later edit forces a
+// fresh review instead of silently moving the historical baseline.
+const APPROVED_UNIT4_REWRITE_BLOB = '574729156c54a4f3b177987d118ca58c72f9bb7b';
+const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
+const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
+  && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;
+
 const R = '\x1b[31m', G = '\x1b[32m', Y = '\x1b[33m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 
 let baseline = null;
@@ -247,6 +256,10 @@ for (const topic of allTopics()) {
   }
   if (approvedUnit3Rewrite && /^3\.[1-4]$/.test(topic.topicKey)) {
     if (all.length) accepted.add('Unit 3 First & 10 Fall 2026 CED realignment approved 2026-09-17; guarded by the exact authored source Git blob hash.');
+    continue;
+  }
+  if (approvedUnit4Rewrite && /^4\.[1-8]$/.test(topic.topicKey)) {
+    if (all.length) accepted.add('Unit 4 First & 10 Fall 2026 CED realignment approved 2026-09-17; guarded by the exact authored source Git blob hash.');
     continue;
   }
   const diffs = [];

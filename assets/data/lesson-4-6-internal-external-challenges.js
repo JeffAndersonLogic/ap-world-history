@@ -29,7 +29,7 @@ window.BEHISTORICAL_LESSON = {
     course: "AP WORLD HISTORY",
     unit: "Unit 4: Transoceanic Interconnections",
     topic: "Topic 4.6",
-    title: "Internal and External Challenges to State Power",
+    title: "Internal Challenges to State Power",
     subtitle: "How colonized peoples, enslaved Africans, and rival European powers challenged maritime empires from within and without",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
@@ -37,36 +37,26 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how indigenous peoples challenged European colonial rule, including the causes, methods, and outcomes of the Pueblo Revolt of 1680.",
+      target: "I can explain how state expansion and centralization produced local resistance, including the causes, organization, and outcomes of the Pueblo Revolt of 1680.",
       kc: 'KC-4.3.III.iii',
       theme: "Governance"
     },
     {
-      target: "I can analyze how enslaved Africans resisted colonial rule through maroon communities, cultural preservation, and organized revolts.",
+      target: "I can explain how enslaved Africans resisted colonial rule through escape, autonomous maroon communities, cultural preservation, and organized revolt.",
       kc: 'KC-5.3.III.C',
-      theme: "Governance"
-    },
-    {
-      target: "I can evaluate how competition between European powers, including commercial rivalry and military conflict, created external challenges to maritime empires.",
-      kc: 'KC-4.3.III.ii',
       theme: "Governance"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can explain the specific grievances that caused the Pueblo Revolt (religious suppression, labor demands, drought), describe how Popé organized the revolt, and explain the short-term outcome, including how the revolt forced changes in Spanish colonial policy.",
+      criteria: "I can explain the specific grievances behind the Pueblo Revolt, how Popé coordinated resistance, and what the revolt changed and failed to change about Spanish colonial rule.",
       kc: 'KC-4.3.III.iii',
       theme: "Governance"
     },
     {
-      criteria: "I can describe maroon communities as a form of African resistance, give one specific example (Palmares in Brazil), and explain how maroon communities represented both successful resistance and its limits.",
+      criteria: "I can describe maroon communities as organized resistance, use Palmares as a specific example, and explain how geography, community organization, and colonial vulnerability made autonomous resistance possible.",
       kc: 'KC-5.3.III.C',
-      theme: "Governance"
-    },
-    {
-      criteria: "I can explain how Dutch commercial competition displaced the Portuguese Estado da India and describe how piracy and privateering served as tools of European state competition, connecting both to the fragility of maritime empires.",
-      kc: 'KC-4.3.III.ii',
       theme: "Governance"
     }
   ],
@@ -87,8 +77,8 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Resistance and Rivalry: Challenges to Maritime Empires",
-    intro: "European maritime empires faced challenges from three directions: indigenous peoples who refused to accept colonial domination; enslaved Africans who resisted the system of chattel slavery by every means available; and rival European powers who competed for the same trade routes, territories, and resources. Together, these challenges reveal that empires which appeared all-powerful on paper were far more fragile in practice.",
+    title: "Resistance to Expanding State Power",
+    intro: "As states expanded and centralized control, local communities and enslaved people resisted coercion in organized ways. Topic 4.6 focuses on those resistance movements: why grievances became collective action, what strategies resisters used, and what those movements reveal about the limits of imperial power.",
     videos: [],
     segments: [
       {
@@ -121,21 +111,7 @@ window.BEHISTORICAL_LESSON = {
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg"
         }
       },
-      {
-        title: "European Rivalry: External Challenges to Maritime Empires",
-        bullets: [
-          "European maritime empires also faced challenges from each other. The **Dutch VOC** systematically displaced the **Portuguese Estado da India** from the Indian Ocean in the early 17th century, not through a single decisive battle but through superior capital, more efficient organization, and lower prices. Dutch merchants undercut Portuguese toll rates; Dutch warships were better maintained; the VOC's joint-stock structure allowed it to sustain losses that would have bankrupted the Portuguese crown. By c. 1650, the Dutch controlled most of the spice trade.",
-          "In the **Atlantic world**, **piracy and privateering** were permanent features of European colonial competition. Privateers were privately owned ships authorized by a government to attack enemy shipping, a tool that allowed states to attack rivals' trade without the expense of a formal navy. **Sir Francis Drake** (authorized by Queen Elizabeth I) raided Spanish Caribbean ports in the 1570s–1580s, sacking Cartagena, Santo Domingo, and Cádiz. French pirates operated from bases in the Caribbean throughout the 17th century.",
-          "By the 18th century, European colonial rivalry had escalated into what historians call the **first world war**: the **Seven Years War (1756–1763)** was fought simultaneously in North America (French and Indian War), the Caribbean, West Africa, India, and Europe. Britain's victory transformed the global colonial map, France lost most of its North American and Indian holdings; Britain emerged as the dominant colonial power.",
-          "The distinction between internal and external challenges matters for analysis: internal challenges (Pueblo Revolt, maroon communities) tested the **legitimacy and reach** of colonial authority, forcing administrative reforms; external challenges (Dutch vs. Portuguese, Seven Years War) tested the **military and commercial capacity** of competing empires, redrawing colonial maps. Both types revealed that European maritime empires were more fragile than their formal claims suggested."
-        ],
-        image: {
-          title: "World Map, c. 1700",
-          caption: "By c. 1700, the global map of European empires reflected decades of commercial rivalry, military conflict, and colonial competition. The Dutch had displaced the Portuguese across much of the Indian Ocean; the British and French were competing for dominance in North America and the Caribbean.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG"
-        }
-      }
+
     ]
   },
 
