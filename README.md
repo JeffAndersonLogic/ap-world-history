@@ -36,7 +36,7 @@ Each standard lesson uses:
 
 The required module order and authoring rules are documented in `CLAUDE.md`.
 
-For AI-assisted presentation work, `docs/TEACHING-OS.md` is the canonical design contract. Cross-model entry instructions live in `AGENTS.md`, with provider-specific pointers in `CLAUDE.md` and `.github/copilot-instructions.md`. The locked presentation workflow begins with the College Board framework and a ninth-grade story before any storyboard, visual search, or code build.
+For AI-assisted presentation work, `docs/PRESENTATION-AUTHORING.md` is the canonical instructional-design standard and `docs/TEACHING-OS.md` is the implementation contract. Cross-model entry instructions live in `AGENTS.md`, with provider-specific pointers in `CLAUDE.md` and `.github/copilot-instructions.md`. The locked workflow starts from the College Board framework, runs a course-constraint check, develops and approves the ninth-grade story and spine, names the retelling slide, then moves into assets, code, separate instructional and technical verification, adjacent findings, and shipping.
 
 ## Local commands
 
