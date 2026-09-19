@@ -1,5 +1,20 @@
 # BeHistorical, Claude Code Rules
 
+## Presentation design authority
+
+For any request to plan, build, revise, audit, or model a BeHistorical class presentation, **read `docs/TEACHING-OS.md` before changing code**. That document is the canonical presentation-design contract for Claude and for every other coding agent in this repository.
+
+The locked production line is:
+
+**CED -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> visual plan -> canonical teacher build -> generated student deck -> ecosystem sync -> verify -> ship**
+
+Do not start by cloning an old deck, counting slides, or searching for images. The CED decides what students must learn; the ninth-grade story decides how they encounter it. Big Rocks are useful only when the story naturally produces them. Existing images do not get to determine the lesson.
+
+When another AI model's proposal is supplied, evaluate it independently against the CED, historical evidence, and current repository. Do not treat agreement with the other model as a goal. Keep, modify, reject, or verify its claims explicitly when that distinction matters.
+
+A presentation is not complete because a file or commit exists. Follow the architecture, generation, sync, verification, and shipping requirements in `docs/TEACHING-OS.md` before reporting it as done or live.
+
+
 ## Git
 
 - `main` is the deploy branch: GitHub Pages serves it, so what is on `main` is
