@@ -28,7 +28,7 @@ if (exists(shared)) {
   check('shared cockpit owns teacher layout CSS', src.includes('.cockpit') && src.includes('.intel-scroll') && src.includes('.timeline'));
 }
 
-for (const key of ['2-1', '2-2']) {
+for (const key of ['2-1', '2-2', '2-5']) {
   const wrapper = `teacher/data/topic-${key}-teaching.js`;
   const data = `teacher/data/topic-${key}-presentation-assets.js`;
   const visual = `teacher/data/topic-${key}-visual-assets.js`;
@@ -72,6 +72,7 @@ for (const key of ['2-1', '2-2']) {
 const build = read('scripts/build-teaching-os-student-decks.js');
 check('Teaching OS generator declares Topic 2.1', build.includes("key: '2.1'"));
 check('Teaching OS generator declares Topic 2.2', build.includes("key: '2.2'"));
+check('Teaching OS generator declares Topic 2.5', build.includes("key: '2.5'"));
 check('generated-artifact gate invokes Teaching OS generator', read('scripts/test/readings-reproducible.test.js').includes('scripts/build-teaching-os-student-decks.js'));
 
 console.log(`\n  ${failed ? 'FAIL' : 'PASS'}  ${failed ? `${failed} architecture contract(s) failed` : 'Teaching OS architecture is centralized and drift-gated'}`);
