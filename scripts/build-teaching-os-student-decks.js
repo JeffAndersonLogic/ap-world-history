@@ -31,6 +31,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-2-2-student.js',
     backUrl: 'lesson-2-2-mongol-empire.html#lecture'
+  },
+  {
+    key: '2.5',
+    sources: [
+      'teacher/data/topic-2-5-teaching-base.js',
+      'teacher/data/topic-2-5-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-2-5-student.js',
+    backUrl: 'lesson-2-5-cultural-consequences.html#lecture'
   }
 ];
 
@@ -133,15 +142,30 @@ function topic22Slides(teaching) {
   });
 }
 
+function topic25Slides(teaching) {
+  return projectedSlides(teaching).map(src => {
+    const s = baseStudentSlide(src);
+    if (src.kind === 'image') s.kind = 'map';
+    if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
+    ensureWhy(s, 'Explain how intensified contact produces the cultural or intellectual consequence');
+    return s;
+  });
+}
+
 function buildDeck(deck) {
   const teaching = loadTeaching(deck);
+  const builders = {
+    '2.1': topic21Slides,
+    '2.2': topic22Slides,
+    '2.5': topic25Slides
+  };
   return {
     meta: {
       topic: `Topic ${deck.key}`,
       title: teaching.meta.title,
       backUrl: deck.backUrl
     },
-    slides: deck.key === '2.1' ? topic21Slides(teaching) : topic22Slides(teaching)
+    slides: builders[deck.key](teaching)
   };
 }
 
