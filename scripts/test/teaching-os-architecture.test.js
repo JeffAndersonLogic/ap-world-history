@@ -76,5 +76,34 @@ check('Teaching OS generator declares Topic 2.5', build.includes("key: '2.5'"));
 check('Teaching OS generator declares Topic 2.6', build.includes("key: '2.6'"));
 check('generated-artifact gate invokes Teaching OS generator', read('scripts/test/readings-reproducible.test.js').includes('scripts/build-teaching-os-student-decks.js'));
 
+console.log('\n  Authoring process discovery\n');
+const contractPath = 'docs/TEACHING-OS.md';
+check('canonical Teaching OS authoring contract exists', exists(contractPath));
+if (exists(contractPath)) {
+  const contract = read(contractPath);
+  check(
+    'authoring contract locks the story-first production line',
+    contract.includes('CED -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> visual plan -> canonical teacher build -> generated student deck -> ecosystem sync -> verify -> ship')
+  );
+  check(
+    'authoring contract prevents image-first lesson design',
+    contract.includes('Do not let an available image determine the lesson')
+  );
+  check(
+    'authoring contract requires independent AI peer review',
+    contract.includes('evaluate it independently against the CED')
+  );
+}
+
+for (const entry of ['CLAUDE.md', 'AGENTS.md', '.github/copilot-instructions.md']) {
+  check(`${entry} exists for AI-agent discovery`, exists(entry));
+  if (exists(entry)) {
+    check(
+      `${entry} points agents to the Teaching OS contract`,
+      read(entry).includes('docs/TEACHING-OS.md')
+    );
+  }
+}
+
 console.log(`\n  ${failed ? 'FAIL' : 'PASS'}  ${failed ? `${failed} architecture contract(s) failed` : 'Teaching OS architecture is centralized and drift-gated'}`);
 if (failed) process.exit(1);
