@@ -40,6 +40,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-2-5-student.js',
     backUrl: 'lesson-2-5-cultural-consequences.html#lecture'
+  },
+  {
+    key: '2.6',
+    sources: [
+      'teacher/data/topic-2-6-teaching-base.js',
+      'teacher/data/topic-2-6-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-2-6-student.js',
+    backUrl: 'lesson-2-6-environmental-consequences.html#lecture'
   }
 ];
 
@@ -152,12 +161,23 @@ function topic25Slides(teaching) {
   });
 }
 
+function topic26Slides(teaching) {
+  return projectedSlides(teaching).map(src => {
+    const s = baseStudentSlide(src);
+    if (src.kind === 'image') s.kind = 'map';
+    if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
+    ensureWhy(s, 'Explain how a network moves living things and produces environmental effects');
+    return s;
+  });
+}
+
 function buildDeck(deck) {
   const teaching = loadTeaching(deck);
   const builders = {
     '2.1': topic21Slides,
     '2.2': topic22Slides,
-    '2.5': topic25Slides
+    '2.5': topic25Slides,
+    '2.6': topic26Slides
   };
   return {
     meta: {
