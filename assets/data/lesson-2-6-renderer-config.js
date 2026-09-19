@@ -44,6 +44,12 @@
     prompt: 'Why should historians analyze crop diffusion and plague transmission as two environmental consequences of the same exchange system?'
   };
 
+  lesson.classPresentation = {
+    title: 'Class Slides: Environmental Consequences of Connectivity',
+    desc: 'Follow the biological-consequences story: trade accidentally connected ecosystems, moving crops that could feed people and pathogens that could devastate populations.',
+    url: 'presentation-topic-2-6-student.html'
+  };
+
   lesson.skillBuilder = {
     label: 'Causation practice',
     title: 'AP Skill Builder: Trace an Environmental Consequence',
