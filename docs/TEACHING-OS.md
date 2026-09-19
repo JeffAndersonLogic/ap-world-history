@@ -1,6 +1,6 @@
 # BeHistorical Teaching OS Architecture
 
-This document is the consistency contract for the data-driven classroom presentation system introduced with Topics 2.1 and 2.2.
+This document is the canonical consistency and authoring contract for BeHistorical classroom presentations. It governs both the instructional design process and the data-driven Teaching OS architecture. AI coding agents must read this file before planning, building, revising, or auditing a topic presentation.
 
 ## One authored presentation, two audiences
 
@@ -35,32 +35,217 @@ The source-of-truth pipeline is:
 - Student files must contain no `notes`, Teacher Intelligence, LAND, STORY, ASK, LISTEN FOR, AP CONNECTION, briefing data, timer controls, iPad controls, or teacher preflight slides.
 - Prefer repo-local classroom visuals. If the teacher surface temporarily uses a remote-only visual, the student generator may degrade that slide to a text-led version rather than introduce a brittle dependency.
 
-## Instructional architecture standard
+## Locked presentation authoring workflow
 
-Topics 2.1 and 2.2 establish the instructional grammar for future Teaching OS builds. A Topic 2.3+ build should preserve this sequence unless the content provides a strong reason to deviate:
+This process is mandatory for every new or substantially revised BeHistorical topic presentation.
+
+The CED determines **what students must learn**. The ninth-grade story determines **how students should encounter it**. Existing slides, available images, and old lesson organization do not get to reverse that order.
+
+The production line is:
+
+**CED -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> visual plan -> canonical teacher build -> generated student deck -> ecosystem sync -> verify -> ship**
+
+### 1. CED first
+
+Before writing slides, inspect the topic's current College Board framework and isolate:
+
+- learning objective(s)
+- essential knowledge / key concepts
+- illustrative examples College Board names
+- the reasoning move implied by the learning-objective verb
+
+Do not begin from an old deck and retrofit the CED afterward. Existing BeHistorical curriculum may clarify or enrich the topic, but it cannot replace or silently expand the required College Board story.
+
+### 2. Tell the ninth-grade story before designing slides
+
+Explain the topic as if speaking to a 14- or 15-year-old who already knows the previous topics in the unit.
+
+The story should answer, in plain historical language:
+
+- What was already true before this topic?
+- What changed?
+- What problem, pressure, opportunity, or interaction drove the change?
+- How did the mechanism work?
+- What was the consequence or twist?
+- Why does College Board care about this development?
+
+This stage is narrative, not slide design. Do not start coding, count slides, or hunt for images until the story is coherent.
+
+A useful test: if the topic still sounds like "students need to know A, B, C, and D," the story is not finished.
+
+### 3. Find one memorable spine
+
+Reduce the story to one durable idea students can carry through the lesson and recall later.
+
+The spine is an argument or causal idea, not a vocabulary list. Examples from the current Unit 2 standard include:
+
+- Topic 2.5: connectivity changes what societies know and what they become.
+- Topic 2.6: the same network could feed you and kill you.
+
+The spine should recur naturally in the opening, transitions, synthesis, and final answer without becoming a repeated slogan on every slide.
+
+### 4. Attach every must-have example to a "so what"
+
+Identify the evidence students actually need from the CED and the course.
+
+For every named example, state what historical claim it proves and what consequence or mechanism it illustrates. A named example does not automatically earn its own slide.
+
+Bad structure:
+
+- banana slide
+- rice slide
+- citrus slide
+
+Better structure:
+
+- crop diffusion changed agricultural possibilities
+- bananas, new rice varieties, and citrus serve as evidence inside that claim
+
+Vocabulary and illustrative examples serve the story. The story does not serve the vocabulary list.
+
+### 5. Convert the story into narrative beats
+
+Storyboard the order in which a ninth grader needs to discover the argument.
+
+A beat must do at least one of these jobs:
+
+- establish context
+- advance the historical story
+- explain a mechanism
+- introduce evidence that proves the argument
+- make students reason, write, or synthesize
+
+The normal student-visible range is about 12 to 16 slides, but that is a guideline, not a quota. A short topic may need fewer. A larger topic may need more. Never add slides simply to hit a number.
+
+Use Big Rocks when they genuinely clarify the story, usually two or three. They are not a mandatory template. Derive them from the story instead of forcing the topic into three boxes.
+
+Mechanism/process slides are powerful when used sparingly. As a default, keep true mechanism slides to about two or three per topic unless the history clearly requires more.
+
+One projected slide should usually carry one argument.
+
+### 6. Make the visual plan before coding
+
+For each narrative beat, decide whether it needs:
+
+- a historical image
+- a map
+- a manuscript, artifact, or primary-source visual
+- a comparison / diptych / triptych
+- a simple mechanism graphic
+- or no image
+
+Then identify the small number of visuals that would materially elevate the lesson, usually three to six high-value assets.
+
+Standing rule:
+
+> **Do not let an available image determine the lesson. Determine the lesson first, then find or create the exact visual the story deserves.**
+
+Prefer repo-local classroom visuals for stability. Use reliable public-domain sources when local assets are unavailable. Avoid generic stock imagery. AI reconstructions must be labeled as reconstructions.
+
+### 7. Build one canonical teacher presentation
+
+Only after the story, evidence, beats, and visual plan are settled should the Teaching OS files be authored.
+
+The teacher source carries:
+
+- projected slide content
+- pacing / run-of-show information
+- Teacher Preflight
+- LAND
+- STORY
+- ASK
+- LISTEN FOR
+- AP CONNECTION
+- AVOID / misconception warnings
+
+Projected slides stay visually lean. Teacher Intelligence carries the depth.
+
+The projector should feel closer to a museum exhibit than a textbook page: a strong visual, a clear argument, and enough text to orient the room.
+
+### 8. Generate the student deck from the teacher source
+
+Never maintain teacher and student Teaching OS decks independently.
+
+The student companion is generated from the canonical teacher data. Teacher notes, controls, and preflight content are stripped from the student bytes rather than hidden with CSS.
+
+### 9. Sync the full BeHistorical ecosystem
+
+A presentation is not complete because the deck file exists.
+
+Check every relevant surface, including:
+
+- Teacher Command Center routing
+- Teaching OS entry surface
+- lesson `classPresentation`
+- student presentation HTML
+- generated student presentation data
+- presentation generator declarations
+- topic-specific visual assets
+- relevant indexes / routing
+
+"Sync everywhere" means identify the affected surfaces first, then update all of them.
+
+### 10. Verify before claiming completion
+
+Instructional verification must confirm:
+
+- the deck answers the actual CED learning objective
+- required examples remain present and accurate
+- examples prove claims rather than float as trivia
+- the historical mechanism is explicit
+- the deck does not drift into adjacent topics
+- the final synthesis answers the topic question
+- AP reasoning is visible without turning the lesson into test-prep jargon
+
+Technical verification must confirm:
+
+- canonical teacher data loads
+- generated student data matches the canonical source
+- teacher-only notes do not leak into student bytes
+- images load or degrade safely
+- Teacher Command Center routing works
+- lesson presentation links work
+- projection / browser behavior works
+- required CI gates pass on the exact commit
+
+Do not call a presentation "done," "live," "synced," or "shipped" from intention, a commit, a pull request, or a successful partial test.
+
+### AI decision rules
+
+These rules exist so different AI models do not reinterpret the process differently:
+
+- If the user asks to **plan** or **show** a topic, stop after the ninth-grade story, spine, storyboard, and visual requirements unless they explicitly ask for implementation.
+- If the user says **build it**, **run it**, **fix it**, or otherwise clearly requests execution, perform the full relevant pipeline through verification and shipping when repository access permits.
+- When the user provides another AI model's critique or proposal, evaluate it independently against the CED, the historical evidence, and the current repository. Do not agree merely because another model said it.
+- Preserve useful disagreement. State what to keep, modify, reject, or verify when peer-reviewing another proposal.
+- Never infer that a prior implementation is current. Inspect the actual repository before using "like Topic X" as a model.
+- Never let a convenient existing visual, file, or slide layout override the historical story.
+- If the ninth-grade story is unclear, do not solve that uncertainty by adding more slides.
+
+## Instructional architecture on the finished deck
+
+The finished presentation should normally contain these functions, but their exact order and number of slides follow the story rather than a rigid template:
 
 1. **Teacher Preflight**
-   - teacher-only, approximately two minutes
+   - teacher-only
    - states what the topic is really about
    - names the central mechanism or significance argument
-   - explicitly warns against the most likely content drift
-2. **Topic Theme / Essential Question**
-   - the projected opening makes the CED question visible
-   - students know what the lesson is trying to explain before evidence appears
-3. **Three Big Rocks**
-   - three memorable conceptual claims organize the lesson
-   - examples and vocabulary must serve one of these claims rather than become isolated facts
-4. **Story + Mechanism**
-   - historical narrative gives the content meaning
-   - mechanism slides explain why a cause, system, institution, or interaction produced an effect
-5. **Repeated Return to the Spine**
-   - section labels, checkpoints, and teacher notes reconnect details to the Big Rocks
-   - the lesson must not drift into a sequence of interesting facts
+   - warns against the most likely content drift
+2. **Narrative On-Ramp**
+   - connects the topic to what students already know
+   - makes the new historical problem or turn visible
+3. **Memorable Spine**
+   - students can state the central argument before the details accumulate
+4. **Evidence + Mechanism**
+   - examples prove claims
+   - mechanism slides explain why the development produced its effects
+5. **Return to the Spine**
+   - transitions, checkpoints, and teacher notes reconnect details to the argument
 6. **AP Synthesis**
-   - students use the evidence to answer the topic theme through the relevant AP reasoning skill
-   - the final checkpoint and landing sentence directly answer the topic question
+   - students use evidence to answer the actual learning objective through the appropriate reasoning move
+   - the landing sentence directly answers the topic question
 
-The projected slides should remain visually lean. Teacher Intelligence carries the richer LAND / STORY / ASK / LISTEN FOR / AP CONNECTION guidance.
+The projected slides should remain visually lean. Teacher Intelligence carries the richer LAND / STORY / ASK / LISTEN FOR / AP CONNECTION / AVOID guidance.
 
 ## Shared teacher surface
 
