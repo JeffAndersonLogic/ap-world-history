@@ -44,6 +44,12 @@
     prompt: 'How does the growth of travel writing itself serve as evidence that Afro-Eurasian networks were intensifying?'
   };
 
+  lesson.classPresentation = {
+    title: 'Class Slides: Cultural Consequences of Connectivity',
+    desc: 'Follow the three-part consequence story: diffusion, changing city fortunes, and travelers documenting an increasingly connected Afro-Eurasian world.',
+    url: 'presentation-topic-2-5-student.html'
+  };
+
   lesson.skillBuilder = {
     label: 'Continuity and Change practice',
     title: 'AP Skill Builder: Track a Cultural Consequence of Connectivity',
