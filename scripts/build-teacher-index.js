@@ -32,6 +32,7 @@ const TOOLS = [
   { label: 'Topic 2.3 Teaching OS', desc: 'Indian Ocean exchange: monsoon systems, maritime technology, port cities, diasporic communities, contextualization, and iPad control in one surface.', href: 'topic-2-3-os.html' },
   { label: 'Topic 2.4 Teaching OS', desc: 'Trans-Saharan trade: camel technology, caravan organization, expanded exchange, Mali, causation, and iPad control in one surface.', href: 'topic-2-4-os.html' },
   { label: 'Topic 2.5 Interactive Lesson', desc: 'Cultural consequences of connectivity: diffusion, changing urban fortunes, travel accounts, AP reasoning, and iPad control in one surface.', href: 'command-center-topic-2-5.html' },
+  { label: 'Topic 2.6 Interactive Lesson', desc: 'Environmental consequences of connectivity: biological corridors, crop diffusion, pathogen diffusion, AP causation, and iPad control in one surface.', href: 'command-center-topic-2-6.html' },
   { label: 'Skills Lens', desc: 'Drop a Canvas submissions zip to see completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
 ];
 
@@ -43,6 +44,7 @@ const INTERACTIVE_TOPICS = [
   { key: '2.3', out: 'topic-2-3-os.html' },
   { key: '2.4', out: 'topic-2-4-os.html' },
   { key: '2.5', out: 'command-center-topic-2-5.html' },
+  { key: '2.6', out: 'command-center-topic-2-6.html' },
 ];
 
 module.exports = { TOOLS, INTERACTIVE_TOPICS };
