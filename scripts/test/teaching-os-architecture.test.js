@@ -28,7 +28,10 @@ if (exists(shared)) {
   check('shared cockpit owns teacher layout CSS', src.includes('.cockpit') && src.includes('.intel-scroll') && src.includes('.timeline'));
 }
 
-for (const key of ['2-1', '2-2', '2-5', '2-6']) {
+const { DECKS } = require('../build-teaching-os-student-decks.js');
+const teachingKeys = DECKS.map(deck => deck.key.replace('.', '-'));
+
+for (const key of teachingKeys) {
   const wrapper = `teacher/data/topic-${key}-teaching.js`;
   const data = `teacher/data/topic-${key}-presentation-assets.js`;
   const visual = `teacher/data/topic-${key}-visual-assets.js`;
@@ -69,39 +72,54 @@ for (const key of ['2-1', '2-2', '2-5', '2-6']) {
   }
 }
 
-const build = read('scripts/build-teaching-os-student-decks.js');
-check('Teaching OS generator declares Topic 2.1', build.includes("key: '2.1'"));
-check('Teaching OS generator declares Topic 2.2', build.includes("key: '2.2'"));
-check('Teaching OS generator declares Topic 2.5', build.includes("key: '2.5'"));
-check('Teaching OS generator declares Topic 2.6', build.includes("key: '2.6'"));
 check('generated-artifact gate invokes Teaching OS generator', read('scripts/test/readings-reproducible.test.js').includes('scripts/build-teaching-os-student-decks.js'));
 
+const studentDir = path.join(ROOT, 'assets/data/presentations');
+const studentKeys = fs.readdirSync(studentDir)
+  .map(name => /^topic-(\d+-\d+)-student\.js$/.exec(name))
+  .filter(Boolean)
+  .map(match => match[1])
+  .sort();
+check(
+  'Teaching OS registry and generated student files agree in both directions',
+  JSON.stringify([...teachingKeys].sort()) === JSON.stringify(studentKeys),
+  `registry=${[...teachingKeys].sort().join(', ')} files=${studentKeys.join(', ')}`
+);
+
 console.log('\n  Authoring process discovery\n');
-const contractPath = 'docs/TEACHING-OS.md';
-check('canonical Teaching OS authoring contract exists', exists(contractPath));
-if (exists(contractPath)) {
-  const contract = read(contractPath);
+const authoringPath = 'docs/PRESENTATION-AUTHORING.md';
+const architecturePath = 'docs/TEACHING-OS.md';
+check('canonical presentation authoring standard exists', exists(authoringPath));
+check('canonical Teaching OS implementation contract exists', exists(architecturePath));
+
+if (exists(authoringPath)) {
+  const contract = read(authoringPath);
   check(
-    'authoring contract locks the story-first production line',
-    contract.includes('CED -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> visual plan -> canonical teacher build -> generated student deck -> ecosystem sync -> verify -> ship')
+    'authoring contract locks the final production line',
+    contract.includes('CED -> existing-course constraint check -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> story approval gate -> retelling slide -> asset and capability inventory -> visual plan -> canonical teacher build -> generated student deck -> ecosystem and registry sync -> instructional verification -> technical verification -> adjacent findings -> ship')
   );
-  check(
-    'authoring contract prevents image-first lesson design',
-    contract.includes('Do not let an available image determine the lesson')
-  );
-  check(
-    'authoring contract requires independent AI peer review',
-    contract.includes('evaluate it independently against the CED')
-  );
+  check('authoring contract says slide count follows the story', contract.includes('Slide count follows the story.'));
+  check('authoring contract contains no numeric slide-count target', !/\b12\s*(?:to|-)\s*16\b/.test(contract));
+  check('authoring contract makes Big Rocks optional', contract.includes('Big Rocks" are an optional organizing device'));
+  check('authoring contract includes the story approval gate', contract.includes('## 8. Story approval gate'));
+  check('authoring contract names a retelling slide', contract.includes('## 9. Name the retelling slide'));
+  check('authoring contract blocks remembered Commons filenames', contract.includes('Never write a Commons filename from memory'));
+  check('authoring contract requires meaningful failure-capable checks', contract.includes('Any check used as evidence that work is complete must be shown capable of failing'));
+  check('authoring contract records adjacent findings', contract.includes('## 17. Adjacent findings'));
+  check('authoring contract requires independent AI peer review', contract.includes('evaluate it independently against'));
+}
+
+if (exists(architecturePath)) {
+  const architecture = read(architecturePath);
+  check('Teaching OS points to the authoring standard', architecture.includes('docs/PRESENTATION-AUTHORING.md'));
 }
 
 for (const entry of ['CLAUDE.md', 'AGENTS.md', '.github/copilot-instructions.md']) {
   check(`${entry} exists for AI-agent discovery`, exists(entry));
   if (exists(entry)) {
-    check(
-      `${entry} points agents to the Teaching OS contract`,
-      read(entry).includes('docs/TEACHING-OS.md')
-    );
+    const src = read(entry);
+    check(`${entry} points agents to the authoring standard`, src.includes('docs/PRESENTATION-AUTHORING.md'));
+    check(`${entry} points agents to the Teaching OS contract`, src.includes('docs/TEACHING-OS.md'));
   }
 }
 
