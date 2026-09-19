@@ -1,6 +1,6 @@
 # Topic 2.6 Visual Upgrade Targets
 
-The Topic 2.6 Teaching OS is built and teachable with stable local instructional maps plus Wikimedia fallback images. For maximum visual impact, replace fallback visuals only after these assets are added here.
+The Topic 2.6 Teaching OS is built from the ninth-grade story spine: trade accidentally connected ecosystems. It is teachable with stable local instructional maps plus Wikimedia fallback images. For maximum visual impact, replace fallback visuals only after these assets are added here.
 
 ## Highest-value uploads
 
