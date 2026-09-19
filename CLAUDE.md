@@ -2,18 +2,24 @@
 
 ## Presentation design authority
 
-For any request to plan, build, revise, audit, or model a BeHistorical class presentation, **read `docs/TEACHING-OS.md` before changing code**. That document is the canonical presentation-design contract for Claude and for every other coding agent in this repository.
+For any request to plan, build, revise, audit, or model a BeHistorical class presentation, read **both** of these before changing code:
+
+1. `docs/PRESENTATION-AUTHORING.md` - the canonical instructional-design process
+2. `docs/TEACHING-OS.md` - the canonical Teaching OS implementation contract
 
 The locked production line is:
 
-**CED -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> visual plan -> canonical teacher build -> generated student deck -> ecosystem sync -> verify -> ship**
+**CED -> existing-course constraint check -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> story approval gate -> retelling slide -> asset and capability inventory -> visual plan -> canonical teacher build -> generated student deck -> ecosystem and registry sync -> instructional verification -> technical verification -> adjacent findings -> ship**
 
-Do not start by cloning an old deck, counting slides, or searching for images. The CED decides what students must learn; the ninth-grade story decides how they encounter it. Big Rocks are useful only when the story naturally produces them. Existing images do not get to determine the lesson.
+Do not start by cloning an old deck, counting slides, or searching for images. The CED decides what students must learn; the ninth-grade story decides how they encounter it. Organizing claims follow the history rather than a fixed count.
 
-When another AI model's proposal is supplied, evaluate it independently against the CED, historical evidence, and current repository. Do not treat agreement with the other model as a goal. Keep, modify, reject, or verify its claims explicitly when that distinction matters.
+The story approval gate must be satisfied before implementation, either by reviewed approval or by Jeff explicitly waiving the gate. If waived, say so in the final build report.
 
-A presentation is not complete because a file or commit exists. Follow the architecture, generation, sync, verification, and shipping requirements in `docs/TEACHING-OS.md` before reporting it as done or live.
+When another AI model's proposal is supplied, evaluate it independently against the CED, historical evidence, the authoring standard, and the current repository. Agreement is not a goal. Keep, modify, reject, or verify its claims when that distinction matters.
 
+Any check used as evidence of completion, committed or disposable, must be shown capable of failing before its green result is trusted when that ability has not already been demonstrated.
+
+A presentation is not complete because a file or commit exists. Follow the authoring, architecture, generation, sync, verification, adjacent-findings, and shipping requirements in the two documents above before reporting it as done or live.
 
 ## Git
 
