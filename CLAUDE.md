@@ -992,8 +992,22 @@ whole reason diagnosis runs in parallel with the build rather than after it.
 the storage it is measuring, so a wipe takes the evidence with it. It cannot
 report its own erasure. What it reports instead is a record that has come back
 **new**: a `firstSeen` of today and a `loads` count of 1, on a student who has
-been in this course for weeks, **is** the eviction. Read a reset record as the
-finding, not as the absence of one.
+been in this course for weeks, means **this storage was cleared**. It does not
+say by what. Browser eviction, a district cleanup policy, a different Chromebook
+profile, a cleared-site-data event and a first load after a deploy all produce
+the same fresh record. Read a reset record as a question worth chasing, not as
+an answer and not as the absence of one.
+
+**`persisted: false` is not a cause either.** It means this site's storage is
+best-effort and may be evicted by the browser under storage pressure, which is
+the normal state for a plain website. That keeps browser eviction a live
+candidate. It does not establish what any particular student lost work to, and
+this section exists partly because the first draft of that comment said it did.
+
+**`ok` is a slight undercount and `failed` is not.** Successful writes are held
+in memory and flushed at most once every five seconds, plus on `pagehide`, so a
+crash or a killed tab can lose a few of them. Failures flush immediately. Do not
+compute a failure rate from the two without accounting for that.
 
 **Two keys stay separate, and one of them is load-bearing.** The record is
 stored under `behistorical-save-health`, deliberately outside the

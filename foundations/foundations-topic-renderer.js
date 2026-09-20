@@ -332,8 +332,11 @@ const byId=id=>document.getElementById(id);
 // The record lives in the same storage it is measuring, so a wipe takes the
 // evidence with it. It cannot report its own erasure. What it can report is a
 // record that has come back *new*: a `firstSeen` of today, and a `loads` count
-// of 1, on a student who has been in this course for weeks, is the eviction.
-// Read a reset record as the finding, not as the absence of one.
+// of 1, on a student who has been in this course for weeks, means this storage
+// was cleared. It does not say by what. Browser eviction, a district cleanup
+// policy, a different Chromebook profile, a cleared-site-data event and a first
+// load after a deploy all produce the same fresh record. Read a reset record as
+// a question worth chasing, not as an answer and not as the absence of one.
 //
 // It also cannot tell you which of the four candidate causes fired. What it
 // narrows is which ones are still candidates: `storageLive` false points at a
@@ -349,6 +352,13 @@ const byId=id=>document.getElementById(id);
   // which is the opposite of helpful on a device already short of quota. The
   // record is kept in memory and flushed on a change worth keeping: any
   // failure, the first load, and at most once per interval otherwise.
+  //
+  // The cost, stated because it bounds one of the two counters: a hard kill
+  // (a crash, a power loss, a tab killed without firing pagehide) can lose up
+  // to one interval of *successful* writes, so `ok` is a slight undercount.
+  // Failures flush immediately and are not affected, which is the half that
+  // matters here. Do not compute a failure *rate* from ok and failed without
+  // accounting for that.
   var FLUSH_INTERVAL_MS = 5000;
 
   var state = null;
@@ -420,11 +430,12 @@ const byId=id=>document.getElementById(id);
     writeRaw(state);
   }
 
-  // navigator.storage answers the quota question directly, and it is the one
-  // candidate cause that can be confirmed rather than inferred. `persisted`
-  // false means this site's storage is best-effort and the browser may delete
-  // it without asking, which is the normal state for a plain website and is
-  // exactly the thing students have been losing work to.
+  // navigator.storage is the only part of this that reports a browser state
+  // directly rather than counting events. `persisted` false means this site's
+  // storage is best-effort and may be evicted by the browser under storage
+  // pressure, which is the normal state for a plain website. That keeps browser
+  // eviction a live candidate. It does not by itself establish the cause of any
+  // work a student has already lost, and must not be quoted as though it did.
   function measureQuota() {
     var storage = global.navigator && global.navigator.storage;
     if (!storage) return;
