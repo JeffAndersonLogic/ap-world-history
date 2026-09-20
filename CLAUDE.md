@@ -218,6 +218,8 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-skills-map.js`, regenerate `assets/data/skills-map.js`, the AP skill and evidence-term lookup the Skills Lens inlines. Run it after editing a checkpoint's `terms`, a `skillBuilder.label`, or a reading's `q-skill` badges.
 - `node scripts/build-coach-prompt.js`, inline `assets/js/behistorical-coach-prompt.js` into **both** renderers between their sentinels. That file is the one implementation of the AI coach paste contract, shared by the checkpoint bridge, all 77 generated readings, and the Node side. `--check` fails on drift, which is what `validate.js` runs. Never hand-edit between the sentinels.
 - `node scripts/build-classroom-config.js`, regenerate `assets/js/behistorical-classroom.js` from `scripts/lib/classroom-config.js`, and inline it into both renderers and `behistorical-room-v2.js` between sentinels. `--check` fails on drift, which is what the offline suite runs. Never hand-edit between the sentinels or the generated file. See "Two Classrooms, One Site" below.
+- `node scripts/build-save-health.js`, inline `assets/js/behistorical-save-health.js` into both renderers between sentinels. That file is the one implementation of the save-failure counter, and it is the Phase 1 instrumentation from the persistence plan in AndersonLogic-OS. `--check` fails on drift, which is what the offline suite runs. Never hand-edit between the sentinels. See "Save health" below.
+- `node scripts/test/save-health.test.js`, prove a failed draft save is counted rather than lost, against the real `BHDraftStore` lifted out of each renderer rather than a copy written for the test. In the offline suite. It also runs its own negative controls, so its green is evidence rather than an assumption.
 - `node scripts/wire-beintheroom-magicschool.js [--dry-run]`, one-time sweep that gives every v1 BeInTheRoom scenario's MagicSchool button the same classroom-aware wiring. Idempotent; run it again after adding a new hand-authored (non-v2) scenario with its own MagicSchool button.
 - `node scripts/wire-beintheroom-work-capture.js [--dry-run]`, one-time sweep that gives every hand-authored v1 BeInTheRoom scenario the same wiring to `assets/js/behistorical-beintheroom-capture.js`, so its AP reflection reaches Gather All My Work. Idempotent; run it again after adding a new hand-authored scenario. What it writes is a single `BHBeInTheRoomCapture.wire(...)` call, never the logic itself, because the version that wrote the logic put 23 copies of it in the repo and every copy had the same bug. See "BeInTheRoom reflections reach Canvas" below.
 - `node scripts/test/beintheroom-capture.test.js`, drive a real hand-authored scenario in Chromium, type an AP reflection, reopen the page the way a student does, and assert the reflection is still in the box, still in storage, and still collected by the real lesson page's Gather All My Work. In the browser suite. It reads its scenario list off the lesson data files, so a scenario added later is covered by existing. See "BeInTheRoom reflections reach Canvas" below.
@@ -958,6 +960,75 @@ Every picture a student can see must be on-topic and must be impossible to break
 > could not scroll the lesson until they reloaded. **Every structural check stayed
 > green through all of it**, because nothing offline can see a scroll lock. Do not
 > reintroduce an unconditional `BHModalStack.push`.
+
+## Save health
+
+A student's work is saved in the browser on their Chromebook, and roughly two
+students a day lose it. Until now that loss was **silent**: nothing counted it,
+nothing reported it, and every check in this repository stayed green through all
+of it. "About two a day" was an anecdote, and an anecdote cannot tell you which
+of four causes you are looking at.
+
+`assets/js/behistorical-save-health.js` is the counter, and it is the one
+implementation. `scripts/build-save-health.js` inlines it into both renderers
+between sentinels, for the same reason the coach prompt builder and the
+classroom config are inlined: another `<script src>` would be a sweep across
+hundreds of hand-authored shells, and every sweep script here is permanent
+maintenance debt.
+
+**It counts whether a save worked. It never records what was written.** No
+vendor, no network, no authentication, and nothing leaves the device. This is
+Phase 1 of the persistence plan in AndersonLogic-OS at
+`04_PRODUCTS/BeHistorical/Student-Response-Persistence-Architecture-2026-09-08.md`,
+which is the only phase authorized. Phase 2 onward is a proposal awaiting
+district decisions and nothing here anticipates them.
+
+**Why the baseline matters more than the number does today.** Once cloud
+persistence ships, a student reporting lost work cannot be told apart from this
+same failure still running unless there is a figure from before. That is the
+whole reason diagnosis runs in parallel with the build rather than after it.
+
+**What it cannot do, which decides how to read the output.** The record lives in
+the storage it is measuring, so a wipe takes the evidence with it. It cannot
+report its own erasure. What it reports instead is a record that has come back
+**new**: a `firstSeen` of today and a `loads` count of 1, on a student who has
+been in this course for weeks, **is** the eviction. Read a reset record as the
+finding, not as the absence of one.
+
+**Two keys stay separate, and one of them is load-bearing.** The record is
+stored under `behistorical-save-health`, deliberately outside the
+`behistorical-draft-` prefix, because `collectLessonWork()` sweeps every key
+under that prefix and treats what it finds as student writing. A telemetry key
+inside it would be pasted into Canvas as though it were an answer. This is the
+same trap the confidence keys already document.
+
+**The telemetry writes through raw `localStorage`, never through
+`BHDraftStore`.** A write that went through the store being measured would
+recurse on failure, and would land in the sweep above.
+
+**Reading it takes standing at the device**, which is the honest scope of a
+browser-local diagnostic. `window.BHSaveHealth.report()` in dev tools prints the
+record. Nothing routes it to the teacher yet, and nothing should be bolted onto
+the Canvas record footer to do so without reading `docs/CANVAS-CAPTURE.md`
+first: everything printed between a record's label and the footer is hashed into
+that record, so a loose diagnostic line would flag a student's honest work as
+`EDITED`.
+
+**Two checks, because the failure is silent in both directions.**
+`build-save-health.js --check` runs in the offline suite and fails on a
+hand-edit to either inlined copy. `scripts/test/save-health.test.js` proves the
+behavior, against the real `BHDraftStore` lifted out of each renderer rather
+than a copy written for the test, because a test that reimplements its subject
+can only say that the test is self-consistent. It carries its own negative
+controls: three real ways the wiring could be reverted, each of which must turn
+the assertions red.
+
+**Three write paths exist and only one is instrumented so far.** The renderers
+go through `BHDraftStore`; the 77 First & 10 readings carry their own capture
+block; the BeInTheRoom scenarios go through
+`assets/js/behistorical-beintheroom-capture.js`. The other two are not counted
+yet, so today's figure is a floor rather than a total. Instrument them before
+quoting a course-wide number.
 
 ## The Lecture Deck
 

@@ -41,6 +41,7 @@ const SUITES = {
     ['scripts/test/canvas-rich-clipboard.test.js', 'Canvas rich hierarchy + HTML/plain clipboard contract'],
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
+    ['scripts/test/save-health.test.js', 'a failed draft save is counted, not lost'],
     ['scripts/test/teaching-os-architecture.test.js', 'Teaching OS shared architecture and student-deck source of truth'],
     ['scripts/test/foundations-golden.js', 'Foundations content vs the hand-authored originals'],
     ['scripts/test/readings-golden.js', '58 unit readings vs the hand-authored originals'],
