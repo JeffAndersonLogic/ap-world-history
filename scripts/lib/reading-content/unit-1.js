@@ -359,7 +359,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Mongol</span> army of <span class=\"kt\">Hulagu Khan</span>, grandson of Genghis Khan, swept westward from Central Asia, destroying cities and demanding submission. When Hulagu reached Baghdad, the Abbasid caliph <span class=\"kt\">al-Musta‘sim</span> refused to surrender. Mongol forces breached the city’s walls and destroyed the Abbasid capital. Libraries were ruined. People were killed in enormous numbers. Later traditions claimed the Tigris River ran black with ink from the books thrown into it."
+            "html": "The <span class=\"kt\">Mongol</span> army of <span class=\"kt\">Hulagu Khan</span>, grandson of Chinggis Khan, swept westward from Central Asia, destroying cities and demanding submission. When Hulagu reached Baghdad, the Abbasid caliph <span class=\"kt\">al-Musta‘sim</span> refused to surrender. Mongol forces breached the city’s walls and destroyed the Abbasid capital. Libraries were ruined. People were killed in enormous numbers. Later traditions claimed the Tigris River ran black with ink from the books thrown into it."
           },
           {
             "type": "p",
