@@ -93,7 +93,7 @@ const LO_LETTERS_REMOVED = 'the AP learning objective letters were replaced with
  */
 const CROP_DIFFUSION_2_6 = 'Topic 2.6\'s reading, targets, and Checkpoint 2 covered only the plague; its own Key Concept also names crop diffusion (bananas in Africa, new rice varieties in East Asia, citrus in the Mediterranean) as an environmental consequence of connectivity, added 2026-09-11.';
 
-const CHINGGIS_NAMING = 'Coursewide naming standard changed “Genghis Khan” to “Chinggis Khan” on 2026-09-21.';
+const CHINGGIS_NAMING = 'Coursewide naming standard changed the legacy English spelling to “Chinggis Khan” on 2026-09-21.';
 
 const INTENTIONAL = [
   { field: 'sections[].paragraphs[].text', contains: 'grandson of Chinggis Khan', why: CHINGGIS_NAMING },
