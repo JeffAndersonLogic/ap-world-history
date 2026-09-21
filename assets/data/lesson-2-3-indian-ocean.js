@@ -23,6 +23,18 @@
   }
 })();
 
+const BH23_STUDENT_ASSETS = '../assets/images/topics/2-3/';
+const BH23_STUDENT = {
+  dhow: BH23_STUDENT_ASSETS + '2.3%20-%20Dhow%20Ship.jpeg',
+  diaspora: BH23_STUDENT_ASSETS + '2.3%20-%20Diasporic%20Communities.jpg',
+  tradeMap: BH23_STUDENT_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade%20Map%20Detailed.png',
+  orgChart: BH23_STUDENT_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade%20Org%20Chart.png',
+  malayMarket: BH23_STUDENT_ASSETS + '2.3%20-%20Malay%20market.jpg',
+  monsoonMap: BH23_STUDENT_ASSETS + '2.3%20-%20Monsoons%20map.jpg',
+  swahili: BH23_STUDENT_ASSETS + '2.3%20-%20Swahili%20Merchants.jpg',
+  zhengHe: BH23_STUDENT_ASSETS + '2.3%20-%20Zheng%20He%20Fleet.jpg'
+};
+
 window.BEHISTORICAL_LESSON = {
   meta: {
     course: 'AP WORLD HISTORY',
@@ -129,10 +141,10 @@ window.BEHISTORICAL_LESSON = {
           'Environmental knowledge and maritime technology worked together: they lowered risk, increased carrying capacity, and expanded the volume and geographic range of trade.'
         ],
         image: {
-          title: 'Indian Ocean basin',
+          title: 'Monsoon wind system',
           caption: 'Seasonal winds and maritime technologies turned the ocean into a predictable exchange system.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+          url: BH23_STUDENT.monsoonMap,
+          sourceUrl: BH23_STUDENT.monsoonMap
         }
       },
       {
@@ -143,10 +155,10 @@ window.BEHISTORICAL_LESSON = {
           'Goods such as spices, textiles, gold, ivory, and porcelain mattered because the flow of valuable products generated revenue and political leverage for states controlling strategic ports and routes.'
         ],
         image: {
-          title: 'Indian Ocean trade routes',
-          caption: 'Commercial nodes became political nodes because states could tax and protect exchange.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+          title: 'Swahili Coast merchants',
+          caption: 'Commercial nodes became political nodes because states could tax, protect, and organize exchange.',
+          url: BH23_STUDENT.swahili,
+          sourceUrl: BH23_STUDENT.swahili
         }
       },
       {
@@ -157,10 +169,10 @@ window.BEHISTORICAL_LESSON = {
           'Diasporic communities were more than temporary visitors: they created durable networks of trust, family, religion, language, and commercial knowledge across the ocean.'
         ],
         image: {
-          title: 'Port-city cultural interaction',
+          title: 'Diasporic communities',
           caption: 'Diasporic communities made Indian Ocean ports centers of sustained cross-cultural interaction.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+          url: BH23_STUDENT.diaspora,
+          sourceUrl: BH23_STUDENT.diaspora
         }
       },
       {
@@ -171,10 +183,10 @@ window.BEHISTORICAL_LESSON = {
           'Zheng He\'s expeditions demonstrate how intensified interregional contact encouraged **technological and cultural transfers** across a maritime world already tied together by trade.'
         ],
         image: {
-          title: 'Indian Ocean maritime reach',
+          title: 'Zheng He fleet',
           caption: 'Zheng He\'s voyages operated within an already mature Indian Ocean exchange system.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+          url: BH23_STUDENT.zhengHe,
+          sourceUrl: BH23_STUDENT.zhengHe
         }
       }
     ]
@@ -182,8 +194,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: 'Indian Ocean Trade Routes',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png',
+    url: BH23_STUDENT.tradeMap,
+    sourceUrl: BH23_STUDENT.tradeMap,
     caption: 'The Indian Ocean basin connected East Africa, Arabia, South Asia, Southeast Asia, and China through maritime routes shaped by seasonal monsoon winds.',
     intro: 'Use the map to connect environment, technology, state growth, diaspora communities, and Zheng He to one maritime system.',
     prompt: 'Why would predictable winds and strategic port locations create both commercial wealth and cultural diversity?',
@@ -201,9 +213,15 @@ window.BEHISTORICAL_LESSON = {
     url: 'deep-reading-topic-2-3-indian-ocean.html'
   },
 
+  studentPresentation: {
+    title: 'Student Presentation: Exchange in the Indian Ocean',
+    desc: 'Projection-ready student version of the 2.3 presentation, aligned to the locked story spine.',
+    url: 'student-presentation-topic-2-3-indian-ocean.html'
+  },
+
   first10: {
-    title: 'First & 10: The Ocean That Connected the World',
-    embedUrl: 'first-and-10-topic-2-3-indian-ocean-capture.html?v=response-id-fix-v1'
+    title: 'First & 10: The Ocean That Ran on a Schedule',
+    embedUrl: 'first-and-10-topic-2-3-indian-ocean-capture.html?v=locked-format-v3'
   },
 
   evidenceLab: {
