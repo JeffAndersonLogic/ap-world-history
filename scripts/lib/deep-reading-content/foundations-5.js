@@ -80,7 +80,7 @@ module.exports = {
           blocks: [
             { p: `The dynasty has been ruling from the south since <span class="num">1127</span>, when Jurchen forces took the northern capital and carried off the emperor. What remains is the Southern Song, governing from <span class="kt">Lin'an</span>, modern Hangzhou, a city of perhaps a million or more people and among the largest in the world. The Jurchen Jin hold the north, which means the overland routes to Central Asia run through somebody else's territory.` },
             { p: `The economy is extraordinary by any contemporary measure. Paper money circulates, having begun with merchant notes in Sichuan before the state took over issue in the eleventh century. Printing is widespread, including movable type from the eleventh century, though woodblock remained the standard method. Iron output, coal use, canal shipping and urban markets are all at levels no other economy of the period approaches. Zhu Xi, who dies in <span class="num">1200</span>, has just completed the Neo-Confucian synthesis that will define the examination curriculum for centuries.` },
-            { p: `And on the northern steppe, Temujin is finishing the unification of the Mongol tribes. He will take the title Genghis Khan in <span class="num">1206</span>. Nothing in the Song snapshot suggests what that is about to mean, which is itself a lesson about reading a moment in time.` }
+            { p: `And on the northern steppe, Temujin is finishing the unification of the Mongol tribes. He will take the title Chinggis Khan in <span class="num">1206</span>. Nothing in the Song snapshot suggests what that is about to mean, which is itself a lesson about reading a moment in time.` }
           ]
         },
         {
@@ -491,7 +491,7 @@ module.exports = {
           heading: 'What a period boundary actually is',
           blocks: [
             { p: `<span class="kt">Periodization</span> is the practice of cutting continuous time into named stretches. It is unavoidable, because a history that refuses to divide anything cannot be organized or taught, and it is always an argument, because the moment you choose says what you think the story is about. A course that began in 1492 would be making a claim about European expansion. A course that began in 1750 would be making one about industry. This one begins around 1200, and that is a claim too.`,  },
-            { p: `The <em>c.</em> in c. 1200 is doing real work and is not decoration. It stands for circa, meaning approximately, and it is there because the boundary is a convenience rather than a date on which anything occurred. Angkor Wat was finished around 1150, the Delhi Sultanate was founded in 1206, Zhu Xi died in 1200 and Genghis Khan took his title in 1206. The line is drawn through a cluster, not at a moment.` },
+            { p: `The <em>c.</em> in c. 1200 is doing real work and is not decoration. It stands for circa, meaning approximately, and it is there because the boundary is a convenience rather than a date on which anything occurred. Angkor Wat was finished around 1150, the Delhi Sultanate was founded in 1206, Zhu Xi died in 1200 and Chinggis Khan took his title in 1206. The line is drawn through a cluster, not at a moment.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',

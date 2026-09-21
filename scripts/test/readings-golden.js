@@ -26,7 +26,7 @@ const fromDisk = process.argv.includes('--from-disk');
 // Keep the historical fixture untouched, but accept that full rewrite only while
 // its canonical source file is byte-for-byte the approved version below. Any
 // later Unit 2 First & 10 edit changes this Git blob hash and forces a new review.
-const APPROVED_UNIT2_REWRITE_BLOB = '37a44e8ea9368be44b4c6eda98295eb285ff8e47';
+const APPROVED_UNIT2_REWRITE_BLOB = '71a8eab390cdd9767cb9fd99b456e2d9d6e02c7c';
 const unit2SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-2.js');
 function gitBlobSha(text) {
   const body = Buffer.from(text, 'utf8');
@@ -39,7 +39,7 @@ const approvedUnit2Rewrite = !fromDisk && fs.existsSync(unit2SourcePath)
 // audit. Accept that reviewed First & 10 rewrite only while the authored Unit 3
 // source remains byte-for-byte this approved Git blob. Any later edit forces a
 // fresh review instead of silently moving the historical baseline.
-const APPROVED_UNIT3_REWRITE_BLOB = 'af219d419ab7c3ae76983a5ed41cd6a26a12ddd4';
+const APPROVED_UNIT3_REWRITE_BLOB = 'a00ac0e1d0133f6be4fe889dce355c340123be1d';
 const unit3SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-3.js');
 const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
   && gitBlobSha(fs.readFileSync(unit3SourcePath, 'utf8')) === APPROVED_UNIT3_REWRITE_BLOB;
@@ -93,7 +93,12 @@ const LO_LETTERS_REMOVED = 'the AP learning objective letters were replaced with
  */
 const CROP_DIFFUSION_2_6 = 'Topic 2.6\'s reading, targets, and Checkpoint 2 covered only the plague; its own Key Concept also names crop diffusion (bananas in Africa, new rice varieties in East Asia, citrus in the Mediterranean) as an environmental consequence of connectivity, added 2026-09-11.';
 
+const CHINGGIS_NAMING = 'Coursewide naming standard changed the legacy English spelling to “Chinggis Khan” on 2026-09-21.';
+
 const INTENTIONAL = [
+  { field: 'sections[].paragraphs[].text', contains: 'grandson of Chinggis Khan', why: CHINGGIS_NAMING },
+  { field: 'sections[].blocks[].text', contains: 'grandson of Chinggis Khan', why: CHINGGIS_NAMING },
+
   { field: 'footerNote',
     after: 'Organize your thinking here, submit your final work in Canvas.',
     why: 'the Google Form was retired 2026-08-07; 28 readings still pointed students at it. This is the wording the other 30 already used.' },
