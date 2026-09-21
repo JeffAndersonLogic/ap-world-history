@@ -112,12 +112,12 @@ window.BEHISTORICAL_LESSON = {
       {
         title: 'Big Rock 1: Build the Empire',
         bullets: [
-          '**Genghis Khan** unified competing steppe groups and reorganized military loyalty around a larger command system, helping create a highly coordinated conquering force.',
+          '**Chinggis Khan** unified competing steppe groups and reorganized military loyalty around a larger command system, helping create a highly coordinated conquering force.',
           'Mongol armies combined **mounted mobility, archery, intelligence, feigned retreat, and siege technologies borrowed from conquered peoples**, allowing them to defeat both nomadic and settled opponents.',
           'The result was a vast land empire stretching across much of Eurasia, but conquest created a second problem: how to govern enormous distances and diverse populations.'
         ],
         image: {
-          title: 'Genghis Khan',
+          title: 'Chinggis Khan',
           caption: 'A later Yuan dynasty portrait of the founder of the Mongol Empire.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg'
@@ -127,7 +127,7 @@ window.BEHISTORICAL_LESSON = {
         title: 'Big Rock 2: Govern, Then Fragment',
         bullets: [
           'Mongol rulers used **regional administration, religious tolerance, local officials, and the Yam relay system** to govern distance and diversity.',
-          'After Genghis Khan, succession disputes, regional interests, distance, and adaptation to local societies weakened political unity.',
+          'After Chinggis Khan, succession disputes, regional interests, distance, and adaptation to local societies weakened political unity.',
           'The empire fragmented into major **Mongol khanates**, including the Yuan dynasty, Ilkhanate, Chagatai Khanate, and Golden Horde. Mongol rule continued, but as multiple regional states rather than one unified empire.'
         ],
         image: {
