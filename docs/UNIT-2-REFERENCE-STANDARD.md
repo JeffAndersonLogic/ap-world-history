@@ -30,7 +30,7 @@ Automated checks protect the first four categories where code can test them reli
 
 A module does **not** need to repeat the entire CED. It needs a defined job in the topic ecosystem.
 
-- **First & 10:** establish the topic's foundation, vocabulary, and causal/problem frame.
+- **First & 10:** establish the complete conceptual story students need before teacher-led instruction, with essential vocabulary embedded in context and strategically placed AP Thinking moves. Length is governed by instructional quality and CED completeness, not by a fixed word count or ten-minute ceiling.
 - **Content Delivery:** make the teacher-led historical story and Big Rocks explicit.
 - **BeSurreal:** create a memorable conceptual confrontation that serves the current topic.
 - **AP Skill Builder:** practice the historical reasoning process with topic-valid evidence.

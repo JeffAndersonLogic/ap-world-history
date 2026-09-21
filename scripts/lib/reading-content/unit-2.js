@@ -93,37 +93,39 @@ module.exports = {
     lessonPage: 'lesson-2-2-mongol-empire.html',
     docTitle: 'BeHistorical — Module 02 | First &amp; 10 | Topic 2.2 The Mongol Empire',
     headerSubtitle: 'Topic 2.2, The Mongol Empire &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'Build, Connect, <em>Transfer</em>, Fragment',
-    deck: 'The Mongol story is not only conquest. Mongol expansion created new states, linked distant regions more directly, encouraged trade and communication, moved knowledge across Eurasia, and then fragmented into regional khanates.',
-    skillTags: ['Continuity & Change', 'Causation', 'State Building'],
+    titleHtml: 'Conquest, Connection, <em>Exchange</em>',
+    deck: 'The Mongols are remembered as conquerors. The bigger AP World story is what their conquests did to Eurasia: they built new states, changed the conditions of long-distance exchange, moved knowledge across cultures, and then fragmented into regional khanates.',
+    skillTags: ['Causation', 'Continuity & Change', 'Significance'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Track four moves: how Mongol rulers built an empire, why it divided, how imperial expansion facilitated exchange, and what specific knowledge or cultural practices moved through those connections.',
-      readingTarget: 'By the end, you should be able to explain Mongol state building and fragmentation, the Pax Mongolica as a trade-and-communication system, and three concrete examples of cultural or technological transfer.'
+      beforeYouRead: '<strong>Conquest → Empire → Pax Mongolica → Connectivity → Exchange.</strong> Use that chain to organize everything you meet.',
+      readingTarget: 'How did an empire built through conquest make Eurasia more connected?'
     },
-    vocabulary: ['Chinggis Khan', 'Khanates', 'Yuan Dynasty', 'Ilkhanate', 'Golden Horde', 'Pax Mongolica', 'Yam', 'Greco-Islamic Medical Knowledge', 'Numbering Systems', 'Uyghur Script'],
+    vocabulary: ['Chinggis Khan', 'Mounted Archers', 'Siege Warfare', 'Yam', 'Pax Mongolica', 'Khanates', 'Uyghur Script', 'Greco-Islamic Medical Knowledge', 'Numbering Systems'],
     sections: [
-      section('1', 'State Building', 'From Steppe Confederation to Eurasian Empire', [
-        'Temujin, later known as <span class="kt">Chinggis Khan</span>, unified Mongol groups and built a disciplined military-political system capable of rapid expansion. Mongol armies combined cavalry mobility, organization, intelligence, and the use of specialists from conquered peoples.',
-        'Conquest produced new imperial states across Eurasia. Mongol rulers often governed pragmatically, using local administrators and existing institutions when those tools helped them control large and diverse populations.'
-      ], 'AP Thinking, State Building', '<strong>State building is a process.</strong> Connect military organization and pragmatic administration to the creation of durable political control.'),
-      section('2', 'Change Over Time', 'One Empire Became Several Khanates', [
-        'The empire did not remain politically unified. Over time it divided into major <span class="kt">khanates</span>, including the Yuan Dynasty in China, the Ilkhanate in Persia, the Golden Horde in Russia and Eastern Europe, and the Chagatai Khanate in Central Asia.',
-        'Fragmentation reflected the difficulty of governing vast distances, succession disputes, and increasing regional differences. Mongol political unity declined even while many of the connections created during expansion continued.'
-      ], 'AP Thinking, Continuity & Change', '<strong>Separate political decline from network collapse.</strong> The unified empire fragmented, but routes, contacts, and exchanges did not instantly disappear.'),
-      section('3', 'Exchange', 'Empire Facilitated Trade and Communication', [
-        'The <span class="kt">Pax Mongolica</span> describes the relative stability that followed conquest across much of Mongol-controlled Eurasia. Merchants, diplomats, missionaries, and specialists could move through territories under related Mongol regimes with greater protection than in many earlier periods.',
-        'The <span class="kt">Yam</span> relay system supported rapid communication across long distances. Imperial expansion therefore mattered economically as well as politically: new populations were drawn into wider trade and communication networks.'
-      ], 'AP Thinking, Causation', '<strong>Explain the mechanism:</strong> imperial control and relay systems lowered some barriers to movement, which facilitated trade and communication.'),
-      section('4', 'Transfer', 'Connectivity Moved Knowledge as Well as Goods', [
-        'The CED highlights specific transfers associated with intensified Mongol-era contacts. <span class="kt">Greco-Islamic medical knowledge</span> moved toward western Europe, and <span class="kt">numbering systems</span> also spread into Europe through wider Afro-Eurasian contacts.',
-        'Mongol rulers themselves borrowed from conquered peoples. They adopted the <span class="kt">Uyghur script</span> for writing Mongolian, a clear example of conquerors incorporating a useful cultural technology. These transfers show why Mongol significance extends beyond battlefield conquest.'
-      ], 'AP Thinking, Significance', '<strong>Use the specific transfer to prove the larger pattern.</strong> The empire mattered because intensified contact allowed knowledge and practices to move across regions and political boundaries.')
+      section('1', 'Build', 'Chinggis Khan Turns Steppe Warriors into an Empire', [
+        'Around 1200, the Mongols were not one giant empire. They were nomadic peoples of the Eurasian steppe. Then Temujin—better known as <span class="kt">Chinggis Khan</span>—united many competing groups and reorganized them into a disciplined military system.',
+        'Mongol armies used fast <span class="kt">mounted archers</span>, intelligence, coordination, and tactics such as feigned retreat. Just as important, they adapted. When horses and bows could not break fortified cities, the Mongols recruited engineers and borrowed <span class="kt">siege warfare</span> from conquered peoples. Their pattern was simple: <strong>conquer → learn → adapt → conquer again.</strong>'
+      ], 'AP Thinking, Causation', '<strong>Explain the mechanism, not just the weapon.</strong> Organization, mobility, and adaptation worked together to make conquest possible.'),
+      section('2', 'Connect', 'Conquest Creates a New Problem: How Do You Run It?', [
+        'A huge empire is difficult to govern. Mongol rulers used local administrators, tolerated multiple religious communities, and built communication systems that made distance easier to manage. The <span class="kt">Yam</span> relay network let official messengers change horses at stations and move information quickly across enormous territory.',
+        'That same political reach affected trade. The <strong>Silk Roads already existed</strong>; the Mongols did not create them. But large stretches of those routes now passed through related Mongol territories. Merchant protection, communication, and fewer political barriers could make travel more predictable. Historians often call this period of increased security and movement the <span class="kt">Pax Mongolica</span>, or “Mongol Peace.”'
+      ], 'AP Thinking, Continuity & Change', '<strong>Name what stayed and what changed.</strong> The routes continued; Mongol rule changed the political conditions, protection, and communication across them.'),
+      section('3', 'Transfer', 'When People Move, Knowledge Moves Too', [
+        'More movement meant more contact among merchants, diplomats, missionaries, scholars, and specialists. That contact helped knowledge cross political and cultural boundaries.',
+        'The College Board highlights three examples. <span class="kt">Greco-Islamic medical knowledge</span> circulated toward western Europe. <span class="kt">Numbering systems</span> and mathematical knowledge also moved into Europe through wider Afro-Eurasian exchange. The Mongols themselves adopted the <span class="kt">Uyghur script</span> for writing Mongolian, showing that conquerors could borrow useful practices from the peoples they encountered.',
+        'The Mongols did not invent these ideas. Their significance is that their empire intensified the contacts that helped ideas and practices travel farther.'
+      ], 'AP Thinking, Significance', '<strong>Use the example to prove the pattern.</strong> A transfer matters because it shows how increased connectivity changed more than trade in goods.'),
+      section('4', 'Fragment', 'Political Unity Weakens, but the Connections Do Not Vanish', [
+        'The empire eventually became too difficult to hold together as one political unit. Succession disputes, vast distances, and regional interests weakened centralized rule. Mongol territory divided into major <span class="kt">khanates</span>, including the Yuan Dynasty, Ilkhanate, Golden Horde, and Chagatai Khanate.',
+        'That does not mean the connected world created under Mongol rule disappeared overnight. Political unity declined while many routes, contacts, and habits of exchange continued. That is the central contradiction of the Mongol story: an empire built through conquest also created conditions that made Eurasia more connected.'
+      ], 'AP Thinking, Continuity & Change', '<strong>Do not confuse fragmentation with total collapse.</strong> Unified political control declined while many connections continued.')
     ],
-    takeaway: 'The Mongols built new imperial states, later fragmented into khanates, facilitated Eurasian trade and communication through imperial connections, and encouraged cultural and technological transfers including Greco-Islamic medicine, numbering systems, and the adoption of the Uyghur script.',
+    takeaway: 'Conquest → Connection → Exchange. Chinggis Khan and the Mongols built a vast empire through organization and adaptation. Mongol rule and the Yam helped create the conditions associated with the Pax Mongolica, which facilitated trade and communication. Those connections encouraged cultural and technological transfer even as the empire later fragmented into khanates.',
     questions: [
-      { num: '01', skill: 'Continuity & Change', text: 'Explain one method the Mongols used to build their empire and one reason the empire later fragmented.', placeholder: 'The Mongols built power by... The empire later fragmented because...' },
-      { num: '02', skill: 'Causation', text: 'Explain how Mongol imperial expansion affected trade and communication across Eurasia.', placeholder: 'Mongol expansion facilitated exchange by...' },
-      { num: '03', skill: 'Significance', text: 'Use one specific transfer—Greco-Islamic medical knowledge, numbering systems, or the Uyghur script—to explain the larger significance of Mongol-era connectivity.', placeholder: 'The transfer of ___ demonstrates...' }
+      { num: '01', skill: 'Causation', text: 'How did the Mongols build such a large empire?', placeholder: 'The Mongols built power by...' },
+      { num: '02', skill: 'Continuity & Change', text: 'What stayed the same about the Silk Roads, and what changed under Mongol rule?', placeholder: 'The routes continued, but Mongol rule changed...' },
+      { num: '03', skill: 'Significance', text: 'Choose one transfer—Greco-Islamic medicine, numbering systems, or the Uyghur script. What does it show about Mongol-era connectivity?', placeholder: 'The example of ___ shows that...' }
     ]
   }),
 
