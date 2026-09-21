@@ -190,8 +190,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'First & 10: The World the Mongols Made',
-    embedUrl: 'first-and-10-topic-2-2-mongol-empire-capture.html?v=response-id-fix-v1'
+    title: 'First & 10: Conquest, Connection, Exchange',
+    embedUrl: 'first-and-10-topic-2-2-mongol-empire-capture.html?v=narrative-v1'
   },
 
   evidenceLab: {
