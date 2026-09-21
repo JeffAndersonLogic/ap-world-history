@@ -1866,6 +1866,25 @@ Every lesson page (Unit and Foundations) **must** display the same three-card Cl
 
 ## First & 10 Reading Standard
 
+### Instructional purpose and authoring standard
+
+First & 10 exists because students need protected class time to read the content that makes the day's lesson intelligible. It is the common knowledge floor for the room: every student should finish the opening phase with the same coherent historical story in mind before teacher-led instruction deepens it.
+
+The title **First & 10 does not impose a ten-minute or word-count ceiling.** Length is a diagnostic, not a constraint. Quality and content delivery come first. Use as many words as necessary to tell the AP-essential story exceptionally well, and no more than necessary to preserve coherence, accuracy, and student attention. Never cut required explanation simply to hit an arbitrary time or word target.
+
+Author every First & 10 around these rules:
+
+- **Story first.** Give students the complete conceptual story College Board expects them to understand for that topic: what happened, why it happened, what changed or continued, and why it matters.
+- **Vocabulary in context.** Essential terms appear naturally at the moment the story needs them. The vocabulary strip previews terms students will meet; it is not a detached memorization list.
+- **AP Thinking stays embedded.** Use concise AP Thinking callouts only where they genuinely teach a historical reasoning move such as causation, continuity and change, comparison, contextualization, evidence, or significance. They should sharpen the story, not interrupt every paragraph.
+- **CED essentials are protected.** Include every concept and evidence anchor necessary to understand the topic's College Board job. Enrichment is welcome only when it improves the story rather than crowding out the core.
+- **Do not duplicate the lecture.** First & 10 establishes the conceptual map. Content Delivery should deepen it with visuals, maps, evidence, mechanisms, primary sources, examples, misconceptions, discussion, and teacher explanation rather than retelling the same prose.
+- **Three-question retrieval remains.** End with exactly three concise questions that ask students to retrieve and reason from the reading. Questions should feel like the natural payoff to the story, not three mini-SAQs added for compliance.
+- **Confidence remains.** Preserve the existing confidence-rating capture so the teacher receives both what the student can explain and how secure the student feels about it.
+- **Audio is equivalent support, not a replacement curriculum.** When listening support is available, it must carry the same instructional content as the readable text.
+
+A strong First & 10 should make the next lesson move possible: students should already know the basic story, so class time can focus on deeper evidence, interpretation, and AP reasoning.
+
 Every First & 10 reading **must** follow the Topic 1.1 structure exactly. This rule applies to all units and foundations.
 
 ### Required structure (in order)
