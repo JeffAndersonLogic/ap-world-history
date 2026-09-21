@@ -4,12 +4,12 @@
 
   const topic23 = '../assets/images/topics/2-3/';
   const img = {
-    dhow: topic23 + '2.3%20-%20Dhow%20Ship.jpeg',
-    tradeMap: topic23 + '2.3%20-%20Indian%20Ocean%20Trade%20Map%20Detailed.png',
-    orgChart: topic23 + '2.3%20-%20Indian%20Ocean%20Trade%20Org%20Chart.png',
-    monsoonMap: topic23 + '2.3%20-%20Monsoons%20map.jpg',
-    swahili: topic23 + '2.3%20-%20Swahili%20Merchants.jpg',
-    zhengHe: topic23 + '2.3%20-%20Zheng%20He%20Fleet.jpg'
+    dhow: topic23 + '2.3 - Dhow Ship.jpeg',
+    tradeMap: topic23 + '2.3 - Indian Ocean Trade Map Detailed.png',
+    orgChart: topic23 + '2.3 - Indian Ocean Trade Org Chart.png',
+    monsoonMap: topic23 + '2.3 - Monsoons map.jpg',
+    swahili: topic23 + '2.3 - Swahili Merchants.jpg',
+    zhengHe: topic23 + '2.3 - Zheng He Fleet.jpg'
   };
 
   lesson.first10 = {
@@ -67,7 +67,7 @@
       { label: '5. Extend the pattern', text: 'Use <strong>Zheng He</strong> to show how state-backed maritime activity intensified interregional contact.' },
       { label: 'Response frame', text: 'Because merchants understood ___ and used ___, they could ___. <strong>As a result</strong>, ___ grew/changed, illustrated by ___.' }
     ],
-    prompt: 'Write 3-4 sentences explaining one cause and one effect of Indian Ocean trade growth. Use at least two specific CED-aligned examples.'
+    prompt: 'Write 3–4 sentences explaining one cause and one effect of Indian Ocean trade growth. Use at least two specific CED-aligned examples.'
   };
 
   lesson.checkpoints = [
@@ -99,16 +99,16 @@
   lesson.evidenceLab = {
     ...lesson.evidenceLab,
     title: 'Evidence Lab: Environment, Technology, and a Maritime Network',
-    task: 'Choose TWO cards that address different parts of the system: environmental knowledge, maritime technology, state growth, diasporic communities, or state-backed contact.',
+    task: 'Choose TWO cards that address different parts of the system: environmental knowledge, maritime technology, state growth, or long-distance exchange.',
     prompt: 'Make one claim explaining how Indian Ocean trade intensified or what changed because it did. Use two specific pieces of evidence and explain the causal connection.'
   };
 
   lesson.images = [
-    { title: 'Indian Ocean Trade Network', url: '../assets/images/topics/2-3/2.3%20-%20Indian%20Ocean%20Trade%20Map%20Detailed.png', sourceUrl: '../assets/images/topics/2-3/2.3%20-%20Indian%20Ocean%20Trade%20Map%20Detailed.png', caption: 'Secondary visual evidence. A detailed classroom map shows maritime routes linking East Africa, Arabia, South Asia, Southeast Asia, and China.', prompt: 'NOTICE the connected regions and chokepoints. What can you INFER about why port cities became powerful? What can the map not prove by itself?' },
-    { title: 'Monsoon Wind System', url: '../assets/images/topics/2-3/2.3%20-%20Monsoons%20map.jpg', sourceUrl: '../assets/images/topics/2-3/2.3%20-%20Monsoons%20map.jpg', caption: 'Environmental evidence. The monsoon map shows seasonal wind patterns that made round-trip voyage planning possible.', prompt: 'NOTICE the seasonal reversal. What can you INFER about how merchants planned travel, waiting, and return voyages?' },
-    { title: 'Dhow Ship and Maritime Technology', url: '../assets/images/topics/2-3/2.3%20-%20Dhow%20Ship.jpeg', sourceUrl: '../assets/images/topics/2-3/2.3%20-%20Dhow%20Ship.jpeg', caption: 'Technology evidence. Maritime vessels and sailing knowledge helped transform wind into cargo-moving power.', prompt: 'NOTICE the ship design and sail. How could maritime technology increase the volume or distance of trade compared with overland routes?' },
+    { title: 'Indian Ocean Trade Network', url: '../assets/images/topics/2-3/2.3 - Indian Ocean Trade Map Detailed.png', sourceUrl: '../assets/images/topics/2-3/2.3 - Indian Ocean Trade Map Detailed.png', caption: 'Secondary visual evidence. A detailed classroom map shows maritime routes linking East Africa, Arabia, South Asia, Southeast Asia, and China.', prompt: 'NOTICE the connected regions and chokepoints. What can you INFER about why port cities became powerful? What can the map not prove by itself?' },
+    { title: 'Monsoon Wind System', url: '../assets/images/topics/2-3/2.3 - Monsoons map.jpg', sourceUrl: '../assets/images/topics/2-3/2.3 - Monsoons map.jpg', caption: 'Environmental evidence. The monsoon map shows seasonal wind patterns that made round-trip voyage planning possible.', prompt: 'NOTICE the seasonal reversal. What can you INFER about how merchants planned travel, waiting, and return voyages?' },
+    { title: 'Dhow Ship and Maritime Technology', url: '../assets/images/topics/2-3/2.3 - Dhow Ship.jpeg', sourceUrl: '../assets/images/topics/2-3/2.3 - Dhow Ship.jpeg', caption: 'Technology evidence. Maritime vessels and sailing knowledge helped transform wind into cargo-moving power.', prompt: 'NOTICE the ship design and sail. How could maritime technology increase the volume or distance of trade compared with overland routes?' },
     { title: 'State-Growth Evidence — Port States', label: 'CED historical development · Topic 2.3', sourceText: ['Indian Ocean exchange fostered the growth of states and commercial centers around the basin.', 'Illustrative examples include Swahili Coast city-states, Gujarat, and the Sultanate of Malacca.'], caption: 'CED-aligned historical-development anchor, paraphrased rather than quoted from a primary source.', prompt: 'What common economic opportunity links these otherwise different states? What additional evidence would you need to explain why one port grew faster than another?' },
-    { title: 'Diaspora Evidence — Merchant Communities', url: '../assets/images/topics/2-3/2.3%20-%20Swahili%20Merchants.jpg', sourceUrl: '../assets/images/topics/2-3/2.3%20-%20Swahili%20Merchants.jpg', caption: 'Diasporic-community visual. Merchant communities lowered risk by building trust, translation, credit, religious familiarity, and local connections.', prompt: 'How could a permanent merchant community lower the cost or risk of long-distance exchange? What kinds of cultural evidence would demonstrate reciprocal influence?' },
-    { title: 'Zheng He — State-Backed Maritime Contact', url: '../assets/images/topics/2-3/2.3%20-%20Zheng%20He%20Fleet.jpg', sourceUrl: '../assets/images/topics/2-3/2.3%20-%20Zheng%20He%20Fleet.jpg', caption: 'State-backed contact evidence. Zheng He shows how a mature Indian Ocean system could support diplomacy, prestige, tribute, and cultural exchange.', prompt: 'What does state sponsorship add to the story of a network usually driven by merchants? Why should Zheng He be treated as evidence of intensified contact rather than as the origin of Indian Ocean trade?' }
+    { title: 'Diaspora Evidence — Merchant Communities', url: '../assets/images/topics/2-3/2.3 - Swahili Merchants.jpg', sourceUrl: '../assets/images/topics/2-3/2.3 - Swahili Merchants.jpg', caption: 'Diasporic-community visual. Merchant communities lowered risk by building trust, translation, credit, religious familiarity, and local connections.', prompt: 'How could a permanent merchant community lower the cost or risk of long-distance exchange? What kinds of cultural evidence would demonstrate reciprocal influence?' },
+    { title: 'Zheng He — State-Backed Maritime Contact', url: '../assets/images/topics/2-3/2.3 - Zheng He Fleet.jpg', sourceUrl: '../assets/images/topics/2-3/2.3 - Zheng He Fleet.jpg', caption: 'State-backed contact evidence. Zheng He shows how a mature Indian Ocean system could support diplomacy, prestige, tribute, and cultural exchange.', prompt: 'What does state sponsorship add to the story of a network usually driven by merchants? Why should Zheng He be treated as evidence of intensified contact rather than as the origin of Indian Ocean trade?' }
   ];
 })();
