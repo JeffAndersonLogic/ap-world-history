@@ -100,10 +100,10 @@ module.exports = {
       beforeYouRead: 'Track four moves: how Mongol rulers built an empire, why it divided, how imperial expansion facilitated exchange, and what specific knowledge or cultural practices moved through those connections.',
       readingTarget: 'By the end, you should be able to explain Mongol state building and fragmentation, the Pax Mongolica as a trade-and-communication system, and three concrete examples of cultural or technological transfer.'
     },
-    vocabulary: ['Genghis Khan', 'Khanates', 'Yuan Dynasty', 'Ilkhanate', 'Golden Horde', 'Pax Mongolica', 'Yam', 'Greco-Islamic Medical Knowledge', 'Numbering Systems', 'Uyghur Script'],
+    vocabulary: ['Chinggis Khan', 'Khanates', 'Yuan Dynasty', 'Ilkhanate', 'Golden Horde', 'Pax Mongolica', 'Yam', 'Greco-Islamic Medical Knowledge', 'Numbering Systems', 'Uyghur Script'],
     sections: [
       section('1', 'State Building', 'From Steppe Confederation to Eurasian Empire', [
-        'Temujin, later known as <span class="kt">Genghis Khan</span>, unified Mongol groups and built a disciplined military-political system capable of rapid expansion. Mongol armies combined cavalry mobility, organization, intelligence, and the use of specialists from conquered peoples.',
+        'Temujin, later known as <span class="kt">Chinggis Khan</span>, unified Mongol groups and built a disciplined military-political system capable of rapid expansion. Mongol armies combined cavalry mobility, organization, intelligence, and the use of specialists from conquered peoples.',
         'Conquest produced new imperial states across Eurasia. Mongol rulers often governed pragmatically, using local administrators and existing institutions when those tools helped them control large and diverse populations.'
       ], 'AP Thinking, State Building', '<strong>State building is a process.</strong> Connect military organization and pragmatic administration to the creation of durable political control.'),
       section('2', 'Change Over Time', 'One Empire Became Several Khanates', [
