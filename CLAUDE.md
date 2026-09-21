@@ -1037,6 +1037,56 @@ can only say that the test is self-consistent. It carries its own negative
 controls: three real ways the wiring could be reverted, each of which must turn
 the assertions red.
 
+### The sync projection, added 2026-09-21
+
+The same module also counts **what a Firestore sync layer would have written**,
+which is the one number ZCS finance actually asked for. Dan Layton's reply to the
+Firebase request asked how many writes a day this would be, because the district
+has been billed for a runaway loop before. Arithmetic off the lesson data is an
+estimate somebody can argue with; a count taken on the Chromebooks, in the room,
+over a fortnight is not.
+
+**Still Phase 1.** No vendor, no network, no authentication, no database. The
+projection is arithmetic over the timestamps of saves that were already
+happening, and it persists counts and nothing else.
+
+**The policy is part of the number, so it is stored beside it.** A cloud write is
+not a local write: `BHDraftStore` autosaves 600ms after a student stops typing,
+which across one checkpoint answer is dozens of writes, and mirroring that to
+Firestore one for one *is* the runaway shape the district is afraid of. The
+proposed sync layer coalesces per response slot, and `SYNC_COALESCE_MS` is that
+window. A write count read against the wrong window is worse than no write count,
+so `coalesceMs` travels inside the record. **Do not quote a figure without it.**
+
+**It is a floor, not a ceiling.** A leading-edge throttle: one write per window
+per slot, plus one tail flush per slot still dirty when the page goes away. It
+does not model retries, an offline queue draining, or the reads a student's own
+records cost at page load.
+
+**`busiestMinute` is the runaway detector, and it is a maximum on purpose.** A
+write loop barely moves a daily average on the day it starts and pins one minute
+immediately. `days` is the per-class-day rollup, capped at `SYNC_DAY_CAP` and
+keyed off the **local** date: `toISOString` is UTC and would file a student
+working after practice under tomorrow, which is the call BeCurrent's Desk already
+refuses by name.
+
+**The draft key reaches the projection and is never stored.** It arrives as the
+third argument to `recordWrite` and is used as an in-memory map key only, because
+a draft key names a topic and a slot. `window.BHSaveHealth.syncReport()` prints
+the per-day table at the device.
+
+**`SCHEMA` deliberately stayed at 1.** Bumping it would have made `readRaw`
+discard every existing record, resetting `firstSeen` across the course at once,
+which would make every device look freshly cleared and destroy the only signal
+this file has about storage being wiped. A record with no `sync` is backfilled in
+`load()` instead.
+
+**Three assertions carry it**, all offline, all in the push gate: that autosaves
+inside one window project one write, that the window expires, and that coalescing
+is per slot rather than page-wide. A fourth negative control was added with them,
+because dropping the key from the `recordWrite` call turns every sync figure to
+zero while every other check in the file stays green.
+
 **Three write paths exist and only one is instrumented so far.** The renderers
 go through `BHDraftStore`; the 77 First & 10 readings carry their own capture
 block; the BeInTheRoom scenarios go through

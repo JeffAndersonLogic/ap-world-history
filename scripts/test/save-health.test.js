@@ -99,6 +99,25 @@ function buildSandbox(healthSource, draftStoreSource, storage) {
   return run(win, storage);
 }
 
+// The sync projection is arithmetic over timestamps, so proving the coalescing
+// window actually expires needs a clock the test owns. The sandbox runs on the
+// ambient global Date, so stubbing Date.now here reaches it.
+function withClock(startMs, body) {
+  const real = Date.now;
+  let t = startMs;
+  Date.now = () => t;
+  try {
+    return body({ advance(ms) { t += ms; }, get at() { return t; } });
+  } finally {
+    Date.now = real;
+  }
+}
+
+// A Tuesday in the middle of a term, 10:14 local. Any fixed instant does, but a
+// fixed one keeps the day-rollup assertions from straddling midnight on a slow
+// machine.
+const CLOCK_START = new Date(2026, 8, 22, 10, 14, 0).getTime();
+
 // ── The assertions, run against one renderer ─────────────────────────────────
 function assertRenderer(healthSource, rel, label, report) {
   const source = fs.readFileSync(path.join(ROOT, rel), 'utf8');
@@ -166,6 +185,112 @@ function assertRenderer(healthSource, rel, label, report) {
       !env.BHSaveHealth.STORAGE_KEY.startsWith('behistorical-draft-'), env.BHSaveHealth.STORAGE_KEY);
   }
 
+  // 6. The sync projection. This is the number ZCS finance asked for, so every
+  //    property it is quoted with has to be one this test holds.
+  const SLOT_A = 'behistorical-draft-1-4-checkpoint-two-response';
+  const SLOT_B = 'behistorical-draft-1-4-evidence-response';
+
+  //    6a. Coalescing. A student typing one answer produces an autosave every
+  //        time they pause, and all of it inside one window is one cloud write.
+  //        Without this the 600ms autosave becomes the bill.
+  withClock(CLOCK_START, clock => {
+    const storage = makeStorage({ mode: 'ok' });
+    const env = buildSandbox(healthSource, draftStore, storage);
+    env.BHDraftStore.set(SLOT_A, 'Song China');
+    clock.advance(900);
+    env.BHDraftStore.set(SLOT_A, 'Song China centralized');
+    clock.advance(1200);
+    env.BHDraftStore.set(SLOT_A, 'Song China centralized power');
+    const sync = env.BHSaveHealth.summary().sync;
+    report('three autosaves inside one window project one cloud write',
+      sync.writes === 1, `writes=${sync.writes} local=${sync.localWrites}`);
+    report('every local autosave is still counted', sync.localWrites === 3, `local=${sync.localWrites}`);
+  });
+
+  //    6b. The window expires. A projection that only ever counted the first
+  //        save per slot would report a flatteringly small number forever.
+  withClock(CLOCK_START, clock => {
+    const storage = makeStorage({ mode: 'ok' });
+    const env = buildSandbox(healthSource, draftStore, storage);
+    env.BHDraftStore.set(SLOT_A, 'first');
+    clock.advance(env.BHSaveHealth.SYNC_COALESCE_MS + 1);
+    env.BHDraftStore.set(SLOT_A, 'second');
+    report('a save after the window closes projects a second write',
+      env.BHSaveHealth.summary().sync.writes === 2,
+      `writes=${env.BHSaveHealth.summary().sync.writes}`);
+  });
+
+  //    6c. Coalescing is per response slot, not page-wide. A student moving
+  //        between two boxes is two records in Firestore and must cost two
+  //        writes, or the estimate is low in exactly the busiest minute.
+  withClock(CLOCK_START, () => {
+    const storage = makeStorage({ mode: 'ok' });
+    const env = buildSandbox(healthSource, draftStore, storage);
+    env.BHDraftStore.set(SLOT_A, 'a');
+    env.BHDraftStore.set(SLOT_B, 'b');
+    report('two slots inside one window project two cloud writes',
+      env.BHSaveHealth.summary().sync.writes === 2,
+      `writes=${env.BHSaveHealth.summary().sync.writes}`);
+  });
+
+  //    6d. The tail. Edits folded into an open window still have to reach the
+  //        cloud when the student closes the tab at the bell, and that flush is
+  //        a write somebody pays for.
+  withClock(CLOCK_START, clock => {
+    const storage = makeStorage({ mode: 'ok' });
+    const env = buildSandbox(healthSource, draftStore, storage);
+    env.BHDraftStore.set(SLOT_A, 'opening');
+    clock.advance(800);
+    env.BHDraftStore.set(SLOT_A, 'opening plus more');
+    env.BHSaveHealth.projectTail();
+    const sync = env.BHSaveHealth.summary().sync;
+    report('a folded edit is flushed as the page goes away',
+      sync.writes === 2 && sync.tailWrites === 1, `writes=${sync.writes} tail=${sync.tailWrites}`);
+    env.BHSaveHealth.projectTail();
+    report('a second tail flush with nothing dirty costs nothing',
+      env.BHSaveHealth.summary().sync.writes === 2);
+  });
+
+  //    6e. The per-day rollup, which is where "writes per student per class
+  //        day" actually lives, and the burst counter that would name a loop.
+  withClock(CLOCK_START, clock => {
+    const storage = makeStorage({ mode: 'ok' });
+    const env = buildSandbox(healthSource, draftStore, storage);
+    for (let i = 0; i < 5; i++) {
+      env.BHDraftStore.set(`behistorical-draft-1-4-slot-${i}`, 'x');
+    }
+    const sync = env.BHSaveHealth.summary().sync;
+    const days = Object.keys(sync.days);
+    report('the projection files writes under a day key', days.length === 1, days.join(','));
+    report('the day carries both cloud and local counts',
+      days.length === 1 && sync.days[days[0]].w === 5 && sync.days[days[0]].l === 5);
+    report('a burst inside one minute is recorded', sync.busiestMinute === 5,
+      `busiestMinute=${sync.busiestMinute}`);
+    report('the coalescing policy travels with the counts',
+      sync.coalesceMs === env.BHSaveHealth.SYNC_COALESCE_MS, `coalesceMs=${sync.coalesceMs}`);
+  });
+
+  //    6f. The day key is local, never UTC. toISOString would file a student
+  //        working after practice under tomorrow, which is the same bug
+  //        BeCurrent's Desk refuses by name.
+  // The call, not the word: the module names toISOString in a comment saying
+  // why it does not use it, and a check that cannot tell those apart would
+  // fail on its own documentation.
+  report('the projection never dates a day off UTC', !/\.toISOString\s*\(/.test(healthSource));
+
+  //    6g. Privacy again, for the new field specifically. The projection is
+  //        keyed by draft key and a draft key names a topic and a slot; only
+  //        counts may be persisted.
+  withClock(CLOCK_START, () => {
+    const storage = makeStorage({ mode: 'ok' });
+    const env = buildSandbox(healthSource, draftStore, storage);
+    env.BHDraftStore.set(SLOT_A, 'Kublai Khan reorganized the Yuan bureaucracy');
+    env.BHSaveHealth.projectTail();
+    const record = storage.getItem(env.BHSaveHealth.STORAGE_KEY) || '';
+    report('the projection stores no slot name', !record.includes('checkpoint-two') && !record.includes('evidence-response'));
+    report('the projection stores no student writing', !record.includes('Kublai'));
+  });
+
   // 6. Nothing leaves the device. The repository's standing rule, checked here
   //    rather than trusted, because this is the first subsystem in the course
   //    whose whole job is to observe students.
@@ -200,7 +325,13 @@ const MUTATIONS = [
   ['the startSession call is stripped from the draft store',
     src => src.replace(/if\s*\(window\.BHSaveHealth\)\s*window\.BHSaveHealth\.startSession\([^;]*;/g, '')],
   ['failures are counted as successes',
-    src => src.replace(/recordWrite\(false,/g, 'recordWrite(true,')]
+    src => src.replace(/recordWrite\(false,/g, 'recordWrite(true,')],
+  // The projection is keyed by the draft key, and the draft key arrives as the
+  // third argument to recordWrite. Drop it and every sync figure quietly
+  // becomes zero while every other check in this file stays green, which is the
+  // shape of failure this repository keeps paying for.
+  ['the draft key stops reaching the projection',
+    src => src.replace(/recordWrite\(true,\s*null,\s*key\)/g, 'recordWrite(true)')]
 ];
 
 for (const [rel, label] of RENDERERS) {
@@ -259,6 +390,18 @@ function assertRendererQuiet(healthSource, draftStore, report) {
     const s = env.BHSaveHealth.summary();
     report('memory-only counted', s.memoryOnlyLoads === 1 && s.storageLive === false);
   }
+  withClock(CLOCK_START, clock => {
+    const storage = makeStorage({ mode: 'ok' });
+    const env = buildSandbox(healthSource, draftStore, storage);
+    env.BHDraftStore.set('behistorical-draft-1-4-checkpoint-two-response', 'a');
+    env.BHDraftStore.set('behistorical-draft-1-4-checkpoint-two-response', 'ab');
+    env.BHDraftStore.set('behistorical-draft-1-4-evidence-response', 'b');
+    clock.advance(env.BHSaveHealth.SYNC_COALESCE_MS + 1);
+    env.BHDraftStore.set('behistorical-draft-1-4-checkpoint-two-response', 'abc');
+    const sync = env.BHSaveHealth.summary().sync;
+    report('projection counts', sync.writes === 3 && sync.localWrites === 4);
+    report('projection files a day', Object.keys(sync.days).length === 1);
+  });
 }
 
 console.log('');
