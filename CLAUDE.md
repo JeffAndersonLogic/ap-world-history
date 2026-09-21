@@ -1063,6 +1063,28 @@ per slot, plus one tail flush per slot still dirty when the page goes away. It
 does not model retries, an offline queue draining, or the reads a student's own
 records cost at page load.
 
+**Two data models are projected, not one, because the write count is a fact
+about the schema as much as about the students.** Firestore bills per *document*
+write. The architecture record proposes one record per response slot; a second
+reading of the problem proposed one consolidated document per student and topic.
+`slotWrites` and `docWrites` count both, from the same saves against the same
+window, so the only thing separating the two figures is the schema. A lesson page
+serves one topic, so every key written from it belongs to that topic's document,
+which is why the consolidated model needs no key parsing and never has to learn
+how a draft key is spelled.
+
+**The consolidated model is worth far less than it looks, and the projection is
+what says so.** Consolidating sounds like it should divide the bill by the number
+of slots. It does not, because students work modules **sequentially**: one box at
+a time, so a per-slot throttle and a page-wide throttle are counting almost the
+same windows. Modelled against a typical required set, 31 minutes of typing
+across seven slots, the multiplier is 1.06x at a 10-second window and 1.36x at
+60. **The throttle interval is the lever and the schema is not**: 10 seconds to
+30 cuts writes by about 62%, which is twenty times what the schema buys. Choose
+the data model on the conflict rule, which is what the architecture record
+already does, rather than on cost. `syncReport()` prints the live multiplier, so
+this stops being an argument the moment there is a fortnight of data.
+
 **`busiestMinute` is the runaway detector, and it is a maximum on purpose.** A
 write loop barely moves a daily average on the day it starts and pins one minute
 immediately. `days` is the per-class-day rollup, capped at `SYNC_DAY_CAP` and
@@ -1093,6 +1115,19 @@ block; the BeInTheRoom scenarios go through
 `assets/js/behistorical-beintheroom-capture.js`. The other two are not counted
 yet, so today's figure is a floor rather than a total. Instrument them before
 quoting a course-wide number.
+
+**The three paths do not save at the same cadence, and one of them has no
+throttle at all.** The renderers debounce 600ms
+(`assets/js/behistorical-topic-renderer-v1.js`), the readings 500ms
+(`scripts/lib/first10-capture-block.js`), and **BeInTheRoom writes on every
+`input` event**, which is every keystroke
+(`assets/js/behistorical-beintheroom-capture.js`). That is correct and
+deliberate for `localStorage`, where a write is free and the load-time restore
+rule described above is what actually protects the student's reflection. It
+would be indefensible against a billed database. **Nothing may mirror a local
+write to a cloud one-for-one**, and the keystroke path is the reason that
+sentence is in this file rather than assumed: any sync layer is a separate
+throttle over all three, never a hook on the existing ones.
 
 ## The Lecture Deck
 

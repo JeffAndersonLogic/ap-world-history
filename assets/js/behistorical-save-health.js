@@ -89,6 +89,30 @@
   // writes, never as a ceiling on cost.
   var SYNC_COALESCE_MS = 10000;
 
+  // TWO DATA MODELS ARE PROJECTED, NOT ONE, because the write count is a fact
+  // about the schema as much as about the students.
+  //
+  // Firestore bills per *document* write. The architecture record proposes one
+  // record per response slot, which makes the conflict rule easy to state and
+  // costs one write per slot per window. A second reader of the same problem
+  // proposed one consolidated document per student and topic, which folds every
+  // field changed in a window into a single billable write and is roughly eight
+  // times cheaper on a normal lesson.
+  //
+  // Neither is obviously right. Per slot keeps "a non-empty answer is never
+  // silently replaced" a per-answer question; consolidated makes two devices
+  // editing two different boxes collide at the document. That is a design
+  // decision with a privacy and data-loss dimension, not an optimization, and
+  // it is not settled here.
+  //
+  // What is settled is that nobody should have to pick it from arithmetic. Both
+  // are counted from the same student behaviour, against the same window, so the
+  // only thing separating the two figures is the schema. `slotWrites` is the
+  // per-slot model; `docWrites` is the consolidated one. A lesson page serves one
+  // topic, so every key written from it belongs to that topic's document, which
+  // is why the consolidated model needs no key parsing and never has to learn
+  // how a draft key is spelled.
+
   // The record lives in the storage it is measuring, so it may not grow without
   // bound. Roughly a grading period of class days, oldest dropped first.
   var SYNC_DAY_CAP = 45;
@@ -101,6 +125,8 @@
   // section 4 of scripts/test/save-health.test.js is what holds that line.
   var syncSlots = {};
   var syncMinute = { bucket: 0, count: 0 };
+  // The consolidated model's single bucket: one document for the whole page.
+  var syncDoc = { sentAt: 0, dirty: false, open: false };
 
   // Deliberately raw localStorage rather than BHDraftStore. A telemetry write
   // that went through the store being measured would recurse on failure, and
@@ -151,7 +177,12 @@
       // A maximum rather than an average on purpose: a write loop barely moves
       // a daily average on the day it starts and pins one minute immediately.
       busiestMinute: 0,
-      // dayKey -> { w: projected cloud writes, l: local autosaves }
+      // The consolidated model: one document per student and topic. Counted
+      // from the same saves, against the same window, so slotWrites divided by
+      // docWrites is the schema's own multiplier and nothing else.
+      docWrites: 0,
+      docTailWrites: 0,
+      // dayKey -> { w: per-slot writes, d: consolidated writes, l: local autosaves }
       days: {}
     };
   }
@@ -255,7 +286,7 @@
   function syncDay(record, at) {
     var key = dayKey(at);
     if (!record.sync.days[key]) {
-      record.sync.days[key] = { w: 0, l: 0 };
+      record.sync.days[key] = { w: 0, d: 0, l: 0 };
       var keys = Object.keys(record.sync.days).sort();
       while (keys.length > SYNC_DAY_CAP) delete record.sync.days[keys.shift()];
     }
@@ -282,6 +313,16 @@
     var day = syncDay(record, at);
     day.l += 1;
     record.sync.localWrites += 1;
+
+    // The consolidated model first, because it does not care which slot this
+    // was: any field changing inside the window rides the one document write.
+    if (syncDoc.open && (at - syncDoc.sentAt) < SYNC_COALESCE_MS) {
+      syncDoc.dirty = true;
+    } else {
+      syncDoc = { sentAt: at, dirty: false, open: true };
+      record.sync.docWrites += 1;
+      day.d += 1;
+    }
 
     var slot = syncSlots[key];
     if (slot && (at - slot.sentAt) < SYNC_COALESCE_MS) {
@@ -311,6 +352,15 @@
       record.sync.writes += 1;
       record.sync.tailWrites += 1;
       day.w += 1;
+    }
+    // One tail write for the whole document, however many of its fields were
+    // still dirty. That is the consolidated model's entire point, and the tail
+    // is where it shows most.
+    if (syncDoc.dirty) {
+      syncDoc.dirty = false;
+      record.sync.docWrites += 1;
+      record.sync.docTailWrites += 1;
+      day.d += 1;
     }
   }
 
@@ -354,6 +404,8 @@
         coalesceMs: s.sync.coalesceMs,
         writes: s.sync.writes,
         tailWrites: s.sync.tailWrites,
+        docWrites: s.sync.docWrites,
+        docTailWrites: s.sync.docTailWrites,
         localWrites: s.sync.localWrites,
         busiestMinute: s.sync.busiestMinute,
         days: JSON.parse(JSON.stringify(s.sync.days))
@@ -406,22 +458,30 @@
       lines.push('No class days recorded yet.');
       return lines.join('\n');
     }
-    lines.push('day           cloud writes   local autosaves');
-    var total = 0, max = 0;
+    lines.push('day           per-slot   one-doc   local autosaves');
+    var total = 0, docTotal = 0, max = 0, docMax = 0;
     for (var i = 0; i < keys.length; i++) {
       var d = s.days[keys[i]];
       total += d.w;
+      docTotal += d.d;
       if (d.w > max) max = d.w;
-      lines.push(keys[i] + '    ' + String(d.w) + '              ' + String(d.l));
+      if (d.d > docMax) docMax = d.d;
+      lines.push(keys[i] + '    ' + String(d.w) + '          ' + String(d.d) + '         ' + String(d.l));
     }
     var absorbed = s.localWrites ? (1 - (s.writes / s.localWrites)) * 100 : 0;
     lines.push('');
     lines.push('class days recorded: ' + keys.length);
-    lines.push('mean writes per class day: ' + (total / keys.length).toFixed(1));
-    lines.push('busiest class day: ' + max);
+    lines.push('mean per class day, one record per response slot: ' + (total / keys.length).toFixed(1));
+    lines.push('mean per class day, one document per topic:       ' + (docTotal / keys.length).toFixed(1));
+    lines.push('busiest class day: ' + max + ' per-slot, ' + docMax + ' one-doc');
     lines.push('busiest single minute: ' + s.busiestMinute);
-    lines.push('tail flushes: ' + s.tailWrites);
+    lines.push('tail flushes: ' + s.tailWrites + ' per-slot, ' + s.docTailWrites + ' one-doc');
     lines.push('local autosaves absorbed by coalescing: ' + absorbed.toFixed(1) + '%');
+    // The schema's own multiplier, which is the figure that decides whether the
+    // data model is worth arguing about. Anything near 1 means it is not.
+    if (s.docWrites) {
+      lines.push('per-slot costs ' + (s.writes / s.docWrites).toFixed(1) + 'x the consolidated model');
+    }
     return lines.join('\n');
   }
 

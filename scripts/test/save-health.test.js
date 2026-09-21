@@ -228,9 +228,45 @@ function assertRenderer(healthSource, rel, label, report) {
     const env = buildSandbox(healthSource, draftStore, storage);
     env.BHDraftStore.set(SLOT_A, 'a');
     env.BHDraftStore.set(SLOT_B, 'b');
+    const sync = env.BHSaveHealth.summary().sync;
     report('two slots inside one window project two cloud writes',
-      env.BHSaveHealth.summary().sync.writes === 2,
-      `writes=${env.BHSaveHealth.summary().sync.writes}`);
+      sync.writes === 2, `writes=${sync.writes}`);
+    //    ...and exactly one under the consolidated model. This assertion is the
+    //    whole reason both are counted: it is the schema, not the students, that
+    //    separates the two figures, and Firestore bills per document.
+    report('the same two slots are one write under the consolidated model',
+      sync.docWrites === 1, `docWrites=${sync.docWrites}`);
+  });
+
+  //    6c2. The consolidated window expires like the per-slot one, so the model
+  //         is a throttle rather than a single write per page load.
+  withClock(CLOCK_START, clock => {
+    const storage = makeStorage({ mode: 'ok' });
+    const env = buildSandbox(healthSource, draftStore, storage);
+    env.BHDraftStore.set(SLOT_A, 'a');
+    env.BHDraftStore.set(SLOT_B, 'b');
+    clock.advance(env.BHSaveHealth.SYNC_COALESCE_MS + 1);
+    env.BHDraftStore.set(SLOT_B, 'bb');
+    const sync = env.BHSaveHealth.summary().sync;
+    report('the consolidated window expires too', sync.docWrites === 2, `docWrites=${sync.docWrites}`);
+    report('the consolidated model is never the more expensive of the two',
+      sync.docWrites <= sync.writes, `doc=${sync.docWrites} slot=${sync.writes}`);
+  });
+
+  //    6c3. The tail is where the consolidated model saves most: several dirty
+  //         slots flush as one document rather than one write each.
+  withClock(CLOCK_START, clock => {
+    const storage = makeStorage({ mode: 'ok' });
+    const env = buildSandbox(healthSource, draftStore, storage);
+    env.BHDraftStore.set(SLOT_A, 'a');
+    env.BHDraftStore.set(SLOT_B, 'b');
+    clock.advance(400);
+    env.BHDraftStore.set(SLOT_A, 'aa');
+    env.BHDraftStore.set(SLOT_B, 'bb');
+    env.BHSaveHealth.projectTail();
+    const sync = env.BHSaveHealth.summary().sync;
+    report('two dirty slots are two tail writes per-slot', sync.tailWrites === 2, `tail=${sync.tailWrites}`);
+    report('the same tail is one document write', sync.docTailWrites === 1, `docTail=${sync.docTailWrites}`);
   });
 
   //    6d. The tail. Edits folded into an open window still have to reach the
@@ -401,6 +437,7 @@ function assertRendererQuiet(healthSource, draftStore, report) {
     const sync = env.BHSaveHealth.summary().sync;
     report('projection counts', sync.writes === 3 && sync.localWrites === 4);
     report('projection files a day', Object.keys(sync.days).length === 1);
+    report('consolidated model counted', sync.docWrites === 2 && sync.docWrites < sync.writes);
   });
 }
 
