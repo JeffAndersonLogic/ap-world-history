@@ -39,7 +39,7 @@ window.BEHISTORICAL_TEACHING = {
   flow: [
     { id: 'open', label: 'Hook + Big Argument', range: '0–6', minutes: 6, teacher: 'Frame the lesson as four moves: build, fragment, connect, transfer.', students: 'Write the four-part story.', slide: 0 },
     { id: 'map', label: 'Scale + Khanates', range: '6–13', minutes: 7, teacher: 'Use the map to show both imperial reach and the problem of governing distance.', students: 'Locate the successor khanates and identify why unity became difficult.', slide: 2 },
-    { id: 'first10', label: 'First & 10', range: '13–23', minutes: 10, teacher: 'Listen for state change, exchange, and transfer.', students: 'Read for the three required CED dimensions.', slide: 3 },
+    { id: 'first10', label: 'First & 10', range: '13–23', minutes: 10, teacher: 'Frame the First & 10 as the complete story students need before the lesson details.', students: 'Read for the story: conquest -> connection -> exchange, while tracking fragmentation and transfer.', slide: 3 },
     { id: 'conquest', label: 'Build the Empire', range: '23–35', minutes: 12, teacher: 'Teach organization, mobility, and adaptation as a conquest system.', students: 'Track what problem each military method solved.', slide: 4 },
     { id: 'govern', label: 'Govern + Fragment', range: '35–49', minutes: 14, teacher: 'Pivot from conquest to rule, then explain why regional khanates emerge.', students: 'Connect administration and succession to fragmentation.', slide: 7 },
     { id: 'check1', label: 'Checkpoint 1', range: '49–55', minutes: 6, teacher: 'Require one conquest mechanism and one fragmentation mechanism.', students: 'Explain build + decline with evidence.', slide: 11 },
@@ -52,7 +52,7 @@ window.BEHISTORICAL_TEACHING = {
 
   quickLaunch: [
     { label: 'Student Lesson 2.2', url: '../unit-2/lesson-2-2-mongol-empire.html' },
-    { label: 'First & 10', url: '../unit-2/first-and-10-topic-2-2-mongol-empire-capture.html?v=response-id-fix-v1' },
+    { label: 'First & 10', url: '../unit-2/first-and-10-topic-2-2-mongol-empire-capture.html?v=narrative-v1' },
     { label: 'BeInTheRoom', url: '../beintheroom/unit-2/mongol-court.html' },
     { label: 'Full Heimler Review', url: 'https://youtu.be/KHJLZBXUyzo' }
   ],
@@ -117,11 +117,11 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'first10', kind: 'action', eyebrow: 'First & 10 · 10 Minutes',
-      title: 'Read for three CED dimensions.', subtitle: 'State change. Exchange. Transfer.',
-      action: { label: 'Open First & 10', url: '../unit-2/first-and-10-topic-2-2-mongol-empire-capture.html?v=response-id-fix-v1' },
+      title: 'Get the whole story first.', subtitle: 'Conquest -> connection -> exchange.',
+      action: { label: 'Open First & 10', url: '../unit-2/first-and-10-topic-2-2-mongol-empire-capture.html?v=narrative-v1' },
       notes: {
         minutes: 10,
-        land: ['Students should not read for random Mongol facts. Give them the three categories before they begin.'],
+        land: ['Students should leave First & 10 understanding the whole lesson story before lecture details: conquest creates empire, empire changes connectivity, connectivity increases exchange and transfer, and political unity eventually fragments.'],
         ask: 'Where does your evidence fit: state change, exchange, or transfer?',
         listenFor: 'Students can categorize evidence and explain why it matters.'
       }
