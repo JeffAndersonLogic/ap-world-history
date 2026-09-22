@@ -42,6 +42,15 @@ const DECKS = [
     backUrl: 'lesson-2-3-indian-ocean.html#lecture'
   },
   {
+    key: '2.4',
+    sources: [
+      'teacher/data/topic-2-4-teaching-base.js',
+      'teacher/data/topic-2-4-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-2-4-student.js',
+    backUrl: 'lesson-2-4-trans-saharan.html#lecture'
+  },
+  {
     key: '2.5',
     sources: [
       'teacher/data/topic-2-5-teaching-base.js',
@@ -65,12 +74,7 @@ const DECKS = [
 // the reason. The architecture contract fails on any teacher/topic-X-X-os.html
 // that is in neither DECKS nor this list, so a new deck cannot quietly skip the
 // student-copy generator the way Topic 2.3 did until 2026-09-22.
-const NOT_YET_MIGRATED = [
-  {
-    key: '2.4',
-    reason: 'Single-file teaching data with no generated student copy. Migrate it the way Topic 2.3 was, before its student slides are linked from the lesson.'
-  }
-];
+const NOT_YET_MIGRATED = [];
 
 function clone(value) {
   return value == null ? value : JSON.parse(JSON.stringify(value));
@@ -189,6 +193,10 @@ function topic23Slides(teaching) {
   });
 }
 
+function topic24Slides(teaching) {
+  return projectedSlides(teaching).map(src => baseStudentSlide(src));
+}
+
 function topic25Slides(teaching) {
   return projectedSlides(teaching).map(src => {
     const s = baseStudentSlide(src);
@@ -215,6 +223,7 @@ function buildDeck(deck) {
     '2.1': topic21Slides,
     '2.2': topic22Slides,
     '2.3': topic23Slides,
+    '2.4': topic24Slides,
     '2.5': topic25Slides,
     '2.6': topic26Slides
   };

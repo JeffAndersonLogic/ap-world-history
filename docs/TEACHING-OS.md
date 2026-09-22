@@ -40,7 +40,7 @@ The source-of-truth pipeline is:
 
 `scripts/test/teaching-os-architecture.test.js`, in the offline suite, checks the parts of this contract that fail silently:
 
-- every `teacher/topic-X-X-os.html` on disk is in `DECKS`, or in `NOT_YET_MIGRATED` with a reason (Topic 2.4 today)
+- every `teacher/topic-X-X-os.html` on disk is in `DECKS`, or in `NOT_YET_MIGRATED` with a reason (empty since 2026-09-22, when Topic 2.4 was migrated)
 - every deck has its base, presentation-assets, visual-assets, wrapper, generated student data, and `unit-N/presentation-topic-X-X-student.html` shell
 - the lesson reaches that shell through `classPresentation`, the one field the renderer reads (a field under any other name is silently ignored)
 - no student-facing page redirects into `teacher/`

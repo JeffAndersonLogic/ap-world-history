@@ -26,10 +26,12 @@ const fromDisk = process.argv.includes('--from-disk');
 // Topic 2.3's story-first rewrite and the removal of two em dashes from Topic 2.2 landed on
 // 2026-09-22. The story was first built under an explicit waiver, then reviewed and
 // approved as written by Jeff the same evening.
+// Topic 2.4's last callout gained its missing </strong> the same night, a markup
+// repair with no change to the words.
 // Keep the historical fixture untouched, but accept that full rewrite only while
 // its canonical source file is byte-for-byte the approved version below. Any
 // later Unit 2 First & 10 edit changes this Git blob hash and forces a new review.
-const APPROVED_UNIT2_REWRITE_BLOB = '8c04fa92f4a9bf5247c89197845e20b5fab97ce3';
+const APPROVED_UNIT2_REWRITE_BLOB = '553878daa90c2d3ad0c6421f6311b74f082fac2d';
 const unit2SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-2.js');
 function gitBlobSha(text) {
   const body = Buffer.from(text, 'utf8');

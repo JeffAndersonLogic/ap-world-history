@@ -203,7 +203,7 @@ module.exports = {
       section('4', 'Evidence', 'Mansa Musa and Timbuktu Reveal the Scale of Connection', [
         '<span class="kt">Mansa Musa</span> used the wealth and connections of Mali during his pilgrimage to Mecca, making the empire visible across North Africa and the Islamic world.',
         '<span class="kt">Timbuktu</span> grew as a commercial and intellectual center linked to trans-Saharan exchange. These examples help students see the effects of a network whose foundation remained transportation technology, profitable commodities, and state support.'
-      ], 'AP Thinking, Evidence', '<strong>Use Mansa Musa and Timbuktu as evidence of the network\'s effects, not as substitutes for explaining how the network worked.')
+      ], 'AP Thinking, Evidence', '<strong>Use Mansa Musa and Timbuktu as evidence of the network\'s effects,</strong> not as substitutes for explaining how the network worked.')
     ],
     takeaway: 'Camel saddles and caravans made large-scale Sahara crossings practical; gold and salt made them profitable; expanding exchange increased trade volume and range; and Mali both profited from and facilitated the resulting network.',
     questions: [

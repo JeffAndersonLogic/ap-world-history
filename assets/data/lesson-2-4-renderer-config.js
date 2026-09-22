@@ -33,6 +33,12 @@
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg'
   };
 
+  lesson.classPresentation = {
+    title: 'Class Slides: The Desert Road',
+    desc: 'Follow the causal chain: camel saddles and caravans made regular desert crossings practical, gold and salt made them worth the risk, and Mali grew by protecting and taxing the trade.',
+    url: 'presentation-topic-2-4-student.html'
+  };
+
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-2/mali-court.html',
     desc: 'Enter Mali as a merchant and make decisions shaped by caravan routes, state protection, taxation, and the gold trade.'
