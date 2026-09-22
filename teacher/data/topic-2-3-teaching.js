@@ -45,18 +45,19 @@ window.BEHISTORICAL_TEACHING = {
     ]
   },
   flow: [
-    {id:'open',label:'Hook + System',range:'0-6',slide:0},
-    {id:'map',label:'Map the Basin',range:'6-12',slide:1},
-    {id:'first10',label:'First & 10',range:'12-22',slide:3},
-    {id:'winds',label:'Monsoon System',range:'22-32',slide:4},
-    {id:'tech',label:'Ships + Navigation',range:'32-42',slide:6},
-    {id:'check1',label:'Checkpoint 1',range:'42-48',slide:8},
-    {id:'goods',label:'Goods + Merchants',range:'48-58',slide:9},
-    {id:'ports',label:'Ports + Diasporas',range:'58-69',slide:11},
-    {id:'room',label:'BeInTheRoom: Kilwa',range:'69-79',slide:14},
-    {id:'skill',label:'AP Contextualization',range:'79-86',slide:15},
-    {id:'check2',label:'Final Checkpoint',range:'86-89',slide:17},
-    {id:'close',label:'Close + Bridge',range:'89-90',slide:18}
+    {id:'beready',label:'BeReady',range:'0-4',slide:0},
+    {id:'open',label:'Hook + System',range:'4-8',slide:1},
+    {id:'map',label:'Map the Basin',range:'8-13',slide:2},
+    {id:'first10',label:'First & 10',range:'13-23',slide:4},
+    {id:'winds',label:'Monsoon System',range:'23-33',slide:5},
+    {id:'tech',label:'Ships + Navigation',range:'33-43',slide:7},
+    {id:'check1',label:'Checkpoint 1',range:'43-49',slide:9},
+    {id:'goods',label:'Goods + Merchants',range:'49-59',slide:10},
+    {id:'ports',label:'Ports + Diasporas',range:'59-70',slide:12},
+    {id:'room',label:'BeInTheRoom: Kilwa',range:'70-79',slide:15},
+    {id:'skill',label:'AP Contextualization',range:'79-86',slide:16},
+    {id:'check2',label:'Final Checkpoint',range:'86-89',slide:18},
+    {id:'close',label:'Close + Bridge',range:'89-90',slide:19}
   ],
   quickLaunch: [
     {label:'Student Lesson 2.3',url:'../unit-2/lesson-2-3-indian-ocean.html?v=20260922-evidence-v4'},
@@ -74,14 +75,24 @@ window.BEHISTORICAL_TEACHING = {
   },
   slides: [
     {
+      phase:'beready',kind:'process',eyebrow:'BeReady · 4 Minutes · No Notes',title:'Pull yesterday’s network story back from memory.',subtitle:'Short answers are enough. Retrieve first; we will build from them.',
+      steps:[
+        {label:'Silk Roads',text:'How did Mongol rule change conditions on existing trade routes?'},
+        {label:'Trade Tools',text:'Name one way merchants reduced risk or made long-distance exchange easier.'},
+        {label:'Connection',text:'What moved through networks besides goods?'},
+        {label:'Bridge',text:'The Silk Roads could be helped by one empire. What made ocean trade reliable without one empire controlling the whole basin?'}
+      ],footer:'Retrieve → connect → enter the new problem.',
+      notes:{minutes:4,land:['No notes. Take fast verbal answers and do not reteach Topic 2.2.','Accept brief evidence: protection or Pax Mongolica, communication/commercial practices, and the movement of ideas, technologies, religions, or people.'],story:'BeReady reconnects the Unit 2 network story before students meet the Indian Ocean mechanism. The contrast matters: Mongol political power could alter conditions on overland routes, while Indian Ocean exchange depended heavily on predictable environmental knowledge, maritime technology, ports, and merchant trust.',ask:'What does a trade network need when no single empire controls the whole route?',listenFor:'Predictability, navigation, ports, rules, trust, merchant communities.',ap:'Retrieval + contextualization: use prior network knowledge to frame the new regional system.'}
+    },
+    {
       phase:'open',kind:'hero',eyebrow:'AP World History · Topic 2.3',title:'The Ocean That Ran on a Schedule',subtitle:'The Indian Ocean became a system when people learned to pair wind, ships, ports, and trust.',
       visual:{url:BH23.dhow,alt:'A dhow-style sailing ship crossing the Indian Ocean',credit:'BeHistorical visual · Dhow sailing ship'},
-      notes:{minutes:3,land:['Topic 2.2 showed how political control changed overland exchange. Topic 2.3 asks how a huge maritime network worked without one empire controlling the whole ocean.','Start with the counterintuitive idea: sailors did not need calm weather; they needed predictable weather.'],story:'The central story is a transportation system built from environmental knowledge. Merchants could plan departure, arrival, waiting, and return because monsoon winds reversed seasonally.',ask:'What would make an ocean feel less like a barrier and more like a road?',listenFor:'Predictability, routes, ports, navigation, ships, timing.',ap:'Contextualization: identify the wider environmental and commercial setting before explaining intensification.'}
+      notes:{minutes:2,land:['Topic 2.2 showed how political control changed overland exchange. Topic 2.3 asks how a huge maritime network worked without one empire controlling the whole ocean.','Start with the counterintuitive idea: sailors did not need calm weather; they needed predictable weather.'],story:'The central story is a transportation system built from environmental knowledge. Merchants could plan departure, arrival, waiting, and return because monsoon winds reversed seasonally.',ask:'What would make an ocean feel less like a barrier and more like a road?',listenFor:'Predictability, routes, ports, navigation, ships, timing.',ap:'Contextualization: identify the wider environmental and commercial setting before explaining intensification.'}
     },
     {
       phase:'map',kind:'map',eyebrow:'Geographic Grounding',title:'One ocean. Many connected regions.',subtitle:'East Africa · Arabia · India · Southeast Asia · China',
       visual:{url:BH23.tradeMap,alt:'Detailed Indian Ocean trade map showing major routes and connected regions',credit:'BeHistorical visual · Indian Ocean trade map'},footer:'Ports turn coastlines into network nodes.',
-      notes:{minutes:4,land:['Locate East Africa, the Arabian Peninsula, India, the Bay of Bengal, Southeast Asia, and southern China.','Stress that this is a basin of connected seas and straits, not one empty expanse.'],story:'Geography creates nodes. Strait crossings, sheltered harbors, river mouths, and resupply points become places where merchants must stop and where cities can grow wealthy.',ask:'Which locations on this map could profit simply because ships have to pass nearby?',listenFor:'Straits, narrow passages, major coasts, river mouths, halfway points.',ap:'Economic systems: geography helps explain the location and growth of trading cities.'}
+      notes:{minutes:3,land:['Locate East Africa, the Arabian Peninsula, India, the Bay of Bengal, Southeast Asia, and southern China.','Stress that this is a basin of connected seas and straits, not one empty expanse.'],story:'Geography creates nodes. Strait crossings, sheltered harbors, river mouths, and resupply points become places where merchants must stop and where cities can grow wealthy.',ask:'Which locations on this map could profit simply because ships have to pass nearby?',listenFor:'Straits, narrow passages, major coasts, river mouths, halfway points.',ap:'Economic systems: geography helps explain the location and growth of trading cities.'}
     },
     {
       phase:'map',kind:'process',eyebrow:'The Network',title:'A maritime system needs four pieces.',subtitle:'Wind · Ships · Ports · Trust',
@@ -145,7 +156,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase:'room',kind:'split',layout:'action-visual',eyebrow:'BeInTheRoom · Kilwa',title:'Make the port decision.',subtitle:'You are in a Swahili Coast trading city. The winds, merchants, goods, and politics all matter.',big:'BR',
       visual:{url:BH23.swahili,alt:'Swahili merchants in an Indian Ocean port city',credit:'BeHistorical visual · Swahili merchants',fit:'cover',position:'50% 72%'},footer:'What would make merchants trust this port enough to return?',
-      notes:{minutes:10,land:['Launch BeInTheRoom if pacing allows. If time is tight, use the prompt orally: What would a port ruler do to attract merchants and capture revenue?','Tie the activity back to state growth and diasporic communities.'],story:'Kilwa is the case study where the system becomes visible: maritime trade, Islam, imported goods, local authority, and port wealth intersect.',ask:'What policy would make merchants trust your port enough to return next season?',listenFor:'Fair taxes, security, predictable law, storage, religious spaces, ship repair, market access.',ap:'Application: use historical conditions to explain state growth and commercial strategy.'}
+      notes:{minutes:9,land:['Launch BeInTheRoom if pacing allows. If time is tight, use the prompt orally: What would a port ruler do to attract merchants and capture revenue?','Tie the activity back to state growth and diasporic communities.'],story:'Kilwa is the case study where the system becomes visible: maritime trade, Islam, imported goods, local authority, and port wealth intersect.',ask:'What policy would make merchants trust your port enough to return next season?',listenFor:'Fair taxes, security, predictable law, storage, religious spaces, ship repair, market access.',ap:'Application: use historical conditions to explain state growth and commercial strategy.'}
     },
     {
       phase:'skill',kind:'action',eyebrow:'AP Skill Builder · Contextualization',title:'Start before 1200. Then explain what intensified.',subtitle:'Do not write as if the Indian Ocean appeared from nowhere.',big:'AP',
