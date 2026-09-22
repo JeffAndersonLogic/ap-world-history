@@ -169,8 +169,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'First & 10: Gold, Salt, and the Desert Road',
-    embedUrl: 'first-and-10-topic-2-4-trans-saharan-capture.html?v=response-id-fix-v1'
+    title: 'First & 10: The Sahara Did Not Shrink',
+    embedUrl: 'first-and-10-topic-2-4-trans-saharan-capture.html?v=desert-v1'
   },
 
   evidenceLab: {

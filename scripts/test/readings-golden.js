@@ -28,10 +28,12 @@ const fromDisk = process.argv.includes('--from-disk');
 // approved as written by Jeff the same evening.
 // Topic 2.4's last callout gained its missing </strong> the same night, a markup
 // repair with no change to the words.
+// Topic 2.4's story-first rewrite landed 2026-09-22, its story reviewed and approved
+// as written by Jeff before it was built.
 // Keep the historical fixture untouched, but accept that full rewrite only while
 // its canonical source file is byte-for-byte the approved version below. Any
 // later Unit 2 First & 10 edit changes this Git blob hash and forces a new review.
-const APPROVED_UNIT2_REWRITE_BLOB = '553878daa90c2d3ad0c6421f6311b74f082fac2d';
+const APPROVED_UNIT2_REWRITE_BLOB = '534cd989f8970b0e865271598fb163b5b7341035';
 const unit2SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-2.js');
 function gitBlobSha(text) {
   const body = Buffer.from(text, 'utf8');

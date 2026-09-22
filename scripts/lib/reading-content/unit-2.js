@@ -179,37 +179,39 @@ module.exports = {
     lessonPage: 'lesson-2-4-trans-saharan.html',
     docTitle: 'BeHistorical — Module 04 | First &amp; 10 | Topic 2.4 Trans-Saharan Trade',
     headerSubtitle: 'Topic 2.4, Trans-Saharan Trade &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'Gold, <em>Salt</em>, and the Desert Road',
-    deck: 'Camel technology and organized caravans made larger-scale desert exchange practical. Strong demand for gold and salt made it profitable, and states such as Mali benefited from and helped sustain the expanding network.',
+    titleHtml: 'The Sahara Did Not <em>Shrink</em>',
+    deck: 'The desert stayed just as wide and just as dry. What changed after 1200 was the system for crossing it, and that system made West African gold, Saharan salt, and the Mali Empire part of one connected world.',
     skillTags: ['Causation', 'Technology', 'Governance'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Track the chain from transportation technology to increased trade volume and range, then to state power. Gold and salt explain the incentive; camel technology and caravans explain how the Sahara could be crossed at scale.',
-      readingTarget: 'By the end, you should be able to explain how camel saddles and caravans expanded trans-Saharan trade and how Mali facilitated trade and communication.'
+      beforeYouRead: '<strong>A desert in the middle → Saddles + caravans → Gold + salt → More trade → Mali.</strong> Use that chain to organize everything you meet.',
+      readingTarget: 'How did people make the Sahara crossable and profitable, and what did that build?'
     },
     vocabulary: ['Camel Saddle', 'Caravan', 'Gold', 'Salt', 'Trade Volume', 'Geographic Range', 'Mali Empire', 'Mansa Musa', 'Timbuktu'],
     sections: [
-      section('1', 'Technology', 'Camel Technology Made Desert Trade More Practical', [
-        'The Sahara remained an extreme environment, but camels were well adapted to desert travel. Improvements in the <span class="kt">camel saddle</span> allowed merchants to transport heavier loads more efficiently across long distances.',
-        'Merchants organized animals and people into <span class="kt">caravans</span> that pooled knowledge, protection, and supplies. Transportation technology did not erase the desert; it changed the economic possibilities of crossing it.'
-      ], 'AP Thinking, Causation', '<strong>A camel is not an explanation.</strong> Explain how carrying capacity, endurance, and caravan organization reduced the practical barriers to exchange.'),
-      section('2', 'Economic Incentive', 'Gold and Salt Made the Journey Worthwhile', [
-        'West Africa possessed major gold resources, while Saharan regions supplied salt that was essential to human diets and valuable in West African markets. This complementary demand made long-distance exchange profitable.',
-        'As transportation improved and demand remained strong, trans-Saharan trade increased in <span class="kt">volume</span> and expanded in <span class="kt">geographic range</span>, connecting West African societies more closely to North Africa and the wider Islamic world.'
-      ], 'AP Thinking, Mechanism', '<strong>Technology made exchange possible; demand made it worthwhile.</strong> Strong causation explains how the two factors worked together.'),
-      section('3', 'Governance', 'Mali Benefited from and Facilitated Trade', [
-        'The <span class="kt">Mali Empire</span> rose in a region crossed by major trade routes. Rulers benefited by taxing commerce and controlling strategic territory, while political protection could make merchants more willing to use the routes.',
-        'Mali therefore did not merely become rich because trade happened around it. Imperial expansion also helped facilitate trade and communication by drawing more people into a connected political and economic system.'
-      ], 'AP Thinking, Governance', '<strong>Show the two-way relationship:</strong> trade strengthened Mali, and Mali in turn helped sustain trade.'),
-      section('4', 'Evidence', 'Mansa Musa and Timbuktu Reveal the Scale of Connection', [
-        '<span class="kt">Mansa Musa</span> used the wealth and connections of Mali during his pilgrimage to Mecca, making the empire visible across North Africa and the Islamic world.',
-        '<span class="kt">Timbuktu</span> grew as a commercial and intellectual center linked to trans-Saharan exchange. These examples help students see the effects of a network whose foundation remained transportation technology, profitable commodities, and state support.'
-      ], 'AP Thinking, Evidence', '<strong>Use Mansa Musa and Timbuktu as evidence of the network\'s effects,</strong> not as substitutes for explaining how the network worked.')
+      section('1', 'Problem', 'The Sahara Was the Problem in the Middle', [
+        'Picture three regions that needed each other. West Africa had rich gold fields. The Sahara had salt, mined at places like Taghaza. North Africa had busy markets tied to the Mediterranean and the wider Islamic world. Between them lay weeks of sand, heat, and very little water.',
+        'People had crossed the Sahara for centuries, so this was not a new route. The question for this topic is why crossing it became regular and large enough to change the region after 1200.'
+      ], 'AP Thinking, Contextualization', '<strong>Start with the problem, not the goods.</strong> Before you can explain why trade grew, explain what made the desert so hard to cross.'),
+      section('2', 'Tools', 'Saddles and Caravans Made the Crossing Regular', [
+        'Camels could already survive long stretches without water. The <span class="kt">camel saddle</span> is what made them useful for trade: better saddles let camels carry heavier loads and riders farther, so each trip could move more goods.',
+        'Merchants also traveled in <span class="kt">caravans</span>, large groups of people and animals moving together. Experienced guides led them from one oasis to the next, and travelers shared supplies, knowledge, and protection. One merchant alone might not survive the desert. A caravan turned the crossing into something people could repeat season after season.'
+      ], 'AP Thinking, Causation', '<strong>Explain the mechanism, not the camel.</strong> "Camels" is not an explanation. Say what the saddle and the caravan let merchants do that they could not do before.'),
+      section('3', 'Motive', 'Gold and Salt Made the Risk Worth Taking', [
+        'Crossing the Sahara was still dangerous and expensive, so merchants needed a reason to go. <span class="kt">Gold</span> from West Africa was in high demand in North Africa and beyond. <span class="kt">Salt</span> was scarce in West Africa, where people needed it in a hot climate and used it to preserve food. Each side had something the other valued, and the difference in value paid for the journey.',
+        'With better transport and a strong reason to travel, trade grew in two ways. Its <span class="kt">trade volume</span> increased, because more goods moved across the desert. Its <span class="kt">geographic range</span> expanded, because the network reached farther, linking West Africa more closely to North Africa and the Islamic world.'
+      ], 'AP Thinking, Causation', '<strong>Technology made the trip possible; demand made it worthwhile.</strong> A strong explanation uses both causes and says how they worked together.'),
+      section('4', 'State', 'Mali Grew by Sitting Across the Routes', [
+        'The <span class="kt">Mali Empire</span> rose across the southern end of these routes. Its rulers controlled key trading towns, protected the roads, and taxed the goods that moved through them. That wealth made Mali stronger, and a stronger Mali made the routes safer and busier, drawing more people and places into the network.',
+        'Trade also built cities. <span class="kt">Timbuktu</span> and Djenné became centers of commerce and of Islamic learning, where scholars, books, and merchants from across the Sahara met. In 1324, the ruler <span class="kt">Mansa Musa</span> made a pilgrimage to Mecca. Writers in Cairo reported that he gave away so much gold that its value there fell, and a European map from 1375 shows him holding a golden nugget.',
+        'The Sahara did not shrink. The system for crossing it got better, and that system built one of the richest empires of its time.'
+      ], 'AP Thinking, Governance', '<strong>Show the two-way relationship.</strong> Trade made Mali rich, and Mali in turn protected and expanded the trade. Mansa Musa is evidence of that wealth, not the whole story.')
     ],
-    takeaway: 'Camel saddles and caravans made large-scale Sahara crossings practical; gold and salt made them profitable; expanding exchange increased trade volume and range; and Mali both profited from and facilitated the resulting network.',
+    takeaway: 'The Sahara did not shrink. Camel saddles and caravans made regular crossings practical, gold and salt made them profitable, and trade grew in volume and geographic range. The Mali Empire grew by protecting and taxing the routes, Timbuktu and Djenné became centers of trade and learning, and Mansa Musa\'s pilgrimage made Mali\'s wealth famous.',
     questions: [
-      { num: '01', skill: 'Causation', text: 'Explain how camel technology and caravan organization increased the volume and range of trans-Saharan trade.', placeholder: 'Camel technology expanded trade because...' },
-      { num: '02', skill: 'Causation', text: 'Explain why gold and salt created a strong economic incentive for trans-Saharan exchange.', placeholder: 'Gold and salt made exchange profitable because...' },
-      { num: '03', skill: 'Governance', text: 'Explain how Mali both benefited from and facilitated trans-Saharan trade and communication.', placeholder: 'Mali benefited from trade by... and facilitated it by...' }
+      { num: '01', skill: 'Causation', text: 'Explain how the camel saddle and caravan organization made regular trade across the Sahara possible.', placeholder: 'Regular desert trade became possible because...' },
+      { num: '02', skill: 'Causation', text: 'Why did gold and salt make merchants willing to cross the Sahara, and what happened to trade as a result?', placeholder: 'Gold and salt made the risk worth it because... As a result, trade...' },
+      { num: '03', skill: 'Governance', text: 'Explain how Mali both profited from trans-Saharan trade and helped it grow.', placeholder: 'Mali profited from trade by... and helped it grow by...' }
     ]
   }),
 

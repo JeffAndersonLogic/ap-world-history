@@ -4,9 +4,9 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: Gold, Salt, and the Desert Road',
-    embedUrl: 'first-and-10-topic-2-4-trans-saharan-capture.html',
-    note: 'Read for the causal chain: camel technology + caravan organization -> greater trade volume and range -> stronger West African states such as Mali.'
+    title: 'First & 10: The Sahara Did Not Shrink',
+    embedUrl: 'first-and-10-topic-2-4-trans-saharan-capture.html?v=desert-v1',
+    note: 'Read for the story: a desert in the middle, then saddles and caravans, then gold and salt, then more trade, then Mali.'
   };
 
   lesson.map = {
