@@ -98,6 +98,12 @@ for (const topic of Object.keys(EXPECTED)) {
   if (!lab.skill || !Array.isArray(lab.terms) || lab.terms.length < 5) issue(topic, 'Evidence Lab lacks skill and evidence metadata');
   if (!Array.isArray(lab.criteria) || lab.criteria.length < 4) issue(topic, 'Evidence Lab needs explicit evidence-quality criteria');
   if (!(lesson.images || []).length && !(lab.items || []).length) issue(topic, 'Evidence Lab has no evidence set to analyze');
+  if (topic === '2.3') {
+    const expectedQuestion = 'After 1200, how much did knowledge of the environment—especially monsoon winds—help Indian Ocean trade grow compared with the power of states?';
+    if (!String(lab.prompt).includes(expectedQuestion)) issue(topic, 'Evidence Lab prompt regressed from the locked student-facing question');
+    if (String(lab.prompt).includes('Evaluate the extent to which learned use of the environment')) issue(topic, 'Evidence Lab is still serving the retired Topic 2.3 prompt');
+    if (!String(lab.task).includes(expectedQuestion)) issue(topic, 'Evidence Lab task does not match the locked Topic 2.3 question');
+  }
 
   if (!source.attribution) issue(topic, 'Primary Source attribution is missing');
   if (!source.sourceNote) issue(topic, 'Primary Source transparency note is missing');
