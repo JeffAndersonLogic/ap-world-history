@@ -250,7 +250,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg",
         "alt": "The Great Mosque of Djenné, a later reconstruction on the site of earlier mosques",
-        "credit": "Great Mosque of Djenné · present building a later reconstruction · Wikimedia Commons"
+        "credit": "Great Mosque of Djenné · present building 1907, on the site of earlier mosques · Wikimedia Commons"
       }
     },
     {
