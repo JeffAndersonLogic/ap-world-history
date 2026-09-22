@@ -60,7 +60,7 @@ window.BEHISTORICAL_TEACHING = {
     {id:'close',label:'Close + Bridge',range:'89-90',slide:19}
   ],
   quickLaunch: [
-    {label:'Student Lesson 2.3',url:'../unit-2/lesson-2-3-indian-ocean.html?v=20260922-video-v1'},
+    {label:'Student Lesson 2.3',url:'../unit-2/lesson-2-3-indian-ocean.html?v=20260922-video-v2'},
     {label:'Student Presentation 2.3',url:'../unit-2/student-presentation-topic-2-3-indian-ocean.html'},
     {label:'First & 10',url:'../unit-2/first-and-10-topic-2-3-indian-ocean-capture.html?v=locked-format-v3'},
     {label:'BeInTheRoom: Kilwa',url:'../beintheroom/unit-2/indian-ocean-port.html'},

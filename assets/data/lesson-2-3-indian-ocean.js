@@ -137,6 +137,11 @@ window.BEHISTORICAL_LESSON = {
         youtubeId: 'svQbhZR0NyA',
         sourceUrl: 'https://www.youtube.com/watch?v=svQbhZR0NyA&t=2055s',
         prompt: 'Watch only 34:24–44:47. Identify one piece of evidence that fits the Topic 2.3 story: environmental knowledge or maritime technology -> expanded trade -> stronger port states, diasporic communities, or wider cultural transfer.'
+      },
+      {
+        title: 'Zheng He | PBS World Explorers',
+        url: 'https://indiana.pbslearningmedia.org/resource/e27de4d3-c939-4d55-ab55-2dc300db99ff/zheng-he/',
+        prompt: 'How do Zheng He\'s voyages show Ming state power operating within an Indian Ocean trading system that already connected East Africa, South Asia, Southeast Asia, and China?'
       }
     ],
     segments: [
