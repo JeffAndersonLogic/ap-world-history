@@ -99,8 +99,8 @@
   lesson.evidenceLab = {
     ...lesson.evidenceLab,
     title: 'Evidence Lab: Environment, Technology, and a Maritime Network',
-    task: 'Choose TWO cards that address different parts of the system: environmental knowledge, maritime technology, state growth, or long-distance exchange.',
-    prompt: 'Make one claim explaining how Indian Ocean trade intensified or what changed because it did. Use two specific pieces of evidence and explain the causal connection.'
+    task: 'Use TWO evidence cards from different parts of the Indian Ocean trade system—for example, monsoon winds or maritime technology, port states, merchant communities, or Zheng He.',
+    prompt: 'After 1200, how much did knowledge of the environment—especially monsoon winds—help Indian Ocean trade grow compared with the power of states? Make a clear claim. Use at least two pieces of evidence from different parts of the trade system, explain how each one helped trade grow, and include one example showing that political power or another factor also mattered.'
   };
 
   lesson.images = [
