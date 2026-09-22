@@ -7,6 +7,7 @@ const BH23 = {
   orgChart: BH23_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade%20Org%20Chart.png',
   malayMarket: BH23_ASSETS + '2.3%20-%20Malay%20market.jpg',
   monsoonMap: BH23_ASSETS + '2.3%20-%20Monsoons%20map.jpg',
+  maritimeTech: BH23_ASSETS + '2.3%20-%20Maritime%20technologies.jpg',
   swahili: BH23_ASSETS + '2.3%20-%20Swahili%20Merchants.jpg',
   zhengHe: BH23_ASSETS + '2.3%20-%20Zheng%20He%20Fleet.jpg'
 };
@@ -97,7 +98,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase:'winds',kind:'map',eyebrow:'Read the Wind',title:'The route changes with the season.',subtitle:'Movement follows a cycle, not a straight line.',
-      visual:{url:BH23.monsoonMap,alt:'Monsoon map showing seasonal wind patterns across the Indian Ocean',credit:'BeHistorical visual · Monsoon wind map'},footer:'Timing is part of geography.',
+      layout:'image-forward',visual:{url:BH23.monsoonMap,alt:'Monsoon map showing seasonal wind patterns across the Indian Ocean',credit:'BeHistorical visual · Monsoon wind map',fit:'cover',position:'50% 69%'},footer:'Timing is part of geography.',
       notes:{minutes:4,land:['Trace one hypothetical route from East Africa or Arabia to India and back.','Make students describe the return problem; one-way arrows are not enough.'],story:'A network becomes dependable when environmental knowledge becomes shared operational knowledge across generations of sailors.',ask:'Why would knowing the return season matter as much as knowing the outbound route?',listenFor:'Profit, supplies, contracts, family networks, predictable circulation.',ap:'Causation: environmental knowledge changes the feasibility and regularity of exchange.'}
     },
     {
@@ -106,7 +107,8 @@ window.BEHISTORICAL_TEACHING = {
       notes:{minutes:4,land:['Use this as a mechanism slide, not a technology list.','Lateen-style sail traditions, durable hulls, and accumulated seafaring knowledge helped sailors maneuver and carry cargo across open water. Larger ships increased volume.'],story:'Technology did not invent Indian Ocean trade after 1200. It helped intensify an older maritime world by making movement more capable and more scalable.',ask:'Why does a ship network change what can be traded compared with pack animals?',listenFor:'Bulk, weight, volume, lower transport cost per unit, larger cargoes.',ap:'Contextualization: establish the preexisting maritime tradition before explaining later intensification.'}
     },
     {
-      phase:'tech',kind:'process',eyebrow:'Navigation',title:'Open water needs more than courage.',subtitle:'Compass · Astrolabe · Stars · Currents · Coastline knowledge',
+      phase:'tech',kind:'split',eyebrow:'Navigation',title:'Open water needs more than courage.',subtitle:'Compass · Astrolabe · Stars · Currents · Coastline knowledge',
+      visual:{url:BH23.maritimeTech,alt:'Compass and astrolabe representing maritime navigation technology',credit:'BeHistorical visual · Compass and astrolabe'},
       steps:[{label:'Direction',text:'Magnetic compass'},{label:'Position',text:'Astrolabe and stars'},{label:'Conditions',text:'Currents and wind knowledge'},{label:'Route',text:'Shared port knowledge'}],footer:'Knowledge is transportation technology too.',
       notes:{minutes:3,land:['Treat the compass and astrolabe as tools inside a knowledge system, not magic inventions that suddenly create trade.','Arab, Indian, Malay, Chinese, and other sailors accumulated practical knowledge over generations.'],story:'Technology includes information. A compass or astrolabe matters because navigators know how to use it inside a wider body of environmental and geographic knowledge.',ask:'Which matters more: owning a navigation tool or knowing what the reading means for a real voyage?',listenFor:'Tools need expertise, routes, and environmental knowledge.',ap:'Causation: technology works through human knowledge and institutions.'}
     },
@@ -116,11 +118,11 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase:'goods',kind:'map',eyebrow:'Commercial Exchange',title:'Markets made distance profitable.',subtitle:'Spices · Textiles · Gold · Ivory · Porcelain moved through cosmopolitan port cities.',
-      visual:{url:BH23.malayMarket,alt:'Malay market scene representing a cosmopolitan Indian Ocean port economy',credit:'BeHistorical visual · Malay market'},footer:'The whole market image stays visible instead of being cropped under the title.',
+      layout:'image-forward',visual:{url:BH23.malayMarket,alt:'Malay market scene representing a cosmopolitan Indian Ocean port economy',credit:'BeHistorical visual · Malay market',fit:'cover',position:'50% 78%'},footer:'Markets connect goods, people, and information.',
       notes:{minutes:4,land:['Emphasize multi-directional exchange. There is no single start or end of the network.','Indian textiles were especially important because they circulated widely and could function as a medium of exchange.'],story:'Profit comes from regional specialization and distance. Goods become valuable because the network connects places with different resources and production traditions.',ask:'Why would a merchant carry Indian textiles toward East Africa or Southeast Asia rather than only luxury spices?',listenFor:'Broad demand, exchange value, portability, regional specialization.',ap:'Economic systems: explain why interregional specialization drives exchange.'}
     },
     {
-      phase:'goods',kind:'map',eyebrow:'System View',title:'Goods, people, and ideas moved together.',subtitle:'Trade is the visible part of a larger human network.',
+      phase:'goods',kind:'split',eyebrow:'System View',title:'Goods, people, and ideas moved together.',subtitle:'Trade is the visible part of a larger human network.',
       visual:{url:BH23.orgChart,alt:'Indian Ocean trade organization chart connecting technologies, routes, states, and communities',credit:'BeHistorical visual · Indian Ocean trade system'},footer:'The system moves more than merchandise.',
       notes:{minutes:3,land:['Use this slide to synthesize the system before moving to port cities and diasporas.','Students should see that technologies, winds, states, and communities are not separate mini-topics. They reinforce each other.'],story:'The Indian Ocean was not just a shipping lane. It was a relationship system, a political system, and a cultural exchange zone tied to commerce.',ask:'Which part of this chart is a cause, and which part is an effect?',listenFor:'Winds and technologies enable trade; state growth and diasporas often result from intensified exchange.',ap:'Complex causation: causes and effects can reinforce each other over time.'}
     },
@@ -131,16 +133,17 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase:'ports',kind:'map',eyebrow:'Diasporic Communities',title:'Merchants carried culture and absorbed culture.',subtitle:'Arab and Persian communities in East Africa · Chinese communities in Southeast Asia · Malay communities across the basin',
-      visual:{url:BH23.diaspora,alt:'Diasporic merchant communities in an Indian Ocean port',credit:'BeHistorical visual · Diasporic communities'},footer:'Diaspora = settle + connect + adapt + blend.',
+      layout:'image-forward',visual:{url:BH23.diaspora,alt:'Diasporic merchant communities in an Indian Ocean port',credit:'BeHistorical visual · Diasporic communities',fit:'cover',position:'50% 77%'},footer:'Diaspora = settle + connect + adapt + blend.',
       notes:{minutes:4,land:['Define diaspora clearly: a community living outside its homeland while maintaining connections to that homeland.','Stress reciprocal influence: merchants introduced traditions, and indigenous cultures influenced merchant cultures.'],story:'Diasporic communities lower risk. They provide trust, language, credit, contacts, religious institutions, and legal expectations in unfamiliar ports.',ask:'How could a permanent merchant community make trade easier for someone arriving from far away?',listenFor:'Translation, trust, lodging, credit, religious familiarity, marriage alliances, business contacts.',ap:'KC-3.1.III.B: merchants introduced cultural traditions and were influenced by indigenous cultures.'}
     },
     {
       phase:'zhenghe',kind:'map',eyebrow:'State-Backed Maritime Contact',title:'Zheng He did not create the network. He sailed through one already mature.',subtitle:'Ming voyages show the scale, wealth, and political use of Indian Ocean connectivity.',
-      visual:{url:BH23.zhengHe,alt:'Zheng He fleet sailing through the Indian Ocean',credit:'BeHistorical visual · Zheng He fleet'},footer:'The fleet image is shown as a complete visual rather than a cropped background.',
+      layout:'image-forward',visual:{url:BH23.zhengHe,alt:'Zheng He fleet sailing through the Indian Ocean',credit:'BeHistorical visual · Zheng He fleet',fit:'contain',position:'50% 38%'},footer:'State power moved through an already mature maritime network.',
       notes:{minutes:4,land:['Keep Zheng He as a capstone example of state-backed maritime activity, not a separate biography lesson.','His voyages demonstrate that the Indian Ocean network could support diplomacy, prestige, tribute relationships, and cultural contact.'],story:'The Ming state could project power through the Indian Ocean because the network already had ports, pilots, winds, and trading relationships. Zheng He shows the scale of the mature system.',ask:'What does state sponsorship add to a network usually driven by merchants?',listenFor:'Diplomacy, prestige, tribute, scale, political contact, official protection.',ap:'KC-3.2.II.A.iii: interregional contacts encouraged technological and cultural transfers during Chinese maritime activity led by Zheng He.'}
     },
     {
-      phase:'room',kind:'action',eyebrow:'BeInTheRoom · Kilwa',title:'Make the port decision.',subtitle:'You are in a Swahili Coast trading city. The winds, merchants, goods, and politics all matter.',big:'BR',
+      phase:'room',kind:'split',layout:'action-visual',eyebrow:'BeInTheRoom · Kilwa',title:'Make the port decision.',subtitle:'You are in a Swahili Coast trading city. The winds, merchants, goods, and politics all matter.',big:'BR',
+      visual:{url:BH23.swahili,alt:'Swahili merchants in an Indian Ocean port city',credit:'BeHistorical visual · Swahili merchants',fit:'cover',position:'50% 72%'},footer:'What would make merchants trust this port enough to return?',
       notes:{minutes:10,land:['Launch BeInTheRoom if pacing allows. If time is tight, use the prompt orally: What would a port ruler do to attract merchants and capture revenue?','Tie the activity back to state growth and diasporic communities.'],story:'Kilwa is the case study where the system becomes visible: maritime trade, Islam, imported goods, local authority, and port wealth intersect.',ask:'What policy would make merchants trust your port enough to return next season?',listenFor:'Fair taxes, security, predictable law, storage, religious spaces, ship repair, market access.',ap:'Application: use historical conditions to explain state growth and commercial strategy.'}
     },
     {
