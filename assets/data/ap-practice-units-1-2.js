@@ -411,11 +411,11 @@
       ),
       evidenceLab: evidence(
         'Evidence Lab: A Maritime System',
-        'Use evidence from at least two levels of the system: environment, port-state economy, and cultural diffusion.',
-        'Evaluate the extent to which learned use of the environment, rather than political power alone, explains the expansion of Indian Ocean trade after 1200. Make a defensible judgment and use at least two evidence entries from different levels of the system. Explain the causal role of each entry, then use a contrasting example or limitation to qualify your conclusion.',
+        'Question: After 1200, how much did knowledge of the environment—especially monsoon winds—help Indian Ocean trade grow compared with the power of states?',
+        'After 1200, how much did knowledge of the environment—especially monsoon winds—help Indian Ocean trade grow compared with the power of states? Make a clear claim. Use at least two pieces of evidence from different parts of the trade system, explain how each one helped trade grow, and include one example showing that political power or another factor also mattered.',
         'Making Connections and Causation (Skills 5.A and 6.B)',
         ['monsoon winds', 'Kilwa', 'gold trade', 'diasporic communities', 'Islam', 'Indian Ocean'],
-        ['Makes a defensible judgment about the relative importance of factors.', 'Uses evidence from at least two levels of the maritime system.', 'Explains how each example affected the growth of exchange.', 'Qualifies the conclusion with a relevant contrast or limitation.']
+        ['Makes a clear claim about how important environmental knowledge was compared with state power.', 'Uses at least two pieces of evidence from different parts of Indian Ocean trade.', 'Explains how each example helped trade grow.', 'Includes one example showing that political power or another factor also mattered.']
       ),
       primarySource: source(
         'Primary Source: Ibn Battuta Describes Kilwa, 1331',
