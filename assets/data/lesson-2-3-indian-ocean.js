@@ -227,7 +227,7 @@ window.BEHISTORICAL_LESSON = {
   evidenceLab: {
     title: 'Evidence Lab: Proving Indian Ocean Expansion and Effects',
     intro: 'Each piece of evidence belongs to one part of the CED story: causes of expansion, state growth, diasporic communities, or wider transfer.',
-    prompt: 'Choose one piece of evidence and explain the mechanism connecting it to the growth or effects of Indian Ocean exchange after 1200.',
+    prompt: 'After 1200, how much did knowledge of the environment—especially monsoon winds—help Indian Ocean trade grow compared with the power of states? Make a clear claim. Use at least two pieces of evidence from different parts of the trade system, explain how each one helped trade grow, and include one example showing that political power or another factor also mattered.',
     items: [
       { title: 'Monsoon Winds + Compass + Astrolabe + Larger Ships', detail: 'Evidence that environmental knowledge and maritime technologies increased predictability, range, and carrying capacity.' },
       { title: 'Swahili Coast, Gujarat, and Malacca', detail: 'Evidence that expanding maritime exchange fostered the growth of states and powerful commercial centers.' },
