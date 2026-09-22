@@ -45,6 +45,7 @@
     "build:classroom-config": "node scripts/build-classroom-config.js",
     "build:save-health": "node scripts/build-save-health.js",
     "check:style": "node scripts/check-style.js",
+    "stamp:versions": "node scripts/stamp-asset-versions.js",
     "build:canvas-events": "node scripts/build-canvas-events.js",
     "check:schedule": "node scripts/test/schedule-cohorts.test.js",
     "build:wordmark": "node scripts/build-wordmark.js",

@@ -24,7 +24,8 @@ const fromDisk = process.argv.includes('--from-disk');
 
 // Unit 2 was deliberately reauthored as the 2026-09-17 reference standard, with Topic 2.2's story-first First & 10 revision reviewed and approved on 2026-09-21.
 // Topic 2.3's story-first rewrite and the removal of two em dashes from Topic 2.2 landed on
-// 2026-09-22 with the story approval gate explicitly waived by Jeff, not reviewed.
+// 2026-09-22. The story was first built under an explicit waiver, then reviewed and
+// approved as written by Jeff the same evening.
 // Keep the historical fixture untouched, but accept that full rewrite only while
 // its canonical source file is byte-for-byte the approved version below. Any
 // later Unit 2 First & 10 edit changes this Git blob hash and forces a new review.

@@ -43,6 +43,7 @@ const SUITES = {
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
     ['scripts/test/save-health.test.js', 'a failed draft save is counted, not lost'],
     ['scripts/test/teaching-os-architecture.test.js', 'Teaching OS shared architecture and student-deck source of truth'],
+    ['scripts/test/asset-versions.test.js', 'deploy-time version stamp changes only tag values'],
     ['scripts/test/foundations-golden.js', 'Foundations content vs the hand-authored originals'],
     ['scripts/test/readings-golden.js', '58 unit readings vs the hand-authored originals'],
     ['scripts/test/socrates-contract.test.js', 'AI coach kit reproducible, persona unit-agnostic'],

@@ -166,9 +166,26 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/check-style.js`, the mechanical half of the house style: American
   English spelling, `c. 1200` rather than `c.1200`, no em or en dashes in prose, and
   the two canonical note labels. In the offline suite. It reads the deep-reading
-  content modules only; the 77 First & 10 readings are pinned word for word by
-  golden fixtures, so a spelling sweep there is a separate decision. Everything a
-  machine cannot decide is in `docs/STYLE.md`.
+  content modules and, since 2026-09-22, the First & 10 content modules too,
+  under a ratchet: the 187 violations already in published readings are listed in
+  `scripts/lib/style-baseline-first10.json` and tolerated, anything new fails,
+  and an entry that stops occurring also fails, so the list only shrinks. Revise
+  a reading and its old dashes get fixed in the same edit. Do not add entries to
+  the baseline; that is re-approving a defect. Everything a machine cannot decide
+  is in `docs/STYLE.md`.
+- `node scripts/stamp-asset-versions.js [--write]`, replace the value of every
+  `?v=` tag on a local page, script or stylesheet with a hash of that file's
+  content and of everything it loads, so an edit to a data file changes its tag
+  in the shell, the shell's tag on the hub, and the shell's self-redirect key.
+  **It runs only at deploy, in `.github/workflows/pages.yml`, never on the repo**,
+  so the tags in the source can stay whatever anyone typed and a web-editor or
+  agent edit is never failed for a stale one. **Do not hand-bump `?v=` values or
+  push "force refresh" commits any more**; once Pages deploys from that workflow
+  they are overwritten on every deploy. `scripts/test/asset-versions.test.js`, in
+  the offline suite, proves the stamp moves nothing but tag values, is
+  idempotent, and carries a leaf edit up to the hub. **Switching it on is one
+  setting: Settings, Pages, Source, GitHub Actions.** Until then the workflow
+  sees a branch deploy and skips, and switching back is the rollback.
 - `node scripts/report-absolutes.js [topic-N] [--counts]`, list superlatives,
   universals and sole-cause claims across the deep readings, with context,
   grouped by pattern. **Deliberately not in any suite, and exits 0 always.**

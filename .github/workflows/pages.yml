@@ -1,0 +1,81 @@
+name: Deploy Pages
+
+# Publishes main to GitHub Pages with every ?v= cache tag stamped from the
+# content it points at, so nobody ever has to bump one by hand again.
+#
+# The build is the same Jekyll build GitHub runs for a branch-deployed site
+# (actions/jekyll-build-pages), so nothing about how pages are served changes;
+# the only difference is scripts/stamp-asset-versions.js running first on this
+# throwaway checkout. The repository itself is never rewritten.
+#
+# SWITCHING IT ON: Settings -> Pages -> Build and deployment -> Source ->
+# "GitHub Actions". Until then this workflow sees the site is still deployed
+# from the branch and skips, so it can never take the live site down.
+# Switching back to "Deploy from a branch" is the rollback, and is instant.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  mode:
+    name: Is Pages deployed by this workflow?
+    runs-on: ubuntu-latest
+    outputs:
+      enabled: ${{ steps.check.outputs.enabled }}
+    steps:
+      - id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          build_type=$(gh api "repos/${{ github.repository }}/pages" --jq .build_type 2>/dev/null || echo unknown)
+          echo "Pages build_type: $build_type"
+          if [ "$build_type" = "workflow" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Pages is still deployed from the branch ($build_type). Skipping. Switch Settings > Pages > Source to GitHub Actions to use this workflow."
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  build:
+    name: Stamp versions and build
+    needs: mode
+    if: needs.mode.outputs.enabled == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Prove the stamp is safe on this commit
+        run: node scripts/test/asset-versions.test.js
+      - name: Stamp every ?v= tag from content
+        run: node scripts/stamp-asset-versions.js --write
+      - uses: actions/configure-pages@v5
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

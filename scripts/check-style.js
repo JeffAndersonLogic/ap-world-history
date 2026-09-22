@@ -34,6 +34,19 @@
  * sweep is a separate, deliberate decision about re-baselining fixtures, and it
  * is written up in docs/STYLE.md rather than smuggled in here.
  *
+ * FIRST & 10 SCOPE, added 2026-09-22, under a ratchet. The reading content
+ * modules are checked too, but about 150 violations already sat in readings
+ * that are published and pinned by golden fixtures, and rewriting them all at
+ * once was ruled out. So the violations present on that date are recorded in
+ * scripts/lib/style-baseline-first10.json and tolerated. Anything NOT in that
+ * list fails, so no new dash or British spelling can enter a First & 10. And a
+ * baseline entry that no longer occurs also fails, so the list can only
+ * shrink: when a reading is revised, its old violations have to be fixed in
+ * the same edit rather than carried along. `--write-baseline` exists for the
+ * record, not for convenience; adding an entry to it is re-approving a defect.
+ * Titles, headings, labels and vocabulary chips are not prose, so the dash rule
+ * skips them, which is the global writing rule's own exception.
+ *
  * EXCEPTIONS are real and principled: proper nouns, titles of works and direct
  * quotations keep the spelling their source used. "Report on the Sanitary
  * Condition of the Labouring Population" is a title, and "the British Labour
@@ -46,6 +59,17 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const CONTENT_DIRS = [path.join(ROOT, 'scripts', 'lib', 'deep-reading-content')];
+const FIRST10_MODULES = [
+  ...fs.readdirSync(path.join(ROOT, 'scripts', 'lib', 'reading-content')).filter(f => f.endsWith('.js')).sort()
+    .map(f => path.join(ROOT, 'scripts', 'lib', 'reading-content', f)),
+  path.join(ROOT, 'scripts', 'lib', 'foundations-f10-content.js'),
+  path.join(ROOT, 'scripts', 'lib', 'f10-content.js')
+];
+const FIRST10_BASELINE = path.join(ROOT, 'scripts', 'lib', 'style-baseline-first10.json');
+// Keys that are paths or identifiers, never read by a student as text.
+const FIRST10_SKIP = new Set(['sourceFile', 'lessonPage', 'lessonFile', 'unitDir', 'topicKey', 'embedUrl']);
+// Keys that are titles, headings or labels: spelling applies, the dash rule does not.
+const FIRST10_NOT_PROSE = new Set(['docTitle', 'headerSubtitle', 'titleHtml', 'heading', 'label', 'topicLabel', 'moduleBadge', 'moduleName', 'readingEyebrow', 'checkBadge', 'checkTitle']);
 
 /** British form -> American form, matched as a stem so that one entry covers
  *  centre/centres/centred and labour/labourer/labouring.
@@ -120,7 +144,7 @@ function exempt(text, index, span) {
 }
 
 /** Every rule that applies to one student-facing string. */
-function checkString(file, where, text) {
+function checkString(file, where, text, opts = {}) {
   for (const [british, american] of SPELLINGS) {
     const re = new RegExp(british, 'gi');
     let m;
@@ -137,7 +161,7 @@ function checkString(file, where, text) {
   }
 
   // The dates field is a metadata line, not a sentence, so a dash is fine there.
-  if (!/\.dates$/.test(where)) {
+  if (!/\.dates$/.test(where) && !opts.notProse) {
     const dashRe = /[–—]/g;
     let x;
     while ((x = dashRe.exec(text)) !== null) {
@@ -195,6 +219,41 @@ for (const dir of CONTENT_DIRS) {
   }
 }
 
+// First & 10 content, under the ratchet described at the top of this file.
+const deepViolations = violations.splice(0);
+function walkFirst10(file, node, where) {
+  if (typeof node === 'string') {
+    const leaf = where.replace(/\[\d+\]$/, '').split('.').pop();
+    if (FIRST10_SKIP.has(leaf)) return;
+    return checkString(file, where, node, { notProse: FIRST10_NOT_PROSE.has(leaf) || /\.vocabulary\[\d+\]$|\.skillTags\[\d+\]$/.test(where) });
+  }
+  if (Array.isArray(node)) return node.forEach((v, i) => walkFirst10(file, v, `${where}[${i}]`));
+  if (node && typeof node === 'object') {
+    for (const [k, v] of Object.entries(node)) {
+      if (!FIRST10_SKIP.has(k)) walkFirst10(file, v, where ? `${where}.${k}` : k);
+    }
+  }
+}
+for (const file of FIRST10_MODULES) {
+  const mod = require(file);
+  for (const [key, topic] of Object.entries(mod)) walkFirst10(file, topic, `[${key}]`);
+}
+const first10Found = violations.splice(0);
+const identity = v => `${v.file} ${v.where} ${v.rule} ${v.detail}`;
+if (process.argv.includes('--write-baseline')) {
+  fs.writeFileSync(FIRST10_BASELINE, JSON.stringify(first10Found.map(identity).sort(), null, 1) + '\n');
+  console.log(`Wrote ${first10Found.length} First & 10 baseline entr${first10Found.length === 1 ? 'y' : 'ies'}.`);
+  process.exit(0);
+}
+const baseline = new Set(fs.existsSync(FIRST10_BASELINE) ? JSON.parse(fs.readFileSync(FIRST10_BASELINE, 'utf8')) : []);
+const foundIds = new Set(first10Found.map(identity));
+violations.push(...deepViolations, ...first10Found.filter(v => !baseline.has(identity(v))));
+const stale = [...baseline].filter(id => !foundIds.has(id));
+for (const id of stale) {
+  violations.push({ file: 'scripts/lib/style-baseline-first10.json', where: 'baseline', rule: 'stale baseline',
+    detail: `no longer occurs; the passage was edited, so fix any remaining dash or spelling in it and delete this entry: ${id.slice(0, 160)}` });
+}
+
 if (!files) {
   console.error('check-style found no content modules to check, which is itself a failure.');
   process.exit(1);
@@ -216,4 +275,5 @@ if (violations.length) {
 }
 
 console.log(`  ok   American English, date form, no prose dashes, note labels`);
+console.log(`  ok   First & 10: no new violations; ${baseline.size} older one${baseline.size === 1 ? '' : 's'} still in the baseline to fix when those readings are revised`);
 console.log(`\nStyle: ${files} content module${files === 1 ? '' : 's'} match the house style.`);
