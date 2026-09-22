@@ -130,6 +130,13 @@ window.BEHISTORICAL_LESSON = {
         url: 'https://youtu.be/r-D9F2TiirY',
         youtubeId: 'r-D9F2TiirY',
         prompt: 'Track the CED chain: monsoon knowledge + maritime technology -> more trade -> stronger states and diaspora communities -> wider cultural transfer.'
+      },
+      {
+        title: 'Topic 2.3 Supplemental Clip — Indian Ocean Trade (34:24–44:47)',
+        url: 'https://www.youtube.com/embed/svQbhZR0NyA?start=2064&end=2687&rel=0',
+        youtubeId: 'svQbhZR0NyA',
+        sourceUrl: 'https://www.youtube.com/watch?v=svQbhZR0NyA&t=2055s',
+        prompt: 'Watch only 34:24–44:47. Identify one piece of evidence that fits the Topic 2.3 story: environmental knowledge or maritime technology -> expanded trade -> stronger port states, diasporic communities, or wider cultural transfer.'
       }
     ],
     segments: [
