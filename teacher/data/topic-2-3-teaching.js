@@ -4,6 +4,7 @@ const BH23 = {
   dhow: BH23_ASSETS + '2.3%20-%20Dhow%20Ship.jpeg',
   diaspora: BH23_ASSETS + '2.3%20-%20Diasporic%20Communities.jpg',
   tradeMap: BH23_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade%20Map%20Detailed.png',
+  trade: BH23_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade.jpg',
   orgChart: BH23_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade%20Org%20Chart.png',
   malayMarket: BH23_ASSETS + '2.3%20-%20Malay%20market.jpg',
   monsoonMap: BH23_ASSETS + '2.3%20-%20Monsoons%20map.jpg',
@@ -98,7 +99,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase:'winds',kind:'map',eyebrow:'Read the Wind',title:'The route changes with the season.',subtitle:'Movement follows a cycle, not a straight line.',
-      layout:'image-forward',visual:{url:BH23.monsoonMap,alt:'Monsoon map showing seasonal wind patterns across the Indian Ocean',credit:'BeHistorical visual · Monsoon wind map',fit:'cover',position:'50% 69%'},footer:'Timing is part of geography.',
+      layout:'image-forward',visual:{url:BH23.monsoonMap,alt:'Monsoon map showing seasonal wind patterns across the Indian Ocean',credit:'BeHistorical visual · Monsoon wind map',fit:'cover',position:'50% 100%'},footer:'Timing is part of geography.',
       notes:{minutes:4,land:['Trace one hypothetical route from East Africa or Arabia to India and back.','Make students describe the return problem; one-way arrows are not enough.'],story:'A network becomes dependable when environmental knowledge becomes shared operational knowledge across generations of sailors.',ask:'Why would knowing the return season matter as much as knowing the outbound route?',listenFor:'Profit, supplies, contracts, family networks, predictable circulation.',ap:'Causation: environmental knowledge changes the feasibility and regularity of exchange.'}
     },
     {
@@ -118,7 +119,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase:'goods',kind:'map',eyebrow:'Commercial Exchange',title:'Markets made distance profitable.',subtitle:'Spices · Textiles · Gold · Ivory · Porcelain moved through cosmopolitan port cities.',
-      layout:'image-forward',visual:{url:BH23.malayMarket,alt:'Malay market scene representing a cosmopolitan Indian Ocean port economy',credit:'BeHistorical visual · Malay market',fit:'cover',position:'50% 78%'},footer:'Markets connect goods, people, and information.',
+      layout:'image-forward',visual:{url:BH23.malayMarket,alt:'Malay market scene representing a cosmopolitan Indian Ocean port economy',credit:'BeHistorical visual · Malay market',fit:'cover',position:'50% 100%'},footer:'Markets connect goods, people, and information.',
       notes:{minutes:4,land:['Emphasize multi-directional exchange. There is no single start or end of the network.','Indian textiles were especially important because they circulated widely and could function as a medium of exchange.'],story:'Profit comes from regional specialization and distance. Goods become valuable because the network connects places with different resources and production traditions.',ask:'Why would a merchant carry Indian textiles toward East Africa or Southeast Asia rather than only luxury spices?',listenFor:'Broad demand, exchange value, portability, regional specialization.',ap:'Economic systems: explain why interregional specialization drives exchange.'}
     },
     {
@@ -133,12 +134,12 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase:'ports',kind:'map',eyebrow:'Diasporic Communities',title:'Merchants carried culture and absorbed culture.',subtitle:'Arab and Persian communities in East Africa · Chinese communities in Southeast Asia · Malay communities across the basin',
-      layout:'image-forward',visual:{url:BH23.diaspora,alt:'Diasporic merchant communities in an Indian Ocean port',credit:'BeHistorical visual · Diasporic communities',fit:'cover',position:'50% 77%'},footer:'Diaspora = settle + connect + adapt + blend.',
+      layout:'image-forward',visual:{url:BH23.diaspora,alt:'Diasporic merchant communities in an Indian Ocean port',credit:'BeHistorical visual · Diasporic communities',fit:'cover',position:'50% 100%'},footer:'Diaspora = settle + connect + adapt + blend.',
       notes:{minutes:4,land:['Define diaspora clearly: a community living outside its homeland while maintaining connections to that homeland.','Stress reciprocal influence: merchants introduced traditions, and indigenous cultures influenced merchant cultures.'],story:'Diasporic communities lower risk. They provide trust, language, credit, contacts, religious institutions, and legal expectations in unfamiliar ports.',ask:'How could a permanent merchant community make trade easier for someone arriving from far away?',listenFor:'Translation, trust, lodging, credit, religious familiarity, marriage alliances, business contacts.',ap:'KC-3.1.III.B: merchants introduced cultural traditions and were influenced by indigenous cultures.'}
     },
     {
       phase:'zhenghe',kind:'map',eyebrow:'State-Backed Maritime Contact',title:'Zheng He did not create the network. He sailed through one already mature.',subtitle:'Ming voyages show the scale, wealth, and political use of Indian Ocean connectivity.',
-      layout:'image-forward',visual:{url:BH23.zhengHe,alt:'Zheng He fleet sailing through the Indian Ocean',credit:'BeHistorical visual · Zheng He fleet',fit:'contain',position:'50% 38%'},footer:'State power moved through an already mature maritime network.',
+      layout:'image-forward',visual:{url:BH23.zhengHe,alt:'Zheng He fleet sailing through the Indian Ocean',credit:'BeHistorical visual · Zheng He fleet',fit:'contain',position:'50% 100%'},footer:'State power moved through an already mature maritime network.',
       notes:{minutes:4,land:['Keep Zheng He as a capstone example of state-backed maritime activity, not a separate biography lesson.','His voyages demonstrate that the Indian Ocean network could support diplomacy, prestige, tribute relationships, and cultural contact.'],story:'The Ming state could project power through the Indian Ocean because the network already had ports, pilots, winds, and trading relationships. Zheng He shows the scale of the mature system.',ask:'What does state sponsorship add to a network usually driven by merchants?',listenFor:'Diplomacy, prestige, tribute, scale, political contact, official protection.',ap:'KC-3.2.II.A.iii: interregional contacts encouraged technological and cultural transfers during Chinese maritime activity led by Zheng He.'}
     },
     {
@@ -160,7 +161,8 @@ window.BEHISTORICAL_TEACHING = {
       notes:{minutes:3,land:['Collect or cold-call a few responses.','Insist on specific evidence and causal language.'],story:'The final checkpoint should show whether students can turn the story into an AP-ready explanation.',ask:'What is your strongest cause/effect sentence?',listenFor:'Because merchants understood monsoons and used improved ships/navigation, trade intensified; as a result, port states such as the Swahili Coast/Malacca grew or diasporic communities formed.',ap:'Assessment: specific evidence plus reasoning.'}
     },
     {
-      phase:'close',kind:'action',eyebrow:'Landing Sentence',title:'The Indian Ocean was a system before it was a route.',subtitle:'Winds made movement predictable. Ships made cargo scalable. Ports and diasporas made exchange durable.',big:'2.3',
+      phase:'close',kind:'hero',eyebrow:'Landing Sentence',title:'The Indian Ocean was a system before it was a route.',subtitle:'Winds made movement predictable. Ships made cargo scalable. Ports and diasporas made exchange durable.',
+      visual:{url:BH23.trade,alt:'Indian Ocean trade scene with ships and exchange across the maritime network',credit:'BeHistorical visual · Indian Ocean trade'},
       notes:{minutes:1,land:['Land the exact sentence students should remember.','Bridge to Topic 2.4: the Trans-Saharan system solves a different environmental problem with camel caravans and desert knowledge.'],story:'A historical network is more than lines on a map. It is the repeated coordination of environment, technology, institutions, and human trust.',ask:'What is the one-sentence answer to Topic 2.3?',listenFor:'Indian Ocean trade grew because monsoons, ships, ports, and merchant communities made long-distance exchange reliable and profitable.',ap:'Synthesis: carry the network model forward to Trans-Saharan trade.'}
     }
   ]
