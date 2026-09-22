@@ -33,6 +33,7 @@ The source-of-truth pipeline is:
 - Keep visual substitutions data-only in `topic-X-X-presentation-assets.js` so the same final visual choices feed both teacher and generated student versions.
 - Student Content Delivery keeps the existing Concept Cards. The generated class presentation is an additional callout above those cards through `lesson.classPresentation`.
 - Student files must contain no `notes`, Teacher Intelligence, LAND, STORY, ASK, LISTEN FOR, AP CONNECTION, briefing data, timer controls, iPad controls, or teacher preflight slides.
+- BeReady is student-facing projected content. Preserve it in generated student decks; only teacher preflight is stripped.
 - Prefer repo-local classroom visuals. If the teacher surface temporarily uses a remote-only visual, the student generator may degrade that slide to a text-led version rather than introduce a brittle dependency.
 
 ## Authoring boundary
@@ -45,7 +46,7 @@ The canonical design process is `docs/PRESENTATION-AUTHORING.md`:
 
 By the time implementation begins here, the historical story, spine, evidence, narrative beats, story gate, retelling slide, and visual plan should already be settled.
 
-The finished deck must still carry the required instructional functions defined in the authoring standard: Teacher Preflight, a visible topic question or problem, organizing claims, story, mechanism where needed, return to the spine, and AP synthesis. Their count and order follow the story rather than a fixed template.
+The finished deck must still carry the required instructional functions defined in the authoring standard: Teacher Preflight, BeReady retrieval + bridge, a visible topic question or problem, organizing claims, story, mechanism where needed, return to the spine, and AP synthesis. Their count and order follow the story rather than a fixed template.
 
 ## Shared teacher surface
 
