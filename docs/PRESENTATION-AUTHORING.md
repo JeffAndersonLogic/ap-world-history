@@ -128,6 +128,7 @@ One projected slide should usually carry one argument.
 A finished BeHistorical presentation should contain these instructional functions:
 
 - Teacher Preflight
+- BeReady retrieval that activates prior learning and bridges into the new topic
 - a visible topic question or problem
 - organizing claims that help students sort the evidence
 - historical story
@@ -142,6 +143,24 @@ The story decides the order.
 "Big Rocks" are an optional organizing device. Use two, three, four, or none if that is what the history supports. Never invent a third claim because an older template once said "Three Big Rocks."
 
 If a build intentionally omits one of the functions above, the teacher source must explain why.
+
+### BeReady retrieval standard
+
+BeReady is the first student-facing phase after any teacher-only preflight. Its job is retrieval and transition, not new instruction.
+
+Default BeReady pattern:
+
+- 3-5 minutes
+- no notes at first
+- two or three short retrieval prompts students should be able to answer from memory
+- prompts drawn mainly from the immediately preceding topic, with earlier course themes used only when they sharpen the connection
+- one explicit bridge that turns the retrieved idea into the problem, contrast, or question of the new topic
+
+BeReady should feel fast. Take answers, surface the pattern, and move on. Do not let it become a mini-review lecture, a vocabulary dump, or a preview that teaches today's content before the story begins.
+
+The bridge is required. Retrieval without a bridge is review; BeReady exists to make prior learning useful for the lesson students are about to enter.
+
+At the opening of a course or unit where there is no meaningful prior topic to retrieve, the teacher source may substitute a short baseline prompt or explain why BeReady is intentionally omitted.
 
 ### Topic 2.6 proof case
 
@@ -425,7 +444,8 @@ When this standard must be reduced to a few lines, preserve these ideas:
 1. CED decides what must be learned.
 2. Tell the ninth-grade story and find the spine before designing slides.
 3. Every example needs a "so what"; examples serve claims rather than becoming trivia slides.
-4. The story decides the order and slide count.
-5. Approve the story, name the retelling slide, then let assets and code enter.
-6. One canonical teacher source generates the student deck.
-7. Verify instruction and software separately, prove new checks can fail, report adjacent findings, then ship.
+4. Start the student-facing sequence with a fast BeReady retrieval + bridge when prior learning exists.
+5. The story decides the order and slide count.
+6. Approve the story, name the retelling slide, then let assets and code enter.
+7. One canonical teacher source generates the student deck.
+8. Verify instruction and software separately, prove new checks can fail, report adjacent findings, then ship.
